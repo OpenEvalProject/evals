@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/049emcs32 Department of Neuroscience, School of Behavioral and Brain Sciences, University of Texas at Dallas Richardson United States
-2. https://ror.org/03v76x132 Departments of Neurosurgery and Cellular & Molecular Physiology, Wu Tsai Institute, Yale University School of Medicine New Haven United States
+1. Department of Neuroscience, School of Behavioral and Brain Sciences, University of Texas at Dallas Richardson United States ([ROR:049emcs32](https://ror.org/049emcs32))
+2. Departments of Neurosurgery and Cellular & Molecular Physiology, Wu Tsai Institute, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
 ## Abstract
 
-Brain somatic mutations in various components of the mTOR complex 1 (mTORC1) pathway have emerged as major causes of focal malformations of cortical development and intractable epilepsy. While these distinct gene mutations converge on excessive mTORC1 signaling and lead to common clinical manifestations, it remains unclear whether they cause similar cellular and synaptic disruptions underlying cortical network hyperexcitability. Here, we show that in utero activation of the mTORC1 activator genes, Rheb or MTOR , or biallelic inactivation of the mTORC1 repressor genes, Depdc5 , Tsc1 , or Pten in the mouse medial prefrontal cortex leads to shared alterations in pyramidal neuron morphology, positioning, and membrane excitability but different changes in excitatory synaptic transmission. Our findings suggest that, despite converging on mTORC1 signaling, mutations in different mTORC1 pathway genes differentially impact cortical excitatory synaptic activity, which may confer gene-specific mechanisms of hyperexcitability and responses to therapeutic intervention.
+Brain somatic mutations in various components of the mTOR complex 1 (mTORC1) pathway have emerged as major causes of focal malformations of cortical development and intractable epilepsy. While these distinct gene mutations converge on excessive mTORC1 signaling and lead to common clinical manifestations, it remains unclear whether they cause similar cellular and synaptic disruptions underlying cortical network hyperexcitability. Here, we show that in utero activation of the mTORC1 activator genes, Rheb or MTOR, or biallelic inactivation of the mTORC1 repressor genes, Depdc5, Tsc1, or Pten in the mouse medial prefrontal cortex leads to shared alterations in pyramidal neuron morphology, positioning, and membrane excitability but different changes in excitatory synaptic transmission. Our findings suggest that, despite converging on mTORC1 signaling, mutations in different mTORC1 pathway genes differentially impact cortical excitatory synaptic activity, which may confer gene-specific mechanisms of hyperexcitability and responses to therapeutic intervention.
 
 ## Introduction
 
@@ -28,29 +28,73 @@ Pathogenic mutations in numerous regulators that activate mTORC1 signaling, incl
 
 ## Results
 
-## Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO leads to varying magnitudes of neuronal enlargement and mispositioning in the cortex
+### Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO leads to varying magnitudes of neuronal enlargement and mispositioning in the cortex
 
 To model somatic gain-of-function mutations in the mTORC1 activators, we individually expressed plasmids encoding RhebY35L or MTORS2215Y, respectively, in select mouse neural progenitor cells during late corticogenesis, at embryonic day (E) 15, via in utero electroporation (IUE) (Figure 1a and b). These pathogenic variants were previously detected in brain tissue from children with FCDII and HME associated with intractable seizures (Nakashima et al., 2015; Mirzaa et al., 2016; Møller et al., 2016; Baldassari et al., 2019; Zhao et al., 2019; Lee et al., 2021). We specifically targeted a subset of late-born progenitor cells that generate excitatory pyramidal neurons destined to layer 2/3 in the mPFC to mimic frontal lobe somatic mutations and the genetic mosaicism characteristic of these lesions. To model the somatic loss-of-function mutations in mTORC1 repressors, we expressed plasmids encoding previously validated CRISPR/Cas9 guide RNAs against Depdc5 (Ribierre et al., 2018), Tsc1 (Lim et al., 2017), or Pten (Xue et al., 2014) to individually knockout (KO) the respective genes using the same IUE approach (Figure 1a and b). As a control for the activating mutations, we expressed plasmids encoding fluorescent proteins under the same CAG promoter. As a control for the CRISPR/Cas9-mediated knockouts, we used an empty CRISPR/Cas9 vector containing no guide RNA sequences. To verify that the expression of these plasmids leads to mTORC1 hyperactivation, we assessed the phosphorylated levels of S6 (i.e. p-S6), a downstream substrate of mTORC1, using immunostaining in brain sections from postnatal day (P) 28–43 mice. As expected, we found that expression of the RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO plasmids all led to significantly increased p-S6 staining intensity, supporting that the expression of each of these plasmids leads to increased mTORC1 signaling (Figure 1c and d, Figure 1—figure supplement 1a, Figure 1—source data 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig1-v1.jpg)
+
+**Figure 1.:** (a) Diagram of the PI3K-mTORC1 pathway. Activation of mTOR complex 1 (mTORC1) signaling is controlled by positive (blue) and negative (purple) regulators within the pathway. (b) Diagram of overall experimental timeline and approach. in utero electroporation (IUE) was performed at E15.5. A cohort of animals was used for patch clamp recording at P26-51 and another cohort was used for histology at P28-43. (c) Representative images of tdTomato+ cells (red) and p-S6 staining (green) in mouse medial prefrontal cortex (mPFC) at P28-43. (d) Quantification of p-S6 staining intensity (normalized to the mean control) in tdTomato+ neurons. (e) Quantification of tdTomato+ neuron soma size. (f) Representative images of tdTomato+ neuron (red) placement and distribution in coronal mPFC sections. Red square on the diagram denotes the imaged area for all groups. CC, corpus callosum. (g) Quantification of tdTomato+ neuron placement in layer 2/3. Left diagram depicts the approach for analysis: the total number of tdTomato+ neurons within layer 2/3 (white square) was counted and expressed as a % of total neurons in the imaged area. Right bar graphs show the quantification. (h) Quantification of tdTomato+ neuron distribution across cortical layers. Left diagram depicts the approach for analysis: the imaged area was divided into 10 equal-sized bins across the cortex, spanning the corpus callosum to the pial surface (white grids); the total number of tdTomato+ neurons within each bin was counted and expressed as a % of total neurons in the imaged area. Right bar graphs show the quantification. For graphs (d, e): n=4–8 mice per group, with 6–15 cells analyzed per animal. For graphs (g, h): n=3–7 mice per group, with 1 brain section analyzed per animal. Statistical comparisons were performed using (d, e) nested one-way ANOVA (fitted to a mixed-effects model) to account for correlated data within individual animals, (g) one-way ANOVA, or (h) two-way repeated measures ANOVA. Post-hoc analyses were performed using Holm-Šídák multiple comparison test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All data are reported as the mean of all neurons or brain sections in each group ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Distribution of p-S6 staining intensity among individual animals. (b) Distribution of neuron soma size among individual animals.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Representative images of tdTomato+ cells (red) in mouse medial prefrontal cortex (mPFC) at P7-9. (b) Quantification of tdTomato+ neuron soma size. (c) Graph showing the distribution of neuron soma size among individual animals in each group. n=3–8 mice per group, with 30 cells analyzed per animal. Statistical comparisons were performed using a nested t-test (control vs. MTORS2215Y) or nested one-way ANOVA (control vs. Depdc5KO vs. PtenKO, vs. Tsc1KO) (fitted to a mixed-effects model) to account for correlated data within individual animals. Post-hoc analyses were performed using Holm-Šídák multiple comparison test. *p<0.05, ***p<0.001, ****p<0.0001. Data are reported as the mean of all neurons in each group ± SEM.
+
 Considering the cytoarchitectural abnormalities associated with mTORC1 hyperactivation, we compared neuron soma size and positioning in the cortex following in utero activation of Rheb and MTOR and inactivation of Depdc5, Pten, and Tsc1 in P28-43 mice. While all experimental conditions led to increased neuron soma size, the magnitude of the enlargement was dependent on the specific gene that was targeted (Figure 1c and e, Figure 1—figure supplement 1b, Figure 1—source data 1). In particular, expression of RhebY35L and MTORS2215Y led to the largest soma size changes, with a >threefold increase from control. Expression of PtenKO led to a similarly large increase of 2.7-fold, while expression of Depdc5KO and Tsc1KO led to a 1.7 and 2.1-fold increase, respectively. The increase in the PtenKO condition was significantly higher than both the Depdc5KO and Tsc1KO conditions, and the increase in the Tsc1KO condition was significantly higher than the Depdc5KO condition. Although the above analysis was performed at P28-43, the enlargement of neuron soma sizes was already detected by P7-9 (Figure 1—figure supplement 2a–c). In terms of neuronal positioning, all experimental conditions, except for PtenKO, resulted in neuron misplacement (Figure 1f–h, Figure 1—source data 1). The RhebY35L and MTORS2215Y conditions led to the most severe phenotype: ~70–80% of the neurons were misplaced outside of layer 2/3 (Figure 1g), with the mispositioned neurons evenly scattered across the deeper layers (Figure 1h). For the Depdc5KO and Tsc1KO conditions, ~45–60% of the neurons were misplaced outside of layer 2/3 (Figure 1g), with the mispositioned neurons found closer to layer 2/3 (Figure 1h). Taken together, these studies show that the expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO leads to varying magnitudes of neuronal enlargement and mispositioning in the cortex. Of note, PtenKO neurons, despite exhibiting a 2.7-fold increase in neuron soma size, were mostly correctly positioned in layer 2/3. These findings suggest that while all experimental conditions lead to increased soma size, not all lead to neuron mispositioning, suggesting defective migration and the subsequent impact on neuron positioning occur independently of cell size.
 
-## Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO universally leads to decreased depolarization-induced excitability, but only RhebY35L, MTORS2215Y, and Tsc1KO expression leads to depolarized resting membrane potential
+### Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO universally leads to decreased depolarization-induced excitability, but only RhebY35L, MTORS2215Y, and Tsc1KO expression leads to depolarized resting membrane potential
 
 To elucidate the contribution of each experimental condition to the function of cortical neurons, we obtained whole-cell patch clamp recordings of layer 2/3 pyramidal neurons at P26-P51 (Figure 2a). The RhebY35L and MTORS2215Y conditions were compared to a control group expressing fluorescent proteins under the same CAG promoter. The Depdc5KO, PtenKO, and Tsc1KO conditions were compared to a CRISPR/Cas9 empty vector control. Recordings of control and experimental conditions were alternated to match the animal ages.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig2-v1.jpg)
+
+**Figure 2.:** (a) Diagram of experimental approach for whole-cell patch clamp recording. Recordings were performed in layer 2/3 pyramidal neurons in acute coronal slices from P26-51 mice, expressing either control, RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, or Tsc1KO plasmids. (b–d) Graphs of membrane capacitance, resting membrane conductance, and RMP. (e) Representative traces of the action potential (AP) firing response to a 300 pA depolarizing current injection. (f) Input-output curves show the mean number of APs fired in response to 500 ms-long depolarizing current steps from 0 to 400 pA. Arrows point to initial spike doublets. (g–k) Graphs of rheobase, first ISI, AP threshold, AP peak amplitude, and AP half-width. For all graphs: n=5–10 mice per group, with 16–50 cells analyzed per animal. Statistical comparisons were performed using (b–d, g–k) nested one-way ANOVA (fitted to a mixed-effects model) to account for correlated data within individual animals or (f) mixed-effects ANOVA accounting for repeated measures. Post-hoc analyses were performed using Holm-Šídák multiple comparison test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, for the input-output curves in (f): *p<0.05 (vs. control), #<0.05 (vs. Depdc5KO), Ɏp<0.05 (vs. Tsc1KO). All data are reported as the mean of all neurons in each group ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a–c) Distribution of membrane capacitance, conductance, and resting membrane potential (RMP) among individual animals. (d-h) Distribution of rheobase, first ISI, AP threshold, AP peak amplitude, and AP half-width among individual animals.
+
 Consistent with the changes in soma size (Figure 1c and e), recorded neurons displayed increased membrane capacitance in all experimental conditions (Figure 2b, Figure 2—figure supplement 1a, Figure 2—source data 1). Neurons expressing the MTORS2215Y variant had a larger capacitance increase than those expressing the RhebY35L variant. PtenKO and Tsc1KO neurons had similar increases in capacitance that were both larger than that of the Depdc5KO neurons. All neurons across the experimental conditions also had increased resting membrane conductance in a pattern that followed that of the capacitance (Figure 2c, Figure 2—figure supplement 1b, Figure 2—source data 1). However, while RhebY35L, MTORS2215Y, and Tsc1KO expression led to depolarized resting membrane potential (RMP), Depdc5KO and PtenKO expression did not significantly affect the RMP (Figure 2d, Figure 2—figure supplement 1c, Figure 2—source data 1). To assess whether these changes impacted neuron intrinsic excitability, we examined the action potential (AP) firing response to depolarizing current injections. For all experimental conditions, neurons fired fewer APs for current injections above 100 pA compared to the respective control neurons (Figure 2e and f, Figure 2—source data 1). This decrease in intrinsic excitability is reflected in the increased rheobase (i.e. the minimum current required to induce an AP) in all experimental conditions, with the MTORS2215Y and RhebY35L conditions leading to the largest rheobase increases (Figure 2g, Figure 2—figure supplement 1d, Figure 2—source data 1). Collectively, these findings indicate that RhebY35L, MTORS2215Y, and Tsc1KO neurons display a decreased ability to generate APs upon depolarization despite having depolarized RMPs. In terms of firing pattern, neurons in all groups displayed a regular-spiking pattern with spike-frequency adaptation (Figure 2e). However, while an initial spike doublet was observed in control neurons, consistent with the expected firing pattern for layer 2/3 mPFC pyramidal neurons (Kroon et al., 2019), this was absent in all the experimental conditions except for the PtenKO condition (Figure 2e). Further quantification of the first interspike interval (first ISI; interval between the first and second AP) revealed significantly increased first ISI in RhebY35L, MTORS2215Y, Depdc5KO, and Tsc1KO neurons, but not in PtenKO neurons, compared to control neurons (Figure 2h, Figure 2—figure supplement 1e, Figure 2—source data 1). No differences in the AP threshold were observed across the conditions (Figure 2i, Figure 2—figure supplement 1f, Figure 2—source data 1). The AP peak amplitude was decreased in the MTORS2215Y and Tsc1KO conditions (Figure 2j, Figure 2—figure supplement 1g, Figure 2—source data 1), while the AP half-width was decreased in the RhebY35L, MTORS2215Y, and PtenKO conditions (Figure 2k, Figure 2—figure supplement 1h, Figure 2—source data 1). Taken together, these findings show that various genetic conditions that activate the mTORC1 pathway universally lead to decreased depolarization-induced excitability in layer 2/3 pyramidal neurons, with gene-dependent changes in RMP and several AP properties.
 
-## Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO leads to the abnormal presence of HCN4 channels with variations in functional expression
+### Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO leads to the abnormal presence of HCN4 channels with variations in functional expression
 
 We recently reported that neurons expressing RhebS16H, an mTORC1-activating variant of Rheb, display abnormal expression of HCN4 channels (Hsieh et al., 2020; Nguyen et al., 2022). These channels give rise to a hyperpolarization-activated cation current (Ih) that is normally absent in layer 2/3 pyramidal neurons (Hsieh et al., 2020; Nguyen et al., 2022). The aberrant Ih, which has implications for neuronal excitability, preceded seizure onset and was detected by P8-12 in mice (Hsieh et al., 2020). Rapamycin treatment starting at P1 and expression of constitutive active 4E-BP1, a translational repressor downstream of mTORC1, prevented and alleviated the aberrant HCN4 channel expression, respectively (Hsieh et al., 2020; Nguyen et al., 2022). These findings suggest that the abnormal HCN4 channel expression is mTORC1-dependent. Given that all the experimental conditions in the present study led to increased mTORC1 activity, we investigated whether they also resulted in abnormal HCN4 channel expression. Immunostaining for HCN4 channels using previously validated antibodies (Hsieh et al., 2020) in brain sections from P28-43 mice revealed significantly increased HCN4 staining intensity in the electroporated neurons in all experimental conditions compared to the respective controls, which exhibited no HCN4 staining (Figure 3a and b, Figure 3—figure supplement 1a, Figure 3—source data 1). The increased staining was evident in the ipsilateral cortex containing MTORS2215Y electroporated neurons and absent in the non-electroporated contralateral cortex (Figure 3—figure supplement 2a and b). These data indicate the presence of aberrant HCN4 channel expression following RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, or Tsc1KO expression in layer 2/3 pyramidal neurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig3-v1.jpg)
+
+**Figure 3.:** (a) Representative images of tdTomato+ cells (red) and HCN4 staining (green) in mouse medial prefrontal cortex (mPFC) at P28-43. (b) Quantification of HCN4 intensity (normalized to the mean control) in tdTomato+ neurons. (c) Representative current traces in response to a series of 3 s-long hyperpolarizing voltage steps from –120 to –40 mV, with a holding potential of –70 mV. Current traces from the –40 and –50 mV steps were not included due to contamination from unclamped Na+ spikes. Orange lines denote the current traces at –90 mV. (d) IV curve obtained from Iss amplitudes. (e) ΔIV curve obtained from Ih amplitudes (i.e. ΔI, where ΔI=Iss – Iinst). (f) Graphs of Ih amplitudes at –90 mV. (g) Representative current traces in response to a series of 3 s long hyperpolarizing voltage steps from –110 mV to –50 mV in the MTORS2215Y condition pre- and post-zatebradine application. Orange lines denote the current traces at –90 mV. (h) IV curve obtained from Iss amplitudes in the MTORS2215Y condition pre- and post-zatebradine application. (i) ΔIV curve obtained from Ih amplitudes (i.e. ΔI) in the MTORS2215Y condition pre- and post-zatebradine application. Arrow points to the post-zatebradine Ih amplitude at –90 mV. (j) Representative traces of the zatebradine-sensitive current obtained after subtraction of the post- from the pre-zatebradine current traces in response to –110 mV to –50 mV voltage steps. Orange lines denote the current traces at –90 mV. (k) IV curve of the zatebradine-sensitive current obtained after subtraction of the post- from the pre-zatebradine current traces. (l) Graph of RMP in the control and MTORS2215Y conditions pre- and post-zatebradine application. Connecting lines denote paired values from the same neuron. For graph (b): n=4–8 mice per group, with 4–15 cells analyzed per animal. For graphs d, e, f: n=5–10 mice per group, with 24–47 cells analyzed per animal. For graphs h, i, k, l: n=4–6 neurons (paired). Statistical comparisons were performed using (b, f) nested ANOVA (fitted to a mixed-effects model) to account for correlated data within individual animals, (d, e) mixed-effects ANOVA accounting for repeated measures, or (h, i, l) two-way repeated measures ANOVA. Post-hoc analyses were performed using Holm-Šídák multiple comparison test. *p<0.05, **p<0.01, ****p<0.0001, for the IV curves in d, e, h, i: *p<0.05 (vs. control), #p<0.05 (vs. RhebY35L or Depdc5KO), Ɏp<0.05 (vs. PtenKO). All data are reported as the mean of all neurons in each group ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Distribution of HCN4 staining intensity among individual animals. (d-g) Distribution of Ih amplitudes (at –90 mV) among individual animals.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Representative images of tdTomato+ cells (red) and HCN4 staining (green). Top panels show overlay images. Bottom panels show HCN4 single-channel images. (a1) and (a2) show the ipsilateral and contralateral cortex, respectively. (a3) and (a4) are high-magnification images demonstrating HCN4 staining within the cell. (b) Representative images of immunostaining with (left) or without (right) HCN4 primary antibodies (control for secondary antibody specificity).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Representative current traces in response to a series of 3 s long hyperpolarizing voltage steps from –130 mV to –40 mV in the Tsc1KO condition pre- and post-BaCl2 application. Orange lines denote the current traces at –90 mV. (b) IV curve obtained from Iss amplitudes in the Tsc1KO condition pre- and post-BaCl2 application. (c) IV curve obtained from Ih amplitudes (i.e. ΔI, where ΔI=Iss – Iinst) in the Tsc1KO condition pre- and post-BaCl2 application. (d) Representative traces of the BaCl2-sensitive current obtained after subtraction of the post- from the pre-BaCl2 current traces. Orange lines denote the current traces at –90 mV. (e) IV curve of the BaCl2 -sensitive current obtained after subtraction of the post- from the pre-BaCl2 current traces. The isolated BaCl2-sensitive current reversed near –80 mV. (f) Graph of conductances (at –500 pA) in the control and Tsc1KO conditions pre- and post-BaCl2 application. Connecting lines denote paired values from the same neuron. (g) Graph of % change in conductances pre- and post-BaCl2 application in the control and Tsc1KO conditions. (h) Graph of resting membrane potential (RMP) in the control and Tsc1KO conditions pre- and post-BaCl2 application. Connecting lines denote paired values from the same neuron. (i) Graph of % change in RMP pre- and post-BaCl2 application in the control and Tsc1KO conditions. For all graphs: n=10–13 neurons per group. Statistical comparisons were performed using (b, c, e) mixed-effects ANOVA, (f, h) two-way repeated measures ANOVA, or (g, i) unpaired t-test. Post-hoc analyses were performed using Holm-Šídák multiple comparison test. *p<0.05, **p<0.01, ****p<0.0001. All data are reported as the mean of all neurons or brain sections in each group ± SEM.
 
 To examine the functional impacts of the aberrant HCN4 channel expression, we examined Ih amplitudes in the various experimental conditions. To evoke Ih, we applied a series of 3 s-long hyperpolarizing voltage steps from –120 mV to –40 mV. Consistent with previous findings in RhebS16H neurons (Hsieh et al., 2020; Nguyen et al., 2022), hyperpolarizing voltage pulses elicited significantly larger inward currents in all experimental conditions compared to their respective controls (Figure 3c and d, Figure 3—source data 1). The MTORS2215Y condition displayed larger inward currents than the RhebY35L condition, while the PtenKO condition displayed the largest inward currents compared to the Depdc5KO and Tsc1KO conditions (Figure 3d). These data were proportional to the changes in neuron soma size (Figures 1e and 2b). The inward currents in RhebS16H neurons are thought to result from the activation of both inward-rectifier K+ (Kir) channels and HCN channels (Hsieh et al., 2020). Kir-mediated currents activate fast whereas HCN-mediated currents, i.e., Ih, activate slowly during hyperpolarizing steps; therefore, to assess Ih amplitudes, we measured the difference between the instantaneous and steady-state currents at the beginning and end of the voltage pulses, respectively (i.e. ΔI) (Thoby-Brisson et al., 2000). The resulting ΔI-voltage (V) curve revealed significantly larger Ih amplitudes in all experimental conditions (Figure 3e, Figure 3—source data 1). To further isolate the Ih from Kir -mediated currents, we measured Ih amplitudes at –90 mV, near the reversal potential of Kir channels to eliminate Kir-mediated current contamination. At –90 mV, Ih amplitudes were significantly higher in the MTORS2215Y and Tsc1KO conditions compared to controls (Figure 3f, Figure 3—figure supplement 1b, Figure 3—source data 1). Of note, although the Depdc5KO and PtenKO conditions did not display a significant increase in Ih amplitudes at –90 mV, 1 out of 28 Depdc5KO neurons and 4 out of 27 PtenKO neurons had Ih amplitudes that were twofold greater than the mean Ih amplitude of the Tsc1KO condition. 6 out of 24 RhebY35L neurons also had Ih amplitudes twofold greater than this value (Figure 3f). These data suggest that Ih currents are present in a subset of RhebY35L, Depdc5KO, and PtenKO neurons, and most MTORS2215Y and Tsc1KO neurons.
 
 Considering that the MTORS2215Y condition led to the largest Ih, we examined the impact of the selective HCN channel blocker zatebradine on hyperpolarization-induced inward currents in MTORS2215Y neurons to further confirm the identity of ΔI as Ih. Application of 40 µM zatebradine reduced the overall inward currents (Figure 3g and h, Figure 3—source data 1) and ΔI (Figure 3i, Figure 3—source data 1). At –90 mV, ΔI was significantly decreased from –167.7 ± 54.2 pA to 0.75 ± 8.2 pA (± SD) (Figure 3i, arrow). Subtraction of the post- from the pre-zatebradine current traces isolated zatebradine-sensitive inward currents which reversed near –50 mV, as previously reported for HCN4 channel reversal potentials (Tae et al., 2017; Figure 3j and k). These experiments verified the identity of ΔI as Ih. In comparison, application of the Kir channel blocker barium chloride (BaCl2) substantially reduced the overall inward currents but had no effects on ΔI (i.e. Ih) in Tsc1KO neurons (Figure 3—figure supplement 3a–i). Consistent with the function of Ih in maintaining RMP at depolarized levels (Lamas, 1998; Doan and Kunze, 1999; Lupica et al., 2001; Funahashi et al., 2003; Kase and Imoto, 2012), the application of zatebradine hyperpolarized RMP in MTORS2215Y neurons but did not affect the RMP of control neurons that exhibited no Ih (Figure 3l, Figure 3—source data 1). Collectively, these findings suggest that RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO expression in layer 2/3 pyramidal neurons lead to the abnormal presence of HCN4 channels with variations in functional expression.
 
-## Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO leads to different impacts on excitatory synaptic activity
+### Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO leads to different impacts on excitatory synaptic activity
 
 As part of examining neuron excitability, we recorded spontaneous excitatory postsynaptic currents (sEPSCs) in all the gene conditions. To separate sEPSCs from spontaneous inhibitory postsynaptic currents (sIPSCs), we used an intracellular solution rich in K-gluconate to impose a low intracellular Cl- concentration and recorded at a holding potential of –70 mV, which is near the Cl- reversal potential. The 90–10% decay time of the measured synaptic currents ranged between 4–8 ms in all conditions (mean ± SD: control: 4.9 ± 1.6; RhebY35L: 5.2 ± 1.4; MTORS2215Y: 7.4 ± 1.4; control: 6.8 ± 0.7; Depdc5KO: 7.4 ± 1.0; PtenKO: 8.1 ± 0.9; Tsc1KO: 7.4 ± 0.9), consistent with the expected decay time for sEPSCs and shorter than the decay time for sIPSCs (Kroon et al., 2019). The recorded synaptic currents were, therefore, considered to be sEPSCs. The sEPSCs frequency was unchanged in all experimental conditions except for the Tsc1KO condition, where the sEPSCs frequency was significantly increased (Figure 4a and b, Figure 4—figure supplement 1a, Figure 4—source data 1). Unlike the other experimental conditions, the RhebY35L condition displayed a slight decrease in sEPSC frequency, consistent with previous findings in RhebS16H neurons; however, this did not reach statistical significance (Figure 4b). The sEPSC amplitude was larger in the RhebY35L, MTORS2215Y, and PtenKO conditions (Figure 4a and c, Figure 4—figure supplement 1b, Figure 4—source data 1). Although the amplitudes were slightly larger in the Depdc5KO and Tsc1KO conditions, these changes were not significant (Figure 4c). Thus, Tsc1KO neurons display increased sEPSC frequency but unchanged amplitude, while RhebY35L, MTORS2215Y, and PtenKO neurons display increased sEPSC amplitude but unchanged frequency. Finally, there was an increase in the sEPSC total charge in all experimental conditions except for the RhebY35L condition (Figure 4d, Figure 4—figure supplement 1c, Figure 4—source data 1). Collectively, these findings suggest all experimental conditions, except for RhebY35L, lead to increased synaptic excitability, with variable impact on sEPSC frequency and amplitude.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig4-v1.jpg)
+
+**Figure 4.:** (a) Representative sEPSC traces were recorded at a holding voltage of –70 mV. Top and bottom traces are from the same neuron. (b–d) Graphs of sEPSC frequency, amplitude, and total charge. For all graphs: n=5–9 mice per group, with 17–34 cells analyzed per animal. Statistical comparisons were performed using a nested ANOVA (fitted to a mixed effects model) to account for correlated data within individual animals. Post-hoc analyses were performed using Holm-Šídák multiple comparison test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All data are reported as the mean of all neurons in each group ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91010/elife-91010-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a–c) Distribution of sEPSC properties among individual animals.
 
 ## Discussion
 
@@ -72,31 +116,270 @@ In summary, we have shown that mutations affecting different mTORC1 pathway gene
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD1, wildtype (time-pregnant females)</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain code: 022, RRID:IMSR_CRL:022</td>
+      <td>For in utero electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-tdTomato(plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid #83029,RRID:Addgene_83029</td>
+      <td>Deposited by Dr. Angelique Bordey (previously generated by our lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-GFP(plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid #11150, RRID:Addgene_11150</td>
+      <td>Deposited by Dr. Connie Cepko</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-tagBFP(plasmid)</td>
+      <td>Dr. Joshua Breunig, PMID:22776033</td>
+      <td>-</td>
+      <td>Gift from Dr. Joshua Breunig. The generation of this plasmid has previously been described (Breunig et al., 2012).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-RhebY35L-T2A-tdTomato(plasmid)</td>
+      <td>This paper</td>
+      <td>-</td>
+      <td>The Rheb insert was synthesized and subcloned into a pCAG-Kir2.1Mut-T2A-tdTomato construct (Addgene plasmid #60644) via SmaI and BamHI sites, after excision of Kir2.1.Rheb insert sequence: NM_053075.3 (Mus musculus), mutation: Y35L</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-MTORS2215Y (plasmid)</td>
+      <td>This paper</td>
+      <td>-</td>
+      <td>The MTOR insert was subcloned from a pcDNA3-FLAG-mTOR-SS2215Y construct (Addgene plasmid #69013) into a pCAG-tdTomato construct (Addgene plasmid #83029) via 5’AgeI and 3’NotI sites, after excision of tdTomato.MTOR insert sequence: NM_004958 (Homo sapiens), mutation: S2215Y</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-Control(pX330-empty) (plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid #42230, RRID:Addgene_42230</td>
+      <td>Deposited by Dr. Feng Zhang</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-Depdc5 (plasmid)</td>
+      <td>Dr. Stéphanie Baulac, PMID:29708508</td>
+      <td>-</td>
+      <td>Gift from Dr. Stéphanie Baulac.The gRNA sequence (gRNA1) has previously been validated (Ribierre et al., 2018).gRNA sequence (5’ to 3’): GTCTGTGGTGATCACGC (17 nt)The gRNA targets exon 16 of Depdc5 (NM_001025426, Mus musculus), resulting in deleterious indels and inactivation of the gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-Pten (plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid #59909, RRID:Addgene_59909</td>
+      <td>Deposited by Dr. Tyler Jacks.The gRNA sequence (gRNA1) has previously been validated (Xue et al., 2014).gRNA sequence (5’ to 3’): AGATCGTTAGCAGAAACAAA (20 nt)The gRNA targets Pten (NM_008960, Mus musculus), resulting in deleterious indels and inactivation of the gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-Tsc1 (plasmid)</td>
+      <td>This paper</td>
+      <td>-</td>
+      <td>The gRNA sequence was synthesized based on previously published sequences (Lim et al., 2017) and subcloned into a pX330-empty vector. The specificity of the gRNA (gRNA T4) has previously been described and validated (Lim et al., 2017).gRNA sequence (5’ to 3’): CAGTGTGGAGGAGTCCAGCA (20 nt)The gRNA targets exon 3 of Tsc1 (NM_001289575, Mus musculus), resulting in deleterious indels and inactivation of the gene</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p-S6 S240/244 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 5364, RRID:AB_10694233</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HCN4 (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat # APC-052, RRID:AB_2039906</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit IgG, Alexa Fluor Plus 647</td>
+      <td>Invitrogen</td>
+      <td>Cat # A32733, RRID:AB_2633282</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>Version CC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td>Version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 9</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal procedures were performed in accordance with Yale University Institutional Animal Care and Use Committee’s regulations and approved protocols (protocol number: 2022–10514). In utero electroporation was performed on time-pregnant, female CD-1 mice (Charles River Laboratories, strain code: 022). All subsequent experiments were performed on male and female offspring of the electroporated dams.
 
-## Plasmid DNA
+### Plasmid DNA
 
 Information on the plasmids used in this study is listed in the Key resources table. The concentration of the plasmids used for in utero electroporation ranged from 0.5 to 3.5 µg/µl. The specific concentrations and combinations of plasmids used for each of the control and experimental conditions are listed in Table 1.
 
-## In utero electroporation (IUE)
+**Table 1.**
+ Plasmid concentrations for control and experimental conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Plasmid name</th>
+      <th>Plasmid concentration (µg/µl)*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control (for RhebY35L littermates)†</td>
+      <td>pCAG-tdTomato</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Control (for MTORS2215Y littermates)†</td>
+      <td>pCAG-GFP</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCAG-tdTomato</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">RhebY35L</td>
+      <td>pCAG-RhebY35L-T2A-tdTomato</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>pCAG-GFP</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MTORS2215Y</td>
+      <td>pCAG-MTORS2215Y</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>pCAG-tdTomato</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Control</td>
+      <td>pX330-Control</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>pCAG-tdTomato</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>pCAG-tagBFP‡</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Depdc5KO</td>
+      <td>pX330-Depdc5</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>pCAG-tdTomato</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>pCAG-GFP‡</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PtenKO</td>
+      <td>pX330-Pten</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>pCAG-tdTomato</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>pCAG-GFP‡</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Tsc1KO</td>
+      <td>pX330-Tsc1</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>pCAG-tdTomato</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>pCAG-GFP‡</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Working plasmid solutions were diluted in water and contained 0.03% Fast Green dye to visualize the injection. For each embryo, 1.5 µl of the plasmid mixture was injected into the right ventricle.†Control groups for RhebY35L and MTORS2215Y contained pCAG tdTomato and pCAG-GFP +pCAG-tdTomato, respectively, to distinguish between control and experimental animals for each litter. The total plasmid concentration was kept equal between the two control groups. No differences were observed between the two groups, and therefore, they were combined into one control group.‡Equal concentrations of pCAG-tagBFP and pCAG-GFP were added into the control and experimental (Depdc5KO, PtenKO, and Tsc1KO) groups, respectively, to distinguish the control and experimental animals for each litter._
+
+### In utero electroporation (IUE)
 
 Timed-pregnant embryonic day (E) 15.5 mice were anesthetized with isoflurane, and a midline laparotomy was performed to expose the uterine horns. A DNA plasmid solution (1.5 µl) was injected into the right lateral ventricle of each embryo using a glass pipette. For each litter, half of the embryos received plasmids for the experimental condition and the other half received plasmids for the respective control condition. A 5 mm tweezer electrode was positioned on the embryo head and 6 × 42 V, 50 ms pulses at 950 ms intervals were applied using a pulse generator (ECM830, BTX) to electroporate the plasmids into neural progenitor cells. Electrodes were positioned to target expression in the mPFC. The embryos were returned to the abdominal cavity and allowed to continue with development. At P0, mice were screened under a fluorescence stereomicroscope to ensure electroporation success, as defined by fluorescence in the targeted brain region, before proceeding with downstream experiments.
 
-## Brain fixation and immunofluorescent staining
+### Brain fixation and immunofluorescent staining
 
 P7-9 (neonates) and P28-43 (young adults) mice were deeply anesthetized with isoflurane and sodium pentobarbital (85  mg/kg i.p. injection) and perfused with ice-cold phosphate-buffered saline (PBS) followed by ice-cold 4% PFA. Whole brains were dissected and post-fixed in 4% PFA for 2 hr and then cryoprotected in 30% sucrose for 24–48 hr at 4 °C until they sank to the bottom of the tubes. Brains were serially cut into 50 μm-thick coronal sections using a freezing microtome and stored in PBS +0.05% sodium azide at 4 °C until use.
 
 For immunofluorescence staining, free-floating brain sections were washed in PBS +0.1% triton X-100 (PBS-T) for 2 × 10 min and permeabilized in PBS +0.3% triton X-100 for 20–30 min. Sections were then incubated in blocking buffer (10% normal goat serum+0.3% BSA+0.3% triton X-100 in PBS) for 1 hr at room temperature and in primary antibodies [anti-p-S6 S240/244 (Cell Signaling Technology #5364, 1:1000) or anti-HCN4 (Alomone Labs APC-052, 1:500), diluted in 5% normal goat serum+0.3% BSA+0.1% triton X-100 in PBS] for 2 days at 4 °C. Sections were then washed in PBS-T for 3 × 10 min, incubated in secondary antibodies [goat anti-rabbit IgG Alexa Fluor Plus 647 (Invitrogen #A32733, 1:500)] for 2 hr at room temperature, and again washed in PBS-T for 3 × 10 min. All sections were mounted onto microscope glass slides and coverslipped with ProLong Diamond Antifade Mountant (Invitrogen) for imaging. The specificity of the HCN4 antibodies was previously validated in our lab (Hsieh et al., 2020). Additionally, no primary antibody control was included to confirm the specificity of the secondary antibodies (Figure 3—figure supplement 2b).
 
-## Confocal microscopy and image analysis
+### Confocal microscopy and image analysis
 
 Images were acquired using a Zeiss LSM 880 confocal microscope. All image analyses were done using ImageJ software (NIH) and were performed by an investigator blinded to experimental groups. Data were quantified using grayscale images of single optical sections. Representative images were prepared using Adobe Photoshop CC. All quantified images meant for direct comparison were taken with the same settings and uniformly processed.
 
 P28-43 neuron soma size and p-S6 staining intensity were quantified from 20 x magnification images of p-S6 stained brain sections by tracing the soma of randomly selected tdTomato+ cells and measuring the area and p-S6 intensity (mean gray value) within the same cell, respectively. HCN4 staining intensity was quantified from 20 x magnification images by tracing the soma of randomly selected tdTomato+ cells and measuring HCN4 intensity (mean gray value). Staining intensities were normalized to the mean control. 15 cells from two brain sections per animal were analyzed for each of the parameters. Neuron positioning (% cells in layer 2/3) was quantified by counting the number of tdTomato+ cells within an 800 μm × 800 μm region of interest (ROI) on the electroporated cortex. Cells within 300  μm from the pial surface were considered correctly located in layer 2/3 whereas cells outside that boundary were considered misplaced (Nguyen et al., 2022; Hsieh et al., 2016; Nguyen et al., 2019). The distribution of neurons in the cortex was further quantified by dividing the 800 μm × 800 μm ROI into 10 evenly spaced bins (bin width = 80 μm) parallel to the pial surface and counting the number of tdTomato+ cells in each bin. Only cells within the gray matter of the cortex were quantified. Data are shown as % of total tdTomato+ cell count. One brain section per animal was analyzed. P7-9 neuron soma size (figure supplement) was quantified from 10 x magnification images of unstained brain sections by tracing the soma of randomly selected tdTomato+ cells and measuring the area. 30 cells from two sections per animal were analyzed.
 
-## Acute brain slice preparation, patch clamp recording, and analysis
+### Acute brain slice preparation, patch clamp recording, and analysis
 
 Electrophysiology experiments were performed by an investigator blinded to experimental groups. P26-P51 mice were deeply anesthetized by carbon dioxide inhalation and sacrificed by decapitation. Whole brains were rapidly removed and immersed in ice-cold oxygenated (95% O2/5%CO2) high-sucrose cutting solution (in mM: 213 sucrose, 2.6 KCl, 1.25 NaH2PO4, 3 MgSO4, 26 NaHCO3, 10 Dextrose, 1 CaCl2, 0.4 ascorbate, 4 Na-Lactate, 2 Na-Pyruvate, pH 7.4 with NaOH). 300 μm-thick coronal brain slices containing the mPFC were cut using a vibratome (Leica VT1000) and allowed to recover in a holding chamber with oxygenated artificial cerebrospinal fluid (aCSF, in mM: 118 NaCl, 3 KCl, 1.25 NaH2PO4, 1 MgSO4, 26 NaHCO3, 10 Dextrose, 2 CaCl2, 0.4 ascorbate, 4 Na-Lactate, 2 Na-Pyruvate, 300 mOsm/kg, pH 7.4 with NaOH) for 30 min at 32 °C before returning to room temperature (22 °C) where they were kept for 6–8 hr during the experiment.
 
@@ -108,10 +391,10 @@ Zatebradine (40 µM, Toris Bioscience) and BaCl2 (200 µM, Sigma-Aldrich) were a
 
 sEPSCs were recorded at a holding potential of –70 mV. Synaptic currents were recorded for a period of 2–5 min and analyzed by using the template search algorithm in Clampfit (pClamp 10). The template was constructed by averaging 5–10 synaptic events, and the template match threshold parameter was adjusted to minimize false positives. All synaptic events identified by the program were manually inspected and non-synaptic currents (based on the fast-rising time) were discarded. The total charge (pA/ms) was calculated as the area of sEPSC events (pA/ms) × frequency (Hz)/1000 for each neuron.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using GraphPad Prism 9 software with the significance level set at p<0.05. Data distribution was assumed to be normal. Data were analyzed using nested t-test or nested one-way ANOVA obtained by fitting a mixed-effects model wherein the main factor is treated as a fixed factor and the nested factor is treated as a random factor; to account for correlated data within individual animals within groups (Moen et al., 2016; Yu et al., 2022), one-way ANOVA, two-way repeated measure ANOVA, or mixed-effects ANOVA (fitted to a mixed-effects model for when values were missing values in repeated measures analyses), as appropriate. For all nested statistics, the distribution of data among individual animals is shown in the accompanying figure supplements. All post-hoc analyses were performed using Holm-Šídák’s multiple comparison test. The specific tests applied for each dataset, test results, and sample size (n, number of animals or neurons) are summarized in the accompanying source data and described in the figure legends. All data are reported as the mean of all neurons or brain sections in each group ± standard error of the mean (SEM).
 
-## Materials availability
+### Materials availability
 
 Materials (plasmids) generated as part of this study are available upon reasonable request to the corresponding authors.

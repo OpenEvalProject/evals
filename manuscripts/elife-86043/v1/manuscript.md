@@ -12,13 +12,13 @@
 
 ### Affiliations
 
-1. https://ror.org/05vt9qd57 Public Health Research Institute and Department of Medicine, Rutgers New Jersey Medical School Newark United States
-2. https://ror.org/0190ak572 Department of Population Health, NYU Grossman School of Medicine New York United States
-3. https://ror.org/04a9tmd77 Division of Infectious Diseases, Department of Medicine, Icahn School of Medicine at Mount Sinai New York United States
-4. https://ror.org/03taz7m60 Department of Pediatrics, Division of Infectious Diseases, Children’s Hospital Los Angeles, Keck School of Medicine, University of Southern California Los Angeles United States
-5. https://ror.org/047426m28 Department of Biochemistry and Molecular Genetics, University of Illinois, College of Medicine Chicago United States
-6. https://ror.org/05gt1vc06 Department of Biochemistry & Molecular Biology, Howard University College of Medicine Washington United States
-7. https://ror.org/001rv3303 Department of Pandemic Equity, Vermont Center for Independent Living Montpelier United States
+1. Public Health Research Institute and Department of Medicine, Rutgers New Jersey Medical School Newark United States ([ROR:05vt9qd57](https://ror.org/05vt9qd57))
+2. Department of Population Health, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Division of Infectious Diseases, Department of Medicine, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+4. Department of Pediatrics, Division of Infectious Diseases, Children’s Hospital Los Angeles, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+5. Department of Biochemistry and Molecular Genetics, University of Illinois, College of Medicine Chicago United States ([ROR:047426m28](https://ror.org/047426m28))
+6. Department of Biochemistry & Molecular Biology, Howard University College of Medicine Washington United States ([ROR:05gt1vc06](https://ror.org/05gt1vc06))
+7. Department of Pandemic Equity, Vermont Center for Independent Living Montpelier United States ([ROR:001rv3303](https://ror.org/001rv3303))
 
 † Corresponding author
 

@@ -34,11 +34,184 @@ In this study, we used behavioral experiments and computational modeling to test
 
 ## Materials and methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 A total of 17 patients with cerebellar deﬁcits and 14 age-matched controls were tested in one or more of the following experiments. Patients were excluded if they had any clinical or MRI evidence of damage to extra-cerebellar brain structures, or clinical evidence of dementia, aphasia, peripheral vestibular loss, or sensory neuropathy. The age-matched controls were clinically screened for any neurological impairments. Experiments 1–2 tested 11 cerebellar patients (seven male, four female) and 11 age-matched controls (four male, seven female). Patient and control ages were within +/- 3 years of age. The one exception is a pairing of a 78-year-old patient with a 71-year-old control. Experiment 3 tested 12 cerebellar patients (eight male, four female) and 12 age-matched controls (three male, nine female), and all patient and control ages were within +/- 3 years of age. Subjects gave informed consent according to the Declaration of Helsinki. The experimental protocols were approved by the Institutional Review Board at Johns Hopkins University School of Medicine. Each subject used his or her dominant arm for all tasks. The only exception was one unilaterally affected cerebellar patient who was instructed to use her affected, non-dominant, hand. We quantiﬁed each subject’s ataxia using the International Cooperative Ataxia Rating Scale (ICARS) (Trouillas et al., 1997). Because this study involves upper limb reaching behavior, we calculated an Upper Limb ICARS sub-score comprising the sum of the upper-limb kinetic function elements of the test. The results of the ICARS as well as demographic information for all patients are shown in Table 1.
 
-## Experimental apparatus, experiments, and task instructions
+**Table 1.**
+ The cerebellar patient population that was tested.Not all subjects completed all experiments. Some subjects completed the experiments over two visits. Upper Limb ICARS contains the sum of the upper-limb kinetic function elements of the test (ICARS subsections 10–14, out of 20).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject no.</th>
+      <th>Patient age</th>
+      <th>Sex</th>
+      <th>Pathology</th>
+      <th>Icars</th>
+      <th>Upper limb ICARS</th>
+      <th>Experiments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P1</td>
+      <td>44</td>
+      <td>M</td>
+      <td>SCA8</td>
+      <td>62</td>
+      <td>17</td>
+      <td>1,2,3</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>52</td>
+      <td>M</td>
+      <td>ADCAIII</td>
+      <td>28</td>
+      <td>8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>53</td>
+      <td>M</td>
+      <td>Sporadic</td>
+      <td>59</td>
+      <td>19</td>
+      <td>1,2,3</td>
+    </tr>
+    <tr>
+      <td>P4</td>
+      <td>55</td>
+      <td>F</td>
+      <td>SCA8</td>
+      <td>41</td>
+      <td>17</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>P5</td>
+      <td>55</td>
+      <td>M</td>
+      <td>OPCA</td>
+      <td>46</td>
+      <td>14</td>
+      <td>1,2</td>
+    </tr>
+    <tr>
+      <td>P6</td>
+      <td>60</td>
+      <td>M</td>
+      <td>MSA-C</td>
+      <td>63</td>
+      <td>14</td>
+      <td>1,2,3</td>
+    </tr>
+    <tr>
+      <td>P7</td>
+      <td>62</td>
+      <td>F</td>
+      <td>Sporadic</td>
+      <td>36</td>
+      <td>16</td>
+      <td>1,2</td>
+    </tr>
+    <tr>
+      <td>P8</td>
+      <td>62</td>
+      <td>M</td>
+      <td>SCA6/8</td>
+      <td>62</td>
+      <td>19</td>
+      <td>1,2,3</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>63</td>
+      <td>M</td>
+      <td>SCA6</td>
+      <td>41</td>
+      <td>10</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>64</td>
+      <td>F</td>
+      <td>SCA6</td>
+      <td>58</td>
+      <td>13</td>
+      <td>1,2</td>
+    </tr>
+    <tr>
+      <td>P11</td>
+      <td>64</td>
+      <td>M</td>
+      <td>ADCAIII</td>
+      <td>11</td>
+      <td>3</td>
+      <td>1,2,3</td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>65</td>
+      <td>M</td>
+      <td>Idiopathic</td>
+      <td>34</td>
+      <td>10</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>P13</td>
+      <td>66</td>
+      <td>F</td>
+      <td>SCA6</td>
+      <td>41</td>
+      <td>11</td>
+      <td>1,2</td>
+    </tr>
+    <tr>
+      <td>P14</td>
+      <td>67</td>
+      <td>F</td>
+      <td>Left cerebellar stroke</td>
+      <td>27</td>
+      <td>10</td>
+      <td>1,2,3</td>
+    </tr>
+    <tr>
+      <td>P15</td>
+      <td>69</td>
+      <td>F</td>
+      <td>ADCAIII</td>
+      <td>52</td>
+      <td>13</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>P16</td>
+      <td>72</td>
+      <td>F</td>
+      <td>SCA6</td>
+      <td>49</td>
+      <td>18</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>P17</td>
+      <td>78</td>
+      <td>M</td>
+      <td>Sporadic (Vermis Degen.)</td>
+      <td>39</td>
+      <td>6</td>
+      <td>1,2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental apparatus, experiments, and task instructions
 
 For all experiments, subjects were seated in a KINARM exoskeleton robot (BKIN Technologies Ltd., Kingston, Ontario, Canada), shown in Figure 1A, which provided gravitational arm support while allowing movement in the horizontal plane. A black video screen occluded the subjects’ view of their arm movements. The shoulder position was fixed at a 75° angle, as shown in Figure 1C. The wrist joint was also fixed; therefore, the elbow joint was the only freely mobile joint. Data were recorded at 1 kHz. The KINARM system exhibits a cursor delay. Using a high-speed camera, we measured this delay (0.0458 s) and took the delay into account in modeling the human control system.
 
@@ -56,15 +229,15 @@ Healthy control subjects performed five practice trials and patients performed 1
 
 Some subjects completed only a subset of the experiments due to time constraints (see Table 1). For every experiment, between trials, subjects were told to relax while the robot moved the subject's hand to bring the cursor to the start position.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
-## Generating target trajectories (Experiments 1 and 2)
+#### Generating target trajectories (Experiments 1 and 2)
 
 The goal of Experiment 1 was to determine how well patients and controls could track an unpredictable sum-of-sines stimulus and probe their ability to use visual feedback for movement control. The target trajectory comprised 15 sine waves whose frequencies were prime multiples of 0.05 Hz, namely 0.1, 0.15, 0.25, 0.35, 0.55, 0.65, 0.85, 0.95, 1.15, 1.45, 1.55, 1.85, 2.05, 2.15, and 2.35 Hz. Phases of each sinusoid were randomized. Each trial was 100 s long, comprising ﬁve replicates of the sum-of-sines trajectory. The sinusoids were scaled so that the angular velocity of each sinusoid never exceeded 720°/s, while the positional amplitude of each sine wave never exceeded 2°. The non-harmonic relation of the component sinusoids created a temporally complex target motion with 45 degrees of freedom (amplitude, phase, and frequency for 15 sinusoids) that repeats every 20 s; a portion of the trajectory is shown in Figure 1D, wherein it can be observed that the signal trajectory includes multiple seemingly random turn-arounds within even very short timescales. This complexity, coupled with the long period, makes this target motion far less predictable than a simple single-sine motion (Miall and Jackson, 2006; Poulton, 1974; Roth et al., 2011). Lastly, the dramatic increase in tracking phase lag presented in this paper (see Results) for sum-of-sine responses recapitulates the main finding of Roth et al., 2011, confirming that from a practical point of view subjects were less able to predict the movement trajectories. Nevertheless, this signal design allowed good signal-to-noise ratio at each frequency while avoiding excessively large or fast motions of the target, making it well suited as a probe signal for tracking behavior (Roth et al., 2011). The normalized magnitude of the Fourier spectrum of our input signal is shown in the top half of in Figure 1E. Five trials were conducted for each condition tested.
 
 In Experiment 2, we wanted to determine how well patients and controls could track a predictable single sine wave. Every other frequency tested in the sum-of-sines condition was tested as a single, standalone sine wave: 0.1, 0.25, 0.55, 0.85, 1.15, 1.55, 2.05, and 2.35 Hz. The amplitude of each sine wave matched (component-wise) the sum-of-sines experiments. Subjects were once again instructed to keep the cursor in the target dot as much as possible. The order of presentation of the stimuli was randomized for each subject.
 
-## Estimating frequency responses (Experiments 1 and 2)
+#### Estimating frequency responses (Experiments 1 and 2)
 
 All analyses were performed using custom scripts (Zimmet et al., 2020) in MATLAB (The Mathworks Inc, Natick, MA, USA). To obtain the steady-state frequency response of the subject, the first period (20 s) was discarded as transient, leaving four periods per trial. The data were visually inspected for unusual activities that were not representative of the subject's typical behavior. For example, if the subject turned away from the screen to cough or talk, movement would cease for a few seconds and the data from those few seconds were removed from further analysis. The movement trajectories for a given subject were then averaged across trials at each time instant, excluding any deleted data. The averaged data were linearly detrended and converted to the frequency domain via the discrete Fourier transform (DFT). An example of the result of this process for a cerebellar patient is shown in Figure 1F (the frequency domain data is complex valued at each frequency so only the magnitude is shown).
 
@@ -72,7 +245,7 @@ For Experiment 1 (sum of sines), to estimate a subject's frequency response, we 
 
 The processing of the data for Experiment 2 (single sines) was identical to the processing of the sum-of-sines data, except that there was no averaging across trials and no manual inspection/filtering of the data for unusual activities. This is because we were only looking at one frequency from each sine wave trial, and any error caused by an unusual, aperiodic activity (such as pausing) would introduce very little power at any individual frequency.
 
-## Phasor plot (Experiments 1 and 2)
+#### Phasor plot (Experiments 1 and 2)
 
 To visualize the frequency response, we used Phasor Plots as shown in Figure 2A. In these plots, the gain is the radial distance from the origin, and phase lag is the clockwise angle of the data with respect to the horizontal axis. Perfect tracking at a given frequency corresponds to unity gain and zero phase lag, as illustrated by the large dot in Figure 2B. The distance between any point on the phasor plot and this dot provides a measure of the amplitude of the (sinusoidal) error signal at that particular frequency as a proportion of the input signal amplitude.
 
@@ -82,51 +255,71 @@ To visualize the frequency response, we used Phasor Plots as shown in Figure 2A.
 
 Additionally, this visualization can be enhanced with a circle with a 0.5 radius centered at +0.5 along the horizontal axis as shown in Figure 2B. Points on this circle correspond to the ideal response gain for minimizing error given a particular phase lag (Roth et al., 2011). Points on this circle represent the gain values that minimize error assuming the subject cannot further minimize phase lag. Points outside the circle indicate the subject is moving too much for a given phase lag; reducing the amplitude of movement would achieve a lower tracking error and would do so with less effort. Points within the circle may represent striking a balance between effort and error in that the subject is not moving enough to fully minimize their error given a certain phase lag. Lastly, points that lie on the unit circle, traced in bold black in Figure 2C, would indicate that the subject is replicating the sinusoidal component exactly, albeit at a phase shift.
 
-## Phasor plot scaling (Experiment 1)
+#### Phasor plot scaling (Experiment 1)
 
 If a subject were to ‘fully’ respond to an applied visual gain, the subject would need to scale his or her movement so that the visual output appeared the same as it did in the veridical feedback condition, although there is no constraint (or instruction) to do so. In reality, a subject may scale his or her movements more than this, less than this, or even not at all. To quantify this, we fit a Scaling Factor that, when multiplied by the frequency response phasors for a given Feedback Gain condition, best aligned the phasors with those of the veridical condition. We only included the five lowest frequencies in this calculation because at these frequencies subjects generally appeared to have robust responses (based on visual inspection of the data). At high frequencies, however, response magnitudes were low and therefore fitting the Scaling Factor could be dominated by noise.
 
 Scaling Factor (dependent measure) was analyzed using a two-way ANOVA, testing for the effects of two independent variables, group (patient vs. control) and Feedback Gain (0.65 and 1.35). If a main effect was found to be significant, we calculated an effect measure (ηp2) using the Measures of Effect Size toolbox for Matlab (Hentschke and Stüttgen, 2011).
 
-## Modeling (using data from Experiment 1)
+#### Modeling (using data from Experiment 1)
 
 To capture the visuomotor tracking response of both cerebellar patients and age-matched healthy controls, we adapted the classic McRuer gain-crossover model: a delayed, scaled integrator which specifically assumes that the subject is responding to an unpredictable stimulus (McRuer and Krendel, 1974). The McRuer gain-crossover model is highly simplified, and in its original incarnation was meant to capture the sensorimotor frequency response near the gain crossover frequency (i.e. where the open-loop gain of the combined plant and controller has unit magnitude). The idea is that near this frequency, closed-loop robustness is governed by the amount of phase lag; if that phase lag exceeds 180°, the closed-loop system becomes unstable. In a neighborhood of the gain-crossover frequency, McRuer and Krendel, 1974 recognized that subjects tended to have an open-loop gain whose magnitude dropped off inversely with frequency (like an integrator, or k/s), and the phase lag was a bit more than 90° (the integrator adds 90 degrees, and a delay in their model increases the phase lag as a function of frequency). We adopt a version of this simplified model to facilitate the interpretation of data (Figure 4).
 
 We hypothesized that the patient and control models would be equivalent except for the magnitude of the feedback delay (Figure 4A). To test this, we considered a more general class of models that allows for distinct parameters for the patients and healthy control subjects, and includes the possibility of distinct delays on the visual measurement of target motion from that of self-movement feedback (which can incorporate for example, proprioception, which generally incurs a lower latency than visual). To determine the simplest combined model of patients and controls which provided both a good and consistent fit without overfitting, we used a model selection process similar to that described in Madhav et al., 2013 based on Experiment 1 data (sum-of-sines). In the most flexible model, all patient and control parameters were allowed to vary independently with eight free parameters: kpatient, kcontrol, Visual Gainpatient, Visual Gaincontrol, Visual Delaypatient, Visual Delaycontrol, Feedback Delaypatient, and Feedback Delaycontrol (Figure 4—figure supplement 1). The following model selection procedure aimed to determine which of those eight parameters should be free and which should be yoked together to most parsimoniously fit the data. All combinations of yoked parameters were tested, subject to yoking gains with gains, and delays with delays. We also tested a few degenerate model structures (such as a pure gain or delay, with no feedback); some of these model structures allowed for the elimination of one or more of the blocks within the model structure.
 
-The following procedure was repeated for each possible model (note: here a ‘model’ includes both patient and control submodels). For each subject, we represented their frequency response as an array of 15 complex numbers (one for each of the frequencies tested in the sum-of-sines experiment). We began by pulling 10 of the 11 age-matched patient–control pairs from the full dataset. Then, we took the average of those 10 patients' (and, separately, controls) frequency responses at each tested frequency. Using the MATLAB function ‘fminsearch,’ we used these average frequency response functions to fit the current model parameters to the average data by minimizing the frequency-domain (FD) error:(1)FD-error=‖controlavg−controlmodelfit‖2 + ‖patientavg−patientmodelfit‖2where control and patient in the above equation were arrays with 15 complex values, corresponding respectively to frequency responses of healthy control subjects and patients at the 15 frequencies tested. This was repeated 100 times with different initial parameter values selected for the ‘fminsearch’ function, increasing the likelihood of finding a global minimum. The model parameters that generated the lowest overall error were kept (as well as the magnitude of the error). This was repeated for each patient–control pair, yielding 11 sets of model parameters and 11 leave one out error (loo-error) values, defined as:(2)loo-error=‖controlleftout−controlmodelfit‖2 + ‖patientleftout−patientmodelfit‖2
+The following procedure was repeated for each possible model (note: here a ‘model’ includes both patient and control submodels). For each subject, we represented their frequency response as an array of 15 complex numbers (one for each of the frequencies tested in the sum-of-sines experiment). We began by pulling 10 of the 11 age-matched patient–control pairs from the full dataset. Then, we took the average of those 10 patients' (and, separately, controls) frequency responses at each tested frequency. Using the MATLAB function ‘fminsearch,’ we used these average frequency response functions to fit the current model parameters to the average data by minimizing the frequency-domain (FD) error:
+
+$$
+FD-error=‖control_{avg}−control_{modelfit}‖^{2} + ‖patient_{avg}−patient_{modelfit}‖^{2}
+$$
+
+where control and patient in the above equation were arrays with 15 complex values, corresponding respectively to frequency responses of healthy control subjects and patients at the 15 frequencies tested. This was repeated 100 times with different initial parameter values selected for the ‘fminsearch’ function, increasing the likelihood of finding a global minimum. The model parameters that generated the lowest overall error were kept (as well as the magnitude of the error). This was repeated for each patient–control pair, yielding 11 sets of model parameters and 11 leave one out error (loo-error) values, defined as:
+
+$$
+loo-error=‖control_{leftout}−control_{modelfit}‖^{2} + ‖patient_{leftout}−patient_{modelfit}‖^{2}
+$$
 
 The leave one out error values were averaged together to create the overall leave one out error for that model structure. This was our gauge for the ability of the model to capture the responses. Using the 11 sets of the model parameters for that particular model (i.e. one set of parameters for each subject pair that was left out), we created an 11 × 8 matrix, each row of which corresponding to the parameters for a given leave-one-out fit. The elements of the matrix were the residuals between each of the eight parameters and their average value. We calculated the maximum singular value of this matrix as a gauge for model consistency. This was repeated for all potential models. Finally, by modifying our fitting procedure above, we used bootstrapping to generate confidence intervals for the parameter values in our best model. Specifically, we randomly sampled eleven times with replacement from the eleven subjects. This was repeated 1000 times to generate 1000 sets of parameter values. From these values, we found the 95% confidence intervals.
 
 ‘Essentially all models are wrong, but some are useful’ (Gep and Draper, 1987) so rather than choosing a single ‘correct’ model, we scrutinized all models that exhibit a good tradeoff of model fit and model consistency. We also considered the number of free parameters (parsimony). Lastly, we examined whether a given model produced physiologically realistic parameters; models with nonphysiological parameters would suggest inadequate model structure leading to parameter bias. We determined the common features and subtle differences between these good models and the outcome of these meta analyses are described in Results.
 
-We converted each frequency-domain model (which includes patient and control submodels) to state space in Matlab, and simulated the model pair using the lsim command (Figure 4—figure supplement 1D). The input was the sum-of-sines target angle trajectory used in experiments. The model output produced a distinct prediction for the elbow-angle trajectory for each group (patients and controls; Figure 4C). These simulated elbow-angle responses were compared to subject responses as follows. We averaged across trials for each subject to compute a single time-domain response for each patient and each age-matched control; we then averaged across subjects in each group to compute a mean elbow-angle response for patients and a mean elbow-angle response for controls. Given the simulated model responses and actual patient and control mean responses, the time-domain (TD) error was calculated as follows:(3)TD-error=1T∫0T(control(t)mean−control(t)model)2dt +1T∫0T(patient(t)mean−patient(t)model)2dtwhere the integration is computed as a Riemann sum over the last T=80 seconds of the 100s trial period, with a sampling time of 1ms. The TD-error was normalized so that the maximum error was 1 for visualization purposes.
+We converted each frequency-domain model (which includes patient and control submodels) to state space in Matlab, and simulated the model pair using the lsim command (Figure 4—figure supplement 1D). The input was the sum-of-sines target angle trajectory used in experiments. The model output produced a distinct prediction for the elbow-angle trajectory for each group (patients and controls; Figure 4C). These simulated elbow-angle responses were compared to subject responses as follows. We averaged across trials for each subject to compute a single time-domain response for each patient and each age-matched control; we then averaged across subjects in each group to compute a mean elbow-angle response for patients and a mean elbow-angle response for controls. Given the simulated model responses and actual patient and control mean responses, the time-domain (TD) error was calculated as follows:
 
-## Comparing phase lags across cohorts and conditions (Experiments 1 and 2)
+$$
+TD-error=\sqrt{\frac{1}{T}\int_{0}^{T}(control(t)_{mean}−control(t)_{model})^{2}dt }+\sqrt{\frac{1}{T}\int_{0}^{T}(patient(t)_{mean}−patient(t)_{model})^{2}dt}
+$$
+
+where the integration is computed as a Riemann sum over the last $T=80$ seconds of the 100s trial period, with a sampling time of 1ms. The TD-error was normalized so that the maximum error was 1 for visualization purposes.
+
+#### Comparing phase lags across cohorts and conditions (Experiments 1 and 2)
 
 We tested whether the cerebellar group showed a different pattern of phase lag across frequencies compared to controls. Specifically, we compared the phase lag for the lowest common frequencies (0.10, 0.25, 0.55, 0.85, 1.15) in the sum-of-sines and single-sine conditions across the two groups. We hypothesized that the control group would be able to use prediction and follow the single sine wave with little phase lag compared to the cerebellar patients. We expected that there would be less of a difference between groups when they followed the sum-of-sines. We used a parametric two-way ANOVA for circular data called the Harrison-Kanji test for this analysis (Berens, 2009).
 
-## Acceleration-Dependent Feedback (Experiment 3)
+#### Acceleration-Dependent Feedback (Experiment 3)
 
-To examine the effect of modified visual cursor feedback in VR, we implemented Acceleration-Dependent Feedback, where the cursor angle was set to follow the elbow angle plus an acceleration-dependent term:(4)CursorAngle(t) = ElbowAngle(t) + ka d2dt2ElbowAngle(t)
+To examine the effect of modified visual cursor feedback in VR, we implemented Acceleration-Dependent Feedback, where the cursor angle was set to follow the elbow angle plus an acceleration-dependent term:
 
-To implement this Acceleration-Dependent Feedback, we used the KINARM’s real-time computer to calculate the average of the previous 100 elbow angular acceleration values as an approximation of the instantaneous acceleration (at 1 kHz sampling, this resulted in a ∼ 50 ms delay). This acceleration estimate was multiplied by the Acceleration-Dependent Feedback Gain (ka), added to the real elbow angle, and the position of the cursor was displayed on the Kinarm screen at this new, slightly shifted angle. In practical terms, this moving-average-filtered acceleration-dependent feedback amounts to a high-pass filter, providing anticipatory (i.e. phase-leading) feedback to the user when ka>0, and providing phase-lagging feedback when ka<0.
+$$
+CursorAngle(t)=ElbowAngle(t) + k_{a}\frac{d^{2}}{dt^{2}}ElbowAngle(t)
+$$
 
-To find a patient-specific feedback gain ka, cerebellar patients performed blocks of 10 reaches where this gain was held constant. Each patient started with ka=0 (veridical feedback) for their first block of reaches. Individual reaches were categorized as hypometric, on-target, or hypermetric. Based on the mode of this categorization for the 10 reaches, the gain was increased, remained the same, or decreased, as determined by the Parameter Estimation by Sequential Testing (PEST) algorithm (see Implementation of the PEST Algorithm (Experiment 3), below) (Taylor and Creelman, 1967).
+To implement this Acceleration-Dependent Feedback, we used the KINARM’s real-time computer to calculate the average of the previous 100 elbow angular acceleration values as an approximation of the instantaneous acceleration (at 1 kHz sampling, this resulted in a ∼ 50 ms delay). This acceleration estimate was multiplied by the Acceleration-Dependent Feedback Gain ($k_{a}$), added to the real elbow angle, and the position of the cursor was displayed on the Kinarm screen at this new, slightly shifted angle. In practical terms, this moving-average-filtered acceleration-dependent feedback amounts to a high-pass filter, providing anticipatory (i.e. phase-leading) feedback to the user when $k_{a}>0$, and providing phase-lagging feedback when $k_{a}<0$.
 
-In addition, control and patient participants performed blocks of five reaches at nine specific gains in this order: ka = 0 (veridical), 0.005, 0.010, 0.015, 0.020, −0.005, −0.010, −0.015, and −0.020. Participants were given ﬁve trials of one Feedback Gain before being exposed to the next Feedback Gain on the list. Note that only 6 of the 12 patients completed this experiment due to time constraints.
+To find a patient-specific feedback gain $k_{a}$, cerebellar patients performed blocks of 10 reaches where this gain was held constant. Each patient started with $k_{a}=0$ (veridical feedback) for their first block of reaches. Individual reaches were categorized as hypometric, on-target, or hypermetric. Based on the mode of this categorization for the 10 reaches, the gain was increased, remained the same, or decreased, as determined by the Parameter Estimation by Sequential Testing (PEST) algorithm (see Implementation of the PEST Algorithm (Experiment 3), below) (Taylor and Creelman, 1967).
 
-## Quantifying dysmetria for discrete reaches (Experiment 3)
+In addition, control and patient participants performed blocks of five reaches at nine specific gains in this order: $k_{a}$ = 0 (veridical), 0.005, 0.010, 0.015, 0.020, −0.005, −0.010, −0.015, and −0.020. Participants were given ﬁve trials of one Feedback Gain before being exposed to the next Feedback Gain on the list. Note that only 6 of the 12 patients completed this experiment due to time constraints.
+
+#### Quantifying dysmetria for discrete reaches (Experiment 3)
 
 We quantiﬁed dysmetria in this single-joint task by measuring the elbow angle at which the subject made his or her ﬁrst correction. We determined the angle of the ﬁrst correction by ﬁnding when the velocity crossed zero after the initiation of the reach. The angle of the elbow at this time point is the angle of the ﬁrst correction. This angle was divided by the goal angle of 30°. In a smooth and accurate reach, no correction would be needed and the ‘angle of first correction’ would be the target angle; in this scenario, the ratio between the ‘angle of ﬁrst correction’ and the goal angle would be 1. If the result was greater than 1.03, the reach was categorized as hypermetric, and likewise, if the result was less than 0.97, the reach would be categorized as hypometric. Results between 0.97 and 1.03 were classiﬁed as ‘on target’ reaches.
 
-## Implementation of the PEST algorithm (Experiment 3)
+### Implementation of the PEST algorithm (Experiment 3)
 
 The Parameter Estimation by Sequential Testing (PEST) algorithm was used to iteratively determine the best Acceleration-Dependent Feedback Gain values to apply in Experiment 3 by analyzing the history of the responses to different applied values (Taylor and Creelman, 1967). If the mode of the initial set of reaches was hypermetric, the Acceleration-Dependent Feedback Gain would be decreased. Likewise, it would be increased if the mode of the set was hypometric. The initial step size used for the PEST algorithm was 0.01. The maximum step size for the PEST algorithm was limited to 0.01 and the minimum step size was 0.0035. The maximum Acceleration-Dependent Feedback Gain was set to +/- 0.02. The PEST algorithm was terminated when two blocks of the same Acceleration-Dependent Feedback Gain yielded a mode of reaches classiﬁed as ‘on target.’ Alternatively, if this portion of the experiment took longer than approximately 20 min or the subject was experiencing fatigue, the most successful Acceleration-Dependent Feedback Gain was selected based on those which had already been tested.
 
 ## Results
 
-## Experiment 1: cerebellar patients and age-matched controls respond similarly to rescaling of visual self-motion feedback
+### Experiment 1: cerebellar patients and age-matched controls respond similarly to rescaling of visual self-motion feedback
 
 To probe participants' ability to use visual feedback, we challenged cerebellar patients and age-matched controls to keep a cursor within a target dot that was following an unpredictable trajectory. The normalized Fourier spectrum (magnitude only) of the target trajectory is shown in Figure 1E and the spectrum of a single subject’s response is shown in Figure 1F. Note that this subject had clear peaks at all of the frequencies of target movement in the veridical condition (1x).
 
@@ -142,21 +335,197 @@ Figure 3C shows the Scaling Factors for all subjects for each Feedback Gain cond
 
 Note that the subjects typically exhibited a Scaling Factor of around 1.2 in the 1.35 Feedback Gain condition. Intuitively, this indicates that subjects rescaled their movements as if to compensate perfectly for an experimentally applied Feedback Gain of 1.2; had they compensated perfectly, their scaling factor would have been 1.35. Likewise, for a Feedback Gain of 0.65, the Scaling Factor was typically approximately 0.8, again implying that subjects compensated, albeit not fully, for the visual rescaling (Figure 3). Critically, the patients’ responses to the feedback scaling were comparable to that of age-matched controls, suggesting that they were able to use visual feedback in a substantively similar manner.
 
-## Cerebellar patient performance best captured by long latency closed-loop model
+### Cerebellar patient performance best captured by long latency closed-loop model
 
 In computational terms, one can interpret the data from Experiment one to mean that cerebellar patients had a functional feedback loop in their control system. Here we asked if they are using the same ‘control structure’ (i.e. a model of the interplay between sensory feedback, external sensory input, and motor output) as age-matched controls. Because the cerebellar and age-matched control groups scaled their movements similarly in Experiment 1, one might hypothesize that they were using a similar control structure. However, the scaling was measured relative to each subject’s baseline movement in the veridical condition and was not a measure of their overall error performance on the task; for example, issues of phase lag would not be captured by the scaling analysis. Thus, here we use our findings from Experiment 1 along with the model selection procedure described by Madhav et al., 2013 to determine any differences in control structures used by patients and age-matched controls.
 
 Consider the hypothesized model depicted in Figure 4A. In this model, the brain calculates the error between perceived elbow angle and target angle, as shown in the subtraction calculation in the feedback diagram. The model merges the cascade of the subject's internal controller and mechanical plant (arm and robot dynamics); the combined plant and controller is treated as a classic McRuer gain-crossover model—a scaled integrator—a model based on the assumption that the subject is responding to an unpredictable stimulus (McRuer and Krendel, 1974). Our hypothesis is that all model parameters would be equivalent between patients and age-matched controls, except that patients would have a feedback delay commensurate with their visual processing time and controls would have a lower latency feedback delay commensurate with their proprioceptive feedback processing time (Bhanpuri et al., 2013; Cameron et al., 2014; Crevecoeur and Scott, 2013; Izawa and Shadmehr, 2008). This is because we expect that patients would rely more on (slower) visual feedback to compensate for their deficient estimation of limb state. Visuomotor delay during smooth pursuit tracking is generally much faster than the time required for movement initiation, and estimates for such visuomotor tracking delay vary, but would be expected in the range of 110 to 160 ms (Brenner and Smeets, 1997; Day and Lyon, 2000; Franklin and Wolpert, 2008; Haith et al., 2016; Pruszynski et al., 2016; Saunders and Knill, 2003).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53246/elife-53246-fig4-v2.jpg)
+
+**Figure 4.:** (A) Our modeling framework was based on the McRuer Crossover model (McRuer and Krendel, 1974). This simple model structure lumps the controller and plant as a scaled integrator, and assigns different delays to the measurement of the target from that of self-movement feedback. We hypothesized that the patient and control models would be equivalent except for the magnitude of the feedback delay. The Visual Gain is necessary because, given the complexity and speed of the signal, participants were unable to match the full magnitude of the signal. (B) After our model selection procedure, the Final Model structure was distilled from the top models to capture the general features shared among them. It is similar to our hypothetical model, but with subtle differences: the feedback delay for the controls was determined to be zero instead of equivalent to the proprioceptive delay, the feedback delay for patients was shorter than or equal to the visual delay, and the visual delay for patients was slightly longer than healthy controls. (C) Time domain visualization of subject and model responses for a typical 15 s time window of our experiments. The same visual target trajectory (green) was played to all patients and controls and was used in simulation. Individual time-domain elbow-angle responses (light gray) are shown for the 11 control subjects (top plot) and 11 patients (bottom plot). The average subject responses (orange, solid) match with reasonable accuracy the simulated model responses (orange, dashed). The simulated model structure used here is the modeled named ‘Best 4 (Lowest Err)’ in Figure 4—figure supplement 1B.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53246/elife-53246-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** We used sum-of-sine data to fit the parameters of a modified McRuer Crossover model (McRuer and Krendel, 1974). (A) In the most flexible setting, there are a total of eight free parameters, allowing for patients and controls to have completely independent model parameters. (B) In the model fitting and model selection process, we tested all possible variations of the model structure, for a total of 2667 model configurations. For example, some model structures yoke parameters together or eliminate parameters, and some yoke variables together across patient and control models. Each row illustrates an individual model configuration. Variables with the same color within that row are yoked together for that model configuration and white indicates that the specified variable was removed from the model. The table includes the following: the best model structures for all possible numbers of free parameters (Best 1–8); the hypothesized model structure (Hypothesis, shown in C and D); two special pure delay (D1-2) model structures. Best 1 is a pure gain model structure. Best 2 is a pure delay (D3) model structure. The model names are shown in the left column. Lowest Err means lowest Leave-One-Out error. Lowest Var means lowest model inconsistency. (C) Results of model selection procedure in frequency domain for the models in B. The models in red dots and blue asterisk, highlighted in the red circle, provide the best trade-off between minimizing model inconsistency (i.e. minimizing parameter variability and over-fitting) and minimizing error (improving model fit). The top four models are labeled 4 Lowest Err, 4 Lowest Var, 5 Lowest Err and 5 Lowest Var. These top models had nearly equivalent performance according to the model selection criteria. (D) Time domain validation. As in (C), we plotted error versus model inconsistency, but here we used the time-domain error (see Materials and methods). Critically, the time-domain data were not used directly for model fitting, and yet the top models in left bottom corner of the frequency domain are also the top models in the time domain, validating that our frequency-domain model selection process selected the models that were also best in the best time-domain.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53246/elife-53246-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Individual frequency responses for the 11 control subjects (black) and 11 patients (red). It also shows the average responses for controls (black bolded) and patients (red bolded). (B) Mean responses with standard deviation for controls (black bold line with grey shaded region) and patients (red bold line with red shaded region). The simulated model frequency responses (dashed lines) match the actual mean responses well. The frequency responses of the simulated models capture qualitative features, such as the crossing of the response curves between patients and controls both in the magnitude and phase. The simulated model here is Best 4 (Lowest Err).
+
 To test this hypothesized model, we performed model fitting and model selection on all possible model configurations (Figure 4—figure supplement 1A,B). Our hypothesized model was just one possibility and the parameter values of the models were not constrained a priori. The models were compared based on joint consideration of model consistency and model fit. Model fitting and selection produced five models, called Best 4 (Lowest Variance), Best 4 (Lowest Error), Best 5 (Lowest Variance), Best 5 (Lowest Error), and Best 6, that were nearly equivalent in their trade-off between model inconsistency and model fitting error (Figure 4—figure supplement 1C). Model Best 6 added one more free parameter compared to Best 5 (Lowest Variance) and was the only one of the top five models that allowed for variation in the feedback delay for controls; this addition yielded a small delay (~39 ms) and while only providing a small enhancement in model fit-error, shown in both frequency domain plot and time domain validation (Figure 4—figure supplement 1C and Figure 4—figure supplement 1D). Thus, out of parsimony, we eliminated model Best 6 considered both Best 4 and both Best 5 models as the top models. These top models were extremely similar in their structure and parameters (Figure 4—figure supplement 1B and Table 2). Indeed, in all four top models, the feedback delay was zero for control subjects, substantially shorter than cerebellar patients. This suggests that controls can rely on an internal model of their hand position and/or proprioceptive feedback to make corrections for their future movements while cerebellar patients must rely on delayed visual feedback (see Discussion).
+
+**Table 2.**
+ Model parameters with standard deviation for the top models (Best 5 and Best 4).Variables with the same color within a row are yoked together for that model configuration. Top models are similar; the feedback delay was smaller than or equal to the visual delay for the patients, and zero for controls, and the patient visual delay was longer than that of the healthy controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>kpatient</th>
+      <th>kcontrol</th>
+      <th>Visual Gainpatient</th>
+      <th>Visual Gaincontrol</th>
+      <th>Visual Delaypatient (ms)</th>
+      <th>Visual Delaycontrol (ms)</th>
+      <th>Feedback Delaypatient (ms)</th>
+      <th>Feedback Delaycontrol (ms)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Best 5 (Lowest Err)</td>
+      <td>2.8 (0.09)</td>
+      <td>2.8 (0.09)</td>
+      <td>0.38 (0.01)</td>
+      <td>0.41 (0.02)</td>
+      <td>211 (0.008)</td>
+      <td>143 (0.003)</td>
+      <td>143 (0.003)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Best 5 (Lowest Var)</td>
+      <td>2.6 (0.08)</td>
+      <td>2.6 (0.08)</td>
+      <td>0.37 (0.01)</td>
+      <td>0.42 (0.02)</td>
+      <td>183 (0.005)</td>
+      <td>147 (0.003)</td>
+      <td>183 (0.005)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Best 4 (Lowest Err)</td>
+      <td>2.7 (0.10)</td>
+      <td>2.7 (0.10)</td>
+      <td>0.39 (0.01)</td>
+      <td>0.39 (0.01)</td>
+      <td>210 (0.007)</td>
+      <td>141 (0.003)</td>
+      <td>141 (0.003)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Best 4 (Lowest Var)</td>
+      <td>2.5 (0.09)</td>
+      <td>2.5 (0.09)</td>
+      <td>0.40 (0.01)</td>
+      <td>0.40 (0.01)</td>
+      <td>181 (0.005)</td>
+      <td>145 (0.003)</td>
+      <td>181 (0.005)</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 Rather than picking up a single best model, we drew the following general conclusions from the modeling. The Final Model (Figure 4B) was distilled from the top four models to show the general features among them, together with the range of parameters derived from these models. In addition to the parameter values having consistent values across the top four models, they also have intuitively plausible values (Table 2). While the true parameters have biological limitations, we did not restrict their values during the fitting procedure. This provides a useful diagnostic tool, since unrealistic parameter fits would indicate inadequate model structure: parameter bias is a hallmark of model deficiency. In the four top models, Visual Delays for controls were found to be 141–147 ms, which is physiologically plausible. Interestingly, this delay was much shorter than for patients, whose Visual Delays were 181–211 ms. Critically, patients exhibited longer response delay both on the visual measurement of target motion and that of self-movement feedback, compared to controls. The top models also suggest that Feedback Delay is shorter than Visual Delay for both patients and controls, although for two of top models, the patients exhibited equivalent Visual and Feedback Delays. Visual Gain values are all approximately 0.40 which also seems reasonable given a visual inspection of the data: subjects do not appear to be attempting to replicate the full magnitude of the signal, but some smaller portion of the signal. We further examined the frequency responses of patients and controls (Figure 4—figure supplement 2A). Patients exhibited substantially greater phase lag at high frequencies than controls; at low frequencies, both populations exhibited very little phase lag, but, surprisingly, controls exhibited slightly more phase lag than patients in this frequency range. Thus, there was a phase ‘cross over’ frequency between patients and controls, which was also captured by our top models (Figure 4—figure supplement 2B).
 
 As a final test of our modeling approach, we examined how our Best 4 (Lowest Err) Model's parameters changed when we applied variations in Feedback Gain as shown in Table 3. Recall that in the 1.35 Feedback Gain condition, the dot moves more than the person's hand position; therefore, we expect the subject to move slightly less than they do in the veridical feedback condition because they do not need to move as much to get the same visual output (i.e. we expect k to decrease). Similarly, we expect the subject to attempt to replicate a greater portion of the signal because it is easier to do so. Thus, we expect the Visual Gain (the amount of the input signal that the subject is trying to reproduce) to be greater in the 1.35 Feedback Gain Condition than in the veridical condition. Recall that the Visual Gain affects the input to the visual error computation. We expect the opposite trend for the 0.65 Feedback Gain condition, as is detailed in Table 3. Given that we believe the delays are biologically limited based on transmission time of visual information, we expect the delay magnitudes to stay the same between Feedback Gain conditions. Indeed, the model parameters change in the hypothesized manner when different Feedback Gains were applied. The results from fitting the Best 4 (Lowest Err) Model to the data from each of the different Feedback Gains yields the parameter values shown in Table 4. The visual feedback delays are nearly identical between Feedback Gain conditions, and the k and Visual Gain values increase and decrease as hypothesized in Table 3. The one difference between the hypothesis and these model values is in the lack of a feedback delay for the control subjects. This discrepancy is addressed in the Discussion section.
 
+**Table 3.**
+ Hypothesized changes in model parameters under different Feedback Gains.The table shows how we expect the model parameter values indicated in the bottom two rows (1.35 and 0.65 Feedback Gain) to change (with respect to the value obtained in the veridical Feedback Gain condition, Feedback Gain = 1.0) with changing Feedback Gains. We expect Visual Delay of approximately 140 to 250 ms, and Proprioceptive Delay approximately 110 to 150 ms (Cameron et al., 2014). We also expect Visual Gain to be less than one in the veridical feedback condition because we do not expect the subjects to attempt to replicate the full magnitude of the signal, given that it is a challenging, fast, and unpredictable task.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feedback Gain</th>
+      <th>K</th>
+      <th>Visual gain</th>
+      <th>Visual delay (s)</th>
+      <th>Feedback Delaypatient (s)</th>
+      <th>Feedback Delaycontrol (s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td></td>
+      <td>&lt;1</td>
+      <td>Visual Delay</td>
+      <td>Visual Delay</td>
+      <td>Proprioceptive Delay</td>
+    </tr>
+    <tr>
+      <td>1.35</td>
+      <td>Decrease</td>
+      <td>Increase</td>
+      <td>Unchanged</td>
+      <td>Unchanged</td>
+      <td>Unchanged</td>
+    </tr>
+    <tr>
+      <td>0.65</td>
+      <td>Increase</td>
+      <td>Decrease</td>
+      <td>Unchanged</td>
+      <td>Unchanged</td>
+      <td>Unchanged</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ The model (Best 4 Lowest Err) parameters changed with different applied Feedback Gains in a manner consistent with our prediction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feedback Gain</th>
+      <th>kpatient</th>
+      <th>kcontrol</th>
+      <th>Visual Gainpatient</th>
+      <th>Visual Gaincontrol</th>
+      <th>Visual Delaypatient (ms)</th>
+      <th>Visual Delaycontrol (ms)</th>
+      <th>Feedback Delaypatient (ms)</th>
+      <th>Feedback Delaycontrol (ms)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2.7</td>
+      <td>2.7</td>
+      <td>0.39</td>
+      <td>0.39</td>
+      <td>210</td>
+      <td>141</td>
+      <td>141</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1.35</td>
+      <td>2.2</td>
+      <td>2.2</td>
+      <td>0.44</td>
+      <td>0.44</td>
+      <td>209</td>
+      <td>140</td>
+      <td>140</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0.65</td>
+      <td>3.6</td>
+      <td>3.6</td>
+      <td>0.33</td>
+      <td>0.33</td>
+      <td>210</td>
+      <td>144</td>
+      <td>144</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 Lastly, we used bootstrapping to generate confidence intervals for the parameter values in our Best 4 (Lowest Err) Model. Confidence intervals (see Methods) for our best model to be: 2.1–3.4 for kpatient and kcontrol; 0.32–0.46 for Visual Gainpatient and Visual Gaincontrol; 174–261 ms for Visual Delaypatient; and 122–161 ms for Visual Delaycontrol, and Feedback Delaypatient.
 
-## Experiment 2: poor tracking of simple oscillatory trajectories highlights cerebellar patients’ predictive deficit
+### Experiment 2: poor tracking of simple oscillatory trajectories highlights cerebellar patients’ predictive deficit
 
 We validated the sinusoidal tracking paradigm by quantifying a known behavioral deficit in cerebellar visuomotor control. In this predictable task, we expected healthy participants would be efficient, exerting less than or equal to the amount of effort required to minimize error for a given phase lag. Where subjects lie relative to this tradeoff can be visualized on a phasor plot; efficient tracking would yield points on or inside the effort/error tradeoff circle (Figure 2B, Materials and methods). We hypothesized that patients with impaired prediction may in some cases exert more effort than needed to minimize error, resulting in phasor points outside the effort/error tradeoff circle. We also hypothesized that patients would generate larger tracking errors.
 
@@ -176,21 +545,25 @@ To specifically look at phase lag between groups (patients vs. controls) and con
 
 **Figure 6.:** Polar plot representations showing phase lag for the five lowest frequencies common to the single-sine and sum-of-sines conditions. (A) Control group phase lags. Individual subjects are represented as lighter colored unit vectors and the group mean vector is plotted in bold. Purple indicates the single-sine condition and black represents the sum-of-sines condition. Note that only phase lag is represented on the polar plot (gain is not represented). The Control group is able to track the single-sine stimuli with little or no phase lag, but shows phase lags that increase with frequency in the sum-of-sines condition. (B) Example response from a control subject tracking a 0.85 Hz single-sine stimuli. The target sine wave is represented in green and the subject performance in orange. Note that this control could predict the single-sine and track it with little or no phase lag. (C) Cerebellar group phase lags plotted as in A. The Cerebellar patients were able to track the two slowest single-sine stimuli with little phase lag (purple, 0.10 and 0.25 Hz) but then shows increasing phase lags as a function of frequency. Note that 0.10 and 0.25 Hz are extremely slow frequencies that could be followed using only visual feedback control. In the sum-of-sines condition, the cerebellar group shows phase lags that increase with frequency. (D) Example response from a cerebellar subject tracking a 0.85 Hz single-sine stimuli. In contrast to the control subject, this cerebellar patient shows phase lags relative to the target.
 
-## Experiment 3: virtual reality feedback can reduce dysmetria
+### Experiment 3: virtual reality feedback can reduce dysmetria
 
 The results from Experiment 1 indicated that cerebellar patients’ feedback control may be largely intact. In Experiment 3, we leveraged this intact element of their control system to reduce dysmetria. Our goal was to provide each cerebellar patient with customized visual position feedback information that took into account their controller’s mismatched feedforward model. This altered visual feedback would help them generate the correct motor command for a simple elbow movement (30° flexion) by accounting for their actual arm dynamics.
 
 Here, we used a motor task that requires subjects make a discrete movement to a target that is stepped to a new position. This was chosen so that we could compare our data to previously published results using the same task with cerebellar patients. Subjects were asked to make a 30° elbow flexion movement from a home target to a stepped target. The task was completed with both veridical visual feedback and with altered visual feedback that was designed to reduce their dysmetria.
 
-Bhanpuri et al. theorized that cerebellar patients have a static mismatch between their controller’s internal model of their limb inertia and the actual limb inertia for elbow flexion movements (Bhanpuri et al., 2014). Critically, for single-joint elbow flexion or extension, an inertial mismatch causes an acceleration-dependent error in the internal dynamic model because inertia and acceleration are kinematically yoked. Thus, we predicted that an Acceleration-Dependent Feedback Gain, ka (block diagram inset in Figure 7A) could provide corrective feedback to enhance reaching performance of cerebellar patients. Specifically, we took a subject’s estimated acceleration (see Materials and methods), multiplied this by the Feedback Gain, and then added it to the position of the subject’s cursor:Shown Elbow Angle=(Actual Elbow Angle)+ ka∙(Elbow Angular Velocity)
+Bhanpuri et al. theorized that cerebellar patients have a static mismatch between their controller’s internal model of their limb inertia and the actual limb inertia for elbow flexion movements (Bhanpuri et al., 2014). Critically, for single-joint elbow flexion or extension, an inertial mismatch causes an acceleration-dependent error in the internal dynamic model because inertia and acceleration are kinematically yoked. Thus, we predicted that an Acceleration-Dependent Feedback Gain, $k_{a}$ (block diagram inset in Figure 7A) could provide corrective feedback to enhance reaching performance of cerebellar patients. Specifically, we took a subject’s estimated acceleration (see Materials and methods), multiplied this by the Feedback Gain, and then added it to the position of the subject’s cursor:
+
+$$
+Shown Elbow Angle=(Actual Elbow Angle)+k_{a}∙(Elbow Angular Velocity)
+$$
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53246/elife-53246-fig7-v2.jpg)
 
 **Figure 7.:** (A) The trajectories from a single cerebellar patient, moving to the grey target zone. Overshooting or undershooting the grey region is categorized as hypermetric or hypometric, respectively. The solid lines are average trajectories (across trials for a single subject) at a given Acceleration-Dependent Feedback Gain value. A decrease in the angle of first correction (i.e. the peak of the first peak of the elbow angle) is apparent as the Acceleration-Dependent Feedback Gain decreases. The best Acceleration-Dependent Feedback Gain for this subject was determined to be −0.0025, and the resulting movement trajectory is shown as a solid green line. The dashed green line illustrates the trajectory that is displayed to the subject on the screen for the −0.0025 condition. This example also shows that oscillation around the target remains with Acceleration-Dependent Feedback Gain. The block diagram in the lower right shows how the Acceleration-Dependent Feedback Gain was applied to the visual representation of the fingertip position. (B) The reduction in dysmetria exhibited by patients when the best Acceleration-Dependent Feedback Gain was applied. Each line represents a single cerebellar patient. Lines are color coded to indicate the best Acceleration-Dependent Feedback Gain for that subject. (C) Increasing Acceleration-Dependent Feedback Gain causes increased hypermetria. Again, each line represents a single cerebellar patient. At the highest gain values, the visual feedback diverged enough from the fingertip position so that some subjects paused mid-reach, presumably due to the conflicting visual feedback. This yielded the observed drop in median angle of first correction seen in some subjects in the higher gain conditions. This figure shows only the cerebellar patients. Control subject data is shown in Figure 8.
 
-We predicted that positive value for ka would make a subject more hypermetric and negative value would make a subject more hypometric. Thus, we expected hypometric patients would experience a reduction in dysmetria with a positive gain. Similarly, we expected hypermetric patients would experience a reduction in dysmetria when a negative gain was applied. For a given value for the gain for ka, subjects completed 30° elbow flexion reaching movements in the Kinarm exoskeleton robot. Reaches were categorized as hypometric, hypermetric, or on-target based on the angle where they made their first correction to their movement. The Acceleration-Dependent Feedback Gain ka was applied to the visual feedback provided on the Kinarm screen. For more details on the implementation and instructions of this task, see Materials and methods.
+We predicted that positive value for $k_{a}$ would make a subject more hypermetric and negative value would make a subject more hypometric. Thus, we expected hypometric patients would experience a reduction in dysmetria with a positive gain. Similarly, we expected hypermetric patients would experience a reduction in dysmetria when a negative gain was applied. For a given value for the gain for $k_{a}$, subjects completed 30° elbow flexion reaching movements in the Kinarm exoskeleton robot. Reaches were categorized as hypometric, hypermetric, or on-target based on the angle where they made their first correction to their movement. The Acceleration-Dependent Feedback Gain $k_{a}$ was applied to the visual feedback provided on the Kinarm screen. For more details on the implementation and instructions of this task, see Materials and methods.
 
-When an appropriate Acceleration-Dependent Feedback Gain ka was applied, dysmetria was reduced. The effect of this gain on the displayed trajectory is shown in Figure 7A, where the dashed green line shows the altered visual feedback given to the subject and the solid green line shows the subject’s actual reach to the target for a single Feedback Gain condition. Increasing the magnitude of ka had a graded effect on the trajectory profile, as shown by the decreasing amplitude of the solid traces in Figure 7A. To find the 'best' ka we applied the PEST algorithm (see Materials and methods). Applying this gain shifted the angle of first correction in the way we predicted, as shown in both Figure 7B. Figure 7C shows all the data collected during the implementation of PEST as well as additional trials across a range of gains ka (see Materials and methods) that were collected for a subset of patients (and all control subjects; see Figure 8). Critically, positive Acceleration-Dependent Feedback Gain made patients more hypermetric and negative Acceleration-Dependent Feedback Gain made patients more hypometric; likewise for control subjects. Thus, subject-specific Acceleration-Dependent Feedback Gain was needed to best reduce dysmetria. In general, increased Acceleration-Dependent Feedback Gain magnitude was needed to ameliorate greater dysmetria.
+When an appropriate Acceleration-Dependent Feedback Gain $k_{a}$ was applied, dysmetria was reduced. The effect of this gain on the displayed trajectory is shown in Figure 7A, where the dashed green line shows the altered visual feedback given to the subject and the solid green line shows the subject’s actual reach to the target for a single Feedback Gain condition. Increasing the magnitude of $k_{a}$ had a graded effect on the trajectory profile, as shown by the decreasing amplitude of the solid traces in Figure 7A. To find the 'best' $k_{a}$ we applied the PEST algorithm (see Materials and methods). Applying this gain shifted the angle of first correction in the way we predicted, as shown in both Figure 7B. Figure 7C shows all the data collected during the implementation of PEST as well as additional trials across a range of gains $k_{a}$ (see Materials and methods) that were collected for a subset of patients (and all control subjects; see Figure 8). Critically, positive Acceleration-Dependent Feedback Gain made patients more hypermetric and negative Acceleration-Dependent Feedback Gain made patients more hypometric; likewise for control subjects. Thus, subject-specific Acceleration-Dependent Feedback Gain was needed to best reduce dysmetria. In general, increased Acceleration-Dependent Feedback Gain magnitude was needed to ameliorate greater dysmetria.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/53246/elife-53246-fig8-v2.jpg)
 
@@ -204,7 +577,7 @@ We also saw increases in phase lag for patients versus controls when following p
 
 The above results are significant as it has previously been difficult to assess visual feedback control in these patients due to their clear impairments in feedforward control of movement. In Experiment 3, we tested whether patients’ largely intact visual feedback could be exploited to benefit their targeting performance in a reaching task. Indeed, we found that cerebellar patients could leverage their intact, albeit delayed, feedback control ability to improve their movement when we manipulate their visual feedback to assist them.
 
-## Delay in patients but not in healthy controls
+### Delay in patients but not in healthy controls
 
 Cerebellar patients are thought to make faulty state estimates of arm motion due to a damaged internal model, which adversely affects their proprioceptive estimates during active movement (Bhanpuri et al., 2013). Thus, we expect them to increase their reliance on visual feedback, which is time delayed compared to proprioceptive feedback. Here we hypothesized that our patients’ feedback control system would have an increased delay in comparison to controls. This hypothesis is supported by work that showed that healthy subjects normally rely more on proprioception than vision for feedback control (Crevecoeur et al., 2016). Based on the Crevecoeur et al., 2016 model, increased variability of the proprioceptive information would lead to increased weighting of visual feedback (Crevecoeur et al., 2016; Weeks et al., 2017), which comes at the cost of increased delay for patients compared to controls.
 
@@ -216,7 +589,7 @@ Cerebellar patients can also show a reduced feedback gain in situations where re
 
 Lastly, while the confluence of data and modeling presented here seems to indicate that patients rely disproportionately on delayed feedback from vision for this visuomotor tracking task, two of our top models (Model Best 5, Lowest Err and Best 4, Lowest Err; see Table 2) actually exhibited shorter feedback delays than visual delays for patients. This suggests that the patients’ control systems in this task may include some reliance, albeit weaker, on prediction and proprioception.
 
-## Modeling results support the cerebellum as a smith predictor
+### Modeling results support the cerebellum as a smith predictor
 
 Sensorimotor tasks are naturally analyzed using control systems theory and system identification (Roth et al., 2014), and because cerebellar patients’ dysmetria resembles a poorly tuned control system, many researchers have analyzed cerebellar behavior using control theory (Luque et al., 2011; Manto, 2009; Miall et al., 1993; Porrill et al., 2013).
 
@@ -236,7 +609,7 @@ Lastly, even if a healthy cerebellum helps ‘cancel’ expected cursor feedback
 
 There are potential alterative modeling interpretations of the data presented in this paper. For example, a state predictor with optimal state feedback (Crevecoeur and Gevers, 2019) is consistent with our observation that healthy subjects compensate for delay and is an avenue for further investigation. Also, our observation that visual target delay was longer in the patient model than the control-subject could conceivably be due to a different source of phase lag that our simplified modeling structure was not able to capture. Future experiments and analysis will investigate this further.
 
-## Potential for real-world application
+### Potential for real-world application
 
 In Experiment 3, we were successfully able to reduce the dysmetria of both the hypermetric and hypometric cerebellar patients in an elbow flexion task. Our visual feedback-control-based intervention was developed based on a control model which represented dysmetria as a mismatch between the patient’s internal model of their limb inertia and the actual limb inertia (Bhanpuri et al., 2014). Thus, the success of our intervention provides support to this inertial mismatch theory. However, recent evidence based on the application of limb weights suggest that the inertial mismatch theory may be insufficient to explain dysmetria in multi-joint movements (Zimmet et al., 2019). Thus, feedback enhancement of multi-joint movements will likely require modifications of the simple acceleration-based controller tested in this paper. Moreover, the ‘best’ acceleration-dependent feedback gain was patient specific even for the single-degree-of-freedom reaches tested for this study, suggesting that idiosyncrasies in each patient’s motor control system (Kuling et al., 2017; Rincon-Gonzalez et al., 2011) may mandate patient-specific tuning. Such tuning will be made more complex for 2D and 3D arm movements.
 

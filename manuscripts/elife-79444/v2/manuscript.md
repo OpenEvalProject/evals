@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Molecular Genetics and Cell Biology, University of Chicago Chicago United States
-2. https://ror.org/024mw5h28 Committee on Genetics, Genomics, and Systems Biology, University of Chicago Chicago United States
-3. https://ror.org/01sbq1a82 Department of Electrical and Computer Engineering, University of Delaware Newark United States
-4. https://ror.org/01sbq1a82 Department of Biomedical Engineering, University of Delaware Newark United States
-5. https://ror.org/01sbq1a82 Department of Mathematical Sciences, University of Delaware Newark United States
-6. https://ror.org/01sbq1a82 Center for Bioinformatics and Computational Biology, University of Delaware Newark United States
-7. https://ror.org/024mw5h28 Center for Physics of Evolving Systems, University of Chicago Chicago United States
+1. Department of Molecular Genetics and Cell Biology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+2. Committee on Genetics, Genomics, and Systems Biology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+3. Department of Electrical and Computer Engineering, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
+4. Department of Biomedical Engineering, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
+5. Department of Mathematical Sciences, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
+6. Center for Bioinformatics and Computational Biology, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
+7. Center for Physics of Evolving Systems, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -37,17 +37,25 @@ In this study, we incorporate these recent developments into an updated mathemat
 
 ## Results
 
-## Modeling the role of ongoing protein synthesis in activation of the HSR
+### Modeling the role of ongoing protein synthesis in activation of the HSR
 
 Previously, we proposed a model of the HSR based on a two-component feedback loop consisting of the chaperone Hsp70 and the transcription factor Hsf1 (Krakowiak et al., 2018; Zheng et al., 2016). In the model, Hsp70 binds and represses Hsf1 under basal conditions. Upon heat shock, unfolded proteins (UPs) accumulate and titrate Hsp70 from Hsf1, leaving Hsf1 free to induce expression of more Hsp70. Once Hsp70 has bound all the UPs, the excess Hsp70 could then bind to Hsf1 to deactivate the response. This model is capable of recapitulating HSR dynamics following heat shock, but it includes assumptions that are no longer consistent with the current literature.
 
 The input for the original model was heat shock-generated UPs, with the underlying assumption that heat shock causes mature proteins to denature into UPs. However, it is no longer accepted that UPs activate the HSR. Rather, immature NSPs have been suggested to drive HSR activation (Figure 1A; Feder et al., 2021; Gonçalves et al., 2020; Masser et al., 2019; Masser et al., 2020; Tye and Churchman, 2021; Tye et al., 2019). Supporting this, Hsf1 target gene transcripts were depressed in pH-balanced, CHX-treated cells following heat shock relative to cells heat-shocked while actively translating (Triandafillou et al., 2020). Our analysis of these published RNA-seq data indicate that ongoing translation is required for more than 70% of the induction of HSR genes on average (Figure 1B). This suggests that NSPs – rather than denatured mature proteins – are major upstream activators of the response.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79444/elife-79444-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the mathematical model. Heat shock stalls folding of newly synthesized proteins so newly synthesized unfolded proteins accumulate. Hsp70 is recruited to unfolded proteins (red arrow) in turn releasing Hsf1 to induce its transcriptional targets. Among these targets are Hsp70 and Sis1 (and HSE-YFP, our ectopic reporter of Hsf1 activity). Of note, Sis1 has two known roles. It substantiates Hsf1–Hsp70 binding and substantiates Hsp70-misfolded protein interactions. (B) Hsf1 target gene transcript levels, relative to non-heat shock levels. Cells were treated with 200 µg/ml cycloheximide (CHX; blue) and subjected to 42°C heat shock for 20 min. Untreated control (red) plotted for comparison (red). Raw data from Triandafillou et al., 2020. One minus the transcript levels of CHX-treated over untreated cells is the portion of transcriptional induction which depends on ongoing translation (right graph). Each data point represents an Hsf1 target gene. (C) Model of rapamycin effect. Heat shock stalls newly synthesized protein folding, and newly synthesized unfolded proteins trigger the HSR. Upstream, rapamycin inhibits target of rapamycin complex 1 (TORC1) which inhibits ribosomal protein production, causing a 40% decrease in newly synthesized proteins. (D) HSE-YFP levels during heat shock. Cells are pretreated with 10 µg/ml rapamycin 5 min before heat shock (pink) and compared to untreated control (gray). Each time point represents the average of the three biological replicates. Error bar represents the standard deviation of three replicates. (E) Simulation of HSE-YFP levels during heat shock with or without rapamycin.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79444/elife-79444-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cells treated with 10 µg/ml rapamycin for 5 min before heat shock (gray) and compared to untreated control.
+
 To account for translation dependent HSR activation in the model, we have implemented an input function in which there is a constant source of NSPs (i.e., a rate of ongoing translation) instead of a single initial input of UPs (Figure 1A, see methods). NSPs must then undergo a maturation step to become folded. In the updated model, heat shock inhibits the spontaneous folding rate of NSPs, rather than causing denaturation of folded proteins, thereby resulting in an accumulation of immature proteins. During heat shock, NSPs must interact with Hsp70 to either fold or be degraded. Heat shock still activates the HSR by titrating Hsp70 away from Hsf1, but by immature NSPs rather than by UPs.
 
 Using this new input function, we tested the ability of the model to account for the effect of reducing translation prior to heat shock. To do this, we pretreated cells with rapamycin, which specifically inhibits expression of ribosomal proteins and biogenesis factors by inhibiting the target of rapamycin complex 1 (TORC1) (Loewith and Hall, 2011; Figure 1C). Together, these genes are estimated to constitute more than 40% of total NSPs in yeast under logarithmic growth conditions (Ingolia et al., 2009). The model predicts that such a reduction in NSPs should result in a concomitant reduction in HSR output following heat shock (Figure 1D). Indeed, using a yellow fluorescent protein (YFP) reporter of the HSR (HSE-YFP) (Supplementary file 1), we found that rapamycin-treated cells displayed a substantial reduction in HSR output across the heat shock time course (Figure 1E). To verify that the reduction in YFP fluorescence reflects a reduction in transcriptional activation of the HSR (and not due to a reduction in translation of the YFP mRNA caused by rapamycin), we quantified YFP mRNA levels using qRT-PCR. Consistent with the fluorescence measurements, the mRNA was comparably reduced, indicating that the YFP levels accurately report on HSR activation in the presence of rapamycin (Figure 1—figure supplement 1). Together, these results demonstrate that the updated mathematical model can capture the dynamics of the HSR during heat shock and recapitulate the effects of reduced protein synthesis on HSR output.
 
-## Modeling the role of Sis1 as a basal repressor of the HSR
+### Modeling the role of Sis1 as a basal repressor of the HSR
 
 Recently, we found that Sis1, a JDP and Hsp70 cofactor, participates in repressing Hsf1 activity under non-heat shock conditions by promoting Hsf1–Hsp70 association (Feder et al., 2021). Consistent with this result, knockdown of Sis1 resulted in the highest level of activation of the HSR under basal conditions in a genome-wide CRISPRi screen (Alford et al., 2021). Moreover, it was independently shown that Hsf1 binds to Hsp70 as a typical client, via the Hsp70 substrate-binding domain in a nucleotide-regulated manner (Masser et al., 2019), further supporting the involvement of a JDP-like Sis1. Sis1 was also shown to potentiate the HSR in the presence of exogenous protein aggregates (Klaips et al., 2020). We incorporated Sis1 into the core circuitry of the model by representing the canonical role of JDPs in substantiating Hsp70-client binding: the Hsp70-client protein dissociation rate is inversely dependent on Sis1 concentration (see methods).
 
@@ -57,21 +65,29 @@ To assess this new model circuitry (Figure 2A), we first determined whether it c
 
 **Figure 2.:** (A) Model of Sis1 effect. In non-heat shock, Sis1 promotes Hsp70 binding to Hsf1, repressing transcriptional activation of the HSR. Heat shock results in the titration of Hsp70 and Sis1, leaving Hsf1 free to induce the HSR and the ectopic reporter of Hsf1 activity, HSE-YFP (red arrows). (B) HSE-YFP levels after nuclear Sis1 depletion (blue) at 30°C, measured by flow cytometry. Sis1 was anchored away to cytosolic ribosomes using 10 µg/ml rapamycin and the time course was started immediately. (C) Simulation of HSE-YFP reporter after Sis1 depletion. (D) HSE-YFP expression in wild-type cells across 18 biological replicates (gray). Average in black. (E) Simulation of variation in the wild-type HSR due to metabolic differences leading to changes in basal translation rate. (F) HSE-YFP heat shock time courses at a range of heat shock temperatures between 35 and 41°C. (G) Simulation of heat shock time courses at different induction temperatures. Heat shock at higher temperatures was simulated by a proportional decrease in protein folding rate.
 
-## Modeling experimental variability and HSR dynamics across a range of conditions
+### Modeling experimental variability and HSR dynamics across a range of conditions
 
 We implemented this updated mathematical model that incorporates the NSP input function and Sis1-containing circuitry to make predictions about the dynamics of the HSR. First, we repeated our standard heat shock time course – shifting cells from 30 to 39°C. We performed this experiment 18 times to train the model to include the range of experimental variation on different days (Figure 2D). Across these replicates, we observed variation on the order of 20% from experiment to experiment. Replicates performed on the same day behaved more similarly, so we hypothesized that a likely source of this variation could be the initial metabolic state of the cells on different days, reflecting differences in the amount of time they had been in stationary phase or outgrowth prior to initializing the heat shock. These metabolic differences would then be reflected in different rates of protein synthesis. Indeed, varying the rates of protein synthesis in the model yielded heat shock time course simulations that recapitulated the variation observed across the biological replicates (Figure 2E). Thus, by modulating a single parameter, the model was able to recapitulate both the average behavior and the experimental variability.
 
 We next performed heat shock time course experiments and simulations at multiple temperatures ranging from 35 to 41°C. When we performed experiments across this temperature range, we observed a rapid induction phase at all temperatures, followed by a slow rise to a temperature-dependent maximal response (Figure 2F). Without changing any parameters, the model predicted that cells would reach different steady-state levels of HSE-YFP fluorescence in proportion to the increase in temperature, matching the experimental results (Figure 2G). Thus, the HSR is a ‘dose-dependent’ response, tuned quantitatively by the temperature of heat shock. Together, these results indicate that the mathematical model recapitulates experimental variation and the dynamics of the HSR across a range of conditions.
 
-## Decoupling Sis1 expression from Hsf1 transcriptional activity
+### Decoupling Sis1 expression from Hsf1 transcriptional activity
 
 Previously, we found that transcriptional induction of Hsp70 is required to deactivate Hsf1 over a sustained heat shock time course, and we therefore deemed Hsp70 a negative feedback regulator (Krakowiak et al., 2018). Given that Sis1 promotes Hsp70-mediated repression of Hsf1 under basal conditions, we next tested whether induction of Sis1 is likewise required for Hsf1 deactivation following heat shock. Sis1 is expressed at a moderate basal level under non-heat shock conditions, and its transcription is induced during heat shock. Hsf1 is responsible for both maintaining the basal expression level of Sis1 and inducing it during heat shock (Pincus et al., 2018; Solís et al., 2016).
 
 As we had done for Hsp70, we tested the role of Sis1 induction during HS by removing its Hsf1-dependent transcriptional induction, first computationally and then experimentally (Figure 3A, B). Notably, while the mathematical model requires Hsp70-dependent transcriptional feedback to recapitulate the wild-type response dynamics, it does not include transcriptional induction of Sis1. Thus, the model accurately captures HSR response dynamics without a requirement for Sis1-mediated transcriptional feedback, that is, the model predicts that Sis1 induction is not required for negative feedback (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/79444/elife-79444-fig3-v2.jpg)
+
+**Figure 3.:** (A) Network schematic. Sis1 induction by Hsf1 is cut to test whether Sis1 induction is necessary for normal Hsf1 regulation. (B) Generating the non-inducible Sis1 mutant. mScarlet fluorescent protein reports on Sis1 transcription and the Sis1 promoter is replaced with a non-inducible promoter. (C) HSE-YFP levels over a heat shock time course, measured by flow cytometry. Each data point represents the average and standard deviation of three biological replicates. (D) Simulation of HSE-YFP when Sis1 or Hsp70 is maintained at basal expression level during heat shock. (E) HSE-YFP levels during a 30-min heat shock followed by recovery at 30°C. (F) HSE-YFP levels during two 30-min heat shock intervals, separated by a 2-hr recovery at 30°C.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79444/elife-79444-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heat shock time course of mScarlet levels in WT (gray) and non-inducible Sis1 (blue) lines measured by flow cytometry. The WT line contains a heat shock element (HSE) in the native enhancer sequence, where Hsf1 binds to induce transcription (top, gray line). A non-inducible Sup35 promoter drives Sis expression (bottom, blue line). In both cell lines, mscarlet, separated by a ribosomal skip sequence (P2A), is the tagless reporter of Sis1 transcription. Data points represent the average and standard deviation of three biological replicates. (B) Raw mScarlet reporter level in non-heat shock, 1xSup35pr-Sis1 and WT lines. (C) Dilution series spot assay of all lines. WT, Hsp70∆FBL, and 1xSup35pr-Sis1 and 2xSup35pr-Sis1 lines grown for 3 days at 30°C. (D) Basal HSE-YFP reporter expression of all lines measured by flow cytometry. (E) HSE-YFP reporter during 2-hr heat shock, followed by recovery at 30°C. Fluorescence quantified by flow cytometry. (F) HSE-YFP reporter levels over two 30-min heat shocks separated by a 15-min recovery period at 30°C.
+
 Experimentally, to maintain the basal expression level of Sis1, we could not simply remove the Hsf1-binding site from the SIS1 promoter since Hsf1 drives its basal expression. Thus, we replaced the SIS1 promoter sequence with the SUP35 promoter (Figure 3B). According to our previously published RNA-seq data, SUP35 mRNA is expressed at approximately the same level as endogenous SIS1 mRNA under basal conditions but is not transcriptionally induced during heat shock (Pincus et al., 2018). To determine whether the SUP35 promoter behaved as we expected, we measured expression of Sis1 by fusing it to P2A-mScarlet (a ribosomal skip sequence that enables fluorescent readout without tagging the protein of interest) (Souza-Moreira et al., 2018; Figure 3B). As expected, mScarlet was robustly induced during heat shock when expressed from the endogenous SIS1 promoter, but it showed no induction by heat shock when expressed from the SUP35 promoter (Figure 3—figure supplement 1A). However, we found that SUP35pr-SIS1 cells displayed a moderate growth defect under non-stress conditions in a dilution series spot assay, and basal mScarlet expression from the SUP35 promoter was reduced to half of the level expressed from the endogenous SIS1 promoter (Figure 3—figure supplement 1B, C). To remedy this, we integrated a second copy of SUP35pr-SIS1 into the trp1 locus. In this 2xSUP35pr-SIS1 strain, cell growth is comparable to wild type in a dilution series spot assay, and Hsf1 basal activity matches that of wild type (Figure 3—figure supplement 1C, D). Thus, the 2xSUP35pr-SIS1 strain maintains the initial Sis1 expression level of wild-type cells while preventing induction of Sis1 during heat shock.
 
-## Transcriptional induction of Sis1 is dispensable for Hsf1 deactivation
+### Transcriptional induction of Sis1 is dispensable for Hsf1 deactivation
 
 To determine whether Sis1 induction plays a role in feedback regulation of Hsf1, we monitored Hsf1 activity with the HSE-YFP fluorescent reporter. If Sis1 induction were necessary for Hsf1 deactivation, we would expect elevated Hsf1 activity during heat shock, similar to the strain we previously engineered to decouple Hsp70 expression from Hsf1 (Hsp70∆FBL, for Hsp70 ‘deleted for the feedback loop’) (Figure 3D). Briefly, in the Hsp70∆FBL strain, all four paralogous genes encoding cytonuclear Hsp70 in yeast (SSA1, SSA2, SSA3, and SSA4) were deleted, and two copies of SSA2 expressed from the constitutive and Hsf1-independent TEF1 were inserted in the genome. The resulting strain expresses Hsp70 to wild-type levels under non-stress conditions but cannot induce more Hsp70 upon heat shock. In contrast to the prolonged induction of HSE-YFP displayed by Hsp70∆FBL cells, 2xSUP35pr-SIS1 cells showed Hsf1 activity dynamics indistinguishable from wild type during heat shock (Figure 3D). These data suggest that, despite its role in repressing Hsf1 under basal conditions, Sis1 induction is dispensable for Hsf1 deactivation following heat shock, just as the model predicted.
 
@@ -79,7 +95,7 @@ Since Sis1 induction by Hsf1 is not necessary for Hsf1 deactivation following a 
 
 As a final test for defects in Hsf1 regulation in the non-inducible Sis1 lines, we exposed cells to multiple heat shock pulses with two different recovery periods: [30-min pulse–15-min recovery–30-min pulse] or [30-min pulse–2-hr recovery–30-min pulse]. With the longer 2-hr recovery period, both 2xSUP35pr-SIS1 and Hsp70∆FBL responded with similar induction dynamics to wild type (Figure 3F). This suggests that the 2-hr recovery time was sufficient for the cells to fully reset and respond equivalently to the second pulse. Following the shorter 15-min recovery period, Hsp70∆FBL displayed increased Hsf1 activity relative to wild type, while 2xSUP35-SIS1 remained indistinguishable from wild type even in this challenging stress regime (Figure 3—figure supplement 1F). These data demonstrate that Sis1 induction does not serve to tune Hsf1 activity across any of the heat shock protocols we tested.
 
-## Induced Sis1 is produced slowly and preferentially localizes to the nucleolar periphery
+### Induced Sis1 is produced slowly and preferentially localizes to the nucleolar periphery
 
 Given that Sis1 is not necessary for Hsf1 deactivation, we wanted to visualize the heat shock-induced protein to determine its localization. We’ve previously shown that Sis1 localized in the nucleolar periphery – and away from Hsf1 – upon activation of the HSR (Feder et al., 2021). If newly synthesized Sis1 were to likewise localize at the nucleolar periphery, it would not be in physical proximity to Hsf1, explaining its dispensability in the negative feedback loop.
 
@@ -91,13 +107,21 @@ To enable visualization of only newly induced Sis1, we tagged Sis1 with the Halo
 
 We repeated the pulse-labeling analysis for Ssa1-Halo – the SSA1 gene encodes an inducible Hsp70 – as we previously showed that Hsp70 induction is required for HSR deactivation (Krakowiak et al., 2018). In contrast to Sis1, we were able to detect newly synthesized Ssa1 after only 6 min of heat shock, and Ssa1 was induced substantially more than Sis1 by 15 min (Figure 4B, C). Moreover, induced Ssa1 localized to the nucleolar periphery as well as to puncta and more diffusely throughout the cell (Figure 4B). Newly synthesized Ssa1 was less concentrated at the nucleolar periphery over the heat shock time course than newly synthesized Sis1 (Figure 4D). Moreover, in contrast to Sis1, newly synthesized Ssa1-Halo partially colocalized with Hsf1 (Figure 4E, F). The combination of the delayed Sis1 induction relative to Ssa1 and the localization of Sis1 primarily to the nucleolar periphery – and away from Hsf1 – may explain why Sis1 is not a feedback regulator of the HSR.
 
-## Sis1 transcriptional regulation confers fitness in nonfermentable carbon sources
+### Sis1 transcriptional regulation confers fitness in nonfermentable carbon sources
 
 Without an obvious role in negative feedback regulation, we investigated whether Sis1 transcriptional regulation by Hsf1 promotes fitness. We quantitatively monitored fitness by comparing optical density of the 2xSUP35pr-SIS1 strain to the Hsp70∆FBL strain and wild type in culture using an automated plate reader. Cells were grown for 4 hr at 30°C, then were either kept at 30°C or shifted to 37°C. All strains showed comparable growth at 30°C (Figure 5—figure supplement 1A). However, while Hsp70∆FBL was indistinguishable from wild type at 37°C, the 2xSUP35pr-SIS1 strain showed reduced fitness compared to the other strains after the first 4 hr at 37°C and failed to undergo a diauxic shift once glucose was depleted from the media (Figure 5A). This suggests that induction of Sis1 may play a role in promoting growth in the absence of a fermentable carbon source.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79444/elife-79444-fig5-v2.jpg)
+
+**Figure 5.:** (A) Quantitative growth curve of non-inducible strains during heat shock (37°C). (B) Quantitative growth curve of non-inducible strains during growth in limited carbon media (2% glycerol, 2% EtOH) in non-heat shock (30°C). (C) Single-cell quantification of the fraction of Pab1-mCherry localized in foci as determined by the FindFoci plugin in Fiji. Inset: Representative deconvolved live cell images captured by lattice light sheet microscopy of cells expressing Pab1-mKate. (D) Model of the differential roles of transcriptional regulation of Hsp70 and Sis1 in feedback and fitness, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79444/elife-79444-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantitative growth curve of non-inducible strains glucose media under non-heat shock conditions. (B) Quantitative growth curve of strains with low, medium, and high levels of non-inducible Sis1 grown in EtOH/glycerol.
+
 To directly test whether Hsf1-dependent regulation of Sis1 promotes growth in nonfermentable media, we grew cells with EtOH/glycerol as the carbon source at 30°C. Indeed, the 2xSUP35pr-SIS1 strain grew substantially slower than wild type or Hsp70∆FBL in EtOH/glycerol media (Figure 5B). Remarkably, the 1xSUP35pr-SIS1 strain – which has a slow growth phenotype in glucose (Figure 3—figure supplement 1C) – completely rescues growth in EtOH/glycerol (Figure 5—figure supplement 1B), suggesting that the 2xSUP35pr-SIS1 strain grows slowly on nonfermentable carbon due to the inability to downregulate Sis1 rather than induce it. Consistent with this interpretation, when we increased Sis1 expression even more by adding a second copy of Sis1 under its stronger endogenous promoter, the growth phenotype in EtOH/glycerol was exacerbated to the point that cells failed to grow altogether (Figure 5—figure supplement 1B). Thus, it is not induction per se but the ability to modulate Sis1 expression level according to the metabolic state of the cell that appears to promote fitness.
 
-## Transcriptional regulation of Sis1 coordinates stress granules with carbon metabolism
+### Transcriptional regulation of Sis1 coordinates stress granules with carbon metabolism
 
 In addition to regulating Hsf1 activity under basal conditions in the nucleus, Sis1 is known to regulate cytosolic stress granules. Stress granules are biomolecular condensates composed predominately of mRNA and translation factors that form in yeast response to a variety of stressors including both heat shock and glucose depletion. To determine whether stress granules could provide a link between Sis1 regulation and fitness in media lacking glucose, we imaged the stress granule marker Pab1 fused to the mKate fluorescent protein in wild-type cells and 2xSUP35pr-SIS1 cells. Pab1-mKate was diffuse throughout the cytosol in wild-type cells in glucose media but a fraction formed small granules in EtOH/glycerol media; by contrast, Pab1-mKate was granular in both glucose and EtOH/glycerol in 2xSUP35pr-SIS1 cells (Figure 5C). These results suggest there are constitutive stress granules in 2xSUP35pr-SIS1 cells, connecting a known activity of Sis1 in regulating stress granules with its apparent role in carbon metabolic homeostasis. This result suggests that proper regulation of Sis1 expression is required to dynamically regulate stress granules, conferring fitness as carbon source fluctuates in the environment.
 
@@ -115,68 +139,106 @@ Our experimental findings imply that Hsp70 induction is still the principal sour
 
 ## Methods
 
-## Mathematical modeling
+### Mathematical modeling
 
-To model the Hsp70–Hsf1 feedback circuit we have expanded the previous model (Feder et al., 2021) to explicitly consider the production of unfolded nascent proteins that are folded into their native state with some rate. More specifically, the model consists of four different protein species (Hsf, Hsp, UP, reporter YFP) and two complexes (one between Hsp and Hsf, and the other between Hsp and UP). The differential equations describing the cellular concentration of these species are as follows:d[HSP]dt=k2[HSP⋅Hsf]−k1[HSP][Hsf]+(k4+k5)[HSP⋅UP]−k3[HSP][UP]+β[Hsf]nKdn+[Hsf]nd[Hsf]dt=k2[HSP⋅Hsf]−k1[HSP][Hsf]d[UP]dt=kup−kdup[UP]+ k4[HSP⋅UP]−k3[HSP][UP]d[HSP⋅HSF]dt=k1[HSP][Hsf]−k2[HSP⋅Hsf]d[HSP⋅UP]dt=k3[HSP][UP]−(k4+k5)[HSP⋅UP]d[YFP]dt=β[Hsf]nKdn+[Hsf]n,
+To model the Hsp70–Hsf1 feedback circuit we have expanded the previous model (Feder et al., 2021) to explicitly consider the production of unfolded nascent proteins that are folded into their native state with some rate. More specifically, the model consists of four different protein species (Hsf, Hsp, UP, reporter YFP) and two complexes (one between Hsp and Hsf, and the other between Hsp and UP). The differential equations describing the cellular concentration of these species are as follows:
 
-where [] denotes the cellular concentration of respective species. The interpretation of all models here is identical to the original model (Zheng et al., 2016), except for two new parameters – the de novo synthesis of unfolded proteins kup =1 min-1a.u.-1 and their folding with rate kdup=0.35 min-1. The rate k1=320 min−1a.u−1 denotes the binding of Hsp to Hsf to create an inactive complex HSP·Hsf1, and the complex dissociates with rate k2=0.7 min-1. The rate k3=112 min-1a.u.-1 is the binding of Hsp to unfolded proteins (denoted as UP) to create the complex HSP·UP that dissociates with rate k4=0.1 min-1. The degradation of UP by Hsp is captured via the rate k5=0.15 min-1. The activation of both YFP and Hsp by Hsf is modeled by a Hill equation with n=3, β=0.1 min-1 and kd=0.0025 a.u.
+$$
+\frac{d[HSP]}{dt}=k_{2}[HSP⋅Hsf]−k_{1}[HSP][Hsf]+(k_{4}+k_{5})[HSP⋅UP]−k_{3}[HSP][UP]+\beta\frac{[Hsf]^{n}}{K_{d}^{n}+[Hsf]^{n}}
+$$
 
-The above differential equation model was run with the following initial values (in a.u.) at time t=0[HSP]=12, [Hsf1]=0, [HSP⋅HSF1]=1250, [UP]=0, [HSP⋅UP]=0, [YFP]=1.
 
-The effect of rapamycin is captured by decreasing the rate kup and trajectories corresponding to different heat shock temperatures are obtained by perturbing the folding rate kdup. To investigate the experiment-to-experiment fluctuations in YFP trajectories we solved the above system by varying the parameter kup around its nominal value by 20% at the start of the simulation. The impact of Sis1 depletion is captured by destabilizing the Hsp–Hsf complex via an increase in the dissociation rate k2. Finally, the removal of Hsp feedback is realized by removing the Hsf-induced activation term in the equation for d[HSP]dt.
 
-## Strain construction
+$$
+\frac{d[Hsf]}{dt}=k_{2}[HSP⋅Hsf]−k_{1}[HSP][Hsf]
+$$
+
+
+
+$$
+\frac{d[UP]}{dt}=k_{up}−k_{dup}[UP]+ k_{4}[HSP⋅UP]−k_{3}[HSP][UP]
+$$
+
+
+
+$$
+\frac{d[HSP⋅HSF]}{dt}=k_{1}[HSP][Hsf]−k_{2}[HSP⋅Hsf]
+$$
+
+
+
+$$
+\frac{d[HSP⋅UP]}{dt}=k_{3}[HSP][UP]−(k_{4}+k_{5})[HSP⋅UP]
+$$
+
+
+
+$$
+\frac{d[YFP]}{dt}=\beta\frac{[Hsf]^{n}}{K_{d}^{n}+[Hsf]^{n}},
+$$
+
+where [] denotes the cellular concentration of respective species. The interpretation of all models here is identical to the original model (Zheng et al., 2016), except for two new parameters – the de novo synthesis of unfolded proteins kup $=1 min^{-1}$$a.u.^{-1}$ and their folding with rate kdup$=0.35 min^{-1}$. The rate $k_{1}=320 min^{−1}a.u^{−1}$ denotes the binding of Hsp to Hsf to create an inactive complex $HSP·Hsf1$, and the complex dissociates with rate $k_{2}=0.7 min^{-1}$. The rate $k_{3}=112 min^{-1}$$a.u.^{-1}$ is the binding of Hsp to unfolded proteins (denoted as UP) to create the complex $HSP·UP$ that dissociates with rate $k_{4}=0.1 min^{-1}$. The degradation of UP by Hsp is captured via the rate $k_{5}=0.15 min^{-1}$. The activation of both YFP and Hsp by Hsf is modeled by a Hill equation with $n=3,$ $\beta=0.1 min^{-1}$ and $k_{d}=0.0025 a.u.$
+
+The above differential equation model was run with the following initial values (in a.u.) at time $t=0$
+
+$$
+[HSP]=\frac{1}{2}, [Hsf1]=0, [HSP⋅HSF1]=\frac{1}{250}, [UP]=0, [HSP⋅UP]=0, [YFP]=1.
+$$
+
+The effect of rapamycin is captured by decreasing the rate kup and trajectories corresponding to different heat shock temperatures are obtained by perturbing the folding rate kdup. To investigate the experiment-to-experiment fluctuations in YFP trajectories we solved the above system by varying the parameter kup around its nominal value by 20% at the start of the simulation. The impact of Sis1 depletion is captured by destabilizing the Hsp–Hsf complex via an increase in the dissociation rate $k_{2}$. Finally, the removal of Hsp feedback is realized by removing the Hsf-induced activation term in the equation for $\frac{d[HSP]}{dt}$.
+
+### Strain construction
 
 Yeast strains and plasmids used in this study are listed in Supplementary file 1. All strains are derived from the W303 parent strain. CRISPR-mediated promoter swapping was performed to create the 1xSup35pr-Sis1 (1701) and 1xSup35pr-Sis1-P2A-mscarlet (1661) strains. CRISPR-Cas9 mediated precise, scarless replacement of the native Sis1 promoter with the 600 bp Sup35 promoter. To construct the final non-inducible Sis1 line (2xSup35pr-Sis1, 1761), we incorporated a second copy of Sup35pr-Sis1 at the tryp locus.
 
 In all other cloned lines, genes were tagged at the endogenous locus. Cells were transformed with double-stranded DNA fragments containing ~20 bp homologous flanking regions. This method takes advantage of homology-directed repair mechanisms in S. cerevisiae, as described previously (Longtine et al., 1998).
 
-## Cell growth
+### Cell growth
 
 For heat shock time courses followed by flow cytometry, cells were cultured in 1xSDC media overnight at room temperature (synthetic media with dextrose and complete amino acids). Before RT-PCR or cell growth assays, cells were cultured in yeast extract peptone dextrose (YPD) media shaking at 30°C overnight. Cells were subjected to heat shock at 39°C unless otherwise specified.
 
-## HSE-YFP reporter heat shock assays
+### HSE-YFP reporter heat shock assays
 
 Three biological replicates of each strain were serially diluted five times (1:5) in 1xSDC and grown overnight at room temperature. In the morning, cells had reached logarithmic phase, and 750 µl of each replicate was transferred to a PCR tube and shaken for 1 hr at 30°C to aerate. Then, cells were exposed to heat shock at 39°C. At the pre-determined time points (0, 5, 10, 15, 30, 60, 90, 120, 180, and 240 min), 50 µl of cell culture was transferred to a well of a 96-well plate, containing containing 1xSDC and a final concentration of 50 mg/ml CHX to stop translation. After the time course, cells were incubated at 30°C for 1 hr to allow fluorescent reporter maturation before measurement. All experiments were performed using C1000 Touch Thermal Cycler (Bio-Rad). Cell fluorescence was measured by flow cytometry and results were analyzed as described below.
 
-## Anchor-away assay
+### Anchor-away assay
 
 Cells were grown overnight as described above. Rapamycin was added to a final concentration of 10 µM, and the time course was started immediately. During the time course, cells were maintained at 30°C shaking. At the predetermined time points (0, 15, 30, 45, 60, 75, and 90 min), 50 µl of cells were transferred to a 96-well plate identically to the heat shock assay described above.
 
-## Translation inhibition assay (rapamycin pretreatment)
+### Translation inhibition assay (rapamycin pretreatment)
 
 Cells were grown overnight, and in the morning, shaken at 30°C for 1 hr. Rapamycin was added to a final concentration of 10 µM, and cells were left shaking at 30°C for 5 min. Then, the heat shock time course was performed at 39°C as described above.
 
-## Flow cytometry
+### Flow cytometry
 
 HSE-YFP and mscarlet reporter levels in heat shock time course and rapamycin treatment assays were measured at the University of Chicago Cytometry and Antibody Technology Facility. These measurements were performed using the 488-525 FITC fluorescence filter (HSE-YFP) and 561-PE Dazzle (mscarlet) on the BD Fortessa High Throughput Flow Cytometer. The raw fluorescence values were normalized by side scatter in FlowJo. Then, the median fluorescence value was calculated. Each data point represents the average of three biological replicates.
 
-## Dilution series spot growth assays
+### Dilution series spot growth assays
 
 Yeast strains were grown overnight shaking at 30°C in YPD. In the morning, they were diluted to and final optical density (OD) of 1 and serially diluted 1:10 in water. Each diluted yeast culture was spotted onto 1xYPD plates. Images were taken after 2 days of growth at 30 or 37°C.
 
-## Heat shock quantitative growth assay
+### Heat shock quantitative growth assay
 
 Yeast strains were grown overnight at 30°C in 1xYPD. In the morning, they were diluted to OD = 0.1 in 1xYPD. SpectroStar Nano microplate reader was used to measure cell density every 20 min. Each data point represents the mean of three biological replicates.
 
-## Glucose starvation quantitative growth assay
+### Glucose starvation quantitative growth assay
 
 Yeast strains were grown for 24 hr in 2% glucose YEP media then diluted to OD = 0.1 and grown overnight again. In the morning, cells were diluted to OD = 0.1 in 1xYEP containing 2% glycerol, 2% EtOH and growth was monitored every 20 min at 30°C.
 
-## RNA quantification and analysis
+### RNA quantification and analysis
 
 RT-qPCR was performed as previously described in Chowdhary et al., 2022, except for the following: cells were grown at 30°C in YPD to a mid-log density (OD600 = 0.8). Rapamycin was added to a final concentration of 10 µg/ml for 5 min. At this point, a portion of the culture was maintained at 30°C (0 min HS) and the remainder was subjected to heat shock at 39°C for 5, 15, 60, and 120 min. Cells were flash frozen immediately after heat shock, and then harvested. Total RNA was extracted using hot acid phenol extraction method, followed by ethanol precipitation (Solís et al., 2016). To determine fold change mRNA levels, mean mRNA levels of heat-shocked samples were normalized to the NHS sample (Pfaffl, 2001).
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 RNA read counts for 39 Hsf1 target genes were collected in a recent paper and reanalyzed here (Triandafillou et al., 2020; GEO accession number GSE152916).
 
 Experimental methods are described in detail in the original paper. In brief, cells were exposed to heat shock at 42°C for 20 min. Cells exposed to heat shock and CHX were treated with 200 µg/ml CHX simultaneously upon HS. Each data point represents average read count for a single Hsf1 target gene (two biological replicates). Translation dependence was calculated as 1 − (CHX + HS/HS).
 
-## Halo-Tagging
+### Halo-Tagging
 
 To image NSPs, we incubated cells with blocker (20 µM, 7-bromoheptanol) for 5 min, washed two times with 2xSDC media and then incubated with 0.4 µM of Halo JF646dye at 39°C, to start HS treatment simultaneously. Under this treatment, only protein induced during heat shock was visualizable. Lattice light sheet microscopy was used to visualize 5–20 cells every 2.5 min throughout the 30-min heat shock.
 
-## Lattice light sheet microscopy and quantification
+### Lattice light sheet microscopy and quantification
 
 Lattice light sheet imaging was performed at the University of Chicago Integrated Light Microscopy Core (Intelligent Imaging Innovations) and run in SlideBook 6.0 software. Captured images were deconvoluted using Graphics processing unit-based Richardson–Lucy deconvolution with measured PSFs via Brian Northan’s ‘Ops’ implementation (https://github.com/imagej/ops-experiments; Northan, 2022). 3D reconstructions and videos were assembled using ClearVolume (Royer et al., 2015). The mean Halo intensity at the ring around the Nsr1-marked nucleolus was divided by the mean intensity over the total cell.

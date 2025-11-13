@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.42746.001 Parkinson’s disease (PD) is a progressive neurodegenerative disorder whose cardinal motor symptoms are attributed to dysfunction of basal ganglia circuits under conditions of low dopamine. Despite well-established physiological criteria to define basal ganglia dysfunction, correlations between individual parameters and motor symptoms are often weak, challenging their predictive validity and causal contributions to behavior. One limitation is that basal ganglia pathophysiology is studied only at end-stages of depletion, leaving an impoverished understanding of when deficits emerge and how they evolve over the course of depletion. In this study, we use toxin- and neurodegeneration-induced mouse models of dopamine depletion to establish the physiological trajectory by which the substantia nigra reticulata (SNr) transitions from the healthy to the diseased state. We find that physiological progression in the SNr proceeds in discrete state transitions that are highly stereotyped across models and correlate well with the prodromal and symptomatic stages of behavior.
+Parkinson’s disease (PD) is a progressive neurodegenerative disorder whose cardinal motor symptoms are attributed to dysfunction of basal ganglia circuits under conditions of low dopamine. Despite well-established physiological criteria to define basal ganglia dysfunction, correlations between individual parameters and motor symptoms are often weak, challenging their predictive validity and causal contributions to behavior. One limitation is that basal ganglia pathophysiology is studied only at end-stages of depletion, leaving an impoverished understanding of when deficits emerge and how they evolve over the course of depletion. In this study, we use toxin- and neurodegeneration-induced mouse models of dopamine depletion to establish the physiological trajectory by which the substantia nigra reticulata (SNr) transitions from the healthy to the diseased state. We find that physiological progression in the SNr proceeds in discrete state transitions that are highly stereotyped across models and correlate well with the prodromal and symptomatic stages of behavior.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ To study the onset and progression of basal ganglia pathophysiology during progr
 
 ## Results
 
-## SNr pathophysiology at End-Stages of dopamine depletion in awake mice
+### SNr pathophysiology at End-Stages of dopamine depletion in awake mice
 
 To establish the electrophysiological parameters that define SNr pathophysiology at end-stages of dopamine loss, we performed in vivo recordings from the SNr of awake, bilaterally depleted mice (Figure 1A–C). Recordings targeted to the SNr were confirmed by the presence of fast, tonically active units (~30–40% were modulated by movement), and by visualizing the recording track postmortem with immunostaining against the microglial marker, Iba-1 (Figure 1B). Depletions were induced by infusing 6-hydroxydopamine (6-OHDA) into the bilateral medial forebrain bundle (MFB), either in a single, high-dose infusion (‘acute’;~3 days), or through a series of repeated, low-dose infusions, spaced 5 days apart (‘gradual’; 38 ± 15 days). In all mice, depletion severity was quantified using tyrosine hydroxylase (TH) immunoreactivity in the striatum, a metric that is well correlated with tissue dopamine levels (Willard et al., 2015). On average, striatal TH levels were 4.1 ± 2.6% (relative to control) in acutely depleted mice and 3.7 ± 4.4% in gradually depleted mice. Because mice at advanced stages of depletion rarely initiated movements on the wheel (<2% of time spent moving), SNr physiology across conditions was compared during periods of rest (see: Materials and methods).
 
@@ -53,7 +53,7 @@ To examine more directly whether spiking synchrony is affected by dopamine deple
 
 Taken together, our results confirm the presence of multiple physiological changes in SNr neurons under dopamine depleted conditions. Although no single parameter appeared to reliably distinguish gradually from acutely depleted mice, it is possible that simultaneous changes in multiple parameters distinguish these two conditions. To test this possibility, we trained a classifier to discriminate acutely from gradually depleted mice using the pathophysiological metrics described above (Figure 1K, and see Materials and methods). The classifier was unable to discriminate these conditions above chance levels (Figure 1L) (60.2 ± 24% CI95, right-tail t-test vs. chance, 50%, p = 0.3842, n = 16 mice). By contrast, retraining the same model to discriminate end-stage mice (Grad +Acute) from control mice resulted in classification well above chance (Figure 1M) (84.9 ± 12% CI95, right-tail t-test vs. chance, 50%, p = 7.87×10−6, n = 23 mice). Importantly, the majority of mice from both depletion models were correctly classified (G5% = 7/9 mice, A5% = 6/7 mice). Examination of the model coefficients showed that successful discrimination largely depended on the pathophysiological changes described above, as well as interactions between FR and spike patterns (Figure 1N). These results suggest that stereotyped changes in SNr physiology occur at end-stages of dopamine loss, regardless of whether dopamine is depleted slowly over a month, or acutely, over days.
 
-## SNr pathophysiology proceeds in two phases during gradual dopamine depletion
+### SNr pathophysiology proceeds in two phases during gradual dopamine depletion
 
 To determine how SNr pathophysiology develops over the course of gradual dopamine loss, we performed in vivo recordings from mice at different stages of depletion (Figure 2A–B). Because precise quantification of depletion required postmortem analysis, data at each stage were collected in different groups of mice (TH immunoreactivity relative to control): ‘G85%’=86 ± 9%; ‘G60%’=61 ± 12%; ‘G30%’=28 ± 18%; ‘G5%’=3.7 ± 4.4%.
 
@@ -69,7 +69,7 @@ Spike synchrony at each stage of depletion was calculated as described in Figure
 
 To determine whether capturing changes across all of these parameters simultaneously would reveal different stages of pathophysiological progression, we performed principal component (PC) analysis (see Materials and methods) (Figure 2H–I). Physiology PC1 explained 52.6% of neuronal variability. This component captured variation in firing rate that differed in sign to variation in irregularity, bursting and synchrony (Figure 2H). To visualize the trajectory of this component over the full spectrum of dopamine depletion, we plotted each mouse’s physiology PC1 score as a function of its striatal TH level (Figure 2I). We observed that the physiological transition from control to fully depleted mice followed a biphasic decline (Figure 2I). The first transition occurred early in the depletion process, reflecting an acute sensitivity of SNr physiology to small changes in dopamine levels. After this initial drop, physiology PC1 remained relatively stable across a wide range of dopamine levels but underwent a second sharp drop as mice reached the end-stage of depletion. At end-stage, the model fit to gradually depleted mouse physiology PC1 scores overlapped almost identically with the mean physiology PC1 score calculated from acutely depleted mice (Figure 2I, ‘Acute’). Thus, over the course of 6-OHDA dopamine depletion, mice show early changes in SNr pathophysiology, entering an intermediate period of stable physiology, followed by a final decent to end-stage pathophysiology.
 
-## Gradual dopamine depletion with 6-OHDA results in late onset of behavioral deficits
+### Gradual dopamine depletion with 6-OHDA results in late onset of behavioral deficits
 
 To investigate the relationship between SNr pathophysiology and symptomatic onset over the course of gradual dopamine depletion, mice were given a battery of behavioral tests prior to in vivo recordings on the same day. Behavioral performance on individual tasks followed a variety of trends in relation to dopamine loss (Figure 3). Early dopamine loss often resulted in modest hyperactivity relative to control mice, followed by hypoactivity at late depletion stages, as observed in open field velocity (Figure 3A). Velocity, rearing, and total time taken to complete the pole task were preserved until late stages of dopamine loss (Figure 3B–D). Wire hang showed a high degree of variability in performance at early stages of dopamine loss that sharply declined when dopamine levels dropped below ~60% (Figure 3E).
 
@@ -81,7 +81,7 @@ To summarize these behavioral changes, we used PCA to identify the best single a
 
 To determine whether changes in physiology (which decline biphasically with dopamine loss) are correlated with changes in behavior (which decline monophasically with dopamine loss), we fit a 2D polynomial to predict behavior PC1 using physiology PC1, and dopamine (Figure 3H, see: Materials and methods). Optimal behavioral prediction depended on physiology (y, y3), dopamine (x, x2), and their interaction (y*x2) (95% confidence interval on coefficients, Adj-R2 = 0.615, Figure 3H), suggesting physiology and behavior are correlated over the course of dopamine loss. To visualize the complex relationship between these variables, we overlaid the 2D fit of changes in physiology +behavior + dopamine with the 1D fit of changes in physiology +dopamine (Figure 3H). This overlay reveals that early changes in physiology align with the prodromal period, while late changes in physiology align with the symptomatic period.
 
-## PFF α-Syn drives gradual dopamine loss and behavioral changes that mirror the prodromal stage of 6-OHDA-treated mice
+### PFF α-Syn drives gradual dopamine loss and behavioral changes that mirror the prodromal stage of 6-OHDA-treated mice
 
 Our results in 6-OHDA treated mice reveal a hierarchical progression of physiological changes in the SNr over the course of gradual dopamine depletion. While most deficits emerged well before the onset of motor symptoms, dimensionality reduction exposed discrete physiological states that correlated with the prodromal and symptomatic stages of behavior. To determine whether the onset and progression of SNr pathophysiology is robust across depletion models, we transitioned from a toxin model to a neurodegenerative model.
 
@@ -93,7 +93,7 @@ The protein α-synuclein plays a central role in the pathogenesis of PD and is a
 
 Mice with 85–30% dopamine remaining showed trends towards modest hyperactivity, similar to gradually depleted mice (Figure 4C–F), however the only group with significant differences from control was an increase in open field velocity in Syn60% mice. PFF α-Syn mice trended towards impaired wire hang performance but this difference was not significant (Figure 4F). We next calculated behavioral scores for each mouse from their performance across the battery of behavioral tasks and plotted them as a function of depletion stage (Figure 4G–H). Although PFF α-Syn mice did not reach end-stage depletion levels and therefore did not transition into the symptomatic stage, their behavioral scores were similar to that of 6-OHDA-treated mice at similar stages of depletion. This was most prevalent in the elevation of behavior scores at intermediate stages of depletion, driven by hyperactivity in the open field, more rearing, and decreased time on the pole task (Figure 4H, compare with Figure 3G).
 
-## SNr pathophysiology progresses similarly across PFF α-Syn and 6-OHDA models
+### SNr pathophysiology progresses similarly across PFF α-Syn and 6-OHDA models
 
 The onset and severity of SNr pathophysiology in PFF α-syn mice progressed along a similar trajectory as that seen in 6-OHDA-treated mice. SNr firing rates were significantly reduced even at the earliest stage of depletion, and this decrease persisted across subsequent stages of depletion (Figure 5A) (Median ±MAD: Control: 35 ± 11 Hz, n = 262 neurons/7 animals; Syn85%: 26 ± 11 Hz, n = 98/3; Syn60%: 25 ± 9 Hz, n = 155/4; Syn30%: 25 ± 8 Hz, n = 150/3; KW pairwise, Ctl vs. 85%, 60%, 30%, p < 0.0001).
 
@@ -107,7 +107,7 @@ At the population level, we saw a trend towards more synchronized spiking, but a
 
 To determine whether SNr pathophysiology progressed along a similar trajectory in PFF α-Syn mice compared to 6-OHDA-treated mice, we performed PCA (Figure 5F–G). In PFF α-Syn mice, PC1 captured changes in firing rate that were opposite in sign to irregularity, and bursting (51.8% variability explained; Figure 5E), similar to PC1 in gradually depleted mice (Figure 2H). In PFF α-Syn mice, PC1 showed a monophasic progression, presumably due to a lack of end-stage pathology (Figure 5G). This drop was similar to the initial drop seen in 6-OHDA treated mice, but a bit more gradual. Combined with results from 6-OHDA-treated mice, our data suggest that the progression of SNr pathophysiology depends more on the magnitude of dopamine depletion than the depletion model.
 
-## Unilateral 6-OHDA depletion results in physiological changes in both hemispheres
+### Unilateral 6-OHDA depletion results in physiological changes in both hemispheres
 
 Thus far, our study has examined the progression of SNr pathophysiology in bilaterally depleted mice. However in human PD, dopamine loss often begins asymmetrically (Gelb et al., 1999; Hoehn and Yahr, 1967; Hughes et al., 1992), and the contralateral hemisphere might help to compensate (Roedter et al., 2001). Indeed, most studies of compensation under dopamine depleted conditions have been conducted in unilaterally depleted animals (Chu et al., 2017; Escande et al., 2016; Fan et al., 2012a; Fieblinger et al., 2014; Fuller et al., 2014; Gittis et al., 2011; Taverna et al., 2008), with suggestion that certain pathologies, such as β−oscillations, might require several weeks of unilateral depletion in order to fully manifest (Brazhnik et al., 2014; Degos et al., 2009; Dejean et al., 2012; Leblois et al., 2007; Mallet et al., 2008). To test whether unilateral depletion influences the nature or severity of pathophysiology in the SNr, we performed experiments in two unilateral models: 'unilateral' (Figure 6A–B) and 'asymmetric' (Figure 6F–G).
 
@@ -129,6 +129,14 @@ To determine whether unilaterally depleted mice showed distinct physiological ch
 
 Physiological Changes Reveal State Transitions in the SNr that are Stereotyped Across ModelsThus far, our analyses have established distinct physiological states in the SNr when mice are at early vs. late stages of dopamine loss. During this transition, the SNr appears to pass through an intermediate state, but it is unclear whether this represents a unique physiological state, or results from averaging early and late stages of physiology. To distinguish between these two possibilities, we first ran PCA on a data set compiled across all depletion models tested in the study. PC1 of this entire data set once again extracted changes in firing rate that were of opposite sign to changes in irregularity, bursting, and synchrony (Figure 7—figure supplement 1A), and followed a biphasic decline whose local minimum occurred midway through depletion (Figure 7A compared to Figure 2I).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/42746/elife-42746-fig7-v1.jpg)
+
+**Figure 7.:** (A) Mean animal physiology PC1 scores as a function of dopamine loss with model fit to Ctl, Grad, PFF α-Syn, bilateral acute, Ipsiasym, and Ipsiuni mice. Shaded region indicates CI95 of fit (see Materials and methods; n = 68 mice). (B) Data from A with Early, Intermediate and Late dopamine groups defined around the local minimum at 55 %TH Remaining (±20%). (C) Confusion matrix of total cross-validated accuracy classifying mice into Early, Intermediate and Late dopamine groups using a multinomial regression (500 permutations, see: Materials and methods). Frequency of correct depletion severity predictions is highlighted along diagonal (chance = 33%). (D) Top: Average model coefficients for classifying Intermediate dopamine depletion relative to Early. Bottom: Average model coefficients for classifying Late dopamine depletion relative to Intermediate. (E) Instantaneous similarity of physiological parameters to end-stage via cross-correlation (n = 70 mice). FR, firing rate; SYN, percentage synchronous pairs per mouse; IR, irregularity (CVISI); B, percent spikes in bursts. (F) 2D polynomial fit showing mouse behavior as a function of SNr pathophysiology and dopamine loss in all bilateral conditions (n = 53 mice, Adj. R2 = 0.565). Dashed line, physiology PC1 fit to all bilateral mice. Adj. R2 = 0.27. See also: Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/42746/elife-42746-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) PCA coefficients for analysis run on all depletion models: Ctl, Grad, PFF α-Syn, bilateral acute, Ipsiasym, and Ipsiuni mice. PC1 explained 42% of variability; PC2 explained 21.6%. (B) Data from Figure 7A broken into four dopamine groups: Early (100–75%), Intermediate (‘Inter,’ 75–35%), Intermediate/Late (‘Inter/Late,’ 35–10%) and Late (10–0%). (C) Confusion matrix of total cross-validated accuracy classifying mice into Early, Intermediate, Intermediate/Late and Late dopamine depletion groups using a multinomial model (500 permutations, see: Materials and methods). Early, Intermediate, and Late mice were correctly classified above chance while Intermediate/Late mice were often confused as belonging to the ‘Late’ dopamine group (35.3% of the time, chance = 25%). (D) 3-group classification accuracy from Figure 7C separated instead by depletion model (chance = 33.3%, Pearson χ2 = 11.3, p = 0.0237). Grey squares indicate classification accuracy of each held out mouse. Inset text indicates mice predicted >chance/ total mice.
+
 To determine whether this biphasic decline was indicative of three discrete physiological states, we designed a multinomial classifier to test whether physiology could accurately predict the severity of depletion. To train the model, we segregated mice into three groups based on depletion severity ('early', intermediate', 'late'). The ‘intermediate’ group included mice whose dopamine levels fell within a symmetric window centered around the local minimum of PC1 (55 ± 20 %TH; n = 14 mice). The ‘early’ group included all mice above this window (100–75%, n = 15 mice), and the ‘late’ group included all mice below (35–0%, n = 41 mice). We then tested the classification accuracy of each mouse (jack-knife, 500 permutations), and whether it was predicted as ‘early’, ‘intermediate’ or ‘late’ depletion groups. The multinomial classifier successfully separated mice into each of these groups 52.9% of the time, significantly more often than expected by chance (33%) (Figure 7C) (multi-class Matthew's Correlation Coefficient = 0.25, p = 0.004, permutation test). Next, we trained a multinomial classifier to separate mice into four dopamine groups, however this classifier made errors consistent with there being only three groups (Figure 7—figure supplement 1B–C), further supporting three distinct physiological states. Finally, to test whether physiological states were stereotyped across depletion models, we reassessed ‘early,’ ‘intermediate,’ and ‘late’ mouse classification accuracy by instead grouping mice by depletion model (Figure 7—figure supplement 1D). We found that mice from all depletion models (Ctl, Acute, Gradual, α-Syn, and Ipsi), were classified into ‘early,’ ‘intermediate,’ and ‘late’ depletion groups above chance (p = 0.0237, Chi2 = 11.3, Pearson’s chi-square test). Taken together, these results suggest that over the course of dopamine loss, deterioration of SNr physiology occurs as a series of state transitions: from ‘normal’ to ‘moderate’, and from ‘moderate’ to ‘severe’.
 
 To determine which physiological changes were most responsible for each state transition, we plotted the multinomial coefficients used by the classifier to separate ‘early,’ ‘intermediate,’ and ‘late’ depletion groups (Figure 7D). These results suggest that transitions from the normal to moderate state were driven by increased irregularity, and firing rate interactions with spike patterns (Figure 7D). Transitions from the moderate to severe state were driven by increased synchrony (Figure 7D). To better visualize how changes in firing rates and patterns progress over the course of dopamine loss, and whether these changes promote or oppose dysfunction, we created a continuous measure of similarity between each parameter and its value at end-stage (Figure 7E, see: Materials and methods). During early dopamine loss, decreases in firing rate and increases in synchrony pushed the SNr towards pathology, transitioning from a ‘normal’ to ‘moderate’ pathophysiological state. As dopamine loss progressed, increases in irregularity and bursting promoted further dysfunction, but were offset by a decrease in synchrony and partial recovery of firing rate. These changes opposed dysfunction and possibly kept the SNr buffered in a ‘moderate’ pathophysiological state. At late stages of dopamine loss, however, this buffering broke down and dysfunction aligned across all physiological parameters, transitioning the SNr into a final, ‘severe’ pathophysiological state.
@@ -139,7 +147,7 @@ Finally, to capture the relationship between physiology and behavior across all 
 
 Our study reveals that over the course of progressive dopamine loss, SNr dysfunction progresses through a series of discrete state transitions. Small reductions in dopamine are sufficient to transition the SNr out of its ‘normal’ physiological state and into a ‘moderate’ pathophysiological state. The SNr remains buffered in this moderate pathophysiological state over a range of dopamine levels until finally transitioning into a ‘severe’ pathophysiological state at end-stages of depletion. These physiological transitions were well correlated with behavioral transitions into the prodromal and symptomatic states, respectively. The finding that SNr pathophysiology progresses in discrete stages, rather than smoothly as a function of dopamine loss, suggests different windows of opportunity for delivering specific therapies. Our results predict that interventions that preferentially affect firing rate (i.e. L-DOPA) are more likely to be effective at earlier stages of depletion rather than late, whereas interventions that preferentially affect regularity and synchrony (i.e. DBS) are more likely to be effective at late stages of depletion (Figure 7D–E). These results establish a conceptual framework for understanding the dynamic nature by which individual physiological parameters contribute to basal ganglia dysfunction over time and establishes a predictive model for therapeutic outcomes.
 
-## Physiological states in the SNr predict behavioral states
+### Physiological states in the SNr predict behavioral states
 
 Changes in firing rate, irregularity, bursts, and synchrony are well-established indicators of basal ganglia dysfunction under conditions of low dopamine (Galvan and Wichmann, 2008; Obeso et al., 2000; Wichmann and Dostrovsky, 2011), but their validity as biomarkers for different stages of PD has been underexplored. This is because most physiological studies are done at end-stages of depletion, or in symptomatic animals, precluding analysis of when physiological changes emerge, and whether they are accurate predictors of behavioral state. Previous attempts to link individual physiological parameters with motor symptoms and disease progression have yielded mixed results (Bezard and Gross, 1998; Bezard et al., 2003; Leblois et al., 2007; Muralidharan et al., 2016; Stein and Bar-Gad, 2013; Tang et al., 2010). For example, changes in firing rates are sufficient to transition animals between mobile and immobile states (Kravitz et al., 2010; Lemos et al., 2016), but during progressive dopamine loss, firing rate changes emerge before the onset of motor deficits (Bezard et al., 1999; Bezard et al., 2001; Bezard et al., 2003). Similarly, the therapeutic efficacy of DBS is well correlated with its ability to reduce synchrony (Hammond et al., 2007b; Kühn et al., 2006; Ray et al., 2008), but the degree of synchrony does not necessarily predict motor deficits (Connolly et al., 2015; Leblois et al., 2007; Mallet et al., 2008; Muralidharan et al., 2016). These and other observations have sparked controversy over whether changes in basal ganglia physiology underlie motor deficits in PD, or whether motor deficits are better predicted by physiological changes at areas outside the basal ganglia (Bezard et al., 2003; Dirkx et al., 2017; Gradinaru et al., 2009; Wu and Hallett, 2013).
 
@@ -147,13 +155,13 @@ Our results help to reconcile these seemingly contradictory results, by establis
 
 At late stages of dopamine depletion (<35% remaining), all physiological parameters began to change in unison, transitioning the SNr into a severe pathophysiological state (Figure 7E–F). This transition appeared to be driven by increased synchrony and correlated strongly with the onset of motor symptoms (Figure 7D–F). This result suggests a mechanism to account for a long-standing paradox of parkinsonian motor symptoms: alleviation of motor symptoms can be correlated with individual physiological parameters (Hammond et al., 2007b; Kravitz et al., 2013; Kühn et al., 2006; Mastro et al., 2017a; Zhuang et al., 2018), but rarely do single parameters predict the onset of motor symptoms (Muralidharan et al., 2016; Nelson and Kreitzer, 2014; Sanders et al., 2013). Our model reconciles this apparent paradox by predicting that motor symptoms emerge when the SNr is in the severe pathological state, which requires alignment of pathophysiology across many different parameters. Conversely, our data predict that changes in any individual parameter would be sufficient to transition the SNr out of the severe pathological state and into the moderate pathophysiological state, where few if any motor deficits are observed. This prediction is supported by findings that Levodopa (L-DOPA) restores movement predominantly through effects on firing rates (Aristieta et al., 2016; Hernandez et al., 2013; Parker et al., 2018; Ryan et al., 2018) whereas DBS restores movement predominantly through effects on firing patterns (Birdno and Grill, 2008; McCairn and Turner, 2009; McCairn et al., 2015; Zhuang et al., 2018). We note, however, that the therapeutic mechanisms of these treatments remain an open question and could involve changes in both parameters.
 
-## Comparison with previous studies
+### Comparison with previous studies
 
 Most physiological changes observed in the SNr were consistent with previous literature, with two exceptions: amplified β-oscillations were not detectable in mouse SNr (see also Lobb et al., 2013), and SNr firing rates in our study were decreased by depletion, rather than increased, as predicted by the classical 'rate model' (Albin et al., 1989; DeLong, 1990). However, experimental measures of firing rate changes in the SNr following dopamine depletion have varied widely in their magnitude and direction across studies (Seeger-Armbruster and von Ameln-Mayerhofer, 2013a). One mechanism that might account for the firing rate decreases observed in our study is a decrease in current from type three canonical transient receptor potential channels (TRPC3) that is important for intrinsic pacemaking in the SNr (Zhou, 2010; Zhou and Lee, 2011; Zhou et al., 2008). TRPC3 channels are positively modulated by D1/5 receptors and their blockade has been shown to slow firing rates and promote irregular firing patterns.
 
 Firing rate changes that take place in the SNr might also be different than those in the internal globus pallidus (GPi), the basal ganglia output nucleus that is preferentially targeted in human and primate studies. In a primate MPTP model, firing rate changes were more prominent in the GPi than in the SNr (Wichmann et al., 1999). Although rodents have a GPi-like structure, called the entopeduncular nucleus (EPN), it is much smaller than primate GPi, and only a subset of EPN neurons project to motor territories of the thalamus (Kha et al., 2000; Wallace et al., 2017)Bezard and Gross, 1998). By comparison, most neurons in rodent SNr encode motor information (Barter et al., 2015; Rossi et al., 2016) and can influence movement either through projections to motor thalamus or through projections to locomotor brainstem (Capelli et al., 2017; Roseberry et al., 2016).
 
-## The role of compensatory plasticity
+### The role of compensatory plasticity
 
 Compensatory plasticity is thought to play a major role in delaying the onset of motor symptoms until late stages of dopamine loss. Evidence of compensatory plasticity is seen throughout the basal ganglia and dopamine system including increased sensitivity to dopamine (Bezard and Gross, 1998; Roedter et al., 2001; Schwarting and Huston, 1996; Zigmond et al., 1990; Zigmond et al., 2002), synaptic and intrinsic changes within the striatum (Blesa et al., 2012; Day et al., 2006; Escande et al., 2016; Fieblinger et al., 2014; Fuller et al., 2014; Gittis et al., 2011; Taverna et al., 2008), and plasticity in the GPe/STN (Chu et al., 2015; Chu et al., 2017; Fan et al., 2012a). However, because most studies of compensatory plasticity have been performed at end-stages of dopamine loss, the extent to which these mechanisms offset or delay disease progression is poorly understood.
 
@@ -163,23 +171,124 @@ With continued dopamine depletion, the physiological buffering observed during t
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)(M and F)</td>
+      <td>C57BL/6J mouse</td>
+      <td>Jackson Laboratory</td>
+      <td>stock_number:000664; RRID:IMSR_JAX:000664</td>
+      <td>Note: now bred in-house</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-hydroxydopamine hydrobromide, 6-OHDA</td>
+      <td>Sigma Aldrich</td>
+      <td>stock_number:H116-5MG</td>
+      <td>(0.75 μg/ hemisphere gradual; 5 μg/hemisphere - acute, unilateral)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-hydroxydopamine hydrobromide, 6-OHDA</td>
+      <td>Tocris</td>
+      <td>stock_number:2547 CAS 636-00-0</td>
+      <td>(5 μg/hemisphere - acute, unilateral)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine Hydroxylase, anti-TH rabbit</td>
+      <td>Pel-Freez Biologicals</td>
+      <td>RRID:AB_2617184; catalog_number:P40101-150;</td>
+      <td>(1:1000 diluted with glycerol)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647–conjugated donkey anti-rabbit</td>
+      <td>Life Technologies</td>
+      <td>RRID:AB_2536183; catalog_number:A-31573;</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Iba-1 rabbit</td>
+      <td>Wako</td>
+      <td>RRID: AB_839504; catalog_number:019–19741; lot_number: WDJ3047</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Human alpha Synuclein, phospho (Ser129) Monoclonal; Unconjugated, Clone EP1536Y</td>
+      <td>AbCam</td>
+      <td>RRID:AB_869973; stock_number:ab51253</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 donkey anti-rabbit</td>
+      <td>Life technologies</td>
+      <td>RRID:AB_2535792; catalog_number:A-21206;</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS Statistics</td>
+      <td>IBM</td>
+      <td>version:24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>version:2018a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>recombinant a-syn</td>
+      <td>DOI:10.1126/science. aah3374</td>
+      <td></td>
+      <td>(6 μg/hemisphere)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EthoVision XT 9.0 software</td>
+      <td>Noldus</td>
+      <td>RRID:SCR_000441</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Additional information and requests for reagents and resources will be fulfilled by the Lead Contact, Aryn Gittis (agittis@cmu.edu).
 
-## Data availability
+### Data availability
 
 Processed data and code used to generate figure panels can be found online https://github.com/KidElectric/willard2018a.git (Isett et al., 2019; copy archived at https://github.com/elifesciences-publications/willard2018a).
 
-## Animals
+### Animals
 
 Experiments were conducted in accordance with the guidelines from the National Institutes of Health and with approval from Carnegie Mellon University Institutional Animal Care and Use Committee. Adult male and female mice (>90 days old) on a C57BL/6J background were used for experiments. After surgical implantation of the cannula or head-bar, animals were provided with dishes of crushed high fat food pellets moistened with water, additional hard food pellets on the floor of the cage, as well as access to a water bottle and all cages were placed half on/half off heating pads. For gradual 6-OHDA depletions, infusion of 6-OHDA were performed while animals were lightly anesthetized on a heating pad, and all animals were injected with 0.1 cc of saline i.p. before being returned to their home cage. Animal’s weights were tracked regularly and extra i.p. saline and softened food or trail mix were provided to encourage weight gain and proper hydration when appropriate.
 
-## Surgical procedures
+### Surgical procedures
 
 Cannula implantation: Under ketamine/xylazine (100 mg/kg: 30 mg/kg, i.p.) anesthesia, the mice were placed on a stereotaxic frame (David Kopf Instruments) and maintained throughout surgery using 1–2% isoflurane. Bilateral internal cannulas (Plastics One) for delivery of 6-OHDA to the MFB were cut to target ±1.1 mm lateral and −5.0 mm ventral and were implanted 0.45 mm posterior to Bregma and secured using superglue. 6-OHDA was prepared at a concentration of 5 μg/μL in 0.9% NaCl for unilateral and acute bilateral depletions and diluted further with 0.9% NaCl to 0.75 μg/μL for bilateral gradual depletions (Sigma-Aldrich H116 6-Hydroxydopamine hydrobromide). Injections were performed using a 33-gauge cannula (Plastics One) attached to a 10 μL Hamilton syringe within a syringe pump (GenieTouch; Kent Scientific) running at 0.5 μL/min, to a total volume of 1 μL/side. The injection cannula was left in place for 5 min following the injection. For gradual depletions, 6-OHDA was administered every 5 days (for n days, depending on condition) and SNr recordings were performed 5 days after the last injection. In unilaterally depleted animals, SNr recordings were performed 4–7 weeks after 6-OHDA injections.
 
 Stereotaxic α-synuclein injection: Animals undergoing the gradual PFF α-Syn paradigm underwent the same surgical preparation described above and received 1.5 μL injections of 4 μg/μL recombinant mouse α-synuclein pre-formed fibrils bilaterally into the striatum (AP:+0.5, ML: +/-, DV: −2.6 mm). Injections were performed as described above with an adjusted pump speed of 1.5 μL/7 min. PFF α-Syn animals were recorded from 2 to 6 months after injection.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 TH immunoreactivity: Degree of dopamine denervation was assessed in all animals based on immunofluorescence against tyrosine hydroxylase. Shortly after electrophysiological recordings, animals were sacrificed and perfused transcardially with phosphate-buffered saline (PBS), followed by 4% paraformaldehyde (PFA) in PBS. Brains were retrieved and post-fixed in 4% PFA for 24 hr before being rinsed with PBS, transferred to 30% sucrose in PBS, and stored at 4°C for at least 24 hr prior to sectioning. Immunohistochemistry was carried out in free-floating coronal frozen sections (30 μm). Tissue was sectioned using a freezing microtome (Microm HM 430; Thermo Scientific), blocked with 10% normal donkey serum, and permeabilized with 0.5% Triton X-100 for 1 hr. Primary antibody incubations were performed at room temperature for 24 hr using rabbit anti-TH (1:1000; Pel-Freez). Primary antibodies were detected with Alexa Fluor 647-conjugated donkey anti-rabbit (1:500, Thermo Fisher Life Technologies), incubated for 90 min at room temperature. Epifluorescent images (10x magnification) from TH staining were taken from bilateral dorsal striatum in one coronal section between 0.62 mm and 1.10 mm Bregma (according to Paxinos second edition Mouse Brain in Stereotaxic Coordinates). Pixel intensity over a 75 × 75 μm area (5625 μm2) from each hemisphere was measured using the pixel intensity measuring tool in ImageJ and normalized to the pixel intensities measured in littermate control mice, processed and imaged in parallel.
 
@@ -187,11 +296,11 @@ Iba-1 immunoreactivity: Recording probe location was visualized with immunofluor
 
 Plaque pathology: Plaque pathology in PFF α-syn mice was assessed with phosphor-S129-α-synuclein staining (rabbit anti-phospho-S129-α-synuclein [EP1536Y], 1:100; AbCam). Primary antibodies were detected with Alexa Fluor 647-conjugated donkey anti-rabbit (1:500, Thermo Fisher Life Technologies), incubated for 90 min at room temperature, or Alexa Fluor 488 donkey anti-rabbit (1:500, Thermo Fisher Life Technologies), incubated for 3 hr at room temperature.
 
-## Preparation of PFF α-synuclein
+### Preparation of PFF α-synuclein
 
 PFF α-syn were prepared by agitating recombinant α-syn with a magnetic stirrer (350 rpm at 37°C) for 7 days incubation. The aggregates were collected by the centrifugation (14,000 rpm 10 min) and were sonicated for 30 s at 10% amplitude (Branson Digital Sonifier, Danbury, CT, USA), and finally were aliquoted and kept at −80°C (Mao et al., 2016).
 
-## Behavioral assessment
+### Behavioral assessment
 
 The day of in vivo recordings, animals were exposed to the following sequential behavioral tests before recordings: open field, rearing, pole task, and wire hang. The minimum interval between two consecutive procedures was 30 min. Mice were habituated to the testing room for 20 min before testing.
 
@@ -203,11 +312,11 @@ Pole Task: To evaluate coordination and bradykinesia, mice were placed head-upwa
 
 Wire Hang: Mice were placed on the top of a standard wire cage lid. The lid was slightly shaken to cause animals to grip the wires and then the lid was turned upside down and suspended ~50 cm above a standard animal cage with fresh bedding. The latency of mice to fall off the wire hang was measured up to 15 min, and average values were computed from two trials (15 min apart). Trials were stopped if the mouse remained on the lid after 15 min.
 
-## In vivo SNr recordings
+### In vivo SNr recordings
 
 Head-bar implants to secure mice for in vivo recordings were performed under anesthesia as described above. Bilateral craniotomies (for probe insertion) were created over the SNr (−2.4 to −3.6 mm anterior, 0.9 to 2.1 mm lateral to Bregma) and a copper head-bar was fixed to the anterior portion of the skull (approximately at Bregma) using a combination of superglue and dental cement. Dental cement was extended from the head-bar to surround the extent of both craniotomies to form a well. This well was then filled with silicone elastomer (Kwik-sil, WPI) that prevented infection and damage to the exposed brain tissue. During the recording, this well was filled with 0.9% NaCl and used as a ground reference. On the day of recording, animals were fixed to the top of the wheel and allowed 15 min to acclimate to the head-fixed position. The silicone elastomer was removed and the craniotomies were cleaned. A linear 16-channel silicon probe with sites spaced 50 μm apart (Neuronexus) was attached to the micromanipulator and centered on lambda. The probe was slowly advanced (5–7 μm/s) until the top of the SNr (~4.2 μm from the top of the brain) was found. SNr activity was distinguished based on a combination of physiological features: presence of putative dopamine neurons, presence of putative GABAergic neurons, and lack of spindle-like activity (thalamic). Post-mortem tissue analysis of Iba-1 (Wako) immunoreactivity induced by probe penetrations were further evidence of proper targeting. Once a population of SNr units was identified, 5–10 min of activity was recorded following a 5 min waiting period to ensure stability of the identified units.
 
-## Electrophysiology analysis
+### Electrophysiology analysis
 
 Data was filtered at 150–8000 Hz for spiking activity and 0.7–300 Hz for local field potentials (LFP). Spike detection was completed using the Plexon offline sorter where principal component analysis was used to delineate single and multi-units. To be classified as a single unit, the following criteria will be utilized: (a) PCA clusters are significantly different (p<0.05); (b) J3-statistic is greater than 1; (c) percent of ISI violations (<1 ms) is less than 0.7%; (d) Davies Bouldin test statistic is less than 0.5. Following spike-sorting, data was processed with NeuroExplorer software in addition to custom scripts in MATLAB.
 
@@ -219,26 +328,26 @@ Burst analysis: Using the Poisson Surprise method (surprise = 5), bursts were 
 
 Synchrony analysis: We modified traditional cross-correlation analysis to correct for nonstationarities within a unit’s firing pattern and to allow for direct comparisons across pairs of units regardless of their firing rates. We performed cross-correlation with a bin size of 10 milliseconds over 12-second-long windows with 4 s of overlap, excluding any window in which we detected movement on the running wheel. In each window, we zeroed the first and last 4 s of the 2nd train and only calculated out to a maximum lag of 4 s, thereby ensuring that each window would have a constant level of zero-padding across all calculated lags. This ensured a consistent level of baseline synchrony at long lags, which we used to normalize the cross-correlogram - specifically, we divided each window’s cross-correlogram by the mean correlation value from 0.5 to 4 s on both sides. These normalized windows were each averaged together to achieve the final, normalized cross-correlation, whose values represent the proportion of synchronous spikes relative to the local chance level of synchrony (chance = 1). We calculated a 99% confidence interval from 0.5 to 4 s on both sides of the normalized cross-correlation and called a pair ‘synchronous’ if its normalized cross-correlation at zero lag exceeded this confidence interval. To calculate the fraction of synchronous pairs, we required that at least two units be recorded simultaneously, and the minimum number of simultaneously recorded pairs from an animal had to exceed 4. In addition, a single unit synchrony index was calculated by taking the mean pair-wise normalized cross-correlation at zero lag for all simultaneously recorded units (used in Figure 7A–E).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Statistical analysis
+#### Statistical analysis
 
 All data sets were tested for normality with the Shapiro-Wilk test and equal variance with Levene’s test prior to any statistical analysis. Data are expressed as median ±median absolute deviation (MAD) unless otherwise indicated. N values reported in text are formatted as follows: n = # of neurons/# of animals. Statistical analysis regarding firing rate and CVISI was performed using Kruskal-Wallis analysis of variance (ANOVA) nonparametric test (KW) and any differences were further investigated by Kruskal-Wallis pairwise comparison between condition of interest and saline controls with a Bonferroni correction for number of comparisons. Statistical analysis regarding proportion of bursting units across conditions was performed using a Pearson Chi-Square Test (Pearson) and any further differences were investigated by z-test comparison of column proportions (z-test) between condition of interest and saline controls with a Bonferroni correction for number of comparisons. Statistical analysis regarding the average percentage of synchronous pairs was performed using a one-way ANOVA followed by a Dunnett t (2-sided) post hoc test with the exception of the asymmetric condition which was not normally distributed, thus we ran a KW test as described above. Results of initial statistical tests can be found in the figure legends, whereas any post-hoc testing is reported in results text where appropriate. A p-value of 0.05 was considered statistically significant. All statistical procedures were performed using IBM SPSS Statistics, version 24.
 
-## Principal component analysis
+### Principal component analysis
 
 Physiology: We performed centered, standardized PCA on single unit firing rate, CVISI, percent spikes in bursts, and % synchronous pairs per mouse (pca(), Ryan et al., 2018). In Figure 7A,a single unit synchrony index was included, as well as all multiplicative pair-wise interactions (Figure 7—figure supplement 1A). Coefficients were corrected for orthonormality. We applied a sign convention at the level of PC coefficients so that PC1 scores could be consistently interpreted relative to Controls. Next, we averaged single unit physiological PC scores within mice. Finally, we fit a polynomial model to mouse PC scores as a function of dopamine (see: Polynomial Fits). The best fit for PC1 was typically a 3rd or 5th degree polynomial (5th degree polynomial used in 7A). All units in each mouse (or hemisphere, in unilateral mice) were assigned the same % synchronous pairs value in this analysis. Skewed data (CVISI, percent spikes in bursts, synchrony measurements) were log-transformed prior to PCA (log10(), MATLAB).
 
 Behavior: We performed centered, standardized PCA on mouse open field velocity, # of rears in 10 min, total time on pole task and wire hang latency (pca(), Parker et al., 2018). Coefficients were corrected for orthonormality We applied a sign convention at the level of PC coefficients so that PC1 scores could be consistently interpreted relative to Controls. Next, we fit a polynomial model to mouse behavioral PC scores as a function of dopamine (see: Polynomial Fits). The best fit for behavior PC1 was a 2nd degree polynomial based on Adj. R2. Behavioral data were log-transformed prior to PCA to correct for skew (log10(), MATLAB).
 
-## Polynomial fits
+### Polynomial fits
 
 Polynomial fits were performed in Ryan et al. (2018) using linear least-squares regression (fit(), fittype = ‘poly2’, ‘poly3’,’poly5,’ for 1D fits, and ‘poly23’ for 2D fits). 95% confidence intervals of fit represent non-simultaneous bounds. Models were selected by optimizing Adj. R2 values (reported in figures) and optimizing interpretability. Coefficient significance was evaluated using a 95% confidence intervals (see: fit(), Zhuang et al., 2018).
 
-## Logistic and multinomial regressions for classification
+### Logistic and multinomial regressions for classification
 
 To predict depletion state from single unit physiological features, we fit a cross-validated multinomial regression (mnrfit(), Zhuang et al., 2018). The model was trained to predict depletion state from unit firing rate, percent spikes in bursts, irregularity (CVISI), percentage of synchronous pairs per mouse, and all pair-wise multiplicative interactions of these parameters. For Figure 7C–D,a mean unit synchrony index was also included. We used a jackknife procedure for cross-validation: in each iteration, one mouse was held out and the model was fit with the single unit data from all remaining mice (Figure 1K ‘Train’). During this procedure, we created a balanced sample by resampling the number of single units to n = 50 and resampling the training mice to maintain an equal proportion of class examples (n = 500 permuted training sets and fits per held-out mouse). This allowed us to measure true performance against a chance performance of 100 * 1/n classes. To predict the held-out mouse's depletion state, we used the held-out single units as inputs to the fitted model, yielding a P(Depletion State | Physiology) for each neuron. We then summed these probabilities to determine the depletion state with the largest probability (Winner-Take-All threshold; Figure 1K ‘Test’). Chance performance was verified by fitting a null model using scrambled mouse depletion state on each iteration. We measured whether depletion states could be discriminated above chance by performing a right-tailed t-test on the mean hold-out accuracy for each mouse compared to the mean accuracy of the null models for that same mouse. A multi-class Matthew’s Correlation Coefficient was also calculated in multi-class comparisons showing significant t-tests. This value was compared to the null distribution of multi-class MCC values generated by the null models (described above) in order to create a p-value (n = 500 permutations).
 
-## Instantaneous similarity to end-stage via cross-correlation
+### Instantaneous similarity to end-stage via cross-correlation
 
 Ctl, bilateral 6-OHDA, Ipsiasym, Ipsiuni and PFFα-Syn mouse physiology data were plotted as a function of dopamine loss and fit with a smoothing spline (fit(), SmoothingParam = 0.001, Parker et al., 2018). These fits were then padded, and cross-correlated with the pattern observed in the last 10% of TH loss (xcorr(), Ryan et al., 2018). This procedure was performed separately for each physiological parameter. Each cross-correlation was normalized so that data spanned from −1 to 1, representing least to most similar to end-stage.

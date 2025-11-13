@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 Department of Plant and Microbial Biology, University of Zurich Zurich Switzerland
+1. Department of Plant and Microbial Biology, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 
 † Corresponding author
 
@@ -32,11 +32,11 @@ To investigate the expected patterns of genetic diversity under different epidem
 
 A similar epidemiological model was used previously in a phylodynamic analysis of two MTB outbreaks (Kühnert et al., 2016; Kühnert et al., 2018). In a second step, the pipeline simulates the evolution of genome sequences along the tree given a clock rate π, and it computes the clustering rates under different SNP thresholds, and the terminal branch lengths. This pipeline allows to test how clustering rates and TBL distributions change under different sampling proportions, sampling periods, molecular clock rates, transmission rates, basic reproductive numbers (R0 = λ/(σ+ε)), lengths of the latency period (determined by ψ), and lengths of the infectious period (determined by σ+ε). Moreover, with this approach it is possible to investigate how the different factors impact the choice of a sensible SNP threshold. To do this, I defined the ‘95% sensitivity SNP threshold’ as the minimum threshold for which at least 95% of strains are clustered in at least 95% of the simulations. A lower SNP threshold would lead to lower sensitivity (i.e. simulated samples, which are the result of recent transmission, would not be clustered), while a larger threshold would lead to low specificity, although this cannot be quantified with this analysis (see Materials and methods for additional information).
 
-## Clock rate, sampling proportion, and sampling period
+### Clock rate, sampling proportion, and sampling period
 
 First, I tested whether the clock rate, sampling proportion, and sampling period affect clustering rates and TBL. The details of these analyses are available as Appendix. I considered three different clock rates (4 × 10–8, 8 × 10–8, and 1.2 × 10–7 nucleotide changes per site per year), four sampling proportions (25%, 50%, 75%, and 100% of cases sampled), and three sampling periods (5, 10, and 20 years). For each scenario, I performed 1000 simulations and compared clustering rates and TBL. I found that: (1) higher clock rates led to lower clustering rates and longer TBL (Appendix 1), (2) lower sampling proportions resulted in lower clustering rates and longer TBL (Appendix 2), and (3) shorter sampling periods resulted in lower clustering rates and longer terminal branches (Appendix 3). Finally, I also tested whether different sample sizes could have an influence on the results of these analyses, and found that TBL and median clustering rates did not change when using a lower threshold on the minimum number of tips in the simulated tree (Appendix 4).
 
-## Latency
+### Latency
 
 Next, I tested whether differences in the duration of the latent period could result in different clustering rates and TBL. Here, latency is defined as the period in which an individual is infected but not yet infectious. Typically, the shift to infectiousness in TB patients is considered to occur with the onset of symptoms. However, in recent years, the importance of sub-clinical TB has been reconsidered. It is possible that a considerable part of TB transmission occurs from asymptomatic patients, although this has not been yet quantified (Kendall et al., 2021). Given the uncertainty about the length of the latent period I tested three different rates of progression to infectiousness ψ=0.5, 1, 2, corresponding to a median latent period of ~16.6, 8.3, and 4.2 months, respectively. These values represent the range of duration of asymptomatic infection estimated in different countries (Ku et al., 2021). All other parameters were constant in all simulations (π=8 × 10–8; σ = ε=0.5; λ=1, sampling period = 10 years). I found that longer latency resulted in lower clustering rates and longer TBL (Figure 2, Table 1). Correspondingly, the 95% sensitivity threshold was 10, 6, and 5 SNPs, and the mean of the TBL distribution was 0.87, 0.56, and 0.41, respectively for long, mid, and short latency.
 
@@ -44,19 +44,273 @@ Next, I tested whether differences in the duration of the latent period could re
 
 **Figure 2.:** (a) Clustering rates with different SNP thresholds. Only SNP thresholds up to the highest 95% sensitivity threshold are plotted (i.e. for thresholds higher than 10 SNPs more than 95% of samples are clustered in more than 95% of simulations for all settings). (b) Overall TBL distributions computed by merging all simulations.
 
-## Transmission, infectious period, and R0
+**Table 1.**
+ Parameters and results for the different simulated scenarios in the analysis of latency.λ: transmission rate, ε: sampling rate, R0 = λ/(ε+σ), σ: death rate, ψ: rate of progression to infectiousness, π: molecular clock rate in expected nucleotide changes per site per year, 95% SNP threshold: the minimum SNP threshold for which at least 95% of samples are clustered in at least 95% of simulations, 100% SNP threshold: the minimum SNP threshold for which 100% of samples are clustered in at least 95% of simulations, 95% CI TBL: the confidence interval for the overall TBL distribution, Mean TBL: average of the overall TBL distribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>λ</th>
+      <th>ε</th>
+      <th>R0</th>
+      <th>σ</th>
+      <th>ψ</th>
+      <th>π</th>
+      <th>95% SNP threshold</th>
+      <th>100% SNP threshold</th>
+      <th>95% CI TBL</th>
+      <th>MeanTBL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Short latency</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>2</td>
+      <td>8 × 10–8</td>
+      <td>5</td>
+      <td>15</td>
+      <td>0–2</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>Mid latency</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>6</td>
+      <td>17</td>
+      <td>0–3</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>Long latency</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>8 × 10–8</td>
+      <td>10</td>
+      <td>20</td>
+      <td>0–5</td>
+      <td>0.87</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transmission, infectious period, and R0
 
 I tested how different transmission and sampling rates impact the results of clustering and the TBL distributions. In these analyses, I set the death rate σ to zero, so that all individuals are sampled, and the length of the infectious period is therefore determined by the sampling rate ε. I found that clustering results and TBL depend on the transmission rate, with higher values leading to higher clustering rates and shorter TBL. Conversely, the sampling rate had no major effect (Appendix 5). I tested whether the threshold on the minimum tree size could bias these analyses (the difference from Appendix 4 is that R0 can be different from one). I found that different thresholds on the minimum number of tips sampled in the simulated tree can influence clustering and TBL, but for the settings used in this study this effect was negligible, and the results were robust to different thresholds (Appendix 5).
 
 Sampling and transmission rates are particularly interesting parameters because together they determine R0, and whether the epidemic will grow or shrink. R0 is the ratio between the rate at which infectious individuals are created (numerator) and the rate at which infectious individuals are removed (denominator). If the numerator is larger than the denominator the epidemic will grow (R0 >1). Conversely, if the denominator is larger than the numerator the epidemic will shrink (R0 <1). Specifically, with the epidemiological model used in this study the numerator is the transmission rate (λ), while the denominator is determined by the sum of the sampling and death rates (σ+ε), so that R0 = λ / (σ +ε). Because only the numerator affects the results of clustering rates and TBL, changes in these two metrics will correlate with R0 only when the denominator (σ +ε) is fixed. To show this I tested three different sampling rates: ε=0.5, 1, and 2, corresponding to a median infectious period of ~16.6, 8.3, and 4.2 months, respectively. These values cover well the possible length of the symptomatic period estimated in different countries (Ku et al., 2021). For each value of ε, I considered three different transmission rates leading to three scenarios: a shrinking epidemic with R0=0.9, a stable epidemic with R0=1, and a growing epidemic with R0=1.1. All other parameters were constant in all simulations (Table 2). When considering scenarios with different sampling rates, and therefore infectious periods, I found no correlation between R0 and clustering rates, nor between R0 and TBL distributions. However, when the duration of the infection period, and all other parameters (except the transmission rate) were fixed, larger values of R0 correlated with higher clustering rates and shorter TBL (Table 2, Figure 3).
 
+**Table 2.**
+ Parameters and results for the different scenarios in the analysis of transmission dynamics.λ: transmission rate, ε: sampling rate, R0: λ/(ε+σ), σ: death rate, ψ: rate of progression to infectiousness, π: molecular clock rate in expected nucleotide changes per site per year, 95% SNP threshold: the minimum SNP threshold for which at least 95% of samples are clustered in at least 95% of simulations, 100% SNP threshold: the minimum SNP threshold for which 100% of samples are clustered in at least 95% of simulations, 95% CI TBL: the confidence interval for the overall TBL distribution, Mean TBL: average of the overall TBL distribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario(Median infectious period (months) - R0)</th>
+      <th>λ</th>
+      <th>ε</th>
+      <th>R0</th>
+      <th>σ</th>
+      <th>ψ</th>
+      <th>π</th>
+      <th>95% SNP threshold</th>
+      <th>100% SNP threshold</th>
+      <th>95% CI TBL</th>
+      <th>Mean TBL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Long infectious period, shrinking(17–0.9)</td>
+      <td>0.45</td>
+      <td>0.5</td>
+      <td>0.9</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>7</td>
+      <td>16</td>
+      <td>0–3</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>Long infectious period, stable(17 - 1)</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>6</td>
+      <td>16</td>
+      <td>0–3</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>Long infectious period, growing(17–1.1)</td>
+      <td>0.55</td>
+      <td>0.5</td>
+      <td>1.1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>6</td>
+      <td>16</td>
+      <td>0–3</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>Medium infectious period, shrinking(8–0.9)</td>
+      <td>0.9</td>
+      <td>1</td>
+      <td>0.9</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>5</td>
+      <td>16</td>
+      <td>0–3</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>Medium infectious period, stable(8 - 1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>5</td>
+      <td>15</td>
+      <td>0–2</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Medium infectious period, growing(8–1.1)</td>
+      <td>1.1</td>
+      <td>1</td>
+      <td>1.1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>4</td>
+      <td>16</td>
+      <td>0–2</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>Short infectious period, shrinking(4–0.9)</td>
+      <td>1.8</td>
+      <td>2</td>
+      <td>0.9</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>5</td>
+      <td>14</td>
+      <td>0–2</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Short infectious period, stable(4 - 1)</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>4</td>
+      <td>15</td>
+      <td>0–2</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Short infectious period, growing(4–1.1)</td>
+      <td>2.2</td>
+      <td>2</td>
+      <td>1.1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8 × 10–8</td>
+      <td>3</td>
+      <td>17</td>
+      <td>0–2</td>
+      <td>0.27</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/76780/elife-76780-fig3-v1.jpg)
 
 **Figure 3.:** (a) Clustering rates with different SNP thresholds. Only SNP thresholds up to the highest 95% sensitivity threshold are plotted (i.e. for thresholds higher than 7 SNPs more than 95% of samples are clustered in more than 95% of simulations for all settings). (b) Overall TBL distributions computed by merging all simulations.
 
-## An example
+#### An example
 
 The results reported above have important implications on the interpretation of molecular epidemiology studies of MTB. To illustrate this in practice let’s consider an example in which two different strains of MTB are causing an epidemic in the same area. The two strains have different epidemiological and biological characteristics. We can think about it like two lineages of MTB, but it could also be two different clones belonging to the same lineage. MTB type 1 is expanding, with a R0 of 1.1, and it is characterized by a slow disease progression, with a median latency period of about one year. Type 1 populations are expected to increase by ~150% every 10 years. Conversely type 2 is shrinking, with a R0 of 0.9, and it is characterized by a shorter median latency period, approximately 5 months. Type 2 populations are expected to shrink by ~50% every 10 years. In addition, type 1 and 2 have moderate differences in their rate of molecular evolution, with a clock rate of respectively 1 × 10–7 and 7 × 10–8 nucleotide changes per site per year. In all other aspects the two types are identical. Obviously, under this scenario, type 1 is much more concerning for public health compared to type 2, at least in the long term. I repeated the same analysis presented above for the two types (Table 3).
+
+**Table 3.**
+ Parameters and results for the two simulated scenarios in the practical example.λ: transmission rate, ε: sampling rate, R0 = λ/(ε+σ), σ: death rate, ψ: rate of progression to infectiousness, π: molecular clock rate in expected nucleotide changes per site per year, 95% SNP threshold: the minimum SNP threshold for which at least 95% of samples are clustered in at least 95% of simulations, 100% SNP threshold: the minimum SNP threshold for which 100% of samples are clustered in at least 95% of simulations, 95% CI TBL: the confidence interval for the overall TBL distribution, Mean TBL: average of the overall TBL distribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>λ</th>
+      <th>ε</th>
+      <th>R0</th>
+      <th>σ</th>
+      <th>ψ</th>
+      <th>π</th>
+      <th>95% SNP threshold</th>
+      <th>100% SNP threshold</th>
+      <th>95% CI TBL</th>
+      <th>Mean TBL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Type 1</td>
+      <td>1.1</td>
+      <td>0.5</td>
+      <td>1.1</td>
+      <td>0.5</td>
+      <td>0.7</td>
+      <td>1 × 10–7</td>
+      <td>8</td>
+      <td>21</td>
+      <td>0–4</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Type 2</td>
+      <td>0.9</td>
+      <td>0.5</td>
+      <td>0.9</td>
+      <td>0.5</td>
+      <td>1.7</td>
+      <td>7 × 10–8</td>
+      <td>5</td>
+      <td>13</td>
+      <td>0–2</td>
+      <td>0.40</td>
+    </tr>
+  </tbody>
+</table>
 
 Type 2 showed shorter terminal branches: the mean of the TBL distribution was 0.84 and 0.4 SNPs for type 1 and type 2, respectively. Moreover, type 2 had higher clustering rates (Figure 4), and the 95% sensitivity threshold was 8 and 5 SNPs for type 1 and 2, respectively. A typical interpretation of this data would be that type 2 is transmitting more than type 1, because of the shorter terminal branches, and the higher clustering rates. Alternatively, if we picked a specific threshold, we would find that type 2 strains are associated with clustering (for lower thresholds), or that there are no differences in clustering among the two types (for higher thresholds). In any case, a classic molecular epidemiology analysis would conclude that type 2 is transmitting more than type 1, or that there are no differences in transmission between the two types. However, the shorter TBL and larger clustering rates of type 2 are due to its shorter latency and lower clock rate, not to increased transmission. Type 2 has a lower transmission rate compared to type 1, and it is bound to extinction, while type 1 is growing exponentially. This example shows the pitfalls of TBL and clustering analyses to study transmission in MTB epidemics. Admittedly, the simulation parameters for this example were picked to highlight the potential problems. However, the epidemiological characteristics of circulating MTB strains are normally not known, and the differences in latency and clock rates used here are possible. The length of the latent period and the clock rates are well within the range of values estimated with different data sets (Menardo et al., 2019; Ku et al., 2021). Overall, these results show that the standard interpretation of clustering results and TBL distributions can potentially be misleading in some epidemiological settings.
 
@@ -66,7 +320,7 @@ Type 2 showed shorter terminal branches: the mean of the TBL distribution was 0.
 
 ## Discussion
 
-## The interpretation of clustering rates and TBL
+### The interpretation of clustering rates and TBL
 
 Especially in low-incidence regions, clustering has proved to be useful to rapidly identify outbreaks and recent transmission (see Walker et al., 2018 for an example). However, the use of clustering analyses and their interpretation has evolved with time, and went beyond the identification of linked bacterial strains. Researchers often look for association with clusters, or differences in clustering rates, to characterize the extent of transmission in different sub-populations coexisting in high-incidence areas. Recently, the distribution of TBL has been used in a similar fashion.
 
@@ -74,23 +328,23 @@ The results presented above demonstrate that these approaches suffer from two ma
 
 In addition to clustering rates and TBL, researchers can use complementary data to understand the epidemiological dynamics. For example, the change through time in the proportion of cases belonging to a certain type can be used as a proxy for the relative reproductive number (i.e. if a type is increasing in proportion within a population, it should have a larger R0 compared to other types). Similarly, if the absolute number of cases is increasing, R0 should be greater than one. However, there can be confounding factors, such as the migration of strains from other regions. Finally, the length of the infectious and latent period can be estimated (with some assumptions) from prevalence surveys and notification data (Ku et al., 2021). Usually this is done at the population level, the same analysis on individual lineages, or clones, could provide useful insights on the heterogeneity of MTB populations.
 
-## Is there an optimal SNP threshold?
+#### Is there an optimal SNP threshold?
 
 The optimal SNP threshold is the one that maximizes sensitivity and specificity. Here I defined the 95% sensitivity SNP threshold as the minimum threshold for which at least 95% of strains are clustered in at least 95% of the simulations (Materials and methods). In other words, this is the threshold that maximizes specificity at a 95% sensitivity level. One important result is that this threshold depends strongly on the epidemiological conditions and on the sample size: across all scenarios simulated for this study the 95% sensitivity threshold ranged between 3 and 11 SNPs, and more extreme values are not impossible. Ideally, molecular epidemiological studies should use larger thresholds for settings characterized by longer latency, lower transmission rates, shorter sampling periods, and/or lower sampling proportions. However, if a MTB population is not uniform, but consists of sub-populations with different epidemiological characteristics, or molecular clock rates, using a single SNP threshold will lead to biased results.
 
-## Biology and epidemiology of MTB lineages
+#### Biology and epidemiology of MTB lineages
 
 The issues discussed above are most relevant when comparing different bacterial sub-populations, such as the MTB lineages. Different MTB lineages have different clustering rates and distributions of TBL, independently from the region of sampling. For example, compared to other lineages, L2 was consistently found to have shorter TBL and higher clustering rates virtually everywhere, including in Vietnam (Holt et al., 2018, Hang et al., 2019), Malawi (Guerra-Assunção et al., 2015; Sobkowiak et al., 2020), Uzbekistan (Merker et al., 2018), South Africa (Cox et al., 2021), Georgia (Gygli et al., 2021), Iran (Vaziri et al., 2019), as well as globally (Freschi et al., 2021). At the opposite end of the spectrum, L1 was repeatedly found to have longer terminal branches, and lower clustering rates, compared to other lineages (Guerra-Assunção et al., 2015; Holt et al., 2018, Hang et al., 2019, Sobkowiak et al., 2020; Freschi et al., 2021). This repeated pattern is probably due to intrinsic bacterial factors, which affect clustering and TBL in all epidemiological settings. Different sampling proportions and sampling periods among lineages are unlikely to be responsible for this widespread pattern. The three remaining factors that could explain the global differences between L2 and L1 are: (1) clock rates, (2) latency, and (3) transmission rates per unit of time.
 
 To summarize, different clustering results and TBL between L1 and L2 are likely caused by differences in latency and/or transmission rate per unit of time. However, the analysis of TBL distribution and clusters cannot tease these two factors apart. In this discussion I focused on L1 and L2, as these two lineages represent the extremes in terms of clustering and TBL. For all other lineages the same logic applies, differences in latency, transmission, and clock rates influence the tree topology in different combinations, resulting in intermediate TBL and clustering rates. Importantly, the effects of all these factors are additive. For example, in a lineage with longer latency and lower clock rate, the longer latency would result in lower clustering rates and longer TBL, while the lower clock rate has the opposite effect. The outcome will be determined by the magnitude of the changes: if the variation in clock rates is large enough to compensate for the longer latency, clustering rates will be larger and TBL shorter, otherwise clustering rates will be lower, and TBL longer.
 
-## Conclusions
+### Conclusions
 
 The take home message of this study is that clustering analyses and TBL can tell us only so much about the dynamics of MTB epidemics. While clustering will continue to be useful to detect linked strains, conclusions about differences in transmission among sub-populations are at best a simplification that conflates many different factors, at worst outright wrong. Phylodynamic methods that estimate the parameters of an epidemiological model from genomic data are becoming available (Kühnert et al., 2016; Didelot et al., 2017; Volz and Siveroni, 2018). However, these analyses have limits that cannot be overcome exclusively with phylogenetic data (Louca et al., 2021), and in any case they are challenging with current MTB data sets (Kühnert et al., 2018; Walter et al., 2022). Methodological advances, the integration of different types of data, and more complete and longer sampling series of MTB epidemics will allow to study epidemiological dynamics more accurately in the future. In the meantime, the results of clustering and TBL analyses should not be over-interpreted.
 
 ## Materials and methods
 
-## Simulation pipeline
+### Simulation pipeline
 
 MTB epidemics were simulated using an Exposed-Infectious epidemiological model. The model has two compartments, one for infectious individuals (I) and one for exposed individuals (E), the latter contains individuals that have been infected but are not yet infectious. Individuals in compartment I generate new infections adding new exposed individuals in compartment E with rate λ. Exposed individuals become infectious moving from compartment E to compartment I with rate ψ. Individuals are removed from compartment I either by death (or self-cure), occurring at rate σ or sampling, occurring at rate ε. Under this model the reproductive number R0 corresponds to λ/(σ+ε).
 
@@ -110,7 +364,7 @@ The pipeline is wrapped in a python script, using Biopython v1.78 (Cock et al., 
 
 The simulation pipeline, scripts and data to reproduce these results are available at https://github.com/fmenardo/sim_cluster_MTB, (copy archived at swh:1:rev:aa2e0bb7629c46e64a099247d225466615b55b07, Menardo, 2022).
 
-## Rationale for the 95% and 100% SNP thresholds
+### Rationale for the 95% and 100% SNP thresholds
 
 Under the model used in this study all simulated samples are, by definition, part of a single transmission chain. Therefore, the ground truth is assumed to be that all samples should be clustered. Under these conditions, the sensitivity of an SNP threshold can be estimated directly, it is the percentage of samples that are clustered. The specificity, however, cannot be estimated, as it depends on many other factors that are not included in the model (e.g. migration).
 

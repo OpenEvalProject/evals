@@ -13,7 +13,7 @@
 
 ## Abstract
 
-The human fungal pathogen Cryptococcus deuterogattii is RNAi-deficient and lacks active transposons in its genome. C. deuterogattii has regional centromeres that contain only transposon relics. To investigate the impact of centromere loss on the C. deuterogattii genome, either centromere 9 or 10 was deleted. Deletion of either centromere resulted in neocentromere formation and interestingly, the genes covered by these neocentromeres maintained wild-type expression levels. In contrast to cen9 ∆ mutants, cen10 ∆ mutant strains exhibited growth defects and were aneuploid for chromosome 10. At an elevated growth temperature (37°C), the cen10 ∆ chromosome was found to have undergone fusion with another native chromosome in some isolates and this fusion restored wild-type growth. Following chromosomal fusion, the neocentromere was inactivated, and the native centromere of the fused chromosome served as the active centromere. The neocentromere formation and chromosomal fusion events observed in this study in C. deuterogattii may be similar to events that triggered genomic changes within the Cryptococcus / Kwoniella species complex and may contribute to speciation throughout the eukaryotic domain.
+The human fungal pathogen Cryptococcus deuterogattii is RNAi-deficient and lacks active transposons in its genome. C. deuterogattii has regional centromeres that contain only transposon relics. To investigate the impact of centromere loss on the C. deuterogattii genome, either centromere 9 or 10 was deleted. Deletion of either centromere resulted in neocentromere formation and interestingly, the genes covered by these neocentromeres maintained wild-type expression levels. In contrast to cen9∆ mutants, cen10∆ mutant strains exhibited growth defects and were aneuploid for chromosome 10. At an elevated growth temperature (37°C), the cen10∆ chromosome was found to have undergone fusion with another native chromosome in some isolates and this fusion restored wild-type growth. Following chromosomal fusion, the neocentromere was inactivated, and the native centromere of the fused chromosome served as the active centromere. The neocentromere formation and chromosomal fusion events observed in this study in C. deuterogattii may be similar to events that triggered genomic changes within the Cryptococcus/Kwoniella species complex and may contribute to speciation throughout the eukaryotic domain.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Neocentromeres are frequently formed near genomic repeats, yet C. deuterogattii 
 
 ## Results
 
-## Deletion of centromere 9 and 10 results in neocentromere formation
+### Deletion of centromere 9 and 10 results in neocentromere formation
 
 To determine if neocentromere formation occurs in the C. deuterogattii reference strain R265, either centromere 9 or 10 was deleted. Centromere 9 (CEN9) was deleted by CRISPR-Cas9-mediated transformation. Two guide RNAs flanking the centromere were used and CEN9 was replaced with a NAT dominant drug-resistance gene by homologous recombination. Biolistic transformation was used to replace centromere 10 (CEN10) with either the NAT or NEO dominant drug-resistance gene via homologous recombination. Viable transformants with the correct integration and deletion were obtained and confirmed by 5’ junction, 3’ junction, loss of deleted regions, and spanning PCRs as well as Southern blot analysis for cen10∆ (Figure 1—figure supplement 1, Figure 1—figure supplement 2). Multiple independent cen9∆ and cen10∆ deletion mutants (cen9∆-A to -F and cen10∆-A to -G) were obtained from independent transformations. Pulsed-field gel electrophoresis (PFGE) confirmed that cenΔ mutants had a wild-type karyotype and that chromosome 9 and 10 remained linear, because a circular chromosome would not have entered the gel (Figure 1—figure supplement 3).
 
@@ -39,7 +39,367 @@ The formation of neocentromeres on chromosome 10 in C. deuterogattii was infrequ
 
 Chromatin immunoprecipitation of mCherry-CENP-A followed by high-throughput sequencing (ChIP-seq) for six cen9∆ (-A to -F) and seven cen10∆ mutants (-A to -G) was performed (Figure 1). Prior to the ChIP-seq experiment, all of the centromere deletion mutants were streak purified from single colonies. The sequence reads were mapped to a complete whole-genome assembly, followed by the normalization of the reads by subtraction of the input from the ChIPed sample (Yadav et al., 2018). To quantify the ChIP-seq data, the CENP-A-enriched regions were compared with the centromeres previously identified based on CENP-C enrichment. Both the CENP-A- and CENP-C-enriched peaks were congruent for all of the native centromeres (Yadav et al., 2018). This analysis identified 13 of the 14 native centromeres (CEN1-8, CEN11-14 and depending on the centromere mutant either CEN9 or CEN10), indicating that, as expected, the native centromere of chromosome 9 or 10 was missing in all of the cen9∆ and cen10∆ deletion mutants respectively (Figure 1). Instead, neocentromeres were observed.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig1-v2.jpg)
+
+**Figure 1.:** For each panel, the chromosome coordinates are indicated. Genes (CDS) are shown in blue arrows and the truncated transposable elements, located in the native centromere (CEN9 or CEN10), are colored according to their class (Tcn4 in orange and Tcn6 in green). Previously generated RNA-sequencing obtained from wild-type cells was re-mapped and shown in green. In each panel, the wild-type CENP-A content is shown. In the wild type, CENP-A is only enriched at the native centromeres. For each cenΔ mutant, the neocentromeric region is shown by enrichment of CENP-A and the fold enrichment is indicated on the right of each ChIP-seq track. (A) Schematic full overview of chromosome 9, the indentation represents the native centromere 9 position. The light grey area points to the zoomed-in chromosomal region shown with the detailed view of the native centromere (CEN9) and the location of the cen9∆ mutant neocentromeres. Neocentromeres of cen9∆-B, cen9∆-C and cen9∆-E formed at the same chromosomal location. The dark gray line, below the transposable elements, indicates the deleted region in the cen9∆ mutants (B) Detailed view of the neocentromere of cen10∆-B and the secondary CENP-A peak of cen10∆-A and cen10∆-C. (C) Overview of the chromosomal 10 region spanning 100 to 410 kb. cen10∆-A and cen10∆-C have two regions enriched with CENP-A (primary and secondary). (D) Schematic full overview of the full chromosome 10, the indentation represents the chromosomal location of the native centromere (CEN10). The light grey areas point to the zoomed-in chromosomal regions shown in panel C and below. The neocentromere of cen10∆-E is indicated with an arrow. Lower panel, detailed view of the native centromere (CEN10) and the neocentromeres formed in cen10∆-A, cen10∆-C, cen10∆-D, cen10∆-F and cen10∆-G mutants. The dark gray line, below the transposable elements, indicates the deleted region in the cen10∆ mutants (E) Detailed view of the telocentric neocentromere of cen10∆-E.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The native centromeric regions of chromosome 9 in the wild type and cen9∆ mutants are shown. Genes flanking the centromeric region in the WT strain are indicated with an arrow and gene ID. The centromere was replaced by a nourseothricin (NAT) drug-resistance gene cassette, indicated with a rectangle (labelled NAT). Black lines indicate the length of the PCR product used to confirm the centromere 9 deletion. Black arrows indicate primers. (B) PCR confirmation of the centromere 9 deletion in cen9∆ mutants ran on an ethidium bromide-stained gel. The WT (W) and no-template control (B) are included as controls. For the spanning PCR, both primers are located outside of the transformed product and for the junction PCRs, one primer is outside of the transformed product and one primer is located inside the nourseothricin (NAT) drug-resistance gene cassette. (C) Centromere 10 region of the wild type (WT) and cen10∆ mutants are shown. Genes and nourseothricin (NAT) drug-resistance gene cassette, primers, and the length of the PCR product are labeled as in A. (D) PCR confirmation of the centromere 10 deletion in cen10∆ mutants ran on an ethidium bromide-stained gel. The WT and no-template control (B) are included as controls.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The region corresponding to the native centromere 10 of the wild type and cen10∆ mutants is shown. Upstream and downstream flanking regions, used for homologous recombination, are indicated with rectangles (labeled ‘5’ region’ or ‘3’ region’). The nourseothricin drug resistance gene cassette is indicated with a rectangle, (labeled NAT). Grey lines indicate XbaI restriction sites. PCR products of the 5’ and 3’ regions were used as Southern blot probes, and the expected restriction pattern is indicated above. (B) Southern blot analysis for the wild-type and cen10∆ mutant strains is presented. Left panel shows the Southern blot, right panel shows the ethidium bromide-stained gel prior to Southern blotting. Both the wild type and cen10∆ mutants have the expected restriction pattern which is shown in panel A.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** PFGE analysis with the wild type and cen9∆ and cen10∆ mutants. Cells were isolated from growing at 30°C. S. cerevisiae chromosomes serve as size markers and are indicated with ‘M’ on both sides of the ethidium bromide stained gel (Chromosome sizes shown on the left side). The chromosome sizes of the reference strain R265 are shown on the right side. In several cases, chromosomes co-migrate as indicated. (A) PFGE analysis of cen10∆ mutants. Order of samples from left to right are wild type and cen10∆ mutants (-A to -G). (B) Southern blot analysis of the PFGE from panel A. A region of CEN10 served as the probe. On chromosome 10, the probe only has homology with the centromere. In the wild-type strain, the probe hybridized to chromosome 10 (arrow). cen10∆ mutants lack centromere 10 and thus do not show hybridization of the probe. The probe has homology to centromeres of other chromosomes, resulting in cross-hybridization. (C) PFGE analysis of cen9∆ mutants. Order of samples from left to right are cen9∆ mutants (-A to -D) and wild type.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** To confirm the binding of the kinetochore to the CENP-A-enriched regions, two additional kinetochore proteins were tagged with GFP and ChIP-qPCR analysis was performed. cen9∆ mutants were transformed with a construct expressing CENP-C-GFP and cen10∆ mutants were transformed with a construct expressing Mis12-GFP. As a control, the wild type was transformed with a construct expressing CENP-C-GFP or Mis12-GFP. For each, ChIP-qPCR data are shown for 1) the internal positive control (CEN6), 2) primer pair(s) specific for the neocentromere(s) and 3) enrichment compared to actin (set to 1). Error bars show standard deviation. (A) qPCR results of the ChIPs with cen10∆ mutants transformed with Mis12-GFP. cen10∆-A and cen10∆-C have two CENP-A-enriched regions (primary peak and secondary peak) and this is indicated in the figure. (B) qPCR results of ChIPs with cen9∆ mutants transformed with CENP-C-GFP. (C) qPCR results of the ChIP with the wild-type strain transformed with Mis12-GFP. This panel serves as a control for the ChIP-qPCRs performed in panel A. As the neocentromere of cen10∆-B and the secondary peak of cen10∆-A and cen10∆-C are formed in the same chromosomal region, the qPCR reaction for this chromosomal region in the wild type is only shown once. Similarly, the primary peak of cen10∆-A and cen10∆-C formed in the same chromosomal location, and this region is only shown once in the wild type. (D) qPCR results of the ChIP with the wild-type strain transformed with CENP-C-GFP. These qPCRs serve as a control for the ChIP-qPCRs performed in panel B. Three mutants have neocentromeres formed at the same chromosomal location (cen9∆-B, cen9∆-C and cen9∆-E) and the CENP-C enrichment of this region in the wild type is only shown once.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Cell morphology of >1000 cells each for the wild-type strain and five cen10∆ mutant strains was analyzed, counted, and plotted as a percentage of total cell number. L = large, S = small, Scale bar = 10 μm. (A) Percentage of cells with elongated cell morphology. Formation of abnormal cell morphology is rare. The cen10∆-C and cen10∆-F mutants have an increased number of elongated cells. cen10∆-D, cen10∆-E, and cen10∆-G mutants had <0.5% elongated cell morphology. (B) Representative view of wild-type and cen10∆-F mutant cells. Several cen10∆-F mutants had enlarged cell shapes and formed elongated cell clusters. (C) Representative view of wild-type colonies and a population of mixed colony sizes of cen10∆ mutants. Shown here is cen10∆-A. Large colonies have a size to similar to wild type.
+
 Except for the neocentromere of isolate cen10∆-E, the neocentromeres formed in close proximity to the native centromere (CEN9 and CEN10). Almost all neocentromeres were shorter than the native centromere, with the exception of cen10∆-G which was larger than native centromere 10 (Table 1).
+
+**Table 1.**
+ Genes located inside neocentromeres.The chromosomal locations, sizes, and GC content (%) for the native centromere and cen∆ mutants are shown. For the neocentromeres, gene ID, predicted function, and the amount of CENP-A coverage are indicated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Chr coor (bp)</th>
+      <th>Size (kb)</th>
+      <th>Size compared to native centromere (%)</th>
+      <th>GC%</th>
+      <th>Genes spanned by neocentromere</th>
+      <th>Gene ID</th>
+      <th>% covered by Neocentromere</th>
+      <th>Exons inside neocentromere</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Native centromere 9</td>
+      <td>Chr9:755,771–762,621</td>
+      <td>6.84</td>
+      <td>-</td>
+      <td>43.6</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">cen9∆-A</td>
+      <td rowspan="2">Chr9:785,352–789,247</td>
+      <td rowspan="2">3.87</td>
+      <td rowspan="2">56.6</td>
+      <td rowspan="2">46.1</td>
+      <td>Escrt-II complex subunit (VPS25)</td>
+      <td>CNBG_5690</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iron regulator 1</td>
+      <td>CNBG_9614</td>
+      <td>14.6</td>
+      <td>Last exon</td>
+    </tr>
+    <tr>
+      <td rowspan="3">cen9∆-B</td>
+      <td rowspan="3">Chr9:775,164–780,756</td>
+      <td rowspan="3">4.41</td>
+      <td rowspan="3">64.5</td>
+      <td rowspan="3">46.6</td>
+      <td>Xylosylphosphotransferase (XPT1)</td>
+      <td>CNBG_5687</td>
+      <td>6.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transglycosylase SLT domain-containing protein</td>
+      <td>CNBG_9613</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glutamate synthase (NADPH/NADH)</td>
+      <td>CNBG_5689</td>
+      <td>33.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">cen9∆-C</td>
+      <td rowspan="3">Chr9:775,164–780,756</td>
+      <td rowspan="3">4.41</td>
+      <td rowspan="3">64.5</td>
+      <td rowspan="3">46.6</td>
+      <td>Xylosylphosphotransferase (XPT1)</td>
+      <td>CNBG_5687</td>
+      <td>6.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transglycosylase SLT domain-containing protein</td>
+      <td>CNBG_9613</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glutamate synthase (NADPH/NADH)</td>
+      <td>CNBG_5689</td>
+      <td>33.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">cen9∆-D</td>
+      <td rowspan="2">Chr9:750,902–755,294</td>
+      <td rowspan="2">4.37</td>
+      <td rowspan="2">63.9</td>
+      <td rowspan="2">41.9</td>
+      <td>Hypothetical protein</td>
+      <td>CNBG_5684</td>
+      <td>92.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Derlin-2/3</td>
+      <td>CNBG_5685</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">cen9∆-E</td>
+      <td rowspan="3">Chr9:775,164–780,756</td>
+      <td rowspan="3">5.56</td>
+      <td rowspan="3">81.3</td>
+      <td rowspan="3">50</td>
+      <td>Xylosylphosphotransferase  (XPT1)</td>
+      <td>CNBG_5687</td>
+      <td>6.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transglycosylase SLT domain-containing protein</td>
+      <td>CNBG_9613</td>
+      <td>100</td>
+      <td>Last exon</td>
+    </tr>
+    <tr>
+      <td>Glutamate synthase (NADPH/NADH)</td>
+      <td>CNBG_5689</td>
+      <td>33.7</td>
+      <td>Last exon</td>
+    </tr>
+    <tr>
+      <td>cen9∆-F</td>
+      <td>Chr9:771,614–775,469</td>
+      <td>3.83</td>
+      <td>56.0</td>
+      <td>51.5</td>
+      <td>Xylosylphosphotransferase (XPT1)</td>
+      <td>CNBG_5687</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="9"></td>
+    </tr>
+    <tr>
+      <td>Native centromere 10</td>
+      <td>Chr10:362,876–369,657</td>
+      <td>6.77</td>
+      <td>-</td>
+      <td>42.6</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="5">cen10∆-A</td>
+      <td rowspan="2">Chr10:115,954–120,422</td>
+      <td rowspan="2">4.46</td>
+      <td rowspan="2">65.9</td>
+      <td rowspan="2">46.9</td>
+      <td>CENPC/MIF2</td>
+      <td>CNBG_4461</td>
+      <td>88.3</td>
+      <td>1, 2, 3, 4 (only5th is outside)</td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4462</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Chr10:391,090–393,946</td>
+      <td rowspan="3">2.85</td>
+      <td rowspan="3">42.1</td>
+      <td rowspan="3">48.9</td>
+      <td>Serine/threonine-protein phosphatase 2A activator 2(RRD2)</td>
+      <td>CNBG_9459</td>
+      <td>10.6</td>
+      <td>Last exon (5th)</td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4366</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4365</td>
+      <td>23.4</td>
+      <td>Last exon (3th)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">cen10∆-B</td>
+      <td rowspan="2">Chr10:115,954–120,422</td>
+      <td rowspan="2">4.46</td>
+      <td rowspan="2">65.9</td>
+      <td rowspan="2">46.9</td>
+      <td>CENPC/MIF2</td>
+      <td>CNBG_4461</td>
+      <td>88.3</td>
+      <td>1, 2, 3, 4 (only 5th is outside)</td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4462</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">cen10∆-C</td>
+      <td rowspan="2">Chr10:115,954–120,422</td>
+      <td rowspan="2">4.46</td>
+      <td rowspan="2">65.9</td>
+      <td rowspan="2">46.9</td>
+      <td>CENPC/MIF2</td>
+      <td>CNBG_4461</td>
+      <td>88.3</td>
+      <td>1, 2, 3, 4 (only 5th is outside)</td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4462</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Chr10:391,090–393,946</td>
+      <td rowspan="3">2.85</td>
+      <td rowspan="3">42.1</td>
+      <td rowspan="3">48.9</td>
+      <td>Serine/threonine-protein phosphatase 2A activator 2(RRD2)</td>
+      <td>CNBG_9459</td>
+      <td>10.6</td>
+      <td>Last exon (5th)</td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4366</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4365</td>
+      <td>23.4</td>
+      <td>Last exon (3th)</td>
+    </tr>
+    <tr>
+      <td>cen10∆-D</td>
+      <td>Chr10:352,648–355,154</td>
+      <td>2.51</td>
+      <td>37.1</td>
+      <td>48</td>
+      <td>Ser/Thr protein kinase</td>
+      <td>CNBG_4379</td>
+      <td>88.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">cen10∆-E</td>
+      <td rowspan="2">Chr10:1–4,385</td>
+      <td rowspan="2">4.38</td>
+      <td rowspan="2">64.7</td>
+      <td rowspan="2">53.2</td>
+      <td>Hypothetical protein</td>
+      <td>CNBG_10450</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4495</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">cen10∆-F</td>
+      <td rowspan="3">Chr10:342,517–345,159</td>
+      <td rowspan="3">2.64</td>
+      <td rowspan="3">39.0</td>
+      <td rowspan="3">45.5</td>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4383</td>
+      <td>18.6</td>
+      <td>Last two exons</td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_10075</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hexokinase (HXK1)</td>
+      <td>CNBG_4382</td>
+      <td>15.3</td>
+      <td>Last three exons</td>
+    </tr>
+    <tr>
+      <td rowspan="4">cen10∆-G</td>
+      <td rowspan="4">Chr10:378,389–386,366</td>
+      <td rowspan="4">7.97</td>
+      <td rowspan="4">117.7</td>
+      <td rowspan="4">46.5</td>
+      <td>High osmolarity signaling protein (SHO1)</td>
+      <td>CNBG_4373</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4372</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4371</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypothetical protein</td>
+      <td>CNBG_4370</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 In three of the independent cen9∆ mutants (cen9∆-B, -C and -E), neocentromeres formed at the same chromosomal location (Figure 1A). Interestingly, two independent cen10∆ mutants (cen10∆-A and cen10∆-C) contained two CENP-A-enriched regions on chromosome 10, with a primary peak and a smaller secondary peak with reduced levels of CENP-A (1.3- to 1.75-fold lower) compared to the primary CENP-A peak (Figure 1C). The chromosomal location of the secondary peak was similar to the neocentromere of cen10∆-B (which had only one neocentromere) (Figure 1B).
 
@@ -61,21 +421,45 @@ The expression levels of the neocentromeric genes in cen9∆ and cen10∆ mutant
 
 **Figure 2.:** Expression of the neocentromeric genes was assessed by qPCR for all cenΔ mutants and expression is shown as Log2ΔΔCt. For cen10∆-A, cen10∆-B and cen10∆-C, two genes were selected from each neocentromeric region, all other cen∆ mutants are represented by one gene spanned by CENP-A. cen10∆-B has only one CENP-A-enriched region, and in this case, the genes located within primary peak of cen10∆-A and cen10∆-C served as controls. The qPCRs of cen10∆ mutants are normalized with a housekeeping gene located on chromosome 10. The qPCRs of cen9∆ mutants are normalized with actin. Error bars show standard deviation.
 
-## Neocentromere formation can reduce fitness
+### Neocentromere formation can reduce fitness
 
 ﻿ cen10∆ mutants were noted to grow more slowly than wild type. To investigate this, the growth of cen10∆ and wild-type strains was measured during the course of a 22-hour cell growth experiment (Figure 3A). The majority of cen10∆ mutants exhibited slower growth rates compared to the wild-type parental strain R265. Six of seven cen10∆ mutants exhibited significant fitness defects compared to the wild-type strain, with doubling times ranging from 101 to 111 min compared to 81 min for the wild type (Figure 3B). In contrast, one mutant, which has a telocentric neocentromere (cen10∆-E), grew similarly to the wild type and had a similar doubling time (84 min for the mutant vs 81 min for the wild-type strain). Compared to the wild type, cen10∆ mutants with increased doubling times produced smaller colonies during growth on non-selective media (Figure 1—figure supplement 5C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig3-v2.jpg)
+
+**Figure 3.:** (A) Six out of seven cen10∆ mutants had a longer doubling time and slower growth than the wild-type strain. In contrast cen10∆-E grows similarly to the wild type. Error bars show standard deviation. (B) Doubling times and fold change compared to wild type are shown. (C) Competition assays with the wild type and cen9∆ and cen10∆ mutant strains. Mixed cultures (1:1) were grown overnight and plated with and without selection agents. After four days, colonies were counted and the percentage of cenΔ mutants (black) and wild type (grey) in each culture was plotted. As a control (C) a wild-type strain with a NAT marker was mixed with the wild type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The doubling times of large and small colonies derived from cen10∆ mutants at 30°C were determined. Large colonies had a growth rate similar to the wild-type strain, while small colonies and the initial cen10∆ mutants had a similar growth rate with one another but that was slower than the wild-type strain and the derived large colonies. (A) Growth curves for cen10∆-A-derived isolates and the wild-type strain are shown. (B) Growth curves for cen10∆-B-derived isolates and the wild-type strain are shown.
+
 To compare fitness, a competition assay was performed with 1:1 mixtures of wild-type and cen9∆ or cen10∆ mutants grown in liquid YPD medium (Figure 3C). With no growth defect, the expectation was that the wild-type strain and centromere deletion mutants would grow at the same growth rate, resulting in a 1:1 ratio. In fact, fewer cen10∆ cells were found in the population after growth in competition with the wild-type strain, and this observation is consistent with the slower doubling time of cen10∆ mutants resulting in reduced fitness compared to wild type (Figure 3). Compared to the wild-type cells, there were fewer cen9∆ mutant cells in the population. However, the number was closer to a 1:1 ratio (Figure 3C). The ratio of the cen9∆ mutants in the population was similar to the ratio of the cen10∆-E mutant, which had a wild-type growth rate. Due to this observation, we hypothesize that the growth rate of the cen9∆ mutants is similar to wild type.
 
-## cen10∆ isolates are aneuploid
+### cen10∆ isolates are aneuploid
 
 Because deletion of a centromere could lead to defects in chromosome segregation, cenΔ mutants were assessed for aneuploidy (Figure 4). Overall, cen10∆ mutants exhibited a mixture of large and small colony sizes during growth on YPD medium at 37°C, while cen9∆ mutants exhibited a uniform, wild-type like, colony size (Figure 1—figure supplement 5).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig4-v2.jpg)
+
+**Figure 4.:** The whole genomes of small and large colonies derived from four cen10∆ mutants were sequenced and read coverage (corresponding to ploidy levels) was plotted. Small colonies of cen10∆ mutants were partially aneuploid for chromosome 10, while the large colonies are euploid. (A) Genome-wide read depth coverage for small and large colonies. On the right, the fold coverage for the highest ploidy level is indicated for each sample. For example, chromosome 10 of cen10∆-B-S1 had an aneuploidy level of 1.35-fold compared to the wild-type strain. Chromosome 4 had a small region with increased read depth due to the ribosomal rDNA gene cluster and was excluded from the analysis. Chromosome 8 of cen10∆-E was duplicated. In addition, cen10∆-E-S3 had an additional duplicated region of 162 kb of chromosome 5 that spans the sequence of native centromere 5. (B) Detailed view of read depth of chromosome 10. As in panel A, read depth is indicated on the right. The native centromeric location is shown by a black square. Due to the deletion of centromere 10, the location of the native centromere lacks sequence reads for each sample.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Sequence reads were mapped to the reference R265 genome. Regions with sequence coverage are shown in blue, and those without sequence coverage are shown in white. Subtelomeric regions of the large cen10∆ colonies have lost sequence coverage, whereas cen10∆ small colonies have wild-type sequence coverage. Telomeric loss was not observed for the large colonies of cen10Δ∆-E. For all panels, genes (CDS) are shown on the top (light blue). (A) Detailed view of the 3’ subtelomeric region of chromosome 10. Large colonies of cen10∆-A and cen10∆-B lost sequences corresponding to a region of 6.5 and ~8 kb. (B) Detailed view of the 3’ subtelomeric region of chromosome 4. Large colonies of cen10∆-A have lost sequences corresponding to a 12 kb region. (C) Detailed view of the 3’ subtelomeric region of chromosome 7. Large colonies of cen10∆-B lost sequences corresponding to an ~18.5 kb region.
+
 Aneuploidy in C. neoformans often leads to a similar mixed colony size phenotype as that observed in the cen10∆ mutants (Sun et al., 2014). To exacerbate the aneuploidy-associated slow growth phenotype, four cen10∆ mutants were grown at elevated temperature (37°C), causing these isolates to produce smaller, growth-impaired and larger, growth-improved colonies (Figure 3—figure supplement 1). Three small and two large colonies were selected from each isolate and whole-genome analysis was performed based on Illumina sequencing. Sequences were mapped to the reference R265 genome, revealing that the small colonies were indeed aneuploid (Figure 4A). The small colonies of cen10∆-B and cen10∆-C had ploidy levels for chromosome 10 in the range of 1.25- to 1.36-fold higher compared to the other 13 chromosomes, which suggested that only a proportion of the cells (25% to 36%), were aneuploid (Figure 4B). The remainder of the genome was euploid. Chromosome 10 of the small colonies derived from isolate cen10∆-A and cen10∆-E exhibited ploidy levels ranging from 1.1- to 1.14-fold, reflecting less aneuploidy. Importantly, for all of the large colonies derived from isolates cen10∆-A, cen10∆-B, cen10∆-C, and cen10∆-E the fold coverage of chromosome 10 was restored to the wild-type euploid level (1.0 fold compared to wild type). The ploidy levels of chromosome 10 were 1-fold for all of the large colonies compared to wild type, indicating that the ploidy level of chromosome 10 of the large colonies was restored to euploid.
 
-## cen10∆ chromosome is rescued by chromosome fusion
+### cen10∆ chromosome is rescued by chromosome fusion
 
 Based on whole-genome sequencing and PFGE analysis, fusion of cen10∆ chromosome 10 to other chromosomes was a common event in the large colonies (Figure 5, Figure 6). Whole-genome sequence analysis revealed that sequences corresponding to the 3’ subtelomeric region of chromosome 10 (including one gene) were absent in the sequences obtained from all of the large colonies analyzed (Figure 4—figure supplement 1A). In addition, the large colonies of cen10∆-A were missing sequences for two genes in the 5’ subtelomeric region of chromosome 4 (Figure 4—figure supplement 1B). Large colonies of cen10∆-B were missing 18.5 kb at the 5’ subtelomere of chromosome 7 (including eight genes) (Figure 4—figure supplement 1C). The large colonies of cen10∆-E lacked a small part of one gene in the 3’ subtelomeric region of chromosome 1. In total, of the 14 subtelomeric genes that were lost in these three chromosome-fusion isolates, ten encoded hypothetical proteins and four encoded proteins with predicted functions. BlastN analysis in the de novo genome assemblies of the large colonies confirmed that the subtelomeric regions were not located on minichromosomes or inserted in other chromosomes. Seven genes have homologs in C. neoformans and are present in C. neoformans deletion libraries (Liu et al., 2008; Supplementary file 3). This observation suggested that either subtelomeric deletions occurred, or that chromosomal fusions led to the loss of subtelomeric regions. Notably, sequences from the small colonies spanned the entire genome with no evidence of these subtelomeric deletions (Figure 4—figure supplement 1F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig5-v2.jpg)
+
+**Figure 5.:** Chromosomal fusions were studied in detail for three cen10∆ mutants restored to wild-type growth levels at 37°C (large colonies). After chromosome fusion, the fused chromosomes of cen10∆-A-L and cen10∆-B-L lost the gene CNBG_6141, which is located in the 3’ subtelomeric region of chromosome 10. Genes present in the fused chromosome are depicted in green, and genes lost after chromosome fusion are indicated in red. Gray highlights indicate regions present in both the parental and fused chromosomes. Each fusion occurred in a unique nonrepetitive region. (A) cen10∆-A-L1, the fusion occurred between chromosome 10 and chromosome 4. (B) In cen10∆-B-L1, chromosomal fusion occurred between chromosomes 10 and 7. (C) cen10∆-E-L1 chromosomal fusion occurred between chromosomes 10 and 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Sequence reads were mapped back to the de novo cen10∆ genome assemblies to verify the quality of the de novo cen10∆ mutant genome assemblies. For each panel the full length of the scaffold, which includes the fusion point, and a 100 bp detailed region is shown. Sequences homologous to chromosome 10 are depicted in blue and sequence reads mapped back to the de novo genome assemblies are shown in grey. (A) The de novo genome assembly of cen10∆-A-L1 contains a scaffold (~211 kb) of a fused chromosome and this scaffold consists of an 81.97 kb region of chromosome 10 (blue) and a 129.38 kb region of chromosome 4 (green). The sequence coverage of this scaffold is 104 fold. The chromosome fusion occurred with a 2 bp overlap between chromosome 4 and 10. (B) The de novo genome assembly of cen10∆-B-L1 contains a scaffold (~886 kb) and consists of an 80.46 kb region of chromosome 10 (blue) and an 806.09 kb region of chromosome 7 (red). The fusion point lacks overlap between chromosomes 7 and 10. The sequence coverage of this scaffold is 104 fold. (C) The de novo genome assembly of cen10∆-E-L1 consists of a scaffold (~585 kb) of a fused chromosome and this scaffold consists of an 83.59 kb region of chromosome 10 (blue) and 501.37 kb of chromosome 1 (pink). The sequence coverage of this scaffold is 140 fold. The chromosome fusion occurred with a 6 bp overlap between chromosome 1 and 10. (D) PCR confirmation of the chromosome fusion occurring in the large colonies derived from cen10∆-B, cen10∆-C, and cen10∆-A. For each chromosomal fusion, a PCR spanning the fusion was performed. For each chromosome fusion, PCRs were performed for: 1) a large colony derived from the cen10∆ mutant, 2) the original cen10∆ mutant, 3) a small colony derived from growth at 37°C, and 4) the wild type.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56026/elife-56026-fig6-v2.jpg)
 
@@ -91,7 +475,7 @@ In addition to cen10∆-A, -B, and -E mutants, whole-genome sequencing was perfo
 
 ## Discussion
 
-## Composition of neocentromeres in C. deuterogattii
+### Composition of neocentromeres in C. deuterogattii
 
 The native centromeres of C. deuterogattii are found in repetitive regions and are flanked by, but do not contain, protein-encoding genes (Yadav et al., 2018). By contrast, neocentromeres of C. deuterogattii span genes, lack repetitive elements, and like the native centromeres, are flanked by genes. In general (with one exception), the neocentromeres of C. deuterogattii are significantly shorter than the native centromeres, whereas most neocentromeres in other species have similar lengths as the native centromeres.
 
@@ -99,7 +483,7 @@ Native centromeres of S. pombe have a central core that is enriched with CENP-A 
 
 Several C. deuterogattii neocentromeres formed in the same location; however, there is no apparent consensus between the different regions occupied by different neocentromeres. A similar trend has been observed in neocentromere formation in C. albicans (Ketel et al., 2009). Evolutionary new centromeres (ECNs) in the ﻿largest crucifer tribe Arabideae originated several times independently and are located in the same chromosomal location (Mandáková et al., 2020). Our results suggest that neocentromeres form by mechanisms that do not rely on nearby transposable elements/repeats to initiate de novo centromere assembly.
 
-## Neocentromeric genes are expressed
+### Neocentromeric genes are expressed
 
 Neocentromeres induced in several species can span genes, resulting in silencing or reduced gene expression. For example, all genes within five independent neocentromeres in C. albicans that spanned nine genes were suppressed (Burrack et al., 2016). In S. pombe, neocentromeres span genes that are only expressed in response to nitrogen starvation in the wild-type strain, and neocentromere formation silences these genes during nitrogen starvation (Ishii et al., 2008). The native centromere 8 of rice contains an approximately 750 kb CENP-A-enriched region with four genes that are expressed in both leaf and root tissues of three closely related species (Fan et al., 2011; Nagaki et al., 2004). Neocentromeres of rice span genes that are expressed at similar levels as in the wild type (Zhang et al., 2013). Chicken neocentromeres have been induced on chromosome Z or 5 (Shang et al., 2013). Chromosome Z neocentromeres span eight genes, but in wild-type cells only MAMDC2 is expressed during normal growth. The other seven genes were either not expressed at any detectable level in all tested developmental stages or were only expressed during early embryonic stages (Shang et al., 2013). When a neocentromere formed, expression of the MAMDC2-encoding gene was reduced 20- to 100-fold. Chromosome 5 of chickens is diploid, and neocentromeres on this chromosome span genes that are expressed. The hypothesis behind this phenomenon is that one allele functions as a centromere, while the other allele codes for the genes.
 
@@ -111,21 +495,21 @@ Of the C. deuterogattii genes spanned by the neocentromere region, one encodes t
 
 Compared with other haploid fungi, the neocentromeric genes of C. deuterogattii are similar to the native centromeric genes of the haploid plant pathogenic fungus ﻿Zymoseptoria tritici. Z. tritici has short regional centromeres with an average size of 10.3 kb, and 18 out of 21 native centromeres have a total of 39 expressed genes (Schotanus et al., 2015).
 
-## cen10∆ mutants with two CENP-A-enriched regions
+### cen10∆ mutants with two CENP-A-enriched regions
 
 The appearance of two CENP-A-enriched regions of C. deuterogattii cen10∆ mutants could be explained in a few ways. First, neocentromere formation could lead to a dicentric chromosome 10 in which the centromeres may differ in functional capacity. Dicentric chromosomes are not by definition unstable, for example the dominant-negative mutation of the mammalian telomere protein TRF2 results in chromosome fusions, leading to the formation of dicentric chromosomes (Stimpson et al., 2010). The formation of dicentric chromosomes occurred in 97% of the fused mammalian chromosomes, which were stable for ﻿at least 180 cell divisions (Stimpson et al., 2010). Several microscopic studies showed that chromosomes with two regions of centromere-protein enrichment are stable (Higgins et al., 2005; Stimpson et al., 2012; Stimpson et al., 2010; Sullivan and Willard, 1998). This suggests that a dineocentric chromosome 10 could be stable in the population. Second, the two CENP-A-enriched peaks could be the result of a mixed population and either due to an unstable primary neocentromere and/or aneuploidy. The primary neocentromere could be associated with the majority of the cells, whereas the secondary CENP-A peak would be only found in a small number of cells (and the primary neocentromere is lost in these isolates). This is reflected by lower CENP-A enrichment for the secondary peak, and the hypothesis of putative dicentrics is due to a mixture of alleles in the population. Third, the neocentromeres could be unstable, which could lead to the formation of two CENP-A-enriched regions with centromere function switching between the regions. However, our data would argue against this latter model. Prior to the ChIP-seq analysis of the cen10∆ mutants, colonies were isolated by streak purification (eight times), suggesting that the presence of two distinct CENP-A peaks occurs continuously.
 
-## cen10∆ mutants are partially aneuploid
+### cen10∆ mutants are partially aneuploid
 
 Neocentromere formation in chickens results in a low number of aneuploid cells (Shang et al., 2013). Based on whole-genome sequencing of a population of cells, the C. deuterogattii cen10∆ isolates are partially aneuploid for chromosome 10. For fully aneuploid isolates, the coverage of Illumina reads is expected to be 2-fold; the cen10∆ isolates with two CENP-A peaks showed aneuploidy levels up to 1.28-fold or were even euploid. This suggests that, like the chicken neocentromeric isolates, only a small number of cells in a population of C. deuterogattii cen10∆ isolates are aneuploid.
 
-## cen10∆ mutants have reduced fitness
+### cen10∆ mutants have reduced fitness
 
 In C. albicans, deletion of centromere 5 results in neocentromere formation, and these isolates have fitness similar to the wild-type strain (Ketel et al., 2009). Similar results were reported for neocentromeres in chicken and S. pombe, in which strains with neocentromeres or chromosome fusion have a growth rate similar to the wild-type strain (Ishii et al., 2008; Shang et al., 2013).
 
 If centromere deletions occurred in nature, we hypothesize that the wild type would outcompete all of the cen∆ isolates. The virulence of the cen∆ mutants was not assayed. Based on reduced fitness of the cen∆ mutants, we hypothesize that pathogenicity of the cen∆ mutants would be lower than the wild type. However, when chromosome fusion occurs the growth rate is restored to a near wild-type level and we hypothesize that the isolates with 13 chromosomes could have virulence similar to the wild type. Several genes were lost due to the fusion events in the cen∆ mutants; to our knowledge these lost genes have not been associated with pathogenicity of C. deuterogattii.
 
-## Neocentromere stains exhibit impaired growth and chromosome fusion restores wild-type growth at elevated temperatures
+### Neocentromere stains exhibit impaired growth and chromosome fusion restores wild-type growth at elevated temperatures
 
 Deletion of a centromere in S. pombe leads to either neocentromere formation or chromosome fusion due to a noncanonical homologous recombination pathway (Ishii et al., 2008; Ohno et al., 2016). This is in contrast to neocentromere formation in C. deuterogattii, which results in 100% neocentromere formation. Based on PFGE analysis, the karyotype of the cenΔ isolates is wild type at 30°C, but chromosome fusion can occur at 37°C within the cen10∆ mutants and lead to improved growth at 30°C.
 
@@ -137,7 +521,7 @@ A prominent chromosome fusion occurred during the speciation of humans. Compared
 
 Another example of telomeric fusions is the presence of ITS regions in several genomes. In budding yeast, the experimental introduction of an ITS into an intron of the URA3 gene resulted in four classes of chromosome rearrangements, including: 1) inversion, 2) gene conversion, 3) mini-chromosome formation due to deletion or duplication, and 4) mini-chromosome formation due to translocation (Aksenova et al., 2013). Based on our de novo genome assemblies of the C. deuterogattii large-colony cen10∆ mutants, chromosome fusions occurred with no signs of chromosome rearrangements. Thus, these chromosome fusions did not produce ITS regions, which would otherwise destabilize the genome.
 
-## Conclusions
+### Conclusions
 
 Our work shows that, like in other model systems, neocentromeres can be induced in C. deuterogattii. However, C. deuterogattii neocentromeres have several unique characteristics, such as spanning genes whose expression is unaffected by centromere assembly. In some instances, deletion of CEN10 led to chromosome fusion, resulting in enhanced fitness and leading to inactivation of the neocentromere. Presumably, deletion of other centromeres could be carried out, leading to a C. deuterogattii strain with only one or a few chromosomes, as was recently reported in S. cerevisiae (Luo et al., 2018; Shao et al., 2018).
 
@@ -145,36 +529,410 @@ Our work shows that, like in other model systems, neocentromeres can be induced 
 
 Key Resources Table Template and Guidelines.
 
-## Strains, primers, and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>R265</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-A</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 10 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-B</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 10 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-C</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 10 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-D</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 10 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-E</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 10 deletion mutant with expressingmCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-F</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 10 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-G</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 10 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-A-S1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10A deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-A-L1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Large colony derived from R265 centromere 10A deletion mutant with expressingmCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-B-S1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10B deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-B-S2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10B deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-B-S3</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10B deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-B-L1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Large colony derived from R265 centromere 10B deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-B-L2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Large colony derived from R265 centromere 10B deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-C-S1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10C deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-C-S2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10C deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-C-S3</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10C deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-C-L1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Large colony derived from R265 centromere 10C deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-C-L2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Large colony derived from R265 centromere 10C deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-E-S1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10E deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-E-S2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10E deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-E-S3</td>
+      <td>This study</td>
+      <td></td>
+      <td>Small colony derived from R265 centromere 10E deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-E-L1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Large colony derived from R265 centromere 10E deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-E-L2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Large colony derived from R265 centromere 10E deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-A</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 9 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-B</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 9 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-C</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 9 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-D</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 9 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-E</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 9 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-F</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 centromere 9 deletion mutant with expressing mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>R265 MIS12</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 expressing GFP-MIS12 and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-A MIS12</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 10 mutant with expressing GFP-MIS12 and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-B MIS12</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 10 mutant with expressing GFP-MIS12 and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-C MIS12</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 10 mutant with expressing GFP-MIS12 and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-D MIS12</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 10 mutant with expressing GFP-MIS12 and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen10△-E MIS12</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 10 mutant with expressing GFP-MIS12 and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>R265 CENPC</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 with expressing GFP-CENPC and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-A CENPC</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 9 mutant with expressing GFP-CENPC and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-B CENPC</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 9 mutant with expressing GFP-CENPC andmCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-C CENPC</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 9 mutant with expressing GFP-CENPC andmCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-D CENPC</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 9 mutant with expressing GFP-CENPC and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Cryptococcus deuterogattii</td>
+      <td>cen9△-E CENPC</td>
+      <td>This study</td>
+      <td></td>
+      <td>R265 Centromere 9 mutant with expressing GFP-CENPC and mCherry-CENPA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry antibody(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. no. ab183628</td>
+      <td>ChIP (1/5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal) antibody</td>
+      <td>Abcam</td>
+      <td>Cat. no. ab290</td>
+      <td>ChIP (5 µg for 1 µg of chromatin)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein A for Immunoprecipitation</td>
+      <td>Invitrogen</td>
+      <td>Cat. no. 10001D</td>
+      <td>ChIP (20 µl per500 µl fraction)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead, 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spades</td>
+      <td>Bankevich et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGV</td>
+      <td>Thorvaldsdóttir et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>Pertea et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>List of primers used in this study</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>In Supplementary file 4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains, primers, and culture conditions
 
 Primers are listed in Supplementary file 4. Strains used in this study are listed in Supplementary file 5. All strains were stored in glycerol at −80°C, inoculated on solid YPD (yeast extract, peptone, and dextrose) media, and grown for two days at 30°C. Liquid YPD cultures were inoculated from single colonies of solid media and grown, while shaking, at 30°C overnight.
 
-## Genetic manipulations
+### Genetic manipulations
 
 DNA sequences (1 to 1.5 kb) of the CEN10-flanking regions were PCR-amplified with Phusion High-Fidelity DNA Polymerase (NEB, Ipswich MA, USA). Flanking regions were fused on both sides of either the NEO or NAT dominant selectable marker via overlap PCR, conferring G418 or nourseothricin resistance, respectively. Deletion of C. deuterogattii CEN10 was achieved through homologous recombination via biolistic introduction of an overlap-PCR product as previously described (Billmyre et al., 2017; Davidson et al., 2002). Deletion of CEN9 was performed by CRISPR-CAS9 mediated transformation with two guide RNAs flanking CEN9 and homologous recombination was mediated by the introduction of an overlap PCR product as previously described (Fan and Lin, 2018). Transformants were selected on YPD medium containing G418 (200 μg/mL) or nourseothricin (100 μg/mL).
 
 Subsequently, the 5’ junction, 3’ junction, and spanning PCR and Southern blot analyses were performed to confirm the correct replacement of CEN10 by the appropriate drug resistance marker. To identify centromeres, the gene CNBG_0491, which encodes CENP-A, was N-terminally fused to the gene encoding the fluorescent mCherry protein by overlap PCR, and C. deuterogattii strains were biolistically transformed as previously described (Billmyre et al., 2017). A subset of cen9∆ mutants were biolistically transformed with an overlap PCR product containing CENPC C-terminally fused with GFP. As three cen10∆ mutants have a neocentromere that spans the gene encoding CENPC, a subset of cen10∆ mutants were transformed instead with an overlap PCR product containing MIS12 C-terminally fused with GFP. Both PCR products encoding CENPC-GFP and MIS12-GFP were randomly integrated in the genome and confirmed by a PCR spanning either CENPC-GFP or MIS12-GFP.
 
-## Growth and competition assays
+### Growth and competition assays
 
 Three replicate cultures for seven independent cen10∆ deletion mutants and the wild-type strain were grown in liquid YPD at 30°C overnight. Cells were diluted to an OD600 of 0.01 and grown in 50 mL YPD at 30°C. The OD600 of the triplicate cultures was measured every two hours with a SmartSpec 3000 (BioRad) until stationary phase was reached (T = 22 hr).
 
 For competition assays, three independent replicate cultures (cen9∆, cen10∆, control, and wild type) were grown overnight in 8 mL YPD. Subsequently, the cell density of the cultures was determined using a hemocytometer. For each independent cenΔ deletion mutant, 500,000 cells were co-cultured in a 1:1 ratio with wild-type cells. After 24 hr, the cultures were inoculated on 1) a YPD plate to determine the total colony-forming units (CFUs) and 2) a YPD plate containing G418 or nourseothricin to calculate the proportion of cen10∆ mutant CFUs compared to the wild-type CFUs. Plates were incubated at 30°C and the colonies were counted after 4 days. The cell morphology of >1000 cells of the wild type and of five cen10∆ mutant strains was analyzed, and the number of elongated cells was quantified (Figure 1—figure supplement 5).
 
-## Whole-genome sequencing, read mapping for aneuploidy/RNA-seq, and de novo genome assemblies
+### Whole-genome sequencing, read mapping for aneuploidy/RNA-seq, and de novo genome assemblies
 
 Genomic DNA was isolated using the CTAB protocol and sent to the Duke University Sequencing and Genomic Technologies Shared Resource facility for library preparation and Illumina sequencing. Sequencing was performed with a HiSeq 4000 sequencer, and 150 bp paired-end reads were generated. The resulting DNA sequence reads were trimmed, quality-filtered, and subsequently mapped with Bowtie2 to a complete PacBio, Nanopore-based, Illumina Pilon-corrected, whole-genome assembly of the C. deuterogattii R265 reference genome (version R265_fin_nuclear). Reads were visualized with IGV (Langmead, 2010; Quinlan and Hall, 2010; Thorvaldsdóttir et al., 2013; Yadav et al., 2018). Previously generated RNA sequencing reads (NCBI, SRA: ﻿SRR5209627) were remapped to the C. deuterogattii R265 reference genome by ﻿HISAT2 according to the default settings (Schneider et al., 2012; Pertea et al., 2016).
 
 Genomes were de novo assembled with Spades using the default conditions (Bankevich et al., 2012). Genome assemblies were confirmed with PCRs using primers flanking the chromosome fusions and the PCR products obtained span the chromosomal fusions (Figure 5—figure supplement 1). The read coverage at chromosome fusions was analyzed and compared to the average read coverage of the contig (Figure 5—figure supplement 1).
 
-## Chromatin immunoprecipitation (ChIP) followed by high-throughput sequencing or qPCR
+### Chromatin immunoprecipitation (ChIP) followed by high-throughput sequencing or qPCR
 
 ChIP analyses were performed as previously described with minor modifications (Schotanus et al., 2015; Soyer et al., 2015). In short, 500 mL YPD cultures (1000 ml YPD for Mis12 ChIPs) were grown overnight at 30°C, after which 37% formaldehyde was added to a final concentration of ﻿0.5% for crosslinking. The cultures were then incubated for 15 min, formaldehyde was quenched with 2.5 M glycine (1/20 vol), and cells were washed with cold PBS. The crosslinking time of Mis12-GFP tagged isolates was extended to 45 min. Cells were resuspended in chromatin buffer (50 mM HEPES-NaOH, pH 7.5; 20 mM NaCl; 1 mM Na-EDTA, pH 8.0; 1% [v/v] Triton X-100; 0.1% [w/v] sodium deoxycholate [DOC]) containing protease ﻿inhibitors (cOmplet Tablets, mini EDTA-free EASYpack, Roche), followed by homogenization by bead beating with a miniBead beater (BioSpec products) using 18 cycles of 1.5 min on and 1.5 min off. The supernatant containing chromatin was sheared by sonication (24 cycles of 15 s on, 15 s off, burst at high level) (Bioruptor UCD-200, Diagenode). Chromatin was isolated by centrifugation, and the supernatant was divided into a sample fraction and a sonication control. The sample fraction was precleared with protein-A beads (1 to 3 hr) and subsequently divided into two aliquots. One tube served as the input control, and a mCherry or GFP antibody (MCherry: ab183628, Abcam, GFP: ab290, Abcam) was added to the remaining half of the sample. The samples were incubated overnight at 4°C and then processed according to a previously published protocol (Soyer et al., 2015). After completing the ChIP experiment, the samples were analyzed by ChIP-qPCR or sent to the Duke University Sequencing and Genomic Technologies Shared Resource facility for library preparation and Illumina sequencing. Samples cen10∆-A, cen10∆-B and cen10∆-C were sequenced with a HiSeq 2500 sequencer, and single reads of 50 bp were obtained. All other ChIP-seq samples were sequenced with a NovaSeq 600 sequencer and 50 bp PE reads were obtained. For each centromere mutant and the wild type, a ChIPed and input sample were sequenced. Reads were mapped to the reference genome, similar to the whole-genome sequencing reads. To analyze the ChIP-seq data the ChIPed sample was normalized with the input sample and visualized with the IGV viewer.
 
-## RNA isolation and qPCRs
+### RNA isolation and qPCRs
 
 Cells were grown in an overnight culture of 25 mL YPD at 30°C. RNA was isolated with TRIzol LS (Thermo Fisher Scientific) according to the manufacturer’s instructions. Subsequently, cDNA was synthesized with the SuperScriptFirst-Strand Synthesis System (Thermo Fisher Scientific) according to the manufacturer’s instructions. qPCRs were performed in triplicate with Brilliant III Ultra-Fast SYBR Green qPCR Master Mix (Agilent Technologies) on an ABI 1900HT qPCR machine.
 
-## Pulsed-field gel electrophoresis (PFGE)
+### Pulsed-field gel electrophoresis (PFGE)
 
 Isolation of whole chromosomes and conditions for PFGE and chromoblot analysis were performed as previously described (Findley et al., 2012).

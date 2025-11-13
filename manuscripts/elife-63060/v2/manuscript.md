@@ -38,15 +38,41 @@ Here, we describe the development and characterization of a highly specific anti
 
 ## Results
 
-## Design, specificity, and expression of F7L6
+### Design, specificity, and expression of F7L6
 
 WNT/β-catenin signaling is initiated by WNT binding to and heterodimerizing the cell surface receptors FZD and either LRP5 or LRP6. To study the role of one specific FZD protein, FZD7, which is highly expressed in hPS cells (Fernandez et al., 2014; Melchior et al., 2008), we developed a bispecific binder to human FZD7 and LRP6, called F7L6. We generated a single-chain variable fragment (scFv) to FZD7 by repurposing the variable region of our FZD7-targeting antibody (F7-Ab), a chimeric human/mouse IgG1. This antibody was derived from a bacterially produced antigen binding fragment (Fab) described in a previous study (Fernandez et al., 2014). In parallel, we engineered an scFv to the third β-propeller domain of LRP6 based on previously published LRP6 antibodies (Ettenberg et al., 2010). We then engineered F7L6 by conjugating the FZD7-scFv and LRP6-scFv to a human IgG1 Fc to create the FZD7-specific Wnt mimetic F7L6 (complete amino acid sequence is provided in Figure 1—figure supplement 1). Additionally, we generated a FZD7-scFv-Fc (F7) and an LRP6-scFv-Fc (L6) (Figure 1A). We confirmed secretion of F7-Ab, F7, L6, and F7L6 from CHO cells by SDS-PAGE and Coomassie Blue staining and immunoblotting (Figure 1B). Using a dot blot with lysates of HEK293T cells carrying loss-of-function mutations in FZD1, 2, and 7 (F127-KO) (Voloshanenko et al., 2017) or in LRP6 (LRP6-KO) (Grainger et al., 2019) confirmed binding specificity of each of these molecules. FZD7-specific binders (F7 and F7L6) only reacted with lysates upon FZD7 overexpression (note that endogenous FZD7 expression in LRP6 KO is below the level of detection), whereas LRP6-specific binders (L6 and F7L6) only reacted with lysates of cells expressing LRP6 (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of FZD7- and LRP6-specific binders. Red blocks depict the variable light (VL) and heavy (VH) antibody domains that recognize FZD7 and were fused to form the single-chain variable fragment (scFv) in F7 and F7L6. Purple blocks depict the scFv that recognizes LRP6 and is used in L6 and F7L6. (B) Expression of FZD7- and LRP-specific binders. Transgenes encoding F7-Ab, F7, L6, and F7L6 were stably transduced in CHO cells. Recombinant proteins were harvested and purified from conditioned media and detected by Coomassie Blue staining (upper) and anti-human-Fc immunoblot (lower). (C) Binding specificity of F7, L6, and F7L6. HEK293T carrying mutations in FZD1, 2, and 7 (F127-KO) or in LRP6 (LRP6-KO) were transfected with FZD7 and LRP6, respectively, and whole cell lysates were probed in a dot blot format with conditioned media containing F7, L6, or F7L6. As a negative control (Mock), blots were incubated with CM from untransfected CHO cells. (D) Schematic of FZD7 and amino acid alignment of the extracellular ‘neck’ region of hFZD7 and mFzd7. The dashed oval indicates the neck region. The red box in the amino acid sequences indicates amino acid position 188. (E) HEK293T cells were transiently transfected with the indicated V5-tagged transgenes, and cell lysates were probed with either F7-Ab or V5 antibody (α-V5). Mock = untransfected cells. (F) Mapping F7-Ab epitope to an eight amino acid sequence. Bacterial lysates containing fusion proteins between GST and the FZD7 peptide sequences indicated in the table were detected by Coomassie staining (top) or by immunoblotting with F7-Ab (bottom). Abbreviations in table: aa188, amino acid at position 188; aa#, number of amino acids in FZD7 peptide; L, leucine; P, proline. (G) F7-Ab is specific to human FZD7 and does not cross-react with the other nine FZDs (1-6, 8-10). F127-KO were transfected with expression constructs carrying the indicated human FZD cDNAs tagged with an intracellular V5 sequence. Non-permeabilized cells were stained with F7-Ab for cell-surface FZD expression, and then permeabilized and stained for V5 expression. All FZD receptors were expressed as revealed by anti-V5 antibody staining.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bar = 10 microns.
+
 To further characterize the specificity of F7-Ab, we mapped its binding site to the ‘neck’ region between the cysteine-rich domain (CRD) and the first transmembrane domain of FZD7 (Figure 1D). Despite the high degree of homology between human and mouse Fzd7 (hFZD7 and mFzd7, respectively), F7-Ab only reacts with hFZD7 (Figure 1E). Protein alignment (Figure 1D) indicated that this neck region was the only extracellular portion harboring differences between hFZD7 and mFzd7 (disregarding the amino-terminal signal sequence). A single amino acid change at position 188 from leucine to proline (P188) renders hFZD7 non-reactive to F7-Ab, whereas the corresponding amino acid change in mFzd7 (L188) restores F7-Ab reactivity (Figure 1E). Using fusion proteins between glutathione S-transferase (GST) and the FZD7 neck region followed by sequential shortening of the neck region, we mapped the F7-Ab epitope to an eight amino acid stretch containing L188 (Figure 1F). Since FZD proteins are highly conserved and several available FZD antibodies react with multiple FZD proteins (for example, OMP-18R5/Vantictumab reacts with FZD1, 2, 5, 7, and 8), we confirmed that F7-Ab does not cross-react with the other nine human FZD receptors (FZD1-6, 8–10) (Figure 1G). To rule out the possibility that some FZDs fail to react with F7-Ab because they do not reach the cell surface, we performed confocal microscopy. This analysis confirmed that all FZD proteins were expressed on the cell surface (Figure 1—figure supplement 2). Taken together, F7-Ab, and hence F7 and F7L6, are specific to hFZD7 and do not cross-react with any of the other nine human FZD proteins or with mFzd7.
 
-## F7L6 activates Wnt/β-catenin signaling
+### F7L6 activates Wnt/β-catenin signaling
 
 The bispecific binder, F7L6, activates WNT/β-catenin signaling by heterodimerizing FZD7 and LRP6 (Figure 2A). We confirmed F7L6 signaling activity using HEK293T cells stably transfected with the WNT reporter Super TOP-Flash (STF) (Veeman et al., 2003; Figure 2B). As expected, single binders to FZD7 (F7) or LRP6 (L6) did not activate signaling. As is the case with native WNT proteins, activity of F7L6 is potently augmented by addition of R-Spondin1 (RSPO1) (Kim et al., 2008; Figure 2C) with potency in the single-digit nanomolar range. Interestingly, addition of RSPO1 increased F7L6 activity approximately 10-fold, but only augmented the activities of Wnt3a or FLAg FP+P-L1+3, a previously published WNT mimetic (Tao et al., 2019), by twofold (Figure 2—figure supplement 1). A possible reason for this distinction is that F7L6 is selective for FZD7, whereas Wnt3a and FLAg FP+P-L1+3 are capable of interacting with multiple FZDs. Furthermore, both Wnt mimetics retain significant activity at sub-nanomolar concentrations, whereas Wnt3a’s activity is undetectable at such concentrations.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the proposed mechanism of action of F7L6 through the heterodimerization of FZD7 and LRP6 at the cell surface. (B) F7L6 activation of the WNT signaling pathway was evaluated using a luciferase-based WNT reporter (Super TOP-Flash, STF) assay. HEK293T stably transduced with the WNT reporter Super TOP-Flash (STF) were treated with indicated conditioned media for 24 hr and then assayed for luciferase activity. (C) F7L6 signaling activity is augmented by RSPO1. HEK293T:STF cells were treated with the indicated concentrations of F7L6 in the presence or absence of RSPO1 (100 ng/mL) for 24 hr and then assayed for luciferase activity (RLU = relative light units). (D) F7L6 activates signaling independently of the WNT-binding cysteine-rich domain (CRD). F127-KO cells carrying the STF reporter were transfected with expression plasmids carrying wildtype FZD7 or CRD-less FZD7, treated with Wnt3a or F7L6 for 24 hr and then assayed for luciferase activity. Inset illustrates FZD7 lacking the CRD. (E) F7L6 activates FZD2 tagged with the eight-amino acid epitope of FZD7. F127-KO cells carrying the STF reporter were transfected with expression plasmids carrying wildtype FZD2 or FZD2-8aa, treated with Wnt3a or F7L6 for 24 hr and then assayed for luciferase activity. Inset illustrates FZD2 (blue) with the eight-amino acid FZD7 tag (red). (F) F7L6 leads to β-catenin stabilization in mouse L-cells expressing human FZD7. Untransfected (L) or FZD7-expressing (L-FZD7) L-cells were treated with 10 nM F7L6 or Wnt3a for 3 hr. Cell lysates were immunoblotted for β-catenin and FZD7. Blotting for β-actin served as a loading control. (G) F7L6 leads to β-catenin stabilization in a time-dependent manner. L and L-FZD7 cells were treated with 10 nM Wnt3a or F7L6 for the indicated times, and cell lysates were immunoblotted for β-catenin. Blotting for β-actin served as a loading control. (H) F7L6 activates SP5 expression in hPS cells in a dose-dependent manner. H1/WA01 cells were treated with the indicated doses of F7L6 or Wnt3a for 24 hr. RNA was analyzed by qRT-PCR. Data represented as mean ± SEM for three technical replicates, with a nonlinear regression curve. All samples were normalized to the 0 nM (buffer) control. (I) Bivalent and tetravalent Wnt mimetics activate Wnt signaling. HEK293T:STF cells were treated with indicated concentrations of either F7L6 (tetravalent) or F7L6-sc (bivalent) in the presence of RSPO1 (100 ng/mL) for 24 hr and then assayed for luciferase activity (RLU = relative light units). For all statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test: ****p≤0.0001, *p≤0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** HEK293T:STF cells were treated with the indicated concentrations of FLAgP+P-L61+3 or Wnt3a in the presence or absence of RSPO1 (100 ng/mL) for 24 hr and then assayed for luciferase activity (RLU = relative light units).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** F7L6 activates Wnt target gene SP5 in human pluripotent stem cells in a dose-dependent manner. H9/WA09 cells were treated with the indicated doses of F7L6 or Wnt3a for 24 hr. RNA was analyzed by qRT-PCR. Data represented as mean ± SEM for three technical replicates, with a nonlinear regression curve. All samples were normalized to the 0 nM (buffer) control.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Purified Wnt mimetics F7L6 and F7L6-sc were fractionated on a Superdex 200 column. Fractions were assayed by SDS-PAGE followed by Coomassie staining and by activation of the STF reporter in HEK293T cells.
 
 In contrast to WNT, which binds to the CRD of FZD (Janda et al., 2012), F7L6 binds to the neck region between the CRD and first transmembrane domain, allowing us to assess the requirement of the CRD in signaling. Interestingly, FZD7 lacking the CRD (CRD-less FZD7) activates signaling when heterodimerized to LRP6 with F7L6 while Wnt3a does not (Figure 2D), indicating that the CRD is dispensable for signaling. Furthermore, appending the F7-Ab epitope of eight amino acids (see Figure 1F) onto another FZD, FZD2, is sufficient for F7L6 to activate WNT/β-catenin signaling through FZD2 (Figure 2E). These data establish that heterodimerization of FZD7 or FZD2 with LRP6 is sufficient for pathway activation.
 
@@ -54,11 +80,23 @@ Treatment of mouse L-cells with Wnt3a activates downstream signaling, as assayed
 
 F7L6 is a bispecific bivalent (or tetravalent) molecule, potentially capable of simultaneously engaging two FZD7 and two LRP6 molecules, thus leading to receptor oligomerization, which has been proposed to promote intracellular signalosome formation (DeBruine et al., 2017). To address whether FZD7-LRP6 heterodimerization alone is sufficient for signaling, we deleted the Fc portion to generate a single-chain F7L6 (F7L6-sc) that is predicted to engage one FZD7 and one LRP6 receptor. F7L6-sc activated Wnt signaling, albeit to a lesser extent than the tetravalent F7L6 protein (Figure 2I). Interestingly, the maximal response in the STF assay for F7L6 was approximately twice that for F7L6-sc. Size exclusion chromatography confirmed that F7L6-sc is monomeric in solution and does not form larger oligomers (Figure 2—figure supplement 3). These data demonstrate that a 1:1 association of FZD7 and LRP6 is sufficient to activate downstream signaling.
 
-## Differential effects of F7L6, Wnt3a, and CHIR on gene expression in hPS cells
+### Differential effects of F7L6, Wnt3a, and CHIR on gene expression in hPS cells
 
 Previous studies have shown that modulating WNT/β-catenin signaling is crucial for differentiation of hPS cells into mesendoderm and DE (D'Amour et al., 2006; Huggins et al., 2017; Jiang et al., 2013; Martyn et al., 2018; Yoney et al., 2018). Wnt3a and GSK3-inhibitors (e.g. CHIR99021, CHIR98014, BIO, Li) (Klein and Melton, 1996; Ring et al., 2003; Sato et al., 2004; Stambolic et al., 1996) are frequently used interchangeably as WNT pathway activators in these differentiation protocols (Gertow et al., 2013; Huang et al., 2017; Kumar et al., 2015; Loh et al., 2014; Naujok et al., 2014; Teo et al., 2014). Although Wnt3a is an established activator of WNT/β-catenin signaling, relatively little is known about the receptors that promote WNT-driven differentiation of hPS cells. We hypothesized that FZD7 mediates this process, because it transduces the Wnt3a signal (Dijksterhuis et al., 2015; Voloshanenko et al., 2017) and regulates the pluripotent state (Fernandez et al., 2014; Melchior et al., 2008). Here, we used F7L6 to selectively activate FZD7 signaling in hPS cells and analyzed global changes in gene expression by RNA sequencing (RNA-seq). We also examined the temporal kinetics of gene expression changes in response to a single, continuous dose of F7L6, Wnt3a, or CHIR98014 (CHIR) treatment.
 
 Clustering of significantly differentially expressed genes (1814 genes, Figure 3—figure supplement 1, Supplementary file 1A) according to change in percent maximum reads per kilobase per million mapped reads (RPKM) revealed distinct waves and classes of gene expression, including activation of many known Wnt pathway genes (Figure 3A), activation of mesendodermal and endodermal genes, and downregulation of pluripotency- and ectoderm-associated genes (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig3-v2.jpg)
+
+**Figure 3.:** hPS cells (H1/WA01) were treated with 5 nM F7L6 or Wnt3a, or 250 nM CHIR98014 (CHIR) for the indicated hours. RNA was isolated and analyzed by RNA-seq. Significant differential gene expression was defined as a 1.75-fold increase or decrease in RPKM compared to the 0 hr (buffer) control. Expression is represented as percent maximum RPKM (0, white; 100, blue;≥100, pink). RPKM for each gene was normalized to the maximum RPKM across F7L6 and Wnt3a treatment groups. Supplementary Data 1 provides complete gene list. (A) Heat map of Wnt target genes changed in response to F7L6, Wnt3a, or CHIR. (B) Heat map of changed genes associated with mesendoderm and primitive/definitive endoderm differentiation, and pluripotency and neural differentiation. F7L6 promotes mesendodermal differentiation, similarly to Wnt3a.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Heat map of 1814 significantly differentially expressed genes in response to F7L6, Wnt3a, and/or CHIR98014 (CHIR) treatments in hPS cells (H1/WA01). Cells were treated with 5 nM F7L6 or Wnt3a, or 250 nM CHIR98014 (CHIR) for the indicated hours, and RNA was isolated and analyzed by RNA-seq. Data are represented as percent maximum RPKM (0, white; 100, blue;≥100, pink). Supplementary file 1A provides the complete gene list.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** H1/WA01 cells were treated with 5 nM F7L6 or Wnt3a, or 250 nM CHIR for the indicated hours. RNA was isolated and analyzed by RT-qPCR for FOXA2 and SOX17. Data represented as mean ± SEM for two independent experiments, three technical replicates each. All samples were normalized to the 0 hr (buffer) control. For statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test for significance of CHIR against F7L6 and Wnt3a at each time point: ****p≤0.0001.
 
 Gene expression changes in response to Wnt3a and F7L6 were overall highly similar, with robust activation of classic markers of mesendoderm (i.e. GSC, MIXL1, SP5 and T) and DE (i.e. LEFTY1, EOMES, CER1, FOXA2, CXCR4, and SOX17) and downregulation of pluripotency markers, such as POU3F1, FZD7, and PODXL (TRA-1–81). However, there were some notable differences between Wnt3a and F7L6 treatments. For example, induction of established WNT target genes, such as DKK1, AXIN2, WLS, WNT3, and NKD1, was more potent with Wnt3a than with F7L6. Also, induction of genes, such as T, SP5, GSC, and FOXA2, was slightly delayed for F7L6 relative to Wnt3a. These differences are potentially due to F7L6 solely engaging FZD7 and LRP6 to promote downstream signaling, while Wnt3a, in contrast, promotes signaling through multiple FZD-LRP5/6 heterodimers.
 
@@ -72,33 +110,37 @@ F7L6, Wnt3, and CHIR treatment significantly altered expression of 525, 708, and
 
 Importantly, GSEA of all genes altered by CHIR indicated enrichment in Neurogenesis (GO:0022008) and Neuron Differentiation (GO:0030182), both categories that were not among the top five GO terms for F7L6 and Wnt3a (Figure 4, Supplementary file 2B–D), indicating that CHIR treatment additionally promotes differentiation into ectodermal lineages. The 1009 differentially expressed genes unique to CHIR were additionally enriched in processes such as Biological Adhesion (GO:0022610), Locomotion (GO:0040011), Cell Junction (GO:0030054), and Positive Regulation Of Multicellular Organismal Process (GO:0051240) (Supplementary file 2E). In summary, our RNA-seq analyses confirmed that activation of FZD7 signaling by F7L6 was sufficient to modulate WNT target genes and induce expression of mesendoderm and DE differentiation in hPS cells. Overall, F7L6 and Wnt3a treatments induced similar (although not identical) patterns and temporal kinetics of gene expression, while CHIR caused much wider changes in global gene expression.
 
-## Early WNT target gene activation by F7L6 and Wnt3a in hPS cells
+### Early WNT target gene activation by F7L6 and Wnt3a in hPS cells
 
 As revealed by our RNA-seq analysis, selective FZD7 pathway activation elicits a complex program of gene expression. Recent studies have provided evidence that certain Wnts recruit additional receptors to the Fzd-Lrp5/6 complex to increase signaling specificity. For example, the cell surface proteins Reck and Gpr124 promote Wnt7 signaling through Fzd (Cho et al., 2017; Eubelen et al., 2018). Furthermore, Egfr promotes a specific interaction of Wnt9a with Fzd9 and Lrp5/6 (Grainger et al., 2019). Likewise, Wnt3a may recruit additional, and currently unknown, co-receptors to activate signaling in hPS cells. In contrast, owing to its design, our Wnt mimetic F7L6 only recruits FZD7 and LRP6. To confirm that Wnt3a and F7L6 promote similar downstream signaling events, we more closely examined early WNT target gene activation and identified groups of genes with maximal activation at 3 hr and at 6 hr upon Wnt3a treatment (Figure 5A and B, Supplementary file 3A and B). We used RT-qPCR to validate changes in expression of several genes within these clusters in response to Wnt3a and F7L6 over a 6-hr time course in hPS cells. Both Wnt3a and F7L6 activated these early target genes with similar kinetics, with expression of AXIN2, SOX9, and ARL4A at 3 hr (Figure 5C–E) and NKX1-2, NKD1 and FGF18 at 6 hr (Figure 5F–H). These findings support that heterodimerization of FZD7 and LRP6 by F7L6 is sufficient to elicit a transcriptional response in hPS cells similar to that elicited by Wnt3a and likely does not involve the recruitment of additional receptors.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig5-v2.jpg)
 
-**Figure 5.:** RNA-seq profiles of genes significantly activated at 3 hr (A) and 6 hr (B) in response to Wnt3a (5 nM) in H1/WA01 cells. Lists of genes are provided in Supplementary file 3 A and B. Validation of three target genes (AXIN2, SOX9, and ARL4A) maximally activated at 3 hr (C–E) and of three genes (NKX1-2, NKD1, and FGF18) maximally activated at 6 hr (F–G). H1 cells were treated with F7L6 or Wnt3a (each at 10 nM) for the indicated time and total RNA was analyzed by RT-qPCR. Gene expression was normalized to the expression of RPL13A. Data represented as mean ± SEM for two independent experiments, three technical replicates each. All samples were normalized to the 0 hr (buffer) control. For statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test for significance between F7L6 and Wnt3a treatments at each time point: ****p≤0.0001, ***p≤0.001, **p≤0.01, *p≤0.05.  Figure 5—source data 1.Figure 5.
+**Figure 5.:** RNA-seq profiles of genes significantly activated at 3 hr (A) and 6 hr (B) in response to Wnt3a (5 nM) in H1/WA01 cells. Lists of genes are provided in Supplementary file 3 A and B. Validation of three target genes (AXIN2, SOX9, and ARL4A) maximally activated at 3 hr (C–E) and of three genes (NKX1-2, NKD1, and FGF18) maximally activated at 6 hr (F–G). H1 cells were treated with F7L6 or Wnt3a (each at 10 nM) for the indicated time and total RNA was analyzed by RT-qPCR. Gene expression was normalized to the expression of RPL13A. Data represented as mean ± SEM for two independent experiments, three technical replicates each. All samples were normalized to the 0 hr (buffer) control. For statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test for significance between F7L6 and Wnt3a treatments at each time point: ****p≤0.0001, ***p≤0.001, **p≤0.01, *p≤0.05.
 
-## FZD7 activation promotes differentiation of hPS cells
+### FZD7 activation promotes differentiation of hPS cells
 
 Our RNA-Seq analysis indicated that F7L6, like Wnt3a, promotes mesendodermal differentiation. To monitor differentiation in real time, we employed human embryonic stem (hES) cells (H9/WA09) carrying reporter genes that mark meso- and endo-dermal differentiation: (1) for mesodermal differentiation, TBXT(T)-GFP, which harbors the gene encoding enhanced green fluorescent protein (eGFP) under control of the TBXT (T) promoter (Kita-Matsuo et al., 2009) and (2) for endodermal differentiation, SOX17-eGFP, which carries the eGFP gene in the SOX17 locus (Wang et al., 2011). We treated these reporter cell lines with a single, continuous dose of F7L6, Wnt3a or CHIR and monitored GFP expression for 5 days (Figure 6A). F7L6 potently activated expression of both reporters (Figure 6B,C, Figure 6—videos 1 and 2), with T-GFP expression first detectable at 24 hr (Figure 6B,D) and SOX17-eGFP at 36 hr (Figure 6C,E). Wnt3a likewise activated expression of both transgenes with similar temporal kinetics, however, their induction was significantly lower than with F7L6 (Figure 6B–E). This difference in potency between F7L6 and Wnt3a is likely due to the fact that Wnt3a is more unstable than F7L6 in these culture conditions. Treatment with CHIR yielded reporter gene expression distinct from both F7L6 and Wnt3a, with an early peak in T-GFP expression that subsequently declines (Figure 6B,D) and no induction of the SOX17-eGFP reporter (Figure 6C,E). This is consistent with our RNA-Seq (Figure 3B) and RT-qPCR results (Figure 3—figure supplement 2), again highlighting the distinct effects on differentiation of GSK3 inhibition versus FZD7 activation with either Wnt3a or F7L6.
 
-## FZD7 activation directs endodermal differentiation
+![Figure 6.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of live cell imaging experiment. Abbreviations: E8, essential eight medium; Tx, treatment. H9/WA09 cells carrying a T-GFP (B, D) or a SOX17-eGFP (C, E) reporter gene were treated with the indicated compounds, and fluorescence was imaged every 3 hr for a total of 120 hr on an IncuCyte Life Cell Analysis System. Fluorescence was quantified by total green object integrated intensity (GCU x μm2/image).
+
+### FZD7 activation directs endodermal differentiation
 
 Protocols to differentiate hPS cells specifically toward DE have been established and are widely used to generate mature endodermally derived cell populations, such as pancreas (D'Amour et al., 2006), liver (Touboul et al., 2010), and intestine (Workman et al., 2017). DE differentiation of hPS cells is induced by Activin/Nodal signaling, and Wnt3a addition on day 1 of differentiation increases the efficiency of mesendoderm specification and subsequent DE formation (D'Amour et al., 2006; Figure 7A). Using this protocol, we replaced Wnt3a treatment with F7L6 and monitored gene expression by RT-qPCR. As expected, expression of the pluripotency marker OCT4 (POU5F1) declined over the 3 days of differentiation with a more potent effect by F7L6 compared to Wnt3a (Figure 7B). Concurrently, expression of endodermal markers, SOX17, CXCR4 and FOXA2, increased upon treatment with F7L6 to a similar extent as Wnt3a (Figure 7B), indicating that activation of FZD7 alone is sufficient to promote DE formation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig7-v2.jpg)
 
-**Figure 7.:** (A) Schematic of DE differentiation protocol. Abbreviations: E8, essential eight medium; FBS, fetal bovine serum; Tx, treatment. (B) RT-qPCR analysis of the differentiation treated with the indicated compounds. Treatment of hPS cells (H9/WA01) with F7L6 or Wnt3a leads to downregulation of the pluripotency marker POU5F1 and upregulation of the DE markers CXCR4, SOX17 and FOXA2. Gene expression was normalized to the expression of RPL13A. All samples were normalized to undifferentiated (Undiff) samples. For all statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test: ****p≤0.0001, ***p≤0.001.  Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Schematic of DE differentiation protocol. Abbreviations: E8, essential eight medium; FBS, fetal bovine serum; Tx, treatment. (B) RT-qPCR analysis of the differentiation treated with the indicated compounds. Treatment of hPS cells (H9/WA01) with F7L6 or Wnt3a leads to downregulation of the pluripotency marker POU5F1 and upregulation of the DE markers CXCR4, SOX17 and FOXA2. Gene expression was normalized to the expression of RPL13A. All samples were normalized to undifferentiated (Undiff) samples. For all statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test: ****p≤0.0001, ***p≤0.001.
 
-## FZD7 activation prevents differentiation toward the hematopoietic lineage
+### FZD7 activation prevents differentiation toward the hematopoietic lineage
 
 Hematopoietic stem and progenitor cells can be derived from hPS cells using defined culture conditions (Ng et al., 2008; Ng et al., 2005) and can be identified by dual expression of the cell surface markers CD34 and CD45 (Figure 8A). We previously showed that a specific WNT signal involving WNT9A and FZD9 increased the efficiency of this differentiation protocol, as monitored by an increase in the yield of CD34/CD45 double positive cells (Grainger et al., 2019; Richter et al., 2018). Given this highly selective requirement for WNT9A/FZD9 signaling, we reasoned that activation of FZD7 signaling with F7L6 would likely interfere with the differentiation of hPS cells toward the hematopoietic lineage. We found that F7L6 treatment at days 2–4 of differentiation, the treatment window we previously established to be critical for optimal differentiation, significantly reduced the number of CD34/CD45 double positive cells at day 14 relative to untreated or Wnt3a treated (Figure 8B). The percentages of CD34 and CD45 single positive cells were likewise adversely affected by F7L6 (Figure 8C and D). RT-qPCR demonstrated that F7L6 failed to induce expression of hematopoietic markers, including MESP1 and MIXL1 at day 4 and KDR at day 11 of differentiation (Figure 8E). Therefore, selective activation of FZD7 with F7L6 promotes differentiation into certain lineages, such as DE, but hinders differentiation into other lineages, such as the blood lineage.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63060/elife-63060-fig8-v2.jpg)
 
-**Figure 8.:** (A) Schematic of the APEL hematopoietic stem/progenitor cell (HSPC) differentiation protocol. HPS cells were treated (Tx) with either Wnt3a or F7L6 from Days 2 to 4 of the 14 day differentiation protocol. On day 14, cells were analyzed by flow cytometry for the cell surface markers CD34 and CD45. Quantitation of flow cytometry of CD34/CD45 double positive cells (B), CD34 single positive cells (C), and CD45 single positive cells (D). (E) RT-qPCR analysis of MESP1 and MIXL1 at day 4 and of KDR at day 11 of differentiation. For statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test: ***p≤0.001, **p≤0.01, *p0.05, ns, not significant.  Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Schematic of the APEL hematopoietic stem/progenitor cell (HSPC) differentiation protocol. HPS cells were treated (Tx) with either Wnt3a or F7L6 from Days 2 to 4 of the 14 day differentiation protocol. On day 14, cells were analyzed by flow cytometry for the cell surface markers CD34 and CD45. Quantitation of flow cytometry of CD34/CD45 double positive cells (B), CD34 single positive cells (C), and CD45 single positive cells (D). (E) RT-qPCR analysis of MESP1 and MIXL1 at day 4 and of KDR at day 11 of differentiation. For statistical analyses: one-way ANOVA and Tukey’s multiple comparisons test: ***p≤0.001, **p≤0.01, *p0.05, ns, not significant.
 
 ## Discussion
 
@@ -120,62 +162,457 @@ Despite their potent stem cell activities in vivo and their potential as therape
 
 ## Materials and methods
 
-## Design of F7, L6 and F7L6
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO</td>
+      <td>ATCC</td>
+      <td>CCL-61</td>
+      <td>RRID:CVCL_0213</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td>RRID:CVCL_0045</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T-F127-KO</td>
+      <td>Prof. M. Boutros, Heidelberg University, Germany</td>
+      <td></td>
+      <td>Voloshanenko et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T-F124578-KO</td>
+      <td>Prof. M. Boutros, Heidelberg University, Germany</td>
+      <td></td>
+      <td>Voloshanenko et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>L1</td>
+      <td>ATCC</td>
+      <td>CRL-2648</td>
+      <td>RRID:CVCL_4536</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WA01 (H1)</td>
+      <td>WiCell Research Institute</td>
+      <td>NIH Registration Number: 0043</td>
+      <td>Male, RRID:CVCL_9771</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WA09 (H9)</td>
+      <td>WiCell Research Institute</td>
+      <td>NIH Registration Number: 0062</td>
+      <td>Female RRID:CVCL_9773</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H9 SOX17:GFP</td>
+      <td>Prof. S. Kim, Stanford University, USA</td>
+      <td></td>
+      <td>Wang et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H9 T-GFP</td>
+      <td>Prof. M. Mercola, Stanford University, USA</td>
+      <td></td>
+      <td>Kita-Matsuo et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>iPS cells</td>
+      <td>Professor D. Kaufman, UCSD, USA</td>
+      <td></td>
+      <td>Li et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Invitrogen</td>
+      <td>C600003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Super TOPFlash (STF)</td>
+      <td>Addgene</td>
+      <td>Plasmid #12456</td>
+      <td>RRID:Addgene_12456</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFuse-hIgG1-Fc2</td>
+      <td>Invivogen</td>
+      <td>pfuse-hg1fc2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-4T3</td>
+      <td>Cytiva</td>
+      <td>28-9545-52</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F7-Ab, chimeric human-mouse monoclonal</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1 μg/mL, available upon request from corresponding author</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>V5, mouse monoclonal</td>
+      <td>GeneTeX</td>
+      <td>Cat# GTX628529</td>
+      <td>Immunoblot, 1:4000 Immunofluorescence, 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin, mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C7207</td>
+      <td>1:2000 RRID:AB_476865</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin, mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2228</td>
+      <td>1:5000 RRID:AB_476697</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-human IgG HRP-conjugated, goat polyclonal</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 62–8420</td>
+      <td>1:20,000 RRID:AB_88136</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG HRP-conjugated, goat polyclonal</td>
+      <td>Southern Biotech</td>
+      <td>Cat#: 1030–05</td>
+      <td>1:20,000 RRID:AB_2619742</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD34, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 343608</td>
+      <td>1:100 RRID:AB_2228972</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human CD45, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 304008</td>
+      <td>1:100 RRID:AB_314396</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC mouse IgG2a k isotype control, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 400222</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE mouse IgG1, k isotype control, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 400112</td>
+      <td>1:100 RRID:AB_2847828</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa-Fluor 488 Goat anti-Mouse IgG, goat polyclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11001</td>
+      <td>1:1000 RRID:AB_2534069</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>F7L6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from CHO_His-F7L6-Fc, available upon request from corresponding author</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>F7L6-sc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from CHO_His-F7L6, available upon request from corresponding author</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Wnt3a</td>
+      <td>Produced in Willert lab Willert et al., 2003 Willert, 2008</td>
+      <td></td>
+      <td>Purified from CHO_Wnt3a cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>RSPO1</td>
+      <td>Prof. Xi He, Harvard Medical School</td>
+      <td></td>
+      <td>Purified from HEK293_Rspo1 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>FLAg FP+P-L61+3</td>
+      <td>Prof. S. Angers, Toronto University, Canada Tao et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>ActivinA</td>
+      <td>R and D Systems</td>
+      <td>Cat# 338-AC</td>
+      <td>100 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>BMP4</td>
+      <td>R and D Systems</td>
+      <td>Cat# 314 BP</td>
+      <td>40 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>SCF</td>
+      <td>R and D Systems</td>
+      <td>Cat# 7466-SC</td>
+      <td>40 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>VEGF</td>
+      <td>R and D Systems</td>
+      <td>Cat# 293-VE</td>
+      <td>20 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>FGF2</td>
+      <td>StemCell Technologies</td>
+      <td>Cat#78003</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Dura Western Blot Substrate</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 34075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Coomassie (Bradford) Protein Assay Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 23200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol Reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MiniPrep Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat# R2051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript Reverse Transcription Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1708840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1725120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zeocin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>R25005</td>
+      <td>1 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A1113802</td>
+      <td>4 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rock inhibitor Y-27631</td>
+      <td>Tocris</td>
+      <td>Cat# 1254</td>
+      <td>5 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK3 inhibitor CHIR98014</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# SML1094</td>
+      <td>250 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-luciferin-Potassium Salt</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 50227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4083S</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Sepharose</td>
+      <td>BioVision</td>
+      <td>Cat# 6511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiTrap IMAC HP, 1 mL</td>
+      <td>Cytiva</td>
+      <td>Cat# 17092003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 10/300 GL</td>
+      <td>Cytiva</td>
+      <td>Cat# GE28-9909-44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Matrigel</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 356234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mTeSR1</td>
+      <td>StemCell Technologies</td>
+      <td>Cat# 85850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>APEL2</td>
+      <td>StemCell Technologies</td>
+      <td>Cat# 05270</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Design of F7, L6 and F7L6
 
 The sequence coding for the heavy (VH) and light (VL) chain of the variably fragment (Fv) portion of the FZD7 antibody (F7-Ab) were identified and used to design a single-chain variable fragment (F7-Ab scFv) that consists of the heavy chain Fv fused to the light chain Fv with a linker peptide (GGGGS)3. The F7-Ab scFv sequence was cloned into the pFuse-hIgG1-Fc2 mammalian expression vector (Invivogen), containing the IL-2 signal sequence and the IgG1 crystallizable fragment (Fc), to form the F7-Ab scFv-Fc (F7). The domains of the F7 construct are in the following order: IL-2 ss, F7-VH, (GGGGS)3, F7-VL, Fc. The coding sequence for the LRP6 scFv (United States Patent No.: US8,883,735, SEQ ID NO: 81 VL and SEQ ID NO: 82 VH) was similarly cloned into the pFuse mammalian expression vector to form the LRP6-Ab scFv-Fc (L6). The domains of the L6 construct are in the following order: IL-2 ss, L6-VL, (GGGGS)4, L6-VH, Fc. The coding sequence for the two scFv were fused with an additional flexible linker and cloned into the pFuse mammalian expression vector to create a bispecific scFv-Fc (F7L6). The domains of the F7L6 construct are in the following order: IL-2 ss, F7-VH, (GGGGS)3, F7-VL, (GGGGS)3, L6-VL, (GGGGS)4, L6-VH, Fc. Additional constructs containing a 6xHis tag between the IL-2 ss and the F7-VH domain with and without the Fc region were generated to express and produce F7L6 and F7L6-sc, respectively (Supplementary file 4).
 
-## Expression, purification, and characterization of recombinant proteins
+### Expression, purification, and characterization of recombinant proteins
 
 CHO cells (RRID:CVCL_0213) were transfected with plasmids encoding F7, L6, F7L6 and F7L6-sc, drug selected (1000 µg/mL zeocin or 4 µg/mL Puromycin, ThermoFisher Scientific) and expanded as clonal stable lines. Conditioned media (CM) were collected from confluent cultures every 3–4 days. Medium was replenished and CM was collected until the cells no longer adhered to the plate. CM were passed through a 0.22 µm filter (Genesee Scientific) and stored at 4°C until time of purification. CHO cells expressing the recombinant Wnt3a protein were similarly cultured and conditioned medium was collected, filtered, and stored. Wnt3a protein used in these studies was purified by four-step column chromatography as previously described (Willert, 2008). F7, L6, and F7L6 were purified from CM as follows: CM were applied to a protein G Sepharose (Biovision) column. The column was then extensively washed with phosphate buffered saline (PBS), and bound proteins were eluted with 0.1M glycine pH 2.5 and collected as 1 mL fractions into tubes containing 0.1 mL 2M Tris-Cl, pH8. Fractions containing the protein of interest were combined and dialyzed against PBS using dialysis tubing with a MWCO of 10 kDa (Thermo Scientific). After dialysis, the recombinant proteins were sterile filtered and aliquoted and stored at −80°C. The 6xHis-tagged version of F7L6 and F7L6-sc were purified as follows: CM from CHO cells expressing either F7L6 or F7L6-sc were adjusted to contain 30 mM imidazole and applied to a 1 mL immobilized metal affinity column charged with NiCl2 (HiTrap IMAC HP, Cytiva Lifesciences). The column was washed with 30 mM imidazole in PBS. Bound proteins were eluted with a linear gradient from 30 mM to 300 mM imidazole in PBS into 1 mL fraction. Fractions containing F7L6 were combined and dialyzed against PBS. Fractions containing F7L6-sc were further fractionated by size exclusion chromatography (SEC, Superdex 200 10/300 GL, Cytiva Lifesciences) to remove contaminant proteins. After dialysis or gel filtration, the recombinant proteins were aliquoted and stored at −80°C. SEC of F7L6 and F7L6-sc (as shown in Figure 2—figure supplement 3) was performed on a Superdex 200 10/300 GL column (Cytiva Lifesciences) in PBS, and 1 mL fractions were assayed in the presence of RSPO (100 ng/mL) for signaling activity using the STF assay. The previously published Wnt mimetic FLAg FP+P-L61+3 (Tao et al., 2019) was generously provided by Stephane Angers (University of Toronto, Canada).
 
-## Mapping of the F7-Ab epitope
+### Mapping of the F7-Ab epitope
 
 The sequence encoding 42 amino acids (aa) of FZD7 containing the epitope for the F7-Ab (Glycine 168 to Serine 209) was cloned into the bacterial GST expression vector pGEX-4T3 (Cytiva Lifesciences). The epitope was shortened from either end through sequential cloning to produce 10 different length epitopes ranging from the original 42 aa to eight aa. The GST fusion proteins were expressed in BL21 cells and cell pellets were resuspended in protein sample loading buffer (2% SDS, 5% 2-mercaptoethanol, 10% glycerol, 62.5 mM Tris-Cl pH6.8) and boiled for 5 min (min) at 95°C. Proteins were visualized by Coomassie or by immunoblotting using the F7-Ab to determine binding to each epitope length.
 
-## Cell lines and culture conditions
+### Cell lines and culture conditions
 
 All cell lines used in these studies were directly obtained from either ATCC (CHO, HEK293, L) or WiCell Research Institute (H1, H9). Identity of H1 and H9 was authenticated by karyotyping and functional assays, including EB formation and directed differentiation. All HEK293/HEK293T (RRID:CVCL_0045/RRID:CVCL_0063) lines and mouse L-cells (ATCC-CRL-2648) (RRID:CVCL_4536) were cultured in Dulbecco’s Modified Eagle’s Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and penicillin/streptomycin. HEK293/HEK293T cells stably transduced with the Wnt reporter Super TOP-Flash (STF, Addgene Plasmid #12456, RRID:Addgene_12456) were previously described (Bauer et al., 2013). HEK293T cells carrying knockout mutations in LRP6 were previously described (Grainger et al., 2019). HEK293T harboring mutations in multiple FZD genes (FZD1,2,7 [F127-KO] and FZD1,2,4,5,7,8) were kindly provided by Professor M. Boutros, Heidelberg University, Germany (Voloshanenko et al., 2017). CHO cells overexpressing Wnt3a were cultured in DMEM, 10% FBS and penicillin/streptomycin, and Doxycycline (250 ng/mL) was added to induce Wnt3a expression.
 
 All experiments using human pluripotent stem cell lines (hPS cells) were approved under IRB/ESCRO protocol number 100210 (Principal investigator: K.W.). HPS cell lines H1 (WA01, NIH Registration Number 0043, RRID:CVCL_9771) and H9 (WA09, NIH Registration Number 0062, RRID:CVCL_9773) were obtained from WiCell and cultured in E8 culture medium (Chen et al., 2011) on Matrigel (BD Biosciences). The H9 reporter lines, H9 SOX17:GFP (Wang et al., 2011) and H9 T-GFP (Kita-Matsuo et al., 2009) were cultured in E8 culture medium, passaged with TrypLE Express (Gibco), and seeded with Rock inhibitor Y-27631, 5 μM (Tocris). The H9 SOX17:GFP cell line was kindly provided by material transfer agreement by Dr. Seung Kim (Stanford School of Medicine). iPS cell lines were kindly provided by Dr. Dan Kaufman (UC San Diego) (Li et al., 2018). The iPS cells were cultured in mTeSR1 (StemCell Technologies), passaged with TrypLE Express, and seeded with Rock inhibitor. All hPS and iPS cells were fed fresh media daily.
 
-## Differentiation of hPS cells
+### Differentiation of hPS cells
 
-## Non-directed differentiation
+#### Non-directed differentiation
 
 Reporter hPS cell lines, H9 TBXT(T)-eGFP and H9 Sox17-eGFP, were passaged into a Matrigel-coated 12 well plate at 10,000 cells per well. When cells reached 40–60% confluence, media in each plate were replenished and the cells were treated with F7L6 (10 nM), Wnt3a (5 nM), CHIR98014 (250 nM, Sigma-Aldrich), or an equivalent volume of Wnt storage buffer (PBS, 1% CHAPS, 1 M NaCl). Plates were placed in the IncuCyte Life Cell Analysis System (Sartorius) and cultured without media changes for 5 days at 37°C. Phase and GFP images were recorded every 3 hr for a total of 120 hr after treatment. The IncuCyte software was used to process the images and generate the integrated GFP intensity (GCU x μm2/image).
 
-## Endoderm differentiation
+#### Endoderm differentiation
 
 H1 cells were differentiated to endoderm as previously described (D'Amour et al., 2006). Initiated on days 4–6 after passage (depending on culture density), sequential, daily media changes were made for the entire differentiation protocol. After a brief wash in PBS, cells were cultured in RPMI, Activin A (100 ng/mL, R and D Systems) and a treatment for the first day. Treatments were F7L6 (10 nM), Wnt3a (5 nM), CHIR (250 nM) or an equivalent volume of Wnt storage buffer. The next day the medium was changed to RPMI with 0.2% vol/vol FBS and Activin A (100 ng/mL), and the cells were cultured for 2 additional days. Cells were collected at day three and total RNA was isolated and analyzed by RT-qPCR.
 
-## Hematopoietic differentiation
+#### Hematopoietic differentiation
 
 HPS cells were differentiated to the hematopoietic lineage as previously described (Ng et al., 2008; Ng et al., 2005). The day prior to differentiation, iPS cells were passaged with TrypLE Express at a high density in mTeSR with Rock inhibitor. On Day 0 of the differentiation, iPS cells were dissociated into a single cell suspension and plated in a 96-well U-bottom plate (Genesee Scientific) at 3000 cells per well in APEL2 (StemCell Technologies) with 40 ng/mL BMP4 (R and D Systems), 40 ng/mL SCF (R and D Systems), 20 ng/mL VEGF (R and D System), 10 ng/mL FGF-2 (StemCell Technology), and 5 nM Rock inhibitor. On Day 2 of the differentiation, the embryoid bodies (EB) were treated with F7L6 (5 nM), Wnt3a (5 nM), CHIR (250 nM) or an equivalent volume of Wnt storage buffer. On Day 4 of the differentiation, the media was removed from the EBs and replaced with fresh APEL2 with BMP4, SCF, VEGF, and FGF-2. On Day 7 of the differentiation, EBs were transferred to gelatin coated plates. On Day 8 of the differentiation one volume of APEL with BMP4, SCF, and VEGF was added. EBs were dissociated on Day 14 of the differentiation for analysis by flow cytometry.
 
-## Immunoblotting by dot blot
+### Immunoblotting by dot blot
 
 Cells were lysed in TNT buffer (1% Triton X-100, 150 mM NaCl, 50 mM Tris HCl, pH 8) with protease inhibitors (Roche). Five µL of whole cell lysate (approximately 40 µg) was dotted directly onto nitrocellulose membrane and allowed to dry completely. The nitrocellulose membrane was incubated in blocking buffer (TBST [20 mM Tris-Cl pH8, 150 mM NaCl, 0.2% Tween-20], 1% BSA, 3% non-fat dry milk) for 30–60 min at room temperature (RT), and then incubated in primary antibody for 1 hr at RT or overnight at 4°C. The conditioned media collected from F7, L6, and F7L6 expressing CHO cells was mixed 1:1 with blocking buffer and used as a primary antibody solution. The nitrocellulose membrane was washed three times in TBST, and then incubated in goat anti-human HRP secondary antibody (ThermoFisher Scientific) at 1:10,000 dilution in blocking buffer for 45–60 min at RT. The nitrocellulose membrane was washed three times in TBST before enhanced chemiluminescent (ECL) detection by SuperSignal West Dura Western Blot Substrate (ThermoFisher Scientific) and exposure to autoradiography film.
 
-## Immunoblotting by western
+### Immunoblotting by western
 
 To obtain whole cell lysate, cells were lysed in TNT buffer with protease inhibitors. Protein concentrations were determined using Pierce Coomassie (Bradford) Protein Assay Kit (ThermoFisher Scientific). Protein sample loading buffer (62.5 mM Tris-Cl pH6.8, 2% SDS, 10% glycerol, 5% 2-mercaptoethanol, bromophenol blue) was added to 20 μg total protein. Samples were denatured at 95°C for 5 min unless samples were intended to be blotted for FZD proteins. Cell lysates were resolved by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE), transferred to nitrocellulose membrane, and incubated for 30–60 min in blocking buffer. Primary antibody incubations were done overnight at 4°C. Primary antibodies and dilutions used: anti-FZD7 (F7-Ab) (1:1000 of 1 mg/mL stock), V5 tag antibody (GeneTex/GTX628529/1:4,000), monoclonal anti-β-catenin antibody (Sigma-Aldrich/C7207/1:2,000) (RRID_AB_476865), anti-β-actin antibody (Sigma-Aldrich/A2228/1:5,000) (RRID:AB_476697). All western blots were washed three times in TBST prior to incubation in secondary antibody for 45–60 min at RT. Secondary antibodies and dilutions used: goat anti-human IgG HRP-conjugated (ThermoFisher Scientific/62–8420/1:20,000) (RRID:AB_88136), goat anti-mouse IgG HRP-conjugated (Southern Biotech/1030–05/1:20,000) (RRID:AB_2619742). All western blots were washed three times in TBST before protein detection by Millipore Sigma Luminata Forte Western HRP substrate and exposure to autoradiography film.
 
-## Super TOP-Flash (STF) luciferase assays
+### Super TOP-Flash (STF) luciferase assays
 
 Cells were lysed in luciferase assay buffer (100 mM K-PO4 buffer pH 7.8, 0.2% Triton X-100) and transferred to a black-walled 96-well plate. One hundred µL of luciferase assay cocktail was added to each well of lysate 25 mM Tris-Cl pH 7.8, 15 mM MgSO4, 10 mM ATP (Sigma-Aldrich), 65 µM BD D-luciferin-Potassium Salt (Fisher Scientific). Luciferase assay readouts were performed on a Promega GloMax Discover Microplate Reader.
 
-## Real-time quantitative polymerase chain reaction (RT-qPCR)
+### Real-time quantitative polymerase chain reaction (RT-qPCR)
 
 RNA expression was measured by RT-qPCR. RNA was extracted using TRIzol Reagent (ThermoFisher Scientific) and Direct-zol RNA MiniPrep Kit (Zymo Research). cDNA was generated using 50 ng RNA and iScript Reverse Transcription Supermix (Bio-Rad), then diluted 1:10 in UltraPure DNase/RNase-Free Distilled Water (ThermoFisher). RT-qPCR was performed using iTaq Universal SYBR Green Supermix (Bio-Rad) according to the manufacturer’s recommendations, and a two-step amplification CFX_2stepAmp protocol on a Bio-Rad CFX384 Touch Real-Time PCR Detection System. Data was analyzed using the 2−ΔΔCt method (Schefe et al., 2006). All gene expressions were normalized to the expression of RPL13A. The following RT-qPCR primers were used (Gene ID, forward primer, reverse primer):
 
-## Flow cytometry
+### Flow cytometry
 
 HPS cell-derived EBs were dissociated with TrypLE Express at 37°C for 5–10 min, periodically triturated using P1000 pipette. Dissociated EBs were resuspended in FACS buffer (PBS, 1 mM EDTA, and 0.5% FBS) and passed through a cell strainer (Corning). Cell suspensions were pelleted at 200xg for 3 min and resuspended in 100 µL of FACS buffer (approximately 1 × 105 cells). Cells were incubated on ice for 30 min in the following primary fluorophore-conjugated antibodies (Antibody/Vendor/Catalog#/Concentration): APC anti-human CD34/Biolegend/343608/1:100 (RRID:AB_2228972); PE anti-human CD45/Biolegend/304008/1:100 (RRID:AB_314396); APC mouse IgG2a k isotype control/Biolegend/400222/1:100; PE mouse IgG1, k isotype control/Biolegend/400112/1:100 (RRID:AB_2847828). Cells were washed with 2 mL of FACS buffer and spun down at 200xg for 3 min. Cells were resuspended in 500 mL of FACS buffer with 0.5 µg/mL DAPI (Cell Signaling Technology). The cell suspensions were analyzed using the FACS Fortessa (BD Biosciences) and the resulting FSC files were processed with the FlowJo software (BD Biosciences).
 
-## Immunofluorescence of overexpressed FZD
+### Immunofluorescence of overexpressed FZD
 
 HEK293T F127-KO cells were plated in a 24 well-plate with coverslips. Cells were transfected with V5-tagged FZD receptors and 2 days post-transfection, cells were fixed with 4% formaldehyde for 15 min at RT. Cells were washed twice with 1X PBS and permeabilized with 1X PBS with 0.5% Triton X-100 for one hour at RT. Following permeabilization, cells were blocked with 0.5% BSA in 1X PBS with 0.1% Triton X-100 (1X PBST) for 1 hr at RT. Cells were stained with V5 antibody (Genetex/GTX628529/1:500) in 1X PBST at 4°C overnight. Cells were washed three times with 1X PBST for 10 min each. Alexa-Fluor 488 Goat anti-Mouse IgG (Invitrogen/A11001/1:1000) (RRID:AB_2534069) in 1X PBST was used as the secondary antibody. Secondary antibody staining was done for 2 hr at RT. Following the secondary staining, cells were washed three times with 1X PBST for 10 min each. Coverslips were mounted on glass slides and imaged on Nikon Eclipse Ti2-E microscope with SR HP Apo TIRF 100x NA 1.49 objective.
 
-## Transcriptome analysis (RNA-seq)
+### Transcriptome analysis (RNA-seq)
 
 Total RNA from cells was extracted using TRIzol Reagent and Direct-zol RNA MiniPrep Kit, according to manufacturer recommendations. cDNA library preparation and sequencing were done by Novogene Co., Ltd. A 250–300 bp insert cDNA library was generated by using the NEBNext Ultra RNA Library Prep Kit for Illumina (New England Biolabs, Inc). Transcriptome sequencing was performed on an Illumina NovaSeq 6000. TopHat (RRID:SCR_013035) and Cufflinks (RRID:SCR_014597) (Trapnell et al., 2013; Trapnell et al., 2012) were used to perform differential gene expression analysis of RNA-seq experiments. Briefly, sequencing reads were quality filtered, mapped, and aligned to the reference human genome (hg19) with TopHat and Cuffdiff (RRID:SCR_001647) was used to calculate gene expression levels as reads per thousand transcript bases per million reads mapped (RPKM). Statistically significant changes in gene expression were obtained from RPKM values. Genes were clustered by expression pattern and principal component analysis was performed in Genesis (Sturn et al., 2002) (RRID:SCR_015775). Gene ontology was performed using GSEA (Mootha et al., 2003; Subramanian et al., 2005) (RRID:SCR_003199).

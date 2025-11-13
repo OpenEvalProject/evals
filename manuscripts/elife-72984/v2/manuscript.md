@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 Medical Research Council Integrative Epidemiology Unit, Population Health Sciences, University of Bristol Bristol United Kingdom
-2. https://ror.org/0524sp257 Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Oakfield Grove Bristol United Kingdom
-3. https://ror.org/05xg72x27 K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Trondheim Norway
-4. https://ror.org/05xg72x27 HUNT Research Center, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Levanger Norway
+1. Medical Research Council Integrative Epidemiology Unit, Population Health Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Oakfield Grove Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+3. K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))
+4. HUNT Research Center, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Levanger Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))
 5. Clinic of Medicine, St. Olavs Hospital, Trondheim University Hospital Trondheim Norway
 6. Department of Endocrinology, Clinic of Medicine, St. Olavs Hospital, Trondheim University Hospital Trondheim Norway
 
@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Taller people have a lower risk of coronary heart disease but a higher risk of many cancers. Mendelian randomization (MR) studies in unrelated individuals (population MR) have suggested that these relationships are potentially causal. However, population MR studies are sensitive to demography (population stratification, assortative mating) and familial (indirect genetic) effects. In this study, we performed within-sibship MR analyses using 78,988 siblings, a design robust against demography and indirect genetic effects of parents. For comparison, we also applied population MR and estimated associations with measured height. Within-sibship MR estimated that 1 SD taller height lowers the odds of coronary heart disease by 14% (95% CI: 3–23%) but increases the odds of cancer by 18% (95% CI: 3–34%), highly consistent with population MR and height-disease association estimates. There was some evidence that taller height reduces systolic blood pressure and low-density lipoprotein cholesterol, which may mediate some of the protective effects of taller height on coronary heart disease risk. For the first time, we have demonstrated that the purported effects of height on adulthood disease risk are unlikely to be explained by demographic or familial factors, and so likely reflect an individual-level causal effect. Disentangling the mechanisms via which height affects disease risk may improve the understanding of the etiologies of atherosclerosis and carcinogenesis. This project was conducted by researchers at the MRC Integrative Epidemiology Unit (MC_UU_00011/1) and also supported by a Norwegian Research Council Grant number 295989.
+Background:Taller people have a lower risk of coronary heart disease but a higher risk of many cancers. Mendelian randomization (MR) studies in unrelated individuals (population MR) have suggested that these relationships are potentially causal. However, population MR studies are sensitive to demography (population stratification, assortative mating) and familial (indirect genetic) effects.Methods:In this study, we performed within-sibship MR analyses using 78,988 siblings, a design robust against demography and indirect genetic effects of parents. For comparison, we also applied population MR and estimated associations with measured height.Results:Within-sibship MR estimated that 1 SD taller height lowers the odds of coronary heart disease by 14% (95% CI: 3–23%) but increases the odds of cancer by 18% (95% CI: 3–34%), highly consistent with population MR and height-disease association estimates. There was some evidence that taller height reduces systolic blood pressure and low-density lipoprotein cholesterol, which may mediate some of the protective effects of taller height on coronary heart disease risk.Conclusions:For the first time, we have demonstrated that the purported effects of height on adulthood disease risk are unlikely to be explained by demographic or familial factors, and so likely reflect an individual-level causal effect. Disentangling the mechanisms via which height affects disease risk may improve the understanding of the etiologies of atherosclerosis and carcinogenesis.Funding:This project was conducted by researchers at the MRC Integrative Epidemiology Unit (MC_UU_00011/1) and also supported by a Norwegian Research Council Grant number 295989.
 
 ## Introduction
 
@@ -38,31 +38,87 @@ Mendelian randomization (Smith and Ebrahim, 2003) analyses, using genetic varian
 
 Here, we used data from 40,275 siblings from UK Biobank (Bycroft et al., 2018) and 38,723 siblings from the Norwegian HUNT study (Krokstad et al., 2013) to estimate the effects of adulthood height on CHD, cancer risk, and relevant biomarkers. Study-level information is contained in Table 1. We report the estimates of the effects of height on CHD and cancer from both phenotypic models and Mendelian randomization, with and without accounting for family structure.
 
+**Table 1.**
+ UK Biobank and HUNT study characteristics.Information on the UK Biobank and Norwegian HUNT studies, including descriptive of the sibling samples, is given.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>UK Biobank</th>
+      <th>HUNT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sibling sample:N individuals (N sibships)</td>
+      <td>40,275 (19,588)</td>
+      <td>38,723 (15,179)</td>
+    </tr>
+    <tr>
+      <td>Recruitment period:years</td>
+      <td>2006–2010</td>
+      <td>HUNT2 (1995–97)HUNT3 (2006–08)</td>
+    </tr>
+    <tr>
+      <td>Year of birth:median (Q1, Q3)</td>
+      <td>1950 (1945, 1956)</td>
+      <td>1951 (1937, 1963)</td>
+    </tr>
+    <tr>
+      <td>Sex:male (%)</td>
+      <td>42.2</td>
+      <td>48.7</td>
+    </tr>
+    <tr>
+      <td>Male height (cm):mean (SD)</td>
+      <td>175.7 (6.7)</td>
+      <td>177.6 (6.7)</td>
+    </tr>
+    <tr>
+      <td>Female height (cm):mean (SD)</td>
+      <td>162.4 (6.2)</td>
+      <td>164.4 (6.3)</td>
+    </tr>
+    <tr>
+      <td>Coronary heart disease:N cases (% of sample)</td>
+      <td>3006 (7.5%)</td>
+      <td>6447 (16.6%)</td>
+    </tr>
+    <tr>
+      <td>Cancer:N cases (% of sample)</td>
+      <td>6724 (16.5%)</td>
+      <td>2323 (6.0%)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Methods
 
-## UK Biobank
+### UK Biobank
 
-## Overview
+#### Overview
 
 UK Biobank is a large-scale prospective cohort study, described in detail previously (Bycroft et al., 2018; Sudlow et al., 2015). In brief, 503,325 individuals aged between 38 and 73 years were recruited between 2006 and 2010 from across the United Kingdom. For the purpose of this study, we used a subsample of 40,275 siblings from 19,588 families (Brumpton et al., 2019). Full-siblings were derived using UK Biobank-provided estimates of pairwise identical by state (IBS) kinships (>0.5–21 * IBS0, <0.7) and IBS0 (>0.001, <0.008), the proportion of unshared loci (Hill and Weir, 2011). This research has been conducted using the UK Biobank Resource under Application Number 15825. UK Biobank has ethical approval from the North West Multi-centre Research Ethics Committee (MREC). All UK Biobank participants provided written informed consent.
 
-## Phenotype data
+#### Phenotype data
 
 At baseline, study participants attended an assessment center where they completed a touch-screen questionnaire, were interviewed, and had various measurements and samples taken. Height (field ID: 12144-0.0) and sitting height (field ID: 20015-0.0) were measured using a Seca 202 device at the assessment center. Seated height is equivalent to trunk length, leg length was defined as height minus seated height, and the leg to trunk ratio was calculated by taking the ratio of leg and trunk length. SBP was measured using an automated reading from an Omron Digital blood pressure monitor (field ID: 4080-0.0). Biomarkers of interest, including direct low-density lipoprotein cholesterol (LDL-C), high-density lipoprotein cholesterol (HDL-C), triglycerides (TG), glucose, and IGF-1, were measured using blood samples and the Beckman Coulter AU5800 or the DiaSorin LIASON XL (IGF-1) analyzers.
 
 International Classification of Disease (10th edition) (ICD10) codes and Office of Population Censuses and Surveys Classifications of Interventions and Procedures (OPCS) codes were used to identify CHD and cancer (all subtypes and a stratified analysis) cases using several data sources: (1) secondary care data from Hospital Episode Statistics (HES), (2) death register data, and (3) cancer registry data. The stratified analysis included a subset of cancer subtypes (lung, oropharyngeal, stomach, esophageal, pancreatic, bladder, and multiple myeloma). Relevant codes are given in Supplementary file 1A. Both prevalent and incident cases were included in the analyses.
 
-## Genotyping
+#### Genotyping
 
 The UK Biobank study participants (N = 488,377) were genotyped using the UK BiLEVE (N = 49,950) and the closely related UK Biobank Axiom Arrays (N = 438,427). Directly genotyped variants were pre-phased using SHAPEIT3 (O’Connell et al., 2016) and imputed using Impute4 and the UK10K (Walter et al., 2015), Haplotype Reference Consortium (McCarthy et al., 2016) and 1000 Genomes Phase 3 (Genomes Project Consortium, 2015) reference panels. More details are given in a previous publication (Bycroft et al., 2018).
 
-## HUNT
+### HUNT
 
-## Overview
+#### Overview
 
 The Trøndelag Health Study (HUNT) is a series of general health surveys of the adult population of the demographically stable Nord-Trøndelag region, Norway, as detailed in a previous study (Holmen et al., 2003). The entire adult population of this region (~90,000 adults in 1995) is invited to attend a health survey (includes comprehensive questionnaires, an interview, clinical examination, and detailed phenotypic measurements) every 10 years. To date, four health surveys have been conducted, HUNT1 (1984–1986), HUNT2 (1995–1997), HUNT3 (2006–2008), and HUNT4 (2017–2019), and all surveys have a high participation rate (Krokstad et al., 2013). This study includes 38,723 siblings from 15,179 families who participated in the HUNT2 and HUNT3 surveys. Siblings were identified using KING software (Manichaikul et al., 2010), with pairs defined as follows: kinship coefficient between 0.177 and 0.355, the proportion of the genomes that share two alleles identical by descent (IBD) > 0.08, and the proportion of the genome that share zero alleles IBD > 0.04. The use of HUNT data in this study was approved by the Regional Committee for Ethics in Medical Research, Central Norway (2017/2479). All HUNT study participants provided written informed consent.
 
-## Phenotype data
+#### Phenotype data
 
 Height was measured to the nearest 1.0 cm using standardized instruments with participants wearing light clothes without shoes. SBP was measured using automated oscillometry (Critikon Dinamap 845XT and XL9301, acquired by GE Medical Systems Information Technologies in 2000) on the right arm in a relaxed sitting position (Holmen et al., 2003; Krokstad et al., 2013). SBP was measured twice with a 1 min interval between measurement with the mean of both measurements used in this study.
 
@@ -70,19 +126,19 @@ All HUNT participants provided nonfasting blood samples when attending the scree
 
 The unique 11-digit identification number of every Norwegian citizen was used to link the HUNT participant records with the hospital registry, which included the three hospitals in the area (up to March 2019). We used ICD-10 and ICD-9 codes 410–414 and I20–I25 to define CHD, including both prevalent and incident cases. Cancer status (yes/no) was self-reported in HUNT2, HUNT3, and HUNT4 questionnaires. Individuals with discordant responses across different questionnaires were excluded from analyses. Due to the nature of cancer data collection, only prevalent cancer cases were included in analyses.
 
-## Genotyping
+#### Genotyping
 
 DNA samples were available from 71,860 HUNT samples from HUNT2 and HUNT3 and were genotyped (Krokstad et al., 2013) using one of the three different Illumina HumanCoreExome arrays: HumanCoreExome12 v1.0 (n = 7570), HumanCoreExome12 v1.1 (n = 4960), and University of Michigan HUNT Biobank v1.0 (n = 58,041; HumanCoreExome-24 v1.0, with custom content). Quality control was performed separately for genotype data from different arrays. The call rate of genotyped samples was >99%. Imputation was performed on samples of recent European ancestry using Minimac3 (v2.0.1, http://genome.sph.umich.edu/wiki/Minimac3) (Das et al., 2016) from a merged reference panel constructed from (1) the Haplotype Reference Consortium panel (release version 1.1) (McCarthy et al., 2016) and (2) a local reference panel based on 2202 whole-genome sequenced HUNT participants (Zhou et al., 2017). The subjects included in the study were of European ancestry and had passed the quality control.
 
-## Statistical analysis
+### Statistical analysis
 
-## Population and within-sibship models
+#### Population and within-sibship models
 
 The population model is a conventional regression model where the outcome is regressed (linear or logistic) against the exposure (height or height polygenic score [PGS]) with the option to include covariates.
 
 The within-sibship model is an extension to the population model that includes a family mean term, the average exposure value across each family (height or height PGS), with each individual exposure value centered about the family mean exposure. To account for relatedness between siblings, standard errors are clustered by family in both models. More information on these models is contained in previous publications (Brumpton et al., 2019; Howe et al., 2021) with statistical code available on GitHub (Howe, 2022).
 
-## Phenotypic and Mendelian randomization analyses
+#### Phenotypic and Mendelian randomization analyses
 
 In phenotypic analyses, we used regression models (within-sibship and population) to estimate the association between measured height and all outcomes (CHD, cancer, SBP, LDL-C, HDL-C, TG, glucose, and IGF-1) using linear models for continuous outcomes and logistic models for binary disease outcomes. In both cohorts, we used a standardized measure of height after adjusting for age and sex and also standardized continuous outcomes after adjusting for age and sex.
 
@@ -90,17 +146,17 @@ In Mendelian randomization analyses, we fit regression models as above but used 
 
 There are three core instrumental variable assumptions for Mendelian randomization analyses. First, the genetic variants should be robustly associated with the exposure (relevance). Second, there should be no unmeasured confounders of the genetic variant-outcome association (independence). Third, the genetic variants should only influence the outcome via their effect on the exposure (the exclusion restriction) (Haycock et al., 2016; Didelez and Sheehan, 2007; Lawlor et al., 2008).
 
-## UK Biobank and HUNT meta-analyses
+#### UK Biobank and HUNT meta-analyses
 
 We performed phenotypic and Mendelian randomization analyses (using population and within-sibship models) in both UK Biobank and HUNT. For phenotypes measured in both studies (CHD, cancer, LDL-C, HDL-C, TG), we combined estimates across both studies using a fixed-effects model in the metafor R package for meta-analysis. We tested for heterogeneity between UK Biobank/HUNT estimates using the difference of two means test statistic (Altman and Bland, 2003).
 
-## Outcomes
+#### Outcomes
 
 Using the previously described models and meta-analysis procedure, we estimated the effects of height on CHD, cancer, LDL-C, HDL-C, TG, glucose, and IGF-1. As a sensitivity analysis, we used phenotypic models to evaluate the associations between dimensions of height (leg length, trunk length, and leg to trunk ratio) with CHD and cancer in UK Biobank. A further sensitivity analysis involved repeating cancer analyses in UK Biobank with a subset of cancers not phenotypically associated with height (described above).
 
 ## Results
 
-## Adulthood height and risk of CHD and cancer
+### Adulthood height and risk of CHD and cancer
 
 We found consistent evidence across population and within-sibship models, using both measured height and a height PGS, that taller adulthood height reduced CHD risk and increased the risk of cancer (Supplementary file 1B and C).
 
@@ -110,9 +166,148 @@ Within-sibship Mendelian randomization estimated that 1 SD taller height (approx
 
 **Figure 2.:** The meta-analysis results from four different models used to evaluate the effect of height on coronary heart disease (CHD) and cancer risk are displayed. First, a phenotypic population model with measured height as the exposure and age and sex included as covariates. Second, a within-sibship phenotypic model with the family mean height included as an additional covariate to account for family structure. Third, a population Mendelian randomization model with height polygenic score (PGS) as the exposure exploiting advantageous properties of genetic instruments. Fourth, a within-sibship Mendelian randomization model with the family mean PGS included as a covariate to control for parental genotypes. Across all four models, we found consistent evidence that taller height reduces the odds of CHD and increases the odds of cancer.
 
+**Table 2.**
+ Mendelian randomization (MR) results: change in outcome (SD units), per 1 SD increase in height.Population and within-sibship MR estimates of height on the eight different outcomes are shown. The presented estimates are from UK Biobank, HUNT, and the combined fixed-effects meta-analysis. The heterogeneity p-value refers to the difference between the UK Biobank and HUNT estimates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Model</th>
+      <th>UK Biobank</th>
+      <th>HUNT</th>
+      <th>Combined</th>
+      <th>Study heterogeneityp-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Systolic blood pressure</td>
+      <td>Population</td>
+      <td>–0.044 (–0.074, –0.015)</td>
+      <td>–0.025 (–0.057, 0.008)</td>
+      <td>–0.036 (–0.058, –0.014)</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>–0.077 (–0.137, –0.017)</td>
+      <td>0.010 (–0.040, 0.059)</td>
+      <td>–0.025 (–0.063, 0.013)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="2">High-density lipoprotein cholesterol</td>
+      <td>Population</td>
+      <td>–0.039 (–0.070, –0.008)</td>
+      <td>–0.010 (–0.043, 0.024)</td>
+      <td>–0.025 (–0.048, –0.003)</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>–0.038 (–0.096, 0.021)</td>
+      <td>0.001 (–0.046, 0.047)</td>
+      <td>–0.014 (–0.050, 0.022)</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Low-density lipoprotein cholesterol</td>
+      <td>Population</td>
+      <td>–0.066 (–0.095, –0.036)</td>
+      <td>–0.065 (–0.098, –0.032)</td>
+      <td>–0.065 (–0.087, –0.044)</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>–0.083 (–0.141, –0.025)</td>
+      <td>–0.014 (–0.061, 0.033)</td>
+      <td>–0.041 (–0.078, –0.005)</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Triglycerides</td>
+      <td>Population</td>
+      <td>0.011 (–0.018, 0.040)</td>
+      <td>–0.006 (–0.038, 0.027)</td>
+      <td>0.004 (–0.018, 0.025)</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>0.024 (–0.034, 0.081)</td>
+      <td>0.032 (–0.018, 0.082)</td>
+      <td>0.028 (–0.009, 0.066)</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Glucose</td>
+      <td>Population</td>
+      <td>0.032 (0.005, 0.060)</td>
+      <td>N/A</td>
+      <td>0.032 (0.005, 0.060)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>0.023 (–0.030, 0.077)</td>
+      <td>N/A</td>
+      <td>0.023 (–0.030, 0.077)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IGF-1</td>
+      <td>Population</td>
+      <td>–0.005 (–0.035, 0.025)</td>
+      <td>N/A</td>
+      <td>–0.005 (–0.035, 0.025)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>–0.045 (–0.093, 0.004)</td>
+      <td>N/A</td>
+      <td>–0.045 (–0.093, 0.004)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cancer (OR)</td>
+      <td>Population</td>
+      <td>1.12 (1.04, 1.20)</td>
+      <td>0.99 (0.88, 1.12)</td>
+      <td>1.09 (1.02, 1.16)</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>1.21 (1.03, 1.42)</td>
+      <td>1.12 (0.90, 1.39)</td>
+      <td>1.18 (1.03, 1.34)</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Coronary heart disease (OR)</td>
+      <td>Population</td>
+      <td>0.94 (0.84, 1.04)</td>
+      <td>0.88 (0.80, 0.96)</td>
+      <td>0.90 (0.84, 0.96)</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>Within-sibship</td>
+      <td>0.81 (0.65, 1.02)</td>
+      <td>0.88 (0.77, 1.00)</td>
+      <td>0.86 (0.77, 0.97)</td>
+      <td>0.55</td>
+    </tr>
+  </tbody>
+</table>
+
 We then evaluated the associations between dimensions of height (trunk length, leg length, and leg to trunk ratio) and risk of CHD/cancer in UK Biobank. We found little evidence of heterogeneity between estimates, although stronger conclusions are limited by statistical power (Supplementary file 1D). We also ran a sensitivity analysis in UK Biobank, rerunning height-cancer analyses including only cases with one of seven cancer subtypes (lung, oropharyngeal, stomach, esophageal, pancreatic, bladder, and multiple myeloma) for which a previous study found little evidence they associated with height (Green et al., 2011). These subtypes generally show very strong social patterning, which could explain the attenuated associations with height that is also often socially patterned. As expected, the association of measured height with this subset of cancers (population OR 0.99; 95% CI 0.92–1.06; within-sibship OR 1.01; 95% CI 0.88–1.15) was less strong than the association between height and the all-cancer outcome (population OR 1.05; 95% CI 1.02–1.07; within-sibship OR 1.05; 95% CI 1.01–1.09). Mendelian randomization estimates were imprecise because of the modest number of cases for these cancers (Supplementary file 1E).
 
-## Adulthood height and biomarkers
+### Adulthood height and biomarkers
 
 Using measured biomarkers, both population and within-sibship models found evidence for the association between taller height and lower SBP, lower circulating LDL-C, and higher circulating IGF-1 levels. There was some evidence for heterogeneity in phenotypic associations between height and biomarkers in UK Biobank and HUNT, such as for SBP, which was more strongly associated with height in UK Biobank (Supplementary file 1B).
 

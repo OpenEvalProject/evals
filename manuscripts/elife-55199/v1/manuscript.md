@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01zgy1s35 Neuronal Translational Control Group, Center for Molecular Neurobiology (ZMNH), University Medical Center Hamburg-Eppendorf (UKE) Hamburg Germany
-2. https://ror.org/01zgy1s35 Institute of Developmental Neurophysiology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf Hamburg Germany
-3. https://ror.org/01swzsf04 Department of Basic Neuroscience, University of Geneva Geneva Switzerland
+1. Neuronal Translational Control Group, Center for Molecular Neurobiology (ZMNH), University Medical Center Hamburg-Eppendorf (UKE) Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+2. Institute of Developmental Neurophysiology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+3. Department of Basic Neuroscience, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
 4. Department of Anatomy and Histology, Faculty of Veterinary Medicine, New Valley University New Valley Egypt
-5. https://ror.org/01zgy1s35 Transgenic Service Group, Center for Molecular Neurobiology (ZMNH), University Medical Center Hamburg-Eppendorf (UKE) Hamburg Germany
+5. Transgenic Service Group, Center for Molecular Neurobiology (ZMNH), University Medical Center Hamburg-Eppendorf (UKE) Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
 
 † Corresponding author
 
 ## Abstract
 
-In the neocortex, functionally distinct areas process specific types of information. Area identity is established by morphogens and transcriptional master regulators, but downstream mechanisms driving area-specific neuronal specification remain unclear. Here, we reveal a role for RNA-binding proteins in defining area-specific cytoarchitecture. Mice lacking Pum2 or overexpressing human TDP-43 show apparent ‘motorization’ of layers IV and V of primary somatosensory cortex (S1), characterized by dramatic expansion of cells co-expressing Sox5 and Bcl11b/Ctip2, a hallmark of subcerebral projection neurons, at the expense of cells expressing the layer IV neuronal marker Rorβ. Moreover, retrograde labeling experiments with cholera toxin B in Pum2; Emx1-Cre and TDP43 A315T mice revealed a corresponding increase in subcerebral connectivity of these neurons in S1. Intriguingly, other key features of somatosensory area identity are largely preserved, suggesting that Pum2 and TDP-43 may function in a downstream program, rather than controlling area identity per se. Transfection of primary neurons and in utero electroporation (IUE) suggest cell-autonomous and post-mitotic modulation of Sox5, Bcl11b/Ctip2, and Rorβ levels. Mechanistically, we find that Pum2 and TDP-43 directly interact with and affect the translation of mRNAs encoding Sox5, Bcl11b/Ctip2, and Rorβ. In contrast, effects on the levels of these mRNAs were not detectable in qRT-PCR or single-molecule fluorescent in situ hybridization assays, and we also did not detect effects on their splicing or polyadenylation patterns. Our results support the notion that post-transcriptional regulatory programs involving translational regulation and mediated by Pum2 and TDP-43 contribute to elaboration of area-specific neuronal identity and connectivity in the neocortex.
+In the neocortex, functionally distinct areas process specific types of information. Area identity is established by morphogens and transcriptional master regulators, but downstream mechanisms driving area-specific neuronal specification remain unclear. Here, we reveal a role for RNA-binding proteins in defining area-specific cytoarchitecture. Mice lacking Pum2 or overexpressing human TDP-43 show apparent ‘motorization’ of layers IV and V of primary somatosensory cortex (S1), characterized by dramatic expansion of cells co-expressing Sox5 and Bcl11b/Ctip2, a hallmark of subcerebral projection neurons, at the expense of cells expressing the layer IV neuronal marker Rorβ. Moreover, retrograde labeling experiments with cholera toxin B in Pum2; Emx1-Cre and TDP43A315T mice revealed a corresponding increase in subcerebral connectivity of these neurons in S1. Intriguingly, other key features of somatosensory area identity are largely preserved, suggesting that Pum2 and TDP-43 may function in a downstream program, rather than controlling area identity per se. Transfection of primary neurons and in utero electroporation (IUE) suggest cell-autonomous and post-mitotic modulation of Sox5, Bcl11b/Ctip2, and Rorβ levels. Mechanistically, we find that Pum2 and TDP-43 directly interact with and affect the translation of mRNAs encoding Sox5, Bcl11b/Ctip2, and Rorβ. In contrast, effects on the levels of these mRNAs were not detectable in qRT-PCR or single-molecule fluorescent in situ hybridization assays, and we also did not detect effects on their splicing or polyadenylation patterns. Our results support the notion that post-transcriptional regulatory programs involving translational regulation and mediated by Pum2 and TDP-43 contribute to elaboration of area-specific neuronal identity and connectivity in the neocortex.
 
 ## Introduction
 
@@ -43,15 +43,55 @@ By combining genetics with molecular imaging and in vivo biochemical approaches,
 
 ## Results
 
-## Contribution of RBPs Pum2 and TDP-43 to area-specific neuronal cytoarchitecture in the neocortex
+### Contribution of RBPs Pum2 and TDP-43 to area-specific neuronal cytoarchitecture in the neocortex
 
 We used a reverse-genetic approach to investigate whether RBPs might contribute to the establishment of neuronal identity in an area-specific manner. Specifically, we compared the expression of proteins that determine layer-specific neuronal subtypes in different cortical areas of mutant mice for the two RBPs, Pum2 and TDP-43. To this end, we generated Pum2 mice with loxP sites flanking exons 6 and 7. Crossing these mice to a line expressing Cre recombinase under the control of the Emx1 promoter (Iwasato et al., 2000) enabled selective inactivation of Pum2 expression in the forebrain (Gorski et al., 2002; Figure 1—figure supplement 1). To examine a potential contribution of TDP-43 and a possible link to human disease, we used a previously described transgenic mouse line containing a mutant allele that causes the neurodegenerative disease, ALS, in human patients Prnp-TARDBP A315T (TDP43A315T) (Wegorzewska et al., 2009).
 
 We analyzed the overall brain architecture in Emx1Cre; Pum2fl/fl (Pum2 cKO) and TDP43A315T (TDP43A315T) mice compared to their littermate controls (Figure 1—figure supplements 2 and 3). At postnatal day 0 (P0), brain size and cortical thickness were similar to littermate controls in both mutants (Figure 1—figure supplement 2a and b). Our Nissl staining showed no strong cortical morphological differences in coronal (P0) and sagittal (P7) sections of both mutants compared to their littermate controls (Figure 1—figure supplement 3). On a cellular level, nuclear size in S1 layer II–VI neurons was slightly larger in Pum2 cKO compared to controls, while it was not significantly affected in TDP43A315T mutants (Figure 1—figure supplement 2c). Moreover, we did not observe any significant changes in the total number of DAPI cells in both mutants compared to their littermate controls (Figures 1 and 2, Figure 1—figure supplement 5). To check whether the neurogenesis to gliogenesis ratio might be affected in our mutants at P0, we performed staining for NeuN as a neuronal marker and GFAP as a glial marker (Figure 1—figure supplement 2d). Our staining showed that most cortical neurons co-expressed NeuN and DAPI, but GFAP was essentially absent from cortices of both mutants and controls. This is consistent with gliogenesis starting at E18.5-P0 in WT animals (Miller and Gauthier, 2007; Sarnat, 1992) and shows that this is not affected in either mutant. The same experiment showed significant hippocampal staining with both NeuN and GFAP, in accordance with earlier gliogenesis in the hippocampus (Figure 1—figure supplement 2d). Overall, these findings support use of DAPI as a normalization factor in our following analysis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-v1.jpg)
+
+**Figure 1.:** (a) Coronal sections from neonatal (P0) brains of controls (Ctrl), Pum2 cKO, or Prnp-TARDBPA315T (TDP43A315T) mice were stained with antibodies recognizing Sox5, Bcl11b, or Rorβ or with DAPI to mark nuclei in the prospective somatosensory cortex (pS). (b) Quantification of results from n = 3 mice of each genotype is shown to the right of the relevant marker. Distribution of cells across six equal-sized bins is shown. For Bcl11b, only high-expressing neurons were counted. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, ***p≤0.001, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre; II–IV, V, VI: layers II–IV, V, and VI. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b) Deleting the targeting cassette with Flp recombinase leaves a ‘floxed allele’ of Pum2 for cKO. Mating directly to mice expressing Cre recombinase in the germline generates a general Pum2-KO line. Floxed Pum2 mice were mated to Emx1Cre mice to create a forebrain-specific KO. (c) qRT-PCR of E14.5 cortical RNA from controls (Ctrl) vs. Pum2 cKO using primers to the floxed exons. The fold change in expression levels of Pum2 mRNA normalized to GAPDH mRNA in the Pum2 cKO is shown relative to the Cre- control (Ctrl). (d) Coronal sections from controls and Pum2 cKO cortices at P0 immunostained with Pum2 antibody are shown, verifying both antibody specificity and showing the efficiency of Pum2 KO. (e) Immunoblotting of different brain regions confirms forebrain-specific deletion of Pum2 in Pum2flox/flox; Emx1Cre mice. Pum2 cKO: Pum2fl/fl; Emx1Cre.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Bright-field images of controls (Ctrl), Pum2 cKO, and TDP43A315T mice brains at P0. Quantification of the brain anatomy including hemisphere length, width, and area is shown below. Scale bar: 1 mm. (b) Coronal sections of the somatosensory cortex stained for DAPI of controls (Ctrl), Pum2 cKO, and TDP43A315T mice at P0. Quantification of cortical thickness is shown to the right. Scale bar: 100 μm. (c) DAPI staining of the neocortical nuclei in the somatosensory cortex of controls (Ctrl), Pum2 cKO, and TDP43A315T mice at P0. Quantification of nuclei size is shown to the right. Scale bar: 25 μm. (d) Coronal sections from controls, Pum2 cKO, and TDP43A315T cortices in prospective somatosensory cortex and hippocampus at P0 immunostained with antibodies for NeuN and GFAP and DAPI. Selected cortical and hippocampal regions are marked by white boxes, and high-magnification views of cortex and hippocampus are shown to the right of the respective image. Magnification at the level of the cortex and hippocampus showing only NeuN expression in the cortex, indicating that most cortical cells are neurons and not glia, while GFAP expression is detected in the hippocampus indicating the presence of both glia and neurons in controls and mutants. Scale bars: 100 μm and 25 μm for low- and high-magnification images, respectively. Data are represented as means ± standard error of the mean (SEM), n = 3–6 samples of each genotype. *p≤0.05, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre; ctx: cortex; Hip: hippocampus.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Nissl staining of coronal (top) and sagittal (bottom) sections of controls (Ctrl), Pum2 cKO, and TDP43A315T mice at P0 (coronal) and P7 (sagittal). To the right and below, higher-magnification levels of coronal sections of controls (Ctrl), Pum2 cKO, and TDP43A315T mice at P0 for frontal/motor cortex (F/M), prospective somatosensory cortex (pS), hippocampus (Hip), and striatum (Str). Pum2 cKO: Pum2fl/fl; Emx1Cre.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Schematic representations of a mouse brain are shown. The upper left is a top-down view with different primary areas in neocortex indicated: primary motor area (M1) in green, primary somatosensory area (S1) in blue, primary auditory area (A1) in purple, and primary visual area (V1) in red. In the middle, a coronal brain section is shown with M1 and S1 neocortical areas indicated. Dashed lines delineate the approximate boundaries of layer V in the two areas. The bottom images show a magnification of neocortical layers in M1 and S1 emphasizing the change in the thickness of layers IV (blue) and V (green) in the two areas. (b) Coronal sections from P0 wild-type (C57BL/6J) brains immunostained for Sox5, Bcl11b, and Rorβ are shown. Selected regions are marked by white rectangles, and high-magnification views of frontal motor (F/M) and prospective somatosensory (pS) areas are shown to the right of the respective image. (c) Coronal sections at P0 from controls (Ctrl), Pum2 cKO, or TDP43A315T brains immunolabeled for Sox5, Bcl11b, or Rorβ, with dashed lines delineating the thickness of their expression. White rectangles indicate pS. Ctx: cortex; Hip: hippocampus; Str: striatum; CC: corpus callosum; II–III, IV, V, VI: layers II–III, IV, V, and VI; Pum2 cKO: Pum2fl/fl; Emx1Cre. Scale bars: 100 μm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (a, b) Quantification of total Sox5-, Rorβ-, and DAPI-positive neurons and layer V Bcl11b+ neurons in controls (Ctrl), Pum2 cKO, or TDP43A315T mice in pS (a) or F/M) (b. The total number of Sox5+ or Rorβ+ neurons was normalized to the total number of DAPI cells. Layer V Bcl11b+ neurons in bins 3 and 4 were normalized to the number of DAPI cells in both bins. The absolute number of DAPI cells was also analyzed in equal-width areas in all animals. Data are represented as means ± standard error of the mean (SEM). **p≤0.01, ***p≤0.001, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (a, b) Coronal sections at P0 from controls (Ctrl), Pum2 cKO, and TDP43A315T brains immunolabeled for Tbr1 and Cux1 in prospective somatosensory cortex (pS) (a) or frontal/motor area (F/M) (b). To the right, a quantification of Tbr1- and Cux1-positive neurons normalized to the number of DAPI-positive cells in six equal bins. Scale bars: 100 μm. Data are represented as means ± standard error of the mean (SEM), two-tailed t-test. II–IV, VI: layers II–IV and VI; Pum2 cKO: Pum2fl/fl; Emx1Cre.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (a) Coronal sections of pS at P0 from controls, Pum2 cKO, Pum2 KO, or heterozygous Pum2 cKO (Pum2fl/+; Emx1Cre) animals stained with DAPI or immunostained for Sox5, Bcl11b, or Tbr1. (b) Histograms show quantification of Sox5 expression normalized to DAPI in Pum2 KO animals either in bins (left) or in total (right). Data are represented as means ± standard error of the mean (SEM). *p≤0.05, **p≤0.01 by two-tailed t-test. Ctrl: controls; Pum2 cKO: Pum2fl/fl; Emx1Cre; Pum2 KO: Pum2 constitutive knockout; II–IV, V, VI: layers II–IV, V, and VI. Scale bars: 100 μm.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Coronal sections from neonatal (P0) brains of non-transgenic controls (nTg), Prnp-TARDBP (TDP43), and hTARDBPA315T (TDP43A315T) mice were stained with antibodies recognizing either human TDP-43 (anti-hTDP-43) or both mouse and human TDP-43 (anti m + h TDP-43) and with DAPI to mark nuclei in either the frontal/motor area (F/M) or prospective somatosensory cortex (pS). (b) Coronal sections from neonatal (P0) brains of hTARDBPA315T (TDP43A315T) mice were stained with antibody recognizing the Flag tag coupled with the hTDP-43A315T transgene in either the pS or the F/M. Note the stronger signal for this transgenic protein in layer V of the pS, which is also observed with the human-specific anti-TDP-43 antibody in (a). II–IV, V, VI: layers II–IV, V, and VI. Scale bars: 100 μm. (c) Immunoblots of nuclear (N) or cytoplasmic (C) fractions from three mice (n1–3) of each genotype (Ctrl, TDP43, or TDP43A315T) are shown. Signal for antibodies recognizing exclusively human TDP-43 (hTDP-43) or both mouse and human (m + h) TDP-43 is indicated. Approximate molecular weights in kDa based on marker migration are indicated on the left. Quantification of corresponding fold changes in protein levels normalized to total protein is shown below. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, ***p≤0.001 by one-tailed t-test.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** (a) Coronal sections from neonatal (P0) brains of control mice (Ctrl) or mice from a transgenic line expressing, Prnp-TARDBP (TDP43), were stained with antibodies recognizing Sox5, Bcl11b, or Rorβ and co-stained with DAPI to mark nuclei in the prospective somatosensory cortex (pS). (b) Quantification from (a) shown by six equal-sized bins (left panel) and the total number of Sox5- or Rorβ- or DAPI-positive cells in all bins and in layer V for Bcl11b (right panel). Only high-expressing Bcl11b+ neurons were counted. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, ***p≤0.001 by two-tailed t-test. IV, V, VI: layers IV, V, and VI. Scale bar: 100 μm.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig2-v1.jpg)
 
-**Figure 2.:** (a) Coronal sections from neonatal (P0) brains of controls (Ctrl), Pum2 cKO, or Prnp-TARDBP (TDP43A315TA315T) mice were stained with antibodies recognizing Sox5, Bcl11b, or with DAPI to mark nuclei in the frontal/motor area (F/M). (b) Quantification of results from n = 3 mice of each genotype is shown to the right of the relevant marker. Distribution of cells across six equal-sized bins is shown. For Bcl11b, only high-expressing neurons were counted. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype, two-tailed t-test. Pum2 cKO: Pum2; II–IV, V, VI: layers II–IV, V, and VI. Scale bar: 100 μm.fl/fl; Emx1Cre
+**Figure 2.:** (a) Coronal sections from neonatal (P0) brains of controls (Ctrl), Pum2 cKO, or Prnp-TARDBPA315T (TDP43A315T) mice were stained with antibodies recognizing Sox5, Bcl11b, or with DAPI to mark nuclei in the frontal/motor area (F/M). (b) Quantification of results from n = 3 mice of each genotype is shown to the right of the relevant marker. Distribution of cells across six equal-sized bins is shown. For Bcl11b, only high-expressing neurons were counted. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre; II–IV, V, VI: layers II–IV, V, and VI. Scale bar: 100 μm.
 
 We focused our analysis on the frontal/motor (F/M) and somatosensory cortices, which show characteristic differences in neuronal subtype ratios related to their specialized functions. The frontal motor area F/M is characterized by a thick layer V (Dehay and Kennedy, 2007; Polleux et al., 2001), in which many cells co-express the molecular determinants of subcerebral projection neurons (SCPNs): Sox5 and Bcl11b (Chen et al., 2008; Kwan et al., 2008; Lai et al., 2008). In contrast, the primary somatosensory area (S1) has a thick layer IV, in which most cells express Rorβ,a bona fide marker of layer IV stellate cells (Jabaudon et al., 2012; Nakagawa and O’Leary, 2003 Figure 1—figure supplement 4a and b). In P0 WT coronal sections, we observed dramatic differences in the prospective somatosensory area (pS) compared to the frontal motor area (F/M) when we analyzed key molecular identity determinants that define specific neuronal subtypes (Figure 1—figure supplement 4b; Arlotta et al., 2005; Bedogni et al., 2010; Chen et al., 2008; Jabaudon et al., 2012; Kwan et al., 2008; Lai et al., 2008; McKenna et al., 2011). In both mutants, the number of Sox5+ and Bcl11b+ neurons in the upper region of layer V was significantly increased and radially expanded in pS, accompanied by a corresponding decrease in the number of Rorβ+ neurons in layer IV (Figure 1, Figure 1—figure supplements 4a and 5a). DAPI staining revealed no significant differences (Figure 1, Figure 1—figure supplement 5a), consistent with a potential switch in neuronal identity specification, rather than effects on cell number or migration. Similar effects were not observed in F/M cortex, where neither the number nor the radial distribution of Sox5+, Bcl11b+, or Tbr1+ neurons in the mutant lines differed from controls and Rorβ was not expressed, as expected (Figure 2, Figure 1—figure supplements 5b and 6b). Unlike the dramatic effects on layer IV/V in pS, we detected no significant changes in the layer VI neuronal marker Tbr1 or the upper layer marker Cux1 (Nieto et al., 2004), implying normal neuronal specification in these layers (Figure 1—figure supplement 6a).
 
@@ -63,29 +103,29 @@ Analyzing effects on neuronal identity due to WT TDP43 overexpression in this li
 
 In sum, our phenotypic analyses in the pS and F/M areas support a role for the RBPs Pum2 and TDP-43 in area-specific regulation of neuronal identity marker expression in layers IV and V of the developing somatosensory cortex. Moreover, they suggest that Pum2 promotes the normal pattern of S1 neuronal identity marker expression, whereas gain of TDP-43 function can act in an apparently opposite manner to repress it.
 
-## Increased subcerebral connectivity for S1 neurons in Pum2 cKO and TDP43A315T mice
+### Increased subcerebral connectivity for S1 neurons in Pum2 cKO and TDP43A315T mice
 
 Co-expression of Bcl11b and Sox5 is a hallmark of SCPNs (Chen et al., 2008; Kwan et al., 2008; Lai et al., 2008), and ectopic Bcl11b overexpression in upper-layer progenitors is sufficient to redirect their axons from corticocortical projections into projections to subcerebral targets (Chen et al., 2008). We therefore wondered whether the increase and radial expansion of neurons expressing molecular determinants of SCPNs (Bcl11b and Sox5) would be accompanied by increased SCPN connectivity (Arlotta et al., 2005; Chen et al., 2008; Kwan et al., 2008; Lai et al., 2008). To examine this directly in Pum2 cKO and TDP43A315T mice, we injected fluorophore-labeled cholera toxin B (CTB) into the pons for retrograde labeling of SCPNs (Conte et al., 2009; Figure 3a). This revealed significantly increased labeling in layer V and a striking radial expansion in both Pum2 cKO and TDP43A315T vs. their respective littermate controls (Figure 3b and c).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig3-v1.jpg)
 
-**Figure 3.:** Pum2 cKO and TDP43A315T mice.(a) Schematic representation of cholera toxin subunit B (CTB) injections at the midbrain/hindbrain junction (pons) for retrograde labeling of subcerebral projection neurons (SCPNs), including corticospinal PNs (CSMN) and corticopontine PNs (CPoPN). (b) Coronal sections from primary somatosensory cortex (S1) of controls, Pum2 cKO, and TDP43A315T mice at P7 traced for SCPNs without (top) or with DAPI (bottom) staining. S1 columns merged with DAPI are divided into eight equal bins. White rectangles indicate bins 3 and 4. (c) Quantification of retrogradely labeled SCPNs in equal-sized bins for the three genotypes. Analysis of bins 3 and 4 is shown separately in the left panel and combined in the right panel. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. **p≤0.01, ***p≤0.001, two-tailed t-test. Pum2 cKO: Pum2; II–IV, V, VI: layers II–IV, V and VI, respectively. Scale bars: 100 μm.fl/fl; Emx1Cre
+**Figure 3.:** (a) Schematic representation of cholera toxin subunit B (CTB) injections at the midbrain/hindbrain junction (pons) for retrograde labeling of subcerebral projection neurons (SCPNs), including corticospinal PNs (CSMN) and corticopontine PNs (CPoPN). (b) Coronal sections from primary somatosensory cortex (S1) of controls, Pum2 cKO, and TDP43A315T mice at P7 traced for SCPNs without (top) or with DAPI (bottom) staining. S1 columns merged with DAPI are divided into eight equal bins. White rectangles indicate bins 3 and 4. (c) Quantification of retrogradely labeled SCPNs in equal-sized bins for the three genotypes. Analysis of bins 3 and 4 is shown separately in the left panel and combined in the right panel. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. **p≤0.01, ***p≤0.001, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre; II–IV, V, VI: layers II–IV, V and VI, respectively. Scale bars: 100 μm.
 
 To understand whether the increase in Sox5 corresponds with the increase in Bcl11b, we co-immunostained Sox5 and Bcl11b in coronal sections of Pum2 cKO and TDP43A315T and their control littermates. Our analysis showed an increase in the number of Sox5+/Bcl11b+ neurons in both mutants, suggesting that ectopic expression of Sox5 corresponds with that of Bcl11b (Figure 4a). We next combined retrograde labeling of SCPN with staining for either Sox5 or Bcl11b 2 to test whether the increased number of SCPN in S1 directly corresponds with the increased number of Sox5+/Bcl11b+ neurons. Our co-immunostaining showed that all retrogradely labeled neurons in controls and mutants co-expressed both Sox5 and Bcl11b (Figure 4b and c). Thus, the typical area-specific neuronal connectivity of S1 is dramatically altered in both Pum2 cKO and TDP43A315T, with more SCPNs in layer V and ectopic SCPNs in the position normally occupied by layer IV in S1. This pattern is reminiscent of motor cortex (Armentano et al., 2007; Harb et al., 2016; Tomassy et al., 2010), and thus, reflects apparent “motorization” of layer IV/V in S1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig4-v1.jpg)
 
-**Figure 4.:** (a) Coronal sections from neonatal (P0) brains of controls (Ctrl), Pum2 cKO, or Prnp-TARDBP (TDP43A315TA315T) mice were stained with antibodies recognizing Sox5 and Bcl11b in the prospective somatosensory area (pS). Quantification of Sox5 and Bcl11b colocalization from n = 3 mice of each genotype is shown to the right across six equal-sized bins. (b, c) Coronal sections from primary somatosensory cortex (S1) of controls, Pum2 cKO, and TDP43A315T mice at P7 traced for SCPNs combined with Sox5 (b) or Bcl11b (c) staining. White arrows in (a–c) indicate colocalization. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, two-tailed t-test. Pum2 cKO: Pum2; V, VI: layers V and VI. Scale bars: 100 μm.fl/fl; Emx1Cre
+**Figure 4.:** (a) Coronal sections from neonatal (P0) brains of controls (Ctrl), Pum2 cKO, or Prnp-TARDBPA315T (TDP43A315T) mice were stained with antibodies recognizing Sox5 and Bcl11b in the prospective somatosensory area (pS). Quantification of Sox5 and Bcl11b colocalization from n = 3 mice of each genotype is shown to the right across six equal-sized bins. (b, c) Coronal sections from primary somatosensory cortex (S1) of controls, Pum2 cKO, and TDP43A315T mice at P7 traced for SCPNs combined with Sox5 (b) or Bcl11b (c) staining. White arrows in (a–c) indicate colocalization. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre; V, VI: layers V and VI. Scale bars: 100 μm.
 
-## Most aspects of somatosensory area identity appear to be properly determined in Pum2 cKO and TDP43A315T mice, despite layers IV and V being ‘motorized’
+### Most aspects of somatosensory area identity appear to be properly determined in Pum2 cKO and TDP43A315T mice, despite layers IV and V being ‘motorized’
 
 Previously described mutants with a motorized layer IV/V in S1 affect multiple aspects of pS area identity (Armentano et al., 2007; Harb et al., 2016; Tomassy et al., 2010). Thus, we envisaged two hypotheses to explain apparent motorization of layer IV/V in Pum2 cKO and TDP43A315T mutant mice. On the one hand, Pum2 and TDP-43 might control area identity, like previously described transcriptional regulators mentioned above. Alternatively, they could control layer IV/V specification and connectivity without affecting area identity per se. To test these hypotheses, we examined two hallmarks of area identity in S1 of Pum2 cKO and TDP43A315T mice. We first checked the expression pattern of two standard molecular markers of neocortical area identity: Lmo4 (motor) (Huang et al., 2009) and Bhlhb5 (sensory) (Joshi et al., 2008). Both Pum2 cKO and TDP43A315T mice showed overall a wild-type pattern of Lmo4 and Bhlhb5 expression (Figure 5a). Quantitative analysis of the total number of Lmo4 and Bhlhb5 cells normalized to DAPI showed major differences between motor and somatosensory cortex in all genotypes, as expected, suggesting that the pS maintains its areal identity and does not show an F/M identity. On a laminar level, comparison of Lmo4 and Bhlhb5 analysis between controls and mutants (source data related to Figure 5a) showed no significant changes in Lmo4 and Bhlhb5 in the pS of Pum2 cKO compared to controls, but a significant increase in Lmo4 in bin1 and decrease in Bhlhb5 in bins 3 and 4 in TDP43A315T. In the case of the motor cortex, an increase in Bhlhb5 was observed in bin 6 of TDP43A315T while Lmo4 was unaltered in all bins. Pum2 cKO did not show any change for Bhlhb5, but Lmo4 expression was decreased in bins 1 and 4. These differences are not surprising since both Lmo4 and Bhlhb5 regulate area-specific laminar identity (Cederquist et al., 2013; Greig et al., 2013; Harb et al., 2016; Joshi et al., 2008) and do not affect our conclusion regarding the unchanged areal identity of pS or F/M. Next, we examined another major hallmark of area identity in S1: the specialized ‘barrels’ in layer IV. These clusters of glutamatergic interneurons receive somatosensory input from the whiskers via the thalamus and can be visualized by serotonin (5HT) staining of the thalamic presynaptic terminals. In contrast to previously described mutants with motorized somatosensory areas (Armentano et al., 2007; Tomassy et al., 2010), barrels formed efficiently at the same tangential position and their numbers are not significantly different from controls in S1 of either Pum2 cKO and TDP43A315T mice (Figure 5b), supporting a lack of major changes to thalamocortical axonal targeting and patterning in S1. Taken together, these experiments suggest that Pum2 and TDP-43 contribute to elaboration of area-specific cytoarchitecture of layers IV and V without strongly affecting area identity per se.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig5-v1.jpg)
 
-**Figure 5.:** Pum2 cKO and TDP43A315T mutants despite layers IV and V being ‘motorized.’.(a) Coronal sections of one brain hemisphere from controls (Ctrl), Pum2 cKO, and TDP43A315T brains at P0 co-immunostained for Lmo4 and Bhlhb5. Selected regions are marked by white rectangles in the upper panel, and high-magnification views of frontal motor (F/M) and prospective somatosensory (pS) areas are shown below. Scale bars: 400 μm and 100 μm, respectively. Quantification of results is shown to the right. (b) Sagittal sections from controls, Pum2 cKO (top), and TDP43A315T (bottom) at P7 immunolabeled for serotonin (5HT). Quantification of the number of barrels per section is shown to the right. Scale bar: 100 μm. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, ***p≤0.001, two-tailed t-test. Pum2 cKO: Pum2; Ctx: cortex; Hip: hippocampus; Str: striatum; S1BF: barrel field region of S1. Scale bar: 100 μm.fl/fl; Emx1Cre
+**Figure 5.:** (a) Coronal sections of one brain hemisphere from controls (Ctrl), Pum2 cKO, and TDP43A315T brains at P0 co-immunostained for Lmo4 and Bhlhb5. Selected regions are marked by white rectangles in the upper panel, and high-magnification views of frontal motor (F/M) and prospective somatosensory (pS) areas are shown below. Scale bars: 400 μm and 100 μm, respectively. Quantification of results is shown to the right. (b) Sagittal sections from controls, Pum2 cKO (top), and TDP43A315T (bottom) at P7 immunolabeled for serotonin (5HT). Quantification of the number of barrels per section is shown to the right. Scale bar: 100 μm. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, ***p≤0.001, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre; Ctx: cortex; Hip: hippocampus; Str: striatum; S1BF: barrel field region of S1. Scale bar: 100 μm.
 
-## Cell-autonomous and post-mitotic effects of TDP-43 gain of function and Pum2 loss of function on regulation of Sox5, Bcl11b, and Rorβ in pS neurons
+### Cell-autonomous and post-mitotic effects of TDP-43 gain of function and Pum2 loss of function on regulation of Sox5, Bcl11b, and Rorβ in pS neurons
 
 We next asked whether ectopic expression of hTDP-43 or the patient mutant hTDP-43A315T would be sufficient cell-autonomously to drive a switch in expression of Sox5, Bcl11b, and Rorβ. For these experiments, we prepared primary neuronal cultures from pS-enriched neocortices at E18.5 and transfected them with plasmids containing either WT TDP43, TDP43A315T, or EGFP as a control via electroporation before plating. After 2 days in culture, we fixed and stained the cells for both the transfected protein and for endogenous Sox5, Bcl11b, or Rorβ protein. We identified transfected cells by immunostaining for one of the epitope tags on hTDP-43 or EGFP for control transfections (Figure 6a–c). Subsequently, we quantified the number of transfected neurons that were also positive for Sox5, Bcl11b, or Rorβ protein in the three different transfections. This revealed that expression of either WT hTDP-43 or the hTDP-43A315T mutant in transfected cortical neurons could strongly induce Sox5 and Bcl11b proteins to a similar extent (Figure 6a and b). Expression of either protein also significantly reduced Rorβ protein expression (Figure 6c). These results are consistent with our observations with transgenic lines and suggest that increased levels of TDP-43, rather than a mutant-specific activity, contribute to altered layer neuron identity determinant expression through a gain-of-function mechanism. In addition, they further imply that TDP-43 overexpression can act cell-autonomously to control layer IV/V identity determinant expression in developing cortical neurons in the pS.
 
@@ -95,33 +135,321 @@ We next asked whether ectopic expression of hTDP-43 or the patient mutant hTDP-4
 
 To determine whether similar effects could be observed with TDP-43 in vivo and would extend to Pum2 loss of function, we performed IUEs. All electroporated plasmids used the pNeuroD promoter, which drives expression post-mitotically in newly born neurons and is not expressed in progenitors (Guerrier et al., 2009). We confirmed the efficiency of Pum2 deletion and hTDP-43 overexpression by double staining for GFP to label electroporated neurons and either for Pum2 or hTDP-43 (Figure 7—figure supplement 1). As shown in Figure 7, electroporating plasmids at E13.5, encoding either pNeuroD-Cre in Pum2fl/fl mice or WT TDP43 or the ALS-derived mutant TDP43A315T in WT mice, respectively, was sufficient to cell-autonomously drive a switch in expression of Sox5, Bcl11b, and Rorβ in pS. Post-mitotic deletion of Pum2 (Figure 7a) and expression of either WT hTDP-43 or the hTDP-43A315T mutant (Figure 7b) in newly born deep-layer cortical neurons led to robust induction of Sox5 and Bcl11b proteins and reduction of Rorβ protein expression; accordingly, mutant TDP-43 showed a slightly stronger effect than WT TDP-43. These in vivo results obtained after IUE are strikingly reminiscent of those seen in Pum2 cKO or TDP43A315T mice (Figure 1, Figure 1—figure supplement 5a) or after transfection of pS-enriched primary neurons (Figure 6) and provide another line of experimental evidence that loss of Pum2 and gain of TDP-43 function, respectively, yield these phenotypes.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig7-v1.jpg)
+
+**Figure 7.:** (a, b) Coronal sections from Pum2fl/fl (a) or WT (b) brains at P0 electroporated at E13,5 with pNeuroD-IRES-GFP as control, or with p-NeuroD-IRES-Cre-GFP to ablate Pum2 expression (a) or p-NeuroD-TDP43-IRES-GFP or p-NeuroD-TDP43A315T-IRES-GFP to overexpress hTDP-43 alleles only in post-mitotic neurons. Sections are co-stained with antibodies recognizing GFP to label electroporated neurons and antibodies recognizing Sox5, Bcl11b, or Rorβ. High-magnification views are shown to the right. White arrowheads indicate examples of electroporated neurons expressing Sox5-, Bcl11b-, and Rorβ-positive neurons while empty arrowheads indicate electroporated neurons not expressing these proteins. Quantification of the fraction of Sox5+, Bcl11b+, or Rorβ+ neurons among all electroporated cells is shown to the right of the representative images. Data are shown as means ± standard error of the mean (SEM), n = 3 for each electroporation. Both p-NeuroD-IRES-Cre-GFP and hTDP-43 alleles were co-electroporated with T-dimer (red) to distinguish them from littermate control brains electroporated only with pNeuroD-IRES-GFP. For both hTDP-43 alleles, the respective control littermates for each variant were combined to a total of n = 6 for pNeuroD-IRES-GFP electroporations. **p≤0.01, ***p≤0.001, two-tailed t-test. UL, V, VI: upper layers, layers V and VI. Scale bar: 100 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** High-magnification coronal sections from Pum2fl/fl (a) or WT (b) brains at P0 electroporated with pNeuroD-IRES-GFP as control, or with p-NeuroD-IRES-Cre-GFP to ablate Pum2 expression (a) or p-NeuroD-TDP43-IRES-GFP or p-NeuroD-TDP43A315T-IRES-GFP to overexpress hTDP-43 alleles only in post-mitotic neurons (b). Sections were co-stained with antibodies recognizing GFP to label electroporated neurons and antibodies recognizing Pum2 to validate Pum2 deletion, and hTDP-43 to validate hTDP-43 overexpression compared to DAPI-positive GFP-negative nonelectroporated neurons. White arrowheads indicate cells expressing Pum2 or hTDP-43 while empty arrowheads indicate cells not expressing these proteins. Scale bars: 25 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (a, b) Coronal sections from Pum2fl/fl (a) or WT (b) brains at P0 electroporated at E14.5 with pNeuroD-IRES-GFP as control, or with p-NeuroD-IRES-Cre-GFP to ablate Pum2 expression (a) or p-NeuroD-TDP43-IRES-GFP or p-NeuroD-TDP43A315T-IRES-GFP to overexpress hTDP-43 alleles only in post-mitotic neurons (b). Sections are co-stained with antibodies recognizing GFP to label electroporated neurons and antibodies recognizing Sox5, Bcl11b, or Rorβ. White boxes indicate selected cortical regions. High-magnification views of the selected areas are shown to the right. White arrowheads indicate examples of electroporated neurons expressing Sox5-, Bcl11b-, and Rorβ-positive neurons while empty arrowheads indicate electroporated neurons not expressing these proteins. UL, V, VI: upper layers, layers V and VI; SEM: standard error of the mean. Scale bar: 100 μm.
+
 Electroporation of the same plasmids at E14.5 to target upper layer neurons revealed that the fate of these neurons could not be altered by either loss of Pum2 function or gain of TDP-43 function (Figure 7—figure supplement 2), consistent with our earlier data with mutant and transgenic lines. Electroporated upper-layer neurons with either pNeuroD-Cre in Pum2fl/fl mice or WT TDP43 or TDP43A315T in WT mice did not show ectopic Sox5 or Bcl11b expression, exactly like neurons electroporated with the control pNeuroD-IRES GFP. Collectively, our results with transfection of primary neurons from the pS and IUE of developing pS in vivo support the idea that TDP-43 gain of function and Pum2 loss of function can cell-autonomously and post-mitotically change the relative expression of known molecular determinants of layer IV/V neuronal identity in the pS of developing neocortex.
 
-## Evidence that Pum2 and TDP-43 probably use post-transcriptional mechanisms to regulate layer IV/V neuronal identity determinants
+### Evidence that Pum2 and TDP-43 probably use post-transcriptional mechanisms to regulate layer IV/V neuronal identity determinants
 
 We next investigated the molecular mechanisms used by Pum2 and TDP-43 to control area-specific neuronal identity and connectivity in S1. For these studies, we again focused for simplicity on the TDP43A315T line since it showed quantitatively stronger phenotypes relative to WT TDP43. Because both RBPs are known to post-transcriptionally regulate their target mRNAs, we first analyzed mRNA levels for the previously characterized layer IV/V molecular determinants Sox5, Bcl11b, and Rorb, which we showed in Figure 1 and Figure 1—figure supplement 9 to have an increased or decreased number of cells positive for these proteins in the neocortex of Pum2 cKO mice and in mice overexpressing either hTDP-43A315T or WT hTDP-43 protein transgenically. In parallel, we also analyzed mRNA levels for Fezf2, a master regulator of subcerebral identity, which functions upstream of Bcl11b to specify the fate of layer V subcerebral neurons (Chen et al., 2005; Chen et al., 2008; McKenna et al., 2011; Molyneaux et al., 2005; Rouaux and Arlotta, 2013). qRT-PCR with RNA obtained from dissected pS-enriched neocortex at P0 indicated no significant differences in steady-state mRNA levels of any of these mRNAs in either Pum2 cKO or TDP43A315T relative to littermate controls (Figure 8a and b; Table 1). This suggests that altered mRNA levels are not likely to be the basis for altered levels of Sox5, Bcl11b, and Rorβ proteins in S1, although effects within specific cell types might potentially be missed in a pS-wide assay.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig8-v1.jpg)
 
-**Figure 8.:** Pum2 cKO or TDP43A315T mutants.qRT-PCR of RNA derived from P0 somatosensory area-enriched cortical lysates for Pum2 cKO (a) or TDP43A315T (b). The fold change for Sox5, Bcl11b, Rorb, and Fezf2 mRNAs normalized to GAPDH mRNA is shown for mutants relative to respective control samples (Ctrl). Data are displayed as means ± standard error of the mean (SEM) for at least n = 4 of each genotype. (c) Single-molecule fluorescent in situ hybridization (smFISH) for Sox5, Bcl11b, Rorb, and Fezf2 mRNAs on coronal sections from the prospective somatosensory area (pS) of controls (Ctrl), Pum2 cKO, and TDP43A315T mice at P0. Distribution of cells across six equal-sized bins is shown. (d) Quantification from (c). The number of RNA dots in the bins where they are mostly expressed is normalized to the total number of cell nuclei (DAPI) within that bin. Data are shown as means ± SEM, at least n = 3 for each genotype. *p≤0.05 by two-tailed t-test. Pum2 cKO: Pum2; IV, V, VI: layers IV, V and VI, respectively. Scale bar: 100 μm.fl/fl; Emx1Cre
+**Figure 8.:** qRT-PCR of RNA derived from P0 somatosensory area-enriched cortical lysates for Pum2 cKO (a) or TDP43A315T (b). The fold change for Sox5, Bcl11b, Rorb, and Fezf2 mRNAs normalized to GAPDH mRNA is shown for mutants relative to respective control samples (Ctrl). Data are displayed as means ± standard error of the mean (SEM) for at least n = 4 of each genotype. (c) Single-molecule fluorescent in situ hybridization (smFISH) for Sox5, Bcl11b, Rorb, and Fezf2 mRNAs on coronal sections from the prospective somatosensory area (pS) of controls (Ctrl), Pum2 cKO, and TDP43A315T mice at P0. Distribution of cells across six equal-sized bins is shown. (d) Quantification from (c). The number of RNA dots in the bins where they are mostly expressed is normalized to the total number of cell nuclei (DAPI) within that bin. Data are shown as means ± SEM, at least n = 3 for each genotype. *p≤0.05 by two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre; IV, V, VI: layers IV, V and VI, respectively. Scale bar: 100 μm.
+
+**Table 1.**
+ qRT-PCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mRNA</th>
+      <th>Forward primer (5′–3′)</th>
+      <th>Reverse primer (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sox5</td>
+      <td>CCAGGACTTGTCTTTCCAG</td>
+      <td>CCCTGAAGCAGAGGAAGATG</td>
+    </tr>
+    <tr>
+      <td>Bcl11b</td>
+      <td>AAGCCATGTGTGTTCTGTGC</td>
+      <td>AAAGGCATCTGTCCAAGCAG</td>
+    </tr>
+    <tr>
+      <td>Rorb</td>
+      <td>ATGCCAGCTGATGGAGTTCT</td>
+      <td>TAGCTCCCGGGATAACAATG</td>
+    </tr>
+    <tr>
+      <td>Fezf2</td>
+      <td>GTGGCTCCCACCTTTGTACATTCA</td>
+      <td>TCACGGTGACAGGCTGGGATTAAA</td>
+    </tr>
+    <tr>
+      <td>Cux1</td>
+      <td>CCTGCAGAGTGAGCTGGAC</td>
+      <td>GCTTGCTGAAGGAGGAGAAC</td>
+    </tr>
+    <tr>
+      <td>Gapdh</td>
+      <td>TTGATGGCAACAATCTCCAC</td>
+      <td>CGTCCCGTAGACAAAATGGT</td>
+    </tr>
+    <tr>
+      <td>Pum2</td>
+      <td>CCCCGAGATTCTAATGCAAG</td>
+      <td>CTGGAAGAAGCACGGTGAAT</td>
+    </tr>
+    <tr>
+      <td>Pum2 exons 6&amp;7</td>
+      <td>ATTGGGCCCTCTTCCTAATC</td>
+      <td>CCAACTTGGTCCATTGCAT</td>
+    </tr>
+    <tr>
+      <td>Tardbp</td>
+      <td>CGTGTCTCAGTGTATGAGAGGAGTC</td>
+      <td>CTGCAGAGGAAGCATCTGTCTCATCC</td>
+    </tr>
+    <tr>
+      <td>Emx1</td>
+      <td>ACCATAGAGTCCTTGGTGGC</td>
+      <td>TGGGGTGAGGATAGTTGAGC</td>
+    </tr>
+    <tr>
+      <td>Sox6</td>
+      <td>GCATAAGTGACCGTTTTGGCAGG</td>
+      <td>GGCATCTTTGCTCCAGGTGACA</td>
+    </tr>
+    <tr>
+      <td>Unc5C</td>
+      <td>ACTCAATGGCGGCTTTCAGCCT</td>
+      <td>GGTCCAGAATTGGAGAGTTGGTC</td>
+    </tr>
+    <tr>
+      <td>18s rRNA</td>
+      <td>CTTAGAGGGACAAGTGGCG</td>
+      <td>ACGCTGAGCCAGTCAGTGTA</td>
+    </tr>
+    <tr>
+      <td>Rluc</td>
+      <td>TGGTAACGCGGCCTCTTCT</td>
+      <td>GCCTGATTTGCCCATACCAA</td>
+    </tr>
+  </tbody>
+</table>
 
 Next, we sought to confirm the results from our qRT-PCR assays using an independent method with higher spatial resolution. To this end, we performed RNA-specific single-molecule fluorescenct in situ hybridization (smFISH) to enable quantification of mRNA levels within newly born neurons in specific layers of the pS. To enable direct comparison, these experiments were also performed at P0, the time when protein levels and cell fate were strongly altered in the Pum2 cKO and TDP43 transgenic lines. In order to determine whether a change in mRNA levels within specific layer neurons might explain the protein level changes observed by antibody staining in Figure 1, we hybridized specific antisense probes to Sox5, Bcl11b, Rorb, and Fezf2 mRNAs and analyzed mRNA levels in pS using the same binning approach, but now for the mRNAs (Figure 8c). Specifically, we counted the number of smFISH dots, which correspond to single mRNAs, in specific regions of the pS for confocal images obtained from each genotype. As shown in Figure 8d, this revealed no significant differences in the levels of Sox5, Bcl11b, or Fezf2 mRNA levels in either mutant relative to controls. In contrast, we observed a paradoxical increase in Rorb mRNA in both genotypes (Figure 8d), even though Rorβ protein levels were decreased (Figure 1). Taken together, our qRT-PCR and smFISH data do not reveal evidence for transcriptional or stability effects on mRNA levels. Accordingly, such changes may therefore not be the reason for altered Sox5, Bcl11b or Rorβ protein levels in the pS of Pum2 cKO or TDP43A315T mutants. .
 
 It is important to note that we cannot exclude potential effects on transcription and/or mRNA stability in neuronal subpopulations that might be missed in our bulk assays. Moreover, smFISH may not be sufficiently quantitative to detect these effects in situ. Potential caveats notwithstanding, these orthogonal assays provide reasonable evidence that the protein-level phenotypes may result from post-transcriptional effects impinging on mRNA translation and/or protein stability.
 
-## No detectable tissue-wide effects of Pum2 or TDP-43 on splicing or polyadenylation site usage of Sox5, Bcl11b, or Rorb mRNAs in developing neocortex
+### No detectable tissue-wide effects of Pum2 or TDP-43 on splicing or polyadenylation site usage of Sox5, Bcl11b, or Rorb mRNAs in developing neocortex
 
 Our qRT-PCR and smFISH data did not provide evidence for mRNA-level changes as the basis for the observed protein-level changes in layer IV/V of pS. We therefore considered whether other RNA regulatory mechanisms might underlie changes in Sox5, Bcl11b, and Rorβ protein levels. Thus, we next examined the potential effects on alternative pre-mRNA splicing and alternative 3′ end formation/polyadenylation (APA), two post-transcriptional regulatory mechanisms that can indirectly affect translation and/or protein stability and are implicated in the control of brain development (Furlanis and Scheiffele, 2018; Hermey et al., 2017; Nguyen et al., 2016; Zheng and Black, 2013). Consistent with its cytoplasmic localization, Pum2 has not been implicated in either of these nuclear pre-mRNA processing events. However, numerous studies have demonstrated alternative splicing regulation by TDP-43, including an analysis of the transgenic TDP43 line that we examined here (Arnold et al., 2013; Lagier-Tourenne et al., 2012; Polymenidou et al., 2011; Tollervey et al., 2011). Moreover, TDP-43 knockdown in cultured cell lines has also been shown to affect APA site usage (Rot et al., 2017), suggesting that this might also potentially occur with hTDP-43 overexpression in the intact developing brain. We therefore examined the potential effects on splicing and APA in pS-enriched neocortex of the Pum2 cKO and TDP43A315T lines.
 
 Focusing initially on pre-mRNA splicing, we designed primers to specific splice variants of Sox5, Bcl11b, and Rorb (Table 2) annotated in the Ensembl release 98 database for mouse (GRCm38.p6) (Zerbino et al., 2018). As shown in Figure 9—figure supplement 1a and b, we detected expression of these mRNA variants at different levels in pS at P0 using this approach, consistent with alternative splicing occurring in this tissue. However, we did not observe any significant changes in their levels relative to littermate controls in tissue from either Pum2 cKO or TDP43A315T mice. To further probe the potential effects on alternative splicing of Sox5 mRNA with an independent approach, we used previously described RT-PCR primer sets (Table 3) that produce different amplicon sizes resolvable by agarose gel electrophoresis depending on alternative splicing (Edwards et al., 2014). Consistent with qRT-PCR, this approach revealed that mRNA variants previously characterized in non-neuronal tissues are also generated by alternative splicing in developing neocortical pS. However, these splicing patterns were not altered significantly in either Pum2 cKO or TDP43A315T mice (Figure 9—figure supplement 1c). These data suggest that there are no significant tissue-wide effects on splicing of Sox5, Bcl11b, or Rorb mRNAs in the neocortical pS of either Pum2 cKO or TDP43A315T mice.
 
+**Table 2.**
+ qRT-PCR splicing isoforms primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mRNA</th>
+      <th>Forward primer (5′–3′)</th>
+      <th>Reverse primer (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sox5 204</td>
+      <td>CGTACATGATACGTCCTCCC</td>
+      <td>CCAGCCCCACTGTTTATTC</td>
+    </tr>
+    <tr>
+      <td>Sox5 206</td>
+      <td>CTTGAGGTTTGTTCTCCTCTG</td>
+      <td>GCCATAGTGGTTGGGATCAG</td>
+    </tr>
+    <tr>
+      <td>Sox5 211</td>
+      <td>GTACATGATACGTCCTCCCC</td>
+      <td>TCTTGTCTGTGTGAATGCTG</td>
+    </tr>
+    <tr>
+      <td>Sox5 diff</td>
+      <td>ATGCTTACTGACCCTGATTTAC</td>
+      <td>TCTCACTCTCCTCCTCTTCC</td>
+    </tr>
+    <tr>
+      <td>Bcl11b 201</td>
+      <td>CAGTGTGAGTTGTCAGGTAAAG</td>
+      <td>GCTCCAGGTAGATTCGGAAG</td>
+    </tr>
+    <tr>
+      <td>Bcl11b 202</td>
+      <td>TCCCAGAGGGAACTCATCAC</td>
+      <td>GCTCCAGGTAGATTCGGAAG</td>
+    </tr>
+    <tr>
+      <td>Bcl11b 203</td>
+      <td>CCTACTGTCACCCACGAAAG</td>
+      <td>GCTCCAGGTAGATTCGGAAG</td>
+    </tr>
+    <tr>
+      <td>Rorb 201</td>
+      <td>CTGCACAAATTGAAGTGATACC</td>
+      <td>AAACAGTTTCTCTGCCTTGG</td>
+    </tr>
+    <tr>
+      <td>Rorb 202</td>
+      <td>AAGCATAGCACGCAGCACTC</td>
+      <td>ATCCCGGAGGATTTATCGCCAC</td>
+    </tr>
+    <tr>
+      <td>Rorb 203</td>
+      <td>AGCGGAATTTTTGGGTTCTC</td>
+      <td>ACGTGATGACTCCGTAGTG</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Sox5 isoforms PCR primers.Each forward primer has its reverse primer below. F: forward; R: reverse.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Allele</th>
+      <th>Primer (5′–3′)</th>
+      <th>Predicted size (bp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mSox5-346F</td>
+      <td>CCT TTC ACC TTC CCT TAC ATG</td>
+      <td rowspan="2">833</td>
+    </tr>
+    <tr>
+      <td>mSox5-1178R</td>
+      <td>AGC AGC TGC CAT AGT GGT TG</td>
+    </tr>
+    <tr>
+      <td>mSox5-512F</td>
+      <td>CAA CTC ATC TAC CTC ACC TCA G</td>
+      <td rowspan="2">457</td>
+    </tr>
+    <tr>
+      <td>mSox5-968R</td>
+      <td>CAG AAG CTG CTG CTG TTG</td>
+    </tr>
+    <tr>
+      <td>mSox5-899F</td>
+      <td>ACA GCG TCA GCA GAT GGA G</td>
+      <td rowspan="2">637</td>
+    </tr>
+    <tr>
+      <td>mSox5-1535R</td>
+      <td>GCT AAC TCT TGC AGA AGG AC</td>
+    </tr>
+    <tr>
+      <td>mSox5-1426F</td>
+      <td>CTG CAT CAC CCA CCT CTC</td>
+      <td rowspan="2">535</td>
+    </tr>
+    <tr>
+      <td>mSox5-1960R</td>
+      <td>CTG ATG TTG GAA TTG TGC ATG</td>
+    </tr>
+  </tbody>
+</table>
+
 After not finding any significant tissue-wide effects on alternative splicing of key determinants of layer IV/V neuronal identity, we next examined the potential effects on mRNA 3′ end formation via APA. Transcript isoforms with different 3′ ends were annotated in the Ensembl release 98 database for mouse (GRCm38.p6) (Zerbino et al., 2018) for Sox5, Bcl11b, and Rorb (Table 4), and we confirmed expression of these isoforms in the pS at P0 by qRT-PCR using specific primer sets (Figure 9—figure supplement 2a). This revealed clear differences in the relative expression of the isoforms in the developing pS at baseline, but no significant changes in the relative levels of the mRNA isoforms in the mutant lines relative to their respective littermate controls (Figure 9—figure supplement 2b). We conclude that APA of Sox5, Bcl11b, and Rorb mRNAs is not generally affected in the pS area of developing neocortex in either Pum2 cKO or TDP43A315T mice.
+
+**Table 4.**
+ qRT-PCR 3′UTR isoforms primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mRNA</th>
+      <th>Forward primer (5′–3′)</th>
+      <th>Reverse primer (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sox5 S1</td>
+      <td>GCCGTTCTCAGGTGAAAAGA</td>
+      <td>GCCTGACATTATTCCCCAAT</td>
+    </tr>
+    <tr>
+      <td>Sox5 S2</td>
+      <td>CAGACAACTGCAGCCACTTC</td>
+      <td>TTGGCAACATGAGAGGACTG</td>
+    </tr>
+    <tr>
+      <td>Sox5 S3</td>
+      <td>TAGGTCACTTGGGGGAAAGC</td>
+      <td>GCAAGGGCATTGTGTTGTTA</td>
+    </tr>
+    <tr>
+      <td>Sox5 S4</td>
+      <td>TGCAAACTACCATCTCACTTG AA</td>
+      <td>TGGCATGAATGATAACATAAAA CC</td>
+    </tr>
+    <tr>
+      <td>Bcl11b B1</td>
+      <td>GGACGGGAAAATGCCATAAG</td>
+      <td>AAGTCACCTCCACTCCATATC</td>
+    </tr>
+    <tr>
+      <td>Bcl11b B2</td>
+      <td>TACCCTGCCCTTTTGACACC</td>
+      <td>TTGACAGAGACACACAAGTCC</td>
+    </tr>
+    <tr>
+      <td>Rorb R1</td>
+      <td>GGAAAACAGGGTAATGGAAGG</td>
+      <td>GGGAACATCAAGTAGACACAG</td>
+    </tr>
+    <tr>
+      <td>Rorb R2</td>
+      <td>AAATATGTACTCGCTCCCTTTC</td>
+      <td>AGCCCTGTCCCTTTCTTAG</td>
+    </tr>
+  </tbody>
+</table>
 
 While we cannot rule out subtle effects in neuronal subpopulations that might be missed in our tissue-wide assay, these results with pS-enriched RNA and isoform-specific primers do not support either alternative splicing or APA of Sox5, Bcl11b, and Rorb mRNAs as a likely basis for effects on the corresponding proteins observed in Pum2 cKO or hTPD-43 transgenic mice.
 
-## Evidence for both translational activation and repression of Sox5, Bcl11b, and Rorb mRNAs by Pum2 and TDP-43 in developing neocortex
+### Evidence for both translational activation and repression of Sox5, Bcl11b, and Rorb mRNAs by Pum2 and TDP-43 in developing neocortex
 
 We next considered whether there might be specific effects on the translation of Sox5, Bcl11b, and Rorb mRNAs. To examine the potential effects of Pum2 and hTDP-43A315T on translation in developing neocortex, we used sucrose density gradient fractionation-based polysome profiling of neocortical lysates from mutants and littermate controls. This classic biochemical fractionation method can reveal changes in the relative number of ribosomes engaged with cellular mRNAs on a global and mRNA-specific level (Figure 9a and b). Importantly, because the percentage of total RNA signal in the different fractions is plotted, changes in an mRNA’s translational status in this assay are unrelated to the mRNA levels themselves.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig9-v1.jpg)
+
+**Figure 9.:** (a) Schematic overview of polysome profiling for developing neocortices. Lysates from dissected E14.5 cortices were separated on polysome gradients, and RNA was prepared from fractions (F1–6) corresponding to the indicated ribosomal densities. (b) A schematic representation showing dissection of an enriched prospective somatosensory region from P0 brains using millimeter paper to eliminate 1 mm from the rostral end and 1 mm from the caudal end of cortices. Lysates for polysome profiling were made from the remaining part. F/M: frontal/motor area; pS: prospective somatosensory cortex; A1: primary auditory cortex; V1: primary visual cortex. (c, d) Histograms depict the distribution of the Sox5, Bcl11b, Rorb, and Fezf2 mRNAs across the gradient fractions for TDP43A315T (c) and Pum2 cKO (d), relative to corresponding controls (Ctrl). Samples in heavier gradient fractions were virtually pooled at analysis to simplify visualization in (d) and in the case of the Bcl11b B1 primer in (c). Levels of specific mRNAs in each fraction were analyzed by qRT-PCR with normalization to an RLuc mRNA spike-in control, which was added in an equal amount to the fractions prior to RNA preparation. Data are shown as means ± standard error of the mean (SEM), n = 3 for each genotype. *p≤0.05, **p≤0.01, one-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (a, b) Expression of Sox5, Bcl11b, and Rorb splicing mRNA isoforms normalized to GAPDH mRNA is shown in P0 somatosensory area-enriched cortical lysates of Pum2 cKO (a) and TDP43 A315T (b) mutants and their respective control samples (Ctrl). For Sox5, seven protein-coding isoforms were annotated. We designed primers recognizing three of them, and it was not possible to design specific qPCR primers to distinguish the other four isoforms for which we used a primer called Sox5 diff to detect the four of them simultaneously. Splicing isoforms for mouse Bcl11b/Bcl11b and Rorb mRNAs were identified from Ensembl. Non-protein-coding isoforms were not taken into consideration. Data are shown as means ± standard error of the mean (SEM) for at least n = 4 of each genotype. Pum2 cKO: Pum2fl/fl; Emx1Cre. Two-tailed t-test. (c) RT-PCR showing the expression of different Sox5 splicing isoforms in the prospective somatosensory cortex (pS) from three mice (N1–3) of Ctrl, Pum2 cKO, and TDP43 A315T. Note the similar isoform expression between controls and mutants. Pum2 cKO: Pum2fl/fl; Emx1Cre.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (a) 3′UTR regions for mouse Sox5, Bcl11b/Bcl11b, and Rorb mRNAs from Ensembl are shown to scale. Alternative polyadenylation sites that give rise to the different 3′UTR isoforms are indicated, as are corresponding transcripts in Ensembl. Position of consensus Pum2-binding sequences (yellow) and UG repeat stretches predicted to be bound by TDP-43 (red) is indicated. Note that alternative polyadenylation gives rise to isoforms with different numbers of predicted binding sites. Binding sites for 3′UTR qPCR primer sets used in (b) are also indicated. (b) Expression of 3′UTR isoforms for Sox5, Bcl11b, and Rorb was measured by qRT-PCR of prospective somatosensory area-enriched cortical lysates at P0 of controls (Ctrl), Pum2 cKO, and TDP43A315T. mRNA levels are shown as fold change to GAPDH mRNA. Data are shown as means ± standard error of the mean (SEM) for at least n = 4 of each genotype, two-tailed t-test. Pum2 cKO: Pum2fl/fl; Emx1Cre.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** (a) Representative polysome profiles from E14.5 neocortices are shown for controls (Ctrl), Pum2 cKO (top), and TDP43A315T (bottom). Quantification of polysome/monosome (P/M) ratio for n = 3 of each genotype is shown to the right of the corresponding representative profiles. (b) Histograms showing the distribution of the Sox5 and Bcl11b mRNAs at E13.5, and Sox5, Bcl11b, and Rorb mRNAs at E14.5 and E18.5 across polysome gradient fractions for Pum2 cKO relative to controls. E13.5 is the peak time of birth for layer V neurons when no layer IV Rorβ+ neurons are born yet. Values were normalized to an RLuc mRNA spike-in control, which was added in an equal amount to the fractions prior to RNA preparation. Data are represented as means ± standard error of the mean (SEM). **p≤0.01 by two-tailed t-test. (c) Coronal sections from controls and Pum2 cKO cortices at E13.5 stained for DAPI, or immunostained for Sox5, Bcl11b, or Tbr1 showing their expression only in the nascent neurons in the cortical plate (CP), but not in the ventricular zone (VZ) or subventricular zone progenitors. Error bars: 100 μm and 50 μm in high-magnification images. Pum2 cKO: Pum2fl/fl; Emx-Cre.
 
 Unlike mice lacking the RBP HuR, which show strong defects in brain development that correlated with effects on both general and mRNA-specific translation (Kraushar et al., 2014), we observed no differences in the overall polysome profiles in Pum2 cKO or TDP43A315T neocortices (Figure 9—figure supplement 3a), suggesting that general translation is not strongly affected in this tissue in these lines. We next used qRT-PCR from the polysome fractions to investigate mRNA-specific translational regulation, normalizing to an in vitro transcribed Renilla luciferase (RLuc) ‘spike-in’ standard that we added to the fractions prior to RNA purification (Figure 9c and d). As noted above, multiple 3′UTR isoforms of Sox5, Bcl11b, and Rorb mRNAs with different numbers of predicted binding sites for Pum2 and/or TDP-43 are annotated in the Ensembl release 98 database for mouse (GRCm38.p6) (Zerbino et al., 2018), and we found that a mixed population of transcripts appears to be expressed in developing neocortex (Figure 9—figure supplement 2a and b). In our sucrose density gradient polysome profile analyses, we focused on primer sets (Tables 1 and 4) recognizing mRNA isoforms with predicted binding sites for Pum2 and/or TDP-43 (Figure 9—figure supplement 2a) wherever possible because material was limited and we reasoned that this would improve sensitivity in this bulk tissue assay.
 
@@ -129,9 +457,17 @@ Results for polysome profiling for TDP43A315T from whole neocortices at E14.5, t
 
 Unlike with TDP43A315T, for Pum2 cKO neocortices, we did not observe significant effects on mRNA translational status in the polysome assay at E14.5 (Figure 9—figure supplement 3b). Therefore, we performed additional polysome analyses at other stages to gain insight into when during development translational control by Pum2 might be detectable using this assay. At P0, when neurogenesis is complete (Buratti and Baralle, 2014; Chen et al., 2008) and it is technically possible to enrich for the pS by dissection (Figure 9b), we found evidence for increased ribosome engagement with Sox5 and Bcl11b mRNAs and reduced ribosome density on Rorb mRNA (Figure 9d). Conversely, we did not observe an effect on Sox5, Bcl11b, or Rorb mRNA translation at E13.5, the peak birth time for layer V neurons (Greig et al., 2013; Molyneaux et al., 2007), or at E18.5 (Figure 9—figure supplement 3b). Taken together, these data support the idea that translational regulation of the mRNAs encoding Sox5, Bcl11b, and Rorβ proteins by Pum2 may begin after birth and is therefore more likely to occur in post-mitotic neurons, rather than in neuronal progenitors. Consistent with this idea, when we directly examined nascent neurons of Pum2 cKO mice at E13.5, we did not observe increased protein expression of regulators of layer VI and V neuronal identity Sox5, Bcl11b, or Tbr1 (Figure 9—figure supplement 3c), providing further evidence that regulation might be post-mitotic, rather than at progenitor level. Because our polysome gradient assay detects changes in translational status independently of mRNA levels and because we did not find any evidence of corresponding effects on mRNA levels, splicing, or polyadenylation of these mRNAs, we conclude that increased translation of Sox5 and Bcl11b mRNAs, together with decreased translation of Rorb mRNA, is likely to be at least one molecular mechanism contributing to the corresponding changes detected at the protein level in developing pS of the Pum2 cKO and TDP43A315T lines. Taken together, our genetic and biochemical data establish a correlation between effects on the translational status of Sox5, Bcl11b, and Rorb mRNAs and area-specific effects on levels of the encoded proteins in S1.
 
-## Cytoplasmic Pum2 and TDP-43 localize with and directly bind to mRNAs encoding key regulators of layer IV/V neuronal identity in developing neocortex
+### Cytoplasmic Pum2 and TDP-43 localize with and directly bind to mRNAs encoding key regulators of layer IV/V neuronal identity in developing neocortex
 
 We next asked whether apparent effects on translation by Pum2 and TDP-43 in developing neocortex could potentially be mediated by direct interaction of these proteins with the regulated mRNAs. Endogenous mouse TDP-43 is present in cytoplasmic lysates from neocortex at P0 (Figure 1—figure supplement 8), implying that it could conceivably function in the cytoplasm to regulate post-transcriptional processes such as translation at this stage. Moreover, immunostaining revealed that both Pum2 and endogenous mouse TDP-43 were detectable in the cytoplasm of both progenitors and post-mitotic neurons in the pS during early neurogenesis and postnatally (Figure 10—figure supplement 1). We also performed high-resolution imaging of post-mitotic neurons in layer IV/V of the developing pS using combined immunostaining/smFISH. Bcl11b and Rorb mRNAs were observed as discrete foci primarily in the cytoplasm, whereas Sox5 mRNA foci were detected in both the nucleus and cytoplasm (Figure 10a and b). Cytoplasmic mRNA foci overlapped with the diffuse staining seen throughout the cytoplasm for both Pum2 and TDP-43 (Figure 10a and b). These data demonstrate that both these mRNAs and the RBPs that regulate them are present in the cytoplasm of post-mitotic neurons in developing pS, suggesting that they could potentially interact there in neuronal messenger ribonucleoprotein (mRNP) complexes. In addition, our immunoblot analyses in Figure 1—figure supplement 8 demonstrated increased levels of both hTDP-43 and hTDP-43A315T proteins in the cytoplasm at P0. This observation is consistent with a possible gain-of-function effect of hTDP-43 in this cellular compartment.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig10-v1.jpg)
+
+**Figure 10.:** (a, b) Single-molecule fluorescent in situ hybridization (smFISH) for Sox5, Bcl11b, and Rorb mRNAs coupled with immunofluorescence for Pum2 (a) or TDP-43 (b) on coronal sections from the prospective somatosensory area (pS) of WT mice. High-magnification views taken in layer V for Sox5 and Bcl11b or layer IV for Rorb are shown to the right. White arrows indicate examples of Sox5, Bcl11b, and Rorb mRNAs that overlap with Pum2 or TDP-43 protein immunofluorescence signal. Individual channels for a representative cell (delineated with dashed lines) are shown to the very right of each respective image. Scale bars: 25 μm. (c) UV Cross-linking immunoprecipitation (UV-CLIP) results from E18.5 cortices are shown. Dissociated cells were either cross-linked with UV light or left untreated as a control. Lysates were used for immunoprecipitations with antibodies against TDP-43 (top), Pum2 (bottom), or control nonspecific IgG (not shown). RNA in the input and immunoprecipitated (IP) eluate were analyzed by qRT-PCR for the indicated mRNAs. After verifying enrichment relative to IgG controls for UV-treated samples, histograms were generated that represent the fraction of input mRNA co-immunoprecipitated with either Pum2 or TDP-43 in the presence or absence of UV cross-linking. Statistically significant enrichment was evaluated relative to 18S rRNA, which is not known to interact significantly with either protein. Reduced signal in the absence of UV cross-linking implies an interaction is cross-linking-dependent, that is, direct. Data are represented as means ± standard error of the mean (SEM) from n = 3–6 samples. *p≤0.05, **p≤0.01 Mann–Whitney U test.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/55199/elife-55199-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (a) Wild-type coronal sections from frontal motor (F/M) and prospective somatosensory (pS) areas at P0 immunostained for endogenous mouse Pum2 or TDP-43. White boxes indicate the selected cortical areas and high-magnification images of these areas showing expression and subcellular localization of indicated proteins as shown below. Note that every cell shows cytoplasmic signal for Pum2 and TDP-43, as well as additional nuclear signal for TDP-43. White and yellow arrowheads indicate examples of cytoplasmic and nuclear localization, respectively. respectively. (b) Wild-type C57BL/6J (WT) coronal sections from pS areas at E12.5 (top) and E13.5 (bottom) immunostained for endogenous mouse Pum2 (left) or TDP-43 (right). II–IV, V, VI: layers II–IV, V and VI; CP: cortical plate; VZ: ventricular zone. Scale bars: (a) 100 μm, 25 μm (inset) and (b) 50 μm.
 
 To assess whether Pum2 and TDP-43 might directly interact with Sox5, Bcl11b, or Rorb mRNAs, we examined several published genome-wide binding studies for Pum2 (Hafner et al., 2010; Sternburg et al., 2018; Uyhazi et al., 2020) and TDP-43 (Colombrita et al., 2012; Herzog et al., 2020; Kapeli et al., 2016; Narayanan et al., 2012; Polymenidou et al., 2011; Tollervey et al., 2011). However, as far as we could tell, these mRNAs were not detected in these studies. Presumably, this is because they show a relatively specific temporal and spatial expression pattern in the developing neocortex, whereas most published studies examined cultured cell lines or whole brain/adult material from patients or mice. Interestingly, Bcl11b was detected in a RIP study of TDP-43 targets on E18.5 rat cortical neurons after 14 days in culture (Sephton et al., 2011). Moreover, iCLIP of Pum2 from neonatal mouse brain revealed interaction of Pum2 with Sox5 mRNA and the same study found that Bcl11b mRNA was deregulated in brains of Pum1/Pum2 double knockouts (Zhang et al., 2017). Encouraged by these positive observations, but recognizant of the inherent potential for false positives and negatives in genome-wide studies (Williams et al., 2017), we decided to assess potential interactions ourselves in developing neocortex using a directed approach. To this end, we adapted a directed UV-cross-link immunoprecipitation (UV-CLIP) protocol for neocortex that we used previously with cultured motor neuron-like cells (Neelagandan et al., 2019).
 
@@ -169,17 +505,17 @@ In contrast to Pum2, TDP-43 deregulation is mainly implicated in neurodegenerati
 
 ## Materials and methods
 
-## Animal welfare and approvals
+### Animal welfare and approvals
 
 All animal care and experimental procedures were performed according to the institutional guidelines of the UKE or University of Geneva and relevant national law. In Hamburg, guidelines were those of the UKE Animal Research Facility (FTH) and conformed to the requirements of the German Animal Welfare Act. Ethical approvals were obtained from the State Authority of Hamburg, Germany (G10/107_Pumilio, G14/003_Zucht Neuro, N086/2020_Pum2/TDP43 IUEs, ORG_520 and ORG_765).
 
-## Generation and use of Pum2 cKO mice
+### Generation and use of Pum2 cKO mice
 
 ES cell lines targeting cassette for exons 6 and 7 of Pum2 were obtained from KOMP (link: CSD45770; parental ES cell line: JM8A1.N3) and expanded for injection according to their protocol. Cells were injected into morulae derived from BALB/C mice using the PiezoXpert (Eppendorf).
 
 Germline transmission was verified by the long PCR procedure recommended by KOMP, as well as by Southern blotting. Founder lines were mated to a line expressing Flp recombinase in the germline (Rodríguez et al., 2000) to excise the targeting cassette and generate the ‘floxed’ conditional allele. The constitutive Pum2 KO line was generated by mating this line with mice expressing Cre recombinase in the germline (Schwenk et al., 1995). As the original KOMP ES cell lines were on a C57Bl/6N background, the floxed Pum2 and Pum2 KO lines were backcrossed more than 10 times to C57Bl/6J prior to use and were also maintained by routine backcrossing to C57Bl/6J.
 
-## Mouse housing and genetics
+### Mouse housing and genetics
 
 Mice were housed in a barrier facility and maintained under standard housing conditions with a 12 hr light/dark cycle and ad libitum access to water and chow.
 
@@ -187,27 +523,78 @@ Pum2fl/fl mice were crossed to Emx1Cre to inactivate Pum2 in forebrain principal
 
 Mice expressing either hTARDBP (Arnold et al., 2013) or hTARDBPA315T (Wegorzewska et al., 2009) were obtained from the Jackson Laboratory (Bar Harbor, Maine, USA; stocks 017907 and 010700, respectively) on a congenic C57Bl/6J background. Non-transgenic littermates were taken as controls. At least three independent litters were used for each analysis. All mouse lines used for experiments were congenic on C57Bl/6J and maintained by backcrossing to this wild-type background. Mouse lines were genotyped using primers in Table 5. Early morning of the day of the vaginal plug was considered as embryonic day 0.5 (E0.5).
 
-## Postmortem tissue collection
+**Table 5.**
+ Genotyping primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Allele</th>
+      <th>Forward primer (5′–3′)</th>
+      <th>Reverse primer (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pum2 KO</td>
+      <td>GCTGCTACTCCCTTTCTTGC</td>
+      <td>GAGCACATGTGGAGGTCAGA</td>
+    </tr>
+    <tr>
+      <td>Pum2 WT and floxed</td>
+      <td>GCTGCTACTCCCTTTCTTGC</td>
+      <td>CCAAGGCGCTCAACTACTTC</td>
+    </tr>
+    <tr>
+      <td>Cre</td>
+      <td>TAACATTCTCCCACCGCTAGTACG</td>
+      <td>AAACGTTGATGCCGGTGAACGTGC</td>
+    </tr>
+    <tr>
+      <td>Actin</td>
+      <td>CAATAGTGATGACCTGGCCGT</td>
+      <td>AGAGGGAAATCGTGCGTGAC</td>
+    </tr>
+    <tr>
+      <td>TDP43A315T</td>
+      <td>GGATGAGCTGCGGGAGTTCT</td>
+      <td>TGCCCATCATACCCCAACTG</td>
+    </tr>
+    <tr>
+      <td>TDP43</td>
+      <td>GGATGAGCTGCGGGAGTTCT</td>
+      <td>TGCCCATCATACCCCAACTG</td>
+    </tr>
+    <tr>
+      <td>Control for TDP43</td>
+      <td>CAAATGTTGCTTGTCTGGTG</td>
+      <td>GTCAGTCGAGTGCACAGTTT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Postmortem tissue collection
 
 Embryonic and postnatal brain samples were fixed either for 2 hr (for immunohistochemistry [IHC]) or overnight (for fluorescent in situ hybridization) at 4°C in PFA 4%. Samples were then embedded in optimal cutting temperature (OCT) medium (JUNG) after being equilibrated progressively in 10, 20, and 30% sucrose, and cut on a Leica cryostat. No samples were excluded in this work. For each experiment, a minimum of three animals from different litters were used.
 
-## Nissl staining
+### Nissl staining
 
 20 μm coronal and sagittal sections were rinsed for 2 min in distilled water and incubated for 30 min in cresyl violet and washed twice in distilled water. Additional sequential incubation for 2 min in 20, 50, and 75% ethanol, 96% ethanol/acetic acid, and 100% ethanol followed. Sections were then incubated twice for 5 min in 100% ethanol first and then with xylol. After drying, sections were finally mounted with Eukitt and stored at room temperature (RT).
 
-## Immunofluorescent staining and imaging
+### Immunofluorescent staining and imaging
 
 Immunofluorescent imaging was performed on cryosections. Briefly, slides were boiled in an unmasking buffer (sodium citrate 0.1 M, pH 6). After three PBS washes, cryosections were blocked with 10% goat serum and 0.3% Triton X-100 for 1 hr at RT. Primary antibody incubations were carried out overnight at 4°C. Secondary antibodies were added for 2 hr at RT. The following primary antibodies were used: rat anti-Ctip2/Bcl11b (dil 1:300, Abcam ab18465), rabbit anti-Sox5 (1:300, Abcam ab94396), mouse anti-Rorβ (1:200, Perseus Proteomics PP-N7927-00), rabbit anti-Cux1 (1:100, Millipore ABE217), rabbit anti-Tbr1 (1/300, Abcam ab31940), rat anti-Lmo4 (1:500, gift from J. Valsvader), guinea pig anti-Bhlhb5 (1:500, gift from B. Novitch), rabbit anti 5-HT (1/10000, Immunostar 20080), rabbit anti-Pum2 (1:100, Bethyl A300-202A), rabbit anti-Tdp43 (1:300, Abcam AB41881), guinea pig anti-NeuN (1: 300, Synaptic Systems 266004), and mouse anti-GFAP (1:300 Synaptic Systems 173211). The following Alexa-conjugated secondary antibodies from Life Technologies were used: goat anti-rabbit FC (488, 594), goat anti-rat FC (488, 594), goat anti-mouse FC (488, 594, 633), and goat anti-guinea pig FC (488) (dil 1:300). Slides were incubated for 10 min in PBS with DAPI (1:1000, Thermo Fisher) and mounted with ROTI Mount FluorCare (Roth).
 
-## Retrograde labeling with cholera toxin B
+### Retrograde labeling with cholera toxin B
 
 For retrograde labeling, anesthetized P0 pups were injected with Alexa Fluor 555-conjugated CTB (1 mg/ml; Invitrogen, volume injected: 300 µl) under ultrasound guidance using a Vevo 770 ultrasound backscatter microscopy system (Visual Sonics). Subcerebral injections were performed at the midbrain–hindbrain junction using a nanojector (Nanoject II Auto-Nanoliter Injector, Drummond Scientific Company 3-000-204) to label all SCPNs, including corticopontine projection neurons and corticospinal motor neurons. Injected pups were perfused at P7, and brains were collected and 40-µm-thick sections were cut at the cryostat and either directly incubated for 10 min with DAPI and mounted with ROTI Mount FluorCare (Roth) or treated for immunostaining. In the last case, slides were incubated with the blocking solution (10% goat serum and 0.3% Triton X-100) for 1 hr at RT and were then incubated with primary antibodies overnight at 4°C. The primary antibodies used were rat anti-Ctip2 (Bcl11b) (dil 1:300, Abcam ab18465), and rabbit anti-Sox5 (1:200, Abcam ab94396). Subsequent to three washes with PBS, the slides were incubated with corresponding Alexa Fluor 488 secondary antibody (1:300; Life Technologies) for 2 hr at RT. Sections were washed with PBS three times and incubated for 10 min in PBS with DAPI (1:1000) (Thermo Fisher) and mounted with ROTI Mount FluorCare (Roth).
 
-## smFISH and combined IHC/smFISH
+### smFISH and combined IHC/smFISH
 
 Collected brains were fixed for 24 hr in PFA 4% at 4°C. Samples were then embedded in OCT medium (JUNG) after being equilibrated progressively in 10, 20, and 30% sucrose, and cut on a Leica cryostat (thickness: 16 μm). Cryosections were left 1 hr to dry at –20°C and then stored at –80°C. RNAscope in situ hybridization assays were performed according to the manufacturer’s instructions (Advanced Cell Diagnostics [ACD]). Briefly, cryosections were gradually dehydrated in 50%, 70%, and twice in 100% ethanol for 5 min each at RT. Slides were left to dry for 30 min at RT. In between all pretreatment steps, tissue sections were briefly washed into a Tissue-Tek Slide Rack submerged in a Tissue-Tek Staining dish with distilled water. Incubations were performed on the HybEz II hybridization system (ACD). The pretreat solution 1 (hydrogen peroxide reagent) was applied for 10 min at RT, and then the tissue sections were boiled in pretreat solution 2 (target retrieval reagent) for 5 min. Slides were treated with pretreat solution 3 (protease III reagent) for 30 min at 40°C for FISH while with pretreat solution 4 (protease IV reagent) for 20 min for FISH combined with IHC. Custom mouse Sox5 (413291), Bcl11b (413271-C2), Fezf2 (313301-C3), Cux1 (442931), and Rorb (444271-C3) RNAscope probes were designed and purchased from ACD. In addition, the negative (Cat# 310043, ACD) and positive (Cat# 313911, ACD) control probes were applied and allowed to hybridize for 2 hr at 40°C. The amplification steps were performed according to the manufacturer’s instructions. In between every amplification step, sections were washed with 1× wash buffer. Detection was performed using TSA Plus fluorophore (fluorescein, cyanine 3, or cyanine 5) (1:1500-1:3000) from PerkinElmer for 30 min at 40°. Slides were rinsed twice in 1× wash buffer, incubated for 10 min in distilled water with DAPI (ACD), and then mounted with ROTI Mount FluorCare (Roth). For combined IHC/smFISH, following the amplification step, sections were processed for IHC. Briefly, slides were incubated with the blocking solution (10% goat serum and 0.3% Triton X-100) for 1 hr at RT and were then incubated with primary antibodies ON at 4°C. The primary antibodies used were rabbit anti-Pum2 (1:100, Millipore 03-241) and rabbit anti-Tdp43 (1:300, Abcam AB41881). Subsequent to three washes with PBS, the slides were incubated with corresponding Alexa Fluor 555 secondary antibody (1:300; Life Technologies) for 2 hr at RT. Brain sections were rinsed with PBS three times and incubated for 10 min in PBS with DAPI (ACD) and mounted with ROTI Mount FluorCare (Roth).
 
-## Polysome profiling and total RNA preparation
+### Polysome profiling and total RNA preparation
 
 Animals were collected at either E13.5, E14.5, E18.5, or P0, and cortices were dissected in a dissection buffer containing 2.5 mM HEPES-KOH (pH 7.4), 35 mM glucose, 4 mM NaHCO3, and 100 μg/ml cycloheximide and flash frozen in liquid nitrogen and stored at –80°C. For P0 cortices, a somatosensory area-enriched region has been dissected by using a millimeter paper and taking out with a blade 1 mm from the rostral and 1 mm from the caudal regions of the cortex (Figure 9b). After genotyping, three replicates for controls and either Pum2 or TDP-43 mutants were processed. Each replicate consists of one, two, three, or four pooled cortices for P0, E18.5, E14.5, and E13.5, respectively.
 
@@ -217,43 +604,43 @@ For puromycin treatment, both control lysates and the puromycin-treated lysates 
 
 For polysome to monosome (P/M) ratio analysis, areas under the curves representing the monosome and polysome peaks in gradient profiles were quantified using ImageJ (Schneider et al., 2012), and the P/M ratio was calculated by dividing the area under the curve of polysome peaks by area under the curve of the monosome peak.
 
-## qPCR and PCR with polysome gradient fractions and total RNA
+### qPCR and PCR with polysome gradient fractions and total RNA
 
 Prior to RNA purification, individual gradient fractions were aligned with corresponding profiles and pooled according to the scheme presented in Figure 9. Pool 1 contains the non-ribosome-bound portion of the gradient, pool 2 contains 80S monosomes, pool 3 contains disomes and trisomes, pool 4 contains mRNAs with ~4–6 ribosomes bound, and fractions from the deeper fractions corresponding to roughly seven or more ribosomes per mRNA were divided into two equal pools, 5 and 6, respectively. 1 ng of an in vitro-transcribed RLuc spike-in mRNA was added to each of the six pools as a recovery control and for normalization of the samples.
 
 Total RNA was prepared from the six gradient fraction pools and the corresponding input lysate samples using Trizol in a ratio of 3:1 and the PureLink RNA mini kit (Thermo Fisher Scientific) according to the manufacturer’s specifications. The purified RNA was concentrated by ammonium acetate precipitation using GlycoBlue carrier (Thermo Fisher Scientific). Pellets were washed with 70% ethanol, air-dried, and resuspended in nuclease-free water. RNA concentrations were determined using a NanoDrop spectrophotometer, and 250 ng of RNA was reverse transcribed with random primers using the SuperScript II cDNA Synthesis Kit (Thermo Fisher Scientific) according to the manufacturer’s instructions. qPCR was performed using FastStart Universal SYBR Green Master (ROX) (Roche). All reagents and kits were used according to the manufacturer’s instructions. The ΔCt method was used for relative quantification of qPCR data. For polysome fractions, levels of spike-in RLuc RNA were measured first and their relative distribution across the fraction pools was calculated and normalized to the non-ribosome-bound pool. The same procedure was used for all other RNAs analyzed, and their distribution was additionally normalized to the one obtained for RLuc RNA and expressed as a percentage of cumulative signal. For input lysate RNA samples, values for specific mRNAs were normalized to GAPDH and represented as fold change of mutants to controls. Primers used for all qPCR analyses are described in Table 1; Table 4; Table 2.Similar cDNA from input lysate RNA of P0 somatosensory area-enriched cortical lysates was also used for RT-PCR to detect Sox5 splicing isoforms (Table 3) as in Edwards et al., 2014.
 
-## UV-CLIP with qRT-PCR as readout
+### UV-CLIP with qRT-PCR as readout
 
 Embryos were collected at E18.5 and cortices from 10 embryos were dissected and harvested in 5 ml ice-cold 1× PBS, in which they were resuspended by pipetting using P1000 then P10 tips. Dissociated cortices that were enough for 10 immunoprecipitations were then divided equally into two 10 cm dishes on ice. One half was UV irradiated (4 * 100 mJ/cm2) using a Stratalinker. The other half was used as control non-UV-treated sample. Cross-linked cells and non-cross-linked cells were divided into 500 µl samples and were centrifuged at top speed for 10 s at 4°C. Pellets were lysed in 1 ml of lysis buffer (50 mM Tris–HCl, pH 7.4, 100 mM NaCl, 1% NP-40, 0.1% SDS, 0.5% Na-deoxycholate, 1× cOmplete Protease Inhibitor Cocktail [Roche]). A fraction of the lysate corresponding to 5% of the input material (50 μl) was retained to use as a reference for calculating the fraction of input material in the IP pellet. The remaining lysate was added to Protein G Dynabeads pre-bound with either 4 μg rabbit polyclonal TDP-43 antibody (Abcam ab41881) or 5 μg of Pum2 antibody (Millipore #03-241) or 5 μg rabbit IgG (Millipore #03-241) as a control and rotated at 4°C overnight. Beads were subsequently washed twice for 2 min in high salt buffer (50 mM Tris–HCl, pH 7.4, 1 M NaCl, 1 mM EDTA, pH 8.0, 1% NP-40, 0.1% SDS, 0.5% Na-deoxycholate), followed by washing twice for 2 min in wash buffer (20 mM Tris–HCl, pH 7.4, 10 mM NaCl, 0.2% Tween-20) and a final washing step for 2 min in NT2 buffer (50 mM Tris–HCl, pH 7.4, 150 mM NaCl, 1 mM MgCl2, 0.05% NP-40). RNA was eluted by incubation with 30 μg Proteinase K (Carl Roth) in NT2 buffer for 30 min at 55°C. RNA extraction was carried out from the eluate and input sample using Trizol reagent in a ratio of 3:1 followed by the addition of chloroform and subsequent purification by PureLink kit (Ambion). All RNA obtained from each sample (input or IP) were used to generate cDNA libraries using random hexamers (Thermo Scientific) and the RevertAid RT reverse transcription kit (Thermo Scientific), following the manufacturer’s protocol.
 
 We first verified that we had lower Cts for a given mRNA in the specific IPs relative to IgG control in the UV-cross-linked samples, implying specific signal over background. To calculate target mRNA enrichments, we first calculated the ΔCt for TDP-43 or Pum2 IP versus input and converted this to a linear ‘fold change’ value. These were then corrected for the reduced amount of input analyzed (i.e., divided by 20), and then multiplied by 100 to obtain ‘% of input mRNA in IP.’ Statistical comparisons were performed relative to 18S rRNA as neither protein has been shown to functionally regulate this RNA.
 
-## Immunoblotting
+### Immunoblotting
 
 Cerebral cortices from P0 controls, TDP43, and TDP43A315T pups were dissected after genotyping, and nuclear and cytoplasmic proteins were separated using the NE-PER kit from Pierce (Thermo Scientific) according to the manufacturer’s instructions. Samples were loaded on a 10% SDS polyacrylamide gel and subjected to standard SDS-PAGE electrophoresis on Mini-Protean tetra cell (Bio-Rad).
 
 Immunoblotting to nitrocellulose or PVDF was performed using an iBlot rapid transfer device (Life Technologies) according to the manufacturer’s guidelines. Blots were blocked in 5% milk/TBS-T solution and probed with antibodies diluted as indicated. Signals were visualized using fluorescent secondary antibodies and imaged on a LI-COR Odyssey CLx (LI-COR). Antibodies used in this study were mouse anti-human monoclonal TDP-43 (Novus Biologicals, H000023435-M01) (1:500), rabbit polyclonal TDP-43 (G400) (CST-3448) (1:1000), rabbit anti-Emx1 (Abcam, ab136102) (1:500). goat anti-rabbit IRDye 680LT (1:15000, LI-COR), goat anti-mouse IRDye 680LT (1:15000, LI-COR), goat anti-rabbit IRDye 800CW (1:15000, LI-COR), and goat anti-mouse IRDye 800CW (1:15000, LI-COR).
 
-## Primary neuron transfections
+### Primary neuron transfections
 
 Primary neuronal cultures were prepared from somatosensory area-enriched cortices (Figure 9b) of E18.5 C57BL/6J mice. After Hanks' Balanced Salt Solution (HBSS) washes, neurons were incubated for 10 min at 37°C with Papain and DNase I (Worthington). Tissue was then triturated with a Pasteur pipette, and supernatant was separated from cell debris into a new tube. Cells were resuspended in Dulbecco's Modified Eagle Medium (DMEM)/fetal calf serum (FCS) after centrifugation for 10 min at 1000 × g and were immediately transfected. Transfections were performed using the Amaxa nucleoporation system using Mouse Neuron Nucleofector Kit (VPG-1001) following the manufacturer’s manual. 5 * 106 cells were used for each transfection. Briefly, neurons were resuspended in 100 µl of nucleofector solution containing 3 µg of DNA and transferred into the special electroporation cuvette. The transfection program used was O-005. Cells were collected after electroporation in DMEM/FCS and left for 1 hr at 37°C in the incubator. 0.5 * 106 cells were grown on glass coverslips (12 mm diameter, Carl Roth) coated with poly-l-lysine in 12-well plates (Sarstedt) in Primary Neuro Basal Medium (Lonza) supplemented with NSF-1, penicillin/streptomycin antibiotics to 1% (v/v) and l-glutamine to 0.5 μM. Neurons were cultured for 2 days at 37°C in a 5% CO2 environment prior to immunofluorescent staining. Neurons were fixed for 2 min with 4% PFA and 3 min with ice-cold methanol and then washed three times in PBS for 10 min each. Neurons were incubated with the blocking solution (10% goat serum and 0.3% Triton X-100) for 1 hr at RT, and were then incubated with primary antibodies overnight at 4°C. The primary antibodies used were rabbit anti-Flag (dil 1:200, Sigma-Aldrich F7425), mouse anti-V5 (dil 1:300, Invitrogen P/N 46-1157), chicken anti-GFP (dil 1:400, Abcam 13970) rat anti-Ctip2 (Bcl11b) (dil 1:300, Abcam ab18465), rabbit anti-Sox5 (1:200, Abcam ab94396), and mouse anti-Rorβ (1:100, Perseus Proteomics PP-N7927-00). After three washes with PBS, the slides were incubated with corresponding Alexa Fluor (488, 594, 633) secondary antibodies (1:300; Life Technologies) for 2 hr at RT. Neurons were rinsed with PBS three times and incubated for 10 min in PBS with DAPI (1:1000) (Thermo Fisher) and mounted with ROTI Mount FluorCare (Roth).
 
-## Plasmids used for transfection of cortical neurons
+### Plasmids used for transfection of cortical neurons
 
 The human TDP-43 plasmids (WT TDP43 and A315T mutant) and the control plasmid pEGFP-C1 have been previously described (Neelagandan et al., 2019). Briefly, the human TDP43 plasmids were generated in a pCMV Sport6 vector backbone with an N-terminal FLAG tag and C-terminal V5 tag. pKM29 contains the WT TDP43 coding sequence (CDS) in this context and pKM36 has the A315T mutant. The full-length ORF of human TDP43 was amplified from human TDP43 (TDP43) clone ID30389805 (Open Biosystems) without a stop codon (to allow the addition of 3′ tags to the protein product) and cloned using SalI and NotI into pCMV Sport 6.1. A FLAG-tag-encoding sequence for the 5′ end and a V5-tag-encoding sequence for the 3′ end were made by oligo annealing and cloned using KpnI/SalI (FLAG) and XbaI/HindIII (V5) into the human TDP-43-containing plasmid. The A315T mutation was introduced into the human TDP-43-containing plasmid using the QuikChange Site-Directed Mutagenesis Kit (Agilent Technologies, Cat# 200519).
 
-## Plasmids used for in utero electroporation
+### Plasmids used for in utero electroporation
 
 The pNeuroD-IRES-GFP (Guerrier et al., 2009) plasmid was obtained from Addgene (plasmid number 61403). The pNeuroD-Cre-IRES-GFP (Vitali et al., 2018) was obtained from Dr. Denis Jabaudon Laboratory (Geneva, Switzerland).
 
 For human TDP-43 and TDP-43A315T mutant plasmids, the full-length ORF were generated as described above for primary neurons transfection. Briefly TDP43 V5 and TDP43A315T V5 were excised from Flag-pCMV Sport 6.1- TDP43 -V5 and Flag-pCMV Sport 6.1- TDP43A315T-V5 using SalI/HindIII and cloned into the p-NeuroD-IRES-GFP plasmid obtained from Addgene using XhoI/PstI.
 
-## In utero electroporation
+### In utero electroporation
 
 The Institutional Animal Care and Use Committee of the City of Hamburg, Germany, approved all experiments (approval n0. 86/2020 acc. to the Animal Care Act, §8 from May 18, 2006). Time-pregnant C57BL/6J or floxed Pum2 mice were given a preoperative dose of buprenorphine (0.01 mg/kg body weight) by subcutaneous injections at least 30 min before surgery. Animals were then anesthetized using 2.5% isoflurane/O2 inhalation. Oxygen was delivered with a flow rate of 0.65 l/min and together with isoflurane were applied via a vaporizer (Föhr Medical Instruments, Seeheim-Oberbeerbach, Germany). The uterine horns were exposed, and respective plasmids mixed with Fast Green (Sigma) were microinjected into the lateral ventricles of the embryos. Five current pulses (50 ms pulse, 950 ms interval; 32 mV or 35 mV, respectively, for E12/13 or E14 embryos) were delivered across the heads of the embryos. Post surgery, 2–3 drops of meloxicam (0.5 mg/kg body weight) were given orally through soft food for 96 hr. Brains were collected at P0, and 40-µm-thick sections were cut at the cryostat and treated for immunostaining. Sections were incubated with the blocking solution (10% goat serum and 0.3% Triton X-100) for 1 hr at RT, and were then incubated with primary antibodies overnight at 4°C. The primary antibodies used were chicken anti-GFP (dil 1:800, Abcam 13970), rat anti-Ctip2 (Bcl11b) (dil 1:300, Abcam ab18465), rabbit anti-Sox5 (1:200, Abcam ab94396), mouse anti-Rorβ (1:200, Perseus Proteomics PP-N7927-00), mouse anti-human monoclonal TDP-43 (1:100, Novus Biologicals, H000023435-M01), and rabbit anti-Pum2 (1:100, Bethyl A300-202A). Subsequent to three washes with PBS, the slides were incubated with donkey anti-chicken Alexa Fluor 488 secondary antibodies (1:300, Jackson by Dianova #703-545-155) and corresponding secondary antibody goat anti-rat, rabbit, or mouse Alexa Fluor 633 (1:300; Life Technologies) for 2 hr at RT. Sections were washed with PBS three times and incubated for 10 min in PBS with DAPI (1:1000) (Thermo Fisher) and mounted with ROTI Mount FluorCare (Roth).
 
-## Imaging, counting, and statistical analysis
+### Imaging, counting, and statistical analysis
 
 Images were acquired using an Olympus FluoView 1000 microscope, and similar acquisition settings for laser power, offset, and detector gain across conditions were used. Bright-field brain and low-magnification Nissl staining images were acquired using a Zeiss Stemi 2000-C binocular. Higher-magnification images of Nissl staining were acquired using a Zeiss Axiophot microscope.
 

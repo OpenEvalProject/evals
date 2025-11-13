@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05a28rw58 Laboratory for Orthopedic Biomechanics, University Hospital Balgrist and ETH Zurich Zurich Switzerland
-2. https://ror.org/05a28rw58 Laboratory of Exercise and Health Department of Health Sciences and Technology (D-HEST) ETH Zurich, Swiss Federal Institute of Technology Zurich Switzerland
+1. Laboratory for Orthopedic Biomechanics, University Hospital Balgrist and ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+2. Laboratory of Exercise and Health Department of Health Sciences and Technology (D-HEST) ETH Zurich, Swiss Federal Institute of Technology Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
 
 † Corresponding author
 
@@ -34,27 +34,196 @@ We experimentally tested and confirmed these hypotheses in four steps:
 
 ## Results
 
-## The IL-6/JAK/STAT signaling signature is positively enriched in human tendinopathic tendons alongside signatures of extrinsic cell population activation and hallmarks of clinical tendinopathy
+### The IL-6/JAK/STAT signaling signature is positively enriched in human tendinopathic tendons alongside signatures of extrinsic cell population activation and hallmarks of clinical tendinopathy
 
 To better illuminate the ongoing wound healing processes that are a central feature of chronic tendon disease, we first searched for enriched signaling pathways underlying tendinopathic tendons in a publicly available dataset (GEO: GSE26051) (Jelinsky et al., 2011). To deduce common disease patterns affecting tendons from diverse anatomical locations, the microarray dataset contained analyzed samples from 23 normal and 23 tendinopathic human tendons of mixed anatomical origin. We excluded 5 normal and 5 tendinopathic samples from sheathed tendons originally included in the dataset, as those tendons are organized into different sub-compartments than the non-sheathed tendons remaining in the dataset (Figure 1—figure supplement 1, Supplementary file 1). Overall, we found 240 significantly upregulated genes, 474 significantly downregulated genes, and 20,359 not-differentially regulated genes in tendinopathic compared to normal control tendons.
 
 Further analysis revealed significantly upregulated IL6 and IL6 signaling transducer (IL6ST, also known as GP130) transcripts in tendinopathic tendon tissue (Figure 1A and B, Table 1). Conversely, IL6 receptor (IL6RA) expression trended toward downregulation. Focusing on proteases that generate soluble IL6RA, we found significant upregulation of both ADAM10 and ADAM17 in human tendinopathic tendons. Downstream of IL6 receptor binding, JAK1 trended toward upregulation and STAT3 was upregulated significantly. Other IL6 regulated signaling checkpoints such as MAPK3 and GAB2 trended toward downregulation. Aside from IL6, another significantly upregulated member of the IL-6 family was interleukin-11 (IL11).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig1-v1.jpg)
+
+**Figure 1.:** (A) Volcano plot of differentially expressed genes (DEGs) comparing tendinopathic to normal human tendons. Genes colored in red have a log2 (fold change)>1, a p-value<0.05, and are therefore considered to be significantly increased in tendinopathic tendons. Genes colored in blue have a log2 (fold change)<–1, a p-value<0.05, and are therefore considered to be significantly decreased in tendinopathic tendons. The log2 and p-value thresholds are represented by the dashed lines. Annotated genes are part of the IL-6 cytokine superfamily, the IL-6 signaling cascade, or involved in matrix turnover. (B) Unsupervised hierarchical clustering of expression values from members of the IL-6 cytokine superfamily, their receptors, and parts of the IL-6 signaling cascade (biological replicates: N=18 normal, N=18 tendinopathic). Genes are clustered by color with positive (red) or negative (blue) row-scaled z-scores. (C) Dotplot showing significantly enriched gene sets (p-value<0.05) as determined by gene set enrichment analysis (GSEA) based on the MSigDB human hallmark gene sets. The color of the circles represents their p-value, the size the number of enriched genes (count), and the position on the x-axis the enrichment score as well as its direction. (D) GSEA plot for the IL-6/JAK/STAT3 signaling hallmark contained in the MSigDB human hallmark gene sets. The green line traces the running enrichment score on the y-axis while going down the rank of genes listed on the x-axis, the black lines standing in blue and red bars indicate the locations of the genes related to the pathway in the ranked list, and the gray histogram shows the running list score across the ranks. (E) Dotplot showing the top 10 gene ontology (GO) gene sets for biological processes most significantly enriched by overlapping DEG sets. The color of the circles represents their adjusted p-value (false discovery rate [FDR]), the size the number of enriched genes (count), and the position on the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio). (F) Dotplot showing significantly enriched fibroblast signature gene sets (p-value<0.05) as determined by GSEA based on the MSigDB human cell-type signature gene sets. The color of the circles represents their p-value, the size the number of enriched genes (count), and the position on the x-axis the enrichment score as well as its direction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Principal components 1 and 2 for the full dataset with tendinopathic (red) and normal (blue) tendons. Tendons surrounded by a sheath in vivo are delineated by a dashed border. (B) Principal components 1 and 2 for the same dataset after excluding sheathed tendons as delineated in A.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Dotplot showing the top 20 GO gene sets for biological processes significantly enriched by transcripts increased in human tendinopathic tendons. (B) Dotplot showing all the GO gene sets for biological processes enriched by transcripts decreased in human tendinopathic tendons. In all the dotplots, the color of the circles represents their adjusted p-value, the size the number of enriched genes (count), and the position on the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Dotplot showing all the GO gene sets for molecular functions enriched by transcripts increased in human tendinopathic tendons. (B) Dotplot showing all the GO gene sets for molecular functions enriched by transcripts decreased in human tendinopathic tendons. In all the dotplots, the color of the circles represents their adjusted p-value, the size the number of enriched genes (count), and the position on the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio).
+
+**Table 1.**
+ Effect sizes and p-values for selected transcripts.The data describes the differences between tendinopathic and normal control human tendons (non-sheathed).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transcript</th>
+      <th>Effect size</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IL6</td>
+      <td>1.529</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>IL6RA</td>
+      <td>–0.423</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>IL6ST / GP130</td>
+      <td>0.399</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td>ADAM10</td>
+      <td>0.606</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>ADAM17</td>
+      <td>0.541</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>JAK1</td>
+      <td>0.344</td>
+      <td>0.078</td>
+    </tr>
+    <tr>
+      <td>STAT1</td>
+      <td>0.224</td>
+      <td>0.305</td>
+    </tr>
+    <tr>
+      <td>STAT3</td>
+      <td>0.36</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>MAPK1</td>
+      <td>0.3</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>MAPK3</td>
+      <td>–0.386</td>
+      <td>0.085</td>
+    </tr>
+    <tr>
+      <td>GAB2</td>
+      <td>–0.517</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td>IL11</td>
+      <td>0.913</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>IL11RA</td>
+      <td>–0.053</td>
+      <td>0.844</td>
+    </tr>
+    <tr>
+      <td>COL1A1</td>
+      <td>0.523</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>COL1A2</td>
+      <td>0.624</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>COL3A1</td>
+      <td>0.408</td>
+      <td>0.106</td>
+    </tr>
+    <tr>
+      <td>COL18A1</td>
+      <td>1.112</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>MMP9</td>
+      <td>1.556</td>
+      <td>0.083</td>
+    </tr>
+    <tr>
+      <td>MMP13</td>
+      <td>0.981</td>
+      <td>0.151</td>
+    </tr>
+    <tr>
+      <td>MMP3</td>
+      <td>–2.779</td>
+      <td>0.005</td>
+    </tr>
+  </tbody>
+</table>
+
 In line with aberrant matrix turnover generally featured in tendinopathy, the transcripts of the following genes were significantly increased in the tendinopathic samples: COL1A1, COL1A2, COL18A1.
 
 Since changes in single transcripts alone have a limited predictive value for pathway-level changes, we next performed unbiased gene set enrichment analysis (GSEA) using the human hallmark dataset from MSigDB (Subramanian et al., 2005; Liberzon et al., 2015). Confirming the trends from the single transcript analysis, GSEA revealed a positive enrichment of the IL-6/JAK/STAT pathway (q-value: 0.003) alongside gene sets matching well-known tendinopathy hallmarks such as neo-vascularization (i.e. angiogenesis, mTORC1 signaling) and hypercellularity (i.e. G2M checkpoint, mitotic spindle, MYC targets v1, epithelial mesenchymal transition, and E2F targets) in the tendinopathic samples compared to the normal controls (Figure 1C and D). We then looked further into aberrant biological processes by mapping the significantly changed single transcripts (p-value<0.01) to the respective gene ontology (GO) database in an overrepresentation analysis (ORA) (Figure 1E, Figure 1—figure supplement 2, Figure 1—figure supplement 3). The emerging processes pointed toward ongoing morphogenesis and wound healing favoring hypercellularity (i.e. proliferation, migration) and ECM turnover, which are both established hallmarks of tendinopathy. Lastly, we matched the detected transcript changes to the human cell-type signature gene sets from MSigDB in a GSEA to estimate the contribution of fibroblasts to the aberrant processes (Subramanian et al., 2005; Liberzon et al., 2015). While this database does not yet include tendon-specific fibroblast populations, the signature gene sets of several fibroblast populations were significantly enriched by the transcript changes detected in tendinopathic tendons (Figure 1F). To confirm the increase of transcripts related to IL-6 signaling and fibroblast presence on the protein level, we next assessed human patient samples using fluorescence microscopy.
 
-## IL-6, IL-6R, and CD90 are elevated on the protein level in tendinopathic human tendons compared to normal control tendons
+### IL-6, IL-6R, and CD90 are elevated on the protein level in tendinopathic human tendons compared to normal control tendons
 
 In a second step, we sought to validate the gene array analysis highlighting elevated IL-6-IL-6R signaling as well as the elevated presence of fibroblasts in non-sheathed tendinopathic tendons compared to non-sheathed normal control tendons on the protein level. We thus extracted tissue sections from tendinopathic biceps tendons and from normal control tendons leftover after anterior cruciate ligament reconstruction surgery (Figure 2A and Figure 2—figure supplement 1) and stained them with fluorescently labeled IL-6, IL-6R, and CD90 antibodies.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig2-v1.jpg)
+
+**Figure 2.:** (A) Illustrative depiction of the origins of the tendons used in this experiment. Normal control tendon tissues were taken from semitendinosus and gracilis tendons leftover from anterior cruciate ligament (ACL) reconstruction surgery. Tendinopathic tissues were taken from painful shoulders during surgery (Figure 2—figure supplement 1). (B) Representative fluorescence microscopy images of normal control (left) and tendinopathic tendons (right) stained with DAPI (blue) and an IL-6 antibody (red). Boxplots depict the quantified co-localization of DAPI and IL-6 (IL-6+ cells) calculated as percentage of the total number of cells. Biological replicates: N=8. (C) Representative fluorescence microscopy images of normal control (left) and tendinopathic tendons (right) stained with DAPI (blue) and a CD90 antibody (green). Boxplots depict the quantified co-localization of DAPI and CD90 (CD90+ cells) calculated as percentage of the total number of cells. Biological replicates: N=7. (D) Representative fluorescence microscopy images of normal control (left) and tendinopathic tendons (right) stained with DAPI (blue) and an IL-6R antibody (magenta). Boxplots depict the quantified co-localization of DAPI and IL-6R (IL-6R+ cells) calculated as percentage of the total number of cells. Biological replicates: N=7. In all boxplots, each datapoint was calculated from eight representative fluorescence microscopy images taken from the same sample. The colored datapoint matches the presented fluorescence microscopy image. The upper and lower hinges correspond to the first and third quartile (25th and 75th percentile), the middle one to the median, the whiskers extend from the hinges no further than 1.5 times the interquartile range, and the points beyond the whiskers are treated as outliers. Results of the statistical analysis are indicated as follows: n.s.p ≥ = 0.05, *p<0.05, **p<0.01. The applied statistical test was the Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Tendinopathic tissues were gathered from a total of 10 patients with painful biceps tendons. The photographic images depict the tendons from which the sections were collected. Normal control tissues were gathered from the leftover semitendinosus or gracilis tendons of a total of eight patients undergoing anterior cruciate ligament (ACL) reconstruction surgery. No images were taken from the normal control tendons.
+
 In normal control tendons, the fluorescent signal stemming from the IL-6 antibody (Figure 2B, left side, red) appeared to be confined to the extrinsic compartment, which we identified based on the clustering of cells with a roundish nucleus (blue). In tendinopathic tendons (Figure 2B, right side), it was challenging to identify the extrinsic compartment due to the characteristic change in cell shape from elongated to more roundish in both the extrinsic compartment and the load-bearing core tissue. While the signal of the IL-6 antibody was more evenly distributed over the tendinopathic tissue section and tendon compartments compared to the control, it was still more prominent around roundish than elongated cells. Using the nuclear staining as a mask, we attributed IL-6 secretion to cells based on spatial proximity. The percentage of IL-6 secreting cells was only slightly increased in tendinopathic compared to healthy control tendons (Table 2).
+
+**Table 2.**
+ Percentages of IL-6+, CD90+, and IL-6R+ cells of all cells in tendinopathic and normal control tissues derived from human patients.The values are given as median(IQR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>IL-6+ % all cells</th>
+      <th>CD90+ % all cells</th>
+      <th>IL-6R+ % all cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tendinopathic</td>
+      <td>33.3 (38.4)</td>
+      <td>45.6 (36.3)</td>
+      <td>37.5 (41.2)</td>
+    </tr>
+    <tr>
+      <td>Normal control</td>
+      <td>22.5 (17.2)</td>
+      <td>4.3 (9.0)</td>
+      <td>5.3 (10.2)</td>
+    </tr>
+  </tbody>
+</table>
 
 The cell surface protein CD90 is a common marker of reparative fibroblasts (Ho et al., 2019; Li et al., 2021). Here, we visually detected its signal on only a few cells in the normal control tendons (Figure 2C, left side, green) but on a large number of cells in the tendinopathic tendons (Figure 2C, right side). The subsequent spatial proximity-based quantification confirmed this initial visual impression by detecting a statistically significant difference in the percentage CD90+ in the normal control compared to the tendinopathic tendon (Table 2).
 
 The IL-6 receptor (IL-6R) is another central part of the IL-6 signaling cascade. While some cells in the normal control tendons stained positively for IL-6R, many more seemed to be present in the tendinopathic tendons. We could confirm this again with spatial proximity-based quantification detecting a statistically significant difference in the percentage of IL-6R+ cells in normal control compared to tendinopathic tendons (Table 2).
 
-## Both IL-6 and IL-6R appear in spatial proximity to CD90+ and CD68+ cells in non-sheathed human tendinopathic tendons
+### Both IL-6 and IL-6R appear in spatial proximity to CD90+ and CD68+ cells in non-sheathed human tendinopathic tendons
 
 In another study conducted in mouse tendons, immune cells such as macrophages were reported as major sources of IL-6R during tendon growth (Bautista et al., 2023). We therefore co-stained cells with IL-6, IL-6R, and the established human macrophage surface marker CD68 to see whether this was also true in the context of human tendinopathic tendons. To further check whether (reparative) fibroblasts could indeed be involved in IL-6-IL-6R signaling as initially hypothesized, we also co-stained human tendinopathic tendons with CD90, IL-6, and IL-6R. We again used tendinopathic tissues extracted from diseased biceps tendons (Figure 3A and Figure 2—figure supplement 1).
 
@@ -64,17 +233,67 @@ In another study conducted in mouse tendons, immune cells such as macrophages we
 
 We found a high percentage of cells in close spatial proximity to fluorescent signals generated by the IL-6 antibodies (Figure 3B, left side, red) to be CD90+ (green and blue), identifying them as a likely source of IL-6. Again, IL-6 secreting, CD90+ cells assumed a more roundish phenotype in contrast to the CD90+ cells not secreting IL-6. The overlap between signals from CD68+ cells (Figure 3B, right side, green and blue) and the IL-6 antibodies (red) seemed less pronounced. Indeed, quantification of the spatial signal overlay showed a significantly higher percentage of cells in spatial proximity to IL-6 to be CD90+ rather than CD68+ cells (Table 3).
 
+**Table 3.**
+ CD90+ and CD68+ cells as percentages of IL-6+ and IL-6R+ cells in tendinopathic tissues derived from human patients.The values are given as median(IQR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CD90+ (median(IQR))</th>
+      <th>CD68+ (median(IQR))</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>% of IL-6+</td>
+      <td>50.2 (27.6)</td>
+      <td>5.02 (21.1)</td>
+    </tr>
+    <tr>
+      <td>% of IL-6R+</td>
+      <td>95.0 (25.1)</td>
+      <td>37.0 (20.6)</td>
+    </tr>
+  </tbody>
+</table>
+
 The presence of IL-6R on different cell populations could provide cues on the targets of IL-6 signaling in tendinopathic tendons. In the tendinopathic sections probed here, almost all cells that stained positively for IL-6R (Figure 3C, left side, magenta) were also CD90+ (green and blue) but less than half of them were CD68+ cells (Figure 3C, right side, green and blue). Quantifying the difference based on spatial proximity confirmed this impression (Table 3) and the statistical analysis judged it to be statistically significant. The staining antibody and quantification method deployed here likely cannot discriminate between IL-6R produced by the cell carrying it and IL-6R that was solubilized participates in trans-signaling.
 
 We conclude from the above analysis that IL-6 signaling in non-sheathed tendinopathic tendons plausibly contributes to chronic tendinopathic hallmarks like hypercellularity and aberrant matrix turnover, potentially by activating reparative (CD90+) fibroblast populations through IL-6R. On this basis, we sought to directly test whether a causal relationship exists between the observed changes in IL-6 signaling and the associated disease processes. To this end, we harnessed an in vitro assembloid model of inter-compartmental crosstalk to better dissect the role of IL-6 in tendinopathy.
 
-## IL-6 signaling by tendon core explants activates extrinsic fibroblasts
+### IL-6 signaling by tendon core explants activates extrinsic fibroblasts
 
 We have previously validated a hybrid explant // hydrogel assembloid model that reproduces the in vivo tissue compartment interface between the load-bearing tendon core and the extrinsic compartment (i.e. epitenon and paratenon) of non-sheathed tendons (Stauber et al., 2021; Stauber et al., 2024). We exploited this model to test whether IL-6 signaling across tissue compartments could activate fibroblast populations in the peritendinous space in a manner that mimics the IL-6 signaling signatures we uncovered in the human data analysis (Figure 4A). Briefly, we isolated and clamped mouse tail tendon fascicles to represent the tendon core while selecting (mainly Scx+ and CD146+) fibroblasts from digested Achilles tendons based on plastic adherence growth and surface marker expression as established previously and repeated here (Figure 4B, Figure 4—figure supplement 1, Figure 4—figure supplement 2; Stauber et al., 2021; Tarafder et al., 2017). To form the artificial extrinsic compartment, we encapsulated these fibroblast populations into a collagen hydrogel which we then let polymerize around the clamped core explants (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig4-v1.jpg)
+
+**Figure 4.:** (A) Abstract representation of the in vivo load-bearing tendon core subunits (light blue/white) surrounded by the extrinsic compartment (white) containing, i.e., extrinsic fibroblasts (light brown). (B) Sources of the in vitro model system components with the IL-6 knock-out core (KO core) in violet, the IL-6 wildtype core (WT core) in light blue, the IL-6 wildtype fibroblasts in light brown, and the ScxGFP fibroblasts in green. Core explants were clamped, and the fibroblasts embedded in a (liquid) collagen solution before crosslinking the mixture into a hydrogel around the clamped core explants in various combinations. (C) Photographic and light microscopic images of the in vitro assembloid model system. Lid of a 15 ml Falcon tube (Ø: 17 mm) used for scale.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative light microscopy images depicting tail tendon fascicle-derived fibroblasts and Achilles tendon-derived fibroblasts cultured on standard tissue culture plastic before being passaged for the first time (P1) or the second time (P2). The Achilles tendon-derived fibroblasts were embedded in the collagen hydrogels at P2. (B) Presence of a selection of cell surface markers on cell populations isolated from tail tendon fascicles or Achilles tendons immediately after the digestion (left) and after passaging them twice (P2, right). Using flow cytometry, the following markers were analyzed after excluding doublets and dead cells: Scx, CD45, CD34, CD31, and CD136.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Presence of a selection of gene transcripts in cell populations isolated from tail tendon fascicles or Achilles tendons after passaging them twice. Using RT-qPCR, the following gene transcripts were measured: Spp1, Scx, Mkx, Col1a1, Dpt, Tnmd, Ctgf, Acta2, and Pdgfra. The dots indicate the relative expression values (dCt) of the transcripts normalized to that of Eif4a2, an established housekeeping gene, for a different animal each (biological replicates: N=3). The depicted gene transcripts and their typical expression levels in different cell populations were previously reported in mouse Achilles tendons analyzed with single-cell RNA-seq (De Micheli et al., 2020).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Detection of IL-6 protein level differences in the supernatants obtained from IL-6 wildtype core explant surrounded by a collagen hydrogel (WT core // cell-free, light blue), IL-6 knock-out core explants surrounded by a collagen hydrogel (KO core // cell-free, violet), and extrinsic, IL-6 wildtype fibroblasts seeded into a collagen hydrogel (fibroblasts [in hydrogel], light brown) after 7 days in culture (biological replicates: N=6). The upper and lower bounding boxes correspond to the first and third quartile (25th and 75th percentile) and the middle bar to the median. Whiskers extend from the upper/lower hinge to the largest/smallest value no further than 1.5 the interquartile range. Results of the statistical analysis are indicated as follows: **p<0.01, n.s.p>=0.05. The applied statistical test was the Wilcoxon rank sum. (B) On the left side: Flow cytometric analysis of digested wildtype core explants (WT core // cell-free) surrounded by a collagen hydrogel after 7 days in culture. The different colors indicate different biological replicates (N=3). On the right side: Flow cytometric analysis of extrinsic fibroblast cultured on tissue culture plastic before being passaged for the second time (P2, biological replicates: N=1). Assessed markers include the hematopoietic lineage marker CD45 and the IL-6R.
 
 In a separate experiment, we verified the presence and located the cellular sources of IL-6 and IL-6R using supernatant and flow cytometric analysis respectively (Figure 4—figure supplement 3). Both were present in the supernatant (IL-6) and on CD45+ cell populations (IL-6R) from core explants, but not in the supernatant or on the surface of extrinsic fibroblasts cultured in a collagen hydrogel. This indicates that the following described effects of IL-6 on extrinsic fibroblasts could be dominated by trans-signaling.
 
 To dissect the effect of IL-6 signaling on the extrinsic target populations, we integrated either wildtype-derived (WT) or IL-6 knock-out-derived (KO) explants from the B6.129S2-Il6tm1Kopf/J (Kopf et al., 1994) mouse line (Figure 5A). We then performed bulk RNA-sequencing (RNA-seq) on the extrinsic populations after 1 week of co-culture in tendinopathic niche conditions (Stauber et al., 2021; Blache et al., 2021; Wunderli et al., 2020).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig5-v1.jpg)
+
+**Figure 5.:** (A) Illustration of the assembloid combinations compared here (KO core // fibroblasts vs. WT core // fibroblasts), the assessed timepoint (d7), and the analyzed compartment (extrinsic fibroblasts only). (B) RNA-seq volcano plot of differentially expressed genes (DEGs). Genes colored in red have a log2 (fold change)>0.5, a p-value<0.05, and are considered to be significantly increased in the extrinsic compartment of KO core // fibroblast assembloids. Genes colored in blue have a log2 (fold change)<–0.5, a p-value<0.05, and are considered to be significantly increased in the extrinsic compartment of WT core // fibroblast assembloids. The log2 and p-value thresholds are represented by the dashed lines. (C) Unsupervised hierarchical clustering of the top 50 DEGs. Genes are clustered by color with positive (red) or negative (blue) row-scaled z-scores. Columns represent individual samples (biological replicates: N=6). (D) Dotplots depicting a selection of gene ontology (GO) annotations significantly enriched (adjusted p-value<0.05) by the DEGs. The selection was biased by GO biological process annotations enriched in the human dataset (Figure 1E). The color of the circles represents their adjusted p-value, the size the number of enriched genes (count), and the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Illustration of the assembloid combinations compared here (KO core // fibroblasts vs. WT core // fibroblasts), the assessed timepoint (d7), and the analyzed compartment (extrinsic fibroblasts only). (B) Dotplot showing significantly enriched gene sets (p-value<0.05) as determined by gene set enrichment analysis (GSEA) based on the MSigDB mouse hallmark gene sets. The +/- signs indicate the direction of the enrichment in the extrinsic fibroblasts around a KO core compared to those around a WT core. (C) Dotplot showing the top 20 gene ontology (GO) gene sets for biological processes significantly enriched by transcripts increased in fibroblasts seeded around a KO core. (D) Dotplot showing the top 20 GO gene sets for biological processes significantly enriched by transcripts decreased in fibroblasts seeded around a KO core. In all the dotplots, the color of the circles represents their p-value, their size the number of enriched genes (count), and their position on the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio).
 
 Overall, integration of an IL-6 KO core increased transcripts of 256 genes in the surrounding extrinsic compartment, decreased transcripts of 98 genes, and left 15,295 unchanged (Figure 5B and C). After mapping the significant transcript changes to biological processes in the GO database, we conducted a biased search for processes matching those dysregulated in human tendinopathic tendons. Out of the 195 significantly enriched biological processes (adjusted p-value<0.05) in the extrinsic compartment of KO core // fibroblast assembloids, 10 (5.1%) could be linked to changes in local cellularity and another 10 to ECM turnover (Figure 5D).
 
@@ -82,7 +301,7 @@ When stratifying the respective contribution of transcripts increased and decrea
 
 To verify the transcript-level differences connected to hypercellularity also on the tissue level, we next performed a proliferation and migration analysis in our assembloid model system.
 
-## IL-6 signaling by tendon core explants stimulates cell proliferation and Scx+ cell recruitment to the signaling tendon core
+### IL-6 signaling by tendon core explants stimulates cell proliferation and Scx+ cell recruitment to the signaling tendon core
 
 Using the assembloid model, we investigated whether IL-6 signaling could play a causative role in the hypercellularity that is a major hallmark of tendinopathy. Closely mimicking human tendinopathic tendons, we indeed found cellularity-increasing biological processes to be positively enriched in cell populations around WT compared to those around IL-6 KO tendon core explants. We then assessed whether these IL-6-dependent transcript-level changes would translate to an increased cell density. To do this, we seeded tendon fibroblast populations isolated from ScxGFP mice (co-expressing the tendon marker scleraxis [Scx] with a green fluorescent protein) into the hydrogel extrinsic compartment of our assembloids and incorporated either a WT or an IL-6 KO core into the center (Figure 6A, top panels).
 
@@ -94,29 +313,153 @@ Representative fluorescence microscopy images taken after 7 days in co-culture c
 
 We went on to confirm these visual impressions using quantitative methods, finding a significantly increased total cell number in assembloids with a WT core compared to those with a KO core (Figure 6B, Table 4). The effect of IL-6 signaling on the proliferation of ScxGFP fibroblasts (Figure 6C, Table 4) was less pronounced compared to that on all populations, but the trend remained the same. To quantify migration, we analyzed the spatial distribution of ScxGFP fibroblasts by calculating the ratio between core-resident and extrinsic ScxGFP fibroblasts (Figure 6D, Table 4). The WT core // ScxGFP fibroblast assembloids exhibited the highest core-resident to extrinsic ScxGFP fibroblast ratio and KO core // ScxGFP fibroblast assembloids had a significantly lower core-resident to extrinsic ScxGFP fibroblast ratio. The cumulative spatial distribution of ScxGFP fibroblasts (Figure 6E, Table 4) supported these insights.
 
+**Table 4.**
+ Total cell numbers, ScxGFP cell numbers, and the ratios between core-resident and extrinsic ScxGFP cells in assembloids.The values were normalized to the wildtype (WT) median and are given as median(IQR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Total cell number norm. to WT(median(IQR))</th>
+      <th>ScxGFP cell number norm. to WT(median(IQR))</th>
+      <th>Core/extrinsic ScxGFP ratio, norm. to WT (median(IQR))</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT core // ScxGFP fibroblasts</td>
+      <td>100 (20.1)%</td>
+      <td>100 (19.4)%</td>
+      <td>100 (52.3)%</td>
+    </tr>
+    <tr>
+      <td>WT core // ScxGFP fibroblasts+tocilizumab</td>
+      <td>87.7 (23.5)%</td>
+      <td>40.7 (49.3)%</td>
+      <td>51.5 (14.8)%</td>
+    </tr>
+    <tr>
+      <td>KO core // ScxGFP fibroblasts</td>
+      <td>77.6 (14.1)%</td>
+      <td>62.2 (66.1)%</td>
+      <td>73(40)%</td>
+    </tr>
+    <tr>
+      <td>KO core // ScxGFP fibroblasts+IL-6</td>
+      <td>97.7 (22.8)%</td>
+      <td>89.7 (86.1)%</td>
+      <td>66.1 (45.9)%</td>
+    </tr>
+  </tbody>
+</table>
+
 To further confirm the specific impact of IL-6 signaling on overall cell proliferation and core-directed migration of Scx+ fibroblasts, we desensitized the WT core // fibroblast assembloids to IL-6 by neutralizing IL-6R with tocilizumab and attempted to rescue the KO core // fibroblast assembloids by adding recombinant IL-6 to compensate for their reduced IL-6 levels (Figure 6A, bottom panels). In alignment with the previous results and the hypothesis, IL-6 desensitization decreased the total cell number in trend (Figure 6B, Table 4), the ScxGFP cell number significantly (Figure 6C, Table 4), and the ratio between core-resident and extrinsic ScxGFP fibroblasts significantly as well (Figure 6D, Table 4). The addition of recombinant IL-6 to KO core // fibroblast assembloids significantly increased the total cell number and the number of ScxGFP cells, rescuing the WT phenotype of IL-6 enhanced cell proliferation in the extrinsic compartment. However, core-directed migration was not rescued by recombinant IL-6.
 
 Fully in line with transcript signature changes detected in the extrinsic compartment, these data suggest that IL-6 signaling increased local cellularity in at least one of two ways. First, IL-6 stimulated both overall and specific ScxGFP cell proliferation. Second, IL-6 gradient effects (i.e. IL-6 induced secondary gradients) caused core-directed ScxGFP cell migration.
 
-## Disrupting IL-6 signaling does not detectably alter Scx+ cell proliferation or recruitment into an acutely damaged Achilles tendon in vivo
+### Disrupting IL-6 signaling does not detectably alter Scx+ cell proliferation or recruitment into an acutely damaged Achilles tendon in vivo
 
 After clarifying the role of IL-6 in activating fibroblasts in the assembloid model of chronic tendon disease, we sought to assess whether IL-6 signaling also enhances overall cell proliferation and migration of Scx+ fibroblasts to acute tendon damage. To test this, we first bred IL-6 WT and IL-6 KO mice with ScxGFP mice. Then, we assessed the presence of ScxGFP cells in the Achilles tendons of four IL-6 WT mice compared to those of four IL-6 KO mice 14 days after Achilles tenotomy. In addition, we used an 5-ethynyl-2-deoxyuridine (EdU) staining to assess the proliferation of cells within the healing tendon (Figure 7A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig7-v1.jpg)
+
+**Figure 7.:** (A) Illustrative depiction of the experimental setup and the time schedule. (B) Representative fluorescence microscopy images from all four mice assessed showing longitudinal mouse hindleg sections from IL-6 wildtype, ScxGFP (IL-6 WT x ScxGFP) Achilles tendons (AT) that underwent tenotomy (left), the contralateral untreated control (middle), as well as sections from IL-6 knock-out (IL-6 KO x ScxGFP) AT that underwent tenotomy (right). In addition to the signal provided by the ScxGFP cells (green), NucBlue was used to identify all cell nuclei (blue), and 5-ethynyl-2-deoxyuridine (EdU) was used to identify proliferating cells (magenta). The dashed circles indicate the remaining AT stump close to the calcaneus. The healing neo-tendon tissue surrounding the calcaneal AT stump bridges the gap to the AT stump connected to the calf muscles further down (not shown). In both compartments, ScxGFP cell distribution was highly variable across acutely damaged samples, with no observable trends or statistically detectable differences between the conditions (biological replicates: N=4).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Illustrative depiction of the experimental setup and the time schedule. (B) Representative fluorescence microscopy images of mouse hindleg cross-sections from wildtype (WT) Achilles tendons that underwent tenotomy (left), the contralateral untreated control (middle), as well as cross-sections from IL-6 knock-out (KO) Achilles tendons that underwent tenotomy (right). (C) Total number of cells stained with NucBlue. (D) Number of Scx+ cells. (E) Ratio between core-resident and extrinsic Scx+ cells depicted on a logarithmic y-axis (biological replicates: N=7). The upper and lower hinges correspond to the first and third quartile (25th and 75th percentile), the middle one to the median, the whiskers extend from the hinges no further than 1.5 times the interquartile range, and the points beyond the whiskers are treated as outliers. (F) Lineplot depicting the cumulative percentage of Scx+ cells depending on their distance from the Achilles tendon center. The points and the line represent the mean cumulative percentages and their error bands the standard error of the mean (sem). The dashed line indicates locations inside the Achilles tendon stump. Results of the statistical analysis are indicated as follows: *p<0.05. The applied statistical test was the Mann-Whitney-Wilcoxon test.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Representative fluorescence microscopy images of mouse hindleg sections from wildtype (WT) and IL-6 knock-out (KO) Achilles tendons that underwent unilateral tenotomy. (B) Boxplot reporting the number of CD146+ cells normalized to the WT median. (C) Boxplot reporting the number of TPPP3+ cells normalized to the WT median. In these boxplots, the upper and lower hinges correspond to the first and third quartile (25th and 75th percentile), the middle one to the median, the whiskers extend from the hinges no further than 1.5 times the interquartile range, and the points beyond the whiskers are treated as outliers. (D, E) Lineplots depicting the cumulative percentages of CD146+ and TPPP3+ cells depending on their distance from the Achilles tendon center. The points and the line represent the mean cumulative percentages and the error bands their standard error of the mean (sem). The dashed line indicates locations inside the Achilles tendon stump (biological replicates: N=4). The applied statistical test was the non-parametric Wilcoxon rank sum test and no significant differences were detected.
+
 Overall, the fluorescence microscopy images revealed a strong presence of ScxGFP cells (green) and EdU+ cells (magenta) in the neo-tendon (Figure 7B, tissue around the dashed circles) formed around the calcaneal Achilles tendon stumps (Figure 7B, AT within the dashed circles) after tenotomy (Figure 7B, left), but not in undamaged hindleg tendons (Figure 7B, middle). Similar levels of overall cellularity and presence of ScxGFP and EdU+ cells were observed in the calcaneal Achilles tendon stump and the surrounding neo-tendon of IL-6 WT and IL-6 KO mice. No observable trends or statistically detectable differences in the highly variable and complex ScxGFP cell migration patterns were detected between IL-6 WT and IL-6 KO mice (Figure 7B, left and right).
 
-## Activated, recruited, and proliferating extrinsic fibroblasts promote tendinopathy hallmarks in tendon core explants
+### Activated, recruited, and proliferating extrinsic fibroblasts promote tendinopathy hallmarks in tendon core explants
 
 Building upon the evidence that IL-6 potentiates tendon fibroblast activation and migration to damage in vitro, we then sought to clarify the nature of interactions between these recruited repair cells and the damaged tissue. We asked whether these activated fibroblasts might be capable of driving disease-relevant tissue processes. To assess this, we first looked at transcriptional changes induced in core explants when fibroblasts were present in the artificial extrinsic compartment by comparing them to explants cultured in an initially cell-free hydrogel (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig8-v1.jpg)
+
+**Figure 8.:** (A) Illustration depicting the assembloid combinations compared here (WT core // fibroblasts vs. WT core // cell-free), the assessed timepoint (d7), and the analyzed compartment (core only). (B) RNA-seq volcano plot of differentially expressed genes (DEGs). Genes colored in red have a log2 (fold change)>0.5, an adjusted p-value<0.05, and are considered to be significantly increased in the core of WT core // fibroblast assembloids. Genes colored in blue have a log2 (fold change)<–0.5, an adjusted p-value<0.05, and are considered to be significantly increased in the core of WT core // cell-free assembloids. The log2 and p-value thresholds are represented by the dashed lines. (C) Unsupervised hierarchical clustering of the top 50 DEGs. Genes are clustered by color with positive (red) or negative (blue) row-scaled z-scores. Columns represent individual samples (biological replicates: N=4). (D) Dotplots depicting a selection of gene ontology (GO) annotations significantly enriched (adjusted p-value<0.05) by the DEGs. The selection was biased by GO biological processes and gene set enrichment analysis (GSEA) hallmark annotations enriched in the human dataset (Figure 1C and E). The color of the circles represents their adjusted p-value, the size the number of enriched genes (count), and the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Illustration of the assembloid combinations compared here (WT core // fibroblasts vs. WT core // cell-free), the assessed timepoint (d7), and the analyzed compartment (core only). (B) Dotplot depicting the top 6 significantly enriched gene sets as determined by gene set enrichment analysis (GSEA) based on the MSigDB mouse cell-type signature gene sets. The color of the circles represents their p-value, the size the number of enriched genes (count), the position on the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio), and the +/- signs the direction of the enrichment in the WT core surrounded by fibroblasts compared to the WT core surrounded by a cell-free hydrogel. (C) Detailed annotation of the enrichment map plot clustering the top 30 biological processes significantly enriched by DEG sets. The color of the circles represents their adjusted p-values, the size represents the number of enriched genes (count), and the gray lines connect GO annotations that share the same gene subsets.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Illustrative depiction of the comparisons whose overlap was investigated here: The core explants of wildtype (WT) core // fibroblast vs. the WT core // cell-free assembloids (in vitro, red) and the extrinsic (paratenon-derived) vs. the core (tendon proper-derived) fibroblasts (in vivo, blue). (B) Venn diagram depicting the number and the overlap (violet) of differentially expressed genes (DEGs) as well as the top 7 gene ontology (GO) gene sets for biological processes significantly enriched by the overlapping DEGs. (C) Venn diagram depicting the number and the overlap (violet) of significantly enriched GO annotations for biological processes. (D) Dotplot depicting the top 30 biological processes significantly enriched by DEGs in tendon fibroblasts derived from the extrinsic compartment (paratenon-derived) compared to those derived from the core compartment (tendon proper-derived) colored in a blue to black gradient. The plot is augmented by the data of matched biological processes also significantly enriched in the core of WT core // fibroblast compared to that of the WT core // cell-free assembloids colored in a red to black gradient. The color gradient of the circles represents their adjusted p-values, the size the number of enriched genes (count), and the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio).
 
 Exposing WT core explants to fibroblasts (WT core // fibroblasts) for 7 days increased 446 transcripts, decreased 217 transcripts, and left 19,694 transcripts unchanged (Figure 8B and C). In line with the previous paragraphs reporting fibroblast migration in vitro, some of the increased transcripts (i.e. Scx and Sox9) indicated an enrichment of Scx+ and/or Sox9+ fibroblasts in the WT core explants of WT core // fibroblast assembloids compared to those of WT core // cell-free assembloids. Similarly, GSEA on the full MSigDB cell-type signature gene sets proposed an amplified contribution of fibroblasts, fibroblast-like cells, and progenitor cells to the emerging assembloid phenotype (Figure 8—figure supplement 1B). In vivo, extrinsic (i.e. paratenon-derived) fibroblasts differentially express selected genes compared to tendon core (i.e. tendon proper-derived) fibroblasts (Mienaltowski et al., 2019). The GO gene sets annotated with these differentially expressed genes (DEGs) overlap with those enriched by DEGs between WT core // fibroblast and WT core // cell-free assembloids (Figure 8—figure supplement 2A–D). This could mean that the core explants exposed to extrinsic fibroblasts change into more paratenon-like tissue and again highlights the contribution of extrinsic fibroblast migration and accumulation to assembloid behavior.
 
 To compare this phenotype to human tendinopathic tendons, we looked for ECM turnover-related transcripts that were enriched in human tendinopathic tendons compared to normal controls. Indeed, transcripts for Col3a1, Col1a1, Mmp13, Mmp3, and Mmp9 were increased in core explants co-cultured with fibroblasts (Figure 8, Table 5). When combined through ORA, many of the top 30 biological processes enriched by significantly changed transcripts (adjusted p-value<0.01) were also enriched in human tendinopathic tendons (Figure 1—figure supplement 2). The curated list presented here (Figure 8D) pinpoints significantly enriched processes likely to be involved in tendinopathic hallmarks such as ECM turnover and tissue development, hypoxia and glucose metabolism, and hypercellularity.
 
+**Table 5.**
+ Effect sizes and p-values for selected transcripts.The data describes differences in transcripts between the core explants from wildtype (WT) core // fibroblasts and those from WT core // cell-free assembloids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transcript</th>
+      <th>Effect size</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Col3a1</td>
+      <td>1.1</td>
+      <td>8.40E-11</td>
+    </tr>
+    <tr>
+      <td>Col1a1</td>
+      <td>0.8</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Mmp13</td>
+      <td>0.91</td>
+      <td>1.20E-06</td>
+    </tr>
+    <tr>
+      <td>Mmp3</td>
+      <td>0.64</td>
+      <td>0.0006</td>
+    </tr>
+    <tr>
+      <td>Mmp9</td>
+      <td>1.45</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>Scx</td>
+      <td>0.98</td>
+      <td>0.00006</td>
+    </tr>
+    <tr>
+      <td>Sox9</td>
+      <td>0.6</td>
+      <td>0.001</td>
+    </tr>
+  </tbody>
+</table>
+
 Overall, it appears that extrinsic fibroblasts are sufficient to invoke several tendinopathic hallmarks in tendon core explants and accelerated catabolic matrix turnover in particular. We have previously reported an increase of IL-6 in the supernatant of WT core // fibroblast assembloids that correlated with an increased catabolic breakdown of the core (Stauber et al., 2021). The insights gained here connect this catabolic breakdown to gene sets involved in ECM remodeling. Another set of previously published experiments suggests that the ERK1/2 signaling cascade enriched in the core of WT core // fibroblast favors tissue breakdown as well (Blache et al., 2021; Wunderli et al., 2020).
 
-## Disrupting IL-6 signaling in core explants diminishes emergence of tendinopathic hallmarks
+### Disrupting IL-6 signaling in core explants diminishes emergence of tendinopathic hallmarks
 
 So far, our results have shown that IL-6 signaling enhances proliferation and migration of fibroblasts toward the tendon core and that the presence of fibroblasts invokes tendinopathy-like changes in the tendon core in vitro. Consequently, the last step was to see whether an IL-6 KO not only prevents the fibroblast migration and proliferation, but also reduces fibroblast-invoked tendinopathic hallmarks in the core. To assess this, we again studied assembloids containing an IL-6 KO core, but this time focused on biological processes emerging in the core by leveraging bulk RNA-seq (Figure 9A).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig9-v1.jpg)
+
+**Figure 9.:** (A) Illustration depicting the assembloid combinations compared here (KO core // fibroblasts vs. WT core // fibroblasts), the assessed timepoint (d7), and the analyzed compartment (core only). (B) RNA-seq volcano plot of differentially expressed genes (DEGs). Genes colored in red have a log2 (fold change)>0.5, a p-value<0.05, and are considered to be significantly increased in the core of KO core // fibroblast assembloids. Genes colored in blue have a log2 (fold change)<–0.5, a p-value<0.05, and are considered to be significantly increased in the core of WT core // fibroblast assembloids. The log2 and p-value thresholds are represented by the dashed lines. (C) Unsupervised hierarchical clustering of the top 50 DEGs. Genes are clustered by color with positive (red) or negative (blue) row-scaled z-scores. Columns represent individual samples (biological replicates: N=4). (D) Dotplots depicting a selection of gene ontology (GO) annotations significantly enriched (adjusted p-value<0.05) by the DEGs in both the WT core // cell-free vs. WT core // fibroblast assembloid comparison (red to black gradient) and the KO core // fibroblast vs. WT core // fibroblast assembloid comparison (light blue to black gradient). The selection was biased by enriched GO biological process and gene set enrichment analysis (GSEA) hallmark annotations in the human dataset (Figure 1C and E). The color gradient of the circles represents their adjusted p-value, the size the number of enriched genes (count), and the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio). (E) Venn diagram depicting the number and the overlap (violet) of significantly enriched GO annotations for biological processes between the WT core // cell-free vs. WT core // fibroblast assembloid comparison (red) and the KO core // fibroblast vs. WT core // fibroblast assembloid comparison (blue). (F) Linear elastic moduli of devitalized (Devital.), IL-6 knock-out (KO), and wildtype (WT) core explants surrounded by hydrogel-embedded fibroblast populations at day 21 normalized to day 0 (biological replicates: N=8). The data are displayed as barplots with mean ± standard error of the mean (sem). The applied statistical test was the Mann-Whitney-Wilcoxon test and yielded no significant differences.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/87092/elife-87092-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Illustration depicting the assembloid combinations compared here (KO core // fibroblasts vs. WT core // fibroblasts), the assessed timepoint (d7), and the analyzed compartment (core only). (B) Dotplot depicting the top 6 significantly enriched gene sets as determined by gene set enrichment analysis (GSEA) based on the MSigDB mouse cell-type signature gene sets. The +/- signs indicate the direction of the enrichment in the KO core surrounded by fibroblasts compared to the WT core surrounded by fibroblasts. (C) Dotplot showing the top 20 gene ontology (GO) gene sets for biological processes significantly enriched by transcripts increased in the core of KO core // fibroblast assembloids. (D) Dotplot showing the top 20 GO gene sets for biological processes significantly enriched by transcripts decreased in the core of KO core // fibroblast assembloids. (E) Dotplot showing the top 20 GO gene sets for molecular functions significantly enriched by transcripts increased in the core of KO core // fibroblast assembloids. (F) Dotplot showing the top 20 GO gene sets for molecular functions significantly enriched by transcripts decreased in the core of KO core // fibroblast assembloids. In all the dotplots, the color of the circles represents their p-value, the size the number of enriched genes (count), and the position on the x-axis the number of enriched genes in ratio to the total number of genes annotated to the gene set (gene ratio).
 
 On the transcript level, we found 276 upregulated, 192 downregulated, and 20,204 unchanged genes in the core of KO core // fibroblast assembloids compared to that of WT core // fibroblast assembloids (Figure 9B and C). To see whether an IL-6 KO would partially reverse fibroblast-invoked hallmarks, we matched the list of DEGs (p-value <0.01) to the signatures in the GO database and then compared the surfacing enriched biological processes with those enriched by DEGs between the core of a WT core // fibroblast assembloid and a WT core // cell-free assembloid. The largest overlap lay in the signaling pathways (Wnt, ERK1/2, and IL-6), where 5/5 signatures for biological processes remained similarly enriched (Figure 9E). We found slightly fewer overlapping signatures connected to ECM turnover (6/14) and cellularity (6/18) while there seemed to be a disconnect in hypoxia and glucose metabolism (2/8). Overall, about a third of all signatures enriched by the presence of fibroblasts were also enriched by the IL-6 KO (Figure 9E). In contrast to the signatures emerging from the presence of fibroblasts however, the respective contribution of transcripts increased and decreased by the IL-6 KO to the enriched GO biological processes and molecular functions indicates a decreasing cellularity and ECM turnover in the core (Figure 9—figure supplement 1), which could mean that IL-6 signaling contributes to the gene expression behind these tendinopathy hallmarks.
 
@@ -150,7 +493,7 @@ In summary, our data consistently point to IL-6 signaling targeting reparative f
 
 ## Materials and methods
 
-## Human microarray data analysis
+### Human microarray data analysis
 
 We reanalyzed a microarray dataset (GEO: GSE26051) from 2011 with contemporary methods (principal component analysis, volcano plots, heatmaps, GSEA, and ORA), focusing on the IL-6 signaling cascade. All steps from downloading the dataset to the differential expression computation were conducted in RStudio (‘Prairie Trillium’, https://github.com/rstudio/rstudio; rstudio, 2022) running R version 4.1.2. Overall, we closely followed the steps described here: https://sbc.shef.ac.uk/geo_tutorial/tutorial.nb.html (last visited: May 2, 2022). First, we log2-transformed the expression values and checked their distribution with boxplots. Since the original dataset was gathered from a wide variety of anatomical locations and differently aged patients (Supplementary file 1), we started with a principal component analysis to filter out outliers. Based on the clustering, we identified differences between sheathed and non-sheathed tendons (Figure 1—figure supplement 2). For the following analysis, we therefore excluded samples gathered from sheathed tendons:
 
@@ -162,41 +505,130 @@ To produce the GO annotations, we fed the list of IDs from DEGs into the enrichG
 
 For the GSEA performed in RStudio with clusterProfiler, we used the human hallmark and the cell-type signature gene set annotations from the molecular signature database (MSigDB, https://www.gsea-msigdb.org/gsea/msigdb/, last visited: October 31, 2022) after ranking the genes according to their p-value. We used the following input parameters: pvalueCutoff = 1.00, minGSSize = 15, maxGSSize = 500, and eps = 0. Lastly, we used the gseaplot and dotplot functions from the enrichPlot package to plot the data and the sign of the enrichment score/NES to estimate the directionality. The exact code can be found in the supplementary material (Source code 1).
 
-## Human immunohistological stainings
+### Human immunohistological stainings
 
 Tendon tissues from tendinopathic and normal control tendons were collected with informed consent including consent to publish from human patients undergoing treatment at the University Hospital Balgrist (ethical permission numbers 2016-02665 and 2020-0119 as approved by the institutional review board of the Canton of Zurich). Patient data and images are depicted in Figure 2—figure supplement 1. We cut transversal cryosections (10 µm thickness) using a low-profile microtome blade (DB80 LX, BioSys Laboratories), collected them on a glass slide, and let them dry for 1 hr before storing them at –80°C until further use. Prior to staining, sections were air-dried for 30 min at RT (room temperature) and washed 3× with PBS for 5 min each. Then, sections were permeabilized and blocked with 3% BSA (bovine serum albumin) in PBS-T (PBS+0.1% Triton X) for 1 hr at RT. We washed the sections again, added the primary antibody for CD90 (Abcam, ab181469, diluted 1:100 for the co-staining with IL-6R and GeneTex, GTX130072 diluted 1:200 for the co-staining with IL-6), CD68 (Abcam, ab955, diluted 1:50), IL-6 (R&D Systems, MAB2061R, diluted 1:200), and IL-6R (Absolute Antibody, ab00737-23.0, diluted 1:100) in PBS-T with 1% BSA. We covered them with parafilm and left them overnight in a humid chamber at 4°C. Afterward, we washed them again (3×5 min with PBS) before adding the matching secondary antibodies (diluted 1:200 in PBS with 1% BSA) to the samples as well as the secondary antibody controls.
 
 The sections were then washed again (3×5 min with PBS+1×5 min with ultra-pure water) before mounting the coverslip with ROTIMount FluorCare DAPI (Roth). We used the Leica SP8 automated inverse confocal laser scanning microscope for acquiring the images, which we then processed with ImageJ 1.53q and RStudio (Source code 2 and Source code 3).
 
-## Mouse tissue harvest
+### Mouse tissue harvest
 
 All animal experiments were approved by the responsible authorities (Canton Zurich license number ZH104-18 and ZH058-21).
 
 We extracted tail tendon core explants and Achilles tendons from 12- to 15-week-old male and female Tgf(Scx-GFP)1Stzr and B6.129S2-Il6tm1Kopf/J mice (knock-out: KO, wildtype: WT) as described previously (Figure 4B and C; Stauber et al., 2021; Stauber et al., 2024). We isolated the core explants from the tail and only kept those with a mean diameter between 100 and 150 µm in standard culture medium (DMEM/F12 GlutaMAX with 10% fetal bovine serum, 1% penicillin/streptomycin, 1% amphotericin, 200 µM L-ascorbic acid) until clamping them. Meanwhile, we separated the Achilles tendon from the calcaneus and the calf muscle using a scalpel and washed them with PBS before starting the digestion process (Standard culture medium without L-ascorbic acid but 2 mg/ml collagenase for 24 hr at 37°C). After digestion, we cultured the cells on 2D tissue culture plastic in standard culture medium and used the resulting mixed fibroblast population between passage 2 and 4 (Figure 4—figure supplement 1, Figure 4—figure supplement 2). All medium components were purchased from Sigma-Aldrich, except for the ascorbic acid (Wako Chemicals) and the collagenase (Thermo Fisher).
 
-## Collagen isolation
+### Collagen isolation
 
 We isolated collagen-1 from rat tail tendon fascicles following an established protocol (Rajan et al., 2006). Briefly, tendon explants were extracted from the tail of adult (>8 weeks) female Sprague-Dawley rats with surgical clamps. Then, the collagen was dissolved by sequentially putting the core explants into acetone (5 min), 70% isopropanol (5 min), and finally 0.02 N acetic acid (48 hr). The resulting viscous solution was mixed in a house-ware blender and then frozen at –20°C. Lyophilization at –20°C turned the viscous solution into a dry collagen sponge, which was stored at –80°C and aliquots thawed when needed. Upon thawing, the collagen aliquot was mixed with 0.02 N acetic acid and then centrifuged (15,000 rpm for 45 min) at 4°C. The supernatant was then sterilized with SPECTRAPOR dialysis bags first in non-sterile acetic acid (1 hr), then 1% chloroform in ddH2O (1 hr), and finally sterile acetic acid (three times for 2 days each). The concentration of the resulting solution was determined with a hydroxyproline assay (Sigma-Aldrich, MAK008), the purity was assessed with SDS-PAGE and western blots, and the solution itself was stored at 4°C until usage in the experiments.
 
-## Hydrogel preparation, core explant embedding, and assembloid culture
+### Hydrogel preparation, core explant embedding, and assembloid culture
 
 As described previously (Stauber et al., 2021; Stauber et al., 2024), core explants were fixated with clamps, placed into molds lining silicone chambers, and tensioned. These molds were then filled with cell-free or extrinsic fibroblast-laden collagen hydrogels. One hydrogel consisted of 10 µl PBS (20×), 1.28 µl of 1 M NaOH (125×), 8.72 µl double-distilled water (ddH2O, 23×), 80 µl collagen-1 (2.5× or 1.6 mg/ml) and 100 µl culture media or cell suspension (2×). All hydrogel components were kept on ice to prevent pre-mature crosslinking. Co-culture medium (DMEM/F12 high glucose, 10% FBS, 1% non-essential amino acids, 1% penicillin/streptomycin, 1% amphotericin, 200 µM L-ascorbic acid, 20 ng/ml macrophage-colony stimulating factor) was added to stable hydrogels after 50 min of polymerization at 37°C and tension was released. The assembloids were then cultured under tendinopathic niche conditions (37°C, 20% O2) with two media changes per week until the determined timepoint (Wunderli et al., 2020). We used a final concentration of 25 ng/ml recombinant IL-6 (PeproTech, 216-16) in those assembloids to be stimulated by it, and a final concentration of 10 µg/ml tocilizumab (TargetMol, T9911) in those assembloids to be inhibited by it.
 
-## RNA isolation for genome-wide RNA-seq (bulk RNA-seq)
+### RNA isolation for genome-wide RNA-seq (bulk RNA-seq)
 
 We pooled 20–24× 2 cm core explants and 2 extrinsic fibroblast-laden collagen hydrogels separate from each other and snap-froze them in liquid nitrogen. The core explant pools were generated from a single mouse and represent one biological replicate each. The collagen hydrogel pools contained a mixed population comprising migratory cells from the embedded core (same mouse) and the initially seeded mixed fibroblast population (cells pooled from six mice). The frozen samples were pulverized by cryogenic grinding (FreezerMill 6870, SPEX SamplePrep) and further processed with the RNeasy micro kit (QIAGEN) according to the manufacturer’s instructions. We used the NanoDrop 1000 spectrophotometer 3.7.1 (Thermo Fisher) to measure RNA concentration and purity, and the 4200 TapeStation System (Agilent) to measure RNA quality. For each condition (WT core // cell-free, WT core // fibroblasts, KO core // fibroblasts), all six of the collagen hydrogels pools but only four of the core explant pools passed both integrity control (RIN≥2) and had a sufficiently high RNA concentration (30–100 ng/µl) for genome-wide RNA-seq.
 
 We submitted those pools to the functional genomics center Zurich (https://fgcz.ch/, last visited May 6, 2022) for the Illumina (NovaSeq 6000) TruSeq TotalRNA stranded sequencing protocol including library construction from total RNA using ribo-depletion, library QC, sequencing, and data delivery.
 
-## RNA-seq data processing and bioinformatic analysis
+### RNA-seq data processing and bioinformatic analysis
 
 We used the R-based SUSHI framework of the Functional Genomics Center Zurich (ETH Zurich and University of Zurich) to perform primary level bioinformatics. Specifically, we used the FastqcApp, the FastqScreenApp, and the RnaBamStatsApp for quality control, the KallistoApp (sleuth) to calculate transcript abundance after pseudoalignment, the CountQCApp to quality control after counting reads, and the DESeq2App for differential expression analysis. We then used the shiny toolset developed by the Functional Genomics Center Zurich (https://github.com/fgcz/bfabricShiny, copy archived at Functional Genomics Center Zurich ETHZ | UZH, 2022, last visited May 6, 2022) based on b-fabric and R to generate the annotated volcano plots, heatmaps, and gene set functional enrichment by applying the hypergeometric ORA with the following settings:
 
-## Volcano plot
+#### Volcano plot
 
-## Heatmap
+<table>
+  <thead>
+    <tr>
+      <th>Comparison</th>
+      <th>p-Value</th>
+      <th>p-Value threshold</th>
+      <th>Log2FC threshold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Core of WT core // cell-free –Core of WT core // fibroblasts</td>
+      <td>FDR-adjusted</td>
+      <td>0.05</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Core of WT core // fibroblasts –Core of KO core // fibroblasts</td>
+      <td>Raw</td>
+      <td>0.05</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Fibroblasts from WT core // fibroblasts –Fibroblasts from KO core // fibroblasts</td>
+      <td>Raw</td>
+      <td>0.05</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
 
-## Overrepresentation analysis
+#### Heatmap
+
+<table>
+  <thead>
+    <tr>
+      <th>Comparison</th>
+      <th>#Genes</th>
+      <th>Scale</th>
+      <th>Count method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT core // cell-free –WT core // fibroblasts</td>
+      <td>Top 50 up and down</td>
+      <td>Diverging</td>
+      <td>Normalized+Log2</td>
+    </tr>
+    <tr>
+      <td>Core of WT core // fibroblasts –Core of KO core // fibroblasts</td>
+      <td>Top 50 up and down</td>
+      <td>Diverging</td>
+      <td>Normalized+Log2</td>
+    </tr>
+    <tr>
+      <td>Fibroblasts from WT core // fibroblasts –Fibroblasts from KO core // fibroblasts</td>
+      <td>Top 50 up and down</td>
+      <td>Diverging</td>
+      <td>Normalized+Log2</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Overrepresentation analysis
+
+<table>
+  <thead>
+    <tr>
+      <th>Comparison</th>
+      <th>Input p-value</th>
+      <th>Output p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT core // cell-free –WT core // fibroblasts</td>
+      <td>FDR-adjusted&lt;0.01</td>
+      <td>FDR-adjusted&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Core of WT core // fibroblasts –Core of KO core // fibroblasts</td>
+      <td>Raw&lt;0.01</td>
+      <td>FDR-adjusted&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Fibroblasts from WT core // fibroblasts –Fibroblasts from KO core // fibroblasts</td>
+      <td>Raw&lt;0.01</td>
+      <td>FDR-adjusted&lt;0.05</td>
+    </tr>
+  </tbody>
+</table>
 
 We also looked at the increased (logFC>0) and decreased (logFC<0) transcripts in isolation to estimate their contribution to the enrichment and give it directionality. The emapplot of enriched biological processes independent of increased and decreased transcripts was generated in RStudio using the enrichPlot package.
 
@@ -206,19 +638,19 @@ The RNA-seq data gathered from assembloids as discussed in this publication have
 
 The in vivo mouse RNA-seq data comparing paratenon-derived to tendon proper-derived fibroblasts have previously been published in an open-access database (PRJNA399554) (Mienaltowski et al., 2013). To reanalyze this data, we used the same tools and parameters as for the assembloid analysis (GO input: FDR-adjusted p-value<0.01). The overlapping DEGs and GO terms were calculated and the resulting Venn diagrams plotted with basic RStudio functions (i.e. intersect & draw.pairwise.venn).
 
-## Quantifying total cell proliferation, ScxGFP cell proliferation, and ScxGFP cell recruitment to WT and KO core explants
+### Quantifying total cell proliferation, ScxGFP cell proliferation, and ScxGFP cell recruitment to WT and KO core explants
 
 In the assembloids used here, core explants from WT and homozygous IL-6 KO B6.129S2-Il6tm1Kopf/J mice were embedded with ScxGFP fibroblasts from homo- and heterozygous Tgf(Scx-GFP)1Stzr mice. After 7 days, the assembloids were removed from the clamps and washed with PBS before staining them with ethidium homodimer (EthD-1, Sigma-Aldrich, 2 mM stock in DMSO) diluted to 4 µM with PBS (20 min, 37°C). They were then again washed with PBS, fixated with 4% formaldehyde (Roti-Histofix, Karlsruhe) for 1 hr at RT, washed again with PBS, and stored in PBS at 4°C. Immediately before the imaging, nuclei were stained with NucBlue Live Ready Probes Reagent (R37605, Thermo Fisher) for 1 hr at RT. We used the Nikon Eclipse Ti2 confocal scanning microscope controlled by NIS-Elements to acquire the images (three per sample), which we then processed with ImageJ 1.53q. Briefly, we first registered all cell locations by creating a mask from the NucBlue channel. Then, we put this mask over the ScxGFP channel and measured the fluorescence intensity at the identified cell locations. We then transferred the signal intensity per location data to RStudio, where we first calculated the total cell numbers of all the images of one sample combined and normalized them to the WT median. Afterward, we determined the fluorescence threshold for the ScxGFP-signal (using density plots and a negative control image) and applied this threshold to the dataset. We then calculated the total ScxGFP cell numbers for each sample and normalized them to the WT median. Finally, we combined the cell location with the fluorescence intensity data to find the distance from the core where most of the ScxGFP cells were located and to calculate the ratio between ScxGFP present at the core and those present in the surrounding extrinsic hydrogel (Source code 4, Source code 5).
 
-## Quantifying mechanical properties of assembloids
+### Quantifying mechanical properties of assembloids
 
 We mounted the assembloids to a custom-made uniaxial stretching device equipped with a load cell as described previously (Stauber et al., 2021). After five cycles of pre-conditioning to 1% L0, the assembloids were then stretched up to 2% L0 to measure the linear elastic modulus (Emod) with a pre-load of 0.03 N. This measurement was repeated after 21 days (d21) of culture. We used MATLAB R2017a and RStudio to read out the linear elastic modulus and normalize it to the measurement immediately after assembloid fabrication (d0). Media was changed every 2–3 days. For the corresponding condition, the core explants were devitalized by snap-freezing them repeatedly in liquid nitrogen.
 
-## Achilles tenotomy
+### Achilles tenotomy
 
 Adult WT and homozygous IL-6 KO B6.129S2-Il6tm1Kopf/J (Kopf et al., 1994) x Tg(Scx-GFP)1Stzr mice (between 12 and 15 weeks of age) of both genders were anesthetized by isoflurane inhalation. While the mice were anesthetized, we transected the Achilles tendon of the right hindlimb by creating a small incision in the tendon midsubstance (Figure 7A). The contralateral hindlimb was used as the undamaged control. After the surgical intervention, we closed the skin wound with an 8/O prolene suture (Ethicon, W8703) and administered an analgesic (buprenorphine, 0.1 mg/kg s.c., 26 G needle). At 1 week (Figure 7—figure supplements 1 and 2) and 2 weeks (Figure 7) post-tenotomy, we injected 10 µl/g of EdU into each mouse of the 3 weeks group and euthanized them 24 hr later with CO2. We collected the plantaris and Achilles tendon/neotendon from both hindlegs for histology. The isolated tissues were placed in OCT (TissueTek), cooled down on dry ice, and then stored at –80°C until further use.
 
-## Immunofluorescence microscopy of mouse Achilles tendon sections
+### Immunofluorescence microscopy of mouse Achilles tendon sections
 
 We cut transversal (1 week) and longitudinal (3 weeks) cryosections (10 µm thickness) using a low-profile microtome blade (DB80 LX, BioSys Laboratories), collected them on a glass slide, and let them dry for 1 hr before storing them at –80°C until further use. Prior to staining, sections were air-dried for 30 min at RT and washed 3× with PBS for 5 min each. Then, sections were permeabilized and blocked with 3% BSA in PBS-T (PBS+0.1% Triton X) for 1 hr at RT. We then washed the sections again and incubated the sections that were previously stained with EdU with a reaction cocktail (Jena Bioscience, CLK-074, CuAAC Cell Reaction Buffer Kit [THPTA based]) prepared according to the manufacturer’s instructions (440 µl reaction buffer, 10 µl CuSO4, 1 µl (2 µM) Alexa Fluor azide 647, and 50 µl reducing agent) at RT for 45 min. We washed the sections again, added the primary antibody for Scx (abcam, ab58655, diluted 1:200 in PBS-T with 1% BSA), TPPP3 (Invitrogen, PA5-24925, 1:200), or CD146 (BIOSS, bs-1618R, 1:200) to the sections from the 1-week timepoint, and a GFP-antibody (Abcam, ab290, 1:500 in PBS-T with 1% BSA) to those from the 3-week timepoint. We covered all the sections with parafilm and left them overnight in a humid chamber at 4°C. Afterward, we washed them again (3×5 min with PBS) before adding the matching secondary antibodies (diluted 1:200 in PBS with 1% BSA) to the samples as well as the secondary antibody controls.
 
@@ -226,11 +658,11 @@ The sections were then washed again (3×5 min with PBS+1×5 min with ultra-pure 
 
 The researcher performing the staining, imaging, and analysis of the Achilles tendon sections was blinded to the conditions by marking the samples with numbers only.
 
-## Secretome analysis
+### Secretome analysis
 
 Culture medium was enriched with the secretome of the different assembloids (WT core // cell-free, KO core // cell-free, WT fibroblasts in a hydrogel) for 3 days and until day 7 of the assembloid/hydrogel culture. IL-6 was quantified using a custom-made multiplex U-PLEX for mouse biomarkers (Meso Scale Discovery) according to the manufacturer’s instruction. Plates were read with the MESO Quickplex SQ120 (Meso Scale Discovery) and analyzed with Discovery Workbench 4.0.13 (https://www.mesoscale.com/en/products_and_services/software). The plate was read with the Epoch Microplate Spectrophotometer (Biotek), and the data were analyzed with RStudio.
 
-## Statistical analysis and graph design
+### Statistical analysis and graph design
 
 Data curation, statistical analysis, and plotting was done in RStudio (‘Prairie Trillium’, 9f796939, February 16, 2022, https://github.com/rstudio/rstudio, copy archived at rstudio, 2022) running R version 4.1.2. For normally distributed datasets, statistical information was obtained by ANOVA followed by Tukey’s post hoc tests for pairwise comparisons. Else, the non-parametric Wilcoxon rank sum test was applied, directionally matching the data (less, greater, two-sided). For all tests, we tested the level of p-values. The mean and the standard error of the mean (sem) were reported for the following data: cumulative percentages of ScxGFP fibroblasts in assembloids, elastic modulus of the assembloids, and cumulative percentages of Scx+/TPPP+/CD146+ cells in the in vivo tenotomy model. We used bar and/or point plots to depict the mean and error bars/bands to depict the sem. We reported the median and interquartile range (IQR) in assembloids for the total cell number, the number of ScxGFP cells, and the ratio between core-resident and extrinsic ScxGFP cells, as well as for the total cell number, the number of Scx+ cells, and the ratio between Achilles and neotendon-resident Scx+/ TPPP+/CD146+ cells in the in vivo tenotomy. These values were depicted as boxplots with the upper and lower hinges corresponding to the first and third quartile (25th and 75th percentile), the middle one to the median, the whiskers extending from the upper/lower hinge to the largest/smallest value no further than 1.5 times the IQR, and dots representing data beyond the whiskers. Results of the statistical analysis are indicated as follows: *p<0.05, **p<0.01, ***p<0.01.
 

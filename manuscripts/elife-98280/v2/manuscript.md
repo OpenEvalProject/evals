@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02956yf07 International Institute of Integrative Sleep Medicine, University of Tsukuba Tsukuba Japan
-2. https://ror.org/05byvp690 Department of Neuroscience, Peter O’Donnell Brain Institute, University of Texas Southwestern Medical Center Dallas United States
-3. https://ror.org/05byvp690 Department of Psychiatry, Peter O’Donnell Brain Institute, University of Texas Southwestern Medical Center Dallas United States
+1. International Institute of Integrative Sleep Medicine, University of Tsukuba Tsukuba Japan ([ROR:02956yf07](https://ror.org/02956yf07))
+2. Department of Neuroscience, Peter O’Donnell Brain Institute, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+3. Department of Psychiatry, Peter O’Donnell Brain Institute, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
@@ -31,13 +31,13 @@ We investigated sleep/wake mediated electrophysiological changes in glutamatergi
 
 ## Results
 
-## Sleep need driven, glutamate, synaptic phenotype
+### Sleep need driven, glutamate, synaptic phenotype
 
 Three cohorts of C57 BL/6 male mice were allowed either to (1) sleep ad lib (control sleep, CS); (2) prevented from sleeping from ZT = 0–6 hr (sleep deprived, SD); or, (3) after 4 hr SD allowed recovery sleep, ad lib for 2 hr (RS). Ex-Vivo acute brain slices from the motor cortex were then prepared from these animals at ZT = 6 hr and whole cell recordings were obtained from layer 2/3 pyramidal neurons (see methods for details). Locally evoked glutamatergic EPSCs recorded at Vhold = –90 mV had little NMDAR contribution due to Mg++ block. These were compared in the same cell, to EPSCs evoked at Vhold = +50 mV with little AMPAR contribution due to reduced AMPAR driving force, but, having large NMDAR currents due to voltage sensitive relief from Mg++ blockade (NMDAR currents had reversed polarity since ENMDAR = ~0 mV). For each recorded neuron (one neuron/slice/animal) an average response to repeated stimuli (>10 stimuli, 100 pA, applied every 10 s) to elicit an EPSC was determined at each holding potential. A two-way ANOVA analysis showed a significant interaction between AMPA matched to NMDA EPSC response for each neuron, and sleep condition (F (2, 21)=7.268, p<0.004; Figure 1A, C and E; Figure 1—source data 1, tabs 1&2). When considered independently, neither the effect of sleep condition nor of EPSC subtype reached significance at p<0.05 (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/98280/elife-98280-fig1-v2.jpg)
 
-**Figure 1.:** (A) Examples of AMPA currents at –90 mV holding potential and NMDA currents at +50 mV holding potential are shown for: control sleep (CS), 6 hr of sleep deprivation (SD), and 4 hr of sleep deprivation followed by 2 hr of recovery sleep (RS). Traces (100 ms duration) are scaled to the NMDA current for comparison (NMDA current measured @ 40 ms after AMPA peak current). (B) Examples of successes (black) and failures (red) at –90 mV (left, AMPA) and +50 mV (right, NMDA) after minimal stimulation of excitatory inputs to motor cortex pyramidal neurons are shown; Top row: CS sleep, middle row: SD and bottom row: RS (Cal. 10pAX20ms). Rate of failures (% of all stimuli delivered) for AMPA EPSCs (blue) and NMDA EPSCs (red) in the three conditions (+/-sem). (C, D) Average (+/-sem) AMPAR and NMDAR EPSC responses (unmatched) and failure rates, respectively, for each sleep condition. (E), (F) Matched AMPA/NMDA EPSC response and AMPA/NMDA failure rate ratios, respectively, are shown for the three conditions (N=1 cell/slice, 2–3 slice/animal, 3 animals/condition).Figure 1—source data 1.
+**Figure 1.:** (A) Examples of AMPA currents at –90 mV holding potential and NMDA currents at +50 mV holding potential are shown for: control sleep (CS), 6 hr of sleep deprivation (SD), and 4 hr of sleep deprivation followed by 2 hr of recovery sleep (RS). Traces (100 ms duration) are scaled to the NMDA current for comparison (NMDA current measured @ 40 ms after AMPA peak current). (B) Examples of successes (black) and failures (red) at –90 mV (left, AMPA) and +50 mV (right, NMDA) after minimal stimulation of excitatory inputs to motor cortex pyramidal neurons are shown; Top row: CS sleep, middle row: SD and bottom row: RS (Cal. 10pAX20ms). Rate of failures (% of all stimuli delivered) for AMPA EPSCs (blue) and NMDA EPSCs (red) in the three conditions (+/-sem). (C, D) Average (+/-sem) AMPAR and NMDAR EPSC responses (unmatched) and failure rates, respectively, for each sleep condition. (E), (F) Matched AMPA/NMDA EPSC response and AMPA/NMDA failure rate ratios, respectively, are shown for the three conditions (N=1 cell/slice, 2–3 slice/animal, 3 animals/condition).
 
 To control for neuron-to-neuron EPSC variability (due to variability of stimulation-evoked afferent activation), we calculated the AMPA/NMDA ratio for three sleep conditions, CS, SD, and RS. We observed a significant difference between sleep condition cohorts (non-parametric Kruskal-Wallis test, p<0.0022). Significance tests for multiple comparisons between sleep conditions, gave CS-SD, p<0.031; SD-RS, p<0.005; and CS-RS, p<0.191 (Two-stage linear step-up procedure of Benjamini, Krieger, and Yekutieli; Figure 1—source data 1, tabs1&3; Figure 1E).
 
@@ -47,7 +47,7 @@ The condition-specific ratio of FR+50 mV to FR-90 mV (FRR) is a ratio of power f
 
 The sleep-dependent electrophysiological findings raise several questions, including: (1) are other cell types besides the layer 2–3 pyramidal neurons from which we recorded, involved; (2) can changes in the transcriptome account, at least in part, for sleep-related synaptic changes in function, and if so, what are the specific functions of those genes and (3) what is the upstream sleep-dependent control of changes in gene expression?
 
-## Cell type/subtype-specific gene expression in response to sleep loss
+### Cell type/subtype-specific gene expression in response to sleep loss
 
 To examine the molecular mechanisms responsible for an SD response, we characterized single nuclei transcriptomes of cells from the motor cortex of mice from two cohorts, an ad lib or control sleep (CS) group and an SD group (sleep deprived from ZT = 0–6 hr; see detailed methods).
 
@@ -55,13 +55,13 @@ Transcript libraries from each of the two cohorts (CS, n=4 and SD, n=4), were pr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/98280/elife-98280-fig2-v2.jpg)
 
-**Figure 2.:** (A) Uniform Manifold Approximation and Projection (UMAP) projection of cell-type gene expression pattern following 6 hr ad lib sleep (control sleep, CS) at ZT = 6 hr. (B) As in (A) except after 6 hr of sleep deprivation (SD), ZT = 6 hr. (C) The distribution of cell numbers across subtypes is unaffected by sleep needs. (D) The median number of UMIs/cell is significantly increased by sleep need across all cell subtypes (see_Figure 2—source data 1 and text for statistics).Figure 2—source data 1.
+**Figure 2.:** (A) Uniform Manifold Approximation and Projection (UMAP) projection of cell-type gene expression pattern following 6 hr ad lib sleep (control sleep, CS) at ZT = 6 hr. (B) As in (A) except after 6 hr of sleep deprivation (SD), ZT = 6 hr. (C) The distribution of cell numbers across subtypes is unaffected by sleep needs. (D) The median number of UMIs/cell is significantly increased by sleep need across all cell subtypes (see_Figure 2—source data 1 and text for statistics).
 
 We next determined the differential gene expression (DGE) of transcripts between conditions of CS and SD (see methods; Figure 3A). In response to 6 hr of SD from ZT = 0–6, both increased and decreased gene expression was observed in all cell subtypes (Figure 3—source data 1). Predictably, there is a trend for increased DEGs in cell types expressing a greater number of genes (Figure 3A). The greatest proportion of sleep DEGs is ~69%, expressed by ExIT cell types, while the next largest proportion is ~17% for IN cell types (Figure 3B). To determine whether the increased numbers of genes expressed in the ExIT subtypes account for this cell type’s high proportion of DEGs, we examined each cell type’s probability of DEG expression given the number of genes expressed in the cell type, its Bayesian probability of expression.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/98280/elife-98280-fig3-v2.jpg)
 
-**Figure 3.:** (A) An XY bar plot of cell type specific differentially expressed genes (DEGs) (both up and down-regulated) organized by cell-type-specific number of expressed genes (X axis) shows the greatest number of DEGs are found in excitatory pyramidal neurons that project within the telencephalon (ExIT). (B) A pie chart of the distribution of DEGs amongst different cell types illustrates that the majority of sleep DEGs are expressed by ExIT neurons. (C) An analysis of the cell type-specific DEG occurrence shows the greatest probability of significant sleep loss gene response is found in ExIT cells by more than threefold compared to all other cell types.Figure 3—source data 1.
+**Figure 3.:** (A) An XY bar plot of cell type specific differentially expressed genes (DEGs) (both up and down-regulated) organized by cell-type-specific number of expressed genes (X axis) shows the greatest number of DEGs are found in excitatory pyramidal neurons that project within the telencephalon (ExIT). (B) A pie chart of the distribution of DEGs amongst different cell types illustrates that the majority of sleep DEGs are expressed by ExIT neurons. (C) An analysis of the cell type-specific DEG occurrence shows the greatest probability of significant sleep loss gene response is found in ExIT cells by more than threefold compared to all other cell types.
 
 The Bayesian probability of sleep loss DEGs, for cell subtype, is more than threefold greater for excitatory intratelencephalically projecting neurons (ExIT subtype, pyramidal cells BRAIN Initiative Cell Census Network BICCN, 2021) compared to any other class of cells (Figure 3C; Figure 3—source data 1, tabs1,2). These observations suggest, with respect to transcriptomic-mediated changes in the frontal cortex, the ExIT class neurons comprise the major target of sleep function and extend earlier observations that frontal glutamatergic neurons are the primary targets of the SD transcriptomic response (Bjorness et al., 2020; Kim et al., 2022).
 
@@ -69,7 +69,7 @@ We determined the functional relevance of cell-type specific DEGs with respect t
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/98280/elife-98280-fig4-v2.jpg)
 
-**Figure 4.:** MEF2c loss of function or constitutive HD4 repression of MEF2c.(A) Heat map for cell type DEG enrichment by autism spectrum disorder (ASD) risk genes, Synaptic Shaping Component genes, MEF2c-cKO DEGs, and cnHD4 DEGs. (B) Model for the control of sleep DEGs by HD4 repression of MEF2c and by pMEF2c during low sleep need (left). During high sleep need, MEF2c is de-repressed by sequestration of pHD4 to the cytoplasm and dephosphorylation of MEF2c. Both these events facilitate the expression of sleep genes. (C) It is proposed that SSC gene expression induced by prolonged waking or SD can, once asleep, decrease the AMPA/NMDA ratio and increase silent synapses (SS) during sleep. This may bias glutamate synapses towards decreased strength but increased potential for long-term plasticity (LTP) in preparation for the active phase, when sleep need is low. Conversely, as the active phase progresses, the AMPA/NMDA ratio increases (as does synaptic strength), and silent synapses are replaced by active synapses in association with increased expression of SSC genes to complete the cycle of glutamate, synapse, and phenotype oscillation. (D) An illustration of the slow wave activity during slow wave sleep (SWS-SWA) response to chronic MEF2c repression or activation. Chronic activation of MEF2c facilitated transcription leads to decreased AMPAR-mediated synaptic strength mimicking the effect of increased Ado tone, that will inhibit cortical-thalamic, glutamate synaptic activity to increase SWS-SWA. Chronic repression of MEF2c does the opposite, mimicking loss of Ado A1 receptors (ADORA1) function and tone, to decrease SWS-SWA.Figure 4—source data 1.
+**Figure 4.:** (A) Heat map for cell type DEG enrichment by autism spectrum disorder (ASD) risk genes, Synaptic Shaping Component genes, MEF2c-cKO DEGs, and cnHD4 DEGs. (B) Model for the control of sleep DEGs by HD4 repression of MEF2c and by pMEF2c during low sleep need (left). During high sleep need, MEF2c is de-repressed by sequestration of pHD4 to the cytoplasm and dephosphorylation of MEF2c. Both these events facilitate the expression of sleep genes. (C) It is proposed that SSC gene expression induced by prolonged waking or SD can, once asleep, decrease the AMPA/NMDA ratio and increase silent synapses (SS) during sleep. This may bias glutamate synapses towards decreased strength but increased potential for long-term plasticity (LTP) in preparation for the active phase, when sleep need is low. Conversely, as the active phase progresses, the AMPA/NMDA ratio increases (as does synaptic strength), and silent synapses are replaced by active synapses in association with increased expression of SSC genes to complete the cycle of glutamate, synapse, and phenotype oscillation. (D) An illustration of the slow wave activity during slow wave sleep (SWS-SWA) response to chronic MEF2c repression or activation. Chronic activation of MEF2c facilitated transcription leads to decreased AMPAR-mediated synaptic strength mimicking the effect of increased Ado tone, that will inhibit cortical-thalamic, glutamate synaptic activity to increase SWS-SWA. Chronic repression of MEF2c does the opposite, mimicking loss of Ado A1 receptors (ADORA1) function and tone, to decrease SWS-SWA.
 
 Enrichment of sleep-responsive DEGs by SSC and ASD genes, is strongest for ExIT (L 2–3, 4–5, 5) pyramidal neurons (Chi square with Yates correction p<0.006). In particular, a number of these sleep need ExIT-DEGs encode proteins that can directly affect AMPA/NMDA ratio and silent synapse numbers, including Dcc (Horn et al., 2013), Dgkb (Kakefuda et al., 2016), Gpc6 (Sato et al., 2016), Grin3a (Pérez-Otaño et al., 2016), Kif17 (Setou et al., 2000; Iwata et al., 2020), Kirrl3 (Martin et al., 2015), and Ptprf (Sclip and Südhof, 2020). Some sleep-modulated SSCs are also ASD risk factors in frontal cortical EXIT pyramidal neurons, including Cdh13, Dcc, Glra2, Gpc6, Grik4, Itpr1, Kirrel3, Nr1d1, Pcdh15, and Ush2a. To a much lesser extent, Layer 6 corticothalamic pyramidal neurons and somatostatin, parvalbumin, and Sncg classes of inhibitory neurons (Scala et al., 2021) also show this enrichment of their sleep DEGs (Figure 4A). These observations are consistent with the ExIT pyramidal cell, glutamatergic, synaptic phenotype as a major functional target for sleep proteins and implicate sleep (dis-)function’s role in autism risk.
 
@@ -109,11 +109,11 @@ In summary, at the end of a long episode of waking, when sleep needs is high, gl
 
 ## Materials and methods
 
-## Electrophysiology
+### Electrophysiology
 
 All electrophysiological animal experiments were approved by the Animal Experimental Committee at the University of Tsukuba. Animals were housed on a 12:12 hr light/dark cycle (with the light automatically turned on at 9:00) at a stable temperature (24.5 ± 0.5 °C), with free access to food and water. C57/Bl6 male mice aged 8–12 wk were used.
 
-## Slice preparation and recording
+### Slice preparation and recording
 
 Mice were fully anesthetized at ZT 6 with isoflurane, and their brains were promptly removed (<1 min) and placed in ice-cold artificial cerebrospinal fluid (ACSF), composed of 124 mM NaCl, 26 mM NaHCO3, 3 mM KCl, 2 mM CaCl, 1 mM MgSO4, 1.25 mM KH2PO4, 10 mM glucose, 300–310 mOsm, equilibrated with 95% O2 and 5% CO2.
 
@@ -121,27 +121,37 @@ Brains were mounted on the stage of a vibrating microtome (Leica VT1200 S) with 
 
 Evoked synaptic responses were produced through extracellular stimulation (0.1 ms) every 10 s with monopolar glass pipette electrodes filled with ACSF and placed in the vicinity (200–400 micrometers) lateral to the recorded neuron in layer 2/3. For the AMPA/NMDA amplitude ratio experiments stimuli amplitudes were 8.7 μA +/-3.5 μA (SD) and for the failure rate experiments, 1.4 μA +/-0.9 μA (SD).
 
-## AMPA/NMDA EPSC analyses
+### AMPA/NMDA EPSC analyses
 
 AMPA responses were recorded at a holding potential of –90 mV and mixed AMPA-NMDA responses at a holding potential of +50 mV. The –90 mV holding potential was chosen according to precedent (Myme et al., 2003). The hyperpolarized holding potential increases driving force and permits lower stimulus strength for the same response size – reducing the likelihood of polysynaptic responses. Experiments with multiple response peaks at –90 mV were not included in the analysis. The –90 mV holding potential also increases NMDA receptor Mg block - resulting in a minimally contaminated AMPA response.
 
 The AMPA/NMDA ratio was determined according to an established protocol (Myme et al., 2003); briefly, at least 10 traces were averaged at –90 mV and +50 mV, the AMPA response was calculated as the peak inward current at –90 mV and the NMDA current was calculated at +50 mV in a 5 ms window 40 ms after the AMPA peak.
 
-Failure rates for AMPA and AMPA +NMDA EPSCs: Minimal stimulation was achieved by lowering the stimulation strength until clear successes and failures could be observed at –90 mV holding potential and stimulation strength was then kept constant for 5–10 min to allow the system to stabilize before failure ratios were determined. Relative numbers of silent and total (silent +active) synapses in an L2-3 pyramidal neuron evoked in a slice by minimal presynaptic stimulation is correlated with failure rates (FR=failures/number of stimuli). FR−90=(1−prelease)As, and FR+50=(1−prelease)As+Ss, where As = number active synapses (at –90 mV) and Ss = number of silent synapses (only active at +50 mV). Since prelease for each synapse is the same for –90 mV and +50 mV (i.e. assuming the same probability of failure at both potentials with each stimulus) then:In(FR+50)=ln(1−prelease)As+Ss=(As+Ss)∗ln(1−prelease)ln(FR−90)=(1−prelease)(As)=As∗ln(1−prelease)
+Failure rates for AMPA and AMPA +NMDA EPSCs: Minimal stimulation was achieved by lowering the stimulation strength until clear successes and failures could be observed at –90 mV holding potential and stimulation strength was then kept constant for 5–10 min to allow the system to stabilize before failure ratios were determined. Relative numbers of silent and total (silent +active) synapses in an L2-3 pyramidal neuron evoked in a slice by minimal presynaptic stimulation is correlated with failure rates (FR=failures/number of stimuli). $FR−90=(1−p_{release})^{As}$, and $FR+50=(1−p_{release})^{As+Ss}$, where As = number active synapses (at –90 mV) and Ss = number of silent synapses (only active at +50 mV). Since prelease for each synapse is the same for –90 mV and +50 mV (i.e. assuming the same probability of failure at both potentials with each stimulus) then:
 
-Thus,ln(FR+50)/ln(FR−90)=(As+Ss)/As=1+Ss/As.
+$$
+In(FR+50)=ln(1−p_{release})^{As+Ss}=(As+Ss)∗ln(1−p_{release})ln(FR−90)=(1−p_{release})^{(As)}=As^{∗}ln(1−p_{release})
+$$
 
-Since (FR+50/FR−90)=(1−prelease)As+Ss/(1−prelease)As, as Ss-->0, (FR +50/FR-90)-->1, the maximum ratio possible if prelease is constant. Our uncorrected data show (FR +50/FR-90)=~1.3 in SD, which suggests that FR +50 is overestimated by at least a factor of 1.3 (likely, due to decreased input resistance at Vh = +50 mV). Accordingly, we adjusted FR +50 by this factor = 1.3, for all sleep conditions.
+Thus,
 
-## Sleep deprivation
+$$
+ln(FR+50)/ln(FR−90)=(As+Ss)/As=1+Ss/As.
+$$
+
+Since $(FR+50/FR−90)=(1−p_{release})^{As+Ss}/(1−p_{release})^{As}$, as Ss-->0, (FR +50/FR-90)-->1, the maximum ratio possible if prelease is constant. Our uncorrected data show (FR +50/FR-90)=~1.3 in SD, which suggests that FR +50 is overestimated by at least a factor of 1.3 (likely, due to decreased input resistance at Vh = +50 mV). Accordingly, we adjusted FR +50 by this factor = 1.3, for all sleep conditions.
+
+### Sleep deprivation
 
 All mice were accommodated for 1–2 wk in a cage and treadmill, consisting of a bottomless plexiglass enclosure suspended over the treadmill with ad-lib access to food and water. During this time, all animals were exposed to treadmill movement at ZT = 2 and ZT = 14 hr, for 30 min. For sleep deprivation (SD) the slow-moving treadmill (SMTM; 0.1 KM/h; see Video 1) was engaged from ZT 0–6 hr and for recovery sleep (RS) from ZT 0–4. There was no treadmill engagement for RS from ZT 4–6 hr and for control sleep (CS), no treadmill engagement for the entire ZT 0–6 hr period. All animals were sacrificed at ZT = 6 hr and tissue was rapidly prepared for either electrophysiological (exVivo brain slices) or transcriptomic analysis as described below.
 
-## Single nucleus transcriptome analysis
+![Video 1.](https://cdn.elifesciences.org/articles/98280/elife-98280-video1.mp4.jpg)
+
+### Single nucleus transcriptome analysis
 
 Male 6–10 wk old C57BL/6NCrl (catalog # and substrain) obtained from Charles River Laboratories. All animals for transcriptome analyses were housed within our approved animal facility at the University of Texas Southwestern. Experiments were conducted within approved satellite housing/procedure room within our laboratory space and tissue collection occurred in laboratory spaces approved by the IACUC for this purpose following IACUC-approved procedures: APN 2017–102096, APN 2017–102183.
 
-## snRNA-seq library preparation
+### snRNA-seq library preparation
 
 Nuclei for snRNA-seq were isolated from male mice, 8–10 wk old. Briefly, the tissue was homogenized using a glass Dounce homogenizer in 2 ml of ice-cold lysis buffer (10 mM Tris-HCl, 10 mM NaCl, 3 mM MgCl2, and 0.1% Nonidet P40 Substitute) and was incubated on ice for 5 min. Nuclei were centrifuged at 500 g for 5 min at 4 °C, washed with 4 ml ice-cold lysis buffer, and incubated on ice for 5 min. Nuclei were centrifuged at 500 g for 5 min at 4 °C. After centrifugation, the nuclei were resuspended in 500 μl of nucleus suspension buffer (NSB) containing 1x PBS, 1% BSA (no. AM2618, Thermo Fisher Scientific) and 0.2 U μl−1 RNAse inhibitor (no. AM2694, Thermo Fisher Scientific). The nucleus suspension was filtered through a 70 μm Flowmi cell strainer (no. H13680-0070, Bel-Art). Debris was removed with density gradient centrifugation using Nuclei PURE 2 M sucrose cushion solution and Nuclei PURE sucrose cushion buffer from the Nuclei PURE prep isolation kit (no. NUC201-1KT, Sigma Aldrich). Nuclei PURE 2 M sucrose cushion solution and Nuclei PURE sucrose cushion buffer were first mixed in a 9:1 ratio. A 500 μl volume of the resulting sucrose solution was added to a 2 ml Eppendorf tube. A 900 μl volume of the sucrose buffer was added to 500 μl of isolated nuclei in NSB. A 1400 μl volume of nucleus suspension was layered on the top of the sucrose buffer. This gradient was centrifuged at 13,000 g for 45 min at 4 °C. The pellet of nuclei was resuspended, washed once in NSB, and filtered through a 70 μm Flowmi cell strainer (no. H13680-0070, Bel-Art). The concentration of nuclei was determined using 0.4% trypan blue (no. 15250061, Thermo Fisher Scientific), and was adjusted to a final concentration of 1000 nuclei per microlitre with NSB.
 
@@ -149,6 +159,6 @@ Droplet-based snRNA-seq libraries were prepared using Chromium Single Cell 3′ 
 
 Differential gene expression tests were performed using an edgeR-based pseudobulk approach across sleep conditions per cell type. Significant differentially expressed genes (DEGs) were identified using absolute log2 fold change ≥ 0.1375 (10%) and a false discovery rate (FDR) ≤ 0.05. Further significant DEGs were enriched across defined gene classes (such as SSC genes, ASD genes, Mef2c-cKO genes and HD4cn genes) using R package SuperExactTest to functionally annotate the genes.
 
-## Statistics
+### Statistics
 
 The exact sample size (n) for each experimental group/condition, is provided as a discrete number and unit of measurement. Statistics were taken from distinct samples and not measured repeatedly, with the exception of the matched sampled evoked EPSCs recorded at Vh = −90 mV and at Vh = +50 mV from the same neuron as part of the analyses of AMPAR and NMDAR EPSC amplitudes and failure rates. Statistical details are provided in appropriate tables in tabs labelled ‘Stats ….,’ in the ‘Figure-source data’ associated with each figure.

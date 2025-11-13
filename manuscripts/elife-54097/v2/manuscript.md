@@ -62,7 +62,7 @@ After the interviews, candidates may be contacted and offered a position, usuall
 
 We designed a survey for early-career researchers aimed at bringing transparency to the academic job market (see Materials and methods and Supplementary file 41). The survey was distributed via Twitter, the Future PI Slack group, and email listservs of multiple postdoctoral associations, resulting in 322 responses from self-identified early-career researchers who applied for academic positions in the 2018–2019 application cycle. Of these, data from 317 respondents passed simple quality filters and were used for analyses. As all questions were optional, these 317 responses represent the maximum number in our analyses; in cases where respondents chose not to answer the question, we analyzed only the applicant subset with responses and list the number of responses used for each analysis in the appropriate figures and supplementary files.
 
-## Demographics of respondents
+### Demographics of respondents
 
 Respondents reported a large range in the number of submitted applications from a minimum of one to a maximum of 250 (median: 15). The respondent pool was notably enriched in applicants who received at least one off-site interview (70%), at least one on-site interview (78%) and at least one offer (58%); this may represent a significant bias towards successful applicants in our study, as a recent study shows that less than 23% of PhDs eventually secure a tenure-track position (Langin, 2019).
 
@@ -76,7 +76,7 @@ Notably, in our survey population, postdocs in the life sciences spent a median 
 
 Applicants had a large range in their publication records, including number of papers co-authored, h-index, and total citation count. Respondents reported a median of 13 total publications (including co-authorships and lead authorships), with a median of 6 first author papers when entering the job market (Figure 2F).
 
-## Publishing metrics by gender
+### Publishing metrics by gender
 
 Gender bias in publishing and evaluation is well documented (Aileen Day and Boyle, 2019; Centra and Gaubatz, 2000; Cameron et al., 2016; Witteman et al., 2019). The respondents to our survey were relatively evenly distributed across self-identified genders, with 51% identifying as male, 48% as female, and 1% preferring not to disclose this information (no applicants identified as non-binary; Figure 3A). Men reported significantly more first-author publications, total publications, overall citations, and a higher h-index compared to women (Figure 3B); more men also reported being authors on papers in three journals with high impact factors (Cell, Nature and Science; Figure 3C) than women. The gender differences we observe mirror those seen in other reports on differences in citation counts in STEM fields based on the corresponding author gender (Schiermeier, 2019). Despite popular discussions on a need for papers in Cell, Nature, Science or other journals with a high impact factor (Brock, 2019; McKiernan et al., 2019), 74% of respondents were not authors on a paper in Cell, Nature or Science (CNS), and a greater majority (~84%) did not have a first author publication in these journals (Figure 3C). Of the 51 respondents with papers in these journals, 49 (96%) were in a life science-related field, indicating that the valuation of these journals was highly field-specific (Figure 3C).
 
@@ -86,9 +86,17 @@ Gender bias in publishing and evaluation is well documented (Aileen Day and Boyl
 
 While 78% of respondents reported having obtained fellowships at some point in their career, this figure was 87% for women and 72% for men (Figure 3D). Women had better success at receiving both doctoral and postdoctoral fellowships. However, the questions in our survey did not distinguish between the types (e.g. government funded versus privately funded, full versus partial salary support) or number of fellowships applied to; many of these factors are likely critical in better understanding gender differences in fellowship support (Figure 3D).
 
-## Applications, interviews and offers
+### Applications, interviews and offers
 
 The 317 respondents submitted a total of 7644 job applications in the 2018–2019 application cycle, with a median of 15 applications per respondent (Figure 4A). Applicants were invited for a total of 805 off-site interviews (phone, Zoom or Skype; median: 1) and 832 onsite or campus interviews (median: 2), receiving 359 offers (median: 1; Figure 4A). Although many hiring processes consist of an off-site (remote) interview, we found that this was not standard since the typical applicant received more on-site than off-site interviews. In our dataset, 42% of participants received no offers, 33% received one offer, 14% received two offers, 6% received three offers, and 6% received more than three offers. Candidates who received offers typically submitted more applications than those who received no offers, indicating that some candidates may not have submitted enough applications to have a reasonable chance of getting an offer (Figure 4A,D). According to a recent poll on Twitter (which received over 700 responses), most faculty received between one and three offers when they were applying for faculty positions (Whitehead, 2019; Supplementary file 15).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54097/elife-54097-fig4-v2.jpg)
+
+**Figure 4.:** (A) Total and median numbers of applications, off-site interviews, on-site interviews and offers recorded in survey responses (Supplementary file 19). (B) Correlations between the total number of applications submitted and off-site interviews (top; R2 = 0.28), onsite interviews (middle) and offers (bottom; R2 = 4.77×10−2). (C) Correlations between the number of interviews completed and offers received (R2 = 0.62). See Figure 4—figure supplement 1 for more details. (D) Total number of off-site interviews (top, p<4.10×10−24, on-site interviews (middle, p=1.20×10−13) and offers (bottom, p=5.0×10−5) for applicants who submitted at least 15 (the median) applications (in red) and less than 15 applications (in blue). (E) Fraction of applications that resulted in offers (offer percentages) for survey respondents who did not apply for jobs outside of faculty positions is significantly higher (p=2.0×10−3, Supplementary file 7) than for those who also applied for both academic and other types of jobs (Supplementary file 14).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54097/elife-54097-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Pearson correlation coefficient (R2) between offer percentage total number of publications (top), number of first author publications (second graph), number of corresponding author publications (third graph), h-index (fourth graph), preprints posted (overall total, fifth graph; as well as those in which the peer-reviewed article was not published at the time of application, sixth graph), and number of patents filed, bottom graph). Yellow dots represent candidates with an offer, blue dots received no offers; black line represents linear best-fit and gray fill represents the 95% confidence interval for that fit. We examined several other publication metrics and found no correlation with the number of offers. Specifically, the total number of publications (R2 = 8×10−2), the number of first author (R2 = 2×10−2), the number of corresponding author publications (R2 = 9×10−4), and h-index (R2 = 4×10−3) did not significantly correlate with offer percentage.
 
 Despite the fact that successful candidates submitted more applications, the number of applications per candidate did not correlate with the number of offers, while being only weakly correlated with the number of off-site interviews (Figure 4B). Not surprisingly, the number of on-site interviews strongly correlated with the number of offers received (Figure 4C, bottom). Population medians changed slightly by gender as men submitted slightly more applications, but received slightly fewer off-site interviews. These small differences by gender were not statistically significant (Figure 4A). The median number of offers also did not vary by gender.
 
@@ -96,23 +104,35 @@ We split our population into two groups by application number, one group either 
 
 Taken together, these data seemingly indicate that increasing the number of applications submitted can lead to more interviews, as suggested by others (Jay et al., 2019), with the typical candidate submitting at least 15 applications to achieve one offer. However, the lower correlation between application number and offers (compared to application number and interviews) suggests that while higher application numbers can generate more interview opportunities, other criteria (e.g. the strength of the interview) are important in turning an interview into an offer.
 
-## Publication related metrics
+### Publication related metrics
 
 The number of papers published, and the impact factors of the journals these papers were published in, can influence the chances of an early-career researcher obtaining an independent position (van Dijk et al., 2014; Powdthavee et al., 2018). As mentioned previously, it is widely believed that you need a paper in Cell, Nature or Science to secure a faculty position in the life sciences (McKiernan et al., 2019; Sheltzer and Smith, 2014; Fox, 2018b). Our data demonstrates that a CNS paper is not essential to an applicant receiving a faculty job offer.
 
 The majority (74%) of our respondents were not an author on a CNS paper (Figure 5A), and yet most participants received at least one offer (58%). However, applicants with a CNS paper did have a higher number of onsite interviews and faculty job offer percentage. Of our respondents, 16% were first author on a CNS paper, and these applicants had a significantly higher percentage of offers per application (p=1.50×10−4, median offer percentages: 11% with a CNS paper and 2% without a CNS paper) and on-site interviews (p=2.70×10−4, median onsite interview percentages: 21% with a CNS paper, and 10% without a CNS paper; Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/54097/elife-54097-fig5-v2.jpg)
+
+**Figure 5.:** (A) Pie charts show the fraction of candidates with authorship of any kind on a CNS paper (purple) versus those without (gray), and fraction of candidates who were first author on a CNS paper (purple) versus those who were not (gray). Distributions of off-site interviews (top; p=0.33), onsite interviews (middle; p=2.70×10−4) and offers (bottom; p=1.50×10−4) for applicants without a first-author paper in CNS (gray), and those with one or more first-author papers in CNS (purple; Supplementary files 11, 12, 17). (B) Significant associations were found between offer percentage and the number of first-author papers in CNS (top panel, p=1.70×10−3), career transition awards (second panel, p=2.50×10−2), total citations (third panel, p=2.92×10−2), and years on the job market (fourth panel, p=3.45×10−2). No significant associations were found between offer percentage and having a postdoc fellowship (fifth panel), being above the median in the total number of publications (sixth panel), being an author in any position on a CNS paper (seventh panel), h-index (eighth panel), years as a postdoc (ninth panel), number of first-author papers (tenth panel), number of patents (eleventh panel), or graduate school fellowship status (twelfth panel; Supplementary files 6, 7, 9, 10, 11, 12, 13 and 21). (C) The plots show total citations for those without an offer (blue) and those with one or more offers (gold), for all applicants with one or more first-author papers in CNS (top left); for all applicants without a first-author paper on CNS (bottom left); for all applicants with independent funding (top right); and for all applicants without independent funding (bottom right). In two cases the p value is below 0.05. The bar charts show the offer percentages (gold) for the four possible combinations of career award (yes or no) and first-author paper in CNS (yes or no): for applicants with a first-author paper in CNS, p=0.56, χ2 = 0.34; for applications without, p=0.17, χ2 = 1.92). (D) Summary of significant results testing criteria associated with offer outcomes through Wilcoxon analyses (Supplementary file 7) or logistic regression (Supplementary file 24).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54097/elife-54097-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** We performed identical analysis as in Figure 5 but restricted to applicants (n = 269) who described their field as life-science related (as defined in Figure 2).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/54097/elife-54097-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Each rounded node represents an independent variable and each rectangular node represents one of two possible outcomes (offer (gold) or no offer (blue)). Only those variables in Figure 5B were included. In the case of binary variables such as funding and fellowships, ">0" indicates a "yes" and "<=0" indicates a "no". All other variables, except for h-index, were split based on counts. The outcome nodes are labeled with three pieces of information: (Cyranoski et al., 2011) the number of applicants who fell into the given branch (n), (Ghaffarzadegan et al., 2015) the most common outcome in that branch, and (Schillebeeckx et al., 2013) the fraction of individuals with that outcome. For example, the rightmost branch shows applicants who had a career transition award and h-index >4. They constitute the largest group in our dataset (61 individuals). However, only 77% of these applicants received an offer. Similarly, the second and third largest groups included 51 applicants (63% with offer) and 42 applicants (67% with offer) respectively (see eighth outcome box from right and leftmost box). These three groups accounted for 48.6% of our survey respondents. Note that while decision trees have often been used as prediction models, this tree is only reflective of our dataset and choice of algorithm and parameters. We have used this solely for visualization purposes and advise against using this prospectively to evaluate chances of success on the job market as there may be alternative trees that are equally plausible and accurate. In fact, the accuracy of the overall decision tree in distinguishing between candidates with offers and those without was only 58.5%. Furthermore, no group with more than two applicants consisted purely of those with offers and those without. Even in the nine groups where the most common outcome was "no offer", on average, 25% of the applicants did receive offers.
+
 Since the number of on-site interviews and offers are highly correlated (Figure 4C), it is unclear if this increased success simply represents a higher chance at landing more onsite interviews. It is important to note that this effect is correlative and these candidates likely had other attributes that made them appealing to the search committee(s).
 
 We examined several other publication metrics and found no correlation with the number of offers. Specifically, the total number of publications, the number of first author publications, the number of corresponding author publications, and h-index did not significantly correlate with offer percentage (Figure 4—figure supplement 1). When we separated candidates who were above and below the medians for each of these metrics and compared the distribution of offer percentages, only the total number of citations significantly associated with a higher offer percentage (Figure 5B). Although the offer percentage was generally higher for applicants above the median for the other metrics, none of these differences were statistically significant (Figure 5B).
 
-## Preprints
+### Preprints
 
 Preprints, or manuscripts submitted to an open-access server prior to peer-reviewed publication, are becoming increasingly popular among early-career researchers (Sever et al., 2019), particularly in the life sciences, and can boost article citations and mentions (Sarabipour et al., 2019; Fraser et al., 2019; Abdill and Blekhman, 2019; Conroy, 2019; Fu and Hughey, 2019).
 
 We received 270 applicant responses on the use of preprints; 55% of respondents had posted at least one preprint, and 20% had posted between two and six preprints (Figure 3E, top). At the time of faculty job application, 40% of these respondents had an active preprint that was not yet published in a journal (Figure 3E, bottom), with an average of 0.69 active preprints per person. A number of candidates commented that preprinted research was enormously helpful and served to demonstrate productivity before their paper was published (Supplementary files 17 and 18).
 
-## Fellowships and career transition awards
+### Fellowships and career transition awards
 
 Respondents were highly successful in obtaining fellowship funding during their training (80% received a fellowship of any kind, Figure 3D). Applicants with a postdoctoral fellowship had a greater offer percentage than those without, although the effect was not significant after correcting for multiple comparisons (p=0.17); doctoral fellowships did not appear to influence offer percentage (Figure 5B).
 
@@ -120,17 +140,17 @@ Receiving funding as an early-career researcher is part of a favorable research 
 
 Our survey differentiated the types of funding a trainee can receive into predoctoral and postdoctoral fellowships (discussed above), and career transition awards, for which the trainee is listed as the PI and funds can often transition with the trainee to a hiring institute (e.g. the Burroughs Wellcome Fund Career Awards at the Scientific Interface or the NIH K99/R00 Pathway to Independence award). Career transition awards were less frequent, with 25% of respondents receiving awards on which they were PI/co-PI (Supplementary file 20). Respondents with transition funding received a higher percentage of offers (Figure 5B).
 
-## Patents
+### Patents
 
 Patents are considered positive metrics of research track record, although their importance and frequency can vary between fields. Only 19% of applicants reported having one or more patents on file from their work when entering the job market (Supplementary file 21). The number of patents held by the applicant did not correlate with the number of offers received (Figure 4—figure supplement 1) and the percentage of offers did not change between those with or without a patent (Figure 5B).
 
-## Years on the job market
+### Years on the job market
 
 We also asked how many application cycles they had been involved in. Approximately 55% of our respondents were applying for the first time, and these candidates fared significantly better in terms of offer percentages than those who were applying again (Figure 5B). Additionally, a number of applicants took advantage of resources that provided information about the job application process (Supplementary file 22), and those that did found them helpful (Supplementary file 23).
 
 Analyses such as the work presented here may help applicants refine and present their materials and track record in a manner that might improve success and decrease repeated failed cycles for applicants.
 
-## Interplay between metrics
+### Interplay between metrics
 
 We next examined the relationship between each of the traditional criteria that were significantly associated with an increase in offer percentage. The criteria included being first author on a CNS paper, total citations, and career transition awards.
 
@@ -144,7 +164,7 @@ Finally, we extended this analysis to visualize the interplay between all variab
 
 Taken together, these results suggest that there are multiple paths to an offer and that the variables we collected do not sufficiently capture this variability.
 
-## Levels of teaching experience
+### Levels of teaching experience
 
 Discussions surrounding the academic job market often center on publications and/or funding, while teaching experience generally receives much less attention. However, the level of teaching experience expected from the applicants can vary, but mostly depends on the type of hiring institution.
 
@@ -156,7 +176,7 @@ We asked applicants whether they focused their applications to a specific type o
 
 Almost all respondents (99%) had teaching experience (Figure 6B): for roughly half this experience was limited to serving as a Teaching Assistant (TA; Box 1), with the rest reporting experience beyond a TA position, such as serving as an instructor of record (Figure 6B). The degree of teaching experience did not change based on the target institution of the applicant (Figure 6C), nor did the percentage of offers received significantly differ between groups based on teaching experience (Figure 6D).
 
-## Research versus teaching-intensive institutions
+### Research versus teaching-intensive institutions
 
 To our knowledge, there is a lack of systematic evidence describing the process or expected qualifications of a PUI-focused (Box 1) job search (Ramirez, 2016). A subgroup of 25 "PUI Focused" applicants responded to our survey, and, despite this small number, we aimed to describe this important sub-group relative to "R1 Focused" applicants as well as applicants who applied to both types of institutes. The PUI subgroup included a majority of female applicants (60%, Figure 7A) while the R1 subgroup had a majority of male applicants (54%, Figure 7A). Within the PUI subgroup, no differences were seen in the number of first author publications across genders (Figure 7B), although women had a better fellowship history (Figure 7C). The median number of remote interviews, onsite interviews, and offers was also similar to that for the R1 subgroup, although the PUI subgroup submitted fewer applications (Figure 7E). Although both subgroups reported teaching experience (Figure 7D), the PUI subgroup was enriched in adjunct, visiting professor, instructor of record, community college, or contract-based teaching experiences (Figure 7F). Having adjunct experience did not significantly increase the median number of offers received for applicants focused on PUIs, R1s, or both types of institutions (Figure 7G).
 
@@ -164,7 +184,7 @@ To our knowledge, there is a lack of systematic evidence describing the process 
 
 **Figure 7.:** (A) The gender distribution applicants who focused on applying to PUIs (Supplementary file 26). (B) The gender distribution and number of first-author publications of the applicant who focused on applying to PUIs (p=0.88). (C) Summary of the fellowship history by gender for PUI focused applicants (Supplementary file 13). (D) Distribution of teaching experience of PUI focused applicants (Supplementary file 27). (E) The median number of applications, off-site interviews, on-site interviews and offers for PUI focused applicants. (F) Percentage of survey respondents who identified having "adjunct teaching" experience (Figure 1) based on target institution (p=5.0×10−4; χ2 = 27.5, Chi-squared test). (G) The number of offers received segregated by "adjunct teaching" experience in either PUI focused applicants (p=0.55) or R1/both R1 and PUI focused applicants (p=0.98).
 
-## A time-consuming and opaque process with little feedback
+### A time-consuming and opaque process with little feedback
 
 We asked the applicants to comment on whether any aspect of their training or career was particularly helpful or harmful to their faculty applications (Figure 8A–B). We used word clouds (Supplementary files 27 and 28) to analyze recurrent themes in these open-ended questions. The applicants identified funding as most helpful for their applications, and no-funding as subsequently harmful; this perception agrees with the data presented above (Figure 8A, Figure 5C, Figure 4—figure supplement 1). Additionally, perceptions were also in line with the rest of the data, in that they were unable to largely agree on other measurable aspects of their career that were perceived as helpful. Qualitative aspects that were perceived as particularly helpful included networking and attending/presenting at conferences. Interestingly interdisciplinary-research, which is often highlighted as a strength and encouraged by institutions and funders, was perceived by candidates as a challenge to overcome. Indeed, interdisciplinary candidates may pose an evaluation challenge for committees, given the differences in valuation of research metrics across fields, the extended training time required to master techniques and concepts in multiple fields, as well as valuation of interdisciplinary teams of specialists over interdisciplinary individuals (Eddy, 2005).
 
@@ -176,7 +196,7 @@ Notably, many applicants found the amount of time spent on applications and the 
 
 44% of respondents had applied for faculty jobs for more than one cycle (Supplementary file 30). Though applicants who applied for more than one cycle had significantly lower offer percentages (p=3.45×10−2; Figure 5B), many reported perceived benefits from significant feedback from their current PI through their previous application cycles. Though mentorship was not as often reported as specifically helpful (Supplementary file 17), the lack of mentorship was a commonly cited harmful obstacle (Figure 8B, Supplementary file 18). Lastly, multiple candidates felt that issues pertaining to family, the two-body problem (need for spousal/significant other hire), parental leave, or citizenship status significantly harmed their prospects.
 
-## The view from the search committees
+### The view from the search committees
 
 To learn more about the characteristics search committees valued in applicants, we performed an exploratory survey of members of such committees. This anonymous survey was distributed in a limited fashion, taking advantage of the professional networks of the authors. Fifteen faculty members responded, with nine having been involved in search committees for over ten years (Figure 9A). As with our survey of applicants, we focused on faculty members at R1 academic centers working in life sciences (14/15 of those polled) and engineering (1/15) within the United States (Figure 9A).
 
@@ -192,9 +212,17 @@ Since this last point was not prominent in our survey of job applicants, we look
 
 We also asked if there were additional factors that search committees wished applicants knew when applying (Figure 10). Several emphasized the quality of the research and papers was the most important factor for assessing prior achievement, but added that a compelling and coherent research proposal was also critical, and was sometimes underdeveloped in otherwise competitive candidates. The importance of departmental fit was also emphasized; interpersonal interactions with faculty members at the interview stage were also mentioned. This last sentiment is consistent with a recent Twitter poll which found that "overall attitude/vibe" was the single most important factor for selection at the interview stage (Tye, 2019). Intriguingly, while one faculty respondent noted that they rarely interview any applicant without a career transition award, such as a K99/R00 Pathway to Independence Award from the NIH (a situation they noted as problematic), another lamented that applicants worried too much about metrics/benchmarks anecdotally perceived to be important, such as receiving these awards. Finally, a majority of respondents noted that it was easy to identify good candidates from their submitted application (11/15), that there were too many good applicants (10/15), and that candidates often underperformed at the interview stage (10/15) (Figure 10, Figure 10—figure supplement 1, Supplementary File 35).
 
+![Figure 10.](https://cdn.elifesciences.org/articles/54097/elife-54097-fig10-v2.jpg)
+
+**Figure 10.:** Two word clouds representing responses from members of search committees in response to the following questions: A) "What information do you wish more candidates knew when they submit their application?", and B) "Have you noticed any changes in the search process since the first search you were involved in?" The size of the word/phrase reflects its frequency in responses, with larger phrases corresponding to more frequent responses. Search committee faculty members were able to provide long answers to both questions (Supplementary files 38 and 39).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/54097/elife-54097-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Bar chart showing the number of search committee respondents who held each of the opinions shown for candidates applying to academic jobs that they had been in the search committees for (Supplementary file 36). Additional files.
+
 ## Discussion
 
-## Challenges in the academic job market
+### Challenges in the academic job market
 
 Currently, there is little systematic evidence for what makes a competitive faculty candidate. As with any opaque, high-pressure environment, an absence of clear guidelines and expectations coupled with anecdotal advice can lead individuals to focus on tangible goals and metrics that they feel will help them stand out in the system. Our findings were consistent with several commonly held notions: the number of applications submitted, career transition awards (e.g. a K99/R00 award), and total citation counts were significantly associated with obtaining offers in our Wilcoxon test and when jointly considering all variables in a logistic regression analysis. Joint academic/industry job searches were negatively associated with obtaining academic offers in both analyses, while the number of years an applicant was on the job market was negatively associated in our Wilcoxon analysis. Papers in CNS were only significantly associated with offers in the Wilcoxon analysis, while postdoc fellowships were only significant in the logistic regression.
 
@@ -210,7 +238,7 @@ Despite challenges in the job market (Larson et al., 2014; Andalib et al., 2018;
 
 Overall, the respondents were generally highly qualified according to the metrics we measured, and yet they reported high stress and frustration with their experiences of the faculty job search. In a large number of cases, applicants were not notified of a receipt of their application, nor were they updated on its status, given a final notice of rejection, or informed that the search may have failed. This uncertainty further complicates an already stressful process that can be mitigated by improving practices for a more streamlined application process. Applicants perceived poor mentorship as a major obstacle to their applications. Further, we found that most metrics were differentially valued by candidates and committees. Collectively, these differences in expectations between applicants and hiring institutions, coupled with the opaque requirements for obtaining a faculty position, likely drive the high stress reported by both candidates and committee members alike.
 
-## Limitations of this study and measuring outcomes in the academic job market
+### Limitations of this study and measuring outcomes in the academic job market
 
 There are several limitations of this study imposed by both the original survey design and general concerns, such as the anonymity of respondents, and the measurability of various contributing factors. For future data collection we suggest keeping surveys focused on region-specific job markets. Our pool of applicants was largely those seeking a position in North America. We believe these results can be aggregated, but the survey questions may not all be applicable to other large markets (e.g. Europe, China, India). We did not receive a sizable response from applicants looking outside of North America and in fields outside of life sciences to make useful comparisons. A similar survey circulated in each market individually with a similar number of responses would have broader impact.
 
@@ -232,7 +260,7 @@ It is our hope that this and future work will not only allow all stakeholders to
 
 ## Materials and methods
 
-## Survey materials
+### Survey materials
 
 We designed a survey (the "applicant survey") to collect demographics and metrics that were commonly discussed on Future PI Slack during the 2018–2019 academic job search cycle. The survey was designed to take less than 5 min in order to maximize response rates, and respondents were not required to answer all questions.
 
@@ -242,7 +270,7 @@ The applicant survey was distributed on various social media platforms including
 
 The search committee survey was distributed to specific network contacts of the various authors. Though this distribution was more targeted, a Google form link was still used to maintain anonymity. The search committee survey was open for approximately three weeks to collect responses. In both cases, respondents to the surveys were asked to self-report, and the information collected was not independently verified. The surveys can be found in Supplementary files 41 and 42.
 
-## Data analysis
+### Data analysis
 
 Prior to analysis, we manually filtered out five responses in which answers were not interpretable or did not appear to answer the correct questions. Microsoft Excel and RStudio were used to graph the results of both surveys shown in Figures 1–6 and 8. Specifically, data was filtered and subdivided using the 'tidyverse' collection of R packages, and figure plots were generated using the 'ggplot2' package. Whenever statistical analyses were used, the exact tests, p-values and χ2 values are reported in the appropriate figure or figure legend or caption, results section and Supplementary file 7, and represent the implementations in the basic R 'stats' package.
 

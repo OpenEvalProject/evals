@@ -27,13 +27,33 @@ An alternative mechanism of dispersion is direct exchange at cell-cell contacts,
 
 Hedgehog (Hh), Wnt homolog Wingless (Wg), and Bone morphogenic protein homolog Decapentaplegic (Dpp) are evolutionarily conserved morphogen signaling proteins that have been implicated in organogenesis and stem cell maintenance, and their misregulation in mammals has been linked to inherited diseases and cancers (Briscoe and Thérond, 2013; Morikawa et al., 2016; Nusse and Clevers, 2017). In the columnar cells of the Drosophila wing imaginal disc, Hh is expressed specifically and uniformly by posterior (P) compartment cells (Figure 1A). In the wing blade primordium of the wing disc, Hh released by P compartment cells is taken up by anterior (A) compartment cells within 30 μm (10 cells) of the anterior/posterior (A/P) compartment border. Transfers of Hh from the P to A compartment cells are cytoneme-dependent (Bischoff et al., 2013; Chen et al., 2017). Hh in the A compartment distributes to form a concentration gradient that induces signal transduction and activates expression of target genes in partially overlapping stripes (Callejo et al., 2011; Chen et al., 2017). These domains of expression reflect graded responses to Hh, from highest and ‘short-range’ (engrailed [en], patched [ptc], and dpp) to lowest and ‘long-range’ (cubitus interruptus [ci]). The spatial relationships of these domains are reproducible, with single-cell resolution.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic of the wing disc and ASP indicating A and P compartments, ASP and trachea (blue), myoblasts (orange), and domains of expression for Hh (green), Dpp and Ptc (pink), and Wg (red). Rectangle (dashed lines, 20 μm×20 μm) indicates region that was imaged at high magnification in (D) and in Figure 2A,D. (B) Bar graph showing the number of hh genes in genotypes with different combinations of WT hh and hh BAC transgenes; gray and green bars represent genes encoding Hh and Hh:GFP, respectively. (C) Bar graph showing the amount of Hh RNA (blue) in wing discs and Hh protein (red) in wing disc P compartments, measured by qPCR and α-Hh antibody staining, respectively, with genotypes indicated and number of hh genes indicated by numbers in the bars; values normalized to the amount of hh RNA and Hh protein in genotype with 1 copy of WT hh (+). (D) Optical sections showing α-Ptc antibody staining in region indicated in (A) by rectangle for indicated genotypes. Scale bar: 20 μm. (E) Bar graph of widths of antibody stained Ptc domains in (D), manually measured from maximum intensity projections of optical sections spanning 10 μm from the most apical side of the wing pouch cells. No statistically significant differences for 1–4 gene copies (p>0.05), n=6–8 for each genotype. (F) Adult wings for indicated genotypes. Scale bar: 100 μm. (G) Bar graph showing the measured wing size (left) and wing shape (right); no statistically significant differences (p>0.05), n=12–18 for each genotype. (H) Wing discs for each indicated genotype. Error bars in (D, G) indicate standard deviation (SD). Scale bar: 100 μm. Genotypes: +- (WT hh gene); HS (40 k Hh BAC); HL- (100 k Hh BAC); HS (Hh:GFP 40 k BAC); + (hhAC/+); HS, (Hh:GFP 40 k BAC; hhAC/hhAC); HS,+ (Hh:GFP 40 k BAC; hhAC/+); HS,+,+ (Hh 40 k BAC; +/+); HL,+,+ (Hh 100 k BAC; +/+); HS,+,+ (Hh:GFP 40 k BAC; +/+); HS,HL,+,+ (Hh 40 k BAC / Hh 100 k BAC +/+); hhG4>HhGFP (hhGal4 UAS-HhGFP, +/+).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Panels show representative maximum projection compilations of multiple cross-sections of wing discs stained with α-Ptc antibody. Anterior, left; posterior, right; apical, up; basal, down. Width of Ptc stripe unchanged except for ptcGal4>Ihog (elevated A compartment staining) and hhGal4>Hh:GFP (thicker disc).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Representative profiles of bands of Ptc expression in Figure 1D.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Images from wing discs stained with α-Knot antibody. Anterior, left; posterior, right. Numbers indicate gene copy number. Bar graph shows average width of the Kn band, which is not statistically significant difference in the genotypes. N=8–10.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Wing discs (Hh:GFP/+) were stained with α-GFP and α-Rab7 antibodies; frontal images from apical and basal optical sections (upper panels) were shown with both α-GFP and α-Rab7 staining (left panels) and after removal of pixels with both red and green fluorescence using ImageJ. Bottom panels show images of sagittal projects of staining of Hh:GFP before (left) and after (right) removal of pixels with both red and green fluorescence using ImageJ.
+
 In the wing blade primordium, cells that express dpp form a stripe of 6–8 cells adjacent to the A/P compartment border (Teleman and Cohen, 2000). wg is expressed in a two cell-wide stripe that is orthogonal to the Dpp stripe and straddles the dorsal/ventral (D/V) compartment border (Neumann and Cohen, 1997). Both Dpp and Wg disperse to form concentration gradients on both sides of their respective stripes of expressing cells. In the wing disc, transport of Dpp is cytoneme-mediated (Huang and Kornberg, 2015; Roy et al., 2014) and although the role of cytonemes in Wg dispersion have not been investigated, Wnt signaling in zebrafish is cytoneme-mediated (Stanganello et al., 2015; Stanganello and Scholpp, 2016).
 
 Here, we asked whether the distributions of Hh, Wg, and Dpp in cells of the wing disc are regulated in ways that might be analogous to distributions of glutamate at chemical neuronal synapses. More than 99% of glutamate in the brain is stored in presynaptic terminals and is active only after release in titrated amounts, but it is not known whether uptake of signaling proteins at cytoneme synapses is regulated. To investigate this question, we asked if the Hh, Wg, and Dpp distributions are dependent and proportional to the amount produced. We also asked if the three target tissues that respond to disc-produced Hh take up Hh from a common pool. Our data show that the delivery of signaling proteins to target cells is regulated with respect to both amount and destination.
 
 ## Results
 
-## Relationship between Hh production and Hh signaling in the wing disc
+### Relationship between Hh production and Hh signaling in the wing disc
 
 Neurotransmitters that are made, packaged, and stored in presynaptic compartments are functionally inert, their precisely controlled release and delivery for juxtacrine activation a signature property of synaptic signaling. In order to investigate whether the release of Hh might be regulated at cytoneme synapses, we analyzed Hh signaling in genotypes that express different amounts of Hh. We tested whether amounts of Hh and Hh signaling in recipient cells are proportional to Hh production, as might be expected of constitutive, unregulated release by producing cells, or if they are independent of production as might be expected of regulated release and delivery.
 
@@ -51,27 +71,59 @@ If the amount of Hh taken up by the recipient, target cells are proportional to 
 
 Quantification of Hh detected by antibody staining in the entire A and P compartments of the wing primordium of normal discs (2× WT) showed that approximately 5.2% was in the A compartment (n=7; standard deviation [SD]=1.2%). We next monitored Hh with α-Hh antibody in the small rectangular region composed of equal portions of the A and P compartments (Figure 1A) in genotypes with 1, 2, 3, or 4 hh genes. As expected, Hh amounts were proportional to gene dosage in the P compartment portion of the rectangular region. The cells in this region produce Hh and this result is consistent with the analysis of the entire P compartment (described above) and the finding that Hh RNA and protein scale with gene dosage. Analysis of the anterior portion of the rectangular region revealed that Hh amounts were not detectably different in genotypes with 1, 2, 3, or 4 hh genes (Figure 2A,B, Figure 2—figure supplement 1). In sum, these results are consistent with the idea that most Hh produced in the P compartment is not taken up or retained by A compartment cells, and that Hh uptake is not linked directly to production. We also examined the intracellular localization of Hh to determine if it colocalized with Rab7, which concentrates in late endosomes. Association with Rab7 would suggest that a fraction of Hh produced in P compartment cells is destined for turnover, not release (Figure 1—figure supplement 4).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig2-v3.jpg)
+
+**Figure 2.:** (A) α-Hh antibody staining in regions indicated in Figure 1A for indicated genotypes. (B) Bar graph showing the intensity of α-Hh antibody staining in A and P compartments of wing blades for indicated genotypes. No statistically significant differences for A compartment (p>0.05) except for hhGal4>Hh:GFP; for P compartment, staining was statistically different for genotypes with different numbers of hh genes (1, 2, 3, and 4, hhGal4; Student’s t-test, p<0.05), but not between equivalent numbers of genes (HS,+,+ and HL,+,+; p>0.05), n=5–7 discs for each genotype. (C) Schematic portraying the predicted differences between constitutive release and regulated release for different genotypes, Hh and Hh:GFP indicated by gray and green dots, respectively. (D) Images of α-GFP antibody staining in regions indicated in Figure 1A for indicated genotypes. (E, F) Bar graphs showing wing discs with indicated genotypes stained with α-GFP antibody using standard fixation (E) or extracellular staining protocol (F). **-p<0.005, n.s.-p>0.05; n=4–6 for each genotype. Abbreviations as in Figure 1. Scale bar: 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Sagittal images from optical sections of wing discs stained with α-Hh antibody. Anterior, left; posterior, right. Arrows indicate the approximate location of A/P compartment borders.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Sagittal images from optical sections of wing discs with one Hh:GFP gene together with one, or three hh genes. Discs were stained with α-GFP antibody. Anterior, left; posterior, right. Yellow dashed lines indicate the approximate location of A/P compartment borders; white dashed lines indicate the locations of apical (top) and basal (bottom) membranes. Scale bar: 25 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Sagittal images from optical sections of wing discs with one Hh:GFP gene together with one, or three hh genes, following incubation with Red Dextran (MW 3000) and staining with α-GFP antibody. White circles indicate colocalization. Graph shows number of Hh:GFP/Dextran double-positive punctae for indicated genotypes.
+
 To characterize the relationship between Hh production and delivery further, we used an α-GFP antibody to analyze genotypes with one Hh:GFP-encoding BAC transgene (BHS-GFP) together with either zero, one, or two (untagged) WT hh genes (Total genes: 1: BH-GFP; −/−; 2: BHS-GFP; +/−; and 3: BHS-GFP; +/+) (Figure 1B). As depicted in Figure 2C, α-GFP antibody staining of GFP-tagged Hh that is titrated with different amounts of untagged Hh distinguishes between constitutive and regulated delivery in these genotypes. If delivery of Hh to the A compartment is proportional to gene dosage and not regulated, Hh:GFP amounts in the A compartment are expected to be unaffected by co-production of untagged Hh, and Hh:GFP remains constant as gene dosage and production increases. However, if delivery is regulated, the fraction of Hh:GFP in the A compartment is expected to decrease as the fraction of untagged Hh increases in proportion to total gene copy and production.
 
 Analysis of wing discs with one Hh:GFP BAC (BHS-GFP) and zero, one, or two WT hh genes shows that Hh:GFP in the producing cells of the P compartment was not diminished by the presence of hh genes that encode untagged Hh (Figure 2D,E). This is consistent with the idea that the production of both Hh RNA and protein are proportional to gene copy. In contrast, Hh:GFP amounts in the Hh-receiving cells of the A compartment decreased in proportion to number of hh genes that encode untagged Hh. This shows that Hh:GFP was diluted by the presence of untagged Hh, a result which is consistent with the amounts of Hh we detected in the A compartment with α-Hh antibody in genotypes with 1, 2, 3, or 4 hh genes (Figure 2A,B). We conclude that the amount of Hh in the A compartment was constant and did not scale with production.
 
-## Gene dosage dependence of extracellular Hh
+### Gene dosage dependence of extracellular Hh
 
 We applied an extracellular staining protocol that detects antibodies bound to preparations of non-permeabilized and unfixed cells (Strigini and Cohen, 2000). We stained wing discs with a high titer α-GFP antibody that detected BAC-encoded Hh:GFP, and analyzed genotypes with 1 or 3 genes that encode untagged Hh. For reference, total GFP fluorescence was determined in discs processed with our standard immunohistochemistry protocol that includes detergent permeabilization and formaldehyde fixation. GFP fluorescence increased in P compartment cells and decreased in A compartment cells in proportion to hh gene copy (Figure 2E). The extracellular staining protocol detected basolateral GFP fluorescence (Figure 2—figure supplement 2), consistent with the observations of Callejo et al., 2011 who reported that Hh moves to the basolateral compartment prior to localization to basolateral cytonemes and export (Callejo et al., 2011). Hh:GFP detected by the extracellular staining protocol was less than the total, as the fluorescence was visible only in the most basal optical sections and required higher laser power and gain settings (see Materials and methods), but direct quantitative comparisons are not possible because of the different protocols. Extracellular staining decreased in both P and A compartments in the presence of untagged Hh (Figure 2F), indicating that Hh exposed on the exterior of P compartment cells is gated. Although the results suggest that Hh taken up by A compartment cells represents the population of externalized Hh present on the surface of P compartment cells, they do not reveal whether the release of externalized Hh is regulated.
 
-## Dpp production and signaling in the wing disc
+### Dpp production and signaling in the wing disc
 
 To investigate whether regulated delivery is also a feature of Dpp signaling, we monitored Dpp signaling and dispersion in genotypes with different numbers of dpp genes. We created a Dpp-encoding BAC transgene (BD) that rescues dpp haploinsufficiency: animals with one WT dpp and one BD (+/dppH46; +/BD) allele are viable and their wing size is comparable to WT flies (Figure 3A,B), indicating that the Dpp BAC is a functional substitute for a WT dpp gene. To monitor different amounts of dpp expression, we compared wing discs with two or four dpp genes (two genes: +/+; four genes: +/+; BD/BD). First, to examine proportionality between dpp gene copy and Dpp protein, we stained wing discs with antibody that recognizes the prodomain of unprocessed Dpp (Akiyama and Gibson, 2015; Panganiban et al., 1990). Staining in cells that produce Dpp was approximately double in the four copy genotype compared to the two copy genotype (Figure 3C,D). Second, we examined wing size, which is sensitive to different amounts of Dpp signaling. Mutant conditions that decrease Dpp signal transduction reduce wing disc growth and mutant conditions that elevate signal transduction cause overgrowth (Capdevila and Guerrero, 1994; Spencer et al., 1982). We found that wing size did not differ between genotypes with two or four dpp genes (Figure 3A,B). Third, we asked if signal transduction increases with gene dosage and Dpp production. α-pMAD staining, a readout of Dpp signaling, forms a band that coincides with and straddles dpp expressing cells in WT discs. The width of the pMAD-staining band was not different in wing discs with two or four gene copies (Figure 3E,F), indicating that increased Dpp production does not increase signal transduction. Similarly, expression of Spalt (Salm), which is regulated by Dpp signaling in the wing disc (de Celis et al., 1996), did not change in genotypes with two or four dpp gene copies (Figure 3—figure supplement 1). In sum, these results show that Dpp signaling in the wing disc is insensitive to increased levels of Dpp production.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig3-v3.jpg)
+
+**Figure 3.:** (A–A”’) Adult wings for indicated genotypes. Scale bar: 100 μm. (B) Bar graph showing size of adult wings for genotypes in (A–A”’); error bars indicate SD, N indicates number of wings analyzed; no statistically significant differences indicated by Student’s t-test (p>0.05). (C) Wing discs with two (WT) and four dpp genes: WT (+/+); four (BD/BD; +/+) stained with α-Dpp prodomain (α-DppPD) antibody; scale bar: 100 μm. (D) Bar graph quantifying α-DppPD antibody staining for wing discs with indicated genotypes, n=7 (two genes) and 8 (four genes). Difference is statistically significant (Student’s t-test [p<0.005]). (E) Images of wing discs with indicated genotypes stained with α-pMAD antibody; yellow line marks the width of pMAD band; scale bar: 50 μm. (F) Bar graph quantifying α-pMAD antibody staining for wing discs with indicated genotypes; n=7 (two genes) and 3 (four genes). No statistically significant differences indicated by Student’s t-test (p>0.05). (G) Wing discs with (upper panel) one untagged Dpp (+) and one Dpp:Cherry encoding gene, or (lower panel) three untagged Dpp and one Dpp:Cherry encoding gene stained with α-Cherry antibody; scale bar: 50 μm. (H) High magnification images of boxed regions in (G); scale bar: 25 μm. (I, I’) Bar graphs quantifying α-Cherry antibody staining in sending (I) and receiving regions (I’) for indicated genotypes; error bars indicate SD; (I) no statistically significant differences indicated by Student’s t-test (p>0.05); n=7 for each genotype. (I’) Difference is statistically significant (p<0.05). BD, Dpp-encoding BAC transgene; Dpp:Cherry, Dpp:Cherry knock-in allele.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Images of wing discs stained with α-Salm antibody. Anterior, left; posterior, right. Bar graph shows average width of the Salm band measured in the dashed yellow lined box, which is not statistically significant difference in the genotypes with two (WT) and four (BD/BD; +/+) dpp gene copies. N=8. Scale bar: 20 μm.
+
 To monitor Dpp distributions, we examined discs stained with α-Dpp antibody to compare genotypes with one Dpp:Cherry knock-in allele (generated by CRISPR-mediated recombination) and either one or three dpp genes that encode untagged protein (Figure 3G). The experimental setup and rationale are similar to the analysis of Hh:GFP depicted in Figure 2C. Evaluation of the two genotypes showed that levels of Dpp:Cherry fluorescence in producing cells did not change with the production of untagged Dpp (Figure 3H,I), and that levels of Dpp:Cherry fluorescence in non-producing, receiving cells decreased in proportion to the number of genes that encode untagged Dpp (Figure 3I’). This finding, that the amount of Dpp:Cherry in target cells decreased as the ratio of tagged:untagged Dpp declined, is consistent with the idea that transmission of Dpp to targets is regulated.
 
-## Wingless production and signaling in the wing disc
+### Wingless production and signaling in the wing disc
 
 We investigated Wg dispersion by analyzing three genotypes with different numbers of functional wg genes: 1 (wg+/wg−), 2 (wg+/wg+), and 2+overexpression (wg-Gal4 UAS-Wg:GFP; wg+/wg+), and monitoring expression and distribution of Wg, as well as the Wg gene targets senseless (sens) and Distal-less (Dll). α-Wg antibody staining showed that Wg production is proportional to gene copy number in discs with one and two wg genes, and that the wg-Gal4 driver generated approximately seven times more Wg than a single endogenous gene (Figure 4A,A’,B). Despite the differences in expression between these genotypes, the amount of Wg in the neighboring cells that received Wg was unchanged (Figure 4A,A’,B). The fraction of Wg present in the neighboring cells relative to the total produced in the wing blade decreased with increasing functional gene dosage, from approximately 41% (one copy) to 24% (two copies), and 3.5% (seven functional equivalents). α-Sens antibody detects two narrow, parallel stripes of expression that are immediately adjacent to but do not overlap the Wg-expressing cells (Nolo et al., 2000), and the patterns of Sens expression were not detectably different in these genotypes (Figure 4A”,C,C’). α-Dll antibody detects a region of expression that overlaps Wg-expressing cells (Zecca et al., 1996), and the pattern of Dll expression also was not different in these genotypes (Figure 4—figure supplement 1). These findings indicate that Wg transmission to target cells is regulated.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig4-v3.jpg)
+
+**Figure 4.:** (A–A’) Wing blades for indicated genotypes stained with α-Wg antibody (cyan) and phalloidin (gray); one gene (wg−/+), two genes (+/+), overexpression (wgGal4>UAS-wg; +/+). Scale bar: 100 μm. (A’) higher magnification images of boxed regions (30 μm×90 μm) in (A), dashed white lines mark boundary between producing and receiving cells. Scale bar: 10 μm. (A’’) Optical section of region similar to (A’) stained with α-Wg (cyan) and α-Sens antibodies (magenta). (B) Bar graphs quantifying α-Wg staining for indicated genotypes; n=5–6 for each genotype. Values are normalized to the intensity of α-Wg staining for wgRF/wg+ (1 copy of wg gene). # gene equivalents indicate approximate Wg production functionality for each genotype. Difference in the producing cells is statistically significant (Student’s t-test [p<0.005]), while difference in the receiving cells is not (Student’s t-test [p>0.05]). (B’) Bar graph quantifies the fraction of Wg in the receiving cell as % of total wing blade α-Wg antibody intensity in receiving cell. Statistical significance indicated by p<0.0005. (C) Wing blades with two WT genes or Wg overexpression (wgGal4>UAS-Wg:GFP; +/+) stained with α-Sens antibody. Scale bar: 100 μm. (C’) Bar graph quantifies the width of α-Sens antibody stained band in maximum intensity projections of optical sections for entire apical-basal depth; 10 length measures were taken for each disc; no statistically significant differences (p>0.05); n=4 for each genotype. Genotypes: wg−/+ (wgRF/+); +/+ (WT); wg-Gal4>wg (wg-Gal4; UAS-Wg:GFP / +/+).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Images of wing discs stained with α-Dll antibody. Anterior, left; posterior, right; dorsal down. (B) Schematic showing location of region analyzed for fluorescence intensity. (C) Fluorescence intensity profiles for the genotypes with 1 (wgRF/+), 2 (+/+), and transgene (wgGal4>Wg:GFP) wg genes. N=5–7.
+
 We investigated the distribution of Wg using the extracellular staining protocol and detected low levels of basolateral Wg in Wg-producing (Figure 4—figure supplement 1). Similar to Hh (Callejo et al., 2011), Wg moves to the apical surface before relocating to the basolateral surface (Yamazaki et al., 2016), and the small fraction of basolateral, extracellular Wg suggests that insertion in the basolateral membrane is gated. To determine if this portion of the Wg population is sensitive to Wg production amounts, we examined discs that expressed Wg from one or two wg genes, or from two wg genes combined with wgGal4 driven overexpression. We found that extracellular Wg of both producing and receiving cells increased with gene dosage and expression (Figure 4D). This protocol does not distinguish between protein on either the cell surface or associated with cytonemes, but these results suggest that delivery and release to receiving cells from the basolateral membrane is rate-limiting.
 
-## Relationship between cytonemes and Hh production
+### Relationship between cytonemes and Hh production
 
 Previous studies in several different contexts showed that the number of cytonemes correlates positively with signal transduction activity. Whereas cells with low signaling activity have few cytonemes, cells with higher levels of signaling have more (Bischoff et al., 2013; Chen et al., 2017; Du et al., 2018; González-Méndez et al., 2017; Huang et al., 2019; Huang and Kornberg, 2016; Mattes et al., 2018; Roy et al., 2011; Roy et al., 2014). This correlation also holds for mutant conditions that change cytoneme numbers or signaling: an example is overexpression of Ihog which increases cytoneme stability and Hh signaling in the wing disc (González-Méndez et al., 2017).
 
@@ -81,23 +133,31 @@ We first asked if delivery of Hh to ASP cells is sensitive to amounts of Hh prod
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig5-v3.jpg)
 
-**Figure 5.:** (A) Schematic showing En expression (green) in WT ASP (left), ASP with high levels of Hh signal transduction and no stalk (top right), or ASP with low levels of Hh signal transduction and elongated stalk (bottom right). (B) α-En staining (green) of ASPs (bulb within white dashed line) for indicated genotypes (number of hh genes indicated in upper left). (C) Bar graph quantifying the distance of α-En antibody staining from the tip of the ASP toward the stalk for indicated genotypes (numbers of genes indicated in bars); no statistically significant differences indicated by p>0.05, n=5–7 for each genotype. (D) Cytonemes marked by the expression of Cherry:CAAX (btl-lexA>lexO-Cherry:CAAX) in the ASP for indicated genotypes (number of genes indicated in upper left). (E) Number of cytonemes for indicated genotypes (number of genes indicated in bars). Statistically significant differences indicated by p>0.05, n=5 for each genotype. (F) Ectopic overexpression of Ihog in the ASP reduced the stalk and increased extent of α-En staining (green). (G) Width of α-Ptc staining band in the wing discs ectopically overexpressing Ihog in the indicated genotypes; differences between 1 and 2 hh copies statistically significant (p<0.05). Abbreviations as in Figure 1.Figure 5—source data 1.Figure 5—source data 2.
+**Figure 5.:** (A) Schematic showing En expression (green) in WT ASP (left), ASP with high levels of Hh signal transduction and no stalk (top right), or ASP with low levels of Hh signal transduction and elongated stalk (bottom right). (B) α-En staining (green) of ASPs (bulb within white dashed line) for indicated genotypes (number of hh genes indicated in upper left). (C) Bar graph quantifying the distance of α-En antibody staining from the tip of the ASP toward the stalk for indicated genotypes (numbers of genes indicated in bars); no statistically significant differences indicated by p>0.05, n=5–7 for each genotype. (D) Cytonemes marked by the expression of Cherry:CAAX (btl-lexA>lexO-Cherry:CAAX) in the ASP for indicated genotypes (number of genes indicated in upper left). (E) Number of cytonemes for indicated genotypes (number of genes indicated in bars). Statistically significant differences indicated by p>0.05, n=5 for each genotype. (F) Ectopic overexpression of Ihog in the ASP reduced the stalk and increased extent of α-En staining (green). (G) Width of α-Ptc staining band in the wing discs ectopically overexpressing Ihog in the indicated genotypes; differences between 1 and 2 hh copies statistically significant (p<0.05). Abbreviations as in Figure 1.
 
 We next investigated the relationship between Hh production and ASP cytonemes. We analyzed the number of cytonemes in genotypes with 1, 2, 3, and 4 hh genes by marking ASP cytonemes with membrane-tethered Cherry (btl>CD8:Cherry). Cytonemes that extend from the distal tip of the ASP take up Hh and contain Ptc (Chen et al., 2017), and in the experimental genotypes with 1–4 hh genes, the number of distal tip cytonemes did not change (Figure 5D,E). We conclude that the number of cytonemes and amount of cytoneme-mediated Hh uptake are insensitive to conditions that reduce or increase Hh production by a factor of 2 relative to WT.
 
 We also investigated the effects of Ihog over-expression, which stabilizes cytonemes. The extent of En expression in the ASP increased under conditions of Ihog over-expression (btlGal4 UAS-Ihog), consistent with the idea that stabilized cytonemes increased Hh uptake and signaling (Figure 5F). In the wing disc, Ihog over-expression in the ptc domain at the A/P compartment border (ptcGal4 UAS-Ihog) increased both the width of the Ptc band (compare Figure 1E, Figure 5G) and sensitivity to amount of Hh production. In genotypes with 1, 2 or 3 hh genes, the width of the Ptc band in discs with two copies increased approximately 35% relative to discs with one (ANOVA and Tukey; p<0.05), but no significant difference between discs with two or three copies (Figure 5G). These results show both that genetic conditions that increase cytoneme numbers also increase Hh signaling of wing disc cells, and that cells that overexpress Ihog have a limited capacity to respond to increases in Hh.
 
-## Expression of modulators of morphogen protein signaling
+### Expression of modulators of morphogen protein signaling
 
 Morphogen signaling is a multi-step process that involves post-translational processes that prepare Hh, Dpp, and Wg in producing cells, feedback regulation in receiving cells, and extracellular proteins that influence activity. We investigated whether changes in the production of Hh, Dpp, or Wg affect the expression of genes that encode functions known to modulate signaling, because the expression of these genes might provide feedback regulation that compensates for changes in the amounts of proteins that are released or taken up. We might expect, for example, that the expression of a gene that provides negative feedback increases under conditions of increased signaling protein production. Shifted (Shf), for instance, encodes an extracellular factor that is required for the normal distribution of Hh, and Shf protein levels decrease in conditions of lowered signaling (Glise et al., 2005). We quantified shf expression in discs with one and four hh genes by quantifying shf transcripts with qPCR; no change in shf mRNA was detected in these genotypes (Figure 6A,B). This insensitivity to the tested changes in Hh amounts suggests that Shf does not control Hh release. brinker (brk), pentagone (Pent; aka magu), short gastrulation (sog), and crossveinless-2 (Cv-2) negatively affect Dpp signaling. Brk is a transcriptional repressor of Dpp signal transduction whose expression is suppressed by Dpp. Pent, Sog, and cv-2 encode extracellular proteins that bind Dpp and negatively affect spread and signaling (Raftery and Umulis, 2012; Figure 6A). Ectopic Dpp signaling suppresses brk, pent, and sog and upregulates cv-2 expression (Raftery and Umulis, 2012; Yu et al., 1996). qPCR analysis detected no changes to expression of brk, pent, sog, or cv-2 in genotypes with two or four dpp genes (Figure 6B). Notum expression is induced by Wg signaling and encodes an extracellular deacylase of Wg that inhibits Wg signaling (Minami et al., 1999), but its expression is not influenced by changes to Wg gene number (Figure 6B). In sum, these data do not support the idea that expression of known modulators of the Hh, Dpp, and Wg pathways compensate for changes in amounts of morphogen production, and are consistent with the idea that release is regulated.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig6-v3.jpg)
 
-**Figure 6.:** (A) Schematic showing where morphogen signaling modulators are predicted to function in the context of cytoneme-mediated exchange. Shf, an extracellular factor that facilitates Hh dispersion; Pent, Sog, and Cv-2, extracellular inhibitors of Dpp signaling; Brk, a transcriptional repressor of Dpp signal transduction; Notum, an extracellular inhibitor of Wg signaling. (B) Bar graph showing the levels of morphogen signaling modulator mRNA as determined by qPCR. Bars represent the ratio between the change in mRNA levels relative to predicted RNA increase that scales with gene copy.Figure 6—source data 1.
+**Figure 6.:** (A) Schematic showing where morphogen signaling modulators are predicted to function in the context of cytoneme-mediated exchange. Shf, an extracellular factor that facilitates Hh dispersion; Pent, Sog, and Cv-2, extracellular inhibitors of Dpp signaling; Brk, a transcriptional repressor of Dpp signal transduction; Notum, an extracellular inhibitor of Wg signaling. (B) Bar graph showing the levels of morphogen signaling modulator mRNA as determined by qPCR. Bars represent the ratio between the change in mRNA levels relative to predicted RNA increase that scales with gene copy.
 
-## Hh gradients form independently in the wing disc, ASP, and myoblasts
+### Hh gradients form independently in the wing disc, ASP, and myoblasts
 
 To characterize how signaling proteins are apportioned among the cells they target, we analyzed Hh signaling in a uniquely positioned group of Hh-responding cells near the Hh-producing cells of the wing disc notum primordium. Cells in this region include cells of the wing disc A compartment, the ASP and myoblasts, mesenchymal cells that cover most of the disc A compartment in this region and extend over a portion of the P compartment as well. These myoblasts will develop into the flight muscles in the adult. Because of the close proximity of these cells to Hh-producing cells in the disc, and because no other Hh-producing cells are as close, we presume that the Hh they receive originates from this one source (Hatori and Kornberg, 2020). We designated an area 150 μm×150 μm that includes all the Hh-responding cells in the notum, ASP, and myoblasts, as a Hh ‘microenvironment’ (Figure 7A–C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig7-v3.jpg)
+
+**Figure 7.:** (A) Schematic showing the microenvironment (white dashed line) in the notum primordium with myoblasts (orange), ASP (blue), Hh-expressing notum cells (green), and notum A compartment (beige). (B) Schematic showing cross-section of the microenvironment at the yellow line in (A). (C) Confocal image of the cross-section shown in (B); myoblasts (green), phalloidin staining (blue), and α-Ptc staining (red). Scale bar: 50 μm. (D) Wing discs stained with α-Ptc antibody (red) and phalloidin (blue) for control genotype (WT) and (E) ASP ablation genotype (btl-Gal4>BtlDN); trachea and ASP marked by CD8:GFP (green) driven by btl-Gal4. Scale bar: 100 μm. (F) α-Ptc staining (red) of the microenvironment for control genotype (WT, ASP marked by CD8:GFP [green] driven by btl-Gal4; outlined by red dashed line in middle panel) and (G) ASP ablation genotype (btl-Gal4>BtlDN); white dashed lines surround myoblasts, blue dashed lines indicate the notum primordium. (H, I) Similar to (F, G) but with myoblast ablation; myoblasts marked CD8:GFP (green), ablated by knockdown of msk (1151-Gal4>mskRNAi). Scale bar: 50 μm. Genotypes: (C) 1151-Gal4/+; UAS-CD8:GFP/+; (F, G) control (btl-Gal4 UAS-CD8:GFP/+); btl>BtlDN (btl-Gal4 UAS-CD8:GFP/UAS-BtlDN); (H, I) control (1151-Gal4/+; UAS-CD8:GFP/+; 1151>mskRNAi [1151-Gal4/+; UAS-CD8:GFP/UAS-mskRNAi]).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71744/elife-71744-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Notum primordium stained with α-Ptc antibody (red) and phalloidin (blue), with trachea and ASP marked by CD8:GFP (green) driven by btl-Gal4; control genotype (WT), ASP ablation genotype (btl-Gal4>Cut). Scale bar: 50 μm. (B) Bar graph quantifying the size of the entire wing disc and notum primordium in control genotype (btl-Gal4/+) and in ASP ablation genotypes (btl>BtlDN and btl>Cut). Units for the area are in 100 μm2. Differences not statistically significant (Student’s t-test [p>0.05]). (C) Same as (B) but comparing microenvironment size in control (btl-Gal4/+) and myoblast ablation (btl>mskRNAi−) genotypes. Notum and myoblast size differences not statistically significant (Student’s t-test [p>0.05]); ASP size differences are statistically significant (Student’s t-test [p<0.05]). (D) Comparison of area of Ptc expression in control and ASP ablation genotypes. Notum size differences not statistically significant (Student’s t-test [p>0.05]); ASP and myoblast size differences are statistically significant (Student’s t-test [p<0.05]). (E) Comparison of size of entire disc and notum in control and myoblast ablation genotypes. Differences not statistically significant (Student’s t-test [p>0.05]). (F) Comparison of size of microenvironment in control and myoblast ablation genotypes. Differences in the area of Ptc expression in the Notum not statistically significant. (G) Comparison of area of Ptc expression in control and myoblast ablation genotypes. Differences in the area of Ptc expression in the Notum and ASP not statistically significant.
 
 We investigated the behavior of Hh in the three cell populations of this microenvironment, testing if signaling in one tissue is influenced by the amount of Hh the others take up. The experiment distinguishes whether regulated Hh export creates a common pool of signaling protein that is shared among target cells, or if export is independently directed to target cells. If uptake is from a common pool, reducing the number of target cells is predicted to increase uptake and signaling in the target cells that remain. Experiments that increased amounts of extracellular and diffusible morphogens have shown that target cells are capable of responding to increases that are available for uptake. Examples include overexpression of a nonlipidated form of Hh (HhN) in the wing disc and addition of FGF-soaked beads in the chick limb bud; in both experiments, increased signaling in target cells was observed (Callejo et al., 2006; Cohn et al., 1995).
 
@@ -131,46 +191,308 @@ A third regulatory mechanism is reported here—the gating which releases consta
 
 ## Materials and methods
 
-## Fly culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Drosophila)</td>
+      <td>hhac</td>
+      <td>Lee et al., 1992</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila)</td>
+      <td>dppH46</td>
+      <td>Irish and Gelbart, 1987</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila)</td>
+      <td>wgRF</td>
+      <td>Pérez-Garijo et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>40k Hh BAC</td>
+      <td>Chen et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>40k Hh:GFP BAC</td>
+      <td>Chen et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>100k Hh BAC</td>
+      <td>Chen et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Dpp BAC</td>
+      <td>this study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Dpp:Cherry</td>
+      <td>Fereres et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>wg-Gal4</td>
+      <td>Giráldez et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>1151-Gal4</td>
+      <td>Roy and Vijay Raghavan, 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>UAS-Wg:GFP</td>
+      <td>Pfeiffer et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>UAS-mCD8:GFP</td>
+      <td>Roy et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>btl-LHG</td>
+      <td>Roy et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>lexO-Cherry:CAAX</td>
+      <td>from Konrad Basler</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>UAS-Cut</td>
+      <td>Hardiman et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>UAS-btlDN</td>
+      <td>Reichman-Fried and Shilo, 1995</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>UAS-mskRNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>#27572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Ptc</td>
+      <td>DSHB, Apa1</td>
+      <td></td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Hh</td>
+      <td>from Phillip Ingham</td>
+      <td></td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-GFP</td>
+      <td>Roche</td>
+      <td>#11814460001</td>
+      <td>1/500; 2/500 for extracellular staining</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Dpp-Prodomain</td>
+      <td>Akiyama and Gibson, 2015</td>
+      <td></td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-RFP</td>
+      <td>Rockland</td>
+      <td>#:600-401-379</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Wg</td>
+      <td>DSHB, 4D4</td>
+      <td></td>
+      <td>1/500; 3/500 for extracellular staining</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Sens</td>
+      <td>Nolo et al., 2000</td>
+      <td></td>
+      <td>01/00</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-En</td>
+      <td>DSHB, 4D9</td>
+      <td></td>
+      <td>01/25</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Knot</td>
+      <td>Crozatier and Vincent, 1999</td>
+      <td></td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Salm</td>
+      <td>Zhang et al., 2011</td>
+      <td></td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Dll</td>
+      <td>McKay et al., 2009</td>
+      <td></td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat α-mouse IgG, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A-11001</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat α-mouse IgG, Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>A-21422</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat α-rabbit IgG, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A-11008</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat α-rabbit IgG, Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>A-21428</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat α-rat IgG, Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>A-21434</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat α-rat IgG, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A-11006</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield Antifade Mounting Medium</td>
+      <td>Vector Laboratories</td>
+      <td>H-1000-10</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly culture
 
 Flies were cultured in standard cornmeal and agar medium at 25°C; all crosses were at 25°C, except the expression of Cut. To express Cut in the ASP, btl-Gal4/UAS-Cut; Gal80ts/+ was incubated at 18°C until early L3 and transferred to 29°C until late L3.
 
-## qPCR analysis of hh gene expression
+### qPCR analysis of hh gene expression
 
 Wing discs were dissected in phosphate-buffered saline (PBS), RNA was extracted using RNeasy Micro Kit (Qiagen), and cDNA was synthesized using the High Capacity RNA-to-cDNA Kit (Applied Biosystems). qPCR was performed with SensiFast Sybr green (Bioline). For each genotype, 3–4 replicates of 5 wing discs were analyzed. Actin was the internal control and fold differences in relative mRNA levels between genotypes were calculated as 2−ΔΔCt.
 
-## Immunohistochemistry, fluorescent imaging, and image analysis
+### Immunohistochemistry, fluorescent imaging, and image analysis
 
 Wing discs together with Tr2 trachea were dissected in PBS, fixed in 4% formaldehyde in PBS (25 min), and washed on a rocking rotator in PBS+0.3% Triton X-100 (PBST) (3×10 min), and incubated in Roche blocking solution (1 hr). Primary antibodies were diluted in Roche Blocking solution and incubated with discs overnight at 4°C (12 hr/overnight). Discs were washed in PBST (3×10 min) on a rocking rotator, incubated with secondary antibody diluted in Roche blocking solution (2 hr), washed in PBST (3×10 min), and after removal of PBST, mounted in Vectashield (Vector Labs). All procedures were at room temperature except for primary antibody incubation. The domains of α-Ptc, α-Sense, α-En, and α-pMAD staining were measured in ImageJ from single optical sections at the basolateral part of the wing disc.
 
-## Intensity measurements of proteins
+### Intensity measurements of proteins
 
 Average intensity quantifications for projections of α-Hh, α-GFP, α-Cherry, and α-Wg staining were calculated for segments of optical sections spanning 20 μm from the most apical side of the wing pouch cells. This segment was chosen because the basal sides of the wing discs are folded and therefore problematic to quantify. Background measurements were taken in equivalent areas distant from staining regions and were subtracted.
 
 The comparison between total and extracellular Hh is a relative estimate because fluors, antibodies, laser intensities, and gain settings were not the same for the two protocols. Wg detected by the extracellular staining protocol in producing and adjacent receiving cells was measured in the indicated 30 μm×90 μm area, with the producing area defined by a 30 μm×10 μm rectangle and the receiving area defined by two 30 μm×40 μm rectangles. Distance of fluorescence was measured manually. Size differences between discs were small and were not taken into account. All measurements of intensity were with ImageJ.
 
-## Areas of Ptc expression
+### Areas of Ptc expression
 
 For Figure 8G, H, K, the dotted lines for the predicted extracellular pool were calculated assuming that the total area of Ptc expression is constant and an increase in remaining tissues compensates for the absence of ablated tissue. The ratio for directed release was set at 1.00 based on the assumption that Ptc-expressing area for the remaining tissues would not change under conditions of tissue ablation.
 
-## ASP ablation
+#### ASP ablation
 
 Calculated ratio of depleted/control for extracellular pool=1.00/(% of Ptc-expressing area in notum [0.39]+myoblast [0.47] before ablation)=1.16.
 
-## Myoblast ablation
+#### Myoblast ablation
 
 Calculated ratio of depleted/control for extracellular pool=1.00/(% of Ptc-expressing area in notum [0.39]+ASP [0.14])=1.89.
 
-## Quantification of cytoneme density
+### Quantification of cytoneme density
 
 To observe cytonemes, unfixed preparations were observed using the hanging drop method (Huang and Kornberg, 2016). Images were acquired using the FV3000 Olympus Confocal microscope with GaAsP PMT detectors. Images were analyzed and processed with ImageJ and Photoshop.
 
 Maximum intensity projection image of the whole volume of the ASP was used to count the number of cytonemes in the bulb. To calculate the density of cytoneme per µm, the number of cytonemes was divided by the perimeter of the bulb of the ASP.
 
-## Dextran uptake analysis
+### Dextran uptake analysis
 
 As adopted from Torroja et al., 2004: third Instar larval wing discs were dissected and incubated in 3.7 mM Red dextran (lysine fixable, MW 3000, Molecular Probe) in M3 Media at 25°C (5 min), washed 5× in ice-cold M3 media (2 min each), fixed in 4% paraformaldehyde/PBS (40 min at 4°C), fixed in 4% PFA/PBS at room temperature (20 min), and washed 2× in PBT (10 min each). α-GFP staining was as above.
 
-## Statistics
+### Statistics
 
 Error bars indicate SD and statistical significance was calculated by unpaired Student’s t-tests. P value of <0.05 is designated as statistically significant.

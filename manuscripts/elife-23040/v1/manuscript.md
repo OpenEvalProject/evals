@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.23040.001 The hippocampus is critical for producing stable representations of familiar spaces. How these representations arise is poorly understood, largely because changes to hippocampal inputs have not been measured during spatial learning. Here, using intracellular recording, we monitored inputs and plasticity-inducing complex spikes (CSs) in CA1 neurons while mice explored novel and familiar virtual environments. Inputs driving place field spiking increased in amplitude – often suddenly – during novel environment exploration. However, these increases were not sustained in familiar environments. Rather, the spatial tuning of inputs became increasingly similar across repeated traversals of the environment with experience – both within fields and throughout the whole environment. In novel environments, CSs were not necessary for place field formation. Our findings support a model in which initial inhomogeneities in inputs are amplified to produce robust place field activity, then plasticity refines this representation into one with less strongly modulated, but more stable, inputs for long-term storage. DOI: http://dx.doi.org/10.7554/eLife.23040.001
+The hippocampus is critical for producing stable representations of familiar spaces. How these representations arise is poorly understood, largely because changes to hippocampal inputs have not been measured during spatial learning. Here, using intracellular recording, we monitored inputs and plasticity-inducing complex spikes (CSs) in CA1 neurons while mice explored novel and familiar virtual environments. Inputs driving place field spiking increased in amplitude – often suddenly – during novel environment exploration. However, these increases were not sustained in familiar environments. Rather, the spatial tuning of inputs became increasingly similar across repeated traversals of the environment with experience – both within fields and throughout the whole environment. In novel environments, CSs were not necessary for place field formation. Our findings support a model in which initial inhomogeneities in inputs are amplified to produce robust place field activity, then plasticity refines this representation into one with less strongly modulated, but more stable, inputs for long-term storage.
 
 ## Introduction
 
@@ -32,65 +32,65 @@ Addressing these questions requires measuring the inputs to individual place cel
 
 ## Results
 
-## A model of hippocampal spatial memory formation
+### A model of hippocampal spatial memory formation
 
-A model of the formation of place cell representations that fits previous experimental observations is shown in
+A model of the formation of place cell representations that fits previous experimental observations is shown in Figure 1. It shows the firing rate and subthreshold Vm of a CA1 place cell in both novel and familiar environments as a function of the animal’s location. Here, the spatially tuned inputs driving place field spiking are modeled as being initially small, then, due to plasticity, growing with experience (McHugh et al., 1996; Mehta et al., 1997, 2000; Savelli and Knierim, 2010; D'Albis et al., 2015). The observed decrease in firing rate when the environment has become familiar is hypothesized to be due to a lower baseline Vm, resulting in reduced spiking output in spite of a larger input-based subthreshold Vm hill in the place field. The lower baseline could arise from the observed increase in inhibitory interneuron firing rates with familiarization (Wilson and McNaughton, 1993; Frank et al., 2004; Nitz and McNaughton, 2004). The inputs driving initial place field firing would be present from the onset of exploration and be based on the existing synaptic weight matrix without the need for CSs or plasticity, consistent with the finding that the majority of place fields are present during the first traversal of a novel environment (Hill, 1978). Instead, CS occurrence during some of the traversals (laps) across the environment could serve to strengthen inputs for long-term place field stability. This is in agreement with experiments showing that NMDAR-dependent plasticity is not required for place field formation during novel environment exploration, but is necessary for place field stability across days (Kentros et al., 1998). The larger subthreshold hill relative to out-of-field inputs would provide the basis for a reliable and long-lasting representation of familiar environments. We tested the features of this model with intracellular recordings of place field activity in behaving animals.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig1-v1.jpg)
 
-**Figure 1.:** Hypothesized intracellular features underlying place field activity in novel and familiar environments that are consistent with previous studies. Each side represents the membrane potential (Vm) as a function of the animal’s location in a 1-dimensional environment. With repeated traversals of the environment, inputs underlying place field spiking are strengthened due to Hebbian or spike timing-dependent plasticity, which is reflected in a larger amplitude depolarization of the Vm from the baseline Vm level in familiar environments. The experimentally observed higher AP rate during novel experience is explained by a more depolarized baseline, which could result from the known reduction in CA1 inhibitory interneuron firing rates in novel environments. A lower AP threshold could potentially also contribute to higher AP rates in novel environments (lower, gray dotted line). The spatial tuning of inputs within the place field region is presumed to stabilize with experience, possibly due to plasticity triggered by intracellular complex spikes (CSs). Previous experimental data does not clearly inform what may occur regarding the stability of inputs outside of the field. Figure 7 shows our results from testing the features of this model with intracellular recordings.DOI: http://dx.doi.org/10.7554/eLife.23040.002
+**Figure 1.:** Hypothesized intracellular features underlying place field activity in novel and familiar environments that are consistent with previous studies. Each side represents the membrane potential (Vm) as a function of the animal’s location in a 1-dimensional environment. With repeated traversals of the environment, inputs underlying place field spiking are strengthened due to Hebbian or spike timing-dependent plasticity, which is reflected in a larger amplitude depolarization of the Vm from the baseline Vm level in familiar environments. The experimentally observed higher AP rate during novel experience is explained by a more depolarized baseline, which could result from the known reduction in CA1 inhibitory interneuron firing rates in novel environments. A lower AP threshold could potentially also contribute to higher AP rates in novel environments (lower, gray dotted line). The spatial tuning of inputs within the place field region is presumed to stabilize with experience, possibly due to plasticity triggered by intracellular complex spikes (CSs). Previous experimental data does not clearly inform what may occur regarding the stability of inputs outside of the field. Figure 7 shows our results from testing the features of this model with intracellular recordings.
 
-## Subthreshold Vm hill amplitude grows during novel environment exploration
+### Subthreshold Vm hill amplitude grows during novel environment exploration
 
-Whole-cell current-clamp recordings of dorsal hippocampal CA1 pyramidal neurons were obtained in adult head-fixed mice as they navigated around novel (NOV) and familiar (FAM) 1-dimensional (1-D) virtual maze environments linked to a spherical treadmill (
+Whole-cell current-clamp recordings of dorsal hippocampal CA1 pyramidal neurons were obtained in adult head-fixed mice as they navigated around novel (NOV) and familiar (FAM) 1-dimensional (1-D) virtual maze environments linked to a spherical treadmill (Figure 2A–B; 32 cells from 15 mice; mean ± SD, recording duration: 8.3 ± 7.1 min, recording duration/epoch: 4.3 ± 4.0 min, laps/epoch: 8.9 ± 6.0; maze lengths: 135–240 cm; ‘epoch’ refers to the entire continuous period in a given maze). Virtual reality (VR) facilitated switching between distinct environments during intracellular recording (Figure 2C–D), while the head-fixed behavior in the track-like mazes yielded repeated exposures to all spatial locations within an environment without backtracking. Each cell’s location-based activity with respect to a common reference (the fixed-location primary reward zone) was uncorrelated across distinct mazes (Figure 2—figure supplement 1), suggestive of global remapping (O'Keefe and Conway, 1978; Muller and Kubie, 1987; Leutgeb et al., 2005) between the virtual environments. The animals’ licking shifted from occurring just after reward delivery at the primary reward zone in novel environments to occurring just before delivery (i.e., predictively) in familiar environments (Figure 2E and Figure 2—figure supplement 2A), providing behavioral evidence of spatial learning.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig2-v1.jpg)
 
-**Figure 2.:** (A) Top: Top view of virtual reality apparatus showing mouse on a spherical treadmill surrounded by an image of a maze environment projected onto a cylindrical screen (225° arc). Middle: The four virtual maze environments used in the study. Overhead view of 3-D scene models of the mazes (above). Photos of the rear-projected virtual mazes on the cylindrical screen taken from above and behind the animal position (below). Arrow shows location and perspective of the animal in the virtual maze (above) and on the spherical treadmill (below). Bottom: Example behavioral training and recording protocol. (B) Example whole-cell intracellular recording in a novel maze. Vm (top), AP rate (middle), and subthreshold Vm (bottom) for the first 16 laps in linearized position coordinates. Yellow asterisks mark times (every 20 s) when current injection was applied to probe series and input resistance and evoked spiking response. Note: ‘Subthreshold Vm’ refers to the Vm after APs and CSs have been removed. (C) Activity of same cell shown in (B) as the animal first explored a familiar maze (left), then a novel maze (middle), then was re-exposed to the initial familiar maze (right). Overall AP rate (top) and subthreshold Vm (middle) in each of these three epochs. Note: ‘Epoch’ refers to the entire continuous period in a given maze. White arrow: Running direction. White asterisk: Primary reward location. Example Vm traces (bottom) from single traversals (gray bars) through place fields in each epoch (APs truncated). (D) Overall epoch activity from (C) in linearized coordinates. (E) Left: Lick rate in spatial bins immediately surrounding primary reward zone (RDZ) in novel and familiar mazes. Right: Predictive licking behavior in spatial bins immediately preceding RDZ (Pre-RDZ lick rate in Hz) in familiar versus novel mazes. *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.23040.003
+**Figure 2.:** (A) Top: Top view of virtual reality apparatus showing mouse on a spherical treadmill surrounded by an image of a maze environment projected onto a cylindrical screen (225° arc). Middle: The four virtual maze environments used in the study. Overhead view of 3-D scene models of the mazes (above). Photos of the rear-projected virtual mazes on the cylindrical screen taken from above and behind the animal position (below). Arrow shows location and perspective of the animal in the virtual maze (above) and on the spherical treadmill (below). Bottom: Example behavioral training and recording protocol. (B) Example whole-cell intracellular recording in a novel maze. Vm (top), AP rate (middle), and subthreshold Vm (bottom) for the first 16 laps in linearized position coordinates. Yellow asterisks mark times (every 20 s) when current injection was applied to probe series and input resistance and evoked spiking response. Note: ‘Subthreshold Vm’ refers to the Vm after APs and CSs have been removed. (C) Activity of same cell shown in (B) as the animal first explored a familiar maze (left), then a novel maze (middle), then was re-exposed to the initial familiar maze (right). Overall AP rate (top) and subthreshold Vm (middle) in each of these three epochs. Note: ‘Epoch’ refers to the entire continuous period in a given maze. White arrow: Running direction. White asterisk: Primary reward location. Example Vm traces (bottom) from single traversals (gray bars) through place fields in each epoch (APs truncated). (D) Overall epoch activity from (C) in linearized coordinates. (E) Left: Lick rate in spatial bins immediately surrounding primary reward zone (RDZ) in novel and familiar mazes. Right: Predictive licking behavior in spatial bins immediately preceding RDZ (Pre-RDZ lick rate in Hz) in familiar versus novel mazes. *p<0.05.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** m activity aligned to the primary reward zone is not correlated between novel and familiar mazes.(A) Example activity from the NOV-FAM maze pair shown in Figure 2C, but here the linearized activity is aligned to the primary reward zone (RDZ, asterisk) in each maze. The linear correlation (Pearson’s r) for each maze pair comparison (left: absolute position, right: relative position) is noted. Arrow: Running direction. (B) For all cells exposed to NOV-FAM maze pairs (and active in both epochs for the firing rate correlation, and active or silent for the subthreshold Vm correlation), the mean of the spatial correlation scores (Group Mean, solid black) for the overall epoch AP rate and subthreshold Vm profile across pairs of mazes is plotted in absolute (left) and relative (right) coordinates aligned to the primary reward location. Group mean scores were compared to distributions of shuffled mean values (Shuffled Means, n = 5000). Dashed line marks the 95%-ile value in the shuffled distributions, showing that the spatial profile of the firing rate or subthreshold Vm was not correlated with respect to absolute or relative distance from the primary reward location. The lack of correlation suggests that a rate remapping-like process did not occur between the familiar and novel virtual mazes, and therefore that the activity in the novel virtual mazes was new.DOI: http://dx.doi.org/10.7554/eLife.23040.004
+**Figure 2—figure supplement 1.:** (A) Example activity from the NOV-FAM maze pair shown in Figure 2C, but here the linearized activity is aligned to the primary reward zone (RDZ, asterisk) in each maze. The linear correlation (Pearson’s r) for each maze pair comparison (left: absolute position, right: relative position) is noted. Arrow: Running direction. (B) For all cells exposed to NOV-FAM maze pairs (and active in both epochs for the firing rate correlation, and active or silent for the subthreshold Vm correlation), the mean of the spatial correlation scores (Group Mean, solid black) for the overall epoch AP rate and subthreshold Vm profile across pairs of mazes is plotted in absolute (left) and relative (right) coordinates aligned to the primary reward location. Group mean scores were compared to distributions of shuffled mean values (Shuffled Means, n = 5000). Dashed line marks the 95%-ile value in the shuffled distributions, showing that the spatial profile of the firing rate or subthreshold Vm was not correlated with respect to absolute or relative distance from the primary reward location. The lack of correlation suggests that a rate remapping-like process did not occur between the familiar and novel virtual mazes, and therefore that the activity in the novel virtual mazes was new.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Lick rate in the spatial bins immediately surrounding the primary reward zone (RDZ). The amount of predictive licking is greater in familiar compared to novel mazes, and also increases during novel and familiar epochs, indicating that animals learned the location of the reward zone. (B) Same as (A) for the subset of FAM mazes that were also the first maze experienced by the animal that day, and separately for all other FAM mazes. The amount of predictive licking was similar for both subsets of mazes, but the amount of licking in response to receiving the reward was reduced in first mazes of the day, suggesting a difference in behavioral engagement. (C) Same as (A) excluding all mazes that were also the first maze experienced by the animal that day. *p<0.05; **p<0.01.DOI: http://dx.doi.org/10.7554/eLife.23040.005
+**Figure 2—figure supplement 2.:** (A) Lick rate in the spatial bins immediately surrounding the primary reward zone (RDZ). The amount of predictive licking is greater in familiar compared to novel mazes, and also increases during novel and familiar epochs, indicating that animals learned the location of the reward zone. (B) Same as (A) for the subset of FAM mazes that were also the first maze experienced by the animal that day, and separately for all other FAM mazes. The amount of predictive licking was similar for both subsets of mazes, but the amount of licking in response to receiving the reward was reduced in first mazes of the day, suggesting a difference in behavioral engagement. (C) Same as (A) excluding all mazes that were also the first maze experienced by the animal that day. *p<0.05; **p<0.01.
 
-We first checked the amplitude of the main subthreshold V
+We first checked the amplitude of the main subthreshold Vm hill during individual maze epochs for evidence of increases in synaptic strength. In novel environments, the peak amplitude increased between the initial (1–2) and late (6-end) laps (Figure 3A, left, 3B), similar to the number of laps over which substantial changes in place fields have been observed in extracellular studies (Mehta et al., 2000; Ekstrom et al., 2001). This was the case when considering the peak subthreshold Vm within the field determined from the average subthreshold Vm as a function of location over the entire epoch (median ± SE, NOV initial laps: 1.9 ± 0.5 mV, late laps: 3.1 ± 0.6, p=0.003, n = 14, Figure 3A, left), or, to allow for spatial jitter, the peak in each lap irrespective of location (‘lap peak’, NOV initial laps: 3.0 ± 0.4 mV, late laps: 4.0 ± 0.6, p=0.004). The increase in amplitude is consistent with a strengthening of inputs to place fields via Hebbian, spike timing-dependent, or other (Golding et al., 2002; Dudman et al., 2007) mechanisms of synaptic plasticity, and indicates rapid learning in CA1 in novel environments. In contrast, no increases in amplitude were observed within familiar mazes (p=0.47, Figure 3A, right; lap peak: p=0.70).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig3-v1.jpg)
 
-**Figure 3.:** m depolarizations underlying hippocampal CA1 place fields grow in novel environments and are larger in novel compared to familiar mazes.(A) Peak subthreshold Vm in the initial laps 1–2 versus the late laps 6-end for all novel (NOV, left) and familiar (FAM, right) mazes. The peak refers to the peak value within the field determined from the epoch-averaged subthreshold Vm as a function of location. Here and elsewhere: Box marks 25-75th percentile values, horizontal line marks median. (B) Peak subthreshold Vm within the (spiking) place field in the initial versus late laps for all place fields in novel mazes. (C)-(D) Examples of place fields that formed in a lap later than the first lap in a novel maze. Subthreshold Vm for each lap at expanded (and fixed) voltage scale (right) and overlaid (bottom right). (E) Left: Peak subthreshold Vm within the place field in the laps before (Pre-Active) versus after (Post) the first lap with spiking in the field. This includes only those place fields in novel mazes that formed in a lap later than the first lap. Note that Post includes the first lap with spiking in the field. Right: Peak subthreshold Vm within the place field in the first lap with spiking in the field (First-Active) versus in the laps afterwards (Post’). This includes all place fields in novel mazes, including those that first spiked within the field in lap 1. In (C, right) and (D, right): Pre-Active laps (shades of blue), First-Active lap (green), Post’ laps (shades of red), Post laps (green and shades of red). (F) Mean subthreshold Vm inside versus outside the field in the laps before place field spiking for the novel maze place fields in (E, Left). (G) Overall epoch peak firing rate for all recorded pairs of novel and familiar mazes (NOV-FAM maze pairs) in which cell was active in at least one of the mazes in the pair. (H) Overall epoch peak subthreshold Vm for all NOV-FAM maze pairs whether or not cell was active or silent in either maze. (I) Same as (H) except for NOV-FAM maze pairs in which the cell had a place field in at least one of the mazes in the pair. (J) Peak subthreshold Vm within the Vm-defined field in the initial laps 1–2 (left) and late laps 6-end (right) of all NOV-FAM maze pairs. P-values for paired comparisons from Wilcoxon signed-rank tests. *p<0.05; **p<0.01.DOI: http://dx.doi.org/10.7554/eLife.23040.006
+**Figure 3.:** (A) Peak subthreshold Vm in the initial laps 1–2 versus the late laps 6-end for all novel (NOV, left) and familiar (FAM, right) mazes. The peak refers to the peak value within the field determined from the epoch-averaged subthreshold Vm as a function of location. Here and elsewhere: Box marks 25-75th percentile values, horizontal line marks median. (B) Peak subthreshold Vm within the (spiking) place field in the initial versus late laps for all place fields in novel mazes. (C)-(D) Examples of place fields that formed in a lap later than the first lap in a novel maze. Subthreshold Vm for each lap at expanded (and fixed) voltage scale (right) and overlaid (bottom right). (E) Left: Peak subthreshold Vm within the place field in the laps before (Pre-Active) versus after (Post) the first lap with spiking in the field. This includes only those place fields in novel mazes that formed in a lap later than the first lap. Note that Post includes the first lap with spiking in the field. Right: Peak subthreshold Vm within the place field in the first lap with spiking in the field (First-Active) versus in the laps afterwards (Post’). This includes all place fields in novel mazes, including those that first spiked within the field in lap 1. In (C, right) and (D, right): Pre-Active laps (shades of blue), First-Active lap (green), Post’ laps (shades of red), Post laps (green and shades of red). (F) Mean subthreshold Vm inside versus outside the field in the laps before place field spiking for the novel maze place fields in (E, Left). (G) Overall epoch peak firing rate for all recorded pairs of novel and familiar mazes (NOV-FAM maze pairs) in which cell was active in at least one of the mazes in the pair. (H) Overall epoch peak subthreshold Vm for all NOV-FAM maze pairs whether or not cell was active or silent in either maze. (I) Same as (H) except for NOV-FAM maze pairs in which the cell had a place field in at least one of the mazes in the pair. (J) Peak subthreshold Vm within the Vm-defined field in the initial laps 1–2 (left) and late laps 6-end (right) of all NOV-FAM maze pairs. P-values for paired comparisons from Wilcoxon signed-rank tests. *p<0.05; **p<0.01.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** m responses during novel exploration are not due to differences in running speed or stopping behavior.(A) Peak AP firing rate and subthreshold Vm amplitude during each lap in the epochs shown in Figure 2B–C. Note the right-shifted distribution of the peaks in the novel (NOV) compared to the two familiar maze epochs (FAM/FAM’). (B) Mean of the peak AP rate values irrespective of position during individual laps in each maze epoch for NOV-FAM maze pairs. (C) Same as (B) for peak subthreshold Vm. (D) Overall epoch mean speed (cm/s) in the maze for all cells recorded during exposure to a NOV-FAM maze pair. (E) Same as (D) for overall epoch mean rate of stopping behavior (speed <2 cm/s for >1 s; number of stops/min). *p<0.05, **p<0.01.DOI: http://dx.doi.org/10.7554/eLife.23040.007
+**Figure 3—figure supplement 1.:** (A) Peak AP firing rate and subthreshold Vm amplitude during each lap in the epochs shown in Figure 2B–C. Note the right-shifted distribution of the peaks in the novel (NOV) compared to the two familiar maze epochs (FAM/FAM’). (B) Mean of the peak AP rate values irrespective of position during individual laps in each maze epoch for NOV-FAM maze pairs. (C) Same as (B) for peak subthreshold Vm. (D) Overall epoch mean speed (cm/s) in the maze for all cells recorded during exposure to a NOV-FAM maze pair. (E) Same as (D) for overall epoch mean rate of stopping behavior (speed <2 cm/s for >1 s; number of stops/min). *p<0.05, **p<0.01.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Example Vm activity from a single cell during one lap in a NOV (left) and FAM (right) maze of a maze pair. Top traces show a close-up of the Vm activity inside the place field. Lower panels from top to bottom show the Vm trace, theta-band spectrogram of the subthreshold Vm, and theta power1/2 of subthreshold Vm for the entire lap, respectively. (B) For all cells, theta power1/2 versus the mean subthreshold Vm inside (filled circles, solid lines) and outside (open circles, dashed lines) the field within NOV and FAM mazes. (C) Mean in-field theta power1/2 of subthreshold Vm for all cells recorded in a NOV-FAM maze pair. (D)-(E) Same as (C) for gamma power1/2 and standard deviation of subthreshold Vm. **p<0.01.DOI: http://dx.doi.org/10.7554/eLife.23040.008
+**Figure 3—figure supplement 2.:** (A) Example Vm activity from a single cell during one lap in a NOV (left) and FAM (right) maze of a maze pair. Top traces show a close-up of the Vm activity inside the place field. Lower panels from top to bottom show the Vm trace, theta-band spectrogram of the subthreshold Vm, and theta power1/2 of subthreshold Vm for the entire lap, respectively. (B) For all cells, theta power1/2 versus the mean subthreshold Vm inside (filled circles, solid lines) and outside (open circles, dashed lines) the field within NOV and FAM mazes. (C) Mean in-field theta power1/2 of subthreshold Vm for all cells recorded in a NOV-FAM maze pair. (D)-(E) Same as (C) for gamma power1/2 and standard deviation of subthreshold Vm. **p<0.01.
 
 To further address possible mechanisms, we examined the subthreshold Vm amplitude with respect to the first lap with spiking in the place field. We decomposed the novel maze increase in peak subthreshold Vm amplitude within the place field region (NOV initial laps: 3.0 ± 0.7 mV, late laps: 4.8 ± 0.8, n = 9, p=0.039, Figure 3B; in contrast, FAM initial laps: 3.9 ± 1.3, late laps: 3.0 ± 0.6, n = 10, p=0.63) into two parts. For the subset of novel epochs in which place field spiking did not occur in the first lap, the peak subthreshold Vm in the place field increased sharply from the laps before to the laps after spiking began (Figure 3C–D and E, left). However, there was no consistent increase after the first spiking lap, including cases in which place field spiking occurred in the first lap of the epoch (First-Active lap: 4.0 ± 0.9 mV, Post’ laps: 4.1 ± 0.5, n = 9, p=1.0, Figure 3E, right). The sharp increase suggests mechanisms of plasticity that do not rely on postsynaptic spiking (Golding et al., 2002; Dudman et al., 2007). The lack of increase in peak subthreshold Vm amplitude after the first spiking lap was also observed for place fields in familiar mazes (p=0.42). In all five cases in which place field spiking was not present in the first lap of a novel epoch, the mean Vm in the laps before spiking was greater inside versus outside the eventual place field (Figure 3F; also see Figure 3C–D, bottom right). This suggests that inputs were biased towards the locations of the place fields before spiking occurred.
 
-## Subthreshold Vm hill amplitude is smaller in familiar environments
+### Subthreshold Vm hill amplitude is smaller in familiar environments
 
 We then compared the amplitude of subthreshold Vm hills in familiar versus novel environments. First, in agreement with previous extracellular recordings from freely moving rats (Nitz and McNaughton, 2004; Karlsson and Frank, 2008), the peak firing rate of active cells was higher in novel environments (peak of average firing rate as a function of location over the entire epoch, NOV: 5.9 ± 2.1 Hz, FAM: 1.7 ± 0.5, n = 10 NOV-FAM maze pairs with at least one epoch being active, p=0.004, Figure 3G; lap peak: NOV: 13.0 ± 2.3 Hz, FAM: 7.7 ± 2.1, p=0.004, Figure 3—figure supplement 1B), and the proportion of cells that were active was greater (69% of NOV epochs and 47% of FAM epochs).
 
-According to the model in
+According to the model in Figure 1, the strength of place field inputs should either continue to increase or remain strengthened with additional experience, with the lower firing rates in familiar environments being explained by a more hyperpolarized baseline Vm and/or higher action potential (AP) threshold. However, we found that the spike threshold (Figure 4A) and baseline (Figure 4B) did not differ between novel and familiar environments. Instead, the amplitude of the peak subthreshold Vm was smaller in familiar environments (NOV: 2.4 ± 0.4 mV, FAM: 1.8 ± 0.2, n = 14 active and silent NOV-FAM maze pairs, p=0.042, Figure 3H; lap peak: p=0.002, Figure 3—figure supplement 1C; active maze pairs subset: NOV: 3.2 ± 0.4 mV, FAM: 1.9 ± 0.2, n = 8, p=0.023; note that including only active pairs controls for the lower proportion of active cells in familiar mazes; peak in place field: NOV: 2.5 ± 0.4 mV, FAM: 1.6 ± 0.1, n = 10 maze pairs with at least one epoch having a place field, p=0.004, Figure 3I). Furthermore, there was no sign that any part of the increase in amplitude during novel exploration remained by the time environments became familiar (p=0.52, Figure 3J, left). The second highest subthreshold Vm peak in each environment was not, however, larger in novel compared to familiar environments (NOV: 1.4 ± 0.1 mV, FAM: 1.4 ± 0.1, n = 14, p=1.0).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig4-v1.jpg)
 
-**Figure 4.:** (A) Mean AP threshold for all cells recorded in a NOV-FAM maze pair that were active in both mazes. (B) Overall epoch baseline subthreshold Vm for all cells recorded in a NOV-FAM maze pair. (C) Left: Example intracellular current injection sequence and responses (to probe RN and evoked firing) from a NOV-FAM maze pair. Right: Mean somatic RN for all cells recorded in a NOV-FAM maze pair. (D) Mean number of APs evoked by the positive step in the current injection sequence (normalized to median value for each step size). (E) Mean AP threshold (mV) versus AP rate (Hz) for all NOV (top) and FAM (bottom) maze epochs with ≥1 AP. (F) Left: Baseline subthreshold Vm (mV) for all NOV (top) and FAM (bottom) epochs with no spontaneous APs. Right: Baseline subthreshold Vm versus mean AP rate for all NOV (top) and FAM (bottom) epochs with ≥1 AP. The baseline Vm was more depolarized in epochs with ≥1 AP than completely silent epochs (NOV: p=0.002, FAM: p<0.001). *p<0.05; **p<0.01.DOI: http://dx.doi.org/10.7554/eLife.23040.009
+**Figure 4.:** (A) Mean AP threshold for all cells recorded in a NOV-FAM maze pair that were active in both mazes. (B) Overall epoch baseline subthreshold Vm for all cells recorded in a NOV-FAM maze pair. (C) Left: Example intracellular current injection sequence and responses (to probe RN and evoked firing) from a NOV-FAM maze pair. Right: Mean somatic RN for all cells recorded in a NOV-FAM maze pair. (D) Mean number of APs evoked by the positive step in the current injection sequence (normalized to median value for each step size). (E) Mean AP threshold (mV) versus AP rate (Hz) for all NOV (top) and FAM (bottom) maze epochs with ≥1 AP. (F) Left: Baseline subthreshold Vm (mV) for all NOV (top) and FAM (bottom) epochs with no spontaneous APs. Right: Baseline subthreshold Vm versus mean AP rate for all NOV (top) and FAM (bottom) epochs with ≥1 AP. The baseline Vm was more depolarized in epochs with ≥1 AP than completely silent epochs (NOV: p=0.002, FAM: p<0.001). *p<0.05; **p<0.01.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** m, or input resistance can account for the larger amplitude subthreshold Vm responses in novel environments.(A) Example cell recorded in a NOV-FAM maze pair with a sufficient number of spikes for comparison of AP threshold (see Materials and methods). AP threshold versus the pre-spike subthreshold Vm (1000-to-50 ms before the AP) plotted for all isolated APs and/or first spikes in a high-frequency burst (excluding APs in CSs and those with shoulders) in the NOV and FAM maze. Insets: Overall epoch peak AP rates from the maze pairs. (B)-(E) Results using different methods of measuring baseline Vm and related quantities. (B) Mean of the baseline subthreshold Vm values during individual laps in each maze epoch for NOV-FAM maze pairs. (C) Overall epoch absolute median subthreshold Vm for all cells recorded in a NOV-FAM maze pair. (D) Same as (C) for baseline-subtracted median subthreshold Vm. (E) Baseline subthreshold Vm (bottom 10%-ile ± SE; subthreshold Vm values from 10 s sliding windows, 1 s sliding steps) in NOV-FAM maze pairs around maze transitions (t = 0). Top: FAM-to-NOV transitions; Bottom: NOV-to-FAM transitions. Horizontal lines indicate the significance of paired comparisons between activity after maze transition and from −60 to 0 s before maze transition; thick lines: p<0.05, thin lines: n.s. (F) Difference of overall epoch baseline subthreshold Vm versus peak subthreshold Vm responses for all NOV-FAM maze pairs. (G) Difference of mean somatic input resistance versus peak subthreshold Vm responses for all NOV-FAM maze pairs.DOI: http://dx.doi.org/10.7554/eLife.23040.010
+**Figure 4—figure supplement 1.:** (A) Example cell recorded in a NOV-FAM maze pair with a sufficient number of spikes for comparison of AP threshold (see Materials and methods). AP threshold versus the pre-spike subthreshold Vm (1000-to-50 ms before the AP) plotted for all isolated APs and/or first spikes in a high-frequency burst (excluding APs in CSs and those with shoulders) in the NOV and FAM maze. Insets: Overall epoch peak AP rates from the maze pairs. (B)-(E) Results using different methods of measuring baseline Vm and related quantities. (B) Mean of the baseline subthreshold Vm values during individual laps in each maze epoch for NOV-FAM maze pairs. (C) Overall epoch absolute median subthreshold Vm for all cells recorded in a NOV-FAM maze pair. (D) Same as (C) for baseline-subtracted median subthreshold Vm. (E) Baseline subthreshold Vm (bottom 10%-ile ± SE; subthreshold Vm values from 10 s sliding windows, 1 s sliding steps) in NOV-FAM maze pairs around maze transitions (t = 0). Top: FAM-to-NOV transitions; Bottom: NOV-to-FAM transitions. Horizontal lines indicate the significance of paired comparisons between activity after maze transition and from −60 to 0 s before maze transition; thick lines: p<0.05, thin lines: n.s. (F) Difference of overall epoch baseline subthreshold Vm versus peak subthreshold Vm responses for all NOV-FAM maze pairs. (G) Difference of mean somatic input resistance versus peak subthreshold Vm responses for all NOV-FAM maze pairs.
 
 Together, these results indicate that hippocampal CA1 neurons responded uniquely to novelty with enhanced inputs, leading to higher firing rates than in familiar environments. Another likely contributor to the increased spiking in novel environments was larger temporal fluctuations of the subthreshold Vm, reflecting the instantaneous input activity about the mean hill amplitudes described so far. Single place field traversals in novel and familiar mazes could display robust theta (~5–10 Hz) fluctuations (Figure 3—figure supplement 2A). As in freely moving rats (Lee et al., 2012), the theta-band power was slightly positively correlated with mean subthreshold Vm (Figure 3—figure supplement 2B), implying that peak theta power should be somewhat higher in novel environments. Indeed, we found slightly increased in-field theta power (5–10 Hz power1/2 in mV, NOV: 0.79 ± 0.09, FAM: 0.68 ± 0.06, n = 14, p<0.001), as well as gamma power (25–100 Hz power1/2 in mV: NOV: 0.33 ± 0.03, FAM: 0.30 ± 0.02, p=0.001), and Vm standard deviation (NOV: 1.31 ± 0.12 mV, FAM: 1.19 ± 0.10, p=0.011) in novel mazes (Figure 3—figure supplement 2C–E). Although small in amplitude, the extra instantaneous bump to the Vm hills at the peaks of these fluctuations likely adds to the enhanced spiking responses during novel exploration.
 
 Hippocampal firing rates have been shown to increase with running speed (McNaughton et al., 1983). Here, the larger subthreshold responses in novel mazes were not attributable to differences in running behavior. Animals ran at similar overall speeds (NOV: 16.6 ± 1.3 cm/s, FAM: 15.8 ± 0.7, n = 14, p=0.63, Figure 3—figure supplement 1D) and paused (periods >1 s with speed <2 cm/s) with similar frequency (p=0.078, Figure 3—figure supplement 1E) in novel and familiar mazes. Furthermore, the instantaneous speed of the animal was not correlated with the instantaneous subthreshold Vm across novel and familiar epochs (median ± SE of Pearson’s r value per epoch: 0.01 ± 0.02, p=1.0). However, the differences in reward-related predictive licking (Figure 2E) and speed profile (see below) in novel versus familiar mazes provide behavioral evidence that the animals recognized the novelty and familiarity of the environments in VR.
 
-## Somatic excitability does not contribute to enhanced responses in novel environments
+### Somatic excitability does not contribute to enhanced responses in novel environments
 
 We next investigated cellular properties for possible contributions to the enhanced subthreshold and spiking responses in novel mazes. Differences in postsynaptic excitability could affect the magnitude of depolarization elicited by a given presynaptic input, as well as affect the spiking response to a given subthreshold Vm depolarization. However, somatic excitability did not differ between novel and familiar environments according to four measures: spike threshold, baseline (resting) Vm, input resistance, and evoked spike count (Figure 4A–D).
 
@@ -98,35 +98,35 @@ As already described, the AP threshold did not differ between novel and familiar
 
 Although we found no changes in somatic excitability between novel and familiar mazes during an individual recording, we asked how intrinsic properties, such as the AP threshold, might regulate spiking activity across different recordings. In agreement with previous findings (Epsztein et al., 2011), we found that the AP threshold was negatively correlated with the mean AP rate in novel mazes (p=0.041, Figure 4E, top). Interestingly, no such correlation was found in familiar mazes, for which the mean AP rate was instead positively correlated with the baseline Vm (p=0.003, Figure 4F, bottom right). In addition, the baseline Vm was more depolarized in epochs with ≥1 AP than in epochs with no spontaneous activity for both novel and familiar mazes (NOV: p=0.002, FAM: p<0.001, Figure 4F). These results suggest that in a novel environment, intrinsic cellular excitability helps to determine the initial place field representation. Then, when the environment has become familiar, inputs can drive the stored spatial representations in CA1 irrespective of excitability.
 
-## Spatial tuning of subthreshold Vm stabilizes with experience
+### Spatial tuning of subthreshold Vm stabilizes with experience
 
 As increases in the strength of place field inputs did not appear to be sustained, we looked for other evidence of lasting spatial learning. Stabilization of spatially tuned firing with experience is a sign of hippocampal learning (Wilson and McNaughton, 1993; Mehta et al., 1997, 2000, 2002; Kentros et al., 1998; Leutgeb et al., 2004; Frank et al., 2004; Cacucci et al., 2007). Experience-dependent changes in the spatial tuning of inputs have not previously been studied with intracellular recording. Moreover, using extracellular recording, changes cannot be inferred where there is little or no spiking, such as regions outside of place fields and in silent cells. Therefore, we analyzed the tuning of inputs across the whole environment as reflected in the shape of the entire subthreshold Vm curve versus location (Figure 1), and changes in this tuning with experience.
 
-We assessed spatial tuning as a function of experience by computing the linear correlation of AP rate or subthreshold V
+We assessed spatial tuning as a function of experience by computing the linear correlation of AP rate or subthreshold Vm activity in each lap with the average activity over the entire epoch (‘overall epoch’) (Figure 5A and Figure 5—figure supplement 1A), where each correlation was computed across all spatial bins (i.e., the entire extent of the maze). To begin with, high or low spatially correlated activity could be observed in novel or familiar mazes (Figure 5—figure supplement 2), and an individual cell’s correlation score in novel mazes did not predict its score in familiar mazes (or vice versa) for AP rate (p=0.16) or subthreshold Vm (p=0.83). We therefore compared spatial correlation scores for novel versus familiar epochs independent of paired exposures. All epochs were included, with the following exception. In our experiments, for each recording, the animal was generally first exposed to a familiar maze followed by a novel or other familiar maze. In many cases (10/32 cells), this first familiar maze recording was also the first exposure to any maze for the animal on that day. We suspected that spatial correlations could be disrupted in these first familiar epochs due to nonspecific behavioral factors (Figure 2—figure supplement 2B), thus partially masking differences from novel epochs. More generally, this is a factor that may be useful to consider in future VR studies. With all first epochs of the day (whether familiar or novel) excluded (Figure 5B; see Figure 5—figure supplement 1B for the same analysis including all epochs; note, excluding the initial epoch of each day did not alter any of the previous findings such as the difference in peak AP rate and subthreshold Vm amplitudes, Figure 5—figure supplement 3; similarly, excluding the region surrounding the primary reward location did not alter these results), we observed that AP rate correlation scores were, again, generally high and similar (p=0.29) in familiar (Pearson’s r: 0.65 ± 0.14) and novel (0.58 ± 0.09) mazes (Figure 5B, top).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig5-v1.jpg)
 
-**Figure 5.:** (A) Example of two cells recorded in a novel (left) and familiar (right) maze. AP rate (top) and subthreshold Vm (bottom) activity (normalized to the peak value in each lap) for each lap, color-coded based on the spatial correlation score (Pearson’s r) of the lap’s AP rate or subthreshold Vm profile with the overall epoch profile. (B) Left: Mean spatial correlation of the AP rate (top), subthreshold Vm in all locations (middle), and out-field (i.e., excluding the Vm-defined field region) subthreshold Vm (bottom), averaged across all individual laps shown in the corresponding panels on the right. This includes all cells recorded in a NOV or FAM maze (unpaired, minimum of 4 laps required). Right: Individual lap AP rate (top), subthreshold Vm (middle), and out-field subthreshold Vm (bottom) spatial correlation scores in NOV (red) and FAM (black) mazes (mean ± SE) versus lap number. Gray box highlights the comparison of NOV versus FAM within the initial laps (1-2). Black horizontal lines indicate the significance of unpaired comparisons (two lap smoothing) between the given FAM laps and the initial laps 1–2 in the FAM mazes; thick lines: p<0.05, thin lines: n.s. Similarly, red horizontal lines are for NOV mazes. Note that (B) excludes all first maze epochs experienced by the animal on that day (see text and Figure 5—figure supplements 1 and 3). *p<0.05; **p<0.01.DOI: http://dx.doi.org/10.7554/eLife.23040.011
+**Figure 5.:** (A) Example of two cells recorded in a novel (left) and familiar (right) maze. AP rate (top) and subthreshold Vm (bottom) activity (normalized to the peak value in each lap) for each lap, color-coded based on the spatial correlation score (Pearson’s r) of the lap’s AP rate or subthreshold Vm profile with the overall epoch profile. (B) Left: Mean spatial correlation of the AP rate (top), subthreshold Vm in all locations (middle), and out-field (i.e., excluding the Vm-defined field region) subthreshold Vm (bottom), averaged across all individual laps shown in the corresponding panels on the right. This includes all cells recorded in a NOV or FAM maze (unpaired, minimum of 4 laps required). Right: Individual lap AP rate (top), subthreshold Vm (middle), and out-field subthreshold Vm (bottom) spatial correlation scores in NOV (red) and FAM (black) mazes (mean ± SE) versus lap number. Gray box highlights the comparison of NOV versus FAM within the initial laps (1-2). Black horizontal lines indicate the significance of unpaired comparisons (two lap smoothing) between the given FAM laps and the initial laps 1–2 in the FAM mazes; thick lines: p<0.05, thin lines: n.s. Similarly, red horizontal lines are for NOV mazes. Note that (B) excludes all first maze epochs experienced by the animal on that day (see text and Figure 5—figure supplements 1 and 3). *p<0.05; **p<0.01.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Subthreshold Vm spatial tuning across laps in a novel (left) and familiar (right) epoch, similar to Figure 5A. Note the increase in spatial tuning within the novel epoch, whereas the spatial correlation scores were high from the initial laps in the familiar maze. The cell is silent in this familiar epoch example. (B) Same analysis as Figure 5B except all maze epochs are included. Results show the same trends as Figure 5B. (C) Same as (B, middle panels), but for the subset of epochs in which the cell is silent. Similar to the result including all epochs, the spatial correlation scores increase within novel epochs and are high from the initial laps in familiar mazes. (D) Left: Same as (B, middle panels), but for running speed. (E) Correlation of the running speed correlation score versus the subthreshold Vm correlation score for all pairs of laps in NOV epochs.DOI: http://dx.doi.org/10.7554/eLife.23040.012
+**Figure 5—figure supplement 1.:** (A) Subthreshold Vm spatial tuning across laps in a novel (left) and familiar (right) epoch, similar to Figure 5A. Note the increase in spatial tuning within the novel epoch, whereas the spatial correlation scores were high from the initial laps in the familiar maze. The cell is silent in this familiar epoch example. (B) Same analysis as Figure 5B except all maze epochs are included. Results show the same trends as Figure 5B. (C) Same as (B, middle panels), but for the subset of epochs in which the cell is silent. Similar to the result including all epochs, the spatial correlation scores increase within novel epochs and are high from the initial laps in familiar mazes. (D) Left: Same as (B, middle panels), but for running speed. (E) Correlation of the running speed correlation score versus the subthreshold Vm correlation score for all pairs of laps in NOV epochs.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A–C) Four example epochs. Top: Overall epoch 2-D AP rate map (shown in linearized coordinates below in black) and subthreshold Vm (shown in linearized coordinates below in gray); Middle: Individual lap AP rate (black) and subthreshold Vm (gray); Bottom: Spatial correlation scores (Pearson’s r) for the AP rate (left) and subthreshold Vm (right) activity of each lap versus the corresponding overall epoch activity profiles. AP rate and subthreshold Vm lap activity is normalized to the peak activity value on each lap. Note that Cell 2 (B) expresses low and high mean spatial correlation scores in two different maze epochs (FAM and NOV, respectively). Green asterisk: Place field contains a CS in that lap. Note that the novel epoch shown (B) is the same as that shown in Figure 6A.DOI: http://dx.doi.org/10.7554/eLife.23040.013
+**Figure 5—figure supplement 2.:** (A–C) Four example epochs. Top: Overall epoch 2-D AP rate map (shown in linearized coordinates below in black) and subthreshold Vm (shown in linearized coordinates below in gray); Middle: Individual lap AP rate (black) and subthreshold Vm (gray); Bottom: Spatial correlation scores (Pearson’s r) for the AP rate (left) and subthreshold Vm (right) activity of each lap versus the corresponding overall epoch activity profiles. AP rate and subthreshold Vm lap activity is normalized to the peak activity value on each lap. Note that Cell 2 (B) expresses low and high mean spatial correlation scores in two different maze epochs (FAM and NOV, respectively). Green asterisk: Place field contains a CS in that lap. Note that the novel epoch shown (B) is the same as that shown in Figure 6A.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** (A)-(J) Excluding the initial maze of the day does not alter results for NOV, FAM, and NOV versus FAM maze epoch comparisons of peak (A)-(D) (where for (B, left) and (D) the peak is determined within the overall epoch Vm-defined field, and for (C) the peak is determined within the place field for NOV-FAM maze pairs in which there was a place field in at least one epoch of the pair) and baseline activity (E)-(F), AP threshold (G), input resistance (H), subthreshold Vm oscillatory power (I)-(K), or the relationship between AP threshold (L) and baseline subthreshold Vm (M) versus mean AP rate. *p<0.05; **p<0.01.DOI: http://dx.doi.org/10.7554/eLife.23040.014
+**Figure 5—figure supplement 3.:** (A)-(J) Excluding the initial maze of the day does not alter results for NOV, FAM, and NOV versus FAM maze epoch comparisons of peak (A)-(D) (where for (B, left) and (D) the peak is determined within the overall epoch Vm-defined field, and for (C) the peak is determined within the place field for NOV-FAM maze pairs in which there was a place field in at least one epoch of the pair) and baseline activity (E)-(F), AP threshold (G), input resistance (H), subthreshold Vm oscillatory power (I)-(K), or the relationship between AP threshold (L) and baseline subthreshold Vm (M) versus mean AP rate. *p<0.05; **p<0.01.
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig5-figsupp4-v1.jpg)
 
-**Figure 5—figure supplement 4.:** m hill as a function of experience.Normalized subthreshold Vm (mean ± SE) for the initial laps 1–2 and late laps 6-end with respect to the normalized position of the overall epoch AP rate field (0–1) for NOV and FAM maze epochs. Center-of-mass (CoM) of each curve marked with vertical lines. Animal running direction from left to right. Note the leftward shift (the direction opposite to the animal’s movement) of the CoM from the initial to late laps within both NOV and FAM epochs, as well as from NOV to FAM epochs.DOI: http://dx.doi.org/10.7554/eLife.23040.015
+**Figure 5—figure supplement 4.:** Normalized subthreshold Vm (mean ± SE) for the initial laps 1–2 and late laps 6-end with respect to the normalized position of the overall epoch AP rate field (0–1) for NOV and FAM maze epochs. Center-of-mass (CoM) of each curve marked with vertical lines. Animal running direction from left to right. Note the leftward shift (the direction opposite to the animal’s movement) of the CoM from the initial to late laps within both NOV and FAM epochs, as well as from NOV to FAM epochs.
 
 In contrast, the subthreshold Vm spatial correlation scores were significantly lower in novel than familiar mazes (NOV: 0.58 ± 0.12, FAM: 0.69 ± 0.03, p=0.003, Figure 5B, middle left). Moreover, the Vm correlation scores were lower in the initial laps (p=0.003, Figure 5B, middle right), then significantly increased across laps within a novel but not familiar epoch, reaching close to the familiar values in later laps (Figure 5B, middle right). This progressive stabilization of spatial tuning with experience is an intracellular signature of the establishment of a long-term memory trace.
 
-## Spatial tuning of subthreshold Vm stabilizes across the entire environment
+### Spatial tuning of subthreshold Vm stabilizes across the entire environment
 
 We then asked where this progressive stabilization was occurring. Extracellular studies have shown that CA1 place field spiking stabilizes with experience (Wilson and McNaughton, 1993; Frank et al., 2004; Leutgeb et al., 2004; Cacucci et al., 2007). Is the stabilization of spatial tuning we observed in CA1 occurring for its inputs across the whole environment?
 
@@ -136,33 +136,1180 @@ While animals ran at similar speeds in novel and familiar environments, the spat
 
 We also measured the shape of the subthreshold Vm hills. A backward shift of the hill with experience (i.e., a shift in location in the direction opposite to the animal’s motion) (Blum and Abbott, 1996; Mehta et al., 1997) and a negative skew (i.e., a slower rise in the direction of the animal’s motion) (Mehta et al., 2000; 2002; Ekstrom et al., 2001; Harvey et al., 2009) are thought to result from spike timing-dependent plasticity (Markram et al., 1997; Bi and Poo, 1998). Signs of both were observed in the subthreshold Vm hills underlying the AP place field (Figure 5—figure supplement 4), providing additional evidence of experience-dependent plasticity.
 
-## Complex spikes are not necessary for place field formation in novel environments
+### Complex spikes are not necessary for place field formation in novel environments
 
-Finally, we examined the role of CSs in place field formation and plasticity during novel environment exploration. CSs (also called plateau potentials in
+Finally, we examined the role of CSs in place field formation and plasticity during novel environment exploration. CSs (also called plateau potentials in Bittner et al., 2015) are detected in somatic recordings as large amplitude, plateau-like Vm depolarizations with accompanying spiking (Figure 6A–B, expanded traces), and are distinct (Epsztein et al., 2011) from extracellularly defined complex spikes (Ranck, 1973). CSs occurred in novel and familiar mazes and had similar properties in both (e.g., duration, number of APs, Figure 6—figure supplement 1A–C). CSs spontaneously occurred at low rates in both novel (14 CSs total in 10 of 190 total laps from nine maze epochs with ≥1 AP) and familiar (17 CSs in 11/228 laps from 26 epochs) mazes, were present in less than half of all cells (Figure 6—figure supplement 1D, left), and had occurrence rates that increased similarly with increasing subthreshold Vm level (Figure 6—figure supplement 1E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig6-v1.jpg)
 
-**Figure 6.:** (A)-(B) Example novel maze recordings that contained ≥1 CS in the maze. Overall epoch 2-D AP rate map and subthreshold Vm (above). Individual laps are shown as three traces: Vm (top), AP rate (middle), and subthreshold Vm (bottom), with the location and trace of the first CSs in each maze epoch highlighted. AP rate and subthreshold Vm lap activity is normalized to the peak activity value in each lap. In no cases were CSs evoked by the current injections (asterisks) in (A)-(B). In (A), the place field had already formed before the first CS occurs. In (B), the CS occurs in the lap in which the place field first appears (same epoch as shown in Figure 3C). Note that there were no CSs in the novel maze place field recordings in Figure 2B or Figure 3D. (C) Peak AP rate (top) and subthreshold Vm (bottom) for individual laps aligned (lap = 0) to the lap containing the first CS in the maze epoch for those epochs with a CS (green) or containing the largest peak subthreshold Vm for those epochs without a CS (gray), then pooled across NOV and FAM maze epochs. Peak activity determined from the region (±3 spatial bins) surrounding the CS or peak subthreshold Vm location. Mean ± SE. Green horizontal lines indicate the significance of paired comparisons (two lap smoothing) between the given laps and the mean of the pre-CS (pre-lap 0) laps; thick lines: p<0.05, thin lines: n.s. Similarly, gray horizontal lines are for epochs without a CS. (D) Same as (C) for AP rate (top) and subthreshold Vm (bottom) spatial correlation scores (Pearson’s r).DOI: http://dx.doi.org/10.7554/eLife.23040.016
+**Figure 6.:** (A)-(B) Example novel maze recordings that contained ≥1 CS in the maze. Overall epoch 2-D AP rate map and subthreshold Vm (above). Individual laps are shown as three traces: Vm (top), AP rate (middle), and subthreshold Vm (bottom), with the location and trace of the first CSs in each maze epoch highlighted. AP rate and subthreshold Vm lap activity is normalized to the peak activity value in each lap. In no cases were CSs evoked by the current injections (asterisks) in (A)-(B). In (A), the place field had already formed before the first CS occurs. In (B), the CS occurs in the lap in which the place field first appears (same epoch as shown in Figure 3C). Note that there were no CSs in the novel maze place field recordings in Figure 2B or Figure 3D. (C) Peak AP rate (top) and subthreshold Vm (bottom) for individual laps aligned (lap = 0) to the lap containing the first CS in the maze epoch for those epochs with a CS (green) or containing the largest peak subthreshold Vm for those epochs without a CS (gray), then pooled across NOV and FAM maze epochs. Peak activity determined from the region (±3 spatial bins) surrounding the CS or peak subthreshold Vm location. Mean ± SE. Green horizontal lines indicate the significance of paired comparisons (two lap smoothing) between the given laps and the mean of the pre-CS (pre-lap 0) laps; thick lines: p<0.05, thin lines: n.s. Similarly, gray horizontal lines are for epochs without a CS. (D) Same as (C) for AP rate (top) and subthreshold Vm (bottom) spatial correlation scores (Pearson’s r).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** (A)-(C) CS width (at half-maximum, ms) (A), CS area (mV*ms) (B), and number of spikes per CS (C) (mean ± SE) for all CSs in NOV and FAM mazes. (D) Left: Fraction of cells recorded in NOV and FAM mazes that had at least one CS in a NOV or FAM maze. Right: Fraction of all NOV and FAM maze epochs in which at least one CS occurred in the maze. (E) CS rate as a function of relative (to lap baseline, left) and absolute (right) subthreshold Vm. Here, subthreshold Vm is computed as the mean value in 150 ms windows (sliding every 10 ms).DOI: http://dx.doi.org/10.7554/eLife.23040.017
+**Figure 6—figure supplement 1.:** (A)-(C) CS width (at half-maximum, ms) (A), CS area (mV*ms) (B), and number of spikes per CS (C) (mean ± SE) for all CSs in NOV and FAM mazes. (D) Left: Fraction of cells recorded in NOV and FAM mazes that had at least one CS in a NOV or FAM maze. Right: Fraction of all NOV and FAM maze epochs in which at least one CS occurred in the maze. (E) CS rate as a function of relative (to lap baseline, left) and absolute (right) subthreshold Vm. Here, subthreshold Vm is computed as the mean value in 150 ms windows (sliding every 10 ms).
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** Example familiar maze recording that contained ≥1 CS in the maze. Overall epoch 2-D AP rate map and subthreshold Vm (above). Individual laps are shown as three traces: Vm (top), AP rate (middle), and subthreshold Vm (bottom), with the location and trace of the first CS in the maze epoch highlighted. AP rate and subthreshold Vm lap activity is normalized to the peak activity value in each lap. In this example, the CS did not stabilize the location of the place field. CSs occurred in five other familiar epochs (in four cases spiking activity was already stable before the CS, and in the other case the CS occurred in the first lap that the place field appeared).DOI: http://dx.doi.org/10.7554/eLife.23040.018
+**Figure 6—figure supplement 2.:** Example familiar maze recording that contained ≥1 CS in the maze. Overall epoch 2-D AP rate map and subthreshold Vm (above). Individual laps are shown as three traces: Vm (top), AP rate (middle), and subthreshold Vm (bottom), with the location and trace of the first CS in the maze epoch highlighted. AP rate and subthreshold Vm lap activity is normalized to the peak activity value in each lap. In this example, the CS did not stabilize the location of the place field. CSs occurred in five other familiar epochs (in four cases spiking activity was already stable before the CS, and in the other case the CS occurred in the first lap that the place field appeared).
 
-Even though CSs were rare events, previous work suggests that they play a significant role in the formation of place fields in novel mazes, as has been shown for familiar environments. Specifically, in previous work using a familiar treadmill-based virtual environment, CSs were always present in the first lap of spontaneously appearing place fields in cells that were silent in previous laps, and artificially evoked CSs were capable of immediately creating place fields in previously silent cells (Bittner et al., 2015). Therefore, we checked whether the initial appearance of place fields in novel mazes, which by definition are new place fields, was accompanied by CSs. Of the nine novel epoch place fields, four displayed stable activity in the place field region prior to any CSs (which then occurred later in the place field in 3/4 cases, e.g., Figure 6A), two had ≥1 CS in the initial lap of the emergent field (e.g., Figures 3C and 6B), and the remaining 3 were in epochs that did not have any CSs (e.g., Figures 2B and 3D did not contain CSs). Of these 9 place fields, 7 occurred in mazes that the animal had never previously been exposed to, and 2 occurred in mazes previously experienced 1 or 2 times (versus ≥19 exposures for familiar epochs, Table 1). Thus, CSs were not required for place field formation in novel environments. Moreover, CSs in familiar mazes did not necessarily stabilize place fields (Figure 6—figure supplement 2).10.7554/eLife.23040.019Table 1.Details of the individual cells and maze epochs. The ‘P’ and ‘N’ for epochs in mazes which the animal explored in both directions denote the two directions (i.e. moving in the direction of positive and negative changes in position value). The ‘#” indicates epochs that were excluded from analysis because their place fields appear to have been attributable to experimenter manipulations (e.g. inadvertent triggering of a CS during a current step used to probe series and input resistance and evoked spiking response), and thus their place field properties could not be assumed to be those of spontaneously occurring place fields. These epochs were however included in the analysis of Figure 6C–D since one can still assess the effect of any spontaneous CSs they displayed. The ‘##” marks an epoch in which the AP threshold could not be measured because all APs in the epoch contained a shoulder (see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.23040.019Cell #Epoch #Maze# Prev. Maze SessionsRec. dur. (s)# LapsSubth. vm baseline (mV)Subth. vm peak (mV)AP rate peak (Hz)AP rate mean (Hz)AP threshold (mV)Input R. (MOhm)AP rate Infield-Outfield ratioPlace field (0=No, 1=Yes) 11'O'≥39106.57−61.31.40.000.00N/A147.5N/AN/A 12'8'0282.717−60.32.40.000.00N/A197.0N/AN/A 21'O'≥3999.75−56.91.20.000.00N/A88.8N/AN/A 23P'l'≥19209.03−54.02.80.000.00N/AN/AN/AN/A 23N'l'≥192−53.72.10.000.00N/AN/AN/AN/A 31'O'≥39171.56−56.51.92.320.59−48.577.76.11 32'8'1124.35−55.41.74.141.68−49.4195.31.70 42'8'0807.713−52.81.11.350.44−48.158.12.10 51'O'≥39115.55−62.61.30.000.00N/A120.3N/AN/A 61'O'≥39103.18−57.22.00.000.00N/A83.6N/AN/A 62P'L'0587.712−53.32.32.670.78−40.423.94.51 62N'L'012−53.61.70.890.38−40.423.97.11 71'O'≥3996.68−66.11.40.000.00N/A83.4N/AN/A 72'8'1147.79−66.41.90.000.00N/A86.8N/AN/A 73P'l'≥19124.45−66.63.00.000.00N/A69.0N/AN/A 73N'l'≥195−65.62.00.000.00N/A69.0N/AN/A 81'O'≥39174.96−54.71.60.800.07N/AN/A32.60 92'8'0121.06−59.41.10.000.00N/A68.9N/AN/A 101'O'≥39143.95−57.02.06.581.36N/A128.03.91 111'O'≥3957.56−57.81.10.000.00N/A117.3N/AN/A 112#'8'01058.39−55.77.912.050.89−42.2112.735.51 121'O'≥39248.116−55.32.22.891.51−47.383.814.51 122P'l'≥1967.54−55.93.99.522.57−46.073.63.71 122N'l'≥193−55.63.414.084.14−46.073.63.31 131'8'01012.127−57.53.311.262.02−52.8145.16.71 141'O'≥39224.813−54.91.72.100.80N/A69.01.50 142'8'1367.121−55.63.68.460.75−48.055.425.71 143'O'≥39250.219−55.41.71.690.45−48.045.13.31 144'8'2428.425−55.02.31.490.22−43.855.36.61 145P'l'≥19203.59−53.92.20.220.02−45.3100.920.00 145N'l'≥199−53.91.72.310.22−45.3100.934.31 151'O'≥3937.64−60.51.50.000.00N/A40.4N/AN/A 152'8'0505.626−54.23.87.561.00−47.549.915.31 153'O'≥39199.518−47.81.93.021.08−43.757.43.01 161'O'≥3999.76−58.82.50.500.04N/A59.829.40 162#'8'1302.620−57.03.28.862.48−50.456.83.21 163'O'≥39198.28−58.83.93.790.45−51.549.913.91 164#'8'2271.313−54.34.614.514.06−50.739.95.01 165'O'≥39306.07−57.43.02.670.55−50.6N/A5.51 166#'8'3421.117−61.52.93.450.42N/AN/A23.31 171P'l'≥19604.29−52.56.67.991.53−47.042.67.51 171N'l'≥1910−52.33.621.464.64−47.042.611.41 181'O'≥3947.34−61.21.70.000.00N/AN/AN/AN/A 191'O'≥39191.94−56.72.60.480.03N/AN/AInf0 192'8'0221.23−64.31.60.000.00N/AN/AN/AN/A 201'O'≥39154.79−61.61.20.000.00N/A140.6N/AN/A 202'8'≥1965.23−63.83.00.000.00N/A196.1N/AN/A 211'O'≥39169.610−54.90.80.540.04N/A169.479.00 212'8'≥1960.13−53.11.00.000.00N/AN/AN/AN/A 221'O'≥39149.29−57.21.60.230.01−44.676.8Inf0 222'8'≥19137.95−55.61.70.000.00N/AN/AN/AN/A 231'O'≥39233.15−63.13.00.000.00N/AN/AN/AN/A 232'8'≥19206.14−47.42.37.492.47−44.3183.53.11 241'O'≥39295.68−48.21.63.961.41−46.4159.32.70 242'8'≥19384.75−49.65.814.502.73N/AN/A5.41 251'O'≥39175.89−58.12.41.170.07−43.285.6Inf0 253P'L'01214.310−56.41.20.090.01−46.080.8Inf0 253N'L'011−56.53.41.900.46−46.080.831.50 261'O'≥3953.23−60.62.50.000.00N/AN/AN/AN/A 271'O'≥3977.94−52.08.412.613.61−44.977.43.61 272'8'≥19399.44−53.58.214.843.06−44.9N/A4.01 273'O'≥39105.28−56.43.84.260.81−46.667.14.31 274'8'≥19112.86−57.83.90.570.03N/AN/AInf0 282'8'≥19217.24−55.42.50.760.06−41.4145.723.31 291'O'≥39135.37−59.41.70.000.00N/A75.4N/AN/A 301'O'≥39141.76−60.91.20.000.00N/A43.4N/AN/A 312'8'≥1982.43−56.01.50.000.00N/AN/AN/AN/A 322'8'≥19159.95−55.22.54.660.82−48.3124.44.61 323P'L'0378.114−53.83.011.953.29N/A##145.13.11 323N'L'014−53.72.75.431.55N/A##145.13.11
+Even though CSs were rare events, previous work suggests that they play a significant role in the formation of place fields in novel mazes, as has been shown for familiar environments. Specifically, in previous work using a familiar treadmill-based virtual environment, CSs were always present in the first lap of spontaneously appearing place fields in cells that were silent in previous laps, and artificially evoked CSs were capable of immediately creating place fields in previously silent cells (Bittner et al., 2015). Therefore, we checked whether the initial appearance of place fields in novel mazes, which by definition are new place fields, was accompanied by CSs. Of the nine novel epoch place fields, four displayed stable activity in the place field region prior to any CSs (which then occurred later in the place field in 3/4 cases, e.g., Figure 6A), two had ≥1 CS in the initial lap of the emergent field (e.g., Figures 3C and 6B), and the remaining 3 were in epochs that did not have any CSs (e.g., Figures 2B and 3D did not contain CSs). Of these 9 place fields, 7 occurred in mazes that the animal had never previously been exposed to, and 2 occurred in mazes previously experienced 1 or 2 times (versus ≥19 exposures for familiar epochs, Table 1). Thus, CSs were not required for place field formation in novel environments. Moreover, CSs in familiar mazes did not necessarily stabilize place fields (Figure 6—figure supplement 2).
+
+**Table 1.**
+ Details of the individual cells and maze epochs. The ‘P’ and ‘N’ for epochs in mazes which the animal explored in both directions denote the two directions (i.e. moving in the direction of positive and negative changes in position value). The ‘#” indicates epochs that were excluded from analysis because their place fields appear to have been attributable to experimenter manipulations (e.g. inadvertent triggering of a CS during a current step used to probe series and input resistance and evoked spiking response), and thus their place field properties could not be assumed to be those of spontaneously occurring place fields. These epochs were however included in the analysis of Figure 6C–D since one can still assess the effect of any spontaneous CSs they displayed. The ‘##” marks an epoch in which the AP threshold could not be measured because all APs in the epoch contained a shoulder (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell #</th>
+      <th>Epoch #</th>
+      <th>Maze</th>
+      <th># Prev. Maze Sessions</th>
+      <th>Rec. dur. (s)</th>
+      <th># Laps</th>
+      <th>Subth. vm baseline (mV)</th>
+      <th>Subth. vm peak (mV)</th>
+      <th>AP rate peak (Hz)</th>
+      <th>AP rate mean (Hz)</th>
+      <th>AP threshold (mV)</th>
+      <th>Input R. (MOhm)</th>
+      <th>AP rate Infield-Outfield ratio</th>
+      <th>Place field (0=No, 1=Yes)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>106.5</td>
+      <td>7</td>
+      <td>−61.3</td>
+      <td>1.4</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>147.5</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>0</td>
+      <td>282.7</td>
+      <td>17</td>
+      <td>−60.3</td>
+      <td>2.4</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>197.0</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>99.7</td>
+      <td>5</td>
+      <td>−56.9</td>
+      <td>1.2</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>88.8</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3P</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td>209.0</td>
+      <td>3</td>
+      <td>−54.0</td>
+      <td>2.8</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3N</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td></td>
+      <td>2</td>
+      <td>−53.7</td>
+      <td>2.1</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>171.5</td>
+      <td>6</td>
+      <td>−56.5</td>
+      <td>1.9</td>
+      <td>2.32</td>
+      <td>0.59</td>
+      <td>−48.5</td>
+      <td>77.7</td>
+      <td>6.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>1</td>
+      <td>124.3</td>
+      <td>5</td>
+      <td>−55.4</td>
+      <td>1.7</td>
+      <td>4.14</td>
+      <td>1.68</td>
+      <td>−49.4</td>
+      <td>195.3</td>
+      <td>1.7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>0</td>
+      <td>807.7</td>
+      <td>13</td>
+      <td>−52.8</td>
+      <td>1.1</td>
+      <td>1.35</td>
+      <td>0.44</td>
+      <td>−48.1</td>
+      <td>58.1</td>
+      <td>2.1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>115.5</td>
+      <td>5</td>
+      <td>−62.6</td>
+      <td>1.3</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>120.3</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>103.1</td>
+      <td>8</td>
+      <td>−57.2</td>
+      <td>2.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>83.6</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2P</td>
+      <td>'L'</td>
+      <td>0</td>
+      <td>587.7</td>
+      <td>12</td>
+      <td>−53.3</td>
+      <td>2.3</td>
+      <td>2.67</td>
+      <td>0.78</td>
+      <td>−40.4</td>
+      <td>23.9</td>
+      <td>4.5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2N</td>
+      <td>'L'</td>
+      <td>0</td>
+      <td></td>
+      <td>12</td>
+      <td>−53.6</td>
+      <td>1.7</td>
+      <td>0.89</td>
+      <td>0.38</td>
+      <td>−40.4</td>
+      <td>23.9</td>
+      <td>7.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>96.6</td>
+      <td>8</td>
+      <td>−66.1</td>
+      <td>1.4</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>83.4</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>1</td>
+      <td>147.7</td>
+      <td>9</td>
+      <td>−66.4</td>
+      <td>1.9</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>86.8</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3P</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td>124.4</td>
+      <td>5</td>
+      <td>−66.6</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>69.0</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3N</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td></td>
+      <td>5</td>
+      <td>−65.6</td>
+      <td>2.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>69.0</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>174.9</td>
+      <td>6</td>
+      <td>−54.7</td>
+      <td>1.6</td>
+      <td>0.80</td>
+      <td>0.07</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>32.6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>0</td>
+      <td>121.0</td>
+      <td>6</td>
+      <td>−59.4</td>
+      <td>1.1</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>68.9</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>143.9</td>
+      <td>5</td>
+      <td>−57.0</td>
+      <td>2.0</td>
+      <td>6.58</td>
+      <td>1.36</td>
+      <td>N/A</td>
+      <td>128.0</td>
+      <td>3.9</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>57.5</td>
+      <td>6</td>
+      <td>−57.8</td>
+      <td>1.1</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>117.3</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>2#</td>
+      <td>'8'</td>
+      <td>0</td>
+      <td>1058.3</td>
+      <td>9</td>
+      <td>−55.7</td>
+      <td>7.9</td>
+      <td>12.05</td>
+      <td>0.89</td>
+      <td>−42.2</td>
+      <td>112.7</td>
+      <td>35.5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>248.1</td>
+      <td>16</td>
+      <td>−55.3</td>
+      <td>2.2</td>
+      <td>2.89</td>
+      <td>1.51</td>
+      <td>−47.3</td>
+      <td>83.8</td>
+      <td>14.5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2P</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td>67.5</td>
+      <td>4</td>
+      <td>−55.9</td>
+      <td>3.9</td>
+      <td>9.52</td>
+      <td>2.57</td>
+      <td>−46.0</td>
+      <td>73.6</td>
+      <td>3.7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2N</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td></td>
+      <td>3</td>
+      <td>−55.6</td>
+      <td>3.4</td>
+      <td>14.08</td>
+      <td>4.14</td>
+      <td>−46.0</td>
+      <td>73.6</td>
+      <td>3.3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1</td>
+      <td>'8'</td>
+      <td>0</td>
+      <td>1012.1</td>
+      <td>27</td>
+      <td>−57.5</td>
+      <td>3.3</td>
+      <td>11.26</td>
+      <td>2.02</td>
+      <td>−52.8</td>
+      <td>145.1</td>
+      <td>6.7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>224.8</td>
+      <td>13</td>
+      <td>−54.9</td>
+      <td>1.7</td>
+      <td>2.10</td>
+      <td>0.80</td>
+      <td>N/A</td>
+      <td>69.0</td>
+      <td>1.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>1</td>
+      <td>367.1</td>
+      <td>21</td>
+      <td>−55.6</td>
+      <td>3.6</td>
+      <td>8.46</td>
+      <td>0.75</td>
+      <td>−48.0</td>
+      <td>55.4</td>
+      <td>25.7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>3</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>250.2</td>
+      <td>19</td>
+      <td>−55.4</td>
+      <td>1.7</td>
+      <td>1.69</td>
+      <td>0.45</td>
+      <td>−48.0</td>
+      <td>45.1</td>
+      <td>3.3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>4</td>
+      <td>'8'</td>
+      <td>2</td>
+      <td>428.4</td>
+      <td>25</td>
+      <td>−55.0</td>
+      <td>2.3</td>
+      <td>1.49</td>
+      <td>0.22</td>
+      <td>−43.8</td>
+      <td>55.3</td>
+      <td>6.6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>5P</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td>203.5</td>
+      <td>9</td>
+      <td>−53.9</td>
+      <td>2.2</td>
+      <td>0.22</td>
+      <td>0.02</td>
+      <td>−45.3</td>
+      <td>100.9</td>
+      <td>20.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>5N</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td></td>
+      <td>9</td>
+      <td>−53.9</td>
+      <td>1.7</td>
+      <td>2.31</td>
+      <td>0.22</td>
+      <td>−45.3</td>
+      <td>100.9</td>
+      <td>34.3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>37.6</td>
+      <td>4</td>
+      <td>−60.5</td>
+      <td>1.5</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>40.4</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>0</td>
+      <td>505.6</td>
+      <td>26</td>
+      <td>−54.2</td>
+      <td>3.8</td>
+      <td>7.56</td>
+      <td>1.00</td>
+      <td>−47.5</td>
+      <td>49.9</td>
+      <td>15.3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>3</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>199.5</td>
+      <td>18</td>
+      <td>−47.8</td>
+      <td>1.9</td>
+      <td>3.02</td>
+      <td>1.08</td>
+      <td>−43.7</td>
+      <td>57.4</td>
+      <td>3.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>99.7</td>
+      <td>6</td>
+      <td>−58.8</td>
+      <td>2.5</td>
+      <td>0.50</td>
+      <td>0.04</td>
+      <td>N/A</td>
+      <td>59.8</td>
+      <td>29.4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>2#</td>
+      <td>'8'</td>
+      <td>1</td>
+      <td>302.6</td>
+      <td>20</td>
+      <td>−57.0</td>
+      <td>3.2</td>
+      <td>8.86</td>
+      <td>2.48</td>
+      <td>−50.4</td>
+      <td>56.8</td>
+      <td>3.2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>3</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>198.2</td>
+      <td>8</td>
+      <td>−58.8</td>
+      <td>3.9</td>
+      <td>3.79</td>
+      <td>0.45</td>
+      <td>−51.5</td>
+      <td>49.9</td>
+      <td>13.9</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>4#</td>
+      <td>'8'</td>
+      <td>2</td>
+      <td>271.3</td>
+      <td>13</td>
+      <td>−54.3</td>
+      <td>4.6</td>
+      <td>14.51</td>
+      <td>4.06</td>
+      <td>−50.7</td>
+      <td>39.9</td>
+      <td>5.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>5</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>306.0</td>
+      <td>7</td>
+      <td>−57.4</td>
+      <td>3.0</td>
+      <td>2.67</td>
+      <td>0.55</td>
+      <td>−50.6</td>
+      <td>N/A</td>
+      <td>5.5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>6#</td>
+      <td>'8'</td>
+      <td>3</td>
+      <td>421.1</td>
+      <td>17</td>
+      <td>−61.5</td>
+      <td>2.9</td>
+      <td>3.45</td>
+      <td>0.42</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>23.3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>1P</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td>604.2</td>
+      <td>9</td>
+      <td>−52.5</td>
+      <td>6.6</td>
+      <td>7.99</td>
+      <td>1.53</td>
+      <td>−47.0</td>
+      <td>42.6</td>
+      <td>7.5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>1N</td>
+      <td>'l'</td>
+      <td>≥19</td>
+      <td></td>
+      <td>10</td>
+      <td>−52.3</td>
+      <td>3.6</td>
+      <td>21.46</td>
+      <td>4.64</td>
+      <td>−47.0</td>
+      <td>42.6</td>
+      <td>11.4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>47.3</td>
+      <td>4</td>
+      <td>−61.2</td>
+      <td>1.7</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>191.9</td>
+      <td>4</td>
+      <td>−56.7</td>
+      <td>2.6</td>
+      <td>0.48</td>
+      <td>0.03</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Inf</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>0</td>
+      <td>221.2</td>
+      <td>3</td>
+      <td>−64.3</td>
+      <td>1.6</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>154.7</td>
+      <td>9</td>
+      <td>−61.6</td>
+      <td>1.2</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>140.6</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>65.2</td>
+      <td>3</td>
+      <td>−63.8</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>196.1</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>169.6</td>
+      <td>10</td>
+      <td>−54.9</td>
+      <td>0.8</td>
+      <td>0.54</td>
+      <td>0.04</td>
+      <td>N/A</td>
+      <td>169.4</td>
+      <td>79.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>60.1</td>
+      <td>3</td>
+      <td>−53.1</td>
+      <td>1.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>149.2</td>
+      <td>9</td>
+      <td>−57.2</td>
+      <td>1.6</td>
+      <td>0.23</td>
+      <td>0.01</td>
+      <td>−44.6</td>
+      <td>76.8</td>
+      <td>Inf</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>137.9</td>
+      <td>5</td>
+      <td>−55.6</td>
+      <td>1.7</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>233.1</td>
+      <td>5</td>
+      <td>−63.1</td>
+      <td>3.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>206.1</td>
+      <td>4</td>
+      <td>−47.4</td>
+      <td>2.3</td>
+      <td>7.49</td>
+      <td>2.47</td>
+      <td>−44.3</td>
+      <td>183.5</td>
+      <td>3.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>295.6</td>
+      <td>8</td>
+      <td>−48.2</td>
+      <td>1.6</td>
+      <td>3.96</td>
+      <td>1.41</td>
+      <td>−46.4</td>
+      <td>159.3</td>
+      <td>2.7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>384.7</td>
+      <td>5</td>
+      <td>−49.6</td>
+      <td>5.8</td>
+      <td>14.50</td>
+      <td>2.73</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>5.4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>175.8</td>
+      <td>9</td>
+      <td>−58.1</td>
+      <td>2.4</td>
+      <td>1.17</td>
+      <td>0.07</td>
+      <td>−43.2</td>
+      <td>85.6</td>
+      <td>Inf</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>3P</td>
+      <td>'L'</td>
+      <td>0</td>
+      <td>1214.3</td>
+      <td>10</td>
+      <td>−56.4</td>
+      <td>1.2</td>
+      <td>0.09</td>
+      <td>0.01</td>
+      <td>−46.0</td>
+      <td>80.8</td>
+      <td>Inf</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>3N</td>
+      <td>'L'</td>
+      <td>0</td>
+      <td></td>
+      <td>11</td>
+      <td>−56.5</td>
+      <td>3.4</td>
+      <td>1.90</td>
+      <td>0.46</td>
+      <td>−46.0</td>
+      <td>80.8</td>
+      <td>31.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>53.2</td>
+      <td>3</td>
+      <td>−60.6</td>
+      <td>2.5</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>77.9</td>
+      <td>4</td>
+      <td>−52.0</td>
+      <td>8.4</td>
+      <td>12.61</td>
+      <td>3.61</td>
+      <td>−44.9</td>
+      <td>77.4</td>
+      <td>3.6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>399.4</td>
+      <td>4</td>
+      <td>−53.5</td>
+      <td>8.2</td>
+      <td>14.84</td>
+      <td>3.06</td>
+      <td>−44.9</td>
+      <td>N/A</td>
+      <td>4.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>3</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>105.2</td>
+      <td>8</td>
+      <td>−56.4</td>
+      <td>3.8</td>
+      <td>4.26</td>
+      <td>0.81</td>
+      <td>−46.6</td>
+      <td>67.1</td>
+      <td>4.3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>4</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>112.8</td>
+      <td>6</td>
+      <td>−57.8</td>
+      <td>3.9</td>
+      <td>0.57</td>
+      <td>0.03</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Inf</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>217.2</td>
+      <td>4</td>
+      <td>−55.4</td>
+      <td>2.5</td>
+      <td>0.76</td>
+      <td>0.06</td>
+      <td>−41.4</td>
+      <td>145.7</td>
+      <td>23.3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>135.3</td>
+      <td>7</td>
+      <td>−59.4</td>
+      <td>1.7</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>75.4</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>1</td>
+      <td>'O'</td>
+      <td>≥39</td>
+      <td>141.7</td>
+      <td>6</td>
+      <td>−60.9</td>
+      <td>1.2</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>43.4</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>82.4</td>
+      <td>3</td>
+      <td>−56.0</td>
+      <td>1.5</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>2</td>
+      <td>'8'</td>
+      <td>≥19</td>
+      <td>159.9</td>
+      <td>5</td>
+      <td>−55.2</td>
+      <td>2.5</td>
+      <td>4.66</td>
+      <td>0.82</td>
+      <td>−48.3</td>
+      <td>124.4</td>
+      <td>4.6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>3P</td>
+      <td>'L'</td>
+      <td>0</td>
+      <td>378.1</td>
+      <td>14</td>
+      <td>−53.8</td>
+      <td>3.0</td>
+      <td>11.95</td>
+      <td>3.29</td>
+      <td>N/A##</td>
+      <td>145.1</td>
+      <td>3.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>3N</td>
+      <td>'L'</td>
+      <td>0</td>
+      <td></td>
+      <td>14</td>
+      <td>−53.7</td>
+      <td>2.7</td>
+      <td>5.43</td>
+      <td>1.55</td>
+      <td>N/A##</td>
+      <td>145.1</td>
+      <td>3.1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition to a specific role in forming new place fields in familiar environments (Bittner et al., 2015), CSs have been shown to trigger synaptic plasticity in general (Takahashi and Magee, 2009), so we examined the possibility that they contribute to the experience-dependent changes in activity that we observed. We checked whether CSs may contribute to the stabilization of activity by boosting subsequent activity and spatial correlation scores. We aligned each lap’s activity to the lap containing the first CS in each epoch (whether novel or familiar). For comparison to epochs that did not contain CSs, we aligned laps in those epochs to the lap with the largest peak subthreshold Vm (since CSs tend to occur at the most depolarized Vm values, Figure 6—figure supplement 1E). We found a transient, but significant, increase in AP rate in the first lap after the first CS (Figure 6C, top), but not in subsequent peak subthreshold Vm activity (Figure 6C, bottom). Regarding spatial tuning, we found a transient increase in AP rate and subthreshold Vm spatial correlation scores after the first CS, though a similar result for the subthreshold Vm spatial correlation was found following the largest peak Vm for maze epochs without CSs (Figure 6D). Therefore, individual CSs appear to contribute an amount to plasticity and spatial learning that varies in magnitude – from small (i.e., transient increases in spiking and spatial correlation) to potentially large (i.e., occurring in the first lap of new place fields).
 
 ## Discussion
 
-Using intracellular recording, we have investigated the mechanisms underlying how hippocampal spatial representations form and stabilize with experience. We began by testing a model of this process that was based on previous experimental and theoretical work (
+Using intracellular recording, we have investigated the mechanisms underlying how hippocampal spatial representations form and stabilize with experience. We began by testing a model of this process that was based on previous experimental and theoretical work (Figure 1). In summary (Figure 7), we found that the inputs driving place field spiking did indeed increase in amplitude during the exploration of a novel environment (Figure 3). Furthermore, this growth could occur before spiking occurred, suggesting a role for plasticity mechanisms that do not depend on postsynaptic spiking (Golding et al., 2002; Dudman et al., 2007). However, these increases in input amplitude were not sustained after additional experience in the environment, suggesting the need for alternate mechanisms of establishing stable place field activity in familiar environments. We then found an experience-dependent change that was maintained with familiarization – an increase in the similarity of the spatial tuning of inputs across the entire extent of the environment (Figure 5). This is a signature of the long-term stabilization of the hippocampal representation and provides a foundation for reliable spatial firing in familiar environments.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/23040/elife-23040-fig7-v1.jpg)
 
-**Figure 7.:** Schematic based on findings from this study (compare to Figure 1). During novel exploration (left), the subthreshold Vm depolarization underlying place fields grows in amplitude. This increase in amplitude is not sustained as the environment becomes more familiar (right). However, the spatial tuning of inputs, which is initially lower in all locations of novel mazes, stabilizes during novel exploration, both inside and outside of the place field. The higher AP rate in novel environments is due to the larger amplitude subthreshold depolarizations, as no differences were observed in the baseline Vm or somatic excitability (e.g., AP threshold). CSs occur in a fraction of novel maze epochs and the appearance of place fields in novel environments does not require CSs. Thus, stable representations of familiar mazes are supported by the emergence of less strongly modulated, but more repeatable, spatially tuned subthreshold inputs.DOI: http://dx.doi.org/10.7554/eLife.23040.020
+**Figure 7.:** Schematic based on findings from this study (compare to Figure 1). During novel exploration (left), the subthreshold Vm depolarization underlying place fields grows in amplitude. This increase in amplitude is not sustained as the environment becomes more familiar (right). However, the spatial tuning of inputs, which is initially lower in all locations of novel mazes, stabilizes during novel exploration, both inside and outside of the place field. The higher AP rate in novel environments is due to the larger amplitude subthreshold depolarizations, as no differences were observed in the baseline Vm or somatic excitability (e.g., AP threshold). CSs occur in a fraction of novel maze epochs and the appearance of place fields in novel environments does not require CSs. Thus, stable representations of familiar mazes are supported by the emergence of less strongly modulated, but more repeatable, spatially tuned subthreshold inputs.
 
 We found that complex spikes (CSs), which can induce synaptic plasticity (Takahashi and Magee, 2009) and are sufficient to trigger place field formation in familiar environments (Bittner et al., 2015), were not required for the appearance of individual place fields during novel exploration (e.g., Figures 2B, 3D and 6A). However, temporary increases in firing rate were seen in the laps subsequent to CS occurrence (Figure 6C). This suggests that CS-based plasticity could contribute to the long-term stabilization of place fields, perhaps in a similar fashion to other large, calcium-mediated events (Sheffield and Dombeck, 2015). This would be consistent with experiments in which NMDAR-dependent plasticity is not necessary for the formation of place fields in novel environments (McHugh et al., 1996; Kentros et al., 1998), but rather for their persistence across days (Kentros et al., 1998). Note that CSs could be more potent triggers for place field formation in proximal cue-based environments (Bittner et al., 2015) versus the distal cue-based environments of our study.
 
@@ -182,11 +1329,11 @@ The correlation between spike rate and AP threshold in novel but not familiar en
 
 ## Materials and methods
 
-## Virtual Reality software and behavioral setup
+### Virtual Reality software and behavioral setup
 
 Our custom virtual reality software was developed at the HHMI Janelia Research Campus as part of Janelia’s open-source virtual reality software platform (Jovian). Our software suite, named ‘MouseoVeR’, is written in C++ and built from a number of open-source software components (Boost, Bullet, osgBullet, osgWorks, OpenSceneGraph, Collada, OpenGL, and Qt) that work together to generate a system allowing users to create configurable visual environments. The MouseoVeR code used in this study is available at https://github.com/JaneliaSciComp/CohenBolstadLee_eLife2017. Virtual maze environments were created using the open-source animation software Blender (www.blender.org) and rendered by MouseoVeR. Blender environments were rendered using three virtual camera objects located at a single point in space. One camera faced forwards and captured a field of view (FOV) of 75°. The two other cameras were identical but rotated ±75° to create a total azimuthal FOV of 225°. For display, the three images were rear-projected onto a 30 in diameter, ~40% translucent cylindrical screen to create a final image encompassing a total FOV of 20° below, 60° above, and ±112.5° lateral with respect to the location of head fixation (Figure 2A, top). The cylindrical screen surrounded the spherical treadmill – a large and hollow lightweight polystyrene sphere (16 in diameter, 65 g) resting on a bed of ten individually air-cushioned ping-pong balls in an acrylic frame (http://www.flintbox.com/public/project/26501/). To track the motion of the treadmill, two cameras separated by 90° were positioned at the equator and focused on 4 mm2 regions under infrared light (modified from FlyFizz, https://openwiki.janelia.org/wiki/display/flyfizz/Home; Seelig et al., 2010). The cameras captured 30 × 30 pixel images of the treadmill surface at 4 kHz. Motion of the treadmill was computed from the accumulated differences in the images over time. A brief description of the MouseoVeR processing loop is as follows. In each iteration of the rendering loop, MouseoVeR communicates with the treadmill’s data server to retrieve the updated motion values since the last request. The values coming from the data server are defined as Euler angles in the server’s coordinate space. For calibration, we created mappings between 180° rotations of the treadmill along each of its three rotational axes (roll, pitch, and yaw) in real-world space and the data server’s coordinate space. For converting real into virtual behavior, we ignored any yaw rotations and extracted from pitch and roll values a rotational direction as well as a magnitude of rotation (which was converted into an arc length using the treadmill radius). Manually (i.e., animal-) controlled heading direction was derived from the treadmill’s pitch-to-roll ratio by continuously sampling, smoothing (~500 ms), and converting it into a °/s turning rate. The motion vector was sent to the physics engine to compute collisions with virtual objects (e.g., maze walls), and the resulting virtual movement was rendered for display at a synchronized projector frame rate of 30 Hz.
 
-## Behavioral training
+### Behavioral training
 
 Eight-to-twelve week-old male C57BL/6NCrl (Charles River Laboratories, Wilmington, MA) mice were used for all experiments. All procedures were performed in accordance with the Janelia Research Campus Institutional Animal Care and Use Committee guidelines on animal welfare. Prior to behavioral training, a stainless steel head plate – with a large central recording well to access the hippocampus bilaterally – was attached to the skull surface using light-cured adhesives (Optibond All-in-One, Kerr; Charisma, Heraeus Kulzer, South Bend, IN) and dental acrylic. Sites for future hippocampal CA1 craniotomies (bregma: −1.6 to −2.0 mm AP, 1.2 to 1.8 mm ML) were marked with a fine-tipped cautery pen (Medline Inc., Northfield, IL). Mice were allowed to recover for at least five days before behavioral training started. During recovery, the mice were given food and water ad libitum, and a saucer running wheel was placed in the home cage.
 
@@ -196,31 +1343,31 @@ On day 2, mice were exposed to the initial virtual maze for a total of ~1 hr ov
 
 On days 3–5, mice continued to explore the same virtual maze over 2–3 training sessions per day, for a total of ~1 hr of in-maze time per day. On day 6, mice were exposed to a second, unique virtual maze, in addition to the initial maze, which was now familiar. For days 6–10, mice were trained to explore and become familiar with the second maze and the transitions between the two mazes. On day 11, after a minimum of 5 days of training in each of the virtual mazes, mice were considered ready for experimental recordings. From day 11 onwards, each mouse explored familiar and novel mazes during recording on 3–4 days, interleaved with additional training sessions or rest days.
 
-## Electrophysiology
+### Electrophysiology
 
 On recording days, trained mice were anesthetized with isoflurane (~1.5%,~0.8 l/min flow rate) and placed in a modified stereotaxic frame that clamps the head plate. If this was the first recording day from that hemisphere, a craniotomy (~1 mm2) was performed over dorsal CA1. Dura removal was performed with the assistance of collagenase (1 mg/ml in 1x PBS with 1.5 mM Ca, Collagenase type I, Sigma-Aldrich). Collagenase was applied for ~10–15 min, followed by application of bovine serum albumin solution (1 mg/ml in 1x PBS, Sigma Aldrich) for ~5 min, and finally rinsed with saline. A glass recording pipette (~2 MΩ) filled with saline was lowered into the brain and used to monitor the extracellular local field potential and unit activity in order to accurately map the depth of the dorsal CA1 pyramidal cell layer. Once the depth of the pyramidal layer was determined, the craniotomy was cleaned and rinsed with saline. To protect the brain during the recovery period, we created a sealed environment by filling a well surrounding the craniotomy with saline that was closed off with a cap lined with silicone (Kwik-Cast sealant, WPI, Sarasota, FL). All animals were mobile within a few minutes after being placed in their home cages. After a minimum of 1 hr of recovery time, mice were placed on the treadmill. Blind in vivo whole-cell recordings were obtained from the right or left dorsal CA1 pyramidal cell layer (Lee et al., 2009, 2014) using recording pipettes (5–7 MΩ) filled with an intracellular solution containing (in mM) K-gluconate 135, HEPES 10, Na2-phosphocreatine 10, KCl 4, MgATP 4, and Na3GTP 0.3 (pH adjusted to 7.2 with KOH) as well as biocytin (0.2%). After a gigaseal was obtained, the seal was held for up to ~4 min with no positive pressure to let the network recover before breaking into the membrane. After achieving the whole-cell configuration, the VR display was turned on and the mice were free to explore the mazes for sweetened water rewards as on training days. However, on recording days, in addition to the previously explored familiar mazes, mice could be exposed to a novel, previously unencountered, maze. Current-clamp measurements of Vm (amplifier low-pass filter set to 5 kHz) were sampled at 25 kHz. The animal’s behavior in the virtual maze was sampled at 30 Hz (the projector frame rate). All data analyzed is from recording periods with no holding current or no more than −20 pA of negative holding current applied to the pipette. Recordings were not corrected for the liquid junction potential. All neurons included in this study had the electrophysiological characteristics of somatic CA1 pyramidal whole-cell recordings (Lee et al., 2009; Epsztein et al., 2011; Lee et al., 2012, 2014). To minimize the number of animals used, we attempted to maximize the number of recordings per animal. Due to recording from multiple cells within a single animal across a window of ~5–10 days, we did not attempt to recover the histology of the recorded cells.
 
-## Data analysis
+### Data analysis
 
 All analysis was done using custom-written programs in Matlab. All novel versus familiar maze epoch comparisons as well as other comparisons (e.g., initial versus late lap amplitudes within epochs) were done using non-parametric paired (Wilcoxon signed-rank) and unpaired (Mann-Whitney U) tests assuming unequal variances, unless otherwise noted. Correspondingly, all numerical values in the text are reported as the median ± standard error of the median, unless otherwise noted, and boxplots show the 25–75%-iles and the median (horizontal black line). (Standard error of the median was computed as follows. From the sample population containing n samples, we drew n samples with replacement to create a sample group and then computed the median of the sample group. This was repeated 10,000 times to obtain 10,000 sample group medians. Finally, we computed the standard deviation of the sample group medians to obtain the standard error.) Pearson’s linear correlation coefficient was used to assess correlations between features, with significance determined with respect to the hypothesis that there was no correlation. All P-values reported are 2-sided. A value of p<0.05 was defined as statistically significant. Only temporally adjacent novel and familiar mazes were included in the analysis of NOV-FAM maze pairs. For example, if the order of presentation of mazes during the recording protocol was (1) FAM, (2) NOV, (3) FAM’, and (4) FAM2, then 2 NOV-FAM maze pairs were considered for analysis: FAM-NOV and NOV-FAM’. Analysis was limited to data collected during periods when the animal’s speed was ≥5 cm/s unless otherwise noted. The choice of dividing each epoch into early and late periods between laps 5 and 6 was based on previous extracellular studies showing that a substantial amount of the change in place field spiking activity during an epoch occurs within the first five laps (Mehta et al., 2000; Ekstrom et al., 2001).
 
 Thirty-two cells were recorded from 15 mice navigating in virtual mazes. A maze was considered novel if it was the first day that the animal had encountered that maze (with the exception of 3 cases in which the animal had encountered the maze once on a previous day). For all familiar maze epochs, the animal had previously explored the maze a minimum of 19 times over the course of at least 5 days. Cells were active (where ‘active’ was defined as follows: peak AP firing rate as a function of location averaged over the maze epoch ≥0.5 Hz and spiking in ≥2 laps) in 47% of epochs in familiar mazes (21/45 epochs, 15/29 cells) and 69% of epochs in novel mazes (9/13 epochs, 8/12 cells). If active epochs were instead defined as those with an overall mean AP firing rate >0.1 Hz, the results were similar (NOV: 9/13, FAM: 18/45). The ~1.5 fold larger fraction of active epochs in novel environments agrees with the ~1.4 fold increased fraction of active dorsal CA1 pyramidal cells in rats exploring real-world novel versus familiar mazes (Karlsson and Frank, 2008).
 
-## Subthreshold membrane potential and AP firing rate
+### Subthreshold membrane potential and AP firing rate
 
 The locations in the virtual mazes were linearized by collapsing them onto a long curve that went around the track, giving a 1-D representation of animal location. For display purposes, the beginning (position = 0 cm) and end (position =~135–240 cm) of the curve, which represent the same location, was chosen based on where the cellular activity was approximately the lowest across all time periods in the maze epoch (overall epoch average). Movement from zero to the end represents a full lap in the maze. The subthreshold Vm trace was estimated from the raw Vm trace as previously described (Epsztein et al., 2011; Lee et al., 2012). Briefly, all APs and any parts of the raw Vm trace directly attributable to the somatic spikes themselves (e.g., after-depolarizations) were removed, as well as the entirety of the slow, large, putatively calcium-based depolarization that often follows a burst of APs (which thus includes removing the entirety of each CS). The remaining trace was then linearly interpolated across the resulting gaps, yielding the subthreshold Vm. The overall epoch mean AP firing rate and subthreshold Vm as a function of the animal’s virtual location were determined every 4 cm (‘spatial bin’) along the track, here using 12 cm-wide boxcar smoothing. The peak AP rate and peak subthreshold Vm were defined as the maximum spatially binned values. The baseline Vm (Figure 4B) was computed as the mean of the subthreshold Vm values for the 10% of spatial bins with lowest subthreshold Vm. Similar operations were performed for individual laps to derive the AP rate, subthreshold Vm, and peak and baseline Vm values for each lap. For each maze epoch, only directions in which the animal sampled each location on at least two different laps during the recording were considered for analysis. For bidirectional mazes, cellular activity in the direction that contained the largest overall epoch peak subthreshold Vm response was selected for comparisons between NOV-FAM maze pairs. For analysis of place fields or activity across laps within an epoch, each direction was included independently. Some laps were eliminated from analysis because of holding current outside of the −20 to 0 pA range, or because of within-lap continuous baseline shifts (e.g., possibly due to residual dialysis even after waiting ~4 min after seal formation before breaking in, or from sudden brain movements relative to the pipette, etc.). The original absolute lap numbers were used for analysis when intervening laps were eliminated.
 
-## Determination of the place field region and amplitude of the subthreshold Vm hill
+### Determination of the place field region and amplitude of the subthreshold Vm hill
 
 Place fields were determined for each epoch and direction as follows. From the epoch average firing rate map, the candidate place field was defined as the region containing the peak AP firing rate and contiguous bins with rate greater than or equal to the baseline rate plus 20% of the difference between the peak and baseline rate (where the baseline is the mean rate in the 10% of bins with lowest rate, which is generally 0 Hz). Then, candidate place fields with peak rate ≥0.5 Hz, at least 2 laps of spiking in-field, and an in-field/out-field average firing rate ratio ≥3 were classified as place fields. Unless noted as referring to the place field, the field was determined from the overall mean subthreshold Vm as a function of position in the epoch as follows. From this subthreshold function, the baseline Vm (Figure 4B) was determined as was the spatial bin with peak subthreshold Vm. The set of contiguous position bins around this peak bin where the mean subthreshold Vm was greater than or equal to the baseline Vm plus 30% of the difference between the peak and baseline Vm was defined as the inside of the field. The amplitude of the subthreshold hill was computed by subtracting the baseline Vm from the peak value of the mean subthreshold Vm. Similar operations were performed for each lap to derive within-lap baseline (Figure 4—figure supplement 1B) and peak (Figure 3—figure supplement 1A,right and 1C) Vm values.
 
-## Determination of the spatial response amplitude of AP firing rate and subthreshold Vm for experience-dependent analysis
+### Determination of the spatial response amplitude of AP firing rate and subthreshold Vm for experience-dependent analysis
 
 The in-field peak spatial activity in each lap within a maze epoch (Figure 3A and J) was determined as follows. For each maze epoch the peak AP rate and subthreshold Vm value in each lap were determined from the region surrounding (±3 spatial bins) the location of the overall epoch peak AP rate and subthreshold Vm, respectively. Individual lap peak values from this in-field region were then averaged across a specific set of laps (e.g., laps 1–2 for the ‘initial laps’ in Figure 3A), or averaged across all laps to obtain a mean value for the maze epoch (Figure 3G–H). Individual lap peak values were also determined irrespective of location (‘lap peak’), then collapsed across laps to obtain a mean value for the maze epoch (Figure 3—figure supplement 1B–C). For peak subthreshold Vm activity in each lap within a maze epoch with respect to the place field (Figure 3B, E–F and I), we took the peak subthreshold Vm value in each lap inside the place field region determined from the overall epoch AP activity. Individual lap peak values from this place field region were then averaged across a specific set of laps (e.g., laps 1–2 for the ‘initial laps’ in Figure 3B), or averaged across all laps to obtain a mean value for the maze epoch (Figure 3I). In the case that one of the epochs in the maze pair (e.g. in Figure 3I) was active but did not have a place field or was silent, values for that epoch were computed with respect to the region surrounding (±3 spatial bins) the location of the overall epoch peak subthreshold Vm.
 
 To assess the effect of CSs on peak spatial activity within a maze epoch (Figure 6C), for all cells recorded in a FAM or a NOV maze, and for maze epochs that contained a CS, we first determined the location (lap number and spatial bin) of the first CS in the epoch. Then for each lap, we determined the peak AP rate and subthreshold Vm in the region surrounding (±3 spatial bins) the CS location. These lap peak activity values were then aligned to the lap (lap = 0) that contained the first CS. Similarly, for comparison with maze epochs that did not contain a CS, we determined the lap number and spatial bin containing the peak individual lap subthreshold Vm value. Then for each lap, we found the peak activity values within the region surrounding this subthreshold Vm value.
 
-## Spatial correlation of the AP firing rate, subthreshold Vm, and speed profile for experience-dependent analysis
+### Spatial correlation of the AP firing rate, subthreshold Vm, and speed profile for experience-dependent analysis
 
 For Figure 5, Figure 5—figure supplements 1A–C and and 2, for maze epochs in which there were at least 4 laps of activity, the stability of spatial tuning of the AP firing rate and, separately, subthreshold Vm was determined for each lap as follows. A lap correlation score was determined by computing the Pearson’s correlation coefficient between the activity across each location (i.e., each spatial bin in the maze) within the lap with the overall epoch activity. A mean maze correlation score was then determined by taking the mean of the individual lap scores. For bidirectional mazes, the direction with the largest amplitude overall epoch peak subthreshold Vm response was selected for comparison.
 
@@ -228,26 +1375,26 @@ To assess the effect of CSs on spatial tuning within a maze epoch (Figure 6D), f
 
 To assess the animal’s speed profile for each lap (Figure 5—figure supplement 1D), the spatial correlation was taken between each lap’s speed profile and the average speed profile for the overall epoch. For Figure 5—figure supplement 1E, for every pair of laps in a novel epoch, a spatial correlation between the subthreshold Vm of the 2 laps and between the speed profile of the 2 laps was computed. Then the correlation of these values across all pairs of laps in an epoch was computed. The distribution (i.e., median) of the correlation values (one per epoch) across all epochs was then compared to 0. In a related analysis, the relationship between the instantaneous speed of the animal and the instantaneous subthreshold Vm value was determined as follows. For each novel and familiar epoch, the correlation between instantaneous speed and corresponding subthreshold Vm was determined for all contiguous timestamps associated with speed >5 cm/s (which is the same speed threshold as is used in all the analysis). The distribution of correlation values (one per epoch) across all epochs was then compared to 0.
 
-## Spectral analysis and standard deviation of the subthreshold Vm
+### Spectral analysis and standard deviation of the subthreshold Vm
 
 For Figure 3—figure supplement 2, each maze epoch (and each lap) was separated into periods when the animal was inside versus outside the field for that epoch. In the case of the theta (5–10 Hz) band, the subthreshold Vm trace was first reduced to a sampling rate of 500 Hz via decimation. Short-time Fourier transform (STFT) methods were applied to compute the average power in the 5–10 Hz band. Note that ~0.25 s of data were excluded before and after each of the crossing times between the inside and outside of the field to eliminate contamination due to the temporal extent of the STFT window. In the case of the gamma (25–100 Hz) band, a 25–160 Hz band-pass and 60 Hz notch filter were applied to the subthreshold Vm trace, the sampling rate was reduced to 2 kHz, and the STFT of the resulting trace was taken. Then, the periods 60 ms before to 60 ms after each AP and intracellular complex spike burst were removed, as well as 60 ms of data before and after each crossing time between the inside and outside of the field, and the power in the 25–100 Hz band was averaged over the remaining periods inside the field. For the standard deviation of the subthreshold Vm trace, a 1–160 Hz band-pass and a 60 Hz notch filter were applied, and periods 17 ms before to 17 ms after each AP and complex spike burst as well as crossing times were removed. Then, the standard deviation over the remaining periods inside the field was computed.
 
-## Determination of spontaneous AP threshold
+### Determination of spontaneous AP threshold
 
 The spontaneous AP threshold (Figure 4A) for a given maze epoch was determined as previously described (Epsztein et al., 2011). Briefly, for each AP, we set the threshold to be the Vm value at which the dV/dt crossed 10 V/s (or 0.33 × the peak dV/dt of that AP, whichever was lower, in order to handle the slower APs that occurred later within bursts and CSs) on its way to the AP peak Vm. Note that the threshold for individual APs varies with the level of depolarization before the AP (Figure 4—figure supplement 1A), and therefore we determined the threshold from a subset of APs that did not have APs immediately preceding them (i.e., isolated spikes and first spikes of bursts), that occurred during less depolarized periods, that did not possess a dV/dt shoulder (Epsztein et al., 2010), and that were not a part of a CS.
 
-## Determination of input resistance
+### Determination of input resistance
 
 During maze exploration, we injected two 100-ms-long hyperpolarizing current steps of −0.2 nA separated by 500 ms every 20 s through the recording pipette (Figure 4C, left). To determine the mean input resistance (RN) within a maze epoch (Figure 4C), we first eliminated any Vm responses to the current steps that were masked by large spontaneous fluctuations, averaged the remaining responses during the epoch, and then applied a previously described procedure (Crochet and Petersen, 2006) to the average response. The specific steps used were as previously described (Epsztein et al., 2011).
 
-## Analysis of evoked number of APs
+### Analysis of evoked number of APs
 
 During maze exploration, we injected one 100-ms-long depolarizing current step of +0.1–0.2 nA every 20 s through the recording pipette (Figure 4C, left). For each maze epoch, a single stimulus intensity was chosen to evoke APs, and the mean number of APs evoked per stimulus was normalized to the median value across all maze epochs in which the same stimulus intensity was used. For the comparison of evoked activity (Figure 4D), we only included data if the amplitude of the current step was the same for the FAM and NOV epochs of the maze pair.
 
-## Shape of subthreshold Vm hill under place field
+### Shape of subthreshold Vm hill under place field
 
 For Figure 5—figure supplement 4, the overall epoch AP rate and subthreshold Vm per lap as a function of position were determined every 2 cm along the track using 12 cm-wide boxcar smoothing for each epoch with a clear place field. From the AP rate function, the baseline was determined (mean of the AP rate values for the 10% of spatial bins with lowest AP rate, generally 0 Hz) as was the spatial bin with peak AP rate. The set of contiguous position bins around this peak bin where the mean AP rate was greater than or equal to the baseline plus 30% of the difference between the peak and baseline was defined as the inside of the AP rate field. The subthreshold Vm from each lap was taken for positions starting one-fourth of the width of the AP rate field before the start of the (AP rate) field to one-fourth of the field width after the end of the field, then averaged across the desired set of laps (e.g., laps 1–2 for the ‘initial’ period). Each such curve was interpolated at 60 evenly spaced position values, normalized in amplitude (0 = minimum subthreshold Vm value, 1 = maximum) and normalized with respect to the position along the field (0 to 1 for the inside of the field, −0.25 to 1.25 including the regions on each side of the field, and flipped if necessary so that the animal’s running direction was from −0.25 to 1.25), then averaged across the different epoch’s fields (mean ± SE).
 
-## Complex spike occurrence
+### Complex spike occurrence
 
 Classification of events as complex spikes (CSs) was done as previously described (Epsztein et al., 2011). Note that for the purposes of determining the location at which a CS occurred, we set the time of occurrence to be the time of the peak of the first AP in the CS. To assess the degree of association between novel place field formation and CSs, we considered all CSs whether or not they occurred when the animal was moving above or below the threshold speed (5 cm/s) and whether or not they occurred spontaneously or were triggered (i.e., evoked inadvertently by the 100-ms-long depolarizing current steps). In all other analyses involving CSs, we only included CSs that occurred spontaneously and when the animal was moving above the threshold speed.

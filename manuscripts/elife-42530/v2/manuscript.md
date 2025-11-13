@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.42530.001 Transposable elements (TEs), the movement of which can damage the genome, are epigenetically silenced in eukaryotes. Intriguingly, TEs are activated in the sperm companion cell – vegetative cell (VC) – of the flowering plant Arabidopsis thaliana . However, the extent and mechanism of this activation are unknown. Here we show that about 100 heterochromatic TEs are activated in VCs, mostly by DEMETER-catalyzed DNA demethylation. We further demonstrate that DEMETER access to some of these TEs is permitted by the natural depletion of linker histone H1 in VCs. Ectopically expressed H1 suppresses TEs in VCs by reducing DNA demethylation and via a methylation-independent mechanism. We demonstrate that H1 is required for heterochromatin condensation in plant cells and show that H1 overexpression creates heterochromatic foci in the VC progenitor cell. Taken together, our results demonstrate that the natural depletion of H1 during male gametogenesis facilitates DEMETER-directed DNA demethylation, heterochromatin relaxation, and TE activation.
+Transposable elements (TEs), the movement of which can damage the genome, are epigenetically silenced in eukaryotes. Intriguingly, TEs are activated in the sperm companion cell – vegetative cell (VC) – of the flowering plant Arabidopsis thaliana. However, the extent and mechanism of this activation are unknown. Here we show that about 100 heterochromatic TEs are activated in VCs, mostly by DEMETER-catalyzed DNA demethylation. We further demonstrate that DEMETER access to some of these TEs is permitted by the natural depletion of linker histone H1 in VCs. Ectopically expressed H1 suppresses TEs in VCs by reducing DNA demethylation and via a methylation-independent mechanism. We demonstrate that H1 is required for heterochromatin condensation in plant cells and show that H1 overexpression creates heterochromatic foci in the VC progenitor cell. Taken together, our results demonstrate that the natural depletion of H1 during male gametogenesis facilitates DEMETER-directed DNA demethylation, heterochromatin relaxation, and TE activation.
 
 ## Introduction
 
@@ -39,21 +39,41 @@ In this study, we identify heterochromatic TEs that are epigenetically activated
 
 ## Results
 
-## Heterochromatic transposons are preferentially expressed in the vegetative cell
+### Heterochromatic transposons are preferentially expressed in the vegetative cell
 
 To measure the extent of TE activation in the VC, we performed RNA-seq using mature pollen grains, followed by the annotation of gene and TE transcripts using Mikado and the TAIR10 annotation (Venturini et al., 2018). We identified 114 TEs that are transcribed at significantly higher levels in pollen than rosette leaves (fold change >2; p<0.05, likelihood ratio test), and hence likely to be specifically activated in the VC (Figure 1—source data 1) (Slotkin et al., 2009).
 
 The VC-activated TEs are primarily located in pericentromeric regions and exhibit features of heterochromatic TEs, such as being long and GC rich (Frost et al., 2018) (Figure 1A,B, Figure 1—figure supplement 1A). As is typical of heterochromatic TEs (Zemach et al., 2013), VC-activated TEs are significantly enriched in dimethylation of histone H3 on lysine 9 (H3K9me2) in somatic tissues, and are significantly depleted of euchromatin-associated modifications (Figure 1B, Figure 1—figure supplement 1B). VC-activated TEs encompass diverse TE families, among which MuDR DNA transposons and Gypsy LTR-retrotransposons are significantly overrepresented (p<10−9 and 0.01, respectively, Fisher’s exact test; Figure 1C).
 
-## Transposon derepression in the VC is caused by DME-directed DNA demethylation
+![Figure 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig1-v2.jpg)
+
+**Figure 1.:** (A) Expression and locations of VC-activated TEs along Chromosome 5. The purple ellipse and red bars indicate the centromere and borders of pericentromeric regions, respectively. (B) Box plots showing the length, GC content, and H3K9me2 level of TEs. Each box encloses the middle 50% of the distribution, with the horizontal line marking the median and vertical lines marking the minimum and maximum values that fall within 1.5 times the height of the box. Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.001). (C) Percentages of TEs classified by superfamily. (D) VC-activated TEs were aligned at the TSS and TTS (dashed lines), respectively, and average CG methylation levels for each 100 bp interval were plotted (referred to as ends analysis). (E) Snapshots demonstrating the expression (Log2RPKM), absolute and differential CG methylation at two example VC-activated TEs. Red lines under TE annotations indicate VC DME targets. Spm, sperm. (F) Pie charts illustrating percentages of VC-activated TEs with TSS overlapping (top) or within 500 bp (bottom) of VC DME targets. (G) Box plot showing the expression level of VC-activated TEs in pollen from WT and dme/+ heterozygous mutant. WT/2 shows half of the WT expression level. Wilcoxon matched-pairs signed-rank test is used. n.s., no significance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Chromosomal view of VC-activated TEs, similar to Figure 1A. (B) Box plots showing the enrichment of euchromatic histone modifications at TEs, similar to Figure 1B. Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.001). H2Bub, H2B ubiquitination. (C) Ends analysis of VC-activated TEs, similar to Figure 1D. (D) Percentages of VC-activated TEs with TSS and/or TTS within indicated distances of VC DME targets.
+
+### Transposon derepression in the VC is caused by DME-directed DNA demethylation
 
 To assess whether TE activation in the VC is caused by DME-mediated DNA demethylation, we examined DNA methylation in VC and sperm at the 114 activated TEs. We found that these TEs have substantially lower CG methylation in the VC than in sperm at and near the TSS (Figure 1D,E), indicative of DME activity. Because TEs tend to be flanked by repeats (Joly-Lopez and Bureau, 2018), the transcriptional termination site (TTS) regions of activated TEs also tend to be hypomethylated in the VC (Figure 1D,E, Figure 1—figure supplement 1C). Examination of DNA methylation in VCs from dme/+ heterozygous plants (dme homozygous mutants are embryonic lethal), which produce a 50:50 ratio of dme mutant and WT pollen, revealed an intermediate level of methylation at TSS and TTS of VC-activated TEs (Figure 1D,E). CHG and CHH methylation is also substantially increased at the TSS (and TTS) of VC-activated TEs in dme/+ VC (Figure 1—figure supplement 1C), consistent with the knowledge that DME demethylates all sequence contexts (Gehring et al., 2006; Ibarra et al., 2012).
 
 Consistent with the above results, 71 of the 114 (62%) VC-activated TEs overlap VC DME targets at their TSSs (Figure 1F, Figure 1—source datas 1 and 2). 92 out of the 114 TEs (81%) have VC DME targets within 500 bp of the TSS (Figure 1F, Figure 1—figure supplement 1D, Figure 1—source data 1). As DNA methylation at/near the TSS has been well-demonstrated to suppress the transcription of genes and TEs in plants and animals (Barau et al., 2016; Eichten et al., 2012; Hollister and Gaut, 2009; Manakov et al., 2015; Meng et al., 2016), our results indicate that DME-directed demethylation is a major mechanism of TE activation in the VC. Consistently, RNA-seq of pollen from dme/+ heterozygous plants showed significantly reduced expression at the 114 VC-activated TEs (Figure 1G, Figure 1—source data 1). As dme/+ heterozygous plants produce half dme mutant and half WT pollen, we expect the transcription of VC-activated TEs to be reduced to roughly half in dme/+ pollen. The 114 VC-activated TEs are transcribed at levels close to this expectation (Figure 1G), with the median ratio of their transcription in dme/+ versus WT pollen being 0.43 (Figure 1—source data 1).
 
-## Vegetative-cell-expressed H1 impedes DME from accessing heterochromatic transposons
+### Vegetative-cell-expressed H1 impedes DME from accessing heterochromatic transposons
 
 We next tested our hypothesis that the lack of histone H1 in the VC (Hsieh et al., 2016) allows heterochromatin to be accessible by DME. We first examined the developmental timing of H1 depletion during microspore and pollen development using GFP translational fusion lines (Hsieh et al., 2016; She et al., 2013). There are three H1 homologs in Arabidopsis, with H1.1 and H1.2 encoding the canonical H1 proteins, and H1.3 expressed at a much lower level and induced by stress (Rutowicz et al., 2015). H1.1- and H1.2- GFP reporters exhibit the same expression pattern: present in early microspore nucleus but absent in the late microspore stage, and remaining absent in the VC nucleus while present in the generative cell and subsequent sperm nuclei (Figure 2A). H1.3 is not detectable in either microspore or pollen (Figure 2A). These results are consistent with our previous observations, confirming that H1 is absent in the VC (Hsieh et al., 2016), and demonstrating that H1 depletion begins at the late microspore stage.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Confocal images showing H1 localization under native promoter (A) and VC-specific promoter (pVC, B) during male gametogenesis. Msp, microspore; BCP, bicellular pollen; TCP, tricellular pollen. Bars, 5 μm. All pVC::H1.1-mRFP (short as pVC::H1) refers to line #2. (C) Ends analysis of all TEs or genes in VCs from pVC::H1 (line #2) and WT. (D–E) Kernel density plots illustrating frequency distribution of methylation differences in 50 bp windows between VCs from pVC::H1 and WT (D), and between WT sperm (Spm) and VC (E). (F) Snapshots showing CG methylation difference between the indicated cell types. Arrows point to DME targets that are hypermethylated by pVC::H1. (G) Snapshots demonstrating CG methylation in sperm and VCs at single-nucleotide resolution, with the cytosine most hypomethylated by DME marked in red. VC DME targets are underlined in black. (H) Scatter plot illustrating CG methylation differences between the indicated cell types at H1 hyperDMRs. 82.25% of H1 hyperDMRs show significant increase in sperm in comparison to VCs. (I) Box plot illustrating H3K9me2 level at VC DME targets that are significantly hypermethylated in pVC::H1 (H1-inhibited) or not (H1-independent), respectively. Difference between the two groups is significant (Kolmogorov-Smirnov test p<0.001). (J) VC DME targets were grouped according to H3K9me2 levels, aligned at the most demethylated cytosine (dashed lines), and plotted for average CG methylation difference as indicated in each 10 bp interval (left). Similarly, CG methylation in pVC::H1 and WT VCs was plotted for the group with the lowest and highest H3K9me2, respectively. Spm, sperm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** pVC::H1 (pLAT52::H1-mRFP line #2) plants show reduced silique length (A) and an increased proportion of malformed pollen grains (B), which are indicated by red arrows in the SEM image (C). (D) Box plot showing the germination rate of the indicated genotypes. Statistics: (B), Student’s t test p<10−10, n = 17, mean ± SD are shown; (D), Kolmogorov-Smirnov test p<0.01, n = 8. Bars: (A), 1 cm; (C), 20 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A,C,D) Kernel density plots showing frequency distribution of methylation differences between VCs from pVC::H1 and WT in all 50 bp windows (blue traces) and windows overlapping VC DME targets (orange traces). (B) Ends analysis of DME-targeted TEs in VCs from pVC::H1 (line #2) and WT.
 
 To understand how H1 affects DME activity, we ectopically expressed H1 in the VC. To ensure H1 incorporation into VC chromatin, we used the pLAT52 promoter, which is expressed from the late microspore stage immediately prior to Pollen Mitosis 1, and is progressively upregulated in VC during later stages of pollen development (Eady et al., 1994; Grant-Downton et al., 2013). Using pLAT52 to drive the expression of H1.1 tagged with mRFP (simplified as pVC::H1), we observed continuous H1-mRFP signal in the VC at the bicellular and tricellular pollen stages, while the signal was undetectable in the generative cell and sperm (Figure 2B). H1-mRFP signal was also undetectable in late microspores (Figure 2B), probably due to the low activity of pLAT52 at this stage (Eady et al., 1994). Notably, we found H1 expression in VC leads to shortened siliques, a substantial proportion of malformed pollen, and reduced pollen germination rate (Figure 2—figure supplement 1A–D), suggesting the depletion of H1 in the VC is important for pollen fertility.
 
@@ -63,9 +83,17 @@ Across the genome, we found 2964 differentially methylated regions (DMRs) that a
 
 Our results demonstrate that H1 hyperDMRs are primarily caused by the inhibition of DME. However, only 3066 out of 11896 (26%) VC DME targets have significantly more CG methylation in the VC of pVC::H1 than WT (p<0.001, Fisher’s exact test; Figure 1—source data 2), indicating that VC-expressed H1 impedes DME at a minority of its genomic targets. These H1-impeded DME targets are heterochromatic and significantly enriched in H3K9me2 compared with H1-independent DME targets (Figure 2I). To further examine the link with heterochromatin, we aligned all VC DME target loci at the most hypomethylated cytosine, and separated them into five groups by H3K9me2 levels (Figure 2J). pVC::H1-induced hypermethylation peaks where DME-mediated hypomethylation peaks, but is apparent only in the most heterochromatic group (highest H3K9me2) of DME target loci (Figure 2J). Taken together, our results demonstrate that developmental removal of H1 from the VC allows DME to access heterochromatin.
 
-## H1 represses transposons via methylation-dependent and independent mechanisms
+### H1 represses transposons via methylation-dependent and independent mechanisms
 
 Given the importance of H1 removal for DME-directed DNA demethylation and the well-demonstrated role of DME demethylation in regulating gene expression (Choi et al., 2002; Ibarra et al., 2012; Schoft et al., 2011), we investigated the contribution of H1 to gene regulation in pollen. RNA-seq was performed using pollen from the pVC::H1 line (#2), which showed strong H1 expression in VC (Figures 2B and 3A). Only a small fraction of pollen-expressed genes (3%; 89 out of 2845) is differentially expressed (fold change >2; p<0.05, likelihood ratio test) between pVC::H1 and WT (Figure 3B, Figure 3—source data 1). Among these 89 genes, 58 (65%) are suppressed by H1 expression in the VC, and 31 (35%) are activated (Figure 3B, Figure 3—source data 1). 85 out of these 89 genes (96%) do not overlap DME targets within 500 bp of the TSS, hence the effect of H1 on their expression is probably not mediated by DME. Among the four genes that overlap DME targets within 500 bp of the TSS, two genes gain a small amount of methylation at the overlapping DME targets and are suppressed in pVC::H1 pollen (Figure 3—figure supplement 1, Figure 3—source data 1), hence are possibly suppressed by H1 via the inhibition of DME.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig3-v2.jpg)
+
+**Figure 3.:** pVC::H1 refers to line #2 except as specified in A) and F). (A,F) quantitative RT-PCR demonstrating H1.1 (A) or TE (F) expression in pollen from WT and two independent pVC::H1 transgenic lines. Relative expression is calculated by normalizing to WT (WT = 1). Student’s t test *p<0.05, **p<0.01, ***p<0.001; ns, not significant; n = 3; mean ± SD are shown. (B,D) Scatter plot illustrating the expression (Log2TPM) of TEs or genes in WT and pVC::H1 pollen. Red and green dots indicate significant down- and up-regulation in pVC::H1 compared to WT (|fold change| > 2, marked by dashed lines; likelihood ratio test p<0.05), respectively. (C) Box plots illustrating H3K9me2 enrichment and H1 occupancy at endosperm DME targets which are within 500 bp of the TSS of imprinted genes, or VC DME targets inhibited by pVC::H1 (refer to Figure 2I). Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.001). (E) Snapshots showing the expression (Log2RPKM) of 3 example H1-repressed TEs in WT and pVC::H1 pollen. Rep, biological replicate. (G) Chromosomal view of H1-repressed TEs, similar to Figure 1A. (H) Box plots illustrating the length, H3K9me2 enrichment, and H1 occupancy at two groups of VC-activated TEs. Difference between the two datasets compared for each feature is significant (Kolmogorov-Smirnov test p<0.05 for length, and <0.001 for others). (I) Percentages of TEs classified by superfamily.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42530/elife-42530-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Top two traces show expression (Log2RPKM) in pVC::H1 (line #2) or WT pollen; three traces at the bottom show differential DNA methylation between pVC::H1 (line #2) and WT VC. The red lines indicate VC DME targets.
 
 Because DME regulates the expression of imprinted genes in the endosperm (Choi et al., 2002; Hsieh et al., 2011; Ibarra et al., 2012), we specifically examined the imprinted genes to further investigate the role of VC H1 removal in regulating pollen gene transcription. Out of the 640 known imprinted genes (Gehring et al., 2011; Hsieh et al., 2011; Pignatta et al., 2014; Wolff et al., 2011), 85 overlap endosperm DME targets within 500 bp of their TSS (Figure 3—source data 2). Because DME targets different loci in the VC and CC (Ibarra et al., 2012), we subsequently examined if these 85 putative DME-regulated imprinted genes are also subject to DME demethylation in the VC. 63 of these genes also overlap VC DME targets within 500 bp of their TSS, none of which is differentially expressed in pVC::H1 pollen compared with WT pollen (Figure 3—source data 2), showing that transcription of these genes in pollen is unlikely regulated by H1. This is not surprising, because only 8 out of these 63 genes are expressed in WT pollen (Figure 3—source data 2), and H1 preferentially regulates heterochromatic DME targets (Figures 2I,J and 3G), whereas DME targets involved in gene regulation are typically euchromatic sites next to genes (Figure 3C). Consistently, DME targets likely regulating imprinted genes are associated with significantly less H1 in somatic tissues than the VC DME targets that are dependent on H1 (Figure 3C).
 
@@ -77,7 +105,7 @@ In support of the hypothesis that H1 represses VC TE expression by blocking DME,
 
 **Figure 4.:** (A) Heat map demonstrating DNA methylation differences between pVC::H1 and WT VCs within 500 bp of the TSS of H1-repressed TEs. Asterisks mark TEs whose suppression is not caused by changes in DNA methylation. Data are sorted in descending order based on CG methylation difference for upper and lower panels, respectively. (B,C) Snapshots showing the expression and DNA methylation of representative TEs suppressed by pVC::H1 via methylation-dependent (B) and -independent (C) mechanisms, respectively. Spm, sperm.
 
-## Depletion of H1 decondenses heterochromatin during male gametogenesis
+### Depletion of H1 decondenses heterochromatin during male gametogenesis
 
 H1 depletion and TE activation in the VC are accompanied by loss of cytologically detectable heterochromatin (Baroux et al., 2011; Ingouff et al., 2010; Schoft et al., 2009). We therefore tested whether H1 contributes to heterochromatin condensation in plant cells. Immunostaining of leaf nuclei showed that H1 co-localizes with H3K9me2 in highly-compacted heterochromatic foci, known as chromocenters (Figure 5A). Furthermore, we found that chromocenters become dispersed in the nuclei of h1 mutant rosette leaves (Figure 5B). These observations demonstrate that H1 is required for heterochromatin condensation in plants.
 
@@ -107,19 +135,197 @@ During the ongoing arms race between TEs and their hosts, it may be difficult to
 
 ## Materials and methods
 
-## Plant materials and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>H1.1</td>
+      <td>NA</td>
+      <td>AT1G06760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (A. thaliana)</td>
+      <td>H1.2</td>
+      <td>NA</td>
+      <td>AT2G30620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (A. thaliana)</td>
+      <td>DEMETER</td>
+      <td>NA</td>
+      <td>AT5G04560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>h1.1–1</td>
+      <td>Nottingham Arabidopsis Stock Centre</td>
+      <td>SALK_128430C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>h1.2–1</td>
+      <td>GABI-Kat</td>
+      <td>GABI_406H11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>dme-7</td>
+      <td>Nottingham Arabidopsis Stock Centre</td>
+      <td>SALK_107538</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pLAT52::H1.1-mRFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>LAT52 promoter from tomato is used</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pMSP1::H1.1-mRFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>MSP1 (AT5G59040) promoter is used</td>
+    </tr>
+    <tr>
+      <td>Biological sample (A. thaliana)</td>
+      <td>sperm nuclei from Col-0</td>
+      <td>this paper</td>
+      <td></td>
+      <td>bisulfite-sequencing</td>
+    </tr>
+    <tr>
+      <td>Biological sample (A. thaliana)</td>
+      <td>vegetative nuclei from Col-0</td>
+      <td>this paper</td>
+      <td></td>
+      <td>bisulfite-sequencing</td>
+    </tr>
+    <tr>
+      <td>Biological sample (A. thaliana)</td>
+      <td>vegetative nuclei from pLAT52::H1.1-mRFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>bisulfite-sequencing</td>
+    </tr>
+    <tr>
+      <td>Biological sample (A. thaliana)</td>
+      <td>pollen from Col-0</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RNA-sequencing</td>
+    </tr>
+    <tr>
+      <td>Biological sample (A. thaliana)</td>
+      <td>pollen from pLAT52::H1.1-mRFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RNA-sequencing</td>
+    </tr>
+    <tr>
+      <td>Biological sample (A. thaliana)</td>
+      <td>pollen from dme-7/+</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RNA-sequencing</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>Abcam</td>
+      <td>Cat# ab290, RRID:AB_303395</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9me2</td>
+      <td>Abcam</td>
+      <td>Cat# ab1220, RRID:AB_449854</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488- secondaries</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-11034, RRID:AB_2576217</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 555- secondaries</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A28180, RRID:AB_2536164</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mikado</td>
+      <td>Venturini et al., 2018</td>
+      <td>RRID:SCR_016159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kallisto</td>
+      <td>Bray et al., 2016</td>
+      <td>RRID:SCR_016582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sleuth</td>
+      <td>Pimentel et al., 2017</td>
+      <td>RRID:SCR_016883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# H3570</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# D1306, RRID:AB_2629482</td>
+      <td>(100 ng/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant materials and growth conditions
 
 A. thaliana plants were grown under 16 hr light/8 hr dark in a growth chamber (20°C, 80% humidity). All plants used are of the Col-0 ecotype. pH1.1::H1.1-eGFP, pH1.2::H1.2-eGFP, dme-7, and the h1 (h1.1 h1.2 double) mutant lines were described previously (Schoft et al., 2011; She et al., 2013; Zemach et al., 2013). pLAT52::H1.1-mRFP and pMSP1::H1.1-mRFP were constructed with MultiSite Gateway System into the destination vector pK7m34GW (Invitrogen). The BP clones pDONR-P4-P1R-pLAT52 and pDONR-P2R-P3-mRFP were kindly provided by Prof. David Twell (Leicester University, UK) (Eady et al., 1994). MSP1 promoter was cloned into pDONR-P4-P1R as described previously (Honys et al., 2006). WT plants were transformed via floral dip (Clough and Bent, 1998), and T2 or T3 plants homozygous for the transgene were used in this study.
 
-## Pollen extraction, RNA sequencing and quantitative RT-PCR
+### Pollen extraction, RNA sequencing and quantitative RT-PCR
 
 Open flowers were collected for pollen isolation in Galbraith buffer (45 mM MgCl2, 30 mM sodium citrate, 20 mM MOPS, 1% Triton-X-100, pH 7.0) by vortexing at 2000 rpm for 3 min. The crude fraction was filtered through a 40 μm cell strainer to remove flower parts, and subsequently centrifuged at 2600 g for 5 min to obtain pollen grains. RNA was extracted from pollen grains with RNeasy Micro Kit (Qiagen) following manufacturer’s instructions. RNA-sequencing libraries were prepared using Ovation RNA-seq Systems 1–16 for Model Organisms (Nugen Technologies), and sequenced on the Hiseq 2500 (Illumina) instrument at the UC Berkeley Vincent J. Coates Genomics Sequencing Laboratory or on the Nextseq 500 (Illumina) at the John Innes Centre. Quantitative RT-PCR (qRT-PCR) was performed as described previously (Walker et al., 2018), and TUA2 was used as an internal control. Primers for qRT-PCR are listed in Supplementary file 2.
 
-## In vitro pollen germination
+### In vitro pollen germination
 
 The experiment was performed as described previously with some modifications (Rodriguez-Enriquez et al., 2013). Pollen from three newly opened flowers for individual plants were brushed on cellulose membrane sitting on germination medium (18% sucrose, 0.01% boric acid, 1 mM CaCl2, 1 mM Ca(NO3)2, 1 mM KCl, 0.25 mM spermidine, pH 8.0 with KOH adjusted, 0.5% agarose) in small petri dishes. Petri dishes were placed in a box with a piece of wet tissue at the bottom to keep humidity. The boxes were incubated in Sanyo cabinet (MLR-351H) at 21°C for 4 hr. 300 pollen grains were counted from each cellulose membrane and eight replicates for each genotype. Pollen germination was counted by using ImageJ.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 TE transcript annotation was created using RNA-seq data from four biological replicates of pollen. Tophat2, Hisat, and STAR were used to align RNA-seq reads to the TAIR10 genome, and transcripts were assembled using CLASS2, StringTie, and Cufflinks, respectively. Assembled transcripts were selected by Mikado using default options except that the BLAST and Transdecoder steps were disabled (Venturini et al., 2018). As a result, 21381 transcripts (called superloci; GSE120519) were identified.
 
@@ -127,38 +333,38 @@ To identify VC-activated TEs, we first refined the list of superloci by selectin
 
 To identify TEs and genes that are suppressed by H1 in the VC, we analyzed RNA-seq data from WT and pLAT52::H1.1-mRFP line #2 (short as pVC::H1 unless specified otherwise) pollen using Kallisto and Sleuth as described above. Significant differential expression was defined with a fold change at least two and a p-value less than 0.05. H1-repressed TEs were listed in Figure 1—source data 1.
 
-## Whole-genome bisulfite sequencing and analysis
+### Whole-genome bisulfite sequencing and analysis
 
 Vegetative and sperm nuclei were isolated via FACS as described previously (Ibarra et al., 2012). Bisulfite-sequencing libraries were prepared as previously described (Walker et al., 2018). Sequencing was performed on Hiseq 2500 (Illumina) at the UC Berkeley Vincent J. Coates Genomics Sequencing Laboratory, Hiseq 4000 (Illumina) at Novogene Ltd. and Harvard University, and Nextseq 500 (Illumina) at Cambridge University Biochemistry Department and the John Innes Centre. Sequenced reads (100, 75, or 50 nt single-end) were mapped to the TAIR10 reference genome, and cytosine methylation analysis was performed as previously described (Ibarra et al., 2012).
 
-## Identification of DME targets and H1 hyperDMRs in the VC
+### Identification of DME targets and H1 hyperDMRs in the VC
 
 As all CG hypomethylation in the VC in comparison to sperm is caused by DME (Ibarra et al., 2012), we identified VC DME targets via detecting CG differentially methylated regions (DMRs) that are hypermethylated in sperm in comparison to the VC. DMRs were identified first by using MethPipe (settings: p=0.05 and bin = 100) (Song et al., 2013), and subsequently retained if the fractional CG methylation across the whole DMR was at least 0.2 higher in sperm than the VC. The refined DMRs were merged to generate larger DMRs if they occurred within 300 bp. Finally, merged DMRs were retained if they cover at least 100 bp, and the fractional CG methylation across the whole DMR was significantly (Fisher’s exact test p<0.01) and substantially (>0.2) higher in sperm than the VC. This resulted in the identification of 11896 VC DME targets (Figure 1—source data 2).
 
 H1 hyperDMRs were identified using the same criteria, except comparing CG methylation in VCs from pVC::H1 and WT. In total, 2964 H1 hyperDMRs were identified (Figure 2—source data 1).
 
-## Box plots
+### Box plots
 
 Box plots compare the enrichment of genomic or chromatin features among TEs (Figures 1B and 3G, Figure 1—figure supplement 1B) or VC DME targets (Figure 2I) as described in corresponding figure legends. ChIP-seq data for H3K9me2 (Stroud et al., 2014), and ChIP-chip data for H1 (Rutowicz et al., 2015), H3K27me3 (Kim et al., 2012), and other histone modifications (Roudier et al., 2011) were used.
 
-## Density plots
+### Density plots
 
 All DNA methylation kernel density plots compare fractional methylation within 50 bp windows. We used windows with at least 20 informative sequenced cytosines and fractional methylation of at least 0.5 (Figure 2D, Figure 2—figure supplement 2) or 0.7 (Figure 2E) for CG context, and 0.4 and 0.1 for CHG and CHH context, respectively, in at least one of the samples being compared.
 
-## Meta analysis (ends analysis)
+### Meta analysis (ends analysis)
 
 Ends analysis for TEs and genes was performed as described previously (Ibarra et al., 2012). Similarly, ends analysis of TE transcripts was performed using the annotation of VC-activated TEs described above (Figure 1—source data 1). DNA methylation data from Ibarra et al. (2012) was used.
 
 In Figure 2J, DME sites were aligned at the most demethylated cytosine, and average CG methylation levels for each 10 bp interval at both sides were plotted. To identify individual hypomethylation sites created by DME, we first obtained the 50 bp windows with a CG methylation difference larger than 0.5 between sperm and VC (sperm – VC >0.5 and Fisher’s exact test p<0.001). Windows were then merged if they occurred within 200 bp. Merged windows were retained for further analysis if the fractional CG methylation across the whole site was 0.2 greater in sperm than VC (sperm – VC >0.2 and Fisher’s exact test p<0.0001). This resulted in 13610 DME sites, which were separated into five groups according to H3K9me2 level (Stroud et al., 2014):<2.5, 2.5–4.3, 4.3–6.5, 6.5–10.5, and >10.5 (Figure 2J). The most demethylated cytosine within each site was identified if it had the greatest differential methylation in sperm than VC among cytosines in the CG context (sperm – VC >0.2, and Fisher’s exact test p<0.001) and was sequenced at least 10 times.
 
-## DNA methylation analysis of H1-repressed TEs
+### DNA methylation analysis of H1-repressed TEs
 
 Differential methylation at a 1000 bp region centered upon the TSS of H1-repressed TEs was calculated between VCs of pVC::H1 and WT (Figure 4A). TEs whose differential methylation is significant (Fisher’s exact test p<0.001) and larger than 0.2 (in CG context), 0.1 (in CHG context), or 0.05 (in CHH context) are illustrated in the upper panel in Figure 4A.
 
-## Confocal and scanning electron microscopy
+### Confocal and scanning electron microscopy
 
 Microspores and pollen were isolated as described previously (Borges et al., 2012), stained with Hoechst or DAPI, and examined under a Leica SP8 confocal microscope. Scanning electron microscopy was performed on a Zeiss Supra 55 VP FEG.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescence was performed as described previously with small modifications (Yelagandula et al., 2014). Rosette leaves from 3-week-old plants were fixed in TRIS buffer with 4% paraformaldehyde (10 mM Tris-HCl pH 7.5, 10 mM EDTA, 100 mM NaCl) for 20 min. After being washed with TRIS buffer twice, the fixed leaves were chopped with razor blades in 1 mL of lysis buffer (15 mM Tris pH 7.5, 2 mM EDTA, 0.5 mM spermine, 80 mM KCl, 20 mM NaCl, 0.1% Triton X-100) and filtered through a 35 μm cell strainer. Nuclei were pelleted via centrifugation at 500 g for 3 min and resuspended in 100 μL of lysis buffer. Next, 10 μL was spotted onto coverslips, air-dried, and post-fixed in PBS with 4% paraformaldehyde for 30 min. After being washed with PBS twice, coverslips were incubated in blocking buffer (PBS with 1% BSA) at 37°C for 30 min and then incubated in blocking buffer with primary antibodies at 4°C overnight (Mouse anti-H3K9me2 Abcam ab1220, 1:100; Rabbit anti-GFP Abcam ab290, 1:100). After being washed with PBS three times, coverslips were incubated in PBS with secondary antibodies at 37°C for 30 min, and then washed with PBS three times again before being counterstained and mounted in Vectashield mounting media with DAPI (Vector H-1200).

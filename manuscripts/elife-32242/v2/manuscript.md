@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.32242.001 Eukaryotic cells internalize transmembrane receptors via clathrin-mediated endocytosis, but it remains unclear how the machinery underpinning this process is regulated. We recently discovered that membrane-associated muniscin proteins such as FCHo and SGIP initiate endocytosis by converting the AP2 clathrin adaptor complex to an open, active conformation that is then phosphorylated (Hollopeter et al., 2014). Here we report that loss of ncap-1 , the sole C. elegans gene encoding an adaptiN Ear-binding Coat-Associated Protein (NECAP), bypasses the requirement for FCHO-1. Biochemical analyses reveal AP2 accumulates in an open, phosphorylated state in ncap-1 mutant worms, suggesting NECAPs promote the closed, inactive conformation of AP2. Consistent with this model, NECAPs preferentially bind open and phosphorylated forms of AP2 in vitro and localize with constitutively open AP2 mutants in vivo. NECAPs do not associate with phosphorylation-defective AP2 mutants, implying that phosphorylation precedes NECAP recruitment. We propose NECAPs function late in endocytosis to inactivate AP2.
+Eukaryotic cells internalize transmembrane receptors via clathrin-mediated endocytosis, but it remains unclear how the machinery underpinning this process is regulated. We recently discovered that membrane-associated muniscin proteins such as FCHo and SGIP initiate endocytosis by converting the AP2 clathrin adaptor complex to an open, active conformation that is then phosphorylated (Hollopeter et al., 2014). Here we report that loss of ncap-1, the sole C. elegans gene encoding an adaptiN Ear-binding Coat-Associated Protein (NECAP), bypasses the requirement for FCHO-1. Biochemical analyses reveal AP2 accumulates in an open, phosphorylated state in ncap-1 mutant worms, suggesting NECAPs promote the closed, inactive conformation of AP2. Consistent with this model, NECAPs preferentially bind open and phosphorylated forms of AP2 in vitro and localize with constitutively open AP2 mutants in vivo. NECAPs do not associate with phosphorylation-defective AP2 mutants, implying that phosphorylation precedes NECAP recruitment. We propose NECAPs function late in endocytosis to inactivate AP2.
 
 ## Introduction
 
@@ -36,31 +36,39 @@ Using an unbiased genetic screen in C. elegans, we have unveiled a novel role fo
 
 ## Results
 
-## Loss of ncap-1 suppresses fcho-1 mutants
+### Loss of ncap-1 suppresses fcho-1 mutants
 
 By mutagenizing worms lacking fcho-1 and selecting for offspring that outcompete their siblings (Hollopeter et al., 2014), we isolated nine independent loss-of-function mutations in ncap-1, which encodes the sole adaptiN Ear-binding Coat-Associated Protein (NECAP) in C. elegans (Figure 1A). Worms with null mutations in fcho-1 exhibit reduced fitness and require twice as long as wild type worms to populate a culture plate and consume the bacterial food source. Additionally, they display a distinctive ‘jowls’ phenotype that is indicative of compromised AP2 activity (Gu et al., 2013; Hollopeter et al., 2014). Loss of NCAP-1 suppressed the jowls phenotype (Figure 1B) and ameliorated the fitness of fcho-1 mutants (Figure 1C). Expression of fluorescently-tagged NCAP-1 in fcho-1 ncap-1 double mutants restored the fcho-1 phenotype (Figure 1B and C), confirming that suppression of fcho-1 is due to loss of NCAP-1 function.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32242/elife-32242-fig1-v2.jpg)
+
+**Figure 1.:** (A) Gene model of the C. elegans ncap-1 locus. Boxes represent exons. Mutations isolated from the fcho-1 suppressor screen are indicated. The deletion allele, mew39, was used throughout this study as ncap-1. The neighboring gene (Y110A2AR.1) is predicted to encode a receptor expression-enhancing protein (REEP). (B) Animal heads showing jowls phenotype (red arrows). Anterior is up. WT, wild type; RFP:NCAP-1, red fluorescent protein-tagged NCAP-1 single-copy transgene. (C) Starvation assay. Data represent days required for worms to reproduce and consume bacterial food source (top schematic). Bars indicate mean ±SEM for n = 10 biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32242/elife-32242-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) AP2 is comprised of two large adaptins (α and β2) and two smaller subunits (µ2 and σ2). The adaptins, in turn, are comprised of appendage (ear), hinge (linker) and trunk domains. Phosphorylation site and binding pockets are diagrammed. (B) Cartoon representations of the closed (Collins et al., 2002) and open (Jackson et al., 2010 and Kelly et al., 2014) AP2 conformations. The core complex (dashed line) lacks ears and linkers. (C) Table of AP2 mutations used in this study.
 
 Previously we observed that suppression of fcho-1 correlates with recovery of AP2 activity (Hollopeter et al., 2014). To evaluate if loss of NCAP-1 also increases AP2 activity in fcho-1 mutants, we imaged GFP-tagged AP2 α adaptin (APA-2:GFP) in macrophagic cells called coelomocytes that exhibit robust levels of endocytosis (Sato et al., 2014). Muniscins, such as FCHO-1, stabilize AP2 on the plasma membrane to promote its incorporation into presumptive pits, or clusters (Cocucci et al., 2012; Henne et al., 2010; Hollopeter et al., 2014). We performed Fluorescence Recovery After Photobleaching (FRAP) to quantify AP2 stability on the coelomocyte membrane. In the fcho-1 mutants, fluorescent AP2 recovers approximately three times faster than in wild type worms, indicating that AP2 association with the membrane is destabilized (Hollopeter et al., 2014). Loss of NCAP-1 slowed AP2 kinetics in fcho-1 animals (Figure 2A), suggesting that AP2 is incorporated into longer-lived structures. Indeed, we observed improved AP2 clustering in some cells, but the trend was not significant (Figure 2B). Endocytosis of an AP2-dependent model cargo is compromised in fcho-1 mutants (Hollopeter et al., 2014) whereas cargo internalization was partially rescued in fcho-1 ncap-1 worms (Figure 2C). These data indicate that a loss of NCAP-1 improves AP2 activity in fcho-1 mutants.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32242/elife-32242-fig2-v2.jpg)
 
-**Figure 2.:** fcho-1 mutants.(A) FRAP analysis of GFP-tagged AP2 α adaptin (APA-2:GFP) on membranes of coelomocytes (top schematic). Time constants (tau) of the fluorescence recovery are plotted. (B) AP2 localization in coelomocytes. Representative confocal images of coelomocytes in worms expressing APA-2:GFP. Micrographs (top) are representative maximum projections of Z-slices through approximately half of a cell. Data represent the coefficient of variance (%CV) of pixel intensities for individual cells. (C) Artificial AP2 cargo assay. Representative confocal micrographs of intestinal cells (middle) in worms expressing a GFP-tagged cargo (top schematic). TM, transmembrane domain. The average pixel intensity along a basolateral membrane was measured (bottom). (A–C) Bars indicate mean ±SEM for n ≥ 8 biological replicates. *p<0.05, **p<0.001, not significant (n.s.), unpaired, two-tailed T-test. (D) µ2 protease-sensitivity assay. Western blot analysis of whole worm lysates was used to quantify the amount of full-length µ2 (anti-HA, 50 kDa) before (pre TEV, bottom blot) and after protease induction (post TEV, top blot). Band intensities were compared to a tubulin loading control and normalized to the fcho-1(+) ncap-1(+) ratio (values below). (E) µ2 phosphorylation assay. Western blot analysis of whole worm lysates to quantify phosphorylated µ2 (top blot) relative to total µ2 subunit (bottom blot). Values indicate band intensity ratios of phospho µ2 compared to total µ2, normalized to the fcho-1(+) ncap-1(+) ratio (values below). (D and E) Blots are representative of ≥3 biological replicates. +, wild type allele; -, deletion allele.
+**Figure 2.:** (A) FRAP analysis of GFP-tagged AP2 α adaptin (APA-2:GFP) on membranes of coelomocytes (top schematic). Time constants (tau) of the fluorescence recovery are plotted. (B) AP2 localization in coelomocytes. Representative confocal images of coelomocytes in worms expressing APA-2:GFP. Micrographs (top) are representative maximum projections of Z-slices through approximately half of a cell. Data represent the coefficient of variance (%CV) of pixel intensities for individual cells. (C) Artificial AP2 cargo assay. Representative confocal micrographs of intestinal cells (middle) in worms expressing a GFP-tagged cargo (top schematic). TM, transmembrane domain. The average pixel intensity along a basolateral membrane was measured (bottom). (A–C) Bars indicate mean ±SEM for n ≥ 8 biological replicates. *p<0.05, **p<0.001, not significant (n.s.), unpaired, two-tailed T-test. (D) µ2 protease-sensitivity assay. Western blot analysis of whole worm lysates was used to quantify the amount of full-length µ2 (anti-HA, 50 kDa) before (pre TEV, bottom blot) and after protease induction (post TEV, top blot). Band intensities were compared to a tubulin loading control and normalized to the fcho-1(+) ncap-1(+) ratio (values below). (E) µ2 phosphorylation assay. Western blot analysis of whole worm lysates to quantify phosphorylated µ2 (top blot) relative to total µ2 subunit (bottom blot). Values indicate band intensity ratios of phospho µ2 compared to total µ2, normalized to the fcho-1(+) ncap-1(+) ratio (values below). (D and E) Blots are representative of ≥3 biological replicates. +, wild type allele; -, deletion allele.
 
-## Open and phosphorylated AP2 accumulates in ncap-1 mutants
+### Open and phosphorylated AP2 accumulates in ncap-1 mutants
 
 We previously discovered that AP2 activity in fcho-1 mutants is also partially restored by amino acid substitutions that specifically destabilize the closed conformation of the adaptor complex, henceforth referred to as ‘open AP2 mutations’ (Hollopeter et al., 2014). Because loss of NCAP-1 phenotypically mimicked open AP2 mutations, we tested whether AP2 also dwells in the open state in fcho-1 ncap-1 worms. We evaluated AP2 conformation using an in vivo protease-sensitivity assay (Hollopeter et al., 2014). Briefly, a Tobacco Etch Virus (TEV) protease site was inserted into a surface loop of the µ2 subunit that becomes more exposed when AP2 is opened (Jackson et al., 2010; Matsui and Kirchhausen, 1990). Following induction of TEV protease expression, the ensemble protease-sensitivity of the AP2 complexes is determined using western blot analysis of µ2 in whole worm lysates. In fcho-1 worms, AP2 dwells in a protease-insensitive, closed state (Hollopeter et al., 2014) and AP2 was more protease-sensitive (open) in ncap-1 mutants (Figure 2D). These results explain the phenotypic rescue of fcho-1 mutants and indicate that AP2 accumulates in an open state in the absence of NCAP-1.
 
 Phosphorylation of µ2 correlates with open AP2 in C. elegans (Hollopeter et al., 2014). Because loss of NCAP-1 increases AP2 protease-sensitivity, we wondered whether µ2 phosphorylation might also be elevated. We quantified the phosphorylation status of AP2 in vivo by blotting worm lysates with an antibody specific to the phosphorylated threonine in µ2 (T160). Loss of NCAP-1 resulted in T160 phosphorylation levels greater than in wild type worms (Figure 2E). Thus, AP2 adopts a hyper-phosphorylated, open state without the action of NCAP-1.
 
-## Negative regulation of AP2 is a conserved function of NECAPs
+### Negative regulation of AP2 is a conserved function of NECAPs
 
 To determine if the ability to inactivate AP2 is a conserved function of NECAPs in the context of our C. elegans system, we expressed heterologous NECAPs as single-copy transgenes in fcho-1 ncap-1 mutant worms. Mouse NECAP1 and NECAP2, as well as a NECAP from the multicellular fungus, Sphaerobolus stellatus, recapitulated the reduced fitness of fcho-1 mutants (Figure 3A) and caused AP2 to adopt a more closed, protease-insensitive state (Figure 3B). It appears that NECAPs have retained the ability to negatively regulate AP2, at least in C. elegans.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32242/elife-32242-fig3-v2.jpg)
 
-**Figure 3.:** fcho-1 ncap-1 worms.RFP-tagged NECAPs were expressed as single copy transgenes in fcho-1 ncap-1 worms. Ce, C. elegans; Mm, M. musculus; Ss, Sphaerobolus stellatus (multicellular fungus). +, wild type allele; -, deletion allele. (A) Starvation assay performed as in Figure 1C. Bars represent mean ±SEM for n ≥ 7 biological replicates. **p<0.001, unpaired, two-tailed T-test. (B) µ2 protease-sensitivity assay as in Figure 2D, except a flag-tagged µ2 subunit was used. Band intensities were compared to a histone loading control and normalized to the fcho-1(+) ncap-1(+) ratio (values below). Blot is representative of 2 biological replicates.
+**Figure 3.:** RFP-tagged NECAPs were expressed as single copy transgenes in fcho-1 ncap-1 worms. Ce, C. elegans; Mm, M. musculus; Ss, Sphaerobolus stellatus (multicellular fungus). +, wild type allele; -, deletion allele. (A) Starvation assay performed as in Figure 1C. Bars represent mean ±SEM for n ≥ 7 biological replicates. **p<0.001, unpaired, two-tailed T-test. (B) µ2 protease-sensitivity assay as in Figure 2D, except a flag-tagged µ2 subunit was used. Band intensities were compared to a histone loading control and normalized to the fcho-1(+) ncap-1(+) ratio (values below). Blot is representative of 2 biological replicates.
 
-## NECAPs bind the open and phosphorylated AP2 core in vitro
+### NECAPs bind the open and phosphorylated AP2 core in vitro
 
 We investigated the possibility that NECAPs negatively regulate AP2 via a direct interaction. Indeed, affinity-tagged NECAPs co-purified endogenous AP2 complexes from HEK293 cells (Figure 4A), consistent with previous reports (Ritter et al., 2003). NECAPs are thought to bind the AP2 α adaptin appendage domain and the clathrin binding box in the β2 adaptin hinge region via a C-terminal WXXF motif and an N-terminal PHear domain, respectively (Ritter et al., 2013; Ritter et al., 2003). Because the C-terminal WXXF motif is poorly conserved in C. elegans NCAP-1 (LLDF) and completely absent from the S. stellatus protein (PKRR), it was unclear whether the negative regulation of AP2 by heterologous NECAPs (Figure 3) was mediated via binding to the α appendage. Instead, we were interested to examine whether NECAPs also bind to the AP2 core (Figure 1—figure supplement 1B) because this would offer a direct route to conformational regulation. We purified recombinant vertebrate AP2 cores lacking ears and linkers and tested binding of these cores to recombinant NECAPs from worms and mice (Figure 4B). Interestingly, NECAPs did not bind unmodified AP2 cores (Figure 4B).
 
@@ -70,7 +78,7 @@ We investigated the possibility that NECAPs negatively regulate AP2 via a direct
 
 Because open and phosphorylated AP2s accumulate in ncap-1 mutants, we reasoned that NECAPs might act upon these modified forms of AP2. To test our hypothesis, we introduced a previously-characterized open AP2 mutation in the µ2 subunit (E302K; Figure 1—figure supplement 1C) (Hollopeter et al., 2014) to produce recombinant AP2 cores that dwell in the open state. We also co-expressed AP2 with the kinase domain of AAK1 to purify AP2 cores with phosphorylated µ2(T156) (Höning et al., 2005). When these modified complexes were tested in our pulldown assays, we observed that NECAPs bound both open and phosphorylated AP2 (Figure 4B and C). These data suggest that NECAPs associate with the AP2 complex in a conformation-dependent manner.
 
-## NCAP-1 localizes with constitutively open AP2 in vivo
+### NCAP-1 localizes with constitutively open AP2 in vivo
 
 To corroborate our in vitro pulldown results we sought in vivo evidence that NECAPs associate with open and phosphorylated AP2. In C. elegans, fluorescently-tagged AP2 is enriched at the nerve ring, a major neuropil of bundled axons encircling the pharynx (White et al., 1986) (Figure 5). We used confocal microscopy to observe localization of NCAP-1 tagged with a red fluorescent protein (RFP:NCAP-1) at the nerve ring in live worms. In both wild type and fcho-1 mutant worms, NCAP-1 was not overtly enriched compared to AP2. The low level of NCAP-1 relative to AP2 may indicate that in worms, NCAP-1 is not stably associated with AP2 on membranes. However, introduction of a mutation in µ2 known to generate hyper-phosphorylated, constitutively open AP2 (E306K; Figure 1—figure supplement 1C) (Hollopeter et al., 2014) enhanced localization of NCAP-1 nearly 2-fold (Figure 5). In other words, NCAP-1 was abnormally recruited to the nerve ring in the open AP2 mutant suggesting that NECAPs favor association with activated forms of AP2 in vivo. It is possible that the basal level of localization observed in both wild type and fcho-1 mutants may represent NCAP-1 bound to the AP2 appendages (Ritter et al., 2013; Ritter et al., 2003).
 
@@ -78,15 +86,23 @@ To corroborate our in vitro pulldown results we sought in vivo evidence that NEC
 
 **Figure 5.:** Representative confocal slices (middle) through the approximate center of the nerve ring of worms (top schematic) expressing RFP:NCAP-1 and APA-2:GFP. RFP to GFP signal intensity at the nerve ring is plotted (bottom). Mutations in µ2 are indicated: E306K and R440S, constitutively open AP2; T160A, phosphorylation-defective AP2; see also Figure 1—figure supplement 1C. Bars indicate mean ±SEM for n ≥ 10 biological replicates. **p<0.001, unpaired, two-tailed T-test. au, arbitrary units; +, wild type allele; -, deletion allele.
 
-## AP2 phosphorylation site mutations weaken NECAP binding
+### AP2 phosphorylation site mutations weaken NECAP binding
 
 We were curious whether phosphorylation of AP2 is a prerequisite for NECAP binding. Interestingly, in C. elegans, mutating the phosphorylation site, µ2(T160), to an alanine, isoleucine, proline, or glutamate suppresses fcho-1 and produces an open complex according to the in vivo protease-sensitivity assay (Hollopeter et al., 2014). However, when we purified vertebrate AP2 cores containing the phosphorylation site mutation (T156A; Figure 1—figure supplement 1C) and tested their ability to bind mouse NECAP2, we observed very little interaction in pulldown assays (Figure 4C). This result suggests that NECAPs do not bind phosphorylation-defective AP2. To determine whether the phosphorylation site mutants also impact NCAP-1 association with AP2 in vivo, we examined the localization of RFP:NCAP-1 in µ2(T160A) mutant worms. Compared to mutants with hyper-phosphorylated AP2 (E306K), the T160A mutants had less NCAP-1 at the nerve ring (Figure 5). These results are consistent with the model that NCAP-1 associates with AP2 in a phosphorylation-dependent manner.
 
 The preferential association of NCAP-1 with the hyper-phosphorylated AP2 (E306K) compared to the phosphorylation-defective AP2 (T160A) was not simply due to differences in the extent to which these mutations generate a protease-sensitive, open AP2 complex (Hollopeter et al., 2014). When the E306K and T160A mutations were both present in the same µ2 subunit, less RFP:NCAP-1 was localized to the nerve ring compared to when the E306K mutation was combined with another open AP2 mutation (R440S; Figure 1—figure supplement 1C and Figure 5) (Hollopeter et al., 2014). In other words, the effect of the phosphorylation site mutation was dominant, while the two open AP2 mutations were additive, with respect to NCAP-1 association. Thus, phosphorylation site mutations preclude the association of NCAP-1 with open AP2.
 
-## Missense mutations render NECAPs functionally inactive
+### Missense mutations render NECAPs functionally inactive
 
 In the fcho-1 suppressor screen, we isolated two independent missense mutations in the N-terminal PHear domain of NCAP-1: A29D and S84N (Figure 1A). To investigate the mechanism by which these mutations restore AP2 activity, we engineered them de novo into an RFP:NCAP-1 transgene in an otherwise ncap-1 null background. These modified NECAPs failed to complement ncap-1 mutants (Figure 6A), were unable to restore the closed conformation of AP2 in vivo (Figure 6B), and were not recruited to the nerve ring by open, hyper-phosphorylated AP2 (Figure 6—figure supplement 1A). Importantly, these mutant proteins were not simply unstable; by western blot analysis they appeared to be expressed at levels similar to the wild type version (Figure 6C). We also introduced the homologous mutations into recombinant M. musculus NECAP2 constructs to evaluate AP2 binding using purified components. Even though these mutant NECAPs appeared to be stable and retained the ability to bind open AP2 (E302K), they specifically failed to bind the phosphorylated AP2 core (Figure 6—figure supplement 1B). The in vitro pulldown assays suggest that the primary reason the NCAP-1 missense mutants are inefficiently recruited to the nerve ring by the open AP2 mutation in vivo may be that the corresponding adaptor complexes are also phosphorylated. Taken together, our results further suggest that the NCAP-1 mutants fail to inactivate AP2 because they are unable to bind the phosphorylated AP2 core.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/32242/elife-32242-fig6-v2.jpg)
+
+**Figure 6.:** Amino acid changes isolated from the fcho-1 suppressor screen (Figure 1A) were introduced into an RFP-tagged NCAP-1 transgene in fcho-1 ncap-1 worms. +, wild type allele; -, deletion allele. (A) Starvation assay performed as in Figure 1C. Bars represent mean ±SEM for n ≥ 9 biological replicates. **p<0.001, unpaired, two-tailed T-test. (B) µ2 protease-sensitivity assay as in Figure 3B. (C) Western blot analysis to detect HA epitope on NCAP-1 transgenic proteins. (B and C) Band intensities were compared to a beta actin loading control and normalized to the fcho-1(+) ncap-1(+) ratio (B) or to the transgenic wild type form of NCAP-1 (C) (values below). Blots are representative of 2 biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32242/elife-32242-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal slices of worm nerve rings were acquired and analyzed as for Figure 5. Amino acid changes in µ2 (E306K, constitutively open AP2; see also Figure 1—figure supplement 1C) and in NCAP-1 are indicated. Bars indicate mean ±SEM for n = 10 biological replicates. **p<0.001, unpaired, two-tailed T-test. au, arbitrary units; +, wild type allele; -, deletion allele. (B) In vitro pulldown assays were performed as described in Figure 4B. Missense mutations in Mm NECAP2 bait are indicated (below). +, wild type allele. Data are representative of 1 technical replicate. Band intensities of the α trunk were quantified as in Figure 4 (values above).
 
 ## Discussion
 
@@ -96,17 +112,17 @@ In C. elegans, loss-of-function mutations in ncap-1 bypass the requirement for F
 
 **Figure 7.:** Muniscins allosterically activate AP2 to form a stable association with the membrane. Open AP2 is then phosphorylated on the µ2 subunit by the AP2-associated kinase. NECAPs subsequently bind to open, phosphorylated AP2 and recycle the complex. Generation of the closed form of AP2 presumably involves dephosphorylation and disengagement from the membrane. In the absence of muniscins, AP2 activation is greatly reduced. The fcho-1 suppressor screen isolated three classes of mutations that enable AP2 to remain active in lieu of muniscins (bottom). Each class disrupts the AP2 inactivation pathway and promotes accumulation of AP2 at discrete steps in the cycle (gray arrows).
 
-## fcho-1 suppressors disrupt the AP2 inactivation pathway
+### fcho-1 suppressors disrupt the AP2 inactivation pathway
 
 In the absence of FCHO-1, nematodes exhibit reduced fitness and AP2 dwells in a closed, hypo-phosphorylated state. Using an unbiased genetic screen, we isolated mutations that independently improve the fitness of fcho-1 genetic nulls. We now recognize that these fcho-1 suppressors occur in three distinct classes: dominant missense mutations that disrupt the closed conformation of AP2 (class 1) or mutate the phosphorylation site on µ2 (class 2), and recessive mutations that inactivate NCAP-1 (class 3) (Figure 7). These three classes of mutations appear to rescue fcho-1 by restoring AP2 activity, but we propose that they achieve this through different mechanisms. Previously, the open AP2 mutants (class 1) appeared to behave similarly to the phosphorylation site mutants (class 2) (Hollopeter et al., 2014). However, this study reveals that NECAPs clearly distinguish between these two classes. Open, hyper-phosphorylated AP2 mutants (class 1) appear to recruit NECAPs in excess but must be somewhat resistant to their action in order to sustain AP2 activity in the absence of muniscins. By contrast, phosphorylation site mutants (class 2) appear to bypass the requirement for FCHO-1 by evading NECAP binding altogether. Similar to class 2, mutations that directly disrupt NCAP-1 (class 3) probably enable a basal level of AP2 activity to be sustained by complexes that succeed in attaining the open, phosphorylated state in lieu of allosteric activation by muniscins. Importantly, our data suggest that all three classes of suppressors bypass FCHO-1 by disrupting the process by which AP2 closes. The wealth of mutations in AP2 and NECAP identified in the fcho-1 suppressor screen, combined with our biochemical and imaging data, reveal discrete steps of AP2 conformational and phosphorylation changes during its recycling (Figure 7).
 
 It is curious that the unnaturally active forms of AP2 isolated from our fcho-1 suppressor screen do not exhibit enhanced endocytosis or membrane association when the fcho-1 gene is intact (Hollopeter et al., 2014) (Figure 2). In other words, why is there not a functional consequence associated with hyperactive AP2 in an otherwise wild type background? Perhaps there are compensatory mechanisms that prevent rampant endocytosis or, alternatively, our assays may lack the sensitivity and range necessary to detect the differences. Indeed, endocytic pits become enlarged after knockdown of NECAP1 and these structures could be a consequence of overactive AP2 (Ritter et al., 2013). Although vesicle size was not examined in this paper, regulating the time during which AP2 is phosphorylated and open could directly impact the size of the vesicle that gets internalized.
 
-## AP2 phosphorylation modulates NECAP recruitment
+### AP2 phosphorylation modulates NECAP recruitment
 
 NECAPs form stable complexes in vitro with open and phosphorylated AP2 cores, suggesting that activated AP2 may be the endogenous substrate of NECAPs. Indeed, imaging data suggest NECAP dynamics during endocytic pit formation mimic those of clathrin (Taylor et al., 2011), consistent with our model that AP2 activation precedes NECAP recruitment. The accumulation of phosphorylated AP2 in the absence of NCAP-1 indicates that phosphorylation may also precede NECAP recruitment but is it unclear whether the phospho-threonine is an essential feature of the NECAP-AP2 interface. Although changing the threonine to a phosphorylation-defective alanine does appear to disrupt the association of NECAPs with AP2 (Figures 4C and 5), we have not excluded the possibility that this mutation simply precludes NECAP binding by altering the conformation of AP2. Indeed, we observe that NECAPs bind open AP2 cores that have not been phosphorylated (the E302K cores, Figure 4B) supporting the model that NECAPs bind to a face of active AP2 that does not include the phosphorylated threonine. However, an interaction with these constitutively open, non-phosphorylated cores in vitro may not be relevant; functionally inactive NECAPs (the A29D and S84N mutants) appear to bind these cores in vitro (Figure 6—figure supplement 1B), but do not associate with the equivalent, albeit hyper-phosphorylated, open AP2 mutation in vivo (Figure 6—figure supplement 1A). The non-phosphorylated open AP2 core may not be a physiological state of AP2 and might not accurately simulate the in vivo interaction between NECAP and AP2.
 
-## The core function of NECAPs
+### The core function of NECAPs
 
 While NECAPs are widely conserved across eukaryotic organisms (Dergai et al., 2016), the precise function of this protein family has remained enigmatic. Vertebrate NECAPs exhibit different tissue distributions and are proposed to function in mutually exclusive pathways. For example, NECAP2 was recently shown to regulate AP1 instead of AP2 (Chamberland et al., 2016). Despite this proposed divergence, both vertebrate NECAPs rescue loss of NCAP-1 in the nematode, as does a fungal NECAP that lacks the C-terminal α adaptin-ear binding WXXF motif. These results indicate that the capacity to negatively regulate AP2 has been conserved among NECAPs. Based on the missense mutations that disrupt NECAP activity in vivo and AP2 binding in vitro (Figure 6 and Figure 6—figure supplement 1), we believe this inhibitory function may involve a direct interaction of the N-terminal PHear domain (Ritter et al., 2007) with the phosphorylated AP2 core.
 
@@ -114,39 +130,1409 @@ How do NECAPs sustain the AP2 cycle? We propose the following model (Figure 7): 
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Caenorhabditis elegans)</td>
+      <td>ncap-1</td>
+      <td>NA</td>
+      <td>CELE_Y110A2AR.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (C. elegans)</td>
+      <td>fcho-1</td>
+      <td>NA</td>
+      <td>CELE_F56D12.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (C. elegans)</td>
+      <td>apm-2</td>
+      <td>NA</td>
+      <td>CEAP50, apm-2, CELE_R160.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (C. elegans)</td>
+      <td>apa-2</td>
+      <td>NA</td>
+      <td>apt-4, CELE_T20B5.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>N2</td>
+      <td>NA</td>
+      <td>RRID:WB-STRAIN:N2_(ancestral))</td>
+      <td>Wild type</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN109</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew31[splice donor]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN110</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew32[A29D]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN111</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew33[S84N]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN112</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew34[splice donor]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN113</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew35[splice donor]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN114</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew36[Q107X]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN115</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew37[splice donor]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN116</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew38[stop lost]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN101</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II ncap-1(mew39[1.4 kb deletion]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG6353</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II; unc-119(ed3) III</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN86</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ncap-1(mew39[1.4 kb deletion]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN59</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II mewSi2 [Pdpy-30::RFP:NCAP1 unc-119(+)] II ncap-1(mew39[1.4 kb deletion]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG8012</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>oxSi254[Pdpy-30::APA-2::GFP unc-119(+)] II; unc-119(ed3) III</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG6650</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi254 [Pdpy-30::APA-2::GFP unc-119(+)] II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN98</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi254 [Pdpy-30::APA-2::GFP unc-119(+)] II ncap-1(mew39[1.4 kb deletion]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN97</td>
+      <td>this paper</td>
+      <td></td>
+      <td>oxSi254[Pdpy-30::APA-2::GFP unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG8578</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>oxSi484[Pvha-6::GFP:CD4:YASV unc-119(+)] II; apm-2(ox546[W64X]) X oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG8579</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi484[Pvha-6::GFP:CD4:YASV unc-119(+)] II; apm-2(ox546[W64X]) X oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN65</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi484[Pvha-6::GFP:CD4:YASV unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; apm-2(ox546[W64X]) X oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN66</td>
+      <td>this paper</td>
+      <td></td>
+      <td>oxSi484[Pvha-6::GFP:CD4:YASV unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; apm-2(ox546[W64X]) X oxSi876 [Papm-2::HA:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG8557</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>oxSi883[Phsp-16.41::TEV(protease) unc-119(+)] II; apm-2(ox546[W64X]) X oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG8558</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi883[Phsp-16.41::TEV(protease) unc-119(+)] II; apm-2(ox546[W64X]) X oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN100</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II; oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; apm-2(ox546[W64X]) X oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN99</td>
+      <td>this paper</td>
+      <td></td>
+      <td>oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; apm-2(ox546[W64X]) X oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG8555</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II; apm-2(ox546[W64X]) X oxSi877[Papm-2::3XFLAG:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>EG8556</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II; apm-2(ox546[W64X]) X oxSi877[Papm-2::3xFLAG:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN96</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; apm-2(ox546[W64X]) X oxSi877[Papm-2::3xFLAG:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN106</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; mewSi3 [Pdpy-30::RFP:NCAP-1 unc-119(+)] IV; apm-2(ox546[W64X]) X oxSi877 [Papm-2::3xFLAG:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN91</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; mewSi15 [Pdpy-30::RFP:Mm_NECAP1 unc-119(+)] IV; apm-2(ox546[W64X]) X  oxSi877[Papm-2::3xFLAG:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN93</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; mewSi8 [Pdpy-30::RFP:Mm_NECAP2 unc-119(+)] IV; apm-2(ox546[W64X]) X oxSi877[Papm-2::3xFLAG:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN95</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; mewSi17 [Pdpy-30::RFP:Ss_NECAP unc-119(+)] IV; apm-2(ox546[W64X]) X oxSi877 [Papm-2::3xFLAG:APM-2: tev-site unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN60</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[Pdpy-30::APA2:GFP unc-119(+)] I; mewSi2[Pdpy-30:: RFP:NCAP1 unc-119(+)] II ncap-1(mew39[1.4 kb deletion]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN61</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[Pdpy-30::APA2:GFP unc-119(+)] I; fcho-1(ox477:: unc-119(+)) II mewSi2[Pdpy-30:: RFP:NCAP1 unc-119(+)] II ncap-1(mew39[1.4 kb deletion]) II</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN62</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[Pdpy-30::APA2:GFP unc-119(+)] I; fcho-1(ox477::unc-119(+)) II mewSi2[Pdpy-30::RFP:NCAP1 unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; apm-2(ox562[E306K]) X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN53</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[Pdpy-30::APA2:GFP unc-119(+)] I; fcho-1(ox477:: unc-119(+)) II mewSi2[Pdpy-30:: RFP:NCAP1 unc-119(+)] II ncap-1(mew39[1.4 kb deletion]) II; apm-2(mew44[T160A]) X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN55</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[Pdpy-30::APA2:GFP unc-119(+)] I; fcho-1(ox477:: unc-119(+)) II mewSi2[Pdpy-30:: RFP:NCAP1 unc-119(+)] II ncap-1(mew39[1.4 kb deletion]) II; apm-2(ox562[E306K]+mew46[T160A]*) X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN56</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[Pdpy-30::APA2:GFP unc-119(+)] I; fcho-1(ox477:: unc-119(+)) II mewSi2[Pdpy-30:: RFP:NCAP1 unc-119(+)] II ncap-1(mew39[1.4 kb deletion]) II; apm-2(ox562[E306K]+mew47[R440S]*) X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN128</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::cb-unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease Cb_unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; mewSi25[RFP:NCAP-1(A29D)*] IV; apm-2(ox546[W64X]) X oxSi877[Papm-2::3xFLAG:APM-2: tev-site Cb_unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN135</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1(ox477::cb-unc-119(+)) II oxSi883[Phsp-16.41::TEVprotease Cb_unc-119(+)] II ncap-1(mew39 [1.4 kb deletion]) II; mewSi35[RFP:NCAP-1(S84N)*] IV; apm-2(ox546[W64X]) X oxSi877 [Papm-2::3xFLAG:APM-2: tev-site Cb_unc-119(+)] X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN127</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[APA2:GFP] I; fcho-1(ox477:: unc-119(+)) II mewSi24[RFP: NCAP1(A29D)*] II ncap-1(mew39[1.4 kb deletion]) II; apm-2(ox562[E306K])X</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans, hermaphrodite)</td>
+      <td>GUN122</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mewSi1[APA2:GFP] I; fcho-1(ox477:: unc-119(+)) II mewSi31[RFP: NCAP1(S84N)*] II ncap-1(mew39[1.4 kb deletion]) II; apm-2(ox562[E306K])X</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>fcho-1(ox477::unc-119(+))</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew31[splice donor])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew32[A29D])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew33[S84N])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew34[splice donor])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew35[splice donor])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew36[Q107X])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew37[splice donor])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew38[stop lost])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>ncap-1(mew39[1.4 kb deletion])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>fcho-1 suppressor</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi2[Pdpy-30::RFP:NCAP1 unc-119(+)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated with MosSCI</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi3[Pdpy-30::RFP:NCAP-1 unc-119(+)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated with MosSCI</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi15[Pdpy-30::RFP: Mm_NECAP1 unc-119(+)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated with MosSCI</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi8[Pdpy-30::RFP: Mm_NECAP2 unc-119(+)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated with MosSCI</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi17[Pdpy-30::RFP: Ss_NECAP unc-119(+)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated with MosSCI</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>oxSi254[Pdpy-30::APA-2:: GFP unc-119(+)]</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi1[Pdpy-30:: APA-2::GFP unc-119(+)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated with MosSCI</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>oxSi484[Pvha-6::GFP:CD4: YASV unc-119(+)]</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>oxSi883[Phsp-16.41:: TEV(protease) unc-119(+)]</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>oxSi876[Papm-2::HA:APM-2: tev-site unc-119(+)]</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>oxSi880[Papm-2::HA:APM-2(E306K): tev-site unc-119(+)]</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>oxSi878[Papm-2::HA:APM-2(T160A): tev-site unc-119(+)]</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>oxSi877[Papm-2::3xFLAG: APM-2:tev-site unc-119(+)]</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>apm-2(ox562[E306K] +mew46[T160A])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mew46[T160A] generated by CRISPR</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>apm-2(ox562[E306K] +mew47[R440S])</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mew47[R440S] generated by CRISPR</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi25[RFP:NCAP-1(A29D]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated by CRISPR</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi35[RFP:NCAP-1(S84N)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated by CRISPR</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi24[RFP:NCAP1(A29D)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated by CRISPR</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>mewSi31[RFP:NCAP1(S84N)]</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated by CRISPR</td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens, female)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (H. sapiens)</td>
+      <td>pGH500, in HEK239 cells</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Tissue culture pulldowns’</td>
+    </tr>
+    <tr>
+      <td>transfected construct (H. sapiens)</td>
+      <td>pGH501, in HEK239 cells</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Tissue culture pulldowns’</td>
+    </tr>
+    <tr>
+      <td>transfected construct (H. sapiens)</td>
+      <td>pGH502, in HEK239 cells</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Tissue culture pulldowns’</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse monoclonal anti-adaptin α</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 610501, RRID:AB_397867</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit polyclonal anti-AP2B1</td>
+      <td>Abcam</td>
+      <td>151961, RRID: AB_2721072</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit monoclonal anti-AP2M1 phospho T156</td>
+      <td>Abcam</td>
+      <td>Cat# 109397, RRID:AB_10866362</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit monoclonal anti-AP2S1</td>
+      <td>Abcam</td>
+      <td>Cat# 128950, RRID:AB_11140842</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse monoclonal anti-flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F3165, RRID:AB_259529</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse monoclonal anti-tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T5168, RRID:AB_477579</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit polyclonal anti-histone H3</td>
+      <td>Abcam</td>
+      <td>Cat# 1791, RRID:AB_302613</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit polyclonal anti-beta actin</td>
+      <td>Abcam</td>
+      <td>Cat# 8227, RRID:AB_2305186</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>goat anti-mouse Alexa Fluor 488</td>
+      <td>Life Technologies</td>
+      <td>Cat # A11029, RRID:AB_2534088</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>goat anti-rabbit Alexa Fluor 647</td>
+      <td>Life Technologies</td>
+      <td>Cat# A21244, RRID:AB_10562581</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>goat anti-rabbit StarBright Blue 700</td>
+      <td>BioRad</td>
+      <td>Cat# 12004161, RRID: AB_2721073</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>goat anti-mouse IRDye 800CW</td>
+      <td>LI-COR</td>
+      <td>Cat# 925–32210, RRID:AB_2687825</td>
+      <td>(1:20000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rat monoclonal anti-HA- Horseradish peroxidase (HRP)</td>
+      <td>Roche</td>
+      <td>Cat# 12013819001 RRID:AB_390917</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEP29</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘C. elegans NECAP transgenes’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEP41</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘C. elegans NECAP transgenes’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEP58</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘C. elegans NECAP transgenes’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEP71</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘C. elegans NECAP transgenes’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGH495</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘C. elegans NECAP transgenes’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGH505</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘C. elegans NECAP transgenes’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB19</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant AP2 cores’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB21</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant AP2 cores’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB27</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant NECAPs’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB28</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant NECAPs’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB29</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant NECAPs’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB31</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant AP2 cores’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB81</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant NECAPs’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEP82</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant AP2 cores’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB91</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant NECAPs’</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGB94</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant NECAPs’</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>pGH494</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>pGH503</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant NECAPs’</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>pGH504</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in ‘Recombinant AP2 cores’</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH678</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGATAGAGAAGGCTTCAACACAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH679</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGGTATTCAGACATTTTTC AAATGAAAATCTAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH680</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CAGTCAAAAAATGC GATAAAAGTACGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH681</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGACAGGAAATTTC AATAAATTAGCGATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP366</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AACGGGCGGTAGT GGAGGCACTGGTATG GGAGATTACGAGAACGTTTTAATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP367</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TATCACCACTTTGTACAAGAAAGCT GGGTCTAGAAATCTAATAAA TTGCCAGACGTCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP407</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GAGGAACGGGCGGTAGTGGAG GCACTGGTATGGAGGAGAGTG AGTACGAGTCTGTTCTGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP408</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCACCACTTTGTACAAGAAAGC TGGGTCTAGAACTGG ACCCAGCCGGTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP409</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGAGGAACGGGCGGTAGTGG AGGCACTGGTATGGCGGCA GAGCTGGAATATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP410</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCACCACTTTGTACAAGAAA GCTGGGTCTAAAACTGGA CCCAGTTAGATGGCTGTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP391</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACGTCGTGACTGGGAAAACCC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP392</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCCAGGGTTTTCCCAGTCA CGACGTTGATCATTGGCA TGCTGAAATATTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH526</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATGGTTGTGTCGAAAGGCGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH528</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACCAGTGCCTCCACTACCG CCCGTTCCTCCTGTGCCACC TTTGTACAGTTCATCCATTCC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH698</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGGGACAAGTTTGTACAAAA AAGCAGGCTCAAAAATGG TTGTGTCGAAAGGCGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH731</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTGACATTAAAGTC AAAAGCATCTCCTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH733</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGGGACAAGTTTGTACAAAA AAGCAGGCTCAAAAATGGGA GATTACGAGAACGTTTTAAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH734</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGGGACCACTTTGTACAAGAA AGCTGGGTTTAGAAATCTAAT AAATTGCCAGACGTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH736</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GAGGAGATGCTTTTGAC TTTAATGTCAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH738</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCGGTAGTGGAGGCACTG GTATGGGAGATTACGAG AACGTTTTAATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1011</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TAGACCCAGCTTTCTTGTA CAAAGTGGTGATA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1012</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACCAGTGCCTCCAC TACCGCCCGTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH953</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CATGCTTCCGCCGGTACCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH954</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTTTAAACCCGCTGATCAGCCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH955</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTGGAGGTACCGGCGGAAG CATGGGAGATTACGAG AACGTTTTAATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH956</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCTGATCAGCGGGTTTAAACTT AGAAATCTAATAAATT GCCAGACGTCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH957</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTGGAGGTACCGGCGGAA GCATGGCGGCAGAGCTGGAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH958</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GATCAGCGGGTTTAAACTT AAAACTGGACCCAGTTAGATGGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH959</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTGGAGGTACCGGCGGAA GCATGGAGGAGAGTGAGTACGAGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH960</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCTGATCAGCGGGTTTAAA CTTAGAACTGGACCCAGCCGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP13</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TAATTAACCTAGGCTGCTGCCACC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP17</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AAGAAGGAGATATACATAT GAAGAAGTTTTTCGACTCCAG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP18</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGCAGCAGCCTAGGTTAATT ACTGTACATTTGGAACGGGGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB24</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGCCGCCAGCCAATCTGCCCA GCCACCTGGCTGGTGA TCTGGGACTGTTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB26</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATGAATAAGCLCTCCGATCA TCATATGTATATCTCCTTCTTATA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB27</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCATTTATGAAACCCGCT GCTAATTAACCTAGGC TGCTGCCACCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB28</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATGATCGGAGGCTTATTCATCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB29</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCAGCGGGTTTCATAAATGCCA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB33</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGGCAGATTGGCTGGCG GCGAGAAGGCATCAAGTA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB34</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGCAAGAGTCTGGTGCCGCG CGGCAGCGGTAAGCAGTC GATCGCCATTGATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB35</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CTGCTTACCGCTGCCGCG CGGCACCAGACTCTTGCT TGTTTCATCAGCTGTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB47</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TGAGATCCGGCTGC TAACAAAGCC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB48</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTTAAGAAGGAGATATACA TATGGCAGAAATCGGTACTGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB49</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGTGCATCTCCCGTGATGC AGAAATCTAATAAATTGCCA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB50</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGTGCATCTCCCGTGATGC AAAACTGGACCCAGTTAGATGGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB51</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGTGCATCTCCCGTGATGCA GAACTGGACCCAGCCGGTGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB52</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TGCATCACGGGAGATGCACT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB53</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTTAGCAGCCGGATCTCAGT GGTGATGATGGTGATGTTG AAGCTGCCACAAGGCAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB174</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGTGCATCTCCCGTGATGC AGCTTCCGCCGGTACCTCCAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH338</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>CATATGTATATCTCCTTCTT ATACTTAACTAATATAC TAAGATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP642</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCGATATCCACGGT TGGTGGCCCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP643</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ACCAACCGTGGATATCGGG ACTCAGAATGGCAACT GGACCAGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP644</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCTAGATACTTCGTCATC CGAATTGAAGATGGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP645</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AATTCGGATGACGAAGT ATCTAGAGTTGTCTGT CACACTCTCCACTGCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH847</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCAAACTGAAGGTCAAGGTGGTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH848</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCTTGACCTTCAGTTTGGTGCGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH853</td>
+      <td>DOI: 10.7554/eLife.03648</td>
+      <td></td>
+      <td>TAATTAACCTAGGC TGCTGCCACCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1204</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTTAATTAAAACAG ATGCACGACGGTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1205</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTGCATCTGTTTTAATTAACA TGGAGGAGAGTGAGTACGAGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1206</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCAGCAGCCTAGGTTAATTA GAACTGGACCCAGCCGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1227</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGAAGTTCTGTTCCAGG GGCCCGGGTCCGG CATGTCCCCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1228</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCCCCTGGAACAGAACTTC CAGGCCGGATCCGCCCTTCTT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1231</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CATATGTATATCTCCTT CTTAAAGTTAAAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1246</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCGCTGAGCAATAACT AGCATAAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1247</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CTAATGCAGGAGTCGCATAAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1249</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GTTATGCTAGTTAT TGCTCAGCGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGH1250</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTATGCGACTCCTGCATTAG GCGCGAGGCAGGATCTCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>rEP360</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Gene-specific target of crRNA: TGAAGTGTCTCGTAACAAGA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>rGB156</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Gene-specific target of crRNA: CAAATCACGTCTCAAGTGAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>rGB155</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Gene-specific target of crRNA: TTGGGTGAAGTTCTAGCATC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>rEP254</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Gene-specific target of crRNA: CGGGCTGTCGAGGTTCCAGT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>rEP676</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Gene-specific target of crRNA: CACAAAATATCGAGAACTAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>rEP700</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Gene-specific target of crRNA: CCCTGGCAACGCAATTGAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB154</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TCCCATTGGTTCGcGAAGTGTCT CGTAACAAGATGaAAGTTAA GGTATTTCACTTGTCAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB159</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTCGTTACATTGGAcGATCG GGACTGTATGAAACtAGcTGC TAGAACTTCACCCAACCCT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oGB130</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GGAGCAGTCACAAATCACGT CTCAAGTtGCCGGCCAAATT GGATGGCGTCGGGAGGGTAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP674</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TTCGCTATAAAATCCCTATTT TTCAGAGatGCgGACTGGAAC CTCGACAGCCCGGCTTGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP680</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCGCCGATCGGAACCAGCGG TCATAAAGatGCgGACTGGA ACCTCGACAGCCCGGCTTGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oEP701</td>
+      <td>this paper</td>
+      <td></td>
+      <td>GCCCGATCGATGCGCACCC TGGCAACGCAATTGAGGCcG TTTCgGATaacTCTaGATATTT TGTGATTCGTTTGCAG</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>AcTEV Protease</td>
+      <td>Invitrogen</td>
+      <td>12575015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GraphPad Prism (version 7.0 c for Mac)</td>
+      <td>GraphPad Software, www.graphpad.com</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Fiji</td>
+      <td>doi:10.1038/ nmeth.2019</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*allele generated by CRISPR_
+
+### Strains
 
 C. elegans were maintained using standard procedures (Brenner, 1974) on nematode growth medium (NGM) plates seeded with E. coli (OP50). For a complete list of strains, see Supplementary file 1A.
 
-## Data analysis
+### Data analysis
 
 Unpaired, parametric, two-tailed T-tests were performed using GraphPad Prism (version 7.0 c for Mac, GraphPad Software, La Jolla, CA, USA, www.graphpad.com).
 
-## Identification of ncap-1 mutants
+### Identification of ncap-1 mutants
 
 Our initial mutagenesis of fcho-1 null animals (Hollopeter et al., 2014) yielded four recessive suppressors in the same complementation group. Single nucleotide polymorphism mapping (Davis et al., 2005) placed them on chromosome II and whole genome sequencing revealed four independent mutations in the ncap-1 gene (mew31, mew36, mew38, and mew39). Additional alleles were identified among subsequent fcho-1 suppressors by amplifying and sequencing the coding segments of ncap-1 with primer pairs oGH678-9 and oGH680-1. Strains and oligonucleotides are listed in Supplementary file 1.
 
-## Starvation assay
+### Starvation assay
 
 The starvation assay was performed as previously described (Hollopeter et al., 2014) except that the assay was performed at 25˚C for Figure 1C.
 
-## Preparation of worms for microscopy
+### Preparation of worms for microscopy
 
 For confocal fluorescence microscopy, worms were mounted on 8–10% agarose pads in 3 µL of a 1:1 mix of a 1 µm polystyrene bead slurry (Polysciences, Warrington, PA) and 2X PBS pH 7.4 (Kim et al., 2013). For differential interference contrast microscopy (Figure 1B), worms were mounted on 5% agarose pads in PBS pH 7.4 with 20 mM sodium azide.
 
-## AP2 localization and FRAP analysis in coelomocytes
+### AP2 localization and FRAP analysis in coelomocytes
 
 Worms expressing APA-2:GFP (oxSi254) were imaged as previously described (Hollopeter et al., 2014). Strains are listed in Supplementary file 1A.
 
-## Cargo assay
+### Cargo assay
 
 The cargo assay was performed essentially as previously described (Hollopeter et al., 2014). Worms expressing an artificial cargo (oxSi484) were imaged on a Ziess LSM 880 confocal microscope (Biotechnology Resource Center, Cornell University, Ithaca, NY) with a 40x water immersion objective. All strains were imaged in one session with the same laser settings. Images were analyzed in Fiji (Schindelin et al., 2012). A user defined line was drawn along the membrane between intestinal segments 2 and 3, or segments 3 and 4, and the average pixel intensity was measured along the line. Strains are listed in Supplementary file 1A.
 
-## TEV protease-sensitivity assay
+### TEV protease-sensitivity assay
 
 The TEV assay was performed essentially as previously described (Hollopeter et al., 2014). Post TEV samples were collected at 5–6 hr following heatshock (34˚C, 1 hr). Each sample represents 100 L4 hermaphrodites lysed in 1X Bolt LDS Sample Buffer (Invitrogen, Carlsbad, CA) containing fresh dithiothreitol (DTT; ~100 mM) by sonication (1 s pulses at 90–95% amplitude for 2–3 min) in a cup horn (Branson Ultrasonics Corporation, Danbury, CT) that was chilled to 4˚C. Samples were heated for 10 min at 70˚C prior to gel electrophoresis. All samples were re-sonicated following the 70˚C denaturation step if any exhibited excessive viscosity. Strains are listed in Supplementary file 1A.
 
-## Western blots and SYPRO staining
+### Western blots and SYPRO staining
 
 Precast polyacrylamide gels (Bolt 4–12% Bis-Tris, Invtrogen) were used for all SDS PAGE experiments. For western blot analysis, proteins were transferred from gels to PVDF Immobilon membranes (Merck Millipore, Tullagreen, Carrigtwohill, Co. Cork, Ireland) using the Pierce Power Blot Cassette system (Thermo Scientific, Rockford, IL). All blocking and antibody incubations (except anti-HA, see below) occurred in Odyssey Blocking Buffer (LI-COR, Lincoln, NE). Primary antibodies and dilutions included mouse anti-adaptin α (1:500, BD Biosciences, San Jose, CA, 610501), rabbit anti-AP2B1 (1:1000, Abcam, Cambridge, MA, 151961), rabbit anti-AP2M1 phospho T156 (1:1000, Abcam 109397), rabbit anti-AP2S1 (1:4000, Abcam 128950), mouse anti-flag (1:1000, Sigma-Aldrich F3165), mouse anti-tubulin (1:2000, Sigma-Aldrich T5168), rabbit anti-histone H3 (1:4000, Abcam 1791), and rabbit anti-beta actin (1:1000, Abcam, 8227). Secondary antibodies included goat anti-mouse Alexa Fluor 488 (1:4000, Life Technologies, Eugene, OR, A11029), goat anti-rabbit Alexa Fluor 647 (1:2000, Life Technologies, A21244), StarBright Blue 700 goat anti-rabbit (1:5000, BioRad, Hercules, CA, 12004161), and goat anti-mouse IRDye 800CW (1:20000, LI-COR, 925–32210).
 
@@ -156,23 +1542,23 @@ Primary antibody incubations occurred for 1 hr at room temperature or overnight 
 
 We used SYPRO Ruby Protein Gel stain (Lonza, Rockland, ME) to visualize the in vitro pulldowns in Figure 4B and in Figure 6—figure supplement 1B. Gels were fixed in 50% methanol/7% acetic acid for 30 min and stained with SYPRO for 4–16 hr at room temperature in the dark with gentle agitation. Gels were then washed 2 × 15 min in 10% methanol/7% acetic acid and then 2 × 5 min in water before imaging on a Bio-Rad ChemiDoc MP system.
 
-## C. elegans NECAP transgenes
+### C. elegans NECAP transgenes
 
 We generated C. elegans targeting vectors for expression of NECAPs as single-copy transgenes (Frøkjaer-Jensen et al., 2008). For Figure 1B and C, Figure 5, and Figure 6—figure supplement 1A, a mini-gene encoding NCAP-1 was constructed using the Multisite Gateway System (Invitrogen). The first 4 exons of the ncap-1 gene were amplified with primer pair oGH731 + 3, while the other half of the coding sequence was amplified from cDNA using primer pair oGH734 + 6. The two amplicons were recombined using the Gibson assembly reaction (Gibson et al., 2009) and then recombined with the [1-2] donor vector using BP clonase (Invitrogen). The entry clone was amplified with oGH698 + 738 and a worm codon-optimized TagRFP-T (Ed Boyden, MIT, Cambridge, MA) was amplified with oGH526 + 8 and inserted upstream of the ncap-1 coding sequences using Gibson assembly. The resulting [1-2] entry clone (pGH505) was recombined with a [4-1] entry containing the ubiquitous dpy-30 promoter, the unc-54 3’UTR in a [2-3] entry and the [4-3] destination vector pCFJ150 (Christian Frøkjær-Jensen, University of Utah) using LR clonase (Invitrogen) to generate the MosSCI targeting vector (pGH495) that was injected into worm strain EG6699 (Frøkjær-Jensen et al., 2012).
 
 For Figure 3, the coding sequences of NECAPs were amplified from plasmid templates using the following primers: oEP366-7 for C. elegans NCAP-1 (NM_061997.5), oEP409-10 for M. musculus NECAP1 (BK000656.1) and oEP407-8 for M. musculus NECAP2 (BK000657.1). The coding sequence of NECAP from Sphaerobolus stellatus (Cannonball Fungus protein KIJ44287) was synthesized as a gBlock (IDT, Coralville, IA). These DNA fragments were then assembled in a MosSCI targeting vector backbone generated as two amplicons from pGH486 (Hollopeter et al., 2014), using primer pairs oGH1011 + oEP392 and oGH1012 + oEP391, in a three-piece Gibson assembly reaction. The plasmids generated were: pEP29 for C. elegans NCAP-1, pEP58 for M. musculus NECAP1, pEP41 for M. musculus NECAP2, and pEP71 for S. stellatus NECAP. These included targeting sequences corresponding to the cxTi10816 locus and were inserted into the genomes of EG6703 worms as described (Frøkjær-Jensen et al., 2012). The resulting transgenes drive expression of RFP-tagged NECAPs from a ubiquitous C. elegans promoter (Pdpy-30). Strains, plasmids, and oligonucleotides are listed in Supplementary file 1.
 
-## Tissue culture pulldowns
+### Tissue culture pulldowns
 
 The heterologous expression of affinity-tagged proteins in HEK293 cells followed by HaloTag isolation from cell lysates and western blots analysis of the purified proteins was performed as described (Hollopeter et al., 2014). Mammalian vectors for the expression of HaloTag fusions with the worm and mouse NECAPs were generated by amplifying the coding sequences from cDNA and inserting them by Gibson assembly into a custom-built HaloTag expression vector (Banks et al., 2014) that was amplified using oGH953-4. The C. elegans NCAP-1 (NM_061997.5; amplicon oGH955-6) expression vector is pGH500, while the M. musculus NECAP1 (BK000656.1; amplicon oGH957-8) is pGH501, and M. musculus NECAP2 (BK000657.1; amplicon oGH959-60) is pGH502. Plasmids and oligonucleotides are listed in Supplementary files 1B and 1C, respectively. The identity of the HEK293 cells was 100% matched by STR Profiling at ATCC. Cells were negative for mycoplasma using ATCC PCR kit #30–1012K on January 10, 2017.
 
-## Recombinant AP2 cores
+### Recombinant AP2 cores
 
 Bicistronic vectors expressing the hexahistidine-tagged mouse AP2 β2 trunk along with mouse µ2 were based on pGH424 (Hollopeter et al., 2014) and generated as follows: Mutations were introduced in µ2 using Gibson assembly, and primers oGH847-8 for E302K and oGB24 + 33 for T156A. A thrombin protease site (not utilized in this study) was inserted after amino acid 236 of µ2 using oGB34-35. The construct encoding wild type β2 trunk/µ2 is pGB21, while β2 trunk/µ2(E302K) is pGB19 and β2 trunk/µ2(T156A) is pGB31. The bicistronic vector expressing the GST-tagged mouse AP2 α trunk along with rat σ2 (pGH504) was generated as follows: The α trunk/σ2 hemicomplex was amplified from the original expression vector (Collins et al., 2002) using primers oGH1249-50 and recombined with the pACYCDuet vector backbone (amplicon oGH1246-47) using Gibson assembly. The thrombin cleavage site between the α trunk and GST was replaced with the human rhinovirus (HRV) C3 protease site (not utilized in this study) with oGH1227-8 and Gibson assembly. Simultaneous expression of all four subunits of the AP2 core was achieved by transforming E. coli BL21(DE3) cells (New England Biolabs, Ipswich, MA) with a pair of the bicistronic vectors and co-selecting for ampicillin resistance (pGB21, pGB19 or pGB31) and chloramphenicol resistance (pGH504). To generate phosphorylated AP2 cores, the kinase domain of mouse AAK1 (amino acids 1–325, BC141176.1) was amplified from plasmid template using oEP17-18 and inserted into the pRSFDuet backbone amplified with oEP13 + oGH338 using Gibson assembly. The AP2 subunits were co-expressed with this vector (pEP82) by including selection for kanamycin resistance. Plasmids and oligonucleotides are listed in Supplementary files 1B and 1C, respectively.
 
 2xYT culture media containing the appropriate antibiotics was inoculated with an overnight culture of bacterial cells expressing AP2 cores and incubated at 37˚C with shaking at 180–200 RPM until OD600 = ~1.0. The temperature was decreased to 18˚C for 1 hr before expression was induced with 100 µM isopropyl β-D-1-thiogalactopyranoside (IPTG) for 20–24 hr. Cells were harvested by centrifugation, washed with lysis buffer (see below), and snap frozen in liquid N2 prior to storage at −80˚C. Cell pellets were resuspended in 50 mL lysis buffer per liter of initial culture volume. GST lysis buffer consists of PBS pH 7.4, 1 mM DTT, 60 µg/mL DNase I (grade II from bovine pancreas, Roche), 2.5 mM MgCl2, 0.3 mg/mL lysozyme (Sigma), and 1 mM phenylmethylsulfonyl fluoride (PMSF) (Millipore, Billerica, MA) with the addition of 1 tablet of cOmplete EDTA-free Protease Inhibitor Cocktail (Roche) for every 100 mL. The cell slurry was sonicated (20 s pulses at 20% amplitude for a total of 8 min; 50 mL at a time) using a Q700 sonicator (Qsonica, Newtown, CT). Lysates were cleared by centrifugation (~20000 x g) and filtration (0.2 µm). Cleared filtrate was rotated for 1 hr at 4˚C with equilibrated GST resin (GE Healthcare Life Sciences, Uppsala, Sweden), 1 ml resin per liter of the initial culture volume. The filtrate and resin were poured over a gravity column, washed with PBS pH 7.4 + 1 mM DTT, and AP2 was eluted with 50 mM Tris, 150 mM NaCl, 10 mM reduced glutathione, and 1 mM DTT, pH 8.0 (Fischer BioReagents, Fairlawn, NJ). The eluate buffer was exchanged with TBS pH 7.6 + 1 mM DTT and AP2 cores were concentrated to ~0.5 mg/mL using an Amicon Centrifugal Filter Unit with a 100 kDa cutoff (Merck Millipore). Aliquots of AP2 cores were snap frozen in liquid N2 prior to storage at −80˚C.
 
-## Recombinant NECAPs
+### Recombinant NECAPs
 
 The NECAP used in Figure 4C had an N-terminal hexahistidine tag, HaloTag and TEV protease site. Mouse NECAP2 (BK000657.1) was amplified from pGH502 using primers oGH1205-6, and recombined with the backbone of the 6xHis-HaloTag-APA expression vector pGH493 (Hollopeter et al., 2014) (amplified with oGH853 + 1204) using Gibson assembly. This replaced the APA domain with NECAP2 and generated pGH503.
 
@@ -184,15 +1570,15 @@ For 6xHis-HaloTag-NECAP2 (pGH503) and 6xHis-HaloTag (pGH494) cell pellets collec
 
 To purify recombinant NECAPs (HaloTag-NECAPs-intein-6xHis) or the HaloTag-intein-6xHis control we used a modified version of the IMPACT system. Cell lysis was performed as described for other hexahistidine-tagged proteins (above) except BME was omitted from the lysis buffer to inhibit intein self-cleavage. Cleared lysates were loaded onto gravity columns containing nickel resin (Thermo Scientific, 0.5 mL per 500 mL initial culture volume) and washed extensively. Columns were then flushed with nickel lysis buffer containing 40 mM BME, plugged, and incubated at 4˚C for 30 to 40 hr in order to cleave proteins from the intein tag. The released proteins were collected, buffer exchanged with TBS pH 7.6 + 1 mM DTT, and concentrated using an Amicon Centrifugal Filter Unit with 50 kDa MW cutoff (Merck Millipore) or with 30 kD MW cutoff for the HaloTag control. Aliquots were snap frozen in liquid N2 prior to storage at −80˚C.
 
-## In vitro pulldown assays
+### In vitro pulldown assays
 
 Pulldown assays were performed essentially as described in Hollopeter et al., 2014 except the protease cleavage step was 3 hr and the input gel sample represented 20% of the ‘prey’ protein mixture.
 
-## Nerve ring microscopy
+### Nerve ring microscopy
 
 Worms expressing APA-2:GFP (mewSi1) and RFP:NCAP-1 (mewSi2) in an ncap-1 background were imaged on an Zeiss LSM 880 confocal microscope (Biotechnology Resource Center) with a 40x water immersion objective. APA-2:GFP(mewSi1) is molecularly similar to APA-2:GFP(oxSi254) (Gu et al., 2013) except the entry clones ([4-1]Pdpy-30, [1-2]apa-2 cDNA, and [2-3]GFP:unc-54 3’UTR) were recombined with the [4-3] MosSCI vector (pCFJ210) to target the ttTi4348 site in EG6701 worms (Frøkjær-Jensen et al., 2012). Fluorophores were excited with 488 nm (GFP) and 561 nm (RFP) lasers. All strains were imaged in one session with the same laser settings. For each worm, a single confocal slice through the approximate sagittal section of the nerve ring was analyzed in Fiji (Schindelin et al., 2012). Two regions of interest (ROI) corresponding to both dorsal and ventral sections of the nerve ring along with an ROI outside of the worm (to control for background signal) were user defined. The average pixel intensities in both the GFP and RFP channels were determined and the background values were subtracted from the nerve ring values.
 
-## CRISPR-Cas9 generation of µ2 and NCAP-1 mutations
+### CRISPR-Cas9 generation of µ2 and NCAP-1 mutations
 
 CRISPR/Cas9 edits were generated using the dpy-10 co-conversion strategy (Arribere et al., 2014) with ribonucleoprotein (RNP) complexes (Paix et al., 2015). For generating µ2 mutations, gonads of young adult hermaphrodites were injected with RNP mixes containing ~3.7 µg/µL Cas9 (purified in-house), 1 µg/µL tracrRNA, 0.08 µg/µL dpy-10 crRNA, 16.7 µM dpy-10(cn64) roller repair, 0.4 µg/µL gene-specific crRNA, and 16.7 µM gene-specific repair. The gene-specific crRNAs and oligonucleotide repairs were as follows: to generate µ2(E306K) – rEP360 and oGB154 (introduces an NruI site for genotyping), to generate µ2(T160A) – rGB156 and oGB130 (introduces an NgoMIV site), and to generate µ2(R440S) – rGB155 and oGB159 (introduces a PvuI site). F1 progeny exhibiting the roller phenotype were placed on individual culture plates and allowed to produce offspring for 1–2 days before being lysed in 50 µL 1X Phusion GC buffer (NEB) with 0.4 U Proteinase K (NEB) by freezing at −80˚C and then heating at 65˚C for 1 hr followed by 95˚C for 15 min. The targeted region of the genome was amplified using PCR and the amplicon was digested to identify correctly edited worms. Mutations were confirmed by sequencing the PCR product.
 

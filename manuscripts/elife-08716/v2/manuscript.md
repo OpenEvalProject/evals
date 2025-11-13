@@ -18,17 +18,17 @@
 
 ## Abstract
 
-10.7554/eLife.08716.001 The adaptive prokaryotic immune system CRISPR-Cas provides RNA-mediated protection from invading genetic elements. The fundamental basis of the system is the ability to capture small pieces of foreign DNA for incorporation into the genome at the CRISPR locus, a process known as Adaptation, which is dependent on the Cas1 and Cas2 proteins. We demonstrate that Cas1 catalyses an efficient trans-esterification reaction on branched DNA substrates, which represents the reverse- or disintegration reaction. Cas1 from both Escherichia coli and Sulfolobus solfataricus display sequence specific activity, with a clear preference for the nucleotides flanking the integration site at the leader-repeat 1 boundary of the CRISPR locus. Cas2 is not required for this activity and does not influence the specificity. This suggests that the inherent sequence specificity of Cas1 is a major determinant of the adaptation process. DOI: http://dx.doi.org/10.7554/eLife.08716.001
+The adaptive prokaryotic immune system CRISPR-Cas provides RNA-mediated protection from invading genetic elements. The fundamental basis of the system is the ability to capture small pieces of foreign DNA for incorporation into the genome at the CRISPR locus, a process known as Adaptation, which is dependent on the Cas1 and Cas2 proteins. We demonstrate that Cas1 catalyses an efficient trans-esterification reaction on branched DNA substrates, which represents the reverse- or disintegration reaction. Cas1 from both Escherichia coli and Sulfolobus solfataricus display sequence specific activity, with a clear preference for the nucleotides flanking the integration site at the leader-repeat 1 boundary of the CRISPR locus. Cas2 is not required for this activity and does not influence the specificity. This suggests that the inherent sequence specificity of Cas1 is a major determinant of the adaptation process.
 
 ## Introduction
 
 The CRISPR-Cas system is an adaptive immune system present in many archaeal and bacterial species. It provides immunity against viruses and other mobile genetic elements mediated through sequence homology-directed detection and destruction of foreign nucleic acid species (reviewed in Sorek et al., 2013; Barrangou and Marraffini, 2014; van der Oost et al., 2014). Organisms with an active CRISPR-Cas system encode one or more CRISPR loci in their genomes. These comprise a leader sequence followed by an array of short, direct, often palindromic repeats interspersed by short ‘spacer’ sequences, together with a variable number of CRISPR associated (cas) genes. Spacers are derived from mobile genetic elements and constitute a ‘memory’ of past infections. The CRISPR locus is transcribed from the leader, generating pre-CRISPR RNA (pre-crRNA) that is subsequently processed into unit length crRNA species and loaded into large ribonucleoprotein complexes. These complexes, known as ‘Interference’, ‘Effector’ or ‘Surveillance’ complexes, utilize crRNA to detect and degrade cognate invading genetic entities, providing immunity against previously encountered viruses and plasmids.
 
-The process of foreign DNA capture and integration into the CRISPR locus is known as ‘Acquisition’ or ‘Adaptation’ (reviewed in
+The process of foreign DNA capture and integration into the CRISPR locus is known as ‘Acquisition’ or ‘Adaptation’ (reviewed in Fineran and Charpentier, 2012; Heler et al., 2014). This process underpins the whole CRISPR-Cas system, but is the least well understood aspect. Fundamentally, acquisition can be separated into two steps: the capture of new DNA sequences from mobile genetic elements, followed by the integration of that DNA into the host genome. New spacers are incorporated proximal to the leader sequence and result in the duplication of the first repeat (Goren et al., 2012; Yosef et al., 2012). The leader sequence proximal to the repeat is important for integration, but transcription of the locus is not required (Yosef et al., 2012). New spacers are frequently incorporated in both possible orientations (Shmakov et al., 2014). The integration process in Escherichia coli results in staggered cleavage of the first CRISPR repeat, where the 3′-end of one strand of the incoming DNA is joined to the end of the CRISPR repeat in a trans-esterification (TES) reaction, with another TES reaction occurring on the other strand (Diez-Villasenor et al., 2013) (Figure 1, numbered yellow arrows). Intermediates in this reaction have been observed in E. coli, and the sequence of the leader-repeat1 junction is important for the activity (Arslan et al., 2014). The order of the two integration steps shown in Figure 1 is not yet known, although it has been suggested that the reaction on the minus strand (site 2) occurs first in E. coli (Nuñez et al., 2015). The sequence at site 2 is flanked by the end of the first repeat and the first spacer, and is therefore inherently less well conserved. In E. coli, the last nucleotide of the newly copied repeat is derived from the first nucleotide of the incoming spacer, which imposes further sequence requirements on that system (Swarts et al., 2012).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig1-v2.jpg)
 
-**Figure 1.:** (A, 1) The 3′-end of an incoming protospacer attacks the chromosomal CRISPR locus at the boundary between the leader sequence and repeat 1. A trans-esterification (TES) reaction (yellow arrow 1) catalyzed by Cas1 joins the protospacer to the 5′ end of repeat 1. For many integrases a (reverse) disintegration reaction can be observed in vitro. (2) Another TES reaction (yellow arrow 2) joins the other strand of the protospacer to the 5′ end of repeat 1 on the bottom (minus) strand, resulting in the formation of a gapped DNA duplex. (3) The gapped duplex is repaired by the host cell DNA replication machinery, resulting in the addition of a new spacer at position 1 and replication of CRISPR repeat 1. (B) Sequences flanking the two TES reaction sites at repeat 1 in Sulfolobus solfataricus and Escherichia coli are shown. The leader is in blue, repeat in black and spacer 1 in teal. The number of central nucleotides of the repeat omitted from the sequence is shown in parentheses. (C) Structure of Cas1 from Pyrococcus horikoshii (PDB 4WJ0) with subunits coloured blue and cyan, showing the dimeric ‘butterfly’ conformation with the active site residues highlighted in green.DOI: http://dx.doi.org/10.7554/eLife.08716.003
+**Figure 1.:** (A, 1) The 3′-end of an incoming protospacer attacks the chromosomal CRISPR locus at the boundary between the leader sequence and repeat 1. A trans-esterification (TES) reaction (yellow arrow 1) catalyzed by Cas1 joins the protospacer to the 5′ end of repeat 1. For many integrases a (reverse) disintegration reaction can be observed in vitro. (2) Another TES reaction (yellow arrow 2) joins the other strand of the protospacer to the 5′ end of repeat 1 on the bottom (minus) strand, resulting in the formation of a gapped DNA duplex. (3) The gapped duplex is repaired by the host cell DNA replication machinery, resulting in the addition of a new spacer at position 1 and replication of CRISPR repeat 1. (B) Sequences flanking the two TES reaction sites at repeat 1 in Sulfolobus solfataricus and Escherichia coli are shown. The leader is in blue, repeat in black and spacer 1 in teal. The number of central nucleotides of the repeat omitted from the sequence is shown in parentheses. (C) Structure of Cas1 from Pyrococcus horikoshii (PDB 4WJ0) with subunits coloured blue and cyan, showing the dimeric ‘butterfly’ conformation with the active site residues highlighted in green.
 
 Although shown in Figure 1 as fully double-stranded, the incoming spacer DNA could have a partially single-stranded character. Recent work by Sorek and colleagues has shown that the E. coli RecBCD helicase–nuclease complex, which processes DNA double-strand breaks for recombination and degrades foreign DNA, is implicated in the generation of viral DNA fragments captured by Cas1 and incorporated into the CRISPR locus as new spacers (Levy et al., 2015). This confirms previous observations linking Cas1 with RecBCD (Babu et al., 2011) and raises some intriguing questions as RecBCD generates ssDNA fragments asymmetrically, generating fragments tens to hundreds of nucleotides long from the 3′ terminated strand and much longer fragments from the 5′ terminated strand (reviewed in Dillingham and Kowalczykowski, 2008). The Cas4 enzyme, which is a 5′ to 3′ ssDNA exonuclease (Zhang et al., 2012; Lemak et al., 2013), may provide ssDNA fragments for Cas1 in systems lacking RecBCD. However, it is difficult to see how two integration reactions could occur without two 3′ hydroxyl termini (Figure 1) and half-site integration is not observed with a ssDNA substrate (Nuñez et al., 2015). Potentially, the ssDNA fragments generated by these nucleases may re-anneal and experience further processing to generate partially duplex molecules of defined size prior to integration by Cas1.
 
@@ -38,75 +38,75 @@ In order to further mechanistic understanding of the spacer acquisition process,
 
 ## Results
 
-## Cas1 catalyzes a TES reaction on branched DNA substrates
+### Cas1 catalyzes a TES reaction on branched DNA substrates
 
-The Cas1 and Cas2 proteins from
+The Cas1 and Cas2 proteins from S. solfataricus (CRISPR-Cas subtype IA) and E. coli (CRISPR-Cas subtype IE) were expressed in E. coli with N-terminal polyhistidine tags and purified to homogeneity by metal affinity and gel filtration chromatography. Previously, it was demonstrated that E. coli Cas1 (EcoCas1) cleaved branched DNA substrates preferentially (Babu et al., 2011). We investigated the activity of S. solfataricus Cas1 (SsoCas1) against a DNA substrate with a 5′-flap structure (Figure 2). By labelling the single-stranded 5′-flap of the downstream duplex at the 5′-end with radioactive phosphorus, we observed cleavage of the flap by SsoCas1, releasing an 18 nt product (Figure 2B). A variant of SsoCas1 where the active site metal ligand glutamic acid 142 was changed to an alanine (E142A) was inactive, implicating the canonical nuclease active site of Cas1 in the reaction. This result appeared consistent with the earlier studies for EcoCas1 (Babu et al., 2011) and suggested that the ssDNA flap was removed at or close to the branch point. The activity was independent of the presence or absence of SsoCas2, suggesting that Cas2 is not involved in this nuclease activity in vitro.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig2-v2.jpg)
 
-**Figure 2.:** Denaturing gel electrophoresis was used to analyse the products generated by SsoCas1 with a branched DNA substrate (Substrate 1). The 5′ flap (18 nt) was released when the phosphodiester backbone was attacked by the 3′-hydroxyl group at the branch point. The reaction required active Cas1 and was independent of Cas2. DNA lengths are shown in blue (nt). The TES site is indicated with a yellow arrow and the labelled strand with a red star. (A) Shows reactions with the continuous strand (black) labelled; (B) with the flap (grey) strand labelled and (C) with the upstream (green) strand labelled, each on the 5′ end. Lanes: 1, control with no added protein; 2, WT Cas1; 3, Cas2; 4, Cas1 + Cas2; 5, Cas1 E142A variant; 6, E142A Cas1 + Cas2. (D) The 5′-flap strand was labelled on the 3′ end with a fluorescein moiety, and the flap reduced to 14 nt (Substrate 1-FAM). Cas1 catalyses the TES reaction generating a 53 nt labelled strand. Lane C: control incubation in absence of Cas1. (E) TES reactions were carried out with SsoCas1, or the E142A active site mutant, on a fork substrate containing a nicked SacI restriction site spanning the branch point (SacI substrate). A TES product of 53 nucleotides is visible in lane 2 containing Cas1. The right-hand panel shows the effect of adding SacI restriction enzyme after the TES reaction. The TES product is no longer visible, but a shorter product of 25 nucleotides is present indicating regeneration of the SacI recognition sequence by the TES reaction.DOI: http://dx.doi.org/10.7554/eLife.08716.004
+**Figure 2.:** Denaturing gel electrophoresis was used to analyse the products generated by SsoCas1 with a branched DNA substrate (Substrate 1). The 5′ flap (18 nt) was released when the phosphodiester backbone was attacked by the 3′-hydroxyl group at the branch point. The reaction required active Cas1 and was independent of Cas2. DNA lengths are shown in blue (nt). The TES site is indicated with a yellow arrow and the labelled strand with a red star. (A) Shows reactions with the continuous strand (black) labelled; (B) with the flap (grey) strand labelled and (C) with the upstream (green) strand labelled, each on the 5′ end. Lanes: 1, control with no added protein; 2, WT Cas1; 3, Cas2; 4, Cas1 + Cas2; 5, Cas1 E142A variant; 6, E142A Cas1 + Cas2. (D) The 5′-flap strand was labelled on the 3′ end with a fluorescein moiety, and the flap reduced to 14 nt (Substrate 1-FAM). Cas1 catalyses the TES reaction generating a 53 nt labelled strand. Lane C: control incubation in absence of Cas1. (E) TES reactions were carried out with SsoCas1, or the E142A active site mutant, on a fork substrate containing a nicked SacI restriction site spanning the branch point (SacI substrate). A TES product of 53 nucleotides is visible in lane 2 containing Cas1. The right-hand panel shows the effect of adding SacI restriction enzyme after the TES reaction. The TES product is no longer visible, but a shorter product of 25 nucleotides is present indicating regeneration of the SacI recognition sequence by the TES reaction.
 
 We proceeded to label the other strands of the substrate to follow the reaction products in more detail. The continuous (black) strand was not cleaved by SsoCas1 (Figure 2A). However, when the 23 nt (green) strand of the upstream duplex presenting a 3′-hydroxyl end at the junction point was labelled we observed the formation of a new, larger DNA species (Figure 2C). This observation was consistent with a joining or TES of the upstream DNA to the downstream DNA strand by Cas1. By switching to a label at the 3′ end of the downstream duplex we confirmed that the reaction catalyzed by Cas1 involved the joining of the upstream and downstream DNA duplexes with concomitant loss of the 5′-flap (Figure 2D). The lack of evidence for any shorter DNA species in Figure 2D was consistent with the conclusion that we were observing a TES rather than a nuclease reaction. Again, the TES reaction was unaffected by the presence or absence of Cas2 and was dependent on the wild-type active site of Cas1, as the E142A variant was inactive.
 
 In order to define the product of the TES reaction in more detail, we modified the sequence of the branch point to introduce an interrupted site for the restriction enzyme SacI across the junction. A precise TES reaction at the branch point to generate duplex DNA would result in the ‘repair’ of the restriction site, generating a substrate for SacI. SsoCas1 processed this substrate generating the 53 bp TES reaction product. On addition of the SacI restriction enzyme, the 53 bp species was converted to a 25 bp product (Figure 2E). This confirmed that the Cas1-mediated reaction resulted in the formation of a functional SacI site in vitro, consistent with a precise TES reaction at the branch point.
 
-It is likely that the TES reaction catalyzed by Cas1 with branched DNA substrates in vitro represents the reverse or disintegration of an integration intermediate, as observed recently for EcoCas1 (
+It is likely that the TES reaction catalyzed by Cas1 with branched DNA substrates in vitro represents the reverse or disintegration of an integration intermediate, as observed recently for EcoCas1 (Nuñez et al., 2015). We therefore tested EcoCas1 with the same set of branched substrates, showing that manganese, magnesium and cobalt all supported the same robust disintegration activity in the absence of Cas2, with no nuclease activity observed (Figure 3A). Given that Eco and SsoCas1 are divergent members of the Cas1 family, this suggests that the disintegration activity is likely to be a general property of Cas1 enzymes. Experiments where the concentration of Cas1 was titrated against a fixed concentration of substrate (50 nM), showed that maximal activity plateaued above 250 nM for EcoCas1 and was maximal from 100 to 500 nM for SsoCas1 (Figure 3B,C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig3-v2.jpg)
 
-**Figure 3.:** E. coli and S. solfataricus Cas1.(A) E. coli Cas1 also catalyses an efficient metal dependent disintegration reaction. TES reactions were carried out under standard conditions, using Substrate 3 and varying the divalent metal ion as indicated. EcoCas1 showed robust TES activity in the presence of cobalt, magnesium and manganese. Each of the three strands of the substrate was labelled individually as for Figure 2 (5′ label indicated by a star). Lanes were: c, substrate alone; substrate incubated with Cas1 and 5 mM of E, EDTA; Co, cobalt chloride; Ca, calcium chloride; Mg, magnesium chloride; Mn, manganese chloride for 30 min at 37°C. (B) Concentration dependence of Cas1 TES activity. Substrate 3 (50 nM) was incubated with the indicated concentration of Sso or EcoCas1 for 30 min under standard assay conditions and the reactants were analysed by denaturing gel electrophoresis and phosphorimaging. SsoCas1 showed maximal activity at 250 nM, representing a fivefold molar excess of enzyme over substrate, with a decline in activity above 500 nM enzyme. EcoCas1 had maximal activity that plateaued above 250 nM enzyme. (C) Quantification of the data (raw data provided in Figure 3—source data 1). These data are representative of duplicate experiments.DOI: http://dx.doi.org/10.7554/eLife.08716.00510.7554/eLife.08716.006Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08716.006
+**Figure 3.:** (A) E. coli Cas1 also catalyses an efficient metal dependent disintegration reaction. TES reactions were carried out under standard conditions, using Substrate 3 and varying the divalent metal ion as indicated. EcoCas1 showed robust TES activity in the presence of cobalt, magnesium and manganese. Each of the three strands of the substrate was labelled individually as for Figure 2 (5′ label indicated by a star). Lanes were: c, substrate alone; substrate incubated with Cas1 and 5 mM of E, EDTA; Co, cobalt chloride; Ca, calcium chloride; Mg, magnesium chloride; Mn, manganese chloride for 30 min at 37°C. (B) Concentration dependence of Cas1 TES activity. Substrate 3 (50 nM) was incubated with the indicated concentration of Sso or EcoCas1 for 30 min under standard assay conditions and the reactants were analysed by denaturing gel electrophoresis and phosphorimaging. SsoCas1 showed maximal activity at 250 nM, representing a fivefold molar excess of enzyme over substrate, with a decline in activity above 500 nM enzyme. EcoCas1 had maximal activity that plateaued above 250 nM enzyme. (C) Quantification of the data (raw data provided in Figure 3—source data 1). These data are representative of duplicate experiments.
 
-To characterise the specificity of the disintegration reaction in more detail, we examined SsoCas1 activity for a variety of substrates differing in the nature of the 5′-flap or duplex arm released by the reaction (
+To characterise the specificity of the disintegration reaction in more detail, we examined SsoCas1 activity for a variety of substrates differing in the nature of the 5′-flap or duplex arm released by the reaction (Figure 4). SsoCas1 was indifferent to the presence of duplex or single-stranded DNA in the 5′-flap, processing a nicked 3-way junction with a similar efficiency to the 5′-flap substrate. The disintegration reaction required the presence of the 3′-hydroxyl moiety at the branch point as a three-way (or Y) junction was not a substrate for Cas1. To confirm this observation we studied a 5′-flap substrate with a phosphate moiety at the 3′ end of the upstream strand in place of a hydroxyl group. As expected, this substrate did not support disintegration activity for either Sso or EcoCas1, with no larger TES product detected (right hand lanes). Tellingly, neither enzyme cleaved the 5′-flap of this substrate to generate shorter products (left hand lanes), confirming that Cas1 catalyses a concerted TES reaction rather than a sequential ‘cut and join’ activity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig4-v2.jpg)
 
-**Figure 4.:** The importance of the released 25 nt 5′-flap structure was investigated by varying the length of duplex DNA in that arm from 0 (canonical 5′-flap) to a full 25 bp (nicked 3-way junction) (left hand panel, all based on substrate 19). All supported robust disintegration activity by SsoCas1. An intact Y- junction did not support TES activity. Lanes: C, substrate alone (1, 5, 9, 13, 17); E, SsoCas1 E142A variant 30 min incubation (2, 6, 10, 14, 18); incubation with wild-type SsoCas1 for 10 and 30 min (other lanes). The right hand panel shows the effect of replacing the attacking 3′-hydroxyl moiety at the branch point with a phosphate group (3′ phos substrate) no TES or nuclease activity was observed for either Sso or EcoCas1. C, substrate alone; E, SsoCas1 E142A variant.DOI: http://dx.doi.org/10.7554/eLife.08716.007
+**Figure 4.:** The importance of the released 25 nt 5′-flap structure was investigated by varying the length of duplex DNA in that arm from 0 (canonical 5′-flap) to a full 25 bp (nicked 3-way junction) (left hand panel, all based on substrate 19). All supported robust disintegration activity by SsoCas1. An intact Y- junction did not support TES activity. Lanes: C, substrate alone (1, 5, 9, 13, 17); E, SsoCas1 E142A variant 30 min incubation (2, 6, 10, 14, 18); incubation with wild-type SsoCas1 for 10 and 30 min (other lanes). The right hand panel shows the effect of replacing the attacking 3′-hydroxyl moiety at the branch point with a phosphate group (3′ phos substrate) no TES or nuclease activity was observed for either Sso or EcoCas1. C, substrate alone; E, SsoCas1 E142A variant.
 
-## Sequence specificity of the disintegration reaction
+### Sequence specificity of the disintegration reaction
 
 Disintegration reactions are commonly seen for integrases and transposases, and represent a very useful means to study the underlying integration mechanism (Chow et al., 1992; Delelis et al., 2008) as the local arrangement of the DNA in the integrase active site is typically the same for the two reactions (Gerton et al., 1999). One prediction of this hypothesis is that the disintegration reaction could demonstrate some sequence preference if integration, which must happen at a specific, defined site in the CRISPR locus, is partly driven by the sequence specificity of Cas1. We therefore designed a family of related disintegration substrates by systematically varying the nucleotides flanking the TES site and tested how efficiently Cas1 could disintegrate these substrates. Having demonstrated conclusively that we could follow the progress of the disintegration reaction by monitoring the liberation of a displaced DNA strand from a 5′-flap substrate, we used this assay for all subsequent investigations.
 
-## The +1 position
+### The +1 position
 
-We first tested the importance of the nucleotide acting as an acceptor for the attacking 3′-hydroxyl of the incoming DNA strand (the +1 position) by varying the nucleotide at this position in the model substrates (
+We first tested the importance of the nucleotide acting as an acceptor for the attacking 3′-hydroxyl of the incoming DNA strand (the +1 position) by varying the nucleotide at this position in the model substrates (Figure 5). In vivo, this acceptor nucleotide should represent the position in the CRISPR locus where new spacers are joined to the end of the repeat. The S. solfataricus CRISPR repeat has a guanine at one end and a cytosine at the other, each of which are predicted to act as acceptors for a new phosphodiester bond formed with the incoming spacer (Figure 1B). Consistent with this, we observed the most efficient disintegration activity with SsoCas1 when substrates had a guanine at the +1 position (Figure 5A). Assays were carried out in triplicate and the reaction products quantified, confirming the qualitative observation of a preference for guanine, followed by cytosine, adenine and thymine, with rates of 0.06, 0.013, 0.0058 and 0.0009 min−1, respectively (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig5-v2.jpg)
 
-**Figure 5.:** The nucleotide at the acceptor (+1) position was varied systematically to assess the sequence dependence of the disintegration reaction carried out by Cas1 from S. solfataricus (A, B) and E. coli (C, D) (Substrates 3, 6, 7, 8). In the gels on the left (A, C) each substrate was incubated with Cas1 for 1, 2, 3, 5, 10, 15, 20 and 30 min in reaction buffer prior to electrophoresis to separate the cleaved 5′-flap from the intact substrate. C–control with no Cas1 added. The plots on the right (B, D) show quantification of these assays. Data points represent the means of triplicate experiments with standard errors shown (raw data provided in Figure 5—source data 1 and Figure 5—​source data 2). The data were fitted to an exponential equation, as described in the ‘Materials and methods’, and for EcoCas1 a variable floating end point was included to allow fitting as the reaction did not go to completion. The effect of Cas2 (150 nM) on EcoCas1 (150 nM) sequence specificity for substrates (50 nM) varying at position +1 (substrates 3, 6, 7, 8) was also tested (E). The second panel from the right is a composite image from two phosphorimages of the same time course as indicated by a black line.DOI: http://dx.doi.org/10.7554/eLife.08716.00810.7554/eLife.08716.009Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08716.00910.7554/eLife.08716.010Figure 5—source data 2.DOI: http://dx.doi.org/10.7554/eLife.08716.010
+**Figure 5.:** The nucleotide at the acceptor (+1) position was varied systematically to assess the sequence dependence of the disintegration reaction carried out by Cas1 from S. solfataricus (A, B) and E. coli (C, D) (Substrates 3, 6, 7, 8). In the gels on the left (A, C) each substrate was incubated with Cas1 for 1, 2, 3, 5, 10, 15, 20 and 30 min in reaction buffer prior to electrophoresis to separate the cleaved 5′-flap from the intact substrate. C–control with no Cas1 added. The plots on the right (B, D) show quantification of these assays. Data points represent the means of triplicate experiments with standard errors shown (raw data provided in Figure 5—source data 1 and Figure 5—​source data 2). The data were fitted to an exponential equation, as described in the ‘Materials and methods’, and for EcoCas1 a variable floating end point was included to allow fitting as the reaction did not go to completion. The effect of Cas2 (150 nM) on EcoCas1 (150 nM) sequence specificity for substrates (50 nM) varying at position +1 (substrates 3, 6, 7, 8) was also tested (E). The second panel from the right is a composite image from two phosphorimages of the same time course as indicated by a black line.
 
 For E. coli, the first nucleotide of the repeat is a guanine. Although the corresponding position at the other end of the repeat on the minus strand is a cytosine, it has been demonstrated that the new spacer joins at the penultimate residue, which is also a guanine (Swarts et al., 2012). EcoCas1 displayed a striking preference for a guanine at the +1 position for the disintegration reaction, with all three alternative nucleotides strongly disfavoured at this position (Figure 5C), in good agreement with the prediction based on the repeat sequence. For EcoCas1 the reaction did not go to completion and accordingly we fitted the data with a variable end-point as described in the ‘Materials and methods’ (Figure 5D). Although the reaction rates could not be determined accurately, guanine at position +1 supported rates at least 10-fold higher than any other nucleotide. We also tested the effect of inclusion of Cas2 on the sequence specificity of EcoCas1, and observed that Cas2 had no effect, with strong preference for a guanine at +1 still observed (Figure 5E).
 
-## The −1 position
+### The −1 position
 
-We proceeded to investigate the sequence dependence of the nucleotide at the 3′-end of the attacking DNA strand (the −1 position) in the disintegration reactions. For the first integration site, this should correspond to the last nucleotide of the leader sequence, which is an adenine in both
+We proceeded to investigate the sequence dependence of the nucleotide at the 3′-end of the attacking DNA strand (the −1 position) in the disintegration reactions. For the first integration site, this should correspond to the last nucleotide of the leader sequence, which is an adenine in both S. solfataricus and E. coli. Although both Cas1 enzymes catalyzed the disintegration of substrates with an adenine at this position, clear sequence preference was not apparent (Figure 6). For S. solfataricus, the −1′ position on the minus strand is variable in sequence. However, in E. coli, site 2 occurs at the penultimate nucleotide of the repeat and therefore has a cytosine at the −1′ position (Swarts et al., 2012). In this situation, the incoming 3′ terminal nucleotide of the spacer has to be a cytosine in order to complete the original repeat sequence. To mimic the TES substrate at this site more closely, we tested substrates where the first nucleotide of the 5′ flap, equivalent to the incoming nucleotide in the forward reaction, was a cytosine, but a cytosine at position −1 was still not favoured by EcoCas1 (Figure 6C). This may suggest that the disintegration reaction is not a good model for integration at site 2, which is further discussed later.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig6-v2.jpg)
 
-**Figure 6.:** The nucleotides participating in the disintegration reaction were varied systematically at the −1 position (substrates 3, 9, 10, 11). For SsoCas1 (A) there was some preference for adenine at this position, consistent with integration site 1. For EcoCas1 (B, C), a cytosine at position −1 was disfavoured over all other possibilities, even when the residue equivalent to the ‘incoming’ nucleotide was also a cytosine (substrates 15, 16, 17, 18). Each substrate was incubated with Cas1 for 5, 10 and 30 min in reaction buffer prior to electrophoresis. C–control with no Cas1 added.DOI: http://dx.doi.org/10.7554/eLife.08716.011
+**Figure 6.:** The nucleotides participating in the disintegration reaction were varied systematically at the −1 position (substrates 3, 9, 10, 11). For SsoCas1 (A) there was some preference for adenine at this position, consistent with integration site 1. For EcoCas1 (B, C), a cytosine at position −1 was disfavoured over all other possibilities, even when the residue equivalent to the ‘incoming’ nucleotide was also a cytosine (substrates 15, 16, 17, 18). Each substrate was incubated with Cas1 for 5, 10 and 30 min in reaction buffer prior to electrophoresis. C–control with no Cas1 added.
 
-## The −2 position
+### The −2 position
 
-The nucleotide at the −2 position, which is part of the conserved leader sequence for integration site 1, is also a potential determinant of integration specificity. Accordingly, we varied this residue systematically and investigated the efficiency of the disintegration reaction for both Cas1 enzymes (
+The nucleotide at the −2 position, which is part of the conserved leader sequence for integration site 1, is also a potential determinant of integration specificity. Accordingly, we varied this residue systematically and investigated the efficiency of the disintegration reaction for both Cas1 enzymes (Figure 7). In S. solfataricus, the −2 position in the leader is a cytosine, which supported the strongest disintegration activity (Figure 7A). In E. coli, the −2 position in the leader is a guanine. A clear preference for guanine over all other nucleotides was observed for EcoCas1 (Figure 7B), confirmed by a more detailed kinetic analysis (Figure 7C) which was fitted as for Figure 5D. These data are consistent with a role for sequence discrimination at the −2 position by both enzymes, which is relevant for integration site 1 but not site 2, where this position varies depending on the sequence of the last spacer inserted.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig7-v2.jpg)
 
-**Figure 7.:** The nucleotides participating in the disintegration reaction were varied systematically at the −2 position, which is a cytosine (Sso) or guanine (Eco) at integration site 1, and variable at integration site 2 (substrates 10, 12, 13, 14). (A) SsoCas1; (B) EcoCas1. Each substrate was incubated with Cas1 for 5, 10 and 30 min in reaction buffer prior to electrophoresis. C–control with no Cas1 added. (C) For EcoCas1, the clear preference for guanine at position −2 was confirmed by more detailed kinetic analysis (raw data provided in Figure 7—source data 1) as described for Figure 5.DOI: http://dx.doi.org/10.7554/eLife.08716.01210.7554/eLife.08716.013Figure 7—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08716.013
+**Figure 7.:** The nucleotides participating in the disintegration reaction were varied systematically at the −2 position, which is a cytosine (Sso) or guanine (Eco) at integration site 1, and variable at integration site 2 (substrates 10, 12, 13, 14). (A) SsoCas1; (B) EcoCas1. Each substrate was incubated with Cas1 for 5, 10 and 30 min in reaction buffer prior to electrophoresis. C–control with no Cas1 added. (C) For EcoCas1, the clear preference for guanine at position −2 was confirmed by more detailed kinetic analysis (raw data provided in Figure 7—source data 1) as described for Figure 5.
 
-## The incoming nucleotide
+### The incoming nucleotide
 
-We next checked for specificity at the 3′ end of the 5′ flap in the disintegration product, which corresponds to the 3′ end of the incoming spacer during integration. No sequence preference was detected for SsoCas1 (data not shown), which is consistent with the essentially random nature of the incoming DNA. During adaptation in
+We next checked for specificity at the 3′ end of the 5′ flap in the disintegration product, which corresponds to the 3′ end of the incoming spacer during integration. No sequence preference was detected for SsoCas1 (data not shown), which is consistent with the essentially random nature of the incoming DNA. During adaptation in E. coli, the incoming nucleotide at integration site 1 is expected to be random, but at site two is always a cytosine, where it completes the repeat sequence (Swarts et al., 2012). For EcoCas1, an adenine or cytosine was strongly favoured over guanine and particularly thymine (Figure 8), suggesting discrimination by EcoCas1 at this position.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig8-v2.jpg)
 
-**Figure 8.:** The nucleotide corresponding to the incoming 3′ end of the new spacer, which is the nucleotide at the 3′ end of the 5′-flap in the disintegration substrate, was varied systematically to determine its effect on the disintegration reaction catalysed by EcoCas1 (substrates 2, 3, 4, 5). C–control with no Cas1 added. Time points were 5, 10 and 30 min.DOI: http://dx.doi.org/10.7554/eLife.08716.014
+**Figure 8.:** The nucleotide corresponding to the incoming 3′ end of the new spacer, which is the nucleotide at the 3′ end of the 5′-flap in the disintegration substrate, was varied systematically to determine its effect on the disintegration reaction catalysed by EcoCas1 (substrates 2, 3, 4, 5). C–control with no Cas1 added. Time points were 5, 10 and 30 min.
 
-## Disintegration of authentic E. coli integration intermediates
+### Disintegration of authentic E. coli integration intermediates
 
-The substrates examined so far in this study do not correspond to the actual sequences encountered by EcoCas1 during integration. Accordingly, we constructed a pair of substrates that correspond to the products of integration when spacer 3 in the
+The substrates examined so far in this study do not correspond to the actual sequences encountered by EcoCas1 during integration. Accordingly, we constructed a pair of substrates that correspond to the products of integration when spacer 3 in the E. coli CRISPR array is integrated at site 1 (top strand) or site 2 (bottom strand) (Figure 9). These were constructed from oligonucleotides as before to generate disintegration substrates with a 5′ flap. Disintegration was analysed by denaturing gel electrophoresis, phosphorimaging and quantification of triplicate experiments. EcoCas1 disintegrated the site 1 substrate quickly, with the reaction reaching approximately 75% conversion in 3 min, which compares favorably with the best model sequence studied. Site 2 was also a good disintegration substrate, though it was converted significantly more slowly than site 1, perhaps due to the presence of a disfavored cytosine at position −1.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig9-v2.jpg)
 
-**Figure 9.:** E. coli integration intermediates.Disintegration substrates corresponding to the expected site 1 and site 2 integration products arising from the integration of spacer 3 into the CRISPR array were constructed and tested (spacer 3-1 and spacer 3-2 substrates). EcoCas1 processed both, with the rate of reaction significantly higher for the substrate corresponding to site 1 (the top strand) at the leader-repeat junction. Data points represent the means of triplicate experiments with standard errors shown (raw data provided in Figure 9—source data 1).DOI: http://dx.doi.org/10.7554/eLife.08716.01510.7554/eLife.08716.016Figure 9—source data 1.E. coli Site 1 vs Site 2 time course.DOI: http://dx.doi.org/10.7554/eLife.08716.016
+**Figure 9.:** Disintegration substrates corresponding to the expected site 1 and site 2 integration products arising from the integration of spacer 3 into the CRISPR array were constructed and tested (spacer 3-1 and spacer 3-2 substrates). EcoCas1 processed both, with the rate of reaction significantly higher for the substrate corresponding to site 1 (the top strand) at the leader-repeat junction. Data points represent the means of triplicate experiments with standard errors shown (raw data provided in Figure 9—source data 1).
 
 ## Discussion
 
@@ -114,11 +114,11 @@ Studies of the CRISPR spacer acquisition process in vivo have yielded many key i
 
 For the CRISPR adaptation process in vivo, integration occurs at the junction between the first repeat and the leader sequence, which immediately suggests a role for sequence specificity in the reaction. It has also been suggested that CRISPR repeat sequences, which are often palindromic, form four-way DNA junctions in supercoiled DNA, acting as a recognition signal for Cas1, a possibility that is supported by the observation that EcoCas1 can cut four-way DNA junctions in vitro (Babu et al., 2011), and the finding that spacer integration in a plasmid lacking a CRISPR locus occurs preferentially next to a palindromic site (Nuñez et al., 2015). However, a palindrome alone is not sufficient to support spacer insertion in E. coli in vivo (Arslan et al., 2014), and this also holds for the type II CRISPR system of Streptococcus thermophilus (Wei et al., 2015), suggesting that local sequence helps determine the integration site. Furthermore, some CRISPR repeat families, including many in archaea, have little or no palindromic nature and thus cannot form stable hairpin structures (Kunin et al., 2007). Cas1 therefore might be expected to act as a sequence specific integrase, although local DNA structure could also play a part.
 
-In support of this hypothesis, both
+In support of this hypothesis, both S. solfataricus and E. coli Cas1 catalyse a disintegration reaction with distinct, sequence specific properties. In particular, there is a clear preference for a guanine at position +1, corresponding to the first nucleotide of the repeat, suggesting that this residue is recognised specifically in the active site of Cas1. The specificity is particularly strong for EcoCas1, consistent with the presence of a guanine in the repeat sequence at the +1 site in both plus and minus strands. Preference for a guanine at the +1 nucleotide for EcoCas1 catalysed integration events has also been observed (Nuñez et al., 2015). For SsoCas1, a guanine at this position was preferred over a cytosine, which is the nucleotide present at the +1′ position on the minus strand, by a factor of five. Although the −1 position might also be expected to play a role in the selection of integration sites, deep sequencing data for integration catalysed by EcoCas1 revealed no sequence preference at this position (Nuñez et al., 2015). In agreement with this finding, we observed little evidence for sequence discrimination at the −1 position for the disintegration reactions catalysed by either enzyme, with the exception that EcoCas1 disfavours cytosine at this position (Figure 6B). A cytosine at position −1 is the expected residue on the minus strand, suggesting that the disintegration reaction may better reflect the reversal of integration at site 1 in the leader-repeat junction. Deep sequencing data for integration reactions catalysed by EcoCas1 in vitro did reveal a marked preference for a guanine at position −2 in the integration site (Nuñez et al., 2015). This corresponds well with the −2 position in the plus strand, which is part of the leader sequence and is a guanine in E. coli, but cannot hold for the minus strand where the −2′ position is inherently variable in nature. Disintegration of substrates mimicking the integration intermediates relevant for the integration of spacer 3 into the E. coli CRISPR array reinforce these conclusions, with site 1 on the plus strand processed significantly more quickly than site 2 on the bottom strand (Figure 9). Taken together, both the disintegration specificity and the deep sequencing data for integration support the hypothesis that integration is targeted to the leader-repeat 1 junction on the plus strand at least in part by the inherent sequence specificity of Cas1, which presumably involves specific recognition of these bases within the active site of the enzyme (Figure 10).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/08716/elife-08716-fig10-v2.jpg)
 
-**Figure 10.:** E. coli Cas1.The Cas 1-2 complex integrates new spacers via two joining reactions (1 and 2) at either end of the first CRISPR repeat, which differ in their sequence context. Disintegration activity by E. coli Cas1 shows clear preference for the sequence at site 1, with the guanines at position +1 and −2 particularly important. At site 2, the sequence context is not optimal for disintegration in vitro, leading to slower reaction rates. In the active site of Cas1, these nucleobases likely make specific interactions with catalytic residues, and the DNA duplex structure may be distorted.DOI: http://dx.doi.org/10.7554/eLife.08716.017
+**Figure 10.:** The Cas 1-2 complex integrates new spacers via two joining reactions (1 and 2) at either end of the first CRISPR repeat, which differ in their sequence context. Disintegration activity by E. coli Cas1 shows clear preference for the sequence at site 1, with the guanines at position +1 and −2 particularly important. At site 2, the sequence context is not optimal for disintegration in vitro, leading to slower reaction rates. In the active site of Cas1, these nucleobases likely make specific interactions with catalytic residues, and the DNA duplex structure may be distorted.
 
 For E. coli integration reactions in vitro, a marked preference for cytosine over thymine at the 3′ end of the protospacer was observed (Nuñez et al., 2015). Furthermore, protospacers with a cytosine at the 3′ end were preferentially incorporated into the minus strand at the junction between repeat 1 and spacer 1. These data are consistent with the requirement for protospacers to supply the final cytosine of the repeat on the minus strand during integration (Swarts et al., 2012). The deep sequencing data also revealed a marked preference for adenine over thymine at the 3′ end of the protospacer (Nuñez et al., 2015). For disintegration by EcoCas1, we observed a clear preference for adenine or cytosine at the equivalent position, whilst thymine did not support the disintegration reaction (Figure 8). Thus EcoCas1 appears to recognise the nucleotide at the 3′ end of the incoming DNA, although no such discrimination was observed for SsoCas1. A dinucleotide sequence ‘AA’ motif over-represented at the 3′ end of protospacers incorporated in E. coli strain BL21 has been described previously (Yosef et al., 2013).
 
@@ -128,24 +128,498 @@ In conclusion, we have shown that Cas1 from both S. solfataricus and E. coli hav
 
 ## Materials and methods
 
-## Cloning, gene expression and protein purification
+### Cloning, gene expression and protein purification
 
 The sso1450 (cas1) gene and sso1450a (cas2) genes were amplified from S. solfataricus P2 genomic DNA by PCR using primer pairs (5′-ATATAACCATGGCAAGCGTGAGGACTT; 5′-TATTGGATCCTCACATCACCAACTTGAAACCC) and (5′-GCGCCATGGTTACACTAACCATTCCTCTAATC; 5′-GGCCGGATCCTTGAAATTATTGGTAGTATATGAC), respectively. The amplified genes were cloned into the pEHisTEV vector (Liu and Naismith, 2009) downstream of a cleavable His6-tag using NcoI and BamHI restriction sites. Site-directed mutagenesis was carried out on the vector containing sso1450 to mutate active site residue glutamic acid 142 to an alanine using the oligonucleotide sequence 5′-GTTGGATAAGGATGCACCGGCTGCTGCTAG. Standard site-directed mutagenesis protocols (QuikChange, Stratagene, La Jolla, CA, United States) were followed. Mutations were confirmed by sequencing (GATC Biotech, Constance, Germany). The constructs were expressed in C43 (DE3) E. coli cells grown in LB (Luria-Bertani) medium supplemented with 35 µg/ml kanamycin to an OD600 of 0.6–0.8 at 37°C. Expression was then induced by the addition of 0.4 mM isopropyl-β-D-thiogalactopyranoside (IPTG) and overnight incubation with shaking at 25°C. Cells were harvested (8000×g, 20 min) and resuspended in lysis buffer (4.5 mM NaH2PO4, 15 mM Na2HPO4 [pH 7.5], 500 mM NaCl, 30 mM imidazole, 1% Triton-X and protease inhibitors [Roche Applied Science, Basel, Switzerland]). Cells were lysed by sonication, the lysate cleared by ultracentrifugation (90,000×g, 35 min) and the supernatant filtered though a 0.22 µm syringe filter and loaded on to a HP HisTrap 5 ml column (GE Healthcare, Little Chalfont, United Kingdom) equilibrated in buffer A (4.5 mM NaH2PO4, 15 mM Na2HPO4 [pH 7.5], 500 mM NaCl, 30 mM imidazole). The His-tagged protein of interest was eluted with a linear gradient from 30 to 500 mM imidazole. Fractions containing Cas1 (or Cas2) were concentrated and buffer exchanged into buffer A, using centrifugal concentrators (30 kDa cutoff, Vivaspin, Sartorius Stedim Biotech GmbH, Goettingen, Germany). His-tags were cleaved by the addition of TEV protease (1:10 ratio of TEV:protein) and overnight incubation at room temperature. The cleaved protein was passed through a HisTrap column in buffer A, and the cleaved protein collected in the flow through. The final purification step was gel filtration on a 26/60 Superdex 200 prep grade column (GE Healthcare) in buffer C (20 mM Tris-HCL (pH 7.5), 500 mM NaCl, 0.5 mM DTT, 1 mM EDTA, 10% glycerol). Purified and concentrated protein samples were flash frozen and stored at −80°C.
 
 Genes encoding E. coli K-12 MG1655 Cas1 (ygbT) and Cas2 (ygbF) were amplified by PCR from genomic DNA using the PCR primer pairs (5′-GGAATTCCATATGACCTGGCTTCCCCTTAATC; 5′-GGAATTCTCAGCTACTCCGATGGCCTGC) and (5′-GGAATTCCATATGAGTATGTTGGTCGTGGTCAC; 5′-GGAATTCTCAAACAGGTAAAAAAGACAC), respectively. Each PCR product was subcloned into protein expression plasmid pET14b using restriction enzyme NdeI and EcoRI. EcoCas1 and Cas2 proteins were over-produced individually in strain BL21 AI (Life Technologies, Carlsbad, CA, United States), each with N-terminal (His)6 tags. Cells were grown at 37°C to OD600 0.5–0.6 in LB broth containing ampicillin (50 µg/ml) and induced using IPTG (1 mM) and arabinose (0.2% wt/vol), with growth continued for 3 hr after induction. Cas1 or Cas2 expressing cells were harvested for re-suspension in buffer H (20 mM Tris.HCl pH7.5, 500 mM NaCl, 5 mM imidazole, 10% glycerol) and flash frozen in liquid nitrogen for storage at −80°C until required. The first purification step was identical for both Cas1 and Cas2: sonicated biomass was clarified by centrifugation (90,000×g, 25 min) and soluble extract was passed into a 5 ml Hi-Trap Nickel chelating column (GE Healthcare) equilibrated with buffer H. Cas1 or Cas2 eluted at 70–100 mM imidazole in a linear imidazole gradient. Sodium chloride was reduced to 50 mM by dialysis against buffer S (20 mM Tris.HCl pH7.5, 50 mM NaCl, 1 mM DTT, 10% glycerol). Cas1 was loaded onto a 5 ml Hi-Trap heparin column and eluted in a gradient of NaCl at 200–300 mM in buffer S. Pooled Cas1 fractions were loaded directly onto a S300 size exclusion column equilibrated in buffer S with 250 mM NaCl. Cas1 fractions were pooled for storage at −80°C in buffer S containing 250 mM NaCl and 40% glycerol. Desalted Cas2 eluted from Ni-NTA was dialyzed into buffer S containing 1.5 M NaCl and applied to a 5 ml Hi-Trap butyl-Sepharose column (GE Healthcare), eluting in the flow through. Cas2 fractions were pooled and loaded directly onto a S300 size exclusion column equilibrated in buffer S with 250 mM NaCl. Following isocratic elution, Cas2 fractions were pooled and stored as for Cas1.
 
-## Sequence and preparation of DNA substrates
+### Sequence and preparation of DNA substrates
 
-Substrates were purchased from Integrated DNA Technologies (Coralville, IA, United States) either unlabeled or with a 3′-fluorescein label (Table 1). Oligonucleotides were 5′-32P-radiolabelled and gel purified as described previously (Hutton et al., 2010). Labelled oligonucleotides were annealed with complementary strands by heating with an excess of unlabelled strands at 95°C for 5 min and then slow cooling to room temperature overnight in a heating block. The assembled substrates (Table 2) were purified by native polyacrylamide (12%) gel electrophoresis with 1× Tris-borate-EDTA (TBE) buffer, followed by band excision, gel extraction and ethanol precipitation before being resuspended in nuclease free water, as described previously (Hutton et al., 2010). The final substrate concentration was measured using the extinction coefficient and absorbance at 260 nm in a UV-Vis spectrophotometer (Varian Cary, Agilent, Santa Clara, CA, United States) and DNA diluted to ∼50 nM or ∼200 nM final concentration for use in assays.10.7554/eLife.08716.018Table 1.Sequence of oligonucleotides used for substrate constructionDOI: http://dx.doi.org/10.7554/eLife.08716.018StrandSequence 5′→3′Length1aTAGTAAGAGATTAATAAACCCTCAGATAATCTCTTATAGAATTGAAAGTTCGG531bTTTTTTTTTTTTTTTTTTATTATCTGAGGGTTTATTAATCTCTTACTA481cCCGAACTTTCAATTCTATAAGAG232aTAGTAAGAGATTAATAAACCCTCAGATAACCTCTTATAGAATTGAAAGTTCGG532bTTTTTTTTTTTTTTTTTTGTTATCTGAGGGTTTATTAATCTCTTACTA483bTTTTTTTTTTTTTTTTTAGTTATCTGAGGGTTTATTAATCTCTTACTA484bTTTTTTTTTTTTTTTTTCGTTATCTGAGGGTTTATTAATCTCTTACTA485bTTTTTTTTTTTTTTTTTGGTTATCTGAGGGTTTATTAATCTCTTACTA486aTAGTAAGAGATTAATAAACCCTCAGATAAGCTCTTATAGAATTGAAAGTTCGG536bTTTTTTTTTTTTTTTTTACTTATCTGAGGGTTTATTAATCTCTTACTA487aTAGTAAGAGATTAATAAACCCTCAGATAAACTCTTATAGAATTGAAAGTTCGG537bTTTTTTTTTTTTTTTTTATTTATCTGAGGGTTTATTAATCTCTTACTA488bTTTTTTTTTTTTTTTTTAATTATCTGAGGGTTTATTAATCTCTTACTA489aTAGTAAGAGATTAATAAACCCTCAGATAACATCTTATAGAATTGAAAGTTCGG539cCCGAACTTTCAATTCTATAAGAT2310aTAGTAAGAGATTAATAAACCCTCAGATAACTTCTTATAGAATTGAAAGTTCGG5310cCCGAACTTTCAATTCTATAAGAA2311aTAGTAAGAGATTAATAAACCCTCAGATAACGTCTTATAGAATTGAAAGTTCGG5311cCCGAACTTTCAATTCTATAAGAC2312aTAGTAAGAGATTAATAAACCCTCAGATAACTCCTTATAGAATTGAAAGTTCGG5312cCCGAACTTTCAATTCTATAAGGA2313aTAGTAAGAGATTAATAAACCCTCAGATAACTGCTTATAGAATTGAAAGTTCGG5313cCCGAACTTTCAATTCTATAAGCA2314aTAGTAAGAGATTAATAAACCCTCAGATAACTACTTATAGAATTGAAAGTTCGG5314cCCGAACTTTCAATTCTATAAGTA23SacI-aTAGTAAGAGATTAATAAACCCTCAGATGAGCTCTTATAGAATTGAAAGTTCGG53SacI-bTTTTTTTTTTTTTTCTCATCTGAGGGTTTATTAATCTCTTACTA441b-3′-FAMTTTTTTTTTTTTTTATTATCTGAGGGTTTATTAATCTCTTACTA-FAM4819aCCTCGAGGGATCCGTCCTAGCAAGCCGCTGCTACCGGAAGCTTCTGGACC5019bGCTCGAGTCTAGACTGCAGTTGAGAGCTTGCTAGGACGGATCCCTCGAGG5019cGGTCCAGAAGCTTCCGGTAGCAGCG2520d-10AGTCTAGACTCGAGC1520d-5ACTGCAGTCTAGACTCGAGC2020dTCTCAACTGCAGTCTAGACTCGAGC2525c-dGGTCCAGAAGCTTCCGGTAGCAGCGTCTCAACTGCAGTCTAGACTCGAGC501c-3′PCCGAACTTTCAATTCTATAAGAG-phos25Sp3-1aCTGGCGCGGGGAACTCTCTAAAAGTATACATTTGTTCTT39Sp3-1bTGTAATTGATAATGTTGAGAGTTCCCCGCGCCAG34Sp3-1cAAGAACAAATGTATACTTTTAGA23Sp3-2aCCAGCGGGGATAAACCGTTTGGATCGGGTCTGGAATTTC39Sp3-2bTGTTCCGACAGGGAGCCCGGTTTATCCCCGCTGG34Sp3-2cGAAATTCCAGACCCGATCCAAAC2310.7554/eLife.08716.019Table 2.DNA constructs used in this studyDOI: http://dx.doi.org/10.7554/eLife.08716.019SubstrateOligonucleotide componentsJunction sequence−2−11ICSubstrate 11a, 1b, 1cAGATSubstrate 1-FAM1a, 1b-3′-FAM, 1cAGATSacI substrateSacI-a, SacI-b, 1cAGCTSubstrate 22a, 2b, 1cAGGTSubstrate 32a, 3b, 1cAGGA3′-phos substrate2a, 3b, 1c-3′PAGGASubstrate 42a, 4b, 1cAGGCSubstrate 52a, 5b, 1cAGGGSubstrate 66a, 6b, 1cAGCASubstrate 77a, 7b, 1cAGTASubstrate 81a, 8b, 1cAGAASubstrate 99a, 3b, 9cATGASubstrate 1010a, 3b, 10cAAGASubstrate 1111a, 3b, 11cACGASubstrate 1212a, 3b, 12cGAGASubstrate 1313a, 3b, 13cCAGASubstrate 1414a, 3b, 14cTAGASubstrate 152a, 4b, 1cAGGCSubstrate 1611a, 4b, 11cACGCSubstrate 1710a, 4b, 10cAAGCSubstrate 189a, 4b, 9cATGCSubstrate 1919a, 19b, 19cCGGAGap1019a, 19b, 19c, 20d-10CGGAGap519a, 19b, 19c, 20d-5CGGANick19a, 19b, 19c, 20dCGGAY-junction19a, 19b, 20c-dCGGASpacer 3-1 substrateSp3-1a, Sp3-1b, Sp3-1cGAGASpacer 3-2 substrateSp3-2a, Sp3-2b, Sp3-2cACGCThe sequence of the central portion of the junction (positions −2, −1, 1 and the incoming nucleotide (IC)) for each substrate is shown. The oligonucleotides used to assemble the complete substrate are indicated.
+Substrates were purchased from Integrated DNA Technologies (Coralville, IA, United States) either unlabeled or with a 3′-fluorescein label (Table 1). Oligonucleotides were 5′-32P-radiolabelled and gel purified as described previously (Hutton et al., 2010). Labelled oligonucleotides were annealed with complementary strands by heating with an excess of unlabelled strands at 95°C for 5 min and then slow cooling to room temperature overnight in a heating block. The assembled substrates (Table 2) were purified by native polyacrylamide (12%) gel electrophoresis with 1× Tris-borate-EDTA (TBE) buffer, followed by band excision, gel extraction and ethanol precipitation before being resuspended in nuclease free water, as described previously (Hutton et al., 2010). The final substrate concentration was measured using the extinction coefficient and absorbance at 260 nm in a UV-Vis spectrophotometer (Varian Cary, Agilent, Santa Clara, CA, United States) and DNA diluted to ∼50 nM or ∼200 nM final concentration for use in assays.
 
-## Disintegration reactions
+**Table 1.**
+ Sequence of oligonucleotides used for substrate construction
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strand</th>
+      <th>Sequence 5′→3′</th>
+      <th>Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAATCTCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>1b</td>
+      <td>TTTTTTTTTTTTTTTTTTATTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>1c</td>
+      <td>CCGAACTTTCAATTCTATAAGAG</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>2a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAACCTCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>2b</td>
+      <td>TTTTTTTTTTTTTTTTTTGTTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>3b</td>
+      <td>TTTTTTTTTTTTTTTTTAGTTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>4b</td>
+      <td>TTTTTTTTTTTTTTTTTCGTTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>5b</td>
+      <td>TTTTTTTTTTTTTTTTTGGTTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>6a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAAGCTCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>6b</td>
+      <td>TTTTTTTTTTTTTTTTTACTTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>7a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAAACTCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>7b</td>
+      <td>TTTTTTTTTTTTTTTTTATTTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>8b</td>
+      <td>TTTTTTTTTTTTTTTTTAATTATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>9a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAACATCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>9c</td>
+      <td>CCGAACTTTCAATTCTATAAGAT</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>10a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAACTTCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>10c</td>
+      <td>CCGAACTTTCAATTCTATAAGAA</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>11a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAACGTCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>11c</td>
+      <td>CCGAACTTTCAATTCTATAAGAC</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>12a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAACTCCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>12c</td>
+      <td>CCGAACTTTCAATTCTATAAGGA</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>13a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAACTGCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>13c</td>
+      <td>CCGAACTTTCAATTCTATAAGCA</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>14a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATAACTACTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>14c</td>
+      <td>CCGAACTTTCAATTCTATAAGTA</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>SacI-a</td>
+      <td>TAGTAAGAGATTAATAAACCCTCAGATGAGCTCTTATAGAATTGAAAGTTCGG</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>SacI-b</td>
+      <td>TTTTTTTTTTTTTTCTCATCTGAGGGTTTATTAATCTCTTACTA</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>1b-3′-FAM</td>
+      <td>TTTTTTTTTTTTTTATTATCTGAGGGTTTATTAATCTCTTACTA-FAM</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>19a</td>
+      <td>CCTCGAGGGATCCGTCCTAGCAAGCCGCTGCTACCGGAAGCTTCTGGACC</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>19b</td>
+      <td>GCTCGAGTCTAGACTGCAGTTGAGAGCTTGCTAGGACGGATCCCTCGAGG</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>19c</td>
+      <td>GGTCCAGAAGCTTCCGGTAGCAGCG</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>20d-10</td>
+      <td>AGTCTAGACTCGAGC</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>20d-5</td>
+      <td>ACTGCAGTCTAGACTCGAGC</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>20d</td>
+      <td>TCTCAACTGCAGTCTAGACTCGAGC</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>25c-d</td>
+      <td>GGTCCAGAAGCTTCCGGTAGCAGCGTCTCAACTGCAGTCTAGACTCGAGC</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>1c-3′P</td>
+      <td>CCGAACTTTCAATTCTATAAGAG-phos</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Sp3-1a</td>
+      <td>CTGGCGCGGGGAACTCTCTAAAAGTATACATTTGTTCTT</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>Sp3-1b</td>
+      <td>TGTAATTGATAATGTTGAGAGTTCCCCGCGCCAG</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Sp3-1c</td>
+      <td>AAGAACAAATGTATACTTTTAGA</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Sp3-2a</td>
+      <td>CCAGCGGGGATAAACCGTTTGGATCGGGTCTGGAATTTC</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>Sp3-2b</td>
+      <td>TGTTCCGACAGGGAGCCCGGTTTATCCCCGCTGG</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Sp3-2c</td>
+      <td>GAAATTCCAGACCCGATCCAAAC</td>
+      <td>23</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ DNA constructs used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Substrate</th>
+      <th rowspan="2">Oligonucleotide components</th>
+      <th colspan="4">Junction sequence</th>
+    </tr>
+    <tr>
+      <th>−2</th>
+      <th>−1</th>
+      <th>1</th>
+      <th>IC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Substrate 1</td>
+      <td>1a, 1b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Substrate 1-FAM</td>
+      <td>1a, 1b-3′-FAM, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>SacI substrate</td>
+      <td>SacI-a, SacI-b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>C</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Substrate 2</td>
+      <td>2a, 2b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Substrate 3</td>
+      <td>2a, 3b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>3′-phos substrate</td>
+      <td>2a, 3b, 1c-3′P</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 4</td>
+      <td>2a, 4b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Substrate 5</td>
+      <td>2a, 5b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Substrate 6</td>
+      <td>6a, 6b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 7</td>
+      <td>7a, 7b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>T</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 8</td>
+      <td>1a, 8b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 9</td>
+      <td>9a, 3b, 9c</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 10</td>
+      <td>10a, 3b, 10c</td>
+      <td>A</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 11</td>
+      <td>11a, 3b, 11c</td>
+      <td>A</td>
+      <td>C</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 12</td>
+      <td>12a, 3b, 12c</td>
+      <td>G</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 13</td>
+      <td>13a, 3b, 13c</td>
+      <td>C</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 14</td>
+      <td>14a, 3b, 14c</td>
+      <td>T</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Substrate 15</td>
+      <td>2a, 4b, 1c</td>
+      <td>A</td>
+      <td>G</td>
+      <td>G</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Substrate 16</td>
+      <td>11a, 4b, 11c</td>
+      <td>A</td>
+      <td>C</td>
+      <td>G</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Substrate 17</td>
+      <td>10a, 4b, 10c</td>
+      <td>A</td>
+      <td>A</td>
+      <td>G</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Substrate 18</td>
+      <td>9a, 4b, 9c</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Substrate 19</td>
+      <td>19a, 19b, 19c</td>
+      <td>C</td>
+      <td>G</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Gap10</td>
+      <td>19a, 19b, 19c, 20d-10</td>
+      <td>C</td>
+      <td>G</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Gap5</td>
+      <td>19a, 19b, 19c, 20d-5</td>
+      <td>C</td>
+      <td>G</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Nick</td>
+      <td>19a, 19b, 19c, 20d</td>
+      <td>C</td>
+      <td>G</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Y-junction</td>
+      <td>19a, 19b, 20c-d</td>
+      <td>C</td>
+      <td>G</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Spacer 3-1 substrate</td>
+      <td>Sp3-1a, Sp3-1b, Sp3-1c</td>
+      <td>G</td>
+      <td>A</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Spacer 3-2 substrate</td>
+      <td>Sp3-2a, Sp3-2b, Sp3-2c</td>
+      <td>A</td>
+      <td>C</td>
+      <td>G</td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
+
+_The sequence of the central portion of the junction (positions −2, −1, 1 and the incoming nucleotide (IC)) for each substrate is shown. The oligonucleotides used to assemble the complete substrate are indicated._
+
+### Disintegration reactions
 
 Reactions were typically carried out under single turnover conditions. Titration of SsoCas1 (Figure 3B,C) showed evidence for inhibition at enzyme:substrate ratios above 10:1. For standard assays, 2 μM Cas1 protein was mixed with 200 nM substrate in cleavage buffer (20 mM Tris [pH 7.5], 10 mM NaCl, 1 mM DTT and 5 mM MnCl2) and incubated at 55°C (for SsoCas1) or 37°C (for EcoCas1). For reactions with Cas1 and Cas2, the proteins were mixed in equimolar concentration and incubated together at either 37 or 55°C for 30 min before being added to the reaction. At indicated times, reactions were quenched by the addition of EDTA to 20 mM final concentration and 1 μl 20 mg/ml Proteinase K (Promega, Madison, WI, United States) and incubation at 37°C for 30 min. The DNA was then separated from the reaction by phenol chloroform extraction. 60 μl neutral phenol:chloroform:isoamyl alcohol (Sigma–Aldrich, St. Louis, MO, United States) was added and the reaction vortexed for 30 s. The sample was then centrifuged (15,000×g, 1 min) and the upper aqueous phase, containing the DNA, collected. Formamide loading dye (100% formamide with 0.25% bromophenol blue, 0.25% xylene cyanol) was added (5 µl) and the sample heated at 95°C for 2 min before being chilled on ice. Reaction products were resolved on a pre-run 20% denaturing (7 M urea) polyacrylamide gel containing 1× TBE in 1× TBE buffer. Gels were run at 80 W, 45°C for 90 min before overnight exposure to a phosphorimaging plate and imaging with a FLA-5000 Imaging System (Fujifilm Life Science, Düsseldorf, Germany).
 
-## SacI site repair
+### SacI site repair
 
 Assays with the SacI junction substrate were carried out under standard conditions with SsoCas1 for 30 min. FastDigest SacI enzyme (1 μl) and 1 μl FastDigest Buffer (Thermo Scientific, Waltham, MA, United States) were then added and the reaction incubated at 37°C for 30 min. Product extraction, separation and visualization was then carried out as described above.
 
-## Disintegration reaction time courses
+### Disintegration reaction time courses
 
 For the time course assays, the concentration of DNA substrates was 50 nM and the concentration of Cas1 protein 50 nM for SsoCas1 or 500 nM for EcoCas1. Reactions were performed as described above with the omission of the Proteinase K step. Following phosphorimaging, substrates and products were quantified using Image Gauge software (Fujifilm) and the reaction course was plotted using Kaleidagraph (Synergy Software, Reading, PA, United States). Experiments were carried out in triplicate and the mean and standard error calculated for each point. For SsoCas1, the data were fitted using a single exponential (Niewoehner et al., 2014). For EcoCas1 the reactions did not go to completion and were therefore fitted with a floating end-point, as described previously (Niewoehner et al., 2014).

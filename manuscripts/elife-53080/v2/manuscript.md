@@ -52,7 +52,7 @@ The main in-vitro, animal, and human studies described above suggest that both c
 
 ## Results
 
-## Study volunteers and serum sampling
+### Study volunteers and serum sampling
 
 In total, 92 serum samples from 46 volunteers enrolled in the BSPZV1 study (all volunteers from group 2 and group 3 in the clinical trial [Jongo et al., 2018]) were probed on Pf whole proteome microarrays, including samples collected at baseline (before vaccination) and 2 weeks after last immunization (Figure 1). Eight non-vaccinated placebo controls, 18 volunteers who were immunized with the lower PfSPZ Vaccine dose (group 2) and 20 volunteers who received the higher PfSPZ Vaccine dose (group 3) were included (Figure 1; Jongo et al., 2018). All volunteers included in the study had no parasitemia at the start of the study (measured by malaria thick blood smears (TBS)) and no parasitemia before CHMI (measured by TBS and the more sensitive qPCR) (Jongo et al., 2018). Additional exclusion criteria included history of malaria in the previous 5 years or antibodies to PfEXP1 by ELISA above a threshold level (Jongo et al., 2018) associated with recent infection by CHMI (Shekalaghe et al., 2014).
 
@@ -60,7 +60,7 @@ In total, 92 serum samples from 46 volunteers enrolled in the BSPZV1 study (all 
 
 **Figure 1.:** Three arms of a randomized, double-blind Phase 1 trial of PfSPZ Vaccine were selected for antibody profiling on Pf whole proteome microarrays: normal saline controls, a lower dose (group 2, 1.35 × 105 PfSPZ Vaccine/dose) and a higher dose (group 3, 2.7 × 105 PfSPZ Vaccine/dose). Serum samples were collected before immunization and 2 weeks after the final immunization. Information on the protection status of the volunteers after a 3 week post-immunization CHMI is provided. #Masking included participant, care provider, investigator and outcome assessor. *Samples were unavailable for protein array screening from two group 2 volunteers, one did not receive the 5th immunization dose and one left the country before CHMI (Jongo et al., 2019). All volunteers in the clinical trial who received 5 doses of immunization and who underwent CHMI 3 weeks after last immunization dose were included in the current analysis.
 
-## Tanzanian male adults recognize a high diversity of pf proteins
+### Tanzanian male adults recognize a high diversity of pf proteins
 
 Across the 7455 Pf full length or fragmented proteins, 2804 probes corresponding to 2239 Pf proteins were considered as reactive antigens in the 92 samples tested for having a seropositive response (normalized signal intensity ≥1) in at least 10% of volunteers at either or both time points.
 
@@ -68,11 +68,11 @@ First, we examined the antibody profiles for each volunteer individually and the
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig2-v2.jpg)
 
-**Figure 2.:** The heatmap of the normalized signal intensities of each sample per subject is shown in (a), with the signal intensity of each protein or fragment (rows) displayed for the samples before and after immunization of each volunteer (columns). The colored column headers represent volunteers ordered according to treatment allocation. 8 subjects of the control group (black), CHMI unprotected subjects of group 2 (n = 17, yellow), unprotected subjects of group 3 (n = 16, blue), CHMI protected subjects (n = 5, green). The first and second columns for each subject display the results obtained from baseline and after immunization samples, respectively. The # indicates volunteers BSPZV1-360, BSPZV1-104 and BSPZV1-117. (b) A t-SNE projected dimensionality reduction of normalized signal intensities across the microarray spots measured at baseline (triangles) and after PfSPZ vaccination (crosses) is shown. In (b-i) data are shown for the total 2804 reactive spots and in (b-ii) for the subset of 441 reactive proteins fragments predicted to be expressed at the sporozoite stage (Florens et al., 2002), with the signals obtained for each subject at the two bleeding time points grouped in circles. For 3 out of 46 subjects, namely BSPZV1-360, BSPZV1-104 and BSPZV1-117, the signals do not cluster in this t-SNE analysis.Figure 2—source data 1.This table includes log2 signal intensities of each of the 7’455 protein spots for all samples. Serum draw, immunization dose, protection after CHMI, and description of each protein fragment are specified.
+**Figure 2.:** The heatmap of the normalized signal intensities of each sample per subject is shown in (a), with the signal intensity of each protein or fragment (rows) displayed for the samples before and after immunization of each volunteer (columns). The colored column headers represent volunteers ordered according to treatment allocation. 8 subjects of the control group (black), CHMI unprotected subjects of group 2 (n = 17, yellow), unprotected subjects of group 3 (n = 16, blue), CHMI protected subjects (n = 5, green). The first and second columns for each subject display the results obtained from baseline and after immunization samples, respectively. The # indicates volunteers BSPZV1-360, BSPZV1-104 and BSPZV1-117. (b) A t-SNE projected dimensionality reduction of normalized signal intensities across the microarray spots measured at baseline (triangles) and after PfSPZ vaccination (crosses) is shown. In (b-i) data are shown for the total 2804 reactive spots and in (b-ii) for the subset of 441 reactive proteins fragments predicted to be expressed at the sporozoite stage (Florens et al., 2002), with the signals obtained for each subject at the two bleeding time points grouped in circles. For 3 out of 46 subjects, namely BSPZV1-360, BSPZV1-104 and BSPZV1-117, the signals do not cluster in this t-SNE analysis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig3-v2.jpg)
 
-**Figure 3.:** Breadth of Pf-specific antibody responses per volunteer (a) before and (b) after PfSPZ vaccination, stratified according to intervention and ordered according to their respective number of seropositive responses from highest to lowest. In (c) boxplots show median, interquartile range (IQR) and 1.5xIQR limits of the antibody breadth grouped by study arm and time point, means for each group are represented by red lines, and an estimated fold change with p-value from the inverted beta-binomial test are indicated for each group. Breadth of each volunteer are indicated by dashed lines. Controls, group 2 (1.35 × 105 PfSPZ Vaccine/dose) and group 3 (2.7 × 105 PfSPZ Vaccine/dose) volunteers are marked in black, yellow and blue, respectively. Results of the five CHMI protected individuals are highlighted in green (light green in group 2).Figure 3—source data 1.Figure 3—source data 2.An estimated effect of immunization on breadth and corresponding p-value performing the inverted beta-binomial test for paired count data using sample at basdeline and after immunization are shown in A, together with the mean and median breadth for each group at baseline and after immunization, and for the protected and unprotected group. (B) indicates the estimated regression coefficient and corresponding p values of the negative binomial regression to test differences in breadth between two groups at either baseline or after immunization.
+**Figure 3.:** Breadth of Pf-specific antibody responses per volunteer (a) before and (b) after PfSPZ vaccination, stratified according to intervention and ordered according to their respective number of seropositive responses from highest to lowest. In (c) boxplots show median, interquartile range (IQR) and 1.5xIQR limits of the antibody breadth grouped by study arm and time point, means for each group are represented by red lines, and an estimated fold change with p-value from the inverted beta-binomial test are indicated for each group. Breadth of each volunteer are indicated by dashed lines. Controls, group 2 (1.35 × 105 PfSPZ Vaccine/dose) and group 3 (2.7 × 105 PfSPZ Vaccine/dose) volunteers are marked in black, yellow and blue, respectively. Results of the five CHMI protected individuals are highlighted in green (light green in group 2).
 
 To further investigate the breadth of humoral immune response against the 2804 peptides, the total number of peptides regarded as sero-reactive per sample were analyzed (Figure 3). Antigen recognition varied widely among individuals, with breadth of humoral immune response ranging from 187 to 2360 reactive antigens across all samples before immunization, and from 217 to 1535 and 187 to 1965 reactive antigens per volunteer in group 2 and group 3, respectively, after PfSPZ Vaccination (Figure 3a–b). Median antibody breadth from the PfSPZ-immunized volunteers across both immunization groups was 720 and 669 reactive peptide features recognized before and after immunization, respectively.
 
@@ -80,15 +80,183 @@ The effect of vaccination on breadth was analyzed by comparing breadth between t
 
 To assess the biological characteristics of this large number of reactive proteins, we used the DeepLoc method for in silico prediction of protein subcellular localization using the 3D7 protein amino acid sequences (Almagro Armenteros et al., 2017; Table 1). Numerous reactive proteins predicted to be exported (n = 53) or cell membrane associated (n = 208) were identified. The majority of reactive antigens were predicted to be intracellular proteins (n = 1978). However, many of the well-known proteins present in the parasite organelles such as rhoptries and micronemes and proteins exported to the surface of infected erythrocytes such as PfEMP1 variants were predicted to be localized intracellularly, which shows that the currently available prediction algorithms remain limited by complex parasite biology. The full list of reactive antigens and DeepLoc subcellular localization predictions is shown in Table 1—source data 1.
 
-## Moderate increase in antigen recognition following immunization with PfSPZ vaccine
+**Table 1.**
+ Intracellular proteins are the most abundant reactive proteins.The frequencies of reactive antigens allocated into the different subcellular localization categories (rows) for each group (columns), tested using 2-propotions Z-test and p-values adjusted using the Benjamini-Hochberg method (BH) (Benjamini and Hochberg, 1995), are shown (for all reactive proteins with p-values<0.05). Column two indicate the total number of reactive antigens, and columns 3–8 detail the number of significantly differentially reactive proteins localized in each compartment across samples before immunization, after immunization, in the protected group before and after immunization, in the unprotected group before and after immunization, respectively. The first row shows extracellular proteins, the second row is cell membrane associated proteins and the following rows are predicted intracellular proteins split according to subcellular localisation. The percentage of the reactive proteins found in each group compared to all samples (first column) are indicated in parenthesis.Table 1—source data 1.The full list of reactive antigens and DeepLoc subcellular localization predictions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Subcellularlocalization</th>
+      <th>N reactive proteins</th>
+      <th>Baseline reactivity</th>
+      <th>Post-Immz reactivity</th>
+      <th>Baseline reactivity (protected)</th>
+      <th>Post-Immz reactivity (protected)</th>
+      <th>Baseline reactivity (unprotected)</th>
+      <th>Post-Immz reactivity (unprotected)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Extracellular</td>
+      <td>53</td>
+      <td>3 (6%)</td>
+      <td>3 (6%)</td>
+      <td>10 (19%)</td>
+      <td>12 (23%)</td>
+      <td>3 (6%)</td>
+      <td>3 (6%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell membrane</td>
+      <td>208</td>
+      <td>11 (5%)</td>
+      <td>8 (4%)</td>
+      <td>63 (30%)</td>
+      <td>70 (34%)</td>
+      <td>10 (5%)</td>
+      <td>5 (2%)</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Intracellular (N = 1978)</td>
+      <td>Cytoplasm</td>
+      <td>661</td>
+      <td>14 (2%)</td>
+      <td>16 (2%)</td>
+      <td>73 (11%)</td>
+      <td>79 (12%)</td>
+      <td>12 (2%)</td>
+      <td>14 (2%)</td>
+    </tr>
+    <tr>
+      <td>Endoplasmic reticulum</td>
+      <td>429</td>
+      <td>12 (3%)</td>
+      <td>11 (3%)</td>
+      <td>53 (12%)</td>
+      <td>60 (14%)</td>
+      <td>11 (3%)</td>
+      <td>10 (2%)</td>
+    </tr>
+    <tr>
+      <td>Golgi apparatus</td>
+      <td>76</td>
+      <td>2 (3%)</td>
+      <td>2 (3%)</td>
+      <td>13 (17%)</td>
+      <td>15 (20%)</td>
+      <td>2 (3%)</td>
+      <td>2 (3%)</td>
+    </tr>
+    <tr>
+      <td>Lysosome/Vacuole</td>
+      <td>32</td>
+      <td>1 (3%)</td>
+      <td>1 (3%)</td>
+      <td>3 (9%)</td>
+      <td>2 (6%)</td>
+      <td>1 (3%)</td>
+      <td>1 (3%)</td>
+    </tr>
+    <tr>
+      <td>Mitochondrion</td>
+      <td>150</td>
+      <td>3 (2%)</td>
+      <td>3 (2%)</td>
+      <td>11 (7%)</td>
+      <td>14 (9%)</td>
+      <td>3 (2%)</td>
+      <td>3 (2%)</td>
+    </tr>
+    <tr>
+      <td>Nucleus</td>
+      <td>624</td>
+      <td>24 (4%)</td>
+      <td>20 (3%)</td>
+      <td>107 (17%)</td>
+      <td>115 (18%)</td>
+      <td>17 (3%)</td>
+      <td>18 (3%)</td>
+    </tr>
+    <tr>
+      <td>Peroxisome</td>
+      <td>3</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+    </tr>
+    <tr>
+      <td>Plastid</td>
+      <td>3</td>
+      <td>2 (67%)</td>
+      <td>2 (67%)</td>
+      <td>2 (67%)</td>
+      <td>2 (67%)</td>
+      <td>2 (67%)</td>
+      <td>2 (67%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>2239</td>
+      <td>72 (3%)</td>
+      <td>66 (3%)</td>
+      <td>335 (15%)</td>
+      <td>369 (16%)</td>
+      <td>61 (3%)</td>
+      <td>58 (3%)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Moderate increase in antigen recognition following immunization with PfSPZ vaccine
 
 To investigate potential vaccine induced increase in antigen immunogenicity, we compared mean reactivity of each antigen 2 weeks after immunization in relation to the baseline responses, grouped according to treatment intervention (Figure 4a–c). Reactivity against most antigens decreased after immunization in group 2 and in the placebo group during the ~24 week time interval between the two comparison time points, although not significantly when adjusted for the false discovery rate (FDR) with the Benjamini-Hochberg method (BH) (Benjamini and Hochberg, 1995; Figure 4a,b), which aligns with the observed slight decrease in breadth of immune response following immunization. Antibodies binding to the Pf circumsporozoite protein (CSP) increased in group 2 and higher in group 3, although not significantly when adjusted for FDR (unadjusted p-value of 4.4 ∗ 10-4 [adjusted: 0 .42] and 2.1 ∗ 10−5 [adjusted: 0.06] for the t-test in group 2 and group 3, respectively) (Figure 4c). The mean negative value for PfCSP immunogenicity at baseline (before immunization, mean intensity = −0.73) suggests that very limited anti-PfCSP responses existed at baseline, with no significant differences between the study groups observed. Notably, the nonsignificant trend for reactivity decline observed in controls in almost all protein fragments of group 2 was not present in group 3.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig4-v2.jpg)
+
+**Figure 4.:** The three volcano plots in the upper row show (a) the mean fold change in the control group (n = 8), (b) in group 2 (1.35 × 105 PfSPZ Vaccine/dose) (n = 18), and (c) in group 3 (2.7 × 105 PfSPZ Vaccine/dose) (n = 20). In all groups, the samples collected at baseline and two weeks past last vaccination were compared. The dashed line represents the threshold of statistical significance (p=0.05) not adjusted for the FDR (none of the antigens had a FDR adjusted p-value<0.05). For effect size estimates see Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Upper row: The three volcano plots in the upper row show (a) the mean fold change in the control group (n = 8), (b) in group 2 (n = 18), and (c) in group 3 (n = 20). In all groups, the samples collected at baseline and two weeks past last vaccination were compared. The dashed line represents the threshold of statistical significance (p=0.05) not adjusted for the FDR (none of the antigens had a FDR adjusted p-value<0.05). Lower row: for each volcano plot the corresponding effect size for all antigens with a significant (p value < 0.05) fold change is shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The three volcano plots illustrate (a) the mean fold change of the differential antigen reactivity before and 2 weeks after immunization between controls (n = 8) and group 2 (n = 18), (b) between controls and group 3 (n = 20), and (c) between group 2 and group 3. The dashed line represents the threshold of statistical significance (p=0.05) not adjusted for the FDR (none of the antigens had a FDR adjusted p-value<0.05).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Mean (x-axis) and variance (y-axis) of the normalized log2 signal intensities of each of the 2804 reactive antigens across (a) all samples at baseline (n = 46), (b) samples 2 weeks after immunization in the unprotected group (n = 33) and (c) samples 2 weeks after immunization in the protected group (n = 5).
 
 ‘Deltas’, the fold change in antibody reactivity (averaged across each individual group) for each individual peptide recognized before and after immunization, was higher for PfCSP in group 2 and group 3 when compared to controls, but not statistically significant after adjustment (Figure 4—figure supplement 2a–b). In addition, no significant difference was observed by comparing group 2 deltas to group 3 deltas Figure 4—figure supplement 2c). The nonsignificant trend of higher deltas in group 3 is consistent with the observations of less declining antibodies in the paired analysis.
 
 To identify potential differences in vaccine induced immunogenicity between protected and unprotected individuals, we compared the difference in the mean immunoreactivity (i.e. signal intensity) for each antigen at baseline and 2 weeks after immunization between protected (n = 5) and unprotected (n = 33) volunteers, and the difference in the mean immunogenicity of each antigen between baseline and post immunization time points in the protected group (Figure 5). Four proteins were recognized as significantly higher in the protected volunteers after immunization compared to unprotected volunteers (Figure 5b). These proteins were the apical membrane antigen 1 (PfAMA1, gene ID PF3D7_1133400) and 3 fragments of the erythrocyte membrane protein 1 (PfEMP1, gene IDs PF3D7_0412900, PF3D7_1240400 and PF3D7_0711700). Interestingly, amino acid sequence alignment of the three identified PfEMP1 protein fragments with the predicted sporozoite encoded variant PF3D7_0809100, recently described to contribute to inhibition of hepatocyte invasion (Zanghì et al., 2018), demonstrated long stretches of linear protein sequence conservation (Figure 5—figure supplement 3). Nevertheless, the sample size of the protected group is low (n = 5), and considering the low effect size measured by Cohen’s distance (Figure 5—figure supplement 1), no strong argument for association with protection of these four antigens can be made from this analysis. The mean immunogenicity of PfAMA1 and PfCSP levels across the protected group increased from baseline to after immunization, but not reaching the significance threshold (Figure 5c). Notably, a trend of higher reactivity levels to the 3 PfEMP1 fragments in the protected group was observed at baseline, albeit not significantly (Figure 5a). No antigen showed an increase in reactivity (delta) significantly higher in the protected group (Figure 5—figure supplement 2).
 
-## Breadth of humoral immune response in protected individuals
+![Figure 5.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig5-v2.jpg)
+
+**Figure 5.:** The mean fold change between antigen reactivity in the protected (n = 5) and the non-protected (n = 33) individuals from groups 2 and 3 are represented in volcano plots (a) for baseline and (b) after PfSPZ vaccination, plotted against the inverse log10 t-test p-value. In the protected group (n = 5), the samples collected at baseline and two weeks past last vaccination were compared and the mean fold change of the increased immunogenicity is showed in (c). Red triangles represent antigens with significant differences in antibody levels between protected and non-protected volunteers after BH adjustment of p-values, although size effect measured by Cohen’s distance remains low (see Figure 5—figure supplement 1). The dashed line represents the threshold of statistical significance for the unadjusted p=0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The volcano plot in (a) shows the mean fold change in the protected group (n = 5) compared to the unprotected group (n = 33) two weeks past last vaccination were compared. The dashed line represents the threshold of statistical significance for the BH unadjusted (p=0.05) analysis. The effect size measured as Cohen’s distance (x-axis) for each signal (y-axis) is shown in (b) and indicate small effect size (lower than 0.5) for all protein fragments, including the four protein fragments identified as significantly increased in the protected group. Red triangles represent antigens with significant differences in antibody levels between protected and non-protected volunteers after BH adjustment of p-values. (c) shows the quantile-quantile plots of the four identified protein framgents in the protected and non-protected group before and two weeks after immunization, comparing randomly generated, independent standart normal data on the x-axis to the sample population on the y-axis for sample before immuniazion (in black), after immunization (in blue) in the non-protecgted group (upper rows) and protected group (lower rows) for the three identified PfEMP1 protein fragments and PfAMA1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The volcano plot shows the mean fold change of the differential antigen reactivity before and 2 weeks after immunization between the protected group (n = 5) and unprotected group (n = 33). The dashed line represents the threshold of statistical significance for the BH unadjusted (p=0.05) analysis. However, no antigen remained as statistically significantly changed when using the BH adjustment.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** PfEMP1 sequence named NF54_SpzPfEMP1 or PF3D7_0809100 (Zanghì et al., 2018) is compared to the sequences of the three PfEMP1 protein fragments found to be associated with protection in this study (gene ID PF3D7_0412900, PF3D7_1240400, PF3D7_0711700). * (asterisk) indicates positions which have a single, fully conserved residue.: (colon) indicates conservation between groups of strongly similar properties and. (period) indicates conservation between groups of weakly similar properties. Alignment was performed using the Clustal Omega program which uses seeded guide trees and HMM profile-profile techniques to generate alignments from the European Bioinformatics Institute (EMBL-EBI).
+
+### Breadth of humoral immune response in protected individuals
 
 Analysis above indicates that breadth of humoral immune response was highly variable in samples across all groups and mostly conserved from baseline to post-immunization levels, irrespective of protection status (Figure 3). We thus further compared breadth of humoral immune response in the protected versus unprotected individuals. Despite a mean breadth in the protected group 12% higher than in the unprotected individuals before immunization (breadthprotected = 914, breadthunprotected = 810) and 28% higher after immunization (breadthprotected = 943, breadthunprotected = 738), as antibody breadth was highly over-dispersed and sample size in the protected group small we found that differences in the means are not significant for either time points (logistic regression p-values of 0.6 and 0.3, respectively) (Figure 6). Furthermore, there was also limited discrimination by protection status in antibody breadth at both time points via receiver operating characteristics (ROC) analysis (area under the ROC curve: AUCpre-immunization = 0.64, Wilcoxon rank sum test W = 60, p-value=0.35; AUCpost-immunization = 0.73, Wilcoxon rank sum test W = 44, p-value=0.1).
 
@@ -97,6 +265,14 @@ Analysis above indicates that breadth of humoral immune response was highly vari
 **Figure 6.:** (a) Breadth counts of all PfSPZ vaccinees grouped by protection status following CHMI, with protected group in green and non-protected volunteers depicted in white, before and after immunization. The coefficient estimate with corresponding p-values from the negative binonial test is indicated for each time point. Boxplots show median, interquartile range (IQR) and 1.5xIQR limits and red bars represent the mean.
 
 Finally, in order to identify antibodies consistently present in the samples of the protected individuals, we defined common antigens to a group as antigens which are reactive in at least 80% of the samples for each of the groups (i.e. considering the signal intensity of a given antigen as a binary outcome, either reactive or non-reactive). Common antigens in the protected group (reactive in at least 4 out of the five samples) were higher than in the unprotected groups (reactive in at least 27 out of the 33 samples) both 2 weeks after last immunization (383 common antigens in the protected group versus 58 in the unprotected group, 2-sample test for equality of proportions with continuity correction p-value<2.2E-16, N = 2804) (Figure 7b), and at baseline (350 reactive antigens in protected group versus 62 in unprotected group, p<2.2E-16) (Figure 7a). Both at baseline and 2 weeks after immunization, almost all reactive antigens in common in the unprotected group were also present in the protected group (60 out of 62 and 56 out of 58 antigens at baseline and after immunization, respectively) (Figure 7). The trend for higher common antigens in the protected group compared to the unprotected group was also noticeable for different thresholds, comparing antigens reactive in at least 60% or in 100% of the samples in a given group (Figure 7—figure supplement 1). Given the large difference in sample sizes between the protected (n = 5) and unprotected (n = 33) groups, bootstrap samples with n = 5 samples in each group were repeatedly drawn (repeated 1000 times), with replacement. Consistent with previous analyses above, we find a higher number of common antigens in the protected compared to the unprotected group, although uncertainty due to small sample size is inevitable (Figure 7—figure supplement 1). Taken together this analysis suggests a higher number of commonly recognized antigens in the protected individuals after immunization and also at baseline, but the findings are limited by a small sample size in the protected group. A list of the commonly reactive antigens and antigens with increased reactivity levels following immunization per groups can be found in the Figure 7—source data 1.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig7-v2.jpg)
+
+**Figure 7.:** The number of antigens that were reactive in at least 80% of the individual in each group are represented for (a) baseline for the protected group (green, n = 5) and the unprotected group (grey, n = 33) and for (b) after immunization for the protected group (green) and unprotected group (grey).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53080/elife-53080-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The number of antigens that were reactive in at least 60% (upper row), 80% (middle row), and 100% (lower row) of the individual in each group are represented for (a) baseline for the protected group (green, n = 5) and the unprotected group (grey, n = 33), for (b) after immunization for the protected group (green, n = 5) and unprotected group (grey, n = 33), and for (c) randomly selected samples for the protected group (green, n = 5) and the unprotected group (black, n = 5) before and after immunization. (c) shows the 95 percent confidence interval, the dots represents median and the red bars the means per group, across 1000 draws.
 
 To understand the biological function of proteins reactive in protected volunteers, we used DeepLoc subcellular localization prediction, Pfam protein family prediction (El-Gebali et al., 2019), and gene ontology prediction available on Plasmodb.org (Huntley et al., 2015) and identified protein characteristics and distinct functional categories with higher representation in the protected volunteers. Predicted cell membrane proteins were more broadly recognized in the five protected volunteers at baseline (63 vs. 10 proteins, 2-proportions Z-test p-value=2.53E-9) and post-immunization (70 vs. 5 proteins, p-value=4.11E-13), but so were intracellular proteins localized to the cytoplasm, endoplasmic reticulum, Golgi apparatus, mitochondrion and nucleus (all p-values<0.05) (Table 1). Gene and protein families present in both protected and non-protected groups at both time points included integral components of membranes, host cell plasma membranes and infected host cell surface knobs, signal receptor activity and cell adhesion molecule binding, pathogenesis, cell-cell adhesion, antigenic variation and cytoadherence to the microvasculature, and PfEMP1-related families (see Supplementary file 1) . Gene and protein families uniquely reactive in the protected volunteer group at either or both time points included Mauer’s cleft, host cell surface receptor binding, regulation of immune response, the Rifin protein family, a head domain of trimeric autotransporter adhesins (TAAs) family that acts as virulence factors for Gram-negative bacteria and have a head-stalk-anchor structure, a procyclic acidic repetitive protein family that was identified as abundant surface proteins in Trypanosoma brucei, and an N-terminal PRP1 splicing factor family involved in mRNA splicing (Figure 7—source data 1).
 
@@ -126,29 +302,29 @@ Further reduction and eventual elimination of malaria requires significant inves
 
 ## Materials and methods
 
-## Ethic statement
+### Ethic statement
 
 The study was approved by institutional review boards (IRBs) of the IHI (Ref. No. IHI/IRB/No:02–2014), the National Institute for Medical Research Tanzania (NIMR/HQ/R.8a/Vol.IX/1691), the Ethikkommission Nordwest-und Zentralschweiz, Basel, Switzerland (reference number 261/13), and by the Tanzania Food and Drug Authority (Ref. No.TFDA 13/CTR/0003); registered at Clinical Trials.gov (NCT02132299); and conducted under U.S. FDA IND 14826.
 
-## Study design of the original trial
+### Study design of the original trial
 
 The design and outcome of the clinical study is described in detail in Jongo et al., 2018. Briefly, volunteers were immunized five times with a lower (1.35 × 105) or a higher dose (2.7 × 105) of PfSPZ Vaccine by direct venous inoculation (DVI) at 4 week intervals for the first four vaccinations followed by a last booster with PfSPZ Vaccine after 8 weeks. After immunization, volunteers underwent CHMI either 3 weeks after last immunization, 24 weeks after last immunization, or both using 3200 non-attenuated aseptic, purified, cryopreserved, infectious PfSPZ of PfSPZ Challenge administered by DVI. Serum samples for microarray analysis were collected at baseline (before immunization) and 2 weeks after last immunization in the individuals who underwent CHMI at 3 weeks after last immunization (Figure 1).
 
 The 36 volunteers were healthy, adult males between 18–35 years old, with no parasitemia at the start of the study (measured by TBS and antibodies to PfEXP1 by ELISA), no history of malaria episodes over the last 5 years, and no parasitemia before CHMI (measured by TBS and qPCR) (Jongo et al., 2018). They were all students in Dar Es Salaam at the time of the study, however home town or travel history was not specified; thus, history of geographic exposure is not known.
 
-## Protein array chip design
+### Protein array chip design
 
 The protein microarray used in this study was produced by Antigen Discovery, Inc (ADI) and encompasses 7455 full-length or fragmented Pf proteins representing 4805 protein-coding genes and covering 91% of the proteome (Mordmüller et al., 2017). As previously described (Felgner et al., 2013) proteins were expressed from a library of Pf partial or complete open reading frames (ORFs) cloned into a T7 expression vector pXI using an in vitro transcription and translation (IVTT) system, the Escherichia coli cell-free Rapid Translation System (RTS) kit (5 Prime). This library was created via an in-vivo recombination cloning process with PCR-amplified Pf ORFs, and a complementary linearized expressed vector transformed into chemically competent E. coli was amplified by PCR and cloned into pXI vector using a high-throughput PCR recombination cloning method (Davies et al., 2005). Each expressed protein includes a 5′ polyhistidine (HIS) epitope and 3′ haemagglutinin (HA) epitope. Proteins were expressed according to manufacturer’s instructions and then translated proteins were printed onto nitrocellulose-coated glass AVID slides (Grace Bio-Labs) using an Omni Grid Accent robotic microarray printer (Digilabs, Inc). Quality checks of the microarray chip printing and protein expression were performed by probing random slides with anti-HIS and anti-HA monoclonal antibodies with fluorescent labelling. In addition to the 7,455 Pf peptide fragments, each microarray chip contained 302 IgG positive control spots as an assay control and 192 in vitro Transcription and Translation (IVTT) control spots (IVTT reactions with no Pf ORFs) as a normalization factor. All the spotted proteins were printed in three replicated pads per slide to accommodate one sample per pad. The experiment included two chips that made up the full proteome microarray, and samples were probed on each chip. Due to cost constraints, we did not replicate the experiment. Prior to probing samples, a balanced array experimental design was generated to mitigate nuisance factors, including pad position and day that sample was assayed, against sample grouping factors such as time point, dosing group and protection status. Sample balancing factors were provided as blinded, coded variables by Sanaria, Inc to ADI and unblinded following data acquisition.
 
-## Sample probing
+### Sample probing
 
 Sample probing has been previously described elsewhere (Campo et al., 2015; Mordmüller et al., 2017). Briefly, serum samples were diluted 1:100 in a 3 mg ml−1 E. coli lysate solution in protein arraying buffer (Maine Manufacturing) and incubated at room temperature for 30 min. Chips were rehydrated in blocking buffer for 30 min. Blocking buffer was removed, and chips were probed with serum samples by incubating in sealed, fitted slide chambers to ensure no cross-contamination of sample between pads. Chips were incubated overnight at 4°C with agitation. Chips were washed five times with TBS-0.05% Tween 20, followed by incubation with biotin-conjugated goat anti-human IgG (Jackson ImmunoResearch) diluted 1:200 in blocking buffer at room temperature. Chips were washed three times with TBS-0.05% Tween 20, followed by incubation with streptavidin-conjugated SureLight P-3 (Columbia Biosciences) at room temperature protected from light. Chips were washed three times with TBS-0.05% Tween 20, three times with TBS, and once with water. Chips were air dried by centrifugation at 1000 g for 4 min and scanned on a GenePix 4300A High-Resolution microarray scanner (Molecular Devices), and spot and background intensities were measured using an annotated grid file (.GAL). Data adjusted for local background by subtraction were exported to Microsoft Excel as CSV files and subsequently imported into R (R Development Core Team, 2015) where all subsequent data processing occured.
 
-## Protein array data processing
+### Protein array data processing
 
 Signal intensities were transformed by base two logarithm, and the median of IVTT control spots for each sample was subtracted from the sample-specific IVTT Pf antigen signals, a method that has been used previously in protein microarray analysis (Mordmüller et al., 2017; Felgner et al., 2013). A seropositive threshold was defined as two times IVTT control signals, or 1.0 on the log2 scale. A value of 0.0 +/- 1 represents signal intensities that are equivalent to the background. Values below −2, representing less than 0.25 times the median IVTT control signals were adjusted to −2. This affected 1639 of the 685,860 signals included in the complete dataset and 42 of the 257,968 signals included in the set of reactive antigens. Reactive antigens were defined as proteins that were seropositive in at least 10% of the study population at one or more time points. High level group reactivity was defined as 80% seropositivity to one probe in vaccinees who received either the lower (group 2) or higher (group 3) doses of PfSPZ Vaccine.
 
-## Analysis
+### Analysis
 
 To visualize the high dimensional dataset of the microarray spots and understand potential patterns or clustering of the samples, t-SNE analysis (Maaten and Hinton, 2008) was used with a perplexity value of 30 and with 10,000 iterations. The t-SNE algorithm was applied the 92 samples of the entire dataset of the 2804 log2-transformed signal intensities or for the subset of 441 reactive proteins fragments predicted to be expressed at the sporozoite stage (Florens et al., 2002). The breadth of immune response for each individual was defined as the total number of positive reactive antigens for each serum draw. Breadth data were identified as over-dispersed after observing that the variance was greater than the means. Therefore, breadth between different groups was compared using negative binomial regression. The frequencies of reactive antigens summed into subcellular localization categories for each group were tested using 2-propotions Z-test and p-values adjusted using the BH method. Gene Ontology (GO) annotation for each protein was retrieved from PlasmoDB.org. Protein families were queried using amino acid sequences for each protein using the Pfam database (El-Gebali et al., 2019). Fisher’s exact tests were used to assess reactivity of each GO category of Pfam functional group, followed by p-value adjustment using the BH method.
 

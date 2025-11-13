@@ -43,13 +43,27 @@ We used a statistical method, GREMLIN (Kamisetty et al., 2013), to measure covar
 
 ## Results
 
-## Covariation patterns in QS systems
+### Covariation patterns in QS systems
 
 To begin our analysis, we gathered select protein sequences for known synthase-receptor pairs (Supplementary file 1A) and used these sequences to search the European Nucleotide Archive (ENA) database (Amid et al., 2019) from the European Bioinformatics Institute and the Integrated Microbial Genomes and Microbiomes (IMG/M) database (Chen et al., 2021) from the Joint Genome Institute (JGI) for additional synthase-receptor pairs. The genes for synthase-receptor pairs are frequently co-located on the genome, and organisms can harbor more than one complete QS system (Fuqua et al., 1996). To increase the likelihood of identifying true pairs, we required that the two genes be separated by no more than two coding sequences. A total of 6360 non-identical pairs were identified. We further discarded pairs that were more than 90% identical to another pair, resulting in 3489 representative AHL synthase-receptor pairs.
 
 We aligned these sequences to the LasI/R QS system from P. aeruginosa PAO1. Not only is P. aeruginosa a clinically important pathogen, the Las system is well studied and crystal structures have been solved for both LasI (Gould et al., 2004) and LasR (Zou and Nair, 2009), making this a particularly useful model system for our studies. We connected the sequences of the synthase and the receptor from each pair and used GREMLIN to analyze covariation patterns in these sequences. We applied average product correction (APC) to the GREMLIN covariance coefficients, a common technique shown to improve the accuracy of coevolution analyses (Buslje et al., 2009). An overview of our workflow is shown in Figure 2—figure supplement 1. We performed the same analysis by aligning the synthase-receptor pairs to the LuxI/R system from Vibrio fischeri MJ11. The top-ranking coevolving residue pairs overlap significantly between the LasI/R and LuxI/R systems (62.5% in common among the top 0.05% residue pairs) (Figure 2—figure supplement 2A–D). We integrated the analyses for the LasI/R and LuxI/R systems by using the higher score for each residue pair and the top 10 residue pairs are shown in Figure 2A and Figure 2—figure supplement 3A. As a control, we randomly paired the synthases and receptors from different species and reanalyzed them using GREMLIN. While top-scoring covarying residues had a minimal GREMLIN score (with APC) of 0.09, the highest score from the randomized control was 0.08 (Figure 2B and Figure 2—figure supplement 3B). This control provides a guideline for our analysis; residues with a GREMLIN score (with APC) above or near the maximal score for the randomized control are likely to be meaningful.
 
-## Top-scoring residues cluster near ligand-binding pockets
+![Figure 2.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig2-v2.jpg)
+
+**Figure 2.:** (A) Top-scoring covarying residues based on an integrated analysis of the Las and Lux systems are shaded in blue or orange on the primary amino acid sequences of LasI (synthase) and LasR (receptor), respectively. Secondary structures, shown as arrows (sheets) and loops (helixes), are based on crystal structures for LasI and LasR (PDB 1RO5 and PDB 3IX3, respectively). The list of top-scoring residue pairs along with their GRELMIN scores (with average product correction [APC]) is shown in Figure 2—figure supplement 3A. (B) Distribution of GREMLIN scores (with APC) for the top 500 pairs from the Las analysis (green) and the randomized control (gray). The top score in the control was 0.08, as indicated by the red line. (C) Top-scoring covarying residues mapped onto the N-terminal LasR ligand-binding domain (covarying residues in orange, N-3-oxo-dodecanoyl-L-homoserine lactone [3OC12-HSL] colored by element; PDB 3IX3) and (E) LasI (covarying residues in blue; PDB 1RO5). Top-scoring residues in the randomized control are mapped onto (D) LasR and (F) LasI as in panels C and E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Top-scoring covarying amino acid residues identified in (A) Pseudomonas aeruginosa PAO1 LasI/R or (B) Vibrio fischeri MJ11 LuxI/R along with the GREMLIN score (with average product correction [APC]) for each pair. Residues that appear on both lists are shown in boxes on the sequence alignments (C) of LasI and LuxI and (D) of LasR and LuxR. Only relevant portions of the protein sequences are shown.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Top-scoring covarying residues in LasI (synthase) and LasR (receptor) along with the top GREMLIN score (with average product correction [APC]) for each residue pair based on an integrated analysis of the Las and Lux systems. (B) Top-scoring residues in a randomized control, mapped onto LasI/R, along with the GREMLIN score (with APC) for each pair.
+
+### Top-scoring residues cluster near ligand-binding pockets
 
 For both LasI and LasR, the top-scoring covarying residues cluster around the ligand-binding pocket. For LasR, the top-scoring residues map exclusively to the ligand-binding domain with an average distance of 5.0 Å from the co-crystalized native ligand N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL) (Figure 2C). In contrast, the top residues identified in the randomized control are scattered throughout LasR, including three residues in the DNA-binding domain, and are an average distance of 18 Å from 3OC12-HSL (Figure 2D).
 
@@ -57,17 +71,37 @@ In LasI, the top-scoring covarying residues cluster around the hydrophobic pocke
 
 Due to their location near the ligand-binding pockets, several of the covarying residues have been previously studied in various LasI/R homologues. Encouragingly, many of these residues have been reported to be important for protein activity and, in some cases, for selectivity. We have summarized several of these studies in Supplementary files 1B-C.
 
-## LasR substitutions alter selectivity
+### LasR substitutions alter selectivity
 
 To determine whether residues identified by GREMLIN are involved in LasR selectivity, we introduced substitutions into a selection of the top-scoring amino acids, G38, R61, A127, S129, and L130, focusing on common natural variants at each position (Supplementary file 1D). By expressing LasR in Escherichia coli and measuring its activity against a previously reported panel of 19 AHL signals (Figure 3—figure supplement 1; Wellington and Greenberg, 2019), we were able to quickly prioritize variants for further study. The majority of our LasR variants retained the ability to respond to AHLs and had an altered selectivity profile when compared to wild type (Figure 3). For example, LasRG38V responds to N-3-oxo-tetradecanoyl-L-homoserine lactone (3OC14-HSL) and N-3-oxo-hexadecanoyl-L-homoserine lactone (3OC16-HSL) but not 3OC12-HSL, while LasRL130F is more subtly altered and responds more strongly than wild type to N-3-oxo-octanoyl-L-homoserine lactone (3OC8-HSL) and N-3-oxo-decanoyl-L-homoserine lactone (3OC10-HSL), consistent with a previous study of this amino acid substitution (McCready et al., 2019).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig3-v2.jpg)
+
+**Figure 3.:** LasR activity in response to a panel of acyl-homoserine lactone (AHL) signals (100 nM; chain length indicated on horizontal axis, C3 modification indicated by shading, structures and names are shown in Figure 3—figure supplement 1) is reported as relative fluorescence units (RFU) normalized by optical density at 600 nm (OD). Wild-type lasR (WT) or lasR with the indicated amino acid substitution were expressed from pJNL in E. coli harboring pPROBE-PrsaL. Signals with four or six carbons in the acyl chain did not activate any of the LasR variants and are not shown. The following LasR variants had little or no activity in response to 100 nM AHLs: R61V, R61Q, S129T, G38L. Data are the mean and standard deviation of two biological replicates and are representative of three (variants) or ten (WT) independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The structures and non-IUPAC names of each AHL signal used in the panels shown in Figure 3, Figure 4—figure supplement 1, and Figure 6—figure supplement 2.
 
 We, and others, have previously demonstrated that compared to native activity, QS receptor sensitivity and selectivity can be altered when the receptor gene is expressed in E. coli or overexpressed in P. aeruginosa (Moore et al., 2015; Wellington and Greenberg, 2019). We therefore engineered several mutations in lasR on the P. aeruginosa PAO-SC4 chromosome to study LasR activity in the native context. P. aeruginosa PAO-SC4 is an AHL synthase-null mutant which we use here to measure LasR activity in response to exogenously provided AHL signals. We measured LasR activity by using a transcriptional reporter in which the promoter of the LasR-regulated gene rsaL controls gfp expression (Wellington and Greenberg, 2019). This provides a direct measure of LasR activity as a transcriptional activator.
 
 The lasR mutations largely had the same effect on activity and selectivity in P. aeruginosa as they did when lasR was expressed in E. coli (Figure 4—figure supplement 1A). Consistent with its role in forming a water-mediated hydrogen bond with the C3 oxygen of 3OC12-HSL, and with previous studies (Collins et al., 2006; Gerdt et al., 2015), LasR R61 mutants were less responsive to oxo-substituted AHLs, but maintained wild type or better levels of activation by unsubstituted AHLs (Figure 4 and Figure 4—figure supplement 1A). On the other hand, LasRA127L had an increased sensitivity to numerous signals (Figure 4). LasRA127M was also more strongly activated than wild type by multiple signals, as was LasRL130F (Figure 4—figure supplement 1A). Residue A127 interacts with 3OC12-HSL near the middle of its fatty acyl tail. The A127M and A127L substitutions may increase signal binding through increased hydrophobic contacts with the acyl chain. Residue L130 is near the homoserine lactone core of the bound signal. The L130F substitution results in structural changes that potentially increase LasR stability, thereby broadening its selectivity (McCready et al., 2019).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig4-v2.jpg)
+
+**Figure 4.:** Activity of chromosomal lasR mutants in P. aeruginosa PAO-SC4 pPROBE-PrsaL in response to (A) N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL), (B) N-dodecanoyl-L-homoesrine lactone (C12-HSL), (C) N-3-oxo-tetradecanoyl-L-homoserine lactone (3OC14-HSL), or (D) N-3-oxo-hexadecanoyl-L-homoserine lactone (3OC16-HSL). Structures of the signals are shown in Figure 3—figure supplement 1. Amino acid substitutions are indicated. Wild type (WT) is shown in black, LasRA127L in purple, and LasRR61L in blue. The horizontal axis indicates acyl-homoserine lactone (AHL) concentration. LasR activity is reported on the vertical axis as relative fluorescence units normalized by optical density at 600 nm (RFU/OD × 1000). Data are the mean and standard deviation of three biological replicates and are representative of three independent experiments. (E) The half maximal effective concentration (EC50) of 3OC12-HSL for P. aeruginosa PAO-SC4 LasR variants. Data are the mean and SEM of three (variants) or six (WT) independent experiments (representative data shown in Figure 4—figure supplement 1B). Sensitivity of the variants compared to LasRWT is calculated by dividing WT EC50 by variant EC50.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The activity of unmarked, chromosomal lasR mutants of P. aeruginosa PAO-SC4 containing pPROBE-PrsaL measured as GFP fluorescence (relative fluorescence units normalized to optical density at 600 nm, RFU/OD). (A) Activity of each LasR mutant or wild type (WT) in response to a panel of 19 acyl-homoserine lactones (AHLs) at 20 μM. AHLs with four or six carbons in the acyl chain did not activate any of the LasR variants and are not shown. Data are the mean and standard deviation of two biological replicates and are representative of three independent experiments. (B) Activity of each LasR variant or WT in response to N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL). Data are the mean and standard deviation of three biological replicates and are representative of three independent experiments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The relative abundance of soluble LasR in Pseudomonas aeruginosa PAO-SC4 was detected by immunoblotting in two independent experiments, as shown in panels A and B. Each P. aeruginosa PAO-SC4 variant harbored wild- type (WT) or mutant lasR, indicated as amino acid substitutions in the lane labels. LasR is 26.6 kDa and panel B contains the negative control, P. aeruginosa PAO1∆lasR. Chemiluminescent images are overlaid with images of the protein ladder from the same blot.
+
 The amino acid substitutions also affect the sensitivity of LasR to 3OC12-HSL (Figure 4E and Figure 4—figure supplement 1B). Interestingly, two of our variants are more sensitive to 3OC12-HSL than wild-type LasR. LasRA127L is roughly threefold more sensitive and LasRL130F is twofold more sensitive. This increased sensitivity comes at the cost of decreased selectivity for both of these mutant proteins. In fact, many of our single amino acid variants displayed reduced selectivity compared to wild-type LasR (Figure 3 and Figure 4—figure supplement 1A). The observed changes in LasR sensitivity and selectivity could be due to multiple factors including altered receptor affinity for a signal, altered protein stability, or both. The stability of LuxR-type receptors is intertwined with signal binding. QS systems are subject to elaborate control, a key component of which is that QS receptors, including LasR, are unstable and insoluble in the absence of bound signal (Oinuma and Greenberg, 2011; Sappington et al., 2011). Thus, changes in signal affinity usually lead to changes in the amount of soluble receptor present in a cell (McCready et al., 2019). Conversely, changes to the expression level of the receptor can lead to altered signal sensitivity and selectivity (Wellington and Greenberg, 2019). To determine whether receptor stability was affected in our variants, we assessed the abundance of soluble LasR in P. aeruginosa by immunoblotting in a selection of variants with altered 3OC12-HSL sensitivity: LasRA127L, LasRL130F, and LasRR61L. Comparing these variants to wild type, there were not substantial changes in the abundance of soluble LasR, though LasRR61L was somewhat less abundant than wild type (Figure 4—figure supplement 2).
 
-## LasI substitutions alter activity and selectivity
+### LasI substitutions alter activity and selectivity
 
 Similar to LasR, we focused our LasI amino acid alterations on the top-scoring positions: L102, T142, T145, and L157 (Supplementary file 1E). We expressed wild-type or mutated lasI on a low copy number plasmid in the AHL synthase-null P. aeruginosa PAO-SC4 and extracted AHLs produced by these bacteria from culture fluid. While bioassays are commonly used for the detection of AHLs (Chu et al., 2011), they suffer from multiple drawbacks. In particular, bioassays are not equally sensitive to all AHLs and typically cannot be used to determine which AHLs are produced and in what ratio. To screen our LasI variants for altered activity and selectivity, we developed a thin layer chromatography (TLC) method based on our existing high-performance liquid chromatography (HPLC) radiotracer assay (Schaefer et al., 2018). In this method, the C1 position in the homoserine lactone ring is labeled with 14C. The label is incorporated into AHLs at a ratio of one 14C per AHL molecule. This results in unbiased detection of all AHLs produced. While the established method uses HPLC to separate and detect AHLs one sample at a time, we can run nine samples per TLC plate, resulting in a more high-throughput assay.
 
@@ -75,17 +109,57 @@ Using our TLC method, we confirmed that lasI directs the synthesis of the same p
 
 Based on our TLC results, we selected one variant with altered selectivity, LasIL157W, for further study by HPLC. By TLC, LasIL157W produces three signals: 3OC12-HSL and two signals of unknown identity (Figure 5—figure supplement 1D). Using HPLC, we found that LasIL157W produces equal amounts of two 14C-AHLs consistent with 3OC10-HSL and 3OC8-HSL along with a lesser amount of 3OC12-HSL (Figure 5). Residue L157 is located near the bottom of the acyl-binding pocket where it likely interacts with the end of the 12-carbon acyl chain in 3OC12-HSL. The L157W substitution could decrease the volume of the pocket, improving affinity for shorter substrates. These findings demonstrate that the covarying residues identified by GREMLIN influence LasI activity and selectivity, and that a single amino acid substitution is sufficient to significantly alter LasI selectivity.
 
-## Covarying residues facilitate rational engineering of LasI/R selectivity
+![Figure 5.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig5-v2.jpg)
+
+**Figure 5.:** High-performance liquid chromatography (HPLC) analysis of radiolabeled acyl-homoserine lactones (AHLs) extracted from culture fluid of Pseudomonas aeruginosa PAO-SC4 harboring (A) pJN-RBSlasIWT or (B) pJN-RBSlasIL157W. The horizontal axis denotes the HPLC fraction number (fractions 1–14 are not shown). The methanol gradient is indicated as a dashed line plotted on the right vertical axis. The left vertical axis indicates the amount of radioactivity (counts per minute [cpm]) in each fraction. Data are representative of two (L157W) or three (wild type [WT]) independent experiments. Arrow 1 indicates the fraction in which N-3-oxo-octanoyl-L-homoserine lactone (3OC8-HSL) elutes, arrow 2 indicates the fraction in which N-3-oxo-decanoyl-L-homoserine lactone (3OC10-HSL) elutes, and arrow 3 indicates the fraction in which N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL) elutes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Thin layer chromatography (TLC) analysis of 14C-AHLs extracted from Pseudomonas aeruginosa PAO1ΔrhlI or from P. aeruginosa PAO-SC4 harboring pJN-lasIWT or pJN-empty or from a media control in which no cells were present. The dashed lines indicates the origin. Results are representative of two independent experiments. The identities of the major spots on each TLC were deduced from high-performance liquid chromatography (HPLC) analysis of select extracts with comparison to chemically synthesized acyl-homoserine lactone (AHL) standards. (B) Extracts from P. aeruginosa PAO-SC4 pJN-lasIWT shown in panel A were also analyzed by HPLC. The horizontal axis denotes the fraction number; fractions 1–29 are not shown. The dashed line indicates the methanol gradient, plotted on the right vertical axis. The counts per minute (cpm) of radioactivity in each fraction are plotted on the left vertical axis. The arrow indicates the fraction in which N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL) elutes. (C–E) TLC analysis of 14C-AHLs extracted from P. aeruginosa PAO-SC4 pJN-lasI wild type (WT) or with the indicated amino acid substitution.
+
+### Covarying residues facilitate rational engineering of LasI/R selectivity
 
 In general, multiple amino acid changes are required to generate a protein with orthogonal selectivity (Aakre et al., 2015; Collins et al., 2006; Skerker et al., 2008). In non-QS proteins, altered selectivity has been engineered by swapping the covarying residues in one homolog to the identities in another (Aakre et al., 2015; Skerker et al., 2008). Here, we seek to ‘rewire’ LasI/R to use an orthogonal signal. We targeted the MupI/R system from Pseudomonas fluorescens NCIMB 10586, which uses the signal 3OC10-HSL (Hothersall et al., 2011). MupI and MupR share 52% and 39% identity with LasI and LasR, respectively. MupI/R is among the systems closest in sequence identity to LasI/R that use a signal other than 3OC12-HSL.
 
 LasR and MupR differ at eight covariation sites in the ligand-binding domain with a GREMLIN score (with APC) > 0.08 (Figure 6—figure supplement 1A). LasR modified to contain all eight substitutions was inactive. However, there were several intermediate variants that displayed an increased response to 3OC10-HSL. We identified three amino acid substitutions that are sufficient for this increased sensitivity: L125F, A127M, and L130F (Figure 6A, Figure 6—figure supplement 1B). LasRL125F, A127M, L130F is over 20-fold more sensitive to 3OC10-HSL than wild-type LasR. The L125F substitution appears to be the primary driver of this altered selectivity (Figure 6B–C and Figure 6—figure supplement 2A). LasR L125 is located in the 3OC12-HSL binding pocket, where it interacts with the end of the signal’s acyl tail. The L125F substitution may decrease the size of the binding pocket, improving hydrophobic interactions with shorter acyl chains. All ‘MupR-like’ LasR variants responded to 3OC12-HSL with similar sensitivity to wild-type LasR when expressed in E. coli (Figure 6—figure supplement 2B–C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig6-v2.jpg)
+
+**Figure 6.:** (A) Residues altered in LasR shown as orange sticks in the LasR structure (PDB 3IX3). N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL) is shown in gray. (B) LasR activity in response to 3OC10-HSL measured in Escherichia coli harboring pJNL (wild type [WT], or with indicated amino acid substitutions) and pPROBE-PrsaL. Data are the mean and standard deviation of three biological replicates and are representative of three independent experiments. (C) Half maximal effective concentration (EC50) of 3OC10-HSL for LasR, calculated from three independent experiments (representative data shown in panel B). Data are mean and SEM. Sensitivity of mutants compared to LasRWT is calculated by dividing the WT EC50 by mutant EC50. (D) Growth of Pseudomonas aeruginosa PAO-SC4 LasRWT or LasRL125F, A127M, L130F on casein agar with 10 µM 3OC10-HSL, 3OC12-HSL, or a vehicle control (DMSO). Data are representative of three independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Sequence alignment of LasR and MupR. Boxes indicate covarying residues with a GREMLIN score (with average product correction [APC]) > 0.08 that differ between the two proteins. (B) Amino acids altered in ‘MupR-like’ LasR shown as red spheres on the crystal structure of the LasR ligand-binding domain (PDB 3IX3).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Activity of LasR (wild type [WT] or with the indicated amino acid substitution) measured in Escherichia coli pJNL pPROBE-PrsaL in response to a panel of 19 acyl-homoserine lactone (AHL) signals at 100 nM. AHLs with four or six carbons in the acyl chain did not activate any of the LasR variants and are not shown. LasR activity is reported as relative fluorescence units (RFU) normalized to optical density at 600 nm (OD). Data are the mean and standard deviation of two biological replicates and are representative of three (mutants) or ten (WT) independent experiments. (B) Activity of WT or mutant LasR measured in E. coli pJNL pPROBE-PrsaL in response to N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL). Data are the mean and standard deviation of three biological replicates and are representative of three independent experiments. (C) Half maximal effective concentration (EC50) of N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL) for LasR, calculated from three independent experiments (representative data shown in panel B). Data are mean and SEM.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Alignment of the potential MupR-binding site upstream of the mupI open reading frame with the LasR-binding site upstream of rsaL. (B) Fluorescence (relative fluorescence units [RFU]) normalized to optical density at 600 nm (OD) of Escherichia coli harboring the mupR expression vector pJN105-mupR and the transcriptional reporter pPROBE-PmupI. Where indicated, arabinose (ara) was added to induce mupR expression and N-3-oxo-decanoyl-L-homoserine lactone (3OC10-HSL) (10 µM) was added to stimulate MupR activity at the mupI promoter. Data are the mean and range of two to four biological replicates (indicated as individual data points) and are representative of three independent experiments. (C) MupR activity, measured as fluorescence normalized to optical density (RFU/OD) in E. coli harboring pJN105-mupR and pPROBE-PmupI, in response to the indicated concentration of 3OC10-HSL or N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL). Data are the mean and standard deviation of three biological replicates and are representative of two independent experiments.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** LasR activity in unmarked chromosomal lasR mutants of P. aeruginosa PAO-SC4 harboring pRPOBE-PrsaL measured as GFP fluorescence (relative fluorescence units normalized to optical density at 600 nm, RFU/OD). Activity of LasR with the indicated amino acid substitution(s) was measured in response to the indicated concentrations of (A) N-3-oxo-decanoyl-L-homoserine lactone (3OC10-HSL) or (B) N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL). Data are the mean and standard deviation of three biological replicates and are representative of three independent experiments. (C) Half maximal effective concentration (EC50) of 3OC10-HSL and 3OC12-HSL for LasR, calculated from three (variants) or six (wild type) independent experiments (representative data shown in panels A and B). Data are mean and SEM.
 
 While 3OC10-HSL is the native signal for the MupI/R system, the sensitivity of MupR to other signals is unknown. To compare the activity of our LasR variants with that of MupR, we developed a transcriptional reporter of MupR activity in E. coli. To do this, we used the promoter of mupI to control gfp expression in the plasmid pPROBE-GT. LuxR-type receptors often positively regulate their paired synthase gene (Ng and Bassler, 2009). Searching the promoter region upstream mupI, we identified an inverted repeat centered at −64.5 relative to the start codon of mupI that has high similarity (12/20 base pairs) to the LasR-binding site upstream the LasR-regulated gene rsaL (Figure 6—figure supplement 3A; Whiteley and Greenberg, 2001). It is therefore plausible that MupR regulates mupI. We created an arabinose-inducible mupR expression vector in the plasmid pJN105 and introduced it along with pPROBE-PmupI into E. coli. If MupR activates transcription from the mupI promoter, this reporter strain should express gfp in the presence of 3OC10-HSL. We validated the reporter by measuring GFP fluorescence in the presence or absence of arabinose (to induce mupR expression) and/or 3OC10-HSL (Figure 6—figure supplement 3B). While there is some leaky expression of mupR from the pJN105 vector, indicated by increased fluorescence in the presence of 3OC10-HSL and absence of arabinose, the reporter strain requires both arabinose and 3OC10-HSL for maximal fluorescence. Using this reporter we found that MupR, when expressed in E. coli, is equally sensitive to 3OC10-HSL and 3OC12-HSL (Figure 6—figure supplement 3C). Thus, our ‘MupR-like’ LasR variant mimics the activity of MupR in this context.
 
 To confirm our findings in the native context, we engineered mutations into lasR on the chromosome of the AHL synthase-null P. aeruginosa PAO-SC4. We found that wild-type LasR has minimal 3OC10-HSL activity, whereas the ‘MupR-like’ LasRL125F, A127M, L130F is much more sensitive to 3OC10-HSL and responds to concentrations as low as 1 µM. As in E. coli, the ‘MupR-like’ variant maintains its 3OC12-HSL activity in P. aeruginosa (Figure 6—figure supplement 4A–C). To determine whether the ‘MupR-like’ LasR variant stimulates social behaviors, we assessed QS-dependent protease production by plating P. aeruginosa on casein agar. In this assay, QS-regulated protease production is required for cell growth, and high levels of protease result in a zone of clearing around the colony and a white zone of partially degraded casein at the periphery of the clearing (Chen et al., 2019). AHL synthase-null P. aeruginosa PAO-SC4 grows poorly on casein agar with 3OC10-HSL or with no signal added, but grows well and produces protease in response to 3OC12-HSL. In contrast, P. aeruginosa PAO-SC4 LasRL125F, A127M, L130F grows on casein agar with either 3OC10-HSL or 3OC12-HSL, indicating that 3OC10-HSL stimulates protease production in the ‘MupR-like’ variant (Figure 6D).
 
 LasI differs from MupI at five high-scoring covariation residues: LasI M125, T145, M152, V159, and N181 (Figure 7—figure supplement 1A), the first three of which line the LasI acyl-binding pocket (Figure 7A, Figure 7—figure supplement 1B). Swapping these three residues for their MupI identities resulted in a synthase that has substantially altered selectivity. LasIM125I, T145S, M152L produces about twofold more 3OC10-HSL than 3OC12-HSL. The M125I substitution alone was sufficient to relax LasI’s selectivity, resulting in a synthase that produces roughly equal amounts of 3OC10-HSL and 3OC12-HSL (Figure 7B, Figure 7—figure supplement 2A–C). LasI M125 is located near the C9 carbon of the acyl chain of a substrate modeled into the LasI structure (Gould et al., 2006). Changes to this residue could obstruct binding of substrates with longer acyl chains while increasing affinity for shorter substrates. As a comparison, we measured the activity of mupI expressed in P. aeruginosa, and found it produces 9:1 3OC10-HSL:3OC12-HSL (Figure 7B and Figure 7—figure supplement 2D). All single and double ‘MupI-like’ LasI variants retained AHL synthase activity, but only those that contain the M125I substitution displayed increased 3OC10-HSL production relative to 3OC12-HSL (Figure 7—figure supplement 2E).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig7-v2.jpg)
+
+**Figure 7.:** (A) Residues altered in LasI shown as blue sticks in the LasI structure (PDB 1ROH). (B) Relative amount of acyl-homoserine lactones (AHLs) produced by Pseudomonas aeruginosa PAO-SC4 harboring pJN-RBSlasI (wild type [WT] or with the indicated amino acid substitutions) or pJN-RBSmupI. Ratios were calculated from high-performance liquid chromatography (HPLC) data (representative data shown in Figure 7—figure supplement 2A–D). Bars show mean and standard deviation. The dashed line indicates equal production of 3OC10-HSL and N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Sequence alignment of LasI and MupI. Boxes indicate covarying residues with a GREMLIN score (with average product correction [APC]) > 0.08 that differ between the two proteins. (B) Amino acids altered in ‘MupI-like’ LasI shown as red spheres on the crystal structure of LasI (PDB 1ROH).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/69169/elife-69169-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** High-performance liquid chromatography (HPLC) analysis of 14C-AHLs extracted from Pseudomonas aeruginosa PAO-SC4 harboring (A) pJN-RBSlasIWT (B) pJN-RBSlasIM125I, T145S, M152L, (C) pJN-RBSlasIM125I, or (D) pJN-RBSmupI. The horizontal axis denotes the fraction number; fractions 1–29 are not shown. The left vertical axis indicates the counts per minute (cpm) of radioactivity in each fraction. Arrow 1 indicates the fraction in which N-3-oxo-decanoyl-L-homoserine lactone (3OC10-HSL) elutes and arrow 2 indicates the fraction in which N-3-oxo-dodecanoyl-L-homoserine lactone (3OC12-HSL) elutes. Data are representative of two (mutants) or three (wild type [WT]) independent experiments. (E) Thin layer chromatography (TLC) analysis of 14C-AHLs extracted from P. aeruginosa PAO-SC4 pJN-lasI WT or with the indicated amino acid substitution. The identities of the two major spots on each TLC were deduced from HPLC analysis of select extracts. The origin is indicated by a dashed line.
 
 ## Discussion
 
@@ -103,17 +177,183 @@ Collectively, our results provide insight into AHL QS selectivity and will help 
 
 ## Materials and methods
 
-## Identification of QS systems
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PAO-SC4</td>
+      <td>Wellington and Greenberg, 2019</td>
+      <td>P. aeruginosa PAO1 with unmarked deletions of lasI and rhI</td>
+      <td>AHL synthase-null mutant</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PAO1ΔrhlI</td>
+      <td>Wang et al., 2015</td>
+      <td>PAO1 with unmarked in-frame deletion of rhlI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PAO1∆lasR</td>
+      <td>Wang et al., 2015</td>
+      <td>PAO1 with unmarked in-frame deletion of lasR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>5-Alpha</td>
+      <td>New England Biolabs</td>
+      <td>fhuA2 Δ(argF-lacZ)U169 phoA glnV44 Φ80 Δ(lacZ)M15 gyrA96 recA1 relA1 endA1 thi-1 hsdR17</td>
+      <td>Chemically competent cells; used for cloning and for LasR and MupR activity reporter strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>S17-1</td>
+      <td>Simon et al., 1983</td>
+      <td>recA pro hsdR RP4-2Tc::Mu-Km::Tn7</td>
+      <td>Used for conjugal transfer of plasmid DNA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas fluorescens)</td>
+      <td>Migula (ATCC 49323)</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LasR (Rabbit polyclonal)</td>
+      <td>Covance; Gilbert et al., 2009</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPROBE-PrsaL</td>
+      <td>Wellington and Greenberg, 2019</td>
+      <td>gfp reporter of LasR activity, GmR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJNL</td>
+      <td>Wellington and Greenberg, 2019</td>
+      <td>Arabinose-inducible lasR expression vector, ApR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJN-empty</td>
+      <td>Wellington and Greenberg, 2019</td>
+      <td>Arabinose-inducible expression vector with no gene inserted, ApR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJN-lasI</td>
+      <td>This paper*</td>
+      <td>Arabinose-induciblelasI expression vector, ApR</td>
+      <td>Derived from pJN105, see Materials and methods for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJN-RBSlasI</td>
+      <td>This paper</td>
+      <td>pJN-lasI with nativelasI RBS, ApR</td>
+      <td>Derived from pJN105, see Materials and methods for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJN-RBSmupI</td>
+      <td>This paper</td>
+      <td>Arabinose-inducible mupI expression vector, ApR</td>
+      <td>Derived from pJN105, see Materials and methods for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJN105-mupR</td>
+      <td>This paper</td>
+      <td>Arabinose-inducible mupR expression vector, ApR</td>
+      <td>Derived from pJN105, see Materials and methods for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPROBE-PmupI</td>
+      <td>This paper</td>
+      <td>gfp reporter of MupR activity, GmR</td>
+      <td>pPROBE-GT with themupI promoter extending from −300 to +42, see Materials and methods for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEXG2</td>
+      <td>Rietsch et al., 2005</td>
+      <td>Allelic exchange vector with pBR origin, sacB, GmR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEXG2-lasR</td>
+      <td>Gift from M Kostylev and EP Greenberg</td>
+      <td>pEXG2 containing lasR gene and 500 bp up- and down-stream</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cloning primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1F</td>
+    </tr>
+    <tr>
+      <td>Gene (various)</td>
+      <td>lasI, lasR, mupI, mupR</td>
+      <td></td>
+      <td></td>
+      <td>See Supplementary file 1A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GREMLIN</td>
+      <td>Ovchinnikov et al., 2014</td>
+      <td>Protein covariation analysis algorithm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>14C-methionine</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td>Methionine, L-[1–14C], 0.1 mCi/mL; SKU ARC 0271</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Please contact the corresponding author (EP Greenberg) to request strains or plasmids created in this study._
+
+### Identification of QS systems
 
 Starting from 24 pairs of manually curated QS synthases and receptors (Supplementary file 1A), we searched for homologs in complete bacterial genomes using BLAST (e-value <0.01) (Altschul et al., 1990). We filtered the BLAST hits by sequence identity (>30%) to the query and the alignment coverage (query coverage >0.75 and hit coverage >0.75), and the filtered hits were aligned by Clustal Omega (Sievers and Higgins, 2021). We selected the LasI/R system from P. aeruginosa PAO1 as the target and mapped the multiple sequence alignments (MSA) to the target system. We built sequence profiles from the MSA with HMMER (Eddy, 2009) and hmmbuild for the QS synthases and receptors, respectively. The sequence profiles were then used to search against the ENA database (Amid et al., 2019) and the IMG/M database (Chen et al., 2021) from JGI using HMMER hmmsearch. A total of 149,837 and 5,046,620 homologs were found in these databases for the QS synthase and receptor, respectively. Because the synthases and receptors of the known QS systems frequently locate near each other in the genome, we kept synthase-receptor gene pairs that are separated by no more than two other open reading frames in the genome or contig. A total of 14,980 synthase-receptor gene pairs were identified and they represent 6360 non-identical QS systems. In another attempt, we carried out the same procedure using the LuxI/R system from V. fischeri MJ11 as the target system. A similar number of QS systems were identified.
 
-## Identification of covarying residues
+### Identification of covarying residues
 
 We connected the synthase and receptor protein sequences for each QS system we found in the databases and derived the alignments between these QS systems to the target QS system (LasI/R) from the hmmsearch result. We filtered the MSA for synthase-receptor pairs by sequence identity (maximal identify for remaining sequences ≤90%) and gap ratio in each sequence (maximal gap ratio ≤25%). We applied GREMLIN to analyze the covariation in the MSA (Kamisetty et al., 2013), and the GREMLIN coefficients were normalized using APC (Buslje et al., 2009) as we described previously (Ovchinnikov et al., 2014). The GREMLIN coefficients after APC were used as measures for covariation signals between synthase and receptor amino acid residues. As a control, we connected each synthase sequence with a randomly selected receptor sequence and performed the covariation analysis in the same way.
 
 We mapped the top-scoring covarying residues in the LasI/R system onto the crystal structures for each protein. Reported distances between residues and ligands are the shortest distance between any non-hydrogen atoms. For LasR, distances were calculated using PDB 6V7X. For LasI, distances were calculated using a LasI structure with 3-oxo-C12-acyl-phosphopantetheine modeled into the acyl-binding pocket (Gould et al., 2004). Reported distances for LasI are between residues and the acyl portion of the modeled substrate.
 
-## Bacterial strains, plasmids, and culture conditions
+### Bacterial strains, plasmids, and culture conditions
 
 Bacterial strains and plasmids are listed in the key resources table. Unless otherwise specified, P. aeruginosa and E. coli were grown in lysogeny broth (LB) (10 g tryptone, 5 g yeast extract, 5 g NaCl per liter) buffered with 50 mM 3-(N-morpholino) propanesulfonic acid (MOPS) (pH 7) (LB/MOPS) or on LB agar (LB plus 1.5% Bacto agar) (Wellington and Greenberg, 2019). Liquid cultures were grown at 37°C with shaking. For radiotracer TLC experiments, P. aeruginosa was grown in Jensen’s medium with 0.3% glycerol (Schaefer et al., 2018). Casein agar was made using minimal broth plus 1% sodium caseinate (casein broth) and 1.5% agar as previously reported (Chen et al., 2019).
 
@@ -121,7 +361,7 @@ For plasmid selection and maintenance, antibiotics were used at the following co
 
 All chemicals and reagents were obtained from commercial sources. AHLs were dissolved either in dimethyl sulfoxide (DMSO) or in ethyl acetate (EtAc) acidified with glacial acetic acid (0.01% v/v). AHLs in DMSO were used at ≤1% of the final culture volume and AHLs dissolved in EtAc were dried on the bottom of the culture vessel prior to addition of the bacterial culture. DMSO or acidified EtAc was used as a vehicle control where appropriate.
 
-## Plasmid and strain construction
+### Plasmid and strain construction
 
 pJN-lasI and pJN-RBSmupI were constructed using E. coli-mediated DNA assembly (Kostylev et al., 2015). Briefly, for pJN-lasI, lasI was amplified from P. aeruginosa PAO1 genomic DNA (gDNA) using primers lasI-pJN-F and lasI-pJN-R (Supplementary file 1F). pJN105 was amplified using the reverse complement of these primers. The resulting PCR products were treated with the restriction enzyme DpnI to remove the parent template. Both PCR products were then used to transform E. coli (NEB 5-alpha). The resulting constructs were confirmed by Sanger sequencing. For pJN-RBSmupI, we began by amplifying mupI from P. fluorescens Migula (ATCC 49323) gDNA using primers mupI-F and mupI-R. We then used primers mupI-pJN-F and mupI-pJN-R to amplify the mupI PCR product and used the reverse complement of these two primers to amplify pJN-RBSlasI. The resulting PCR products were treated the same as for pJN-lasI. We constructed pJN-RBSlasI using restriction digestion. The lasI gene, including its upstream ribosomal binding site (RBS), was amplified from P. aeruginosa PAO1 gDNA using primers RBS-lasI-F and lasI-pJN-R. pJN-lasI and the RBS-lasI PCR product were digested using NheI and SacI, gel or column purified, respectively, ligated by T4 DNA ligase, and transformed into NEB 5-alpha. The resulting constructs were confirmed by Sanger sequencing. Plasmids were introduced into E. coli by using heat shock and were introduced into P. aeruginosa by electroporation.
 
@@ -129,22 +369,22 @@ Point mutations were introduced to lasI and lasR on pJN-lasI and JNL or pEXG2-l
 
 pJN105-mupR was created by amplifying mupR from P. fluorescens gDNA using the primers mupR-F and mupR-R, which add homology to pJN105, including an RBS. pJN-RBSmupI was amplified with the reverse complement of these two primers to generate the vector backbone with homology to mupR. The resulting PCR product was treated with DpnI and then both PCR products were purified using a Monarch PCR and DNA Cleanup Kit (NEB). The two fragments were ligated using Gibson assembly, then transformed into E. coli NEB 5-alpha. pPROBE-PmupI was constructed by amplifying the mupI promoter (−300 to +42) from P. fluorescens gDNA using the primers PmupI-F and PmupI-R. This PCR product was cleaned up with a Monarch kit, then amplified with PmupI-pPR-F and PmupI-pPR-R to add homology to the pPROBE-GT vector. pPROBE-GT was amplified with the reverse complement of these two primers. The vector PCR was treated with DpnI, then both PCR products were purified and used to transform E. coli NEB 5-alpha. The resulting constructs were confirmed by Sanger sequencing.
 
-## LasR and MupR activity measurements
+### LasR and MupR activity measurements
 
 LasR activity was measured in E. coli containing pJNL and pPROBE-PrsaL or in P. aeruginosa PAO-SC4 containing pPROBE-PrsaL using previously reported methods (Wellington and Greenberg, 2019). Briefly, overnight-grown cultures were diluted 1:100 and grown back to log-phase. For E. coli, cultures were grown to an optical density at 600 nm (OD) of 0.3, treated with L-arabinose (0.4%), and incubated with AHLs for 4 hr. MupR activity was measured in E. coli harboring pJN105-mupR and pPROBE-PmupI using this same protocol. For P. aeruginosa, cultures were grown to an OD between 0.05 and 0.3, were diluted to an OD of 0.01, and then incubated with AHLs for 16–18 hr. LasR activity was measured as GFP fluorescence (excitation 490 nm, emission 520 nm, gain 50) using a Synergy H1 microplate reader (Biotek Instruments). Activity measurements were normalized by dividing by OD600 and subtracting background values (fluorescence per OD600 for cultures incubated with vehicle control). Half maximal effective concentrations, EC50, were calculated using GraphPad Prism.
 
-## LasR immunoblotting
+### LasR immunoblotting
 
 The relative levels of soluble LasR in P. aeruginosa PAO-SC4 with unmarked lasR mutations were assessed using published methods (Schuster and Greenberg, 2007). Briefly, cultures were grown overnight in LB/MOPS, diluted 1:100 in LB/MOPS containing 2 µM 3OC12-HSL, and grown to an OD600 of 2. Cells were collected by centrifugation at 4°C and suspended in LasR purification buffer (25 mM Tris-HCl pH 7.8, 150 mM NaCl, 1 mM ethylenediaminetetraacetic acid, 1 mM dithiothreitol, 0.5% Tween-20, 10% glycerol, 2 µM 3OC12-HSL). The cell suspensions were sonicated and the resulting lysates were subjected to ultracentrifugation at 55,000 rpm for 30 min at 4°C. Protein concentrations were determined by NanoDrop and normalized samples were separated by SDS-PAGE. The separated proteins were transferred to a PVDF membrane which was treated with polyclonal antibodies against LasR (Covance; 1:1000 dilution). Proteins were detected using a secondary anti-rabbit horseradish peroxidase IgG and chemiluminescent substrate.
 
-## TLC screening for AHLs
+### TLC screening for AHLs
 
 Cultures of P. aeruginosa PAO1ΔrhlI or of P. aeruginosa PAO-SC4 with pJN-empty or with wild-type or mutated pJN-lasI were grown overnight in Jensen’s medium with 0.3% glycerol. Overnight cultures were used to inoculate fresh medium (1% v/v). When the OD reached 0.5, lasI expression was induced with arabinose (0.4%) and 1.1 mL cultures were incubated with 1.1 μCi/mL L-[1-14C]-methionine (14C-methionine, American Radiolabeled Chemicals) for 90 min (Schaefer et al., 2018). Cells were pelleted by centrifugation and 1 mL of supernatant fluid was extracted twice with 2 mL acidified EtAc. The extracts were dried under N2 and resuspended in 15 μL acidified EtAc. 5 μL of each extract was spotted on an aluminum backed C18-W-silica TLC plate (Sorbtech). AHLs were separated using 70% methanol in water, then the TLC plate was dried and exposed to a phosphor screen for at least 16 hr. Phosphor screens were imaged with a Sapphire Biomolecular Imager (Azure Biosystems). To confirm TLC findings, select extracts were dried, suspended in methanol, and analyzed by C18-reverse-phase HPLC using a previously reported method (Schaefer et al., 2018).
 
-## HPLC radiotracer assays for LasI activity
+### HPLC radiotracer assays for LasI activity
 
 For better detection of AHLs, we slightly modified the radiolabeling protocol detailed above, modeling it after a previously published method (Leadbetter and Greenberg, 2000). Cultures of P. aeruginosa PAO-SC4 with wild-type or mutated pJN-RBSlasI were grown overnight in LB/MOPS. Overnight cultures were used to inoculate 5 mL LB/MOPS (1% v/v). After 2 hr, lasI expression was induced with arabinose (0.4%) and cultures were grown to OD 0.7. Cells were centrifuged at 5000 rpm for 10 min, and pellets were suspended in 1.1 mL phosphate buffered saline with 10 mM glucose. After shaking incubation at 37°C for 10 min, 1.1 μCi 14C-methionine was added to the cell suspension. Cell suspensions were incubated with radiolabel for 2 hr, after which cells were pelleted by centrifugation and 1 mL supernatant fluid was extracted twice with 2 mL acidified EtAc. Radiolabeled AHLs were dried under N2 and suspended in methanol. One-third of each extract was analyzed by reverse-phase HPLC using a gradient of 10–100% methanol-in-water (Schaefer et al., 2018).
 
-## Assessment of protease production on casein agar
+### Assessment of protease production on casein agar
 
 Casein agar was used to evaluate protease production as previously described (Chen et al., 2019). Cultures were grown in LB/MOPS overnight, diluted to an OD600 of 0.1, and then 3 µL was spotted on casein agar plates (60 mm × 15 mm) containing AHLs or DMSO as a vehicle control. Colony growth and casein proteolysis around the colony were assessed after 48 hr at 37°C.

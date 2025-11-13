@@ -33,9 +33,21 @@ Herein, we studied the impact of the paternal maintenance of an unhealthy WD for
 
 ## Results
 
-## Feeding successive paternal generations with a WD exacerbates the overweight phenotype and accelerates the development of obesity-associated pathologies
+### Feeding successive paternal generations with a WD exacerbates the overweight phenotype and accelerates the development of obesity-associated pathologies
 
 To test experimentally whether the maintenance of an unhealthy diet through the paternal germline influences the metabolic phenotype of the resulting individuals, C57BL6/J male mice were fed a WD for five consecutive generations (from WD1 to WD5) (Figure 1A, Figure 1—figure supplement 1A). According to a previous study (Massiera et al., 2010), multigenerational WD feeding exacerbates the increased body weight mass induced by this diet. Despite marked heterogeneity in the WD4 and WD5 populations, we found that the WD4 and WD5 males weighted significantly more than the WD1 and WD3 ones (p<0.05 and <0.01, respectively) (Figure 1B, Figure 1—figure supplement 2A, B). Interestingly, growing heterogeneity of the body weight mass between the males of the first and the latter generations (Figure 1—figure supplement 1C) was observed in the four independent families, indicating that the phenotypic heterogeneity previously observed in diet-induced obesity mouse models (Burcelin et al., 2002) increases progressively over the generations. This increase in total body weight with paternal multigenerational WD feeding was associated with an increase in perigonadal white adipose tissue (gWAT) mass (Figure 1C, Figure 1—source data 1). Indeed, WD5 gWAT weighted significantly more than the WD1 gWAT (p<0.05) and the gWAT volume measured by computed tomography increased 2.3-fold and 3.4-fold in WD1 and WD5 mice, respectively, compared to that of control mice (CD-fed mice) (Figure 1—source data 1). The increase in gWAT mass was positively correlated with total body weight (perigonadal fat mass versus total body weight; Spearman’s r = 0.78, p<0.0001) (Figure 1—figure supplement 2E). It was also associated with the hypertrophy of white adipocytes, with a median surface cell area of white adipocytes increasing from 1500 to 4000 μm2 from the first (WD1) to the fifth generation (WD5) and with a decreased calculated number of adipocytes in WD5 compared to the controls (Figure 1D–F). Furthermore, our RNA-seq comparison between the gWAT of WD1 and WD5 males revealed that multigenerational WD feeding has a strong impact on the gWAT gene expression profile. In fact, we observed an increase in differentially expressed genes (DEGs), from 325 in WD1 (with 93 upregulated and 232 downregulated genes) to 1199 (757 upregulated and 442 downregulated) in WD5, compared to the respective CD-fed mice. Interestingly, while the majority of DEGs in WD1 (66%) were also deregulated in WD5, a minority of DEGs in WD5 (only 8% for the upregulated genes and 35% for the downregulated genes) were deregulated in WD1 (p-value<0.01). Importantly, all common genes were deregulated in the same direction (Figure 1G). Interestingly, querying the WD1 and WD5 DEGs against the molecular signature database collection of curated gene pathway annotations revealed a specific WD5 enrichment in gene sets associated with CHEN_METABOLIC_SYNDROM_NETWORK (genes forming the macrophage-enriched metabolic network claimed to have a causal relationship with metabolic syndrome traits) and with genes potentially regulated by the methylation of lysine 4 (H3K4) and lysine 27 (H3K27) of histone H3 and by polycomb repressive complex 2 (PRC2) (Figure 1—source data 2; Liberzon, 2014).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig1-v2.jpg)
+
+**Figure 1.:** (A) Study design for the maintenance of WD feeding for five consecutive generations through the paternal lineage. Male mice were randomized to receive either a control diet (CD; 5% of energy from fat) or a WD (WD1; 45% of energy from fat). After 3 months of WD feeding, four males obtained from different fathers were arbitrary chosen to generate four independent families. They were mated with CD-fed females to generate WD2 offspring. At 3 weeks old, they were fed a WD, and at 4 months, at least one WD-fed male per family was crossed with CD-fed females. This second generation of males was called WD2. This experimental design was repeated three times to obtain the WD5 group (Figure 1—figure supplement 1). (B) Box-whiskers (min-max) of the median total body weight of the different male WD cohorts (n ≥ 8 mice per group). (C) Box-whiskers (min-max) of the median perigonadal white adipose tissue (gWAT) weight relative to total body weight in the different WD cohorts. (D) H&E staining of gWAT sections (scale bar: 200 μm) in representative CD, WD1, WD4, and WD5 males. (E) Box-whiskers (min-max) of the median surface area (μm2) of the adipocytes, which was calculated using Image Analyzer software (ImageJ). The total count ranged from 3275 to 7052 cells per condition (n ≥ 4 mice per group). (F) Box-whiskers (min-max) of the number of adipocytes, which was estimated using the mathematical equation developed by Jo et al., 2009, as previously described in Gilleron et al., 2018. (G) Table showing the differentially expressed genes in WD1 and WD5 perigonadal white adipose tissue. *padj<0.05, **padj<0.01, ***padj<0.001, ****padj<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Each square corresponds to one mouse. n corresponds to the number of offspring for each Western diet (WD) group. Because of the heterogeneity of the phenotype inside the same litter from the WD2 generations, more than one progenitor from the same litter were used to obtain the next generation. (B) Each square corresponds to one mouse. n corresponds to the number of offspring for each control diet (CD) group. Because of the homogeneity of the phenotype inside the same litter (Figure 1—figure supplement 2D), one progenitor per litter was used to obtain the CD2, CD3, and CD4. All CD mice were mated with a CD-fed female. (C) Scatter plot of total body weight mass for each litter of all WD generations. Each data point represents the measurements of one male.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Evolution of total body weight at 12 and 18 weeks over WD-fed generations (n ≥ 15). (B–E) Correlation analysis contains WD1–WD5 males. (B) Scatter plot of all WD litters. To demonstrate that we did not create significance with increasing the correlated sample, we selected a subset of 18 mice in WD4 and WD5 making sure that the four WD1 ancestors were equitably represented across the groups. Three combinations of 18 mice were selected and gave the same significance level with a p<0.001 when total body weight mass was compared to the corresponding weight of control diet (CD) group. This scatter plot represents one of these combinations. (C) Box-whiskers (min-max) of the median total body weights of the different male CD-fed and WD-fed cohorts. Statistical significance (p value) of differences in total body weight mass between CD-fed and WD-fed males from each generation was determined with the Mann–Whitney U test for unpaired observations (two-tailed), ∗p<0.05; ∗∗p<0.01; ∗∗∗p<0.001. (D) Box-whiskers (min-max) of the median total body weights of the CD-fed males in each generation. ns: not significant. (E) Positive linear correlation between perigonadal white adipose tissue (gWAT) and total body weight. Statistically significant positive linear correlation between gWAT and plasma leptin concentration (F), between gWAT and plasma total cholesterol (G), between gWAT and plasma C-reactive protein concentration (H), and between plasma leptin concentration and gWAT leptin mRNA (I). (D–H) Each data point represents the measurements of one male from generation 1 (WD1) to generation 5 (WD5). (J) There was no statistically significant linear correlation between epididymal fat mass and area under the curve–glucose tolerance test. (K) Principal component analysis analysis of fasting blood glucose, total body weight, epididymal fat mass, and kCal in the different WD cohorts visualizing the pattern of WD males depending on the number of WD-fed ancestors.
 
 The aforementioned modulations of white adipose tissue in WD generations shed light on the possible exacerbation of obesity-associated pathologies (such as insulin resistance [and subsequently type II diabetes] and nonalcoholic fatty liver disease) (Gilleron et al., 2018). To check this hypothesis, several metabolic risk parameters related to these pathologies were analyzed in WD-fed mice (Table 1). In comparison with CD-fed mice, circulating plasma levels of leptin, C-reactive protein (CRP), one marker of inflammation, and total cholesterol were significantly higher in the WD3 (p<0.01), WD4 (p<0.05), and WD5 (p<0.01) groups but not in the WD1 (p=0.07) or WD2 (p=0.4) groups (Table 1). The alterations in these metabolic parameters in WD-fed males were found to be positively correlated with the increase in gWAT mass (Figure 1—figure supplement 2F–H). At the molecular level, the increase in serum leptin in WD-fed males was positively correlated with an increase in leptin mRNA levels in the gWAT of the respective male mice (total serum leptin and leptin mRNA, Spearman’s r = 0.89, p<0.0001, Figure 1—figure supplement 2I), suggesting an accumulation of epigenetic modifications at the leptin promoter. These results are in line with recent studies showing that leptin upregulation occurs via epigenetic malprogramming in white adipose tissue (Lecoutre et al., 2017; Masuyama et al., 2016). Furthermore, we found a significantly impaired response in the intraperitoneal glucose tolerance test (GTT) in all WD-fed mouse groups (Figure 2A), which was not associated, except for in WD2-fed males, with an impaired insulin response, as shown by the intraperitoneal insulin tolerance test (ITT) (Figure 2B). Therefore, unlike the other metabolic parameters, we did not notice any significant exacerbation of insulin sensitivity in successive generations. Moreover, the response to an intraperitoneal GTT (measured through the area under the curve [AUC]-GTT calculation) was not correlated with the gWAT mass (Figure 1—figure supplement 2J). Together, these data might reflect the multifactorial and complex nature of the pathogenesis of obesity-induced diabetes.
 
@@ -43,13 +55,83 @@ The aforementioned modulations of white adipose tissue in WD generations shed li
 
 **Figure 2.:** (A, B) Evolution of glucose parameters in male mice fed a WD for five successive generations. Blood glucose and insulin tolerance tests were performed on 16-week-old males (n ≥ 6). Plasma glucose (inserted box-whiskers [min-max] of the median area under the curve [AUC] and above baseline for glucose from time point 0 to 120; glucose tolerance test) (A); (inserted box-whiskers [min-max] of the median AUC and above baseline for glucose from time point 0 to 100; insulin tolerance test) (B). Glucose tolerance and insulin tolerance tests were conducted in the morning in overnight-fasted mice. (C) Box-whiskers (min-max) of the median liver weight relative to total body weight in the different WD cohorts (n ≥ 8 mice per group). (D) Liver triglyceride contents in the control diet (CD), WD1, and WD5 groups (n ≥ 6). (E) Percentage of normal hepatocytes, hepatocytes with microvesicular steatosis, hepatocytes with macrovesicular steatosis, and ballooning degenerative hepatocytes in CD, WD1, and WD5 livers (n ≥ 6). (F) H&E staining of liver sections (scale bar: 250 μm) from representative CD, WD1, and WD5 males. *padj<0.05, **padj<0.01, ***padj<0.001.
 
+**Table 1.**
+ Evolution of serum biomarker parameters in different WD groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Control n = 6</th>
+      <th>WD1 n = 4</th>
+      <th>WD2 n = 5</th>
+      <th>WD3 n = 7</th>
+      <th>WD4 n = 7</th>
+      <th>WD5 n = 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adiponectin (ng/ml)</td>
+      <td>4.4 (4.9–5.2)</td>
+      <td>5.2 (3.3–6.9)</td>
+      <td>3.5 (2.8–4.7)</td>
+      <td>3.4 (2.8–5.5)</td>
+      <td>3.6 (2.9–4.2)</td>
+      <td>4.6 (3.5–5.0)</td>
+    </tr>
+    <tr>
+      <td>Leptin (ng/ml)</td>
+      <td>6.7 (5.1–7.5)</td>
+      <td>10.2 (6.2–11)</td>
+      <td>8.2 (6.2–11.6)</td>
+      <td>11.5 (7.9–28)</td>
+      <td>19 (13–32)**2</td>
+      <td>21 (12–26)**2</td>
+    </tr>
+    <tr>
+      <td>CRP (g/ml)</td>
+      <td>4.2 (3.2–5.0)</td>
+      <td>5.8 (5.1–6.2)</td>
+      <td>5.7 (5.4–6.2)</td>
+      <td>7.1 (5.7–9.8)**</td>
+      <td>5.7 (3.5–7.9)*</td>
+      <td>5.8 (4.6–7.4)**</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mg/dl)</td>
+      <td>1.1 (0.9–1.2)</td>
+      <td>1.8 (1.3–2.0)**</td>
+      <td>1.4 (1.0–1.6)</td>
+      <td>1.6 (1.5–1.9)*</td>
+      <td>1.9 (1.6–2.4)***2</td>
+      <td>1.9 (1.6–2.4)***2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are expressed as median (IQR). Numbers are in bold if padj<0.05.* and 2 denote the WD groups significantly different from that of the CD and WD2 groups, respectively.*padj<0.05, **padj<0.01.WD: Western diet; CD: control diet; CRP: C-reactive protein._
+
 Strikingly, although the C57BL6/J-strain male mice fed a WD diet for one generation failed to develop strong alterations in liver phenotype (Schierwagen et al., 2015; AMDCC et al., 2005), major abnormalities were observed in WD5 liver, that is, organ weight, histological and biochemical parameters. Indeed, the mass of the WD5 liver (not that of the WD1 liver) was significantly higher than that of the CD specimens (Figure 2C). Furthermore, unlike WD1 liver, histological and biochemical examinations revealed the presence of macrovesicular steatosis with significantly increased triglyceride (TG) levels in WD5 liver compared with CD liver (p<0.01, respectively) (Figure 2D–F). Therefore, the phenotype of WD5 livers exhibits typical features of fatty liver.
 
 Together, both morphological and molecular features demonstrate that multigenerational WD feeding induced a progressive dysregulation of the male metabolic phenotypes (Figure 1—figure supplement 2K), with an exacerbation of the gWAT size and gWAT transcriptional alteration as well as of obesity-associated pathologies such as fatty liver. Therefore, a worsening of the underlying medical conditions can be potentially transmitted to next generations.
 
-## Long-term transgenerational epigenetic inheritance of an overweight ‘healthy’ phenotype
+### Long-term transgenerational epigenetic inheritance of an overweight ‘healthy’ phenotype
 
 Previous reports showed that WD-induced metabolic dysregulations during one-generation exposure could be transmitted across one (F1) or two generations (F2) fed a CD (Fullston et al., 2013; de Castro Barbosa et al., 2016). To investigate the impact of feeding a WD through several generations on the inheritance of diet-induced metabolic pathologies, we compared the metabolic status of F1, F2, and F3 cohorts fed a CD generated from either CD, WD1, or WD5 males (Figure 3A). As expected from previous studies (Fullston et al., 2013; Grandjean et al., 2016), male and female F1 progenies derived from WD1 males (F1-WD1) were statistically heavier than the control animals with CD-fed ancestors (Figure 3B, F, Figure 3—figure supplement 1A–C). Although the difference did not reach significance at the age of 16 weeks, the same trend was also observed for the F1 progenies derived from WD5 (F1-WD5) male progenies (Figure 3D, H, Figure 3—figure supplement 1A–C). This overweight phenotype was associated with impaired glucose tolerance as measured by the GTT for both the male F1-WD1 and F1-WD5 progenies and the female F1-WD5 mice (Figure 3—figure supplement 1E, G, Figure 3—source data 1 and 2). We noticed, however, the absence of intergenerational inheritance of the fatty liver phenotype observed in the WD1 and WD5 progenitors (Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig3-v2.jpg)
+
+**Figure 3.:** (A) Study design for the inheritance of WD-induced metabolic alterations in WD1- and WD5-fed animals. Four WD1 and nine WD5 male mice from different litters (arbitrary selected from the four different families) were mated with CD-fed females to generate F1-WD1 and F1-WD5 offspring, respectively. Each offspring was fed the CD. This crossing scheme was repeated three times to obtain the F2-, F3-, F4-WD1 and F2-, F3-, F4-WD5 offspring. The number of mice is indicated. Box-whiskers (min-max) of the median total body weights of 16-week-old males (B, D) and females (F, H) of progenies from WD-fed animals. Box-whiskers (min-max) of the median perigonadal white adipose tissue (gWAT) of males (C, E) and females (G, I) of progenies from WD-fed animals. The unimodality/multimodality of distributions for body weight for all groups was tested using the Hartigan’s Dip Test for unimodality/multimodality. All groups, except the F1-WD1 male progenies, followed a unimodal distribution. Gray rectangles and circles represent the male and female progenies, respectively, from WD1-fed animals. Blue rectangles and red circles represent the male and female progenies, respectively, from WD5-fed animals. *padj<0.05, **padj<0.01, ***padj<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Box-whiskers (min-max) of the median total body weight of the male (A) and female (C) F1-, F2-, F3-WD progenies (n ≥ 8 mice per group). Box-whiskers (min-max) of the median gonadal fat mass (gWAT) weight relative to total body weight in the male (B) and female (D) F1-, F2-, F3-WD progenies (n ≥ 8 mice per group). The evolution of glucose parameters in CD-fed male (E, F) and female (G, H) WD progenies. Above the glucose tolerance curves are representative corresponding box-whiskers (min-max) of the median area under the curve–glucose tolerance test (AUC-GTT) of each group (E, G). Above the insulin tolerance curves are representative corresponding box-whiskers (min-max) of the median AUC-ITT of each cohort (F, H) measured in each WD cohort. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Liver triglyceride contents in CD, WD1, and WD5 CD-fed progenies, n ≥ 4/group. (B) H&E staining of liver sections (scale bar: 250 μm) in representative F1, F2, and F3 CD-fed progenies of CD, WD1, and WD5 males.
 
 Both male F2-WD1 and F2-WD5 CD-fed progenies were also overweight (p<0.01). This phenotype was associated with an excessive accruement of gWAT mass of at least 90% over the control (Figure 3C, E, G, I). Importantly, although the female and male F2-WD5 progenies were found to be significantly fatter and heavier than the F2-WD1 cohorts, these mice did not exhibit impaired glucose tolerance (as measured by the GTT) (Figure 3—figure supplement 1E, G) or signs of fatty liver lesions (Figure 3—figure supplement 2).
 
@@ -57,15 +139,23 @@ The metabolic differences were even more striking in both F3 and F4 progenies (F
 
 Collectively, these data suggest that WD feeding for multiple generations induces stable germline epigenetic modifications that were not erased after removing the stressor(s) for at least four generations of CD-fed progeny.
 
-## Sperm RNAs transmit only transient epigenetic inheritance of WD-induced pathologies
+### Sperm RNAs transmit only transient epigenetic inheritance of WD-induced pathologies
 
 Specific signatures of sperm small non-coding RNAs (sncRNAs) from WD-fed mice have been previously shown to act as a vector of intergenerational epigenetic inheritance of newly acquired pathologies (Chen et al., 2016; Grandjean et al., 2016; Sharma et al., 2016; Sarker et al., 2019). To determine whether sperm small RNAs are also involved in the long-term maintenance of epigenetic inheritance (transgenerational epigenetic inheritance), we systematically profiled the expression of sncRNAs of three independent CD, WD1, and WD5 sperm samples by deep sequencing using a recently developed sncRNA annotation pipeline optimized for rRNA- and tRNA-derived sRNAs, rsRNA, and tsRNA, respectively (SPORTS1.0) (Shi et al., 2018). We found a sperm RNA signature that is specifically induced in the first generation of WD-diet males characterized by an increase in the proportion of rsRNA. This is consistent with previous reports showing the sensitivity of rsRNA to dietary exposure such as a high-fat diet (Nätt et al., 2019; Zhang et al., 2018; Figure 4B). Strikingly, this sncRNA signature observed in the first generation of WD-fed male fed a WD tends to disappear in the fifth generation of WD-fed male, which exhibit a sncRNAs signature very similar to that of CD sncRNAs. On the one hand, while ~64% of the sncRNAs were annotated to rsRNAs in WD1, only ~40% of them were annotated to rsRNAs in CD and WD5 sperm (Figure 4D), suggesting a global modification of the sncRNA population upon WD exposure. On the other hand, a closer look at the sncRNAs differentially expressed in WDs (WD1 and WD5) and CD showed that the rsRNAs are not the only population to be sensitive to dietary exposure (Figure 4), which is consistent with previous reports in mice. Indeed, searching for small RNA DEGs (adjusted p value<0.05) between WD (WD1 or WD5) and CD sperm, we identified 479 and 66 DEGs in WD1 and WD5, respectively, compared to control mice (Figure 4E, Figure 4—source data 1 and 2). Interestingly, the majority of WD5 DEGs (47 out of 66) were already deregulated in WD1 (Figure 4E). Among these common sncRNAs, we identified tsRNA and microRNAs known to be involved in short-term epigenetic inheritance of metabolic dysfunction (intergenerational inheritance) (Chen et al., 2016; Grandjean et al., 2016; Figure 4F, Figure 4—source data 1 and 2). Interestingly, no sncRNA was found deregulated (adjusted p<0.05) between WD1 and WD5. These data indicate that the sensitivity of sperm sncRNA signature to diet, observed independently by several groups (Nätt et al., 2019; Zhang et al., 2018), is also modulated by the diet of ancestors.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig4-v2.jpg)
 
-**Figure 4.:** (A) Representative bioanalyzer profiles of control diet (CD), Western diet (WD)1, and WD5 sperm total RNAs. (B) Length distribution and pattern changes of sperm sncRNA different populations (miRNAs piRNAs, tsRNAs, and rsRNA) in one representative CD, WD1, and WD5. Each graph was generated by SPORTS1.0 (27). (C) Small RNA-seq profiles of each CD, WD1, and WD5 male. (D) Mean proportion of each small RNA population across each group. (E) The normalized small RNA levels from the CD (blue spots), WD1 (red spots), and WD5 (green spots) sperm were analyzed by principal component analysis (PCA). One WD5 fell outside the PCA cluster and was arbitrarily removed for differential expression analysis. (F) Venn diagram of small RNA sequences differentially expressed in WD1 and WD5 sperm. The numbers of small RNAs that are unique for each WD1 and WD5 male are shown in each circle. The numbers of genes in overlapping (common) are indicated at the intersections of the sets in the Venn diagram (Padj<0.05 Log2FC≥|0.6|). (G) Scatter plots of microRNAs or piRNAs, tRNA fragments, and other small RNAs differentially expressed (Padj<0.05 |Log2FC| ≥ 0.6) in WD1 (left panel) and WD5 (right panel) sperm compared to their expression in the CD sperm cohort.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Representative bioanalyzer profiles of control diet (CD), Western diet (WD)1, and WD5 sperm total RNAs. (B) Length distribution and pattern changes of sperm sncRNA different populations (miRNAs piRNAs, tsRNAs, and rsRNA) in one representative CD, WD1, and WD5. Each graph was generated by SPORTS1.0 (27). (C) Small RNA-seq profiles of each CD, WD1, and WD5 male. (D) Mean proportion of each small RNA population across each group. (E) The normalized small RNA levels from the CD (blue spots), WD1 (red spots), and WD5 (green spots) sperm were analyzed by principal component analysis (PCA). One WD5 fell outside the PCA cluster and was arbitrarily removed for differential expression analysis. (F) Venn diagram of small RNA sequences differentially expressed in WD1 and WD5 sperm. The numbers of small RNAs that are unique for each WD1 and WD5 male are shown in each circle. The numbers of genes in overlapping (common) are indicated at the intersections of the sets in the Venn diagram (Padj<0.05 Log2FC≥|0.6|). (G) Scatter plots of microRNAs or piRNAs, tRNA fragments, and other small RNAs differentially expressed (Padj<0.05 |Log2FC| ≥ 0.6) in WD1 (left panel) and WD5 (right panel) sperm compared to their expression in the CD sperm cohort.
 
 To further investigate the role of sperm RNAs in the long-term transgenerational epigenetic inheritance of metabolic alterations, microinjection experiments into naive zygotes were performed with total sperm RNA from either WD1 or WD5 males (RNA-WD1 progenies and RNA-WD5 progenies, respectively) (Figure 5A). As previously reported, this experiment faithfully reproduces the pattern of short-term paternal transmission of environmentally induced phenotypes in crosses (Chen et al., 2016; Grandjean et al., 2016; Gapp et al., 2014; Sharma et al., 2016; Sarker et al., 2019). In agreement with previous studies, male 12-week F1-RNA-WD1 and F1-RNA-WD5 progenies were heavier than F1-RNA-CD progenies (31 g vs. 30 g, p<0.05) (Figure 5B). In addition, they displayed glucose and insulin response alterations, as shown by GTT and ITT analyses, with significantly higher values of the AUC to controls (Figure 5D, E, Figure 5—source data 1). Regarding the fatty liver phenotype, neither abnormal TG levels nor histological abnormalities were observed in liver from F1-RNA-CD and F1-RNA-WD progenies. Thus, the metabolic alterations observed in F1-RNA progenies are partially reminiscent of the WD1 and WD5 male phenotype.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig5-v2.jpg)
+
+**Figure 5.:** (A) Study design for the inheritance of metabolic alterations induced after the microinjection of sperm total RNA from CD-, WD1-, or WD5-fed males into C57BL/6J zygotes. Five F1 CD-fed males from each set of RNA microinjections were mated with CD-fed females to generate F2-RNA offspring. Each offspring was fed a control diet. This crossing scheme was repeated twice to obtain the F3-RNA offspring and then the F4-RNA offspring. (B) Box-whiskers (min-max) of the median total body weight of the F1-, F2-, F3-, and F4-RNA male progenies (n ≥ 8 mice per group). (C) Box-whiskers (min-max) of the median perigonadal white adipose tissue (gWAT) weight relative to total body weight in the different RNA progenies. The evolution of glucose parameters in male mice from RNA-injected progenies. (D) Box-whiskers (min-max) of the median area under the curve–glucose tolerance test (AUC-GTT) of each cohort. (E) Box-whiskers (min-max) of the median AUC-ITT of each group. (F) Bivariate correlation between the body weight of the F2-RNA-CD, F2-RNA-WD1, and F2-RNA-WD5 progenies and the AUC-GTT (n = 38). This correlation was similar using parametric (Pearson, r = 0.4, p=0.01) or nonparametric (Spearman, r = 0.4, p=0.01) correlations. *padj<0.05, **padj<0.01, ***padj<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61736/elife-61736-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Liver triglyceride contents in F1, F2, and F3 progenies of CD-RNA-, WD1-RNA-, and WD5-RNA-injected groups. (B) H&E staining of liver sections (scale bar: 250 μm) in representative F1, F2, and F3 CD-fed progenies of CD-RNA-, WD1-RNA-, and WD5-RNA-injected groups. WD: Western diet; CD: control diet.
 
 Overweight phenotypes and glucose response alterations were partially transmitted to the F2 and F3 generations (Figure 5—source data 2 and 3). Indeed, total body weight mass of the F2-RNA-WD males was significantly heavier than that of the F2-RNA-CD male (p<0.05). This metabolic abnormality did not persist in the F3 and F4 progenies. Strikingly, although the glucose and insulin response alterations were not observed in the F2 generations of RNA-WD males, we noticed an alteration in those responses in the F3 generations of the RNA-WD5 males but not of the RNA-WD1 males. Intriguingly, while we did not observe any liver abnormalities in F1-RNA progenies, liver histological examinations revealed macro- and microvesicular steatosis in hepatocytes of two F2-WD overweight males (2 out of 10) (Figure 5—figure supplement 1). It should be noted that these abnormal hepatocytes were never observed in RNA-CD progenies. Nevertheless, all the metabolic alterations were completely absent in the F4 generations (Figure 5—source data 4).
 
@@ -93,7 +183,7 @@ In conclusion, environmentally induced epigenetic modifications in germlines wou
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All mouse experiments were performed with C57BL/6J mice obtained from Charles River (Charles River Laboratories, France). All mice were housed in a temperature-controlled system and maintained on a 12 hr light/dark cycle (lights on at 7 a.m.). Experimental mice were given ad libitum access to either a high-fat high-sugar diet (WD) (U8954 version 205 HF 45% of energy from fat, SAFE, France) or a CD (SAFE A04, 5% of energy from fat, SAFE, France) and sterile water. To evaluate the impact of the diet of paternal ancestors on metabolic health, we developed two experimental models. On the one hand, WD feeding was maintained for five successive generations through the paternal line. Briefly, 3-week-old male mice were divided into two groups. Males from the first group were kept on CD, and the males of the other group were fed a WD for 3 months. This first generation of CD-fed and WD-fed males was named CD1 and WD1, respectively. At 4 months old, two independent males of WD1 group were then crossed with 7-week-old C57BL/6J female mice (CD-fed) obtained from Charles River (Charles River Laboratories, France) to generate WD2 offspring. One or two litters were obtained per male. The male progenies were kept and subjected to the same experimental procedure. Then, at least one male, selected randomly, fed a WD for 3 months from each family was mated with CD-fed females to generate WD3 offspring. The same procedure was repeated twice to generate the WD4 and WD5 offspring (Figure 1—figure supplement 1A). However, from the WD2 generation, a considerable heterogeneity with respect to total body weight mass was observed within the same litter (Figure 1—figure supplement 1C). For this reason and as illustrated in Figure 1—figure supplement 1A starting from this generation, more than one male per litter was chosen to mate. The complete experimental design was performed twice at approximately 6 months’ interval giving rise to four independent families. To demonstrate that we did not create significance with increasing the correlated sample, we selected a subset of 18 mice in WD4 and WD5 making sure that the four WD1 ancestors were equitably represented across the groups. Three combinations of 18 mice were selected and gave the same significant level with a p-value < 0.001 when total body weight mass or gWAT weight relative to total body weight of WD4 and WD5 groups was compared to the corresponding weight of CD group. One of these combinations is shown in Figure 1—figure supplement 2B. The same procedure was performed for the CD group (Figure 1—figure supplement 1B). However, in accordance with previous studies (Cropley et al., 2016; Massiera et al., 2010; Fullston et al., 2015; Zhou et al., 2018), body mass and gWAT weights of the CD-fed male progenies were very homogeneous (Figure 1—figure supplement 2D) and were combined in the same group.
 
@@ -103,65 +193,69 @@ To evaluate the role of sperm RNAs in transgenerational epigenetic inheritance o
 
 All mouse experiments were conducted in accordance with the National and European legislations for the care and use of research animals.
 
-## Body weight and food intake
+### Body weight and food intake
 
 Body weights were measured every week from weaning until 5 months of age. Daily food consumption was estimated by weighing the remaining food every week.
 
 For organ measurement, 5-month-old mice were anesthetized with sodium pentobarbital and rapidly dissected. Then, gonadal WAT, inguinal subcutaneous WAT, epididymis, liver, and kidneys were carefully isolated, cleaned of unrelated materials, and weighed. One part was fixed in 4% paraforamaldehyde (PFA), whereas the other one was snap frozen in liquid nitrogen.
 
-## Blood metabolic parameter measurements
+### Blood metabolic parameter measurements
 
 Blood metabolic parameters were detected under different physiological conditions, that is, a random-fed state and a 16 hr fasted state. Whole-blood glucose levels were determined using the OneTouch Vita (LifeScan, Johnson & Johnson company) system from tail blood. For plasma preparation, the blood was collected from the orbital sinus into sterile 1.5 ml tubes containing two drops of citrate sodium (3 M) and mixed gently. Blood cells were removed by centrifugation at 2000×g for 10 min at 4°C, and the resulting supernatant was immediately aliquoted and stored at −80°C. Serum CRP, leptin, adiponectin, and cholesterol levels were measured with the C-Reactive Protein ELISA (Mouse CRP, Elabscience, CliniSciences S.A.S., Nanterre, France), Leptin ELISA (ASSAYPRO, CliniSciences S.A.S., Nanterre, France), Adiponectin ELISA (mouse Adiponectin, EZMADP-60K, EMD Millipore Corporation, Darmsbalt, Germany), and Cholesterol Assay (Abcam, Paris, France) kits, respectively. All measurements were performed in accordance with the manufacturer’s instructions.
 
-## Glucose and insulin tolerance tests
+### Glucose and insulin tolerance tests
 
 Mice were placed in new cages prior to starvation. For GTTs, 12 hr fasted mice were injected intraperitoneal (i.p.) with a solution of sterile glucose (2 g/kg body weight) freshly prepared in 0.9% sterile saline. For ITTs, 6 hr fasted mice were injected i.p. with insulin diluted to 0.08 mU/μl in sterile saline for a final delivery of 0.8 mU/g body weight. Baseline glucose measurements were analyzed from tail blood before i.p. glucose or insulin injection (2 mg/g body weight) using the OneTouch Vita (LifeScan, Johnson & Johnson company) system. Blood glucose measurements were taken from the tail blood at the indicated points.
 
 gWAT morphometry staining gWAT was fixed with Antigenfix (Microm Microtech, France), embedded in paraffin, sectioned, and stained with a hematoxylin and eosin (H&E) solution. Slides (4/group) were scanned with Axio-scan, which allowed the scanning of the entire slide at high resolution. Six pictures of six different areas from 1 to 2 sections per sample were chosen and analyzed with image analyzer software (ImageJ). Total areas of adipocytes were traced manually. The total count ranged from 3275 to 7052 adipocytes per condition. The mean surface area of the adipocytes was calculated using image analyzer software (ImageJ). For each sample, 400–1000 adipocytes were counted.
 
-## Estimation of adipocyte number in gWAT
+### Estimation of adipocyte number in gWAT
 
-To estimate the number of adipocytes in gWAT depots, we applied a mathematical equation developed by Jo and colleagues (Jo et al., 2009), as previously described in Gilleron et al., 2018. Briefly, the number of adipocytes (N) was estimated by dividing the WAT mass (M) by the density of adipocytes (D = 915 g/l) multiplied by the mean volume of adipocytes within the WAT (V). The mean volume of adipocytes is calculated from the mean diameters of adipocytes, extracted from tissue sections images. The equation is presented below:N= M(D×43×πr3)
+To estimate the number of adipocytes in gWAT depots, we applied a mathematical equation developed by Jo and colleagues (Jo et al., 2009), as previously described in Gilleron et al., 2018. Briefly, the number of adipocytes (N) was estimated by dividing the WAT mass (M) by the density of adipocytes (D = 915 g/l) multiplied by the mean volume of adipocytes within the WAT (V). The mean volume of adipocytes is calculated from the mean diameters of adipocytes, extracted from tissue sections images. The equation is presented below:
 
-## Computed tomography of mice
+$$
+N=\frac{M}{(D\times\frac{4}{3}\times\pir^{3})}
+$$
+
+### Computed tomography of mice
 
 Anesthetized animals were placed in a SkyScan μCT-1178 X-ray tomograph (Bruker) and analyzed as previously described (Beranger et al., 2014). Mice were scanned using the following parameters: 104 µm pixel size, 49 kV, 0.5-mm-thick aluminum filter, and a rotation step of 0.9°. 3D reconstructions and analysis of whole abdominal fat were performed using NRecon and CTAn software (Skyscan), respectively, between thoracic 13 and sacral 4 vertebral markers.
 
-## Liver TG measurement
+### Liver TG measurement
 
 Frozen small pieces of liver were placed in 2 ml tubes with Ceramic Beads (for Precellys homogenizer) and were homogenized in sodium acetate (0.2 M, pH 4.5) using the Precellys homogenizer. After centrifugation, the supernatant was stored at −80°C. The TGs in homogenates were measured according to the reagent kit instruction (Triglycerides FS, DiaSys Diagnostic Systems GmbH, Holzheim, Germany).
 
-## Histological liver examination
+### Histological liver examination
 
 Livers were prepared and fixed in 4% paraformaldehyde, embedded in paraffin, cut into 5-μm-thick slices, stained with H&E, mounted with neutral resins, and then scanned with Axio-scan, allowing the scanning of the entire slide at high resolution. Liver histology was blindly evaluated by two independent analyses using a semiquantitative scale adapted from previously validated procedures (Nonalcoholic Steatohepatitis Clinical Research Network et al., 2005). To that end, images from three different fields in each section were collected at ×20 magnification, and numbers of normal hepatocytes, microvesicular, and macrovesicular steatosis and degenerating hepatocytes were assessed.
 
-## Sperm collection
+### Sperm collection
 
 Sperm were collected from the epididymis by squeezing. The cell suspension was centrifuged at 1000 rpm for 5 min, and the supernatant containing the spermatozoa was centrifuged at 3000 rpm for 15 min. To reduce contamination of somatic cells, the pellet was submitted to hypotonic shock by resuspension in water (250 μl), followed by the addition of 15 ml of PBS. The suspension was finally centrifuged at 3000 rpm for 15 min.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA from epididymal adipose tissues was extracted using TRIzol reagent (Life Technologies, France) according to the manufacturer’s instructions. Total RNA (0.5 µg) was reverse transcribed with mouse myeloblastosis virus reverse transcriptase (Promega) under standard conditions using hexanucleotide random primers according to the manufacturer’s instructions. cDNA was amplified by PCR with specific primers. Real-time PCR was performed on the Light Cycler Instrument (Roche Diagnostics) using the Platinum SYBR Green kit (Invitrogen). Specific primers for mouse leptin and two mouse housekeeping genes used for normalization (β-actin and 34B4 mouse genes) were purchased from Sigma (Sigma, France). We used primers for Leptin (forward, AAC CTG GAA ATG CTC TGG CTGT; reverse, ACT CGC TGT GAA TGG CCT GAA A), 36B4F (forward, TCC AGG CTT TGG GCA TCA; reverse, CTT TAT CAG CTG CAC ATC ACT CAG A), and β-actin (forward, CTA AGG CCA ACC GTG AAA AG; reverse, CCT GCT TCA CCA CCT TCT TG).
 
-## RNA preparation and microinjection
+### RNA preparation and microinjection
 
 Frozen sperm were stored at −80°C. RNA was then extracted by the TRIzol procedure (Invitrogen). The same preparations of sperm RNAs were used for microinjection and small RNA sequencing. RNA preparations were verified by spectrometry on an Agilent Bioanalyzer 2100 apparatus. Microinjection into fertilized eggs was performed as previously described in Sarker et al., 2019. RNA solutions were adjusted to a concentration of 1–2 µg/ml, and 1–2 pl were microinjected into the pronucleus of C57BL/6 fertilized mouse oocytes.
 
-## Library preparation and sequencing
+### Library preparation and sequencing
 
 Total RNA was isolated from gonadal adipose tissue (eWAT; n = 9) samples using the Ambion RiboPure (Thermo Fisher Scientific). RNA was quantified in a Nanodrop ND-1000 spectrophotometer, and RNA purity and integrity was checked by using a Bioanalyzer-2100 equipment (Agilent Technologies, Inc, Santa Clara, CA). Libraries were prepared using the TruSeq RNA Sample Preparation Kit (Illumina Inc, CA) and were paired-end sequenced (2 × 75 bp), by using the TruSeq SBS Kit v3-HS (Illumina Inc), in a HiSeq 2000 platform (Illumina Inc). More than 30 M PE reads were obtained for all samples.
 
-## Transcriptomics analysis (RNA-sequencing analysis)
+### Transcriptomics analysis (RNA-sequencing analysis)
 
 Raw sequence files were subjected to quality control analysis using FastQC. In order to avoid low-quality data, adapters were removed by Cutadapt and lower quality bases were trimmed by trimmomatic (Bolger et al., 2014). The quality-checked reads processed were mapped to the mouse reference genome GRCm38/mm10 using STAR (Dobin et al., 2013). Read abundance was evaluated for each gene followed by annotation versus mouse GTF by using the featureCounts function. The R package Edger was used in order to normalize the reads and identify DEGs (McCarthy et al., 2012). Genes with false discovery rate (FDR) < 0.05 after correcting for multiple testing were classified as DE (Love et al., 2014). The pheatmap and VolcanoPlot functions (R packages) were generated to graphically represent the expression levels (log2FC) and significance of DE genes among treatments. Next-generation sequence data have been deposited in the GEO Database with accession number (GSE148972) and a review access token (ovwzywcgnpublor).
 
-## Small RNA-sequencing analysis
+### Small RNA-sequencing analysis
 
 The experiment was carried out in triplicate. RNA libraries were prepared starting from 50 to 100 ng of total RNA from individual mice (n = 3 per group, three groups in total) and constructed using the Illumina TruSeq Stranded Small RNA Sequencing kit (Illumina Inc) according to the manufacturer’s instructions. Sequencing was performed at the Genomix platform (Sophia-Antipolis, France) using the HiSeq 2500 (Illumina Inc).
 
 Read quality was assessed using FastQC and trimmed, against known common Illumina adapter/primer sequences, using trimmomatic. The SmallRNAs UCAGenomix pipeline with Illumina adaptor trimming was used, read sizes < 15 nucleotides were discarded. In order to describe the general distribution of sperm sncRNAs, trimmed reads kept were mapped to small RNA database using a recently developed annotation pipeline, SPORTS1.0 (Shi et al., 2018). We used the default settings and database files for the mouse genome GRCm38/mm10 that are available on the Sports github (https://github.com/junchaoshi/sports1.0). Averages summarized over biotypes were based on the default annotation result output files. Normalization of read abundance and differential expression analysis was performed by using DESeq R package on the Sports output files. The baseMean for each gene, the maximum of mean counts among all conditions, was at least 50 counts. Next generation sequencing (NGS) experiments have been deposited in the GEO Database with accession number (GSE138989).
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 Statistical analyses were performed using the Kruskal–Wallis test followed by the two-stage step-up method of Benjamini, Krieger, and Yekuteil for multiple comparisons of body weight, body composition, cholesterol, adiponectin, CRP, and leptin levels, as well as leptin mRNA expression and AUC-GTT and AUC-ITT within the WD cohorts, F1-, F2-, and F3-progenies and RNA-microinjected progenies. For each parameter, all groups were compared to each other in a single Kruskal–Wallis test followed by the two-stage step-up method of Benjamini, Krieger, and Yekuteil to adjust for all the performed multiple comparisons.
 

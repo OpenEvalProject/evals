@@ -40,23 +40,111 @@ Our results demonstrate that nucleotide coding sequence-dependent translation ra
 
 ## Results
 
-## β- and γ-actin coding sequences have differential effects on cell migration speed
+### β- and γ-actin coding sequences have differential effects on cell migration speed
 
 To test the specific effect of coding sequences on intracellular functions of actin isoforms, we generated immortalized MEF cell cultures stably expressing β- and γ-actin coding sequences, as well as their codon-switched variants (β-coded γ-actin and γ-coded β-actin), cloned into identical expression constructs under the human β-actin promoter, containing an N-terminal eGFP fusion and the β-actin 3′UTR (Figure 1, top left, and 'Materials and methods'). This construct design enabled us to confine our experiments to the effects of the coding sequence and exclude any potential contribution from other elements known to mediate differences between β- and γ-actins, including promoter-mediated transcription (Tunnacliffe et al., 2018), differential 3′UTR-mediated mRNA targeting (Hill and Gunning, 1993; Katz et al., 2012; Kislauskis et al., 1993; Kislauskis et al., 1994), and differential N-terminal processing (Zhang et al., 2010). Cell populations stably expressing eGFP constructs were checked to ensure similar levels of eGFP mRNA, as well as to confirm that the expression of the exogenous eGFP-actin did not have any significant effect on the endogenous β-actin and γ-actin mRNA levels (Figure 1—figure supplement 1). We also confirmed that β-actin 3′UTR targeted the eGFP-actin mRNA to the cell periphery, using fluorescence in situ hybridization (FISH) (Figure 1—figure supplement 2). Finally, we confirmed that the level and distribution of F-actin in each of the cell cultures transfected with different actin isoforms was largely similar to each other (Figure 1—figure supplement 3). Thus, in these cell populations, the effects of exogenously expressed actin could be tested without perturbation of other actin-related processes that are essential for cell viability.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-v2.jpg)
+
+**Figure 1.:** Top left, mutagenesis strategy used to generate ‘codon-switched’ actin variants and linear maps of the major constructs used in this study. Top right, scatter plot of migration rates in a wound-healing assay of cell populations expressing different actin constructs. Bottom, representative images of the migrating wound edge, with the initial and the final position of the edge denoted by the yellow and the green line, respectively. Cell migration rates were derived as the area covered over time by the cell layer within the field of view (calculated as the area between the yellow and the green lines). N = 20 (for β-actin); 22 (for γ-actin); 18 (for βc-γ-actin); 19 (for γc-β-actin). Independent experimental replicates (two or more) are indicated by different symbols within each cell population. One way non-parametric analysis of variance (ANOVA) yielded a p-value<0.0001 with multiple comparisons shown on the plot. Error bars represent mean ± 95% CI. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. See also Videos 1–4. Scale bars, 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Data from the real-time PCR (quantitative PCR, or qPCR) of the four cell lines, using primer pairs detecting actin isoforms’ endogenous 3’UTRs and GFP. Each of the qPCR was repeated four times and outliers were excluded in Graphpad PRISM. The error bars represent 95% CI. One-way analysis of variance (ANOVA) indicated that there was a significant change only in the amount of eGFP mRNA (p=0.02), with multiple comparisons showing a significant change between β-actin and γ-coded β-actin only (p=0.02).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Images of GFP-actin-transfected cell lines with and without 3′UTR (as indicated on the left) visualized by GFP fluorescence (green), 4′,6-diamidino-2-phenylindole (DAPI) (blue), and GFP-encoding mRNA (white) detected using single-molecule fluorescence in situ hybridization (smFISH) probes against GFP mRNA. Insets show a zoom of the boxed areas in FISH images, showing localization of eGFP mRNA significantly more pronounced in the presence of β-actin 3′UTR. Scale bar, 20 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (Top) Images of GFP-actin-transfected cell lines visualized by fluorescent phalloidin staining. (Bottom) Box and whisker plot of log2 (phalloidin intensity) in each cell line with error bars indicating 95% CI the mean. Scale bar = 20 µm. N = 20 each for β-actin, γ-actin, and γ-coded β-actin and 22 for β-coded γ-actin.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Cell migration rate box plots showing untransfected (wild-type, WT), eGFP-β-actin (β-actin), and eGFP-γ-actin (γ-actin). The different symbols represent different scratch wounds.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Migration rate plots of cell populations expressing different actin constructs, derived as area covered over time by the cell layer in the field of view as shown in Figure 1. Δ3′UTR denotes the constructs lacking the β-actin 3′UTR responsible for zipcode targeting. All other constructs contained the β-actin 3′UTR. Error bars represent mean ± 95% CI. Different symbols within each cell population represent different scratch wounds. Number of technical replicates: N = 5 (for β-actin Δ3′UTR); 8 (for γ-actin Δ3′UTR); 20 (for β-actin); 22 (for γ-actin). Results of unpaired t-test are indicated on the graph (*p<0.05).
+
 β- and γ-cytoplasmic actins make up more than 50% of the total actin in these cells and have been previously shown to play major non-overlapping roles in directional cell migration (Patrinostro et al., 2017). We, therefore, tested whether cells expressing eGFP-β-actin or eGFP-γ-actin showed any differences in cell migration using a wound-healing assay. Strikingly, while cells expressing eGFP-β-actin migrated at rates similar to wild-type untransfected cells, cells expressing eGFP-γ-actin migrated nearly twofold faster (Figure 1, top right and bottom; Figure 1—figure supplement 4; Videos 1 and 2). This difference in cell migration rates was coding sequence dependent, as seen in cells expressing the codon-switched actin variants, γ-coded β-actin (which migrated faster, similarly to those expressing γ-actin), and β-coded γ-actin (which migrated slower, like β-actin-expressing cells) (Figure 1, top left; Videos 3 and 4). Thus, the effect of actin isoform expression on directional cell migration is mediated by their nucleotide coding sequence and does not appear to be influenced by their amino acid sequence.
+
+![Video 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-video1.mp4.jpg)
+
+**Video 1.:** Mouse embryonic fibroblast (MEF) cell cultures stably expressing eGFP-β-actin migrating into an infinite wound edge over a period of 10 hr.
+
+![Video 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-video2.mp4.jpg)
+
+**Video 2.:** Mouse embryonic fibroblast (MEF) cell cultures stably expressing eGFP-γ-actin migrating into an infinite wound edge over a period of 10 hr.
+
+![Video 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-video3.mp4.jpg)
+
+**Video 3.:** Mouse embryonic fibroblast (MEF) cell cultures stably expressing eGFP-β-coded γ-actin migrating into an infinite wound edge over a period of 10 hr.
+
+![Video 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-video4.mp4.jpg)
+
+**Video 4.:** Mouse embryonic fibroblast (MEF) cell cultures stably expressing eGFP-γ-coded β-actin migrating into an infinite wound edge over a period of 10 hr.
 
 In normal cells, the β-actin 3′UTR contains a zipcode sequence that is required for its mRNA localization to the cell periphery (Kislauskis et al., 1993) and has been shown to be important for directional cell migration (Condeelis and Singer, 2005; Katz et al., 2012; Kislauskis et al., 1994; Kislauskis et al., 1997). γ-actin mRNA has no such sequence and does not undergo targeting to the cell periphery (Hill and Gunning, 1993). All our constructs described above contained the β-actin 3′UTR with the zipcode sequence as one of the constant elements. To test whether 3′UTR-mediated targeting of actin mRNA affects the cell migration phenotypes observed in our stably transfected cell cultures, we performed the same experiment using cell cultures stably expressing similar actin constructs, but without the β-actin 3′UTR (Figure 1—figure supplement 2). These cells did not exhibit significant differences in cell migration rates (Figure 1—figure supplement 5). Thus, differences in the effects of cytoplasmic actin coding sequences on cell migration require mRNA targeting to the cell periphery.
 
-## Actin isoforms affect focal adhesion size, cell spreading, and actin dynamics at focal adhesions in a coding sequence-dependent manner
+### Actin isoforms affect focal adhesion size, cell spreading, and actin dynamics at focal adhesions in a coding sequence-dependent manner
 
 Changes in cell migration rates are normally associated with changes in actin dynamics at the leading edge, rate and persistence of leading edge protrusions and retractions, as well as focal adhesion formation and dynamics, which affect cell spreading, polarization, and attachment to the substrate. Focal adhesions’ strength and persistence are closely regulated by their association with actin filaments, which grow at the focal adhesion sites to form a dynamic actin bundle that participates in anchoring the cells to the substrate. Thus, focal adhesions critically depend on actin dynamics in the vicinity of the adhesion site. In turn, focal adhesions can regulate cell spreading and polarization, in addition to cell migration rates.
 
 To test these processes in eGFP-actin isoform-transfected cells, we first looked at the rate and persistence of leading edge protrusions and retractions, but found no consistent differences between the cell populations that correlated with cell migration rates (Figure 2—figure supplement 1). We next assessed focal adhesion dynamics in these cells using total internal reflection fluorescence microscopy (TIRF-M) of eGFP-β-actin and eGFP-γ-actin. Since the imaging volume in TIRF-M is limited to the basal 300 nm or less, we reasoned that most of the actin signals visible in this volume should be associated with focal adhesion patches. Imaging the long-term (hours) behavior of actin at focal adhesion patches during wound healing using TIRF-M revealed that in migrating cells, eGFP-β-actin patches appeared more prominent and persisted considerably longer than eGFP-γ-actin patches (Figure 2A–C), suggesting that focal adhesions in eGFP-β-actin-expressing cells persist for longer periods of time. At the same time, testing short-term (5 min) actin dynamics at the focal adhesions using Fluorescence Recovery After Photobleaching (FRAP) showed no notable differences in focal adhesion recovery rates that correlated with either coding or amino acid sequence (Figure 2—figure supplement 2). Thus, different actin isoforms affect long-term focal adhesion persistence without strongly affecting short-term focal adhesion or protrusion dynamics during persistent directional migration at the cell leading edge.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig2-v2.jpg)
+
+**Figure 2.:** (A) Montages of eGFP-β-actin- (top two rows) and eGFP-γ-actin (bottom row)-expressing cells undergoing wound healing following a scratch wound. Total internal reflection fluorescence microscopy (TIRF-M) images (cyan) are overlaid with widefield images (magenta). Scale bar = 10 µm. Arrows point to focal adhesions being formed and disassembled over time. (B) Maximum intensity projections of TIRF-M images of eGFP-actin over time for each of the β- and γ-actin-expressing cell populations during a 12-hr wound healing. Scale represents the temporal color scale. Note that β-actin persists longer in the TIRF plane as compared to γ-actin. (C) Actin patch lifetimes in the TIRF-M channel. Five fields of view for each cell population were used to estimate lifetimes (solid colors) with N = 50 (β-actin) and 53 (γ-actin) patches (transparent colors). Error bars represent mean ± 95% CI. Unpaired t-test gave a p-value<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Super-plots of (A) protrusion rate, (B) protrusion duration, (C) retraction rate, and (D) retraction duration, measured from kymographs. Number of fields of view (indicated by the opaque data points in the above graphs, with the mean and 95% CI displayed) analyzed for each population: β-actin = 11, γ-actin = 14, β-coded γ-actin = 13, γ-coded β-actin = 14. Number of protrusions analyzed: β-actin = 139, γ-actin = 130, β-coded γ-actin = 143, γ-coded β-actin = 121. Number of retractions analyzed: β-actin = 112, γ-actin = 108, β-coded γ-actin = 124, γ-coded β-actin = 101. One-way non-parametric analysis of variance (ANOVA) (Kruskal-Wallis test) gave a p-value = 0.0798 (protrusion rate), 0.0540 (protrusion duration), 0.1065 (retraction rate), and 0.0002 (retraction duration) with multiple comparisons shown on the plot. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Fluorescence recovery after photobleaching (FRAP) curves for the recovery of actin bleached at the focal adhesions. t1/2 of recovery for each actin variant is listed in the inset. N = 8 (β-actin), 10 (γ-actin), 10 (β-coded γ-actin), and 9 (γ-coded β-actin) actin patches. Each data set was fit to a one-phase association curve. R-squared values ranged from 0.52 to 0.62. A single curve was unable to fit all data sets, indicating that the recovery curves were different from each other (p-value<0.0001). The half-life of recovery for each curve derived from the fit is β-actin = 44.63 s, γ-actin = 54.97 s, β-coded γ-actin = 45.38 s, and γ-coded β-actin = 41.93 s. Error bars are SEM.
+
 To get deeper insights into the focal adhesion morphology and distribution in cells transfected with different actin isoforms, we grew cells at a low density, to enable visualization of the morphology and cytoskeleton-dependent structures in individual cells isolated on coverslips, without contacting their neighbors. Notably, cells in such scarce cultures are under no stimuli to migrate. Many of them remain stationary or move randomly around the same area, resulting in much slower rates of persistent migration and overall displacement over time. Consequently, such sparsely grown cells transfected with different actin isoforms do not prominently differ from each other in their migration (Figure 3—figure supplement 1), even though they are expected to undergo similar actin isoform-related changes at the subcellular level.
 
 To analyze focal adhesions and spreading in these cells, we first used TIRF-M to image single cells stained with antibodies to the focal adhesion protein paxillin. These assays revealed prominent differences in focal adhesion morphology and distribution between the cell populations transfected with different actin isoforms (Figure 3, top row of images; see also Figure 3—figure supplements 2–5). In eGFP-β-actin-expressing cells, focal adhesions had a normal elongated morphology and were distributed throughout the entire cell footprint. In contrast, eGFP-γ-actin-expressing cells formed focal adhesions that localized mostly at the cell periphery (Figure 3, top row of images; Figure 3—figure supplement 6A,B). This trend depended on the actin coding sequence: focal adhesions in eGFP-β-coded-γ-actin-expressing cells resembled those in eGFP-β-actin, while focal adhesions in eGFP-γ-coded-β-actin-expressing cells were like those in eGFP-γ-actin-expressing cells (Figure 3—figure supplement 6A,B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-v2.jpg)
+
+**Figure 3.:** Top, representative images of eGFP-actin-transfected cells stained with anti-paxillin to visualize focal adhesions. Total interference reflection fluorescence microscopy (TIRF-M) images of paxillin staining are shown alone (top) and as an overlay with widefield eGFP signals (bottom). Bottom, quantification of focal adhesion size in the four different cell populations, shown as a distribution plot (for all focal adhesions analyzed) and as a scatter plot (for individual cells) in the inset. Scale bar = 10 µm. β-actin = 20, γ-actin = 28, β-coded γ-actin = 30, and γ-coded β-actin = 29 cells with N = 996, 786, 1245, and 1041 focal adhesions for the respective cell types. Results for non-parametric one-way analysis of variance (ANOVA) with multiple comparisons are indicated on the graph.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Average velocity plots for single-cell migration in sparse cultures over a 3-hr period. One-way parametric analysis of variance (ANOVA) yielded a p-value = 0.0191, with multiple comparisons shown on the plot. *p<0.05. (B) Log-log plots of Mean Squared Displacement vs time for each of the cell lines indicated on the graph. Number of cells: β-actin = 86, γ-actin = 121, β-coded γ-actin = 97, γ-coded β-actin = 69, untransfected (WT) = 100.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Scale bar, 10 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Scale bar, 10 µm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Scale bar, 10 µm.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Scale bar, 10 µm.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Total number of focal adhesions per cell. (B) Number of focal adhesions away from cell periphery. (C) Average focal adhesion aspect ratio for each cell. Each data point represents a single cell with β-actin = 20, γ-actin = 28, β-coded γ-actin = 30, and γ-coded β-actin = 29 cells. One-way non-parametric analysis of variance (ANOVA) (Kruskal-Wallis test) results are as follows: total number of focal adhesions:<0.0001, number of focal adhesions away from cell periphery: 0.0012, and focal adhesion aspect ratios: 0.0003. Results of multiple comparisons are indicated on the plots with *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Error bars represent mean ± 95% CI.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Fluorescence recovery after photobleaching (FRAP) curves for the recovery of actin bleached at the focal adhesions. N = 15 actin patches for each cell line. Each data set was fit to a one-phase association curve. R-squared values ranged from 0.36 to 0.59. A single curve was unable to fit all data sets, indicating the recovery curves were different from each other (p-value<0.0001). The half-life of recovery for each curve derived from the fit is β-actin = 22.30 s, γ-actin = 25.99 s, β-coded γ-actin = 22.13 s, and γ-coded β-actin = 27.87 s. Error bars are SEM.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** (A) Principal component analysis (PCA) plot classifying cell shapes from the four cell lines listed on top right according to the shape modes shown in the insert on bottom right. Shapes in the chart represent the actual cell outlines, with the size (Shape Mode 1) decreasing from left to right and the polarization variance (Shape Mode 2) spreading along the y-axis. Scale bars, 250 µm, and inset, 50 µm. (B) Quantification of the area of spherical trypsinized cells (left, N = 1230, 600, 1096, and 925) and the footprint of the cells spread on the substrate (right, N = 25, 36, 27, and 23). Results of one-way analysis of variance (ANOVA) with multiple comparisons are indicated on the graph.
 
 Imaging eGFP-actin in widefield showed that most focal adhesions in cells expressing eGFP-β-actin and eGFP-β-coded γ-actin were associated with long thick bundles of actin emanating from the focal adhesion point (Figure 3, top, and Figure 3—figure supplements 2–5). In comparison, the dorsal bundles connecting to the focal adhesions were much less prominent in γ-actin- and γ-coded β-actin-expressing cells.
 
@@ -68,9 +156,21 @@ Cell spreading and polarization are critically determined by their adhesion to t
 
 Changes in the area of the cell footprint can arise due to either reduced cell spreading or reduced overall cell size. To distinguish between these possibilities, we quantified the area of trypsinized near-spherical cells (pre-spreading), which directly reflects cell size and volume. Cells expressing the γ-actin coding sequence were slightly smaller than those expressing β-actin coding sequence (Figure 3—figure supplement 8B, left). This ~6% difference in cell size was far less prominent than the difference in spread cell area (Figure 3—figure supplement 8B, right), which accounted for a greater than 80% change in the size of cell footprint. Thus, cells expressing γ-actin are less spread on the substrate, and this difference in spreading is coding sequence-dependent.
 
-## β-actin exhibits faster intracellular translation elongation than γ-actin
+### β-actin exhibits faster intracellular translation elongation than γ-actin
 
 In search of an underlying mechanism that could link actin isoforms’ coding sequence to their intracellular properties, we turned to our previous study that used computational predictions of the mRNA secondary structures for β-actin and γ-actin. This study suggested that the coding region of β-actin mRNA forms a more relaxed secondary structure than that of γ-actin, predicting potential differences in translation elongation rates (Zhang et al., 2010). Such differences, if prominent enough, could in principle lead to changes in cells’ ability to form focal adhesions and migrate. To test this prediction, we first compared the rates of overall protein accumulation of eGFP-β- and eGFP-γ-actin, by comparing FRAP of the total eGFP signal in the cell after whole-cell photobleaching. We reasoned that this would serve as a proxy for estimation of newly synthesized β- and γ-actin (Figure 4A). Notably, the recovery observed in these FRAP experiments within a 10-min imaging window arises from the folding and maturation of already synthesized eGFP fused to actin (since the eGFP maturation rate in vivo has been estimated to be approximately 14 min [Balleza et al., 2018; Iizuka et al., 2011]); given the constant time delay, this recovery rate directly reflects the rate of de novo synthesized actin accumulation within the imaging window. Photobleaching was calibrated to ensure that the cells remained healthy and visually normal during the experiment (Figure 4A, bottom). The recovery rate was significantly faster for eGFP-β-actin compared to eGFP-γ-actin (Figure 4A, top right). Thus, newly synthesized β-actin accumulates in cells faster than γ-actin.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig4-v2.jpg)
+
+**Figure 4.:** (A) Images and quantification of GFP fluorescence in cells before and after photobleaching the entire intracellular GFP signal. Top left panels show representative cells before and after photobleaching, with gray levels scaled to show the actual difference in signal intensity. Top right graph shows the fluorescence recovery after photobleaching (FRAP) curve during the first 10 min post-bleach. Data points are dots and the linear regression curves are in bold (with dotted lines representing the 95% confidence bands). N = 8 for eGFP-β-actin and N = 10 for eGFP-γ-actin. Bottom, post-bleached images of cells taken at 2.5′ intervals from 0′ (left) to 10′ (right), with the gray levels scaled up to enhance the residual eGFP signal. Scale bars = 10 µm. (B) Left: representative images of actin protein and mRNA used for the experiments. Insets on the right of each image show the enlarged region indicated in the image on the left. Right: quantification of ribosomes per mRNA, calculated as the SunTag signal from the nascent peptides (NAPs) at each translation site divided by the HaloTag signal from the mRNA. (C) Left: FRAP curves showing recovery of the green fluorescence signal in individual translation spots. Right: fluorescence recovery time for each actin isoform and translation elongation rate (amino acids/s) calculated from the fluorescence recovery and NAPs/RNA. (B) and (C) right: gray boxed area at the bottom of each bar indicates the contribution from SunTag, the auxin-induced degron (AID), and linker portion of the construct (see 'Materials and methods'), and p-values are from one-tailed Welch’s t-test. Error bars represent SEM for n data points, calculated geometrically and plotted in a linear fashion.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The 5′ end of the construct encodes 24 Suntag repeats, each of which upon translation binds to sfGFP-fused anti-Suntag antibody fragment expressed in the cells. This is followed by the β- or γ-actin coding sequence. This is then followed by Auxin-induced degron, which once translated targets the nascent peptide for degradation. The construct also contains the β-actin 3′UTR required for mRNA zipcode-mediated targeting to the leading edge. Lastly, the construct encodes 24 MS2 repeats each, which bind to MS2 coat-binding protein fused to Halo-Tag. These MS2 repeats were used to visualize the mRNA of single-molecule imaging of nascent peptide synthesis (SINAPS) constructs.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The number of nascent peptides (NAPs)/mRNA is higher for γ-actin, indicating that γ-actin translation elongation is slower than that of β-actin.
 
 To directly estimate β- and γ-actin translation elongation rates, we performed single-molecule imaging of nascent peptide synthesis (SINAPS) for these two actin isoforms using the SunTag system (Wu et al., 2016). Similarly to the constructs used for generating eGFP-actin stable cell populations, we ensured that the coding sequence was the only variable, flanked by otherwise identical upstream and downstream elements, including the promoter of the polyubiquitin gene (UbC) for constitutive expression, the N-terminal 5′ SunTag fusion to visualize the nascent peptide, the C-terminal auxin-induced degron to degrade fully synthesized polypeptides and reduce the background signal, the β-actin 3′UTR for cell periphery targeting, and MS2 repeats in the non-coding region to visualize mRNA via constitutively expressed MS2 coat-binding protein (MCP) fused to a HaloTag (Figure 4—figure supplement 1).
 
@@ -82,11 +182,23 @@ Next, we estimated the real-time translation elongation rate of β- and γ-actin
 
 Using both sets of data, we conclude that the translation elongation rate of the two actin isoforms differs by approximately twofold—faster for β-actin compared to γ-actin (Figure 4D).
 
-## Faster initial subunit supply rates at the focal adhesions facilitate longer actin bundle formation
+### Faster initial subunit supply rates at the focal adhesions facilitate longer actin bundle formation
 
 During cell migration, the initial formation of nascent focal adhesions critically depends on local actin subunit supply rate. Many studies assume that this subunit supply rate is not a limiting factor in vivo, due to high concentrations of G-actin at the cell leading edge (Raz-Ben Aroush et al., 2017). However, it is likely that the actin bundles forming at focal adhesion sites must compete with the actin meshwork at the lamellipodium for polymerization competent actin. There is increasing evidence suggesting such a competition between various actin-driven processes in vivo (Faust et al., 2019; Suarez and Kovar, 2016). In addition, it is possible that at a given moment, some, or most, of the free actin can be sequestered, for example, by monomer-binding proteins (Skruber et al., 2018), forcing the elongating leading edge filaments to depend on de novo synthesized actin. In support, actin mRNA targeting to the cell leading edge is essential for cell migration, suggesting that local actin synthesis at the cell leading edge must be important (Katz et al., 2012). Furthermore, local actin translation bursts have been observed in neurons (Buxbaum et al., 2014). It is possible that these bursts, regardless of the overall actin concentrations, are required for locally supplying actin subunits at the focal adhesions during cell migration. If so, replacing the faster translationally elongating β-actin with the slower elongating γ-actin at these sites could potentially limit this supply and make a difference in focal adhesion anchoring, leading to shorter actin bundles at the focal adhesions, poorer spreading, and faster migration seen in γ-actin-expressing cells.
 
 Since measuring local polymerization-competent actin in a cell is impossible experimentally, we used the computational model of active networks, MEDYAN (Popov et al., 2016). We simulated actin bundle growth at the focal adhesions at different subunit supply rates, in the presence of non-muscle myosin II motors and α-actinin as crosslinkers, which are critical for actin filament bundling in cells (Chandrasekaran et al., 2019; Figure 5A and Figure 5—figure supplement 1A). In these simulations, filaments elongate by incorporating newly supplied actin monomers, and then bundle together through the action of myosin motors and crosslinkers. During 10-min simulations, the time window typically sufficient for establishment of robust focal adhesions, varying actin subunit supply rate resulted in pronounced differences in the length of the actin bundle growing from the focal adhesion site (Videos 5 and 6). A twofold decrease in subunit supply rate resulted in over a twofold decrease in actin bundle length (Figure 5A, right and Figure 5—figure supplement 1B). To test this prediction experimentally, we measured the length of eGFP-actin-decorated bundles emanating from paxillin-positive focal adhesion patches in cells stably expressing different eGFP-actin isoforms, using both the migrating cells at the edge of the wound and single cells (Figure 5B–D). In both types of cultures, actin bundles associated with the focal adhesion sites were markedly longer in β-actin-expressing cells, compared to those expressing γ-actin (Figure 5B–D). Moreover, these trends followed the actin coding sequence, rather than the amino acid sequence (Figure 5B,C). Thus, the slower subunit supply dictated by differences in translation elongation rates of β- and γ-actin coding sequences during the initial events of focal adhesion formation and maturation bears direct consequences to cell adhesion and migration.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig5-v2.jpg)
+
+**Figure 5.:** (A) Molecular simulations of actin filament growth at the focal adhesion at four different subunit supply rates, using the components listed on the right. Length of the actin bundle for each supply rate is indicated underneath, with SD listed for five independent simulations. All systems contain 0.012 μM non-muscle myosin II mini-filaments and 1.25 μM alpha-actinin crosslinkers. (B, C) Scatter plots showing the lengths of actin bundles emanating from focal adhesions in two separate experiments—single-cell cultures (B) and wound edge (C). Solid colors indicate individual cells (β-actin: 16, γ-actin: 21, β-coded γ-actin: 26, γ-coded β-actin: 30) or fields of view (β-actin: 31, γ-actin: 30, β-coded γ-actin: 8, γ-coded β-actin: 30), and transparent colors represent individual actin bundle length measurements. Error bars are mean ± 95% CI. Number of actin cables measured: (B) β-actin = 1715, γ-actin = 756, β-coded γ-actin = 482, and γ-coded β-actin = 2383; (C) β-actin = 1165, γ-actin = 1129, β-coded γ-actin = 1726, and γ-coded β-actin = 898. A non-parametric one-way analysis of variance (ANOVA) (Kruskal-Wallis) test for both single-cell cultures and wound edge gave a significant p-value (<0.0001). (D) Representative images of the single-cell cultures (S) and cells at wound edge (W) showing eGFP-actin (green) co-stained with focal adhesion marker paxillin (red). Scale bar, 20 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Measurements of the actin bundle length from distribution plots of F-actin distribution in the Z-axis. (B) Representative simulation snapshots similar to those shown in Figure 5A but with a higher non-muscle myosin motor concentration (0.021 μM).
+
+![Video 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/68712/elife-68712-video6.mp4.jpg)
 
 ## Discussion
 
@@ -108,11 +220,175 @@ Thinking of the nucleotide sequence, rather than the amino acid sequence, as a d
 
 ## Materials and methods
 
-## Constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB Stable (Stbl3)</td>
+      <td>New England Biosciences</td>
+      <td>C3040I</td>
+      <td>Chemically competent E. coli</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Spontaneously immortalized MEFs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mouse embryonic fibroblasts were derived from E12.5-E16.5 mouse embryos. The primary cells were cultured till spontaneously immortalized populations survived.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pHR-scFv-GCN4-sfGFP-GB1-NLS-dWPRE</td>
+      <td>Tanenbaum et al., 2014</td>
+      <td>Addgene plasmid #60906</td>
+      <td>Plasmid containing Superfolder-GFP fused to single-chain variable fragment against GCN4 repeats used to localize nascent peptides from SINAPS constructs</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthetic)</td>
+      <td>pBabe TIR1-9myc</td>
+      <td>Holland et al., 2012</td>
+      <td>Addgene plasmid #47328</td>
+      <td>Plasmid containing the ubiquitin ligase TIR, which targets auxin-induced degrons in nascent peptides from SINAPS constructs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Paxillin (mouse monoclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>Cat#: 610619</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eTC GFP beta-actin full length (plasmid)</td>
+      <td>Rodriguez et al., 2006</td>
+      <td>Addgene plasmid #27123</td>
+      <td>Human ACTB promoter and 3′UTR containing plasmid with eGFP. This was used to construct the mouse β-, γ-, β-coded-γ-, and γ-coded-β-actin plasmids with β-actin 3′UTR.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eTC GFP beta-actin ΔZip (plasmid)</td>
+      <td>Rodriguez et al., 2006</td>
+      <td>Addgene plasmid # 27124</td>
+      <td>Human ACTB promoter with no ACTB 3′UTR plasmid with eGFP. This was used to construct the mouse β-, γ-, β-coded-γ-, and γ-coded-β-actin plasmids without β-actin 3′UTR.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUbC-FLAG-24xSuntagV4-oxEBFP-AID-baUTR1-24xMS2V5-Wpre (plasmid)</td>
+      <td>Wu et al., 2016</td>
+      <td>Addgene plasmid # 84561</td>
+      <td>Plasmid containing Suntag, AID, β-actin 3′UTR, MS2 repeats. This was used to generate mouse SINAPS-β-actin and SINAPS-γ-actin reporters.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UbC NLS HA stdMCP stdHalo</td>
+      <td>Voigt et al., 2017</td>
+      <td>Addgene plasmid #104999</td>
+      <td>Plasmid containing MCP tandem dimer fused to HaloTag tandem dimer to visualize MS2 repeat containing RNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUbC-nls-ha-stdMCP-stdGFP</td>
+      <td>Wu et al., 2016</td>
+      <td>Addgene plasmid #98916</td>
+      <td>Plasmid containing MCP tandem dimer fused to GFP tandem dimer. Mouse vinculin sequence was cloned upstream of MCP to allow for tethering of MS2-containing RNA to focal adhesions. GFP was replaced by HaloTag.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATCAAGATCATTGCTCCTCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGGTGTAAAACGCAGCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actg1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCGCAAGTACTCAGTCTGGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actg1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCCAGGGCAAATTGATACTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eGFP_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGAAGTTCGAGGGCGACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eGFP_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCGATGTTGTGGCGGATCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAATCCCAAGCGATTTGCTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGAACTTAGCTGGGAAGCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>eGFP FISH probes</td>
+      <td>LGC Biosearch Technologies</td>
+      <td>VSMF 1015–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FishQuant</td>
+      <td>Mueller et al., 2013</td>
+      <td></td>
+      <td>Used for quantifying signals from SINAPS constructs in fixed cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Airlocalize</td>
+      <td>Lionnet et al., 2011</td>
+      <td></td>
+      <td>Used for quantifying signals from SINAPS constructs in FRAP experiments in live cells</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs
 
 Constructs were generated using the eTC GFP beta-actin full-length plasmid (Addgene plasmid # 27123) and eTC GFP beta-actin ΔZip (Addgene plasmid # 27124), which were gifts from Robert Singer (Rodriguez et al., 2006). Plasmid #27123 encodes the human β-actin promoter, followed by TC-eGFP, a five-amino-acid (GSTSG) linker, and the full-length human β-actin complementary DNA (cDNA )containing β-actin 3′UTR (eTC GFP beta-actin full-length plasmid), followed by the transcription terminator bGH polyA, which carries the typical AAUAAA sequence responsible for transcription termination and polyadenylation of the mRNA. Plasmid #27214 is identical, except that it does not contain the beta-actin 3′UTR (eTC GFP beta-actin ΔZip). No 5′UTR or any other non-coding elements from the β-actin gene besides the promoter are included in these plasmids. To generate actin isoform-encoding constructs for this study, we used plasmid #27213 or #27214 as the backbone for the construct with and without β-actin 3′UTR, respectively. To obtain constructs expressing actin isoforms in this study, β-actin coding sequence (starting with the first ATG and ending with the terminator codon) was replaced with the corresponding sequence encoding mouse β-actin or mouse γ-actin (generating eGFP-β-actin and eGFP-γ-actin from plasmid #27213 and eGFP-β-actin Δ3′UTR and eGFP-γ-actin Δ3′UTR from plasmid #27214). For the codon-switched constructs, point mutations were introduced into the coding sequence of the actin isoforms as shown in Figure 1 and described in Vedula et al., 2017 to generate eGFP-β-coded γ-actin and eGFP-γ-coded β-actin. pUbC-FLAG-24xSuntagV4-oxEBFP-AID-baUTR1-24xMS2V5-Wpre was a gift from Robert Singer (Addgene plasmid # 84561) and was used to generate the actin isoform SINAPS reporters (Wu et al., 2016). The β- and γ-actin coding sequences were cloned in place of the oxEBFP sequence in the original construct. For fixed-cell imaging of ribosome load per mRNA, phage UbC NLS HA stdMCP stdHalo, a gift from Jeffrey Chao (Addgene plasmid # 104999) (Voigt et al., 2017), was used. For constructing the mRNA tether in live-cell real-time imaging of translation dynamics, pUbC-nls-ha-stdMCP-stdGFP, a gift from Robert Singer (Addgene plasmid # 98916) (Wu et al., 2016), was used to clone mouse vinculin sequence upstream of stdMCP, and stdGFP was replaced by HaloTag. pHR-scFv-GCN4-sfGFP-GB1-NLS-dWPRE, a gift from Ron Vale (Addgene plasmid # 60906) (Tanenbaum et al., 2014), was used for the NAP sensor. pBabe TIR1-9myc, a gift from Don Cleveland (Addgene plasmid # 47328) (Holland et al., 2012), was used for degrading the fully synthesized SINAPS construct.
 
-## Generation of polyclonal stable cell populations
+### Generation of polyclonal stable cell populations
 
 Spontaneously immortalized MEFs used in this project were obtained in the lab from E12.5-E16.5 mouse embryos and immortalized by continuous passaging in culture, using Dulbecco’s modified Eagle’s medium (DMEM) (Gibco) supplemented with 10% fetal bovine serum (FBS) (Gibco) as the tissue culture medium. These cells were produced and maintained in the lab and have not been independently authenticated, but they were continuously observed to maintain characteristic morphology of mouse embryonic fibroblasts. All mycoplasma tests conducted in the lab were negative.
 
@@ -120,11 +396,11 @@ To obtain the stable cell cultures described in this study, these cells were tra
 
 HEK-293T cells were cultured in DMEM (Gibco) supplemented with 10% FBS (Gibco). Lipofectamine 2000 (Life Technologies) was used to transfect these cells with plasmids for generating either lentiviral particles, pMD.G, pPAX, and plasmid containing gene of interest, or retroviral particles, pCL10A and pBabe TIR1-9myc. Virus-containing medium was harvested and used to infect immortalized MEFs in the following order: first, either UbC-NLS-HA-stdMCP-stdHalo for fixed-cell imaging of number of NAPs/mRNA or Vinculin-stdMCP-Halo for live-cell dynamics of translation elongation, second, TIR1-9myc followed by puromycin selection of infected cells, third, scFv-GCN4-sfGFP-GB1-NLS, and lastly, either SINAPS-β-actin- or SINAPS-γ-actin-containing lentivirus. These polyclonal cells were used for imaging the number of NAPs on each of β- and γ-actin constructs. Indole-3-acetic acid was used at 500 µg/ml to induce degradation of fully synthesized SINAPS constructs. Janelia Fluor 646-tagged Halo ligand (Promega) was used at 200 nM final concentration to label SINAPS-mRNA in cells prior to fixation/imaging.
 
-## Cell migration assays and imaging
+### Cell migration assays and imaging
 
 Cell migration was stimulated by making an infinite scratch wound. The cells were allowed to recover for a period of 2 hr before imaging. Images were acquired using a X10 phase objective on a Lecia DMI 4000 equipped with a Hamamatsu ImagEM EMCCD camera. Images were captured every 5 min for 10 hr. Migration rates were measured as the area covered by the edge of the wound in the field of view per unit time using Fiji (NIH). For TIRF wound-healing experiments, cells were imaged on a Nikon Ti with a X100, 1.49 NA objective using the 488 nm laser and an Andor iXon Ultra 888 EMCCD.
 
-## Fluorescence recovery after photobleaching
+### Fluorescence recovery after photobleaching
 
 For all FRAP experiments, imaging was carried out on a Nikon Ti inverted microscope equipped with either an Andor iXon Ultra 888 EMCCD camera (0.13 µm/pixel—for imaging TIRF-FRAP and widefield whole-cell eGFP-actin FRAP) or an Andor iXon Ultra 897 EMCCD camera (0.16 µm/pixel—for imaging SINAPS-FRAP using a Yokogowa CSU X1 spinning disc confocal). Photobleaching was carried out with a Bruker miniscanner equipped with XY Galvo mirrors. The region of interest for photobleaching was defined using a freehand Region of Interest (ROI) manager in Nikon Instruments NIS elements software: an elliptical region encompassing an actin patch at the cell periphery for TIRF-FRAP, the entire cell for widefield whole-cell FRAP, and a single-pixel spot containing the translation site for SINAPS-FRAP. eGFP-actin-expressing cells were seeded on Matek glass bottom dishes and allowed to spread overnight. For photobleaching, the 488 nm laser was set to 80% power and used to bleach a defined eGFP-actin patch at the cell periphery with a dwell time of 400 µs/pixel. Images were acquired in the TIRF mode with the 488 nm laser set to 50% power and 200 ms exposure and an electron-multiplying (EM) gain of 200. Images were acquired at 3 s intervals for 12 s pre-bleach and 6 min post-bleach. The change in fluorescence intensity in a circle within an actin patch that was not bleached was used as a reference to account for photobleaching during acquisition. The change in intensity within a circle of the same area within the bleached actin patch was used to calculate the recovery curve. The obtained values were normalized to one at pre-bleach, and the resulting post-bleach curves were fit using non-linear regression to a single exponential fit in GraphPad PRISM.
 
@@ -132,7 +408,7 @@ For whole-cell eGFP-actin FRAP, the whole cell was outlined. For photobleaching,
 
 For live-cell SINAPS-FRAP, cells expressing SINAPS-actin constructs were tethered using Vinculin-stdMCP-Halo (see sections 'Constructs' and 'Generation of polyclonal stable cell populations' above). For photobleaching, the 488 nm laser was set to 80% power with a dwell time of 1 ms/pixel. Images were acquired in the spinning disc confocal mode with the 488 nm laser set to 30% power and 35 ms exposure with an EM gain of 300. Images were acquired at 700 ms intervals for 30 s pre-bleach and 7 min post-bleach.
 
-## Translation elongation rate measurements
+### Translation elongation rate measurements
 
 FishQuant (Mueller et al., 2013) was used to detect NAP and mRNA signals. Spots in the NAP channel that were within 300 nm of a spot in the mRNA channel were considered bonafide NAPs and were used for estimating the integrated fluorescence intensity in both channels.
 
@@ -140,20 +416,118 @@ Airlocalize (Lionnet et al., 2011) was used to fit the signal from tethered NAPs
 
 Assuming that beta-actin has the same elongation rate as Suntag, AID, and linkers, following the theoretical derivation of Wu et al., 2016, it is straight forward to show that the proportion of beta-actin contribution to recovery time and NAP/mRNA is (L+(N + 1)/2)/(S + L + (N + 1)/2), in which N is the total number of Suntags, S is the beta-actin length in the unit of 1 Suntag, and L is the length of AID and linkers in the unit of 1 Suntag, shown as the gray bar in Figure 4B and C. It is not surprising to see from those figures that the ratios of recovery time to NAP/mRNA are similar for beta- and gamma-actin, since the initiation rates for both constructs should be the same, given the identical N-termini. Therefore, we calculated the variance-weighted geometric average of the two ratios, which is T ~ 26.9 s, and used it to combine the data from recovery time and NAP/mRNA to calculate the beta-actin elongation rate: Rb=(S + L + (N + 1)/2)/t or Rb=(S + L + (N + 1)/2)/n/T, where t is recovery time and n is NAP/mRNA, for each data point, followed by geometric averaging. The contribution from Suntag, AID, and linkers to recovery time is T0 = (L+(N + 1)/2)/Rb, which is used to calculate the gamma-actin elongation rate: Rg = S/(t-T0) or Rg = S/(n*T-T0) for each data point, followed by geometric averaging. The results are shown in Figure 4D.
 
-## Immunofluorescence staining and analysis
+### Immunofluorescence staining and analysis
 
 To quantify the amount of actin polymer, cells were seeded on coverslips in six-well plates at 20,000 cells/well overnight and fixed in 4% (w/v) paraformaldehyde (PFA) at room temperature for 30 min. Cells were then stained with phalloidin conjugated to AlexaFluor 594 (Molecular Probes). Images were acquired on Leica DM6000 at X40 and the total intensity of phalloidin per cell was measured using Fiji (NIH). To analyze focal adhesions in single cells, eGFP-actin-expressing cells were seeded on coverslips and allowed to adhere and spread overnight. Cells were then fixed in 4% (w/v) PFA at room temperature for 30 min followed by 0.5% Triton-X 100 treatment for 5 min. Cells were incubated with mouse anti-paxillin monoclonal antibody (BD Biosciences), followed by AlexaFluor 555-conjugated goat-anti-mouse secondary antibody (Life Technologies). Cells were imaged with Citifluor (Cytoskeleton Inc) anti-bleaching agent. To analyze cell spreading and cell area, Celltool was used to outline cell shapes and classify them and extract shape modes. The shape modes that captured 60% of the overall variability in the shape model were used to assess the distribution of cell shapes in a principle component analysis (PCA) plot. Additionally, a kernel density estimate of the marginal was used to plot the area of focal adhesions.
 
 FISH eGFP mRNA probes (conjugated to Quasar 670 dye) were purchased from LGC Biosearch Technologies (VSMF 1015–5) and FISH was carried out as per manufacturers’ protocol. Briefly, cells were seeded onto coverslips in six-well plates at 20,000 cells/well overnight and fixed in 4% (w/v) PFA at room temperature for 30 min followed by treatment with 70% alcohol at 4°C for 1 hr. Cells were incubated with 125 nM probes at 37°C overnight. Cells were stained with 4′,6-diamidino-2-phenylindole (5 ng/ml) and mounted using Prolong Diamond (Life Technologies). Images were acquired using Leica DM6000 at X40. Z-stacks were acquired, and blind deconvolution was carried out using Leica LAS X software.
 
-## Real-time PCR
+### Real-time PCR
 
 Cells were seeded onto 10-cm culture dishes and grown to confluence. RNA was isolated using RNeasy mini kit (Qiagen) and cDNA was synthesized using oligo dT primers with a first strand cDNA synthesis kit (Applied Biosystems). After standard curves were obtained, quantitative PCR (qPCR) was carried out using SybrGreen (Applied Biosystems) and the following primer sets. PCR was carried out on QuantStudio Flex 6 Real Time PCR system (Applied Biosystems). ΔΔCt method was used to estimate the relative expression levels of mRNA using Tbp as the reference transcript.
 
-## Simulations of actin filament growth at focal adhesions
+### Simulations of actin filament growth at focal adhesions
 
 Computational simulations of actin bundle growth from focal adhesions to predict the bundle length at different β- and γ-actin local supply rates were performed using a recently developed software MEDYAN (Popov et al., 2016). In brief, MEDYAN simulates actin networks by integrating the stochastic diffusion-reaction dynamics and mechanical relaxation of the cytoskeletal network. Diffusing molecular species, including actin monomers, unbound myosin motors, and unbound crosslinkers, are contained in a solution phase. Stochastic chemical reactions such as actin (de)polymerization and (un)binding of motors and linkers follow mass-action kinetics, and change the mechanical energy of the actin network. The net forces are then periodically relaxed using conjugate-gradient mechanical equilibration. This step also updates reaction rates of motor walking, motor unbinding, and linker unbinding, based on residue tension after minimization.
 
 We used a 1×1×4 μm3 simulation box, containing non-muscle myosin II motors, alpha-actinin crosslinkers, actin monomers, and actin filaments growing from the bottom focal adhesion region. The focal adhesion region was presented as a hemisphere with 30 actin filaments attached. We tested and found that the actin filaments never grow longer than 4 μm in the z-direction, and thus, no length constraints on the actin bundles factored into the simulations. Actin filaments were only allowed to elongate at one end (the barbed end), while the elongation rate constant was averaged over filament polymerization rates and depolymerization rates of both the barbed end and the pointed end. The filament elongation was driven by the addition of actin monomers to the system, simulating the synthesis of actin monomers near the focal adhesion region. Multiple actin supply rates were tested at 50% increments based on the experimental measurements of the differences between β- and γ-actin synthesis rates. The simulations were run for 10 min to match the timescale of the experiments. The starting concentration of actin at the attachment site was assumed to be ~2 μM locally, creating an initial bundle at around 0.1 μm long. In the simulation, the majority (more than 90%) of actin for the filament growth was assumed to arise from the de novo subunit addition. The concentrations of myosin mini-filaments (0.012–0.021 μM) and alpha-actinin crosslinkers (1.25 μM) were chosen to ensure proper bundling of filaments (all model parameters are listed in Table 1).
+
+**Table 1.**
+ Model parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter name</th>
+      <th>Value</th>
+      <th>Reference and notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Filaments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Filament polymerization and depolymerization rates</td>
+      <td>κon = 12.9 (11.6 + 1.3) μM-1s-1 κoff = 2.2 (1.4 + 0.8) s-1</td>
+      <td>(Fujiwara et al., 2007) Taking both barbed ends and pointed ends into account</td>
+    </tr>
+    <tr>
+      <td>Filament bending constant</td>
+      <td>672.5 pN·nm</td>
+      <td>(Ott et al., 1993) Bending constant between connecting cylinders*</td>
+    </tr>
+    <tr>
+      <td>Filament stretching constant</td>
+      <td>100.0 pN/nm</td>
+      <td>(Popov et al., 2016) Stretching constant of cylinder</td>
+    </tr>
+    <tr>
+      <td>Motors</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Binding rate constant</td>
+      <td>0.2 s-1 per head</td>
+      <td>Stam et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Duty ratio</td>
+      <td>0.1</td>
+      <td>Stam et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Number of motor heads per mini-filament</td>
+      <td>15–30</td>
+      <td>Verkhovsky and Borisy, 1993</td>
+    </tr>
+    <tr>
+      <td>Stretching constant</td>
+      <td>56.0 pN/nm</td>
+      <td>Popov et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Characteristic stall force</td>
+      <td>15.0 pN per head</td>
+      <td>Popov et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Characteristic motor unbinding force</td>
+      <td>12.6 pN per head</td>
+      <td>Erdmann et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Crosslinkers</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Binding rate constant</td>
+      <td>0.7 μM-1s-1</td>
+      <td>Wachsstock et al., 1993</td>
+    </tr>
+    <tr>
+      <td>Unbinding rate constant</td>
+      <td>0.3 s-1</td>
+      <td>Wachsstock et al., 1993</td>
+    </tr>
+    <tr>
+      <td>Stretching constant</td>
+      <td>8.0 pN/nm</td>
+      <td>DiDonna and Levine, 2007</td>
+    </tr>
+    <tr>
+      <td>Characteristic linker unbinding force</td>
+      <td>17.2 pN</td>
+      <td>Ferrer et al., 2008</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Filaments are discretized into cylinders, and the length of cylinders ranges from 2.7 nm (1 subunit) to a maximum of 108 nm (40 subunits). Bending is only allowed between two connecting cylinders._
 
 To determine the actin bundle length, we measured the F-actin distribution along the Z-axis and defined the actin bundle length as the width of central 80% of the F-actin distribution (Figure 5—figure supplement 1A). Although the length measured in simulations was much shorter than that in the experiments, the beta-actin bundles were ~50–80% longer than gamma-actin bundles, in agreement with the experimental measurements.

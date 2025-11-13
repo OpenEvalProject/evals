@@ -23,12 +23,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00pg6eq24 Université de Strasbourg, INSERM Strasbourg France
-2. https://ror.org/0495fxg12 Institut Pasteur, Université Paris Cité Paris France
-3. https://ror.org/00pg6eq24 INSERM UMR_S1109, Tumor Biomechanics Lab, Université de Strasbourg, Fédération de Médecine Translationnelle de Strasbourg (FMTS) Strasbourg France
-4. https://ror.org/016zvc994 Institut de Pharmacologie et de Biologie Structurale, Université de Toulouse Toulouse France
-5. https://ror.org/05kwbf598 Institute for Advanced Biosciences, Centre de Recherche Université Grenoble Alpes La Tronche France
-6. https://ror.org/00m8d6786 Center for Hematology and Regenerative Medicine (HERM), Department of Medicine Hiddinge, Karolinska University Hospital, Karonlinska Institute Stockholm Sweden
+1. Université de Strasbourg, INSERM Strasbourg France ([ROR:00pg6eq24](https://ror.org/00pg6eq24))
+2. Institut Pasteur, Université Paris Cité Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+3. INSERM UMR_S1109, Tumor Biomechanics Lab, Université de Strasbourg, Fédération de Médecine Translationnelle de Strasbourg (FMTS) Strasbourg France ([ROR:00pg6eq24](https://ror.org/00pg6eq24))
+4. Institut de Pharmacologie et de Biologie Structurale, Université de Toulouse Toulouse France ([ROR:016zvc994](https://ror.org/016zvc994))
+5. Institute for Advanced Biosciences, Centre de Recherche Université Grenoble Alpes La Tronche France ([ROR:05kwbf598](https://ror.org/05kwbf598))
+6. Center for Hematology and Regenerative Medicine (HERM), Department of Medicine Hiddinge, Karolinska University Hospital, Karonlinska Institute Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
 
 † Corresponding author
 
@@ -50,43 +50,111 @@ The present study provides new insight into the spatial organization of the ECM 
 
 ## Results
 
-## Laminin and collagen IV create a 3D cage around sinusoid-associated megakaryocytes
+### Laminin and collagen IV create a 3D cage around sinusoid-associated megakaryocytes
 
 The organization of the ECM around megakaryocytes in the vascular niche is not well understood due to challenges in in vivo observation. To investigate this, we utilized immunofluorescence (IF) microscopy on ultrathin bone marrow cryosections (250 nm thickness). This approach offers superior axial resolution compared to traditional confocal microscopy, enabling high-resolution localization of ECM components. Megakaryocytes were visualized using antibodies against GPIbβ, while sinusoids were identified with antibodies against FABP4 (Figure 1A). Our findings revealed that laminin ϒ1 chains and collagen IV delineated the basement membrane underlying the endothelium of sinusoids and the outer contour of mature megakaryocytes (Figure 1A, Figure 1—figure supplement 1Aa). Adjacent cells exhibited granular staining for laminin ϒ1 and collagen IV, which may indicate a potential contribution to the ECM constitution (arrow in Figure 1—figure supplement 1Ag-h). Fibronectin was detected in the basement membrane and around megakaryocytes, while fibrinogen was more widespread, associated with the basement membrane, the megakaryocyte surface, and intracellular granules (Figure 1—figure supplement 1Ab-c). Von Willebrand factor (VWF) signal was restricted to the alpha granules of megakaryocytes (Figure 1—figure supplement 1Ad). We observed no detectable signals for type I and III collagen around megakaryocytes or sinusoids despite using antibodies validated on positive controls (Figure 1—figure supplement 1Ae-f, Figure 1—figure supplement 1B–C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left panel. Schematic representation of the experimental workflow for 2D imaging of immunostained bone marrow cryosections from WT mice. Confocal imaging is performed on single ultrathin sections with an axial resolution of 250 µm. Right panel. Representative 2D images of a sinusoid-associated megakaryocyte immunostained for laminin ϒ1 (red), GPIbβ (white), and FABP4 (cyan). Cell nuclei are visualized with DAPI (blue; from one out of three independent IF experiments). (B) Left panel. Schematic representation of the experimental workflow for 3D analysis of whole-mount bone marrow preparations from WT mice. A stack of confocal images covering half the depth of the megakaryocyte is acquired and then z-projected to create a maximum projection image. Right panel. Representative maximal projection images of sinusoid-associated megakaryocyte immunostained for laminin ϒ1 (red), GPIbβ (white), and FABP4 (cyan; from one out of three independent IF experiments). (C) Representative maximal projection images of sinusoid-associated megakaryocyte immunostained for collagen IV (green) and GPIbβ (white). The inset image shows the FABP4 (cyan) and megakaryocyte (white) immunostaining. (D) Bone marrow-isolated megakaryocyte maintaining an ECM cage. Left panel. Schematic of the experimental procedure used to isolate mouse bone marrow megakaryocytes. Right panel. Maximal projection 3D images showing the persistence of the ECM cage (collagen IV in green) around a freshly isolated megakaryocyte (GPIbβ in white). *, sinusoid lumen; arrowheads, basement membrane-cage connections; BM, bone marrow; bm, basement membrane; MK, megakaryocyte; Bars, 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunofluorescence 2D analysis of ECM proteins. Collagen IV (a and g), laminin γ1 (h), fibronectin (b), fibrinogen (c), von Willebrand factor (d), and collagen I /III (e–f) around sinusoid-associated megakaryocytes. Bone marrow immunostained for GPIbβ (white), FABP4 (cyan), and DAPI (blue). (B) Positive immunostaining of small stromal cells near the bone with the antibody against collagen III. (C) Positive immunostaining of the bone and arterioles using two antibodies against collagen I (AB765P and ab21286, respectively). Note that the megakaryocytes are not immunostained. (D–E) Direct connections between the basement membrane and the ECM cage. (D) Maximal projection showing the interface between the basement membrane (red), the sinusoid (blue), and megakaryocyte (white). The next image is a 3D reconstruction of this area. (E) Maximum projection of 3D laminin ϒ1 fibers linked to the basement membrane. The arrowheads indicate the connection between the basement membrane and the cage. (F–H) The spatial distribution of the ECM cage is highly restrictive to the sinusoid-associated megakaryocytes (F) Maximal projection of a large field of the 3D laminin ϒ1 organization. Megakaryocytes in contact with sinusoids (sMK) have a cage, while megakaryocytes in the parenchyma (pMK) were surrounded by sparse interstitial laminin ϒ1. Bone marrow immunostained for GPIbβ (white) and laminin ϒ1 (red). (G) Quantification of the number of megakaryocytes displaying the typical 3D cage as a function of cell association with sinusoids. Megakaryocytes with an ECM cage (gray bars) and without a cage (hatched bars) were counted (three complete 3D stacks from independent mice, 126 megakaryocytes counted in total as indicated in the bars, **p<0.01 Mann-Whitney). (H) Quantification of the pMK relative to the total MK population. Megakaryocytes in the stroma and in contact with sinusoids were counted on three complete 3D stacks from independent mice, ***p<0.0001, unpaired t-test. OK. (I–J) Correlation with the maturation stages of megakaryocytes. (I) Maximal projections of megakaryocytes are shown. Bone marrow immunostained for GPIbβ (white) and laminin ϒ1 (red). (J) Quantification of laminin γ1 immunostaining on megakaryocytes. Quantification per cell shows the presence of a 3D ECM cage at all stages of maturation (2–3 independent experiments, 14<n < 22 as indicated in the bars, *p<0.05 Mann-Whitney). Quantification on megakaryocytes extending proplatelets and residual megakaryocytes was not possible due to sample size limitations. (K) Distribution of fibronectin and fibrinogen around sinusoid-associated megakaryocytes. Maximal projection 3D images showing the absence of ECM connections with the basement membrane for fibronectin (magenta) and fibrinogen (yellow). Sinusoid endothelial cells were visualized with anti-FABP4 (cyan), and megakaryocytes were identified with anti-GPIbβ (white). Arrowheads, peri-MK staining; Arrow, staining in adjacent small cells in (Ag-h); bm, basement membrane; MK, megakaryocyte; DMS, demarcation membrane system; PPT, proplatelet; *, vascular lumen; Bar, 10 µm.
+
 Having established the expression of laminin ϒ1, collagen IV, fibronectin, and fibrinogen in the direct megakaryocyte microenvironment, their spatial organization was next investigated using 3D imaging of whole-mount bone marrow preparations (Figure 1B). Analysis of maximum Z-stack projections revealed that laminin ϒ1 and collagen IV formed a reticular 3D ECM cage completely enveloping megakaryocytes and extending radially from the sinusoidal basement membrane (Figure 1B–C). With this approach, the basement membrane-ECM cage connections were clearly visible when examining the full z-stack series. Examples are shown in Videos 1 and 2 and in Figure 1—figure supplement 1. Quantification showed that almost all megakaryocytes near sinusoids (sMK, 92.8 ± 3.3%) have a laminin cage, compared to only 11.4 ± 4.8% of megakaryocytes in the parenchyma (pMK; Figure 1—figure supplement 1F–G). Parenchymal megakaryocytes (pMK), which represented only 18 ± 1.3% of all megakaryocyte population (Figure 1—figure supplement 1H), were instead surrounded by a sparse thin network of laminin ϒ1 (Figure 1—figure supplement 1F). Although we cannot exclude that ECM cage can be formed on its own, our data suggests that ECM cage assembly may require interactions between megakaryocytes and the sinusoidal basement membrane. Parenchymal megakaryocytes (pMK), which represented only 18 ± 1.3% of all megakaryocyte population (Figure 1—figure supplement 1H), were instead surrounded by a sparse thin network of laminin ϒ1 (Figure 1—figure supplement 1F). The ECM cage was present at all stages of megakaryocyte maturation, including megakaryocytes with proplatelet extension (Figure 1—figure supplement 1I–J). Remarkably, after mechanical dissociation and size exclusion, nearly half of the megakaryocytes successfully retained their cages (53.4 ± 5.6 %, 329 megakaryocytes counted from 3 mice), indicating strong physical attachments between both components (Figure 1D). While fibronectin and fibrinogen are present around megakaryocytes and at the vessel-cell interface, they do not form a reticular ECM cage. Furthermore, no connection was found between fibronectin and fibrinogen deposition with the sinusoid basement membrane, in contrast to the findings for laminin and collagen IV (Figure 1—figure supplement 1K). These observations demonstrate that megakaryocytes establish precise and tight interactions with an ECM cage made of laminin ϒ1 and collagen IV in a spatially confined microenvironment at the sinusoidal basement membrane.
 
-## Reduced 3D laminin cage and vessel-associated megakaryocytes in Lama4-/- mouse bone marrow
+![Video 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-video1.mp4.jpg)
+
+**Video 1.:** Representative maximal video showing the immunostaining of laminin γ1 (red).
+
+![Video 2.](https://cdn.elifesciences.org/articles/104963/elife-104963-video2.mp4.jpg)
+
+**Video 2.:** Representative maximal video showing the immunostaining of collagen IV (green).
+
+#### Reduced 3D laminin cage and vessel-associated megakaryocytes in Lama4-/- mouse bone marrow
 
 Among the γ1 chain-bearing laminin isoforms, laminin α4 was abundantly found in bone marrow sinusoid basement membrane (Susek et al., 2018). To explore the direct influence of ECM organization on platelets and megakaryocytes, we utilized laminin α4-deficient mice (Lama4-/-). These mice exhibit mild thrombocytopenia, with platelet counts approximately 20% lower than wild-type (WT) mice (Cai et al., 2022). Their platelets maintain a normal ultrastructure and functions, as shown by flow cytometry and EM analysis (Figure 2—figure supplement 1A–C). Bone marrow from Lama4-/- mice showed a normal number of mature megakaryocytes with characteristic ultrastructural features (Figure 2C and Figure 2—figure supplement 1D). Analysis of bone marrow explants further demonstrated that these megakaryocytes could extend proplatelets, indicating preserved fundamental function (Figure 2—figure supplement 1E–F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Depletion of laminin α4 leads to a reduction in the laminin ϒ1 deposition, but not in collagen IV, in the cage around megakaryocytes and in the sinusoid basement membrane. (A) Representative maximal projection images showing the immunostaining of laminin γ1 (red) or collagen IV (green) in the Lama4-/- compared to control mice. Two magnifications are shown for Lama4-/- mouse. (B) Quantification of laminin γ1 and collagen IV surface coverage per megakaryocyte and per basement membrane surface (laminin: 6<cage < 17 and 15<bm < 17; collagen IV: 6<cage < 16 and 11<bm < 21 expressed as a percentage, ****p>0.001 unpaired t-Test). (C–E) Depletion of laminin α4 leads to a decrease in the sinusoid-associated megakaryocytes. (C) Representative maximal projections showing the immunostaining of laminin γ1 (red) and megakaryocytes (GPIbβ in white) in the bone marrow of Lama4-/- and control mice. (D) Quantification of the total number of megakaryocytes per surface unit (s.u., 12,945 μm2, n=3 for each genotype, 87<n < 92, p=0.9228, ns, Mann-Whitney test). (E) Quantification of the sinusoid-associated megakaryocytes (n=3, ****p>0.001 unpaired t-Test) in control (gray) and Lama4-/- (dark) mice. Arrows point to megakaryocytes, which are not associated with sinusoids (pMK). bm, basement membrane; MK, megakaryocyte; pMK, MK in the parenchyma; Bar, 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Lama4-/- platelet morphology and functions. (A) Normal size, discoid shape, and ultrastructure of Lama4-/- platelets. Bar: 0.5 µm. (B) Gating strategy for platelet function analysis. Flow cytometry was used to analyze the functions of Lama4-/- platelets. Following activation with collagen-related peptide (CRP; 40 µg/ml) or CRP +TRAP (4 mM), the expression of P-selectin (CD62P, a marker of α-granule secretion) and P-selectin (JON-A PE, a marker of integrin αIIbβ3 activation) was analyzed. (C) Quantification of the percentage of positive platelets, Bars are the mean ± SEM of three to six independent experiments. The results were statistically compared to those of control platelets (*p<0.05; **p<0.01; ***p<0.001). (D–E) Megakaryopoiesis in Lamα4-/- mice. (D) Quantification of the bone marrow megakaryocytes observed by electron microscopy, per surface unit (s.u., 12,945 μm2). ns, p=0.7177 unpaired t test. (E) Representative TEM images of Lama4+/+and Lama4−/− megakaryocytes. Bars, 5 μm. (F–G) Ex vivo capacity of Lama4-/- megakaryocytes to form proplatelets. (F) Representative image showing proplatelets forming-Lama4−/− megakaryocytes in fresh bone marrow explants. Arrowhead points to proplatelets. Scale Bar, 100 µm. (G) Quantification of the percentage of Lama4+/+and Lama4−/− megakaryocytes extending proplatelets following 3 hr and 6 hr. Bars represent the mean ± SEM of three independent experiments (107<n < 113 for Lama4+/+and Lama4−/−, ns p>0.1, unpaired t-test). α, alpha granules, δ, dense granules, PT, platelet territories, bm, basement membrane, MK, megakaryocyte*, sinusoid lumen. Bars, 10 µm.
+
 We next examined the ECM cage using an antibody against laminin γ1. In Lama4-/- mice, laminin γ1 deposition around megakaryocytes and in the sinusoid basement membrane decreased by 1.7- and 2.6-fold compared to controls, indicating a disruption of the laminin cage (Figure 2A–B, upper panels). However, collagen IV organization remained unaltered around the megakaryocytes in these mice (Figure 2A–B, lower panels), showing that laminin α4 is not necessary for collagen IV cage formation. We also analyzed megakaryocyte localization in the bone marrow of Lama4-/- mice (Figure 2C). The total megakaryocyte density was similar to that of control mice (Figure 2D), but we observed more parenchymal MK with a 1.5-fold reduction in the number of megakaryocytes near sinusoids (Figure 2E). These observations highlight the role of the laminin α4 cage in maintaining optimal positioning of megakaryocytes near sinusoids.
 
-## Integrins maintain the structural properties of the ECM cages
+#### Integrins maintain the structural properties of the ECM cages
 
 Integrins play a crucial role in ECM remodeling. Megakaryocytes express β1 and β3 integrins as main ECM receptors (Yang et al., 2022). To elucidate the molecular mechanisms governing the intricate interactions between megakaryocytes and the ECM cage, we investigate the subcellular localization of integrins on immunostained ultrathin bone marrow cryosections. Using conformation-independent antibodies, we showed the presence of β1 subunit on the plasma membrane and on the DMS (Figure 3A). Similar findings were obtained for total β3 integrins (Figure 3—figure supplement 1A). In contrast, the activated form of β1 integrin was expressed only at interaction sites with laminin γ1 and collagen IV, suggesting that activated β1 integrins mediate megakaryocyte interactions with the ECM cage (Figure 3B). Activated β3 integrin involvement remains to be determined, as no specific signal was detected when testing two different antibodies (JonA-PE, Pac 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative 2D images of Pf4cre bone marrow cryosections (250 nm) showing a sinusoid-associated megakaryocyte immunostained for β1 integrin (MAB1997 in yellow). Right: the boxed area is shown at a higher magnification. (B) Activated β1 integrins form functional adhesion structures around megakaryocyte surfaces. Representative 2D images of Pf4cre bone marrow cryosections showing laminin (red, upper panels) or collagen IV (green, lower panels) staining around a sinusoid-associated megakaryocyte immunostained for activated β1 integrin (9EG7 in cyan) and GPIbβ (white). Right: Magnification of the boxed area showing co-localization of the ECM proteins and activated β1 integrin. (C) Depletion of β1 and β3 integrins leads to a reduction in the laminin deposition on the surface of megakaryocytes. Representative 3D images showing a decrease in laminin deposition (red) on Itgb1-/-/Itgb3-/- megakaryocytes compared to Pf4cre. (D) Quantification of laminin surface coverage per megakaryocyte (in %, 17<n < 19 as indicated in the bars, ***p>0.001 unpaired t-Test), (Middle) expression profile of the laminin staining along straight lines (25 µm long) visible as white lines in the confocal images, and (Right) quantification of mesh sizes (in µm, 14<n < 16, **p<0.01 Mann-Whitney). *, sinusoid lumen; MFI, mean fluorescence intensity; MK, megakaryocyte; pm, plasma membrane; Bars, 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative 2D images of sinusoid-associated megakaryocyte immunostained for β3 integrin (LucA5 in yellow). Right panel: the boxed area is shown at a higher magnification. (B) Itgb1-/-/Itgb3-/- megakaryocytes did not display enhanced degradation of gelatin matrix. Freshly isolated megakaryocytes from Pf4cre or Itgb1-/-/Itgb3-/- bone marrow were deposited on a fluorescent gelatin matrix (green) for 3 hr and labeled with phalloidin (adhesive structures in red). ECM degradation was virtually absent in Pf4cre and Itgb1-/-/Itgb3-/- megakaryocytes. Tumoral 4T1 cells, which trigger large dark digested areas (arrow), were used as a positive control. (C–D) Laminin is present in similar amounts in Itgb1-/-/Itgb3-/- and Pf4cre megakaryocytes. (C) Maximal projection 3D images illustrating the presence or not of granules containing laminin (in red) and fibrinogen (in yellow, as negative control) in megakaryocytes (in white) from freshly isolated Pf4cre and Itgb1-/-/Itgb3-/- megakaryocytes. The dotted lines delineated megakaryocytes. (D) Quantification of the number of granules per megakaryocyte (5<MK < 6, ****p>0.001, t-test). (E–F) Normal laminin deposition in the sinusoid basement membrane in Itgb1-/-/Itgb3-/-. (E). Representative 3D images of basement membrane immunostained for laminin ϒ1 (red) (from one out of three independent IF experiments). (F) Quantification of fluorescence intensity of laminin per basement membrane surface (expressed as a percentage). (G–H) Fibronectin and fibrinogen failed to form an ECM cage around Pf4cre and Itgb1-/-/Itgb3-/- megakaryocytes. (G) Decrease in the expression of fibrillar fibronectin around Itgb1-/-/Itgb3-/- megakaryocytes. (H) Mislocalization of fibrinogen in Itgb1-/-/Itgb3-/- megakaryocytes. Top panels. 2D immunofluorescence of Pf4cre and Itgb1-/-/Itgb3-/- bone marrow cryosections using anti-fibronectin (magenta) and anti-fibrinogen (green) antibodies. Lower panels. Immunogold EM images showing the fibronectin and fibrinogen stainings with 10 nm gold particles. Without integrins, megakaryocytes are unable to effectively remodel fibronectin into fibers. Fibrinogen staining is located in the α granules of Pf4cre megakaryocytes and retained in the extracellular DMS space of Itgb1-/-/Itgb3-/- megakaryocytes. α, alpha granules; arrowheads, peri-MK staining; bm, basement membrane; MK, megakaryocyte; pm, plasma membrane; *, sinusoid lumen; Bar, 10 µm.
 
 To test if integrin-mediated signaling plays a role in the structural assembly of the ECM cage, a transgenic mouse model lacking β1 and β3 integrins in the megakaryocyte lineage was used (Itgb1-/-/Itgb3-/-) (Figure 3C). Itgb1-/-/Itgb3-/- mice were generated by crossing the two single loxP-flanked lines (Itgb1-/- and Itgb3-/- mice) with Pf4-Cre mice (expressing the Cre recombinase under the control of the Pf4 promoter). Our analysis revealed a 2.6-fold reduction in laminin γ1 deposition on the megakaryocyte surface in Itgb1-/-/Itgb3-/- mice compared to Pf4-Cre control mice. Furthermore, intensity profiles demonstrated that laminin γ1 forms a less dense network around the megakaryocytes in the double knockout mice, with significantly increased mesh sizes (10.6±1.3 µm vs 6.3±0.6 µm, respectively; Figure 3D). Notably, this lower ECM density surrounding megakaryocytes in Itgb1-/-/Itgb3-/- mice is not linked to increased matrix degradation or reduced laminin synthesis (Figure 3—figure supplement 1B–C). As expected, the laminin γ1 network at the basement membrane remained unaffected in these mice, as the integrin deletion is restricted to megakaryocytes (Figure 3—figure supplement 1E–F).
 
 Further confocal and immunoEM examination revealed a decrease in the expression of fibrillar fibronectin around Itgb1-/-/Itgb3-/- megakaryocytes, along with mislocalization of fibrinogen in the extracellular space of the DMS instead of the granules (Figure 3—figure supplement 1G and H). These findings show that megakaryocytes, through β1 and β3 integrin-dependent mechanisms, participate in their ECM microenvironment remodeling (ECM cage and fibronectin, fibrinogen deposition) and that megakaryocytes β1 and β3 integrins are required.
 
-## Normal ECM organization is essential for proper megakaryocyte intravasation
+#### Normal ECM organization is essential for proper megakaryocyte intravasation
 
 Next, we investigate the relevance of the ECM cage to platelet and megakaryocyte functions. Flow cytometry showed that Itgb1-/-/Itgb3-/- platelets have intact α-granule secretion but impaired integrin-mediated aggregation, consistent with the bleeding phenotype observed in these mice (Janus-Bell et al., 2024; Figure 4—figure supplement 1A). As we previously described that Itgb1-/-/Itgb3-/- mice had a 50% reduction in platelet count (Guinard et al., 2023), we hypothesized that the organization of the ECM cage could contribute to the maturation process of megakaryocytes. Firstly, the number, size, and ploidy of megakaryocytes in Itgb1-/-/Itgb3-/- mice are similar to control mice. However, these mutant megakaryocytes show increased emperipolesis and severe DMS dysplasia, characterized by excessive membrane accumulation and abnormal architecture. Typical platelet territories are poorly defined, indicating disrupted maturation processes (Figure 4—figure supplement 1B–E). We also analyzed megakaryocyte localization in the bone marrow tissue. We found a significantly higher proportion of megakaryocytes that were extending intravascular fragments (i.e. intravasation) in Itgb1-/-/Itgb3-/- mice (15.1 ± 2.7% of total bone marrow megakaryocytes) compared to that in Pf4Cre mice (2.9 ± 0.4% of total megakaryocytes). More strikingly, intact megakaryocytes were found in the sinusoid lumen, a rare phenomenon in control mice under physiological conditions (Figure 4A–B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative confocal images of Pf4cre and Itgb1-/-/Itgb3-/- whole-mount bone marrow immunostained for GPIbβ (white) and FABP4 (cyan). (B) Quantification of megakaryocyte intravasation and circulating megakaryocytes (3 mice minimum for each genotype, 213<n < 397 for Pf4cre and Itgb1-/-/Itgb3-/-, ** p<0.001 Mann Whitney). (C) Quantification of the laminin γ1 deposition in the ECM cage in single knockout integrins and in Gp6 knockout. Quantification of the intravasation events in single knock-out mice showing that both integrins are essential for the proper anchoring of megakaryocytes in their vascular niche. (D–E) Intravital two-photon imaging of Itgb1-/-/Itgb3-/- mouse calvarial bone marrow. (D) Tissues were stained with intravenously injected AF488-conjugated anti-GPIX antibody and rhodamin dextran. The white arrow indicates an intrasinusoidal Itgb1-/-/Itgb3-/- megakaryocyte, dotted lines illustrate the sinusoid wall and the values in the left corner show the time-lapses. (E) Quantification of circulating megakaryocytes, expressed as a percentage of the total number of megakaryocyte (from three independent experiments, 130<n < 136, 0.0279 *p<0.1, Paired t-test). (F–G) Large megakaryocyte nuclei detected in the pulmonary capillaries of Itgb1-/-/Itgb3-/- mice. (F) Representative confocal images showing megakaryocytes’ nucleus (arrow, GPIbβ green, DAPI nucleus) within the pulmonary microvessels of Itgb1-/-/Itgb3-/- mice. Cyan dotted lines indicate the vessel wall. (G) Quantification of the intravascular megakaryocytes (from five independent experiments, 28<n < 149, 0.0079 **p<0.01, Mann-Whitney). (H) Two TEM images showing intravascular entire Itgb1-/-/Itgb3-/- megakaryocyte. *, sinusoid wall; FG, fibrinogen; FN, fibronectin; FG, fibrinogen; n, nucleus; sMK, sinusoid-associated MK; pMK, MK in the parenchyma; PPT, proplatelets; Bars in A-G, 10  μm; Bar in E, 5 µm; Bar in G, 30 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Itgb1-/-/Itgb3-/- platelet functional properties assessed by flow cytometry. The gating strategy was similar to that in Figure 2—figure supplement 1B. Bar graphs showing that activated Itgb1-/-/Itgb3-/- platelets expressed P-selectin but not JON-A PE. This confirmed their deficiency in integrin β3 (n=3 mice per genotype). (B–E) Megakaryocyte density, maturation stages, and ploidy were normal in Itgb1-/-/Itgb3-/- bone marrow. (B) Quantification of the total number of megakaryocytes, observed by electron microscopy (from six to seven independent experiments, 120<n < 153 as indicated in the bars). (C) Representative TEM images of stage III megakaryocytes. (i) The DMS is well-defined with the presence of cytoplasmic territories in control mice. (ii) In Itgb1-/-/Itgb3-/- mice, the DMS accumulates in packets without marking territories (yellow arrow). Bars: 5 µm. (D) Classification of the megakaryocytes according to their maturation stage (from three to five independent experiments, 99<n < 544). (E) Representative ploidy histograms of Pf4cre and Itgb1-/-/Itgb3-/- megakaryocyte (one out of three independent experiments). (F) Intact megakaryocytes were undetectable in the blood of Itgb1-/-/Itgb3-/- mice. Gating strategy for megakaryocyte identification: CD45 + TER119 cells were selected from events with high FSC and SSC parameter (excluding platelets), CD41bright and CD42c bright events are megakaryocytes. The gate positions were determined based on FMO controls and biological positive controls (mouse bone marrow MK enriched cell suspension and whole blood supplemented with MK enriched cell population; data not shown). Representative plots from three separate acquisitions on Pf4cre and Itgb1-/-/Itgb3-/- mice.
 
 To elucidate which of the two integrins was responsible for the observed phenotype, we employed single-knockout mice (Figure 4C). Analysis of the ECM cage revealed a trend toward decreased laminin ϒ1 density around Itgb1-/- megakaryocytes, while no notable changes were observed around Itgb3-/- cells. No statistically significant increase in intravasation events was observed in either single knock-out mouse model. This suggests a redundant role of both integrins in regulating the megakaryocyte ECM cage and the intravasation process, potentially compensating for each other’s role. Additionally, we investigate the role of GPVI, one of the two well-characterized collagen receptors in this process (Figure 4C), and no alterations in ECM cage formation or intravasation behavior were noticed, which is in agreement with previous reports (Semeniak et al., 2019).
 
 To understand the unusual localization of circulating Itgb1-/-/Itgb3-/- megakaryocytes in the bloodstream, we used intravital 2-photon microscopy imaging to describe the dynamic of the megakaryocyte behavior. We used the GPIX marker, a subunit of the GPIb-V-IX complex that is expressed on mature megakaryocytes, to track the behavior of megakaryocytes in living mice. Among the stabilized megakaryocytes at the parasinusoidal interface, we could observe the cellular distortions of Itgb1-/-/Itgb3-/- megakaryocytes and their exit of the marrow (Figure 4D–E, Video 3). Intact Itgb1-/-/Itgb3-/- megakaryocytes were not detected in the peripheral blood by either flow cytometry or blood smear analysis (Figure 4—figure supplement 1F), indicating that megakaryocytes do not normally circulate in the systemic bloodstream. Instead, large MK nuclei were found trapped specifically in the lung capillaries (Figure 4F–G), consistent with their known physical retention in the pulmonary circulation where they can release platelet. Transmission electron microscopy (TEM) observation confirmed that intact Itgb1-/-/Itgb3-/- megakaryocytes were similar in size and ultrastructure to those in the stroma compartment (Figure 4H). Furthermore, no significant change in the size of the endothelial pores (Itgb1-/-/Itgb3-/-: 4.6±0.3 µm; Pf4Cre: 4.3±0.4 µm) was observed, indicating that increased megakaryocyte intravasion is not linked to endothelium alteration in mutant mice.
 
-## Integrins promote megakaryocyte adhesion to the ECM components of the bone marrow
+![Video 3.](https://cdn.elifesciences.org/articles/104963/elife-104963-video3.mp4.jpg)
+
+**Video 3.:** Tissues were stained with intravenously injected AF488-conjugated anti-GPIX antibody and rhodamine dextran.
+
+#### Integrins promote megakaryocyte adhesion to the ECM components of the bone marrow
 
 We next assessed the contribution of integrins' adhesive function in megakaryocyte anchorage to ECM. Under static conditions, most Itgb1-/-/Itgb3-/- megakaryocytes did not spread and still showed a round shape on immobilized laminin, fibronectin, or fibrinogen (Figure 5A–B). We next measured the adhesive potential of freshly isolated bone marrow megakaryocytes to test for such an adhesive role. To this end, we used a miniaturized microfluidic-based experimental model in which individual megakaryocyte detachment was tracked when exposed to a flow rate of 300 s-1, similar to the flow typically found in sinusoids (Figure 5—figure supplement 1A-B). Pf4-Cre megakaryocytes had capture yields of 70.5% on laminin, 83.6% on fibrillar fibronectin, and 82.0% on fibrinogen. Laminin exhibited the least adhesion, emphasizing the importance of the molecular composition of the said 3D ECM cage and its evident impact on the adhesion response of megakaryocytes in vivo (Figure 5C–D). Pf4-Cre megakaryocytes remained anchored, while Itgb1⁻/⁻/Itgb3⁻/⁻ megakaryocytes experienced higher detachment rates across various ECMs (Videos 4 and 5). In line with this conclusion, we used the bone marrow explant model to study the adhesion properties of the megakaryocytes associated with their 3D ECM cage (Figure 5E–F). This model enabled us to quantify the physical detachment of megakaryocytes at the periphery of the explants. After 3 hr, more megakaryocytes detached from Itgb1-/-/Itgb3-/- bone marrow tissue than Pf4-Cre explants, reaching a plateau at 6 hr. These findings indicate that β1 and β3 integrins control ECM-megakaryocyte interactions in their native bone marrow microenvironment.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig5-v1.jpg)
+
+**Figure 5.:** (A–B) Impaired adhesion and spreading of Itgb1-/-/Itgb3-/- megakaryocytes. (A) Representative SEM images depicting bone marrow-derived megakaryocytes adhering on laminin. (B) Spreading (hatched bars) and round (gray bars) megakaryocytes were counted following 3 hr incubation on laminin, fibronectin (FN), and fibrinogen (FG) (in %) (from four to six independent experiments). (C–D) Microfluidic flow chamber to study megakaryocyte adhesion efficiency. (C) Representatives bright field images showing that upon flow application, Itgb1-/-/Itgb3-/- megakaryocytes detach from fibrillary fibronectin protein, while Pf4Cre MKs remain attached. (D) Quantification of the detachment of Pf4cre and Itgb1-/-/Itgb3-/- megakaryocytes on laminin, fibrillar fibronectin, and fibrinogen (from five to seven independent experiments,**p<0.01, ***p<0.001, Mann-Whitney). (E–F) Reduced physical anchoring of Itgb1-/-/Itgb3-/- megakaryocytes to bone marrow. (E) Representatives bright field images of the ten femur bone marrow sections placed in an incubation chamber (left panel), of the box (center panel) and of the megakaryocytes released from the periphery of the explants (right panel). (F) Quantification of the number of Pf4cre and Itgb1-/-/Itgb3-/- megakaryocytes released from the explants following 3 hr (from 10 to 13 independent experiments, 594<n < 1095 for Pf4cre and Itgb1-/-/Itgb3-/-, *p<0.05, unpaired t-test). Dotted lines, MK detachment; MK, megakaryocytes, FN, fibronectin; FG, fibrinogen; n, number of cells studied; Bars in A, 10  μm; Bars in B, 20 µm; Bars in B, 30 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic representation of the experimental microfluidic equipment. (B) Determination of the seeding time with capture efficiencies of over 80% for Pf4cre megakaryocytes on laminin-, fibronectin- or fibrinogen-coated chambers.
+
+![Video 4.](https://cdn.elifesciences.org/articles/104963/elife-104963-video4.mp4.jpg)
+
+**Video 4.:** Representatives bright field video showing that upon flow application Pf4Cre MKs remain attached.
+
+![Video 5.](https://cdn.elifesciences.org/articles/104963/elife-104963-video5.mp4.jpg)
+
+**Video 5.:** Representative bright field video showing that upon flow application, Itgb1-/-/Itgb3-/- megakaryocytes detach from fibrillary fibronectin protein.
+
 Collectively, our results highlight the essential roles of β1 and β3 integrins in forming 3D ECM cages around megakaryocytes and modulating their adhesion within the bone marrow, which helps stabilize the cells in their vascular niche and prevent the passage of intact megakaryocytes through the sinusoid barriers.
 
-## Cage compression via metalloproteinase inhibition affects the maturation of megakaryocytes
+#### Cage compression via metalloproteinase inhibition affects the maturation of megakaryocytes
 
 Our results suggest that a weakened ECM cage promotes megakaryocyte intravasation through reduced adhesion. We, therefore, tested whether an increase in cage density also may affect megakaryocyte functions. For that purpose, we proposed to decrease the catabolic aspect occurring in the ECM equilibrium between its synthesis and degradation. To this aim, mice were injected with batimastat (30 mg/kg) and ilomastat (20 mg/kg) for 7 days, in order to inhibit the activation of MMPs in the megakaryocyte microenvironment (Winer et al., 2018; Figure 6—figure supplement 1A). These mice produced platelets normally in terms of both count and average platelet function (Figure 6—figure supplement 1B–C). Regarding the cage, this treatment increased the ECM density in megakaryocyte surrounding, as evidenced by reduced fiber length and pore size (Figure 6A–B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) MMP inhibition leads to a densification of the 3D ECM cage. (A) Representative 3D confocal images showing a significant increase in collagen IV deposition (green) on the megakaryocyte surface in treated mice treated with the intravenous cocktail of protease inhibitors (B+I). (B) (Left) Quantification of collagen IV fluorescence showed a shortening of collagen IV fibers in treated mice. compared to that in control mice (from three to five independent experiments, 20<n < 22 as indicated in the bars, ****p<0.001, Mann-Whitney), (Middle) Histograms of fluorescence intensity versus distance showed an increase in cross-linking with a reduction in pore size (white lines of 25 µm length are visible in the confocal images), (Right) Reduction in mesh sizes in treated mice (from three independent experiments, 7<n < 12, ***p>0.001, t-test). (C–D) MMP inhibition affects megakaryocyte growth. (C) Representative confocal images from DMSO vs B+I treated mice immunostained for GPIbβ (white) and FABP4 (cyan), zoomed-in images showing the difference in megakaryocyte size between the two groups (arrows). (D) Quantification of the number of megakaryocytes per bone marrow area (194x194 µm; from three independent experiments, 229<n < 483 as indicated in the bars, ****p<0.0001, Mann-Whitney). (E–F) MMP inhibition leads to an increase in the number of immature megakaryocytes. (E) TEM observation revealed the presence of numerous immature megakaryocytes (stage II) in treated mice as compared to fully mature megakaryocytes in control mice (stage III). (F) Quantification of the total number of megakaryocytes (145<n < 169 as indicated in bars, **p<0.01, Mann-Whitney) and in the proportion of immature megakaryocytes (stage II) in the B+I group (from three independent experiments, **p<0.05, ***p<0.01, one-way ANOVA with Tukey correction). (G–H) MMP inhibition reduced release of megakaryocytes from the bone marrow explant. (G) Representative bright field images of the megakaryocytes (arrows) released from the periphery of the control and treated explants. (H) Quantification of the number of megakaryocytes released following 3 hr and 6 hr (from six independent experiments, 369<n < 783 for DMSO and B+I, *p<0.05, unpaired t-test). B+I, batimastat + Ilomastat; sMK, sinusoid-associated MK; pMK, MK in the parenchyma; n, number of cells studied; Bars in A and C, 10  μm; Bars in E, 5 µm; Bar in G, 50 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Experimental setup. A combination of batimastat (30 mg/kg) and ilomastat (20 mg/kg) (B+I) or vehicle (DMSO) was injected daily for 7 days. (B–C) In vivo MMP inhibition does not impact platelet count and function. (B) Platelet counts were similar in both groups. (C) Flow cytometry shows normal P-selectin and JON-A PE expression following activation with collagen-related peptide (CRP)(40 µg/ml) or CRP + TRAP (4 mM). Bar graphs represent the percentage of positive platelets, mean ± SEM. The results were statistically compared to those of control platelets (ns, multiple unpaired t tests). (D) In vitro studies demonstrate that batimastat and ilomastat have no significant direct effect on cultured megakaryocytes. This is evident from their lack of impact on: (1) proliferation (as expressed by the number of megakaryocytes (MKs) per unit), (2) maturation (as expressed by MK size in µm); (3) the ability to extend proplatelets (as expressed by the percentage of MKs that extend proplatelets). Bar graphs illustrate the impact of two MMP inhibitor doses on days 3 and 4 of the culture process, displaying the mean and SEM. (E) Representative 2D images of bone marrow cryosections demonstrating an increase in staining of activated β1 integrin (9EG7 in green) around megakaryocytes in bone marrow treated with B+I in comparison to that treated with DMSO. *, lumen of the sinusoid; D, day; MK, megakaryocyte; Bars: 10 µm.
 
 We investigated whether this denser ECM cage might affect megakaryopoiesis. Remarkably, treatment with MMP inhibitors resulted in a significantly higher proportion of smaller megakaryocytes compared to untreated mice (white arrows in Figure 6C–D). To better evaluate the extent of this defect, we employed TEM (Figure 6E). We found that 53.7% of the megakaryocytes lacked the appropriate organization of the DMS in MMP inhibitors-treated mice, reflecting a primary failure in the cytoplasmic maturation (Stage II in Figure 6F right). These mice also showed a significant increase in the total megakaryocyte number compared to the control condition (Figure 6D and F left), consistent with altered bone marrow ECM remodeling affecting megakaryocyte retention. To assess whether MMP inhibition directly affects megakaryocyte maturation and density, we cultured primary megakaryocytes in the presence of increasing concentrations of inhibitors. We observed no significant change in proliferation, maturation, or proplatelet formation (Figure 6—figure supplement 1D). While this in vitro model and the application of exogenous MMP inhibitors offer valuable mechanistic insights, they do not fully recapitulate the complexity and regulation of the bone marrow ECM in vivo. For example, MMPs from other cell types and paracrine signals in the bone marrow may influence megakaryocyte behavior. Nonetheless, these findings are consistent with the conclusion that disrupting ECM remodeling significantly impacts megakaryocyte maturation within the physiological bone marrow.
 
@@ -116,33 +184,252 @@ Overall, our findings reveal the supportive role of the ECM cage in platelet bio
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 We used wild type (WT) mice (C57BL/6 J from C. River, L'Arbesle, France), Itgb1-/-/Itgb3-/- double knockout mice and Pf4cre mice aged 10–15 weeks. Pf4cre mice expressed the Cre recombinase under the control of the Pf4 promoter. The Itgb1-/- (Potocnik et al., 2000) and Itgb3-/- (Morgan et al., 2010) mice were crossed with mice expressing the Cre recombinase under the control of the Pf4 promoter to obtain inactivation in the MK lineage. Itgb1-/-/Itgb3-/- double knockout (KO) mice were crosses of the two single KO lines, as described in Guinard et al., 2023. Gp6 -/- mice and Lama4-/- mice were from Nieswandt and Qian labs (Bender et al., 2011; Cai et al., 2022). All animal studies were approved by the French legislation for animal experimentation and in accordance with the guide for the care and use of laboratory animals as defined by the European laws (Animal Facility Agreement C-67-482-10).
 
-## Chemicals
+### Chemicals
 
 Dimethyl sulfoxide (2438), bovine serum albumin (900.011), saponin (47036), Triton X-100 (T8787), fibrinogen and batimastat (SML0041) (Sigma-Aldrich, Rueil-Malmaison, France), Ilomastat (GM6001, HY-15768) (MedChemExpress, Clinisciences, France), Dulbecco’s modified Eagle’s medium (DMEM), penicillin, streptomycin, and glutamine (Invitrogen, Cergy-Pontoise, France), Gelatin-Oregon Green 488 conjugate (G-13186) (Life Technologies), Laminin 511 recombinant (Biolamina) and fibronectin from human plasma (341635, Calbiochem) were used in this study.
 
-## Antibodies
+### Antibodies
 
 See Tables 1 and 2 for details.
 
+**Table 1.**
+ Immunofluorescence antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Origin and isotype</th>
+      <th>Reference and supplier</th>
+      <th>Cryosections</th>
+      <th>Whole-mount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Primary antibody</td>
+    </tr>
+    <tr>
+      <td>Collagen I</td>
+      <td rowspan="3">Rabbit polyclonal</td>
+      <td>Chemicon (Merck) ab765p</td>
+      <td>5 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Collagen III</td>
+      <td>Invitrogen PA5-34787</td>
+      <td>10 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Collagen IV</td>
+      <td>Chemicon (Merck), ab756p</td>
+      <td colspan="2">5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>FABP4</td>
+      <td>Goat polyclonal</td>
+      <td>R&amp;D Systems AF1443</td>
+      <td colspan="2">0.5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Fibrinogen</td>
+      <td rowspan="2">Rabbit polyclonal</td>
+      <td>Dako (Glostrup, Denmark), A0080</td>
+      <td colspan="2">10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Fibronectin</td>
+      <td>ab2413 (Abcam; Paris, France)</td>
+      <td colspan="2">10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>GPIbβ</td>
+      <td rowspan="2">Rat monoclonal</td>
+      <td>In house (Strasbourg, France)</td>
+      <td>1/300</td>
+      <td>1/300</td>
+    </tr>
+    <tr>
+      <td>Activated β1 integrin (9EG7)</td>
+      <td>553715 (BD Pharmingen)</td>
+      <td colspan="2">10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Pan-laminin</td>
+      <td rowspan="2">Rabbit polyclonal</td>
+      <td>L9393 (Sigma-Aldrich)</td>
+      <td colspan="2">10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Von Willebrand Factor</td>
+      <td>Dako, A0082</td>
+      <td>10 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>β1 integrin (MB1.2)</td>
+      <td>Rat monoclonal</td>
+      <td>Merck, MAB1997</td>
+      <td>10 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LucA5</td>
+      <td>Rat IgG2A monoclonal</td>
+      <td>Emfret analytics, LucA5</td>
+      <td>10 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Secondary antibody</td>
+    </tr>
+    <tr>
+      <td>AF488-anti-rabbit immunoglobulin</td>
+      <td>Donkey</td>
+      <td>A21206 (Invitrogen)</td>
+      <td rowspan="5" colspan="2">1/150</td>
+    </tr>
+    <tr>
+      <td>AF488-conjugated anti-rabbit immunoglobulin</td>
+      <td>Goat</td>
+      <td>A11070 (Invitrogen)</td>
+    </tr>
+    <tr>
+      <td>AF647-conjugated anti-rabbit immunoglobulin</td>
+      <td>Goat</td>
+      <td>A21245 (Invitrogen)</td>
+    </tr>
+    <tr>
+      <td>AF647-conjugated anti-rat immunoglobulin</td>
+      <td>Goat</td>
+      <td>A21247 (Invitrogen)</td>
+    </tr>
+    <tr>
+      <td>AF555-conjugated anti-goat immunoglobulin</td>
+      <td>Donkey</td>
+      <td>A21432 (Invitrogen)</td>
+    </tr>
+    <tr>
+      <td>AF647-conjugated anti-pan-laminin</td>
+      <td>Rabbit</td>
+      <td>In house</td>
+      <td colspan="2">25 µg/ml</td>
+    </tr>
+    <tr>
+      <td>AF555-conjugated anti-collagen IV</td>
+      <td>Rabbit</td>
+      <td>In house</td>
+      <td colspan="2">30 µg/ml</td>
+    </tr>
+    <tr>
+      <td>AF647-conjugated anti-GPIX antibody</td>
+      <td>Rat</td>
+      <td>nXiaB4 Emfret</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Antibodies used in flow cytometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Origin and isotype</th>
+      <th>Reference and supplier</th>
+      <th>Fluorophore</th>
+      <th>Flow cytometry</th>
+      <th>Whole-mount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Conjugated antibody</td>
+    </tr>
+    <tr>
+      <td>JONAActivated integrin αIIbβ3</td>
+      <td>Rat IgG2b</td>
+      <td>Emfret analyticsM023-2</td>
+      <td>PE</td>
+      <td>Dilution of 1/5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P-selectin (CD62P)</td>
+      <td>Mouse IgG2a, κ</td>
+      <td>BioLegend148303</td>
+      <td>APC</td>
+      <td>1 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CD45 (clone 30-F11)</td>
+      <td>Rat IgG2b, κ</td>
+      <td>eBiosciences12-0451-82</td>
+      <td>PE-A</td>
+      <td>1 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TER119</td>
+      <td>Rat / IgG2b, κ</td>
+      <td>eBiosciences17-5921-82</td>
+      <td>APC-A</td>
+      <td>1 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GPIbβ</td>
+      <td>Rat monoclonal</td>
+      <td>In house (Strasbourg, France)</td>
+      <td>A647, A568, A488</td>
+      <td>1 µg/ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hoechst-33342</td>
+      <td></td>
+      <td>InvitrogenH3570</td>
+      <td></td>
+      <td></td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Integrin αIIb (CD41 – clone MWReg30)</td>
+      <td>Rat IgG1 κ</td>
+      <td>eBiosciences25-0411-82</td>
+      <td>PE-Cy7</td>
+      <td>1 µg/ml</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 GPIX and GPIbβ are components of the GPIb-IX complex, identifying mature megakaryocytes (Lepage et al., 2000). The choice of marker used to identify megakaryocytes in different experiments is primarily based on technical considerations. Intravital experiments have been standardized using AF488-conjugated anti-GPIX to consistently identify mature megakaryocytes. The rest of the manuscript uses GPIbβ (GP1bβ) due to its strong, specific, bright staining.
 
-## Extrusion and preservation of murine bone marrow
+### Extrusion and preservation of murine bone marrow
 
 Bone marrow extrusion, without leaving any residual bone, was obtained by carefully flushing the femurs of mice with PBS using a 21-gauge needle attached to a 10 ml syringe (see photo in Figure 1D; Scandola et al., 2021). To maximize the preservation of the bone marrow integrity, we used a double fixation procedure (4% paraformaldehyde and 0.4% glutaraldehyde for 1 hr) immediately after bone marrow extrusion, followed by embedding it in 4% low-melting-point agarose to preserve as much as possible their three-dimensional architecture.
 
-## Isolation of freshly isolated bone-marrow-derived megakaryocytes
+### Isolation of freshly isolated bone-marrow-derived megakaryocytes
 
 Bone marrow megakaryocytes were dissociated using a 21 G needle and filtered through a 40 µm Millipore filter. The filter was then rinsed in DMEM +1% fetal bovine serum, and the isolated megakaryocytes were adjusted to 300 cells/ml in the same medium.
 
-## 2D confocal microscopy on bone marrow cryosections
+#### 2D confocal microscopy on bone marrow cryosections
 
 This study explores the interactions between megakaryocytes and their immediate ECM microenvironment. Ultrathin cryosections were used for their superior axial resolution, offering a two- to threefold improvement over conventional confocal microscopy, which facilitates analysis of signal superposition. Cryosections from WT extruded bone marrow were used to study the ECM composition and distribution of sinusoid-associated megakaryocytes. Bone marrow was fixed in a mix of 2% paraformaldehyde-0.2 % glutaraldehyde in 0.2 M sodium cacodylate buffer for 1 hr. The fixed samples were infiltrated with 2.3 M sucrose and frozen in liquid nitrogen. Ultrathin cryosections of 250 nm were obtained at −110 °C with a LEICA Ultracut UCT cryo-ultramicrotome (Leica Microsystems). For immunofluorescence staining, cryosections were labeled with primary antibodies and conjugated-secondary antibodies of the appropriate species and DAPI, as reported in Table 1. They were examined under a confocal microscope (TCS SP8, Leica) using the 63 x objective with a numerical zoom of 4 (pixel size: 0.09 µm). The bone marrow specimens from three mice were examined under identical conditions, using constant exposure and the same irrelevant antibodies. No fluorescence was detected using isotype-specific control IgG.
 
-## 3D confocal analysis on bone marrow vibratome sections
+#### 3D confocal analysis on bone marrow vibratome sections
 
 Whole-mount bone marrow preparations were used to investigate (i) the localization of megakaryocytes in the bone marrow and the lung and (ii) the spatial organization of ECM around sinusoid-associated megakaryocytes. Megakaryocytes were classified based on their maturation stage: stage I (presence of granules, no clear DMS visible), stage II (developing DMS not yet organized), and stage III (DMS organized in platelet territories). Mice from each genotype were analyzed and image acquisitions were performed in a blinded manner.
 
@@ -154,17 +441,17 @@ Image processing to perform quantitative analyses of fluorescence profiles and f
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/104963/elife-104963-fig8-v1.jpg)
 
-## Intravital imaging
+#### Intravital imaging
 
 Pf4cre and Itgb1-/-/Itgb3-/- mice underwent intravital imaging. To visualize megakaryocytes and sinusoids, an AF488-conjugated anti-GPIX antibody derivative and Texas Red dextran 70 kDa were intravenously injected, respectively. The skull bone marrow was observed using two-photon microscopy, following the procedure described in reference (Bornert et al., 2021). The anesthetized mice were monitored for a maximum of 6 hr, during which one to four proplatelets were recorded. Two regions of interest were analyzed, each composed of three images (xyz = 1320 µm*1320 µm*100 µm, total volume/ROI = 0.17 µm3, pixel size = 0.867 µm at obj HC FLUOTAR L 25 x/0.95 WATER zoom x1). A total of 130 megakaryocytes Pf4cre vs. 130 megakaryocytes Itgb1-/-/Itgb3-/- were analyzed and the results are expressed in %.
 
-## Electron microscopy
+#### Electron microscopy
 
 For Transmission electron microscopy, bone marrow was fixed in 2.5% glutaraldehyde for 1 hr and embedded in Epon as described (Scandola et al., 2021). Transversal thin sections of the entire bone marrow were cut and examined under a JEOL TEM (120 kV). The number of megakaryocytes was counted per surface unit (s.u., 12,945 μm2). The observations from three independent mice were averaged.
 
 For SEM, native bone marrow megakaryocytes were allowed to adhere to a surface coated with 300 µg/ml fibronectin, 100 µg/ml fibrinogen, or 50 µg/ml laminin 511. After gentle agitation to detach non-adherent cells, the remaining adherent cells were fixed in 2.5% glutaraldehyde for 1 hr, dehydrated, attached to stubs, sputter coated, and examined under a Helios NanoLab microscope at 5kV (ThermoFisher, Eindhoven, The Netherlands). Adherent megakaryocytes were counted and classified as spreading or round cells. The results were obtained by the average from three independent mice.
 
-## Flow cytometry
+#### Flow cytometry
 
 Flow cytometry was used to investigate (i) megakaryocyte ploidy, (ii) intact megakaryocytes in the blood, and (iii) platelet activation.
 
@@ -174,22 +461,22 @@ For detection of intact megakaryocytes in the blood, red blood cell lysis was pe
 
 For platelet activation studies, whole blood was collected from the tail vein and anticoagulated with hirudin (200 U/ml). Platelets were activated or not with collagen-related peptide (CRP, 40 µg/ml) and TRAP (4 mM) for 15 min at 37 °C and stained with FITC-labeled or 647-labeled rat anti-mouse GPIbβ and APC-labeled rat anti-mouse P-selectin or PE-labeled rat anti-mouse activated-αIIbβ3 antibodies. Fluorescence was quantified using an LSRFortessa cell analyzer (BD Biosciences) and BD FACSDiva software. A total of 20,000 events were analyzed for each sample.
 
-## Microfluidic experiments
+#### Microfluidic experiments
 
 The PDMS microfluidic chamber channels were assembled and connected to a peristaltic pump, as described (Osmani et al., 2021). The channels were washed with PBS for 5 min and coated with laminin 511 (50 µg/ml), fibrillar fibronectin (300 µg/ml), or fibrinogen (100 µg/ml) overnight at 4 °C, followed by a blocking stage with human serum albumin (1 %) for 30 min at RT. To produce fibrillar fibronectin, we use the method of mechanical stretching as described in Maurer et al., 2015. Freshly isolated megakaryocytes were seeded at a concentration of 30 cells/µl per channel and incubated for 15 min – 45 min at 37 °C with 5% CO2. In previous work, the seeding time was determined with capture efficiencies of over 80% for Pf4cre megakaryocytes (Figure 4—figure supplement 1B). The channels were then perfused under a flow of 300 µm/s and the megakaryocyte behavior was monitored in real-time for 1 min, using a Leica DMI8 microscope (x20) equipped with a CMOS Camera (Hamamatsu ORCA fusion). Megakaryocyte capture yield was measured by quantifying the number of adherent megakaryocytes before and after flow induction (expressed as a percentage) on an average of 20 stage positions (n=50 megakaryocytes analyzed/test). The results are an average of three independent experiments, and the values were expressed as a mean ± sem.
 
-## Bone marrow explants
+#### Bone marrow explants
 
 Preparation of bone marrow explants was performed as described in Guinard et al., 2021 to investigate proplatelet formation. For investigating megakaryocyte emigration, bone marrows were flushed from femurs of Pf4cre and Itgb1-/-/Itgb3-/-; Lama4+/+ and Lama4-/-; as well as from DMSO- and B+I-treated mice, and ten 0.5-mm-thick sections were placed in an incubation chamber. Megakaryocytes at the periphery of the explants were counted under an inverted phase contrast microscope coupled to a video camera (DMI8 Leica microscope, 40 x objective). A motorized multiposition stage (in x, y, z) was used, and an average of 100 stages positions showing megakaryocytes was followed. Results are expressed as the number of total emigrating megakaryocytes at the indicated time points. In each case, a minimum of six independent experiments were performed. Mice from each genotype were analyzed and image acquisitions were performed in a blinded manner.
 
-## Effects of MMP inhibition
+#### Effects of MMP inhibition
 
 Batimastat plus ilomastat treatment was tested for their potential impact on the ECM in the microenvironment of the megakaryocyte vascular niche. Mice were treated daily with a protease inhibitor cocktail (Batimastat at 30 mg/kg+Ilomastat at 50 mg/kg) or vehicle (DMSO) for 7 consecutive days (Gui et al., 2018; Pielecka-Fortuna et al., 2015). The platelet count was monitored every 2 days. On the eighth day, the mice were sacrificed, and their bone marrow was collected for analysis of ECM organization and megakaryocyte behavior, as explained in the 3D confocal analysis on bone marrow vibratome sections.
 
-## Gelatin degradation assay
+#### Gelatin degradation assay
 
 Coverslips were coated with Oregon green gelatin and fixed with 0.5% glutaraldehyde for 20 min at RT. After washing three times with PBS, cells were seeded on coated coverslips and incubated for 6 hr before fixation and staining.
 
-## Statistics
+### Statistics
 
 All values are reported as the mean ± sem. n=number of megakaryocytes studied. Statistical analyses were performed with PrismGraphpad software (La Jolla, CA, USA). For group comparison, data were tested for Gaussian distribution. Then, a Student t-test (Gaussian) or Mann-Whitney U test (non-Gaussian) was used to compare individual groups; multiple groups were compared by one-way ANOVA followed by Bonferroni post-test or by a non-parametric Kruskal-Wallis test, with a threshold of significance of 5%. p-Values <0.05 were considered statistically significant. *p<0.05; **p<0.01; ***p<0.001.

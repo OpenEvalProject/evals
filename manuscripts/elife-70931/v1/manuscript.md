@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Gene regulatory networks allow organisms to generate coordinated responses to environmental challenges. In bacteria, regulatory networks are re-wired and re-purposed during evolution, though the relationship between selection pressures and evolutionary change is poorly understood. In this study, we discover that the early evolutionary response of Escherichia coli to the antibiotic trimethoprim involves derepression of PhoPQ signaling, an Mg 2+ -sensitive two-component system, by inactivation of the MgrB feedback-regulatory protein. We report that derepression of PhoPQ confers trimethoprim-tolerance to E. coli by hitherto unrecognized transcriptional upregulation of dihydrofolate reductase (DHFR), target of trimethoprim. As a result, mutations in mgrB precede and facilitate the evolution of drug resistance. Using laboratory evolution, genome sequencing, and mutation re-construction, we show that populations of E. coli challenged with trimethoprim are faced with the evolutionary ‘choice’ of transitioning from tolerant to resistant by mutations in DHFR, or compensating for the fitness costs of PhoPQ derepression by inactivating the RpoS sigma factor, itself a PhoPQ-target. Outcomes at this evolutionary branch-point are determined by the strength of antibiotic selection, such that high pressures favor resistance, while low pressures favor cost compensation. Our results relate evolutionary changes in bacterial gene regulatory networks to strength of selection and provide mechanistic evidence to substantiate this link.
+Gene regulatory networks allow organisms to generate coordinated responses to environmental challenges. In bacteria, regulatory networks are re-wired and re-purposed during evolution, though the relationship between selection pressures and evolutionary change is poorly understood. In this study, we discover that the early evolutionary response of Escherichia coli to the antibiotic trimethoprim involves derepression of PhoPQ signaling, an Mg2+-sensitive two-component system, by inactivation of the MgrB feedback-regulatory protein. We report that derepression of PhoPQ confers trimethoprim-tolerance to E. coli by hitherto unrecognized transcriptional upregulation of dihydrofolate reductase (DHFR), target of trimethoprim. As a result, mutations in mgrB precede and facilitate the evolution of drug resistance. Using laboratory evolution, genome sequencing, and mutation re-construction, we show that populations of E. coli challenged with trimethoprim are faced with the evolutionary ‘choice’ of transitioning from tolerant to resistant by mutations in DHFR, or compensating for the fitness costs of PhoPQ derepression by inactivating the RpoS sigma factor, itself a PhoPQ-target. Outcomes at this evolutionary branch-point are determined by the strength of antibiotic selection, such that high pressures favor resistance, while low pressures favor cost compensation. Our results relate evolutionary changes in bacterial gene regulatory networks to strength of selection and provide mechanistic evidence to substantiate this link.
 
 ## Introduction
 
@@ -31,13 +31,153 @@ Current understanding of the evolution of two-component signaling systems and th
 
 ## Results
 
-## Mutation at the mgrB locus rather than folA is an early evolutionary response of E. coli challenged with trimethoprim
+### Mutation at the mgrB locus rather than folA is an early evolutionary response of E. coli challenged with trimethoprim
 
 We had earlier evolved trimethoprim-resistance in E. coli K-12 MG1655 by serially passaging bacteria in drug-supplemented medium for ~25 generations (Matange et al., 2018). From these experiments, 10 independently evolved trimethoprim-resistant isolates (designated TMPR1-10), with drug IC50 ranging from 6- to 300-fold over wild-type were obtained (Figure 1A). Unexpectedly, only 3 of the 10 trimethoprim-resistant isolates (TMPR 1, 3, and 5) had mutations in the coding region of the folA gene, which suggested that early adaptation to trimethoprim did not necessarily involve mutations in the drug target itself (Figure 1A). We, therefore, sequenced the genomes of 5 of the 10 isolates (TMPR1–5) to identify other genes that may contribute to trimethoprim resistance. Only one locus, coding for the mgrB feedback regulator protein, consistently harbored mutations in all five isolates (Table 1). Four of the five isolates (TMPR1–4) harbored IS-element insertions in the promoter of mgrB between the PhoP-binding site and the translational start site of the gene (Figure 1A, Table 1). Similar insertions of IS-elements in the promoter of mgrB attenuate its expression levels in other bacteria such as Klebsiella (Pitt et al., 2018; Uz Zaman et al., 2018). The fifth isolate (TMPR5) harbored a single nucleotide deletion in the coding region of mgrB that resulted in a frame-shift and altered sequence of the C-terminal domain of the protein (Figure 1A, Table 1). The C-terminus of MgrB is necessary for its inhibitory activity against PhoQ and mutations in this region alter the ability of MgrB to bind to PhoQ (Yadavalli et al., 2020). Sanger sequencing of the mgrB gene and its promoter from isolates TMPR6–10 confirmed the presence of similar mutations in these bacteria as well (Figure 1A), suggesting that lower MgrB expression or activity may be advantageous for E. coli in the presence of trimethoprim.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left panel. Trimethoprim IC50 values of resistant isolates derived from E. coli K-12 MG1655 (wild-type, gray) by laboratory evolution. Mean IC50 values from three independent measurements are plotted. Isolates without mutations in the folA locus are represented by black circles. Isolates with mutations in folA are represented as red circles, and the identified mutation is indicated. Right panel. Diagrammatic representation of the mgrB gene and its promoter showing mutations identified in trimethoprim resistant isolates TMPR1–5 by genome sequencing or Sanger sequencing from TMPR6–10. The PhoP-binding site in the mgrB promoter is shown as a black box. Location of each mutation is calculated as base pairs from the translation start site. (B) Growth of wild-type (black) and ΔmgrB (gray) E. coli in varying concentrations of trimethoprim, normalized to growth in drug-free medium. Each data point represents mean± SD from three independent experiments. IC50 values represent mean± SEM obtained after curve fitting. (C) IC50 values of trimethoprim for wild-type or mutant E. coli. Each bar represents mean± SEM from three independent measurements. Statistical significance was tested using a Student’s t-test. A p-value<0.05 was considered significant (shown), while p-values≥0.05 were considered non-significant (ns). (D) Competition between E. coli wild-type and ΔmgrB in increasing concentrations of trimethoprim starting at the indicated mixing ratios. The fraction of mutant bacteria (CFUs of mutant/total CFUs) in each mixed culture after ~9 generations of competition are plotted (mean± SD from three independent experiments). Results of competition between wild-type and ΔmgrBΔrpoS or ΔmgrBΔphoP strains at an initial mixing ratio of 100:1 are also shown. (E) Left panel. MIC values of trimethoprim for wild-type and E. coli ΔmgrB calculated from E-tests. Right panel. Colony formation of wild-type and ΔmgrB on solid media supplemented with indicated concentrations of trimethoprim. Each point represents mean± SD from three independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig1-figsupp1-v1.jpg)
+
+**Table 1.**
+ Summary of mutations in trimethoprim resistant isolates TMPR1–5 identified by genome sequencing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Locus</th>
+      <th>Description</th>
+      <th>TMPR1</th>
+      <th>TMPR2</th>
+      <th>TMPR3</th>
+      <th>TMPR4</th>
+      <th>TMPR5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">Single nucleotide changes</td>
+    </tr>
+    <tr>
+      <td>folA</td>
+      <td>Dihydrofolate reductase</td>
+      <td>Asp27Glu</td>
+      <td>–</td>
+      <td>Trp30Gly</td>
+      <td>–</td>
+      <td>Trp30Arg</td>
+    </tr>
+    <tr>
+      <td>ycaQ</td>
+      <td>Inter-strand DNA crosslink repair glycosylase</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Trp71*</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>yagF</td>
+      <td>D-xylonate dehydratase</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Ser557Pro</td>
+    </tr>
+    <tr>
+      <td>yagH</td>
+      <td>Putative xylosidase/arabinosidase</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Val397Met</td>
+    </tr>
+    <tr>
+      <td>mgrB</td>
+      <td>PhoQ kinase inhibitor</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Deletion+ 100::ΔA</td>
+    </tr>
+    <tr>
+      <td>hexR</td>
+      <td>DNA-binding transcriptional repressor</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Ala143Val</td>
+    </tr>
+    <tr>
+      <td>deoA</td>
+      <td>Thymidine phosphorylase</td>
+      <td>Insertion+ 359::A</td>
+      <td>–</td>
+      <td>Insertion+ 375::A</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>dnaA</td>
+      <td>Chromosomal replication initiator protein</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Asp280Gly</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td colspan="7">Insertion elements and large rearrangements</td>
+    </tr>
+    <tr>
+      <td>mcrC</td>
+      <td>5-methylcytosine-specific restriction enzyme subunit</td>
+      <td>–</td>
+      <td>–</td>
+      <td>+ 969::IS1A</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ybcM</td>
+      <td>Putative DNA-binding transcriptional regulator</td>
+      <td>+ 493::IS1A</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mgrB</td>
+      <td>PhoQ kinase inhibitor</td>
+      <td>–23::IS1A(772 bp insertion)</td>
+      <td>–29::IS1A(772 bp insertion)</td>
+      <td>–46::IS5( ~ 1100 bp insertion)</td>
+      <td>–21::IS1A(772 bp insertion)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Partial genome duplication</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>2×(~1–7,00,000)</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
 We tested this hypothesis using an independently generated ΔmgrB strain and found that loss of MgrB enhanced trimethoprim IC50 by ~3-fold (Figure 1B and C). Thus, mutation-driven loss of mgrB, rather than mutations in the folA gene, was the predominant early adaptive change in E. coli challenged with trimethoprim.
 
-## Loss of mgrB confers trimethoprim tolerance by PhoP-dependent upregulation of DHFR expression
+### Loss of mgrB confers trimethoprim tolerance by PhoP-dependent upregulation of DHFR expression
 
 To better understand how loss of mgrB reduced the effectiveness of trimethoprim against E. coli, we further characterized the mgrB knock-out strain. E. coli ΔmgrB had lower relative fitness than wild-type in antibiotic-free media (wΔmgrB=0.86±0.12). However, sub-inhibitory concentration (300 ng/ml) trimethoprim in growth media enhanced relative fitness of the mutant (wΔmgrB=1.4±0.08). Concomitantly, E. coli ΔmgrB was selected over wild-type in co-cultures when trimethoprim was added to growth media. The competitive advantage of E. coli ΔmgrB was apparent even when mixing ratios were biased in favor of wild-type (Figure 1D).
 
@@ -47,23 +187,47 @@ The primary role of the MgrB protein in E. coli is to attenuate PhoPQ signaling 
 
 To identify the target of PhoP that led to trimethoprim-tolerance, we turned to the transcriptomics data published by Xu et al., 2019 that compared gene expression profiles of wild-type and mgrB-deficient E. coli. Among over 500 genes upregulated in mgrB-deficient E. coli, 97 are known targets of RpoS and hence could be excluded (Figure 2—figure supplement 1). Curiously, folA transcript levels were reported to be enhanced by ~3-fold in an mgrB-deficient strain (Xu et al., 2019). The folA gene codes for DHFR, target of trimethoprim, and its overexpression results in trimethoprim resistance (Flensburg and Sköld, 1987). We found that DHFR protein levels were indeed elevated in an mgrB knockout strain (Figure 2A). Further, DHFR levels could be lowered in the mgrB-knockout by deletion of phoP or phoQ, but not rpoS or iraM (Figure 2A). The increase in DHFR levels was due to greater activity of the folA promoter in E. coli ΔmgrB compared to wild-type (Figure 2B and C), and this too was phoP-dependent but rpoS-independent (Figure 2C). Importantly, the folA promoter retained trimethoprim-stimulation in the mgrB-knockout (Figure 2C). The folA promoter is not a known target for PhoP, and does not harbor sequences similar to the PhoP binding site. Consequently, we were unable to detect direct binding of PhoP to the folA promoter in vitro by gel shift assays (Figure 2—figure supplement 2). Thus, the enhancement of folA expression by PhoP was most probably an indirect effect.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig2-v1.jpg)
+
+**Figure 2.:** (A) Lysates (5 µg total protein) of wild-type or mutant E. coli were subjected to immunoblotting using anti-DHFR polyclonal antibody. FtsZ was used as a loading control. Data shown are representative of three independent replicates. Fold change in expression level of DHFR relative to wild-type (normalized to 1) was calculated by quantitating band intensities and normalizing to FtsZ. Values shown are mean± SD from three independent experiments. (B) Activity of the folA promoter (PfolA) in E. coli wild-type or ΔmgrB monitored over growth using a GFP reporter gene (arbitrary units, A.U.). Each point represents mean± SD from three replicates. (C) Peak fluorescence normalized to optical density for indicated strains harboring the Pfol-GFP reporter plasmid. Mean± SD from three independent experiments is plotted. Statistical significance was tested using the Student’s t-test and a p-value of <0.05 was considered significant (p-value indicated). Promoter activity was measured in drug-free medium or in the presence of 300 ng/ml trimethoprim. (D) Lysates (5 µg total protein) of E. coli wild-type or trimethoprim resistant isolates (TMPR1–10) were subjected to immunoblotting using anti-DHFR polyclonal antibody. FtsZ was used as a loading control. Data shown are representative of three independent replicates. Fold change in expression level of DHFR relative to wild-type (normalized to 1) was calculated by quantitating band intensities and normalizing to FtsZ. Values shown are mean± SD from three independent experiments. (E) Lysates (5 µg total protein) of trimethoprim-resistant isolates (TMPR1–5) and their ΔphoP derivatives were subjected to immunoblotting using anti-DHFR polyclonal antibody. FtsZ was used as a loading control. Data shown are representative of three independent replicates. Reduction in expression level of DHFR upon deletion of phoP was calculated by quantitating band intensities and normalizing to FtsZ. Percent reduction value shown is mean± SD from three independent experiments. DHFR, dihydrofolate reductase.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Transcriptomic data for E. coli ΔmgrB was taken from Xu et al., 2019. Area of each of the circles in the Venn diagram is proportional to the number of genes in that set. PhoP and RpoS regulated genes were determined using RegulonDB (Gama-Castro et al., 2016). Representative genes or those relevant to this study and their level of upregulation are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Promoter of mgrB (PmgrB) was used as positive control (Yamamoto et al., 2002). Sequences of the two promoters are shown. The probe consisted of 60-mer oligonucleotides (underlined) with biotinylation at the 5′-end. The amounts of purified PhoP-P, labeled and unlabeled competitor used for each reaction are indicated. Positions of free and shifted probes are indicated. No shift was detectable for PfolA.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Anti-FtsZ was used as a loading control. DHFR, dihydrofolate reductase.
+
 In line with higher expression of DHFR in mgrB-deficient E. coli, 9 of the 10 trimethoprim-resistant isolates (TMPR1–2, 4–10) showed elevated DHFR protein levels (Figure 2D). The only isolate that did not (TMPR3), harbored the W30G mutation in folA, which we have shown earlier to result in lower steady-state levels of DHFR (Matange et al., 2018; Matange, 2020). Further, deletion of phoP resulted in lower expression of DHFR in TMPR1–5 (Figure 2E). These data demonstrated that loss of mgrB conferred trimethoprim tolerance in E. coli by enhancing DHFR protein levels, through PhoP-dependent, RpoS-independent upregulation of the folA promoter.
 
-## Derepression of PhoPQ facilitates resistance evolution by altering the fitness landscape of folA mutations
+### Derepression of PhoPQ facilitates resistance evolution by altering the fitness landscape of folA mutations
 
 In addition to mgrB mutations, isolates TMPR1, 3, and 5 harbored mutations in folA (Table 1). Likewise, TMPR4 harbored a large genomic duplication encompassing the folA gene along with other genes that may confer trimethoprim resistance (Table 1). To assess the contribution of loss of mgrB to the phenotypes of these isolates, we tested trimethoprim MIC and IC50 of ΔphoP derivatives of TMPR1–5. Remarkably, loss of phoP greatly reduced the MIC of trimethoprim for all five isolates (Figure 3A). TMPR2 and 4 that did not harbor mutations in folA were completely re-sensitized to trimethoprim by phoP deletion (Figure 3A and B). TMPR1, 3, and 5, which harbored mutations in folA retained some trimethoprim-resistance after deletion of phoP, but with close to tenfold reduction in drug IC50 (Figure 3B). Thus, even though loss of mgrB itself did not appreciably alter drug MIC, it significantly potentiated the phenotypes of folA mutations in trimethoprim-resistant E. coli.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig3-v1.jpg)
 
-**Figure 3.:** mgrB and folA mutations alters the fitness landscape of trimethoprim resistant Escherichia coli.(A) MIC values of trimethoprim for resistant isolates (TMPR1–5) and their ΔphoP derivatives calculated from E-tests. (B) IC50 values of trimethoprim from resistant isolates (TMPR1–5) and their ΔphoP derivatives. Mean± SEM from three independent experiments is plotted. (C, D) Fitness landscape of trimethoprim resistant isolates TMPR1, 3, and 5 (C) or their ΔphoP derivatives (D) compared with trimethoprim tolerant E. coli ΔmgrB. Competitive quotients were calculated by competition with E. coli-GFP (wild-type E. coli expressing GFP) in varying concentrations of trimethoprim. Higher values indicate higher fitness relative to wild-type. Representative data from three replicates are shown. (E) Effect of overexpression of DHFR on IC50 of trimethoprim monitored by expression of wild-type or mutant DHFR from an IPTG-inducible promoter. Upper panel. Immunoblots showing overexpression of all DHFR alleles tested. The fold increase in DHFR expression level upon addition of IPTG was calculated based on band intensities. Lower panel. IC50 values of trimethoprim for various mutants with and without inducer are plotted (mean± SD from three replicates). The fold increase in IC50 in the presence of inducer is indicated for each mutant. DHFR, dihydrofolate reductase; MIC, minimum inhibitory concentration.
+**Figure 3.:** (A) MIC values of trimethoprim for resistant isolates (TMPR1–5) and their ΔphoP derivatives calculated from E-tests. (B) IC50 values of trimethoprim from resistant isolates (TMPR1–5) and their ΔphoP derivatives. Mean± SEM from three independent experiments is plotted. (C, D) Fitness landscape of trimethoprim resistant isolates TMPR1, 3, and 5 (C) or their ΔphoP derivatives (D) compared with trimethoprim tolerant E. coli ΔmgrB. Competitive quotients were calculated by competition with E. coli-GFP (wild-type E. coli expressing GFP) in varying concentrations of trimethoprim. Higher values indicate higher fitness relative to wild-type. Representative data from three replicates are shown. (E) Effect of overexpression of DHFR on IC50 of trimethoprim monitored by expression of wild-type or mutant DHFR from an IPTG-inducible promoter. Upper panel. Immunoblots showing overexpression of all DHFR alleles tested. The fold increase in DHFR expression level upon addition of IPTG was calculated based on band intensities. Lower panel. IC50 values of trimethoprim for various mutants with and without inducer are plotted (mean± SD from three replicates). The fold increase in IC50 in the presence of inducer is indicated for each mutant. DHFR, dihydrofolate reductase; MIC, minimum inhibitory concentration.
 
 The above result prompted us to ask whether mutation at mgrB influenced the selection dynamics of trimethoprim resistance in E. coli. The genetic constitution of antibiotic-resistant bacteria is known to be influenced by drug concentration (Matange et al., 2019; Wistrand-Yuen et al., 2018; Zhou et al., 2000). Hence, we mapped the fitness landscape of drug-tolerant (E. coli ΔmgrB) and drug-resistant (TMPR1, 3, and 5) strains across different concentrations of trimethoprim (Figure 3C). Each of the above strains was allowed to compete against a GFP-expressing derivative of E. coli wild-type (E. coli-GFP). Since GFP fluorescence of the mixed culture would indicate the fractional abundance of E. coli-GFP in the population, we used it as a read-out of relative fitness of the test strains (designated as competitive quotient; a value of 0 indicated no change in fitness relative to wild-type, >0 signified higher relative fitness, <0 signified reduced relative fitness). Over the entire range of trimethoprim concentrations used by us, TMPR1, 3, and 5 performed better than ΔmgrB alone. This difference was most pronounced at concentrations that approached the MIC value for the wild-type. Next, we asked how ΔphoP derivatives of TMPR1, 3, and 5 would perform in a similar assay (Figure 3D). Interestingly, ΔmgrB was fitter than ΔphoP derivatives of TMPR1, 3, and 5 across all concentrations of trimethoprim tested by us. These results explained why mgrB mutations were the predominant early adaptive event in our selection experiments and indicated that resistance-conferring DHFR mutations were likely to be selected only after PhoPQ signaling had been derepressed.
 
 The above experiments showed that mutations in folA and mgrB had a synergistic effect on the phenotype of trimethoprim-resistant E. coli. We had shown earlier that several mutations in DHFR, notably those at Trp30, are detrimental for its stability and result in aggregation, proteolysis, and reduced levels (Matange et al., 2018). Therefore, we hypothesized that enhanced expression due to PhoPQ derepression could compensate for loss of mutant DHFRs due to misfolding. To test this, we expressed wild-type DHFR or its W30G/W30R mutant alleles from an IPTG-inducible promoter and checked the impact that expression level had on drug IC50 (Figure 3E). While trimethoprim IC50 was enhanced by ~3-fold upon overproduction of wild-type DHFR, it was potentiated by ×16- and ×8-fold for W30G and W30R DHFR alleles, respectively. We performed the same assay with W30F and W30L mutant alleles of DHFR. These alleles have comparable in vivo sensitivity to trimethoprim, but only W30L destabilizes the protein (Matange et al., 2018). Overexpression affected the phenotype of W30F to a similar extent as wild-type DHFR, while the IC50 of trimethoprim for E. coli expressing W30L DHFR was stimulated ×8-fold upon overexpression (Figure 3E). Thus, mutant DHFR alleles resulted in higher gains in drug IC50 upon overexpression, explaining the synergy between mgrB and folA mutations, and this was related to their destabilizing effects on DHFR.
 
-## Cost compensation drives evolution of the PhoPQ transcriptional network during long-term antibiotic exposure
+### Cost compensation drives evolution of the PhoPQ transcriptional network during long-term antibiotic exposure
 
 Having established a new mechanism for trimethoprim tolerance, and its effect as a potentiator of trimethoprim resistance, we next sought to understand the long-term evolutionary consequences of this adaptation. We established three lineages of E. coli evolving in high concentration of trimethoprim (300 ng/ml, ×0.5-fold MIC) for ~350 generations (designated WTMP300 A, B, and C). In agreement with results from short-term trimethoprim exposures (Figure 1A, Table 1), mutations in the mgrB gene or its promoter swept through all three lineages within the first ~20 generations of antibiotic exposure (Supplementary file 1). Subsequently, at this high drug pressure, there was rapid enrichment of resistant bacteria that were eventually fixed in all three lineages (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig4-v1.jpg)
+
+**Figure 4.:** (A) Titre of trimethoprim-resistant bacteria in WTMP300 lineages A, B and C during the course of evolution. Each data point represents mean± SD from two to three measurements. The typical carrying capacity of E. coli growing in drug-free medium (2–3×109 CFU/ml) is indicated with a dotted line. (B) Competitive quotient of WTMP300 lineages (A–C) in drug-free or trimethoprim supplemented media was monitored by competition with E. coli-GFP (wild-type E. coli expressing GFP). Higher values of competitive quotient indicate higher fitness relative to the wild-type ancestor. Trimethoprim was used at 300 ng/ml. Each point represents mean± SD from two to three measurements. (C) Schematic representation of genomic changes associated with early and late adaptation to trimethoprim in WTMP300 lineage A (see Supplementary file 1 for complete list). (D) Congo red staining of WTMP300 lineages A, B, and C to verify loss of active RpoS. Controls (wild-type and E. coli ΔrpoS) are shown for reference. Representative data from three replicates are shown. (E) Sanger sequencing of resistant isolates from lineages B and C confirming the accumulation of mutations in the rpoS gene.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Each spot represents mean IC50 from two independent measurements for an individual isolate. Mean and SEM of 4–6 isolates from each time point are shown. Ancestral IC50 (wild-type) from three replicate measurements and mean± SEM are shown.
 
 Next, we tracked adaptation of the evolving lineages to trimethoprim by competing them against E. coli-GFP. For all three lineages, competitive quotient rose steeply initially and then plateaued (Figure 4B). The initial rapid phase of adaptation was concordant with enrichment of trimethoprim-resistant bacteria (Figure 4A and B). Interestingly, IC50 of trimethoprim for resistant isolates from all three lineages plateaued early during evolution and did not change significantly over time (Figure 4—figure supplement 1). Thus, once resistance had evolved, its fixation in the population did not require further gains in drug MIC/IC50. On the other hand, competitive quotients of evolving populations in trimethoprim-free media initially decreased (Figure 4B), most likely due to the costs of mutations at the mgrB locus (Figure 1D). However, all three lineages recovered over time such that at 350 generations of evolution their relative fitness was similar to or slightly better than the ancestor (Figure 4B). Taken together, we interpreted these results to mean that trimethoprim-resistant bacteria enhanced their fitness over long-term evolution by amelioration of fitness costs, rather than enhancement in drug IC50.
 
@@ -73,19 +237,27 @@ Loss of RpoS, we had found, did not itself confer trimethoprim resistance (Figur
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig5-v1.jpg)
 
-**Figure 5.:** mgrB-deficiency by loss of RpoS.(A) Selection coefficient of Escherichia coli ΔrpoS relative to wild-type (gray bars), E. coli ΔmgrBΔrpoS relative to E. coli ΔmgrB (black bars), or indicated mutants in the ΔmgrB background relative to E. coli ΔmgrB (colored bars). Appropriate strains were allowed to compete in the absence or presence of trimethoprim at the indicated concentrations for ~9 generations. Data represent mean± SEM from three independent measurements. (B) Schematic representation of adaptation of E. coli to high trimethoprim over long-term evolution. Genetic changes and mechanisms associated with sensitive, tolerant, resistant, and cost-compensated phenotypes are shown. The evolutionary sequence is indicated by the direction of arrows. Activating interactions are shown by green arrows, while inhibitory interactions are shown by red lines. Strength of each interaction is qualitatively represented by the thickness of arrows. Indirect interactions are shown as discontinuous lines. Phosphorylation is indicated by ‘P.’ Transcriptional changes are indicated by ‘Tx.’ Proteolytic degradation is indicated by ‘X.’ Inactivating mutations are represented by gray text with strikethrough.
+**Figure 5.:** (A) Selection coefficient of Escherichia coli ΔrpoS relative to wild-type (gray bars), E. coli ΔmgrBΔrpoS relative to E. coli ΔmgrB (black bars), or indicated mutants in the ΔmgrB background relative to E. coli ΔmgrB (colored bars). Appropriate strains were allowed to compete in the absence or presence of trimethoprim at the indicated concentrations for ~9 generations. Data represent mean± SEM from three independent measurements. (B) Schematic representation of adaptation of E. coli to high trimethoprim over long-term evolution. Genetic changes and mechanisms associated with sensitive, tolerant, resistant, and cost-compensated phenotypes are shown. The evolutionary sequence is indicated by the direction of arrows. Activating interactions are shown by green arrows, while inhibitory interactions are shown by red lines. Strength of each interaction is qualitatively represented by the thickness of arrows. Indirect interactions are shown as discontinuous lines. Phosphorylation is indicated by ‘P.’ Transcriptional changes are indicated by ‘Tx.’ Proteolytic degradation is indicated by ‘X.’ Inactivating mutations are represented by gray text with strikethrough.
 
-## Strength of antibiotic selection determines the choice of adaptive strategy during the evolution of the PhoPQ-folA-RpoS transcriptional network
+### Strength of antibiotic selection determines the choice of adaptive strategy during the evolution of the PhoPQ-folA-RpoS transcriptional network
 
 Our experiments so far identified two possible strategies available to E. coli for enhancing fitness subsequent to evolving tolerance, that is, resistance and cost compensation. We next asked what motivated the "choice" of strategy that an evolving bacterial population would adopt. Cost compensation is known to allow resistant bacteria to enhance their fitness in drug-free or low antibiotic conditions. Therefore, we argued that antibiotic concentration may determine which adaptive strategy was favored. In order to test this, we mixed tolerant (E. coli ΔmgrB), cost-compensated tolerant (E. coli ΔmgrBΔrpoS), and resistant (TMPR1) strains (initial mixing ratio 98:1:1) and allowed them to compete for ~9 generations in different concentrations of trimethoprim. In the absence of trimethoprim or in low concentrations of the antibiotic, ΔmgrBΔrpoS was strongly enriched over ΔmgrB and TMPR1 (Figure 6A). However, at higher drug concentrations, TMPR1 was favored over its competitors (Figure 6A). This clear dependency on trimethoprim concentration suggested that at low drug pressures, evolutionary outcomes were likely to be biased in favor of cost compensation rather than resistance-evolution.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig6-v1.jpg)
 
-**Figure 6.:** Escherichia coli adapting to low trimethoprim concentrations.(A) Three-strain competition between E. coli ΔmgrB (tolerant), E. coli ΔmgrBΔrpoS (cost-compensated tolerant) and E. coli TMPR1 (resistant). Initial mixing ratio of strains was 98:1:1, respectively. Ratios of strains after ~9 generations of competition at the indicated concentration of trimethoprim are shown. Data are representative of three replicates. (B) Titre of trimethoprim-resistant bacteria in WTMP50 lineages A, B, and C during the course of evolution. Each data point represents mean± SD from two to three measurements. The typical carrying capacity of E. coli growing in drug-free medium (2–3×109 CFU/ml) is indicated with a dotted line. (C) Competitive quotient of WTMP50 lineages A, B, and C in drug-free or trimethoprim supplemented media was monitored by competition with E. coli-GFP (wild-type E. coli expressing GFP). Higher values of competitive quotient indicate higher fitness relative to the wild-type ancestor. Trimethoprim was used at 50 ng/ml. Each point represents mean± SD from two to three measurements. (D) Congo red staining of WTMP50 lineages A, B, and C to verify loss of active RpoS in all lines. Representative data from three replicates are shown. (E) Schematic representation of genomic changes associated with early and late adaptation to trimethoprim in WTMP50 lineage A (see Supplementary file 2 for complete list). Two parallel lineages branching out from tolerant bacteria in the WTMP50 lines are shown.
+**Figure 6.:** (A) Three-strain competition between E. coli ΔmgrB (tolerant), E. coli ΔmgrBΔrpoS (cost-compensated tolerant) and E. coli TMPR1 (resistant). Initial mixing ratio of strains was 98:1:1, respectively. Ratios of strains after ~9 generations of competition at the indicated concentration of trimethoprim are shown. Data are representative of three replicates. (B) Titre of trimethoprim-resistant bacteria in WTMP50 lineages A, B, and C during the course of evolution. Each data point represents mean± SD from two to three measurements. The typical carrying capacity of E. coli growing in drug-free medium (2–3×109 CFU/ml) is indicated with a dotted line. (C) Competitive quotient of WTMP50 lineages A, B, and C in drug-free or trimethoprim supplemented media was monitored by competition with E. coli-GFP (wild-type E. coli expressing GFP). Higher values of competitive quotient indicate higher fitness relative to the wild-type ancestor. Trimethoprim was used at 50 ng/ml. Each point represents mean± SD from two to three measurements. (D) Congo red staining of WTMP50 lineages A, B, and C to verify loss of active RpoS in all lines. Representative data from three replicates are shown. (E) Schematic representation of genomic changes associated with early and late adaptation to trimethoprim in WTMP50 lineage A (see Supplementary file 2 for complete list). Two parallel lineages branching out from tolerant bacteria in the WTMP50 lines are shown.
 
 We empirically tested the above prediction in three replicate lineages of E. coli K-12 MG1655 evolving under low trimethoprim pressure (50 ng/ml, 0.08×MIC, designated WTMP50 A, B, and C). In support of our hypothesis, resistant bacteria did not exceed more than 1% of the population in these lineages for the duration of the experiment (Figure 6B). Indeed, in WTMP50 lineage C, the fraction of resistant bacteria stayed below 0.001% of the total population throughout the experiment (Figure 6B). Gain in relative fitness of WTMP50 lineages over the ancestor was lower than WTMP300, and showed very poor concordance with enrichment of trimethoprim-resistant bacteria over time (Figure 6C). Importantly, like WTMP300, all three WTMP50 lineages got fitter in antibiotic-free medium over time (Figure 6C) and lost RpoS activity (Figure 6D). These data suggested that there were at least two parallel evolving adaptive trajectories in the WTMP50 lines, that is, resistant bacteria, that made up a minority of the population and cost-compensated, tolerant bacteria that made up the majority of the population. Genome sequencing of resistant and tolerant isolates from 147 to 350 generations under selection from WTMP50 lineage A, confirmed that this was indeed the case (Supplementary file 2, Figure 6E). The genetic trajectory of resistant bacteria in WTMP50 was very similar to the WTMP300, in that mutations in folA were acquired before cost-compensatory mutations in rpoS (Supplementary file 2, Figure 6E). On the other hand, tolerant bacteria acquired rpoS mutations earlier during evolution and did not acquire mutations in folA even after long-term antibiotic exposure (Supplementary file 2, Figure 6E). Thus, cost compensation was indeed the preferred strategy for adaptation at lower antibiotic concentrations.
 
 Drug concentrations are generally equated with strength of selection for antibiotic resistance (Andersson and Hughes, 2014; Gullberg et al., 2011). However, selection strength is determined by intrinsic factors as well, such as the genetic background (Matange, 2020; Matange et al., 2019). Therefore, we tested whether the link between selection strength and evolutionary trajectory would hold true in another genetic background. We have shown earlier that Lon protease-deficient E. coli are trimethoprim-tolerant due to a folA-independent, acrAB efflux pump-dependent mechanism (Matange, 2020). For E. coli Δlon, it is expected that 300 ng/ml of trimethoprim would represent a milder selection strength than wild-type. Therefore, we established three lineages of E. coli Δlon that experienced trimethoprim (300 ng/ml, 0.5×MIC, designated LTMP300 A, B, and C) for 350 generations and examined their adaptation over time. At the phenotypic level, LTMP300 lineages resembled WTMP300 in terms of fixation of resistant-bacteria (Figure 7A). However, at the genotypic level there was substantial similarity between LTMP300 and WTMP50 lineages. We found no folA mutations in resistant isolates from the LTMP300 lineage A (Supplementary file 3, Figure 7B). Instead, trimethoprim-resistant bacteria derived from an early time point (147 generations) had already accumulated inactivating mutations in rpoS in addition to mutations in mgrB (Supplementary file 3, Figure 7B). Thus, while the LTMP300 lineages had the genetic signature of evolution at low selection strength, they phenotypically resembled high selection strength. This discrepancy was explained by the fact that Δlon and ΔmgrB showed an additive effect on trimethoprim IC50 (Figure 7C). While loss of mgrB alone resulted in drug tolerance, together with Lon-deficiency it resulted in drug resistance. Importantly, once mgrB mutations were acquired, LTMP300 lineages evolved by compensatory mutations rather than resistance-conferring mutations in folA, similar to WTMP50. These results, therefore, re-iterated the role of selection strength in determining the genetic trajectory followed by E. coli during adaptation to trimethoprim (Figure 7D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig7-v1.jpg)
+
+**Figure 7.:** (A) Titre of trimethoprim-resistant bacteria in LTMP300 lineages A, B, and C during the course of evolution. Each data point represents mean± SD from two to three measurements. The typical carrying capacity of E. coli Δlon growing in drug-free medium (1–2×109 CFU/ml) is indicated with a dotted line. (B) Schematic representation of genomic changes associated with early and late adaptation to trimethoprim in LTMP300 lineage A (see Supplementary file 3 for complete list). (C) Additive effect of Δlon and ΔmgrB mutations on IC50 of trimethoprim for E. coli. Mean± SD values of IC50 from three independent experiments are plotted. (D) Model of adaptation in the PhoPQ-folA-RpoS axis showing dependency of genetic changes and associated phenotypes on drug pressure. Implicated genetic loci are indicated in parentheses. Evolutionary transitions identified in this study are shown as solid black arrows. Possible transitions that are unlikely to occur based on the results from this study are shown as dotted arrows.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/70931/elife-70931-fig7-figsupp2-v1.jpg)
 
 ## Discussion
 
@@ -109,13 +281,189 @@ Finally, the dependency of evolutionary strategy on selection pressure is a key 
 
 ## Materials and methods
 
-## Strains, plasmids, and culture conditions
+### Strains, plasmids, and culture conditions
 
 E. coli K-12 MG1655 or its derivates were cultured in Luria-Bertani broth supplemented with appropriate antibiotics at 37°C with shaking (180–200 rpm). The various strains and plasmids used in this study and their sources are listed in Table 2. Single gene knockouts were obtained from the Keio collection (Baba et al., 2006; Yamamoto et al., 2009) (from the NBRP Resource, National Institute of Genetics, Japan) and moved into the MG1655 background using P1 transduction. For double gene knockouts, antibiotic marker cassette was first removed using Flp recombinase (pCP20-flp plasmid) (Datsenko and Wanner, 2000), and then subjected to P1 transduction.
 
+**Table 2.**
+ List of strains and plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Description</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Escherichia coli wild-type</td>
+      <td>E. coli K-12 MG1655</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>TMPR1–10</td>
+      <td>Trimethoprim resistant derivatives of E. coli wild-type obtained by short term laboratory selection with 300 ng/ml of trimethoprim</td>
+      <td>Matange et al., 2018</td>
+    </tr>
+    <tr>
+      <td>TMPR1–5 ΔphoP::Kan</td>
+      <td>Derivatives of TMPR1–5 in which phoP is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to TMPR1–5 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB::Kan</td>
+      <td>Derivative of E. coli wild-type in which mgrB is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB (unmarked)</td>
+      <td>Derivative of E. coli ΔmgrB::Kan without Kanamycin resistance marker</td>
+      <td>This study.Kanamycin cassette removed using Flp-recombinase</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔphoP::Kan</td>
+      <td>Derivative of E. coli wild-type in which phoP is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB ΔphoP::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which phoP is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔphoQ::Kan</td>
+      <td>Derivative of E. coli wild-type in which phoQ is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB ΔphoQ::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which phoQ is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔiraM::Kan</td>
+      <td>Derivative of E. coli wild-type in which iraM is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB ΔiraM::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which iraM is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔrpoS::Kan</td>
+      <td>Derivative of E. coli wild-type in which rpoS is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB ΔrpoS::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which rpoS is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli-GFP</td>
+      <td>Derivative of E. coli wild-type in which gene coding for GFP is integrated into the genome downstream of the aidB locus</td>
+      <td>Kind gift from Dr. Amrita Hazra (Indian Institute of Science Education and Research, Pune, India)</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔgadX::Kan</td>
+      <td>Derivative of E. coli wild-type in which gadX is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB ΔgadX::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which gadX is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔcbpA::Kan</td>
+      <td>Derivative of E. coli wild-type in which cpbA is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB ΔcbpA::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which cbpA is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli Δsra::Kan</td>
+      <td>Derivative of E. coli wild-type in which sra is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB Δsra::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which sra is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli Δfic::Kan</td>
+      <td>Derivative of E. coli wild-type in which fic is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB Δfic::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which fic is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli Δlon::Kan</td>
+      <td>Derivative of E. coli wild-type in which lon is replaced with a Kanamycin resistance cassette</td>
+      <td>Matange, 2020</td>
+    </tr>
+    <tr>
+      <td>E. coli Δlon::Cmp</td>
+      <td>Derivative of E. coli wild-type in which lon is replaced with a Chloramphenicol resistance cassette</td>
+      <td>Matange, 2020</td>
+    </tr>
+    <tr>
+      <td>E. coli Δlon::Cmp ΔmgrB::Kan</td>
+      <td>Derivative of E. coli ΔmgrB::Kan in which lon is replaced with a Chloramphenicol resistance cassette</td>
+      <td>This study.Mutation moved from E. coli Δlon::Cmp to E. coli ΔmgrB::Kan by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔtyrR::Kan</td>
+      <td>Derivative of E. coli wild-type in which tyrR is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>E. coli ΔmgrB ΔtyrR::Kan</td>
+      <td>Derivative of E. coli ΔmgrB (unmarked) in which tyrR is replaced with a Kanamycin resistance cassette</td>
+      <td>This study.Mutation moved from BW25113 background (Keio collection) to MG1655 by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>Description</td>
+      <td>Source</td>
+    </tr>
+    <tr>
+      <td>pCP20-flp</td>
+      <td>Temperature sensitive plasmid for expression of Flp recombinase</td>
+      <td>Coli Genetic Stock Center (CGSC), Yale University, USA</td>
+    </tr>
+    <tr>
+      <td>pUA66-PfolA-GFP</td>
+      <td>Plasmid harboring GFP under the folA gene promoter. Reporter plasmid for activity of PfolA.</td>
+      <td>Kind gift from Dr. Sanchari Bhattachrya (Harvard University, USA)</td>
+    </tr>
+    <tr>
+      <td>pPRO-DHFR wild-type/W30G/W30R/W30F/W30L</td>
+      <td>Plasmids for overexpression of HexaHis-DHFR and its mutants. DHFR is downstream of an IPTG-inducible promoter.</td>
+      <td>Matange et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pCA24N-PhoP</td>
+      <td>Plasmid for overexpression of HexaHis-PhoP</td>
+      <td>ASKA(−) collection (Kitagawa et al., 2005), NBRP Resource, National Institute of Genetics, Japan</td>
+    </tr>
+  </tbody>
+</table>
+
 Antibiotics used in this study were purchased from Himedia (India) or Sigma-Merck (USA, Germany). Kanamycin (30 µg/ml), chloramphenicol (25 µg/ml), or ampicillin (100 µg/ml) were added to liquid or semi-solid media just before inoculation as required. For isolating trimethoprim-resistant mutants from laboratory evolution experiments Luria-Bertani agar was supplemented with 1 µg/ml trimethoprim.
 
-## Antibiotic sensitivity
+### Antibiotic sensitivity
 
 Trimethoprim sensitivity of gene knockouts or evolved clones was tested using the following methods:
 
@@ -127,45 +475,59 @@ Colony formation assay: Colony-forming efficiency of wild-type or mutant E. coli
 
 Colonization efficiency: Wild-type or mutant E. coli cultures were grown to saturation and then serially diluted. Increasing bacterial CFUs (~104, 105,106, and 107) were added to 1 ml of Luria-Bertani broth supplemented with 0, 500, 1000, or 5000 ng/ml trimethoprim. Cultures were grown for 18 hr at 37°C and optical density (at 600 nm) was measured in a spectrophotometer.
 
-## Relative fitness and competitive growth assays
+### Relative fitness and competitive growth assays
 
 Relative fitness of gene knockouts or evolved clones was estimated using competition assays. Test strains were mixed with ancestral E. coli from saturated mono-cultures (1:1, unless otherwise mentioned) in 1–3 ml Luria-Bertani broth supplemented with trimethoprim at the appropriate concentration. Strains were allowed to compete for ~9 generations.
 
-For 2-strain or 3-strain competition, CFU/ml for each strain was determined by plating serially diluted cultures on antibiotic-free (total CFU) and kanamycin (knock-out strains) or trimethoprim (trimethoprim resistant isolates) supplemented Luria-Bertani agar. Relative fitness (w) or selection coefficient (s) was calculated using the following formulae:w=lnTfTi/ln⁡RfRis=1-w
+For 2-strain or 3-strain competition, CFU/ml for each strain was determined by plating serially diluted cultures on antibiotic-free (total CFU) and kanamycin (knock-out strains) or trimethoprim (trimethoprim resistant isolates) supplemented Luria-Bertani agar. Relative fitness (w) or selection coefficient (s) was calculated using the following formulae:
+
+$$
+w=ln\frac{Tf}{Ti}/ln⁡\frac{Rf}{Ri}
+$$
+
+
+
+$$
+s=1-w
+$$
 
 where Tf and Ti are the final and initial CFU/ml of the test strain and Rf and Ri are the final and initial CFU/ml of the reference strain, respectively.
 
-For competitive quotients, GFP-expressing derivative of E. coli wild-type (E. coli-GFP) was used as the reference strain. At the end of the competition experiment, 200 µl of each mixed culture was aliquoted into a 96-well plate and GFP fluorescence and optical density (at 600 nm) were estimated in a multi-mode plate reader (Varioskan-Thermo Scientific or Enlight-PerkinElmer). For each individual experiment, two controls were maintained, that is, E. coli -GFP alone and control competition between E. coli-GFP and wild-type. GFP fluorescence was normalized to optical density (nGFP) and used to calculate competitive quotient using the following formula:competitivequotient=([nGFP(c)−nGFP(T)]−[nGFP(c)−nGFP(wt)])÷([nGFP(c)−nGFP(wt)])
+For competitive quotients, GFP-expressing derivative of E. coli wild-type (E. coli-GFP) was used as the reference strain. At the end of the competition experiment, 200 µl of each mixed culture was aliquoted into a 96-well plate and GFP fluorescence and optical density (at 600 nm) were estimated in a multi-mode plate reader (Varioskan-Thermo Scientific or Enlight-PerkinElmer). For each individual experiment, two controls were maintained, that is, E. coli -GFP alone and control competition between E. coli-GFP and wild-type. GFP fluorescence was normalized to optical density (nGFP) and used to calculate competitive quotient using the following formula:
+
+$$
+competitivequotient=([nGFP(c)−nGFP(T)]−[nGFP(c)−nGFP(wt)])\div([nGFP(c)−nGFP(wt)])
+$$
 
 where nGFP(c), nGFP(T), and nGFP(wt) are the normalized GFP fluorescence values of E. coli-GFP alone, mixed culture of E. coli -GFP, and test strain, and mixed culture of E. coli-GFP and wild-type, respectively.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting was used to determine the expression level of DHFR in mutants or resistant isolates as described in Matange, 2020. FtsZ was used as a loading control. Anti-DHFR IgG was used at a concentration of 100 ng/ml. Anti-FtsZ (kind gift from Prof. Manjula Reddy, CCMB, India) polyclonal antiserum was used at a dilution of 1:50,000. Band intensities were quantitated in ImageJ software.
 
-## Activity of folA gene promoter
+### Activity of folA gene promoter
 
 The activity of the promoter of folA was measured in wild-type or mutant E. coli using the pUA66-PfolA-GFP reporter plasmid (kind gift from Dr. Sanchari Bhattacharya, Department of Chemistry & Chemical Biology, Harvard University). Plasmid reporter was transformed into appropriate strains and GFP fluorescence was measured over growth in a multi-mode plate reader (Varioskan-Thermo Scientific). For comparison across strains, GFP fluorescence was normalized to optical density.
 
-## Purification of His-tagged PhoP
+### Purification of His-tagged PhoP
 
 Hexa-His tagged PhoP was overexpressed in E. coli K-12 MG1655 and purified using Ni-NTA affinity chromatography. Bacterial strain harboring pCA24N-PhoP plasmid was grown in 50–100 ml Luria-Bertani broth till an optical density of ~0.8. Protein production was induced using IPTG (500 µM). Induction was carried out for 3 hr at 37°C, following which bacterial cultures were centrifuged at 3000×g for 10 min. Bacterial pellets were stored at –80°C until needed. Cells were lysed by sonication in Lysis buffer (Tris-HCl pH 8.0 100 mM, NaCl 100 mM, β-mercaptoethanol 1 mM, and glycerol 10%) and loaded onto a Ni-NTA-agarose resin (Bio-Rad, USA). The resin was washed using Wash buffer (Tris-HCl pH 8.0 100 mM, NaCl 300 mM, β-mercaptoethanol 1 mM, and imidazole 20 mM) and eluted using Elution buffer (Tris-HCl pH 8.0 100 mM, NaCl 100 mM, β-mercaptoethanol 1 mM, imidazole 300 mM, and glycerol 10%). Eluted protein was desalted using PD-10 desalting columns (Sigma-Merck, USA/Germany). Concentration of the desalted protein was estimated using Bradford’s method and the protein was stored at –80°C until needed.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 For electrophoretic mobility shift assay (EMSA), biotinylated probes shown in Figure 2—figure supplement 2 were synthesized (Sigma-Aldrich, USA) and annealed to a final concentration of 25 pmol/µl. They were further diluted to 25 fmol/µl in nuclease-free water. Recombinant purified PhoP protein was phosphorylated in vitro by incubating with 20 mM acetyl-phosphate and 10 mM MgCl2 for 45 min at 37°C. The phosphorylated protein was used immediately for further experiments. For binding and visualization, LightShift Chemilunescent EMSA Kit (Thermo Fisher Scientific, USA) was used as per the manufacturer’s instructions.
 
-## Laboratory evolution of trimethoprim resistance
+### Laboratory evolution of trimethoprim resistance
 
 For long-term laboratory evolution of trimethoprim resistance, replicate lineages (three for each drug concentration/genotype) were established using serial passaging in trimethoprim-supplemented Luria-Bertani broth (2 ml). Bacteria (1 %) were transferred to fresh media every 10–14 hr such that each growth cycle had between six and seven generations. Laboratory evolution was continued for ~350 generations (i.e., 50 growth cycles). Periodically an aliquot of culture from each lineage was mixed with an equal volume of sterile glycerol (50%) and frozen at –80°C for analysis.
 
 The titer of trimethoprim-resistant bacteria from each of the frozen stocks was determined by spotting 10 µl of serially diluted culture on Luria-Bertani agar supplemented with trimethoprim (1 µg/ml). Resistant colonies (3–6) were selected at random for MIC determination or sequencing. Isolation of tolerant bacteria from WTMP50 lineages was done by spotting serially diluted cultures on drug-free medium. Tolerant isolates (3–6) were re-inoculated and their MIC was determined to confirm that they were not resistant to trimethoprim.
 
-## Congo red staining of bacterial colonies
+### Congo red staining of bacterial colonies
 
 Congo red staining was used to determine RpoS activity in evolved lineages. Saturated cultures (10 µl) of appropriate strains were spotted on petri-plates containing YESCA medium (0.1% w/v yeast extract, 1% w/v casein hydrolysate, and 2% w/v agar) supplemented with Congo red (50 µg/ml) and Coomassie Brilliant Blue G-250 (10 µg/ml). Plates were incubated at 28°C to induce Curli fibers and photographed after ~24 hr of growth.
 
-## Sequencing and genome analysis
+### Sequencing and genome analysis
 
 Genomic DNA was extracted from evolved resistant/tolerant isolates using phenol:chloroform:isoamyl alcohol extraction as described in Matange et al., 2019. Extracted gDNA was then cleaned up using QiaAMP DNA purification spin columns (QIAGEN, Germany) and quantitated spectrophotometrically. Integrity of the prepared gDNA was verified by gel electrophoresis before further applications.
 

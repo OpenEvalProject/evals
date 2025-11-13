@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03m2x1q45 Department of Mathematics, University of Arizona Tucson United States
-2. https://ror.org/03m2x1q45 Department of Physics, University of Arizona Tucson United States
-3. https://ror.org/03m2x1q45 Genetics Graduate Interdisciplinary Program, University of Arizona Tucson United States
-4. https://ror.org/03m2x1q45 Department of Ecology and Evolutionary Biology, University of Arizona Tucson United States
-5. https://ror.org/00f54p054 Department of Earth System Science, Stanford University Stanford United States
+1. Department of Mathematics, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+2. Department of Physics, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+3. Genetics Graduate Interdisciplinary Program, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+4. Department of Ecology and Evolutionary Biology, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+5. Department of Earth System Science, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ Species differ from each other in many ways, including mating system, ploidy, sp
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig1-v1.jpg)
 
-**Figure 1.:** .sNAssuming a diploid Wright–Fisher population with s << 1, the probability of fixation of a new mutation  , and the π(N,s)=1−e−s21−e−Nsy-axis is calculated as . πN,-s/(πN,-s+πN,s)s is held constant at a value of 0.001 and N is varied. Results for other small magnitude values of s are superimposable. For small , selection is ineffective at producing codon bias. For large sN, selection is highly effective. For only a relatively narrow range of intermediate values of sN, the degree of codon bias depends quantitatively on sN.sN
+**Figure 1.:** The effectiveness of selection, calculated as the long-term ratio of time spent in fixed deleterious: fixed beneficial allele states given symmetric mutation rates, is a function of the product $sN$.Assuming a diploid Wright–Fisher population with s << 1, the probability of fixation of a new mutation $\pi(N,s)=\frac{1−e^{−\frac{s}{2}}}{1−e^{−Ns}}$ , and the y-axis is calculated as $\piN,-s/(\piN,-s+\piN,s)$. s is held constant at a value of 0.001 and N is varied. Results for other small magnitude values of s are superimposable. For small $sN$, selection is ineffective at producing codon bias. For large $sN$, selection is highly effective. For only a relatively narrow range of intermediate values of $sN$, the degree of codon bias depends quantitatively on $sN$.
 
 This reasoning has been extended to real populations by positing that species have an ‘effective’ population size, Ne (Ohta, 1973). Ne is the census population size of an idealized population that reproduces a property of interest in the focal population. Ne is therefore not a single quantity per population, but instead depends on which property is of interest.
 
@@ -45,9 +45,9 @@ To compare species using CAI, it has been suggested that instead of taking a gen
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig2-v1.jpg)
 
-**Figure 2.:** The Codon Adaptation Index (CAI) attempts to compare the intensity of selection (Figure 1, x-axis) in a subset of genes under strong selection (red areas). Given the narrow range of quantitative dependence of codon bias on  shown in sNFigure 1, our new metric is intended to capture differences in the proportion of the proteome subject to substantial selection (blue areas).
+**Figure 2.:** The Codon Adaptation Index (CAI) attempts to compare the intensity of selection (Figure 1, x-axis) in a subset of genes under strong selection (red areas). Given the narrow range of quantitative dependence of codon bias on $sN$ shown in Figure 1, our new metric is intended to capture differences in the proportion of the proteome subject to substantial selection (blue areas).
 
-Since codon bias varies quantitatively within only a small range of sN (Figure 1), a promising approach is to measure the proportion of sites at which codon adaptation is effective. We posit that more highly adapted species have a higher proportion of both genes and sites subject to effective selection on codon bias (Figure 2; Galtier et al., 2018). Indeed, CAI might also rely in part on variation in the fraction of sites within the reference genes that is subject to effective selection as a function of species (Figure 2, red). Here we take this logic further, considering all sites in a proteome-wide approach. Averaging across the entire proteome provides robustness to shifts in the expression level of or strength of selection on particular genes. The proteome-wide average depends on the fraction of sites whose selection coefficients exceed the ‘drift barrier’ for that particular species (Figure 2, blue threshold).
+Since codon bias varies quantitatively within only a small range of $sN$ (Figure 1), a promising approach is to measure the proportion of sites at which codon adaptation is effective. We posit that more highly adapted species have a higher proportion of both genes and sites subject to effective selection on codon bias (Figure 2; Galtier et al., 2018). Indeed, CAI might also rely in part on variation in the fraction of sites within the reference genes that is subject to effective selection as a function of species (Figure 2, red). Here we take this logic further, considering all sites in a proteome-wide approach. Averaging across the entire proteome provides robustness to shifts in the expression level of or strength of selection on particular genes. The proteome-wide average depends on the fraction of sites whose selection coefficients exceed the ‘drift barrier’ for that particular species (Figure 2, blue threshold).
 
 In estimating the effects of selection, it is critical to control for other causes of codon bias. In particular, species differ in their mutational bias with respect to the proportion of the genome that consists of guanine-cytosine base pairs (GC), and in the frequency of GC-biased gene conversion (Urrutia and Hurst, 2001; Duret and Galtier, 2009; Doherty and McInerney, 2013; Figuet et al., 2014). Here, we control for %GC, capturing species differences both in mutation and in gene conversion, by calculating the Kullback–Leibler divergence of the observed codon frequencies away from the codon frequencies that we would expect to see given the genomic %GC content of the species. Kullback–Leibler divergence measures the distance of an observed probability distribution from an expected reference distribution, capturing a measure of surprise (Kullback and Leibler, 1951). This method does not require us to specify preferred vs. non-preferred codons, and can thus also accommodate situations in which different genes have different codon preferences (Gingold et al., 2014; Cope et al., 2018).
 
@@ -57,11 +57,25 @@ Here, we extend the CAI, using the information-theory-based Kullback–Leibler d
 
 ## Results
 
-## Both ENC and CAIS solve the GC confounding problem that plagues CAI
+### Both ENC and CAIS solve the GC confounding problem that plagues CAI
 
 CAI is seriously confounded with GC content (Figure 3A). ENC is not confounded with GC content (Figure 3B), while CAIS has only a very weak correlation that is not significant after correction for multiple comparisons (Figure 3C).
 
-## Proteins in better adapted species evolve more structural disorder
+![Figure 3.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig3-v1.jpg)
+
+**Figure 3.:** We control for phylogenetic confounding via Phylogenetic Independent Contrasts (PIC) (Felsenstein, 1985); this yields an unbiased R2 estimate (Rohlf, 2006). Each datapoint is one of 118 vertebrate species with ‘Complete’ intergenic genomic sequence (allowing for %GC correction) and TimeTree divergence dates (allowing for PIC correction). Red line shows unweighted lm(y ~ x) with gray region as 95% confidence interval. Figure 3—figure supplement 1 shows in more detail why CAI is not appropriate for species-wide effectiveness of selection measurements. Plots without PIC correction are shown in Figure 3—figure supplement 2. The impact of amino acid frequency correction on CAIS is shown in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Each CAI value shown is averaged over an entire species’ proteome. (A) The value of CAI is driven by its normalizing denominator term, CAImax. (B) As a result, CAI is inversely proportional to Codon Adaptation Index of Species (CAIS). Each datapoint is one of 118 vertebrate species with ‘Complete’ intergenic genomic sequence available (allowing for %GC correction) and TimeTree divergence dates (allowing for Phylogenetic Independent Contrasts [PIC] correction). p-values shown are for Pearson’s correlation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Codon Adaptation Index (CAI) (A) and ENC (B) both correlate with genomic GC, but CAIS (C) does not. Red line shows lm(y ~ x), with gray region as 95% confidence interval. We use Phylogenetic Independent Contrasts (PIC) corrected results rather than these results because PIC correction removes non-independent errors to produce an unbiased R2 estimate (Rohlf, 2006).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig3-figsupp3-v1.jpg)
+
+### Proteins in better adapted species evolve more structural disorder
 
 As an example of how correlations with codon adaptation metrics can be used to identify weak selective preferences, we investigate protein ISD. Disordered proteins are more likely to be harmful when overexpressed (Vavouri et al., 2009), and ISD is more abundant in eukaryotic than prokaryotic proteins (Schad et al., 2011; Xue et al., 2012; Basile et al., 2019), suggesting that low ISD might be favored by more effective selection.
 
@@ -69,15 +83,31 @@ However, compositional differences among proteomes might not be driven by differ
 
 Surprisingly, more exquisitely adapted species have more disordered protein domains (Figure 4). Results using ENC and CAIS are similar, with ENC having higher power; the correlation coefficient is 0.36 for CAIS compared to 0.50 for ENC, and the p-value for ENC is 3 orders of magnitude lower. We note, however, that amino acid frequencies strongly influence ISD (Theillet et al., 2013). The CAIS correlation is more reliable than the ENC correlation because by construction, CAIS controls for differences in amino acid frequencies among species.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig4-v1.jpg)
+
+**Figure 4.:** We plot -ENC rather than ENC to more easily compare results with those from CAIS. (C) Correcting for local rather than genome-wide %GC removes the relationship. Each datapoint is one of 118 vertebrate species with ‘complete’ intergenic genomic sequence available (allowing for %GC correction), and TimeTree divergence dates (allowing for Phylogenetic Independent Contrasts [PIC] correction). ‘Effects’ on ISD shown on the y-axis are fixed effects of species identity in our linear mixed model, after PIC correction. Red line shows unweighted lm(y ~ x) with gray region as 95% confidence interval. Panels without PIC correction are presented in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** As in Figure 4, intrinsic structural disorder (ISD) of protein domains is higher in more highly adapted species, as measured by Codon Adaptation Index of Species (CAIS) (A) and Effective Number of Codons (ENC) (B), but not by CAIS calculated with local GC% rather than genome-wide GC% (C). ISD is calculated as in Figure 4. Red line shows lm(y ~ x), with gray region as 95% confidence interval.
+
 Different parts of the genome have different GC contents (Bernardi, 2000; Eyre-Walker and Hurst, 2001; Lander et al., 2001), primarily because the extent to which GC-biased gene conversion increases GC content depends on the local rate of recombination (Galtier et al., 2001; Meunier and Duret, 2004; Duret et al., 2006; Duret and Galtier, 2009). We therefore also calculated a version of CAIS whose codon frequency expectations are based on local intergenic GC content. This performed worse (Figure 4C) than our simple use of genome-wide GC content (Figure 4A) with respect to the strength of correlation between CAIS and ISD. If GC-biased gene conversion is a more powerful force than weak selective preferences among codons, then local GC content will evolve more rapidly than codon usage (Kondrashov et al., 2010). In this case, genome-wide GC may serve as an appropriately time-averaged proxy. It is also possible that the local non-coding sequences we used were too short (at 3000 bp or more), creating excessive noise that obscured the signal.
 
-Many vertebrates have higher recombination rates and hence GC-biased gene conversion near genes; in this case genome-wide GC content would misestimate the codon usage expected from the combination of mutation bias and GC-biased gene conversion in the vicinity of genes. If GC-biased gene conversion drove CAIS, we expect high |localGC¯− globalGC| to predict high CAIS. We do not see this relationship (Figure 5), suggesting that gene conversion strength is not a confounding factor impacting CAIS.
+Many vertebrates have higher recombination rates and hence GC-biased gene conversion near genes; in this case genome-wide GC content would misestimate the codon usage expected from the combination of mutation bias and GC-biased gene conversion in the vicinity of genes. If GC-biased gene conversion drove CAIS, we expect high $|localGC¯− globalGC|$ to predict high CAIS. We do not see this relationship (Figure 5), suggesting that gene conversion strength is not a confounding factor impacting CAIS.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig5-v1.jpg)
 
 **Figure 5.:** If CAIS were driven by GC-biased gene conversion, genomes with more heterogeneous %GC distributions should have higher CAIS scores.
 
 Younger animal-specific protein domains have higher ISD (James et al., 2021). It is possible that selection in favor of high ISD is strongest in young domains, which might use more primitive methods to avoid aggregation (Foy et al., 2019; Bertram and Masel, 2020). To test this, we analyze two subsets of our data: those that emerged prior to the last eukaryotic common ancestor (LECA), here referred to as ‘old’ protein domains, and ‘young’ protein domains that emerged after the divergence of animals and fungi from plants. Young and old domains show equally strong trends of increasing disorder with species’ adaptedness (Figure 6).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig6-v1.jpg)
+
+**Figure 6.:** Age assignments are taken from James et al., 2021, with vertebrate protein domains that emerged prior to last eukaryotic common ancestor (LECA) classified as ‘old’, and vertebrate protein domains that emerged after the divergence of animals and fungi from plants as ‘young’. ‘Effects’ on ISD shown on the y-axis are fixed effects of species identity in our linear mixed model. The same n = 118 datapoints are shown as in Figures 3 and 4. Red line shows lm(y ~ x), with gray region as 95% confidence interval. Panels without Phylogenetic Independent Contrasts (PIC) correction are shown in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87335/elife-87335-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Age assignments and ISD effects are calculated as in Figure 6. Same n = 118 datapoints are shown as in Figures 3—5. Red line shows lm(y ~ x), with gray region as 95% confidence interval.
 
 ## Discussion
 
@@ -89,7 +119,7 @@ A direct effect of ISD on fitness agrees with studies of random Open Reading Fra
 
 A more complex metric could control for more than just GC content and amino acid frequencies. First vs. second vs. third codon positions have different nucleotide usage on average, but while correcting for this might be useful for comparing genes (Zhang et al., 2012), correcting for it while comparing species might remove the effect of interest. Similarly, while it might be useful to control for dinucleotide and trinucleotide frequencies (Brbić et al., 2015), to avoid circularity these would need to be taken from intergenic sequences, with care needed to avoid influence from unannotated protein-coding genes or even pseudogenes.
 
-Note that if a species were to experience a sudden reduction in census population size, for example due to habitat loss, leading to less effective selection, it would take some multiple of the neutral coalescent time for CAIS to fully adjust. CAIS thus represents a relatively long-term historical pattern of adaptation. The timescales setting neutral polymorphism-based Ne estimates are likely shorter, based on a single round of coalescence. It is possible that the reason that we obtained correlations when we controlled for genome-wide GC content, but not when we controlled for local GC content, is also that codon adaptation adjusts slowly relative to the timescale of fluctuations in local GC content.
+Note that if a species were to experience a sudden reduction in census population size, for example due to habitat loss, leading to less effective selection, it would take some multiple of the neutral coalescent time for CAIS to fully adjust. CAIS thus represents a relatively long-term historical pattern of adaptation. The timescales setting neutral polymorphism-based $N_{e}$ estimates are likely shorter, based on a single round of coalescence. It is possible that the reason that we obtained correlations when we controlled for genome-wide GC content, but not when we controlled for local GC content, is also that codon adaptation adjusts slowly relative to the timescale of fluctuations in local GC content.
 
 Here, we developed a new metric of species adaptedness at the codon level, capable of quantifying degrees of codon adaptation even among vertebrates. We chose vertebrates partly due to the abundance of suitable data, and partly as a stringent test case, given past studies finding limited evidence for codon adaptation (Kessler and Dean, 2014). It remains to be seen how CAIS behaves among species with stronger codon adaptation. We restricted our analysis to only the best annotated genomes, in part to ensure the quality of intergenic %GC estimates, and in part limited by the feasibility of running linear mixed models with 6 million datapoints. The phylogenetic tree is well resolved for vertebrate species, with an overrepresentation of mammalian species. Despite the focus on vertebrates, we were able to discover new results regarding selection on ISD.
 
@@ -99,68 +129,180 @@ Codon adaptation metrics more directly quantify how species vary in their exquis
 
 ## Methods
 
-## Species
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IUPRED2</td>
+      <td>DOI: https://doi.org/10.1093/nar/gky384</td>
+      <td>RRID:SCR_014632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Codon Adaptation Index of Species</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Codon Adaptation Index</td>
+      <td>DOI: https://doi.org/10.1093/nar/15.3.1281</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ape</td>
+      <td>DOI: https://doi.org/10.1093/bioinformatics/bty633</td>
+      <td>RRID:SCR_017343</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Effective Number of Codons</td>
+      <td>DOI: https://doi.org/10.1093/oxfordjournals.molbev.a004201</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Species
 
 Pfam sequences and IUPRED2 estimates of ISD predictions were taken from James et al., 2021, who studied species marked as ‘Complete’ in the GOLD database, with divergence dates available in TimeTree (Kumar et al., 2017). James et al., 2021 applied a variety of quality controls to exclude contaminants from the set of Pfams and assign accurate dates of Pfam emergence. Pfams that emerged prior to LECA are classified here as ‘old’, and Pfams that emerged after the divergence of animals and fungi from plants are classified as ‘young’, following annotation by James et al., 2021. Species list and other information can be found at https://github.com/MaselLab/Codon-Adaptation-Index-of-Species (copy archived at MaselLab, 2024).
 
-## Codon Adaptation Index
+### Codon Adaptation Index
 
-Sharp and Li, 1987 quantified codon bias through the CAI, a normalized geometric mean of synonymous codon usage bias across sites, excluding stop and start codons. We modify this to calculate CAI including stop and start codons, because of documented preferences among stop codons in mammals (Wangen and Green, 2020). While usually used to compare genes within a species, among-species comparisons can be made using a reference set of genes that are highly expressed (Sharp and Li, 1987). Each codon i is assigned an RSCU value:(1)RSCUi=Ni1na∑j=1naNj,
+Sharp and Li, 1987 quantified codon bias through the CAI, a normalized geometric mean of synonymous codon usage bias across sites, excluding stop and start codons. We modify this to calculate CAI including stop and start codons, because of documented preferences among stop codons in mammals (Wangen and Green, 2020). While usually used to compare genes within a species, among-species comparisons can be made using a reference set of genes that are highly expressed (Sharp and Li, 1987). Each codon i is assigned an RSCU value:
 
-where Ni denotes the number of times that codon i is used, and the denominator sums over all na codons that code for that specific amino acid. RSCU values are normalized to produce a relative adaptiveness values wi for each codon, relative to the best adapted codon for that amino acid:(2)wi≡RSCUiRSCUmax.
+$$
+RSCU_{i}=\frac{N_{i}}{\frac{1}{n_{a}}\sumj=1n_{a}N_{j}},
+$$
 
-Let L be the number of codons across all protein-coding sequences considered. Then(3)CAI=[Πi=1Lwi]1L.
+where $N_{i}$ denotes the number of times that codon $i$ is used, and the denominator sums over all $n_{a}$ codons that code for that specific amino acid. RSCU values are normalized to produce a relative adaptiveness values $w_{i}$ for each codon, relative to the best adapted codon for that amino acid:
 
-To understand the effects of normalization, it is useful to rewrite this as:(4)CAI=[Πi=1LRSCUiRSCUmax]1L=CAIrawCAImax,
+$$
+w_{i}≡\frac{RSCU_{i}}{RSCU_{max}}.
+$$
 
-where CAIraw is the geometric mean of the ‘unnormalized’ or observed synonymous codon usages, and CAImax is the maximum possible CAI given the observed codon frequencies.
+Let $L$ be the number of codons across all protein-coding sequences considered. Then
 
-## GC content
+$$
+CAI=[Π_{i=1}^{L}w_{i}]^{\frac{1}{L}}.
+$$
+
+To understand the effects of normalization, it is useful to rewrite this as:
+
+$$
+CAI=[Π_{i=1}^{L}\frac{RSCU_{i}}{RSCU_{max}}]^{\frac{1}{L}}=\frac{CAI_{raw}}{CAI_{max}},
+$$
+
+where $CAI_{raw}$ is the geometric mean of the ‘unnormalized’ or observed synonymous codon usages, and $CAI_{max}$ is the maximum possible CAI given the observed codon frequencies.
+
+### GC content
 
 We calculated total %GC content (intergenic and genic) during a scan of all six reading frames across genic and intergenic sequences available from NCBI with access dates between May and July 2019 (described in James et al., 2023). Of the 170 vertebrates meeting the quality criteria of James et al., 2021, 118 had annotated intergenic sequences within NCBI, so we restricted the dataset further to keep only the 118 species for which total GC content was available.
 
-## Codon Adaptation Index of Species
+### Codon Adaptation Index of Species
 
-## Controlling for GC bias in synonymous codon usage
+#### Controlling for GC bias in synonymous codon usage
 
-Consider a sequence region r within species s where each nucleotide has an expected probability of being G or C = gr. For our main analysis, we consider just one region r encompassing the entire genome of a species s. In a secondary analysis, we break the genome up and use local values of gr in the non-coding regions within and surrounding a gene or set of overlapping genes. To annotate the boundaries of these local regions, we first selected 1500 base pairs flanking each side of every coding sequence identified by NCBI annotations. Coding sequence annotations are broken up according to exon by NCBI. When coding sequences of the same gene did not fall within 3000 base pairs of each other, they were treated as different regions. When two coding sequences, whether from the same gene or from different genes, had overlapping 1500 bp catchment areas, we merged them together. gr was then calculated based on the non-coding sites within each region, including both genic regions such as promoters and non-genic regions such as introns and intergenic sequences.
+Consider a sequence region $r$ within species $s$ where each nucleotide has an expected probability of being G or C = $g_{r}$. For our main analysis, we consider just one region $r$ encompassing the entire genome of a species $s$. In a secondary analysis, we break the genome up and use local values of $g_{r}$ in the non-coding regions within and surrounding a gene or set of overlapping genes. To annotate the boundaries of these local regions, we first selected 1500 base pairs flanking each side of every coding sequence identified by NCBI annotations. Coding sequence annotations are broken up according to exon by NCBI. When coding sequences of the same gene did not fall within 3000 base pairs of each other, they were treated as different regions. When two coding sequences, whether from the same gene or from different genes, had overlapping 1500 bp catchment areas, we merged them together. $g_{r}$ was then calculated based on the non-coding sites within each region, including both genic regions such as promoters and non-genic regions such as introns and intergenic sequences.
 
-With no bias between C vs. G, nor between A vs. T, nor patterns beyond the overall composition taken one nucleotide at a time, the expected probability of seeing codon i in a triplet within r is(5)pi,r= gr2kGC(1−gr2)kAT,
+With no bias between C vs. G, nor between A vs. T, nor patterns beyond the overall composition taken one nucleotide at a time, the expected probability of seeing codon $i$ in a triplet within $r$ is
 
-where kGC+kAT=3 total positions in codon i. The expected probability that amino acid a in region r is encoded by codon i is(6)Ei,r=pi,r∑j=1napj,r.
+$$
+p_{i,r}= \frac{g_{r}}{2}^{k_{GC}}(1−\frac{g_{r}}{2})^{k_{AT}},
+$$
 
-We can then measure the degree to which the observed codon frequencies diverge from these expected probabilities using the Kullback–Leibler divergence. This gives a CAIS metric for a species s where Oi,s is the observed frequency of codon i:(7)CAIS(s)=Σi=164Oi,slog(Oi,sEi,s).
+where $k_{GC}+k_{AT}=3$ total positions in codon $i$. The expected probability that amino acid $a$ in region $r$ is encoded by codon $i$ is
 
-## Controlling for amino acid composition
+$$
+E_{i,r}=\frac{p_{i,r}}{\sumj=1n_{a}p_{j,r}}.
+$$
+
+We can then measure the degree to which the observed codon frequencies diverge from these expected probabilities using the Kullback–Leibler divergence. This gives a CAIS metric for a species $s$ where $O_{i,s}$ is the observed frequency of codon i:
+
+$$
+CAIS(s)=Σ_{i=1}^{64}O_{i,s}log(\frac{O_{i,s}}{E_{i,s}}).
+$$
+
+#### Controlling for amino acid composition
 
 Some amino acids may be more intrinsically prone to codon bias. We want a metric that quantifies effectiveness of selection (not amino acid frequency), so we re-weight CAIS on the basis of a standardized amino acid composition, to remove the effect of variation among species in amino acid frequencies.
 
-Let Fa be the frequency of amino acid a across the entire dataset of 118 vertebrate genomes. We want to re-weight Oi,s on the basis of Fa to ensure that differences in amino acid frequencies among species do not affect CAIS, while preserving relative codon frequencies for the same amino acid. We do this by solving for αa,s so that(8)Fa=αa,sΣj=1naOj,s.
+Let $F_{a}$ be the frequency of amino acid $a$ across the entire dataset of 118 vertebrate genomes. We want to re-weight $O_{i,s}$ on the basis of $F_{a}$ to ensure that differences in amino acid frequencies among species do not affect CAIS, while preserving relative codon frequencies for the same amino acid. We do this by solving for $\alpha_{a,s}$ so that
 
-We then define fi,s`=αa,sOi,s to obtain an amino acid frequency adjusted CAIS:(9)CAIS(S)=Σi=164fi,s′log⁡(Oi,sEi,s).
+$$
+F_{a}=\alpha_{a,s}Σ_{j=1}^{n_{a}}O_{j,s}.
+$$
 
-The Fa values for our species set are at https://github.com/MaselLab/Codon-Adaptation-Index-of-Species/blob/main/CAIS_ENC_calculation/Total_amino_acid_frequency_vertebrates.txt. Use of the standardized set of amino acid frequencies Fa has only a small effect on computed CAIS values relative to using each vertebrate species’ own amino acid frequencies (Figure 3—figure supplement 3).
+We then define $f_{i,s}^{`}=\alpha_{a,s}O_{i,s}$ to obtain an amino acid frequency adjusted CAIS:
 
-CAIS corrected for local intergenic GC content but not species-wide amino acid composition is(10)CAISlocalGC(s)=(Πr=1GΣi=164Oi,rlog⁡(Oi,rEi,r))1L,
+$$
+CAIS(S)=Σ_{i=1}^{64}f_{i,s}^{′}log⁡(\frac{O_{i,s}}{E_{i,s}}).
+$$
 
-where Oi,r is the number of times codon i appears in region r of species s, Ei,r is the expected number of times codon i would appear in region r of species s given the local intergenic GC content, G is the number of regions, and L=∑r=1G∑i=164Oi,r is the total number of codons in the genome. Rewritten for greater computational ease:(11)CAISlocalGC(s)=e1LΣr=1Gln(∑i=164Oi,rlog⁡(Oi,rEi,r)).
+The $F_{a}$ values for our species set are at https://github.com/MaselLab/Codon-Adaptation-Index-of-Species/blob/main/CAIS_ENC_calculation/Total_amino_acid_frequency_vertebrates.txt. Use of the standardized set of amino acid frequencies $F_{a}$ has only a small effect on computed CAIS values relative to using each vertebrate species’ own amino acid frequencies (Figure 3—figure supplement 3).
 
-Given the limited impact of amino acid frequency correction, we used Equation 11 for the local GC results, but we could correct for amino acid composition by replacing the Oi,r prefactor with fi,s`, or even fi,r`.
+CAIS corrected for local intergenic GC content but not species-wide amino acid composition is
 
-## Novembre’s ENC controlled for total GC content
+$$
+CAIS_{localGC}(s)=(Π_{r=1}^{G}Σ_{i=1}^{64}O_{i,r}log⁡(\frac{O_{i,r}}{E_{i,r}}))^{\frac{1}{L}},
+$$
 
-The expected number of codons is based on the squared deviations Xa2 of the frequencies of the codons for each amino acid a from null expectations:  (12)Xa2=Σi=1naNa(Oi−Ei)2Ei,
+where $O_{i,r}$ is the number of times codon $i$ appears in region $r$ of species $s$, $E_{i,r}$ is the expected number of times codon $i$ would appear in region $r$ of species $s$ given the local intergenic GC content, $G$ is the number of regions, and $L=\sumr=1G\sumi=164O_{i,r}$ is the total number of codons in the genome. Rewritten for greater computational ease:
 
-where Na is the total number of times that amino acid a appears. Novembre, 2002 defines the corrected ‘F value’ of amino acid a as(13)F′^a=Xa2+Na−nana(Na−1)
+$$
+CAIS_{localGC}(s)=e^{\frac{1}{L}Σ_{r=1}^{G}ln(\sumi=164O_{i,r}log⁡(\frac{O_{i,r}}{E_{i,r}}))}.
+$$
 
-and(14)ENC=2+9F′^2+1F′^3+5F′^4+3F′^6,
+Given the limited impact of amino acid frequency correction, we used Equation 11 for the local GC results, but we could correct for amino acid composition by replacing the $O_{i,r}$ prefactor with $f_{i,s}^{`}$, or even $f_{i,r}^{`}$.
 
-where each F`^na is the average of the ‘F values’ for amino acids with na synonymous codons. Past measures of ENC do not contain stop or start codons (Wright, 1990; Novembre, 2002; Fuglsang, 2004), but as we did for CAI and CAIS above, we include stop codons as an ‘amino acid’ and therefore amend Equation 14 to(15)ENC=2+9F′^2+2F′^3+5F′^4+3F′^6.
+### Novembre’s ENC controlled for total GC content
 
-## Statistical analysis
+The expected number of codons is based on the squared deviations $X_{a}^{2}$ of the frequencies of the codons for each amino acid $a$ from null expectations:
+
+$$
+X_{a}^{2}=Σ_{i=1}^{n_{a}}\frac{N_{a}(O_{i}−E_{i})^{2}}{E_{i}},
+$$
+
+where $N_{a}$ is the total number of times that amino acid $a$ appears. Novembre, 2002 defines the corrected ‘F value’ of amino acid $a$ as
+
+$$
+F^{′}^_{a}=\frac{X_{a}^{2}+N_{a}−n_{a}}{n_{a}(N_{a}−1)}
+$$
+
+and
+
+$$
+ENC=2+\frac{9}{F^{′}^_{2}}+\frac{1}{F^{′}^_{3}}+\frac{5}{F^{′}^_{4}}+\frac{3}{F^{′}^_{6}},
+$$
+
+where each $F`^_{n_{a}}$ is the average of the ‘F values’ for amino acids with $n_{a}$ synonymous codons. Past measures of ENC do not contain stop or start codons (Wright, 1990; Novembre, 2002; Fuglsang, 2004), but as we did for CAI and CAIS above, we include stop codons as an ‘amino acid’ and therefore amend Equation 14 to
+
+$$
+ENC=2+\frac{9}{F^{′}^_{2}}+\frac{2}{F^{′}^_{3}}+\frac{5}{F^{′}^_{4}}+\frac{3}{F^{′}^_{6}}.
+$$
+
+### Statistical analysis
 
 All statistical modeling was done in R 3.5.1. Scripts for calculating CAI and CAIS were written in Python 3.7.
 
-## Phylogenetic Independent Contrasts
+#### Phylogenetic Independent Contrasts
 
 Spurious phylogenetically confounded correlations can occur when closely related species share similar values of both metrics. One danger of such pseudoreplication is Simpson’s paradox, where there are negative slopes within taxonomic groups, but a positive slope among them might combine to yield an overall positive slope. We avoid pseudoreplication by using Phylogenetic Independent Contrasts (PIC) (Felsenstein, 1985) to assess correlation. PIC analysis was done using the R package ‘ape’ (Paradis and Schliep, 2019).

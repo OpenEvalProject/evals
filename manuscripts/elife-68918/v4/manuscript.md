@@ -39,15 +39,43 @@ Here we demonstrate that the linker histone H1.8 suppresses enrichment of conden
 
 ## Results
 
-## Linker histone H1.8 limits enrichment of condensins and topo II on mitotic chromatin
+### Linker histone H1.8 limits enrichment of condensins and topo II on mitotic chromatin
 
 Depletion of linker histone H1.8 in Xenopus egg extracts makes chromosomes thinner and elongated (see Figure 3C, Maresca et al., 2005). We asked if this phenotype may reflect the potential role of H1.8 in regulating condensins and TOP2A (the dominant topo II isoform in Xenopus egg extracts, Wühr et al., 2014), which are essential for mitotic chromosome compaction in Xenopus egg extracts (Hirano and Mitchison, 1994; Adachi et al., 1991; Cuvier and Hirano, 2003). In silico simulation analysis suggests that increasing the number of loop extruders (such as condensin I) on DNA, beyond a minimum threshold, makes chromosomes longer and thinner (Goloborodko et al., 2016a). Reducing condensin I levels on chromatin also made chromosomes shorter experimentally (Shintomi and Hirano, 2011; Elbatsh et al., 2019; Fitz-James et al., 2020). Although it has been reported that H1.8 depletion does not affect chromosomal enrichment of major chromatin proteins (Maresca et al., 2005), we therefore attempted to quantify chromatin-bound levels of condensins and TOP2A.
 
 To investigate whether H1.8 regulates chromatin levels of condensins and topo II, we prepared mitotic chromosomes in Xenopus laevis egg extracts depleted of H1.8. Demembranated X. laevis sperm nuclei were added to either mock (ΔIgG) or H1.8-depleted (ΔH1) extracts from eggs arrested at meiotic metaphase II by cytostatic factor (CSF extracts; Figure 1A and B). Calcium was added to cycle the extract into interphase and induce functional nuclear formation, in which chromosomes were replicated. The corresponding depleted CSF extract was then added to generate metaphase chromosomes (Shamu and Murray, 1992). To eliminate the microtubule-dependent change in chromosome morphology, which may affect quantitative analyses of chromatin proteins, spindle assembly was inhibited using nocodazole. Chromosomes were fixed and the levels of TOP2A and condensin I subunit CAP-G were measured by immunofluorescence (Figure 1C). Depletion of H1.8 increased the levels of both CAP-G and TOP2A on mitotic chromosomes, while adding back recombinant H1.8 rescued the phenotype (Figure 1D). Identical results were obtained when immunofluorescence signal normalization was done by the minor groove DNA-binding dye Hoechst 33342 or by fluorescent dUTP that was incorporated during replication (Figure 1—figure supplement 1A–C). The dUTP quantitation also confirmed that H1.8 depletion did not affect DNA replication (Figure 1—figure supplement 1B), as reported previously (Dasso et al., 1994). The apparent increased signal intensities of CAP-G and TOP2A on chromatin in ∆H1 extracts were not the general consequence of elongated chromosome morphology as H1.8 depletion did not affect a panel of other chromatin proteins, regardless of their binding preference to nucleosomes or nucleosome-free DNA (Zierhut et al., 2014; Figure 1—figure supplement 1D). Enhanced chromosome binding of condensin I and TOP2A in ∆H1.8 extracts was biochemically confirmed by quantifying their levels on purified metaphase chromosomes by western blotting and by mass spectrometry (Figure 1E, Figure 1—figure supplement 1E). Mass spectrometry data also confirmed that H1.8 depletion did not result in a global enrichment of all chromatin-bound proteins. Condensin II levels on chromosomes also showed similar increases in ΔH1 extracts by immunofluorescence and western blots on purified chromosomes, although peptides of condensin II-specific subunits were not detected by mass spectrometry (Figure 1F–H, Figure 1—figure supplement 1E, Figure 1—source data 2).
 
-## Linker histone H1.8 reduces binding of condensins and TOP2A to nucleosome arrays
+![Figure 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig1-v4.jpg)
+
+**Figure 1.:** (A) Experimental scheme to generate replicated chromosomes in Xenopus egg extracts. (B) Western blots of total extracts showing depletion of H1.8 from Xenopus egg extracts and rescue with recombinant H1.8 (rH1.8). (C) Representative images of DNA (Hoechst 33342), CAP-G (condensin I), and TOP2A immunofluorescence on chromosomes in metaphase extracts treated with nocodazole in the indicated conditions. Chromosomes in each nucleus remain clustered in the presence of nocodazole. Bar, 10 µm. (D) Quantification of CAP-G (condensin I) and TOP2A immunofluorescence signals normalized to the DNA (Hoechst) signal for the indicated conditions. Each gray or magenta dot represents the average signal intensity of a single chromosome cluster (from one nucleus). Each black dot represents the median signal intensity from a single experiment. Bars represent mean and SEM of the medians of three independent experiments. (E) Western blots of mitotic chromatin purified from mock (∆IgG) and H1.8-depleted (∆H1) extracts (top) and quantification of band intensities normalized to H3 and H2B (below). Mean and SEM/range from three/two experiments respectively. (F) Representative images of CAP-G2 (condensin II) immunofluorescence on chromosomes in metaphase extracts with nocodazole in the indicated conditions. Bar, 10 µm. (G) Quantification of the CAP-G2 (condensin II) normalized to the DNA (Hoechst) signal for the indicated conditions. Each gray or purple dot represents the average signal intensity of a single chromosome cluster (from one nucleus). Each black dot represents the median signal intensity from a single experiment. Bars represent mean and range of the median of two independent experiments. (H) Western blots of mitotic chromatin purified from mock (∆IgG) and H1.8-depleted (∆H1) extracts. The p-values shown in (D) and (E) were calculated by an unpaired Student’s t-test of the aggregate medians of three independent experiments, after confirming the statistical significance for each experimental dataset by a two-tailed Mann–Whitney U-test. The p-values shown in (G) were calculated on total data from two independent experiments using a two-tailed Mann–Whitney U-test. The number of nuclei imaged in (D) and (G) in each condition for each experiment is indicated in the figure.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental scheme to incorporate Cy3-labeled nucleotides to use normalization of immunofluorescence signals on chromosomes. (B) Quantification of Cy3-dUTP signals normalized to Hoechst 33342 signals, showing uniform normalization across two coverslips used for quantification of condensin I and TOP2A. The result also indicates no detectable defect in DNA replication in ∆H1 extracts. (C) CAP-G (condensin I) and TOP2A immunofluorescence signal levels on chromosomes normalized with Hoechst and incorporated Cy3-dUTP. Normalization using Hoechst 33342 and Cy3-dUTP/Cy5-dUTP signals was shown to be consistent across many experiments. (D) Quantification of immunofluorescence signal levels of two proteins that prefer nucleosomes (RCC1 and Dasra A) and two that prefer to bind nucleosome-free DNA (Dppa2 and Xkid) (Zierhut et al., 2014). In (B–D), distribution of signal intensity per chromosome cluster (dots), and median and SEM from one experiment are shown. This analysis was performed twice, and the similar results were obtained. (E) Protein abundance on metaphase sperm chromosomes purified from mock and H1.8-depleted extracts. Subunits from the structural maintenance of chromosomes (SMC) family complexes are labeled in pink. Core histones and their variants are in blue and linker histone variants are shown in red. The lines for 0.25×, 0.5×, 1, 2×, and 4× abundance on ΔH1 compared to ΔIgG chromosomes are shown. The mass spectrometry analysis was performed once. The number of nuclei imaged in each condition for each experiment in (B–D) is indicated above the figure.
+
+### Linker histone H1.8 reduces binding of condensins and TOP2A to nucleosome arrays
 
 Since linker histone depletion does not change the nucleosome spacing in Xenopus egg extracts (Ohsumi et al., 1993), we hypothesized that H1.8 depletion results in an increase in linker DNA that becomes accessible to condensins and TOP2A. To test this possibility, we reconstituted nucleosome arrays with purified histones and asked if H1.8 interferes with binding of recombinant human condensins and X. laevis TOP2A (Kong et al., 2020; Ryu et al., 2010; Figure 2A). The purity and the intact nature of the human condensin complexes was confirmed using mass photometry (Figure 2—figure supplement 1; Verschueren, 1985; Young et al., 2018; Sonn-Segev et al., 2020). As previously shown with human condensin I purified from HeLa cells (Kimura et al., 2001), our recombinant human condensin I, but not the ATP-binding defective Q-loop mutant (Hassler et al., 2019; Hopfner et al., 2000; Löwe et al., 2001; Kong et al., 2020), was able to rescue mitotic chromosome morphology defects caused by condensin I depletion in Xenopus extracts (Figure 2—figure supplement 2A), demonstrating that the recombinant human condensin I can also functionally replace Xenopus condensin I. The recombinant X. laevis TOP2A used was also able to rescue chromatid formation in ΔTOP2A extracts and was able to perform ATP-dependent kinetoplast decatenation in vitro (Figure 2—figure supplement 2B and C). The nucleosome array was composed of 19 tandem repeats of 147 bp Widom 601 nucleosome positioning sequence and 53 bp linker DNA (Lowary and Widom, 1998), where full occupancy of the array by a nucleosome core particle (NCP) and H1.8 to each repeat unit was confirmed by native polyacrylamide gel electrophoresis (PAGE) (Figure 2—figure supplement 3A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig2-v4.jpg)
+
+**Figure 2.:** (A) Experimental scheme for testing the effect of recombinant H1.8 (rH1.8) on binding of purified condensins and TOP2A to arrays of nucleosomes assembled on the Widom 601 nucleosome positioning sequence. (B) Coomassie staining of SDS-PAGE gels, showing input (top) and nucleosome array-bound fraction (middle) of condensin I, rH1.8, and core histones. The rightmost lanes represent the streptavidin beads-only negative control. Buffer contains 2.5 mM MgCl2, 5 mM ATP, and indicated concentrations of NaCl. The band intensities of condensin I subunits were normalized to the histone bands and the binding at 50 mM NaCl for nucleosome arrays without H1.8. Mean and SEM of three independent experiments are shown (bottom). (C) Same as (B), except that nucleosome array binding of condensin II is shown. Mean and SEM (wildtype)/range (Q-loop mutant) of three (wildtype) or two (Q-loop mutant) independent experiments are shown. (D) Same as (B), except that nucleosome array binding of TOP2A in buffer containing 1 mM MgCl2 is shown. Mean and range of two independent experiments are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** Recombinant condensin complexes were diluted to 50 nM in buffer (10 mM HEPES pH 8, 2.5 mM MgCl2, 1 mM DTT, 5 mM ATP) supplemented with the indicated sodium chloride concentration and the indicated temperatures for 30 min subjected to mass photometry to determine whether the complexes remain intact in the buffer conditions used for the binding assays. Histograms of the particle count at the indicated molecular mass. The molecular mass was calibrated using bovine serum albumin and urease. The black lines are the Gaussian fits to the peaks. The peak of the Gaussian fit and the percentage of particles in the peak are indicated above each peak. Theoretical molecular weights of condensin I and condensin II complexes are 638 kDa and 658 kDa, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig2-figsupp2-v4.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative Hoechst (DNA) and CENP-A immunofluorescence images of chromosomes in indicated metaphase egg extracts after dilution, which disperses individualized chromosomes (left). Extracts depleted of condensin I (ΔCAP-G) were complemented with recombinant human condensin I and condensin I Q-loop mutant protein complexes. Total egg extract western blots of depletion and the rescue conditions (right). (B) Recombinant X. laevis TOP2A is functional in Xenopus egg extracts. Sperm nuclei were added to undepleted, TOP2A-depelted CSF extracts (∆TOP2A), or ∆TOP2A extracts with purified recombinant TOP2A. Representative Hoechst (DNA) images of sperm are shown. In undepleted or ∆TOP2A extracts with supplemented TOP2A, proper sperm remodeling led to mitotic chromosomes formation. In ∆TOP2A extracts, sperm remodeling failed and sperm nuclei remained compact crescent-like shape. (C) Recombinant X. laevis TOP2A possesses decatenating activity in vitro. Agarose gel of kinetoplast decatenation assay. Recombinant TOP2A promoted ATP-dependent decatenation of kinetoplast DNA. Bar, 20 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig2-figsupp3-v4.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Native PAGE gel analysis of nucleosome array beads loaded with or without H1.8 after digestion of the array with AvaI, which released monomers of nucleosome positioning sequence. A complete shift of monomer bands by H1.8 addition indicates the saturated occupancy of nucleosome and H1.8. (B) Purified recombinant human condensin I was incubated with nucleosome array beads in buffer containing 2.5 mM MgCl2 with and without 5 mM ATP. Coomassie staining of input and bead fractions is shown. (C) Purified human condensin I was incubated with nucleosome array beads in buffer containing 1 or 2.5 mM MgCl2 with and without 1 mM ATP. Coomassie staining of input and bead fractions is shown. (D) Purified human condensin I Q-loop mutant was incubated with nucleosome array beads in buffer containing 2.5 mM MgCl2 with the addition of 5 mM ATP or 5 mM EDTA. Coomassie staining of input and bead fractions is shown. (E) Alexa647-labeled 196 bp mononucleosomes were incubated with indicated concentrations of condensin I in the presence of 2.5 mM MgCl2 and with or without 5 mM ATP and electrophoresed on a 5% native PAGE (above). Bands at the well represent the nucleosome-condensin complex. Absence of signals at the well in the absence of condensin I indicates that mononucleosomes do not form large aggregates in the tested experimental conditions. Quantification of the condensin-bound fraction of the nucleosomes showing no increase in binding affinity due to ATP (Figure 2—source data 1).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig2-figsupp4-v4.jpg)
+
+**Figure 2—figure supplement 4.:** Alexa647-labeled 196 bp mononucleosomes with or without H1.8 were incubated with indicated concentrations of condensin I and electrophoresed on a 5% native PAGE. Alexa647-labeled DNAs are shown. Condensin I binding curves with mononucleosomes with and without H1.8, showing the large increase in binding constant in the presence of H1.8. The data plotted is the mean and SEM of three independent experiments The binding constants derived from fitting the aggregate data to a sigmoidal binding curve are shown (Figure 2—source data 1).
 
 Condensin I binds weakly to mononucleosomes with linker DNA (Kong et al., 2020). We observed similar weak binding of condensin I to nucleosome arrays, and this binding was stimulated by ATP (Figure 2—figure supplement 3B). Since this enhancement was not seen when magnesium concentration was higher than the ATP concentration (Figure 2—figure supplement 3C), we hypothesized that ATP might have enhanced condensin binding to the nucleosome arrays by chelating magnesium, which is known to induce chromatin compaction (Finch and Klug, 1976; Eltsov et al., 2008). Indeed, both EDTA and ATP, which chelate magnesium, increased binding of the Q-loop mutant of condensin I to the nucleosome array (Figure 2—figure supplement 3D), suggesting that condensin binding to the nucleosome array is sensitive to high magnesium concentration and not due to ATP binding of condensin I. In contrast, ATP did not stimulate condensin I binding to mononucleosomes (Figure 2—figure supplement 3E), indicating that excess magnesium may limit condensin binding through compaction of the nucleosome array.
 
@@ -55,19 +83,43 @@ In the buffer condition where excess ATP was present over magnesium, preloading 
 
 We also examined if H1.8 interferes with binding of the recombinant Xenopus TOP2A to nucleosome arrays. As compared to condensins, TOP2A showed more stable binding to the nucleosome array, and H1.8 had no effect on TOP2A binding at low salt concentrations. However, H1.8 did reduce nucleosome array binding of recombinant Xenopus TOP2A at 120 mM NaCl (Figure 2D). Altogether, these data demonstrate that preloaded H1.8 on nucleosomes can directly interfere with binding of condensins and TOP2A to chromatin.
 
-## Chromosome elongation by H1.8 depletion is due to increased chromatin-bound condensin I
+### Chromosome elongation by H1.8 depletion is due to increased chromatin-bound condensin I
 
 If the increased amount of condensin I on chromatin is responsible for the chromosome elongation phenotype observed in ∆H1 extracts, reducing condensin I levels should reverse this phenotype. To measure lengths of mitotic chromosomes formed in Xenopus egg extracts, we assembled replicated metaphase chromosomes in extracts depleted with mock IgG, H1.8, CAP-G (condensin I), or CAP-D3 (condensin II) antibodies. These extracts were then diluted to disperse individualized chromosomes (Figure 3A and B; Funabiki and Murray, 2000). As reported previously (Maresca et al., 2005), average chromosome length increased by ~50% upon H1.8 depletion (Figure 3C and D). Supporting our hypothesis, when condensin I was co-depleted (ΔH1ΔCAP-G), chromosomes became even shorter than chromosomes in mock-depleted extracts (ΔIgG) (Figure 3C and D). In contrast, condensin II co-depletion (ΔH1ΔCAP-D3) did not change the chromosome length (Figure 3D). Chromosome length in condensin II-depleted extracts (ΔCAP-D3) was also indistinguishable from mock-depleted chromosomes (Figure 3—figure supplement 1A), consistent with the negligible effect of condensin II depletion in the presence of normal levels of condensin I in Xenopus egg extracts (Shintomi and Hirano, 2011).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig3-v4.jpg)
+
+**Figure 3.:** (A) Schematic of extract dilution to disperse individualized chromosomes. (B) Western blots of total egg extracts showing depletions of indicated proteins. (C) Representative images of mitotic chromosomes after dilution of indicated extracts. Bar, 10 μm. (D) Quantification of the chromosome length. Data distribution of the length of individual chromosomes from three independent experiments (green, purple, gray) is shown. Each black dot represents the median length of chromosomes from a single experiment. Bar represents mean and SEM of three independent experiments. (E) Quantification of CAP-G levels normalized to DNA signal (Cy3-dUTP) in the indicated conditions by immunofluorescence. Each dot represents the mean of CAP-G intensity normalized to DNA intensity of a single chromosome cluster (from one nucleus). The data plotted is median ± 95% CI. (F) Chromosome lengths in the indicated condition. Each dot represents length of a single chromosome. Bars represent median ± 95% CI. The p-values in (D) compare the median chromosome lengths in each condition and were calculated using an unpaired Student’s t-test, and those in (E, F) compare the median values in a single experiment and were calculated using a two-tailed Mann–Whitney U-test. The number of nuclei (E) or chromosomes (D, F) imaged in each condition for each experiment is indicated above the figure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Length of mitotic chromosomes in the indicated conditions after extract dilution showing no effect of CAP-D3 (condensin II) depletion in both mock and H1.8 depletion background. Each dot represents length of a single chromosome. Bars represent median ± 95% CI. The length of >50 chromosomes was measured in each condition for every experiment. (B) Total egg extract blots showing the partial depletions of condensin in the indicated conditions. The p-value in (A) was calculated by a two-tailed Mann–Whitney U-test. The number of chromosomes imaged in each condition for each experiment in (A) is indicated above the figure (Figure 3—source data 1). (C, D) Biological replicate of the partial condensin I depletion experiment in Figure 3E and F.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig3-figsupp2-v4.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Sperm nuclei were replicated in undepleted interphase extracts supplemented with 25 nM Cy3-dUTP. The nuclei were then cycled back by mixing with different ratios of ΔTOP2A extracts. Immunofluorescence data showing chromatin-bound TOP2A normalized to Cy3-dUTP signal in each condition. Each dot represents the normalized mean intensity of a single nucleus. (B) Chromosome lengths in the indicated conditions. Each dot represents the length of a single chromosome. (C) Sperm nuclei were replicated in either mock (ΔIgG) and H1.8-depleted (ΔH1) extracts and cycled back using 3 volumes of the corresponding extracts (ΔIgG/ΔH1) or 3 volumes of ΔIgGΔTOP2A/ΔH1ΔTOP2A extracts correspondingly. Immunofluorescence data showing the chromatin-bound TOP2A in the indicated conditions. Each dot represents the normalized mean intensity of a single nucleus. (D) Immunofluorescence data showing chromatin-bound CAP-G (condensin I) and chromosome lengths in the indicated conditions. Each dot represents one nucleus (D) or one chromosome (E). Data plotted for all plots are medians and corresponding 95% CI. The number of nuclei or chromosomes is indicated above the plots.
 
 If H1.8 regulates chromosome length by a mechanism independent of its role in condensin I inhibition, we expect that the chromosome lengths in ∆CAP-G extracts and ∆H1∆CAP-G extracts would be different. Unfortunately, since severe defects in chromosome individualization in ∆CAP-G extracts prevented us from measuring chromosome lengths, this comparison was not possible (see Figure 6B). To circumvent this issue, we asked if similar condensin I levels on both ΔIgG and ΔH1 chromatin would result in similar chromosome lengths. Since condensin I binding to chromosomes is suppressed by H1.8, to load condensin I to chromosomes in ∆H1.8 extracts at the levels seen in control (∆IgG) extracts, we assembled chromosomes in extracts where condensin I was partially depleted (Figure 3—figure supplement 1B). When mitotic chromosomes were assembled in ∆H1.8 extracts that contain 40% (of ΔIgG) condensin I (CAP-G), condensin I level on these chromosomes was equivalent to that on chromosomes in control (∆IgG) extracts (Figure 3E, Figure 3—figure supplement 1C). Consistent with the hypothesis that H1.8 does not contribute to chromosome length regulation independently of condensin I, average chromosome length was essentially identical between these two conditions (ΔH1 40% CAP-G and ∆IgG; Figure 3F, Figure 3—figure supplement 1D).
 
 As H1.8 depletion also results in the accumulation of TOP2A (Figure 1), we investigated whether the increased TOP2A also plays a role in the chromosome elongation in ΔH1 extracts. As TOP2A activity is essential for sperm decondensation (Adachi et al., 1991; Shintomi et al., 2015), we examined the chromosome length upon partial depletion of TOP2A (Figure 3—figure supplement 2A). Similar to previous reports from other systems (Farr et al., 2014; Samejima et al., 2012; Nielsen et al., 2020), mitotic chromosomes prepared in extracts with reduced TOP2A activity show slightly increased chromosome length (Figure 3—figure supplement 2B). Consistent with these observations, partial depletion of TOP2A in H1.8-depleted extracts also led to a further increase and not decrease in chromosome length (Figure 3—figure supplement 2C–E), suggesting that chromosome elongation in H1.8-depleted extracts was not caused by the increased level TOP2A on chromatin. In summary, these results demonstrate that H1.8 controls mitotic chromosome lengths primarily through limiting the chromosome binding of condensin I.
 
-## H1.8 regulates condensin I-driven mitotic loop layer organization
+### H1.8 regulates condensin I-driven mitotic loop layer organization
 
 Experimental and simulation studies have shown that mitotic chromosome length and width are sensitive to the number of condensin I molecules on a chromosome, through affecting the loop size (Gibcus et al., 2018; Goloborodko et al., 2016a; Goloborodko et al., 2016b; Fitz-James et al., 2020). Low levels of condensin I are predicted to result in fewer and larger loops, while higher levels of condensin I will lead to a larger number of smaller loops. Therefore, if linker histone H1.8 decreases chromosome length through limiting condensin I association with chromatin, we expect that the average size of mitotic condensin loops decreases upon H1.8 depletion. As an alternative way to quantitatively assess the effect of H1.8 and condensins on mitotic chromosome organization, we used the chromosome conformation capture assay Hi-C (Lieberman-Aiden et al., 2009).
 
 Hi-C contact probability maps were generated from replicated metaphase X. laevis sperm chromosomes 60 min after cycling back into mitosis in the presence of nocodazole. As seen in mitotic chromosomes in somatic cells (Naumova et al., 2013; Gibcus et al., 2018) and in early stages of mouse development (Du et al., 2017), all the Hi-C contact maps showed no checkerboard pattern commonly associated with interphase chromosome compartments and lacked any sign of topologically associating domains (TADs) (Szabo et al., 2019; Figure 4A; data available at GEO under accession no. GSE164434). Hi-C interaction maps are characterized by the decay in contact probability, P, as a function of the genomic distance, s. To derive quantitative information about the polymer structure of the mitotic chromosomes, we plotted the genome-wide average P(s) (Figure 4B). P(s) plots were consistent among two biological replicates (Figure 4—figure supplement 1A) and among different chromosomes (Figure 4—figure supplement 1B). The interaction decay profile of the control (ΔIgG) chromosomes was also qualitatively similar to mitotic chromosomes in both DT40 and human cells (Naumova et al., 2013; Gibcus et al., 2018; Elbatsh et al., 2019). Condensin I depletion (∆CAP-G) caused a major change in the Hi-C map (Figure 4A), reflecting its severe morphological defects in mitotic chromosomes in Xenopus egg extracts (Hirano et al., 1997). Unlike in DT40 cells, where depletion of condensin I and condensin II reduces interactions at shorter (<6 Mb) and longer (>6 Mb) distances, respectively (Gibcus et al., 2018), condensin I depletion affected interactions at longer distances (~10 Mb), whereas condensin II depletion (ΔCAP-D3) did not cause recognizable changes in interactions at both long and short distances (Figure 4—figure supplement 1C). A second diagonal band, which is indicative of a strong helical organization in the chromosome axis (Gibcus et al., 2018), was not seen in Xenopus egg extracts (Figure 4A, Figure 4—figure supplement 1C), likely reflecting the minor contribution of condensin II in this system or perhaps due to a prolonged arrest in mitosis (Gibcus et al., 2018). In H1.8-depleted extracts (∆H1), a dramatic decrease in interactions at long genomic distances (1–10 Mb) was observed (Figure 4A and B), as expected from the thinner chromosomes (Figure 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig4-v4.jpg)
+
+**Figure 4.:** (A) Hi-C maps of metaphase X. laevis chromosome 3S, binned to 250 kb, in the indicated condition. (B) Genome-wide average contact probability decay curves for the indicated conditions showing the changes in longer distance interactions. (C) Derivative plots of the average contact probability decay curves for dispersed chromosomes from mock (ΔIgG) and H1.8-depleted extracts (ΔH1) showing the change in estimated loop size. The solid and dotted lines are from two independent biological replicates. (D) Derivative plots of the genome-wide average contact probability decay curves in the indicated conditions. The dotted lines indicate the layer sizes for each plotted condition. (E) Estimates of layer size from derivatives of genome-wide probability decay curves upon depletion of H1.8 and CAP-G (condensin I) or CAP-D3 (condensin II). The mean and range of two biological replicates are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Contact probability decay curves of mitotic chromosomes in mock (ΔIgG) and H1-depleted (ΔH1) extracts from two different experiments showing the replicability of the Hi-C features. The solid and dashed lines are from biological replicates. (B) Hi-C maps (left) binned to 500 kb and contact probability curves (right) of single chromosomes showing the uniform effects of H1.8 depletion genome wide. (C) Genome average contact probability decay curves upon H1.8, CAP-G, and CAP-D3 depletions. (D) Genome average contact probability derivative curves of metaphase chromosomes in undiluted mock (ΔIgG) and H1.8-depleted (ΔH1) extracts. The layer size estimates from the valley in the derivative plots are indicated. The dotted lines are a biological replicate. The data for this figure is submitted as Figure 4—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig4-figsupp2-v4.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Western blotting showing the depletion of H3-H4 in total egg extract using the H4K12ac antibody (Zierhut et al., 2014). (B) Quantification of condensin I (CAP-G) immunofluorescence levels on chromosomes normalized to DNA in ∆H1 and ∆H3-H4 extracts. Each dot represents the average signal intensity of a single chromosome cluster (from one nucleus). Data plotted is median and 95% CI > 40 nuclei were quantified for each condition plotted. The statistical significance between ΔH1 and ΔH3-H4 was analyzed by a two-tailed Mann–Whitney U-test. (C) Hi-C probability decay derivative plots estimating the loop sizes in ∆H1 and ∆H3-H4 extracts. The dashed lines indicate the loop sizes in the corresponding conditions and the dotted lines indicate the layer size. Two biological replicates for Hi-C on chromosomes from ΔH3-H4 extracts were performed and similar results were obtained from both experiments. The data for this figure is submitted as Figure 4—source data 1, and the number of nuclei imaged in (B) is indicated above the figure.
 
 P(s) plots are useful to determine the underlying polymer structure of the chromosome such as average loop size (Gibcus et al., 2018). Specifically, the first derivative (slope) of the P(s) plots can reveal both the average loop size and the amount of DNA per layer of the rod-shaped mitotic chromosome (layer size) (Gassler et al., 2017; Abramo et al., 2019; Gibcus et al., 2018; Figure 4C). Average loop size can be estimated from the peak value in the derivative plot (Gassler et al., 2017; Patel et al., 2019). As the derivative plot in our data showed a peak in the 10 kb to 1 Mb range, we estimated that this peak location reflects the average loop size. Unlike mitotic chromosomes in DT40 or HeLa cell lines (Gibcus et al., 2018; Abramo et al., 2019), metaphase chromosomes from Xenopus extracts had a flattened peak (Figure 4—figure supplement 1D), possibly due to a larger variation in loop sizes. Although it is difficult to estimate the exact loop size from these plots, chromosomes from ΔH1 extracts showed a reproducible shift of the peak towards smaller genomic distances (Figure 4—figure supplement 1D). This is consistent with a decrease in loop size due to increased condensin I accumulation on chromatin upon H1.8 depletion. Derivative plots generated from Hi-C maps of dispersed chromosomes in diluted extracts (Figure 3A) showed a similar shift in the peak towards smaller genomic distances upon H1.8 depletion (Figure 4C). The derivative plots from these dispersed chromosomes showed a better-defined peak, allowing a coarse loop size estimate of ~140 kb in control (ΔIgG) extracts and ~110 kb in ΔH1 extracts using the previously reported derivative peak heuristic (Gassler et al., 2017). These coarse loop size estimates are comparable to the estimated size of condensin I-driven loops in DT40 and HeLa cells (Gibcus et al., 2018; Naumova et al., 2013).
 
@@ -77,17 +129,41 @@ The layer size in H1.8/condensin I co-depleted extracts (ΔH1ΔCAP-G) was larger
 
 Since condensin I binding to DNA is also limited by nucleosomes (Zierhut et al., 2014; Kong et al., 2020; Shintomi et al., 2017), we expected that loss of nucleosomes would similarly reduce the loop and layer sizes. To test this, we depleted H3-H4 tetramers using an antibody to acetylated lysine 12 of histone H4 (H4K12ac; Zierhut et al., 2014) and generated metaphase chromosomes for Hi-C (Figure 4—figure supplement 2A). Since X. laevis sperm contains preloaded paternal H3-H4 (Shechter et al., 2009), the number of nucleosomes in our metaphase chromosomes was expected to be reduced by at most 50%. As nucleosomes occupy a large majority of the genomic DNA (Lee et al., 2007; Chereji et al., 2019), even a partial histone depletion (ΔH3-H4) increased chromatin-bound condensin I beyond that of H1.8 depletion (ΔH1) (Figure 4—figure supplement 2B). Consequentially, the layer size in ∆H3-H4 extracts became much smaller (around 500 kb) than in ∆H1 extracts (Figure 4—figure supplement 2C). Assuming that the number of loops per layer is similar in these chromosomes (~40), the loop size estimate is 12 kb, which is much shorter than in H1.8 depletion. Altogether these results suggest that global occupancy of nucleosomes and linker histones can affect DNA loop size and chromosome through controlling the number of condensin molecules on the chromatin fiber.
 
-## H1.8 suppresses condensin-driven mitotic chromosome individualization
+### H1.8 suppresses condensin-driven mitotic chromosome individualization
 
 Condensins and topo II act in concert to generate mitotic chromosomes from decondensed interphase nuclei (Cuvier and Hirano, 2003). Both experimental observations and in silico experiments suggest that condensin can drive decatenation of sister chromatids (Goloborodko et al., 2016a; Nagasaka et al., 2016; Marko, 2009) even during metaphase arrest (Piskadlo et al., 2017). In addition, it has been suggested that condensin-mediated chromosome compaction also promotes chromosome individualization (Brahmachari and Marko, 2019; Sun et al., 2018), though it remains to be established if different linear chromosomes (non-sisters) are catenated with each other even after completion of mitotic compaction since Ki-67 on chromosome surfaces may act as a barrier to prevent interchromosomal DNA interaction during mitosis (Cuylen et al., 2016).
 
 To assess the role of H1.8, condensins, and topo II in chromosome individualization, we used two different assays (Figure 5A). The first was to measure the three-dimensional surface area of metaphase chromosome clusters. In the presence of the microtubule depolymerizing drug nocodazole, metaphase chromosomes derived from each nucleus clustered to form tight ball-like structures (Figure 5B). This clustering can be quantified by the large reduction in the surface area of metaphase chromosome clusters over control nuclei (Figure 5C, Figure 5—figure supplement 1A). This clustering suggests that, in control extracts, chromosomes are predisposed to accumulate interchromosomal contacts (Figure 5A). To verify if these interchromosomal contacts are topological in nature, we physically dispersed the clustered chromosomes by extract dilution (Figure 5A; Funabiki and Murray, 2000). Since this dilution procedure involves mechanical dispersal by hydrodynamic forces, we expect that chromosomes would remain clustered after dilution only in the presence of strong unresolved interchromosomal contacts. Indeed, when ICRF-193, the drug that inhibits topo II-dependent catenation/decatenation without leaving double-strand DNA breaks (Tanabe et al., 1991), was added to egg extracts at the mitotic entry, chromosome individualization was completely blocked, forming large chromosome clusters after extract dilution (Figure 5—figure supplement 1B–D, ICRF-50 min). Even when ICRF-193 was added to metaphase egg extracts after completion of metaphase chromatid formation, but 2 min before extract dilution (Figure 5—figure supplement 1B, bottom), efficiency of chromosome individualization decreased (Figure 5—figure supplement 1C and D, ICRF-2 min). These results suggest that substantial interchromosomal topological catenations remain unresolved in metaphase and that these can be resolved by TOP2A during mechanical dispersion (via spindle or dilution). To quantify the clustering of unresolved chromosomes, we stained the coverslips for CENP-A, the centromere-specific histone H3 variant, which marks a centromere locus per chromosome (Edwards and Murray, 2005). While each fully individualized chromosome showed one CENP-A focus (CENP-A doublet, representing centromeres of a paired sister chromatids, is counted as one focus), multiple CENP-A foci were observed in a cluster of chromosomes. Since even fully individualized chromosomes stochastically interacted during chromosome dispersion, we redefined the chromosome cluster here for the chromosome mass containing four or more CENP-A foci (Figure 5D and E, Figure 5—figure supplement 1E). Although chromosomes from each nucleus tightly compact into a ball-like mass in nocodazole treated metaphase extracts (Figure 5B), they individualized normally by dispersion upon extract dilution (Figure 5D and E, Figure 5—figure supplement 1E). This suggests that the interchromosomal contacts accumulated in the absence of spindles can be resolved by mechanical dispersion. TOP2A inhibition by treatment with ICRF-193 however almost completely blocked chromosome individualization in nocodazole-treated extracts (Figure 5D and E, Figure 5—figure supplement 1E), confirming the accumulation of interchromosomal catenations in clustered chromosomes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig5-v4.jpg)
+
+**Figure 5.:** (A) Schematic showing the dispersal protocol and the different stages for the two chromosome individualization measurements. (B) Representative images of metaphase chromosomes in extracts containing Alexa Fluor 647-labeled tubulin (blue) with and without 10 µg/ml nocodazole. DNA was visualized using Hoechst 33342 (magenta). Scale bar is 20 µm. (C) Quantification of the three-dimensional surface area normalized to the total DNA intensity in (B). Each dot represents a single chromosomal mass. The number of masses quantified in each condition is indicated. (D) Representative images of the dispersed chromosomal masses in the indicated conditions. Scale bar is 20 µm. (E) Percent frequency of individualized chromosomes (chromosomes in DNA masses with <4 CENP-A foci) in the indicated conditions. Data from two biological replicates is shown. The number of masses quantified in each condition is indicated.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig5-figsupp1-v4.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Biological replicate of Figure 5C. (B) Schematic of ICRF-193 addition to check for requirement of topo II activity in individualizing chromosomes. Interphase nuclei were first formed in ∆IgG or ∆H1 extracts, topo II inhibitor ICRF-193 (50 µM) was added to egg extracts, either together with corresponding depleted egg extracts and incubated for 50 min (ICRF-50 min), or 48 min after adding the depleted extracts, followed by 2 min incubation with ICRF-193 (ICRF-2 min). (C) Metaphase extracts processed as (A) were diluted to disperse individualized chromosomes. Representative Hoechst images of chromosomes are shown. Bar, 20 µm. (D) Quantification of the Hoechst-stained area of chromosomes in (B). Each dot represents the area of a single chromosome or a chromosome cluster. Large values indicate the extent of chromosome clusters. The box shows the 10th–90th percentile limits of the sample values. The number of DNA masses imaged in each condition is indicated above the figure. (E) Histogram of the number of chromosomes in clusters containing the indicated number of CENP-A foci in the indicated conditions. The number of chromosomes imaged is the same as in Figure 5E. The data for this figure is submitted as Figure 5—source data 1.
+
 Since condensins promote sister chromatid decatenation through topo II (Baxter et al., 2011; Goloborodko et al., 2016a), we then asked if H1.8-mediated suppression of condensins limits chromosome individualization and resolution of interchromosomal linkages. If so, H1.8 depletion may reduce the minimum required level of condensin activities to support chromosome individualization. In metaphase mock-depleted (ΔIgG) and H1.8-depleted (∆H1) extracts with replicated chromosomes, the extract dilution procedure (Figure 3A) resulted mostly in physically separated single chromosomes but also a small number of clumped chromosomes (Figure 6B, Figure 6—figure supplement 1C). To quantify chromosome individualization, we measured chromosome clustering using CENP-A foci (Figure 6—figure supplement 1), and also independently by chromosome morphology-based classification (Figure 6—figure supplement 1C). Condensin I depletion (ΔCAP-G) resulted in defective chromosome individualization, suggesting that condensin I activity drives resolution of interchromosomal entanglements, and that condensin II is not sufficient to resolve these interchromosomal links in this background. Strikingly, co-depletion of H1.8 and condensin I (ΔH1ΔCAP-G) effectively rescued chromosome individualization without detectable CAP-G on chromatin (Figure 6A–D, Figure 6—figure supplement 1D). This apparent bypass of condensin I requirement in chromosome individualization required condensin II as chromosome individualization failed in the triple-depleted extracts (ΔH1ΔCAP-G∆CAP-D3; Figure 6B,C). The increased condensin II in ΔH1ΔCAP-G extracts may replace the function of condensin I by condensin II in the absence of H1.8 (Figure 6E). These results demonstrate that H1.8-mediated suppression of condensin enrichment on chromatin limits chromosome individualization during mitosis.
 
-## H1.8 prevents chromosomes from hyper-individualization by suppressing condensins and topo II
+![Figure 6.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig6-v4.jpg)
+
+**Figure 6.:** (A) Western blots of total egg extracts showing depletion levels in extract of condensin I and condensin II using the CAP-G and CAP-D3 antibodies, respectively. * represents non-specific band. (B) Representative images of chromosomes after extract dilution, which disperses individualized chromosomes. DNA and centromere-associated CENP-A immunofluorescence are shown. Bar, 20 µm. (C) Percent frequency of individualized chromosomes (chromosomes in DNA masses with <4 CENP-A foci) in the indicated conditions. A large majority of DNA masses with no CENP-A foci are derived from ∆CAP-D3 extracts, where CENP-A loading is compromised (Bernad et al., 2011). DNA masses and CENP-A foci were identified using Otsu’s thresholding algorithm and CENP-A foci in a binarized DNA mask were counted. The numbers of DNA masses counted in each condition were as follows: ΔIgG (502, 643), ΔH1 (1279, 839), ΔCAP-G (447, 170), ΔCAP-D3 (937), ΔH1ΔCAP-G (1565, 301), ΔH1ΔCAP-D3 (1536, 300), ΔH1ΔCAP-GΔCAP-D3 (300, 156). (D) Quantification of CAP-G (condensin I) immunofluorescence normalized to the DNA signal for the indicated conditions. Each gray or orange dot represents the average signal intensity of a single chromosome cluster (from one nucleus). Each black dot represents the median signal intensity from a single experiment. Bars represent mean and range of the medians of two independent experiments. (E) Quantification of CAP-G2 (condensin II) immunofluorescence intensity, normalized to the DNA signal for the indicated conditions. Each gray or magenta dot represents the average signal intensity of a single chromosome cluster (from one nucleus). Each black dot represents the median signal intensity from a single experiment. Bars represent mean and range of the medians of two independent experiments. The p-values in (D) and (E) were calculated by an unpaired Student’s t-test and a two-tailed Mann–Whitney U-test respectively. The number of nuclei imaged in each condition in (D) and (E) in each experiment is indicated above the figures.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig6-figsupp1-v4.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Distribution of CENP-A foci per DNA mass in the experiment shown in Figure 6A–C. Clusters of unresolved chromosomes are represented by higher numbers (>3) of CENP-A foci per DNA mass indicates clusters. No detectable CENP-A focus in ∆CAP-D3 (∆condensin II) extracts is due to low CENP-A signal, reflecting the reported role of condensin II in CENP-A loading (Bernad et al., 2011). The number noted in each sample label is the number of chromosomes/clusters counted in each condition. (B) Percent frequency of single chromosomes (chromosomes in DNA masses with <2 CENP-A foci) in the indicated conditions showing that the cutoff for number of CENP-A foci does not change the relative individualization measured. The number of DNA masses imaged in each condition is the same as in Figure 6C. (C) Categories of chromosome clusters observed upon performing chromosome individualization assay. (D) Percent frequency of DNA clusters categorized as unindividualized nuclei as in (C) in the indicated conditions. Each chromosome mass is classified to one of the three categories based on the morphology. ‘Clumpy chromosomes’ represents a mass containing a few clearly recognizable chromosomes, while ‘unindividualized’ represents a mass with unresolved multiple chromosomes. Mean and SEM from three independent experiments. Each dot represents the percentage of unindividualized chromosome clusters in the indicated condition in an independent biological replicate. The number of DNA masses counted in each condition is as follows: ΔIgG (50, 128, 201), ΔH1 (66, 135, 447), ΔCAP-G (13, 30, 50), ΔH1ΔCAP-G (58, 201, 194).
+
+### H1.8 prevents chromosomes from hyper-individualization by suppressing condensins and topo II
 
 Since TOP2A-mediated decatenation played a role in resolving interchromosomal links, we next examined the functional significance of H1.8-mediated suppression of TOP2A enrichment on mitotic chromosomes (Figure 1C–E), asking if H1.8 depletion could reduce the required TOP2A level in extracts for chromosome individualization. Complete loss of TOP2A inhibits decompaction of sperm nuclei, a process associated with replacement of protamines with histones (Adachi et al., 1991), so we addressed this question using extracts partially depleted of TOP2A (Figure 7A). We first generated nuclei with replicated chromosomes in extracts containing the normal level of TOP2A, and then the extracts were diluted with ∆TOP2A extracts to reduce the total TOP2A level to 25% (Figure 7—figure supplement 1A). Under this condition, the level of chromosome-associated TOP2A also reduced to 25% (Figure 7B). Upon reduction of TOP2A to 25%, the frequency of unindividualized chromosome clusters increased about threefold in ΔIgG background (Figure 7C). However, in the absence of H1.8, extracts with 25% levels of TOP2A were still able to support maximum level of chromosome individualization as chromosome-associated levels of TOP2A became equivalent to untreated control extracts (Figure 7C). These data suggest that chromosome individualization is sensitive to TOP2A levels on chromatin, and that H1.8 suppression of TOP2A plays a role in suppressing chromosome individualization.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig7-v4.jpg)
+
+**Figure 7.:** (A) Schematic of partial TOP2A depletion to test sensitivity of chromosome individualization to TOP2A levels. (B) Quantification of chromosome-associated TOP2A upon partial TOP2A depletion. Each dot represents the mean of TOP2A intensity normalized to DNA intensity of a single chromosome cluster (from one nucleus). The data plotted is median ± 95% CI. (C) Percent frequency of DNA clusters categorized as unindividualized nuclei (Figure 6—figure supplement 1C) upon partial TOP2A depletion. Mean and SEM from three independent experiments. Each dot represents the percentage of unindividualized chromosome clusters in the indicated condition in an independent biological replicate. (D) Representative images of nuclei using DNA (Cy5-dUTP) showing the clustering phenotype in the indicated conditions. Scale bar, 10 µm. (E) Quantification of the three-dimensional surface area of the chromosome clusters in (D) normalized to DNA (Cy5-dUTP) signal. Each gray, magenta, green, or orange dot represents the normalized surface area of single nucleus or chromosome cluster, and each black square represents the median surface area of a single experiment. Data plotted is mean and SEM of four independent experiments. (F) Quantification of TOP2A immunofluorescence intensity normalized to the DNA signal for the indicated conditions. Each gray or magenta dot represents the average signal intensity of a single chromosome cluster (from one nucleus). Each gray, magenta, orange, or gray dot represents the median signal intensity from a single experiment. Mean and SEM of the median of four independent experiments are also shown. (G) Representative images of nuclei using DNA (Cy3-dUTP) showing the clustering phenotype in the indicated conditions. Scale bar, 10 µm. (H) Quantification of the three-dimensional surface area of the chromosome clusters in (G) normalized to DNA (Cy3-dUTP) signal. Each black open circle represents the normalized surface area of single nucleus or chromosome cluster. Data plotted is median and 95% CI. The p-values in (C) and (F) were calculated by an unpaired Student’s t-test, and the p-values in (H) were calculated by a two-tailed Mann–Whitney U-test. The number of nuclei imaged in each condition for each experiment in (E), (F), and (H) is indicated above the figure.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig7-figsupp1-v4.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Western blots of total egg extracts showing partial depletion of TOP2A. Left three lanes: dilution series of total mock-depleted extracts (∆IgG) for signal quantitation. Middle ∆IgG lane: extracts with 25% level of TOP2A. right two ∆H1 lanes; extracts depleted of H1.8 with either 25 or 100% levels of TOP2A. (B) Quantification of TOP2A signal normalized to the DNA signal in the indicated conditions. Each gray, orange, or violet dot represents the mean normalized TOP2A level in a single nucleus. The black squares represent the median of the TOP2A values of all the nuclei in a single experiment. Data plotted is mean and SEM. The p-value in (C) was calculated using an unpaired Student’s t-test. The number of nuclei imaged in (C) in each condition is indicated above the figure, and the data for this figure is submitted as Figure 7—source data 1.
 
 These data suggest that increased condensins and topo II levels on chromosomes in H1.8-depleted extracts reduce the number of links between chromosomes. To assess the consequence of these reduced interchromosomal links, we measured the chromosome clustering in nocodazole-treated extracts. As shown earlier, chromosomes of each nucleus in nocodazole-treated control extracts cluster into tight balls (Figure 5B,C). In contrast, individual chromosomes were more readily distinguished by DNA staining and spread to larger area in ΔH1 extracts, suggesting that the H1.8-mediated suppression of chromosome individualization is responsible for the chromosome clustering when spindle assembly is compromised (Figure 7D,E). Although condensin I depletion (ΔCAP-G) led to failed chromosome individualization (Figure 6B,C), these chromosomes do not show increased clustering over those seen in control (ΔIgG) extracts. This is consistent with the notion that chromosomes may already be maximally clustered in control extracts. However, H1.8 condensin I co-depleted extracts (ΔH1ΔCAP-G) showed reduced clustering compared to ∆IgG extracts, despite the shorter average chromosome length in ∆H1∆CAP-G extracts (Figure 3D,F), suggesting that chromosome spreading upon H1.8 depletion is not primarily driven by chromosome elongation but by chromosome hyper-individualization. Since TOP2A is enriched on chromosomes upon H1.8 depletion in a condensin-independent manner (Figure 7F, Figure 7—figure supplement 1B), we then asked if this increased TOP2A plays a role in this increased chromosome spreading. Partial TOP2A depletion had no effect on clustering in control (ΔIgG) extracts since these chromosomes were already tightly packed together (Figure 7G,H–25% TOP2A). TOP2A depletion in H1.8-depleted extracts also did not reduce the chromosome spreading even though TOP2A levels on these chromosomes became comparable to that of the control (ΔIgG-100%; Figure 7G,H), perhaps because increased condensin loading can compensate for reduced TOP2A activity. However, partial TOP2A depletion reduced chromosome spreading in H1.8/condensin I co-depleted (ΔH1ΔCAP-G) extracts, suggesting that suppression of both condensin I and topo II by H1.8 keeps egg extract chromosomes together during mitosis even in the absence of spindle microtubules.
 
@@ -98,6 +174,73 @@ It has been thought that the linker histone H1 promotes local chromatin compacti
 ![Figure 8.](https://cdn.elifesciences.org/articles/68918/elife-68918-fig8-v4.jpg)
 
 **Figure 8.:** In the absence of H1.8, more condensins and topo II bind to more DNA loops of shorter length, resulting in longer and more individualized chromosomes (top). H1.8 limits chromatin levels of condensins and topo II to generate longer and thus fewer DNA loops, resulting in shorter and less individualized chromosomes (bottom).
+
+**Table 1.**
+ Summary table of chromatin levels of condensins, topo II, and chromosome phenotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Condensin I</th>
+      <th>Condensin II</th>
+      <th>TOP2A</th>
+      <th>Chromosome length</th>
+      <th>Chromosome individualization</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>∆H1</td>
+      <td>2.5×</td>
+      <td>2×</td>
+      <td>3.5×</td>
+      <td>1.5×</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>∆CAP-G</td>
+      <td>0.1×</td>
+      <td>1×</td>
+      <td>1×</td>
+      <td>NA</td>
+      <td>Defective</td>
+    </tr>
+    <tr>
+      <td>∆CAP-D3</td>
+      <td>1×</td>
+      <td>0.4×</td>
+      <td>1×</td>
+      <td>1×</td>
+      <td>Unchanged</td>
+    </tr>
+    <tr>
+      <td>∆H1∆CAP-G</td>
+      <td>0.2×</td>
+      <td>2×</td>
+      <td>3.5×</td>
+      <td>0.5×</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>∆H1∆CAP-D3</td>
+      <td>2.5×</td>
+      <td>0.9×</td>
+      <td>3.5×</td>
+      <td>1.5×</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>∆H1∆CAP-G ∆CAP-D3</td>
+      <td>0.2×</td>
+      <td>0.9×</td>
+      <td>3.5×</td>
+      <td>NA</td>
+      <td>Defective</td>
+    </tr>
+  </tbody>
+</table>
 
 Nucleosomes reduce binding of condensins to DNA in vitro (Kong et al., 2020), in vivo (Toselli-Mollereau et al., 2016; Piazza et al., 2014), and in Xenopus egg extracts (Zierhut et al., 2014; Shintomi et al., 2017). Now we showed that the linker histone H1.8 limits binding of condensin I and II to chromatin both in vitro and in Xenopus egg extracts. H1.8 suppressed condensin binding on both mononucleosomes and nucleosome arrays, suggesting that H1.8 is able to compete out condensins for the same linker DNA targets (Rudnizky et al., 2021), though the capacity of linker histones to promote higher-order structures or phase separation may also limit the access of condensin (Song et al., 2014; Gibson et al., 2019). Since condensin I subunits are most abundant chromatin proteins whose levels were enhanced by H1.8 depletion (Figure 1—figure supplement 1E, Figure 1—source data 2), and chromosome lengths can be dictated by the amount of condensins in a manner independently of H1.8 (Figure 3F), we propose that regulating linker histone stoichiometry could serve as a rheostat to control chromosome length through tuning the condensin level on chromatin (Figure 8). Although such a linker histone-mediated chromosome length shortening seems odd in the large oocyte cells, mitotic chromosome length is constrained not only by the cell size but also by the spindle size (Schubert and Oud, 1997). As spindle size in Xenopus embryos does not scale with the cell size during the early divisions (Wühr et al., 2008), lack of chromosome clearance from the spindle midzone due to elongated anaphase chromosomes may result in chromosome breakage by the cytokinesis (Maresca et al., 2005; Janssen et al., 2011). By keeping the spindle and chromosome length short, variations in duration for chromosome segregation would be reduced to better synchronize cell division. Since the larger cell size correlates with reduced mitotic checkpoint strength (Galli and Morgan, 2016; Minshull et al., 1994), limiting chromosome length might be important for their timely and synchronous segregation during the rapid early embryonic cell divisions.
 
@@ -111,15 +254,291 @@ Linker histones are a dynamic component of chromatin (Misteli et al., 2000). Lin
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## X. laevis frogs
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>SF9 insect cells</td>
+      <td>Gibco</td>
+      <td>11496015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trichoplusia ni)</td>
+      <td>High Five insect cells</td>
+      <td>Gibco</td>
+      <td>B85502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(Pichia pastoris)</td>
+      <td>Yeast cells</td>
+      <td>Invitrogen/Thermo Fisher Scientific Ryu et al., 2010</td>
+      <td>C18100</td>
+      <td>GS115</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus</td>
+      <td>NASCO</td>
+      <td>LM00531RRID:XEP_Xla100</td>
+      <td>Female, adult frogs</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus</td>
+      <td>NASCO</td>
+      <td>LM00715RRID:XEP_Xla100</td>
+      <td>Male, adult frogs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_302613</td>
+      <td>WB (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H2B (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_302612</td>
+      <td>WB (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_477593</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H1.8 (rabbit polyclonal)</td>
+      <td>Jenness et al., 2018</td>
+      <td>RU1974</td>
+      <td>WB (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TOP2A (rabbit polyclonal)</td>
+      <td>Ryu et al., 2010</td>
+      <td>NA</td>
+      <td>WB (2 µg/ml)IF (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CAP-G (rabbit polyclonal)</td>
+      <td>Zierhut et al., 2014</td>
+      <td>RU1008</td>
+      <td>WB (2 µg/ml)IF (2 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-anti-CAP-G (rabbit polyclonal)</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>IF (4 µg/ml),refer to ‘Antibodies’ section in Methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CAP-D2 (rabbit polyclonal)</td>
+      <td>Hirano et al., 1997</td>
+      <td>NA</td>
+      <td>WB (2 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CAP-G2 (rabbit polyclonal)</td>
+      <td>Gift from S. Rankin</td>
+      <td>OMRF195</td>
+      <td>WB (4 µg/ml)IF (4 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CAP-D3 (rabbit polyclonal)</td>
+      <td>This study</td>
+      <td>RU2042</td>
+      <td>WB (2 µg/ml),refer to ‘Antibody production’ section in Methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- CENP-A (rabbit polyclonal)</td>
+      <td>Wynne and Funabiki, 2015</td>
+      <td>NA</td>
+      <td>IF (4 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680 LT anti-mouse IgG(H + L) (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:AB_2687826</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680 LT anti-rabbit IgG(H + L) (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:AB_621841</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800 CW anti-mouse IgG(H + L) (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:AB_621842</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800 CW anti-rabbit IgG(H + L) (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:AB_2687826</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800 CW anti-mouse IgG(H + L) (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:AB_621843</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 555 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_141784</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 555 (goat polyclonal)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>RRID:AB_2338079</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 488 F(ab’)2 fragment (goat polyclonal)</td>
+      <td>LifeScience Technologies</td>
+      <td>RRID:AB_142134</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1404</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ICRF-193</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-200889</td>
+      <td>50/500 µM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads-Protein A</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>100-08D</td>
+      <td>250 ng antibody/1 µl beads</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads-M280 Streptavidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11206D</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>R2019A</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DpnII</td>
+      <td>NEB</td>
+      <td>R0543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNA polymerase I, large (Klenow) fragment</td>
+      <td>NEB</td>
+      <td>M0210S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 DNA ligase 1 U/µl</td>
+      <td>Invitrogen</td>
+      <td>15224090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 DNA polymerase</td>
+      <td>NEB</td>
+      <td>M0203L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 polynucleotide kinase</td>
+      <td>NEB</td>
+      <td>M0201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Biotin-14-dATP</td>
+      <td>Invitrogen</td>
+      <td>19524016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Nano DNA Sample Prep Kit</td>
+      <td>Illumina</td>
+      <td>20015964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Klenow fragment (3′ → 5′ exo-)</td>
+      <td>NEB</td>
+      <td>M0212L</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### X. laevis frogs
 
 Animal husbandry and protocol (20031) approved by institutional animal care and use committee (IACUC) of the Rockefeller University were followed. Mature female pigmented X. laevis frogs (NASCO- LM00535MX) and male frogs (NASCO-LM00715) were maintained in a temperature-controlled room (16–18°C) using a recirculating water system at The Rockefeller Comparative BioScience Center (CBC). Frogs were temporarily moved to a satellite facility for ovulation.
 
-## Methods
+### Methods
 
-## Antibodies
+#### Antibodies
 
 H3 was detected with ab1791 (Abcam; 1 µg/ml for western blots). H2B was detected with ab1790 (Abcam; 1 µg/ml for western blots). α-tubulin was detected with T9026 (Sigma; 1:10,000 for western blots).
 
@@ -127,59 +546,59 @@ H1.8 was detected using anti-H1M (H1.8) antibody (Jenness et al., 2018, 1 µg/ml
 
 IRDye 680LT goat anti-mouse IgG (H + L), IRDye 680LT goat anti-rabbit IgG (H + L), IRDye 800CW goat anti-mouse IgG (H + L), and IRDye 800CW goat anti-rabbit IgG (H + L) were used at 1:15,000 (LI-COR Biosciences) dilution for western blots. Alexa 488, Alexa 555, and Alexa647 conjugated secondary antibodies (Jackson Immunoresearch) were used for immunofluorescence.
 
-## Antibody production
+#### Antibody production
 
 xCAP-D3 C-terminal peptide (CRQRISGKAPLKPSN) was synthesized at The Rockefeller University Proteomics Resource Center. The peptide was then coupled to keyhole limpet hemocyanin protein according to the manufacturer’s protocol (Thermo Fisher Scientific) and used to immunize rabbits (Cocalico Biologicals). Antibody was purified from the immunized rabbit sera using affinity purification against the same peptide coupled to SulfoLink resin (Thermo Fisher Scientific). The antibody was dialyzed into PBS + 50% glycerol and stored with the addition of 0.05% sodium azide.
 
-## Xenopus egg extracts and immunodepletion
+#### Xenopus egg extracts and immunodepletion
 
 Cytostatic factor (CSF)-arrested X. laevis egg extracts were generated as previously described (Murray, 1991). To generate replicated mitotic chromosomes, 0.3 mM CaCl2 was added to CSF-arrested extracts containing X. laevis sperm to cycle the extracts into interphase at 20°C. 90 min after adding CaCl2, half the volume of fresh CSF extract and 40 nM of the non-degradable cyclin BΔ90 fragment were added to interphase extracts to induce mitotic entry (Holloway et al., 1993; Glotzer et al., 1991). After 60 min of incubation, extracts were processed for morphological and biochemical assessments. For all experiments involving immunofluorescence, 10 nM nocodazole was added along with the cyclin BΔ90.
 
 For immunodepletions of 50–100 µl extracts, antibodies were conjugated to Protein-A coupled Dynabeads (Thermo Fisher Scientific) at 250 μg/ml beads, either at room temperature for 60 min or overnight at 4°C. Mock (IgG) and H1.8 (H1) antibody beads were crosslinked using 4 mM BS3 (Thermo Fisher Scientific) at room temperature for 45 min and quenched using 10 mM Tris-HCl (Sigma). All antibody beads were washed extensively using Sperm Dilution Buffer (SDB; 10 mM HEPES, 1 mM MgCl2, 100 mM KCl, 150 mM sucrose) and separated from the buffer using a magnet before addition of extract. H1.8 depletions (ΔH1) were performed with two 45 min rounds of depletion at 4°C using 2 volumes of antibody-coupled beads for each round. For condensin I and condensin II depletions, 1.5–2 volumes of xCAP-G or xCAP-D3 antibody-coupled beads were used in a single round for depletion for 60 min at 4°C. For double depletion of condensin I and II, a single round of depletion using 1.5 volume each of xCAP-G and xCAP-D3 antibody-coupled beads was performed. For TopoII depletions (ΔTOP2A), a single round of depletion was performed using 1.2 volume of anti-TopoIIα coupled antibody beads for 60 min at 4°C. After the incubations, the beads were separated using a magnet.
 
-## Western blots
+### Western blots
 
 For total egg extract samples, 1 µl sample was added to 25 μl 1× sample buffer (50 mM Tris-HCl pH 6.8, 2% SDS, 10% glycerol, 2.5% β-mercaptoethanol) and boiled for 10 min. Samples were spun at 8000 rpm for 3 min before gel electrophoresis and overnight transfer at 4°C. Blotting membranes were blocked with 4% powdered skim-milk (Difco). Primary and secondary antibodies were diluted in LI-COR Odyssey blocking buffer-PBS (LI-COR Biotechnology). Western blots were imaged on a LI-COR Odyssey. Quantifications were done using ImageJ.
 
-## Hi-C
+### Hi-C
 
-## Standard samples
+#### Standard samples
 
 106 X. laevis sperm nuclei were added to 150 µl interphase extract and allowed to replicate at 21°C for 90 min. The extracts were cycled back into mitosis by adding 100 µl CSF extract, 40 nM of the non-degradable cyclin BΔ90 and 10 µM nocodazole (Sigma). After 60 min at metaphase, the samples were diluted into 12 ml of fixing solution (80 mM K-PIPES pH 6.8, 1 mM MgCl2, 1 mM EGTA, 30% glycerol, 0.1% Triton X-100, 1% formaldehyde) and incubated at room temperature with rocking for 10 min. The samples were then quenched with 690 µl 2.5 M glycine for 5 min at room temperature. The samples were then placed on ice for 15 min and then centrifuged at 6000 g at 4°C for 20 min. The pellet was then resuspended in 1 ml ice-cold DPBS. The tube was then centrifuged again at 13,000 g for 20 min at 4°C. The buffer was aspirated, and the pellet was frozen in liquid nitrogen and then stored at –80°C.
 
-## Dispersed chromosome samples
+#### Dispersed chromosome samples
 
 The metaphase chromosome samples were prepared as above, but nocodazole was omitted. The metaphase extracts were diluted by adding 1.2 ml chromosome dilution buffer (10 mM K-HEPES pH 8, 200 mM KCl, 0.5 mM EGTA, 0.5 mM MgCl2, 250 mM sucrose) and incubated at room temperature for 8 min. 6 ml fixation buffer (5 mM K-HEPES pH 8, 0.1 mM EDTA, 100 mM NaCl, 2 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 0.5% Triton X-100, 20% glycerol, 1% formaldehyde) was added to the tube, mixed by rotation 10 min at room temperature. 420 μl 2.5 M glycine was added to quench the formaldehyde, and the mixture was incubated for 5 min at room temperature. The samples were then placed on ice for 15 min and then centrifuged at 6500 g at 4°C for 20 min. The pellet was then resuspended in 1 ml ice-cold DPBS. The tube was then centrifuged again at 13,000 g for 20 min at 4°C. The buffer was aspirated, and the pellet was frozen in liquid nitrogen and then stored at –80°C.
 
 Two biological replicates were performed for each sample, and they confirmed similar behavior among the replicates.
 
-## Library prep and sequencing
+#### Library prep and sequencing
 
 Hi-C protocol was performed as previously described (Belaghzal et al., 2017), with the exception that cell disruption by douncing was omitted. Briefly, pellets were digested by DpnII overnight at 37°C prior to biotin fill-in with biotin-14-dATP for 4 hr at 23°C. After ligation at 16°C for 4 hr, crosslinking was reversed by proteinase K at 65°C overnight. Purified ligation products were sonicated with 200 bp average size, followed by 100–350 bp size selection. End repair was performed on size-selected ligation products, prior to purifying biotin tagged DNA fragments with streptavidin beads. A-tailing was done on the purified DNA fragments followed by Illumina Truseq adapter ligation. Hi-C library was finished by PCR amplification and purification to remove PCR primers. Final library was sequenced on Illumina HiSeq 4000 with PE50.
 
-## Hi-C data processing
+### Hi-C data processing
 
 Hi-C fastq files were mapped to the X. laevis 9.2 genome with the distiller-nf pipeline (https://github.com/open2c/distiller-nf, Flyamer, 2021). The reads were aligned with bwa-mem, afterwards duplicate reads were filtered out. These valid pair reads were aggregated in genomic bins of 10, 25, 50, 100, 250, and 500 kb using the cooler format (Abdennur and Mirny, 2020). Cooler files were balanced using Iterative balancing correction (Imakaev et al., 2012), ignoring first two diagonals to avoid artifacts within the first bin such as re-ligation products. Contact heatmaps from balanced cooler files were viewed and exported with Higlass (Kerpedjiev et al., 2018).
 
-## Contact probability (P(s)) and derivatives
+### Contact probability (P(s)) and derivatives
 
 Contacts probability was calculated by contact frequency (P) as function of genomic distance (s). Interaction pairs were selected for genomic distance from 1 kb till 100 Mb binned at log-scale. Within each genomic bin, observed numbers of interactions were divided by total possible number of interactions within the bin. Distance decay plots were normalized by total number interactions, and derivative plots were made from corresponding P(s). The derivative plots plotted in Figure 4C and D, Figure 4—figure supplement 1D were drawn using LOESS smoothing.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescence was performed according to previously published protocols (Desai et al., 1998). 10 µl metaphase extracts containing chromosomes were diluted into 2 ml of fixing solution (80 mM K-PIPES pH 6.8, 1 mM MgCl2, 1 mM EGTA, 30% glycerol, 0.1% Triton X-100, 2% formaldehyde) and incubated at room temperature for 7 min. The fixed chromosomes were then laid onto a cushion (80 mM K-PIPES pH 6.8, 1 mM MgCl2, 1 mM EGTA, 50% glycerol) with a coverslip placed at the bottom of the tube and centrifuged at 5000 g for 15 min at 18°C in a swinging bucket rotor. The coverslips were recovered and fixed with methanol (–20°C) for 4 min. The coverslips were then blocked overnight with antibody dilution buffer (50 mM Tris-Cl pH 7.5, 150 mM NaCl, 2% BSA). Primary and secondary antibodies were diluted in antibody dilution buffer and sealed in Prolong Gold AntiFade mounting media (Thermo Fisher Scientific).
 
 For coverslips stained with Alexa488-anti-CAP-G antibody (Figures 1C, D, 3E, 6D, Figure 3—figure supplements 1C and 2D, Figure 4—figure supplement 2B and Figure 6D and E), coverslips stained with primary and secondary antibodies were washed three times with PBS-T (1× PBS + 0.5% Tween-20). Then, they were blocked with 100 µg/ml rabbit IgG or 30 min and were incubated with Alexa488-anti-xCAP-G antibody without any washing steps in between. The coverslips were then washed three times with PBS-T and then sealed in Prolong Gold AntiFade mounting media (Thermo Fisher Scientific).
 
-## Chromosome individualization
+### Chromosome individualization
 
 Chromosomes from each nucleus often remain clustered in metaphase crude egg extracts. To disperse these clustered chromosomes, extracts containing chromosomes were diluted following a method described before with some modifications (Funabiki and Murray, 2000). 40 µl Chromosome Dilution Buffer (10 mM K-HEPES pH 8, 200 mM KCl, 0.5 mM EGTA, 0.5 mM MgCl2, 250 mM sucrose) was added to 10 µl metaphase extract containing chromosomes and incubated at room temperature for 8 min. 200 µl fixation buffer (5 mM K-HEPES pH 8, 0.1 mM EDTA, 100 mM NaCl, 2 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 0.5% Triton X-100, 20% glycerol, 2% formaldehyde) was added to the tube and incubated for 10 min at room temperature. The samples were laid over a cushion (5 mM K-HEPES pH 8, 0.1 mM EDTA, 100 mM NaCl, 2 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 50% glycerol) with a coverslip placed under the cushion and centrifuged at 7000 g for 20 min at 18°C in a swinging bucket rotor. The coverslips were recovered and fixed with ice-cold methanol for 4 min, washed extensively and blocked overnight with antibody dilution buffer (50 mM Tris-Cl pH 7.5, 150 mM NaCl, 2% BSA). CENP-A immunofluorescence was performed on these coverslips for Figures 5D, E, 6B, C, Figure 6—figure supplement 1A and B.
 
-## Chromosome purification
+### Chromosome purification
 
 One volume of metaphase extracts with ~3000/µl sperm nuclei was diluted into 3 volumes of DB2 (10 mM K-HEPES, 50 mM β-glycerophosphate, 50 mM NaF, 20 mM EGTA, 2 mM EDTA, 0.5 mM spermine, 1 mM phenylmethylsulfonyl fluoride, 200 mM sucrose) and laid over 1 ml cushion (DB2 with 50% sucrose). The tube was centrifuged in a swinging bucket rotor at 10,000 g for 30 min at 4°C. Most of the cushion was aspirated and the pellet was resuspended in the remaining solution and transferred to a fresh tube. The sample was centrifuged again at 13,000 g for 15 min at 4°C. The pellet was then resuspended in 1× sample buffer and boiled for 10 min before being subject to gel electrophoresis.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 All the quantitative immunofluorescence imaging and some of the spindle imaging was performed on a DeltaVision Image Restoration microscope (Applied Precision), which is a wide-field inverted microscope equipped with a pco.edge sCMOS camera (pco). The immunofluorescence and surface area measurement samples were imaged with z-sections of 200 nm width with a 100× (1.4 NA) objective and were processed with a iterative processive deconvolution algorithm using the SoftWoRx (Applied Precision). The dispersed chromosomes imaged for length measurements and chromosome individualization were imaged in five 1 µm z-sections with a 63× (1.33 NA) silicone oil objective.
 
@@ -195,7 +614,7 @@ For the categorization of unindividualized chromosomes in Figure 6—figure supp
 
 For chromosome length measurements, >54 chromosomes were measured in each experiment to ensure that a relatively even sampling of the 18 different chromosomes of each sperm nucleus was possible. Chromosome length measurements were done by manually tracing the chromosomes on a single maximum intensity slice in ImageJ 1.52p.
 
-## Mononucleosomes and nucleosome arrays
+### Mononucleosomes and nucleosome arrays
 
 Nucleosome arrays were prepared as previously noted (Guse et al., 2011; Zierhut et al., 2014). The plasmid pAS696, which contains 19 repeats of the Widom 601 nucleosome position sequence (Lowary and Widom, 1998), was digested with EcoRI, XbaI, HaeII, and DraI. The fragment containing the array was isolated using polyethylene glycol-based precipitation. The ends of the DNA fragment were filled in with dATP, dGTP, dCTP, and Bio-16-dUTP (Chemcyte) using Klenow DNA polymerase (NEB) and purified using Sephadex G-50 Nick columns (Cytiva Biosciences).
 
@@ -203,34 +622,34 @@ Mononucleosomal DNA were prepared by digesting pAS696 using AvaI. The 196 bp fra
 
 For nucleosome deposition, 10 µg of DNA arrays or mononucleosomal DNA was mixed with equimolar amount of X. laevis H3-H4 tetramer and twice equimolar amount of X. laevis H2A-H2B dimers in 1× TE with 2 M NaCl. The mixture was added into in a Slide-A-Lyzer dialysis cassette (Thermo Fisher Scientific) and placed into 500 ml high salt buffer (10 mM Tris-Cl pH 7.5 @ 4°C, 2 M NaCl, 1 mM EDTA, 5 mM β-mercaptoethanol, 0.01% Triton X-100). Salt was reduced in a gradient by pumping in 2 l of low salt buffer (10 mM Tris-Cl pH 7.5 at 4°C, 100 mM NaCl, 1 mM EDTA, 5 mM β-mercaptoethanol, 0.01% Triton X-100) at constant volume at 1 ml/min. The quality of the nucleosome arrays was ascertained by digesting the nucleosome arrays with AvaI overnight in low magnesium buffer (5 mM potassium acetate, 2 mM Tris-acetate, 0.5 mM magnesium acetate, 1 mM DTT, pH 7.9) and electrophoresed in a 5% polyacrylamide gel made in 0.5× TBE (45 mM Tris-borate, 1 mM EDTA). The mononucleosomes were assayed by direct electrophoresis.
 
-## Nucleosome-binding assays
+### Nucleosome-binding assays
 
 Nucleosome arrays were bound to M280 Streptavidin Dynabeads (Thermo Fisher Scientific) in chromatin bead binding buffer (50 mM Tris-Cl pH 8, 150 mM NaCl, 0.25 mM EDTA, 0.05% Triton X-100, 2.5% polyvinylalcohol) by shaking at 1300 rpm for 3.5 hr. To block the Step tagged condensin complexes from binding the unconjugated streptavidin on the beads during the condensin pull downs, the beads were washed once in chromatin binding buffer and then incubated in 1 mM biotin in chromatin-binding buffer by shaking at 1300 rpm for 1 hr. The beads were then washed with chromatin-binding buffer (50 mM Tris-Cl pH 8, 150 mM NaCl, 0.25 mM EDTA, 0.05% Triton X-100) three times, moved to a new tube, washed twice with SDB (10 mM HEPES, 1 mM MgCl2, 100 mM KCl, 150 mM sucrose), and split into two tubes. SDB with 0.0008% poly-glutamic acid (Sigma; Stein and Künzler, 1983) was mixed with 400 nM recombinant xH1.8 (buffer for control) and incubated for 5 min at room temperature. This mixture was incubated with the beads (half with buffer, half with xH1.8) with rotation at 16°C. The beads were then washed 1× with SDB and 1× with binding buffer (10 mM HEPES pH 8, 40 mM NaCl, 2.5 mM MgCl2, 0.5 mM DTT, 0.05% Triton X-100). Beads were washed 2× with binding buffer with indicated assay salt concentration and resuspended in binding buffer with 100 nM recombinant TOP2A, 380 nM human condensin I, condensin I Q loop mutant, or 320 nM condensin II or condensin II Q loop mutant. The beads were rotated at room temperature for 30 min. Total reaction samples were taken, and the beads were washed three times on a magnet in binding buffer and moved to a new tube. The beads were collected on a magnet and resuspended in 1× sample buffer (50 mM Tris-HCl pH 6.8, 2% SDS, 10% glycerol, 2.5% β-mercaptoethanol) and boiled for 5 min. Gel electrophoresis was performed, and the gels were stained with GelCode Blue Stain reagent (Thermo Fisher Scientific).
 
-## Condensin gel shift assays
+### Condensin gel shift assays
 
 200 nM Alexa647 labeled 196 bp mononucleosomes were mixed with 0.0008% poly-glutamic acid (Sigma; Stein and Künzler, 1983) and half was mixed with 400 nM recombinant xH1.8 in 1× binding buffer (10 mM HEPES pH 8, 50 mM NaCl, 2.5 mM MgCl2, 5 mM ATP, 0.5 mM DTT, 0.05% Triton X-100) and incubated for 30 min at room temperature. 100 nM of the mononucleosomes with or H1.8 were mixed with the indicated concentration of condensin I in 1× binding buffer at 4°C for 30 min and subject to electrophoresis onto a 5% polyacrylamide gel in 0.5× TBE at room temperature. The gels were imaged on a LI-COR Odyssey (LI-COR Biotechnology). The binding curves were fitted using GraphPad Prism 8.4.3 using the sigmoidal binding curve option of the nonlinear curve fitting.
 
-## Protein purification
+### Protein purification
 
-## H1.8
+#### H1.8
 
 A pET51b vector expressing X. laevis H1.8 with an N-terminal Strep-Tag II and C-terminal 6× Histidine-tag was a gift from Rebecca Heald (UC Berkeley). E. coli Rosetta2 (DE3 pLysS) cells containing expression plasmids were grown in TBG-M9 media (15 g/l tryptone, 7.5 g/l yeast extract, 5 g/l NaCl, 0.15 g/l MgSO4, 1.5 g/l NH4Cl, 3 g/l KH2PO4, 6 g/l Na2HPO4; 0.4% glucose) at 37°C until they reach OD ~0.6 and were supplemented with 1 mM isopropylthio-β-galactoside (IPTG) and grown at 18°C for 14 hr. Cells were collected and resuspend in lysis buffer (1× PBS, 500 mM NaCl, 10% glycerol, 20 mM imidazole, 0.1% Triton X-100, 10 mM β-mercaptoethanol, 1 mM phenylmethylsulfonyl fluoride, 10 µg/ml leupeptin, 10 µg/ml pepstatin, 10 µg/ml chymostatin). All subsequent steps were carried out at 4°C. After 30 min incubation, the cell suspension was sonicated and centrifuged at 45,000 g for 45 min at 4°C. The supernatant was added to Ni-NTA beads (Bio-Rad) and rotated for 60 min. The beads were then washed with Wash Buffer 1 (1× PBS, 20 mM imidazole, 500 mM NaCl, 4 mM β-mercaptoethanol, 10 mM ATP, 2.5 mM MgCl2, cOmplete EDTA-free protease inhibitor cocktail; Roche). The beads were eluted with NTA elution buffer (1× PBS, 400 mM imidazole, 500 mM NaCl). The correct fractions were collected and dialyzed into PBS supplement with 500 mM NaCl, concentrated using Amicon Ultra centrifugal filters (10k cutoff), flash frozen, aliquoted, and stored at –80°C.
 
-## TopoIIα
+#### TopoIIα
 
 X. laevis TOP2A tagged with calmodulin-binding protein (CBP) was purified from Pichia pastoris yeast as reported (Ryu et al., 2010) with some modifications. P. pastoris integrated with a CBP tagged TOP2A cassette under the influence of an alcohol oxidase (AOX) promoter (a gift from Yoshiaki Azuma) were grown in BMGY media (1% yeast extract, 2% peptone, 100 mM potassium phosphate pH 6, 1.34% yeast nitrogen base, 4 × 10–5 % biotin, 1% glycerol) containing 50 µg/ml G418 (Thermo Fisher Scientific) at 30°C until OD ~ 4.0. The cells were collected by centrifugation and split into BMMY media (1% yeast extract, 2% peptone, 100 mM potassium phosphate pH 6, 1.34% yeast nitrogen base, 4 × 10–5 % biotin, 0.5% methanol) and grown at 22°C for 14 hr. The cells were collected, packed into a syringe, and extruded into liquid nitrogen in the form of noodles. These frozen noodles were lysed using a Retsch PM100 cryomill (Retsch) with continuous liquid nitrogen cooling. The cyromilled cells were then resuspended in Lysis Buffer (150 mM NaCl, 18 mM β-glycerophosphate, 1 mM MgCl2, 40 mM HEPES [pH 7.8], 5% glycerol, 0.1% Triton X-100, 1 mM DTT, cOmplete EDTA-free protease inhibitor tablet) and sonicated on ice. The cells were centrifuged at 35,000 g for 45 min at 4°C. 2 mM CaCl2 was added to the supernatant along with calmodulin-sepharose beads (Strategene) and the mixture was incubated at 4°C for 120 min. The beads were then washed with ATP-Wash Buffer (Lysis Buffer + 5 mM MgCl2, 2 mM CaCl2, 1 mM ATP), Wash Buffer 1 (Lysis Buffer + 2 mM CaCl2), Wash Buffer 2 (300 mM NaCl, 1 mM MgCl2, 2 mM CaCl2, 20 mM HEPES [pH 7.8], 5% glycerol, 1 mM DTT) and then eluted into elution buffer (300 mM NaCl, 1 mM MgCl2, 5 mM EGTA, 20 mM HEPES [pH 7.8], 5% glycerol, 1 mM DTT).
 
 The eluted protein was then passed through a MonoQ anion exchange column (Cytiva) on an AKTA-FPLC (Cytiva) to separate co-purified DNA. The flowthrough was then digested with TEV protease to cleave the CBP tag and then loaded on a HiTrap Heparin HP column (Cytiva) on an AKTA-FPLC and eluted using a salt gradient of 150 mM NaCl to 1 M NaCl. The selected fractions were then loaded on a Superose 6 gel filtration column (Cytiva) and eluted in freezing buffer (250 mM NaCl, 1 mM MgCl2, 20 mM HEPES pH 7.8, 5% glycerol, 1 mM DTT). The protein was then concentrated and frozen in aliquots at –80°C.
 
-## Condensins
+#### Condensins
 
 Human condensin complexes were purified as described previously (Kong et al., 2020). Briefly, the five subunits of human condensin I and II, sub-complexes, and Q-loop mutations and were assembled into biGBac vectors (Weissmann et al., 2016) to create baculovirus for protein expression in HighFive insect cells. Cell were lysed in condensin purification buffer (20 mM HEPES [pH 8], 300 mM KCl, 5 mM MgCl2, 1 mM DTT, 10% glycerol) supplemented with Pierce protease inhibitor EDTA-free tablet (Thermo Scientific) and Benzonase (Sigma). Cleared lysate was loaded on to a StrepTrap HP (GE), washed with condensin purification buffer, and eluted with condensin purification buffer supplemented with 5 mM Desthiobiotin (Sigma). Protein-containing fractions were pooled, diluted twofold with Buffer A (20 mM HEPES [pH 8], 5 mM MgCl2, 5% glycerol, 1 mM DTT), loaded on to HiTrap Heparin HP column (GE), washed with Buffer A with 250 mM NaCl, then eluted with buffer A with 500 mM NaCl. Finally, size-exclusion chromatography was performed using condensin purification buffer and a Superose 6 16/70 or increase 10/300 column (GE).
 
-## Mass photometry
+#### Mass photometry
 
 All mass photometry data were taken using a Refeyn OneMP mass photometer (Refeyn Ltd). Movies were acquired for 10,000 frames (100 s) using AcquireMP software (version 2.4.0) and analyzed using DiscoverMP software (version 2.4.0, Refeyn Ltd), all with default settings. Proteins were measured by adding 1 µl of stock solution (50 nM) to a 10 µl droplet of filtered buffer (10 mM HEPES pH 8, 2.5 mM MgCl2, 1 mM DTT, 50–300 mM NaCl, 5 mM ATP). Contrast measurements were converted to molecule weights using a standard curve generated with bovine serine albumin (Thermo 23210) and urease (Sigma U7752).
 
-## Mass spectrometry
+#### Mass spectrometry
 
 Sperm chromosomes were purified as previously described (Funabiki and Murray, 2000). Briefly, extracts containing 8000/µl sperm nuclei were replicated along with 5 mM biotin-dUTP for 90 min and cycled back into metaphase with the addition of 1 volume of fresh CSF depleted (correspondingly ΔIgG or ΔH1). After 60 min in metaphase, these chromosomes were diluted in 3 volumes of DB (10 mM K-HEPES [pH 7.6], 100 mM KCl, 2 mM EDTA, 0.5 mM EGTA, 0.5 mM spermine, 250 mM sucrose, 1 mM PMSF, and 10 µg/ml each of leupeptin, pepstatin, and chymostatin) and centrifuged through a 60 DB cushion (DB with 60% [w/v] sucrose). The collected chromosome-enriched pellet was then incubated with 15 µl streptavidin-coupled Dynabeads (M280) and rotated at 4°C for 2 hr. The beads were then collected, washed, and boiled in sample buffer before running on a 6% polyacrylamide gel for 10 min. The gel was stained with Commassie blue, and the protein-containing gel fragments were cut out and processed for mass spectrometry. The mass spectrometry was performed at the Rockefeller University Proteomics Resource Center as previously described (Zierhut et al., 2014), but the peptides were queried against the X. laevis database (Wühr et al., 2014) using the MaxQuant software (Max-Planck Institute).

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.35878.001 Mutations in the genes for PINK1 and parkin cause Parkinson’s disease. PINK1 and parkin cooperate in the selective autophagic degradation of damaged mitochondria (mitophagy) in cultured cells. However, evidence for their role in mitophagy in vivo is still scarce. Here, we generated a Drosophila model expressing the mitophagy probe mt-Keima. Using live mt-Keima imaging and correlative light and electron microscopy (CLEM), we show that mitophagy occurs in muscle cells and dopaminergic neurons in vivo, even in the absence of exogenous mitochondrial toxins. Mitophagy increases with aging, and this age-dependent rise is abrogated by PINK1 or parkin deficiency. Knockdown of the Drosophila homologues of the deubiquitinases USP15 and, to a lesser extent, USP30, rescues mitophagy in the parkin-deficient flies. These data demonstrate a crucial role for parkin and PINK1 in age-dependent mitophagy in Drosophila in vivo.
+Mutations in the genes for PINK1 and parkin cause Parkinson’s disease. PINK1 and parkin cooperate in the selective autophagic degradation of damaged mitochondria (mitophagy) in cultured cells. However, evidence for their role in mitophagy in vivo is still scarce. Here, we generated a Drosophila model expressing the mitophagy probe mt-Keima. Using live mt-Keima imaging and correlative light and electron microscopy (CLEM), we show that mitophagy occurs in muscle cells and dopaminergic neurons in vivo, even in the absence of exogenous mitochondrial toxins. Mitophagy increases with aging, and this age-dependent rise is abrogated by PINK1 or parkin deficiency. Knockdown of the Drosophila homologues of the deubiquitinases USP15 and, to a lesser extent, USP30, rescues mitophagy in the parkin-deficient flies. These data demonstrate a crucial role for parkin and PINK1 in age-dependent mitophagy in Drosophila in vivo.
 
 ## Introduction
 
@@ -33,29 +33,29 @@ Recently, the mt-Keima reporter was developed to quantitatively image mitophagy 
 
 ## Results
 
-## Mitophagy occurs in Drosophila flight muscle and increases with aging
+### Mitophagy occurs in Drosophila flight muscle and increases with aging
 
 The phenotype of parkin- and PINK1-deficient flies is especially striking in flight muscle (Greene et al., 2003; Pesah et al., 2004; Clark et al., 2006; Park et al., 2006). We therefore focused on the role of mitophagy in this tissue. We generated flies that express mt-Keima specifically in muscle (mef-2-Gal4). The mt-Keima reporter is a mitochondrially targeted form of Keima, a fluorescent protein that resists degradation by lysosomal proteases (Katayama et al., 2011). The peak of the mt-Keima excitation spectrum shifts when mitochondria are delivered to acidic lysosomes, which allows dual-excitation ratiometric quantification of mitophagy (Katayama et al., 2011) (Figure 1A). Transmission electron microscopy (TEM) analysis showed that mt-Keima expression did not change the morphology of muscle mitochondria (Figure 1B). The mt-Keima signal extensively colocalized with the mitochondrial protein ATP synthase β, confirming that mt-Keima was properly targeted to mitochondria (Figure 1C). Interestingly, a small subset of mt-Keima structures had high 543 nm/458 nm ratio values, indicative of an acidic environment (Figure 1D). These high 543/458 ratio mt-Keima puncta colocalized with the lysosomal dye LysoTracker (Figure 1E). Thus, the high 543/458 ratio mt-Keima puncta probably represented mitochondria that had been delivered to lysosomes. The abundance of these puncta was very low in muscle cells of 1-week-old adult flies, but strongly rose with aging, showing an approximately tenfold increase by the age of 4 weeks (Figure 1F,G). To assess the role of autophagy in the biogenesis of the high 543/458 ratio mt-Keima puncta, we overexpressed a kinase-dead version of Atg1 (Atg1K38A), the homologue of mammalian ULK1 (Toda et al., 2008). Atg1/ULK1 is needed in the early steps of autophagosome formation and is also involved in mitophagy (Itakura and Mizushima, 2010; Itakura et al., 2012). When overexpressed, kinase-dead Atg1 exerts dominant-negative effects (Scott et al., 2007). Overexpression of Atg1K38A suppressed the high levels of mitophagy observed in aged muscle cells (Figure 1F,G). The low residual level of high 543/458 ratio mt-Keima puncta that persisted after Atg1K38A overexpression, may result from Atg1-independent mechanisms of autophagy induction (Braden and Neufeld, 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35878/elife-35878-fig1-v2.jpg)
 
-**Figure 1.:** Drosophila flight muscle increases with aging.(A) Schematic of mt-Keima imaging. The fluorescent mt-Keima protein is targeted to the mitochondrial matrix and exhibits pH-dependent excitation. The excitation peak of mt-Keima shifts from 440 nm to 586 nm when mitochondria are delivered to acidic lysosomes, where it resists degradation by lysosomal proteases. (B) Transmission electron micrographic images of mitochondria from control (w and mt-Keima-expressing indirect flight muscle cells under control of the 1118;;)mef-2-GAL4 driver (w. Scale bar, 1 µm. (1118;; UAS-mt-Keima, mef-2-GAL4/+)C) Confocal images of 1-week-old indirect flight muscle expressing mt-Keima under control of the mef-2-GAL4 driver (w. Images show mt-Keima emission at 543 nm excitation (Ex.) before and after fixation, immunostaining for ATP synthase β after fixation, and overlay. Scale bar, 10 µm. (1118;; UAS-mt-Keima, mef-2-GAL4/+)D) Images of 1-week-old indirect flight muscle expressing mt-Keima under control of the mef-2-GAL4 driver (w. Images show live mt-Keima emission at 458 and 543 nm Ex., overlay of mt-Keima emissions at 458 and 543 nm Ex., and puncta with high 543 nm/458 nm ratio values. 1118;; UAS-mt-Keima, mef-2-GAL4/+)Arrowheads indicate examples of ‘acidic’ mt-Keima puncta. Scale bar, 10 µm. (E) Confocal images of mt-Keima-expressing indirect flight muscle labeled with LysoTracker (100 nM), showing colocalization of ‘acidic’ mt-Keima puncta with lysosomes (arrowheads). Arrow indicates an example of a lysosome devoid of mt-Keima signal. Scale bar, 10 µm. (F) Overlay of mt-Keima emission at Ex. 458 (green) and 543 nm (red) in w or Atg11118K38A-overexpressing (w indirect flight muscle of 1-, 3- and 4-week-old flies. Scale bar, 10 µm. (1118;; UAS-mt-Keima, mef-2-GAL4/UAS-Atg1K38A)G) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy (n = 4–6 flies per condition). In each fly, 7 random 2500 μm2 fields were analyzed. *p=0.02 compared with all other conditions; # p=0.02 compared with 1-week-old w flies.111810.7554/eLife.35878.004Figure 1—source data 1.w or Atg11118K38A-overexpressing flies at 1, 3 and 4 weeks.
+**Figure 1.:** (A) Schematic of mt-Keima imaging. The fluorescent mt-Keima protein is targeted to the mitochondrial matrix and exhibits pH-dependent excitation. The excitation peak of mt-Keima shifts from 440 nm to 586 nm when mitochondria are delivered to acidic lysosomes, where it resists degradation by lysosomal proteases. (B) Transmission electron micrographic images of mitochondria from control (w1118;;) and mt-Keima-expressing indirect flight muscle cells under control of the mef-2-GAL4 driver (w1118;; UAS-mt-Keima, mef-2-GAL4/+). Scale bar, 1 µm. (C) Confocal images of 1-week-old indirect flight muscle expressing mt-Keima under control of the mef-2-GAL4 driver (w1118;; UAS-mt-Keima, mef-2-GAL4/+). Images show mt-Keima emission at 543 nm excitation (Ex.) before and after fixation, immunostaining for ATP synthase β after fixation, and overlay. Scale bar, 10 µm. (D) Images of 1-week-old indirect flight muscle expressing mt-Keima under control of the mef-2-GAL4 driver (w1118;; UAS-mt-Keima, mef-2-GAL4/+). Images show live mt-Keima emission at 458 and 543 nm Ex., overlay of mt-Keima emissions at 458 and 543 nm Ex., and puncta with high 543 nm/458 nm ratio values. Arrowheads indicate examples of ‘acidic’ mt-Keima puncta. Scale bar, 10 µm. (E) Confocal images of mt-Keima-expressing indirect flight muscle labeled with LysoTracker (100 nM), showing colocalization of ‘acidic’ mt-Keima puncta with lysosomes (arrowheads). Arrow indicates an example of a lysosome devoid of mt-Keima signal. Scale bar, 10 µm. (F) Overlay of mt-Keima emission at Ex. 458 (green) and 543 nm (red) in w1118 or Atg1K38A-overexpressing (w1118;; UAS-mt-Keima, mef-2-GAL4/UAS-Atg1K38A) indirect flight muscle of 1-, 3- and 4-week-old flies. Scale bar, 10 µm. (G) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy (n = 4–6 flies per condition). In each fly, 7 random 2500 μm2 fields were analyzed. *p=0.02 compared with all other conditions; # p=0.02 compared with 1-week-old w1118 flies.
 
-## CLEM reveals the ultrastructure of ‘acidic’ mt-Keima puncta
+### CLEM reveals the ultrastructure of ‘acidic’ mt-Keima puncta
 
 To demonstrate the occurrence of mitophagy in Drosophila indirect flight muscle more definitively, we resorted to CLEM (Bishop et al., 2011). We first performed live mt-Keima imaging of muscle cells to identify regions of interest that contained both ‘acidic’ and ‘neutral pH’ mt-Keima structures (Figure 2A). After fixation, we burned laser marks around the regions of interest using near-infrared branding (NIRB) to be able to re-identify these regions after processing for TEM (Figure 2B–D). Interestingly, ‘neutral pH’ mt-Keima structures colocalized with typical mitochondria at the TEM level, while ‘acidic’ mt-Keima puncta showed remarkable overlay with smaller organelles with the characteristic electron-dense appearance of lysosomes (Figure 2E–N). Many of the mt-Keima-positive lysosomes contained densely packed concentric membranes surrounding a dense core, giving them the appearance of multilamellar bodies (Figure 2N). Multilamellar bodies are lysosomal organelles that are found in various cell types in physiological conditions but also accumulate in lysosomal storage diseases (Blanchette-Mackie, 2000; Hariri et al., 2000; Lajoie et al., 2005).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35878/elife-35878-fig2-v2.jpg)
 
-**Figure 2.:** (A–D) Overview of the CLEM procedure from live mt-Keima imaging to EM. (A) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation (Ex.) in indirect flight muscle tissue of a 2-week-old control fly (w). Boxed area shows the region of interest (ROI) containing two high 543/458 ratio (‘acidic’) mt-Keima dots. (1118;; UAS-mt-Keima, mef-2-GAL4/+B) After fixation the same ROI as in (A) is re-identified based on muscle fiber morphology (mt-Keima emission at Ex. 543 nm). (C) Widefield image after near-infrared branding (NIRB) around the ROI (laser marks indicated by arrowheads). (D) EM image of the same ROI as in (A–C), surrounded by NIRB marks (indicated by arrowheads). (E–H) Magnification of the same ROI shown in (A–D). Arrowheads in (E–H) indicate ‘acidic’ mt-Keima dots that colocalize with lysosomes on EM. (E) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) Ex. (F) High 543/458 ratio dots. (G) EM. (H) Overlay of EM and high 543/458 ratio mt-Keima image. (I) Further magnification of the boxed region in (G–H). (J–N) Additional CLEM example in muscle tissue of a 1-week-old control fly (w). 1118;; UAS-mt-Keima, mef-2-GAL4/+Arrowheads in (J–M) indicate ‘acidic’ mt-Keima dots that colocalize with lysosomes on EM. (J) Live mt-Keima emission at 458 (green) and 543 nm (red) Ex. in muscle. (K) High 543/458 ratio dots. (L) EM. (M) Overlay of EM and high 543/458 ratio mt-Keima image. (N) Further magnification of the boxed region in (L–M). Scale bars in (I) and (N), 500 nm. All other scale bars, 5 µm.
+**Figure 2.:** (A–D) Overview of the CLEM procedure from live mt-Keima imaging to EM. (A) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation (Ex.) in indirect flight muscle tissue of a 2-week-old control fly (w1118;; UAS-mt-Keima, mef-2-GAL4/+). Boxed area shows the region of interest (ROI) containing two high 543/458 ratio (‘acidic’) mt-Keima dots. (B) After fixation the same ROI as in (A) is re-identified based on muscle fiber morphology (mt-Keima emission at Ex. 543 nm). (C) Widefield image after near-infrared branding (NIRB) around the ROI (laser marks indicated by arrowheads). (D) EM image of the same ROI as in (A–C), surrounded by NIRB marks (indicated by arrowheads). (E–H) Magnification of the same ROI shown in (A–D). Arrowheads in (E–H) indicate ‘acidic’ mt-Keima dots that colocalize with lysosomes on EM. (E) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) Ex. (F) High 543/458 ratio dots. (G) EM. (H) Overlay of EM and high 543/458 ratio mt-Keima image. (I) Further magnification of the boxed region in (G–H). (J–N) Additional CLEM example in muscle tissue of a 1-week-old control fly (w1118;; UAS-mt-Keima, mef-2-GAL4/+). Arrowheads in (J–M) indicate ‘acidic’ mt-Keima dots that colocalize with lysosomes on EM. (J) Live mt-Keima emission at 458 (green) and 543 nm (red) Ex. in muscle. (K) High 543/458 ratio dots. (L) EM. (M) Overlay of EM and high 543/458 ratio mt-Keima image. (N) Further magnification of the boxed region in (L–M). Scale bars in (I) and (N), 500 nm. All other scale bars, 5 µm.
 
-## Loss of Parkin and PINK1 impairs mitophagy in Drosophila flight muscle and dopaminergic neurons
+### Loss of Parkin and PINK1 impairs mitophagy in Drosophila flight muscle and dopaminergic neurons
 
 We then crossed the mt-Keima-expressing flies with PINK1 loss-of-function mutant flies (PINK1B9) and parkin RNAi flies (Park et al., 2006; Cornelissen et al., 2014). The low level of mitophagy in 1-week-old adult flies was not affected by deficiency of PINK1 or parkin (Figure 3A,B). However, the age-dependent increase in mitophagy in 3- and 4-week-old control flies was completely abolished in the PINK1B9 and parkin RNAi flies (Figure 3A,B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/35878/elife-35878-fig3-v2.jpg)
 
-**Figure 3.:** Drosophila flight muscle.(A) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in indirect flight muscle from 4-week-old w (1118w, control (Ctrl) RNAi (1118;; UAS-mt-Keima, mef-2-GAL4/+)wCtrl 1118; UAS-RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), PINK1 (PINK1B9B9/+;; UAS-mt-Keima, mef-2-GAL4/+) and parkin1 RNAi (w flies. (1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, mef-2-GAL4/+)B) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy in 1-, 3- and 4-week-old flies (n = 3–6 flies per condition). In each fly, 7 random 2500 μm2 fields were analyzed. *p=0.02 compared with 4-week-old parkin1 RNAi and PINK1 flies. # pB9=0.03 compared with 3-week-old parkin1 RNAi and PINK1 flies. (B9C) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in indirect flight muscle from 4-week-old Ctrl RNAi (wCtrl 1118; UAS-RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), dUSP15 RNAi (w RNAi (1118;; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), dUSP30w +Ctrl RNAi 1118; UAS-CG3016 RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), parkin1(wCtrl RNAi1118; UAS-parkin1 RNAi/UAS-; UAS-mt-Keima, mef-2-GAL4/+), parkin1 +dUSP15 RNAi (w RNAi 1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), parkin1 +dUSP30(w +Ctrl RNAi 1118; UAS-parkin1 RNAi/UAS-CG3016 RNAi; UAS-mt-Keima, mef-2-GAL4/+), parkin2(wCtrl 1118; UAS-parkin2 RNAi/UAS-RNAi; UAS-mt-Keima, mef-2-GAL4/+), parkin2 +dUSP15 RNAi (w RNAi 1118; UAS-parkin2 RNAi/+; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), parkin2 +dUSP30(wB9Ctrl RNAi (1118; UAS-parkin2 RNAi/UAS-CG3016 RNAi; UAS-mt-Keima, mef-2-GAL4/+), PINK1B9PINK1/+; B9UAS-Ctrl RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), PINK1 RNAi (B9 + dUSP15PINK1/+;; B9UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), and PINK1 RNAi (B9 + dUSP30PINK1/+; B9UAS-CG3016 RNAi/+; UAS-mt-Keima, mef-2-GAL4/+) flies. (D) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy (n = 3–4 flies per condition). *p<0.001 compared with Ctrl RNAi flies. # p<0.03 compared with parkin1 +dUSP15 RNAi flies. £ p<0.03 compared with PINK1 RNAi flies. Scale bars, 10 µm.B9 + dUSP1510.7554/eLife.35878.007Figure 3—source data 1.w, control RNAi, 1118PINK1 and B9parkin1 RNAi flies at 1, 3 and 4 weeks.10.7554/eLife.35878.008Figure 3—source data 2.dUSP15 RNAi, dUSP30 RNAi, parkin1 + control RNAi, parkin1 + dUSP15 RNAi, parkin1 + dUSP30 RNAi, parkin2 + control RNAi, parkin2 + dUSP15 RNAi, parkin2 + dUSP30 RNAi, PINK1 +control RNAiB9, PINK1 RNAi, and B9 + dUSP15PINK1 RNAi flies.B9 + dUSP30
+**Figure 3.:** (A) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in indirect flight muscle from 4-week-old w1118 (w1118;; UAS-mt-Keima, mef-2-GAL4/+), control (Ctrl) RNAi (w1118; UAS-Ctrl RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), PINK1B9 (PINK1B9/+;; UAS-mt-Keima, mef-2-GAL4/+) and parkin1 RNAi (w1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, mef-2-GAL4/+) flies. (B) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy in 1-, 3- and 4-week-old flies (n = 3–6 flies per condition). In each fly, 7 random 2500 μm2 fields were analyzed. *p=0.02 compared with 4-week-old parkin1 RNAi and PINK1B9 flies. # p=0.03 compared with 3-week-old parkin1 RNAi and PINK1B9 flies. (C) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in indirect flight muscle from 4-week-old Ctrl RNAi (w1118; UAS-Ctrl RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), dUSP15 RNAi (w1118;; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), dUSP30 RNAi (w1118; UAS-CG3016 RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), parkin1 +Ctrl RNAi (w1118; UAS-parkin1 RNAi/UAS-Ctrl RNAi; UAS-mt-Keima, mef-2-GAL4/+), parkin1 +dUSP15 RNAi (w1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), parkin1 +dUSP30 RNAi (w1118; UAS-parkin1 RNAi/UAS-CG3016 RNAi; UAS-mt-Keima, mef-2-GAL4/+), parkin2 +Ctrl RNAi (w1118; UAS-parkin2 RNAi/UAS-Ctrl RNAi; UAS-mt-Keima, mef-2-GAL4/+), parkin2 +dUSP15 RNAi (w1118; UAS-parkin2 RNAi/+; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), parkin2 +dUSP30 RNAi (w1118; UAS-parkin2 RNAi/UAS-CG3016 RNAi; UAS-mt-Keima, mef-2-GAL4/+), PINK1B9B9Ctrl RNAi (PINK1B9/+; UAS-Ctrl RNAi/+; UAS-mt-Keima, mef-2-GAL4/+), PINK1B9 + dUSP15 RNAi (PINK1B9/+;; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi), and PINK1B9 + dUSP30 RNAi (PINK1B9/+; UAS-CG3016 RNAi/+; UAS-mt-Keima, mef-2-GAL4/+) flies. (D) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy (n = 3–4 flies per condition). *p<0.001 compared with Ctrl RNAi flies. # p<0.03 compared with parkin1 +dUSP15 RNAi flies. £ p<0.03 compared with PINK1B9 + dUSP15 RNAi flies. Scale bars, 10 µm.
 
 The DUBs USP15 and USP30 oppose parkin-mediated mitochondrial ubiquitination and mitophagy in cultured human cells. Interestingly, the yeast homologue of USP15 (Ubp12) deubiquitinates the MOM protein Fzo1, the yeast homologue of the mammalian parkin substrates mitofusin 1 and 2, pointing to a conserved role for USP15 in deubiquitination at the MOM (Anton et al., 2013; SimoesSimões et al., 2018). Knockdown of the Drosophila homologs of USP15 (CG8334, hereafter called dUSP15) and USP30 (CG3016, hereafter dUSP30) largely rescues the mitochondrial defects of parkin-deficient fly muscle in vivo (Bingol et al., 2014; Cornelissen et al., 2014). To assess the effects of dUSP15 and dUSP30 on PINK1/parkin-mediated mitophagy in vivo, we knocked down dUSP15 and dUSP30 in mt-Keima-expressing flies using RNAi. Levels of dUSP15 mRNA in dUSP15 RNAi lines were 57.6 ± 2.5% of control levels (n = 6), and dUSP30 mRNA levels in dUSP30 RNAi lines were 16.4 ± 5.8% of controls (n = 6). Knockdown of dUSP15 and, to a lesser extent, dUSP30 rescued the mitophagy defect of two different parkin RNAi fly lines (Figure 3C,D). The mitophagy defect of PINK1B9 flies was partially rescued by dUSP15 knockdown, but unaffected by dUSP30 knockdown (Figure 3C,D).
 
@@ -63,7 +63,7 @@ Dopaminergic neurons of parkin mutant Drosophila also accumulate abnormal mitoch
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35878/elife-35878-fig4-v2.jpg)
 
-**Figure 4.:** (A) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in PPL1 dopaminergic neurons from 1- and 4-week-old control (Ctrl) RNAi (w-Ctrl 1118; UASRNAi/+; UAS-mt-Keima, TH-GAL4/+) and parkin1 RNAi (w flies. (1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, TH-GAL4/+)B) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy (n = 4 flies per condition). In each fly, 10 dopaminergic neurons were analyzed. *p=0.001 compared with 4-week-old parkin RNAi flies. # p=0.004 compared with 1-week-old Ctrl RNAi flies. (C) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in PPL1 dopaminergic neurons from 4-week-old Ctrl RNAi (w-Ctrl 1118; UASRNAi/+; UAS-mt-Keima, TH-GAL4/+), dUSP15 RNAi (w +Ctrl RNAi (1118;; UAS-mt-Keima, TH-GAL4/UAS-CG8334 RNAi), parkin1wCtrl RNAi1118; UAS-parkin1 RNAi/UAS-; UAS-mt-Keima, TH-GAL4/+), and parkin1 +dUSP15 RNAi (w flies. (1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi)D) High (543/458) ratio area/total mitochondrial area in 4-week-old flies was quantified as an index of mitophagy (n = 3–4 flies per condition). *p<0.05 compared with all other conditions. Scale bars, 10 µm.10.7554/eLife.35878.010Figure 4—source data 1.parkin1 RNAi flies at 1 and 4 weeks.10.7554/eLife.35878.011Figure 4—source data 2.dUSP15 RNAi, parkin1 +control RNAi, and parkin1 +dUSP15 RNAi flies.
+**Figure 4.:** (A) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in PPL1 dopaminergic neurons from 1- and 4-week-old control (Ctrl) RNAi (w1118; UAS-Ctrl RNAi/+; UAS-mt-Keima, TH-GAL4/+) and parkin1 RNAi (w1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, TH-GAL4/+) flies. (B) High (543/458) ratio area/total mitochondrial area was quantified as an index of mitophagy (n = 4 flies per condition). In each fly, 10 dopaminergic neurons were analyzed. *p=0.001 compared with 4-week-old parkin RNAi flies. # p=0.004 compared with 1-week-old Ctrl RNAi flies. (C) Overlay of live mt-Keima emission at 458 (green) and 543 nm (red) excitation in PPL1 dopaminergic neurons from 4-week-old Ctrl RNAi (w1118; UAS-Ctrl RNAi/+; UAS-mt-Keima, TH-GAL4/+), dUSP15 RNAi (w1118;; UAS-mt-Keima, TH-GAL4/UAS-CG8334 RNAi), parkin1 +Ctrl RNAi (w1118; UAS-parkin1 RNAi/UAS-Ctrl RNAi; UAS-mt-Keima, TH-GAL4/+), and parkin1 +dUSP15 RNAi (w1118; UAS-parkin1 RNAi/+; UAS-mt-Keima, mef-2-GAL4/UAS-CG8334 RNAi) flies. (D) High (543/458) ratio area/total mitochondrial area in 4-week-old flies was quantified as an index of mitophagy (n = 3–4 flies per condition). *p<0.05 compared with all other conditions. Scale bars, 10 µm.
 
 ## Discussion
 
@@ -81,22 +81,130 @@ Genetic manipulation in Drosophila is relatively straightforward. As illustrated
 
 ## Materials and methods
 
-## Drosophila genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>parkin KK RNAi</td>
+      <td>VDRC</td>
+      <td>107919 RRID:FlyBase_FBst0476221</td>
+      <td>Named parkin2 RNAi in this paper</td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>dUSP15 RNAi</td>
+      <td>VDRC</td>
+      <td>18981 RRID:BDSC_61871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>dUSP30 RNAi</td>
+      <td>NIG-Fly Stock Center</td>
+      <td>3016 R-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>control TRiP RNAi</td>
+      <td>BDSC</td>
+      <td>31603 RRID:BDSC_31603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>parkin TRiP RNAi</td>
+      <td>BDSC</td>
+      <td>37509 RRID:BDSC_37509</td>
+      <td>Named parkin1 RNAi in this paper</td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>mef-2-GAL4</td>
+      <td>BDSC</td>
+      <td>27390 RRID:BDSC_27390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>TH-GAL4</td>
+      <td>BDSC</td>
+      <td>8848 RRID:BDSC_8848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>PINK1B9</td>
+      <td>BDSC</td>
+      <td>34749 RRID:BDSC_34749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>Atg1K38A</td>
+      <td>BDSC</td>
+      <td>60736 RRID:BDSC_60736</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>VK20</td>
+      <td>BDSC</td>
+      <td>9738 RRID:BDSC_9738</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (D. melanogaster)</td>
+      <td>mt-Keima</td>
+      <td>This paper</td>
+      <td></td>
+      <td>mt-Keima cDNA was cloned into the NotI and Xba1 sites of pUAS-attB and inserted in integration site VK20 after in-house injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATP synthase β</td>
+      <td>Abcam</td>
+      <td>ab14730 RRID:AB_301438</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mt/mKeima/pIND(SP1)</td>
+      <td>Katayama et al. (2011)</td>
+      <td></td>
+      <td>Gift from Dr. A. Miyawaki (RIKEN Brain Science Institute, Japan)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila genetics
 
 All Drosophila melanogaster stocks and experimental crosses were kept on standard corn meal and molasses food at room temperature. The mt-Keima construct (mt/mKeima/pIND(SP1)) was a gift from Dr. A. Miyawaki (RIKEN Brain Science Institute, Japan) (Katayama et al., 2011). The mt-Keima cDNA was cloned into the NotI and Xba1 sites of pUAS-attB and inserted in integration site VK20 after in-house injection. CG8334 transgenic UAS-RNAi (18981) and parkin KK UAS-RNAi (107919, named parkin2 RNAi in this paper) lines were obtained from the Vienna Stock Center (VDRC) and CG3016 transgenic UAS-RNAi line (3016 R-2) from NIG-Fly Stock Center. Parkin (37509, named parkin1 RNAi in this paper) and control (luciferase, 31603) TRiP UAS-RNAi lines, mef-2-GAL4, TH-GAL4, PINK1B9 and Atg1K38A were obtained from Bloomington stock center (Indiana, USA). To quantify parkin, CG8334 and CG3016 mRNA levels under control of mef-2-GAL4, RNA was isolated from adult thoraces and real-time RT-PCR was performed as previously described (Cornelissen et al., 2014) using primers 5’-CCAGCAATGTCACCATCAAAG-3’ and 5’-GCGTGTCCACTCAGTCTG-3’ for parkin, 5’-GGAGTGACGCATCTTGAG-3’ and 5’-TTCTTTGGTATGGGTGGACTG-3’ for CG8334 and 5’ TACGCCATAGCAATCTGGGG-3’ and 5’- CTCGTGTATCTGCTGGCGTT-3’ for CG3016. The data were normalized using RP-49, a ribosomal gene. Real-time PCR showed that parkin mRNA levels in parkin1 RNAi flies were 49,7 ± 2,3% of control levels (n = 5). Parkin mRNA levels in parkin2 RNAi flies were determined previously (Cornelissen et al., 2014).
 
-## Live mt-Keima imaging
+### Live mt-Keima imaging
 
 Flies were dissected in HL3 buffer. Indirect flight muscle fibers and complete brains were immobilized on a glass slide in low gelling temperature agarose and analyzed using a Leica TCS SP5 II confocal microscope equipped with a 63x objective lens (HC PL APO 63x/1.4 CS2), a multi-argon laser (458, 476, 488 nm) and a He/Ne laser (543 nm). Mt-Keima was imaged in two channels via two sequential excitations (458 nm, green; 543 nm, red) and using a 600 to 695 nm emission range. Images from random microscopic fields were captured and analyzed by an investigator blinded to genotype and age. For muscle analysis, at least 7 z-stacks with 0.2 µm slice thickness were taken per fly. For dopaminergic neuron analysis, at least 10 PPL1 neurons were analyzed per fly. Ratio (543/458) images were created using the Ratio Plus plugin in ImageJ. High (543/458) ratio areas were segmented and quantified with the Analyze Particles plugin in ImageJ. The total mitochondrial area was quantified with the Analyze Particles plugin by calculating the area of the total emission at 543 nm excitation. The parameter (high [543/458] ratio area/total mitochondrial area) was used as an index of mitophagy, as described (Katayama et al., 2011). LysoTracker (DND-26, Thermo Fisher) was imaged using a 488 nm excitation and a 495–550 nm emission filter.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Indirect flight muscle was dissected in HL3, live imaged for mt-Keima and fixed in 4% paraformaldehyde for 1 hr. Samples were washed three times for 10 min in PBS and placed in blocking solution (5% normal donkey serum in PBS, 0.1% Triton X-100) for 30 min, after which the samples were incubated overnight at 4°C with antibody against ATP synthase β (1:500; ab14730, Abcam) in PBS, 2% normal donkey serum, 0.1% Triton X-100. After washing, samples were incubated for 2 hr with Alexa 488-conjugated secondary antibody in PBS, 2% normal donkey serum, 0.1% Triton X-100. Samples were washed and mounted on a glass slide in Vectashield mounting medium (Vector Laboratories). Alexa 488 fluorescence was imaged using a 488 nm excitation and a 495–550 nm emission filter.
 
-## CLEM
+### CLEM
 
 CLEM studies using near-infrared branding (NIRB) were performed as described previously (Bishop et al., 2011; Urwyler et al., 2015). Tissues were first imaged live in low gelling temperature agarose (3% in 0.1 M phosphate buffer, pH 7.4 [PB]), and fixed overnight in 0.5% glutaraldehyde, 4% PFA in 0.1 M PB, pH 7.4 at 4°C. Samples were rinsed in 0.1 M PB after which fixed samples were imaged using the Leica SP5 confocal microscope to check whether fixing affected overall tissue morphology. The bleaching function of the ZEN2010 software (Zeiss) was used to perform NIRB on a LSM 780 inverted confocal microscope. Branding marks were introduced to the tissue with a Mai Tai DeepSee two-photon laser (Spectra-Physics) at 800 nm and 40% maximal power output. Z-stacks of the region of interest were acquired before and after NIRB. Processed samples were post-fixed in 2% glutaraldehyde, 4% paraformaldehyde and 0.2% picric acid in 0.1 M PB at 4°C overnight or until further processing. Next, samples were osmicated for 1 hr in 2% OsO4, 1.5% potassium ferrocyanide in PB and subsequently stained for 30 min in 0.2% tannic acid, followed by overnight incubation in 0.5% uranyl acetate in 25% methanol. Next day, samples were stained en bloc with lead aspartate and dehydrated in an ascending series of ethanol solutions followed by flat embedding in Agar 100 (Laborimpex; Agar Scientific). Flat-embedded sections were mounted on aluminum pin stubs (Gatan) with conductive epoxy (Circuit Works). A Zeiss Sigma Variable pressure SBF-SEM with 3View technology (Gatan) was used to approach the region of interest. Imaging was done at 1.3 kV with a pixel size of 20 nm and sections of 200 nm. Regions of interest could be located based on the branding marks and muscle fiber morphology. When the region of interest was reached, 70 nm thick, serial ultrathin sections were cut using a Reichardt Ultracut E ultramicrotome. All sections were collected as ribbons of 4–5 sections on triple slot grids (Ted Pella). Images were taken on a JEOL JEM-1400 Transmission Electron Microscope operated at 80 kV.
 
-## Statistics
+### Statistics
 
 Values and error bars represent mean ± SEM, and n refers to the number of biological replicates. Significance of differences between conditions was analyzed with one-way ANOVA and post-hoc Holm-Sidak test (SigmaStat 3.5, Systat). No outliers were excluded.

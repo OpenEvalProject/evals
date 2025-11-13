@@ -45,33 +45,101 @@ Leveraging a synaptic resolution serial section transmission microscopy (ssTEM) 
 
 ## Results
 
-## EM reconstruction of the neuroendocrine system
+### EM reconstruction of the neuroendocrine system
 
 To elucidate the sensory inputs onto the neuroendocrine cells, we first reconstructed the ring gland and the interconnected portion of the aorta (AO), and all neurons that project to these structures (Figure 2A). Reconstruction of a subset of the neurons in the PI was described earlier (Schlegel et al., 2016). All neurosecretory cell clusters found previously by light microscopy analysis (Siegmund and Korge, 2001) were identified and compared to expression patterns of known peptide-Gal4 driver lines. Since cell clusters that project to the ring gland (we collectively refer to them as ring gland projection neurons [RPNs]) have varying names, we use here the peptide names that these neurons are mainly known for (Figure 2B, Figure 2—figure supplement 1). CA-LP1 and CA-LP2 neurons were the only ones for which we could not unambiguously identify the neuropeptide identity, but found their expression in two independent Burs-Gal4 lines; also FMRFamide-positive projections were found in the CA, which likely are derived from the CA-LP1 or CA-LP2 neurons (de Velasco et al., 2007). To analyze ion transport peptide (ITP) neurons (de Haro et al., 2010; Herrero et al., 2007; Kahsai et al., 2010), we generated LexA-knock-in lines (Figure 2—figure supplement 2). A comprehensive overview for all RPN clusters analyzed in this study is provided in Figure 2—source data 1.
 
-## Peptidergic and synaptic outputs
+![Figure 2.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig2-v1.jpg)
+
+**Figure 2.:** (A) Upper panel: 3D reconstructed RG areas in dorsal and lateral view (CC = orange, PG = green, CA = blue, AO = pink). Cross section of the AO: colored areas represent single neurites of different CC cells. Middle panel: dorsal and lateral view of the RG showing the different cells in the distinct RG areas (CC, CA, and PG). Lower panel: neurites innervating the RG areas were separated based on innervation of the CC and aorta, only CA or only PG. Fused DCVs are marked as red dots. (B) Schematic of all 56 neurons innervating the RG named by the main neuropeptide produced. Total number of neurons per RPN cluster: DMS = 4, IPCs = 14, DH44 = 6, CRZ = 6, ITP = 8, CA-LP = 6, PTTH = 4, HugRG = 4, CAPA = 2, EH = 2. For clarity, only one side is shown for each neuronal cluster. (C) Left: reconstructed CRZ. Fused DCVs were marked as non-polar output synapses at distal neurites in RG tissues (red dots). Blue dots represent chemical synaptic input sites. Right: example picture of a DCV fusion site in the EM volume (DCV has to be fused to the membrane). (D) Left: magnification of the reconstructed RG with spatial distribution of CRZ DCV fusion sites (red dots).Right: quantification of all DCV fusion sites found in the RG areas for each RPN group. Numbers in brackets are total numbers of marked DCVs. The X-axis represents a fraction of fused DCVs. (E) Left: synaptic outputs of all RPNs (threshold = 3 synapses) constitute in total 30 neurons, which are exclusively downstream of EH RPNs. Right: spatial distribution of presynaptic sites of EH. EH neurons are the only RPNs having presynaptic sites located along abdominal, thoracic segments, and SEZ and protocerebrum. (F) EH neurons synaptically target other RPNs. Percentage represents the fraction of input of distinct RPNs from EH neurons, for example, ITP neurons receive 5% of its inputs from EH. a: anterior; AO: aorta; CA: corpus allatum; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CC: corpora cardiaca; CRZ: corazonin neurons; DCVs: dense core vesicles; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; HugRG: Hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; p: posterior; PG: prothoracic gland; PTTH: prothoracicotropic hormone neurons; RG: ring gland; RPN: ring gland projection neurons; SEZ: subesophageal zone; ssTEM: serial section transmission electron microscope.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) All RPNs could be re-identified by comparing the neurons innervating the ring gland previously published by Siegmund and Korge, 2001 to all RPNs found in the ssTEM volume (right panel). (B, C) DCV fusion sites were analyzed (black dots in dorsal and lateral view of the ring gland) in the ssTEM dataset (upper left part of each panel). Lower left part of each panel: blue dots represent chemical postsynapses in the brain and red dots represent DCV fusion sites in the RG. Note that presynapses for EH neurons are also found in the CNS (red dots). RPNs identified in the ssTEM volume were compared to respective expression patterns of Gal4/LexA lines in fluorescence stainings (RFP/GFP, right side of each panel). Upper right of each panel displays Gal4/LexA-driven expression patterns of RFP or GFP in the ring gland co-stained with DAPI to visualize RG areas. CA-LP neurons were visualized using a Bursicon-Gal4 line. Expression in the CA has not been reported yet for Bursicon. Note that ssTEM volume was generated from a first instar larva (L1 EM), whereas fluorescence staining/light microscopy was carried out in third instar larvae (L3 LM). For all genotypes, see Material and methods section. All scale bars represent 20 µm, except scale bar in CAPA analysis (10 µm). a: anterior; AO: aorta; Burs: bursicon neurons; CA: corpus allatum; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CC: corpora cardiaca; CC‐LP: corpora cardiaca innervating neurosecretory neurons of the lateral protocerebrum; CC‐MS: corpora cardiaca innervating neurosecretory neurons of the medial subesophageal ganglion; CC‐PI: corpora cardiaca innervating neurosecretory neurons of the pars intercerebralis; CC/A‐PI: corpora cardiaca and aorta innervating neurosecretory neurons of the pars intercerebralis; CRZ: corazonin neurons; DAPI: 4′,6-diamidino-2-phenylindole; DCVs: dense core vesicles; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; GFP: green fluorescent protein; HuginRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; p: posterior; PG: prothoracic gland; PG‐LP: prothoracic gland innervating neurosecretory neurons of the lateral protocerebrum; PTTH: prothoracicotropic hormone neurons; RFP: red fluorescent protein; RG: ring gland; RPNs: ring gland projection neurons; SEG: subesophageal ganglion; sPDFMe: small pigment dispersing factor neurons in the medulla; ssTEM: serial section transmission electron microscope; VG: ventricular ganglion; VM: ventromedial cells.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of the T2A-LexA expression module (T-LEM) vector pT-LEM(2), which contains RFP under the control of 3xP3. Multiple cloning sites flanking T-LEM permit insertion of appropriate homology arms to target ITP intron. SA(2) in pT-LEM(2) allows integration of T-LEM as a new exon into phase two introns. Genomic locus on second chromosome with all five predicted splice variant transcripts of ITP gene depicting two intronic sites (no1, no2) targeted for T-LEM insertion. Boxes represent exons; orange areas show protein-coding regions. Sequence of ITP intron displaying protospacers no1 (green) and no2 (blue). PAMs are bold and underlined. Coding exons are capitalized and orange. One-letter code amino acid sequence is shown in orange and positioned under the first nucleotide of the encoding triplet. Black arrowheads mark target sites for T-LEM insertion. (B) Fluorescence staining of ITP-T2A-LexA line driving LexAop-myrGFP. Upper panel: expression in whole CNS and RG. Lower panel: colocalization analysis with CRZ reveals no overlap of both RPN groups. For all genotypes, see Material and methods. All scale bars represent 20 µm. 3'HA: upstream homology arm; 3xP3: synthetic eye promoter; 5'HA: downstream homology arm; AD: activating domain; attP: attachment site on the phage part; bp: base pairs; Chr. 2 R: right arm of second chromosome; CNS: central nervous system; Crz: corazonin; DAPI: 4′,6-diamidino-2-phenylindole; GFP: green fluorescent protein; ITP: ion transport peptide; ITP-RC/-RD/-RE/-RF/-RG: ITP transcript C/D/E/F/G; kb: kilo base pairs; loxP: locus of crossover in phage P1 sequence; myrGFP: myristoylated green fluorescent protein; PAM: protospacer adjacent motif; RFP: red fluorescent protein; RG: ring gland; RPNs: ring gland projection neurons; SA(2): splice acceptor sequence and intron phase two linker; T2A: 2A self-cleaving peptide from Thosea asigna virus.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Reconstructed CRZ in dorsal and lateral view with projections to RG cells (red dots are DCV fusion sites). Right bar plot shows quantification of the number of fused DCVs in CC, PG, CA, and AO. Most output release sites were found in the CC. (B) Analysis of the Crz-Gal4 line in L1 CNS shows only activity in CRZ projecting to RG. View angles are the same as in (A). (C) Analysis of CrzR in L3 CNS (left) and in RG (right) shows CrzR activity in CC cells. (D) Staining of post-'peptidergic' cells of CRZ using the trans-Tango system (note that no output synapses for CRZ were identified in ssTEM volume; whether synapses are present in L3 stage is not known). Only CC cells were marked as being postsynaptic to CRZ. For all genotypes, see Materials and methods section. a: anterior; AO: aorta; CA: corpus allatum; CC: corpora cardiaca; CRZ: corazonin neurons; Crz: corazonin (gene/peptide related); CrzR: corazonin receptor; d: dorsal; DAPI: 4′,6-diamidino-2-phenylindole; DCV: dense core vesicle; GFP: green fluorescent protein; HA: hemagglutinin tag; l: left; L1: first instar larval stage; L3: third instar larval stage; p: posterior; PG: prothoracic gland; r: right; RFP: red fluorescent protein; RG: ring gland; v: ventral.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Cluster plot (umap) of all cell clusters derived from the larval brain transcriptome (Brunet Avalos et al., 2019). Highlighted are clusters containing peptidergic and RG-specific cells (CC, CA, and PG). (B) Graphical representation of peptide receptor interactions of CRZ other RPNs. Since CRZ are known to release additionally sNPF and proctolin, they potentially interact with RPNs having the respective receptors for these peptides. (C) Peptide receptor connectivity of all RPNs using the known expressed peptide and respective receptors. This illustrates dense lateral connections of RPNs. Average receptor expression is visualized by thickness of connections (0–5). Dot plot showing the scaled average peptide receptor expression (color code) and certain percentage of the RPN cell clusters (size of dots). (D) Peptide receptor connectivity of the RPNs to the RG areas (CC, PG, and CA). InR expression is strongest in all three tissues. Dot plot showing the scaled average peptide receptor expression (color code) and certain percentage of the distinct RG areas. Analysis was performed using a modified version of the Seurat workflow published by Satija lab (Stuart et al., 2019). For details on separation parameters of RPNs, please see Materials and methods section. avg.: average; CA: corpus allatum; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CapaR: capability receptor; CC: corpora cardiaca; CRZ: corazonin neurons; Crz: corazonin (gene/peptide related); CrzR: corazonin receptor; DH44: diuretic hormone 44 neurons; Dh44-R1/-R2: diuretic hormone 44 receptor 1/2; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; FMRFaR: FMRFamide receptor; HugRG: hugin neurons innervating ring gland; InR: insulin-like receptor; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; Lkr: leucokinin receptor; MsR1/MsR2: myosuppressin receptor 1/2; PG: prothoracic gland; PK1-R: pyrokinin one receptor; PK2-R1/-R2: pyrokinin 2 receptor 1/2; Proc: proctolin; Proc-R: proctolin receptor; PTTH: prothoracicotropic hormone neurons; RG: ring gland; rk: rickets; RPNs: ring gland projection neurons; sNPF: short neuropeptide F precursor; sNPF-R: short neuropeptide F receptor; tor: torso.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Sensory neurons with every presynaptic site have been completely reconstructed by Miroschnikow et al., 2018. RPNs have been reconstructed completely with every postsynaptic site. Interneurons located upstream of RPNs were completely reconstructed using a synaptic threshold of 3 (to RPNs). This made it possible to reach in total 93% of all incoming synaptic connections to the RPNs. Yellow = synapses from sensory neurons; green = annotated synapses from interneurons; blue = synapse bycatch from interneurons with 1–2 synapses to respective RPN cluster (these interneurons, however, have minimum three synapses to other RPN clusters); red = synapses from unidentified upstream partners. Thus even more synapses were reconstructed in total than interneurons having three or more synapses to RPNs. (B) Upper left: shown is the percentage of synaptic connections of sensory neurons to interneurons made with a certain number of synapses. Sensory neurons make most of their connections (nearly 40% of all connections) with one synapse to an interneuron, reaching about 20% of their connectivity by 1- and 2-synapse connections. Upper right: over 50% of connections from sensory neurons to RPNs are made by 1-synapse connections. Nearly 40% of connectivity from sensory neurons to RPNs are made by 1- and 2-synapse connections. Lower left: sensory-receiving interneurons made more than 30% of their synaptic connections with 1-synapse and reached 20% of connectivity to RPNs with only 1- and 2-synapse connections. Lower right: non-sensory-receiving interneurons made less than 30% of their synaptic connections with 1-synapse and about 15% of their total connectivity to RPNs with 1- or 2-synapses. In general, sensory neurons made more ‘weak’ (one or two synapses) connections than interneurons to the RPNs. Thus, using a reconstruction threshold for interneurons of three synapses per connection to a RPN and using the minimal possible threshold of 1 for the sensory system connected to RPNs (having been reconstructed by Miroschnikow et al., 2018), it was possible to fully describe the RPN connectome with a completeness of 93%. For abbreviations, see Figure 2—figure supplement 4. In subsequent analysis, synaptic thresholds were chosen based on the scientific message we want to convey in the clearest possible manner and may differ depending on the type of graphs, schemes, or tables used. These can be presented in terms of absolute number of synapses or relative to a total number (e.g., percentage of total incoming synapses for a given neuron). One cannot say a priori which is more useful for a given figure as the number of synapses and synaptic partners can vary widely depending on the neuron.
+
+### Peptidergic and synaptic outputs
 
 Peptidergic signaling is accomplished through release from dense core vesicles (DCVs). The specific peptidergic output region of all cells was identified by contacts of DCVs with the membrane with the apparent liberation of small dense particles, as exemplified for the corazonin neurons (CRZ) (Figure 2C). The outputs of all 10 peptidergic RPN groups are restricted mainly to the CC and AO. PTTH and CA-LP project almost exclusively to the PG and CA, respectively (Figure 2D). Neurons producing the stress-related peptide Crz (Kubrak et al., 2016) showed the broadest output pattern, targeting all tissues (Figure 2C and D). We also analyzed the reliability of determining the output release site by quantifying DCV fusions sites. Using Crz and corazonin receptor (CrzR)-expressing cells as an example, we could confirm by trans-Tango system (Inagaki et al., 2012) that the CC cells are the main target of CRZ (Figure 2—figure supplement 3). Thus, DCVs found in the PG or CA might mean that other RPNs, like PTTH and CA-LP, express the CrzR (for PTTH shown in Imura et al., 2020). These data further lend support that DCV fusion sites represent a reliable measure for targets of RPNs. The anatomical data on peptidergic outputs were combined with existing single-cell transcriptomic data on the larval brain (Brunet Avalos et al., 2019). Focusing on the expression of neuropeptides and their cognate receptors within the ring gland system, we confirmed, for example, that CRZ are targeting all other RPNs by releasing Crz as well as short neuropeptide F and proctolin (Figure 2—figure supplement 4). At the same time, the Crz receptor is expressed in the CC and to a lesser extent in the PG and CA, as well as in other RPNs. Based on the peptides and receptors expressed by the distinct RPN groups, the analysis uncovers complex interactions between neuroendocrine cells. At this point, it is unclear to what extent these peptide-receptor interactions occur between peptides released within the CNS or found in the hemolymph.
 
 We next addressed the issue of the largely unknown synaptic connectivity of the neuroendocrine cells by reconstructing the synaptic up- and downstream partners of all RPNs (threshold of three synapses to each RPN). For information on completeness of our analysis and the criteria for choosing certain threshold values, see Figure 2—figure supplement 5. We identified 30 downstream partners that, unexpectedly, were exclusively targeted by the two eclosion hormone neurons (EH), one on each side of the ventromedial protocerebrum (Figure 2E). The functional significance of the EH synaptic outputs is as yet unknown. However, it has been shown that the neurohemal release sites could be removed and the axon stumps electrically stimulated; this evoked an ecdysis motor program through interaction of the EH with response circuitry in the ventral nerve cord (VNC) (Hewes and Truman, 1991). Notably, these include all the other RPNs with the exception of CA-LP and PTTH, which regulate the activity of two major growth/maturation hormones, namely juvenile hormone and ecdysone (Figure 2F).
 
-## Synaptic inputs onto the neuroendocrine system
+### Synaptic inputs onto the neuroendocrine system
 
 We identified 209 upstream partners of the RPNs, whose synaptic sites are distributed in the anterior thoracic and SEZ region and up along the protocerebrum in a sprinkler-like fashion (Figure 3A). Unlike the RPNs in the PI (IPCs, DMS, DH44), which have significant amounts of monosynaptic connections with sensory neurons (Miroschnikow et al., 2018; Schlegel et al., 2016), the RPNs of the PL (CRZ, PTTH, CA-LP, and ITP) have no direct sensory input. Similarly, EH, CAPA, and HugRG (hugin neurons innervating ring gland) RPNs have only small amounts of direct sensory contacts (Figure 3—figure supplement 1). We therefore focused on the interneurons and their connection with the sensory system.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig3-v1.jpg)
+
+**Figure 3.:** (A) Spatial distribution of postsynaptic sites of all RPNs (color coded). RPN postsynaptic sites are located along upper SEZ and in the protocerebrum in a sprinkler-like fashion. (B) Schematic side view of a Drosophila larva. Colored dots represent the location of sensory organs, based on their sensory origin. (C) Synaptic connections to RPNs (grouped) from top to bottom: RPNs are grouped by their endocrine targets or their location of somata within the CNS (brain area, colored bars). RPNs (displayed by expression pattern of the respective Gal4 or LexA lines) receive synaptic inputs (fraction of total synaptic inputs as percentage) from distinct sets of interneurons (numbers in circles represent the number of interneurons connected to RPNs), which in turn receive information from sensory neurons (fraction of total synaptic input as percentage). Colored pie charts represent the sensory profile through which interneurons (grouped) of each RPN group integrate sensory inputs (numbers in white circles). Colors of pie charts correspond to the respective sensory origins shown in (B). Note that the monosynaptic sensory neurons are also involved in polysynaptic pathways to the RPNs. (D) Scheme of the FFN. Sensory neurons are activated with an activation factor of 2 in the FFN. When more than 5% of presynaptic neurons are active, interneurons become activated up to an activity of 50%. (E) Summary of sensory-driven modulation of RPN output groups by FFN. The X-axis for each panel shows the mean activity of RPNs listed on the Y-axis. Colors represent the different sensory origins used to activate the network through 1- and 2-hop synaptic connections. a: anterior; AO: aorta; CA: corpus allatum; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CC: corpora cardiaca; CNS: central nervous system; CO2: carbon dioxide; CRZ: corazonin neurons; DCVs: dense core vesicles; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; FFN: feed forward network; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; MS (SEZ): medial subesophageal ganglion; p: posterior; PG: prothoracic gland; PI: pars intercerebralis; PL: pars lateralis; PTTH: prothoracicotropic hormone neurons; RPNs: ring gland projection neurons; syn. thresh.: synaptic threshold; VM: ventromedial cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Top: schematic drawings of the dorsal view of individual sensory origins and their projections into the CNS. Strength of synaptic connections from different sensory origins is displayed as total synapse number from a given sensory origin by color-coded lines (thickness represents number of synapses). Main connected sensory origins (to RPN upstream neurons) derive from enteric, pharyngeal, external, TD (CO2), TD somato, and olfaction (B) All monosynaptic connections to RPNs. Note that neurons of the pars lateralis (CRZ, ITP, CA-LP, and PTTH) have no monosynaptic connections to the sensory system. (C) Presynaptic neurons of all RPNs (threshold = 3 synapses) were divided based on connectivity to sensory neurons (minimum two synapses, blue) or having no or minor connectivity to sensory neurons (<2 synapses) (red). Interneurons having three synapses to RPNs and their hemilateral partners connected to each RPN with at least one synapse were analyzed. If a hemilateral partner of an interneuron had no synaptic connection to a given RPN group, the interneuron was excluded from analysis. a: anterior; CALP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CO2: carbon dioxide; CRZ: corazonin neurons; d: dorsal; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; DO: dorsal organ; DPO: dorsal pharyngeal organ; DPS: dorsal pharyngeal sense organ; EG: esophageal ganglion; EH: eclosion hormone neurons; HCG: hypocerebral ganglion; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; LbO: labial organ; p: posterior; md: multidendritic neurons; PC: protocerebrum; PPS: posterior pharyngeal sense organ; PTTH: prothoracicotropic hormone neurons; PVG: proventricular ganglion; RPNs: ring gland projection neurons; SEZ: subesophageal zone; TD: tracheal dendritic neurons; TO: terminal organ; v: ventral; VO: ventral organ; VPS: ventral pharyngeal sense organ.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) TDs visualized in 260-Gal4 line crossed with UAS-mRFP. TD wrap around peripheral trachea and project to the VNC and SEZ (Qian et al., 2018). Right: dorsal view of TD projecting to the SEZ in the sTEM reconstruction. Area of interest was used for CaMPARI experiments. (B) Schematic of experimental setup. CO2 was blown for 10 s into Petri dish, larva was placed in Petri dish for 1 min, and subsequently illuminated with 405 nm light for 15 s. Red to green fluorescence ratios shown for TD dendrites projecting to the SEZ in 260-Gal4 line crossed with UAS-CaMPARI-1 line. Strong photoconversion was observed in larvae within CO2-enriched Petri dishes. Scale bars represent 20 µm. (C) Schematic setup for dose-dependent CO2 stimulation. Similar to (B), but CO2 concentration was 0, 10, or 20% CO2. Activation of TDs could be observed in a dose-dependent manner with rising concentrations of CO2. Scale bars represent 10 µm. (D) The known CO2 receptor Gr21a is not expressed in the TDs. Three different Gr21a promoter lines all drive target gene expression in the SEZ, but not in the TDs of VNC as seen in (A). Note that Gal4 driver line in Gr21a>GFP (I) (middle panel) was Bloomington line #23,890 and in Gr21a>GFP (II) (right panel) Bloomington line #24,147. For all genotypes, see Materials and methods section. a: anterior; CaMPARI: calcium-modulated photoactivatable ratiometric integrator; CNS: central nervous system; CO2: carbon dioxide; d: dorsal; GFP: green fluorescent protein; Gr21a: gustatory receptor 21a; l: left; mRFP: monomeric red fluorescent protein; p: posterior; r: right; SEZ: subesophageal zone; ssTEM: serial section transmission electron microscope; TD: tracheal dendritic neurons; VNC; ventral nerve cord.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Activity modulation of RPNs using direct and indirect connectivity to the sensory system (monosynaptic = direct, 2-hop polysynaptic = indirect). Only those interneurons were used that have at least three synapses to each of the RPNs. FFN: feed forward network; for other abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Activity modulation of RPNs using the complete connectivity to the sensory system monosynaptic = direct, 2-hop polysynaptic = indirect and 3-hop polysynaptic = indirect. Only those interneurons were used that have at least three synapses to each of the RPNs. (B) Activity modulation of RPNs using only 2-hop indirect connections. FFN: feed forward network; for other abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Activity modulation of RPN using only monosynaptic connections to the sensory origins. (B) Activity modulation of RPNs using 2- and 3-hop polysynaptic connections. FFN: feed forward network; for other abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Adjacency matrix showing sensory to interneuron (no synaptic threshold) and interneuron (selected with a synaptic threshold of at least three synapses to any of the RPNs) to RPNs. All synapses between shown neuron types were included. Top: color-coded sensory origins synapse onto upstream neurons (interneurons) of the RPNs (green heatmap). Upstream neurons synapse onto RPNs (magenta heatmap), clustered by peptide identity. Matrix: sensory origins are displayed by single cells color coded as above scheme. Interneurons were divided into those receiving and not receiving synaptic input from sensory neurons. Matrix was formatted using the connectivity of interneurons to specific peptidergic RPN clusters. For abbreviations, see Figure 3—figure supplement 1.
+
 We first divided the upstream interneurons into two groups: interneurons receiving direct sensory input and those that do not (threshold at two synapses); slightly more than half of all upstream neurons integrate sensory information, n = 110 (Figure 3—figure supplement 1). Based on previous publications, we know the peripheral origin (e.g., enteric, pharyngeal, olfactory) of most sensory neurons (Berck et al., 2016; Miroschnikow et al., 2018). Here, we additionally characterize a subset of tracheal dendritic neurons (TD neurons) (Qian et al., 2018; Schlegel et al., 2016) as being responsive to CO2 levels (Figure 3—figure supplement 2). To determine which sensory signals are integrated by RPNs via these interneurons, we grouped their sensory inputs based on their peripheral origin (Figure 3B). The resulting map provides a comprehensive overview of the sensory to endocrine pathways in the larval neuroendocrine system (Figure 3C). All of the RPNs receive input from a distinct combination of interneurons, which in turn receive input from a distinct combination of sensory neurons. In one extreme (e.g., IPCs), 152 sensory neurons from six different sensory regions (greatest from enteric) target 34 interneurons. At the other extreme (e.g., CAPA), 17 sensory neurons from two sensory regions target just four interneurons. The synaptic load of RPNs from interneurons that receive sensory inputs varies greatly. The largest is for CRZ, where 82% (fraction of input synapses) of the total input is from interneurons with direct sensory connections.
 
-## Modeling the impact of activating sensory neurons on the neuroendocrine system
+### Modeling the impact of activating sensory neurons on the neuroendocrine system
 
 To assess the potential impact of sensory inputs on the neuroendocrine system, we employed a network diffusion model based on direct monosynaptic and 2-hop polysynaptic connections using feed-forward connectivity (Figure 3D). The model is deliberately kept simple as we lack detailed knowledge on the physiology (e.g., neurotransmitter) of the neurons involved. Such networks have been recently used successfully in the mouse to model sensory impact on activity in higher brain centers of the thalamus (Shadi et al., 2020). Our model predicts the impact of specific sensory origins onto each RPN group (Figure 3E; for parameterization and connection types in the model, see Figure 3—figure supplements 3–5; adjacency matrix for all neurons used in this study in Figure 3—figure supplement 6). As a first experimental analysis based on the predictions, we chose the CO2 path because the defined sensory organ, that is, TD neurons, and distinct modality (CO2) made it more tractable.
 
-## A novel CO2-dependent trachea to endocrine pathway
+### A novel CO2-dependent trachea to endocrine pathway
 
 The model predicts a strong impact of TD (CO2) neurons on DH44, CRZ, DMS, and CAPA RPNs (Figure 3E). To validate this, we performed imaging experiments using the ratiometric calcium integrator CaMPARI-2 to measure changes in activity of the RPNs upon CO2 exposure (Figure 4). Indeed, the in vivo experiments confirmed the predictions for DH44 and CRZ RPNs, which were strongly activated by CO2 (Figure 4). Weaker activation of DMS and IPCs was also observed, consistent with the predicted weak effects. CAPA neurons did not differ significantly from control groups but tended to show a lower activity upon CO2 stimulation. Since the network diffusion model does not take the sign of a connection into account, it is conceivable that CAPA neurons are inhibited by CO2. The analysis of connectivity based on the EM volume enabled us to identify a new circuit in which CO2 level is detected by TD neurons, integrated by a core set of four thoracic interneurons (somata located in T1–T3 segments), which in turn strongly connect to DH44 and CRZ (Figure 5A and B). Each of the thoracic interneurons have slightly different connectivity profiles in terms of their up- and downstream partners (Figure 5C). Thus, while all four are interconnected to CO2 sensory neurons and target DH44 or CRZ, the strength of the connections differs as well as their connections to other sensory neurons and RPNs. Please see Figure 5—figure supplement 1 and 2 for identity (ID number and connectivity) of all interneurons.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig4-v1.jpg)
 
-**Figure 4.:** 2 stimulation on RPNs.(A) Setup for CO2 stimulation of intact larvae. After 1 min of CO2 exposure (0 or 20%), light of 405 nm wavelength was activated for 30 s. (B) Different peptide Gal4-lines driving expression of CaMPARI-2 in RPN clusters. Note that certain peptidergic clusters show baseline activity (CRZ, PTTH, CAPA) and therefore different scaling for the Y-axis was used, which represents the red to green fluorescence ratio. Significant activity changes could be observed for DMS, DH44, and CRZ upon CO2 stimulation (magenta bars) compared to air (blue bars). Images next to the graphs show representative maximum projections of imaged cells (blue border = air, magenta border = 20% CO2). All scale bars represent 20 µm. CaMPARI-2: calcium-modulated photoactivatable ratiometric integrator 2; CAPA: capability neurons; CO2: carbon dioxide; CRZ: corazonin neurons; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; n.s.: not significant; PTTH: prothoracicotropic hormone neurons; RPN: ring gland projection neuron.
+**Figure 4.:** (A) Setup for CO2 stimulation of intact larvae. After 1 min of CO2 exposure (0 or 20%), light of 405 nm wavelength was activated for 30 s. (B) Different peptide Gal4-lines driving expression of CaMPARI-2 in RPN clusters. Note that certain peptidergic clusters show baseline activity (CRZ, PTTH, CAPA) and therefore different scaling for the Y-axis was used, which represents the red to green fluorescence ratio. Significant activity changes could be observed for DMS, DH44, and CRZ upon CO2 stimulation (magenta bars) compared to air (blue bars). Images next to the graphs show representative maximum projections of imaged cells (blue border = air, magenta border = 20% CO2). All scale bars represent 20 µm. CaMPARI-2: calcium-modulated photoactivatable ratiometric integrator 2; CAPA: capability neurons; CO2: carbon dioxide; CRZ: corazonin neurons; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; n.s.: not significant; PTTH: prothoracicotropic hormone neurons; RPN: ring gland projection neuron.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig5-v1.jpg)
+
+**Figure 5.:** (A) Comparison of underlying connectivity of TD (CO2) neurons via interneurons to the RPNs, with the predicted outcome of mean activity (with an activation factor of 2; when more than 5% of presynaptic neurons are active, interneurons become activated up to an activity of 50%) of RPNs, and the outcome of CaMPARI-2 CO2 experiments. FFN diffusion model reliably shows modulation of the RPNs. Please note that the circled numbers in the path analysis refer to the total number of neurons, not neuron identification number. (B) Using the combination of connectivity, prediction, and functional imaging experiments, a new sensory to endocrine neural circuit can be derived. TD (CO2) neurons at the trachea respond to CO2 levels and communicate predominantly via a core set of thoracic interneurons to DH44 and CRZ, which show release sites in the CC and AO. (C) Connectivity of the single thoracic interneurons (hemilateral pairs) to presynaptic sensory origins and to the distinct postsynaptic RPN groups. Thoracic interneurons receive additionally other sensory modalities apart from TD (CO2) neurons and target different combinations of RPNs. (D) CRZ interneurons: hive plot showing the polysynaptic pathways from all sensory origins to all RPN target groups using the interneurons (synaptic threshold = 3) that target CRZ. Main sensory origins are enteric, pharyngeal, and CO2. DH44 interneurons: TD (CO2) represent the most dominant polysynaptic path from sensory origins to DH44. Note that monosynaptic connections from sensory neurons to RPNs are shown in gray. AO: aorta; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CaMPARI-2: calcium-modulated photoactivatable ratiometric integrator 2; CAPA: capability neurons; CC: corpora cardiaca; CO2: carbon dioxide; CRZ: corazonin neurons; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; FFN: feed forward network; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; PTTH: prothoracicotropic hormone neurons; RPNs: ring gland projection neurons; ssTEM: serial section transmission electron microscope; TD: tracheal dendritic neurons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Absolute synapse numbers from sensory neurons to interneurons, and from interneurons to RPN target groups, are displayed in color-coded boxes. Strength of synaptic contacts is heatmap coded in grayscale. For abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Absolute synapse numbers from sensory neurons to interneurons, and from interneurons to RPN target groups, are displayed in color-coded boxes. Strength of synaptic contacts is heatmap coded in grayscale. For abbreviations, see Figure 3—figure supplement 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Ventral and lateral 3D representations of reconstructed chemosensory neurons of the TO, VO (Miroschnikow et al., 2018), and TD (CO2) neurons in the CNS (top left). Note that Gr21a is expressed in TO ganglion cell 6 and projects via the MxN to the SEZ in the brain (Kwon et al., 2011). Schematic side view of a Drosophila larva. Colored dots and lines represent the location and projection of TOG and TDs (CO2). (B) Shortest path (2-hops) analysis reveals 17 interneurons relaying TO, VO, and TD (CO2) sensory information to DH44 and CRZ neuroendocrine RPNs. Path threshold = minimum two synapses. Neuron colors correspond to respective nodes in connectivity graph. Note that only 8 of the 50 TO and VO neurons are weakly connected to DH44 and CRZ via two interneurons. Percentage represents the fraction of synapses from upstream neurons (arrows). Numbers in circles represent number of cells. (C) Activation of all neurons of the TOG and VO in the FFN, using all reconstructed interneurons to the RPNs, did not alter modulation of the strong CO2-responsive RPNs (e.g., DH44 and CRZ). Instead, TOG/VO neurons are capable of modulating the activity of a different set of RPNs, namely PTTH and CA-LP. Slight activity modulation was observed for DMS and CAPA. Thus it seems unlikely, given the connectome-based modulation of RPNs via the FFN, that Gr21a neurons have an effect on RPN activity based on the CO2 pathway originating from TDs (CO2). A potential implication in terms of valence has to be determined in future experiments. a: anterior; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CO2: carbon dioxide; CRZ: corazonin neurons; d: dorsal; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; FFN: feed forward network; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; MxN: maxillary nerve; p: posterior; PTTH: prothoracicotropic hormone neurons; r: right; RPNs: ring gland projection neurons; SEZ: subesophageal zone; ssTEM: serial section transmission electron microscope; TD: tracheal dendritic neurons; TO: terminal organ; TOG: terminal organ ganglion; VO: ventral organ.
 
 We then took the two main output RPNs of the tracheal CO2-responsive circuit (CRZ and DH44) and asked what other interneurons were upstream of these, and to which sensory neurons these interneurons were connected (Figure 5D). For CRZ, the strongest are in fact not the thoracic interneurons from the CO2 pathway: one hemilateral pair of interneurons (#10, Munin 2) accounts for over 50% of total synaptic input to the CRZ neurons. These interneurons receive sensory information exclusively from pharyngeal sensory neurons (Figure 5D, top hive plot). There are two other strongly connected interneurons (#9, Munin 1; #12, subesophageal zone into brain neuron [SiB]), and they receive most of their inputs from the enteric region. Furthermore, all the interneurons are also part of pathways that target several RPNs. For example, interneuron #10 targets all neurons of the PL, whereas interneuron #12 targets all neurons of the PI. For DH44, the strongest upstream partners are the same thoracic interneurons that respond to CO2 (Figure 5D, bottom hive plot).
 
@@ -79,9 +147,25 @@ Currently, one chemosensory receptor, gustatory receptor 21a (Gr21a), has been s
 
 In sum, this illustrates the distinct sensory-to-neuroendocrine connectivity profiles (which sensory origins onto which set of RPNs) of the different interneurons.
 
-## Interneurons that direct sensory information to distinct sets of neuroendocrine outputs
+### Interneurons that direct sensory information to distinct sets of neuroendocrine outputs
 
 We next extended the connectivity hub analysis to the other interneurons of the neuroendocrine system (Figure 6). In the first approach, we plotted the sensory-to-interneuron-to-target paths for each RPN (Figure 6A). Shown are examples from RPNs located at different regions of the CNS, and one can see the large variation in the number and type of interneurons present that are directly connected to the sensory neurons. For instance, the IPCs receive inputs from the largest number of such interneurons, and from these, interneuron #11 (HuginPC, hugin neurons innervating protocerebrum) provides the largest input. At the other extreme, HugRG neurons receive inputs from the least number of such interneurons; however, one of these, namely #17 (Dpilp7), provides 8% of total input that the HugRG neurons receive. The analysis also illustrates the wide range of differences in synaptic strength between sensory neurons and interneurons as compared to between interneurons and target RPNs. For example, interneuron #1 has strong connections to sensory neurons but weak connections to the IPCs; by contrast, interneuron #16 has weak connections to sensory neurons but strong connections to the IPCs. A similar situation is observed between the interneurons #5 (one of the thoracic interneurons) and #10 (Munin 2) in terms of targeting CRZ.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of graph representation. Outer ring represents the sensory composition of neurons targeting upstream neurons of RPNs. Synaptic threshold for upstream neurons of RPNs = 3. Line thickness to interneurons and targets represents the percentage of synaptic input. Striped ring represents the interneuron layer (black lined white circle). Inner ring represents target neurons (RPN peptide clusters). Sensory-interneuron circuits of neurons within the PI region. IPCs integrate mainly information from enteric sensory areas. Sensory-interneuron circuits within the PL region. CRZ integrates mainly CO2 and pharyngeal sensory information. Peptides of the MS (SEZ) or VM cluster show least number of sensory-interneuron input. HugRG neurons receive sensory information from two interneuron pairs integrating mainly somatosensory and CO2 sensory information. Please note different scaling for strength of connections between sensory origin to interneurons (black lines) and interneurons to target peptide groups (gray lines). (B) Dot plot showing the importance of interneurons acting as sensory to endocrine hub. Dot size was calculated using the fraction of total input an interneuron receives from sensory neurons multiplied by the fraction of total input this interneuron gives to an RPN output group. Colored backgrounds of dots are highlighted for (C). (C) Selected interneurons (highlighted in B) connecting the sensory system with RPNs. Thoracic interneurons receive sensory information from TD (CO2) neurons and target IPCs, DH44 and CRZ (hive plot, strongest connection = 147 synapses). Munin 2 interneurons connect CRZ, ITP, PTTH, and CA-LP RPNs with pharyngeal sensory neurons. HugPC connect the IPCs with enteric sensory neurons. SiB neurons also receive information from enteric origins but target DMS, IPCs, and CRZ. Edge threshold for hive plot = 5 synapses. CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CO2: carbon dioxide; CRZ: corazonin neurons; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; HugPC: hugin neurons innervating protocerebrum; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; MS (SEZ): medial subesophageal ganglion; PI: pars intercerebralis; PL: pars lateralis; PTTH: prothoracicotropic hormone neurons; RPNs: ring gland projection neurons; SiB: subesophageal zone into brain neurons; VM: ventromedial.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Dorsal (left) and lateral (right) view of the larval CNS and all reconstructed sensory neurons used for analysis in this study (sensory neurons were pooled from published data of earlier studies; see main text). (B) Schematic of graph representation. Outer ‘ring’ represents the sensory composition of neurons targeting upstream neurons of RPNs. Line thickness to interneurons and targets represents the percentage of synaptic input. Striped ring represents the interneuron layer (black lined white circle). Inner ring = target neurons (RPN peptide clusters). (C) Sensory-interneuron paths of neurons within the PI region. IPCs and DMS integrate mainly information from enteric sensory areas. DH44 show most connections from TDs (CO2) via interneurons. (D) Sensory-interneuron paths within the PL region. Peptidergic groups show connectivity to less sensory-receiving interneurons. CA-LP and PTTH are the only RPNs from PL receiving sensory information from external sensory neurons and ORNs. CRZ integrate mainly CO2 and pharyngeal sensory information, while ITP integrate somatosensory and pharyngeal sensory information. (E) Peptides of the SEZ or VM cluster show least number of sensory-interneuron input. HugRG receive sensory information from two interneuron pairs integrating mainly somatosensory and CO2 sensory information; CAPA integrate CO2 and enteric information; EH integrate enteric and somatosensory neurons. Please note different scaling for strength of connections between sensory origin to interneurons (black lines) and interneurons to target peptide groups (gray lines). a: anterior; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CRZ: corazonin neurons; d: dorsal; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; ORNs: olfactory receptor neurons; p: posterior; PI: pars intercerebralis; PL: pars lateralis; PTTH: prothoracicotropic hormone neurons; r: right; RPNs: ring gland projection neurons; SEZ: subesophageal zone; TD: tracheal dendritic neurons; VM: ventromedial cells.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Upstream neurons of CA-LP (synaptic threshold = 3). CA-LP integrate mainly pharyngeal, external and olfactory sensory signals via their upstream neurons (edge threshold = 5, strongest synaptic connection has 137 synapses). (B) Upstream neurons of PTTH. PTTH RPNs share three interneurons with CA-LP RPNs (neuron IDs: 9, 10, and 47). PTTH integrates similar sensory inputs via interneurons as CA-LP (pharyngeal, external, and olfactory origins; edge threshold = 5, strongest synaptic connection has 355 synapses). CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CAPA: capability neurons; CRZ: corazonin neurons; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; EH: eclosion hormone neurons; HugRG: hugin neurons innervating ring gland; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; PTTH: prothoracicotropic hormone neurons; RPNs: ring gland projection neurons.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Panel 1. Shortest-path (2-hops) analysis reveals six mPNs (Berck et al., 2016) relaying olfactory sensory information (ORNs) to CA-LP and PTTH neuroendocrine RPNs (path a). Synaptic threshold is 1 from ORNs to interneurons and minimum three synapses from interneurons to targets. Percentage represents the fraction of synapses from upstream neurons (arrows). Colored pie charts represent the percentage composition of total synaptic input from sensory neurons onto interneurons. Colors of pie charts correspond to the respective sensory compartments as in Miroschnikow et al., 2018. Panel 2. Alternative paths (paths b and c) from mPNs converging onto the same RPNs (CA-LP and PTTH) with a synaptic threshold of minimum 3. One interneuron (path b, neuron ID: 22) receives information from non-olfactory sensory neurons (sens interneurons). All 26 interneurons of path c have no connectivity to sensory neurons (no-sens interneurons). Note that path b in turn uses four neurons of path c as alternative routes to PRNs (syn.thresh. = 2). Panel 3. Adding more neurons that integrate olfactory information (olfaction interneurons): uPN, mPN, and LN (Berck et al., 2016) increases the number of possible and combinatorial paths (3-hops, syn. threshold = 3) to RPNs. Note that olfaction interneurons integrate information from both olfactory sensory neurons as well as from non-olfactory sensory neurons. Edges between olfaction interneurons are not shown. Panel 4: Superimposition of lateral horn, mushroom body KC, and MBON onto the ORN-to-RPN circuit. Note that all sensory information-integrating neurons, mushroom body, and lateral horn converge onto no-sens interneurons. (B) Adjacency matrix showing neurons of panel 4 in (A), color-coded by percentage of inputs on targets (columns). (C) Frontal view of the neuropil showing the distribution of presynaptic sites of all neurons (panel 4 in A) that act as paths for olfactory information to RPNs (CA-LP and PTTH). Each circle represents a synaptic site. Synapses are colored based on neuron class. The SEZ and AL are marked with dotted lines. (D) Representation and connectivity of KCs, MBONs, lateral horn neurons, convergence neurons, and MB2ONs (Eichler et al., 2017; Eschbach et al., 2020) that act as paths to CA-LP and PTTH neuroendocrine RPNs (synaptic threshold = 3). Convergence neurons and MB2ON correspond to path c and e neurons (no-sens interneurons) in (A). Edges of MBONs are colored based on their behavioral effect (avoidance, approach) (Eschbach et al., 2020). AL: antennal lobe; CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; KC: Kenyon cells; LH: lateral horn; LN: local neurons; MBON: mushroom body output neurons; mPNs: multiglomerular projection neurons; ORNs: olfactory receptor neurons; PTTH: prothoracicotropic hormone neurons; RPNs: ring gland projection neurons; SEZ: subesophageal zone; uPN: uniglomerual projection neurons.
 
 In the second approach, we calculated the fraction of sensory inputs to given interneurons and multiplied it with the fraction of inputs of the RPN (Figure 6B). This analysis revealed interneurons that play a major role in the sensory pathways to the neuroendocrine system. Selected notable interneurons are illustrated in Figure 6C. For example, both #11 (HugPC) and #12 (SiB) interneurons have their strongest inputs from the enteric sensory neurons; however, whereas HugPC interneurons strongly target just the IPCs (edge threshold of minimum five synapses), SiB interneurons target DMS, IPCs, and CRZ (Figure 6C).
 
@@ -89,17 +173,25 @@ There are also intriguing unique groups, for example, the interneurons (#s 46–
 
 Finally, we illustrate the key features of the neuronal circuit architecture that underlie the neuroendocrine system, which can be constructed using CRZ as an exemplary RPN (single output cell) (Figure 7). We start with the strongest connection from interneuron Munin 2 (#10), which receives input from a group of pharyngeal sensory neurons (Figure 7, panel 1). A second interneuron SiB (#12) receives input from a group of enteric sensory neurons (Figure 7, panel 2); this interneuron also receives inputs from a different class of pharyngeal sensory neurons. More interneurons are added to build a series of parallel paths (diverging sensory signals) that all converge on a common RPN (Figure 7, panel 3). These interneurons concurrently target different RPNs (Figure 7, panel 4; see also figure legend for details). At this point, then, a set of distinct RPNs becomes inexorably linked as the interneurons that converge onto the single CRZ neuron are also monosynaptically connected to other RPNs. Thus, the parallel paths that converge on a single RPN (e.g., CRZ) additionally target multiple RPNs, thereby forming a set of linked outputs. For single-cell networks of all RPNs, see Figure 7—figure supplement 1.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig7-v1.jpg)
+
+**Figure 7.:** Circuit architecture common for all RPNs (CRZ single-cell example). 1: the strongest polysynaptic path based on hub analysis from pharyngeal sensory origin to CRZ output neuron via interneuron 10. 2: second interneuron (12) integrating enteric information and different pharyngeal information, converging onto CRZ output neuron. 3: all interneurons of one CRZ output neuron integrating multiple sensory origins and converging onto one single output. 4: concept of divergence and convergence in the neuroendocrine connectome. Sensory neurons diverge/converge onto distinct sets of interneurons. Interneurons diverge in varying synaptic strength onto distinct sets of linked RPN output neurons. Numbers at bottom show degree of convergence and divergence (e.g., interneuron 10 diverges to CRZ, ITP, PTTH, and CA-LP; all interneurons converge to CRZ; synaptic threshold = 3 for all connections). CA-LP: corpus allatum innervating neurosecretory neurons of the lateral protocerebrum; CO2: carbon dioxide; CRZ: corazonin neurons; DH44: diuretic hormone 44 neurons; DMS: Drosophila myosuppressin neurons; ens: enteric nervous system; IPCs: insulin-producing cells; ITP: ion transport peptide neurons; ph: pharynx; PTTH: prothoracicotropic hormone neurons; som: somatic; RPNs: ring gland projection neurons.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65745/elife-65745-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Shown are, based on single-output RPN cell, circuits from sensory origins (single cells) via interneurons (single cells) to output (single cell). Included are also interneurons (upstream of one particular RPN), which do not receive input from sensory neurons (pink interneurons). These are shown on the left panel for each RPN set. Converging paths onto a specific output RPN automatically result in connections to different sets of RPNs (‘linked RPNs’). These linked RPN paths are shown on the right panel for each RPN set. Using DMS 1L as an illustration, a series of parallel paths from different sensory neurons converge, either directly or via a layer of interneurons (presented vertically), onto a single-output cell. In addition, there is another layer of interneurons, but that have no direct contact to sensory neurons (presented horizontally), that also converge onto the same output cell. These pathways are then found to converge, in varying strengths, onto additional RPNs (in this case, a total of six cells), thus forming a linked set of outputs. The same principle applies to RPNs with no direct sensory connections, such as CRZ. For abbreviations, see Figure 6—figure supplement 2.
+
 ## Discussion
 
-## The neuroendocrine connectome of Drosophila larvae
+### The neuroendocrine connectome of Drosophila larvae
 
 Organisms differ in their adaptive capacity to deal with external and internal changes, but the essential goal remains the same: ensuring homeostasis in a changing environment. Evolution of neuroendocrine systems led to the separation of sensory systems, neuroendocrine cells, and specialized glands (Hartenstein, 2006). We show in this paper how the central neuroendocrine system is synaptically organized. A general feature of the ring gland projection neurons (RPNs) is the absence of synaptic outputs within the CNS. The exception are the EH-producing neurons, which have synaptic outputs in the protocerebrum, SEZ, and VNC. This unique feature of EH neurons might be due to their function in coordinating movements during larval cuticle shedding (Baker et al., 1999; Krüger et al., 2015). Another feature is that the RPNs of the PL are connected with the sensory organs exclusively via polysynaptic paths, which is in contrast to the numerous monosynaptic connections found for RPNs of the PI (Miroschnikow et al., 2018; Schlegel et al., 2016). It is also noteworthy that peptides known for their roles in metabolic and stress regulation in general receive large amounts of their inputs from interneurons with direct contacts to the sensory system, that is, these paths are short, with only a single hop between the interneurons and sensory neurons. This might be due to the need for rapid action compared to those (e.g., PTTH and CA-LP neurons) involved in gradual, long-term and irreversible events such as larval growth and maturation.
 
-## Novel CO2-responsive sensory to endocrine pathways: from connectomic-based modeling to in vivo testing
+### Novel CO2-responsive sensory to endocrine pathways: from connectomic-based modeling to in vivo testing
 
 Numerous previously unknown synaptic pathways from the sensory organs to the RPNs were revealed from our connectomic analysis, including a new set of sensory neurons, namely the TD (CO2) neurons that respond to CO2 levels. This might be due to the stress associated with high levels of CO2, which is observed in humans as well (Permentier et al., 2017). These sensory neurons target, via thoracic interneurons, RPNs that express two peptides known to play a dominant role in metabolic stress regulation in Drosophila: Dh44 and Crz (Cannell et al., 2016; Dus et al., 2015; Kubrak et al., 2016). From a neuronal network perspective, it was possible to predict this modulation with a feed forward network (FFN). Both peptide groups display homology to mammalian neuroendocrine axes known to regulate stress (HPA axis) and reproductive behavior (HPG axis). Dh44 is a homolog of vertebrate CRH, which is released in the hypothalamus in response to external and internal stressors like hypoxia or hypoglycemia (Flanagan et al., 2003). A role for Dh44 in glucose and amino acid sensing has been reported (Dus et al., 2015; Yang et al., 2018), but its role in CO2-dependent response was not previously known. CO2 activation of Crz, a homolog to GnRH, adds to the repertoire of stress sensors ascribed to these neurons that include their roles in glucose and fructose sensing (Dus et al., 2015; Kubrak et al., 2016; Miyamoto and Amrein, 2014; Oh et al., 2019; Veenstra, 2009). Interestingly, this sensory pathway, which originates in the trachea, appears to be largely distinct from the CO2 sensing pathway that originates in the terminal organ (Faucher et al., 2006). The physiological and behavioral consequences of CO2-dependent response in the trachea, for example, whether it is appetitive or aversive, remain to be investigated. The connectome analysis further indicates that CRZ and DH44 neurons have the strongest synaptic connections with the sensory system (i.e., greatest number of paths that are connected monosynaptically or via single interneurons), suggesting a critical role of these neurosecretory cells in rapid sensory integration.
 
-## Combinatorial parallel pathways enable variability and flexibility in the central neuroendocrine system
+### Combinatorial parallel pathways enable variability and flexibility in the central neuroendocrine system
 
 Sensory pathways are often studied based on a single type of sensory organ or modality, in most cases for technical reasons. In a natural environment, it is unlikely that an animal will encounter a situation where it needs to react to only a single sensory input and secrete a single type of hormone. For the fly larvae, two broad types of actions have to be taken into account: immediate action to an acute stress (e.g., due to toxic smoke, predator wasp, or starvation), and a slower action that enables tissue and organismal growth (e.g., accumulation of biosynthetic resources for cell growth and progression onto the next moulting or puparium stage). Even an acute response takes place within the existing physiological state of the organism. For the endocrine organs, this requires the secretion of different combinations, and most likely different concentrations, of hormones and neuropeptides into the circulation or target tissues.
 
@@ -109,13 +201,155 @@ As a concluding remark, the neuroendocrine connectome of the Drosophila larva pr
 
 ## Materials and methods
 
-## Flies
+### Flies
 
 All larvae used for experiments and stainings were 96 ± 4 hr (after egg laying) of age and were grown on standard cornmeal medium under a 12 hr light/dark cycle if not otherwise stated. The following driver and effector lines were used (also see Table 1 for genotypes of experimental flies):
 
 Ilp2-Gal4 (IPC neurons, BL#37516), Ms-Gal4 (DMS neurons, Park et al., 2008), Dh44-Gal4 (DH44 neurons, BL#51987), Crz-Gal4 (CRZ neurons, BL#51977), CrzR-Gal4T11A (Sha et al., 2014), Ptth-Gal4 (PTTH neurons, McBrayer et al., 2007), Burs-Gal4 (BL#51980), Burs-Gal4 (BL#40972, this line shows expression in CA-LP neurons of the PL, data not shown), Eh-Gal4 (EH neurons, BL#6301), 17B03-Gal4 (HugRG neurons, Jenett et al., 2012), 714-Gal4 (CAPA neurons, Gohl et al., 2011), ITP-T2A:Gal4 (ITP neurons, used in CaMPARI experiments, unspecific expression in CNS glia observed BL#84702), ITP-T2A:LexA (ITP neurons, for generation see below, used in stainings – clean expression of ITP in the CNS), 260-Gal4 (TD CO2 neurons, BL#62743), Gr21a-Gal4 (BL#23890, BL#24147), Gr21a-GFP (BL#52619), UAS-mRFP (BL#27398), UAS-CaMPARI-1 (BL#58761), UAS-CaMPARI-2 (BL#78316), UAS-GFP (BL#32184), trans-Tango (BL#77124), and lexAop2-myrGFP (BL#32209).
 
-## Generation of ITP-T2A-LexA transgenic fly lines
+**Table 1.**
+ Genotypes of experimental flies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Genotypes</th>
+      <th>Chr.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10">Figure 3C (antibody staining, from left to right)</td>
+      <td>w; P{UAS-mCD8.mRFP.LG}18a; P{Ms-GAL4.P}</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{Ilp2-GAL4.R}2/ P{UAS-mCD8.mRFP.LG}18a</td>
+      <td>X; 2</td>
+    </tr>
+    <tr>
+      <td>w; P{UAS-mCD8.mRFP.LG}18a; P{Dh44-GAL4.TH}2 M</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{UAS-mCD8.mRFP.LG}18a; P{Crz-GAL4.391}4 M</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; TI{2A-lexA::QF}ITP2A-lexA.no1; P{13XLexAop2-IVS-myr::GFP}attP2</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{Burs-GAL4.TH}4 M/ P{UAS-mCD8.mRFP.LG}18a</td>
+      <td>X; 2</td>
+    </tr>
+    <tr>
+      <td>w; P{UAS-mCD8.mRFP.LG}18a; P{Ptth-GAL4.M}45, P{Ptth-GAL4.M}117b</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{UAS-mCD8.mRFP.LG}18a; P{GMR17B03-GAL4}attP2</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; PBac{IT.GAL4}CG79970714-G4/ P{UAS-mCD8.mRFP.LG}18a</td>
+      <td>X; 2</td>
+    </tr>
+    <tr>
+      <td>w; P{GAL4-Eh.2.4}C21P/ {UAS-mCD8.mRFP.LG}18a</td>
+      <td>X; 2</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Figure 4B (CaMPARI analysis, from top left to bottom right)</td>
+      <td>w; P{Ms-GAL4.P}/ PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{Ilp2-GAL4.R}2; PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{Dh44-GAL4.TH}2 M/ PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{Crz-GAL4.391}4 M/ PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 3</td>
+    </tr>
+    <tr>
+      <td>w; TI{2A-GAL4}ITP2A-D.GAL4; PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{Ptth-GAL4.M}45, P{Ptth-GAL4.M}117b/ PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{GMR17B03-GAL4}attP2/ PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 3</td>
+    </tr>
+    <tr>
+      <td>w; PBac{IT.GAL4}CG79970714-G4; PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{GAL4-Eh.2.4}C21P; PBac{UAS-CaMPARI2}VK00005</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1B,C</td>
+      <td>Same genotypes as in Figure 3C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 2B</td>
+      <td>w; TI{2A-lexA::QF}ITP2A-lexA.no1; P{13XLexAop2-IVS-myr::GFP}attP2</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3B</td>
+      <td>w; P{UAS-mCD8.mRFP.LG}18a; P{Crz-GAL4.391}4 M</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3C</td>
+      <td>w; P{CrzR-GAL4.3.5.S}T11A/ P{UAS-mCD8.mRFP.LG}18a</td>
+      <td>X; 2</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3D</td>
+      <td>y, w, P{UAS-myrGFP.QUAS-mtdTomato-3xHA}su(Hw)attP8; P{trans-Tango}attP40; P{Crz-GAL4.391}4 M</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 2A</td>
+      <td>w; P{UAS-mCD8.mRFP.LG}18a; PBac{IT.GAL4}lqfR0260-G4</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 2B,C</td>
+      <td>w; P{UAS-CaMPARI}attP40; PBac{IT.GAL4}lqfR0260-G4</td>
+      <td>X; 2; 3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Figure 3—figure supplement 2D (antibody staining, from left to right)</td>
+      <td>w; P{Gr21a-Mmus\Cd8a.GFP}2</td>
+      <td>X; 2</td>
+    </tr>
+    <tr>
+      <td>w; P{Gr21a-GAL4.C}133t52.1/ P{10XUAS-mCD8::GFP}attP2</td>
+      <td>X; 3</td>
+    </tr>
+    <tr>
+      <td>w; P{Gr21a-GAL4.C}133t1.2/ P{10XUAS-mCD8::GFP}attP2</td>
+      <td>X; 3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of ITP-T2A-LexA transgenic fly lines
 
 First, we generated T2A-LexA:QF knock-in constructs that can be targeted to genomic loci by homology-directed repair using the CRISPR/Cas system. Therefore, splice acceptor-T2A-LexA:QF fragments for all three intron phases were amplified by PCR (Q5 polymerase, New England Biolabs) from pBS-KS-attB2-SA(0/1/2)-T2A-LexA::QFAD-Hsp70 plasmids (Addgene #62947, #62,948, and #62949) (Diao et al., 2015) with primers CGTACTCCACCTCACCCATC and ctcgagAAGCTTCTGAATAAGCCCTCGT. PCR products were sub-cloned into pCRII-TOPO vector (Invitrogen) to create plasmids TOPO-T2A-LexA:QF(0), TOPO-T2A-LexA:QF(1), and TOPO-T2A-LexA:QF(2). Next splice acceptor-T2A-Gal4 cassette from pT GEM(0) (Addgene #62891) (Diao et al., 2015) was removed by XbaI/SalI digest and replaced with XbaI/XhoI fragments from TOPO-T2A-LexA:QF(0), TOPO-T2A-LexA:QF(1), and TOPO-T2A-LexA:QF(2) harboring splice acceptor T2A-LexA:QF cassettes (T-LEM, T2A-LexA expression module) for all three intron phases. All restriction enzymes used and T4 DNA ligase are from New England Biolabs. We named these T2A-LexA:QF knock-in plasmids pT-LEM(0), pT-LEM(1), and pT LEM(2).
 
@@ -123,46 +357,86 @@ Two CRISPR target sites (no1 and no2) in the intron downstream of the first codi
 
 Next, 5prime and 3prime homology arms (5´HA, 3´HA) for both targeted sites were introduced into pT-LEM(2). Therefore, target site flanking sequences of approximately 1 kb size were amplified by PCR (Q5 polymerase, New England Biolabs) from genomic DNA of nos-Cas9[attP2] fly line used for embryo injection. See Table 2 for primer sequences. PCR products were subcloned into pCRII-TOPO vector (Invitrogen). Then 5´HAs were ligated as SphI/NotI fragments from TOPO plasmids into SphI/NotI-linearized pT-LEM(2) vector, resulting in pT-LEM(2)–5´HA-no1 and pT-LEM(2)–5´HA-no2. Finally, 3´HA no1 was inserted as AscI/KpnI fragment from TOPO plasmid into AscI/KpnI-digested pT-LEM(2)–5´HA-no1 and 3´HA no2 as KpnI/SpeI fragment into KpnI/SpeI-cut pT-LEM(2)–5´HA-no2, resulting in pT-LEM(2)-ITP-no1 and pT-LEM(2)-ITP-no2, respectively. Plasmid microinjections to generate ITPT2A-LexA-no1 and ITPT2A-LexA-no2 lines were performed by BestGene Inc By using Cre-loxP system, the 3xP3-DsRed cassette was removed from ITPT2A-LexA-no1 and ITPT2A-LexA-no2.
 
-## EM reconstruction
+**Table 2.**
+ Primer sequences to generate homology arms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Forward primer sequence</th>
+      <th>Revers primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5´HA no1</td>
+      <td>gcatgcACGCGCTGTTAATCAAAT</td>
+      <td>gcggccgcACGCTGTAAGGAACACTGATG</td>
+    </tr>
+    <tr>
+      <td>5´HA no2</td>
+      <td>gcatgcCGCTGTCATCGCTGTAATTC</td>
+      <td>gcggccgcGTCCCGCGATCATTTTCC</td>
+    </tr>
+    <tr>
+      <td>3´HA no1</td>
+      <td>ggcgcgccTCAAGGCAAGGCCGTCC</td>
+      <td>ggtaccCGAATTAAATTTGGGCGTTT</td>
+    </tr>
+    <tr>
+      <td>3´HA no2</td>
+      <td>ggtaccCTTCGGTTGTTTCTGAACTTTATG</td>
+      <td>actagtTCTCCCACTCCCCAATTATG</td>
+    </tr>
+  </tbody>
+</table>
+
+### EM reconstruction
 
 Neuron reconstruction was done on an ssTEM volume of a 6-hr-old first instar larva (Ohyama et al., 2015). We identified the RPNs by reconstruction of all axons originating in the CNS and targeting the ring gland through the NCC nerve. The mNSCs including neurons producing insulin-like peptides, DMS and DH44, have been previously reconstructed and described (Miroschnikow et al., 2018; Ohyama et al., 2015; Schlegel et al., 2016). We reconstructed all neurons to completion (tracing 100% and at least 95% reviewed). Downstream targets were not synaptically connected to RPNs (except for EH downstream partners, being reconstructed with a synaptic threshold of 3). Therefore, membrane-fused DCVs were marked as connectors without direction. DCVs within the CNS were not marked due to technical issues with the common synapse annotation system. No synaptic connections were observed in the larval ring gland. The ring gland was reconstructed with all cells and tissue areas were assigned based on tissue boundaries, color (CA area was slightly darker, CC cells showed dendritic arborizations into the CC), and cell soma position. All synaptic up- and downstream partners of the RPNs were reconstructed to completion with a synaptic threshold to each of the RPNs of three synapses.
 
 For sensory neurons included here, we made use of earlier published data (Berck et al., 2016; Miroschnikow et al., 2018; Ohyama et al., 2015; Schlegel et al., 2016). A subset of 12 TD neurons were already described (Schlegel et al., 2016). We reconstructed for this study all 26 TD neurons.
 
-## Sensory neuron pie charts
+### Sensory neuron pie charts
 
 Pie charts in Figure 3 and following: Pie charts of sensory profiles were calculated using the percentage of total synaptic input of interneurons and RPNs (in case of monosynaptic connections) as fraction (thereby ignoring other inputs to show distribution of sensory origins). Percentages then give the percentage of total sensory synaptic input to interneurons or RPNS.
 
-## Hub score
+### Hub score
 
 Calculation of hub score in Figure 5A: Fraction of total synaptic input from all sensory neurons to defined interneurons (see IDs) was multiplied by the total fraction of input of the RPN group from this interneuron. For example, interneuron #10 (Munin 2) receives 32.33% (fraction: 0.3233) of their total synaptic input from sensory neurons. In turn, corazonin neurons receive 56.52% (fraction: 0.5652) of their total synaptic inputs from interneuron #10 (Munin 2). Multiplying the fractions of this path (sensory via interneuron to CRZ) leads to a hub score of 0.3233 × 0.5652 = 0.18272916 (hub score).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Dissected larval brains were fixed for 1 hr in paraformaldehyde (4%) in 1× phosphate-buffered saline (PBS), rinsed three times (20 min) with 1% PBS-T (1% Triton X-100 in 1× PBS), and blocked in 1% PBS-T containing 5% normal goat serum (ThermoFisher) for 1 hr. Primary antibody was added to the solution (for concentrations, see below). Brains rotated overnight at 4°C. On the second day, larval brains were washed three times (20 min) with 1% PBS-T and subsequently secondary antibody was applied. Brains rotated overnight at 4°C. After three times washing with 1% PBS-T, brains were dehydrated through an ethanol-xylene series and mounted in DPX Mountant (Sigma-Aldrich). Imaging was carried out using a Zeiss LSM 780 confocal microscope with 25× or 63× objective (oil). For antibody stainings of peptide> mRFP, the primary antibody was anti-RFP (1:500, mouse, Abcam, ab65856). Secondary antibody was anti-Mouse Alexa Fluor 568 (1:500, goat, Invitrogen, A-11031). For ITP>myr GFP stainings, primary antibody was anti-GFP (1:500, chicken, Abcam, ab13970) and secondary antibody was anti-Chicken Alexa Fluor 488 (1:500, goat, Invitrogen, A-11039). For Crz staining, primary antibody was anti-Crz (1:500, rabbit, gift from C. Wegener), secondary antibody was anti-Rabbit Alexa Fluor 568 (1:500, goat, Invitrogen, A-11011). For Trans-Tango stainings, primary antibodies were anti-GFP (1:500, chicken, Abcam, ab13970) and anti-HA (1:250, mouse, BioLegend, 901501). Secondary antibodies were anti-Chicken Alexa Fluor 488 (1:500, goat, Invitrogen, A-11039) and anti-Mouse Alexa Fluor 568 (1:500, goat, Invitrogen, A-11031), respectively. For Gr21a>GFP stainings, primary antibodies were anti-GFP (1:500, chicken, Abcam, ab13970) and anti-Futsch/22C10 (1:500, mouse, DSHB, AB528403). 22C10 was deposited to the DSHB by S. Benzer and N. Colley. Secondary antibodies were anti-Chicken Alexa Fluor 488 (1:500, goat, Invitrogen, A-11039) and anti-Mouse Alexa Fluor 633 (1:500, goat, Invitrogen, A-21046), respectively. DAPI (1:1,000) was used for staining of RG nuclei.
 
-## Functional imaging with CaMPARI
+### Functional imaging with CaMPARI
 
 For experiments with TD-neuron line 260-Gal4, we used UAS-CaMPARI1 (Fosque et al., 2015). A larva was placed inside the Petri dish and fixed with duct tape for 60 s. 405 nm UV light (M405L2_UV, Thorlabs) was placed 12 cm above the larva and illuminated with a LED controller (LEDD1B, Thorlabs at max intensity) for 15 s. Afterwards the larval brain was dissected and put onto a poly-L-lysine-coated coverslip and covered with 1× PBS for imaging at low Ca2+ conditions. Caudal dendrites of TD neurons that project to the SEZ were imaged. For defined concentrations of CO2 stimulation, we used a CO2 incubator (CB 53, Binder) at CO2 concentrations of 0, 10, and 20% CO2 at 24–27°C. Stimulation protocol was the same as described before.
 
 For experiments with different peptide-Gal4 lines, we used UAS-CaMPARI2 with improved baseline fluorescence and improved integration dynamics (Moeyaert et al., 2018). In our hands, photoconversion ratios were lower in general but more defined when neurons were not active, lowering the number of false-positive photoconversion (own observations). We used the CO2 incubator to set CO2 concentration to 20% and compared neuronal photoconversion with 0% CO2 concentration in the incubator. Larvae were placed on duct tape in the middle of a 5 cm Petri dish for 60 s and afterwards illuminated for 30 s with 405 nm at max intensity. Following steps were the same as described before.
 
-## Statistics
+### Statistics
 
 For CaMPARI experiments, green to red ratios of single cells of peptide-Gal4 lines were analyzed with a custom-made script for FIJI (ImageJ), and the mean was calculated per animal (each cell was analyzed and a mean build). Animal means were then analyzed and plotted with Prism 6 software using the Mann–Whitney rank-sum test, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## FFN diffusion model
+### FFN diffusion model
 
-The FFN was implemented in Python as a simple artificial neural network without backpropagation. Synaptic weights were normalized by the total number of postsynapses such that they represented fractions of inputs for a given neuron. Neurons were implemented as rectified linear units using a ReLu activation function that starts responding at 5% and reaches saturation at 50% of their synaptic inputs being active:f(x)={0ifx<a(x−a)/(b−a)ifa<x<b1ifx>b
+The FFN was implemented in Python as a simple artificial neural network without backpropagation. Synaptic weights were normalized by the total number of postsynapses such that they represented fractions of inputs for a given neuron. Neurons were implemented as rectified linear units using a ReLu activation function that starts responding at 5% and reaches saturation at 50% of their synaptic inputs being active:
+
+$$
+f(x)={0ifx<a(x−a)/(b−a)ifa<x<b1ifx>b
+$$
 
 with x being the sum activity of all inputs weighted by their synaptic weights, constants a and b controlling the response onset and saturation, respectively. a and b were chosen such that neurons start responding at 5% and reach saturation at 50% of their synaptic inputs being active: a = 0.05, b = 0.5. These values were chosen to maximize the response range of the network. The code for the FFN and the generation of the figures can be found at https://github.com/Pankratz-Lab/FFN_Hueckesfeld-et-al.-2020 (Schoofs and Schlegel, 2020; copy archived at swh:1:rev:494220124eb79f5ed0b5eebe585b796e18729b47).
 
-## Analysis of single-cell transcriptomic data from Brunet Avalos et al., 2019
+### Analysis of single-cell transcriptomic data from Brunet Avalos et al., 2019
 
 In order to analyze peptide receptor interaction between RPN groups, we sought out to use the data generated in the lab of Simon Sprecher describing the single-cell transcriptomic atlas of the Drosophila larval brain (Brunet Avalos et al., 2019). Advantage of this dataset was the exclusive analysis of SEZ and brain lobes, which helped in finding the RPN-specific peptidergic cell groups. We used R analysis similar to the described workflow in Brunet Avalos et al., 2019 based on Seurat v3 workflow (Butler et al., 2018; Stuart et al., 2019). In brief, we used seurat processing pipeline from Satija lab (https://satijalab.org/seurat/) to process the integrated datasets of fed and starved conditions (GEO accession number GSE134722 Brunet Avalos et al., 2019). This combined dataset consists of 9346 cells and 14,064 analyzed features. In order to cluster the RPNs into the specific groups, the following parameters were used: dataset: fed and starved integrated and log normalized | scale = 10,000 | 2000 variable genes | Seurat v3 processing: cells with unique features: 200–4500 | genes expressed in at least one cell | 31 PCs were used to assess cell clusters | resolution was 1 | cluster 12 was identified as peptidergic cells | peptidergic cells were separated with the following parameters (expression profiles):
 
 For CA-LP neurons, FMRFamide was used based on the description in de Velasco et al., 2007. Hugin-RG cells were separated based on Coexpression of Mip neuropeptide (unpublished observation, staining with Mip-Gal4 line and Hugin-antibody).
 
-## Graphical representation and visualization
+### Graphical representation and visualization
 
 Neurons were rendered in Blender 3D (ver2.79b) using the CATMAID to Blender interface described by Schlegel et al., 2016 (https://github.com/elifesciences-publications/Catmaid-to-Blender) and edited in Affinity Designer (Serif) for MAC. Staining images were processed with FIJI (ImageJ) and CaMPARI images were analyzed using a custom-made FIJI script to be subsequently edited in Affinity Designer. Hive Plots were generated by using the CATMAID software for spatial distribution of nodes and subsequently made in Gephi 0.92 with rescaled edge weights (e.g., 1–200 synapses were rescaled for line thickness 1–20). Edges with less than five synapses were ignored in Gephi. To visualize peptide receptor connectivity, we used Circos tableviewer (http://mkweb.bcgsc.ca/tableviewer/).

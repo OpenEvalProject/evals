@@ -16,11 +16,11 @@
 ### Affiliations
 
 1. Department of Genetics, Blavatnik Institute, Harvard Medical School Boston United States
-2. https://ror.org/03v76x132 Department of Immunobiology, Yale School of Medicine Boston United States
-3. https://ror.org/01e6qks80 Department of Microbiology and Immunology, Dalhousie University Halifax Canada
+2. Department of Immunobiology, Yale School of Medicine Boston United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Department of Microbiology and Immunology, Dalhousie University Halifax Canada ([ROR:01e6qks80](https://ror.org/01e6qks80))
 4. Drosophila RNAi Screening Center, Harvard Medical School Halifax Canada
-5. https://ror.org/007ps6h72 Division of Translational Science and Therapeutics, Fred Hutchinson Cancer Center Seattle United States
-6. https://ror.org/006w34k90 Howard Hughes Medical Institute Boston United States
+5. Division of Translational Science and Therapeutics, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+6. Howard Hughes Medical Institute Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ Here, we describe the construction of a phage-displayed synthetic nanobody libra
 
 ## Results
 
-## Design and construction of phage-displayed synthetic nanobody library
+### Design and construction of phage-displayed synthetic nanobody library
 
 To adapt the previously developed yeast-displayed nanobody library to a phage display platform, we used existing DNA templates originally reported by McMahon et al., 2018 to construct a phage-displayed nanobody library. In this library, the nanobody sequences include constant framework and designed position-specific variations of three complementarity-determining regions (CDRs; Figure 1A). CDRs form the binding interface between nanobodies and antigens, and thus are crucial for nanobody diversity and specificity. The partial randomization in the residues flanking CDRs recapitulates the observed variations at these positions of 93 unique nanobodies deposited in the Protein Data Bank. The more thorough randomization in highly variable positions within CDRs reflects the high diversity of the library. Moreover, the CDR3 region was designed with varying lengths (7, 11, or 15 residues) to promote diverse binding modes and increase the potential for high-affinity binders, providing an additional dimension of diversity and complexity to the nanobody library.
 
@@ -52,7 +52,7 @@ To adapt the previously developed yeast-displayed nanobody library to a phage di
 
 M13 bacteriophage is a non-lytic filamentous bacteriophage and is commonly used for phage display. M13 bacteriophage contains single-stranded DNA genome packaged within a protein capsid formed by the major coat protein pVIII and the minor coat proteins pIII, pVI, pVII, and pIX (Jia and Xiang, 2023). To construct a phage-displayed nanobody library, the DNA sequences were inserted into 5' end of pIII sequence in a phagemid vector (Figure 1A). Next, the phagemid library was introduced into bacteria by massive electroporation. This resulted in a yield of 2.4×1010 individual clones, suggesting a high level of diversity in the phage library. Following helper phage infection, the phages were packaged in the bacteria periplasm and secreted into the culture medium, producing a phage library with nanobodies displayed on the phage surface via fusion to the pIII coat protein.
 
-## Purification of Drosophila secreted proteins as antigens for nanobody screening
+### Purification of Drosophila secreted proteins as antigens for nanobody screening
 
 Cell-cell communication is primarily mediated by secreted and transmembrane proteins, which is of significant research interest and has therapeutic potential. To address the challenge of producing antibodies against secreted and membrane proteins—especially the need for proper protein maturation and post-translational modifications—we used Drosophila S2 cells to produce 8 Drosophila secreted proteins as antigens for nanobody screening: Carbonic anhydrase-related protein B (CARPB), Myoinhibiting peptide precursor (Mip), Salivary gland-derived secreted factor (Sgsf), neuropeptide Nesfatin-1, Midkine and pleiotrophin 1 (Miple1), Amnesiac (Amn), CG9849, and CG13965.
 
@@ -60,17 +60,124 @@ The antigen expression vector was designed with two modules: one for antigen sec
 
 Following transfection, puromycin selection was used to establish stable cell lines. Initial adherent cultures were adapted to suspension culture to increase cell density for efficient antigen production. Antigen expression was induced with CuSO4, after which conditioned media was harvested and the proteins were purified from conditioned medium using Protein A resin.
 
-## Nanobody screening with phage-displayed nanobody library
+### Nanobody screening with phage-displayed nanobody library
 
 To screen for nanobodies that bind these antigens, we first coated 96-well MaxiSorp plates with mCherry-hIgG for negative selection and antigen-hIgG for positive selection (Figure 2A). Then, the phage-displayed nanobody library was incubated with a mCherry-hIgG-coated plate to remove phages with affinity to the plate or the hIgG domain. Next, unbound phages were transferred to antigen-hIgG-coated plates to select phages with affinity to the antigen. After stringent washing, the phages that remained bound to the antigen-coated plate were eluted by infecting bacteria in an ‘elution by infection’ manner. The infected bacteria were used to amplify the selected phages in the presence of helper phages to generate phages used in subsequent iterative selection steps. To enrich for nanobodies with high affinity, in the next rounds of selection, we reduced the antigen amount coated on the plate and increased the number of washing cycles to gradually increase the selection stringency (see Materials and methods).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of nanobody screening. The mCherry-hIgG-coated plate was used for negative selection and the antigen-hIgG-coated plate was used for positive selection. Three iterative rounds of screening were performed for each antigen. (B) ELISA with polyclonal phages from three rounds of selection in CARPB screen campaign. The mCherry-hIgG and CARPB-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (C) ELISA with monoclonal phages from the third round of selection in the CARPB screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and CARPB-hIgG. (D) Predicted Aligned Error (PAE) map generated using AlphaFold-Multimer for the CARPB-NbCARPB-1H complex. Low PAE values, shown in blue, indicate accurate predictions for the interaction interfaces, depicted in the top right and bottom left quadrants. High Local Interaction Score (LIS) and interface TM-score (ipTM) values confirm the structural reliability of the interface. (E) Predicted 3D structure of the CARPB-NbCARPB-1H complex, showing the interaction interface. The region enclosed by the dotted box corresponds to the interaction interface visualized in panel F. Residues involved in the interaction (within 8 Å distance) are marked in red (CARPB) and green (NbCARPB-1H) in the structure and protein sequences. CDRs in the protein sequence are marked by boxes. The interaction predominantly occurs within these CDR regions. (F) Neighboring residues between CARPB and NbCARPB-1H, showing residues within a 5 Å distance. Cyan indicates residues of CARPB, and magenta indicates residues of NbCARPB-1H. Each residue is labeled with its residue name and number.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) ELISA with polyclonal phages from three rounds of selection in Nesfatin-1 screen campaign. The mCherry-hIgG and Nesfatin1-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in Nesfatin1 screen campaign. 48 monoclonal phages were tested against mCherry-hIgG and Nesfatin1-hIgG. (C) Nesfatin1-expressing cells stained with nanobody-displaying phages. GFP signals mark cells expressing membrane-tethered Nesfatin-1. Nb.b201 phage, an irrelevant nanobody displaying phage, was used as negative control. BF, bright field. (D) Nesfatin1-expressing cells stained with purified nanobodies. GFP signals label the cells expressing membrane-tethered Nesfatin-1. Nb127D01 is an irrelevant nanobody used as negative control. BF, bright field.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) ELISA with polyclonal phages from three rounds of selection in Mip screen campaign. The mCherry-hIgG and Mip-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in Mip screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Mip-hIgG. (C) Mip-expressing cells stained with nanobody-displaying phages. GFP signals mark cells expressing membrane-tethered Mip. Nb.b201 phage, an irrelevant nanobody displaying phage, was used as negative control. BF, bright field. (D) Mip-expressing cells stained with purified nanobodies. GFP signals label the cells expressing membrane-tethered Mip. Nb127D01 is an irrelevant nanobody used as a negative control. BF, bright field.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) ELISA with polyclonal phages from three rounds of selection in CG9849 screen campaign. The mCherry-hIgG and CG9849-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in the CG9849 screen campaign. 144 monoclonal phages were tested against mCherry-hIgG and CG9849-hIgG. (C) CG9849-expressing cells stained with nanobody-displaying phages. GFP signals mark cells expressing membrane-tethered CG9849. Nb.b201 phage, an irrelevant nanobody displaying phage, was used as negative control. BF, bright field. (D) CG9849-expressing cells stained with purified nanobodies. GFP signals label the cells expressing membrane-tethered CG9849. Nb127D01 is an irrelevant nanobody used as negative control. BF, bright field.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) ELISA with polyclonal phages from three rounds of selection in Amn screen campaign. The mCherry-hIgG and Amn-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in Amn screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Amn-hIgG.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) ELISA with monoclonal phages from the third round of selection in Sgsf screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Sgsf-hIgG. (B) ELISA with monoclonal phages from the third round of selection in Miple1 screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Miple1-hIgG. (C) ELISA assay with monoclonal phages from the third round of selection in the CG13965 screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and CG13965-hIgG.
 
 After three rounds of selection, we evaluated the selection outcomes with an enzyme-linked immunosorbent assay (ELISA) using the polyclonal phages after each round of selection. Typically, the ELISA signal increased after 2–3 rounds of selection, indicating that phages with affinity for the antigen were progressively enriched in the polyclonal population (Figure 2B). For the CARPB and Nesfatin-1 screen campaigns (Figure 2B, Figure 2—figure supplement 1A), we observed specific ELISA signals against antigen-hIgG but not against mCherry-hIgG even when testing the polyclonal phages, suggesting that the majority of the phage population in these samples specifically recognizes the antigens.
 
 Next, we identified positive hits from the nanobody screens by ELISA using monoclonal phages after the third round of selection. The monoclonal phages exhibiting specific ELISA signals against antigen-hIgG rather than mCherry-hIgG were defined as positive hits for each screen campaign. As expected, most monoclonal phages exhibited specific antigen recognition in the CARPB and Nesfatin-1 screen campaigns (Figure 2C, Figure 2—figure supplement 1B), consistent with the polyclonal phage ELISA results. The nanobody sequences of these hits were identified by Sanger sequencing of the phagemids. In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2—figure supplement 1), 2 candidate nanobodies for Mip (Figure 2—figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2—figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2—figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens. These nanobody sequences were listed in Table 1. However, we failed to identify nanobodies against Sgsf, Miple1, and CG13965 (Figure 2—figure supplement 5), suggesting room for further improvement of our current library and screening platform (see Discussion).
 
+**Table 1.**
+ Protein sequences of the nanobodies identified in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>nanobody</th>
+      <th>sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NbCARPB-1H</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGTISYAPVMGWYRQAPGKEREFVAGISLGGNTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAVYVGSSPYEYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbCARPB-2A</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGNISHYSIMGWYRQAPGKEREFVAAINIGATTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAYAARRPGYEYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbCARPB-2E</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGTISAHSVMGWYRQAPGKEREFVAGIAYGGNTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVASHYTRAPATAHDYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbCARPB-4D</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGYISQPGYMGWYRQAPGKERELVAAITSGGITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVSYASSYLYSYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbCARPB-5F</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFIGFMGWYRQAPGKERELIAGITSGGSTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVVYGGYAYWPAWHDYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbMip-4G</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGNIFNRGAMGWYRQAPGKERELVAAINQGTNTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVHPTYKSHLGYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbMip-4H</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGTIFFRGVMGWYRQAPGKERELVAAISRGANTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVYFPNEGGHYYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbNesfatin1-1A</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGTISTFTFMGWYRQAPGKEREFVAAIGYGGITNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAPYGYSYPQFYAFKYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbNesfatin1-1E</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGNIFEPASMGWYRQAPGKERELVAAINRGAITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAASRYYGAIFLYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbNesfatin1-1G</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGNIFRYRAMGWYRQAPGKERELVAAIAAGGTTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVGRYIVSVYRDDYWYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbNesfatin1-1H</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFYLVDMGWYRQAPGKEREFVATIATGGITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAARVYDGTSDWRHYYYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbNesfatin1-2A</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGNISPYAAMGWYRQAPGKEREFVAAIARGSTTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVRYLGYTVKGILHIYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbNesfatin1-2C</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGYIFYRYTMGWYRQAPGKERELVAGINRGGITNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVIARAQWYLAYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbNesfatin1-3C</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFRFYGMGWYRQAPGKEREFVAAIAYGTTTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVRGYNTADSVRRYDYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbCG9849-15G</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFPWRGMGWYRQAPGKERELVAAISGGANTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAGTLTAGQHRYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbAmn-4D</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFLIFAMGWYRQAPGKEREFVATIGYGATTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVRGFYLRNPPDGYNIRHRYWGQGTQVTVSS</td>
+    </tr>
+    <tr>
+      <td>NbAmn-10A</td>
+      <td>QVQLQESGGGLVQAGGSLRLSCAASGTIFLGIYMGWYRQAPGKERELVAAIALGASTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCASRDAADIYDHDFWYWGQGTQVTVSS</td>
+    </tr>
+  </tbody>
+</table>
+
 To predict the structural basis of antigen-nanobody interactions, we used AlphaFold-Multimer (Evans et al., 2022) to model CARPB-nanobody complexes and evaluated the interaction using both interface pTM (ipTM) score (Evans et al., 2022) and Local Interaction Score (LIS) (Kim et al., 2024). The ipTM score reflects the structural accuracy of the predicted complex, while LIS indicates the potential interaction strength. Among the five candidate nanobodies for CARPB, one nanobody, NbCARPB-1H, exhibited high LIS and ipTM scores, indicating a reliable interaction model (Figure 2D). The Predicted Aligned Error (PAE) map further supported the accuracy of the complex prediction, showing low PAE values (shown as blue color area) in the interaction interface, indicating a reliable structure prediction (Figure 2D). The predicted 3D structure revealed specific interactions between the complementarity-determining regions (CDRs) of NbCARPB-1H and residues in both the N-terminal (CARPB24-52) and C-terminal (CARPB276-277) regions of CARPB (Figure 2E and F). The successful structural modeling of NbCARPB-1H highlights its reliable interaction with CARPB, validating the accuracy of AlphaFold-Multimer predictions for antigen-nanobody complexes.
 
-## Nanobodies recognize membrane-tethered forms of the antigens
+### Nanobodies recognize membrane-tethered forms of the antigens
 
 To further validate that the identified nanobodies can recognize the antigens, we tethered each antigen to the cell surface by glycosylphosphatidylinositol (GPI) anchoring or mCD8 fusion. Four of the five antigens (CARPB, Mip, Nesfatin-1, and CG9849, but not Amn) were successfully presented on cell surface as detected by N-terminal FLAG-tag immunostaining. To test nanobody binding, the antigen-expressing cells were incubated with nanobody-displaying phages, followed by detection of phage binding on cell surface. In contrast to what we observed for an irrelevant nanobody Nb.b201, a nanobody against human serum albumin (McMahon et al., 2018), the positive nanobody-displaying phages could recognize the antigens on the cell surface (Figure 3A).
 
@@ -80,7 +187,7 @@ To further validate that the identified nanobodies can recognize the antigens, w
 
 Since phage display potentially results in multivalent nanobody presentation, we next asked if the monovalent form of the nanobodies still recognizes the antigens. To do this, we incubated the antigen-expressing cells with purified nanobodies, and we observed similar results (Figure 3B), further suggesting that these nanobodies specifically recognize their target proteins.
 
-## Nanobody application in immunostaining and immunoblotting
+### Nanobody application in immunostaining and immunoblotting
 
 To test downstream applications of the nanobodies, NbMip-4G, identified in our nanobody screening against Mip (Figure 2—figure supplement 2), was evaluated for immunostaining and immunoblotting applications. Mip is a neuropeptide that regulates sleep homeostasis, food intake, and mating behavior (Oh et al., 2014; Min et al., 2016; Jang et al., 2017). We observed a strong cytoplasmic immunostaining signal in cells with smaller nuclei in the Drosophila adult gut (Figure 4A), consistent with a previous observation based on single-cell RNA-seq data that Mip is expressed in the enteroendocrine cells (Guo et al., 2019). Importantly, the immunostaining signal disappeared when Mip expression was knocked down by RNA interference (RNAi) (Mex >Mip RNAiv106076), further supporting the specificity of the NbMip-4G.
 
@@ -104,7 +211,164 @@ Overall, we show that our phage-displayed nanobody library provides a highly eff
 
 ## Materials and methods
 
-## Construction of phage-displayed nanobody library
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>CARPB</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0052698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Mip</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0036713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Sgsf</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0266261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nesfatin-1</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0052190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Miple1</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0027111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Amn</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0086782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>CG9849</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0034803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>CG13965</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0032834</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>DRSC</td>
+      <td>FLYB: FBbt:00005737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2R+</td>
+      <td>DRSC</td>
+      <td>FLYB: FBtc0000150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>SS320 (MC1061 F') Electrocompetent Cells</td>
+      <td>Biosearch</td>
+      <td>60512–2</td>
+      <td>For phage library construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot TOP10 Chemically Competent E. coli</td>
+      <td>Invitrogen</td>
+      <td>C404010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot OmniMAX 2 T1R E. coli</td>
+      <td>Invitrogen</td>
+      <td>C854003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot ccdB Survival 2 T1R Competent Cells</td>
+      <td>Invitrogen</td>
+      <td>A10460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 Competent E. coli</td>
+      <td>NEB</td>
+      <td>C2530H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>M13 Major Coat Protein Antibody (RL-ph1) HRP</td>
+      <td>Santa Cruz biotechnology</td>
+      <td>sc-53004 HRP</td>
+      <td>1:1000 dilution for ELISA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>M13 Major Coat Protein Antibody (RL-ph1) Alexa Fluor 647</td>
+      <td>Santa Cruz biotechnology</td>
+      <td>sc-53004 AF647</td>
+      <td>1:500 dilution for immunostaining</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 AffiniPure Goat Anti-Alpaca IgG, VHH domain</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>128-605-230</td>
+      <td>1:500 dilution for immunostaining</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Alpaca IgG, VHH domain</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>128-035-230</td>
+      <td>1:5000 dilution for immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Effectene Transfection Reagent</td>
+      <td>Qiagen</td>
+      <td>301425</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of phage-displayed nanobody library
 
 Library construction followed an established protocol (McMahon et al., 2018). Nanobody library DNA fragments were digested with the restriction enzymes FseI and Nsil at 37 °C for 1 hr and purified using gel extraction (QIAGEN). Similarly, the phagemid vector p443 was linearized by FseI and NsiI digestion and purified by gel extraction.
 
@@ -112,43 +376,43 @@ The purified nanobody DNA fragments and linearized vector were ligated overnight
 
 The overnight culture was centrifuged, and phage particles were precipitated from the supernatant by adding PEG/NaCl to a final volume ratio of 1:5 and incubating on ice for 30 min. The precipitated phage was resuspended in PBS, supplemented with 10% glycerol, thoroughly mixed, aliquoted, and stored at –80 °C. The constructed library resulted in 2.4x1010 transformants, with each aliquot containing 1013 phage particles.
 
-## Sequences of the Drosophila secreted proteins
+### Sequences of the Drosophila secreted proteins
 
 The protein sequence of Nesfatin-1 was adapted from previous literature (Yeom et al., 2021). Putative mature protein sequences for seven Drosophila secreted proteins (CARPB, Mip, Sgsf, Miple1, Amn, CG9849, and CG13965) assessed in this study were determined based on the predicted sequences excluding signal peptide or transmembrane domain from the full sequences (https://www.flyrnai.org/tools/nanobody/web/protein). The protein sequences of the eight Drosophila secreted proteins are as follows.
 
-## CARPB (FBgn0052698)
+#### CARPB (FBgn0052698)
 
 VSWEDWWTYDGISGPAFWGLINPEWSLCNKGRRQSPVNLEPQRLLFDPNLRPMHIDKHRISGLITNTGHSVIFTAGNDTVANYDGMQTPVNISGGPLSYRYRFHEIHMHYGLNDQFGSEHSVEGYTFPAEIQIFGYNSQLYANFSDALNRAQGIVGVSILLQLGDLSNAELRMLTDQLERIRYGGDEAFVKRLSIRGLLPDTDHYMTYDGSTTAPACHETVTWVVLNKPIYITKQQLHALRRLMQGSPDHPKAPLGNNYRPPQPLLHRPIRTNIDFKTTKSNGKAACPTMYREVYYKATSWKQN.
 
-## Mip (FBgn0036713)
+#### Mip (FBgn0036713)
 
 NLVASGSAGSPPSNEPGGGGLSEQVVLDQLSESDLYGNNKRAWQSLQSSWGKRSSSGDVSDPDIYMTGHFVPLVITDGTNTIDWDTFERLASGQSAQQQQQQPLQQQSQSGEDFDDLAGEPDVEKRAWKSMNVAWGKRRQAQGWNKFRGAWGKREPTWNNLKGMWGKRDQWQKLHGGWGKRSQLPSN.
 
-## Sgsf (FBgn0266261)
+#### Sgsf (FBgn0266261)
 
 YRIIESNEVPKTCPALNKDIIFEEPHLNNNQREFYDVREIPRRLHFNSNKKEIQSENWLLRIIRIKTINDGPRHKVTEIKEDKHMDGFAKRLFNILKKTLKMHEPSYKHNNDQKDLFVLKKNHFPPEHHIVKREPVHYNYM.
 
-## Miple1 (FBgn0027111)
+#### Miple1 (FBgn0027111)
 
 STVLGTTEGQETPLALPVAEQTQPTTAIQGEVWEEDDHEVLIRNERGTKSDGLSCRYGKNPWTECDTKTNTRSRTLTLKKGDPACDQTRTIQKKCKKACRYEKGSWSECATGQMTRADKLKASSDPSCEATRVIKKNCKPGKSKDKSAKEQRKNKDKAARKGRV.
 
-## Amn (FBgn0086782)
+#### Amn (FBgn0086782)
 
 LRRRVVSGSKGSAALALCRQFEQLSASRRERAEECRTTQLRYHYHRNGAQSRSLCAAVLCCKRSYIPRPNFSCFSLVFPVGQRFAAARTRFGPTLVASWPLCNDSETKVLTKWPSCSLIGRRSVPRGQPKFSRENPRALSPSLLGEMR.
 
-## Nesfatin-1 (Precursor protein: NUCB1, FBgn0052190)
+#### Nesfatin-1 (Precursor protein: NUCB1, FBgn0052190)
 
 LPVTQNKKDHKEAAESSTPATADVETALEYERYLREVVEALEADPEFRKKLDKAPEADIRSGKIAQELDYVNHHVRTKLDEI.
 
-## CG9849 (FBgn0034803)
+#### CG9849 (FBgn0034803)
 
 STTISIPITTQDIIAGDVFFEILSPSELEYTYRLRPAKDFGSAFSERLEGVPLVITDPPGACQEIRNARDLNGGVALIDRGECSFLTKTLRAEAAGALAAIITEYNPSSPEFEHYIEMIHDNSQQDANIPAGFLLGKNGVIIRSTLQRLKRVHALINIPVNLTFTPPSKINHPPWLGW.
 
-## CG13965 (FBgn0032834)
+#### CG13965 (FBgn0032834)
 
 QETPAAESSPASPTDGETSPVTEASSIGELTQTTEAGSEVTESPTNSTDMVNSTDNPDPNGSPDPENGGDPFVKPGSHIKGPRHVRAHDGFHSLKTEKHWASWNDAFTTPRP.
 
-## Purification of secreted antigens using stable Drosophila S2 cell lines
+### Purification of secreted antigens using stable Drosophila S2 cell lines
 
 Drosophila S2 cells cultured in ESF921 medium (Expression Systems) were transfected with an antigen expression vector as described (Kim et al., 2022). Following transfection, puromycin selection was used to establish stable cell lines. Adherent cultures were gradually adapted to suspension conditions to enhance cell density and antigen production. Antigen expression was induced by adding 500 µM CuSO4 to suspension cultures. Conditioned medium (CM) containing secreted antigens was harvested 4–5 days post-induction. CM was then clarified by centrifugation at 1000×g for 10 min and filtered through a 0.22 µm filter to remove residual debris.
 
@@ -156,7 +420,7 @@ Protein A resin (1 mL, GenScript) was prepared by washing with 25 mL TBS in a gr
 
 The pooled eluate was concentrated using an Amicon Ultra-15 centrifugal filter (50 kDa cutoff; Millipore Sigma) at 4150×g and 4 °C for 30 min, with TBS washes repeated three times. The protein concentration of the final sample was measured at A280 using a NanoDrop spectrophotometer, with absorbance values adjusted based on the protein extinction coefficients.
 
-## Nanobody screening by phage display
+### Nanobody screening by phage display
 
 Purified antigen-hIgG proteins were diluted in PBS (1 µg/well for the first round, 0.5 µg/well for the second round and 0.25 µg/well for the third round) and coated onto Nunc MaxiSorp 96-well plates (Thermo Fisher Scientific, 442404) at 4 °C overnight. Antigen-coated plates were blocked with freshly prepared 5% skim milk in PBST (MPBST; PBS with 0.05% Tween-20) at room temperature (RT) for 1–2 hr. For negative selection, MaxiSorp plates were coated with mCherry-hIgG (1 µg/well), blocked similarly with 5% MPBST, and processed alongside the antigen plates.
 
@@ -166,13 +430,13 @@ To recover antigen-bound phages, freshly prepared OmniMAX E. coli cells (Invitro
 
 Phages were precipitated from the overnight supernatant using PEG/NaCl (20% PEG8000, 2.5 M NaCl; 9 mL per 36 mL supernatant), incubated at 4 °C for 30 min, and centrifuged at 12,000×g for 30 min at 4 °C. The phage pellet was resuspended in 2 mL PBS, centrifuged at 12,000×g for 5 min to remove debris, and 1 mL was used for subsequent screening rounds. Phages obtained after the final round of screening were used for downstream applications, including polyclonal and monoclonal phage ELISA, and for monoclonal phage production.
 
-## Polyclonal phage ELISA
+### Polyclonal phage ELISA
 
 Purified antigen-hIgG and mCherry-hIgG proteins were serially diluted, coated onto MaxiSorp plates, and blocked as described above. Polyclonal phage libraries from the 1st, 2nd, and 3rd selection rounds were incubated with the antigen-coated plates at room temperature (RT) for 1 hr. After incubation, the plates were washed three times with TBST and then incubated with an anti-M13-HRP secondary antibody (Santa Cruz biotechnology, sc-53004 HRP) in blocking solution at RT for 1 hr.
 
 Following incubation, the plates were washed again with TBST three times. 100 μL TMB substrate solution (Thermo Fisher Scientific, 34028) was added to each well, and color development was monitored. The reaction was stopped by adding 50 μL 0.4 M H2SO4 per well, and absorbance was measured at 450 nm (OD450) to quantify ELISA signals.
 
-## Monoclonal phage ELISA
+### Monoclonal phage ELISA
 
 To isolate individual nanobody-displaying phages, 96 phage-producing colonies were picked from the 3rd round of selection and inoculated into 96-well deep plates containing 100 µL 2xYT medium supplemented with carbenicillin. The plates were incubated at 37 °C for 6–8 hr until OD600 reached approximately 0.6. Helper phages were added to the cultures and incubated at RT for 30 min. The culture was then supplemented with 1 mL per well of 2xYT containing both carbenicillin and kanamycin and incubated overnight at 37 °C with shaking.
 
@@ -180,7 +444,7 @@ The culture supernatants containing monoclonal phages were collected by centrifu
 
 After washing with TBST for 10 times, the plates were incubated with an anti-M13-HRP secondary antibody in blocking solution at RT for 1 hr. Following incubation, the plates were washed again with TBST three times. 100 μL TMB substrate solution (Thermo Fisher Scientific, 34028) was added to each well, and color development was monitored. The reaction was stopped by adding 50 μL 0.4 M H2SO4, and absorbance was measured at 450 nm (OD450) to quantify the ELISA signals.
 
-## Cloning, expression, and purification of nanobody-ALFA-His in BL21 competent cells
+### Cloning, expression, and purification of nanobody-ALFA-His in BL21 competent cells
 
 To generate a cloning vector for bacterial nanobody expression with an ALFA-tag for detection and a His-tag for purification, a pET-26b-Nb-GGA plasmid compatible with BsaI-mediated Golden Gate Assembly (GGA) was constructed. A DNA fragment containing CmR-ccdB, the ALFA-tag coding sequence, and the His-tag coding sequence was synthesized with a point mutation in the ccdB gene to eliminate the BsaI recognition site. The synthetic DNA fragment was inserted into NcoI/XhoI-linearized pET-26b vector by HiFi cloning (NEB). The phagemids of the positive nanobodies identified in the monoclonal ELISA step were used to amplify PCR products with nanobody CDS flanked by BsaI-GGA cloning sites. The resulting PCR products were utilized to clone pET-26b-Nanobody-ALFA-His in One Shot ccdB Survival 2 T1R Competent Cells (Invitrogen, A10460).
 
@@ -190,11 +454,11 @@ The overnight culture was used to inoculate 50 mL LB medium with kanamycin in a 
 
 After overnight induction, bacterial cells were harvested by centrifugation at 6000×g for 15 min at 4 °C. The pellet was subjected to periplasmic preparation using B-PER II reagent (Thermo Fisher Scientific, 78260); details described in Kim et al., 2022. The periplasmic fraction filtered by 0.22 µm filter was supplemented with 10 mM imidazole and used for purification using Ni²+ affinity chromatography (Cytiva, 17531801). The periplasmic sample was passed through a gravity-flow column containing 1 mL of Ni²+ resin pre-washed with TBS with 10 mM imidazole. The column was washed with 20 mL of TBS with 20 mM imidazole (3 times), and nanobody-ALFA-His was eluted in 1 mL fractions using TBS with increasing imidazole concentrations (100 mM, 250 mM, 500 mM). Eluates were analyzed by SDS-PAGE, and fractions containing purified nanobody were pooled, dialyzed, and stored at −80 °C.
 
-## Live cell staining with nanobody-displaying phages or purified nanobodies
+### Live cell staining with nanobody-displaying phages or purified nanobodies
 
 S2R + cells were transfected with antigen-GPI or antigen-mCD8 plasmids for transfection validation. After 2 days of transfection, cells were harvested and washed with PBS. The cells were incubated with a blocking solution (e.g. 5% skim milk in PBS) at 4 °C for 30 min, followed by incubation with nanobody-displaying phages or purified nanobodies in the blocking solution for 1 hr at 4 °C. After three washes with PBS, cells were incubated with secondary antibodies anti-M13-647 (Santa Cruz Biotechnology, sc-53004 AF647) or anti-VHH-647 (Jackson ImmunoResearch, 128-605-230) for 30 min at 4 °C. After three additional washes with PBS, the cells were imaged using an IN Cell high-throughput confocal microscopy system (MicRoN Core, Harvard Medical School).
 
-## Immunostaining of adult fly intestine
+### Immunostaining of adult fly intestine
 
 Flies were maintained on standard medium at 25 °C. Mip knockdown was achieved using a Mip RNAi line (VDRC v106076) under the control of a Mex-Gal4 driver (BDSC 91367) for 20 days at 25 °C. Flies (w1118 crossed with Mex-Gal4) were used as controls. Adult flies were dissected in 1×PBS to collect intestinal tissues, which were fixed in 4% methanol-free formaldehyde in PBS at RT for 1 hr.
 
@@ -202,16 +466,16 @@ Following fixation, tissues were permeabilized with 0.1% Triton X-100 in PBS (PB
 
 After incubation, tissues were washed three times with PBST (15 min per wash) and then incubated with secondary antibody anti-VHH-647 (Jackson ImmunoResearch, 128-605-230, 1:500 dilution) in 5% NGS in PBST at RT for 2 hr. Following secondary antibody incubation, tissues were washed four times in 0.05% Tween-20 in PBS (15 min per wash) and given a final wash in 1×PBS. The tissues were mounted in ProLong Gold Antifade Mounting Medium (Invitrogen) and imaged using a confocal microscope.
 
-## Immunoblotting of adult fly hemolymph
+### Immunoblotting of adult fly hemolymph
 
 Hemolymph samples were collected from control flies (w1118 crossed with Mex-Gal4), Mip mutant flies (Mip1, a kind gift from Jongkyeong Chung, Seoul National University), and Mip-RNAi flies (VDRC v106076 crossed with Mex-Gal4) using a previously reported protocol (Pinelli et al., 2024). The protein samples were subject to SDS-PAGE (12% gel). After transfer, the membrane was blocked with 5% BSA/TBST at 4 °C overnight. The membrane was incubated with the primary antibody NbMip-4G (1:300) at RT for 1 hr.
 
 The membrane was then washed three times with TBST (15 min per wash) before incubation with secondary antibody Goat Anti-Alpaca IgG, VHH domain (Jackson ImmunoResearch 128-035-230, 1:5000). The membrane was washed three times (15 min per wash) in TBST, developed using Clarity Western ECL Substrate (Bio-Rad), and imaged using a ChemiDOC Imaging System (Bio-Rad).
 
-## Antigen-nanobody complex prediction using AlphaFold-Multimer
+### Antigen-nanobody complex prediction using AlphaFold-Multimer
 
 For the prediction of antigen-nanobody complexes using AlphaFold-Multimer (AFM), we employed LocalColabFold version 1.5.5 (Mirdita et al., 2022). It integrates AFM version 2.3.2 (Evans et al., 2022) and generates multiple sequence alignments via MMseqs2 (version 14-7e284). Computations were performed on the Harvard O2 high-performance computing cluster. The ipTM score was used to evaluate the overall structural accuracy and confidence of the entire protein complex (Evans et al., 2022). While ipTM provides a global metric, it may overlook localized interactions in small or flexible regions. To address this limitation, we calculated the Local Interaction Score (LIS), which leverages low Predicted Aligned Error (PAE) regions to pinpoint interacting domains, ignoring high PAE regions likely associated with non-interacting areas (Kim et al., 2024). The contact interface was identified using two criteria: residues with a Predicted Aligned Error (PAE) less than 12 and an inter-residue distance of less than 8 Å between C-beta atoms (or C-alpha atoms for glycine residues). The code for LIS analysis is available in https://github.com/flyark/AFM-LIS (Kim, 2025). For the visualization of the predicted structures, ChimeraX was utilized (Meng et al., 2023).
 
-## Declaration of generative AI used in the writing process
+### Declaration of generative AI used in the writing process
 
 During the preparation of this manuscript, the authors used OpenAI’s ChatGPT to improve the readability and language of the text. All intellectual content, scientific accuracy, and conclusions were reviewed, verified, and edited by the authors, who take full responsibility for the final version of the manuscript.

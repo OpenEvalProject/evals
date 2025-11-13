@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.41378.001 Ca 2+ signaling is important for many cellular and physiological processes, including cardiac function. Although sarcoplasmic reticulum (SR) proteins involved in Ca 2+ signaling have been shown to be phosphorylated, the biochemical and physiological roles of protein phosphorylation within the lumen of the SR remain essentially uncharacterized. Our laboratory recently identified an atypical protein kinase, Fam20C, which is uniquely localized to the secretory pathway lumen. Here, we show that Fam20C phosphorylates several SR proteins involved in Ca 2+ signaling, including calsequestrin2 and Stim1, whose biochemical activities are dramatically regulated by Fam20C mediated phosphorylation. Notably, phosphorylation of Stim1 by Fam20C enhances Stim1 activation and store-operated Ca 2+ entry. Physiologically, mice with Fam20c ablated in cardiomyocytes develop heart failure following either aging or induced pressure overload. We extended these observations to show that non-muscle cells lacking Fam20C display altered ER Ca 2+ signaling. Overall, we show that Fam20C plays an overarching role in ER/SR Ca 2+ homeostasis and cardiac pathophysiology.
+Ca2+ signaling is important for many cellular and physiological processes, including cardiac function. Although sarcoplasmic reticulum (SR) proteins involved in Ca2+ signaling have been shown to be phosphorylated, the biochemical and physiological roles of protein phosphorylation within the lumen of the SR remain essentially uncharacterized. Our laboratory recently identified an atypical protein kinase, Fam20C, which is uniquely localized to the secretory pathway lumen. Here, we show that Fam20C phosphorylates several SR proteins involved in Ca2+ signaling, including calsequestrin2 and Stim1, whose biochemical activities are dramatically regulated by Fam20C mediated phosphorylation. Notably, phosphorylation of Stim1 by Fam20C enhances Stim1 activation and store-operated Ca2+ entry. Physiologically, mice with Fam20c ablated in cardiomyocytes develop heart failure following either aging or induced pressure overload. We extended these observations to show that non-muscle cells lacking Fam20C display altered ER Ca2+ signaling. Overall, we show that Fam20C plays an overarching role in ER/SR Ca2+ homeostasis and cardiac pathophysiology.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ This study identifies, mechanistically, several critical ER/SR proteins as subst
 
 ## Results
 
-## Fam20C phosphorylates multiple SR regulatory proteins important for Ca2+ homeostasis
+### Fam20C phosphorylates multiple SR regulatory proteins important for Ca2+ homeostasis
 
 Given the dramatic biochemical effects of Fam20C phosphorylation of HRC-Ser96 (Pollak et al., 2017), we postulated that Fam20C phosphorylation of other SR proteins would have important regulatory functions. Therefore, we sought to uncover new Fam20C substrates to determine the overall mechanistic role of Fam20C phosphorylation in the SR lumen. Focusing on luminal SR proteins that have been shown to regulate Ca2+ signaling in cardiac function, we identified several proteins that contain S-x-E motifs and are, therefore, potential Fam20C substrates; this includes calsequestrin 2 (CSQ2) (Houle et al., 2004), stromal interaction molecule 1 (Stim1) (Collins et al., 2013), calumenin (Sahoo and Kim, 2010), sarcalumenin (Yoshida et al., 2005), calreticulin (Wang et al., 2012), and triadin (Terentyev et al., 2005).
 
@@ -61,21 +61,37 @@ Stim1 is an ER/SR luminal Ca2+ sensor that regulates store-operated Ca2+ entry (
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig2-v2.jpg)
 
-**Figure 2.:** A) Residues of Stim1 from the canonical Ca2+-binding EF-hand loop corresponding to the Fam20C S-x-E phosphorylation motif are highlighted in blue.Heart disease associated Stim1-Ser88 is noted with an asterisk (h: human, m: mouse, g: gallus, x: xenopus, d: drosophila). (B) Representative autoradiograph and Flag IB of Flag IPs of 32P-orthophosphate-labeled HEK293 cells co-expressing Stim1-Flag and HA-tagged WT or D478A kinase-inactive (KI) Fam20C (n = 3). (C) Representative autoradiograph of time-dependent incorporation of [γ-32P] ATP into Stim one using purified proteins in an in vitro kinase assay. His-tagged Stim1 was expressed and purified from E. coli, and Fam20C WT or KI was purified from baculovirus (n = 6). Corresponding coomassie staining is shown below. (D) Representative autoradiograph and Flag IB of Flag IPs of 32P-orthophosphate-labeled HEK293 cells co-expressed with Stim1 and WT Fam20C (n = 6). (E) Densitometry relative to protein control of autoradiograph from C and D (at 30 min time point). (F) Representative western blots showing the crosslinking of Stim1(A230C) co-expressed with either Fam20C KI (top), or Fam20C WT (bottom), in cellular membranes incubated with increasing Ca2+ concentrations (0–2.0 mM) (n = 3). Crosslinked, multimerized (active) Stim one is indicated by the upper arrow, and monomeric (inactive) Stim1 is indicated by the lower arrow. (G) Model demonstrating Stim1 activation via either low ER Ca2+ or Fam20C phosphorylation. Data are represented as the mean ±SEM. *p < 0.05 by Student’s t test.
+**Figure 2.:** Heart disease associated Stim1-Ser88 is noted with an asterisk (h: human, m: mouse, g: gallus, x: xenopus, d: drosophila). (B) Representative autoradiograph and Flag IB of Flag IPs of 32P-orthophosphate-labeled HEK293 cells co-expressing Stim1-Flag and HA-tagged WT or D478A kinase-inactive (KI) Fam20C (n = 3). (C) Representative autoradiograph of time-dependent incorporation of [γ-32P] ATP into Stim one using purified proteins in an in vitro kinase assay. His-tagged Stim1 was expressed and purified from E. coli, and Fam20C WT or KI was purified from baculovirus (n = 6). Corresponding coomassie staining is shown below. (D) Representative autoradiograph and Flag IB of Flag IPs of 32P-orthophosphate-labeled HEK293 cells co-expressed with Stim1 and WT Fam20C (n = 6). (E) Densitometry relative to protein control of autoradiograph from C and D (at 30 min time point). (F) Representative western blots showing the crosslinking of Stim1(A230C) co-expressed with either Fam20C KI (top), or Fam20C WT (bottom), in cellular membranes incubated with increasing Ca2+ concentrations (0–2.0 mM) (n = 3). Crosslinked, multimerized (active) Stim one is indicated by the upper arrow, and monomeric (inactive) Stim1 is indicated by the lower arrow. (G) Model demonstrating Stim1 activation via either low ER Ca2+ or Fam20C phosphorylation. Data are represented as the mean ±SEM. *p < 0.05 by Student’s t test.
 
-## Fam20C regulates SR Ca2+ handling in isolated myocytes
+### Fam20C regulates SR Ca2+ handling in isolated myocytes
 
 Given that Fam20C phosphorylates proteins that reside in the lumen of the SR (Figures 1 and 2), we hypothesized that Fam20C plays a role in cardiomyocyte SR Ca2+ handling. To determine this, we developed a mouse model with LoxP sites engineered between exons 6 and 10 of Fam20c (Fam20cFl/FL) (Figure 3—figure supplement 1). We crossed these mice with α-MHC-Cre mice to knockout Fam20C in ventricular myocytes, generating Fam20cFl/FLα-MHC-Cre-positive (Fam20C cKO) mice and Fam20cFl/FLα-MHC-Cre-negative (Fam20C WT) littermates. Importantly, we previously showed that this α-MHC-Cre mouse line has normal cardiac function following aging (Fang et al., 2017).
 
 We examined intracellular Ca2+ transients and cell shortening of isolated cardiomyocytes from Fam20C cKO and WT mice paced at 0.5 Hz field stimulation (Figure 3A and B). We analyzed both baseline (2 months old) and 9 months old aged mice, which can be more predisposed to compromised cardiac function (Bénard et al., 2016). A decrease in the peak amplitude (Figure 3C), corresponding to the extent of SR Ca2+ release, and an increase in the relaxation constant tau (Figure 3C), corresponding to the time it takes for SR Ca2+ reuptake, was observed for the Ca2+ transients of 9 months old Fam20C deficient cardiomyocytes in comparison to controls. Similar results were obtained for the cell shortening measurements (Figure 3D). We note mildly reduced cardiomyocyte function at baseline. Strikingly, following aging-induced stress we identified severe cardiomyocyte defects from Fam20C deficiency, particularly in cardiomyocyte relaxation, which is likely causative of aging-induced diastolic heart failure (see below). These results establish Fam20C as an important regulator of SR Ca2+cycling in stressed cardiomyocytes.
 
-## Fam20C regulates cardiac relaxation and contractility
+![Figure 3.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig3-v2.jpg)
+
+**Figure 3.:** (A and B) Tracing of 0.5 Hz stimulated isolated cardiomyocytes for (A) Ca2+ transients (change between the basal and peak ratio (ΔR) of Fura2-AM fluorescence) and (B) sarcomere length for 2 (top) and 9 (bottom) months old mice. (C) Quantitation of normalized peak amplitude (left) and relaxation constant tau (right) of Ca2+ transients from A. (D) Quantitation of peak amplitude changed (left) and relaxation constant tau (right) of sarcomere length from B (n = 3 mice, 15–25 cardiomyocytes per mice). Data are represented as the mean ±SEM. *p < 0.05; **p < 0.01, by Student’s t test or ANOVA (when indicated) for WT v. cKO.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Targeting strategy used to generate a floxed allele of Fam20c. (B) PCR-based DNA electrophoresis genotyping to determine floxed and Cre alleles. (C) RT-qPCR of Fam20C expression of whole heart lysates from 2 months old mice (n = 3). (D) Whole heart lysates were subjected to differential centrifugation fractionation and were analyzed by Immunoblotting.
+
+### Fam20C regulates cardiac relaxation and contractility
 
 Based on the cardiomyocyte Ca2+cycling defects observed from Fam20C cKO mice upon aging (Figure 3), we sought to determine the role of Fam20C in contractility and relaxation in vivo via invasive hemodynamic measurement of LV pressure. Contractility and relaxation are controlled by SR Ca2+ release and reuptake, respectively. At 2 months of age, we observe mild but statistically significant defects of cardiac contractility (Max dP/dt) (Figure 4A) and relaxation (Min dP/dt) (Figure 4—figure supplement 1A) in Fam20C cKO mice in comparison to WT mice, but no differences to the heart rate and other hemodynamic parameters were observed (Figure 4—figure supplement 1B-D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig4-v2.jpg)
+
+**Figure 4.:** Hemodynamic assessment of contraction and relaxation (n = 9–20). (A) Assessment of maximum pressure difference over time (dP/dt). (B) Assessment of the isovolumetric relaxation constant tau. Data are represented as the mean ±SEM. *p < 0.05; **p < 0.01, by Student’s t test or ANOVA (when indicated) for WT v. cKO.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Changes in LV hemodynamic variables of 2 and 9 months old mice for (A) minimum dP/dt, (B) end-diastolic pressure, (C) heart rate in beats/min (bpm), and (D) maximum LV pressure (n = 9–20). (E–P) Changes in LV hemodynamic variables with dobutamine (n = 9) (E–J) and esmolol (n = 6) (K–P) infusion of 2 months old mice. Calculated values for (E) maximum LV pressure, (F) end-diastolic pressure (EDP), (G) heart rate in beats/min (bpm), (H) maximum dP/dt, (I) minimum dP/dt, and (J) time constant for relaxation (Tau). Dobutamine doses are given in micrograms per kilogram per minute. Calculated values for (K) maximum LV pressure, (L) end-diastolic pressure (EDP), (M) heart rate in beats/min (bpm), (N) maximum dP/dt, (O) minimum dP/dt, and (P) time constant for relaxation (Tau). Esmolol doses are given in milligrams per kilogram per minute. Data are represented as the mean ±SEM. *p < 0.05; **p < 0.01, by Student’s t test for WT v. cKO.
+
 Upon 9 months of aging, relaxation was significantly blunted in Fam20C cKO mice (Figure 4—figure supplement 1A). The isovolumetric relaxation constant tau was dramatically higher (Figure 4B), demonstrating delayed cardiac relaxation, and indicating overall diastolic dysfunction for 9 months old Fam20C cKO mice, which is likely to cause heart failure (see below). Importantly, these results are consistent with the in vitro data (Figure 3). Interestingly, we found that Fam20C’s role in contractility and relaxation is independent of acute β-adrenergic signaling in 2 months old mice, via infusion of either dobutamine or esmolol (Schmid et al., 2015) (Figure 4—figure supplement 1).
 
-## Fam20C cKO mice develop heart failure, fibrosis, apoptosis, and DCM following aging
+### Fam20C cKO mice develop heart failure, fibrosis, apoptosis, and DCM following aging
 
 Due to the defects observed in SR Ca2+ cycling (Figure 3) and cardiac relaxation and contractility (Figure 4), we sought to determine Fam20C’s temporal role in cardiac function in vivo by performing serial 2D echocardiography on mice who were from 2 to 9 months of age. Two and six months old Fam20C cKO mice were indistinguishable from their WT littermates. However, following 9 months of aging, Fam20C cKO mice displayed a decided increase in LV chamber size in both diastole and systole (Figure 5A). LV systolic function, as measured by fractional shortening (% FS), was dramatically decreased in Fam20C cKO mice (Figure 5A), suggesting that these mice were developing heart failure. Depressed systolic function was accompanied by a thinning of the LV walls (Figure 5B). Furthermore, measurement by qRT-PCR on 9 months old Fam20C cKO mice showed significant increases in the re-expression of fetal gene markers of cardiac hypertrophy and heart failure, including atrial natriuretic factor (ANP), brain natriuretic peptide (BNP), and β-myosin heavy chain (β-MHC), in comparison to controls (Figure 5C). Gross morphological analysis showed enlarged hearts (Figure 6A), consistent with the development of DCM following 9 months of aging. The observed heart failure in the Fam20C cKO mice following aging is likely due to dramatic SR Ca2+ handling defects and delayed cardiac relaxation (Figures 3 and 4).
 
@@ -83,17 +99,33 @@ Due to the defects observed in SR Ca2+ cycling (Figure 3) and cardiac relaxation
 
 **Figure 5.:** (A and B) Echocardiographic measurements for Fam20CFl/Fl α-MHC-Cre-positive (cKO) and α-MHC-Cre-negative littermate control mice (WT) (n = 10 mice at 2, 6, and 9 months) of (A) LVIDd, LVIDs, LV FS, (B) IVSd, and LVPWd. (C) RT-qPCR of cardiac fetal gene markers of Fam20C WT and cKO mice at 2 and 9 months (n = 3). Data are represented as the mean ±SEM. *p < 0.05; **p < 0.01, or ns (not significant) by Student’s t test or ANOVA (when indicated) for WT v. cKO.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative macroscopic view of whole mouse hearts. (B and C) Representative microscopic view of (B) H and E stained (1x magnification) and (C) Masson’s Trichrome stained (40x magnification) cardiac sections (n = 3). (D) Heart weight to body weight ratios (n = 5–13) (left). Quantitation of TUNEL positive nuclei per high powered field (HPF) (n = 3 mice) (right). Data are represented as the mean ±SEM. *p < 0.05; **p < 0.01, by Student’s t test for WT v. cKO.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative microscopic view of TUNEL stained cardiac sections (40x magnification) (n = 3 mice). (B) Whole heart lysates were immunoblotted for cleaved PARP and GAPDH loading control. (C) RT-qPCR of profibrotic genes (n = 3). Data are represented as the mean ±SEM. *p < 0.05 for WT v. cKO by Student’s t test.
+
 Mouse hearts were dissected, fixed, and subjected to histological analysis by microscopy. In 2 months old Fam20C WT or cKO mice, no abnormalities or differences were identified. However, following 9 months of aging in the Fam20C cKO mice, Hematoxylin-Eosin (H and E) stained cardiac sections demonstrated ventricular dilation (Figure 6B), consistent with the echocardiographic analysis (Figure 5A).
 
 Cardiac fibrosis and apoptosis strongly associate with heart failure (Reed et al., 2011; Segura et al., 2014). Using Masson’s Trichrome staining, we established that interstitial fibrosis was greatly increased in Fam20C cKO mice, while WT mice demonstrated no signs of fibrosis following 9 months of aging (Figure 6C). Gravimetric analysis showed that the heart weight to body weight ratio was greater in Fam20C cKO mice (Figure 6D). Terminal deoxynucleotidyltransferase-mediated dUTP nick end labeling (TUNEL) staining demonstrated significantly more apoptotic nuclei in Fam20C cKO mice (Figure 6D and Figure 6—figure supplement 1A). The amount of cleaved poly (ADP-ribose) polymerase (PARP), a marker of apoptosis, was increased in Fam20C cKO heart lysates as determined by immunoblotting (Figure 6—figure supplement 1B). Finally, profibrotic gene expression markers: α-smooth muscle actin (α-SMA), procollagen types I α1 (Coll-1a1) and III α1 (Coll-3a1), and connective tissue growth factor (CTGF) were increased in Fam20C cKO mice upon aging (Figure 6—figure supplement 1C).
 
-## Induced pressure overload causes accelerated heart failure in Fam20C deficient mice
+### Induced pressure overload causes accelerated heart failure in Fam20C deficient mice
 
 To determine Fam20C’s role in heart function during sustained pathological stress in vivo, we employed the transverse aortic constriction (TAC)-induced pressure overload model (Figure 7). The TAC model, which causes hypertrophy and eventual heart failure (Rockman et al., 1991), is a more targeted and immediately severe stressor than aging, and can directly test Fam20C’s role in the hypertrophic response. The response to pressure overload for 4 weeks was similar between genotypes (Figure 7—figure supplement 1A) of 2 months old Fam20C WT and cKO mice, both of which developed LV wall thickening (Figure 7—figure supplement 1B and C). However, Fam20C cKO mice developed significantly exaggerated LV chamber dilation (Figure 7A) and showed further deterioration in cardiac function (Figure 7A) in comparison to their WT littermates. Gravimetric analysis of isolated hearts showed that the heart weight to body weight ratio was higher in Fam20C cKO mice (Figure 7B). Re-expression of cardiac fetal genes (Figure 7B) further confirmed the presence of exaggerated heart failure in Fam20C cKO mice in comparison to WT littermates. We determined also that Fam20C cKO mice heart sections showed increased fibrosis (Figure 7C) and apoptosis (Figure 7—figure supplement 1D and E) following TAC.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig7-v2.jpg)
+
+**Figure 7.:** (A) Echocardiographic measurements for baseline (2 months old) mice and after 4 weeks of TAC (n = 7–9) of LVIDd, LVIDs, and LV FS. (B) Heart weight to body weight ratios (n = 5–9) (left). RT-qPCR of cardiac fetal gene markers following TAC (n = 3) (right). (C) Representative microscopic view of Masson’s Trichrome stained (40x magnification) cardiac sections following TAC (n = 3 mice). (D) Mice were subjected to 2 weeks of chronic Isoproterenol (ISO) infusion (n = 5–9). Heart weight over body weight ratio (n = 5–9) (left) and RT-qPCR of cardiac fetal gene markers (n = 3) (right). Data are represented as the mean ±SEM. *p < 0.05, **p < 0.01, for WT v. cKO; † p < 0.05 for TAC or ISO treatment by Student’s t test.
+
+![Figure7—figure supplement 1.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig4-v2.jpg)
+
+**Figure7—figure supplement 1.:** (A) Pressure gradient 1 month after TAC (n = 7–9). (B–C) Echocardiographic measurements for baseline (2 months old) mice and 1 month after TAC of (B) IVSd and (C) LVPWd (n = 7–9). (D) Representative microscopic view of TUNEL stained cardiac sections (40x magnification) (n = 3 mice). (E) Quantitation of TUNEL positive nuclei per high powered field (HPF) (n = 3). Data are represented as the mean ±SEM. *p < 0.05; **p < 0.01 for WT v. cKO; † p < 0.05 for TAC or ISO treatment by Student’s t test.
+
 To further evaluate Fam20C’s role in stress-induced cardiac remodeling, we administered chronic β-adrenergic stimulation by isoproterenol infusion to Fam20C cKO and WT mice using mini-osmotic pumps (Thum et al., 2008). After 2 weeks, Fam20C cKO mice showed a significantly increased heart weight to body weight ratio (Figure 7D), and increased fetal gene re-expression (Figure 7D) in comparison to controls. Taken together, both TAC and isoproterenol infusion caused Fam20C cKO mice to develop an exaggerated depression of LV function in comparison to WT mice, reminiscent of the aging model seen above.
 
-## Fam20C regulates ER Ca2+ homeostasis
+### Fam20C regulates ER Ca2+ homeostasis
 
 Given that Fam20C is widely expressed in mammals (Nalbant et al., 2005) and that ER/SR Ca2+ homeostasis is important for many cell types, we sought to determine Fam20C’s role in cellular Ca2+ homeostasis in non-muscle cells. We transfected HeLa cells with either Flag-tagged WT or KI Fam20C and tested for constitutive Ca2+ influx by briefly changing the external solution to 0 mM Ca2+ and then back to 2 mM Ca2+ (Figure 8A), as previously described (Hirve et al., 2018). Only the WT Fam20C transfected cells showed a significant increase over control HeLa cells in Ca2+ influx, prior to thapsigargin stimulation which causes comparable Ca2+ influx for each sample. We note that Fam20C mediated activation of Stim1 has an effect similar to Stim1 activating mutations (Hirve et al., 2018). This indicates that Fam20C regulates store-operated Ca2+ entry, likely via activation of Stim1 (Figure 2E and F), but possibly through the phosphorylation of other ER substrates. Moreover, this demonstrates that Fam20C plays a role in regulating cellular ER Ca2+ signaling.
 
@@ -101,7 +133,7 @@ Using an alternative approach to study Fam20C’s role in ER Ca2+ homeostasis, w
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/41378/elife-41378-fig8-v2.jpg)
 
-**Figure 8.:** 2+ homeostasis.(A) Single-cell [Ca2+]i measurements in HeLa cells expressing Fam20C WT (n = 156), Fam20C KI (n = 139), or in non-transfected HeLa cells (HeLa; n = 126). Cells were exposed to solutions containing varied concentrations of CaCl2 or 1 μM thapsigargin (TG) as indicated. (B) Peak Ca2+ release (maximum minus basal, peak ratio (ΔR) of Fura2-AM fluorescence) of WT and Fam20C shRNA knockdown (shFam20C) U2OS cells following 2 μM thapsigargin (Tg) treatment. (C) RT-qPCR of UPR response gene CHOP expression of WT and shRNA Fam20C knockdown U2OS cells following mild stimulation with thapsigargin (250 nM, 4 hr). Data are represented as the mean ±SEM. *p < 0.05; ***p < 0.001, by Student’s t test for WT v. shFam20C.
+**Figure 8.:** (A) Single-cell [Ca2+]i measurements in HeLa cells expressing Fam20C WT (n = 156), Fam20C KI (n = 139), or in non-transfected HeLa cells (HeLa; n = 126). Cells were exposed to solutions containing varied concentrations of CaCl2 or 1 μM thapsigargin (TG) as indicated. (B) Peak Ca2+ release (maximum minus basal, peak ratio (ΔR) of Fura2-AM fluorescence) of WT and Fam20C shRNA knockdown (shFam20C) U2OS cells following 2 μM thapsigargin (Tg) treatment. (C) RT-qPCR of UPR response gene CHOP expression of WT and shRNA Fam20C knockdown U2OS cells following mild stimulation with thapsigargin (250 nM, 4 hr). Data are represented as the mean ±SEM. *p < 0.05; ***p < 0.001, by Student’s t test for WT v. shFam20C.
 
 ## Discussion
 
@@ -121,59 +153,329 @@ In summary, we present protein phosphorylation by Fam20C within the lumen of the
 
 ## Materials and methods
 
-## Mouse model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal M2 FLAG</td>
+      <td>Sigma</td>
+      <td>A2220-5 ml, RRID:AB_439685</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Flag</td>
+      <td>Sigma</td>
+      <td>F7425-.2MG, RRID:AB_796202</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Stim1</td>
+      <td>Cell Signaling</td>
+      <td>4916S, RRID:AB_1849882</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti 6x-His</td>
+      <td>Thermo Fisher</td>
+      <td>MA1-21315- HRP, RRID:AB_10977997</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti Bip/ GRP78</td>
+      <td>Abcam</td>
+      <td>ab21685, RRID:AB_880312</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti Calsequestrin 2</td>
+      <td>Thermo Fisher</td>
+      <td>PA1-913, RRID:AB_2540244</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti GAPDH</td>
+      <td>Calbiochem</td>
+      <td>CB1001</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti PARP (cleaved)</td>
+      <td>Cell Signaling</td>
+      <td>9541S, RRID:AB_2160592</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti Fam20C</td>
+      <td>Tagliabracci et al., 2013 Tagliabracci et al., 2013</td>
+      <td></td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Thermo Fisher</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Esmolol</td>
+      <td>abcam</td>
+      <td>ab146018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dobutamine</td>
+      <td>abcam</td>
+      <td>ab120768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Thermo Fisher</td>
+      <td>586005– 1 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>32P-orthophosphate</td>
+      <td>PerkinElmer</td>
+      <td>NEX05 3010MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gamma 32P ATP</td>
+      <td>PerkinElmer</td>
+      <td>BLU002Z001MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fura-2, AM, cell permeant</td>
+      <td>Thermo Fisher</td>
+      <td>F1221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graph Pad Prism</td>
+      <td></td>
+      <td>Version 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>this paper</td>
+      <td>Table 1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fam20c Fl/+</td>
+      <td>inGenious Targeting Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis kit</td>
+      <td>BioRad</td>
+      <td>1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>nucleospin RNA kit</td>
+      <td>MACHEREY- NAGEL</td>
+      <td>740955.25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ApopTag Peroxidase In Situ Apoptosis Detection</td>
+      <td>Millipore Sigma</td>
+      <td>S7100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>Tagliabracci et al., 2013 Tagliabracci et al., 2013</td>
+      <td>RRID:CVCL_6910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens)</td>
+      <td>HeLa</td>
+      <td>Hirve et al., 2018</td>
+      <td>RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens)</td>
+      <td>U2OS (WT/shFam20C)</td>
+      <td>Tagliabracci et al., 2013 Tagliabracci et al., 2013</td>
+      <td>RRID:CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (rattus norvegicus)</td>
+      <td>H9C2</td>
+      <td>ATCC</td>
+      <td>CRL-1446, RRID:CVCL_0286</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 1.**
+ qRT-PCR primers.m corresponds to mouse, h corresponds to human.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mANP</td>
+      <td>TCGTCTTGGCCTTTTGGCT</td>
+      <td>TCCAGGTGGTCTAGCAGGTTCT</td>
+    </tr>
+    <tr>
+      <td>mBNP</td>
+      <td>AAGTCCTAGCCAGTCTCCAGA</td>
+      <td>GAGCTGTCTCTGGGCCATTTC</td>
+    </tr>
+    <tr>
+      <td>mβ-MCH</td>
+      <td>ATGTGCCGGACCTTGGAAG</td>
+      <td>CCTCGGGTTAGCTGAGAGATCA</td>
+    </tr>
+    <tr>
+      <td>mCol1a1</td>
+      <td>GAGAGAGCATGACCGATGGATT</td>
+      <td>GCTACGCTGTTCTTGCAGTGAT</td>
+    </tr>
+    <tr>
+      <td>mCol 3a1</td>
+      <td>CAGCAGTCCAACGTAGATGAATTG</td>
+      <td>CATGGTTCTGGCTTCCAGACA</td>
+    </tr>
+    <tr>
+      <td>mα-SMA</td>
+      <td>TCCTGACGCTGAAGTATCCG</td>
+      <td>GGCCACACGAAGCTCGTTAT</td>
+    </tr>
+    <tr>
+      <td>mCTGF</td>
+      <td>AATCTCCACCCGAGTTACCA</td>
+      <td>AACTTAGCCCTGTATGTCTTCAC</td>
+    </tr>
+    <tr>
+      <td>mFam20C</td>
+      <td>AACATGGATCGGCATCACTAC</td>
+      <td>AGGAGCGAGAATGGAAAGC</td>
+    </tr>
+    <tr>
+      <td>mGAPDH</td>
+      <td>CACCATCTTCCAGGAGCGAG</td>
+      <td>CCTTCTCCATGGTGGTGAAGAC</td>
+    </tr>
+    <tr>
+      <td>hCHOP</td>
+      <td>GTCTAAGGCACTGAGCGTATC</td>
+      <td>CAGGTGTGGTGATGTATGAAGA</td>
+    </tr>
+    <tr>
+      <td>hGAPDH</td>
+      <td>ACATCGCTCAGACACCATG</td>
+      <td>TGTAGTTGAGGTCAATGAAGGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse model
 
 Fam20c Fl/+ mice were generated by inGenious Targeting Laboratory (Ronkonkoma, NY). Briefly, exons 6–10 were flanked by two LoxP sites in the Fam20c-targeting vector. A neomycin-resistant gene cassette located within the two LoxP sites was flanked by two Frt sites. The targeting vector was subsequently electroporated into ES cells. Targeted iTL BA1 (C57BL/6 × 129/SvEv) hybrid embryonic stem cells were microinjected into C57BL/6 blastocysts. Resulting chimeras with a high percentage of agouti coat color were mated to C57BL/6 FLP mice to remove the Neo cassette. Resulting Fam20c Fl/+ mice were further backcrossed onto a C57BL/6 background for greater than four generations. Tail DNA was analyzed for genotyping using the following primers: F: 5’-TTATCTGCTCATGTGCGTATGTGG-3’; R: 5’-TACAGAGCAGAACTCCAGCCACTG- 3’.
 
 Transgenic mice expressing Cre recombinase under the control of the α-myosin heavy chain promoter (Agah et al., 1997) (α-myh6) on a C57BL/6 background were genotyped using tail DNA with the following primers: F: 5’-GCGGTCTGGCAGTAAAAACTATC-3’; R: 5’-GTGAAACAGCATTGCTGTCACTT-3’. Only male mice were used for experiments. WT and cKO mice were littermates and cage mates. Researchers performing tests and collecting data were blinded during experiments. Mice were housed in a specific pathogen-free facility with a 12 hr light and a 12 hr dark cycle, and given free access to food and water. All animal uses were approved by the Institutional Animal Care and Use Committee (IACUC) at the University of California-San Diego.
 
-## Induced pressure overload models
+### Induced pressure overload models
 
 For Transverse Aortic Constriction (TAC), Adult mice were anesthetized with ketamine (50 mg/kg) and xylazine (5 mg/kg) by intraperitoneal (IP) injection for initial induction and then isoflurane (0.75–1.5%) for complete induction of anesthesia. The chest cavity was entered in the second intercostal space at the left upper sternal border and the transverse aorta was isolated between the carotid arteries. Aortic constriction was performed by tying a 7–0 silk suture ligature against a 27–27.5-gauge needle (according to the body weight), and the needle was then promptly removed to yield a constriction of about 0.4 mm in diameter. Following the constriction procedure, the chest was closed with 6–0 silk sutures. Buprenorphine (0.1 mg/kg) (100 µl/mouse) was given 15–30 min prior to anticipated recovery.
 
 For Isoproterenol infusion, mice were anesthetized with 5% isoflurane for 45 s and then maintained at 0.5% isoflurane throughout the implantation of the Alzet osmotic pumps (Durect Corp, Cupertino, CA). Mice received 30 mg/kg/day of isoproterenol for 14 days.
 
-## Invasive hemodynamic analysis
+### Invasive hemodynamic analysis
 
 A 1.4F micromanometer catheter (Millar Inc., Houston, TX) was inserted retrograde into the aorta via the right carotid artery and advanced into the left ventricle in anesthetized mice (100 mg/kg of ketamine and 10 mg/kg of xylazine), intraperitoneal (IP) that were intubated (100–110 strokes/minute, 0.04–0.05 ml/stroke volume). A femoral vein was cannulated with a stretched PE50 tubing for drug administration. Baseline pressure measurements were obtained. Then, graded dobutamine doses of 0.75, 2, 4, 6, and 8 µg/kg/min, or graded Esmolol doses of 10, 20, and 30 mg/kg/min, were delivered using an infusion pump (PHD 2000, Harvard Apparatus, Holliston, MA) for 3 min at each dose. Data were reported after bilateral vagotomy. LV hemodynamic parameters were recorded and analyzed using LabChart (ADInstruments, Inc., Colorado Springs, CO), including peak LV pressure, LV end-diastolic pressure (EDP), LV dP/dt max (an index of myocardial contractility), LV dP/dt min, and Tau (time constant of LV relaxation).
 
-## Transthoracic echocardiography
+### Transthoracic echocardiography
 
 Prior to echocardiography, a depilatory cream was applied to the anterior chest wall to remove the hair. Mice were anesthetized with 5% isoflurane for 15 s and then maintained at 0.5% throughout the echocardiography examination. Small needle electrodes for simultaneous electrocardiogram were inserted into one upper and one lower limb. Transthoracic echocardiography (M-mode and 2-dimensional echocardiography) was performed using the FUJIFILM VisualSonics Inc., Vevo 2100 high-resolution ultrasound system with a linear transducer of 32-55MHz. Measurements of chamber dimensions and wall thicknesses were performed. Percentage fractional shortening (%FS) was used as an indicator of systolic cardiac function.
 
-## Adult cardiomyocyte isolation
+### Adult cardiomyocyte isolation
 
 The hearts were removed following isoflurane anesthesia and rinsed in Krebs-Henseleit buffer B (KHB-B) (118 mM NaCl, 4.8 mM KCl, 25 mM HEPES, 1.25 mM K2HPO4,
 
 1.25 mM MgSO4, 11 mM glucose, pH 7.4). The hearts were cannulated through the aorta and perfused on a Langendorff apparatus with a KHB solution (3 ~ 5 min, 37°C), then a KHB enzyme solution (1.5 mg/ml Collagenase Type 2, 25 µM Blebbistatin) for 12 min at 37°C. After digestion, the hearts were perfused with 5 ml KHB solution to wash out collagenase. Then the hearts were minced in KHB solution, gently agitated, then filtered through a 100 μm polyethylene mesh. After settling, cells were washed once with KB solution, and stored in KB solution at room temperature before use.
 
-## Cell shortening/re-lengthening and Ca2+ transient studies
+### Cell shortening/re-lengthening and Ca2+ transient studies
 
 Adult cardiomyocytes were loaded with Fura-2-AM (1.0 μM, 20 mins), washed twice, and continuously perfused with Tyrode solution maintained at 37°C. Simultaneous measurement of intracellular Ca2+ ([Ca2+]i) and cell contractility was assessed by using a video-based edge-detection system (IonOptix, Milton, MA). Briefly, cardiomyocytes were field stimulated at a frequency of 0.5 Hz using a pair of platinum wires placed on the opposite sides of the dish chamber and connected to a MyoPacer Field Stimulator (IonOptix). The cardiomyocytes being studied were displayed on the computer monitor using an IonOptix MyoCam camera. 15–25 individual myocytes were recorded and analyzed for each heart. The ratio of Fura-2 fluorescence at 340 nm and 380 nm (R) was calculated and the amplitude of intracellular Ca2+ transient was determined by the change between the basal and peak ratio (ΔR). The amplitude of cell contraction was assessed by % change of peak shortening, and the rate of cell relaxation was assessed by the time to 63% re-lengthening (Tau).
 
-## Cloning
+### Cloning
 
 Human cDNAs were purchased from either Open Biosystems or DNASU. For transient expression in mammalian cells, full-length CSQ2, Stim1, triadin, Fam20C, calumenin, calreticulin, and sarcalumenin, were cloned into pCCF with a C-terminal Flag tag. Fam20C (WT and D478A) was cloned into pCDNA3 with a C-terminal HA-tag. For recombinant expression in E. coli, CSQ2 (19–399) and Stim1 (22-201) were cloned into pET28 vector with a C-terminal 6X-His tag. For insect cell expression, Fam20C (93–584) was cloned into a modified pI-secSUMOstar vector (LifeSensors, Malvern, PA), in which the original SUMO tag was replaced by a MBP tag and a tobacco etch virus (TEV) protease site as previously described (Xiao et al., 2013). Site-directed mutagenesis was performed using QuikChange (Agilent Technologies, Santa Clara, CA). All the constructs were verified by DNA sequencing.
 
-## Protein expression and purification
+### Protein expression and purification
 
 MBP-tagged Fam20C protein was expressed in Hi-5 insect cells and was purified as described previously (Xiao et al., 2013). The MBP tag was removed via gel filtration chromatography following TEV protease cleavage. Indicated Flag-tagged constructs were transiently expressed in HEK293 or H9C2 cells and were immunopurified from cell lysates as previously described (Pollak et al., 2017).
 
 His-CASQ2 and His-Stim1 were expressed in E. coli BL21 (DE3) –RILP cells. Cultures were grown at 37°C to an OD600 of 0.6–0.8 and expression was induced by addition of isopropyl-β-D-1-thiogalactopyranoside (IPTG) to 400 μM. Induced cultures were grown at 25°C overnight and cells were harvested by centrifugation at 4,680 × g for 15 min. Cell pellets were suspended in lysis buffer (50 mM Tris-HCl pH 8.0, 500 mM NaCl, 15 mM imidazole, 10% glycerol, 0.1% Triton X-100, and 10 mM β-mercaptoethanol) and lysed via sonication. The lysate was cleared by centrifugation at 11,950 × g for 45 min. The cleared lysate was incubated with Ni-NTA agarose (Invirogen) for 20 min on ice and poured through a gravity column. The beads and bound protein were washed with wash buffer (50 mM Tris-HCl pH 8.0, 500 mM NaCl, 15 mM imidazole, 10 mM β-mercaptoethanol). Protein was eluted from the column in wash buffer containing 400 mM imidazole.
 
-## Mammalian cell culture, transfection, and 32P orthophosphate metabolic labeling
+### Mammalian cell culture, transfection, and 32P orthophosphate metabolic labeling
 
 HEK293 cells, U2OS cells, and H9C2 rat cardiomyoblast cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM; Life Technology) supplemented with 10% FBS (Life Technology) and 100 μg/ml penicillin/streptomycin (Life Technology) at 37°C in a 5% CO2 incubator. The identity of the human cell lines were confirmed by STR profiling (Sanford Burnham Prebys Medical Discovery Institute, La Jolla) and all the cells tested mycoplasma-free via PCR. Transfection was carried out by using FuGENE-6 (Promega, Madison, WI) following the manufacturers’ instructions. For metabolic radiolabeling experiments, HEK293 or H9C2 cells were seeded at 5 × 105 cells per well in 6-well plate; 20 hr later, cells were transfected with the indicated plasmids. 1 day after transfection, metabolic labeling was started by replacing the medium with phosphate-free DMEM containing 10% dialyzed FBS and 1 mCi/ml 32P orthophosphate (PerkinElmer, Waltham, MA). After labeling for 8 hr, the cell lysate was collected and the cell debris was removed by centrifugation. Flag-tagged proteins were immunoprecipitated from the supernatant and analyzed for protein and 32P incorporation by immunoblotting and autoradiography.
 
-## In vitro phosphorylation assays
+### In vitro phosphorylation assays
 
 For the in vitro kinase assays substrates were purified from bacteria and Fam20C was purified from insect cells, and the proteins were incubated in 50 mM Tris pH 7.0, 10 mM MnCl2, 1 mM [γ-32P] ATP (specific activity = 100–500 cpm/pmol), 0.25 mg/mL substrate, and 10 μg/mL Fam20C at 30° C as previously described (Tagliabracci et al., 2012). Reactions were terminated at the indicated time points by SDS loading buffer, 15 mM EDTA, and boiling. Reaction products were separated by SDS-PAGE and incorporated radioactivity was visualized via autoradiography and immunoblotting.
 
-## Histology
+### Histology
 
 Hearts were isolated from mice, washed with PBS and fixed for 24 hr in a 10% Formalin. The hearts were then placed in 70% ethanol and were submitted to the University of California, San Diego histology core for paraffin embedding and sectioning for H and E and Masson’s Trichrome staining. The Tunel assay was performed using the ApopTag Peroxidase In Situ Apoptosis Detection Kit per the manufacturer’s instructions. Slides were scanned via the AT2 Aperio Scan Scope. Masson’s Trichrome and Tunel stained slides were analyzed in five high powered fields (HPF) per sample by a histologist blinded to genotype.
 
-## Turbidity assay
+### Turbidity assay
 
 For the turbidity assay, His-CASQ2 was phosphorylated by direct addition of ATP, MnCl2, and FAM20C to the eluted sample (above). The final reaction conditions contained 50 mM Tris-HCl pH 8.0, 500 mM NaCl, 400 mM imidazole, 10 mM β-mercaptoethanol, 1 mM ATP, 1 mM MnCl2, and ~1 μg/mL FAM20C. Saturated phosphorylation (>95%) was demonstrated by removing a small portion of the reaction, adding radioactive ATP [γ-32P], and observing a plateau of time-dependent incorporation of radioactive phosphate via SDS-PAGE and autoradiography (not shown). The unphosphorylated protein was treated in tandem under identical conditions but excluding Fam20C. Reactions were quenched after 4 hr by the addition of EDTA to 10 mM.
 
@@ -181,30 +483,30 @@ The phosphorylated and control protein was dialyzed against TG buffer (10 mM Tri
 
 Turbidity assays were performed by combining either phosphorylated or unphosphorylated His-CASQ2 protein with CaCl2 in TG buffer at a 1:1 ratio to yield final reaction mixtures containing 4.5 μM CASQ2, 10 mM Tris-HCl pH 7.0, 10% glycerol, and CaCl2 at the concentrations indicated. The mixtures were incubated at room temperature for 30 min with gentle shaking and 200 μL of the individual reactions were transferred to a transparent Nuclon 96-well plate (Thermo). The turbidities of the samples were determined by measuring the absorbance at 350 nM in Infinite M200 Pro plate reader (Tecan).
 
-## Single-cell Ca2+ influx assay
+### Single-cell Ca2+ influx assay
 
 Single-cell Ca2 +imaging was performed using HeLa cells that had been transfected with either Fam20C WT or Fam20C KI plasmid, and non-transfected HeLa cells. The cells were loaded with 5 μM Fura-2-acetoxymethyl ester for 45–60 min at 37°C in DMEM containing 0.02% Pluronic F-127 and 10 mM HEPES pH 7.4, washed twice with fresh media, and analysed immediately. Modified Ringer’s solution used in this assay consisted of 125 mM NaCl, 5 mM KCl, 1.5 mM MgCl2, 10 mM D-glucose, and 20 mM HEPES (pH 7.4 with NaOH), with the addition of 2 mM CaCl2, or 1 μM thapsigargin (TG), where indicated. Coverslips were assembled into a chamber on the stage of an Olympus IX 71 microscope equipped with an Olympus UPLSAPO 20×, NA 0.75, objective. Cells were alternately illuminated at 340 nm and 380 nm with the Polychrome V monochromator (TILL Photonics) using ET - Fura2 filter (Chroma Technology Corp., catalog number 79001). The fluorescence emission at λ >400 nm (LP 400 nm, Emitter 510/80 nm) were captured with a CCD camera (SensiCam, TILL Imago). Ratio images were recorded at intervals of 4 s. Ca2+ concentration was estimated from the relation (Grynkiewicz et al., 1985): [Ca2+]i = Kd ((R−Rmin)/(Rmax−R)) (Sf2/Sb2), where Kd = 220 nM, and the values of Rmin, Rmax, and (Sf2/Sb2) were determined from an in situ calibration of Fura-2 in HeLa cells. Data were analyzed using TILL Vision (TILL Photonics).
 
-## Stim1 Ca2+ concentration-dependent crosslinking assay
+### Stim1 Ca2+ concentration-dependent crosslinking assay
 
 HeLa cells were co-transfected with Stim1(A230C) and Fam20C WT, or with Stim1(A230C) and Fam20C KI plasmids. The crosslinking was performed as described previously (Hirve et al., 2018). Briefly, the cells (~12×106) were scraped from the substrate and resuspended in Chelex-treated dilution buffer with no added EGTA or Ca2+. Cellular membranes were prepared and apportioned to twelve wells containing resuspension buffer supplemented to give either a final EGTA concentration of 0.5 mM or final Ca2+ concentrations ranging from 0.3 μM to 2 mM. Iodine oxidation, nonreducing SDS-PAGE analysis, and immunoblotting using anti-Stim1 antibody were performed as described previously (Hirve et al., 2018).
 
-## ER Ca2+handling
+### ER Ca2+handling
 
 ER Ca2+ release was quantified following treatment with 2 μM Thapsigargin induced ER Ca release using the dual wavelength ratiometric cytosolic Ca dye, Fura2-AM (Invitrogen), on the FLEX-Station (Molecular Devices) (Marshall et al., 2006) in a 96-well plate format with 3–6 replicates per sample, as previously described (Wiley et al., 2013). Minimum and maximum signal intensities were determined for each run. Ratiometric measurements were converted to intracellular [Ca2+] using the following equation: [Ca2+]=Kd[(R-Rmin)/(Rmax-R)](F380max/F380min).
 
-## Cardiac fractionation
+### Cardiac fractionation
 
 For generating the whole tissue lysate, freshly isolated hearts were homogenized in a buffer containing 50 mM Tris–HCl (pH 8.0), 150 mM NaCl, 0.5% NP-40, 10% glycerol, 0.5 mM EDTA, and a protease inhibitors cocktail. To enrich the ER/Golgi, hearts were homogenized in HME buffer containing 10 mM Tris–HC (pH 7.4), 250 mM sucrose, 1 mM EDTA, and a protease inhibitors cocktail. The homogenate was centrifuged at 1000xg to remove nuclei and unbroken cells. The supernatant was centrifuged at 3000xg to pellet heavy mitochondria. The 3000xg supernatant was then centrifuged at 17,000xg to pellet the ER, Golgi and light mitochondria. This pellet was resuspended in HME buffer as the ER/Golgi-enriched fraction.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used in for protein immunoprecipitation or immunoblotting: mouse anti-Flag M2 (Sigma), rabbit anti-Flag (Sigma), anti-GAPDH (Calbiochem), rabbit anti-Stim1 (Cell Signaling), anti-Bip/GRP78 (Abcam), anti-PARP (cleaved) (Cell Signaling), anti-Calsequestrin 2 (Thermo), anti-Fam20C (Tagliabracci et al., 2014), and anti-His (Invitrogen).
 
-## Statistics
+### Statistics
 
 All data are shown as mean ±SEM. Replicates are indicated in figure legends, with n representing the number of experimental replicates. When comparing two groups, two tailed Student’s t test was performed. Statistical analysis was performed using GraphPad Prism 6.0 (GraphPad Software). p < 0.05 was considered statistically significant.
 
-## qRT-PCR
+### qRT-PCR
 
 For qRT-PCR analysis, total RNA from cardiac tissue was isolated from using Trizol (Invitrogen) per the manufacturer’s instructions. For Chop expression analysis, total RNA was isolated cells using the NucleoSpin RNA kit (MACHEREY-NAGEL, Bethlehem, PA). cDNA was synthesized using the iScript kit (Bio-Rad). qRT-PCR analysis was performed using the Power SYBR Green PCR Master Mix (Applied Biosystems, Waltham, MA) on Applied Biosystems 7500 Real-Time PCR System. Data were normalized to corresponding GAPDH levels. The indicated primers were used (Table 1).

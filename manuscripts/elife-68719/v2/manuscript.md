@@ -36,7 +36,7 @@
 
 ## Abstract
 
-Glucose-dependent insulinotropic polypeptide (GIP) is a peptide hormone that exerts crucial metabolic functions by binding and activating its cognate receptor, GIPR. As an important therapeutic target, GIPR has been subjected to intensive structural studies without success. Here, we report the cryo-EM structure of the human GIPR in complex with GIP and a G s heterotrimer at a global resolution of 2.9 Å. GIP adopts a single straight helix with its N terminus dipped into the receptor transmembrane domain (TMD), while the C terminus is closely associated with the extracellular domain and extracellular loop 1. GIPR employs conserved residues in the lower half of the TMD pocket to recognize the common segments shared by GIP homologous peptides, while uses non-conserved residues in the upper half of the TMD pocket to interact with residues specific for GIP. These results provide a structural framework of hormone recognition and GIPR activation.
+Glucose-dependent insulinotropic polypeptide (GIP) is a peptide hormone that exerts crucial metabolic functions by binding and activating its cognate receptor, GIPR. As an important therapeutic target, GIPR has been subjected to intensive structural studies without success. Here, we report the cryo-EM structure of the human GIPR in complex with GIP and a Gs heterotrimer at a global resolution of 2.9 Å. GIP adopts a single straight helix with its N terminus dipped into the receptor transmembrane domain (TMD), while the C terminus is closely associated with the extracellular domain and extracellular loop 1. GIPR employs conserved residues in the lower half of the TMD pocket to recognize the common segments shared by GIP homologous peptides, while uses non-conserved residues in the upper half of the TMD pocket to interact with residues specific for GIP. These results provide a structural framework of hormone recognition and GIPR activation.
 
 ## Introduction
 
@@ -46,31 +46,162 @@ GIPR contains a large extracellular domain (ECD) and a 7-transmembrane domain (T
 
 ## Results
 
-## Structure determination
+### Structure determination
 
 To prepare a high-quality human GIPR–Gs complex, we overcame several technical obstacles to enhance the expression level and protein stability by adding a double tag of maltose binding protein at the C terminus and a BRIL fusion protein at the N terminus (Figure 1—figure supplement 1A), as well as employing the NanoBiT tethering strategy (Duan et al., 2020; Zhou et al., 2020; Sun et al., 2020; Figure 1—figure supplement 1A,B). To solve the GIP1-42–GIPR–Gs structure, we further introduced one mutation (T345F) to stabilize the assembly of complex (Figure 1—figure supplement 1C,D). This mutation does not affect the ligand binding or potency of GIP1-42 in cAMP accumulation assay (Figure 1—figure supplement 1G,H). Large-scale purification was followed and the GIP1-42–GIPR–Gs complexes were collected by size-exclusion chromatography (SEC) for cryo-EM studies (Figure 1—figure supplement 1E,F). The activity of the modified GIPR construct was confirmed by cAMP accumulation assay showing a response similar to that of the wild-type (WT; Figure 1—figure supplement 1G).
 
 The GIP1-42–GIPR–Gs complexes were imaged using a Titan Krios equipped with a Gatan K3 Summit direct electron detector (Figure 1—figure supplement 2). 2D classification showed a clear secondary structure feature and random distribution of the particles. Different directions of the particles enabled a high-resolution cryo-EM map reconstruction (Figure 1—figure supplement 2B). A total of 295,021 particles were selected after 3D refinement and polishing, leading to an overall resolution of 2.9 Å (Figure 1—figure supplement 2C,D and Table 1).
 
-## Overall structure
+**Table 1.**
+ Cryo-EM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GIP–GIPR–Gs–Nb35 complex</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>46,685</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.2 to −2.2</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.071</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>4,895,399</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>295,021</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å) FSC threshold</td>
+      <td>2.9 0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>2.7–5.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>PDB codes 6WPW and 2QKH</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å) FSC threshold</td>
+      <td>2.9 0.5</td>
+    </tr>
+    <tr>
+      <td>Model resolution range (Å)</td>
+      <td>2.7–5.0</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−86.3</td>
+    </tr>
+    <tr>
+      <td>Model composition Non-hydrogen atoms Protein residues Lipids</td>
+      <td>9409 1156 6</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2) Protein Ligand Lipids</td>
+      <td>133 143 121</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations Bond lengths (Å) Bond angles (Å)</td>
+      <td>0.005 1.036</td>
+    </tr>
+    <tr>
+      <td>Validation MolProbity score Clash score Poor rotamers (%)</td>
+      <td>1.21 4.23 0.00</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>
+      <td>98.15 1.85 0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+### Overall structure
 
 Apart from the α-helical domain (AHD) of Gαs which is flexible in most cryo-EM GPCR–G protein complex structures, the bound GIP1-42, GIPR, and Gs were well defined in the EM density maps (Figure 1, Figure 1—figure supplement 3). Except for the ECD, side chains of the majority of amino acid residues are well resolved in all protein components. The final model contains 30 GIP1-42 residues, the Gαβγ subunits of Gs, and the GIPR residues from Q30ECD to S4158.66b (class B GPCR numbering in superscript) (Wootten et al., 2013), with six amino acid residues missing at helix 8. As a general feature in most reported class B1 GPCR–Gs complex structures (Qiao et al., 2020; Zhang et al., 2017a; Zhao et al., 2019; Ma et al., 2020), the density of ECD is relatively poor owning to its intrinsic flexibility, which limited the accuracy in model building for the GIPR ECD region compared to other regions of the complex structure. Given a low resolution of the density map, the ECD structure is model based on the crystal structure of GIPR ECD (PDB code: 2QKH). Notable conformation difference from GCGR (Qiao et al., 2020) or GLP-1R (Zhang et al., 2017a) was observed in the extracellular loop 1 (ECL1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cut-through view of the cryo-EM density map that illustrates the GIP1-42–GIPR–Gs complex and the disc-shaped micelle. The unsharpened cryo-EM density map at the 0.07 threshold shown as light gray surface indicates a micelle diameter of 11 nm. The colored cryo-EM density map is shown at the 0.16 threshold. (B) Model of the complex as a cartoon, with GIP1-42 as helix in orange. The receptor is shown in light sky blue, Gαs in yellow, Gβ subunit in cyan, Gγ subunit in navy blue, and Nb35 in gray.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Human GIPR constructs used for structure determination. The signal peptide of the GIPR was replaced by the HA signal peptide (blue). A BRIL fusion protein was added at the N terminus of the receptor, followed by a TEV protease site between them. GIPR was truncated at R421, followed by a 15 amino acid linker (15AA, dark blue) and LgBiT (green). The C terminus was modified with a TEV protease site and an OMBP-MBP (light green) tag. The mutation site at T345 was highlighted in red. (B) Gβ1 constructs used for structure determination. Rat Gβ1 (orange) was attached to peptide 86 (orange) with a 15AA linker (dark blue) between them. (C) Size-exclusion chromatography results of the GIP1-42–GIPR(22-421)–Gs–Nb35 (black line) and GIP1-42–GIPR(22-421)(T345F)–Gs–Nb35 (red line) complexes on Superose 6 Increase 10/300GL. (D) SDS-PAGE of the GIP1-42–GIPR(22-421)–Gs–Nb35 and GIP1-42–GIPR(22-421)(T345F)–Gs–Nb35 complexes. (E) Size-exclusion chromatography results on Superose 6 Increase 10/300GL. (F) SDS–PAGE of the GIP1-42–GIPR–Gs–Nb35 complex. (G) cAMP responses following GIP1-42 stimulation in HEK 293T cells transfected with wild-type (WT, HA-Flag-3GSA-GIPR(22-466)) or truncated GIPR constructs (HA-Flag-3GSA-BRIL-TEV-2GSA-GIPR(22-421)T345F-15AA-LgBiT-TEV-2MBP). Signals were normalized to the maximum response of WT and dose–response curves were analyzed using a three-parameter logistic equation. (H) Binding of GIP1-42 to the full length (residues 22-466) or truncated (residues 22-421) GIPR in CHO-K1 cells in competition with [125I]-GIP1-42.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative cryo-EM micrograph (scale bar: 50 nm) and two-dimensional class averages (scale bar: 5 nm). (B) Flow chart of cryo-EM data processing. Details are described in Materials and methods. (C) Local resolution distribution map of the GIP1-42–GIPR–Gs complex. (D) Gold-standard Fourier shell correlation (FSC) curves of overall refined receptor.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** EM density map and model are shown for all seven transmembrane α-helices (A), ECD, helix eight, and all extracellular loops of GIPR, the α5-helix of the Gαs Ras-like domain and GIP1-42 (B). Insert in (A) is the close-up of the density of F3456.44b.
+
 Similar to other class B1 GPCR–Gs complexes, the TM6 of GIPR shows a sharp kink in the middle and TM7 displays an outward movement. Like parathyroid hormone receptor-1 (PTH1R)–Gs and corticotropin-releasing factor receptor type 1 (CRF1R)–Gs cryo-EM structures (Zhao et al., 2019; Ma et al., 2020), the TMD of GIPR is surrounded by annular detergent micelle, with a diameter of 12 nm thereby mimicking the lipid bilayer morphology (Figure 1). In addition, we also observed several cholesterols molecules in the cryo-EM map.
 
-## Ligand recognition
+### Ligand recognition
 
 In the complex, GIP adopts a single continuous helix that penetrates into the TMD core through its N-terminal half (residues 1–15), while the C-terminal half (residues 16–30) is recognized by the ECD and ECL1 (Figure 2A–C). Y1P (P indicates that the residue belongs to the peptide ligand) of GIP points to TMs 2–3, forms hydrogen bonds with R1902.67b and Q2243.37b, and makes hydrophobic contacts with V2273.40b and W2965.36b. This observation received support of the mutagenesis study, where mutant W296A decreased the potency of GIP-induced cAMP signaling by 50-fold (Figure 2D), and the reductions in mutants R190A and Q224A were 71- and 5-fold, respectively, as reported in a previous report (Yaqub et al., 2010). N-terminal truncation of either Y1P or both Y1P and A2P led to reduced efficacy or loss of activity (Kerr et al., 2011; Gabe et al., 2020), highlighting a crucial role of Y1P. E3P, D9P, and D15P are three negatively charged residues in the N-terminal half of GIP and form salt bridges with R1832.60b, R3707.35b, and R289ECL2, respectively. Removal of these salt bridges by alanine substitution at either R1832.60b (Yaqub et al., 2010) or R3707.35b (Figure 2D) greatly reduced GIP potency (by 76- and 55-fold, respectively), whereas the effect on mutant R289A was mild (6-fold, Figure 2D). Polar interactions also occurred between S8P and N290ECL2 as well as Y10P and Q1381.40b. The GIP–TMD interface was further stabilized by a complementary nonpolar network involving TM1 (L1341.36b, L1371.39b, and Y1411.43b) and TM7 (L3747.39b and I3787.43b) via A2P, F6P, and Y10P of GIP (Figure 2C), in line with decreased ligand potencies observed in Y141A (by 103-fold), L374A (by 41-fold), and I378A (by 8-fold) mutants (Figure 2D). These mutants also caused significant potency decreases in GIP1-42-induced β-arrestin2 recruitment (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig2-v2.jpg)
+
+**Figure 2.:** (A) The binding mode of GIP (orange) with GIPR (light sky blue), showing that the N-terminal half of GIP penetrates into a pocket formed by all TM helices except TM4, ECL2, and ECL3, whereas the C-terminal half is recognized by ECD, ECL1, and TM1. (B, C) Close-up views of the interactions between GIP and GIPR. The residues and side chains that could not be modelled in the ECD are colored in red. (D) Signaling profiles of GIPR mutants. cAMP accumulation in wild-type (WT) and single-point mutated GIPR expressing in HEK 293T cells. Signals were normalized to the maximum response of the WT and dose–response curves were analyzed using a three-parameter logistic equation. All data were generated and graphed as means ± S.E.M. of at least three independent experiments, conducted in quadruplicate. Δ, truncated residues.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** GIP1-42 induced β-arrestin2 recruitment. HEK 293 T cells were transiently co-transfected with GIPR-Rluc8 and Venus-β-arrestin2 (β-arr2). Data presented are AUC of BRET signals measured for 10 min post-stimulation. For quantification of concentration-responses, data were corrected for the vehicle control and then normalized to the maximal response of wild-type (WT) GIPR. Data were fitted to non-linear regression three-parameter logistic curves. Δ, truncated residues.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Comparison of active GIPR with inactive, agonist-bound, and both agonist-bound and G protein-coupled active GCGR (Zhang et al., 2020). G proteins are omitted for clarity.
+
 The C-terminal half of GIP was clasped by the GIPR ECD, closely resembling the crystal structure of GIP–GIPR ECD (PDB code: 2QKH) (Parthier et al., 2007). Consistent with the interaction patterns observed in other class B1 GPCRs (Parthier et al., 2007), the hydrophobic residues (F22P, V23P, L26P, and L27P) in the C-terminal half of GIP occupy a complementary binding groove of the GIPR ECD, consisting of a series of hydrophobic residues (L35, Y36, W39, M67, Y68, Y87, L88, P89, and W90). Alanine substitutions in W39, D66, and Y68 significantly reduced the potency of GIP (Figure 2D). Besides, several polar contacts including H18P-Y36 and Q20P-N124 were observed. Notably, the cryo-EM map suggests that the ECL1 stands upwards to approach the N-terminal α-helix of ECD and forms hydrogen bonds with the side chain of Y36 (Figure 2A,B), resulting in a close contact between TMD and ECD for GIP-bound GIPR (interface area = 571 Å2), significantly larger than that of GLP-1-bound GLP-1R (362 Å2), reinforcing the importance of ECD in GIP recognition.
 
-## Receptor activation
+### Receptor activation
 
 GIPR shares ~50% sequence similarity with GCGR, especially in the TMD region (75%); thus, GCGR structures published previously provide a good template for the present study (Figure 2—figure supplement 2; Qiao et al., 2020; Hilger et al., 2020; Jazayeri et al., 2016; Zhang et al., 2018; Chang et al., 2020). It was found the TMD of activated GIPR exhibits a conformation similar to that of GCGR activated by glucagon or ZP3780 (Cα RMSD = 1.2 and 0.7 Å, respectively) (Qiao et al., 2020; Hilger et al., 2020) and distinct from that of GCGR bound by the negative allosteric modulator NNC0640 or partial agonist NNC1702 (Cα RMSD = 4.0 and 3.9 Å, respectively) (Zhang et al., 2017b). Facilitated by Gly7.50b located in the middle of TM7, the extracellular half of TM7 bends towards TM6 by 8.0 Å (measured by Cα atom of Gly7.32b) (Figure 2—figure supplement 2). This feature and the outward movement of ECL3 expanded the ligand binding pocket. Meanwhile, the extracellular tip of TM1 was extended by one turn and moved inward by 8.0 Å (measured by Cα atom of the residues at 1.30b) (Figure 2—figure supplement 2). Together with the raised ECL1, these conformational changes stabilized ligand binding.
 
 In the intracellular side, the sharp kink in the middle of TM6 led to an outward movement of its intracellular portion measured by Cα atom of R3366.35b (18.9 Å, similar to that of other Gs-coupled class B1 receptors). This was accompanied by the movement of the intracellular tip of TM5 toward TM6 by 7.6 Å (measured by Cα atom of the residues at 5.67b), thereby creating an intracellular cavity for G protein coupling (Figure 2—figure supplement 2).
 
-## G protein coupling
+### G protein coupling
 
 In our model, Gs protein is anchored by the α5 helix of Gαs (GαH5), thereby fitting to the cytoplasmic cavity formed by TMs 3, 5, and 6, intracellular loops (ICLs) 1–2 and H8 (Figure 3). In general, the GIPR–Gs complex shows a similar receptor–G protein interface as other reported class B1 receptor structures such as GLP-1R (Zhang et al., 2020), GLP-2R (glucagon-like peptide-2 receptor) (Sun et al., 2020), GCGR (Qiao et al., 2020), PTH1R (Zhao et al., 2019), SCTR (secretin receptor) (Dong et al., 2020), and GHRHR (growth hormone-releasing hormone receptor) (Zhou et al., 2020), suggesting a common G protein signaling mechanism (Figure 3A). The hydrophobic residues at the C-terminal of GαH5 (L388GαH5, Y391GαH5, L393GαH5, and L394GαH5) insert into a small hydrophobic pocket formed by Y2403.53b, L2413.54b, L2443.57b, L2453.58b, I3175.58b, I3205.60b, L3215.61b, and L3255.65b (Figure 3B). The side chain of R3386.37b points to Gαs and makes one hydrogen bond with L394GαH5. Of note is that the interaction between R380GαH5 and ICL2 results in five hydrogen bonds with the backbone atoms of L2453.58b, V2463.59b, L2473.60b, and V248ICL2, significantly more than that observed in GLP-1R, SCTR, or GCGR (Figure 3C). The polar residues in ICL2 (S251ICL2 and E253ICL2) produce two hydrogen bonds with K34 and Q35 of Gαs, while H8 forms several hydrogen bonds with ICL1, then contacts with Gβ (E3988.49b-R164ICL1-D312Gβ, E4028.53b-R164ICL1-D312Gβ) (Figure 3D). Together, these specific interactions contribute to the Gs coupling specificity of GIPR.
 
@@ -78,9 +209,27 @@ In our model, Gs protein is anchored by the α5 helix of Gαs (GαH5), thereby f
 
 **Figure 3.:** (A) Comparison of G protein coupling among GIPR, GLP-1R (Zhang et al., 2020), GCGR (Qiao et al., 2020), and SCTR (Dong et al., 2020). The Gαs α5-helix of the Gαs Ras-like domain inserts into an intracellular crevice of GIPR TMD. (B) Interaction between GIPR and the C terminus of Gαs. (C) Polar interactions between ICL2 and Gαs. (D) Polar interactions between H8 and ICL1 of the GIPR and Gβ. The GIP1-42–GIPR–Gαs structure is colored light sky blue (GIPR), gold (Gαs), and cyan (Gβ). Residues involved in interactions are shown as sticks. Polar interactions are shown as black dashed lines.
 
-## Ligand specificity
+### Ligand specificity
 
 GIP, GLP-1, and glucagon are three important metabolic hormones exerting distinct functions in glucose homeostasis, in spite of high degrees of sequence similarity. Superimposing the TMD of GIP-bound GIPR with that of GLP-1-bound GLP-1R (Zhang et al., 2020) or glucagon-bound GCGR (Qiao et al., 2020) displays a similar ligand-binding pocket and the three peptides all adopt a single continuous helix, with the N terminus penetrating to the TMD core to the same depth, while the C terminus anchors the ECD and ECL1 in a receptor-specific manner (Figure 4). Notably, the ECL1 of GIPR stands upwards in line with TMs 2 and 3 and moves towards the TMD core by 5~7 Å. Such a movement, together with a α-helical extension in TM1 by six residues, allows GIP to shift to TM1 by 2.7 and 3.3 Å (measured by Cα atom of L27P) relative to GLP-1 (Zhang et al., 2020) and glucagon (Qiao et al., 2020), respectively (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-v2.jpg)
+
+**Figure 4.:** (A) Comparison of the overall structures of GIP1-42–GIPR–Gs, GLP-1–GLP-1R–Gs (Zhang et al., 2020) and glucagon–GCGR–Gs complexes (Qiao et al., 2020). G proteins are omitted for clarity. (B–D) Close-up views of the interaction between TMD and peptide. Based on sequence similarity, the peptides are divided into four segments: N terminus (residues 1–3, B), segment 2 (residues 4–11, C), segment 3 (residues 12–20, D), and the C terminus (residues 21 to the end, E–G), where segments 2 and 4 are highly conserved among GIP, GLP-1, and glucagon. Residues are numbered based on GIP for peptides, and labeled with class B GPCR numbering in superscript for receptors (Wootten et al., 2013). (E–G) Close-up views of the interface between GIPR ECD and GIP C terminus (E), between GLP-1R and GLP-1 C terminus (F), and between GCGR and glucagon C terminus (G). The ECD is shown in surface representation and colored from dodger blue for the most hydrophilic region, to white, to orange red for the most hydrophobic region. (H) Comparison of peptide recognition modes for three receptors, described by fingerprint strings encoding different interaction types of the surrounding residues in each receptor. Peptide residue numbers on the top are shown based on GIP. The ligand-binding pocket residues that are identical or similar across three receptors are highlighted in dark gray and light gray, respectively. Color codes are listed on the bottom.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The ECL1 conformation of GIP-bound GIPR is compared with that of GLP-1-bound GLP-1R (PDB code: 6X18) (Zhang et al., 2020) and glucagon-bound GCGR (PDB code: 6LMK) (Zhang et al., 2020). All structures are superimposed on the GIP-bound GIPR using the Cα carbons of the residues in the TM2–3–4. Receptor ECD and G protein are omitted for clarity.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Left, comparison of peptide binding between simulation snapshots of GLP-1–GIPR and the cryo-EM structure of GIP–GIPR–Gs complex. ECD and G protein are omitted for clarity. Right top, extracellular view of the interaction between peptide and TMD. Right bottom, the buried surface area between GLP-1 and GIPR. (B) Left, comparison of peptide binding between simulation snapshots of glucagon–GIPR and the cryo-EM structure of GIP–GIPR–Gs complex. ECD and G protein are omitted for clarity. Right top, extracellular view of the interaction between peptide and TMD. Right bottom, the buried surface area between glucagon and GIPR. Interface areas were calculated using freeSASA (Zhang et al., 2020).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) The glucagon subfamily of GPCRs (Zhou et al., 2020; Sun et al., 2020; Qiao et al., 2020; Zhang et al., 2017a; Dong et al., 2020); (B) calcitonin subfamily (Liang et al., 2018a); (C) corticotropin-releasing factor (CRF) subfamily (Ma et al., 2020; Liang et al., 2020); (D) pituitary adenylate-cyclase-activating peptide (PACAP) and vasoactive intestinal polypeptide (VIP) receptor subfamily (Duan et al., 2020; Liang et al., 2020; Wang et al., 2020); (E) parathyroid hormone subfamily (Zhao et al., 2019).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/68719/elife-68719-fig4-figsupp4-v2.jpg)
 
 Based on the sequence similarity, the three peptides can be divided into four segments: two common segments (residues 4–11 and 21–30 in GIP) and two unique segments (residues 1–3 and 12–20 in GIP) (Figure 4H). The N terminus (residues 1–3) makes massive contacts with the conserved central polar network of class B1 GPCRs including one hydrogen bond with Q3.37b stabilized by the hydrophobic residue at 3.40b; one hydrogen bond with Y1.47b made by the third peptide residue (Figure 4B,H); residues 4–11 interact with salt bridges of R7.35b, pi-stacking of Y1.43b, hydrophobic L2.71b, W5.36b, and L7.39b, as well as several hydrogen bonds in ECL2 (Figure 4C,H); residues 12–20 are divergent and mainly interact with ECLs 1–2 and TMs 1–2 (Figure 4D,H).
 
@@ -100,56 +249,416 @@ Finally, GIPR, combined with GLP-1R and GCGR, have been intensively studied as t
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene</td>
+      <td>GIPR_human</td>
+      <td>NCBI</td>
+      <td>NM_000164.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>TIANGEN</td>
+      <td>Cat # CB105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>Cat # CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (hamster)</td>
+      <td>CHO-K1</td>
+      <td>ATCC</td>
+      <td>Cat # CCL-61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (insect)</td>
+      <td>Sf9</td>
+      <td>Invitrogen</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (insect)</td>
+      <td>High-Five insect cells</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # B85502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac-HA-BRIL-TEV-2GSA-GIPR(22-421)T345F-15AA-LgBiT-TEV-OMBP-MBP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac-HA-BRIL-TEV-2GSA-GIPR(22-421)−15AA-LgBiT-TEV-OMBP-MBP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac-DNGαs</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac-Gβ1-peptide 86</td>
+      <td>https://doi.org/10.1038/s41422-020-00442-0</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac-Gγ2</td>
+      <td>https://doi.org/10.1038/s41422-020-00442-0</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PMESy4-Nb35</td>
+      <td>https://doi.org/10.1016/j.molcel.2020.01.013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-GIPR (WT and mutants)−3Flag</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GIP1-42</td>
+      <td>GenScript</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor Cocktail, EDTA-Free</td>
+      <td>TragetMol</td>
+      <td>Cat # C0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Apyrase</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>Cat # A6132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCEP</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>Cat # C4706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lauryl maltose neopentylglycol (LMNG)</td>
+      <td>Anatrace</td>
+      <td>Cat # NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol hemisuccinate (CHS)</td>
+      <td>Anatrace</td>
+      <td>Cat # CH210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glyco-diosgenin (GDN)</td>
+      <td>Anatrace</td>
+      <td>Cat # GDN101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amylose resin</td>
+      <td>NEB</td>
+      <td>Cat # E8021L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ESF 921 culture medium</td>
+      <td>Expression Systems</td>
+      <td>Cat # 96-00-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Gibco</td>
+      <td>Cat # 10099–141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Gibco</td>
+      <td>Cat # 12430–054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-tremeGHNE HP DNA Transfection Reagent</td>
+      <td>Sigma-Aldrich (Roche)</td>
+      <td>Cat # 6366236001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Biosynth</td>
+      <td>Cat # D-3203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Salt active nuclease</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # SRE0015-5KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pyruvate</td>
+      <td>Gibco</td>
+      <td>Cat # 11360–0’70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 transfection reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat # 11668–019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>125I-GIP</td>
+      <td>PerkinElmer</td>
+      <td>Cat # NEX402010UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSA</td>
+      <td>ABCONE</td>
+      <td>Cat # A23088-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag primary antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # F3165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa Fluor 488 conjugated secondary antibody</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-21202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>LANCE Ultra cAMP kit</td>
+      <td>PerkinElmer</td>
+      <td>Cat # 2675984</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2.1</td>
+      <td>doi:10.1126/science.aav7942</td>
+      <td>N/A</td>
+      <td>https://msg.ucsf.edu/em/software/motioncor2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf v1.06</td>
+      <td>https://doi.org/10.1016/j.jsb.2015.11.003</td>
+      <td>N/A</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION-3.0-beta2</td>
+      <td>https://doi.org/10.1016/j.jsb.2012.09.006</td>
+      <td>N/A</td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion/index.php/Download_%26_install</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>https://doi.org/10.1107/S0907444904019158</td>
+      <td>N/A</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>https://doi.org/10.1107/S0907444909052925</td>
+      <td>N/A</td>
+      <td>http://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>https://doi.org/10.1002/jcc.20084</td>
+      <td>N/A</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger</td>
+      <td>N/A</td>
+      <td>https://pymol.org/2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v7.0</td>
+      <td>GraphPad Software</td>
+      <td>N/A</td>
+      <td>https://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FreeSASA</td>
+      <td>doi:10.12688/f1000research.7931.1</td>
+      <td>N/A</td>
+      <td>http://freesasa.github.io/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gromacs 2018.5</td>
+      <td>doi:10.1016/j.softx.2015.06.001</td>
+      <td>N/A</td>
+      <td>https://manual.gromacs.org/2018.5/download.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein Preparation Wizard</td>
+      <td>Schrödinger</td>
+      <td>N/A</td>
+      <td>https://www.schrodinger.com/products/protein-preparation-wizard</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM-GUI Membrane Builder</td>
+      <td>https://doi.org/10.1002/jcc.23702</td>
+      <td>N/A</td>
+      <td>https://charmm-gui.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM36-CAMP</td>
+      <td>https://doi.org/10.1021/ct200328p</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LINCS algorithm</td>
+      <td>https://doi.org/10.1021/ct700200b</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Semi-isotropic Parrinello-Rahman barostat</td>
+      <td>https://doi.org/10.1016/0022-3093(93)90111-A</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Spodoptera frugiperda (Sf9) (Invitrogen) and High-Five insect cells (ThermoFisher Scientific) were cultured in ESF 921 serum-free medium (Expression Systems) at 27°C and 120 rpm.
 
-## Constructs
+### Constructs
 
 The human GIPR DNA (Genewiz) with one mutation (T345F) was cloned into a modified pFastBac vector (Invitrogen). The native signal peptide was replaced by the hemagglutinin signal peptide (HA) to enhance receptor expression. A BRIL fusion protein was added at the N-terminal of the ECD with a TEV protease site and 2GSA linker between them. Forty-five amino acids (Q422-C466) were truncated at the C terminus where LgBiT was added with a 15-amino acid (15AA) polypeptide linker in between, followed by a TEV protease cleavage site and an optimized maltose binding protein–maltose binding protein tag (OMBP-MBP). A dominant-negative bovine Gαs (DNGαs) (S54N, G226A, E268A, N271K, K274D, R280K, T284D, and I285T) construct was used to stabilize the complex (Zhou et al., 2020; Liang et al., 2018b). SmBiT34 (peptide 86, Promega) subunit was added to the C terminus of rat Gβ1 with a 15AA polypeptide linker between them. The modified rat Gβ1 and bovine Gγ2 were both cloned into a pFastBac vector.
 
-## Protein expression
+### Protein expression
 
 Baculoviruses containing the above complex construct were prepared by the Bac-to-Bac system (Invitrogen). GIPR and Gs heterotrimer were co-expressed in High-Five cells. Briefly, insect cells were grown in ESF 921 culture medium (Expression Systems) to a density of 3.2 × 106 cells/mL, and then cells were infected with four kinds of viral preparations: BRIL-TEV-2GSA-GIPR(22-421)T345F-15AA-LgBiT-TEV-OMBP-MBP, Gαs, Gβ1-peptide 86, and Gγ2 at a ratio of 1:3:3:3. After 48 hr incubation at 27°C, the cells were collected by centrifugation and stored at −80°C until use.
 
-## Nb35 expression and purification
+### Nb35 expression and purification
 
 Nanobody-35 (Nb35) with a 6× his tag at the C terminus was expressed in the periplasm of E. coli BL21 (DE3) cells. Briefly, Nb35 target gene was transformed in the bacterium and amplified in TB culture medium with 100 μg/mL ampicillin, 2 mM MgCl2, 0.1% (w/v) glucose at 37°C, 180 rpm. When OD600 reached 0.7–1.2, 1 mM IPTG was added to induce expression followed by overnight incubation at 28°C. The cell pellet was then collected at 3000 rpm under 4°C and stored at −80°C. Nb35 was purified as by size-exclusion chromatography using a HiLoad 16/600 Superdex 75 column (GE Healthcare) with running buffer containing 20 mM HEPES, 100 mM NaCl, pH 7.4. Fractions of Nb35 were concentrated to ~3 mg/mL and quickly frozen in the liquid nitrogen with 10% glycerol and stored in −80°C.
 
-## Complex formation and purification
+### Complex formation and purification
 
 Cell pellets were lysed in a buffer consisting of 20 mM HEPES, 100 mM NaCl, pH 7.4, 10 mM MgCl2, 1 mM MnCl2, and 10% glycerol supplemented with protease inhibitor cocktail, EDTA-free (TragetMol). Subsequently, cell membranes were collected by ultracentrifugation at 4°C, 90,000 g for 35 min. The membranes were resuspended with a buffer containing 20 mM HEPES, 100 mM NaCl, pH 7.4, 10 mM MgCl2, 1 mM MnCl2, and 10% glycerol. The complex of GIPR-Gs was assembled by adding 15 μM GIP1-42 (GenScript), 100 μM TCEP, 25 mU/mL Apyrase (Sigma-Aldrich), 15 μg/mL Nb35, and 100 U salt active nuclease (Sigma-Aldrich) supplemented with protease inhibitor cocktail for 1.5 hr incubation at room temperature (RT). The preparation was then solubilized with 0.5% (w/v) lauryl maltose neopentylglycol (LMNG, Anatrace) and 0.1% (w/v) cholesterol hemisuccinate (CHS, Anatrace) with additional 1 μM GIP1-42 for 3 hr at 4°C. The supernatant was isolated by centrifugation at 90,000 g for 35 min, and the solubilized complex was incubated with amylose resin (NEB) for 2.5 hr at 4°C. After batch binding, the resin was collected by centrifugation at 550 g and loaded onto a gravity flow column. The resin in column was firstly washed with five column volumes of buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10% (v/v) glycerol, 5 mM MgCl2, 1 mM MnCl2, 25 μM TCEP, 3 μM GIP1-42, 0.1% (w/v) LMNG, and 0.02% (w/v) CHS. Subsequently, the resin was washed with 25 column volumes of buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10% (v/v) glycerol, 5 mM MgCl2, 1 mM MnCl2, 25 μM TCEP, 3 μM GIP1-42, 0.03% (w/v) LMNG, 0.01% (w/v) glyco-diosgenin (GDN, Anatrace), and 0.008% (w/v) CHS. The protein was then incubated with a buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10% (v/v) glycerol, 5 mM MgCl2, 1 mM MnCl2, 25 μM TCEP, 50 μM GIP1-42, 10 μg/mL Nb35, 0.03% (w/v) LMNG, 0.01% (w/v) glyco-diosgenin, 0.008% (w/v) CHS, and 30 μg/mL His-tagged TEV protease on the column overnight at 4°C. The flow through was collected and concentrated to 500 μL using a 100 kDa filter (Merck Millipore). Size-exclusion chromatography was performed by loading the protein onto Superose 6 Increase 10/300 GL (GE Healthcare) column with running buffer containing 20 mM HEPES, pH 7.4, 100 mM NaCl, 10 mM MgCl2, 100 μM TCEP, 5 μM GIP1-42, 0.00075% (w/v) LMNG, 0.00025% (w/v) glyco-diosgenin, 0.0002% (w/v) CHS, and 0.00025% digitonin (Anatrace). Monomeric GIPR-Gs complexes were collected and concentrated for cryo-EM analysis.
 
-## Data acquisition and image processing
+### Data acquisition and image processing
 
 The purified GIP1-42–GIPR–Gs–Nb35 complex at a concentration of 6–7 mg/mL was mixed with 100 μM GIP1-42 at 4°C and applied to glow-discharged holey carbon grids (Quantifoil R1.2/1.3, Au 300 mesh) that were subsequently vitrified by plunging into liquid ethane using a Vitrobot Mark IV (ThermoFisher Scientific). A Titan Krios equipped with a Gatan K3 Summit direct electron detector was used to acquire Cryo-EM images. The microscope was operated at 300 kV accelerating voltage, at a nominal magnification of 46,685× in counting mode, corresponding to a pixel size of 1.071 Å. Totally, 8023 movies were obtained with a defocus range of −1.2 to −2.2 μm. An accumulated dose of 80 electrons per Å2 was fractionated into a movie stack of 36 frames.
 
 Dose-fractionated image stacks were subjected to beam-induced motion correction using MotionCor2.1. A sum of all frames, filtered according to the exposure dose, in each image stack was used for further processing. Contrast transfer function parameters for each micrograph were determined by Gctf v1.06. Particle selection, 2D and 3D classifications were performed on a binned dataset with a pixel size of 2.142 Å using RELION-3.0-beta2. Auto-picking yielded 4,895,399 particle projections that were subjected to reference-free 2D classification to discard false-positive particles or particles categorized in poorly defined classes, producing 2,754,623 particle projections for further processing. This subset of particle projections was subjected to a round of maximum-likelihood-based three dimensional classifications with a pixel size of 2.142 Å, resulting in one well-defined subset with 1,395,031 projections. Further 3D classifications with mask on the receptor produced one good subset accounting for 565,239 particles, which were subjected to another round of 3D classifications with mask on the ECD. A selected subset containing 295,021 projections was then subjected to 3D refinement and Bayesian polishing with a pixel size of 1.071 Å. After the last round of refinement, the final map has an indicated global resolution of 2.94 Å at a Fourier shell correlation (FSC) of 0.143. Local resolution was determined using the Bsoft package with half maps as input maps.
 
-## Model building and refinement
+### Model building and refinement
 
 The cryo-EM structure of GCGR–Gs–Nb35 complex (PDB code 6WPW) (Qiao et al., 2020) and the crystal structure of GIPR ECD (PDB code 2QKH) (Parthier et al., 2007) were used as the start for model building and refinement against the EM map. The model was docked into the EM density map using Chimera (Pettersen et al., 2004), followed by iterative manual adjustment and rebuilding in COOT (Emsley and Cowtan, 2004). Real space refinement was performed using Phenix (Adams et al., 2010). The model statistics were validated using MolProbity (Chen et al., 2010). Structural figures were prepared in Chimera and PyMOL (https://pymol.org/2/). The final refinement statistics are provided in Table 1.
 
-## cAMP accumulation assay
+### cAMP accumulation assay
 
 GIP1-42-stimulated cAMP accumulation was measured by a LANCE Ultra cAMP kit (PerkinElmer). Briefly, HEK 293T cells were cultured in DMEM (Gibco) supplemented with 10% (v/v) fetal bovine serum (FBS, Gibco) and 1% (v/v) sodium pyruvate (Gibco) at 37°C, 5% CO2. Cells were seeded onto six-well cell culture plates and transiently transfected with different GIPR constructs using Lipofectamine 2000 transfection reagent (Invitrogen). All the mutant constructs were modified by single-point mutation in the setting of the WT construct (HA-Flag-3GSA-GIPR(22-466)). After 24 hr culture, the transfected cells were seeded onto 384-well microtiter plates at a density of 3000 cells per well in HBSS supplemented with 5 mM HEPES, 0.1% (w/v) bovine serum albumin (BSA), and 0.5 mM 3-isobutyl-1- methylxanthine. The cells were stimulated with different concentrations of GIP1-42 for 40 min at RT. Eu and Ulight were then diluted by cAMP detection buffer and added to the plates separately to terminate the reaction. Plates were incubated at RT for 40 min and the fluorescence intensity measured at 620 nm and 650 nm by an EnVision multilabel plate reader (PerkinElmer).
 
-## Whole-cell binding assay
+### Whole-cell binding assay
 
 CHO-K1 cells were cultured in F12 medium with 10% FBS and seeded at a density of 30,000 cells/well in Isoplate-96 plates (PerkinElmer). The WT (HA-Flag-3GSA-GIPR(22-466)) or mutant GIPR were transiently transfected using Lipofectamine 2000 transfection reagent. The mutant construct was modified by single-point mutation in the setting of the WT construct. Twenty-four hours after transfection, cells were washed twice, and incubated with blocking buffer (F12 supplemented with 33 mM HEPES and 0.1% BSA, pH 7.4) for 2 hr at 37°C. For homogeneous binding, cells were incubated in binding buffer with a constant concentration of 125I-GIP (40 pM, PerkinElmer) and increasing concentrations of unlabeled GIP1-42 (3.57 pM–1 μM) at RT for 3 hr. Following incubation, cells were washed three times with ice-cold PBS and lysed by addition of 50 μL lysis buffer (PBS supplemented with 20 mM Tris–HCl, 1% Triton X-100, pH 7.4). Fifty microliters of scintillation cocktail (OptiPhase SuperMix, PerkinElmer) was added, and the plates were subsequently counted for radioactivity (counts per minute, CPM) in a scintillation counter (MicroBeta2 Plate Counter, PerkinElmer).
 
-## β-Arrestin2 recruitment
+### β-Arrestin2 recruitment
 
 HEK 293T cells (3 × 106 cells/10 cm plate) were grown for 24 hr before transfection with 10.6 μg plasmid containing GIPR tagged with Rluc8 and β-arrestin with a Venus-tag in the N terminus at a ratio of 1:9. Transiently transfected cells were then seeded onto poly-d-lysine coated 96-well culture plates (50,000 cells/well) in DMEM with 10% FBS. Cells were grown overnight before incubation in assay buffer (HBSS supplemented with 10 mM HEPES and 0.1% BSA, pH 7.4) for 30 min at 37°C. Coelentrazine-h (Yeasen Biotech) was added to a final concentration of 5 μM for 5 min before bioluminescence resonance energy transfer (BRET) readings were made using an EnVision plate reader (PerkinElmer). BRET baseline measurements were collected for 10 cycles prior to ligand addition. Following peptide addition, BRET was measured for 50 cycles. The BRET signal (ratio of 535 nm over 470 nm emission) was corrected to the baseline and then vehicle-treated condition to determine ligand-induced changes in BRET response. Concentration–response values were obtained from the area-under-the-curve (AUC) of the responses elicited by GIP1-42.
 
-## Receptor surface expression
+### Receptor surface expression
 
 Cell surface expression was determined by flow cytometry to the N-terminal Flag tag on the WT GIPR (HA-Flag-3GSA-GIPR(22-466)) and its mutants transiently expressed in HEK 293T cells. All the mutant constructs were modified by single-point mutation in the setting of the WT construct. Briefly, approximately 2 × 105 cells were blocked with PBS containing 5% BSA (w/v) at RT for 15 min and then incubated with 1:300 anti-Flag primary antibody (diluted with PBS containing 5% BSA, Sigma-Aldrich) at RT for 1 hr. The cells were then washed three times with PBS containing 1% BSA (w/v) followed by 1 hr incubation with 1:1000 anti-mouse Alexa Fluor 488 conjugated secondary antibody (diluted with PBS containing 5% BSA, Invitrogen) at RT in the dark. After washing three times, cells were re-suspended in 200 μL PBS containing 1% BSA for detection by NovoCyte (Agilent) utilizing laser excitation and emission wavelengths of 488 nm and 530 nm, respectively. For each sample, 20,000 cellular events were collected, and the total fluorescence intensity of positive expression cell population was calculated. Data were normalized to the WT receptor.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Molecular dynamic simulations were performed by Gromacs 2018.5. The peptide–GIPR complexes were built based on the cryo-EM GIP–GIPR–Gs complex and prepared by the Protein Preparation Wizard (Schrodinger 2017–4) with the G protein and Nb35 nanobody removed. The receptor chain termini were capped with acetyl and methylamide, and the titratable residues were left in their dominant state at pH 7.0. The complexes were embedded in a bilayer composed of 200 POPC lipids and solvated with 0.15 M NaCl in explicitly TIP3P waters using CHARMM-GUI Membrane Builder (Wu et al., 2014). The CHARMM36-CAMP force filed (Guvench et al., 2011) was adopted for protein, peptides, lipids, and salt ions. The Particle Mesh Ewald (PME) method was used to treat all electrostatic interactions beyond a cut-off of 10 Å, and the bonds involving hydrogen atoms were constrained using LINCS algorithm (Hess, 2008). The complex system was firstly relaxed using the steepest descent energy minimization, followed by slow heating of the system to 310 K with restraints. The restraints were reduced gradually over 50 ns. Finally, restrain-free production run was carried out for each simulation, with a time step of 2 fs in the NPT ensemble at 310 K and 1 bar using the Nose–Hoover thermostat and the semi-isotropic Parrinello–Rahman barostat (Aoki and Yonezawa, 1992), respectively. The buried interface areas were calculated with FreeSASA (Mitternacht, 2016) using the Sharke–Rupley algorithm with a probe radius of 1.2 Å. The last 700 ns trajectory of each simulation was used to root mean square fluctuation (RMSF) calculation.
 
-## Statistical analysis
+### Statistical analysis
 
 All functional data were presented as means ± standard error of the mean (S.E.M.). Statistical analysis was performed using GraphPad Prism 7 (GraphPad Software). Concentration–response curves were evaluated with a three-parameter logistic equation. The significance was determined with either two-tailed Student’s t-test or one-way ANOVA. Significant difference is accepted at p<0.001.

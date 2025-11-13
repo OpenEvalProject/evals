@@ -37,7 +37,7 @@
 
 ## Abstract
 
-Malaria elimination strategies require a thorough understanding of parasite transmission from human to mosquito. A clinical model to induce gametocytes to understand their dynamics and evaluate transmission-blocking interventions (TBI) is currently unavailable. Here, we explore the use of the well-established Controlled Human Malaria Infection model (CHMI) to induce gametocyte carriage with different antimalarial drug regimens. In a single centre, open-label randomised trial, healthy malaria-naive participants (aged 18–35 years) were infected with Plasmodium falciparum by bites of infected Anopheles mosquitoes. Participants were randomly allocated to four different treatment arms (n = 4 per arm) comprising low-dose (LD) piperaquine (PIP) or sulfadoxine-pyrimethamine (SP), followed by a curative regimen upon recrudescence. Male and female gametocyte densities were determined by molecular assays. Mature gametocytes were observed in all participants (16/16, 100%). Gametocytes appeared 8.5–12 days after the first detection of asexual parasites. Peak gametocyte densities and gametocyte burden was highest in the LD-PIP/SP arm, and associated with the preceding asexual parasite biomass (p=0.026). Male gametocytes had a mean estimated circulation time of 2.7 days (95% CI 1.5–3.9) compared to 5.1 days (95% CI 4.1–6.1) for female gametocytes. Exploratory mosquito feeding assays showed successful sporadic mosquito infections. There were no serious adverse events or significant differences in the occurrence and severity of adverse events between study arms (p=0.49 and p=0.28). The early appearance of gametocytes indicates gametocyte commitment during the first wave of asexual parasites emerging from the liver. Treatment by LD-PIP followed by a curative SP regimen, results in the highest gametocyte densities and the largest number of gametocyte-positive days. This model can be used to evaluate the effect of drugs and vaccines on gametocyte dynamics, and lays the foundation for fulfilling the critical unmet need to evaluate transmission-blocking interventions against falciparum malaria for downstream selection and clinical development. Funded by PATH Malaria Vaccine Initiative (MVI). NCT02836002 .
+Background:Malaria elimination strategies require a thorough understanding of parasite transmission from human to mosquito. A clinical model to induce gametocytes to understand their dynamics and evaluate transmission-blocking interventions (TBI) is currently unavailable. Here, we explore the use of the well-established Controlled Human Malaria Infection model (CHMI) to induce gametocyte carriage with different antimalarial drug regimens.Methods:In a single centre, open-label randomised trial, healthy malaria-naive participants (aged 18–35 years) were infected with Plasmodium falciparum by bites of infected Anopheles mosquitoes. Participants were randomly allocated to four different treatment arms (n = 4 per arm) comprising low-dose (LD) piperaquine (PIP) or sulfadoxine-pyrimethamine (SP), followed by a curative regimen upon recrudescence. Male and female gametocyte densities were determined by molecular assays.Results:Mature gametocytes were observed in all participants (16/16, 100%). Gametocytes appeared 8.5–12 days after the first detection of asexual parasites. Peak gametocyte densities and gametocyte burden was highest in the LD-PIP/SP arm, and associated with the preceding asexual parasite biomass (p=0.026). Male gametocytes had a mean estimated circulation time of 2.7 days (95% CI 1.5–3.9) compared to 5.1 days (95% CI 4.1–6.1) for female gametocytes. Exploratory mosquito feeding assays showed successful sporadic mosquito infections. There were no serious adverse events or significant differences in the occurrence and severity of adverse events between study arms (p=0.49 and p=0.28).Conclusions:The early appearance of gametocytes indicates gametocyte commitment during the first wave of asexual parasites emerging from the liver. Treatment by LD-PIP followed by a curative SP regimen, results in the highest gametocyte densities and the largest number of gametocyte-positive days. This model can be used to evaluate the effect of drugs and vaccines on gametocyte dynamics, and lays the foundation for fulfilling the critical unmet need to evaluate transmission-blocking interventions against falciparum malaria for downstream selection and clinical development.Funding:Funded by PATH Malaria Vaccine Initiative (MVI).Clinical trial number:NCT02836002.
 
 ## Introduction
 
@@ -59,6 +59,206 @@ From a total of 49 screened candidate participants, 16 volunteers were included 
 
 **Figure 1.:** ECG = electrocardiography, BMI = body mass index, AST = aspartate aminotransferase, ALP = alkaline phosphatase
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig2-v2.jpg)
+
+**Figure 2.:** Black line represents 18S qPCR asexual parasitemia. Black dotted-line represents 18S qPCR after treatment 1. Red line represents Pfs25 qRT-PCR gametocytemia.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Black line represents 18S qPCR asexual parasitemia. Black dotted-line represents 18S qPCR after treatment 1. Red line represents Pfs25 qRT-PCR gametocytemia. Grey lines represent individual PCR curves of other participants of the same group.
+
+**Table 1.**
+ Baseline characteristics of the participants included in analysis.Table 1—source data 1.Source data for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>LD-SP/SP</th>
+      <th>LD-SP/PIP</th>
+      <th>LD-PIP/PIP</th>
+      <th>LD-PIP/SP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No. subjects</td>
+      <td></td>
+      <td>n = 4</td>
+      <td>n = 4</td>
+      <td>n = 4</td>
+      <td>n = 4</td>
+    </tr>
+    <tr>
+      <td>Treatment 1 (T1)</td>
+      <td></td>
+      <td>Sulfadoxine-pyrimethamine 500 mg/25 mg</td>
+      <td>Sulfadoxine-pyrimethamine 500 mg/25 mg</td>
+      <td>Piperaquine 480 mg</td>
+      <td>Piperaquine 480 mg</td>
+    </tr>
+    <tr>
+      <td>Treatment 2 (T2)</td>
+      <td></td>
+      <td>Sulfadoxine-pyrimethamine 1000 mg/50 mg</td>
+      <td>Piperaquine 960 mg</td>
+      <td>Piperaquine 960 mg</td>
+      <td>Sulfadoxine-pyrimethamine 1000 mg/50 mg</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>n (%)</td>
+      <td>2 (50%)</td>
+      <td>0 (0%)</td>
+      <td>1 (25%)</td>
+      <td>1 (25%)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>n (%)</td>
+      <td>2 (50%)</td>
+      <td>4 (100%)</td>
+      <td>3 (75%)</td>
+      <td>3 (75%)</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>Mean (range)</td>
+      <td>24.5 (21–29)</td>
+      <td>24 (21–28)</td>
+      <td>21.5 (20–24)</td>
+      <td>22.5 (20–27)</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>Mean (range)</td>
+      <td>21 (18–23)</td>
+      <td>22 (19–25)</td>
+      <td>24.5 (21–27)</td>
+      <td>26.5 (24–29)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Treatment and parasitological data per study group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>LD-SP/SP</th>
+      <th>LD-SP/PIP</th>
+      <th>LD-PIP/PIP</th>
+      <th>LD-PIP/SP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Time to T1 (days)</td>
+      <td>Median (range)</td>
+      <td>13 (9.3–12.8)</td>
+      <td>10.8 (0.8–11.8)</td>
+      <td>10.3 (10.3–12.3)</td>
+      <td>12.8 (12.3–14.3)</td>
+    </tr>
+    <tr>
+      <td>Time between T1-T2 (days)</td>
+      <td>Median (range)</td>
+      <td>9.1 (7.7–11.7)</td>
+      <td>10 (9.2–10.2)</td>
+      <td>4.7 (2–10.7)</td>
+      <td>2.5 (1.5–5.0)</td>
+    </tr>
+    <tr>
+      <td>Area under the curve (AUC)*</td>
+      <td>Median (range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asexual</td>
+      <td></td>
+      <td>6490 (1120–16337)</td>
+      <td>13280 (2773–43777)</td>
+      <td>14347 (5408–24898)</td>
+      <td>12747 (4572–82973)</td>
+    </tr>
+    <tr>
+      <td>Sexual</td>
+      <td></td>
+      <td>280 (27–3640)</td>
+      <td>271 (64–848)</td>
+      <td>784 (316–1274)</td>
+      <td>6624 (1515–10244)</td>
+    </tr>
+    <tr>
+      <td>Peak parasite density (Pf/mL)</td>
+      <td>Median (range)</td>
+      <td>6467 (1050–20261)</td>
+      <td>16376 (2590–50210)</td>
+      <td>11603 (2408–21565)</td>
+      <td>8491 (3976–63113)</td>
+    </tr>
+    <tr>
+      <td>Peak gametocyte density (gct/mL)</td>
+      <td>Median (range)</td>
+      <td>38 (11–368)</td>
+      <td>30 (13–101)</td>
+      <td>83 (46–99)</td>
+      <td>627 (199–1285)</td>
+    </tr>
+    <tr>
+      <td>Day of gametocyte detection after infection (days)</td>
+      <td>Mean (SD)</td>
+      <td>18.3 (1.0)</td>
+      <td>18.5 (1.0)</td>
+      <td>17.3 (1.5)</td>
+      <td>19.4 (1.3)</td>
+    </tr>
+    <tr>
+      <td>Time to gametocyte detection relative to first asexual parasites† (days)</td>
+      <td>Mean (SD)</td>
+      <td>10.5 (1.3)</td>
+      <td>11.5 (1.0)</td>
+      <td>10.1 (1.3)</td>
+      <td>10.1 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Proportion of days gametocyte positive (%)‡</td>
+      <td>Mean (SD)</td>
+      <td>27.4 (6.7)</td>
+      <td>35.9 (7.6)</td>
+      <td>51.4 (7.9)</td>
+      <td>48.3 (8.1)</td>
+    </tr>
+    <tr>
+      <td>Duration gametocytemia§ (days)</td>
+      <td>Median (range)</td>
+      <td>7.5 (1–24)</td>
+      <td>6 (2–14)</td>
+      <td>17 (12–25)</td>
+      <td>24.5 (17–25)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The area under the curve (AUC) represents the total parasite exposure over time (asexual- or sexual parasite load).†Time to gametocyte detection is calculated as the day of the detection of gametocytes (≥5 gct/mL) minus the day of first peak asexual parsitaemia.‡The proportion of gametocyte positive days is calculated as all days with ≥5 gct/mL by Pfs25-qRT-PCR divided by all days where Pfs25 qRT-PCR was performed.§Maximum number of consecutive days of Pfs25 qRT-PCR measured gametocytemia ≥5 gct/mL._
+
 All participants also developed gametocytemia as determined by Pfs25 qRT-PCR (Figure 2; Figure 3A; Figure 2—figure supplement 1). Gametocytes were first detected 8.5–12 days after the initial peak of asexual parasites with no statistically significant difference in time to gametocyte appearance between study arms (p=0.26) (Table 2). The median peak density of gametocytes was 83 gametocytes/mL (range 11–1285) when all study participants were considered. Peak gametocyte densities were higher in the study arm randomised to LD-PIP/SP, with a median of 627 gametocytes/mL (range of 199–1285), compared to 38 gametocytes/mL (range of 11–368), 30 gametocytes/mL (range of 13–101), 83 gametocytes/mL (range of 46–99), for arms LD-SP/SP, LD-SP/PIP, and LD-PIP/PIP, respectively (Figure 2; Figure 2—figure supplement 1; Table 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig3-v2.jpg)
@@ -69,9 +269,676 @@ Thirteen (81%, 13/16) participants showed gametocytes on at least 5 consecutive 
 
 Both female and male gametocytes were detected in 14/16 (88%) participants (Figure 4; Figure 4—figure supplement 1). Gametocyte sex-ratio’s and circulation times have to be interpreted with caution since they rely on two separate qRT-PCR assays with differences in assay sensitivity (Figure 5; Supplementary file 2, 3). On average 2.5 times as many female gametocytes were observed compared to male gametocytes per measured time-point (Figure 4; mean ratio 2.5 (SD = 2.5)). Combining all treatment arms, the best estimate of gametocyte half-life was 5.1 days (95% CI 4.1–6.1) for female gametocytes and 2.7 days (95% CI 1.5–3.9) for male gametocytes (Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig4-v2.jpg)
+
+**Figure 4.:** Dots represent individual gametocyte data. Circles and squares represent mean and error (SEM) of gametocytes per timepoint.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Curves are log gametocytes/mL. Recoded days are the days of gametocyte observations from 12 days after the last detection of asexual parasites until the end of study.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig5-v2.jpg)
+
+**Figure 5.:** Standard curves (Mean, SD) obtained using 10-fold dilutions of cultured gametocytes. The highest concentration was enumerated by two independent expert microscopists. The mean and standard deviation of 54, 28, 72 replicates of the standard curve during the study was determined for the Pfs 25-, PfMGET, and 18S target genes, respectively. For PfMGET, six points starting from 106 pure male gametocytes/mL were measured. 101 was positive in 6/28 replicates (black dot).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Standard curves (Mean, SD) obtained using serial dilutions of cultured gametocytes including low-density trendlines to determine the limit of detection (LOD) and limit of quantification (LOQ) of the Pfs25 qRT-PCR.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** All duplo- estimation data points of the study participants as measured by Pfs25 qRT PCR. All samples with ≥5 parasites/mL were duplo positive (190/190, 100%), and showed a correlation coefficient R2 of 0.94. Variation of samples < 5 parasites/mL was considerably larger and positivity could not be reliably estimated with 35/75 (47%) of samples that were positive in at least one qRT-PCR being single positives (R2 of 0.46).
+
 Gametocytes are produced from their asexual progenitors, and hence asexual parasite kinetics and gametocyte kinetics are related. The AUC of asexual parasitemia was statistically significantly associated with the AUC of gametocytemia (r2 = 0.31, p=0.026), as shown in Figure 3C. The mean time-window between the first asexual parasites and the first appearance of gametocytes was 10.6 (SD = 0.65) days, see Table 2. Membrane feeding experiments were performed as an exploratory objective, and confirmed infectivity of gametocytes in three mosquitoes from three study arms on days 25 (LD-PIP/SP and LD-SP/SP arms) and 31 (LD-SP/PIP arm) post-infection. Mean gametocyte densities at those time-points were 106 gametocytes/mL (SD = 175), and 28 gametocytes/mL (SD = 47), respectively. Expressed as a proportion of all examined mosquitoes, 0.0002% (3/14400) of mosquitoes became infected in these exploratory assessments. Possible and probable related adverse events after challenge infection are shown in Figure 6 and Table 3. The most frequently reported adverse events were fatigue, malaise, headache, fever, nausea, and chills. Grade three adverse events were reported in 14/16 (88%) participants, and were predominated by headache (n = 8), chills (n = 6), and nausea (n = 5). All possible and probable related adverse events resolved by the end of study. No serious adverse events occurred. The median number of adverse events was 20.5 per individual; the median number of adverse events with a grade three severity score was 1.5 per individual. There was no evidence for a difference between study arms in the occurrence of adverse events (p=0.49) or grade three adverse events (p=0.28).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig6-v2.jpg)
+
+**Figure 6.:** (A) Adverse events per study arm (B) Total no. of adverse events and time course.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31549/elife-31549-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** ALT = alanine aminotransferase, AST = aspartate aminotransferase, γGT = gamma glutamyl transferase, ALP = alkaline phosphatase, T1 = Treatment 1, T2 = Treatment 2.
+
+**Table 3.**
+ List of adverse events possibly or probably related to the trial.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Adverse events</th>
+      <th>Total</th>
+      <th colspan="3">LD-SP/SP</th>
+      <th colspan="3">LD-SP/PIP</th>
+      <th colspan="3">LD-PIP/PIP</th>
+      <th colspan="3">LD-PIP/SP</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Number of subjects</th>
+      <th>Number of subjects</th>
+      <th>Number of episodes</th>
+      <th>Mean duration in days (SD)</th>
+      <th>Number of subjects</th>
+      <th>Number of episodes</th>
+      <th>Mean duration in days (SD)</th>
+      <th>Number of subjects</th>
+      <th>Number of episodes</th>
+      <th>Mean duration in days (SD)</th>
+      <th>Number of subjects</th>
+      <th>Number of episodes</th>
+      <th>Mean duration in days (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fatigue, Malaise</td>
+      <td>16</td>
+      <td>4</td>
+      <td>10</td>
+      <td>3.6 (4.5)</td>
+      <td>4</td>
+      <td>15</td>
+      <td>2.0 (3.0)</td>
+      <td>4</td>
+      <td>10</td>
+      <td>2.9 (1.1)</td>
+      <td>4</td>
+      <td>6</td>
+      <td>6.8 (8.1)</td>
+    </tr>
+    <tr>
+      <td>Headache</td>
+      <td>15</td>
+      <td>3</td>
+      <td>12</td>
+      <td>1.0 (1.5)</td>
+      <td>4</td>
+      <td>25</td>
+      <td>1.2 (1.2)</td>
+      <td>4</td>
+      <td>17</td>
+      <td>1.3 (1.2)</td>
+      <td>4</td>
+      <td>21</td>
+      <td>1.6 (1.4))</td>
+    </tr>
+    <tr>
+      <td>Fever</td>
+      <td>15</td>
+      <td>4</td>
+      <td>9</td>
+      <td>0.4 (0.4)</td>
+      <td>4</td>
+      <td>10</td>
+      <td>0.3 (0.4)</td>
+      <td>3</td>
+      <td>11</td>
+      <td>0.4 (0.3)</td>
+      <td>4</td>
+      <td>13</td>
+      <td>0.7 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Nausea</td>
+      <td>14</td>
+      <td>4</td>
+      <td>12</td>
+      <td>0.6 (0.8)</td>
+      <td>4</td>
+      <td>15</td>
+      <td>1.1 (1.6)</td>
+      <td>3</td>
+      <td>8</td>
+      <td>1.2 (1.5)</td>
+      <td>3</td>
+      <td>10</td>
+      <td>0.7 (1.0)</td>
+    </tr>
+    <tr>
+      <td>Chills</td>
+      <td>14</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1.7 (1.0))</td>
+      <td>3</td>
+      <td>5</td>
+      <td>1.7 (2.0)</td>
+      <td>4</td>
+      <td>10</td>
+      <td>1.2 (1.3)</td>
+      <td>4</td>
+      <td>6</td>
+      <td>0.9 (1.1)</td>
+    </tr>
+    <tr>
+      <td>Myalgia</td>
+      <td>11</td>
+      <td>3</td>
+      <td>5</td>
+      <td>3.2 (3.3)</td>
+      <td>3</td>
+      <td>9</td>
+      <td>2.1 (1.9)</td>
+      <td>3</td>
+      <td>5</td>
+      <td>1.2 (1.0)</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2.2 (2.6)</td>
+    </tr>
+    <tr>
+      <td>Abdominal pain</td>
+      <td>10</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0.3 (0.2)</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.6 (0.9)</td>
+      <td>2</td>
+      <td>8</td>
+      <td>1.1 (1.3)</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1.6 (2.4)</td>
+    </tr>
+    <tr>
+      <td>Pruritis</td>
+      <td>6</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.6 (0.8)</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3.3 (0.5)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.3 (0.4)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Athralgia</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2.2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1.5 (1.8)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2</td>
+      <td>2</td>
+      <td>5.1 (3.6)</td>
+    </tr>
+    <tr>
+      <td>Diarrhoea</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.8</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.7 (2.1)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Diziness</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0.5 (0.7)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Reflux</td>
+      <td>2</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2.9 (1.8)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pyrosis</td>
+      <td>1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.6</td>
+    </tr>
+    <tr>
+      <td>Aspecific chest pain</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.0 (0.0)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Syncope</td>
+      <td>1</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Mouth ulcera</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Grade 3 adverse events</td>
+      <td colspan="13"></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>14</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Headache</td>
+      <td>8</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.3 (0.2)</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.6 (0.1)</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.1 (1.3)</td>
+    </tr>
+    <tr>
+      <td>Chills</td>
+      <td>6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.9</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.7 (2.0)</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.3 (0.3)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Nausea</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.3 (0.6)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.7</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fever</td>
+      <td>4</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0.5 (0.4)</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0.7 (0.5)</td>
+    </tr>
+    <tr>
+      <td>Fatigue, malaise</td>
+      <td>4</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.8 (0.4)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Abdominal pain</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
 Laboratory abnormalities during the study are shown in Table 4. Most prevalent abnormalities were elevated transaminases (ALT/AST) (n = 16), decreased lymphocytes (n = 15), decreased neutrophils (n = 13), and decreased platelets (n = 12). The only grade three laboratory abnormalities were elevated ALT (n = 8), and elevated AST (n = 7). 16/16 (100%) volunteers showed mild to severe ALT/AST elevations. 5/16 (31%) mild (grade 1); 3/16 (19%) moderate (grade 2), and 8/16 (50%) severe (grade 3) (up to 25 x ULN) ALT/AST elevations. These derangements were transient, and returned to baseline values within the normal range before the end of the study. A detailed overview of these liver function test derangements can be found in the supporting information (Figure 6—figure supplement 1). These unexpected safety findings were reported to the Safety Monitoring Committee (SMC) and CCMO, and thoroughly reviewed.
+
+**Table 4.**
+ Laboratory abnormalities per study arm.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">LD-SP/SP</th>
+      <th colspan="3">LD-SP/PIP</th>
+      <th colspan="3">LD-PIP/PIP</th>
+      <th colspan="3">LD-PIP/SP</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N (% of total) of grade 1</th>
+      <th>N (% of total) of grade 2</th>
+      <th>N (% of total) of grade 3</th>
+      <th>N (% of total) of grade 1</th>
+      <th>N (% of total) of grade 2</th>
+      <th>N (% of total) of grade 3</th>
+      <th>N (% of total) of grade 1</th>
+      <th>N (% of total) of grade 2</th>
+      <th>N (% of total) of grade 3</th>
+      <th>N (% of total) of grade 1</th>
+      <th>N (% of total) of grade 2</th>
+      <th>N (% of total) of grade 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any lab. abnormality</td>
+      <td>15 (14)</td>
+      <td>7 (7)</td>
+      <td>2 (2)</td>
+      <td>13 (12)</td>
+      <td>10 (9</td>
+      <td>3 (3)</td>
+      <td>16 (15)</td>
+      <td>9 (8)</td>
+      <td>2 (2)</td>
+      <td>13 (12)</td>
+      <td>8 (8)</td>
+      <td>8 (8)</td>
+    </tr>
+    <tr>
+      <td>Decreased hemoglobin</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1 (14)</td>
+      <td>2 (29)</td>
+      <td>0</td>
+      <td>1 (14)</td>
+      <td>1 (14)</td>
+      <td>0</td>
+      <td>1 (14)</td>
+      <td>1 (14)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Decreased WBC</td>
+      <td>1 (8)</td>
+      <td>3 (23)</td>
+      <td>0</td>
+      <td>1 (8)</td>
+      <td>2 (15)</td>
+      <td>0</td>
+      <td>1 (8)</td>
+      <td>2 (15)</td>
+      <td>0</td>
+      <td>1 (8)</td>
+      <td>2 (15)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Decreased neutrophils</td>
+      <td>3 (23)</td>
+      <td>1 (8)</td>
+      <td>0</td>
+      <td>2 (15)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3 (23)</td>
+      <td>1 (8)</td>
+      <td>0</td>
+      <td>3 (23)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Decreased lymphocytes</td>
+      <td>3 (20)</td>
+      <td>1 (7)</td>
+      <td>0</td>
+      <td>1 (7)</td>
+      <td>3 (20)</td>
+      <td>0</td>
+      <td>3 (20)</td>
+      <td>1 (7)</td>
+      <td>0</td>
+      <td>1 (7)</td>
+      <td>2 (13)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Decreased platelets</td>
+      <td>3 (25)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2 (17)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4 (33)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1 (8)</td>
+      <td>2 (17)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Elevated ALT</td>
+      <td>2 (13)</td>
+      <td>1 (6)</td>
+      <td>1 (6)</td>
+      <td>2 (13)</td>
+      <td>0</td>
+      <td>2 (13)</td>
+      <td>1 (6)</td>
+      <td>2 (13)</td>
+      <td>1 (6)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4 (25)</td>
+    </tr>
+    <tr>
+      <td>Elevated AST</td>
+      <td>1 (7)</td>
+      <td>1 (7)</td>
+      <td>1 (7)</td>
+      <td>2 (13)</td>
+      <td>1 (7)</td>
+      <td>1 (7)</td>
+      <td>1 (7)</td>
+      <td>2 (13)</td>
+      <td>1 (7)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4 (27)</td>
+    </tr>
+    <tr>
+      <td>Elevated yGT</td>
+      <td>1 (11)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1 (11)</td>
+      <td>1 (11)</td>
+      <td>0</td>
+      <td>2 (22)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3 (33)</td>
+      <td>1 (11)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Elevated ALP</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1 (33)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2 (67)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Elevated total bilirubin</td>
+      <td>1 (50)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1*(50)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Elevated creatinine</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1 (100)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Elevated BUN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Number of subjects with the highest grade reported for a laboratory abnormality. Grading based on WHO toxicity grading scale. No grade four abnormalities were reported. Lymphocytes (109/l) were graded based on grade 1: 0.9–0.6; grade 2: 0.3–0.5; grade 3:<0.3.Liver function tests were graded based on grade 1: 1.1.–2.5X ULN, grade 2: 2.6–5.0x ULN, grade 3:>5.0X ULN. WBC, white blood count; ALT, alanine aminotransferase; AST, aspartate aminotransferase; yGT, glutamyl transpeptidase; ALP, alkaline phosphatase;See Figure 6—figure supplement 1 for a detailed overview of liver function test abnormalities.BUN, blood urea nitrogen. T1, treatment 1; T2, treatment 2.*Subject showed elevated total bilirubin at baseline._
 
 ## Discussion
 
@@ -91,33 +958,33 @@ Here, we present a novel CHMI transmission model for P. falciparum that can be u
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 This single centre, open-label randomised trial was conducted at the Radboud university medical center (Radboudumc), Nijmegen, the Netherlands. Healthy malaria-naive male and female participants aged 18–35 years were recruited from June until November 2016. Screening included physical examination, electrocardiography (ECG), hematology and biochemistry parameters and serology for human immunodeficiency virus (HIV), hepatitis B and C, and asexual stages of P. falciparum. Informed consent was provided by all participants at screening visit. The central committee for research involving human subjects (CCMO), and the Western Institutional Review Board (WIRB) approved the protocol for this study (NL56659.091.16). The trial was conducted according to the principles outlined in the Declaration of Helsinki and Good Clinical Practice standards, and registered at ClinicalTrials.gov, identifier NCT02836002 (Supplementary file 4; Reporting Standard 1).
 
-## Randomisation
+### Randomisation
 
 A total of 16 participants were included in the analysis of this study. After inclusion, study participants were randomly allocated to one of the four different treatment arms (n = 4 per group) with low-dose (LD) of either piperaquine (PIP) or sulfadoxine-pyrimethamine (SP), followed by curative regimen of piperaquine or sulfadoxine-pyrimethamine upon recrudescence; (i) LD-SP/SP, (ii) LD-SP/PIP, (iii) LD-PIP/SP, or (iv) LD-PIP/SP. Randomisation was done by a computer-generated random number table (Microsoft Excel 2007, Redmond, WA).
 
-## Procedures
+### Procedures
 
 All study participants were subjected to a standard CHMI with five female Anopheles stephensi mosquitoes infected with the P. falciparum strain 3D7 (Sauerwein et al., 2011; Cheng et al., 1997). P. falciparum 3D7 asexual and sexual blood stages were cultured in a semi-automated culture system and used to infect mosquitoes by standard membrane feeding as described previously (Ponnudurai et al., 1986; Ponnudurai et al., 1989). The 3D7 lineage that was used in the current study is based on a 3D7 bank described in detail in Cheng et al. (1997). To examine molecular markers of drug resistance, we used available Illumina whole genome sequencing data (https://www.ebi.ac.uk/ena/data/view/PRJEB12838); aligning reads to the P. falciparum reference genome v3 (plasmoDB) with bowtie2 (sourceforge) and obtaining consensus sequences for dhps and dhfr genes with samtools. No mutations were identified in the dhfr gene; the only detected mutation was dhps A437G which, by itself, is not associated with sulfadoxine-pyrimethamine resistance (Staedke et al., 2004). Plasmepsin II/III duplication events are associated with piperaquine resistance (Witkowski et al., 2017) but were not observed although the sequence similarities with neighboring genes Plasmepsin I and IV suggest that unambiguous quantification may require more specific gene targeting. Importantly, piperaquine sensitivity of our 3D7 lineage was previously confirmed by in vivo experiments (Pasay et al., 2016). We conclude that the lineage used was sensitive to both sulfadoxine-pyrimethamine and piperaquine.
 
 Participants were monitored twice daily on an outpatient basis from day 6 after exposure to infected mosquitoes until malaria parasites were detected at a density of ≥5000 parasites per milliliter (Pf/mL) by qPCR or a positive thick blood smear, upon which they were treated with a subcurative dose of 500 mg/25 mg sulfadoxine-pyrimethamine (Roche, Boulogne-billancourt, FR) or 480 mg of piperaquine phosphate (PCI Pharma Services, Tredegar, UK). After the first treatment (T1), participants continued to visit the study center twice daily for another 4 days to monitor the initial clearance of parasitemia by qPCR, after which they were monitored once a day for recrudescence. On day 21 or upon parasite density reaching ≥1500 Pf/mL, participants received a second treatment (T2), consisting of 1000 mg/50 mg sulfadoxine-pyrimethamine or 960 mg of piperaquine phosphate. After the second treatment, participants were monitored daily for 3 days, then three times a week until final treatment with atovaquone/proguanil (Malarone) on day 42. Adverse events were recorded, and blood sampling was performed to monitor parasitemia and blood safety parameters. Symptoms of malaria were treated with acetaminophen up to 4000 mg daily, and nausea with metoclopramide up to 30 mg daily, if necessary.
 
-Parasite density was determined by quantitative PCR (qPCR) targeting the multicopy 18S rRNA gene (Hermsen et al., 2001); samples collected in the morning were processed immediately, evening samples 12 hr later. Thick blood smears were taken during evening visits, double-read and considered positive if two or more parasites were detected in 0.5µ µL (Laurens et al., 2012). The presence of gametocytes was monitored in samples from day 7.5 after challenge until end of study by quantitative reverse-transcriptase PCR (qRT-PCR) targeting female-specific Pfs25 mRNA and male specific PfMGET (Pf3D7_1469900) and using sex-specific trendlines (Stone et al., 2017; Pett et al., 2016). All samples with an estimated gametocyte density ≥5 gametocytes per mL (gametocytes/mL) were considered gametocyte positive. The duration of gametocyte carriage as an indicator of stable gametocyemia was defined as the maximum number of consecutive days with detectable gametocytemia above the threshold for detection. Direct Membrane Feedings Assays (DMFA) were performed as exploratory measures on days 21, 25 and 31 post-infection with ~300 mosquitoes per feed per participant (total of ~14,400 mosquitoes) (Bousema et al., 2013; Lensen et al., 1998; Ouédraogo AL et al., 2013). Mosquito infection status was determined on day 12 by circumsporozoite (CSP) ELISA(Stone et al., 2015) followed by qPCR confirmation of mosquitoes where the OD exceeded the mean +3 standard deviations of control mosquitoes (Graumans et al., 2017).
+Parasite density was determined by quantitative PCR (qPCR) targeting the multicopy 18S rRNA gene (Hermsen et al., 2001); samples collected in the morning were processed immediately, evening samples 12 hr later. Thick blood smears were taken during evening visits, double-read and considered positive if two or more parasites were detected in 0.5$µ$ µL (Laurens et al., 2012). The presence of gametocytes was monitored in samples from day 7.5 after challenge until end of study by quantitative reverse-transcriptase PCR (qRT-PCR) targeting female-specific Pfs25 mRNA and male specific PfMGET (Pf3D7_1469900) and using sex-specific trendlines (Stone et al., 2017; Pett et al., 2016). All samples with an estimated gametocyte density ≥5 gametocytes per mL (gametocytes/mL) were considered gametocyte positive. The duration of gametocyte carriage as an indicator of stable gametocyemia was defined as the maximum number of consecutive days with detectable gametocytemia above the threshold for detection. Direct Membrane Feedings Assays (DMFA) were performed as exploratory measures on days 21, 25 and 31 post-infection with ~300 mosquitoes per feed per participant (total of ~14,400 mosquitoes) (Bousema et al., 2013; Lensen et al., 1998; Ouédraogo AL et al., 2013). Mosquito infection status was determined on day 12 by circumsporozoite (CSP) ELISA(Stone et al., 2015) followed by qPCR confirmation of mosquitoes where the OD exceeded the mean +3 standard deviations of control mosquitoes (Graumans et al., 2017).
 
 Adverse events were recorded and graded by the research physician as mild (easily tolerated, grade 1), moderate (interfering with daily activity, grade 2) or severe (preventing daily activity, grade 3), and in the case of fever as mild (38.0–38.4°C), moderate (38.5–38.9,°C) or severe (≥39°C). Safety blood tests were performed daily, including full blood counts, LDH and highly sensitive troponin-T. Biochemistry tests including liver function test were assessed at screening, inclusion, 2 days after every treatment and at the end of study, and on additional days if considered relevant for clinical decision-making.
 
-## Pfs25 and PfMGET RNA quantification
+### Pfs25 and PfMGET RNA quantification
 
 For the quantification of the P. falciparum Pfs25 transcript levels total NA was RQ1 DNaseI treated according to the manufacturer’s protocol. 2 µL of DNaseI-treated material was run in a total volume of 25 µL of TaqMan RNA-to-Ct qRT-PCR reaction mixture (Applied Biosystems, Foster City, California). For the quantification of the P. falciparum male gametocyte enriched transcript (PfMGET), cDNA was synthesized from Total NA with the High Capacity cDNA Reverse Transcription Kit (Applied Biosystems). Samples were added in a 1: one ratio to the mastermix. 2 µL of cDNA was run in a total volume of 20 µL making use of the GoTaq qPCR Master Mix (Promega, Madison, Wisconsin). Male P. falciparum gametocytes were quantified using a standard curve of serially diluted StageV male gametocytes from the transgenic PfDynGFP/P47mCherry line (Lasonder et al., 2016). Detailed information on the validation and performance characteristics of the assays can be found in the supporting materials (Figure 5; Supplementary file 2, 3; Figure 5—figure supplement 1, 2).
 
-## Study outcome
+### Study outcome
 
 The primary study outcomes were the frequency and magnitude of adverse events, and the prevalence of gametocytes by Pfs25 qRT-PCR. The prevalence of gametocytes is the presence of female gametocytes as measured by qRT-PCR targeting female-specific Pfs25 mRNA at any of the twice daily measurements from day 6. Secondary outcomes were the peak density and time-point of peak density of male and female gametocytes, the AUC of gametocyte density, and assessment of the dynamics of gametocyte commitment, maturation and sex-ratio. The AUC of gametocyte density represents the total gametocyte exposure over time (gametocyte load). Assessment of gametocyte infectivity to Anopheles stephensi mosquitoes by DMFA was an exploratory study endpoint.
 
-## Statistical analysis
+### Statistical analysis
 
 The sample size was calculated based on preliminary data that > 95% of the participants would develop gametocytemia. Conservatively, we considered the approach unsuitable for gametocyte induction if <50% of individuals developed mature gametocytes. We, therefore, powered the trial to estimate a 90% confidence interval around the proportion of gametocytaemic individuals that excludes 50%. If eight individuals (allowing for one dropout per arm), and 6/7 or 7/7 of these individuals become gametocytaemic, we would be able to estimate this proportion with a lower limit of the 90% Wilson confidence interval ≥54.8% (the lower limit of the 95% confidence interval being 48.7%). Differences between study arms were assessed by comparing mean values using a one-way ANOVA or non-parametric equivalents.
 

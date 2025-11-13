@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States
-2. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-3. https://ror.org/01an7q238 School of Optometry, University of California, Berkeley Berkeley United States
+1. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. School of Optometry, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
@@ -33,37 +33,170 @@ Here we describe the spatiotemporal properties of stage 1 waves across the whole
 
 ## Results
 
-## Macroscope imaging reveals the spatiotemporal properties of stage 1 retinal waves
+### Macroscope imaging reveals the spatiotemporal properties of stage 1 retinal waves
 
 The mouse retina at E16–18 exhibits spontaneous correlated transients (Bansal et al., 2000; Syed et al., 2004), termed stage 1 retinal waves, despite the immature state of retinal circuits. At E16–18, several postmitotic cell types are present in the retina, including broad classes of retinal ganglion cells (RGCs) and amacrine cells (ACs), as well as proliferating progenitors which will go on to produce cells such as rods, bipolar cells, and Muller glia postnatally (Figure 1A; Cepko, 2014). By E17, there are no chemical synaptic structures (Hoon et al., 2014), though migrating SACs release ACh (Wong, 1995), and they, along with RGCs, express nicotinic acetylcholine receptors. One potential mode of cell–cell communication is via gap junction coupling between RGCs as well as between progenitor cells (Cook and Becker, 2009), which have been proposed to be the primary substrate mediating stage 1 waves (Catsicas et al., 1998; Syed et al., 2004; Wong et al., 1998).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematized cross section of an E16 retina when stage 1 waves begin. Green cells represent post-mitotic retinal ganglion cells (pRGCs). Magenta cells represent post-mitotic amacrine cells (pACs). Gray cells represent progenitor cells (PCs). GCL, ganglion cell layer; IPL, inner plexiform layer; INL, inner nuclear layer; NBCL, neuroblastic cell layer. (B) Top left: macroscope image of the baseline fluorescence of an E17 GCaMP6s retina. For subsequent analysis, the retina was divided into 11,750 10 µm × 10 µm (not drawn to scale) squares. Number of ROIs changed depending on retina size. Top: ∆F/F traces of calcium transients from four example 10 µm × 10 µm ROIs. Middle: rasterized calcium transients for all ROIs raster plot of calcium transients >50% ∆F/F. Bottom: percentage of ROIs active throughout the time course of the recording (1 hr). (C) Histogram showing the distribution of the percent of ROIs with inter-transient-intervals (ITIs) ranging from 0 to 200 s. (D) Left: heatmap showing the temporal progression and spread of four example waves. Scale depicts timescale of propagation; dark gray = start of propagation and white = end of propagation. Right: histogram showing the distribution of waves with an area ranging from 0 to 100% of the retina. (E) Summary plot of wave speeds. Red dot and line = mean and standard deviation, respectively. n = 30 waves, three retinas, three mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Histogram showing the distribution of wave sizes for WT and β2-nAChR-KO mice. This analysis was performed using a novel algorithm that segments any activity on retinas imaged under a microscope. This algorithm can detect calcium activity as small as a few co-active neighboring cells (log10(20 × 20 µm2) = 3) to continuous waves that propagate across the entire embryonic retina (log10(2500 × 2500 µm2) = 6.8).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Temporal progression of a large stage 1 wave in WT control conditions. The average wave speed was calculated by measuring the distance between two points: the first point was marked at a random location on the edge of area defined early in the wave event (yellow arrowhead; initiation spot); the second point was located at the wave edge that was parallel to the direction of propagation of the wavefront at the yellow arrowhead (red arrowhead). The speed was then calculated by dividing this distance by the propagation time of the wave.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Scatter plots and histogram showing the distribution of initiation sites for small non-propagating events (blue), small propagating waves (magenta), and large propagating waves (green) across four E18 Vglut2;GCaMP6s retinas. X-axes for the scatter plots and histograms = μm. Each recording was 1 hr. Y-axes for scatter plots = μm. Y-axes for histograms = proportion of initiation sites.
+
 To begin to understand how cholinergic signaling and gap junction coupling govern stage 1 waves, we first used calcium imaging to characterize their spatiotemporal properties. Retinas were isolated from E16–18 mice that were either bath loaded with the organic calcium dye Cal 520 or from mice expressing the genetically encoded calcium indicator GCaMP6s under the Vglut2 promoter (Vglut2;GCaMP6s). The earliest age at which we could detect reliable waves was E16 (Video 1). Stage 1 retinal waves were recorded on retinal whole mounts using a custom-built epifluorescent macroscope.
+
+![Video 1.](https://cdn.elifesciences.org/articles/81983/elife-81983-video1.mp4.jpg)
+
+**Video 1.:** Calcium imaging of stage 1 waves using the macroscope. Total field of view is 4.7 mm × 4.7 mm. Frame rate 10 Hz. Total length of movie represents 1 min of recording.
 
 To assess the spatiotemporal properties of stage 1 waves, we divided the retinal surface into small square ROIs (roughly 10 µm × 10 µm), about 7 µm apart. ΔF/F traces for each ROI were rasterized based on a detection algorithm that identified the timing of peak changes in fluorescence, which we call transients (Figure 1B). These rasterized transients were used for subsequent analysis. We first computed the time between spontaneous transients by measuring the inter-transient interval (ITI) for each ROI and found that the distribution peaked at around 80 s (Figure 1C). We also described the size of individual waves by computing the sum of transients that occurred simultaneously (i.e., percent of ROIs that participated in each wave). The distribution of wave sizes was broad, ranging from 6 to 90% of the retina, with a mean and standard deviation of 46 ± 21% (Figure 1D).
 
 In addition to propagating waves, we also observed small non-propagating calcium events (defined by transients present in a few neighboring ROIs that never propagated beyond 160 × 160 μm2; Video 2 and Figure 1—figure supplement 1). These events were like those described previously in Bansal et al., 2000. Note that these small non-propagating transients were included in the ITI but not in the analysis of propagating wave sizes.
 
+![Video 2.](https://cdn.elifesciences.org/articles/81983/elife-81983-video2.mp4.jpg)
+
+**Video 2.:** Calcium imaging of stage 1 waves using the macroscope. Total field of view is 4.7 mm × 4.7 mm. Frame rate 10 Hz. Total length of movie represents 15 s of recording. Yellow triangles depict small non-propagating events.
+
 Finally, we calculated the average propagation speed of stage 1 waves to range from 145 μm/s to 237 μm/s (average ± SD: 181 ± 24 μm/s; Figure 1E, Figure 1—figure supplement 2), similar to stage 2 waves we observed with an average speed of 177 μm/s ± 62 μm/s (see Table 1 for wave speed summary data). We also measured the distribution of stage 1 wave initiation sites in WT retinas and saw no evidence of an initiation site bias (Figure 1—figure supplement 3).
 
-## nAChRs and gap junctions are important for setting the frequency and area of stage 1 waves
+**Table 1.**
+ Stage 1 wave speeds in WT and β2-nAChR-KO, plus stage 2 wave speeds.Speeds recorded from individual waves. Summary data (µm/s) reported in Figure 3 with additional data to compare with speeds of stage 2 waves. Each row is an individual wave.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT stage 1 waves</th>
+      <th>B2-nAChR-KO stage 1 waves</th>
+      <th>Stage 2 waves</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>174.17</td>
+      <td>77.91</td>
+      <td>205.68</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>183.94</td>
+      <td>92.40</td>
+      <td>124.44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>192.19</td>
+      <td>98.19</td>
+      <td>153.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>162.26</td>
+      <td>117.34</td>
+      <td>120.47</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>189.84</td>
+      <td>128.52</td>
+      <td>158.59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>237.34</td>
+      <td>87.97</td>
+      <td>176.49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>179.24</td>
+      <td>92.40</td>
+      <td>263.86</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>165.68</td>
+      <td>92.06</td>
+      <td>156.09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>144.52</td>
+      <td>103.25</td>
+      <td>108.62</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>182.07</td>
+      <td>103.90</td>
+      <td>299.29</td>
+    </tr>
+    <tr>
+      <td>Avg</td>
+      <td>181.12</td>
+      <td>99.39</td>
+      <td>176.68</td>
+    </tr>
+    <tr>
+      <td>Stdev</td>
+      <td>24.39</td>
+      <td>14.72</td>
+      <td>62.62</td>
+    </tr>
+  </tbody>
+</table>
+
+### nAChRs and gap junctions are important for setting the frequency and area of stage 1 waves
 
 Previous work based on epifluorescent calcium imaging experiments performed in embryonic mice has shown that retinal waves, as defined by correlated changes in fluorescence, are reduced in frequency and size by curare, a competitive antagonist for nAChRs (Bansal et al., 2000). However, in roughly the equivalent developmental period in rabbit, blockade of all fast neurotransmitter receptor, including nAChRs, had no impact on wave frequency (Syed et al., 2004). Rather, waves in rabbit are blocked after the application of 18β-glycyrrhetinic acid, a gap junction antagonist (Syed et al., 2004).
 
 To determine the relative role of gap junctions and nAChRs on the frequency and area of stage 1 waves in mice, we used two-photon calcium imaging and pharmacology in retinas isolated from E16–18 mice bath loaded with Cal 520. To block gap junctions, we bath applied the gap junction antagonist meclofenamic acid (MFA, 50 μM), which reversibly blocks electrical coupling between retinal interneurons (Veruki and Hartveit, 2009) and developing ipRGCs (Caval-Holme et al., 2019). Application of the gap junction blocker MFA (50 μM) nearly abolished stage 1 waves, causing a significant reduction in frequency of waves and cell participation during waves (Figure 2A-C). We also found a small but significant reduction in wave amplitude, quantified as the average maximum response amplitude of all cells participating in individual waves (Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig2-v2.jpg)
+
+**Figure 2.:** (A) ∆F/F time course of spontaneous activity observed in the field of view (FOV) and raster plot of neuronal calcium transients in ACSF (control condition, top) and in the presence of meclofenamic acid (MFA) (bottom). (B) Summary plot showing frequency of waves in control and MFA. Red dots and lines = mean and standard deviation, respectively. Asterisks represents significant effects. n = 8 retinas (six mice); p=4.81e–4. (C) Percent cells that participate in retinal waves in control and MFA (50 µM) (p=3e–3). (D). Mean calcium response of the neurons that participate in waves in control and MFA (p=0.02). (E–H) Same as (A–D) for dihydro-β-erythroidine (DHβE, 8 μM). (F–H) (n = 6 retinas; six mice); (F) p=0.05; (G) p=4.58e–4; (H) p=0.09. (I, J) Same as (A, B) but with hexamethonium (Hex, 100 µM) following a baseline recording. n = 14 retinas (nine mice); p=1.48–2. (K–L) Same as (A, B) but with epibatidine (EPB, 10 nM) following a baseline recording. n = 5 retinas (five mice); p=4.8e–3. All statistical tests here are paired t-tests.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Example voltage-clamp recordings from presumptive retinal ganglion cells held at –70 mV in control solutions and after 10–20 min in 50 µM MFA. We observed periodic compound EPSCs that are likely representative of retinal wave events in both conditions (7/7 cells in control; 5/8 cells in MFA). (B) Summary data showed the impact of bath application of MFA on input resistance (left), voltage-gated sodium channels (middle), and potassium channels (right) activated by abrupt changes in the holding potential. The lines connect recordings that were paired – namely control and MFA application were conducted in the same cell. We observed a small increase in input resistance, consistent with a blockade of gap junctions. The variance in the voltage-gated sodium channel is consistent with the tremendous variability of ability of RGCs to fire action potentials at this young age, when different RGC types are maturing at different rates (Rothe et al., 1999). Statistical significance was assessed based on unpaired t-test. Methods for voltage-clamp recordings: Whole-mount retinas were held in the recording chamber by a harp and visualized using a Kohler illumination system mounted below the objective of the microscope. Presumptive RGCs were identified by their location in the immature ganglion cell layer. A hole was pierced in the inner limiting membrane of the retina using a glass recording pipette to access the RGC layer. RGCs were targeted under control of a micromanipulator (MP-225, Sutter Instruments). Recording pipettes were fabricated using a vertical puller (Narishige PC-10) and had a tip resistance of 6–7 MU. Internal solution for voltage-clamp recordings was, in mM: 116 K+D-gluconate, 6 KCl, 2 NaCl, 20 HEPES, 0.5 EGTA, 4 ATP-Mg2+, 0.3 GTP-Na3, 10 phosphocreatine-Na2. Data were acquired using Clampex 10.2 recording software with a Multiclamp 700A amplifier (Molecular Devices) and a Digidata 1322A digitizer (Axon Instruments). Voltage-clamp recordings were sampled at 10 kHz. Input resistance was computed by measuring the change in holding current in response to a –10 mV voltage change. Voltage-gated sodium currents were measured as the maximum inward current evoked by step depolarizations to between –30 or –20 mV. Potassium currents were measured as the sustained current after step depolarizations to –10 mV (Rothe et al., 1999).
+
 MFA has notable off-target effects including overall cell health after long exposures (Kuo et al., 2016). Previous studies from our lab show that at P6 MFA does not reduce light-induced calcium transients in M1-iRGCs, the ability of M4-ipRGCs to fire action potentials, nor the amplitude of depolarization-induced calcium transients (Caval-Holme et al., 2019). Note this is in contrast to another gap junction antagonist, carbenoxolone, which inhibits light responses in cultured ipRGCs (Bramley et al., 2011). Using whole-cell voltage-clamp recordings, we observed that MFA induced a significant decrease in voltage-activated potassium conductance (Figure 2—figure supplement 1). Note that a reduction in K+ conductance would increase excitability of cells and is therefore unlikely to be the reason for the observed decrease in wave activity in the presence of MFA. Hence, we conclude that MFA’s block on retinal waves is via their impact on gap junctions.
 
 We next assayed the impact on nAChR-antagonists on stage 1 waves. For stage 2 waves, both spontaneous calcium transients and compound excitatory synaptic events are completely blocked by bath application of dihydro-ß-erythroidine hydrobromide (DHβE, 8 μM) (Ford et al., 2012), which preferentially targets nAChRs containing α4 and β2-subunits (Harvey and Luetje, 1996; Harvey et al., 1996). We found that DHβE also dramatically reduced activity associated with stage 1 retinal waves (Figure 2E-H). However, in contrast to stage 2, some waves persisted in the presence of DHβE, but recruited fewer neurons and therefore had smaller areas (Figure 2G). Stage 1 waves were blocked by general nAChR antagonists: both hexamethonium (Figure 2I-J; Hex, 100 μM), a non-selective nAChR antagonist, and epibatidine (Figure 2K-L; EPB, 10 nM), an nAChR agonist that potently desensitizes all nAChRs (Corrie et al., 2020; Spang et al., 2000), blocked stage 1 wave events. Hence, both gap junctions and multiple subunit combinations of nAChRs mediate the initiation and propagation of stage 1 waves .
 
-## β2-nAChR knock-out mice exhibit perturbed stage 1 waves
+### β2-nAChR knock-out mice exhibit perturbed stage 1 waves
 
 Our results thus far indicate that both the frequency and area of stage 1 retinal waves are modulated by the activation of different subtypes of nAChRs as well as gap junction coupling. To further differentiate the role of different nAChRs, we characterized mice where the β2 subunit of the nicotinic acetylcholine receptor is genetically ablated (β2-nAChR-KO). β2-nAChR-KO mice have severely disrupted stage 2 retinal waves (Bansal et al., 2000; Rossi et al., 2001) and have served as a model system for assessing the role of stage 2 waves in driving different developmental events (Ackman et al., 2012; Burbridge et al., 2014).
 
 We observed that β2-nAChR-KO retinas exhibited stage 1 waves with different spatiotemporal properties than those of WT retinas (Figure 3A and B, see also Video 3). Specifically, β2-nAChR-KO retinas exhibited longer IEIs (Figure 3C and D), and individual waves propagated over smaller areas β2-nAChR-KO (Figure 3E and Figure 1—figure supplement 1). In sharp contrast to WT retina, waves in the β2-nAChR-KO retina were unaffected by the addition of Hex but showed a significant reduction in both area and frequency with the application of MFA (Figure 3D and E). These results suggest that in the absence of β2-nAChRs, gap junctions are the primary remaining component of the stage 1 wave generation mechanism. Furthermore, we found that stage 1 waves in the β2-nAChR-KO propagated at a significantly slower speed than those observed in WT mice (average ± SD: 99 ± 15 µm/s compared to 181 ± 24 µm/s for WT, n = 10 waves per condition, p=3.9073e–8) (Figure 3F), consistent with a distinct mechanism of propagation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig3-v2.jpg)
+
+**Figure 3.:** (A) Top: area plot summarizing the percentage of ROIs active throughout the time course of the recording; bottom: raster plots of ROI calcium transients across conditions. Black: WT control; magenta: β2-nAChR-KO control; teal: β2-nAChR-KO in Hex; yellow: β2-nAChR-KO in meclofenamic acid (MFA). (B) Heatmap showing the temporal progression of a propagating event observed using epifluorescent calcium imaging on the macroscope across experimental conditions. Scale depicts timescale of propagation; dark colors = start of propagation; white = end of propagation. (C) Histogram showing the distribution of the percent of ROIs with inter-transient-intervals (ITIs) ranging from 0 to 200 s. Bars represent summary data across all retinas. Black bars are same data as Figure 1C. Dots represent distributions for individual retinas. mean IEI/ROI in WT and β2-nAChR-KO retinas in control conditions. (D-E) Violin plots summarizing the distribution of mean IEI/ROI (D) and event area (E) across experimental conditions. n = 4 retinas, four mice (WT), n = 5 retinas, five mice (β2-nAChR-KO). Black bar = mean; red bar = median. **p<0.01, *p<0.05. One-way ANOVA, followed by Tukey–Kramer post hoc test . (F) Summary plot of wave speeds. WT are the same data as Figure 1E. Red dot and line = mean and standard deviation, respectively. n = 30 waves, three retinas, three mice per condition p=1.19e–6. Unpaired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Left: example field of view (FOV), whole-mount β2-nAChR-KO, on the macroscope. Red dashed square = 425 μm2 FOV, equivalent to two-photon FOV. Middle: magnified FOV. Right: normalized fluorescent traces showing Ca2+/wave activity and raster plot summarizing Ca2+/wave activity across 864 square ROIs (10 μm × 10 μm) on the macroscope. (B) Left: example FOV, whole-mount β2-nAChR-KO, on the two-photon microscope. Right: normalized fluorescent traces showing Ca2+/wave activity and raster plot summarizing Ca2+/wave activity across 864 square ROIs (10 μm × 10 μm) on the two-photon microscope. (C) Bar graph showing frequency of events on the macroscope and two-photon microscope in WT and β2-nAChR-KO. WT: n = 4 retinas (macroscope; average ± SD: 0.82 ± 0.03), n = 24 retinas (two-photon; average ± SD: 0.80 ± 0.34), p=0.92. β2-nAChR-KO: n = 5 retinas (macroscope; average ± SD: 0.48 ± 0.23), n = 9 retinas (two-photon; average ± SD: 0.38 ± 0.22), p=0.48.
+
+![Video 3.](https://cdn.elifesciences.org/articles/81983/elife-81983-video3.mp4.jpg)
+
+**Video 3.:** Calcium imaging of stage 1 waves in retinas isolated from β2-nAChR-KO mice using macroscope. Total field of view is 4.7 mm × 4.7 mm. Frame rate 10 Hz. Total length of movie represents 1 min of recording.
+
 Finally, we wanted to test whether the properties of stage 1 waves in WT or β2-nAChR-KO were influenced by light activation of ipRGCs via the 474 nm imaging light used to excite the calcium dye on the macroscope. ipRGCs have been shown to be responsive to 476 nm light during both embryonic and postnatal development (Emanuel and Do, 2015; Verweij et al., 2019). Previous studies have shown a light-dependent increase in the wave frequency of stage 2 waves in the β2-nAChR-KO during the first postnatal week (Kirkby and Feller, 2013). This light modulation of the spatiotemporal properties of β2-nAChR-KO during the first postnatal week depends on ipRGC melanopsin expression, as well as an increase in gap junction conductance between ipRGCs and other RGCs (Arroyo et al., 2016; Kirkby and Feller, 2013). However, we found no difference in the frequency of waves recorded using a two-photon microscope (based on 920 nm illumination) to those recorded on the macroscope and in either the WT or β2 nAChR-KO embryonic retinas (Figure 3 and Figure 3—figure supplement 1). Hence, we conclude that light activation of ipRGCs does not significantly influence the spatiotemporal properties of stage 1 retinal waves in either WT or the β2 nAChR-KO retinas. These results are consistent with the fact that light stimulation of the retina does not modulate the frequency of stage 2 waves and only begins to do so when conventional photoreceptors come online during stage 3 waves (Tiriac et al., 2018, Renna et al., 2011).
 
-## ipRGCs participate in stage 1 waves but their density and distribution are not altered in the β2-nAChRs-KO
+### ipRGCs participate in stage 1 waves but their density and distribution are not altered in the β2-nAChRs-KO
 
 RGCs undergo a period of dramatic cell death during the first two postnatal weeks of development, the majority occurring during the first postnatal week (Abed et al., 2022; Braunger et al., 2014). Whether this cell death process is regulated by retinal waves is unknown. We looked specifically at intrinsically photosensitive ganglion cells (ipRGCs) for several reasons. First, ipRGCs have completed proliferation (Lucas and Schmidt, 2019; McNeill et al., 2011) and appear to be fully differentiated by E16 (Shekhar et al., 2022; Whitney et al., 2022), the onset of stage 1 waves. ipRGCs undergo a period of dramatic cell death during the first two postnatal weeks of development, the majority occurring during the first postnatal week. Prevention of cell death profoundly disrupts several important developmental processes in the retina – including spacing of ipRGC somas as well as rod- and cone-mediated circadian entrainment through the activation of ipRGCs (Chen et al., 2013). However, the exact mechanism regulating ipRGC cell death is unknown. Here we assessed the impact of disrupting stage 1 and 2 waves on the density and distribution of ipRGCs.
 
@@ -71,23 +204,64 @@ We first set out to determine whether ipRGCs participate in stage 1 waves. To do
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig4-v2.jpg)
 
-**Figure 4.:** (A) Top: example field of view (FOV) where pixel intensity was averaged across all frames (712) to get representative image of Cal 520 bath-loaded RGCs. Pink dots correspond to four example RGCs and blue dots correspond to four example ipRGCs Bottom: same example FOV from the top image, with tdTom signal averaged across all frames. Blue dots the same as those in the top image. (B) Top: traces of the four example RGCs marked by the pink circles in (A). Bottom: traces of four example ipRGCs marked by the blue circles in (A). (C) Violin plot of percentage of waves each cell participated in. n = 20 retinas (13 mice); p=0.09. Unpaired t-test. (D) Violin plot of mean event amplitude/cell/FOV. n = 20 retinas (13 mice); p=0.06. Unpaired t-test. Black bar = mean; red bar = median.Figure 4—source data 1.
+**Figure 4.:** (A) Top: example field of view (FOV) where pixel intensity was averaged across all frames (712) to get representative image of Cal 520 bath-loaded RGCs. Pink dots correspond to four example RGCs and blue dots correspond to four example ipRGCs Bottom: same example FOV from the top image, with tdTom signal averaged across all frames. Blue dots the same as those in the top image. (B) Top: traces of the four example RGCs marked by the pink circles in (A). Bottom: traces of four example ipRGCs marked by the blue circles in (A). (C) Violin plot of percentage of waves each cell participated in. n = 20 retinas (13 mice); p=0.09. Unpaired t-test. (D) Violin plot of mean event amplitude/cell/FOV. n = 20 retinas (13 mice); p=0.06. Unpaired t-test. Black bar = mean; red bar = median.
 
 Since β2-nAChR-KO retinas exhibited reduced retinal activity during both embryonic and early postnatal development, we used this mouse as a model to determine whether normal stage 1 and 2 wave activity is important for regulating the density and distribution of ipRGCs. To this end, we isolated retinas from Opn4Cre/+;Ai9 and Opn4Cre/+;Ai9;(β2-nAChR-/-) at P1 and P7. These retinas express tdTomato in all melanopsin-expressing cells regardless of subtype. Retinas were imaged using the macroscope (Figure 5A and B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81983/elife-81983-fig5-v2.jpg)
 
-**Figure 5.:** (A) Example epifluorescence images of Opn4 (WT) retinas at P1 and P7. Scale bars are 500 μm; each field of view is 4.7 × 4.7 mm. (Cre/+;Ai9B) Representative 200 × 200 μm2 fields of view for P1 and P7 WT and ß2-nAChR-KO retina. (C) ipRGC densities across different ages and genotypes. P1 WT n = 9 retinas from six mice, P1 ß2-nAChR-KO, 9 retinas, seven mice; P7 WT n = 8 retinas from five mice; P7 ß2-nAChR-KO n = 8 retinas from eight mice. Means represented by blue bars. p=0.012. (D) Cumulative distribution function of nearest-neighbor distances (NND) and regularity index (mean NND/SD) from individual retinas, separated by genotype and age. Means represented by blue bars. p=0.020.Figure 5—source data 1.
+**Figure 5.:** (A) Example epifluorescence images of Opn4Cre/+;Ai9 (WT) retinas at P1 and P7. Scale bars are 500 μm; each field of view is 4.7 × 4.7 mm. (B) Representative 200 × 200 μm2 fields of view for P1 and P7 WT and ß2-nAChR-KO retina. (C) ipRGC densities across different ages and genotypes. P1 WT n = 9 retinas from six mice, P1 ß2-nAChR-KO, 9 retinas, seven mice; P7 WT n = 8 retinas from five mice; P7 ß2-nAChR-KO n = 8 retinas from eight mice. Means represented by blue bars. p=0.012. (D) Cumulative distribution function of nearest-neighbor distances (NND) and regularity index (mean NND/SD) from individual retinas, separated by genotype and age. Means represented by blue bars. p=0.020.
 
 We observed a dramatic decrease in the density of ipRGCs in WT retinas from P1 to P7 (Figure 5B and C; p=1.17 × 10–7), consistent with previous studies of ipRGCs (Chen et al., 2013) and which coincides with peak levels of RGC apoptosis, the primary cause of RGC death during development (Braunger et al., 2014; Young, 1984). We found that β2-nAChR-KO retinas exhibited the same density of ipRGCs at P1 as WT retinas, suggesting that the decrease in activity in stage 1 waves does not regulate ipRGC cell density. Like WTs, β2-nAChR-KO retinas also exhibited a decrease in the density of ipRGCs from P1 to P7 (p=4.99 × 10–11). At P7, we observed a small but significant increase in ipRGC densities at P7 in β2-nAChR-KO mice than in WT mice (568 ± 33 ipRGCs/µm2 in WT vs. 654 ± 78 ipRGCs/µm2 in β2-nAChR-KO, n = 8 retinas in each genotype). We cannot determine whether this small difference is due to the smaller size of retinas in β2-nAChR-KO retinas (Xu et al., 1999) or reflects a true increase in cell number. Overall, these data indicate that the cell death processes that regulate ipRGC density during the first postnatal week persist despite a significant reduction in wave activity.
 
 To determine the impact of this developmental decrease in cell density on the mosaic organization of ipRGCs, we computed the regularity index, which is equal to the average nearest-neighbor distance divided by the standard deviation. A large regularity index is associated with a non-random distribution of somas. Despite the expected increase in nearest-neighbor distance in WT and β2-nAChR-KOs retina between P1 and P7 (Figure 5D, see Table 2), there was only a small decrease in the regularity index. Interestingly, the measured mean regularity indices of 2.8 ± 0.12 (WT P1), 2.9 ± 0.16 (β2-nAChR-KO P1), 2.3 ± 0.13 (WT P7) and 2.6 ± 0.2 (β2-nAChR-KO P1) fall within the range of what would be predicted by a random distribution of cells with soma diameters between 7–10 μm (Keeley et al., 2020). Hence, the decrease in cell density does not appear make the soma organization more ordered. This might be expected since our analysis does not differentiate between ipRGC subtypes, each of which likely forms an independent retinal mosaic. Together these data indicate that although retinal waves provide a robust source of depolarization for embryonic and early postnatal ipRGCs, reducing wave activity does not significantly influence the processes that regulate their density or organization. Whether elimination of all spontaneous activity affects these processes remains to be determined.
 
+**Table 2.**
+ Nearest-neighbor distances (NND) and regularity indices for intrinsically photosensitive ganglion cells (ipRGCs) labeled in Opn4Cre/+;Ai9 mice.Data represented as averages ± SD. This data complements quantification in Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Median nearest-neighbor distance (µm)</th>
+      <th>Regularity index (NND/SD)</th>
+      <th>Number of retinas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT P1</td>
+      <td>11.59 ± 0.93</td>
+      <td>2.83 ± 0.12</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>β2 P1</td>
+      <td>11.51 ± 0.55</td>
+      <td>2.89 ± 0.16</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>WT P7</td>
+      <td>22.32 ± 0.58</td>
+      <td>2.33 ± 0.13</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>β2 P7</td>
+      <td>20.96 ± 1.40</td>
+      <td>2.55 ± 0.20</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
 We show that stage 1 retinal waves are a robust source of spontaneous activity in the embryonic retina. Stage 1 waves initiate throughout the retina, propagate over finite regions of varying size, and drive periodic depolarizations of neurons in the immature retinal GCL. In WT embryonic mice, stage 1 waves are abolished in the presence of general nAChR antagonists but persist, albeit with greatly reduced cell participation, in an nAChR antagonist that targets α4β2 containing nAChRs. In the presence of gap junction antagonists, the frequency and participation of cells within waves is also greatly diminished, though some waves still occur. We found that in retinas isolated from embryonic β2-nAChR-KO mice, which exhibit strongly reduced stage 2 wave frequency, waves persisted both in control conditions and in the presence of a general nAChR antagonist, though the area of waves is greatly diminished compared to WT. However, similar to what we observed in WT mice, the frequency of stage 1 waves in β2-nAChR-KO mice was greatly reduced in the presence of a gap junction antagonist. This more striking effect of the gap junction antagonist compared to the general nAChR antagonist indicates that the electrical synapses are sufficient to generate waves in β2-nAChR-KO mice. Finally, we showed that ipRGCs are depolarized by stage 1 waves, but that the decrease in density of ipRGCs across early postnatal development was unaffected in the β2-nAChR-KO mouse, indicating that the proliferation and cell death processes that influence ipRGC density are not dependent on normal patterns of wave activity.
 
-## Distinctions and similarities between stage 1 and stage 2 waves
+### Distinctions and similarities between stage 1 and stage 2 waves
 
 Our findings support a model in which there are both key differences and some similarities between stage 1 and 2 waves. The distribution of ITI is peaked at roughly 80 s for stage 1 waves that is a slightly longer interval than the peak interval reported for stage 2 (compare Figure 1C here to Figure 7D in Ford et al., 2012). Stage 1 and 2 waves also propagate at similar speeds. Key differences are that spontaneous activity between E16 and E18 included small non-propagating transients and propagating waves of a broad range of sizes. In contrast, after P1, there are no small non-propagating transients, and stage 2 waves mostly propagate over large areas of the retina, as observed both in vitro (Feller et al., 1997; Hilgen et al., 2017) and in vivo (Ackman et al., 2012). Note the spatiotemporal properties of stage 2 waves also vary dramatically across the developmental period spanning P1–P10 (Ge et al., 2021; Hilgen et al., 2017; Maccione et al., 2014) and therefore we are making these comparisons to the earlier stage 2 waves.
 
@@ -109,7 +283,7 @@ We propose a model for stage 1 waves consistent with these observations (Figure 
 
 **Figure 6.:** Wave initiation set by spontaneously depolarizing cholinergic amacrine cell/SAC, outlined in black, which release ACh and depolarizes neighboring cells, leading to the volumetric release of ACh. Retinal ganglion cells (RGCs) depolarized by nAChR activation (orange) via SAC-induced ACh release. Wave propagation set by RGC depolarization via gap junctional currents (orange) and volumetric ACh release.
 
-## Interactions between stage 1 waves and ipRGCs
+### Interactions between stage 1 waves and ipRGCs
 
 Early intrinsic light responses of ipRGCs have been implicated in several developmental events (Aranda and Schmidt, 2021), including retinal vascularization (Rao et al., 2013), maturation of circadian circuits (McNeill et al., 2011), and the maturation of the lens to prevent myopia (Chakraborty et al., 2022). Here, we report that ipRGCs are robustly activated by stage 1 waves, similar to our observations that ipRGCs participate in stage 2 waves (Arroyo et al., 2016; Caval-Holme et al., 2022; Kirkby and Feller, 2013). Thus, it is possible that depolarization via stage 1 waves may contribute to some of these ipRGC-dependent developmental processes.
 
@@ -117,31 +291,31 @@ To begin to explore to role of stage 1 and 2 waves in ipRGC development, we moni
 
 ## Methods
 
-## Animals
+### Animals
 
 All animal procedures were approved by the UC Berkeley Institutional Animal Care and Use Committee and conformed to the NIH Guide for the Care and Use of Laboratory Animals (AUP-2015-10-8080-2), the Public Health Service Policy, and the SFN Policy on the Use of Animals in Neuroscience Research. For our calcium dye-based calcium imaging, Opn4Cre/+;Ai9 mice were generated by crossing mice Opn4Cre/+ B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato) Hze/J mice (Ai9) mice (stock # 007909, Jackson Laboratory, Bar Harbor, ME) to the Opn4Cre/+ reporter mouse (T. Schmidt, Northwestern University, Evanston, IL). For our GCaMP6s-based calcium imaging, we generated Vglut2;GCaMP6s mice by crossing B6J.129S6(FVB)-Slc17a6tm2(cre)Lowl/MwarJ mice (stock # 028866) to B6J.Cg-Gt (ROSA)26Sortm96(CAG-GCaMP6s)Hze/MwarJ mice (stock # 028863). ipRGC density measurements were conducted on P1–P7 mice of either sex using Opn4Cre/+;Ai9.
 
 To obtain mice that were precisely at the correct embryonic age, we set up timed pregnancies and checked vaginal plugs every morning for 4 days after the animals were paired. This approach led to an uncertainty of age of ± 1 day. Hence, we grouped data across E16–18. Since we observed more variance within litters than across litters, we assume age was not a determining factor in our findings. We used the β2-nAChR-KO mouse line in which the β subunit of the nicotinic acetylcholine receptor is knocked out as a genetic model in which cholinergic retinal spontaneous activity is disrupted. For experiments regarding the influence of spontaneous retinal activity on the distribution of ipRGCs across the retina, we used β2-/-::Opn4Cre/+;Ai9 (β2-nAChR-KO) mice, generated by crossing β2-/- (A. Beaudet, Baylor University, Waco, TX) mice to Opn4Cre/+;Ai9 mice to label all melanopsin-expressing cells. All mouse lines are maintained on a C57BL/6 genetic background. All animals used for two-photon calcium imaging experiments and immunohistochemistry were housed in 12 hr day/night cycle rooms.
 
-## Retinal preparation
+### Retinal preparation
 
 On the day of the experiment, pregnant dams were deeply anesthetized via isoflurane inhalation and fetuses were harvested via a cesarean section. tdTomato-positive fetuses were identified using miner goggles (Biological Laboratory Equipment Services and Maintenance Ltd., model: GFsP-5). Fetuses were kept alive in 50 ml Falcon tubes filled with oxygenated (95% O2 5% CO2) ACSF (in mM, 119 NaCl, 2.5 KCl, 1.3 MgCl2, 1 K2HPO4, 26.2 NaHCO3, 11 D-glucose, and 2.5 CaCl2). Fetuses were then euthanized sequentially by decapitation. Eyes were immediately enucleated and retinas were dissected at room temperature in oxygenated ACSF under a dissecting microscope. Isolated retinas were mounted whole over a 1–2 mm2 hole in nitrocellulose filter paper (Millipore) with the photoreceptor layer side down and transferred to the recording chamber of a two-photon microscope for imaging. The whole-mount retinas were continuously perfused (3 ml/min) with oxygenated ACSF warmed to 32–34°C by a regulated inline heater (TC-344B, Warner Instruments) for the duration of the experiment. Additional retina pieces were kept in the dark at room temperature in ACSF bubbled with 95% O2, 5%CO2 until use (maximum 8 hr).
 
 For the calcium imaging experiments, retinas were bath loaded with the calcium indicator Cal 520 AM (AAT Bioquest) for 1–2 hr at 32°C.
 
-## Two-photon calcium imaging
+### Two-photon calcium imaging
 
 Two-photon fluorescence measurements were obtained with a modified movable objective microscope (MOM) (Sutter instruments, Novator, CA) and made using an Olympus ×60, 1.00 NA, LUMPlanFLN objective (Olympus America, Melville, NY) for single-cell resolution imaging (field of view, FOV: 203 × 203 µm) or a Nikon ×16, 0.80 NA, N16XLWD-PF objective (Nikon, Tokyo, Japan) for large FOV (850 × 850 um) imaging. Two-photon excitation was evoked with an ultrafast pulsed laser (Chameleon Ultra II; Coherent) tuned to 920 nm to image Cal520, GCaMP6s, and tdTomato. Laser power was set between 6.5 and 12 mW for imaging of Cal520 and tdTomato expression. The microscope system was controlled by the ScanImage software (https://www.scanimage.org/). Scan parameters were [pixels/line × lines/frame (frame rate in Hz)]: [256 × 256 (1.48 Hz)], at 2 ms/line. This MOM was equipped with a through-the-objective light stimulation and two detection channels for fluorescence imaging.
 
-## Epifluorescent macroscope calcium imaging
+### Epifluorescent macroscope calcium imaging
 
 Epifluorescent calcium imaging were obtained on a custom-built macroscope with an Olympus XLFLUOR4X/340 4× 0.28 NA objective, a Teledyne Kinetix camera. Collectively, this macroscope has 4.7 mm × 4.7 mm FOV, and 1.5 µm/pixel. All movies were taken at a 10 Hz frame rate and pixels were binned 4 × 4 bringing the resolution down to 5.9 µm/pixel, still maintaining single-cell resolution. Cal520 and GCaMP6s excitation was evoked with a 474 nm LED. A full description and building instructions can be found at https://github.com/Llamero/DIY_Epifluorescence_Macroscope, (Smith, 2022).
 
-## Initiation site measurements
+### Initiation site measurements
 
 Macroscope recordings of stage 1 events were used for the manual detection of initiation sites. Small non-propagating events were identified as local regions of correlated calcium activity with fixed areas and no wave fronts. For this analysis only, we separated waves into small and large events to see whether there were differences in initiation sites. Small propagating waves were identified as regions of correlated calcium activity with no fixed areas and with wave fronts covering up to 25% of the retina. Large propagating waves were identified as regions of correlated calcium activity with no fixed areas and with wave fronts covering up to 90% of the retina.
 
-## Pharmacology
+### Pharmacology
 
 We blocked gap junctions via application of the gap junction blocker MFA (50 µM, Sigma-Aldrich). We blocked the nicotinic acetylcholine signaling pathway via application of the broad nicotinic receptor antagonists hexamethonium (Hex, 100 µM, Sigma-Aldrich) and epibatidine (EPB, 10 nM, Sigma-Aldrich) as well as the specific antagonist dihydro-ß-erythroidine hydrobromide (DHßE, 8 µM, Sigma-Aldrich).
 
@@ -149,7 +323,7 @@ The following procedure was used for all pharmacology experiments: We recorded b
 
 To attempt to assay off-target effects of MFA, we used whole-cell voltage-clamp recordings to compare voltage-gated ion channels on RGCs in E16–18 retina but found inconsistent results (Figure 2—figure supplement 1). We associate this high variance with a rapid changing complement of ion channels during development and the quick washout of these conductances during whole-cell recordings.
 
-## Image analysis of population calcium imaging movies
+### Image analysis of population calcium imaging movies
 
 Movies were preprocessed for motion correction using a MATLAB code from the Flat Iron Institute (https://github.com/flatironinstitute/NoRMCorre; Pnevmatikakis, 2019). The baseline movie frame (F0) was computed by taking the temporal median projection of all the movie frames. Each movie frame (F) was normalized by dividing its difference from the baseline frame (F-F0) by the baseline frame ((F-F0)/F0) to produce a ΔF/F0 movie. For movies taken on the two-photon microscope, circular ROIs were drawn on all cells within the FOV. Additional circular ROIs were drawn for tdTomato+ cells. For movies taken on the macroscope a grid of 10 µm × 10 µm squares, which were spaced 1.5 pixels apart, were drawn over the whole surface of the retina using a custom FIJI macro. The ROIs and the ΔF/F0 movie were then imported into MATLAB for further analysis using custom algorithms. Traces for each FOV and ROI were computed as the mean value of the pixels enclosed by the ROI in each frame of the ΔF/F0 movie.
 
@@ -161,7 +335,7 @@ To determine whether neurons participate in waves in the two-photon calcium imag
 
 For a description of statistics used, please refer to the figure captions.
 
-## Analysis of ipRGC densities
+### Analysis of ipRGC densities
 
 To image the density of ipRGCs in fixed retinas, dissected retinas from P1 and P7 mice were fixed in 4% PFA for 30 min. The fixed retinas were subsequently mounted on a slide with vectashield and a cover slip, then imaged within an hour of mounting on the macroscope. For P1 retinas, Z-stacks were acquired by manually turning the focus knob.
 
@@ -171,6 +345,6 @@ Density was quantified by dividing the microscope field of view up into 200 ×20
 
 To quantify the nearest-neighbor distances, we used a custom-written MATLAB code that, for each ipRGCs, identified the closest neighbor using the shortest Euclidean distance.
 
-## Statistical tests
+### Statistical tests
 
 Details of statistical tests, number of replicates, and p values are indicated in the figures and figure captions. p values < 0.05 were considered significant.

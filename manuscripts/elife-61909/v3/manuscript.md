@@ -19,7 +19,7 @@
 
 ## Abstract
 
-The ability to control a behavioral task or stimulate neural activity based on animal behavior in real-time is an important tool for experimental neuroscientists. Ideally, such tools are noninvasive, low-latency, and provide interfaces to trigger external hardware based on posture. Recent advances in pose estimation with deep learning allows researchers to train deep neural networks to accurately quantify a wide variety of animal behaviors. Here, we provide a new DeepLabCut-Live! package that achieves low-latency real-time pose estimation (within 15 ms, >100 FPS), with an additional forward-prediction module that achieves zero-latency feedback, and a dynamic-cropping mode that allows for higher inference speeds. We also provide three options for using this tool with ease: (1) a stand-alone GUI (called DLC-Live! GUI ), and integration into (2) Bonsai, and (3) AutoPilot . Lastly, we benchmarked performance on a wide range of systems so that experimentalists can easily decide what hardware is required for their needs.
+The ability to control a behavioral task or stimulate neural activity based on animal behavior in real-time is an important tool for experimental neuroscientists. Ideally, such tools are noninvasive, low-latency, and provide interfaces to trigger external hardware based on posture. Recent advances in pose estimation with deep learning allows researchers to train deep neural networks to accurately quantify a wide variety of animal behaviors. Here, we provide a new DeepLabCut-Live! package that achieves low-latency real-time pose estimation (within 15 ms, >100 FPS), with an additional forward-prediction module that achieves zero-latency feedback, and a dynamic-cropping mode that allows for higher inference speeds. We also provide three options for using this tool with ease: (1) a stand-alone GUI (called DLC-Live! GUI), and integration into (2) Bonsai, and (3) AutoPilot. Lastly, we benchmarked performance on a wide range of systems so that experimentalists can easily decide what hardware is required for their needs.
 
 ## Introduction
 
@@ -35,13 +35,13 @@ Lastly, we developed a benchmarking suite to test the performance of these tools
 
 ## Results
 
-## Exporting DeepLabCut models
+### Exporting DeepLabCut models
 
 DeepLabCut enables the creation of tailored neuronal networks for pose estimation of user-defined bodyparts (Mathis et al., 2018b; Nath et al., 2019). We sought to make these neural networks, which are TensorFlow graphs, easily deployable by developing a model-export functionality. These customized DeepLabCut models can be created from standard trained DeepLabCut models by running the export_model function within DeepLabCut (see Materials and methods), or models can be downloaded from the new DeepLabCut Model Zoo.
 
 The model export module utilizes the protocol buffer format (.pb file). Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data (https://developers.google.com/protocol-buffers), which makes sharing models simple. Sharing a whole (DeepLabCut) project is not necessary, and an end-user can simply point to the protocol buffer file of a model to run inference on novel videos (online or offline). The flexibility offered by the protocol buffer format allowed us to integrate DeepLabCut into applications written in different languages: a new python package DeepLabCut-Live!, which facilitates loading DeepLabCut networks to run inference; and into Bonsai, which is written in C# and runs DeepLabCut inference using TensorFlowSharp (https://github.com/migueldeicaza/TensorFlowSharp).
 
-## A new python package to develop real-time pose estimation applications
+### A new python package to develop real-time pose estimation applications
 
 The DeepLabCut-Live! package provides a simple programming interface to load exported DeepLabCut models and perform pose estimation on single images (i.e., from a camera feed). By design, this package has minimal dependencies and can be easily installed even on integrated systems.
 
@@ -56,7 +56,7 @@ We also provide functionality within this package to test inference speed of Dee
 
 Ultimately, this package is meant to serve as a software development kit (SDK): to be used to easily integrate real-time pose estimation and closed-loop feedback into other software, either that we provide (described below), or integrated into other existing camera capture packages.
 
-## Inference speed using the DeepLabCut-Live! package
+### Inference speed using the DeepLabCut-Live! package
 
 Maximizing inference speed is of utmost importance to experiments that require real-time pose estimation. Some known factors that influence inference speed of DeepLabCut networks include (i) the size of the network (Mathis et al., 2020b; Mathis et al., 2020a), (ii) the size of images (Mathis and Warren, 2018), and (iii) the computational power of the hardware (Mathis and Warren, 2018).
 
@@ -64,29 +64,766 @@ The DeepLabCut-Live! package offers three convenient methods to increase inferen
 
 As expected, inference speeds were faster for the smaller DLC-MobileNetV2-0.35 networks than the larger DLC-ResNet-50v1 networks (Mathis et al., 2020a), faster with smaller images, and faster when using more powerful NVIDIA GPUs compared to smaller GPUs or CPUs (Figure 2). For example, with the NVIDIA Titan RTX GPU (24 GB) and the NVIDIA GeForce GTX 1080 GPU (8 GB), we achieved inference speeds of 152 ± 15 and 134 ± 9 frames per second on medium sized images (459 × 349 pixels) using the MobileNetV2-0.35 DeepLabCut network. Full results are presented in Figure 2, Figure 2—figure supplement 1, and Table 1.
 
-## Inference speed, size vs. accuracy
+![Figure 2.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig2-v3.jpg)
+
+**Figure 2.:** Solid lines are tests using DLC-MobileNetV2-0.35 networks and dashed lines using DLC-ResNet-50 networks. Shaded regions represent 10th-90th percentile of the distributions. N = 1000–10,000 observations per point.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Inference speed of different networks with different image sizes with different system configurations, using CPUs for inference. Solid lines are tests using DLC-MobileNetV2-0.35 networks and dashed lines using DLC-ResNet-50 networks. Shaded regions represent 10th-90th percentile of the distributions. N = 1000–10,000 observations per point.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Accuracy of DLC networks on resized images. Accuracy of DLC networks was tested on a range of image sizes (test image scale = 0.125–1.5, different panels). Lines indicate the root mean square error (RMSE, y-axis) between DLC predicted keypoints, using DLC networks trained with different scale parameters (x-axis), and human labels. Different colors are for errors on images in the training dataset (blue) vs. test dataset (red). Note, the RMSE is not reported as on the scaled image, but as would be in the original image (640 × 480) for comparability. .
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (Left) Inference speeds (in fps) for the full size images compared to dynamic cropping with 50, 25, or 10 pixel margin around the animals last position. Boxplots represent the 0.1, 0.3, 0.5, 0.7, and 0.9% quantiles of each distribution. (Right) The cumulative distribution of errors (i.e. the proportion of images with a smaller error) for dynamic tracking relative to full size images.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Inference speeds were not affected by the number of keypoints in a DeepLabCut network. Inference speeds were tested on a series of dog tracking networks with 1 (only the nose), 7 (the face), 13 (the upper body), or 20 (the entire body) keypoints. Inference speeds were tested on different image sizes (x-axis) and on different DeepLabCut architectures (different panels). Lines represent the median and the ribbon represents the 0.1–0.9 quantiles of the distribution of inference speeds.
+
+**Table 1.**
+ Inference speed using the DeepLabCut-live package.All values are mean ± standard deviation; Frames Per Second (FPS). See also: https://deeplabcut.github.io/DLC-inferencespeed-benchmark/.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Dog video</td>
+      <td colspan="7">Image size (pixels, w*h)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GPU type</td>
+      <td>DLC model</td>
+      <td>75 × 133</td>
+      <td>150 × 267</td>
+      <td>300 × 533</td>
+      <td>424 × 754</td>
+      <td>600 × 1067</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Intel Xeon CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>62 ± 5</td>
+      <td>31 ± 1</td>
+      <td>14 ± 0</td>
+      <td>8 ± 0</td>
+      <td>4 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(3.1 GHz)</td>
+      <td>ResNet-50</td>
+      <td>24 ± 1</td>
+      <td>11 ± 0</td>
+      <td>3 ± 0</td>
+      <td>2 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GeForce GTX 1080</td>
+      <td>MobileNetV2-0.35</td>
+      <td>256 ± 51</td>
+      <td>208 ± 46</td>
+      <td>124 ± 19</td>
+      <td>80 ± 9</td>
+      <td>43 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>121 ± 15</td>
+      <td>95 ± 13</td>
+      <td>52 ± 3</td>
+      <td>33 ± 1</td>
+      <td>19 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TITAN RTX</td>
+      <td>MobileNetV2-0.35</td>
+      <td>168 ± 29</td>
+      <td>144 ± 20</td>
+      <td>133 ± 14</td>
+      <td>115 ± 9</td>
+      <td>71 ± 3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>132 ± 14</td>
+      <td>113 ± 11</td>
+      <td>82 ± 4</td>
+      <td>56 ± 2</td>
+      <td>33 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla V100-SXM2-16GB</td>
+      <td>MobileNetV2-0.35</td>
+      <td>229 ± 13</td>
+      <td>189 ± 10</td>
+      <td>138 ± 11</td>
+      <td>105 ± 6</td>
+      <td>64 ± 3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>169 ± 7</td>
+      <td>133 ± 4</td>
+      <td>90 ± 4</td>
+      <td>65 ± 2</td>
+      <td>42 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla P100-PCIE-16GB</td>
+      <td>MobileNetV2-0.35</td>
+      <td>220 ± 12</td>
+      <td>179 ± 9</td>
+      <td>114 ± 7</td>
+      <td>77 ± 3</td>
+      <td>44 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>115 ± 3</td>
+      <td>91 ± 2</td>
+      <td>59 ± 2</td>
+      <td>45 ± 1</td>
+      <td>26 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla K80</td>
+      <td>MobileNetV2-0.35</td>
+      <td>118 ± 4</td>
+      <td>105 ± 3</td>
+      <td>64 ± 4</td>
+      <td>47 ± 2</td>
+      <td>26 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>58 ± 2</td>
+      <td>43 ± 1</td>
+      <td>21 ± 1</td>
+      <td>13 ± 0</td>
+      <td>7 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla T4</td>
+      <td>MobileNetV2-0.35</td>
+      <td>200 ± 17</td>
+      <td>166 ± 13</td>
+      <td>117 ± 10</td>
+      <td>86 ± 5</td>
+      <td>49 ± 2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>134 ± 8</td>
+      <td>99 ± 5</td>
+      <td>51 ± 3</td>
+      <td>33 ± 1</td>
+      <td>18 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quadro P400</td>
+      <td>MobileNetV2-0.35</td>
+      <td>105 ± 4</td>
+      <td>76 ± 2</td>
+      <td>31 ± 1</td>
+      <td>18 ± 0</td>
+      <td>10 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>24 ± 0</td>
+      <td>16 ± 0</td>
+      <td>6 ± 0</td>
+      <td>4 ± 0</td>
+      <td>2 ± 0</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>Intel Xeon Silver CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>28 ± 1</td>
+      <td>13 ± 0</td>
+      <td>6 ± 0</td>
+      <td>3 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.1 GHz)</td>
+      <td>ResNet-50</td>
+      <td>22 ± 1</td>
+      <td>9 ± 0</td>
+      <td>3 ± 0</td>
+      <td>2 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GeForce GTX 1080</td>
+      <td>MobileNetV2-0.35</td>
+      <td>142 ± 17</td>
+      <td>132 ± 14</td>
+      <td>98 ± 5</td>
+      <td>69 ± 3</td>
+      <td>41 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>with Max-Q Design</td>
+      <td>ResNet-50</td>
+      <td>87 ± 3</td>
+      <td>77 ± 3</td>
+      <td>48 ± 1</td>
+      <td>31 ± 1</td>
+      <td>18 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GeForce GTX 1080</td>
+      <td>MobileNetV2-0.35</td>
+      <td>128 ± 11</td>
+      <td>115 ± 10</td>
+      <td>94 ± 7</td>
+      <td>72 ± 3</td>
+      <td>41 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>101 ± 5</td>
+      <td>86 ± 4</td>
+      <td>49 ± 1</td>
+      <td>32 ± 1</td>
+      <td>18 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quadro P1000</td>
+      <td>MobileNetV2-0.35</td>
+      <td>120 ± 11</td>
+      <td>108 ± 10</td>
+      <td>58 ± 2</td>
+      <td>39 ± 1</td>
+      <td>20 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>54 ± 2</td>
+      <td>38 ± 1</td>
+      <td>17 ± 0</td>
+      <td>10 ± 0</td>
+      <td>5 ± 0</td>
+    </tr>
+    <tr>
+      <td>MacOS</td>
+      <td>Intel Core i5 CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>39 ± 5</td>
+      <td>20 ± 2</td>
+      <td>11 ± 1</td>
+      <td>7 ± 1</td>
+      <td>4 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.4 GHz)</td>
+      <td>ResNet-50</td>
+      <td>8 ± 1</td>
+      <td>4 ± 0</td>
+      <td>1 ± 0</td>
+      <td>1 ± 0</td>
+      <td>0 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intel Core i7 CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>117 ± 8</td>
+      <td>47 ± 3</td>
+      <td>15 ± 1</td>
+      <td>8 ± 0</td>
+      <td>4 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(3.5 GHz)</td>
+      <td>ResNet-50</td>
+      <td>29 ± 2</td>
+      <td>11 ± 1</td>
+      <td>3 ± 0</td>
+      <td>2 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intel Core i9 CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>126 ± 25</td>
+      <td>66 ± 13</td>
+      <td>19 ± 3</td>
+      <td>11 ± 1</td>
+      <td>6 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.4 GHz)</td>
+      <td>ResNet-50</td>
+      <td>31 ± 6</td>
+      <td>16 ± 2</td>
+      <td>6 ± 1</td>
+      <td>4 ± 0</td>
+      <td>2 ± 0</td>
+    </tr>
+    <tr>
+      <td>Jetson</td>
+      <td>Xavier</td>
+      <td>MobileNetV2-0.35</td>
+      <td>68 ± 8</td>
+      <td>60 ± 7</td>
+      <td>54 ± 4</td>
+      <td>41 ± 1</td>
+      <td>25 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>46 ± 1</td>
+      <td>34 ± 1</td>
+      <td>17 ± 0</td>
+      <td>12 ± 0</td>
+      <td>6 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tegra X2</td>
+      <td>MobileNetV2-0.35</td>
+      <td>37 ± 2</td>
+      <td>32 ± 2</td>
+      <td>13 ± 0</td>
+      <td>7 ± 0</td>
+      <td>4 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>18 ± 1</td>
+      <td>12 ± 0</td>
+      <td>5 ± 0</td>
+      <td>3 ± 0</td>
+      <td>2 ± 0</td>
+    </tr>
+    <tr>
+      <td>Mouse Video</td>
+      <td colspan="7">image size (pixels, w*h)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GPU Type</td>
+      <td>DLC Model</td>
+      <td>115 × 87</td>
+      <td>229 × 174</td>
+      <td>459 × 349</td>
+      <td>649 × 493</td>
+      <td>917 × 698</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Intel Xeon CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>61 ± 4</td>
+      <td>32 ± 1</td>
+      <td>15 ± 0</td>
+      <td>8 ± 0</td>
+      <td>4 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(3.1 GHz)</td>
+      <td>ResNet-50</td>
+      <td>28 ± 1</td>
+      <td>11 ± 0</td>
+      <td>4 ± 0</td>
+      <td>2 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GeForce GTX 1080</td>
+      <td>MobileNetV2-0.35</td>
+      <td>285 ± 24</td>
+      <td>209 ± 23</td>
+      <td>134 ± 9</td>
+      <td>86 ± 2</td>
+      <td>44 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>136 ± 8</td>
+      <td>106 ± 3</td>
+      <td>60 ± 1</td>
+      <td>35 ± 0</td>
+      <td>19 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TITAN RTX</td>
+      <td>MobileNetV2-0.35</td>
+      <td>169 ± 28</td>
+      <td>145 ± 19</td>
+      <td>152 ± 15</td>
+      <td>124 ± 9</td>
+      <td>78 ± 3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>140 ± 16</td>
+      <td>119 ± 11</td>
+      <td>92 ± 3</td>
+      <td>58 ± 2</td>
+      <td>35 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla V100-SXM2-16GB</td>
+      <td>MobileNetV2-0.35</td>
+      <td>260 ± 12</td>
+      <td>218 ± 9</td>
+      <td>180 ± 18</td>
+      <td>121 ± 8</td>
+      <td>68 ± 3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>184 ± 6</td>
+      <td>151 ± 5</td>
+      <td>111 ± 6</td>
+      <td>75 ± 3</td>
+      <td>47 ± 2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla P100-PCIE-16GB</td>
+      <td>MobileNetV2-0.35</td>
+      <td>246 ± 12</td>
+      <td>198 ± 7</td>
+      <td>138 ± 8</td>
+      <td>79 ± 3</td>
+      <td>46 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>128 ± 3</td>
+      <td>103 ± 2</td>
+      <td>70 ± 3</td>
+      <td>46 ± 1</td>
+      <td>28 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla K80</td>
+      <td>MobileNetV2-0.35</td>
+      <td>127 ± 6</td>
+      <td>119 ± 5</td>
+      <td>79 ± 4</td>
+      <td>52 ± 2</td>
+      <td>28 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>60 ± 2</td>
+      <td>45 ± 2</td>
+      <td>23 ± 1</td>
+      <td>13 ± 0</td>
+      <td>7 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tesla T4</td>
+      <td>MobileNetV2-0.35</td>
+      <td>242 ± 21</td>
+      <td>197 ± 16</td>
+      <td>156 ± 14</td>
+      <td>101 ± 6</td>
+      <td>56 ± 2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>141 ± 7</td>
+      <td>102 ± 5</td>
+      <td>57 ± 3</td>
+      <td>34 ± 1</td>
+      <td>20 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quadro P400</td>
+      <td>MobileNetV2-0.35</td>
+      <td>114 ± 5</td>
+      <td>84 ± 3</td>
+      <td>37 ± 1</td>
+      <td>20 ± 0</td>
+      <td>10 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>25 ± 0</td>
+      <td>16 ± 0</td>
+      <td>7 ± 0</td>
+      <td>4 ± 0</td>
+      <td>2 ± 0</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>Intel Xeon Silver CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>28 ± 1</td>
+      <td>14 ± 0</td>
+      <td>6 ± 0</td>
+      <td>3 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.1 GHz)</td>
+      <td>ResNet-50</td>
+      <td>23 ± 1</td>
+      <td>9 ± 0</td>
+      <td>3 ± 0</td>
+      <td>2 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GeForce GTX 1080</td>
+      <td>MobileNetV2-0.35</td>
+      <td>147 ± 17</td>
+      <td>136 ± 15</td>
+      <td>108 ± 6</td>
+      <td>73 ± 3</td>
+      <td>46 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>with Max-Q Design</td>
+      <td>ResNet-50</td>
+      <td>107 ± 5</td>
+      <td>93 ± 4</td>
+      <td>54 ± 2</td>
+      <td>32 ± 1</td>
+      <td>18 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GeForce GTX 1080</td>
+      <td>MobileNetV2-0.35</td>
+      <td>133 ± 15</td>
+      <td>119 ± 14</td>
+      <td>100 ± 9</td>
+      <td>77 ± 3</td>
+      <td>43 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>110 ± 5</td>
+      <td>94 ± 3</td>
+      <td>55 ± 1</td>
+      <td>34 ± 1</td>
+      <td>19 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quadro P1000</td>
+      <td>MobileNetV2-0.35</td>
+      <td>129 ± 13</td>
+      <td>115 ± 11</td>
+      <td>72 ± 3</td>
+      <td>43 ± 1</td>
+      <td>22 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>57 ± 2</td>
+      <td>41 ± 1</td>
+      <td>19 ± 0</td>
+      <td>10 ± 0</td>
+      <td>6 ± 0</td>
+    </tr>
+    <tr>
+      <td>MacOS</td>
+      <td>Intel Core i5 CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>42 ± 5</td>
+      <td>22 ± 2</td>
+      <td>12 ± 1</td>
+      <td>7 ± 1</td>
+      <td>4 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.4 GHz)</td>
+      <td>ResNet-50</td>
+      <td>9 ± 1</td>
+      <td>4 ± 0</td>
+      <td>2 ± 0</td>
+      <td>1 ± 0</td>
+      <td>0 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intel Core i7 CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>127 ± 10</td>
+      <td>48 ± 3</td>
+      <td>16 ± 1</td>
+      <td>9 ± 1</td>
+      <td>4 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(3.5 GHz)</td>
+      <td>ResNet-50</td>
+      <td>30 ± 3</td>
+      <td>10 ± 2</td>
+      <td>3 ± 0</td>
+      <td>2 ± 0</td>
+      <td>1 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intel Core i9 CPU</td>
+      <td>MobileNetV2-0.35</td>
+      <td>178 ± 15</td>
+      <td>74 ± 16</td>
+      <td>19 ± 3</td>
+      <td>10 ± 1</td>
+      <td>6 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.4 GHz)</td>
+      <td>ResNet-50</td>
+      <td>35 ± 8</td>
+      <td>14 ± 2</td>
+      <td>6 ± 1</td>
+      <td>4 ± 0</td>
+      <td>2 ± 0</td>
+    </tr>
+    <tr>
+      <td>Jetson</td>
+      <td>Xavier</td>
+      <td>MobileNetV2-0.35</td>
+      <td>79 ± 9</td>
+      <td>68 ± 9</td>
+      <td>59 ± 5</td>
+      <td>44 ± 2</td>
+      <td>27 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>46 ± 2</td>
+      <td>36 ± 1</td>
+      <td>19 ± 0</td>
+      <td>12 ± 0</td>
+      <td>7 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TX2</td>
+      <td>MobileNetV2-0.35</td>
+      <td>39 ± 2</td>
+      <td>30 ± 2</td>
+      <td>18 ± 1</td>
+      <td>9 ± 0</td>
+      <td>5 ± 0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ResNet-50</td>
+      <td>19 ± 1</td>
+      <td>11 ± 0</td>
+      <td>6 ± 0</td>
+      <td>4 ± 0</td>
+      <td>2 ± 0</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Inference speed, size vs. accuracy
 
 Although reducing the size of images increases inference speed, it may result in reduced accuracy in tracking if the resolution of the downsized image is too small to make accurate predictions, or if the network is not trained to perform inference on smaller images. To test the accuracy of DeepLabCut tracking on downsized images, we trained three DeepLabCut networks on a mouse open-field dataset that has been previously used for DLC accuracy benchmarking (640 × 480 pixels; Mathis et al., 2018b). Each network was trained on a different range of image sizes: the default (50–125% of the raw image size), a wider range of image sizes (10–125%), or only on smaller images (10–50%). This was achieved by altering the training scale parameters (‘scale_jitter_lo’ and ‘scale_jitter_hi’) in the DeepLabCut training configuration file. We then tested the accuracy of predictions of each network on test images with scale of 12.5–150%, and calculated the root mean square error (RMSE) of predictions compared to human labels (n = 571 images; 50% for train/test) for each test image scale on each network (Figure 2—figure supplement 2). Note, that pixel units is the natural metric for reporting accuracy, but in this dataset the width of length of the mouse was 115.7 ± 0.6 (mean ± s.e.m., n = 571) to give the reader a sense of scale.
 
 Naturally, the best accuracy was achieved on the largest images using networks trained on large images (RMSE = 2.90 pixels at image scale = 150% and training scales of 50–125% or 10–125%). However, there was only minimal loss in accuracy when downsizing images to a scale of 25% of the image size, and these errors were mitigated by using a network trained specifically on smaller images (RMSE = 7.59 pixels at 25% scale with training scale = 10–50%; Figure 2—figure supplement 2). However, for the smallest images tested (test scale = 12.5%), accuracy suffered on all networks (RMSE = 26.99–70.92; all RMSE reported as would be in the original image (640 × 480) for comparability), likely because the mouse is only about 10 pixels long. Overall, this highlights that downsizing does not strongly impact the accuracy (assuming the animal remains a reasonable size) and that this is an easy way to increase inference speeds.
 
-## Dynamic cropping: increased speed without effects on accuracy
+#### Dynamic cropping: increased speed without effects on accuracy
 
 Another alternative is to not to downsize, but rather to process only the portion of the image that contains the animal. Our approach, which we call ‘dynamic cropping’, can provide a speed boost (Figure 2—figure supplement 3). Thereby the relevant part of the image is selected by taking advantage of predictions from the previous frame, together with the intuition that the animal cannot move arbitrarily fast. Specifically, this method analyzes the portion of the full-size image by calculating a bounding box based on all the body parts from the previous image as well as a margin (note that if the animal is ‘lost’ in the next frame, the full frame is automatically analyzed). This method captures the animal at it’s full resolution (the animal covers the same number of pixels as in the full image), but still runs inference on a smaller image, increasing inference speed.
 
 To examine the effect of dynamic cropping on both inference speed and tracking accuracy, we performed benchmarking on the open source open-field dataset (n = 2330 images Mathis et al., 2018a; Mathis et al., 2018b). We recorded the DeepLabCut estimated keypoints and inference speed when analyzing the full image (640 × 480 pixels) and when dynamically cropping with a margin of 50, 25, or 10 pixels around the bounding box enclosing all bodyparts from the animal. Dynamic cropping increased inference speed by 75% (full image: 59.6 ± 2.08; dynamic-50: 103.7 ± 19.8; dynamic-25: 110.8 ± 17.6; dynamic-10: 108 ± 25.2; mean ± standard deviation), and resulted in only a small change in tracking performance, with RMSEs of 4.4, 5.5, and 20.6 for dynamic cropping with 50, 25, and 10 pixel margins, respectively (Figure 2—figure supplement 3). Qualitatively all predictions apart from the margin 10, looked comparable.
 
-## Number of keypoints does not affect inference speed
+#### Number of keypoints does not affect inference speed
 
 Lastly, we tested whether the number of keypoints in the DeepLabCut network affected inference speeds. We modified the dog network to track only the dog’s nose (one keypoint), the face (seven keypoints), the upper body (13 keypoints), or the entire body (20 keypoints). Similar to the benchmarking experiments above, we trained a series of networks with both DLC-ResNet-50v1 and DLC-MobileNetV2-0.35 networks and tested inference speeds on a range of image sizes. The number of keypoints in the model had no effect on inference speed (Figure 2—figure supplement 4).
 
 Moreover, we created a website that we aim to continuously update with user input: one can simply export the results of these tests (which capture information about the hardware automatically), and submit the results on GitHub https://github.com/DeepLabCut/DLC-inferencespeed-benchmark. These results, in addition to the extensive testing we provide below, then become a community resource for considerations with regard to GPUs and experimental design https://deeplabcut.github.io/DLC-inferencespeed-benchmark/.
 
-## User-interfaces for real-time feedback
+### User-interfaces for real-time feedback
 
 In addition to the DeepLabCut-live package that serves as a SDK for experimenters to write custom real-time pose estimation applications, we provide three methods for conducting experiments that use DeepLabCut to provide closed-loop feedback that do not require users to write any additional code: a standalone user interface called the DLC-Live! GUI (DLG), and by integrating DeepLabCut into popular existing experimental control softwares Autopilot (Saunders and Wehr, 2019) and Bonsai (Lopes et al., 2015).
 
-## DLC-Live! GUI
+### DLC-Live! GUI
 
 The DLG provides a graphical user interface that simultaneously controls capturing data from a camera (many camera types are supported, see Materials and methods), recording videos, and performing pose estimation and closed-loop feedback using the DeepLabCut-Live! package. To allow users to both record video and perform pose estimation at the fastest possible rates, these processes run in parallel. Thus, video data can be acquired from a camera without delays imposed by pose estimation, and pose estimation will not be delayed by the time spent acquiring images and saving video data to the hard drive. However, if pose estimation is slower than the frame rate, which will occur if acquiring images at a high frame rate with large images, or if inference is run on less powerful GPUs users can see Figure 2 and Table 1 as a guide, image acquisition and pose estimation will not be synchronized. If these processes are not synchronized (i.e. pose estimation is not run as soon as the image is captured), then the delay from image acquisition to obtain the pose consists not only of the time it takes DeepLabCut to perform pose estimation, but also the time from when the image was captured until pose estimation begins. Thus, running image acquisition and pose estimation asynchronously allows users to run pose estimation at the fastest possible rate, but it does not minimize the time from when an image was captured until the pose is measured. If users prefer to minimize the delay from image acquisition to pose estimation, the pose estimation process can wait for the next image to be acquired. In this case, each time a pose is estimated, the pose estimation process will choose to skip a frame to get back in sync with the image acquisition process. Waiting to get back in sync with the pose estimation process will result in a slower rate of pose estimation, and, over the course of an entire experiment, fewer estimated poses. DLG offers users a choice of which mode they prefer: an ‘Optimize Rate’ mode, in which pose estimation is performed at the maximum possible rate, but there may be delays from the time an image was captured to the time pose estimation begins, and an ‘Optimize Latency’ mode, in which the pose estimation process waits for a new image to be acquired, minimizing the delay from the time an image was acquired to when the pose becomes available.
 
@@ -104,7 +841,143 @@ Lastly, the delay from acquiring an image in which the tongue was detected until
 
 **Figure 3.:** Top: A lick sequence from the test video with eight keypoints measured using the DLC-Live!-GUI (using Windows/GeForce GTX 1080 GPU). Image timestamps are presented in the bottom-left corner of each image. Bottom: Latency from image acquisition to obtaining the pose, from the last pose to the current pose, and from image acquisition when the mouse’s tongue was detected to turning on an LED. The width of the violin plots indicate the probability density – the likelihood of observing a given value on the y-axis.
 
-## DeepLabCut models in Bonsai
+**Table 2.**
+ Performance of the DeepLabCut-live-GUI (DLG).F-P = delay from image acquisition to pose estimation; F-L = delay from image acquisition to turning on the LED; FPS (DLG) = Rate of pose estimation (in frames per second) in the DeepLabCut-live-GUI; FPS (DLCLive) = Rate of pose estimation for the same exact configuration directly tested using the DeepLabCut-live benchmarking tool. All values are mean ± STD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th colspan="4">176 × 137 pixels</th>
+      <th colspan="4">352 × 274 pixels</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th rowspan="2">GPU type</th>
+      <th rowspan="2">Mode</th>
+      <th>F-P</th>
+      <th>F-L</th>
+      <th>FPS</th>
+      <th>FPS</th>
+      <th>F-P</th>
+      <th>F-L</th>
+      <th>FPS</th>
+      <th>FPS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>(ms)</td>
+      <td>(ms)</td>
+      <td>(DLG)</td>
+      <td>(DLCLive)</td>
+      <td>(ms)</td>
+      <td>(ms)</td>
+      <td>(DLG)</td>
+      <td>(DLCLive)</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>GeForce GTX 1080</td>
+      <td>Latency</td>
+      <td>10 ± 1</td>
+      <td>11 ± 1</td>
+      <td>56 ± 16</td>
+      <td rowspan="2">123 ± 16</td>
+      <td>12 ± 2</td>
+      <td>12 ± 2</td>
+      <td>48 ± 6</td>
+      <td rowspan="2">112 ± 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rate</td>
+      <td>15 ± 3</td>
+      <td>16 ± 3</td>
+      <td>91 ± 11</td>
+      <td>16 ± 3</td>
+      <td>17 ± 3</td>
+      <td>84 ± 9</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Quadro P400</td>
+      <td>Latency</td>
+      <td>11 ± 1</td>
+      <td>11 ± 1</td>
+      <td>63 ± 19</td>
+      <td rowspan="2">105 ± 4</td>
+      <td>20 ± 1</td>
+      <td>21 ± 1</td>
+      <td>42 ± 7</td>
+      <td rowspan="2">52 ± 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rate</td>
+      <td>15 ± 3</td>
+      <td>16 ± 3</td>
+      <td>93 ± 9</td>
+      <td>27 ± 4</td>
+      <td>27 ± 4</td>
+      <td>47 ± 4</td>
+    </tr>
+    <tr>
+      <td>Jetson</td>
+      <td>Xavier</td>
+      <td>Latency</td>
+      <td>13 ± 1</td>
+      <td>14 ± 1</td>
+      <td>48 ± 3</td>
+      <td rowspan="2">84 ± 7</td>
+      <td>13 ± 1</td>
+      <td>14 ± 1</td>
+      <td>48 ± 3</td>
+      <td rowspan="2">73 ± 9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rate</td>
+      <td>18 ± 3</td>
+      <td>18 ± 3</td>
+      <td>75 ± 5</td>
+      <td>18 ± 3</td>
+      <td>18 ± 3</td>
+      <td>74 ± 5</td>
+    </tr>
+    <tr>
+      <td>MacOS</td>
+      <td>CPU</td>
+      <td>Latency</td>
+      <td>29 ± 5</td>
+      <td>29 ± 4</td>
+      <td>29 ± 5</td>
+      <td rowspan="2">62 ± 6</td>
+      <td>79 ± 19</td>
+      <td>79 ± 22</td>
+      <td>12 ± 2</td>
+      <td rowspan="2">21 ± 3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Rate</td>
+      <td>34 ± 7</td>
+      <td>35 ± 6</td>
+      <td>35 ± 4</td>
+      <td>91 ± 19</td>
+      <td>92 ± 22</td>
+      <td>12 ± 2</td>
+    </tr>
+  </tbody>
+</table>
+
+### DeepLabCut models in Bonsai
 
 Bonsai is a widely used visual language for reactive programming, real-time behavior tracking, synchronization of multiple data streams and closed-loop experiments (Lopes et al., 2015). It is written in C#, thus provides an alternative environment for running real-time DeepLabCut and also test the performance of native TensorFlow inference outside of a Python environment. We developed equivalent performance benchmarks for testing our newly developed Bonsai-DLC plugin https://github.com/bonsai-rx/deeplabcut. This plugin allows loading of the DeepLabCut exported .pb files directly in Bonsai.
 
@@ -118,11 +991,50 @@ We then took advantage of the built-in OpenGL shader support in Bonsai to assess
 
 Overall, we found that as the number of particle interactions increased the GPU load, there was a corresponding drop in DLC inference speeds (Figure 4). The effects of load on inference were non-linear and mostly negligible until the load on the GPU approached 50%, then started to drop as more and more compute banks were scheduled and used, likely due to on-chip memory bottlenecks in the GPU compute units (Hill et al., 2017). Nevertheless, as long as GPU load remained balanced, there was no obvious effect on inference speeds, suggesting that in many cases, it would be possible to combine closed-loop accelerated DeepLabCut-live inference with real-time visual environments running on the same GPU (Lopes et al., 2020).
 
-## Distributed DeepLabCut with Autopilot
+### Distributed DeepLabCut with Autopilot
 
 Autopilot is a Python framework designed to overcome problems of simultaneously collecting multiple streams of data by distributing different data streams over a swarm of networked computers (Saunders and Wehr, 2019). Its distributed design could be highly advantageous for naturalistic experiments that require large numbers of cameras and GPUs operating in parallel.
 
 Thus, we integrated DeepLabCut-Live! into Autopilot in a new module of composable data transformation objects. As a proof of concept, we implemented the minimal distributed case of two computers: one Raspberry Pi capturing images and one NVIDIA Jetson TX2, an affordable embedded system with an onboard GPU, processing them (see Materials and methods, Table 3).
+
+**Table 3.**
+ Materials for Autopilot tests.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Raspberry Pi</td>
+      <td>4, 2 GB</td>
+    </tr>
+    <tr>
+      <td>Autopilot</td>
+      <td>0.3.0-2f31e78</td>
+    </tr>
+    <tr>
+      <td>Jetson</td>
+      <td>TX2 Developer Kit</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>FLIR CM3-U3-13Y3M-CS</td>
+    </tr>
+    <tr>
+      <td>Spinnaker SDK</td>
+      <td>2.0.0.147</td>
+    </tr>
+    <tr>
+      <td>Oscilloscope</td>
+      <td>Tektronix TDS 2004B</td>
+    </tr>
+  </tbody>
+</table>
 
 We tested the performance of this system by measuring the end-to-end latency of a simple light detection task (Figure 4A). The Raspberry Pi lit an LED while capturing and streaming frames to the Jetson. Autopilot’s networking modules stream arrays by compressing them on-the-fly with blosc (Alted et al., 2020) and routing them through a series of ‘nodes’– in this case, each frame passed through four networking nodes in each direction. The Jetson then processed the frames in a chain of Transforms that extracted poses from frames using DLC-Live! (DLC-MobileNetV2-0.35) and returned a Boolean flag indicating whether the LED was illuminated. True triggers were sent back to the Raspberry Pi which emitted a TTL voltage pulse to the LED on receipt.
 
@@ -138,9 +1050,21 @@ Latency at different image sizes were primarily influenced by the relatively slo
 
 Autopilot, of course, imposes its own latency in distributing frame capture and processing across multiple computers. Subtracting latency that is intrinsic to the experiment (frame acquisition asynchrony and GPU speed), Autopilot has approximately 25 ms of overhead (median of latency - mean DeepLabCut inference time - 1/2 inter-frame interval = 25.4 ms, IQR = [14.7–37.9], n = 4500). Autopilot’s networking modules take 6.9 ms on average to route a message one-way (Saunders and Wehr, 2019) and have been designed for high-throughput rather than low-latency (message batching, on-the-fly compression).
 
-## Real-time feedback based on posture
+### Real-time feedback based on posture
 
 Lastly, to demonstrate practical usability of triggering a TTL signal based on posture, we performed an experiment using DLG on a Jetson Xavier in which an LED was turned on when a dog performed a ‘rearing’ movement (raised forelimbs in the air, standing on only hindlimbs; Figure 6). First, a DeepLabCut network based on the ResNet-50 architecture (DLC-ResNet-50v1) was trained to track 20 keypoints on the face, body, forelimbs, and hindlimbs of a dog (see Materials and methods). Next, the Jetson Xavier running DLG was used to record the dog as she performed a series of ‘rearing’ movements in response to verbal commands, with treats given periodically by an experimenter. Video was recorded using a Logitech C270 webcam, with 640 × 480 pixel images at 30 FPS. Inference was run on images downsized by 50% (320 × 240 pixels), using the ‘Optimize Rate’ mode in DLG.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig6-v3.jpg)
+
+**Figure 6.:** (A) Diagram of the workflow for the dog feedback experiment. Image acquisition and pose estimation were controlled by the DLC-Live! GUI. A DeepLabCut-live Processor was used to detect ‘rearing’ postures based on the likelihood and y-coordinate of the withers and elbows and turn an LED on or off accordingly. (B) An example jump sequence with LED status, labeled with keypoints measured offline using the DeepLabCut-live benchmarking tool. The images are cropped for visibility. (C) Example trajectories of the withers and elbows, locked to one jump sequence. Larger, transparent points represent the true trajectories – trajectories measured offline, from each image in the video. The smaller opaque points represent trajectories measured in real-time, in which the time of each point reflects the delay from image acquisition to pose estimation, with and without the Kalman filter forward prediction. Without forward prediction, estimated trajectories are somewhat delayed from the true trajectories. With the Kalman filter forward prediction, trajectories are less accurate but less delayed when keypoints exhibit rapid changes in position, such as during a rearing movement. (D) The delay from the time the dog first exhibited a rearing posture (from postures measured offline) to the time the LED was turned on or off. Each point represents a single instance of the detection of a transition to a rearing posture or out of a rearing posture.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (Top) Images at different stages of the mouse reach, with the blue circle indicating the DeepLabCut predicted coordinate of the back of the hand. (Bottom, Left) The trajectory of the x-coordinate of the back of the mouse’s hand during the reach (pictured above). The thicker gray line indicates the trajectory measured by DLC. the blue line indicates the DLC trajectory as if it was delayed by 1–7 frames (indicated by the panel label on the right). The red line indicates the trajectory as if it were predicted 1–7 frames into the future by the Kalman filter predictor. (Bottom, Right) The cumulative distribution of errors for the back of the hand coordinate as if it were delayed 1–7 frames (blue) or as if it were predicted 1–7 frames into the future using the Kalman filter predictor (red) compared to the DLC estimated back of the hand coordinate. The dotted vertical line indicates the error at which the KF distribution intersects with the delayed pose distribution (i.e. the point at which there are more frames with this pixel error or smaller for the Kalman filter distribution than the delayed pose distribution). .
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/61909/elife-61909-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** The Kalman filter predictor reduces errors when predicting up to three frames into the future in a mouse open-field task. (Top) Images at different stages of the mouse open field video, with the blue circle indicating the DeepLabCut predicted coordinate of the snout. (Bottom Left) The trajectory of the x-coordinate of the mouse’s snout. The thicker gray line indicates the trajectory measured by DLC. The blue line indicates the DLC trajectory as if it was delayed by 1–7 frames (indicated by the panel label on the right). The red line indicates the trajectory as if it were predicted 1–7 frames into the future by the Kalman filter predictor. (Bottom Right) The cumulative distribution of errors for the back of the hand coordinate as if it were delayed 1–7 frames (blue) or as if it were predicted 1–7 frames into the future using the Kalman filter predictor (red) compared to the DLC estimated snout coordinate. The dotted vertical line indicates the error at which the two distributions intersect (i.e. the point at which there are more frames with this pixel error or smaller for either the delayed pose or the Kalman filter distribution).
 
 The dog was considered to be in a ‘rearing’ posture if the vertical position of at least one of the elbows was above the vertical position of the withers (between the shoulder blades). Similar to the mouse experiment, a Processor was used to detect ‘rearing’ postures and control an LED via communication with a Teensy micro-controller (Figure 6A). The LED was turned on upon the first image in which a ‘rearing’ posture was detected, and subsequently turned off upon the first image in which the dog was not in a ‘rearing’ posture (for a fully closed-loop stimulus) (Figure 6B).
 
@@ -162,13 +1086,13 @@ The same analysis of the cumulative distribution of errors was performed on the 
 
 Providing event-triggered feedback in real-time is one of the strongest tools in neuroscience. From closed-loop optogenetic feedback to behaviorally-triggered virtual reality, some of the largest insights from systems neuroscience have come through causally testing the relationship of behavior to the brain (Kim et al., 2017; Chettih and Harvey, 2019; Jazayeri and Afraz, 2017). Although tools for probing both the brain and for measuring behavior have become more advanced, there is still the need for such tools to be able to seamlessly interact. Here, we aimed to provide a system that can provide real-time feedback based on advances in deep learning-based pose estimation. We provide new computational tools to do so with high speeds and low latency, as well as a a full benchmarking test suite (and related website: https://deeplabcut.github.io/DLC-inferencespeed-benchmark/), which we hope enables ever more sophisticated experimental science.
 
-## Related work
+### Related work
 
 DeepLabCut and related animal pose estimation tools reviewed in Mathis and Mathis, 2020 have become available starting in early 2018, and two groups have built tools around real-time applications with DeepLabCut. However, the reported speed and latencies are slower than what we were able to achieve here: Forys et al., 2020 achieved latencies of 30 ms using top-end GPUs, and this delay increases if the frame acquisition rate is increased beyond 100 frames per second. Schweihoff et al., 2019 also achieve latencies of 30 ms from frame acquisition to detecting a behavior of interest (round-trip frame to LED equivalent was not reported). We report a 2–3x reduction in latency (11 ms/16 ms from frame to LED in the ‘Optimize Latency’/‘Optimize Rate’ mode of DLG) on a system that uses a less powerful GPU (Windows/GeForce GTX 1080) compared to these studies, and equivalent performance (29 ms/35 ms from frame to LED in the ‘Optimize Latency’/‘Optimize Rate’ mode of DLG) on a conventional laptop (MacBook Pro with Intel Core-i7 CPU). Although we believe such tools can use the advances presented in this work to achieve higher frame rates and lower latencies, our new real-time approach provides an improvement in portability, speed, and latency.
 
 Animal pose estimation toolboxes, like DeepLabCut, have all benefited from advances in human pose estimation research. Although the goals do diverge (reviewed in Mathis and Mathis, 2020) in terms of required speed, the ability to create tailored networks, and accuracy requirements, competitions on human pose estimation benchmarks such as PoseTrack (Andriluka et al., 2018) and COCO Lin et al., 2014 have advanced computer vision. Several human pose estimation systems have real-time options: OpenPose (Cao et al., 2017) has a real-time hand/face pose tracker available, and PifPaf (Kreiss et al., 2019) reaches about 10 Hz on COCO (depending on the backbone; Lin et al., 2014). On the challenging multi-human PoseTrack benchmark (Andriluka et al., 2018), LightTrack (Ning et al., 2020) reaches less than 1 Hz. However, recent work achieves 3D multi-human pose estimation at remarkable frame rates (Chen et al., 2020), in particular they report an astonishing 154 FPS for 12 cameras with four people in the frame. State of the art face detection frameworks, based on optimized architectures such as BlazeFace can achieve remarkable speeds of >500 FPS on GPUs of cell phones (Bazarevsky et al., 2019). The novel (currently unpublished) multi-animal version of DeepLabCut can also be used for feedback, and depending on the situation, tens of FPS for real-time applications should be possible. Inference speed can also be improved by various techniques such as network pruning, layer decomposition, weight discretization or feed-forward efficient convolutions (Zhang et al., 2019). Plus, the ability to forward predict postures, as we show here, can be used to compensate for hardware delays.
 
-## Scalability, affordability, and integration into existing pipelines
+### Scalability, affordability, and integration into existing pipelines
 
 If neuroscience’s embrace of studying the brain in its natural context of complex, contingent, and open-ended behavior (Krakauer et al., 2017; Mathis and Mathis, 2020; Datta et al., 2019) is smashing the champagne on a long-delayed voyage, the technical complexity of the experiments is the grim spectre of the sea. Markerless tracking has already enabled a qualitatively new class of data-dense behavioral experiments, but the heroism required to simultaneously record natural behavior from 62 cameras (Bala et al., 2020) or electrophysiology from 65,000 electrodes (Sahasrabuddhe et al., 2020), or integrate dozens of heterogeneous custom-built components (Findley et al., 2020) hints that a central challenge facing neuroscience is scale.
 
@@ -180,25 +1104,25 @@ Thus, here we presented options that span ultra-high performance (at GPU cost) 
 
 In addition to integration with Autopilot, we introduce integration of real-time DeepLabCut into Bonsai, a popular framework that is already integrated into many popular neuroscience tools such as OpenEphys (Siegle et al., 2017), BonVision (Lopes et al., 2020), and BpodDeveloped by Sanworks: https://www.sanworks.io/index.php. The merger of DeepLabCut and Bonsai could therefore allow for real-time posture tracking with sophisticated neural feedback with hardware such as NeuroPixels, Miniscopes, and beyond. For example, Bonsai and the newly released BonVision toolkit (Lopes et al., 2020) are tools for providing real-time virtual reality (VR) feedback to animals. Here, we tested the capacity for a single GPU laptop system to run Bonsai-DLC with another computational load akin to what is needed for VR, making this an accessible tool for systems neuroscientists wanting to drive stimuli based on potentially sophisticated postures or movements. Furthermore, in our real-time dog-feedback utilizing the forward-prediction mode we utilized both posture and kinematics (velocity) to be able to achieve sub-zero latency.
 
-## Sharing DLC models
+### Sharing DLC models
 
 With this paper we also introduce three new features within the core DeepLabCut ecosystem. One, the ability to easily export trained models without the need to share project folders (as previously); two, the ability to load these models into other frameworks aside from DLC-specific tools; and three, we modified the code-base to allow for frozen-networks. These three features are not only useful for real-time applications, but if users want to share models more globally (as we are doing with the DeepLabCut Model Zoo Project Mathis et al., 2020b), or have a easy-install lightweight DeepLabCut package on dedicated machines for running inference, this is an attractive option. For example, the protocol buffer files are system and framework agnostic: they are easy to load into TensorFlow (Abadi et al., 2016) wrappers based on C++, Python, etc. This is exactly the path we pursued for Bonsai’s plugin via a C#-TensorFlow wrapperTensorFlowSharp: (https://github.com/migueldeicaza/TensorFlowSharp). Moreover, this package can be utilized even in offline modes where batch processing is desirable for very large speed gains (Mathis and Warren, 2018; Mathis et al., 2020a).
 
-## Benchmarking DeepLabCut-Live! GUI performance
+### Benchmarking DeepLabCut-Live! GUI performance
 
 Importantly, the DLG benchmarking data described above was collected by loading images from a pre-recorded video at the same rate that these images were originally acquired, effectively simulating the process of streaming video from a camera in real-time. This method was chosen for a few reasons. First, using a pre-recorded video standardized the benchmarking procedure across different platforms – it would have been extremely difficult to record nearly identical videos across different machines. Second, reading images from the video in the same exact manner that a video would be recorded from a physical camera in real-time exposed the same delays in DLG as we would observe when recording from a camera in real-time. The delays that we report all occur after images are acquired. Thus, if the desired frame rate is achieved, these benchmarking results are exactly equivalent to the delays that would be observed when recording from a physical camera. The possible frame rates that can be achieved by different cameras are documented by camera manufacturers and the software used to record video from cameras relies on libraries provided by camera manufacturers (e.g. The Imaging Source, The Imaging Source Libraries on GitHub: https://github.com/TheImagingSource) or well-documented open-source projects (e.g. OpenCV,https://github.com/opencv/opencv and Aravis, https://github.com/AravisProject/aravis; Bradski, 2000). Additional delays caused by recording from a physical camera are therefore specific to each individual type of camera. Finally, by making the videos used for benchmarking available, DLG users can replicate our benchmarking results, which will help in diagnosing the cause of performance issues.
 
-## Choosing to optimize pose estimation rate vs. latency in the DeepLabCut-Live! GUI
+### Choosing to optimize pose estimation rate vs. latency in the DeepLabCut-Live! GUI
 
 When using DLG, if the rate of pose estimation is faster than the rate of image acquisition, pose estimation will run in synchrony with image acquisition (in parallel processes). However, if the pose estimation rate is slower than image acquisition, users have the choice of one of two modes: ‘Optimize Rate’ or ‘Optimize Latency.’ In the ‘Optimize Rate’ mode, pose estimation and image acquisition are run asynchronously, such that pose estimation is run continuously, but pose estimation for a given image does not necessarily start at the time the image was acquired. Thus, the delay from image acquisition to pose estimation is the delay from image acquisition until pose estimation begins plus the time it takes DeepLabCut to estimate the pose. In the ‘Optimize Latency’ mode, after the pose estimation process finishes estimating the pose on one frame, it will wait for the next frame to be acquired to get back in sync with the image acquisition process. This minimizes the latency from image acquisition to pose estimation, but results in a slower rate of pose estimation, and over course of an experiment, fewer estimated poses. Because the ‘Optimize Latency’ mode results in fewer estimated poses, we recommend using the ‘Optimize Rate’ mode for most applications. However, the ‘Optimize Latency’ mode may be particularly useful for applications in which it is critical to minimize delays to the greatest extent possible and it is not critical to sometimes miss the behavior of interest. One example in which a user may consider the ‘Optimize Latency’ mode could be to stimulate neural activity upon detecting the tongue exiting the mouth on a subset of trials in a licking task. In this example, the ‘Optimize Latency’ mode will provide a lower latency from when the image that detects the tongue was acquired to stimulating neural activity. However, the slower pose estimation rate will make it more likely that, on a given trial, the first image in which the tongue is present will not be analyzed. Thus, the ‘Optimize Latency’ mode will provide the shortest delays on trials in which this image is analyzed, and users can choose to not stimulate on trials in which the tongue is too far outside of the mouth when it is first detected by DeepLabCut.
 
-## Feedback on posture and beyond
+### Feedback on posture and beyond
 
-To demonstrate the feedback capabilities of DeepLabCut-Live! we performed a set of experiments where an LED was triggered based on the confidence of the DeepLabCut network and the posture of the animal (here a dog, but as is DeepLabCut, this package is animal and object agnostic). We also provide a forward-prediction mode that utilizes temporal information via kinematics to predict future postural states. In this demonstration, we used a Kalman filter to obtain filtered estimates of the position, velocity and acceleration at each point in time, and then predicted the future pose via quadratic approximation. We chose this approach for a few reasons: (i) it requires no prior training and (ii) with simple modifications to 2–3 parameters, it can be tailored to suit a wide variety of applications. Since this approach relies on a quadratic approximation, it can be successfully applied to any application for which it is possible to obtain accurate measurements of the position, velocity, and acceleration using a Kalman filter. The performance of the Kalman filter predictor will critically depend on how far into the future one wishes to predict and how quickly the velocity and acceleration of the keypoints change. If there are substantial changes in the velocity or acceleration of the keypoint within the time frame of the forward prediction, or if a keypoint is not present in most images but suddenly appears (e.g. detecting the appearance of the tongue during a lick sequence), the forward prediction will be inaccurate. This was evident in the dog feedback experiment where we were predicting ≈80 ms into the future during a rapid movement. Using a mouse reaching dataset with movements on a similar timescale, but with video recorded at a much higher rate (150 FPS for mouse reaching vs. 30 FPS for dog), and a mouse open field dataset with video recorded at the same rate as the dog ‘rearing’ experiment, but with slower movements, we demonstrated that the Kalman filter works extremely well in predicting the future pose at a shorter timescale, and demonstrated the way in which it’s predictions become inaccurate as it predicts the pose further into the future. However, despite the inaccurate predictions when the time to predict is longer than the timescale at which velocity and acceleration are changing, the Kalman filter still provides great promise to improve the time to detect the onset of rapid movements.
+To demonstrate the feedback capabilities of DeepLabCut-Live! we performed a set of experiments where an LED was triggered based on the confidence of the DeepLabCut network and the posture of the animal (here a dog, but as is DeepLabCut, this package is animal and object agnostic). We also provide a forward-prediction mode that utilizes temporal information via kinematics to predict future postural states. In this demonstration, we used a Kalman filter to obtain filtered estimates of the position, velocity and acceleration at each point in time, and then predicted the future pose via quadratic approximation. We chose this approach for a few reasons: (i) it requires no prior training and (ii) with simple modifications to 2–3 parameters, it can be tailored to suit a wide variety of applications. Since this approach relies on a quadratic approximation, it can be successfully applied to any application for which it is possible to obtain accurate measurements of the position, velocity, and acceleration using a Kalman filter. The performance of the Kalman filter predictor will critically depend on how far into the future one wishes to predict and how quickly the velocity and acceleration of the keypoints change. If there are substantial changes in the velocity or acceleration of the keypoint within the time frame of the forward prediction, or if a keypoint is not present in most images but suddenly appears (e.g. detecting the appearance of the tongue during a lick sequence), the forward prediction will be inaccurate. This was evident in the dog feedback experiment where we were predicting $≈80$ ms into the future during a rapid movement. Using a mouse reaching dataset with movements on a similar timescale, but with video recorded at a much higher rate (150 FPS for mouse reaching vs. 30 FPS for dog), and a mouse open field dataset with video recorded at the same rate as the dog ‘rearing’ experiment, but with slower movements, we demonstrated that the Kalman filter works extremely well in predicting the future pose at a shorter timescale, and demonstrated the way in which it’s predictions become inaccurate as it predicts the pose further into the future. However, despite the inaccurate predictions when the time to predict is longer than the timescale at which velocity and acceleration are changing, the Kalman filter still provides great promise to improve the time to detect the onset of rapid movements.
 
 Additionally, we would like to emphasize that the Kalman filter is only one possible approach to predict the future pose. In addition to demonstrating its utility for forward prediction, the source code for the Kalman filter Processor provides a blueprint for implementing different methods of forward prediction using the DeepLabCut-Live! framework tailored for the specific tracking problem. For instance, one can imagine applications to rhythmic movements, where one predicts future behavior from many past cycles. Other time series models such as LSTMs, or neural networks can also be integrated in the predictor class. Furthermore, the simple comparison of the position of 2–3 keypoints is only one possible strategy for detecting the time to trigger peripheral devices. For example, one can build Processor objects to trigger on joint angles, or more abstract targets such as being in a particular high dimensional state space. We believe the flexibility of this feedback tool, plus the ability to record long-time scale videos for ‘standard’ DeepLabCut analysis makes this broadly applicable to many applications.
 
-## Conclusions
+### Conclusions
 
 We report the development of a new light-weight Python pose estimation package based on DeepLabCut, which can be integrated with behavioral control systems (such as Bonsai and AutoPilot) or used within a new DLC-Live! GUI. This toolkit allows users to do real-time, low-latency tracking of animals (or objects) on high-performance GPU cards or on low cost, affordable and scalable systems. We envision this being useful for precise behavioral feedback in a myriad of paradigms.
 
@@ -206,7 +1130,82 @@ We report the development of a new light-weight Python pose estimation package b
 
 Alongside this publication we developed several software packages that are available on GitHub. Links are listed in n Table 4 and Table 5 and details provided throughout the paper.
 
-## Animals
+**Table 4.**
+ Software packages presented with this paper.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DeepLabCut-Live! SDK</td>
+      <td>GitHub Link</td>
+    </tr>
+    <tr>
+      <td>Benchmarking Submission</td>
+      <td>GitHub Link</td>
+    </tr>
+    <tr>
+      <td>Benchmarking Results</td>
+      <td>Website Link</td>
+    </tr>
+    <tr>
+      <td>DLC-Live! GUI</td>
+      <td>GitHub Link</td>
+    </tr>
+    <tr>
+      <td>Bonsai - DLC Plugin</td>
+      <td>GitHub Link</td>
+    </tr>
+    <tr>
+      <td>AutoPilot - DLC</td>
+      <td>GitHub Link</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Relevant DLC updates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>DLC version</th>
+      <th>Pub. link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DLC-ResNets</td>
+      <td>1, 2.0+</td>
+      <td>Mathis et al., 2018b; Nath et al., 2019</td>
+    </tr>
+    <tr>
+      <td>DLC-MobileNetV2s</td>
+      <td>2.1+</td>
+      <td>Mathis et al., 2020a</td>
+    </tr>
+    <tr>
+      <td>Model Export Fxn</td>
+      <td>2.1.8+</td>
+      <td>this paper</td>
+    </tr>
+    <tr>
+      <td>DeepLabCut-live</td>
+      <td>new package</td>
+      <td>this paper</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All mouse work were carried out under the permission of the IACUC at Harvard University (#17-07-309). Dog videos and feedback was exempt from IACUC approval (with conformation from IACUC).
 
@@ -214,7 +1213,7 @@ Mice were surgically implanted with a headplate as in Mathis et al., 2017. In br
 
 The dog used in this paper was previously trained to perform rearing actions for positive reinforcement, and therefore no direct behavioral manipulation was done for this study.
 
-## DeepLabCut
+### DeepLabCut
 
 The mouse DeepLabCut model was trained according to the protocol in Nath et al., 2019; Mathis et al., 2020a. Briefly, the DeepLabCut toolbox (version 2.1.6.4) was used to (i) extract frames from selected videos, (ii) manually annotate keypoints on selected frames, (iii) create a training dataset to train the convolutional neural network, (iv) train the neural network, (v) evaluate the performance of the network, and (vi) refine the network. This network was trained on a total of 120 labeled frames.
 
@@ -225,7 +1224,7 @@ After training, DeepLabCut models were exported to a protocol buffer format (.pb
 import deeplabcut as dlc
 dlc .export_model(”/path/to/config.yaml’)
 
-## DeepLabCut-Live! package
+### DeepLabCut-Live! package
 
 The DeepLabCut-Live code was written in Python 3 (http://www.python.org), and distributed as open source code on GitHub and on PyPi. It utilizes TensorFlow (Abadi et al., 2016), numpy (Svd et al., 2011), scipy (Virtanen et al., 2020), OpenCV (Bradski, 2000), and others. Please see GitHub for complete, platform-specific installation instructions and description of the package.
 
@@ -256,7 +1255,7 @@ benchmark_videos (”/path/to/model/directory”,
 
 When using dynamic tracking within the DeepLabCut-Live! package, if the DeepLabCut reported likelihood of a keypoint is less than the user-defined likelihood threshold (i.e. it is likely that the keypoint was ‘lost’ from the image), the bounding box around the following image may not include that keypoint. Thus, for the dynamic cropping accuracy analysis, we only analyzed the accuracy of tracking for keypoints that had a likelihood greater than 0.5 on the previous image. This resulted in the exclusion of 2.9%, 7.6%, and 27.6% of all individual keypoints across all images, respective to the bound box size (50, 25, 10).
 
-## DLC-Live! GUI software
+### DLC-Live! GUI software
 
 The DLC-Live! GUI (DLG) code was also written in Python 3 (http://www.python.org), and distributed as open source code on GitHub and on PyPi. DLG utilizes Tkinter for the graphical user interface. Please see GitHub for complete installation instructions and a detailed description of the package.
 
@@ -268,17 +1267,17 @@ To test the performance of DLG, we used a video of a mouse performing a task tha
 
 We tested the performance of DLG under four conditions– on full-size images (352 × 274 pixels) and downsized images (176 × 137 pixels), both image sizes in Latency mode and Rate mode. All four conditions were tested on four different computers (see Table 2 for specifications). The mouse licking video used for this test was different from the mouse licking video used for the inference speed benchmarking of the DeepLabCut-Live! package (a video with larger images was used in the DeepLabCut-Live! benchmark). Across all DLG benchmarking experiments, a single outlier frame-to-LED data point was removed from the Windows OS, GeForce 1080 GPU, 352 × 274 pixel size configuration. This one point had a time frame-to-LED delay of 3 s, nearly 10 times that of the next longest delay under any configuration, likely due to misalignment of the infrared LED and photodetector.
 
-## Inference speed, size vs. accuracy and dynamic cropping
+### Inference speed, size vs. accuracy and dynamic cropping
 
 For the analyses regarding the size and accuracy dependency (Figure 2—figure supplement 2 and Figure 2—figure supplement 3), we used the 640 × 480 pixel images available at Zenodo (Mathis et al., 2018a) from Mathis et al., 2018b.
 
-## Postural feedback experiment
+### Postural feedback experiment
 
 Prior to conducting the dog feedback experiment, the dog was extensively trained to ‘rear’ upon the verbal command ‘jump’ and the visual cue of a human’s arm raised at shoulder height. ‘Rearing’ was reinforced by manually providing treats for successful execution. Prior to recording videos for tracking and feedback, the dog routinely participated in daily training sessions with her owners. There was no change to the dog’s routine when implementing sessions in which feedback was provided.
 
 To conduct the feedback experiment, we used the DLG software on a Jetson Xavier developer kit. Pose estimation was performed using an exported DeepLabCut model (details regarding training provided above). Feedback was provided using a custom DeepLabCut-Live! Processor that detected ‘rearing’ movements and controlled an LED via serial communication to a Teensy microcontroller.
 
-The dog was considered to be in a ‘rearing’ posture if (a) the likelihood of the withers and at least one elbow was greater than 0.5 and (b) the vertical position of at least one elbow, whose likelihood was greater than 0.5, was above the vertical position of the withers (i.e., yelbow<ywithers, with the top of the image as y=0 and bottom of image as y=image height). For each pose, the Processor determined whether the dog was in a ‘rearing’ posture, queried the current status of the LED from the Teensy microcontroller, and if the current status did not match the dog’s posture (i.e. if the LED was off and the dog was in a ‘rearing’ posture), sent a command to the Teensy to turn the LED on or off.
+The dog was considered to be in a ‘rearing’ posture if (a) the likelihood of the withers and at least one elbow was greater than 0.5 and (b) the vertical position of at least one elbow, whose likelihood was greater than 0.5, was above the vertical position of the withers (i.e., $y_{elbow}<y_{withers}$, with the top of the image as $y=0$ and bottom of image as $y=image height$). For each pose, the Processor determined whether the dog was in a ‘rearing’ posture, queried the current status of the LED from the Teensy microcontroller, and if the current status did not match the dog’s posture (i.e. if the LED was off and the dog was in a ‘rearing’ posture), sent a command to the Teensy to turn the LED on or off.
 
 In this experiment, we recorded the time at which images were accessed by DLG, the time at which poses were obtained by DLG after processing, and the times that the LED was turned on or off by the Processor. We calculated the pose estimation rate as the inverse of the delay from obtaining one pose to the next, the latency from image acquisition to obtaining the pose from that image, and, for poses in which the Processor turned the LED on or off, the latency from image acquisition to sending the command to turn the LED on or off.
 
@@ -294,27 +1293,81 @@ We then ran this full sequence of poses through the ‘rearing’ detection Proc
 
 The videos analyzed in this experiment were different from the dog videos used in the DeepLabCut-Live! benchmarking experiment. For that experiment, a video with longer duration and different aspect ratio was used.
 
-## Forward prediction using a Kalman filter
+#### Forward prediction using a Kalman filter
 
-To implement the forward-predicting Kalman filter, we used a Processor object that first used a Kalman filter to estimate the position, velocity, and acceleration of each keypoint; then used the position, velocity, and acceleration to predict the position of the limb into the future. The Kalman filter was defined by the state vector X, consisting of the x and y position, x and y velocity, and x and y acceleration of each keypoint; the forward transition matrix F; and the measurement matrix H. An example of the full state vector with n keypoints is:X=[x1,…,xn,y1,…,yn,…,x˙1,…,x˙n,y˙1,…,y˙n,x"1,…,x"n,y"1,…,y"n]T
+To implement the forward-predicting Kalman filter, we used a Processor object that first used a Kalman filter to estimate the position, velocity, and acceleration of each keypoint; then used the position, velocity, and acceleration to predict the position of the limb into the future. The Kalman filter was defined by the state vector X, consisting of the x and y position, x and y velocity, and x and y acceleration of each keypoint; the forward transition matrix F; and the measurement matrix H. An example of the full state vector with n keypoints is:
 
-For simplicity, we will consider a Kalman filter for a DeepLabCut network with one keypoint:X=[x1,y1,x˙1,y˙1,x"1,y"1]TF=[10d⁢t0d⁢t220010d⁢t0d⁢t220010d⁢t000010d⁢t000010000001]H=[100000010000001000000100000010000001]
+$$
+X=[x_{1},…,x_{n},y_{1},…,y_{n},…,x˙_{1},…,x˙_{n},y˙_{1},…,y˙_{n},x"_{1},…,x"_{n},y"_{1},…,y"_{n}]^{T}
+$$
 
-Importantly, performance of the Kalman filter depended on three user-defined scalar variance parameters: the initial variance in state estimates σi⁢n⁢i⁢t2, process noise Q, and measurement noise R. The initial covariance matrix in state estimates was defined as P=σi⁢n⁢i⁢t2⁢I.
+For simplicity, we will consider a Kalman filter for a DeepLabCut network with one keypoint:
 
-At each time step, we calculated the estimated pose Xp and estimated covariance Pp based on the previous state:Xp=F⁢XPp=F⁢P⁢FT+Q
+$$
+X=[x_{1},y_{1},x˙_{1},y˙_{1},x"_{1},y"_{1}]^{T}
+$$
 
-We noticed that predictions tended to be inaccurate when the predicted velocity and acceleration were very high. To encourage lower estimates of velocity and acceleration in the estimated state vector Xp, we introduced a priori assumption that, at any given timestep, velocity and acceleration will have a zero mean with a user-defined variance B. We incorporated this prior assumption using Bayes rule, such that the velocity and acceleration components of Xp were the weighted mean of 0 and Xp. The weight depended on the ratio of the variance in the estimate of Xp (the diagonals of the covariance matrix P, referred to as Pd) and the variance of the prior given by B:Xp=1Pd-1+B-1⋅XPd
 
-The observation vector y consisted of the observed position, velocity, and acceleration. The observed position was taken as the pose returned by the DeepLabCut network, the observed velocity was calculated as the change in position from the observed position and position components of the latest state vector X, and the acceleration was calculated as the change between the observed velocity and the velocity components of the latest state vector X. Next, we updated the state vector X and covariance matrix P according to the Kalman gain K:K=Pp⁢HT∙(H⁢Pp⁢HT+R)-1X=Xp+K⁢(y-H⁢Xp)P=(I-K⁢HT)⁢Pp
 
-Given this estimate of the current position, velocity and acceleration (the state vector X), we used the forward transition matrix F to calculate the predicted future state Xf. In the dog feedback experiment, the amount of time we predicted into the future depended on the delay for that image (dt = prediction time = current time − image acquisition time):Xf=F⁢X
+$$
+F=[10d⁢t0\frac{d⁢t^{2}}{2}0010d⁢t0\frac{d⁢t^{2}}{2}0010d⁢t000010d⁢t000010000001]
+$$
 
-To obtain the future pose, we extracted the position elements from Xf, and discarded the velocity and acceleration components. Lastly, the Processor checked if the dog was in a ‘rearing’ posture and controlled the LED accordingly.
+
+
+$$
+H=[100000010000001000000100000010000001]
+$$
+
+Importantly, performance of the Kalman filter depended on three user-defined scalar variance parameters: the initial variance in state estimates $\sigma_{i⁢n⁢i⁢t}^{2}$, process noise Q, and measurement noise R. The initial covariance matrix in state estimates was defined as $P=\sigma_{i⁢n⁢i⁢t}^{2}⁢I$.
+
+At each time step, we calculated the estimated pose $X_{p}$ and estimated covariance $P_{p}$ based on the previous state:
+
+$$
+X_{p}=F⁢X
+$$
+
+
+
+$$
+P_{p}=F⁢P⁢F^{T}+Q
+$$
+
+We noticed that predictions tended to be inaccurate when the predicted velocity and acceleration were very high. To encourage lower estimates of velocity and acceleration in the estimated state vector $X_{p}$, we introduced a priori assumption that, at any given timestep, velocity and acceleration will have a zero mean with a user-defined variance B. We incorporated this prior assumption using Bayes rule, such that the velocity and acceleration components of $X_{p}$ were the weighted mean of 0 and $X_{p}$. The weight depended on the ratio of the variance in the estimate of $X_{p}$ (the diagonals of the covariance matrix P, referred to as $P_{d}$) and the variance of the prior given by B:
+
+$$
+X_{p}=\frac{1}{P_{d}^{-1}+B^{-1}}⋅\frac{X}{P_{d}}
+$$
+
+The observation vector y consisted of the observed position, velocity, and acceleration. The observed position was taken as the pose returned by the DeepLabCut network, the observed velocity was calculated as the change in position from the observed position and position components of the latest state vector X, and the acceleration was calculated as the change between the observed velocity and the velocity components of the latest state vector X. Next, we updated the state vector X and covariance matrix P according to the Kalman gain K:
+
+$$
+K=P_{p}⁢H^{T}∙(H⁢P_{p}⁢H^{T}+R)^{-1}
+$$
+
+
+
+$$
+X=X_{p}+K⁢(y-H⁢X_{p})
+$$
+
+
+
+$$
+P=(I-K⁢H^{T})⁢P_{p}
+$$
+
+Given this estimate of the current position, velocity and acceleration (the state vector X), we used the forward transition matrix F to calculate the predicted future state $X_{f}$. In the dog feedback experiment, the amount of time we predicted into the future depended on the delay for that image ($dt = prediction time = current time − image acquisition time$):
+
+$$
+X_{f}=F⁢X
+$$
+
+To obtain the future pose, we extracted the position elements from $X_{f}$, and discarded the velocity and acceleration components. Lastly, the Processor checked if the dog was in a ‘rearing’ posture and controlled the LED accordingly.
 
 Source code for the base Kalman filter Processor and the dog rearing Processor can be found on Github. Additionally, the Kalman filter predicting Processor is in the main DeepLabCut-Live! package, and can be used as follows:from dlclive .processor import KalmanFilterPredictor
 
-## Details of AutoPilot setup
+### Details of AutoPilot setup
 
 Latencies were measured using software timestamps and confirmed by oscilloscope. Software measurements could be gathered in greater quantity but were reliably longer than the oscilloscope latency measurements by 2.8 ms (median of difference, n = 75, IQR=[2.4–3.4]), thus we use the software measurements noting they are a slightly conservative estimate of functional latency.
 
@@ -335,6 +1388,6 @@ led_on =tfm.process(frame)
 
 where min_x, min_y, etc. defined a bounding box around the LED.
 
-## Data analysis and visualization
+### Data analysis and visualization
 
 Autopilot data were analyzed with Pandas (1.0.5; McKinney et al., 2010) in Python and Tidyverse (1.3.0; Wickham et al., 2019) in R. Data were visualized with ggplot2 (3.3.0; Wickham, 2016) and ggridges (0.5.2; Wilke, 2020).

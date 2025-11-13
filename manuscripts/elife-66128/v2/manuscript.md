@@ -40,13 +40,37 @@ To do so here, we coupled genome-wide data on DNA methylation levels in blood wi
 
 ## Results
 
-## Epigenetic clock calibration and composition
+### Epigenetic clock calibration and composition
 
 We used a combination of previously published (Lea et al., 2016) and newly generated reduced-representation bisulfite sequencing (RRBS) data from 245 wild baboons (N = 277 blood samples) living in the Amboseli ecosystem of Kenya (Alberts and Altmann, 2012) to generate a DNA methylation-based age predictor (an ‘epigenetic clock’; Hannum et al., 2013; Horvath, 2013). Starting with a data set of methylation levels for 458,504 CpG sites genome-wide (Figure 1—figure supplement 1; Supplementary file 1), we used elastic net regression to identify a set of 573 CpG sites that together accurately predict baboon age within a median absolute difference (MAD) of 1.1 years ± 1.9 s.d. (Figure 1; Supplementary file 1; Pearson’s r = 0.762, p=9.70×10−54; median adult life expectancy in this population is 10.3 years for females and 7.9 for males; Colchero et al., 2016). The choice of these sites reflects a balance between increasing predictive accuracy within the sample and minimizing generalization error to unobserved samples, using a similar approach as that used to develop epigenetic clocks in humans (Hannum et al., 2013; Horvath, 2013) (see also Materials and methods and Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig1-v2.jpg)
+
+**Figure 1.:** Predicted ages are shown relative to true chronological ages for (A) females (Pearson’s r = 0.78, p=6.78×10−30, N = 142 samples) and (B) males (r = 0.86, p=5.49×10−41, N = 135 samples). Solid lines represent the best-fit line; dashed lines show the line for y = x. (C, D) Predictions for individuals with at least two samples in the data set (N = 30; 14 females and 16 males). In 26 of 30 cases (87%), samples collected later were correctly predicted to be from an older animal.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Proportion of the 458,504 evaluated CpG sites that overlapped annotated features of the Panu2 genome. (B) Proportion of annotated features in the Panu2 genome that overlapped at least one of the 458,504 evaluated CpG sites. (C) Distribution of mean DNA methylation levels for CpG sites within annotated features of the Panu2 genome. Each white box represents the interquartile range, with the median value depicted as a black horizontal bar. Whiskers extend to the most extreme values within 1.5× the interquartile range. As expected, CpG sites tended to be highly methylated genome-wide and have lower average methylation in promoters, enhancers, and CpG islands.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Alpha was set via grid search across possible values from 0.1 to 1, in steps of 0.1, and chosen based on the highest R2 value between predicted age and known chronological age (red lines). The blue lines show the median absolute difference between predicted and true age (lower is better) and exhibits roughly inverse behavior to R2. (A) For each clock generated with a different alpha value, the total number of CpG sites included in the clock is shown on top, and the number of clock sites that overlap the final clock used in this study (N = 573 sites, alpha = 0.1) is given in parentheses immediately below. (B, C) As in (A), but with results shown specifically for males (B) versus females (C).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The log2(odds ratio) of CpG sites in the epigenetic clock, relative to all 458,504 CpG sites initially evaluated, in (A) annotated genomic regions and (B) in loci with putative regulatory activity or in or near genes that are responsive to age or immune stimulation. Regions of regulatory activity were identified with the massively parallel reporter assay, mSTARR-Seq (Lea et al., 2018a), following a liftover from the human genome to the baboon genome to identify putatively orthologous coordinates. Age differentially methylated regions (DMR) and genes responsive to lipopolysaccharide (LPS) were previously identified from blood samples from the same baboon population (Lea et al., 2015a; Lea et al., 2018b). Two-sided Fisher’s exact tests were performed separately for epigenetic clock sites that increased (positive clock sites: N = 459) or decreased (negative clock sites: N = 134) in DNA methylation levels with age. See Supplementary file 2 for a complete list of the genomic locations of the 573 epigenetic clock sites. *p<0.05, ***p<0.005.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Volcano plot of the effect size (βage) versus the –log10(p-value) of age effects on DNA methylation for males (blue) and females (red), based on estimates from a binomial mixed-effects model designed for bisulfite sequencing data (Lea et al., 2015a). Results for the 534 sites that could be modeled using this approach are shown. Other predictor variables in the model included a fixed effect for sample batch and a random effect that controlled for kinship (estimated via Queller and Goodnight’s r and multilocus microsatellite genotype data in the program coancestry Wang, 2011). Dashed line corresponds to a nominal p-value of 0.01. (B) Age effects on DNA methylation estimated separately in males and females are highly correlated (R2 = 0.83, p=3.35×10−204). The dashed line indicates the y = x line. The solid black line indicates the best-fit line.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Performance measures of age predictors are presented separately for females (A, C, E) and males (B, D, F) except for differential white blood cell counts (blood smears), where males and females were combined. Predictors are ordered in the same fashion in all panels (epigenetic clock to the left, and then following highest to lowest R2 in females). The breakpoint to define youthful versus aged animal BMI was 10 and 8 years old for females and males, respectively. (A, B) Adjusted R2 between predicted age and true chronological age. (C, D) Absolute difference between the y = x line (slope of one) and the slope of the best-fit line of predicted age as a function of true chronological age. This metric captures bias in age prediction estimates (values that are lower on the reverse-coded y-axis are more biased). (E, F) Median absolute difference (MAD) between each individual’s predicted age and true chronological age (values that are lower on the reverse-coded y-axis have higher MAD).
+
 Consistent with findings in humans (Horvath, 2013), clock sites are enriched in genes, CpG islands, promoter regions, and putative enhancers, compared to the background set of all sites we initially considered (i.e., the 458,504 CpG sites that were candidates for inclusion in the clock; in humans, this background set is the set of analyzable sites on the Illumina 27K methylation array [Horvath, 2013; Figure 1—figure supplement 3]; Fisher’s exact tests, all p<0.05). Clock sites are also more common in age-associated differentially methylated regions in baboons (Figure 1—figure supplement 3; sites that increase with age: log2(odds ratio [OR])=4.189, p=3.64×10−9; sites that decrease with age: log2(OR)=5.344, p=1.54×10−8) (Lea et al., 2015a), such that many, but not all, of the clock sites also exhibit individual associations between DNA methylation levels and age (Figure 1—figure supplement 4 and Figure 2—figure supplement 1; Supplementary file 3). Additionally, clock sites were more likely to be found in regions that exhibit enhancer-like activity in a massively parallel reporter assay (sites that increase with age: log2(OR)=2.685, p=1.22×10−2; sites that decrease with age: log2(OR)=4.789, p=1.78×10−5) (Lea et al., 2018a) and in regions implicated in the gene expression response to bacteria in the Amboseli baboon population (overlap of lipopolysaccharide [LPS] up-regulated genes and sites that increase with age: log2[OR]=0.907, p=7.03×10−4; overlap of LPS down-regulated genes and sites that decrease with age: log2[OR]=1.715, p=1.55×10−3) (Lea et al., 2018b). Our results thus suggest that the Amboseli baboon epigenetic clock not only tracks chronological age, but also captures age-related changes in blood DNA methylation levels that are functionally important for gene regulation, particularly in relation to the immune system.
 
-## Comparison with other age-associated traits and differences between sexes
+### Comparison with other age-associated traits and differences between sexes
 
 Overall, the clock performed favorably relative to other morphological or biomarker predictors of age in this population. The epigenetic clock generally explained more variance in true chronological age, resulted in lower median error, and exhibited less bias than predictions based on raw body mass index (BMI) or blood cell composition data from flow cytometry or blood smears (traits that change with age in baboons; Altmann et al., 2010; Jayashankar et al., 2003). Its performance was comparable to molar dentine exposure, a classical marker of age (Galbany et al., 2011; Figure 1—figure supplement 5). For a subset of 30 individuals, we had two samples collected at different points in time. The predicted ages from these longitudinally collected samples were older for the later-collected samples, as expected (Figure 1C,D; binomial test p=5.95×10−5). Furthermore, the change in epigenetic clock predictions between successive longitudinal samples positively predicted the actual change in age between sample dates (β = 0.312, p=0.027, controlling for sex; difference between actual change and predicted change: mean 3.11 years ± 3.25 s.d.).
 
@@ -54,7 +78,7 @@ However, clock performance was not equivalent in males and females. Specifically
 
 Because of these differences, we separated males and females for all subsequent analyses. However, we note that the effects of age on DNA methylation levels at individual clock sites are highly correlated between the sexes (Pearson’s r = 0.91, p=3.35×10−204), with effect sizes that are, on average, more precisely estimated in males (paired t-test p=4.53×10−74 for standard errors of βage; Figure 1—figure supplement 4). In other words, the sex differences in clock performance reflect changes in methylation that occur at the same CpG sites, but with higher variance in females. Lower accuracy in females compared to males therefore appears to result from the greater variability in DNA methylation change in older females (Figure 1).
 
-## Socioenvironmental predictors of variance in biological aging
+### Socioenvironmental predictors of variance in biological aging
 
 Although the baboon epigenetic clock is a good predictor of age overall, individuals were often predicted to be somewhat older or younger than their known chronological age. In humans and some model systems, the sign and magnitude of this deviation captures information about physiological decline and/or mortality risk beyond that contained in chronological age alone (Maegawa et al., 2017; Petkovich et al., 2017; Stubbs et al., 2017; Ryan et al., 2020).
 
@@ -64,9 +88,91 @@ Because high cumulative early adversity and low social bond strength are associa
 
 Surprisingly, despite being two of the strongest known predictors of lifespan in wild baboons, neither cumulative early-life adversity nor social bond strength explain variation in Δage (Table 1). In contrast, high male dominance rank is strongly and significantly associated with larger values of Δage (β = −0.078, p=7.39×10−4; Figure 2; Table 1; Figure 2—figure supplement 3). Alpha males are predicted to be an average of 10.95 months older than their true chronological age – a difference that translates to 11.5% of a male baboon’s expected adult lifespan in Amboseli (Colchero et al., 2016). In contrast, dominance rank did not predict Δage in females (p=0.228; Table 1). Finally, age-adjusted BMI also predicted Δage in males (p=6.33×10−3), but not in females (p=0.682; Table 1). These results are robust to inclusion of read depth and bisulfite conversion rate as covariates in the model (Supplementary file 5; in males, read depth is correlated with chronological age [R2 = −0.409, p=0.038], but is not correlated with Δage [R2 = 0.003, p=0.561]).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig2-v2.jpg)
+
+**Figure 2.:** High rank is associated with elevated values of Δage (β = −0.0785, p=7.39×10−4, N = 105). The y-axis shows relative epigenetic age, a measure of epigenetic aging similar to Δage that is based on the sample-specific residuals from the relationship between predicted age and true chronological age. Positive (negative) values correspond to predicted ages that are older (younger) than expected for that chronological age. Dominance rank is measured using ordinal values, such that smaller values indicate higher rank. Dots and error bars represent the means and standard errors, respectively. Gray values above the x-axis indicate sample sizes for each rank.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each circle represents a sample, with chronological age of the animal at time of sampling shown on the x-axis. The y-axis represents the average methylation level for that sample across CpG clock sites that overlap the annotated genomic region shown in the panel label, stratified by sites that increased (denoted ‘hyper’) or decreased (denoted ‘hypo’) methylation levels with age. Number of clock sites overlapping each annotated region is given in each panel title; a clock site can overlap multiple annotated regions and can therefore be represented in more than one plot. Red and blue lines represent best-fit lines for female and male samples, respectively. All best-fit lines are significant (p<1×10−4).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Chronological age in years at the time of sampling versus body mass index (kilograms/meters2) for males and females in our sample. Two distinct patterns are observable for both sexes: a stage when animals are still growing (prior to ~7–8 years old) and a stage in which animals vary in BMI as adults. BMI in baboons is measured using the distance between the crown of the head and the rump as the ‘height’ measure and so differs in scale from humans, where BMI is calculated using standing height. Dashed gray line at BMI = 41 shows the cut-off for the analysis in which only males with BMI > 41 were retained for modeling Δage.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Each circle represents a baboon, colored by the animal’s dominance rank at the time of sampling. The y-axis shows relative epigenetic age, a measure of epigenetic aging similar to Δage that is based on the sample-specific residuals from the relationship between predicted age and true chronological age. Positive (negative) values correspond to predicted ages that are older (younger) than expected for that chronological age. Dominance rank is measured using ordinal values, such that smaller values indicate higher rank.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/66128/elife-66128-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Each circle represents a male baboon at the time of sampling. Nearly all males in the top four rank positions are between ages 7 and 12 years (but not all 7–12 year olds are also high ranking: range of rank positions = 1–20), whereas both young and old males tend to be lower ranking. The quadratic curve represents the model with dominance rank as the response variable and age and age2 as the predictor variables. Rank-for-age was defined as the residuals of this model.
+
+**Table 1.**
+ Predictors of Δage﻿*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Covariate</th>
+      <th>β (female)</th>
+      <th>p-value (female)</th>
+      <th>β (male)</th>
+      <th>p-value (male)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>5.400</td>
+      <td>1.33 × 10−15</td>
+      <td>3.294</td>
+      <td>1.19 × 10−8</td>
+    </tr>
+    <tr>
+      <td>Cumulative early adversity</td>
+      <td>−0.050</td>
+      <td>0.807</td>
+      <td>−0.005</td>
+      <td>0.973</td>
+    </tr>
+    <tr>
+      <td>Social bond strength</td>
+      <td>0.382</td>
+      <td>0.164</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Dominance rank</td>
+      <td>0.025</td>
+      <td>0.228</td>
+      <td>−0.078</td>
+      <td>7.39 × 10−4</td>
+    </tr>
+    <tr>
+      <td>Age-adjusted BMI</td>
+      <td>0.026</td>
+      <td>0.682</td>
+      <td>0.111</td>
+      <td>6.33 × 10−3</td>
+    </tr>
+    <tr>
+      <td>Chronological age</td>
+      <td>−0.699</td>
+      <td>1.62 × 10−28</td>
+      <td>−0.277</td>
+      <td>8.36 × 10−8</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Separate linear models for Δage were fit for females (N = 66) and for males (N = 93) for whom no data values were missing; social bond strength was not included in the model for males. Significant results are shown in bold._
+
 Despite the tendency for high-ranking males to have higher raw BMI due to increased muscle mass, the effects of rank and age-adjusted BMI in males are distinct. Specifically, modeling dominance rank after adjusting for raw BMI also produces a significant effect of rank on Δage in the same direction (p=9.93×10−4; Supplementary file 5), as does substituting the age-adjusted BMI measure for either raw BMI or the residuals of raw BMI after adjusting for dominance rank (rank p=1.52×10−2 and p=1.88×10−4, respectively; Supplementary file 5). In contrast, BMI is only a significant predictor of male Δage when corrected for age (i.e., age-adjusted) and when rank is included in the same model (Table 1; Supplementary file 5). Furthermore, we obtain the same qualitative results if all low BMI males are removed from the sample (BMI < 41; this cut-off was used because it drops all young males who have clearly not reached full adult size; p=7.14×10−3; Supplementary file 5). Dropping these males also eliminates the age-raw BMI correlation (Pearson’s r = −0.16, p=0.21).
 
-## Male dominance rank predicts epigenetic age
+### Male dominance rank predicts epigenetic age
 
 In baboon males, achieving high rank depends on physical condition and fighting ability (Alberts et al., 2003). Consequently, rank in males is dynamic across the life course: males tend to attain their highest rank between 7 and 12 years of age and fall in rank thereafter (Figure 2—figure supplement 4). Thus, nearly all males in the top four rank positions in our data set were between 7 and 12 years of age at the time they were sampled (however, because not all 7–12 year olds are high ranking, low-rank positions include males across the age range; Supplementary file 1, Figure 2—figure supplement 4). We therefore asked whether the association between high rank in males and accelerated epigenetic aging is a function of absolute rank values, regardless of age, or deviations from the expected mean rank given a male’s age (i.e., ‘rank-for-age’; Figure 2—figure supplement 4). We found that including rank-for-age as an additional covariate in the Δage model recapitulates the significant effect of ordinal male rank (p=0.045), but finds no effect of rank-for-age (p=0.819; Supplementary file 5). Our results therefore imply that males incur the costs of high rank primarily in early- to mid-adulthood, and only if they succeed in attaining high rank.
 
@@ -86,13 +192,13 @@ This interpretation may also explain major sex differences in the effects of ran
 
 ## Materials and methods
 
-## Study population and biological sample collection
+### Study population and biological sample collection
 
 This study focused on a longitudinally monitored population of wild baboons (Papio cynocephalus, the yellow baboon, with some admixture from the closely related anubis baboon P. anubis Alberts and Altmann, 2001; Tung et al., 2008) in the Amboseli ecosystem of Kenya. This population has been continuously monitored by the Amboseli Baboon Research Project (ABRP) since 1971 (Alberts and Altmann, 2012). For the majority of study subjects (N = 242 of 245 individuals), birth dates were therefore known to within a few days’ error; for the remaining three individuals, birth dates were known within 3 months’ error (Supplementary file 1).
 
 All DNA methylation data were generated from blood-derived DNA obtained during periodic darting efforts, as detailed in Lea et al., 2018b; Altmann et al., 1996; Tung et al., 2015. Samples were obtained under approval from the Institutional Animal Care and Use Committee (IACUC) of Duke University (currently #A044-21-02) and adhered to all the laws and regulations of Kenya. In brief, individually recognized study subjects were temporarily anesthetized using a Telazol-loaded dart delivered through a blow gun. Baboons were then safely moved to a new location where blood samples and morphometric data, including body mass and crown-rump length, were collected. Baboons were then allowed to recover from anesthesia in a covered holding cage and released to their group within 2–4 hr. Blood samples were stored at −20° C in Kenya until export to the United States.
 
-## DNA methylation data
+### DNA methylation data
 
 DNA methylation data were generated from blood-extracted DNA collected from known individuals in the Amboseli study population (N = 277 samples from 245 animals; 13 females and 15 males were each sampled twice, and 1 female and 1 male were each sampled three times). Here, we analyzed a combined data set that included previously published RRBS (Meissner et al., 2005) data from the same population (N = 36 samples) (Lea et al., 2016) and new RRBS data from 241 additional samples.
 
@@ -100,62 +206,78 @@ RRBS libraries were constructed following Boyle et al., 2012, using ~200 ng bab
 
 Following Lea et al., 2016; Lea et al., 2015a, CpG sites were filtered to retain sites with a mean methylation level between 0.1 and 0.9 (i.e., to exclude constitutively hyper- or hypo-methylated sites) and mean coverage of ≥5×. We also excluded any CpG sites with missing data for ≥5% of individuals in the sample. After filtering, we retained N = 458,504 CpG sites for downstream analysis. For the remaining missing data (mean number of missing sites per sample = 1.4 ± 3.5% s.d., equivalent to 6409 ± 16,024 s.d. sites), we imputed methylation levels using a k-nearest neighbors approach in the R package impute, using default parameters (Hastie et al., 2001).
 
-## Building the epigenetic clock
+### Building the epigenetic clock
 
 We used the R package glmnet (Friedman et al., 2009) version 2.0.10 to build a DNA methylation clock for baboons. Specifically, we fit a linear model in which the predictor variables were normalized levels of DNA methylation at 458,504 candidate clock CpG sites across the genome and the response variable was chronological age. To account for the excess of CpG sites relative to samples, glmnet uses an elastic net penalty to shrink predictor coefficients toward 0 (Friedman et al., 2010). Optimal alpha parameters were identified by grid searching across a range of alphas from 0 (equivalent to ridge regression) to 1 (equivalent to Lasso) by increments of 0.1, which impacts the number of clock CpG sites by varying the degree of shrinkage of the predictor coefficients toward 0 (Figure 1—figure supplement 2). We defined the optimal alpha as the value that maximized R2 between predicted and true chronological age across all samples. We set the regularization parameter lambda to the value that minimized mean-squared error during n-fold internal cross-validation.
 
 To generate predicted age estimates for a given sample, we used a leave-one-out cross-validation approach in which all samples but the ‘test’ sample were included for model training, and the resulting model was used to predict age for the left-out test sample. To avoid leaking information from the training set into the test set, and to maximize the generalizability of the clock, we did not remove batch effects from the quantile normalized methylation ratio estimates. However, we confirmed that our results in the main model, for both males and for females, were robust if we added batch effect (previously generated samples [n = 36] versus newly generated samples [n = 241]) as a covariate. Training samples were scaled independently of the test sample in each leave-one-out model to avoid bleed-through of information from the test data into the training data. To do so, we first quantile normalized methylation ratios (the proportion of methylated counts to total counts for each CpG site) within each sample to a standard normal distribution. Training samples were then separated from the test sample and the methylation levels for each CpG site in the training set were quantile normalized across samples to a standard normal distribution. To predict age in the test sample, we compared the methylation value for each site in the test sample to the empirical cumulative distribution function for the training samples (at the same site) to estimate the quantile in which the training sample methylation ratio fell. The training sample was then assigned the same quantile value from the standard normal distribution using the function qnorm in R.
 
-## Epigenetic clock enrichment analyses
+### Epigenetic clock enrichment analyses
 
 To evaluate whether CpG sites included in the epigenetic clock, relative to the 458,504 CpG background sites, were enriched in functionally important regions of the baboon genome (Lea et al., 2015a; Vilgalys et al., 2019), we used two-sided Fisher’s exact tests to investigate enrichment/depletion of the 573 epigenetic clock sites in (1) gene bodies and exons, based on the Ensembl annotation Panu2.0.90; (2) CpG islands annotated in the UCSC Genome Browser; (3) CpG shores, defined as the 2000 basepairs flanking CpG islands (following Lea et al., 2015a; Vilgalys et al., 2019; Irizarry et al., 2009); and (4) promoter regions, defined as the 2000 basepairs upstream of the 5′-most annotated transcription start site for each gene (following Lea et al., 2015a; Vilgalys et al., 2019). We also considered (5) putative enhancer regions, which have not been annotated for the Panu2.0 assembly. We therefore used ENCODE H3K4me1 ChIP-seq data from human peripheral blood mononuclear cells (PBMCs) (ENCODE Project Consortium, 2012) and the liftOver tool to define likely enhancer coordinates in Panu2.0.
 
 We also tested for enrichment of clock sites in regions of the genome that have been identified by previous empirical studies to be of special interest. First, we considered regions that likely have regulatory activity in blood cells, defined as all 200 base-pair windows that showed evidence of enhancer activity in a recently performed massively parallel reporter assay (Lea et al., 2018a). We used liftOver to identify the inferred homologous Panu2.0 coordinates for these windows, which were originally defined in the human genome. Second, we defined age-related differentially methylated regions in the Amboseli baboons based on genomic intervals found, in previous analyses, to contain at least three closely spaced age-associated CpG sites (inter-CpG distance ≤1 kb), as described in Lea et al., 2015a. Third, because inflammatory processes involved in innate immunity are strongly implicated in the aging process, we defined LPS up-regulated and LPS down-regulated genes as those genes that were significantly differentially expressed (1% false discovery rate) between unstimulated Amboseli baboon white blood cells and LPS-stimulated cells from the same individual, following 10 hr of culture in parallel (Lea et al., 2018b).
 
-## Comparisons to alternative predictors of aging
+### Comparisons to alternative predictors of aging
 
 To assess the utility of the DNA methylation clock relative to other data types, we compared its predictive accuracy to clocks based on three other age-related phenotypes: tooth wear (percent molar dentine exposure; Galbany et al., 2011), body condition (BMI; Altmann et al., 2010), and blood cell type composition (blood smear counts and lymphocyte/monocyte proportions from flow cytometry performed on peripheral blood mononuclear cells, as in Lea et al., 2018b; Snyder-Mackler et al., 2016). Leave-one-out model training and prediction were performed for each data type using linear modeling. To compare the relative predictive accuracy of each data type, we calculated the R2﻿ between predicted and chronological age, the MAD between predicted and chronological age, and the bias in age predictions (the absolute value of 1 − slope of the best-fit line between predicted and chronological age) (Figure 1—figure supplement 5).
 
-## Tooth wear
+#### Tooth wear
 
-Molar enamel in baboons wears away with age to expose the underlying dentine layer. Percent dentine exposure (PDE) on the molar occlusal surface has been shown to be strongly age-correlated in previous work (Galbany et al., 2011). To assess its predictive power, we obtained PDE data from tooth casts reported by Galbany et al., 2011 for the left upper molars (tooth positions M1, M2, M3) and left lower molars (tooth positions M1, M2, M3) for 39 males and 34 females in our data set. For each molar position (M1, M2, M3) within each individual, we calculated PDE as the mean for the upper and lower molars. Because dentine exposure scales quadratically with respect to age (Galbany et al., 2011), we fit age as a function of PDE using the following model: age ~PDEM1+PDEM2 +PDEM3
+Molar enamel in baboons wears away with age to expose the underlying dentine layer. Percent dentine exposure (PDE) on the molar occlusal surface has been shown to be strongly age-correlated in previous work (Galbany et al., 2011). To assess its predictive power, we obtained PDE data from tooth casts reported by Galbany et al., 2011 for the left upper molars (tooth positions M1, M2, M3) and left lower molars (tooth positions M1, M2, M3) for 39 males and 34 females in our data set. For each molar position (M1, M2, M3) within each individual, we calculated PDE as the mean for the upper and lower molars. Because dentine exposure scales quadratically with respect to age (Galbany et al., 2011), we fit age as a function of PDE using the following model: 
 
-## Body mass index
+$$
+age ~\sqrt{PDE_{M1}}+\sqrt{PDE_{M2}} +\sqrt{PDE_{M3}}
+$$
+
+#### Body mass index
 
 For both male and female baboons in Amboseli, body mass increases with age until individuals reach peak size and then tends to decrease with age as animals lose fat and/or muscle mass (Altmann et al., 2010). To quantify body condition using body mass, we calculated BMI values for 139 males and 154 females for whom body mass and crown-rump length data were available from periodic darting efforts. We retained only measures taken from animals born into and sampled in wild-feeding study groups, when sex-skin swellings (in females only) that could affect crown-rump length measures were absent. BMI was calculated as mass (kilograms) divided by crown-rump length (meters squared), following Altmann et al., 1993. To assess the predictive power of age-adjusted BMI, we built sex-specific piecewise-regression models using the package segmented in R (Muggeo and Muggeo, 2017). Breakpoints for the piecewise-regression models (to separate ‘youthful’ versus ‘aged’ animals) were initialized at 8 years old for males and 10 years old for females, following findings from previous work on body mass in the Amboseli population (Altmann et al., 2010).
 
-## Blood cell type composition
+#### Blood cell type composition
 
 The proportions of different cell types in blood change across the life course, including in baboons (Jayashankar et al., 2003). We assessed the predictive power of blood cell composition for age using two data sets. First, we used data collected from blood smear counts (N = 134) for five major white blood cell types: basophils, eosinophils, monocytes, lymphocytes, and neutrophils. Second, we used data on the proportional representation of five PBMC subsets: cytotoxic T cells, helper T cells, B cells, monocytes, and natural killer cells, measured using flow cytometry as reported by Lea et al., 2018b (N = 53). Cell types were included as individual covariates for leave-one-out model training.
 
-## Sources of variance in predicted age
+### Sources of variance in predicted age
 
 We asked whether factors known to be associated with inter-individual variation in fertility or survival also predict inter-individual variation in Δage (predicted age from the epigenetic clock minus known chronological age). To do so, we fit linear models separately for males and females, with Δage as the dependent variable and dominance rank at the time of sampling, cumulative early adversity, age-adjusted BMI, and chronological age as predictor variables (Tung et al., 2016). For females, we also included a measure of social bond strength to other females as a predictor variable, based on findings that show that socially isolated females experience higher mortality rates in adulthood (Archie et al., 2014a; Silk et al., 2010). Samples with missing values for any of the predictor variables were excluded in the model, resulting in a final analysis set of 66 female samples (from 59 females) and 93 male samples (from 84 males). The chronological ages of samples with complete data relative to samples with missing data were equivalent for females (t-test, t = 1.95, p=0.053) but were slightly lower for males (t-test, t = −3.04, p=0.003; mean chronological ages are 7.98 and 9.65 years for complete and missing samples, respectively). Predictor variables were measured as follows.
 
-## Dominance rank
+#### Dominance rank
 
 Sex-specific dominance hierarchies were constructed monthly for every social group in the study population based on the outcomes of dyadic agonistic encounters. An animal was considered to win a dyadic agonistic encounter if it gave aggressive or neutral, but not submissive, gestures, and the other animal gave submissive gestures only (Hausfater, 1975). These wins and losses were entered into a sex-specific data matrix, such that animals were ordered to minimize the number of entries falling below the matrix diagonal (which would indicate that the lower ranked individual won a dyadic encounter). Ordinal dominance ranks were assigned on a monthly basis to every adult based on these matrices, such that low numbers represent high rank/social status and high numbers represent low rank/social status (Alberts et al., 2003; Hausfater et al., 1982). Although most analyses of data from the Amboseli baboons have used ordinal ranks as the primary measure of social status, in some analyses proportional rank (i.e., the proportion of same-sex members of an individual’s social group that he or she dominates) has proven to be a stronger predictor of other trait outcomes (Archie et al., 2014b; Levy, 2020). In this study, we chose to use ordinal ranks, but proportional and ordinal dominance rank were highly correlated in this particular dataset (R2 = 0.70, p=1.13×10−58). Using ordinal rank rather than proportional rank therefore did not qualitatively affect our analyses. Additionally, to investigate whether the patterns we observed are due to a consistent effect of rank across all ages, or instead an effect of being high or low rank relative to the expected (mean) value for a male’s age, we also calculated a ‘rank-for-age’ value. Rank-for-age is defined as the residuals of a model with dominance rank as the response variable and age and age2 as the predictor variables (Figure 2—figure supplement 4).
 
-## Cumulative early adversity
+#### Cumulative early adversity
 
 Previous work in Amboseli defined a cumulative early adversity score as the sum of six different adverse conditions that a baboon could experience during early life (Tung et al., 2016). This index strongly predicts adult lifespan in female baboons, and a modified version of this index also predicts offspring survival (Zipple et al., 2019). To maximize the sample size available for analysis, we excluded maternal social connectedness, the source of adversity with the highest frequency of missing data, leaving us with a cumulative early adversity score generated from five different binary-coded adverse experiences. These experiences were as follows: (1) early-life drought (defined as ≤200 mm of rainfall in the first year of life), which is linked to reduced fertility in females (Lea et al., 2015b; Beehner et al., 2006); (2) having a low ranking mother (defined as falling within the lowest quartile of ranks for individuals in the data set), which predicts age at maturation (Altmann and Alberts, 2003a; Altmann et al., 1988; Charpentier et al., 2008); (3) having a close-in-age younger sibling (<1.5 years), which may redirect maternal investment to the sibling (Altmann et al., 1978), (4) being born into a large social group, which may increase within-group competition for shared resources (Lea et al., 2015b; Charpentier et al., 2008; Altmann and Alberts, 2003b), and (5) maternal death before the age of 4, which results in a loss of both social and nutritional resources (Charpentier et al., 2008; Lea et al., 2014).
 
-## Body mass index
+#### Body mass index
 
 Age-adjusted BMI was modeled as the residuals from sex-specific piecewise-regression models relating raw BMI to age. By taking this approach, we asked whether having relatively high BMI for one’s age and sex predicted higher (or lower) Δage. To calculate rank-adjusted BMI values, we modeled raw BMI as a function of rank in a linear model and calculated the residuals from the model. To calculate dominance rank adjusted for raw BMI, we took the inverse approach. We note that BMI for baboons is not directly comparable to BMI for humans because baboon BMI is measured as body mass divided by the square of crown-rump length (because baboons are quadrupedal), whereas human BMI is calculated as body mass divided by the square of standing height.
 
-## Social bond strength
+#### Social bond strength
 
-For this analysis, we measured female social bond strength to other females using the dyadic sociality index (DSIF) (Campos et al., 2020). We did not include this parameter (male’s social bond strength to females) for the male model because this measure is unavailable for many males in this data set. DSIF was calculated as an individual’s average bond strength with her top three female social partners, in the 365 days prior to the day of sampling, controlling for observer effort. This approach is based on representative interaction sampling of grooming interactions between females, in which observers record all grooming interactions in their line of sight while moving through the group conducting random-ordered, 10 min long focal animal samples of pre-selected individuals. Because smaller groups receive more observer effort per individual and per dyad (and thus record more grooming interactions per individual or dyad), we estimated observer effort for dyad d in year y as:Ed,y=cd(sd)fd where cd is the number of days the two females in a dyad were coresident in the same social group, sd is the number of focal samples taken during the dyad’s coresidence, and fd is the average number of females in the group during the dyad’s coresidence.
+For this analysis, we measured female social bond strength to other females using the dyadic sociality index (DSIF) (Campos et al., 2020). We did not include this parameter (male’s social bond strength to females) for the male model because this measure is unavailable for many males in this data set. DSIF was calculated as an individual’s average bond strength with her top three female social partners, in the 365 days prior to the day of sampling, controlling for observer effort. This approach is based on representative interaction sampling of grooming interactions between females, in which observers record all grooming interactions in their line of sight while moving through the group conducting random-ordered, 10 min long focal animal samples of pre-selected individuals. Because smaller groups receive more observer effort per individual and per dyad (and thus record more grooming interactions per individual or dyad), we estimated observer effort for dyad d in year y as:
 
-DSIF for each adult female dyad in each year is the z-scored residual, ε, from the model:log(Rd,y)=β(log(Ed,y))+εwhere Rd,y is the number of grooming interactions for dyad d in year y divided by the number of days that the two individuals were coresident, and Ed,y is observer effort.
+$$
+E_{d,y}=\frac{c_{d}(s_{d})}{f_{d}} 
+$$
 
-## Analysis of longitudinal samples
+where $c_{d}$ is the number of days the two females in a dyad were coresident in the same social group, $s_{d}$ is the number of focal samples taken during the dyad’s coresidence, and $f_{d}$ is the average number of females in the group during the dyad’s coresidence.
+
+DSIF for each adult female dyad in each year is the z-scored residual, $\epsilon$, from the model:
+
+$$
+log(R_{d,y})=\beta(log(E_{d,y}))+\epsilon
+$$
+
+where $R_{d,y}$ is the number of grooming interactions for dyad d in year y divided by the number of days that the two individuals were coresident, and $E_{d,y}$ is observer effort.
+
+### Analysis of longitudinal samples
 
 To test whether changes in rank predict changes in relative epigenetic age within individuals, we used data from 11 males from the original data set and generated additional RRBS data for nine samples, resulting in a final set of 14 males who each were sampled at least twice in the data set, 13 of whom occupied different ordinal ranks at different sampling dates (mean years elapsed between samples = 3.7 ± 1.65 s.d.; mean absolute difference in dominance ranks = 1.29 ± 8.34 s.d.). This effort increased our total sample size to N = 286 samples from 248 unique individuals. To incorporate the new samples into our analysis, we reperformed leave-one-out age prediction with N-fold internal cross-validation at the optimal alpha selected for the original N = 277 samples (alpha = 0.1). For the 277 samples carried over from the original analysis, we verified that age predictions were nearly identical between the previous analysis and the expanded data set (R2 = 0.98, p=2.21×10−239; Supplementary file 1).
 
 Based on the new age predictions for males in the data set (N = 140), we again calculated relative epigenetic age as the residual of the best-fit line relating predicted age to chronological age. We then used the 14 males with repeated DNA methylation profiles and rank measures in this data set to test whether, within individuals, changes in dominance rank or rank-for-age explained changes in relative epigenetic age between samples. In total, five males were sampled three times. For four of these five, we only included the two samples that were sampled the farthest apart in time (i.e., excluded the temporal middle sample) to maximize the age change between sample dates. For the fifth male, BMI information was missing for the third sample, so we included the first two samples collected in time.
 
-## Code availability
+### Code availability
 
 All R code used to analyze data in this study is available at https://github.com/janderson94/BaboonEpigeneticAging; Anderson, 2021; with a copy archived at swh:1:rev:58ca836d3416c2a447cbd055aee66c11140aec86.

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.24502.001 Genetic analysis has revealed that the dual specificity protein kinase DYRK1A has multiple roles in the development of the central nervous system. Increased DYRK1A gene dosage, such as occurs in Down syndrome, is known to affect neural progenitor cell differentiation, while haploinsufficiency of DYRK1A is associated with severe microcephaly. Using a set of known and newly synthesized DYRK1A inhibitors, along with CRISPR-mediated gene activation and shRNA knockdown of DYRK1A , we show here that chemical inhibition or genetic knockdown of DYRK1A interferes with neural specification of human pluripotent stem cells, a process equating to the earliest stage of human brain development. Specifically, DYRK1A inhibition insulates the self-renewing subpopulation of human pluripotent stem cells from powerful signals that drive neural induction. Our results suggest a novel mechanism for the disruptive effects of the absence or haploinsufficiency of DYRK1A on early mammalian development, and reveal a requirement for DYRK1A in the acquisition of competence for differentiation in human pluripotent stem cells.
+Genetic analysis has revealed that the dual specificity protein kinase DYRK1A has multiple roles in the development of the central nervous system. Increased DYRK1A gene dosage, such as occurs in Down syndrome, is known to affect neural progenitor cell differentiation, while haploinsufficiency of DYRK1A is associated with severe microcephaly. Using a set of known and newly synthesized DYRK1A inhibitors, along with CRISPR-mediated gene activation and shRNA knockdown of DYRK1A, we show here that chemical inhibition or genetic knockdown of DYRK1A interferes with neural specification of human pluripotent stem cells, a process equating to the earliest stage of human brain development. Specifically, DYRK1A inhibition insulates the self-renewing subpopulation of human pluripotent stem cells from powerful signals that drive neural induction. Our results suggest a novel mechanism for the disruptive effects of the absence or haploinsufficiency of DYRK1A on early mammalian development, and reveal a requirement for DYRK1A in the acquisition of competence for differentiation in human pluripotent stem cells.
 
 ## Introduction
 
@@ -42,23 +42,302 @@ In this study we examine the biological activity of ID-8 and a related series of
 
 ## Results
 
-## Specificity of a series of indole kinase inhibitors for DYRK1A
+### Specificity of a series of indole kinase inhibitors for DYRK1A
 
 We examined the specificity of kinase inhibition by ID-8 (Figure 1a) and a related series of novel indole compounds using a biochemical in vitro assay. ID-8 was screened against a panel of 339 human protein kinases by measuring incorporation of radioactive ATP into appropriate substrates (Reaction Biology). Activity (based on percentage inhibition at a 10 μM dose of ID-8) against the top ten protein kinase targets, and several members of the CMGC family, are listed in Figure 1b. The specificity of the compound is displayed in a kinome inhibition map in Figure 1c (for the complete results of the screen, see Supplementary file 1). ID-8 indeed showed selectivity against the CMGC kinase family, with DYRK1B, GSK3B and DYRK1A being the top three kinase targets. Although a biotinylated derivative of ID-8 bound DYRK2 and DYRK4 in affinity chromatography pull down assays (Hasegawa et al., 2012), ID-8 itself showed little activity against these kinases, or against DYRK3. Next we determined IC50 values for a subset of these kinase targets, using the same 33P incorporation assay (Table 1). This study revealed the high specificity of ID-8 for DYRK1A and DYRK1B, and confirmed a lack of activity against DYRK2 and DYRK4. Inhibition of PIM1, GSK3A, GSK3B, and CLK4 at IC50 values between 280–450 nM was also observed.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig1-v2.jpg)
+
+**Figure 1.:** (A) ID-8 structure. (B) top kinase targets of ID-8 by degree of inhibition at 10 μm, and inhibition of other CMGC group members. (C) kinome tree illustrating the extent of protein kinase inhibition in six families of protein kinases. Illustration reproduced courtesy of Cell Signalling Technology, Inc. (www.cellsignal.com). (D) Structures of indole compounds related to ID-8.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig1-figsupp1-v2.jpg)
+
+**Table 1.**
+ IC50 values for ID-8 against a selection of kinases.Ranks are given based on the original screening data presented in Figure 1B and Supplementary file 1. NC = an IC50 value could not be calculated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Kinase</th>
+      <th>IC50 (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>DYRK1B</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>DYRK1A</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>PIM1</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>GSK3a</td>
+      <td>380</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>CLK4</td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GSK3b</td>
+      <td>450</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>CLK1</td>
+      <td>4200</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>CLK2</td>
+      <td>NC</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>DYRK3</td>
+      <td>NC</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>DYRK4</td>
+      <td>NC</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>CLK3</td>
+      <td>NC</td>
+    </tr>
+  </tbody>
+</table>
 
 We next synthesised a series of ID-8 derivatives modified at the 1, 3 and 6 positions (Figure 1d). The 1 and 6 positions were targeted because modelling studies (discussed below) implicated the –OH and –OCH3 groups as critical to binding at the active site of DYRK1A. The NO2 group was modified since this group might lead to unwanted pharmacological properties in vivo, such as metabolic conversion to toxic nitroso or hydroxylamine derivatives. These compounds were prepared using: (1) the Nenitzescu reaction used for the preparation of ID-8 itself (for compounds 48 and 49); (2) by derivatization of ID-8 (for compounds 28, 29, 30, 34, 35); or (3) by Fischer indole synthesis (compounds 38 and 51). The synthetic pathways used to form these analogues are shown in Figure 1—figure supplement 1 and described in detail in Supplementary file 2.
 
 Biochemical screening of the analogues against the top ten kinase hits for the parent ID-8 are shown in Table 2. Compounds 28, 30 and 48 showed excellent selectivity for DYRK1A and DYRK1B. In particular, compound 28 showed much less activity against DYRK1B, CLK1, GSK3B or LRRK2, relative to ID-8. Compound 30 showed better selectivity against DYRK1A relative to CLK1, CLK4 or GSK3A. Compound 48 showed a similar spectrum of kinase inhibition to ID-8 but was less potent against DYRK1A and DYRK1B. Compound 45 showed activity against all of the kinases in the selected panel and maintained high potency of inhibition of DYRK1A and DYRK1B. Considering the modifications responsible for DYRK1A inhibition, these structure-activity results indicate that that inhibition is very sensitive to modifications at the 6-OH group. Installation of nitro group at the 5-position (compound 51) ablated activity against all kinases tested, except for PIM1 and PIM2. Finally, substitution of the NO2 group at position 3 by an acetylamino group (Compound 34) eliminated activity against all kinases tested.
 
-## DYRK1A inhibition blocks neural specification of hESC
+**Table 2.**
+ Activity of novel indole compounds against DYRK1A and related kinases relative to ID-8.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Compound</th>
+      <th rowspan="2">R1</th>
+      <th rowspan="2">R2</th>
+      <th rowspan="2">R3</th>
+      <th colspan="10">IC50 (μM)</th>
+    </tr>
+    <tr>
+      <th>DYRK1A</th>
+      <th>DYRK1B</th>
+      <th>DYRK2</th>
+      <th>CLK1</th>
+      <th>CLK4</th>
+      <th>GSK3α</th>
+      <th>GSK3β</th>
+      <th>LRRK2</th>
+      <th>PIM1</th>
+      <th>PIM3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ID-8</td>
+      <td>6-OH</td>
+      <td>NO2</td>
+      <td>p-OCH3</td>
+      <td>0.104</td>
+      <td>0.040</td>
+      <td>NC</td>
+      <td>1.37</td>
+      <td>1.05</td>
+      <td>0.428</td>
+      <td>0.153</td>
+      <td>0.100</td>
+      <td>0.376</td>
+      <td>0.176</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>6-OCOCH3</td>
+      <td>NHCOCH3</td>
+      <td>p-OCH3</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>6-OCH3</td>
+      <td>NO2</td>
+      <td>p-OCH3</td>
+      <td>0.346</td>
+      <td>0.695</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>2.23</td>
+      <td>2.36</td>
+      <td>3.44</td>
+      <td>0.854</td>
+      <td>0.176</td>
+      <td>0.259</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>6-OCH2C6H5</td>
+      <td>NO2</td>
+      <td>p-OCH3</td>
+      <td>6.52</td>
+      <td>3.57</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>18.0</td>
+      <td>14.3</td>
+      <td>8.16</td>
+      <td>18.5</td>
+      <td>8.28</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>6-OCOCH3</td>
+      <td>NO2</td>
+      <td>p-OCH3</td>
+      <td>0.680</td>
+      <td>0.299</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>11.95</td>
+      <td>22.15</td>
+      <td>1.71</td>
+      <td>0.891</td>
+      <td>4.15</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>6-OH</td>
+      <td>NO2</td>
+      <td>p-OH</td>
+      <td>0.122</td>
+      <td>0.060</td>
+      <td>2.30</td>
+      <td>0.364</td>
+      <td>0.163</td>
+      <td>0.375</td>
+      <td>0.233</td>
+      <td>0.046</td>
+      <td>0.243</td>
+      <td>0.180</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>6-OH</td>
+      <td>NO2</td>
+      <td>m-OCH3</td>
+      <td>0.594</td>
+      <td>0.257</td>
+      <td>NC</td>
+      <td>13.0</td>
+      <td>4.77</td>
+      <td>2.32</td>
+      <td>0.692</td>
+      <td>2.17</td>
+      <td>0.654</td>
+      <td>0.593</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>6-OH</td>
+      <td>NO2</td>
+      <td>o-OCH3</td>
+      <td>0.829</td>
+      <td>0.341</td>
+      <td>41.9</td>
+      <td>10.7</td>
+      <td>8.59</td>
+      <td>6.12</td>
+      <td>3.82</td>
+      <td>1.98</td>
+      <td>1.44</td>
+      <td>0.892</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>5-NO2</td>
+      <td>NO2</td>
+      <td>p-OCH3</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>7.62</td>
+      <td>4.57</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>H</td>
+      <td>NO2</td>
+      <td>p-OCH3</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>NC</td>
+      <td>20.74</td>
+    </tr>
+  </tbody>
+</table>
+
+### DYRK1A inhibition blocks neural specification of hESC
 
 In our previous study (Hasegawa et al., 2012), we established that ID-8 treatment modestly increased the replating efficiency of hESC. This effect was further enhanced by addition of WNT3A. WNT3A alone promoted propagation of hESC, but also strongly induced expression of differentiation markers. The addition of ID-8 to WNT3A- treated cells partially suppressed the induction of differentiation markers seen in the presence of WNT3A alone. We therefore first investigated the effects of ID-8 alone on hESC cultured under conditions that promote self-renewal. Propagation of hESC in the presence of ID-8 did not affect the cell cycle distribution of hESC (Figure 2—figure supplement 1a–b), or the overall distribution of the proportion of cells in the culture bearing stem cell surface markers (Figure 2—figure supplement 1c). There was no consistent inhibition of apoptosis by ID-8 (data not shown).
 
 Since we observed previously that the most striking effect of ID-8 on hESC was to inhibit the expression of early lineage specification markers induced by WNT3A, we decided to investigate the effects of the compound on lineage specification in more depth, and to assess the role of DYRK1A inhibition in this effect. Given the importance of DYRK1A in the development of the nervous system, we chose to examine the effects of ID-8 and its homologues on early neural specification in hESC. We used the combined inhibition of BMP and nodal/activin signalling (Chambers et al., 2009) to induce neural specification, and assayed the conversion of hESC to neural progenitors by flow cytometry using a PAX6 reporter cell line developed in our laboratories (Figure 2a, Figure 2—figure supplement 2, and Materials and methods).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig2-v2.jpg)
+
+**Figure 2.:** (A) design of time course experiments. Dual SMAD inhibitor induction was carried out from Day 0–7 and cells were assayed for PAX6 expression on Day 16; ID-8 was added from Day 0–16, Day 0–7, Day 0–9, or Day 9–16. (B) phase contrast micrographs showing morphology of control hESC, neural progenitors induced by dual SMAD inhibition, and neural progenitors incubated with 0.5 µM ID-8 throughout the neural induction protocol, on Day 16. (C) dose response study of the inhibition of induction of PAX 6 positive cells by ID-8 showing flow cytometry profile (left panel) and percentage of PAX6 positive cells (right panel). Error bars, SD; *p<0.05, **p<0.0.01. (D) effect of timing of ID-8 exposure at 0.5 µM on inhibition of PAX6 induction. Error bars, SD; **p<0.05, *p<0.0.01. (E) indirect immunofluorescence analysis of NESTIN (green) and POU5F1 expression (red) in control hESC, neural progenitors, and cultures subjected to neural induction in the presence of 5.0 µM ID-8. Nuclear counterstain, dark blue. (F) flow cytometry profiles showing expression of stem cell surface molecules GCMT-2 and CD9 in control cells, neural progenitors and cultures subjected to neural induction in the presence of 5.0 µM ID-8. A-D, studies carried out with HES3 (PAX6mCherry) cell line; E-F, WA09 hESC.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) flow cytometry profiles of control and ID-8 treated cells following incubation with a pulse of Edu. (B) proportion of cells in GO/G1, S, and G2/M phases in control or ID-8 treated cultures; (C) ID-8 treatment does not alter proportion of cells bearing hESC stem cell surface markers. Dual label flow cytometry profiles for stem cell antigens GCTM-2 and CD9 in control and. ID-8 treated cells.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Structure of the PAX6 targeting vector. The upper line shows the endogenous PAX6 gene with exons (and exon number, e12, e13, e14) indicated by grey boxes. The second line shows the targeting vector with its constituent components, from left to right, the 5’ homology arm, a T2A sequence (2), mCherry (Ch), IRES (I), puromycin resistance gene (P), a loxP flanked PGKNeo cassette (Neo) and the 3’ homology arm. The third line shows the structure of the modified PAX6 locus following integration of the targeting vector. The forth line shows the modified PAX6 locus following cre-recombinase mediated removal of the PGKNeo selection cassette. The protein products predicted to be translated from this locus, PAX6, mCherry and Puromycin resistance, are shown underneath. (B) PCR analysis confirming correct integration of the targeting vector in two independent clones (85, 163). Note these PCR products of the correct size were not generated when wild type (wt) was used as a template.
+
 Dual SMAD inhibition led to the appearance of neural rosettes in control cultures and the induction of PAX6 as expected (Figure 2b–c). However, we observed a clear morphological difference between control cells that had been induced with dual SMAD only versus cells that also received ID-8. The former had formed obvious rosette structures characteristic of early neural differentiation by Day 16, whereas the latter more nearly resembled pluripotent stem cells (Figure 2b). Flow cytometry analysis showed that the addition of dual SMAD inhibitors led to the induction of the early human neural progenitor marker PAX6 (Zhang et al., 2010) in about 75% of cells after 16 days. By contrast, in the presence of ID-8, there was a dose dependent reduction in PAX 6 induction to around 5% of control levels at 5 μM (Figure 2c). We studied the time dependency of the ID-8 effect, to determine whether the compound was required during neural induction or later, after transfer to neural progenitor media. ID-8 had to be present during the period of neural induction and neural progenitor formation to achieve full inhibition of PAX6 expression (Figure 2d); it had no effect if added after the neural induction period. The decrease in PAX6 expression caused by ID-8 was accompanied by a decrease in NESTIN staining and an increase in POU5F1 staining in treated colonies (Figure 2e). We also evaluated the expression of stem cell surface markers in cultures subjected to neural induction alone or in the presence of ID-8. We have previously shown that flow cytometry using the cell surface markers GCTM-2 and CD9 can identify a continuum of pluripotent stem cell states within the population (Hough et al., 2014). Induction with dual SMAD inhibition alone resulted in a rapid depletion of the entire pluripotent stem cell population (Figure 2f). The addition of ID-8 had an unusual effect. As in control cells, dual SMAD inhibition resulted in loss of stem cell marker expression across much of the population, but the fraction expressing the highest level of stem cell markers persisted (Figure 2f). The proportion of cells remaining in this fraction relative to the rest of the population was markedly increased (140 fold) when ID-8 was present during dual SMAD inhibition.
 
-## Effects of known DYRK1A and GSK3β inhibitors and ID-8 analogues on neural specification of hESC
+### Effects of known DYRK1A and GSK3β inhibitors and ID-8 analogues on neural specification of hESC
 
 We then examined the effect of a series of known inhibitors of DYRK1A (Figure 3a) for effects in the PAX6 induction assay. In the same experiments, we also tested a known inhibitor of GSK3ß, to determine if ID-8 activity against this kinase (noted above) could account for its effects on neural induction. CHIR99021, a highly specific GSK3ß inhibitor, is used in some protocols for maintenance of hESC and therefore might be expected to mimic the inhibition of differentiation observed with ID-8 if the latter were acting through the GSK3B pathway. Of the compounds tested, only harmine and CHIR99021 produced statistically significant inhibition of neural induction in the dose tested (Figure 3b). Although some of these previously studied compounds are equipotent inhibitors of DYRK1A compared to ID-8, it is notable that ID-8 and harmine show relative selectivity for DYRK1A and B over DYRK2 and DYRK4 (Supplementary file 3).
 
@@ -70,15 +349,31 @@ We next tested our series of novel indole derivatives of ID-8 for their activity
 
 Although CHIR99021 treatment did reduce the extent of PAX-6 induction by dual SMAD inhibition, unlike ID-8 CHIR99021 co-administration did not result in retention of a pluripotent phenotype. Following neural induction, colonies formed in the presence of CHIR contained fewer POU5F1 positive cells compared to colonies induced in the presence of ID-8 or compound 28 (Figure 3d). These results were corroborated by studies of stem cell surface maker expression (Figure 3e). Expression of the cell surface antigens identified by antibodies GCTM-2 and TG30 (anti-CD9) was abolished by dual SMAD inhibition. Cells subjected to dual SMAD inhibition in the presence of ID-8 or compound 28 retained stem cell surface markers, but cells treated with CHIR99021 did not. These findings suggest that CHIR99021 was acting in a manner different to ID-8 to block neural induction, most probably through activation of the Wnt signaling pathway to induce alternate neural states (more caudal multipotent progenitors or neural crest) in conjunction with inhibition of stem cell renewal by SMAD2/3 inhibition, as shown previously by several groups (Chambers et al., 2016; Denham et al., 2012; Denham et al., 2015; Menendez et al., 2011).
 
-## ID-8 offsets effects of DYRK1A overexpression on neural specification of hESC and DYRK1A knockdown phenocopies effects of inhibitors
+### ID-8 offsets effects of DYRK1A overexpression on neural specification of hESC and DYRK1A knockdown phenocopies effects of inhibitors
 
 Off-target effects of ID-8 on DYRK1B, DYRK2, GSK3B, PIM1 or PIM3 or CLK1 or CLK4 might account for the inhibition of induction of neural differentiation by this compound. GSK3A, DYRK3, DYRK4, or LRRK2 are not expressed in hESC (www.stemformatics.org). The relationships between activity in kinase assays and activity of our panel of compounds in the neural induction bioassay described above would argue against a role for GSK3B, CLK1, CLK4, PIM1 or PIM3. To examine more directly the role of DYRK1A inhibition in the action of ID-8 on neural differentiation, we used a different model, namely a paradigm in which DYRK1A is specifically overexpressed in stem cells (Figure 4a). We used RNA guided gene activation mediated by the CRISPR system to switch on DYRK1A during induction of neural specification. gRNAs were designed to deliver a dCas9-VP64 activator construct to the DYRK1A regulatory region to enhance DYRK1A expression during induction of neural differentiation (Figure 4a). In this system, activation of DYRK1A (Figure 4b) during neural induction led to an increase in PAX6 expression that was offset by ID-8 or the other three inhibitors (compounds 28, 30 and 45, Figure 4c) active in the dual SMAD PAX6 induction assay described above. The DYRK1A inhibitors did not reduce the extent of induction of DYRK1 by CRISPR activation (Figure 4b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig4-v2.jpg)
+
+**Figure 4.:** (A) design of experiment to induce DYRK1A; (B) DYRK1A transcript levels following CRISPR activation in control cells or in presence of ID-8, or compounds 28, 30, or 45. Error bars, SD; **p<0.05. (C) PAX6 transcripts following DYRK1A activation in control cells or cells treated with inhibitors at 50 or 100 nM. Error bars, SD; **p<0.05; all compounds produced significant reductions at all doses at p<0.05. (D) inducible shRNA knockdown of DYRK1A in WA09 hPSC. (E) effect of DYRK1A knockdown on PAX6 transcript levels following dual SMAD induction of neural specification. Result of triplicate experiments shown, mean ±SEM, **p<0.01, ***p<0.001. Studies in A and B were carried out with derivatives of hESC line WA09, those in C and D utilised derivatives of Genea022.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) effect of DYRK1A inhibitors on induction of PAX6 expression following dual SMAD induction of neural specification in WA09, GENEA022, and C11 pluripotent stem cells. (B) effect of DYRK1A shRNA treatment on DYRK1A and PAX6 mRNA levels in GENEA022 hESC line; (C) effect of DYRK1A shRNA treatment on DYRK1A and PAX6 mRNA levels in C11 hiPSC line; (D) effect of DYRK1A knockdown on DYRK1A protein levels relative to that of GAPDH showing immunoblot (left) and results of densitometry analysis (right). A, B, and C show transcript levels relative to those of EFTA. *p<0.05; **p<0.01, ***p<0.001, using an unpaired two-tailed t-test with Welch’s correction.
+
 To further confirm the role of DYRK1A inhibition in blockade of neural specification, we used inducible shRNA to knockdown DYRK1A during neural specification by dual SMAD inhibition. WA09 hESC line was transduced with three separate doxycycline inducible DYRK1A shRNA constructs. Two out of three clones displayed strong knockdown of DYRK1A in the presence of doxycycline (Figure 4d). During neural specification, these two clones showed doxycycline inducible suppression of PAX6 expression (Figure 4e). Thus, DYRK1A knockdown phenocopies the effects of the inhibitors on PAX6 expression. We then confirmed the effects of inducible shRNA knockdown of DYRK1A in two more pluripotent stem cell lines, GENEA022 (the hESC line used in the DYRK1A activation study above) and C11(an hiPSC cell line). First we demonstrated that our active small molecule DYRK1A inhibitors could block the induction of PAX6 transcripts during neural induction by dual SMAD inhibition in WA09, GENEA022 and C11 cell lines (Figure 4—figure supplement 1A). Then we showed that shRNA knockdown of DYRK1A could phenocopy the effects of the inhibitors in GENEA022 and C11 cells (Figure 4—figure supplement 1B,C). Immunoblotting of detergent extracts of WA09 cells treated with scrambled control shRNA or DYRK1A shRNA in the presence of doxycycline confirmed significant reduction of DYRK1A protein levels by two of the constructs (Figure 4—figure supplement 1D).
 
-## Modelling of ID-8/DYRK1A interaction
+### Modelling of ID-8/DYRK1A interaction
 
 Eleven X-ray crystal structures are available for DYRK1A in complex with a range of ligands (Figure 5—figure supplement 1). In order to rationalize the structure-activity relationships of the ID-8 analogues, we sought to understand how these compounds bind to DYRK1A by molecular modelling. Seven reported structures deposited in the protein databank were superimposed using Maestro and the ligand binding sites were closely examined (Figure 5a). In the majority of cases the amino group of K188 and the amide nitrogen atom of L241 were involved in hydrogen bonding to the ligands. In these crystal structures containing diverse ligands, the ligands bind to both of these amino acids through polar interactions with either nitrogen or oxygen atoms. The average distance between both interacting atoms on the ligands was 8.3 ± 0.2 Å.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig5-v2.jpg)
+
+**Figure 5.:** (A) Overlay of seven ligand-bound X-ray structures of ligand-bound complexes of DYRK1A showing similar positioning of active site residues K188, E203, E239 and L241 (PDB codes: 5AIK, 3ANQ, 3ANR, 4YU2, 4MQ1, MQ2 and 4AZE). (B) Overlay of the docked pose of ID-8 (grey) with the experimentally-determined pose of LDN-211898 (green) with DYRK1A derived from the 5AIK structure. (C) Overlay of docked poses of ID-8 (grey) and compound 45 (orange). Maestro (version 2015–3) was used to dock ligands into 5AIK using the XP algorithm and the default settings were applied.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/24502/elife-24502-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The information in parentheses is the PDB code for the relevant structure.
 
 Using the crystal structure complexed with LDN-211898 (PDB code 5AIK) a set of docking experiments using ID-8 and compound 45 were undertaken. ID-8 docked in three alternative modes, one of which was very similar to the bound states of other DYRK1 ligands, as illustrated by overlay with the experimentally-determined LDN-211898 bound into 5AIK (Figure 5b). In this pose, the plane of the indole ring of ID-8 coincides with the aromatic sections of LDN-211898. ID-8 docks such that there is a hydrogen bond from the 6-hydroxyl to the amide group of L241, which is achieved from a slightly different direction to LDN-211898 by binding deeper into the active site, while the para-methoxy group of ID-8 is bound to E203 (adjacent to the amino group of K188). The distance between the two interacting atoms of ID-8 is 8.22 Å, similar to that of other DYRK1A inhibitors. Similarly, the amino group of K188 hydrogen bonds to the para-hydroxyl group of ID-8 by placing this hydroxyl group deep into the binding site. Compound 45 was able to dock into the binding site of 5AIK (Figure 5c) forming hydrogen bonds between the 6-hydroxyl and the amide nitrogen of L241 (2.97 Å) as well as the backbone carbonyl group of E239 (3.09 Å). The nitro group formed an interaction with the primary amino group of K188 (3.02 Å). The distance between the two interacting oxygen atoms of compound 45 is 7.78 Å. While compound 45 did not dock in the same mode as ID-8 it is easily be envisaged that this mode of binding is possible, as this compound possesses the same key polar interaction oxygens present in ID-8. A confounding factor encountered in docking both ID-8 and 45 is that the nitro group is more polar than the other two hydrogen bonding groups, and the docking algorithm is biased towards placing this group within the site to achieve polar interactions.
 
@@ -98,42 +393,42 @@ Careful inspection of flow cytometry profiles after ID-8 treatment revealed that
 
 ## Materials and methods
 
-## DYRK1A inhibitors and other compounds
+### DYRK1A inhibitors and other compounds
 
 LDN193189 (Stemgent, Lexington, MA, #130-096-226), SB431542 (Stemgent, #130-097-448), CHIR99021 (Stemgent, #130-095-555) and harmine hydrochloride (Sigma-Aldrich, St. Louis, MO, #SMB00461) were purchased from commercial suppliers. All other inhibitors were synthesised as described in the Supplemental Methods. All compounds were solid powders, stable at room temperature. Compounds were dissolved in DMSO to achieve desired stock concentrations, and were aliquoted for long-term storage at −20 or −80°C. Stock concentrations were diluted further in DMSO, to desired concentration for adding to cell culture, such that DMSO concentration in cell culture media did not exceed 0.15%.
 
-## Kinase inhibition assays
+### Kinase inhibition assays
 
 Kinase inhibition assays were performed by Reaction Biology (www.reactionbiology.com). Each kinase was produced as a recombinant protein and used a matched peptide substrate. The reaction buffer was 20 mM Hepes (pH 7.5), 10 mM MgCl2, 1 mM EGTA, 0.02% Brij35, 0.02 mg/ml BSA, 0.1 mM Na3VO4, 2 mM DTT, 1% DMSO. Radioassays were performed using 10 μM ATP and 10 μCi/μl [γ-33P]ATP. Enzyme concentrations were 0.2–50 nM, and peptide substrate concentration was 20 μM. Reactions were incubated for 2 hr at room temperature, then spotted onto P81 ion exchange paper, and product detected by radiometry. For initial screening, candidate inhibitors were included at 10 μM, and activity was calculated as percentage inhibition relative to the control with no inhibitor. For determination of IC50 values, inhibitors were included into kinase reactions at 10 concentrations with 3-fold serial dilutions starting at 30 μM.
 
-## Cell lines
+### Cell lines
 
 WA09 and HES3 (PAX6mCherry)cell lines were maintained by and provided by the Stem Cell Core Facility of Stem Cells Australia. The knock-in reporter HES3 (PAX6mCherry) cells were developed as described (below). hESC lines WA09 (obtained from WiCell (WA09 MEF platform), GENEA022 (provided by Genea Biocells), and hiPSC line C11 (Briggs et al., 2013) were maintained at the University of Queensland laboratories on fibroblast feeder cell support in medium supplemented with Knockout Serum Replacer and FGF-2 (Invitrogen/Thermofisher Scientific, Waltham, MA), with daily media changes. For propagation in defined media, WA9 cells were adapted from culture on mouse embryo fibroblasts (mechanically dissociated organ cultures) at passage 74 or 87, and maintained thereafter on hES-qualified Matrigel in mTesR1 (STEMCELL Technologies, Vancouver, BC, Canada) medium using dispase to disaggregate the cells. HES3(PAX6mCherry) were cultured on hES-qualified Matrigel in mTesR1 medium. Medium was changed daily, and cells were passaged with dispase. Cell line identity was confirmed by STR profiling.
 
-## Generation of the PAX6 targeting vector
+### Generation of the PAX6 targeting vector
 
 DNA fragments representing the 5’ and 3’ homology arms were derived from bacterial artificial chromosome clones (BAC) RP11-26B16 and RP11-307I15 (Roswell Park Cancer Institute), which included sequences spanning the PAX6 stop codon. The PAX6 targeting vector was assembled using a combination of recombineering and standard cloning procedures. Sequences representing the 3.6 Kb 5’ homology arm were amplified by PCR and subsequently cloned into a vector containing a PGKNeo selection cassette and sequences corresponding to the 7.8 Kb 3’ homology arm, the latter having been previously introduced into this plasmid using recombineering. This vector was then linearised at an Mlu1 site at the junction of the 5’ homology arm and the PGKNeo selection cassette, enabling the sequential introduction of a T2A sequence that replaced the PAX6 stop codon and, an mCherry-IRES-puromycin cassette. Prior to electroporation, the final plasmid was digested with Pac1 and AsiS1 to release the targeting vector as depicted in Figure 2—figure supplement 2a.
 
-## Generation of the PAX6-mCherry reporter line
+### Generation of the PAX6-mCherry reporter line
 
 The HES3 cell line (Richards et al., 2002) was electroporated with the PAX6 targeting vector using standard conditions (Costa et al., 2007). Single G418 resistant colonies were screened for correct integration of the targeting vector using PCR primers that corresponded to sequences within the PGKneo cassette and genomic sequences 3’ of the 3’ end of the 3’ PAX6 homology arm: neo4 (cgatgcctgcttgccgaatatcatg) & 39783R (gccgattcctgagcctttcatacc). Two positive clones identified in this initial screen were then validated by repeating the PCR analysis performed in the original screen and by performing a second PCR analysis that confirmed correct recombination of the vector at the 5’ end. This second PCR, which utilised the primer pairs cherryrev2 (ccatgttatcctcctcgcccttgc) and 27749F (gctaacctgtcccacctgatttcc), generated the predicted product of 8.6 Kb. The result of this confirmatory PCR analysis is shown in Figure 2—figure supplement 2b. These positive clones were expanded and subsequently transfected with a cre recombinase expression vector as described previously (Davis et al., 2008), resulting in excision of the PGKNeo cassette. Successful removal of this cassette was confirmed using PCR analysis. Subclones of each primary clone were then submitted for karyotype analysis, performed by the Cytogenetics Department at Southern Cross Pathology, Monash Medical Centre. A single subclone, PAX6 # 85.2 with a normal female karyotype was then chosen for further analysis.
 
-## Neural induction assay
+### Neural induction assay
 
 The neural induction assay involved the directed differentiation of hESC to neural progenitor cells, and is based on the dual-SMAD inhibition methods by Chambers et al. (2009). HES3(PAX6mCherry) or WA09 cells in mTeSR1 were passaged using 1 mg/ml dispase onto Matrigel coated 3 cm dishes and cultured in mTesR1. The cells were grown to minimum 30% confluency prior to supplementation with 5 µM SB431542 and 100 nM LDN193189, in the presence or absence of kinase inhibitors diluted in DMSO, or DMSO vehicle only for the controls, with a total DMSO concentration of 0.15% in each dish. Media was changed every 2 days, with continual inhibitor supplementation. At day 7, the cells were transferred into Neurobasal media (Invitrogen/Thermofisher) with FGF2 and EGF, continuing kinase inhibitor supplementation, without LDN/SB inhibitors. At day 9, cells were mechanically lifted/scraped from the bottom of the dish, dissociated to clumps by pipetting, and passaged onto fresh Matrigel coated 3 cm dishes in Neurobasal medium supplemented with 5 μM Rho kinase inhibitor Y-27632, achieving approximately 30% confluency immediately following passage. At day 11, Rho kinase inhibitor was withdrawn, and cells were maintained in Neurobasal media with continual supplementation of DYRK inhibitors with media changes every 2 days, until the cells were fixed for immunofluorescence or harvested for flow cytometry. For statistical analysis, P values were calculated using a paired two-tailed Student’s t-test with correction for multiple comparisons using the Benjamin-Hochberg procedure with a false discovery rate of 0.075. All experiments were repeated 2–3 times with three technical replicates in each data point.
 
-## Measurement of pluripotency marker expression, proliferation and apoptosis
+### Measurement of pluripotency marker expression, proliferation and apoptosis
 
 Flow cytometry measurement of the expression of the pluripotent stem cell surface markers GCTM2 and CD9, and indirect immunofluorescence microscopy for POU5F1 and nestin on paraformaldehyde fixed adherent cell cultures, were performed as previously described (Hough et al., 2014). The cell cycle distribution of control and ID-8 treated pluripotent WA09 cells was analysed using the Click-IT EdU Flow Cytometry Kit AF488 (Invitrogen/Thermofisher, #C-10425). Apoptosis of control and ID-8 treated pluripotent WA09 cells was analysed using the Abcam In situ BrdU-Red DNA Fragmentation (TUNEL) Assay Kit (Abcam, Cambridge, MA). Both kits were used according to the manufacturers’ instructions. All experiments were repeated two to three times.
 
-## Effect of indole compounds on induction of neural specification driven by DYRK1a overexpression
+### Effect of indole compounds on induction of neural specification driven by DYRK1a overexpression
 
 To identify gRNAs capable of driving CRISPRa activation of the DYRK1A gene, a number of unique 20mers in region between −250 to −50 bps relative to the main transcription start site were cloned in the pX462 gRNA and dCas9-VP64-expression vector and tested by transfection into the 293FT human cells, with subsequent qPCR analysis of DYRK1A expression. Generation of stable cell lines was achieved by transduction of the 2 selected best-performing gRNA (gRNA #1 CCGGCAAATACCGCAGTCCC; gRNA#2, CGCTGGAACCGCGAGCCGAG)-expressing lentiviruses (pLKO.1-sgRNA-Neo) into the recipient pre-validated hESC Genea022 line expressing HA-dCas9-VP64 in a doxycycline-inducible fashion. Neural differentiation, used as a backdrop for the inhibitor assay, was performed for 6 days in KSR medium supplemented with 10 µM SB431542 and 0.5 µM LDN193189 and devoid of pluripotency-maintenance growth factors. Control cultures grown ±doxycyline, and cultures treated with inhibitor compounds, contained 0.1% DMSO for the duration of the assay. For statistical analysis, P values were calculated using a paired two-tailed Student’s t-test with correction for multiple comparisons using the Benjamin-Hochberg procedure with a false discovery rate of 0.075. All experiments were repeated 2–3 times with three technical replicates per data point.
 
-## DYRK1A knockdown studies
+### DYRK1A knockdown studies
 
 For an inducible knockdown of the DYRK1A expression, we transduced human pluripotent stem cell cultures (WA09, GENEA022, and C11) with VSV-G-pseudotyped lentiviral particles: one control (non-targeting) and three DYRK1A ORF-targeting shRNAs in doxycycline-inducible SMARTvectors (GE Healthcare/Dharmacon, product # DHA-VSC11653 and V3SH11255). The virus was packaged using the 293FT cell line (LifeTechnologies/Invitrogen) transfected with a second-generation lentiviral packaging plasmid psPAX2, a gift from Didier Trono (Addgene plasmid # 12260). Selection for cells harboring expressable proviral integrants was started 5 days after transduction with puromycin at 2 μg/mL. DYRK1A knockdown was induced by treatment with doxycycline at 0.5 μg/mL for 3 days prior to, and during the 6 days of, the dual SMAD inhibition-driven neural differentiation. Effects of small molecule DYRK1A inhibitors and shRNA on DYRK1A and PAX6 transcript induction during neural specification were assessed in the cell lines used for knockdown studies at Day 16 in the protocol described above. PAX6 transcript levels were measured by qPCR on total RNA (0.5 µg)-derived cDNA (using iScript polyA and random-priming cDNA synthesis system, Bio-Rad) extracted from pluripotent cells subjected to a standard (dual SMAD inhibition) neuroepithelial differentiation in presence of the indicated compounds for 16 days. Detergent extracts of shRNA treated cells were separated on denaturing and reducing 12% tris-glycine-sodium dodecyl sulphate acrylamide gels. The samples were prepared using a protease and phosphatase-supplemented mix of RIPA and 2x Laemmli buffers (Sigma-Aldrich). Following gel transfer to polyvinylidene difluoride membranes, the blots were probed using primary antibodies against DYRK1A (D30C10 Rabbit mAb #8765, Cell Signalling Technologies,U.S.A.) and GAPDH (14C10 Rabbit mAb #2118, CST), and a secondary anti-rabbit IgG, HRP-linked Antibody (#7074, CST). Visualisation was performed using Clarity ECL substrate, and densitometric quantification performed using ImageLab4.1 software (Bio-Rad, U.S.A.).
 
-## Structural modelling
+### Structural modelling
 
 Eleven crystal structures are available of DYRK1A with bound ligands. These were superimposed using Maestro and an analysis of the binding sites was carried out. Maestro (version 2015–3) was used to dock ligands into 5AIK using the XP algorithm and the default settings were applied. The protein was prepared using the protein preparation wizard.

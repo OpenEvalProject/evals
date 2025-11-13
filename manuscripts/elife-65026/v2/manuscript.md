@@ -43,17 +43,450 @@ Overall, we find evidence that a large fraction of microRNA promoters (and, thus
 
 ## Results
 
-## Longitudinal observation of PmiRNA::GFP reporters
+### Longitudinal observation of PmiRNA::GFP reporters
 
 To identify genes whose expression early in life is predictive of future lifespan, we selected 22 integrated miRNA fluorescent reporters (PmiRNA::GFP) from a larger library of 73 transgenic strains (Martinez et al., 2008), using as the only selection criterion the ability to detect reporter fluorescence with short (<100 ms) exposure times at ×5 magnification on our imaging system. Most of the miRNAs corresponding to the selected reporters have no reported function, and in particular, no lifespan phenotype upon knockout (Table 1).
 
+**Table 1.**
+ miRNAs corresponding to PmiRNA::GFP reporters selected for this study and the predominant expression pattern and time window of expression, as observed at ×5 magnification.Published regulatory functions and lifespan phenotypes for each miRNA are noted. Bold text indicates miRNAs that we found to be predictive of lifespan in this current study, as measured by correlation of PmiRNA::GFP expression with lifespan.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>miRNA</th>
+      <th>Expression pattern</th>
+      <th>Time window of expression</th>
+      <th>Regulatory function</th>
+      <th>Lifespan phenotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>let-7</td>
+      <td>Ubiquitous</td>
+      <td>Embryo–death</td>
+      <td>Developmental timing (Reinhart et al., 2000)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>lin-4</td>
+      <td>Ubiquitous</td>
+      <td>L1–death</td>
+      <td>Developmental timing (Wightman et al., 1993)</td>
+      <td>lin-4(e912) are short-lived; lin-4 overexpression extends lifespan (Boehm, 2005)</td>
+    </tr>
+    <tr>
+      <td>mir-1</td>
+      <td>Pharynx</td>
+      <td>Embryo–death</td>
+      <td>Synaptic function (Simon et al., 2008)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-228</td>
+      <td>Neurons</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>mir-228(n4382) are long-lived; mir-228 overexpression shortens lifespan (Smith-Vikos et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>mir-240–786</td>
+      <td>Uterus, gonad sheath</td>
+      <td>L3–death</td>
+      <td>Defecation (Kemp et al., 2012)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-241</td>
+      <td>Hypodermis</td>
+      <td>L1–four dph</td>
+      <td>Developmental timing (Abbott, 2005)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-242</td>
+      <td>Neurons</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-243</td>
+      <td>Intestine</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-246</td>
+      <td>Gonad sheath</td>
+      <td>L4–death</td>
+      <td>–</td>
+      <td>mir-246(n4636) are short-lived; mir-246 overexpression extends lifespan (de Lencastre et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>mir-360</td>
+      <td>Pharynx</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-47</td>
+      <td>Hypodermis, vulva</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-51</td>
+      <td>Intestine</td>
+      <td>Embryo–death</td>
+      <td>Developmental timing (Brenner et al., 2012), GABAergic synapses (Zhang et al., 2018)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-59</td>
+      <td>Vulva</td>
+      <td>L4–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-60</td>
+      <td>Intestine</td>
+      <td>Embryo–death</td>
+      <td>Oxidative stress response (Kato et al., 2016)</td>
+      <td>mir-60(n4947) are long-lived under oxidative stress conditions (Kato et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>mir-63</td>
+      <td>Intestine</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-788</td>
+      <td>Hypodermis</td>
+      <td>Embryo–four dph</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-79</td>
+      <td>Hypodermis</td>
+      <td>Embryo–five dph</td>
+      <td>Proteoglycan homeostasis (Pedersen et al., 2013)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-793</td>
+      <td>Neurons</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-794</td>
+      <td>Body wall muscle, intestine</td>
+      <td>Embryo–four dph</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-84</td>
+      <td>Pharynx, vulva</td>
+      <td>L1–death</td>
+      <td>Developmental timing (Abbott, 2005)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-85</td>
+      <td>Gonadal sheath, uterus, spermatheca</td>
+      <td>L2–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>mir-90</td>
+      <td>Body wall muscle, vulva</td>
+      <td>Embryo–death</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
 Each reporter was crossed into the temperature-sensitive sterile strain spe-9(hc88) and examined in a high-density single animal culture device previously developed by our lab (Figure 1a; Zhang et al., 2016; Pittman et al., 2017) maintained at 25°C. For each PmiRNA::GFP;spe-9(hc88) strain, we collected bright-field and fluorescence images of each individual every 4 hr from hatch until death. Using an in-house image analysis pipeline, the C. elegans in each bright-field image was automatically identified, defining a mask that separates ‘worm pixels’ from the image background. We converted images of GFP fluorescence, which contain many thousands of pixel intensities within the image region corresponding to a single animal, into a single summary statistic. This allowed us to quantify PmiRNA::GFP expression over time within a single individual (Figure 1b, left; see Materials and methods for details). We then averaged the fluorescence measurements across all individuals to capture the overall population trend in expression of each reporter over time (Figure 1b, right, and 1 c), which is consistent with individual expression trends (Figure 1—figure supplement 2). For some reporters, such as Pmir-788::GFP, expression analysis was limited to shortened time windows, as late in life, reporter fluorescence becomes indistinguishable from background autofluorescence (see Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of high-density single animal culture device and representative bright-field and fluorescent images acquired from a single Pmir-47::GFP; spe-9(hc88) individual. (b) Timecourse of Pmir-47::GFP expression for a single animal from hatch until death (left). Expression is measured as the maximum pixel intensity within the image region comprising that individual, from images acquired every 4 hr. LOWESS regression showing the average population timecourse of Pmir-47::GFP expression, collated from five biological replicates comprising more than 400 individuals (right). (c) Population timecourse of expression for all PmiRNA::GFP reporters. (Fluorescent values are in arbitrary units; in all cases the bottom of the y-axis is approximately the noise floor of the camera sensor).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The masks produced from automatic image segmentation are at left and color-coded to show worm pixels captured by a 95th percentile (magenta), 99th percentile (orange), and 99.9th percentile (blue) intensity threshold.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig1-figsupp3-v2.jpg)
 
 We observed several categories of temporal dynamics among the reporters. Expression of some, such as Plet-7::GFP, Pmir-788::GFP, Pmir-79::GFP, Pmir-85::GFP, and Pmir-84::GFP, peak during young adulthood and sharply decline thereafter, in some cases becoming undetectable with age. Expression of others, like Pmir-793::GFP, Pmir-246::GFP, and Pmir-228::GFP, also decrease with age but exhibit a slower decline or plateau after young adulthood. Overall, the majority of PmiRNA::GFP reporters decreased with age, in agreement with previously published microarray (Ibáñez-Ventoso et al., 2006) and small-RNA sequencing studies (de Lencastre et al., 2010; Kato et al., 2011). Unusual for miRNAs, Pmir-51::GFP, Pmir-242::GFP, and Pmir-240–786::GFP show an increase in expression over time (Figure 1c). This increase was also observed with small RNA sequencing (de Lencastre et al., 2010; Kato et al., 2011), indicating that the PmiRNA::GFP reporters generally reflect age-related trends in endogenous transcription of miRNAs. In contrast to sequencing, however, this work provides a more detailed picture of expression trends over time.
 
-## PmiRNA::GFP reporters are predictive biomarkers of future lifespan
+### PmiRNA::GFP reporters are predictive biomarkers of future lifespan
 
 In order to visualize the relationship between PmiRNA::GFP expression and longevity (if any), we binned populations of the PmiRNA::GFP reporter strains into cohorts based on eventual lifespan (Figure 2a) and plotted average reporter expression for each lifespan-cohort over time (Figure 2b and d). For a subset of PmiRNA::GFP reporters, the average expression level and rate of change of expression appeared to differ substantially between cohorts in mid- to late- adulthood, indicating that reporter expression may be predictive of an individual’s future lifespan. To test this quantitatively, we performed a multivariate regression on each individual animal’s average level of GFP expression and the trend in GFP expression (positive or negative slope) against future lifespan (Figure 2c and d; Table 2). Because the temporal dynamics of the different PmiRNA::GFP reporters vary substantially, we used a sliding time window to determine the optimal span of expression data to include in the regression for each reporter strain. We examined GFP expression bounded between 3 days post-hatch (dph; approximately the first day of adulthood) and the time of 90% population survival. Note that that the time of 90% survival varied among strains, due to per-strain differences and, to a lesser extent, batch and seasonal effects (Table 2). We performed regressions using GFP levels at all possible windows within the overall bounds, by independently moving beginning and ending timepoints of the window at 12 hr intervals. Individuals that died before or within the chosen window were censored from analysis to avoid truncation effects (these short-lived individuals necessarily have fewer expression measurements, which can confounding analysis). The window that resulted in the maximum correlation between expression and lifespan was selected (Table 2). Similar results obtain using a simple, fixed time-window between 3 days post-hatch and the 90% survival timepoint, or repeating the variable-window analysis bounded between three dph and the 95% survival timepoint (tables S1 and S2 in Supplementary file 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig2-v2.jpg)
+
+**Figure 2.:** (a) Survival curve for Pmir-47::GFP; spe-9(hc88) individuals pooled from five biological replicates. Animals are binned into color-coded quintiles based on eventual lifespan. The number of individuals in each quintile is indicated. (b) LOWESS regression of each quintile’s average Pmir-47::GFP expression (as measured by maximum intensity per individual at each timepoint) is plotted over time for the quintiles in panel a. (c) Joint regression of both the mean level of each individual’s Pmir-47::GFP expression between 5 and 8.5 days post-hatch, and the slope of that expression over that time, against future lifespan yields an R2 of 0.313. Each dot represents an individual animal and is color-coded based on lifespan. (d) Cohort-level expression timecourse and joint regression of slope and mean expression against future lifespan for all PmiRNA::GFP reporters. This mean and slope were measured across the optimal time window for each reporter’s correlation with future lifespan (specified in Table 2). Correlation coefficients > 0.15 are indicated by bolded text.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Regression on both the slope and average of individual Pcpna-2::GFP expression 72–196 hr post-hatch and future lifespan yields an R2 of 0.018, while regression on Pmyo-2::GFP expression 72–168 hr post-hatch and future lifespan yields an R2 of 0.071.
+
+**Table 2.**
+ Correlation of PmiRNA::GFP reporters with lifespan.A joint regression of slope and average expression against lifespan was performed using a sliding time window (minimum width of 12 hr) beginning at 3 days post-hatch and ending at the 90% survival timepoint, which we observed to be variable between strains. The optimal time window and highest correlation achieved is reported. R2 values exceeding 0.15 are indicated by bolded text. The 95% confidence interval (CI) for each joint correlation coefficient is also shown. The direction of correlation, derived from the individual regression on slope and mean expression (which we observed to always correlate in the same direction), is indicated by (+) or (-), respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>miRNA</th>
+      <th>N</th>
+      <th>Measure of pixel intensity</th>
+      <th>Time window (dph)</th>
+      <th>Slope R2</th>
+      <th>Mean R2</th>
+      <th>Joint R2</th>
+      <th>Joint 95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>let-7</td>
+      <td>289</td>
+      <td>99th percentile</td>
+      <td>6.0–9.5</td>
+      <td>0.024</td>
+      <td>0.012</td>
+      <td>0.041</td>
+      <td>[−0.002, 0.085]</td>
+    </tr>
+    <tr>
+      <td>lin-4</td>
+      <td>193</td>
+      <td>Mean over 99th percentile</td>
+      <td>4.5–9.0</td>
+      <td>0.211</td>
+      <td>0.029</td>
+      <td>0.212 (+)</td>
+      <td>[0.124, 0.306]</td>
+    </tr>
+    <tr>
+      <td>mir-1</td>
+      <td>79</td>
+      <td>Maximum (head)</td>
+      <td>6.0–7.5</td>
+      <td>0.102</td>
+      <td>0.025</td>
+      <td>0.117</td>
+      <td>[0.008, 0.234]</td>
+    </tr>
+    <tr>
+      <td>mir-47</td>
+      <td>403</td>
+      <td>Maximum</td>
+      <td>5.0–8.5</td>
+      <td>0.158</td>
+      <td>0.158</td>
+      <td>0.313 (+)</td>
+      <td>[0.240, 0.388]</td>
+    </tr>
+    <tr>
+      <td>mir-51</td>
+      <td>87</td>
+      <td>Maximum</td>
+      <td>8.0–8.5</td>
+      <td>0.025</td>
+      <td>0.048</td>
+      <td>0.098</td>
+      <td>[−0.010, 0.211]</td>
+    </tr>
+    <tr>
+      <td>mir-59</td>
+      <td>104</td>
+      <td>95th percentile (vulva)</td>
+      <td>4.5–5.0</td>
+      <td>0.002</td>
+      <td>0.092</td>
+      <td>0.092</td>
+      <td>[−0.020, 0.186]</td>
+    </tr>
+    <tr>
+      <td>mir-60</td>
+      <td>221</td>
+      <td>99th percentile</td>
+      <td>7.5–8.5</td>
+      <td>0.035</td>
+      <td>0.238</td>
+      <td>0.277 (+)</td>
+      <td>[0.137, 0.402]</td>
+    </tr>
+    <tr>
+      <td>mir-63</td>
+      <td>139</td>
+      <td>99th percentile</td>
+      <td>5.0–9.5</td>
+      <td>0.118</td>
+      <td>0.053</td>
+      <td>0.135</td>
+      <td>[0.047, 0.230]</td>
+    </tr>
+    <tr>
+      <td>mir-79</td>
+      <td>86</td>
+      <td>Maximum</td>
+      <td>3.5–4.0</td>
+      <td>0.005</td>
+      <td>0.010</td>
+      <td>0.025</td>
+      <td>[−0.033, 0.076]</td>
+    </tr>
+    <tr>
+      <td>mir-84</td>
+      <td>142</td>
+      <td>99th percentile</td>
+      <td>9.0–9.5</td>
+      <td>0.000</td>
+      <td>0.091</td>
+      <td>0.091</td>
+      <td>[−0.016, 0.187]</td>
+    </tr>
+    <tr>
+      <td>mir-85</td>
+      <td>187</td>
+      <td>99th percentile</td>
+      <td>3.5–7.0</td>
+      <td>0.157</td>
+      <td>0.052</td>
+      <td>0.166 (+)</td>
+      <td>[0.075, 0.257]</td>
+    </tr>
+    <tr>
+      <td>mir-90</td>
+      <td>181</td>
+      <td>95th percentile</td>
+      <td>8.0–8.5</td>
+      <td>0.014</td>
+      <td>0.215</td>
+      <td>0.229 (+)</td>
+      <td>[0.116, 0.340]</td>
+    </tr>
+    <tr>
+      <td>mir-228</td>
+      <td>157</td>
+      <td>Mean over 99th percentile</td>
+      <td>5.0–7.0</td>
+      <td>0.194</td>
+      <td>0.070</td>
+      <td>0.239 (+)</td>
+      <td>[0.129, 0.350]</td>
+    </tr>
+    <tr>
+      <td>mir-240–786</td>
+      <td>172</td>
+      <td>95th percentile</td>
+      <td>7.5–8.5</td>
+      <td>0.043</td>
+      <td>0.268</td>
+      <td>0.291 (-)</td>
+      <td>[0.168, 0.419]</td>
+    </tr>
+    <tr>
+      <td>mir-241</td>
+      <td>97</td>
+      <td>99th percentile (head)</td>
+      <td>3.0–3.5</td>
+      <td>0.013</td>
+      <td>0.037</td>
+      <td>0.051</td>
+      <td>[−0.038, 0.133]</td>
+    </tr>
+    <tr>
+      <td>mir-242</td>
+      <td>111</td>
+      <td>Maximum</td>
+      <td>4.5–5.5</td>
+      <td>0.050</td>
+      <td>0.010</td>
+      <td>0.051</td>
+      <td>[−0.041, 0.130]</td>
+    </tr>
+    <tr>
+      <td>mir-243</td>
+      <td>339</td>
+      <td>Mean</td>
+      <td>3.5–7.5</td>
+      <td>0.299</td>
+      <td>0.110</td>
+      <td>0.328 (+)</td>
+      <td>[0.254, 0.409]</td>
+    </tr>
+    <tr>
+      <td>mir-246</td>
+      <td>187</td>
+      <td>95th percentile</td>
+      <td>6.5–8.5</td>
+      <td>0.124</td>
+      <td>0.124</td>
+      <td>0.225 (+)</td>
+      <td>[0.124, 0.332]</td>
+    </tr>
+    <tr>
+      <td>mir-360</td>
+      <td>99</td>
+      <td>Maximum</td>
+      <td>4.0–5.0</td>
+      <td>0.070</td>
+      <td>0.000</td>
+      <td>0.070</td>
+      <td>[−0.032, 0.157]</td>
+    </tr>
+    <tr>
+      <td>mir-788</td>
+      <td>187</td>
+      <td>Maximum</td>
+      <td>3.0–3.5</td>
+      <td>0.000</td>
+      <td>0.005</td>
+      <td>0.006</td>
+      <td>[−0.029, 0.037]</td>
+    </tr>
+    <tr>
+      <td>mir-793</td>
+      <td>175</td>
+      <td>Maximum</td>
+      <td>6.0–10.0</td>
+      <td>0.166</td>
+      <td>0.091</td>
+      <td>0.224 (+)</td>
+      <td>[0.146, 0.312]</td>
+    </tr>
+    <tr>
+      <td>mir-794</td>
+      <td>91</td>
+      <td>Maximum</td>
+      <td>3.0–3.5</td>
+      <td>0.009</td>
+      <td>0.082</td>
+      <td>0.093</td>
+      <td>[−0.032, 0.209]</td>
+    </tr>
+  </tbody>
+</table>
 
 Expression of 10 of the 22 tested PmiRNA::GFP reporters exhibited an ability to reproducibly predict lifespan with a joint correlation coefficient (R2) of at least 0.15: the reporters for miRNAs lin-4, mir-47, mir-60, mir-85, mir-90, mir-228, mir-240–786, mir-243, mir-246, and mir-793 (Table 2). The R2 value in this case represents the fraction of total inter-individual variation in lifespan that can be accounted for by the inter-individual variation in measured GFP levels of a single reporter.
 
@@ -63,9 +496,21 @@ In each case, extended lifespan was correlated with retention of young-adult gen
 
 We next examined how the lifespan-predictive power of the PmiRNA::GFP reporters changes throughout adulthood. For every 24 hr period post-hatch, we jointly regressed each individual’s average expression and the slope of the expression trend over those 24 hr against that individual’s eventual lifespan (Figure 3a). We plotted the resulting correlation coefficient over time to illustrate how the predictive power of the reporter changes with aging (Figure 3a and b). Expression of predictive PmiRNA::GFP reporters generally begins to correlate with future lifespan when measured at mid to late adulthood, becoming more predictive over time. Comparing the correlation plot with the population survival curve revealed that reporter predictivity peaks simultaneously with the beginning of population die-off, continuing to significantly correlate with lifespan as more individuals in the population perish (Figure 3a and b). However, reporters do not simply correlate with imminent death, as for this analysis we excluded individuals that perished within the 24 hr time window. Moreover, excluding even those that perish within the subsequent 24 or 48 hr does not abolish predictive power for most reporters (Figure 3—figure supplement 1). None of the reporters we examined showed substantial correlation with future lifespan at timepoints less than 5 days post-hatch (roughly young adulthood). This result would be expected if reporter expression levels were identical across individuals early in life, and individuals’ expression levels only diverged later in adulthood. However, we found that the degree of inter-individual variability in reporter levels is largely consistent throughout life (Figure 1—figure supplements 2 and 3). This suggests that only at mid-adulthood do pre-existing inter-individual differences in PmiRNA::GFP expression become coupled to the aging process and future lifespan.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig3-v2.jpg)
+
+**Figure 3.:** (a) Construction of correlation plot for Pmir-47::GFP. Mean and slope of expression values for each individual during a sliding 24 hr time window, starting at 3 dph, were regressed against future lifespan. The regressions for 48–72 hr (window centered at 3 dph, left) and 192–216 hr (9 dph, right) are shown. At center, the correlation coefficient from each regression is plotted against the age at the middle of the regression window (solid line). The survival curve for the population is overlaid (dashed line). The 90% survival timepoint is indicated by the green arrow. (b) Correlation plots for remainder of predictive PmiRNA::GFP reporters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The resulting correlation coefficients were plotted against the middle of the window in which expression was measured and overlaid with the survival curve for the population (gray). The 90% survival timepoints are shown with green arrows.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The resulting correlation coefficient was then plotted against the corresponding timepoint and overlayed with the survival curve for the population (gray). The 90% survival timepoints are indicated by green arrows.
+
 Interestingly, we found that autofluorescence intensity, a phenomenological measure that negatively correlates with lifespan (Pincus et al., 2016), is predictive of future longevity at approximately the same time in adulthood as are most of the PmiRNA::GFP reporters we examined (Figure 3—figure supplement 2). However, PmiRNA::GFP expression and autofluorescence provide largely non-redundant information with respect to future lifespan, based on the near-additivity of correlation coefficients in single vs. joint regression (table S5 in Supplementary file 1). This suggests that although both act as biomarkers of future lifespan, they likely report on distinct aspects of the aging process.
 
-## Variable expression of mir-47 and mir-243 are not determinants of individual variability in lifespan
+### Variable expression of mir-47 and mir-243 are not determinants of individual variability in lifespan
 
 Expression of the PmiRNA::GFP constructs can only correlate with future lifespan if there is some biological process which both (a) determines individual lifespan and (b) directly or indirectly regulates transcription of the GFP reporters. To learn more about the nature of this process, we investigated the genetic requirements for the correlation between lifespan and GFP levels in the two most lifespan-predictive reporters, Pmir-47::GFP and Pmir-243::GFP.
 
@@ -79,7 +524,7 @@ To distinguish these two possibilities, we tested whether Pmir-47::GFP and Pmir-
 
 Overall, the correlation of Pmir-47::GFP and Pmir-243::GFP with lifespan was not abolished in the absence of the endogenous miRNAs. This provides evidence for the ‘Bystander Correlation’ model of Figure 4a, implying that lifespan may be largely determined by transcriptional regulators of the PmiRNA::GFP transgenes (and presumably of the endogenous miRNAs as well), or regulatory pathways/processes even further upstream, rather than via the activity of the miRNAs themselves.
 
-## Lifespan-predictive abilities of Pmir-47::GFP and Pmir-243::GFP are independent of daf-16
+### Lifespan-predictive abilities of Pmir-47::GFP and Pmir-243::GFP are independent of daf-16
 
 As the abundance and/or activity of miR-47 and miR-243 does not appear to directly affect lifespan, Pmir-47::GFP and Pmir-243::GFP must instead serve as markers of other pathways or processes that influence lifespan. We wondered if these might include insulin/insulin-like growth factor (IGF-1) signaling (IIS), a canonical aging pathway in C. elegans that is highly conserved across taxa (Kenyon, 2010). The primary effector of the IIS pathway in C. elegans is the FOXO transcription factor DAF-16, which modulates the expression of a number of downstream genes that influence aging and lifespan (Kenyon, 2010; Murphy et al., 2003). DAF-16 activity is a common genetic requirement for genes, pathways, and processes that have been reported to increase lifespan in C. elegans, including several microRNAs (Pincus et al., 2011; Boehm, 2005; Boulias and Horvitz, 2012). It is therefore plausible that inter-individual variability in insulin signaling or signal-responsiveness leads to variability in DAF-16 activity and thus to inter-individual differences in subsequent lifespan. Indeed, two previously characterized lifespan-predictive gene-expression reporters, Psod-3::GFP and Pmir-71::GFP, both require functional DAF-16 to correlate with future lifespan. This suggests those transgenes predict future lifespan by reporting on inter-individual variability in DAF-16 (and presumably IIS) activity. To test if Pmir-47::GFP and Pmir-243::GFP similarly report on DAF-16 activity, we examined whether GFP levels still correlated with lifespan in the absence of DAF-16 (Figure 5a). Specifically, we crossed each reporter into a daf-16(mu86);spe-9(hc88) background and assayed lifespan-predictive ability in side-by-side experiments with the reporter in the reference background (spe-9(hc88) only).
 
@@ -89,11 +534,19 @@ As the abundance and/or activity of miR-47 and miR-243 does not appear to direct
 
 Regression on average expression and the slope of the expression trendline between 3 dph and the 90% survival timepoint showed that the correlation of Pmir-47::GFP or Pmir-243::GFP expression with lifespan was not substantially suppressed in the absence of daf-16 (bottom left panels of Figure 5b and c, respectively). For Pmir-47::GFP, the R2 values vs. lifespan were 0.24 for daf-16(+) and 0.37 for daf-16(-); for Pmir-243::GFP, the R2 values were 0.37 for daf-16(+) and 0.18 for daf-16(-). Similarly, plotting the lifespan-predictive value of Pmir-47::GFP or Pmir-243::GFP over time shows that the predictive power of each reporter is not reduced in the daf-16(mu86) background (bottom right of Figure 5b and c, respectively). As expected, the predictive windows are slightly shifted between daf-16(mu86) and wild-type backgrounds due to the short-lived phenotype of daf-16(mu86) (top right of Figure 5b and c). Interestingly, peak levels of Pmir-243::GFP and Pmir-47::GFP were slightly but consistently reduced in the daf-16(mu86) background, suggesting that DAF-16 may play a minor role in the transcriptional regulation of these reporters.
 
-## Pmir-240–786::GFP, Pmir-793::GFP, and Pmir-47::GFP hierarchically report on a single lifespan-determining process
+### Pmir-240–786::GFP, Pmir-793::GFP, and Pmir-47::GFP hierarchically report on a single lifespan-determining process
 
 The lifespan-predictive PmiRNA::GFP reporters we identified cannot all provide independent information. Because the correlation coefficients with future lifespan (Table 2) sum to more than one, at least some subset of these reporters must necessarily be at least partially redundant with one another. This raises an obvious question: to what degree are the reporters independent? At one extreme, all 10 reporters might reflect the activity of a single lifespan-determining pathway. Alternately, there may be a small handful of such pathways that are reported on by different sets of the PmiRNA::GFPs.
 
 If two reporters provide information about distinct, independent biological processes, then when both reporters are measured in the same individual, the lifespan estimate using both reporters will be better than when using either individually. More specifically, if the information that each reporter provides about future lifespan is completely independent, then the R2 of a joint regression using both measurements to predict future lifespan will be the sum of the R2-values from the two single regressions. Alternatively, if two PmiRNA::GFP transgenes both report on the same process, then expression of one transgene will be correlated with the other, and, equivalently, the joint regression will not be substantially more predictive of lifespan than either single regression alone (Figure 6a).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig6-v2.jpg)
+
+**Figure 6.:** (a) Three models depicting possible additive or redundant relationships between lifespan-determining processes X and Y and two PmiRNA::GFP reporters A and B, with respect to their correlation vs. future lifespan. (b) Pmir-793::GFP and Pmir-47::GFP expression for different lifespan cohorts over time (left) and regression on slope and mean of each reporter from 3 to 8 dph controlled for expression of the other reporter (right). (c) Pmir-47::GFP and Pmir-240–786::GFP expression for different lifespan cohorts over time (left) and regression on slope and mean of each reporter from 3 to 9 dph controlled for expression of the other reporter (right). (d) Pmir-793::GFP and Pmir-240–786::GFP expression for different lifespan cohorts over time (left) and regression on slope and mean of each reporter from 3 to 10 dph controlled for expression of the other reporter (right). The tables in panels a–c compare correlation coefficients for single PmiRNA::GFP reporters to the joint correlation coefficient obtained by regressing on both reporters. In scatter plots, the (o) and (+) symbols correspond to the uncontrolled and controlled regressions, respectively. All figures represent data from two biological replicates. (e) Interpretations of the relationships among these three reporters and the reported-on lifespan-determining processes. Informational hierarchy (left): Pmir-47::GFP provides strictly more information about future lifespan than the other two reporters, and Pmir-793::GFP provides strictly more information than Pmir-240–786::GFP expression. This is consistent with (at least) two different mechanistic hierarchies. Signaling hierarchy (center): the informational hierarchy may suggest that Pmir-47::GFP provides lifespan-predictive information strictly more downstream than the other reporters. Integration hierarchy (right): alternately, Pmir-47::GFP could provide information that integrates among more independent lifespan determinants.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65026/elife-65026-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Correlations among the mean fluorescence levels 3–8dph(b) Correlations among the slopes of the best-fit line to fluorescence levels 3–8dph.
 
 To begin to count the number of lifespan-determining processes reported on by the PmiRNA::GFPs we identified, we investigated the degree of redundancy among Pmir-47::GFP, Pmir-793::GFP and Pmir-240–786::GFP. We chose these reporters because they are among the strongest predictors of future lifespan, and can be easily spatially resolved because they are primarily expressed in distinct tissues. We thus constructed three dual-reporter strains comprising all pairs of these three transgenes, and for each strain measured GFP levels of both transgene independently. In specific, we manually annotated fluorescence images to delineate tissues in which each transgene was specifically expressed, and extracted our GFP measurements from those regions only, rather than the whole worm (see Materials and methods and Figure 6b–d).
 
@@ -151,7 +604,7 @@ Ultimately, this work raises a host of questions. What is the origin and identit
 
 ## Materials and methods
 
-## Strains
+### Strains
 
 The following strains were obtained from the Caenorhabditis Genetics Center (CGC): VT1735 (Pmir-788::GFP), VT1541 (Pmir-360::GFP), VT1733 (Pmir-60::GFP), VL405 (Pmir-63::GFP), VL440 (Pmir-47::GFP), VT1153 (Plet-7::GFP), VT1072 (Plin-4::GFP), VL412 (Pmir-79::GFP), VT1379 (Pmir-59::GFP), VT1474 (Pmir-243::GFP), VT1189 (Pmir-241::GFP), VT1607 (Pmir-246::GFP), VT1485 (Pmir-228::GFP), VT1600 (Pmir-85::GFP), VT1481 (Pmir-51::GFP), VT2020 (Pmir-793::GFP), VT2021 (Pmir-794::GFP), VL370 (Pmir-240–786::GFP), VT1470 (Pmir-242::GFP), VT1160 (Pmir-84::GFP), VT1589 (Pmir-90::GFP), VT1665 (Pmir-1::GFP), PD4793 (Pmyo-2::GFP; Ppes-10::GFP; F22B7.9::GFP), B010652 (Pcpna-2::GFP) CF1038 (daf-16(mu86)), MT15454 (mir-243(n4759)), VC328 (mir-47(gk167)).
 
@@ -159,15 +612,15 @@ All miRNA reporter (PmiRNA::GFP) strains were selected from a larger library ori
 
 All reporter strains were crossed into BA671 (spe-9(hc88)), a temperature-sensitive sterile mutant with a wild-type lifespan at 25.5 °C (Fabian and Johnson, 1994). Strains were maintained at 20°C and for all assays embryos were shifted to 25°C to prevent reproduction in the single-animal culture apparatus.
 
-## Single-animal culture
+### Single-animal culture
 
 For longitudinal analysis, C. elegans were reared in high-density single-animal culture devices (‘worm corrals’), which we have described previously (Zhang et al., 2016; Pittman et al., 2017). In brief, 8-armed PEG-thiol (Jenkem Technology) and PEG-diacrylate (Sigma-Aldrich) are dissolved in a modified nematode growth medium (NGM) at concentrations of 133 mg/mL and 37 mg/mL, respectively, and filter-sterilized. The PEGs are mixed in a 1:1 ratio and cholesterol in ethanol is added to a final concentration of 4 µL/mL. The final media is poured into an aluminum frame adhered to a glass slide with PDMS (Dow Corning) and allowed to cure into a solid hydrogel at room temperature for approximately 2 hr. E. coli OP50-1, resuspended to 50% w/v from an overnight culture, is deposited into an array of 0.4 µL droplets onto the gel. A pretzel-stage embryo is placed into each droplet via eyelash pick. Approximately 1 mL liquid PDMS is poured onto the gel; the PDMS crosslinks to the gel and cures into a solid form within 48 hr. The culture devices were housed on a microscope stage (Leica) in a custom-built climate chamber held at 25°C and 90% relative humidity.
 
-## Image acquisition
+### Image acquisition
 
 Images of individual animals were automatically acquired every 4 hr at ×5 magnification using custom-built image acquisition and autofocus software. A bright-field, autofluorescence, and fluorescence image were taken of each animal at each timepoint. Fluorescence images were taken with a DAPI/FITC/TRITC filter (Semrock, DA/FI/TX-3X-A-000) and Lumencor Spectra X light source and were used to measure accumulation of autofluorescence material and transgene expression. For autofluorescence, an exposure time of 70 ms and 556/20 nm (center wavelength/bandwidth) excitation filter was used; fluorescence in these red emission wavelengths increases linearly with age and has been shown to correlate well with remaining lifespan (Pincus et al., 2016). An exposure time of 30–70 ms was manually chosen for each reporter strain (as strains vary considerably in brightness), with 40 ms most commonly used. Exposure times were consistent for all images within a given strain. A 480/17 nm excitation filter was used for all GFP imaging. Flat-field images of a fluorescent slide (Chroma) were collected before every image acquisition to control for spatial variation in illumination.
 
-## Image measurement
+### Image measurement
 
 All images were corrected for sensor noise (dark-current) and spatial variation in illumination (flat-field). Images were automatically segmented using a convolutional neural network to determine pixels contained within the worm (Ghiasi and Fowlkes, 2016). Whole-animal summary statistics (e.g. 99th percentile intensity) were calculated from the fluorescence intensity distribution of these pixels. All measurements were performed in this fashion unless specifically indicated. Summary statistics are often generated by simply taking the average fluorescence intensity within the worm region. However, because the reporters we examined vary greatly in spatial and temporal expression pattern as well as absolute intensity, we found that no single summary statistic, such as the mean, was appropriate in all cases to robustly capture expression levels of each different reporter, or to distinguish GFP from background autofluorescence. For example, while taking the mean intensity across all ‘worm pixels’ can often reliably measure the fluorescence of a bright PmiRNA::GFP reporter expressed in a large tissue such as the intestine, the same mean may mostly capture intestinal autofluorescence for a reporter that is dim, or expressed only in a smaller tissue like the pharynx or vulva (Figure 1—figure supplement 1). Furthermore, expression of most reporters decreases with time while autofluorescence increases, further challenging robust, automated detection of reporter expression with measurements like mean intensity. Thus, we calculated a number of potential summary statistics, including 95th percentile intensity, the mean of pixels over the 99th percentile intensity, and maximum intensity (see Materials and methods), and for each reporter selected the one that most reliably captured bona-fide PmiRNA::GFP expression in both young and aged animals (Table 2). Our selection was based on manual comparisons of images of reporter expression with maps identifying the set of pixels measured by each summary statistic (i.e. if the pixels at the 95th-percentile intensity level were never co-localized with reporter-gene expression, the 95th percentile intensity was not considered an appropriate summary statistic). Figure 1—figure supplement 1 shows examples of such maps. Among plausible summary statistics, we selected those which produced the least measurement noise timepoint-to-timepoint.
 
@@ -179,7 +632,7 @@ Time of hatch, first egg lay, and death were annotated manually for all animals 
 
 All fluorescence measures made for every animal used in all figures and tables (and associated life-stage annotations) are provided in easily parsed text files as Source data 1.
 
-## Data and statistical analysis
+### Data and statistical analysis
 
 For visualizing population-level or cohort-level expression over time, each biological replicate was rescaled by median expression intensity and median lifespan before pooling. Expression data were fit to trendlines using LOWESS smoothing to facilitate visualization of expression levels over time. For regression and other correlative analyses, all expression values were z-transformed relative to each biological replicate and time rescaled by median lifespan of the replicate to facilitate data pooling and prevent replicate-dependent effects. Regression results from raw data from each biological replicate are consistent with the pooled analyses (table S6 in Supplementary file 1).
 

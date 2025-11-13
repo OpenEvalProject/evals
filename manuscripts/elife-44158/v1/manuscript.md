@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.44158.001 Layer (L) 2/3 pyramidal neurons in the primary somatosensory cortex (S1) are sparsely active, spontaneously and during sensory stimulation. Long-range inputs from higher areas may gate L2/3 activity. We investigated their in vivo impact by expressing channelrhodopsin in three main sources of feedback to rat S1: primary motor cortex, secondary somatosensory cortex, and secondary somatosensory thalamic nucleus (the posterior medial nucleus, POm). Inputs from cortical areas were relatively weak. POm, however, more robustly depolarized L2/3 cells and, when paired with peripheral stimulation, evoked action potentials. POm triggered not only a stronger fast-onset depolarization but also a delayed all-or-none persistent depolarization, lasting up to 1 s and exhibiting alpha/beta-range oscillations. Inactivating POm somata abolished persistent but not initial depolarization, indicating a recurrent circuit mechanism. We conclude that secondary thalamus can enhance L2/3 responsiveness over long periods. Such timescales could provide a potential modality-specific substrate for attention, working memory, and plasticity.
+Layer (L) 2/3 pyramidal neurons in the primary somatosensory cortex (S1) are sparsely active, spontaneously and during sensory stimulation. Long-range inputs from higher areas may gate L2/3 activity. We investigated their in vivo impact by expressing channelrhodopsin in three main sources of feedback to rat S1: primary motor cortex, secondary somatosensory cortex, and secondary somatosensory thalamic nucleus (the posterior medial nucleus, POm). Inputs from cortical areas were relatively weak. POm, however, more robustly depolarized L2/3 cells and, when paired with peripheral stimulation, evoked action potentials. POm triggered not only a stronger fast-onset depolarization but also a delayed all-or-none persistent depolarization, lasting up to 1 s and exhibiting alpha/beta-range oscillations. Inactivating POm somata abolished persistent but not initial depolarization, indicating a recurrent circuit mechanism. We conclude that secondary thalamus can enhance L2/3 responsiveness over long periods. Such timescales could provide a potential modality-specific substrate for attention, working memory, and plasticity.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ We hypothesized that L2/3 neurons, though typically silent, might respond to sen
 
 ## Results
 
-## Laminar distributions of M1, S2, and POm axons
+### Laminar distributions of M1, S2, and POm axons
 
 To compare long-range M1, S2, and POm inputs to rat barrel cortex, we injected an adeno-associated virus expressing a fusion of channelrhodopsin (ChR2) and yellow fluorescent protein (YFP) into each of these three areas. Three to four weeks post-injection, there was intense ChR2-YFP expression in the infected areas (Figure 1A, bottom). In all cases, labeled axons were observed in barrel cortex, with significant innervation of L1. Outside of L1, axonal distributions across varied based on the area of origin (Figure 1A, top): POm axons were concentrated in L4 septum and L5A; M1 axons resided mostly in deep L5B and L6; and S2 axons formed bands in both L5 and L6 (Figure 1B). Axons from all three regions avoided L4 barrels and were rare in L3. No labeled somata were ever observed in barrel cortex, even after immunohistochemical amplification, ruling out retrograde infection of S1 neurons.
 
@@ -35,13 +35,25 @@ To compare long-range M1, S2, and POm inputs to rat barrel cortex, we injected a
 
 **Figure 1.:** (A) Top panel: labeling of long-range projection axons with ChR2-eYFP from POm (left), M1 (center), and S2 (right) shown in coronal sections of barrel cortex. Bottom: Sites of viral infection in POm (left), M1 (center), and S2 (right). Bar: 500 μm. D, dorsal; L, lateral. Dashes, pia. (B) Average laminar profile of ChR2-eYFP labeled axons in barrel cortex. Pixel intensity was measured only for barrel-related columns (not including septal regions) and normalized to peak (n = 4 rats for each infected region; shading,±SEM).
 
-## L2/3 is more strongly depolarized by POm than M1 or S2
+### L2/3 is more strongly depolarized by POm than M1 or S2
 
 To assess the relative efficacies of these long-range inputs to barrel cortex, we initially recorded whole-cell from L2/3 barrel cortex pyramidal neurons in anesthetized rats. We measured the postsynaptic responses evoked by photo-activation of ChR2-containing axons (Figure 2A). Photo-activation (a single 10 ms pulse) of long-range fibers near recorded neurons elicited either fast-onset excitatory postsynaptic potentials (EPSPs) or no discernable responses (example cells in Figure 2B). Photo-activation of POm axons elicited EPSPs in the majority of recorded neurons (21 out of 33 neurons; Figure 2C), which were substantial in size (mean ± SEM, 4.2 ± 0.8 mV). By comparison, M1 and S2 inputs produced significantly smaller responses in L2/3 pyramidal neurons (Figure 2C) (M1: 5 out of 19 neurons, 1.2 ± 0.48 mV; S2: 15 out of 22 neurons, 1.3 ± 0.28 mV; one-way ANOVA, p < 10-5= 0.006). Photo-activation of POm axons was also significantly larger when the full population of neurons, with and without EPSPs, were analyzed (POm: n = 33, mean ± SEM 2.7 ± 0.6 mV; M1: n = 19, mean 0.16 mV ± 0.22 mV; S2: n = 22, mean 0.87 ± 0.23 mV; one-way ANOVA, p = 0.0015; Figure 2C, D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/44158/elife-44158-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of in vivo ChR2 activation of long-range projection axons in barrel cortex and whole-cell recording of L2/3 pyramidal neurons. Gray, L4 barrels. (B) Example whole-cell responses of three L2/3 pyramidal neurons to photo-activating long-range axons from infected cells in POm (top), M1 (middle), and S2 (bottom). Gray, 20 single trials recorded per cell; Colored, trial average. (C) Population average, baseline-subtracted responses of L2/3 pyramidal neurons to photo-activation of axons. Gray, average responses of individual neurons, n = 33 for POm, 19 for M1, and 22 for S2. Colored, average response for each input type. Baselines just prior to photo-activation have been aligned to allow visual comparison of responses. (D) Distributions of peak response amplitudes to photo-activation. Activation of POm axons on average elicits a significantly larger excitatory response than activation of M1 and S2 . One-way ANOVA, p=0.0015. N.S., not significant. (E) Distribution of baseline Vm of recorded L2/3 neurons. Baseline Vm did not differ among groups (one-way ANOVA, p=0.92). (F) Distribution of resting Rin of recorded L2/3 neurons. Resting Rin did not differ among groups (one-way ANOVA, p=0.85).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44158/elife-44158-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Onset delays of ChR-activated EPSPs are similar for all groups compared. (Kruskal-Wallis, p = 0.34; POm: urethane n = 22, fentanyl n = 15; M1 urethane: n = 5, fentanyl n = 8; S2 urethane: n = 16, fentanyl n = 7) (B) Rise time (10 - 90%) of ChR-activated EPSPs are similar for all groups compared. (Kruskal-Wallis, p = 0.29) (C) Decay time constant of ChR-activated EPSPs are similar for all groups compared, (Kruskal-Wallis, p = 0.37)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44158/elife-44158-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Multiple L2/3 cortical neurons per animal were recorded in 15 of the POm-infected rats. Each circle indicates the smallest and largest PSPs observed in a rat. Cells with the strongest POm inputs (>6 mV) are observed in the same rats in which cells receiving relatively weak POm input, as much as 10 times smaller. If cells with strong POm inputs were regularly found in the same animals (due to injection variability), individual rats would have fallen close to the unity line.
+
 Neurons recorded in POm-infected animals had baseline membrane potential (Vm; Figure 2E) and input resistance (Rin; Figure 2F) similar to those in M1- and S2-infected animals, indicating that the stronger POm input was not due to random variation in intrinsic properties among the three sampled groups. These Vm and Rin values are typical of L2/3 neurons in other in vivo whole-cell recording studies under similar conditions (Brecht et al., 2003; Constantinople and Bruno, 2011). Additionally, the kinetics of photo-activated EPSPs (onset latencies, rise times, and decay times) were similar across M1, S2, and POm experiments (Figure 2—figure supplement 1). Virus occasionally spread along the injection pipette track and into high-order visual thalamic nuclei LP and LD, superficial to POm (Figure 1A, bottom). These two nuclei, however, do not target barrel cortex (Kamishina et al., 2009; van Groen and Wyss, 1992) and are unlikely to explain our observations. Moreover, for animals in which multiple cortical neurons were patched, L2/3 cells with the strongest POm inputs could be observed in the same animals having cells receiving relatively weak POm input—up to 10 times smaller (Figure 2—figure supplement 2). This indicates that the strongest POm inputs are unlikely to result solely from variability in injection placement or viral efficiency and, conceivably, may reflect L2/3 cell variation.
 
-## POm facilitates sensory responses of L2/3 pyramidal neurons
+### POm facilitates sensory responses of L2/3 pyramidal neurons
 
 The greater potency of POm input relative to S2 and M1 input suggests a unique role in sensory processing. To compare the impact of each long-range input on sensory processing, we recorded L2/3 neuron responses to principal whisker (PW) stimulation, photo-activation of axons, or the combination of the two (Figure 3A). Delivery of the whisker stimulus preceded the light by 7 ms to account for known synaptic delay from the periphery to L2/3 and thereby maximize the coincidence of elicited potentials. Comparison of the combined stimuli and whisker stimulus alone showed that photo-activation of long-range axons from any of the three regions rarely suppressed sensory responses if at all (Figure 3B,D). Only POm projections (Figure 3B, red) ever facilitated L2/3 neuron input. Neurons without discernable excitatory responses to light alone (occurring in all three groups) showed no facilitation of sensory responses by photo-activation (gray circles) and are not analyzed further. In most cells, combined light and sensory stimuli elicited sub-threshold responses that were similar to the linear sum of the cell’s responses to each individual stimulus, suggesting that sensory input and each of these long-range inputs are linearly integrated passively by the L2/3 neurons (Figure 3C). This linearity also means that the enhancement of sensory response by light-induced input is directly proportional to the response to the light alone. An exception is the group of cells receiving the strongest POm inputs, which often exhibited sublinear integration (filled symbols) as expected from basic cellular properties (i.e., reduced driving force). L2/3 neurons in anesthetized animals lacked clear spiking responses to whisker stimuli as observed previously (Brecht et al., 2003). Nevertheless, these subthreshold results raised the possibility that POm may be an important controller of L2/3 activity under other conditions.
 
@@ -51,6 +63,14 @@ The greater potency of POm input relative to S2 and M1 input suggests a unique r
 
 State is well known to impact the firing patterns of neurons in the central nervous system. Under anesthesia, POm neurons fire at lower rates than during wakefulness (Masri et al., 2008). Anesthetics may also directly alter synaptic properties. We therefore repeated the experiment using an alternative preparation in which local anesthetics are combined with administration of a frontally-acting opiate (fentanyl) to relax the animal. Previous studies have shown that cortical dynamics, intracellular membrane potential, and sensory responses recorded in this sedated preparation resemble those recorded in awake animals (Constantinople and Bruno, 2011; Simons et al., 1992). POm axons continued to induce substantial EPSPs in sedated animals, even larger than that found in urethane-anesthetized animals (Figure 4A, red). M1 axons were also significantly more effective under sedation (yellow), but did not reach the same potency as POm inputs. S2 inputs were similarly weak under both conditions. Despite the larger magnitude of POm input, the pathway appears to be engaging significant inhibition: Regression of initial POm input magnitude against baseline membrane potential predicts a reversal potential of −34 mV, suggestive of mixed excitation and inhibition and consistent with other inputs to L2/3 pyramids in vivo (Petersen et al., 2003). In summary, POm input appeared overall more potent relative to S2 and M1 inputs under very different states—both light sedation and general anesthesia.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44158/elife-44158-fig4-v1.jpg)
+
+**Figure 4.:** (A) Average L2/3 responses to photo-activation of POm and M1 axons under fentanyl sedation is larger than those measured under urethane general anesthesia (two-sided rank sum tests; POm, n = 15 fentanyl cells, mean ± SEM 5.5 ± 1.0 mV, p=0.004; M1,n = 8 cells, mean 3.1 ± 1.4, p=0.009; S2, n = 9 cells, mean 1.6 ± 0.4, p=0.13). Lines, means. (B) PSP amplitude (in response to POm activation) as a function of distance of L2/3 soma from center of nearest barrel column. (C) Under fentanyl sedation, neither POm (left) nor M1 axon activation (middle) significantly boosted subthreshold whisker responses (paired t-tests; n = 12, p=0.16 and n = 7, p=0.07 respectively) despite slight appearances of trends. S2 axon activation (right) did not significantly boost the subthreshold whisker responses (n = 7, p=0.83). Gray, individual cells; Red, mean. (D) Left: Under fentanyl sedation, POm axon activation significantly increase spiking responses of L2/3 neurons to whisker deflection (paired t-test, n = 12, p=0.018). Middle: M1 axon activation does not significantly increase spiking responses of L2/3 neurons to whisker deflection (n = 7, p=0.36). Right: S2 axon activation does not significantly increase spiking responses of L2/3 neurons to whisker deflection (n = 7, p=0.37). Gray, individual cells; Red, mean. Some data points have the same values (i.e., 0). (E) Population PSTH of spiking responses of L2/3 neurons to whisker deflect (black) and whisker deflection combined with POm axon activation (red), n = 12 neurons. Gray line: displacement of whisker stimulus. Blue bar: duration of photostimulation (when present).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44158/elife-44158-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gallery of example POm infections. Green, immuno-amplified ChR2- YFP expression. Red, streptavidin-Alexa594. (B) Strength of ChR-mediated input to L2/3 is related to POm infection size (linear regression, p = 0.016). POm infection size accounts for 28% of the variability in PSP amplitude (R2 = 0.28). (C) Strength of ChR-mediated input to L2/3 is unrelated to VPM infection size (p = 0.63), which accounts for virtually no variability in PSP amplitude (R2 = 0.01).
+
 POm is directly adjacent to VPM, the primary thalamic nucleus for this system. The spread of infection into VPM is a potential confound. We measured the area of the POm infection in the section where the infection was largest, which is approximately the infection center. POm infections were an order of magnitude larger in cross-sectional area than any potential VPM contamination. PSP amplitude correlated with the size of the infected region in POm, not the one in VPM (Figure 4—figure supplement 1). Additionally, we observed no statistically significant relationship of POm input magnitude and recording depth from the pia (regression, p=0.18), indicating that L2 and L3 pyramids were similarly affected by photo-activation even though L3 pyramids are more likely than L2 pyramids to receive VPM input. Thus, intentional POm infection rather than unintended VPM contamination appears to account for the bulk of the synaptic input we measured.
 
 Another possible explanation for the relative potency of POm input is the presence of POm axons in the septum between barrels (Figure 1A, left). If septal branches explained the stronger POm input, L2/3 pyramidal neurons closer to septa would be expected to receive stronger POm inputs because L4 axons tend to arborize directly superficial to their somata. We tested this possibility by measuring the horizontal distance of L2/3 somata from the center of the nearest barrel column. There was, however, no relationship of distance to the magnitude of POm input (Figure 4B; R2 = 0.06, p=0.4), suggesting that septal innervation is not a major contributor to POm’s relative potency. This result is consistent with anatomy: all individual POm axons reconstructed to date branch extensively in L1 but have few or no branches in the septum that they traverse to reach L1 (Deschênes et al., 1998; Ohno et al., 2012). Additionally, a single POm axon often ascends the septal spaces between more than one pair of barrels. Thus, a large number of unbranched axons are concentrated in the small septal volumes, potentially explaining why PSP size does not reflect high septal epifluorescence.
@@ -59,7 +79,7 @@ We did not detect any statistically significant enhancement of L2/3 neurons’ r
 
 We conclude that, of several long-range pathways innervating primary somatosensory cortex, POm input is relatively more potent to L2/3 pyramidal neurons than S2 or M1 inputs. Our results suggest that POm may be gating L2/3 suprathreshold sensory responses.
 
-## Persistent depolarization under sedation and wakefulness
+### Persistent depolarization under sedation and wakefulness
 
 The time course of L2/3 responses during POm activation is also unique. In anesthetized animals, PSPs induced by photoactivation of POm inputs return to baseline 50–100 ms after the cessation of light stimuli (Figures 2 and 3) as recently observed (Gambino et al., 2014). In sedated animals, we discovered a persistent depolarization in L2/3 pyramidal cells lasting an order of magnitude longer (Figure 5A). After the initial fast-onset EPSP and a period of pronounced inhibition, persistent depolarization began ~150 ms after POm axon activation (mean onset, 163 ± 13 ms) and typically continued for up to one second (mean duration, 758 ± 133 ms; Figure 5B, red). For each neuron recorded, ~80% of trials showed a prolonged response, which was unseen in anesthetized animals. M1 and S2 inputs did not elicit persistent depolarization (yellow and blue).
 
@@ -79,7 +99,7 @@ The persistent depolarization is also detectable in L2/3 recordings of local fie
 
 To verify that the persistent depolarization produced by this pathway is relevant for awake animals, we recorded LFPs in L2/3 of awake head-fixed rats. LFP responses to POm in awake rats showed the same characteristic initial and persistent depolarization (Figure 6C) seen in sedated animals (Figure 6B). We conclude that during wakefulness POm is able to open an unusually long window of L2/3 depolarization.
 
-## Persistent depolarization of L2/3 requires thalamic circuitry
+### Persistent depolarization of L2/3 requires thalamic circuitry
 
 POm may not only trigger but also sustain the persistent depolarization. We tested this by juxtasomally recording from individual POm neurons while photo-activating their thalamocortical axons in barrel cortex (Figure 7A). Because the persistent depolarization was seen in L2/3 in sedated but not anesthetized animals, we first compared POm spiking responses under sedation alone and with the volatile general anesthetic isoflurane (Figure 7B). We have previously used a similar strategy in order to rapidly alter the preparation and study individual cells under both conditions (Constantinople and Bruno, 2011). Spontaneous discharges of the POm neurons decreased more than ten-fold when anesthesia was induced (sedated mean ±SEM, 13.2 ± 8.7 Hz; anesthetized mean ±SEM, 1 ± 1.3 Hz; paired t-test, p=8 × 10−4; Figure 7C). The activity observed here during isoflurane-induced anesthesia is similar to that for urethane-anesthetized rats (Masri et al., 2008). Antidromic POm spiking responses to photostimulation were slightly but not significantly higher under sedation (paired t-test, p=0.09; Figure 7D). Given that POm synapses facilitate (Viaene et al., 2011b), suppressed POm spiking during anesthesia readily explains the smaller fast-onset PSPs compared to sedation (Figure 4A).
 
@@ -111,7 +131,7 @@ Long-range inputs have been suspected of enhancing sensory processing via dendri
 
 Several possible mechanisms could explain how POm exerts stronger influence than S2 and M1 over L2/3 pyramidal cells even though they all innervate L1 to roughly the same degree. First, POm synapses onto L2/3 cells could simply be stronger. However, slice studies of the individual pathways using optogenetic stimulation have not revealed a major difference between M1- and POm-evoked currents (Audette et al., 2018; Kinnischtzke et al., 2014), though these pathways have yet to be directly compared in vitro. Second, differences in their subcellular locations could conceivably lead to selective engagement of the nonlinear mechanisms mentioned above. High-throughput light microscopy approaches would be useful for scanning whole apical tufts to assess possible differences (Chandrasekaran et al., 2015; Schoonover et al., 2014). Third, POm selectively targets 5HT3AR inhibitory cells and in vitro evokes particularly delayed inhibition in L2 relative to excitation (Audette et al., 2018). The delayed inhibition affords POm an unusually long window of integration in cortex. M1 and S2 might target other inhibitory cell types, endowing them with more typical, short integration windows.
 
-## Persistent depolarization
+### Persistent depolarization
 
 POm activation could persistently depolarize cortical L2/3 pyramidal neurons for up to about 1 s. One possible explanation is that our photo-activation protocol induces a barrage of action potentials generated locally in the POm axons in cortex rather than by the axon initial segment near the POm somata. Axonal barrage firing has been observed in hippocampal and cortical interneurons (Sheffield et al., 2011; Suzuki et al., 2014). Another possibility is that persistent depolarization is generated by recurrent circuitry within L2/3 or between L2/3 and L5. Our pharmacological inactivation of POm indicated that activation of POm somata is necessary for generating persistent depolarization in the cortex. This rules out both axonal barrage firing and purely intracortical circuit mechanisms.
 
@@ -127,9 +147,68 @@ Few analogous behavioral studies have been done to elucidate the functional role
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GFP primary</td>
+      <td>EMD Millipore</td>
+      <td>AB3080P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit Alexa 488 secondary</td>
+      <td>Invitrogen</td>
+      <td>A11034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.hSyn.ChR2(H134R)-eYFP.WPRE.hGH</td>
+      <td>U.Penn Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>lidocaine HCl, monohydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>L5647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>muscimol</td>
+      <td>Sigma Aldrich</td>
+      <td>M1523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>strepavidin-Alexa594</td>
+      <td>Life Technologies</td>
+      <td>S-11227</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All procedures were approved by the Institutional Animal Care and Use Committee at Columbia University (protocols AC-AAAD0960 and AC-AAAF9003).
 
-## Optogenetics
+### Optogenetics
 
 To photo-activate long-range projection fibers, female ~70–100 g Wistar rats (Charles River) were injected with adeno-associated virus (AAV1) to express a ChR2-eYFP fusion protein driven by the human synapsin promoter (AAV1.hSyn.ChR2(H134R)-eYFP.WPRE.hGH, U.Penn Vector Core). Note that effects or effect sizes could conceivably differ for male rats. Standard aseptic technique was used. Rats were anesthetized with isoflurane (1–3% in O2) and placed in a stereotax using blunt earbars. Pre-emptive systemic analgesia was administered (carprofen, 5 mg/kg, subcutaneous). Ophthalmic ointment was applied to the eyes. Rectal body temperature was maintained at 37°C with a heating pad. A small incision was made in the scalp to expose the skull overlying the target structure. The skull was thinned with a dental drill.
 
@@ -143,7 +222,7 @@ Because M1 is larger than POm and S2, we attempted to refine M1 injection locati
 
 After ~3 weeks of viral expression, animals were prepared for physiology experiments as described below. Light-activation of infected fibers was achieved by placing a 200 μm fiber optic immediately above a craniotomy over barrel cortex and delivering isolated 10 ms pulses of 473 nm light using a DPSS laser (OEM) controlled by a mechanical shutter. Fiber output (~38 mW) was checked between experiments using a power meter. We measured the average light response of a neuron with 20–40 trials of light stimulation with 2 s interstimulus intervals. For combined light and whisker stimuli, onset of whisker stimulus precedes the light stimulus by 7 ms (approximate synaptic delay from periphery to L2/3), to maximize the coincidence of whisker- and light-evoked potentials arriving in L2/3.
 
-## Animal preparation for physiology
+### Animal preparation for physiology
 
 In all cases, animals were initially anesthetized with isoflurane (1–3% in O2). Body temperature was kept at 37°C by a heating blanket. Eyes were coated with lubricating ointment to prevent drying. The parietal and occipital bones were exposed, and a metal post for positioning the head was attached to the skull using dental acrylic. The parietal bone overlying left barrel cortex (centered 2.5 mm posterior to bregma and 5.5 mm lateral of the midline) was thinned with a dental drill until transparent, and small craniotomies (<0.5 mm2) were made over the thinned region. The dura was removed.
 
@@ -151,23 +230,23 @@ For urethane anesthesia experiments, 74 female Wistar rats (150–250 g) were us
 
 Four animals were prepared for the anesthetized-awake preparation as described previously (Constantinople and Bruno, 2011). Prior to making craniotomies, screws were inserted in the right frontal and parietal bones for electrocorticogram (‘EEG’) recording. Instead of switching to urethane or fentanyl, animals remained on isoflurane anesthesia. Rats were wrapped in a blanket and secured in a plastic tube to reduce movement. The local anesthetic bupivacaine (0.5%) was regularly applied to the area of the head surrounding the acrylic. To avoid startling the rat, a black curtain was placed around the air table, and noise in the lab minimized.
 
-## Electrophysiology
+### Electrophysiology
 
 Patch pipettes (4–7 MΩ) were pulled from borosilicate glass and tip-filled with (in mM) 135 K-gluconate, 10 HEPES, 10 phosphocreatine-Na2, 4 KCl, 4 ATP-Mg, 0.3 GTP, and 0.2–0.4% biocytin (pH 7.2, osmolarity 291). Pipette capacitance was neutralized prior to break-in, and access resistance was 10–60 MΩ. Recordings were digitized at 32 kHz. Similar pipettes were used for juxtasomal recording of POm neurons. Juxtasomal pipettes were filled with 4% biocytin in aCSF (in mM: 135 NaCl, 5.4 KCl, 1.8 CaCl2, 1.0 MgCl2, and 5.0 HEPES; pH 7.2). After acquiring single-unit data, we attempted to fill the recorded neurons by injecting square current pulses (1–3 nA, 250 ms on, 250 ms off) for several minutes. LFP pipettes (2–3 MΩ) were filled with aCSF. LFPs were bandpassed 1–325 Hz.
 
 Pharmacological inactivation of POm: 90–100 nL of muscimol (1 mg/mL) or Lidocaine (10%) was injected over ~20 min using a Nanoject II auto-nanoliter injector (Drummond, Broomall, PA). LFP recordings were obtained ~30 min post injection.
 
-## Whisker stimulation
+### Whisker stimulation
 
 Individual whiskers were deflected using multi-directional piezoelectric stimulators. Whiskers were positioned inside the stimulator ~10 mm from the base of the hair and deflected 5.7° (1 mm amplitude) using relatively high-velocity (onset and offset: ~570°/sec) ramp-and-hold movements. Deflections were applied randomly in each of eight directions, in 45° increments relative to the horizontal alignment of the rows. A receptive field was mapped by applying 10–20 blocks of such stimuli (80–160 total stimuli with 2 s interstimulus intervals).
 
-## Histology
+### Histology
 
 After recordings, rats were deeply anesthetized and perfused transcardially with cold 0.1 M sodium phosphate buffer (PB) followed by 4% paraformaldehyde. The left barrel cortex was cut tangentially in 100 μm sections to the white matter. The rest of the left hemisphere was sliced coronally in 100 μm sections. Tangential sections were stained with streptavidin conjugated to Alexa 594 (Life Technologies) to visualize recorded neurons. In tangential and coronal sections, ChR2-eYFP signal was amplified by using a rabbit anti-GFP primary antibody (at 1:1000, incubated overnight in 5% normal goat serum and 1% Triton-X in PB at 4˚C) and a goat anti-rabbit-Alexa488 secondary antibody (at 1:200, for 2 hr in 5% normal goat serum and 1% Triton-X in PB at room temperature, Invitrogen). Using epifluorescence or confocal microscopy, we confirmed the presence of infected somata in the targeted brain region and infected axons near recorded S1 neurons.
 
 The location of a L2/3 cell relative to its barrel center was measured by 3D reconstruction in Neurolucida (MicroBrightfield). The radial trunk axons of the recorded L2/3 neurons were visibly well filled in the L4 sections. Its location was marked, and the borders of the L4 barrel it passed through were traced. The horizontal distance between the axon and the centroid of the barrel borders were then measured in the same section.
 
-## Analysis
+### Analysis
 
 Required n was estimated prior to the study by standard power analysis assuming an effect size (difference in PSP amplitudes) of 2 mV, SD of 1.5 mV, and 80% power, suggesting a minimum n of approximately 10 neurons per group. No outliers were excluded.
 

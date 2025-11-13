@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.02917.001 Recent studies suggest de novo mutations may involve the pathogenesis of autism and attention-deficit/hyperactivity disorder (ADHD). Based on the evidence that excessive alcohol consumption may be associated with an increased rate of de novo mutations in germ cells (sperms or eggs), we examine here whether the risks of autism and ADHD are increased among individuals with a family history of alcohol use disorders (AUDs). The standardized incidence ratios (SIRs) of autism and ADHD among individuals with a biological parental history of AUDs were 1.39 (95% CI 1.34–1.44) and 2.19 (95% CI 2.15–2.23), respectively, compared to individuals without an affected parent. Among offspring whose parents were diagnosed with AUDs before their birth, the corresponding risks were 1.46 (95% CI 1.36–1.58) and 2.70 (95% CI 2.59–2.81), respectively. Our study calls for extra surveillance for children with a family history of AUDs, and further studies examining the underlying mechanisms are needed. DOI: http://dx.doi.org/10.7554/eLife.02917.001
+Recent studies suggest de novo mutations may involve the pathogenesis of autism and attention-deficit/hyperactivity disorder (ADHD). Based on the evidence that excessive alcohol consumption may be associated with an increased rate of de novo mutations in germ cells (sperms or eggs), we examine here whether the risks of autism and ADHD are increased among individuals with a family history of alcohol use disorders (AUDs). The standardized incidence ratios (SIRs) of autism and ADHD among individuals with a biological parental history of AUDs were 1.39 (95% CI 1.34–1.44) and 2.19 (95% CI 2.15–2.23), respectively, compared to individuals without an affected parent. Among offspring whose parents were diagnosed with AUDs before their birth, the corresponding risks were 1.46 (95% CI 1.36–1.58) and 2.70 (95% CI 2.59–2.81), respectively. Our study calls for extra surveillance for children with a family history of AUDs, and further studies examining the underlying mechanisms are needed.
 
 ## Introduction
 
@@ -23,13 +23,556 @@ Autism is a neural development disorder characterized by impaired social interac
 
 ## Results
 
-In Table 1, we present the basic characteristics of individuals with autism and ADHD. A total of 24157 and 49348 individuals were identified with autism and ADHD in Sweden between 1987 and 2010. Men were more often diagnosed with these two disorders than women, and the median age at diagnosis was for both disorders 16 years. The incidences of the two disorders increased greatly during the last decade.10.7554/eLife.02917.003Table 1.Basic characteristics of patients with autism and ADHDDOI: http://dx.doi.org/10.7554/eLife.02917.003CharacteristicAutismADHDNo.%No.%SexMale1680869.63349167.9Female734930.41585732.1Age (years)<10599524.8812916.510–19967140.02285446.320–29421517.4772715.730+427617.71063821.6Time period1987–19904251.82070.41991–19956562.73810.81996–200011995.013072.62001–2005645726.7995320.22006–20101542063.83750076.0All24157100.049348100.0
+In Table 1, we present the basic characteristics of individuals with autism and ADHD. A total of 24157 and 49348 individuals were identified with autism and ADHD in Sweden between 1987 and 2010. Men were more often diagnosed with these two disorders than women, and the median age at diagnosis was for both disorders 16 years. The incidences of the two disorders increased greatly during the last decade.
 
-The risks of autism and ADHD among individuals with a family history of AUDs are presented in Table 2. During more than 10 million person-years of follow-up, a total of 3136 individuals were diagnosed with autism and 10,047 individuals were diagnosed with ADHD. The overall risks of autism and ADHD were 1.39 (95% CI 1.34–1.44) and 2.19 (95% CI 2.15–2.23), respectively, among individuals with an affected parent with AUDs compared to those without an affected parent. The risks were similar in affected sons and daughters. The PAF was 3.6 and 11.0%, respectively, for autism and ADHD.10.7554/eLife.02917.004Table 2.Risk of autism and ADHD in offspring when their parents were diagnosed with alcohol use disorder (AUD)DOI: http://dx.doi.org/10.7554/eLife.02917.004AUD in parentNo. of offspring at riskPerson-years of follow-upAutismADHDOSIR95% CIOSIR95% CIRisk in sonsFather235696448570717931.391.331.4555482.172.112.22Mother6921413447665671.551.431.6919522.732.612.85Parents289763554036222031.411.351.4768002.202.152.25Risk in daughtersFather22531743061947531.311.221.426092.122.042.21Mother65,47912755072451.501.321.79702.772.602.95Parents27643953052859331.341.251.4332472.182.102.25Risk in offspringFather461013879190125461.361.311.4281572.152.112.20Mother13469326202738121.541.431.6529222.742.642.84Parents5662021084564731361.391.341.4410,0472.192.152.23PAF3.6%11%O, observed number of cases; SIR, standardized incidence ratio; CI, confidence interval.Bold type, 95% CI does not include 1.00.PAF, population attributable fraction.
+**Table 1.**
+ Basic characteristics of patients with autism and ADHD
 
-To examine whether the observed association in Table 2 is possibly due to putative germ cell mutation in parents with alcohol consumption, we studied the risk of autism and ADHD among offspring whose parents were diagnosed with AUDs before their birth (Table 3). Only 95,003 offspring had a parent diagnosed with AUDs before their birth, which accounted for 16% of all offspring with a family history of AUDs. After 922,618 person-year of follow-up, the overall risks of autism and ADHD were 1.46 (95% CI 1.36–1.58) and 2.70 (95% CI 2.59–2.81), respectively, as compared to those without an affected parent. The increase risks were similar in affected sons and daughters.10.7554/eLife.02917.005Table 3.Risk of autism and ADHD in offspring when their parents were diagnosed with alcohol use disorder (AUD) before the birth of the offspringDOI: http://dx.doi.org/10.7554/eLife.02917.005AUD in parentNo. of offspring at riskPerson-years of follow-upAutismADHDOSIR95% CIOSIR95% CIRisk in sonsFather418324103274421.441.311.5915552.602.482.74Mother877680,689991.671.352.033473.142.823.49Parents487044725965141.461.341.5917782.612.492.73Risk in daughtersFather396843904291451.401.181.645653.052.803.31Mother845777259361.791.252.481193.442.854.12Parents462994500221751.471.261.706343.002.773.24Risk in offspringFather815168007565871.431.321.5521202.712.592.83Mother172331579481351.701.422.014663.222.933.52Parents950039226186891.461.361.5824122.702.592.81O, observed number of cases; SIR, standardized incidence ratio; CI, confidence interval.Bold type, 95% CI does not include 1.00.
 
-In Table 4, we present the risk of autism and ADHD among adoptees when either their biological or adoptive parents were diagnosed with AUDs. The risks of autism and ADHD were significantly increased when their biological parents were diagnosed with AUDs with a SIR of 1.75 and 1.91, respectively. However, the risks were not significant when their adoptive parents were diagnosed with AUDs, possibly because of limited numbers of cases.10.7554/eLife.02917.006Table 4.Risk of autism and ADHD in adoptees when their biological or adoptive parents were diagnosed with alcohol use disorder (AUD)DOI: http://dx.doi.org/10.7554/eLife.02917.006No. of offspring at riskPerson-years of follow-upAutismADHDOSIR95% CIOSIR95% CIBiological parents with AUD Father217551746162.151.233.50532.631.973.44 Mother138132745101.810.863.35181.210.721.92 Parents325177310191.751.052.74581.911.452.47Adoptive parents with AUD Father45710,83910.750.004.2871.780.703.68 Mother2295443041.930.504.98 Parents6541554610.510.002.9391.590.723.04O, observed number of cases; SIR, standardized incidence ratio; CI, confidence interval.Bold type, 95% CI does not include 1.00.
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Characteristic</th>
+      <th colspan="2">Autism</th>
+      <th colspan="2">ADHD</th>
+    </tr>
+    <tr>
+      <th>No.</th>
+      <th>%</th>
+      <th>No.</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Sex</td>
+      <td>Male</td>
+      <td>16808</td>
+      <td>69.6</td>
+      <td>33491</td>
+      <td>67.9</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>7349</td>
+      <td>30.4</td>
+      <td>15857</td>
+      <td>32.1</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Age (years)</td>
+      <td>&lt;10</td>
+      <td>5995</td>
+      <td>24.8</td>
+      <td>8129</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <td>10–19</td>
+      <td>9671</td>
+      <td>40.0</td>
+      <td>22854</td>
+      <td>46.3</td>
+    </tr>
+    <tr>
+      <td>20–29</td>
+      <td>4215</td>
+      <td>17.4</td>
+      <td>7727</td>
+      <td>15.7</td>
+    </tr>
+    <tr>
+      <td>30+</td>
+      <td>4276</td>
+      <td>17.7</td>
+      <td>10638</td>
+      <td>21.6</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Time period</td>
+      <td>1987–1990</td>
+      <td>425</td>
+      <td>1.8</td>
+      <td>207</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>1991–1995</td>
+      <td>656</td>
+      <td>2.7</td>
+      <td>381</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>1996–2000</td>
+      <td>1199</td>
+      <td>5.0</td>
+      <td>1307</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td>2001–2005</td>
+      <td>6457</td>
+      <td>26.7</td>
+      <td>9953</td>
+      <td>20.2</td>
+    </tr>
+    <tr>
+      <td>2006–2010</td>
+      <td>15420</td>
+      <td>63.8</td>
+      <td>37500</td>
+      <td>76.0</td>
+    </tr>
+    <tr>
+      <td>All</td>
+      <td></td>
+      <td>24157</td>
+      <td>100.0</td>
+      <td>49348</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+
+The risks of autism and ADHD among individuals with a family history of AUDs are presented in Table 2. During more than 10 million person-years of follow-up, a total of 3136 individuals were diagnosed with autism and 10,047 individuals were diagnosed with ADHD. The overall risks of autism and ADHD were 1.39 (95% CI 1.34–1.44) and 2.19 (95% CI 2.15–2.23), respectively, among individuals with an affected parent with AUDs compared to those without an affected parent. The risks were similar in affected sons and daughters. The PAF was 3.6 and 11.0%, respectively, for autism and ADHD.
+
+**Table 2.**
+ Risk of autism and ADHD in offspring when their parents were diagnosed with alcohol use disorder (AUD)
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">AUD in parent</th>
+      <th rowspan="2">No. of offspring at risk</th>
+      <th rowspan="2">Person-years of follow-up</th>
+      <th colspan="4">Autism</th>
+      <th colspan="4">ADHD</th>
+    </tr>
+    <tr>
+      <th>O</th>
+      <th>SIR</th>
+      <th colspan="2">95% CI</th>
+      <th>O</th>
+      <th>SIR</th>
+      <th colspan="2">95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="11">Risk in sons</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>235696</td>
+      <td>4485707</td>
+      <td>1793</td>
+      <td>1.39</td>
+      <td>1.33</td>
+      <td>1.45</td>
+      <td>5548</td>
+      <td>2.17</td>
+      <td>2.11</td>
+      <td>2.22</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>69214</td>
+      <td>1344766</td>
+      <td>567</td>
+      <td>1.55</td>
+      <td>1.43</td>
+      <td>1.69</td>
+      <td>1952</td>
+      <td>2.73</td>
+      <td>2.61</td>
+      <td>2.85</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>289763</td>
+      <td>5540362</td>
+      <td>2203</td>
+      <td>1.41</td>
+      <td>1.35</td>
+      <td>1.47</td>
+      <td>6800</td>
+      <td>2.20</td>
+      <td>2.15</td>
+      <td>2.25</td>
+    </tr>
+    <tr>
+      <td colspan="11">Risk in daughters</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>225317</td>
+      <td>4306194</td>
+      <td>753</td>
+      <td>1.31</td>
+      <td>1.22</td>
+      <td>1.4</td>
+      <td>2609</td>
+      <td>2.12</td>
+      <td>2.04</td>
+      <td>2.21</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>65,479</td>
+      <td>1275507</td>
+      <td>245</td>
+      <td>1.50</td>
+      <td>1.32</td>
+      <td>1.7</td>
+      <td>970</td>
+      <td>2.77</td>
+      <td>2.60</td>
+      <td>2.95</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>276439</td>
+      <td>5305285</td>
+      <td>933</td>
+      <td>1.34</td>
+      <td>1.25</td>
+      <td>1.43</td>
+      <td>3247</td>
+      <td>2.18</td>
+      <td>2.10</td>
+      <td>2.25</td>
+    </tr>
+    <tr>
+      <td colspan="11">Risk in offspring</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>461013</td>
+      <td>8791901</td>
+      <td>2546</td>
+      <td>1.36</td>
+      <td>1.31</td>
+      <td>1.42</td>
+      <td>8157</td>
+      <td>2.15</td>
+      <td>2.11</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>134693</td>
+      <td>2620273</td>
+      <td>812</td>
+      <td>1.54</td>
+      <td>1.43</td>
+      <td>1.65</td>
+      <td>2922</td>
+      <td>2.74</td>
+      <td>2.64</td>
+      <td>2.84</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>566202</td>
+      <td>10845647</td>
+      <td>3136</td>
+      <td>1.39</td>
+      <td>1.34</td>
+      <td>1.44</td>
+      <td>10,047</td>
+      <td>2.19</td>
+      <td>2.15</td>
+      <td>2.23</td>
+    </tr>
+    <tr>
+      <td>PAF</td>
+      <td></td>
+      <td></td>
+      <td>3.6%</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>11%</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_O, observed number of cases; SIR, standardized incidence ratio; CI, confidence interval.Bold type, 95% CI does not include 1.00.PAF, population attributable fraction._
+
+To examine whether the observed association in Table 2 is possibly due to putative germ cell mutation in parents with alcohol consumption, we studied the risk of autism and ADHD among offspring whose parents were diagnosed with AUDs before their birth (Table 3). Only 95,003 offspring had a parent diagnosed with AUDs before their birth, which accounted for 16% of all offspring with a family history of AUDs. After 922,618 person-year of follow-up, the overall risks of autism and ADHD were 1.46 (95% CI 1.36–1.58) and 2.70 (95% CI 2.59–2.81), respectively, as compared to those without an affected parent. The increase risks were similar in affected sons and daughters.
+
+**Table 3.**
+ Risk of autism and ADHD in offspring when their parents were diagnosed with alcohol use disorder (AUD) before the birth of the offspring
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">AUD in parent</th>
+      <th rowspan="2">No. of offspring at risk</th>
+      <th rowspan="2">Person-years of follow-up</th>
+      <th colspan="4">Autism</th>
+      <th colspan="4">ADHD</th>
+    </tr>
+    <tr>
+      <th>O</th>
+      <th>SIR</th>
+      <th colspan="2">95% CI</th>
+      <th>O</th>
+      <th>SIR</th>
+      <th colspan="2">95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="11">Risk in sons</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>41832</td>
+      <td>410327</td>
+      <td>442</td>
+      <td>1.44</td>
+      <td>1.31</td>
+      <td>1.59</td>
+      <td>1555</td>
+      <td>2.60</td>
+      <td>2.48</td>
+      <td>2.74</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>8776</td>
+      <td>80,689</td>
+      <td>99</td>
+      <td>1.67</td>
+      <td>1.35</td>
+      <td>2.03</td>
+      <td>347</td>
+      <td>3.14</td>
+      <td>2.82</td>
+      <td>3.49</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>48704</td>
+      <td>472596</td>
+      <td>514</td>
+      <td>1.46</td>
+      <td>1.34</td>
+      <td>1.59</td>
+      <td>1778</td>
+      <td>2.61</td>
+      <td>2.49</td>
+      <td>2.73</td>
+    </tr>
+    <tr>
+      <td colspan="11">Risk in daughters</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>39684</td>
+      <td>390429</td>
+      <td>145</td>
+      <td>1.40</td>
+      <td>1.18</td>
+      <td>1.64</td>
+      <td>565</td>
+      <td>3.05</td>
+      <td>2.80</td>
+      <td>3.31</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>8457</td>
+      <td>77259</td>
+      <td>36</td>
+      <td>1.79</td>
+      <td>1.25</td>
+      <td>2.48</td>
+      <td>119</td>
+      <td>3.44</td>
+      <td>2.85</td>
+      <td>4.12</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>46299</td>
+      <td>450022</td>
+      <td>175</td>
+      <td>1.47</td>
+      <td>1.26</td>
+      <td>1.70</td>
+      <td>634</td>
+      <td>3.00</td>
+      <td>2.77</td>
+      <td>3.24</td>
+    </tr>
+    <tr>
+      <td colspan="11">Risk in offspring</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>81516</td>
+      <td>800756</td>
+      <td>587</td>
+      <td>1.43</td>
+      <td>1.32</td>
+      <td>1.55</td>
+      <td>2120</td>
+      <td>2.71</td>
+      <td>2.59</td>
+      <td>2.83</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>17233</td>
+      <td>157948</td>
+      <td>135</td>
+      <td>1.70</td>
+      <td>1.42</td>
+      <td>2.01</td>
+      <td>466</td>
+      <td>3.22</td>
+      <td>2.93</td>
+      <td>3.52</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>95003</td>
+      <td>922618</td>
+      <td>689</td>
+      <td>1.46</td>
+      <td>1.36</td>
+      <td>1.58</td>
+      <td>2412</td>
+      <td>2.70</td>
+      <td>2.59</td>
+      <td>2.81</td>
+    </tr>
+  </tbody>
+</table>
+
+_O, observed number of cases; SIR, standardized incidence ratio; CI, confidence interval.Bold type, 95% CI does not include 1.00._
+
+In Table 4, we present the risk of autism and ADHD among adoptees when either their biological or adoptive parents were diagnosed with AUDs. The risks of autism and ADHD were significantly increased when their biological parents were diagnosed with AUDs with a SIR of 1.75 and 1.91, respectively. However, the risks were not significant when their adoptive parents were diagnosed with AUDs, possibly because of limited numbers of cases.
+
+**Table 4.**
+ Risk of autism and ADHD in adoptees when their biological or adoptive parents were diagnosed with alcohol use disorder (AUD)
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">No. of offspring at risk</th>
+      <th rowspan="2">Person-years of follow-up</th>
+      <th colspan="4">Autism</th>
+      <th colspan="4">ADHD</th>
+    </tr>
+    <tr>
+      <th>O</th>
+      <th>SIR</th>
+      <th colspan="2">95% CI</th>
+      <th>O</th>
+      <th>SIR</th>
+      <th colspan="2">95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="11">Biological parents with AUD</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>2175</td>
+      <td>51746</td>
+      <td>16</td>
+      <td>2.15</td>
+      <td>1.23</td>
+      <td>3.50</td>
+      <td>53</td>
+      <td>2.63</td>
+      <td>1.97</td>
+      <td>3.44</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>1381</td>
+      <td>32745</td>
+      <td>10</td>
+      <td>1.81</td>
+      <td>0.86</td>
+      <td>3.35</td>
+      <td>18</td>
+      <td>1.21</td>
+      <td>0.72</td>
+      <td>1.92</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>3251</td>
+      <td>77310</td>
+      <td>19</td>
+      <td>1.75</td>
+      <td>1.05</td>
+      <td>2.74</td>
+      <td>58</td>
+      <td>1.91</td>
+      <td>1.45</td>
+      <td>2.47</td>
+    </tr>
+    <tr>
+      <td colspan="11">Adoptive parents with AUD</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>457</td>
+      <td>10,839</td>
+      <td>1</td>
+      <td>0.75</td>
+      <td>0.00</td>
+      <td>4.28</td>
+      <td>7</td>
+      <td>1.78</td>
+      <td>0.70</td>
+      <td>3.68</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>229</td>
+      <td>5443</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>1.93</td>
+      <td>0.50</td>
+      <td>4.98</td>
+    </tr>
+    <tr>
+      <td>Parents</td>
+      <td>654</td>
+      <td>15546</td>
+      <td>1</td>
+      <td>0.51</td>
+      <td>0.00</td>
+      <td>2.93</td>
+      <td>9</td>
+      <td>1.59</td>
+      <td>0.72</td>
+      <td>3.04</td>
+    </tr>
+  </tbody>
+</table>
+
+_O, observed number of cases; SIR, standardized incidence ratio; CI, confidence interval.Bold type, 95% CI does not include 1.00._
 
 ## Discussion
 

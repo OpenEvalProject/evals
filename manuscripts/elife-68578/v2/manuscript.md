@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Human calcium-sensing receptor (CaSR) is a G-protein-coupled receptor that maintains Ca 2+ homeostasis in serum. Here, we present the cryo-electron microscopy structures of the CaSR in the inactive and agonist+PAM bound states. Complemented with previously reported structures of CaSR, we show that in addition to the full inactive and active states, there are multiple intermediate states during the activation of CaSR. We used a negative allosteric nanobody to stabilize the CaSR in the fully inactive state and found a new binding site for Ca 2+ ion that acts as a composite agonist with L-amino acid to stabilize the closure of active Venus flytraps. Our data show that agonist binding leads to compaction of the dimer, proximity of the cysteine-rich domains, large-scale transitions of seven-transmembrane domains, and inter- and intrasubunit conformational changes of seven-transmembrane domains to accommodate downstream transducers. Our results reveal the structural basis for activation mechanisms of CaSR and clarify the mode of action of Ca 2+ ions and L-amino acid leading to the activation of the receptor.
+Human calcium-sensing receptor (CaSR) is a G-protein-coupled receptor that maintains Ca2+ homeostasis in serum. Here, we present the cryo-electron microscopy structures of the CaSR in the inactive and agonist+PAM bound states. Complemented with previously reported structures of CaSR, we show that in addition to the full inactive and active states, there are multiple intermediate states during the activation of CaSR. We used a negative allosteric nanobody to stabilize the CaSR in the fully inactive state and found a new binding site for Ca2+ ion that acts as a composite agonist with L-amino acid to stabilize the closure of active Venus flytraps. Our data show that agonist binding leads to compaction of the dimer, proximity of the cysteine-rich domains, large-scale transitions of seven-transmembrane domains, and inter- and intrasubunit conformational changes of seven-transmembrane domains to accommodate downstream transducers. Our results reveal the structural basis for activation mechanisms of CaSR and clarify the mode of action of Ca2+ ions and L-amino acid leading to the activation of the receptor.
 
 ## Introduction
 
@@ -42,17 +42,232 @@ In our study, we used cryo-EM to obtain the structures of full-length CaSR in in
 
 ## Results
 
-## Identification of camelid nanobodies stabilizing the inactive state of CaSR
+### Identification of camelid nanobodies stabilizing the inactive state of CaSR
 
 For structural studies, we used nanobody to stabilize CaSR in the inactive conformation. Published structures of CaSR-ECD demonstrate that agonist binding induces conformational changes of VFT model of CaSR, whereby two separate LB2 domains approach each other, forming a novel interface in the active state (Geng et al., 2016). Based on these structural information, we introduced a potential N-linked glycosylation site on the contacting interface between LB2 domains in the active CaSR to block the interaction of LB2 domains and keep the CaSR in an inactive state. We made a double mutation R227N-E229S at the dimer interface of LB2 domain to introduce N-linked glycosylation at 227 residues site. We immunized two camels with the mutant of CaSR and generated nanobody phage display library. We performed two rounds of bio-panning on the mutant of CaSR and used enzyme-linked immunosorbent assay (ELISA) to verify the nanobodies that specifically bound to CaSR. We performed intracellular Ca2+ flux assay to determine whether screened nanobodies could stabilize CaSR in the inactive state. Of the several CaSR binders, NB-2D11 and NB88 significantly inhibited the activity of CaSR with IC50 of 41.7 nM and 167.1 nM, respectively (Figure 1A,B). Using surface plasmon resonance (SPR) to measure binding kinetics, both nanobodies NB-2D11 and NB88 demonstrated high-affinity binding to CaSR with KD of 0.24 nM and 3.9 nM, respectively (Figure 1C,D). We then selected NB-2D11, which has a greater binding affinity of the two nanobodies, for structural study.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig1-v2.jpg)
 
-**Figure 1.:** (A) Dose-dependent NB-2D11-inhibited intracellular Ca2+ mobilization in response to Ca2+ ions. N = 3, data represent mean ± SEM (Figure 1—source data 1). (B) Dose-dependent NB-88-inhibited intracellular Ca2+ mobilization in response to Ca2+ ions. N = 3, data represent mean ± SEM (Figure 1—source data 1). (C) SPR sensorgram showing that NB-2D11 bound to CaSR with 0.24 nM affinity (Figure 1—source data 2). (D) SPR sensorgram showing that NB88 bound to CaSR with 3.9 nM affinity (Figure 1—source data 2).Figure 1—source data 1.2+ flux assay on CaSR-NB-2D11 and CaSR-NB88 complex.Figure 1—source data 2.
+**Figure 1.:** (A) Dose-dependent NB-2D11-inhibited intracellular Ca2+ mobilization in response to Ca2+ ions. N = 3, data represent mean ± SEM (Figure 1—source data 1). (B) Dose-dependent NB-88-inhibited intracellular Ca2+ mobilization in response to Ca2+ ions. N = 3, data represent mean ± SEM (Figure 1—source data 1). (C) SPR sensorgram showing that NB-2D11 bound to CaSR with 0.24 nM affinity (Figure 1—source data 2). (D) SPR sensorgram showing that NB88 bound to CaSR with 3.9 nM affinity (Figure 1—source data 2).
 
-## Determining the cryo-EM structures of full-length CaSR
+### Determining the cryo-EM structures of full-length CaSR
 
 To obtain the structure of the receptor in the agonist+PAM bound state, we collected a dataset of detergent solubilized full-length CaSR in the presence of PAM cinacalcet, 10 mM calcium and the compound TNCA. We have observed two active conformations with overall resolutions of 2.99 Å and 3.43 Å (Figure 2—figure supplement 1). We performed local refinement of ECDs and TMDs separately to obtain maps with resolutions of 3.07 Å and 4.3 Å, respectively, with quality density throughout (Figure 2—figure supplement 1A; Table 1). The high-quality density maps present well-solved features in the ECD, which allow the unambiguous assignment of calcium, TNCA, and most side chains of amino acids of the receptor (Figure 2A,C, Figure 2—figure supplement 2). Despite low local resolution of 7TMD, we were able to define the backbone of TM helices and even side chains of some amino acids (Figure 2C, Figure 2—figure supplement 3A).
+
+**Table 1.**
+ Cryo-EM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CaSR</th>
+      <th>#1 inactive(EMD-30997)(PDB 7E6U)</th>
+      <th>#2 agonist+PAM(EMD-30996)(PDB 7E6T)</th>
+    </tr>
+    <tr>
+      <th>Data collection and processing</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Magnification</td>
+      <td>81,000×</td>
+      <td>81,000×</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>70</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–1.5 to –2.5</td>
+      <td>–1.5 to –2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.071</td>
+      <td>1.071</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C2</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>2,208,402</td>
+      <td>1,546,992</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>1,215,058</td>
+      <td>560,366</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)FSC threshold</td>
+      <td>6.00.143</td>
+      <td>3.30.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>3.2–7.0</td>
+      <td>2.5–6.5</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>5k5s, 6n51</td>
+      <td>5k5s, 6n51</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)FSC threshold</td>
+      <td>4.3/5.9/8.00/0.143/0.5</td>
+      <td>3.3/3.4/3.70/0.143/0.5</td>
+    </tr>
+    <tr>
+      <td>Model resolution range (Å)</td>
+      <td>4.3–8.0</td>
+      <td>3.3–3.7</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>–217</td>
+      <td>–115</td>
+    </tr>
+    <tr>
+      <td colspan="3">Model composition</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>14,214</td>
+      <td>12,751</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1796</td>
+      <td>1592</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>0</td>
+      <td>PO43-: 2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Ca2+: 6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>NAG: 4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>TNCA: 2</td>
+    </tr>
+    <tr>
+      <td colspan="3">B factors (Å2)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>102.59/530.90/286.91</td>
+      <td>61.44/302.84/157.67</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>N/A</td>
+      <td>91.52/151.96/105.80</td>
+    </tr>
+    <tr>
+      <td colspan="3">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.559</td>
+      <td>0.602</td>
+    </tr>
+    <tr>
+      <td colspan="3">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>2.5</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>14</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="3">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>94</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left panel shows the view of CaSR in the active conformation (purple) from front view, and the right panel shows the view after a 90° rotation as indicated. (B) Left panel shows the view of CaSR in the inactive conformation (cyan) bound to NB-2D11 (orange) from front view, and the right panel shows the view after a 90° rotation as indicated. (C) Model (Ribbon representation) of CaSR shows the structure of the active state (purple) bound to TNCA (red) and Ca2+ ion (green) viewed from the side. (D) Model (Ribbon representation) of CaSR shows the structure of the inactive state (cyan) bind with NB-2D11 (orange).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The flow chart displaying the cryo-EM processing of agonist+PAM bound CaSR in GDN. (B) Cryo-EM class averages of agonist+PAM bound CaSR in GDN micelles. (C) Local resolution map of agonist+PAM bound CaSR. (D) Gold standard Fourier shell correlation (FSC) curve indicates that the map for agonist+PAM bound CaSR reaches nominal resolutions of 2.99 Å at FSC = 0.143. (E) Particle angular distribution of the final cryo-EM reconstruction of agonist+PAM bound CaSR.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The cryo-EM densities and fitted atomic models of B and C helices of CaSR in agonist+PAM bound conformation. (B) The cryo-EM densities and fitted atomic models of TNCA and related amino acids.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) The full-length CaSR cryo-EM maps and models present view from front view in the agonist+ PAM bound state (purple) (A), and the fully inactive state (cyan) with deletion of NB-2D11 for clarity (B). Positions in the VFT (red, E228), CRD (green, E558), CRD/7TMD interface (blue, T609), and 7TM domain (yellow, P823) show that the active state is characterized by smaller intersubunit distances. The P823 position in the active model (yellow) shows the contact of 7TMDs. (C, D) Comparison of the intersubunit interfaces in active and inactive CaSR are shown for active (C) and inactive (D) CaSR. Contact regions (red) show residues within 4 Å of the opposite subunit. It should be noted that there is only one LB1–LB1 interaction interface for the inactive CaSR, and its total buried surface area is much smaller than that of the active CaSR with four different contact interfaces.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) The flow chart displaying the cryo-EM processing of inactive CaSR bound to NB-2D11 in GDN. (B) Cryo-EM class averages of inactive CaSR bound to NB-2D11 in GDN micelles. (C) Local resolution map of inactive CaSR bound to NB-2D11. (D) Gold standard Fourier shell correlation (FSC) curve indicates that the overall map for inactive CaSR bound to NB-2D11 reaches nominal resolutions of 6.0 Å at FSC = 0.143. (E) Particle angular distribution of the final cryo-EM reconstruction of inactive CaSR bound to NB-2D11.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) The superimposition of CaSRagonist+PAM (purple) and CaSRAcc (lavender, PDB:7DTV) displays the similar structures with the r.m.s.d of 1.299 Å. (B–D) The superimpositions of CaSRagonist+PAM (purple) and CaSRAcc (lavender, PDB:7DTV) in intersubunit (B), the VFT (C), and 7TMD (D) regions. (E) The superimposition of CaSRfully inactive (cyan) and CaSRIcc (brown, PDB:7DTW) presents a significant difference with the r.m.s.d of 8.007 Å. (F–H) The alignment of CaSRfully inactive (cyan) and CaSRIcc (brown, PDB:7DTW) in intersubunit (F), the VFT (G), and 7TMD (H) regions. (H) The superimpositions of CaSRagonist+PAM (purple), CaSRAcc (lavender, PDB:7DTV), and CaSRIcc (brown, PDB:7DTW) for VFT domain.
 
 To stabilize the structure of CaSR in the inactive state, we collected a dataset of CaSR in glyco-diosgenin (GDN) formed micelles in the presence of NPS-2143 (a negative allosteric modulator, NAM) and the inhibitory nanobody (NB-2D11). Cryo-EM data present three conformations of inactive CaSR with an overall resolution of 5.79 Å, 6.88 Å, and 7.11 Å, respectively (Figure 2—figure supplement 4). The local refinement focusing on the ECDs and the 7TMDs was performed separately to improve the resolutions to 4.5 Å and 4.8 Å, respectively, with quality density throughout (Figure 2—figure supplement 4A; Table 1), which enabled us to confidently build the backbone of the inactive CaSR model (Figure 2D, Figure 2—figure supplement 3B).
 
@@ -60,9 +275,17 @@ The overall structures in the inactive and agonist+PAM bound states are homodime
 
 In the inactive structure, there is only one interface at the apex of the receptor and the VFT module adopts an open conformation with the nanobody binding at the left lateral side of each LB2 domain (Figure 2B,D). The active state has the overall buried surface area of 3378 Å2, whereas it substantially decreases to 1346 Å2 in the inactive state (Figure 2—figure supplement 3C,D). Ling et al. recently published three different structures of CaSR in the inactive state, in which the VFT module adopted closed–closed, open–closed, and open–open conformations. However, due to low resolution, they only built the structure of CaSR in the inactive closed–closed conformation (CaSRIcc). Comparing our inactive open–open conformation (CaSRfully inactive) with their CaSRIcc revealed similar 7TM domains, but two totally different VFT module conformations, with their closed–closed conformation presenting similar characteristics to the active state (Figure 2—figure supplement 5). This indicates that the CaSR in the inactive state has conformational heterogeneity. In other words, this suggests that in addition to the full inactive state and the active state, there are multiple intermediate states in the process of activation.
 
-## Ca2+ and TNCA as a composite agonist activate the full-length CaSR dimer
+### Ca2+ and TNCA as a composite agonist activate the full-length CaSR dimer
 
 The cryo-EM map of active state presents a distinct density at the ligand-binding cleft of each protomer, which enabled us to unambiguously model TNCA (Figure 3A,B). The binding details of TNCA were the same as previously reported data (Zhang et al., 2016). The interactions between TNCA and VFT are primarily mediated by hydrogen bonds (Figure 3B). The high-resolution density of active state map enabled us to identify three distinct Ca2+-binding sites within ECD of each protomer (Figure 3A). Two sites were previously reported (Geng et al., 2016; Ling et al., 2021), while a new Ca2+-binding site was found at the interdomain cleft of the VFT module that is close to the hinge loop and abuts the TNCA binding site, and interacts with both LB1 and LB2 domains to facilitate ECD closure (Figure 3A–D). The bound Ca2+ ion is primarily coordinated with side chains of D190 and E297, carbonyl oxygen atoms of P188 backbone, and hydroxyl groups of S170 and Y489. Residues P188, D190, and S170 are located in LB1 domain, while E297 and Y489 are in LB2 (Figure 3C,D). The main coordination residues (S170, D190, and E297) of the Ca2+ ion are consistent with those previously reported (Liu et al., 2020). The maps obtained by cryo-EM imaging are insufficient to confirm that the observed density corresponds to calcium. We assume that the density represents the presence of Ca2+ based on the following reasons. First, from its hexavalent coordination (coordinating residues P188, D190, S170 and E297, and Y489), this metal is most likely to be Ca2+, although another ion cannot be ruled out. Second, we prepared the CaSR sample in a purification buffer supplemented with 10 mM Ca2+ and without any other bivalent cation prior to cryo-EM imaging. Third, the main binding residues (S170, D190, and E297) of Ca2+ ion were previously reported (Liu et al., 2020), and that single mutation of these residues (D190K, S170K and E297K, and Y489F) significantly reduced the effect of Ca2+-stimulated intracellular Ca2+ mobilization in cells (Figure 3E). The cell surface expression levels of these mutants are all above 80% compared to the wild-type level (Figure 3—figure supplement 1). Finally, mutant of a residue that bind L-amino acid (S147A) also largely impaired the Ca2+ effect (Geng et al., 2016), indicating the presence of L-amino acid near Ca2+ ion and that Ca2+ activates CaSR through the L-amino acid.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig3-v2.jpg)
+
+**Figure 3.:** (A) Ribbon representation of the active CaSR (gray), showing the location of the Ca2+-binding sites (green sphere) and TNCA (red). (B) Specific contacts between CaSR (gray) and TNCA (red space-filling model), mesh represents the final density map contoured at 17σ surrounding. (C) Specific interactions between CaSR and newly identified Ca2+ ion (green sphere), the mesh represents the cryo-EM density map contoured at 6.0σ surrounding Ca2+. (D) Highlighting the newly identified Ca2+ and TNCA sharing two common binding residues S170 and E297 (cyan space-filling model). (E) Dose-dependent intracellular Ca2+ mobilization expressing WT (black dots), mutant S170K (red dots), E297K (cyan dots), and D190K (brown dots) of CaSR. The single mutations were designed based on Ca2+ binding sites. N = 4, data represent mean ± SEM (Figure 3—source data 1). (F) Dose-dependent intracellular Ca2+ mobilization expressing WT (black dots), mutant Y489K (red dots) of CaSR. The single mutation was designed based on Ca2+ binding sites. N = 4, data represent mean ± SEM (Figure 3—source data 1). (G) Dose-dependent TNCA-activated intracellular Ca2+ mobilization in response to 0.5 mM Ca2+ ions. N = 3, data represent mean ± SEM (Figure 3—source data 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cell surface expression of indicated CaSR mutants. N = 3, data represent mean ± SEM.
 
 The Ca2+ ion interaction with both the LB1 and LB2 domains implies that it also contributes to the closure of the VFT module. The mutation of residue Y489 on LB2 that is in contact with Ca2+, but not L-amino acid, significantly reduces the effect of Ca2+-stimulated intracellular Ca2+ mobilization in cells (Figure 3F). This indicates that Ca2+ on its own is very important for stabilizing the closure of VFT, consistent with findings by Liu et al., 2020. Ling et al. tried to determine the cryo-EM structures of CaSR in the presence of a high concentration of Ca2+ to address the question of whether Ca2+ ions alone can activate CaSR in the absence of L-Trp. However, they did not obtain the closed conformation of VFT that only contain the Ca2+ ion between the cleft. This result indicates that Ca2+ ion alone is insufficient to induce the closure of the VFT module even in the presence of a high concentration of Ca2+ ions (Ling et al., 2021).
 
@@ -72,9 +295,17 @@ Our CaSRagonist+PAM structure reveals that the interaction of TNCA with the LB1 
 
 It is interesting that our structure shows that the bound Ca2+ and TNCA share three common binding residues S170, D190, and E297 (Figure 3D). Our experiment has shown that each of single mutations S170A, D190K, and E297K abolishes Ca2+-dependent receptor response (Figure 3E), consistent with Liu et al., 2020. Previous studies have suggested that the extracellular Ca2+ increases L-Trp binding (Geng et al., 2016), and L-Trp also directly stimulates intracellular Ca2+ mobilization through CaSR (Conigrave et al., 2004; Rey et al., 2005; Young and Rozengurt, 2002) and the efficacy and potency of L-Trp increase with increase in Ca2+ concentration (Geng et al., 2016). As mentioned above, L-amino acids increase the effect of Ca2+ ions on the CaSR (Jensen and Brauner-Osborne, 2007; Liu et al., 2020; Quinn et al., 2004; Saidak et al., 2009), and TNCA potentiate the Ca2+ activity (Zhang et al., 2016). Altogether, we show that CaSR is synergistically activated by the composite agonist composed of TNCA and Ca2+ ions.
 
-## The conformational transition of the LB1 prepares for the ligand binding during the activation of CaSR
+### The conformational transition of the LB1 prepares for the ligand binding during the activation of CaSR
 
 Both inactive and active structures reveal that the interface of LB1–LB1 dimer is predominantly a hydrophobic core, which is formed by the residues on two central helices (B and C) of each protomer, including V115, V149, as well as L156 for inactive structure and L112, L156, L159, and F160 for active crystal structure (Figure 4A, Figure 4—figure supplement 1A,B). On the dimer interfaces, The B–C helix angle has rotated approximately 28° from inactive state (117°) to active state (89°) (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left panel: The Cα trace of VFT module of CaSRfully inactive cryo-EM structure (cyan). The B-C Helix angle is 117°. Right panel: The Cα trace of VFT module of CaSRagonist+PAM cryo-EM structure (purple). The B-Helix angle is 89°. (B) Left panel: The Cα trace of VFT module of crystal structure of CaSR-ECDIoo (yellow) (PDB:5K5T). The B-Helix angle is 89°. Right panel: The Cα trace of VFT module of CaSR-ECDactive crystal structure (red) (PDB:5K5S). The B-Helix angle is 89°. (C) Left panel: The Cα trace of VFT module of CaSRIcc cryo-EM structure (brown) (PDB:7DTW). The B-Helix angle is 79°. Right panel: The Cα trace of VFT module of CaSRAcc cryo-EM structure (lavender) (PDB:7DTV). The B-Helix angle is 80°.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) The interface is a hydrophobic patch between residues on the B and C helices of each protomer. In the inactive conformation, it is an interface involving V115, V149, and L156 residues (A, cyan), whereas LB1 interface of the agonist+PAM bound state (B, purple) is packed with residues L112, L156, L159, and F160. (C) Left panel: The Cα trace of VFT module of inactive mGluR cryo-EM structure (raspberry) (PDB: 6N52). Right panel: The B-Helix angle is 125°. (D) Left panel: The Cα trace of VFT module of active mGluR cryo-EM structure (green) (PDB: 6N51). Right panel: The B-Helix angle is 66°. (E, F) Alignment of LB1 domain of CaSR in three conformations: fully inactive (cyan), intermediate (yellow, PDB:5K5T), and agonist+PAM bound (purple) states, ligand-binding residues (red). (E) Fully inactive and intermediate LB1 domain, the conformation of the ligand-binding region in LB1 domain is significantly different in two states. (F) intermediate and agonist+PAM LB1 domain, showing a well superposition.
 
 Our result is in line with earlier reports of CaSR and other class C GPCRs activation. Liu et al. detected reorientation of LB1–LB1 dimer during activation using a FRET-based conformation CaSR sensor (Liu et al., 2020). mGluR5 receptor changes from active to apo state with an approximately 59° rotation of the B–C helix angle (Koehl et al., 2019; Figure 4—figure supplement 1C,D).
 
@@ -84,11 +315,19 @@ The B–C helix of the recently reported CaSR structure in the inactive states i
 
 The LB1 domain plays a predominant role for anchoring ligands. Superimposition of LB1 domains of inactive (CaSRfully inactive), intermediate (CaSR-ECDIoo), and agonist+PAM bound (CaSRagonist+PAM) conformations, reveals that our inactive conformation has a significantly different LB1 structure compared to the intermediate conformation (Figure 4—figure supplement 1E), whereas the LB1 domains in the intermediate and agonist+PAM bound states are well superimposed with a backbone r.m.s.d. of 0.806 Å (Figure 4—figure supplement 1F). Thus, the conformational transition of the LB1 domain from inactive to intermediate state provides the structural basis for ligand binding.
 
-## Spontaneous proximity of LB2 domains during the activation
+### Spontaneous proximity of LB2 domains during the activation
 
 No significant difference of the overall LB2 conformations is observed among the superposition of inactive, intermediate (CaSR-ECDIoo), and agonist+PAM bound structures (Figure 5—figure supplement 1A,B). The cryo-EM structure of CaSR in inactive state displays a relatively large backbone separation distance of 56.26 Å between the C-terminal ends of N541 of each LB2 domain, while it reduces to 45.8 Å in the CaSRIoo state and 41.8 Å in the CaSRIcc state. A further reduction to 29 Å is observed upon activation in the active model (Figure 5). Thus, the two LB2 domains gradually approach each other until they interact, a process that is not induced by the agonists (Figure 5, Figure 5—figure supplement 1C–E).
 
-## NB-2D11 blocks the interaction of LB2 domains to lock the CaSR in the full inactive conformation
+![Figure 5.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig5-v2.jpg)
+
+**Figure 5.:** (A) The CaSRfully inactive (cyan) conformation of VFT module. The distance between C termini of the two LB2 domains is 56.26 Å. (B) CaSR-ECDIoo (yellow) (PDB:5K5T) conformation of VFT module. The distance between C termini of the two LB2 domains is 45.8 Å. (C) CaSRIcc (brown) conformation of VFT module (PDB:7DTW). The distance between C termini of the two LB2 domains is 41.8 Å. (D) CaSRagonist+PAM (purple) conformation of VFT module. The distance between C termini of the two LB2 domains is 29 Å.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Inactive and intermediate LB2 domains, (B) intermediate (PDB:5K5T) and active LB2 domains, which indicate the three conformations of LB2 domain have no distinguishing differences, suggesting the ligand-binding residues in LB2 domain do not change during approach of LB2 domain. (C–E) Superpositions of VFT module based on LB1 domains in the inactive and intermediate (C), intermediate and active (D), and inactive, intermediate, and active states (E) of CaSR.
+
+### NB-2D11 blocks the interaction of LB2 domains to lock the CaSR in the full inactive conformation
 
 The inactive structure reveals that NB-2D11 binds the left lateral of each LB2 domain from orthogonal view (Figure 6), with the hydrophilic interaction interface between the amino acids D53, D99, W102, R101, and E110 from CDR1 and CDR3 of the nanobody and the residues R220, S240, S244, Y246, S247, and E251 from Helix F and Strand I (Figure 6C). Superposition of the inactive and agonist+PAM bound LB2 domains shows that NB-D211 occupies the spatial position of the LB2 domain of the other protomer, which blocks the approach of another corresponding subunit LB2 (Figure 6D). Our results indicate that the interactions of both LB2 domains are required to activate CaSR, which is the explanation of the inhibitory function of NB-2D11.
 
@@ -96,9 +335,21 @@ The inactive structure reveals that NB-2D11 binds the left lateral of each LB2 d
 
 **Figure 6.:** (A) Structure of the inactive CaSR protomer (surface representation, cyan) with NB-2D11 (ribbon diagram, orange) from front view. (B) The NB-2D11 (orange) binds the left lateral of the LB2 (cyan) from the front view of the protomer. (C) NB-2D11 binds the LB2 domain through a series of polar interactions through CDR1 and CDR3 of the nanobody and the Helix F and Strand I of the CaSR. (D) Superposition of NB-2D11 (orange) binding inactive conformations (cyan) and active (purple) conformations based on the LB2 domain of VFT module, showing the whole NB-2D11 in the inactive state crashes with the LB2 domain of another VFT module in the active state.
 
-## The rotation of LB2 domain propagates to large-scale transitions of the 7TMDs from TM5-TM6-plane to TM6-driven interface
+### The rotation of LB2 domain propagates to large-scale transitions of the 7TMDs from TM5-TM6-plane to TM6-driven interface
 
 The closure of VFT displays an inward rotation of each LB2 followed by moving upward individually (Figure 5). Afterwards, two intersubunit interfaces are formed at the downstream of subunits, including the interaction between the LB2 linked CRDs, which is consistent with the reported crystal structure of CaSR ECD (Geng et al., 2016; Figure 7—figure supplement 1), and the intersubunit interaction between TMDs (Figure 7A–F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig7-v2.jpg)
+
+**Figure 7.:** (A) Front view of CaSRfully inactive CRDs and 7TMDs (cyan). (B) Front view of CaSRagonist+PAM CRDs and 7TMDs (purple). (C) The alignment of the part of CRD and 7TMDs in both fully inactive and agonist+PAM bound CaSR. (D) The alignment of inactive and agonist+PAM bound 7TMDs from top view. (E–G) The 7TMDs interface in the fully inactive state of CaSR is mediated by TM5 and TM6 (cyan) from top view and that of the agonist+PAM state is driven by TM6 from top view. Superposition of 7TMD of the inactive (cyan) and agonist+PAM bound CaSR (purple) show the rotation of 7TMDs. (H–J) Dose-dependent intracellular Ca2+ mobilization expressing WT (black dots) and mutant (red dots) CaSR (Figure 7—source data 1). The single mutations of F789A (H), F792A (I), and P823R (J) were designed based on the inactive density map. For (H–J), N = 4, data represent mean ± SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The homodimer interface of the CRDs (surface representation, purple). Contact regions (red) show residues within 4 Å of the opposite. It covers approximately 1079.09 Å2 of solvent accessible surface area. (B) There is a bound Ca2+ coordinated by carboxylate group of D234 and carbonyl oxygen of E231 and G557, holding the interface that is required to activate the receptor. (C) The CR–CR contacts were maintained through the cross-subunit hydrogen bonds between T560 and E558, and hydrophobic interaction of I554 and P569.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) The 7TMD configuration in the inactive state from front view. There are pairwise symmetrical undefined maps that link the extracellular and intracellular part of TM5 and TM6 in the 7TM dimer interface, blocking the association of 7TMDs could regulate the function of CaSR. (B, C) The 7TMDs interface of the active state of mGluR5 (C, PDB:6N51) and GABAB (D, PDB:7C7Q) have the interface contact with TM6.
 
 The alignment of individual 7TMD of both inactive and agonist+PAM bound states presents that the helices are well superposed (Figure 7D). Although NAM and PAM were added during the preparation of inactive and active samples, respectively, no density of them was observed on the maps due to low resolutions. The inactive structure reveals that TM5 and TM6 constitute a 7TMD plane–plane interface (Figure 7E). There are pairwise symmetrical undefined maps that link the extracellular and intracellular part of TM5 and TM6 in the 7TMD interface (Figure 7—figure supplement 2A). Our structure shows a TM5–TM6/TM5–TM6 interaction that it is slightly different from the TM4–TM5/TM4–TM5 plane–plane interaction in the 7TMD interface proposed by Liu et al., 2020. Our experiments show that each of the single mutations F789A or F792A attenuates Ca2+-induced receptor activity, indicating that this contact plays a role in the activation of CaSR (Figure 7H,I). The cell surface expression levels of these mutants are all over 100% compared to the wild-type level (Figure 3—figure supplement 1).
 
@@ -106,13 +357,13 @@ The agonist+PAM bound structure shows a TM6–TM6 interface, contacting at the a
 
 Superposition of inactive and agonist+PAM structures shows a high degree of structural overlap in 7TM domains, with the exception of a bundle comprising of extracellular loop 2 (ECL2) and a stalk linking CRD and TM1 showing slight structural dissimilarity. CRD appears semi-rigid (Figure 7C). Therefore, a small rotation of LB2 domains could propagate to large-scale transitions of the TMDs through the CRDs, thereby reorientating the 7TMDs from the inactive plane–plane interface mediated by TM5 and TM6 to the active interface driven by TM6 (Figure 7E–G). The proximity of 7TMDs is observed during the activation, from a plane–plane distance of 24 Å in inactive state to 5.7 Å at P8236.55 in the active state (Figure 2—figure supplement 3A,B).
 
-## Upward movement of LB2 converted into the intra-7TM rearrangement through ECL2
+### Upward movement of LB2 converted into the intra-7TM rearrangement through ECL2
 
 Models of both inactive and active structures reveal that there is a bundle of structure in the junction region between extracellular and transmembrane domain, which is composed of C-terminal elongated peptide of CRD and the twisted hairpin loop of ECL2 (Figure 8A,B). Unlike mGluR5 and GABAB receptors (Kim et al., 2020; Koehl et al., 2019; Mao et al., 2020; Papasergi-Scott et al., 2020; Park et al., 2020; Shaye et al., 2020), which are formed by a twisted three-strand β-sheet, the junction of CaSR is more flexible than that of mGluR5 and GABAB receptors. The structure of the agonist+PAM bound state shows that the residues 759–763 fragment of ECL2 and the C-terminal residues of the CRD (601–604) form a new interface (Figure 8A), which presents a more compactible interaction in the agonist+PAM bound state (Figure 8B). In addition, there is another interface involving the residues E759 at the apical loop of ECL2 and the residues W590 at the bottom of the loop composed of residues 589–591 for agonist+PAM bound state. In the agonist+PAM bound state, the loop of ECL2 is pulled up by the interaction among E759, W590, and K601, leading to the movement of ECL2 (Figure 8), which would raise the reorientation of TM5 and TM6 domains during the activation of CaSR (Figure 7E,F). To confirm the importance of this interaction, deletion of residues D758 and E759 at the apex of ECL2 (Figure 8D), as well as single mutations of K601E and W590E (Figure 8E,F), disrupted these contacts and led to a significantly reduced Ca2+-induced receptor activity, Therefore, ECL2 plays a key role in relaying the conformational changes of VFT to the intrasubunit TM domain to rearrange the structure to adapt to downstream transducers, such as G proteins. The cell surface expression levels of Δ758–759 mutant was comparable to that of WT, while W590E and K601E mutants were expressed on the cell surface at approximately 40–50% of WT level (Figure 3—figure supplement 1).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/68578/elife-68578-fig8-v2.jpg)
 
-**Figure 8.:** (A) Model in CaSRagonist+PAM state (purple) and cryo-EM map (gray) showing the contact between the CRD and the ECL2 of the 7TMDs. Critical residues at this interface are shown as spheres at their Cα positions. (B) Superposition of the interface between the CRD and the ECL2 of the 7TMD between both fully inactive and agonist+PAM bound conformations. (C) Specific contacts between the loop of CR domain and the loop of ECL2 to shift the ECL2 up. (D–F) Deletion of residues D758 and E759 (D), the single mutation of K601E (E) and W590E (F) significantly reduced Ca2+-induced receptor activity. (WT in black dots and mutant in red dots). For (D–F), N = 4, data represent mean ± SEM (Figure 8—source data 1).Figure 8—source data 1.2+ flux assay on CaSR mutations.
+**Figure 8.:** (A) Model in CaSRagonist+PAM state (purple) and cryo-EM map (gray) showing the contact between the CRD and the ECL2 of the 7TMDs. Critical residues at this interface are shown as spheres at their Cα positions. (B) Superposition of the interface between the CRD and the ECL2 of the 7TMD between both fully inactive and agonist+PAM bound conformations. (C) Specific contacts between the loop of CR domain and the loop of ECL2 to shift the ECL2 up. (D–F) Deletion of residues D758 and E759 (D), the single mutation of K601E (E) and W590E (F) significantly reduced Ca2+-induced receptor activity. (WT in black dots and mutant in red dots). For (D–F), N = 4, data represent mean ± SEM (Figure 8—source data 1).
 
 ## Discussion
 
@@ -146,27 +397,289 @@ We analyzed how the closure of ligand bound VFT module is relayed to the signali
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CaSR</td>
+      <td>NCBI</td>
+      <td>NM_000388.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: C2527I</td>
+      <td>E. coli strain for expression of the nanobody</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TG1</td>
+      <td>Lucigen</td>
+      <td>Cat#: 60,502</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TOP10F'</td>
+      <td>Huayueyang Biotech</td>
+      <td>WXR15-100S</td>
+      <td>E. coli strain for expression of the nanobody</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>(HEK) 293 S GnTI- cells</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3022RRID: CVCL_A785</td>
+      <td>Mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293T/17</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-11268RRID: CVCL_1926</td>
+      <td>Mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA-Tag, (Mouse monoclonal)</td>
+      <td>Yeasen</td>
+      <td>30,701ES60</td>
+      <td>Dilution: (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag-Tag (DYKDDDDK), (Mouse monoclonal)</td>
+      <td>Yeasen</td>
+      <td>30,503ES20</td>
+      <td>Dilution: (1/2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Mouse IgG (H + L)(Goat monoclonal)</td>
+      <td>Yeasen</td>
+      <td>33,201ES60</td>
+      <td>Dilution: (1/2500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AxyPrep Plasmid Miniprep Kit</td>
+      <td>CORNING LIFE SCIENCES</td>
+      <td>Cat#:220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMECS vector</td>
+      <td>BioVector NTCC</td>
+      <td>pMECS</td>
+      <td>Phage display vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam vector</td>
+      <td>Addgene</td>
+      <td>Cat#:160,451</td>
+      <td>Vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-HA</td>
+      <td>Addgene</td>
+      <td>Cat#:631,604</td>
+      <td>Vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1</td>
+      <td>Addgene</td>
+      <td>Cat#:128,034</td>
+      <td>Vector</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Flag peptide</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>DYKDDDDK</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NB88(camel nanobody)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Isolated from phage display library of immunized cammel with hCaSR</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NB-2D11 (camel nanobody)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Isolated from phage display library of immunized cammel with hCaSR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luciferase assay kit</td>
+      <td>Promega</td>
+      <td>E152A</td>
+      <td>For signaling assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal ELISA Femto Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#: 37,075</td>
+      <td>Protein Assays and Analysis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fluo-4, AM, Cell Permeant</td>
+      <td>YEASEN</td>
+      <td>40,704ES50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TNCA</td>
+      <td>aladdin</td>
+      <td>42438-90-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NPS-2143</td>
+      <td>aladdin</td>
+      <td>284035-33-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cinacalcet</td>
+      <td>aladdin</td>
+      <td>364782-34-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lauryl Maltose Neopentyl Glycol (LMNG)</td>
+      <td>Anatrace</td>
+      <td>NG310</td>
+      <td>Membrane protein purification</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glyco-Diosgenin (GDN)</td>
+      <td>Anatrace</td>
+      <td>GDN101</td>
+      <td>Membrane protein purification</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol Hemisuccinate tris Salt (CHS)</td>
+      <td>Anatrace</td>
+      <td>CH210</td>
+      <td>Membrane protein purification</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMB substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34,021</td>
+      <td>Protein Assays and Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>https://cryosparc.com</td>
+      <td>Version 3.0.0RRID:SCR_016501</td>
+      <td>Cryo-EM data processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>http://www.phenix-online.org/</td>
+      <td>Version 1.19.2RRID:SCR_014224</td>
+      <td>Structure refinement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Coot (cam.ac.uk)</td>
+      <td>Version 0.9.4 RRID:SCR_014222</td>
+      <td>Structure refinement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>DOI:10.1107/S0907444909042073</td>
+      <td>RRID:SCR_014226</td>
+      <td>Structure verification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>https://wwwcgl.ucsf.edu/chimera/(PMID:15264254)</td>
+      <td>Version 1.15 RRID:SCR_004097</td>
+      <td>Initial homology model docking</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>Schrodinger</td>
+      <td>Version 2.5 RRID:SCR_000305</td>
+      <td>Structural visualization/figure preparation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Analysis of signaling data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>11668030</td>
+      <td>Transfection reagent for signaling assay</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 (HEK) 293 S GnTI− cells (human) were purchased from ATCC (Cat# CRL-3022 RRID:CVCL_A785), which were grown in FreeStyle 293 medium (Gibco) supplemented with 2% (v/v) FBS (Gibco) and 8% CO2 for maintenance. HEK293T/17 cells (ATCC, Cat# CRL-11268 RRID:CVCL_1926) were grown in Dulbecco’s modified eagle medium (DMEM, Gibco) supplemented with 10% (v/v) FBS and 5% CO2. All cell lines were grown at 37℃. All the cell lines tested negative for mycoplasma contamination.
 
-## Nanobody library generation
+### Nanobody library generation
 
 Camel immunizations and nanobody library generation were performed as described previously (Pardon et al., 2014). Animal work was conducted under the supervision of Shanghai Institute of Materia Medica, Chinese Academy of Sciences. In brief, two camels were immunized subcutaneously with approximately 1 mg human CaSR protein combined with equal volume of Gerbu FAMA adjuvant once a week for seven consecutive weeks. Three days after the last immunization, peripheral blood lymphocytes (PBLs) were isolated from the whole blood using Ficoll-Paque Plus according to manufacturer’s instructions. Total RNA from the PBLs was extracted and reverse transcribed into cDNA using a Super-Script III FIRST-Strand SUPERMIX Kit (Invitrogen). The VHH encoding sequences were amplified with two-step enriched-nested PCR using VHH-specific primers and cloned between PstI and BsteII sites of pMECS vector. Electro-competent E. coli TG1 cells (Lucigen) were transformed and the size of the constructed nanobody library was evaluated by counting the number of bacterial colonies. Colonies were harvested and stored at −80°C.
 
-## Nanobody identification by phage display
+### Nanobody identification by phage display
 
 E. coli TG1 cells containing the VHH library were superinfected with M13KO7 helper phages to obtain a library of VHH-presenting phages. Phages presenting CaSR-specific VHHs were enriched after three rounds of biopanning. For each panning round, phages were dispensed into CaSR coated 96 wells (F96 Maxisorp, Nunc), incubated for 2 hr on a vibrating platform (700 r.p.m), and subsequently washed 10 times with PBST and five times with PBS. The retained phages were eluted with 0.25 mg ml–1 trypsin (Sigma-Aldrich). The collected phages were subsequently amplified in E. coli TG1 cell for consecutive rounds of panning. After the third rounds of biopanning, 200 positive clones were picked and infected with M13KO7 helper phages to obtain the VHH-presenting phages.
 
-## ELISA to select CaSR VHHs
+### ELISA to select CaSR VHHs
 
 The wells of ELISA plates were coated with 2 μg ml–1 neutravidin in PBS overnight at 4°C. Biotinylated CaSR (2 μg ml–1) was added into each well. Then the wells were blocked with 5 mg ml–1 non-fat milk powder in PBS. One hundred microliter supernatant of HA-tagged CaSR VHH was added into each well with 1 hr incubation at 4°C, followed by incubation with horseradish peroxidase (HRP)-conjugated anti-HA (Yeasen). TMB substrate (Thermo Fisher Scientific) was added, and the reactions were stopped by 2 M H2SO4. Measurement was performed at 450 nm.
 
-## Purification of NB-2D11
+### Purification of NB-2D11
 
 NB-2D11 was cloned into a pMECS vector (NTCC) that contains a PelB signal peptide and a hemagglutinin (HA) tag followed by a 6× histidine tag at the C-terminus. It was expressed in the periplasm of E. coli strain TOP10F' (Huayueyang Biotech) and grown to a density of OD600nm 0.6–0.8 at 37°C in 2YT media containing 100 μg/ml Ampicillin, 0.1% (w/v) glucose and 1 mM MgCl2, and then induced with 1 mM IPTG at 28°C for 12 hr. The bacteria were harvested by centrifugation and resuspended in a buffer containing 20 mM HEPES pH 7.5, 150 mM NaCl, 1 mM PMSF, and lysed by sonication, then centrifuged at 4000 r.p.m. to remove cell debris. The supernatant was loaded onto Ni-NTA resin and further eluted in elution buffer containing 20 mM HEPES pH 7.5, 150 mM NaCl, and 300 mM imidazole. The elution was purified by gel filtration chromatography using a HiLoad 16/600 Superdex 75 pg column in 150 mM NaCl with 20 mM HEPES pH7.5. Finally, NB-2D11 was flash-frozen in liquid nitrogen until further use.
 
-## Purification of inactive state CaSR bound to NPS-2143 and NB-2D11
+### Purification of inactive state CaSR bound to NPS-2143 and NB-2D11
 
 Human CaSR (1-870) followed by a Flag epitope tag (DYKDDDD) at the C-terminus was cloned into a modified pEG BacMam vector (Goehring et al., 2014) for expression in baculovirus-infected mammalian cells. Human embryonic kidney (HEK) 293 GnTI- cells (ATCC) were infected with baculovirus at a density of 2.5 × 106 cells per ml at 37°C in 8 % CO2. Ten millimolar sodium butyrate was added 12–16 hr postinfection, then cells were grown for 48 hr at 30°C with gentle rotation.
 
@@ -174,17 +687,17 @@ The infected cells were harvested by centrifugation at 4000 g for 30 min, resusp
 
 CaSR was further purified by ion-exchange chromatography using a Mono Q 5/50 GL column. Peak fractions were assembled and incubated with a 1.2 molar excess of NB-2D11 for 1 hr before injection on a Superose 6 Increase 10/300 GL column. Fractions of CaSR-NB-2D11 complex in buffer containing 20 mM HEPES, 150 mM NaCl, 1 mM CaCl2, 1 μM NPS-2143, 0.002% GDN, and 0.0002% CHS were pooled and concentrated to approximately 5 mg ml–1 for further cryo-EM sample preparation.
 
-## Purification of active state CaSR bound to cinacalcet and TNCA
+### Purification of active state CaSR bound to cinacalcet and TNCA
 
 Infected cells (described above) were collected and resuspended in hypotonic buffer (20 mM HEPES pH 7.5, 10 mM NaCl, 10 mM CaCl2, 10% glycerol, 1× cocktail of protease inhibitor, 1 μM cinacalcet, and 1 μM TNCA). Cell membrane was collected by ultra-centrifugation at 40,000 r.p.m. for 1 hr, resuspended, and solubilized in buffer containing 20 mM HEPES, 150 mM NaCl, 10 mM CaCl2, 10% glycerol, 1 μM cinacalcet, 1 μM TNCA, 1% LMNG, and 0.1% CHS for 1 hr at 4°C. The supernatant was collected by ultra-centrifugation and applied to an anti-Flag M2 antibody affinity column. After receptor binding to the M2 column, the resin was washed with 20 mM HEPES, 150 mM NaCl, 10 mM CaCl2, 10% glycerol, 1 μM cinacalcet, 1 μM TNCA, 0.1% LMNG, 0.01% CHS. LMNG was exchanged for GDN to a proportion of 0.2% in stepwise washing. CaSR was then eluted with 20 mM HEPES, 150 mM NaCl, 10 mM CaCl2, 10% glycerol, 1 μM cinacalcet, 1 μM TNCA, 0.02% GDN, 0.002% CHS, and 0.2 mg ml–1 Flag peptide.
 
 CaSR was further purified by Mono Q 5/50 GL column. Peak fractions were assembled and injected to a Superose 6 Increase 10/300 GL column. Fractions of CaSR in buffer containing 20 mM HEPES, 150 mM NaCl, 10 mM CaCl2, 1 μM cinacalcet, 1 μM TNCA, 0.002% GDN, and 0.0002% CHS were pooled and concentrated to approximately 5 mg ml–1 for further cryo-EM sample preparation.
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 Three microliters of inactive or active CaSR protein was applied to glow-discharged holey carbon 300 mesh grids (Quantifoil Au R1.2/1.3, Quantifoil MicroTools), respectively. The grids were blotted for 2 s and flash-frozen in liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific) at 4°C and 100% humidity. Cryo-EM data was collected on a Titan Krios microscope (Thermo Fisher Scientific) at 300 kV accelerating voltage equipped with a Gatan K3 Summit direct election detector at a nominal magnification of 81,000× in counting mode at a pixel size of 1.071 Å. Each micrograph contains 36 movie frames with a total accumulated dose of 70 electrons per Å. The defocus range was set –1.5 to –2.5 μm. A total of 5706 and 4981 movies for active and inactive CaSR were collected for further data processing, respectively.
 
-## Data processing and 3D reconstruction
+### Data processing and 3D reconstruction
 
 All images were aligned and summed using MotionCor2 (Zheng et al., 2017). Unless otherwise specified, single-particle analysis was mainly executed in RELION 3.1 (Zivanov et al., 2020). After CTF parameter determination using CTFFIND4 (Rohou and Grigorieff, 2015), particle auto-picking, manual particle checking, and reference-free 2D classification, 1,546,992 and 2,208,402 particles remained in the active and inactive datasets, respectively. The particles were extracted on a binned dataset with a pixel size of 4.42 Å and subjected to 3D classification, with the initial model generated by ab-initio reconstruction in cryoSPARC (Punjani et al., 2017).
 
@@ -192,18 +705,18 @@ For the CaSR active state dataset, 3D classification resulted in extraction of 3
 
 For the CaSR inactive state dataset, 3D classification resulted in extraction of 55% good particles with a pixel size of 1.071 Å. The particles were subsequently subjected to an auto-refine procedure, yielding a 6.0-Å-resolution map. Afterwards, particles were further sorted with another round of 3D classification focusing the alignment on the TM domain, resulted in 37.7% particles with high-quality features. Further 3D classification on the whole complex separates three different orientations of ECD relative to TM domain. After refinement, the resolution levels of these three maps improved to 5.79 Å, 6.88 Å, and 7.11 Å. Particle subtractions on the ECD and TM domains were also performed to further improve the map quality. After several rounds of 3D classifications, ECD map has a resolution of 4.5 Å with 253,294 particles, while that for TM is 4.8 Å with 691,246 particles.
 
-## Model building and refinement
+### Model building and refinement
 
 The crystal structures of CaSR ECD in apo and active forms (PDB Code: 5K5T, 5K5S) were used as initial templates for the ECD of the CaSR. The cryo-EM structures of mGluR5 in resting and active forms (PDB Code: 6N52, 6N51) were used as initial models for the TM domains of the receptor. The agonist TNCA was generated by COOT (Emsley and Cowtan, 2004) and PHENIX.eLBOW (Adams et al., 2010). The initial templates of ECDs and TMDs were docked into the cryo-EM maps of CaSR using UCSF Chimera (Goddard et al., 2018) to build the initial models of CaSR in inactive and active forms. Then the main chains and side chains of the initial models were manually rebuilt in COOT. The models were subsequently performed by real-time refinement in PHENIX.
 
-## Intracellular Ca2+ flux assay
+### Intracellular Ca2+ flux assay
 
 HEK293T cells (ATCC) were transiently transfected with wild-type or mutant full-length CaSR plasmids. Five micrograms DNA plasmid was incubated with 15 μl lipofectimin in 500 μl OptiMEM for 10 min at room temperature and then added to the cells for overnight incubation at 37°C. The transfected cells were trypsinized and seeded in 96-well plates. On the day of assay, the cells were incubated with loading medium containing 20 mM HEPES, 125 mM NaCl, 4 mM KCl, 1.25 mM CaCl2, 1 mM MgSO4,1 mM Na2HPO4, 0.1% D-glucose, and 0.1% BSA at 37°C for 4 hr. Then the buffer was replaced with 100 μl of buffer containing Fluo-4 at 37°C for 1 hr incubation, and then placed into the FLIPR Tetra High Throughput Cellular Screening System. Data was analyzed by non-linear regression in Prism (GraphPad Software). Data points represent average ± SEM of quadruplicate measurements.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 SPR experiments were performed using a Biacore T200 instrument (GE Healthcare). The system was flushed with running buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 0.05% Tween 20), and all steps were performed at 25°C chip temperature. The CaSR ECD flowed through the negatively charged chip at a concentration of 1 mg/ml and a flow rate of 10 μl/min for 1 min and was captured by amino-carboxyl coupling reaction. It was followed by nanobody NB-2D11 that went through the chip at a series of concentration (30 μl/min, association: 90 s, dissociation: 220 s). All Biacore kinetic experiment data were obtained using Biacore S200 Evaluation Software to calculate the KD, which is the ratio of kd/ka.
 
-## ELISA for cell-surface expression
+### ELISA for cell-surface expression
 
 ELISA was performed as a control to quantify cell surface expression of each CaSR mutant (Mos et al., 2019). In brief, HEK293T cells were transiently transfected with wild-type (WT) or mutant full-length CaSR plasmids. Five micrograms DNA plasmid was incubated with 15 μl lipofectimine (Invitrogen) in 500 μl OptiMEM (Gibco) for 10 min at room temperature and then added to the cells for overnight incubation at 37℃. The transfected cells were trypsinized and seeded in poly-D-lysine-coated 96-well plates (Greiner bio-one, cat# 655083). On the day of assay, cells were fixed with 4% paraformaldehyde in PBS for 20 min and washed twice. The cells were incubated with blocking buffer containing 3% skim milk in PBS followed by incubation for 1 hr with anti-Flag antibody (Yeasen) in blocking buffer. The cells were then incubated with horseradish peroxidase goat anti-mouse IgG (Yeasen) diluted 1:5000 in blocking solution for 1 hr. Chemiluminescence was measured on a Tecan plate reader immediately after addition of 10 μl/well SuperSignal ELISA Femto Substrate (Thermo Fisher Scientific). The results show that each CaSR mutant displays similar fluorescence intensity as that of wild type, which indicates that the elimination of the calcium response is not caused by misfolding or mis-trafficking of the receptor. All mutants were well-expressed on the cell surface compared to the WT receptor.

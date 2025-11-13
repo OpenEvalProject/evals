@@ -123,6 +123,52 @@ Additionally, the use of such PPARγ agonists (commonly referred to as thiazolid
 
 As we discussed above, several pathophysiological mechanisms may be involved in development of severe forms of COVID-19 (Table 1). These mechanisms can be roughly divided in two groups: those connected with modulation of ACE2 receptor (thus directly or indirectly influencing the status of the local or generalized renin-angiotensin system) and those providing an interaction between viral infection and pre-existing bacterial conditions in different tissues as well as in circulation.
 
+**Table 1.**
+ Some possible pathophysiological pathways connecting obesity/T2D to severity of COVID-19.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nr.</th>
+      <th>Description</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>High integral viral load induced by the local up-regulation of ACE2 Expression of angiotensin-converting enzyme 2 (ACE2), which is the functional receptor that SARS-CoV/CoV-2 exploits to enter host cells, is strongly upregulated in different tissues of patients with obesity and T2D. This can lead to a high integral viral load of these tissues.</td>
+      <td>Pro Non-obese ACE2 KO mice manifest a mild form of SARS-CoV infection and strongly reduced pathological changes in the lungs compared to their wild-type counterparts. Contra Comorbidity of obesity/T2D with severity of COVID-19 was observed in viral infections other than SARS-CoV/CoV-2 and thus is not ACE2 specific. ACE inhibitors (ACEi) and Ang II receptor blockers (ARBs), both inducing the expression of ACE2, are thought to be beneficial in COVID-19.</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Shedding of ACE2 Increased shedding of ACE2 from different tissues (including adipose tissue demonstrating high expression of this enzyme in obesity and T2D) induced by ADAM17 leads to re-distribution of ACE2 in the body and its accumulation in the lungs.</td>
+      <td>Pro Hyperglycemia, typical in obesity and T2D, induces increased ADAM17 protein expression. Application of ADAM17 siRNA reduces SARS-CoV infectivity. Contra Comorbidity of obesity and T2D with severity of COVID-19 was observed in viral infections other than SARS-CoV/CoV-2 and thus is not ACE2 specific. ADAM17 regulates the fusion of viral particles with cytoplasmic membranes involved in entering of SARS-CoV/CoV-2 into the host cells. Thus, the positive effect of ADAM17 suppression is not in an obvious way connected with a reduced ACE2 shedding.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Disturbance of the vasodilation-vasoconstriction balance in the RAS system The pulmonary renin-angiotensin system (RAS) is adapted to the conditions of increased ACE2 expression in obese individuals. Enhanced internalization of the virus/ACE2 complex leads to a quick production of a local pulmonary ACE2 deficiency, thereby disturbing the balance between vasodilating (Ang-(1-7)) and vasoconstricting (Ang II) agents in RAS and inducing the development of inflammation and fibrosis.</td>
+      <td>Pro ACE inhibitors (ACEi) and Ang II receptor blockers (ARBs), both inducing the expression of ACE2, are thought to be beneficial in COVID-19. Levels of vasoconstricting agent Ang II in circulation of COVID-19 patients are significantly elevated and linearly associated with viral load and lung injury. Contra Comorbidity of obesity and T2D with severity of COVID-19 was observed in viral infections other than SARS-CoV/CoV-2 and thus is not ACE2 specific. ACE2 deficiency seems to be not a single parameter influencing this effect. ACE2 KO mice exacerbate Ang II-mediated inflammation via overexpression of matrix metalloproteinases MMP2, −9 and −14.</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Compromised endothelial function in obesity and diabetes The vasculature of obese and diabetic subjects has a reduced baseline ACE2 expression, which leads to a compromised endothelial function and increased vascular permeability. This dysfunction can be further increased through virally-mediated reduction of ACE2. Administration of insulin and other anti-diabetic drugs causes additional suppression of ACE2.</td>
+      <td>Pro ACE inhibitors (ACEi) and Ang II receptor blockers (ARBs), both inducing the expression of ACE2, are thought to be beneficial in COVID-19. Experiments with double mutant Akita (murine model for human diabetes)/ACE2 KO mice revealed that the loss of ACE2 leads to impaired vascular function. This effect was observed only in double mutant mice, whereby neither Akita mice nor ACE2 KO mice alone demonstrate such changes. Contra Comorbidity of obesity and T2D with severity of COVID-19 was observed in viral infections other than SARS-CoV/CoV-2 and thus is not ACE2 specific.</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Synergistic viral–bacterial interaction Binding of viruses to lipopolysaccharides (LPS) can enhance their attachment to receptors on the surface of the host cells, thereby enhancing the infectivity. This effect can synergistically increase the integral viral load in the lungs. On the other hand, respiratory viruses can promote bacterial pneumonia, thereby altering the microbiota in the upper and promoting bacterial accumulation in the lower respiratory tract.</td>
+      <td>Pro Bacteria, bacterial DNA and LPS are present in circulation of obese and T2D individuals, and metabolic endotoxemia is causally connected with obesity, T2D, cardiovascular and pulmonary diseases. The spike protein of SARS-CoV2 binds to high density lipoprotein (HDL) cholesterol, and the severity of the SARS-CoV2 infection is inversely associated with plasma levels of HDL cholesterol. HDL and LPS bind to the scavenger receptor class B type I, which belongs to a cholesterol delivery system and is present in cells such as adipocytes and type two alveolar epithelial cells. Strong synergistic effects of combined coronavirus and bacterial infections on the severity of lung injury was demonstrated in the porcine respiratory coronavirus (PRCV) model: whereas pigs exposed to either PRCV or LPS demonstrated no or only mild symptoms, the combination of PRCV and LPS induced severe SARS and death in the majority of animals. Similar synergistic effects were observed in combined viral–bacterial infections. LPS induces lung injury through the suppression of ACE2 and the upregulation of Ang II, ACE, and AT1 receptors, thus dysregulating RAS before the viral infection. LPS binding protein (an enhancer of LPS endotoxicity) demonstrates a positive correlation with BMI and is significantly elevated in obesity and T2D. Synergistic viral–bacterial interactions seem to be involved in comorbidities of severe COVID-19 beyond obesity and T2D.</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Cellular transformations in lungs Adipose tissue is generally compromised in obesity and T2D. SARS-CoV/CoV-2 virus additionally modifies adipocytes and adipocyte-like cells causing their differentiation state, which directly modifies the function of the tissue containing these cells. In severe forms of SARS, this may involve the trans-differentiation of pulmonary lipofibroblasts into myofibroblasts.</td>
+      <td>Pro Lipofibroblasts trans-differentiate into myofibroblasts under different conditions, including hyperoxia and infection. This transformation is connected with a deprivation of parathyroid hormone-related protein, secreted by type two alveolar epithelial cells, which is suppressed by LPS. LPS leads to the trans-differentiation of pericytes into myofibroblasts in renal fibrosis. LPS-stimulated pericytes undergo trans-differentiation, even upon TGF-β receptor-blocking, which suggests the involvement of TLR4 signaling. Modification of TLR4 signaling is involved in different viral infections including SARS-CoV. Application of the PPARγ agonist rosiglitazone in a rat model of bronchopulmonary dysplasia induced by LPS significantly attenuates the negative effects of LPS and leads to reduced lung injury.</td>
+    </tr>
+  </tbody>
+</table>
+
 While all of them can theoretically contribute to the severity of COVID-19, we believe that one of these mechanisms should play the predominant role. Such mechanism must be present not only in obese and diabetic patients, but also in other groups of increased risk in COVID-19, including aged individuals, patients with CVD and some ethnicities. Moreover, taking into account multiple reports underlining the influence of gender and ethnicity on the COVID-19 outcome, this pathway must be also differentially present in males and females as well as in different ethnic groups. Hypothesis concerning the primary relevance of synergistic viral–bacterial interaction in severity of COVID-19 matches all these demands.
 
 Indeed, inflammation induced by bacteria and LPS is involved not only in insulin resistance but also in development of vascular abnormalities; hence, it is not surprising that blood-borne microbiota and circulating microbial metabolites were found to be significantly modified not only in diabetes but also in CVD (Velmurugan et al., 2020). Bacterial translocation from the gut to circulation caused by disruption of the gut barrier function was described both in patients with myocardial infarction and in corresponding mouse models (Zhou et al., 2018). This clearly indicates that viral–bacterial interactions are likely to also be involved in the comorbidity of CVD with COVID-19.

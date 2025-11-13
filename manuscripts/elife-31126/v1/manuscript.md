@@ -89,7 +89,7 @@
 
 ## Abstract
 
-10.7554/eLife.31126.001 As more people live longer, age-related neurodegenerative diseases are an increasingly important societal health issue. Treatments targeting specific pathologies such as amyloid beta in Alzheimer’s disease (AD) have not led to effective treatments, and there is increasing evidence of a disconnect between traditional pathology and cognitive abilities with advancing age, indicative of individual variation in resilience to pathology. Here, we generated a comprehensive neuropathological, molecular, and transcriptomic characterization of hippocampus and two regions cortex in 107 aged donors (median = 90) from the Adult Changes in Thought (ACT) study as a freely-available resource ( http://aging.brain-map.org/ ). We confirm established associations between AD pathology and dementia, albeit with increased, presumably aging-related variability, and identify sets of co-expressed genes correlated with pathological tau and inflammation markers. Finally, we demonstrate a relationship between dementia and RNA quality, and find common gene signatures, highlighting the importance of properly controlling for RNA quality when studying dementia.
+As more people live longer, age-related neurodegenerative diseases are an increasingly important societal health issue. Treatments targeting specific pathologies such as amyloid beta in Alzheimer’s disease (AD) have not led to effective treatments, and there is increasing evidence of a disconnect between traditional pathology and cognitive abilities with advancing age, indicative of individual variation in resilience to pathology. Here, we generated a comprehensive neuropathological, molecular, and transcriptomic characterization of hippocampus and two regions cortex in 107 aged donors (median = 90) from the Adult Changes in Thought (ACT) study as a freely-available resource (http://aging.brain-map.org/). We confirm established associations between AD pathology and dementia, albeit with increased, presumably aging-related variability, and identify sets of co-expressed genes correlated with pathological tau and inflammation markers. Finally, we demonstrate a relationship between dementia and RNA quality, and find common gene signatures, highlighting the importance of properly controlling for RNA quality when studying dementia.
 
 ## Introduction
 
@@ -103,15 +103,153 @@ To better understand the relationship between cognition, brain pathology and inj
 
 ## Results
 
-## A multimodal atlas of aging and dementia
+### A multimodal atlas of aging and dementia
 
 The Aging, Dementia, and TBI Study was initially designed to study the long term effects of mild-to-moderate TBI, but we focus the current analysis on aging and dementia and present our results with respect to TBI elsewhere. This study includes 55 participants of the ACT study self-reporting TBI with loss of consciousness, along with 55 individuals matched for age, sex, and year of death who did not report a TBI with loss of consciousness. Donors in the exposure cohort reported between 1–3 lifetime TBIs with loss of consciousness ranging from <10 s to >1 hr (Figure 1A). Most participants were male (63 males, 44 females), with a wide range of educational backgrounds, and quite old (77–102 years old at time of death, median = 90), representing one of the oldest cohorts of its kind to date. Around half of the donors were diagnosed with dementia, including 30 with AD, 12 with dementia of multiple etiologies, and four with vascular dementia. More APOE ε4-positive participants had dementia (65%) than APOEε4 negative participants (40%), consistent with the role of this gene as a primary genetic risk factor for AD. Deposition of the disease pathologies pTau, in the form of NFTs (Braak stage), and Aβ, in the form of neuritic plaque density (CERAD score), ranged from absent through severe with relatively equal frequency (Figure 1A), and was generally higher in donors with dementia compared to donors without dementia, as expected (Table 1). It should be noted that this cohort is not representative of the ACT cohort as a whole (i.e., it is older, more heavily male, and all deceased). Analyses can be extrapolated back to the entire ACT cohort using weights (Haneuse et al., 2009) available on the online resource (http://aging.brain-map.org/download/index); however, since we did not observe substantially different results using these weights (data not shown) we choose not to use them in the analyses presented here.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig1-v1.jpg)
+
+**Figure 1.:** (A) Demographics for all 106 donors (after excluding one outlier; Materials and methods). Histograms are shown for Age at death, Education (yrs), and Age at first TBI. All other metrics (except sex) are sorted from lowest to highest, with white corresponding to none (or 0 or control), and red corresponding to the highest severity of the condition or pathology. (B) Summary of all data available for each donor included in this study, including IHC on fresh and frozen tissue, RNA-seq analysis, and Luminex protein and isoprostane quantification. (C) Examples of histology from fresh frozen temporal cortex of donor H14.09.075 using IHC for Ab6E10 and AT8 and ThioS labeling, showing severe Ab and pTau pathology. Numbers indicate cortical layers. Descriptions of each metric (including abbreviations used) are included as a downloadable file on http://aging.brain-map.org/download/index. See also Figure 1—figure supplements 1–2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Examples of histology from FFPE temporal cortex of donor H14.09.075 using IHC for Ab6E10 (Aβ), AT8 (paired helical filament pTau), Tau2 (pTau), GFAP (astrocytes), and IBA1 (microglia), and ThioS labeling, showing severe Aβ and pTau pathology. FFPE pathology measurements are relatively dim compared with fresh frozen, but can still be quantified. Numbers indicate cortical layers.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** MDMR on all uncorrected data (top row) identifies region as the top source of variability, and MDMR run region by region (remaining rows) identifies sample RIN as the top source of variability, highlighting the importance of correcting for RNA quality. Numbers indicate percent of variation explained by a variable (columns) using a univariate model (Materials and methods), and colors indicate significance (green, p<0.01; light green, 0.05 < p < 0.01; red, p>0.05).
+
+**Table 1.**
+ Summary of demographics for donors with and without dementia.P-values for upper seven and lower two metrics are uncorrected significance values from T-tests and hypergeometric tests, respectively (*p<0.05 after Bonferroni correction for multiple comparisons). Demographic summary includes 106 donors used in analysis (Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Category</th>
+      <th colspan="2">Non-demented</th>
+      <th colspan="2">Demented</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age at death (yrs)</td>
+      <td>89</td>
+      <td>7</td>
+      <td>90</td>
+      <td>6</td>
+      <td>2.8E-01</td>
+    </tr>
+    <tr>
+      <td>Education (yrs)</td>
+      <td>15</td>
+      <td>3</td>
+      <td>14</td>
+      <td>3</td>
+      <td>4.9E-02</td>
+    </tr>
+    <tr>
+      <td>Number of TBIs</td>
+      <td>0.6</td>
+      <td>0.7</td>
+      <td>0.7</td>
+      <td>0.7</td>
+      <td>8.0E-01</td>
+    </tr>
+    <tr>
+      <td>Age at first TBI</td>
+      <td>23</td>
+      <td>31</td>
+      <td>24</td>
+      <td>32</td>
+      <td>8.2E-01</td>
+    </tr>
+    <tr>
+      <td>Braak stage</td>
+      <td>2.8</td>
+      <td>1.5</td>
+      <td>4.1</td>
+      <td>1.7</td>
+      <td>8.9E-05*</td>
+    </tr>
+    <tr>
+      <td>NIA Reagan</td>
+      <td>1.4</td>
+      <td>0.7</td>
+      <td>1.9</td>
+      <td>0.9</td>
+      <td>1.8E-03*</td>
+    </tr>
+    <tr>
+      <td>CERAD score</td>
+      <td>1.2</td>
+      <td>0.9</td>
+      <td>1.8</td>
+      <td>1.2</td>
+      <td>1.4E-02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Count</td>
+      <td colspan="2">Count</td>
+      <td>P-value</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td colspan="2">20 F / 36 M</td>
+      <td colspan="2">23 F / 27 M</td>
+      <td>1.0E-01</td>
+    </tr>
+    <tr>
+      <td>&gt;0 APOE ɛ4 alleles</td>
+      <td colspan="2">47 No/7 Yes</td>
+      <td colspan="2">32 No/13 Yes</td>
+      <td>2.1E-02</td>
+    </tr>
+  </tbody>
+</table>
+
 For each donor, we collected tissue from four brain regions known to show neurodegeneration and pathology as a result of AD and Lewy body disease (LBD; hippocampus and temporal and parietal cortex) (Braak and Braak, 1991; McKeith et al., 1996; Hyman et al., 2012; Montine et al., 2012), hippocampal sclerosis and phospho (p) TDP-43 pathology (hippocampus and temporal cortex) (Nelson et al., 2016), chronic traumatic encephalopathy (CTE; temporal cortex and parietal cortex and white matter) (McKee et al., 2016), and microvascular brain injury (multiple regions) (Flanagan et al., 2016), and characterized each tissue in a highly standardized manner using a broad set of informative data modalities (Figure 1B). We used immunohistochemistry (IHC) on both fresh frozen and formalin fixed paraffin embedded (FFPE) tissue to stain and quantify proteins marking dementia-related pathologic findings, including pTau, Aβ, α-synuclein (Lewy bodies), and pTDP-43, as well as microglia (IBA1) and astrocytes (GFAP). For example, donor H14.09.075 (78 year old female with dementia) shows significant pathology of intracellular pTau (AT8) and extracellular Aβ plaques (Ab6E10 and ThioS) based on IHC of fresh frozen (Figure 1C) and fixed (Figure 1—figure supplement 1) tissue. Negligible amounts of α-synuclein were observed in these brain regions. In addition, we used multiplexed Luminex assays for protein molecular quantification of tau and pTau variants and Aβ species, as well as for α-synuclein, inflammatory mediators (cytokines and chemokines), neurotrophic factors, and other targets. We determined free radical injury in parietal and temporal cortex using GC/MS quantitation of isoprostanoids. We used in situ hybridization (ISH) to detect expression for canonical marker genes for astrocytes (AQP4, GFAP), oligodendrocytes (MOBP), and neuronal subtypes (RELN, SLC6A1, SLC17A7) to provide insight into the cellular makeup of tissues used for neuropathological and transcriptomic analysis. Finally, we used RNA-Seq to assess genome-wide expression levels of >50,000 coding and non-coding transcripts on macrodissected tissue sections from the same blocks used for fresh-frozen IHC and ISH. Brain region and sample RIN represent the largest source of transcriptional variation (Figure 1—figure supplement 2), as shown previously (Preece and Cairns, 2003; Li et al., 2004; Tomita et al., 2004; Mexal et al., 2006; Vawter et al., 2006; Hawrylycz et al., 2012); therefore, we treat RNA-seq data from each brain region independently and correct for RIN. After excluding poor quality or otherwise unusable tissue, data from 377 tissue blocks across four brain regions in 107 donors are available as part of the resource.
 
-## Widespread tau and amyloid beta pathology in the aged brain
+### Widespread tau and amyloid beta pathology in the aged brain
 
 NFTs and amyloid plaques are thought to progress in a stereotyped anatomical pattern with increased AD severity, but also appear to show a more general increased load in advanced aging (Mungas et al., 2014). We assessed disease pathology in this resource using two approaches. First, we used standard global metrics of disease severity by including NFT distribution (extent; i.e., Braak stage) (Braak and Braak, 1991) and neuritic amyloid plaque cortical density (i.e., CERAD score) (Mirra et al., 1991). Amyloid plaque distribution (Thal phase) (Thal et al., 2002) was not routinely available in the ACT study until 2012 and therefore was not included in the analysis. In addition to standard diagnostic neuropathological endpoints routinely assessed for each case, we used local measurements in the blocks used for RNA-seq. These included soluble protein (Luminex) and histological (IHC) analysis on adjacent frozen sections, as well as more standard histology on FFPE tissue sections from the same brain regions from the same or opposite hemisphere. To quantify pathology load in IHC we calculated the fraction of labeled pixels in representative regions of interest for each stain from each case, using a modification of a technique we previously developed for quantification of ISH signal (Dang et al., 2007; Lein et al., 2007). Quantitative scores are consistent with qualitative observations using this technique (Figure 2—figure supplement 1). Pathology quantifications based on frozen and fixed tissue are highly correlated (r = 0.78 for pTau and r = 0.67 for Aβ), although in some cases the threshold and dynamic ranges showed some variation between the two tissue preparations (Figure 2A and Figure 2—figure supplement 2). These quantified values also show regional patterns consistent with Braak stage and CERAD scores (Figure 2—figure supplement 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig2-v1.jpg)
+
+**Figure 2.:** (A) Distributions of values for quantitative pathology metrics, separated by brain region (colors in legend). Lines are density plots (y-axis) of distributions of each metric (specified in x-axis label), with triangles indicating the average value. Note that several metrics have higher values in cortex than hippocampus, or vice versa. (B) Donors with higher levels of tau pathology (defined as Braak stage; top row) and of Aβ (defined as CERAD score; bottom row) were older on average (y-axis) than donors with lower measures of pathology. (C) Donors with dementia have higher levels of tau and Aβ pathology on average than donors without dementia, as measured both by global metric (Braak stage, CERAD score; left column), and local IHC quantifications in hippocampus (AT8, Ab6E10; right column). (D) Donors with higher levels of dementia pathology (x-axes; same metrics as in C) also tend to have lower cognitive scores (y-axes). For bar plots in B-D, dots indicate specific donors, and boxes and whiskers represent 25%/75% and 5%/95%, respectively. For scatterplots, dots indicate donors, with specific metrics shown on axes. See also Figure 2—figure supplements 1–6.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distributions of quantitative measures of AT8 in hippocampus (left) and of Ab6E10 (A-beta) in parietal cortex (right). Numbers indicate samples chosen for visualization. Labeling as in Figure 2A. (B) Example slices of CA1 region of hippocampus from donors with low (left), medium (middle), and high (right) pTau pathology. (C) Example slices of parietal cortex from donors with low (left), medium (middle), and high (right) Aβ pathology.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Quantifications of paired helical filament pTau (AT8; left) and Aβ (Ab6e10, right) pathology derived from images of FFPE tissue sections (x-axes) and fresh frozen sections (y-axes) are highly correlated. Dots correspond to samples. Colors correspond to brain regions.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Local measurements of pathological tau based on IHC (AT8; left) and Luminex (pTau; center), but not total tau (Tau, right) show a progressive increase with Braak stage in hippocampus, consistent with Braak stage definitions. (B) Local measures of Aβ based on IHC (Ab6E10; left) and Luminex (Aβ42; right) show a monotonic increase with increasing CERAD score in hippocampus, as expected. (C) Tau pathology is higher in parietal cortex of donors with Braak stages 5–6, compared with stages 1–4. (D) Aβ pathology increases with CERAD score in parietal cortex. Labeling as in Figure 2B.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Donors with AD have higher levels of pTau (left two plots) and Aβ (right two plots) pathology than donors without AD, as measured both by global metric (Braak stage, CERAD score; left bars), and local IHC quantifications in hippocampus (AT8, Ab6E10; right bars). Labeling as in Figure 2C.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Local measurements of pTau (AT8; top panels) and Aβ (Ab6E10; bottom panels) are more highly correlated with age in donors without dementia (left panels) than in those with dementia (right panels). Labeling as in Figure 2D.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Local measurements of pTau (AT8; left two panels) and Aβ (Ab6E10; right two panels) show more significant differences between control donors (left bars) and donors diagnosed with dementia (right bars) in younger donors (<90 years; left panels) than in older donors (90+ years; right panels). This difference can be largely explained by increased pathology in older donors that are cognitively normal (Figure 2—figure supplement 5).
 
 We observe a wide distribution of pTau and Aβ pathology loads in this aged cohort ranging from no pathology to extremely high (Figure 2A). As expected, pathological tau (AT8 IHC and pTau Luminex) tended to be higher in hippocampus while Aβ (Ab6E10 IHC and Aβ42 Luminex) is higher in cortex, consistent with known AD pathological distributions and progression. Both pTau and Aβ pathologies (as measured by Braak stage and CERAD score) are found more widely distributed in the brain among people who died at older ages compared to those who died at younger ages, despite the relatively compressed age range of this cohort (Figure 2B). We find a statistically significant relationship between dementia and pTau pathology, shown in Figure 2C as both an increased anatomical distribution (Braak stage) and hippocampal pathology load based on multiple protein quantification metrics (e.g., AT8 IHC). Despite the known differences in pathological signatures in different disorders of dementia, we find the same results for all dementia cases and the subset of cases diagnosed with probable or possible AD (Figure 2—figure supplement 4). This is likely due to the predominance of AD cases in our cohort, particularly when including donors diagnosed with dementia of multiple etiologies (only eight donors were diagnosed with vascular or other dementia with no clinical diagnosis of AD). We also observed a correlation between pTau levels and age (but not Aβ) in donors without dementia (Figure 2—figure supplement 5). Phrased differently, there is a significant difference in pTau pathology between donors with and without dementia in the younger (<90 years) but not the older (90 + years) donors (Figure 2—figure supplement 6), consistent with a general increase in pTau pathology with age (Haroutunian et al., 2008; Corrada et al., 2012). These results provide support for the idea that different pathways and progressions may be involved in pathological processes in the oldest old (i.e., individuals > 90 years old).
 
@@ -123,13 +261,13 @@ While pTau and Aβ pathologies were more common in people with dementia than cog
 
 **Figure 3.:** AT8 (tau; A) and Ab6E10 (Aβ; B) IHC in high and low pathology donors with and without dementia, demonstrating individual variation in the relationship between pathology and dementia status. AT8 images of tau pathology are from the hippocampus (with matching Nissl-stained section below), while Ab6E10 images of Aβ pathology are from the parietal cortex. CA1, CA3: hippocampal subfields; DG: dentate gyrus. Numbers in B indicate cortical layers. Donor labels are indicated. Scale bar: 1 mm.
 
-## Global and regional molecular signatures of inflammation do not correlate with age or dementia status
+### Global and regional molecular signatures of inflammation do not correlate with age or dementia status
 
 Inflammation occurs across a wide range of brain dysfunction, including acute TBI (Lu et al., 2009), AD (Akiyama et al., 2000) and normal aging (Franceschi and Campisi, 2014), due at least in part to disruption of the blood brain barrier (Popescu et al., 2009). We took several strategies to assess the range of inflammation across this cohort and the extent to which inflammation is generalized or shows regional specificity, including IHC for microglia (IBA1) and reactive and other types of astrocytes (GFAP), Luminex for cytokines and chemokines, and transcriptome data. Donors showed a continuous range of expression for IBA1 and GFAP, as well as inflammatory proteins based on Luminex assays (Figure 4A). A small number of cases (2–5 per region) showed exceptionally high levels, but the majority of cases showed continuous variation across a lower range (high cases excluded from Figure 4A to better show the distribution of lower values). Interestingly, individual inflammatory proteins showed regional specificity; for example, some proteins were enriched in hippocampus compared to cortex (TNF-A, IL-6, MIP-1A) or vice versa (MCP1, IL-7, RANTES) (Figure 4A). Regional heterogeneity in microglial gene expression has been described elsewhere, such as enrichment in TNF-A expression in rat hippocampus compared to cortex (Ren et al., 1999).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig4-v1.jpg)
 
-**Figure 4.:** (a) Distributions of values for glia and for each Luminex variable marking inflammation, separated by brain region (labeling as in Figure 2A). (B) Correlation between gene metrics of inflammation (x-axis) and protein metrics of inflammation (y-axis) in each brain region. Gene signatures are defined as the module eigengene (ME) of the module with the largest enrichment for the GO term ‘inflammatory response’, and protein metrics are the truncated quantifications of the Luminex protein most highly correlated with each ME. (C) Gene (lower left) and protein (upper right) expression markers of inflammation are highly correlated between brain regions. Dots represent donors with x- and y-axes corresponding to the gene and protein values in B. Pairwise brain region correlations are shown below in each box. Blue circle and orange box correspond to donors in D. (D) IHC for IBA1 in a donor showing inflammation across regions (left, orange), and in a donor showing higher levels of inflammatory marker genes in hippocampus than cortex (right; blue). See also Figure 4—source datas 1–3.10.7554/eLife.31126.015Figure 4—source data 1.10.7554/eLife.31126.016Figure 4—source data 2.Cell type gene lists are derived from Zhang et al. (2014) and NeuroExpresso in the left and right panels, respectively, and enrichment p-values for each module are calculated using a hypergeometric test and are Bonferroni-corrected.10.7554/eLife.31126.017Figure 4—source data 3.Module eigengene expression is compared with 24 demographic and pathology metrics (including Dementia/control, AD/control, sex, measures of tau and abeta pathology, and inflammatory markers) using SVA, and p-values are Bonferroni-corrected.
+**Figure 4.:** (a) Distributions of values for glia and for each Luminex variable marking inflammation, separated by brain region (labeling as in Figure 2A). (B) Correlation between gene metrics of inflammation (x-axis) and protein metrics of inflammation (y-axis) in each brain region. Gene signatures are defined as the module eigengene (ME) of the module with the largest enrichment for the GO term ‘inflammatory response’, and protein metrics are the truncated quantifications of the Luminex protein most highly correlated with each ME. (C) Gene (lower left) and protein (upper right) expression markers of inflammation are highly correlated between brain regions. Dots represent donors with x- and y-axes corresponding to the gene and protein values in B. Pairwise brain region correlations are shown below in each box. Blue circle and orange box correspond to donors in D. (D) IHC for IBA1 in a donor showing inflammation across regions (left, orange), and in a donor showing higher levels of inflammatory marker genes in hippocampus than cortex (right; blue). See also Figure 4—source datas 1–3.
 
 Despite this heterogeneity at the individual gene level, there is likely to be a generalized molecular pathway associated with inflammation that can be used to assess the degree of inflammation across regions. Indeed, previous genome-wide transcriptome studies have identified gene networks associated with microglia and inflammation in adult human brain (Oldham et al., 2008; Hawrylycz et al., 2012; Miller et al., 2013; Zhang et al., 2013). To identify similar networks in the current cohort we performed weighted gene co-expression network analysis (WGCNA) (Zhang and Horvath, 2005; Langfelder and Horvath, 2008) separately in each brain region (Materials and methods; see Figure 4—source data 1 for module assignments). This strategy identifies groups of genes with similar expression patterns in an unbiased manner, whose functional significance can be assigned by searching for overrepresented gene ontology (GO) terms. Here, we identified a network of genes in each region highly overlapping for markers of the GO term ‘inflammatory response’ (Benjamini and Hochberg corrected p<10−13 in all regions; ToppGene) and for cell-type specific markers of ‘microglia’ (Bonferroni corrected p<10−35 in all regions) (Zhang et al., 2014) or ‘Microglial activation’ (Bonferroni corrected p<10−12 in all regions) (Mancarci et al., 2016) (Figure 4—source data 2). As expected, these region-specific inflammation gene networks (HIP_M18, TCx_M18, PCx_M18, FWM_M13) show highly significant gene overlap (hypergeometric test, p<10−100), despite being generated independently.
 
@@ -137,9 +275,17 @@ Coordinated gene expression levels within gene networks can be summarized by a m
 
 None of these inflammation-related gene networks have ME expression significantly correlated with any metrics for aging, cognition, dementia, or associated pathology in this cohort (Figure 4—source data 3; p=1 for all comparisons), although a link between inflammation and AD has been described in the literature (Akiyama et al., 2000). This discrepancy may be due to the advanced age of this cohort, as there is currently no consensus on the relationship between inflammation and dementia in the oldest old (Gardner et al., 2013).
 
-## Transcriptional markers of dementia-related pathology
+### Transcriptional markers of dementia-related pathology
 
 Gene expression studies have identified dysfunction related to dementia phenotypes in a variety of biological pathways including synaptic transmission, energy metabolism, inflammation, myelin-axon interactions, protein misfolding, and transcription factors (Colangelo et al., 2002; Blalock et al., 2004; Webster et al., 2009; Miller et al., 2013), although most of these studies evaluated data from somewhat younger cohorts. In contrast with previous transcriptional studies of AD, we did not find any genes with significant differential expression between control and dementia (or AD) cases in any brain region (SVA, p<0.05, Bonferroni corrected; Figure 5A and Figure 5—figure supplement 1). We performed several sensitivity analyses that reinforced our conclusion that methodological details were not driving this result (see Materials and methods for details). In addition, none of the gene network MEs described above distinguish dementia cases from controls (Figure 4—source data 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig5-v1.jpg)
+
+**Figure 5.:** (A) No significant gene expression differences between donors with and without dementia in hippocampus. The histogram shows the distribution of log2(fold difference) expression levels (x-axis) between control and dementia donors. Numbers indicate how many genes have a fold change > 1.3 (red lines) and p<0.05. (B) Significant correlation between the ME of M16 (y-axis) and measures of tau (AT8 IHC) in hippocampus. (C) Significant correlation between protein quantification of IHC for GFAP (y-axis) and measures of pTau (AT8 IHC) in temporal cortex. (D) Genes show comparable relationships with tau in this and an earlier study of dementia. X-axis shows the correlation between gene expression and AT8 IHC in this study. Y-axis shows the correlation between quantifications of NFTs and gene expression in (Blalock et al., 2004). Dots represent genes, with black dots corresponding to genes in module M16. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Histograms show the distribution of log2(fold change) expression levels (x-axis) between control and AD donors in two brain regions (hippocampus, left; temporal cortex, right). Numbers indicate how many genes have a fold change >1.3 (red lines) and p<0.05.
 
 We extended our analysis to instead search for MEs significantly associated with transcriptional correlates of dementia-related pathologies. No MEs corresponded to any measure of Aβ or α-synuclein pathology, or to age. While the lack of gene expression differences in the brain with age may seem surprising, this result is in line with previous studies that have found a much larger difference in gene expression during middle age (approximately 40–70) than in aged adults (Lu et al., 2004; Berchtold et al., 2008). However, one gene network (M16, consisting of 660 genes) was significantly correlated with pTau burden in hippocampus (AT8 IHC levels; Figure 5B), and showed similar but not statistically significant trends to other pTau metrics (Figure 4—source data 3). This set of genes is expressed predominately in astrocytes (Bonferroni corrected p<10−7) and microglia (p<10−15), potentially marking increased gliosis in hippocampus with increasing tau pathology (Figure 4—source data 2); it should be noted that this is not the same gene module associated with inflammation and activated microglia discussed above. Interestingly, several of the hub genes of M16 (genes most highly correlated to the module eigengene) are known to be involved in Aβ processing. For example, ITPKB shows higher expression in human AD than control brain and increases apoptosis and Aβ peptide production in mouse Neuro-2a neuroblastoma cells (Stygelbout et al., 2014). Similarly, SNX33 increased cleavage of APP alpha-secretase in cultured cells at the cell surface (Schöbel et al., 2008), while LRP10 overexpression diverts accumulation of mature APP from the cell surface to the Golgi apparatus, reducing Aβ production (Brodeur et al., 2012). Why genes associated with tau metrics would be related to Aβ processing is unclear, but it provides an interesting link between these two pathologies.
 
@@ -147,11 +293,116 @@ Quantifications of IHC for GFAP protein are correlated with pTau burden in tempo
 
 To assess whether the gene-pTau trends observed here match prior reports, we calculated the correlation between each gene and AT8 IHC levels, and compared these values with correlations between gene expression and reported levels of pTau in the hippocampal CA1 region (Blalock et al., 2004). The two studies agree well, with a correlation over all genes of R = 0.49 (Figure 5D, genes in M16 in black). Together, these results recapitulate the reported relationship between astrocyte and microglia-related gene expression and pTau pathology in hippocampus, but fail to identify genes related to dementia status.
 
-## Dementia-related gene expression associated with variation in RNA quality
+### Dementia-related gene expression associated with variation in RNA quality
 
 Our failure to identify genes significantly related to dementia status was surprising, given that many studies have shown differential gene expression with AD (Colangelo et al., 2002; Blalock et al., 2004; Liang et al., 2008; Webster et al., 2009; Avramopoulos et al., 2011; Miller et al., 2013; Zhang et al., 2013; De Jager et al., 2014; Satoh et al., 2014; Allen et al., 2016). However, we found an inconsistency in how these studies normalized for tissue quality as measured by the pH or RIN scores of the tissues analyzed; in fact, only a few of them corrected for RIN at all. Repeating our analysis without accounting for RIN, we find a large fraction of genes (11%) to be differentially expressed between dementia cases and controls in at least one region (B & H corrected p<0.05, log2(FC) >1.3; Figure 6—source data 1), leading to apparently larger fold changes between conditions (Figure 6A; compare with Figure 5A). We once again find very few genes significantly associated with dementia when we perform this analysis on a subset of 70 donors in our cohort matched for RIN, sex, and dementia status (Materials and methods; two or fewer in each region). This result suggested a direct link between RNA quality and dementia status. Indeed, we find a substantially lower RNA quality in dementia cases vs. controls in all four brain regions (Figure 6B; Figure 6—figure supplement 1B), and this difference was not related to the time between death and autopsy (PMI <8 hr, all donors).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig6-v1.jpg)
+
+**Figure 6.:** (A) Gene expression differences between donors with and without dementia in uncorrected data. Histograms show the distribution of log2(fold difference) expression levels (x-axis) between control and dementia donors in two brain regions (hippocampus, left; temporal cortex, right). Numbers indicate how many genes have a fold change > 1.3 (red lines) and p<0.05. (B) RNA quality in donors with dementia (Dem.; right bars) is significantly lower than in non-demented controls (CT; left bars) in all four brain regions. Y-axes are RIN values. Plots as in Figure 2B–D. (C) Gene expression levels for many genes are highly correlated with RIN, with more showing lower expression with lower RNA quality (positive values) than with higher RNA quality (negative values). Histograms show the distribution of RIN correlations in two brain regions. Numbers indicate how many genes have R > 0.5 (red lines) and p<0.05. (D) Rank order of fold differences between controls and dementia cases is largely unchanged after controlling for RNA quality. Ranked fold differences on the x- and y-axes correspond to Figure 6A and Figure 5A, respectively. Dots indicate genes and are color-coded by density. (E) Genes with higher or lower expression levels in people with dementia compared with cognitively normal older adults from 12 brain regions in eight previous studies (rows) are related to dementia diagnosis and RNA quality in this study. Horizontal tics show the 25th percentile, median, and 75th percentile rank of the indicated dementia-related list in our current data set. Gene expression levels from genes lower in low RIN samples are also lower in AD samples from the comparison studies (red, solid lines are shifted towards 1), while gene expression levels from genes higher in high RIN samples are also higher in AD samples from the comparison studies (red, dotted lines are shifted towards 0). Gene expression results accounting for RIN (green) generally agree less well between studies than results not accounting for RIN (blue). See also Figure 6—figure supplements 1–2 and Figure 6—source datas 1–6.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** See legend for Figure 6 - all panels are matched, but only when considering the subset of dementia donors with AD diagnosis. Panel C is identical to Figure 6C and reproduced for continuity.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/31126/elife-31126-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (Left) Principal component analysis (PCA) of all samples in this data set using RIN-corrected data separates cortical grey vs. white matter (PC 1, x-axis) and hippocampus from cortex (PC 2, y-axis). First two PCs are shown and explain 43.8% of the variation. PCA groups samples by brain region (color), except for temporal and parietal grey matter, which completely overlap. (Center) Repeating the PCA on unnormalized data identifies one component related to brain region (PC 1) and a second component related to RNA quality (PC 2). Dots correspond to samples. Colors correspond to brain regions. (Right) Same plot as the center, but coloring each dot by RIN (white = low RIN, red = high RIN). *Included as separate files.
+
 We next repeated this comparison on data from four additional population-based cohorts as part of the AMP-AD knowledge portal (https://www.synapse.org/ampad; (Bennett et al., 2012a; Bennett et al., 2012b; Allen et al., 2016)), and compared these with previous reports (Colangelo et al., 2002; Preece and Cairns, 2003; Durrenberger et al., 2010; Zhang et al., 2014). In five of the eight additional data sets assayed, donors with AD had significantly lower RIN than donors without dementia (Table 2). Donors with AD had significantly higher RNA quality in only one study (Allen et al., 2016). Thus the link between dementia status and RNA-quality is a broader phenomenon that is not unique to the ACT cohort, but is also not ubiquitous.
+
+**Table 2.**
+ RNA quality assessment for donors with and without AD in multiple studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data set</th>
+      <th>Brain region</th>
+      <th>Count (Control|AD)</th>
+      <th>RIN/pH in control</th>
+      <th>RIN/pH in AD</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACT cohort (current data set)</td>
+      <td>TCx</td>
+      <td>50|29</td>
+      <td>6.87 ± 0.92</td>
+      <td>6.18 ± 1.27</td>
+      <td>p=1.48×10−2</td>
+    </tr>
+    <tr>
+      <td>ROS (Bennett et al., 2012a)</td>
+      <td>TCx</td>
+      <td>107|136</td>
+      <td>7.21 ± 1.01</td>
+      <td>7.06 ± 0.95</td>
+      <td>p=0.23 (ns)</td>
+    </tr>
+    <tr>
+      <td>MAP (Bennett et al., 2012b)</td>
+      <td>TCx</td>
+      <td>94|120</td>
+      <td>7.25 ± 1.07</td>
+      <td>6.79 ± 0.96</td>
+      <td>p=1.18×10−3</td>
+    </tr>
+    <tr>
+      <td>MSBB *</td>
+      <td>BA36</td>
+      <td>98|169</td>
+      <td>6.51 ± 1.30</td>
+      <td>5.86 ± 1.59</td>
+      <td>p=1.10×10−3</td>
+    </tr>
+    <tr>
+      <td>Mayo Study (Allen et al., 2016) †</td>
+      <td>TCx</td>
+      <td>31|82</td>
+      <td>7.64 ± 1.21</td>
+      <td>8.59 ± 0.55</td>
+      <td>p=1.98×10−4</td>
+    </tr>
+    <tr>
+      <td>(Colangelo et al., 2002)</td>
+      <td>CA1</td>
+      <td>6|6</td>
+      <td>6.75 ± 0.1</td>
+      <td>6.76 ± 0.1</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>(Preece and Cairns, 2003) $</td>
+      <td>Cortex</td>
+      <td>81|90</td>
+      <td>~6.5</td>
+      <td>~6.4</td>
+      <td>p&lt;10−2</td>
+    </tr>
+    <tr>
+      <td>(Durrenberger et al., 2010) ‡,$</td>
+      <td>Brain</td>
+      <td>72|12</td>
+      <td>~7.1</td>
+      <td>~5.9</td>
+      <td>p&lt;10−4</td>
+    </tr>
+    <tr>
+      <td>(Zhang et al., 2014)</td>
+      <td>PFc</td>
+      <td>101|129</td>
+      <td>7.31 ± 0.47 6.55 ± 0.34</td>
+      <td>7.12 ± 0.56 6.37 ± 0.32</td>
+      <td>p=6.78×10−3 p=1.22×10−4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*=we are defining AD as CDR >1 in this data set, but note that the result holds for other cutoffs, †=only control donors from the Mayo Brain Bank Dickson were considered, ‡=Tissue collected from multiple brain regions and multiple brain banks. RNA quality is assessed with either RIN (black text) or pH (blue text) in each study. $=RIN/pH values are estimated from plots. Calculated p-values in this table are two tailed student t-tests uncorrected for multiple comparisons, and p-values from previous studies are as reported._
 
 To assess the impact of RNA quality on gene expression levels, we compared gene expression to RIN. We find that 47% of expressed genes are correlated with RIN (Benjamini and Hochberg corrected p<0.05, RIN correlation >0.5; Figure 6C; Figure 6—source data 2)—in some cases accounting for 80% of the variation in gene expression—and that failure to account for RNA quality reduces our ability to separate samples by brain region (Figure 6—figure supplement 2). This result mirrors other studies that have shown RNA quality dramatically impacts measured gene expression levels (Preece and Cairns, 2003; Li et al., 2004; Tomita et al., 2004; Mexal et al., 2006; Vawter et al., 2006; Atz et al., 2007). However, we extend this result to show that the set of genes positively correlated with RIN are enriched for pathways found to be disrupted with AD in prior gene expression studies (Colangelo et al., 2002; Blalock et al., 2004; Webster et al., 2009; Miller et al., 2013), including the GO terms ‘mitochondrion organization’ and ‘RNA processing’ (Benjamini and Hochberg corrected p<10−30; Figure 6—source data 3). But is the entire relationship of genes to dementia a function of RIN? To test this, we rank ordered genes by fold change difference between controls and dementia cases with and without correcting for RIN. In all regions, we found a significant correlation (R ~ 0.8) between RIN-corrected and uncorrected rankings (Figure 6D), indicating that much of the variance is not explained by RIN.
 
@@ -171,33 +422,33 @@ Relationships between gene expression, RNA quality, and agonal state markedly co
 
 ## Materials and methods
 
-## Participant information and consent
+### Participant information and consent
 
 All work was performed according to guidelines for the research use of human brain tissue. Participants signed informed consent forms at enrollment that includes permission for sharing de-identified data, and signed additional consent forms for the autopsy that included data and tissue sharing. Autopsy consents were updated for all subjects with the legal next of kin after death. All study procedures were reviewed and approved by Institutional Review Boards at Kaiser Permanente Washington and the University of Washington. Non-identifying information about each 107 participants (i.e., age, sex, etc.) is publicly available under the ‘Specimens’ tab at http://aging.brain-map.org/.
 
-## ACT cohort
+### ACT cohort
 
 ACT is a prospective, longitudinal study of randomly-selected, cognitively normal participants of Kaiser Permanente Washington in the Seattle area that were willing to volunteer for the study (Kukull et al., 2002; Larson et al., 2006; Crane et al., 2013). Kaiser Permanente Washington is an integrated staff-model Health Maintenance Organization (HMO). At enrollment and at follow-up visits every two years, ACT research staff members administer the Cognitive Abilities Screening Instrument (CASI) (Teng et al., 1999) and participants with CASI ≤85 receive secondary follow-up with a clinical evaluation and a comprehensive neuropsychological battery. Results of these evaluations and clinical data are reviewed in a multidisciplinary consensus conference which uses standardized criteria to diagnose incident dementia (American Psychiatric Association, 1994) and AD as well as other neurodegenerative diseases when applicable (McKhann et al., 1984). Total enrollment as of December 2015 was approximately 5100 people, including more than 600 participants who have donated their brains. Requests to access other data from the ACT cohort should be addressed to KPWA.actproposals@kp.org.
 
-## Tissue collection and utilization
+### Tissue collection and utilization
 
 A team from the University of Washington (UW) Neuropathology (NP) Core is contacted soon after death to perform brain autopsies of ACT subjects. ACT study staff ask participants at enrollment and every study visit whether they have experienced a loss of consciousness (LOC) and, if so, what caused it, such as electrocution, near drowning, or head injury (TBI). If updated autopsy consent is obtained and the brain can be removed and dissected with a postmortem interval (PMI) <8 hr, a rapid autopsy is performed. During a rapid autopsy, ventricular cerebrospinal fluid (CSF) is taken, the brain is hemisected along the mid-sagittal plane and dissected and ~60 flash frozen tissue samples from at least 12 brain regions are collected, flash-frozen in liquid nitrogen, and stored at −80°C. The unsampled hemibrain, and all remaining non-frozen tissue from the contralateral hemisphere is then fixed in 10% normal buffered formalin for approximately 2–3 weeks. Fixed tissue from every brain undergoes a thorough neuropathological examination where 22 standard samples, in addition to samples of any focal lesions or abnormalities, are dissected and submitted for routine processing for formalin-fixed paraffin-embedded (FFPE) sections.
 
 This project was initially designed to study the long-term effects of TBI exposure, and participants were selected on the basis of exposure or lack of exposure to TBI. All ACT subjects with a TBI with loss of consciousness (LOC) and rapid autopsy with available banked frozen tissue were identified, and then each TBI with LOC donor was matched for sex, age, year of death, and finally PMI to an individual in the ACT autopsy sample without a history of TBI with LOC. Once a subject was included in this study, two adjacent flash frozen tissue blocks from parietal lobe, temporal lobe, and hippocampus were removed from the NP Core repository; one was sent to the Allen Institute for IHC, ISH and RNA -seq, and the other processed at the University of Washington (UW) for immunoassays (Luminex) and gas chromatography-mass spectrometry (GC/MS). If two blocks were not available, the remaining block was either divided (cortex) or prioritized for Allen Institute studies (hippocampus).
 
-## Tissue processing for histology and immunoassays
+### Tissue processing for histology and immunoassays
 
 Frozen tissue at UW was divided evenly (while frozen, in the sagittal plane through the long axis of the gyrus) for GC/MS (isoprostanes), where the entire piece was used, and for immunoassays (Luminex), which was run on 1 cm punch biopsies from the depth of sulcus cortex (gray matter) in parietal and temporal lobe and through deepest subcortical white matter (in the parietal lobe sample). Due to relative paucity of available tissue, the entire hippocampus tissue block was submitted for immunoassays. For IHC of FFPE tissues, blocks were taken from either the same (cortex) or the opposite (hippocampus) side of the brain that was sampled for frozen tissues (although not from adjacent blocks), and were submitted for sectioning, histochemical, and immunohistochemical staining. Slides were then sent to the Allen Institute for scanning and image analysis as described below. Frozen tissue sent to the Allen Institute was cryosectioned into a series of 25-micron-thick sections that were designated for histological staining (Nissl, ISH, IHC, and Thioflavin-S) and for RNA-seq (see below). Following sectioning, histological stains were processed according to standard protocols as previously described (Sun et al., 2002; Lein et al., 2007). GC/MS was quantified as described previously (Montine et al., 2005). Specific assays run for GC/MS, Luminex, ICH, and ISH are presented in Figure 1. IHC markers for paired helical filament pTau (AT8) and Aβ (Ab6E10) were processed on both fresh frozen and FFPE tissue. Note that a broader marker for pTau, Tau2, was processed only for FFPE tissue (see Figure 1—figure supplement 1 for an example staining).
 
-## Image processing and quantification
+### Image processing and quantification
 
 Nissl, H&E-LFB, ISH and IHC slides were scanned at 10x full resolution using a Leica ScanScope scanner, while Thioflavin-S slides were scanned at 10x full resolution using an Olympus VS110 scanner. An Informatics Data Pipeline (IDP) managed image preprocessing, image QC, IHC expression detection and measurement, Nissl processing, annotation QC and public display of information via the web application, as described previously (Dang et al., 2007), with some modifications and additions for processing images for this project. For ISH and IHC slides, respectively, masks highlighting areas with enriched gene expression or immunoreactivity were generated using adaptive detection/segmentation image processing algorithms. Images that were out of focus after rescanning or with technical or tissue artifacts obscuring the target anatomical region were then failed and excluded from public release. For each set of gene images available in the online viewer, the nearest set of Nissl-stained sections (and other histological data) can be accessed and viewed. To generate quantitative image metrics for IHC, macrodissection sites as delineated on the Nissl images were used to annotate regions of interest (ROIs) on each of the near-adjacent IHC images. The ROI was then adjusted if there were technical artifacts that would affect the evaluation of pathology. The expression density, defined as the percentage of area within the ROI that was occupied by the IHC reaction product, was then assessed using an adaptive detection/segmentation technique which algorithmically determines whether each pixel in an ROI contains the IHC stain (see the Expression Detection Module section in the Informatics Data Processing paper in the Allen Mouse Brain Atlas Documentation tab for more details; http://mouse.brain-map.org/static/docs). For stains with very low expression densities, ROIs that were identified as outliers were visually inspected and then adjusted or excluded as necessary. Good correlations were seen between quantifications of antibodies for amyloid beta and pTau in FFPE and fresh frozen tissue, indicating good agreement between these two measures of pathology (Figure 2—figure supplement 2).
 
-## RNA-Seq tissue and RNA processing
+### RNA-Seq tissue and RNA processing
 
 Collection of tissue samples from temporal and parietal neocortex, parietal white matter, and hippocampus was done by manual macrodissection. Specific areas for macrodissection were identified by neuroanatomists using images of Nissl-stained tissue sections immediately adjacent to the sampled tissue, and were excised from the remaining tissue frozen tissue block using a scalpel. Tissue was immediately transferred to prepared tubes where RNA was isolated using the RNeasy Lipid Tissue Mini Kit (Qiagen #78404) as per manufacturer’s instructions. RNA was then quantified on a Nanodrop 8000 spectrophotometer (Thermo Scientific, Wilmington, DE) and normalized to 5 ng/μl before RNA QC was performed using a Bioanalyzer (Agilent Technologies) and RNA Integrity Number (RIN) was recorded. Total RNA (250 ng) was used as input into the Illumina TruSeq Stranded Total RNA Sample Prep Kit (RS-122–2203), which uses random hexamer first strand cDNA synthesis and includes rRNA depletion (Ribo-Zero Gold rRNA depletion kit to remove both cytoplasmic and mitochondrial rRNA) and fragmentation. At the time of project inception, this sequencing strategy provided the most reliable option for quantification of transcriptomic reads from tissue of widely varying quality, allowing the broadest inclusion of donors from the ACT cohort. External RNA Controls Consortium (ERCCs) (Baker et al., 2005) at a 1:10,000 dilution were spiked into each sample. RNA sequencing was done on Illumina HighSeq 2500 using v4 chemistry, producing a minimum of 30M 50 bp paired-end clusters per sample. Expression Analysis, Inc. (Morrisville, NC) performed both the TruSeq Stranded Sample Prep as well as the Illumina sequencing. All samples, regardless of RNA quality, were sent for sequencing. In total 377 samples from 107 donors passed all QC metrics and are included as part of the resource. Nearly all of the missing 51 samples were excluded because tissue was unavailable from the brain bank or because it completely failed in sequencing. A few samples were failed because their average inter-array correlation across all genes was several (usually but not always 3) standard deviations below the mean of all other samples from the same brain region. This strategy has been used to fail samples in other Allen Brain Atlases and is useful for ensuring that results are not driven by outliers. For this analysis, we removed one additional sample from the data set that showed high expression of Y chromosome genes but that was collected from a genetically-confirmed female who was documented to have previously given birth (donor H14.09.011).
 
-## RNA-Seq data alignment and normalization
+### RNA-Seq data alignment and normalization
 
 Raw read (fastq) files were aligned to the GRCh38.p2 human genome (current as of 01/15/2016). Illumina sequencing adapters were then clipped using the fastqMCF program (Aronesty, 2011), and then mapped to the transcriptome using RNA-Seq by Expectation-Maximization (RSEM) (Li et al., 2010) using default settings except for two mismatch parameters: bowtie-e (set to 500) and bowtie-m (set to 100). RSEM aligns reads to known isoforms and then calculates gene expression as the sum of isoform expression for a given gene, assigning ambiguous reads to multiple isoforms using a maximum likelihood statistical model. Reads that did not map to the transcriptome were then aligned to the hg38 genome sequence using Bowtie with default settings (Langmead et al., 2009), after which remaining unmapped reads were mapped to ERCCs. Anonymized BAM files (where sequence-level information has been removed) for both transcriptome- and genome-mapped reads, and gene-level quantification (transcripts per million (TPM), fragments per kilobase per million (FPKM), and number of reads) are available as part of the resource (see Download tab).
 
@@ -209,7 +460,7 @@ As brain region and RIN were identified as the largest sources of variability, l
 
 We note that this is a different final normalization step from that performed in the online data resource, where data were corrected for RIN + adjusted RIN + batch in linear space. The current strategy of excluding outliers from the normalization retains realistic expression values for biologically-relevant processes such as inflammation, and accounting for bimodalities removes effects of sex (which we sought to retain on the web resource). Similarly, batch correction is not included in this analysis as donors with the most severe TBIs were front loaded in the first two batches due to experimental constraints. Using data normalized on the website to assess differential gene expression between donors with and without dementia (as described below) produced comparable results.
 
-## Assessment of differential and co-expression
+### Assessment of differential and co-expression
 
 For pathology and demographic information, significance of differential expression between groups was assessed with analysis of variance (ANOVA) tests using the ‘aov’ function in R (Chambers et al., 1992). Correlations between continuous variables were calculated using the ‘cor’ function in R and are Pearson correlations with Bonferroni-corrected p-values of p<0.05, unless otherwise specified. Distributions of quantitative metrics are displayed using a smoothed density curve, with no associated statistical tests performed. Two tailed student t-tests were used to compare RIN between control and AD donors from multiple studies. We used surrogate variable analysis (SVA) (Leek and Storey, 2007) to quantify significance of gene expression with respect to dementia status (in combination with fold-difference thresholds) and RNA quality (in combination with correlation thresholds). P-values of p<0.05, after Benjamini and Hochberg correction, were considered significant unless otherwise noted. SVA was also used for assessing significance in gene clusters, as discussed below.
 
@@ -219,7 +470,7 @@ We used weighted gene co-expression network analysis (WGCNA) (Zhang and Horvath,
 
 We compared ME expression with 24 pathological and demographic measures, and used SVA to assess significance, defined here as Bonferroni-corrected p<0.05. In addition to the modules discussed in the Results, we found a single module of Y-chromosome genes in each network with nearly exclusive expression in males, as expected.
 
-## Gene set comparison between studies
+### Gene set comparison between studies
 
 In order to compare our differential expression results with prior work, we first assembled lists of genes differentially expressed between donors diagnosed with AD and matched controls from nine previous studies (Colangelo et al., 2002; Blalock et al., 2004; Liang et al., 2008; Webster et al., 2009; Avramopoulos et al., 2011; Miller et al., 2013; Zhang et al., 2013; Satoh et al., 2014; ). Figure 6—source data 4 describes in more detail specifically how we derived each gene list. Figure 6—source data 5 includes all gene lists. We then sorted and ranked all genes in our analysis with respect to fold difference (for dementia vs. control) or correlation with RIN in hippocampus and temporal cortex, scaling from 0 to 1. We then noted the ranks of external gene lists in our sorted lists, including the 25th, 50th, and 75th percentile values. We calculated p-values using a two-sided Wilcoxon rank sum test to measure divergence from a random distribution, with the R function ‘wilcox.test’ (Bauer, 1972). This schema is a modification of one previously described (Miller et al., 2013).
 
@@ -227,10 +478,10 @@ We compared the relationships between gene expression and local quantifications 
 
 Enrichment for gene ontology (GO) categories was performed using ToppFun with default parameters, which is available as part of the ToppGene Suite (Chen et al., 2009) (https://toppgene.cchmc.org/). Cell type-specific expression levels were collected from a published data set of selective expression in human neurons, astrocytes, microglia, and oligodendrocytes (Zhang et al., 2014) (http://web.stanford.edu/group/barres_lab/brain_rnaseq.html). Cell type enrichment was calculated by comparing gene lists in this study against genes with 2-fold enrichment in one verses all other cell types and FPKM >1. Cell type enrichment was largely confirmed by comparison with mouse-derived gene sets downloaded from NeuroExpresso (neuroexpresso.org) (Mancarci et al., 2016) using the same strategy.
 
-## Data and software availability
+### Data and software availability
 
 All images and most data presented in this manuscript are freely available from the resource website, http://aging.brain-map.org/. Code and remaining files required to reproduce all analyses and associated figure panels are available as part of the Github repository (https://github.com/AllenInstitute/agedbrain; Miller, 2017; copy archived at https://github.com/elifesciences-publications/agedbrain). Raw RNA-Seq data (FASTQ) and the output files after alignment (bam/FASTQ) are available for controlled access at NIAGADS: https://www.niagads.org/datasets/ng00059. TbT-normalized data (both before and after controlling for RIN) are also available through GEO (GSE104687).
 
-## Additional resources
+### Additional resources
 
 Technical documentation describing the ACT cohort, all experimental procedures (i.e., tissue collection, tissue processing, quantitative data generation), and weighted analysis in more detail are freely available at http://help.brain-map.org/display/aging/Documentation.

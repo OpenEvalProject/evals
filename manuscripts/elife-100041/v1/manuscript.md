@@ -16,9 +16,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05d6wfd23 Centre National de la Recherche Scientifique (CNRS), Station d’Ecologie Théorique et Expérimentale Moulis France
-2. https://ror.org/02v6kpv12 Université Paul Sabatier (UPS) Toulouse III Toulouse France
-3. https://ror.org/04nbhqj75 Center for Environmental Sciences, Environmental Biology, Hasselt University Diepenbeek Belgium
+1. Centre National de la Recherche Scientifique (CNRS), Station d’Ecologie Théorique et Expérimentale Moulis France ([ROR:05d6wfd23](https://ror.org/05d6wfd23))
+2. Université Paul Sabatier (UPS) Toulouse III Toulouse France ([ROR:02v6kpv12](https://ror.org/02v6kpv12))
+3. Center for Environmental Sciences, Environmental Biology, Hasselt University Diepenbeek Belgium ([ROR:04nbhqj75](https://ror.org/04nbhqj75))
 
 † Corresponding author
 
@@ -64,9 +64,141 @@ Individual effect sizes (Zr) measured between BEFs (biodiversity and ecosystem f
 
 We confirmed this visual tendency by summarizing all individual Zr through a meta-regression. Indeed, we found a significant interaction between the facet at which biodiversity is measured (genetic or species diversity), and the type of BEF that was measured (within- or between-trophic levels; Table 1; Table 2). This interaction indicates (i) that – overall – within-trophic level BEFs were significantly negative when considering species diversity (ZrWithin*Species = –0.185, 95% CI [–0.343,–0.027]), whereas within-trophic level BEFs were significantly positive when considering genetic diversity (ZrWithin*Genetic = 0.168, 95% CI [0.010, 0.326], see Figure 5a), and (ii) that this pattern was not observed for between-trophic levels BEFs, where no particular trend was observed (Figure 5a). Although most individual Zr were weak to moderate (and not significant), their consistency (in terms of magnitude and direction) resulted in a significant pattern whereby species and genetic diversity have opposite effects on ecosystem functions for within-trophic level BEFs; species diversity is negatively associated, whereas genetic diversity is positively associated with ecosystem functions, but only when the influence of biodiversity on ecosystem functions is measured within the same trophic level.
 
+**Table 1.**
+ Characteristics of the first two principal components identified by the principal component analysis (PCA) ran on the 13 environmental variables.The part of the total environmental variance (%) and the contribution of each variable on each component are shown. The variables that contributed significantly to the axis are highlighted in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Component 1</th>
+      <th>Component 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part of total variance (%)</td>
+      <td>21.66</td>
+      <td>16.37</td>
+    </tr>
+    <tr>
+      <td>River width</td>
+      <td>0.596</td>
+      <td>0.320</td>
+    </tr>
+    <tr>
+      <td>Connectivity</td>
+      <td>–0.155</td>
+      <td>0.646</td>
+    </tr>
+    <tr>
+      <td>Altitude</td>
+      <td>0.648</td>
+      <td>–0.385</td>
+    </tr>
+    <tr>
+      <td>Distance from outlet</td>
+      <td>0.528</td>
+      <td>–0.331</td>
+    </tr>
+    <tr>
+      <td>East-west gradient</td>
+      <td>0.105</td>
+      <td>–0.795</td>
+    </tr>
+    <tr>
+      <td>Oxygen concentration</td>
+      <td>0.738</td>
+      <td>0.343</td>
+    </tr>
+    <tr>
+      <td>Oxygen saturation</td>
+      <td>0.266</td>
+      <td>–0.509</td>
+    </tr>
+    <tr>
+      <td>Water temperature</td>
+      <td>–0.594</td>
+      <td>–0.012</td>
+    </tr>
+    <tr>
+      <td>Specific conductivity</td>
+      <td>–0.463</td>
+      <td>–0.045</td>
+    </tr>
+    <tr>
+      <td>pH</td>
+      <td>0.573</td>
+      <td>0.398</td>
+    </tr>
+    <tr>
+      <td>Concentration in NO3+NO2</td>
+      <td>–0.369</td>
+      <td>–0.286</td>
+    </tr>
+    <tr>
+      <td>Concentration in NH4+</td>
+      <td>–0.019</td>
+      <td>–0.207</td>
+    </tr>
+    <tr>
+      <td>Concentration in PO43-</td>
+      <td>–0.279</td>
+      <td>0.236</td>
+    </tr>
+    <tr>
+      <td>Global characteristic</td>
+      <td>Low altitude, poorly oxygenated site – high altitude, highly oxygenated sites</td>
+      <td>Poorly connected east site – highly connected west site</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/100041/elife-100041-fig5-v1.jpg)
 
 **Figure 5.:** (a) The magnitude and direction of BEFs are expressed as effect sizes (Zr) and are displayed according to the facet used to measure biodiversity (genetic or species diversity, light gray and white boxplots respectively) and to the type of BEFs (within-trophic level BEFs or between-trophic level BEFs, triangles and dots respectively). Red color and stars indicate global effect sizes that are significantly different from zero (p-value<0.05). Large symbols are mean ± 95%IC estimated as marginal effects from the meta-regressions. Small symbols are raw estimates. (b) Same representation as (a) but with details at each trophic level (mean ± 95% IC estimated as marginal effects from the meta-regressions, green for primary producer, orange for primary consumer, and blue for secondary consumer). The trophic level at which BEFs are measured is coherent across all trophic levels.
+
+**Table 2.**
+ ANOVA table for the linear mixed model testing whether the relationships between biodiversity and ecosystem functions (BEFs) measured in a riverine trophic chain differ between the biodiversity facets (species or genetic diversity) and the types of BEF (within- or between-trophic levels).A Wald chi-square test is used to test the significance of each fixed effect.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Degree of freedom</th>
+      <th>Chisq-value</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>1</td>
+      <td>0.287</td>
+      <td>0.595</td>
+    </tr>
+    <tr>
+      <td>Biodiversity facet</td>
+      <td>1</td>
+      <td>0.232</td>
+      <td>0.630</td>
+    </tr>
+    <tr>
+      <td>Type of BEF</td>
+      <td>1</td>
+      <td>5.393</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>Biodiversity facet*Type of BEF</td>
+      <td>1</td>
+      <td>5.567</td>
+      <td>0.018</td>
+    </tr>
+  </tbody>
+</table>
 
 When including the trophic level at which biodiversity is measured, we found no significant interaction terms between trophic levels and other fixed effects nor any additive effect of trophic levels (see Supplementary file 1). This indicates that our main findings were consistent across trophic levels, i.e., the respective negative and positive effects on ecosystem functions of species and genetic diversity hold statistically true across all trophic levels (Figure 5b).
 
@@ -96,45 +228,45 @@ To conclude, we found that the genetic (intraspecific) and species (interspecifi
 
 ## Materials and methods
 
-## Sampling sites and trophic chain
+### Sampling sites and trophic chain
 
 We sampled 52 sites in Southern France from the Adour-Garonne watershed, and distributed along an east-west gradient in the Pyrenees Mountains (Figure 1a, Blanchet, 2024). We acquired data on species diversity, genetic diversity, and ecosystem functions at three trophic levels (primary producers, primary consumers, and secondary consumers) (Figure 1b). Riparian trees (57 species in the sampled area) provide organic matter in the form of fallen leaves as a food source for decomposers. We selected the common alder A. glutinosa for acquisition of genetic data due to its dominance at most sites and its functional relevance, as its roots serve as shelters for many aquatic species and are involved in nitrogen fixation. Macroinvertebrate shredders (101 genera in the sampled area) are primary consumers using leaves as resources, and converting them into accessible organic matter for other species. We focused on the most abundant Gammarid (Crustacean) species for genetic data acquisition, referred to as Gammarus sp. This species has not yet been formally named although it is phylogenetically distinct from its closest relative, Gammarus fossarum (Carnevali, 2022; Piscart, unpublished data). This species is particularly efficient at decomposing tree leaves, in particular those from Alnus (Macneil et al., 1997). Fish (20 species in the sampled area) are secondary consumers feeding on invertebrates (among others). We used the minnow P. dragarum as the fish target species as it is an abundant and important predator strongly impacting invertebrate communities (Raffard et al., 2021).
 
-## Biodiversity estimates
+### Biodiversity estimates
 
-## Species datasets
+#### Species datasets
 
 At each site, we collected data on the abundance of all species within each trophic level, at one occasion for trees (July-August 2021) and two occasions for invertebrates (July and November 2020) and fishes (mid-July to mid-August 2020 and 2021), to obtain accurate biodiversity estimates. We identified tree species along a 200 m transect of each river bank, excluding trees with trunk smaller than 2 cm in diameter and more than 1 m away from the bank. The abundances of trees were estimated as the total number of individuals per species and per site. For invertebrates, we identified shredders to the genus level (or to the family level for some groups such as chironomids) sampled from two types of standardized traps installed in four micro-habitats distributed along the 200 m transect used to identify trees: natural coconut brushes (15*5.5 cm, bristles length 7.5 cm) recovered after 1.5 month of colonization, and litter bags (15*11 cm, 0.8 cm mesh size) filled with senescent Alnus leaves from each site and recovered after 9 days of colonization (see below). We calculated abundances of each genus by summing the number of individuals per genus found in the coco brushes and the litter bags, and we averaged the abundances over the two sampling occasions to get a single estimate per genus per site. For fish, we collected all specimens during single-pass electric fishing sessions over a mean area of ~469.9 m2 (±174 m2) distributed along the 200 m transect. We anesthetized, identified, and counted individuals at the species level. We calculated fish abundances as the number of individuals per species and per m², and we averaged the abundances over the two sampling occasions as for invertebrates. Fish species number varies from 1 to 11, invertebrate genus number varies from 15 to 42, and the tree species number varies from 7 to 20 (see Fargeot et al., 2023, for details).
 
-## Genetic datasets
+#### Genetic datasets
 
 At each site, we collected tissue from up to 32 individuals of each of the three target species, a sample size having found sufficient for estimating the genomic diversity of populations (Hale et al., 2012). We collected fresh leaves of A. glutinosa in May 2020, specimens of Gammarus sp. in February 2020, and a piece of pelvic fin from P. dragarum individuals in summer 2020. The DNA of these samples was extracted using commercial kits for Alnus and Gammarus sp. and a salt-extraction protocol for P. dragarum (see Fargeot et al., 2023, for details). For each specimen, DNA concentrations were measured using Qubit 3.0 fluorometer (Life Technologies, USA). Sequencing was performed based on equimolar pools of DNA (‘pool-seq’ approach, Schlötterer et al., 2014) from each population and each species. For Gammarus sp., we also obtained an ~600 bp mitochondrial sequence from the COI mitochondrial gene from each individual to ensure identification and avoid mixing individuals from different species. Gammarus sp. was found allopatric in most sites, but for a few sites from the eastern part of the area in which two species were identified (Carnevali, 2022). In this latter case, we conserve only the target species for creating the DNA pools. We created one DNA pool per site per species (52 pools for A. glutinosa, 47 pools for Gammarus sp., and 44 pools for P. dragarum) and performed double-digest restriction site-associated DNA sequencing for A. Glutinosa and Gammarus sp. (respectively, PstI/MseI and Pst/HindIII enzymes) and normalized genotyping-by-sequencing for P. dragarum (MsII enzyme). Library preparation and pool-sequencing were executed by LGC Genomics (Biosearch Technologies, Germany) on an Illumina NovaSeq (2×150 pb). Data processing was performed following De Kort et al., 2018, except that read mapping was performed on reference genomes. The genome of A. glutinosa was already available (Griesmann et al., 2018), and we assembled reference genomes from Illumina short-read sequencing and PacBio long-read sequencing for Gammarus sp. (available upon request) and P. dragarum (accession number on DDBJ/ENA/GenBank: JARPMJ000000000), respectively. SNP calling was performed with (i) filtering of raw sequencing files; (ii) indexing of reference genomes; (iii) mapping reads to the reference; (iv) filtering for unpaired and badly/non-mapped reads; (v) assembling all read information in a single file per population and per species; and (vi) calculating SNP allelic frequencies (De Kort et al., 2018). The total numbers of SNPs retrieved were 583,862 for A. glutinosa, 331,728 for Gammarus sp., and 414,213 for P. dragarum (see Fargeot et al., 2023, for details).
 
-## Species and genetic diversity estimates
+#### Species and genetic diversity estimates
 
 We calculated α-diversity per site using the Shannon entropy from the ‘hillR’ R package for both species and genetic diversity. The Shannon entropy is a metric of evenness that takes into account the distribution of allele or species abundances within each site (Chao et al., 2014) by weighting each species/allele by its proportional abundance (q=1). Results were similar when using the Simpson’s diversity index (q=2, results not shown). It is noteworthy that – given the spatial extent of the sampling area and the number of sampling sites – genetic and species diversity estimated in this study constitutes a fair representation of the biodiversity found in the rivers from the Pyrenean Piedmont, covering a wide range of biological complexity.
 
-## Ecosystem function measurements
+### Ecosystem function measurements
 
 At each site, we measured seven ecosystem functions. We collected biomass production data of all species at each trophic level (hereafter ‘total biomass’) and the biomass production of each target species as estimates of productivity, as well as the decomposition rate of Alnus leaves. Productivity – as we quantified it – is obviously affected by local environmental characteristics, and for this reason, we took into account these potential environmental effects (see hereafter). For riparian tree biomass, we used the trunk diameter of each single tree as a proxy of individual tree biomass, and we summed the trunk diameters of all trees found along the transect (divided by the length of the transect) to estimate the total tree biomass per site and per meter of bank. The same approach was used to estimate A. glutinosa biomass. For macroinvertebrate shredders, we estimated the total invertebrate biomass by drying all individuals for 24 hr at 60°C before weighing them (10–4 g precision). The same procedure was used to estimate the biomass of Gammarus sp. For both estimates, we averaged biomasses over the two sampling sessions. For fish, (fresh) total fish biomass was estimated as the total weight of all individuals (0.01 g precision) per site, whereas P. dragarum biomass was the mass of all P. dragarum specimens per site. Fish biomasses were averaged over the two sampling sessions.
 
 For the decomposition rate, we quantified leaf mass loss in litter bags placed in four micro-habitats per site twice (July and November 2020). We gathered and dried senescent leaves during fall 2019 from five Alnus trees per site to limit individual-specific effects on decomposition. Litter bags were 15 cm × 11 cm pockets of plastic-wire mesh (mesh size; 8 mm to allow invertebrates colonization) in which we introduced 4 g of dried leaves before closing the bags with staples. We installed three bags per micro-habitat (12 per site) that we removed sequentially after ~9 days, ~18 days, and ~27 days respectively to estimate decomposition rates. Bags were brought back to the laboratory, the remaining leaves were cleaned, dried, and weighed. Decomposition rate was estimated as the slope of leaf mass loss over time (obtained from a linear model) that we averaged across replicates and temporal sessions (Raffard et al., 2021).
 
-## Environmental data
+### Environmental data
 
 A major challenge for inferring BEFs from empirical data is to take into account the direct and indirect (through biodiversity) effects of environmental factors on ecosystem functions (Duffy et al., 2016; Duffy et al., 2017). Failing to do this may result in overestimated and/or artifactual BEFs, especially if the same environmental factor simultaneously affects biodiversity and ecosystem processes (Grace et al., 2016). For each site, we measured 13 variables related to river topography and physico-chemical characteristics that likely influence biodiversity and ecosystem processes (Altermatt, 2013). River bed width (m) was averaged from five measurements per site. Connectivity was calculated as the ‘closeness centrality’, i.e., the inverse of the sum of the distances of a node to all other nodes along the shortest paths possible (Altermatt, 2013), using QGIS and the ‘RiverDist’ R package. Altitude (m), distance from the outlet (m), and east-west gradient (longitudinal position along the Pyrenees chain) were measured using QGIS; oxygen concentration (mg/L), oxygen saturation (%), water temperature (°C), specific conductivity (µS/cm), and pH were measured (and averaged) in summers 2020 and 2021 using a multi-parameter probe (Aqua TROLL 500, In-Situ Inc). Concentration of NO3-, NO2-, NH4+, and PO43- were estimated (and averaged) during summers 2020 and 2021 from a filtered water volume (100 mL) using the Alpkem Flow Solution Iv Autoanalyzer (OI Analytical).
 
 A PCA combining all 13 variables was performed using the R package ‘ade4’ (Dray and Dufour, 2007), and coordinates of each site on the two first axes (38.03% of the total variance, see Table 1) were used as two synthetic environmental variables for further analyses. We kept only these two first axes to avoid collinearity and over-parameterization of subsequent models. The first axis is defined by a strong contribution of (in decreasing order) oxygen concentration and altitude (Table 1). The second axis is defined by a strong contribution of east-west gradient and connectivity (Table 1).
 
-## Statistical analyses
+### Statistical analyses
 
-## BEF relationships
+#### BEF relationships
 
 To quantify the magnitude of association between BEFs, we performed piecewise structural path models (pSEM, ‘piecewiseSEM’ package, Lefcheck, 2016). pSEM allows modeling direct and indirect causal relationships among a set of response variables and predictors (Shipley, 2009). Further, pSEM uses local estimates of each linear structural equation separately (i.e. parameters are estimated from a series of independent models forming a general causal graph), which allows the inclusion of a large number of parameters despite modest sample sizes (Shipley, 2009). We ran a pSEM for each ecosystem function separately (i.e. seven pSEMs, see an example in Figure 2). In each pSEM, the ecosystem function was the dependent variable whereas the six biodiversity estimates (species and genetic diversity estimated for each trophic level) and the two synthetic environmental variables were the predictors. In each model, environmental predictors were allowed to explain each biodiversity estimate (indirect effects of environmental variables through their influence on biodiversity, see Figure 2). For some functions (in particular those associated with plant biomass), irrelevant biodiversity-functions links were not included (e.g. the impact of fish or invertebrate diversity on tree biomasses), which results in 34 BEFs (out of the 42 possible links) having been included in the meta-regression (see hereafter).
 
 From each pSEM, we retrieved the local parameter (standardized estimate, an equivalent to a coefficient of correlation) associated with the direct effect of each biodiversity estimate (six per function, but for some functions for which ecology-irrelevant BEFs were excluded) on the function (colored arrows in Figure 2), which provides both the magnitude and the direction of each BEF. To smoothen comparison, we calculated a standardized effect size for each BEF by applying the Fisher’s Z transformation (Zr) to the standardized estimates. Positive Zr indicate positive associations between BEFs, whereas negative Zr indicate negative relationships. The higher the absolute value of Zr, the higher the strength of the association. Zr therefore indicate both the direction (positive or negative) and the magnitude of the associations. Our seven measures of ecosystem functions were not correlated one to each other (all rPearson<|0.39|).
 
-## Direction and magnitude of all types of BEFs
+#### Direction and magnitude of all types of BEFs
 
 We used a linear mixed model to test (i) whether the magnitude and direction of genetic BEFs are similar to those of species BEFs, and (ii) whether within-trophic level BEFs are similar in effect size to between-trophic level BEFs. In this model, Zr (providing the direction and magnitude of each BEF, n=34) was the dependent variable, and the predictors were the diversity facets used to measure biodiversity (genetic or species diversity) and the type of BEF (within-trophic or between-trophic levels, triangles vs. dots in Figure 2). We included the two-term interaction between diversity facet and type of BEF to test whether the magnitude and direction of genetic and species BEFs are consistent across within-trophic level and between-trophic level BEFs. We further included in this model the type of ecosystem function as a random term (to take into account that each ecosystem function was associated with several biodiversity estimates) as well as the inverse of the asymptotic variance (vz = n–3) associated with each effect size as a weighting parameter for each case study (Balvanera et al., 2006; Raffard et al., 2019).
 

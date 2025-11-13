@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Diet plays a significant role in maintaining lifelong health. In particular, lowering the dietary protein: carbohydrate ratio can improve lifespan. This has been interpreted as a direct effect of these macronutrients on physiology. Using Drosophila melanogaster , we show that the role of protein and carbohydrate on lifespan is indirect, acting by altering the partitioning of limiting amounts of dietary sterols between reproduction and lifespan. Shorter lifespans in flies fed on high protein: carbohydrate diets can be rescued by supplementing their food with cholesterol. Not only does this fundamentally alter the way we interpret the mechanisms of lifespan extension by dietary restriction, these data highlight the important principle that life histories can be affected by nutrient-dependent trade-offs that are indirect and independent of the nutrients (often macronutrients) that are the focus of study. This brings us closer to understanding the mechanistic basis of dietary restriction.
+Diet plays a significant role in maintaining lifelong health. In particular, lowering the dietary protein: carbohydrate ratio can improve lifespan. This has been interpreted as a direct effect of these macronutrients on physiology. Using Drosophila melanogaster, we show that the role of protein and carbohydrate on lifespan is indirect, acting by altering the partitioning of limiting amounts of dietary sterols between reproduction and lifespan. Shorter lifespans in flies fed on high protein: carbohydrate diets can be rescued by supplementing their food with cholesterol. Not only does this fundamentally alter the way we interpret the mechanisms of lifespan extension by dietary restriction, these data highlight the important principle that life histories can be affected by nutrient-dependent trade-offs that are indirect and independent of the nutrients (often macronutrients) that are the focus of study. This brings us closer to understanding the mechanistic basis of dietary restriction.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Of the many studies that have examined the effects of dietary protein and carboh
 
 ## Results
 
-## Protein: carbohydrate ratio influences lifespan and reproduction
+### Protein: carbohydrate ratio influences lifespan and reproduction
 
 To examine the interactive effects of dietary protein, carbohydrate, and cholesterol on Drosophila lifespan and fecundity, we used our completely defined (holidic) diet (Piper et al., 2014) to manipulate each nutrient independently of all others. We selected dietary protein and carbohydrate concentrations that we know to elicit the full range of lifespan and fecundity responses to dietary restriction (Lee et al., 2008; Piper et al., 2014, Piper et al., 2017; Ma et al., 2020).
 
@@ -43,11 +43,23 @@ Similar to what we and others have found previously (Mair et al., 2005; Lee et a
 
 When increasing dietary carbohydrate against an otherwise fixed nutritional background, egg laying was suppressed in a dose-dependent fashion, but lifespan remained at its maximum level and was unchanged across all carbohydrate doses (~66 d median, Figure 1c–d). The diet with the lowest concentration of carbohydrate (5.7 g/l), which also contained the intermediate protein level (10.7 g/l), supported both maximum lifespan (Figure 1d; 66 d median) and the highest level of egg laying (75 eggs/female) of any diet in our experiment. Thus, as we have previously shown (Piper et al., 2017), balancing the dietary protein and carbohydrate concentrations can reveal a single dietary optimum for both traits, showing that lifespan shortening is not necessarily caused by high egg laying alone.
 
-## Cholesterol interacts with protein and carbohydrate to modify lifespan and reproduction
+### Cholesterol interacts with protein and carbohydrate to modify lifespan and reproduction
 
 Most dietary restriction studies on Drosophila vary dietary protein by modifying the yeast levels in food (Chapman and Partridge, 1996; Mair et al., 2005; Lee et al., 2008; Skorupa et al., 2008). While yeast is the flies’ major source of protein, it is also their only source of dozens of other nutrients, including sterols, which are essential micronutrients for insects (Carvalho et al., 2010). To quantify the effects of varying dietary sterol levels on fly lifespan and egg laying, we maintained flies on the same set of diets as above, varying in protein and carbohydrate concentrations, while also varying cholesterol across four different levels: 0 g/l, 0.15 g/l (low), 0.3 g/l (medium; also our standard level), and 0.6 g/l (high).
 
 Initial analysis of the data showed that diet type, when defined by variation of macronutrient composition, as well as variation in cholesterol concentration both significantly modified egg laying and lifespan (Figure 2, Supplementary files 3 and 4). By contrast, we saw no main effect of dietary energy density (calories) on either trait, which is consistent with previous findings showing that these traits are driven by the relative proportion of protein and carbohydrate in the diet independently of caloric value (Lee et al., 2008; Mair et al., 2005; Skorupa et al., 2008). We therefore proceeded in our analysis to assess how cholesterol modified the effects of protein and carbohydrates on these traits.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62335/elife-62335-fig2-v1.jpg)
+
+**Figure 2.:** Lowering cholesterol most severely compromised lifespan as protein levels increased and as carbohydrate levels decreased. In general, increasing protein and decreasing carbohydrate drove increasing levels of egg production, and this was enhanced by increasing dietary cholesterol levels. Lines show the relationship between the cumulative eggs laid per female (left Y axis) or median survival (days) (right Y axis) and dietary protein or carbohydrate levels across each cholesterol level. (0 g/l (a, b), 0.15 g/l (c, d), 0.3 g/l (e, f), 0.6 g/l (g, h)). Cumulative eggs laid per female are represented as triangles while median survival (days) are shown as circles. Statistical analysis reported in Supplementary files 5 and 6.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62335/elife-62335-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Diets varying in protein and carbohydrate concentration were each made at 4 levels of cholesterol (b, e) 0 g/l, 0.15 g/l, 0.3 g/l and 0.6 g/l. (a) Lifespan is reduced at both low and high protein concentrations, (b) was improved by increasing dietary cholesterol concentration, and (c) was unchanged by changing dietary carbohydrate concentration. Egg laying was improved by increasing protein (d) and cholesterol concentrations, but decreased with carbohydrate concentration (f).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62335/elife-62335-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Diets varying in protein and carbohydrate concentration were each made at three alternate P:C ratios, four levels of cholesterol (a, b) 0 g/l, 0.15 g/l, 0.3 g/l and 0.6 g/l, and five caloric concentrations (a, b). Lifespan is reduced when the P:C ratio is high and the dietary cholesterol concentration is low, while egg laying was improved by increasing the P:C ratio and cholesterol concentration (a, b). These effects are independent of calories (a, b).
 
 We first compared the flies’ responses to variation in both protein and cholesterol (Figure 2—figure supplement 1a–b). In general, lifespan was optimised at our intermediate dose of protein, while increasing cholesterol was beneficial, but with diminishing effect as its concentration was increased (Figure 2, Supplementary file 5). Interestingly, changing cholesterol modified the flies’ lifespan response to protein, an effect that can be seen when the data are separated by level of cholesterol addition (Figure 2—figure supplement 1a–b). At 0 g/l cholesterol (Figure 2a) increasing protein concentration in the diet decreased lifespan. However, at 0.15 g/l cholesterol, the shape of the response changed such that only the highest protein concentration decreased lifespan (35 d median; Figure 2c) when compared with intermediate (9.7 g/l; 55 d median) and low-protein (4.7 g/l; 52 d median) diets. At 0.3 g/l of cholesterol, lifespan was highest on the diet with intermediate protein concentration (66d median) and flies on the high protein diet were longer lived (49 d median) than the flies on the lowest protein diet (43 d median). Finally, increasing cholesterol from 0.3 g/l to 0.6 g/l (Figure 2g – Figure 2—figure supplement 1a–b) did not change the way that lifespan responded to protein. Thus, lowering dietary cholesterol was detrimental for lifespan and it intensified the negative effects of increasing dietary protein concentrations.
 
@@ -61,7 +73,7 @@ Increasing dietary carbohydrate had a generally negative impact on egg laying, a
 
 Thus, once again fly lifespan and egg laying worsened as cholesterol was diluted, but unlike its negative interaction with increasing dietary protein, the detrimental effects of lowering cholesterol became stronger as carbohydrate levels decreased. This indicates that the negative impact of lowering cholesterol is not a specific interaction with either high protein or low carbohydrate levels in the diet. We also found that the benefits of cholesterol addition were not related to the caloric content of the diet because cholesterol improved fecundity and extended lifespan of flies on almost all diets, including those with the lowest, intermediate, and highest caloric densities (Figure 2—figure supplement 2). Instead, lowering cholesterol produces worse outcomes as the dietary protein: carbohydrate ratio increases. This is the same change in macronutrient balance that promotes increasing egg laying.
 
-## Increasing the dietary protein: carbohydrate ratio drives increasing reproduction and makes fly lifespan susceptible to dietary cholesterol dilution
+### Increasing the dietary protein: carbohydrate ratio drives increasing reproduction and makes fly lifespan susceptible to dietary cholesterol dilution
 
 We saw that flies produce more eggs in response to increasing dietary protein: carbohydrate ratio and that these positive effects persist even as dietary cholesterol falls to a level that cannot fully support lifespan (less than 0.3 g/l cholesterol). Thus, the protein: carbohydrate ratio appears to take precedence over dietary sterol levels in the decision to commit to reproduction. If this is the case, we expect to see a positive relationship between the dietary protein: carbohydrate ratio and egg laying across all levels of dietary cholesterol. This is indeed what we found, although the positive relationship was modified by cholesterol level (Figure 3a,c,e,g, Supplementary file 7), starting with a weak positive effect on 0 g/l cholesterol (Figure 3a) and becoming increasingly positive as cholesterol was increased to 0.15 g/l (Figure 3c) and 0.3 g/l (Figure 3e). Once again, increasing cholesterol from 0.3 g/l to 0.6 g/l promoted no further benefit (Figure 3g).
 
@@ -73,7 +85,7 @@ Reproduction can impose a cost on future survival if resources that are essentia
 
 Thus, when dietary cholesterol was insufficient, increasing dietary protein: carbohydrate drove higher egg laying (Figure 3a) and this predicted lifespan shortening (Figure 3b) – a scenario that exemplifies the negative relationship between reproduction and lifespan in response to increasing protein: carbohydrate levels that is regularly reported in the dietary restriction literature (Mair et al., 2005; Lee et al., 2008; Skorupa et al., 2008; Solon-Biet et al., 2014; Solon-Biet et al., 2015; Simpson et al., 2017). However, when cholesterol was increased, the negative relationship was reduced such that egg laying was either completely independent of lifespan (Figure 3d) or became slightly positively correlated, indicating that the dietary conditions, which promote egg laying, are the same as those that promote longer lifespan (Figure 3f,h). Thus, higher egg laying in response to increasing protein: carbohydrate levels only shortens lifespan when cholesterol is insufficient to support egg production.
 
-## Lifespan extension by rapamycin depends on dietary cholesterol level
+### Lifespan extension by rapamycin depends on dietary cholesterol level
 
 TOR signalling is a key amino acid signalling pathway that is critical for growth, reproduction, and lifespan. Because TOR activity increases with dietary protein levels, it has been implicated as mediating the detrimental effects on lifespan of high protein diets (Liu and Sabatini, 2020). This is supported by the fact that rapamycin, a pharmacological suppressor of TOR, has been shown to extend lifespan across numerous species, including Drosophila where it also suppresses egg production across different caloric densities (Bjedov et al., 2010; Schinaman et al., 2019; Scialò et al., 2015). If sterol limitation is the reason why high egg production on high protein: carbohydrate diets causes reduced lifespan, rapamycin might extend lifespan because it reduces egg production and therefore rescues females from sterol depletion. If true, rapamycin should extend life only when the flies on high protein: carbohydrate diets are sterol limited.
 
@@ -85,7 +97,7 @@ As before, when we maintained flies on a high protein: carbohydrate diet, increa
 
 These data show that lifespan extension by rapamycin administration is conditional on the flies being on a low cholesterol diet. Together, our data are consistent with the flies’ lifespan being determined by having access to sufficiently high levels of dietary sterols that they have enough left over after reproduction to meet their needs for somatic maintenance. This can be achieved either by enriching the amount of cholesterol in the diet, or by reducing the flies’ expenditure on egg production, which can be achieved by reducing the dietary protein: carbohydrate ratio or by suppressing egg production pharmacologically.
 
-## Standard yeast-based media used in the laboratory contains lifespan limiting levels of sterols
+### Standard yeast-based media used in the laboratory contains lifespan limiting levels of sterols
 
 The experiments above were all performed using synthetic diets in which our ability to vary the absolute and relative concentrations of protein, carbohydrate, and sterol are limited only by solubility. However, most laboratories maintain fly populations on a diet that consists of yeast and sugar as well as variable numbers of other ingredients (Piper, 2017). Although the relative concentration of each nutrient in yeast is more constrained than on our synthetic diet, systematic studies have shown that the type and commercial source of yeast can have significant effects on overall dietary composition (Lesperance and Broderick, 2020) and the relationship between lifespan and egg laying (Bass et al., 2007). In Bass et al., 2007, the most dramatic lifespan reduction for increasing yeast was found when the fly food was made with a water-soluble extract of yeast that would contain very little, if any, sterols. Thus, similar to what we demonstrated on the synthetic diet, the shortening of fly lifespan when increasing the yeast content (protein: carbohydrate ratio) in lab foods may be caused by an insufficiency of dietary sterols.
 
@@ -99,13 +111,13 @@ We tested the effects of supplementing cholesterol into two sugar/yeast recipes 
 
 The reason that higher protein: carbohydrate diets shorten lifespan in dietary restriction studies is routinely attributed to their direct effects on nutrient signalling pathways and physiology. However, our data implicate a fundamentally different mechanism in which the macronutrients act indirectly, by manipulating sterol availability, which then modifies lifespan. Specifically, diets with high protein: carbohydrate ratios decrease lifespan by causing mothers to overinvest limiting sterols into egg production. Thus, although the macronutrients set egg laying rates, it is actually the sterols that determine lifespan due to a trade-off with reproduction. The corollary of this finding is that the lifespan of flies on high protein: carbohydrate diets can be extended by increasing the supply of cholesterol. This approach is the opposite of, but complementary to, the already recognised strategies to extend lifespan by dietary restriction, which reduce maternal investment into reproduction by decreasing the dietary protein: carbohydrate ratio (Mair et al., 2005; Lee et al., 2008; Skorupa et al., 2008) or by treating the animals with rapamycin that suppresses TOR and reduces reproduction (Bjedov et al., 2010; Harrison et al., 2009; Liu and Sabatini, 2020). It is also consistent with our recent work that showed non-reproducing adult males and genetically sterile females suffer little to no lifespan cost when sterol deprived, which is presumably because they conserve sterols which would otherwise be depleted by reproduction (Wu et al., 2020).
 
-## High protein diets promote egg production, driving a lethal micronutrient deficiency
+### High protein diets promote egg production, driving a lethal micronutrient deficiency
 
 ﻿In the lab, flies can be successfully reared and maintained on a mixture of just sugar and yeast (Pearl and Parker, 1921). This diet is thought to reflect their natural diet of rotting fruit and the microbial community – principally the yeasts – that cause the fruit to decay (Markow et al., 2015; Piper, 2017). Yeast contains all of the nutrients that flies require, including protein (~45%), carbohydrate (~40%), a small amount of fat (~7%), nucleic acids (~7%), and micronutrients, such as sterols, metal ions and vitamins, which are essential for flies. Drosophila rely heavily on protein from yeast, as well as carbohydrate from both yeast and plant sources, to guide their feeding behaviour. They select amongst foods containing the appropriate protein and carbohydrate concentrations to enhance their fitness (Ribeiro and Dickson, 2010; Vargas et al., 2010; Walker et al., 2017). Many of the other nutrients from their diet, including sterols, do not affect feeding behaviour, presumably because they are normally acquired in adequate quantities as part of a diet that is sufficient in macronutrients (Walker et al., 2015; Leitão-Gonçalves et al., 2017; Münch et al., 2020).
 
 While the proportion of protein and carbohydrate in yeast remains relatively constant across growth conditions, the abundance of sterols can vary over a 10-fold range in response to changes in oxygen availability, which is essential for sterol biosynthesis (Starr and Parks, 1962; Wilson and McLeod, 1976). Thus, because fly feeding behaviour and egg production are almost entirely shaped by the macronutrients, fly lifespan is susceptible to reductions in the sterol: protein content of dietary yeast. Our data indicate that this is because protein drives sterols to be preferentially partitioned towards reproduction at the expense of maintaining the adult soma. While we have found this to be the case for flies feeding on lab based foods, it is also reasonable to expect it for flies feeding on rotting fruit, where microbial growth is largely fermentative (driven by high sugar levels and limiting oxygen), producing ethanol and short chain acids to which Drosophila has evolved a healthy tolerance (Geer et al., 1993).
 
-## Extending fly lifespan by dietary restriction involves an indirect trade-off
+### Extending fly lifespan by dietary restriction involves an indirect trade-off
 
 There have been several theoretical attempts to describe the mechanistic basis for the lifespan benefits of dietary restriction (Blagosklonny, 2006; Blagosklonny, 2010; Kirkwood and Rose, 1991; Moatt et al., 2020; Regan et al., 2020; Speakman, 2020). In particular, the disposable soma theory proposes that organisms will strategically reallocate nutrients towards somatic maintenance at the cost of reproduction when nutrients are scarce and that this enhances lifespan (Kirkwood and Rose, 1991). Our data indicate that this trade-off can exist for flies feeding on yeast, but only when dietary sterols are limiting. However, when dietary sterols are not limiting, this trade-off does not need to exist and a single nutritional optimum for both lifespan and reproduction can be found. Thus, the macronutrient balance that drives higher egg laying does not necessarily inflict a direct cost on lifespan.
 
@@ -115,27 +127,51 @@ Rapamycin is known to extend the lifespan of various organisms including C. eleg
 
 Another possibility is that rapamycin rescues animals from the effects of protein toxicity, which can occur at concentrations of protein higher than what we used in this study. In our experiments, we limit the upper range of dietary protein concentrations so as not to exceed those that are beneficial to reproduction. This practice is informed by the desire to study how dietary restriction enhances somatic maintenance to extend life in already healthy individuals, rather than studying the reduced risk of dying that occurs when flies are prevented from over-consuming. To test this, it would be interesting to study the effects of rapamycin addition over a broader range of protein concentrations than what we have used. If true, this has the important implication that rapamycin, and indeed different diet compositions, may prolong animal lifespan by more than one molecular mechanism. These are important implications to explore since the majority of work studying ageing in lab organisms is based on the assumption that the mechanisms are evolutionarily conserved, in the hope that they will benefit humans.
 
-## Conclusion
+### Conclusion
 
 Our data show that the detrimental effects of a high protein: carbohydrate diet on lifespan in female Drosophila melanogaster are, to a significant extent, driven by an indirect nutrient trade-off, in which the macronutrients drive maternal sterol depletion by enhancing egg laying. This is a fundamentally different mechanism from the predominant view that ﻿reducing protein: carbohydrate balance in diets improves lifespan by a direct action to reduce TOR signalling and enhance proteostasis. Because of our discovery, we show that the shortened lifespan of flies on a high protein: carbohydrate diet can be improved by supplementing their diet with cholesterol, as well as by reducing egg production by lowering the dietary protein: carbohydrate ratio or by administering rapamycin. Further work is now needed to discover the mechanisms through which cholesterol works to modify lifespan in Drosophila melanogaster, and the role of other important micronutrients in healthy ageing across taxa.
 
 ## Materials and methods
 
-## Fly husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin (Sirolimus)</td>
+      <td>Jomar Life Research</td>
+      <td>S1039</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry
 
 All experiments were conducted using a wild type Drosophila melanogaster strain called Dahomey (Mair et al., 2005).These flies have been maintained in large numbers with overlapping generations to maintain genetic diversity. Upon removal from their population cages, flies were reared for two generations at a controlled density before use in experiments, to control for possible parental effects. Eggs for age-synchronised flies were collected over 18 hr, and the resulting adult flies emerged during a 12 hr window. They were then allowed to mate for 48 hr before being anaesthetised with CO2, at which point females were separated and allocated into experimental vials. Stocks were maintained and experiments were conducted at 25 °C on a 12 hr: 12 hr light:dark cycle at 65% humidity (Bass et al., 2007).
 
-## Lifespan assays
+### Lifespan assays
 
 For all lifespan assays, flies were placed into vials (﻿FS32, Pathtech) containing 3 ml of treatment food at a density of ten flies per vial, with ten replicate vials per treatment. Flies were transferred to fresh vials every two to three days at which point deaths and censors were recorded and saved using the software package Dlife (Linford et al., 2013; Piper and Partridge, 2016).
 
-## Fecundity assays
+### Fecundity assays
 
 Fecundity was measured as the sum of the mean number of eggs laid per female once per week over four weeks (commencing on approximately day 8 of the experiment), except for the sugar yeast (SY) medium experiment, for which egg counts were recorded in weeks one, two and three. ﻿These timepoints were selected because measuring reproductive output during the first weeks of egg laying has shown to be representative of life-long fecundity in flies (Chapman and Partridge, 1996). The eggs laid on the food surfaces of all vials were imaged ﻿using a web camera mounted on a Zeiss dissecting microscope and eggs were counted both manually and using Quantifly (Waithe et al., 2015). Quantifly was trained using five images for each cholesterol concentration due to variance in food opacity.
 
-## Experimental Diets
+### Experimental Diets
 
-## Holidic medium experiments
+#### Holidic medium experiments
 
 To examine the effects of protein: carbohydrate ratio on lifespan and fecundity we chose five experimental diets that consisted of three different protein (amino acid): carbohydrate (sucrose) ratios at three levels of similar caloric densities (Figure 6a, Table 1). These diets also made up a three-diet series of protein only dilution, and a three-diet series of carbohydrate only dilution (Figure 6a). The two diet series had one diet in common, which was our most commonly used, ‘standard’ lab diet (Piper et al., 2014). These diets incorporate those known to maximise either lifespan, reproduction or both (Ma et al., 2020; Piper et al., 2017). To examine the effects of cholesterol on these traits, we selected four cholesterol concentrations for each of these five diets, making a total of 20 diets (Figure 6b, Table 1). All diets were made using the holidic medium described in Piper et al., 2014, ﻿in which free amino acids are used to make up protein equivalents. ﻿To convert amino acids to protein equivalents, we used the molar quantities of nitrogen and the assumption that N makes up 16% of whole proteins (Sosulski and Imafidon, 1990). In this case, ﻿an amino acid ratio matched to the exome of adult flies (Flyaa) was utilised (Supplementary file 9; Ma et al., 2020; Piper et al., 2017). Finally, for practical reasons we used cholesterol in the diet as opposed to ergosterol, because it is easily accessible, and where studied, has been shown to be adequate to support Drosophila adult nutrition to the same extend as a yeast-based diet (Piper et al., 2014).
 
@@ -143,14 +179,216 @@ To examine the effects of protein: carbohydrate ratio on lifespan and fecundity 
 
 **Figure 6.:** These diets have varying protein: carbohydrate ratios. This makes a total of five different experimental diets (a). The standard cholesterol concentration is 0.3 g/l. Three additional cholesterol concentrations were used for each of the five protein: carbohydrate ratios to make a total of 20 different experimental diets (b). Diets which are either protein constant or carbohydrate constant are connected by black dotted lines, and diets with comparable caloric concentrations are connected by green-dotted lines (a, b). The standard diet used in our laboratory is circled in grey (a, b).
 
-## Rapamycin experiment
+**Table 1.**
+ ﻿Protein: carbohydrate ratio, along with the nutrient densities, cholesterol concentration and caloric content, for all synthetic experimental diets used.In the holidic media, amino acids are used to make up protein equivalents. To convert amino acids to protein equivalents, we used the molar quantities of nitrogen and the assumption that N makes up 16% of whole proteins (Imafidon and Sosulski, 1990). Calories were calculated using the method described in Southgate and Durnin, 1970.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Diet</th>
+      <th>Protein: carbohydrate equivalent</th>
+      <th>﻿Sum mass of amino acids (g/l)</th>
+      <th>﻿Equivalent protein (g/l)</th>
+      <th>﻿Carbohydrate (g/l)†</th>
+      <th>Cholesterol (g/l)</th>
+      <th>﻿Estimated caloric content (kcal/l)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1:3.6</td>
+      <td>5.25</td>
+      <td>4.7</td>
+      <td>17.1</td>
+      <td>0</td>
+      <td>87.2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1:3.6</td>
+      <td>5.25</td>
+      <td>4.7</td>
+      <td>17.1</td>
+      <td>0.15</td>
+      <td>87.2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1:3.6</td>
+      <td>5.25</td>
+      <td>4.7</td>
+      <td>17.1</td>
+      <td>0.3</td>
+      <td>87.2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1:3.6</td>
+      <td>5.25</td>
+      <td>4.7</td>
+      <td>17.1</td>
+      <td>0.6</td>
+      <td>87.2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1:3.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>35</td>
+      <td>0</td>
+      <td>178.8</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1:3.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>35</td>
+      <td>0.15</td>
+      <td>178.8</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1:3.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>35</td>
+      <td>0.3</td>
+      <td>178.8</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1:3.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>35</td>
+      <td>0.6</td>
+      <td>178.8</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1:1.8</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>17.1</td>
+      <td>0</td>
+      <td>107.2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1:1.8</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>17.1</td>
+      <td>0.15</td>
+      <td>107.2</td>
+    </tr>
+    <tr>
+      <td>11*</td>
+      <td>1:1.8</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>17.1</td>
+      <td>0.3</td>
+      <td>107.2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1:1.8</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>17.1</td>
+      <td>0.6</td>
+      <td>107.2</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1:0.6</td>
+      <td>33.1</td>
+      <td>30</td>
+      <td>17.1</td>
+      <td>0</td>
+      <td>188.4</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1:0.6</td>
+      <td>33.1</td>
+      <td>30</td>
+      <td>17.1</td>
+      <td>0.15</td>
+      <td>188.4</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1:0.6</td>
+      <td>33.1</td>
+      <td>30</td>
+      <td>17.1</td>
+      <td>0.3</td>
+      <td>188.4</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>1:0.6</td>
+      <td>33.1</td>
+      <td>30</td>
+      <td>17.1</td>
+      <td>0.6</td>
+      <td>188.4</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>1:0.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>5.7</td>
+      <td>0</td>
+      <td>61.6</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>1:0.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>5.7</td>
+      <td>0.15</td>
+      <td>61.6</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>1:0.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>5.7</td>
+      <td>0.3</td>
+      <td>61.6</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>1:0.6</td>
+      <td>10.74</td>
+      <td>9.7</td>
+      <td>5.7</td>
+      <td>0.6</td>
+      <td>61.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Standard diet.† Carbohydrate is added to the diet as sucrose._
+
+### Rapamycin experiment
 
 The same methods for making the holidic medium described above were used to make all diets used in the rapamycin experiment. In this case however 18.9 g/l protein: 17.1 g/l carbohydrate were used. Cholesterol was added to the diet at a concentration of either 0.1 g/l or 0.3 g/l (cholesterol supplemented) and rapamycin was added to a final concentration in the diet of 10 μM. Diets were either un-supplemented, supplemented with cholesterol, rapamycin, or both.
 
-## Yeast based experiments
+### Yeast based experiments
 
 Four sugar/yeast (SY) diets were created using sucrose (Bundaberg Sugar, Melbourne Distributors) and either whole yeast autolysate (MP Biomedicals, LLC, #903312) or yeast extract (Bacto Yeast Extract, #212750). These diets correspond to previously published conditions for high protein (fully fed) and low protein (dietary restriction) conditions (Bass et al., 2007; Katewa et al., 2016; Mair et al., 2005). The high protein diets contained, per litre 50 g sucrose and 200 g autolysed yeast, or 50 g sucrose, 50 g yeast extract plus 86 g of cornmeal (The Full Pantry, Victoria, Australia). The low- protein diets contained, per litre 50 g sucrose and 100 g autolysed yeast or 50 g sucrose, 5 g yeast extract plus 86 g cornmeal. To each of these diets, we added cholesterol (Glentham Life Sciences, GEO100, #100IEZ) at a concentration of either 0 or 0.3 g/l. Cholesterol was added to all diets as a powder which was mixed in with all other dry ingredients prior to cooking. This gave us a total of four experimental diets per yeast.
 
-## Statistical analyses
+### Statistical analyses
 
 ﻿All statistical analyses were performed using R (version 3.3.0, available from http://www.R-project.org/). One outlier was removed from the data set as the total number of eggs laid for that particular vial was more than two standard deviations from the mean. Omitting this point did not modify the significance of any of the statistical analyses or change any conclusions. For each experimental vial the median lifespan and mean number of eggs laid were obtained prior to analysis. Linear mixed effect models were used to analyse all data obtained using the holidic media. For the analysis of data obtained using the holidic media, a model reduction was performed by stepwise removal of the most complex non-significant term until any further removal significantly reduced the model fit. Log rank tests were used to compare the survival curves in the rapamycin experiment and yeast based dietary experiments. Finally, two-way ANOVAs were used to analyse egg laying results for the yeast based experiments and rapamycin experiment. Plots were made in Graphpad Prism (version 8.4.2).

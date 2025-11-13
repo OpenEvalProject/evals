@@ -45,7 +45,7 @@
 
 ## Abstract
 
-Previously, we demonstrated that a water, sanitation, handwashing, and nutritional intervention improved linear growth and was unexpectedly associated with shortened childhood telomere length (TL) (Lin et al., 2017). Here, we assessed the association between TL and growth. We measured relative TL in whole blood from 713 children. We reported differences between the 10th percentile and 90th percentile of TL or change in TL distribution using generalized additive models, adjusted for potential confounders. In cross-sectional analyses, long TL was associated with a higher length-for-age Z score at age 1 year (0.23 SD adjusted difference in length-for-age Z score [95% CI 0.05, 0.42; FDR-corrected p-value = 0.01]). TL was not associated with other outcomes. Consistent with the metabolic telomere attrition hypothesis , our previous trial findings support an adaptive role for telomere attrition, whereby active TL regulation is employed as a strategy to address ‘emergency states’ with increased energy requirements such as rapid growth during the first year of life. Although short periods of active telomere attrition may be essential to promote growth, this study suggests that a longer overall initial TL setting in the first 2 years of life could signal increased resilience against future telomere erosion events and healthy growth trajectories. Funded by the Bill and Melinda Gates Foundation. NCT01590095
+Background:Previously, we demonstrated that a water, sanitation, handwashing, and nutritional intervention improved linear growth and was unexpectedly associated with shortened childhood telomere length (TL) (Lin et al., 2017). Here, we assessed the association between TL and growth.Methods:We measured relative TL in whole blood from 713 children. We reported differences between the 10th percentile and 90th percentile of TL or change in TL distribution using generalized additive models, adjusted for potential confounders.Results:In cross-sectional analyses, long TL was associated with a higher length-for-age Z score at age 1 year (0.23 SD adjusted difference in length-for-age Z score [95% CI 0.05, 0.42; FDR-corrected p-value = 0.01]). TL was not associated with other outcomes.Conclusions:Consistent with the metabolic telomere attrition hypothesis, our previous trial findings support an adaptive role for telomere attrition, whereby active TL regulation is employed as a strategy to address ‘emergency states’ with increased energy requirements such as rapid growth during the first year of life. Although short periods of active telomere attrition may be essential to promote growth, this study suggests that a longer overall initial TL setting in the first 2 years of life could signal increased resilience against future telomere erosion events and healthy growth trajectories.Funding:Funded by the Bill and Melinda Gates Foundation.Clinical trial number:NCT01590095
 
 ## Introduction
 
@@ -57,19 +57,19 @@ Growth and neurodevelopment occur because of hypertrophy and cell proliferation 
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The WASH Benefits study was a cluster-randomised controlled trial designed to study the effects of improved drinking water, sanitation, handwashing, and nutrition on child growth and diarrhoea (Luby et al., 2018). The study was conducted in rural villages in the Gazipur, Mymensingh, Tangail, and Kishoreganj districts of Bangladesh. This substudy only focused on children in the control and the combined nutrition, water, sanitation, and handwashing (N + WSH) intervention arms. Clusters were defined as eight neighbouring households with eligible pregnant women.
 
-## Participants
+### Participants
 
 We enrolled pregnant women in their first two trimesters and their in utero children between 31 May 2012 and 7 July 2013. Households with relocation plans in the following year, households without home ownership, and households with high iron content in their water sources were excluded from the study. This analysis focused on index children, defined as in utero children of enrolled women. In this substudy, children were excluded from blood collection if any two of the following criteria for moderate to severe dehydration were met: (1) restless, irritable, (2) sunken eyes, (3) drinks eagerly, thirsty, and (4) pinched skin returns to normal position slowly. Children who were listless or unable to perform normal activities were also excluded from blood collection. Two children were excluded based on these criteria.
 
-## Procedures
+### Procedures
 
 The trial consisted of six intervention arms and a double-sized control arm (Luby et al., 2018). This substudy only assessed children in the control arm and the combined intervention arm. The combined intervention consisted of the following components: water treatment (Aquatabs; NaDCC) and safe storage vessel, sanitation (child potties, sani-scoop hoes to remove faeces, and a double pit latrine with a hygienic water seal), handwashing (handwashing stations near the latrine and kitchen, including soapy water bottles and detergent soap), and nutrition (lipid-based nutrient supplements [Nutriset, Malaunay, France] that included ≥100% of the recommended daily allowance of 12 vitamins and 9 minerals with 9.6 g of fat and 2.6 g of protein daily for children 6–24 months of age and age-appropriate recommendations on maternal nutrition and infant feeding practices) (Luby et al., 2018). To promote recommended behaviours, community health promoters visited study compounds in the intervention arm at least once per week during the initial 6 months of the trial and at least once biweekly thereafter. Participants in the control arm did not receive interventions or promoter visits.
 
-## Relative TL measurements
+### Relative TL measurements
 
 Relative TL, expressed as the ratio of telomere to single-copy gene abundance (T/S ratio), was measured in whole blood at Year 1 (median age 14 months) and Year 2 (median age 28 months) after intervention delivery. The protocol for the measurement of relative TL, by quantitative polymerase chain reaction (qPCR), was previously described (Lin et al., 2017). We measured relative TL by quantitative polymerase chain reaction (qPCR), expressed as the ratio of telomere to single-copy gene abundance (T/S ratio) (Cawthon, 2002; Lin et al., 2010). Genomic DNA was extracted from heparin-anti-coagulated whole blood stored at –80°C using the QIAamp DNA Mini Kit (QIAGEN, Hilden, Germany). DNA quantity and quality was assessed using a NanoDrop 2000c Spectrophotometer (Nanodrop Products, Wilmington, DE). DNA was stored at –80°C for batch TL analysis. Of the 1384 DNA samples, 8 did not pass quality control (an OD260/OD280 between 1.7 and 2.0 and concentration greater than 10 ng/µl) and one sample failed to amplify, resulting in 1375 samples with valid TL data. The intra-class correlation coefficients were as follows: 0.04 T/S ratio for TL at Year 1, 0.08 T/S ratio for TL at Year 2, and 0.18 T/S ratio for the change in TL between Years 1 and 2.
 
@@ -81,19 +81,19 @@ We applied a telomere (T) thermal profile consisting of denaturing at 96°C for 
 
 Eight control genomic DNA samples were included to calculate a normalising factor for each run. In each batch, the T/S ratio of each control DNA was divided by the average T/S ratio for the same DNA from 10 runs to generate a normalising factor that was then used to correct the participant DNA samples to generate the final T/S ratio. The DNA extraction and TL measurements were performed in two batches (3.5 months apart) using the same lots of reagents. To account for assay batch variations, 48 samples from the first batch were re-assayed together with the second batch of samples; then, data from the second batch of samples were adjusted by a factor of 1.05 (derived from the systematic difference between the first batch values versus the second batch values for these 48 samples).
 
-## Anthropometric measurements
+### Anthropometric measurements
 
 Following standard protocols for anthropometric outcomes measurement (Cogill,, 2003; de Onis et al., 2004), pairs of trained anthropometrists measured recumbent length (accurate to 0.1 cm), weight without clothing, and head circumference in triplicate. We used the median of the three measurements to calculate length-for-age, weight-for-age, weight-for-length, and head circumference-for-age Z scores standardised to the WHO 2006 child growth standards using publicly available software (https://www.who.int/tools/child-growth-standards/software). The WHO 2006 multicentre growth reference study constructed Z score curves for boys and girls aged 0–60 months based on measurements from a sample of healthy breastfed infants and young children living in the United States, Oman, Norway, Brazil, Ghana, and India (de Onis et al., 2006). Z score calculations (Z score = (raw measurement – reference population mean)/reference population standard deviation) in this study used reference population means and standard deviations derived from the WHO 2006 child growth standards. Child age was determined using birthdates verified when possible using vaccination cards. Age at the time of measurement was compared against the Z score curves for the WHO 2006 reference population. Length, weight, and head circumference were measured at Years 1 and 2 post-intervention (median ages 14 and 28 months). We excluded children from Z score analyses if their growth measurements were outside biologically plausible ranges according to WHO recommendations (de Onis et al., 2004). Due to widespread malnutrition in low- and middle-income countries, the mean anthropometric Z scores will generally be <0 during the first 2 years of life (Black et al., 2013). Stunting was defined as length-for-age Z scores below –2 standard deviations from the WHO length-for-age standards median, underweight was defined as weight-for-age Z scores < –2, and wasting was defined as weight-for-length Z scores < –2.
 
-## Exposures
+### Exposures
 
 We assessed the following exposures: TLs at Year 1, TLs at Year 2, and change in TL between Years 1 and 2 post-intervention.
 
-## Outcomes
+### Outcomes
 
 We assessed child length-for-age, weight-for-age, weight-for-length, and head circumference-for-age Z scores at Year 1 and Year 2. We measured the change in child length-for-age, weight-for-age, weight-for-length, and head circumference-for-age Z scores from Year 1 to Year 2 post-intervention. Because anthropometric Z scores reflect attained growth, we also assessed child weight velocity (in kg/month), length velocity (in cm/month), and head circumference velocity (in cm/month) from Year 1 to Year 2 to assess the growth process.
 
-## Statistical analysis
+### Statistical analysis
 
 The pre-registered analysis protocol, data, and code for the substudy are available (https://osf.io/9snat/). Analyses were conducted using R statistical software version 4.0.3.
 
@@ -109,31 +109,700 @@ Supplementary file 1a includes the full list of pre-specified covariates tested 
 
 ## Results
 
-## Child characteristics
+### Child characteristics
 
 TL and anthropometry measurements were available from 662 children at Year 1 and 713 children at Year 2 (Figure 1); 557 children had measurements in both years. The median age of the children was 14.3 (IQR: 12.6–15.6) months at Year 1 and 28.2 (IQR: 26.9–29.6) months at Year 2 (Table 1). After 1 year post-enrolment, 27% of children were stunted, 24% were underweight, and 12% were wasted. The median length-for-age Z score, weight-for-age Z score, weight-for-length Z score, and head circumference-for-age Z score was −1.41,–1.30, –0.89, and –1.81, respectively (Table 1). At Year 2, the stunting, underweight, and wasting prevalence remained stable. The median length-for-age Z score, weight-for-age Z score, weight-for-length Z score, and head circumference-for-age Z score was −1.54, –1.55, –1.00, and –1.78. Diarrhoea prevalence was higher at the first visit (14%, median age 14 months) compared to the second visit (8%, median age 28 months).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig1-v2.jpg)
 
-**Figure 1.:** Figure 1—source code 1.Figure 1.
+**Table 1.**
+ Characteristics of participants.Table 1—source code 1.Source code for Table 1.
 
-## Maternal characteristics
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>N (%) or median (IQR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Child</td>
+      <td></td>
+      <td>Female (%)</td>
+      <td>417 (51%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Age (months) at Year 1</td>
+      <td>14.3 (12.6, 15.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Age (months) at Year 2</td>
+      <td>28.2 (26.9, 29.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Months between telomere length measurements at Year 1 and Year 2</td>
+      <td>13.9 (13.5, 14.7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Telomere length at Year 1</td>
+      <td>T/S ratio*</td>
+      <td>1.42 (1.28, 1.56)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Telomere length at Year 2</td>
+      <td>T/S ratio*</td>
+      <td>1.43 (1.29, 1.58)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in telomere length between Year 1 and Year 2</td>
+      <td>T/S ratio*</td>
+      <td>0.04 (-0.22, 0.25)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anthropometry (age 3 months, Month 3)</td>
+      <td>Length-for-age Z score</td>
+      <td>–1.28 (–1.99, –0.53)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Weight-for-age Z score</td>
+      <td>–1.18 (–1.84, –0.50)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Weight-for-length Z score</td>
+      <td>–0.26 (–1.11, 0.44)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Head circumference-for-age Z score</td>
+      <td>–1.73 (–2.39, –1.01)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anthropometry (age 14 months, Year 1)</td>
+      <td>Length-for-age Z score</td>
+      <td>–1.41 (–2.08, –0.77)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Weight-for-age Z score</td>
+      <td>–1.30 (–1.98, –0.68)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Weight-for-length Z score</td>
+      <td>–0.89 (–1.60, –0.25)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Head circumference-for-age Z score</td>
+      <td>–1.81 (–2.40, –1.19)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anthropometry (age 28 months, Year 2)</td>
+      <td>Length-for-age Z score</td>
+      <td>–1.54 (–2.25, –0.94)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Weight-for-age Z score</td>
+      <td>–1.55 (–2.09, –0.90)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Weight-for-length Z score</td>
+      <td>–1.00 (–1.59,–0.37)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Head circumference-for-age Z score</td>
+      <td>–1.78 (–2.37, –1.22)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Diarrhoea (age 14 months, Year 1)</td>
+      <td>Caregiver-reported 7 day recall (%)</td>
+      <td>104 (14%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Diarrhoea (age 28 months, Year 2)</td>
+      <td>Caregiver-reported 7 day recall (%)</td>
+      <td>56 (8%)</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td></td>
+      <td>Age (years)</td>
+      <td>23 (20, 27)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anthropometry at enrolment</td>
+      <td>Height (cm)</td>
+      <td>150.5 (147.1, 153.9)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Education</td>
+      <td>Schooling completed (years)</td>
+      <td>7 (4, 9)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Depression at Year 1</td>
+      <td>CESD-R score**</td>
+      <td>10 (6, 16)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Depression at Year 2</td>
+      <td>CESD-R score**</td>
+      <td>10 (5, 17)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Perceived stress at Year 2</td>
+      <td>Perceived Stress Scale score</td>
+      <td>14 (10, 18)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Physical, sexual, or emotional intimate partner violence</td>
+      <td>Any lifetime exposure: number of women (%)</td>
+      <td>398 (56%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The unit for relative telomere length is the T/S ratio. Telomere length was measured by quantitative PCR (qPCR), a method that determines relative telomere length by measuring the factor by which each DNA sample differs from a reference DNA sample in its ratio of telomere repeat copy number (T) to single-copy gene copy number (S).**CESD-R = Center for Epidemiologic Studies Depression Scale Revised._
+
+### Maternal characteristics
 
 At enrolment, the mean (± SD) age of the women was 24 (±5) years, with a median height of 151 cm (IQR: 147–154) (Table 1). Women completed a median of 7 years of schooling (IQR: 4–9). Fifty-six percent of women reported experiencing intimate partner violence in their lifetime. The median CESD-R score of 12 (IQR: 9–17) at Years 1 and 2 was below the cut point for clinical dep ression (score of 16); 28% of women at Year 1 and 25% at Year 2 had a score at or above 16, indicating depressive symptomatology. The median perceived stress scale score was 14 (IQR: 10–18), similar to the reference norm in the United States (Cohen, 1994).
 
-## TL at Year 1 and growth
+### TL at Year 1 and growth
 
 At Year 1, the median TL was 1.42 T/S ratio (IQR: 1.28–1.56) (Table 1). At Year 1, longer TL was concurrently associated with taller children (+0.23 SD adjusted difference in length-for-age Z score between the 10th and 90th percentile [95% CI 0.05, 0.42; FDR-corrected p-value = 0.01]) (Table 2 and Supplementary file 1b; Figure 2, Figure 2—figure supplement 1). TL at Year 1 was unassociated with concurrent or subsequent weight-for-age, weight-for-length, or head circumference-for-age Z score (Table 2 and Supplementary file 1b; Figure 2, Figure 2—figure supplement 1). Furthermore, TL at Year 1 was unassociated with growth velocities or change in length-for-age Z score, weight-for-age, and weight-for-length Z score between Years 1 and 2 (Table 2 and Supplementary file 1b; Figure 2, and Figure 2—figure supplement 1).
 
-## TL at Year 2 and growth
+**Table 2.**
+ Association between telomere length at Year 1 and growth.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Exposure</th>
+      <th>Outcome</th>
+      <th>N</th>
+      <th>10th percentile</th>
+      <th>90th percentile</th>
+      <th colspan="4">Outcome, 90th percentile vs. 10th percentile</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="4">Adjusted†</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Predicted outcome at 10th percentile</th>
+      <th>Predicted outcome at 90th percentile</th>
+      <th>Coefficient (95% CI)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Telomere length at Year 1 (T/S ratio)</td>
+      <td>LAZ Year 1</td>
+      <td>638</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–1.54</td>
+      <td>–1.31</td>
+      <td>0.23 (0.05, 0.42)</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WAZ Year 1</td>
+      <td>638</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–1.21</td>
+      <td>–1.20</td>
+      <td>0.01 (–0.2, 0.23)</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WLZ Year 1</td>
+      <td>636</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–0.68</td>
+      <td>–0.83</td>
+      <td>–0.16 (-0.36, 0.05)</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HCZ Year 1</td>
+      <td>638</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–1.82</td>
+      <td>–1.81</td>
+      <td>0.01 (–0.18, 0.2)</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LAZ Year 2</td>
+      <td>542</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–1.51</td>
+      <td>–1.45</td>
+      <td>0.06 (–0.04, 0.16)</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WAZ Year 2</td>
+      <td>565</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–1.77</td>
+      <td>–1.70</td>
+      <td>0.07 (–0.03, 0.17)</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WLZ Year 2</td>
+      <td>568</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–0.99</td>
+      <td>–1.01</td>
+      <td>–0.03 (–0.14, 0.09)</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HCZ Year 2</td>
+      <td>565</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–1.85</td>
+      <td>–1.81</td>
+      <td>0.04 (–0.18, 0.25)</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in LAZ between Year 1 and Year 2</td>
+      <td>568</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–0.23</td>
+      <td>–0.28</td>
+      <td>–0.05 (–0.14, 0.04)</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in WAZ between Year 1 and Year 2</td>
+      <td>572</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–0.37</td>
+      <td>–0.38</td>
+      <td>0 (–0.11, 0.1)</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in WLZ between Year 1 and Year 2</td>
+      <td>565</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–0.24</td>
+      <td>–0.20</td>
+      <td>0.04 (–0.09, 0.17)</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in HCZ between Year 1 and Year 2</td>
+      <td>545</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>–0.16</td>
+      <td>–0.11</td>
+      <td>0.06 (–0.05, 0.17)</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Length velocity between Year 1 and Year 2</td>
+      <td>541</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>0.80</td>
+      <td>0.80</td>
+      <td>0 (–0.02, 0.03)</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Weight velocity between Year 1 and Year 2</td>
+      <td>541</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>0.15</td>
+      <td>0.15</td>
+      <td>0 (–0.01, 0.01)</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Head circumference velocity between Year 1 and Year 2</td>
+      <td>545</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>0.15</td>
+      <td>0.16</td>
+      <td>0.01 (0, 0.02)</td>
+      <td>0.13</td>
+    </tr>
+  </tbody>
+</table>
+
+_N, 10th percentile, and 90th percentile are from the adjusted analyses.T/S ratio = unit for relative telomere length; LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.*p-value<0.05 after adjusting for multiple comparisons using the Benjamini–Hochberg procedure.†Adjusted for pre-specified covariates: Child age, child sex, birth order, prior child length, and weight measurements (included in Year 2 outcomes only), time between anthropometry measurements (included in growth velocity and change in growth measurements between Year 1 and Year 2 outcomes only), season of measurement, caregiver-reported diarrhoea, mother’s age, mother’s height, mother’s education level, mother’s Center for Epidemiologic Studies Depression Scale Revised (CESD-R) score, mother’s Perceived Stress Scale score, mother’s lifetime exposure to physical, sexual, and emotional intimate partner violence, household food insecurity, number of children < 18 years in the household, number of individuals living in the compound, distance in minutes to the primary water source, household floor materials, household wall materials, household electricity, and household assets (wardrobe, table, chair, clock, khat, chouki, radio, television, refrigerator, bicycle, motorcycle, sewing machine, mobile phone, cattle, goats, and chickens), and treatment arm (control or N + WSH) (Supplementary file 1a)._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig2-v2.jpg)
+
+**Figure 2.:** Adjusted differences in mean anthropometry Z score between 10th and 90th percentile of telomere measure. LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Spline curves of telomere length at Year 1 and anthropometric Z scores at Years 1 and 2, change in anthropometric Z scores, and growth velocity. T/S Ratio = unit for relative telomere length; LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Spline curves of telomere length at Year 2 and anthropometric Z scores at Year 2. T/S ratio = unit for relative telomere length; LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Spline curves of change in telomere length between Years 1 and 2 and anthropometric Z scores at Year 2, change in anthropometric Z scores, and growth velocity. T/S ratio = unit for relative telomere length; LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.
+
+### TL at Year 2 and growth
 
 At Year 2, the median TL was 1.43 T/S ratio (IQR: 1.29–1.58) (Table 1). Similar to the Year 1 results, the association between TL at Year 2 and length-for-age Z score was positive (+0.08 SD adjusted difference between the 10th and 90th percentile [95% CI –0.03, 0.19]), but the association was not significant (FDR-corrected p-value≥0.05) (Table 3 and Supplementary file 1c; Figure 2, Figure 2—figure supplement 2). There was also no association between TL at Year 2 and concurrent weight-for-age or head circumference-for-age Z score.
 
-## Change in TL between Years 1 and 2 and growth
+**Table 3.**
+ Association between telomere length at Year 2 and growth.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Exposure</th>
+      <th>Outcome</th>
+      <th>N</th>
+      <th>10th percentile</th>
+      <th>90th percentile</th>
+      <th colspan="4">Outcome, 90th percentile vs. 10th percentile</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="4">Adjusted*</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Predicted outcome at 10th percentile</th>
+      <th>Predicted outcome at 90th percentile</th>
+      <th>Coefficient (95% CI)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Telomere length at Year 2 (T/S ratio)</td>
+      <td>LAZ Year 2</td>
+      <td>592</td>
+      <td>1.1</td>
+      <td>1.7</td>
+      <td>−1.68</td>
+      <td>−1.6</td>
+      <td>0.08 (−0.03, 0.19)</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WAZ Year 2</td>
+      <td>611</td>
+      <td>1.1</td>
+      <td>1.7</td>
+      <td>−1.84</td>
+      <td>−1.8</td>
+      <td>0.06 (−0.05, 0.16)</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WLZ Year 2</td>
+      <td>615</td>
+      <td>1.1</td>
+      <td>1.7</td>
+      <td>−0.98</td>
+      <td>−1.1</td>
+      <td>−0.08 (−0.2, 0.04)</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HCZ Year 2</td>
+      <td>612</td>
+      <td>1.1</td>
+      <td>1.7</td>
+      <td>−1.94</td>
+      <td>−1.9</td>
+      <td>0 (−0.18, 0.17)</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td colspan="9"></td>
+    </tr>
+    <tr>
+      <td colspan="9"></td>
+    </tr>
+  </tbody>
+</table>
+
+_N, 10th percentile, and 90th percentile are from the adjusted analyses.T/S ratio = unit for relative telomere length; LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.*Adjusted for pre-specified covariates: Child age, child sex, birth order, prior child length and weight measurements from Year 1, season of measurement, caregiver-reported diarrhoea, mother’s age, mother’s height, mother’s education level, mother’s Center for Epidemiologic Studies Depression Scale Revised (CESD-R) score, mother’s Perceived Stress Scale score, mother’s lifetime exposure to physical, sexual, and emotional intimate partner violence, household food insecurity, number of children <18 years in the household, number of individuals living in the compound, distance in minutes to the primary water source, household floor materials, household wall materials, household electricity, and household assets (wardrobe, table, chair, clock, khat, chouki, radio, television, refrigerator, bicycle, motorcycle, sewing machine, mobile phone, cattle, goats, and chickens), and treatment arm (control or N + WSH) (Supplementary file 1a)._
+
+### Change in TL between Years 1 and 2 and growth
 
 The median change in TL between Years 1 and 2 was 0.04 T/S ratio (IQR: –0.22 to 0.25) (Table 1). The median months between TL measurements at Years 1 and 2 was 13.9 months (IQR: 13.5–14.7). There was no evidence that changes in TL between Years 1 and 2 were associated with change in growth Z scores from Years 1 to 2, growth Z scores at Year 2, or growth velocity over the 1 year period (Table 4 and Supplementary file 1d and Figure 2, Figure 2—figure supplement 3). We tested for the regression to the mean (RTM) effect by assessing the association between baseline TL at Year 1 and the change in TL between Years 1 and 2 (r = −0.18, p-value<0.001) (Figure 3). Because we observed that the correlation between Year 1 TL and TL change between Years 1 and 2 was partly due to regression to the mean (RTM) (Figure 3; Berry et al., 1984), we used the equation in Verhulst et al. to correct for the RTM effect in the primary analyses (Verhulst et al., 2013). Comparing associations between change in TL, uncorrected and corrected for the RTM effect, and growth outcomes yielded similar estimates (Figure 3—figure supplements 1–2).
 
-## Post hoc analyses
+**Table 4.**
+ Association between change in telomere length and growth.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Exposure</th>
+      <th>Outcome</th>
+      <th>N</th>
+      <th>10th percentile</th>
+      <th>90th percentile</th>
+      <th colspan="4">Outcome, 90th percentile vs. 10th percentile</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="4">Adjusted*</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Predicted outcome at 10th percentile</th>
+      <th>Predicted outcome at 90th percentile</th>
+      <th>Coefficient (95% CI)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Change in telomere length between Year 1 and Year 2 (T/S ratio)</td>
+      <td>LAZ Year 2</td>
+      <td>523</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−1.47</td>
+      <td>−1.50</td>
+      <td>−0.03 (−0.13, 0.07)</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WAZ Year 2</td>
+      <td>541</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−1.72</td>
+      <td>−1.76</td>
+      <td>−0.03 (−0.13, 0.07)</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WLZ Year 2</td>
+      <td>545</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−0.98</td>
+      <td>−1.05</td>
+      <td>−0.07 (−0.18, 0.04)</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HCZ Year 2</td>
+      <td>543</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−1.83</td>
+      <td>−1.90</td>
+      <td>−0.08 (−0.24, 0.09)</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in LAZ between Year 1 and Year 2</td>
+      <td>545</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−0.23</td>
+      <td>−0.23</td>
+      <td>0 (−0.09, 0.08)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in WAZ between Year 1 and Year 2</td>
+      <td>547</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−0.36</td>
+      <td>−0.40</td>
+      <td>−0.04 (−0.13, 0.05)</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in WLZ between Year 1 and Year 2</td>
+      <td>543</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−0.23</td>
+      <td>−0.27</td>
+      <td>−0.04 (−0.16, 0.08)</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Change in HCZ between Year 1 and Year 2</td>
+      <td>525</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>−0.14</td>
+      <td>−0.19</td>
+      <td>−0.05 (−0.15, 0.06)</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Length velocity between Year 1 and Year 2</td>
+      <td>522</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>0.84</td>
+      <td>0.82</td>
+      <td>−0.01 (−0.03, 0.01)</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Weight velocity between Year 1 and Year 2</td>
+      <td>522</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>0.15</td>
+      <td>0.15</td>
+      <td>0 (−0.01, 0.01)</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Head circumference velocity between Year 1 and Year 2</td>
+      <td>525</td>
+      <td>−0.43</td>
+      <td>0.44</td>
+      <td>0.16</td>
+      <td>0.15</td>
+      <td>−0.01 (−0.02, 0.01)</td>
+      <td>0.35</td>
+    </tr>
+  </tbody>
+</table>
+
+_N, 10th percentile, and 90th percentile are from the adjusted analyses.T/S ratio = unit for relative telomere length; LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.*Adjusted for pre-specified covariates: Child age, child sex, birth order, prior child length and weight measurements from Year 1 (included in Year 2 outcomes only), season of measurement, time between anthropometry measurements (included in growth velocity and change in growth measurements between Year 1 and Year 2 outcomes only), caregiver-reported diarrhoea, mother’s age, mother’s height, mother’s education level, mother’s Center for Epidemiologic Studies Depression Scale Revised (CESD-R) score, mother’s Perceived Stress Scale score, mother’s lifetime exposure to physical, sexual, and emotional intimate partner violence, household food insecurity, number of children <18 years in the household, number of individuals living in the compound, distance in minutes to the primary water source, household floor materials, household wall materials, household electricity, and household assets (wardrobe, table, chair, clock, khat, chouki, radio, television, refrigerator, bicycle, motorcycle, sewing machine, mobile phone, cattle, goats, and chickens), and treatment arm (control or N + WSH) (Supplementary file 1a)._
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig3-v2.jpg)
+
+**Figure 3.:** T/S ratio = unit for relative telomere length.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Unadjusted differences in mean anthropometry Z score between 10th and 90th percentile of change in telomere length between Years 1 and 2. Unadjusted associations corrected for the regression to the mean (RTM) effect using the equation in Verhulst et al., 2013. LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60389/elife-60389-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Adjusted differences in mean anthropometry Z score between 10th and 90th percentile of change in telomere length between Years 1 and 2. Adjusted associations corrected for the regression to the mean (RTM) effect using the equation in Verhulst et al., 2013. LAZ = length-for-age Z score; WAZ = weight-for-age Z score; WLZ = weight-for-length Z score; HCZ = head circumference-for-age Z score. Adjusted for pre-specified covariates: Child age, child sex, birth order, prior child length and weight measurements from Year 1 (included in Year 2 outcomes only), season of measurement, time between anthropometry measurements (included in growth velocity and change in growth measurements between Year 1 and Year 2 outcomes only), caregiver-reported diarrhoea, mother’s age, mother’s height, mother’s education level, mother’s Center for Epidemiologic Studies Depression Scale Revised (CESD-R) score, mother’s Perceived Stress Scale score, mother’s lifetime exposure to physical, sexual, and emotional intimate partner violence, household food insecurity, number of children <18 years in the household, number of individuals living in the compound, distance in minutes to the primary water source, household floor materials, household wall materials, household electricity, and household assets (wardrobe, table, chair, clock, khat, chouki, radio, television, refrigerator, bicycle, motorcycle, sewing machine, mobile phone, cattle, goats, and chickens), and treatment arm (control or N + WSH) (Supplementary file 1a).
+
+### Post hoc analyses
 
 Because the causal direction is not known for TL and growth, in post hoc analyses, we also examined potential associations in the opposite direction with growth as the exposure and TL as the outcome (Supplementary file 1e–1h). Higher weight-for-length Z score at Year 1 was associated with shorter TL at Year 2 (−0.06 difference in T/S ratio [95% CI −0.11, −0.01] between the 90th and the 10th percentile [Supplementary file 1f]). This association was not significant after adjustment for multiple testing (FDR-corrected p-value≥0.05).
 

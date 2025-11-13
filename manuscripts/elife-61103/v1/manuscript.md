@@ -36,19 +36,45 @@ To address this problem, we induced experimental inflammation in one hindpaw of 
 
 ## Results
 
-## Increased expression of TRPM3 mRNA in sensory neurons innervating inflamed tissue
+### Increased expression of TRPM3 mRNA in sensory neurons innervating inflamed tissue
 
 To investigate the consequences of tissue inflammation on the expression and function of TRPM3, TRPA1, and TRPV1, we used a mouse model of complete Freund’s adjuvant-induced (CFA-induced) peripheral inflammation. In this established model, unilateral hind paw injection of CFA produces a strong inflammatory response associated with pronounced hyperalgesia, and the contralateral hind paw can be used as an internal control.
 
 First, we addressed whether tissue inflammation is associated with increased expression of mRNA encoding TRPM3, TRPA1, and TRPV1, in particular in sensory neurons that innervate the inflamed tissue. Sensory neurons innervating the hind paws of mice have their cell bodies in the dorsal root ganglia, primarily at the lumbar levels L3-L6. These ganglia also contain cell bodies of sensory neurons that innervate other parts of the body, including viscera, necessitating an approach to specifically label neurons that have endings in the hind paw. Therefore, we injected the retrograde label WGA-AF647 intraplantar in both hind paws seven days prior to tissue isolation, which resulted in effective labeling of cell bodies of sensory neurons that innervate the injected territory (Figure 1A and Figure 1—figure supplement 1). We induced an inflammatory response in the ipsilateral hindpaw by injecting CFA into the plantar surface 24 hr before tissue collection; at the same time, the contralateral hindpaw was injected with vehicle (Figure 1—figure supplement 1). We used single-molecule fluorescent RNA in situ hybridization (RNAscope) (Wang et al., 2014), to quantify the levels of mRNA encoding TRPM3, TRPA1 and TRPV1 in the ipsi- and contralateral DRGs (Figure 1A), and compared the levels of mRNA, both between retrogradely labeled (WGA-AF647+) and unlabeled (WGA-AF647-) neurons on the ipsilateral side, and between WGA-AF647+ neurons on the ipsi- versus contralateral side. Importantly, this analysis revealed a significant increase in the TRPM3 mRNA levels in the ipsilateral, WGA-AF647+ DRG neurons, both when compared to WGA-AF647+ neurons on the contralateral side, and to WGA-AF647- neurons on the ipsilateral side (Figure 1B and Figure 1—figure supplement 2). On average, TRPM3 mRNA levels in the ipsilateral, WGA-AF647+ DRG neurons were increased to 163% (95% confidence interval [CI], 122% to 222%; p=0.008) of the levels in the WGA-AF647+ neurons on the contralateral side, and to 133% (CI, 108–163%; p=0.005) of the levels in WGA-AF647- neurons on the ipsilateral side. Notably, almost all (98 ± 2%) of the ipsilateral, WGA-AF647+ DRG neurons in the six tested animals showed a positive RNAscope signal for TRPM3, compared to between 70% and 80% TRPM3-positive neurons in the ipsilateral WGA-AF647- and contralateral DRG neurons (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative fluorescent images of processed contralateral (vehicle-treated) and ipsilateral (CFA-treated) L5 DRG. Shown are RNAscope stainings with specific probes for TRPM3 (left), TRPA1 (middle) or TRPV1 (right) (green). Retrogradely labeled neurons were identified based on the WGA-AF647 staining (magenta), and the blue color represents the nuclear marker DAPI. Retrogradely labeled neurons in the boxed areas are shown at double magnification, along with RNAscope staining for the neuronal marker Pgp9.5 (yellow), which was used to delineate neuronal cell bodies. (B,D,F) Quantification of the number of RNAscope dots per DRG neuron for TRPM3, TRPA1 and TRPV1, comparing retrogradely labeled (red) and unlabeled (black) sensory neurons, from the contralateral and ipsilateral L5 DRG. Values are presented as mean along with the 95% confidence interval. The data of the individual cells are shown in Figure 1—figure supplement 2. Statistical comparisons between groups were made using Kruskal-Wallis ANOVA with Dunn’s posthoc test. (C,E,G) Fraction of DRG neurons that showed a positive RNAscope signal (≥5 dots) for the three tested channels. Values are presented as mean ± SEM along with data points from the individual mice. Statistical comparisons between groups were made using one-way ANOVA with Holm–Šidák post-hoc test. Data are from six mice. The total numbers of analyzed neurons were for TRPM3: 752 ipsilateral and 1299 contralateral; for TRPA1: 954 ipsilateral and 947 contralateral; for TRPV1: 1054 ipsilateral and 995 contralateral.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** One day before imaging, the animals received a CFA injection in one paw, and vehicle in the contralateral paw.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig1-figsupp2-v1.jpg)
+
 In contrast, we did not observe significant inflammation-related changes in mRNA levels of TRPA1 or TRPV1 (Figure 1D–G and Figure 1—figure supplement 2). For TRPA1, mRNA levels in the ipsilateral WGA-AF647+ DRG neurons amounted to 120% (CI, 63% to 147%; p=0.56) of the level in the contralateral WGA-AF647+ DRG neurons and to 83% (CI, 40% to 139%; p=0.81) of the level in ipsilateral WGA-AF647- neurons (Figure 1D). In the case of TRPV1, mRNA levels in the ipsilateral WGA-AF647+ neurons amounted to 89% (CI, 53% to 140%; p=0.52) of the level in the contralateral WGA-AF647+ DRG neurons and to 126% (CI, 87% to 166%; p=0.15) of the level in ipsilateral WGA-AF647- neurons (Figure 1F). Likewise, the fraction of TRPA1- or TRPV1-positive DRG neurons did not differ significantly between WGA-AF647+ and WGA-AF647-DRG neurons on the ipsilateral and contralateral sides (Figure 1E,G).
 
 Taken together, these results suggest that inflammation is associated with an increased transcription of TRPM3, specifically in sensory neurons innervating the inflamed tissue, whereas no inflammation-related changes were found in the mRNA levels of TRPV1 and TRPA1.
 
-## Increased TRP channel functionality in sensory neurons innervating inflamed tissue
+### Increased TRP channel functionality in sensory neurons innervating inflamed tissue
 
 Next, we investigated whether sensory neurons innervating inflamed tissue exhibit altered functionality of heat-sensitive TRP channels. In a first analysis, we focused on the functional expression of TRP channels in the neuronal cell bodies. Since procedures to isolate and culture DRG neurons significantly alter the expression levels of many ion channels (Wangzhou et al., 2020), we developed an assay where the DRG was imaged as a whole in situ, using spinning-disk confocal imaging (Figure 2). For these experiments, we made use of a mouse line that expresses the genetically encoded calcium sensor GCaMP3 in TRPV1-lineage neurons (TRPV1-GCaMP3 mice), which include all the neurons involved in thermosensation and inflammatory thermal hyperalgesia (Mishra and Hoon, 2010; Mishra et al., 2011; Usoskin et al., 2015). It is important to note that not all GCaMP3-positive DRG neurons from TRPV1-GCaMP3 mice functionally express TRPV1 at the developmental stage where we did our analysis. Indeed, in line with earlier studies (Mishra et al., 2011), we found that TRPV1-lineage neurons identified based on their GCaMP3 fluorescence include all DRG neurons that functionally express TRPV1 and TRPA1, but also a subset of DRG neurons that no longer expressed TRPV1 (Figure 2—figure supplement 1). Retrograde labeling using WGA-AF647 (see Figure 1—figure supplement 1) was used to identify the neurons that innervate the mouse paw. The efficiency of the retrograde labeling was similar in the ipsi- and contralateral side, with 25.8 ± 9.7% and 27.7 ± 5.7% of the neurons being WGA-AF647+, respectively. Changes in GCaMP3 fluorescence were monitored upon application of specific agonists for TRPM3 (the combination of pregnenolone sulfate; PS and CIM0216), TRPA1 (mustard oil; MO) and TRPV1 (capsaicin), and of a depolarizing high K+ solution resulting in TRP channel-independent Ca2+-influx via voltage-gated Ca2+ channels (Figure 2B). The order of agonist application (TRPM3-TRPA1-TRPV1) and application timing was kept constant for all experiments. The order of agonist application was based on earlier experiments in isolated DRG neurons showing that capsaicin treatment leads to significant desensitization of sensory neurons to subsequent stimulation, whereas this is much less pronounced for the used agonists of TRPA1 and TRPM3 (Vriens et al., 2011; Vandewauw et al., 2018).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig2-v1.jpg)
+
+**Figure 2.:** (A) Confocal images of the ipsi- and contralateral L5 DRG of a CFA-treated mouse showing GCaMP3 (green) and WGA-AF647 (magenta) fluorescence. (B) Representative examples, corresponding to cells indicated in panel (A) of changes in GCaMP3 fluorescence (ΔF/F0) in response to application of agonists of TRPM3 (PS + CIM0216; M3) TRPA1 (MO; A1) and TRPV1 (capsaicin; V1) and of a depolarizing high K+ solution (K+). (C) Percentage of neurons responding to the indicated agonists in WGA-AF647+ (red) and WGA-AF647- (black) DRG neurons from the ipsi- and contralateral sides. Data are shown as mean ± SEM from 9 mice. Statistical comparisons between groups were made using one-way ANOVA with Holm–Šidák post-hoc test. Cells that did not respond to high K+ stimulation were excluded from the analysis. (D-F) Peak amplitudes of responses to the TRPM3, TRPA1 and TRPA1 agonists, normalized to the response to the depolarizing high K+ solution, comparing retrogradely labeled (WGA-AF647+; red) and unlabeled (WGA-AF647-; black) neurons on the ipsi- and contralateral side. Where indicated (grey background), DRGs were pre-incubated with isosakuranetin (20 μM). Values are presented as mean along with the 95% confidence interval. The data of the individual cells and the number of cells in the different groups are shown in Figure 2—figure supplement 2. A comparison of the non-normalized data is provided in Figure 2—figure supplement 3. Statistical comparisons between groups were made using Kruskal-Wallis ANOVA with Dunn’s posthoc test. Data are from 9 mice in the absence of isosakuranetin and another set of 9 mice in the presence of isosakuranetin.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Four examples of combined Fura-2-based ratiometric calcium imaging (magenta) and of the fluorescent signal upon excitation at 488 nm (green) in isolated DRG neurons from TRPV1-GCaMP3 mice stimulated with agonists of TRPM3 (PS + CIM0216; M3) TRPA1 (MO; A1) and TRPV1 (capsaicin; V1) and of a depolarizing high K+ solution (K+). The left two traces show examples of GCaMP3-positive neurons, and the right two traces of GCaMP3-negative neurons. (B) Percentage of GCaMP3-positive and GCaMP3-negative neurons responding to the different (combinations of)agonists. Cells that did not respond to high K+ stimulation were excluded from the analysis. Note that a significant fraction of the GCaMP3-positive neurons did not respond to TRPV1 agonism, indicative of neurons that lost TRPV1 expression during development. Data are from 359 cells from 4 different mice.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Peak amplitudes of the response to the depolarizing high K+ solution for the different groups shown in Figure 2. (B-D) Same data as shown in Figure 2D–F, but without normalization to the response to the depolarizing high K+ solution. Values are presented as mean along with the 95% confidence interval. Statistical comparisons between groups were made using Kruskal-Wallis ANOVA with Dunn’s posthoc test.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig2-figsupp4-v1.jpg)
 
 Both in the ipsi- and contralateral DRG, we observed calcium responses to the different agonist applications, which were indicative of neurons with different patterns of functional expression of one, two or all three heat-activated TRP channels (Figure 2B; Figure 2—figure supplement 4). We did not observe any significant differences in the fraction of neurons that responded to the different TRP channel agonists or in the response amplitudes between WGA-AF647+ and WGA-AF647- neurons in the contralateral DRG, indicating that the retrograde label by itself did not affect TRP channel activity at the level of the cell bodies (Figure 2C–F; Figure 2—figure supplements 2–4). Likewise, responses to the depolarizing high K+ solution did not differ significantly between groups, and these responses were to normalize the TRP channel-mediated responses (Figure 2D–F; Figure 2—figure supplement 2; non-normalized data are shown in Figure 2—figure supplement 3).
 
@@ -60,11 +86,23 @@ Finally, in the case of TRPV1, there was a trend toward more responders in the i
 
 Taken together, these results indicate that inflammatory heat hyperalgesia is associated with the increased functionality of all three heat-activated TRP channels at the level of the DRG cell bodies. In particular, we report for the first time a strong enhancement of TRPM3-mediated responses, as well as large increase in the fraction of neurons that co-express TRPM3 with TRPV1 and TRPA1. Notably, pharmacological inhibition of TRPM3 not only suppressed the responses to TRPM3 agonists but also reduced the responses to TRPA1 and TRPV1 agonists in neurons innervating inflamed tissue. These findings are in line with a model where increased molecular and functional expression of TRPM3 in the context of tissue inflammation enhances the excitability of sensory neurons, which may contribute to augmented responses of these neurons to TRPA1 and TRPV1 agonists.
 
-## Optical measurements suggest increased TRP channel activity in cutaneous nerve endings in inflamed skin
+### Optical measurements suggest increased TRP channel activity in cutaneous nerve endings in inflamed skin
 
 Whereas these results indicate increased functionality of heat-activated TRP channels in the cell bodies of sensory neurons innervating the inflamed paw, they do not provide information regarding changes at the level of the sensory nerve endings. To address this issue, we developed an approach that allows direct measurement of TRP channel activity in intact cutaneous peripheral nerve endings in mouse hind paw skin (Figure 3A). In this assay, a skin flap of the dorsal surface of the hind paw and the innervating saphenous nerve (but lacking the DRG cell bodies) of TRPV1-GCaMP3 mice were excised and fixed in an organ bath, corium side up. Note that the plantar skin tissue is significantly thicker, and therefore less amenable for imaging nerve endings using this approach. Calcium signals in nerve endings expressing GCaMP3 were visualized from the epidermal side using a spinning-disk confocal microscope, while TRP channel agonists or a depolarizing high K+ solution were locally applied from the dermal side (Figure 3A). We used a gravity-driven perfusion system with an outlet positioned on one border of the recording field, and constant suction on the opposite border, allowing rapid exchange of agonists. We adapted a published algorithm to automatically detect contiguous regions of interest (ROIs) exhibiting synchronous activity, which we interpret as individual branches of sensory nerve endings (Zhou et al., 2018). As illustrated in Figure 3B,C and Figure 3—Video 1, this approach revealed distinct calcium responses in localized regions, indicative of sensory endings that functionally express TRPM3, TRPA1, and TRPV1.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic illustration of the optical imaging setup. Sensory nerve fibers (red) innervating the dermal and epidermal skin layers are visualized using 488 nm laser light and an inverted spinning disk confocal microscope (20x objective). To avoid the barrier effect of the epidermis, solutions (at 37°C) were applied to the internal side of the sample from above. A total thickness of 20–30 μm was captured. (B) The first image depicts the summed raw fluorescence of the entire imaging experiment. The next five images represent normalized fluorescence (ΔF/F0) at baseline (before the first stimulus), upon stimulation with TRPM3, TRPA1 and TRPV1 agonists, and with the depolarizing high K+ solutions. Three automatically detected ROIs, corresponding to the traces in panel C, are indicated. Scale bar is 50 μm. See Figure 3—Video 1. (C) Time course of normalized GCaMP3 fluorescence (F/F0) from three different ROIs (top: ROI 1; middle: ROI 2; bottom: ROI 3) depicted in panel B, with indication of the application periods of TRP channel agonists.
+
 We used this novel approach to compare TRP channel activity in the skin of CFA- and vehicle-treated paws (Figure 4A,B). To minimize cross-(de)sensitization between stimuli, we used the same order of agonist applications as used in the DRG preparation (Figure 2), and allowed a wash-out period of 5 min between stimuli (Figure 4A,B). Since we measure responses from GCaMP3-positive nerve endings in the skin, not from clearly identifiable individual cells as in the DRG assay, a quantitative comparison of responses between ipsi- and contralateral paw posed several problems. First, the individual regions of interest that were automatically identified based on proximity and correlated activity represent only segments of individual sensory nerve endings, not the entire ending. Therefore, quantification of the percentage of nerve endings that respond to the specific TRP channel agonists was not feasible. Second, nerve endings in the skin did not always show robust responses to a depolarizing high K+ solution, even when they showed robust responses to one or more TRP channel agonists (Figure 4B), making a normalization as was done for the neuronal cell bodies unreliable. The lack of consistent responses to a depolarizing high K+ solution may reflect that not all nerve endings contain voltage-gated Ca2+ channels or that inactivation of voltage-gated channels occurred due to the preceding TRP channel activation. Therefore, to quantify the functional expression of the three TRP channels, we determined the total area of automatically detected ROIs that showed a correlated response to each of the specific agonists, normalized this active area to the total imaged area (Figure 4A), and made a paired comparison between equivalent skin areas of the ipsi- and contralateral paws of the same animal. This analysis indicated increased reactivity to agonists of all three channels in the inflamed skin (Figure 4C–E and Figure 4—figure supplement 1). The responsive area was increased to 274% ([CI], 138% to 481%; p=0.04) for TRPM3 agonism, to 197% ([CI], 122% to 281%; p=0.02) for TRPA1 agonism and to 256% ([CI], 156% to 359%; p=0.02) for TRPV1 agonism, when compared to the contralateral side.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig4-v1.jpg)
+
+**Figure 4.:** (A) Normalized fluorescence at baseline (before the first stimulus), and upon stimulation with TRPM3, TRPA1 and TRPV1 agonists of the ipsi- and contralateral skin of a CFA-treated mouse. Scale bar is 50 μm. Boxed areas, magnified on the right, illustrate automatically detected ROIs. (B) GCaMP3 fluorescence, expressed as ΔF/F0, for the ROIs indicated in panel (A). (C-E) Responsive areas to the indicated agonists in the contralateral (black) and ipsilateral (red) skin. The paired Wilcoxon Signed Rank Test was used for a paired comparison of the responsive area in the ipsi- and contralateral paw skin of 11 mice, measured in the absence of isosakuranetin. The ipsi- and contralateral skin of another set of 6 mice was compared following pre-incubation with isosakuranetin (20 μM; grey background). Since the control and isosakuranetin-treated skin preparations originate from different mice, and considering the substantial inter-animal variability in skin thickness and innervation, a full statistical comparison between these data sets was not performed. (F) Percentage of the total imaged area responding to the indicated (combinations of) agonists in the contra- and ipsilateral paws, and following isosakuranetin pre-incubation. Further statistical comparison is provided in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61103/elife-61103-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A-C) Responsive areas that were identified based on their response to TRPM3 (A), TRPA1 (B) or TRPV1 (C) Agonism, and that also responded to at least one other TRP channel agonist. Individual dots and interconnecting full lines represent values of the contralateral and ipsilateral paw of individual mice (N = 11). Mice where the responsive area was increased in the inflamed paw compared to the control paw are indicated in red, those where there was a decrease in green. Solid black circles represent the mean and error bars the 95% confidence interval. Statistical comparisons were made using the paired Wilcoxon Signed Rank Test. The upper symbol (star) represents a highly responsive inflamed skin with actual responsive areas of 7.69% (TRPM3 with TRPA1 and/or TRPV1), 8.23% (TRPA1 with TRPM3 and/or TRPV1) and 8.62% (TRPV1 with TRPM3 and/or TRPA1).
 
 We also evaluated how tissue inflammation affects the functional co-expression of the three channels in the nerve terminals in the skin. Like in the DRG cell bodies, we observed a pronounced increase in the surface of nerve endings that showed responses to more than one agonist (Figure 4F and Figure 4—figure supplement 1). Notably, the increase in TRPM3-mediated responses was primarily observed in nerve endings that also responded to TRPV1 and/or TRPA1 agonists (Figure 4F and Figure 4—figure supplement 1). Overall, these qualitative results represent, to our knowledge, the first direct observation of functional upregulation of all three heat-activated TRP channels in intact nerve endings in inflamed skin.
 
@@ -84,31 +122,209 @@ In conclusion, the present findings provide the first evidence that TRPM3 expres
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6JRj</td>
+      <td>Janvier Labs</td>
+      <td></td>
+      <td>https://www.janvier-labs.com/en/fiche_produit/c57bl-6jrj_mouse/</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>TRPV1-GCaMP3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Obtained by crossing Gt(ROSA)26Sortm38(CAG-GCaMP3)Hze/J mice (Stock#: 029043) with Trpv1tm1(cre)Bbmmice (Stock#: 017769). Both strains were acquired from Jackson Laboratory. Crossings were made in house.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>WGA-AF647 (wheat germ agglutinin- Alexa Fluor 647)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: W32466</td>
+      <td>0.8% in PBS; 10 µl per injection</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope 2.0 Fluorescent Multiplex Reagent Kit</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#: 320850; RRID:SCR_012481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRPV1 Probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#: 313331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRPM3 Probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#: 459911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRPA1 Probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#: 400211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PgP9.5 Probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#: 561861-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>isosakuranetin</td>
+      <td>Extrasynthese</td>
+      <td>Cat#: 1374</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CIM0216</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 534359</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pregnenolone sulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: P162</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mustard oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: W203408</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>capsaicin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: M2028</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: P36931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Turboreg algorithm</td>
+      <td>https://imagej.net/TurboReg</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CNMF-E algorithm</td>
+      <td>https://github.com/zhoupc/CNMF_E</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS software</td>
+      <td>Nikon Instruments</td>
+      <td>RRID:SCR_014329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 2019b</td>
+      <td>Originlabs</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 8</td>
+      <td>Wavemetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CFA (complete freund’s adjuvant)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: F5581</td>
+      <td>(1 mg/ml) 10 µl per injection</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass-bottom microwell dish</td>
+      <td>MatTek</td>
+      <td>Cat#: P35G-1.5–14 C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass-bottom chamber</td>
+      <td>Fluorodish, WPI</td>
+      <td>Cat#: FD35-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: P36931</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 C57BL/6J wild type mice (Janvier Labs, Le Genest-Saint-Isle, France) and TRPV1-GCaMP3 mice on a C57BL/6J background were used. TRPV1-GCaMP3 mice were generated by crossing Rosa26-floxed-GCaMP3 mice (Zariwala et al., 2012) with TRPV1-cre mice (Mishra et al., 2011). Mice were housed in a conventional facility at 21°C on a 12 hr light-dark cycle with unrestricted access to food and water. Both male and female mice between 8 and 12 weeks of age were used. Experiments were performed in concordance with EU and national legislation and approved by the KU Leuven ethical committee for Laboratory Animals under project number P075/2018 and P122/2018.
 
-## Reagents
+### Reagents
 
 Reagents were purchased from Sigma-Aldrich (Chemical Co., St. Louis, Missouri) unless otherwise indicated.
 
-## Retrograde labeling
+### Retrograde labeling
 
 To specifically label afferents from the hind paw skin, 10 μl Alexa Fluor 647-conjugated wheat germ agglutinin (WGA-AF647, Thermo Fisher Scientific, Invitrogen, Eugene, Oregon, USA; 0.8% in sterile PBS) was injected intraplantar into both hind paws. The injections were performed 7 days prior to imaging. Initial experiments showed no edematous or hyperalgesic response to the retrograde label.
 
-## Paw inflammation
+### Paw inflammation
 
 Local inflammation was induced by injection of 10 µl complete Freund’s adjuvant (CFA, 1 mg/ml) into the plantar surface of the ipsilateral hindpaw of the studied mouse. The contralateral hind paw was injected with 10 μl vehicle (saline, Baxter, Lessen, Belgium). All ipsilateral mouse hind paws showed substantial edema 24 hr after the injection, which was not observed in the control paw.
 
-## Calcium imaging
+### Calcium imaging
 
 Animals were euthanized using CO2 inhalation, and skin and DRG tissue were collected immediately.
 
-## Skin nerve preparation
+#### Skin nerve preparation
 
 Sensory nerve ending recordings were obtained from isolated dorsal hind paw skin preparations. The fur was removed with tape and the skin was gently dissected from the underlying tissue.
 
-## In situ DRG preparation
+#### In situ DRG preparation
 
 Bilateral L3-L6 DRGs were isolated. In brief, the spinal column was isolated, cleaned, and split sagittally. The spinal cord, meninges covering the DRG, and the distal axon bundles were removed. Finally, a small segment of the spinal column containing the DRG of interest was extracted.
 
@@ -116,30 +332,30 @@ The isolated skin tissue and spinal column segments were maintained 1 hr on ice 
 
 Calcium imaging of the skin-nerve and in situ DRG preparations was performed on an inverted spinning disk confocal microscope (Nikon Ti; Yokogawa CSU-X1 Spinning Disk Unit, Andor, Belfast, Northern Ireland), equipped with a 20x air objective (NA 0.8), a 488 nm laser light and a EMCCD camera (iXon3 DU-897-BV, Andor). For image acquisition and instrument control, Andor iQ software was used. A z-stack of 11 frames (total thickness of 20–30 μm) was captured consecutively during the entire measurement at a speed of 0.25 Hz. Agonists were diluted in SIF and applied using a heated perfusion system (Multi Channel Systems, Reutlingen, Germany). Before image acquisition, the DRG samples were excited at 640 nm to detect WGA-647+ retrogradely labeled cell bodies. The used stimuli to activate the specific TRP channels were for TRPM3: PS (100 μM) + CIM0216 (1 μM); for TRPA1: MO (100 μM); and for TRPV1 capsaicin (1 μM). Compounds were diluted in SIF supplemented with 0.1% DMSO. A depolarizing high K+ solution in which all NaCl was replaced by KCl was applied at the end of each experiment to identify excitable cells. All solutions were applied at 37°C and administered to the immediate proximity of the recording field.
 
-## Isolated DRG neurons
+#### Isolated DRG neurons
 
 In a limited set of experiments, shown in Figure 2—figure supplement 1, we performed combined Fura-2 and GCaMP3 fluorescence measurements on isolated DRG neurons. Ganglia were excised, washed in neurobasal A medium (Invitrogen) supplemented with 10% fetal calf serum (basal medium), and then incubated for 45 min at 37°C in a mix of 1 mg/ml collagenase and 2.5 mg/ml dispase (Gibco). Digested ganglia were gently washed twice with basal medium and mechanically dissociated by passage through syringes fitted with increasing needle gauges. Neurons were seeded on poly-L-ornithine/laminin coated glass-bottom chambers (Fluorodish, WPI) and cultured overnight at 37°C in 5% CO2 in B27 (Invitrogen) supplemented neurobasal A medium, containing 2 ng/ml GDNF (Invitrogen) and 10 ng/ml NT4 (Peprotech). Isolated DRG neurons were loaded with 2 µM Fura-2-acetoxymethyl ester (Alexis Biochemicals) for 30 min at 37°C. Fluorescence was measured during alternating illumination at 340 and 380 nm (yielding the Fura-2 fluorescence ratio) and at 480 nm (to monitor GCaMP3 fluorescence) using a CellM (Olympus) fluorescence microscopy system.
 
-## Image processing and analysis
+### Image processing and analysis
 
 Spinning disk confocal microscope recordings were first z-averaged in Fiji (imageJ, 1.52i) and corrected for translational drift using a reference image that averaged the first 10 frames prior to tissue stimulation (Turboreg plugin, imageJ).
 
-## Skin nerve
+#### Skin nerve
 
 After drift correction, we used custom-made routines in Igor (Wavemetrics) to subtract fluorescence background. The background was obtained by fitting a fourth-order polynomial surface to non-responsive areas, which were defined as those pixels where the coefficient of variation in time was below a threshold, which was automatically obtained following the Otsu algorithm. After background correction, we used the ‘constrained non-negative matrix factorization for micro-endoscopic data’ framework (CNMF-E, Matlab R2017b) to identify ROIs as contiguous areas with temporally correlated activity (Zhou et al., 2018). The background-subtracted fluorescence was normalized to the basal fluorescence of the reference image (first 10 frames prior to stimulation), yielding F/F0 values.
 
-## In situ DRG
+#### In situ DRG
 
 These recordings were analyzed using a general analysis protocol (GA2) in NIS-elements (NIS 5.20.00, Nikon Instruments Europe B.V.). Retrogradely labeled (WGA-AF647+) and unlabeled (WGA-AF647-) neurons were initially identified visually; for analysis, only cells with a fluorescence signal that exceeded five times the standard deviation of the background fluorescence in this channel were retained in as WGA-AF647+. Raw fluorescent traces were converted to F/F0, where F is the fluorescence at a certain time point of interest, and F0 is the baseline fluorescence before stimulation. Cells that did not respond to high K+ where excluded from all further analysis.
 
 To determine responders in the skin-nerve and DRG recordings, two criteria had to be fulfilled: first, the peak F/F0 during stimulation had to exceed five times the standard deviation of the F/F0 value before stimulation. Second, the peak of the first derivative of the fluorescent signal (dF/dt) had to exceed the standard deviation of the dF/dt signal before stimulation.
 
-## In situ hybridization
+### In situ hybridization
 
 In situ hybridization was performed on 10-μm-thin cryosections of DRG neurons innervating the contralateral and ipsilateral hind paw. DRG tissue was isolated as described previously and immersed in 10% neutral buffered formalin immediately after isolation. Prior to isolation, retrograde labeling and inflammation were induced as described previously. RNA transcripts were detected using the RNAscope 2.0 assay according to the manufacturer’s instructions (Advanced Cell Diagnostics, Hayward, CA, United States). Probes for mTrpv1 (cat number: 313331), mTrpm3 (cat number: 459911), mTrpa1 (cat number: 400211) and Pgp9.5 (cat number: 561861-C2) were purchased from Advanced Cell Diagnostics. The staining was performed using the RNAscope Fluorescent Multiplex Reagent Kit (cat number: 320850). Cells were stained with DAPI and mounted on the slide with Gold Antifade Mountant. A total of 5802 neurons were analyzed from 12 lumbar (L5) DRG neurons (6 contralateral and six ipsilateral), isolated from six mice.
 
 Slides were imaged using a Nikon NiE - Märzhäuser Slide Express two equipped with a Hamamatsu Orca Flash 4.0 in combination with a Plan Apo 40x (NA 0.95), and custom made JOBS-GA2 protocol for sample detection. For analysis, a GA3 script in NIS-Elements 5.20.00 was used. Cells were segmented manually based on the Pgp 9.5 signal. Cells were considered as WGA-AF647+ if the mean fluorescence exceeded five times the standard deviation of the background fluorescence in this channel. Due this stringent criterium, it is likely that some retrogradely labeled neurons with modest WGA-AF647 fluorescence are included in the WGA-AF647- group. Individual dots in the green channel were detected using a rolling ball filter (1 µm) and spot detection (0.8 µm). To correct for dot clusters arising from the overlap of individual RNAscope-dots, we determined the average intensity of single dots in each slide, and calculated the theoretical number of individual dots in a cluster as the ratio of the cluster intensity and the average intensity of single dots, as outlined in the manufacturers instructions (https://acdbio.com/ebook/introduction/materialsmethod). Cells containing five or more RNAscope dots were considered as positive for the respective TRP channels.
 
-## Statistical analysis
+### Statistical analysis
 
 Data analysis was performed using Origin software (OriginPro 2019b). Shapiro–Wilk test was used to test the normality of the data, determining whether parametric or non-parametric tests were applied. The specific parametric and non-parametric tests that were used are specified in the text and legends. Summary data for parametric datasets are shown as mean + SEM. We used bootstrapping with 10,000 bootstrap resamples to calculate 95% confidence intervals for non-parametric datasets. No statistical methods were used to predetermine the number of animals used in this study; since no a priory data were available for the novel imaging approaches used in this work, a power calculation was not feasible. However, our sample sizes are similar to those generally employed in other studies in the field, and potential limitations due to insufficient power are discussed in the text. Imaging of the DRG and skin preparations and subsequent data analysis were performed by researchers that were blinded for the treatment (vehicle versus CFA).

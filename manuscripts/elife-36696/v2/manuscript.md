@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.36696.001 Expression of histone H3.3K27M mutant proteins in human diffuse intrinsic pontine glioma (DIPG) results in a global reduction of tri-methylation of H3K27 (H3K27me3), and paradoxically, H3K27me3 peaks remain at hundreds of genomic loci, a dichotomous change that lacks mechanistic insights. Here, we show that the PRC2 complex is sequestered at poised enhancers, but not at active promoters with high levels of H3.3K27M proteins, thereby contributing to the global reduction of H3K27me3. Moreover, the levels of H3.3K27M proteins are low at the retained H3K27me3 peaks and consequently having minimal effects on the PRC2 activity at these loci. H3K27me3-mediated silencing at specific tumor suppressor genes, including Wilms Tumor 1, promotes proliferation of DIPG cells. These results support a model in which the PRC2 complex is redistributed to poised enhancers in H3.3K27M mutant cells and contributes to tumorigenesis in part by locally enhancing H3K27me3, and hence silencing of tumor suppressor genes.
+Expression of histone H3.3K27M mutant proteins in human diffuse intrinsic pontine glioma (DIPG) results in a global reduction of tri-methylation of H3K27 (H3K27me3), and paradoxically, H3K27me3 peaks remain at hundreds of genomic loci, a dichotomous change that lacks mechanistic insights. Here, we show that the PRC2 complex is sequestered at poised enhancers, but not at active promoters with high levels of H3.3K27M proteins, thereby contributing to the global reduction of H3K27me3. Moreover, the levels of H3.3K27M proteins are low at the retained H3K27me3 peaks and consequently having minimal effects on the PRC2 activity at these loci. H3K27me3-mediated silencing at specific tumor suppressor genes, including Wilms Tumor 1, promotes proliferation of DIPG cells. These results support a model in which the PRC2 complex is redistributed to poised enhancers in H3.3K27M mutant cells and contributes to tumorigenesis in part by locally enhancing H3K27me3, and hence silencing of tumor suppressor genes.
 
 ## Introduction
 
@@ -40,17 +40,33 @@ Here, we report a surprising observation that the PRC2 complex is sequestered at
 
 ## Results
 
-## H3.3K27M mutant proteins are enriched at highly expressed genes in both DIPG cells as well as mouse ES cells knocked-in with the H3.3K27M mutation
+### H3.3K27M mutant proteins are enriched at highly expressed genes in both DIPG cells as well as mouse ES cells knocked-in with the H3.3K27M mutation
 
 To understand how the reduction of H3K27me3 occurs in DIPG cells, SF7761 and SF8628, which contain a heterozygous mutation at H3F3A gene, replacing H3.3 lysine 27 with methionine (K27M), we analyzed the localization of H3.3K27M mutant proteins using H3K27M-specific antibody (Figure 1—figure supplement 1A). The H3.3K27M mutant proteins were enriched at actively transcribed genes compared to lowly expressed genes in both SF7761 and SF8628 cells (Figure 1A and B), a pattern that is similar to the localization pattern of wild type H3.3 proteins detected in other cell lines (Banaszynski et al., 2013). Under the same conditions, ChIP-seq signals in human neural stem cells (NSCs) with wild type H3 were not detected using the same H3K27M antibodies (Figure 1C), supporting the idea that H3.3K27M ChIP-seq signals detected in SF7761 and SF8628 are specific.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) H3.3K27M mutant proteins are enriched at highly transcribed genes compared to lowly expressed genes in DIPG cells. The average read density of H3.3K27M ChIP-seq in two H3.3K27M mutant lines SF8628 (A) and SF7761 (B), and reference human neuro stem cells (NSC, C) with wild type H3.3 from 10 Kb upstream of TSS to 10 Kb downstream of TES is calculated. The read density was normalized to Reads Per Kilo-base per 10 million mapped reads. The entire human genes were split into three groups according to their expression levels in the corresponding cell lines: highest expressed genes, medium expressed genes, and low expressed genes. (D) H3.3K27M mutant proteins are enriched at highly transcribed genes compared to lowly expressed genes in mouse ES cells. The experiments were performed as described in (A). The entire mouse genes were split into three groups according to their expression levels in wild type mouse ES cells using mouse ES cell gene expression dataset at GEO (GSE8024): high express genes, medium express genes, and low express genes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Antibodies against H3K27M are specific for ChIP analysis. ChIP assays were performed in three cell lines (astrocyte, astrocytes expressing wild type histone H3.3 (H3.3WT) and H3.3K27M mutant proteins (H3.3K27M)) using antibodies against H3K27M. IgG was used as control. The enrichments of H3.3K27M at TM4SF and Olig2 loci were analyzed by real-time PCR. Data are mean ± SD (N = 3 independent replicates). (B) One allele of the H3F3A gene is mutated in two independent mouse ES cell clones. The H3F3A gene locus was amplified by PCR from genomic DNA and then subjected to sanger sequencing. The red arrow indicates the K27M mutation site and blue arrows indicate the synonymous mutations that prevent cutting of donor DNA by the CRISPR/Cas9. The presence of A/T nucleotides indicates the heterozygous H3.3K27M mutations in both clones. (C) The H3.3K27M mutant ES cells show similar alkaline phosphatase staining. Representative images of alkaline phosphatase, which is expressed highly in ES cells but not in differentiated cells, staining of wild type (WT) and two H3.3K27M mutant clones. HeLa cells were used as negative controls. Bar, 200 µm. (D) The karyotypes of each of the two H3.3K27M mutant clones are normal. Representative images of chromosome spread results are shown in the left panel. Quantification results of chromosome numbers from 15 chromosome spread images are shown in the right panel. (E) H3K27me2/me3 is reduced in the H3.3K27M mutant cells. The levels of H3K27me1/me2/me3 in different amount of cell extracts prepared from WT and H3.3K27M mutant clone #1 were analyzed by Western blot. (F) PRC2 complexes show similar levels in wild type and H3.3K27M mutated mouse ES cells. WT mouse ES cells and two independent clones as in (B) were analyzed by Western blot using indicated antibodies. (G) Venn diagram illustration of H3.3K27M peaks in WT and two H3.3K27M mutant mouse ES cell lines.
 
 To gain further insight into the reduction of H3K27me3 by H3.3K27M mutant proteins, we introduced the same heterozygous mutation at the H3F3A gene in mouse ES cells using the CRISPR/Cas9 genome editing technology and isolated two independent clones (Figure 1—figure supplement 1B). We chose mouse ES cells because it is relatively easier to introduce the site-specific mutation. Moreover, the localizations of H3.3 and H3K27me3 have been studied extensively before (Banaszynski et al., 2013; Goldberg et al., 2010). The two H3.3K27M mutant mouse ES cells grew like wild type mouse ES cells and had normal karyotype (Figure 1—figure supplement 1C and D). To analyze the impact of H3.3K27M mutation on H3K27 methylation, we compared the levels of H3K27me1, H3K27me2 and H3K27me3 in wild type and H3.3K27M mutant cells using different amount of extracts (Figure 1—figure supplement 1E). Compared to wild type cells, H3K27me1 was not affected to a detectable degree in H3.3K27M mutant cells under all these conditions, consistent with published study in DIPG cells (Bender et al., 2013). In contrast, H3K27me2 and H3K27me3 levels, while detectable in high amounts of cell extracts, were reduced dramatically in H3.3K27M mutant cells compared to wild type cells. Moreover, the reduction of H3K27me2/me3 in each of the H3.3K27M mutant ES cell clone is unlikely due to the reduced levels of the PRC2 complex (Figure 1—figure supplement 1F).
 
 We next analyzed the chromatin distribution of H3.3K27M using ChIP-seq in wild type and these H3.3K27M mutant mouse ES clones. H3.3K27M ChIP-seq identified 29,424 and 27,048 peaks in H3.3K27M mutant clone #1 and #2, respectively, of which 22,959 peaks overlapped. About 4,555 H3.3K27M false-positive peaks were identified in wild type mouse ES cells and few of these peaks overlapped with H3.3K27M ChIP-seq peaks identified in H3.3K27M mutant cells (Figure 1—figure supplement 1G), further demonstrating the specificity of H3K27M antibodies. H3.3K27M mutant proteins in H3.3K27M mutant ES cells were also enriched at promoters and gene bodies of actively transcribed genes compared to lowly expressed genes (Figure 1D), a pattern that resembles wild type H3.3 in mouse ES cells (Goldberg et al., 2010). Together, these results indicate that H3.3K27M mutant proteins are high at the promoters of actively transcribed genes in both DIPG lines and mouse ES cells with the H3.3K27M mutation. Because the PRC2 complex in general is not localized at highly expressed genes, these results support the idea that the PRC2 complex is unlikely trapped at places with high levels of H3.3K27M mutant proteins and high gene activities (Piunti et al., 2017).
 
-## Ezh2 is redistributed to poised enhancers without methylating H3K27 at these sites in mutant mouse ES cells
+### Ezh2 is redistributed to poised enhancers without methylating H3K27 at these sites in mutant mouse ES cells
 
 To understand how the expression of H3.3K27M mutant proteins results in reduced levels of H3K27me3, we first analyzed Ezh2 and H3K27me3 ChIP-seq peak numbers in wild type and H3.3K27M mutant mouse ES cells, an analysis not feasible for DIPG cells due to a lack of matched controls. We identified 30,295 H3K27me3 ChIP-seq peaks in wild type mouse ES cells, 17,158 peaks in H3.3K27M mutant clone #1 and 16,316 in H3.3K27M mutant clone #2 (Figure 2—figure supplement 1A). Almost all H3K27me3 ChIP-seq peaks in each H3.3K27M mutant lines overlapped with those identified in wild type mouse ES cells (Figure 2A and Figure 2—figure supplement 1A). Moreover, compared to wild type mouse ES cells, H3K27me3 levels at all of these peaks in H3.3K27M mutant lines were reduced (Figure 2—figure supplement 1B). These results indicate that almost all H3K27me3 peaks detected in H3.3K27M mutant mouse ES cells are PRC2 sites in wild type cells, but exhibit reduced levels of H3K27me3 compared to wild type mouse ES cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig2-v2.jpg)
+
+**Figure 2.:** (A) A large fraction of Ezh2 peaks unique in H3.3K27M mutant mouse ES cells was identified. The percentage of peaks (Y-axis) in each category (WT unique peaks, H3.3K27M unique peaks, and overlap peaks) of H3K27me3 and Ezh2 ChIP-seq (X-axis) is shown as indicated. The overlapped H3K27me3 and Ezh2 ChIP-seq peaks from two independent H3.3K27M mutant clones were used for the analysis. Peaks unique in WT: ChIP-seq peaks only identified in WT mouse ES cells but not in each of the two H3.3K27M clones. Peaks unique in H3.3K27M: the peaks are present in both H3.3K27M clones but not in WT mouse ES cells. Common peaks: the peaks present in both WT and two H3.3K27M clones. (B) The Integrative Genomics Viewer (IGV) tracks showing input, Ezh2, H3.3K27M, and H3K27me3 distributions of common Ezh2 peaks and Ezh2 peaks unique in H3.3K27M as in (A) in each of the two H3.3K27M mutant mouse ES clone. (C) Boxplot showing that H3.3K27M mutant proteins are low at common Ezh2 peaks compared to peaks unique in H3.3K27M. P value was calculated by two-tailed Student’s t test. (D) At the Ezh2 peaks unique to H3.3K27M mutant cells, H3K27me3 levels in H3.3K27M mutant cells are low compared to wild type cells. P value was calculated by two-tailed Student’s t test. (E) Heatmap showing genomic annotation of two groups of Ezh2 peaks. The common peaks: Ezh2 peaks present both in WT and H3.3K27M cells. H3.3K27M unique peaks: Ezh2 peaks only present in both two H3.3K27M clones. The peak number in each cluster (N) is indicated. Genomic annotation of each Ezh2 ChIP-seq peaks was performed by Perl (https://www.perl.org/). Black and white represents the presence and absence of the annotated element or histone marks, respectively. Promoter is defined as 2 Kb upstream and 1 Kb downstream of TSS. Bivalent promoters are downloaded from BGDB database (http://dailab.sysu.edu.cn/bgdb/). The histone mark and EP300 ChIP-seq datasets of mouse ES cells are from ENCODE (https://www.encodeproject.org/). (F–G) Ezh2 and H3.3K27M were enriched at the poised enhancers. Ezh2 (F) and H3.3K27M (G) ChIP-PCR results were shown. The enrichment of Ezh2 and H3.3K27M at three poised enhancers, labeled as enhancer 1 to 3, and one strong PRC2 site, Hoxa1, was analyzed by ChIP-PCR. Actin was used as the negative control for the Ezh2 ChIP and Hoxa1 was used as the negative control for the H3.3K27M ChIP. Data are mean ± SD (N = 3 independent replicates, *p<0.05, **p<0.01). (H) Heatmaps showing unsupervised clustering analysis of Ezh2 peaks for the overlap with H3.3K27M and H3K27me3 ChIP-seq in SF8628 as well as for their overlap with promoters, H3K4me1, H3K4me3 and H3K27me3 at NPCs. The histone ChIP-seq datasets for neuro precursor cells (NPC) are from ENCODE (https://www.encodeproject.org/).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Venn diagram illustration of H3K27me3 peaks in the wild type (WT) and two H3.3K27M mutant mouse ES clones and their overlap. The number of peaks identified in each cell line was shown in the key. (B) Compared to WT mouse ES cells, H3K27me3 levels at all peaks in H3.3K27M mutant ES cells were reduced. H3K27me3 ChIP-seq was performed in WT and two H3.3K27M mutant clones spiked-in with chromatin from Drosophila. H3K27me3 peaks were identified and cumulative distribution analysis of the Log2 ratio of H3K27me3 levels between mutant and WT cells (K27M/WT) was shown (X-axis). The percentage of H3K27me3 peaks at each ratio was shown at the Y-axis. Note that the percentage of H3K27me3 peaks reaches 100 with a Log2 ratio of H3K27me3 levels (K27M/WT) less than 0, which indicates the levels of H3K27me3 at all H3K27me3 peaks identified in H3.3K27M mutant ES cells are reduced compared to WT mouse ES cells. (C) Boxplot showing that the enrichments of wild type H3.3 proteins at common Ezh2 peaks found in both WT and H3.3K27M mutant cells are similar to those at Ezh2 peaks unique to H3.3K27M mutant cells. The HA- and EYFP-tagged H3.3 ChIP-seq results were downloaded from GSM423355 and GSM487551, respectively and used for the analysis. P value was calculated by two-tailed Student’s t test. (D) Heatmap of the clustered Ezh2 peaks from Piunti et al. (Piunti et al., 2017) shows their corresponding H3.3K27M and H3K27me3 ChIP-seq signals in SF8628 cells. The analysis was performed as described in Figure 2H and the histone ChIP-seq datasets in NPC are from ENCODE (https://www.encodeproject.org/). The enrichment of H3.3K27M and H3K27me3 could be seen in some groups of genes, which is not seen in Figure 2H. This difference may be due, in part, to the fact that different antibodies were used in these two studies.
 
 Surprisingly, we observed a dramatic increase of the Ezh2 ChIP-seq peak numbers in each of the H3.3K27M mutant clones. Specifically, 40% of the overlapped Ezh2 peaks between two H3.3K27M mutant clones were unique in H3.3K27M mutant mouse ES cells, and were not detected in wild type mouse ES cells using the same cut off. In contrast, the number of H3K27me3 peaks, majority of which overlapped with those in wild type ES cells, is far less in H3.3K27M mutant ES cells (Figure 2A). This result suggests that Ezh2 proteins, most likely the PRC2 complexes, are redistributed to new locations but do not generate new H3K27me3 peaks in H3.3K27M mutant mouse ES cells.
 
@@ -62,37 +78,65 @@ To validate the ChIP-Seq results, we analyzed the enrichments of Ezh2 and H3.3K2
 
 In summary, most H3.3K27M mutant proteins, like wild type H3.3, are enriched at actively transcribed genes where the PRC2 complexes are absent. However, Ezh2, likely other subunits of PRC2 complex, is trapped at poised enhancers where H3.3K27M mutant proteins are detected, albeit at reduced levels compared to actively transcribed genes. This provides an explanation for our previous observation that more Ezh2 proteins were co-purified with H3.3K27M- than wild type H3.3-mononucleosomes (Chan et al., 2013a).
 
-## A subgroup of Ezh2 ChIP-seq peaks co-localizes with H3.3K27M mutant proteins in SF8628 cell line
+### A subgroup of Ezh2 ChIP-seq peaks co-localizes with H3.3K27M mutant proteins in SF8628 cell line
 
 The absence of matched control of DIPG lines precluded us from finding whether Ezh2 is also redistributed to poised enhancer using the same method utilized in mouse ES cells. Therefore, we used 16,656 Ezh2 ChIP-seq peaks identified in DIPG line, SF8628, and performed unsupervised clustering analysis on their overlaps with H3.3K27M and H3K27me3 peaks in DIPG cells as well as their overlap with H3K4me1, H3K4me3 and H3K27me3 and annotated promoters in human neuro precursor cells (NPCs). We observed that Ezh2 peaks were separated into five different clusters (Figure 2H). Cluster 1 and 2 Ezh2 peaks overlapped with H3K27me3 and low levels of H3.3K27M mutant proteins in SF8628 cells. Ezh2 peaks in Cluster 1 and 2 also overlapped with promoters and H3K27me3 in human NPCs, consistent with the idea that these Ezh2 and H3K27me3 peaks likely represent Ezh2 peaks commonly found in tumor-initiating cells before the introduction of H3.3K27M mutation. Interestingly, the other three clusters of Ezh2 peaks overlapped with H3.3K27M mutant proteins, but with very low levels of H3K27me3. Analysis of Ezh2 and H3.3K27M mutant protein peaks in SF8628 cells using the published datasets (Piunti et al., 2017) also identified a group of Ezh2 peaks that co-localize with H3.3K27M mutant proteins, but with very low levels of H3K27me3 (Figure 2—figure supplement 1D). The Ezh2 peaks that co-localized with H3.3K27M mutant proteins were at regions marked by histone marks for weak promoters and/or poised enhancers in the reference human NPCs (Figure 2G and Figure 2—figure supplement 1D). Taken together, these results support the idea that the PRC2 complex is likely also redistributed to poised enhancers in DIPG cells, providing a mechanistic explanation for the global reduction of H3K27 methylation in cells expressing H3.3K27M mutant proteins.
 
-## A fraction of H3K27me3 ChIP-seq peaks is conserved among DIPG patient tissue and two DIPG lines with the H3.3K27M mutation
+### A fraction of H3K27me3 ChIP-seq peaks is conserved among DIPG patient tissue and two DIPG lines with the H3.3K27M mutation
 
 In addition to the global reduction of H3K27 methylation, we and others paradoxically observed the enrichment of H3K27me3 within the promoters of hundreds of genes in the DIPG cell line (SF7761) harboring the H3.3K27M mutation (Bender et al., 2013; Chan et al., 2013a; Lewis et al., 2013). To determine whether the genes associated with locus-specific H3K27me3 are common in other DIPG tumor lines and in primary DIPG tissues, we analyzed H3k27me3 ChIP-seq in another DIPG xenograft cell line (SF8628), and one DIPG tissue sample from a surgical specimen with H3.3K27M mutation. The presence of H3K27M mutant proteins in the DIPG tissue was confirmed through Western blot (Figure 3—figure supplement 1A). We identified 2,356 H3K27me3 ChIP-seq peaks in SF7761, 5080 peaks in SF8628 and 12,033 peaks in DIPG patient tissue. When normalized against spike-in chromatin, the majority of these peaks exhibited reduced H3K27me3 levels compared to the reference human NSCs or reference brain tissue from a gliosis patient (Figure 3—figure supplement 1B and Supplementary file 1). About 9% of H3K27me3 ChIP-seq peaks identified in SF7761 or SF8628, and 6% of H3K27me3 peaks in primary DIPG tissue exhibited an increased level of H3K27me3 compared to the reference cells or reference brain tissue, respectively (Figure 3—figure supplement 1C). Importantly, of all the promoters with H3K27me3 ChIP-seq peaks, 676 promoters overlapped among these three samples (Figure 3A and B), which also overlapped with the ones associated with increased H3K27me3 peaks identified in the H3.3K27M transformed human NPCs (Funato et al., 2014) (Figure 3—figure supplement 1D). Finally, H3K27me3 surrounding the transcription start site (TSS) exhibited a similar pattern among the DIPG cell lines and the primary DIPG tissue (Figure 3—figure supplement 1E and F). These results indicate that a fraction of H3K27me3 peaks is likely conserved among DIPG samples with the H3.3K27M mutation.
 
-## Low levels/absence of H3.3K27M mutant proteins at PRC2 sites helps retain H3K27me3 peaks in mouse ES cells and in DIPG cells with the H3.3K27M mutation
+![Figure 3.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative Integrative Genomics Viewer shows the distribution of H3K27me3 in two DIPG cancer cell lines (SF7761 and SF8628) and one DIPG primary tissue. RefSeq genes are shown at the bottom. (B) Venn diagram illustration represents the promoters with H3K27me3 peaks among SF7761, SF8628, and DIPG tissue. (C–E) Boxplot showing that H3.3K27M mutant proteins at gene promoters with the least reduced H3K27me3 are low compared to those with the most reduced H3K27me3 in H3.3K27M mutant mouse ES cells. Base on the average ratio of H3K27me3 ChIP-seq read density in H3.3K27M cells (C), H3K27me3 peaks in H3.3K27M mutant cells were separated into two groups, the most and least reduced, used to calculate the average read density of H3.3K27M ChIP-seq (D), and the read density of H3K27me3 ChIP-seq in WT cells (E). P value was calculated by two-tailed Student’s t test. (F–I) The levels of H3K27me3 and H3.3K27M show an inverse-relationship in DIPG cells. 4195 and 3568 promoters with H3K27me3 ChIP-seq peaks were identified in ‘tumour-initiating cells’ for SF8628 and SF7761, respectively, before introducing the H3.3K27M mutation (see Figure 3—figure supplement 2 for details). Based on the average H3K27me3 ChIP-seq read density in either SF8628 or SF7761 line, these promoters were separated into two groups, promoters with the highest H3K27me3 and promoters with lowest H3K27me3 in each line and used to calculate H3K27me3 read density and H3.3K27M read density in each line independently. P value was calculated by two-tailed Student’s t test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The level of H3K27me3 is reduced dramatically in H3.3K27M cell line PED8 and in two distinct regions of a DIPG primary tissue. Primary tissues from a patient autopsy sample were separated into left and right Pons. MCF7 cells (the breast cancer cells) were used as a negative control. H3K27M proteins were detected by Western blot using antibodies against H3K27M. (B) Compared to the reference human NSC or H3 wild type control gliosis tissue, a fraction of H3K27me3 peaks exhibits an increased level of H3K27me3 while most others are reduced in DIPG cells and primary DIPG tissues. H3K27me3 ChIP-seq was performed in cell lines (SF7761, SF8628, and NSC) and tissues (gliosis and DIPG tissue) with spiked-in chromatin from Drosophila or sf9 cells. H3K27me3 peaks were identified and cumulative distribution analysis of the Log2 ratio of the H3K27me3 levels between DIPG cells and the reference NSC or between the DIPG tissue and gliosis tissue was shown (X-axis). (C) The percentage of H3K27me3 peaks that had higher H3K27me3 levels in H3.3K27M DIPG cells or tissue than the corresponding reference cells was shown. (D) Venn diagram illustration of genes with H3K27me3 peaks obtained through the transformation of human NPCs by p53 knockdown, expression of PDGFRA mutation and H3.3K27M as well as those identified from SF8628, SF7761 and DIPG tissues. The H3K27me3 ChIP-seq dataset in NPCs was from Funato et al. (Funato et al., 2014). The gene promoters with H3K27me3 peaks in all of SF8628, SF7761 and DIPG tissues were used for comparison. (E) Heatmaps represent the signal of H3K27me3 from 10 Kb up- to 10 Kb down-stream of TSS of 676 genes identified in Figure 3B. (F) A genome browser track example for the H3K27me3 occupancy at Wilms Tumor 1 (WT1) locus in the two DIPG line and tissue.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The diagram shows how gene promoters with H3K27me3 were identified in tumor-initiating cells of SF8628 (A) and SF7761 (B). Based on the average level of H3K27me3 at these gene promoters, gene promoters were separated into two groups, those with high levels of H3K27me3 and those with low levels of H3K27me3 in each cell line. The enrichment of H3K27me3 and H3.3K27M mutant proteins in each H3.3K27M mutant line at these two group of gene promoters was calculated as shown in Figure 3F–3I. The promoters with H3K27me3 ChIP-seq peaks overlapped in both control cells (NSC and NPC) were chosen to potentially increase the stringency of peak identification.
+
+### Low levels/absence of H3.3K27M mutant proteins at PRC2 sites helps retain H3K27me3 peaks in mouse ES cells and in DIPG cells with the H3.3K27M mutation
 
 To understand how H3K27me3 peaks are retained in the environment of the global reduction of H3K27 methylation in cells with H3.3K27M mutant proteins, we analyzed the properties of H3K27me3 peaks in mutant mouse ES cells because of the presence of matched control of wild type ES cells. To do this, we first divided H3K27me3 peaks into two groups, most reduced and least reduced, based on the average levels of H3K27me3 in both H3.3K27M mutant mouse ES clones (Figure 3C). We then compared the average H3.3K27M ChIP-seq reads density between these two groups of gene promoters in H3.3K27M mutant cells. The gene promoters with the least reduced H3K27me3 had lower levels of H3.3K27M mutant proteins than those with most reduced H3k27me3 in mutant cells (Figure 3D). Moreover, we also compared the H3K27me3 ChIP-seq read density at the promoters of these two groups of genes in wild type ES cells (Figure 3E) and found that gene promoters with the least reduced H3K27me3 in H3.3 K27M mutant cells had higher levels of H3K27me3 in wild type cells than the gene promoters with the most reduced H3K27me3. Together, these results support the idea that the presence of H3K27me3 peaks in H3.3K27M mutant cells is likely due to two non-exclusive possibilities, high levels of H3K27me3 at these sites before the introduction of H3.3K27M mutant proteins and low levels of H3.3K27M mutant proteins assembled to these sites after expression of H3.3K27M mutant proteins.
 
 Next, we analyzed whether similar observations hold true for the observed H3K27me3 peaks in DIPG tumor line, SF8628 and SF7761. Because vast difference in the number of H3K27me3 peaks was identified between these two samples, we analyzed H3K27me3 and H3.3K27M datasets from each line independently. To do this, we need to identify the PRC2 sites in ‘tumor-initiating cells’ of each DIPG line before the introduction of H3.3K27M mutant proteins. Because the expression of H3.3K27M in human NPCs resulted in neoplastic transformation (Funato et al., 2014), and mouse NSCs are proposed to be the cell origin of DIPG (Monje et al., 2011), we hypothesize that human NSCs or NPCs are ‘tumor-initiating cells’ of DIPG. We used two H3K27me3 ChIP-seq datasets, one from human NSCs that we generated (Chan et al., 2013a), and one from human NPCs downloaded from GEO (GSM896165) and identified 3212 overlapped H3K27me3 ChIP-seq peaks at promoters (Figure 3—figure supplement 2A). Because NPCs and NCSs are not matched controls for DIPG tumor-initiating cells, we also included H3K27me3 ChIP-seq peaks unique in SF8628 or SF7761 compared to NSCs or NPCs for the analysis. In total, 4,195 H3K27me3 peaks were identified and assumed to be present in ‘tumor-initiating cells’ of SF8628 before the introduction of H3.3K27M mutant proteins. We then divided the 4195 H3K27me3 promoters into two groups, high and low, based on the average levels of H3K27me3 at these gene promoters in SF8628 cell line, and compared the levels of H3.3K27M mutant proteins between these two groups of gene promoters (Figure 3F). We observed that the H3.3K27M mutant proteins were lower at the gene promoters with high levels of H3K27me3 than those with low levels of H3K27me3 (Figure 3G). Analysis of the H3K27me3 and H3.3K27M datasets obtained in SF7761 supported the same conclusion (Figure 3H and I and Figure 3—figure supplement 2B). These results suggest that the absence or low levels of H3.3K27M mutant proteins at the promoters with H3K27me3 help retain H3K27me3 at these genes, providing an explanation for the retention of H3K27me3 in cells expressing H3.3K27M mutant proteins.
 
-## Many putative TSGs are silenced in DIPG cells likely through the H3K27me3-mediated mechanism
+### Many putative TSGs are silenced in DIPG cells likely through the H3K27me3-mediated mechanism
 
 Silencing of tumor suppressor gene (TSG) p16 in DIPG cells by H3K27me3 and the PRC2 is important for tumorigenesis (Cordero et al., 2017; Mohammad et al., 2017; Piunti et al., 2017). Because we have identified 676 genes with H3K27me3 peaks in three samples (SF8628, SF7761 and the primary DIPG tissue), we asked whether any of these genes are TSGs. Based on the annotation of three different databases, we found that 80 of the 676 genes are TSGs (Figure 4—figure supplement 1A). To identify the candidate TSGs whose silencing is important for the proliferation of DIPG cells, we focused on the analysis of 12 putative TSGs including p16 that showed the lowest expression in SF7761 and SF8628 cells based on RNA-seq datasets we collected (Chan et al., 2013a). First, we tested their expression levels in 5 DIPG lines (SF8628, SF7761, DIPG17, DIPG13, and PED8) with H3.3K27M mutation, one DIPG line with H3.1K27M mutation (DIPG4), one brain tumor line with H3.3G34V mutation (KNS42) and one high grade glioma cell line with wild type H3.3 (SF9427) by RT-PCR. While the expression of these 12 genes in all these tumor lines was low in general, clustering analysis showed that the expressions of NGFR, WT1 and MME were lowest among these 12 genes in these tumor cells, irrespectively mutation status of histone H3, when compared with human NSCs (Figure 4A). Moreover, the involvement of these genes in DIPG tumors has not been reported before. Therefore, we focused our analysis on the three genes with lowest expression levels.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig4-v2.jpg)
+
+**Figure 4.:** (A) Analysis of expression levels of 12 different tumor suppressor genes (TSGs) in different DIPG lines and human NSC. Expressions of 12 different TSGs in tumor lines, with the mutation status of histone H3 shown at the bottom, were analyzed by quantitative RT-PCR and clustered hierarchically. Data are mean (N = 3 independent replicates). (B) Depletion of Suz12 increases the expression of WT1 in DIPG lines. The expression levels of three most silenced TSGs as well as p16 were analyzed in two H3.3K27M mutant tumor cells (SF7761 and SF8628) after depletion of Suz12. Data are mean ± SD (N = 3 independent replicates, **p<0.01). (C) Box plot of gene expression levels of WT1 in DIPG with H3.3K27M (n = 37) and non-brainstem pediatric high-grade glioma (NBS-HGG) with wild type H3.3 (n = 58) tumor tissues (Wu et al., 2014). P value was calculated by two-tailed Student’s t test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A diagram shows how the candidate TSGs were identified. Combining TSGs listed in three datasets, 1,245 TSGs were identified. Based on H3K27me3 ChIP-seq in two DIPG cell lines (SF7761, SF8628) and one DIPG tissue, 676 gene promoters with H3K27me3 peaks in all three samples were identified, of which 80 are TSGs. The p value for the overlap was calculated by Fisher’s test. (B and C) H3K27me3 and Ezh2 were enriched at the WT1 promoter in multiple tumor lines. H3K27me3 (B) and Ezh2 (C) ChIP-PCR results were shown. hNSC: human neural stem cells. SF9427: a high grade glioma cell line with wild type H3.3. DIPG4 is a DIPG line with the H3.1K27M mutation, and PED8, DIPG13, DIPG17, SF7761 and SF8628 are DIPG cell lines with H3.3K27M mutation (See Supplementary file 1). Data are mean ± SD (N = 2 independent replicates). (D) Box plot of gene expression levels of p16, MME and NGFR in DIPG with H3.3K27M (n = 37) and non-brainstem pediatric high-grade glioma (NBS-HGGs) with wild type H3.3 (K27WT, n = 58). The RNA-seq datasets of these tumor tissues are from public datasets (Wu et al., 2014). P value was calculated by two-tailed Student’s t test. N.S., Not Significant.
 
 Next, we analyzed the enrichment of H3K27me3 and Ezh2 at the promoters of NGFR, WT1 and MME in these cell lines and human NSCs, and observed that H3K27me3 and Ezh2 were enriched at the promoters of WT1 promoter more than other two gene promoters in all these tumor lines tested (Figure 4—figure supplement 1B and C). We also evaluated the effect of Suz12 depletions on the expression of these three genes as well as p16 in two DIPG lines (SF7761 and SF8628). Depletion of Suz12 using two independent shRNAs resulted in increased expression of all these four genes in two DIPG lines tested (Figure 4B). Together, these results indicate that in addition to p16, the PRC2 complex is involved in silencing of multiple TSGs in DIPG tumor cells.
 
 Finally, we analyzed the expression of p16, NGFR, WT1 and MME in 37 DIPG patient samples with H3.3K27M mutation and 58 non-brainstem pediatric high-grade glioma (NBS-HGG) samples with wild type H3.3 using the public database (Wu et al., 2014). The expression of WT1 and p16 was significantly lower in DIPG tumor samples than NBS-HGG samples (Figure 4C). In contrast, the expressions of NGFR or MME were similar between DIPG and NBS-HGG samples (Figure 4—figure supplement 1D). These results indicate that in addition to p16, WT1, a TSG first discovered in the pediatric kidney tumor, Wilms Tumor (Gessler et al., 1990; Maiti et al., 2000), is also silenced by the H3K27me3-mediated mechanisms in DIPG tumors.
 
-## Forced expression of WT1 inhibits the proliferation of H3.3K27M mutant cells
+### Forced expression of WT1 inhibits the proliferation of H3.3K27M mutant cells
 
 Next, we asked whether forced expression of WT1 affected the proliferation of DIPG cells. We used two methods to increase WT1 expression. First, we overexpressed each of the four different isoforms of WT1 in H3.3K27M mutant cells (SF7761 and SF8628) and H3.3 wild type cells (SF9427), and found that the expression of each WT1 isoform inhibited the proliferation of two H3.3K27M mutant cells, but not H3.3 wild type cells (SF9427) (Figure 5—figure supplement 1A and B), suggesting that reduced levels of WT1 are more important for the proliferation of these two DIPG lines than SF9427 cells. Second, we tested whether alterations in chromatin states of the WT1 promoter by targeting p300 using CRISPR/dCas9 (catalytic dead Cas9) would also change the expression of WT1 and cell proliferation. We targeted dCas9-HA and dCas9-HA fused with p300 catalytic domain (dCas9-HA-p300-HA) to the WT1 promoter in SF8628 cells using two independent sgRNAs (Figure 5—figure supplement 1C). The dCas9-HA and dCas9-HA-p300-HA were enriched at the WT1 promoter only when they were co-expressed with either of the two sgRNAs. Moreover, dCas9-HA and dCas9-HA-p300-HA were not at the promoter of CDK6 isoform NM_001145306 (Figure 5A). Importantly, targeting dCas9-HA-p300-HA, but not dCas9-HA alone to the WT1 promoter led to a reduction of H3K27me3 and Ezh2 as well as an increase of H3K27ac at the WT1 promoter (Figure 5A). Finally, the expression level of WT1 increased (Figure 5B) and the proliferation of SF8628 cells was inhibited (Figure 5C) when targeting dCas9-HA-p300-HA, but not dCas9-HA alone, to the WT1 promoter. Together, these results show that forced increase in H3K27ac at the WT1 promoter in SF8628 cells leads to reduced H3K27me3, increased expression of WT1 and decreased proliferation of DIPG cells, supporting the idea that H3K27me3-mediated silencing of WT1 supports the proliferation of DIPG cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig5-v2.jpg)
+
+**Figure 5.:** (A) Targeting p300 to the WT1 promoter results in an increase in H3K27ac and a reduction of H3K27me3. Top: a schematic strategy for targeting dCas9-HA-p300-HA fusion proteins to the promoter of WT1. ChIP-PCR analysis of dCas9-HA and dCas9-HA-p300-HA fusion proteins (first panel), H3K27me3 (second panel), Ezh2 (third panel), and H3K27ac (last panel) at the promoter of WT1 was performed using SF8628 cells transfected with indicated combinations of dCas9-HA, dCas9-HA-p300-HA and two different sgRNAs targeting to the WT1 promoter. Data are mean ± SD (N = 3 independent replicates, **p<0.01). (B) The expression of WT1 increases after targeting dCas9-HA-p300-HA to the WT1 promoter. The expression of WT1 was analyzed by quantitative RT-PCR. Data are mean ± SD (N = 3 independent replicates, **p<0.01). (C) SF8628 cell proliferation is inhibited by targeting dCas9-HA-p300-HA to the WT1 promoter. Data are mean ± SD (N = 3 independent replicates, **p<0.01). (D) A model for reduction and retention of H3K27me3 in cells with H3.3K27M mutation. In wild type cells, the PRC2 complex co-localizes with H3K27me3 peaks at the major PRC2 sites. Since these genes are silenced, the levels of H3.3 are low. Poised enhancers contain low levels of H3K27me3, PRC2 complex and H3.3. In H3.3K27M mutant cells, the PRC2 complexes, once recruited to the poised enhancers, are trapped there, likely due to higher concentration of H3.3K27M mutant proteins at poised enhancers. This will lead to a reduction of the PRC2 complex at strong PRC2 sites and a global reduction of H3K27me3. However, the amount of H3.3K27M mutant proteins at major PRC2 sites are low and thus having limited effect on the ability of the PRC2 complex, which is at reduced levels compared to wild type cells, to methylate H3K27.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36696/elife-36696-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Cell proliferations of two DIPG cell lines were inhibited by overexpression of different WT1 isoforms. The expression of different Flag-tagged WT1 isoforms in two DIPG lines (SF7761 and SF8628) and one tumor line with wild type H3.3 (SF9427) was analyzed by Western blot using the indicated antibodies (A). Cell proliferation at different days of WT1 expression was monitored by cell titer-blue assay (B). Data are mean ± SD (N = 3 independent replicates, **p<0.01). (C) Expression of dCas9-HA and dCas9-HA-p300-HA does not affect the total level of H3K27ac in cells. dCas9-HA and dCas9-HA-p300-HA were over-expressed in SF8628 cells and total levels of H3K27ac in whole cell extracts were analyzed by Western blot.
 
 ## Discussion
 
 It remains in a debate on how the expression of H3.3K27M mutant proteins leads to a global reduction of H3K27me3 in DIPG cells as well as in any cell types expressing the H3.3K27M mutant protein. Using mouse ES cells knocked-in with the same H3.3K27M mutation found in most DIPG lines, we observed that Ezh2, most likely the PRC2 complex, is redistributed to poised enhancers containing both H3K4me1 and low levels of H3K27me3, but not at promoters or gene bodies of highly transcribed genes where H3.3K27M mutant proteins are high. In DIPG cells, we also observed that a group of Ezh2 peaks co-localizes with H3.3K27M mutant proteins, likely also at poised enhancers. These results support a model whereby some PRC2 molecules are sequestered at these gene regulatory elements. Because the expression of key subunits of the PRC2 complex is not affected in H3.3K27M mutant cells, we suggest that the sequestration of PRC2 complex at these poised enhancers contributes to the global reduction of H3K27me3 in cells expressing H3.3K27M mutant proteins (Figure 5D). We also observed that H3.3K27M mutant proteins are low at gene promoters with high H3K27me3 in H3.3K27M mutant mouse ES cells as well as DIPG cells. These results indicate that low levels or absence of H3.3K27M mutant proteins contributes to the retention of H3K27me3 at these sites. Finally, we show that WT1 is silenced through the H3K27me3-mediated mechanism, and forced expression of WT1 inhibits the proliferation of DIPG cells. Together, these studies provide the mechanistic insight into reprograming H3K27me3 by H3.3K27M mutant proteins and identify a novel TSG that is silenced in DIPG tumor cells for the proliferation of tumor cells.
 
-## How are the PRC2 complexes redistributed to poised enhancers?
+### How are the PRC2 complexes redistributed to poised enhancers?
 
 How H3.3K27M mutant proteins affect H3K27me3 levels in cells remain in a debate (Chan et al., 2013a; Justin et al., 2016; Lewis et al., 2013; Piunti et al., 2017). Using mouse ES cells knocked-in with the H3.3K27M mutation found in DIPG cells, we observed that H3.3K27M mutant proteins are enriched at actively transcribed genes where H3K27me3 and PRC2 are absent. In addition, Ezh2 proteins are detected at many more loci in H3.3K27M mutant than wild type ES cells. These Ezh2 peaks unique in H3.3K27M mutant ES cells are enriched with poised enhancers as well as H3.3K27M mutant proteins compared to those Ezh2 peaks commonly found in both wild type and H3.3K27M mutant ES cells. These results support the model that the PRC2 complex is redistributed to poised enhancers in H3.3K27M mutant ES cells. Because the total levels of the PRC2 complex are not altered in H3.3K27M mutant ES cells, the enrichment of the PRC2 complex at poised enhancers will lead to the reduced amounts of the PRC2 complex to methylate the PRC2 sites. While we do not have a perfect control for our analysis of DIPG cells, we also found that a group of Ezh2 peaks co-localize with H3.3K27M mutant proteins in DIPG line SF8628 based on analysis of Ezh2 and H3.3K27M ChIP-seq datasets from ours and published ones. These results indicate that the reduction of H3K27me3 in cells expressing H3.3K27M mutant proteins including DIPG cells is likely due, at least in part, to the redistribution of the PRC2 complex to poised enhancers.
 
@@ -102,13 +146,13 @@ While our manuscript is under revision, it has been observed that the residence 
 
 About 20% DIPG tumors contain the mutation at genes encoding histone H3.1 (Nikbakht et al., 2016). H3.1 is assembled into nucleosomes through DNA replication-coupled nucleosome assembly. Moreover, H3.1 is predominantly localized at heterochromatin, which is in contrast to H3.3 localization at genic regions. Therefore, it would be interesting to determine how Ezh2 and PRC2 complex are distributed in cells expressing the H3.1K27M mutant protein in the future. In addition to H3.3K27M mutation, cells containing H3.3K36M mutation found in chondroblastoma exhibit a global reduction of H3K36 methylation (Fang et al., 2016; Lu et al., 2016). We have shown that H3.3K36M mutant proteins are enriched at gene bodies of actively transcribed genes. The present study also begs the questions on whether the H3K36 methyltransferases are also redistributed in H3.3K36M mutant cells and contribute to the reduction of H3K36 methylation.
 
-## Mechanism for the retention of H3K27me3 in DIPG cells
+### Mechanism for the retention of H3K27me3 in DIPG cells
 
 We and others also observed that H3K27me3 peaks were present at hundreds of loci based on the analysis of H3K27me3 ChIP-seq (Bender et al., 2013; Chan et al., 2013a). In this study, we further confirm the dichotomous changes of H3K27me3 in one primary DIPG tumor sample. Importantly, we show that a significant number of gene promoters with H3K27me3 is common among three DIPG samples analyzed (Figure 3B). In H3.3K27M mutant mouse ES cells, almost all retained H3K27me3 ChIP-Seq peaks are also found in wild type mouse ES cells, but at a reduced level compared to wild type mouse ES cells. These results suggest that these H3K27me3 peaks in the mutant mouse ES cells are the bona fide PRC2 sites. H3.3K27M mutant proteins at H3K27me3-containing loci are either absent or at very low levels in both mouse ES cells and DIPG cells. In vitro, H3.3K27M mutant proteins inhibit the activity of the PRC2 complex. Similarly, replacement of other histone lysine residues to methionine such as H3K9 and H3K36 also inhibits the enzymatic activity of their corresponding lysine methyltransferase in vitro (Fang et al., 2016; Herz et al., 2014; Jayaram et al., 2016; Lu et al., 2016; Shan et al., 2016). In fission yeast, overexpression of Clr4, the H3K9 methyltransferase, overcomes the inhibition of H3K9M mutant proteins on H3K9me3 (Shan et al., 2016). Thus, the absence of or a low level of H3.3K27M mutant proteins at the gene promoters with H3K27me3 may be insufficient to inhibit the enzymatic activity of the PRC2 complex, leading to the retention of H3K27me3 at these sites (Figure 5D).
 
 It is known that high levels of H3.3 are enriched at highly transcribed genes compared to lowly expressed genes (Chow et al., 2005; McKittrick et al., 2004; Schübeler et al., 2004; Stroud et al., 2012). H3.3K27M mutant proteins exhibit the same localization pattern in two DIPG lines as well as in H3.3K27M mutant mouse ES cells. We suggest that low levels of H3.3K27M mutant proteins detected at these gene promoters of strong PRC2 sites are likely due to the low expression level of these PRC2 regulated genes.
 
-## Epigenetic silencing of WT1 is important for the proliferation of DIPG cells
+### Epigenetic silencing of WT1 is important for the proliferation of DIPG cells
 
 Genetic studies using mouse models indicate that Ezh2 is required for both the initiation and maintenance of tumors (Mohammad et al., 2017), demonstrating the importance of the retention/gain H3K27me3 in tumorigenesis. Moreover, it has been shown that p16 is repressed through H3K27me3-mediated silencing (Mohammad et al., 2017; Piunti et al., 2017). In agreement with their studies, we also observed that depletion of Suz12 results in increased expression of p16. We extend this observation and show that WT1 is silenced through the H3K27me3-mediated mechanism and WT1 silencing is important for the proliferation of DIPG cells. Like p16, the expression of WT1 is low in DIPG tumor samples compared to NBS-HGG samples with wild type H3.3. WT1 is a zinc finger transcription factor (Bardeesy and Pelletier, 1998). It was first identified as a TSG in Wilms tumor, a tumor also found exclusively in children (Gessler et al., 1990; Maiti et al., 2000). Accumulating evidence suggests that WT1 is also expressed in many different classes of intracranial tumors, including gliomas (Izumoto et al., 2008), oligodendrogliomas (Rauscher et al., 2014), ependymomas (Yeung et al., 2013), and meningiomas (Iwami et al., 2013) and functions as an oncogene in these tumors. We suggest that H3K27me3 and the PRC2 likely silence multiple TSGs including p16 and WT1 for the initiation and maintenance of DIPG tumors.
 
@@ -118,42 +162,220 @@ The dichotomous change in H3K27me3 in DIPG cells is reminiscent of DNA methylati
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SF7761</td>
+      <td>PMID: 23603901</td>
+      <td>RRID:CVCL_IT45</td>
+      <td>Growth in neural stem cell media as neurosphere</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SF8628</td>
+      <td>PMID: 25401693</td>
+      <td>RRID:CVCL_IT46</td>
+      <td>Growth in DMEM as monolayer</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>KNS42</td>
+      <td>PMID: 25401693</td>
+      <td>RRID:CVCL_0378</td>
+      <td>Growth in DMEM as monolayer</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SF9427</td>
+      <td>PMID: 25401693</td>
+      <td></td>
+      <td>Growth in DMEM as monolayer</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>PED8</td>
+      <td>PMID: 26376656</td>
+      <td></td>
+      <td>Growth in neural stem cell media as neurosphere</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27me3</td>
+      <td>Cell Signaling</td>
+      <td>C36B11, RRID:AB_2616019</td>
+      <td>1.4 µg for ChIP, 1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ezh2</td>
+      <td>Cell Signaling</td>
+      <td>5246, RRID:AB_10694683</td>
+      <td>5 µg for ChIP, 1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Suz12</td>
+      <td>Cell Signaling</td>
+      <td>3737S, RRID:AB_2196850</td>
+      <td>1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27ac</td>
+      <td>Abcam</td>
+      <td>ab4729, RRID:AB_2118291</td>
+      <td>2 µg for ChIP, 1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K4me1</td>
+      <td>Abcam</td>
+      <td>ab8895, RRID:AB_306847</td>
+      <td>2 µg for ChIP, 1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin</td>
+      <td>Sigma</td>
+      <td>T9026, RRID:AB_477593</td>
+      <td>1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG</td>
+      <td>Sigma</td>
+      <td>F1804, RRID:AB_262044</td>
+      <td>2 µg for ChIP, 1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27M</td>
+      <td>Millipore</td>
+      <td>ABE419, RRID:AB_2728728</td>
+      <td>2 µg for ChIP, 1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA</td>
+      <td>This study</td>
+      <td>12CA5</td>
+      <td>2 µg for ChIP, 1:1000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3</td>
+      <td>PMID: 23603901</td>
+      <td></td>
+      <td>1:10000 for Western blot</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand kit</td>
+      <td>Invitrogen</td>
+      <td>18080–051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QiaQuick PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ssoAdvanced Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>1725274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cell titer blue assay kit</td>
+      <td>Promega</td>
+      <td>G8081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>PMID: 22388286</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>PMID: 18798982</td>
+      <td>RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools</td>
+      <td>PMID: 20110278</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The patient-derived cell lines SF7761 and SF8628 harboring the histone H3.3 K27M mutation were used as described before. Briefly, SF7761 cells were cultured in human neural stem cells media and formed neurosphere. SF8628 cells were cultured as adherent monolayer cells in DMEM media (Chan et al., 2013a). KNS42 and SF9427 were cultured as previously described (Hashizume et al., 2014). DIPG4, DIPG13, and DIPG17 were kind gifts from Dr. Michelle Monje (Stanford University School of Medicine). PED8 was generated at Mayo Clinic by Dr. David Daniels as described (Zhang et al., 2016). Human neural stem cells (Cat.# N7800-100) were purchased from Invitrogen. HEK293T cells were purchased from ATCC.
 
 Cell lines with H3.3K27M mutation used in this study were identified by PCR and sequencing. Mouse ES cells were analyzed with stemness by testing the expression of OCT4, Sox2, and Nanog, as well as alkaline phosphatase staining. In addition, mouse ES cells were analyzed with karyotyping and showed normal karyotype. All cell lines were tested negative for mycoplasma using a qPCR-based testing with mixed primers: 5’-cgcctgagtagtacgttcgc-3’, 5’-cgcctgagtagtacgtacgc-3’, 5’-tgcctgggtagtacattcgc-3’, 5’-tgcctgagtagtacattcgc-3’, 5’-cgcctgagtagtatgctcgc-3’, 5’-cgcctgggtagtacattcgc-3’, 5’-gcggtgtgtacaagacccga-3’, 5’-gcggtgtgtacaaaacccga-3’, 5’-gcggtgtgtacaaaccccga-3’. None of the cell lines used in this study were included in the list of commonly misidentified cell lines maintained by International Cell Line Authentication Committee.
 
-## Antibodies
+### Antibodies
 
 Antibodies against H3K27me3 (Cat.# 9733), Ezh2 (Cat.# 5246), and Suz12 (Cat.# 3737) were purchased from Cell Signaling. Antibodies against H3K27ac (Cat.# ab4729) and H3K4me1 (Cat.# ab8895) were purchased from Abcam. Antibodies against α-Tubulin (Cat.# T9026) and FLAG (Cat.# F1804) were purchased from Sigma. Antibody against H3K27M (Cat.# ABE419) was purchased from Millipore. Antibodies against the HA epitope (Clone No. 12CA5) and histone H3 were previously described (Chan et al., 2013a; Han et al., 2013).
 
-## Oligonucleotides used
+### Oligonucleotides used
 
 See Supplementary file 1 for oligonucleotides used.
 
-## Cell proliferation assays
+### Cell proliferation assays
 
 3 × 103 cells were plated in each well of 96-well plate with 100 μL of growth medium. Relative amounts of cells at the time after seeding were measured by the cell titer blue assay kit (Promega, Cat.# G8081).
 
-## Reverse transcription (RT)-PCR
+### Reverse transcription (RT)-PCR
 
 Total RNA was extracted using the RNeasy plus kit (Qiagen, Valencia, CA). cDNAs were synthesized using 0.5 μg of total RNA, random hexamers and Superscript III Reverse Transcriptase. Real-time PCRs were performed with 0.1 μM primers and SYBR Green PCR Master Mix (Bio-Rad). β-actin was used as a control to normalize the expression of target genes.
 
-## Chromatin immunoprecipitation-deep sequencing (ChIP-seq) and ChIP-PCR
+### Chromatin immunoprecipitation-deep sequencing (ChIP-seq) and ChIP-PCR
 
 To prepare ChIP-seq samples for frozen tissues, samples were cut into 50 mg aliquots and homogenized on ice for 30 s in 500 μl 1X PBS. Cells or tissue homogenates were crosslinked with 1% formaldehyde for 10 mins and then quenched with 125 mM glycine for five mins at room temperature. Samples were washed with cold TBS twice before resuspended in cell lysis buffer (10 mM Tris-HCl, pH7.5, 10 mM NaCl, 0.5% NP-40) and incubated on ice for 10 mins. Lysates were washed and resuspended in 500 μl Mnase digestion buffer (20 mM Tris-HCl, pH 7.5, 15 mM NaCl, 60 mM KCl, 1 mM CaCl2) in the presence of 1000 units of Mnase (NEB, Cat.# M0247S). After 20 mins incubation at 37°C with continuous mixing, digestion was stopped with 500 μl of sonication buffer (100 mM Tris-HCl, pH8.1, 20 mM EDTA, 200 mM NaCl, 2% Triton X-100, 0.2% sodium deoxycholate). Samples were sonicated for 15 mins (30 secs on/30 secs off). The chromatin content was estimated by the Qubit assay. For the normalization of ChIP efficiency, the chromatin prepared similarly from S2 or Sf9 cells was added to 1 to 5% of total chromatin. The chromatin was then incubated with 5 µg of rabbit monoclonal anti-Ezh2 antibody (Cell Signaling, Cat.# 5246), 1.4 µg of rabbit monoclonal anti-H3K27me3 antibody (Cell Signaling, Cat.# 9733), 2 µg of rabbit polyclonal anti-H3K27ac antibody (Abcam, Cat.# ab4729), 2 µg of rabbit polyclonal anti-H3K27M antibody (Millipore, Cat.# abe419), 2 µg of mouse monoclonal anti-Flag antibody (Sigma, Cat.# F1804), 2 µg of mouse monoclonal anti-HA antibody (Clone No. 12CA5), or 2 µg of rabbit polyclonal anti-H3K4me1 antibody (Abcam, Cat.# ab8895) on a rocker overnight. 30 μl of protein G-magnetic beads were added for additional 3 hr incubation. The beads were washed extensively with ChIP buffer (50 mM Tris-HCl, pH8.1, 10 mM EDTA, 100 mM NaCl, 1% Triton X-100, 0.1% sodium deoxycholate), high salt buffer (50 mM Tris-HCl, pH8.1, 10 mM EDTA, 500 mM NaCl, 1% Triton X-100, 0.1% sodium deoxycholate), LiCl2 buffer (10 mM Tris-HCl, pH8.0, 0.25 M LiCl2, 0.5% NP-40, 0.5% sodium deoxycholate, 1 mM EDTA), and TE buffer. Bound DNA was eluted and reverse-crosslinked at 65°C overnight. After the treatment of RNase A and proteinase K, DNAs were purified using Min-Elute PCR purification kit (Qiagen). 10 ng ChIP and input DNA were processed for library preparation by following the Ovation ultralow DR Multiplex kit (NuGEN). The ChIP-seq library DNA was sequenced using 51 bp pair-end sequencing on an Illumina HiSeq 2000/2500 instrument at the Center for Individualized Medicine Medical Genomics Facility, Mayo Clinic.
 
-## ChIP-seq data analysis
+### ChIP-seq data analysis
 
 Paired-end sequencing reads from H3K27me3, Ezh2, and H3.3K27M ChIP-seq were aligned to the human genome (hg19) or mouse genome (mm9) using the Bowtie2 software (Langmead and Salzberg, 2012). The consistent pair reads were used for the further analysis. After removal of PCR duplication reads by SAMtools (Li et al., 2009), we used BEDTools (Quinlan and Hall, 2010) and in-house Perl programs to calculate the genome-wide reads coverage. ChIP-seq peaks were identified by MACS2 (Feng et al., 2012) with the parameter of broad peak calling and the cutoff p-value set to 1 × 10−5. The reads density scan was performed by in-house Perl programs using the normalized method: Reads Per Kilobase per 10 Million mapped reads. In order to calculate the average profile of H3.3K27M ChIP-seq, the gene annotation by UCSC was split into three groups (high expression genes, medium express genes, and low express genes) based on the expression levels of RNA-seq. Then the average read coverage for these three groups of genes was calculated across the annotated gene regions. Coverage across the annotated region which is the transcription start sites (TSS) to transcription end sites (TES) of each gene was calculated in 100 equally spaced bins. In addition, coverage was calculated in 100 equally spaced bins for both up-stream and down-stream flanking regions. The promoters used in this study were defined as 2 kb upstream and 500 bp downstream of TSS (base on UCSC annotation genes transcription start sites). Because we are using the MNase-digested chromatin to perform the ChIP-seq, it may contribute to high enrichment of H3.3K27M at TSS and TES.
 
-## Spike-in chromatin H3K27me3 ChIP-seq analysis
+### Spike-in chromatin H3K27me3 ChIP-seq analysis
 
 For H3K27me3 ChIP-seq using the patient tissue, chromatin from sf9 cells was used as the spike-in reference. For H3K27me3 ChIP-seq in SF7761, SF8628 and mouse ES cells, chromatin from S2 cells was used as the spike-in reference. The sequence reads from H3K27me3 ChIP-seq were mapped and normalized according to published procedures (Orlando et al., 2014). Briefly, a combined genome sequence from human (hg19) and sf9 genome sequence was produced for analysis of H3K27me3 ChIP-seq dataset obtained using the patient tissue, whereas Drosophila (dm6) genome sequence was used for analysis of H3K27me3 ChIP-seq in SF7761 and SF8628 cells. The mouse (mm9) and Drosophila (dm6) genome sequence was combined and used for analysis of H3K27me3 ChIP-seq in mouse ES cells. Three custom Bowtie2 libraries for combined genome sequence were built by Bowtie2-build. All sequenced reads were aligned against custom library using bowtie2 with default parameters. After alignment, the consistent pair reads were split into each organism. The sequence reads of spike-in chromatin were used to determinate the normalization factor. In order to compare H3K27me3 ChIP-seq read density between H3F3A WT or H3F3A K27M mutant cells or tissues, the number of reads in each H3K27me3 peak was counted by BEDTools and normalized using the normalization factor.
 
 Different numbers of H3K27me3 peaks were identified among two DIPG lines SF7761 and SF8682 and one primary DIPG tissue. These differences are likely due to different cell lines used, which grow in different media and conditions. However, the difference does not affect our conclusions because we analyzed the H3K27me3 ChIP-seq result at each cell line independently. The analysis from each line supports the same conclusion.
 
-## Accession number
+### Accession number
 
 Raw data have been deposited in the GEO database with the series accession GSE94834.

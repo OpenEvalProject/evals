@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01f5ytq51 Department of Biomedical Engineering, Texas A&M University College Station United States
-2. https://ror.org/02jzgtq86 Laboratory of Immunobiology, Dana-Farber Cancer Institute Boston United States
-3. https://ror.org/02jzgtq86 Department of Medical Oncology, Dana-Farber Cancer Institute Boston United States
+1. Department of Biomedical Engineering, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
+2. Laboratory of Immunobiology, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+3. Department of Medical Oncology, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
 4. Department of Medicine, Harvard Medical School Boston United States
 5. Department of Dermatology, Harvard Medical School Boston United States
-6. https://ror.org/02vm5rt34 Department of Chemical and Biomolecular Engineering, Vanderbilt University Nashville United States
-7. https://ror.org/02vm5rt34 Department of Molecular Physiology and Biophysics, Vanderbilt University Nashville United States
-8. https://ror.org/01f5ytq51 Department of Materials Science & Engineering, Texas A&M University College Station United States
-9. https://ror.org/041hz9568 Center for AI and Natural Sciences, Korea Institute for Advanced Study Seoul Republic of Korea
-10. https://ror.org/01f5ytq51 Department of Physics & Astronomy, Texas A&M University College Station United States
+6. Department of Chemical and Biomolecular Engineering, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+7. Department of Molecular Physiology and Biophysics, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+8. Department of Materials Science & Engineering, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
+9. Center for AI and Natural Sciences, Korea Institute for Advanced Study Seoul Republic of Korea ([ROR:041hz9568](https://ror.org/041hz9568))
+10. Department of Physics & Astronomy, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
 
 † Corresponding author
 
@@ -40,9 +40,81 @@ We find that the mechanism of dynamic allostery is largely conserved in B7, yet 
 
 Our simulation systems include the B7 TCR bound to Tax pMHC (Figure 1A and B) with no, low, and high extensions to apply different loads, and an isolated B7 TCR (Table 1). We also used systems without the C-module (Vαβ and Vαβ-pMHC) to study the role of the C-module. To apply a load, we held the terminal Cα atoms of the added strands at different extensions (Figure 1A). This reflects the constant spacing between a T-cell and an APC maintained by adhesion molecules such as CD2 and CD58 (Reinherz et al., 2023). In in vitro single-molecule experiments, pulling to a fixed separation and holding is also commonly done. On the other hand, simulation for B70 was performed by lightly holding the MHC α3 domain (Figure 1A) in a construct without added strands (Methods). It thus does not have any extension nor applied load.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the base complex used in simulations. The four subdomains of TCRαβ are Vα, Vβ, Cα, and Cβ. Load was applied by holding the Cα atoms of terminal residues (blue spheres at the ends of ‘added strands’) at a given distance from each other. β2m: β2 microglobulin. (B) Magnified view of red box in panel A showing labeled CDR loops and side chains of peptide residues in stick representation. (C) Number of contacts with greater than 50% average occupancy and 80% maximum instantaneous occupancy from 500 to 1000 ns. Bars: std. Criteria for counting contacts and values for A6 are from Chang-Gonzalez et al., 2024. (D) Total contact occupancy measured in 40 ns overlapping intervals. TCR-pMHC (top; intermolecular) and intra-TCR (bottom; intramolecular) contacts are shown separately. Intra-TCR contacts exclude Cα-Cβ contacts (Methods). Circles with outline: B7high; without outline: B7low. Horizontal bar below each panel: B70.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Model was built based on PDB 1NFD (Wang et al., 1998). The construct was used in single-molecule optical tweezers experiments (Das et al., 2015). Blue spheres denote Cα atoms of residues corresponding to αT218 and βA259 of B7 TCR (Figure 1A, bottom). Their distance is 6.7 Å. The 10 Å flat-bottom harmonic distance restraint on those atoms (see Methods) mimic the presence of the leucine zipper that prevents large separation of the added strands.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** All data are measured between 500 and 1000 ns. Open circles are for A6 (Chang-Gonzalez et al., 2024). Red squares for B7low and B7high are from Table 1. Except for Y8Alow (an antagonist) and dFGlow (Cβ FG-loop deletion mutant) for A6, the near-linear relation between the std and average in force is a consequence of the force being applied to the restraining potential via random conformational fluctuation of the complex (Burgess, 1973). See Appendix 3 of Chang-Gonzalez et al., 2024, for further explanation. The fact that data for both B7 and A6 lie on approximately the same line also reflects consistency in our force measurement.
+
+**Table 1.**
+ Simulation systems constructed based on PDB 1BD2 (Ding et al., 1998).Extension is the distance between the harmonic potentials on the terminal restrained atoms (blue spheres in Figure 1A), which was selected for B7low and B7high to yield average low and high loads among simulations scanning different extensions (see Methods). Average load is calculated between 500 and 1000 ns. The standard deviation (std) in load as measured in 40 ns intervals between 500 and 1000 ns is shown in parentheses. Their values are consistent with those for A6 (Figure 1—figure supplement 2). The extension and force (average±std) for A6 corresponding to B7low and B7high are 182.6 Å and 13.2±5.65 pN and 187.7 Å and 18.2±9.17 pN, respectively (Chang-Gonzalez et al., 2024), which indicates that B7 is more compliant compared to A6. For B70, B7low, and B7high, simulations were further extended for additional time-dependent stability analysis. However, averaging was done for the 500–1000 ns interval for consistency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Structure</th>
+      <th>Time (ns)</th>
+      <th>Extension (Å)</th>
+      <th>Load (pN)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vαβ</td>
+      <td>Vα-Vβ only (no pMHC)</td>
+      <td>1000</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Tαβ</td>
+      <td>TCRαβ only (no pMHC)</td>
+      <td>1000</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Vαβ-pMHC</td>
+      <td>Vαβ with pMHC (no C-module)</td>
+      <td>1000</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>B70</td>
+      <td>TCRαβ-pMHC</td>
+      <td>1450</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>B7low</td>
+      <td>TCRαβ-pMHC</td>
+      <td>1550</td>
+      <td>173.7</td>
+      <td>9.01 (3.96)</td>
+    </tr>
+    <tr>
+      <td>B7high</td>
+      <td>TCRαβ-pMHC</td>
+      <td>1550</td>
+      <td>190.0</td>
+      <td>14.5 (7.20)</td>
+    </tr>
+  </tbody>
+</table>
+
 We analyzed TCR-pMHC intermolecular and intra-TCR (intramolecular) interactions and domain motion to test whether the TCR-pMHC interface is stabilized by load and to find the underlying allostery mechanism that involves the motion of the TCR chassis. We analyze dynamics during the full trajectory and average behavior during 500–1000 ns.
 
-## Stabilization of the TCRαβ-pMHC interface with load
+### Stabilization of the TCRαβ-pMHC interface with load
 
 Compared to the no- (B70) and low-load (B7low) cases, the number of high-occupancy contacts were more numerous for the high-load case (B7high), indicative of a catch bond behavior. Absence of the C-module (Vαβ-pMHC) also promoted more contacts with pMHC, suggesting the allosteric role of the C-module for binding with pMHC (Figure 1C). These results agree well with the behaviors seen in A6 and JM22 TCRs in our previous studies (Chang-Gonzalez et al., 2024; Hwang et al., 2020). However, the number of pMHC contacts with B7 was reduced compared to A6 (Figure 1C). This is despite their comparable number of contacts with the pMHC in crystal structures and comparable equilibrium binding affinity in solution (Ding et al., 1998; Davis-Harrison et al., 2005). In fact, we had to modify our simulation protocol to avoid premature breakage of contacts between B7 and pMHC when preparing the system for production run under load (see Methods).
 
@@ -50,7 +122,15 @@ Time-dependent behavior of the TCR-pMHC interface further supports the load-medi
 
 Comparing average counts of high-occupancy pMHC contacts for both A6 and B7 TCRs indicates that interfacial contacts were dominated by MHC-Vα (Figure 2A). Also, Vα formed more contacts with MHC than Vβ, while Vβ formed more contacts with the peptide than it does with MHC (Figure 2A). Similar to A6 (Chang-Gonzalez et al., 2024), occupancy heat maps for individual contact residue pairs show reduced or fragmented contacts for B70 and B7low (Figure 2—figure supplement 1A and B, more red compared to blue) while B7high and Vαβ-pMHC exhibit more persistent contact profiles (Figure 2—figure supplement 1C and D, more blue compared to red).
 
-Temporal progression of the number of contacts was measured via the Hamming distance H, the number of the initial high-occupancy contacts lost over time (Figure 2B; see Methods). For B70, H rapidly increased and by 200 ns, most of the initial high-occupancy contacts were lost. While the increase in H for Vαβ-pMHC was comparable to that of B7low (Figure 2B), the contact occupancy heat maps reveal that Vαβ-pMHC maintained contacts after a brief initial adjustment (arrow in Figure 2—figure supplement 1D) while contacts were lost in B7low (red in Figure 2—figure supplement 1B). On the other hand, B7high maintained H comparable to Vαβ-pMHC until about 1300 ns, after which it approached that of B70. This occurred as some of the high-occupancy contacts broke (Figure 2—figure supplement 1C). Importantly, the breakage is not due to a high force, but instead it happened when instantaneous force was low. Low-force states are reached at around 750 and 1300 ns (Figure 1D), followed by stepwise increase in H (Figure 2B). The difference in extension between B7low and B7high is 16.3 Å whereas it is 5.1 Å for A6 (Table 1), for similar ∼5 pN difference between low- and high-load cases. Being more compliant, the interface of B7 can reach a low-force state more easily, hence it is more prone to destabilization.
+![Figure 2.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig2-v1.jpg)
+
+**Figure 2.:** (A) Number of MHC-Vα, MHC-Vβ, peptide-Vα, and peptide-Vβ contacts in B7 and A6 TCRs between 500 and 1000 ns. Data for A6 are from Chang-Gonzalez et al., 2024. (B) Hamming distance $H$. Histograms were calculated using data between 500 and 1000 ns (marked by vertical dashed lines). (C) Location of V-module residues forming contacts with pMHC with greater than 50% average occupancy. The frame at 1000 ns is used for visualization. The backbone of the Tax peptide is shown as a purple tube. CDRs are labeled in the first panel. (D) Total (pink) and per-residue (blue) buried surface area (BSA) for interfacial residues between 500 and 1000 ns. (E) pMHC residues forming contacts with the V-module with average occupancy greater than 50% in the high-load case. Left: B7high, right: A6high. MHC residues are shown as sticks and Cα atoms of the peptide residues are shown as spheres. Viewing direction is the same as in panel C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Contact occupancy heat maps. (A) B70, (B) B7low, (C) B7high, and (D) Vαβ-pMHC. Contacts with overall occupancy greater than 30% and instantaneous occupancy greater than 80% are shown. hb: hydrogen bond, np: nonpolar contact. Arrow in panel D denotes the approximate time when the initial adjustment of contacts in Vαβ-pMHC happens (Figure 2B). (E) Root mean square fluctuation (RMSF) of peptide backbone Cα atoms between 500 and 1000 ns. Cα atoms were aligned to those at the beginning of the production run for RMSF calculation. (F) Distance between the V-module and pMHC. Histograms were calculated using data between 500 and 1000 ns, the interval between the vertical dashed lines. For Vαβ-pMHC and B7high, avg±std between 500 and 1000 ns are 32.5±0.31 and 31.9±0.30 Å, respectively. V-module to pMHC distance measured from the B7 crystal structure (1BD2) is denoted by a dashed horizontal line indicated by an arrow at 31.6 Å .
+
+Temporal progression of the number of contacts was measured via the Hamming distance $H$, the number of the initial high-occupancy contacts lost over time (Figure 2B; see Methods). For B70, $H$ rapidly increased and by 200 ns, most of the initial high-occupancy contacts were lost. While the increase in $H$ for Vαβ-pMHC was comparable to that of B7low (Figure 2B), the contact occupancy heat maps reveal that Vαβ-pMHC maintained contacts after a brief initial adjustment (arrow in Figure 2—figure supplement 1D) while contacts were lost in B7low (red in Figure 2—figure supplement 1B). On the other hand, B7high maintained $H$ comparable to Vαβ-pMHC until about 1300 ns, after which it approached that of B70. This occurred as some of the high-occupancy contacts broke (Figure 2—figure supplement 1C). Importantly, the breakage is not due to a high force, but instead it happened when instantaneous force was low. Low-force states are reached at around 750 and 1300 ns (Figure 1D), followed by stepwise increase in $H$ (Figure 2B). The difference in extension between B7low and B7high is 16.3 Å whereas it is 5.1 Å for A6 (Table 1), for similar ∼5 pN difference between low- and high-load cases. Being more compliant, the interface of B7 can reach a low-force state more easily, hence it is more prone to destabilization.
 
 Location of V-module residues forming contacts with pMHC with greater than 50% average occupancy were concentrated along the peptide for B7high and Vαβ-pMHC, but scattered in B70 and B7low (Figure 2C). This trend was also observed in A6 and JM22. Such concentration of high-occupancy contacts may protect TCR-pMHC interactions from breakage by water. In A6 and JM22 TCRs, the greater number of contacts with pMHC in the high-load cases and Vαβ-pMHC correlated with larger buried surface area (BSA) of the residues forming contacts (Chang-Gonzalez et al., 2024; Hwang et al., 2020). B7 did not follow this trend, as B7high and Vαβ-pMHC had reduced total and per-residue BSA than B70 and B7low (Figure 2D). This is likely because the fewer high-occupancy contacts in B7 (Figure 1C) tend to be more exposed, making the relationship between the BSA and load less direct. Consistent with this, the total BSA of B7 was 67.4% (B70) to 44.2% (B7high) of the corresponding values of A6.
 
@@ -58,21 +138,29 @@ The residues of pMHC forming greater than 50% average occupancy under high load 
 
 We calculated the distance between the V-module and pMHC as another measure of the interfacial stability (Figure 2—figure supplement 1F; Methods). The distance was stably maintained in Vαβ-pMHC and B7high (before 1300 ns) whereas it fluctuated more in B70 and B7low. Of note, the former two systems maintained the distance greater than that in the crystal structure by 0.3–0.9 Å. Thus, a slight separation engendered by force or in the absence of constraint imposed by the C-module provides room for adjusting residues to form more stable contacts. The more stable maintenance of the distance between V-module and pMHC in Vαβ-pMHC and B7high is consistent with other measures of their stability explained above.
 
-## CDR3 positions are controlled by load-dependent Vα-Vβ motion
+### CDR3 positions are controlled by load-dependent Vα-Vβ motion
 
 The greater number of Vα-Vβ contacts in B70 (Figure 3A) is consistent with the increase in total intra-TCR contact occupancy (horizontal bar in Figure 1D, bottom panel). Without load this does not translate to a stronger TCR-pMHC interface explained above. B7 in general had fewer Vα-Vβ contacts (11.0–16.3) than A6 (15.9–23.1) (Chang-Gonzalez et al., 2024). The ∼70% reduction in Vα-Vβ contacts for B7 is comparable to the ∼50% reduction in contacts with pMHC between the two TCRs (Figure 1C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig3-v1.jpg)
 
-**Figure 3.:** (A) Number of Vα-Vβ contacts with greater than 50% average occupancy and 80% maximum instantaneous occupancy between 500 and 1000 ns. Bars: std. (B) V-module triads . Arrows denote directions of the first three PC modes for B7{e1,e2,e3}high as an example. CDR3s are labeled. (C) Amplitudes for the first six PCs. Principal component analysis (PCA) was performed between 500 and 1000 ns. Transparent bands: std for PCA performed in three overlapping intervals (500–800 ns, 600–900 ns, and 700–1000 ns). (D) Histograms of the V-module triad angles. (E) CDR3 distance vs. triad angles. Transparent bands: std. Both D and E were determined from data between 500 and 1000 ns.
+**Figure 3.:** (A) Number of Vα-Vβ contacts with greater than 50% average occupancy and 80% maximum instantaneous occupancy between 500 and 1000 ns. Bars: std. (B) V-module triads ${e_{1},e_{2},e_{3}}$. Arrows denote directions of the first three PC modes for B7high as an example. CDR3s are labeled. (C) Amplitudes for the first six PCs. Principal component analysis (PCA) was performed between 500 and 1000 ns. Transparent bands: std for PCA performed in three overlapping intervals (500–800 ns, 600–900 ns, and 700–1000 ns). (D) Histograms of the V-module triad angles. (E) CDR3 distance vs. triad angles. Transparent bands: std. Both D and E were determined from data between 500 and 1000 ns.
 
-Vα-Vβ motion was measured via triads (orientational markers) assigned to respective domains and by performing principal component analysis (PCA) (Figure 3B; Methods). PC amplitude was the lowest for B7high and Vαβ-pMHC (Figure 3C), which is consistent with the greater number of Vα-Vβ contacts. Regarding the direction of motion, the mutually orthogonal PC directions can be difficult to interpret (arrows in Figure 3B). We instead measured angles between the matching arms of the two triads named ∠ei (i=1,2,3), to examine the Vα-Vβ motion in structurally interpretable directions (Figure 3D; Chang-Gonzalez et al., 2024). For example, ∠e1 is the angle between each e1 arm from Vα and Vβ, which describes a ‘flapping’ or ‘twisting’ motion of the two domains. Since e2 and e3 lie approximately parallel to the Vα-Vβ interface, they vary reciprocally, corresponding to a ‘scissoring’ motion (Hwang et al., 2020).
+Vα-Vβ motion was measured via triads (orientational markers) assigned to respective domains and by performing principal component analysis (PCA) (Figure 3B; Methods). PC amplitude was the lowest for B7high and Vαβ-pMHC (Figure 3C), which is consistent with the greater number of Vα-Vβ contacts. Regarding the direction of motion, the mutually orthogonal PC directions can be difficult to interpret (arrows in Figure 3B). We instead measured angles between the matching arms of the two triads named $∠e_{i}$ ($i=1,2,3$), to examine the Vα-Vβ motion in structurally interpretable directions (Figure 3D; Chang-Gonzalez et al., 2024). For example, $∠e_{1}$ is the angle between each $e_{1}$ arm from Vα and Vβ, which describes a ‘flapping’ or ‘twisting’ motion of the two domains. Since $e_{2}$ and $e_{3}$ lie approximately parallel to the Vα-Vβ interface, they vary reciprocally, corresponding to a ‘scissoring’ motion (Hwang et al., 2020).
 
-Measuring the distance between CDR3α and CDR3β (‘CDR3 distance’) revealed that this distance is the shortest for B7high followed by Vαβ-pMHC. Comparing CDR3 distance vs. triad angles (Figure 3E) shows that CDR3 distance varied in opposite directions with ∠e2 and ∠e3, which reflects their reciprocal relation (opposite slopes in Figure 3E). In comparison, the CDR3 distance of the B7 crystal structure is 12.0 Å, which is larger than those of B7high and Vαβ-pMHC (Figure 3E). The slight separation between the V-module and pMHC (Figure 2—figure supplement 1F) in Vαβ-pMHC and B7high allows CDR3 loops to come closer together compared to the crystal structure, akin to pinching the central protrusion of the peptide.
+Measuring the distance between CDR3α and CDR3β (‘CDR3 distance’) revealed that this distance is the shortest for B7high followed by Vαβ-pMHC. Comparing CDR3 distance vs. triad angles (Figure 3E) shows that CDR3 distance varied in opposite directions with $∠e_{2}$ and $∠e_{3}$, which reflects their reciprocal relation (opposite slopes in Figure 3E). In comparison, the CDR3 distance of the B7 crystal structure is 12.0 Å, which is larger than those of B7high and Vαβ-pMHC (Figure 3E). The slight separation between the V-module and pMHC (Figure 2—figure supplement 1F) in Vαβ-pMHC and B7high allows CDR3 loops to come closer together compared to the crystal structure, akin to pinching the central protrusion of the peptide.
 
-## Asymmetric V-C bending in the B7 TCR is suppressed with applied load
+### Asymmetric V-C bending in the B7 TCR is suppressed with applied load
 
 Next, we considered the motion between the V- and C-modules (‘V-C motion’). The number of high-occupancy contacts for the Cα-Cβ interface (26.2–27.5) was considerably greater than those for Vα-Vβ (11.2–16.3), indicating that the C-module acts as a single base for the V-C motion, as noted for A6 and JM22 TCRs (Hwang et al., 2020; Chang-Gonzalez et al., 2024). Continuing this general feature, there were fewer high-occupancy contacts for the Vα-Cα interface compared to the Vβ-Cβ interface (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig4-v1.jpg)
+
+**Figure 4.:** (A) Number of V-C contacts per chain measured with the same criteria as Figure 3A. (B) Average bead-on-chain (BOC) for B7low and B7high. The V-module of B7high is less bent compared to B7low. The arrows for the first three V-C PC modes are shown, where PC1 corresponds to the V-C bending motion. (C) V-C PC amplitudes for the first six PC modes. Transparent bands: std measured in the same way as in Figure 3C. (D) Differences in amplitudes for the first three PCs between matching V- and H-beads of α and β chains. (E) Histograms of hinge angles defined in panel B. (F) CDR3 distance vs. hinge angles. Transparent bands: std. All panels are generated with data between 500 and 1000 ns.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104280/elife-104280-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Dot products computed between the bead-on-chain (BOC) PC vectors of listed systems. Values closer to 1.0 denote similar V-C BOC direction of motion. (B) V-C hinge angle trajectories over time.
 
 The V-C motion was analyzed by using the bead-on-chain (BOC) model that tracks individual domains and the hinge between them (Figure 4B). PC motion directions were compared by calculating the dot products between the corresponding PC vectors (Figure 4—figure supplement 1A). PC1 corresponding to the V-C bending in B7high (Figure 4B) was similar in other systems, whereas B7low differed the most (darker color for B7low in Figure 4—figure supplement 1A, PC1). Amplitudes of PC1 show a clear distinction where the unliganded Tαβ and B7low were more mobile than B70 and B7high (Figure 4C). Comparing PC amplitudes of the elements of the BOC between α and β chains revealed that Vα moves more relative to the C-module than Vβ (Figure 4D), similar to A6 (Chang-Gonzalez et al., 2024). Amplitude of the hinge motion in the two chains varied, where Hα had greater amplitude in PC1 for B7low compared to B7high (Figure 4D, PC1 in bottom row). This suggests a more pronounced asymmetric motion in B7low. The no-load B70 Hβ amplitude was larger compared to Hα (Figure 4D, bottom, negative value for PC1 of B70). For B70, the small PC1 amplitude of the overall V-C motion without load (Figure 4C) does not suppress the motional asymmetry between α and β chains, while in B7high, the chassis becomes less mobile under load.
 
@@ -100,7 +188,7 @@ Disparate biological outcomes between structurally similar TCRs recognizing the 
 
 ## Methods
 
-## Structure preparation
+### Structure preparation
 
 B7 TCRαβ-pMHC was built from PDB 1BD2 (Ding et al., 1998) using CHARMM (Brooks et al., 2009; Hwang et al., 2024). Non-numeral residue IDs in the PDB were renumbered to follow sequential numbering used in the present study. We used MODELLER (Sali and Blundell, 1993) to generate coordinates for missing loops in the Cα domain (S133-K136 and S170-D172 in the PDB numbering scheme) followed by a brief energy minimization. We visually verified MODELLER results, comparing generated loops to those of the related A6 TCR (Garboczi et al., 1996a; Ding et al., 1998). The constant domain of TCRα (Cα) was also missing coordinates for F204-S210 (F198-S204 after renumbering), which were added with the TCRα linker as detailed below. Disulfide bonds were assigned between cysteine residues as defined in the PDB file. Crystal waters within 2.8 Å from the protein were kept for the truncated structures, and all waters were kept for the full structure.
 
@@ -110,11 +198,11 @@ As done in Hwang et al., 2020, and Chang-Gonzalez et al., 2024, we extended the 
 
 Truncated structures were built based on the prepared B7 TCR-pMHC complex as:
 
-## MD simulation protocol
+### MD simulation protocol
 
 Solvation, energy minimization, heating, and equilibration of the B7 complexes followed the protocol in Chang-Gonzalez et al., 2024, except for systems which include the pMHC, where we modified the preparation protocol prior to production runs as detailed below.
 
-## Laddered extensions
+#### Laddered extensions
 
 Applying the same protocol as done for A6 to achieve the laddered extensions in B7 resulted in substantial breakage of the TCR-pMHC contacts within the first 50 ns in several production runs. To mitigate this, we introduced distance restraints to selected atom pairs forming contacts between the TCR and pMHC to prevent them from breaking during preparatory simulations. This ensured that the complex could structurally adapt as we modified the extension distance, yet all laddered extensions maintained a core set of initial TCR-pMHC contacts. Atom-pair distance restraints were removed in production runs.
 
@@ -124,34 +212,34 @@ Using the structure at the end of the 2 ns simulation with the TCR-pMHC atom-pai
 
 Among the four extensions tested, the 181.7 Å extension was not selected primarily because the average force of the simulation from 500 to 850 ns (the total length of the simulation) was 9.26 pN, only barely higher than the reported load for B7low. For the 165.7 Å simulation, the average force from 500 to 900 ns (total length of the simulation) was 15.7 pN. We had observed this high force at low extension for A6 TCR (Chang-Gonzalez et al., 2024) and attribute this to folding of the flexible added strands leading to contacts between the stands and the TCR constant domains.
 
-## Vαβ-pMHC and B70
+#### Vαβ-pMHC and B70
 
 We also applied a 2 kcal/[mol·Å2] flat-bottom harmonic distance restraint during preparatory simulations of Vαβ-pMHC and B70. We attempted to use the same set of atom pairs as in the laddered extension simulations, but considerable interface breakage occurred, likely due to changes in interfacial contacts after equilibration in these systems. We thus selected different atom pairs for Vαβ-pMHC and B70. For consistency, we selected 12 atom pairs, the same number as in the laddered extensions, and distributed in the same way between the Tax peptide or MHC residues to Vα or Vβ residues. The distance restraint was applied to the atom pairs for a 2 ns CPT simulation, then released for production runs.
 
-## Systems without load
+#### Systems without load
 
 The following additional restraints were used for systems without load.
 
-## Production runs
+#### Production runs
 
 Production runs were performed similar to Chang-Gonzalez et al., 2024. We used OpenMM (Eastman et al., 2017) with the CHARMM param36 all-atom force field (MacKerell et al., 2004) and the particle-mesh Ewald method to calculate long-range electrostatic interactions. We used an Ewald error tolerance of 10-4 which is 1/5 of the default value in OpenMM and a 12 Å cutoff distance for nonbonded interactions. The complexes were simulated at 300 K with a 2 fs time step using the Nose-Hoover integrator in OpenMM. Production run lengths are given in Table 1.
 
-## Trajectory analyses
+### Trajectory analyses
 
 Analysis methods are detailed in Chang-Gonzalez et al., 2024. Below we mainly explain B7-specific residue selections. We used the frames for 500–1000 ns of the production runs to calculate the average and standard deviation of the number of contacts, BSA, CDR3 distance, PCA, and triad and V-C angles. With a coordinate saving rate of 20 ps, this leaves at least 25,000 frames for analysis.
 
-## V-module to pMHC distance
+#### V-module to pMHC distance
 
 The distance from TCR V-module to pMHC (Figure 2—figure supplement 1F) was measured between the center of mass of the Cα atoms of the same residues used to build the V-module triads (described below) to the center of mass of five Cα atoms from each of the central four strands forming the β-sheet floor located above the α1 and α2 helices of MHC (20 MHC atoms in total; Figure 1A). These were R6-T10, I23-Y27, Q96-G100, and Y113-A117. RMSF of these residues after 500 ns was below 1.4 Å in all B7 systems, so the measured distance is minimally affected by the intra-domain conformational motion.
 
-## CDR3 distance
+#### CDR3 distance
 
 Distance between CDR3α and CDR3β (Figures 3E and 4F) was measured using the midpoint between backbone Cα atoms of two residues at the base of each CDR3, which are E93 and K97 for CDR3α and S94 and E102 for CDR3β.
 
-## V-module triads
+#### V-module triads
 
 We assigned triads (Figure 3B) based on the backbone Cα atoms of the stably folded β-sheet core of each variable domain (Hwang et al., 2020; Chang-Gonzalez et al., 2024). Selected residues for triad assignment of the B7 systems were as follows. For Vα, I19-Y24, F32-K37, H71-I76, and Y87-M92. For Vβ, T20-Q25, M32-Q37, D73-L78, and Y89-S94. Prior to triad assignment we aligned all complexes to the first frame of B7low using the selected residues to monitor the relative motion between the two triads without global translation nor rotation.
 
-## V-C BOC
+#### V-C BOC
 
 We assigned BOCs (Figure 4B) as detailed in Hwang et al., 2020; Chang-Gonzalez et al., 2024. To place beads for the C-module, we used the following residues. For Cα, A118-R123, V132-D137, Y153-T158, and S171-S176. For Cβ, L143-T148, L157-N162, L190-R195, and F208-Q213. For the hinges, we used: αN114 for Hα, and βD116 and βL117 for Hβ. We aligned all complexes to the backbone Cα atoms of the selected residues of B7low then built BOCs to monitor the motion of the V-module relative to the C-module.

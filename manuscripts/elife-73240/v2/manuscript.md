@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Yeast vacuolar membrane fusion has been reconstituted with R, Qa, Qb, and Qc-family SNAREs, Sec17/αSNAP, Sec18/NSF, and the hexameric HOPS complex. HOPS tethers membranes and catalyzes SNARE assembly into RQaQbQc trans -complexes which zipper through their SNARE domains to promote fusion. Previously, we demonstrated that Sec17 and Sec18 can bypass the requirement of complete zippering for fusion (Song et al., 2021), but it has been unclear whether this activity of Sec17 and Sec18 is directly coupled to HOPS. HOPS can be replaced for fusion by a synthetic tether when the three Q-SNAREs are pre-assembled. We now report that fusion intermediates with arrested SNARE zippering, formed with a synthetic tether but without HOPS, support Sec17/Sec18-triggered fusion. This zippering-bypass fusion is thus a direct result of Sec17 and Sec18 interactions: with each other, with the platform of partially zippered SNAREs, and with the apposed tethered membranes. As these fusion elements are shared among all exocytic and endocytic traffic, Sec17 and Sec18 may have a general role in directly promoting fusion.
+Yeast vacuolar membrane fusion has been reconstituted with R, Qa, Qb, and Qc-family SNAREs, Sec17/αSNAP, Sec18/NSF, and the hexameric HOPS complex. HOPS tethers membranes and catalyzes SNARE assembly into RQaQbQc trans-complexes which zipper through their SNARE domains to promote fusion. Previously, we demonstrated that Sec17 and Sec18 can bypass the requirement of complete zippering for fusion (Song et al., 2021), but it has been unclear whether this activity of Sec17 and Sec18 is directly coupled to HOPS. HOPS can be replaced for fusion by a synthetic tether when the three Q-SNAREs are pre-assembled. We now report that fusion intermediates with arrested SNARE zippering, formed with a synthetic tether but without HOPS, support Sec17/Sec18-triggered fusion. This zippering-bypass fusion is thus a direct result of Sec17 and Sec18 interactions: with each other, with the platform of partially zippered SNAREs, and with the apposed tethered membranes. As these fusion elements are shared among all exocytic and endocytic traffic, Sec17 and Sec18 may have a general role in directly promoting fusion.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Proteoliposomes were prepared with vacuolar lipids, with membrane-anchored Ypt7,
 
 **Figure 1.:** Proteoliposomes were prepared with vacuolar lipids, membrane-anchored Ypt7, and either R or the 3Q SNAREs with molar ratios of 1Ypt7:8000 lipids and 1 of each SNARE/16,000 lipids. Since Qc3Δ is a labile member of SNARE complexes (Song et al., 2021), a fivefold molar excess to the other SNAREs was used in preparing Ypt7/QaQbQc3Δ proteoliposomes. The initial mixtures at t = 0 were 18 μl, and remaining components were added at 30 min in 2 μl. Vertical dotted lines delineate the first 5 min, termed α, and the 2 min β interval after further additions.
 
-## HOPS is not required for Sec17/Sec18 stimulation of fusion
+### HOPS is not required for Sec17/Sec18 stimulation of fusion
 
 When the 3Q complex includes wild-type full-length Qc, HOPS-mediated fusion (Figure 1B α, black curve) shows only minor effects from adding either Sec17 (red), Sec18 with a nonhydrolyzable ATP analog (blue), or Sec17, Sec18, and ATPγS (green). In contrast, when the 3Q complex includes Qc3Δ to arrest SNARE zippering and block fusion (Figure 1C α, black curve), both Sec17 and Sec18 are required to bypass the zippering arrest and allow fusion (Figure 1C α, contrast the green curve vs. the blue, red or black curves).
 
@@ -53,7 +53,285 @@ HOPS serves both as a tether (Hickey and Wickner, 2010) and as a catalyst to ini
 
 ## Materials and methods
 
-## GST-PX constructions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Nyv1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vam3</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000005632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vti1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vam7</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000003180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Ypt7</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Sec17</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000000146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Sec18</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000000284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps33</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps39</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000002235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps41</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000002487</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps16</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000005966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps11</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>Vps18</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>R (Nyv1)</td>
+      <td>PMID:21976702</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qa (Vam3)</td>
+      <td>PMID:18650938</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qb (Vti1)</td>
+      <td>PMID:21976702</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qc (Vam7)</td>
+      <td>PMID:17699614</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Qc (Vam7) 3Δ</td>
+      <td>PMID:19414611</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ypt7-TM</td>
+      <td>PMID:31235584</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sec17</td>
+      <td>PMID:19414611</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sec18</td>
+      <td>PMID:8620540</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-PX</td>
+      <td>This Study</td>
+      <td></td>
+      <td>Purified from Escherichia coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HOPS</td>
+      <td>PMID:18385512</td>
+      <td></td>
+      <td>Purified from Saccharomyces cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Cy5-derivatized streptavidin</td>
+      <td>SeraCare Life Sciences</td>
+      <td>5270–0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Biotinylated PhycoE</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>p811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Streptavidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>434302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>1,2-Dilinoleoyl-sn-glycero-3-phosphocholine</td>
+      <td>Avanti polar lipids</td>
+      <td>850385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>1,2-Dilinoleoyl-sn-glycero-3-phospho-L-serine</td>
+      <td>Avanti polar lipids</td>
+      <td>840040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>1,2-Dilinoleoyl-sn-glycero-3-phosphoethanolamine</td>
+      <td>Avanti polar lipids</td>
+      <td>850755</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>1,2-Dilinoleoyl-sn-glycero-3-phosphate</td>
+      <td>Avanti polar lipids</td>
+      <td>840885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>L-α-Phosphatidylinositol</td>
+      <td>Avanti polar lipids</td>
+      <td>840044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>1,2-Dipalmitoyl-sn-glycerol</td>
+      <td>Avanti polar lipids</td>
+      <td>800816</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Ergosterol</td>
+      <td>Sigma</td>
+      <td>45480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>PI(3)P</td>
+      <td>Echelon Bioscience</td>
+      <td>P-3016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Rhodamine DHPE</td>
+      <td>Invitrogen</td>
+      <td>L1392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>NBD-PE</td>
+      <td>Invitrogen</td>
+      <td>N360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Marina-blue</td>
+      <td>Invitrogen</td>
+      <td>M12652</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Reagents were purchased, and proteins purified, as described in Song et al., 2021._
+
+### GST-PX constructions
 
 DNA encoding the PX domain from the Qc SNARE Vam7 (amino acyl residues 2–123) was amplified by PCR with CloneAMP HiFi PCR premix (Takara Bio USA, Mountain View, CA). The amplified DNA fragment was cloned into BamHI and SalI digested pGST parallel1 vector (Sheffield et al., 1999) with an NEBuilder HiFi DNA Assembly kit (NEB, Ipswich, MA).
 

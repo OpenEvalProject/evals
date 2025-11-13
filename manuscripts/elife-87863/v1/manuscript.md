@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Department of Chemical and Biological Engineering, University of Wisconsin Madison United States
+1. Department of Chemical and Biological Engineering, University of Wisconsin Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
@@ -35,27 +35,115 @@ In this report, we demonstrate the feasibility of using human iPSC-derived BMEC 
 
 ## Results
 
-## iPSC-derived BMECs express BBB relevant phenotypes and key retinoid-related proteins
+### iPSC-derived BMECs express BBB relevant phenotypes and key retinoid-related proteins
 
 We verified that induced pluripotent stem cell-derived (iPSC) brain microvascular endothelial-like cells (BMECs) display BBB-relevant markers using commercially available antibodies (Table 1; Table 2), consistent with prior work (Lippmann et al., 2014; Lippmann et al., 2012). Specifically, iPSC-derived BMECs express (Figure 2A) endothelial cell marker PECAM-1; tight junction markers CLDN5, OCLN, and ZO-1; and GLUT1, a glucose transporter highly enriched at the BBB in vivo. Additionally, these cells express efflux transporters, including BCRP and MRP1, as expected (Figure 2B).
 
+**Table 1.**
+ ROH and protein concentrations for BMEC accumulation and permeability assays.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">ROH distribution based on KD (µM)*</th>
+    </tr>
+    <tr>
+      <th>Total ROH concentration (µM)</th>
+      <th>Delivery mode†</th>
+      <th>Free ROH</th>
+      <th>ROH-RBP</th>
+      <th>ROH-RBP-TTR</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1</td>
+      <td>Free</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>Free</td>
+      <td>0.4</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Free</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ROH-RBP</td>
+      <td>0.4</td>
+      <td>1.6</td>
+      <td>0</td>
+      <td>ROH partitions between free and RBP-bound states.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ROH-muRBP</td>
+      <td>0.4</td>
+      <td>1.6</td>
+      <td>0</td>
+      <td>muRBP binding affinity to TTR and possibly to STRA6 is abolished.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ROH-RBP-TTR</td>
+      <td>0.14</td>
+      <td>0.18</td>
+      <td>1.68</td>
+      <td>ROH partitions between free, RBP-bound, and RBP-TTR-bound states.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ROH-RBP-muTTR</td>
+      <td>0.4</td>
+      <td>1.6</td>
+      <td>0</td>
+      <td>ROH partitions between free and RBP-bound states. RBP does not bind to muTTR.</td>
+    </tr>
+  </tbody>
+</table>
+
+_BMEC, brain microvascular endothelial-like cells; muTTR, mutant I84A transthyretin; RBP, retinol-binding protein; ROH, retinol; TTR, transthyretin.*Distribution of ROH between unbound (free) and protein-bound states was calculated by assuming equilibrium and utilizing the known or measured KD for binding of RBP to ROH and for binding of TTR to ROH-RBP.†Delivery mode indicates whether ROH was supplied to the cell culture medium in the absence of binding protein (free) or pre-complexed with RBP, muRBP (L63R/L64S), RBP-TTR, or RBP-muTTR (I84A). Total RBP and TTR concentrations were 2 µM and 4 µM, respectively._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig2-v1.jpg)
 
-**Figure 2.:** (A) Expression of endothelial cell marker PECAM-1; tight junction and associated proteins CLDN5, OCLN, and TJP1 (ZO-1); glucose transporter SLC2A1 (GLUT1). Proteins are labeled in green and nuclear stain in blue. Scale bar equals 100 μm. (B) Expression of efflux transporters ABCG2 (BCRP), ABCC1 (MRP1), and retinoid-related proteins STRA6, CRBP1, and LRAT. Proteins are labeled in green and nuclear stain in blue. Scale bars equal 100 μm. (C) Western blots of CRBP1 (red), LRAT (red), and STRA6 (red) confirming antibody specificity. An antibody against TJP1 (green) is used as a BMEC-specific loading control in each blot. Polyclonal STRA6 antibody was additionally validated against recombinant GST-tagged STRA6.Figure 2—source data 1.Figure 2—source data 2.Figure 2—source data 3.Figure 2—source data 4.
+**Figure 2.:** (A) Expression of endothelial cell marker PECAM-1; tight junction and associated proteins CLDN5, OCLN, and TJP1 (ZO-1); glucose transporter SLC2A1 (GLUT1). Proteins are labeled in green and nuclear stain in blue. Scale bar equals 100 μm. (B) Expression of efflux transporters ABCG2 (BCRP), ABCC1 (MRP1), and retinoid-related proteins STRA6, CRBP1, and LRAT. Proteins are labeled in green and nuclear stain in blue. Scale bars equal 100 μm. (C) Western blots of CRBP1 (red), LRAT (red), and STRA6 (red) confirming antibody specificity. An antibody against TJP1 (green) is used as a BMEC-specific loading control in each blot. Polyclonal STRA6 antibody was additionally validated against recombinant GST-tagged STRA6.
 
 We next tested whether BMECs express key transporters and enzymes involved in retinoid metabolism and/or transport using commercially available polyclonal antibodies . Critically for our purpose, differentiated BMECs express STRA6 (Figure 2B), corroborating transcriptional evidence (Lippmann et al., 2012). Notably, STRA6 expression does not appear uniform. BMECs also express CRBP1, with a staining pattern consistent with CRBP1’s cytosolic function (Silvaroli et al., 2016); similarly, BMECs express LRAT, with faint staining in the lipid bilayer and stronger staining near the cell nucleus consistent with LRAT’s function in retinyl ester synthesis in lipid droplets (O’Byrne and Blaner, 2013; Moise et al., 2007). Immunocytochemistry results for STRA6, CRBP1, and LRAT were corroborated by western blotting using the same polyclonal antibodies as for the immunocytochemistry panel (Table 3, Figure 2C), with detection of bands at ~16 kDa (CRBP1), ~30 kDa (LRAT), and ~70 kDa (STRA6) as expected. In order to assuage concerns about commercially available antibodies against STRA6 (Kawaguchi et al., 2015), purified recombinant GST-tagged STRA6 protein was used as a positive control.
 
-## Recombinant RBP and TTR are suitable replacements for serum sources
+### Recombinant RBP and TTR are suitable replacements for serum sources
 
 We previously expressed, purified, and characterized human wild-type TTR (Liu et al., 2009) and human wild-type retinol binding protein 4 (RBP) (Est and Murphy, 2020) in Escherichia coli. Recombinant RBP binds retinol (ROH) with a dissociation constant KD = 100 ± 30 nM, indistinguishable from serum-derived human RBP (Est and Murphy, 2020). Recombinant RBP complexed with ROH (ROH-RBP) binds recombinant human TTR with a dissociation constant of ~250 nM, in close agreement with human serum-derived measurements (Est and Murphy, 2020).
 
-## ROH accumulates in iPSC-derived BMEC monolayers from ROH-RBP or ROH-RBP-TTR complexes
+### ROH accumulates in iPSC-derived BMEC monolayers from ROH-RBP or ROH-RBP-TTR complexes
 
 BMEC monolayers cultured on 96-well plates were exposed to solutions of ROH-RBP or ROH-RBP-TTR prepared at biologically relevant concentrations: 2 µM ROH (typical range in vivo, 1–2 μM; Jiménez-Jiménez et al., 1999; Zaman et al., 1992), 2 µM RBP (in vivo range, 2–4 μM; O’Byrne and Blaner, 2013), and 4 µM TTR (in vivo range, 3–8 μM; Hanson et al., 2018). Solutions of ROH-RBP were prepared by overnight equilibration of free lipid ROH (1:20 ratio of 3H-ROH to unlabeled ROH) and ligand-free (apo) RBP. Solutions of ROH-RBP-TTR were prepared by overnight equilibration of ROH-RBP (holo) and TTR. After the desired incubation time for accumulation, cells were washed, lysed, and the tritium signal counted. ROH cellular accumulation, in μmoles of ROH per L cell volume, was calculated from DPM measurements using the manufacturer-supplied specific activity of 3H-ROH, the ratio of 3H-ROH to unlabeled ROH (1:20), and a cell volume of 1.37 × 10–12 L/cell. Cell volume was estimated by multiplying the average area of a BMEC (402 μm2) by its height (3.4 μm). BMEC area was estimated in two ways: directly from ICC image analysis and by counting the number of cells in a BMEC monolayer after singularization and dividing by the culture dish area. The two methods produced consistent estimates of cell area. BMEC height was estimated by analysis of Z-stack ICC images. We use the term ‘ROH cellular accumulation’ to represent the quantity of all added ROH that becomes cell-associated, recognizing that we did not determine whether any retinol was converted to oxidized metabolites or retinyl esters and we did not differentiate cell-associated radioactivity between internalized versus membrane-associated material after washing.
 
 ROH cellular accumulation increased throughout the 2-hr experiment at a steady rate with either ROH-RBP or ROH-RBP-TTR (Figure 3A, Figure 3—figure supplement 1). TTR did not affect ROH cellular accumulation kinetics. After 2 hr, accumulated ROH cellular concentration was ~100 µM, or about 50-fold higher than the 2 µM ROH medium concentration. This indicates that the BMEC monolayer stores excess ROH and that ROH accumulates against a concentration gradient. High cellular ROH accumulation could be accounted for by a number of established mechanisms, including thermodynamically driven partitioning of the lipophilic ROH into lipid-rich cellular components, binding of ROH by intracellular proteins such as CRBP1, and/or storage of internalized ROH as retinyl esters (RE).
 
-## BMEC monolayers are a useful in vitro BBB model system for measuring ROH permeation at physiologically relevant conditions
+![Figure 3.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig3-v1.jpg)
+
+**Figure 3.:** (A) Mean ROH cellular accumulation as a function of time. Measured DPM values were converted to accumulated concentrations using the specific activity of 3H-ROH, the 3H-ROH:unlabeled ROH ratio (1:20), and the average cell volume. Error bars represent the standard deviation of three biological replicates. Fluid concentrations are typical of human blood concentrations at 2 µM ROH, 2 µM RBP, and 4 µM TTR. (B) Schematic of the Transwell apparatus. The semi-permeable support allows for BMEC basolateral efflux. (C) Mean ROH cellular accumulation in BMEC lysate after 60 min, collected from cells in Transwells. Measured DPM values were converted to accumulated concentrations using the specific activity of 3H-ROH, the 3H-ROH:unlabeled ROH ratio (1:20), and the calculated cell volume. (D) Kinetics of retinoid accumulation in the basolateral chamber. Error bars represent the standard deviation of four biological replicates. Measured DPM values were converted to accumulated concentrations using the specific activity of 3H-ROH, the 3H-ROH:unlabeled ROH ratio (1:20), and the volume of the basolateral chamber medium. Apical concentrations were 2 µM ROH, 2 µM RBP, and 4 µM TTR. No RBP or TTR was added to the basolateral chamber.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Measured DPM values were converted to cellular concentrations using the specific activity of 3H-ROH, the 3H-ROH:unlabeled ROH ratio (1:20), and the calculated cell volume. Error bars represent the standard deviation of three biological replicates. Data are fit by a smoothed 10 point LOWESS function in order to better view the kinetic regimes. (A) 0.1 µM free ROH; (B) 0.4 µM free ROH; (C) 2 µM free ROH; (D) ROH-RBP; (E) ROH-muRBP; (F) ROH-RBP-TTR; and (G) ROH-RBP-muTTR.
+
+### BMEC monolayers are a useful in vitro BBB model system for measuring ROH permeation at physiologically relevant conditions
 
 iPSC-derived BMEC monolayers have been shown to be a good in vitro model for the permeability of essential nutrients and drugs across the BBB (Lippmann et al., 2014; Lippmann et al., 2012). Vitamin A permeability has not previously been measured with iPSC-derived BMEC monolayers, and in fact there is a very sparse literature on retinol transport across the BBB in any in vitro or in vivo model (MacDonald et al., 1990; Franke et al., 1999; Pardridge et al., 1985). BMECs were cultured on semi-permeable Transwell inserts that allow for sampling of the apical chamber (‘blood’) and basolateral chamber (‘brain’) (Figure 3B). Transendothelial electrical resistance (TEER) was used to confirm the integrity of the BMEC barrier. TEER measures the resistance of the monolayer to an electrical current and correlates with the size of molecules excluded from paracellular transport. For compounds the size of sucrose or retinol (342 Da or 286 Da, respectively), a minimum TEER of ~500 Ω × cm2 is considered sufficient to exclude paracellular transport (Mantle et al., 2016). TEER for iPSC-derived BMECs in our study was typically 3000 Ω × cm2 at the start of incubations and remained above 1000 Ω × cm2 upon conclusion.
 
@@ -65,7 +153,7 @@ As shown in Figure 3D, there was a short lag period after which retinoid accumul
 
 To quantify our data and confirm basolateral accumulation was due to permeability across the cellular monolayer rather than via paracellular leakage, we used Equations 1 and 2 to calculate the apparent permeability (Peapp) of the BMEC monolayer and Transwell semi-permeable insert combined for both sucrose and ROH (Supplementary file 1c). Sucrose Peapp ranged from 0.58 ± 0.03 to 0.69 ± 0.04 × 10–6 cm/s when mixed with ROH-RBP-TTR or ROH-RBP samples, respectively, in agreement with prior studies using these iPSC-derived BMECs (Pe = 0.57 × 10–6 cm/s) (Lippmann et al., 2012) and slightly lower (indicating a tighter barrier) than reported with primary porcine BMECs (Pe = 1 × 10–6 cm/s, TEER <1000 Ω × cm2) (Franke et al., 1999). These results confirm tight barrier integrity in this iPSC-derived model system. Peapp for ROH was 4.8 ± 0.2 × 10–6 cm/s when supplied by ROH-RBP and 6.6 ± 0.3 x×10–6 cm/s when supplied by ROH-RBP-TTR. These permeabilities are an order of magnitude higher than those for sucrose and in the same range as that of glucose (Pe = 3.7 × 10–6 cm/s; Lippmann et al., 2012), a critical nutrient for the brain. This analysis indicates that ROH is indeed transported transcellularly, and that inclusion of TTR increases the ROH permeation rate by ~30%. To our knowledge, this is the first report of permeability measurements for RBP-bound ROH across a BBB-like monolayer, as well as the first reported indicator that TTR may play a role in increasing permeation of ROH across the BBB.
 
-## Free ROH cellular accumulation is bulk fluid concentration-dependent
+### Free ROH cellular accumulation is bulk fluid concentration-dependent
 
 In the presence of RBP and/or TTR, ROH partitions between free and protein-bound states. Although ROH circulating with RBP is thought to be the predominant mode of vitamin A delivery to cells and tissues, there is evidence that free ROH readily partitions into cell membranes (Noy and Xu, 1990b; Noy and Xu, 1990a; Fex and Johannesson, 1990; Fex and Johannesson, 1988). The estimated concentrations of free and protein-bound ROH at our experimental conditions were calculated from the known equilibrium dissociation constants and total concentrations of ROH, RBP, and TTR (Table 1).
 
@@ -73,21 +161,41 @@ For RBP, about 20% of ROH is free (0.4 µM free versus 1.6 µM bound to RBP), wh
 
 We used our experimental system to measure the free ROH concentration-dependent cellular accumulation and compare the data to cellular accumulation data from protein-bound ROH. BMEC monolayers were exposed to ROH at three concentrations: 2 μM (physiological), 0.4 μM (to approximate the free ROH concentration in ROH-RBP solutions), and 0.1 μM (to approximate the free ROH concentration in ROH-RBP-TTR solutions). Cell-associated ROH increased over the 2-hr time course of the experiment, with total accumulation a strong function of fluid-phase ROH concentration (Figure 4A). The accumulated cellular ROH concentration after 2 hr was nearly two orders of magnitude higher than the fluid-phase ROH concentration, consistent with the data observed for protein-bound ROH (Figure 3A). To examine concentration-dependent patterns of ROH accumulation kinetics, cellular concentrations were normalized by the ROH concentration initially loaded in the medium (Figure 4B), as the bulk fluid concentrations remained relatively stable over the course of the experiment (Supplementary file 1d). This analysis demonstrates that the kinetic pattern is distinctly different at each ROH fluid-phase concentration. Briefly, at 0.1 µM ROH in the fluid phase, cellular concentration reached ~9 µM (or a cell:fluid ratio of ~90 µM/µM) by approximately 90 min, beyond which it remained stable. At 0.4 µM fluid-phase ROH, cellular concentration reached an apparent plateau of ~36 µM (cell:fluid ratio of ~90 µM/µM) at approximately 60 min, but then started to increase further at approximately 90 min. In contrast, at 2 µM fluid-phase ROH, cellular concentration increased continuously over the 2-hr experiment, reaching ~320 µM (~160 µM/µM cell/fluid concentration ratio).
 
-We evaluated whether these data could be described by a simple kinetic model, where we assume the bulk concentration remains constant (Supplementary file 1e). The strong concentration dependence suggested a partitioning model (akin to solvent:solvent partitioning) as a better descriptor than a receptor-ligand binding model. If cf = bulk fluid concentration (µM), ccell = accumulated cellular concentration (µM) at any time t, k1 = first-order rate constant (min–1), Kp = partition coefficient (µM cell/µM fluid), then a simple model is(1)ccellcf=Kp1-exp-k1t
+![Figure 4.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig4-v1.jpg)
 
-However, given the apparent intermediate plateau for the 0.4 µM free ROH sample, as well as the observation that the ratio ccell/cf increases with increasing fluid-phase concentration, we hypothesized that a secondary uptake mechanism is triggered after a lag time, tlag, that corresponds to crossing an intracellular ROH threshold, ccell*:(2)ccellcf=Kp[1−exp(−k1t)]+Kp∗[1−exp(−k1∗(t−tlag))]
+**Figure 4.:** (A) Mean ROH cellular accumulation as a function of time and free ROH concentration. Measured DPM values were converted to accumulated concentrations using the specific activity of 3H-ROH, the 3H-ROH:unlabeled ROH ratio (1:20), and the average cell volume. Error bars represent the standard deviation of three biological replicates. Fluid concentrations were 0.1, 0.4, or 2 µM ROH. No retinol-binding protein (RBP) or transthyretin (TTR) was present in the medium. (B) Mean ROH accumulation from panel (A) normalized by the ROH concentration in the medium. Data are fit by a simple partitioning model with a secondary uptake mechanism Equation 2 that triggers upon accumulation exceeding a fitted threshold value of ~36 µM. (C) Mean ROH cellular accumulation in BMEC lysate after 60 min, collected from cells in Transwells. Measured DPM values were converted to accumulated concentrations using the specific activity of 3H-ROH, the 3H-ROH:unlabeled ROH ratio (1:20), and the calculated cell volume. No RBP or TTR was added to either chamber. (D) Kinetics of retinoid accumulation in the basolateral chamber. Error bars represent the standard deviation of four biological replicates. Measured DPM values were converted to accumulated concentrations using the specific activity of 3H-ROH, the 3H-ROH:unlabeled ROH ratio (1:20), and the volume of the basolateral chamber medium. No RBP or TTR is added to either chamber. (E) Retinoid basolateral chamber accumulation normalized by the apical chamber ROH concentration. (F) Retinoid basolateral chamber accumulation normalized by the accumulated cellular ROH concentration at 60 min.
 
-wheretlag=−ln[1−ccell∗Kpcf]k1
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Data from Figure 4A are normalized by the ROH concentration in the medium and fit by a simple partitioning model (Equation 1 in gray). If this model were correct, the data at all free ROH concentrations would collapse onto a single curve described by Equation 1 .
+
+We evaluated whether these data could be described by a simple kinetic model, where we assume the bulk concentration remains constant (Supplementary file 1e). The strong concentration dependence suggested a partitioning model (akin to solvent:solvent partitioning) as a better descriptor than a receptor-ligand binding model. If cf = bulk fluid concentration (µM), ccell = accumulated cellular concentration (µM) at any time t, k1 = first-order rate constant (min–1), Kp = partition coefficient (µM cell/µM fluid), then a simple model is
+
+$$
+\frac{c_{cell}}{c_{f}}=K_{p}1-exp-k_{1}t
+$$
+
+However, given the apparent intermediate plateau for the 0.4 µM free ROH sample, as well as the observation that the ratio ccell/cf increases with increasing fluid-phase concentration, we hypothesized that a secondary uptake mechanism is triggered after a lag time, tlag, that corresponds to crossing an intracellular ROH threshold, ccell*:
+
+$$
+\frac{c_{cell}}{c_{f}}=K_{p}[1−exp(−k_{1}t)]+K_{p}^{∗}[1−exp(−k_{1}^{∗}(t−t_{lag}))]
+$$
+
+where
+
+$$
+t_{lag}=\frac{−ln[1−\frac{c_{cell}^{∗}}{K_{p}c_{f}}]}{k_{1}}
+$$
 
 We fit the data by Equation 1 (Figure 4—figure supplement 1) or Equation 2 (Figure 4) using least-squares regression. Our analysis indicates that including the secondary uptake mechanism provides a significantly better description of the experimental data (Figure 4—figure supplement 1 and Supplementary file 1e), providing support for the hypothesis of a biphasic response at higher fluid ROH concentrations. A possible explanation is that loading of CRBP1 with ROH to its capacity (estimated from our modeling to be ccell* ~ 36 µM) triggers initiation of a secondary storage mechanism, such as retinyl ester synthesis, to handle additional ROH cellular accumulation. Indeed, biphasic ROH uptake from RBP in Sertoli cells has been reported; the accumulated ROH at the plateau in that study corresponded to the intracellular CRBP1 concentration (Shingleton et al., 1989).
 
-## Free ROH permeates across the BBB-like barrier with kinetics proportional to apical concentration and not cellular concentration
+### Free ROH permeates across the BBB-like barrier with kinetics proportional to apical concentration and not cellular concentration
 
 Permeation of protein-free ROH at 0.1 µM, 0.4 µM, or 2 µM in the apical chamber was measured using the Transwell setup. To ensure barrier integrity, TEER and 14C-sucrose permeability were monitored as described previously. At the conclusion of each experiment, BMEC monolayer lysate was collected to test for closure of the mass balance; at least 90% of 3H-ROH and at least 96% of 14C-sucrose radioactivity was recovered (Supplementary file 1a and b). We first confirmed that cellular accumulation in this setup was consistent with that in the monolayer by measuring radioactivity in the lysate at the end of the permeation experiment (Figure 4). As shown in Figure 4D, basolateral retinoid accumulation rate increased with increasing apical ROH concentration. We calculated Peapp of ROH to range from 3.8 ± 0.4 to 7.7 ± 0.5 × 10–6 cm/s as the apical ROH concentration increased from 0.1 to 2 µM. These values indicate that ROH is about 10-fold more permeable than sucrose (0.43 ± 0.03 to 0.58 ± 0.03 × 10–6 cm/s) and are in good agreement with data reported for free ROH (supplied at ~10–8 M) in primary porcine BMECs (Pe = 4.1 ± 0.7 × 10–6 cm/s) (Franke et al., 1999). The permeabilities are similar to those we calculated for ROH-RBP or ROH-RBP-TTR, demonstrating that RBP is not required for ROH transit across the BBB-like barrier. It is important to note that Peapp should be independent of the apical ROH concentration for a single permeation mechanism. The observation that Peapp increases with increasing fluid-phase ROH concentration supports the hypothesis that higher fluid-phase ROH concentrations trigger secondary transport mechanisms in BMECs or that free ROH is processed intracellularly into different retinoid forms, such as retinyl esters.
 
 To understand the concentration dependence of ROH permeation, we normalized the basolateral ROH concentration by the initial apical ROH concentration or by the accumulated cellular ROH concentration (Figure 4E and F). The data collapse to a single curve in Figure 4E but not in Figure 4F, demonstrating that transport of retinoid across the BMEC monolayer to the basolateral chamber is more tightly coupled to the apical chamber ROH concentration rather than to the accumulated concentration of ROH within the cell barrier.
 
-## RBP and TTR markedly reduce ROH cellular accumulation compared to protein-free ROH, but permeability across the BBB-like barrier is similar for protein-bound and protein-free ROH
+### RBP and TTR markedly reduce ROH cellular accumulation compared to protein-free ROH, but permeability across the BBB-like barrier is similar for protein-bound and protein-free ROH
 
 We asked whether cellular ROH accumulation kinetics differed between free ROH and protein-bound ROH when supplied at the same initial total ROH concentration. Accumulation kinetics for 2 μM free ROH (Figure 4A) are compared to accumulation kinetics for 2 μM ROH-RBP (Figure 3A) in Figure 5A. Since the calculated free ROH concentration in the 2 µM ROH-RBP sample at these conditions is ~0.4 μM (Table 1), data at 0.4 μM ROH (Figure 4A) are also included for comparison. ROH cellular accumulation levels from 2 μM ROH-RBP are substantially lower than at 2 μM free ROH, but slightly exceed that of 0.4 μM free ROH alone. For samples containing TTR (Figure 5B), the free ROH concentration is estimated to be ~0.14 µM (Table 1). ROH cellular accumulation levels from 2 µM ROH-RBP-TTR (Figure 3A) are markedly lower than those at 2 µM free ROH, but significantly exceed that at 0.1 µM free ROH (Figure 4A).
 
@@ -99,9 +207,17 @@ Cellular uptake of ROH in protein-bound samples could be achieved through two pa
 
 Although cellular accumulation was much higher for 2 µM free ROH than when bound to RBP or RBP-TTR, permeation into the basolateral chamber was similar (but not identical) for all three cases, again highlighting that permeation across the BMEC barrier is correlated more strongly with the total apical (‘blood’) ROH concentration and not with the free apical ROH concentration or the cellular ROH accumulated concentration (Figure 5D). However, basolateral permeation was not entirely a function of total apical ROH concentration, but also depended on whether ROH was presented with RBP alone or in complex with TTR; permeation with RBP alone was lower than for an equivalent total concentration of free ROH, whereas permeation with RBP in complex with TTR was higher than for an equivalent concentration of free ROH. This observation suggests that RBP and TTR might influence ROH cellular trafficking even though the proteins are not themselves internalized, and that the proteins may have subtle differences in the observed effect.
 
-## RBP and TTR mutants reveal novel insights into mechanisms of ROH cellular accumulation in, and permeation across, BMEC monolayers
+### RBP and TTR mutants reveal novel insights into mechanisms of ROH cellular accumulation in, and permeation across, BMEC monolayers
 
 To further explore the role RBP and TTR play individually in ROH cellular accumulation and permeation, we generated mutants that abrogate wild-type binding interactions. L63R/L64S mutations in RBP (muRBP) alter a loop region at the entrance of the β-barrel of RBP (Figure 6A, adapted from Perduca et al., 2018), and this loop region is critical in mediating the binding interaction to TTR. Furthermore, muRBP has been previously shown unable to bind to a protein expressed on placental membranes that participates in retinol transport (Sivaprasadarao and Findlay, 1994); it is suspected, but has not been confirmed, that this protein is STRA6. We produced and purified muRBP, and purity was confirmed using analytical size-exclusion chromatography (aSEC) and DEAE anion-exchange chromatography. RBP and muRBP elute in one primary peak on both aSEC and DEAE columns. On aSEC, muRBP elutes earlier than RBP, suggesting the L63R/L64S mutation causes an increase in the apparent volume of the protein. However, refolded ROH-muRBP displays an A330/280 ratio of ~1.0 in the presence of excess ROH, indicating normal 1:1 binding stoichiometry (data not shown). Furthermore, ROH binds to muRBP with KD = 110 ± 60 nM, comparable to RBP (Figure 6B, Figure 6—figure supplement 1). Interestingly, muRBP fluorescence at saturation is only ~50% the magnitude of ROH-RBP, which we theorize is due to changes in the β-barrel local environment that alter the efficiency of resonance energy transfer; this hypothesis would be consistent with the apparent larger volume seen by aSEC. To confirm loss of TTR-binding affinity, we utilized a fluorescence anisotropy assay that demonstrates ROH-muRBP does not bind TTR (Figure 6D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig6-v1.jpg)
+
+**Figure 6.:** (A) PDB entry 5NU7 (Perduca et al., 2018). Ribbon diagram displays RBP with bound retinol (ROH) shown in green and L63 and L64 in red. (B) ROH binding to RBP (pink, adapted from Est and Murphy, 2020) and muRBP (blue) monitored by emission of ROH at 460 nm as an acceptor in resonance energy transfer from donor RBP tryptophan. Data are fit by nonlinear regression as described (Est and Murphy, 2020). Error bars represent the standard deviation of three independent replicates. (C) PDB entry 5CN3 (Yee et al., 2016). Ribbon diagram displays the TTR tetramer. I84 for each TTR monomer is shown in red. (D) Representative binding of 1 μM ROH-RBP or 1 μM ROH-muRBP to 4 μM TTR or 4 μM muTTR as measured by fluorescence anisotropy using the polarized emission of ROH at 460 nm. Error bars represent the standard deviation of three technical replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Spectra of both wild-type RBP (RBP), adapted from Est and Murphy, 2020, and L63R/L64S mutant RBP (muRBP) were normalized to their respective max absorbance signals at 280 nm and overlaid on the same plot. The vertical bars represent the retention time corresponding to the max signal for RBP. (A) Approximately 15 μg of either RBP or muRBP in PBS (pH 7.4) was injected onto a TOSOH TSKgel BioAssist G2SWxl analytical size-exclusion column operating at a flow rate of 1.0 mL/min of PBS (pH 7.4). (B) RBP and muRBP were concentrated and buffer exchanged into AEX Buffer A (25 mM Tris, 1 mM EDTA, pH 8.0). The protein samples were filtered through a 0.22 μm filter (Millipore) and slowly applied by syringe to a GE HiScreen diethylaminoethyl (DEAE) column pre-equilibrated with AEX Buffer A. The sample was allowed to adsorb for 10 min, then re-equilibrated for 10 min with AEX Buffer A at a flow rate of 1.0 mL/min. A step salt gradient (dotted line) was applied by mixing AEX Buffer A with high salt AEX Buffer B (25 mM Tris, 1 M NaCl, 1 mM EDTA, pH 8.0) at 1.0 mL/min.
 
 To examine the role of TTR binding to RBP on retinol uptake and trafficking, we produced an I84A mutant TTR (muTTR) with reduced affinity for RBP (Monaco, 2000; Du et al., 2012; Figure 6C, adapted from Yee et al., 2016). Fluorescence anisotropy confirmed that recombinant muTTR did not bind measurably to ROH-RBP (Figure 6D).
 
@@ -109,7 +225,7 @@ First, we measured ROH cellular accumulation in BMEC monolayers using muRBP or m
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig7-v1.jpg)
 
-**Figure 7.:** (A) Mean retinol (ROH) cellular accumulation as a function of time and concentration. Error bars represent the standard deviation of three biological replicates. The medium contains 2 µM ROH equilibrated with 2 µM RBP, 2 µM muRBP, 2 µM RBP +4 µM TTR, or 2 µM RBP +4 µM muTTR. (B) Mean ROH cellular accumulation in brain microvascular endothelial-like cells (BMEC) lysate after 60 min, collected from cells in Transwells. Apical concentrations are the same as listed in panel (A). (C) Kinetics of retinoid permeation into the basolateral chamber comparing ROH-RBP, ROH-muRBP, ROH-RBP-TTR, and ROH-RBP-muTTR.Figure 7—source data 1.
+**Figure 7.:** (A) Mean retinol (ROH) cellular accumulation as a function of time and concentration. Error bars represent the standard deviation of three biological replicates. The medium contains 2 µM ROH equilibrated with 2 µM RBP, 2 µM muRBP, 2 µM RBP +4 µM TTR, or 2 µM RBP +4 µM muTTR. (B) Mean ROH cellular accumulation in brain microvascular endothelial-like cells (BMEC) lysate after 60 min, collected from cells in Transwells. Apical concentrations are the same as listed in panel (A). (C) Kinetics of retinoid permeation into the basolateral chamber comparing ROH-RBP, ROH-muRBP, ROH-RBP-TTR, and ROH-RBP-muTTR.
 
 Surprisingly, accumulation from ROH-muRBP is markedly higher than that of ROH-RBP; indeed, accumulation approaches that of free ROH at 2 µM. This was an unexpected result given that muRBP binds ROH with similar affinity as RBP, but may be consistent with the hypothesis that muRBP cannot participate in ROH efflux from intracellular ROH stores, and thereby drives a higher net ROH accumulation.
 
@@ -117,7 +233,7 @@ We next measured ROH permeability across the BMEC monolayer in the Transwell con
 
 Because the I84A TTR mutant does not bind to RBP, we anticipated that ROH-RBP-muTTR would demonstrate permeability similar to ROH-RBP alone. However, basolateral permeability was higher in samples containing TTR or muTTR when compared to ROH-RBP alone (Figure 7C). This surprising result indicates that it is the presence of TTR, and not specifically the binding of TTR to RBP, that is responsible for the higher basolateral permeation of ROH.
 
-## TTR and muTTR upregulate expression of LRAT
+### TTR and muTTR upregulate expression of LRAT
 
 It is known that influx of ROH delivered by ROH-RBP through STRA6 triggers an intracellular signaling cascade (Berry et al., 2011; Chen et al., 2012). STRA6-mediated transport of ROH is coupled to intracellular CRBP1 (Berry et al., 2012b; Kawaguchi et al., 2011) concentrations, while LRAT plays an important role in storing excess intracellular ROH by enzymatically converting it to retinyl esters. We used our in vitro system to explore whether ROH uptake may trigger transcriptional changes in these vitamin A-related proteins when treated with ROH and its binding partners. Specifically, we used RT-qPCR to measure changes in expression of STRA6, CRBP1, and LRAT after treatment of BMECs with the ROH preparations listed in Table 1. Primer sequences used are detailed in Table 4.
 
@@ -125,7 +241,7 @@ Neither STRA6 nor CRBP1 expression was affected to a statistically significant d
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/87863/elife-87863-fig8-v1.jpg)
 
-**Figure 8.:** Expression values are normalized to the housekeeping gene, ACTB, and quantified relative to BMECs treated with HBSS alone. ΔΔCq data are presented in box-and-whisker format after log2 transformation with the values for each biological replicate displayed individually (N = 4). Statistical analyses were performed in Prism on log2 transformed ΔΔCq values via one-way ANOVA followed by Dunnett’s test using a confidence interval of 95%. (A) STRA6; (B) CRBP1; and (C) LRAT.Figure 8—source data 1.
+**Figure 8.:** Expression values are normalized to the housekeeping gene, ACTB, and quantified relative to BMECs treated with HBSS alone. ΔΔCq data are presented in box-and-whisker format after log2 transformation with the values for each biological replicate displayed individually (N = 4). Statistical analyses were performed in Prism on log2 transformed ΔΔCq values via one-way ANOVA followed by Dunnett’s test using a confidence interval of 95%. (A) STRA6; (B) CRBP1; and (C) LRAT.
 
 ## Discussion
 
@@ -153,23 +269,192 @@ By leveraging the renewable, scalable, and genetically manipulable features of h
 
 ## Materials and methods
 
-## iPSC differentiation to BMECs
+### iPSC differentiation to BMECs
 
 IMR90-4 iPSCs (iPSC) were provided by WiCell (Madison, WI). Certificate of analysis is available here. Authentication analyses include karyotyping and identity by STR. Mycoplasma testing by PCR confirmed negative. IMR90-4 iPSCs were cultured on Matrigel-coated 6-well plates and supplemented daily with E8 medium (Stem Cell Technologies) as described (Stebbins et al., 2016). iPSCs were passaged in clumps at ~70% confluency every 3–5 d by dissociation with Versene (Life Technologies) at typical ratios between 1:6 and 1:12. To initiate differentiation into BMECs, iPSCs at ~70% confluency were dissociated and singularized by treatment with Accutase (Life Technologies) for 7–10 min and then diluted into fresh E8 media (1:4 v/v). Cells were counted on a hemocytometer, and then centrifuged at 200 × g for 5 min. The supernatant was aspirated and the pellet resuspended in fresh E8 medium supplemented with 10 μM ROCK inhibitor (Tocris R&D Systems). Resuspended cells were seeded at a density between 7500 and 12,500 cells/cm2 on fresh Matrigel-coated plates (day 3). ROCK-supplemented E8 media was aspirated and replaced with fresh E8 media (without ROCK inhibitor) 24 hr later to promote iPSC colony formation. Cells were subsequently expanded for 48 hr with daily E8 media replacement until reaching the optimal density of 30,000 cells/cm2 as described previously (Wilson et al., 2015). Unconditioned medium (UM: 50 mL knock-out serum replacement, 2.5 mL non-essential amino acids, 1.25 mL GlutaMAX [all from Life Technologies], and 1.75 μL of β-mercaptoethanol [Sigma] diluted into Dulbecco’s Modified Eagle Medium/Nutrient Mixture F-12 [DMEM] to 250 mL and vacuum filtered into 0.2 μm PES filter-top bottles) was prepared and stored at 4°C for up to 2 wk. On day 0, E8 medium was replaced with UM replenished daily for 6 d. On day 6, UM media was replaced with fresh EC +/+ media for 48 hr without replacement. EC +/- medium was prepared as follows: 5 mL B-27 Supplement (50×), serum free (Thermo Fisher) was diluted into human endothelial serum-free medium (Life Technologies) to 250 mL, and vacuum filtered into 0.2 μm PES filter-top bottles. EC +/- medium was stored at 4°C for up to 2 wk. EC +/+ media was prepared fresh daily by supplementation of EC +/- media with 10 μM all-trans retinoic acid (Sigma, diluted in DMSO) and FGF2 (WiCell/Waisman Biomanufacturing) diluted 1:5000. On day 7, plasticware (Corning) was coated with a 4:1:5 v/v/v collagen IV (Sigma)/fibronectin (Sigma)/sterile water stock solution. For Transwell-Clear permeable inserts (0.4 µm pore size), the concentration of collagen and fibronectin, respectively, was 400 µg/mL and 100 µg/mL. Each Transwell filter was coated with 200 μL of 4:1:5 solution. For all other plasticware, 4:1:5 solution was further diluted fivefold in sterile water. On day 8, cells were singularized with Accutase for 30–45 min, resuspended in EC +/+ medium, and plated onto the 4:1:5 collagen IV/fibronectin-coated plasticware prepared fresh the day before at a density of 1 × 106 cells/cm2 for 1.12 cm2 Transwell-Clear permeable inserts, at a density of 250,000 cells/cm2 on 6/12-well tissue culture polystyrene plates, or at a density of 1 × 106 cells/cm2 for 24-/48-/96-well tissue culture polystyrene plates. On day 9, EC +/+ medium was replaced with EC +/- medium without retinoic acid to promote barrier tightening. At least one Transwell was seeded per differentiation to monitor TEER as a measure of BMEC quality. TEER was measured every 24 hr after subculture on day 8 to confirm barrier tightness. Resistance was recorded using an EVOM ohmmeter with STX2 electrodes (World Precision Instruments Sarasotae, FL). Maximum TEER values for iPSC-derived BMECs prepared by this protocol are typically >2000 Ω × cm2, calculated by multiplying the resistance readings by 1.12 cm2 to account for the Transwell surface area. Maximum TEER was typically observed on day 10, on which all subsequent experiments were performed.
 
-## Immunocytochemical analysis of BMECs
+### Immunocytochemical analysis of BMECs
 
 BMECs were singularized on day 8 and seeded on 96-well plates coated with 4:1:5 solution. On day 10, cells were rinsed once with Dulbecco’s phosphate-buffered saline (DPBS) and fixed with either 100% methanol or 4% paraformaldehyde for 10–15 min at room temperature. After fixation, the fixing agent was aspirated and the cells were washed three times in immediate succession with DPBS. After washing, cells were incubated for 60 min at room temperature in blocking buffer (10 % v/v goat serum in DPBS) before overnight incubation at 4°C with primary antibodies diluted in blocking buffer (Table 2).
 
+**Table 2.**
+ Antibodies and staining information for immunocytochemistry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody target</th>
+      <th>Manufacturer</th>
+      <th>Catalog number</th>
+      <th>Clonality</th>
+      <th>Host</th>
+      <th>Dilution</th>
+      <th>Fixative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PECAM1</td>
+      <td>Thermo Fisher</td>
+      <td>RB-10333-P1</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:25</td>
+      <td>MeOH</td>
+    </tr>
+    <tr>
+      <td>CLDN5</td>
+      <td>Thermo Fisher</td>
+      <td>35-2500</td>
+      <td>Monoclonal</td>
+      <td>Mouse</td>
+      <td>1:200</td>
+      <td>MeOH</td>
+    </tr>
+    <tr>
+      <td>OCLN</td>
+      <td>Thermo Fisher</td>
+      <td>33-1500</td>
+      <td>Monoclonal</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>MeOH</td>
+    </tr>
+    <tr>
+      <td>TJP1 (ZO-1)</td>
+      <td>Thermo Fisher</td>
+      <td>33-9100</td>
+      <td>Monoclonal</td>
+      <td>Mouse</td>
+      <td>1:200</td>
+      <td>MeOH</td>
+    </tr>
+    <tr>
+      <td>SLC2A1 (GLUT1)</td>
+      <td>Thermo Fisher</td>
+      <td>MA1-37783</td>
+      <td>Monoclonal</td>
+      <td>Mouse</td>
+      <td>1:500</td>
+      <td>MeOH</td>
+    </tr>
+    <tr>
+      <td>ABCG2 (BCRP)</td>
+      <td>MilliporeSigma</td>
+      <td>MAB4155</td>
+      <td>Monoclonal</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>4% PFA</td>
+    </tr>
+    <tr>
+      <td>ABCC1 (MRP1)</td>
+      <td>MilliporeSigma</td>
+      <td>MAB4100</td>
+      <td>Monoclonal</td>
+      <td>Mouse</td>
+      <td>1:25</td>
+      <td>MeOH</td>
+    </tr>
+    <tr>
+      <td>STRA6</td>
+      <td>Abnova</td>
+      <td>H00064220-D01P</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:200</td>
+      <td>4% PFA</td>
+    </tr>
+    <tr>
+      <td>CRBP1</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-28713</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:500</td>
+      <td>MeOH</td>
+    </tr>
+    <tr>
+      <td>LRAT</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-38556</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:250</td>
+      <td>MeOH</td>
+    </tr>
+  </tbody>
+</table>
+
 After primary incubation, cells were washed three times at 5 min each with DPBS before incubation for 1 hr at room temperature in the dark with secondary antibodies in blocking buffer (goat anti-rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody conjugated to Alexa Fluor 488 (Thermo Fisher, 1:200 dilution, Cat# A-11008) or goat anti-mouse IgG1 Cross-Adsorbed Secondary Antibody conjugated to Alexa Fluor 488 (Thermo Fisher, 1:200 dilution, Cat# A-21121)). After secondary antibody incubation, cells were immediately stained for 15 min at room temperature in the dark with Hoechst nuclear count stain (Thermo Fisher) diluted 1:5000 in DPBS. Cells were washed three times and visualized in fresh DPBS on a Nikon Ti2 epifluorescence microscope with a ×20 objective. Images were analyzed with FIJI software.
 
-## Western blot analysis for LRAT, CRBP1, and STRA6 expression
+### Western blot analysis for LRAT, CRBP1, and STRA6 expression
 
 BMECs were singularized on day 8 and seeded on 6-well plates coated with 4:1:5 solution. On day 10, BMECs were rinsed once with DPBS (Thermo Fisher) and lysed for 15 min at 4°C using ice-cold radioimmunoprecipitation assay buffer (Rockland) supplemented with protease inhibitor cocktail (Pierce) according to the manufacturer’s recommendation. Lysate, including cell membrane debris, was collected via scraping and centrifuged at max speed for 10 min at 4°C. Supernatant was collected and the protein concentration quantified by bicinchoinic acid assay according to the manufacturer’s protocols (Pierce). Lysate was prepared for SDS-PAGE by mixing with 4× NuPAGE LDS Sample Buffer and NuPAGE Sample Reducing Agent. Samples were boiled at 70°C for 10 min and loaded into 4–12% Bis-Tris SDS-PAGE gels (Thermo Fisher) at 10–20 μg protein/well. SDS-PAGE was run at 200 V using either NuPAGE MES SDS Running Buffer to resolve LRAT and CRBP1 or NuPAGE MOPS SDS Running Buffer to resolve STRA6. All running buffers were supplemented with NuPAGE Antioxidant according to the manufacturer‘s protocols. Samples were transferred at 30 V in NuPAGE Transfer Buffer to 0.45 micron polyvinylidene difluoride (PVDF) membranes (Amersham) for 1 hr. After transfer, PVDF membranes were washed three times at 5 min each in Tris-buffered saline with 0.1% Tween 20 (TBST). Membranes were blocked for 1 hr at room temperature in blocking buffer (5 % w/v non-fat dry milk dissolved in TBST) before overnight incubation at 4°C with primary antibodies diluted in blocking buffer (Table 3).
 
+**Table 3.**
+ Antibodies and staining information for western blot.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody target</th>
+      <th>Manufacturer</th>
+      <th>Catalog number</th>
+      <th>Clonality</th>
+      <th>Host</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LRAT</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-38556</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>CRBP1</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-28713</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>STRA6</td>
+      <td>Abnova</td>
+      <td>H00064220-D01P</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>TJP1 (ZO-1)</td>
+      <td>Thermo Fisher</td>
+      <td>33-9100</td>
+      <td>Monoclonal</td>
+      <td>Mouse</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>TJP1 (ZO-1)</td>
+      <td>Thermo Fisher</td>
+      <td>40-2200</td>
+      <td>Polyclonal</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
 After primary incubation, membranes were washed three times at 5 min each in TBST before incubation for 1 hr at room temperature in the dark with goat anti-rabbit IgG IRDye 680RD (Li-Cor, 1:5000 dilution, Cat# 926-68071) and donkey anti-mouse IgG IRDye 800CW (Li-Cor, 1:5000 dilution, Cat# 926-32212) secondary antibodies in blocking buffer. Membranes were washed three times for 5 min each in TBST and imaged using a Li-Cor Odyssey Imager.
 
-## Preparation of retinol, RBP, and TTR
+### Preparation of retinol, RBP, and TTR
 
 All-trans retinol (Sigma) and alpha-tocopherol (Sigma), which served as an antioxidant stabilizer, were dissolved in ethanol in equimolar concentrations and stored at –80°C. Concentrations of retinol (ROH) and alpha-tocopherol were determined by absorption using molar extinction coefficients of 52,480 M–1 cm–1 at 325 nm and 3260 M–1 cm–1 at 292 nm, for ROH and alpha-tocopherol, respectively. [15-3H(N)]-ROH (American Radiolabeled Chemicals), with an activity of 30 Ci/mmol, was supplied in an ethanol solution at 1 mCi/mL stabilized by alpha-tocopherol at a concentration of 1 mg/mL and stored at –20°C.
 
@@ -177,18 +462,59 @@ Recombinant human retinol-binding protein IV (RBP) and mutant L63R/L64S retinol-
 
 Recombinant human TTR and mutant I84A transthyretin (muTTR) were prepared using the pTWIN system as described (Liu et al., 2009). Briefly, protein was recovered from inclusion bodies by sonication in 8 M urea buffer, centrifugation to remove any insoluble material and rapid dilution of supernatant into Tris buffer to a final urea concentration of 4 M. The protein solution was applied to a chitin affinity column and allowed to refold on column. TTR was eluted by intein-mediated self-cleavage, and purified protein was dialyzed into PBS and concentrated via centrifugal filtration prior to storage at 4°C. Concentrations were determined via absorption using an extinction coefficient of 77,600 M–1 cm–1 at 280 nm. ROH-RBP-TTR and ROH-RBP-muTTR samples used for experiments were prepared 24 hr prior to use by mixing TTR or muTTR with stock solutions of ROH-RBP. Confirmation of TTR binding to ROH-RBP was determined by fluorescence anisotropy, where binding of TTR increases ROH anisotropy (Ex/Em: 330/460). 3H-ROH-RBP-TTR and 3H-ROH-RBP-muTTR complex were prepared identically using 3H-ROH-RBP stock solutions.
 
-## Retinol cellular accumulation
+### Retinol cellular accumulation
 
 BMEC monolayers cultured in 96-well plates were prepared as described and were used on day 10 for retinol accumulation assays, performed at 37°C on a shaker. BMECs from the same differentiation were seeded in parallel on Transwells to confirm quality via TEER measurements. Briefly, on day 10 of the differentiation, cell media was aspirated from all wells and replaced with solutions composed of HBSS (Thermo Fisher) and ROH, ROH-RBP, ROH-muRBP, ROH-RBP-TTR, or ROH-RBP-muTTR. Unlabeled ROH was mixed 1 hr prior to use with a 3H tracer prepared identically at a target final concentration of 5% 3H-ROH. The actual concentration was quantified by liquid scintillation and tracer percentage adjusted accordingly. For each experiment, one 96-well plate was subdivided into 25 triplicate groups and loaded with the various ROH preparations. Wells were aspirated serially in triplicate every 5 min over the course of 2 hr, and each well was considered a biologically distinct replicate. Immediately after aspiration, each well was washed twice with HBSS and allowed to dry. All wells were lysed simultaneously by addition of 100 µL of ice-cold radioimmunoprecipitation assay (RIPA) buffer per well and incubated at 4°C for 10 min. Following lysis, each 100 µL lysate/RIPA mixture was placed into an individual liquid scintillation counting vial and measured for 3H DPM. Briefly, vials were diluted with 10 mL of UltimaGold (PerkinElmer), shaken vigorously, and counted immediately three times for 5 min each on a Tri-Carb 2900TR Liquid Scintillation Counter (PerkinElmer). The average DPM from the three technical replicate readings was utilized as the readout. Tritiated samples were counted using a preset region of 0–18.6 keV, while carbon-14 samples, where required, were counted simultaneously using a preset region of 0–156 keV. Self-normalization and calibration (SNC) was performed using external standards prior to each data run. DPM were converted to cellular concentrations by using the specific activity of the tritiated retinol and an assumed cellular volume calculated by multiplying the average area of a cell by its average height.
 
-## Two-step RT-qPCR
+### Two-step RT-qPCR
 
 BMECs were singularized on day 8 and seeded on 24-well plates coated with 4:1:5 solution. On day 10, BMECs were treated in parallel with the relevant ROH preparations for 2 hr. Each condition tested contained three biological replicates. Wells were aspirated after 2 hr and cells immediately incubated in Accutase for 30 min at 37°C to promote dissociation. After 30 min, cells were collected in microcentrifuge tubes and centrifuged at 200 × g for 5 min. The supernatant was aspirated and samples were stored at –80°C. RNA from each individual sample was harvested independently using the QIAGEN RNeasy Mini Kit (QIAGEN) according to the manufacturer’s instructions. To prepare cell lysate, samples were suspended in RNeasy kit Lysis Buffer and β-mercaptoethanol (1:100 v/v) and homogenized using QIAshredder columns (QIAGEN). Samples loaded on spin columns were treated with DNase (QIAGEN) to digest genomic DNA prior to RNA purification. RNA was eluted in molecular biology grade water (Corning) and quantified by UV-vis absorbance using an Eppendorf BioSpectrometer. Sample quality was confirmed by a clean absorbance scan with an A260/280 ratio of >1.8. Then, 200 ng of purified RNA was immediately reverse transcribed at 37°C for 1 hr in an S1000 Thermal Cycler (Bio-Rad) via the OmniScript RT Kit (QIAGEN) according to the manufacturer’s instructions using RNase Out (Thermo Fisher) and Oligo(dT)12-18 primers (Thermo Fisher). cDNA was used immediately or stored at 4°C for no more than 24 hr prior to qPCR.
 
 qPCR samples were prepared using 2× PowerUP SYBR Green (Thermo Fisher), 10 ng of cDNA template prepared previously, and PCR primers diluted in molecular biology grade water as described in Table 4.
 
+**Table 4.**
+ qPCR primer information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Expected product size (bp)</th>
+      <th>Oligo sequences5′ – forward primer – 3′5′ – reverse primer – 3′</th>
+      <th>Final reaction concentration (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LRAT</td>
+      <td>149</td>
+      <td>AGCCTGCTGTGGAACAACTGGCCAATCCCAAGACTGCTGA</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>CRBP1</td>
+      <td>175</td>
+      <td>AGATCGTGCAGGACGGTGACCCTTCTGCACACACTGGAG</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>STRA6</td>
+      <td>216</td>
+      <td>ACACACAGGACCAACCTTCGAGGAGCACAGGCATGAGCACCA</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>ACTB</td>
+      <td>218</td>
+      <td>CATCCGCAAAGACCTGTACGCCTGCTTGCTGATCCACATC</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
 Samples were loaded onto qPCR-skirted plates (Agilent) and placed into an AriaMx Real-time PCR System (Agilent). Each run was initiated with a hot start at 95°C for 15 min, followed by 50 cycles consisting of a 15 s denaturation step at 95°C, followed by a 60 s amplification step at 60°C. Fluorescence was analyzed after each cycle. After 50 cycles, the PCR product was melted and melt curves were inspected after each run to ensure only one peak was observed, corresponding to the appropriate PCR product as determined by agarose gel electrophoresis. Each condition analyzed contained four biological replicates with three technical replicates for each gene. An arithmetic mean Cq value was calculated from the technical replicates for each gene, and this value for BMECs treated with HBSS alone was used as the reference to calculate ΔCq values for each biological replicate of each gene for each ROH delivery condition. ΔCq values were converted to normalized expression quantities using an assumed 100% efficiency and ACTB as a housekeeping gene. Statistical analyses were performed on log2-transformed relative fold change quantities using one-way ANOVA followed by Dunnett’s test with an assumed confidence interval of 95%. Log2-transformed relative fold change data are presented graphically in box-and-whisker format.
 
-## Retinol BBB permeability assays
+### Retinol BBB permeability assays
 
 BMEC monolayers cultured on collagen/fibronectin 12-well Transwells were prepared as described. On day 10 of the differentiation, TEER was optimal and BMECs were used for permeability assays. Then, 550 µL of ROH-containing solution was applied in triplicate to the apical chambers and 1500 µL of HBSS was added into each basolateral chamber. ROH preparations were spiked with 14C-sucrose (PerkinElmer) as a paracellular transport control. Samples collected from the apical and basolateral chambers over the course of the experiment totaled 10% of the bulk volume, and liquid removed from basolateral chambers was immediately replenished with the same volume of fresh HBSS. At t = 0, samples were collected from both apical and basolateral chambers. Plates were then placed at 37°C on a shaker. Samples were collected from the basolateral chambers every 15 min. At t = 60 min, an additional sample was also collected from the apical chamber. Once removed, each sample was placed into a scintillation vial for counting. TEER was measured after the final sample collection at 60 min to verify integrity of the monolayer. At the conclusion of the assay, solutions in both the apical and basolateral compartments were aspirated and 100 µL of ice-cold RIPA buffer was added directly to the BMEC monolayer to lyse the cells. After incubation at 4°C for 10 min, cell lysate was scraped and collected for scintillation counting. Concentrations of tritium in the apical and basolateral chambers were calculated using the specific activity and well volume. Concentrations of tritium associated with the BMEC monolayers were calculated using the specific activity and the estimated volume of a single BMEC cell.

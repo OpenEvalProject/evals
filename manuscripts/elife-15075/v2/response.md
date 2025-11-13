@@ -19,11 +19,9 @@ We thank the reviewer(s) for pointing out this issue: Indeed our mean B-values d
 
 Are there portions of the structure that exhibit more disorder or are these high temperature factors throughout the structure?
 
-Yes. As shown in revised Figure 4B, the Cterminal LRRs of HAESA in contact with SERK1 in our complex structure appear to be somewhat flexible. Author response image 1. illustrates that the B-values are significantly higher in the C-terminal part of the HAESA LRR domain (with the Cterminal capping domain being the most flexible), while both the N-terminal LRRs of HAESA (with exception of the LRR N-terminal capping domain) and the IDA peptide appear better ordered in our P3121 crystals form.10.7554/eLife.15075.015Author response image 1.Cα trace of the HAESA LRR domain and IDA peptide colored according to B-factor from low (60.9, in blue) to high (134.7, in red).Mean B-value is 79.5.DOI: http://dx.doi.org/10.7554/eLife.15075.015
+Yes. As shown in revised Figure 4B, the Cterminal LRRs of HAESA in contact with SERK1 in our complex structure appear to be somewhat flexible. Author response image 1. illustrates that the B-values are significantly higher in the C-terminal part of the HAESA LRR domain (with the Cterminal capping domain being the most flexible), while both the N-terminal LRRs of HAESA (with exception of the LRR N-terminal capping domain) and the IDA peptide appear better ordered in our P3121 crystals form.10.7554/eLife.15075.015Author response image 1.Cα trace of the HAESA LRR domain and IDA peptide colored according to B-factor from low (60.9, in blue) to high (134.7, in red).Mean B-value is 79.5.
 
 Mean B-value is 79.5.
-
-DOI: http://dx.doi.org/10.7554/eLife.15075.015
 
 Are there potential problems with radiation damage due to the high multiplicity?
 
@@ -61,11 +59,9 @@ Yes. We present a structure-based sequence alignment of AtHAESA and AtHSL2, as w
 
 4) The authors show that N-terminal extension of the peptide does not impact on binding efficiency, but what would happen if the peptide was extended at the C-terminal end, at the suggested cleavage site?
 
-Thank you for suggesting this experiment. We synthesized a C-terminally extended version of the IDA peptide (IDA-SFVN with sequence YPIPPSA-Hyp- SKRHN SFVN) and performed quantitative binding assays by ITC. As shown in Author response image 2, we cannot observe any detectable binding of this C-terminally extended peptide to the HAESA ectodomain, consistent with our crystallographic models that suggest that HAESA specifically senses an active IDA 12mer. We have incorporated this new result in Figure 2D. We have included a new statement in the manuscript that reads: “The COO- group of Asn69IDA is in direct contact with Arg407HAESA and Arg409HAESA and HAESA cannot bind a C-terminally extended IDA-SFVN peptide (Figures 1D, F, 2D).”10.7554/eLife.15075.016Author response image 2.Isothermal titration calorimetry thermograph of the C-terminally extended IDA-SFVN peptide (200 μM) titrated into a solution containing 20 μM of the purified HAESA ectodomain.No detectable binding is observed.DOI: http://dx.doi.org/10.7554/eLife.15075.016
+Thank you for suggesting this experiment. We synthesized a C-terminally extended version of the IDA peptide (IDA-SFVN with sequence YPIPPSA-Hyp- SKRHN SFVN) and performed quantitative binding assays by ITC. As shown in Author response image 2, we cannot observe any detectable binding of this C-terminally extended peptide to the HAESA ectodomain, consistent with our crystallographic models that suggest that HAESA specifically senses an active IDA 12mer. We have incorporated this new result in Figure 2D. We have included a new statement in the manuscript that reads: “The COO- group of Asn69IDA is in direct contact with Arg407HAESA and Arg409HAESA and HAESA cannot bind a C-terminally extended IDA-SFVN peptide (Figures 1D, F, 2D).”10.7554/eLife.15075.016Author response image 2.Isothermal titration calorimetry thermograph of the C-terminally extended IDA-SFVN peptide (200 μM) titrated into a solution containing 20 μM of the purified HAESA ectodomain.No detectable binding is observed.
 
 No detectable binding is observed.
-
-DOI: http://dx.doi.org/10.7554/eLife.15075.016
 
 Would cleavage be required for recognition? A brief discussion on this point may help.
 

@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/022kthw22 Department of Biomedical Engineering, University of Rochester Rochester United States
-2. https://ror.org/022kthw22 Department of Neurology, University of Rochester Rochester United States
-3. https://ror.org/022kthw22 Department of Neuroscience, University of Rochester Rochester United States
+1. Department of Biomedical Engineering, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
+2. Department of Neurology, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
+3. Department of Neuroscience, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
 
 † Corresponding author
 
@@ -51,9 +51,147 @@ We recorded spiking activity as each of three monkeys executed a delayed respons
 
 **Figure 2.:** (A) In separate blocks of trials, monkeys reached for, grasped, and manipulated four different objects themselves (Exe) and then observed a human performing the same task (Obs). (B) The times of eight behavioral events from start-of-trial to end-of-trial divided each trial into seven epochs from initial hold to reward. For analyses, the data were aligned separately on, and trajectories were sampled for 100 ms following the times of four selected events—instruction onset (I), go cue (G), movement onset (M), and the beginning of the final hold (H). (C) Recording array locations in ventral premotor cortex (PMv) (green) and dorsal premotor cortex (PMd) (orange) for each monkey have been redrawn from intraoperative photographs. PCD—precentral dimple; AS—arcuate sulcus; CS—central sulcus; r—rostral; m—medial. Scale bars representing 4 mm apply to all three monkeys.
 
+**Table 1.**
+ Numbers of trials in each session.For each of the three sessions from each of the three monkeys, numbers of trials involving each of the four objects (sphere, button, coaxial cylinder, perpendicular cylinder) are given in parentheses separately for execution and for observation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Monkey R</th>
+      <th colspan="2">Monkey F</th>
+      <th colspan="2">Monkey T</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Exe</td>
+      <td>Obs</td>
+      <td>Exe</td>
+      <td>Obs</td>
+      <td>Exe</td>
+      <td>Obs</td>
+    </tr>
+    <tr>
+      <td>Session 1</td>
+      <td>(22,8,25,26)</td>
+      <td>(32,31,30,31)</td>
+      <td>(58,59,62,63)</td>
+      <td>(71,72,71,72)</td>
+      <td>(57,54,57,55)</td>
+      <td>(60,61,59,57)</td>
+    </tr>
+    <tr>
+      <td>Session 2</td>
+      <td>(34,26,34,38)</td>
+      <td>(40,41,40,37)</td>
+      <td>(59,58,60,56)</td>
+      <td>(73,72,75,74)</td>
+      <td>(47,53,52,43)</td>
+      <td>(57,53,58,58)</td>
+    </tr>
+    <tr>
+      <td>Session 3</td>
+      <td>(42,41,49,45)</td>
+      <td>(49,50,51,49)</td>
+      <td>(63,58,58,58)</td>
+      <td>(72,75,74,74)</td>
+      <td>(43,41,38,42)</td>
+      <td>(50,48,48,50)</td>
+    </tr>
+  </tbody>
+</table>
+
 The three monkeys each were implanted with floating microelectrode arrays (FMAs, Microprobes for Life Sciences) in the PMv and in the PMd. The locations of the arrays in each monkey are illustrated in Figure 2C. Using object and epoch as factors, we performed two-way repeated measures analysis of variance (ANOVA) on the firing rate of each sorted unit recorded from the arrays in each session (see Methods). Because unit firing rates typically differed during execution and observation, we performed such ANOVAs separately on execution trials and observation trials. Table 2 gives the numbers of PM (PMv+PMd) units identified in each session as being modulated significantly during both execution and observation, which we refer to as MNs, along with the numbers of units modulated significantly during execution but not observation (AE), during observation but not execution (AO), or with no significant modulation during either execution or observation (NS). The numbers of AO and NS units were consistently small across monkeys and sessions. The present analyses therefore focus on MNs and, for comparison, AE neurons.
 
-## Condition-dependent versus condition-independent neural activity in PM MNs
+**Table 2.**
+ Numbers of premotor cortex units in each session.For each of the three sessions from each of the three monkeys (R, T, and F), numbers of PM units are given for each of four classes in the format of total (PMv, PMd). MNs—mirror neurons, modulated significantly during action execution and during action observation. AE—action execution neurons, modulated during execution but not during observation. AO—action observation neurons, modulated during observation but not execution. NS—not significant, units not modulated significantly during either execution or observation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Monkey</th>
+      <th>Session</th>
+      <th>MN</th>
+      <th>AE</th>
+      <th>AO</th>
+      <th>NS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">R</td>
+      <td>1</td>
+      <td>48 (19,29)</td>
+      <td>35 (20,15)</td>
+      <td>3 (1,2)</td>
+      <td>5 (2,3)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>47 (21,26)</td>
+      <td>25 (16,9)</td>
+      <td>5 (1,4)</td>
+      <td>11 (4,7)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>37 (19,18)</td>
+      <td>49 (20,29)</td>
+      <td>1 (1,0)</td>
+      <td>8 (7,1)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">T</td>
+      <td>1</td>
+      <td>79 (37,42)</td>
+      <td>15 (5,10)</td>
+      <td>2 (0,2)</td>
+      <td>7 (1,6)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>91 (48,43)</td>
+      <td>22 (6,16)</td>
+      <td>3 (1,2)</td>
+      <td>7 (1,6)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>100 (48,52)</td>
+      <td>18 (7,11)</td>
+      <td>0 (0,0)</td>
+      <td>6 (2,4)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">F</td>
+      <td>1</td>
+      <td>44 (24,20)</td>
+      <td>7 (5,2)</td>
+      <td>1 (1,0)</td>
+      <td>8 (8,0)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>47 (32,15)</td>
+      <td>10 (9,1)</td>
+      <td>5 (1,4)</td>
+      <td>3 (3,0)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>42 (28,14)</td>
+      <td>9 (7,2)</td>
+      <td>3 (1,2)</td>
+      <td>3 (3,0)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Condition-dependent versus condition-independent neural activity in PM MNs
 
 Whereas a large fraction of condition-dependent neural variance during reaching movements without grasping can be captured in a two-dimensional subspace (Churchland et al., 2012; Ames et al., 2014), condition-dependent activity in movements that involve grasping is more complex (Suresh et al., 2020). In part, this may reflect the greater complexity of controlling the 24 degrees of freedom (DOFs) in the hand and wrist as compared to the 4 DOFs in the elbow and shoulder (Sobinov and Bensmaia, 2021). Figure 3 illustrates this complexity in a PM MN population during the present RGM movements. Here, PCA was performed on the activity of a PM MN population across the entire time course of execution trials involving all four objects. The colored traces in Figure 3A show neural trajectories averaged separately across trials involving each of the four objects and then projected into the PC1 versus PC2 plane of the total neural space. Most of the variance in these four trajectories is comprised of a shared rotational component. The black trajectory, obtained by averaging trajectories from trials involving all four objects together, represents this condition-independent (i.e. independent of the object involved) activity. The condition-dependent (i.e. dependent on which object was involved) variation in activity is reflected by the variation in the colored trajectories around the black trajectory. The condition-dependent portions can be isolated by subtracting the black trajectory from each of the colored trajectories. The resulting four condition-dependent trajectories have been projected into the PC1 versus PC2 plane of their own common subspace in Figure 3B. Rather than exhibiting a simple rotational motif, these trajectories appear knotted. To better understand how these complex, condition-dependent trajectories progress over the time course of RGM trials, we chose to examine time series of instantaneous subspaces.
 
@@ -61,31 +199,63 @@ Whereas a large fraction of condition-dependent neural variance during reaching 
 
 **Figure 3.:** (A) Neural trajectories of premotor cortex mirror neuron firing rates averaged across multiple execution trials involving each of the four objects (sphere—purple, button—cyan, coaxial cylinder [Coax]—magenta, perpendicular cylinder [Perp]—yellow) have been projected into the PC1 versus PC2 plane of the total neural activity. Averaging these four trajectories gives their common, condition-independent (CI) trajectory (black). Time proceeds clockwise from left, with data separately aligned at four selected times: triangle—instruction onset (I); circle—go cue (G); square—movement onset (M); diamond—beginning of final hold (H). (B) Condition-dependent trajectories obtained by subtracting the CI trajectory (black) from each of the four single-object trajectories (colors) in (A), and then projected into the PC1 versus PC2 plane of their common, condition-dependent (CD) subspace across the entire time course of trials. Data from monkey R, session 2.
 
-## Instantaneous subspaces shift progressively during both execution and observation
+### Instantaneous subspaces shift progressively during both execution and observation
 
 We identified an instantaneous subspace at each 1 ms time step of RGM trials. At each time step, we applied PCA to the 4 instantaneous neural states (i.e. the 4 points on the neural trajectories representing trials involving the 4 different objects each averaged across 20 trials per object, totaling 80 trials), yielding a three-dimensional subspace at that time (see Methods). Note that because these three-dimensional subspaces are essentially instantaneous, they capture the condition-dependent variation in neural states, but not the common, condition-independent variation. To examine the temporal progression of these instantaneous subspaces, we then calculated the principal angles between each 80-trial instantaneous subspace and the instantaneous subspaces averaged across all trials at four behavioral time points that could be readily defined across trials, sessions, and monkeys: the onset of the instruction (I), the go cue (G), the movement onset (M), and the beginning of the final hold (H). This process was repeated 10 times with replacement to assess the variability of the principal angles. The closer the principal angles are to 0°, the closer the two subspaces are to being identical; the closer to 90°, the closer the two subspaces are to being orthogonal.
 
 Figure 4A–D illustrates the temporal progression of the first principal angle of the MN population in the three sessions (red, green, and blue) from monkey R during execution trials. As illustrated in Figure 4—figure supplement 1 (see also the related Methods), in each session, all three principal angles, each of which could range from 0° to 90°, tended to follow a similar time course. In the Results, we therefore illustrate only the first (i.e. smallest) principal angle. Solid traces represent the mean across 10-fold cross-validation using the 80-trial subsets of all the available trials; shading indicates ±1 standard deviation. As would be expected, the instantaneous subspace using 80 trials approaches the subspace using all trials at each of the four selected times—I, G, M, and H—indicated by the relatively narrow trough dipping toward 0°. Of greater interest are the slower changes in the first principal angle in between these four time points. Figure 4A shows that after instruction onset (I), the instantaneous subspace shifted quickly away from the subspace at time I, indicated by a rapid increase in principal angle to levels not much lower than what might be expected by chance alone (horizontal dashed line). In contrast, throughout the remainder of the instruction and delay epochs (from I to G), Figure 4B and C show that the 80-trial instantaneous subspace shifted gradually and concurrently, not sequentially, toward the all-trial subspaces that would be reached at the end of the delay period (G) and then at the onset of movement (M), indicated by the progressive decreases in principal angle. As shown by Figure 4D, shifting toward the H subspace did not begin until the movement onset (M). To summarize, these changes in principal angles indicate that after shifting briefly toward the subspace present at time the instruction appeared (I), the instantaneous subspace shifted progressively throughout the instruction and delay epochs toward the subspace that would be reached at the time of the go cue (G), then further toward that at the time of movement onset (M), and only thereafter shifted toward the instantaneous subspace that would be present at the time of the hold (H).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Mirror neuron (MN) populations during execution trials; (E–H) MN populations during observation trials; (I–L) AE neuron populations during execution trials. Each frame shows the time course of the first principal angle between the time series of instantaneous subspaces and that present at one of four selected times—A, E, I: instruction onset; B, F, J: go cue; C, G, K: movement onset; or D, H, L: the beginning of the final hold. Results in 1 ms steps have been aligned separately at the times of the instruction onset (I), go cue (G), movement onset (M), and hold (H) —each indicated by a vertical line as labeled in the frame at upper left. Red, green, and blue traces represent sessions 1, 2, and 3, respectively, from monkey R. Solid traces represent means, and shaded areas represent ±1 standard deviation across 10-fold cross-validation as described in the Methods. Horizontal black lines indicate the average (solid) and the average minus 3 standard deviations (dashed) of the first principal angle between a fixed 3D space and other 3D spaces chosen randomly within an N-dimensional space (see Figure 4—figure supplement 2 and related Methods). Here, N=37, the number of MNs in session 3. Horizontal purple bars in the left column (A, E, I) indicate 500 ms, which applies to the entire row.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** An example in which the three principal angles, $\theta_{1},\theta_{2},\theta_{3}$, between the instantaneous subspace at time M (movement onset) and the entire time series of instantaneous subspaces have been plotted as a function of time for premotor cortex mirror neurons (PM MNs). (Data from monkey R, session 1.) Note that all three principal angles go to 0° at time M when the current instantaneous subspace is, by definition, the subspace at time M.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Error bars indicate ±1 standard deviation from the mean. Note that as the dimensionality of the parent space decreases, the random principal angle also decreases.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** As would be expected given that AE neurons were not modulated significantly during observation trials, in the observation context AE populations had no gradual changes in principal angle, showing only relatively sharp troughs dipping toward 0° at each of the four selected times when the current instantaneous subspace, by definition, approached that at times I, G, M, or H. Formatting is the same as in Figure 4.
+
 Figure 4E–H shows the progression of the first principal angle of the MN population during observation trials. Overall, the temporal progression of the MN instantaneous subspace during observation was similar to that found during execution, particularly around times I and H. The decrease in principal angle relative to the G and M instantaneous subspaces during the delay epoch was less pronounced during observation than during execution. Nevertheless, these findings support the hypothesis that the condition-dependent subspace of PM MNs shifts progressively over the time course of RGM trials during both execution and observation, as illustrated schematically in Figure 1A.
 
 We also examined the temporal progression of the instantaneous subspace of AE neurons. As would be expected given that AE neurons were not modulated significantly during observation trials, in the observation context AE populations had no gradual changes in principal angle (Figure 4—figure supplement 3). During execution, however, Figure 4I–L shows that the AE populations had a pattern of gradual decrease in principal angle similar to that found in the MN population (Figure 4A–D). After the instruction onset, the instantaneous subspace shifted quickly away from that present at time I and progressed gradually toward that present at times G and M, only shifting toward that present at time H after movement onset. As for the PM MN populations, the condition-dependent subspace of the PM AE populations shifted progressively over the time course of execution RGM trials.
 
-## Neural trajectories separate progressively during both execution and observation
+### Neural trajectories separate progressively during both execution and observation
 
 The progressive changes in principal angles do not capture another important aspect of condition-dependent neural activity. The neural trajectories during trials involving different objects separated increasingly as trials progressed in time. To illustrate this increasing separation, we clipped 100 ms segments of high-dimensional MN population trial-averaged trajectories beginning at times I, G, M, and H, for trials involving each of the four objects. We then projected the set of four object-specific trajectory segments clipped at each time into each of the four instantaneous 3D subspaces at times I, G, M, and H. This process was repeated separately for execution trials and for observation trials.
 
 For visualization, we projected these trial-averaged trajectory segments from an example session into the PC1 versus PC2 planes (which consistently captured >70% of the variance) of the I, G, M, or H instantaneous 3D subspaces. In Figure 5, the trajectory segments for each of the four objects (sphere—purple, button—cyan, coaxial cylinder—magenta, perpendicular cylinder—yellow) sampled at different times (rows) have been projected into each of the four instantaneous subspaces defined at different times (columns). Rather than appearing knotted as in Figure 3, these short trajectory segments are distinct when projected into each instantaneous subspace.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig5-v1.jpg)
+
+**Figure 5.:** (A) Using execution data from an example session (monkey T, session 3), trajectory segments averaged across trials involving each of the four objects (sphere—purple, button—cyan, coaxial cylinder [coax]—magenta, perpendicular cylinder [perp]—yellow) were clipped for 100 ms immediately following each of four behavioral events (rows: instruction onset, go cue, movement onset, hold). Each set of these four segments was then projected into the PC1 versus PC2 plane of the instantaneous 3D subspace present at four different times (columns: I, G, M, H). (B) The same process was performed using observation data from the same session. The PC1 versus PC2 scales at lower left in (B) apply to all frames in both (A and B).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** To summarize the changes in trajectory separation illustrated in Figure 5, we calculated the three-dimensional cumulative separation (CS), the summed pointwise Euclidean distance between all pairwise combinations of the four object-specific trajectory segments (see Methods) for each set of four segments projected into each of the four instantaneous subspaces at times I, G, M, or H. CS values, which we use only to characterize the phenomenon of trajectory separation, are illustrated for execution from the example session of Figure 5 as a color matrix in (A) and for observation in (B). For both execution and observation, the highest CS values lie on the main diagonal, increasing in temporal order from instruction to go to movement to hold, with the exception that for execution, CS for hold was less than for movement. (C) and (D) show CS matrices averaged across all three sessions from all three monkeys for execution and observation, respectively, demonstrating that the features seen in the example session of Figure 5 were relatively consistent across sessions. Across all nine sessions, two-way analysis of variance (ANOVA) showed significant main effects on CS values of both segment and subspace, as well as a significant interaction effect during both execution and observation (p<0.05). In both of these contexts, as the instantaneous subspace of the PM MN population shifted progressively over the time course of reach-grasp-manipulate (RGM) trials, the separation of condition-dependent neural trajectories also increased.
+
 Along the main diagonal of Figure 5A, each set of trajectory segments is projected into its corresponding subspace, showing that during execution the trajectory segments for the four objects were close together at the time of instruction onset (I), became more separated at the time of the go cue (G), had separated further still at movement onset (M), and had become somewhat less separated at the beginning of the final hold (H). During observation (Figure 5B), a similar trend is evident along the main diagonal, although the separation is less, reflecting the commonly described lower firing rates of MNs during observation than during execution (Ferroni et al., 2021). In addition, during observation, the separation of the four trajectories was somewhat greater at the beginning of the hold (H) than at movement onset (M). Off-diagonal frames along the rows (same trajectory segments, different instantaneous subspaces) or along the columns (different trajectory segments, same instantaneous subspaces) show less separation than along the main diagonal, both during execution and during observation. To summarize these differences in trajectory separation, we calculated the three-dimensional cumulative separation (CS—see Methods) for each set of four segments projected into each of the four instantaneous subspaces both for this example session and averaged across all nine sessions (Figure 5—figure supplement 1). These differences in separation when the same trajectory segments are projected into different subspaces reflect the progressive shifting of the condition-dependent instantaneous subspace of the PM MN population as trials progressed over time, as illustrated schematically in Figure 1B.
 
-## Decodable information changes progressively during both execution and observation
+### Decodable information changes progressively during both execution and observation
 
 As RGM trials proceeded in time, the condition-dependent neural activity of the PM MN population thus changed in two ways. First, the instantaneous condition-dependent subspace shifted, indicating that the patterns of firing rate co-modulation among neurons representing the four different RGM movements changed progressively, both during execution and during observation. Second, as firing rates generally increased, the neural trajectories representing the four RGM movements became progressively more separated, more so during execution than during observation.
 
 To evaluate the combined effects of these two progressive changes, we clipped 100 ms single-trial trajectory segments beginning at times I, G, M, or H, and projected these trajectory segments from individual trials into the instantaneous 3D subspaces at 50 ms time steps. At each of these time steps, we trained a separate long short-term memory (LSTM) decoder to classify individual trials according to which of the four objects was involved in that trial. We expected that the trajectory segments would be classified most accurately when projected into instantaneous subspaces near the time at which the trajectory segments were clipped. At other times, we reasoned that classification accuracy would depend both on the similarity of the current instantaneous subspace to that found at the clip time as evaluated by the principal angle (Figure 4) and on the separation of the four trajectories at the clip time (Figure 5).
 
 Figure 6A–D shows the resulting classification accuracy as a function of trial time for the 100 ms instruction, go, movement, or hold MN execution trajectory segments, each projected into the same time series of instantaneous MN execution subspaces from the same session. Solid curves indicate classification accuracy averaged across 10-fold cross-validation (as described in the Methods); the surrounding shaded areas indicate ±1 standard deviation from that average; different colors indicate results from the three different sessions in monkey R. Horizontal lines indicate the range of classification accuracies that would have been obtained had the instantaneous subspaces been chosen randomly, which we estimated for each set of trajectory segments by bootstrapping—projecting the trajectory segments into a randomly selected 3D space, training an LSTM decoder, and classifying single trials, repeated 500 times (Natraj et al., 2022).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Classification accuracy for mirror neuron execution trajectory segments projected into instantaneous execution subspaces; (E–H) for mirror neuron observation trajectory segments projected into their instantaneous observation subspaces; (I–L) for action-execution neuron trajectory segment projected into their instantaneous execution subspaces. (A, E, I) Instruction trajectory segments; (B, F, J) go segments; (C, G, K) movement segments; (D, H, L) hold segments. Red, green, and blue traces represent sessions 1, 2, and 3, respectively, from monkey R. Results in 50 ms steps have been aligned separately at the times of the instruction onset (I), go cue (G), movement onset (M), and hold (H)—each indicated by a vertical line as labeled in the frame at upper left. In each frame, the short horizontal orange flag at the top of the vertical lines indicates the 100 ms during which each set of trajectory segments was clipped; the horizontal purple bar at lower left represents 500 ms. Solid curves indicate mean classification accuracy across 10-fold cross-validation as a function of time, with the shaded areas indicating 1 standard deviation. Horizontal black lines indicate the mean (solid) ±3 standard deviations (dashed) classification accuracy obtained by projecting each set of trajectory segments into 500 randomly selected 3D spaces.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Formatting is the same as in Figure 6. As might have been expected, AE populations showed little, if any, decodable information during observation.
 
 As might have been expected based both on principal angles and on trajectory separation, classification accuracy consistently peaked at a time point within or near the 100 ms duration of the corresponding trajectory segments (orange flags at the top of the vertical lines). Classification accuracy decreased progressively at times preceding and following each of these peaks. In monkey R, mean classification of the instruction trajectory segments (Figure 6A) initially was ~0.25, rose toward ~0.50 around the time of the instruction onset, and then fell back to ~0.25. Mean accuracy for the go segments (Figure 6B) also began at ~0.25, rose gradually during the delay epoch to peak at ~0.75 around the time of the go cue, and decreased thereafter. For the movement (Figure 6C) and hold (Figure 6D) segments, classification accuracy started somewhat higher (reflecting greater trajectory segment separation at the time they were clipped, Figure 5) and peaked at ~0.90. Similar trends were seen for monkeys T and F. For each monkey, classification accuracy for each of the four sets of trajectory segments—instruction, go, movement, and hold—as a function of time was relatively consistent across sessions.
 
@@ -99,11 +269,23 @@ We performed a similar classification accuracy analysis for observation trials. 
 
 During execution trials, classification accuracy for AE populations (Figure 6I–L) showed a time course quite similar to that for MN populations, though amplitudes were lower overall, most likely because of the smaller population sizes. During observation, AE populations showed only low-amplitude, short-lived peaks of classification accuracy around times I, G, M, and H (Figure 6—figure supplement 1). Given that individual AE neurons showed no statistically significant modulation during observation trials, even these small peaks might not have been expected. Previous studies have indicated, however, that neurons not individually related to task events nevertheless may contribute to a population response (Shenoy et al., 2013; Cunningham and Yu, 2014; Gallego et al., 2017; Jiang et al., 2020).
 
-## Do PM MNs progress through the same subspaces during execution and observation?
+### Do PM MNs progress through the same subspaces during execution and observation?
 
 Having found that PM MN populations show similar progressive shifts in their instantaneous neural subspace during execution and observation of RGM trials, as well as similar changes in decodable information, we then asked whether this progression passes through similar subspaces during execution and observation. To address this question, we first calculated the principal angles between the instantaneous MN execution subspace at selected times I, G, M, or H and the entire time series of instantaneous MN observation subspaces (Figure 7A–D). Conversely, we calculated the principal angles between the instantaneous observation subspaces at selected times I, G, M, or H and the entire time series of instantaneous execution subspaces (Figure 7E–H). Although the principal angles were slightly smaller than might be expected from chance alone, indicating some minimal overlap of execution and observation instantaneous subspaces, the instantaneous observation subspaces did not show any progressive shift toward the I, G, M, or H execution subspace (Figure 7A–D), nor did the instantaneous execution subspaces shift toward the I, G, M, or H observation subspace (Figure 7E–H). We also used classification accuracy to evaluate cross-projected trajectory segments and again found little evidence of overlap between execution and observation subspaces (Figure 7—figure supplement 1). Although monkey T did show evidence of some degree of overlap (Figure 7—figure supplement 2), throughout the time course of trials in monkeys R and F, the instantaneous execution and observation condition-dependent subspaces showed little, if any, overlap.
 
-## Alignment of latent dynamics
+![Figure 7.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig7-v1.jpg)
+
+**Figure 7.:** First principal angles between the instantaneous execution subspace at selected times I, G, M, or H and the entire time series of instantaneous observation subspaces are shown above (A–D); between the instantaneous observation subspace at selected times I, G, M, or H and the entire time series of instantaneous execution subspaces below (E–H). Formatting is the same as in Figure 4.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** On top, instruction, go, movement, and hold execution trajectory segments (A, B, C, D, respectively) from individual trials have been projected into the time series of instantaneous observation subspaces and classified with a separate long short-term memory (LSTM) decoder at each time point. Below, instruction, go, movement, and hold observation trajectory segments (E, F, F, H , respectively) have been projected into the time series of instantaneous execution subspaces and classified. Neither of these cross-projections showed gradual progression to peaks of classification accuracy. Nor did the classification accuracy in either cross-projection exceed that expected from chance alone (horizontal dashed lines). These results confirm that little, if any, overlap between instantaneous, condition-dependent execution and observation subspaces was present in monkey R. Findings were similar in monkey F. Formatting is the same as in Figure 6.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/94165/elife-94165-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A–D) The first principal angles between the instantaneous execution subspace at times I, G, or M (though not H) and the time series of instantaneous observation subspaces showed an abrupt drop beginning at the time of instruction onset (I) and continuing until the time of movement onset (M). This drop, which reflects partial overlap of the execution and observation subspaces, was marked during session 1 (red), but less so during sessions 2 and 3 (green and blue, respectively). (A’–D’) Likewise, instruction, go, or movement, execution trajectory segments projected into the time series of instantaneous observation subspaces showed a rise in decodable information, also indicative of some degree of overlap, beginning at the time of instruction onset (I). (A–D) are formatted as Figure 4; (A’–D’) as in Figure 6. Overlap like that seen here in monkey T was not found in monkey R or F.
+
+### Alignment of latent dynamics
 
 We next asked whether MN execution and observation trajectory segments, though progressing through distinct subspaces, nevertheless could be aligned using canonical correlation analysis (CCA) to project both sets of trajectory segments into another, common subspace, as illustrated schematically in Figure 1C. Such alignment would indicate that neural representations of trials involving the four objects bore a similar relationship to one another in neural space during execution and observation, even though they occurred in different subspaces. For example, the trajectories of PMd+M1 neuron populations recorded from two different monkeys during center-out reaching movements could be aligned well (Safaie et al., 2023). CCA showed, for example, that in both brains, the neural trajectory for the movement to the target at 0° was closer to the trajectory for movement to the target at 45° than to the trajectory for the movement to the target at 180°. Relationships among these latent dynamic representations of the eight movements were thus similar even though the neural populations were recorded from two different monkeys.
 
@@ -113,15 +295,15 @@ We therefore applied CCA (see Methods) to align the trajectory segments of execu
 
 **Figure 8.:** (A) For an example session (monkey F, session 2), mirror neuron (MN) hold trajectory segments from execution trials have been projected into their original instantaneous execution subspace at time H (left) and from observation trials into their original instantaneous observation subspace also at time H (right). (B) The same execution (left) and observation (right) trajectory segments all have been projected into another, common subspace identified with canonical correlation. Colors indicate trajectory segments from trials involving the sphere—purple, coaxial cylinder (coax)—magenta, perpendicular cylinder (perp)—yellow, and button—cyan. (C) The three correlation coefficients resulting from canonical correlation analysis (CCA) (CC1, CC2, and CC3) have been averaged across comparisons from all sessions from the three monkeys. Thick bars representing the standard deviations of the three coefficients cross at their means, with a thin line dropped vertically from that point to the CC1 versus CC2 plane. CCA of MN trajectory segments from execution trials recorded in two different sessions from the same monkey (black, MN:1/2) is used as a point of reference with which to compare alignment of MN execution versus observation trials collected in the same session (red, MN:E/O) and MN versus AE neuron execution segments from the same session (blue, MN/AE). (D) Correlation coefficients from within-group CCA alignment for MN execution segments (gray, MN:E/E), MN observation trajectory segments (orange, MN:O/O), and AE execution segments (light blue, AE:E/E). See text for further description.
 
-As a positive control, we first aligned MN execution trajectory segments from two different sessions in the same monkey (which we abbreviate as MN:1/2). The two sessions in monkey R provided only one possible comparison, but the three sessions in monkeys T and F each provided three comparisons. For each of these seven comparisons, we found the bootstrapped average of CC1, of CC2, and of CC3. The 3D means ± standard deviations of these seven averages for the instruction, go, movement, and hold trajectory segments have been plotted in Figure 8C (black). The progressive increase in mean correlation coefficients (CCs) reflects the general increase in firing rates relative to trial-by-trial variability from the early to later trial epochs. The highest values for MN:1/2 correlations were obtained for the movement trajectory segments (CC1¯=0.89,CC2¯=0.77,CC3¯=0.61\begin{document}$\overline{CC\text{1}}=0.89,\, \overline{\, CC\text{2}}=0.77,\, \overline{\, CC\text{3}}=0.61$\end{document}). These relatively high values indicate relatively consistent relationships among the movement neural trajectory segments representing the four different RGM movements from session to session, as would have been expected from previous studies (Gallego et al., 2018; Gallego et al., 2020; Safaie et al., 2023).
+As a positive control, we first aligned MN execution trajectory segments from two different sessions in the same monkey (which we abbreviate as MN:1/2). The two sessions in monkey R provided only one possible comparison, but the three sessions in monkeys T and F each provided three comparisons. For each of these seven comparisons, we found the bootstrapped average of CC1, of CC2, and of CC3. The 3D means ± standard deviations of these seven averages for the instruction, go, movement, and hold trajectory segments have been plotted in Figure 8C (black). The progressive increase in mean correlation coefficients (CCs) reflects the general increase in firing rates relative to trial-by-trial variability from the early to later trial epochs. The highest values for MN:1/2 correlations were obtained for the movement trajectory segments ($CC1¯=0.89,CC2¯=0.77,CC3¯=0.61$). These relatively high values indicate relatively consistent relationships among the movement neural trajectory segments representing the four different RGM movements from session to session, as would have been expected from previous studies (Gallego et al., 2018; Gallego et al., 2020; Safaie et al., 2023).
 
-Given that PM MN activity progressed largely through nonoverlapping instantaneous subspaces during execution versus observation, we proceeded to ask whether the relationship among the neural representations of the four RGM movements was similar during execution versus observation. To address this question, we aligned MN execution trajectory segments with MN observation trajectory segments from the same session (MN:E/O; two sessions from monkey R, three from monkey T, three from monkey F). The 3D mean ± standard deviation CCs for these eight alignments also have been plotted in Figure 8C (red). Here, the highest values were reached for the hold trajectory segments (CC1¯=0.73,CC2¯=0.54,CC3¯=0.39\begin{document}$\overline{CC\text{1}}=0.73,\, \overline{\, CC\text{2}}=0.54,\, \overline{\, CC\text{3}}=0.39$\end{document}). Though not as high as for execution/execution alignment, these values indicate substantial alignment of MN trajectory segments from execution and observation. PM MN populations thus showed some degree of similarity in the relationships among their latent dynamic representations of the four RGM movements during execution and observation, particularly at the time of the hold.
+Given that PM MN activity progressed largely through nonoverlapping instantaneous subspaces during execution versus observation, we proceeded to ask whether the relationship among the neural representations of the four RGM movements was similar during execution versus observation. To address this question, we aligned MN execution trajectory segments with MN observation trajectory segments from the same session (MN:E/O; two sessions from monkey R, three from monkey T, three from monkey F). The 3D mean ± standard deviation CCs for these eight alignments also have been plotted in Figure 8C (red). Here, the highest values were reached for the hold trajectory segments ($CC1¯=0.73,CC2¯=0.54,CC3¯=0.39$). Though not as high as for execution/execution alignment, these values indicate substantial alignment of MN trajectory segments from execution and observation. PM MN populations thus showed some degree of similarity in the relationships among their latent dynamic representations of the four RGM movements during execution and observation, particularly at the time of the hold.
 
-Although MNs are known to be present in considerable numbers in both the M1 and PM (see Introduction), most studies of movement-related cortical activity in these areas make no distinction between neurons with activity only during action execution (AE neurons) and those with activity during both execution and observation (MNs). This reflects an underlying assumption that during action execution, MNs function in parallel with AE neurons, differing only during observation. We therefore tested the hypothesis that MN and AE neuron execution trajectory segments from the same session would align well. Figure 8C (blue) shows the mean CCs between MN and AE execution trajectory segments across eight alignments (MN/AE; 2R, 3T, 3F), which reached the highest values for the hold segments (CC1¯=0.57,CC2¯=0.35, CC3¯=0.19\begin{document}$\overline{CC\text{1}}=0.57,\, \overline{\, CC\text{2}}=0.35,\ \overline{\, CC\text{3}}=0.19$\end{document}). All three of these coefficients were substantially lower than those for the MN execution versus observation alignments given above. Surprisingly, the alignment of AE neuron execution trajectory segments with those of the simultaneously recorded MN population was weaker than the alignment of MN trajectories during execution versus observation.
+Although MNs are known to be present in considerable numbers in both the M1 and PM (see Introduction), most studies of movement-related cortical activity in these areas make no distinction between neurons with activity only during action execution (AE neurons) and those with activity during both execution and observation (MNs). This reflects an underlying assumption that during action execution, MNs function in parallel with AE neurons, differing only during observation. We therefore tested the hypothesis that MN and AE neuron execution trajectory segments from the same session would align well. Figure 8C (blue) shows the mean CCs between MN and AE execution trajectory segments across eight alignments (MN/AE; 2R, 3T, 3F), which reached the highest values for the hold segments ($CC1¯=0.57,CC2¯=0.35, CC3¯=0.19$). All three of these coefficients were substantially lower than those for the MN execution versus observation alignments given above. Surprisingly, the alignment of AE neuron execution trajectory segments with those of the simultaneously recorded MN population was weaker than the alignment of MN trajectories during execution versus observation.
 
 Statistical comparisons across the three sets of alignments illustrated in Figure 8C (MN:1/2; MN:E/O; and MN/AE) showed significant variation in each of the three CCA coefficients for each set of trajectory segments, with the exception of the instruction segments which were all quite low (Kruskal-Wallis tests; instruction segments, p>0.05; go segments, p<0.01; movement segments, p<0.01; hold segments, p<0.001). Post hoc testing showed that in all significant cases (9 cases: 3 CCA coefficients × 3 sets of trajectory segments, Tukey’s honestly significant difference tests), though the MN:E/O coefficients might not be significantly lower than the corresponding MN/1:2 coefficients and/or significantly higher than the MN/AE coefficients, the MN/AE coefficients were significantly lower than the corresponding MN/1:2 coefficients in all 9 cases. These findings fail to support the hypothesis that during action execution, MN and AE neuron trajectory segments would align well and suggest instead that the patterns of co-modulation among AE neurons during the four different RGM movements did not align with the patterns of co-modulation among MNs.
 
-Did these differences in MN:1/2, MN:E/O, and MN/AE alignment result from consistent differences in their respective patterns of co-modulation, or from greater trial-by-trial variability in the patterns of co-modulation among MNs during observation than during execution, and still greater variability among AE neurons during execution? The bootstrapping approach we used for CCA (see Methods) enabled us to evaluate the consistency of relationships among trajectory segments across repeated samplings of trials recorded from the same neuron population in the same session and in the same context (execution or observation). We therefore performed 500 iterations of CCA between two different random samples of MN execution (MN:E/E), MN observation (MN:O/O), or AE execution (AE:E/E) trajectory segments from a given session (2R, 3T, 3F). This within-group alignment of MN execution trajectory segments from the same session (Figure 8D, MN:E/E, gray, hold: CC1¯=0.88, CC2¯=0.74,CC3¯=0.55\begin{document}$\overline{CC\text{1}}=0.88,\, \overline{\ CC\text{2}}=0.74,\, \overline{\, CC\text{3}}=0.55$\end{document}) was as strong as between-session alignment (Figure 8C, MN/1:2, black). But within-group alignment of MN observation trajectory segments (Figure 8D, MN:O/O, orange, hold: CC1¯=0.65,  CC2¯=0.46, CC3¯=0.24\begin{document}$\overline{CC\text{1}}=0.65,\ \overline{\ CC\text{2}}=0.46,\ \overline{\, CC\text{3}}=0.24$\end{document}) was lower than that found with MN execution segments (Figure 8C, MN:E/O, red, CC1¯=0.73,CC2¯=0.54,CC3¯=0.39\begin{document}$\overline{CC\text{1}}=0.73,\, \overline{\, CC\text{2}}=0.54,\, \overline{\, CC\text{3}}=0.39$\end{document}). Likewise, within-group alignment of AE neuron trajectory segments (Figure 8D, AE:E/E, light blue, hold: CC1¯=0.46,CC2¯=0.25, CC3¯=0.10\begin{document}$\overline{CC\text{1}}=0.46,\, \overline{\, CC\text{2}}=0.25,\ \overline{\, CC\text{3}}=0.10$\end{document}) was lower than their alignment with MN execution segments (Figure 8C, MN/AE, blue, hold: CC1¯=0.57,CC2¯=0.35,CC3¯=0.19\begin{document}$\overline{CC\text{1}}=0.57,\, \overline{\, CC\text{2}}=0.35,\, \overline{\, CC\text{3}}=0.19$\end{document}). Whereas MN execution trajectories were relatively consistent within sessions, MN observation trajectories and AE execution trajectories were less so.
+Did these differences in MN:1/2, MN:E/O, and MN/AE alignment result from consistent differences in their respective patterns of co-modulation, or from greater trial-by-trial variability in the patterns of co-modulation among MNs during observation than during execution, and still greater variability among AE neurons during execution? The bootstrapping approach we used for CCA (see Methods) enabled us to evaluate the consistency of relationships among trajectory segments across repeated samplings of trials recorded from the same neuron population in the same session and in the same context (execution or observation). We therefore performed 500 iterations of CCA between two different random samples of MN execution (MN:E/E), MN observation (MN:O/O), or AE execution (AE:E/E) trajectory segments from a given session (2R, 3T, 3F). This within-group alignment of MN execution trajectory segments from the same session (Figure 8D, MN:E/E, gray, hold: $CC1¯=0.88, CC2¯=0.74,CC3¯=0.55$) was as strong as between-session alignment (Figure 8C, MN/1:2, black). But within-group alignment of MN observation trajectory segments (Figure 8D, MN:O/O, orange, hold: $CC1¯=0.65,  CC2¯=0.46, CC3¯=0.24$) was lower than that found with MN execution segments (Figure 8C, MN:E/O, red, $CC1¯=0.73,CC2¯=0.54,CC3¯=0.39$). Likewise, within-group alignment of AE neuron trajectory segments (Figure 8D, AE:E/E, light blue, hold: $CC1¯=0.46,CC2¯=0.25, CC3¯=0.10$) was lower than their alignment with MN execution segments (Figure 8C, MN/AE, blue, hold: $CC1¯=0.57,CC2¯=0.35,CC3¯=0.19$). Whereas MN execution trajectories were relatively consistent within sessions, MN observation trajectories and AE execution trajectories were less so.
 
 Statistical comparisons across these three sets of within-group alignments (MN:E/E; MN:O/O; and AE:E/E) showed significant variation in each of the three CCA coefficients for all four trajectory segments (Kruskal-Wallis tests; instruction segments, p<0.05; go segments, p<0.01; movement segments, p<0.001; hold segments, p<0.001). Post hoc testing showed that in all significant cases (12 cases: 3 CCA coefficients × 4 sets of trajectory segments, Tukey’s honestly significant difference tests), though the within-group MN:O/O coefficients might not be significantly lower than the corresponding MN:E/E coefficients and/or significantly higher than the AE:E/E coefficients, the within-group AE:E/E coefficients were significantly lower than the corresponding MN:E/E coefficients in all 12 cases. These findings suggest that the patterns of co-modulation among AE neurons during the four different RGM movements, as well as the patterns of co-modulation among MNs during observation, were more variable from trial to trial than were the patterns of MN co-modulation during execution. This greater trial-to-trial variability in co-modulation of MNs during observation, and even greater variability in AE neurons during execution (Figure 8D), likely contribute to the weaker alignment of MN observation segments with MN execution segments and even weaker alignment of AE and MN execution segments (Figure 8C). Whereas the predominant patterns of co-modulation among MNs during the four different RGM movements were relatively consistent, co-modulation among MNs during observation was less consistent, and co-modulation of AE neurons during execution even less so.
 
@@ -131,13 +313,13 @@ As neurophysiological studies have advanced from examination of single neurons t
 
 Using this approach, we found that the instantaneous, condition-dependent subspace of PM MN populations shifts progressively during both execution and observation of RGM trials. The instantaneous subspace of AE neuron populations likewise shifts progressively during action execution. This progressive shifting of the instantaneous subspace resembles that found previously using fractional overlap of condition-dependent variance in M1 neuron populations performing a similar RGM task without a delay epoch (Rouse and Schieber, 2018). Although the progressive shifting described here is a rotation in the mathematical sense, it is not necessarily a smooth rotation in a few dimensions. We therefore have used the word ‘shift’ to contrast with the smooth rotation of neural trajectories in a low-dimensional subspace described in other studies, particularly those using jPCA (Churchland et al., 2012; Russo et al., 2020; Rouse et al., 2022).
 
-## Features of the instantaneous subspace
+### Features of the instantaneous subspace
 
 Short bursts of ‘signal’ related discharge are known to occur in a substantial fraction of PMd neurons beginning at latencies of ~60 ms following an instructional stimulus (Weinrich et al., 1984; Cisek and Kalaska, 2004). Here, we found that the instantaneous subspace shifted briefly toward the subspace present at the time of instruction onset (I), similarly during execution and observation. This brief trough in principal angle (Figure 4A) and the corresponding peak in classification accuracy (Figure 7A) in part may reflect smoothing of firing rates with a 50 ms Gaussian kernel. We speculate, however, that the early rise of this peak at the time of instruction onset also reflects the anticipatory activity often seen in PMd neurons in expectation of an instruction, which may not be entirely nonspecific, but rather may position the neural population to receive one of a limited set of potential instructions (Mauritz and Wise, 1986). We attribute the relatively low amplitude of peak classification accuracy for instruction trajectory segments to the likely possibility that only the last 40 ms of our 100 ms instruction segments captured signal-related discharge.
 
 The firing rates of MNs in both PMv and PMd have been shown previously to modulate during preparatory delay periods (Cisek and Kalaska, 2004; Maranesi et al., 2014). During execution of a reaching task, condition-dependent subspaces during the preparatory delay are orthogonal to those found during the subsequent movement epochs (Kaufman et al., 2014; Elsayed et al., 2016). Studies that have identified such orthogonal subspaces specifically optimized preparatory and movement subspaces to be orthogonal to one another, however, whereas the present approach did not. Here, we found that during the preparatory delay epoch of the present RGM task, the condition-dependent, instantaneous subspace did not remain orthogonal to that which would be present at movement onset or during the movement epoch. Rather, as the preparatory delay proceeded, the instantaneous subspace shifted concurrently toward both the subspace that would be present at the time of the go cue ending the preparatory delay (G) and that which would be present at movement onset (M). By time G, the instantaneous subspace had already shifted approximately halfway toward the time M subspace. This difference in the orthogonality of preparatory versus movement subspaces may reflect differences in reaching without grasping, which involves coordinated motion in 4 DOFs at the shoulder and elbow, versus the present RGM movements, which involve simultaneous, fluidly coordinated motion in at least 22 DOFs of the shoulder, elbow, wrist, and digits (Rouse and Schieber, 2015). Finally, we note that the progressive shift toward the subspace present at the onset of the final hold (H) did begin only after the delay period had ended (G) and around the time of movement onset (M).
 
-## PM MN populations during execution versus observation
+### PM MN populations during execution versus observation
 
 In general, instantaneous execution subspaces were distinct from instantaneous observation subspaces, indicated by the continuously large principal angles between them (Figure 7) and by low classification accuracy when execution trajectories were cross-projected into observation subspaces and vice versa (Figure 7—figure supplement 1). This was the case not only during corresponding time points in execution and observation trials, but throughout their entire time course. Moreover, in all three monkeys, progressive shifting of the instantaneous, condition-dependent subspace was absent both in the principal angles between execution and observation subspaces and in the decoding of execution trajectory segments cross-projected into observation subspaces (and vice versa). These findings indicate that the predominant modes of co-modulation among PM MNs are largely distinct during execution and observation.
 
@@ -145,7 +327,7 @@ Although MNs originally were thought to provide highly congruent neural represen
 
 We did not attempt to classify neurons in our PM MN populations as strictly congruent, broadly congruent, or noncongruent. Nevertheless, the minimal overlap we found in instantaneous execution and observation subspaces would be consistent with a low degree of congruence in our PM MN populations. Particularly during one session, monkey T was an exception in this regard, showing a considerable degree of overlap between execution and observation subspaces, not unlike the shared subspace found in other studies that identified orthogonal execution and observation subspaces as well (Jiang et al., 2020). Although our microelectrode arrays were placed in similar cortical locations in the three monkeys, by chance, monkey T’s PM MN population may have included a substantial proportion of congruent neurons.
 
-## Alignment of trajectory segments with canonical correlation
+### Alignment of trajectory segments with canonical correlation
 
 Given the complexity of condition-dependent neural trajectories across the entire time course of RGM trials (Figure 3B), rather than attempting to align entire neural trajectories, we applied canonical correlation to trajectory segments clipped for 100 ms following four well-defined behavioral events: instruction onset, go cue, movement onset, and the beginning of the final hold. In all cases, alignment was poorest for instruction segments, somewhat higher for go segments, and strongest for movement and hold segments (Figure 8C). This progressive increase in alignment likely reflects a progressive increase in the difference between average neuron firing rates for trials involving different objects (Figure 5) relative to the trial-by-trial variance in firing rate for a given object.
 
@@ -155,7 +337,7 @@ Alignment between trajectory segments of the same PM MN population during execut
 
 Based on the assumption that AE neurons and MNs function as a homogenous neuron population during action execution, we had expected AE and MN execution trajectory segments to align closely. During execution trials, the progression of instantaneous condition-dependent subspaces and of classification accuracy in AE populations was quite similar to that in MN populations. We were surprised to find, therefore, that alignment between execution trajectory segments from AE populations and from the simultaneously recorded MN populations was even lower than alignment between MN execution and observation segments (Figure 8C, blue versus red). Moreover, whereas within-group alignment of MN execution trajectory segments was high, within-group alignment of AE neuron execution trajectory segments was low (Figure 8D, gray versus light blue). These findings indicate that the predominant patterns of co-modulation among MNs during execution are quite consistent within sessions, but the patterns of co-modulation among AE neurons are considerably more variable. Together with our previous finding that modulation of MNs leads that of non-MNs in time—both at the single neuron level and at the population level (Mazurek and Schieber, 2019)—this difference in consistency versus variability leads us to speculate that, during action execution, MNs carry a consistent forward model of the intended movement, while AE neurons carry more variable feedback information.
 
-## The role of MN populations
+### The role of MN populations
 
 Neither the congruence versus noncongruence of individual MN discharge nor the canonical correlation of population dynamics during execution and observation provides direct causal evidence that MNs mediate understanding of the observed actions of other individuals (Hickok, 2009; Yuste, 2015; Krakauer et al., 2017). Many interpretations of such findings are possible, and testing various hypotheses ultimately may require selective experimental manipulation (e.g. inactivation) of MN activity during observation in ways beyond our current capabilities. Nevertheless, the common finding that large fractions of neurons in both PM and M1 discharge both during execution and during observation makes it unlikely that the discharge of MNs during observation is vestigial, with no meaning for the organism.
 
@@ -169,60 +351,124 @@ The present analyses, as well as others, have focused on the condition-dependent
 
 ## Methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trellis</td>
+      <td>Ripple</td>
+      <td>https://rippleneuro.com/support/software-downloads-updates/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td></td>
+      <td>Custom code for data analysis</td>
+      <td>https://github.com/ShiftingSubspace/shiftsubs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Floating Microelectrode Arrays</td>
+      <td>Microprobes for Life Sciences</td>
+      <td>https://www.microprobes.com/products/multichannel-arrays/fma</td>
+      <td>See Neuron recording</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Trek</td>
+      <td>Ripple</td>
+      <td>https://rippleneuro.com/ripple-products/trek-electrophysiology-system/</td>
+      <td>See Neuron recording</td>
+    </tr>
+  </tbody>
+</table>
+
 Three Rhesus monkeys, R, T, and F (a 6 kg female, a 10 kg male, and an 11 kg male, Macaca mulatta) were used in the present study. All procedures for the care and use of these nonhuman primates followed the Guide for the Care and Use of Laboratory Animals and were approved by the University Committee on Animal Resources at the University of Rochester, Rochester, New York, under protocol #101058.
 
-## Execution trials
+### Execution trials
 
 Each monkey was trained to perform a delayed-response RGM task (Figure 2). Prior to each trial, a ring of blue LEDs was illuminated around the pole supporting a center object, and a 4 kHz tone began, both signaling the end of an inter-trial interval and the opportunity to begin a new trial. The monkey initiated the following sequence by pulling the center object for an initial hold epoch of randomly varied duration (500–1000 ms). A ring of blue LEDs around the pole supporting one of four peripheral objects was then illuminated, instructing the monkey as to the target object for the current trial. After 500 ms, these instruction LEDs were extinguished, and the monkey was required to wait for a preparatory delay epoch lasting randomly 500–2000 ms. At the end of this preparatory delay epoch, the blue LEDs for the center object were extinguished and the 4 kHz tone ceased, providing a go cue. The monkey then reached for, grasped, and manipulated the remembered target object—turning a sphere, pushing a button, pulling a coaxial cylinder (coax), or pulling a perpendicular cylinder (perp). The RGM sequence was performed as a single, uninterrupted, fluid movement of the entire upper extremity (Rouse and Schieber, 2015; Rouse and Schieber, 2016a; Rouse and Schieber, 2016b). Once the instructed object had been manipulated, a ring of green LEDs around the object illuminated (indicating successful manipulation of the object) and the ring of blue LEDs for that object also illuminated (indicating correct object). The monkey was then required to hold the instructed object in its manipulated position for a final hold epoch of 1000 ms, after which the blue LEDs were extinguished. (The green LEDs extinguished whenever the monkey released the object.) After a 300 ms delay, the monkey received a liquid reward on each successful trial.
 
 The selection and sequence of target objects in successive trials were controlled by custom software (Unified Task Control System, Gil Rivlis, https://github.com/grivlis/UTCS3_RGM), which also (1) generated behavioral event marker codes (Figure 2B) and (2) arranged trials involving the four different objects in a pseudorandom block design (Rivlis, 2025). The behavioral event marker codes indicated the times at which specific behavioral events occurred: start of trial, instruction onset, instruction offset, go cue (delay epoch ended), movement onset, hold began, hold ended, end of trial. One trial involving each of the four different objects was presented sequentially in a block. Once a block had been completed, the sequence of the four objects was shuffled randomly for the next block. To prevent the monkey from skipping more difficult objects, if the monkey failed to complete a trial successfully, the same target was repeated until the monkey succeeded.
 
-## Observation trials
+### Observation trials
 
 In a separate block of trials, the monkey observed an experimenter performing the same delayed-response RGM task. The experimenter occasionally made errors intentionally. The monkey received a reward each time the experimenter performed a successful trial, but not when the experimenter made an error, which kept the monkey attentive to the experimenter’s performance. Although extraocular movements were not recorded or controlled, video monitoring verified that the monkey remained alert and attentive throughout blocks of observation trials.
 
-## Neuron recording
+### Neuron recording
 
 Each of the three monkeys was implanted with FMAs (Microprobes for Life Sciences) in the PMv and the PMd. In monkeys R and T, 16-channel FMAs were implanted; in monkey F, 32-channel FMAs were used (Figure 2C). Monkeys R and F each had a total of 64 recording electrodes implanted in PMd and 64 in PMv, whereas monkey T had 64 in PMd, but only 48 in PMv. Broadband signals were recorded simultaneously from all 128 electrodes using a Trek/Trellis data acquisition system (Ripple, Salt Lake City, UT, USA), which also recorded the behavioral event marker codes generated by the behavioral control system. In each recording session, data were collected during similar numbers of successful trials involving each target object during execution and then during observation, as summarized in Table 2. Off-line, spike waveforms were extracted and sorted using custom software (Rouse and Schieber, 2016a). Sorted units were classified as definite single units, probably single units, multiunits, or noise based on their signal-to-noise ratio and estimated fraction of false-positive spikes using our previously published criteria. All three types of units were included in the present analyses.
 
-## MN identification
+### MN identification
 
 Although many studies have focused on neurons from either PMv or PMd, given that neurons in each area have been shown to be modulated during both reaching and grasping (Stark et al., 2007) and during both execution and observation (Papadourakis and Raos, 2019), we chose to combine units from these two cortical areas for the present analyses. Each unit was tested for task-related modulation. Because a given neuron’s firing rates during execution and observation trials almost always differed (Ferroni et al., 2021; Pomper et al., 2023), we tested each unit for modulation using data from these two contexts separately. Spike counts from each successful behavioral trial were extracted during eleven 200 ms periods: (i) before instruction onset, (ii) after instruction onset, (iii) before instruction offset, (iv) after instruction offset (delay epoch began), (v) before delay ended, (vi) after delay ended (reaction epoch began), (vii) before movement onset, (viii) after movement onset (movement epoch began), (ix) before movement ended, (x) after movement ended (hold epoch began), (xi) before hold ended. We then conducted two-way ANOVA on these spike counts using object and time period as factors. We considered a unit task-related if it showed a significant main effect of either (i) object or (ii) time period, or a significant (iii) interaction effect. Any unit modulated significantly both during execution and during observation was considered to be a MN. Because each unit thus had six opportunities to show significance, we used a corrected significance criterion of p<0.0083 (<0.05/6). Any unit modulated during execution but not during observation was considered an action execution (AE) neuron. Any unit modulated during action observation but not during execution was considered an action observation neuron (AO). Units unmodulated during both execution and observation were considered not significantly (NS) related to the task.
 
-## Data analysis
+### Data analysis
 
-All data analysis was performed in MATLAB using custom code (https://github.com/ShiftingSubspace/shiftsubs; Zhao, 2024). Spike times for each neuron were binned (bin width = 1 ms), smoothed with a Gaussian kernel (σ\begin{document}$\mathrm{\sigma }$\end{document}=50 ms), and square-root transformed to render variance similar from low to high firing rates (Kihlberg et al., 1972; Snedecor and Cochran, 1980). The activity of each neuron was time-aligned to four behavioral events and truncated before and after using the median delay, reaction, and movement times per object and per session as follows: (i) instruction onset (I)—500 ms before to 500 ms after; (ii) go cue (G)—median delay duration before to half the median reaction time after; (iii) movement onset (M)—half the median reaction time before to 200 ms after; and (iv) start of final hold (H)—200 ms before to 200 ms after. These four snippets of neural activity were concatenated for each trial. Neural activity was then stored as a three-dimensional tensor (N × K × T, where N is the number of neurons, K the number of trials, and T the number of time points) for each of the four target objects.
+All data analysis was performed in MATLAB using custom code (https://github.com/ShiftingSubspace/shiftsubs; Zhao, 2024). Spike times for each neuron were binned (bin width = 1 ms), smoothed with a Gaussian kernel ($\sigma$=50 ms), and square-root transformed to render variance similar from low to high firing rates (Kihlberg et al., 1972; Snedecor and Cochran, 1980). The activity of each neuron was time-aligned to four behavioral events and truncated before and after using the median delay, reaction, and movement times per object and per session as follows: (i) instruction onset (I)—500 ms before to 500 ms after; (ii) go cue (G)—median delay duration before to half the median reaction time after; (iii) movement onset (M)—half the median reaction time before to 200 ms after; and (iv) start of final hold (H)—200 ms before to 200 ms after. These four snippets of neural activity were concatenated for each trial. Neural activity was then stored as a three-dimensional tensor (N × K × T, where N is the number of neurons, K the number of trials, and T the number of time points) for each of the four target objects.
 
-## Instantaneous subspace identification
+### Instantaneous subspace identification
 
-Instantaneous neural subspaces were identified at 1 ms intervals. At each 1 ms time step, the N-dimensional neural firing rates from trials involving the four different objects—sphere, button, coaxial cylinder, and perpendicular cylinder—were averaged separately, providing four points in the N-dimensional space representing the average neural activity for trials involving the different objects at that time step. PCA then was performed on these four points. Because three dimensions capture all the variance of four points, three principal component dimensions fully defined each instantaneous subspace. Each instantaneous 3D subspace can be considered a filter described by a matrix, W\begin{document}$W$\end{document}, that can project high-dimensional neural activity into a low-dimensional subspace, with the time series of instantaneous subspaces, Wi\begin{document}$W_{i}$\end{document}, forming a time series of filters (Figure 1B).
+Instantaneous neural subspaces were identified at 1 ms intervals. At each 1 ms time step, the N-dimensional neural firing rates from trials involving the four different objects—sphere, button, coaxial cylinder, and perpendicular cylinder—were averaged separately, providing four points in the N-dimensional space representing the average neural activity for trials involving the different objects at that time step. PCA then was performed on these four points. Because three dimensions capture all the variance of four points, three principal component dimensions fully defined each instantaneous subspace. Each instantaneous 3D subspace can be considered a filter described by a matrix, $W$, that can project high-dimensional neural activity into a low-dimensional subspace, with the time series of instantaneous subspaces, $W_{i}$, forming a time series of filters (Figure 1B).
 
-## Trajectory visualization and separation
+### Trajectory visualization and separation
 
-We projected 100 ms segments of neural activity into each instantaneous subspace by multiplying the neural activity, X(t)\begin{document}$X\left (t\right)$\end{document}, by the transforming matrix for the ith subspace, Wi\begin{document}$W_{i}$\end{document}, which yielded low-dimensional trajectory segments, L(t)= X(t)Wi  (t∈T)\begin{document}$L\left (t\right)=\ X\left (t\right)W_{i}\ \ \left (t\in T\right)$\end{document}. This process was repeated for each instantaneous subspace in the time domain of interest. To quantify the separation between the four trial-averaged trajectory segments involving the different objects in a given instantaneous subspace, we then calculated their cumulative separation (CS\begin{document}$CS$\end{document}) as:CS=1T∑t∈TD(t)=1T∑t∈T∑i≠jdij(t)\begin{document}$$\displaystyle  CS=\frac{1}{T}\sum _{t\in T}D\left (t\right)=\frac{1}{T}\sum _{t\in T}\, \sum _{i\neq j}d_{ij}\left (t\right)$$\end{document}
+We projected 100 ms segments of neural activity into each instantaneous subspace by multiplying the neural activity, $X(t)$, by the transforming matrix for the ith subspace, $W_{i}$, which yielded low-dimensional trajectory segments, $L(t)= X(t)W_{i}  (t\inT)$. This process was repeated for each instantaneous subspace in the time domain of interest. To quantify the separation between the four trial-averaged trajectory segments involving the different objects in a given instantaneous subspace, we then calculated their cumulative separation ($CS$) as:
 
-where dij(t)\begin{document}$d_{ij}\left (t\right)$\end{document} is the three-dimensional Euclidean distance between the ith and jth trajectories at time point t\begin{document}$t$\end{document}. We summed the six pairwise distances between the four trajectory segments across time points and normalized by the number of time points, T=100\begin{document}$T=100$\end{document}. The larger the CS\begin{document}$CS$\end{document}, the greater the separation of the trajectory segments.
+$$
+CS=\frac{1}{T}\sumt\inTD(t)=\frac{1}{T}\sumt\inT\sumi\neqjd_{ij}(t)
+$$
 
-## Subspace comparisons—principal angles
+where $d_{ij}(t)$ is the three-dimensional Euclidean distance between the ith and jth trajectories at time point $t$. We summed the six pairwise distances between the four trajectory segments across time points and normalized by the number of time points, $T=100$. The larger the $CS$, the greater the separation of the trajectory segments.
 
-To assess the progressive shift of instantaneous subspaces, we computed the principal angles (Björck and Golub, 1973; Gallego et al., 2018) between the instantaneous subspace at each of four selected time points—onset of the instruction (I), go cue (G), onset of movement (M), and beginning of the final hold (H)—and each of the other instantaneous subspaces in a time series. For example, given the three-dimensional instantaneous subspace at the time of movement onset, WM\begin{document}$W_{M}$\end{document}, and at any other time, Wi\begin{document}$W_{i}$\end{document}, we calculated their 3×3 inner product matrix and performed singular value decomposition to obtain:WMTWi=PMCPiT\begin{document}$$\displaystyle W_{M}^{T}W_{i}=\, P_{M}CP_{i}^{T}$$\end{document}
+### Subspace comparisons—principal angles
 
-where 3×3 matrices PM\begin{document}$P_{M}$\end{document} and Pi\begin{document}$P_{i}$\end{document} define new manifold directions which successively minimize the three principal angles specific to the two subspaces being compared. The elements of the diagonal matrix C\begin{document}$C$\end{document} are then the ranked cosines of the principal angles, θi\begin{document}$\theta _{i}$\end{document}, ordered from smallest to largest:C=diag(cos⁡(θ1),cos⁡(θ2),cos⁡(θ3))\begin{document}$$\displaystyle C=diag\left (\cos \left (\theta _{1}\right),\cos \left (\theta _{2}\right),\cos \left (\theta _{3}\right)\right)$$\end{document}
+To assess the progressive shift of instantaneous subspaces, we computed the principal angles (Björck and Golub, 1973; Gallego et al., 2018) between the instantaneous subspace at each of four selected time points—onset of the instruction (I), go cue (G), onset of movement (M), and beginning of the final hold (H)—and each of the other instantaneous subspaces in a time series. For example, given the three-dimensional instantaneous subspace at the time of movement onset, $W_{M}$, and at any other time, $W_{i}$, we calculated their 3×3 inner product matrix and performed singular value decomposition to obtain:
 
-In Figure 4—figure supplement 1, using all trials from monkey R, session 1, we have plotted the three principal angles as a function of time. Note that at the time when Wi=WM\begin{document}$W_{i}=\, W_{M}$\end{document}, all three principal angles are zero by definition, and the sharp decline before time M and the sharp rise afterward reflect the Gaussian kernel (σ\begin{document}$\mathrm{\sigma }$\end{document}=50 ms) used to smooth unit firing rates. These sharp troughs thus are trivial, but both the gradual decline before and the gradual rise following the sharp troughs are not. Given that the set of three principal angles typically followed similar time courses, in the Results, we illustrate only the first principal angle, θ1\begin{document}$\theta _{1}$\end{document}.
+$$
+W_{M}^{T}W_{i}=P_{M}CP_{i}^{T}
+$$
+
+where 3×3 matrices $P_{M}$ and $P_{i}$ define new manifold directions which successively minimize the three principal angles specific to the two subspaces being compared. The elements of the diagonal matrix $C$ are then the ranked cosines of the principal angles, $\theta_{i}$, ordered from smallest to largest:
+
+$$
+C=diag(cos⁡(\theta_{1}),cos⁡(\theta_{2}),cos⁡(\theta_{3}))
+$$
+
+In Figure 4—figure supplement 1, using all trials from monkey R, session 1, we have plotted the three principal angles as a function of time. Note that at the time when $W_{i}=W_{M}$, all three principal angles are zero by definition, and the sharp decline before time M and the sharp rise afterward reflect the Gaussian kernel ($\sigma$=50 ms) used to smooth unit firing rates. These sharp troughs thus are trivial, but both the gradual decline before and the gradual rise following the sharp troughs are not. Given that the set of three principal angles typically followed similar time courses, in the Results, we illustrate only the first principal angle, $\theta_{1}$.
 
 Furthermore, to provide some indication of the degree of variability in the first principal angle, we randomly selected 20 trials involving each target object (totaling 80 trials) with replacement and calculated the first principal angle as a function of time, repeating this process 10 times. The results, shown in Figures 4 and 7, Figure 4—figure supplement 3, and Figure 7—figure supplement 2, are presented as the mean ± 1 standard deviation across these 10-fold cross-validations. Note that this mean never reaches zero because the instantaneous subspaces at times I, G, M, and H were computed using all the available trials.
 
 In the example of Figure 4—figure supplement 1, the first principal angle never reached 90° either. To determine whether this reflected a lack of orthogonality or a limitation of population size, we computed the first principal angle between a fixed three-dimensional subspace and 5000 three-dimensional subspaces randomly chosen from N-dimensional spaces, for N varying from 5 to 500. Figure 4—figure supplement 2 shows that for large N, principal angles between a fixed subspace and other randomly chosen subspaces are likely to be close to 90°. But as N decreases, these random principal angles are less likely to approach 90°, without necessarily indicating nonrandom overlap of the subspaces. In Figures 4 and 7, Figure 4—figure supplement 3, and Figure 7—figure supplement 2, we therefore indicate levels of principal angles that might arise by chance alone using the smallest N from any of the three sessions for a given monkey (see Table 2).
 
-## Decodable information—LSTM
+### Decodable information—LSTM
 
 As illustrated schematically in Figure 1B, the same segment of high-dimensional neural activity projected into different instantaneous subspaces can generate low-dimensional trajectories of varying separation. The degree of separation among the projected trajectory segments will depend not only on their separation at the time when the segments were clipped, but also on the similarity of the subspaces into which the trajectory segments are projected. To quantify the combined effects of trajectory separation and projection into different subspaces, we projected high-dimensional neural trajectory segments (each including 100 points at 1 ms intervals) from successful trials involving each of the four different target objects into time series of three-dimensional instantaneous subspaces at 50 ms intervals. In each of these instantaneous subspaces, the neural trajectory segment from each trial thus became a 100 time point × three-dimensional matrix. For each instantaneous subspace in the time series, we then trained a separate LSTM (Hochreiter and Schmidhuber, 1997) classifier to attribute each of the neural trajectories from individual trials to one of the four target object labels: sphere, button, coaxial cylinder, or perpendicular cylinder. Using MATLAB’s Deep Learning Toolbox, each LSTM classifier had 3 inputs (instantaneous subspace dimensions), 20 hidden units in the bidirectional LSTM layer, and a softmax layer preceding the classification layer which had 4 output classes (target objects). The total number of successful trials available in each session for each object is given in Table 1. To avoid bias based on the total number of successful trials, we used the minimum number of successful trials across the four objects in each session, selecting that number from the total available randomly with replacement. Each LSTM classifier was trained with MATLAB’s adaptive moment estimation (Adam) optimizer on 40% of the selected trials, and the remaining 60% were decoded by the trained classifier. The success of this decoding was used as an estimate of classification accuracy from 0 (no correct classifications) to 1 (100% correct classifications). This process was repeated 10 times, and the mean ± standard deviation across the 10 folds was reported as the classification accuracy at that time. Classification accuracy of trials projected into each instantaneous subspace at 50 ms intervals was plotted as a function of trial time.
 
-## Similarity of aligned latent dynamics
+### Similarity of aligned latent dynamics
 
-We used CCA to compare the similarity of latent dynamics in different subspaces (Gallego et al., 2020). In brief, given latent dynamics (trajectory segments) in two original subspaces, LA\begin{document}$L_{A}$\end{document} and LB\begin{document}$L_{B}$\end{document}, CCA finds a linear transformation of each original subspace such that, when projected into a common subspace, the aligned latent dynamics, L~A\begin{document}$\tilde{L}_{A}$\end{document} and L~B\begin{document}$\tilde{L}_{B}$\end{document} , are maximally correlated in each dimension of the common subspace. Larger canonical correlation coefficient (CCs) indicate a higher degree of alignment.
+We used CCA to compare the similarity of latent dynamics in different subspaces (Gallego et al., 2020). In brief, given latent dynamics (trajectory segments) in two original subspaces, $L_{A}$ and $L_{B}$, CCA finds a linear transformation of each original subspace such that, when projected into a common subspace, the aligned latent dynamics, $L~_{A}$ and $L~_{B}$ , are maximally correlated in each dimension of the common subspace. Larger canonical correlation coefficient (CCs) indicate a higher degree of alignment.
 
-CCA was performed as follows: The original latent dynamics, LA\begin{document}$L_{A}$\end{document} and LB\begin{document}$L_{B}$\end{document}, were first transformed and decomposed as LAT=QARA\begin{document}$L_{A}^{T}=Q_{A}R_{A}$\end{document} and LBT=QBRB\begin{document}$L_{B}^{T}=Q_{B}R_{B}$\end{document} . The first m=3 column vectors of each Qi\begin{document}$Q_{i}$\end{document} provide an orthonormal basis for the column vectors of LiT\begin{document}$L_{i}^{T}$\end{document} (where i=A,B\begin{document}$i=A,B$\end{document}). Singular value decomposition on the inner product matrix of QA\begin{document}$Q_{A}$\end{document} and QB\begin{document}$Q_{B}$\end{document} then gives QATQB=USVT\begin{document}$Q_{A}^{T}Q_{B}=USV^{T}$\end{document}, and new manifold directions that maximize pairwise correlations are provided by MA=RA−1U\begin{document}$M_{A}=R_{A}^{- 1}U$\end{document} and MB=RB−1V\begin{document}$M_{B}=R_{B}^{- 1}V$\end{document} . We then projected the original latent dynamics into the new, common subspace: L~AT=LATMA\begin{document}$\tilde{L}_{A}^{T}=L_{A}^{T}M_{A}$\end{document}; L~BT=LBTMB\begin{document}$\tilde{L}_{B}^{T}=L_{B}^{T}M_{B}$\end{document} . Pairwise CCs between the aligned latent dynamics sorted from largest to smallest are then given by the elements of the diagonal matrix S=L~AL~BT\begin{document}$S=\tilde{L}_{A}\tilde{L}_{B}^{T}$\end{document} .
+CCA was performed as follows: The original latent dynamics, $L_{A}$ and $L_{B}$, were first transformed and decomposed as $L_{A}^{T}=Q_{A}R_{A}$ and $L_{B}^{T}=Q_{B}R_{B}$ . The first m=3 column vectors of each $Q_{i}$ provide an orthonormal basis for the column vectors of $L_{i}^{T}$ (where $i=A,B$). Singular value decomposition on the inner product matrix of $Q_{A}$ and $Q_{B}$ then gives $Q_{A}^{T}Q_{B}=USV^{T}$, and new manifold directions that maximize pairwise correlations are provided by $M_{A}=R_{A}^{−1}U$ and $M_{B}=R_{B}^{−1}V$ . We then projected the original latent dynamics into the new, common subspace: $L~_{A}^{T}=L_{A}^{T}M_{A}$; $L~_{B}^{T}=L_{B}^{T}M_{B}$ . Pairwise CCs between the aligned latent dynamics sorted from largest to smallest are then given by the elements of the diagonal matrix $S=L~_{A}L~_{B}^{T}$ .
 
 To provide an estimate of variability, we used a bootstrapping approach to CCA. From each of two datasets, we randomly selected 20 trials involving each target object (totaling 80 trials) with replacement, clipped trajectory segments from each of those trials for 100 ms (100 points at 1 ms intervals) after the instruction onset, go cue, movement onset, or beginning of the final hold, and performed CCA as described above. (Note that because session 1 from monkey R included only eight button trials [Table 1], we excluded this session from CCA analyses.) With 500 iterations, we obtained a distribution of the CCs between the two datasets in each of the three dimensions of the aligned subspace, which permitted statistical comparisons. We then used this approach to evaluate alignment of latent dynamics between different sessions (e.g. execution trials on two different days), between different contexts (e.g. execution and observation), and between different neural populations (e.g. MNs and AE neurons). This bootstrapping approach further enabled us to assess the consistency of relationships among neural trajectories within a given group—i.e. the same neural population during the same context (execution or observation) in the same session—by drawing two separate random samples of 80 trials from the same population, context, and session (Figure 8D), which would not have been possible had we concatenated trajectory segments from all trials in the session (Gallego et al., 2020; Safaie et al., 2023).

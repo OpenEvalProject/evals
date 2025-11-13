@@ -17,12 +17,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01xf75524 Department of Integrated Mathematical Oncology, H. Lee Moffitt Cancer Center & Research Institute Tampa United States
-2. https://ror.org/03r0ha626 Department of Mathematics, University of Utah Salt Lake City United States
-3. https://ror.org/03r0ha626 School of Biological Sciences, University of Utah Salt Lake City United States
-4. https://ror.org/05kzfa883 Natural Product Informatics Research Center, Korea Institute of Science and Technology Gangneung Republic of Korea
-5. https://ror.org/04cw6st05 Department of Mathematics, University of London London United Kingdom
-6. https://ror.org/013cjyk83 Ceremade, Université Paris-Dauphine, Université Paris Sciences et Lettres Paris France
+1. Department of Integrated Mathematical Oncology, H. Lee Moffitt Cancer Center & Research Institute Tampa United States ([ROR:01xf75524](https://ror.org/01xf75524))
+2. Department of Mathematics, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+3. School of Biological Sciences, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+4. Natural Product Informatics Research Center, Korea Institute of Science and Technology Gangneung Republic of Korea ([ROR:05kzfa883](https://ror.org/05kzfa883))
+5. Department of Mathematics, University of London London United Kingdom ([ROR:04cw6st05](https://ror.org/04cw6st05))
+6. Ceremade, Université Paris-Dauphine, Université Paris Sciences et Lettres Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
 
 † Corresponding author
 
@@ -44,9 +44,9 @@ The first trial has created interest in designing new adaptive treatment protoco
 
 In Figure 1, we introduce 11 open questions regarding future directions of mathematical modeling in adaptive cancer therapy. These were the result of a 4-d workshop on Cancer Adaptive Therapy Models (CATMo; https://catmo2020.org/) in December 2020. The conference brought together a multidisciplinary group of mathematicians, clinical oncologists, and experimental biologists to discuss successes, challenges and opportunities in adaptive therapy. We have categorized these questions into three sections: (1) integrating the appropriate components into mathematical models, (2) the design and validation of dosing protocols, and (3) challenges and opportunities in clinical translation.
 
-## Integrating the appropriate components into mathematical models
+### Integrating the appropriate components into mathematical models
 
-## What components are necessary for a mathematical model of adaptive therapy?
+#### What components are necessary for a mathematical model of adaptive therapy?
 
 Fred Adler: It is thought that the success of adaptive therapy in delaying the emergence of resistance depends on three characteristics of the cancer: (a) resistance is costly, (b) resistant cells can be suppressed by competition with sensitive cells, and (c) therapy reduces the population of sensitive cells. Simple models based on these assumptions show that adaptive therapy can indeed delay the emergence of resistance. These simple models raise two further questions: (1) What are the appropriate objectives for evaluating the success of therapy? (2) Do the main results hold up in models that include additional components of real tumors?
 
@@ -60,7 +60,89 @@ With the exception of the success of high-dose therapy with a strong Allee effec
 
 Effective adaptive therapies require fitting data on individual patients, and data may lack the resolution to distinguish among alternative models. In the case of PSA in prostate cancer, a simple model (Hirata et al., 2010), a more complex model with basic androgen dynamics (Portz et al., 2012), and a detailed model of androgen dynamics (Jain et al., 2011) all fit data on a set of patients reasonably well, although with some exceptions (Hatano et al., 2015). If models can be fit to the dynamics, adaptive therapies may be more robust to patient variability than prescribed timing of intermittent therapy. Although data may lack the resolution to identify specific mechanisms of interaction, such as the strength of competition between different cancer cell phenotypes, simple models may have the greatest potential to capture dynamics and guide therapy. The ideal combination will be patient-specific models combined with in vivo data, perhaps with immunocompetent mouse models, mouse PDX models (Siolas and Hannon, 2013), or in vitro data on patient derived cells that can reveal mechanisms of interaction in different treatment environments.
 
-## How competitive are treatment-resistant phenotypes?
+<table>
+  <thead>
+    <tr>
+      <th>Paper</th>
+      <th>Model type</th>
+      <th>Key result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Martin et al., 1992b</td>
+      <td>Gompertzian, Lotka-Volterra</td>
+      <td>Theoretical models of extension of survival time using dose reduction strategies</td>
+    </tr>
+    <tr>
+      <td>Martin et al., 1992a</td>
+      <td>Gompertzian, Lotka-Volterra</td>
+      <td>Optimal control methods used to simulate tumors with drug-resistant and drug-sensitive cells in competition</td>
+    </tr>
+    <tr>
+      <td>Monro and Gaffney, 2009</td>
+      <td>Gompertzian</td>
+      <td>Sensitive-resistant competition can extend survival times, but failed cure can reduce survival</td>
+    </tr>
+    <tr>
+      <td>Gatenby et al., 2009b</td>
+      <td>Mathematical catastrophe theory</td>
+      <td>The term ‘adaptive therapy’ coined: mathematical and experimental exploration of adaptive therapy</td>
+    </tr>
+    <tr>
+      <td>Bacevic et al., 2017</td>
+      <td>Hybrid cellular automaton</td>
+      <td>Validation of cost of resistance in CDK inhibitors and role of spatial competition on fitness</td>
+    </tr>
+    <tr>
+      <td>Gallaher et al., 2018,</td>
+      <td>Off-lattice agent-based</td>
+      <td>Validation of cost of resistance in doxorubicin, and exploration of alternative adaptive protocols</td>
+    </tr>
+    <tr>
+      <td>Silva et al., 2012</td>
+      <td>Frequency-dependent competition</td>
+      <td>Low doses of auxiliary treatment to accentuate cost of chemo-resistance and improve adaptive therapy</td>
+    </tr>
+    <tr>
+      <td>Zhang et al., 2017</td>
+      <td>Lotka-Volterra</td>
+      <td>Publication of adaptive prostate trial data and associated Lotka-Volterra competition mathematical model</td>
+    </tr>
+    <tr>
+      <td>Smalley et al., 2019</td>
+      <td>Lotka-Volterra with phenotypic switching</td>
+      <td>In vivo adaptive dosing of BRAF inhibitors, compared to continuous or fixed intermittent therapy</td>
+    </tr>
+    <tr>
+      <td>Kim et al., 2021</td>
+      <td>Lotka-Volterra with phenotypic switching</td>
+      <td>Patient-specific prediction of adaptive melanoma therapy</td>
+    </tr>
+    <tr>
+      <td>Brady-Nicholls et al., 2021</td>
+      <td>Density-dependent competition</td>
+      <td>Patient-specific predictions of adaptive prostate therapy</td>
+    </tr>
+    <tr>
+      <td>Strobl et al., 2020</td>
+      <td>Lotka-Volterra with turnover</td>
+      <td>Mathematical investigation of cost, turnover, and competition in adaptive therapy</td>
+    </tr>
+    <tr>
+      <td>West et al., 2020</td>
+      <td>Lotka-Volterra</td>
+      <td>Mathematical investigation of multi-drug adaptive therapy protocols</td>
+    </tr>
+    <tr>
+      <td>Viossat and Noble, 2021</td>
+      <td>Frequency, density-dependent competition</td>
+      <td>Extensive mathematical analysis of conditions where tumor containment is superior</td>
+    </tr>
+  </tbody>
+</table>
+
+#### How competitive are treatment-resistant phenotypes?
 
 Rob Noble: Adaptive therapy aims to exploit competition between treatment-sensitive and resistant cells. Key questions remain largely unanswered. First, what is the nature of this competition? Mathematical modelers typically assume that the fitness of resistant cells is a simple function of their relative abundance and/or the total tumor size (reviewed in Viossat and Noble, 2021). But frequency- or density-dependent mathematical functions only approximate average population dynamics. Actual clonal growth rates depend on the spatial arrangement of cells, their interaction ranges, and local levels of shared resources, all of which vary both within and between tumors (Noble et al., 2022; West et al., 2021; Fu et al., 2022). For example, if a tumor grows mainly at its boundary then spatial constraints alone could suffice to contain rare resistant clones, but only if they are located away from the boundary (Gallaher et al., 2018; Bacevic et al., 2017). A corollary is that the effectiveness of adaptive therapy may vary between cancer types due to different tumor architectures (Noble et al., 2022). Although spatially structured computational and experimental models can account for some important factors – such as competition for space and oxygen – the ability to predict clinical outcomes hinges on these models accurately matching the parameters of human intra-tumor cell–cell interactions, which remain largely uncharacterized. Further experimental studies and clinical image analyses are needed to quantify these parameters.
 
@@ -68,13 +150,13 @@ Second, are resistant cells less competitive? The seminal 2009 paper by Gatenby 
 
 Lastly, is competition the only important ecological interaction? Studies in vitro and in mice have detected positive ecological interactions (mutualism and commensalism; reviewed in Tabassum and Polyak, 2015) and asymmetric interactions (parasitism) between cancer clones (Miller et al., 1988; Noble et al., 2021). These observations suggest that our theoretical models of clonal dynamics during cancer treatment may be overly simplistic, and they underscore the need for more and better data. Emerging spatial genomic, transcriptomic, and proteomic technologies (Seferbekova et al., 2022) hold particular promise for inferring subclonal interactions within human tumors. Below, several sections discuss challenges and opportunities integrating mathematical models with wet lab data (How can we leverage mathematical modeling to support testing of adaptive therapy in the wet lab?) and clinical data (Is real-time patient prediction feasible?).
 
-## What is the role of plasticity and drug-induced mutations in adaptive therapy?
+#### What is the role of plasticity and drug-induced mutations in adaptive therapy?
 
 Eunjung Kim: The effectiveness of treatment holidays drastically changes when considering phenotype switching between drug-sensitive and -resistant phenotypes (Pillai et al., 2022). Plasticity is often modeled as the expression of resistant cellular traits that vary from completely sensitive to fully resistant (Clairambault and Pouchol, 2019; Clairambault, 2019), in multidimensional fashion to consider multi-drug resistance (Cho and Levy, 2018a; Cho and Levy, 2018b). Treatment breaks can halt the expansion of the resistant cell population facilitated by drug-induced mutations or phenotype switching from sensitive to resistant states during therapy. Since phenotype switching to resistant states is often reversible (reviewed in Boumahdi and de Sauvage, 2020), treatment holidays have the potential to re-sensitize the resistant cell population to future drug rechallenges. A recent experimental study demonstrated that gene expression in melanoma cells reversed during treatment holidays, causing the cells to re-sensitize to a BRAF inhibitor rechallenge (Kavran et al., 2022).
 
 The switching rate from resistant to sensitive states can impact the benefit of adaptive therapy. One recent study introduced a mathematical model of plasticity-mediated drug resistance of melanoma treated with BRAF/MEK inhibitors (Hodgkinson et al., 2022). Here, the mathematical modeling predicts small differences resistance emergence between continuous and adaptive therapy, but the latter leads to increased spatial heterogeneity. Another recent study integrated mathematical models with clinical data of a cohort of patients with melanoma treated with continuous therapy of BRAF/MEK inhibitors (Kim et al., 2021). The resulting calibrated mathematical models then simulated alternative treatment protocols. Modeling predicted that adaptive therapy (dose skipping) outperforms standard of care at different degrees among the patients (Kim et al., 2021). Among mathematical model parameters that govern treatment response dynamics, both the switching rate from resistant to sensitive states and the growth rate of sensitive cells determine the benefits of adaptive therapy. In another mathematical modeling study, a fixed schedule intermittent therapy was predicted to outperform the standard of care when treatment could induce resistant mutations in the cells (Greene et al., 2019). These properties of tumor plasticity or drug-induced mutation are variable between cancer types and possibly vary between cancer cells. For example, in melanoma, it was shown that phenotypic plasticity is more evident in one cell line than another (Smalley et al., 2019). There may be even more variability across patients in terms of how resistance emerges and is maintained. Thus, identifying the presence of phenotypic plasticity in a specific tumor could be an important factor in deciding if and how adaptive therapy should be applied.
 
-## What is the role of homeostasis and normal tissue in adaptive therapy?
+#### What is the role of homeostasis and normal tissue in adaptive therapy?
 
 David Basanta: A feature of current models of adaptive therapy lies in their simplicity in terms of algorithms and assumptions. One key simplification is that tumor heterogeneity can be reduced to the types of cancer cells such as sensitive cells (that pay a significant fitness cost during treatment) and treatment-resistant cells (that may incur a cost of resistance relative to sensitive cells). In reality, the fitness of a cancer cell is not simply a cell-intrinsic property but includes its ability to take advantage of its dynamic tumor environment that includes not just other cancer cells but normal cells, vasculature, immune cells, and extracellular matrices (see Figure 2).
 
@@ -82,7 +164,7 @@ David Basanta: A feature of current models of adaptive therapy lies in their sim
 
 **Figure 2.:** Left: bone tissue homeostasis, including bone resorption by osteoclasts and osteoblasts. Middle: tumor cells cause disruption of homeostasis, leading to altered microenvironment factors. Conventional therapy leads to increasing tumor resistance. Right: evolution-based treatment strategies aim to restore some degree of homeostasis while allowing the tumor to remain sensitive to future treatment.
 
-Far from living in isolation, cancer cells colonize tissues with an existing ecosystem made up of healthy, stromal cells that communicate with each other via molecular factors in order to maintain homeostasis. The tissue has a distinct physical and spatial architecture (Basanta and Anderson, 2013). In the bone, for instance, homeostasis results from the interactions between several cell types such as osteoblasts, osteoclasts, osteocytes, monocytes, macrophages, and mesenchymal stem cells (MSC) (Bussard et al., 2008). While metastasis is a highly inefficient process, successful colonization of the bone by metastasizing prostate cancer cells leads to a process called the vicious cycle (Esposito et al., 2018; Cook et al., 2014). Successful prostate cancer cells in the bone take advantage of the interactions and signaling that goes on between the normal cells as they maintain homeostatic tissue microenvironments (Basanta and Anderson, 2013). Factors released by normal cells such as transforming growth factor β are utilized by nearby prostate cancer cells. Such factors accelerate the proliferation and survival of the cancer cells.
+Far from living in isolation, cancer cells colonize tissues with an existing ecosystem made up of healthy, stromal cells that communicate with each other via molecular factors in order to maintain homeostasis. The tissue has a distinct physical and spatial architecture (Basanta and Anderson, 2013). In the bone, for instance, homeostasis results from the interactions between several cell types such as osteoblasts, osteoclasts, osteocytes, monocytes, macrophages, and mesenchymal stem cells (MSC) (Bussard et al., 2008). While metastasis is a highly inefficient process, successful colonization of the bone by metastasizing prostate cancer cells leads to a process called the vicious cycle (Esposito et al., 2018; Cook et al., 2014). Successful prostate cancer cells in the bone take advantage of the interactions and signaling that goes on between the normal cells as they maintain homeostatic tissue microenvironments (Basanta and Anderson, 2013). Factors released by normal cells such as transforming growth factor $\beta$ are utilized by nearby prostate cancer cells. Such factors accelerate the proliferation and survival of the cancer cells.
 
 Proximity to stromal cells provides other benefits to cancer cells undergoing treatment. For instance, bone metastatic prostate cancer cells near MSCs are pre-selected to possess some level of chemoresistance (McGuire et al., 2021). Such cells are primed for resistance even prior to treatment exposure. Also in the bone, myeloma cells (bone cancer) near MSCs or in the presence of growth factors secreted during bone remodeling can survive standard of care treatments based on proteosome inhibitors like bortezomib (Xu et al., 2012). This environmentally mediated drug resistance (EMDR) explains why anticancer treatments prove less effective than otherwise expected. In the context of adaptive therapy, EMDR may provide the cancer cells with a therapy refuge regardless of whether they are resistant or sensitive to treatment.
 
@@ -90,9 +172,9 @@ For cancers where EMDR plays a large role, it may be advisable to be more aggres
 
 Future adaptive therapy models should allow for EMDR. Such models could more faithfully incorporate the tumor microenvironment and the role of normal cells. Such models could then evaluate how best to manage or exploit EMDR when designing adaptive therapy protocols (M A et al., 2022). Even more might be gained by developing models that also recapitulate tissue homeostasis prior to carcinogenesis. As discussed elsewhere (Basanta and Anderson, 2017), cancers initiate in normal tissue environments and progressively overcome and exploit the rules of homeostasis. Adaptive therapy aims to control the tumor by introducing a different type of homeostasis. Hence, in improving the original adaptive therapy algorithm, we should consider the homeostasis that was disrupted by the tumor as well as the homeostasis that might be engineered by therapy.
 
-## Design and validation of dosing protocols
+### Design and validation of dosing protocols
 
-## Cure or control?
+#### Cure or control?
 
 Jill Gallaher: An explicit goal of adaptive therapy is to turn cancer into a chronic disease with sporadic (but life-long) management. Taking this approach likely means abandoning the hope of cure. Thus, its current appeal and modeling contexts have been for patients with essentially no curative options. However, there are cases when adaptive therapy would have been preferred when standard of care results in recurrence and adaptive therapy would have either resulted in longer control or less dose and therefore better quality of life. In other cases, standard of care could result in cure or longer control. But is identifying such patients prior to treatment even possible? Furthermore, if the standard of care regimen is tried and cure does not result, then it may not be possible to switch to an adaptive therapy regimen because at that point the resistant population of cancer cells may be too large compared to the sensitive cells to establish sufficient control (McClatchy et al., 2020). The window for extended disease control using an adaptive therapy protocol may only be open prior to treatment. The decision must be made at the start. If one only opts for standard of care for cure, failed curative attempts could lead to reduced survival times (Monro and Gaffney, 2009) relative to adaptive therapy. So how does one decide between these opposing strategies? What key disease characteristics are needed to stratify patients into a treat-to-cure cohort (using continuous therapies) versus a treat-to-contain cohort (using adaptive therapies) (Hansen and Read, 2020a)?
 
@@ -106,7 +188,7 @@ The tumor burden alone does not reveal the underlying dynamics of cell turnover 
 
 There are also practical clinical considerations of using each treatment strategy. An adaptive protocol must have frequent measures on which to base the decisions of when to increase or decrease dose rates. For adaptive therapy in prostate cancer, PSA is used as a surrogate for burden. In other cancers, it may be imaging, ctDNA, or other molecular markers (see Is real-time patient prediction feasible?). The biomarker used for decision-making needs to accurately measure changes in the disease burden and state. Frequent measures are best, thus inexpensive and less invasive biomarkers are favored. Ideally, decisions for adaptive protocols could also be guided by measurements of drug resistance, evolvability, or competition if possible. Otherwise, these measurements might be used as stratification factors from pretreatment tissue biopsy. A short induction period to determine disease kinetics could help with the stratification of patients with higher or lower likelihoods of cure under an aggressive treatment strategy. This allows for some measures of the cancer’s eco-evolutionary dynamics without committing to a specific therapeutic regimen (McClatchy et al., 2020). Further, overall survival is an important measure for comparing treatment strategies, but it must be balanced with toxicity and quality of life (Milano et al., 2021). For successful adaptive therapy, drug timing, which includes pharmacokinetics and pharmacodynamics, must be aligned with the growth rate of the tumor and the accumulating side effects for the patient. Attempting to cure a tumor with a slow response means a longer application of aggressive treatment, so drug toxicity becomes a key consideration. With adaptive therapy, the treatment breaks can improve quality of life and reduce overall dose rates, but there is potential for accumulating side effects over an indefinite course of therapy. Cure or control could be favored depending on the patient, the disease state, and the drugs used.
 
-## What is the optimal adaptive dose administration protocol?
+#### What is the optimal adaptive dose administration protocol?
 
 Yannick Viossat: Adaptive therapy often refers to the specific protocol used in the initial prostate clinical trial (Zhang et al., 2017). However, the concept has wider applicability (Gatenby et al., 2009b; Enriquez-Navas et al., 2016; Bacevic et al., 2017; Carrère, 2017; Gallaher et al., 2018; Viossat and Noble, 2021; Cunningham et al., 2018; Cunningham et al., 2020; Hansen and Read, 2020b). The prostate trial’s design was driven by a compromise between mathematical model results and clinically feasible treatment protocols. In this section, we review optimal protocols revealed through investigations of mathematical models. Subsequent sections review the best practices to incorporate experimental (How can we leverage mathematical modeling to support testing of adaptive therapy in the wet lab?) and clinical data (Is real-time patient prediction feasible?) relating to dose modulation protocols.
 
@@ -124,7 +206,7 @@ In theoretical models, a tumor may be temporarily stabilized by a constant dose 
 
 Finally, agent-based models (You et al., 2017; Bacevic et al., 2017; Gallaher et al., 2018; Strobl et al., 2022) allow for testing of features that are not easily incorporated into differential equation models: spatial structure, cell mobility, or quiescence. Spatial structure may increase the cost of resistance, as resistant cells may be trapped inside the tumor, far from the proliferative edge. These models also lead to observations that are not easy to understand theoretically, such as the greater efficiency of dose-skipping over dose-modulation in Gallaher et al., 2018. This highlights that simple models may miss important phenomena and that more data and modeling are needed to optimize adaptive therapies.
 
-## How can we leverage mathematical modeling to support testing of adaptive therapy in the wet lab?
+#### How can we leverage mathematical modeling to support testing of adaptive therapy in the wet lab?
 
 Maximilian Strobl: Thanks to promising preclinical and clinical results, there is growing interest in extending adaptive therapy to new disease settings. To do so requires experimental platforms for testing and, if necessary, improving the safety and efficacy of adaptive protocols. Experimental systems are models and come with inherent assumptions and limitations. Mathematical modelers and experimentalists should collaborate closely in order to design preclinical studies to validate theoretical models, assert safety, and develop adaptive protocols with the maximum benefit to patients.
 
@@ -134,9 +216,9 @@ Second, there is the question of how drug resistance is modeled in the wet lab. 
 
 Finally, there is the question of how to translate treatment algorithms from mathematical or experimental models into clinical practice. Most mathematical models of adaptive therapy neglect drug pharmacokinetics, but clearly this impacts the drug delivery to the tumor and differs between animals and patients. In addition, there is a question of time scales: how does a weekly follow-up in mice compare to a reassessment every 3 mo in patients? And, what happens when treatment cannot be adjusted as planned due to toxicity or practical constraints (e.g., machine failure, or the intended day falling on a holiday/weekend)? This raises the question of how robust are adaptive schedules to deviations, and what is the best strategy with which to respond when deviations occur. Some initial work on this topic has been carried out (Dua et al., 2021; Wang et al., 2021a), and we encourage more research in this direction in order to inform experimental and clinical trial design.
 
-## What are the best practices to design adaptive algorithms for multiple drugs?
+#### What are the best practices to design adaptive algorithms for multiple drugs?
 
-Jeffrey West: It remains unclear how to extend adaptive therapy approaches to multiple treatments. When multiple drugs are available, the combinatorial possibilities expand rapidly. With n treatments available, there exist 2n possible combinations, each of which may be administered at each treatment decision point. Current adaptive trials often utilize less than the full range of 2n combinations. For example, the metastatic castrate-resistant prostate cancer adaptive trial (NCT02415621) administers Lupron (Leuprorelin; gonadotropin-releasing hormone analogue for medical castration) as a continuous backbone while Abiraterone acetate (an inhibitor of CYP17A1, designed to suppress the production of androgens) is given adaptively. The advanced BRAF-mutant melanoma adaptive trial (NCT03543969) administers Encorafenib (a small molecule BRAF-inhibitor) and Binimetinib (a selective MEK inhibitor) in combination adaptively, with Nivolumab (an immune checkpoint inhibitor that blocks PD-1) administered continuously. In both examples, opening the trial design to include the full range of treatment permutations may extend therapeutic control, but at the cost of computational and investigational complexity.
+Jeffrey West: It remains unclear how to extend adaptive therapy approaches to multiple treatments. When multiple drugs are available, the combinatorial possibilities expand rapidly. With $n$ treatments available, there exist $2^{n}$ possible combinations, each of which may be administered at each treatment decision point. Current adaptive trials often utilize less than the full range of $2^{n}$ combinations. For example, the metastatic castrate-resistant prostate cancer adaptive trial (NCT02415621) administers Lupron (Leuprorelin; gonadotropin-releasing hormone analogue for medical castration) as a continuous backbone while Abiraterone acetate (an inhibitor of CYP17A1, designed to suppress the production of androgens) is given adaptively. The advanced BRAF-mutant melanoma adaptive trial (NCT03543969) administers Encorafenib (a small molecule BRAF-inhibitor) and Binimetinib (a selective MEK inhibitor) in combination adaptively, with Nivolumab (an immune checkpoint inhibitor that blocks PD-1) administered continuously. In both examples, opening the trial design to include the full range of treatment permutations may extend therapeutic control, but at the cost of computational and investigational complexity.
 
 Recently, the concept of steering tumor dynamics into periodic, repeatable evolutionary cycles was proposed (Newton and Ma, 2019; Ma and Newton, 2021; Liu et al., 2022). The ordering and timing of treatment combinations is chosen carefully to drive tumor phenotypic composition into a ‘cycle’ such that tumor composition at the start and end of a cycle of therapy are approximately equivalent (West et al., 2020; Dua et al., 2021). Evolutionary cycling was implemented as a strategy to combat resistance to osimertinib (a third-generation tyrosine kinase inhibitor) in EGFR-mutant non-small cell lung cancer (Wang et al., 2021a). Dynamics were described by a Lotka-Volterra competition model within a nonlinear mixed-effects modeling framework, and potential treatment schedules were screened in silico to select fixed protocols that drive tumor dynamics into periodic cycles. These fixed treatment plans implemented in vivo outperformed standard of care treatment schedules in a majority of cases. This study and others (Wang et al., 2021b; Thomas et al., 2022; West et al., 2020; West et al., 2019) illustrate the feasibility of model-driven treatment planning to reduce the combinatorial complexity for multi-drug adaptive therapies.
 
@@ -146,9 +228,9 @@ The first alternative evolution-based multidrug approach is to identify collater
 
 A second alternative multidrug approach known as extinction therapy may provide a way out of the control versus cure conundrum introduced in Cure or control?. For many incurable cancers or specific patients that failed to be cured, an aggressive therapy given continuously will generate a complete response rendering the cancer temporarily clinically undetectable sometimes for periods of years, other times for just months. Rather than wait for the period of remission to end before switching therapies, extinction therapy aims to exploit the vulnerabilities of small, fragmented populations (Artzy-Randrup et al., 2021; Johnson et al., 2019; Konstorum et al., 2016). In this case, these small populations are the remnants that survived therapy either by virtue of resistance or position within the tumor (sometime referred to as stromal protection when the structure of normal cells prevent therapy reaching cancer cells). In models of extinction therapy, the initial therapy (called the first-strike) is stopped as soon as the disease burden shows a complete response (Gatenby et al., 2019; Gatenby and Brown, 2020b). At this point, therapy becomes a sequence (e.g., 45–90 d per sequence) of second strikes using different drugs with different modes of action, and that will not generate undue toxicities. While untried, one can imagine starting a patient that might be cured with an aggressive therapy. If this therapy only generates a partial response, then immediately switch to another drug and/or an adaptive therapy before disease progression. If the therapy produces a complete response, then go into an extinction therapy regimen aiming for cure. If permanent remission does not ensue, then the initial first strike drug likely is still effective, and can then be used for an adaptive therapy. By switching therapies sooner before complete resistance has evolved, the physician and patient retain the option for switching to an adaptive therapy. While models of extinction therapy have been developed (Gatenby et al., 2020a), clinical evidence is sparse but supported by the standard of care multistep curative treatment in Pediatric Acute Lymphocytic Leukemia (Li et al., 2022), by two case studies involving cure in patients with metastatic breast cancer (Chue and La Course, 2019a; Chue and La Course, 2019b), and an ongoing clinical trial for patients with pediatric rhabdomyosarcoma (Reed et al., 2020).
 
-## Challenges and opportunities in clinical translation
+### Challenges and opportunities in clinical translation
 
-## Is real-time patient prediction feasible?
+#### Is real-time patient prediction feasible?
 
 Renee Brady-Nicholls: Predicting precisely when a patient will progress during adaptive therapy offers the opportunity to appropriately modulate treatment, thereby extending patient response and survival. This requires sufficient monitoring of an individual patient’s disease using appropriate clinical markers. Choosing an appropriate biomarker depends on the extent of the disease (e.g., localized versus metastatic, or hormone sensitive versus castration resistant prostate cancer), as well as how frequently said biomarker can be collected to adequately follow the disease trajectory.
 
@@ -158,13 +240,13 @@ Figure 3 illustrates a case study of the feasibility of real-time patient predic
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84263/elife-84263-fig3-v1.jpg)
 
-**Figure 3.:** Adapted from Figure 4 of Brady-Nicholls et al., 2021. (A) Model schematic of treatment-resistant stem cells, sensitive non-stem cells, and prostate-specific antigen interactions. (B) Model calibration (patient 1014) and validation (patient 1016). Nested optimization was used to determine the cohort uniform parameters  and ρ and the patient-specific parameters φ and ps for the training cohort. The uniform values were fixed in the testing cohort, and optimization was used to find the patient-specific parameters α and ps. (αC) Model predictions for patient 1016. The model predicted resistance in 39% of cycle 2 simulations and response in 100% of cycle 3 simulations. Cycle 4 predictions showed resistance in 63% of model simulations. Using cycle-specific cutoffs , and k2,k3, the model correctly predicted that patient 1016 would continue to respond in cycles 2 and 3 but become resistant in cycle 4.k4
+**Figure 3.:** Adapted from Figure 4 of Brady-Nicholls et al., 2021. (A) Model schematic of treatment-resistant stem cells, sensitive non-stem cells, and prostate-specific antigen interactions. (B) Model calibration (patient 1014) and validation (patient 1016). Nested optimization was used to determine the cohort uniform parameters $ρ$ and $\phi$ and the patient-specific parameters $p_{s}$ and $\alpha$ for the training cohort. The uniform values were fixed in the testing cohort, and optimization was used to find the patient-specific parameters $p_{s}$ and $\alpha$. (C) Model predictions for patient 1016. The model predicted resistance in 39% of cycle 2 simulations and response in 100% of cycle 3 simulations. Cycle 4 predictions showed resistance in 63% of model simulations. Using cycle-specific cutoffs $k_{2},k_{3}$, and $k_{4}$, the model correctly predicted that patient 1016 would continue to respond in cycles 2 and 3 but become resistant in cycle 4.
 
-The mathematical model (Figure 3A) uses stem and non-stem cell dynamics to describe patient-specific PSA dynamics in response to treatment. The model has five parameters (ps, λ, α, ρ, φ). Sensitivity analysis found that λ was insensitive, while identifiability analysis showed that ps, α, ρ, and φ were uncorrelated and identifiable. A leave-one-out analysis was used to calibrate and validate the model to longitudinal PSA data from 16 patients. That is, nested optimization was used to estimate patient-specific parameters for ps and α, and uniform parameters for φ and ρ to accurately describe individual patient data for the 15 patients in the training cohort. The uniform φ and ρ values were then fixed and optimization was used to find the ps and α values for the left-out patient (Figure 3B). Once calibrated and validated to the patient data, the model was used to make patient-specific response predictions. Parameter analysis identified the stem cell self-renewal rate ps as the primary driver of differences in treatment response dynamics between responsive and resistant patients. This parameter was used to make subsequent response predictions. That is, the distribution of changes in ps from treatment cycle i to i+1 was used to predict an individual patient’s response in cycle i+1 (Figure 3C). The model was able to predict patient response with 81% accuracy (Brady-Nicholls et al., 2021) (defined as the sum of correct responsive and resistant predictions divided by the total number of predictions). A similar modeling approach was used in biochemically recurrent prostate cancer patients receiving intermittent androgen deprivation therapy to predict response dynamics with 89% accuracy (Brady-Nicholls et al., 2020). Clinically, an accurate predictive model can be used an additional tool that oncologists can use when making treatment decisions for individual patients. An accuracy above 50% (coin-toss) can provide clinicians with more confidence when making such critical decisions.
+The mathematical model (Figure 3A) uses stem and non-stem cell dynamics to describe patient-specific PSA dynamics in response to treatment. The model has five parameters ($p_{s}$, $\lambda$, $\alpha$, $ρ$, $\phi$). Sensitivity analysis found that $\lambda$ was insensitive, while identifiability analysis showed that $p_{s}$, $\alpha$, $ρ$, and $\phi$ were uncorrelated and identifiable. A leave-one-out analysis was used to calibrate and validate the model to longitudinal PSA data from 16 patients. That is, nested optimization was used to estimate patient-specific parameters for $p_{s}$ and $\alpha$, and uniform parameters for $\phi$ and $ρ$ to accurately describe individual patient data for the 15 patients in the training cohort. The uniform $\phi$ and $ρ$ values were then fixed and optimization was used to find the $p_{s}$ and $\alpha$ values for the left-out patient (Figure 3B). Once calibrated and validated to the patient data, the model was used to make patient-specific response predictions. Parameter analysis identified the stem cell self-renewal rate $p_{s}$ as the primary driver of differences in treatment response dynamics between responsive and resistant patients. This parameter was used to make subsequent response predictions. That is, the distribution of changes in $p_{s}$ from treatment cycle $i$ to $i+1$ was used to predict an individual patient’s response in cycle $i+1$ (Figure 3C). The model was able to predict patient response with 81% accuracy (Brady-Nicholls et al., 2021) (defined as the sum of correct responsive and resistant predictions divided by the total number of predictions). A similar modeling approach was used in biochemically recurrent prostate cancer patients receiving intermittent androgen deprivation therapy to predict response dynamics with 89% accuracy (Brady-Nicholls et al., 2020). Clinically, an accurate predictive model can be used an additional tool that oncologists can use when making treatment decisions for individual patients. An accuracy above 50% (coin-toss) can provide clinicians with more confidence when making such critical decisions.
 
 We can learn several lessons from these studies when applying real-time prediction of adaptive therapy in new diseases. Model predictions are dependent on the quality and time-resolution of patient-specific biomarkers. Alternative biomarkers such as circulating tumor DNA (ctDNA) (Hennigan et al., 2019; Ku et al., 2019; Lau et al., 2020), circulating tumor cells (CTCs) (Ried et al., 2020; Salami et al., 2019), and relatively new biomarkers such as urine Lemos et al., 2019; Tosoian et al., 2021 have been shown to be prognostic in prostate cancer and other diseases. Like PSA, these markers can be collected relatively frequently and via minimally invasive methods. They can be used to develop appropriate models that can be used to predict response to adaptive therapy.
 
-## Do adverse effects of maintaining high tumor burden negate potential benefit?
+#### Do adverse effects of maintaining high tumor burden negate potential benefit?
 
 Joel Brown: The prostate adaptive trial (NCT024515621) is instructive here. The original model imagined two categories of sensitive cells that both require testosterone (Zhang et al., 2017). One producing its own, and the other requiring exogenous testosterone. Resistant cells are independent of testosterone and hence unaffected by androgen-focused therapy. In this model, the cost of resistance was assumed to occur primarily through carrying capacity (the maximal cell density) with some contribution of competition coefficients.
 
@@ -184,7 +266,7 @@ Current trials and most models of adaptive therapy consider the patient’s tota
 
 As more clinical trials of adaptive therapy emerge from integrating mathematical models with clinical opportunity and need, it will be essential to consider the tradeoffs associated with maintaining relatively large tumor burdens. A large tumor burden may increase the efficiency of an adaptive therapy regimen while increasing the risks of additional progressive evolution, other ill effects of tumor burden, and the appearance of new lesions within the same or different tissues. Balancing these costs and benefits will likely be disease and drug specific, and will require a continued lockstep between mathematical models and empirical studies, data, and observations of patients.
 
-## Can a mathematical model drive treatment decision-making?
+#### Can a mathematical model drive treatment decision-making?
 
 Mark Robertson-Tessi and Sandy Anderson: Many models of adaptive therapy are currently hypothesis-generating models with less focus on predictive insight (Enderling and Wolkenhauer, 2020). One of the main goals of personalized therapy is the ability to predict likely tumor dynamics arising from all available treatment options, and then select the most promising. Therefore, there is a great need for clinically suitable predictive mathematical models that track patient-specific tumor dynamics. There are, however, numerous challenges that need to be surmounted for this approach to be broadly successful and able to be scaled to large numbers of patients.
 
@@ -194,7 +276,7 @@ A second consideration is the uncertainty of the entire system, from patient to 
 
 Adaptive therapy strategies are one part of a broader approach to introduce evolutionary principles into dose scheduling to mitigate the evolution of resistance (Gatenby and Brown, 2020b; Noorbakhsh et al., 2020; Belkhir et al., 2021; Stanková et al., 2019). Ongoing or planned evolution-based treatment trials include a trial in rhabdomyosarcoma, which includes both extinction therapy and adaptive therapy arms (NCT04388839) (Reed et al., 2020), adaptive androgen deprivation for castration-sensitive prostate cancer (NCT03511196), adaptive abiraterone or enzalutamide in castration-resistant prostate cancer (ANZadapt; NCT05393791), adaptive administration of BRAF-MEK inhibitors for advanced BRAF mutant melanoma (NCT03543969), adaptive carboplatin in ovarian cancer (ACTOv trial; NCT05080556), adaptive therapy of Vismodegib in advanced basal cell carcinoma (NCT05651828), and a feasibility study (Robertson-Tessi et al., 2023) for implementing evolution-based strategies with the aid of mathematical modeling decision-support (the ‘evolutionary tumor board’ at the Moffitt Cancer Center; NCT04343365). Given the complexity of cancer as an evolutionary disease, many of these trials have been planned with insights gained from mathematical models.
 
-## Concluding remarks
+### Concluding remarks
 
 The questions outlined in the sections above can be categorized into the following: integrating the appropriate components into mathematical models (Integrating the appropriate components into mathematical models), the design and validation of dosing protocols (Design and validation of dosing protocols), and challenges and opportunities in clinical translation (Design and validation of dosing protocols). It is our opinion that work addressing these questions should occur concurrently, within an interdisciplinary framework of science.
 

@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Herbold Computational Biology Program, Fred Hutchinson Cancer Center Seattle United States
-2. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
+1. Herbold Computational Biology Program, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 3. Brotman Baty Institute for Precision Medicine Seattle United States
-4. https://ror.org/00cvxb145 Department of Medicine, University of Washington Seattle United States
-5. https://ror.org/03dbr7087 Donnelly Centre and Departments of Molecular Genetics and Computer Science, University of Toronto Toronto Canada
-6. https://ror.org/01s5axj25 Lunenfeld-Tanenbaum Research Institute, Mt. Sinai Hospital Toronto Canada
-7. https://ror.org/02jzgtq86 Center for Cancer Systems Biology, Dana-Farber Cancer Institute Boston United States
-8. https://ror.org/00cvxb145 Department of Bioengineering, University of Washington Seattle United States
+4. Department of Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+5. Donnelly Centre and Departments of Molecular Genetics and Computer Science, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+6. Lunenfeld-Tanenbaum Research Institute, Mt. Sinai Hospital Toronto Canada ([ROR:01s5axj25](https://ror.org/01s5axj25))
+7. Center for Cancer Systems Biology, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+8. Department of Bioengineering, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 

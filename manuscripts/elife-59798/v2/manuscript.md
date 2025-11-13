@@ -26,15 +26,954 @@ Intriguingly, we additionally observed developmental changes in V1 responses to 
 
 ## Results
 
-## Developmental timeline of PSS motion integration
+### Developmental timeline of PSS motion integration
 
 Using coherent plaids, we have previously demonstrated signatures of motion integration in PSS of adult ferrets (Figure 1A). Specifically, a group of PSS neurons responds to the pattern direction of the plaids (so called ‘pattern neurons’), rather than the motion of the individual components (as would be the case for so called ‘component neurons’). Here, we first aimed to establish the developmental timeline for PSS pattern responses. To this end, we used tetrodes or multi-channel silicon probes to record PSS responses in anesthetized ferrets at various ages. Previous research in primates suggests that motion integration develops after maturation of direction selectivity (Chino et al., 1997; Kiorpes and Movshon, 2014). In addition, a minimal level of direction selectivity is required for a meaningful analysis of responses to plaids. We therefore restricted our experiments to an age range after V1 direction selectivity development, which in ferrets occurs around P37 (ferrets open their eyes at about P30). Our data confirm that PSS direction selectivity is also mature at this age (see Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sagittal view of the ferret brain indicating the location of PSS and V1 (ss: suprasylvian sulcus). (B) Top: Plaid stimuli with different angles between the component directions (dOri). Bottom: Illustration of the streaming stimulus paradigm: Plaids of different dOri values and directions were presented along with gratings moving in different directions (see Materials and methods). (C) Simulated responses of an ideal pattern (top) and component cell (bottom) to gratings and plaids. In this and the following figures, the small contour plot for each cell (labeled ‘G’) represents the responses to gratings only. The large 2D contour plot (labeled ‘P’) summarizes responses to all plaids as a function of dOri and direction. In both plots, direction is relative to the cell’s preferred grating direction. For ‘G’, direction refers to the grating direction; for ‘P’, direction refers to the pattern direction (i.e. the perceived direction of the plaid). ‘G’ and ‘P’ are independently normalized by their respective maximum to help with visualization of the tuning properties. An ideal pattern cell would respond maximally to plaid stimuli moving in its preferred direction. An ideal component cell would respond maximally whenever one plaid component moves in the preferred direction, resulting in a response profile with a characteristic ‘V’-shape. For the ideal cells, resposes were scaled so that the area under the direction curve remained constant across dOri values. As a consequence, the responses for the ideal component cell change with dOri (because different number of directions evoke strong responses). All other dOri dependencies were ignored in this illustration. (D) Responses of example PSS neurons classified as pattern cells (see Materials and methods for classification procedure) in ferrets of different ages. For each neuron, we list the pattern index, as well as the maximum response rate evoked by gratings (G) and plaids (P) (otherwise same format as in (C)). (E) Responses of example PSS component cells in ferrets of different age (same format as (D)).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Direction tuning curves of example PSS neurons at P37 (left) and in an adult animal (right), as measured with gratings. The DSI is indicated for each neuron (see Materials and methods). Error bars indicate ± SEM. (B) Cumulative distribution plots of the PSS direction selectivity index at P37 and in adult ferrets. Results indicate mature levels of direction tuning at P37. For statistical comparison of data across groups, see Table 1.
 
 PSS motion integration was assessed at different ages by probing neurons with plaids and gratings. Since plaids are constructed from two component gratings moving in different directions, each plaid can be described by two parameters (Figure 1B) – the difference in direction between the two components (dOri) and the resulting plaid direction (which bisects the two component directions). Importantly, the perception of a coherently moving plaid is maintained over a large range of dOri values (Adelson and Movshon, 1982). To efficiently sample a large number of dOri values and plaid directions, we presented stimuli in a streaming stimulus paradigm, in which stimuli were shown in rapid succession (stimulus update rate: 3 Hz; Figure 1B). We have previously shown that the results of this approach generally agree with those based on showing single stimuli more slowly, but that the sampling of a larger stimulus space noticeably improves the discriminability of pattern and component responses, in addition to generating results that are independent of a particular dOri choice (see Rust et al., 2006; Smith et al., 2005 for a similar presentation method).
 
 For every neuron probed with the streaming stimulus paradigm, we then determined its capacity to integrate local motion signals (see Lempel and Nielsen, 2019 and Materials and methods for details). Briefly, for every neuron, we generated two predictions from the measured stimulus responses, one for pattern and one for component responses. Each prediction summarized tuning as a two-dimensional (2D) function of both the (integrated) plaid direction and dOri. Since coherent plaid motion is perceived independent of dOri, the pattern prediction assumed that the tuning peak would always occur for plaids moving in the preferred direction, regardless of dOri value (but allowing changes in peak height in a dOri-dependent fashion). Consequently, tuning profiles for pattern predictions had a single ridge along the preferred direction (Figure 1C, top). The component prediction, on the other hand, assumed that the individual component directions determined responses, not the integrated plaid direction. For each dOri, the strongest responses therefore should occur whenever one of the components moved in the preferred direction, resulting in a characteristic ‘V’-shape in the chosen 2D tuning plot format (Figure 1C, bottom). As for the pattern prediction, dOri-dependent changes in maximum rates were included in the component prediction. We then compared the two predictions to the measured tuning profile of each neuron by computing Z-corrected partial correlations, resulting in a pattern correlation (ZP) and a component correlation (ZC). We also computed a pattern index for every neuron as ZP–ZC. Based on established criteria (Smith et al., 2005), neurons were classified as pattern neurons if ZP was significantly higher than ZC (using p<0.1); component neurons met the opposite criterion (see Figure 2C and Materials and methods for precise definitions of category boundaries).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig2-v2.jpg)
+
+**Figure 2.:** (A) Median PSS pattern index for each animal included in the study, plotted as a function of age. Gray dots represent animals that yielded one to two neurons, black dots represent animals with data for at least three neurons. (B) Cumulative distributions for pattern indices in different age groups. For further information on statistical tests for this and all following plots, see Table 1. ***p<0.001. (C) Pattern versus component correlations for PSS neurons in animals from different age groups. For each neuron, ZP is plotted against ZC. Black lines indicate the category boundaries used to classify cells into pattern, unclassified, and component cells. Percentages indicate the portion of neurons falling into the component and pattern categories. (D) Top: Illustration of the classic stimulus presentation paradigm, in which stimuli were presented for 1 s, and stimulus presentations were interleaved by 2–10 s of inter-stimulus interval. Bottom: Example plaid stimulus with 135 degrees of difference between the component directions. (E) Same as (B), but for pattern indices computed from responses to plaids presented in the classic stimulus paradigm as shown in (D). ***p<0.001. (F) Same as (C), but for pattern and component correlations computed based on the classic stimulus paradigm as shown in (D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Cumulative distributions of pattern (left) and component (right) correlations for PSS cells recorded in different age groups. Data recorded using the streaming stimulus paradigm. For statistical comparisons see Table 1. ***p<0.001.
+
 Across all ages tested (P37–13 months), we were able to observe pattern and component cells in PSS (Figure 1D,E). Nonetheless, the degree of PSS motion integration underwent pronounced changes with age. As a first step in assessing the time course of motion integration development, we computed the median pattern index for every animal. Figure 2A shows these medians as a function of age (Note that for some animals less than three neurons were recorded. We included these animals for completeness but indicate the corresponding data points in Figure 2A.) While this plot confirmed that a range of pattern indices could be observed at every age, it also showed that the lowest median pattern indices generally occurred in animals before P41. After P41, the range of median pattern indices across animals of the same age was generally similar to that of adults. We therefore divided all developmental data into two groups, P37–40 and P41–47. A third group consisted of adult animals (age range P100–448). As expected, the per-animal pattern indices in the P37–40 age groups were significantly lower than those of the other two groups (P37–40 vs P41–47: p=0.002; P37–40 vs Adult: p=0.001. See Table 1 for the full test details and all statistical results. All data selection criteria are outlined in the Materials and methods. Uneven sample sizes were considered in the choice of statistical tests and are discussed in Materials and methods as well).
+
+**Table 1.**
+ Extended information for all statistical analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Experimental groups</th>
+      <th>Metric or variable</th>
+      <th>Test</th>
+      <th>p-value</th>
+      <th>Other stats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1 Sup 1</td>
+      <td>P37 vs adult</td>
+      <td>Direction selectivity index</td>
+      <td>Welch’s t-test</td>
+      <td>0.86</td>
+      <td>d’ = 0.04</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Animal median pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.002</td>
+      <td>d’ = 1.1</td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>P37–40 vs adult</td>
+      <td>Animal median pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.001</td>
+      <td>d’ = 1.4</td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>P41–47 vs adult</td>
+      <td>Animal median pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.59</td>
+      <td>d’ = 0.23</td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Animal median pattern index</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>P37–40 vs adult</td>
+      <td>Animal median pattern index</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Pattern index. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.74</td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>P37–40 vs adult</td>
+      <td>Pattern index. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.96</td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>P41–47 vs adult</td>
+      <td>Pattern index. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>0.3</td>
+      <td>d’ = 0.19</td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Pattern index. Multiple dOri</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>P37–40 vs adult</td>
+      <td>Pattern index. Multiple dOri</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Zp. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.74</td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs adult</td>
+      <td>Zp. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 1.0</td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P41–47 vs adult</td>
+      <td>Zp. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>0.24</td>
+      <td>d’ = 0.22</td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Zp. Multiple dOri</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs adult</td>
+      <td>Zp. Multiple dOri</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Zc. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.61</td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs adult</td>
+      <td>Zc. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.73</td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P41–47 vs adult</td>
+      <td>Zc. Multiple dOri</td>
+      <td>Welch’s t-test</td>
+      <td>0.58</td>
+      <td>d’ = 0.10</td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Zc. Multiple dOri</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2 Sup 1</td>
+      <td>P37–40 vs adult</td>
+      <td>Zc. Multiple dOri</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 1.3</td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>P37–40 vs adult</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.94</td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>P41–47 vs adult</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Welch’s t-test</td>
+      <td>0.43</td>
+      <td>d’ = 0.21</td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>P37–40 vs adult</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Resample test</td>
+      <td>0.005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3A</td>
+      <td>V4 vs V5</td>
+      <td>Median pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.005</td>
+      <td>d’ = 1.8</td>
+    </tr>
+    <tr>
+      <td>Figure 3A</td>
+      <td>V4 vs V6</td>
+      <td>Median pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.02</td>
+      <td>d’ = 1.3</td>
+    </tr>
+    <tr>
+      <td>Figure 3A</td>
+      <td>V5 vs V6</td>
+      <td>Median pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.89</td>
+      <td>d’ = 0.07</td>
+    </tr>
+    <tr>
+      <td>Figure 3C</td>
+      <td>V4 vs V5–6</td>
+      <td>Pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.01</td>
+      <td>d’ = 0.5</td>
+    </tr>
+    <tr>
+      <td>Figure 3C</td>
+      <td>V4 vs V5–6</td>
+      <td>Pattern index</td>
+      <td>Resample test</td>
+      <td>0.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>V4 vs V5–6</td>
+      <td>Zp</td>
+      <td>Welch’s t-test</td>
+      <td>0.03</td>
+      <td>d’ = 0.42</td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>V4 vs V5–6</td>
+      <td>Zp</td>
+      <td>Resample test</td>
+      <td>0.04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>V4 vs V5–6</td>
+      <td>Zc</td>
+      <td>Welch’s t-test</td>
+      <td>0.02</td>
+      <td>d’ = 0.52</td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>V4 vs V5–6</td>
+      <td>Zc</td>
+      <td>Resample test</td>
+      <td>0.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform</td>
+      <td>ANOVA. Var: age.</td>
+      <td>0.80</td>
+      <td>F = 0.07</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 60</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.006</td>
+      <td>F = 3</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: age.</td>
+      <td>0.08</td>
+      <td>F = 3.1</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 44</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>&lt;0.001</td>
+      <td>F = 4.2</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P41–47 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: age.</td>
+      <td>0.16</td>
+      <td>F = 2</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P41–47 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 51</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P41–47 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.64</td>
+      <td>F = 0.7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Relative plaid responses. dOri: 45 deg. Wilson–Hilferty transform.</td>
+      <td>Welch’s t-test</td>
+      <td>0.16</td>
+      <td>d’=0.19</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. dOri: 45 deg. Wilson–Hilferty transform.</td>
+      <td>Welch’s t-test</td>
+      <td>0.005</td>
+      <td>d’ = 0.58</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P41–47 vs adult</td>
+      <td>Relative plaid responses. dOri: 45 deg. Wilson-Hilferty transform.</td>
+      <td>Welch’s t-test</td>
+      <td>0.06</td>
+      <td>d’ = 0.39</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. dOri: 45 deg. Wilson–Hilferty transform.</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Relative plaid responses. dOri: 157 deg. Wilson–Hilferty transform.</td>
+      <td>Welch’s t-test</td>
+      <td>0.02</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. dOri: 157 deg. Wilson–Hilferty transform.</td>
+      <td>Welch’s t-test</td>
+      <td>0.01</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P41–47 vs adult</td>
+      <td>Relative plaid responses. dOri: 157 deg. Wilson–Hilferty transform.</td>
+      <td>Welch’s t-test</td>
+      <td>0.53</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs P41–47</td>
+      <td>Relative plaid responses. dOri: 157 deg. Wilson–Hilferty transform.</td>
+      <td>Resample test</td>
+      <td>0.002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. dOri: 157 deg. Wilson–Hilferty transform.</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>P37–40</td>
+      <td>Pattern index vs relative plaid response. Wilson–Hilferty transform</td>
+      <td>Pearson correlation</td>
+      <td>0.009</td>
+      <td>r = 0.21</td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>P41–47</td>
+      <td>Pattern index vs relative plaid response. Wilson–Hilferty transform.</td>
+      <td>Pearson correlation</td>
+      <td>&lt;0.001</td>
+      <td>r = 0.46</td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>Adult</td>
+      <td>Pattern index vs relative plaid response. Wilson–Hilferty transform</td>
+      <td>Pearson correlation</td>
+      <td>&lt;0.001</td>
+      <td>r = 0.60</td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>P47–40 vs adult</td>
+      <td>Pattern index vs relative plaid response. Wilson–Hilferty transform</td>
+      <td>Correlation difference</td>
+      <td>0.02</td>
+      <td>z = 2.06</td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>P47–40 vs P41–47</td>
+      <td>Pattern index vs relative plaid response. Wilson–Hilferty transform</td>
+      <td>Correlation difference</td>
+      <td>0.003</td>
+      <td>z = 2.77</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4 Sup 1C</td>
+      <td>P37–40</td>
+      <td>Pattern index vs relative plaid response.</td>
+      <td>Pearson correlation</td>
+      <td>0.003</td>
+      <td>r = 0.24</td>
+    </tr>
+    <tr>
+      <td>Figure 4 Sup 1C</td>
+      <td>P41–47</td>
+      <td>Pattern index vs relative plaid response.</td>
+      <td>Pearson correlation</td>
+      <td>&lt;0.001</td>
+      <td>r = 0.46</td>
+    </tr>
+    <tr>
+      <td>Figure 4 Sup 1C</td>
+      <td>Adult</td>
+      <td>Pattern index vs relative plaid response.</td>
+      <td>Pearson correlation</td>
+      <td>&lt;0.001</td>
+      <td>r = 0.58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform</td>
+      <td>ANOVA. Var: age.</td>
+      <td>0.001</td>
+      <td>F = 11</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 11</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.26</td>
+      <td>F = 1.3</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: age.</td>
+      <td>&lt;0.001</td>
+      <td>F = 82</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 6.8</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P37–40 vs adult</td>
+      <td>Relative plaid responses. Wilson-Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.10</td>
+      <td>F = 1.8</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P44–47 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: age</td>
+      <td>&lt;0.001</td>
+      <td>F = 100</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P44–47 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 7</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>P44–47 vs adult</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.03</td>
+      <td>F = 2.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5D</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.61</td>
+    </tr>
+    <tr>
+      <td>Figure 5D</td>
+      <td>P37–40 vs adult</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Welch’s t-test</td>
+      <td>0.94</td>
+      <td>d’ = 0.01</td>
+    </tr>
+    <tr>
+      <td>Figure 5D</td>
+      <td>P44–47 vs adult</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Welch’s t-test</td>
+      <td>&lt;0.001</td>
+      <td>d’ = 0.64</td>
+    </tr>
+    <tr>
+      <td>Figure 5D</td>
+      <td>P44–47 vs adult</td>
+      <td>Pattern index. dOri 135 deg</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>P44–47 vs muscimol</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform</td>
+      <td>ANOVA. Var: Muscimol.</td>
+      <td>&lt;0.001</td>
+      <td>F = 17</td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>P44–47 vs muscimol</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 4.5</td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>P44–47 vs muscimol</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.44</td>
+      <td>F = 0.97</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>P44-47 vs ACSF</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: ACSF.</td>
+      <td>0.56</td>
+      <td>F = 0.32</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>P44–47 vs ACSF</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 8.3</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>P44–47 vs ACSF</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.98</td>
+      <td>F = 0.20</td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>P37–40 vs muscimol</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform</td>
+      <td>ANOVA. Var: Muscimol.</td>
+      <td>0.04</td>
+      <td>F = 4.3</td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>P37–40 vs muscimol</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>0.007</td>
+      <td>F = 3.0</td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>P37–40 vs muscimol</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.94</td>
+      <td>F = 0.29</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>P37–40 vs ACSF</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: ACSF.</td>
+      <td>&lt;0.001</td>
+      <td>F = 12</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>P37–40 vs ACSF</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: dOri</td>
+      <td>&lt;0.001</td>
+      <td>F = 6.6</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>P37–40 vs ACSF</td>
+      <td>Relative plaid responses. Wilson–Hilferty transform.</td>
+      <td>ANOVA. Var: interaction</td>
+      <td>0.42</td>
+      <td>F = 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 6B</td>
+      <td>P44–47 vs muscimol</td>
+      <td>Pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.01</td>
+      <td>d’ = 0.52</td>
+    </tr>
+    <tr>
+      <td>Figure 6D</td>
+      <td>P44–47 vs ACSF</td>
+      <td>Pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.4</td>
+      <td>d’ = 0.15</td>
+    </tr>
+    <tr>
+      <td>Figure 6B</td>
+      <td>P37–41 vs muscimol</td>
+      <td>Pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.71</td>
+      <td>d’ = 0.07</td>
+    </tr>
+    <tr>
+      <td>Figure 6D</td>
+      <td>P37–41 vs ACSF</td>
+      <td>Pattern index</td>
+      <td>Welch’s t-test</td>
+      <td>0.02</td>
+      <td>d’ = 0.46</td>
+    </tr>
+    <tr>
+      <td>Figure 6B</td>
+      <td>P44–47 vs muscimol</td>
+      <td>Pattern index</td>
+      <td>Resample test</td>
+      <td>0.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 6B</td>
+      <td>P37–41 vs ACSF</td>
+      <td>Pattern index</td>
+      <td>Resample test</td>
+      <td>0.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 7C</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Model-data correlation</td>
+      <td>Rank-sum test</td>
+      <td>0.14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 7E</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Model excitation (Wexc)</td>
+      <td>Rank-sum test</td>
+      <td>0.06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 7E</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Model inhibition (Winh)</td>
+      <td>Rank-sum test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 7E</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Model PSS threshold (TPSS)</td>
+      <td>Rank-sum test</td>
+      <td>0.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 7E</td>
+      <td>P37–40 vs P44–47</td>
+      <td>Model inhibition (Winh)</td>
+      <td>Resample test</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Next, we assessed the motion integration capacity of these three groups at the population level by comparing responses across all of the neurons collected for each group (rather than the animal-by-animal analysis used for Figure 2A). Figure 2B plots the cumulative distribution of pattern indices for each group. Consistent with the trends shown in Figure 2A, the pattern index increased significantly between P37–40 and P41–47, at which point it became adult-like (P37–40 vs P41–47: p<0.001. See Table 1 for the other p values. Non-significant results are omitted from the results text, but are listed in Table 1). This change in pattern index was driven by opposite changes in both of the underlying partial correlation coefficients (Figure 2—figure supplement 1): Between the two younger age groups, ZC decreased significantly (p<0.001), while ZP increased (p<0.001). Changes in pattern and component cell proportions show the same trends (Figure 2C): The proportion of component cells decreased with age (75% at P37–40 vs 41% in adults), while the proportion of pattern cells increased (13% at P37–40 vs 41% in adults).
 
@@ -44,31 +983,47 @@ Another possible concern regarding the data is that weaker responses in younger 
 
 In summary, PSS motion integration – as reflected in the responses to the pattern motion of coherent plaids – developed after direction selectivity and matured about 7 weeks after birth or 1 week after direction selectivity (which also corresponds to about 2 weeks after eye opening).
 
-## Impact of visual experience on motion integration development
+### Impact of visual experience on motion integration development
 
 Visual experience has been shown to play a key role in the development of direction selectivity in ferret V1 (Li et al., 2006; Popović et al., 2018; Van Hooser et al., 2012). Here, we made use of inter-animal variability in development to begin to probe whether it might similarly impact the development of higher-level motion functions in ferrets. In the previous section, we compared PSS responses strictly by age. However, the age at eye opening – and with it the starting point of patterned visual experience – varies across animals (for this data set: range P31-36). This made it possible to test whether differences in the duration of visual experience resulted in measurable differences in motion integration in animals of the same age. Systematic changes in motion integration due to the amount of visual experience should be most detectable in the youngest age group (P37–40), which have the most immature levels of PSS motion integration, and consequently the largest capacity for improvement. We therefore restricted the analysis to animals of this age range. No animal in this group had less than 4 days of experience. A single animal had 7 days of visual experience at the time of recording and was excluded from further analysis as an outlier. Figure 3A plots the median pattern index for each of the remaining animals in the P37–40 age group as a function of their amount of visual experience at the time of recording (same format as for Figure 2A). This figure shows an increase in pattern index with visual experience. In particular, kits with 4 days of visual experience had lower pattern indices than kits with 5 or 6 days of visual experience (V4 vs V5: p=0.004; V4 vs V6: p=0.02). We therefore divided data into two groups, V4 and V5–6, for a population-level analysis (Figure 3B–D). Longer visual experience indeed resulted in a larger proportion of pattern cells (V4: 6%, V5–6: 13%) and a significant increase in pattern index (p=0.01). Analyzed separately, both pattern and component correlations showed significant changes (ZP: p=0.03; ZC: p=0.02).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig3-v2.jpg)
 
-**Figure 3.:** (A) Median PSS pattern index for each animal aged P37–40, plotted as a function of visual experience. Gray dots represent animals that yielded 1–2 neurons, and black dots represent animals with data for at least three neurons. (B) Pattern versus component correlations at P37–40 split according to visual experience (same plot format as Figure 2C). (Left) Animals with 4 days of visual experience. (Right) Animals with 5–6 days of visual experience. (C) Cumulative distributions of pattern indices for PSS cells in kits with 4 days (V4, dashed line) or 5–6 days (V5-6, solid line) of visual experience. *p<0.05. (D) Cumulative distributions for component correlation (left) and pattern correlation (right) for the two groups. *p<0.05.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Median PSS pattern index for each animal aged P37–40, plotted as a function of visual experience. Gray dots represent animals that yielded 1–2 neurons, and black dots represent animals with data for at least three neurons. (B) Pattern versus component correlations at P37–40 split according to visual experience (same plot format as Figure 2C). (Left) Animals with 4 days of visual experience. (Right) Animals with 5–6 days of visual experience. (C) Cumulative distributions of pattern indices for PSS cells in kits with 4 days (V4, dashed line) or 5–6 days (V5-6, solid line) of visual experience. *p<0.05. (D) Cumulative distributions for component correlation (left) and pattern correlation (right) for the two groups. *p<0.05.
 
 The above analysis relies entirely on natural variation in eye opening across animals. While this offers the advantage of studying the impact of visual experience outside of artificial manipulations, it limits the available data set. For example, certain combinations of gestational age and visual experience duration did not occur in our data set. In addition, some correlation between eye opening and gestational date is unavoidable and resulted in the fact that animals in the V4 group were slightly younger (mean age 37.6 days, range 37–40) than animals in the V5–6 group (mean age 38.6, range 37–40). We therefore tested whether visual experience indeed had an effect in addition to age by performing a two-way ANOVA on the pattern index data from all PSS cells with factors visual experience (V4–V6) and age (P37–40). Main effects for both factors were significant (main effect age: p=0.02; main effect visual experience: p=04), demonstrating that both contributed significantly to the observed variance in pattern index across cells. Due to the sampling limitations imposed by natural variability, additional experiments will be needed to fully disentangle the impacts of age and experience. Yet, our results suggest that visual experience impacts the development of PSS motion integration, in addition to the contribution of age.
 
-## Developmental changes in PSS plaid response strength
+### Developmental changes in PSS plaid response strength
 
 Our stimulus set allowed us to probe PSS plaid responses not just as a function of plaid direction, but also as a function of dOri, the intersection angle between the two component gratings. Possible reasons for a response modulation with dOri include differences in the spatial frequency of these plaids, as well as differences in their speed (Zaharia et al., 2019; Priebe et al., 2003). Additionally, the motion integration mechanisms acting in PSS will likely have an impact on plaid response strength by determining how strongly different component signals interact, an assumption that is supported by the observation that the strength of plaid responses is positively correlated with pattern index in both primate MT and adult ferret PSS (Lempel and Nielsen, 2019; Wang and Movshon, 2016).
 
 Here, we found that the dependency of response strength on dOri underwent a series of developmental changes. Figure 4A captures these changes by plotting the population tuning profile as a function of dOri and plaid direction for the different age groups, with the plaid responses of every neuron normalized by the response to gratings. We also quantified changes in relative plaid responses by averaging across all plaid directions (Figure 4B). Note that when analyzed separately for each dOri, the relative plaid response followed a χ2 distribution (Figure 4—figure supplement 1). We therefore used a Wilson–Hilferty transformation (Wilson and Hilferty, 1931) to transform relative plaid responses to a normal distribution before any of the subsequent analyses. Figure 4B shows the transformed data; the raw data and effects of transformation are presented for reference in Figure 4—figure supplement 1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig4-v2.jpg)
+
+**Figure 4.:** (A) Average 2D profile of PSS responses to plaids at different ages (plotted in same format as Figure 1D–E). Average response profiles were computed by normalizing the data for each neuron by its mean grating response, shifting responses in direction space to center the preferred direction at 0 deg, and averaging across all neurons in each age group. (B) Average relative plaid response as a function of dOri. The average relative plaid response shown here was computed by averaging the relative plaid responses shown in (A) across all directions at each dOri. All data were transformed using a Wilson–Hilferty transformation to achieve a normal distribution at each dOri value. Error bars: ± SEM. For statistical comparisons of data across age groups, see Table 1. (C) Ratio between the maximum response to plaids of dOri = 90 deg and the maximum response to gratings versus the pattern index for all PSS neurons at different ages. Dashed lines indicate linear fits, r the correlation coefficient. Data are shown after a Wilson–Hilferty transformation. **p<0.01. ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Average relative plaid response in PSS as a function of dOri. For each age group, curves indicate the median (solid line) and upper and lower 25th percentile (dotted lines). (B) Distribution of the relative plaid response, computed as the ratio between the mean response to plaids of dOri = 90 deg and the mean response to gratings. Distribution is shown for all PSS cells before (left) and after (right) applying the Wilson–Hilferty transformation. (C) Ratio between the maximum response to plaids (dOri = 90 deg) and the maximum response to gratings versus pattern index at different ages. Same data as in Figure 4C, but without the Wilson–Hilferty transformation. (D) Distribution of the ratio between the maximum response to plaids (dOri = 90 deg) and the maximum response to grating for all PSS cells before (left) and after (right) applying the Wilson–Hilferty transformation.
+
 Comparing the average relative plaid responses across age groups revealed that their dOri dependency systematically changed, especially between the youngest age group and both older groups. Most notably, in the youngest animals, changes in dOri caused less changes in plaid responses than in older animals. This was reflected in significant interactions between dOri and age when comparing the youngest animals against either of the other two groups using a two-way ANOVA (P37–40 vs P41–47, p=0.006; P37–40 vs Adult, p=0.004). As a post hoc test, we compared relative plaid responses between age groups at the dOri values evoking maximal and minimal responses in adults (dOri = 45 and 157 deg, respectively). At dOri = 45 deg, we observed significantly lower plaid responses in the youngest animals than in adults (p=0.005). Responses were not different from the P41–47 group for this dOri value. In contrast, responses at dOri = 157 deg were significantly higher in the youngest group than either of the other groups (P37–40 vs P41–47, p=0.02; P37–40 vs Adult, p=0.01). Thus, the post hoc tests confirm that the youngest animals showed less modulation of plaid response strength with dOri than older animals. It should be pointed out that the reduction in responses to plaids with large dOri values between P37–40 and P41–47 correlated with a large reduction in component responses (Figure 4A). In the youngest age group, the impact of the stronger component responses is visible in the clear ‘V’-shape of the population tuning profile. As could be expected, component responses were less affected by dOri, which resulted in a higher response to plaids with large dOri in the youngest age group when averaging across all plaid directions (as done for Figure 4B).
 
 As mentioned above, the maximum relative plaid response is positively correlated with the pattern index in ferret PSS and primate MT in adult animals (Lempel and Nielsen, 2019; Wang and Movshon, 2016). This relationship also emerged with development (Figure 4C; note that these data also were transformed using the Wilson-Hilferty transformation): While the correlation coefficient between pattern index and maximum relative plaid response was significant even for the P37–40 group, Figure 4C shows the dependency between the two variables was quite weak at this age. The correlation coefficient in the older age groups was significantly higher (P37–40 vs P41–47, p=0.02; P37–40 vs Adult, p=0.003), with a more obvious relationship between the two variables apparent in adults (Figure 4C). In summary, not only did the prevalence of pattern responses to plaids increase between P37–40 and P41–47, the dependency of this response on plaid configuration and pattern index developed as well, showing more comprehensive changes in how the visual system handles stimuli consisting of multiple interacting components.
 
-## Developmental changes in V1 plaid responses
+### Developmental changes in V1 plaid responses
 
 Processing of stimuli in V1 is likely an important precursor to PSS functions. V1 does not just compute the local direction signals for the plaid components, the response to these components is modulated by interactions between the plaids through mechanisms like cross-orientation inhibition and motion opponency. These V1 mechanisms could further drive modulations in plaid response strength, in addition to the PSS mechanisms discussed above. We therefore sought to identify developmental changes in V1 plaid processing to gain a more complete picture of the development of the motion pathway as a whole. Accordingly, we recorded V1 responses to plaids at different ages. We selected two age groups for these experiments. The first covered the same age range as the youngest PSS animals, P37–40. The second group covered P44–47, chosen to coincide with the end of the age range of the second PSS group so as to maximize our ability to detect age-dependent differences.
 
 Recording V1 responses to plaids revealed a series of developmental changes. First, we observed changes in the strength of plaid-evoked responses (Figure 5A,B). Between the two younger age groups, responses to plaids generally increased independent of dOri (two-way ANOVA, contribution of age p=0.001), before decreasing strongly in adults. With the decrease in adults also came some changes in the dOri-driven response modulation, as evidenced by significant interactions between dOri and age when comparing the P44–47 age group with the adults using a two-way ANOVA (contribution of age, p<0.001. interaction, p=0.03). The overall decrease in V1 plaid responses was very pronounced in our data set. Note, however, that a previous study (Popović et al., 2018) investigating the development of V1 cross-orientation inhibition in ferrets (i.e., looking at responses to plaids with dOri = 90 deg) did not observe changes in plaid responses between P40 and adulthood, something that will need to be resolved with further experiments (see also Discussion).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig5-v2.jpg)
+
+**Figure 5.:** (A) Average 2D profile of responses to plaids in V1 at different ages (computed and plotted as in Figure 4A). (B) Average relative plaid response in V1 as a function of dOri (data shown after Wilson–Hilferty transformation; same format as Figure 4B). Error bars: ± SEM. (C) Pattern versus component correlations for V1 neurons in different age groups (same format as Figure 2C). (D) Cumulative distribution plots for V1 pattern indices at different ages. Same N and color scheme as (C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Cumulative distribution of pattern indices for cells recorded in V1 (solid line) and PSS (dashed line) at different ages. Left: P37–40. Middle: P44–47. Right: Adults.***p<0.001.
 
 Second, we made an unexpected discovery in our V1 data set: In adult animals, V1 was strongly dominated by component responses (see Figure 5E,F and Lempel and Nielsen, 2019). The same held true for the youngest age group: Across the P37–40 animals, we observed a similar number of pattern and component cells as in adults (pattern: 4% versus 3%, component: 87% versus 95%; Figure 5E), and the pattern index distributions for both groups closely aligned (Figure 5F). However, the middle age group deviated from this pattern. Across animals aged P44–47, we observed a larger number of pattern cells (15%), and the pattern index distribution was significantly shifted toward stronger integration (p<0.001). It should be noted that even with this shift V1 pattern indices remained significantly lower on average than PSS pattern indices (Figure 5—figure supplement 1, p<0.001). The same was true also for the two other age groups (p<0.001 for both groups). Taken together, our data suggest a temporary change in V1 plaid responses, characterized by stronger integration of the two component directions and weaker inhibition caused by the simultaneous presence of two gratings. The combination of these two changes had an interesting consequence: V1 responses were enhanced for plaid conditions in which the pattern motion was in the preferred direction, but were left largely unchanged for conditions in which the components moved in the preferred direction (Figure 5A). Thus, increases in response strength were largely reserved for pattern responses.
 
@@ -76,9 +1031,9 @@ In an effort to identify possible sources for these changes, we next recorded V1
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig6-v2.jpg)
 
-**Figure 6.:** (A) Average relative plaid response in V1 at P37–40 (same data as Figure 5B), P44–47 (same data as Figure 5B), and P44–47 with muscimol inactivation of PSS. Error bars indicate ± SEM. Data are shown after a Wilson–Hilferty transformation. For statistical analysis of data across age groups, see Table 1. (B) Cumulative distribution of V1 pattern indices at P37–40 (same data as Figure 5D), P44–47 (same data as Figure 5D), and P44–47 with muscimol inactivation of PSS. For statistical analysis of data across age groups, see Table 1. *p<0.05. ***p<0.001. (C, D) Same plots as (A, B) but after a control injection of ACSF into PSS. Note that the ACSF group included one animal aged P48, making the age range for this group P44–48.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Average relative plaid response in V1 at P37–40 (same data as Figure 5B), P44–47 (same data as Figure 5B), and P44–47 with muscimol inactivation of PSS. Error bars indicate ± SEM. Data are shown after a Wilson–Hilferty transformation. For statistical analysis of data across age groups, see Table 1. (B) Cumulative distribution of V1 pattern indices at P37–40 (same data as Figure 5D), P44–47 (same data as Figure 5D), and P44–47 with muscimol inactivation of PSS. For statistical analysis of data across age groups, see Table 1. *p<0.05. ***p<0.001. (C, D) Same plots as (A, B) but after a control injection of ACSF into PSS. Note that the ACSF group included one animal aged P48, making the age range for this group P44–48.
 
-## Modeling the relative impact of developmental changes in V1 versus PSS on motion integration
+### Modeling the relative impact of developmental changes in V1 versus PSS on motion integration
 
 As described in the previous section, we observed temporary changes in V1 plaid responses between P44 and P47. The results of the inactivation experiments indicate that these changes depend on feedback from PSS. At the same time, changes in V1 presumably propagate to PSS (and more generally areas downstream from V1), potentially initiating changes in plaid processing throughout the motion pathway. What consequences could the V1 changes have on motion integration computations in PSS, in particular relative to developmental processes occurring within PSS? Obviously, this question will need to be answered experimentally, but as a first step toward providing some answers we made use of a computational model for the motion pathway.
 
@@ -86,7 +1041,7 @@ We have previously shown that a two-stage model consisting of V1-like local dire
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig7-v2.jpg)
 
-**Figure 7.:** (A) Diagram of the model used to explain PSS plaid responses across development. The first stage was composed of 16 V1 direction selective cells whose responses were modeled after empirical V1 data from different age groups. Responses from the V1 stage were then integrated in PSS using a combination of an excitatory and an inhibitory weight function (P, preferred direction; N, null direction). Finally, an exponential non-linearity was applied to the PSS responses. The model had four variables, which are listed below the stage to which they belong. For analysis of model results the two variables controlling inhibition (KI and I) where combined into a single metric (Winh, see Materials and methods). (B) Examples of empirical PSS responses to plaids (left column) and corresponding model PSS responses (right column) after optimizing model parameters to maximize the likelihood of the empirical data for each neuron. Examples show one pattern and one component cell from animals before (P37–40) and after (P44–47) development of motion integration in PSS. Numbers to the right of response profiles indicate correlation between model and empirical responses. (C) Distribution of correlation coefficients between model and empirical responses for each PSS neuron in the two age groups. Results from neurons with model-data correlation below 0.5i were excluded from further analyses. (D) PSS pattern index for every neuron, computed using empirical data or model data for the neuron, for both age groups. (E) Cumulative distribution of all model variables after fitting the model to data from kits before (P37–40) and after (P44–47) the development of motion integration. ***p<0.001.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Diagram of the model used to explain PSS plaid responses across development. The first stage was composed of 16 V1 direction selective cells whose responses were modeled after empirical V1 data from different age groups. Responses from the V1 stage were then integrated in PSS using a combination of an excitatory and an inhibitory weight function (P, preferred direction; N, null direction). Finally, an exponential non-linearity was applied to the PSS responses. The model had four variables, which are listed below the stage to which they belong. For analysis of model results the two variables controlling inhibition (KI and I) where combined into a single metric (Winh, see Materials and methods). (B) Examples of empirical PSS responses to plaids (left column) and corresponding model PSS responses (right column) after optimizing model parameters to maximize the likelihood of the empirical data for each neuron. Examples show one pattern and one component cell from animals before (P37–40) and after (P44–47) development of motion integration in PSS. Numbers to the right of response profiles indicate correlation between model and empirical responses. (C) Distribution of correlation coefficients between model and empirical responses for each PSS neuron in the two age groups. Results from neurons with model-data correlation below 0.5i were excluded from further analyses. (D) PSS pattern index for every neuron, computed using empirical data or model data for the neuron, for both age groups. (E) Cumulative distribution of all model variables after fitting the model to data from kits before (P37–40) and after (P44–47) the development of motion integration. ***p<0.001.
 
 The PSS integration stage of the model remained identical to our previous study. In this stage, the responses of the 16 V1 direction channels were integrated using a weight function with an excitatory component centered at the preferred direction and an inhibitory component centered at the null direction. Both components were modeled as von Mises functions. The width of the excitatory component, as well as the width and amplitude of the inhibitory component were free model parameters. Below, they are summarized as Wexc and Winh, which refer to the area under the excitatory and inhibitory component, respectively. The integration stage finally was followed by an exponential non-linearity determined by the free parameter TPSS. Note that one major purpose of the model was to test whether the observed V1 changes could propagate to PSS (and how they would affect PSS responses). For this reason, the model remained strictly feedforward, despite the above observations that V1 changes depended on feedback from PSS. Future models will need to expand to more complicated models including both feedforward and feedback links to fully explore the dependencies between areas.
 
@@ -95,6 +1050,14 @@ As a first modeling exercise, we attempted to identify which PSS-internal mechan
 The good model fit for both age groups allowed us to compare model parameters across ages. Cumulative distributions for Wexc, Winh and TPSS are plotted for both age groups in Figure 7E. These plots show a trend toward increasing Wexc with age, but the difference between age groups did not reach significance (p=0.06). At the same time, Winh significantly increased between the two groups (p<0.001). TPSS, finally, remained unchanged. Thus, the model results suggest that changes in PSS null direction inhibition are a major component of motion integration development.
 
 Having identified the major changes internal to PSS that could be driving motion integration development, we next sought to determine how the temporary V1 changes complemented them. To this end, we used the following stepwise procedure: We first initiated the model with its state at P37–40. In this baseline model, the V1 stage was set to match the empirical data for P37–40, as shown in the first column of Figure 8A. We also set the parameters for the PSS stage to those determined by fitting the model to PSS data from the same age group. One set of parameters was computed for each neuron in the data set (N = 136), allowing us to construct a population of model PSS neurons. The resulting model PSS responses are summarized in Figure 8A by plotting the average plaid response profile for all PSS model neurons (third column), as well as the resulting pattern index distribution (fifth column).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig8-v2.jpg)
+
+**Figure 8.:** Summary of different instantiations of the motion pathway model. (A) Baseline model. (B) Model with increased PSS inhibition. (C) Model with increased PSS excitation . (D) Model with V1 responses set to reflect those measured at P44–47. (E) Model combining all changes described for (B), (C), and (D). For each model instantiation, the columns (from left to right) contain the following information: Colum 1: V1 plaid responses used for the model’s first stage. Dashed line indicates the preferred motion direction. Column 2: State of PSS parameters for motion integration (Wexc), inhibition (Winh), and threshold non-linearity (TPSS) relative to the baseline model (determined by fitting the model to data from P37–40). No arrow indicates values were unchanged relative to the baseline model, upwards arrow indicate an increase in the parameter. Column 3: Average plaid responses of model PSS neurons. Dashed line indicates the preferred motion direction. Column 4: Difference between average plaid responses of model PSS neurons in a model instantiation and the average response in the baseline model. Column 5: Cumulative distribution of pattern indices of model PSS neurons for the new model instantiation (dashed pink line) and baseline model (solid blue line). ***p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/59798/elife-59798-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Changes in the two model variables that control PSS inhibition (KI, left; I, right) with development, determined by fitting the model to data from the two age groups, with the V1 stage set to the appropriate age as well. While there are significant changes in I, changes in KI are not significant. ***p<0.001. (B) Cumulative distribution plots of Winh (left) and Wexc (right) in the two age groups and for the model instantiations used for Figure 8B,C and E. ***p<0.001.
 
 We then used modifications of the baseline model to assess the impact of different developmental changes. First, we asked what contributions the increase in PSS null direction inhibition made to pattern responses. In this model iteration, we kept the V1 stage unchanged relative to the baseline model, that is, it remained set to mimic responses at P37–40. At the same time, we adjusted Winh of the PSS stage to match the levels seen at P40–44. To achieve this, we increased the value of the model parameter I, which controls the strength of inhibition (see Materials and methods), so that the new mean Winh value equaled that determined when fitting the model to data for P40–44 (Figure 8—figure supplement 1; note that we did not adjust KI since it showed little differences between ages in the original fit). Figure 8B shows the resulting average PSS plaid response profile (third column) and pattern index distribution relative to that of the baseline model (fifth column). It also shows the response difference between the new model iteration and the baseline version as a function of plaid direction and dOri (fourth column). These figures demonstrate that while increasing PSS inhibition resulted in a large overall increase in pattern indices, it came with reduced plaid responses. On the one hand, responses were weakened for plaids in which one of the conditions (but not the integrated plaid) moved in the preferred direction (these make up the arms of the ‘V’-shaped response profile). Changes to these conditions will increase pattern responses by decreasing component responses and are the key mechanism by which inhibition can shape pattern responses. On the other hand, the increased inhibition extended to conditions in which the pattern movement was in the preferred direction, in particular for intermediate dOri values (likely because for these conditions the components were far enough from the preferred direction to experience some of the increased null direction inhibition). Thus, the improvement in pattern index by increased inhibition came at a cost.
 
@@ -124,63 +1087,232 @@ Finally, and most importantly, we have discussed the impact of V1 changes in a p
 
 ## Materials and methods
 
-## Animal preparation and surgery
+### Animal preparation and surgery
 
 All procedures adhered to the guidelines of the National Institute of Health and were approved by the Animal Care and Use Committee at Johns Hopkins University. Experiments were performed in both male and female sable ferrets (Mustela putoris furo) aged 37–448 days. Experiments were conducted in anesthetized ferrets, using the same procedures as described in our previous work (Lempel and Nielsen, 2019). Briefly, animals were anesthetized during the experiments using isoflurane (during surgery: 1.5–3%, during recording: 0.5–2%) and paralyzed using pancuronium bromide (0.15 mg/kg/hr). A number of vital parameters (heart rate, SpO2, EKG, EtCO2, and the EEG) were monitored continuously to ensure adequate anesthetic depth during the experiments. Neosynephrine and atropine were applied to the eyes to retract the nictitating membrane and dilate the pupil, and animals were fitted with contact lenses. Before recordings, craniotomies were made above either V1 or the posterior bank of the suprasylvian sulcus to reach PSS. We targeted central visual field regions in V1, and central and more peripheral visual field regions in PSS.
 
-## Electrophysiology
+### Electrophysiology
 
 Neural signals were recorded using either custom-made tetrodes (12 µm nichrome wire, gold-plated to reach final impedances of 150–500 kΩ) or 64-channel silicon microprobes obtained from the Masmanides lab at UCLA (Du et al., 2011). Probes were gold-plated to reach final impedances of 150–300 kΩ. Signals were amplified and recorded using a CerePlex Direct amplifier (Blackrock Microsystems) or a RHD2000 amplifier (Intan Technologies). Raw data were acquired at either 30 or 20 kHz and filtered between 250 Hz and 5 kHz. Spike detection threshold was set manually for each recording based on noise levels. Single-unit isolation was performed off-line using MATLAB (MathWorks). Isolation was based on multiple waveform characteristics (e.g., spike amplitude peak, area under the waveform, repolarization phase slope) recorded on the four tetrode channels or on neighboring channels of the silicon probe. Quality of isolation was confirmed by inter-spike interval (ISI) analysis. Units that displayed ISIs below 1.2 ms were not included in further analyses.
 
-## Muscimol injections
+### Muscimol injections
 
 PSS was inactivated by injecting muscimol (2.5 mg/ml in ACSF; Sigma) in multiple sites spanning the posterior bank of the suprasylvian sulcus. For control experiments, ACSF without muscimol was injected instead. To aid the visualization of injection location and spread, 0.05% Fast Green FCF (Fisher Scientific) was added to both the muscimol and control solution. To inject the solution, we used glass pipettes pulled using a micropipette puller (Sutter instrument, model P-1000) and 5 µl calibrated glass capillary tubes (VWR). Infusion was performed at a rate of 0.1–0.5 µl/min. For each animal, injections were performed at four different locations along the posterior bank of the suprasylvian sulcus. At each location, 0.2–0.4 µl of either muscimol or ACSF solution were infused at 4 depths spaced 200–300 µm apart. In total, 4–5 µl of either muscimol of ACSF solution were injected per animal. Recordings were made in V1 1–5 hr after injection. For muscimol experiments, lack of PSS responsiveness was confirmed by extracellular recordings either during or right after the last V1 recording.
 
-## Visual stimuli and experiment design
+### Visual stimuli and experiment design
 
 Visual stimuli were generated using the Psychophysics Toolbox extensions for MATLAB (Brainard, 1997; Pelli, 1997) and displayed on a 24-inch LCD monitor with a refresh rate of 120 Hz, placed 25–35 cm in front of the ferret. For a subset of experiments, a 43-inch LCD monitor with a refresh rate of 60 Hz was used instead. Monitors were gamma corrected using a SpectraScan 655 (PhotoResearch).
 
-## Measurements of direction selectivity
+#### Measurements of direction selectivity
 
 The direction selectivity data shown in Figure 1—figure supplement 1 was collected in a set of separate experiments. These experiments consisted of gratings moving in different directions as well as a blank condition. Each condition was repeated five times, with conditions presented in a pseudo-random sequence. Measurements of direction selectivity at P37 used square-wave gratings. In adults, either square-wave or sine-wave gratings were used to measure direction selectivity. Square-wave gratings were only used for the direction selectivity measurements shown in Figure 1—figure supplement 1, and not for any of the subsequent plaid experiments. Grating spatial frequency was set to maximize responses at the recording location (range 0.05–0.1 cycles/deg), as was temporal frequency (range 2–6 Hz). Gratings were shown at 100% contrast and moved in 12 or 16 different directions. Stimuli were presented interspersed with presentation of a gray screen of equal mean luminance. Stimuli were presented for 1 s with inter-stimulus intervals of 2–10 s and at a size of 65 × 50 deg.
 
-## Plaids, classic stimulus presentation
+#### Plaids, classic stimulus presentation
 
 These experiments consisted of plaids and gratings. Gratings in these experiments were sine-wave gratings of optimal spatial and temporal frequency shown at 50% contrast. Plaids were generated by superimposing two 50% contrast sine-wave gratings of the same spatial and temporal frequency at an intersection angle of 135 deg. Both gratings and plaids could move in 16 different directions. Five repetitions of each stimulus condition were shown. Stimulus sizes were optimized for each neuron. For most experiments, stimuli were shown in a circular aperture with radius 8–30 deg, but in a small subset of adult plaid experiments, we used rectangular stimuli of 65 × 50 deg instead. Otherwise stimulus parameters were set as described above.
 
-## Plaids, streaming stimulus presentation
+#### Plaids, streaming stimulus presentation
 
 Each trial consisted of a 60 s long sequence of short stimulus presentations (3–4 stimuli/s). Each sequence was preceded and followed by a 2–4 s long presentation of a gray screen of equal luminance. Stimulus sequence was determined randomly by picking from all stimulus conditions with replacement. The following stimulus conditions were used: blank (uniform gray screen), 100% contrast sine-wave gratings moving in 16 directions, and plaids with seven different component intersection angles (dOri = 22.5, 45, 67.4, 90, 112.5, 135, and 157.5 deg) moving in 16 directions. In a subset of experiments, we also included 50% contrast gratings moving in 16 directions. Spatial frequency (0.05–0.15 cycles/deg), temporal frequency (3–6 Hz), and stimulus size (circular aperture of radius 10–35 deg) were optimized at each recording location. For each stimulus, the initial phase of each grating was chosen randomly from four possible values (0, 90, 180, and 270 deg). Thirty or 45 trials were run for each experiment, so that each stimulus was presented at least 10 times.
 
-## Data analysis
+### Data analysis
 
-## Direction selectivity and classic stimulus presentations for plaids
+#### Direction selectivity and classic stimulus presentations for plaids
 
 For direction selectivity measurements and experiments using the classic stimulus presentation mode (Figure 1—figure supplement 1 and Figure 2), neuronal responses were calculated as the firing rate during stimulus presentation minus the firing rate during the last second of the pre-stimulus period. Tuning properties were then computed based on the mean responses across stimulus repetitions for each condition.
 
-Direction selectivity was quantified using a direction index comparing responses between preferred and null directions, which was computed as follows:DSI=1−R(N)R(P)where R(P) is the response to the preferred direction and R(N) is the response to the null direction. We also computed an orientation selectivity index, which was used for cell selection in the plaid analysis (see below). This index was computed as follows:OSI=1−R(O)R(P)where R(P) is the response to the preferred direction and R(O) is the mean response to the two gratings with an orientation orthogonal to the preferred. Both indices are computed based on responses to gratings only.
+Direction selectivity was quantified using a direction index comparing responses between preferred and null directions, which was computed as follows:
 
-To quantify motion integration in the classic paradigm, we used standard methods to compute partial correlations between the measured plaids responses and pattern and component response predictions (Movshon et al., 1985). Partial correlations were then Z-transformed to achieve a normal distribution that takes into account the degrees of freedom and better allows comparisons across conditions. The Z-transform was computed as (Smith et al., 2005):Z=N−312ln(1+r1−r)where r is the partial correlation (either pattern or component) and N refers to the number of points in the correlation (here, 16). Cells were classified as pattern cells if they met ZP – Zc >1.28 for ZC ≥0, and ZP >1.28 otherwise. Component cells had to meet the opposite criterion. We also computed a pattern index as ZP–ZC. As in the cell classification, any negative values (ZP or ZC) were set to 0 when computing the index.
+$$
+DSI=1−\frac{R(N)}{R(P)}
+$$
 
-## Streaming stimulus presentation
+where R(P) is the response to the preferred direction and R(N) is the response to the null direction. We also computed an orientation selectivity index, which was used for cell selection in the plaid analysis (see below). This index was computed as follows:
+
+$$
+OSI=1−\frac{R(O)}{R(P)}
+$$
+
+where R(P) is the response to the preferred direction and R(O) is the mean response to the two gratings with an orientation orthogonal to the preferred. Both indices are computed based on responses to gratings only.
+
+To quantify motion integration in the classic paradigm, we used standard methods to compute partial correlations between the measured plaids responses and pattern and component response predictions (Movshon et al., 1985). Partial correlations were then Z-transformed to achieve a normal distribution that takes into account the degrees of freedom and better allows comparisons across conditions. The Z-transform was computed as (Smith et al., 2005):
+
+$$
+Z=\sqrt{N−3}\frac{1}{2}ln(\frac{1+r}{1−r})
+$$
+
+where r is the partial correlation (either pattern or component) and N refers to the number of points in the correlation (here, 16). Cells were classified as pattern cells if they met ZP – Zc >1.28 for ZC ≥0, and ZP >1.28 otherwise. Component cells had to meet the opposite criterion. We also computed a pattern index as ZP–ZC. As in the cell classification, any negative values (ZP or ZC) were set to 0 when computing the index.
+
+#### Streaming stimulus presentation
 
 Stimulus-evoked responses collected using the streaming stimulus paradigm were extracted after computing an optimal latency for every neuron, as described in our previous work (Lempel and Nielsen, 2019). After computing the response to each condition, each neuron’s pattern and component predictions were computed as described in Lempel and Nielsen, 2019. Briefly, we computed a dOri curve for every neuron as the average across all stimuli with the same dOri. We then combined the dOri curve with a direction tuning curve to generate a pattern and component prediction. For the pattern prediction, this direction tuning curve was computed by averaging responses to gratings and plaids with shared directions, using the pattern direction as the plaid’s direction. For the component prediction, the direction tuning curve was instead computed based on the component directions (again, gratings were included in this computation). Finally, we computed partial correlations of each neuron’s actual response with the two predictions and converted these values to Z-scores as before (with N set to 112 to account for the 7 dOri values and 16 directions involved in the computation).
 
-## Inclusion criteria and data set size
+### Inclusion criteria and data set size
 
-## Direction selectivity and classic stimulus presentations for plaids
+#### Direction selectivity and classic stimulus presentations for plaids
 
 For direction selectivity measurements and experiments using the classic stimulus presentation mode (Figure 1—figure supplement 1 and Figure 2), we first excluded neurons that did not meet a minimal response criterion by eliminating all neurons for which the best condition had an average firing rate of less than 2 Hz. The remaining neurons were then screened for general stimulus responsiveness. For direction selectivity measurements (Figure 1—figure supplement 1), we performed this test by using a one-way ANOVA to compare responses across all stimulus conditions (including the blank). Only cells that passed p<0.01 for the ANOVA were included in further analyses. For the plaid experiments (Figure 2), two responsiveness tests were performed: one for gratings and one for plaids only. Both tests used a one-way ANOVA to compare responses across all stimulus conditions plus the blank. Cells that passed both tests with p<0.05 were included in further analyses.
 
-## Streaming stimulus presentation
+#### Streaming stimulus presentation
 
 Cells were screened for responsiveness using two criteria: First, cells had to pass an ANOVA comparing the responses for all plaid conditions with dOri = 90 deg and the blank condition (criterion p<0.01). Second, the responses to the best grating had to be larger than 2 Hz and responses to the best plaid with dOri = 90 deg had to be larger than 1.5 Hz. The criterion rate for the plaids was lowered slightly to account for generally lower firing rates for these conditions. We also applied a minimal tuning criterion because component and pattern predictions could not reasonably be computed for untuned neurons. To meet the tuning criterion, cells had to be orientation selective (OSI > 0.6) and direction selective (DSI > 0.7). Again, these indices were computed strictly based on responses to gratings, not plaids.
 
-## Data set size
+#### Data set size
 
 The number of animals and neurons for every figure is listed in Table 2. The uneven size of the data sets for different age groups is due to the fact that more experiments were run in younger animals (as part of other studies). Generally, slightly more neurons were excluded in younger than in older animals because responses in younger animals were weaker overall. For the main PSS data set for the streaming stimulus protocol, our selection criteria had the following consequences: At P37–70, 607 single units could be sorted. Of these, 458 (75%) were responsive to gratings, with 297 (49%) passing the direction and orientation criterion. Finally, 153 of these neurons (25% of total number) also passed the responsiveness criterion for plaids. At P41–47, 265 neurons were sorted, of which 215 (81%) were responsive to gratings, 147 (55%) were sufficiently orientation and direction selective, and 85 neurons (32%) also passed the responsiveness test for plaids. In adults, 100 neurons were sorted, of which 88 responded to gratings (88%), 63 (63%) were direction and orientation selective, and 46 (46%) were responsive to plaids.
 
-## Statistics
+**Table 2.**
+ Number of animals and neurons for all experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figures</th>
+      <th>Experiment/analysis</th>
+      <th>Experimental group</th>
+      <th>Animals</th>
+      <th>Neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 Sup 1</td>
+      <td>Analysis of direction selectivity using gratings.</td>
+      <td>PSS. P37.</td>
+      <td>3</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>1 Sup 1</td>
+      <td>Analysis of direction selectivity using gratings.</td>
+      <td>PSS. Adult.</td>
+      <td>10</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>1, 2, and 4</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>PSS. P37–40.</td>
+      <td>27</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <td>1, 2, and 4</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>PSS. P41–47.</td>
+      <td>13</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>1, 2, and 4</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>PSS. Adult.</td>
+      <td>9</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>PSS. V4.</td>
+      <td>4</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>PSS. V5.</td>
+      <td>8</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>PSS. P37.</td>
+      <td>6</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>PSS. P40.</td>
+      <td>8</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>2 Sup 1</td>
+      <td>Analysis of pattern index using responses to plaids of dOri 135 deg.</td>
+      <td>PSS. P37–40.</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>2 Sup 1</td>
+      <td>Analysis of pattern index using responses to plaids of dOri 135 deg.</td>
+      <td>PSS. P41–47.</td>
+      <td>5</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>2 Sup 1</td>
+      <td>Analysis of pattern index using responses to plaids of dOri 135 deg.</td>
+      <td>PSS. Adult.</td>
+      <td>7</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>5, 6</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>V1. P37–40.</td>
+      <td>16</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>5, 6</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>V1. P41-47.</td>
+      <td>14</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>V1. Adult.</td>
+      <td>9</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>Muscimol</td>
+      <td>5</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Analysis of pattern index and dOri tuning using responses to plaids of different dOri values.</td>
+      <td>ACSF</td>
+      <td>3</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>7, 8</td>
+      <td>Analysis of model MLE fits.</td>
+      <td>PSS. P37-40.</td>
+      <td>25</td>
+      <td>136</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Analysis of model MLE fits.</td>
+      <td>PSS. P44-47.</td>
+      <td>8</td>
+      <td>46</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Direction selectivity, pattern index, pattern and component Z-corrected correlations were compared between experimental groups using a Welch’s t-test. This version of the Student’s t-test is modified to accommodate unequal sampling and unequal variance across experimental groups. Model parameters determined through data fits were compared between age groups using the non-parametric Wilcoxon rank-sum test.
 
@@ -188,16 +1320,20 @@ In cases of significant sample size differences between two groups (e.g., differ
 
 To test for differences in relative plaid responses across dOri values, age groups, and their interaction, a two-way ANOVA with an interaction term was used. We found that the distribution of relative plaid responses had a long tail at the high end, typical of a χ2-distribution. To transform this distribution in a way that would better fit the assumptions of this parametric test, we performed a Wilson–Hilferty transformation (Wilson and Hilferty, 1931) of the data by computing the cubic root. This transformation largely removed the asymmetries in the distribution (Figure 4—figure supplement 1). This transformation was also used before computing correlations between relative plaid responses and pattern index (Figure 4C). For comparisons of Wilson–Hilferty transformed relative plaid responses at particular dOri values, a Welch’s t-test was used.
 
-## Image-computable motion-pathway model
+### Image-computable motion-pathway model
 
 The model used here is a modification of a model we described previously (Lempel and Nielsen, 2019). The code for the new model is available on github (https://github.com/nielsenlabmbi/PSSModelMLE; Lempel, 2020; copy archived at swh:1:rev:7a4bba49cd2c72fab0623f3c3756fd55506cc816 Lempel, 2021). The LGN and V1 stages of the model described in Lempel and Nielsen, 2019 were removed and instead responses of V1 cells providing input to PSS were modeled after empirical data collected from V1 neurons at different developmental stages. Model V1 responses were computed from empirical data in the following way: Data from individual neurons (as a function of plaid direction and dOri) were first normalized by their maximum response to gratings and shifted in direction space to align the preferred direction to 0 deg. Data from neurons belonging to the same age group were then averaged to compute a single V1 filter profile per group. This profile was used to generate 16 V1 filters with different direction preferences (homogeneously covering direction space) by shifting the profile in direction space.
 
 In the previous implementation of this model (Lempel and Nielsen, 2019), V1 response profiles were completely direction selective and symmetric around the preferred direction, in that stimuli moving in directions equidistant to the preferred direction elicited identical responses. To maintain these two properties of V1 filters in the new model implementation, we applied the following two transformations: To make the filters symmetric, we effectively mirrored the 2D response profile for each filter around the preferred direction. More precisely, at each dOri the filter response for directions with similar distances from the preferred direction were averaged. The original responses were then replaced with the average. To make the output of the V1 stage perfectly direction selective, we combined the responses of V1 model neurons with opposite direction preferences. More precisely, each direction channel consisted of a pair of V1 filters. The response of the filter was computed as P-P(o)O, where P is the response of filter one at a particular direction and dOri, O the response of filter two which prefers the opposite direction, and P(o) the response of filter one to a grating moving in the null direction. This forced the response of the filter pair to be 0 at the null direction. Any negative values resulting from the computation were set to 0.
 
-The V1 filter stage was followed by a PSS integration stage as described previously. Briefly, the responses of the 16 V1 filters were combined linearly, using a weight function that consisted of two van Mises functions, one centered at the preferred and one centered at the null direction. This PSS integration stage was followed by a final non-linearity, implemented here as an exponential function (as opposed to the subtraction and rectification method implemented previously) so that:PSSresp after NL= (PSSresp)TPSS
+The V1 filter stage was followed by a PSS integration stage as described previously. Briefly, the responses of the 16 V1 filters were combined linearly, using a weight function that consisted of two van Mises functions, one centered at the preferred and one centered at the null direction. This PSS integration stage was followed by a final non-linearity, implemented here as an exponential function (as opposed to the subtraction and rectification method implemented previously) so that:
+
+$$
+PSS_{resp after NL}= (PSS_{resp})^{T_{PSS}}
+$$
 
 This change was implemented to aid the parameter optimization method described below. In total, the model had the following free parameters: KE, KI, I, TPSS, and Respmax. This last variable simply multiplied PSS responses computed by the model to best match empirically recorded firing rates.
 
-## Model fitting
+#### Model fitting
 
 Model parameters were fit to maximize the likelihood of responses measured empirically from individual PSS neurons. V1 responses used in the model were selected to match the age group of the empirical PSS data being fitted. Likelihood of empirical data was computed from modeled parameters assuming a Poisson distribution with event frequency equal to the PSS response computed by the model. Log-likelihood was computed for the empirically measured response of the PSS neuron in every trial across all stimuli conditions and then summed to compute the log-likelihood of all observed data given certain model parameters. Model parameters were optimized to maximize log-likelihood using a simulated annealing algorithm implemented by the Matlab function ‘smulannealbnd’ (Global Optimization Toolbox). Lower and upper bounds for variables were as follows: KE [−5–6], KI [−5–6], I [0–2], TPSS[0–3], and Respmax [80% max. response of empirical data – 120% max. response of empirical data]. As a test of fit quality for the model, we computed the Pearson correlation between mean empirical responses and modeled responses across stimuli. Model fits with correlation coefficients below 0.5 were removed from further analysis. Seventeen of 153 model fits in the P37–40 age group, and 6 of 52 model fits in the P44–47 age group were removed in this manner.

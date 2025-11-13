@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Oxytocin-like peptides have been implicated in the regulation of a wide range of social behaviors across taxa. On the other hand, the social environment, which is composed of conspecifics that may vary in their genotypes, also influences social behavior, creating the possibility for indirect genetic effects. Here, we used a zebrafish oxytocin receptor knockout line to investigate how the genotypic composition of the social environment (G s ) interacts with the oxytocin genotype of the focal individual (G i ) in the regulation of its social behavior. For this purpose, we have raised wild-type or knock-out zebrafish in either wild-type or knock-out shoals and tested different components of social behavior in adults. G i xG s effects were detected in some behaviors, highlighting the need to control for G i xG s effects when interpreting results of experiments using genetically modified animals, since the genotypic composition of the social environment can either rescue or promote phenotypes associated with specific genes.
+Oxytocin-like peptides have been implicated in the regulation of a wide range of social behaviors across taxa. On the other hand, the social environment, which is composed of conspecifics that may vary in their genotypes, also influences social behavior, creating the possibility for indirect genetic effects. Here, we used a zebrafish oxytocin receptor knockout line to investigate how the genotypic composition of the social environment (Gs) interacts with the oxytocin genotype of the focal individual (Gi) in the regulation of its social behavior. For this purpose, we have raised wild-type or knock-out zebrafish in either wild-type or knock-out shoals and tested different components of social behavior in adults. GixGs effects were detected in some behaviors, highlighting the need to control for GixGs effects when interpreting results of experiments using genetically modified animals, since the genotypic composition of the social environment can either rescue or promote phenotypes associated with specific genes.
 
 ## Introduction
 
@@ -36,11 +36,245 @@ In this study, we aimed to provide a proof of principle for GixGs effects in beh
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56973/elife-56973-fig1-v2.jpg)
 
-**Figure 1.:** The contribution of the individual genotype (Gi), the genotype of conspecifics in the social group (Gs) and the interaction between the two (GixGs) to the expression of behavioral phenotypes in zebrafish was assessed by raising oxytocin receptor mutant fish and wild types (focal fish marked with *) in shoals of either mutants or wild types (A). Social preference, measured by the time fish spend near a shoal vs. empty in a choice test (B, upper panel), showed a marginally significant effect of Gs (C; Source data file Figure 1—source data 1). Social habituation, which consisted on a consecutive social preference test exhibited a GixGs effect (D; Source data file Figure 1—source data 2). Social recognition, measured as the discrimination between a novel and a familiar conspecific (E, upper panel), shows a pure G effect (F; Source data file Figure 1—source data 3). Social integration, measured as distance to the centroid of the shoal (G), showed a GixGs effect (H; Source data file Figure 1—source data 4). Social influence, measured by the cohesion of the remaining shoal members (I), also showed a marginally significant GixGs effect (J; Source data file Figure 1—source data 5). Heatmaps show the spatial distribution of a representative oxtr(+/+) individual fish raised in a oxtr(+/+) group, during the entire trial, for both social preference (B, lower panel) and social recognition (E, lower panel). Data is presented as mean ± standard error of the mean (SEM). Sample sizes are nine for heterogeneous groups (i.e. focal individual with different genotype from the remaining individuals in the shoal; mutant focal in WT shoals and WT focal in mutant shoals) and 15 for homogeneous groups (i.e. focal individual with the same genotype of the remaining individuals in the shoal; mutant focal in mutant shoals and WT focal in WT shoals). Different letters indicate significant differences (p<0.05) between treatments as assessed by Tukey post-hoc tests following a two-way ANOVA (D,H,J; see Table 1). An asterisk indicates a Gi main effect in F.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1—source data 4.Figure 1—source data 5.
+**Figure 1.:** The contribution of the individual genotype (Gi), the genotype of conspecifics in the social group (Gs) and the interaction between the two (GixGs) to the expression of behavioral phenotypes in zebrafish was assessed by raising oxytocin receptor mutant fish and wild types (focal fish marked with *) in shoals of either mutants or wild types (A). Social preference, measured by the time fish spend near a shoal vs. empty in a choice test (B, upper panel), showed a marginally significant effect of Gs (C; Source data file Figure 1—source data 1). Social habituation, which consisted on a consecutive social preference test exhibited a GixGs effect (D; Source data file Figure 1—source data 2). Social recognition, measured as the discrimination between a novel and a familiar conspecific (E, upper panel), shows a pure G effect (F; Source data file Figure 1—source data 3). Social integration, measured as distance to the centroid of the shoal (G), showed a GixGs effect (H; Source data file Figure 1—source data 4). Social influence, measured by the cohesion of the remaining shoal members (I), also showed a marginally significant GixGs effect (J; Source data file Figure 1—source data 5). Heatmaps show the spatial distribution of a representative oxtr(+/+) individual fish raised in a oxtr(+/+) group, during the entire trial, for both social preference (B, lower panel) and social recognition (E, lower panel). Data is presented as mean ± standard error of the mean (SEM). Sample sizes are nine for heterogeneous groups (i.e. focal individual with different genotype from the remaining individuals in the shoal; mutant focal in WT shoals and WT focal in mutant shoals) and 15 for homogeneous groups (i.e. focal individual with the same genotype of the remaining individuals in the shoal; mutant focal in mutant shoals and WT focal in WT shoals). Different letters indicate significant differences (p<0.05) between treatments as assessed by Tukey post-hoc tests following a two-way ANOVA (D,H,J; see Table 1). An asterisk indicates a Gi main effect in F.
 
 ## Results and discussion
 
 Adult zebrafish, like many other social animals, express a tendency to approach and interact with conspecifics (social preference, Figure 1B; Engeszer et al., 2004). Here, we show that there was no significant effect of either genotype or GixGs interaction on social preference, but there was a marginally significant main effect of Gs (Table 1; Figure 1C). When fish were presented for a second time to a shoal to measure social habituation (i.e. expected reduction in social preference), we found a GixGs interaction, where oxtr(-/-) individuals raised in oxtr(-/-) shoals express enhanced social habituation (F1,44 = 5.642, p=0.022; Figure 1D). Thus, social motivation in zebrafish seems to be influenced by the genotype of conspecifics rather than by the genotype of the individual. Hence, the increased social habituation in oxtr(-/-) fish does not seem to be due to reduced social motivation, but rather to an heightened habituation to the stimuli, suggesting that the observed GixGs interaction effect is related to changes in single-stimulus learning mechanisms in mutant fish rather than to changes in social motivation.
+
+**Table 1.**
+ Effect of genotype of the focal individual (Gi), genotype of conspecifics present in its social environment (Gs) and the interaction between the two (GixGs) on zebrafish social behavior was assessed using a two-way ANOVA.~ indicates marginally significant, *p<0.05, **p<0.01, ***p<0.001. (Source data files Figure 1—source datas 1–5).
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="4">Social preference</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>d.f.</td>
+      <td>Mean squares</td>
+      <td>F</td>
+      <td>Significance</td>
+      <td>Partial η2</td>
+    </tr>
+    <tr>
+      <td>Gi</td>
+      <td>1</td>
+      <td>0.023</td>
+      <td>1.731</td>
+      <td>0.195</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>Gs</td>
+      <td>1</td>
+      <td>0.050</td>
+      <td>3.788</td>
+      <td>0.058~</td>
+      <td>0.079</td>
+    </tr>
+    <tr>
+      <td>Gi x Gs</td>
+      <td>1</td>
+      <td>0.001</td>
+      <td>0.049</td>
+      <td>0.825</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>44</td>
+      <td>0.013</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Habituation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>d.f.</td>
+      <td>Mean squares</td>
+      <td>F</td>
+      <td>Significance</td>
+      <td>Partial η2</td>
+    </tr>
+    <tr>
+      <td>Gi</td>
+      <td>1</td>
+      <td>0.058</td>
+      <td>13.927</td>
+      <td>0.001 **</td>
+      <td>0.240</td>
+    </tr>
+    <tr>
+      <td>Gs</td>
+      <td>1</td>
+      <td>0.008</td>
+      <td>1.936</td>
+      <td>0.171</td>
+      <td>0.042</td>
+    </tr>
+    <tr>
+      <td>Gi x Gs</td>
+      <td>1</td>
+      <td>0.024</td>
+      <td>5.642</td>
+      <td>0.022 *</td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>44</td>
+      <td>0.004</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Social recognition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>d.f.</td>
+      <td>Mean squares</td>
+      <td>F</td>
+      <td>Significance</td>
+      <td>Partial η2</td>
+    </tr>
+    <tr>
+      <td>Gi</td>
+      <td>1</td>
+      <td>0.213</td>
+      <td>7.600</td>
+      <td>0.008 **</td>
+      <td>0.147</td>
+    </tr>
+    <tr>
+      <td>Gs</td>
+      <td>1</td>
+      <td>0.005</td>
+      <td>0.189</td>
+      <td>0.666</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Gi x Gs</td>
+      <td>1</td>
+      <td>0.001</td>
+      <td>0.041</td>
+      <td>0.841</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>44</td>
+      <td>0.028</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Social group integration</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>d.f.</td>
+      <td>Mean squares</td>
+      <td>F</td>
+      <td>Significance</td>
+      <td>Partial η2</td>
+    </tr>
+    <tr>
+      <td>Gi</td>
+      <td>1</td>
+      <td>39.486</td>
+      <td>24.370</td>
+      <td>&lt;0.001 ***</td>
+      <td>0.356</td>
+    </tr>
+    <tr>
+      <td>Gs</td>
+      <td>1</td>
+      <td>12.565</td>
+      <td>7.755</td>
+      <td>0.008 **</td>
+      <td>0.150</td>
+    </tr>
+    <tr>
+      <td>Gi x Gs</td>
+      <td>1</td>
+      <td>12.811</td>
+      <td>7.907</td>
+      <td>0.007 **</td>
+      <td>0.152</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>44</td>
+      <td>1.620</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Social group dispersion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>d.f.</td>
+      <td>Mean squares</td>
+      <td>F</td>
+      <td>Significance</td>
+      <td>Partial η2</td>
+    </tr>
+    <tr>
+      <td>Gi</td>
+      <td>1</td>
+      <td>174.366</td>
+      <td>4.309</td>
+      <td>0.044 *</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td>Gs</td>
+      <td>1</td>
+      <td>657.221</td>
+      <td>16.240</td>
+      <td>&lt;0.001 ***</td>
+      <td>0.270</td>
+    </tr>
+    <tr>
+      <td>Gi x Gs</td>
+      <td>1</td>
+      <td>122.980</td>
+      <td>3.039</td>
+      <td>0.088</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>44</td>
+      <td>40.469</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 When we tested social recognition, which is a form of social memory needed for individuality in social interactions (i.e. differential expression of social behavior depending on identity of interacting individual), that is known to be modulated by oxytocin both in mammals and zebrafish (Ferguson et al., 2000; Ribeiro et al., 2020), we observed that oxtr(-/-) individuals exhibit a deficit in acquisition and retention of social recognition irrespective of the social environment (oxtr(-/-) or oxtr(+/+)) in which they were raised (F1,44 = 7.600, p=0.008; Figure 1F). Thus, in contrast to social motivation, social memory seems to rely on the individual’s genotype. This result is in accordance with a recent study from our lab (Ribeiro et al., 2020) that has shown a deficit in one-trial recognition memory of both conspecifics and objects in oxt(-/-) fish, suggesting that this deficit is not specific to the social domain but is rather a general domain cognitive deficit.
 
@@ -48,40 +282,127 @@ Given that social behavior of zebrafish mainly occurs in the context of shoaling
 
 ## Materials and methods
 
-## Zebrafish lines and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent, TL (Danio rerio)</td>
+      <td>oxtr mutant line</td>
+      <td>Nunes et al., 2020</td>
+      <td>ZDB-ALT-190830–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin Tissue</td>
+      <td>MACHEREY-NAGEL</td>
+      <td># 740952.50</td>
+      <td>For oxtr mutant genotyping</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sense 5’-TGCGCGAGGAAAACTAGTT-3’</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>For oxtr mutant genotyping</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>antisense 5’-AGCAGACACTCAGAATGGTCA-3’</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>For oxtr mutant genotyping</td>
+    </tr>
+    <tr>
+      <td>Software, , algorithm</td>
+      <td>SPSS 25.0</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, , algorithm</td>
+      <td>Imagej (Fiji)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, , algorithm</td>
+      <td>Ethovision XT 11.5</td>
+      <td>Noldus Technology</td>
+      <td>www.noldus.com/ethovision</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, , algorithm</td>
+      <td>GraphPad Prism version 6.0 c</td>
+      <td>GraphPad software, San Diego, California, USA</td>
+      <td>www.graphpad.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>B and W mini surveillance camera</td>
+      <td>Henelec 300B</td>
+      <td></td>
+      <td>Acquisition rate of 30 fps</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Webcameras</td>
+      <td>Logitech HD C525</td>
+      <td></td>
+      <td>Acquisition rate of 30 fps</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines and maintenance
 
 Zebrafish were raised and bred according to standard protocols and all experimental procedures were approved by the host institution, Instituto Gulbenkian de Ciência, and by the National Veterinary Authority (DGAV, Portugal; permit number 0421/000/000/2013). OXTR mutant zebrafish line (ZFIN ID: ZDB-ALT-190830–1) was generated and provided by Dr. Gil Levkowitz (Weizmann Institute of Science) using a TALEN-based genome editing system. The characterization of this line has been described in Nunes et al., 2020.
 
 All the experimental groups were formed at 4 days post-fertilization, based on the genotype of the progenitors, before they imprint for olfactory and visual kin recognition (Gerlach et al., 2008; Hinz et al., 2013). To evaluate genotype-environment effects, fish were raised in groups according to the experimental design in Figure 1A and both female and males tested in adulthood (3 months old). Sample sizes varied between nine for heterogeneous groups (i.e. focal individual with different genotype from the remaining individuals in the shoal) and 15 for homogeneous groups (i.e. focal individual with the same genotype of the remaining individuals in the shoal). The smaller sample size of heterogeneous groups is due to the need of genotyping all individuals in these groups to single out the focal individual.
 
-## Genotyping
+### Genotyping
 
 At 3 months old, 1-week before the behavioral screenings, genomic DNA was extracted from adult fin clips using the HotSHOT protocol (Meeker et al., 2007). All group members were fin clipped at different fin locations, to allow their identification while being maintained together. The genomic region of interest was amplified by PCR and sequenced to identify the focal fish in each group. The following primers were used: sense 5’-TGCGCGAGGAAAACTAGTT-3’, antisense 5’-AGCAGACACTCAGAATGGTCA-3’.
 
-## Behavioral assays
+### Behavioral assays
 
-## Video acquisition
+#### Video acquisition
 
 Fish were in a tank placed on top of an infrared lightbox and video-recorded either from above (shoal preference and social recognition tests) or laterally (group behaviour tests). Video acquisition was done with software Pinnacle Studio 14 (Corel Corporation, Ottawa, Canada). Shoal preference, social habituation and social recognition analyses were performed with EthoVision video tracking system (Noldus Information Technologies, Wageningen, The Netherlands) and group behavior analyses were done with the open source FIJI image-processing package (Schindelin et al., 2012).
 
-## Social preference and social habituation
+#### Social preference and social habituation
 
 The social preference test assesses the individual’s sociability by observing the interactions between conspecifics (Ribeiro et al., 2020): a focal fish was placed in a central compartment (30 × 15×10 cm) of a three-compartment tank, separated by transparent and sealed partitions. A shoal of unfamiliar fish was placed in one of the lateral compartments (15 × 10×10 cm), while the other contained only water. To avoid any side bias, the stimuli were balanced across trials. After an acclimatization period (10 min), the focal fish was released from a start box and allowed to explore the tank, while its behavior was video-recorded for 10 min. The time spent by the focal fish near (less than two body lengths) each compartment was quantified and used to calculate the social preference score (SP = Time near shoal/ [Time near shoal + Time near empty]). A score above 0.5 indicates a preference for the shoal.
 
 The social preference test was performed twice, with 24 hr in between, and social preference scores of both tests were used to calculate the habituation index (Hab. Score = 1- [SPTrial2]/[SPTrial1 + SPTrial2]). A score above 0.5 represents a decrease in preference to associate with conspecifics.
 
-## Social recognition
+### Social recognition
 
 The social recognition assay to evaluate short-term (i.e. 10 min retention) social memory was adapted from the procedure already developed in our lab for long-term (i.e. 24 hr retention) social memory in zebrafish (Gerlach et al., 2008), and has already been used successfully in previous studies (Ribeiro et al., 2020; Madeira and Oliveira, 2017). A focal fish was placed for 10 min in the central compartment of a three-compartment tank, separated by transparent and sealed partitions, to acclimatize. The focal fish was allowed to interact visually across partitions with two novel (unfamiliar) conspecifics for 10 min. After, both stimuli were removed, one was placed in the same compartment (familiar conspecific stimulus), while a novel conspecific was placed in the other compartment (novel conspecific stimulus). In a second 10 min interaction, the time spent by the focal fish near each compartment (termed novel cue or familiar cue) was quantified and used to measure the preference for the novel (Recognition Score = Time near Novel/[Time near Novel + Time near Familiar]). A recognition score of 0.5 indicates no preference between novel or familiar conspecifics.
 
-## Shoaling behavior
+### Shoaling behavior
 
 Shoaling behavior is a common behavior present in fish models and allows to determine complex interactions between individuals. Both focal fish and social partners were recorded in the home tanks (3.5L tank). Focal fish were tagged with fin clips for easy identification. The behaviors were video-recorded from side view for 10 min. Two components of shoaling behavior were analyzed manually in time bins of 8 s, using FIJI software (Schindelin et al., 2012): (Moore et al., 1997) focal fish distance to the group centroid (social integration); and (Wolf et al., 1998) the dispersion of the remaining shoal members as measured by their perimeter (social influence).
 
-## Data analysis
+### Data analysis
 
 Data were analysed using SPSS 25.0. All data sets were tested for departures from normality with Shapiro-Wilks test. Two factor univariate ANOVA were used for comparing multiple groups. All data sets were corrected for multiple comparisons. Tukey’s Test comparisons were used as post-hocs. Given that ANOVA is known to be underpowered for detecting significance of genotype x environment interaction (Wahlsten, 1990) we have decided to proceed with post-hoc tests for multiple comparisons among treatments even when GixGs interaction were only marginally significant (p<0.10). Graphs were performed with GraphPad software.
 
-## Ethical approval
+### Ethical approval
 
 All experiments were performed in accordance with the relevant guidelines and regulations for the care and use of animals in research and approved by the competent Portuguese authority (Direcção Geral de Alimentação e Veterinária, permit 0421/000/000/2017).

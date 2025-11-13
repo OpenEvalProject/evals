@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.47047.001 For most adult mammals, the risk of death increases exponentially with age, an observation originally described for humans by Benjamin Gompertz. We recently performed a Kaplan–Meier survival analysis of naked mole-rats ( Heterocephalus glaber ) and concluded that their risk of death remains constant as they grow older (Ruby et al., 2018). Dammann et al. suggest incomplete historical records potentially confounded our demographic analysis (Dammann et al., 2019). In response, we applied the left-censorship technique of Kaplan and Meier to exclude all data from the historical era in which they speculate the records to be confounded. Our new analysis produced indistinguishable results from what we had previously published, and thus strongly reinforced our original conclusions.
+For most adult mammals, the risk of death increases exponentially with age, an observation originally described for humans by Benjamin Gompertz. We recently performed a Kaplan–Meier survival analysis of naked mole-rats (Heterocephalus glaber) and concluded that their risk of death remains constant as they grow older (Ruby et al., 2018). Dammann et al. suggest incomplete historical records potentially confounded our demographic analysis (Dammann et al., 2019). In response, we applied the left-censorship technique of Kaplan and Meier to exclude all data from the historical era in which they speculate the records to be confounded. Our new analysis produced indistinguishable results from what we had previously published, and thus strongly reinforced our original conclusions.
 
 ## Introduction
 
@@ -26,7 +26,7 @@ The argument in Ruby et al. (2018) relies on observations within the first 12 ye
 
 ## Results and discussion
 
-## Bias due to missing death records
+### Bias due to missing death records
 
 Dammann et al. express the concern that “the data set could be biased due to missing death records before 2008” (Dammann et al., 2019). To address this concern, we have re-analyzed our published data including only observations made on or after January 1, 2008. For animals born prior to that date, observational data (of them being alive) was truncated using left-censorship (that is, truncation on the left). This approach is recommended in the original publication paper by Kaplan and Meier, where it is deemed appropriate “if it is desired to permit the entrance of items [i.e. animals] into the sample after the commencement of their lifetimes” (page 463 of Kaplan and Meier, 1958). Such is the case here. Dammann et al. assert that “methods for addressing left censoring require information on the number of missing animals”. To the contrary, Kaplan and Meier explicitly describe the lack of such information as an assumption of their technique: “It is assumed that nothing is known of the existence of any such item [i.e. animal] that dies before it becomes available for observation” (Kaplan and Meier, 1958). Since Dammann et al. do not question the validity of data collected in or after 2008, left truncation at January 2008 should address their concern of alleged bias.
 
@@ -34,11 +34,11 @@ We applied this standard technique, and Figure 1A shows juxtaposed Kaplan–Meie
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47047/elife-47047-fig1-v1.jpg)
 
-**Figure 1.:** H. glaber.(A) Kaplan–Meier survival curve for naked mole-rats after reaching reproductive maturity (Tsex; 6 months from birth; 183 days; red). Green: original calculation (Figure 1 of Ruby et al., 2018). Orange: calculation on the same data, left-truncated on January 1, 2008 (see Materials and methods). Purple: expected survivals from Tsex given a constant mortality hazard of 8 × 10−5 per day (Ruby et al., 2018). Inset: a histogram of left-censorship events. (B) Hazard estimates across each of the lifespan bins (from Figure 1B of Ruby et al., 2018), calculated for both of the survival plots from panel (A), colored as in panel (A). Vertical bars indicate 95% confidence intervals. Dotted grey line indicates 8 × 10−5 deaths per day.
+**Figure 1.:** (A) Kaplan–Meier survival curve for naked mole-rats after reaching reproductive maturity (Tsex; 6 months from birth; 183 days; red). Green: original calculation (Figure 1 of Ruby et al., 2018). Orange: calculation on the same data, left-truncated on January 1, 2008 (see Materials and methods). Purple: expected survivals from Tsex given a constant mortality hazard of 8 × 10−5 per day (Ruby et al., 2018). Inset: a histogram of left-censorship events. (B) Hazard estimates across each of the lifespan bins (from Figure 1B of Ruby et al., 2018), calculated for both of the survival plots from panel (A), colored as in panel (A). Vertical bars indicate 95% confidence intervals. Dotted grey line indicates 8 × 10−5 deaths per day.
 
 We used the left-censored Kaplan–Meier survival curve to calculate the age-specific mortality hazard across nine age bins (Figure 1B, orange). Those new estimates failed to show an increase with age and were statistically indistinct versus the age-specific hazards presented in our original manuscript (Figure 1B, green). We therefore maintain our original conclusion: that naked mole-rat mortality hazard does not increase with age, with that assertion being statistically robust to the beginning of our final estimate bin (6,529 days, or 18 years).
 
-## Conclusions
+### Conclusions
 
 The central finding of Ruby et al. (2018) – that naked mole-rats defy Gompertzian mortality laws – was based on Kaplan–Meier survival and hazard analyses on all the high-quality, full-lifespan data at our disposal. We followed that up with analyses inclusive of low-quality (imprecise) data (Figure 2 of Ruby et al., 2018), as well as independent analyses of each sex and identifiable social class (i.e. breeders, non-breeders) of naked mole-rats (Figures 3 and 4 of Ruby et al., 2018). Each of those analyses reinforced our original conclusion. Further, to address the concern of Dammann et al. that our records from pre-2008 could potentially have introduced bias to our analyses, we performed a new analysis. In light of the robust agreement between our original analysis (Ruby et al., 2018) and our new analysis, we stand by all of the conclusions in Ruby et al. (2018).
 

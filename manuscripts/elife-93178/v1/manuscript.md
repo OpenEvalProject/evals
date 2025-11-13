@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/05dk0ce17 Washington State University, Department of Veterinary Microbiology and Pathology Pullman United States
-2. https://ror.org/0293rh119 University of Oregon, Institute of Molecular Biology Eugene United States
-3. https://ror.org/0293rh119 University of Oregon, Department of Chemistry & Biochemistry Eugene United States
-4. https://ror.org/05dk0ce17 Washington State University, Department of Mathematics and Statistics Pullman United States
+1. Washington State University, Department of Veterinary Microbiology and Pathology Pullman United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))
+2. University of Oregon, Institute of Molecular Biology Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+3. University of Oregon, Department of Chemistry & Biochemistry Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+4. Washington State University, Department of Mathematics and Statistics Pullman United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))
 
 † Corresponding author
 
 ## Abstract
 
-Bacteria of the family Enterobacteriaceae are associated with gastrointestinal (GI) bleeding and bacteremia and are a leading cause of death, from sepsis, for individuals with inflammatory bowel diseases. The bacterial behaviors and mechanisms underlying why these bacteria are prone to bloodstream entry remain poorly understood. Herein, we report that clinical isolates of non-typhoidal Salmonella enterica serovars, Escherichia coli , and Citrobacter koseri are rapidly attracted toward sources of human serum. To simulate GI bleeding, we utilized an injection-based microfluidics device and found that femtoliter volumes of human serum are sufficient to induce bacterial attraction to the serum source. This response is orchestrated through chemotaxis and the chemoattractant L-serine, an amino acid abundant in serum that is recognized through direct binding by the chemoreceptor Tsr. We report the first crystal structures of Salmonella Typhimurium Tsr in complex with L-serine and identify a conserved amino acid recognition motif for L-serine shared among Tsr orthologues. We find Tsr to be widely conserved among Enterobacteriaceae and numerous World Health Organization priority pathogens associated with bloodstream infections. Lastly, we find that Enterobacteriaceae use human serum as a source of nutrients for growth and that chemotaxis and the chemoreceptor Tsr provide a competitive advantage for migration into enterohemorrhagic lesions. We define this bacterial behavior of taxis toward serum, colonization of hemorrhagic lesions, and the consumption of serum nutrients as ‘bacterial vampirism’, which may relate to the proclivity of Enterobacteriaceae for bloodstream infections.
+Bacteria of the family Enterobacteriaceae are associated with gastrointestinal (GI) bleeding and bacteremia and are a leading cause of death, from sepsis, for individuals with inflammatory bowel diseases. The bacterial behaviors and mechanisms underlying why these bacteria are prone to bloodstream entry remain poorly understood. Herein, we report that clinical isolates of non-typhoidal Salmonella enterica serovars, Escherichia coli, and Citrobacter koseri are rapidly attracted toward sources of human serum. To simulate GI bleeding, we utilized an injection-based microfluidics device and found that femtoliter volumes of human serum are sufficient to induce bacterial attraction to the serum source. This response is orchestrated through chemotaxis and the chemoattractant L-serine, an amino acid abundant in serum that is recognized through direct binding by the chemoreceptor Tsr. We report the first crystal structures of Salmonella Typhimurium Tsr in complex with L-serine and identify a conserved amino acid recognition motif for L-serine shared among Tsr orthologues. We find Tsr to be widely conserved among Enterobacteriaceae and numerous World Health Organization priority pathogens associated with bloodstream infections. Lastly, we find that Enterobacteriaceae use human serum as a source of nutrients for growth and that chemotaxis and the chemoreceptor Tsr provide a competitive advantage for migration into enterohemorrhagic lesions. We define this bacterial behavior of taxis toward serum, colonization of hemorrhagic lesions, and the consumption of serum nutrients as ‘bacterial vampirism’, which may relate to the proclivity of Enterobacteriaceae for bloodstream infections.
 
 ## Introduction
 
@@ -38,13 +38,29 @@ Serum is a complex biological solution with components that may enhance, or hind
 
 ## Results
 
-## Use of the chemosensory injection rig assay (CIRA) to study polymicrobial chemosensing behaviors
+### Use of the chemosensory injection rig assay (CIRA) to study polymicrobial chemosensing behaviors
 
 To model features of enteric bleeding in vitro, we utilized an experimental system to inject minute quantities of human serum into a pond of motile bacteria and observe real-time responses by microscopy (Figure 2A). The system and methodology, which we refer to herein as the CIRA, offer several advantages for studying bacterial chemosensing and localization in response to serum: (1) we can use bona fide human serum, (2) the readouts are direct measurements of real-time localization dynamics of the bacterial population, and (3) similar to a bleeding event, a source of fresh serum is continuously emitted. By employing multichannel fluorescence imaging of differentially labeled bacterial populations, we observe polymicrobial interactions through head-to-head comparisons of bacterial behavior within the same experiment.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig2-v1.jpg)
+
+**Figure 2.:** (A) Chemosensory injection rig assay (CIRA) experimental design. (B) CIRA microgradient diffusion model, simulated with a source of 1.13 mM A488 dye after 300 s of injection. (C) Experimental visualization of the CIRA microgradient with A488 dye. (D) Injection and diffusion of A488 dye. Shown at the top is the mean normalized fluorescence intensity at representative time points as a function of distance from the source, and shown at the bottom is the standard error of the mean (SEM) for these data (n = 6). (E) Response of S. enterica Typhimurium IR715 to human serum (max projections over 10 s intervals). (F) Quantification of S. enterica Typhimurium IR715 attraction response to human serum (n = 4, 37°C) characterized as either the relative number of bacteria within 150 µm of the source (left) or the radial distribution of the bacterial population over time (right, shown in 10 s intervals). (G) Area under the curve (AUC) versus time for the bacterial population within 100 µm of the serum treatment source (area indicated in yellow in F). Effect size (Cohen’s d) between the treatment start and endpoints is indicated. Insertion of the treatment microcapillary is indicated with black ‘in’ arrow. Attraction rate over time indicated in gray. Data shown are means, error bars indicate SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Average injection flow of treatment solution from the glass microcapillary. Flow was measured through injection of known concentrations of methylene blue dye, diluted in CB, into a 50 µl pond of CB over 20 min. After treatments, the absorbance of solutions was measured at 665 nm and quantified based on a standard curve. Applying a compensation pressure of 35 hPa resulted in an average flow of 305.5 fl/min ± 31. (B) CIRA localization in response to treatments of buffered CB of different pH. (C) Comparison of responses of GFP versus mPlum strains using CIRA. (D–F) Model of the CIRA microgradient for effectors relevant to this study. Topology maps of 1 mm × 1 mm size are shown for each microgradient in an ‘integrated’ format, which models what is seen by eye from the bottom-up view of the microscopy plane (left), or as the local concentration that would be experienced by a bacterium at a given distance (center). A plane through the center of the treatment sphere is shown (right), with relative concentrations experienced at a given distance expressed in nM units (scale bar is 100 µm).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Computed (red dashed) and measured (black solid) integrated concentrations of A488 as a function of distance from injection site for time t = 120 s. Both quantities are reported as a percentage of the concentration at the injection site (1.1 mM). The relative error (blue solid) is reported as the relative difference of the measured concentration to the computed concentration.
+
 The CIRA microgradient is established through injection at a constant rate of ~300 fl/min, through a 0.5 µm glass microcapillary, and expands over time through diffusion (Figure 2A and B, Figure 2—figure supplement 1). The diffusion of serum metabolites can be reasonably approximated by the three-dimensional differential diffusion equation (Figure 2B, Figure 2—figure supplements 1 and 2 , ‘Method details’). We calculate that the introduction of a minute volume of novel effector produces a steep microgradient, in which a millimolar source recedes to nanomolar concentrations after diffusion across only a few hundred microns (Figure 2B, Figure 2—figure supplement 1). For instance, in our assay we expect a bacterium 100 µm from a 1 mM infinite-volume source to experience a local concentration of a small molecule effector (diffusion coefficient approximately 4 × 10−6 cm2 s–1) of 10 nM after 300 s of injection (Figure 2B, Figure 2—figure supplement 1). To visualize the microgradient experimentally, we utilized Alexa Fluor 488 dye (A488) and observed the microgradient to be stable and consistent across replicates (Figure 2C and D, Video 1). As a test case of the accuracy of the microgradient modeling, we compared our calculated values for A488 diffusion to the normalized fluorescence intensity at time 120 s. We determined the concentration to be accurate within 5% over the distance range 70–270 µm (Figure 2—figure supplement 2). At smaller distances (<70 µm), the measured concentration is approximately 10% lower than that predicted by the computation. This could be due to advection effects near the injection site that would tend to enhance the effective local diffusion rate. Additionally, we found no behavioral differences in treatments with buffer in the range of pH 4–9, indicating small, localized pH changes are inconsequential for taxis in our system, and that any artifactual forces, such as flow, account for only minor changes to bacterial distribution at the population level, in the range of ±10% (Figure 2—figure supplement 1).
 
-## Non-typhoidal S. enterica serovars exhibit rapid attraction to human serum
+![Video 1.](https://cdn.elifesciences.org/articles/93178/elife-93178-video1.mp4.jpg)
+
+**Video 1.:** Representative chemosensory injection rig assay (CIRA) experiments with Alexa Fluor 488 dye (left) and S. enterica Typhimurium IR715 treated with human serum (right). Video is shown at 1× speed and is also viewable at https://www.youtube.com/watch?v=dyrQT2Ni5J8.
+
+### Non-typhoidal S. enterica serovars exhibit rapid attraction to human serum
 
 We first studied the chemosensing behaviors of S. Typhimurium IR715, which is a derivative of ATCC 14028 originally isolated from domesticated chickens, and is used extensively in the study of Salmonella pathogenesis (see Key resources table; Tsolis et al., 1999; Rivera-Chávez et al., 2016; Winter et al., 2010; Rivera-Chávez et al., 2013). As a treatment, we utilized commercially available human serum that was not heat-inactivated nor exposed to chemical or physical treatments that would be expected to alter its native complement properties (see ‘Materials and methods’). We assessed the response of motile IR715, containing a fluorescent mPlum marker, to a source of human serum over the course of 5 min (Figure 2E, Video 1). During this timeframe, we witnessed a rapid attraction response whereby the motile bacterial population reorganized from a random distribution to one concentrated within a 100–150 µm radius of the serum source (Figure 2E and F, Video 1). To compare responses between CIRA experiments, we plotted data as either the relative number of bacteria within 150 µm of the treatment (Figure 2F, left panel) or a radial distribution of the population (Figure 2F, right panel) over time. By these metrics, we determined S. Typhimurium IR715 is attracted to human serum. The bacterial population in proximity to the serum source doubles by 40 s, reaches a maximal attraction rate by 90 s, and approaches equilibrium by 300 s post-treatment (Figure 2G).
 
@@ -52,57 +68,113 @@ To test whether serum attraction is observed in Salmonella strains that infect h
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig3-v1.jpg)
 
-**Figure 3.:** S. enterica clinical isolates and diverse serovars.(A–C) Chemosensory injection rig assay (CIRA) competition experiments between S. Typhimurium IR715 (pink) and clinical isolates (green) responding to human serum for 5 min (n = 4, 37°C). Images are representative max projections over the final minute of treatment. Radial distributions calculated from max projections and averaged across replicates are shown as fold-change relative to the image periphery at 240 µm from the source. Inset plots show fold-change area under the curve (AUC) of strains in the same experiment relative to an expected baseline of 1 (no change). p-Values shown are calculated with an unpaired two-sided t-test comparing the means of the two strains, or one-sided t-test to assess statistical significance in terms of change from onefold (stars). Data shown are means, error bars indicate SEM.
+**Figure 3.:** (A–C) Chemosensory injection rig assay (CIRA) competition experiments between S. Typhimurium IR715 (pink) and clinical isolates (green) responding to human serum for 5 min (n = 4, 37°C). Images are representative max projections over the final minute of treatment. Radial distributions calculated from max projections and averaged across replicates are shown as fold-change relative to the image periphery at 240 µm from the source. Inset plots show fold-change area under the curve (AUC) of strains in the same experiment relative to an expected baseline of 1 (no change). p-Values shown are calculated with an unpaired two-sided t-test comparing the means of the two strains, or one-sided t-test to assess statistical significance in terms of change from onefold (stars). Data shown are means, error bars indicate SEM.
 
-## Chemotaxis and the chemoreceptor Tsr mediate serum attraction
+![Video 2.](https://cdn.elifesciences.org/articles/93178/elife-93178-video2.mp4.jpg)
+
+**Video 2.:** Representative chemosensory injection rig assay (CIRA) experiments comparing responses to human serum between S. enterica Typhimurium IR715 (mplum) and clinical isolates (gfp), as indicated. Videos depict responses over 5 min of treatment. Viewable at https://youtu.be/dwtZtoisjrU.
+
+### Chemotaxis and the chemoreceptor Tsr mediate serum attraction
 
 Serum is a complex biological solution that contains sugars, amino acids, and other metabolites that could serve as attractant signals (Zhou et al., 2023). Based on the rapid attraction of motile, swimming bacteria to the treatment source, characteristic of chemotactic behaviors (Huang et al., 2015), we hypothesized that one or more of these chemical components are specifically recognized as chemoattractants through the repertoire of chemoreceptors possessed by Salmonellae (Figure 4A). Based on known chemoreceptor–chemoattractant ligand interactions (Zhou et al., 2023; Matilla et al., 2022), we identified three chemoreceptors that might mediate taxis toward serum: (1) taxis to serine and repellents (Tsr), which responds to L-serine, and reportedly also norepinephrine (NE) and 3,4-dihydroxymandelic acid (DHMA); (2) taxis to ribose and glucose/galactose (Trg), which responds to glucose and galactose; and (3) taxis to aspartate and repellents (Tar), which responds to L-aspartate (Figure 4A). We modeled the local concentration profile of these effectors based on their typical concentrations in human serum (Figure 4B). Of these, by far the two most prevalent chemoattractants in serum are glucose (5 mM) and L-serine (100–300 µM) (Figure 4B–F). This suggested to us that the chemoreceptors Trg and/or Tsr could play important roles in serum attraction. These chemoreceptors were also previously shown to provide colonization advantages during S. Typhimurium infection (Rivera-Chávez et al., 2013).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig4-v1.jpg)
+
+**Figure 4.:** (A) Potential mechanisms involved in Salmonella sensing of chemoattractants present in human serum. Approximate concentrations of these effectors in human serum are indicated in parentheses (Zhou et al., 2023). (B–F) Microgradient modeling of serum chemoattractant concentrations. (G–I) Chemosensory injection rig assay (CIRA) competition experiments between S. Typhimurium IR715 WT and isogenic mutants cheY, or tsr, and tsr versus cheY, in response to human serum (n = 3–4, 37°C). Rates in terms of fold-change are indicated with light pink/light green lines and plotted on the gray secondary y-axis. Inset area under the curve (AUC) plots are shown as described in Figure 3. Data are means, and error bars are SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Shown are max projections from chemosensory injection rig assay (CIRA) experiments over a 10 s time period following 300 s of treatments as shown. (C, D) The radial distribution of bacteria in CIRA competition experiments with serine-racemase-treated human serum after 300 s is shown. (E–I) Shown are max projections over 10 s following CIRA treatments, as indicated. The chemotactic response is noted below each experiment. Panels (H–I) utilized cells that were primed with 5 µM NE for 3 hr prior to experimentation.
+
 To test the role of chemotaxis in serum attraction, we competed wildtype (WT) S. Typhimurium IR715 against a chemotaxis-null isogenic cheY mutant, which possesses swimming motility but is blind to chemoeffector signals (Figure 4G, Video 3). Whereas the WT mounts a robust attraction response to serum, the cheY mutant population remains randomly distributed (Figure 4G, Video 3). We also observed the cheY mutant to exhibit a slight decline in cells proximal to the treatment source over time, which we attribute to cellular crowding effects from the influx of WT cells (Figure 4G, Video 3). In this background, the fraction of WT cells within 100 µm of the serum source increases by 70-fold, with the maximal rate of attraction achieved by 120 s post-treatment. Thus, we determined that chemotaxis is responsible for the rapid localization of S. enterica to human serum.
+
+![Video 3.](https://cdn.elifesciences.org/articles/93178/elife-93178-video3.mp4.jpg)
+
+**Video 3.:** Representative chemosensory injection rig assay (CIRA) experiments comparing responses to human serum between WT S. enterica Typhimurium IR715 (mplum in left and center panel) and chemotactic mutants tsr (gfp in center panel, mplum in right panel), and cheY (gfp in left and right panel). Videos depict responses over 5 min of treatment. Viewable at https://youtu.be/O5zsEAqcJw8.
 
 We next analyzed strains with deletions of the chemoreceptor genes trg, or tsr, to test the roles of these chemoreceptors in mediating taxis to serum. We were surprised to find that the trg strain had deficiencies in swimming motility (data not shown). This was not noted in earlier work but could explain the severe infection disadvantage of this mutant (Rivera-Chávez et al., 2013). Because motility is a prerequisite for chemotaxis, we chose not to study the trg mutant further and instead focused our investigations on Tsr. We compared chemoattraction responses in dual-channel CIRA experiments between the WT and tsr mutant and observed an interesting behavior whereby both strains exhibited chemoattraction, but the tsr mutant distribution was relegated to a halo at the periphery of the WT peak (Figure 4H, Video 3). The WT efficiently outcompetes the tsr mutant such that by 5 min post-treatment the ratio of WT to tsr cells proximal to the serum source is 3:1 (Figure 4H, Video 3). Similar to cheY, we presume the tsr halo results from cellular crowding effects induced by the high density of WT cells near the serum source. To test how the tsr mutant responds to serum in the absence of a strong competitor, we compared chemoattraction between tsr and cheY. In this background, tsr chemoattraction remained diminished relative to that of WT, but the tsr distribution shifted closer to the serum source (Figure 4I, Video 3). Since tsr mutation diminishes serum attraction but does not eliminate it, we conclude that multiple chemoattractant signals and chemoreceptors mediate taxis to serum. To further understand the mechanism of this behavior, we chose to focus on Tsr as a representative chemoreceptor involved in the response, presuming that serum taxis involves one, or more, of the chemoattractants recognized by Tsr that is present in serum: L-serine, NE, or DHMA.
 
-## S. Typhimurium exhibits chemoattraction to L-serine, but not NE or DHMA
+### S. Typhimurium exhibits chemoattraction to L-serine, but not NE or DHMA
 
 We next sought to identify the specific chemoattractants driving Tsr-mediated serum attraction. Suspecting that one effector might be L-serine, we took advantage of the fact that Tsr can only bind the L and not the D enantiomer and treated the serum with serine racemase, an enzyme that converts L- to D-serine. The attraction of S. Typhimurium IR715 to serum treated with serine racemase is diminished and the population is more diffuse (Figure 4—figure supplement 1A and B). In competition experiments between WT and chemotaxis-deficient strains, the WT cells proximal to the treatment source are reduced by about half (Figure 4—figure supplement 1C), and WT no longer possesses an attraction advantage over the tsr mutant (Figure 4—figure supplement 1D). These data support that the deficiency of the tsr strain in serum taxis is due to an inability to sense L-serine within serum.
 
 We next used CIRA to examine responses to purified effectors diluted in buffer. The concentration of L-serine in human serum ranges from approximately 100–400 µm, depending on diet and health factors (He et al., 2022; Miller et al., 2020; Pitkänen et al., 2003), whereas the neurotransmitter NE, and its metabolized form, DHMA, are thought to circulate at approximately 10 nM (Kopin et al., 1978; Steuer et al., 2016). It has been proposed that, like L-serine, NE and/or DHMA are sensed directly by Tsr and at even higher (nanomolar) affinity (Orr et al., 2020; Pasupuleti et al., 2014). We used CIRA to test the response of S. Typhimurium IR715 to L-serine, NE, and DHMA. We observed robust chemoattraction responses to L-serine, evident by the accumulation of cells toward the treatment source (Figure 4—figure supplement 1E, Video 4), but no response to NE or DHMA, with the cells remaining randomly distributed even after 5 min of exposure (Figure 4—figure supplement 1F–I, Videos 5 and 6). Following extensive investigation and adjusting experiment parameters such as culture protocol, cell density, temperature, injection flow, and compound concentration, we saw no evidence that NE or DHMA are chemoeffectors for S. Typhimurium (Figure 4—figure supplement 1F–I, Videos 5 and 6). Since this result is surprising given previous reports (Orr et al., 2020; Pasupuleti et al., 2014), we have provided a database of 17 videos of CIRA experiments showing the null response to DHMA and NE, versus L-serine, under various conditions (https://public.vetmed.wsu.edu/Baylink). Together, our data indicate the chemoattractant component of serum that is sensed through Tsr is L-serine.
 
+![Video 4.](https://cdn.elifesciences.org/articles/93178/elife-93178-video4.mp4.jpg)
+
+**Video 4.:** Representative chemosensory injection rig assay (CIRA) experiments comparing responses to 500 µM L-serine between S. enterica Typhimurium IR715 (mplum) and clinical isolates (gfp), as indicated. Videos depict responses over 5 min of treatment. Viewable at https://www.youtube.com/watch?v=p0Tsp06ZHO8.
+
+![Video 5.](https://cdn.elifesciences.org/articles/93178/elife-93178-video5.mp4.jpg)
+
+**Video 5.:** Chemosensory injection rig assay (CIRA) experiments comparing response of S. Typhimurium IR715 to L-serine or to norepinephrine. Cells are unprimed or primed with norepinephrine (NE) , as indicated. Videos depict responses over 5 min of treatment. Viewable at https://youtu.be/pUOlVjKYptc.
+
+![Video 6.](https://cdn.elifesciences.org/articles/93178/elife-93178-video6.mp4.jpg)
+
+**Video 6.:** Cells are unprimed (left) or primed with norepinephrine (NE) (right). Viewable at https://youtu.be/j4YL95QFCuI.
+
 Chemoattraction to L-serine has mostly been studied in the context of model laboratory strains and has not been rigorously evaluated for S. enterica clinical isolates or various serovars. To establish whether L-serine sensing is observed in strains responsible for human infections, we used dual-channel CIRA to compare chemoattraction to L-serine between S. Typhimurium IR715 and clinical isolates (Figure 5A–C, Video 4). In each case, we observe robust chemoattraction, though there are differences in sensitivity to L-serine. The magnitude of chemoattraction was highest for S. Typhimurium SARA1 and S. Newport, whereas S. Typhimurium IR715 and S. Enteriditis showed lower responses, which could relate to the different host specificities of these serovars and strains (Figure 5A–C, Video 4).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Chemosensory injection rig assay (CIRA) competition experiments between S. Typhimurium IR715 (pink) and clinical isolates (green) in response to 500 µM L-serine (n = 3, 37°C). (D) Representative results showing max projections of S. Typhimurium IR715 at 240–300 s post CIRA treatment with L-serine concentrations (30°C). (E) Quantification of multiple replicate experiments shown in (D). (F) Attraction and dispersion of S. Typhimurium IR715 following addition and removal of 500 µM L-serine source (30°C). (G) S. Typhimurium IR715 WT or tsr mutant responses to L-aspartate or L-serine treatments (30°C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Data are mean area under the curve (AUC) values of relative number of bacteria within 150 µm of the treatment location for the –15 s to 250 s range, represented as fold-change. Data are fit with an exponential curve (red line). $y=a+be^{−cx}$, where a = 2.636193, b = −1.616338, and c = 0.006282888. K1/2 is calculated to be 105 µm (x, dashed lines).
 
 We next used CIRA to test a range of L-serine sources spanning five orders of magnitude to define whether the concentrations of L-serine present in human serum are sufficient to drive a chemoattraction response. Within the 5 min timeframe of our experiments, the minimal source concentration of L-serine needed to induce chemoattraction is 0.5–5 µM. The [L-serine] source required for half-maximal chemoattraction (i.e., K1/2) is approximately 105 µM (Figure 5D and E, Figure 5—figure supplement 1). Based on our microgradient modeling, this corresponds to a local L-serine concentration of 1 nM for bacteria 100 µm from the source at t = 300 s (Figure 2—figure supplement 1, Figure 4B). Therefore, we determined that the typical concentration of L-serine in human serum is >200-fold greater than the minimum required to elicit chemoattraction. To gain further insights into the dynamics of L-serine chemoattraction, we monitored chemotactic behavior in the presence of L-serine, and then removed the treatment (Figure 5F). These experiments showed maximal attraction and dispersal rates to be similar, changing by approximately 4% per second (Figure 5F). These findings emphasize the rapid dynamics through which chemotaxis can influence the localization of bacteria in response to microscopic gradients of chemoeffectors.
 
 To substantiate our findings, we considered some alternative explanations for our data. First, we tested whether Tsr alone was required for chemoattraction to L-serine, or whether some other chemoreceptor, or form of taxis, such as energy or redox taxis, might contribute to the responses. However, we found when treated with L-serine, the tsr mutant showed no chemoattraction and behaved similarly to the chemotaxis-null cheY mutant (Figure 5G). Second, we considered the possibility that the defect in serum attraction of the tsr mutant could be due to pleiotropic effects of the tsr deletion on chemotaxis signaling or motility, similar to the inhibited swimming motility of the trg mutant. We tested the ability of the tsr strain to respond to another chemoattractant, L-aspartate, which is sensed through the Tar chemoreceptor (Figure 4A). We found that the tsr mutant mounted a robust chemoattraction response to 500 µM L-aspartate, similar in magnitude and rate to WT (Figure 5G), supporting that chemotaxis to non-serine stimuli remains functional in the tsr strain. Along with the data showing the WT attraction to serum is diminished with serine racemase treatment, these results support that the mechanism of Tsr-mediated chemoattraction to serum is through direct recognition of L-serine.
 
-## Serum provides a growth advantage for non-typhoidal S. enterica serovars
+### Serum provides a growth advantage for non-typhoidal S. enterica serovars
 
 The robust serum attraction response conserved across diverse Salmonella serovars suggests serum, and L-serine present in serum, could be a source of nutrients during infection. Yet, serum also contains bactericidal factors that could inhibit bacterial growth (Cheng et al., 2019). To address the uncertainty as to whether serum would benefit or inhibit bacterial growth, we added human serum to Salmonella in liquid culture grown on minimal media. In all strains surveyed, we found that serum addition enhances growth, and we saw no evidence of killing even for the highest serum concentrations tested (Figure 6). The growth enhancement requires relatively little serum, as 2.5% v/v is sufficient to provide a 1.5–2.5-fold growth increase (Figure 6, https://public.vetmed.wsu.edu/Baylink).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Growth is shown as area under the curve (AUC, black) and A600 at mid-log phase for the untreated replicates (gray, n = 16). Data are means, and error is SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Treatment with 50 µg recombinant serine dehydratase (SDS) over 4 hr did not decrease serine content in human serum.
+
 L-serine is not only a chemoattractant, but also an important nutrient for bacteria in the gut (Zhou et al., 2023), so we hypothesized the growth benefit could be from L-serine. We determined by mass spectrometry that our human serum samples contain 241 µM ± 48 total serine (L- and D-enantiomers), of which approximately 99% is expected to be L-serine (Hashimoto et al., 2003; Figure 6—figure supplement 1). We attempted to treat human serum with a purified recombinant enzyme that degrades L-serine, serine dehydrogenase (SDS), to see whether serine-depleted serum would elicit less growth or chemoattraction. However, SDS treatments did not alter serum serine content so we abandoned this approach (Figure 6—figure supplement 1). Instead, we performed a titration of purified L-serine and assessed its role in supporting a growth advantage. We found that only a very small benefit is achieved with the addition of L-serine, which did not recapitulate the larger growth benefit seen for serum addition (Figure 6). This leads us to believe that L-serine functions as a molecular cue that directs Salmonella toward serum, but nutrients present in serum other than L-serine provide the major growth advantages.
 
-## Structure of S. enterica Tsr in complex with L-serine
+### Structure of S. enterica Tsr in complex with L-serine
 
 We next undertook structural studies to understand the specific recognition of L-serine by Tsr. The full-length Tsr protein includes a periplasmic ligand-binding domain (LBD), a transmembrane HAMP domain, and a cytosolic coiled-coil region, which oligomerizes to form trimers-of-dimers, and complexes with the downstream chemotaxis signaling components, CheA and CheW (Figure 7A; Cassidy et al., 2020). No experimentally determined structure had been published for S. enterica Tsr (SeTsr) and the single experimentally determined Tsr structure to have captured the L-serine-binding interactions is a crystal structure of EcTsr LBD of moderate resolution (2.5 Å, PDB: 3ATP), in which the electron density for the ligand is weak and the orientation of the L-serine ligand is ambiguous (Tajima et al., 2011). Despite the poorly defined binding site interactions, this EcTsr crystal structure has guided numerous other studies of chemoreceptor signal transduction and nanoarray function (Cassidy et al., 2020; Burt et al., 2020).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig7-v1.jpg)
+
+**Figure 7.:** (A) Model of the core chemoreceptor signaling unit showing two full-length Tsr chemoreceptor trimer-of-dimers; coiled-coil region (CC), inner membrane (IM) Cassidy et al., 2020. (B) Crystal structure of S. enterica Tsr ligand-binding domain (LBD) dimer in complex with L-serine (2.2 Å). (C, D) Relative order of the SeTsr structure as indicated by B-factor (Å2). (E) Overlay of chains from serine-bound SeTsr (blue), serine-bound EcTsr (orange), and apo EcTsr (white). (F) Binding of the L-serine ligand as seen with an overlay of the five unique chains of the asymmetric unit (AU) in the SeTsr structure. Purple mesh represents averaged non-crystallographic symmetry 2fo-fc omit map electron density (ligand not included in the density calculations). Green mesh represents fo-fc omit map difference density for Chain A. Hydrogen bonds to the ligand are shown as dashed black lines with distances indicated in Å. (G) The ligand-binding site of serine-bound EcTsr is shown as in (F), with omit map fo-fc electron density. The two chains of EcTsr in the AU are overlaid (orange) with one chain of serine-bound SeTsr (blue). (H, I) Closeup view of the L-serine ligand and fo-fc omit map density for the SeTsr (blue) and EcTsr (orange) structures, respectively. (J) Paired refinement comparing resulting crystallographic R-factors, as indicated. The schematics indicate for each refinement which parts of the Tsr LBD dimer were modeled as in the EcTsr structure (orange) or SeTsr structure (blue), with the crescent shape representing the ligand-binding site. For each refinement strategy and resulting model, Rfree values (black) and Rwork values (gray) are indicated. (K–M) Isothermal titration calorimetry analyses of the SeTsr LBD with L-serine, norepinephrine (NE) , or 3,4-dihydroxymandelic acid (DHMA).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/93178/elife-93178-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Shown on the left is an overlay of SeTsr at pH 7.5–9.7 (PDB: 8FYV, dark blue) and pH 7–7.5 (PDB: 8VL8, light blue). Shown on the right is a stereo image of the overlaid L-Ser binding site with electron density shown for the pH 7–7.5 structure as blue mesh.
 
 We recognized that in the prior EcTsr study the methods described exchanging the protein crystal into a glycerol cryoprotectant. We hypothesized that during the glycerol soak serine leached out of the crystal leaving the binding site partially occupied and caused the electron density to be weak for the ligand and surrounding region. To capture a complex with a fully bound ligand site, we grew crystals of the soluble periplasmic portion of the SeTsr LBD with L-serine, at a high salt concentration that would serve as a cryoprotectant without further manipulation, and harvested crystals directly from drops to prevent leaching of the ligand from the binding site. After conducting extensive crystallization trials and examining X-ray diffraction data from over 100 crystals, we identified a small number of SeTsr LBD crystals with sufficient quality for structure determination. The crystal that provided the highest quality data (2.2 Å resolution, PDB: 8FYV) was grown in a mixture of buffers of pH 7.5–9.7 (refer to ‘Methods’, Supplementary file 1). To assess whether the basic pH had any impact on the protein structure, we solved a second structure from a crystal grown at pH 7–7.5 (Supplementary file 1, Figure 7—figure supplement 1, PDB: 8VL8). By overlaying the two structures, it is apparent they are nearly identical, with no observable changes at the ligand-binding site (Figure 7—figure supplement 1). Because the structure obtained at higher pH (PDB: 8FYV) exhibits superior quality and clearer electron density in critical regions of interest, it is this structure we refer to in subsequent sections.
 
 The crystal structure of SeTsr LBD contains five monomers in the asymmetric unit, providing five independent views of the L-serine binding site, with homodimers formed between chains A and B, C and D, and E and its crystal symmetry mate, E′ (Figure 7B). Lower B-factors in the SeTsr ligand binding region are indicative of greater order, reflecting that our structure is fully serine-bound (Figure 7C and D). SeTsr and EcTsr possess high-sequence similarity in the LBD region—100% identity of the ligand-binding residues and 82.1% identity over the entire periplasmic domain—and as expected, retain a similar global structure with all chains of serine-bound SeTsr (5), serine-bound EcTsr (2), and apo EcTsr (2) overlaying within 0.24 Ǻ rmsd over 139 Cα (Figure 7E).
 
-## Molecular recognition of L-serine by Tsr
+### Molecular recognition of L-serine by Tsr
 
 The higher resolution (+0.3 Ǻ) of the SeTsr structure, and full occupancy of the ligand, provides a much-improved view of the interactions that facilitate specific recognition of L-serine (Figure 7F). Using non-crystallographic symmetry averaging, we leveraged the five independent SeTsr monomers to generate a well-defined 2fo-fc map of the L-serine ligand and residues involved in ligand coordination (Figure 7F, Video 7). Omit-map difference density, which is calculated in the absence of a modeled ligand and reduces potential bias in the electron density map, was fit well by the placement of the L-serine ligand (Figure 7F). In this orientation, the ligand is in an optimal energetic conformation that satisfies all possible hydrogen bonding interactions: the positively charged peptide amine donates hydrogen bonds to the backbone carbonyl oxygens of Phe151, Phe152, and Gln154, the negatively charged ligand carboxyl group donates hydrogen bonds to the Arg64 guanidinium group, the Asn68 side change amine, and a water (W2), and the ligand hydroxyl sidechain donates a hydrogen bond to the Asn68 sidechain oxygen, and accepts a hydrogen bond from a water (W1) (Figure 7F, Video 7). All five chains of the SeTsr structure are consistent in the positions of the ligand and surrounding residues (Figure 7F, Video 7).
+
+![Video 7.](https://cdn.elifesciences.org/articles/93178/elife-93178-video7.mp4.jpg)
+
+**Video 7.:** Crystal structure of S. enterica Typhimurium Tsr LBD (PDB: 8FYV) and comparison with E. coli Tsr LBD crystal structure (PDB: 3ATP). Viewable at https://youtu.be/OlowDhRLNhA.
 
 With the aid of the improved view provided by our SeTsr structure, we noticed the L-serine is positioned differently than what was modeled into the weak density of the EcTsr structure (Figure 7G–I, Video 7). The EcTsr structure has the serine positioned with the sidechain hydroxyl facing into the pocket toward Asn68, and the orientations of Asn68, Phe152, Asp153, and Gln157 of the ligand binding pocket are modeled inconsistently, without justification, between the two EcTsr chains in the asymmetric unit (Figure 7G–I). Calculating fo-fc omit map density for both structures shows not only that our new SeTsr ligand orientation fits the density of our structure well, but that it is a better fit for the data from the EcTsr structure (Figure 7H and I). This is apparent by how the EcTsr serine Cβ and sidechain hydroxyl are misaligned with the curvature of the fo-fc map and that the carboxylate is partially outside of the electron density (Figure 7I).
 
 An analysis that can quantifiably determine which positions of the serine and ligand-binding residues result in the best model is to perform pairwise refinements and compare the crystallographic Rwork and Rfree statistics (Figure 7J). Using as our starting model the EcTsr homodimer, and its deposited data from the protein databank, we performed refinements using identical strategies with three scenarios: no serine modeled in the binding site (apo), the published EcTsr serine pose, or the serine pose from our SeTsr structure (Figure 7J). The poorest resulting EcTsr model was apo, yielding Rwork/Rfree values of +0.3%/+0.7% relative to the deposited model. This result supports the presence of the serine ligand in the structure. Substituting the serine with the pose observed in the SeTsr structure led to an improved model, reducing the Rwork/Rfree values by –0.2%/–0.2%. Lastly, we replaced both the serine ligand and the ligand-binding residues of the EcTsr model with those from our SeTsr structure, which resulted in the highest quality model with meaningfully lower Rwork/Rfree values of –1.0%/–0.9% (Figure 7J). Consequently, we can conclude that the correct serine pose and ligand-binding site positions for both models are those we determined using the higher resolution SeTsr structure, in which the L-serine side chain hydroxyl faces outward from the pocket, toward the solvent, and every hydrogen bonding group of the ligand is satisfied by the residues of the binding site (Figure 7F and J).
 
-## SeTsr LBD binds L-serine, but not NE or DHMA
+### SeTsr LBD binds L-serine, but not NE or DHMA
 
 Despite a lack of chemotactic responses to NE and DHMA in our CIRA experiments (Figure 4—figure supplement 1, Videos 5 and 6, https://public.vetmed.wsu.edu/Baylink), our uncertainty lingered as to whether these neurotransmitters are sensed through Tsr. Prior work created theoretical models of NE and DHMA binding EcTsr at the L-serine site and proposed this as the molecular mechanism underlying E. coli chemoattraction to these compounds (Orr et al., 2020). However, with our new experimentally determined SeTsr LBD crystal structure in hand, it is clear that the hydrogen bonding network is specific for L-serine (Figure 7F, Video 7), and we were doubtful such dissimilar ligands as NE or DHMA would be accommodated. We note that the amino acids that constitute the L-serine binding pocket are identical between SeTsr and EcTsr (Figure 7F and G), and so we reason that SeTsr LBD and EcTsr LBD should have similar molecular functions and ligand specificity.
 
 Despite several studies reporting a direct role of Tsr in directing chemoattractant responses to NE and DHMA, no direct evidence of ligand-binding has ever been presented. Thus, we performed isothermal titration calorimetry (ITC) experiments, a gold standard for measuring protein–ligand interactions, to study ligand recognition by SeTsr LBD (Figure 7K–M). As expected, L-serine produces a robust exothermic binding curve, exhibiting a KD of approximately 5 µM (Figure 7K). This matches well with our observation of S. enterica chemoattraction requiring a source of L-serine at least 0.5–5 µM (Figure 5D and E) and with prior ITC data with EcTsr LBD, which also reported a 5 µM KD (Tajima et al., 2011). Conversely, neither NE nor DHMA showed any evidence of binding to SeTsr LBD (Figure 7L and M). These data confirm that SeTsr is a receptor for L-serine, and not NE or DHMA, and further support the molecular mechanism of Tsr-mediated serum attraction to be through L-serine.
 
-## Relevance of bacterial taxis to serum in other systems
+### Relevance of bacterial taxis to serum in other systems
 
 Our chemotaxis experiments with the tsr strain show that while Tsr is not the only chemoreceptor involved in taxis to serum for S. enterica, it does play an important role through chemoattraction to the high concentration of L-serine within serum. We hypothesized that attraction to serum, mediated through Tsr, might extend beyond S. enterica to other bacterial species. The biological distribution of Tsr chemoreceptors has not been previously characterized, so we applied our structural insights to define a motif consisting of the amino acids involved in L-serine recognition. When we analyzed the genomes of Enterobacteriaceae genera such as Escherichia, Citrobacter, and Enterobacter, we found their Tsr orthologues to possess this motif (Figure 8A). We next conducted a comprehensive search for chemoreceptor genes containing the L-serine recognition motif, creating a database containing all organisms that possess putative Tsr orthologues (Figure 8B, Supplementary file 2). The biological distribution of Tsr reveals the chemoreceptor to be widely conserved among Gammaproteobacteria, particularly within the families Enterobacteriaceae, Morganelliaceae, and Yersiniaceae (Figure 8B). We discovered that many WHO priority pathogens are among the species that have Tsr, leading us to suspect these pathogens and pathobionts also perform serum taxis.
 
@@ -111,6 +183,14 @@ Our chemotaxis experiments with the tsr strain show that while Tsr is not the on
 **Figure 8.:** (A) Sequence conservation of the Tsr ligand-binding domain among representative Enterobacteriaceae orthologues with residues of the L-serine ligand-binding pocket highlighted. (B) Biological distribution of Tsr orthologues. WHO priority pathogen genera are highlighted in red. (C, D) Response of C. koseri BAA-895 (n = 3, 37°C) and E. coli MG1655 to human serum (n = 3, 30°C), shown as max projections at indicated time points. (E) Quantification of chemotaxis responses. Plotted data shown are shown on separate y-axes as mean cells in the field of view averaged over 1 s. (F, G) Response of wildtype (WT) S. Typhimurium IR715 to horse serum or pig serum. (H) Overview of swine ex vivo colonic hemorrhagic lesion model. (I) Representative images of colonic mucosa before (top) and after (bottom) lancing of vasculature. (J, K) Representative images showing bacterial localization into colonic hemorrhagic lesions in co-inoculation experiments with WT (gfp) and cheY (dtom) (n = 4), or WT (gfp) and tsr (dtom) (n = 3) S. Typhimurium IR715. The lesion is shown in brightfield (BF, top) and gfp/dtom fluorescent channels (bottom). (L) Competitive indices of migration into lesions. The mucosa is set to a y-axis value of 0, and migration further into the lesion is reflected by increasing y-axis values. The x-axis is shown on a log scale. (M) Area under the curve (AUC) quantification of bacterial lesions localization shown in (L) (0–225 µM). Effect size (Cohen’s d) is noted. Data shown are means, and error bars show SEM.
 
 To address this question, we performed CIRA analyses with human serum and the bacterial strains E. coli MG1655 and C. koseri BAA-895, the latter being a clinical isolate with previously uncharacterized chemotactic behavior. We find that both these strains exhibit attraction to human serum on time scales and magnitudes similar to experiments with Salmonella (Figure 8C–E, Videos 8 and 9). Without further genetic analyses in these strain backgrounds, the evidence for Tsr mediating serum taxis for these bacteria remains circumstantial. Nevertheless, taxis to serum appears to be a behavior shared by diverse Enterobacteriaceae species and perhaps also Gammaproteobacteria priority pathogen genera that possess Tsr such as Serratia, Providencia, Morganella, and Proteus (Figure 8B).
+
+![Video 8.](https://cdn.elifesciences.org/articles/93178/elife-93178-video8.mp4.jpg)
+
+**Video 8.:** Viewable at https://youtu.be/9iMJz2OPbso.
+
+![Video 9.](https://cdn.elifesciences.org/articles/93178/elife-93178-video9.mp4.jpg)
+
+**Video 9.:** Viewable at https://www.youtube.com/watch?v=jq3cj9e52n4.
 
 So far, our focus has been on bacterial taxis toward human serum. However, given the presence of L-serine in the serum of various animal species, we were interested in exploring if serum from other mammals could also attract bacteria. We prepared horse serum from whole horse blood through clotting and centrifugation to use in CIRA experiments with S. Typhimurium IR715. Similar to human serum, the bacterial population rapidly swam toward the horse serum source, with the relative number of cells in close proximity to the source nearly doubling within 120 s of exposure (Figure 8F). To further investigate this concept, we utilized serum we collected from a third species, a single domestic pig. The data revealed that pig serum similarly induces a rapid attraction of S. Typhimurium (Figure 8G). This suggests that the phenomenon of serum attraction is relevant to diverse host-microbe systems and is not specific to bacteria associated with humans. Considering the data from all CIRA experiments, while some differences are observed in strain responses to serum sources (S. enterica serovars, E. coli, and C. koseri) and serum from different animals (human, horse, and pig), all WT strains examined share the behavior of rapid taxis toward serum.
 
@@ -126,7 +206,7 @@ We demonstrated that serum from humans and other animals contains components tha
 
 **Figure 9.:** Serum contains high concentrations of L-Ser, and other chemoattractants, that are recognized by chemoreceptors, including Tsr, to drive Enterobacteriaceae taxis toward serum. Taxis to serum promotes colonization of enterohemorrhagic lesions and provides a bacterial growth advantage from nutrients acquired from serum. The bacterial behavior of seeking and feeding on serum, which we have defined as ‘bacterial vampirism’ may represent a risk factor for bacterial entry into the bloodstream.
 
-## A new ecological context for L-serine chemoattraction
+### A new ecological context for L-serine chemoattraction
 
 We show here that the bacterial attraction response to serum is robust and rapid; the motile population reorganizes within 1–2 min of serum exposure to be significantly biased toward the serum source (Figures 2 and 8). Serum taxis occurs through the cooperative action of multiple bacterial chemoreceptors that perceive several chemoattractant stimuli within serum, one of these being the chemoreceptor Tsr through recognition of L-serine (Figure 4). While Tsr is known as a bacterial sensor of L-serine (Zhou et al., 2023; Keegstra et al., 2022; Cassidy et al., 2020), the physiological sources of L-serine in the gut sensed by Tsr have not been well-defined. Although a major source is dietary, recent research has suggested that L-serine from damaged tissue may play a significant role in the diseased gut environment and drive opportunistic pathogenesis. In a study using a dextran sodium sulfate (DSS)-colitis model to investigate L-serine utilization by Enterobacteriaceae, L-serine was identified as a critical nutrient providing metabolic and growth advantages in the inflamed gut (Kitamoto et al., 2020). Moreover, colitis was found to stimulate substantial increases in the luminal availability of most amino acids, with the average serine content nearly doubling (Kitamoto et al., 2020). A notable characteristic of the DSS-colitis model is intestinal bleeding (Kim et al., 2012), suggesting that the enrichment of amino acids, including serine, could be attributed to the leakage of host metabolites from serum. The ability of pathogenic Enterobacteriaceae to exploit growth advantages from L-serine during colitis may be linked to their highly sensitive and rapid chemoattraction to this effector emitted from human serum.
 
@@ -138,57 +218,185 @@ In the context of Salmonella pathogenesis, it is interesting to note that divers
 
 ## Materials and methods
 
-## Lead contact
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica Typhimurium)</td>
+      <td>Salmonella enterica Typhimurium</td>
+      <td>Rogers et al., 2020</td>
+      <td>IR715</td>
+      <td>Nalidixic acid-derivative of ATCC 14028</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Typhimurium)</td>
+      <td>S. enterica Typhimurium cheY mutant</td>
+      <td>Rogers et al., 2020</td>
+      <td>FR13</td>
+      <td>IR715 cheY::Tn10 (TetR)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Typhimurium)</td>
+      <td>S. enterica Typhimurium tsr mutant</td>
+      <td>Rogers et al., 2020</td>
+      <td>FR4</td>
+      <td>IR715 tsr::pFR3 (CmR)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Typhimurium)</td>
+      <td>S. enterica Typhimurium Clinical Isolate</td>
+      <td>Beltran et al., 1991</td>
+      <td>SARA1</td>
+      <td>Isolated from patient in Mexico</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Newport)</td>
+      <td>S. enterica Newport Clinical Isolate</td>
+      <td>Shariat et al., 2013b</td>
+      <td>M11018046001A</td>
+      <td>Isolated from patient in PA, USA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Enteriditis)</td>
+      <td>S. enterica Enteriditis Clinical Isolate</td>
+      <td>Shariat et al., 2013a</td>
+      <td>05E01375</td>
+      <td>Isolated from patient in PA, USA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Citrobacter koseri)</td>
+      <td>C. koseri Clinical Isolate</td>
+      <td>ATCC</td>
+      <td>BAA-895</td>
+      <td>Human Clinical Isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli Clinical Isolate</td>
+      <td>Karen Guillemin (UO)Millipore Sigma</td>
+      <td>MG1655, K12</td>
+      <td>Model of WT E. coliRosetta (DE3) BL21 derivative</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human serum</td>
+      <td>This study</td>
+      <td>Prod. #: ISERABOTCHI100ML</td>
+      <td>See method details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>XS Plasmid expressing sfGFP</td>
+      <td>Wiles et al., 2018</td>
+      <td>pXS-sfGFP</td>
+      <td>pGEN-mcs with a modular sfGFP expression scaffold (AmpR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>XS Plasmid expressing mPulm</td>
+      <td>Wiles et al., 2018</td>
+      <td>pXS-mPlum</td>
+      <td>pGEN-mcs with a modular mPlum expression scaffold (AmpR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-30a(+)-SeTsrLBD</td>
+      <td>This study;Genscript</td>
+      <td></td>
+      <td>Vector for recombinant expression of SeTsr LBD (KanR)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SeTsr LBD</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Method details’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Arden Baylink (arden.baylink@wsu.edu).
 
-## Materials availability
+### Materials availability
 
 Strains and plasmids generated in this study will be made available upon request by the Lead Contact with a completed Materials Transfer Agreement.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Bacterial strains
+#### Bacterial strains
 
 Strains of S. enterica, E. coli, and C. koseri used in this study are described in the Key resources table. To generate fluorescent strains, electrically competent bacterial cultures were prepared through successive washing of cells with ice-cold 10% glycerol, and then transformed by electroporation (Bio-Rad GenePulser Xcell) with pxS vectors containing either sfGFP, or mPlum, and AmpR genes (Wiles et al., 2018). Transformants were isolated through growth on selective media and stored as glycerol stocks for subsequent use. To prepare motile bacterial cells for CIRA experiments, bacterial cultures were grown shaking overnight in 2–5 ml tryptone broth (TB) and 50 µg/ml ampicillin (TB+Amp) at 30°C or 37°C, as needed. The following day, 25 µl of overnight culture was used to inoculated 25 ml of fresh TB+Amp and grown shaking for 3–5 hr at the desired temperature to reach A600 of approximately 0.5. To better isolate responses to effectors of interest and remove confounding variables, such as pH variation and quorum-signaling molecules, we washed and exchanged the cells into a buffer of defined composition. Bacterial cultures were centrifuged at 1500 × g for 20 min and exchanged into a chemotaxis buffer (CB) containing 10 mM potassium phosphate (pH 7), 10 mM sodium lactate, and 100 µM EDTA. Cultures were diluted to approximately A600 0.2 (or as indicated in figure legends) and allowed to recover rocking gently for 30–60 min to become fully motile.
 
 For in vitro growth analyses, S. enterica strains were grown in Luria-Bertani (LB) media shaking overnight at 37°C. The following day, cultures were pelleted by centrifugation and resuspended in a minimal media (MM) containing 47 mM Na2HPO4, 22 mM KH2PO4, 8 mM NaCl, 2 mM MgSO4, 0.4% glucose (w/v) 11.35 mM (NH4)2SO4, 100 μM CaCl2. 5 µl of the overnight cultures at 0.05 A600 were used to inoculate fresh solutions of 200 µl of MM, or additives diluted into MM (human serum or L-serine), in a 96-well microtiter plate. A plate reader was used to monitor cell growth while shaking at 37° via A600 readings every 5 min.
 
-## Method details
+### Method details
 
-## Chemosensory injection rig assay (CIRA)
+#### Chemosensory injection rig assay (CIRA)
 
 Our CIRA system is based on prior work, with several notable changes to methodology, as described (Huang et al., 2015; Perkins et al., 2019; Howitt et al., 2011). The CIRA apparatus was constructed using a pump for injection (either a refurbished Eppendorf Transjector 5246 or Femtojet 4i) and universal capillary holder, with solutions injected through Femtotip II glass microcapillaries (Eppendorf), and the microcapillary position controlled with an MP-285 micromanipulator (Sutter) at a 30° angle of attack. To generate a microgradient, a constant flow from the microcapillary was induced by applying compensation pressure (Pc) of 35 hPa, unless otherwise specified. The stability of the microgradient under these conditions was determined with Alexa488 dye (Thermo Fisher), and the flow was determined empirically with methylene blue dye to be approximately 300 fl/min at 30°C (Figure 2—figure supplement 1). Pooled off-the-clot human serum was obtained from Innovative Research; human serum was deidentified and had no additional chemical additives and is presumed to be fully active. Horse serum was prepared from whole horse blood from Innovative Research. Pig serum was prepared from whole blood collected from a single animal. Treatment solutions were filtered through a 0.2 µm filter and injected as-is (serum) or diluted in CB (serine, aspartate, NE, DHMA). Serine racemase treatment of human serum was performed with the addition of 5 µl of proprietary serine racemase solution from a DL-serine assay kit (Abcam) to 1 ml of serum for 3 hr. For each CIRA experiment, a fresh pond of 50 µl of motile bacteria was mounted open to air on a 10-well slide (MP Biomedicals), and the microcapillary containing the treatment of interest was lowered into the pond. Bacterial responses were imaged with an inverted Nikon Ti2 Eclipse microscope with an enclosed heated sample chamber. Temperature of experiments were at 37°C, unless otherwise indicated.
 
-## CIRA microgradient modeling
+#### CIRA microgradient modeling
 
-Diffusion is modeled as a 3D process in which the diffusive species is slowly and continuously introduced at a fixed point in a large ambient fluid volume. The species to be injected is prepared at concentration Ms (typically in the range of 0.5 µM to 5 mM) and is injected at a volume rate Q = 305.5 fl/min. The species diffuses into the ambient fluid with diffusion constant D. The governing equation for the diffusion of a species introduced continuously at a point source is:C(r,t)=q4πDrerfcr2Dt
+Diffusion is modeled as a 3D process in which the diffusive species is slowly and continuously introduced at a fixed point in a large ambient fluid volume. The species to be injected is prepared at concentration $M_{s}$ (typically in the range of 0.5 µM to 5 mM) and is injected at a volume rate Q = 305.5 fl/min. The species diffuses into the ambient fluid with diffusion constant $D$. The governing equation for the diffusion of a species introduced continuously at a point source is:
 
-where r is the distance from the point source, t is the time from injection initiation, and q=MsQ is the injection rate of the species, and C is the species concentration. We can simplify the presentation by defining a characteristic length scale r0 , characteristic time t0 , and dimensionless variables as:r0=Q4πD,t0=Q2(8π)2D3,r¯=rr0,t¯=tt0.
+$$
+C(r,t)=\frac{q}{4\piDr}erfc\frac{r}{2\sqrt{Dt}}
+$$
 
-Then, we have the diffusion-driven concentration model:C(r¯,t¯)=Msr¯erfcr¯t¯
+where $r$ is the distance from the point source, $t$ is the time from injection initiation, and $q=M_{s}Q$ is the injection rate of the species, and $C$ is the species concentration. We can simplify the presentation by defining a characteristic length scale $r_{0}$ , characteristic time $t_{0}$ , and dimensionless variables as:
 
-Representative diffusion coefficients are A488, 4.00×10-6cm2/s ; L-serine, 8.71×10-6cm2/s ; L-aspartate, 9.35×10-6cm2/s . Due to the small injection rate, our assumption of a point source leads to a model that is valid at distances r≫r0∼1nm and times t≫t0∼1ns. We also consider the total species quantity integrated along a viewing direction. The result is:I(r¯,t¯)=2Msr0∫0∞dz¯z¯2+r¯2erfcz¯2+r¯2t¯
+$$
+r_{0}=\frac{Q}{4\piD},t_{0}=\frac{Q^{2}}{(8\pi)^{2}D^{3}},r¯=\frac{r}{r_{0}},t¯=\frac{t}{t_{0}}.
+$$
 
-where z¯ is the unitless integration variable along the viewing direction. This integral was evaluated numerically by considering the sequence of points zk=k+12Δz¯ for k=1,2,3,… and Δz¯ some small interval. Then, we have the discrete integral approximation:Ir¯,z¯≈2Msr0Δz¯∑k=1Nzk2+r¯2-1/2erfczk2+r¯2t¯
+Then, we have the diffusion-driven concentration model:
 
-Computations for this work used 1 µm steps extending out to r=500m. That is, Δz¯=1m/r0 and N=500.
+$$
+C(r¯,t¯)=\frac{M_{s}}{r¯}erfc\frac{r¯}{\sqrt{t¯}}
+$$
 
-## Ex vivo swine hemorrhagic lesion model
+Representative diffusion coefficients are A488, $4.00\times10^{-6}cm^{2}/s$ ; L-serine, $8.71\times10^{-6}cm^{2}/s$ ; L-aspartate, $9.35\times10^{-6}cm^{2}/s$ . Due to the small injection rate, our assumption of a point source leads to a model that is valid at distances $r≫r_{0}∼1nm$ and times $t≫t_{0}∼1ns$. We also consider the total species quantity integrated along a viewing direction. The result is:
+
+$$
+I(r¯,t¯)=2M_{s}r_{0}\int_{0}^{∞}\frac{dz¯}{\sqrt{z¯^{2}+r¯^{2}}}erfc\frac{\sqrt{z¯^{2}+r¯^{2}}}{t¯}
+$$
+
+where $z¯$ is the unitless integration variable along the viewing direction. This integral was evaluated numerically by considering the sequence of points $z_{k}=\frac{k+1}{2}Δz¯$ for $k=1,2,3,…$ and $Δz¯$ some small interval. Then, we have the discrete integral approximation:
+
+$$
+Ir¯,z¯≈2M_{s}r_{0}Δz¯\sum_{k=1}^{N}z_{k}^{2}+r¯^{2}^{-1/2}erfc\frac{\sqrt{z_{k}^{2}+r¯^{2}}}{t¯}
+$$
+
+Computations for this work used 1 µm steps extending out to $r=500m$. That is, $Δz¯=1m/r_{0}$ and $N=500$.
+
+#### Ex vivo swine hemorrhagic lesion model
 
 Swine intestinal tissue was procured from a single 8-week-old domestic farm-reared Yorkshire crossbreed animal (the same animal from which serum was drawn), in accordance with Washington State University Institutional Animal Care and Use Committee and Institutional Biosafety Committee approval. Intact colonic tissue was excised, and an incision was made along its length to flatten the tissue and expose the mucosa. Sections of tissue approximately 2.5 cm2 in size were prepared for experimentation through gentle washing with saline solution, followed by CB, to remove fecal contents and debris. A sterile Gawal Sharp Point was used to lance the vasculature to generate a model enterohemorrhagic lesion. The lesion site was positioned in a MatTek dish over a pond of 50 µl of motile bacterial cells (1:1 fluorescently tagged WT and mutant in CB, at a total A600 of 1.0). After 30 min, bacterial localization into the lesion was visualized using an inverted Nikon Ti2 Eclipse microscope. Images were captured at ×20 magnification proceeding through the Z-plane in 5 µm intervals.
 
-## Cloning and recombinant protein expression
+### Cloning and recombinant protein expression
 
 Cloning of the S. enterica Tsr LBD construct for recombinant protein expression was performed as a service by Genscript Biotech Corp. The sequence of the periplasmic portion of the ligand-binding domain of S. enterica Typhimurium Tsr (gene STM4533), corresponding to residues 32–187 of the full-length protein, was encoded into a pet-30a(+) vector (Tsr-LBD-pet-30a(+)), at the NdeI and HindIII sites, with a short N-terminal TEV cleavage tag (MENLYFQ) such that the final expressed protein sequence was:
 
 Chemically competent Rosetta BL21(DE3) E. coli (MilliporeSigma) were transformed by heat shock with the Tsr-LBD-pet-30a(+) vector, and transformants identified by growth on selective media containing 20 µg/ml (LB + Kan). Cells were grown overnight in 5 ml LB + Kan. The following day, 1 ml of overnight culture was used to inoculate 1 l of fresh LB + Kan, and cultures were grown to OD600 0.6–0.8 and induced with 0.4 mM isopropyl β-d-1-thiogalactopyranoside (IPTG). After growth for 3 hr at 37°C, cells were harvested by centrifugation.
 
-## Purification of recombinant SeTsr LBD
+### Purification of recombinant SeTsr LBD
 
 The cell pellet was resuspended in a lysis buffer containing 50 mM Tris pH 7.5, 0.1 mM DTT, 1 mM EDTA, 5 mg DNAse I, and 1 cOmplete protease inhibitor tablet per 1 l of culture (Sigma-Aldrich), and cells were lysed by sonication. Afterward, the lysate was kept on ice and adjusted to 20% ammonium sulfate saturation and stirred at 4°C for 30 min. The lysate was centrifuged at 15,000 rpm for 30 min in a Beckman ultracentrifuge. The soluble fraction was retained, and an ammonium precipitation trial was conducted; the 20–40% fraction contained the majority of the Tsr LBD protein and was used for subsequent purification. The protein solution was dialyzed for 16 hr against 4 l of 20 mM Tris, pH 7.5, 20 mM NaCl, and 0.1 mM EDTA, then run over an anion exchange column and FPLC (Akta). The purest fractions were pooled and treated with 0.3 mg/ml TEV protease, and the protein solution was dialyzed against 4 l of 50 mM Tris pH 8, 0.5 mM EDTA, and 1 mM EDTA for 48 hr at 4°C. Subsequently, the cleaved protein solution was exchanged into a buffer of 50 mM Tris pH 7.5, 1 mM EDTA, and 150 mM NaCl, and purified by gel filtration with an S200 column and FPLC. Pure protein fractions were pooled, concentrated to 7 mg/ml, and flash frozen in liquid N2.
 
-## Protein crystallography
+### Protein crystallography
 
 Initial crystallization trials of SeTsr LBD were performed with either TEV-cleaved or uncleaved protein samples at 7 mg/ml with ±2 mM L-serine and using 96-well matrix screens set up with a Mosquito robot (SPT Labtech). We only observed crystal hits with the cleaved, serine-treated crystals, the best of which was 0.056 M sodium phosphate, 1.344 M potassium phosphate, pH 8.2. This condition was further optimized to be 1.5 µl SeTsr LBD protein (7 mg/ml), 0.5 µl of 8 mM L-serine, and 1.5 µl 1.69 M potassium phosphate pH 9.7, grown via hanging drop vapor diffusion with a 1 ml reservoir of 1.69 M potassium phosphate pH 9.7 at 22°C. Crystals were scooped directly from drops and flash frozen in liquid N2. X-ray diffraction data were collected at the Berkeley Advanced Light Source (ALS) beamline 5.0.3. Out of over 100 crystals examined, only one diffracted to high resolution and was not impacted by crystal twinning. Data were indexed with DIALS (Winter et al., 2022), scaled with Aimless (Winn et al., 2011), and found to correspond well to space group C21. A conservative final resolution cutoff of 2.2 Å was applied on the basis of CC1/2 >0.3 and completeness >50% in the highest resolution shell (Karplus and Diederichs, 2012).
 
@@ -198,26 +406,42 @@ Because the protein was in a buffer at pH 7.5, but the crystallization solution 
 
 For comparisons of model quality between SeTsr LBD (8FYV) with EcTsr (3ATP), we re-refined 3ATP with its deposited data using rigid body refinement to obtain a starting model for subsequent evaluation. Then, we performed a series of restrained refinements with Phenix using identical Rfree flags and identical strategy of five cycles of xyz reciprocal space, xyz real space, individual isotropic B-factor, adp weight optimization, and stereochemistry weight optimization. For these refinements, we used the EcTsr LBD structure ± the following modifications: (1) the deposited L-Ser present, (2) the deposited L-Ser removed (apo), (3) the L-Ser replaced by the SeTsr L-Ser ligand, or (4) both the L-Ser and the ligand binding site residues replaced by those from the SeTsr LBD structure. These comparisons show the best model, as evidenced by meaningfully reduced Rwork and Rfree values, is obtained with the position of the L-Ser and ligand binding residues from the higher resolved SeTsr LBD structure (Figure 7J).
 
-## ITC ligand binding studies
+### ITC ligand binding studies
 
 ITC experiments were performed in 50 mM Tris, 150 mM NaCl, 1 mM EDTA, pH 7.5, at 25°C. We dialyzed the protein into the experimental buffer and dissolved the small-molecule ligands into the same buffer. Protein concentrations were ~50 μM; titrant concentrations were 500 μM. Samples were degassed prior to experiments. All experiments were performed on a MicroCal ITC-200 system (GE Healthcare), with the gain set to ‘low’ and a syringe stir speed of 750 rpm. Titration data for the serine experiments were fit to a single-site binding model using the built-in ITC analysis software.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Determination of molar content of total serine in human serum samples was performed as a service through the University of Washington Mass Spectrometry Center. Samples were analyzed on the Waters TQ #1 instrument using a Thermo Hypersil Gold PFP column (2.1 × 100) with 0.1% heptafluorobutyric acid (HFBA) in water and acetonitrile.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Quantification of CIRA data
+#### Quantification of CIRA data
 
 To determine the relative numbers of cells over time, a ratio of fluorescence intensity per cell was calculated using ImageJ. Fluorescence intensity was used as a readout of relative cell count over time using the ‘plot profile’ function in ImageJ (Schneider et al., 2012). Cell numbers were normalized to a baseline of ‘100%’ at the start of treatment (shown as time 0). Distribution of the bacterial population was quantified through use of the ‘radial profile’ ImageJ plugin. Radial distribution data were normalized by setting the field of view periphery as the baseline of ‘onefold’, which we defined as 240 µm distance from the source. Images and videos shown were processed using the ‘enhance contrast’ function in ImageJ and adjusting intensity thresholds to normalize fluorescence intensity per cell across channels. For experiments with non-fluorescent cells, equivalent procedures were performed using phase-contrast data and enumeration of cells over time using a MATLAB-based tracking software (Perkins et al., 2019).
 
-## Statistical analyses
+### Statistical analyses
 
-Data from replicate experiments were averaged and interpreted on the basis of their mean, standard error of the mean, and effect sizes. Effect sizes for data are indicated as Cohen’s d value:d=M1−M2σpooled
+Data from replicate experiments were averaged and interpreted on the basis of their mean, standard error of the mean, and effect sizes. Effect sizes for data are indicated as Cohen’s d value:
 
-where:σpooled=σ12+σ222
+$$
+d=\frac{M_{1}−M_{2}}{\sigma_{pooled}}
+$$
 
-Where relevant, p-values were calculated using either one-sided or unpaired two-sided tests, with significance determined at p<0.05:t=x¯1−x¯2s2(1n1+1n2)
+where:
 
-wheres2=∑i=1n1(xi−x¯1)2+∑j=1n2(xj−x¯2)2n1+n2−2
+$$
+\sigma_{pooled}=\sqrt{\frac{\sigma_{1}^{2}+\sigma_{2}^{2}}{2}}
+$$
+
+Where relevant, p-values were calculated using either one-sided or unpaired two-sided tests, with significance determined at p<0.05:
+
+$$
+t=\frac{x¯_{1}−x¯_{2}}{\sqrt{s^{2}(\frac{1}{n_{1}}+\frac{1}{n_{2}})}}
+$$
+
+where
+
+$$
+s^{2}=\frac{\sumi=1n_{1}(x_{i}−x¯_{1})^{2}+\sumj=1n_{2}(x_{j}−x¯_{2})^{2}}{n_{1}+n_{2}−2}
+$$

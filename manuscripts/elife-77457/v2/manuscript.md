@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Medicine, Section of Pulmonary and Critical Care Medicine, The University of Chicago Chicago United States
-2. https://ror.org/024mw5h28 Department of Medicine, Section of Emergency Medicine, The University of Chicago Chicago United States
+1. Department of Medicine, Section of Pulmonary and Critical Care Medicine, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+2. Department of Medicine, Section of Emergency Medicine, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -38,49 +38,81 @@ Using influenza infection in mice to model acute lung injury, we found that TR-A
 
 ## Results
 
-## TR-AMs exhibit HIF-1α stabilization and develop a glycolytic phenotype in response to hypoxia
+### TR-AMs exhibit HIF-1α stabilization and develop a glycolytic phenotype in response to hypoxia
 
 We have recently shown that TR-AMs maintain a very low glycolytic rate that is not augmented by activation of inflammatory responses (Woods et al., 2020). Since TR-AMs inhabit an environment with high oxygen levels, we hypothesized that TR-AMs may not be able to induce glycolytic reprogramming in response to either inflammatory stimuli or to physiological hypoxia. Glycolysis stress tests were performed following overnight (16 hr) exposure to decreasing levels of ambient oxygen. Unlike their inability to induce glycolysis after inflammatory stimulus under normoxia, TR-AMs exhibited a progressive increase in the extracellular acidification rate (ECAR) in response to escalating degrees of ambient hypoxia (Figure 1A). Both basal rate of glycolysis and glycolytic reserve increased substantially when oxygen levels were lowered to 3.0 and 1.5% (Figure 1B). HIF-1α levels were nearly undetectable under normoxic conditions; however, with increasing degrees of hypoxia, HIF-1α stabilization occurred in a dose-dependent fashion and was detectable in the nucleus (Figure 1C; Figure 1—source data 1). Pretreating TR-AMs prior to hypoxia with echinomycin, an inhibitor of HIF-1α DNA binding activity (Kong et al., 2005), disrupted hypoxia-induced increases in glycolytic rate in a dose-dependent fashion (Figure 1D). Echinomycin also reduced hypoxia-induced increases in glycolytic enzyme protein expression (HK2 and LDH), suggesting that HIF-1α is required for glycolytic adaption to hypoxia in TR-AMs (Figure 1E; Figure 1—source data 2). In concurrence with the echinomycin data, siRNA knockdown of HIF-1α attenuated the hypoxia-induced increase in protein expression of glycolytic enzymes and lactate production in TR-AMs (Figure 1—figure supplement 1A–C, Figure 1—figure supplement 1—source data 1, Figure 1—figure supplement 1—source data 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig1-v2.jpg)
+
+**Figure 1.:** TR-AMs (A–E) and BMDMs (F–J) were incubated overnight (16 hr) at varying O2 concentrations. (A) Using Seahorse XF24 analyzer, glycolysis was measured as extracellular acidification rate (ECAR). TR-AMs were sequentially treated with glucose, oligomycin (ATP synthase inhibitor), and 2-deoxyglucose (2-DG) (inhibitor of hexokinase 2, or glycolysis). (B) Interleaved scatter plots quantifying glycolytic parameters. Data represent at least three independent experiments (n = 4 separate wells per group). Glycolytic parameters were compared against 21% O2 and significance was determined by one-way ANOVA with Bonferroni correction. (C) Western blot analysis of nuclear extract to assess HIF-1α expression in TR-AMs treated with different concentrations of O2. DMOG served as a positive control. (D) Glycolysis stress test of TR-AMs under 1.5% O2 in combination with echinomycin (16 hr). (E) Western blot analysis of whole-cell lysates of TR-AMs treated with 21 or 1.5% O2 in combination with echinomycin (16 hr). (F) BMDM glycolysis measurements (ECAR) using Seahorse XF24 analyzer. (G) Interleaved scatter plots quantifying glycolytic parameters. Data represent at least three independent experiments (n = 4 separate wells per group). Glycolytic parameters were compared against 21% O2 and significance was determined by one-way ANOVA with Bonferroni correction. (H) Western blot analysis of nuclear extract to assess HIF-1α expression in BMDMs treated with different concentrations of O2. (I) Glycolysis stress test of BMDMs under 1.5% O2 in combination with echinomycin (16 hr). (J) Western blot analysis of whole-cell lysates of BMDMs treated with 21 or 1.5% O2 in combination with echinomycin (16 hr). All error bars denote mean ± SD. *p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** TR-AMs (A–C) and bone marrow-derived macrophages (BMDMs) (D–F) were transfected with Hif1a or control siRNA and subsequently incubated overnight (16 hr) at 21 or 1.5% O2.Western blot analysis of nuclear extracts to assess successful Hif1a knockdown in (A) TR-AMs and (D) BMDMs under 1.5% O2. Western blot analysis of whole-cell extracts from (B) TR-AMs and (E) BMDMs. Extracellular lactate levels in (C) TR-AMs and (F) BMDMs incubated overnight (16 hr) at 21 or 1.5% O2. Significance was determined by two-way ANOVA with Bonferroni correction. All error bars denote mean ± SD. *p<0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** TR-AMs (A–C) or bone marrow-derived macrophages (BMDMs) (D–F) were incubated for 2 hr or overnight (16 hr) at 1.5% O2. (A) Western blot analysis of TR-AM (A) and BMDM (D) nuclear extracts to assess hypoxia-inducible factor 1-alpha (HIF-1α) protein expression. Using Seahorse XF24 technology, TR-AM (B) and BMDM (E) glycolysis was measured as extracellular acidification rate (ECAR). Interleaved scatter plots quantifying glycolytic parameters in TR-AMs (C) and BMDMs (F). Data represents at least three independent experiments (n = 4 separate wells per group). Significance was determined by unpaired, two-tailed t-test. *p<0.05.
+
 Both short-term (2 hr) and prolonged (16 hr) exposure to hypoxia (1.5% O2) led to significant increases in nuclear HIF-1α protein levels in TR-AMs (Figure 1—figure supplement 2A, Figure 1—figure supplement 2—source data 1). Glycolysis stress tests demonstrated that short-term hypoxia treatment failed to induce significant alterations in glycolysis or glycolytic capacity in TR-AMs compared to prolonged hypoxia treatment, suggesting that transcription and translation of glycolytic genes that are targets of HIF-1α are required (Figure 1—figure supplement 2B and C). Taken together, these data indicate that TR-AM HIF-1α stabilization in response to hypoxia is dose-dependent, and that prolonged hypoxia, but not short-term hypoxia exposure, leads to a functional glycolytic phenotype in TR-AMs.
 
-## BMDMs have limited metabolic adaptation to hypoxia
+### BMDMs have limited metabolic adaptation to hypoxia
 
 Several studies have examined the effects of hypoxia on BMDM metabolism; however, they focused heavily on transcriptional changes in glycolytic gene expression as opposed to functional changes in glycolysis (Bosco et al., 2006; Roiniotis et al., 2009; Delprat et al., 2020). We found that, unlike TR-AMs, BMDMs exposed to hypoxia (16 hr) exhibit minimal changes in glycolytic rate or glycolytic capacity (Figure 1F and G). Interestingly, we found that BMDMs have high basal levels of nuclear HIF-1α protein under normoxic conditions and that HIF-1α expression in BMDMs did not significantly change in response to hypoxia as low as 1.5% O2 (Figure 1H, Figure 1—source data 3). Echinomycin had minimal effect on the glycolytic output of hypoxic BMDMs (Figure 1I). Likewise, neither hypoxia nor hypoxia in combination with echinomycin altered glycolytic enzyme protein expression (HK2 and LDHA) in BMDMs (Figure 1J, Figure 1—source data 4). SiRNA knockdown of Hif1a also had no impact on glycolytic protein expression or lactate production in BMDMs (Figure 1—figure supplement 1D–F, Figure 1—figure supplement 1—source data 3, Figure 1—figure supplement 1—source data 4). Duration of hypoxia exposure (2 hr vs. 16 hr) had no significant effect on HIF-1α stabilization (Figure 1—figure supplement 2D, Figure 1—figure supplement 2—source data 2) or glycolysis (Figure 1—figure supplement 2E and F) in BMDMs. Collectively, these data demonstrate that hypoxia has minimal effect on glycolytic function and HIF-1α stabilization in BMDMs.
 
-## The hypoxia-induced transcriptomic response differs substantially between TR-AMs and BMDMs
+### The hypoxia-induced transcriptomic response differs substantially between TR-AMs and BMDMs
 
 To better understand the observed differences in hypoxia-induced glycolytic metabolism between TR-AMs and BMDMs, we performed RNA-sequencing to assess global alterations in gene expression. We found 741 DEGs (512 upregulated and 229 downregulated) in TR-AMs in response to 1.5% O2 compared to only 260 DEGs (214 upregulated and 46 downregulated) in BMDMs (Figure 2A). Reactome pathway analysis revealed that hypoxia altered a large number of TR-AM genes in multiple pathways ranging from cellular metabolism, hemostasis, and immune cell function, while the majority of BMDM genes affected by hypoxia were related to carbohydrate metabolism (Figure 2B). Hypoxia led to the most significant increases in the expression of glycolytic and other HIF-1α target genes in both TR-AMs and BMDMs. These same genes were significantly lower in TR-AMs compared to BMDMs under normoxic conditions (Figure 2C, Figure 2—source data 1). This is in direct agreement with our previous findings (Woods et al., 2020). A side-by-side comparison demonstrated that the level of HIF-1α expression in hypoxic TR-AMs is similar to that of BMDMs under normoxia and hypoxia (Figure 2D, Figure 2—source data 2). Hypoxia-induced HIF-1α expression in TR-AMs correlated with increase in glycolytic (HK2 and LDHA) and prolyl hydroxylase (EGLN1 and EGLN3) protein expression in TR-AMs (Figure 2E, Figure 2—source data 3). This was not the case in BMDMs in which hypoxia exposure did not alter protein expression of glycolytic genes. These results demonstrate that hypoxia induces transcriptomic alterations in TR-AMs that lead to changes in protein expression and metabolic function. In contrast, BMDMs exhibit high levels of HIF-1α and HIF-1α target proteins at baseline and do not further increase the expression of these proteins in response to hypoxia, despite a hypoxia-adaptive mRNA transcription (Figure 2D and E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig2-v2.jpg)
 
-**Figure 2.:** TR-AMs and BMDMs were incubated overnight (16 hr) under normoxia (21.0% O2) or hypoxia (1.5% O2). (A) Venn diagrams show differentially expressed genes (DEGs) altered by hypoxia in TR-AMs (741 total DEGs), and BMDMs (260 total DEGs). DEGs were identified using DESeq2 at FC > 2 and false discovery rate (FDR)-adjusted p-value of <0.05. (B) Reactome pathway enrichment comparing number of genes in a given pathway altered by hypoxia in TR-AMs and BMDMs. (C) Heatmap representing the top 20 significant metabolic genes altered by hypoxia in both TR-AMs and BMDMs. (D) Western blot analysis of nuclear extracts to assess hypoxia-inducible factor 1-alpha (HIF-1α) protein expression. (E) Western blot analysis of whole cell extracts to assess glycolytic enzyme (HK2, LDH) and prolyl hydroxylase (PHD2, PHD3) protein expression.Figure 2—source data 1.Figure 2—source data 2.Uncropped Western blot images of HIF-1α expression in TR-AMs and BMDMs treated with normoxia or hypoxia.Figure 2—source data 3.Uncropped Western blot images of HK2, LDHA, PHD2, PHD3, and α-tubulin expression in TR-AMs and BMDMs treated with normoxia or hypoxia.
+**Figure 2.:** TR-AMs and BMDMs were incubated overnight (16 hr) under normoxia (21.0% O2) or hypoxia (1.5% O2). (A) Venn diagrams show differentially expressed genes (DEGs) altered by hypoxia in TR-AMs (741 total DEGs), and BMDMs (260 total DEGs). DEGs were identified using DESeq2 at FC > 2 and false discovery rate (FDR)-adjusted p-value of <0.05. (B) Reactome pathway enrichment comparing number of genes in a given pathway altered by hypoxia in TR-AMs and BMDMs. (C) Heatmap representing the top 20 significant metabolic genes altered by hypoxia in both TR-AMs and BMDMs. (D) Western blot analysis of nuclear extracts to assess hypoxia-inducible factor 1-alpha (HIF-1α) protein expression. (E) Western blot analysis of whole cell extracts to assess glycolytic enzyme (HK2, LDH) and prolyl hydroxylase (PHD2, PHD3) protein expression.
 
-## Hypoxia modulates TR-AM cytokine production and metabolic response to LPS
+### Hypoxia modulates TR-AM cytokine production and metabolic response to LPS
 
 Hypoxia and HIF-1α are thought to be central to the inflammatory response of macrophages (Cramer et al., 2003; Tannahill et al., 2013; Palsson-McDermott et al., 2015). To determine the effect of HIF-1α stabilization on TR-AM’s effector response, we measured the production of proinflammatory cytokines in response to LPS under hypoxia. TR-AMs were exposed overnight to hypoxia (1.5% O2) or normoxia and then subsequently treated with LPS while maintaining original O2 conditions. Hypoxia alone did not stimulate cytokine production without LPS treatment. Hypoxic TR-AMs secreted significantly higher levels of TNF-α, KC, and IL-1β in response to LPS compared to normoxic controls. In contrast, IL-6 and CCL2 secretion was decreased in hypoxic TR-AMs (Figure 3A). The cytokine gene expression pattern in hypoxic TR-AMs treated with LPS mirrored the secreted cytokine profile (Figure 3B). Moreover, enhanced proIL-1β protein production was observed in hypoxic TR-AMs treated with LPS (Figure 3C, Figure 3—source data 1). While BMDMs experienced limited metabolic alterations in response to hypoxia, treatment with LPS revealed that hypoxia induced similar alterations in their cytokine profile. Hypoxic BMDMs had increased TNF-α, KC, and IL-1β, and decreased IL-6 secretion (Figure 3—figure supplement 1). The only discordance in the hypoxic cytokine response profile between TR-AMs and BMDMs was CCL2, which remained unchanged in hypoxic BMDMs in response to LPS compared to normoxic controls (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig3-v2.jpg)
+
+**Figure 3.:** TR-AMs were incubated overnight (16 hr) under 21 or 1.5% O2, then stimulated with 20 ng/ml LPS for 6 hr while maintaining pretreatment conditions. For IL-1β measurements, 5 mM ATP was added to TR-AMs for 30 min following 6 hr LPS treatment to activate caspase 1, ensuring IL-1β release. (A) We measured cytokine (TNFα, IL-6, KC, CCL2, and IL-1β) levels in media using ELISA. Data represent at least three independent experiments; n = 3 per group. Significance was determined by unpaired, two-tailed t-test. (B) qPCR was used to measure mRNA expression (Tnfa, Il6, Kc, Ccl2, and Il1b). Gene expression was normalized to corresponding gene ct values in 21% group and represented as fold change using the ∆∆ct method. Data represent at least three independent experiments; n = 3 per group. Significance was determined by unpaired, two-tailed t-test. (C) Western blot analysis of whole-cell extracts at 6 and 24 hr post LPS treatment. (D) Extracellular acidification rate (ECAR) was measured in following acute LPS injection (final concentration: 20 ng/ml) in TR-AMs conditioned in 1.5% O2. (E) Capillary electrophoresis-mass spectrometry (CE-MS) metabolite heatmap for glycolytic intermediates. All error bars denote mean ± SD. *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** BMDMs were incubated overnight (16 hr) under normoxia or 1.5% O2, then stimulated with lipopolysaccharide (LPS) (20 ng/ml) for 6 hr while maintaining pretreatment conditions. For IL-1β, 5 mM ATP was added to BMDMs for 30 min following 6 hr of LPS treatment to activate caspase 1, ensuring IL-1β release. (A) Sandwich ELISA was used to measure secreted cytokine (TNFα, IL-6, KC, CCL2, and IL-1β). Data represent at least three independent experiments; n = 3 per group. Significance was determined by unpaired, two-tailed t-test. All error bars denote mean ± SD. *p<0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Extracellular acidification rate (ECAR) was measured in normoxic BMDMs following acute LPS injection (final concentration: 20 ng/ml).
 
 We and others have shown that BMDMs exhibit an immediate enhancement in glycolytic output in response to LPS (Figure 3—figure supplement 2). It is thought that this increase in glycolysis following LPS supports the proinflammatory response. We have shown that LPS-induced inflammation in TR-AMs is independent of glycolysis, including the rise in glycolysis following LPS injection (Woods et al., 2020). Given that hypoxia elevated HIF-1α levels and glycolytic rates in TR-AMs, we sought to determine whether hypoxia could alter TR-AM glycolytic responsiveness to LPS. We found that despite the fact that hypoxia increased the glycolytic rate of TR-AMs at baseline, TR-AM glycolysis remained unresponsive to LPS injection (Figure 3D). Using capillary electrophoresis-mass spectrometry to measure glycolytic metabolite levels, we found that consistent with increased glycolytic output after hypoxia, levels of glycolytic intermediate metabolites (glucose-6 phosphate, fructose 1,6 diphosphate, glycerol 3-phosphate, dihydroxyacetone phosphate) and lactate were increased in response to hypoxia alone. Interestingly, hypoxic TR-AMs exhibited further increases in glycolytic intermediates in the presence of LPS (6 hr) compared to normoxic cells, suggesting that while LPS increases cellular levels of glycolytic metabolites in hypoxic TR-AMs, this does not manifest as acute lactate secretion (Figure 3E). These data demonstrate that hypoxia leads to significant alterations in TR-AM cytokine production and increased glycolytic metabolites in response to prolonged LPS treatment. However, unlike the prototypical BMDM response, hypoxic TR-AMs do not immediately increase their extracellular acidification in response to LPS.
 
 We have previously shown that unlike BMDMs, TR-AM's effector function is acutely sensitive to mitochondrial inhibition (Woods et al., 2020). Since TR-AM capacity for glycolysis expands with decreasing levels of O2, we next sought to assess mitochondrial function under hypoxia and performed a mitochondrial stress test on TR-AMs that had been exposed to varying oxygen concentrations. Interestingly, mild-to-moderate degrees of ambient hypoxia did not appear to significantly alter overall mitochondrial function in these cells. Only 1.5% O2 caused significant reductions in oxygen consumption rate (OCR) across all mitochondrial parameters (Figure 4A and B). ECAR tracings during the mitochondrial stress test demonstrated that, other than severe hypoxia (1.5% O2), the majority of acid produced under mildto moderate hypoxia is derived from CO2, as the application of rotenone and antimycin A led to a significant reduction in ECAR (Figure 4C). When exposed to 1.5% O2, TR-AMs' energy is derived mostly from glycolysis with no significant contribution of mitochondrial-derived CO2 to extracellular acidification. Overall BMDM mitochondrial function was impaired by 1.5% O2, but the effect was greatly diminished compared to TR-AMs (Figure 4—figure supplement 1A and B). BMDM ECAR tracing during mitochondrial stress test demonstrated that most acid production remained unchanged in response to rotenone and antimycin A regardless of O2 concentration (Figure 4—figure supplement 1C). This suggests that BMDM acidification is glycolyticallyderived under both normoxia and hypoxia.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mitochondrial stress test to measure oxygen consumption rate (OCR) using Seahorse XF24 in TR-AMs, which were treated sequentially with oligomycin (ATP synthase inhibitor), FCCP (uncoupler), and rotenone (Rot)/antimycin A (Ant) (complex I and III inhibitors, respectively). (B) Interleaved scatter plots quantifying mitochondrial respiration parameters. Data represents at least three experiments (n = 4 separate wells per group). Mitochondrial parameters were compared against 21% O2 and significance was determined by one-way ANOVA with Bonferroni correction. (C) Extracellular acidification rate (ECAR) measurement during mitochondrial stress test to visualize TR-AMs’ ability to upregulate glycolysis in response to mitochondrial inhibition. (D) TR-AMs were incubated overnight (16 hr) under 21 or 1.5% O2, then stimulated with 20 ng/ml lipopolysaccharide (LPS) in the presence or absence of mitochondrial inhibitors (20 nM Ant or Rot) for 6 hr while maintaining pretreatment conditions. ELISA was used to measure secreted cytokine (TNFα, IL-6, KC, CCL2, and IL-1β) levels in media. ATP added to cells prior to collection for IL-1β assessment. Data represent at least three independent experiments; n = 3 per group. Significance was determined by one-way ANOVA with Bonferroni correction. (E) TR-AMs were cultured under 21 or 1.5% O2 for 6 hr, then treated with mitochondrial inhibitors (100 nM Ant or 500 nM Rot) overnight and a sulforhodamine B assay was performed to measure cytotoxicity. Graphs represent cell viability compared to control, 21% O2 group. Data represent at least three independent experiments (n = 3 per group). Significance was determined by two-way ANOVA with Bonferroni correction. All error bars denote mean ± SD. *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mitochondrial stress test to measure oxygen consumption rate (OCR) using Seahorse XF24 in BMDMs. (B) Interleaved scatter plots quantifying mitochondrial respiration parameters. Data represents at least three experiments (n = 4 separate wells per group). Mitochondrial parameters were compared against 21% O2 and significance was determined by one-way ANOVA with Bonferroni correction. (C) Extracellular acidification rate (ECAR) measurement during mitochondrial stress test. (D) BMDMs were incubated overnight (16 hr) under 21 or 1.5% O2, then stimulated with 20 ng/ml lipopolysaccharide (LPS) in the presence or absence of mitochondrial inhibitors (20 nM antimycin A [Ant] or rotenone [Rot]) for 6 hr while maintaining pretreatment conditions. ELISA was used to measure secreted cytokine (TNFα, IL-6, KC, CCL2, and IL-1β) levels in media. ATP added to cells prior to collection for IL-1β assessment. Data represent at least three independent experiments; n = 3 per group. Significance was determined by one-way ANOVA with Bonferroni correction. (E) BMDMs were cultured under 21 or 1.5% O2 for 6 hr, then treated with mitochondrial inhibitors (100 nM Ant or 500 nM Rot) overnight and a sulforhodamine B assay was performed to measure cytotoxicity. Graphs represent cell viability compared to control, 21% O2 group. Data represent at least three independent experiments (n = 3 per group). Significance was determined by two-way ANOVA with Bonferroni correction. All error bars denote mean ± SD. *p<0.05.
+
 TR-AM cytokine production in response to LPS was highly susceptible to inhibition by low doses of ETC inhibitors, rotenone and antimycin A, under normoxic conditions. This effect was greatly attenuated after exposure to hypoxia (Figure 4D). Additionally, high doses of ETC inhibitors induce cytotoxicity in normoxic TR-AMs, but hypoxic preconditioning significantly enhanced TR-AM cell viability (Figure 4E). In contrast, BMDM cytokine production was only marginally affected by ETC inhibition with the exception of observed decrease in IL-1β. Unlike TR-AMs, hypoxia did not significantly alter BMDM cytokine production in the presence of ETC inhibitors (Figure 4—figure supplement 1D). Similarly, ETC inhibition did not induce cytotoxicity in BMDMs under normoxia or hypoxia (Figure 4—figure supplement 1E).
 
-## TR-AM survival correlates with a shift to glycolytic metabolism during influenza-induced acute lung injury
+### TR-AM survival correlates with a shift to glycolytic metabolism during influenza-induced acute lung injury
 
 LPS is a well-known and potent macrophage activator that in isolation can be used to investigate essential immune functions, such as cytokine production, signal transduction, and immunometabolism. It induces a broad range of inflammatory effects in macrophages, making it a convenient tool to study overall immune fitness in vitro. However, in vivo studies have shown that LPS instillation into the murine airway leads to an immune response predominated by infiltrating neutrophils, making LPS-induced acute lung injury an unsuitable model to study macrophages (Chignard and Balloy, 2000). Compared to LPS, influenza infection is a more clinically relevant model of ARDS, and various macrophages populations play a larger role in both exacerbating and limiting lung injury in this model (Short et al., 2014). Several groups have demonstrated that TR-AMs undergo cell death in response to influenza infection and that depletion of TR-AMs is associated with worse outcomes in models of influenza-induced acute lung injury (Kim et al., 2008; Jaworska et al., 2014; Nelson et al., 2014; Schneider et al., 2014; Cardani et al., 2017). To confirm this phenomenon, we utilized PKH26 Red Fluorescent Linker dye to specifically label, track, and collect TR-AMs over the time course of infection as we and others have previously described (Maus et al., 2001; Maus et al., 2002; Woods et al., 2020). In agreement with Zhu et al., 2021, we found that there was a significant decrease in TR-AMs (PKH26+) at 3 (D3) and 6 (D6) days post infection (dpi) along with a subsequent increase in infiltrating, monocyte-derived alveolar macrophages (Mo-AMs) (Figure 5A). From these experiments, we performed RNAseq on sorted TR-AMs (PKH26+) and Mo-AMs (PKH26−) at D0, D3, and D6 (note: Mo-AMs are not present in an uninfected [D0] mouse) to identify changes in the metabolic gene signature of these two macrophage populations during influenza infection. From D0 to D6, RNAseq data revealed that TR-AMs experienced decreased expression in genes related to oxidative phosphorylation with simultaneous increased expression of genes related to glycolytic metabolism. Moreover, the metabolic gene signature of D6 TR-AMs was most similar to that of Mo-AMs at D3 and D6 (Figure 5B and C, Figure 5—source data 1, Figure 5—source data 2). Taken together, these data suggest that influenza-induced acute lung injury leads to a decrease in TR-AM number, and that the surviving TR-AMs’ gene signature shifts away from genes related to mitochondrial metabolism in favor of glycolysis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig5-v2.jpg)
 
-**Figure 5.:** (A) FACS plots of bronchoalveolar lavage fluid (BALF) samples collected from C57BL/6 mice infected with PR8 (100 PFU) at baseline (D0), 3 days (D3), and 6 days (D6) post infection. First, debris, red blood cells, and lymphocytes were eliminated based on size (forward scatter signal [FSC]) and granularity (side scatter signal [SSC]). Samples were first gated on single cells based on the SSC/FSC, and then live cells were selected (SYTOX Green−). Ly6G− used to exclude neutrophils. TR-AMs were identified as being PKH26+, and nonresident/infiltrating monocyte-derived alveolar macrophages (Mo-AMs) were PKH26−. Gene expression heatmaps representing (B) oxidative phosphorylation and (C) glycolytic gene expression. Heatmaps were generated through differentially expressed gene (DEG) analysis of UniProt oxidative phosphorylation and glycolysis gene sets for FAC TR-AMs (PKH+; n = 3/group) and Mo-AMs (PKH26−; n = 2/group) over the infection time course.Figure 5—source data 1.Figure 5—source data 2.
+**Figure 5.:** (A) FACS plots of bronchoalveolar lavage fluid (BALF) samples collected from C57BL/6 mice infected with PR8 (100 PFU) at baseline (D0), 3 days (D3), and 6 days (D6) post infection. First, debris, red blood cells, and lymphocytes were eliminated based on size (forward scatter signal [FSC]) and granularity (side scatter signal [SSC]). Samples were first gated on single cells based on the SSC/FSC, and then live cells were selected (SYTOX Green−). Ly6G− used to exclude neutrophils. TR-AMs were identified as being PKH26+, and nonresident/infiltrating monocyte-derived alveolar macrophages (Mo-AMs) were PKH26−. Gene expression heatmaps representing (B) oxidative phosphorylation and (C) glycolytic gene expression. Heatmaps were generated through differentially expressed gene (DEG) analysis of UniProt oxidative phosphorylation and glycolysis gene sets for FAC TR-AMs (PKH+; n = 3/group) and Mo-AMs (PKH26−; n = 2/group) over the infection time course.
 
-## HIF-1α stabilization increases TR-AM survival and improves outcomes in influenza-induced acute lung injury
+### HIF-1α stabilization increases TR-AM survival and improves outcomes in influenza-induced acute lung injury
 
 Given that the reduced TR-AM population on D6 presented with a glycolytic gene signature, we hypothesized that TR-AM survival was dependent upon a metabolic shift to glycolysis. In other words, a decrease in TR-AM numbers overtime was due to a large fraction of the cells failing to metabolically adapt to the conditions of the infected/hypoxic alveoli. Thus, TR-AMs that could not adapt to hypoxia and retained primarily mitochondria-driven metabolism died off while TR-AMs that shifted to glycolytic metabolism survived. To test this hypothesis, we first sought to determine whether stabilization of HIF-1α was sufficient to induce a hypoxic metabolic state in AMs without altering O2 levels. To do this, we treated cells with FG-4592, an inhibitor of HIF prolyl hydroxylases. FG-4592 has a greater potency and fewer off target effects compared to DMOG, which broadly inhibits 2-oxoglutarate-dependent oxygenases (Singh et al., 2020). TR-AMs treated with FG-4592 for 16 hr exhibited a significant dose-dependent increase in glycolysis (Figure 6A and B). FG-4592 induced robust HIF-1α stabilization leading to increased expression of HK2, LDHA, PHD1, and PHD3 (Figure 6C and D, Figure 6—source data 1, Figure 6—source data 2). Unlike hypoxia (1.5% O2), FG-4592 had very little impact on overall mitochondrial fitness in TR-AMs (Figure 6E). Basal respiration and mitochondrial ATP production were reduced, but spare mitochondrial compacity was increased, signaling a shift toward glycolytic ATP production at baseline but no loss in overall mitochondrial function (Figure 6E–G). Like hypoxia, FG-4592 treatment could also rescue ETC inhibitor-induced impairment in cytokine production (Figure 6H) and cell death in TR-AMs (Figure 6I). However, unlike TR-AMs exposed to 1.5% O2, FG-4592 did not broadly alter LPS cytokine responses, suggesting that changes in the cytokine profile under hypoxia are oxygen-dependent, but remain independent of HIF-1α stabilization (Figure 6H).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77457/elife-77457-fig6-v2.jpg)
 
-**Figure 6.:** TR-AMs were treated (16 hr) overnight ±FG-4592 (25.0 μM when not stated otherwise). (A) Glycolysis was measured as extracellular acidification rate (ECAR). (B) Quantification of glycolytic parameters. Data represent at least three independent experiments (n = 4 separate wells per group). Glycolytic parameters compared to control group (0.0 μM) and significance was determined by one-way ANOVA with Bonferroni correction. (C) Western blot analysis of nuclear extract for HIF1α expression and (D) whole cell lysate for glycolytic enzyme and prolyl hydroxylase expression. (E) Mitochondrial stress test to measure oxygen consumption rate (OCR). (F) Quantification of mitochondrial respiration parameters. Data represents at least three experiments (n = 4 separate wells per group). Mitochondrial parameters were compared to control group (0.0 μM) and significance was determined by one-way ANOVA with Bonferroni correction. (G) ECAR measurement during mitochondrial stress test. (H) TR-AMs were pretreated overnight (16 hr) with 0.0 μM (no treatment) or 25.0 μM FG-4592, then stimulated with 20 ng/ml lipopolysaccharide (LPS) in the presence or absence of mitochondrial inhibitors (20 nM antimycin A [Ant] or rotenone [Rot]) for 6 hr while maintaining pretreatment conditions. Sandwich ELISA was used to measure secreted cytokine (TNFα, IL-6, KC, and CCL-2). Data represents at least three independent experiments; n = 3 per group. (I) TR-AMs were treated with FG-4592 for 6 hr, then treated with mitochondrial inhibitors (100 nM Ant or 500 nM Rot) overnight and a sulforhodamine B assay was performed to measure cytotoxicity. Bar graphs represent cytotoxicity compared to control, 0.0 µM group. Data represents at least three independent experiments (n = 3 per group). Significance was determined by two-way ANOVA with Bonferroni correction. All error bars denote mean ± SD. *p<0.05.Figure 6—source data 1.Uncropped Western blot images of HIF-1α in TR-AMs treated with FG-4592 or control vehicle.Figure 6—source data 2.Uncropped Western blot images of HK2, LDHA, PHD2, PHD3, and α-tubulin in TR-AMs treated with FG-4592 or control vehicle.
+**Figure 6.:** TR-AMs were treated (16 hr) overnight ±FG-4592 (25.0 μM when not stated otherwise). (A) Glycolysis was measured as extracellular acidification rate (ECAR). (B) Quantification of glycolytic parameters. Data represent at least three independent experiments (n = 4 separate wells per group). Glycolytic parameters compared to control group (0.0 μM) and significance was determined by one-way ANOVA with Bonferroni correction. (C) Western blot analysis of nuclear extract for HIF1α expression and (D) whole cell lysate for glycolytic enzyme and prolyl hydroxylase expression. (E) Mitochondrial stress test to measure oxygen consumption rate (OCR). (F) Quantification of mitochondrial respiration parameters. Data represents at least three experiments (n = 4 separate wells per group). Mitochondrial parameters were compared to control group (0.0 μM) and significance was determined by one-way ANOVA with Bonferroni correction. (G) ECAR measurement during mitochondrial stress test. (H) TR-AMs were pretreated overnight (16 hr) with 0.0 μM (no treatment) or 25.0 μM FG-4592, then stimulated with 20 ng/ml lipopolysaccharide (LPS) in the presence or absence of mitochondrial inhibitors (20 nM antimycin A [Ant] or rotenone [Rot]) for 6 hr while maintaining pretreatment conditions. Sandwich ELISA was used to measure secreted cytokine (TNFα, IL-6, KC, and CCL-2). Data represents at least three independent experiments; n = 3 per group. (I) TR-AMs were treated with FG-4592 for 6 hr, then treated with mitochondrial inhibitors (100 nM Ant or 500 nM Rot) overnight and a sulforhodamine B assay was performed to measure cytotoxicity. Bar graphs represent cytotoxicity compared to control, 0.0 µM group. Data represents at least three independent experiments (n = 3 per group). Significance was determined by two-way ANOVA with Bonferroni correction. All error bars denote mean ± SD. *p<0.05.
 
 We next treated mice intratracheally with one dose of FG-4592 at the time of infection to evaluate the effect of early glycolytic adaptation on TR-AM survival and influenza-induced acute lung injury. Strikingly, FG-4592 treatment resulted in increased TR-AM (PKH26+ cells) survival at 6 dpi compared to infected controls (Figure 7A). The increase in TR-AM survival in FG-4592-treated mice was associated with reduced alveolar permeability (Figure 7B). FG-4592 treatment also led to a reduction in pro-inflammatory cytokine levels within the alveolar space at 6 dpi (Figure 7C). Most importantly, FG-4592-treated mice experienced reduced weight loss and improved survival compared to infected controls (Figure 7D and E). Taken together, these data suggest that intratracheal FG-4592 treatment can increase TR-AM survival and improve outcomes in influenza-infected mice.
 
@@ -108,62 +140,443 @@ In conclusion, under normoxic conditions, TR-AMs depend on mitochondrial respira
 
 ## Materials and methods
 
-## Primary culture of macrophages
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 000664</td>
+      <td>6–8 weeks</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (influenza A virus)</td>
+      <td>A/PR8/34 (H1N1)</td>
+      <td>BEI Resources, NIAID, NIH</td>
+      <td>NR-348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HK2 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# C64G5</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LDHA (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2012S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PHD2/EGLN1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4835</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- PHD3/EGLN3 (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NB100-303</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-1β (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12242</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lamin B1 (rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>Cat# 12987-1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIF-1α (rabbit polyclonal)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 10006421</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-Tubulin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# T6074</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked Antibody (goat polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 7074</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked Antibody (horse polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#7076</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD16/CD32 (FcBlock)(rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Clone 2.4G2; Cat# 553141</td>
+      <td>Flow cytometry(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-mouse Ly-6G (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone 1A8; Cat# 553141</td>
+      <td>Flow cytometry(1:250)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FG-4592 (roxadustat)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 15294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant mouse M-CSF</td>
+      <td>BioLegend</td>
+      <td>576406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin</td>
+      <td>Fisher Scientific</td>
+      <td>49-545-510MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>MilliporeSigma</td>
+      <td>C2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antimycin A</td>
+      <td>MilliporeSigma</td>
+      <td>A8674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rotenone</td>
+      <td>MilliporeSigma</td>
+      <td>R8875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharide</td>
+      <td>Santa Cruz</td>
+      <td>sc-3535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-6 DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>DY406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse TNF-α DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>DY410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse KC DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>DY453</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse CCL2 DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>DY479</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-1β alpha DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>DY401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lactate Assay Kit</td>
+      <td>MilliporeSigma</td>
+      <td>MAK064-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Macrophage Nucleofector Kit</td>
+      <td>Lonza</td>
+      <td>VPA-1009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Seahorse XFe24 FluxPak</td>
+      <td>Agilent</td>
+      <td>102340-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NE-PER Nuclear and Cytoplasmic Extraction Reagents</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 78833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PKH26 Cell Linker Dye for Phagocytic Cell Labeling</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# PKH26PCL-1KT</td>
+      <td>Dye to distinguish between TR-AMs and Mo-AMs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYTOX Green Nucleic Acid Stain</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# S7020</td>
+      <td>Stain to distinguish between live and dead cells.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpl19_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCGACGAAAGGGTATGCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpl19_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACCTTCTTTTTCCCGCAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTCCATCCAGTTGCCTTCTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTCCTATTTCCACGATTTCCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tnfa_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGGGATTATGGCTCAGGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tnfa_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCACAGTCCAGGTCACTGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il1b_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCACCTTTTGACAGTGATGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il1b_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACAGCCCAGGTCAAAGGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kc_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGACCATGGCTGGGATTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kc_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGGTGGCTATGACTTCGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ccl2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGTAGTTTTTGTCACCAAGCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ccl2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGCTGAAGACCTTAGCCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Non-targeting (control) siRNA</td>
+      <td>Dharmacon</td>
+      <td>D-001810-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hif1a #1; J-040638-06</td>
+      <td>Dharmacon</td>
+      <td>J-040638-06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hif1a #2; J-040638-07</td>
+      <td>Dharmacon</td>
+      <td>J-040638-07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Institute</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>PMID:23104886</td>
+      <td>RRID:SCR_015899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Bioconductor</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Reactome Cytoscape Plugin</td>
+      <td>PMID:14597658</td>
+      <td>RRID:SCR_003032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Primary culture of macrophages
 
 All animal experiments and procedures were performed according to the protocols (ACUP7236 and ACUP72484) approved by the Institutional Animal Care and Use Committee at the University of Chicago. 6–8-week-old C57BL/6 mice were humanely euthanized, and their TR-AMs were isolated via standard bronchoalveolar lavage (intratracheal instillation) using PBS + 0.5 mM EDTA. Following isolation, TR-AMs were counted, plated in RPMI 1640 (Thermo Fisher, Cat# 11875119) supplemented with 10% FBS (Gemini, Cat# 100-106) and 1% penicillin-streptomycin (Gemini, Cat# 400-109), and allowed to adhere to tissue culture plates for 1 hr prior to experimentation. BMDMs were generated by isolating bone marrow cells from the femur and tibia bones of 6–8-week-old C57BL/6 mice. Bone marrow cells were differentiated into BMDMs using 40 ng/ml recombinant M-CSF (BioLegend, Cat# 576406) in the same media formulation as TR-AMs. On day 7, BMDMs were replated and allowed to adhere to tissue culture plates for 2 hr prior to experimentation. After adherence, cells were washed, fresh media added, and placed under experimental conditions. For inflammatory stimulation, LPS was used at a concentration of 20 ng/ml. For hypoxia experiments, macrophage cultures were placed in an airtight incubator system that utilizes N2 displacement of O2 to achieve hypoxic conditions (Coy Hypoxic Chamber- O2 Control InVitro Glove Box). The sealed system ensures minimal fluctuations in O2 levels in experiments when treating cultures and collecting samples under hypoxic conditions.
 
-## Bioenergetic measurements
+### Bioenergetic measurements
 
 Glycolytic and mitochondrial respiration rates were measured using the XFe24 Extracellular Flux Analyzer (Agilent, Santa Clara, MA). BMDMs and TR-AMs were seeded at 4.0 × 104/well onto Seahorse XF24 Cell Culture Microplates. Cells were equilibrated with XF Base media (Agilent, Cat# 103334-100) at 37°C for 30 min in the absence of CO2. Glycolytic rate was assessed using the manufacturer’s protocol for the Seahorse XF Glycolysis Stress Test followed by sequential injections with glucose (10 mM), oligomycin (1.0 μM), and 2-DG (100 mM). Mitochondrial respiration rate was measured using the Seahorse XF Mito Stress Test according to the manufacturer’s protocol followed by sequential injections with oligomycin (1.0 μM), FCCP (1.0 μM for BMDMs and 4.0 μM for TR-AMs), and rotenone/antimycin A (1.0 μM). Assessment of real-time metabolic responses to LPS was performed using the protocol detailed in an application note provided by Agilent (Kam Y and Dranka, 2017). In brief, following plating, cells were equilibrated in XF base media supplemented with 10 mM glucose, 2 mM l-glutamine, 1 mM sodium pyruvate (Sigma, Cat# 11360070) and 5 mM HEPES (Sigma, Cat# 15630080), pH 7.4, and incubated at 37°C without CO2 for 30 min prior to XF assay. Baseline metabolic rates were measured followed by direct injection of LPS (final concentration: 20 ng/ml). Bioenergetic rates were subsequently measured every 3 min for approximately 5 hr in total.
 
 Due to the limitations of the XFe24 Extracellular Flux Analyzer, all bioenergetic analyses on hypoxic samples were performed in the following manner. Cells were treated under hypoxic conditions (most commonly for 16 hr), then bioenergetic analysis was performed under normoxic conditions. Moreover, it is impossible to evaluate varying levels of hypoxia on a single Seahorse microplate. Thus, energy curves comparing varying levels of O2 (i.e., Figure 1A) were performed individually and then subsequently represented on the same graph for comparison. All individual experiments were repeated a minimum of three times to ensure accurate representation and statistical comparison.
 
-## Cell lysis, subcellular fractionalization, and immunoblotting
+### Cell lysis, subcellular fractionalization, and immunoblotting
 
 Whole-cell lysates were prepared by scraping cells into lysis buffer containing 25 mM Tris HCl (pH 7.6), 150 mM NaCl, 1% NP-40, 1% sodium deoxycholate, 0.1% SDS, 0.1% Benzonase, and Halt Protease Inhibitor Cocktail (Thermo Fisher, Cat# 1861284 and 78430). Samples were centrifuged at 16,000 × g at 4°C for 5 min to pellet cellular debris. Subcellular fractionalization and lysate preparation were carried out using the NE-PER Nuclear and Cytoplasmic Extraction Reagents (Thermo Fisher, Cat# 78833). Lysate protein concentration was determined using the Pierce BCA Protein Assay Kit (Thermo Fisher, Cat# 23225). Equal concentrations of samples (15 μg for whole-cell lysates and 5 μg for nuclear fractions) were resolved on Criterion gels (Bio-Rad, Cat# 5671093 and 5671094) and transferred to nitrocellulose (Bio-Rad, Cat# 1620167). Primary antibodies used were rabbit anti-HK2 (Cell Signaling, Cat# C64G5, 1:1000), rabbit anti-LDHA (Cell Signaling, Cat# 2012, 1:1000), rabbit anti-PHD2/Egln1 (Cell Signaling, Cat# 4835, 1:1000), rabbit anti-Egln3/PHD3 (Novus Biologicals, Cat# NB100-303, 1:1000), mouse anti-IL1β (Cell Signaling, Cat# 12242 1:1000), rabbit anti-Lamin B1 (ProteinTech, Cat# 12987-1-AP, 1:1000), rabbit anti-HIF-1α (Cayman Chemical, Cat# 10006421, 1:500), and mouse anti-tubulin (Sigma, Cat# T6074, 1:20,000). Secondary antibodies used were anti-rabbit IgG HRP-linked antibody (Cell Signaling, Cat# 7074, 1:2500) and goat anti-mouse IgG HRP-linked antibody (Cell Signaling, Cat# 7076, 1:2500). Protein expression was visualized using Immobilon ECL Ultra Western HRP Substrate (MilliporeSigma, Cat# WBULS0500) in combination with the Bio-Rad ChemiDoc Touch Imaging system. All immunoblot data were repeated in at least three independent experiments.
 
-## Quantitative PCR
+### Quantitative PCR
 
 RNA was isolated from cells using the Direct-zol RNA MiniPrep kit (Zymo Research, Cat# R2052) and reverse transcribed using iScript Reverse Transcription Supermix (Bio-Rad, Cat# 1708841). Quantitative mRNA expression was determined by real-time qRT-PCR using iTaq Universal SYBR Green Supermix (Bio-Rad, Cat# 172-5121). rlp19 served as a housekeeping gene, and gene expression was quantified using the ΔΔct method to determine relative fold change (FC). The following mouse-specific primer sequences were used: Rlp19 (5′-CCGACGAAAGGGTATGCTCA-3′, 5′-GACCTTCTTTTTCCCGCAGC-3′), Il6 (5′-TTCCATCCAGTTGCCTTCTTGG-3′, 5′-TTCCTATTTCCACGATTTCCCAG-3′), Tnfa (5′-AGGGGATTATGGCTCAGGGT-3′, 5′-CCACAGTCCAGGTCACTGTC-3′), Il1b (5′-GCCACCTTTTGACAGTGATGAG, 5′-GACAGCCCAGGTCAAAGGTT-3′), Kc (5′-AGACCATGGCTGGGATTCAC-3′, 5′-ATGGTGGCTATGACTTCGGT-3′), and Ccl2 (5′-CTGTAGTTTTTGTCACCAAGCTCA-3′, 5′-GTGCTGAAGACCTTAGCCCA-3′).
 
-## RNA-sequencing
+### RNA-sequencing
 
 RNA was isolated and submitted to the University of Chicago Genomics Core Facility for sequencing with the Illumina NovaSEQ6000 sequencer (100 bp paired-end). Sequencing read (FASTQ) files were generated and assessed for per base sequence quality using FastQC. Reads were mapped to the mouse genome (GRCm38.p6, GENCODE) using Spliced Transcripts Alignment to a Reference (STAR) software, and the resulting gene transcripts were quantified using featureCounts.
 
 Gene counts were then imported into R for differential expression analysis using the Bioconductor package DESeq2. Gene counts were filtered to remove low-expressing genes at a threshold of 2 counts per million. Differential expression was calculated between normoxia and hypoxia groups for both AMs and BMDMs. Differential gene expression was considered significant for genes with a false discovery rate (FDR)-adjusted p-value <0.05 and FC > 2. Reactome enrichment hit pathways and the linked gene lists from significant DEGs were identified by using Reactome Cytoscape Plugin (Shannon et al., 2003; Wu et al., 2010). Oxidative phosphorylation and glycolysis gene sets were extracted from UniProtKB, then their associated DEG read counts (TPM) were normalized using gensvm R package gensvm.maxabs.scale function and center scaled for heatmap visualization. All heatmaps were generated with Pretty heatmaps R package pheatmap function.
 
-## Cytokine analysis
+### Cytokine analysis
 
 Secreted TNFα, IL-6, KC, CCl2, and IL-1β levels were evaluated in macrophage media using a standard sandwich ELISA (R&D Systems DuoSet ELISA Development System, Cat# DY410, DY406, DY453, DY479, and DY401). For IL-1β sample collection, 5 mM ATP was added to TR-AM cultures for 30 min following 6 hr LPS treatment to activate caspase 1, ensuring proIL-1β cleavage and IL-1β release. Rotenone and antimycin A concentrations were 20 nM for TR-AMs and 1 μM for BMDMs when used in ELISA experiments.
 
-## Metabolomics
+### Metabolomics
 
 TR-AMs were plated at 2.5 × 106 on 60 mm plates for metabolite extraction. Following treatment, cells were washed twice with a 5% mannitol solution and metabolites were extracted using 400 μl 100% methanol. 275 μl of aqueous internal standard solution was mixed in with the methanol and the extract solution was transferred to a microcentrifuge. The extracts underwent centrifugation at 2300 × g at 4°C for 5 min to precipitate insoluble material and the resulting supernatant was transferred to centrifugal filter units (Human Metabolome Technologies [HMT], Boston, MA). Filtering of supernatant occurred at 9100 × g at 4°C for 2 hr. The filtrate was sent to HMT and analyzed using capillary electrophoresis–mass spectrometry.
 
-## Sulforhodamine B (SRB) colorimetric assay
+### Sulforhodamine B (SRB) colorimetric assay
 
 In vitro cytotoxicity was measured using the SRB assay (Vichai and Kirtikara, 2006). Following treatment, cells were fixed in 10% TCA and then stained with SRB dye. Cellular protein-dye complexes were solubilized in 10 mM Tris base and the samples were read at OD 510 using a microplate reader. Data was normalized to the untreated, normoxia groups, which were representative of no cellular damage. ETC inhibitor concentrations in BMDMs were as follows: 1 μM rotenone and 1 μM antimycin A. ETC inhibitor concentrations in TR-AMs were as follows: 500 nM rotenone and 100 nM antimycin A.
 
-## SiRNA knockdown
+### SiRNA knockdown
 
 SiRNA knockdown was performed using the Amaxa Mouse Macrophage Nucleofector Kit (Lonzo, Cat# VPA-1009). 1.0 × 106 cells/reaction were resuspended in transfection solution with siRNA of interest (Dharmacon, Non-Targeting Control siRNA: D-001810-01; mouse Hif1a siRNA #1; J-040638-06; mouse Hif1a siRNA #2; J-040638-07). The cell solution was then subjected to electroporation (Lonza Nucleofector 2b Electroporator: Setting Y-001). Cells were plated and allowed to rest for 6 hr, then subjected to normoxia or hypoxia for 16 hr.
 
-## Lactate assay
+### Lactate assay
 
 Secreted lactate was measured using the lactate colorimetric assay kit (Sigma, Cat# MAK064-1KT). Cells cultured in serum-free DMEM media (RPMI media and serum interfere with assay) and exposed to normoxia or 1.5% O2. Samples were collected at 16 hr post treatment and manufacturer’s protocol was followed to measure lactate.
 
-## Murine influenza infection protocol and survival studies
+### Murine influenza infection protocol and survival studies
 
 C57BL/6 mice (6–8 weeks old) were anesthetized and challenged intratracheally (IT) with mouse-adapted influenza (A/PR8/34; 200 plaque-forming units [PFU]). A single FG-4592 (50 µM) treatment was administered (IT) simultaneously with IAV. Body weight and survival was monitored every 24 hr for 20 days (10 mice/group). Body weight is represented as percent deviation from baseline at time of infection. ‘Influenza A virus, A/PR8/34 (H1N1), NR-348’ was obtained through BEI Resources, NIAID, NIH.
 
-## BALF analysis
+### BALF analysis
 
 C57BL/6 mice were euthanized and a single 0.5 ml saline wash was instilled into the lungs via the trachea and subsequently collected. BALF protein concentration was determined using the Pierce BCA Protein Assay Kit (Thermo Fisher, Cat# 23225). BALF TNFα, IL-6, and IL-1β were measured using sandwich ELISA.
 
-## Flow cytometry
+### Flow cytometry
 
 C57BL/6 mice (6–8 weeks old) were anesthetized with isoflurane and underwent retro-orbital injection with 100 μl PKH26 Red Fluorescent Cell Linker Dye for Phagocytic Cell Labeling (Cat# PKH26PCL-1KT; MilliporeSigma) 1 day before lung challenge. The mice were then challenged intratracheally with IAV 100 (PFU). FG-4592 (50 μM) was administered intratracheally at the same time of PR8 infection. After challenge, the mice were euthanized and immune cells were collected via BAL. BAL cells were first treated with Fc Block (clone 2.4G2, Cat# 553141; BD Biosciences) and stained with fluorochrome-conjugated antibodies. The antibodies used were Alexa Fluor 700 anti-mouse Ly-6G (clone 1A8, Cat# 127621, 1:250; BioLegend). Immediately before sorting, cells were resuspended in sorting buffer (0.2% BSA in PBS) containing 5 nM SYTOX Green Nucleic Acid Stain (Cat# S7020; Thermo Fisher) to distinguish between live and dead cells. Cell sorting was performed on a FACS Aria II instrument, and data were acquired using BDFACS Diva software and analyzed with FCS Express 7 software. First, debris, red blood cells, and lymphocytes were eliminated based on size (FSC) and granularity (SSC). Next gates selected for live cells (FITC−) and eliminated neutrophils (Ly6G+). Based on previous validation experiments, the remaining cells are of macrophage lineage with TR-AMs being PKH26+ (SiglecF+,F4/80+,Cd11cHi, Ly6cLo) and Mo-AMs being PKH26− (F4/80+,Cd11cLo, Ly6cHi). PKH26+ and PKH26− cells were sorted into RNA lysis buffer and samples were prepared for RNAseq.
 
-## Statistics
+### Statistics
 
 The data were analyzed in Prism 9 (GraphPad Software Inc). All data are shown as mean  ± standard deviation (SD). Significance was determined by unpaired, two-tailed Student’s t-test for comparisons between two samples or by ANOVA using Bonferroni correction for multiple comparisons. p-Values <0.05 were considered statistically significant.

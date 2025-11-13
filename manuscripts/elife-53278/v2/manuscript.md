@@ -55,7 +55,7 @@
 
 ## Abstract
 
-Damaging GATA6 variants cause cardiac outflow tract defects, sometimes with pancreatic and diaphragmic malformations. To define molecular mechanisms for these diverse developmental defects, we studied transcriptional and epigenetic responses to GATA6 loss of function (LoF) and missense variants during cardiomyocyte differentiation of isogenic human induced pluripotent stem cells. We show that GATA6 is a pioneer factor in cardiac development, regulating SMYD1 that activates HAND2, and KDR that with HAND2 orchestrates outflow tract formation. LoF variants perturbed cardiac genes and also endoderm lineage genes that direct PDX1 expression and pancreatic development. Remarkably, an exon 4 GATA6 missense variant, highly associated with extra-cardiac malformations, caused ectopic pioneer activities, profoundly diminishing GATA4 , FOXA1/2, and PDX1 expression and increasing normal retinoic acid signaling that promotes diaphragm development. These aberrant epigenetic and transcriptional signatures illuminate the molecular mechanisms for cardiovascular malformations, pancreas and diaphragm dysgenesis that arise in patients with distinct GATA6 variants.
+Damaging GATA6 variants cause cardiac outflow tract defects, sometimes with pancreatic and diaphragmic malformations. To define molecular mechanisms for these diverse developmental defects, we studied transcriptional and epigenetic responses to GATA6 loss of function (LoF) and missense variants during cardiomyocyte differentiation of isogenic human induced pluripotent stem cells. We show that GATA6 is a pioneer factor in cardiac development, regulating SMYD1 that activates HAND2, and KDR that with HAND2 orchestrates outflow tract formation. LoF variants perturbed cardiac genes and also endoderm lineage genes that direct PDX1 expression and pancreatic development. Remarkably, an exon 4 GATA6 missense variant, highly associated with extra-cardiac malformations, caused ectopic pioneer activities, profoundly diminishing GATA4, FOXA1/2, and PDX1 expression and increasing normal retinoic acid signaling that promotes diaphragm development. These aberrant epigenetic and transcriptional signatures illuminate the molecular mechanisms for cardiovascular malformations, pancreas and diaphragm dysgenesis that arise in patients with distinct GATA6 variants.
 
 ## Introduction
 
@@ -71,31 +71,55 @@ We employed this approach to study human de novo GATA6 variants, identified by w
 
 ## Results
 
-## Identification of CHD patients with GATA6 LoF and missense variants
+### Identification of CHD patients with GATA6 LoF and missense variants
 
 Among >4000 CHD patients enrolled and studied by WES through National Heart, Lung, and Blood Institute’s Pediatric Cardiac Genomics Consortium (PCGC) (Homsy et al., 2015; Jin et al., 2017), we identified nine heterozygous de novo variants: four LoF (LoF) and five damaging missense variants in GATA6 (Figure 1A). The congenital anomalies in these patients were consistent with previously recognized roles for GATA6 in developing the cardiac outflow tract, arterial-ventricular valves, and posterior brachial arches that form aorta and pulmonary vessels (Gharibeh et al., 2018; Laforest and Nemer, 2011; Losa et al., 2017). Among PCGC CHD patients and 61 previously reported CHD patients with pathogenic GATA6 variants (Figure 1B) there were a preponderance of outflow tract malformations, including persistent truncus arteriosus, double-outlet right ventricle, tetralogy of Fallot, as well as aortic and pulmonary valve and septation defects (Kelly, 2012). Some but not all of these patients also had extra-cardiac phenotypes including pancreatic agenesis, congenital diaphragmatic hernia, and neurodevelopmental deficits.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig1-v2.jpg)
 
-**Figure 1.:** GATA6 variants.A) Schematic of GATA6 gene and locations of PCGC GATA6 variants (LoF-purple, missense-orange). (B) Previously described (see Supplementary file 1) GATA6 variants (R456 and N466 variants highlighted in red), and GATA6 protein domains. TAD: Topologically associating domain, ZF: zinc finger, NLS: nuclear localization signal. TGA: Transposition of the Great Arteries, ToF: Tetralogy of Fallot, DORV: Double-Outlet Right Ventricle, DOLV: Double-Outlet Left Ventricle, DXC: Dextrocardia, VSD: Ventricular Septal Defect, HLV: Hypoplastic Left Ventricle, PA: Pulmonary Atresia, ASD: Atrial Septal Defect, PTA: Persistent Truncus Arteriosus, SPS: Supravalvular Pulmonary Stenosis, HLPA: Hypoplastic Left Pulmonary Artery, PS: Pulmonary Stenosis, HPA: Hypoplastic Pulmonary Artery, PANC: Pancreatic Agenesis (C) Model of GATA6 DNA-binding domain bound to major groove of DNA indicating the location of amino acid residue 456. Left panel: GATA6 residues R456 and N466 normally interact with each other via hydrogen bonding (dashed lines) and with target G base and second A base in the GATA motif via hydrogen bonding, respectively (dashed lines). Right panel: Replacing the arginine (R) residue at position 456 with a glycine (G) residue alters normal molecular interactions by disrupting the hydrogen bonds.
+**Figure 1.:** A) Schematic of GATA6 gene and locations of PCGC GATA6 variants (LoF-purple, missense-orange). (B) Previously described (see Supplementary file 1) GATA6 variants (R456 and N466 variants highlighted in red), and GATA6 protein domains. TAD: Topologically associating domain, ZF: zinc finger, NLS: nuclear localization signal. TGA: Transposition of the Great Arteries, ToF: Tetralogy of Fallot, DORV: Double-Outlet Right Ventricle, DOLV: Double-Outlet Left Ventricle, DXC: Dextrocardia, VSD: Ventricular Septal Defect, HLV: Hypoplastic Left Ventricle, PA: Pulmonary Atresia, ASD: Atrial Septal Defect, PTA: Persistent Truncus Arteriosus, SPS: Supravalvular Pulmonary Stenosis, HLPA: Hypoplastic Left Pulmonary Artery, PS: Pulmonary Stenosis, HPA: Hypoplastic Pulmonary Artery, PANC: Pancreatic Agenesis (C) Model of GATA6 DNA-binding domain bound to major groove of DNA indicating the location of amino acid residue 456. Left panel: GATA6 residues R456 and N466 normally interact with each other via hydrogen bonding (dashed lines) and with target G base and second A base in the GATA motif via hydrogen bonding, respectively (dashed lines). Right panel: Replacing the arginine (R) residue at position 456 with a glycine (G) residue alters normal molecular interactions by disrupting the hydrogen bonds.
 
 We considered whether the distribution of these 70 damaging GATA6 variants (61 published, 9 PCGC) across the 595 encoded GATA6 amino acids correlated with clinical phenotypes (Figure 1; Supplementary file 1A, B). All variants (43 missense, 27 LoF, including eight recurrent variants) caused CHD. Extra-cardiac phenotypes occurred in 29/70 (41%) patients, and more often with LoF (18/27) than missense (11/43) variants (p<0.001). Neurocognitive dysfunction occurred in 13 patients (18.5%). Pancreatic agenesis/hypoplasia or congenital diaphragmatic hernia occurred in 20/70 patients (28.5%) and more frequently with GATA6 LoF (14/27) than missense (9/43) variants (p=0.001).
 
 Among 43 GATA6 missense variants, 11 variants altered residues in the DNA-binding zinc finger (ZF) domain encoded by exon 4 (amino acids 435–477), significantly more than expected by chance (p=0.0004). Nine of these 11 patients with exon four missense variants had pancreatic agenesis or congenital diaphragmatic hernia, but none of 32 patients with missense variants located elsewhere (p=1.1e-6). Within exon 4, recurrent missense mutations altered the basic arginine residue 456. Computational modeling of this domain (PyMOL software) positioned residue 456 alongside a polar residue (asparagine 466) in close proximity to DNA (Bates et al., 2008; Figure 1C). Substitution of a non-polar glycine at residue 456 (R456G) is predicted to disrupt these interactions, and potentially alter GATA6 binding to DNA.
 
-## Generation of GATA6 LoF and GATA6R456G/R456G hiPSCs using CRISPR/Cas9
+### Generation of GATA6 LoF and GATA6R456G/R456G hiPSCs using CRISPR/Cas9
 
 We created GATA6 LoF hiPSCs using two independent guide RNAs (gRNAs) targeting exon 2 (Figure 2—figure supplement 1A) that were transfected with Cas9 endonuclease into an early passage healthy hiPSC line PGP1 (Lee et al., 2009). Targeted hiPSCs were subcloned and GATA6 variants were confirmed by next-generation and Sanger sequencing of PCR-amplified fragments (METHODS). Four independent mutant hiPSC lines were obtained: two carry a heterozygous 1 bp insertion (GATA6+/-, chr18:19,752,124–19,752,124, A:TA) and two have a homozygous 1 bp deletion (GATA6-/-, chr18:19,752,123–19,752,124, TA:T). Using similar strategies, we transfected a gRNA targeting exon four with a single-stranded DNA oligonucleotide to serve as a template for homology-directed repair and generated two hiPSC lines with homozygous missense variant R456G (GATA6R456G/R456G; Figure 2—figure supplement 1B). No lines with a heterozygous R456G variant were obtained. In parallel we produced GATA6+/-, GATA6-/-, and GATA6R456G/R456G variants in a PGP1 hiPSC line that carried expressed green fluorescent protein (GFP) fused to endogenous cardiac troponin T alleles (TNNT2-GFP; Figure 2—figure supplement 1C).
 
-## Differentiation of GATA6 mutant hiPSCs into hiPSC-CMs
+### Differentiation of GATA6 mutant hiPSCs into hiPSC-CMs
 
 Wildtype (WT), GATA6+/-, GATA6-/-, and GATA6R456G/R456G hiPSCs were processed for differentiation into cardiomyocytes (hiPSC-CMs) by modulation of the Wnt signaling pathway and subsequent metabolic selection via glucose deprivation (Sharma et al., 2018b). This protocol yields hiPSC-CMs that express first and second heart field genes (Zhang et al., 2019). As previous single-cell RNA- sequencing (RNA-Seq) of cardiomyocytes isolated from developing mouse hearts (DeLaughter et al., 2016) identified peak Gata6 expression in cardiac progenitors and early cardiomyocytes, we studied hiPSC-CMs at differentiation days 4 and 8, which approximate these in vivo developmental stages. GATA6 protein expression and nuclear localization were reduced in GATA6+/- compared to isogenic WT lines and absent in GATA6-/- lines (Figure 2—figure supplement 1D,E). GATA6+/- hiPSCs, unlike WT hiPSCs, exhibited mono-allelic GATA6 expression, suggesting nonsense-mediated decay of RNAs transcribed from targeted alleles.
 
 We assessed sarcomere production as a measure of cardiomyocyte differentiation in the TNNT2-GFP lines. GATA6+/- hiPSC-CMs had weaker fluorescent signal than WT cells, while GATA6-/- lines expressed no fluorescence at baseline or during the differentiation protocol (Figure 2A,B). Consistent with these data, at differentiation day eight when contracting sarcomeres were present in WT cells, fewer independent differentiation rounds of GATA6+/- hiPSC-CMs contained beating sarcomeres and no GATA6-/- cells showed sarcomeres or spontaneous beating (Figure 2C). Analogous studies of GATA6R456G/R456G hiPSC-CMs (Figure 2D–F) showed a fluorescence signal comparable to that of GATA6+/- hiPSC-CMs and spontaneous beating cells in approximately ~60% of differentiation rounds.
 
-## Transcriptional analysis of GATA6 LoF hiPSC-CMs
+![Figure 2.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig2-v2.jpg)
+
+**Figure 2.:** (A) GATA6 variants in a TNNT2-GFP reporter line showed reduced (GATA6+/-) or absent (GATA6-/-) GFP-tagged sarcomeres in comparison to WT cells. (B) Distribution of dissociated GFP-TNNT2-GATA6 mutant cells assessed using the Countess system with a GFP filter cube (METHODS). (C) Number of GATA6 LoF mutant differentiation cultures (n = 25 per genotype) with beating hiPSC-CMs. (D) The GATA6R456G/R456G variant has reduced expression of GFP-tagged sarcomeres. (E) Fluorescence distribution of differentiated GFP-TNNT2 GATA6R456G/R456G cells assessed using the Countess system with a GFP filter cube (see Materials and methods). (F) Number of GFP-TNNT2 GATA6R456G/R456G differentiation cultures (n = 25) with beating day eight hiPSC-CMs. All lines were studied at differentiation day 8. Significance was assessed using Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sanger and next-generation sequencing (depicted by Integrated Genomics Viewer; IGV) analysis of GATA6+/- and GATA6-/- lines. GATA6+/- lines carry a 1 bp T insertion on one allele. GATA6-/- lines carry a 1 bp A deletion on both alleles. (B) GATA6R456G/R456G lines carry a silent C:A (PAM site mutation) and C:G missense, leading to the R456G missense mutation. (C) Pluripotency evaluation of hiPSC lines. Undifferentiated hiPSC cells were subjected to immunofluorescence for pluripotency markers OCT4 and TRA-1–81. Top row: CRISPR genome-edited cells generated in the PGP1 background. Bottom row: CRISPR genome-edited cells generated in the TNNT2-GFP background. (D) Immunofluorescence of day 4 confirms absence of GATA6 protein in GATA6-/- cells. (E) Western blots of extracts from GATA6+/- and GATA6-/- lines probed with TNNT2 and GATA6 antibodies. Vinculin levels provide a loading control for each blot. N = 3 independent experiments conducted for each western blot. (F) Gene expression analysis in day 8 GATA6+/- and GATA6-/- lines reveals differential expression of cardiac-specific genes. Using the pheatmap and Venn Diagram R scripts, these illustrations were generated for day 8.
+
+### Transcriptional analysis of GATA6 LoF hiPSC-CMs
 
 We assessed transcriptional responses to altered GATA6 levels throughout hiPSC-CM differentiation by bulk RNA-Seq analyses of cultures at days 0, 4, 8, 12, and 30 (Figure 3, Figure 2—figure supplement 1F, Figure 3—figure supplement 1, Supplementary file 2), and by single-cell RNA-Seq on days 4 and 8 (Figure 4) that precedes metabolic selection and enriches cultures for cardiomyocytes. All cells were differentiated, processed, and harvested in parallel. RNA-Seq data was aligned and processed to limit potential batch effects, and clustered using methods implemented in DESEQ2 (bulk) or Seurat (single cell) (METHODS). We observed consistency between bulk and single-cell expression data. In addition, principal component analyses (PCA) (Figure 3A, Supplementary file 3) of independent, genotype-identical lines demonstrated close clustering of RNA expression, indicating that GATA6 genotype and differentiation stage largely accounted for differences in gene expression.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig3-v2.jpg)
+
+**Figure 3.:** A) Gene expression principal component analysis (PCA) of day 0–30 WT (GATA6+/+), GATA6+/-, GATA6-/-, and GATA6R456G/R456G hiPSC-CMs. RNA-Seq samples were harvested in duplicate for all time points. (B) Venn Diagrams (left) and heat map (right) of day 4 GATA6+/- and GATA6-/- cells. In the heatmap, red indicates upregulated genes whereas blue represents downregulated genes. Samples are in duplicate. Selected second heart field genes are shown. (C) Expression data in normalized counts for second heart field-related genes (top row), cardiac developmental transcription factors (middle row), sarcomere, and other selected genes (bottom row) during differentiation of GATA6 mutant hiPSC-CMs. Data represented as mean ± SD. Note that SMYD1 and HAND2 graphs are plotted with logarithmic scale. (D) Gene expression scatterplot illustrating downregulation of expression of HAND2 upstream and downstream gene network in day 4 GATA6+/- and GATA6-/- cells. X-axis, log2 fold-change of gene expression in GATA6-/- cells relative to WT. Y-axis, log2-fold-change of gene expression in GATA6+/- cells relative to WT. Canonical cardiac development and the second heart field genes are bolded.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Expression of epithelial-to-mesenchymal transition markers in GATA6 mutant hiPSC-CMs during differentiation. (B) Expression of neurodevelopmental and neural crest-related genes in GATA6 mutant hiPSC-CMs during differentiation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig4-v2.jpg)
+
+**Figure 4.:** (A) tSNE of single-cell RNA-Seq of day 4 GATA6 mutant hiPSC-CMs identified four clusters. Labels reflect marker gene expression: SC, Stem cell; CPC, cardiac progenitor cells; E-CPC, cardiac progenitors enriched with endoderm markers; ECM, endodermal-like cells enriched for extracellular matrix proteins. (B) Examples of marker gene expression in clustered hiPSC-derived cells. CPC cells express mesodermal factors (MESP1, EOMES) as well as cardiac transcription factors (GATA6, GATA4, ISL1, NKX2.5, HAND1, and HAND2). SCs expressed OCT4 (POU5F1). E-CPCs expressed GATA6, SOX17, HNF4A, and FOXA2. (C) tSNE clustering of single-cell RNA-Seq of day 8 GATA6 mutant hiPSC-CMs identified five clusters. Labels reflect marker gene expression: CM, cardiomyocytes; CM (‘RA’), cardiomyocytes with increased RA-signaling pathway genes; SC, Stem Cell; CM (‘Endo’), cardiomyocytes with enrichment in endothelial genes; FB; fibroblast-like cells (D) Examples of marker gene expression in clustered cells. SC expressed OCT4 (POU5F1). CMs expressed sarcomere protein genes (MYH6, MYH7), SMYD1, a CM-specific histone methyl-transferase, and HAND2, a second heart field transcription factor. CMs (RA) also expressed retinoic acid pathway genes (SOX6, HOXB1). CMs (Endo) have upregulated endothelial cell gene expression (MEF2C, BMPER), while FB cells expressed ECM markers (IGFBP7).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gene Ontology analysis of genes differentially expressed (1.5-fold, p<0.05) in WT hiPSCs treated with 1 µM RA inhibitor at day 4 of differentiation for 24 hr (WIN 18446, Tocris) vs. DMSO treatment. (B) Gene Ontology analysis of genes differentially expressed (1.5-fold, p<0.05) in GATA6R456G/R456GhiPSCs treated with 1 µM RA inhibitor at day 4 of differentiation for 24 hr (WIN 18446, Tocris) vs. DMSO treatment. (C) Normalized RNA-seq counts for retinoic acid signaling genes HOXA1 and HOXB1 showing rescue of retinoic acid signaling in GATA6R456G/R456G day 5 cells. (D) Log2 fold-change for cardiac genes HAND2 and KDR demonstrates these more drastically affected in GATA6R456G/R456G cells (treated vs. untreated). (E) Heatmap of GATA6R456G/R456G genes that are rescued upon RA inhibitor treatment (1.5-fold, p<0.05). (F) Log2 fold-change of select genes from (E). Yellow bars represent the log2FC between DMSO-treated GATA6R456G/R456G cells and DMSO-treated WT cells, while orange bars represent the log2FC between RA inhibitor-treated GATA6R456G/R456G cells and DMSO-treated WT cells.
 
 At day 4 of differentiation, RNA-Seq of WT cells showed expression of both pluripotent stem cell markers (e.g., POU5F1 encoding OCT4) and transcriptional modulators associated with early cardiomyocyte differentiation (Figures 3B,C and 4A,B). These primordial cardiomyocytes expressed SMYD1 (SET and MYND domain-containing protein-1), a nuclear histone methyl-transferase involved in remodeling chromatin and sarcomere assembly (Li et al., 2011), Tbox transcription factors TBX5 and TBX20, two of the earliest markers of cardiac development (Bruneau et al., 2001; Takeuchi et al., 2005), and MEF2C, an essential transcription factor for sarcomere assembly and function (Lin et al., 1997). From day eight onward, the expression of stem cell marker genes was extinguished while expression of cardiomyocyte differentiation transcripts increased (Figures 3C and 4C,D).
 
@@ -119,7 +143,7 @@ The expression of endodermal genes in GATA6-/- hiPSCs was also abnormal. Through
 
 Single-cell RNA-Seq (Figure 4C,D) identified two GATA6-/- populations. One population maintained high expression of the stem cell (SC) marker POU5F1 throughout differentiation day 8, while the other (FB) had increased expression of fibroblast markers (COL3A1, IGFBP7), epithelial to mesenchymal transition markers (SNAIL1/2, MMP2, VIM) (Figure 3—figure supplement 1A), and neural differentiation genes (SHH, ZEB1/2, NCAM2) (Figure 3—figure supplement 1A,B). Together these data inferred that GATA6-/- cells, lacking the normal signals involved in specifying cardiomyocyte and endoderm lineages, adopted alternative differentiation programs.
 
-## Transcriptional analysis of GATA6R456G/R456G hiPSC-CMs
+### Transcriptional analysis of GATA6R456G/R456G hiPSC-CMs
 
 Parallel analyses of isogenic GATA6R456G/R456G lines showed shared and distinct transcriptional profiles from GATA6+/- or GATA6-/- cells. At days 4–12, primordial cardiomyocyte transcripts (GATA4, HAND2, and SMYD1) in GATA6R456G/R456G lines were expressed at levels midway between GATA6+/- and GATA6-/- cells, but markedly below levels in WT cells (Figures 3C and 4, and Supplementary file 2).
 
@@ -133,15 +157,35 @@ GATA6R456G/R456G cells had aberrant expression of other endoderm genes, includin
 
 Despite multiple transcriptional abnormalities, metabolic enrichment yielded GATA6R456G/R456G cardiomyocytes (day 30) with prototypic gene expression. However, like GATA6+/- hiPSC-CMs, GATA6R456G/R456G hiPSC-CMs exhibited a higher MYH6:MYH7 transcript ratio than WT, indicating immaturity.
 
-## GATA6 is a pioneer factor for cardiac development
+### GATA6 is a pioneer factor for cardiac development
 
 We studied potential mechanisms by which GATA6 regulated gene transcription by performing Assays for Transposase-Accessible Chromatin sequencing (ATAC-seq), GATA6 chromatin immunoprecipitation sequencing (ChIP-seq) and Hypergeometric Optimization of Motif EnRichment (HOMER) analyses at day 4 (Figure 5, Figure 6) and day 8 (Supplementary file 4). ChIP-seq of GATA6-/- cells yielded very few peaks above background (data not shown), confirming antibody specificity.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig5-v2.jpg)
+
+**Figure 5.:** ATAC-seq and GATA6 ChIP-seq were performed in WT and mutant day 4 hiPSCs and overlapped to assess GATA6 direct binding to open vs. closed chromatin. (A) Approximately 12% of GATA6 ChIP-seq peaks overlapped with an ATAC-seq peak and were characterized as ‘Open’. The genomic location of these ChIP-seq peaks in open chromatin were characterized with respect to gene bodies, and DNA-binding motif enrichment was performed using HOMER analysis (METHODS). When GATA6 binds to open regions of chromatin, peaks are enriched for the GATA motif. (B) The remaining 88% of GATA6 ChIP-seq peaks were characterized as ‘Closed’. The genomic location of these ChIP-seq peaks were characterized with respect to gene bodies, and DNA-binding motif enrichment was performed using HOMER analysis. When GATA6 binds to closed regions of chromatin, peaks are enriched for the MEF2 motif. (C) Of the 20932 WT GATA6 ChIP-seq peaks, 39.3% were reduced in GATA6R456G/R456G cells (adjusted p<1e-4, two fold). These peaks were enriched for the GATA and HAND2 binding motifs by HOMER analysis. (D) Of the 67652 GATA6R456G/R456G ChIP-seq peaks, 64.8% were upregulated in GATA6R456G/R456G cells (adjusted p<1e-4, two fold). These peaks were enriched for the REST and SOX binding motifs by HOMER analysis. (E) Peaks diminished in GATA6R456G/R456G cells were overlapped with WT ATAC-seq data to establish chromatin accessibility. Almost 21% of peaks diminished in GATA6R456G/R456G cells were in open chromatin regions; these peaks were enriched for the GATA and HAND motifs. (F) Peaks upregulated in GATA6R456G/R456G cells were overlapped with GATA6R456G/R456G ATAC-seq data to establish chromatin accessibility. Four percent of peaks enriched in GATA6R456G/R456G cells were in open chromatin regions; these peaks were enriched for the CTCF and SP1 motifs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** ChIP-seq peaks of interest were subset into regions that are ‘open’ (e.g. regions that overlapped with an ATAC-seq peak and are more likely to be associated with a GATA-binding motif) or ‘closed’ (e.g. regions that did not overlap with an ATAC-seq peak and are less likely to be associated with a GATA-binding motif). Next, each peak was associated with its nearest gene using the R package ChIP-Seeker, and differential expression of the gene sets was evaluated. Comparisons were performed using Fisher’s Exact test. (A) Overlap of GATA6 ChIP-seq peaks in WT day 4 hiPSCs with ATAC-seq data. Closed peaks were then analyzed for changes in gene expression (e.g. ‘pioneer peaks’). Of the 2878 genes that are activated between days 4 and 5, 583 genes are associated with a GATA6-bound closed peak. (B) GATA6 ChIP-seq peaks that were diminished (>2 fold, p<0.05) in GATA6+/- day 4 hiPSCs were analyzed for open chromatin overlap and differential gene expression. The majority of differential peaks were associated with closed chromatin (89.3% vs. 88.1%, p=0.011), but differential gene expression was significantly more associated with open chromatin (8.0% vs. 5.6%, p=0.013). (C) GATA6 ChIP-seq peaks that were diminished (>2 fold, p<0.05) in GATA6R456G/R456G day 4 hiPSCs were analyzed for open chromatin overlap and differential gene expression. Diminished peaks were significantly more likely to be associated with open chromatin (20.9% vs. 11.9%, p<2.2e-16), and differential ChIP-seq peaks were more likely to be associated with differential gene expression in both open and closed peaks than GATA6+/- differential ChIP-seq peaks (18.9% vs. 8.0%, p=3.4e-12 for open chromatin and 14.6% vs. 5.6%, p<2.2e-16). (D) GATA6 ChIP-seq peaks that were upregulated (>2 fold, p<0.05) in GATA6R456G/R456G day 4 hiPSCs were analyzed for open chromatin overlap and differential gene expression. Diminished peaks were significantly less likely to be associated with open chromatin (4.3% vs. 11.9%, p<2.2e-16), and differential ChIP-seq peaks were more likely to be associated with differential gene expression in both open and closed peaks than GATA6+/- differential ChIP-seq peaks (12.3% vs. 8.0%, p=1.9e-3 for open chromatin and 13.7% vs. 5.6%, p<2.2e-16).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig6-v2.jpg)
+
+**Figure 6.:** (A) Of the 20932 WT GATA6 ChIP-seq peaks, 39.3% were reduced in GATA6+/- cells (adjusted p<1e-4, two fold). These peaks were enriched for the GATA and EWS binding motifs by HOMER analysis. (B) Of the 17624 GATA6+/- ChIP-seq peaks, 47% were upregulated in GATA6+/- cells (adjusted p<1e-4, two fold). These peaks were enriched for the USF2 and GATA-binding motifs by HOMER analysis. (C) Peaks diminished in GATA6+/-cells were overlapped with WT ATAC-seq data to establish chromatin accessibility. Only 10.7% of peaks diminished in GATA6+/- cells were in open chromatin regions; these peaks were enriched for the GATA and SP1 motifs. (F) Peaks upregulated in GATA6R456G/R456G cells were overlapped with GATA6+/- ATAC-seq data to establish chromatin accessibility. Only 2.4% of peaks enriched in GATA6+/- cells were in open chromatin regions; these peaks were enriched for the SP1 and GATA motifs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Genomic location of all WT ATAC peaks at day 4. (B) Top DNA-binding motifs as identified by HOMER found in ATAC peaks in gene promoters. (C) Genomic location of all diminished ATAC peaks (at least 2-fold reduction in peak height) in GATA6 mutants compared to WT. Solid lines indicate non-promoter peaks, dashed lines indicate promoter peaks. (D) Top DNA-binding motifs as identified by HOMER found in 2-fold diminished ATAC peaks in the promoters of downregulated genes.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Genomic location of all WT ATAC peaks at day 4. (B) Top DNA-binding motifs as identified by HOMER found in ATAC peaks in gene promoters. (C) Genomic location of all diminished ATAC peaks (at least 2-fold reduction in peak height) in GATA6 mutants compared to WT. Solid lines indicate non-promoter peaks, dashed lines indicate promoter peaks. (D) Top DNA-binding motifs as identified by HOMER found in 2-fold diminished ATAC peaks in the promoters of downregulated genes.
 
 At day 4, GATA6 bound ~21,000 open chromatin peaks genome-wide, of which ~ 21% are near promoters. Notably, only 12% of GATA6-bound open chromatin peaks overlapped with ATAC peaks and were markedly enriched for a GATA-binding motif (Figure 5A). ChIP-seq data from day 8 cells were similar (Supplementary file 4). These data inferred that GATA6 directly participates in regulating transcriptional activation of EOMES, GATA4, MEIS1/2, NKX2.5, TBX5, and TBX20 (Supplementary file 4).
 
 By contrast, 88% of GATA-bound peaks occurred in closed chromatin (Figure 5B). Sequences within these peaks were not enriched for the GATA motif but were highly enriched for the MEF2 binding motif. MEF2 proteins contain a DNA-binding domain (MADS) and transcriptional activating domain (TAD) (Backs and Olson, 2006) that promote differentiation gene programs for cardiac, skeletal, and smooth muscle myocytes (Potthoff and Olson, 2007). During cardiomyocyte differentiation of WT hiPSCs MEF2 transcripts increased 120-fold between days 4–8 (Supplementary file 2). In comparison, at day 8–12, MEF2A and MEF2C levels were decreased in GATA6+/- cells. As together, these data implied that GATA6 functioned as a cardiac pioneer factor, which has been proposed for other GATA proteins, we examined the correlation between GATA6 bound to closed chromatin at day 4 and gene expression at day 5 in WT cells. There were 2878 genes differentially expressed between day 4 and day 5 WT cells. Of those, 1049 were associated with GATA6-bound closed chromatin (36.4%). Among these, 583 (56%) genes had increased expression at day 5, including key cardiac developmental transcription factors, GATA4, SMYD1, KDR, and TBX5 (Figure 5—figure supplement 1, Supplementary file 5). Based on these data, we propose that GATA6 is a cardiac development pioneer factor.
 
-## Epigenetic abnormalities in GATA6 mutant iPSCs
+### Epigenetic abnormalities in GATA6 mutant iPSCs
 
 In comparison to WT, day 4 GATA6+/- cells had~6500 diminished GATA6 ChIP-seq peaks and ~5800 diminished ATAC peaks (Figure 6A and Figure 6—figure supplement 1). Diminished ATAC peaks in proximity to promoters were enriched for GATA, HAND, HNF, and SOX motifs (Figure 6—figure supplement 1, Figure 3, Figure 4 and Supplementary file 2), indicating that attenuated expression of these transcription factor family members could have direct functional consequences. Notably however, few diminished GATA-bound peaks resided within open chromatin (10.7%), of which only 35% were enriched for GATA motifs (Figure 5—figure supplement 1B, Figure 6C). Instead, and consistent with properties of a pioneer factor, GATA6+/- cells had prominent loss (89%) and gain (97%) of GATA-bound peaks within closed chromatin (Figure 6B–D). From these data we infer that GATA interactions with closed chromatin are highly sensitive to protein dosage, while interactions with open chromatin at promoter regions remain relatively intact despite reduced GATA6 protein levels.
 
@@ -151,9 +195,21 @@ ChIP-seq analyses of GATA6R456G/R456G cells (Figure 5C–F, Figure 5—figure su
 
 Among the upregulated peaks,~4% of these peaks had GATA-bound to open chromatin, with enrichment of the CTCF binding motif. Furthermore,~12% were associated with differential gene expression, including MSX1, FOXA1, MEIS2, HCN4, and HOXA2 (Supplementary file 4). However, the vast majority of increased or ectopic peaks (96%) resided within closed chromatin and lacked the GATA6 binding motif. Even so, 14% of the differential closed peaks were associated with differential gene expression, including peaks in TBX20, FOXA1, and FOXH1. Our data suggest that the GATA6R456G variant impairs binding to the GATA motif, reducing normal GATA6 function, and also promotes promiscuous binding with either repressive or activating transcriptional effects.
 
-## Phenotypes associated with epigenetic abnormalities in GATA6 mutant iPSCs
+### Phenotypes associated with epigenetic abnormalities in GATA6 mutant iPSCs
 
 We examined ATAC-seq and GATA6-ChIP-seq data to identify potential mechanisms for altered gene transcription with relevance to clinical phenotypes in CHD patients with pathogenic GATA6 variants. GATA6-bound peaks were universally decreased in GATA6+/- cells, including those associated many cardiac developmental transcription factors genes (e.g., HAND2, KDR, and TBX5 Figure 7A–C) and these changes were associated with normal or modest reduction in transcript levels (Supplementary file 2). While many of these GATA6-bound peaks were also diminished in GATA6R456G/R456G cells, the missense cells also had many enhanced and augmented peaks which were associated greater differential (decreased or increased) gene expression. For example, only GATA6R456G/R456G cells had diminished GATA6-bound peaks identified in WT cells associated with GATA4 (Figure 7D) and MEF2A and also new GATA6-bound peaks in MEF2C, ZIC1 and ZIC3 (Figure 7E). The distinct epigenetic profiles in GATA6R456G/R456G may contribute to the greater dysregulation of cardiac gene expression and cardiomyocyte maturation in comparison to GATA6+/-cells (Figures 2 and 3 A-C). However regardless of whether epigenetic changes in GATA6R456G/R456G cells decreased normal gene expression or erroneously activated the expression of other genes, the associated cardiac consequence of altered transcription was similar to that of GATA6+/-cells – disruption of cardiac outflow tract development (Figure 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig7-v2.jpg)
+
+**Figure 7.:** ATAC peaks (upper), GATA6 ChIP peaks (lower) and DNA-binding motifs (upper, boxed) found in day 4 GATA6 LoF and GATA6R456G/R456G cells, visualized using the Integrative Genomics Viewer (IGV) (A) Lost GATA6 ChIP-seq peak in the HAND2 locus, with differential chromatin accessibility (ATAC-seq). (B) Lost GATA6 ChIP-seq peak at the KDR promoter, leading to reduced chromatin accessibility. (C) Lost GATA6 ChIP-seq peak in TBX5. (D) GATA6R456G does not bind the GATA4 locus in regions of open chromatin. (E) GATA6R456G ectopically binds the ZIC3 promoter.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) ATAC peaks (upper), GATA6 ChIP peaks (lower) found in PDX1 in day 4 GATA6 LoF and GATA6R456G/R456G hiPSC-CMs, visualized using the Integrative Genomics Viewer (IGV). (B) ATAC peaks (upper), GATA6 ChIP peaks (lower), and DNA-binding motifs (upper, boxed) found in FOXA2 in day 4 GATA6 LoF and GATA6R456G/R456G hiPSC-CMs, visualized using the Integrative Genomics Viewer (IGV). (C) Bulk RNA-seq expression of pancreatic genes in GATA6 cells throughout the course of cardiac differentiation. Data represented as mean ± SD.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Gene-level ATAC-seq and GATA6 ChIP-seq analysis of retinoic acid signaling-related and neural crest-related genes of interest at day 4 and day 8 of hiPSC-CM differentiation. Boxed regions harbor DNA-binding motifs of interest. (B) Expression of retinoic acid signaling-related and neural crest-related genes of interest via bulk RNA-Seq. Data represented as mean ± SD. (C) Gene-level ATAC-seq and GATA6 ChIP-seq analysis at diaphragm gene STRA6 at day 4 of hiPSC-CM differentiation.
 
 By contrast, altered GATA6 binding and chromatin accessibility with accompanying dysregulated transcripts likely contributed to the extra-cardiac phenotypes that disproportionately affect patients with heterozygous GATA6 R456G and other exon four missense variants. Pancreatic development requires cooperative GATA4 -GATA6 interactions and compound Gata4-null and Gata6-haploinsufficient mice have reduced Pdx1 expression, pancreatic agenesis or profound hypoplasia (Carrasco et al., 2012). In addition to reduced occupancy of GATA6-motifs in GATA4 with striking attenuated expression (Figure 7D, Supplementary file 2, Supplementary file 4), GATA6 R456G also aberrantly bound chromatin associated with FOXA2, DEANR1 (LINC00261), and PDX1 and diminished transcription of these genes (Figure 7—figure supplement 1). DEANR1 encodes a long noncoding RNA that specifies endoderm and pancreatic lineages by regulating the expression of FOXA2 (Jiang et al., 2015) which in turn regulates PDX1 expression (Gao et al., 2008).
 
@@ -165,7 +221,7 @@ By combining the strengths of WES, CRISPR/Cas9 genome editing, and hiPSCs, we de
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/53278/elife-53278-fig8-v2.jpg)
 
-**Figure 8.:** ChIP-seq and ATAC-seq data of WT hiPSCs identified GATA6 bound to closed chromatin in intergenic regions without a GATA-binding motif. Moreover, GATA6 binding was associated with temporal activation of transcription in nearby genes that activate cardiomyocyte and endoderm gene network. These findings indicate that GATA6 engages chromatin and fosters a competent state for transcription factor binding and transcriptional activation, supporting the conclusion that GATA6 is a pioneer factor, as is suggested for other GATA proteins (Fisher et al., 2017). Notably, nonsense-mediated decay of GATA6 transcripts reduced GATA6 protein levels, altered chromatin accessibility and decreased gene transcription, implying that intergenic sites are sensitive to GATA6 dosage. In addition, GATA6 functions as a traditional transcription factor, binding GATA motifs in promoters and activating transcription. These functions were relatively insensitive to half normal GATA6 levels.+/-
+**Figure 8.:** ChIP-seq and ATAC-seq data of WT hiPSCs identified GATA6 bound to closed chromatin in intergenic regions without a GATA-binding motif. Moreover, GATA6 binding was associated with temporal activation of transcription in nearby genes that activate cardiomyocyte and endoderm gene network. These findings indicate that GATA6 engages chromatin and fosters a competent state for transcription factor binding and transcriptional activation, supporting the conclusion that GATA6 is a pioneer factor, as is suggested for other GATA proteins (Fisher et al., 2017). Notably, nonsense-mediated decay of GATA6+/- transcripts reduced GATA6 protein levels, altered chromatin accessibility and decreased gene transcription, implying that intergenic sites are sensitive to GATA6 dosage. In addition, GATA6 functions as a traditional transcription factor, binding GATA motifs in promoters and activating transcription. These functions were relatively insensitive to half normal GATA6 levels.
 
 Our analyses demonstrate that some GATA6 expression is required for lineage specification of human cardiomyocytes. When cultured to promote cardiomyocyte differentiation GATA6-/- cells had markedly reduced promoter activation with NFY transcripts that encode the binding factor of CCAAT-box, a nearly ubiquitous promoter element. GATA6-/- cells were viable but showed very limited transcriptional evidence of mesoderm specification and extinguished cardiomyocyte gene expression. Instead GATA6-/- cells adopted a gene program suggestive of nonspecific cells with expression of neuroectodermal and fibroblast genes.
 
@@ -189,15 +245,179 @@ The combination of WES, genome sequencing data, CRISPR/Cas9 genome editing, and 
 
 ## Materials and methods
 
-## Human subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>PGP1</td>
+      <td>Lee et al., 2009</td>
+      <td>GM23338</td>
+      <td>Male; mycoplasma-free</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>TNNT2-GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Derived from PGP1 cell line GM23338, mycoplasma-free</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zero Blunt TOPO PCR Cloning Kit</td>
+      <td>ThermoFisher</td>
+      <td>K280002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Stem Cell Nucleofector Kit</td>
+      <td>Lonza</td>
+      <td>VPH-5022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>FC-131–1096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Sample Kit (ATAC-seq)</td>
+      <td>Illumina</td>
+      <td>FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tru ChIP Chromatin Shearing Hit</td>
+      <td>Covaris</td>
+      <td>520154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium i7 Multiplex Kit</td>
+      <td>10X Genomics</td>
+      <td>1000073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Chip B Single-Cell Kit</td>
+      <td>10X Genomics</td>
+      <td>1000075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Guide RNAs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GATA6 Exon 2 Guide 1: GAGCCCCTACTCGCCCTACG GATA6 Exon 2 Guide 2: GCCCCTACTCGCCCTACGTG GATA6 Exon 4 Guide 1: GGCGTTTCTGCGCCATAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GATA6 sequencing primers</td>
+      <td>This paper</td>
+      <td>PCR Primers</td>
+      <td>GATA6 Exon 2 Sequencing Primer Left/Forward GACGTACCACCACCACCA GATA6 Exon 2 Sequencing Primer Right/Reverse CTTACCTGCACTGGGACCC GATA6 Exon 4 Sequencing Primer Left/Forward TGAATTCACGGAGACAGGCT GATA6 Exon 4 Sequencing Primer Right/Reverse TACAAGTGAGCAGAATACATGGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ATAC-seq amplification oligos</td>
+      <td>Buenrostro et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cas9 plasmid</td>
+      <td>Addgene</td>
+      <td>PX459v2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WIN 18446</td>
+      <td>Tocris</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit mono-clonal Gata6</td>
+      <td>Cell Signaling Technology</td>
+      <td>5851S</td>
+      <td>10 ug/ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit mono-clonal Gata6</td>
+      <td>Abcam</td>
+      <td>Ab175927</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNA-seq pipeline: bcbio-nextgen</td>
+      <td>Chapman et al., 2020</td>
+      <td>v.1.2.3</td>
+      <td>Hg19</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Package: DESEQ2</td>
+      <td>Love et al., 2014</td>
+      <td>v. 2.1.18.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Package: Seurat</td>
+      <td>Stuart et al., 2019</td>
+      <td>v.3.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Package: ChIP-seeker</td>
+      <td>Yu et al., 2015</td>
+      <td>v.1.14.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>Heinz et al., 2010</td>
+      <td>v4.10.3</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human subjects
 
 CHD subjects were recruited to the Congenital Heart Disease Network Study of the Pediatric Cardiac Genomics Consortium (CHD GENES: ClinicalTrials.gov identifier NCT01196182) after approval from Institutional Review Boards as previously described (Jin et al., 2017; Gelb et al., 2013). Written informed consent was received from subjects or their parents prior to inclusion in the study. Any subject with CHD, regardless of age, race, or ethnicity was eligible for enrollment. Subjects with variants in GATA6 and 2nd heart field genes including CHD diagnoses, and extra-cardiac phenotypes are provided in Supplementary file 1.
 
-## Exome sequencing and analyses
+### Exome sequencing and analyses
 
 DNA was extracted peripheral blood samples and captured using the Nimblegen v.2 exome capture reagent (Roche) or Nimblegen SeqxCap EZ MedExome Target Enrichment Kit (Roche) followed by Illumina DNA sequencing as previously described (Jin et al., 2017). Reads were mapped to the reference genome (hg19), and further processed using the GATK Best Practices workflows as previously described (Jin et al., 2017; McKenna et al., 2010). Single nucleotide variants (SNVs) and small indels were called with GATK HaplotypeCaller and filtered for rarity (ExAC allele frequency ≤10–5) and quality as previously described (Jin et al., 2017). The MetaSVM algorithm was used to predict deleteriousness of de novo missense mutations (annotated as ‘D-Mis’) using software defaults (Dong et al., 2015; Sulahian et al., 2014).
 
-## TNNT2-GFP, GATA6+/-, GATA6-/-, and GATA6R456G/R456G hiPSCs and iPSC-CMs
+### TNNT2-GFP, GATA6+/-, GATA6-/-, and GATA6R456G/R456G hiPSCs and iPSC-CMs
 
 All hiPSCs and hiPSC-CMs used here are derived from the male parent iPSC line PGP1 (Akerman et al., 2017; RRID-GM23338) and are mycoplasma-free. The TNNT2-GFP iPSC line was generated by homology-directed repair, using a plasmid with the endogenous TNNT2 sequence connected to a GSSSS linker region, attached to the GFP gene, and the entire construct was flanked by 500 bp homology arms. PGP1 iPSCs were transfected as described (Sharma et al., 2018b) to obtain homozygous integration of the GFP tag in both TNNT2 alleles. Edited clones were selected using puromycin and expanded and genotyped as previously described (Sharma et al., 2018b) and differentiated into cardiomyocytes as described (Sharma et al., 2018a).
 
@@ -205,30 +425,30 @@ GATA6+/- and GATA6-/- hiPSCs were generated from TNNT2-GFP and PGP1 iPSCs by non
 
 GATA6R456G/R456G hiPSCs were generated by homology-directed repair using a 2 µg plasmid expressing Cas9 (PX459v2 from Addgene) that was co-transfected with 2 µg plasmid expressing guide RNA (provided in Key Resource Table) and 2 µg single-stranded oligonucleotide (HDR template) using a stem cell nucleofector kit (Amaxa). Edited clones were selected using puromycin and expanded and genotyped as previously described (Sharma et al., 2018b) and differentiated into cardiomyocytes as described (Sharma et al., 2018a).
 
-## Confirmation of editing in subcloned iPSC lines
+### Confirmation of editing in subcloned iPSC lines
 
 All edited lines sub-cloned, by dissociating 1000 genome-edited hiPSCs cells, filtering through a 60 µm strainer, and evenly distributing them onto a 15 cm dish containing Matrigel and mTeSR+ rho kinase inhibitor. Individual monoclonal hiPSC colonies were picked when colony size reached approximately 200 cells and placed into individual separate wells of a 96 well plate. Clones were allowed to grow to 80% confluency, at which time a sample was obtained for PCR amplification to verify the GATA6 variant or GFP-tagged TNNT2 and to assess zygosity. PCR-amplified fragments (primers provided in Key Resource Table) containing putative variants were submitted for Sanger sequencing and next-generation sequencing. Sanger sequencing traces were deconvoluted using TIDE software to confirm zygosity. Clones carrying GATA6 mutations were further expanded for subsequent culture and differentiation.
 
-## hiPSC-CM differentiation
+### hiPSC-CM differentiation
 
 The hiPSC-CMs were generated from GATA6 mutant hiPSCs using a small-molecule mediated differentiation approach that modulates Wnt signaling (Sharma et al., 2018a). Cells began beating at approximately day 7 post-differentiation. Cardiomyocytes were metabolically selected from other differentiated cells by using glucose deprivation as previously described (Sharma et al., 2018a). hiPSC-CM Western blots: GATA6 protein expression and nuclear localization were performed using ab175927.
 
-## RNA-sequencing and analysis
+### RNA-sequencing and analysis
 
 RNA-seq experiments were performed on at least two independent cultured cell samples per time point, with the exception of GATA6R256G/R256G DMSO control in the RA-signaling experiment. Trizol (Thermo Fisher) was used to harvest differentiating GATA6 mutant hiPSC-CMs (days 0, 4, 8, 12, 30 of differentiation) designated for RNA-sequencing analysis. Samples harvested in Trizol were stored at −80°C until RNA was extracted. All RNA samples had an RNA integrity number of ≥8. Library preparation was conducted using the Nextera library preparation method. RNA-Seq library samples were pooled and run on four lanes (one flow cell) using the Illumina NextSeq500 platform. All data was combined into a single fastq file. Samples typically had 30–50M reads each. The raw reads were aligned by HISAT2 (v.2.1.0) to human genome (hg38). The aligned reads were quantified by FeatureCounts, counts were normalized, and differentially expressed genes were identified using DESeq2 (v1.24.0). DESeq2 data was analyzed and visualized in R using the ggplot2 (v3.1.0), pheatmap (v1.0.12), gProfiler (v0.6.7), and VennDiagram (v1.6.20) packages. Single-cell RNA-seq analysis for hiPSC-CMs was conducted using a 10x Genomics Chromium platform and analyzed in R using the Seurat (v. 3.5.1) pipeline. Seurat was used to regress out cell-cell variation in cell complexity, gene expression driven by batch, cell alignment rate, the number of detected molecules, and mitochondrial gene expression. Starting with Seurat v2.0, Seurat implements this regression as part of the data scaling process.
 
-## ATAC-seq and Hi-C chromatin analysis
+### ATAC-seq and Hi-C chromatin analysis
 
 ATAC-seq was performed as previously described (Buenrostro et al., 2015; Corces et al., 2017). Briefly, 50,000 cells were harvested and lysed to isolate nuclei. Nuclei were treated with Tn5 transposase (Nextera DNA Sample Prep Kit, Illumina) and DNA was isolated. Fragmented DNA was amplified using bar-coded PCR primers (defined in Buenrostro et al., 2015) and libraries were pooled. Pooled libraries were sequenced (Illumina Next-Seq) to a depth of 100 million reads per sample. Reads were aligned to the hg19 reference genome using BWA-MEM and peaks were called using HOMER (v4.10.3) (http://homer.ucsd.edu/homer/index.html). Functional analysis of ATAC-seq peaks was performed using ChIP-Seeker (v.1.14.1). Motif enrichment was performed using HOMER (v4.10.3). Differential peaks were called using HOMER (v4.10.3).
 
-## ChIP-seq
+### ChIP-seq
 
 Cells (6-well plates) were grown to approximately 80% confluency and then fixed with 1% fresh formaldehyde diluted in media. Cells were quenched with glycine, washed, and harvested. Cell pellets were stored at −80°C. Cells were thawed and nuclei were prepared using the Covaris Tru ChIP Chromatin Shearing Kit (Covaris, MA, USA). Chromatin was sheared using the Covaris E210 to an average fragment size of 200–700 bp and an input sample was purified. Chromatin (5 µg) was incubated with GATA6 antibody (RRID:AB_5851S) at 4°C O/N and then added to Protein G beads for 2 hr at 4°C. Beads were washed and bound chromatin was eluted at 65°C for 30 min on a heated vortex. DNA was then purified and quantified. ChIP-seq libraries were prepared using Nextera XT DNA sample prep (Illumina). Sequences were aligned to hg19 using BWA-MEM. Peaks were called using MACS2 using default parameters with a q value of 0.001. Differential peaks were called using HOMERv4.10.3.
 
-## Retinoic acid inhibitor treatment assay
+### Retinoic acid inhibitor treatment assay
 
 hiPSCs were seeded and differentiated to day 4, and then treated for 24 hr with either DMSO or 1 µM WIN 18446 (Tocris), an inhibitor of the ALDH1A2 enzyme. Cells were harvested and processed for RNA-seq.
 
-## Statistical analyses
+### Statistical analyses
 
 The distribution of damaging human variants across the GATA6 gene was analyzed using the binominal test, implemented in R. The association of GATA6+/- and GATA6R456G/+ variants and pancreatic agenesis or congenital diaphragmatic hernia was analyzed using the Fisher Exact test, implemented in R. Transcriptional responses of iPSC-CMs with or without a GATA6 variant was compared using the Student’s t-test was used for comparison. All error bars refer to standard deviation, unless otherwise specified. A p value of < 0.05 was considered significant.

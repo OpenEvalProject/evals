@@ -18,17 +18,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Global Health Institute, School of Life Sciences, École Polytechnique Fédérale de Lausanne Lausanne Switzerland
-2. https://ror.org/002n09z45 Swiss Institute of Bioinformatics Lausanne Switzerland
-3. https://ror.org/019whta54 Precision Medicine Unit, Lausanne University Hospital and University of Lausanne Lausanne Switzerland
-4. https://ror.org/019whta54 Department of Medicine, Internal medicine, Lausanne University Hospital and University of Lausanne Lausanne Switzerland
-5. https://ror.org/04cdgtt98 Division of Infections and Cancer Epidemiology, German Cancer Research Center Heidelberg Germany
+1. Global Health Institute, School of Life Sciences, École Polytechnique Fédérale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+2. Swiss Institute of Bioinformatics Lausanne Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))
+3. Precision Medicine Unit, Lausanne University Hospital and University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
+4. Department of Medicine, Internal medicine, Lausanne University Hospital and University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
+5. Division of Infections and Cancer Epidemiology, German Cancer Research Center Heidelberg Germany ([ROR:04cdgtt98](https://ror.org/04cdgtt98))
 
 † Corresponding author
 
 ## Abstract
 
-Coronary heart disease (CHD) is one of the most pressing health problems of our time and a major cause of preventable death. CHD results from complex interactions between genetic and environmental factors. Using multiplex serological testing for persistent or frequently recurring infections and genome-wide analysis in a prospective population study, we delineate the respective and combined influences of genetic variation, infections, and low-grade inflammation on the risk of incident CHD. Study participants are enrolled in the CoLaus|PsyCoLaus study, a longitudinal, population-based cohort with baseline assessments from 2003 through 2008 and follow-up visits every 5 years. We analyzed a subgroup of 3459 individuals with available genome-wide genotyping data and immunoglobulin G levels for 22 persistent or frequently recurring pathogens. All reported CHD events were evaluated by a panel of specialists. We identified independent associations with incident CHD using univariable and multivariable stepwise Cox proportional hazards regression analyses. Of the 3459 study participants, 210 (6.07%) had at least one CHD event during the 12 years of follow-up. Multivariable stepwise Cox regression analysis, adjusted for known cardiovascular risk factors, socioeconomic status, and statin intake, revealed that high polygenic risk (hazard ratio [HR] 1.31, 95% CI 1.10–1.56, p=2.64 × 10 −3 ) and infection with Fusobacterium nucleatum (HR 1.63, 95% CI 1.08–2.45, p=1.99 × 10 −2 ) were independently associated with incident CHD. In a prospective, population-based cohort, high polygenic risk and infection with F. nucleatum have a small, yet independent impact on CHD risk.
+Coronary heart disease (CHD) is one of the most pressing health problems of our time and a major cause of preventable death. CHD results from complex interactions between genetic and environmental factors. Using multiplex serological testing for persistent or frequently recurring infections and genome-wide analysis in a prospective population study, we delineate the respective and combined influences of genetic variation, infections, and low-grade inflammation on the risk of incident CHD. Study participants are enrolled in the CoLaus|PsyCoLaus study, a longitudinal, population-based cohort with baseline assessments from 2003 through 2008 and follow-up visits every 5 years. We analyzed a subgroup of 3459 individuals with available genome-wide genotyping data and immunoglobulin G levels for 22 persistent or frequently recurring pathogens. All reported CHD events were evaluated by a panel of specialists. We identified independent associations with incident CHD using univariable and multivariable stepwise Cox proportional hazards regression analyses. Of the 3459 study participants, 210 (6.07%) had at least one CHD event during the 12 years of follow-up. Multivariable stepwise Cox regression analysis, adjusted for known cardiovascular risk factors, socioeconomic status, and statin intake, revealed that high polygenic risk (hazard ratio [HR] 1.31, 95% CI 1.10–1.56, p=2.64 × 10−3) and infection with Fusobacterium nucleatum (HR 1.63, 95% CI 1.08–2.45, p=1.99 × 10−2) were independently associated with incident CHD. In a prospective, population-based cohort, high polygenic risk and infection with F. nucleatum have a small, yet independent impact on CHD risk.
 
 ## Introduction
 
@@ -48,9 +48,377 @@ Although enormous progress has been made in the understanding of CHD pathogenesi
 
 ## Results
 
-## Demographic and serological characteristics
+### Demographic and serological characteristics
 
 A total of 3459 CoLaus|PsyCoLaus participants with available phenotypic, serological, and genotypic data were included. Their characteristics are presented in Table 1.
+
+**Table 1.**
+ Baseline characteristics of 3459 CoLaus|PsyCoLaus participants by coronary heart disease (CHD) cases and controls.p-Values are based on the t-test for continuous variables and Fisher’s exact test for categorical variables comparing the CHD cases and controls group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>OverallN = 3249 (100%)</th>
+      <th>ControlsN = 3249 (93.93%)</th>
+      <th>CHD casesN = 210 (6.07%)</th>
+      <th>p</th>
+    </tr>
+    <tr>
+      <th>Baseline characteristics</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (mean [SD])</td>
+      <td>52.83 [10.48]</td>
+      <td>52.34 [10.36]</td>
+      <td>60.34 [9.53]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>BMI (mean [SD])</td>
+      <td>25.51 [4.31]</td>
+      <td>25.41 [4.27]</td>
+      <td>27.11 [4.62]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Systolic blood pressure (mean [SD])</td>
+      <td>129.04 [18.40]</td>
+      <td>128.32 [18.01]</td>
+      <td>140.18 [20.60]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>HDL cholesterol (mean [SD])</td>
+      <td>1.66 [0.43]</td>
+      <td>1.67 [0.43]</td>
+      <td>1.49 [0.41]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol (mean [SD])</td>
+      <td>3.34 [0.92]</td>
+      <td>3.33 [0.92]</td>
+      <td>3.48 [0.91]</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mean [SD])</td>
+      <td>5.60 [1.03]</td>
+      <td>5.59 [1.02]</td>
+      <td>5.73 [1.04]</td>
+      <td>0.051</td>
+    </tr>
+    <tr>
+      <td>Sex = male (%)</td>
+      <td>1592 (46.0)</td>
+      <td>1448 (44.6)</td>
+      <td>144 (68.6)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Statin = yes (%)</td>
+      <td>296 (8.6)</td>
+      <td>242 (7.4)</td>
+      <td>54 (25.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Average gross monthly income (in CHF):</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>&lt;2999 (%)</td>
+      <td>178 (5.1)</td>
+      <td>161 (5.0)</td>
+      <td>17 (8.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3000–4999 (%)</td>
+      <td>452 (13.1)</td>
+      <td>425 (13.1)</td>
+      <td>27 (12.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5000–6999 (%)</td>
+      <td>552 (16.0)</td>
+      <td>517 (15.9)</td>
+      <td>35 (16.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7000–9499 (%)</td>
+      <td>504 (14.6)</td>
+      <td>468 (14.4)</td>
+      <td>36 (17.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9500–13,000 (%)</td>
+      <td>338 (9.8)</td>
+      <td>323 (9.9)</td>
+      <td>15 (7.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&gt;13,000 (%)</td>
+      <td>344 (9.9)</td>
+      <td>335 (10.3)</td>
+      <td>9 (4.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refused or missing (%)</td>
+      <td>1091 (31.5)</td>
+      <td>1020 (31.4)</td>
+      <td>71 (33.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smoking = yes (%)</td>
+      <td>883 (25.5)</td>
+      <td>820 (25.2)</td>
+      <td>63 (30.0)</td>
+      <td>0.146</td>
+    </tr>
+    <tr>
+      <td>Genetics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CHD-PRS (mean [SD])</td>
+      <td>0.00 [1.00]</td>
+      <td>−0.02 [0.99]</td>
+      <td>0.26 [1.01]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Biomarkers of inflammation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>hs-CRP (mean [SD])</td>
+      <td>0.09 [0.46]</td>
+      <td>0.08 [0.46]</td>
+      <td>0.22 [0.44]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>TNF-α (mean [SD]) – 63 NAs</td>
+      <td>0.46 [0.38]</td>
+      <td>0.46 [0.38]</td>
+      <td>0.53 [0.35]</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>IL-1β (mean [SD]) – 1’319 NAs</td>
+      <td>0.17 [0.64]</td>
+      <td>0.17 [0.64]</td>
+      <td>0.14 [0.67]</td>
+      <td>0.637</td>
+    </tr>
+    <tr>
+      <td>IL-6 (mean [SD]) – 294 NAs</td>
+      <td>0.24 [0.58]</td>
+      <td>0.24 [0.58]</td>
+      <td>0.28 [0.55]</td>
+      <td>0.398</td>
+    </tr>
+    <tr>
+      <td>Persistent pathogens</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Human polyomaviruses:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BKPyV = seropositive (%)</td>
+      <td>2912 (84.2)</td>
+      <td>2735 (84.2)</td>
+      <td>177 (84.3)</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>JCPyV = seropositive (%)</td>
+      <td>1812 (52.4)</td>
+      <td>1696 (52.2)</td>
+      <td>116 (55.2)</td>
+      <td>0.434</td>
+    </tr>
+    <tr>
+      <td>HPyV6 = seropositive (%)</td>
+      <td>2948 (85.2)</td>
+      <td>2759 (84.9)</td>
+      <td>189 (90.0)</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <td>WUPyV = seropositive (%)</td>
+      <td>3309 (95.7)</td>
+      <td>3105 (95.6)</td>
+      <td>204 (97.1)</td>
+      <td>0.362</td>
+    </tr>
+    <tr>
+      <td>Human herpes viruses:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HSV-1 = seropositive (%)</td>
+      <td>2547 (73.6)</td>
+      <td>2373 (73.0)</td>
+      <td>174 (82.9)</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>HSV-2 = seropositive (%)</td>
+      <td>601 (17.4)</td>
+      <td>564 (17.4)</td>
+      <td>37 (17.6)</td>
+      <td>0.998</td>
+    </tr>
+    <tr>
+      <td>CMV = seropositive (%)</td>
+      <td>1868 (54.0)</td>
+      <td>1756 (54.0)</td>
+      <td>112 (53.3)</td>
+      <td>0.897</td>
+    </tr>
+    <tr>
+      <td>EBV = seropositive (%)</td>
+      <td>3350 (96.8)</td>
+      <td>3147 (96.9)</td>
+      <td>203 (96.7)</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>HHV-6A = seropositive (%)</td>
+      <td>865 (25.0)</td>
+      <td>800 (24.6)</td>
+      <td>65 (31.0)</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td>HHV-6B = seropositive (%)</td>
+      <td>1373 (39.7)</td>
+      <td>1295 (39.9)</td>
+      <td>78 (37.1)</td>
+      <td>0.480</td>
+    </tr>
+    <tr>
+      <td>HHV-7 = seropositive (%)</td>
+      <td>1846 (53.4)</td>
+      <td>1746 (53.7)</td>
+      <td>100 (47.6)</td>
+      <td>0.099</td>
+    </tr>
+    <tr>
+      <td>KSHV = seropositive (%)</td>
+      <td>141 (4.1)</td>
+      <td>133 (4.1)</td>
+      <td>8 (3.8)</td>
+      <td>0.983</td>
+    </tr>
+    <tr>
+      <td>VZV = seropositive (%)</td>
+      <td>3047 (88.1)</td>
+      <td>2853 (87.8)</td>
+      <td>194 (92.4)</td>
+      <td>0.061</td>
+    </tr>
+    <tr>
+      <td>Parvovirus:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVB-19 = seropositive (%)</td>
+      <td>2420 (70.0)</td>
+      <td>2277 (70.1)</td>
+      <td>143 (68.1)</td>
+      <td>0.595</td>
+    </tr>
+    <tr>
+      <td>Bacteria:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C. trachomatis = seropositive (%)</td>
+      <td>1213 (35.1)</td>
+      <td>1120 (34.5)</td>
+      <td>93 (44.3)</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>F. nucleatum = seropositive (%)</td>
+      <td>520 (15.0)</td>
+      <td>473 (14.6)</td>
+      <td>47 (22.4)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>H. pylori = seropositive (%)</td>
+      <td>685 (19.8)</td>
+      <td>645 (19.9)</td>
+      <td>40 (19.0)</td>
+      <td>0.846</td>
+    </tr>
+    <tr>
+      <td>S. gallolyticus = seropositive (%)</td>
+      <td>135 (3.9)</td>
+      <td>130 (4.0)</td>
+      <td>5 (2.4)</td>
+      <td>0.322</td>
+    </tr>
+    <tr>
+      <td>Parasite:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T. gondii = seropositive (%)</td>
+      <td>1445 (41.8)</td>
+      <td>1349 (41.5)</td>
+      <td>96 (45.7)</td>
+      <td>0.262</td>
+    </tr>
+  </tbody>
+</table>
 
 During the follow-up of 4500 days (12.3 years), at least one CHD event occurred in 210 individuals (6.07%). The number of participants with one, two, and three coronary events was 140, 47, and 14, respectively. Nine individuals had between four and eight coronary events. Eligible study participants were on average 52.8 (standard deviation [SD] ± 10.5) years of age at baseline, 54% were women and 25.5% were smokers. On average, their body mass index (BMI) was 25.5 (±4.3) kg/m2, their systolic blood pressure was 129 (±18) mmHg, and their HDL cholesterol level was 1.66 (±0.43) mmol/L. The percentages of participants by average gross monthly income are 7.5 (<CHF 2999), 19.1 (CHF 3000–4999), 23.3 (CHF 5000–6999), 21.3 (CHF 7000–9499), 14.3 (CHF 9500–13,000), and 14.5% (CHF > 13,000).
 
@@ -60,9 +428,9 @@ We also investigated participants’ serostatus for the following 22 human patho
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/79742/elife-79742-fig1-v1.jpg)
 
-**Figure 1.:** Overall serostatus for the 22 pathogens are shown in the CHD-positive group (individuals with at least one CHD event during follow-up) or CHD-negative group. The y-axis indicates the relative percentage within each group. Pathogens are ranked in ascending order of overall seropositivity (all individuals combined).Figure 1—source data 1.Figure 1.
+**Figure 1.:** Overall serostatus for the 22 pathogens are shown in the CHD-positive group (individuals with at least one CHD event during follow-up) or CHD-negative group. The y-axis indicates the relative percentage within each group. Pathogens are ranked in ascending order of overall seropositivity (all individuals combined).
 
-## Univariable predictors of CHD incidence
+### Univariable predictors of CHD incidence
 
 To validate the utility of SCORE2 in our cohort, we tested its association with CHD. SCORE2 was significantly and positively associated with CHD (HR 1.72, 95% CI 1.61–1.85, p = 2.87×10−61) (Appendix 1—table 2). We also observed a significant inverse association between average gross monthly income and CHD risk (HR 0.85, 95% CI 0.76–0.96, p = 7.27×10−3).
 
@@ -72,17 +440,17 @@ To evaluate the impact of the biomarkers of inflammation on CHD risk, we tested 
 
 Finally, we calculated a CHD polygenic risk score (CHD-PRS) for each subject to investigate the effect of common human genetic variations on CHD. As expected, we observed a significant association between the PRS and CHD (HR 1.32, 95% CI 1.16–1.51, p = 4.29×10−5), confirming that genetic predisposition to CHD can be captured through CHD-PRS. The top three genetic principal components (PC1, PC2, and PC3) were not significantly associated with CHD (Appendix 1—table 2).
 
-## Co-linearity and proportional hazard assumption testing
+### Co-linearity and proportional hazard assumption testing
 
 We calculated pairwise correlations between all variables that were found to be significant in univariable analyses. Appendix 2—figure 1 and Appendix 2—figure 2 illustrate that no strong correlations exist between significant variables. The strongest correlation was observed between SCORE2 and hs-CRP, and between seropositivity to C. trachomatis and gross monthly household income, with Pearson’s and Cramer’s V coefficients of 0.22 and 0.15, respectively. The proportionality assumption was tested for all significant variables using the Schoenfeld residuals. The residual tests indicated that all variables satisfied the proportional hazards assumption, revealing that the effect of all covariates are constant in time (Appendix 2—figure 3). Finally, we also assessed potential co-linearity issues among predictors that could affect model fitting. No variance inflation factor (VIF) value was indicative of co-linearity.
 
-## Multivariable model
+### Multivariable model
 
 To identify the independent risk factors of CHD in our cohort, we performed backward stepwise selection on 2323 individuals with non-missing data using a multivariable Cox proportional hazards model, starting with all the significant factors from the univariable models. The final multivariable analysis confirmed that SCORE2 (HR 1.96 per SD increase, 95% CI 1.74–2.22, p = 2.42×10−27) is an independent prognostic factor of CHD (Figure 2). We also observed significant independent associations for statin intake (HR 2.24, 95% CI 1.50–3.35, p = 9.17×10−5) and for seropositivity to F. nucleatum infection (HR 1.63, 95% CI 1.08–2.45, p = 1.99×10−2). Comparing individuals who had a least one CHD event (CHD group) against those who had no event during the follow-up period (control group), 22.4% (47/210) of the individuals in the CHD group were seropositive to F. nucleatum, versus 14.6% (473/3249) in the control group (p = 0.003) (Figure 1, Table 1). Lastly, we also observed a significant association between CHD occurrence and elevated CHD-PRS with an HR of 1.31 (95% CI 1.10–1.56, p = 3.32×10−3) per SD increase.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79742/elife-79742-fig2-v1.jpg)
 
-**Figure 2.:** HR > 1 indicates an increased risk of CHD, whereas HR < 1 indicates a protective effect. p-Values (p) for each factor based on the multivariable Cox regression are shown.Figure 2—source data 1.Figure 2.
+**Figure 2.:** HR > 1 indicates an increased risk of CHD, whereas HR < 1 indicates a protective effect. p-Values (p) for each factor based on the multivariable Cox regression are shown.
 
 To assess if the overall burden of infections contributed to increased risk of CHD, study participants were stratified according to their overall seropositivity index for measured pathogens, calculated by summing the number of pathogens for which they show seropositivity (range: 0–16). The numbers of individuals in each pathogen burden stratum are shown in Appendix 2—figure 4. In the univariable Cox model, pathogen burden significantly increased the risk of CHD occurrence (HR 1.11, 95% CI 1.03–1.18, p = 3.25×10−3) (Appendix 1—table 2). However, after adjustment with multivariable Cox proportional hazards regression, pathogen burden did not meet the level of significance for staying in the model.
 
@@ -102,36 +470,36 @@ Our data do not support the existence of the previously identified associations 
 
 Our study has several limitations. As is the case for most longitudinal studies, the absence of data on individuals who dropped out before the end of the follow-up implies that some CHD events could have gone undetected. Also, the demographic information, as well as the clinical and laboratory measurements, were obtained at baseline, and we do not know whether participant information changed over time. Adjustment for risk factors measured at baseline does not account for clinical or demographic changes that could influence CHD outcomes. Similarly, we do not know how the antibody responses against the various antigens evolved over the 12 years of the study. In addition, no significance adjustment was performed when using multiple univariable tests to determine the effect of single factors on CHD risk, although this may increase the false positive rate. Moreover, we were unable to replicate previously published observations of associations of CHD with C. pneumoniae and HCV as serologies for these pathogens were not available. From a more practical point of view, the identified association with F. nucleatum needs to be replicated and validated in independent cohorts and different populations. Finally, the clinical utility of including genetic and infection biomarkers in CHD prediction algorithms will need to be demonstrated.
 
-## Conclusion
+### Conclusion
 
 CHD is a multicomponent disease that is caused by demographic, environmental, and genetic factors. Inflammation, possibly caused by persistent or frequently recurring infections, can contribute to its development. We identified a statistically significant association between the incidence of CHD and F. nucleatum infection, after adjustment for all established risk factors. We also confirmed that the individual polygenic risk of CVD, calculated from genome-wide genotypes, represents an independent risk factor for incident CHD. Our results can help to better identify subjects at high risk for CHD and provide a rationale for future anti-infective prevention trials.
 
 ## Methods
 
-## Study cohort
+### Study cohort
 
 The CoLaus|PsyCoLaus study is a longitudinal population-based study initiated in Lausanne in 2003; it mainly investigates the biological, environmental, and genetic determinants of CVD (https://www.colaus-psycolaus.ch/) (Firmann et al., 2008). The study involves over 6500 participants of European ancestry, who were recruited at random from the general population and represent approximately 10% sample of Lausanne citizens. Of the participants, 47.5% are men, and age at enrolment ranged from 35 to 75 years (mean ± SD: 51 ± 10.9). The study participants provided detailed phenotypic information through questionnaires, interviews, clinical and biological data. Nuclear deoxyribonucleic acid (DNA) was also extracted from the blood for whole-genome genotyping data. Every 5 years, follow-up interviews on the participants’ lifestyle and health status are conducted. There are three completed follow-ups and a fourth follow-up began in January 2022. The institutional Ethics Committee of the University of Lausanne, which later became the Ethics Commission of the Canton Vaud (https://www.cer-vd.ch/), approved the CoLaus|PsyCoLaus study (reference 16/03, decisions of January 13 and February 10, 2003), and all participants gave written consent.
 
-## Cardiovascular phenotype
+### Cardiovascular phenotype
 
 The medical records of the participants who reported a CHD event during their lifetime were collected and evaluated by an independent panel of specialists. Information on the cause of death was also collected prospectively during the study period. The full procedure was described previously (Beuret et al., 2021). Only first events occurring after the baseline and up to day 4500 after the baseline were included in the analysis, as only during this period were all participants reliably followed.
 
-## DNA genotyping data and PRS calculation for cardiovascular phenotypes
+### DNA genotyping data and PRS calculation for cardiovascular phenotypes
 
 The BB2 GSK-customized Affymetrix Axiom Biobank array was used to genotype DNA samples from 5399 participants at approximately 800,000 single nucleotide polymorphisms (SNPs). After genotype imputation and quality control procedures, approximately 9 million SNPs were available for analysis (Hodel et al., 2021). We then calculated, based on the risk effects of common SNPs, the CHD-PRS for each study participant. We used validated PRS from Inouye et al., available in the polygenic score catalog (Inouye et al., 2018; Lambert et al., 2021). These scores and summary statistics were used to construct the CHD-PRS in our target cohort data by using the clumping and thresholding method of the PRSice-2 v2.2.7 software (Choi et al., 2020). A standardized method was used to obtain the PRS, by multiplying the risk allele dosage for each variant by the effect size and summing the scores across all selected variants. SNPs were clumped according to linkage disequilibrium (r2 < 0.1) within a 250 kb window.
 
-## CHD risk evaluation
+### CHD risk evaluation
 
 The risk of CHD for each participant was also assessed using the very recent SCORE2 and SCORE2-Older Persons (SCORE2-OP, for individuals >65 years of age) algorithms (SCORE2-OP working group and ESC Cardiovascular risk collaboration, 2021; SCORE2 working group and ESC Cardiovascular risk collaboration, 2021). These two algorithms will be referred to as SCORE2. SCORE2 was derived, calibrated, and validated to predict the 10-year risk of first-onset CVD using data from 13 million individuals from >50 European prospective studies and national registries. To develop this algorithm, the authors used competing risk-adjusted and age- and sex-specific models including age, current smoking, systolic blood pressure, and total, low-density lipoprotein (LDL), and high-density lipoprotein (HDL) cholesterol. The authors also defined four risk regions in Europe on the basis of country-specific CVD mortality. For CoLaus|PsyCoLaus participants, calculations were based on the low-risk region corresponding to Switzerland. The raw scores of participants were standardized to Z-scores with approximately zero mean and unit variance before data analysis.
 
-## Measurement of inflammatory biomarkers
+### Measurement of inflammatory biomarkers
 
 Venous blood samples (50 mL) of the participants, in a fasted state, were drawn. Before cytokine assessment, the serum blood samples were stored at −80°C, then they were sent to the laboratory on dry ice. The measurements of hs-CRP, IL-1β, IL-6, and TNF-α cytokine levels were described previously in detail (Marques-Vidal et al., 2011). Briefly, hs-CRP levels were assessed by immunoassay and latex HS (IMMULITE 1000-High, Diagnostic Products Corporation, Los Angeles, CA, USA). Cytokine levels were measured using a multiplexed particle-based flow cytometric cytokine assay on the flow cytometer (FC500 MPL, BeckmanCoulter, Nyon, Switzerland), thus following the manufacturer’s instructions. The lower limits of detection for IL-1β, IL-6, and TNF-α were 0.2 pg/mL. Intra- and inter-assay coefficients of variation were, respectively, 15% and 16.7% for IL-1β, 16.9% and 16.1% for IL-6, and 12.5% and 13.5% for TNF-α. For quality control, repeat measurements were performed on 80 subjects randomly selected from the initial sample. Individuals with hs-CRP levels above 20 mg/L were assigned a value of 20 by the manufacturer therefore were removed from the hs-CRP analyses as indicative of acute inflammation.
 
-## Serological analyses
+### Serological analyses
 
 To assess the humoral responses to a total of 38 antigens derived from 22 persistent infectious agents, serum samples were analyzed by the Infections and Cancer Epidemiology Division at the German Cancer Research Center (Deutsches Krebsforschungszentrum [DKFZ]) in Heidelberg (Waterboer et al., 2005; Waterboer et al., 2006). Studied pathogens included 15 viruses (BKV, JCV, HPyV6, WUPyV, HSV-1, HSV-2, VZV, EBV, CMV, HHV-6A, HHV-6B, HHV-7, KSHV, PVB-19, and rubella virus); six bacteria (C. diphteriae, C. tetani, C. trachomatis, F. nucleatum, H. pylori, and S. gallolyticus); and one parasite (T. gondii) (for details, see Appendix 1—table 1). The seroreactivity was measured at a serum dilution of 1:1000 by using multiplex serology based on glutathione S-transferase fusion capture immunosorbent assays combined with fluorescent bead technology. For each infectious agent tested, the antibody responses were measured for one to six antigens and then expressed as a binary result (IgG positive or negative), based on the predefined median fluorescence intensity thresholds. To define overall seropositivity against infectious agents when more than one antigen was used, we applied the pathogen-specific algorithms suggested by the manufacturer (see references in Appendix 1—table 1).
 
-## Statistical analyses
+### Statistical analyses
 
 Univariable and multivariable Cox proportional hazard models were used to explore the relationship between risk factors and CHD incidence in the CoLaus|PsyCoLaus study. Each variable was first screened in the univariable model. To identify potential confounding due to population structure, we also tested the top three genetic principal components (PC1, PC2, and PC3) for association with CHD. We then examined the proportional hazards assumption of the significant (p < 0.05) covariates by using the scaled Schoenfeld residuals. The residuals were plotted over time for each covariate to test for time independence. Risk factors significantly associated with CHD in the univariable model were further evaluated using pairwise correlations. Finally, the identified risk factors were assessed using multivariable stepwise Cox regression analysis, adjusted for competing risk (i.e., SCORE2), socioeconomic status (i.e., gross monthly household income), and statin intake. Potential multicollinearity between statistically significant factors (p < 0.05) were identified using VIFs. The existence of multicollinearity between co-variates was determined by a VIF value > 2. We performed all statistical analyses using R (version 4.2.1).

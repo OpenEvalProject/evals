@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Centre for Research in Neuroscience, Department of Medicine, The Research Institute of the McGill University Health Centre Montreal Canada
-2. https://ror.org/01pxwe438 Integrated Program in Neuroscience, McGill University Montreal Canada
-3. https://ror.org/01pxwe438 Department of Biology, McGill University Montreal Canada
+1. Centre for Research in Neuroscience, Department of Medicine, The Research Institute of the McGill University Health Centre Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Integrated Program in Neuroscience, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+3. Department of Biology, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 
 † Corresponding author
 

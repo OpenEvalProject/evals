@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.18432.001 There is evidence that lipids can be allosteric regulators of membrane protein structure and activation. However, there are no data showing how exactly the regulation emerges from specific lipid-protein interactions. Here we show in atomistic detail how the human β 2 -adrenergic receptor (β 2 AR) – a prototypical G protein-coupled receptor – is modulated by cholesterol in an allosteric fashion. Extensive atomistic simulations show that cholesterol regulates β 2 AR by limiting its conformational variability. The mechanism of action is based on the binding of cholesterol at specific high-affinity sites located near the transmembrane helices 5–7 of the receptor. The alternative mechanism, where the β 2 AR conformation would be modulated by membrane-mediated interactions, plays only a minor role. Cholesterol analogues also bind to cholesterol binding sites and impede the structural flexibility of β 2 AR, however cholesterol generates the strongest effect. The results highlight the capacity of lipids to regulate the conformation of membrane receptors through specific interactions. DOI: http://dx.doi.org/10.7554/eLife.18432.001
+There is evidence that lipids can be allosteric regulators of membrane protein structure and activation. However, there are no data showing how exactly the regulation emerges from specific lipid-protein interactions. Here we show in atomistic detail how the human β2-adrenergic receptor (β2AR) – a prototypical G protein-coupled receptor – is modulated by cholesterol in an allosteric fashion. Extensive atomistic simulations show that cholesterol regulates β2AR by limiting its conformational variability. The mechanism of action is based on the binding of cholesterol at specific high-affinity sites located near the transmembrane helices 5–7 of the receptor. The alternative mechanism, where the β2AR conformation would be modulated by membrane-mediated interactions, plays only a minor role. Cholesterol analogues also bind to cholesterol binding sites and impede the structural flexibility of β2AR, however cholesterol generates the strongest effect. The results highlight the capacity of lipids to regulate the conformation of membrane receptors through specific interactions.
 
 ## Introduction
 
@@ -34,89 +34,289 @@ The lipid raft concept (Lingwood and Simons, 2010; Allen et al., 2007) essential
 
 The best known case is β2AR, which is a prototype of cholesterol-interacting GPCRs. β2AR belongs to the family of class A GPCRs. GPCRs belonging to this class show a high structural similarity and functional diversity. The literature reporting on the specific functional role of cholesterol and other lipids is extensive (Pucadyil and Chattopadhyay, 2006; Gimpl, 2016). It has been experimentally shown that cholesterol affects the conformation (Muth et al., 2011; Casiraghi et al., 2016) and function (Gimpl et al., 1997; Paila et al., 2011; Pucadyil and Chattopadhyay, 2006; Casiraghi et al., 2016; Jafurulla et al., 2014) of many GPCRs. Based on X-ray crystal structures cholesterol has specific contacts with β2AR (Cherezov et al., 2007; Hanson et al., 2008), suggesting that β2AR has binding sites for cholesterol. Spectroscopic (Gater et al., 2014) and MD simulation (Cang et al., 2013; Prasanna et al., 2014; Lee et al., 2012) studies have reported direct interactions between cholesterol and GPCRs, including β2AR. Experimental data show that cholesterol binding to β2AR changes its structural properties (Hanson et al., 2008; Zocher et al., 2012). Cholesterol is also necessary in crystallizing β2AR (Cherezov et al., 2007; Hanson et al., 2008), and cholesterol and its analogue cholesteryl hemisuccinate (CHS) have been exhibited to improve β2AR stability (Zocher et al., 2012; Loll, 2014). Since the structure and function of GPCRs are closely related, cholesterol binding specifically to β2AR is also expected to change the functional properties of the receptor. Indeed experimental studies indicate that cholesterol has a functional role in β2AR (Paila et al., 2011; Pontier et al., 2008; Xiang et al., 2002). Further, inhibition of β2AR-associated signaling has been observed with increasing membrane cholesterol content (Pontier et al., 2008). However, as with GPCRs in general, the atomic-scale mechanism cholesterol uses to regulate β2AR is not known. Does cholesterol modulate β2AR activity through membrane-mediated effects by altering the physical properties of the membrane? Alternatively if regulation takes place through specific direct interactions, then what is the atom-scale mechanism?
 
-We performed extensive atomistic MD simulations (totaling >100 μs, Table 1) to clarify the mechanism responsible for the modulatory role of cholesterol on β2AR. In essence, we show that as cholesterol concentration reaches ~10 mol%, the conformational distribution of β2AR is drastically altered. The mechanism of action is based on the binding of cholesterol at specific high-affinity sites of the receptor.10.7554/eLife.18432.003Table 1.Descriptions of systems simulated: β2AR in bilayers with varying lipid compositions. ‘Chol’ stands for cholesterol.DOI: http://dx.doi.org/10.7554/eLife.18432.003Systems*Initial lipid arrangement around β2AR Lipids Sterol mol % No. of repeats†Time (μs)‡DOPCRandomDOPC033×2.5 DOPC-activeRandomDOPC033×2.5 C H O L Chol2RandomDOPC + Chol233×2.5 R A N D O M Chol5RandomDOPC + Chol533×2.5 Chol10RandomDOPC + Chol1033×2.5 Chol25RandomDOPC + Chol2522×2Chol40RandomDOPC + Chol4033×2.5 Chol40-activeRandomDOPC + Chol4033×2.5 C H S CHS10RandomDOPC + CHS1022×2CHS40RandomDOPC + CHS4022×2CHSA10[A for anionic]RandomDOPC + CHSA1012CHSA40RandomDOPC + CHSA4012O X Y S T E R O L 27-OH-CholRandom[16 mol % Chol was randomly replaced by 27-OH-Chol]DOPC +Chol +27-OH-Chol25(4 mol% 27-OH-Chol + 21 mol% Chol)32 + 1 + 1 4β-CholRandom[16 mol% Chol was randomly replaced by 4β-OH-Chol]DOPC +Chol +4β-OH-Chol25(4 mol% 4β-OH-Chol + 21 mol% Chol)31 + 1 + 1 Chol-Bound§8 cholesterols bound at sites predicted by simulationsDOPC + Chol1.933×2.5 B O U N DChol-IC12 Chol bound at IC1DOPC + Chol<1 22×2CHS-IC12 CHS bound at IC1DOPC + CHS<1 12CHSA-IC12 CHSA bound at IC1DOPC + CHSA<1 12PC-20:0–22:1 c13 [Double bond at carbon 13]RandomPC-20:0–22:1 c13 033×1.5 Pyrene20RandomDOPC +20 mol% pyrene033×1.5 *In the DOPC-active and Chol40-active systems, we used the active-state conformation of the receptor as the starting structure; for all the other systems, we used the inactive conformation.†For systems with no sterols initially bound to β2AR, i.e., the systems which started with a random distribution of lipids, a number of different repeat simulations for each lipid composition were performed with different initial lipid arrangements around the receptor. For systems with sterols initially bound to β2AR (seed and BOUND), different replicas were generated with different starting velocities.‡Listed are the simulation times of production simulations; the equilibration time of the systems (100 ns) is not included.§In the Chol-Bound system, eight cholesterol molecules were initially (at time zero of the simulation) bound at eight binding sites predicted by the present simulations, while the rest of the system had no cholesterol at all.
+We performed extensive atomistic MD simulations (totaling >100 μs, Table 1) to clarify the mechanism responsible for the modulatory role of cholesterol on β2AR. In essence, we show that as cholesterol concentration reaches ~10 mol%, the conformational distribution of β2AR is drastically altered. The mechanism of action is based on the binding of cholesterol at specific high-affinity sites of the receptor.
+
+**Table 1.**
+ Descriptions of systems simulated: β2AR in bilayers with varying lipid compositions. ‘Chol’ stands for cholesterol.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Systems*</th>
+      <th>Initial lipid arrangement around β2AR</th>
+      <th>Lipids</th>
+      <th>Sterol mol %</th>
+      <th>No. of repeats†</th>
+      <th>Time (μs)‡</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>DOPC</td>
+      <td>Random</td>
+      <td>DOPC</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3×2.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DOPC-active</td>
+      <td>Random</td>
+      <td>DOPC</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3×2.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="6">C H O L</td>
+      <td>Chol2</td>
+      <td>Random</td>
+      <td>DOPC + Chol</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3×2.5</td>
+      <td rowspan="12">R A N D O M</td>
+    </tr>
+    <tr>
+      <td>Chol5</td>
+      <td>Random</td>
+      <td>DOPC + Chol</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3×2.5</td>
+    </tr>
+    <tr>
+      <td>Chol10</td>
+      <td>Random</td>
+      <td>DOPC + Chol</td>
+      <td>10</td>
+      <td>3</td>
+      <td>3×2.5</td>
+    </tr>
+    <tr>
+      <td>Chol25</td>
+      <td>Random</td>
+      <td>DOPC + Chol</td>
+      <td>25</td>
+      <td>2</td>
+      <td>2×2</td>
+    </tr>
+    <tr>
+      <td>Chol40</td>
+      <td>Random</td>
+      <td>DOPC + Chol</td>
+      <td>40</td>
+      <td>3</td>
+      <td>3×2.5</td>
+    </tr>
+    <tr>
+      <td>Chol40-active</td>
+      <td>Random</td>
+      <td>DOPC + Chol</td>
+      <td>40</td>
+      <td>3</td>
+      <td>3×2.5</td>
+    </tr>
+    <tr>
+      <td rowspan="4">C H S</td>
+      <td>CHS10</td>
+      <td>Random</td>
+      <td>DOPC + CHS</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2×2</td>
+    </tr>
+    <tr>
+      <td>CHS40</td>
+      <td>Random</td>
+      <td>DOPC + CHS</td>
+      <td>40</td>
+      <td>2</td>
+      <td>2×2</td>
+    </tr>
+    <tr>
+      <td>CHSA10[A for anionic]</td>
+      <td>Random</td>
+      <td>DOPC + CHSA</td>
+      <td>10</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CHSA40</td>
+      <td>Random</td>
+      <td>DOPC + CHSA</td>
+      <td>40</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">O X Y S T E R O L</td>
+      <td>27-OH-Chol</td>
+      <td>Random[16 mol % Chol was randomly replaced by 27-OH-Chol]</td>
+      <td>DOPC +Chol +27-OH-Chol</td>
+      <td>25(4 mol% 27-OH-Chol + 21 mol% Chol)</td>
+      <td>3</td>
+      <td>2 + 1 + 1</td>
+    </tr>
+    <tr>
+      <td>4β-Chol</td>
+      <td>Random[16 mol% Chol was randomly replaced by 4β-OH-Chol]</td>
+      <td>DOPC +Chol +4β-OH-Chol</td>
+      <td>25(4 mol% 4β-OH-Chol + 21 mol% Chol)</td>
+      <td>3</td>
+      <td>1 + 1 + 1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Chol-Bound§</td>
+      <td>8 cholesterols bound at sites predicted by simulations</td>
+      <td>DOPC + Chol</td>
+      <td>1.9</td>
+      <td>3</td>
+      <td>3×2.5</td>
+      <td rowspan="4">B O U N D</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Chol-IC1</td>
+      <td>2 Chol bound at IC1</td>
+      <td>DOPC + Chol</td>
+      <td>&lt;1</td>
+      <td>2</td>
+      <td>2×2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CHS-IC1</td>
+      <td>2 CHS bound at IC1</td>
+      <td>DOPC + CHS</td>
+      <td>&lt;1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CHSA-IC1</td>
+      <td>2 CHSA bound at IC1</td>
+      <td>DOPC + CHSA</td>
+      <td>&lt;1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PC-20:0–22:1 c13 [Double bond at carbon 13]</td>
+      <td>Random</td>
+      <td>PC-20:0–22:1 c13</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3×1.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pyrene20</td>
+      <td>Random</td>
+      <td>DOPC +20 mol% pyrene</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3×1.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*In the DOPC-active and Chol40-active systems, we used the active-state conformation of the receptor as the starting structure; for all the other systems, we used the inactive conformation.†For systems with no sterols initially bound to β2AR, i.e., the systems which started with a random distribution of lipids, a number of different repeat simulations for each lipid composition were performed with different initial lipid arrangements around the receptor. For systems with sterols initially bound to β2AR (seed and BOUND), different replicas were generated with different starting velocities.‡Listed are the simulation times of production simulations; the equilibration time of the systems (100 ns) is not included.§In the Chol-Bound system, eight cholesterol molecules were initially (at time zero of the simulation) bound at eight binding sites predicted by the present simulations, while the rest of the system had no cholesterol at all._
 
 ## Results
 
-## Cholesterol restricts β2AR conformation
+### Cholesterol restricts β2AR conformation
 
-We first studied the impact of cholesterol on the conformational distribution of β
+We first studied the impact of cholesterol on the conformational distribution of β2AR by systematically increasing the cholesterol concentration from 0 to 40 mol% in a DOPC (1,2-dioleoyl-sn-glycero-3-phosphocholine) bilayer. Crystallographic studies and previous biophysical and biochemical studies have shown that helices 5–6 (H5-H6) (Figure 1A) constitute a highly dynamic region of β2AR (Kobilka, 2013). Upon activation, the most dramatic conformational change, which is conserved among many GPCRs, is a 7–14 Å outward movement of the intracellular end of H6 from the heptahelical core of the receptor (Manglik and Kobilka, 2014; Kobilka, 2013). The large rearrangement in the G protein-coupling interface is accompanied by a comparatively subtle change in the ligand-binding pocket. In a conformational change from the inactive to the active state β2AR, H5 (around S2075.46) has been found to move inward by 2 Å to establish an optimal interaction between the agonist and the two anchor sites (D1133.32/N3127.39 and S2035.42/S2045.43/S2075.46) on the receptor (Kobilka, 2013).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig1-v2.jpg)
 
-**Figure 1.:** 2AR.(A) The distances between the Cα atoms of D1133.32–S2075.46 (distance defined as LL) and R1313.50–E2686.30 (LG) pairs used to measure the fluctuations at the ligand and G-protein binding sites, respectively. (B–C) The conformational distributions of β2AR in membranes with 0 and 10 mol% cholesterol (Chol) as a function of LL and LG. The gray dotted lines represent the corresponding LL and LG values in the inactive crystal structure of β2AR (Hanson et al., 2008). The cartoon diagram shows the fluctuations of LL and LG at the ligand and G-protein binding sites of the receptor, respectively. (D–E) The time evolution of LL (light red) and LG (light blue) in systems with 0 and 10 mol% cholesterol. Corresponding 50-point running averages are shown in dark colors. (F) Standard deviation for the distribution of the distance between the intracellular (IC) (or extracellular (EC)) end of H5 and its average position, and its dependence on whether the given end of H5 is in contact with cholesterol or not; similarly for H6.DOI: http://dx.doi.org/10.7554/eLife.18432.004
+**Figure 1.:** (A) The distances between the Cα atoms of D1133.32–S2075.46 (distance defined as LL) and R1313.50–E2686.30 (LG) pairs used to measure the fluctuations at the ligand and G-protein binding sites, respectively. (B–C) The conformational distributions of β2AR in membranes with 0 and 10 mol% cholesterol (Chol) as a function of LL and LG. The gray dotted lines represent the corresponding LL and LG values in the inactive crystal structure of β2AR (Hanson et al., 2008). The cartoon diagram shows the fluctuations of LL and LG at the ligand and G-protein binding sites of the receptor, respectively. (D–E) The time evolution of LL (light red) and LG (light blue) in systems with 0 and 10 mol% cholesterol. Corresponding 50-point running averages are shown in dark colors. (F) Standard deviation for the distribution of the distance between the intracellular (IC) (or extracellular (EC)) end of H5 and its average position, and its dependence on whether the given end of H5 is in contact with cholesterol or not; similarly for H6.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** 2AR in lipid bilayers with various cholesterol (Chol) concentrations.In panels (A–F) the distributions are plotted as a function of LL (distance between the Cα atoms of D1133.32 and S2075.46) at the ligand binding site and LG (distance between the Cα atoms of R1313.50 and E2686.30) at the G protein-binding site. (A–E) Starting from situations where no cholesterol molecules were initially bound to β2AR, distributions are plotted over all independent trajectories of a given system, where the equilibration time (the first 100 ns) was discarded from the analysis. (F) β2AR conformational distribution in control simulations, where cholesterol molecules were initially bound at the eight interaction sites of β2AR predicted by our simulations, but no further cholesterol was in the membrane (total (average) cholesterol concentration 1.9 mol%). Here, there is reason to keep in mind the rapid migration of cholesterols away from the receptor surface when the cholesterol concentration is low (see main text and Figure 5), implying that panel (F) corresponds to cholesterol-rich conditions in the vicinity of the receptor at very short times but to cholesterol-poor conditions at long times.DOI: http://dx.doi.org/10.7554/eLife.18432.005
+**Figure 1—figure supplement 1.:** In panels (A–F) the distributions are plotted as a function of LL (distance between the Cα atoms of D1133.32 and S2075.46) at the ligand binding site and LG (distance between the Cα atoms of R1313.50 and E2686.30) at the G protein-binding site. (A–E) Starting from situations where no cholesterol molecules were initially bound to β2AR, distributions are plotted over all independent trajectories of a given system, where the equilibration time (the first 100 ns) was discarded from the analysis. (F) β2AR conformational distribution in control simulations, where cholesterol molecules were initially bound at the eight interaction sites of β2AR predicted by our simulations, but no further cholesterol was in the membrane (total (average) cholesterol concentration 1.9 mol%). Here, there is reason to keep in mind the rapid migration of cholesterols away from the receptor surface when the cholesterol concentration is low (see main text and Figure 5), implying that panel (F) corresponds to cholesterol-rich conditions in the vicinity of the receptor at very short times but to cholesterol-poor conditions at long times.
 
 In the present work where we started from the inactive structure of β2AR (Manna et al., 2015), we calculated the distance between the Cα atoms of D1133.32 and S2075.46 (referred to as LL) to measure the displacement of H5 in the ligand-binding site, and the distance between the Cα atoms of R1313.50 and E2686.30 (referred to as LG) to determine the displacement of H6 in the G protein-binding site (Figure 1A); the position of H3 does not change noticeably (RMSD < 0.8 Å) during the simulations. These two parameters (LL and LG) have been used in many previous studies to monitor changes in β2AR conformation (Manglik and Kobilka, 2014; Kobilka, 2013; Nygaard et al., 2013; Dror et al., 2009; Ozcan et al., 2013; Dror et al., 2011; Manna et al., 2015), thus here we discuss the conformational distribution of the receptor as a function of LL and LG (Figure 1B,C and Figure 1—figure supplement 1). In the inactive crystal structure, the LL and LG values are 12.07 and 11 Å, respectively (Hanson et al., 2008).
 
 In a cholesterol-free DOPC bilayer, we find β2AR to adopt a wide range of conformations with LL varying between ~11.5–17.5 Å and LG ranging between ~7.5–12.5 Å (Figure 1B). The receptor populates two major conformational states. One of them has a relatively open G protein site (LG being 10–12 Å) and a smaller ligand-binding site (LL ~ 13 ± 1 Å). The other conformation is characterized by a shift of ~3–4 Å from the intracellular end of H6 towards the receptor core that blocks the G protein interface (LG ~ 8.5 Å). At the same time, the ligand-binding pocket expands as the extracellular part of H5 moves ~ 4–5 Å away from H3 (LLnow ~16 ± 1 Å). This conformation represents an alternative inactive structure of the receptor, as both changes occur in the opposite direction compared to the case of agonist binding (Kobilka, 2013); we do not observe any transition to the active state of β2AR. Figure 1D shows the receptor oscillating between the different inactive conformations during 2.5 µs. The closing of the intracellular G protein-binding surface is found to correlate with the opening of the extracellular ligand-binding pocket, and vice-versa (Figure 1D). The conformational correlation between the two distal sites supports the view of allosteric regulation in GPCRs (Kobilka, 2013; Ozcan et al., 2013).
 
-In the presence of cholesterol, the picture changes quite dramatically. With a cholesterol concentration of 10 mol%, the conformational flexibility of β
+In the presence of cholesterol, the picture changes quite dramatically. With a cholesterol concentration of 10 mol%, the conformational flexibility of β2AR reduces significantly (Figure 1C). The receptor stays predominantly in one conformation and no further opening of the ligand-binding site or the opening/closing of the G protein-binding site is observed, unlike in a cholesterol-free membrane. As shown in Figure 1E, LL and LG fluctuate around ~13 and~9.5 Å, respectively. The slowing down of the movements of H5 and H6 correlates with the observed high-density spots of cholesterol at these helices (IC2 and EC1 in Figure 2 discussed in detail below). To further quantify this, Figure 1F depicts the standard deviation for the fluctuations of the intracellular and extracellular ends of H5 and H6, when these ends are bound or unbound to cholesterol. The data show that the deviations of these helices from their respective average positions are much smaller when they are bound to cholesterol. The effect is particularly strong for the extracellular end of H5 at the ligand-binding site and for the intracellular end of H6 at the G protein-binding site.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-v2.jpg)
 
-**Figure 2.:** 2AR.(A–B) 2D number densities of cholesterol (Chol) around β2AR. The data are averaged over all independent trajectories for a given cholesterol concentration (Table 1) and normalized with respect to the maximum density for that particular cholesterol concentration. The intracellular (IC) and extracellular (EC) bilayer leaflets are depicted separately. The major cholesterol interaction sites (IC1, IC2 and EC1) are marked in the density plots. The IC and EC sides of the transmembrane regions (H1–H7) of β2AR are shown in gray scale (the darker the color, the higher is the number density) and numbered accordingly. (C–D) Cartoon representation of three main cholesterol interaction sites in β2AR. IC1 (H1–H4) and IC2 (H5–H6) are located on the intracellular side, and EC1 comprised of two closely placed cholesterols between H5-H6 and H6-ECL3-H7 is located on the extracellular side of β2AR.DOI: http://dx.doi.org/10.7554/eLife.18432.006
+**Figure 2.:** (A–B) 2D number densities of cholesterol (Chol) around β2AR. The data are averaged over all independent trajectories for a given cholesterol concentration (Table 1) and normalized with respect to the maximum density for that particular cholesterol concentration. The intracellular (IC) and extracellular (EC) bilayer leaflets are depicted separately. The major cholesterol interaction sites (IC1, IC2 and EC1) are marked in the density plots. The IC and EC sides of the transmembrane regions (H1–H7) of β2AR are shown in gray scale (the darker the color, the higher is the number density) and numbered accordingly. (C–D) Cartoon representation of three main cholesterol interaction sites in β2AR. IC1 (H1–H4) and IC2 (H5–H6) are located on the intracellular side, and EC1 comprised of two closely placed cholesterols between H5-H6 and H6-ECL3-H7 is located on the extracellular side of β2AR.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** 2AR involved in cholesterol binding, and cholesterol interaction sites on β2AR.Panels (A–B) (top): Cholesterol occupancy time per residue of β2AR described in terms of the normalized time fraction, where a value of one stands for a contact throughout the simulation trajectory and zero means no contact. Results are given for (A) 10 and (B) 40 mol% of cholesterol. The residues of β2AR are defined to be in contact with cholesterol when any non-hydrogen atom of the residue is within ≤0.5 nm of any heavy atom of cholesterol. The data show that there are several hot spots (blue) as cholesterol binding sites. These plots were averaged from all independent simulations for a given cholesterol concentration, where the equilibration time (the first 100 ns of the simulation) was disregarded from the analysis. Panels (C) (bottom): Interaction sites as obtained from our simulations, are shown from two perspectives around the protein. EC and IC stand for extracellular and intracellular, respectively. Interaction sites at the intracellular (IC) side: IC1 (dark green) between helices (H) 1–4, IC2 (red) between H5 and H6, IC3 (magenta) between H3 and H5, and IC4 (orange) between H1 and H8. Interaction sites at the extracellular (EC) side: EC1 comprised of two closely placed cholesterol molecules between H5 and H6 (cyan) and in space surrounded by H6-ECL3-H7 (green), EC2 (purple) between H3 and H4, and EC3 (blue) between H1-H2-ECL1 (where ECL stands for the extracellular loop).DOI: http://dx.doi.org/10.7554/eLife.18432.007
+**Figure 2—figure supplement 1.:** Panels (A–B) (top): Cholesterol occupancy time per residue of β2AR described in terms of the normalized time fraction, where a value of one stands for a contact throughout the simulation trajectory and zero means no contact. Results are given for (A) 10 and (B) 40 mol% of cholesterol. The residues of β2AR are defined to be in contact with cholesterol when any non-hydrogen atom of the residue is within ≤0.5 nm of any heavy atom of cholesterol. The data show that there are several hot spots (blue) as cholesterol binding sites. These plots were averaged from all independent simulations for a given cholesterol concentration, where the equilibration time (the first 100 ns of the simulation) was disregarded from the analysis. Panels (C) (bottom): Interaction sites as obtained from our simulations, are shown from two perspectives around the protein. EC and IC stand for extracellular and intracellular, respectively. Interaction sites at the intracellular (IC) side: IC1 (dark green) between helices (H) 1–4, IC2 (red) between H5 and H6, IC3 (magenta) between H3 and H5, and IC4 (orange) between H1 and H8. Interaction sites at the extracellular (EC) side: EC1 comprised of two closely placed cholesterol molecules between H5 and H6 (cyan) and in space surrounded by H6-ECL3-H7 (green), EC2 (purple) between H3 and H4, and EC3 (blue) between H1-H2-ECL1 (where ECL stands for the extracellular loop).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** 2AR orthologues around the cholesterol-binding site IC1.The residues that play a major role (contact fraction ≥ 0.4, where one stands for maximum contact and zero for no contact) in cholesterol binding are highlighted. Here for IC1, the residues in the cholesterol consensus motif are highlighted in red. Following sequence alignment, shown are the contact fraction per residue (tan bars) and its occurrence in the set of sequences (cyan bars) [one stands for 100% and zero for no occurrence]. The occurrence represents the extent a particular residue is conserved.DOI: http://dx.doi.org/10.7554/eLife.18432.008
+**Figure 2—figure supplement 2.:** The residues that play a major role (contact fraction ≥ 0.4, where one stands for maximum contact and zero for no contact) in cholesterol binding are highlighted. Here for IC1, the residues in the cholesterol consensus motif are highlighted in red. Following sequence alignment, shown are the contact fraction per residue (tan bars) and its occurrence in the set of sequences (cyan bars) [one stands for 100% and zero for no occurrence]. The occurrence represents the extent a particular residue is conserved.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** 2AR orthologues around the cholesterol-binding site IC2.The residues that play a major role (contact fraction ≥ 0.4, where one stands for maximum contact and zero for no contact) in cholesterol binding are highlighted. Following sequence alignment, shown are the contact fraction per residue (tan bars) and its occurrence in the set of sequences (cyan bars) [one stands for 100% and zero for no occurrence]. The occurrence represents the extent a particular residue is conserved.DOI: http://dx.doi.org/10.7554/eLife.18432.009
+**Figure 2—figure supplement 3.:** The residues that play a major role (contact fraction ≥ 0.4, where one stands for maximum contact and zero for no contact) in cholesterol binding are highlighted. Following sequence alignment, shown are the contact fraction per residue (tan bars) and its occurrence in the set of sequences (cyan bars) [one stands for 100% and zero for no occurrence]. The occurrence represents the extent a particular residue is conserved.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** 2AR orthologues around the cholesterol-binding site EC1.The residues that play a major role (contact fraction ≥ 0.4, where one stands for maximum contact and zero for no contact) in cholesterol binding are highlighted. Following sequence alignment, shown are the contact fraction per residue (tan bars) and its occurrence in the set of sequences (cyan bars) [one stands for 100% and zero for no occurrence]. The occurrence represents the extent a particular residue is conserved.DOI: http://dx.doi.org/10.7554/eLife.18432.010
+**Figure 2—figure supplement 4.:** The residues that play a major role (contact fraction ≥ 0.4, where one stands for maximum contact and zero for no contact) in cholesterol binding are highlighted. Following sequence alignment, shown are the contact fraction per residue (tan bars) and its occurrence in the set of sequences (cyan bars) [one stands for 100% and zero for no occurrence]. The occurrence represents the extent a particular residue is conserved.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp5-v2.jpg)
 
-**Figure 2—figure supplement 5.:** Two-dimensional (2D) averaged and normalized number densities of cholesterol around β2AR shown at low cholesterol concentrations (2 and 5 mol%). The intracellular and extracellular leaflets are depicted separately. The intracellular and extracellular sides of the transmembrane regions of β2AR are shown in gray scale (the darker the color, the higher is the number density), and they are numbered accordingly to show the locations of the individual helices (H1–H7).DOI: http://dx.doi.org/10.7554/eLife.18432.011
+**Figure 2—figure supplement 5.:** Two-dimensional (2D) averaged and normalized number densities of cholesterol around β2AR shown at low cholesterol concentrations (2 and 5 mol%). The intracellular and extracellular leaflets are depicted separately. The intracellular and extracellular sides of the transmembrane regions of β2AR are shown in gray scale (the darker the color, the higher is the number density), and they are numbered accordingly to show the locations of the individual helices (H1–H7).
 
 ![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp6-v2.jpg)
 
-**Figure 2—figure supplement 6.:** (A) The different cholesterol analogues used in the current study. (B–D) Average lipid chain order parameter SCD of DOPC bilayers with different concentrations of cholesterol or cholesterol-analogues. (E–G) Average bilayer thickness in DOPC bilayers with different concentrations of cholesterol or cholesterol-analogues. Error bars for order parameter and thickness are less than 0.02 and 0.005 Å, respectively.DOI: http://dx.doi.org/10.7554/eLife.18432.012
+**Figure 2—figure supplement 6.:** (A) The different cholesterol analogues used in the current study. (B–D) Average lipid chain order parameter SCD of DOPC bilayers with different concentrations of cholesterol or cholesterol-analogues. (E–G) Average bilayer thickness in DOPC bilayers with different concentrations of cholesterol or cholesterol-analogues. Error bars for order parameter and thickness are less than 0.02 and 0.005 Å, respectively.
 
 ![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp7-v2.jpg)
 
-**Figure 2—figure supplement 7.:** 2AR.The average interaction energies for van der Waals (vdW) and electrostatic interactions are determined separately. Error bars are in the range of 0.1–1 kJ/mol. The lower panel represents the oxysterol-containing systems, where a fraction of cholesterol is replaced by 4β-OH-Chol and 27-OH-Chol, respectively, resulting in bilayers with 4 mol% oxysterol and 21 mol% cholesterol.DOI: http://dx.doi.org/10.7554/eLife.18432.013
+**Figure 2—figure supplement 7.:** The average interaction energies for van der Waals (vdW) and electrostatic interactions are determined separately. Error bars are in the range of 0.1–1 kJ/mol. The lower panel represents the oxysterol-containing systems, where a fraction of cholesterol is replaced by 4β-OH-Chol and 27-OH-Chol, respectively, resulting in bilayers with 4 mol% oxysterol and 21 mol% cholesterol.
 
 ![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp8-v2.jpg)
 
-**Figure 2—figure supplement 8.:** 2AR.Normalized 2D average number densities around β2AR: (A–B) CHSA (the deprotonated form of cholesteryl hemisuccinate (CHS)); (C–F) CHS. Densities of sterols in mixed sterol-containing bilayers with other molecules: (G–H) 4β-hydroxy-Chol (4β-OH-Chol); (K–L) 27-hydroxy-Chol (27-OH-Chol). The densities of 4β-OH-Chol and 27-OH-Chol are shown separately: (I–J) 4β-OH-Chol; (M–N) 27-OH-Chol. For descriptions of models, see Table 1. For each system, the intracellular and extracellular bilayer leaflets are depicted separately. The intracellular and extracellular sides of β2AR transmembrane regions (H1–H7) are shown in gray scale (the darker the color, the higher the number density) and numbered accordingly.DOI: http://dx.doi.org/10.7554/eLife.18432.014
+**Figure 2—figure supplement 8.:** Normalized 2D average number densities around β2AR: (A–B) CHSA (the deprotonated form of cholesteryl hemisuccinate (CHS)); (C–F) CHS. Densities of sterols in mixed sterol-containing bilayers with other molecules: (G–H) 4β-hydroxy-Chol (4β-OH-Chol); (K–L) 27-hydroxy-Chol (27-OH-Chol). The densities of 4β-OH-Chol and 27-OH-Chol are shown separately: (I–J) 4β-OH-Chol; (M–N) 27-OH-Chol. For descriptions of models, see Table 1. For each system, the intracellular and extracellular bilayer leaflets are depicted separately. The intracellular and extracellular sides of β2AR transmembrane regions (H1–H7) are shown in gray scale (the darker the color, the higher the number density) and numbered accordingly.
 
 ![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp9-v2.jpg)
 
-**Figure 2—figure supplement 9.:** 2AR in lipid bilayers with different cholesterol analogues.(A–B) Oxysterol-containing systems having 4 mol% of oxysterol (27-OH-Chol or 4β-OH-Chol) and 21% cholesterol. (C–D) DOPC bilayer with 10 mol% and 40 mol% of CHS. Conformational distributions are calculated over all independent trajectories of a given system, where the equilibration time (100 ns) is disregarded from the analysis. The CαD1133.32–CαS2075.46 (defined as LL) and CαR1313.50–CαE2686.30 (LG) distances represent the fluctuations in the ligand and the G protein-binding sites, respectively.DOI: http://dx.doi.org/10.7554/eLife.18432.015
+**Figure 2—figure supplement 9.:** (A–B) Oxysterol-containing systems having 4 mol% of oxysterol (27-OH-Chol or 4β-OH-Chol) and 21% cholesterol. (C–D) DOPC bilayer with 10 mol% and 40 mol% of CHS. Conformational distributions are calculated over all independent trajectories of a given system, where the equilibration time (100 ns) is disregarded from the analysis. The CαD1133.32–CαS2075.46 (defined as LL) and CαR1313.50–CαE2686.30 (LG) distances represent the fluctuations in the ligand and the G protein-binding sites, respectively.
 
 ![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig2-figsupp10-v2.jpg)
 
-**Figure 2—figure supplement 10.:** Specific cholesterol binding site in β2AR with the cholesterol consensus motif displayed with side chain positions of the conserved amino acid residues, as found in (A) the crystal structure (ref. 17) and (B) during our simulation. In the simulation snapshot, residues are colored according to their strength of interaction with cholesterol (red represents the weakest and blue represents the strongest interaction). (C) As to the time-dependent distance between H4 and its average position, as the H4 helix fluctuates around its average location, shown here are results for the standard deviation of the distance fluctuations. Data are given for cases, where IC1 is occupied (blue) or unoccupied (orange) by cholesterol.DOI: http://dx.doi.org/10.7554/eLife.18432.016
+**Figure 2—figure supplement 10.:** Specific cholesterol binding site in β2AR with the cholesterol consensus motif displayed with side chain positions of the conserved amino acid residues, as found in (A) the crystal structure (ref. 17) and (B) during our simulation. In the simulation snapshot, residues are colored according to their strength of interaction with cholesterol (red represents the weakest and blue represents the strongest interaction). (C) As to the time-dependent distance between H4 and its average position, as the H4 helix fluctuates around its average location, shown here are results for the standard deviation of the distance fluctuations. Data are given for cases, where IC1 is occupied (blue) or unoccupied (orange) by cholesterol.
 
 The restricted dynamics of β2AR is also observed at higher cholesterol concentrations (25 and 40 mol%; Figure 1—figure supplement 1D,E). In these cases, the receptor samples a similar conformational space as observed with 10 mol% cholesterol. At lower concentrations (2 and 5 mol%), the distribution of the receptor’s conformation is much wider (Figure 1—figure supplement 1A,B). Particularly when the membrane contains a very small percentage of cholesterol (2 mol%), the range of conformations accessible to β2AR is almost comparable to that of a cholesterol-free membrane.
 
 A broad conformational distribution (Figure 1—figure supplement 1F) is also observed in control simulations, where eight cholesterol molecules were initially placed at the cholesterol-binding sites of β2AR predicted by our simulations (see below), and this receptor-cholesterol complex was then embedded in a cholesterol-free membrane. Here (Figure 1—figure supplement 1F) the concentration of cholesterol in the annular region is therefore high in the beginning of the simulation, while it is zero elsewhere. Cholesterols dissociate from β2AR during the course of the simulation (discussed in detail below) and at long times the system corresponds to a dilute (cholesterol-poor) system, where the total average cholesterol concentration is low (1.9 mol%). One finds that as the data are averaged over the simulation period, the conformational behavior (Figure 1—figure supplement 1F) translates from cholesterol-rich (Figure 1—figure supplement 1E) to cholesterol-poor behavior (Figure 1—figure supplement 1A,B).
 
-Further, we studied the effect of cholesterol on the active conformation of β
+Further, we studied the effect of cholesterol on the active conformation of β2AR in its apo form in the absence of the G protein (Rasmussen et al., 2011). In the active state, the intracellular end of H6 is splayed outward from the helical bundle, providing room for the G protein (Figure 3A). We observe inward swinging of H6 towards H3 in the absence of cholesterol (which occurred in two out of three replica simulations). As shown in Figure 3B,E, the intracellular end of H6 spontaneously approaches H3 with LG dropping from 18.97 Å in the starting active conformation to ~11.5 Å that is comparable to the crystallographically observed inactive conformation of β2AR (LG ~ 11 Å) (Hanson et al., 2008). Such spontaneous deactivation of the receptor in the absence of the intracellular binding partner and cholesterol is in agreement with recent simulations (Dror et al., 2011; Neale et al., 2015) and experimental studies (Rosenbaum et al., 2011). Meanwhile, with 40 mol% cholesterol, we observe that the active-like open conformation is stable during the simulations (Figure 3—figure supplement 1). As shown in Figure 3C,E, the LG value remains stable around 16.5 Å and no deactivation is observed unlike in cholesterol-free systems. Interestingly, here again we found a high cholesterol density at the intracellular segments of H5-H6 (IC2 in Figure 3C,D,F as discussed in detail below).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig3-v2.jpg)
 
-**Figure 3.:** 2AR.Cytosolic view of β2AR (A) in the beginning of a simulation (active state) as well as in representative simulation snapshots in (B) a DOPC bilayer and (C) in the presence of 40 mol% cholesterol. The dotted line represents the distance between the Cα atoms of R1313.50–E2686.30 (defined as LG), used to measure the fluctuation at the G protein-binding site. (D) Simulation snapshot (in the presence of 40 mol% cholesterol) showing cholesterol binding at the interaction sites of β2AR. (E) The time evolution of LG in systems with 0 (light red) and 40 mol% cholesterol (light blue). Corresponding 50-point running averages are shown in dark colors (red, blue). (F) 2D number densities of cholesterol around β2AR (cytosolic view). The individual transmembrane helixes of β2AR are numbered and shown in gray scale (as in Figure 2A,B).DOI: http://dx.doi.org/10.7554/eLife.18432.017
+**Figure 3.:** Cytosolic view of β2AR (A) in the beginning of a simulation (active state) as well as in representative simulation snapshots in (B) a DOPC bilayer and (C) in the presence of 40 mol% cholesterol. The dotted line represents the distance between the Cα atoms of R1313.50–E2686.30 (defined as LG), used to measure the fluctuation at the G protein-binding site. (D) Simulation snapshot (in the presence of 40 mol% cholesterol) showing cholesterol binding at the interaction sites of β2AR. (E) The time evolution of LG in systems with 0 (light red) and 40 mol% cholesterol (light blue). Corresponding 50-point running averages are shown in dark colors (red, blue). (F) 2D number densities of cholesterol around β2AR (cytosolic view). The individual transmembrane helixes of β2AR are numbered and shown in gray scale (as in Figure 2A,B).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** 2AR starting from the active state.The conformational distributions of β2AR in (left) a DOPC bilayer and (right) a DOPC bilayer with 40 mol% cholesterol (Chol) as a function of LL and LG. The gray dotted lines represent the corresponding LL and LG values in the initial active crystal structure of β2AR. The distribution is averaged over the different replicas of each system.DOI: http://dx.doi.org/10.7554/eLife.18432.018
+**Figure 3—figure supplement 1.:** The conformational distributions of β2AR in (left) a DOPC bilayer and (right) a DOPC bilayer with 40 mol% cholesterol (Chol) as a function of LL and LG. The gray dotted lines represent the corresponding LL and LG values in the initial active crystal structure of β2AR. The distribution is averaged over the different replicas of each system.
 
 These results show that cholesterol restricts the intrinsic conformation dynamics of β2AR and governs changes between different conformational states, thereby modulating its function.
 
-## Specific binding of cholesterol
+### Specific binding of cholesterol
 
 In all of the simulations (Table 1), cholesterol is observed to diffuse spontaneously to the receptor’s surface. Time-averaged two-dimensional (2D) number density maps demonstrate that there are preferred cholesterol positions around β2AR (Figure 2A,B).
 
@@ -128,29 +328,45 @@ In addition to the above-discussed cholesterol hot spots, we observed two sites 
 
 Concluding, we find cholesterol to bind to β2AR in specific binding sites. These sites are in agreement with those found in the crystallographic structures of GPCRs (Cherezov et al., 2007; Hanson et al., 2008; Gimpl, 2016; Warne et al., 2011; Liu et al., 2012; Gater et al., 2014).
 
-## Membrane-mediated interactions not the key
+### Membrane-mediated interactions not the key
 
 Is it possible that the effects we observed on β2AR conformation could be due to cholesterol-induced changes in membrane properties, and the changes in β2AR would hence not be due to the specific direct binding of cholesterol in the hot spots? To unlock this issue, we study the conformational properties of β2AR in cholesterol-free membranes whose physical properties (thickness, order, diffusion) match those of membranes with a large concentration of cholesterol.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig4-v2.jpg)
+
+**Figure 4.:** The conformational distribution of β2AR in bilayers composed of (A) long-chain PC-20:0/22:1 c13 lipids and (C) DOPC with 20 mol% pyrene (Pyrene20). (B) 3D-distribution of bilayer thickness in the thicker PC-20:0/22:1 c13 membrane. The receptor is shown as a purple cartoon. (D) 2D number density of pyrene around β2AR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Long-chain PC bilayer properties compared to those of cholesterol-rich and DOPC systems. (A) The average bilayer thickness in several different bilayer systems (see Table 1). (B) The average lipid chain order parameter of a bilayer composed of long-chain PC-20:0/22:1 c13 lipids. Error bars for thickness and order parameter are less than 0.005 Å and 0.02, respectively. Panels (C–F) show results of pyrene-containing bilayer systems. (C) The structure of the polycyclic aromatic hydrocarbon compound pyrene. Bilayer properties of the pyrene-containing membrane: (D) lipid chain order parameter and (E) the average bilayer thickness, in comparison with other cholesterol-containing bilayers. Error bars for thickness are less than 0.005 Å. (F) The probability of finding pyrene at the β2AR surface. The corresponding fit based on exponential decay is shown in red.
+
 Summarizing, the changes in physical membrane properties, similar to those induced by cholesterol, do not restrict the conformational dynamics of β2AR. We conclude that the cause of the observed changes in β2AR conformation and dynamics is the specific binding of cholesterol to β2AR.
 
-## Binding lifetime depends on cholesterol
+### Binding lifetime depends on cholesterol
 
-When cholesterol is specifically bound to β
+When cholesterol is specifically bound to β2AR, how stable is the binding? Figure 5 depicts the time-correlation function of cholesterol binding in the three main binding sites (IC1, IC2, EC1) on β2AR and shows that at low cholesterol concentrations (2–5 mol%) the binding lifetime is short, of the order of 100 ns or less. However, at ~10 mol% there is a clear transition to longer lifetimes (see Video 1 and Video 2) given that the lifetime of binding increases to the microsecond time scale for 10 and 40 mol% cholesterol.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig5-v2.jpg)
 
-**Figure 5.:** (A–C) Time-correlation function of cholesterol (Chol) at the three major interaction sites (IC1, IC2, EC1) on the β2AR surface. Initially cholesterol is bound to the site (distance ≤ 0.5 nm) and the correlation function describes the probability that cholesterol remains bound to the given site for increasing time. Data are shown for DOPC-cholesterol membranes with 2, 5, 10, and 40 mol% of cholesterol. (D–E) Schematic representation showing the transition from fast to slow exchange as cholesterol concentration increases from 2 to 40 mol%. Color code: β2AR (blue), DOPC (thin grey lines), cholesterol molecules bound to the interaction sites (purple), and other cholesterol molecules not bound to the receptor (yellow sticks).DOI: http://dx.doi.org/10.7554/eLife.18432.021
+**Figure 5.:** (A–C) Time-correlation function of cholesterol (Chol) at the three major interaction sites (IC1, IC2, EC1) on the β2AR surface. Initially cholesterol is bound to the site (distance ≤ 0.5 nm) and the correlation function describes the probability that cholesterol remains bound to the given site for increasing time. Data are shown for DOPC-cholesterol membranes with 2, 5, 10, and 40 mol% of cholesterol. (D–E) Schematic representation showing the transition from fast to slow exchange as cholesterol concentration increases from 2 to 40 mol%. Color code: β2AR (blue), DOPC (thin grey lines), cholesterol molecules bound to the interaction sites (purple), and other cholesterol molecules not bound to the receptor (yellow sticks).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/18432/elife-18432-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** 2AR.Time development for the distances of cholesterol molecules from the β2AR surface, where these cholesterol molecules were initially bound at the eight binding sites identified in this study (cholesterol-bound, see Table 1; Figure 2—figure supplement 1). Here, EC1-A and EC1-B stand for the two cholesterol molecules in the EC1 binding site. The rest of the membrane was initially cholesterol-free. Shown here are the data based on the three independent repeats.DOI: http://dx.doi.org/10.7554/eLife.18432.022
+**Figure 5—figure supplement 1.:** Time development for the distances of cholesterol molecules from the β2AR surface, where these cholesterol molecules were initially bound at the eight binding sites identified in this study (cholesterol-bound, see Table 1; Figure 2—figure supplement 1). Here, EC1-A and EC1-B stand for the two cholesterol molecules in the EC1 binding site. The rest of the membrane was initially cholesterol-free. Shown here are the data based on the three independent repeats.
+
+![Video 1.](https://cdn.elifesciences.org/articles/18432/elife-18432-media1.mp4.jpg)
+
+**Video 1.:** Cholesterols interacting at the cholesterol-binding sites are highlighted (yellow at IC1; green at IC2; and blue and red at EC1). Other cholesterols are shown in gray. For clarity, other lipids in a membrane are not shown.
+
+![Video 2.](https://cdn.elifesciences.org/articles/18432/elife-18432-media2.mp4.jpg)
+
+**Video 2.:** Cholesterols interacting at the cholesterol-binding interaction sites are highlighted (yellow and green at IC1; red, blue and orange at IC2; and pink, purple and cyan at EC1). Other cholesterols are shown in gray. For clarity, other lipids in a membrane are not shown.
 
 In three control simulations where cholesterols were initially bound at the eight cholesterol-binding sites identified in our simulations and no further cholesterol was in the bilayer (Figure 5—figure supplement 1), cholesterols underwent rapid unbinding from the majority of the binding sites in a timescale of tens to hundreds of nanoseconds (Figure 5—figure supplement 1), similarly to the short binding lifetime observed for cholesterol-poor systems (2 mol%, Figure 5). However, at a few sites cholesterol stayed for the entire simulation time (IC1 and IC2 in two out of three simulations) or dissociated in the μs timescale (IC3 and EC3 in one simulation).
 
 The results show that the lifetime of cholesterol is of the order of microseconds in the high-affinity binding sites, where the lifetime at large cholesterol concentrations is largely independent of cholesterol concentration.
 
-## Cholesterol analogues interact with β2AR
+### Cholesterol analogues interact with β2AR
 
 We next explore how cholesterol analogues, in comparison to cholesterol, interact with β2AR. We focus on four different analogues (Table 1): (i-ii) cholesteryl hemisuccinate (CHS) and its deprotonated form (CHSA), and (iii-iv) two oxysterols, 4β-hydroxycholesterol (4β-OH-Chol) and 27-hydroxycholesterol (27-OH-Chol), oxidized at the cholesterol ring and tail, respectively (Figure 2—figure supplement 6A). As compared to cholesterol, CHS is a more water-soluble cholesterol ester and is widely used in structural biology and biophysical studies as a cholesterol analogue (Zocher et al., 2012; Loll, 2014). Oxysterols, on the other hand, are derivatives of cholesterol with additional oxygen-containing substitutions at different positions of cholesterol (Olkkonen and Hynynen, 2009; Kulig et al., 2015a; Neuvonen et al., 2014). Due to the structural similarities with cholesterol, these analogues mimic cholesterol as to the effects on membrane properties (e.g., increasing bilayer order and thickness), although to different extents (Figure 2—figure supplement 6) (Kulig et al., 2015a, 2015b).
 
@@ -158,7 +374,73 @@ CHSA is found to interact strongly with β2AR due to the enhanced electrostatic 
 
 4β-OH-Chol interacts only weakly with β2AR (Figure 2—figure supplement 7). Almost all of the interaction sites on the receptor surface are occupied by cholesterol rather than 4β-OH-Chol (Figure 2—figure supplement 8G–J). As a result, the average density maps, showing the lateral arrangement of these sterols around β2AR, are similar to those of 10 and 40 mol% cholesterol systems (Figure 2A), and reproducible. Unlike 4β-OH-Chol, 27-OH-Chol prefers to interact with the receptor directly (Figure 2—figure supplement 7). For the IC1 site, 27-OH-Chol competes, though weakly, with cholesterol, while at EC1 and IC3, 27-OH-Chol exhibits preference over cholesterol (Figure 2—figure supplement 8K–N).
 
-Altogether, our results show that also other cholesterol-like molecules interact with β2AR and may occupy the same binding sites on the receptor surface as cholesterol. However, the effects of cholesterol-analogues on β2AR are weaker compared to those induced by cholesterol (Figure 2—figure supplement 9). All the cholesterol analogues studied here have a rigid ring structure, yet their slightly different chemical compositions influence their occupancy as well as the strength of binding to the cholesterol-binding sites (Table 2). This is assessed here in terms of the van der Waals energy, which as a short-range interaction reflects how strongly two molecules are in contact and therefore serves as an appropriate measure for the gravity of lipid-protein binding in the binding site.10.7554/eLife.18432.025Table 2.Interactions* of sterols at the three high-affinity cholesterol-binding sites.DOI: http://dx.doi.org/10.7554/eLife.18432.025Cholesterol/Cholesterol analogueHigh-affinity cholesterol interaction sites IC1 IC2 EC1 vdW interaction energy (kJ/mol)No. of contactsvdW interaction energy (kJ/mol)No. of contactsvdW interaction energy (kJ/mol)No. of contactsCholesterol†−138.04 ± 0.20 141.02 ± 0.22 −95.06 ± 0.12 90.65 ± 0.16 −129.51 ± 0.29104.38 ± 0.28 CHS−29.63 ± 0.14 28.78 ± 0.16 −98.75 ± 0.11 96.30 ± 0.16 --27-OH-Chol−32.17 ± 0.30 34.95 ± 0.33 −22.69 ± 0.23 28.41 ± 0.28 −132.85 ± 0.27 120.20 ± 0.30 4β-OH-Chol----−41.80 ± 0.48 33.41 ± 0.42 * Shown are the total van der Waals (vdW) interaction energy and the number of contacts between cholesterol and β2AR, when cholesterol is in the IC1, IC2, or EC1 binding site (and similarly for the cholesterol analogues).† Calculations are based on systems having ≥10 mol% cholesterol. Shown here are the average values over different trajectories.
+Altogether, our results show that also other cholesterol-like molecules interact with β2AR and may occupy the same binding sites on the receptor surface as cholesterol. However, the effects of cholesterol-analogues on β2AR are weaker compared to those induced by cholesterol (Figure 2—figure supplement 9). All the cholesterol analogues studied here have a rigid ring structure, yet their slightly different chemical compositions influence their occupancy as well as the strength of binding to the cholesterol-binding sites (Table 2). This is assessed here in terms of the van der Waals energy, which as a short-range interaction reflects how strongly two molecules are in contact and therefore serves as an appropriate measure for the gravity of lipid-protein binding in the binding site.
+
+**Table 2.**
+ Interactions* of sterols at the three high-affinity cholesterol-binding sites.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Cholesterol/Cholesterol analogue</th>
+      <th colspan="6">High-affinity cholesterol interaction sites</th>
+    </tr>
+    <tr>
+      <th colspan="2">IC1</th>
+      <th colspan="2">IC2</th>
+      <th colspan="2">EC1</th>
+    </tr>
+    <tr>
+      <th>vdW interaction energy (kJ/mol)</th>
+      <th>No. of contacts</th>
+      <th>vdW interaction energy (kJ/mol)</th>
+      <th>No. of contacts</th>
+      <th>vdW interaction energy (kJ/mol)</th>
+      <th>No. of contacts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cholesterol†</td>
+      <td>−138.04 ± 0.20</td>
+      <td>141.02 ± 0.22</td>
+      <td>−95.06 ± 0.12</td>
+      <td>90.65 ± 0.16</td>
+      <td>−129.51 ± 0.29</td>
+      <td>104.38 ± 0.28</td>
+    </tr>
+    <tr>
+      <td>CHS</td>
+      <td>−29.63 ± 0.14</td>
+      <td>28.78 ± 0.16</td>
+      <td>−98.75 ± 0.11</td>
+      <td>96.30 ± 0.16</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>27-OH-Chol</td>
+      <td>−32.17 ± 0.30</td>
+      <td>34.95 ± 0.33</td>
+      <td>−22.69 ± 0.23</td>
+      <td>28.41 ± 0.28</td>
+      <td>−132.85 ± 0.27</td>
+      <td>120.20 ± 0.30</td>
+    </tr>
+    <tr>
+      <td>4β-OH-Chol</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>−41.80 ± 0.48</td>
+      <td>33.41 ± 0.42</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Shown are the total van der Waals (vdW) interaction energy and the number of contacts between cholesterol and β2AR, when cholesterol is in the IC1, IC2, or EC1 binding site (and similarly for the cholesterol analogues).† Calculations are based on systems having ≥10 mol% cholesterol. Shown here are the average values over different trajectories._
 
 The results in Table 2 show that among the three major interaction sites, the binding of CHS at IC1 is much weaker than that of cholesterol. At IC2 the strength of interaction of CHS and cholesterol is comparable. Meanwhile, the extracellular EC1 site remains unoccupied by CHS indicating the binding energy to be low. As to the two oxysterols, 4β-OH-Chol interacts with β2AR only at EC1 and the interaction is weak, while 27-OH-Chol binds at EC1 as tightly as cholesterol, but its interaction at the two other binding sites (IC1 and IC2) is much weaker than in the case of cholesterol. Concluding, CHS interacts at IC2 as strongly as cholesterol but its interactions at IC1 and EC1 are negligible compared to those of cholesterol. The oxysterol 27-OH-Chol interacts at EC1 as strongly as cholesterol but its interactions at IC1 and IC2 are negligible compared to those of cholesterol. The oxysterol 4β-OH-Chol does not interact with β2AR to a significant degree.
 
@@ -186,21 +468,21 @@ To our knowledge, the results presented in this work provide the first atomic-sc
 
 We performed all-atom molecular dynamics simulations of β2AR embedded in lipid bilayers with various lipid compositions (Table 1) using the GROMACS 4.6.x software package.
 
-## Force field parameters
+### Force field parameters
 
 All simulations were performed using the GROMACS 4.6.x package (Berendsen et al., 1995; Hess et al., 2008). The all-atom OPLS-AA (optimized potentials for liquid simulations) force field was used to parameterize the protein, ions, and pyrene (Jorgensen et al., 1996; Kaminski et al., 2001). Force field parameters for cholesterol, cholesteryl hemisuccinate, and oxysterols were taken from previously published papers (Manna et al., 2015; Kulig et al., 2015a, 2015b, 2014). For the studied phosphatidylcholines (DOPC and PC-20:0/22:1 c13), we used new torsional and Lennard-Jones parameters derived for saturated (Maciejewski et al., 2014) and unsaturated hydrocarbons (Kulig et al., 2015c, 2016) and the torsional potential developed for the glycerol backbone and the phosphatidylcholine head group (Maciejewski et al., 2014). The TIP3P model, which is compatible with the OPLS parameterization, was used for water molecules (Jorgensen et al., 1983).
 
-## Simulation protocols
+### Simulation protocols
 
 All simulations of the systems considered in this work (Table 1) were performed under the isobaric-isothermal (NpT) ensemble. A time step of 2 fs was used for integrating the equations of motion. Periodic boundary conditions were applied in all three directions of the system. The temperature of the system was maintained at 310 K by employing the v-rescale (stochastic velocity rescaling) thermostat (Bussi et al., 2007) with a time constant of 0.1 ps. The temperatures of the receptor, lipids, and solvent molecules were controlled independently. The pressure of the system (1 bar) was maintained semi-isotropically using the Parrinello–Rahman barostat (Parrinello and Rahman, 1981) with a 1 ps time constant. The LINCS algorithm was applied to preserve hydrogen covalent bond lengths (Hess et al., 1997). Lennard-Jones interactions were cutoff at 1.0 nm. The particle mesh Ewald (PME) method (Essmann et al., 1995) was employed for long-range electrostatic interactions using a real space cutoff of 1.0 nm, β-spline interpolation (order of 6), and a direct sum tolerance of 10−6.
 
-## Protein structure
+### Protein structure
 
 The initial coordinates of β2AR were taken from our recently published work (Manna et al., 2015), in which the structural modifications made for crystallization of the inactive β2AR structure [PDB id: 3D4S] (Hanson et al., 2008) were reverted back to its original sequence. This inactive crystal structure of β2AR bound to the partially inverse agonist timolol was heavily engineered to facilitate crystallization (Hanson et al., 2008). We reverted all the structural modifications from the experimentally determined structure, i.e., we removed mutations (E1223.41W on the transmembrane helix H3 and the N1875.26E mutation on the extracellular loop 2), removed the T4-lysozyme attached between the transmembrane helices 5 and 6, and replaced it with the missing intracellular loop 3. We did not attempt to model the unresolved N-terminal (32 residues) and C-terminal (71 residues) parts. The details of the procedure used to prepare the receptor model for our simulations are described elsewhere (Manna et al., 2015). In the present work, we considered the apo-receptor (without a ligand), as we were interested in the intrinsic dynamics of β2AR.
 
 For simulations with the active-state β2AR conformation, the starting structure was taken from the crystal structure of the receptor bound to an agonist and a Gs protein (Rasmussen et al., 2011). Here again we considered the apo-form of the receptor without the ligand and the G protein. Additionally, we removed the lysozyme and modeled the missing loop regions (A176-H178 and F240-F264), but the mutations were kept as such.
 
-## System setup
+### System setup
 
 We simulated β2AR embedded in a number of lipid bilayers (Table 1) with varying lipid composition. The lipid contents used in the studies were as follows:
 
@@ -214,40 +496,52 @@ Additional simulations were performed where cholesterol or its analogues were in
 
 The systems investigated in this study are summarized in Table 1. The total simulation time for the atomistic systems studied in this work covers a period of more than 100 μs.
 
-## Analysis of helix deviation
+### Analysis of helix deviation
 
-For calculation of deviations of helix ends, we first calculated their time series of X, Y, and Z coordinates. The coordinates were then divided into two groups based on whether the upper and lower halves of the helixes (backbone atoms) were in contact ( ≤ 0.5 nm) with cholesterol (heavy atom) or not. Separately in each group, the distance from the average point of the group at each time frame (say ith frame) was calculated by:di2=(xi−xg)2+(yi−yg)2+ (zi−zg )2,
+For calculation of deviations of helix ends, we first calculated their time series of X, Y, and Z coordinates. The coordinates were then divided into two groups based on whether the upper and lower halves of the helixes (backbone atoms) were in contact ( ≤ 0.5 nm) with cholesterol (heavy atom) or not. Separately in each group, the distance from the average point of the group at each time frame (say ith frame) was calculated by:
 
-where xi, yi, zi were the coordinates of the ith frame, and xg, yg, zg were the average values. The standard deviation of each group was then calculated by:σ= 1Ng∑i=1Ngdi2
+$$
+d_{i}^{2}=(x_{i}−x_{g})^{2}+(y_{i}−y_{g})^{2}+ (z_{i}−z_{g })^{2},
+$$
+
+where $x_{i}$, $y_{i}$, $z_{i}$ were the coordinates of the ith frame, and $x_{g}$, $y_{g}$, $z_{g}$ were the average values. The standard deviation of each group was then calculated by:
+
+$$
+\sigma= \sqrt{\frac{1}{N_{g}}\sumi=1N_{g}d_{i}^{2}}
+$$
 
 The average standard deviation of different simulations was calculated as a weighted average depending on the number of frames (Ng) of the group in each simulation.
 
-## Two-dimensional (2D) number density map
+### Two-dimensional (2D) number density map
 
 The 2D number density maps were calculated using the g_densmap tool of GROMACS. The two bilayer leaflets were calculated separately. The output was then processed (using an in-house script) to normalize the maximum number density to one. We calculated the 2D number densities of cholesterol (non-hydrogen atoms) and β2AR (backbone atoms of transmembrane region) separately.
 
-## Cholesterol occupancy time per residue
+### Cholesterol occupancy time per residue
 
 A residue of β2AR was considered to be in contact with cholesterol, when any of its non-hydrogen atoms was within ≤0.5 nm of any heavy atom of cholesterol. The total occupancy time was then normalized over the entire length of a simulation, i.e., an occupancy time of one means that the particular residue of β2AR was in contact with cholesterol throughout the simulation, whereas a value of zero means no contact. The calculated total occupancy time per residue of β2AR was mapped onto the receptor’s surface to highlight the regions of β2AR involved in cholesterol binding.
 
-## Sequence alignment at cholesterol-binding sites
+### Sequence alignment at cholesterol-binding sites
 
 We analyzed amino acid sequences of β2AR orthologues from the available databases. We used the PhylomeDB server (http://phylomedb.org/) (Huerta-Cepas et al., 2014) for finding orthologues and Clustal Omega (http://www.ebi.ac.uk/Tools/msa/clustalo/) (Sievers et al., 2011) for sequence alignment. The amino acid residues of β2AR segments constituting the cholesterol binding sites as obtained from our simulations were used for the set of sequences obtained (Figure 2—figure supplement 2, Figure 2—figure supplement 3, Figure 2—figure supplement 4). The sequences in question belong to diverse species, such as insects, fish, birds, reptile, mammals, etc.
 
-## Lipid tail order parameter
+### Lipid tail order parameter
 
-The order parameter of lipid acyl chains was calculated using :SCD=⟨32 (cos2 ⁡θi)− 12⟩
+The order parameter of lipid acyl chains was calculated using :
+
+$$
+S_{CD}=⟨\frac{3}{2} (cos^{2 }⁡\theta_{i})− \frac{1}{2}⟩
+$$
 
 where θi is the angle between a C-D bond (C-H in simulations) of the ith carbon atom and the bilayer normal. The angular brackets denote averaging over time and molecules in a bilayer.
 
-## Bilayer thickness
+### Bilayer thickness
 
 Bilayer thickness was defined as the distance between the average planes formed by phosphorous atoms in the two bilayer leaflets. We used the g_lomepro tool (Gapsys et al., 2013) to generate the 2D distribution of bilayer thickness.
 
-## Lifetime of cholesterol binding
+### Lifetime of cholesterol binding
 
 For the calculation of the lifetime of cholesterol bound to the cholesterol interaction sites on the receptor surface, we first monitored the binding/unbinding events of each individual cholesterol molecule along the simulation trajectory. A cholesterol molecule was considered bound when any of its heavy atoms came within ≤0.5 nm from an interaction site. To define the three major interaction sites on the β2AR surface, we used the amino acid residues (with contact fraction ≥ 0.4) as shown in Figure 2—figure supplement 2. The time series was then additionally smoothed (over one ns time windows) to discard very rapid ‘leave and return’ motions of cholesterol that take place due to thermal fluctuations. Given that lateral diffusion of lipids at the protein surface is very slow, and the lipids essentially do not move at all during a 1-ns time window, these fluctuations were then taken care of by the smoothing procedure. We then calculated the normalized time correlation function (to describe the time-dependent probability of cholesterol that is next to the receptor to stay in contact with the receptor) over all individual cholesterol binding/unbinding events occurred in all independent simulation trajectories for all cholesterol molecules present in a system at a given cholesterol concentration (Arnarez et al., 2013; Horn et al., 2014).
 
-## Equilibration and error bar estimation associated with analysis
+### Equilibration and error bar estimation associated with analysis
 
 For all analysis to measure time-averaged properties, the first 100 ns of production simulations were excluded from the calculation. Error bars were estimated through standard error, calculated by dividing the standard deviation of a given data set with the square root of its sample size (Manna et al., 2015; Kulig et al., 2014). We used the g_analyze tool of GROMACS for error estimation.

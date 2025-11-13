@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01ej9dk98 Department of Microbiology and Immunology, The University of Melbourne, at the Peter Doherty Institute for Infection and Immunity Melbourne Australia
-2. https://ror.org/01ej9dk98 Centre for Pathogen Genomics, The University of Melbourne Melbourne Australia
-3. https://ror.org/01ej9dk98 Department of Infectious Diseases, The University of Melbourne, at the Peter Doherty Institute for Infection and Immunity Melbourne Australia
-4. https://ror.org/02t1bej08 Monash Infectious Diseases, Monash Health Melbourne Australia
+1. Department of Microbiology and Immunology, The University of Melbourne, at the Peter Doherty Institute for Infection and Immunity Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+2. Centre for Pathogen Genomics, The University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+3. Department of Infectious Diseases, The University of Melbourne, at the Peter Doherty Institute for Infection and Immunity Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+4. Monash Infectious Diseases, Monash Health Melbourne Australia ([ROR:02t1bej08](https://ror.org/02t1bej08))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ In this study, we conduct a benchmark of single nucleotide polymorphism (SNP) an
 
 ## Results
 
-## Genome and variant truthset
+### Genome and variant truthset
 
 Ground truth reference assemblies were generated for each sample using ONT and Illumina reads (see Genome assembly).
 
@@ -48,33 +48,236 @@ For each sample, we selected a donor genome with average nucleotide identity (AN
 
 Table 1 summarises the samples used, the number of variants, and the ANI between each sample and its donor. We analysed 14 samples from different species, spanning a wide range of GC content (30–66%). Despite the variation in SNP counts (2102-57887), the number of indels was consistent across samples (see Supplementary file 1b for details).
 
-## Data quality
+**Table 1.**
+ Summary of the average nucleotide identity (ANI) and number of variants found between each sample and its donor genome.
 
-We analysed ONT data basecalled with three different accuracy models – fast, high accuracy (hac), and super-accuracy (sup) – along with different read types – simplex and duplex (see Basecalling and quality control). Duplex reads are those in which both DNA strands from a single molecule are sequenced back-to-back and basecalled together, whereas simplex reads are basecalled only using a single DNA strand. The median, unfiltered read identities, calculated by aligning reads to their respective assembly, are shown in Figure 1. Duplex reads basecalled with the sup model had the highest median read identity of 99.93% (Q32). The Qscore is the logarithmic transformation of the read identity, Q=−10log10⁡P, where P is the read identity. This was followed by duplex hac (99.79% [Q27]), simplex sup (99.26% [Q21]), simplex hac (98.31% [Q18]), and simplex fast (94.09% [Q12]). Full summary statistics of the reads can be found in Supplementary file 1a.
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Species</th>
+      <th>ANI (%)</th>
+      <th>GC (%)</th>
+      <th>SNPs</th>
+      <th>Insertions</th>
+      <th>Deletions</th>
+      <th>Total variants</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATCC_33560__202309</td>
+      <td>Campylobacter jejuni</td>
+      <td>99.50</td>
+      <td>30.22</td>
+      <td>6369</td>
+      <td>117</td>
+      <td>106</td>
+      <td>6592</td>
+    </tr>
+    <tr>
+      <td>ATCC_35221__202309</td>
+      <td>Campylobacter lari</td>
+      <td>98.64</td>
+      <td>29.81</td>
+      <td>16541</td>
+      <td>57</td>
+      <td>67</td>
+      <td>16665</td>
+    </tr>
+    <tr>
+      <td>ATCC_25922__202309</td>
+      <td>Escherichia coli</td>
+      <td>99.50</td>
+      <td>50.42</td>
+      <td>4531</td>
+      <td>119</td>
+      <td>242</td>
+      <td>4892</td>
+    </tr>
+    <tr>
+      <td>KPC2__202310</td>
+      <td>Klebsiella pneumoniae</td>
+      <td>99.50</td>
+      <td>57.15</td>
+      <td>15877</td>
+      <td>90</td>
+      <td>78</td>
+      <td>16045</td>
+    </tr>
+    <tr>
+      <td>AJ292__202310</td>
+      <td>Klebsiella variicola</td>
+      <td>99.50</td>
+      <td>57.62</td>
+      <td>22850</td>
+      <td>95</td>
+      <td>98</td>
+      <td>23043</td>
+    </tr>
+    <tr>
+      <td>ATCC_19119__202309</td>
+      <td>Listeria ivanovii</td>
+      <td>99.46</td>
+      <td>37.13</td>
+      <td>8451</td>
+      <td>187</td>
+      <td>259</td>
+      <td>8897</td>
+    </tr>
+    <tr>
+      <td>ATCC_BAA-679__202309</td>
+      <td>Listeria monocytogenes</td>
+      <td>99.50</td>
+      <td>37.98</td>
+      <td>9090</td>
+      <td>66</td>
+      <td>78</td>
+      <td>9234</td>
+    </tr>
+    <tr>
+      <td>ATCC_35897__202309</td>
+      <td>Listeria welshimeri</td>
+      <td>99.03</td>
+      <td>36.35</td>
+      <td>16953</td>
+      <td>130</td>
+      <td>133</td>
+      <td>17216</td>
+    </tr>
+    <tr>
+      <td>AMtb_1__202402</td>
+      <td>Mycobacterium tuberculosis</td>
+      <td>99.73</td>
+      <td>65.62</td>
+      <td>2102</td>
+      <td>95</td>
+      <td>84</td>
+      <td>2281</td>
+    </tr>
+    <tr>
+      <td>ATCC_10708__202309</td>
+      <td>Salmonella enterica</td>
+      <td>99.36</td>
+      <td>52.20</td>
+      <td>18784</td>
+      <td>210</td>
+      <td>189</td>
+      <td>19183</td>
+    </tr>
+    <tr>
+      <td>BPH2947__202310</td>
+      <td>Staphylococcus aureus</td>
+      <td>99.48</td>
+      <td>32.80</td>
+      <td>7894</td>
+      <td>95</td>
+      <td>63</td>
+      <td>8052</td>
+    </tr>
+    <tr>
+      <td>MMC234__202311</td>
+      <td>Streptococcus dysgalactiae</td>
+      <td>99.16</td>
+      <td>39.49</td>
+      <td>10474</td>
+      <td>82</td>
+      <td>100</td>
+      <td>10656</td>
+    </tr>
+    <tr>
+      <td>RDH275__202311</td>
+      <td>Streptococcus pyogenes</td>
+      <td>99.50</td>
+      <td>38.32</td>
+      <td>5361</td>
+      <td>60</td>
+      <td>68</td>
+      <td>5489</td>
+    </tr>
+    <tr>
+      <td>ATCC_17802__202309</td>
+      <td>Vibrio parahaemolyticus</td>
+      <td>98.75</td>
+      <td>45.32</td>
+      <td>57887</td>
+      <td>280</td>
+      <td>304</td>
+      <td>58471</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data quality
+
+We analysed ONT data basecalled with three different accuracy models – fast, high accuracy (hac), and super-accuracy (sup) – along with different read types – simplex and duplex (see Basecalling and quality control). Duplex reads are those in which both DNA strands from a single molecule are sequenced back-to-back and basecalled together, whereas simplex reads are basecalled only using a single DNA strand. The median, unfiltered read identities, calculated by aligning reads to their respective assembly, are shown in Figure 1. Duplex reads basecalled with the sup model had the highest median read identity of 99.93% (Q32). The Qscore is the logarithmic transformation of the read identity, $Q=−10log_{10}⁡P$, where $P$ is the read identity. This was followed by duplex hac (99.79% [Q27]), simplex sup (99.26% [Q21]), simplex hac (98.31% [Q18]), and simplex fast (94.09% [Q12]). Full summary statistics of the reads can be found in Supplementary file 1a.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig1-v1.jpg)
 
-**Figure 1.:** The Qscore is the logarithmic transformation of the read identity, , where Q=−10log10⁡P is the read identity.P
+**Figure 1.:** The Qscore is the logarithmic transformation of the read identity, $Q=−10log_{10}⁡P$, where $P$ is the read identity.
 
-## Which method is the best?
+### Which method is the best?
 
 For this study, we benchmarked the performance of seven variant callers on ONT sequencing data: BCFtools (v1.19, Danecek et al., 2021), Clair3 (v1.0.5, Zheng et al., 2022), DeepVariant (v1.6.0, Poplin et al., 2018), FreeBayes (v1.3.7, Garrison, 2012), Longshot (v0.4.5, Edge and Bansal, 2019), Medaka(v1.11.3, Oxford Nanopore Technologies, 2023a; Oxford Nanopore Technologies, 2023c), and NanoCaller (v3.4.1, Ahsan et al., 2021). In addition, we called variants from each sample’s Illumina data using Snippy (v4.6.0, Seemann, 2015) to act as a performance comparison.
 
 Alignments of ONT reads to each sample’s mutated reference (see Genome and variant truthset) were generated with minimap2 and provided to each variant caller (except Medaka, which takes reads directly). Variant calls were assessed against the truthset using vcfdist (v2.3.3, Dunn and Narayanasamy, 2023), classifying each variant as true positive (TP), false positive (FP), or false negative (FN). Precision, recall, and the F1 score were calculated for SNPs and indels at each VCF quality score increment. Figure 2 displays the highest F1 scores for each variant caller across samples, basecalling models, read types, and variant types.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig2-v1.jpg)
+
+**Figure 2.:** Illumina results (green) are included as a reference and do not have different basecalling models or read types. Note, Longshot does not provide indel calls.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Illumina results (green) are included as a reference and do not have different basecalling models or read types. Note, Longshot does not provide indel calls.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Illumina results (green) are included as a reference and do not have different basecalling models or read types. Note, Longshot does not provide indel calls.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig2-figsupp5-v1.jpg)
+
 The F1 score is the harmonic mean of precision and recall and acts as a good metric for overall evaluation. From Figure 2 we see that Clair3 and DeepVariant produce the highest F1 scores for both SNPs and indels with both read types. Unsurprisingly, the sup basecalling model leads to the highest F1 scores across all variant callers, though hac is not much lower. SNP F1 scores of 99.99% are obtained from Clair3 and DeepVariant on sup-basecalled data. For indel calls, Clair3 achieves F1 scores of 99.53% and 99.20% for sup simplex and duplex, respectively, while DeepVariant scores 99.61% and 99.22%. The higher depth of the simplex reads likely explains why the best duplex indel F1 scores are slightly lower than simplex (see How much read depth is enough?). The precision and recall values at the highest F1 score can be seen in Figure 2—figure supplement 1 and Figure 2—figure supplement 2 (see Supplementary file 1c for a summary and Supplementary file 1d for full details) as well as results broken down by species for Clair3 with the sup model in Figure 2—figure supplement 3, Figure 2—figure supplement 4, and Figure 2—figure supplement 5. Reads basecalled with the fast model are an order of magnitude worse than the hac and sup models.
 
 Figure 3 shows the precision-recall curves for the sup basecalling model (see Figure 3—figure supplement 1 and Figure 3—figure supplement 2 for the hac and fast model curves, respectively) for each variant and read type – aggregated across samples to produce a single curve for each variant caller. Due to the right-angle-like shape of the Clair3 and DeepVariant curves, filtering based on low-value variant quality improves precision considerably for variant calls, without losing much recall. A similar pattern holds true for BCFtools SNP calls. The best Clair3 and DeepVariant F1 scores are obtained with no quality filtering on sup data, except for indels from duplex data where a quality filter of 4 provides the best F1. See Supplementary file 1e for the full details.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig3-v1.jpg)
+
+**Figure 3.:** The curves are generated by using increasing variant quality score thresholds to filter variants and calculating precision and recall at each threshold. The lowest threshold is the lower right part of the curve, moving to the highest at the top left. Note, Longshot does not provide indel calls.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The curves are generated by using increasing variant quality score thresholds to filter variants and calculating precision and recall at each threshold. The lowest threshold is the lower right part of the curve, moving to the highest at the top left. Note, Longshot does not provide indel calls.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The curves are generated by using increasing variant quality score thresholds to filter variants and calculating precision and recall at each threshold. The lowest threshold is the lower right part of the curve, moving to the highest at the top left. Note, Longshot does not provide indel calls.
+
 A striking feature of Figure 2 and Figure 3 is the comparison of deep learning-based variant callers (Clair3, DeepVariant, Medaka, and NanoCaller) to Illumina. For all variant and read types with hac or sup data, these deep learning methods match or surpass Illumina, with median best SNP and indel F1 scores of 99.45% and 95.76% for Illumina. Clair3 and DeepVariant, in particular, perform an order of magnitude better. Traditional variant callers (Longshot, BCFtools, and FreeBayes) match or slightly exceed Illumina for SNP calls with hac and sup data. FreeBayes matches Illumina for indel calls, but BCFtools shows reduced indel accuracy across all models and read types. Fast model ONT data has a lower F1 score than Illumina, only achieving parity in the best case for SNPs.
 
-## Understanding missed and false calls
+### Understanding missed and false calls
 
 Conventional wisdom may leave readers surprised at finding that ONT data can provide better variant calls than Illumina. In order to convince ourselves (and others) of these results, we investigate the main causes for this difference.
 
 Given the ONT read-level accuracy now exceeding Q20 (Figure 1; simplex sup), read length remains the primary difference between the two technologies. Figure 2—figure supplement 1 shows that Illumina’s lower F1 score is mainly due to recall rather than precision (Figure 2—figure supplement 2). We hypothesised that Illumina errors are related to alignment difficulties in repetitive or variant-dense regions due to its shorter reads.
 
 Figure 4 shows that variant density and repetitive regions account for many false negatives, lowering recall. We define variant density as the number of variants (missed or called) in a 100 bp window around each call. Figure 4a reveals a bimodal distribution of variant density for Illumina FNs, with a second peak at 20 variants per 100 bp, unlike the distribution for TP and FP calls. In contrast, Clair3, a top-performing ONT variant caller, shows no bimodal distribution and few missed or false calls at this density (Figure 4b). Illumina reads struggle to align in variant-dense regions, whereas ONT reads can (Figure 4—figure supplement 1), as 20 variants per 100 bp represents a larger portion of an Illumina read than an ONT read.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig4-v1.jpg)
+
+**Figure 4.:** Variant density is the number of (true or false) variants in a 100 bp window centred on a call. (a and b) The distribution of variant densities for true positive (TP), false positive (FP), and false negative (FN) calls. The y-axis, percent, indicates the percent of all calls of that decision that fall within the density bin on the x-axis. Illumina calls, aggregated across all samples, are shown in a, while b shows Clair3 calls from simplex sup-basecalled reads at 100× depth. (c) Impact of repetitive regions on the F1 score (y-axis) for Clair3 (100× simplex sup) and Illumina. The x-axis indicates whether variants that fall within repetitive regions are excluded from the calculation of the F1 score. Points indicate the F1 score for a single sample.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The top track shows the alignment of the sample’s Illumina reads, while the lower track is the Oxford Nanopore Technologies (ONT) reads. Missed variant calls (false negatives) are shown by small blue notches at the bottom of the figure, but are also identifiable by vertical coloured lines in the ONT reads. Pileup is visualised in IGV (Robinson et al., 2011).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The top track shows the alignment of the sample’s Illumina reads, while the lower track is the Oxford Nanopore Technologies (ONT) reads. Missed variant calls (false negatives) are shown by small red notches in a purple box with a red border at the bottom of the figure, but are also identifiable by vertical coloured lines in the ONT reads. Pileup is visualised in IGV (Robinson et al., 2011).
 
 We also assessed the change in F1 score when masking repetitive regions of the genome (see Identifying repetitive regions). Due to their shorter length, Illumina reads struggle more with alignment in these regions compared to ONT reads (Treangen and Salzberg, 2011). Figure 4—figure supplement 2 highlights missed variants and alignment gaps in Illumina data. This is further quantified by the increase in Illumina’s F1 score when repetitive regions are masked (Figure 4c), rising from 99.3% to 99.7%. In contrast, Clair3 100× simplex sup data shows only a 0.003% increase.
 
@@ -84,9 +287,57 @@ Indels have traditionally been a systematic weakness for ONT sequencing data, pr
 
 When analysing Clair3, the best-performing ONT caller, we found that reads basecalled with the fast model often miscalculate homopolymer lengths by 1 or 2 bp (Figure 5), though there is an equal number of non-homopolymeric false indel calls. In contrast, the sup model significantly reduced false indel calls, matching Illumina’s error profile. Of the eight false indel calls by Clair3 on sup data, five were homopolymers and three occurred within one or two bases of another insertion with a similar sequence. The hac model improved over the fast model but still produced notable false indel calls, mainly miscalculating homopolymers by 1 bp. DeepVariant showed a similar error profile to Clair3 (Figure 5—figure supplement 2), with 8/11 false indels being homopolymers. FreeBayes (Figure 5—figure supplement 3), Medaka (Figure 5—figure supplement 4), and NanoCaller (Figure 5—figure supplement 5) performed similarly, while BCFtools (Figure 5—figure supplement 1) exhibited a persistent bias for homopolymeric indel errors, even with sup model reads. This indicates that while the sup basecaller reduces bias, deep learning methods like Clair3 and DeepVariant further mitigate it by training models to account for these systematic issues. An honourable mention goes to FreeBayes, a traditional variant caller that handles errors without inherent bias.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-v1.jpg)
+
+**Figure 5.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FP indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FP indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FP indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FP indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FP indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FP indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FN indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FN indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp8-v1.jpg)
+
+**Figure 5—figure supplement 8.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FN indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 9.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp9-v1.jpg)
+
+**Figure 5—figure supplement 9.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FN indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 10.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp10-v1.jpg)
+
+**Figure 5—figure supplement 10.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FN indels of that indel-homopolymer length combination.
+
+![Figure 5—figure supplement 11.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig5-figsupp11-v1.jpg)
+
+**Figure 5—figure supplement 11.:** Illumina is shown in the lower right for reference. The vertical red line indicates the threshold above which we deem a run of the same nucleotide to be a ‘true’ homopolymer. Indel length is the number of bases inserted/deleted for an indel, whereas the homopolymer length indicates how long the tract of the same nucleotide is after the indel. The colour of a cell indicates number of FN indels of that indel-homopolymer length combination.
+
 Lastly, we did not see any systematic indel bias in the context of missed calls (Figure 5—figure supplements 6–11), especially when compared to Illumina indel error profiles.
 
-## How much read depth is enough?
+### How much read depth is enough?
 
 Having established the accuracy of variant calls from ‘full-depth’ ONT datasets (100×), we investigated the required ONT read depth to achieve desired precision or recall, which varies by use case and resource availability. This is particularly relevant for ONT, where sequencing can be stopped in real time once ‘sufficient’ data is obtained.
 
@@ -104,11 +355,19 @@ Figure 6 and Figure 7 show F1 score, precision, and recall as functions of read 
 
 With 5× of ONT read depth the F1 score is lower than Illumina for almost all variant caller and basecalling models. However, BCFtools surprisingly produces SNP F1 scores on par with Illumina on duplex sup reads. Despite the inferior F1 scores across the board at 5×, SNP precision remains above Illumina with duplex reads for all methods except NanoCaller, and calls from Clair3 and DeepVariant simplex sup data.
 
-## What computational resources do I need?
+### What computational resources do I need?
 
 The final consideration for variant calling is the required computational resources. While this may be trivial for those with high-performance computing (HPC) access, many analyse bacterial genomes on personal computers due to their smaller size compared to eukaryotes. The main resource constraints are memory and runtime, especially for aligning reads to a reference and calling variants. Additionally, if working with raw (pod5) ONT data, basecalling is also a resource-intensive step.
 
 Figure 8 shows the runtime (seconds per megabase of sequencing data) and maximum memory usage for read alignment and variant calling (see Figure 8—figure supplement 1 and Supplementary file 1g for basecalling GPU runtimes). DeepVariant was the slowest (median 5.7 s/Mbp) and most memory-intensive (median 8 GB), with a runtime of 38 min for a 4 Mbp genome at 100× depth. FreeBayes had the largest runtime variation, with a maximum of 597 s/Mbp, equating to 2.75 days for the same genome. In contrast, basecalling with a single GPU using the super-accuracy model required a median runtime of 0.77 s/Mbp, or just over 5 min for a 4 Mbp genome at 100× depth. Clair3 had a median memory usage of 1.6 GB and a runtime of 0.86 s/Mbp (<6 min for a 4 Mbp 100× genome). Full details are given in Supplementary file 1f.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig8-v1.jpg)
+
+**Figure 8.:** The top panel shows the maximum memory usage (x-axis) and the lower panel shows the runtime as a function of the CPU time (seconds) divided by the number of basepairs in the readset (seconds per megabasepairs; x-axis). Each point represents a single run across read depths, basecalling models, read types, and samples for that variant caller (or alignment).s=seconds; m=minutes; MB = megabytes; GB = gigabytes; Mbp = megabasepairs.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/98300/elife-98300-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Runtime is presented as seconds per megabasepairs, keeping consistent with Figure 8 from the main text. The y-axis represents basecalling with either 8 Nvidia A100 GPUs (cuda:all) or 1 A100 (cuda:single), with each stratified by basecalling model (colours). Points represent running a single sample-model combination, with each combination being run three times.
 
 ## Discussion
 
@@ -138,29 +397,29 @@ In conclusion, this study comprehensively evaluates bacterial variant calls usin
 
 ## Methods
 
-## Sequencing
+### Sequencing
 
 Bacterial isolates were streaked onto agar plates and grown overnight at 37°C. M. tuberculosis, S. pyogenes, and S. dysgalactiae subsp. equisimilis were grown in liquid media of 7H9 or TSB with shaking until reaching high cell density (OD ∼ 1; see Appendix 1 for Streptococcus sample selection). The cultures were centrifuged at 13,000 rpm for 10 min and cell pellets were collected. Bacteria were lysed with appropriate enzymatic treatment except for Mycobacterium and Streptococcus, which were lysed by bead beating (PowerBead, 0.5 mm glass beads [13116-50] or Lysing Matrix Y [116960050-CF] and Precellys or TissueLyser [QIAGEN]). DNA extraction was performed by sodium acetate precipitation and further Ampure XP bead purification (Beckman Coulter) or either Beckman Coulter GenFind V2 (A41497) or QIAGEN Blood and Tissue DNEasy kit (69506). Illumina library preparation was performed using Illumina DNA prep (20060059) using quarter reagents and Illumina DNA/RNA UD Indexes. Short-read whole-genome sequencing was performed on an Illumina NextSeq 500 for the M. tuberculosis (AMtb_1__202402), S. pyogenes (RDH275__202311), and S. dysgalactiae (MMC234__202311) samples and a NextSeq 2000 for all other samples, with a 150 bp PE kit. ONT library preparation was performed using either Rapid Barcoding Kit V14 (SQK-RBK114.96) or Native Barcoding Kit V14 (SQK-NBD114.96). Long-read whole-genome sequencing was performed on a MinION Mk1b or GridION using R10.4.1 MinION flow cells (FLO-MIN114). Supplementary file 1i contains detailed information about the instrument models and multiplexing for each sample.
 
-## Basecalling and quality control
+### Basecalling and quality control
 
 Raw ONT data were basecalled with Dorado (v0.5.0, Oxford Nanopore Technologies, 2023a) using the v4.3.0 models fast (dna_r10.4.1_e8.2_400bps_fast@v4.3.0), hac (dna_r10.4.1_e8.2_400bps_hac@v4.3.0), and sup (dna_r10.4.1_e8.2_400bps_sup@v4.3.0). Duplex reads were additionally generated using the duplex subcommand of Dorado with hac and sup models (fast is not compatible with duplex). All runs were basecalled on an Nvidia A100 GPU to ensure consistency. Reads shorter than 1000bp or with a quality score below 10 were removed with SeqKit (v2.6.1 Shen et al., 2016) and each readset was randomly subsampled to a maximum mean read depth of 100x with Rasusa (v0.8.0 Hall, 2022).
 
 Illumina reads were preprocessed with fastp (v0.23.4, Chen et al., 2018) to remove adapter sequences, trim low-quality bases from the ends of the reads, and remove duplicate reads and reads shorter than 30bp.
 
-## Genome assembly
+### Genome assembly
 
 Ground truth assemblies were generated for each sample as per Wick et al., 2023. Briefly, the unfiltered ONT simplex sup reads were filtered with Filtlong (v0.2.1, Wick, 2021) to keep the best 90% (-p 90) and fastp (default settings) was used to process the raw Illumina reads. We performed 24 separate assemblies using the Extra-thorough assembly instructions in Trycycler’s (v0.5.4, Wick et al., 2021) documentation. Assemblies were combined into a single consensus assembly with Trycycler and Illumina reads were used to polish that assembly using Polypolish (v0.6.0; default settings, Wick and Holt, 2022) and Pypolca (v0.3.1, Bouras et al., 2024; Zimin and Salzberg, 2020) with --careful. Manual curation and investigation of all polishing changes was made as per Wick et al., 2023 (e.g. for very long homopolymers, the correct length was chosen as per Illumina reads support).
 
-## Truthset and reference generation
+### Truthset and reference generation
 
-To generate the variant truthset for each sample, we identified all variants between the sample and a donor genome. To select the variant-donor genome for a given sample, we downloaded all RefSeq assemblies for that species (up to a maximum of 10,000) using genome_updater (v0.6.3, Piro, 2023). ANI was calculated between each downloaded genome and the sample reference using skani (v0.2.1, Shaw and Yu, 2023). We only kept genomes with an ANI, a, such that 98.40%≤a<=99.80%. In addition, we excluded any genomes with CheckM (Parks et al., 2015) completeness less than 98% and contamination greater than 5%. We then selected the genome with the ANI closest to 99.50%. Our reasoning for this range exclusion is that genomes with a>99.80% are almost always members of the same sequence type (ST) (Rodriguez-R et al., 2024; Viver et al., 2024), and we found very little variation between them (data not shown).
+To generate the variant truthset for each sample, we identified all variants between the sample and a donor genome. To select the variant-donor genome for a given sample, we downloaded all RefSeq assemblies for that species (up to a maximum of 10,000) using genome_updater (v0.6.3, Piro, 2023). ANI was calculated between each downloaded genome and the sample reference using skani (v0.2.1, Shaw and Yu, 2023). We only kept genomes with an ANI, $a$, such that $98.40%\leqa<=99.80%$. In addition, we excluded any genomes with CheckM (Parks et al., 2015) completeness less than 98% and contamination greater than 5%. We then selected the genome with the ANI closest to 99.50%. Our reasoning for this range exclusion is that genomes with $a>99.80%$ are almost always members of the same sequence type (ST) (Rodriguez-R et al., 2024; Viver et al., 2024), and we found very little variation between them (data not shown).
 
 We then identified variants between the reference and donor genomes using both minimap2 (v2.26, Li, 2018) and mummer (v4.0.0rc1, Marçais et al., 2018). We took the intersection of the variants identified by minimap2 and mummer into a single variant call file (VCF) and used BCFtools (v1.19, Danecek et al., 2021) to decompose multi-nucleotide polymorphisms (MNPs) into SNPs, left-align and normalise indels, remove duplicate and overlapping variants, and exclude any indel longer than 50 bp. The resulting VCF file is our truthset.
 
 Next, we generated a mutated reference genome, which we used as the reference against which variants were called by the different methods we assess. BCFtools’ consensus subcommand was used to apply the truthset of variants to the sample reference, thus producing a mutated reference.
 
-## Alignment and variant calling
+### Alignment and variant calling
 
 ONT reads were aligned to the mutated reference with minimap2 using options --cs --MD -aLx map-ont and output to a BAM alignment file.
 
@@ -174,14 +433,14 @@ For the Illumina variant calls that act as a benchmark to compare ONT against, w
 
 VCFs were then filtered to remove overlapping variants, make heterozygous calls homozygous for the allele with the most depth, normalise and left-align indels, break MNPs into SNPs, and remove indels longer than 50 bp, all with BCFtools.
 
-## Variant call assessment
+### Variant call assessment
 
 Filtered VCFs were assessed with vcfdist (v2.3.3, Dunn and Narayanasamy, 2023) using the truth VCFs and mutated references from Truthset and reference generation. We disabled partial credit with --credit-threshold 1.0 and set the maximum variant quality threshold (-mx) to the maximum in the VCF being assessed.
 
-## Identifying repetitive regions
+### Identifying repetitive regions
 
 To identify repetitive regions in the mutated reference, we used the following mummer utilities. nucmer --maxmatch --nosimplify to align the reference against itself and retain non-unique alignments. We then passed the output into show-coords -rTH -I 60 to obtain the coordinates for all alignments with an identity of 60% or greater. Alignments where the start and end coordinates of the alignment do not match are considered as repeats and these are output in the BED format, with intervals being merged with BEDtools (Quinlan and Hall, 2010).
 
-## Code availability
+### Code availability
 
 All code to perform the analyses in this work are available on GitHub and archived on Zenodo (Hall, 2024a; Hall, 2023).

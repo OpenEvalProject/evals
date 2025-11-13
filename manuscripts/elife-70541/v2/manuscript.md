@@ -27,11 +27,31 @@ Lipopolysaccharide (LPS), another major OM constituent localized in the outer le
 
 BepA (formally called YfgC), a bi-functional periplasmic protein that plays an important role in maintaining OM integrity (Narita et al., 2013), belongs to the M48 family zinc-metallopeptidases that include prokaryotic and eukaryotic proteases (such as Ste24, Oma1, and HptX) involved in membrane quality control (Rawlings et al., 2018). We have previously shown that BepA is involved in the biogenesis and quality control of LptD. While BepA promotes the LptDC to LptDNC conversion (chaperone-like function) (Narita et al., 2013), it also degrades the stalled or misassembled LptDC molecules that are generated due to an lptD mutation (lptD4213) or decreased availability of or weakened interaction with LptE (protease function) (Narita et al., 2013; Soltes et al., 2017). BepA also degrades BamA whose assembly/folding has been impaired in the absence of a periplasmic chaperone, SurA (Daimon et al., 2017), suggesting that BepA can also act in quality control of some other OM proteins. The BepA protein consists of an N-terminal M48 metallopeptidase domain and a C-terminal tetratricopeptide repeat (TPR) domain that are associated closely to form a compact structure (Figure 1A; Bryant et al., 2020; Shahrizal et al., 2019). Our previous study suggested that the TPR domain of BepA directly interacts with LptD and with the BAM complex with its TPR domain inserted into the interior of the periplasmic part (brim) of the BAM complex (Daimon et al., 2017; Narita et al., 2013). A mutational study has suggested that these interactions are important for BepA functions (Daimon et al., 2017). Recent studies have also shown that the His-246 residue of BepA that coordinates the zinc ion at the proteolytic active site acts as an ON/OFF switch (His switch) for the proteolytic activity of BepA (Bryant et al., 2020; Daimon et al., 2020). The dual functions of BepA should be appropriately regulated because the unregulated expression of the proteolytic activity of BepA caused by an H246 mutation leads to the degradation of the normally assembling LptD intermediate (Daimon et al., 2020). However, information on the molecular mechanism of this regulation and the modes of the BepA–LptD interaction in each BepA function remains elusive.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig1-v2.jpg)
+
+**Figure 1.:** (A) Crystal structure of BepA (PDB code: 6AIT). The peptidase and the TPR domains of BepA are shown in gray and orange, respectively. The edge-strand, the proteolytic active site (the HExxH motif and the third zinc ligand, Glu-201), and the regulatory His-246 residue (His switch) in the peptidase domain are shown in red, blue, and green, respectively, and the coordinated zinc atom is shown in yellow. An enlarged view of the active site region is shown in right. (B) Protease activities of the BepA edge-strand mutants. Cells of SN56 (ΔbepA) carrying pTWV228-lptD-his10 and either pSTD689 or pSTD689‐bepA plasmids were grown at 30°C in L-medium until early log phase and induced with 1 mM IPTG for 1 hr. Total cellular proteins were acid-precipitated and analyzed by 7.5 or 10% Laemmli SDS‐PAGE and immunoblotting with the indicated antibodies. (C) In vivo photo-crosslinking analysis of the BepA edge-strand. Cells of SN56 carrying pEVOL-pBpF and pUC18‐bepA(E137Q, amb)-his10 plasmids were grown at 30°C in L-medium containing 0.02% arabinose and 0.5 mM pBPA until early log phase, and induced with 1 mM IPTG for 1 hr to express the indicated BepA(pBPA) variants. The cultures were divided into two portions, each of which was treated with or without UV-irradiation for 10 min at 4°C. Proteins of the total membrane fractions were subjected to pull-down with Ni-NTA agarose. Purified proteins were analyzed by 7.5% Laemmli SDS‐PAGE and immunoblotting with the indicated antibodies. Open triangles indicate unknown crosslinked products. (D) Chaperone-like activities of the BepA edge-strand mutants. Cells of SN56 carrying pSTD689 or a pSTD689‐bepA plasmid were grown at 30°C in M9-based medium until early log phase, induced with 1 mM IPTG for 15 min, pulse-labeled with 35S-Met for 1 min and chased for the indicated periods. At each time point, total cellular proteins were acid-precipitated, subjected to IP with an anti-LptD antibody, and analyzed by 7.5% Laemmli SDS‐PAGE followed by phosphorimaging. The ratio of the band intensities of LptDNC at each time point to that of total LptD (LptDC+LptDNC) at 5 min was quantitated and the mean values were plotted with S.D. (n=2). The result shown is a representative of two independent experiments that were conducted using the same transformants (i.e., two technical replicates). See Figure 1—source data 1 for gel images and quantitated band intensities data for (D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Alignment of the edge-strand amino acid sequences of BepA homologs of E. coli, Klebsiella pneumoniae, Xenorhabdus nematophila, Yersinia pestis, Vibrio cholerae, Aeromonas salmonicida, Pseudomonas aeruginosa, and Legionella parisiensis. (B) Alignment of the edge-strand amino acid sequences of BepA and other E. coli M48 family peptidase (HtpX, LoiP, and YcaL). The alignments were conducted by using the Clustal Omega program. Conserved residues are marked in red.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Degradation of BamA in a ΔsurA strain expressing the BepA edge-strand Pro mutants. Cells of SN259 (ΔbepA, ΔsurA) carrying either pSTD689 or pSTD689‐bepA plasmids were grown at 30°C in M9-based medium supplemented with 1 mM IPTG for 4 hr. Total cellular proteins were acid-precipitated and analyzed by 7.5 or 10% Laemmli SDS‐PAGE and immunoblotting with the indicated antibodies. (B) C-terminal self-cleavages of the BepA edge-strand mutants. Cells of SN56 (ΔbepA) carrying either pUC18 or pUC18‐bepA-his10 plasmids were grown at 30°C in L-medium until early log phase and induced with 1 mM IPTG for 1 hr. Total cellular proteins were acid-precipitated and analyzed by 7.5% Laemmli SDS‐PAGE and immunoblotting with an anti-BepA antibody. The result shown is a representative of two independent experiments that were conducted using the same transformants (i.e., two technical replicates). See Figure 1—figure supplement 2—source data 1 for gel images for Figure 1—figure supplement 1A and B.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Complementation activity of the BepA(pBPA) derivatives. Cells defective in the BepA functions exhibit elevated sensitivity to high-molecular-mass antibiotics such as erythromycin (EM) (Narita et al., 2013; Nichols et al., 2011) possibly due to an impaired barrier function of the OM. Thus, the functions of the BepA mutants (including BepA(pBPA)) can be evaluated by examining their ability to suppress the EM sensitivity of a ΔbepA strain (Daimon et al., 2017). Cells from 30 μL of overnight cultures of SN56 (ΔbepA) carrying pEVOL-pBpF and either pUC18 or pUC18-bepA(amb)-his10 plasmids were washed, suspended in saline, and serially diluted with saline (to about 109 cells/mL). 2.5 μL each of the diluted cells were spotted on L-0.4% Glucose agar plate (a positive control without EM; glucose was included to minimize the expression of the BepA(amber) mutants) or L-agar plates supplemented with 20 μg/mL EM with or without 0.5 mM pBPA. Plates were incubated at 30°C for 22 hr. Growth of the cells in the presence of EM, IPTG, and pBPA indicates the expressed BepA(pBPA) is functional. (B) Self-cleavage of the BepApBPA derivatives. Cells of the same strains in (A) were grown at 30°C in L-medium supplemented with 0.02% arabinose (included to maximize the expression of evolved tRNA/aminoacyl tRNA synthetase for incorporation of pBPA at an amber site in BepA) and 0.5 mM pBPA until early log phase and induced with 1 mM IPTG (for the induction of the BepA(amber) mutants) for 1 hr. Total cellular proteins were acid-precipitated and analyzed by 7.5% Laemmli SDS‐PAGE and immunoblotting with an anti-BepA antibody. The result shown is a representative of two technical replicates. See Figure 1—figure supplement 3—source data 1 for plate and gel images for (A, B).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A, B) The accumulation of the BepA mutants and LptDC in the ΔbepA cells expressing the BepA mutants. Cells of AD16 (bepA+) carrying pSTD689 (vector) or SN56 (ΔbepA) carrying either pSTD689 or pSTD689‐bepA plasmids were grown at 30°C in L-medium until early log phase and induced with 1 mM IPTG for 1 hr. Total cellular proteins were acid-precipitated, and analyzed by 10 or 7.5% Laemmli SDS-PAGE under a reducing (+ME) or non-reducing (no ME) condition and immunoblotting with anti-BepA (upper panels) or anti-LptD (lower panel) antibodies. (C) Protease activities of the BepA edge-strand Cys mutants against overproduced LptD. Cells of SN56 (ΔbepA) carrying pTWV228-lptD-his10 and either pSTD689 or pSTD689‐bepA plasmids were grown at 30°C in L-medium until early log phase and induced with 1 mM IPTG for 1 hr. Total cellular proteins were analyzed as in Figure 1B. The result shown is a representative of two technical replicates. See Figure 1—figure supplement 4—source data 1 for gel images for (A–C).
+
 Here, we investigated the mechanism by which BepA established interaction with LptD in the promotion of its assembly and degradation. Our results showed that a conserved β-strand (edge-strand) located adjacent to the BepA active site directly contacts with LptD and plays important roles in substrate proteolysis, like many other proteases. In addition, we unexpectedly found that the edge-strand-mediated interaction with a substrate is also required for the chaperone-like function of BepA, which should be enabled by the His switch-mediated repression of the proteolytic activity. Crosslinking experiments demonstrated that BepA could interact with an LptD molecule assembling on the BAM complex. Based on these observations, we propose a model explaining the edge-strand and His switch-mediated functional regulation of BepA in LptD assembly/degradation.
 
 ## Results
 
-## Interaction of the BepA edge-strand with LptD is crucial not only for proteolysis but also for assembly promotion of LptD by BepA
+### Interaction of the BepA edge-strand with LptD is crucial not only for proteolysis but also for assembly promotion of LptD by BepA
 
 Zinc-metallopeptidases usually possess a β-strand, called edge-strand, located close to their proteolytic active sites (Akiyama et al., 2015; López-Pelegrín et al., 2013; Stöcker and Bode, 1995). While the edge-strand is known to play a critical role in substrate proteolysis by directly interacting with a substrate polypeptide by the strand addition mechanism and converts it into an extended conformation for its presentation to the active site and proteolysis, it has not been well characterized in M48 proteases. The solved structures of Escherichia coli BepA (Bryant et al., 2020; Shahrizal et al., 2019) show that it has a β-strand (β2) that is conserved among the M48-peptidases and is located adjacent to the active site (Figure 1A and Figure 1—figure supplement 1), suggesting that this strand presumably acts as an edge-strand. To examine the role of the β2-strand in BepA functions, we constructed BepA mutants by introducing Pro at each position in β2 (from Asn-105 to Phe-110; Figure 1A). We then investigated the effects of β2 mutations on the proteolytic activity of BepA against overproduced LptD. When LptD is overproduced from a multi-copy plasmid, it mainly accumulates in the form of LptDC possibly due to the limited availability of its partner protein, LptE (Daimon et al., 2020; Daimon et al., 2017). This species probably represents a ‘normal’ assembly intermediate as it is associated with the BAM complex (see below) and can be converted to the mature form (LptDNC) when LptE is co-expressed (Miyazaki et al., 2018). As reported previously (Daimon et al., 2020; Daimon et al., 2017), overproduced LptD was degraded by co-expressed wild-type BepA to generate discrete degradation products (Figure 1B). To examine the possible roles of the β2-strand in the function of BepA, we introduced a Pro substitution into the β2-strand, as a Pro residue would affect the secondary structure, and thus the function, of this strand. We found that the expression of a few BepA mutants (N105P, A106P, F107P, and A108P) led to a significantly decreased generation of the LptD degradation products (Figure 1B). Furthermore, some of these mutations compromised the degradation of BamA in a ΔsurA strain (Daimon et al., 2017) and the self-cleavage of BepA-His10 (BepA possessing a C-terminal His10-tag) within the His10-tag (Narita et al., 2013; Figure 1—figure supplement 2A and B). These results strongly suggest that the β2-strand is important for the proteolytic activity of BepA.
 
@@ -41,19 +61,67 @@ BepA not only degrades the stalled or misassembled LptD (when LptD is on the of
 
 We constructed BepA derivatives with a Cys substitution (note that BepA intrinsically possesses no Cys residue) at the position of Asn-105, Ala-106, or Phe-107 in the edge-strand to examine whether a specific residue in this strand is required for the BepA's functions. We chose a Cys substitution, because (i) the Cys mutants can be used in the disulfide crosslinking experiments described below, and (ii) a previous study strongly suggested that a Cys mutation does not affect the secondary structure of an edge-strand in another protease RseP (Akiyama et al., 2015). These BepA Cys constructs exhibited almost normal chaperone-like and proteolytic functions (Figure 1—figure supplement 4B and C). This supports the idea that the secondary structure of the edge-strand is more important than the individual amino acid residues for its function, although some contribution of the side-chains of the amino acids to the functions of the edge-strand cannot be excluded. Note that, although it is possible that a Pro mutation also affects the structures of the overall BepA protein and/or the active site around the edge-strand, the edge-strand Pro mutants (other than F107P) still exhibited significant self-cleavage of the probably unstructured-terminal tag (Figure 1—figure supplement 2B). In addition, the Pro mutants (other than A106P) degraded mis- or un-folded BamA at a detectable level (Figure 1—figure supplement 2B). Together with the result that these mutants accumulated at a level comparable to that of wild-type BepA, the above observations suggest that most of the Pro mutations specifically affected the edge-strand structure, but not drastically altered the active site or the protein's overall structures.
 
-## BepA interacts with the N-terminal half of the β-barrel-forming domain of the LptD assembly intermediate
+### BepA interacts with the N-terminal half of the β-barrel-forming domain of the LptD assembly intermediate
 
 While BepA interacts with LptD to promote either its proper OM assembly or proteolytic elimination depending on the situation (Narita et al., 2013), the details of the BepA–LptD interaction, including the region(s) in LptD to which BepA binds, remain largely unknown. Thus, we performed a systematic photo-crosslinking analysis to identify the BepA-contact region in the LptD assembly intermediate LptDC. We performed photo-crosslinking experiments in cells ectopically co-expressing an LptD derivative containing a photo-reactive amino acid analog pBPA [LptD(pBPA)] and a protease-dead variant of BepA, BepA(E137Q). We first introduced pBPA at each of the 50 positions (approximately every 15 residues) in the mature part of LptD and performed photo-crosslinking analysis. Cells expressing LptD(pBPA)-His10 and BepA(E137Q) were grown and UV-irradiated, and the total cellular proteins were analyzed by immunoblotting with anti-BepA and anti-His antibodies. Under this condition, expressed LptD-His10 was considerably accumulated as LptDC (Figure 2—figure supplement 1) irrespective of co-expression of BepA(E137Q). We detected clear crosslinking with BepA mainly in the N-terminal half of the LptD β-barrel-forming domain (Figure 2A). We then performed a detailed photo-crosslinking analysis for the 20 additional sites in the N-terminal half of the LptD β-barrel-forming domain (Figure 2B) and found that BepA was crosslinked at several of these sites. The residues at the BepA-cross-linkable sites were oriented both inward and outward in the mature LptD β-barrel (Figure 2C and D). Moreover, the residue Gln-393 at which the strongest crosslinking was observed was oriented inward. These results suggest that LptD while interacting with BepA would not assume a higher-order structure like closed β-barrel (see Discussion). We selected a few LptD(pBPA) derivatives that had been crosslinked with BepA as representatives and examined their functionality. They supported the growth of LptD-depleted cells when expressed from a plasmid, indicating that they were functional (Figure 2—figure supplement 2). The above-mentioned crosslinking results thus likely reflect a functional interaction of LptD with BepA in the normal assembly pathway.
 
-## BepA edge-strand directly interacts with the Tyr-331 residue in the β7 strand of the LptD β-barrel domain
+![Figure 2.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) In vivo photo-crosslinking between LptD and BepA. Cells of RM2243 (bepA(E137Q)) carrying pEVOL-pBpF, pMW118‐bepA(E137Q), and pRM294-lptD(amb)-his10 plasmids were grown at 30°C in L-medium containing 0.02% and 0.5 mM pBPA until early log phase and induced with 1 mM IPTG for 3 hr to express the indicated LptD(pBPA) variants. The cultures were then divided into two portions, each of which was UV-irradiated for 10 min at 4°C. Total cellular proteins were acid-precipitated and analyzed by 7.5% Laemmli SDS‐PAGE and immunoblotting with the indicated antibodies. Most of the LptD mutants were accumulated in comparable amounts. LptD-His10xBepA crosslinked products were not detectable with an anti-His antibody due to its low reactivity to LptD-His10 in this and the following experiments. Amino acid residues shown in red and blue indicate the ones whose side chain is pointing inward and outward, respectively. Amino acid residues shown in green indicate the ones located in the loop regions. The result shown is a representative of two technical replicates. (C) Summary of the BepA crosslinked positions in LptD. Positions where the crosslinking with BepA was clearly and reproducibly detected are indicated by colored dots. (D) Mapping of the BepA crosslinked positions on the barrel domain of LptD in the Escherichia coli LptD–LptE structure (PDB code: 4RHB). LptD and LptE are shown in gray and light green, respectively. The N-terminal strand and the β-signal (C-terminal region) in the LptD β-barrel domain are shown in magenta and light blue, respectively. The top view of the LptD/E structure from extracellular space (upper) and the side view of the N-terminal region of LptD β-domain (lower) are shown. The positions where the crosslinking with BepA was observed were indicated by spheres colored as above. See Figure 2—source data 1 for gel images for (A, B).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Cells of RM2243(bepA(E137Q))/pEVOL-pBpF carrying either pMW118 or pMW118-bepA(E137Q) and either pRM294 or pRM294-lptD-his10 were grown in L-medium containing 0.02% arabinose and 0.5 mM pBPA until early log phase at 30°C and induced with 1 mM IPTG for 3 hr. Total cellular proteins were acid-precipitated and analyzed by 7.5 or 10% Laemmli SDS-PAGE under a reducing (+ME) or non-reducing (no ME) condition and immunoblotting with the indicated antibodies. The result shown is a representative of two biological replicates. See Figure 2—figure supplement 1—source data 1 for gel images.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Cells of RM3588 (Para-lptD) carrying pEVOL-pBpF and either pRM294 or pRM294-lptD(amb)-his10 plasmids were grown at 30°C in L-medium supplemented with 0.1% arabinose for 2.5 hr. The expression of the chromosomally located Para-lptD(WT) is induced by the addition of arabinose. RM3588 (Para-lptD) cells (without pEVOL-pBpF and an lptD(amb) plasmid) cannot grow in the absence of arabinose as the growth-essential LptD protein is depleted in an arabinose-free condition. Cells were washed, suspended in saline, and serially diluted with saline (to about 109 cells/mL). 2.5 μL each of the diluted cells were spotted on an L-agar plate containing 0.1% arabinose (positive control) or L-medium-based agar plates supplemented with 1 mM IPTG (for the expression of the LptD(amber) mutants from a plasmid) with or without 0.5 mM pBPA. Plates were incubated at 30°C for 22 hr. Growth of the cells in the absence of arabinose and in the presence of IPTG and pBPA indicates the plasmid-expressed LptD(pBPA) is functional. The result shown is a representative of two technical replicates. See Figure 2—figure supplement 2—source data 1 for plate images.
+
+### BepA edge-strand directly interacts with the Tyr-331 residue in the β7 strand of the LptD β-barrel domain
 
 We investigated further to identify the region of LptD that interacts with the BepA edge-strand. First, we examined the effects of the BepA edge-strand Pro mutations (F107P and A106P) on the LptD(pBPA)–BepA crosslinking. The F107P mutation significantly decreased the efficiency of the crosslinking of BepA(N105pBPA) and BepA(A106pBPA) with LptD (Figure 3—figure supplement 1). Additionally, the A106P mutation exhibited a similar effect on the crosslinking of BepA(N105pBPA) with LptD. Based on these effects on crosslinking, we inferred that these mutations affected the interaction of the edge-strand with LptD. Subsequently, we selected several LptD(pBPA) derivatives that showed relatively strong crosslinking with BepA and examined the effect of F107P and A106P mutations in the BepA edge-strand on the crosslinking of LptD(pBPA) with BepA. We found that these mutations altered LptD–BepA crosslinking in a site-specific manner. Further, the amount of crosslinked products markedly decreased for LptD(Y331pBPA), but not for other mutants (Figure 3A). These results strongly suggest that the region around Tyr-331 in the β7 strand of the LptD β-barrel domain (Figure 2D) is crosslinked with the edge-strand of BepA. Note that, while we detected LptD-BepA crosslinked products ranging from 150 to 250 kDa with BepA derivatives having pBPA in the edge-strand (Figure 1C), we did not observe similar multiple crosslinked products with LptD(Y331pBPA) (Figure 2). The exact reason for this is unknown, but it might be ascribed to the crosslinking of pBPA in the BepA edge-strand to different LptD positions that are close spatially but distant in the primary sequence, which could generate crosslinked products with different mobility (i.e., different apparent sizes).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig3-v2.jpg)
+
+**Figure 3.:** (A) Effect of the BepA edge-strand mutations on the crosslinking between BepA and the LptD derivatives having pBPA in the N-terminal half region of the LptD β-barrel-forming domain. Cells of SN56 (ΔbepA) carrying pEVOL-pBpF, pMW118‐bepA(E137Q, mut), and pRM294-lptD(amb)-his10 were grown, induced to express a BepA and a LptDpBPA derivative, and subjected to photo-crosslinking analysis as described in Figure 2. (B) Disulfide crosslinking between the Cys residues in the edge-strand of BepA and the N-terminal half region of the LptD β-barrel-forming domain. Cells of SN56 (ΔbepA) carrying a combination of plasmids encoding WT or a Cys-introduced mutant of BepA and LptD-His10 as indicated were grown in L-medium and induced with 1 mM IPTG for 3 hr to express BepA(Cys) and LptD(Cys)-His10. Total cellular proteins were acid-precipitated, solubilized with SDS buffer containing NEM (for blocking free thiol groups), and subjected to pull-down with Ni-NTA agarose. The purified proteins were treated with or without 2-mercaptoethanol (ME) and analyzed by 7.5% Laemmli SDS-PAGE and immunoblotting with the indicated antibodies. The result shown is a representative of two technical replicates. See Figure 3—source data 1 for gel images for (A, B).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cells SN56 (ΔbepA) carrying pEVOL-pBpF and pUC18‐bepA(E137Q, mut., amb)-his10 plasmids were grown in L-medium containing 0.02% arabinose and 0.5 mM pBPA until early log phase at 30°C and induced with 1 mM IPTG for 1 hr to express the indicated BepA(pBPA) variants. The cultures were divided into two portions, each of which was treated with or without UV-irradiation for 10 min at 4°C. Proteins of the total membrane fractions were subjected to pull-down with Ni-NTA agarose. Purified proteins were analyzed by 7.5% Laemmli SDS‐PAGE and immunoblotting with the indicated antibodies. For analysis of the cellular accumulation of each BepA derivative, total cellular proteins of cells of the same cultures were acid-precipitated, and analyzed by 10% Laemmli SDS‐PAGE and immunoblotting with the indicated antibodies. Open triangles indicate unknown crosslinked products. The result shown is a representative of two technical replicates. See Figure 3—figure supplement 1—source data 1 for gel images.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Complementation activity of the LptD derivatives with an engineered Cys residue. Cells of RM3588 (Para-lptD) carrying pRM294 or pRM294-lptD(Cys)-his10 plasmids were grown at 30°C in L-medium supplemented with 0.1% arabinose for 2.5 hr. Cells were washed, suspended in saline, and serially diluted with saline (to about 109 cells/mL). 2.5 μL each of the diluted cells were spotted on an L-agar plate containing 0.1% arabinose (positive control) or 1 mM IPTG (for the induction of LptD(Cys) from a plasmid). Plates were incubated at 30°C for 22 hr. (B) BepA–LptD disulfide crosslinking. Cells of SN56 (ΔbepA) carrying a combination of plasmids encoding WT or a Cys-mutant form of BepA and LptD-His10 as indicated were grown in L-medium and induced with 1 mM IPTG for 3 hr to express BepA(Cys) and LptD(Cys)-His10. Total cellular proteins were acid-precipitated, solubilized with SDS buffer containing NEM and subjected to pull-down with Ni-NTA agarose. The purified proteins were treated with or without 2-mercaptoethanol (ME) and analyzed by 7.5% Laemmli SDS-PAGE and immunoblotting with the indicated antibodies. The result shown is a representative of two technical replicates. See Figure 3—figure supplement 2—source data 1 for plate gel images for (A, B).
+
 To further confirm the direct interaction of the BepA edge-strand with the LptD β7 strand, we conducted site-specific disulfide crosslinking experiments. For this analysis, we used the above-described single Cys derivatives of BepA harboring a Cys residue at the position of Asn-105, Ala-106, or Phe-107, and derivatives of LptD having a Cys substitution at either of the six positions, including Tyr-331 at which introduction of pBPA showed clear crosslinking with BepA (Figure 3A). The wild-type LptD protein harbors intrinsic four Cys residues that form two disulfide bonds essential for the LptD function; therefore, each of these Cys-substituted LptD mutants possessed five Cys residues in total. We confirmed that these Cys-substituted LptD derivatives accumulated normally and retained their function (Figure 3—figure supplement 2). Cells expressing a combination of BepA Cys mutants and LptD Cys mutants were grown, and total proteins were acid-denatured and dissolved in SDS containing N-ethylmaleimide (NEM; NEM was included to block free Cys residues). Then, LptD-His10 and its crosslinked products were affinity-isolated using the C-terminal His10-tag, treated with or without 2-mercaptoethanol (ME), and analyzed by SDS-PAGE and anti-BepA immunoblotting. We observed that certain combinations of BepA and LptD derivatives showed a high-molecular-mass band in electrophoresis results. Among them, the combination of BepA(N105C) and LptD(Y331C) showed the most intense band that exhibited reaction with the anti-BepA antibody (Figure 3B and Figure 3—figure supplement 2B, no ME). These high-molecular-mass bands were not observed with the wild-type LptD (no additional Cys) and disappeared upon treatment with ME, suggesting that they were disulfide-crosslinked products (Figure 3B and Figure 3—figure supplement 2B, + ME). These results are consistent with the photo-crosslinking experiments (Figure 3A) and indicate that the edge-strand of BepA can directly bind to several regions in the N-terminal half of the LptD β-barrel-forming domain, which includes the β7 strand containing Tyr-331.
 
-## BepA interacts with an LptD intermediate associating with the seam region of BamA on the BAM complex
+### BepA interacts with an LptD intermediate associating with the seam region of BamA on the BAM complex
 
 We further investigated the mode of the interaction of the BepA-associated LptD with the BAM complex. It has been recently shown that LptD4213, a mutant form of LptD that has a short (23 amino acids) deletion in an extracellular loop (eL4) and is stalled on the BAM complex mimicking a late assembly complex (Lee et al., 2016), interacts with the seam region formed by the N- and C-terminal β-strands (β1 and β16, respectively) in the BamA barrel domain and forms a hetero-complex, in which the C-terminal β-signal of the LptD4213 was associated with the β1 strand of the BamA seam (Lee et al., 2019). It has been suggested that the interaction of the β-signal with the BamA β1 strand generally facilitates the folding of the β-barrel domain of a substrate OMP (see Figure 4D and 5B; Tomasek and Kahne, 2021). We first examined the interaction of the BepA-associated LptD intermediate with BamA and BamD by conducting in vivo photo-crosslinking experiments using the LptD derivatives with pBPA at the position of Glu-749 or Tyr-726 in addition to the position of Tyr-331. pBPA at Glu-749 and Tyr-726 residue, both of which are located near the β-signal of LptD, have been reported to be crosslinked with BamA and BamD, respectively, during the LptD assembly (Figure 4D; Lee et al., 2019; Lee et al., 2018). Complementation assay results showed that either of the LptD derivatives containing one or two pBPA at Glu-749 and Tyr-726 were functional (Figure 4—figure supplement 1). After UV-irradiation of the cells expressing LptD-His10 and the pBPA derivatives, LptD-His10 and its crosslinked products were affinity-isolated from the membrane fractions and analyzed by immunoblotting. The single pBPA derivatives indeed generated crosslinked products with the expected factors as: LptD(Y331pBPA) with BepA, LptD(D749pBPA) with BamA, and LptD(Y726pBPA) with BamD (Figure 4A and B). With the double pBPA derivatives LptD(Y331/D749pBPA) and LptD(Y331/Y726pBPA), new crosslinked products with higher molecular sizes were observed in addition to the ones observed with single pBPA mutants (Figure 4A and B). These results showed that the higher molecular-sized products represented BepA–LptD(Y331/D749pBPA)–BamA and BepA–LptD(Y331/Y726pBPA)–BamD crosslinked products and that BepA interacts with an assembly intermediate of LptD on the BAM complex.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) In vivo photo-crosslinking of an LptD mutant having pBPA at two positions with BepA. Cells of RM2243 (bepA(E137Q)) carrying pEVOL-pBpF, pMW118‐bepA(E137Q) and pRM294-lptD(amb)-his10 plasmids were grown at 30°C in L-medium containing 0.5 mM pBPA until early log phase and induced with 1 mM IPTG for 3 hr to express the indicated LptD(pBPA) variants. The cultures were divided into two portions, each of which was treated with or without UV-irradiation for 30 min at 4°C. Proteins of the total membrane fractions were subjected to pull-down with Ni-NTA agarose. Purified proteins were analyzed by 7.5% Laemmli SDS‐PAGE by immunoblotting with the indicated antibodies. Asterisk in the anti-BepA blots possibly indicates an LptD-BamA crosslinked product that was detected due to the apparent cross-reactivity of the anti-BepA antibody with the LptDxBamA crosslinked product (see below). (C) Simultaneous crosslinking of LptD having Y331pBPA and E733C with the BepA edge-strand and the seam region of BamA(S439C). Cells of RM3655 (bamA(S439C), ΔbepA)/pEVOL-pBpF/pMW118‐bepA(E137Q) carrying pRM294-lptD(E733C)-his10, or pRM294-lptD(Y331amb, E733C)-his10 were grown and induced as in (A). After treatment with or without BMB and the following quenching of BMB by addition of excess cysteine, the cultures were divided into two portions, each of which was treated with or without UV-irradiation for 30 min at 4°C. Total cellular proteins were acid-precipitated, solubilized with SDS buffer containing NEM, and subjected to pull-down with Ni-NTA agarose. Purified proteins were analyzed by 7.5% Laemmli SDS‐PAGE and immunoblotting with the indicated antibodies. The anti-BamA immunoblotting showed that the amount of the BepAxLptDxBamA crosslinked product was much lower than that of the LptDxBamA crosslinked product. Although the anti-BepA antibodies apparently cross-reacted weakly with the LptDxBamA crosslinked products (closed circles), the higher signal intensity of the BepAxLptDxBamA crosslinked product band as compared with the intensity of the LptDxBamA band (closed circles) indicate that the detection of the former band with the anti-BepA antibodies cannot be ascribed to this cross-reactivity. The identities of the bands marked by open circles in (A, B) are unclear; they might represent BepA-LptD crosslinked products or BepA-BamA crosslinked products (detected due to the cross-reactivity of anti-BepA antibodies with LptDxBamA crosslinked products as described above). In (A–C), we confirmed that the amounts of the isolated non-crosslinked LptD-His10 derivatives were roughly equal by CBB staining or anti-His immunoblotting (Figure 4—figure supplement 3). The result shown is a representative of two technical replicates. (D) A schematic cartoon of the interaction of the LptD assembly intermediate with BepA and BamA/D on the BAM complex. See Figure 4—source data 1 for gel images for (A–C).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Cells of RM3588 (Para-lptD) carrying pEVOL-pBpF and either pRM294 or pRM294-lptD(amb)-his10 plasmids were grown and analyzed as in Figure 2—figure supplement 2. The result shown is a representative of two technical replicates. See Figure 4—figure supplement 1—source data 1 for plate images.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) BMB crosslinking. Cells of RM3654 (bamA+, ΔbepA)/pEVOL-pBpF/pMW118‐bepA(E137Q) or RM3655 (bamA(S439C), ΔbepA)/pEVOL-pBpF/pMW118‐bepA(E137Q) carrying each pRM294-lptD-his10 derivative were grown at 30°C in L-medium containing 0.5 mM pBPA until early log phase and induced with 1 mM IPTG for 3 hr to express the indicated LptD variants. Cell cultures were treated with TCEP to reduce possible artificially formed disulfide bonds for E733C in LptD and S439C in BamA. The cultures were divided into two portions, each of which was treated with or without BMB. After quenching of BMB by addition of excess cysteine, total cellular proteins were acid-precipitated, solubilized with SDS buffer containing NEM, and subjected to pull-down with Ni-NTA agarose. The purified proteins were analyzed by 7.5% Laemmli SDS-PAGE and immunoblotting with the indicated antibodies. (B) Complementation activity of LptD derivatives. Cells of RM3588 (Para-lptD) carrying pEVOL-pBpF and pRM294 or each pRM294-lptD-his10 derivative were grown are analyzed as in (A, B). The result shown is a representative of two technical replicates. See Figure 4—figure supplement 2—source data 1 for gel and plate images for (A, B).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Affinity isolated proteins in Figure 4A–C were separated by 7.5% Laemmli SDS-PAGE and subjected to CBB staining (A and B for Figure 4A and B, respectively) or anti-His immunoblotting (C for Figure 4C). The result shown is a representative of two technical replicates. See Figure 4—figure supplement 3—source data 1 for gel images.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig5-v2.jpg)
+
+**Figure 5.:** (A) A schematic cartoon of the substrate recognition by BepA at its active site. See the text for details. (B) An overview of the proposed LptD assembly process and BepA-mediated discrimination of the assembling and stalled LptD species. See the text for details. Association of BepA with the assembly intermediate form of LptD on the BAM complex could transiently stabilize the LptD assembly intermediate and facilitate the association of LptE with LptD.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70541/elife-70541-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The space-filling models of wild type BepA (left), BepA without the α6-loop (middle), and BepA without the α6- and α9-loops (right). The peptidase and the TPR domains of the BepA crystal structure (PDB code: 6AIT) are shown in gray and orange, respectively. The α6-loop, the α9-loop, the proteolytic active site (the HExxH motif and the third zinc ligand, Glu-201), and the edge-strand in the peptidase domain are shown in magenta, green, blue and red, respectively. The result shown is a representative of two technical replicates.
 
 We further conducted photo-crosslinking experiments using LptD locked on the BAM complex by using an SH-crosslinker, 1,4-bismaleimidobutane (BMB). It has been previously shown (Lee et al., 2019) that a cysteine placed near the N-terminal β-strand of the BamA β-barrel (S439C) was crosslinked with a cysteine introduced near the β-signal of LptD (E733C) via BMB treatment (Figure 4D; Figure 4—figure supplement 2A). We introduced a Y331pBPA mutation into LptD(E733C) and confirmed that the resultant mutant was functional (Figure 4—figure supplement 2B). When the LptD(Y331pBPA/E733C) mutant was expressed in a strain having a chromosomal bamA(S439C) mutant gene, LptD–BepA crosslinked products were detected upon UV-irradiation, whereas LptD–BamA crosslinked products was detected upon BMB treatment. When cells were first treated with BMB and then UV-irradiated, a higher mass product that reacted with both anti-BepA and anti-BamA antibodies was generated. The generation of this product depended on both BMB-treatment and UV-irradiation (Figure 4C). These results are fully consistent with the above photo-crosslinking results and further demonstrated that BepA could interact with an LptD assembly intermediate associating with the seam site of BamA on the BAM complex.
 
@@ -63,13 +131,13 @@ The involvement of BepA in the maintenance of structural and functional integrit
 
 To gain insight into the BepA–LptD interaction, we examined the role of the conserved edge-strand of BepA in its function. Our results showed that the BepA edge-strand participates not only in the proteolytic activity but also, unexpectedly, in the chaperone-like activity through its direct interaction with LptD (Figure 1). The results of the photo- and disulfide-crosslinking analyses indicated that the N-terminal half of the LptD β-barrel-forming domain interacts with the BepA edge-strand (Figure 2 and Figure 3). Moreover, we showed that BepA demonstrated interaction with an LptD assembly intermediate whose C-terminal region was associated with the seam strand of BamA on the BAM complex (Figure 4). A ternary complex formation among an assembly intermediate of an OM protein (EspP, an autotransporter), a periplasmic chaperone (SurA/Skp), and the BAM complex has been suggested form biochemical studies including crosslinking, although the ternary complex was not directly detected (Ieva et al., 2011). We here experimentally demonstrated the ternary complex formation for LptD, BepA, and the BAM complex. A similar client-chaperone-BAM ternary complex might be formed in the assembly of other OM proteins. These observations provide useful insights into the BepA functions involved in the biogenesis and quality control of LptD, and also the assembly mechanism of other OM proteins.
 
-## Interaction between the edge-strand of BepA and an LptD assembly intermediate
+### Interaction between the edge-strand of BepA and an LptD assembly intermediate
 
 Our previous results have shown that BepA interacts with the BAM complex via its C-terminal TPR domain partly inserted into the periplasmic ring-like structure of the BAM complex (Daimon et al., 2017; Shahrizal et al., 2019). In this study, we observed that BepA showed crosslinking with the N-terminal half of the LptD β-barrel-forming domain but not with the C-terminal half. This observation was consistent with the localization of LptD on the BAM complex; the N-terminal region was localized at/near the periplasmic surface of the BAM complex, and the C-terminal region was inserted deep into the BAM complex’s interior. The results of the disulfide-crosslinking experiments showed that several positions, including Tyr-331, in the N-terminal half of the LptD β-barrel-forming domain interacted with the edge-strand. The recently solved structures of BepA (Bryant et al., 2020; Shahrizal et al., 2019) showed that the active site region including the edge-strand was located inside the BepA molecule, leading to the suggestion that structural changes in BepA including the movement of the α6- and α9-loops covering the active site/edge-strand were necessary to enable access of a substrate to the active site/edge-strand region (Figure 5—figure supplement 1). However, even after such structural changes, the edge-strand should be located at a recessed position. This suggests that the regions around the BepA-crosslinked positions in the LptD assembly intermediate do not form an extensive β-sheet structure as found in the mature LptD to gain access to the edge-strand of BepA (Figure 5—figure supplement 1). Furthermore, pBPA at positions of both the inward-pointing and outward-pointing residues in the mature β-barrel domain of LptD was crosslinked with BepA.
 
 Collectively, these results support the hypothesis that the BepA-interacting region of the LptD intermediate is largely unstructured. The unstructured nature of these proteins is in fact helpful to accommodate in or around the narrow space inside the BAM complex. The TPR domain of BepA has also been shown to contact with LptD to promote its biogenesis and degradation (Daimon et al., 2017). Currently, we have no information available on the part of LptD that interacts with the TPR domain. The TPR domain may act either together with the edge-strand at the same step or independently at other steps during LptD assembly and degradation.
 
-## The edge-strand and His switch mediate functional regulation of BepA in the assembly promotion and proteolytic quality control of LptD
+### The edge-strand and His switch mediate functional regulation of BepA in the assembly promotion and proteolytic quality control of LptD
 
 Further, our results suggest that the proper interaction of LptD with the edge-strand of BepA is important for the promotion of its assembly as well as degradation by BepA (Figure 1 and Figure 5A). This finding was unexpected as it raised a question of how the degradation of the normally assembling LptD intermediate can be avoided despite its interaction with the edge-strand near the protease active site. In the BepA structures, the conserved His-246 residue is coordinated to a zinc ion in the active site to block the activation of a water molecule necessary for the catalysis of the proteolytic reaction (Bryant et al., 2020; Shahrizal et al., 2019). We have recently reported that His-246 acts as a switch to regulate the proteolytic activity of BepA (Daimon et al., 2020). This His-switch-mediated repression of the protease activity would enable the interaction of LptD intermediates at the protease active site of BepA without degradation. Indeed, the derepressed BepA(H246A) mutant degrades an LptD intermediate on the normal assembly pathway, instead of promoting its biogenesis (Daimon et al., 2020).
 
@@ -77,13 +145,13 @@ While the exact role of the BepA's edge-strand in the chaperone-like activity re
 
 Notably, it has been reported that BepA expression can result in the degradation of a mutant form of LptD (LptD4213) that probably mimics a late-state assembly intermediate of LptD (Lee et al., 2019; Lee et al., 2016) that possesses a substantial degree of a higher order (β-barrel-like) structure and interacts with the Bam components (BamA and BamD), and LptE. The mechanism by which LptD4213 is degraded by BepA remains unclear, but its N-terminal region may interact with BepA.
 
-## A proposed function of BepA in the promotion of the assembly of an immature LptD and LptE
+### A proposed function of BepA in the promotion of the assembly of an immature LptD and LptE
 
 BepA possibly facilitates the association of LptD with LptE on the BAM complex as the phenotypes caused by the disruption of BepA, including drug sensitivity and retarded disulfide rearrangement in LptD, can be suppressed by the overproduction of LptE (Narita et al., 2013). We have previously detected two species of LptDC; one is not associated with LptE and observed only in an extremely early phase of its membrane assembly, and the other is associated with LptE and formed at a later phase (Miyazaki et al., 2018). It is likely that the LptDC molecule that was simultaneously crosslinked with BepA and BamA was not associated with LptE, as it was accumulated in the LptE-limiting condition; therefore, it would represent the former species of LptDC mentioned above. We assume that this LptD intermediate may possess a partially folded structure in which the BamA-associating C-terminal region of the barrel domain has a certain degree of a higher order (β-sheet) structure, but the BepA-associating N-terminal region is largely unstructured. Such a state of LptD may be favorable for the association of LptE with LptD (Figure 4D).
 
 Interestingly, Tyr-331 of LptD that contacts with the edge-strand of BepA is located at the end of the LptE-surrounding region of the LptD β-barrel in the mature LptD/E complex (Figure 2D). The interaction with the edge-strand of BepA may pin the partially folded structure of LptD transiently and facilitate the association between LptD and LptE. It might also assist the formation of the β-sheet structure in the β-barrel-forming domain of LptD. Although it is possible that BepA actively promotes the LptD–LptE association by interacting with both LptD and LptE, it is also possible that BepA plays a passive role by maintaining an appropriate structure of LptD for association with LptE without showing direct interaction with LptE.
 
-## A model of the BepA-assisted biogenesis process of LptD
+### A model of the BepA-assisted biogenesis process of LptD
 
 The biogenesis of LptD has been well studied. LptD has been a focus of OM protein research because it provides important information on its essential cellular function and it can be used as a model for OM protein insertion into the OM by the BAM complex. Based on the results obtained in the previous and current studies, we propose a model of the BepA-assisted biogenesis of LptD (Figure 5B): (i) After synthesis in the cytoplasm, LptD is translocated to the periplasm through the SecYEG translocon, during or just after which the Cys residues are oxidized by DsbA to form LptDC (Chng et al., 2012; Narita et al., 2013).
 
@@ -91,25 +159,182 @@ It is then targeted to the BAM complex with the aid of periplasmic chaperones in
 
 The isomerization of two disulfide bonds in LptD (LptDC to LptDNC) should occur at a later step after the association of LptD and LptE (Lee et al., 2016; Miyazaki et al., 2018). The LptD intermediates that are stalled at certain steps in the above-mentioned processes as a result of misfolding are eliminated by the action of several peptidases including DegP (in the periplasm) and BepA /YcaL (on the BAM complex) (Soltes et al., 2017).
 
-## Future perspectives of BepA study
+### Future perspectives of BepA study
 
 Our study reports several new findings on the interaction of BepA with LptD and BamA on the BAM complex where BepA plays a crucial role in the biogenesis and degradation of LptD. Further, we proposed a model explaining the role of BepA in these processes. Nonetheless, there are many questions that warrant further investigation. It would be especially important to elucidate the mechanism by which the substrate gains access to the active site buried inside the BepA molecule and the manner in which the switching of BepA from the state with chaperone-like function to that with protease function occurs. The possible movement of the α6- and α9-loops should be directly examined. It is possible that there are signals that arise from the BAM complex and/or from (stalled) LptD to induce this structural/functional conversion of BepA. Further study, including structural and biochemical analysis of the BepA–LptD–BAM complex, is necessary to substantiate our model and to elucidate the molecular details of BepA functions. It remains an open question whether BepA also acts in the assembly and quality control of some other OM proteins, like in the case of LptD. Systematic identification and analysis of the additional BepA substrate OM proteins will be needed to know how generally BepA acts in biogenesis/degradation of OM proteins. Cell surface proteins are suitable drug targets as they are more easily accessible from the external milieu than cytoplasmic proteins. These studies can provide a basis for the development of new drugs targeted to BepA/LptD/BAM.
 
 ## Materials and methods
 
-## Bacterial strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>E. coli strains</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (P1 bacteriophage)</td>
+      <td>P1vir</td>
+      <td>Laboratory stock</td>
+      <td>CGSC12133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Plasmids</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>described in the below</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Penta-His HRP conjugate(mouse monoclonal)</td>
+      <td>QIAGEN</td>
+      <td>34460</td>
+      <td>(1:2000 or 1:3000 dilution)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-BepA (rabbit polyclonal)</td>
+      <td>Narita et al., 2013</td>
+      <td>N/A</td>
+      <td>(1:10000 dilution)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-LptD (rabbit polyclonal)</td>
+      <td>Narita et al., 2013</td>
+      <td>N/A</td>
+      <td>(1:50000 dilution)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-BamA (rabbit polyclonal)</td>
+      <td>Gunasinghe et al., 2018</td>
+      <td>N/A</td>
+      <td>(1:20000 dilution)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-BamD (rabbit polyclonal)</td>
+      <td>Gunasinghe et al., 2018</td>
+      <td>N/A</td>
+      <td>(1:10000 dilution)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat Anti-Rabbit IgG (H + L)-HRP Conjugate</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>1706515 RRID:AB_2617112</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>H-p-Bz-Phe-OH</td>
+      <td>Bachem</td>
+      <td>F2800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Methionine, L-[35S] Translation Grade</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td>ARS 01014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>nProtein A Sepharose 4 Fast Flow</td>
+      <td>GE Healthcare</td>
+      <td>17528004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Ni-NTA Agarose</td>
+      <td>QIAGEN</td>
+      <td>30250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>ECL Western Blotting Detection Reagents</td>
+      <td>GE Healthcare</td>
+      <td>RPN2106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>ECL Prime Western Blotting Detection Reagents</td>
+      <td>GE Healthcare</td>
+      <td>RPN2232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>Microsoft</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Bio-imaging Analyzer BAS-1800, BAS-5000</td>
+      <td>Fujifilm/GE Healthcare</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Image Qaunt LAS 4000 mini</td>
+      <td>Fujifilm/GE Healthcare</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Multi Gauge</td>
+      <td>Fujifilm/GE Healthcare</td>
+      <td>RRID:SCR_014299</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and plasmids
 
 E. coli K12 strains and plasmids used in this study are listed in Supplementary files 1 and 2, respectively. Details of the strain and plasmid construction and media are described in Construction of mutant strains and Plasmids construction, respectively.
 
-## Media and bacterial cultures
+### Media and bacterial cultures
 
 E. coli cells were grown in L-rich medium (10 g/L bacto-tryptone, 5 g/L bacto-yeast extract, 5 g/L NaCl; pH adjusted to 7.2 with NaOH) or M9 synthetic medium (without CaCl2; Miller, 1972) supplemented with maltose (final 0.2%), glycerol (final 0.4%), all amino acids (except Met and Cys; final concentration of 20 μg/mL each). 50 µg/mL ampicillin (Amp), 20 µg/mL chloramphenicol (Cm), 25 µg/mL kanamycin (Km), 25 µg/mL tetracycline (Tet), and 50 µg/mL spectinomycin (Spc) were added as appropriate for growing plasmid-bearing cells and selection of transformants and transductants. Bacterial growth was monitored with Mini photo 518R (660 nm; TAITEC Co., Saitama, Japan).
 
-## Construction of mutant strains
+### Construction of mutant strains
 
 RM2091 (JE6631, purC80::Tn10) was constructed by transferring the purC80::Tn10 marker, which is located near the bepA gene, from CAG18470 (Nichols et al., 1998) into JE6631 (Miyazaki et al., 2018), respectively, by P1 transduction. RM2243 (AD16, bepA(E137Q) purC80::Tn10) was constructed as follows. pRM330 (a plasmid carrying bepA(E137Q), see below) was introduced into RM2091 to yield cells with pRM330 integrated into the chromosome by homologous recombination in the bepA region. They were then grown on an L-agar plate containing 5% sucrose to select cells that had lost the integrated plasmid. The plasmid-cured cells were screened for those having the chromosomal bepA(E137Q) allele at the bepA locus. The bepA(E137Q) allele was finally transferred to AD16 (Kihara et al., 1995) by joint P1 transduction with the purC80::Tn10 marker. One of such strains was named RM2243. RM3654 (AD16, ΔbepA, bamA+ zae502::Tn10) and RM3655 (AD16, bamA(S439C) zae502::Tn10) were constructed as follows, pRM845 (a plasmid carrying bamA(S439C), see below) was introduced into YH188 (JE6631, zae502::Tn10) (Hizukuri and Akiyama, 2012) to yield cells with pRM845 integrated into the chromosome by homologous recombination in the bamA region. They were then grown on an L-agar plate containing 5% sucrose to select cells that had lost the integrated plasmid. The plasmid-cured cells were screened for those having the chromosomal bamA(S439C) allele at the bamA locus. The bamA(S439C) allele was transferred to SN56 (Narita et al., 2013) by joint P1 transduction with the zae502::Tn10 marker. Strains having the bamA+ allele and the bamA(S439C) allele were picked up and named RM3654 and RM3655, respectively. RM2831 (HM1742, kan araC-ParaBAD-lptD) were constructed by essentially the same procedure as the construction of strains with a chromosomal C-terminal his10-tagged gene (Miyazaki et al., 2020b). First, a kan araC-ParaBAD-lptD fragment having a sequence identical to the upstream or downstream region of the lptD start codon at the respective ends of the fragment, was PCR-amplified from pRM741 (a plasmid carrying a kan cassette at the upstream of an araC-ParaBAD) using a pair of primers, ara-lptD-f (5′-TTGTCACGCGCAACGTTACCGATGATGGAACAATAAAATCAACGTCATATGAATATCCTCCTTAG-3′) and ara-lptD-r (5′-GGTGGCAATCATGGTGGCCAGGAGAGTGGGGATACGTTTTTTCATGGTGAATTCCTCCTGCTAG-3′). Then, the chromosomal lptD locus of the E. coli DY330 strain was replaced by this fragment using the λ-Red recombination system (Yu et al., 2000). The kan araC-ParaBAD-lptD was finally transferred to HM1742 by P1 transduction.
 
-## Plasmids construction
+### Plasmids construction
 
 pSTD689-derived plasmids carrying a bepA mutants were constructed from pRM290 (pSTD689-bepA) (Daimon et al., 2017) by site-directed mutagenesis. Derivatives of pRM291 (pSTD689-bepA(E137Q)) (Daimon et al., 2017) carrying an additional Cys mutation and derivatives of pUC-bepA(E137Q)-his10 (pUC18-bepA(E137Q)-his10) (Narita et al., 2013) carrying an amber mutation were constructed by site-directed mutagenesis. pUC18-bepA(Pro)-his10 and pUC18-bepA(amb)-his10 plasmids were constructed from pUC-bepA-his10 (pUC18-bepA-his10) (Narita et al., 2013) by site-directed mutagenesis. To construct pUC18-bepA(Pro, amb, E137Q)-his10 plasmids, a mutation for the individual Pro substitutions was introduced into each of the pUC18-bepA(amb, E137Q)-his10 plasmids by site-directed mutagenesis. pNB91 (pMW118-bepA(E137Q)) was constructed by subcloning an EcoRI-HindIII bepA(E137Q) fragment prepared from pUC-bepA(E137Q) (pUC18-bepA(E137Q)) (Narita et al., 2013) into the same sites of pMW118. pRM807 (pMW118-bepA(A106P, E137Q)) and pRM808 (pMW118-bepA(F107P, E137Q)) were also constructed by subcloning an EcoRI-HindIII bepA fragment from each of pSTD639-bepA plasmids into the same sites of pMW118.
 
@@ -119,11 +344,11 @@ pRM320 (pUC118-bepA-yfgD) was constructed by PCR amplification of the bepA-yfgD 
 
 pRM823 (pUC118-bamA) was constructed by in vitro recombination using In-Fusion HD Cloning Kit (Takara Bio Inc) of an EcoRI-BamHI fragment from pUC118 and a bamA fragment prepared by PCR amplification from the genome of MC4100 using a pair of primers, bamA-f (5′-GCGCGAATTCAGGAAGAACGCATAATAACG-3′) and bamA-r (5′-GCGCGGATCCTTACCAGGTTTTACCGATG-3′). For the construction of pRM836, the bamA(S439C) mutation was introduced into pRM823 by site-directed mutagenesis. pRM845 (pK18mobsacB-bamA(S439C)) was constructed by subcloning the EcoRI-BamHI bamA(S439C) fragment from pRM823 into the same sites of pK18mobsacB.
 
-## Immunoblotting analysis
+### Immunoblotting analysis
 
 Acid-denatured proteins were solubilized in SDS-sample buffer (62.5 mM Tris-HCl (pH 6.8), 2% SDS, 10% glycerol, and 5 mg/mL bromophenol blue) with or without 10% β-ME, boiled at 98°C for 5 min, separated by SDS-PAGE and electro-blotted onto a PVDF membrane (Merck Millipore; Billerica, MA). The membrane was first blocked with 5% skim milk in PBST (Phosphate Buffered Saline with Tween 20), and then incubated with Penta-His HRP conjugate (1:2000 or 1:3000 dilution), anti-BepA (1:10,000), anti-LptD (1:50,000), anti-BamA (1:20,000), or anti-BamD (1:10,000). After washing with PBST, the membrane was incubated with a horseradish peroxidase (HRP)-conjugated secondary antibody (1:5000) (Goat Anti-Rabbit IgG (H+L)-HRP Conjugate; Bio-Rad Laboratories, Inc, Hercules, CA) in PBST (this step was omitted for the detection using Penta-His HRP Conjugate). Proteins were visualized with ECL Western Blotting Detection Reagents (GE Healthcare UK Ltd, Amersham Place Little Chalfont, England) or ECL Prime Western Blotting Detection Reagents (GE Healthcare) and LAS4000 mini lumino-image analyzer (GE Healthcare).
 
-## Pulse-chase analysis for assay of the LptD disulfide-isomerization
+### Pulse-chase analysis for assay of the LptD disulfide-isomerization
 
 Cells were first grown at 30°C in M9-medium supplemented with 2 µg/mL thiamine, 0.4% glycerol, 0.2% maltose, all amino acids (except Met and Cys) with or without 0.05% arabinose until early log phase. After induction with 1 mM IPTG for 15 min, cells were pulse-labeled with 370 kBq/mL [35S]methionine for 1 min. At appropriate time points after addition of excess nonradioactive Met (final conc. 250 µg/mL), total cellular proteins were precipitated with 5% TCA, washed with acetone, solubilized in SDS buffer (50 mM Tris-HCl (pH 8.1), 1% SDS, and 1 mM EDTA) and diluted 33-fold with Triton buffer (50 mM Tris-HCl (pH 8.1), 150 mM NaCl, 2% Triton X-100, and 0.1 mM EDTA). After clarification, samples were incubated with anti-LptD antibodies and nProtein A Sepharose 4 Fast Flow (GE Healthcare) at 4°C overnight with slow rotation. Proteins bound to the antibody/ProteinA-Sepharose were recovered by centrifugation, washed with Triton buffer, and then with 10 mM Tris-HCl (pH 8.1) and eluted by incubation at 98°C for more than 5 min in SDS-sample buffer. The samples were divided into two portions and one was treated with 10% β-ME. The proteins were separated by SDS-PAGE, and visualized with BAS1800 phosphoimager. Relative LptDNC were calculated by the following equation: Relative LptDNC=[LptDNC(X min)]/[LptDC(5 min)+LptDNC(5 min)], where LptDNC and LptDC are the intensities of the respective bands.
 
@@ -133,6 +358,6 @@ For the experiments in Figures 2A, B and 3A, cells were grown at 30°C in L-medi
 
 For experiments in Figure 4A and B, cells were grown at 30°C in L-medium containing 0.5 mM pBPA and 0.02% arabinose until early log phase and induced with 1 mM IPTG for 3 hr. While a half volume of the cell cultures was UV-irradiated for 30 min, the other half was kept on ice as non-UV-irradiated samples, as above. Membrane fractions were prepared as above and solubilized in SDS buffer. After dilution with Triton buffer and clarification, samples were subjected to pull-down with Ni-NTA Agarose. The isolated proteins were solubilized in SDS-sample buffer containing ME, boiled at 98°C for 5 min, and analyzed by SDS-PAGE and immunoblotting analysis.
 
-## BMB crosslinking combined with photo-crosslinking
+### BMB crosslinking combined with photo-crosslinking
 
 Cells were grown at 30°C in L-medium containing 0.5 mM pBPA and 0.02% arabinose until early log phase and induced with 1 mM IPTG for 3 hr. BMB crosslinking was performed essentially according to the previously described procedures (Lee et al., 2019). After quenching the BMB crosslinking, cells were treated with or without UV-irradiation for 30 min at 4°C. Total cellular proteins were precipitated with 5% TCA, washed with acetone, and suspended in SDS-sample buffer containing 12.5 mM NEM for blocking the free Cys residues. After dilution with Triton buffer and clarification, samples were subjected to pull-down with Ni-NTA Agarose. The isolated proteins were suspended in SDS-sample buffer containing ME, boiled at 98°C for 5 min, and analyzed by SDS-PAGE and immunoblotting analysis.

@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00znvbk37 DST/NRF Centre of Excellence for Biomedical TB Research, Faculty of Health Sciences, University of the Witwatersrand, National Health Laboratory Service Johannesburg South Africa
-2. https://ror.org/037zgn354 Center for Tuberculosis Research, Department of Medicine, Johns Hopkins School of Medicine Baltimore United States
-3. https://ror.org/0153tk833 Department of Chemistry, University of Virginia Charlottesville United States
+1. DST/NRF Centre of Excellence for Biomedical TB Research, Faculty of Health Sciences, University of the Witwatersrand, National Health Laboratory Service Johannesburg South Africa ([ROR:00znvbk37](https://ror.org/00znvbk37))
+2. Center for Tuberculosis Research, Department of Medicine, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+3. Department of Chemistry, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
 
 † Corresponding author
 
@@ -34,55 +34,140 @@ We hypothesized that depletion of MurT-GatD in BCG would result in increased abu
 
 ## Results
 
-## Construction of rBCG::iE-DAP
+### Construction of rBCG::iE-DAP
 
 Using the CRISPRi gene expression knockdown system, we generated a derivative of plasmid pLRJ965 (Rock et al., 2017) that conditionally expresses dCas9 from Streptococcus thermophiles and a 17 base short guide RNA (sgRNA) sequence that targets the murT-gatD operon upon exposure to anhydrotetracycline (ATc) or doxycycline (Dox) to create plasmid PLRJ965 +murTsgRNA (Figure 1—figure supplement 2a and b). This plasmid was introduced into BCG-Pasteur to generate a recombinant BCG strain called rBCG::iE-DAP. We showed that following ATc induction, the relative mRNA levels of the full length murT transcript were 1000-fold lower in rBCG::iE-DAP when compared with the uninduced rBCG strain (Figure 1b).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of MurT-GatD mediated PG precursor amidation. (B) murT gene expression measured by quantitative PCR in rBCG::iE-DAP. (C) Scanning electron micrographs of WT BCG (n=45 micrographs, 100 cells counted) and rBCG::iE-DAP (n=48 micrographs, 100 cells counted) grown in media supplemented with 200 ng/ml ATc. Scale bar = 1 µm. (D) Frequency of cells with cell wall defects as seen by SEM. (E) Transmission electron micrographs of WT BCG (n=45 micrographs, 200 cells counted) and rBCG::iE-DAP (n=45 micrographs, 200 cells counted) grown in media supplemented with 200 ng/ml ATc. Scale bar = 200 nm. (F) Frequency of cells with cell wall defects as seen by TEM. (G) MurT-GatD depleted cells labeled with fluorescent BODIPY-FL vancomycin. (H) Flow cytometry analysis of WT BCG and rBCG::iE-DAP cells labelled with a PG amidation reporter probe TAMRA-L-Ala-D-glutamine-L-Lys-D-Ala (TetraFI). (I) nod-2 gene expression measured by quantitative PCR in INFγ activated THP-1 macrophages stimulated with E. coli, WT BCG and rBCG::iE-DAP. (J) nod-1 gene expression measured by quantitative PCR in INFγ activated THP-1 macrophages infected with E. coli, WT BCG and rBCG::iE-DAP. Three independent biological repeats (n=3) were assessed. Student t-test was used for statistical analysis. The error bars represent the standard deviation relative to the mean. *: p-value <0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** iE-DAP is a NOD-1 ligand and modification of iE-DAP (A) to iQ-DAP (B) leads to evasion of NOD-1 activation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Plasmid PLRJ965 encoding dCas9 endonuclease from S. thermophiles and for expression of inserted sgRNA. (B) Table with gene targets and sgRNA targeting sequences. (C) Growth kinetics of rBCG::iE-DAP grown in a range of ATc [0–500 ng/ml]. rBCG::iE-DAP grown media without ATc grows at a similar rate as WT BCG. Activation of the CRISPRi platform in rBCG::iE-DAP with ATc [100–500 ng/ml] resulted in reduced growth in a concentration dependent manner. Three independent biological repeats (n=3) were assessed. Student t-test was used for statistical analysis. The error bars represent the standard deviation relative to the mean. *: p-value <0.01.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Transmission electron micrographs of WT BCG (A) and rBCG::iE-DAP (B) grown in media supplemented with 200 ng/ml ATc. Depletion of MurT-GatD causes cell wall defects. Three independent biological repeats were assessed (n=3). Scale bar = 200 nm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Flow chart representation of the protocol used for assessing PG amidation in MurT-GatD depleted cells by Alexa Fluor 488 NHS Ester labelling of PG in comparison with control cells (ATc- and WT BCG). The Alexa Fluor 488 NHS Ester labels primary amines (R–NH2) also found in PG as a result of amidation. (B). Quantification of Alexa Fluor 488 NHS Ester labeled PG from MurT-GatD depleted cells in comparison to the no ATc control cells. MurT-GatD depletion causes decreased PG amidation which results in decreased labeling with Alexa Fluor 488 NHS Ester. Three independent biological repeats (n=3) were assessed. Student t-test was used for statistical analysis. The error bars represent the standard deviation relative to the mean. *: p-value <0.01.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) nod-2 gene expression measured by quantitative PCR in non-activated THP-1 macrophages stimulated with E. coli, WT BCG and rBCG::iE-DAP. (B) nod-1 gene expression measured by quantitative PCR in non-activated THP-1 macrophages infected with E. coli, WT BCG and rBCG::iE-DAP. Three independent biological repeats (n=3) were assessed. Student t-test was used for statistical analysis. The error bars represent the standard deviation relative to the mean. *: p-value <0.01.
+
 Next, we evaluated the impact of MurT-GatD depletion on BCG viability. CRISPRi mediated inhibition of murT-gatD transcription in rBCG::iE-DAP by supplementation of growth media with an increasing concentration of ATc [0–500 ng/ml] resulted in growth inhibition of the recombinant strain (Figure 1—figure supplement 2c). This is consistent with earlier knockdown of a MurT homologue in Mycobacterium smegmatis (MSMEG_6276) which revealed a growth defect upon CRISPRi mediated MSMEG_6276 depletion (Shaku et al., 2023).
 
-## MurT-GatD depletion in BCG causes expression of the NOD-1 ligand (iE-DAP) and increased NOD-1 signaling
+### MurT-GatD depletion in BCG causes expression of the NOD-1 ligand (iE-DAP) and increased NOD-1 signaling
 
 To determine the effects of MurT-GatD depletion in BCG, we performed scanning and transmission electron microscopy (SEM, TEM). As shown in Figure 1c, SEM revealed a well-formed typical mycobacterial outer cell wall structure in WT BCG, whereas rBCG::iE-DAP cells displayed a wrinkled outer-cell wall structure, sometimes with indentations. Quantification of SEM fields revealed a 70% increase in the frequency of bacilli with these defects in rBCG::iE-DAP relative to the WT BCG (Figure 1d). Consistent with this, TEM revealed a typical multi-layered mycobacterial cell wall outline (Mahapatra et al., 2008), with visible layers in WT BCG in comparison to the defective cell wall structure in rBCG::iE-DAP, without a clear cell wall outline as shown in Figure 1—figure supplement 3. Upon counting individual cells in TEM fields, we observed a 65% increase in the frequency of wall defects in rBCG::iE-DAP compared with the WT BCG strain (Figure 1f).
 
 We hypothesized that reduced PG cross-linking due to MurT-GatD depletion, and the concomitant cell wall defects, might potentiate cell wall targeting antibiotics in rBCG::iE-DAP compared to WT BCG. Indeed, as shown in Table 1, MurT-GatD knockdown was associated with a 2- to 16-fold decrease in the minimal inhibitory concentrations of the recombinant strain for amoxicillin-clavulanate, meropenem, vancomycin, and ethionamide, each of which targets either PG biosynthesis or PG-dependent accessory glycolipids. To further confirm the reduced levels of PG cross-linking, we stained MurT-GatD depleted rBCG::iE-DAP cells with BODIPY-FL vancomycin—a fluorescent probe which specifically labels uncrosslinked PG. As shown in the confocal fluorescence micrographs in Figure 1g, BODIPY-FL vancomycin displayed complete cell wall labeling of the rBCG::iE-DAP cells, in contrast, only the poles of WT BCG cells were labeled. This corresponds to the known polar elongation of BCG cells and the relative abundance of new, uncross-linked PG at the cell poles (Aldridge et al., 2012; Joyce et al., 2012).
 
+**Table 1.**
+ Minimum inhibitory concentrations of cell wall targeting antibiotics on rBCG::iE-DAP.Table 1—source data 1.Minimum inhibitory concentrations of cell wall targeting antibiotics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug (µg/ml)</th>
+      <th>WT BCG (MIC)</th>
+      <th>rBCG (MIC)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amoxicillin</td>
+      <td>&gt;64</td>
+      <td>&gt;64</td>
+    </tr>
+    <tr>
+      <td>Amoxicillin-Clavulanate</td>
+      <td>&gt;64</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Meropenem</td>
+      <td>32</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Vancomycin</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Ethionamide</td>
+      <td>&gt;64</td>
+      <td>32</td>
+    </tr>
+  </tbody>
+</table>
+
 To specifically demonstrate that MurT-GatD depletion resulted in reduced amidation of iE-DAP, we used a fluorogenic amidated, synthetic tetrapeptide, TetraFl (TAMRA fluorophore-L-Ala-D-Gln-L-Lys-D-Ala). This amidated, D-Gln-containing probe is incorporated into mycobacterial PG by the activity of PG cross-linking L,D-transpeptidases which require the amidation modification on one of the PG stem peptides to form the cross-link (Pidgeon et al., 2019). The deficient cross-linking in the cell wall due to MurT-GatD depletion led us to speculate that more of the amidated probe will be incorporated into existing PG. As seen in Figure 1h, labeling of the MurT-GatD depleted cells showed a greater incorporation of the tetrapeptide fluorophore than in WT BCG. We further assessed this reduced amidation by labeling of PG extracted from WT BCG and rBCG::iE-DAP with an amine reactive fluorescent dye, which binds amine (NH2) groups. This revealed decreased amidation of PG upon MurT-GatD depletion (Figure 1—figure supplement 4), thus confirming that rBCG::iE-DAP displayed greater exposure of the iE-DAP, NOD-1 antigenic structure. To investigate the involvement of NOD-1 in macrophages, we next assessed the ability of rBCG::iE-DAP to induce increased expression of the NOD PRRs by infecting interferon-gamma (IFNγ) activated THP-1 macrophages at an MOI of 1. This was followed by quantitative PCR (qPCR) to measure expression of both nod-1 and nod-2 in comparison to the wildtype parental strain (WT BCG) 12 hr post infection. We also infected the macrophages with E. coli, which naturally expresses the NOD-1 ligand iE-DAP in its PG (Girardin et al., 2003). This experiment was also performed in non-activated THP-1 macrophages. As shown in Figure 1—figure supplement 5, nod-1 and nod-2 expression was present at basal levels in non-activated and uninfected cells as previously shown (Juárez et al., 2012; Rommereim et al., 2020); WT BCG infection did not induce significant changes in nod-1/2 expression and E. coli infection led to increased expression of both NOD receptors in both IFNγ activated and non-activated macrophages, as expected. Infection with rBCG::iE-DAP led to an ~15-fold increase in NOD-2 expression in IFNγ-activated macrophages, an ~55-fold and ~200-fold increase in nod-1 expression in both non-activated and IFNγ-activated THP-1 macrophages, respectively (Figure 1i, j). These differences in gene expression were significantly higher than those noted for the parental BCG strain.
 
-## rBCG::iE-DAP is responsive to anhydrotetracycline activation in vivo and causes increased TNFα expression in bone marrow derived macrophages (BMDMs)
+### rBCG::iE-DAP is responsive to anhydrotetracycline activation in vivo and causes increased TNFα expression in bone marrow derived macrophages (BMDMs)
 
 To test the hypothesis that inhibition of MurT-GatD expression in rBCG::iE-DAP enhances the immunogenicity of the recombinant strain, we first infected IFNγ-activated bone marrow derived macrophages (BMDMs) with rBCG::iE-DAP and supplemented the growth media with increasing concentrations of ATc. This was done to assess activation of the CRISPRi system ex vivo and also to compare growth to WT BCG infected cells. The growth of the strains was recorded by plating for colony forming unit (CFU) counts at day 3 and day 5 post-infection. At day 3, bacterial containment was observed for all strains but was most prominent for rBCG::iE-DAP strains treated with ATc. Dose-dependent inhibition of growth of rBCG::iE-DAP was observed at day 5, with 500 ng/ml ATc (the maximum concentration used) resulting in an ~three fold difference in growth inhibition of rBCG::iE-DAP in comparison to WT BCG and rBCG::iE-DAP without ATc supplementation (Figure 2a). Secondly, we performed ELISA experiments to assess the expression of the pro-inflammatory cytokine TNFα as rBCG::iE-DAP is designed to express the NOD-1 ligand iE-DAP, potentially increasing the pro-inflammatory response. Activation of rBCG::iE-DAP by supplementation of growth media with ATc resulted in a dose-dependent increase in TNFα expression in comparison to WT BCG in IFNγ-activated BMDMs. However, this was statistically insignificant between strains, while TNFα expression remained low for both WT BCG and rBCG::iE-DAP strains when used for infection of unactivated BMDMs (Figure 2—figure supplement 1). These results demonstrate that rBCG::iE-DAP is responsive to activation ex vivo and can be tested in vivo.
 
-## rBCG::iE-DAP in vitro trained macrophages control Mtb H37Rv growth
+![Figure 2.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig2-v2.jpg)
+
+**Figure 2.:** (A) IFNγ-activated BMDMs (1x106 cells) were infected at MOI: 1 with WT BCG and rBCG::iE-DAP. ATc was added to culture media for induction of the CRISPRi system in rBCG::iE-DAP at concentrations ranging from 100 ng/ml – 500 ng/ml and growth of the strains was assessed after 3 and 5 days. (B) Training of U937 monocytes with heat-killed (HK)-rBCG::iE-DAP compared to HK-WT BCG. Shown is also the representative plates for the experiment. (C, D) CFU counts of in vitro grown WT BCG and of rBCG::iE-DAP grown in complete 7H9 medium at varying concentrations of Dox. (E) Determination of the Dox concentration for activation of rBCG::iE-DAP in vivo. Mice were aerosol infected with ~2.5 log10 CFU of rBCG and Dox (0.125–1 mg/kg/day) - was administered by oral gavage for 10 days. (F, G) CFU counts from the experiment shown in panel E. Lung homogenates were plated on both 7H11 with (G) and without (F) kanamycin (25 µg/ml) to assess the loss of the CRISPRi plasmid during in vivo growth. p-values are given above the graphs. (H) Aerosol infection of mice with ~2.5 log10 CFU of WT BCG, rBCG::iE-DAP and administration of Dox (1 mg/kg/day) for 8 weeks. (I) Plates showing the colony size of rBCG::iE-DAP+Dox compared to WT BCG or WT BCG+Dox, recovered from the lungs of aerosol infected mice from the experiment shown in panel H. Three independent biological repeats (n=3) were assessed for the in vitro experiments, the error bars represent the standard deviation relative to the mean. Five mice per group (n=5) were used for the in vivo experiments. Student t-test was used for statistical analysis. The error bars represent the standard deviation relative to the mean. *: p-value <0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Increased TNF secretion was observed from rBCG::iE-DAP infected IFN-activated BMDMs cultured in media supplemented with 500 ng/ml ATc. LPS was used as a control. Three independent biological repeats (n=3) were assessed. Student t-test was used for statistical analysis. The error bars represent the standard deviation relative to the mean *: p-value <0.01.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic representation of mice aerosol infection with WT BCG and rBCG::iE-DAP and analysis of the efficacy of 1 mg/kg/day dose of doxycycline for CRISPRi-MurT-GatD activation in vivo. (B) Day 1 implantation of WT BCG and rBCG::iE-DAP in the lungs of aerosol infected mice. (C) Day 28 bacterial loads of WT BCG and rBCG::iE-DAP aerosol infected mice. (D) PCR amplification of dCas9 in recovered Big (BC) or Small (SC) rBCG::iE-DAP colonies. Lane 1 is 1 kb plus DNA molecular weight marker. (E, F) Growth kinetics of big and small colonies of rBCG::iE-DAP vs WT BCG in liquid broth supplemented with Doxycycline. Three independent biological repeats (n=3) were assessed for the in vitro experiment. Five mice per group (n=5) were used for the in vivo experiments. Statistical analysis was conducted using student t-test. The error bars represent the standard deviation relative to the mean. *: p-value:<0.01.
+
+### rBCG::iE-DAP in vitro trained macrophages control Mtb H37Rv growth
 
 WT BCG trains macrophages in a NOD-2 dependent manner and as a result, killing of Mtb is enhanced if the trained cells are exposed to Mtb at a later stage (Kleinnijenhuis et al., 2012; Kaufmann et al., 2018). We hypothesized that rBCG::iE-DAP engineered to express the NOD-1 ligand upon activation with ATc will lead to enhanced macrophage training activity, resulting in better control of Mtb growth compared to WT BCG trained macrophages. To test this, we used an in vitro macrophage training assay to assess the Mtb killing ability of rBCG::iE-DAP trained macrophages. Lipopolysaccharide (LPS) and murein dipeptide (MDP) were used as controls and a cells-only (RPMI) control was also included. LPS activates toll like receptor (TLR)–4 leading to monocyte activation (Fujihara et al., 2003) and MDP activates NOD-2 leading to macrophage training (van der Heijden et al., 2018). As shown in Figure 2b, heat-killed rBCG::iE-DAP trained macrophages displayed increased control of Mtb H37Rv compared to heat-killed WT BCG trained macrophages and MDP trained macrophage. Macrophages derived from LPS stimulated monocytes did not control Mtb growth. Based on these promising findings, we proceeded to test rBCG::iE-DAP in the murine model of TB infection.
 
-## rBCG::iE-DAP activation in vitro and in mice-aerosol infections with doxycycline
+### rBCG::iE-DAP activation in vitro and in mice-aerosol infections with doxycycline
 
 Doxycycline (Dox), a tetracycline analog, is used in in vivo TB models for temporal regulation of mycobacterial gene expression (Miow et al., 2021). The CRISPRi platform used for generation of rBCG::iE-DAP is also based on a Dox-responsive TetR-tetO unit which in the presence of doxycycline leads to expression of the CRISPRi system and subsequent transcriptional inhibition of murT-gatD (Rock et al., 2017). To assess the activation of rBCG::iE-DAP with Dox, the strain was grown in an increasing range of Dox concentrations to assess the activation of CRISPRi in vitro, a WT BCG+Dox control experiment was also included. Activation of CRISPRi in rBCG::iE-DAP with Dox resulted in a dose-dependent reduction of rBCG::iE-DAP growth (Figure 2c, d), which was corroborated when growth was assessed by CFU counts while WT BCG was not affected by Dox supplementation (Figure 2c, d).
 
 To test the activation of rBCG::iE-DAP in vivo and to determine the minimum effective dose of Dox, we aerosol infected BALB/c mice with ~100 CFU of rBCG::iE-DAP and administered Dox for 10 days at doses ranging from 0.125 to 1 mg/kg/day by oral gavage (Figure 2e). Administration of 1 mg/kg/day resulted in a significant reduction in growth of rBCG::iE-DAP in the lungs of the mice (Figure 2f). We further assessed long-term retention of activation of rBCG::iE-DAP by performing the activation experiment for 4 weeks and this revealed long-term activation of rBCG::iE-DAP and retention of the CRISPRi plasmid (PLRJ965 +murTsgRNA, which has a kanamycin [Kan] resistance cassette) by rBCG::iE-DAP in vivo (Figure 2—figure supplement 2). We also plated lung homogenates on media containing Kan and found that recovered rBCG::iE-DAP bacilli formed similar CFU counts on media with or without Kan and PCR amplification of the dCas9 allele from recovered rBCG::iE-DAP bacilli revealed retention of the CRISPRi plasmid and the bacilli were responsive to ATc treatment (Figure 2f, g). Similarly, as shown in Figure 2h, i, at 8 weeks post infection, rBCG::iE-DAP bacilli recovered from the lungs of infected mice formed small colonies on solid agar in comparison to recovered WT BCG bacilli, indicative of the long-term efficacy of 1 mg/kg/day Dox in vivo for CRISPRi activation. These results demonstrate retention of the CRISPRi plasmid by rBCG::iE-DAP in vivo.
 
-## Analysis of rBCG::iE-DAP attenuation in SCID mice
+### Analysis of rBCG::iE-DAP attenuation in SCID mice
 
 To further explore the phenotype and attenuation of rBCG::iE-DAP in vivo, we aerosol infected female SCID (severe combined immunodeficiency) mice with a low dose (~100 CFU) of WT BCG and rBCG::iE-DAP, and included Dox receiving groups (i.e.WT BCG+Dox and rBCG::iE-DAP+Dox) (Figure 3a). WT BCG infected mice displayed early decreased survival as expected, followed by the WT BCG+Dox group of mice (Figure 3b). Although rBCG::iE-DAP infected mice, either receiving Dox or not, displayed slight increased survival, this data was not significantly different from WT BCG-infected mice. This suggested that rBCG::iE-DAP upon CRISPRi activation is not more attenuated than WT BCG and does not cause more disease in SCID mice compared to WT BCG.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic representation of SCID mice aerosol infection with WT BCG and rBCG::iE-DAP for analysis of strain attenuation. rBCG::iE-DAP activation in vivo was performed by administration of Dox at 1 mg/kg/day. SCID mice (n=5 per group) were aerosol infected with ~2.5 log10 CFU of WT BCG or rBCG::iE-DAP, a WT BCG+Dox group was included as a control. (B) Percent survival of SCID mice following low-dose challenge with WT BCG and rBCG compared to WT BCG+Dox or rBCG+Dox groups. Five mice per group (n=5) were used for the in vivo experiments. student t-test was used for statistical analysis.Figure 3—source data 1.
+**Figure 3.:** (A) Schematic representation of SCID mice aerosol infection with WT BCG and rBCG::iE-DAP for analysis of strain attenuation. rBCG::iE-DAP activation in vivo was performed by administration of Dox at 1 mg/kg/day. SCID mice (n=5 per group) were aerosol infected with ~2.5 log10 CFU of WT BCG or rBCG::iE-DAP, a WT BCG+Dox group was included as a control. (B) Percent survival of SCID mice following low-dose challenge with WT BCG and rBCG compared to WT BCG+Dox or rBCG+Dox groups. Five mice per group (n=5) were used for the in vivo experiments. student t-test was used for statistical analysis.
 
-## rBCG::iE-DAP induces enhanced protection against Mycobacterium tuberculosis infection in mice compared to WT BCG
+### rBCG::iE-DAP induces enhanced protection against Mycobacterium tuberculosis infection in mice compared to WT BCG
 
 To assess the protective efficacy of rBCG::iE-DAP against TB infection relative to the standard BCG vaccine, we immunized groups of BALB/c mice (n=5 per group) intradermally with WT BCG or rBCG::iE-DAP (Figure 4a). rBCG::iE-DAP immunized mice received a Dox dose by oral gavage at 1 mg/kg/day for activation of CRISPRi in vivo and we also included a Saline+Dox group, a WT-BCG+Dox group and a rBCG::iE-DAP without Dox group as controls for the vaccination experiment. The immunized mice receiving Dox were weighed weekly for 6 weeks prior to Mtb challenge to assess the effect of daily Dox administration on the health of the mice (Figure 4a). We assessed the percentage weight change of mice receiving Dox relative to the no-Dox groups and found that the weights of the different groups remained within 80–100% of baseline with few non-significant differences at week 6 (Figure 4b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of the mouse immunization and Mtb H37Rv challenge protocol. (B) Percentage weight change at week 6 (day 42) immediately prior to Mtb challenge. (C, D) Lung and Spleen bacterial burdens at week 4 and week 8 post-challenge with Mtb. Five mice per group (n=5) were used for the in vivo experiments. Student t-test was used for statistical analysis. The error bars represent the standard deviation relative to the mean. *: p-value <0.05, **: p-value <0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Lung weights at week 4 and week 8 post-challenge with Mtb. (B) Spleen weights at week 4 and week 8 post-challenge with Mtb. Five mice per group (n=5) were used for the in vivo experiments. Statistical analysis was conducted using student t-test. The error bars represent the standard deviation relative to the mean. *: p-value:<0.01.
+
 After 6 weeks, the immunized mice were challenged with ~100 CFU of Mtb H37Rv via the aerosol route and mycobacterial loads were determined in lungs and spleens at 4 and 8 weeks post challenge (Figure 4a). At 4 weeks post Mtb challenge, mice were sacrificed to assess lung pathology and bacterial burden in the lungs and spleens. As seen in Figure 4—figure supplement 1a, at week 4 post-infection, the WT BCG+Dox group displayed significantly lower lung weights compared to the Saline+Dox group, while the WT BCG without Dox-treatment and the rBCG::iE-DAP with or without Dox-treatment groups displayed similar lung weights compared to the Saline+Dox group. Similarly as shown in Figure 4—figure supplement 1b, the WT BCG+Dox group displayed significantly lower spleen weights compared to the Saline+Dox group while the WT BCG without Dox-treatment and the rBCG::iE-DAP with or without Dox-treatment groups displayed similar spleen weights compared to the Saline+Dox group. Analysis of lung and spleen bacterial burdens at 4 weeks post infection revealed that rBCG::iE-DAP+Dox was superior to WT BCG and WT BCG+Dox in protecting against Mtb challenge in the lungs and reduced bacterial burden in the spleen similar to WT BCG or WT BCG+Dox. Also as seen in Figure 4—figure supplement 1a at 8 weeks post Mtb challenge, the rBCG::iE-DAP+Dox group displayed reduced lung weights compared to the Saline+Dox group and the WT BCG vaccinated group indicative of control of bacterial burden and indeed, analysis of lung bacterial burden corroborated findings at 4 weeks that rBCG::iE-DAP+Dox was superior to WT BCG or WT BCG+Dox in controlling Mtb growth in the lung (Figure 4c). At week 8, WT BCG or WT BCG+Dox vaccination both displayed waning efficacy in this model, as previously shown (Henao-Tamayo et al., 2015; Dwivedi et al., 2022). In the spleen, rBCG::iE-DAP+Dox displayed similar efficacy to WT BCG or WT BCG+Dox for control of infection compared to the Saline+Dox group (Figure 4d).
 
-## Histopathological analysis of lung pathology after vaccination with rBCG::iE-DAP compared to WT BCG post Mtb challenge
+### Histopathological analysis of lung pathology after vaccination with rBCG::iE-DAP compared to WT BCG post Mtb challenge
 
 As shown in Figure 5a, b, histopathological analysis of haematoxylin and eosin (H&E) stained lung samples from the vaccinated and Mtb challenged mice indicated that rBCG::iE-DAP+Dox immunized mice presented with early increased lung inflammation compared to WT BCG+Dox vaccinated mice. At 8 weeks post infection also, rBCG::iE-DAP+Dox immunized mice presented with increased inflamed sections of lung area compared to WT BCG+Dox immunized mice suggestive of sustained inflammation for control of infection (Figure 5c, d). The increased early inflammation in rBCG::iE-DAP+Dox immunized mice is reflective of early induction of anti-tuberculous immune responses, which were able to control growth early before establishment of infection and the sustained inflammation at 8 weeks post challenge is suggestive of enhanced immune responses during chronic disease stage which enable control of disease progression as shown in Figure 4d.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89157/elife-89157-fig5-v2.jpg)
 
-**Figure 5.:** (A) Histological haematoxylin and eosin (H&E) staining of lung samples at week 4 post Mtb challenge. Scale bar = 2.5 mm. (B) Analysis of percentage of inflamed area (indicated with black boxes) from each mouse lung per immunized group (n=5 per group), shows that rBCG::iE-DAP+Dox immunized mice present with early lung inflammation compared to WT BCG+Dox. (C) H&E staining of lung samples at week 8 post Mtb H37Rv infection. Scale bar = 2.5 mm. (D) Analysis of percentage of inflamed area from each mouse lung (n=5 per group). The percentage inflamed area was evaluated using ImageJ software (NIH) and plotted as whisker box-plots (whiskers represent minimum and maximum values) and a student t-test was used for statistical analysis. Lung sections were derived from 5 mice per group (n=5) from Figure 4a experiments. Statistical analysis was conducted using student t-test. The error bars represent the standard deviation relative to the mean. *: p-value <0.05.Figure 5—source data 1.
+**Figure 5.:** (A) Histological haematoxylin and eosin (H&E) staining of lung samples at week 4 post Mtb challenge. Scale bar = 2.5 mm. (B) Analysis of percentage of inflamed area (indicated with black boxes) from each mouse lung per immunized group (n=5 per group), shows that rBCG::iE-DAP+Dox immunized mice present with early lung inflammation compared to WT BCG+Dox. (C) H&E staining of lung samples at week 8 post Mtb H37Rv infection. Scale bar = 2.5 mm. (D) Analysis of percentage of inflamed area from each mouse lung (n=5 per group). The percentage inflamed area was evaluated using ImageJ software (NIH) and plotted as whisker box-plots (whiskers represent minimum and maximum values) and a student t-test was used for statistical analysis. Lung sections were derived from 5 mice per group (n=5) from Figure 4a experiments. Statistical analysis was conducted using student t-test. The error bars represent the standard deviation relative to the mean. *: p-value <0.05.
 
 ## Discussion
 
@@ -102,64 +187,137 @@ Histopathological analysis of lung sections from the immunized and Mtb challenge
 
 ## Materials and methods
 
-## Bacterial strains and culture conditions
+**Key resources table**
 
-## Growth conditions for E. coli DH5α and derivative strains
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background(Mycobacterium bovis BCG pasteur)</td>
+      <td>WT BCG</td>
+      <td>Gift from Dr Peter Sander(Institute of Medical Microbiology, University of Zurich, Zurich, Switzerland)</td>
+      <td>BCG Pasteur SmR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background(recombinant BCG::iE-DAP)</td>
+      <td>rBCG::iE-DAP</td>
+      <td>This paper</td>
+      <td>rBCG::iE-DAP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mycobacterium tuberculosis H37Rv)</td>
+      <td>Mtb H37RvS</td>
+      <td>Centre of Excellence for Biomedical TB Research (Wits University, Johannesburg)</td>
+      <td>Mtb H37RvS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mycobacterium tuberculosis H37Rv)</td>
+      <td>Mtb H37Rv</td>
+      <td>Center for Tuberculosis Research (Johns Hopkins University School of Medicine)</td>
+      <td>Mtb H37Rv</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line(THP-1 monocytes)</td>
+      <td>THP-1 monocytes</td>
+      <td>Gift from Dr Janine Scholefield (Council for Scientific and Industrial Research, South Africa)</td>
+      <td></td>
+      <td>Cells authenticated by the supplier by morphology.Mycoplasma contamination test: negative</td>
+    </tr>
+    <tr>
+      <td>cell line(U937 promonocytes)</td>
+      <td>U937 monocytes</td>
+      <td>Gift from Dr Janine Scholefield (Council for Scientific and Industrial Research, Pretoria, South Africa)</td>
+      <td></td>
+      <td>Cells authenticated by the supplier by morphology.Mycoplasma contamination test: negative</td>
+    </tr>
+    <tr>
+      <td>strain, strain background(BALB/c mice)</td>
+      <td>BALB/c mice</td>
+      <td>The Jackson laboratory (USA)</td>
+      <td>BALB/cJ strain #000651</td>
+      <td>RRID:IMSR_JAX:000651</td>
+    </tr>
+    <tr>
+      <td>strain, strain background(BALB/c SCID mice)</td>
+      <td>BALB/c SCID mice</td>
+      <td>The Jackson laboratory (USA)</td>
+      <td>CBySmn.Cg-Prkdcscid/J strain#: 001803</td>
+      <td>RRID:IMSR_JAX:001803</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and culture conditions
+
+#### Growth conditions for E. coli DH5α and derivative strains
 
 E. coli DH5α and derivative strains were grown in Luria-Bertani broth (LB) or on Luria-Bertani agar (LA) at 37⁰C with supplementation of the media with appropriate antibiotics. The antibiotic concentration used was as follows: Kanamycin (Kan): 50 µg/ml. Liquid cultures were grown at 37°C with shaking at a 100 rpm.
 
-## Growth conditions for Mycobacterial and derivative strains
+#### Growth conditions for Mycobacterial and derivative strains
 
 M. bovis BCG, M tuberculosis H37Rv and the recombinant BCG::iE-DAP strain were grown at 37 °C in Middlebrook 7H9 broth supplemented with OADC enrichment, 0.5% glycerol, 0.05% Tween 80 and appropriate antibiotics (hereafter referred to as Middlebrook 7H9 broth) or on Middlebrook 7H11 agar supplemented with OADC enrichment and 0.5% glycerol and appropriate antibiotics. The antibiotic concentration used for kanamycin was 50 µg/ml.
 
-## Construction of rBCG::iE-DAP
+#### Construction of rBCG::iE-DAP
 
 The programmable mycobacterial CRISPRi system for repression of gene transcription was used as previously described by Rock et al., 2017, to generate the recombinant BCG::CRISPRi strain –rBCG::iE-DAP. Briefly, the CRISPRi system utilizes a catalytically inactivated anhydrotetracycline/doxycycline (ATc/Dox)-inducible CRISPRi dcas9 from Streptococcus thermophiles, which is directed by a (ATc/Dox)-inducible short-guide RNA (sgRNA) to specific target genes to prevent transcription initiation or elongation (Rock et al., 2017). sgRNAs were designed with the CRISPRi sgRNA design tool - https://pebble.rockefeller.edu/. The sgRNA sequence (top and bottom oligos) were annealed and cloned into BsmBI-digested CRISPRi vector PLJR965. These plasmids were introduced into M. bovis BCG by electroporation.
 
-## Quantitative real-time PCR (qPCR) to assess murT-gatD transcriptional silencing
+### Quantitative real-time PCR (qPCR) to assess murT-gatD transcriptional silencing
 
 RNA was extracted using the Macherry-Nagel RNA extraction kit as per manufacturer’s instructions and cDNA was prepared using the SuperScript IV reverse transcriptase (Invitrogen) as per manufacturer’s instructions. Briefly, a 25 µl reaction was set up using 12.5 µl of a 2.5 µM reverse primer mix (Mb3739Rev: gattcaccgagcctggcag’ and SigARev: cgcgcaggacctgtgagcgg) annealed to RNA sample, 4 µl 25 mM MgCl2, 5 µl 5×first strand buffer, 2 µl 0.1 M DTT, 1 µl 10 mM dNTPs and 0.8 µl SuperScript III. PCR reactions were performed using the following parameters for reverse primer annealing: 94 °C for 90 s, 65 °C for 3 min and 57 °C for 3 min. cDNA synthesis was carried out using the following parameters: 50 °C for 5 min and 85 °C for 5 min. qPCR was performed using Sso Fast Evagreen Supermix (Bio-Rad) as per manufacturer’s instructions. Briefly, 20 µl reactions were set up, each containing 10 µl Sso Fast Evagreen Supermix, 0.75 µl forward primer (Mb3739Fwd: gtcaaacgattcggtcagctg, SigAFwd: tgcagtcggtgctggacac) (10 µM), 0.75 µl reverse primer (Mb3739Rev: gattcaccgagcctggcag, SigARev: cgcgcaggacctgtgagcgg) (10 µM), 2 µl cDNA and nuclease-free water. All reactions were incubated in the CFX96 Real-Time PCR detection system (Bio-Rad) using the following parameters: 98 °C for 2 min followed by 39 cycles consisting of three steps – 98 °C for 5 s, 60 °C for 5 s and 72 °C for 5 s with SYBR Green quantification at the end of each cycle. Melt curve analysis was conducted from 65 °C with a gradual increase in 0.5 °C increments every 0.05 s to 95 °C with SYBR Green quantification conducted continuously throughout this stage. The raw data was analyzed using the Biorad CFX Manager 3.0 Software (Bio-Rad).
 
-## Quantitative real-time PCR (qPCR) to assess nod-1 and nod-2 expression
+### Quantitative real-time PCR (qPCR) to assess nod-1 and nod-2 expression
 
 RNA was extracted using the Macherry-Nagel RNA extraction kit as per manufacturer’s instructions and cDNA was prepared using the SuperScript IV reverse transcriptase (Invitrogen) as per manufacturer’s instructions. Briefly, 25 µl reactions were set up, each containing 2.5 µl of a 70 µM oligo d(T)23, 4 µl 25 mM MgCl2, 1 ug RNA, 5 µl 5×first strand buffer, 2 µl 0.1 M DTT, 1 µl 10 mM dNTPs and 0.8 µl SuperScript III and RNAse-free water to make up the volume. PCR reactions were performed using the following parameters: 94 °C for 90 s, 65 °C for 10 min and 57 °C for 3 min. qPCR was performed using Brilliant III Ultra-Fast SYBR green qPCR master mix (Agilent) as per manufacturer’s instructions. Briefly, 20 µl reactions were set up, each containing 10 µl Brilliant III Ultra-Fast SYBR green qPCR master mix, 0.75 µl forward primer (NOD-1Fwd: caacggcatctccacagaagga, NOD-2Fwd: gcactgatgctggcaaagaacg, GAPDHFwd: gtctcctctgacttcaacagcg) (10 µM), 0.75 reverse primer (NOD-1Rev: ccaaactctctgccacttcatcg, NOD-2Rev: cttcagtccttctgcgagagaac, GAPDHRev: accaccctgttgctgtagccaa), 2 µl cDNA and nuclease-free water. All reactions were incubated in the CFX96 Real-Time PCR detection system (Bio-Rad) using the following parameters: 98 °C for 2 min followed by 40 cycles consisting of three steps – 98 °C for 5 s, 60 °C for 5 s and 72 °C for 5 s with SYBR Green quantification at the end of each cycle. Melt curve analysis was conducted from 65 °C with a gradual increase in 0.5 °C increments every 0.05 s to 95 °C with SYBR Green quantification conducted continuously throughout this stage. The raw data was analyzed using the Biorad CFX Manager 3.0 Software (BioRad).
 
-## Scanning electron microscopy (SEM) and transmission electron microscopy (TEM)
+### Scanning electron microscopy (SEM) and transmission electron microscopy (TEM)
 
 SEM and TEM were used to study the cell surface morphologies of the WT BCG and rBCG strains. The bacteria were immobilized to poly-l-lysine charged coverslips for 30 min and processed for SEM. Similarly, for TEM, bacterial suspensions were fixed and embedded in Spurr’s resin. The immobilized bacteria were rinsed with phosphate buffered saline (PBS), and fixed in 2.0% paraformaldehyde, 2.0% glutaraldehyde in 1×PBS with 3 mM MgCl2, pH 7.2 for 1 hr at room temperature. This was followed by 3 cycles of 10 min washes in sodium cacodylate buffer with 3% sucrose, samples were post-fixed in 0.8% potassium ferrocyanide, 1% OsO4 and 3 mM CaCl2 in 0.1 M sodium for 1 hr on ice in the dark. Samples were then rinsed in sodium cacodylate buffer and slowly rocked at 4 °C overnight. After a brief water rinse (2×5 min), bacteria were placed in 2% uranyl acetate for 1 hr at room temperature in the dark. The samples were dehydrated through a graded series of ethanol to 100% EtOH, then a 1:1 solution of ethanol:Hexamethyldisiloxazne (HMDS) (Polysciences) followed by pure HMDS. Coverslips were dried in a desiccator overnight and then attached to aluminum stubs via carbon sticky tabs (TedPella Inc), and coated with 20 nm of AuPd with a Denton Vacuum Desk III sputter coater. Stubs were viewed and digital images captured on a Leo 1530 field emission SEM operating at 1 kV. For TEM, equal volumes of 2×fixative (as described above) were added to bacterial suspensions and rocked for 10 min at room temperature. Samples were centrifuged, supernatant removed and 1×fixative added carefully to not disturb the pellet. All subsequent steps were identical to the protocol described above up for SEM to the final 100% ethanol step. Bacterial cells were transferred to propylene oxide, and gradually infiltrated with Spurr’s low viscosity resin (Polysciences): propylene oxide. After 3 changes in 100% Spurr’s resin, pellets were cured at 60 °C for 2 days. Sections were cut on a Reichert Ultra cut E with a Diatome Diamond knife. Eighty nm sections were picked up on formvar coated 1×2 mm copper slot grids and stained with tannic acid and uranyl acetate followed by lead citrate. Grids were viewed on a Phillips CM 120 TEM operating at 80 kV and digital images captured with an AMT 8 K x 8 K CCD camera.
 
-## Fluorescent BODIPY-FL vancomycin staining
+### Fluorescent BODIPY-FL vancomycin staining
 
 The Fluorescent BODIPY-FL vancomycin stain (Life Technologies) was used according to the manufacturer’s instructions for analysis of PG synthesis in the mutant strains in comparison to the wildtype and complemented strains. The fluorescent vancomycin stain binds to the terminal dipeptide D-alanine-D alanine found on the PG stem peptide periplasmic precursor lipid II and consequently indicates the sites of new PG synthesis. The bacterial strains were grown to an OD600nm of 0.6 at 37 °C with shaking at a 100 rpm in 5 ml of Middlebrook 7H9 broth supplemented with appropriate antibiotics when necessary. Subsequently, 2 ml of the cells were harvested by centrifugation at 12 470×g for 5 min and the supernatant was discarded followed by washing of the cells with 500 µl of 0.01 M phosphate buffered saline (PBS), pH 7.4 and subsequent resuspension in 500 µl of 0.01 M PBS. Thereafter, 1.25 µl of vancomycin (200 micrograms/ml) and 2.5 µl of fluorescent BODIPY-FL vancomycin (100 micrograms/ml) were added to the cells followed by incubation at 37 °C with shaking for 1.5 hr. Following this, 500 µl of 0.01 M PBS was used to wash the cells three times, the cells were then resuspended in a 100 µl of 0.01 M PBS. For visualization, 5 µl of the cells was spotted on glass slides with 2% agarose pads. The slides were visualized with the Zeiss Observer Z1 inverted fluorescence microscope and the images taken were analyzed with the ZEN lite software (Zeiss) and Fiji software (ImageJ).
 
-## Peptidoglycan extraction and labelling with an amine reactive dye
+### Peptidoglycan extraction and labelling with an amine reactive dye
 
 PG was extracted as previously described (Shaku et al., 2023). Briefly, wildtype BCG and rBCG::iE-DAP was grown to OD600nm of 2 and the cells were then harvested by centrifugation at 3500 × g for 10 min and resuspended in phosphate-buffered saline (PBS, pH 7.2). The cells were then lysed with a French press (Constant Systems). Insoluble material was obtained by centrifugation at 4000 × g for 30 min. The pellet was then resuspended in PBS containing 2% SDS and incubated at room temperature for 1 hr, then in PBS containing 2 mg/ml proteinase K and 2% SDS at 37 °C for 24 hours and finally in PBS containing 2% SDS at 90 °C for 1 hr. The extracted cell wall material was lyophilized, weighed and a 100 µg/ml of lyophilized cell wall material was resuspended in PBS and digested with 0.1 mg/ml mutanolysin for 24 hr. The digested material was harvested at 13,000 × g for 3 min, washed thrice with PBS. The pellet was resuspended in 500 µl PBS and labelled with 100 µg/ml of Alexa Fluor 488 NHS Ester (Sigma-Aldrich) for 3 hr. The CytoFLEX flow cytometer (Beckman Coulter) was used for analysis of the labelled PG samples (100 µl per sample) in the FITC channel (excitation/emission maxima = 494/517 nm). Three independent biological repeats were assessed.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry was used for analysis of fluorophore labeled cells. Cells were grown in 5 ml of Middlebrook 7H9 broth supplemented with appropriate antibiotics at 37 °C with shaking to an OD600nm of 0.6. Thereafter, 1 ml of the culture was labelled with TetraFI (TAMRA-L-Ala-D-glutamine-L-Lys-D-Ala) for 3 hr at 37 °C with shaking. The CytoFLEX flow cytometer (Beckman Coulter) was used for analysis of TetraFI labeling.
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 For cell-based ex vivo infection assays, the human monocyte U937 and THP-1 cell lines (obtained as a gift from the Council for Scientific and Industrial Research of South Africa [CSIR]) were grown in RPMI-Glutamax (Cat. 61870–036, Fischer Scientific) supplemented with 10% heat inactivated fetal bovine serum (FBS) (Cat. 10082147, Fischer Scientific) at 37 °C with 5% CO2. The cell lines (U937 and THP-1 monocytes) were authenticated by the manufacturer. The cell lines (U937 and THP-1 monocytes) were tested for mycoplasma contamination using the LookOut Mycoplasma PCR detection kit (Sigma-Aldrich) and both cell lines tested negative. BMDMs extracted from the bone marrow (BM) of 6–8 weeks old female wildtype BALB/c mice were cultivated in a similar manner. BMDMs were generated as previously described by Toda et al., 2021. Briefly, for differentiation of BM cells into macrophages, BM cells were seeded in BMDM differentiation media (RPMI-Glutamax supplemented with 10% FBS and 10% L929-conditioned media) and differentiated for 6 days. Non-adherent cells were washed out with warm BMDM differentiation media and adherent macrophages were used for in vitro infection assays.
 
-## Mtb containment following in vitro training with BCG, rBCG or other antigens in human monocytic U937 cell lines
+### Mtb containment following in vitro training with BCG, rBCG or other antigens in human monocytic U937 cell lines
 
 In vitro training of monocytes was performed according to a published model and Pan et al. (Bekkering et al., 2016; Pan et al., 2020). Briefly, U937 monocytes (1 × 106 /mL) were transferred into a 24-well plate and cells were incubated with either culture medium only as a negative control or MDP, LPS, heat killed WT BCG or heat killed rBCG::iE-DAP at 37 °C, and 5% CO2 for 24 hr. Cells were washed twice with 1 mL of warm PBS and then incubated for 2 days in RPMI with 10% FBS and penicillin-streptomycin in the presence of 25 nM phorbol 12-myristate 13-acetate (PMA) (which can induce the differentiation of monocytes to macrophages). After washing twice with 1 mL of warm PBS, the differentiated macrophages were infected with Mtb H37Rv at MOI:1 and incubated for 24 hr. After 24 hr, cells were lysed and bacterial load was enumerated by plating for CFU counts on 7H11 Middlebrook media.
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 Sandwiched ELISA was performed for cytokine (TNF-α) measurement in culture supernatants. Culture supernatants were used immediately after harvest for ELISA. Sandwiched ELISA (R&D systems) was performed as per manufacturer’s recommendations.
 
-## BCG infection of BALB/c mice and CFU enumeration
+### BCG infection of BALB/c mice and CFU enumeration
 
 To determine the lung bacillary burden of wild-type and rBCG::iE-DAP strains 6–8 weeks-old female BALB/c mice were infected using the aerosol route in a Glascol inhalation exposure system (Glasscol). Similarly, 6–8 weeks-old female BALB/c SCID mice were infected using the aerosol route as low dose aerosol infections with WT BCG lead to mouse lethality with a comparable time-to-death and offers highly uniform CFU lung implantations for each mouse (Um et al., 2023). The inoculum implanted in the lungs at day 1 (n = 3 mice per group) in female BALB/c mice was determined by plating the whole-lung homogenate on 7H11-selective plates containing carbenicillin (50 mg/ml), Trimethoprim (20 mg/ml), Polymyxin B (25 mg/ml) and Cycloheximide (10 mg/ml). Doxycycline was administered at determined doses for CRISPRi activation by daily oral gavage and following infection, mice lungs were harvested (n = 5 animals/group), homogenized in sterile PBS and plated on 7H11-selective plates at different dilutions. The 7H11-selective plates were incubated at 37 °C and single colonies were enumerated after 4 weeks for the 10 days aerosol infection experiment, and also after 4 weeks for the 8 weeks aerosol infection experiment.
 
-## Mouse immunization and determination of protective efficacy against Mtb infection
+### Mouse immunization and determination of protective efficacy against Mtb infection
 
 Animal studies were performed as per the guidelines prescribed by the animal care and use committee of the Johns Hopkins University School of Medicine (protocol number: MO20M20). To test the efficacy of rBCG::iE-DAP as a vaccine candidate, BALB/c mice (n=10 per group) were immunized intradermally with 105 colony-forming units (CFU)/100 µL of WT BCG or rBCG::iE-DAP strains. Mice were sham immunized with saline (n=10) and Dox was administered by daily oral gavage to the Saline +Dox (n=5), WT BCG +Dox (n=5) and the rBCG::iE-DAP +Dox (n=5) groups for 6 weeks. Mice were weighed every week to monitor the effect of Dox administration on the health of the mice. Mice were challenged with ~100 CFU of Mtb H37Rv strain by the aerosol route 6 weeks post immunization in a Glasscol inhalation exposure system (Glasscol). Lungs and spleens from infected animals were harvested at week 4 and week 8 post Mtb infection for analysis of lung bacterial burden by plating the whole-lung homogenate on 7H11-selective plates containing carbenicillin (50 mg/ml), Trimethoprim (20 mg/ml), Polymyxin B (25 mg/ml), and Cycloheximide (10 mg/ml) and lung pathology was assessed after hematoxylin and eosin (H&E) staining.
 
-## Histopathology
+### Histopathology
 
 Half of the left lung/mouse was cut and fixed in 10% neutral buffered formalin, paraffin embedded, sectioned, and H&E stained. Slides were digitally scanned (Aperio AT turbo scanner console version 102.0.7.5; Leica Biosystems, Vista, CA), transferred (Concentriq for Research version 2.2.4; Proscia, Philadelphia, PA), and visualized (Aperio ImageScope version 12.4.0.5043; Leica Biosystems Pathology Imaging, Buffalo Grove, IL). Histology images were analyzed with the Fiji software (ImageJ version 1.47 n [NIH]).

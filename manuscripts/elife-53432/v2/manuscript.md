@@ -29,37 +29,37 @@ Here, we develop a principled theoretical analysis to address these issues and d
 
 ## Results
 
-## Passive properties
+### Passive properties
 
 At spike initiation, a Na+ current first enters the AIS, producing a local depolarization. How does this depolarization vary with the position of the injection site? As several studies have pointed out, the answer depends on the relative sizes of the soma (or somatodendritic compartment) and axon (Brette, 2013; Eyal et al., 2014; Michalikova et al., 2017; Telenczuk et al., 2017). In the following, we consider a current passing through the membrane of a passive cylindrical axon attached to the cell body, and we analyze two extreme cases: a very small soma, and a very large soma. We then show that at the time scale of spike initiation, the latter case approximates the physiological situation in many neuron types.
 
-## Small soma, or sealed end condition
+#### Small soma, or sealed end condition
 
-We start with the theoretical case of a soma and axon of the same size, meaning that the neuron is simply a cylinder. In cable theory, this is called the 'sealed end condition': one end of the axon is sealed and no current passes through it (Tuckwell, 1988b). A current is injected at a distance x from the soma, in an axon of space constant λ, typically about 500 µm in cortical pyramidal cells (Kole et al., 2007). The ratio between local depolarization and current is by definition the input resistance R. How does the input resistance vary with x? Part of the current flows toward the soma (proximal side), and the rest flows toward the distal axon. Thus, the input resistance decomposes into R(x)-1=Rproximal-1(x)+Rdistal-1, (for a long axon only the proximal resistance varies with x). The proximal segment is highly resistive because its end is sealed. Specifically, if x is small (x≪λ), which is the physiological situation when a current is injected at the distance of the AIS, we have Rproximalx/Rdistal≈λ/x, a large number (see Materials and methods). This means that the current flows mostly towards the distal axon (as seen in the uniform voltage response between soma and injection site, Figure 1A). In addition, the input resistance is approximately the distal resistance, and therefore the position of the injection site has little effect on the electrical response. More precisely, we can calculate that R(x)≈raλ-x, where ra is axial resistance per unit length (Figure 1B). Thus, moving the AIS away from the soma should make the cell slightly less excitable. This is consistent with the findings of Gulledge and Bravo (2016), who observed numerically that when the somatodendritic compartment is small, the neuron is most excitable when the AIS is next to the soma.
+We start with the theoretical case of a soma and axon of the same size, meaning that the neuron is simply a cylinder. In cable theory, this is called the 'sealed end condition': one end of the axon is sealed and no current passes through it (Tuckwell, 1988b). A current is injected at a distance x from the soma, in an axon of space constant $\lambda$, typically about 500 µm in cortical pyramidal cells (Kole et al., 2007). The ratio between local depolarization and current is by definition the input resistance R. How does the input resistance vary with x? Part of the current flows toward the soma (proximal side), and the rest flows toward the distal axon. Thus, the input resistance decomposes into $R(x)^{-1}=R_{proximal}^{-1}(x)+R_{distal}^{-1}$, (for a long axon only the proximal resistance varies with x). The proximal segment is highly resistive because its end is sealed. Specifically, if x is small ($x≪\lambda$), which is the physiological situation when a current is injected at the distance of the AIS, we have $R_{proximal}^{}x/R_{distal}^{}≈\lambda/x$, a large number (see Materials and methods). This means that the current flows mostly towards the distal axon (as seen in the uniform voltage response between soma and injection site, Figure 1A). In addition, the input resistance is approximately the distal resistance, and therefore the position of the injection site has little effect on the electrical response. More precisely, we can calculate that $R(x)≈r_{a}\lambda-x$, where $r_{a}$ is axial resistance per unit length (Figure 1B). Thus, moving the AIS away from the soma should make the cell slightly less excitable. This is consistent with the findings of Gulledge and Bravo (2016), who observed numerically that when the somatodendritic compartment is small, the neuron is most excitable when the AIS is next to the soma.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig1-v2.jpg)
 
-**Figure 1.:** a=1.3 MΩ/μm, λ=612 μm, EL = -75 mV).(A, B) With a very small soma; (C, D) With a large soma. (A) Voltage response along the axon for a 10 pA current injected at 20 µm (black) and at 100 µm (red). (B) Input resistance as a function of distance, as numerically measured (solid) and according to the simplified theoretical formula (, dashed). (R(x)≈raλ-xC) Same as A for a large soma (diameter: 100 µm, current: 100 pA). (D) Same as B for a large soma, with the simplified theoretical prediction for the killed end condition (, dashed red) and the full theoretical prediction for a finite soma (R(x)≈rax, dashed black; R-1=rax+Rsoma-1+raλ-1 = 47.7 MΩ).Rsoma
+**Figure 1.:** (A, B) With a very small soma; (C, D) With a large soma. (A) Voltage response along the axon for a 10 pA current injected at 20 µm (black) and at 100 µm (red). (B) Input resistance as a function of distance, as numerically measured (solid) and according to the simplified theoretical formula ($R(x)≈r_{a}\lambda-x$, dashed). (C) Same as A for a large soma (diameter: 100 µm, current: 100 pA). (D) Same as B for a large soma, with the simplified theoretical prediction for the killed end condition ($R(x)≈r_{a}x$, dashed red) and the full theoretical prediction for a finite soma ($R^{-1}=r_{a}x+R_{soma}^{-1}+r_{a}\lambda^{-1}$, dashed black; $R_{soma}$ = 47.7 MΩ).
 
-## Large soma, or killed end condition
+#### Large soma, or killed end condition
 
-Suppose now that the somatodendritic compartment is so large that the axial current has negligible effect on its potential. This is the 'killed end' condition (as if the membrane were open) (see Materials ans methods). In this case, when x≪λ, Rproximalx≈rax, which means that only the axial resistive component is significant. We then have Rproximalx/Rdistal≈x/λ, a small number (the exact inverse of the sealed end condition). Thus, current flows primarily toward the soma and R(x)≈Rproximal(x). We express this fact by stating that the soma is a current sink. This is illustrated on Figure 1C with a thin axon (diameter 1 µm) attached to a large spherical soma (100 µm). The current I flowing toward the soma produces a linear depolarization between the soma and the injection site, with a total voltage difference ΔV=rax.I. It follows that the input resistance increases with the distance of the injection site, which would tend to make the cell more excitable when the AIS is moved away from the soma, since less Na+ current is then required to produce the same depolarization.
+Suppose now that the somatodendritic compartment is so large that the axial current has negligible effect on its potential. This is the 'killed end' condition (as if the membrane were open) (see Materials ans methods). In this case, when $x≪\lambda$, $R_{proximal}^{}x≈r_{a}x$, which means that only the axial resistive component is significant. We then have $R_{proximal}^{}x/R_{distal}^{}≈x/\lambda$, a small number (the exact inverse of the sealed end condition). Thus, current flows primarily toward the soma and $R(x)≈R_{proximal}(x)$. We express this fact by stating that the soma is a current sink. This is illustrated on Figure 1C with a thin axon (diameter 1 µm) attached to a large spherical soma (100 µm). The current I flowing toward the soma produces a linear depolarization between the soma and the injection site, with a total voltage difference $ΔV=r_{a}x.I$. It follows that the input resistance increases with the distance of the injection site, which would tend to make the cell more excitable when the AIS is moved away from the soma, since less Na+ current is then required to produce the same depolarization.
 
-This simplified formula (R(x)=rax) differs from the actual input resistance in two ways, as illustrated in Figure 1D. First, some current flows toward the distal side, which becomes substantial at long distances from the soma. Second, with a finitely large soma instead of a killed end, the current also charges the soma, which makes the input resistance increase approximately by the somatic membrane resistance Rsoma. However, this difference holds for the stationary response. On a short time scale, the somatic depolarization is negligible because the soma charges much more slowly than the axon. This is illustrated in Figure 2A, where a current pulse is injected at the axon and measured at the injection site (red) and at the soma (black). The difference between the two responses, which is the voltage gradient between the soma and the injection site, essentially follows Ohm’s law: ΔV=RaI (Figure 2B), where Ra=rax is the axial resistance of the axon between soma and injection site (thus, Rproximal≈Ra+Rm). Since on a short time scale the soma is not substantially depolarized, the local depolarization mainly reflects the ohmic voltage gradient across the proximal axon. In Figure 2C, we show the input resistance at time t = 300 µs, (Vaxon(t=300 µs)-V0)/I, as a function of distance x (red): it is essentially the same as ΔV(t=300 µs)/I, because the somatic response (Vsoma(t=300 µs)-V0)/I is negligible (black). This plot shows quantitatively that the axon indeed charges faster than the soma, for a broad range of distances of the axonal stimulation site.
+This simplified formula ($R(x)=r_{a}x$) differs from the actual input resistance in two ways, as illustrated in Figure 1D. First, some current flows toward the distal side, which becomes substantial at long distances from the soma. Second, with a finitely large soma instead of a killed end, the current also charges the soma, which makes the input resistance increase approximately by the somatic membrane resistance $R_{soma}$. However, this difference holds for the stationary response. On a short time scale, the somatic depolarization is negligible because the soma charges much more slowly than the axon. This is illustrated in Figure 2A, where a current pulse is injected at the axon and measured at the injection site (red) and at the soma (black). The difference between the two responses, which is the voltage gradient between the soma and the injection site, essentially follows Ohm’s law: $ΔV=R_{a}I$ (Figure 2B), where $R_{a}=r_{a}x$ is the axial resistance of the axon between soma and injection site (thus, $R_{proximal}^{}≈R_{a}+R_{m}$). Since on a short time scale the soma is not substantially depolarized, the local depolarization mainly reflects the ohmic voltage gradient across the proximal axon. In Figure 2C, we show the input resistance at time t = 300 µs, $(V_{axon}(t=300µs)-V_{0})/I$, as a function of distance x (red): it is essentially the same as $ΔV(t=300µs)/I$, because the somatic response $(V_{soma}(t=300µs)-V_{0})/I$ is negligible (black). This plot shows quantitatively that the axon indeed charges faster than the soma, for a broad range of distances of the axonal stimulation site.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig2-v2.jpg)
 
-**Figure 2.:** A-C) and in layer five pyramidal neurons (D-F).(A, D) Voltage response at the axonal injection site 75 µm away from the soma (red) and at the soma (black). (B, E) Difference between the two responses. (C, F) Input resistance measured 300 µs after the start of current injection as a function of the distance of the injection site (red), compared to the resistance obtained from the somatic voltage response at the same time (black).
+**Figure 2.:** (A, D) Voltage response at the axonal injection site 75 µm away from the soma (red) and at the soma (black). (B, E) Difference between the two responses. (C, F) Input resistance measured 300 µs after the start of current injection as a function of the distance of the injection site (red), compared to the resistance obtained from the somatic voltage response at the same time (black).
 
 To summarize, the case with a large soma is characterized by two key properties: 1) a current injected at the axon produces a resistive voltage gradient between the soma and injection site, proportional to the axial resistance Ra of that piece of axon; 2) the axonal site charges much faster than the soma. We call this regime the resistive coupling regime (Brette, 2013; Kole and Brette, 2018; Telenczuk et al., 2017).
 
-## Cortical cells
+#### Cortical cells
 
 Which regime applies to neurons? Clearly, the soma of neurons is smaller than in the simulations shown in Figure 2A–C, but the axonal current must also charge the capacitance of the proximal dendrites (thus we call the compartment connected to the axon the somatodendritic compartment). We start by examining experimental recordings from layer 5 cortical pyramidal neurons, where a current pulse is injected in the axon and simultaneously recorded at the soma (Hu and Bean, 2019; Hu and Bean, 2018). These neurons have a soma of about 30 µm diameter attached to a large apical dendrite and an AIS of about 1–1.5 µm diameter (Hamada et al., 2016; Höfflin et al., 2017) – note that these are optical measurements, which have limited precision. Strictly speaking, the experimental situation is not exactly the same as the physiological situation because currents are injected in axonal blebs, and therefore the resistance of the distal axon is replaced by the resistance of the bleb. However, recordings of action potentials in intact AIS appear very similar to recordings in blebs (compare Yu et al., 2008 with Kole and Stuart, 2008).
 
 Figure 2D shows the response to a current pulse injected at 75 µm away from the soma, in the soma and at the axonal injection site. As in the theoretical case described above, a voltage gradient develops very quickly between the soma and injection site (Figure 2E). Note that the resting potential is different at the two sites; we will come back to this issue in a later section. As noted by Hu and Bean (2018), the axonal input resistance increases with distance of the injection site. When measured 300 µs after the start of the pulse, the axonal input resistance increases steeply with distance, while the soma barely responds (Figure 2F). Therefore, the passive properties of these neurons follow the resistive coupling regime, rather than the small soma regime (compare with Figure 1B).
 
-## Dimensional analysis
+#### Dimensional analysis
 
 Could it be that large neurons follow the resistive coupling regime while smaller neurons such as granule cells do not? Consistently with this hypothesis, in simulations, Gulledge and Bravo (2016) noted that large neurons are more excitable when the AIS is distal whereas small neurons are more excitable when the AIS is proximal. However, those simulations were performed with a constant AIS diameter of 1.5 µm. As noted in Telenczuk et al. (2017), cerebellar granule cells, which have a small cell body of about 6 µm diameter (Delvendahl et al., 2015) also have very thin axons, of diameter about 0.2 µm (Perge et al., 2012; Wyatt et al., 2005), and as a result they still follow resistive coupling theory because the soma remains large compared to the axon.
 
@@ -71,15 +71,15 @@ We now examine the relation between soma and axon diameter empirically. Figure 3
 
 The data show that smaller neurons also tend to have a smaller AIS. The correlation between AIS and soma diameter appears both within and across cell types (the best power law fit across all merged data has exponent 1.14 ± 0.05, bootstrap standard deviation, but the exact number is not very meaningful because the regression is done on groups of different sizes).
 
-To interpret this relation, we now ask what relation between soma and axon diameter preserves electrical properties. We use the dimensional analysis that Rushton (1951) applied to the scaling of conduction velocity with axon diameter. For this analysis, we consider a simplified model consisting of a spherical soma of diameter dS with no dendrites and a cylindrical axon of diameter da. First, the somatic input resistance scales as Rs∝ds-2 (inverse membrane area), while the distal axonal resistance scales as Rdistal∝da-3/2 (input resistance of a semi-infinite cylinder). For the resistance of the proximal axon, we must determine the injection point. To preserve electrical properties, its position should be constant in units of the space constant λ, which gives Ra∝λ/da2∝da-3/2. Thus, for all resistances to scale in the same way and therefore to preserve electrical properties, we must have ds-2∝da-3/2, which means: da∝ds4/3, that is, a power law exponent of about 1.3. This relation is represented by the dashed line on Figure 3: all lines parallel to it correspond to electrical equivalence – this is of course approximate since it does not take into account the scaling of dendrites.
+To interpret this relation, we now ask what relation between soma and axon diameter preserves electrical properties. We use the dimensional analysis that Rushton (1951) applied to the scaling of conduction velocity with axon diameter. For this analysis, we consider a simplified model consisting of a spherical soma of diameter dS with no dendrites and a cylindrical axon of diameter da. First, the somatic input resistance scales as $R_{s}∝d_{s}^{-2}$ (inverse membrane area), while the distal axonal resistance scales as $R_{distal}∝d_{a}^{-3/2}$ (input resistance of a semi-infinite cylinder). For the resistance of the proximal axon, we must determine the injection point. To preserve electrical properties, its position should be constant in units of the space constant $\lambda$, which gives $R_{a}∝\lambda/d_{a}^{2}∝d_{a}^{-3/2}$. Thus, for all resistances to scale in the same way and therefore to preserve electrical properties, we must have $d_{s}^{-2}∝d_{a}^{-3/2}$, which means: $d_{a}∝d_{s}^{4/3}$, that is, a power law exponent of about 1.3. This relation is represented by the dashed line on Figure 3: all lines parallel to it correspond to electrical equivalence – this is of course approximate since it does not take into account the scaling of dendrites.
 
 In summary, small neurons also have a thin AIS, such that electrical properties are preserved. This indicates that the passive properties of the soma-AIS system should generically follow the resistive coupling regime. We will now show that in this regime, the appropriate measure of excitability for studying the effect of AIS structural plasticity is the somatic voltage threshold.
 
-## Measuring excitability
+### Measuring excitability
 
-## A simple biophysical model of spike initiation
+#### A simple biophysical model of spike initiation
 
-We first present a minimal biophysical model of spike initiation that will be compared with theoretical predictions. We aimed for a simple model with as few parameters as possible (see Materials and methods for details). The morphology consists of a spherical soma, a large cylindrical dendrite and a thin cylindrical axon (Figure 4, top). The AIS is a section of the proximal axon with a high uniform density of inactivating sodium and non-inactivating potassium channels. The rest of the neuron contains a lower density of both channels. On this figure, the AIS is L = 30 µm long and is positioned at a distance Δ = 5 µm from the soma.
+We first present a minimal biophysical model of spike initiation that will be compared with theoretical predictions. We aimed for a simple model with as few parameters as possible (see Materials and methods for details). The morphology consists of a spherical soma, a large cylindrical dendrite and a thin cylindrical axon (Figure 4, top). The AIS is a section of the proximal axon with a high uniform density of inactivating sodium and non-inactivating potassium channels. The rest of the neuron contains a lower density of both channels. On this figure, the AIS is L = 30 µm long and is positioned at a distance $Δ$ = 5 µm from the soma.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig4-v2.jpg)
 
@@ -89,7 +89,7 @@ For channels, we chose simple Hodgkin-Huxley-type models with just three interpr
 
 Our goal was to reproduce the essential phenomenology of action potentials recorded in cortical neurons. First, a high amplitude action potential initiates first in the AIS where it rises quickly (dV/dt > 1,000 V/s), then appears in the soma with a distinct kink and a biphasic phase plot (Figure 4C,D; Kole et al., 2008; Kole and Stuart, 2008; Naundorf et al., 2006; Stuart et al., 1997; Yu et al., 2008). Second, Na+ and K+ currents have little overlap at spike initiation (Figure 4E,F; Hallermann et al., 2012), which implies that Kv channels are more involved in repolarization than in spike initiation.
 
-## How to measure excitability?
+#### How to measure excitability?
 
 Excitability changes associated with changes in AIS geometry have been reported using various measures: rheobase, the minimal constant current required to elicit a spike (Lezmy et al., 2017), or minimal transient current (Raghuram et al., 2019); threshold current density, which is rheobase divided by input capacitance (Grubb and Burrone, 2010; Wefelmeyer et al., 2015); somatic potential at spike onset (Kuba et al., 2015; Kuba et al., 2014).
 
@@ -99,51 +99,83 @@ All these quantities are related to each other. However, an issue with both rheo
 
 **Figure 5.:** (A) Rheobase (dark blue) and somatic voltage threshold (light blue) as a function of total Nav conductance in the AIS G (dS = 30 µm). The resting potential also changes slightly (dashed). (B) Rheobase and somatic voltage threshold as a function of leak conductance density (G = 350 nS). (C) Voltage threshold at the soma (solid light blue) and AIS (dashed light blue) as a function of a hyperpolarizing current injected at the AIS end. The rheobase is shown in dark blue.
 
-In the resistive coupling regime, the somatic voltage threshold is a measure of excitability that depends only on axonal factors. It is defined as the maximum somatic membrane potential that can be reached without triggering a spike (Brette, 2013). This is illustrated in Figure 5A and B: the voltage threshold varies with G in the same way as the rheobase (more precisely, Vthreshold-V0 is proportional to the rheobase), but it does not vary with gL. The reason is the separation of time scales between somatic and axonal dynamics, due to the size difference: when the Na+ current enters the AIS, it depolarizes the AIS very rapidly, while at the time scale of spike initiation the soma does not get charged significantly. This is shown in Figure 2C and F, which compare the somatic and axonal responses at time t = 300 µs after current injection in the axon. It follows that at the relevant time scale, the somatic potential acts as a fixed boundary condition for the axon. Therefore, the initiation of a spike depends only on the somatic potential and properties of the axon, but not on properties of the soma or dendrites (an exception is the axon-carrying dendrite of some neurons, Kole and Brette, 2018). In terms of dynamical systems theory, the somatic potential is a bifurcation parameter (see below).
+In the resistive coupling regime, the somatic voltage threshold is a measure of excitability that depends only on axonal factors. It is defined as the maximum somatic membrane potential that can be reached without triggering a spike (Brette, 2013). This is illustrated in Figure 5A and B: the voltage threshold varies with G in the same way as the rheobase (more precisely, $V_{threshold}-V_{0}$ is proportional to the rheobase), but it does not vary with gL. The reason is the separation of time scales between somatic and axonal dynamics, due to the size difference: when the Na+ current enters the AIS, it depolarizes the AIS very rapidly, while at the time scale of spike initiation the soma does not get charged significantly. This is shown in Figure 2C and F, which compare the somatic and axonal responses at time t = 300 µs after current injection in the axon. It follows that at the relevant time scale, the somatic potential acts as a fixed boundary condition for the axon. Therefore, the initiation of a spike depends only on the somatic potential and properties of the axon, but not on properties of the soma or dendrites (an exception is the axon-carrying dendrite of some neurons, Kole and Brette, 2018). In terms of dynamical systems theory, the somatic potential is a bifurcation parameter (see below).
 
 It could be argued that a better measure of excitability is the voltage threshold at the AIS, rather than at the soma, since spikes are initiated in the AIS (Yu et al., 2008). To show that this is not the case, we inject a constant hyperpolarizing current at the distal end of the AIS, while still triggering spikes with a somatic current (Figure 5C). As a result, the somatic voltage threshold is raised in proportion of the hyperpolarizing current. This change does represent a reduction of excitability, because the rheobase also increases - we note that the rheobase increases both because the voltage threshold increases and because the resting potential also decreases substantially (see final section). In contrast, the voltage threshold at the AIS changes in the opposite direction (Figure 5C): it does not capture the change in excitability due to this particular change at the AIS, but on the contrary it is misleading. We will analyze this perhaps counter-intuitive phenomenon in the last part of the manuscript. We note for now that the somatic voltage threshold specifically captures the axonal factors of excitability.
 
-## Relation between excitability and AIS geometry
+### Relation between excitability and AIS geometry
 
-## General theoretical framework
+#### General theoretical framework
 
-We now develop a theoretical analysis of the relation between AIS geometry and excitability as measured by the somatic voltage threshold. To develop the theory, we make a number of strong approximations. First, we neglect the axial current toward the distal axon because the soma acts as a current sink for the AIS. Second, we neglect axonal leak currents because the resistance through the membrane is much larger than the axial resistance toward the soma. For a length x of axon, the membrane resistance is Rm/(πdx) (d is axon diameter and Rm is specific membrane resistance); for example, with d = 1 µm, x = 100 µm and Rm = 15 000 Ω.cm2, we obtain about 4.8 GΩ. In contrast, with the same parameter values and Ri = 100 Ω.cm we obtain an axial resistance Ra=4Rix/(π d2)≈127 MΩ. Third, we neglect the time-varying K+ current responsible for repolarization because it is small compared to the Na+ current at spike initiation, at least in layer 5 pyramidal cells (Hallermann et al., 2012) (see Figure 4E). Fourth, we further assume that Nav channel inactivation plays no role, except for setting the proportion of initially available Nav channels. Finally, we neglect all time-varying processes. This drastic approximation is justified by the following arguments: first, the somatic membrane potential should not vary substantially at the time scale of spike initiation because the somatodendritic compartment is large; second, the axonal capacitive current should be small because we are considering the situation near threshold (i.e. where dV/dt is not very large) and the axonal capacitance is relatively small; third, the activation time constant of Nav channels is very short (about 100 µs at room temperature, Schmidt-Hieber and Bischofberger, 2010).
+We now develop a theoretical analysis of the relation between AIS geometry and excitability as measured by the somatic voltage threshold. To develop the theory, we make a number of strong approximations. First, we neglect the axial current toward the distal axon because the soma acts as a current sink for the AIS. Second, we neglect axonal leak currents because the resistance through the membrane is much larger than the axial resistance toward the soma. For a length x of axon, the membrane resistance is $R_{m}/(\pidx)$ (d is axon diameter and Rm is specific membrane resistance); for example, with d = 1 µm, x = 100 µm and Rm = 15 000 Ω.cm2, we obtain about 4.8 GΩ. In contrast, with the same parameter values and Ri = 100 Ω.cm we obtain an axial resistance $R_{a}=4R_{i}x/(\pid^{2})≈127$ MΩ. Third, we neglect the time-varying K+ current responsible for repolarization because it is small compared to the Na+ current at spike initiation, at least in layer 5 pyramidal cells (Hallermann et al., 2012) (see Figure 4E). Fourth, we further assume that Nav channel inactivation plays no role, except for setting the proportion of initially available Nav channels. Finally, we neglect all time-varying processes. This drastic approximation is justified by the following arguments: first, the somatic membrane potential should not vary substantially at the time scale of spike initiation because the somatodendritic compartment is large; second, the axonal capacitive current should be small because we are considering the situation near threshold (i.e. where dV/dt is not very large) and the axonal capacitance is relatively small; third, the activation time constant of Nav channels is very short (about 100 µs at room temperature, Schmidt-Hieber and Bischofberger, 2010).
 
 With this set of approximations, the theory then considers just two currents: the axial resistive current, and an instantaneous axonal Na+ current (in the last part we will consider the effect of a static non-sodium current). Theoretical predictions will be compared with simulations in the biophysical model, which does not make these approximations. We address increasingly complex situations, starting with a point AIS.
 
-## A point AIS
+#### A point AIS
 
-The idealized case where all Nav channels are clustered at a point AIS has been treated theoretically in Brette (2013). We briefly summarize the result. When the somatic potential is increased, the axonal potential also increases. Under some condition, there is a somatic potential above which the axonal potential suddenly jumps to a higher value, which corresponds to spike initiation. This is called a bifurcation and the voltage at the bifurcation (the spike threshold) has been calculated analytically (see Materials and methods). A simple (but not rigorous) way to obtain the result is the following. The axial current is resistive, and therefore scales inversely with axial resistance Ra. At spike initiation, we therefore expect: Iaxial∝1/Ra. The Na+ current changes approximately exponentially with voltage below threshold (Baranauskas and Martina, 2006; Hodgkin and Huxley, 1952b): INa∝Gexp⁡V/k⁡, where G is the total available Na+ conductance and k is the Boltzmann slope factor of Nav channels (typically 4–8 mV Angelino and Brenner, 2007; Platkiewicz and Brette, 2011). The two currents must match (the Na+ current entering the axon then flows toward the soma as a resistive current), therefore the somatic spike threshold is:Vs=constant-klog⁡(RaG)where the constant depends on Nav channel properties. For an axon with constant section (e.g. cylindrical), the axial resistance Ra is proportional to AIS position Δ. Therefore, the formula can be expressed asVs=constant-klog⁡Δ-klog⁡G
+The idealized case where all Nav channels are clustered at a point AIS has been treated theoretically in Brette (2013). We briefly summarize the result. When the somatic potential is increased, the axonal potential also increases. Under some condition, there is a somatic potential above which the axonal potential suddenly jumps to a higher value, which corresponds to spike initiation. This is called a bifurcation and the voltage at the bifurcation (the spike threshold) has been calculated analytically (see Materials and methods). A simple (but not rigorous) way to obtain the result is the following. The axial current is resistive, and therefore scales inversely with axial resistance Ra. At spike initiation, we therefore expect: $I_{axial}∝1/R_{a}$. The Na+ current changes approximately exponentially with voltage below threshold (Baranauskas and Martina, 2006; Hodgkin and Huxley, 1952b): $I_{Na}∝Gexp⁡V/k⁡$, where G is the total available Na+ conductance and k is the Boltzmann slope factor of Nav channels (typically 4–8 mV Angelino and Brenner, 2007; Platkiewicz and Brette, 2011). The two currents must match (the Na+ current entering the axon then flows toward the soma as a resistive current), therefore the somatic spike threshold is:
 
-We did not include the AIS diameter d in this formula, which would contribute an additional term 2klog⁡d (because Ra is inversely proportional to d2; see Discussion). Figure 6A and B illustrate this formula for k = 5 mV. To show that the analysis is correct, we first show numerical results in a simplified cable model that includes neither Nav channel inactivation nor Kv channels (see Materials and methods). The soma is voltage-clamped and the command potential is increased until a spike is triggered in the AIS. This situation is close to the approximations used for the theory, but includes leak currents, axonal capacitive currents and Nav activation dynamics. Figure 6C and D show that the formula is essentially correct in this case.
+$$
+V_{s}=constant-klog⁡(R_{a}G)
+$$
+
+where the constant depends on Nav channel properties. For an axon with constant section (e.g. cylindrical), the axial resistance Ra is proportional to AIS position $Δ$. Therefore, the formula can be expressed as
+
+$$
+V_{s}=constant-klog⁡Δ-klog⁡G
+$$
+
+We did not include the AIS diameter d in this formula, which would contribute an additional term $2klog⁡d$ (because Ra is inversely proportional to d2; see Discussion). Figure 6A and B illustrate this formula for k = 5 mV. To show that the analysis is correct, we first show numerical results in a simplified cable model that includes neither Nav channel inactivation nor Kv channels (see Materials and methods). The soma is voltage-clamped and the command potential is increased until a spike is triggered in the AIS. This situation is close to the approximations used for the theory, but includes leak currents, axonal capacitive currents and Nav activation dynamics. Figure 6C and D show that the formula is essentially correct in this case.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig6-v2.jpg)
 
-**Figure 6.:** (A) Theoretical prediction of spike threshold vs. AIS position in logarithmic scale, for different total Nav conductances (from 200 to 600 nS). (B) Theoretical prediction of spike threshold vs. total Nav conductance for different AIS positions (from 10 to 30 µm). (C) Spike threshold in a simplified model measured in somatic voltage clamp, vs. AIS position. The regression slope is about 5 mV for all curves. (D) Spike threshold in the simplified model vs. total Nav conductance. The regression slope varies between 5.3 mV ( = 10 µm) and 5.4 mV (Δ = 30 µm). (ΔE) Spike threshold vs. AIS position in the biophysical model in current clamp. Regression slopes vary between 7.7 mV (G = 200 nS) and 6.5 mV (G = 600 nS). (F) Spike threshold vs. total Nav conductance in the biophysical model. Regression slopes vary between 10.5 mV ( = 10 µm) and 9.3 mV (Δ = 30 µm).Δ
+**Figure 6.:** (A) Theoretical prediction of spike threshold vs. AIS position in logarithmic scale, for different total Nav conductances (from 200 to 600 nS). (B) Theoretical prediction of spike threshold vs. total Nav conductance for different AIS positions (from 10 to 30 µm). (C) Spike threshold in a simplified model measured in somatic voltage clamp, vs. AIS position. The regression slope is about 5 mV for all curves. (D) Spike threshold in the simplified model vs. total Nav conductance. The regression slope varies between 5.3 mV ($Δ$ = 10 µm) and 5.4 mV ($Δ$ = 30 µm). (E) Spike threshold vs. AIS position in the biophysical model in current clamp. Regression slopes vary between 7.7 mV (G = 200 nS) and 6.5 mV (G = 600 nS). (F) Spike threshold vs. total Nav conductance in the biophysical model. Regression slopes vary between 10.5 mV ($Δ$ = 10 µm) and 9.3 mV ($Δ$ = 30 µm).
 
 We now examine this relation in the biophysical model where a spike is elicited in current-clamp. Several factors make this situation much more challenging: first, the somatic potential is no longer assumed to be clamped at spike initiation, and second, the model includes Nav channel inactivation and Kv channels, both of which can interfere with spike initiation. To ensure that the same proportion of Nav channels is initially available when x and G are varied, we use the following protocol: the somatic potential is held at V0 = −75 mV, then a current step of varying amplitude is injected. The voltage threshold is defined as the maximal somatic potential reached in a non-spiking trial. Thus, the value of G represents the total non-inactivated conductance, which can potentially vary with the initial potential (see Platkiewicz and Brette, 2011; Platkiewicz and Brette, 2010 for a theory); in practice, this variation was small in our simulations.
 
 The numerical results show quantitative differences with the theoretical predictions (Figure 6E and F), namely, the spike threshold is more sensitive to Nav conductance than predicted (logarithmic slope of about 9 mV instead of k = 5 mV). Nonetheless, theory correctly predicts that 1) shifting the AIS distally or increasing total Nav conductance lowers spike threshold on a logarithmic scale, 2) the two logarithmic factors interact linearly (meaning the plotted lines are parallel). The relation between threshold and AIS position is also quantitatively well predicted (logarithmic slope of about 6–7 mV).
 
-## A spatially extended AIS
+#### A spatially extended AIS
 
 We now turn to the more difficult case of a spatially extended AIS, which requires new theory. Figure 8 shows the relation between AIS geometry and voltage threshold in the biophysical model, when the surface conductance density of Nav channels is maintained constant. As expected, the threshold is lowered when the AIS is moved away from the soma (Figure 7A). However, the relation is less steep than in the case of a point AIS. The threshold is also lowered when the AIS is extended (Figure 7B). This is not surprising, but the quantitative relation cannot be easily extrapolated from the point AIS theory: when the AIS is extended, the total Nav conductance increases in proportion of the length, but the spike initiation site also moves.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig7-v2.jpg)
 
-**Figure 7.:** (A) Threshold vs. AIS position  (distance between soma and AIS start), for different AIS lengths between 10 and 40 µm. (ΔB) Threshold vs. AIS length for different AIS positions between 10 and 30 µm. (C) Theoretical relation between threshold and AIS position (corresponding to panel A). (D) Theoretical relation between threshold and AIS length (corresponding to panel B).
+**Figure 7.:** (A) Threshold vs. AIS position $Δ$ (distance between soma and AIS start), for different AIS lengths between 10 and 40 µm. (B) Threshold vs. AIS length for different AIS positions between 10 and 30 µm. (C) Theoretical relation between threshold and AIS position (corresponding to panel A). (D) Theoretical relation between threshold and AIS length (corresponding to panel B).
 
-We developed an analytical strategy to derive a formula for the extended case (illustrated in Figure 7C,D). We first consider an AIS of length L starting at the soma. We solve the cable equation in the resistive coupling regime, that is, where all time-varying effects as well as leak currents are neglected and the somatic potential is held fixed. The cable equation then becomes an ordinary second-order differential equation:d2Vdx2∝-geV/kwhere g is the surface conductance density of (available) Nav channels, and the proportionality factor includes axon diameter, resistivity and Nav channel properties. This equation simply expresses the fact that the Na+ current entering the axon (right hand-side) equals the axial diffusion current (left hand-side). This equation can be solved with the two boundary conditions: V(0) is the somatic potential (V(0) = Vs) and no axial current flows toward the distal axon (V’(L) = 0; see Materials and methods). A simple rescaling argument shows that the spike threshold varies asVs=constant-klog⁡G-klog⁡Lwhere G is the total Nav conductance (G=πdL for a cylindrical axon). Remarkably, this is the same formula as for a point AIS placed at position Δ = L and with the same total number of Nav channels. The only difference is the constant term. By solving the differential equation analytically, we find that this difference is 0.87 k (about 4.3 mV with k = 5 mV), as illustrated on Figure 8A (dashed vs. solid black). Note that in the point model, the threshold is not defined anymore (no bifurcation or 'kink') when AIS distance is lower than 2.25 µm (Brette, 2013). This limit is more difficult to calculate in the extended model.
+We developed an analytical strategy to derive a formula for the extended case (illustrated in Figure 7C,D). We first consider an AIS of length L starting at the soma. We solve the cable equation in the resistive coupling regime, that is, where all time-varying effects as well as leak currents are neglected and the somatic potential is held fixed. The cable equation then becomes an ordinary second-order differential equation:
+
+$$
+\frac{d^{2}V}{dx^{2}}∝-ge^{V/k}
+$$
+
+where g is the surface conductance density of (available) Nav channels, and the proportionality factor includes axon diameter, resistivity and Nav channel properties. This equation simply expresses the fact that the Na+ current entering the axon (right hand-side) equals the axial diffusion current (left hand-side). This equation can be solved with the two boundary conditions: V(0) is the somatic potential (V(0) = Vs) and no axial current flows toward the distal axon (V’(L) = 0; see Materials and methods). A simple rescaling argument shows that the spike threshold varies as
+
+$$
+V_{s}=constant-klog⁡G-klog⁡L
+$$
+
+where G is the total Nav conductance ($G=\pidL$ for a cylindrical axon). Remarkably, this is the same formula as for a point AIS placed at position $Δ$ = L and with the same total number of Nav channels. The only difference is the constant term. By solving the differential equation analytically, we find that this difference is 0.87 k (about 4.3 mV with k = 5 mV), as illustrated on Figure 8A (dashed vs. solid black). Note that in the point model, the threshold is not defined anymore (no bifurcation or 'kink') when AIS distance is lower than 2.25 µm (Brette, 2013). This limit is more difficult to calculate in the extended model.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig8-v2.jpg)
 
-**Figure 8.:** (A) Theoretical spike threshold of an AIS of length L starting from the soma (dashed), compared to an equivalent point AIS placed at position  = L (solid black) and at Δ = xΔ1/2 = L/2 (solid green). (B) Theoretical spike threshold (in mV) vs. AIS middle position and length, with fixed total Nav conductance. The lower right white triangle corresponds to impossible geometries; the lower left shaded triangle is the region where the threshold is undefined in the point model. (C) Observed relation in the biophysical model.
+**Figure 8.:** (A) Theoretical spike threshold of an AIS of length L starting from the soma (dashed), compared to an equivalent point AIS placed at position $Δ$ = L (solid black) and at $Δ$ = x1/2 = L/2 (solid green). (B) Theoretical spike threshold (in mV) vs. AIS middle position and length, with fixed total Nav conductance. The lower right white triangle corresponds to impossible geometries; the lower left shaded triangle is the region where the threshold is undefined in the point model. (C) Observed relation in the biophysical model.
 
-An equivalent and more intuitive way to understand this result is to note that a threshold shift of 0.87 k is equivalent to a displacement of the AIS by a factor e-0.87 ≈ 0.42. In other words, the spike threshold of the extended AIS is almost the same as for a point AIS with the same number of channels placed in the middle of the AIS (Figure 8A, green curve):Vs=constant-klog⁡G-klog⁡x1/2with x1/2 = L/2, the midpoint of the AIS, and the constant in this formula differs from the constant for the point AIS by about 0.9 mV (see Materials and methods). This analysis shows that extending the AIS lowers the spike threshold by two mechanisms: by increasing the number of Nav channels and by moving the initiation site away from the soma. As G and x1/2 are both proportional to L, each factor contributes a shift of -klog⁡L.
+An equivalent and more intuitive way to understand this result is to note that a threshold shift of 0.87 k is equivalent to a displacement of the AIS by a factor e-0.87 ≈ 0.42. In other words, the spike threshold of the extended AIS is almost the same as for a point AIS with the same number of channels placed in the middle of the AIS (Figure 8A, green curve):
 
-We can now consider the general case of an extended AIS of length L, placed at distance Δ from the soma. The exact same analytical strategy can be applied, the only difference being the boundary condition at the start of the AIS, which now expresses the fact that the current flowing toward the soma is proportional to the voltage gradient between soma and AIS according to Ohm’s law. This can be solved analytically (see Materials and methods), and we find that the spike threshold is almost the same as if the AIS were compressed into a single point at its center (x1/2=Δ+L/2), up to a corrective term kf(Δ/L). With k = 5 mV, this corrective term is at most 0.9 mV (see Materials and methods). Figure 8B shows that compressing or extending the AIS around its middle position x1/2 without changing the total Nav conductance has very little effect on the theoretical spike threshold. In the simulated biophysical model, the effect is more significant but remains small (Figure 8C). Therefore, we find that with an extended AIS, the spike threshold is approximately the same as that of the equivalent point AIS placed at the middle position x1/2, with the same total Nav conductance.
+$$
+V_{s}=constant-klog⁡G-klog⁡x_{1/2}
+$$
 
-In summary, we have found a simple theoretical relationship between spike threshold and AIS geometry, as well as Nav conductance density:Vs=constant-klog⁡g-klog⁡L-klog⁡x1/2
+with x1/2 = L/2, the midpoint of the AIS, and the constant in this formula differs from the constant for the point AIS by about 0.9 mV (see Materials and methods). This analysis shows that extending the AIS lowers the spike threshold by two mechanisms: by increasing the number of Nav channels and by moving the initiation site away from the soma. As G and x1/2 are both proportional to L, each factor contributes a shift of $-klog⁡L$.
+
+We can now consider the general case of an extended AIS of length L, placed at distance $Δ$ from the soma. The exact same analytical strategy can be applied, the only difference being the boundary condition at the start of the AIS, which now expresses the fact that the current flowing toward the soma is proportional to the voltage gradient between soma and AIS according to Ohm’s law. This can be solved analytically (see Materials and methods), and we find that the spike threshold is almost the same as if the AIS were compressed into a single point at its center ($x_{1/2}=Δ+L/2$), up to a corrective term $kf(Δ/L)$. With k = 5 mV, this corrective term is at most 0.9 mV (see Materials and methods). Figure 8B shows that compressing or extending the AIS around its middle position x1/2 without changing the total Nav conductance has very little effect on the theoretical spike threshold. In the simulated biophysical model, the effect is more significant but remains small (Figure 8C). Therefore, we find that with an extended AIS, the spike threshold is approximately the same as that of the equivalent point AIS placed at the middle position x1/2, with the same total Nav conductance.
+
+In summary, we have found a simple theoretical relationship between spike threshold and AIS geometry, as well as Nav conductance density:
+
+$$
+V_{s}=constant-klog⁡g-klog⁡L-klog⁡x_{1/2}
+$$
 
 The constant term captures the effects of Nav channel properties, intracellular resistivity and axon diameter (see Discussion). The remarkable finding is that the variation of spike threshold can be separated into three independent contributions. Figure 9 indicates that this theoretical finding is essentially valid in the biophysical model. The relation of spike threshold with any of these three factors (g, L, x1/2) is essentially the same logarithmic relation when the other two factors are changed, up to a constant shift (i.e. the relations appear as parallel lines). The observed slopes are close to the theoretical prediction k = 5 mV for the geometric factors x1/2 and L (6–7 mV), and a little larger for g (8–9 mV).
 
@@ -151,11 +183,11 @@ The constant term captures the effects of Nav channel properties, intracellular 
 
 **Figure 9.:** (A) Spike threshold vs. Nav conductance density g, for 4 combinations of AIS middle position x1/2 and length L (light blue, x1/2 = 20 µm, L = 20 µm, regression slope: 8.4 mV; light orange, x1/2 = 20 µm, L = 40 µm, regression slope: 8.3 mV; dark blue, x1/2 = 30 µm, L = 20 µm, regression slope: 8.2 mV; dark orange, x1/2 = 30 µm, L = 40 µm, regression slope: 8.7 mV). (B) Spike threshold vs x1/2 for 4 combinations of g and L (light blue, g = 3500 S/m2, L = 20 µm, regression slope: 7.1 mV; light orange, g = 3500 S/m2, L = 40 µm, regression slope: 6 mV; dark blue, g = 5000 S/m2, L = 20 µm, regression slope: 6.5 mV; dark orange, g = 5000 S/m2, L = 40 µm, regression slope: 6.4 mV). (C) Spike threshold vs. L for 4 combinations of g and x1/2 (light blue, g = 3500 S/m2, x1/2 = 20 µm, regression slope: 6.6 mV; light orange, g = 5000 S/m2, x1/2 = 20 µm, regression slope: 6 mV; dark blue, g = 3500 S/m2, x1/2 = 30 µm, regression slope: 6.1 mV; dark orange, g = 5000 S/m2, x1/2 = 30 µm, regression slope: 6.1 mV).
 
-We are now in better position to understand Figure 7. We noted that the spike threshold changes less than expected when the AIS is moved away. This is because it varies logarithmically with the middle position x1/2 and not with the start position Δ. For example, for an AIS of length L = 40 µm placed at position Δ = 10 µm, a displacement of 5 µm shifts the middle position from 25 to 30 µm. The theory then predicts that the threshold decreases by klog⁡(30/25)≈ 0.9 mV (assuming k = 5 mV), close the measurement in the biophysical model (≈ 1.2 mV). Thus, the theoretical effect of AIS start position on excitability is significant but moderate.
+We are now in better position to understand Figure 7. We noted that the spike threshold changes less than expected when the AIS is moved away. This is because it varies logarithmically with the middle position x1/2 and not with the start position $Δ$. For example, for an AIS of length L = 40 µm placed at position $Δ$ = 10 µm, a displacement of 5 µm shifts the middle position from 25 to 30 µm. The theory then predicts that the threshold decreases by $klog⁡(30/25)≈$ 0.9 mV (assuming k = 5 mV), close the measurement in the biophysical model (≈ 1.2 mV). Thus, the theoretical effect of AIS start position on excitability is significant but moderate.
 
-If we extend the AIS while keeping the same start position, then the spike threshold decreases because of the increase in length (as -klog⁡L) and because the AIS middle position moves away (as -klog⁡(Δ+L/2)). If the AIS is close to the soma, then these terms add up to -2klog⁡L. For example, an extension from 40 to 50 µm theoretically lowers the threshold by about 2.2 mV. Thus, for realistic changes in position and length, the theory predicts moderate changes in threshold, consistently with empirical observations in structural plasticity studies (see Discussion).
+If we extend the AIS while keeping the same start position, then the spike threshold decreases because of the increase in length (as $-klog⁡L$) and because the AIS middle position moves away (as $-klog⁡(Δ+L/2)$). If the AIS is close to the soma, then these terms add up to $-2klog⁡L$. For example, an extension from 40 to 50 µm theoretically lowers the threshold by about 2.2 mV. Thus, for realistic changes in position and length, the theory predicts moderate changes in threshold, consistently with empirical observations in structural plasticity studies (see Discussion).
 
-## Non-sodium axonal currents
+#### Non-sodium axonal currents
 
 So far, our theoretical analysis predicts that the neuron should be more excitable when the AIS moves away from the soma. Yet the opposite effect has been seen in some model simulations (Grubb and Burrone, 2010; Lezmy et al., 2017). Specifically, Lezmy et al. (2017) observed in a biophysical model that when a strong Kv7 conductance is placed along the AIS, moving the AIS away from the soma makes the neuron less excitable. This effect can be observed in our model if we add a strong hyperpolarizing conductance on the distal half of the AIS (Figure 10A). It contradicts our previous findings, which were based on an analysis of the Nav channels only. However, it appears that the voltage threshold measured at distal end of the AIS still follows the theoretical prediction, with spikes initiating at lower axonal voltage when the AIS is moved away from the soma (Figure 10B). We now analyze this phenomenon.
 
@@ -163,47 +195,271 @@ So far, our theoretical analysis predicts that the neuron should be more excitab
 
 **Figure 10.:** The conductance has reversal potential E = −90 mV and is uniformly expressed in the distal half of the 30 µm long AIS (G = 500 nS). (A) Somatic threshold vs. AIS position for different conductance values (an empirical estimate in layer 5 pyramidal cells is 144 S/m2, Battefeld et al., 2014). (B) Threshold at the distal end of the AIS for different conductance values (logarithmic regression slopes: 5.9 to 7.1 mV).
 
-Let us consider a point AIS placed at position Δ, in which a hyperpolarizing current I is injected (I<0). This current could model Kv7 channels or synapses onto the AIS (Wefelmeyer et al., 2015). By resistive coupling, the current will hyperpolarize the AIS relative to the soma by an amount ΔV=RaI=raΔI (ra is the axial resistance per unit length) (Figure 11A). As shown on Figure 11B, the voltage threshold at the AIS is not substantially affected by this current (see Materials and methods) – although a hyperpolarizing current may indirectly lower the threshold by deinactivating Nav channels (there is indeed a slight decrease with increasing current amplitude). It follows that the somatic threshold increases linearly with the current, by an amount equal to ΔV. In the absence of hyperpolarizing current, the somatic threshold is theoretically below the AIS threshold by an amount k (about 5 mV). The difference between somatic and AIS threshold is therefore predicted to be -k-ΔV. This prediction holds in the biophysical model, as shown in Figure 11C, which compares the difference between somatic and AIS threshold with the difference between somatic and AIS resting potentials, when intensity and AIS position are varied.
+Let us consider a point AIS placed at position $Δ$, in which a hyperpolarizing current I is injected (I<0). This current could model Kv7 channels or synapses onto the AIS (Wefelmeyer et al., 2015). By resistive coupling, the current will hyperpolarize the AIS relative to the soma by an amount $ΔV=R_{a}I=r_{a}ΔI$ (ra is the axial resistance per unit length) (Figure 11A). As shown on Figure 11B, the voltage threshold at the AIS is not substantially affected by this current (see Materials and methods) – although a hyperpolarizing current may indirectly lower the threshold by deinactivating Nav channels (there is indeed a slight decrease with increasing current amplitude). It follows that the somatic threshold increases linearly with the current, by an amount equal to $ΔV$. In the absence of hyperpolarizing current, the somatic threshold is theoretically below the AIS threshold by an amount k (about 5 mV). The difference between somatic and AIS threshold is therefore predicted to be $-k-ΔV$. This prediction holds in the biophysical model, as shown in Figure 11C, which compares the difference between somatic and AIS threshold with the difference between somatic and AIS resting potentials, when intensity and AIS position are varied.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig11-v2.jpg)
 
-**Figure 11.:** (A) Resting potential at the soma and AIS as a function of current intensity |I|, for an AIS placed 25 µm away from the soma. (B) Threshold at the AIS and soma as a function of |I|. (C) Difference between AIS and somatic threshold vs. difference between AIS and somatic resting potential. Each curve corresponds to a variable AIS position with a given current intensity (0 to -400 pA). (D) Somatic (solid) and AIS threshold (dashed) vs.  when currents are injected at the AIS. Δ
+**Figure 11.:** (A) Resting potential at the soma and AIS as a function of current intensity |I|, for an AIS placed 25 µm away from the soma. (B) Threshold at the AIS and soma as a function of |I|. (C) Difference between AIS and somatic threshold vs. difference between AIS and somatic resting potential. Each curve corresponds to a variable AIS position with a given current intensity (0 to -400 pA). (D) Somatic (solid) and AIS threshold (dashed) vs. $Δ$ when currents are injected at the AIS.
 
-Thus, when the AIS is moved away from the soma, the spike threshold at the AIS decreases as predicted in the previous section, but the somatic threshold differs from it by -k-ΔV, which can make it increase with distance (Figure 11D).
+Thus, when the AIS is moved away from the soma, the spike threshold at the AIS decreases as predicted in the previous section, but the somatic threshold differs from it by $-k-ΔV$, which can make it increase with distance (Figure 11D).
 
 Is this effect likely to be substantial in neurons? Empirically, Hu and Bean (2018) found that in layer 5 pyramidal cells, the AIS (more precisely, the axonal bleb) is about 3 mV hyperpolarized relative to the soma. This suggests that the contribution of this effect to threshold variations should be small. For example, suppose that a 45 µm AIS starting 10 µm away from the soma has distal Kv7 channels that hyperpolarize the AIS end by 3 mV. Then moving the AIS away from the soma by 10 µm (a large displacement) would move the AIS end from 55 to 65 µm, producing an increase in somatic threshold of about 0.5 mV by the effect discussed in this section (10/55 × 3 mV) – assuming the axonal resting potential is not homeostatically regulated. This increase in threshold would be more than compensated by the decrease due to the displacement of the Nav channels, of about 1.3 mV (using k = 5 mV).
 
-## Role of axon morphology
+### Role of axon morphology
 
 In the previous analysis, we have neglected the role of the distal axon. We now examine the impact of axon morphology on the results.
 
-## Axon diameter
+#### Axon diameter
 
 In the previous simulations, the biophysical models considered a 500 µm long unmyelinated axon of diameter 1 µm. Some neurons can have a much larger AIS: for example, many motoneurons shown in Figure 3 have an AIS diameter of about 3 µm. This is not expected to change the electrical situation because, as that figure shows, the size of the soma scales with the size of the AIS. In Figure 12A, we simulated a biophysical model with an axon diameter dAIS = 3 µm and a soma scaled according to the power law: dS = dAIS3/4. All other aspects of the neuron morphology are unchanged. The axonal space constant is increased by a factor √3, and therefore we scaled AIS position and length by the same factor. We can see that the spike threshold still varies with AIS position as expected (logarithmic regression slope: 6.8 mV in the original neuron vs. 7.1 mV in the large neuron).
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig12-v2.jpg)
 
-**Figure 12.:** Top: schematics of the different morphologies considered. (A) Somatic threshold vs. AIS position for a large neuron (light blue; diameter: 3 µm) compared to the original neuron (dark blue; diameter: 1 µm). AIS length is scaled up as the space constant, that is, by a factor √3. This scaling results in a theoretical threshold shift of about 2.7 mV (dashed). (B) Somatic threshold vs. AIS position for a longer axon (dashed orange) and for a myelinated axon (light blue), compared to the original neuron (dark blue). (C) Somatic threshold vs. AIS position for a branching axon with diameters such that , where p = 5/2 (light blue) or 3/2 (dashed orange). (dmainp=d1p+d2pD) Somatic threshold vs axial resistance Ra between soma and AIS middle position, in an axo-dendritic neuron (light blue). The axon-carrying dendrite starts with diameter 2 µm from the soma and splits after 7 µm into two branches of equal diameter (such that ).dmain3/2=d13/2+d23/2
+**Figure 12.:** Top: schematics of the different morphologies considered. (A) Somatic threshold vs. AIS position for a large neuron (light blue; diameter: 3 µm) compared to the original neuron (dark blue; diameter: 1 µm). AIS length is scaled up as the space constant, that is, by a factor √3. This scaling results in a theoretical threshold shift of about 2.7 mV (dashed). (B) Somatic threshold vs. AIS position for a longer axon (dashed orange) and for a myelinated axon (light blue), compared to the original neuron (dark blue). (C) Somatic threshold vs. AIS position for a branching axon with diameters such that $d_{main}^{p}=d_{1}^{p}+d_{2}^{p}$, where p = 5/2 (light blue) or 3/2 (dashed orange). (D) Somatic threshold vs axial resistance Ra between soma and AIS middle position, in an axo-dendritic neuron (light blue). The axon-carrying dendrite starts with diameter 2 µm from the soma and splits after 7 µm into two branches of equal diameter (such that $d_{main}^{3/2}=d_{1}^{3/2}+d_{2}^{3/2}$).
 
-In our theoretical analysis, we have assumed that the AIS diameter d is fixed, but it is possible to take diameter changes into account in our analysis. Diameter contributes in two ways. First, axial resistance scales inversely with the axon section area, that is, ra∝1/d2. This contributes an additional term 2klog⁡d to the threshold. Second, for a fixed surface conductance density, the total conductance scales with axon diameter, G∝d. This contributes an additional term -klog⁡d to the threshold. Therefore, the extended formula reads:Vs=constant-klog⁡x12-klog⁡L-klog⁡g+klog⁡dwhere we neglected the modulation by axonal currents. Thus, for a given AIS position, scaling AIS diameter by a factor 3 and AIS length by a factor √3 results in a positive shift of the threshold by (k/2)log⁡3≈ 2.7 mV. This expected shift is shown on Figure 12A (dashed).
+In our theoretical analysis, we have assumed that the AIS diameter d is fixed, but it is possible to take diameter changes into account in our analysis. Diameter contributes in two ways. First, axial resistance scales inversely with the axon section area, that is, $r_{a}∝1/d^{2}$. This contributes an additional term $2klog⁡d$ to the threshold. Second, for a fixed surface conductance density, the total conductance scales with axon diameter, $G∝d$. This contributes an additional term $-klog⁡d$ to the threshold. Therefore, the extended formula reads:
 
-## Axon length and myelin
+$$
+V_{s}=constant-klog⁡x_{\frac{1}{2}}-klog⁡L-klog⁡g+klog⁡d
+$$
 
-In our derivation of the spike threshold, we have ignored the distal axon, that is, we have considered that the resistance towards the distal axon is infinite (very large compared to the resistance towards the soma). More accurately, this resistance is large but finite and depends on the properties of the distal axon. If the 500 µm axon is extended to a 1000 µm axon, then the distal axonal resistance Rdistal is barely affected and therefore the spike threshold does not change (Figure 12B). However, if the axon is myelinated, so that the specific membrane resistance is increased by a factor 4 (and capacitance decreased by the same factor), then the spike threshold is slightly lowered (Figure 12B, dashed).
+where we neglected the modulation by axonal currents. Thus, for a given AIS position, scaling AIS diameter by a factor 3 and AIS length by a factor √3 results in a positive shift of the threshold by $(k/2)log⁡3≈$ 2.7 mV. This expected shift is shown on Figure 12A (dashed).
 
-To understand this, we can observe that the electrical impact of the distal axon is formally equivalent to a conductance 1/Rdistal applied at the AIS end, with reversal potential equal to the resting potential (neglecting time-dependent effects). Therefore, we can apply the results of the previous section (Non-sodium axonal currents). The effect of a finite distal axonal resistance is thus to increase the somatic spike threshold by about:ΔV=RaRdistalVa-ELwhere Va is the threshold at the AIS and Ra is measured at the AIS end. As Rdistal=raλ, we have Rdistal∝rm where rm is the specific membrane resistance. Therefore, if the axon is myelinated, then this threshold shift should be halved, which implies that the spike threshold should be lowered. We can make a rough estimate in the case shown on Figure 12B. With the model parameters (Table 1), we obtain Rdistal≈780 MΩ, and Ra≈95 MΩ at the end of a 50 µm long AIS placed at position x1/2 = 25 µm. With Va≈-55 mV, we obtain ΔV≈2.4 mV for an infinite unmyelinated axon, With myelination, this shift is halved: ΔV≈1.2 mV, and therefore myelination should lower the threshold by about 1.2 mV (this is an imprecise estimate since the axon is not infinite). In the simulation (Figure 12B), this shift was 1.3 – 1.9 mV. In summary, the effect of myelination on spike threshold should be limited.
+#### Axon length and myelin
 
-## Axon branching
+In our derivation of the spike threshold, we have ignored the distal axon, that is, we have considered that the resistance towards the distal axon is infinite (very large compared to the resistance towards the soma). More accurately, this resistance is large but finite and depends on the properties of the distal axon. If the 500 µm axon is extended to a 1000 µm axon, then the distal axonal resistance $R_{distal}$ is barely affected and therefore the spike threshold does not change (Figure 12B). However, if the axon is myelinated, so that the specific membrane resistance is increased by a factor 4 (and capacitance decreased by the same factor), then the spike threshold is slightly lowered (Figure 12B, dashed).
 
-The axon may also display complex branching patterns (Wang et al., 2019). The impact of branching on passive electrical properties is well understood from Rall’s theory (Rall, 2011). In particular, Rall has shown that an axonal tree is electrically equivalent to an unbranched axon if diameters follow the rule dparent3/2=ddaughter 13/2+ddaughter 23/2. Figure 12C (dashed) shows that indeed in this case the spike threshold is unchanged. Empirically, this relation is not always satisfied: Chklovskii and Stepanyants (2003) report an average exponent of about 5/2, with large variability. In this case, the spike threshold is slightly lowered (Figure 12C, light blue). This shift can be estimated as previously, by calculating Rdistal with standard cable theory.
+To understand this, we can observe that the electrical impact of the distal axon is formally equivalent to a conductance $1/R_{distal}$ applied at the AIS end, with reversal potential equal to the resting potential (neglecting time-dependent effects). Therefore, we can apply the results of the previous section (Non-sodium axonal currents). The effect of a finite distal axonal resistance is thus to increase the somatic spike threshold by about:
 
-Branching can also occur before the AIS, when the AIS sits on an axon-bearing dendrite (Kole and Brette, 2018). In this case, since the diameter is not uniform, one must consider not metric distances but axial resistances: x12 is then replaced by Rax12 in the equation, where the latter term is the axial resistance between soma and the AIS midpoint. Figure 12D shows the spike threshold as a function of axial resistance between the soma and AIS, for a neuron with a dendrite of 2 µm diameter that splits into two equal branches (according to Rall’s law), one of which carrying the AIS. The spike threshold is almost unchanged compared to the original unbranched axon, for a given axial resistance.
+$$
+ΔV=\frac{R_{a}}{R_{distal}}V_{a}-E_{L}
+$$
+
+where $V_{a}$ is the threshold at the AIS and Ra is measured at the AIS end. As $R_{distal}=r_{a}\lambda$, we have $R_{distal}∝\sqrt{r_{m}}$ where rm is the specific membrane resistance. Therefore, if the axon is myelinated, then this threshold shift should be halved, which implies that the spike threshold should be lowered. We can make a rough estimate in the case shown on Figure 12B. With the model parameters (Table 1), we obtain $R_{distal}≈780MΩ$, and $R_{a}≈95MΩ$ at the end of a 50 µm long AIS placed at position x1/2 = 25 µm. With $V_{a}≈-55$ mV, we obtain $ΔV≈2.4$ mV for an infinite unmyelinated axon, With myelination, this shift is halved: $ΔV≈1.2$ mV, and therefore myelination should lower the threshold by about 1.2 mV (this is an imprecise estimate since the axon is not infinite). In the simulation (Figure 12B), this shift was 1.3 – 1.9 mV. In summary, the effect of myelination on spike threshold should be limited.
+
+**Table 1.**
+ Parameters values of the biophysical model.Time constants corrected for temperature are indicated in brackets.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="4">Passive properties</td>
+      <td>Rm</td>
+      <td>15 000 Ω.cm2</td>
+    </tr>
+    <tr>
+      <td>EL</td>
+      <td>−75 mV</td>
+    </tr>
+    <tr>
+      <td>Ri</td>
+      <td>100 Ω.cm</td>
+    </tr>
+    <tr>
+      <td>Cm</td>
+      <td>0.9 µF/cm2</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Nav channels</td>
+      <td>gNa, soma</td>
+      <td>250 S/m2</td>
+    </tr>
+    <tr>
+      <td>gNa, dendrite and axon (non AIS)</td>
+      <td>50 S/m2</td>
+    </tr>
+    <tr>
+      <td>gNa, AIS</td>
+      <td>variable (default: 3500 S/m2)</td>
+    </tr>
+    <tr>
+      <td>ENa</td>
+      <td>70 mV</td>
+    </tr>
+    <tr>
+      <td>Vm1/2, soma</td>
+      <td>−30 mV</td>
+    </tr>
+    <tr>
+      <td>Vh1/2, soma</td>
+      <td>−60 mV</td>
+    </tr>
+    <tr>
+      <td>Vm1/2, AIS</td>
+      <td>−35 mV</td>
+    </tr>
+    <tr>
+      <td>Vh1/2, AIS</td>
+      <td>−65 mV</td>
+    </tr>
+    <tr>
+      <td>km</td>
+      <td>5 mV</td>
+    </tr>
+    <tr>
+      <td>kh</td>
+      <td>5 mV</td>
+    </tr>
+    <tr>
+      <td>τm*</td>
+      <td>150 µs (corrected: 54 µs)</td>
+    </tr>
+    <tr>
+      <td>τh*</td>
+      <td>5 ms (corrected: 1.8 ms)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Kv1 channels</td>
+      <td>gK, soma</td>
+      <td>250 S/m2</td>
+    </tr>
+    <tr>
+      <td>gK, dendrite and axon (non AIS)</td>
+      <td>50 S/m2</td>
+    </tr>
+    <tr>
+      <td>gK, AIS</td>
+      <td>1500 S/m2</td>
+    </tr>
+    <tr>
+      <td>EK</td>
+      <td>−90 mV</td>
+    </tr>
+    <tr>
+      <td>Vn1/2</td>
+      <td>−70 mV</td>
+    </tr>
+    <tr>
+      <td>kn</td>
+      <td>20 mV</td>
+    </tr>
+    <tr>
+      <td>τn*</td>
+      <td>1 ms</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Kv7 channels</td>
+      <td>gKv7</td>
+      <td>variable</td>
+    </tr>
+    <tr>
+      <td>EK</td>
+      <td>−90 mV</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Axon branching
+
+The axon may also display complex branching patterns (Wang et al., 2019). The impact of branching on passive electrical properties is well understood from Rall’s theory (Rall, 2011). In particular, Rall has shown that an axonal tree is electrically equivalent to an unbranched axon if diameters follow the rule $d_{parent}^{3/2}=d_{daughter 1}^{3/2}+d_{daughter 2}^{3/2}$. Figure 12C (dashed) shows that indeed in this case the spike threshold is unchanged. Empirically, this relation is not always satisfied: Chklovskii and Stepanyants (2003) report an average exponent of about 5/2, with large variability. In this case, the spike threshold is slightly lowered (Figure 12C, light blue). This shift can be estimated as previously, by calculating $R_{distal}$ with standard cable theory.
+
+Branching can also occur before the AIS, when the AIS sits on an axon-bearing dendrite (Kole and Brette, 2018). In this case, since the diameter is not uniform, one must consider not metric distances but axial resistances: $x_{\frac{1}{2}}$ is then replaced by $R_{a}x_{\frac{1}{2}}$ in the equation, where the latter term is the axial resistance between soma and the AIS midpoint. Figure 12D shows the spike threshold as a function of axial resistance between the soma and AIS, for a neuron with a dendrite of 2 µm diameter that splits into two equal branches (according to Rall’s law), one of which carrying the AIS. The spike threshold is almost unchanged compared to the original unbranched axon, for a given axial resistance.
 
 Overall, axon morphology appears to have a small impact on excitability.
 
-## Relation with experimental observations
+### Relation with experimental observations
 
 We now discuss previous experimental observations in the light of this theoretical work. Not many studies have simultaneously reported changes in voltage threshold (rheobase is often reported instead) and in AIS geometry (position and length). First of all, it is important to stress that those observations cannot be used to directly validate or invalidate the theory, since many other relevant cell properties might also vary between groups (Kole and Brette, 2018), such as axon diameter; density, phosphorylation and inactivation state of Nav channels; expression level of Kv channels. Rather, we will provide theoretical changes in voltage threshold expected from observed AIS geometry changes, all else being equal (see Table 2). We will then discuss the discrepancy with observed threshold changes, in particular in terms of the unobserved factors.
+
+**Table 2.**
+ Changes in AIS geometry and voltage threshold (ΔVs) in structural plasticity and development studies, with the theoretical expectation, assuming constant functional Nav channel density and everything else unchanged (e.g. axon diameter, channel properties).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron type</th>
+      <th>Initial AIS L (μm)</th>
+      <th>Initial AIS x1/2 (μm)</th>
+      <th>Final AIS L (μm)</th>
+      <th>Final AIS x1/2 (μm)</th>
+      <th>ΔVs (mV)</th>
+      <th>ΔVs theory (mV)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">Plasticity</td>
+    </tr>
+    <tr>
+      <td>Chicks nucleus magnocelluaris</td>
+      <td>9.6</td>
+      <td>13.3</td>
+      <td>19.5</td>
+      <td>18.4</td>
+      <td>-4</td>
+      <td>−5.2</td>
+      <td>Kuba et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Hippocampal cultures (only excitatory)</td>
+      <td>34.8</td>
+      <td>20.9</td>
+      <td>33.6</td>
+      <td>27.2</td>
+      <td>4.3</td>
+      <td>−1.1</td>
+      <td>Grubb and Burrone (2010)</td>
+    </tr>
+    <tr>
+      <td>Hippocampal dentate granule cells in cultures</td>
+      <td>19.2</td>
+      <td>10.4</td>
+      <td>15.7</td>
+      <td>7.85</td>
+      <td>−1.1</td>
+      <td>2.4</td>
+      <td>Evans et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Olfactory bulb dopaminergic neurons in cultures</td>
+      <td>11.7</td>
+      <td>21.1</td>
+      <td>14.2</td>
+      <td>15.5</td>
+      <td>−0.4</td>
+      <td>0.6</td>
+      <td>Chand et al., 2015</td>
+    </tr>
+    <tr>
+      <td colspan="8">Development*</td>
+    </tr>
+    <tr>
+      <td>Chicks nucleus laminaris, low</td>
+      <td>30.3</td>
+      <td>24.8</td>
+      <td>23.9</td>
+      <td>19.9</td>
+      <td>−12.7</td>
+      <td>2.3</td>
+      <td>Kuba et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Chicks nucleus laminaris, middle</td>
+      <td>28.8</td>
+      <td>24.8</td>
+      <td>14.4</td>
+      <td>28.3</td>
+      <td>/</td>
+      <td>2.8</td>
+      <td>Kuba et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Chicks nucleus laminaris, high</td>
+      <td>26.5</td>
+      <td>26.6</td>
+      <td>9.8</td>
+      <td>50.1</td>
+      <td>−14.3</td>
+      <td>1.8</td>
+      <td>Kuba et al., 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Initial = E15, final = P3-7._
 
 We start with the single study of structural AIS plasticity in adult neurons that also reports voltage threshold. In neurons of chick nucleus magnocellularis, the AIS elongates by about 10 µm after 7 days of auditory deprivation, with no significant change in AIS start position (Kuba et al., 2010). It was reported that immunofluorescence intensity did not change, which suggests that at least the structural density of Nav channels did not change. All else being equal, and in the absence of strong AIS hyperpolarization (e.g. Kv7), we then expect that the spike threshold shifts by −5.2 mV (using k = 5 mV; see Table 2). The reported change was −4 mV (reported with p<0.05), a fairly good match.
 
@@ -219,156 +475,427 @@ In summary, all studies that we have examined in cultured neurons and in develop
 
 ## Discussion
 
-## Summary
+### Summary
 
-A number of recent studies have documented changes in AIS geometry across development (Galiano et al., 2012; Gutzmann et al., 2014; Kuba et al., 2014), with activity (Grubb et al., 2011; Jamann et al., 2018), or associated with neurological pathologies (Buffington and Rasband, 2011). The functional effect of these changes is not addressed by the classical theory of excitability, which has focused on isopotential models of spike initiation (Koch, 1999; Tuckwell, 1988a). Spatial aspects of neural biophysics have been studied mainly for dendrites, notably by Rall (2011). Here, we have derived an expression for the somatic threshold as a function of geometrical parameters and Nav conductance density, which is well corroborated by simulations of a biophysical model:Vs=constant-klog⁡x1/2-klog⁡L-klog⁡g-rax.Iwhere k is the activation slope of the Nav channels, x1/2 is the middle position of the AIS, L is the AIS length, g is Nav conductance density in the AIS, ra is the axial resistance per unit length, and I is a non-sodium current entering the AIS at position x. Excitability changes caused specifically by changes in the AIS are captured by the somatic voltage threshold, rather than rheobase (which depends on other factors) or axonal threshold (which can remain constant when excitability changes due to AIS currents). According to this theoretical analysis, changes in AIS geometry reported in the literature are expected to produce relatively small changes in threshold (a few mV).
+A number of recent studies have documented changes in AIS geometry across development (Galiano et al., 2012; Gutzmann et al., 2014; Kuba et al., 2014), with activity (Grubb et al., 2011; Jamann et al., 2018), or associated with neurological pathologies (Buffington and Rasband, 2011). The functional effect of these changes is not addressed by the classical theory of excitability, which has focused on isopotential models of spike initiation (Koch, 1999; Tuckwell, 1988a). Spatial aspects of neural biophysics have been studied mainly for dendrites, notably by Rall (2011). Here, we have derived an expression for the somatic threshold as a function of geometrical parameters and Nav conductance density, which is well corroborated by simulations of a biophysical model:
+
+$$
+V_{s}=constant-klog⁡x_{1/2}-klog⁡L-klog⁡g-r_{a}x.I
+$$
+
+where k is the activation slope of the Nav channels, $x_{1/2}$ is the middle position of the AIS, L is the AIS length, g is Nav conductance density in the AIS, $r_{a}$ is the axial resistance per unit length, and I is a non-sodium current entering the AIS at position x. Excitability changes caused specifically by changes in the AIS are captured by the somatic voltage threshold, rather than rheobase (which depends on other factors) or axonal threshold (which can remain constant when excitability changes due to AIS currents). According to this theoretical analysis, changes in AIS geometry reported in the literature are expected to produce relatively small changes in threshold (a few mV).
 
 The theory explains seemingly contradictory findings from previous simulation studies. Previous theoretical work (Brette, 2013) and model simulations (Baranauskas et al., 2013; ; Raghuram et al., 2019; Telenczuk et al., 2017) claimed that the threshold should decrease when the AIS moves away from the soma, because of increased electrical isolation. This claim is valid under two main conditions: 1) that the neuron operates in the resistive coupling regime, meaning that the proximal axon is thin compared to the somatodendritic compartment, 2) that there are no strong subthreshold currents at the AIS. Thus, Gulledge and Bravo (2016) found that the neuron can be more excitable when the AIS is away from the soma when the neuron is small (in that case, the number of dendrites was varied). If axon diameter remains large, then the neuron may indeed not be in the resistive coupling regime any more, in which case there is a positive (but weak) relation between AIS distance and excitability. However, we have shown that, both within and across cell types, smaller neurons tend to also have a thinner AIS. This suggests that the physiological regime is generally the resistive coupling regime (with the qualification that the data we analyzed were not exhaustive, and did not include dendritic size). Lezmy et al. (2017) have found in a pyramidal cell model that the neuron could also be more excitable when the AIS moves distally, but only when Kv7 channels were strongly expressed at the AIS. Indeed, in this case, Kv7 channels produce a hyperpolarizing current, which raises the somatic threshold by an amount proportional to AIS distance (the last term of the formula).
 
-## Limitations
+### Limitations
 
-To obtain this simple theoretical result, we have made a number of more or less drastic approximations detailed in the Results. Despite these approximations, the formula captures the main aspects of the phenomenon seen in a biophysical model, but there are also some discrepancies. In particular, while the relation between threshold and geometrical factors (x12 and L) is well predicted quantitatively, the sensitivity of threshold to Nav channel conductance density tends to be underestimated (but still with a correct order of magnitude).
+To obtain this simple theoretical result, we have made a number of more or less drastic approximations detailed in the Results. Despite these approximations, the formula captures the main aspects of the phenomenon seen in a biophysical model, but there are also some discrepancies. In particular, while the relation between threshold and geometrical factors ($x_{\frac{1}{2}}$ and L) is well predicted quantitatively, the sensitivity of threshold to Nav channel conductance density tends to be underestimated (but still with a correct order of magnitude).
 
 There are also assumptions that we have made both in the theory and in the biophysical model. A few important assumptions are: spikes are initiated in the initial segment and produce a ‘kink’ at somatic spike onset; the somatic membrane potential is constant at the time scale of axonal spike initiation; Na+ and K+ currents are temporally separated at spike initiation. These are based on empirical findings (Brette, 2015; Hallermann et al., 2012), but they could differ in particular models, in which case this theory may not apply.
 
-In our calculations, we have also assumed that the AIS is cylindrical, mainly because analytical calculations are not possible in the general case. In reality, the axon tapers near the soma. The AIS can also sit on an axon-bearing dendrite (Kole and Brette, 2018). As explained in the Results (Role of axon morphology), one must then consider not metric distances but axial resistances. If the tapering part overlaps with the AIS, then it is not possible to obtain analytical equations anymore; the formula should then be less quantitatively correct. Perhaps the most important point to keep in mind when examining the effect of AIS displacements over a non-uniform axon is that the total Nav conductance varies if Nav channel density is fixed. To avoid this confounding factor, the formula with total conductance G should be used: Vsoma*~-klog⁡x1/2-klog⁡G.
+In our calculations, we have also assumed that the AIS is cylindrical, mainly because analytical calculations are not possible in the general case. In reality, the axon tapers near the soma. The AIS can also sit on an axon-bearing dendrite (Kole and Brette, 2018). As explained in the Results (Role of axon morphology), one must then consider not metric distances but axial resistances. If the tapering part overlaps with the AIS, then it is not possible to obtain analytical equations anymore; the formula should then be less quantitatively correct. Perhaps the most important point to keep in mind when examining the effect of AIS displacements over a non-uniform axon is that the total Nav conductance varies if Nav channel density is fixed. To avoid this confounding factor, the formula with total conductance G should be used: $V_{soma}^{*}~-klog⁡x_{1/2}-klog⁡G$.
 
 The theory also assumes that the AIS is electrically close to the soma (i.e. relative to the axonal space length). In some neurons, such as dopaminergic neurons (González-Cabrera et al., 2017; Meza et al., 2018; Moubarak et al., 2019), this assumption may not hold and specific theoretical developments might be necessary.
 
 Finally, we have essentially ignored changes in Nav inactivation state. However, these could potentially make an important contribution, in particular for the effect of axonal currents on threshold. As we have seen, a hyperpolarizing current raises the somatic threshold by resistive coupling, by an amount equal to the relative hyperpolarization induced at the AIS. However, this could also deinactivate Nav channels, which would lower the threshold. This effect would tend to cancel the effect due to resistive coupling, and the magnitude can be similar (Platkiewicz and Brette, 2011).
 
-## Changes in axon diameter
+### Changes in axon diameter
 
-Axon diameter can change (slightly) with activity (Chéreau et al., 2017), although this has not been demonstrated at the AIS. It may also change on longer time scales, particularly during development (Leterrier et al., 2017). As explained in the Results, it is possible to take diameter changes into account in our analysis, resulting in the following extended formula:Vsoma*~-klog⁡x12-klog⁡L-klog⁡g+klog⁡dwhere we neglected the modulation by axonal currents.
+Axon diameter can change (slightly) with activity (Chéreau et al., 2017), although this has not been demonstrated at the AIS. It may also change on longer time scales, particularly during development (Leterrier et al., 2017). As explained in the Results, it is possible to take diameter changes into account in our analysis, resulting in the following extended formula:
 
-As we have seen, AIS diameter tends to be larger in larger neurons. The above formula indicates that the spike threshold can be maintained constant across cell types of very different sizes if position and length are constant in units of the axonal space length, that is, if they scale as √d. This suggests that smaller neurons should also have a smaller AIS in order to regulate the spike threshold. For example, the AIS measures just 5-10 µm in cerebellar granule cells (Osorio et al., 2010) and about 45 µm in layer 5 pyramidal cortical cells (Hamada et al., 2016). Their respective diameters are 0.1-0.2 µm and 1-1.5 µm. In chick nucleus laminaris, low-frequency neurons have a large soma and a long AIS, while high-frequency neurons have a small soma and short AIS (Kuba et al., 2006; Kuba et al., 2005).
+$$
+V_{soma}^{*}~-klog⁡x_{\frac{1}{2}}-klog⁡L-klog⁡g+klog⁡d
+$$
+
+where we neglected the modulation by axonal currents.
+
+As we have seen, AIS diameter tends to be larger in larger neurons. The above formula indicates that the spike threshold can be maintained constant across cell types of very different sizes if position and length are constant in units of the axonal space length, that is, if they scale as $\sqrtd$. This suggests that smaller neurons should also have a smaller AIS in order to regulate the spike threshold. For example, the AIS measures just 5-10 µm in cerebellar granule cells (Osorio et al., 2010) and about 45 µm in layer 5 pyramidal cortical cells (Hamada et al., 2016). Their respective diameters are 0.1-0.2 µm and 1-1.5 µm. In chick nucleus laminaris, low-frequency neurons have a large soma and a long AIS, while high-frequency neurons have a small soma and short AIS (Kuba et al., 2006; Kuba et al., 2005).
 
 Axon diameter can also vary during development and with activity, by the regulation of neurofilaments (Costa et al., 2018; Laser-Azogui et al., 2015; Marszalek et al., 1996). According to the formula, the specific effect of radial growth of the AIS is to raise the threshold (assuming constant surface density of Nav channels). Naturally, it is more difficult to measure changes in AIS diameter than in length, but this potential source of variation must be kept in mind when interpreting changes in AIS geometry.
 
-## Axo-axonic synapses
+### Axo-axonic synapses
 
-We have seen that axonal currents can modulate the threshold at the soma. Although we have only discussed Kv7 channels expressed in the AIS, the theory applies also to synaptic currents, in particular those produced at the axo-axonic synapses made by Chandelier cells onto the AIS of pyramidal cortical neurons (Fairén and Valverde, 1980; Somogyi, 1977). In this case, the current I in the formula must be understood at threshold, that is: I=gs.(Es-Vthreshold), where gs is the synaptic conductance and Es is the reversal potential. Thus, even if the synaptic currents are depolarizing at rest (values of Es = -60 mV have been reported; Woodruff et al., 2009), the effect on excitability is still inhibitory, as long as the reversal potential is below axonal threshold. An additional inhibitory effect can be produced if the conductance is strong (specifically, relative to the axial conductance 1/Ra, see Materials and methods).
+We have seen that axonal currents can modulate the threshold at the soma. Although we have only discussed Kv7 channels expressed in the AIS, the theory applies also to synaptic currents, in particular those produced at the axo-axonic synapses made by Chandelier cells onto the AIS of pyramidal cortical neurons (Fairén and Valverde, 1980; Somogyi, 1977). In this case, the current I in the formula must be understood at threshold, that is: $I=g_{s}.(E_{s}-V_{threshold})$, where gs is the synaptic conductance and Es is the reversal potential. Thus, even if the synaptic currents are depolarizing at rest (values of Es = -60 mV have been reported; Woodruff et al., 2009), the effect on excitability is still inhibitory, as long as the reversal potential is below axonal threshold. An additional inhibitory effect can be produced if the conductance is strong (specifically, relative to the axial conductance 1/Ra, see Materials and methods).
 
 In relation to geometry, the effect of an axo-axonic synapse is stronger if the synapse is more distal, up to the AIS position. Beyond the AIS end position, the effect of the synapse does not increase anymore, because it is the voltage gradient between the soma and AIS that modulates excitability. In hippocampal neurons, Wefelmeyer et al. (2015) observed that chronic depolarization made the AIS move distally, but axo-axonic synapses did not move. As a result, a larger proportion of synapses are between the soma and AIS end, where they can modulate excitability. Thus, theory predicts that the total inhibitory effect is stronger (consistent with that study’s conclusions).
 
-## Other aspects of electrical function
+### Other aspects of electrical function
 
-In this study, we only examined excitability, that is, the ability to trigger an action potential. However, there are others important aspects of electrical function. In many neurons, the action potential is transmitted and regenerated by somatic Nav channels with higher activation voltage. This could be important for synaptic plasticity (propagating the action potential to the dendrites), but also for intrinsic plasticity (since the nucleus is in the soma). For this transmission to be successful, the current transmitted to the soma at spike initiation must be such as to produce the required depolarization. We have shown theoretically that this current depends primarily on the AIS start position Δ (Hamada et al., 2016); as a first (rough) approximation, it is inversely proportional to AIS position (Ohm’s law). Thus, AIS position can modulate the transmitted current very strongly, and indeed this strong modulation appears necessary given the three orders of magnitude of variability in input capacitance of various cell types (3500 pF in some motoneurons Cormery et al., 2005, about 3 pF in cerebellar granule cells Cathala et al., 2003).
+In this study, we only examined excitability, that is, the ability to trigger an action potential. However, there are others important aspects of electrical function. In many neurons, the action potential is transmitted and regenerated by somatic Nav channels with higher activation voltage. This could be important for synaptic plasticity (propagating the action potential to the dendrites), but also for intrinsic plasticity (since the nucleus is in the soma). For this transmission to be successful, the current transmitted to the soma at spike initiation must be such as to produce the required depolarization. We have shown theoretically that this current depends primarily on the AIS start position $Δ$ (Hamada et al., 2016); as a first (rough) approximation, it is inversely proportional to AIS position (Ohm’s law). Thus, AIS position can modulate the transmitted current very strongly, and indeed this strong modulation appears necessary given the three orders of magnitude of variability in input capacitance of various cell types (3500 pF in some motoneurons Cormery et al., 2005, about 3 pF in cerebellar granule cells Cathala et al., 2003).
 
 In contrast, observed variations in voltage threshold appear rather modest, especially compared to variations in excitability due to changes in input resistance (again 3 orders of magnitude across cell types). An analysis of a large database of electrophysiological recordings reports a standard deviation in voltage threshold of just 6 mV (Tripathy et al., 2015), and this includes considerable variations in methodological conditions (liquid junction potential, measurement method, solutions, etc). This is perhaps to be expected, given that the functional voltage range for electrical function is constrained by the properties of ionic channels (it cannot vary by orders of magnitude). Thus, it is conceivable that AIS position and length are adjusted so that voltage threshold remains stable and transmitted current is adapted to the cell’s morphology. This is of course speculative, because other aspects of electrical function could also be considered. For example, action potential speed at the AIS depends on local conductance, which is composed of the axial conductance (therefore AIS position) and of the total Nav conductance (therefore AIS length). Thus, structural plasticity of the AIS might be related to various aspects of electrical function, beyond excitability in the classical sense.
 
 ## Materials and methods
 
-## Cable theory
+### Cable theory
 
-## Sealed end
+#### Sealed end
 
-We consider a cylindrical semi-infinite axon, with a current injected at distance x from the sealed end (no current passing through). The input resistance decomposes into R(x)-1=Rproximal-1(x)+Rdistal-1. Rdistal is the resistance of a semi-infinite axon: Rdistal=raλ. Rproximalx is the resistance of a short segment of axon of size x, with a sealed end. This resistance is (Tuckwell, 1988b):Rproximalx=raλtanh⁡(x/λ)
+We consider a cylindrical semi-infinite axon, with a current injected at distance x from the sealed end (no current passing through). The input resistance decomposes into $R(x)^{-1}=R_{proximal}^{-1}(x)+R_{distal}^{-1}$. $R_{distal}$ is the resistance of a semi-infinite axon: $R_{distal}=r_{a}\lambda$. $R_{proximal}x$ is the resistance of a short segment of axon of size x, with a sealed end. This resistance is (Tuckwell, 1988b):
 
-The ratio Rproximalx/Rdistal is therefore tanh⁡(x/λ)-1. Thus, for a short piece of axon (x≪λ), this ratio is λ/x, a large number. More precisely:Rx=raλ1+tanh⁡xλ-1and a Taylor expansion gives R(x)≈raλ-x.
+$$
+R_{proximal}x=\frac{r_{a}\lambda}{tanh⁡(x/\lambda)}
+$$
 
-## Killed end
+The ratio $R_{proximal}^{}x/R_{distal}^{}$ is therefore $tanh⁡(x/\lambda)^{-1}$. Thus, for a short piece of axon ($x≪\lambda$), this ratio is $\lambda/x$, a large number. More precisely:
 
-We consider a cylindrical semi-infinite axon with a killed end (open membrane) (Tuckwell, 1988b). In this case, the resistance of the proximal segment isRproximalx=raλtanh⁡(x/λ)
+$$
+Rx=r_{a}\lambda1+tanh⁡\frac{x}{\lambda}^{-1}
+$$
 
-When x≪λ, we have Rproximalx≈rax. The distal axon has resistance Rdistal=raλ. Therefore, Rproximalx/Rdistal≈x/λ. A Taylor expansion gives R(x)≈rax1-x/λ. Thus, the input resistance is approximately proportional to distance.
+and a Taylor expansion gives $R(x)≈r_{a}\lambda-x$.
 
-## Large soma
+#### Killed end
 
-With a large (but not infinitely large) soma, we simply add the resistance of the soma to the proximal resistance, which yields:R(x)-1≈rax+Rsoma-1+raλ-1
+We consider a cylindrical semi-infinite axon with a killed end (open membrane) (Tuckwell, 1988b). In this case, the resistance of the proximal segment is
 
-## Passive neuron models
+$$
+R_{proximal}x=r_{a}\lambdatanh⁡(x/\lambda)
+$$
 
-Passive models presented in Figures 1 and 2 consisted of a spherical soma (small: 1 µm; large: 100 µm) and a long and thin cylindrical axon (diameter: 1 µm; length: 2 mm). Specific membrane capacitance is Cm = 0.9 µF/cm2; specific membrane resistance is Rm = 15 000 Ω.cm2; leak reversal potential is EL = -75 mV; intracellular resistivity is Ri = 100 Ω.cm. With these values, the characteristic space length is about λ≈600 µm. Models were simulated with Brian 2 (Stimberg et al., 2019) with 100 µs time step and 2 µm spatial resolution.
+When $x≪\lambda$, we have $R_{proximal}^{}x≈r_{a}x$. The distal axon has resistance $R_{distal}=r_{a}\lambda$. Therefore, $R_{proximal}^{}x/R_{distal}^{}≈x/\lambda$. A Taylor expansion gives $R(x)≈r_{a}x1-x/\lambda$. Thus, the input resistance is approximately proportional to distance.
 
-## Analysis of patch clamp recordings
+#### Large soma
+
+With a large (but not infinitely large) soma, we simply add the resistance of the soma to the proximal resistance, which yields:
+
+$$
+R(x)^{-1}≈r_{a}x+R_{soma}^{-1}+r_{a}\lambda^{-1}
+$$
+
+### Passive neuron models
+
+Passive models presented in Figures 1 and 2 consisted of a spherical soma (small: 1 µm; large: 100 µm) and a long and thin cylindrical axon (diameter: 1 µm; length: 2 mm). Specific membrane capacitance is Cm = 0.9 µF/cm2; specific membrane resistance is Rm = 15 000 $Ω$.cm2; leak reversal potential is EL = -75 mV; intracellular resistivity is Ri = 100 $Ω$.cm. With these values, the characteristic space length is about $\lambda≈600$ µm. Models were simulated with Brian 2 (Stimberg et al., 2019) with 100 µs time step and 2 µm spatial resolution.
+
+### Analysis of patch clamp recordings
 
 We analyzed simultaneous patch clamp recordings of soma and axonal blebs in cortical layer 5 pyramidal neurons provided by Hu and Bean (2018); Figure 2D-F. We analyzed all recordings where the axon bleb is less than 200 µm away from the soma (a distance substantially smaller than the characteristic length) and is stimulated by a current pulse (n = 15), and selected the smallest current pulse in each recording. To calculate the local and somatic depolarizations at t = 300 µs, we calculate the median potential between 200 and 400 µs and subtract the baseline, defined as the median potential over the 5 ms before the pulse. The resistances are then obtained by dividing by the current amplitude.
 
-## Analysis of neuroanatomical data
+### Analysis of neuroanatomical data
 
 In Figure 3, we extracted measurements of AIS diameter from electron microscopy studies, taken at the end of the AIS. Given the optical diffraction limit, it is necessary to consider electron rather than optical microscopy measurements, at least for thin axons. Soma diameter was measured with optical or electron microscopy. Four data points correspond to measurements of mean diameters, listed in Table 3. Soma and AIS diameters were taken from different studies (except cat olivary cells), but with matched cell type and species.
 
+**Table 3.**
+ Mean diameter of soma and AIS in 4 cell types, extracted from electron microscopy studies.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="2">Adult cat olivary cells</td>
+      <td>Soma</td>
+      <td>21.7 µm ± 3.7 µm</td>
+      <td>(de Zeeuw et al., 1990)</td>
+    </tr>
+    <tr>
+      <td>AIS</td>
+      <td>1.1 µm ± 0.3 µm</td>
+      <td>(Ruigrok et al., 1990)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adult rat CA3 pyramidal cells</td>
+      <td>Soma</td>
+      <td>20.9 ± 3.2 µm</td>
+      <td>(Buckmaster, 2012)</td>
+    </tr>
+    <tr>
+      <td>AIS</td>
+      <td>1.2 µm ± 0.4 µm</td>
+      <td>(Kosaka, 1980)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adult rat Purkinje cells</td>
+      <td>Soma</td>
+      <td>21.9 µm ± 1.9 µm</td>
+      <td>(Takacs and Hamori, 1990)</td>
+    </tr>
+    <tr>
+      <td>AIS</td>
+      <td>0.7 µm ± 0.2 µm</td>
+      <td>(Somogyi and Hámori, 1976)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adult mouse cerebellar granule cells</td>
+      <td>Soma</td>
+      <td>5.9 µm ± 0.3 µm</td>
+      <td>(Delvendahl et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>AIS</td>
+      <td>0.2 µm (no s.d.)</td>
+      <td>(Palay and Chan-Palay, 2012)</td>
+    </tr>
+  </tbody>
+</table>
+
 We also digitized individual measurements in three studies: anterior horn cells (motoneurons) of human spinal cord, 44–75 years old (Sasaki and Maruyama, 1992); ventral horn cells (motoneurons) cat spinal cord, P0-P16 (Conradi and Ronnevi, 1977); pyramidal, stellate and Martinotti cells of motor and somatosensory cortex of Rhesus monkeys, young adults (Sloper and Powell, 1979).
 
-## Simplified model
+### Simplified model
 
-In Figure 6C-D, we used a simplified cable model with only non-inactivating Nav channels as a first check of analytical expressions, similar to Brette (2013). A spherical soma of diameter 50 µm is attached to an axonal cylinder of diameter 1 µm and length 300 µm (soma diameter is in fact irrelevant as the soma is voltage-clamped). Specific membrane capacitance is Cm = 0.9 µF/cm2; specific membrane resistance is Rm = 15 000 Ω.cm2; leak reversal potential is EL = -75 mV; intracellular resistivity is Ri = 100 Ω.cm. Nav channels are placed at a single position on the axon. We used simple single gate activation dynamics with fixed time constant:INa=Gm(ENa-V)τm.dmdt=m∞V-mm∞V=11+exp⁡((V1/2-V)/k)where ENa = 70 mV, k = 5 mV, V1/2 = -35 mV and τm=53.6 µs (corresponding to 150 µs before temperature correction, see below). Total conductance G is varied between 200 and 600 nS. To give an order of magnitude, this corresponds to a conductance density of about 2000-6000 S/m2 for a 30 µm long AIS. The model is simulated in voltage-clamp and an action potential is detected when half the Nav channels at the AIS are open. We used the Brian 2 simulator (Stimberg et al., 2019) with 5 µs time step and 1 µm spatial resolution.
+In Figure 6C-D, we used a simplified cable model with only non-inactivating Nav channels as a first check of analytical expressions, similar to Brette (2013). A spherical soma of diameter 50 µm is attached to an axonal cylinder of diameter 1 µm and length 300 µm (soma diameter is in fact irrelevant as the soma is voltage-clamped). Specific membrane capacitance is Cm = 0.9 µF/cm2; specific membrane resistance is Rm = 15 000 $Ω$.cm2; leak reversal potential is EL = -75 mV; intracellular resistivity is Ri = 100 $Ω$.cm. Nav channels are placed at a single position on the axon. We used simple single gate activation dynamics with fixed time constant:
 
-## Biophysical model
+$$
+I_{Na}=Gm(E_{Na}-V)
+$$
 
-The biophysical model has a simple geometry, consisting of a spherical soma (30 µm diameter), a long dendrite (diameter: 6 µm, length: 1000 µm) and a thin unmyelinated axon (diameter: 1 µm, length; 500 µm). When not specified, the AIS extends from 5 µm to 35 µm from the soma. Specific membrane capacitance is Cm = 0.9 µF/cm2; specific membrane resistance is Rm = 15 000 Ω.cm2; leak reversal potential is EL = -75 mV; intracellular resistivity is Ri = 100 Ω.cm.
 
-The model includes Nav and Kv channels based on Hodgkin-Huxley type equations:INa=gNamh(ENa-V)IKv1=gKv1n8(EK-V)IKv7=gKv7q(EK-V)where ENa = 70 mV, EK = −90 mV. Kv7 channels were only included in Figure 11. The Na+ current has a single gate, both for simplicity and because it appears to be empirically adequate (Baranauskas and Martina, 2006). The K+ current has 8 gates because it matches empirical data for the Kv1 current (Kole et al., 2007). This is important to ensure that the current activates with a delay and thereby does not substantially overlap the Na+ current at spike initiation. Each gating variable x is governed by a standard kinetic equation:dxdt=αx1-x-βxxwhere αx and βx are opening and closing rates, respectively. For the voltage-dependent rates, we chose expressions that feature a minimal number of parameters with simple interpretation:αxV=12kxτx*.V-Vx1/21-e-(V-Vx1/2)/kxβxV=-12kxτx*.V-Vx1/21-e(V-Vx1/2)/kxwhere x is m or n. For inactivation (h), opening and closing rates are simply exchanged. These expressions have the following properties: the equilibrium value (x∞(V)) is a Boltzmann function with half-activation value Vx1/2 and slope factor kx; the voltage-dependent time constant is a bell curve peaking at Vx1/2, where its value is τx*.
 
-Parameter values vary substantially between studies. For Nav channels of proximal axons, empirically measured slope factors vary between 5 and 8 mV for activation and 5-9 mV for inactivation (Engel and Jonas, 2005; Hu et al., 2009; Kole and Stuart, 2008; Schmidt-Hieber and Bischofberger, 2010). When fitted on the hyperpolarized part important for spike initiation, the activation curve of Nav channels tend to be lower, as explained in Platkiewicz and Brette (2010); Figure 9 and observed empirically (Baranauskas and Martina, 2006; Figure 2). Therefore, we simply used rounded values, km = kh = 5 mV. For half-activation values, we also used rounded values consistent with the literature, with voltage-dependent curves hyperpolarized by 5 mV in the AIS compared to the soma (see Table 1). We used τm* = 150 µs as in Schmidt-Hieber and Bischofberger (2010), noting that such short time constants are challenging to measure experimentally, especially in axons. For inactivation, we used τh*= 5 ms. This value was chosen so that the Na+ current during the action potential shows a small overlap with the K+ current, as experimentally observed (Hallermann et al., 2012; Figure 4E, F). Conductance densities were set as stated in Table 1, following experimental and modeling studies (Hallermann et al., 2012; Hu et al., 2009; Kole and Stuart, 2008; Lorincz and Nusser, 2010). Finally, rates were corrected for temperature. Recordings on which parameter values are based were done at T=23°C, and we set the simulation temperature at 33°C by applying a temperature factor Q10(33-23)/10, with Q10 = 2.8 (Baranauskas and Martina, 2006).
+$$
+\tau_{m}.\frac{dm}{dt}=m_{∞}V-m
+$$
 
-Densities of Kv1 channels were set similarly to previous studies (Hallermann et al., 2012; Hu et al., 2009; Kole et al., 2008) (see Table 1). Kv1 channels activate quickly and inactivate slowly (Kole et al., 2007). We did not include inactivation because it has no influence on spike initiation. Parameter values were obtained by least square fitting a Boltzmann function to the activation curve (n∞8(V)) obtained from recordings of axonal outside-out blebs of layer 5 pyramidal neurons (Kole et al., 2007). As data were recorded at 33°C, transition rates were not corrected for temperature.
+
+
+$$
+m_{∞}V=\frac{1}{1+exp⁡((V_{1/2}-V)/k)}
+$$
+
+where ENa = 70 mV, k = 5 mV, V1/2 = -35 mV and $\tau_{m}=53.6$ µs (corresponding to 150 µs before temperature correction, see below). Total conductance G is varied between 200 and 600 nS. To give an order of magnitude, this corresponds to a conductance density of about 2000-6000 S/m2 for a 30 µm long AIS. The model is simulated in voltage-clamp and an action potential is detected when half the Nav channels at the AIS are open. We used the Brian 2 simulator (Stimberg et al., 2019) with 5 µs time step and 1 µm spatial resolution.
+
+### Biophysical model
+
+The biophysical model has a simple geometry, consisting of a spherical soma (30 µm diameter), a long dendrite (diameter: 6 µm, length: 1000 µm) and a thin unmyelinated axon (diameter: 1 µm, length; 500 µm). When not specified, the AIS extends from 5 µm to 35 µm from the soma. Specific membrane capacitance is Cm = 0.9 µF/cm2; specific membrane resistance is Rm = 15 000 $Ω$.cm2; leak reversal potential is EL = -75 mV; intracellular resistivity is Ri = 100 $Ω$.cm.
+
+The model includes Nav and Kv channels based on Hodgkin-Huxley type equations:
+
+$$
+I_{Na}=g_{Na}mh(E_{Na}-V)
+$$
+
+
+
+$$
+I_{Kv1}=g_{Kv1}n^{8}(E_{K}-V)
+$$
+
+
+
+$$
+I_{Kv7}=g_{Kv7}q(E_{K}-V)
+$$
+
+where ENa = 70 mV, EK = −90 mV. Kv7 channels were only included in Figure 11. The Na+ current has a single gate, both for simplicity and because it appears to be empirically adequate (Baranauskas and Martina, 2006). The K+ current has 8 gates because it matches empirical data for the Kv1 current (Kole et al., 2007). This is important to ensure that the current activates with a delay and thereby does not substantially overlap the Na+ current at spike initiation. Each gating variable x is governed by a standard kinetic equation:
+
+$$
+\frac{dx}{dt}=\alpha_{x}1-x-\beta_{x}x
+$$
+
+where $\alpha_{x}$ and $\beta_{x}$ are opening and closing rates, respectively. For the voltage-dependent rates, we chose expressions that feature a minimal number of parameters with simple interpretation:
+
+$$
+\alpha_{x}V=\frac{1}{2k_{x}\tau_{x}^{*}}.\frac{V-V_{x}^{1/2}}{1-e^{-(V-V_{x}^{1/2})/k_{x}}}
+$$
+
+
+
+$$
+\beta_{x}V=-\frac{1}{2k_{x}\tau_{x}^{*}}.\frac{V-V_{x}^{1/2}}{1-e^{(V-V_{x}^{1/2})/k_{x}}}
+$$
+
+where x is m or n. For inactivation (h), opening and closing rates are simply exchanged. These expressions have the following properties: the equilibrium value ($x_{∞}(V)$) is a Boltzmann function with half-activation value $V_{x}^{1/2}$ and slope factor kx; the voltage-dependent time constant is a bell curve peaking at $V_{x}^{1/2}$, where its value is $\tau_{x}^{*}$.
+
+Parameter values vary substantially between studies. For Nav channels of proximal axons, empirically measured slope factors vary between 5 and 8 mV for activation and 5-9 mV for inactivation (Engel and Jonas, 2005; Hu et al., 2009; Kole and Stuart, 2008; Schmidt-Hieber and Bischofberger, 2010). When fitted on the hyperpolarized part important for spike initiation, the activation curve of Nav channels tend to be lower, as explained in Platkiewicz and Brette (2010); Figure 9 and observed empirically (Baranauskas and Martina, 2006; Figure 2). Therefore, we simply used rounded values, km = kh = 5 mV. For half-activation values, we also used rounded values consistent with the literature, with voltage-dependent curves hyperpolarized by 5 mV in the AIS compared to the soma (see Table 1). We used $\tau_{m}^{*}$ = 150 µs as in Schmidt-Hieber and Bischofberger (2010), noting that such short time constants are challenging to measure experimentally, especially in axons. For inactivation, we used $\tau_{h}^{*}=$ 5 ms. This value was chosen so that the Na+ current during the action potential shows a small overlap with the K+ current, as experimentally observed (Hallermann et al., 2012; Figure 4E, F). Conductance densities were set as stated in Table 1, following experimental and modeling studies (Hallermann et al., 2012; Hu et al., 2009; Kole and Stuart, 2008; Lorincz and Nusser, 2010). Finally, rates were corrected for temperature. Recordings on which parameter values are based were done at T=23°C, and we set the simulation temperature at 33°C by applying a temperature factor Q10(33-23)/10, with Q10 = 2.8 (Baranauskas and Martina, 2006).
+
+Densities of Kv1 channels were set similarly to previous studies (Hallermann et al., 2012; Hu et al., 2009; Kole et al., 2008) (see Table 1). Kv1 channels activate quickly and inactivate slowly (Kole et al., 2007). We did not include inactivation because it has no influence on spike initiation. Parameter values were obtained by least square fitting a Boltzmann function to the activation curve ($n_{∞}^{8}(V)$) obtained from recordings of axonal outside-out blebs of layer 5 pyramidal neurons (Kole et al., 2007). As data were recorded at 33°C, transition rates were not corrected for temperature.
 
 In Figure 11, we added a Kv7 conductance on the distal half of the AIS. Kv7 channels produce the M-current, which activates slowly at low voltage and does not inactivate (Battefeld et al., 2014). We used parameter values rounded from Battefeld et al. (2014).
 
-## Spike threshold with a point AIS
+### Spike threshold with a point AIS
 
 A formula for the spike threshold with a point AIS has been derived in Brette (2013). Here, we put a simpler alternative derivation based on a rescaling argument.
 
-In the hyperpolarized range, the Na+ current changes approximately exponentially with voltage (Baranauskas and Martina, 2006; Hodgkin and Huxley, 1952b): INa≈Gexp⁡V/k(ENa-V1/2), where V is the axonal membrane potential, G is the total available Na+ conductance, k is the Boltzmann slope factor of Nav channels and V1/2 is the half-activation voltage of Nav channels. As the soma is a current sink (hypothesis of resistive coupling theory), this current flows towards the soma as a resistive current: Iaxial=(V-Vs)/Ra, where Vs is the somatic membrane potential and Ra is the axial resistance between soma and AIS. Therefore, we have the following identity:RaG(ENa-V1/2)exp⁡V/k=V-Vs
+In the hyperpolarized range, the Na+ current changes approximately exponentially with voltage (Baranauskas and Martina, 2006; Hodgkin and Huxley, 1952b): $I_{Na}≈Gexp⁡V/k(E_{Na}-V_{1/2})$, where V is the axonal membrane potential, G is the total available Na+ conductance, k is the Boltzmann slope factor of Nav channels and $V_{1/2}$ is the half-activation voltage of Nav channels. As the soma is a current sink (hypothesis of resistive coupling theory), this current flows towards the soma as a resistive current: $I_{axial}=(V-V_{s})/R_{a}$, where Vs is the somatic membrane potential and Ra is the axial resistance between soma and AIS. Therefore, we have the following identity:
 
-With the following change of variables:U=V+klog⁡(RaG(ENa-V1/2))Us=Vs+klog⁡(RaG(ENa-V1/2))we obtain:exp⁡U/k=U-Us
+$$
+R_{a}G(E_{Na}-V_{1/2})exp⁡V/k=V-V_{s}
+$$
 
-This equation is now independent of G and Ra. We denote U* the threshold for this equation, that is, such that the equation has a bifurcation when Us=U*. For the original equation, this corresponds to a bifurcation when Vs=U*-klog⁡(RaG(ENa-V1/2)).
+With the following change of variables:
 
-## Spike threshold with an extended AIS starting from the soma
+$$
+U=V+klog⁡(R_{a}G(E_{Na}-V_{1/2}))
+$$
 
-We consider a cylindrical axon of diameter d. The AIS has length L and starts from the somatic end. It has a uniform density of Nav channels. The total Nav conductance isG=g×πdLwhere g is the surface conductance density. We neglect leak and K+ currents, as well as all time-varying phenomena. The cable equation then becomes:d2Vdx2∝-geV/kwith boundary conditions V(0) = Vs (somatic potential) and V’(L) = 0 (no axial current flowing towards the distal axon). In units of the AIS length L, this equation reads:d2Vd(x/L)2∝-gL2eVk=-exp⁡(V+klog⁡gL2k)
 
-By the same argument as in the previous section, it follows that the threshold varies with g and L asVs=constant-klog⁡g-2klog⁡L
 
-This is equivalent to:Vs=constant-klog⁡G-klog⁡Lwhere G is the total Nav conductance (G=πdL for a cylindrical axon), for a different constant.
+$$
+U_{s}=V_{s}+klog⁡(R_{a}G(E_{Na}-V_{1/2}))
+$$
 
-We now calculate the constant. With the proportionality factor, the equation is approximately:d2Vd(x/L)2=-πdragL2(ENa-V1/2)e(V-V1/2)/kwhere ra is resistance per unit length and V1/2 is the half-activation voltage of Nav channels. Here the driving force (ENa-V) has been approximated by (ENa-V1/2) as in Brette (2013). We now write the following change of variables:U=(V-V1/2)/k+log⁡(πdragL2(ENa-V12)/k)y=x/Land we note U'=dU/dy. That is, voltage is in units of k and space is in units of AIS length L. The rescaled cable equation is:U''+eU=0with the boundary conditions:U0=U0=(Vs-V1/2)/k+log⁡(πdragL2(ENa-V12)/k)U'1=0
+we obtain:
 
-This equation is analytically solvable, with general solutionUy=log⁡c12-2log⁡cosh⁡12c1c2+y2
+$$
+exp⁡U/k=U-U_{s}
+$$
 
-From U'1=0, it follows that c2=-1.
+This equation is now independent of G and Ra. We denote U* the threshold for this equation, that is, such that the equation has a bifurcation when $U_{s}=U^{*}$. For the original equation, this corresponds to a bifurcation when $V_{s}=U^{*}-klog⁡(R_{a}G(E_{Na}-V_{1/2}))$.
 
-We then obtain for the boundary condition at 0:U0=U0=log⁡c12-2log⁡cosh⁡c12which defines c1 as an implicit function of U0. We look for a bifurcation, that is, a value of U0 when the number of solutions changes. This is obtained by setting the derivative of the right hand-side to 0, which gives:c12tanh⁡c12=1
+### Spike threshold with an extended AIS starting from the soma
 
-The solution can be calculated: c1/2≈1.2, giving c1≈5.8. Finally, substituting this value in the above equation gives U0≈-0.13. This is the spike threshold for the rescaled cable equation. Back to the original dimensions, we obtain:Vs=V1/2-0.13k-klog⁡ra(ENa-V12)/k-klog⁡(πdg)-2klog⁡L
+We consider a cylindrical axon of diameter d. The AIS has length L and starts from the somatic end. It has a uniform density of Nav channels. The total Nav conductance is
 
-This is the same equation as for a point AIS with the same total conductance G at position L, except that the term -0.13 k replaces -k. Thus, the difference in threshold between an extended AIS of length L starting from the soma and a point AIS at position L is 0.87 k (4.3 mV if k = 5 mV). Therefore, the threshold of the extended AIS is the same as a point AIS placed at position x=e-0.87L≈0.42 L, which is near the middle of the extended AIS. The error made by placing the equivalent point AIS at the middle point x=L/2 is k log⁡(0.5/0.42)≈0.9 mV (with k = 5 mV).
+$$
+G=g\times\pidL
+$$
 
-The expression of Uy allows us to calculate the potential along the axon at threshold, and in particular at the AIS end, where the expression simplifies: U1=log⁡(c1/2)≈1.06. We can see that the threshold at the AIS end is above the somatic threshold by about 1.2 k (1.06+0.13). This is consistent with simultaneous patch clamp measurements at the soma and AIS (Kole et al., 2008).
+where g is the surface conductance density. We neglect leak and K+ currents, as well as all time-varying phenomena. The cable equation then becomes:
 
-## Spike threshold with an extended AIS starting away from the soma
+$$
+\frac{d^{2}V}{dx^{2}}∝-ge^{V/k}
+$$
 
-We apply the same strategy for the more general case where the AIS starts at a distance Δ away from the soma. We choose the origin of x at the AIS start, so that we obtain exactly the same cable equation as before, except the boundary condition at x = 0 now expresses the fact that the piece of axon between the soma and AIS is purely resistive. This implies that the potential varies linearly with distance, and therefore:V0=Vs+ΔdVdx(0)
+with boundary conditions V(0) = Vs (somatic potential) and V’(L) = 0 (no axial current flowing towards the distal axon). In units of the AIS length L, this equation reads:
 
-Thus, we obtain the same solution as previously except for the boundary condition at 0:U0=U0=log⁡c12-2log⁡cosh⁡c12-ΔLc1tanh⁡c12
+$$
+\frac{d^{2}V}{d(x/L)^{2}}∝-gL^{2}e^{\frac{V}{k}}=-exp⁡(\frac{V+klog⁡gL^{2}}{k})
+$$
 
-As before, to find the bifurcation point we set the derivative of the right hand-side (with respect to c1) to 0, and obtain:f(z)≡(1+ΔL)ztanh⁡z+ΔLz2(1−tanh2⁡z)−1=0where z = c1/2. This defines z, c1 and therefore U0 as implicit functions of Δ/L, which can be calculated numerically (which we did in Figure 9). The somatic threshold is then:Vs=V1/2+kU0(Δ/L)-klog⁡ra(ENa-V12)/k-klog⁡(πdg)-2klog⁡L
+By the same argument as in the previous section, it follows that the threshold varies with g and L as
 
-The somatic threshold for a point AIS with the same total conductance placed at the midpoint x*=Δ+L/2 is:Vs*=V1/2-k-klog⁡ra(ENa-V12)/k-klog⁡(πdgL)-klog⁡x*
+$$
+V_{s}=constant-klog⁡g-2klog⁡L
+$$
 
-The difference is:Vs-Vs*=kU0ΔL+1+log⁡ΔL+12≡kF(ΔL)
+This is equivalent to:
 
-The variable Δ/L varies between 0, where the AIS starts from the soma, and +∞, where the AIS is a single point. Figure 13 shows that the function F is a monotonously decreasing function of Δ/L. When Δ/L=0, the AIS starts from the soma, and we have seen in the previous section, Vs-Vs*≈0.9 mV (0.17 k). When Δ/L=+∞, the AIS is a single point and therefore Vs=Vs*. Thus, the somatic threshold of the extended AIS is approximately equivalent to the threshold of a point AIS with the same total conductance, placed at the midpoint x1/2, with a precision of about 0.17 k≈0.9 mV.
+$$
+V_{s}=constant-klog⁡G-klog⁡L
+$$
+
+where G is the total Nav conductance ($G=\pidL$ for a cylindrical axon), for a different constant.
+
+We now calculate the constant. With the proportionality factor, the equation is approximately:
+
+$$
+\frac{d^{2}V}{d(x/L)^{2}}=-\pidr_{a}gL^{2}(E_{Na}-V_{1/2})e^{(V-V_{1/2})/k}
+$$
+
+where ra is resistance per unit length and $V_{1/2}$ is the half-activation voltage of Nav channels. Here the driving force $(E_{Na}-V)$ has been approximated by $(E_{Na}-V_{1/2})$ as in Brette (2013). We now write the following change of variables:
+
+$$
+U=(V-V_{1/2})/k+log⁡(\pidr_{a}gL^{2}(E_{Na}-V_{\frac{1}{2}})/k)
+$$
+
+
+
+$$
+y=x/L
+$$
+
+and we note $U^{'}=dU/dy$. That is, voltage is in units of k and space is in units of AIS length L. The rescaled cable equation is:
+
+$$
+U^{''}+e^{U}=0
+$$
+
+with the boundary conditions:
+
+$$
+U0=U_{0}=(V_{s}-V_{1/2})/k+log⁡(\pidr_{a}gL^{2}(E_{Na}-V_{\frac{1}{2}})/k)
+$$
+
+
+
+$$
+U^{'}1=0
+$$
+
+This equation is analytically solvable, with general solution
+
+$$
+Uy=log⁡\frac{c_{1}}{2}-2log⁡cosh⁡\frac{1}{2}\sqrt{c_{1}c_{2}+y^{2}}
+$$
+
+From $U^{'}1=0$, it follows that $c_{2}=-1$.
+
+We then obtain for the boundary condition at 0:
+
+$$
+U0=U_{0}=log⁡\frac{c_{1}}{2}-2log⁡cosh⁡\frac{\sqrt{c_{1}}}{2}
+$$
+
+which defines $c_{1}$ as an implicit function of $U_{0}$. We look for a bifurcation, that is, a value of U0 when the number of solutions changes. This is obtained by setting the derivative of the right hand-side to 0, which gives:
+
+$$
+\frac{\sqrt{c_{1}}}{2}tanh⁡\frac{\sqrt{c_{1}}}{2}=1
+$$
+
+The solution can be calculated: $\sqrt{c_{1}}/2≈1.2$, giving $c_{1}≈5.8$. Finally, substituting this value in the above equation gives $U_{0}≈-0.13$. This is the spike threshold for the rescaled cable equation. Back to the original dimensions, we obtain:
+
+$$
+V_{s}=V_{1/2}-0.13k-klog⁡r_{a}(E_{Na}-V_{\frac{1}{2}})/k-klog⁡(\pidg)-2klog⁡L
+$$
+
+This is the same equation as for a point AIS with the same total conductance G at position L, except that the term -0.13 k replaces -k. Thus, the difference in threshold between an extended AIS of length L starting from the soma and a point AIS at position L is 0.87 k (4.3 mV if k = 5 mV). Therefore, the threshold of the extended AIS is the same as a point AIS placed at position $x=e^{-0.87}L≈0.42L$, which is near the middle of the extended AIS. The error made by placing the equivalent point AIS at the middle point $x=L/2$ is $klog⁡(0.5/0.42)≈0.9$ mV (with k = 5 mV).
+
+The expression of $Uy$ allows us to calculate the potential along the axon at threshold, and in particular at the AIS end, where the expression simplifies: $U1=log⁡(c_{1}/2)≈1.06$. We can see that the threshold at the AIS end is above the somatic threshold by about 1.2 k (1.06+0.13). This is consistent with simultaneous patch clamp measurements at the soma and AIS (Kole et al., 2008).
+
+### Spike threshold with an extended AIS starting away from the soma
+
+We apply the same strategy for the more general case where the AIS starts at a distance $Δ$ away from the soma. We choose the origin of x at the AIS start, so that we obtain exactly the same cable equation as before, except the boundary condition at x = 0 now expresses the fact that the piece of axon between the soma and AIS is purely resistive. This implies that the potential varies linearly with distance, and therefore:
+
+$$
+V0=V_{s}+Δ\frac{dV}{dx}(0)
+$$
+
+Thus, we obtain the same solution as previously except for the boundary condition at 0:
+
+$$
+U0=U_{0}=log⁡\frac{c_{1}}{2}-2log⁡cosh⁡\frac{\sqrt{c_{1}}}{2}-\frac{Δ}{L}\sqrt{c_{1}}tanh⁡\frac{\sqrt{c_{1}}}{2}
+$$
+
+As before, to find the bifurcation point we set the derivative of the right hand-side (with respect to c1) to 0, and obtain:
+
+$$
+f(z)≡(1+\frac{Δ}{L})ztanh⁡z+\frac{Δ}{L}z^{2}(1−tanh^{2}⁡z)−1=0
+$$
+
+where z = $\sqrt{c_{1}}/2$. This defines z, c1 and therefore U0 as implicit functions of $Δ/L$, which can be calculated numerically (which we did in Figure 9). The somatic threshold is then:
+
+$$
+V_{s}=V_{1/2}+kU_{0}(Δ/L)-klog⁡r_{a}(E_{Na}-V_{\frac{1}{2}})/k-klog⁡(\pidg)-2klog⁡L
+$$
+
+The somatic threshold for a point AIS with the same total conductance placed at the midpoint $x^{*}=Δ+L/2$ is:
+
+$$
+V_{s}^{*}=V_{1/2}-k-klog⁡r_{a}(E_{Na}-V_{\frac{1}{2}})/k-klog⁡(\pidgL)-klog⁡x^{*}
+$$
+
+The difference is:
+
+$$
+V_{s}-V_{s}^{*}=kU_{0}\frac{Δ}{L}+1+log⁡\frac{Δ}{L}+\frac{1}{2}≡kF(\frac{Δ}{L})
+$$
+
+The variable $Δ/L$ varies between 0, where the AIS starts from the soma, and $+∞$, where the AIS is a single point. Figure 13 shows that the function F is a monotonously decreasing function of $Δ/L$. When $Δ/L=0$, the AIS starts from the soma, and we have seen in the previous section, $V_{s}-V_{s}^{*}≈0.9$ mV (0.17 k). When $Δ/L=+∞$, the AIS is a single point and therefore $V_{s}=V_{s}^{*}$. Thus, the somatic threshold of the extended AIS is approximately equivalent to the threshold of a point AIS with the same total conductance, placed at the midpoint x1/2, with a precision of about $0.17k≈0.9$ mV.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/53432/elife-53432-fig13-v2.jpg)
 
-**Figure 13.:** .F(Δ/L)The threshold of an extended AIS differs from that of point AIS with the same total conductance placed at the midpoint by at most .kF(Δ/L)
+**Figure 13.:** Corrective term $F(Δ/L)$.The threshold of an extended AIS differs from that of point AIS with the same total conductance placed at the midpoint by at most $kF(Δ/L)$.
 
-## Effect of an axonal current on spike threshold
+### Effect of an axonal current on spike threshold
 
-The effect of an axonal current on the spike threshold of a point AIS has been derived in Brette (2013) (Supplementary Text). We show that this extends to an extended AIS, where a current I is injected at the start of the AIS. In that case, the cable equation is unchanged, but the boundary condition at the AIS start (x = 0) now includes the current:V0=Vs+ΔdVdx0+RaIwhere Ra is the axial resistance between soma and AIS start. Thus, inserting this current is equivalent to shifting the somatic potential by an amount I/Ra. Thus, the bifurcation occurs when Vs+RaI=Vs*, where Vs* is the somatic threshold without modulation (I = 0). The somatic threshold with modulation is therefore Vs*-RaI. At threshold, the boundary condition is independent of I, and therefore the axonal voltage at threshold does not depend on I.
+The effect of an axonal current on the spike threshold of a point AIS has been derived in Brette (2013) (Supplementary Text). We show that this extends to an extended AIS, where a current I is injected at the start of the AIS. In that case, the cable equation is unchanged, but the boundary condition at the AIS start (x = 0) now includes the current:
 
-If the current is injected at the AIS end, then the boundary condition at the AIS end becomes:dVdxL=raI
+$$
+V0=V_{s}+Δ\frac{dV}{dx}0+R_{a}I
+$$
+
+where Ra is the axial resistance between soma and AIS start. Thus, inserting this current is equivalent to shifting the somatic potential by an amount I/Ra. Thus, the bifurcation occurs when $V_{s}+R_{a}I=V_{s}^{*}$, where $V_{s}^{*}$ is the somatic threshold without modulation (I = 0). The somatic threshold with modulation is therefore $V_{s}^{*}-R_{a}I$. At threshold, the boundary condition is independent of I, and therefore the axonal voltage at threshold does not depend on I.
+
+If the current is injected at the AIS end, then the boundary condition at the AIS end becomes:
+
+$$
+\frac{dV}{dx}L=r_{a}I
+$$
 
 The cable equation can still be solved analytically as before. However, it does not lead to any simple expression of threshold as a function of I. It is found numerically that the somatic threshold changes almost (but not exactly) linearly with I, and the threshold at the AIS end varies slightly with I, in the other direction (decreases for a strong hyperpolarizing current).
 
 If current is uniformly injected over the AIS, then boundary conditions are unchanged but the current density is inserted in the cable equation. To our knowledge, it has no analytical solution.
 
-The theoretical analysis above applies to an injected current. The effect of inserting a conductance, that is, I=g*(E-V), can be understood in the point AIS model by noting that the conductance g* is in parallel with the axial resistance Ra. Therefore, it is equivalent to replacing Ra by Ra-1+g*-1. As long as g* is small compared to 1/Ra, this effect is negligible. That is, the current-based theory holds, with I=g*(E-Vthreshold), where Vthreshold is the AIS threshold. If g* is large, the effective change in Ra must be taken into account.
+The theoretical analysis above applies to an injected current. The effect of inserting a conductance, that is, $I=g^{*}(E-V)$, can be understood in the point AIS model by noting that the conductance $g^{*}$ is in parallel with the axial resistance Ra. Therefore, it is equivalent to replacing Ra by $R_{a}^{-1}+g^{*}^{-1}$. As long as $g^{*}$ is small compared to 1/Ra, this effect is negligible. That is, the current-based theory holds, with $I=g^{*}(E-V_{threshold})$, where $V_{threshold}$ is the AIS threshold. If $g^{*}$ is large, the effective change in Ra must be taken into account.
 
-## Data availability
+### Data availability
 
 Code generating all figures is available at: https://github.com/romainbrette/AIS-geometry-and-excitability-2019 (Goethals and Brette, 2020; copy archived at https://github.com/elifesciences-publications/AIS-geometry-and-excitability-2019).

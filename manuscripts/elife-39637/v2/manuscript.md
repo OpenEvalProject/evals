@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.39637.001 Reading frame maintenance is critical for accurate translation. We show that the conserved eukaryotic/archaeal protein Mbf1 acts with ribosomal proteins Rps3/uS3 and eukaryotic Asc1/RACK1 to prevent frameshifting at inhibitory CGA-CGA codon pairs in the yeast Saccharomyces cerevisiae . Mutations in RPS3 that allow frameshifting implicate eukaryotic conserved residues near the mRNA entry site. Mbf1 and Rps3 cooperate to maintain the reading frame of stalled ribosomes, while Asc1 also mediates distinct events that result in recruitment of the ribosome quality control complex and mRNA decay. Frameshifting occurs through a +1 shift with a CGA codon in the P site and involves competition between codons entering the A site, implying that the wobble interaction of the P site codon destabilizes translation elongation. Thus, eukaryotes have evolved unique mechanisms involving both a universally conserved ribosome component and two eukaryotic-specific proteins to maintain the reading frame at ribosome stalls.
+Reading frame maintenance is critical for accurate translation. We show that the conserved eukaryotic/archaeal protein Mbf1 acts with ribosomal proteins Rps3/uS3 and eukaryotic Asc1/RACK1 to prevent frameshifting at inhibitory CGA-CGA codon pairs in the yeast Saccharomyces cerevisiae. Mutations in RPS3 that allow frameshifting implicate eukaryotic conserved residues near the mRNA entry site. Mbf1 and Rps3 cooperate to maintain the reading frame of stalled ribosomes, while Asc1 also mediates distinct events that result in recruitment of the ribosome quality control complex and mRNA decay. Frameshifting occurs through a +1 shift with a CGA codon in the P site and involves competition between codons entering the A site, implying that the wobble interaction of the P site codon destabilizes translation elongation. Thus, eukaryotes have evolved unique mechanisms involving both a universally conserved ribosome component and two eukaryotic-specific proteins to maintain the reading frame at ribosome stalls.
 
 ## Introduction
 
@@ -34,11 +34,27 @@ Here, we provide evidence that the Multi-protein Bridging Factor 1 (Mbf1) and ri
 
 ## Results
 
-## MBF1 (Multi-protein Bridging Factor 1) prevents frameshifting at CGA codon repeats
+### MBF1 (Multi-protein Bridging Factor 1) prevents frameshifting at CGA codon repeats
 
 We considered it likely that proteins other than Asc1 worked to prevent frameshifting at CGA codon repeats for two reasons. First, Asc1 binds on the outside of the ribosome, not in the decoding center (Rabl et al., 2011), and thus is not positioned in any obvious way to assist with reading frame maintenance. Second, Asc1 recruits other proteins, Hel2 and Slh1, to recruit the RQC (Brandman and Hegde, 2016; Joazeiro, 2017; Sitron et al., 2017), and thus is likely to work with other proteins in reading frame maintenance. Thus, we set out to identify genes responsible for reading frame maintenance at CGA codon repeats.
 
 To isolate mutants that frameshift due to translation of CGA codon repeats, we set up a selection in which a +1 frameshift (caused by 6 adjacent CGA codons) was required to express the URA3 gene. The native URA3 gene was placed in the +1 reading frame downstream of an N-terminal domain of GLN4 encoding amino acids 1–99 (GLN4(1-99)), followed by 6 CGA codons and one additional nucleotide upstream of the URA3 coding region (Figure 1A). This strain exhibits an Ura- phenotype, due to the low levels of frameshifting in an otherwise wild-type background, allowing for an Ura+ selection to obtain mutants with increased frameshifting. As an independent secondary screen for frameshifting mutants due to CGA codon repeats, we integrated a modified version of the RNA-ID reporter with GLN4(1-99) followed by 4 CGA codons and one additional nucleotide upstream of the GFP coding region into the ADE2 locus (Dean and Grayhack, 2012; Wolf and Grayhack, 2015). Thus, GFP expression was dependent upon frameshifting efficiency (Figure 1A). To avoid obtaining mutations in the ASC1 gene, the selection strain also contained a second copy of the ASC1 gene on a plasmid. (Figure 1A). We selected Ura+ mutants from 40 independent cultures each of MATa and MATα parents and then analyzed three Ura+ mutants from each culture by flow cytometry to measure GFP and RFP expression. Most mutants (60% of MATα mutants and 80% of MATa mutants) showed elevated expression of GFP, and we studied those that exhibited relatively high levels of frameshifting, >30% of that in an asc1Δ mutant (Figure 1B). Most mutants (43 of 48 examined) were recessive and mapped to a single complementation group, based on growth of diploids on media lacking uracil (Figure 1—figure supplement 1A), although four dominant mutants were also identified.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of selection for mutants that frameshift at CGA codon repeats. The indicated CGA codon repeats plus one extra nucleotide were inserted upstream of the URA3 and GFP coding region (with an upstream HA tag shown in purple), resulting in an Ura- GFP- parent strain. Additional copies of the ASC1 gene were introduced on a LEU2 plasmid to avoid recessive mutations in the native ASC1 gene. To obtain mutants with increased frameshifting efficiency, Ura+ mutants were selected and screened for increased GFP/RFP. (B) Expression of GLN4(1-99)-(CGA)4+1-GFP is increased in the MATa Ura+ mutants from this selection. Flow cytometry scatter plot showing GFP fluorescence versus RFP fluorescence for three mutants from this selection (P15: mbf1-R89K, light blue; P25: mbf1Δ125–151, black; P38: mbf1-K64E, dark blue), for the asc1Δ mutant (red) and for the wild-type parent strain (gray). (C) Expression of the non-native tRNAArg(UCG)* suppressed the Ura+ phenotype of mutant P25 at 30°C. Serial dilutions of the indicated strains with empty vector or expressing the mutant tRNAArg(UCG)* were grown on the indicated media. (D) Mutations in the MBF1 mutants map in conserved amino acids in both the MBF1-specific domain and the Helix-Turn-Helix (HTH) domain of Mbf1 protein. Alignment of yeast Mbf1 amino acids 60–100 with other eukaryotic species is shown (full alignment see Figure 1—figure supplement 3A). GFP/RFP of frameshifted (CGA)4+1 reporter is shown for mutants obtained from MATa (circles) and MATα (triangles) strains, with the color of markers corresponding to the consensus level of this residue (Blue: 50–90%, Red: >90%), however the conserved residue for R61 is N, and for S86 is Q, with all others identical to yeast.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Analysis of complementation and dominant/recessive nature of mutations. Twelve MATa mutants were crossed with 20 MATα mutants, as well as with the wild type strains. An Ura+ phenotype of resulting diploids with the wild type strain indicated that three mutants were dominant while the Ura+ phenotype of mutants crossed with each other indicated one major complementation group among recessive mutants. (B) Introduction of the Prelich library pool 15 DNA resulted in FOA-resistant cells (Ura-) which indicated suppression of the frameshifting phenotype.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Plasmid-borne MBF1 gene suppressed the Ura+ phenotype of mutants P25 and P38 at 30°C. (B) Deletion of the MBF1 coding sequence in the parent GFP- strain resulted in GFP+ phenotype.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Amino acid sequence alignment of Mbf1 protein from 11 eukaryotic species using MultAlin (http://multalin.toulouse.inra.fr/multalin/) (Corpet, 1988). The color of text corresponds to the consensus level of this residue (Blue: 50–90%, Red: >90%) (B) Frameshifting mbf1-K64E and I85T mutants grow like wild type on plates with 3-aminotriazole at 30°C and do not display a gcn4Δ phenotype. The mbf1Δ strains are more resistant to 3-AT than gcn4Δ strains.
 
 To confirm that inhibitory decoding of CGA codon repeats is required for frameshifting in these mutants, we showed that introduction of an anticodon-mutated exact match tRNAArg(UCG)* suppressed the Ura+ phenotype of one mutant (Figure 1C). We have shown previously that expression of this exact match tRNAArg(UCG)* results in efficient decoding of CGA codons and suppresses their inhibitory effects on gene expression (Letzring et al., 2010). Thus, the Ura+, GFP+ phenotype of this mutant was due to frameshifting that occurs when the ribosome translates CGA codon repeats inefficiently.
 
@@ -46,9 +62,17 @@ We demonstrated that mutations in the yeast gene MBF1, Multi-protein Bridging Fa
 
 MBF1 is a highly conserved gene in eukaryotes and archaea, generally less than 160 amino acids with an N-terminal Mbf1-specific domain (that differs between archaea and eukaryotes) and a conserved cro-like helix-turn-helix (HTH) domain (Figure 1D, Figure 1—figure supplement 3A). Mbf1, which was initially identified as a transcription co-activator in Bombyx mori (Li et al., 1994; Takemaru et al., 1997), has been implicated in a similar function in yeast, in this case, interacting with the Gcn4, transcription regulator of the general amino acid control pathway (Takemaru et al., 1998). In testing sensitivity to 3-aminotriazole (3-AT) (Hilton et al., 1965; Schürch et al., 1974), a phenotype of gcn4 mutants due to inability to induce expression of HIS3, we found that two frameshifting point mutants (mbf1-K64E and mbf1-I85T) exhibit no growth defect even on high concentrations of 3-AT (Figure 1—figure supplement 3B). Moreover, deletion of GCN4 does not affect frameshifting at CGA codon repeats in an asc1Δ mutant (Wolf and Grayhack, 2015). Thus, it is unlikely that the defect in reading frame maintenance in our mbf1 mutants is related to GCN4. However, Mbf1 has also been implicated in translation, based on isolation of mutations in yeast MBF1 that suppress frameshifting mutations (Hendrick et al., 2001), and the weak association of the archaeal homolog with ribosomes (Blombach et al., 2014), but there is no information on its molecular role in translation.
 
-## Ribosomal protein Rps3 also mediates reading frame maintenance at CGA codon repeats
+### Ribosomal protein Rps3 also mediates reading frame maintenance at CGA codon repeats
 
 To identify the mutated gene(s) in our dominant mutants, we performed whole genome sequencing in two MATα mutants and found that each mutant contains a single amino acid change (S104Y and G121D) in RPS3. Similarly, the two dominant MATa mutants also contain mutations in the RPS3 gene (L113F and a duplication of N22 to A30). RPS3 encodes a universally conserved ribosomal protein, a core component of the mRNA entry tunnel with a eukaryotic-specific C-terminal extension that interacts with Asc1 (Rabl et al., 2011). One known mutation in RPS3 (K108E) affects reading frame maintenance (Hendrick et al., 2001), while others affect different aspects of translation, from initiation to quality control (Dong et al., 2017; Graifer et al., 2014; Limoncelli et al., 2017; Takyar et al., 2005). The three residues S104, L113 and G121 implicated in reading frame maintenance in our study, as well as K108, are all found in two α-helices near the mRNA entry tunnel of the ribosome; these residues reside on the surface of the ribosome and could interact with mRNA or proteins outside of the ribosome (Figure 2A). Moreover, the identity of all four of these residues is conserved in eukaryotes, but different in bacteria and archaea (Graifer et al., 2014).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left: Yeast ribosome from PDB: 3J78 (Svidritskiy et al., 2014) (light blue: small subunit; yellow: large subunit) showing Asc1/RACK1 (dark blue) and Rps3 (pink). Right: Residues of Rps3 in which mutations cause frameshifting are marked- S104 (yellow), K108 (green), L113 (black), G121 (gray). (B) Analysis of effects of RPS3-K108E, mbf1Δ and RPS3-K108E mbf1Δ mutations on expression of GFP/RFP protein (fluorescence), mRNA and protein/mRNA from reporters containing four Arg codons (AGA versus CGA) in-frame and in the +1 frame. (C) Assay for epistatic relationship between RPS3 mutations from this selection and the mbf1Δ mutation. (D) Overproduction of Mbf1 protein in indicated RPS3 mutants significantly decreased expression of frameshifted Gln4(1-99)-GFP fusion protein (***p < 0.001) analyzed by flow cytometry.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scatter plot of RFP mRNA versus GFP mRNA of Rluc-GFP reporters containing in-frame or out-of-frame four Arg codons (AGA versus CGA) in wild-type (black), RPS3-K108E (yellow), mbf1Δ (green) and RPS3-K108E mbf1Δ (pink) mutants. (B) Scatter plot of GFP/RFP*100 fluorescence versus GFP/RFP mRNA of Rluc-GFP reporters containing in-frame or out-of-frame four Arg codons (AGA versus CGA) in the same strains as in (A). (C) Overproduction of Mbf1 protein in the RPS3-S104Y mutant reduced frameshifting-dependent growth on -Ura media, shown by a spot test assay at 30°C.
 
 We initially examined the effect of the RPS3-K108E mutation on both frameshifting and in-frame expression downstream of CGA codon repeats, and found that this mutation allows frameshifting but does not affect in-frame expression. We chose the K108E mutation because it is known to have only minor effects on the polysome to monosome ratio (Dong et al., 2017), consistent with few nonspecific effects on translation. We introduced modified RNA-ID reporters into rps3Δ::bleR strains in which the only source of RPS3 is a plasmid-borne copy (either wild type or K108E). As described previously, since the expression of GFP and RFP is driven by the bi-directional GAL1,10 promoter, we use the ratio of GFP/RFP to reduce noise and cell type specific differences in induction of this promoter (Dean and Grayhack, 2012). Neither the RPS3 mutant nor a mbf1Δ mutant had a substantial effect on GFP/RFP fluorescence (protein), mRNA or protein/mRNA of reporters with CGA or AGA codon repeats in-frame (Figure 2B). We did note relatively minor, but compensatory effects, of the mutants on both GFP and RFP mRNAs (a 15–30% reduction in mbf1Δ mutants and a similar increase in the RPS3–K108E mutant) (Figure 2—figure supplement 1A). The RPS3-K108E and mbf1Δ mutants each caused substantially increased frameshifted GFP/RFP protein and protein/mRNA in the construct with four CGA codons, but had only small effects on GFP/RFP mRNA; no frameshifting was seen with four AGA codons (Figure 2B; Supplementary file 1).
 
@@ -56,9 +80,21 @@ If Mbf1 and Rps3 proteins function in independent pathways to prevent frameshift
 
 If Mbf1 and these two α-helices in Rps3 mediate a common function, then frameshifting in either RPS3-S104Y or G121D mutants might be suppressed by overproduction of MBF1. We found that introduction of additional copies of the MBF1 gene into either of these mutants resulted in reduced expression of frameshifted GFP (Figure 2D). Frameshifted GFP was reduced to 30% in the S104Y mutant and to 60% in the G121D mutant (Figure 2D). Similarly, growth on media lacking uracil was severely compromised in the RPS3-S104Y mutant when MBF1 was expressed on a multi-copy plasmid, relative to an empty vector control (Figure 2—figure supplement 1C), although both strains grow equally well on SD-Leu media. These observations are consistent with the idea that Mbf1 and Rps3 play similar roles in reading frame maintenance and support the idea that these RPS3 mutations reduce Mbf1 function.
 
-## Mbf1 and Asc1 play distinct, but related, roles at CGA codon repeats
+### Mbf1 and Asc1 play distinct, but related, roles at CGA codon repeats
 
 Since Asc1 is also required for reading frame maintenance at CGA codon repeats (Wolf and Grayhack, 2015), we examined the relationship between MBF1 and ASC1 on both frameshifting and in-frame expression, comparing GFP/RFP in the single mutants to that in the asc1Δ mbf1Δ double mutant. Asc1 is known to affect expression (both in-frame and +1 frame) downstream of four CGA codons (Letzring et al., 2013; Wolf and Grayhack, 2015), but we previously noted that inhibitory effects of CGA codons are mediated by CGA codon pairs (Gamble et al., 2016; Letzring et al., 2010). Therefore, we compared the effects of these mutants on a set of reporters with three CGA-CGA (or AGA-AGA) codon pairs flanked by two non-Arg codons (Figure 3A, Figure 3—figure supplement 1A, Supplementary file 2) to effects on a set with four adjacent CGA (or AGA) codons (Figure 3—figure supplement 1B). Neither the upstream gene nor the arrangement of CGA codons affected the results.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig3-v2.jpg)
+
+**Figure 3.:** (A) Analysis of effects of asc1Δ, mbf1Δ and asc1Δ mbf1Δ mutations on protein expression (fluorescence), mRNA levels and protein/mRNA of GLN4(1-99)-GFP reporters containing three CGA-CGA codon pairs in the 0, +1, and −1 reading frames. GFP/RFP values are reported in all cases. (B) Western analysis of Gln4(1-99)-GFP fusion protein in yeast strains from (A) indicates the expression of frameshifted Gln4(1-99)-GFP full-length protein in all three mutants. The protein was detected by anti-HA antibody recognizing the HA epitope between the codon insert and GFP. The GFP and RFP values were measured by flow cytometry while harvesting for cell lysis. (C) Overproduction of Mbf1 suppressed frameshifting at CGA-CGA codon pairs in the asc1Δ mutant, but did not affect the in-frame expression, based on GFP/RFP expression from the indicated reporters shown in (A). ns: p > 0.05, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Analysis of effects of asc1Δ, mbf1Δ and asc1Δ mbf1Δ mutations on protein expression of GLN4(1-99)-GFP reporters containing three Arg-Arg codon pairs (AGA-AGA versus CGA-CGA) in 0, +1, and −1 reading frames. (B) Analysis of effects of asc1Δ, mbf1Δ and asc1Δ mbf1Δ mutations on protein expression of Rluc-GFP reporters containing four adjacent Arg codons (AGA versus CGA) in 0, +1, and −1 reading frames. (C) Scatter plot of RFP mRNA versus GFP mRNA of GLN4(1-99)-GFP reporters containing three CGA-CGA codon pairs (0, +1, or −1 frame) in the indicated strains. (D) Scatter plot of GFP/RFP*100 fluorescence versus GFP/RFP mRNA of GLN4(1-99)-GFP reporters containing three CGA-CGA codon pairs (0, +1, or −1 frame) in the same strains as in (C).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Western analysis of HA tagged Mbf1 in the asc1Δ mutant (three independent isolates shown) compared to the wild-type strain (four independent isolates shown) indicates that Mbf1 levels were similar in both strains. (B) Overexpression of Asc1 does not affect either in-frame read-through or frameshifting at CGA codon repeats in the mbf1Δ strain. ns: p > 0.05.
 
 As expected based on a previous report (Sitron et al., 2017), deletion of ASC1 resulted in increased protein and mRNA levels of reporters with in-frame CGA-CGA codon pairs. By contrast, deletion of MBF1 did not affect protein or mRNA levels substantially (Figure 3A, Figure 3—figure supplement 1A and B, Supplementary file 2). Thus, Asc1 clearly has a unique role in regulating mRNA and RQC recruitment at CGA codon pairs, but overall expression, measured as protein/mRNA, of all in-frame reporters is similar in the wild type, asc1Δ, mbf1Δ, and asc1Δ mbf1Δ double mutants (Figure 3A). For the in-frame reporters, the relationship between GFP/RFP fluorescence and mRNA is linear; none of these mutants affect RFP mRNA (Figure 3—figure supplement 1C and D). However, the increase in mRNA in an asc1Δ mutant does not explain the increase in frameshifted GFP/RFP protein in this mutant. That is, the 2.7-fold increase in GFP/RFP mRNA from the +1 reporter in an asc1Δ mutant (relative to the wild type) cannot account for the >50 fold increase in frameshifted GFP/RFP fluorescence (Figure 3A). Thus, an asc1Δ mutant clearly exhibits a defect in reading frame maintenance.
 
@@ -68,11 +104,23 @@ We confirmed that the +1 GFP signal detected in our mutants was due to frameshi
 
 If the defect in the asc1Δ mutant that results in frameshifting is due to a failure of the Mbf1 pathway, then overproduction of Mbf1 in the asc1Δ mutant might suppress frameshifting in this mutant. We found that expression of MBF1 on a multi-copy plasmid did suppress frameshifting in the asc1Δ strain to 1/3 that seen with an empty vector, but did not affect in-frame expression (Figure 3C). The overproduction of Mbf1 was not complementing a reduced abundance of Mbf1 in this mutant. We did not detect a reduction in Mbf1-HA (which complements the mbf1Δ mutant) in the asc1Δ strain (Figure 3—figure supplement 2A), although asc1 mutants generally exhibit a defect in expression of small proteins (Thompson et al., 2016). We also considered that mbf1 mutants might require additional Asc1 protein, but additional copies of ASC1 did not suppress frameshifting in an mbf1Δ mutant (Figure 3—figure supplement 2B). Thus, the frameshifted GFP/RFP fluorescence in the asc1Δ strain is likely a result of both an increase in mRNA and a defect in the Mbf1 pathway. We infer that Mbf1 and Asc1 contribute in distinct ways to the response to CGA codon pairs, but we do not know if Asc1 also has a direct role in the reading frame maintenance pathway.
 
-## Mbf1 and Asc1 work at a common subset of inhibitory codon pairs and at a single inhibitory codon pair in a context-dependent manner
+### Mbf1 and Asc1 work at a common subset of inhibitory codon pairs and at a single inhibitory codon pair in a context-dependent manner
 
 To address the mechanism of frameshifting and to understand the relationship between Asc1 and Mbf1, we set out to identify the protein and sequence requirements for efficient frameshifting. We began by examining frameshifting at 12 of 17 inhibitory codon pairs all of which cause reduced expression and many of which exhibit high ribosome occupancy, indicative of slow translation (Gamble et al., 2016), a common feature of many frameshifting sites.
 
 We found that Mbf1 and Asc1 act on the same inhibitory codon pairs. Frameshifting occurs with high efficiency at three codon pairs (CGA-CGA, CGA-CGG, and CGA-CCG) in the mbf1Δ mutant (Figure 4A), the only three pairs at which Asc1 substantially modulates in–frame expression levels relative to synonymous optimal reporters (Figure 4B). As might be expected, frameshifted GFP/RFP for CGA-CCG and CGA-CGA is greater in the asc1Δ mbf1Δ mutant than in the mbf1Δ single mutant (Figure 4A, Figure 4—figure supplement 1A, Supplementary file 2). Surprisingly, this is not true for the CGA-CGG construct at which frameshifting is remarkably high (~76% based on data from Figure 4—figure supplement 2C). We address the source of this high frameshifting below and the lack of synergy in the Discussion.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig4-v2.jpg)
+
+**Figure 4.:** (A) Frameshifted GFP/RFP fluorescence was detected at three inhibitory codon pairs (Gamble et al., 2016) in the mbf1Δ mutant, and at seven codon pairs in the asc1Δ mbf1Δ double mutant. Frameshifting was assayed from reporters bearing 3 copies of the indicated inhibitory codon pair and a +1 nucleotide to place GFP in the +1 frame. (B) In-frame expression downstream of three inhibitory codon pairs (CGA-CGA; CGA-CCG; CGA-CGG) was improved by the deletion of ASC1. The GFPFLOW ratio is the ratio of GFP/RFP from reporters with three copies of an inhibitory pair relative to GFP/RFP from synonymous reporters with three copies of the optimized pair. (C) Mutation of either ASC1 or MBF1 allowed frameshifting at no-go sequences in the GFP reporter, and mutation of both ASC1 and MBF1 resulted in significantly more frameshifted GFP/RFP. (D) Variation of the sequences surrounding a single CGA-CGG inhibitory codon pair indicated that the 3’ nucleotide downstream of the pair was required for efficient frameshifting. Frameshifted GFP/RFP from GLN4(1-99)-insert-+1 GFP reporters with a single CGA-CGG inhibitory codon pair was analyzed in the four indicated strains. Variations in the sequences surrounding this pair are shown in red. The construct, IOO contains the inhibitory CGA-CGG pair in position 1(I) and synonymous optimal pairs (AGA-AGA) in the positions 2 and 3 (OO) sites. The original IOO construct was measured separately (hash marks) and also reported in Figure 4—figure supplement 2B. (E) Analysis of effects of asc1Δ, mbf1Δ and asc1Δ mbf1Δ mutations on expression of GLN4(1-99)-GFP reporters containing the native yeast AYT1 sequence with a single CGA-CGG codon pair in 0 and +1 reading frames. This native yeast sequence provoked significant amount of frameshifting.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Analysis of effects of the indicated mutations on expression of Gln4(1-99)-GFP reporters containing three copies of either (A) the Arg-Pro (AGA-CCA or CGA-CCG) codon pairs or (B) the Arg-Ile (AGA-AUU or CGA-AUA) codon pairs in 0, +1, and −1 reading frames. Mutation of either ASC1 or MBF1 allowed frameshifting in the (CGA-CCG)3+1 reporter, but not in the (CGA-AUA)3+1 reporter, while mutations of both ASC1 and MBF1 resulted in significantly more frameshifted GFP/RFP in both reporters. (C) Analysis of effects of the indicated mutations on expression of Gln4(1-99)-GFP reporters containing the yeast TY1 programmed frameshift site (Belcourt and Farabaugh, 1990). Deletion of MBF1 and/or ASC1 did not affect the efficiency of programmed frameshifting in the TY1 transposon.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic of inserts in +1 frame in GLN4(1-99)-GFP reporters used to identify the contributions of individual CGA-CGG pairs to frameshifting. Sequences with all possible combinations of zero, one, two or three inhibitory CGA-CGG pairs (I, shown in cyan) [substituting the synonymous optimal pair AGA-AGA (O, shown in orange) at other positions] were assayed. (B) All constructs with an inhibitory codon pair at the first position (III, IIO, IOI, IOO) showed high levels of frameshifting in all three mutants. Analysis of effects of asc1Δ, mbf1Δ and asc1Δ mbf1Δ mutations on expression of GLN4(1-99)-GFP reporters with the indicated position and number of inhibitory codon pairs. (C, D) Analysis of effects of asc1Δ, mbf1Δ and asc1Δ mbf1Δ mutations on expression of GLN4(1-99)-GFP reporters containing three Arg-Arg codon pairs (AGA-AGA versus CGA-CGG) in 0, +1, and −1 reading frames. In (C), the first codon pair is followed by CAC, while in (D) the first codon pair is followed by TTC. (E) Analysis of effects of native yeast gene sequences containing a single CGA-CGG codon pair on in-frame and frameshifted expression of GFP. In each case, six codons upstream and downstream of the CGA-CGG were inserted into the GLN4(1-99)-GFP reporter in-frame and with a +1 frameshift after the inserted sequence. Expression of GFP/RFP was measured in wild type, asc1Δ, mbf1Δ and asc1Δ mbf1Δ mutants.
 
 Lower levels of frameshifting were also detected at 4 additional pairs (CGA-AUA, CGA-CUG, CGA-GCG, and CUC-CCG) in the asc1Δ mbf1Δ mutant, but not in the mbf1Δ single mutant (Figure 4A, Figure 4—figure supplement 1B). Analysis of these seven codon pairs indicates that frameshifting was detected at the seven most slowly translated codon pairs in the yeast genome [based on analysis in (Gamble et al., 2016)] and at every inhibitory pair with CGA in the 5’ position, consistent with slow decoding of CGA in the P site (Tunney et al., 2018).
 
@@ -82,13 +130,13 @@ To define the source of efficient frameshifting in the CGA-CGG reporter, which h
 
 To find out if frameshifting can occur at single CGA-CGG pairs in other sequence contexts, we tested sequences from seven yeast genes in our reporters, including six codons on either side of CGA-CGG pair. Frameshifted GFP/RFP was detected in asc1Δ mbf1Δ mutants in all cases (Figure 4E, Figure 4—figure supplement 2E). In particular, the two native sequences with CGA-CGG-C resulted in frameshifted GFP/RFP in the single mutants (Figure 4E, Figure 4—figure supplement 2E). Thus, CGA-CGG-C is likely a frameshifting sequence, and contexts that allow frameshifting have not been eliminated from native genes.
 
-## +1 frameshifting occurs with the CGA codon in the P site
+### +1 frameshifting occurs with the CGA codon in the P site
 
 To understand how frameshifting occurs, we wanted to define the direction and position of the actual frameshift. The high efficiency of frameshifting at the CGA-CGG-CAC sequence provided a useful tool to study frameshifting since there is only a short potential frameshifting sequence (a single inhibitory codon pair). We inserted this sequence with its neighboring codons from the RNA-ID reporter into a construct for purification of the frameshifted polypeptide (Figure 5A). The construct was designed such that the protein could be purified either with an upstream affinity tag (GST) to yield all polypeptides or with a downstream affinity tag (Strep II or the ZZ domain of IgG) to yield only frameshifted polypeptides. Treatment with LysC, which cleaves after lysine was expected to yield a 16 or 17 amino acid peptide for analysis by mass spectrometry, depending upon the mechanism of frameshifting.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39637/elife-39637-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic of the purification construct for the frameshifted peptide. An eight amino acid sequence with a single CGA-CGG pair from the RNA-ID reporter was inserted between a GST tag and an out-of-frame StrepII tag. LysC treatment of purified frameshifted protein yields a 16 or 17 amino acid peptide. The red nucleotide indicates the extra nucleotide in the +1 frame construct. (B) Schematic of four possible frameshifting events at the inhibitory CGA-CGG codon pair, each of which can be distinguished by one or two amino acids in the resulting peptide. Ribosomes can frameshift either in the forward direction (+1) or in the reverse direction (−2) when the P site is occupied by either the CGA codon (first amino acid in the out-of-frame peptide shown in green) or the CGG codon (the first amino acid in the out-of-frame peptide shown in orange). (C) Purified protein products of both in-frame and +1 frame constructs were analyzed by SDS-PAGE, stained with Coomassie Blue. The frameshifted protein of +1 frame construct from Strep purification (in red box) was excised, cleaved with LysC and analyzed by Mass Spectrometry, resulting in identification of the peptide shown below the figure. This peptide corresponds to that expected of a +1 frameshift occurring when the CGA codon occupies the P site. (D) Overexpression of tRNA corresponding to +1 frame codon improved frameshifting efficiency, while overexpression of tRNA corresponding to the next in-frame codon significantly reduced frameshifting. ns: p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.  10.7554/eLife.39637.023Figure 5—source data 1.
+**Figure 5.:** (A) Schematic of the purification construct for the frameshifted peptide. An eight amino acid sequence with a single CGA-CGG pair from the RNA-ID reporter was inserted between a GST tag and an out-of-frame StrepII tag. LysC treatment of purified frameshifted protein yields a 16 or 17 amino acid peptide. The red nucleotide indicates the extra nucleotide in the +1 frame construct. (B) Schematic of four possible frameshifting events at the inhibitory CGA-CGG codon pair, each of which can be distinguished by one or two amino acids in the resulting peptide. Ribosomes can frameshift either in the forward direction (+1) or in the reverse direction (−2) when the P site is occupied by either the CGA codon (first amino acid in the out-of-frame peptide shown in green) or the CGG codon (the first amino acid in the out-of-frame peptide shown in orange). (C) Purified protein products of both in-frame and +1 frame constructs were analyzed by SDS-PAGE, stained with Coomassie Blue. The frameshifted protein of +1 frame construct from Strep purification (in red box) was excised, cleaved with LysC and analyzed by Mass Spectrometry, resulting in identification of the peptide shown below the figure. This peptide corresponds to that expected of a +1 frameshift occurring when the CGA codon occupies the P site. (D) Overexpression of tRNA corresponding to +1 frame codon improved frameshifting efficiency, while overexpression of tRNA corresponding to the next in-frame codon significantly reduced frameshifting. ns: p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.
 
 If frameshifting occurred in the local region near the CGA-CGG codon pair, there are four possible events that could all give rise to +1 GFP signal. Ribosomes could frameshift in the +1 direction with either the CGA or the CGG in the P site, yielding the RGTT or the RRTT sequences shown in Figure 5B. Alternatively, ribosomes could undergo −2 frameshifting at either codon, yielding the peptides RDGTT or RRGTT (Figure 5B). In yeast, −2 frameshifting was observed upon expression of the mammalian antizyme (Matsufuji et al., 1996) and −2 frameshifting also occurs in PRRSV virus (Fang et al., 2012). We purified the frameshifted protein, as well as an in-frame control protein with the sequence expected for a −2 frameshift at CGG (Figure 5C) and subjected them to mass spectrometry. The frameshifted protein yielded the peptide VTNLRGTTWSHPQFEK, the expected peptide from a +1 frameshift beginning with the CGA codon in the P site of the ribosome. Thus, we infer that frameshift occurs with CGA in the P site, yielding only one Arg amino acid on the nascent peptide, then switches to a glycine codon GGC.
 
@@ -116,7 +164,220 @@ The eukaryotic specific reading frame maintenance activity, involving Mbf1 and r
 
 ## Materials and methods
 
-## Strains, plasmids, and oligonucleotides
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces  cerevisiae)</td>
+      <td>MBF1/ YOR298C-A</td>
+      <td></td>
+      <td>SGD:S000007253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ASC1/ YMR116C</td>
+      <td></td>
+      <td>SGD:S000004722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>RPS3/ YNL178W</td>
+      <td></td>
+      <td>SGD:S000005122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, MATa)</td>
+      <td>BY4741</td>
+      <td>Open Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, MATα)</td>
+      <td>BY4742</td>
+      <td>Open Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>See Supplementary table 1 in Supplementary file 3</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA High Affinity (Rat monoclonal)</td>
+      <td>Roche</td>
+      <td>3F10, catalog# 11867423001; RRID:AB_10094468</td>
+      <td>1:3000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rat IgG-HRP conjugate</td>
+      <td>Jackson Immuno Research</td>
+      <td>catalog# 112-035-003; RRID:AB_2338128</td>
+      <td>1:5000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-G-6-PDH (Rabbit monoclonal)</td>
+      <td>Sigma</td>
+      <td>catalog# A9521; RRID: AB_258454</td>
+      <td>1:5000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti- Rabbit IgG- HRP conjugate</td>
+      <td>Biorad</td>
+      <td>catalog# 1706515; RRID:AB_11125142</td>
+      <td>1:10000 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant  DNA reagent</td>
+      <td>See Supplementary table 2 in Supplementary file 3</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>See Supplementary table 3 in Supplementary file 3</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence -based reagent</td>
+      <td>Random Primers</td>
+      <td>Invitrogen</td>
+      <td>catalog# 48190011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 DNA Polymerase, LIC-qualified</td>
+      <td>Novagen</td>
+      <td>catalog# 70099</td>
+      <td>Used for ligation- independent cloning</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Super Script II Reverse Transcriptase</td>
+      <td>Invitrogen</td>
+      <td>catalog# 18064014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RQ1 Rnase- Free Dnase</td>
+      <td>Promega</td>
+      <td>catalog# M6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboMAX Large Scale RNA Production System-T7</td>
+      <td>Promega</td>
+      <td>catalog# P1300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MicroSpin G-25 columns</td>
+      <td>GE</td>
+      <td>catalog# 27-5325-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fast SYBR Green Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>catalog# 4385612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glutathione sepharose-4B</td>
+      <td>GE</td>
+      <td>catalog# 17-0756-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MagStrep ‘type3’ XT beads</td>
+      <td>IBA</td>
+      <td>catalog# 2-4090-002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-FOA</td>
+      <td>USBiological</td>
+      <td>catalog# F5050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete mini EDTA-free protease inhibitor</td>
+      <td>Roche</td>
+      <td>catalog# 11836170001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>leupeptin</td>
+      <td>Roche</td>
+      <td>catalog# 11017128001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pepstatin</td>
+      <td>Roche</td>
+      <td>catalog# 11359053001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutathione</td>
+      <td>Sigma</td>
+      <td>catalog# G4251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin</td>
+      <td>IBA</td>
+      <td>catalog# 2-1016-002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MultAlin</td>
+      <td>(Corpet, 1988)</td>
+      <td>http://multalin.toulouse.inra.fr/multalin/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains, plasmids, and oligonucleotides
 
 Strains, plasmids, and oligonucleotides used in these studies are listed in Supplementary file 3, Tables 1-3. Parents for all yeast strains described in this study were either BY4741 (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0) or BY4742 (MATαhis3Δ1 leu2Δ0 lys2Δ0 ura3Δ0) (Open Biosystems). The GLN4(1-99)-(CGA)6+1-URA3 reporter used in the selection was constructed with PCR-amplified DNAs (using oligonucleotides OJYW085, 086, 041, 089, 095 and 099), assembled by Ligation Independent Cloning (LIC) methods (Alexandrov et al., 2004; Aslanidis and de Jong, 1990) and then integrated into the CAN1/YEL063C locus on the chromosome V, selecting for canavanine-resistance; constructs were checked by sequencing of genomic PCR fragments. RNA-ID reporters were constructed as described previously and integrated at the ADE2 locus, using selection with MET15 marker in MATa strains or S.pombe HIS5 marker in MATα strains (Dean and Grayhack, 2012; Gamble et al., 2016; Wolf and Grayhack, 2015).
 
@@ -124,7 +385,7 @@ Yeast strains bearing MBF1 deletions were constructed by amplification of the ka
 
 Plasmids bearing the MBF1 gene were constructed by amplification of chromosomal MBF1 gene from −580 in 5’ UTR to +300 in 3’ UTR with oligos OJYW124 and OJYW125, followed by cloning into the 2µ, LEU2 vector (pAVA0577) and into the CEN, LEU2 vector (pAVA0581) to create pEJYW203 and pEJYW176 respectively. The chromosomal HA-tagged MBF1 was constructed by PCR amplification of HA-kanR sequence from pYM45 (Euroscarf) (Janke et al., 2004) with oligos OJYW130 and OJYW132, bearing homology to MBF1, followed by integration into the MBF1 locus. This MBF1-HA KanR cassette from −580 in 5’UTR to +300 in 3’UTR of MBF1 (+1992 including KanR sequences) was amplified from the chromosome with oligos OJYW157 and OJYW158, cloned into the XmaI and NheI sites in Bluescript as pEJYW279. The mbf1 point mutations K64E and I85T were individually introduced into the plasmid pEJYW279 to make pEJYW302 and pEJYW307 respectively. The mbf1-K64E cassette was directly PCR-amplified from the mutant strain YJYW290-P38 with oligos OJYW157 and OJYW158 followed by digestion with XmaI and BamHI and integration into these two sites on pEJYW279. The mbf1-I85T mutation was introduced by PCR amplification from MBF1-HA cassette with OJYW170, which contains the mutation, and OJYW166, followed by integration into pEJYW279 between BamHI and AatII sites. Reconstructed mbf1 point mutants were introduced into YJYW2566 (BY4741, HIS3+) with XmaI/NheI digested pEJYW302 and pEJYW307 selecting with KanR marker. The plasmid template for in vitro transcription of GFP and RFP fragments (pEJYW407 and pEJYW409) was constructed by PCR-amplifying pEAW315 with oligos OJYW295/OJYW296 (for GFP) or OJYW297/OJYW299 (for RFP) followed by digestion with SphI and XmaI and integration into these two sites on pSP73 (Promega, cat.# P2221). Plasmids expressing tRNAs were obtained from Phizicky and Grayhack lab stocks (Guy et al., 2012; Han et al., 2015; Letzring et al., 2010).
 
-## Selection for frameshifting mutants and identification of mutations
+### Selection for frameshifting mutants and identification of mutations
 
 Ura+ mutants were selected from 40 independent cultures of each MATa and MATα parent strains (YJYW289, YJYW329), and then were analyzed by flow cytometry to measure GFP and RFP expression. Ura+ GFP+ mutants, indicative of increased frameshifting efficiency, were selected for further study, with an emphasis on mutants that exhibited higher levels of frameshifting, that is GFP/RFP >4, (28% MATα and 66% MATa mutants). Diploids between 12 MATa mutant and 20 MATα mutants were created by mating in YPD for 2 hr at 25°C and selection on SD-Lys-Leu-His media for diploid cells, followed by streaking for single colonies. Then overnights of the resultant diploids and their haploid parents were spotted on SD-Leu and SD-Leu-Ura plates, which were grown at 30°C.
 
@@ -132,25 +393,25 @@ To identify the relevant mutation in YJYW290-P25, we obtained the Leu- derivativ
 
 Whole genome sequencing on two dominant MATα mutants was performed to identify the mutated genes. For each strain,~30 OD600 yeast cells were harvested and re-suspended in 1 ml prep buffer (2% Triton X-100, 1% SDS, 100 mM NaCl, 10 mM Tris-Cl pH 8.0, 1 mM EDTA) with ~1.5 g Zirconia/Silica beads (from BioSpec, catalog# 11079105z) and 1 ml PCA pH 8.0. The suspension was then vortexed at top speed for 3 min and mixed with 1 ml TE pH 8.0, followed by centrifugation in prespun PLG tubes (from 5prime, catalog# 2302830). Nucleic acids in the aqueous layer were ethanol precipitated with 5 ml 100% ethanol, followed by freezing on dry ice and centrifugation for 20 min at 4,000 rpm at 4°C. The pellet was re-suspended in 200 µl TE and incubated at room temperature for 1 hr with 0.2 µg/µl RNaseA to remove RNA contamination, followed by addition of 200 µl 1 M Tris-Cl pH 8.0, 2 µl of 5 mg/ml glycogen and 400 µl PCA, and centrifugation for 2 min at top speed at 4°C. The aqueous layer (~360 µl) was precipitated with 720 µl 100% ethanol and frozen on dry ice for 15 min; resulting pellets were re-suspended in 100 µl TE pH 8.0 and 100 µl 1 M Tris-Cl pH 8.0, followed by precipitation again with 400 µl 100% ethanol. The DNA pellet was then washed with 500 µl 70% ethanol and finally re-suspended in 50 µl sterile ddH2O. Whole genome sequencing was performed by the UR Genomics Research Center resulting in RPS3 mutations in these two MATα mutants. Mutations in two MATa dominant mutants were then identified by amplification of RPS3 cassette with oligos OJYW159 and OJYW210, followed by sequencing.
 
-## Analysis of yeast growth
+### Analysis of yeast growth
 
 Appropriate control strains (previously studied) and 2–4 independent isolates of each strain being tested were grown overnight at 30°C in media indicated, diluted to obtain OD600 of 0.5, then serially diluted 10-fold twice; 2 µl diluted cells were then spotted onto the indicated plates and grown at different temperatures for at least two days.
 
-## Flow cytometry
+### Flow cytometry
 
 To examine mutants in either RPS3 or ASC1, reporters were introduced into sets of strains bearing an URA3 covering plasmid with either RPS3 or ASC1, depending upon the chromosomal deletion. All sets of strains in a given panel contained the same URA3 plasmid. Prior to analysis of GFP expression, strains were streaked on FOA containing plates, then single colonies were grown for analysis by flow cytometry.
 
 Yeast strains bearing the modified RNA-ID reporters were grown overnight at 30°C in YP media (for strains without plasmid) or appropriate synthetic drop-out media (for strains with plasmid) containing 2% raffinose + 2% galactose + 80 mg/L Ade. The cell culture was diluted in the morning such that to the culture had a final OD600 between 0.8–1.0. Analytical flow cytometry and downstream analysis were performed for four independent isolates of each strain (Outliers were rejected using a Q test with >90% confidence level) as previously described (Dean and Grayhack, 2012). Each flow experiment was also performed with proper controls including a GFP-, RFP+ strain. The GFP/RFP value from this control strain was subtracted from all tested strains on the same day to show signals above background (negative values are set to 0). P values were calculated using a one-tailed or two-tailed homoscedastic t test in Excel, as indicated in the source data for relevant figures.
 
-## Western blotting
+### Western blotting
 
 Western analysis of the GFP fusion proteins in the modified RNA-ID reporter and Mbf1 protein in yeast strains were performed with anti-HA antibody as described previously (Gelperin et al., 2005).
 
-## RT-qPCR
+### RT-qPCR
 
 mRNA measurements with reverse transcription (RT) reaction and quantitative PCR were performed as described previously (Gamble et al., 2016) with one significant difference. Quantification of mRNA was performed using in vitro transcribed GFP and RFP mRNA fragments, synthesized from linearized plasmid pEJYW407 and pEJYW409 using RiboMAX Large Scale RNA Production System-T7 (Promega, cat.# P1300). The synthesis reaction was followed by DNase treatment to remove the DNA template and by elution through MicroSpin G-25 columns (GE, cat.# 27-5325-01) to remove unincorporated nucleotides. The synthesized RNA sample was analyzed by ultraviolet light absorbance at 260 nm on a nanodrop to determine the concentration and by electrophoresis to assess integrity. Each qPCR plate contained 5-point 1:5 dilution standard curves for both GFP and RFP, which were optimized to ensure that all samples fall into the linear range of the curves. For each tested strain, three biological replicates were analyzed.
 
-## Purification of frameshifted peptide
+### Purification of frameshifted peptide
 
 To purify the frameshifted peptide from yeast, a LEU2 plasmid containing either in-frame or +1 frame protein purification constructs were transformed into the asc1Δ mbf1Δ strain (YJYW378). Two independent transformants (FOA treated) of each construct were grown overnight in SD-Leu media and transferred into 80 ml S-Leu + 2% raffinose media in the morning. After reaching an OD600 of 0.8–1.2, expression of the GST-StrepII-ZZ construct was induced by addition of 40 ml 3xYP + 6% galactose and growth was continued for 10 hr. Cells were collected by centrifugation and cell pellets were quick frozen on dry ice. The cell pellets were re-suspended in 1 ml extraction buffer (50 mM Tris-Cl pH 7.5, 1 mM EDTA, 4 mM MgCl2, 5 mM DTT, 10% Glycerol, 1 M NaCl, 2.5 µg/ml leupeptin, 2.5 µg/ml pepstatin) and lysed with bead beating (10 repeats of 20 s beating followed by 1 min on ice), essentially as described previously (Quartley et al., 2009). The cell lysate was collected from the bead beating tubes by puncturing the bottom with a hot needle and blowing with low pressure air. Solid contents were removed by centrifugation before the remaining lysate was divided into half and purified on either GSH or Streptactin resin.
 
@@ -158,6 +419,6 @@ For GST purification: the cell lysate was first diluted with equal volume No Sal
 
 For Strep purification: the cell lysate was diluted with 5x volumes No Salt Wash Buffer (100 mM Tris-Cl pH 7.5, 1 mM EDTA, 2.5 µg/ml leupeptin, 2.5 µg/ml pepstatin) to bring the salt to 150 mM NaCl. MagStrep ‘type3’ XT beads [from IBA, cat# 2-4090-002; pre-washed with Wash Buffer (No Salt Wash Buffer + 150 mM NaCl)] were added to the diluted cell lysate (80 µl/ 3.3 ml diluted cell lysate). After nutating for 2 hr at 4°C, resins were separated from liquid using a magnetic separator, then the resin was washed with 1 ml Wash Buffer three times without additional incubation. The bound protein products were then eluted by adding 50 µl Elution Buffer (Wash buffer + 50 mM biotin) and nutating for 10 min, followed by separation using magnetic separator; the elution step was repeated to increase the yield.
 
-## Mass spectrometry
+### Mass spectrometry
 
 The elution samples from both GST and Strep purification were analyzed by SDS-PAGE, followed by staining with Coomassie Blue. The bands from Strep purification of both in-frame and +1 frame constructs were excised and analyzed on the Q Exactive Plus Mass Spectrometer in the Mass Spectrometry Resource Center of the University of Rochester Medical Center.

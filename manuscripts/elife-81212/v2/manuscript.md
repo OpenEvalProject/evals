@@ -21,16 +21,16 @@
 
 ### Affiliations
 
-1. https://ror.org/05a28rw58 Institute of Food, Nutrition and Health, Department of Health Sciences and Technology, ETH Zurich Zürich Switzerland
-2. https://ror.org/05a28rw58 Institute of Microbiology, Department of Biology, ETH Zurich Zurich Switzerland
-3. https://ror.org/01c2cjg59 Sorbonne Université, CNRS, Institut de Biologie Paris-Seine (IBPS), Laboratoire Jean Perrin (LJP) Paris France
-4. https://ror.org/00jmfr291 Department of Microbiology and Immunology, University of Michigan Medical School Ann Arbor United States
+1. Institute of Food, Nutrition and Health, Department of Health Sciences and Technology, ETH Zurich Zürich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+2. Institute of Microbiology, Department of Biology, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+3. Sorbonne Université, CNRS, Institut de Biologie Paris-Seine (IBPS), Laboratoire Jean Perrin (LJP) Paris France ([ROR:01c2cjg59](https://ror.org/01c2cjg59))
+4. Department of Microbiology and Immunology, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
 ## Abstract
 
-Many microbiota-based therapeutics rely on our ability to introduce a microbe of choice into an already-colonized intestine. In this study, we used genetically barcoded Bacteroides thetaiotaomicron ( B. theta ) strains to quantify population bottlenecks experienced by a B. theta population during colonization of the mouse gut. As expected, this reveals an inverse relationship between microbiota complexity and the probability that an individual wildtype B. theta clone will colonize the gut. The polysaccharide capsule of B. theta is important for resistance against attacks from other bacteria, phage, and the host immune system, and correspondingly acapsular B. theta loses in competitive colonization against the wildtype strain. Surprisingly, the acapsular strain did not show a colonization defect in mice with a low-complexity microbiota, as we found that acapsular strains have an indistinguishable colonization probability to the wildtype strain on single-strain colonization. This discrepancy could be resolved by tracking in vivo growth dynamics of both strains: acapsular B.theta shows a longer lag phase in the gut lumen as well as a slightly slower net growth rate. Therefore, as long as there is no niche competitor for the acapsular strain, this has only a small influence on colonization probability. However, the presence of a strong niche competitor (i.e., wildtype B. theta , SPF microbiota) rapidly excludes the acapsular strain during competitive colonization. Correspondingly, the acapsular strain shows a similarly low colonization probability in the context of a co-colonization with the wildtype strain or a complete microbiota. In summary, neutral tagging and detailed analysis of bacterial growth kinetics can therefore quantify the mechanisms of colonization resistance in differently-colonized animals.
+Many microbiota-based therapeutics rely on our ability to introduce a microbe of choice into an already-colonized intestine. In this study, we used genetically barcoded Bacteroides thetaiotaomicron (B. theta) strains to quantify population bottlenecks experienced by a B. theta population during colonization of the mouse gut. As expected, this reveals an inverse relationship between microbiota complexity and the probability that an individual wildtype B. theta clone will colonize the gut. The polysaccharide capsule of B. theta is important for resistance against attacks from other bacteria, phage, and the host immune system, and correspondingly acapsular B. theta loses in competitive colonization against the wildtype strain. Surprisingly, the acapsular strain did not show a colonization defect in mice with a low-complexity microbiota, as we found that acapsular strains have an indistinguishable colonization probability to the wildtype strain on single-strain colonization. This discrepancy could be resolved by tracking in vivo growth dynamics of both strains: acapsular B.theta shows a longer lag phase in the gut lumen as well as a slightly slower net growth rate. Therefore, as long as there is no niche competitor for the acapsular strain, this has only a small influence on colonization probability. However, the presence of a strong niche competitor (i.e., wildtype B. theta, SPF microbiota) rapidly excludes the acapsular strain during competitive colonization. Correspondingly, the acapsular strain shows a similarly low colonization probability in the context of a co-colonization with the wildtype strain or a complete microbiota. In summary, neutral tagging and detailed analysis of bacterial growth kinetics can therefore quantify the mechanisms of colonization resistance in differently-colonized animals.
 
 ## Introduction
 
@@ -44,49 +44,133 @@ To quantify the processes determining success of B. theta colonization in the pr
 
 ## Results
 
-## Genetically barcoded B. theta strains to study within-host population dynamics
+### Genetically barcoded B. theta strains to study within-host population dynamics
 
 B. theta VPI-5482 can phase vary the expression of eight different capsular polysaccharides (WT). B. theta Δcps strain that cannot produce capsule was generated previously by sequentially deleting all CPS gene clusters (acapsular) (Porter et al., 2017). We first established neutrally tagged clones of these strains by inserting a genetic barcode linked to an antibiotic resistance cassette and a fluorescent protein gene into the genome using the previously described pNBU2 integration plasmid. Six barcode sequences, previously developed and validated for Salmonella (wild-type isogenic tagged strains [WITS]; Grant et al., 2008; Maier et al., 2014) were inserted adjacent to an erythromycin-resistance cassette, ermG (Cheng et al., 2000), and a GFP or mCherry fluorescent protein gene under a strong constitutive promoter. Untagged strains were generated by inserting pNBU2 carrying the tetQb tetracycline resistance cassette (Nikolich et al., 1992) and a GFP gene under the control of a strong constitutive promoter into the same integration site (Figure 1A, Key Resources Table). Fluorescent proteins (GFP or mCherry), expressed from a phage promoter with an optimized ribosome binding site, were included to permit later visualization of clones (Wang et al., 2000; Whitaker et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of insertions in B. theta genome. The barcoded strains carried the barcode, erythromycin resistance cassette, and fluorescent protein in the genome. The untagged B. theta carried a tetracycline resistance cassette together with a fluorescent protein inserted at the same position in the genome. (B) Workflow for barcoded strain enrichment and quantification. (C) Growth curves of B. theta WT and acapsular barcoded strains in BHIS media (n = 3, replicative cultures per strain) and growth rates (1/hr, mean and 95% confidence interval) per barcode. (D) Experimental design of in vivo competitions to confirm equal fitness of the barcoded strains. Each strain (B. theta untagged and six B. theta barcoded) were mixed in an equal ratio (inoculum: 106 CFU per strain). (E) Barcode distribution during colonization among six B. theta barcoded strains either WT or acapsular. Plots show distribution of barcodes in the inoculum, in cecal content of individual mice after 48 hr of colonization and fold increase of each barcode per mouse compared to the inoculum (n = 5 mice colonized). (F) Competitive index of tetracycline-resistant untagged strain (Tet) over the erythromycin-resistant barcoded strain (Ery) in vivo after 48 hr of colonization of B. theta WT or acapsular in cecal content and in feces (n = 2 replicative cultures in inoculum; n = 5 mice colonized). Points represent individual mice, and the horizontal line is the mean. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. Data are included in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Barcoded WT B. theta were mixed serially diluted 100–10–4-fold. Randomly one dilution of each strain was selected for each dilution point and mixed (i.e., 100 barcode wild-type isogenic tagged strains [WITS] 1, 10–1 barcode WITS 17, 10–2 barcode WITS 11, 10–3 barcode WITS 21, and 10–4 barcode WITS 2). We repeated this process until each strain is present in a mix at least once on each dilution point. Approximately 106 CFU of these mixtures were inoculated into 5 ml BHIS. Relative abundance after overnight growth in BHIS (y-axis) was calculated by qPCR and CFU determination. Pielou’s evenness (numbers above the graph) was estimated with a maximum possible value of Hmax = ln(6) for all data points (six barcoded strains) at each dilution. Data are included in Figure 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Experimental design of in vitro competitions. Each strain (B. theta untagged, tetracycline resistant, and six B. theta barcoded, erythromycin resistant) were mixed in an equal ratio (inoculum: 106 CFU per strain). (B) Tags distribution after in vitro competition among six B. theta barcoded strains either WT or acapsular to demonstrate neutrality in vitro. Plots show distribution of barcodes in the inoculum, in individual overnight cultures, and fold increase of each barcode per culture compared to the inoculum (n = 3 replicates overnight cultures). (C) Competitive index of tetracycline-resistant untagged strain (Tet) over the erythromycin-resistant barcoded strain (Ery) in vitro after overnight cultures (n = 3 for replicative cultures in inoculum and overnight cultures). Points represent individual overnight cultures, and the horizontal line is the mean. p-Values were obtained by Welch t-test. Data are included in Figure 1—source data 1.
+
 We validated a system to enrich barcoded strains from overall very low frequencies (Figure 1B) Samples were plated on BHIS agar with gentamycin to determine the total B. theta CFU and on BHIS agar containing the appropriate antibiotic (erythromycin or tetracycline) to determine the total barcoded B. theta CFU. Subsequently, all B. theta was washed from the plates, and genomic DNA extracted. The relative frequency of each barcode among the recovered colonies was obtained by qPCR using primer sets specific for each barcode. CFU of each individual barcoded strain can then be determined by simple multiplication. Serial dilution and recovery of barcoded strains in in vitro systems shows excellent resolution over five orders of magnitude (Figure 1—figure supplement 1).
 
-## Genetic barcode tags do not strongly affect fitness of B. theta strains
+### Genetic barcode tags do not strongly affect fitness of B. theta strains
 
 A critical assumption of any analysis using genetically barcoded strains is that the chromosomal insertions, as well as the construction process, have not altered the fitness of the strains compared to the WT strain. Anaerobic growth in BHIS media was near-identical in all the barcoded B. theta strains (median doubling time ranged from 78 to 90 min) (Figure 1C). Correspondingly, the barcoded strains maintained their relative abundances, as evaluated by qPCR, when all barcode strains were mixed and grown overnight (Figure 1—figure supplement 2A and B). Whole-genome sequencing of the barcoded strains revealed a few synonymous and non-synonymous mutations, as would be expected for the construction process of individual strains (Supplementary file 1). However, none of the identified mutations is expected to have a major fitness effect, consistent with our observed data.
 
 To test whether the tags confer a fitness effect upon colonization of a host, we colonized germ-free (GF) mice with a uniform mixture of 106 CFUs of the untagged strain and each barcoded strain (Figure 1D). At this barcode abundance, stochastic loss of tags is highly unlikely. We compared the relative abundance of each barcode in the inoculum to that in the cecal content and feces after 48 hr of colonization. These experiments revealed small, random deviations in the distribution, consistent with uniform fitness (Figure 1E). Finally, as erythromycin- and tetracycline resistance were used to distinguish the barcoded and untagged B. theta strains, we also tested whether the antibiotic resistant cassettes alter competitive fitness. In culture, we found a minor competitive advantage of the tetracycline expressing strains over erythromycin only in the acapsular strain (Figure 1—figure supplement 2C). However, there was no significant competitive advantage of any antibiotic cassette after 2 days of colonization in GF mice (Figure 1F). As all barcoded strains carried the erythromycin resistance cassette, small fitness effects associated with the cassette will not affect competition between the barcoded strains. In competitive colonization, tetracycline and erythromycin resistances were reversed in two sets of experiments with similar results, and a simple model based on this data suggests a maximum error due to the antibiotic fitness effect of twofold. This is small compared to the relative competitive fitness of the acapsular and wildtype B. theta strains. Therefore, while absolute equivalent fitness is near-impossible to achieve in these systems, the error due to unintended fitness effects is within an acceptable range.
 
-## Determining inoculum size of barcoded strains that yields maximal information upon B. theta colonization
+### Determining inoculum size of barcoded strains that yields maximal information upon B. theta colonization
 
 We then applied the neutrally barcoded B. theta strains to estimate colonization probabilities. As invasion probabilities depend on the interaction with the resident microbiota (Kurkjian et al., 2021), we probed B. theta colonization in mice carrying three different communities: low-complexity microbiota (LCM) Stecher et al., 2010; Oligo Mouse Microbiota (OligoMM12) (Brugiroux et al., 2016), and SPF microbiota. These include two low-complexity microbiota models with a reduced set of strains (LCM: 8 strains and OligoMM12: 12 strains) and the closest model for complete microbiota in laboratory mice (SPF: 12 families that include several species) (Figure 2—figure supplement 1). We evaluate the distribution of barcoded B. theta cells in cecum content at 48 hr after initial colonization, a time point shortly after the B. theta population in the cecum reaches carrying capacity (Figure 2—figure supplement 2).
 
-Assuming that the change in relative abundance of tags before and after the colonization process is due to stochastic loss of B. theta, we formulated a simple ‘initial’ model that allows us to infer a per-cell colonization probability for B. theta. The model assumes that B. theta cells undergo random killing during their transition through the stomach and small intestine, that is, the population experiences an initial bottleneck event. Surviving cells arriving in the cecum start growing and the clonal progeny of these cells can be quantified at 48 hr post-colonization via a combination of plating and qPCR (Figure 2A). The number of cells of an individual barcoded clone in the inoculum, n0, is low in our experiments. Correspondingly, the distribution of barcoded bacteria introduced into the stomach of each animal is better approximated by a Poisson distribution of mean n0 than by a uniform distribution. The probability of losing a barcoded clone can be considered equivalent to the fraction of barcoded clones lost across all animals. Considering this early loss of clones as a binomial sampling process, we can express this probability as e-βn0 , where β is the colonization probability of an individual clone from the inoculum. β can therefore be simply computed for animals all receiving an identical inoculum. To increase the power of our observations, we have also pooled data across multiple experiments with small deviations in n0 by maximizing the likelihood of the experimental observations (Figure 2—figure supplements 3 and 4). A more complex calculation can be carried out using the variance of the barcoded population rather than defined loss/retention, a method that can take more information into account, although it is more complicated to execute (see ‘Mathematical modeling’).
+Assuming that the change in relative abundance of tags before and after the colonization process is due to stochastic loss of B. theta, we formulated a simple ‘initial’ model that allows us to infer a per-cell colonization probability for B. theta. The model assumes that B. theta cells undergo random killing during their transition through the stomach and small intestine, that is, the population experiences an initial bottleneck event. Surviving cells arriving in the cecum start growing and the clonal progeny of these cells can be quantified at 48 hr post-colonization via a combination of plating and qPCR (Figure 2A). The number of cells of an individual barcoded clone in the inoculum, n0, is low in our experiments. Correspondingly, the distribution of barcoded bacteria introduced into the stomach of each animal is better approximated by a Poisson distribution of mean n0 than by a uniform distribution. The probability of losing a barcoded clone can be considered equivalent to the fraction of barcoded clones lost across all animals. Considering this early loss of clones as a binomial sampling process, we can express this probability as $e^{-\betan_{0}}$ , where β is the colonization probability of an individual clone from the inoculum. β can therefore be simply computed for animals all receiving an identical inoculum. To increase the power of our observations, we have also pooled data across multiple experiments with small deviations in n0 by maximizing the likelihood of the experimental observations (Figure 2—figure supplements 3 and 4). A more complex calculation can be carried out using the variance of the barcoded population rather than defined loss/retention, a method that can take more information into account, although it is more complicated to execute (see ‘Mathematical modeling’).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of experimental estimation of colonization probability. The untagged strain was tetracycline-resistant, and all barcoded strains were erythromycin-resistant. (B) Pielou’s evenness vs. n0. Pielou’s evenness was estimated with a maximum possible value of Hmax = ln(6) for all data points (six barcoded strains). Each dot represents the evenness calculated per mouse. Values of n0 for which all barcodes were lost, and therefore no evenness could be estimated, were marked with ‘Extinct.’ Total inoculum size was maintained at 107 CFU. The exact inocula compositions are shown in Figures 3 and 4. (C, E) Total B. theta population in the cecum at 48 hr post-colonization for (C) WT and (E) acapsular strains. Points represent individual mice and boxplot quartiles provide summary statistics. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. (D, F) Probability of colonization (β) in (D) WT and (F) acapsular in the cecum after 48 hr of colonization using the loss method. Circles represent the best estimate and vertical line the higher and lower bound of the 95% confidence interval. Estimation based on six barcodes times the number of mice (LCM = 17, OligoMM12 = 10, SPF = 11). See ‘Methods’ for parameter estimations. Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Low-complexity microbiota (LCM). Amplicon sequence variants from 16S sequencing were matched at the species level. (B) Oligo Mouse Microbiota (OligoMM12). Amplicon sequence variants from 16S sequencing were matched to the reported 12 species. (C) Specific pathogen free (SPF). Amplicon sequence variants from 16S sequencing were matched at the family level. Raw sequencing data is available in the ENA repository under project ID PRJEB57876 (SPF and LCM) and PRJEB53981 (OligoMM12). Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Mice with three different resident microbiotas (low-complexity microbiota [LCM], Oligo Mouse Microbiota [OligoMM12], specific pathogen free [SPF]; n = 4 per group) were inoculated with 107 CFU of B. theta WT strain (erythromycin-resistant barcode 1), and fecal samples were collected and plated at the depicted time points. Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Abundance of each barcoded strain (n0) spiked in the total inoculum and in the cecum of low-complexity microbiota (LCM), Oligo Mouse Microbiota (OligoMM12), and specific pathogen free (SPF) at 48 hr post colonization. In all experiments, we used 107 CFUs of the untagged strain in the inoculum. Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Abundance of each barcoded strain (n0) spiked in the total inoculum and in the cecum of low-complexity microbiota (LCM), Oligo Mouse Microbiota (OligoMM12), and specific pathogen free (SPF) at 48 hr post colonization. In all experiments, we used 107 CFUs of the untagged strain in the inoculum. Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) In vivo competition among B. theta WT barcoded strains (erythromycin-resistant) reisolated from specific pathogen free (SPF) mice vs. original stock barcoded strains. Plots show distribution of B. theta original and isolated strains in the inoculum (106 CFUs per strain), in cecal content of individual mice after 48 hr of colonization and fold increase of each barcode compared to the inoculum (n = 4 mice recolonized). (B, C) To exclude excessive influence of individual barcoded strains on estimates of colonization probability, we compared results using all data, individual barcodes, and all-data-minus-one barcode. (B) Inference of colonization probability was carried out using data from each barcode individually, using the ‘barcode loss’ method. Lines represent the 95% confidence interval of the colonization probability. Black lines represent the estimates using all data. Each color represents the estimates using the data from only one barcoded strain across all mice. Note than in the case of acapsular colonization of low-complexity microbiota (LCM) and Oligo Mouse Microbiota (OligoMM12) mice, some barcoded strains showed no loss in any animals, so an estimate is here shown assuming loss of one barcode at the lowest n0 number. (C) Colonization probability, from the loss and the variance methods estimated using all data (black) or all data except for one barcode (colors, as indicated in the legend). Lines on each axis represent the 95% confidence interval of the colonization probability estimated by each method. Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Estimates of β in (A) WT and (B) acapsular in the cecum after 48 hr of colonization. Circles represent the best estimate and vertical line the higher and lower bound of the 95% confidence interval. Estimation based on six barcodes × m mice (low-complexity microbiota [LCM] = 17, Oligo Mouse Microbiota [OligoMM12] = 10, specific pathogen free [SPF] = 11) as in Figure 2D and F. Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Bacterial flow cytometry binding curves (median fluorescence intensity) of IgA from intestinal lavage (IL) from naïve SPF mice against B. theta WT and acapsular strains (blue and magenta). As a positive control for high-avidity IgA antibodies binding to B. theta, we included an intestinal lavage from two germ-free (GF) mice that had been vaccinated orally once weekly for 4 weeks with 1011 particles of inactivated B. theta acapsular strain (green). Curves are four-parameter logistic regression fits. (B) Log phase WT and acapsular B. theta strains (300 μl) were added into 3 ml of fresh BHIS media and spiked with 100 μl of sterile-filtered homogenized cecum content from SPF mice. After 15 min of incubation, serial dilutions were plated in BHIS agar plates and incubated overnight. Plates showed no plaques neither in the WT or acapsular strains. Data are included in Figure 2—source data 1.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** GF mice were colonized with an SPF microbiota by co-housing with SPF mice for 14 days (long-term) or 2 days (short-term). Mice were then colonized with 107 CFU untagged acapsular B. theta, tetracycline resistant, and an n0 approximately 1.5 × 103 CFU per barcoded erythromycin-resistant acapsular (B. theta). (A) Total load of acapsular B. theta in cecum of SPF ex-GF mice at 48 hr post B. theta inoculation. Points represent individual mice and boxplot quartiles provide summary statistics. p-Values were obtained by Welch t-test. (B) Colonization probability of B. theta acapsular in SPF ex-GF mice (mean and 95% confidence interval). Data are included in Figure 2—source data 1.
 
 It is important to note that if all tags are lost, or if all tags are recovered, only upper or lower bounds for β can be estimated. Correspondingly, experiments where some, but not all, tags are lost from the final population yield maximum information. To find the optimal n0 that leads to partial barcode loss in vivo, we titrated the barcoded strains into an untagged B. theta population to give n0 values ranging from 18 to 26,666 CFU for each barcoded strain (Figure 2—figure supplements 3 and 4). This was carried out in the context of three different microbiota communities, and for both WT and acapsular B. theta. Recovery of total B. theta and CFUg–1 of barcoded strains from the cecum was determined at 48 hr post-colonization. We used the Pielou evenness (Pielou, 1967) as a summary representation of the distributions of barcoded population (Figure 2B, Figure 2—figure supplements 3 and 4). The resulting β estimates are most robust at an n0 which results in approximately half of the tags being lost (see Appendix 1 ‘Supplementary methods’). In the case of LCM and OligoMM12 low-complexity microbiota mice, an n0 of between 10 and 100 was optimal for both wild-type and acapsular B. theta, that is, 10–100 CFU of each barcoded strain was spiked into an inoculum of 107 untagged B. theta. In the SPF mice, carrying a complex microbiota, an n0 of around 500 was informative for WT, but 5000 CFU were needed of each acapsular barcoded strain.
 
 Finally, we challenged the assumption that loss of barcoded clones was due to stochastic loss. Selective sweeps of a clone, or clones, that have acquired a beneficial mutation would also explain barcode loss. We therefore reisolated abundant barcoded B. theta strains from the 48 hr time point from previous experiments. These were used to assemble an inoculum in which some barcodes were represented by re-isolated strains and others by original ancestral strains. These were mixed at a high n0 (approximately 2 × 106 CFU of each clone per inoculum) and used to colonize SPF mice. There was no consistent advantage of re-isolated strains over ancestral strains in colonizing the cecum at 48 hr post-colonization (Figure 2—figure supplement 5A), consistent with the absence of strongly beneficial mutations in surviving clones. To further confirm the assumption of equal stochastic loss of each barcode, we re-calculated β for all experiments excluding each individual barcode in turn. Excluding data from any one barcode has no statistically significant effect on the estimates of β, as calculated using barcode loss (Figure 2—figure supplement 5B) or variance (Figure 2—figure supplement 5C).
 
-## B. theta colonization probability in LCM, OligoMM12, and SPF mice
+### B. theta colonization probability in LCM, OligoMM12, and SPF mice
 
 The resident microbiota composition in the mammalian gut is one of the main factors constraining the colonization of newly arriving species. This can happen through various mechanisms such as competition for nutrients (Bäumler and Sperandio, 2016; Maier et al., 2013), modification of the intestinal environment (Cremer et al., 2017), via direct suppression of the invaders by phages (Almeida et al., 2019; Barr et al., 2013) or type VI secretion systems (Chatzidaki-Livanis et al., 2016; Wexler et al., 2016). Additionally, the microbiota stimulates host mucosal immunity and influences intestinal physiology (Zheng et al., 2020). B. theta loads in the cecal content at 48 hr post-inoculation were similar in LCM and OligoMM12 mice, but significantly lower in SPF mice (Figure 2C). The colonization probability, β, of barcoded B. theta WT strains, calculated using loss or variance methods, was also lower in SPF mice (Log10(β, colonization probability) ± 2 standard deviations = –2.35 ± 0.14) compared to the two LCM (–1.50 ± 0.10; and Oligo, –1.54 ± 0.13) (Figure 2D, Figure 2—figure supplement 6A). Of note, while the relative size of the final population is 100-fold lower in SPF mice, and the relative colonization probability is only 10-fold lower than in animals with a low-complexity microbiota. This indicates that size of the open niche does not linearly translate into colonization probability, that is, the neutral tagging approach reveals information that cannot be simply gleaned from standard CFU determination.
 
 As CPS are thought to play a crucial role in phage evasion/infection (Porter et al., 2020), immune evasion (Fanning et al., 2012; Hsieh et al., 2020; Porter et al., 2017), and protection from other environmental stressors, we expected to see a decreased colonization probability for acapsular B. theta strains in all microbiota backgrounds. Surprisingly, in LCM mice, the total population size of acapsular B. theta (Figure 2E) and the probability to colonize (Log10β: LCM, –1.43 ± 0.13; and OligoMM12, –1.49 ± 0.14) were not significantly different to the WT strain (Figure 2F, Figure 2—figure supplement 6B). There was therefore no measurable fitness benefit of CPS in gut colonization up to 48 hr post-inoculation in these settings. However, we observed a different scenario when we inoculated acapsular B. theta into mice carrying a SPF microbiota. Both the total population size of acapsular B. theta (Figure 2E) and the colonization probability (Log10β: SPF, –3.65 ± 0.13; Figure 2F) were tenfold lower compared to the WT strain, indicating a strong fitness benefit of CPS in the context of a more diverse microbiota. We could not definitively tie this increased clearance to any particular host or microbial mechanism: SPF mice do not have measurable IgA titers specific for acapsular B. theta (Figure 2—figure supplement 7A), nor could we identify lytic spots produced by phage specific for acapsular B. theta from the cecum content of SPF mice (Figure 2—figure supplement 7B). As microbiota-driven restriction of acapsular B. theta colonization is expected to establish very rapidly on recolonization of a GF mouse, but host-driven mechanisms such as upregulation of antibody responses may take several days to weeks, we compared the acapsular B. theta colonization probability in ex-GF mice that had been recolonized by rehousing with SPF mice for 2 days or for 2 weeks. Although short-term recolonization resulted in a larger B. theta population in the cecum than long-term re-colonization with an SPF microbiota (Figure 2—figure supplement 8A), the colonization probability was near-identical between the two groups (Figure 2—figure supplement 8B). Therefore, mechanisms restricting colonization of acapsular B. theta in SPF mice are either direct microbial competition (e.g., via type VI secretion) and/or are very rapidly induced host mechanisms, or a combination of both.
 
-## Competitive colonization with acapsular and WT B. theta reveals a role of CPS in OligoMM12-colonized mice
+### Competitive colonization with acapsular and WT B. theta reveals a role of CPS in OligoMM12-colonized mice
 
 The absence of a decreased colonization probability for acapsular B. theta in LCM mice apparently conflicts with previous studies showing a competitive fitness defect of this strain (Coyne et al., 2008; Porter et al., 2017). We therefore carried out competitive colonizations with B. theta WT and acapsular strains in all microbiota backgrounds. Starting at a 1:1 ratio, we inoculated mice with erythromycin-resistant WT and tetracycline-resistant acapsular B. theta and quantified the cecal bacterial load 48 hr post-inoculation (Figure 3—figure supplement 1A). This reveals a gradient of competition with the WT winning over the acapsular strain, obtaining a competitive index (abundance of WT over acapsular B. theta at the end of the experiment) of approximately 20 in GF mice, 100 in LCM mice, and 104 in SPF mice (Figure 3A). Therefore, the competitive fitness benefit of CPS increased in proportion to microbiota complexity, despite the fact that no difference on colonization probability of the WT and acapsular B. theta could be detected on single colonization.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig3-v2.jpg)
+
+**Figure 3.:** (A) Competitive index (ratio between WT over acapsular) in the cecum after 48 hr of colonization starting at a 1:1 ratio (inoculum: approximately 106 CFU of each: erythromycin-resistant WT and tetracycline-resistant acapsular; germ-free [GF] = 3, low-complexity microbiota [LCM] = 4, Oligo Mouse Microbiota [OligoMM12] = 4, specific pathogen free [SPF] = 4). Points represent individual mice, and the horizontal line is the mean. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. (B) (Left) Probability of colonization by the acapsular strain during co-colonization with the WT strain. Circles represent the best estimate and vertical line the higher and lower bound of the 95% confidence interval. Barcoded erythromycin-resistant acapsular strains were spiked into a WT untagged strain inoculum (inoculum: 107 of untagged tetracycline-resistant B. theta WT and n0 CFU of erythromycin-resistant barcoded B. theta acapsular adjusted to each microbiota background: n0GF ~ 10, n0LCM ~ 103, n0Oligo ~ 103, n0SPF ~ 106; number of mice per group: GF = 7, LCM = 13, OligoMM12=12, SPF = 16). (Right) Probability of colonization by the acapsular strain when colonizing alone. Graph generated using the same data as Figure 2F. (C, D) Estimation of (C) net growth rate and (D) and delay to start exponential growth (see Figure 3—figure supplement 2 and Appendix 1 for fitting function; n = 7 for WT and n = 9 for acapsular). Points represent estimations of individual mice, and the horizontal line is the mean. p-Values were obtained by Welch t-test. (E) Schematic representation of competitive advantage of the WT over the acapsular B. theta having a similar initial probability of colonization of the cecum: difference in lag phase (mean time to growth commencement in acapsular (τa) and WT (τw)) and difference in net growth rate (growth rate in acapsular (ra) and WT (rw); clearance rate in acapsular (ca) and WT (cw)). Clearance can be due to both flow/loss in the fecal stream and death. (F, G) Estimation of the (F) competitive index and (G) colonization probability of the acapsular strain assuming a mean 4.5 hr difference in lag phase and the estimated difference in net growth rate between the WT and acapsular strains. Circles represent experimental data from (B) and Figure 1C. Triangles represent the best estimate and vertical line the higher and lower bound of the 95% confidence interval. See 'Methods' for parameter estimations. Data are included in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Competition between acapsular and WT strains during colonization starting at a 1:1 ratio. Population density of the WT (erythromycin resistant) and acapsular (tetracycline resistant) strains in cecum after 48 hr of colonization (inoculum and groups as described in Figure 3A). Points represent individual mice and boxplot quartiles provide summary statistics. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. (B, C) Estimation of probability of colonization of the cecum by the acapsular strain using a WT (tetracycline resistant) strain inoculum spiked with erythromycin-resistant barcoded acapsular strains. (B) Population density of the WT strain. Points represent individual mice and boxplot quartiles provide summary statistics. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. (C) Competitive index after correction with the initial WT/acapsular ratio in the inoculum (inoculum as described in Figure 3B). Points represent individual mice, and the horizontal line is the mean. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. Data are included in Figure 3—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic of the analysis of the growth curves with delay (r = absolute growth rate, c = clearance rate, n0 = inoculum size, q = real colonization probability, qapp = observed colonization probability, τ = estimated lag phase, I = concentration value when t = 0). (B, C) Fecal bacterial load of (B) B. theta WT (erythromycin-resistant barcode 1) or (C) acapsular (erythromycin-resistant barcode 1) during single-strain colonization in OligoMM12 mice (n = 7 for WT and n = 9 for acapsular; inoculum n0 ~ 104 CFU of each strain). Estimation of net growth rate (solid line) and delay to start exponential growth (dotted line). Gray dotted line represents limit of detection at Log10(CFUg–1) = 1.5. Values below detection limit have been jittered across the x and y axes and values over the detection limit have been only jittered in the x axis for better visualization. (D) Overlay of fecal bacterial load of B. theta WT (blue) or acapsular (magenta) and net growth rate (solid line) and lag-phase time base (dotted line) based on average estimates from Figure 3D and E. Gray dotted line represents limit of detection at Log10(CFUg–1) = 1.5. Values below detection limit have been jittered across the x and y axes and values over the detection limit have been only jittered in the x axis for better visualization. (E) Fecal bacterial load of B. theta WT (blue, tetracycline-resistant) or acapsular (magenta, erythromycin resistant) during competitive colonization in OligoMM12 mice (n = 3 per group, inoculum n0 ~ 5 × 106 CFU of each strain). Delay to start exponential growth (dotted line) based on fixed net growth rate parameters obtained in (B) and (C). (F) Comparison of delay to start exponential growth of acapsular strain during single and competitive colonization. Estimations obtained from panel (C) (single colonization) and panel (E) (completive colonization with WT strain). Data are included in Figure 3—source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Estimation of growth rate of B. theta WT and other OligoMM12 strains in the cecum mice 8 hr after colonization using peak-to-trough analysis of metagenome sequencing data (n = 6). Points represent individual mice and boxplot quartiles provide summary statistics. Raw sequencing data is available in the ENA repository under project ID PRJEB57876.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Single colonization with WT (erythromycin-resistant barcode 1) or acapsular (erythromycin-resistant barcode 1) strains (inoculum ~107 CFU of each strain). Load quantified 8 hr after inoculation (n = 6 per group). Points represent individual mice, and the horizontal line is the mean. Data are included in Figure 3—source data 1.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A–D) Estimation of the competitive index and colonization probability of the acapsular strain (germ-free [GF] = 7, low-complexity microbiota [LCM] = 13, Oligo Mouse Microbiota [OligoMM12] = 12, specific pathogen free [SPF] = 16): (A, C) assuming no lag phase and estimated difference in net growth rate between the WT and acapsular strains and (B, D) assuming a mean 4.5 hr difference in lag phase and identical net growth rate between the WT and acapsular strains. Circles represent experimental data from Figure 3B and Figure 1C. Triangles represent the best estimate and vertical line the higher and lower bound of the 95% confidence interval. See 'Methods' for parameter estimations. Data are included in Figure 3—source data 1.
+
 To better understand the mechanisms generating a competitive disadvantage for the acapsular strains, we performed a competition experiment in the same microbiota backgrounds, but this time, using tetracycline-resistant B. theta WT and barcoded erythromycin-resistant acapsular B. theta strains. WT strain density (Figure 3—figure supplement 1B) and the average increase in the WT relative to the acapsular strains (after adjusting for the initial ratio in the inoculum, Figure 3—figure supplement 1C) were similar between the two experiments. Interestingly, the colonization probability β was lower for the acapsular B. theta strain when co-colonizing with the WT strain than when colonizing alone (Figure 3B). This indicates that the competition with WT B. theta results in both a lower total population size and increased clonal extinction in the acapsular strains.
 
-## Longer lag phase and higher clearance rate explains fitness defect of acapsular B. theta in competitive colonization
+### Longer lag phase and higher clearance rate explains fitness defect of acapsular B. theta in competitive colonization
 
 To understand how acapsular B. theta can have an indistinguishable colonization probability when inoculated alone, but a major fitness defect in competition with B. theta WT, we carried out time courses of feces collection to estimate the net growth rates (i.e., growth minus clearance) of both strains colonized individually in OligoMM12 mice (Figure 3—figure supplement 2). Using peak-to-trough analysis, we observed that growth rates of B. theta in feces and cecum is similar, and higher than all other OligoMM12 strains at 8 hr post-inoculation, as would be predicted for active growth (Figure 3—figure supplement 3). Longitudinal feces collection was therefore used as a proxy for large-intestinal colonization. Tracking B. theta CFUg–1 in feces over 48 hr demonstrated that the net growth rate of acapsular B. theta is lower than that of WT (Figure 3C, WT: 0.50/hr and acapsular: 0.40/h, p<0.01). Interestingly, detectable exponential growth of acapsular strain starts around 4.5 hr later that for the WT (Figure 3D, WT: 3.2 hr and acapsular: 7.7 hr, p=0.02). As there is an inherent detection limit for CFU, as well as an intrinsic time delay due flow through the gastrointestinal tract this delay could be explained by (1) a classic lag phase (i.e., period of adaption before growth begins), (2) strongly increased killing of the acapsular B. theta during stomach and small intestinal transit, or (3) retention of acapsular B. theta in the non-growth-permissive small intestine. We could exclude differential retention of acapsular B. theta in the small intestine. Analysis of B. theta distribution in the small and large intestine at 8 hr post-colonization indicated that most B. theta had already arrived in the large intestine at this time point. There was no evidence of differential retention of acapsular and WT B. theta in the small intestine (Figure 3—figure supplement 4). We can also largely exclude killing prior to reaching the cecum as B. theta WT and acapsular clones have a very similar probability of colonization in single colonizations of OligoMM12 mice (Figure 2 and figure supplements). For early killing to explain out-competition of the acapsular strain, it would be necessary that the presence of WT B. theta increases acapsular B. theta killing in the stomach or small intestine. As the bacteria are at low density during early infection, it is unlikely that they affect either each other or the host prior to arrival in the large intestine. In contrast, the delay in detectable growth of the acapsular strain is observed both competitive and single colonization of OligoMM12 mice, consistent with a classical lag phase. The magnitude of the delay to detection is similar on single and competitive colonization with WT B. theta (Figure 3—figure supplement 2E and F), consistent with this being an intrinsic feature of the acapsular B. theta strain. We therefore propose that acapsular B. theta exhibits a classical extended lag phase in vivo, likely due to a longer adaption period for the acapsular B. theta to growth in the gut environment.
 
 To further explore this hypothesis, we extended our one-step colonization model to include both a difference in lag phase after arrival in the cecum and/or a difference in net growth rates (Figure 3E). Combining these additional variables generated a model that quite well recapitulates the expected competitive fitness (Figure 3F) and colonization probabilities (Figure 3G) (see 'Methods' for a brief description of the model and Appendix 1 'Supplementary methods' for the description of all parameters used). Running the same model based only on identical growth rates, but different lag phase produces a worse prediction of the competitive index, while omitting the lag-phase difference produces a similarly good fit (Figure 3—figure supplement 5). Therefore, the competitive fitness defect of the acapsular B. theta strains can be explained by a slightly slowed in vivo net growth rate, with a small contribution from an extended in vivo lag phase.
 
-## Acute challenges modify B. theta population dynamics in vivo
+### Acute challenges modify B. theta population dynamics in vivo
 
 Finally, as a proof of concept for neutral tagging in the study of established microbiota, we used our system to probe clonal extinction when an established B. theta population in the gut is challenged by two major environmental perturbations: (1) shifting from standard chow to a high-fat no-fiber diet (HFD) (David et al., 2014; Wotzka et al., 2019) and (2) infectious inflammation driven by Salmonella Typhimurium (Stm) (Maier et al., 2014). To exclude microbe–microbe interactions from the possible observed mechanisms, we monocolonized GF mice with a mixture of untagged and barcoded B. theta WT strains such that all tags were present with a roughly uniform distribution prior to intervention, that is, minimum loss, in the gut lumen prior to challenge (Figure 4A, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of experimental estimation of colonization survival probability after acute challenges. (B, C) Germ-free (GF) mice were colonized with an inoculum of ~109 CFU untagged tetracycline-resistant B. theta WT spiked with barcoded erythromycin-resistant WT strains. The number of spiked CFU of each individual barcode per experiment (n0) is described in Figure 4—figure supplement 1. (B) Population of B. theta in monocolonized ex-GF mice kept under standard chow (control) and during acute challenge with high-fat diet (HFD), infection with attenuated Salmonella (Stm) (ΔssaV) or avirulent (ΔssaVΔinvG) Salmonella. Points represent individual mice and boxplot quartiles provide summary statistics. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. (C) Probability of surviving in the cecum after 3 days of the acute challenge. Estimation based on six barcodes timer the total number of mice (Control = 12, HFD = 13, Stm attenuated = 14, Stm avirulent = 5). Circle represent the best estimate and vertical line the higher and lower bound of the 95% confidence interval. Data are included in Figure 3—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Relative abundance of each barcoded strain spiked in the total inoculum, and in the cecum, of germ-free (GF) mice after 3 days of the challenge measure by qPCR. Gray dotted line marked the detection limit, set by qPCR amplification of GF mice cecum content without barcoded B. theta strains. On each experiment, n0 represents the approximate number of each barcoded strain spiked in the inoculum. In all experiments, we used 109 CFUs of the untagged strain in the inoculum to achieve the required starting abundance of each barcoded strain. Data are included in Figure 4—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81212/elife-81212-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** B. theta WT monocolonized mice, shown in Figure 4, were challenged with Stm avirulent (SPI-1/SPI-2 KO) or Stm attenuated (SPI2-KO). (A) Stm load in feces at day 3 of after infection. Points represent estimations of individual mice, and the horizontal line is the mean. p-Vvalues were obtained by Welch t-test. (B) Lipocalin-2 levels in cecum at day 3 post Stm infection. Points represent estimations of individual mice, and the horizontal line is the mean. p-Values were obtained by one-way ANOVA followed by Tukey’s honest significance test. Data are included in Figure 4—source data 1.
 
 In the first set of challenges, after 4 days of colonization, we exposed mice to oral infection with 106–107 CFUs of a Stm strain either attenuated (SL1344 ΔssaV, no SPI-2) or fully avirulent (SL1344 ΔinvGΔsseD, no SPI-1 or SPI-2). Despite similar Stm loads (Figure 4—figure supplement 2A), the attenuated strain induces moderate intestinal inflammation in GF mice while the fully avirulent strain does not induce visible gut inflammation (Hapfelmeier et al., 2005; Stecher et al., 2005; Figure 4—figure supplement 2B). B. theta populations were monitored in feces before the challenge was administered and 3 days after the challenge in feces and cecum. In line with the models presented above, cecum content values were used for inference of the bottleneck size.
 
@@ -108,136 +192,433 @@ By combining mathematical modeling with direct quantification of bacterial popul
 
 ## Methods
 
-## Bacterial strains and cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Bacteroides thetaiotaomicron)</td>
+      <td>B. theta WT</td>
+      <td>Porter et al., 2017</td>
+      <td>Not applicable</td>
+      <td>tdk-Parent strain of B. theta VPI-5482 (ATCC 29148). Used to generate wild-type CPS mutants in this study.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular</td>
+      <td>Porter et al., 2017</td>
+      <td>Not applicable</td>
+      <td>tdk- Δcps1-8Acapsular B. theta with deletion of capsular polysaccharide locus. Used to generate acapsular mutants in this study.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta WT barcode 1</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk-:: pNBU2-cat-ermG-GFP-WITS1B. theta WT strain isogenic barcode 1; GFP tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta WT barcode 2</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk-:: pNBU2-cat-ermG-GFP-WITS2B. theta WT strain isogenic barcode 2; GFP tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta WT barcode 11</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk-:: pNBU2-cat-ermG-GFP-WITS11B. theta WT strain isogenic barcode 11; GFP tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta WT barcode 17</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk-:: pNBU2-cat-ermG-mCherry-WITS17B. theta WT strain isogenic barcode 17; mCherry tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta WT barcode 19</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk-:: pNBU2-cat-ermG-mCherry-WITS19B. theta WT strain isogenic barcode 19; mCherry tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta WT barcode 21</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk-:: pNBU2-cat-ermG-mCherry-WITS21B. theta WT strain isogenic barcode 21; mCherry tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular barcode 1</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk- Δcps1-8:: pNBU2-cat-ermG-GFP-WITS1B. theta acapsular strain with isogenic barcode 1; GFP tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular barcode 2</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk- Δcps1-8:: pNBU2-cat-ermG-GFP-WITS2B. theta acapsular strain with isogenic barcode 1; GFP tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular barcode 11</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk- Δcps1-8:: pNBU2-cat-ermG-GFP-WITS11B. theta acapsular strain with isogenic barcode 1; GFP tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular barcode 17</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk- Δcps1-8:: pNBU2-cat-ermG-mCherry-WITS17B. theta acapsular strain with isogenic barcode 17; mCherry tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular barcode 19</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk- Δcps1-8:: pNBU2-cat-ermG-mCherry-WITS19B. theta acapsular strain with isogenic barcode 19; mCherry tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular barcode 21</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk- Δcps1-8:: pNBU2-cat-ermG-mCherry-WITS21B. theta acapsular strain with isogenic barcode 21; mCherry tag; erythromycin resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta WT untagged</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk-:: pNBU2-bla-tetQbUntagged strain. B. theta WT strain with GFP insert; tetracycline resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. thetaiotaomicron)</td>
+      <td>B. theta acapsular untagged</td>
+      <td>This study</td>
+      <td>PRJEB57876 (ERP142888)</td>
+      <td>tdk- Δcps1-8:: pNBU2-bla-tetQbUntagged strain. B. theta acapsular strain with GFP insert; tetracycline resistant.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Salmonella enterica)</td>
+      <td>Stm attenuated (M3103)</td>
+      <td>Diard et al., 2017</td>
+      <td>Not applicable</td>
+      <td>ΔssaVSalmonella enterica serovar Typhimurium (SL1344), attenuated (SPI-2 KO)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. enterica)</td>
+      <td>Stm avirulent (M2702)</td>
+      <td>Diard et al., 2017</td>
+      <td>Not applicable</td>
+      <td>ΔinvG ΔssaVSalmonella enterica serovar Typhimurium (SL1344), avirulent (SPI-1 KO and SPI-2 KO).</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WITS01_F</td>
+      <td>Maier et al., 2014</td>
+      <td>Forward primer barcoded strain 1</td>
+      <td>acgacaccactccacaccta</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WITS02_F</td>
+      <td>Maier et al., 2014</td>
+      <td>Forward primer barcoded strain 2</td>
+      <td>acccgcaataccaacaactc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WITS11_F</td>
+      <td>Maier et al., 2014</td>
+      <td>Forward primer barcoded strain 11</td>
+      <td>atcccacacactcgatctca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WITS17_F</td>
+      <td>Maier et al., 2014</td>
+      <td>Forward primer barcoded strain 17</td>
+      <td>tcaccagcccaccccctca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WITS19_F</td>
+      <td>Maier et al., 2014</td>
+      <td>Forward primer barcoded strain 19</td>
+      <td>gcactatccagccccataac</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WITS21_F</td>
+      <td>Maier et al., 2014</td>
+      <td>Forward primer barcoded strain 21</td>
+      <td>acaaccaccgatcactctcc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ydgA_R</td>
+      <td>Maier et al., 2014</td>
+      <td>Common reverse primer for all tagged strain</td>
+      <td>ggctgtccgcaatgggtc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BTt70-CHF</td>
+      <td>Jacobson, 2017</td>
+      <td>pNBU2 vector genome integration test</td>
+      <td>TTCAAATTGCTCGGTAAAGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BTt70-CHR</td>
+      <td>Jacobson, 2017</td>
+      <td>pNBU2 vector genome integration test</td>
+      <td>AAAACCTTGATTTTACGGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BTt71-CHF3</td>
+      <td>Jacobson, 2017</td>
+      <td>pNBU2 vector genome integration test</td>
+      <td>TTCGAGGAATGAAGCATCTCCGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BTt71-CHR3</td>
+      <td>Jacobson, 2017</td>
+      <td>pNBU2 vector genome integration test</td>
+      <td>ACCGTTCCGATTCAATTTCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IntN2BTt71-CHF3</td>
+      <td>Jacobson, 2017</td>
+      <td>pNBU2 vector genome integration test</td>
+      <td>TTTCCGGCTCTCCAATGCAA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and cultures
 
 B. theta strains were grown anaerobically (5% H2, 10% CO2, rest N2) at 37°C, overnight in brain heart infusion (BHI) supplemented media (BHIS: 37 g/L BHI [Sigma]; 1 g/L-cysteine [Sigma]; 1 mg/L Hemin [Sigma]). For enrichment cultures in plates, we used BHI-blood agar plates (37 g/L BHI [Sigma]; 1 g/L-cysteine [Sigma]; 10% v/v defribinated sheep blood [Sigma]). Antibiotics were added to liquid cultures or plates as required for strain selection: erythromycin 25 µg/L or tetracycline 2 µg/L. In the case of BHI-blood agar plates used for cloning or gut content enrichment, we additionally added gentamycin 200 µg/L to all plates to prevent growth of other microbiota species. Plates were incubated for 48–72 hr at 37°C in anaerobic conditions. For a complete list of the bacterial strains used in this study, see Key Resources Table.
 
-## Isogenic barcode construction and integration
+### Isogenic barcode construction and integration
 
 Genetic tags, fluorescent proteins, and antibiotic resistance were introduced by using the mobilizable Bacteroides element NBU2, which integrates into the Bacteroides genomes at a conserved location at either BTt70 or BTt71 (Wang et al., 2000). Gene fragments containing a unique 40 bp sequence (biding site for forward primer) and a 609 bp sequence with the ydgA pseudogene (common binding site for reverse primer) were synthesized (gBlocks, Integrated DNA Technologies) and cloned by Gibson Assembly Master Mix (NEB) into an NBU2 plasmid carrying the erythromycin-resistant cassette ermG (barcoded B. theta strains) and a fluorescent GFP or mCherry protein (see Key Resources Table for specific combination of fluorescent protein and tag). A similar NBU2 plasmid carrying the tetracycline-resistant cassette tetQb and the GFP protein was used to construct the untagged strains (B. theta untagged). All fluorescent protein genes have high-expression promoter and an optimized RBS (Whitaker et al., 2017). For both, we used 10 µL of desalted assembly reaction products to transform competent E. coli S17-1 cells (mid-log cells, washed three times in deionized ice-cold water) by electroporation (V = 1.8 kV; MicroPulser, Bio-Rad). After 1 hr recovery at 37°C in 1 mL of LB, cells were plated on LB plates with chloramphenicol (12 µg/mL) and grown overnight. Plasmid-carrying E. coli S17-1 and B. theta strains were cultured overnight in 5 mL of liquid media. E. coli S17-1 and B. theta were washed with PBS, pooled in 1 mL of PBS, plated BHI-blood agar plates without antibiotics, and grown aerobically at 37°C for at least 16 hr. The lawn of E. coli S17-1 and B. theta was collected in 5 mL of PBS, homogenized by vortex, and 100 µL were plated in BHI-blood agar plates supplemented with erythromycin 25 µg/L and gentamycin 200 µg/L. After 48 hr, single colonies were streaked in fresh BHI-blood agar plates with antibiotics to avoid potential contamination with WT strains. Successful insertion in the BTt70 or BTt71 sites was evaluated by PCR (Key Resources Table). To minimize potential variation, we used strains with a single insertion in BTt70. In summary, the barcoded strains carried the barcode, erythromycin resistance cassette and fluorescent protein (GFP or mCherry) in the genome. The untagged B. theta carried a tetracycline resistance cassette together with a GFP protein inserted at the same position in the genome.
 
-## Quantification of barcoded B. theta from mixed samples
+### Quantification of barcoded B. theta from mixed samples
 
 One investigator blinded to sample metadata (i.e., microbiota, bacteria strain used, acute challenge used) performed the sample processing and qPCR quantification of barcodes. Samples were serially diluted and plated on appropriate selective BHIS agar (gentamycin 200 µg/L plus either erythromycin 25 µg/L or tetracycline 2 µg/L) and cultured in 5% H2, 10% CO2, rest N2, at 37°C for 48 hr (Coy Anaerobic tent). CFU determination was carried out by counting, then colonies were washed from the plates (all plates with at least 30 colonies were included), pooled in 5 mL of PBS and homogenized by vortex. Genomic DNA was isolated with the QIAamp DNA Mini Kit (QIAGEN). qPCR was performed using with FastStart Universal SYBR Green Master Mix (Roche, Cat# 4385610). Primers (Key Resources Table) were mixed to a final concentration of 1 µM. Between 160 and 200 ng of DNA was amplified in duplicates using StepOne Plus or QuantStudio 7 Flex instruments (Applied Biosystems) using the following protocol: initial denaturation at 95°C for 14 min followed by 40 cycles of 94°C for 15 s, 61°C for 30 s, and 72°C for 20 s as described previously. As qPCR reactions for these barcodes have identical efficiencies, genomic DNA extracted from a single barcoded strain was used as an internal standard and CT values were backcalculated to this standard curve to generate a relative frequency of each barcode in the pooled colonies. These relative frequencies were then multiplied by the total CFU/g of barcoded B. theta to obtain the CFU/g of each barcoded strain.
 
-## In vitro growth curves and competition
+### In vitro growth curves and competition
 
 Individual B. theta strains were grown overnight on BHIS. Stationary-phase cultures were washed with PBS, and O.D. was quantified and adjusted to 0.05 in 200 µL of fresh BHIS in a round 96-well tissue culture plates. Plates were transferred into the anaerobic tent and growth was quantified at 37°C with shaking using a plate reader (Infinite PRO 200, Tecan).
 
 For competition experiments, stationary-phase cultures B. theta WT or acapsular strains were washed with PBS, O.D. was quantified and adjusted to approximately 5 × 106 CFU/mL per strain (one B. theta untagged and six B. theta barcoded strains) in 10 mL of fresh BHIS. An aliquot of this mix was serially diluted and plated in BHI-blood agar plates with the respective antibiotics for CFU quantification. Cultures were kept overnight, with shaking (800 rpm) at 37°C in the anaerobic tent. Afterward, an aliquot was plated as described before. For assessing the competition between B. theta barcoded strains, we isolated DNA from one of the dilutions used for quantification and assessed the relative distribution of the tags by qPCR (see ‘Quantitative PCR’ section). For assessing the competition among strains with different antibiotic resistances, we calculated the competition index by dividing the CFU/mL of the untagged B. theta untagged strain (tetracycline-resistant) by the adjusted number of B. theta barcoded strains (erythromycin-resistant; CFU/mL divided by six, as all the barcoded strains were present in the culture).
 
-## Mice
+### Mice
 
 All animal experiments were performed with approval from the Zürich Cantonal Authority under license number ZH120/19 and ZH009/21. In all experiments, we used mice with C57BL/6J genetic background, between 12 and 15 weeks old and of variable gender. C57BL/6J GF and gnotobiotic mouse lines (LCM [Stecher et al., 2010]; OligoMM12 [Brugiroux et al., 2016]) were raised in surgical isolators under high hygiene standards at the ETH Phenomic Center and were regularly tested for contamination by aerobic and anaerobic cultivation, culture-independent assessment of intestinal bacterial densities and serology/PCR for common viruses and eukaryotic pathogens. Note that all LCM mouse lines were bred for 1 year (OligoMM12) or more than 10 years (LCM) with their gnotobiotic microbiota. C57BL/6J SPF mouse line was raised in IVC cages in a different barrier unit of the same facility. Mice were transferred to our experimental facility in sterile, tight closed cages and house into the IsoCage P- Bioexclusion System (Tecniplast) for 24–48 hr before the experiment to adapt to new housing conditions. In all experiments, standard chow and water was prepared under strict aseptic conditions to avoid any potential contaminations. Although mice themselves were not randomized on each experiment, cages containing appropriate mouse numbers were randomly assigned to each inoculum/treatment and both genders are represented in all groups.
 
-## In vivo growth curves and competition
+### In vivo growth curves and competition
 
 B. theta WT WITS 01 or B. theta acapsular WITS 01 strain was grown overnight in BHIS. Stationary-phase cultures were washed with PBS, and an inoculum of ~5 × 107 CFUs/100 µL dose was prepared. C57BL/6J mice carrying the described microbiota composition (LCM, OligoMM12, SPF, see figure legends for specific group numbers) were gavaged with the inoculum (either B. theta WT or B. theta acapsular). Fecal pellets were collected approximately every 4 hr post-inoculation. Fecal pellets were weighted and homogenized in 500 µL of PBS with steel ball by mixing (25 Hz, 2.5 min) in a TissueLyser (QIAGEN). Serial dilutions were plated for quantification on BHI-blood agar plates supplemented with gentamycin 200 µg/L and erythromycin 25 µg/L and cultured in anaerobic conditions. Note that zero colonies grew from the feces of LCM, OligoMM12, and SPF mice on BHIS plates with gentamycin and erythromycin.
 
 For competition experiments, B. theta strains were grown overnight in 8 mL of BHIS with corresponding antibiotics (erythromycin 25 µg/L or tetracycline 2 µg/L). Each culture was spun down at 3000 × g for 20 min and resuspended in 10 mL of PBS and individual O.D. was measured (cell number estimation 1 O.D. = ~4 × 108 cells/mL). Each strain was adjusted to approximately 5 × 106 CFU/100 µL dose per strain in the inoculum mix (one B. theta untagged and six B. theta barcoded strains). GF mice were gavaged with 100 µL of the inoculum. After 48 hr, fecal and cecal contents were collected. Fecal content was homogenized and plated for quantification as described before. Cecal content was resuspended in 1 mL of PBS and homogenized with steel ball by mixing with the same protocol (25 Hz, 2.5 min). Serial dilutions were prepared and plated in BHI-blood agar plates supplemented with gentamycin plus either erythromycin or tetracycline for CFU quantification of each strain. Like the in vitro competition experiment, we isolated DNA from one of the dilutions used for quantification to assess the competition between B. theta barcoded strains. Relative distribution of the tags was obtained by qPCR. For calculating the competition index among strains with different antibiotic resistances, we divided the bacteria density of the untagged B. theta untagged strain by a sixth of the bacteria density of the total B. theta barcoded strains (as all six barcoded strains were present in the culture).
 
-## Colonization experiments
+### Colonization experiments
 
 Stationary-phase B. theta cultures were prepared overnight as described before. Each culture was washed with PBS to remove residual antibiotics and adjusted in the inoculum based on its O.D.600nm. Unless otherwise stated, the untagged strain (B. theta untagged) was present at ~5 × 107 CFUs/100 µL dose of the inoculum. For the B. theta barcoded strains, we prepared an initial 1:1:1:1:1:1 mix of all six barcoded strains in 50 mL of PBS at a concentration of 105 CFU/mL of each strain. After mixing by vortex for 1 min, the required amount of B. theta barcoded strains was prepared by serial dilution and spiked into the inoculum (between 30 and 5 × 104 CFUs depending on the experiment). LCM (Oligo) and SPF C57BL/6J mice were gavaged with the 100 µL inoculum. To check composition, the inoculum was serially diluted and plated for quantification of CFUs in BHI-blood agar plates supplemented with gentamycin 200 µg/L plus either erythromycin 25 µg/L or tetracycline 2 µg/L. In addition, three whole doses (100 µL) were directly plated on three BHI-blood agar plates with gentamycin plus erythromycin or tetracycline (as appropriate) to address initial distribution of B. theta barcoded strains in the inoculum by quantitative PCR (qPCR). Unless otherwise stated, 2 days after colonization, mice were euthanized and cecal content was collected in 2 mL Eppendorf tubes and weighted. Cecal content was homogenized as described before. Serial dilutions were prepared and plated in BHI-blood agar plates supplemented with gentamycin plus either erythromycin or tetracycline for CFU quantification. In addition, 100 µL of homogenized content was plated directly in BHI-blood agar plates with gentamycin plus erythromycin to generate biomass of the assessment of the distribution of B. theta barcoded strains by qPCR.
 
-## In vivo competition of post-colonization versus original strains
+### In vivo competition of post-colonization versus original strains
 
 To discard potential increased colonization fitness in the barcoded strains that were present in the cecum content after 48 hr, we isolated single B. theta WT barcoded strains that were present in the cecal content of SPF mice during a colonization experiment. Single colonies were expanded in liquid media, and the presence of a single strain was confirmed by qPCR analysis of the barcodes present. We randomly selected three of the B. theta WT barcoded strains isolated from the cecal content. We prepared an inoculum as described before for the in vivo competition experiments with approximately 5 × 106 CFU/100 µL of each strain in the inoculum mix. We complemented the inoculum with the remaining three B. theta WT barcoded strains coming from the original stock. SPF mice were inoculated by gavage and cecal content was collected 48 hr later. Cecal content was processed as described before for CFU quantification and relative barcode distribution by qPCR.
 
-## Diet modification and infection challenge experiments
+### Diet modification and infection challenge experiments
 
 In accordance with what we described before, B. theta WT strains were grown overnight in BHIS with corresponding antibiotics. As the untagged strain B. theta untagged was used in higher concentrations, we prepared between 50 and 100 mL of liquid culture depending on the number of mice to colonize. Inoculum was prepared as previously described with a concentration of 108–109 CFUs/100 µL dose of untagged B. theta untagged, spiked with approximately 30 CFU of each B. theta barcoded strains. GF mice were gavaged with 100 µL of the inoculum. Mice were maintained on standard chow diet (Kliba Nafag, 3537; autoclaved; per weight: 4.5% fat, 18.5% protein, ~50% carbohydrates, 4.5% fiber) for 4 days. Afterward, mice were housed on fresh IsoCages, and challenges were applied as follows: (1) control group (continuation of standard chow diet); (2) Western-type diet without fiber (BioServ, S3282; 60% kcal fat; irradiated; per weight: 36% fat, 20.5% protein, 35.7% carbohydrates, 0% fiber); or (3) infection with 5 × 107 CFU of attenuated Salmonella Typhimurium (Stm SL1344ΔSPI-2). Fecal pellets were collected pre-challenge (day 0) and during the following 3 days. On day 3, mice were euthanized and cecal content was collected. Fecal pellets were weighted and homogenized in 500 µL of PBS as described before. Serial dilutions were prepared and plated in BHI-blood agar plates supplemented with corresponding antibiotics for CFU quantification. In addition, 100–300 µL of homogenized content was plated directly for further assessment of the distribution of B. theta barcoded strains by qPCR. Cecal content was processed as previously described.
 
-## DNA extraction for community composition analysis and growth estimates
+### DNA extraction for community composition analysis and growth estimates
 
 To assess microbial community composition, fecal pellets from LCM mice and cecum content from SPF mice were obtained and flash frozen. To generate growth estimates of B. theta in an OligoMM12 background, both flash-frozen fecal pellets and cecum content were used. For enzymatic lysis, half a fecal pellet or roughly 30 mg of flash-frozen cecum content per sample were incubated in 100 μL of 1× TE buffer (30 mM Tris-HCl and 1 mM EDTA) supplemented with 30 mg/mL Lysozyme (Sigma-Aldrich), 1.6 U/mL Proteinase K (New England Biolabs), 10 U/mL Mutanolysin (Sigma-Aldrich), and 1 U/μL SUPERase•In RNase Inhibitor (Invitrogen) at room temperature for 10 min. To aid disruption, one 2 mm metal bead was added, and the samples were vortexed every 2 min. Subsequently, the samples were mixed with 550 μL RLT Plus buffer (QIAGEN) complemented with 5.5 μL 2-beta-mercaptoethanol (Sigma-Aldrich) and prefilled tubes with 100 μm Zirconium beads (OPS Diagnostics LLC). The samples were disrupted twice at 30 Hz for 3 min using the mixer mill Retsch MM400 with 5 min incubation at room temperature between each disruption. DNA was extracted from all samples with the DNA/RNA Mini kit (QIAGEN) following the standard protocol and eluting the DNA in 100 μL elution buffer (EB). For the LCM samples, three negative extraction controls and three negative PCR controls were included. For the SPF samples, one water sample was used as negative extraction control and subsequently split into three negative library controls undergoing the same library preparation as all samples. The integrity and quality of the extracted DNA was assessed on a Qubit and Fragment Analyzer, respectively. The DNA was purified by overnight ethanol precipitation at −20°C in 275 μL ice-cold Ethanol (Sigma-Aldrich), 10 μL 3 M sodium acetate (Invitrogen), and 1 μL 20 mg/mL glycogen (Invitrogen) with subsequent centrifugation at 4°C for 30 min and two wash steps in 500 μL ice-cold 75% ethanol with centrifugation at 4°C for 10 min each time. The DNA purity was assessed on a Nanodrop.
 
-## 16S sequencing for LCM, OligoMM12, and SPF community composition analysis
+### 16S sequencing for LCM, OligoMM12, and SPF community composition analysis
 
 16S amplicon libraries were generated from 50 ng input DNA with the Illumina primer set 515F (Parada et al., 2016) and 806R (Apprill et al., 2015), 12 cycles in PCR 1 and 13 cycles in PCR 2. Three positive controls containing 11 ng input DNA of ZymoBIOMICS Microbial Community DNA Standard II (Zymo Research) were used. Illumina Unique Dual Indexing Primers (UDP) were used for library multiplexing. A 12 pM library pool spiked with 20% PhiX was sequenced at the Functional Genomics Center Zurich (FGCZ) using the MiSeq platform and 2 × 300 bp PE-reads with a target fragment size of 450 bp, resulting in approximately 60,000 and 400,000 reads per sample for the LCM and OligoMM12/SPF sequencing runs, respectively. Raw sequencing data from LCM and SPF mice can be accessed on ENA (https://www.ebi.ac.uk/ena/browser/home) under Project ID PRJEB57876. The OligoMM12 was previously published and can be accessed on ENA under the Project ID PRJEB53981 (Hoces et al., 2022).
 
-## Metagenomic sequencing for B. theta growth estimates in OligoMM12 background
+### Metagenomic sequencing for B. theta growth estimates in OligoMM12 background
 
 Genomic DNA was sheared to a target fragment size of 350 bp length with the ultrasonicator Covaris LE220 following a standard protocol (30 μL volume, 220 W peak incident power, 89 s treatment time). Metagenomic libraries were prepared from 10 ng sheared DNA with the NebNext Ultra II DNA Library Prep Kit for Illumina. Sample-specific adaptations included tenfold adapter dilution, no size selection by adding 1 volume (89 μL) of Cytiva Sera-Mag Select beads in the first cleanup and eight PCR cycles in the amplification step. Nebnext Multiplex Oligos for Illumina (Dual Index Primer Set 1) were used for library multiplexing. The final cleanup was done with a left side size selection by adding 0.7 volumes (35 μL) of Cytiva Sera-Mag Select beads. A 1 nM library pool spiked with 3% PhiX was sequenced at the FGCZ using the NextSeq2000 platform and 2 × 150 bp PE-reads with a target fragment size of 500 bp, resulting in approximately 30,000,000 reads per sample.
 
-## Data analysis
+### Data analysis
 
-## 16S community composition analysis
+#### 16S community composition analysis
 
 Raw sequencing reads from all samples and 3–6 positive/negative controls served as input for the inference of ASVs using dada2 v1.22 (Callahan et al., 2016). Primer sequences (515F, 806R) were removed using cutadapt v2.8 (Martin, 2011), and only inserts that contained both primers and were at least 75 bases were kept for downstream analysis. Next, reads were quality filtered using the filterAndTrim function of the dada2 R package (maxEE = 2, truncQ = 3, trimRight = (40, 40)). The learnErrors and dada functions were used to calculate sample inference using pool = pseudo as parameter. Reads were merged using the mergePairs function and bimeras were removed with the removeBimeraDenovo (method = pooled). Remaining ASVs were then taxonomically annotated using the IDTAXA classifier (Murali et al., 2018) in combination with the Silva v138 database (Quast et al., 2013) available at http://www2.decipher.codes/Downloads.html. The resulting ASV table was used to check for contaminations with the decontam R package (Davis et al., 2018) using both frequency-based and prevalence-based classification with a single probability threshold of 0.05 computed by combining both probabilities with Fisher’s method (method = combined). ASVs classified as contaminants as well as the positive/negative controls were excluded from downstream analyses. The remaining ASV abundance table was downsampled to a common sequencing depth (28,000 reads per sample for LCM and 190,000 reads per sample for Oligo/SPF) to correct for differences in sequencing depth between samples using the rrarefy function of the vegan R package. Relative abundance plots at different taxonomic levels were generated (LCM at species level, OligoMM12 at strain level, SPF at family level).
 
 For assessing the LCM composition, ASVs were clustered at 97% sequence identity with VSEARCH (usearch_global) (Rognes et al., 2016), which resulted in eight distinct ASVs with a maximum sequence identity of 96% between the two most similar ASVs. These ASVs were annotated at species level by alignment to 16S sequences of known community members from the original Schaedler flora (ASV01), from the OMM12 community (ASV03, ASV04, ASV08) and by alignment against the Silva v138 database. Due to annotation inconsistencies, ASV05 could only be annotated at the family level. The OligoMM12 strains were identified using the package bio for rRNA sequence extraction from the GenBank accessions described earlier (Hoces et al., 2022) and the tool VSEARCH (search_exact) (Rognes et al., 2016) for sequence alignment to the 16S sequences from the detected ASVs. ASVs with a mean relative abundance below 0.05% across all samples were grouped into ‘Other.’ Megasphaera was detected at a mean relative abundance of 0.06% but was also grouped into the category ‘Other’ since it was not knowingly part of the original OligoMM12 community. The category ‘Other’ in total amounted to roughly 0.11% of the total relative abundances, thus the oligo strains represented at least 99.8% of the detected ASV abundances. For the SPF community composition, ASVs were clustered at family level. ASVs with mean relative abundance below 1% or without taxonomic annotation at family level were grouped into the category ‘Other.’ The category ‘Other’ in total amounted to roughly 5% of the total relative abundances.
 
-## Metagenomic analysis for growth rate estimation
+#### Metagenomic analysis for growth rate estimation
 
 Sequencing reads from all metagenomic samples of B. theta in OligoMM12 background from feces and cecum were quality filtered using BBMap (v.38.71; Bushnell, 2014) by removing sequencing adapters from the reads, removing reads that mapped to quality control sequences (PhiX genome) and discarding low-quality reads using the parameters trimq = 14, maq = 20, maxns = 0, and minlength = 45. The in situ growth rate prediction tool CoPTR (Joseph et al., 2022) was used to compute growth rate estimates from the quality-controlled metagenomic reads by aligning them against a database containing all 12 OligoMM12 genomes available under Bioproject PRJNA317592 and the B. theta genome available under GenBank accession number CP092641.1.
 
-## Identification of genomic variants among B. theta strains
+#### Identification of genomic variants among B. theta strains
 
 Genomic DNA from all B. theta strains was isolated from overnight cultures using the QIAamp DNA Mini Kit (QIAGEN). Samples were sent for whole genome sequencing at Novogene. Data preprocessing pipeline for adapter trimming and contaminant filtering is described at https://methods-in-microbiomics.readthedocs.io/en/latest/preprocessing/preprocessing.html. The raw reads for each strain were trimmed and filtered using BBMap v. 38.18 (Bushnell, 2014). The reads were mapped against Bacteroides thetaiotaomicron strain VPI 5482 genome (CP092641.1) using bwa v. 0.7.17 (Li and Durbin, 2009). The resulting bam files were sorted according to the coordinates and indexed using samtools-1.9 (Danecek et al., 2021). The duplicated reads were removed using gatk v.4.2 MarkDuplicates (McKenna et al., 2010). Variant calling and filtering (bcftools filter -Ov -sLowQual -g5 -G10 -e 'QUAL <10 || DP4[2]<10 || DP4[3]<10 ||(DP4[2]+DP4[3])/sum(DP4)<0.9 || MQ <50') was performed using Bcftools v1.133. The variant annotation was done using snpEff (Cingolani et al., 2012).
 
-## Mathematical modeling overview (see Appendix 1 ‘Supplementary methods’ for more detailed description)
+#### Mathematical modeling overview (see Appendix 1 ‘Supplementary methods’ for more detailed description)
 
-## Estimation of colonization probability based on lost tags
+##### Estimation of colonization probability based on lost tags
 
-Let us denote C the bacterial concentration in the prepared solution. If we have volume V of this solution, then there are N=CV bacteria. Therefore, the probability to have taken n0 starting bacteria into an inoculum of volume v0 is(1)p(n0)=Binomial distribution(N,n0V)=(v0V)n(1−v0V)N−n0N!(N−n0)!n0!
+Let us denote C the bacterial concentration in the prepared solution. If we have volume V of this solution, then there are $N=CV$ bacteria. Therefore, the probability to have taken n0 starting bacteria into an inoculum of volume v0 is
 
-when N=cV is large and v0≪V,(2)p(n0) ≅Poisson distribution(Nv0V)=(Nv0V)n0expexp (−Nv0V) n0!
+$$
+p(n_{0})=Binomial distribution(N,\frac{n_{0}}{V})=(\frac{v_{0}}{V})_{}^{n}(1−\frac{v_{0}}{V})^{N−n_{0}}\frac{N!}{(N−n_{0})!n_{0}!}
+$$
 
-We define β as the probability for each bacterium to get to the cecum alive, and then have its lineage survive until measurement. Logically, the probability for a barcoded B. theta strain not to be present at measurement time is the zero of the Poisson distribution of average βn0, and thus(3)ploss=expexp -βn0
+when $N=cV$ is large and $v_{0}≪V,$
 
-n0 is estimated via the concentration and volume of the inoculum, and ploss is estimated via the number of tags lost divided by the total number of tags. Therefore, β is estimated as(4)β≅−loglog (nloss tagsntags) n0
+$$
+p(n_{0}) ≅Poisson distribution(N\frac{v_{0}}{V})=\frac{(N\frac{v_{0}}{V})^{n_{0}}expexp (−N\frac{v_{0}}{V}) }{n_{0}!}
+$$
 
-To consider the fact that not all tags have the same n0 when we pool data from multiple experiments, β is actually estimated by maximizing the probability of the experimental observations:(5)LLL=∑i=1ωlog((exp⁡(−βni))li(1−exp⁡(−βni))1−li)
+We define β as the probability for each bacterium to get to the cecum alive, and then have its lineage survive until measurement. Logically, the probability for a barcoded B. theta strain not to be present at measurement time is the zero of the Poisson distribution of average βn0, and thus
+
+$$
+p_{loss}=expexp -\betan_{0}
+$$
+
+n0 is estimated via the concentration and volume of the inoculum, and ploss is estimated via the number of tags lost divided by the total number of tags. Therefore, $\beta$ is estimated as
+
+$$
+\beta≅\frac{−loglog (\frac{n_{loss tags}}{n_{tags}}) }{n_{0}}
+$$
+
+To consider the fact that not all tags have the same n0 when we pool data from multiple experiments, β is actually estimated by maximizing the probability of the experimental observations:
+
+$$
+LLL=\sumi=1\omegalog((exp⁡(−\betan_{i}))_{}^{l_{i}}(1−exp⁡(−\betan_{i}))^{1−l_{i}})
+$$
 
 This expression is also used for calculating the confidence interval, as detailed in Appendix 1.
 
-## Estimation of colonization probability based on variance
+##### Estimation of colonization probability based on variance
 
-The variance on the proportions is(6)var(p)=1h1∑(pi−1h)2=1h1∑(ni∑nj−1h)2
+The variance on the proportions is
 
-In the limit where the initial number of bacteria are of the same order of magnitude, we find(7)⟨var(p)⟩−var(p0)≅1h∑nj,0var1m12
+$$
+var(p)=\frac{1}{h_{1}}\sum(p_{i}−\frac{1}{h})^{2}=\frac{1}{h_{1}}\sum(\frac{n_{i}}{\sumn_{j}}−\frac{1}{h})^{2}
+$$
 
-with varp0 the variance in proportions in the inoculum, ∑nj,0 the total number of tags in the inoculum, and var1/m12 the relative variance starting from one bacterium. We find (see Appendix 1 ‘Supplementary methods’) that var1/m12 is 2/(colonization probability). var1/m12 can be estimated for each mouse using equation (7), and the average variance is used to estimate var1/m12 . The standard error on var1/m12   is used to obtain the confidence interval for the colonization probability.
+In the limit where the initial number of bacteria are of the same order of magnitude, we find
 
-## Estimation of clearance rate due to flow
+$$
+⟨var(p)⟩−var(p_{0})≅\frac{1}{h\sumn_{j,0}}\frac{var1}{m1^{2}}
+$$
+
+with $varp_{0}$ the variance in proportions in the inoculum, $\sum_{}^{}n_{j,0}$ the total number of tags in the inoculum, and $var1/m1^{2}$ the relative variance starting from one bacterium. We find (see Appendix 1 ‘Supplementary methods’) that $var1/m1^{2}$ is 2/(colonization probability). $var1/m1^{2}$ can be estimated for each mouse using equation (7), and the average variance is used to estimate $var1/m1^{2}$ . The standard error on $var1/m1^{2}  $ is used to obtain the confidence interval for the colonization probability.
+
+##### Estimation of clearance rate due to flow
 
 We examined the expected magnitude of the effect of an extended lag phase in the cecum on colonization probability to determine whether this is consistent with our observed neutral tagging data. It should be noted that the cecum is a dynamic environment with pulsatile arrival of material from the small intestine and loss of material to the feces. This generates a clearance rate due to flow on top of any clearance rate due to bacterial death. Assuming that the main site of growth of B. theta is the cecum/upper colon, the parameter for clearance due to flow can be estimated by quantifying the volume of cecum content lost per day. This can be empirically estimated by measuring (1) fecal dry mass produced per day, and (2) the water content of cecum content. Assuming minimal change in dry mass during colon transit in the mice, this infers a dilution rate of cecal content in the order of 0.12 volumes/hr in a GF mouse and 0.18 volumes/hr in an SPF mouse; LCM mice will have a value in between these two. Bacterial clearance due to killing will contribute over and above these values. Of note, bacteria with a long lag phase after introduction into the cecum will be cleared by the flow before growth can start, that is, during the early phase of colonization this will be a determinant of colonization probability.
 
-## Estimation of cecum turnover rates
+##### Estimation of cecum turnover rates
 
-## Estimation of the competitive index
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Water fraction in cecal mass (%)</th>
+      <th>Dry fecal excretion (g/day)</th>
+      <th>Estimated wet cecal mass excretion (g/day)</th>
+      <th>Wet cecal mass (g)</th>
+      <th>Estimated cecum turnover rate (volume/day)</th>
+      <th>Estimated cecum turnover rate (volume/hr)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Germ-free</td>
+      <td>80.9 (0.4)</td>
+      <td>1.55 (0.27)</td>
+      <td>8.12 (1.42)</td>
+      <td>2.83 (0.59)</td>
+      <td>2.87 (0.78)</td>
+      <td>0.12 (0.03)</td>
+    </tr>
+    <tr>
+      <td>Specific pathogen free</td>
+      <td>76.2 (1.2)</td>
+      <td>0.81 (0.09)</td>
+      <td>3.40 (0.42)</td>
+      <td>0.77 (0.32)</td>
+      <td>4.42 (1.91)</td>
+      <td>0.18 (0.08)</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Estimation of the competitive index
 
 We assume that bacteria have first a probability of survival qi (with i = w for the WT strain, and i = a for the acapsular strain). Then once the cecum is reached, they have a loss rate ci.
 
-During an initial lag-phase τi , B. theta does not grow. On exit from lag phase, each bacterial strain grows logistically, initially at a rate ri , which saturates when approaching carrying capacity K with a factor (1-(A+W)/K). A and W denote the population density of acapsular and wildtype B. theta, respectively, when carrying capacity is reached, the total number of bacteria remains constant until the end of the experiment at time ttot , with both loss and replication ongoing and compensating each other. Given the growth rates for WT and acapsular B. theta are similar in vitro, we assume rw=ra also in vivo. Correspondingly, the difference in the initial net growth rates (ri-ci) considered to originate from differences in the in vivo clearance rates ca>cw . In the competition setting at carrying capacity, the majority of the population is composed of WT B. theta, such that the global population size is cleared with rate approximately cw . By definition, to maintain the total population size the effective replication rate of both strains of B. theta must exactly compensate this loss rate, cw . However, as the acapsular strain implicitly has a higher clearance rate ca, their net growth rate at carrying capacity becomes negative, that is, although the total population size remains constant, the acapsular B. theta population size will continuously decrease in frequency over time.
+During an initial lag-phase $\tau_{i}$ , B. theta does not grow. On exit from lag phase, each bacterial strain grows logistically, initially at a rate $r_{i}$ , which saturates when approaching carrying capacity K with a factor $(1-(A+W)/K)$. A and W denote the population density of acapsular and wildtype B. theta, respectively, when carrying capacity is reached, the total number of bacteria remains constant until the end of the experiment at time $t_{tot}$ , with both loss and replication ongoing and compensating each other. Given the growth rates for WT and acapsular B. theta are similar in vitro, we assume $r_{w}=r_{a}$ also in vivo. Correspondingly, the difference in the initial net growth rates $(r_{i}-c_{i})$ considered to originate from differences in the in vivo clearance rates $c_{a}>c_{w}$ . In the competition setting at carrying capacity, the majority of the population is composed of WT B. theta, such that the global population size is cleared with rate approximately $c_{w}$ . By definition, to maintain the total population size the effective replication rate of both strains of B. theta must exactly compensate this loss rate, $c_{w}$ . However, as the acapsular strain implicitly has a higher clearance rate ca, their net growth rate at carrying capacity becomes negative, that is, although the total population size remains constant, the acapsular B. theta population size will continuously decrease in frequency over time.
 
-With this model (see detailed calculations in Appendix 1 ‘Supplementary methods’), we find that the relative ratio between WT and acapsular is(8)qωqaexp exp ((netw+cω)(τa−τw))(exp(netw−neta)ttot)
+With this model (see detailed calculations in Appendix 1 ‘Supplementary methods’), we find that the relative ratio between WT and acapsular is
+
+$$
+\frac{q_{\omega}}{q_{a}}exp exp ((net_{w}+c_{\omega})(\tau_{a}−\tau_{w}))(exp(net_{w}−net_{a})t_{tot})
+$$
 
 For all the microbiota except SPF, the colonization probabilities (q) were similar for the WT and acapsular, as determined for single colonizations of LCM and OligoMM12 mice. Therefore, we assume qa = qw. For SPF, we use the ratio of qw /qa from the single-colonization experiments, adjusted for the fact that the full colonization probability also includes steps after the initial death before reaching the cecum. All the parameters used were determined from single-colonization experiments in the relevant microbiota backgrounds.
 
-## Estimation of colonization probability during competition
+##### Estimation of colonization probability during competition
 
 The overall survival probability for acapsular B. theta in the competition experiment is the colonization probability from single-colonization experiments, multiplied by a factor considering later loss (when the carrying capacity is reached by the WT and the acapsular decreases). The complete expression can be found in the corresponding section of Appendix 1 ‘Supplementary methods’.
 
-## Estimation of survival probability after challenge
+##### Estimation of survival probability after challenge
 
-In these experiments, at the time of the start of the challenge, the bacterial population is at carrying capacity, so the net growth rate is zero (i.e., the growth rate [likely limited by availability of nutrients] is the same as the loss rate due to flow/clearance). We also assume that the population size is known at the start of the challenge. The challenge may have different effects: it may impose a temporary bottleneck in the population (loss becomes higher than reproduction) or it may increase the loss rate (with the reproduction rate increasing enough to compensate), and thus the turnover of the population. In any case, we can calculate β as the probability that a bacteria present at day = 0 of the challenge has its lineage still alive and detectable in cecum content at day 3 via either mechanism. If there are n0 bacteria carrying a given barcode at day = 0, then(9)ploss=(1−β)n0
+In these experiments, at the time of the start of the challenge, the bacterial population is at carrying capacity, so the net growth rate is zero (i.e., the growth rate [likely limited by availability of nutrients] is the same as the loss rate due to flow/clearance). We also assume that the population size is known at the start of the challenge. The challenge may have different effects: it may impose a temporary bottleneck in the population (loss becomes higher than reproduction) or it may increase the loss rate (with the reproduction rate increasing enough to compensate), and thus the turnover of the population. In any case, we can calculate β as the probability that a bacteria present at day = 0 of the challenge has its lineage still alive and detectable in cecum content at day 3 via either mechanism. If there are n0 bacteria carrying a given barcode at day = 0, then
 
-To estimate the total population size in the cecum before the challenge (n0), we assume that (1) all the animals are colonized at steady state at day = 0, and (2) the cecum mass and bacteria concentration is the same on day = 0 in all mice as it is on day = 3 in the control group. As there are small but relatively consistent differences in total CFU between feces and cecum, we used the average relationship between feces and cecum CFU in control mice on day = 3 to estimate the bacterial concentration in the cecum at day = 0. We assumed cecum barcoded strain abundance based on qPCR/plating and concentration correction of fecal samples on day = 0. In addition, ploss was estimated via the number of barcodes lost from cecum content on day = 3 divided by the total number of barcoded strains across all mice analyzed. β can then be estimated based on equation (6).
+$$
+p_{loss}=(1−\beta)^{n_{0}}
+$$
 
-## Statistical analysis
+To estimate the total population size in the cecum before the challenge ($n_{0}$), we assume that (1) all the animals are colonized at steady state at day = 0, and (2) the cecum mass and bacteria concentration is the same on day = 0 in all mice as it is on day = 3 in the control group. As there are small but relatively consistent differences in total CFU between feces and cecum, we used the average relationship between feces and cecum CFU in control mice on day = 3 to estimate the bacterial concentration in the cecum at day = 0. We assumed cecum barcoded strain abundance based on qPCR/plating and concentration correction of fecal samples on day = 0. In addition, $p_{loss}$ was estimated via the number of barcodes lost from cecum content on day = 3 divided by the total number of barcoded strains across all mice analyzed. β can then be estimated based on equation (6).
+
+### Statistical analysis
 
 Sample size was determined based on previous experiments (Maier et al., 2014; Porter et al., 2017; Wotzka et al., 2019) using at least five mice per group where large effect size was expected. All group sizes are described in the figure legends.
 
 Where errors are expected to be log-normal distributed (e.g., CFU density comparisons), all statistical tests were carried out on log-normalized data. One-way ANOVA followed by Tukey’s honest significance test was used for comparison of three or more groups. For model-inferred parameters, we compared mean and standard deviation calculated as described in the previous section. No data points were omitted from statistical analysis or for the estimation of parameters. Statistical analysis was performed with RStudio v1.2 and R v3.6.
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Any further communication, including those related to resource sharing, may be directed to, and fulfilled by, the lead contact Emma Slack (emma.slack@hest.ethz.ch).
 
-## Materials availability
+#### Materials availability
 
 All strain and material generated in this study are available upon request to the corresponding author.

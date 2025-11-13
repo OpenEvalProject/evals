@@ -45,33 +45,60 @@ The RSV transmission model parameters were either drawn from the RSV literature 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig2-v2.jpg)
 
-**Figure 2.:** (A) Weekly RSV hospitalisations before implementation of vaccinations. Black curve gives mean prediction of RSV household transmission model after regression against weekly incidence data (red dots). Grey shaded area indicates the 99% prediction interval for the model. Also shown is the number of under ones in the population (dashed line). (B) Age profile of hospitalisations at KCH before vaccination. Error bars give 99% prediction intervals for model.Figure 2—source data 1.
+**Figure 2.:** (A) Weekly RSV hospitalisations before implementation of vaccinations. Black curve gives mean prediction of RSV household transmission model after regression against weekly incidence data (red dots). Grey shaded area indicates the 99% prediction interval for the model. Also shown is the number of under ones in the population (dashed line). (B) Age profile of hospitalisations at KCH before vaccination. Error bars give 99% prediction intervals for model.
 
 We found that, pre-vaccination, school age children suffered on average the highest force of infection, that is the per-capita rate of infectious contacts, from outside of the household followed by under 1 year olds (Figure 3A). This finding was dependent on assuming that we had a high degree of homophily in the social contacts of school-age children (the high within school transmission scenario mentioned above). Other scenarios were considered with lower levels of in-group preference for school-age children to contact other school-age children; in the alternate scenarios, the parameter imputation process found slightly higher rates of contacts within the household and homogeneously outside of the household but lead to very similar results (appendix 3 ). The infectious contacts outside the household were distributed predominantly to individuals within households of size 2–5 (Figure 3). This reflected the household distribution of the population; school children and under ones who were most at risk of making social contact with those infected with RSV outside the household tended to live in households of this size (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig3-v2.jpg)
 
-**Figure 3.:** (A) The mean force of infection (infectious contacts received per person per day) of RSV due to transmission from without the household on three age groups: under-ones, school age children and everyone else, including adults. (B) Mean force of infection due to transmission without the household on individuals inhabiting each household size. (C) The mean per-capita daily rate at which different age groups become infected with RSV from within their household. (D) The mean total daily rate of RSV infection within households of different sizes.Figure 3—source data 1.
+**Figure 3.:** (A) The mean force of infection (infectious contacts received per person per day) of RSV due to transmission from without the household on three age groups: under-ones, school age children and everyone else, including adults. (B) Mean force of infection due to transmission without the household on individuals inhabiting each household size. (C) The mean per-capita daily rate at which different age groups become infected with RSV from within their household. (D) The mean total daily rate of RSV infection within households of different sizes.
 
 Force of infection is a less natural concept for measuring within household infection due to small numbers of individuals per household, and intense frequent contacts. Instead, we measured the true rate of RSV transmission between individuals cohabiting a household. The highest per-capita rates of infection within households were for 7 year olds (Figure 3C); this reflected the typical age of individuals within the households most at risk of RSV introduction and with severest transmission rates after introduction. The infection rate among under ones increased rapidly until it plateaued at ~6 months old. The rapid increase in per-capita infection rate was due to waning of maternally acquired immunity to RSV, which we inferred as lasting on average 21.6 days ([17.2, 26.1] 95% CI; see Table 3 for all inferred parameters). The total infection rate within households was greatest in size 5 and 6 households (Figure 3D). This differed from the household size where each person was at most risk of contracting RSV outside the household. Two factors shifted the burden of RSV infection to larger households: first, there are more people in larger households therefore risk of RSV introduction can be higher even if the per-person rate is lower, and second, the intensity of transmission within households is higher for larger households.
 
 We evaluated a series of scenarios where a combination of a maternal antibody boosting (MAB) and an immune response provoking (IRP), vaccine were targeted at, respectively, mothers-to-be in their third trimester, and their household cohabitants upon the birth of the newborn. Between scenarios we varied (i) the effectiveness of the MAB vaccine, (ii) the coverage of the MAB vaccine, and (iii) the household coverage of the IRP vaccine, see Table 1 for a list of all vaccination scenarios modelled in this paper. The protective effect of the vaccines on individuals was the same as for the unstructured population model presented in Box 1: the MAB vaccine increased the period over which a newborn was protected from RSV by maternally acquired antibodies, and the IRP vaccine, given to all household cohabitants of some participating mothers-to-be, initiated an immune response in the vaccinated which gave a period of protection from acquiring RSV similar to that following a natural infection. The high prenatal contact levels in Kilifi county suggested that vaccination coverage of mothers-to-be had the potential to be very high, especially if maternal immunisation to boost newborn immunity became an established method for a range of vaccines including influenza and Group B Streptococcus. However, an available MAB vaccine might only be effective if delivered in the third trimester of pregnancy and, whilst having at least one prenatal contact is very common for pregnant women in Kilifi county, it is not clear that prenatal contact always occurs at the relevant stage of pregnancy. Therefore, we consider both an optimistic scenario (100% MAB coverage), and a more conservative uptake (50% MAB coverage). The number of days of additional maternally derived protection donated to the newborns by MAB vaccinated mothers was uncertain, we considered a range of MAB protection 0–90 days. We assumed that if the pregnant mother’s household cohabitants agreed to receive an immune response provoking vaccine then all were vaccinated at the birth of the newborn to maximise the overlap between the protection period of the cohabitants and the first months of life of the newborn. As is common in vaccine strategy analysis, we combine coverage and effectiveness into one effective coverage (coverage times effectiveness c.f. Keeling and Rohani, 2008), although in this case effective coverage could be considered both within and between households.
 
-We assumed that the maximum coverage of the vaccine would be reached within a year, and considered 10 years of RSV transmission after this implementation. When inferring model parameters we took care to account for the known changes in demography over the study period, both in the age and the household occupancy distributions of the population. However, for the 10-year forecasting in this paper, we assumed that the total birth rate was constant (8601 per year), and that the population age and household occupancy distributions remained static. The model inference stage included inferring the statistics of yearly variation in RSV seasonality. The decrease in rates of RSV hospitalisation and infection due to vaccination over ten years presented are median improvements over 500 independent realisations of random future seasonal patterns compared to a baseline of no intervention. If the MAB vaccine was unavailable or ineffective (0 days MAB protection), we found that it was still possible to reduce RSV hospitalisations by up to 25% using only the IRP vaccine on the household members of young infants at time of birth (Figure 4A and B). If 100% maternal vaccination could be achieved then the MAB vaccine was more successful as a sole vaccine option compared to IRP vaccination; in the sense that 90 days of additional protection from RSV delivered a 45% reduction in hospitalisation even with no IRP vaccine coverage. Nonetheless, even with an effective MAB vaccine there was added benefit to also using a IRP vaccine; a greater than 50% reduction in hospitalisations was achieved with a MAB vaccine that gave 75 additional days of RSV protection and a 75% coverage of the pregnant womens’ households (Figure 4A; a colorblind-friendly version of this plot can be found as appendix 4 Fig D). If only 50% maternal vaccination coverage could be achieved then unsurprisingly also using the IRP vaccine became relatively more important. The mixed vaccination strategy that achieved better than 50% hospitalisation reduction with 100% maternal coverage achieved 38% reduction in hospitalisations with 50% maternal coverage (Figure 4B); halving the maternal coverage didn’t necessarily halve the success of the vaccination programme so long as IRP vaccine was also available. Improving the effectiveness of the MAB vaccine caused a significant improvement in hospitalisations, but had an almost negligible effect on the total infections in the population (Figure 4C and D). IRP vaccination was more effective at reducing total RSV infections, but even at 75% coverage of the households of women giving birth the reduction in infections was <4% (Figure 4C and D). That IRP vaccination had a modest effect on the true infection rate, and that MAB vaccination has a negligible effect on the true infection rate, was in line with the prediction of the simple non-seasonal RSV model (Box 1). However, the simple model cannot predict that the percentage reduction in hospitalisations would be significantly greater than for total infections because of the direct and indirect protection of those most at risk of disease. For the mixed strategy achieving a 50% reduction in RSV hospitalisations described above (75 days direct MAB protection at 100% MAB coverage with 75% IRP household coverage), the seasonal dynamics of hospitalisations post-vaccination equilibrated rapidly (Figure 5A). There was a reduction in median hospitalisations in every age group, but predominantly in 0–3 month years old (who are nearly all protected by the MAB vaccine) and 3–6 month year olds (Figure 5B). However, targeting pregnant women and their cohabitants did not prevent sufficient RSV infections as to significantly disrupt RSV transmission within the population at large, which may explain the rapid approach to new RSV hospitalisation dynamics. Nonetheless, those who were protected were overwhelmingly among those at most risk of disease if they had caught RSV.
+**Table 1.**
+ Modelled vaccination scenarios.Each combination of MAB vaccine effectiveness and coverage, with IRP vaccine coverage below was one scenario. The baseline scenario being no effective MAB vaccine and 0% coverage of IRP vaccine.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Additional period of protection from RSV at birth due to maternal antibody boosting (MAB) vaccine (P).</td>
+      <td>0 (no vaccine), 15, 30, 45, 60, 75, 90 days</td>
+    </tr>
+    <tr>
+      <td>Coverage of mothers with MAB vaccine</td>
+      <td>50%, 100%</td>
+    </tr>
+    <tr>
+      <td>Coverage of households with newborns with immune response provoking (IRP) vaccination (Vc⁢o⁢v)</td>
+      <td>0%, 25%, 50%, 75%, 100%</td>
+    </tr>
+  </tbody>
+</table>
+
+We assumed that the maximum coverage of the vaccine would be reached within a year, and considered 10 years of RSV transmission after this implementation. When inferring model parameters we took care to account for the known changes in demography over the study period, both in the age and the household occupancy distributions of the population. However, for the 10-year forecasting in this paper, we assumed that the total birth rate was constant (8601 per year), and that the population age and household occupancy distributions remained static. The model inference stage included inferring the statistics of yearly variation in RSV seasonality. The decrease in rates of RSV hospitalisation and infection due to vaccination over ten years presented are median improvements over 500 independent realisations of random future seasonal patterns compared to a baseline of no intervention. If the MAB vaccine was unavailable or ineffective (0 days MAB protection), we found that it was still possible to reduce RSV hospitalisations by up to 25% using only the IRP vaccine on the household members of young infants at time of birth (Figure 4A and B). If 100% maternal vaccination could be achieved then the MAB vaccine was more successful as a sole vaccine option compared to IRP vaccination; in the sense that 90 days of additional protection from RSV delivered a 45% reduction in hospitalisation even with no IRP vaccine coverage. Nonetheless, even with an effective MAB vaccine there was added benefit to also using a IRP vaccine; a greater than 50% reduction in hospitalisations was achieved with a MAB vaccine that gave 75 additional days of RSV protection and a 75% coverage of the pregnant womens’ households (Figure 4A; a colorblind-friendly version of this plot can be found as appendix 4 Fig D). If only 50% maternal vaccination coverage could be achieved then unsurprisingly also using the IRP vaccine became relatively more important. The mixed vaccination strategy that achieved better than 50% hospitalisation reduction with 100% maternal coverage achieved 38% reduction in hospitalisations with 50% maternal coverage (Figure 4B); halving the maternal coverage didn’t necessarily halve the success of the vaccination programme so long as IRP vaccine was also available. Improving the effectiveness of the MAB vaccine caused a significant improvement in hospitalisations, but had an almost negligible effect on the total infections in the population (Figure 4C and D). IRP vaccination was more effective at reducing total RSV infections, but even at 75% coverage of the households of women giving birth the reduction in infections was $<4$% (Figure 4C and D). That IRP vaccination had a modest effect on the true infection rate, and that MAB vaccination has a negligible effect on the true infection rate, was in line with the prediction of the simple non-seasonal RSV model (Box 1). However, the simple model cannot predict that the percentage reduction in hospitalisations would be significantly greater than for total infections because of the direct and indirect protection of those most at risk of disease. For the mixed strategy achieving a 50% reduction in RSV hospitalisations described above (75 days direct MAB protection at 100% MAB coverage with 75% IRP household coverage), the seasonal dynamics of hospitalisations post-vaccination equilibrated rapidly (Figure 5A). There was a reduction in median hospitalisations in every age group, but predominantly in 0–3 month years old (who are nearly all protected by the MAB vaccine) and 3–6 month year olds (Figure 5B). However, targeting pregnant women and their cohabitants did not prevent sufficient RSV infections as to significantly disrupt RSV transmission within the population at large, which may explain the rapid approach to new RSV hospitalisation dynamics. Nonetheless, those who were protected were overwhelmingly among those at most risk of disease if they had caught RSV.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig4-v2.jpg)
 
-**Figure 4.:** A and C) and 50% maternal vaccine effective coverage (B and D).(A and B) Median percentage reduction in hospitalisations at KCH. (C and D) Percentage reduction in total RSV infections in the population.Figure 4—source data 1.
+**Figure 4.:** (A and B) Median percentage reduction in hospitalisations at KCH. (C and D) Percentage reduction in total RSV infections in the population.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig5-v2.jpg)
 
-**Figure 5.:** (A) Forecast weekly hospitalisations for a baseline of no vaccination (blue) and the mixed vaccination strategy (red). Shown are median forecast (curves) and 95% prediction intervals (background shading). (B) Forecast age distribution of total RSV hospitalisations at KCH. Median forecast (bars) and 95% prediction intervals (error bars).Figure 5—source data 1.
+**Figure 5.:** (A) Forecast weekly hospitalisations for a baseline of no vaccination (blue) and the mixed vaccination strategy (red). Shown are median forecast (curves) and 95% prediction intervals (background shading). (B) Forecast age distribution of total RSV hospitalisations at KCH. Median forecast (bars) and 95% prediction intervals (error bars).
 
 Each vaccine used decreased the expected number of RSV infections and hospitalisations. As well as measuring the overall effectiveness of RSV vaccination (see above), we also measured the efficiency of vaccination, defined as number of infections or hospitalisations averted per vaccine (of either type). Unsurprisingly, as the duration of protection given by the MAB vaccine increased the efficiency of vaccination also increased; significantly for hospitalisations (Figure 6A) and marginally for infections (Figure 6B). This was true whether an IRP vaccine was used, or not. If there is no MAB vaccine available then the efficiency of using only IRP vaccination doesn’t change with coverage; that is that when increasing IRP household coverage the improvement per vaccine used stayed static, in line with what one might expect from a homogeneous mixing RSV model (see Box 1). However, when MAB and IRP vaccines were used in conjunction there was an efficiency penalty due to redundancy in the each vaccine’s protective effect. For example, if a MAB vaccine was available that gave 90 days protection the marginal benefit in terms of decreased hospitalisations of having an IRP vaccine was decreased because most at-risk infants were already protected by the MAB vaccine (Figure 6A). Using two types of vaccine always decreased infections and hospitalisations (see above), but the total reduction was always less than simply adding the reductions of each vaccine in the absence of the other.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig6-v2.jpg)
 
-**Figure 6.:** MAB vaccine coverage was 100% unless unavailable, however MAB protection duration varied (different coloured bars) and IRP household coverage was also varied. See Table 1 for a list of scenario. (A) Median avoided hospitalisations at KCH per vaccine over 500 simulations. (B) Median avoided RSV infections in population per vaccine over 500 simulations.Figure 6—source data 1.
+**Figure 6.:** MAB vaccine coverage was 100% unless unavailable, however MAB protection duration varied (different coloured bars) and IRP household coverage was also varied. See Table 1 for a list of scenario. (A) Median avoided hospitalisations at KCH per vaccine over 500 simulations. (B) Median avoided RSV infections in population per vaccine over 500 simulations.
 
 ## Discussion
 
@@ -89,46 +116,218 @@ In conclusion, in this paper, we have analysed the performance of a joint matern
 
 The dynamical RSV model used in this paper simulated infection and transmission of RSV among a population described by the Kilifi Demographic and Health surveillance system (KHDSS Scott et al., 2012) between September 2001 and September 2016. The population was assumed to mix and transmit RSV at two social levels: within their household and outside their household among the wider community. RSV infection was modelled using a modified version of the classic susceptible, infected, recovered (SIR) compartmental framework (Anderson and May, 1991; Keeling and Rohani, 2008). The main modifications were consistent with previous RSV transmission models; we assumed that: (i) individuals were born with a temporary immunity to RSV which faded over time, and (ii) RSV infection episodes provide individuals with only temporary protection from re-infection (mean 6 months Scott et al., 2006; White et al., 2007; Moore et al., 2014; Pitzer et al., 2015; Kinyanjui et al., 2015; Yamin et al., 2016). The high dimensionality of the ODE model (see below) used in this paper necessitated a relatively simple compartmental structure for RSV infection progression, therefore the population is only crudely age stratified into under-one year olds (U1s) and over-one year olds (O1s). However, more detailed information about the age of the individuals in the model was available by considering their age distributions conditional on their crude age category and the type of household they inhabited (see below). After an initial RSV infection there is evidence that individuals retain reduced susceptibility to subsequent RSV infection (Henderson et al., 1979; Hall et al., 1991), and will potentially have less infectious asymptomatic episodes if infected (Hall et al., 2001; Yamin et al., 2016). Some RSV transmission models, using simpler social structures, therefore allow individuals to be characterised by both their age and their number of previous RSV infections (Kinyanjui et al., 2015; Yamin et al., 2016). In the model used in this paper, we assumed that all U1 individuals susceptible to RSV were at risk of their first RSV episode and that all O1 individuals had already been infected at least once, since re-infection within the same yearly epidemic is unlikely but nearly everyone has caught RSV by the age of two years old (Glezen et al., 1986).
 
-## Joint distributions of age and household occupancy
+### Joint distributions of age and household occupancy
 
-As mentioned above, the high dimensionality of the RSV transmission model with two levels of social mixing was a limiting factor on the possible complexity of the compartmental framework representing the possible combinations of age and disease state (see appendix 2). In order to both capture the structure of the population in households and incorporate finer-grained information about the ages of the modelled individuals, we calculated empirical joint distributions for the proportion of individuals of different ages in various household sizes, and whether that household contained an under-one year old. We did not restrict the age categories of this joint age-and-household distribution to just under-one or over-one, instead preferring finer-grained age categories: (i) each month of first year of life, (ii) each year of life aged 1–18 and (iii) 18+ years old. We used the Kilifi health and demographic surveillance system (KHDSS; Scott et al., 2012) to construct the joint distributions, which records for each individual a unique person ID, a birth date, immigration into the KDHSS date(s), out-migration from the KHDSS date(s), and a unique building ID for where they live during their time in the KHDSS. By combining this data we could calculate,(1)ℙt⁢(a,n,U)=Nt⁢(a,n,U)Nt.where Nt⁢(a,n,U) was the number of individuals on day t who were jointly in age category a, lived in a household of size n, which either contained at least one under one year old (U=1) or not (U=0), and Nt was the total population size on day t. The joint distribution changed over time, we calculated ℙt⁢(a,n,U) for a series of year-start days t = 1 st Jan 2000, 2001,…, 2016. We then used ℙt as representative for the rest of the year. Because the exact birth dates where missing for a large number of people, and for model simplicity, we assumed that all U1 individuals aged to become O1 individuals at a constant rate 1 per year, which was equivalent to assuming that given that the exact age of an U1 individual was uniformly distributed between 0 and 1 years old, independently of the U1’s household configuration.
+As mentioned above, the high dimensionality of the RSV transmission model with two levels of social mixing was a limiting factor on the possible complexity of the compartmental framework representing the possible combinations of age and disease state (see appendix 2). In order to both capture the structure of the population in households and incorporate finer-grained information about the ages of the modelled individuals, we calculated empirical joint distributions for the proportion of individuals of different ages in various household sizes, and whether that household contained an under-one year old. We did not restrict the age categories of this joint age-and-household distribution to just under-one or over-one, instead preferring finer-grained age categories: (i) each month of first year of life, (ii) each year of life aged 1–18 and (iii) 18+ years old. We used the Kilifi health and demographic surveillance system (KHDSS; Scott et al., 2012) to construct the joint distributions, which records for each individual a unique person ID, a birth date, immigration into the KDHSS date(s), out-migration from the KHDSS date(s), and a unique building ID for where they live during their time in the KHDSS. By combining this data we could calculate,
 
-## Conditional age of individuals
+$$
+ℙ_{t}⁢(a,n,U)=\frac{N_{t}⁢(a,n,U)}{N_{t}}.
+$$
 
-The dynamic model of transmission tracks whether individuals are under-one or over-one years old; however, for estimating the risk of disease per infection it was useful to use the conditional age distribution for the finer-grained age category of an individual based on her dynamic model age category a<1⁢year or a>1⁢year, her household size and whether the household contained an U1 or not, for example,(2)Pt(a|n,U,a>1 year)=1(a>1 year)Pt(a,n,U)∑b>1 yearPt(b,n,U).
+where $N_{t}⁢(a,n,U)$ was the number of individuals on day $t$ who were jointly in age category $a$, lived in a household of size $n$, which either contained at least one under one year old ($U=1$) or not ($U=0$), and $N_{t}$ was the total population size on day $t$. The joint distribution changed over time, we calculated $ℙ_{t}⁢(a,n,U)$ for a series of year-start days t = 1 st Jan 2000, 2001,…, 2016. We then used $ℙ_{t}$ as representative for the rest of the year. Because the exact birth dates where missing for a large number of people, and for model simplicity, we assumed that all U1 individuals aged to become O1 individuals at a constant rate 1 per year, which was equivalent to assuming that given that the exact age of an U1 individual was uniformly distributed between 0 and 1 years old, independently of the U1’s household configuration.
+
+### Conditional age of individuals
+
+The dynamic model of transmission tracks whether individuals are under-one or over-one years old; however, for estimating the risk of disease per infection it was useful to use the conditional age distribution for the finer-grained age category of an individual based on her dynamic model age category $a<1⁢year$ or $a>1⁢year$, her household size and whether the household contained an U1 or not, for example,
+
+$$
+P_{t}(a|n,U,a>1 year)=\frac{1(a>1 year)P_{t}(a,n,U)}{\sumb>1 yearP_{t}(b,n,U)}.
+$$
 
 The conditional distributions for an individual’s household size and whether they lived in a household containing an U1 based on their age were constructed similarly. The reason we included a variable indicating whether the household of the individual contained an under one or not was because it was important to capture the pathway to transmission to the under-one year olds most at risk of disease due to contracting RSV.
 
-## Model dynamics, forces of infection and susceptibility to RSV
+### Model dynamics, forces of infection and susceptibility to RSV
 
-The fundamental unit of the RSV transmission model developed for this paper was the household. Each household was described by the number of each type of individual inhabiting it, which we call the household configuration. The type of individual within each household was identified by her RSV disease state and age category. The RSV transmission model described the dynamics of the number of households that were in each possible household configuration using an approach introduced by House and Keeling, 2008. Mathematically, the number of households in a given household configuration at time t was denoted Hs1,i1,r1,s2,i2,r2⁢(t), referring to the household configuration with exactly s1 U1 susceptibles, i1 U1 infecteds, r1 U1 recovered, s2 O1 susceptibles, i2 O1 infecteds, and r2 O1 recovereds. In order to limit the number of possible household states, we included only households of total size ten or less with two or fewer under ones. We chose these limits on the household size based on capturing ≈99% of the U1s in the population, and therefore the pathway to them catching RSV (appendix 2). There were 1926 possible household configurations in the RSV transmission model. The vector 𝑯⁢(t) of number of households in each possible household configuration evolved according to the semi-linear ODE:(3)𝑯˙⁢(t)=At⁢𝑯⁢(t)+𝒇t⁢(𝑯⁢(t))+𝝆t⁢(𝑯⁢(t)).
+The fundamental unit of the RSV transmission model developed for this paper was the household. Each household was described by the number of each type of individual inhabiting it, which we call the household configuration. The type of individual within each household was identified by her RSV disease state and age category. The RSV transmission model described the dynamics of the number of households that were in each possible household configuration using an approach introduced by House and Keeling, 2008. Mathematically, the number of households in a given household configuration at time $t$ was denoted $H_{s_{1},i_{1},r_{1},s_{2},i_{2},r_{2}}⁢(t)$, referring to the household configuration with exactly $s_{1}$ U1 susceptibles, $i_{1}$ U1 infecteds, $r_{1}$ U1 recovered, $s_{2}$ O1 susceptibles, $i_{2}$ O1 infecteds, and $r_{2}$ O1 recovereds. In order to limit the number of possible household states, we included only households of total size ten or less with two or fewer under ones. We chose these limits on the household size based on capturing ≈99% of the U1s in the population, and therefore the pathway to them catching RSV (appendix 2). There were 1926 possible household configurations in the RSV transmission model. The vector $𝑯⁢(t)$ of number of households in each possible household configuration evolved according to the semi-linear ODE:
+
+$$
+𝑯˙⁢(t)=A_{t}⁢𝑯⁢(t)+𝒇_{t}⁢(𝑯⁢(t))+𝝆_{t}⁢(𝑯⁢(t)).
+$$
 
 Each term describing the vector field of Equation (3) corresponded to a dynamic component of the model:
 
-See appendix 2 for further details. The force of infection due to transmission within a household of generic configuration (s1,i1,r1,s2,i2,r2) was density dependent; that is the person-to-person infection rate in the household did not depend on household size,(4)λh⁢h=τ⁢β⁢(t)⁢(i1+ι2⁢i2).where τ is the basic within-household transmission rate, ι2 is the relative decrease in infectiousness of O1s compared to U1s, and β⁢(t) is the seasonal variation in the transmission rate of RSV (see appendix 1). Transmission outside of the household within the wider community was assumed to be based on the finer-grained age categories introduced above. The conditional age distributions of the individuals allowed us to construct matrices (PH→A,t) to convert between the household configuration vector into a vector of number of infected individuals in each age category, weighted by their relative infectiousness, for any time t during the simulation: 𝑰⁢(t)=PH→A,t⁢𝑯⁢(t) (appendix 2). The force of infection on each individual due to age-based mixing in the community was,(5)𝝀a⁢g⁢e=β⁢(t)⁢T⁢𝑰⁢(t)/N⁢(t).where T was the community infection rate matrix and N⁢(t) was the total population size at time t. In this formulation, the rate at which an infected in age group b creates infectious contacts in the community with individuals of age group a is Ta⁢b⁢N⁢(a,t)/N⁢(t) where N⁢(a,t) is the number of individuals in age group a at time t(Keeling and Rohani, 2008). The force of infection on an individual within a given household was calculated using matrices constructed from the conditional distribution of an individual’s household type given her age, λc⁢o⁢m=PA→H,t⁢𝝀a⁢g⁢e. The total force of infection on each individual was the sum of her infectious contact rates within the household and within the community, λ=λh⁢h+λc⁢o⁢m+λe⁢x⁢t. Where λe⁢x⁢t=ϵ⁢β⁢(t)/N⁢(t) was the force of infection from outside KHDSS.
+See appendix 2 for further details. The force of infection due to transmission within a household of generic configuration ($s_{1},i_{1},r_{1},s_{2},i_{2},r_{2}$) was density dependent; that is the person-to-person infection rate in the household did not depend on household size,
 
-The actual infection rate for each individual was the force of infection ‘felt’ by the individual times the susceptibility of the individual. The susceptibility of under-one year olds (σU⁢1) depended on whether or not the U1 individual was still protected from RSV by maternally acquired antibodies, which we modelled as giving a random M days of protection; that is for an individual of age A days, σU⁢1=0 if M>A and σU⁢1=1 otherwise. In general, the infection status of an individual correlates with her age. However, because RSV is strongly seasonal we do not treat the age of an U1 as correlated with her susceptibility arguing that every U1 is facing her first RSV season irrespective of whether she is 1-month old or 11 months old. Therefore, the mean susceptibility for under-ones was σ¯U⁢1=ℙ(M≤A). The susceptibility of over-one year olds was chosen as if the individual had definitely received at least one RSV infection in the past, and definitely had no chance of being maternally protected. We modelled the duration of maternal protection M as a truncated exponential distribution conditioned on being less than 1 year in duration; that is M∼exp⁡(α)|(M≤1 year) (appendix 2).
+$$
+\lambda_{h⁢h}=\tau⁢\beta⁢(t)⁢(i_{1}+ι_{2}⁢i_{2}).
+$$
 
-## Hospitalisation rates
+where $\tau$ is the basic within-household transmission rate, $ι_{2}$ is the relative decrease in infectiousness of O1s compared to U1s, and $\beta⁢(t)$ is the seasonal variation in the transmission rate of RSV (see appendix 1). Transmission outside of the household within the wider community was assumed to be based on the finer-grained age categories introduced above. The conditional age distributions of the individuals allowed us to construct matrices ($P_{H→A,t}$) to convert between the household configuration vector into a vector of number of infected individuals in each age category, weighted by their relative infectiousness, for any time $t$ during the simulation: $𝑰⁢(t)=P_{H→A,t}⁢𝑯⁢(t)$ (appendix 2). The force of infection on each individual due to age-based mixing in the community was,
 
-The chance of an infected individual becoming severely diseased after contracting RSV, and then seeking care at hospital, depended on that person’s age and number of infections (Nokes et al., 2008; Ohuma et al., 2012). When an U1 was infected in the model her age at infection was given by conditioning on the age of the U1 being greater than her maternal protection period,(6)ℙ(A∈a|M≤A).
+$$
+𝝀_{a⁢g⁢e}=\beta⁢(t)⁢T⁢𝑰⁢(t)/N⁢(t).
+$$
 
-Which was calculated exactly (see appendices 2 and 4). This took into account that increasing the duration of maternal protection would increase the age at infection and therefore reduce the risk of disease. O1s were assumed to have no maternal protection but their conditional age depended on their household type [Equation (2)]. We used these conditional distributions to convert the incidence rate of U1s and O1s in each household type into dynamic incidence rates in each age category, ℐa⁢(t). By assuming that all O1s had been infected at least once we could use previously published age-dependent hospitalisation odds per infection ha (Kinyanjui et al., 2015 and appendix 3) to determine the cumulative hospitalisations predicted by the model for each age category a and week interval wi=(ti,1,ti,2),(7)ℋ⁢(a,wi)=∫ti,1ti,2ℐa⁢(t)⁢ha⁢d⁢t.
+where $T$ was the community infection rate matrix and $N⁢(t)$ was the total population size at time $t$. In this formulation, the rate at which an infected in age group $b$ creates infectious contacts in the community with individuals of age group $a$ is $T_{a⁢b}⁢N⁢(a,t)/N⁢(t)$ where $N⁢(a,t)$ is the number of individuals in age group $a$ at time $t$(Keeling and Rohani, 2008). The force of infection on an individual within a given household was calculated using matrices constructed from the conditional distribution of an individual’s household type given her age, $\lambda_{c⁢o⁢m}=P_{A→H,t}⁢𝝀_{a⁢g⁢e}$. The total force of infection on each individual was the sum of her infectious contact rates within the household and within the community, $\lambda=\lambda_{h⁢h}+\lambda_{c⁢o⁢m}+\lambda_{e⁢x⁢t}$. Where $\lambda_{e⁢x⁢t}=ϵ⁢\beta⁢(t)/N⁢(t)$ was the force of infection from outside KHDSS.
 
-## Parameter inference
+The actual infection rate for each individual was the force of infection ‘felt’ by the individual times the susceptibility of the individual. The susceptibility of under-one year olds ($\sigma_{U⁢1}$) depended on whether or not the U1 individual was still protected from RSV by maternally acquired antibodies, which we modelled as giving a random $M$ days of protection; that is for an individual of age $A$ days, $\sigma_{U⁢1}=0$ if $M>A$ and $\sigma_{U⁢1}=1$ otherwise. In general, the infection status of an individual correlates with her age. However, because RSV is strongly seasonal we do not treat the age of an U1 as correlated with her susceptibility arguing that every U1 is facing her first RSV season irrespective of whether she is 1-month old or 11 months old. Therefore, the mean susceptibility for under-ones was $\sigma¯_{U⁢1}=ℙ(M\leqA)$. The susceptibility of over-one year olds was chosen as if the individual had definitely received at least one RSV infection in the past, and definitely had no chance of being maternally protected. We modelled the duration of maternal protection $M$ as a truncated exponential distribution conditioned on being less than 1 year in duration; that is $M∼exp⁡(\alpha)|(M\leq1 year)$ (appendix 2).
+
+### Hospitalisation rates
+
+The chance of an infected individual becoming severely diseased after contracting RSV, and then seeking care at hospital, depended on that person’s age and number of infections (Nokes et al., 2008; Ohuma et al., 2012). When an U1 was infected in the model her age at infection was given by conditioning on the age of the U1 being greater than her maternal protection period,
+
+$$
+ℙ(A\ina|M\leqA).
+$$
+
+Which was calculated exactly (see appendices 2 and 4). This took into account that increasing the duration of maternal protection would increase the age at infection and therefore reduce the risk of disease. O1s were assumed to have no maternal protection but their conditional age depended on their household type [Equation (2)]. We used these conditional distributions to convert the incidence rate of U1s and O1s in each household type into dynamic incidence rates in each age category, $ℐ_{a}⁢(t)$. By assuming that all O1s had been infected at least once we could use previously published age-dependent hospitalisation odds per infection $h_{a}$ (Kinyanjui et al., 2015 and appendix 3) to determine the cumulative hospitalisations predicted by the model for each age category $a$ and week interval $w_{i}=(t_{i,1},t_{i,2})$,
+
+$$
+ℋ⁢(a,w_{i})=\int_{t_{i,1}}^{t_{i,2}}ℐ_{a}⁢(t)⁢h_{a}⁢d⁢t.
+$$
+
+### Parameter inference
 
 The majority of the parameters for the RSV transmission model were drawn from the RSV literature (see Table 2 and appendix 3) leaving four parameters, and the five hyperparameters of a normal distribution describing the random yearly variation in log-seasonality, to be inferred from hospitalisation data (see Table 3 for parameter estimates and appendix 1 for further details on seasonality model). The free parameters and distribution of the RSV transmission model were:
 
-We also included an infectious contact rate for children of schooling age (5–18 years old; bS) which acted additionally to bO⁢1; that is children of schooling age were at additional risk of contracting RSV on top of the risk due to mixing in the community. This meant that the mixing matrix in Equation (5) was in block form,(8)T=(bU1bU1bU1 bU1bS+bO1bO1 bU1bO1bO1).where the blocks represented respectively under-one age categories, over-ones at school age categories and over-ones above school age categories. Unfortunately, we were unable to reliably identify bS parameter jointly with the other parameters. Investigating a range of bS values gave similar results for model fit and predictions for vaccine efficacy, the results in the main paper were for the highest value of bS considered which was mildly pessimistic compared to bS=0 (see appendix 3).
+**Table 2.**
+ Parameters from literature and chosen for model.
 
-The data for parameter inference was RSV-confirmed, age-specific weekly admissions to Kilifi county hospital (KCH) hospitalisation data from September 2001 until September 2016 (see Nokes et al., 2009 for study details). KCH serves as the primary care facility for the KHDSS population, and we assumed that all KHDSS members who accessed urgent hospital treatment due to RSV disease accessed their treatment at KCH. However, a significant number of admissions were from people not within the KHDSS survey leading to data re-scaling (see appendix 3). The log-likelihood for a particular simulation corresponded to Poisson errors,(9)ln⁡ℒ=∑i∑aln⁡fp⁢o⁢i⁢(𝒟i,a|ℋ⁢(a,wi)).where 𝒟i,a was the cumulative number of hospitalisation observed at KCH in age category a on week wi and fp⁢o⁢i⁢(x|μ) is the probability mass function for a Poisson distribution with mean µ.
 
-If the yearly realisations of the random seasonality (see appendix 1) were known, then the entire model would be deterministic and ln⁡ℒ would be a function of the unknown parameters. Therefore, we treated the yearly variation in seasonality as missing data and used the Expectation-maximisation (EM) algorithm (Dempster et al., 1977) to converge onto maximum likelihood estimates for the four free parameters, and the two hyperparameters of the log-seasonality model, 95% confidence intervals were constructed using the likelihood profile technique (e.g. King et al., 2008 and appendix 3).
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Value</th>
+      <th>Data source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>σO⁢1</td>
+      <td>Susceptibility (O1s)</td>
+      <td>0.75</td>
+      <td>Henderson et al., 1979</td>
+    </tr>
+    <tr>
+      <td>ι2</td>
+      <td>relative infectiousness (O1s)</td>
+      <td>0.5</td>
+      <td>Kinyanjui et al., 2015</td>
+    </tr>
+    <tr>
+      <td>ν</td>
+      <td>Rate of waning of immunity</td>
+      <td>two per year</td>
+      <td>Agoti et al., 2012</td>
+    </tr>
+    <tr>
+      <td>γ1</td>
+      <td>Rate of recovery for under-ones</td>
+      <td>1/9 per day</td>
+      <td>Hall et al., 1976</td>
+    </tr>
+    <tr>
+      <td>γ2</td>
+      <td>Rate of recovery for over-ones</td>
+      <td>1/4 per day</td>
+      <td>Hall et al., 1976</td>
+    </tr>
+    <tr>
+      <td>bS</td>
+      <td>Community transmission rate at schools</td>
+      <td>0,1/3,2/3,1 per day</td>
+      <td>range</td>
+    </tr>
+    <tr>
+      <td>η</td>
+      <td>Ageing rate for U1s</td>
+      <td>one per year</td>
+      <td>model choice</td>
+    </tr>
+    <tr>
+      <td>ϵ</td>
+      <td>Base external infection rate (whole population)</td>
+      <td>10 per day</td>
+      <td>model choice</td>
+    </tr>
+  </tbody>
+</table>
 
-## Modelling vaccination
+**Table 3.**
+ Inferred parameters.
 
-There were two vaccines used in this modelling study, which were deployed as part of the prenatal contact between pregnant women and skilled health professionals. We assumed that the maternal vaccine was delivered as one injection to the pregnant women in her third trimester. This achieved some unknown additional period of maternal protection, P days, on top of the random period M, that is after maternally vaccinating the period of protection became Mv⁢a⁢c=M+P. Achieving an effective maternal vaccination coverage of Vc⁢o⁢v shifted the mean susceptibility of U1s to σ¯U⁢1=ℙ(Mv⁢a⁢c<A)Vc⁢o⁢v+ℙ(M<A)(1-Vc⁢o⁢v), a linear increase in Vc⁢o⁢v. The change in distribution of age at infection was non-linear in Vc⁢o⁢v because, conditional on an U1 being infected, it was more likely that the U1’s mother had not been vaccinated than the unconditional probability of non-vaccination, 1-Vc⁢o⁢v (see appendix 4). We also assumed that there was a vaccine available that provoked an immune response in the vaccinated individuals similar to a natural infection; that is a susceptible O⁢1 who is vaccinated immediately becomes ‘recovered’ and immune to RSV infection until her immunity waned. Immune response provoking vaccination was offered to all O1s in households when a birth occurred, as an addendum to the prenatal contact between mothers-to-be and health professionals. In principle, there were three dimensions to the coverage of the immunity provoking vaccine: (i) coverage of households, (ii) coverage within households, and (iii) vaccine effectiveness. For simplicity, we bundled these dimensions together, and vaccinated whole households at an effective vaccination coverage (the product of the three dimensions of coverage). Over 10 years of forecasted RSV epidemics if a MAB vaccine was available, and given to every pregnant mother, 8601 MAB vaccines were deployed each year. 0–24,095 IRP vaccines were deployed each year depending on household coverage. It should be noted that by 2016 the KHDSS population was around 240,000 people, hence 100% effective coverage of the households where births occurred corresponded to ~10% effective coverage of the total population.
 
-## Model simulations
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bU⁢1</td>
+      <td>Community transmission rate for U1s</td>
+      <td>0.22 [0.18,0.27] per day</td>
+    </tr>
+    <tr>
+      <td>bO⁢1</td>
+      <td>Community transmission rate for O1s</td>
+      <td>0.20 [0.18,0.21] per day</td>
+    </tr>
+    <tr>
+      <td>τ</td>
+      <td>Transmission rate to each other member of household</td>
+      <td>0.040 [0.032, 0.048] per day</td>
+    </tr>
+    <tr>
+      <td>M¯</td>
+      <td>Mean duration of maternal protection at birth</td>
+      <td>21.6 [17.2, 26.1] days</td>
+    </tr>
+    <tr>
+      <td>mξ</td>
+      <td>Mean amplitude of log-seasonality</td>
+      <td>0.61 [0.51, 0.72]</td>
+    </tr>
+    <tr>
+      <td>mϕ</td>
+      <td>Mean timing of log-seasonality peak (phase)</td>
+      <td>67.7 [40.2, 77.7] days</td>
+    </tr>
+    <tr>
+      <td>σξ</td>
+      <td>Std. amplitude of log-seasonality</td>
+      <td>0.20 [0.098,0.31]</td>
+    </tr>
+    <tr>
+      <td>σϕ</td>
+      <td>Std. timing of log-seasonality peak (phase)</td>
+      <td>38.7 [30.0, 48.5] days</td>
+    </tr>
+    <tr>
+      <td>ρξ⁢ϕ</td>
+      <td>Corr. coefficient between log-seasonal amplitude and phase</td>
+      <td>−0.035 [-0.12, 0.072]</td>
+    </tr>
+  </tbody>
+</table>
 
-We simulated the model by numerically solving the high dimensional ODE [Equation (3)] simultaneously with the ongoing cumulative hospitalisations in each age category, ℋ˙a=ha⁢ℐa⁢(t), which allowed us to solve for the model predicted weekly hospitalisations [Equation 7]. The initial state of the model was unknown. We initialised the model by starting with a completely susceptible population with the population demography set to mimic that of the KHDSS on 1st Jan 2000. We then simulated RSV transmission for 10 years, with demographic rates (e.g. birth rates) chosen to match those of KHDSS in year 2000 and the seasonal amplitude and phase of ln⁡β set to their latest mean estimate, in order to provide an initial state of the household model. Finally, we ran the model from 1st Jan 2000 until 1st September 2001. This provided the initial point for comparison to hospitalisation data. Numerical solutions were provided using the Sundials CVODE solver (Cohen et al., 1996) implemented within the DifferentialEquations package for Julia 0.6 (Rackauckas and Nie, 2017). For retrospective simulations comparing model predictions to data (Figure 2), we used the most probable values of the yearly seasonality. For forecast simulations, we generated 500 realisations of yearly seasonality over 10 years from the distribution inferred in model inference, this gave 500 predictions for the time series of future hospitalisations. We typically presented medians of these predictions (e.g. Figure 4). The code for the RSV household model used in this paper, and the data used for parameter inference, is available from https://github.com/SamuelBrand1/RSVHouseholdModel (Brand, 2020; copy archived at https://github.com/elifesciences-publications/RSVHouseholdModel).
+We also included an infectious contact rate for children of schooling age (5–18 years old; $b_{S}$) which acted additionally to $b_{O⁢1}$; that is children of schooling age were at additional risk of contracting RSV on top of the risk due to mixing in the community. This meant that the mixing matrix in Equation (5) was in block form,
+
+$$
+T=(b_{U1}b_{U1}b_{U1} b_{U1}b_{S}+b_{O1}b_{O1} b_{U1}b_{O1}b_{O1}).
+$$
+
+where the blocks represented respectively under-one age categories, over-ones at school age categories and over-ones above school age categories. Unfortunately, we were unable to reliably identify $b_{S}$ parameter jointly with the other parameters. Investigating a range of $b_{S}$ values gave similar results for model fit and predictions for vaccine efficacy, the results in the main paper were for the highest value of $b_{S}$ considered which was mildly pessimistic compared to $b_{S}=0$ (see appendix 3).
+
+The data for parameter inference was RSV-confirmed, age-specific weekly admissions to Kilifi county hospital (KCH) hospitalisation data from September 2001 until September 2016 (see Nokes et al., 2009 for study details). KCH serves as the primary care facility for the KHDSS population, and we assumed that all KHDSS members who accessed urgent hospital treatment due to RSV disease accessed their treatment at KCH. However, a significant number of admissions were from people not within the KHDSS survey leading to data re-scaling (see appendix 3). The log-likelihood for a particular simulation corresponded to Poisson errors,
+
+$$
+ln⁡ℒ=\sumi\sumaln⁡f_{p⁢o⁢i}⁢(𝒟_{i,a}|ℋ⁢(a,w_{i})).
+$$
+
+where $𝒟_{i,a}$ was the cumulative number of hospitalisation observed at KCH in age category $a$ on week $w_{i}$ and $f_{p⁢o⁢i}⁢(x|\mu)$ is the probability mass function for a Poisson distribution with mean µ.
+
+If the yearly realisations of the random seasonality (see appendix 1) were known, then the entire model would be deterministic and $ln⁡ℒ$ would be a function of the unknown parameters. Therefore, we treated the yearly variation in seasonality as missing data and used the Expectation-maximisation (EM) algorithm (Dempster et al., 1977) to converge onto maximum likelihood estimates for the four free parameters, and the two hyperparameters of the log-seasonality model, 95% confidence intervals were constructed using the likelihood profile technique (e.g. King et al., 2008 and appendix 3).
+
+### Modelling vaccination
+
+There were two vaccines used in this modelling study, which were deployed as part of the prenatal contact between pregnant women and skilled health professionals. We assumed that the maternal vaccine was delivered as one injection to the pregnant women in her third trimester. This achieved some unknown additional period of maternal protection, $P$ days, on top of the random period $M$, that is after maternally vaccinating the period of protection became $M_{v⁢a⁢c}=M+P$. Achieving an effective maternal vaccination coverage of $V_{c⁢o⁢v}$ shifted the mean susceptibility of U1s to $\sigma¯_{U⁢1}=ℙ(M_{v⁢a⁢c}<A)V_{c⁢o⁢v}+ℙ(M<A)(1-V_{c⁢o⁢v})$, a linear increase in $V_{c⁢o⁢v}$. The change in distribution of age at infection was non-linear in $V_{c⁢o⁢v}$ because, conditional on an U1 being infected, it was more likely that the U1’s mother had not been vaccinated than the unconditional probability of non-vaccination, $1-V_{c⁢o⁢v}$ (see appendix 4). We also assumed that there was a vaccine available that provoked an immune response in the vaccinated individuals similar to a natural infection; that is a susceptible $O⁢1$ who is vaccinated immediately becomes ‘recovered’ and immune to RSV infection until her immunity waned. Immune response provoking vaccination was offered to all O1s in households when a birth occurred, as an addendum to the prenatal contact between mothers-to-be and health professionals. In principle, there were three dimensions to the coverage of the immunity provoking vaccine: (i) coverage of households, (ii) coverage within households, and (iii) vaccine effectiveness. For simplicity, we bundled these dimensions together, and vaccinated whole households at an effective vaccination coverage (the product of the three dimensions of coverage). Over 10 years of forecasted RSV epidemics if a MAB vaccine was available, and given to every pregnant mother, 8601 MAB vaccines were deployed each year. 0–24,095 IRP vaccines were deployed each year depending on household coverage. It should be noted that by 2016 the KHDSS population was around 240,000 people, hence 100% effective coverage of the households where births occurred corresponded to ~10% effective coverage of the total population.
+
+### Model simulations
+
+We simulated the model by numerically solving the high dimensional ODE [Equation (3)] simultaneously with the ongoing cumulative hospitalisations in each age category, $ℋ˙_{a}=h_{a}⁢ℐ_{a}⁢(t)$, which allowed us to solve for the model predicted weekly hospitalisations [Equation 7]. The initial state of the model was unknown. We initialised the model by starting with a completely susceptible population with the population demography set to mimic that of the KHDSS on 1st Jan 2000. We then simulated RSV transmission for 10 years, with demographic rates (e.g. birth rates) chosen to match those of KHDSS in year 2000 and the seasonal amplitude and phase of $ln⁡\beta$ set to their latest mean estimate, in order to provide an initial state of the household model. Finally, we ran the model from 1st Jan 2000 until 1st September 2001. This provided the initial point for comparison to hospitalisation data. Numerical solutions were provided using the Sundials CVODE solver (Cohen et al., 1996) implemented within the DifferentialEquations package for Julia 0.6 (Rackauckas and Nie, 2017). For retrospective simulations comparing model predictions to data (Figure 2), we used the most probable values of the yearly seasonality. For forecast simulations, we generated 500 realisations of yearly seasonality over 10 years from the distribution inferred in model inference, this gave 500 predictions for the time series of future hospitalisations. We typically presented medians of these predictions (e.g. Figure 4). The code for the RSV household model used in this paper, and the data used for parameter inference, is available from https://github.com/SamuelBrand1/RSVHouseholdModel (Brand, 2020; copy archived at https://github.com/elifesciences-publications/RSVHouseholdModel).

@@ -76,6 +76,6 @@ While the SPACE rubric was designed with academic institutions in mind, we also 
 
 We hope the SPACE rubric will encourage a wide variety of institutions to align on their values and support the development of interventions that make sense for them. We hope also that with attention, time, and input from all stakeholders, the SPACE rubric will support meaningful and persistent improvements in research assessment practices.
 
-## Note
+### Note
 
 DORA receives financial support from eLife, and an eLife employee (Stuart King) is a member of the DORA steering committee.

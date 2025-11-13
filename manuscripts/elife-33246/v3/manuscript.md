@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.33246.001 Mitochondrial NAD levels influence fuel selection, circadian rhythms, and cell survival under stress. It has alternately been argued that NAD in mammalian mitochondria arises from import of cytosolic nicotinamide (NAM), nicotinamide mononucleotide (NMN), or NAD itself. We provide evidence that murine and human mitochondria take up intact NAD. Isolated mitochondria preparations cannot make NAD from NAM, and while NAD is synthesized from NMN, it does not localize to the mitochondrial matrix or effectively support oxidative phosphorylation. Treating cells with nicotinamide riboside that is isotopically labeled on the nicotinamide and ribose moieties results in the appearance of doubly labeled NAD within mitochondria. Analogous experiments with doubly labeled nicotinic acid riboside (labeling cytosolic NAD without labeling NMN) demonstrate that NAD(H) is the imported species. Our results challenge the long-held view that the mitochondrial inner membrane is impermeable to pyridine nucleotides and suggest the existence of an unrecognized mammalian NAD (or NADH) transporter.
+Mitochondrial NAD levels influence fuel selection, circadian rhythms, and cell survival under stress. It has alternately been argued that NAD in mammalian mitochondria arises from import of cytosolic nicotinamide (NAM), nicotinamide mononucleotide (NMN), or NAD itself. We provide evidence that murine and human mitochondria take up intact NAD. Isolated mitochondria preparations cannot make NAD from NAM, and while NAD is synthesized from NMN, it does not localize to the mitochondrial matrix or effectively support oxidative phosphorylation. Treating cells with nicotinamide riboside that is isotopically labeled on the nicotinamide and ribose moieties results in the appearance of doubly labeled NAD within mitochondria. Analogous experiments with doubly labeled nicotinic acid riboside (labeling cytosolic NAD without labeling NMN) demonstrate that NAD(H) is the imported species. Our results challenge the long-held view that the mitochondrial inner membrane is impermeable to pyridine nucleotides and suggest the existence of an unrecognized mammalian NAD (or NADH) transporter.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Here we present evidence that mitochondria directly import NAD. Consistent with 
 
 ## Results
 
-## Isolated mitochondria synthesize NAD from NMN, but not from nicotinamide
+### Isolated mitochondria synthesize NAD from NMN, but not from nicotinamide
 
 We initially tested whether NAD levels would increase over time in isolated mitochondria incubated with NAD precursors. In the absence of exogenous metabolizable substrates (state 1, as defined by [Chance and Williams, 1956; Nicholls and Ferguson, 1992]), warming mitochondria isolated from murine skeletal muscle resulted in a rapid loss of NAD(H) content (data not shown). With the addition of substrate (pyruvate/malate, state 2) and ADP (state 3), the rate of NAD loss was progressively slowed, and co-incubation with NMN, but not nicotinamide or nicotinic acid was found to maintain NAD levels near the starting value (Figure 1a). To discern whether increased NAD content in the presence of NMN truly reflected new synthesis, rather than slowed degradation, we held mitochondria in state 2 for 30 min to establish a reduced NAD content, then added ADP (state 3) with or without NMN. Supplementation with NMN restored mitochondrial NAD content in a time and concentration-dependent manner (Figure 1b–d). Synthesis of NAD from NMN also appears to be at least partially dependent on membrane potential or ATP production, as addition of the uncoupler FCCP or the complex I inhibitor rotenone significantly attenuated the rate of NAD appearance (Figure 1e). Consistently, addition of ATP instead of ADP was sufficient to promote NAD synthesis, suggesting that residual ATP present in the mitochondria after isolation was insufficient to support the NMNAT reaction (Figure 1f).
 
@@ -53,7 +53,7 @@ In contrast to incubation with NMN, incubation of NAD-deficient mitochondria wit
 
 **Figure 2.:** (A) Mitochondria isolated from murine skeletal muscle were held in respiratory state 2 for 30 min at 37°C with shaking before addition of ADP (state 3) and incubation for 60 min in the absence or presence of the precursors NMN, NAM, PRPP, or NAM and PRPP (0.5 mM). (N = 2). Results are representative of two independent experiments. (B) Mitochondria isolated from murine liver were held in state 2 at 37°C for 30 min with shaking before the addition of ADP (state 3) in the presence or absence of 0.5 mM NMN, NAM or NAM and PRPP. (N = 2). (C) Muscle mitochondria were maintained in state 2 for 30 min before the addition of ADP (state 3) and further incubated at 37°C for 60 min in the presence or absence of NMN and inhibitors Gallotannin (100 µM) or FK866 (10 nM). (N = 4). (*, p<0.05; **, p<0.005; ***, p<0.0001; 2-tailed, unpaired Student’s t-test).
 
-## Matrix NAD is not restored by NMN treatment in isolated mitochondria
+### Matrix NAD is not restored by NMN treatment in isolated mitochondria
 
 Given that a decline in matrix NAD content will eventually limit respiratory capacity, we next tested whether NMN treatment could restore the respiratory capacity of mitochondria that had been held in state two for an extended period. Despite increasing NAD, NMN treatment did not lead to recovery of state three respiration in isolated mitochondria (Figure 3a). This suggested two possible interpretations: 1) that another form of mitochondrial damage unrelated to NAD content limited respiration, or 2) that the newly synthesized NAD was not localized in the matrix where it would be able to participate in mitochondrial metabolism. To test the latter possibility, we pelleted mitochondria after NMN treatment and compared the NAD contents of the pellet and supernatant to the whole mixture. Surprisingly, the increase in NAD was almost exclusively outside of the organelles, with no rescue of matrix NAD content after NMN treatment (Figure 3b). We next considered the possibility that mitochondria are sparingly permeable to NAD directly. While low concentrations of NAD failed to have a major impact on matrix NAD content, high (5–10 mM) external NAD led to an appreciable increase. Notably, this concentration is far in excess of whole cell or tissue NAD concentration (~300–1000 μM), but is only slightly above our estimates for NAD concentration in the mitochondrial matrix (3–4 mM, based on the approximation that 1 mg of mitochondrial protein corresponds to ~1 µL of matrix volume [Das et al., 2003]). Thus, high external concentrations may be required to create a gradient that favors import. Consistent with these findings, 10 mM external NAD prevented the loss of matrix NAD content over time in mitochondria held in state 2, and significantly slowed the decline in respiratory capacity (Figure 3c–d).
 
@@ -61,7 +61,7 @@ Given that a decline in matrix NAD content will eventually limit respiratory cap
 
 **Figure 3.:** (A) State three coupled mitochondrial oxygen consumption. Isolated skeletal muscle mitochondria were extracted directly (ice) or maintained in respiratory state 2 (MirO5 respiration buffer containing 10 mM Pyruvate, 5 mM Malate) at 37°C with shaking for 60 min before addition of 12.5 mM ADP (state 3) with or without 0.5 mM NMN and incubated an additional 30 min at 37°C before being measured. (N = 2–3). (B) Isolated skeletal muscle mitochondria were maintained in state 2 at 37°C with shaking for 30 min before addition of ADP (state 3) with or without NMN and incubated an additional 60 min. The mitochondrial suspension was then either lysed directly in 0.6M perchloric acid (final concentration) or centrifuged at 10,000 x g for 2 min at 4°C to collect the supernatant and (subsequently washed) pellet which were then extracted with perchloric acid. (N = 2). (C and D) Isolated skeletal muscle mitochondria were maintained in state 2 at 37°C with shaking with or without 10 mM NAD. At the indicated time points, aliquots were removed from the pooled mitochondrial suspensions and centrifuged to separate the pellet and supernatant (C), or analyzed for state three respiratory capacity using high-resolution respirometry (D). (N = 2). Results are expressed as mean ±SEM and are representative of three independent experiments. (*, p<0.05; **, p<0.005; ***, p<0.0001; unpaired Student’s t-test).
 
-## Cytosolic NMN contributes to mitochondrial NAD
+### Cytosolic NMN contributes to mitochondrial NAD
 
 To test the behavior of mitochondria in intact cells with physiologically relevant cytosolic concentrations of NAD and NMN, we next employed an isotopic labeling approach. Nicotinamide riboside (NR) is taken up by cells and converted to NMN by nicotinamide riboside kinases (NRKs) (Ratajczak et al., 2016; Bieganowski and Brenner, 2004). We treated intact C2C12 myotubes with NR that had been isotopically labeled on both the nicotinamide ring and the ribose moieties, such that its incorporation into NMN and subsequent conversion to NAD would result in retention of both heavy isotopes, whereas degradation of NR by polynucleotide phosphorylase or enzymatic consumption of NAD to generate nicotinamide would separate the labels (Figure 4a). We detected a high proportion of doubly labeled NMN and NAD in mitochondria isolated from the myotubes, unequivocally demonstrating that cytosolic NMN contributes to mitochondrial NAD without an intermediated step involving degradation to nicotinamide (Figure 4b–c). The slightly more rapid appearance of doubly-labeled NAD in intact whole cell lysates as compared to isolated mitochondria is suggestive that at least some NAD synthesis is occurring outside of the organelles. Since NRK is not present in mitochondria, NMN must be produced in the cytosol, but these data do not allow us to distinguish whether mitochondrial NAD arises from conversion of imported NMN or from direct uptake of cytosolic NAD.
 
@@ -71,9 +71,33 @@ To test the behavior of mitochondria in intact cells with physiologically releva
 
 To discern whether mitochondria have the ability to directly import intact NAD, rather than relying on synthesis from imported NMN, we performed isotopic labeling experiments using nicotinic acid riboside (NAR, Figure 5—figure supplement 1). The final step in conversion of NAR to NAD requires the cytosolic enzyme NAD synthase (NADS, Figure 4a). Thus, NAD synthesis from this precursor should occur only in the cytosol, and should leave NMN unlabeled. In contrast to this expectation, we found that feeding labeled NAR resulted in nearly equivalent labeling of the total and mitochondrial pools of both NAD and NMN (Figure 5a–b). We considered several possibilities to explain the observed NMN labeling: (1) The labeled NAR could have been contaminated with labeled NR, resulting in direct production of both NAMN and NMN, (2) Given the much higher concentration of NAD in cells, non-enzymatic degradation of a small amount of labeled NAD during extraction could account for a substantial portion of the NMN signal, and (3) NMN could be generated from NAD through enzymatic processes such as reverse flux through NMNATs or degradation of NADH by the mitochondrial Nudix hydrolase Nudt13 and oxidation of the resulting NMNH (Abdelraheim et al., 2017; Long et al., 2017). To be sure the parent NAR contained no detectable NR contamination we tested it against NR standards; a spike of as little as 0.01 nM NR into 1 µM M NAR was robustly detected, whereas no signal was present in the NAR alone, thereby excluding the first possibility that labeled NMN arose from contaminating NR (Figure 5c). Notably, our data also suggest that nicotinic acid-containing nucleotides are not able to enter the mitochondria at all. While NAR was almost undetected by our techniques, we observed a dramatic exclusion of NAMN and NAAD from the mitochondrial fractions (Figure 5d). Next we examined the possibility that nonenzymatic degradation of NAD might contribute to the NMN signal. By varying the extraction conditions, we were able to confirm that spontaneous hydrolysis of NAD is a substantial source of contamination of the NMN pool when metabolites are suspended in aqueous solutions (Figure 5e,f).
 
-## Cytosolic NAD(H) is imported into the mitochondria
+![Figure 5.](https://cdn.elifesciences.org/articles/33246/elife-33246-fig5-v3.jpg)
+
+**Figure 5.:** (A) Fractional labeling of NAD in C2C12 whole cell lysates and isolated mitochondria following 4 hr of incubation with doubly-labeled NAR. (N = 5). (B) Fractional labeling of NMN in C2C12 whole cell lysates and isolated mitochondria following 4 hr of incubation with doubly-labeled NAR. (N = 5). (C) Confirmation of the lack of NR contamination in NAR. 1 µM NAR was combined with increasing concentrations of NR (0–100 nM) to demonstrate that NR is absent in the NAR and readily detected by this methodology. (Single measurements). (D) Total ion counts for NAAD and NAMN in whole cell lysates and mitochondrial isolates from differentiated C2C12 cells treated with isotopically-labeled NR or NAR tracers for 4 hr. Results expressed as means ± SEM. (N = 3). (E) Incubation of NAD at 37°C in water, but not 80% methanol results in substantial degradation to NMN. Blue bars show unlabeled NMN resulting from degradation from a 20 µM NAD standard spike; Red bars indicate labeled NMN from spiked-in standard (1 µM, dual labeled). (N = 3). (F) NAD total ion count measured in parallel from same samples in (E). (N = 3).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33246/elife-33246-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) NMR spectra confirming the NAR synthesis product. Red NMR trace represents unlabeled β–NAR. Blue NMR trace represents double-labeled NAR (~15% ɑ-NAR based on integration). (B) β–NAR-deuterium labeled on ribose and C-13 labeled on the nicotinic acid moiety.
+
+### Cytosolic NAD(H) is imported into the mitochondria
 
 To overcome contamination of the NMN signal by NAD breakdown, we employed two strategies: manipulation of the size of the NMN pool enzymatically, and altering the metabolite extraction protocol to avoid suspension in water. In the first, we used a CRISPR-based system to target each of the three NMNAT isoforms with two independent guide RNAs in C2C12 myoblasts (Supplementary file 1). All cell lines differentiated into myotubes with no apparent differences in size or structure at the end of the week-long differentiation protocol. Loss of NMNAT1 protein expression was verified by western blot, while we were unable to reliably detect NMNAT2 or NMNAT3 using available antibodies. However, reduction of mRNA expression and loss of wild type DNA sequence at the target sites were observed in the cell lines (Figure 6h; Figure 6—figure supplement 2; Supplementary file 2) and data not shown). Myotube NAD content was significantly reduced in the two lines targeting NMNAT1, as compared to controls or lines targeting the other isoforms (Figure 6a). There were no significant differences in mitochondrial NAD content in freshly isolated organelles (Figure 6b, ice). However, organelles from the NMNAT1-targeted lines showed increased susceptibility to NAD depletion by holding in state 2, and limited ability to synthesize NAD from NMN (Figure 6b), supporting the model that the majority of NMNAT activity in mitochondrial preparations arises from contaminating NMNAT1, rather than matrix-localized NMNAT3. This conclusion was further supported by proteinase K treatment of mitochondrial preparations. Limited digestion removes proteins in the supernatant or on the outer mitochondrial membrane, while leaving matrix proteins intact. Accordingly, proteinase K reduced conversion of NMN to NAD without affecting respiratory capacity (Figure 6—figure supplement 2). In addition to reduced NAD concentration, myotubes with NMNAT1 targeted had dramatically increased NMN content in whole-cell lysates, consistent with a major role for this isoform in NAD synthesis from NMN (Figure 6c). Rescuing NMNAT1-targeted cells with human NMNAT1, which does not contain the targeted sequence, attenuated the increase in NMN concentration, and enhanced NAD synthesis from NMN by isolated mitochondria (Figure 6—figure supplement 3). In contrast, targeting NMNAT2 or NMNAT3 did not lead to obvious changes in pyridine nucleotide distribution (Figure 6d). As hoped, treatment of NMNAT1 targeted cells with NAR led to a large discrepancy in the fractional labeling detected for the total NMN and NAD pools (Figure 6e). This is consistent with dilution of any NMN signal that resulted from NAD hydrolysis into the larger pool of unlabeled NMN, but also consistent with the possibility that flux through NMNAT1 contributed to some labeling of NMN in wild type cells. In either case, the higher labeling of NAD as compared to NMN allowed us to resolve the source of mitochondrial nucleotides. The fractional labeling of mitochondrial pyridine nucleotide pools clearly approached that of NAD and far exceeded that of (whole cell) NMN (Figure 6f,g). This labeling pattern can only be explained if NAD is taken up directly by mitochondria in NMNAT1-targeted cells. Thus, our findings indicate that mitochondrial pyridine nucleotides originate from imported NAD (or NADH), rather than import of cytosolic NMN.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/33246/elife-33246-fig6-v3.jpg)
+
+**Figure 6.:** For all panels, data representing whole cells are depicted as solid bars, whereas data from isolated mitochondria are shown with a stippled pattern. (A) Differentiated C2C12 parental and LentiCRISPR transgenic myotubes were analyzed for NAD content. The cells are as follows: ctrl- parental line with no vector; R26- vector control; 1a and 1b- two separate guide RNAs targeting NMNAT1; 2a and 2b- two separate guide RNAs targeting NMNAT2; 3a and 3b- two separate guide RNAs targeting NMNAT3. (N = 3). (B) Mitochondria isolated from differentiated C2C12 cells were held in state 2 (MirO5 respiration buffer containing 10 mM Pyruvate, 5 mM Malate) at 37°C with shaking for 30 min. They were then collected and lysed in perchloric acid immediately, or transitioned into state three by adding ADP (12.5 mM, final concentration) with or without supplementation with NMN (0.5 mM, final concentration) and maintained for 60 min at 37°C with shaking before collection. (N = 2–4). (C–D) Total ion counts for NAD and NMN in extracts from C2C12 LentiCRISPR whole cells (C) and isolated mitochondria (D) following a 4 hr incubation with isotopically-labeled NR or NAR tracer. (Single measuements). (E–F) Fractional labeling of metabolites (NAD and NMN) measured in C2C12 LentiCRISPR whole cells (E) and isolated mitochondria (F) after a 4 hr incubation with isotopically-labeled NR or NAR tracer. (Single measurements). (G) Fractions of double-labeled NAD and NMN measured in C2C12 LentiCRISPR whole cell and mitochondrial lysates following 4 hr incubation with isotope-labeled NAR (means ± SEM). (N = 3). (H) Immunoblot confirming NMNAT1 knockout in CRISPR C2C12 cell line. (*, p<0.05; **, p<0.001; 2-tailed, unpaired Student’s t-test versus R26).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33246/elife-33246-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Total RNA was extracted from differentiated cells in duplicate using Trizol (Invitrogen) according to the manufacturer’s instructions. Subsequently, cDNA was synthesized using a high capacity cDNA reverse transcription kit (ABI). RT-PCR was performed using Power SYBR Green PCR master mix (ABI) on the Quantstudio 7 Flex RT-PCR system (ABI). (A–C) For all assays, the plots show gene expression values relative to the reference sample, R26 (control), and are normalized to the control gene 36B4 (Rplp0). For each NMNAT isoform, two distinct gRNAs were generated (a and b) near the 5’ end, which are separated by a short sequence (~40 bp) and the correspondingly named primers amplify a region that is just downstream of the target site. The cells are named as follows: ctrl - parental line with no vector; R26 - control; 1a and 1b - two separate guide RNAs targeting NMNAT1; 2a and 2b - two separate guide RNAs targeting NMNAT2; 3a and 3b - two separate guide RNAs targeting NMNAT3.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/33246/elife-33246-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Isolated murine skeletal muscle mitochondria were diluted in MiRO5 to equal concentrations (1.1 mg/mL) and were incubated on ice for 30 min with the following treatments: ctrl - diluted in MiRO5 only; PI - incubated in MiRO5 only for 30 min followed by addition of protease inhibitor (1:100 dilution; Sigma); PI + protK [0.5] - incubated with both protease inhibitor (1:100) and proteinase K (0.5 mg/mL; Roche); protK [0.25] - incubated with proteinase K (0.25 mg/mL) followed by the addition of protease inhibitor; protK [0.5] - incubated with proteinase K (0.5 mg/mL) followed by the addition of protease inhibitor. (A) Treatment with proteinase K significantly impaired the ability of the mitochondria to generate NAD from NMN. (N = 2). (B) Proteinase K-treated does not impair mitochondrial OXPHOS activity. (N = 1).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/33246/elife-33246-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** NMNAT1 protein was restored by introduction of a viral vector containing the human form of the NMNAT1 gene in order to prevent targeting by the mouse-specific NMNAT1 gRNA. The gateway compatible lentiviral vector, pLX304 (clone ID:HsCD00434593, DNASU, Arizona), was co-transfected with the pMD2-G envelope and psPAX2 packaging vectors into 293 cells using Fugene six transfection reagent (Promega). The consequent lentivirus was collected as described and was used to infect the C2C12 CRISPR cells. (A) Expression of human NMNAT1 in C2C12 cells lacking the murine isoform and the Rosa26 control line. (B) Human NMNAT1 reduced NMN accumulation in CRISPR-targeted cells. (C) Human NMNAT1 cDNA enhanced the ability of mitochondrial preps to synthesize NAD from NMN. Three biological replicates were used for the experiments reported in panels B and C.
 
 In a parallel approach, we were able to demonstrate that by injecting methanolic extracts directly into the LC-MS without a drying/concentration step, we were able to completely avoid the artifactual hydrolysis of NAD to NMN (Figure 7a,b). Repeating the NAR treatment using this method revealed very low NMN levels in the whole cell lysates with almost no detectable labeling, whereas the fractional labeling of NAD was consistent with that in previous experiments (Figure 7c). Mitochondria isolated from these cells contained labeled NAD, confirming that they import fully synthesized NAD from the cytosol. NMN in mitochondria was also labeled, and we speculate that this reflects degradation of a small proportion NAD during the isolation process. Similarly, treating the human cell lines HEK293 and HL-60 with doubly-labeled NAR resulted in the appearance of doubly-labeled NAD within the mitochondria in the absence of detectable NMN (Figure 7d). Taken together, our experiments confirm that despite the lack of any recognized transporter, mammalian mitochondria, like their yeast and plant counterparts, are capable of importing NAD(H).
 
@@ -99,37 +123,362 @@ In summary, we show that mammalian mitochondria are capable of directly importin
 
 ## Materials and methods
 
-## Mitochondrial isolation from skeletal muscle and liver
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C2C12; myotubes; myoblasts;</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-1772</td>
+      <td>Mouse myoblast, mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HL-60</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-240</td>
+      <td>Human leukemia, authenticated by STR profiling, mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293; HEK293</td>
+      <td>Gift from Morris Birnbaum’s lab</td>
+      <td></td>
+      <td>Human embryonic kidney, authenticated by STR profiling, mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>000664</td>
+      <td>C57BL/6J</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LentiCRISPR v2 (Lentiviral vector)</td>
+      <td>Addgene</td>
+      <td>52961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2 (Lentiviral packaging plasmid)</td>
+      <td>Addgene</td>
+      <td>12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G (Lentiviral envelope expressing plasmid)</td>
+      <td>Addgene</td>
+      <td>12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLX304 (Gateway Lentiviral vector)</td>
+      <td>DNASU plasmid repository</td>
+      <td>NMNAT1</td>
+      <td>Clone ID: HsCD00434593</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease</td>
+      <td>Sigma-Aldrich</td>
+      <td>P5380</td>
+      <td>Protease from Bacillus lichenformis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ADP</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2754</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyruvate</td>
+      <td>Sigma-Aldrich</td>
+      <td>P2255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Malate</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-NMN</td>
+      <td>Sigma-Aldrich</td>
+      <td>N3501 100 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PRPP</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8296</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>Sigma-Aldrich</td>
+      <td>C2920-10MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>O4876-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease inhibitor cocktail (Sigma); PI</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8340</td>
+      <td>Protease inhibitor cocktail solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alcohol dehydrogenase</td>
+      <td>Sigma-Aldrich</td>
+      <td>A3263-150KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diaphorase</td>
+      <td>Sigma-Aldrich</td>
+      <td>D5540-500UN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Resazurin</td>
+      <td>Sigma-Aldrich</td>
+      <td>R7017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flavin mononucleotide</td>
+      <td>Sigma-Aldrich</td>
+      <td>F6750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide; NAM</td>
+      <td>Sigma-Aldrich</td>
+      <td>72345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hexadinitrine</td>
+      <td>Sigma-Aldrich</td>
+      <td>107689</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinic acid; NA</td>
+      <td>Sigma-Aldrich</td>
+      <td>N4126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Perchloric Acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>244252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAD; Nicotinamide adenine dinucleotide</td>
+      <td>Roche</td>
+      <td>101127965001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K; ProtK</td>
+      <td>Roche</td>
+      <td>03115887001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease inhibitor cocktail (Roche)</td>
+      <td>Roche</td>
+      <td>11697498001</td>
+      <td>Complete protease inhibitor cocktail tablets</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSA</td>
+      <td>Roche</td>
+      <td>03117057001</td>
+      <td>Bovine serum albumin Fraction V, heat shock, fatty acid free</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A111380-03</td>
+      <td>10 mg/mL stock</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>R21001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gallotannin</td>
+      <td>Enzo Life Sciences</td>
+      <td>ALX-270–418 G001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Novo-Nordisk Novolin N</td>
+      <td>U-100</td>
+      <td>100 units/mL; recombinant DNA origin</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fugene 6</td>
+      <td>Promega</td>
+      <td>E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NR; isotope-labeled nicotinamide riboside</td>
+      <td>PMID: 27508874</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAR; isotope-labeled nicotinic acid riboside</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Micro BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>23235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West femto kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NMNAT1 (rabbit polyclonal)</td>
+      <td>Gift from Lee Kraus, Zhang et al. (2009) PMID: 19478080</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VDAC (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab154856</td>
+      <td>[EPR10852(B)]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-B-actin HRP (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab20272</td>
+      <td>[mAbcam 8226]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibody</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>NA934</td>
+      <td>Amersham ECL anti-rabbit IgG, HRP-linked whole Ab (from donkey)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibody</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>NA931</td>
+      <td>Amersham ECL anti-mouse IgG, HRP-linked whole Ab (from sheep)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mitochondrial isolation from skeletal muscle and liver
 
 Male C57BL/6 mice were euthanized by cervical dislocation, and their gastrocnemius and quadriceps muscles were dissected and placed immediately in ice-cold muscle homogenization buffer (100 mM KCl, 50 mM Tris-HCl (pH 7.4), 5 mM MgCl2, 1 mM EDTA (pH 8.0) and 1.8 mM ATP) at pH 7.2. The entire procedure was performed at 4°C. The fat and connective tissues were removed and the muscle tissue was chopped into small pieces. The chopped muscle was incubated for 2 min in protease medium (60U of protease from Bacillus lichenformis (Sigma) per mL of homogenization buffer), washed twice with homogenization buffer, and transferred to an ice-cold Teflon Potter Elvehjem homogenizer containing homogenization buffer. The muscle was homogenized using a motor-driven homogenizer for 10 min at 150 rpm. A small aliquot of the homogenate was then removed and stored at −80°C for further analysis. The volume of the remaining homogenate was doubled with homogenization buffer and centrifuged at 720 x g for 5 min at 4°C. The pellet was resuspended in homogenization buffer and centrifuged for an additional 5 min at 720 x g. The supernatants were combined and centrifuged at 10,000 x g for 20 min at 4°C. The supernatant was discarded and the pellet was resuspended in homogenization buffer and further centrifuged for 10 min at 10,000 x g. The final mitochondrial pellet was resuspended in resuspension buffer (225 mM sucrose, 44 mM KH2PO4, 12.5 mM Mg(OAc)2, and 6 mM EDTA; pH 7.4) and maintained on ice. Mitochondrial protein content was quantified using the Micro BCA Protein Assay Kit (Thermo Scientific).
 
 For isolation of liver mitochondria, the liver was placed into ice-cold mitochondrial isolation buffer [MIB; 210 mM Mannitol, 70 mM Sucrose, 10 mM HEPES, 1 mM EGTA, 0.25% BSA, pH 7.4 at 4°C] immediately after dissection, and chopped into small pieces. The liver was homogenized by 10 strokes in an ice-cold Teflon Potter Elvehjem homogenizer containing MIB. The homogenate was centrifuged at 750 g for 10 min at 4°C, and the resulting supernatant was centrifuged for a further 5 min at 750 g. The mitochondrial fraction was recovered by centrifugation of the supernatant for 20 min at 5000 g. The pellet was resuspended in homogenization buffer, and re-centrifuged at 5000 g for a further 10 min. The final mitochondrial pellet was resuspended in MIB lacking BSA for protein determination as described (Thermo Scientific).
 
-## Mitochondrial treatments and extraction
+### Mitochondrial treatments and extraction
 
 For all experiments, purified mitochondria containing 100 µg of total protein were resuspended in ice-cold or pre-warmed MirO5 respiration buffer (Oroboros) containing the indicated compounds at a final concentration of 1 mg/mL. Pyruvate, Malate, ADP, β-NMN, PRPP, FCCP and Oligomycin were purchased from Sigma. NAD and NADH were from Roche. Gallotannin was from Enzo Life Sciences. For timed incubation experiments, the mitochondrial suspensions were maintained at 37°C in a shaking heat block with the tube caps opened. Proteinase K treatments (0.25 or 0.5 mg/mL, Roche) were performed for 30 min on ice with 1.1 mg/mL mitochondrial protein, then protease inhibitor cocktail (1:100, Sigma P8340) was added prior to warming. For NAD and NADH determination from the mitochondrial suspension, 50 μg of mitochondrial protein were transferred to tubes containing 10% (v/v) of either Perchloric Acid (Sigma) or KOH (Sigma) to achieve final concentrations of 0.6M or 0.1M, respectively. The mitochondrial lysates were vortexed vigorously, then centrifuged at max speed for 10 min and the supernatant was collected for analysis and maintained on ice or stored at −70°C. Prior to storage or analysis, the KOH lysate were incubated at 55°C for 10 min to degrade any residual NAD, then cooled on ice for 5 min.
 
-## NAD-NADH cycling assay
+### NAD-NADH cycling assay
 
 An enzyme-based cycling assay was used to determine NAD in experiments without tracers (Figures 1–3; Figure 6a,b). Immediately prior to analysis, mitochondrial lysates were diluted 1:10 in ice-cold phosphate buffer (pH 8). 5 µL of this dilution was then subjected to an enzymatic cycling assay in a 100 μL total volume as described previously (Zhang et al., 2009). Briefly, NAD standards or diluted mitochondrial extracts were added to a cycling mixture consisting of 2% ethanol, 100 μg/mL alcohol dehydrogenase, 10 μg/mL diaphorase, 20 μM resazurin, 10 μM flavin mononucleotide, 10 mM nicotinamide, 0.1% BSA in 100 mM phosphate buffer, pH 8.0. The cycling reaction was incubated at room temperature, and the appearance of resorufin (generated during each oxidation-reduction cycle) was measured by fluorescence excitation at 544 nm and emission at 590 nm.
 
-## Cell culture
+### Cell culture
 
 C2C12 myoblasts and HEK293 cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 4.5 g/L D-Glucose, 2 mM Glutamine, 10% FBS and antibiotics. C2C12s were purchased from ATCC and HEK293s were a gift from Morris Birnbaum’s lab. Care was taken to maintain these cells within the log phase of growth and to avoid allowing them to become confluent. For differentiation into myotubes, C2C12s were grown to confluence, washed once with DPBS (Gibco) and the media was replaced with DMEM containing 2% Horse serum (Gibco) overnight. Following this, the media was replaced every day for 7 days with DMEM containing 2% Horse serum and 1 µM insulin (modified from [Yaffe and Saxel, 1977]). HL-60 cells were grown in cultured in Iscove’s Modified Dulbecco’s Medium (IMDM) supplemented with 20% FBS and antibiotics. HL-60 cells were purchased from ATCC. Care was taken to maintain these suspension cells at a concentration below 106 cells per mL. Human cell lines (HEK293 and HL-60) were authenticated by STR profiling and all three cells lines tested negative for mycoplasma.
 
-## Generation of CRISPR cell lines
+### Generation of CRISPR cell lines
 
 The CRISPR/Cas9 system was used to target each of the three individual isoforms of NMNAT in C2C12 cells. For each isoform, two separate guide RNA sequences (gRNA) were targeted toward the 3’ end of the coding region and were designed using the CRISPR design tool (http://crispr.mit.edu). A sequence from the ROSA 26 genes (R26) was used as a control. The gRNA sequences are listed in Supplementary file 1. The gRNAs were cloned into the LentiCRISPR v2 vector backbone (Addgene, #52961) between Esp3I sites downstream of the hU6 promoter. Lentivirus was produced by co-transfection of the lentiviral transfer vector with the pMD2-G envelope and psPAX2 packaging vectors into 293 cells using Fugene 6 transfection reagent (Promega). The media was changed 24 hr following transfection. The virus-containing supernatant was collected 48 hr post-transfection and filtered through a 0.22 μm syringe filter to eliminate cells. C2C12 myoblasts were infected with virus in media containing 8 μg/mL hexadinethrine (Sigma) in a dropwise manner with gentle swirling. 24 hr following infection, the virus was removed and the cells were selected in 1.5 μg/mL Puromycin (Gibco). Rescue of NMNAT1 targeted cells was accomplished by introduction of a lentiviral vector pLX304 (clone ID:HsCD00434593, DNASU, Arizona) expressing the human form of NMNAT1 (not targeted by the mouse-specific gRNA used to delete the gene). To generate active virus, the vector was co-transfected with the pMD2-G envelope and psPAX2 packaging vectors into 293 cells using Fugene six transfection reagent (Promega). Supernatant containing lentivirus was filtered through a 0.22 μm syringe filter, and used to infect cells in the presence of 8 μg/mL hexadinethrine (Sigma). After 24 hr, the virus was removed and the cells were selected in 3 ug/mL Blasticidin (Invitrogen).
 
-## Western blot analysis
+### Western blot analysis
 
 Whole cell or mitochondrial lysates from differentiated C2C12 cells were prepared with RIPA lysis buffer (50 mM Tris-HCl pH 7.4, 1% NP40, 0.25% sodium deoxycholate, 0.5 mM EDTA, 150 mM sodium chloride) supplemented with protease inhibitor cocktail (Roche). Forty μg of lysate, 20 μg of mitochondrial pellet, or 10 μg of supernatant were run on a 10% gel (Bio-Rad) and transferred to PVDF membrane (Immobilon). The membrane was probed with rabbit polyclonal anti-NMNAT1 (1:500 dilution) as previously described (Zhang et al., 2009) or anti-VDAC (Abcam) followed by secondary antibody incubation. Immunoblots were developed using SuperSignal West femto kit (Thermo Fisher Scientific) on a Bio-Rad imaging system. Blots were then stripped and re-probed with HRP-conjugated β-actin antibody (Abcam).
 
-## Synthesis of tracers
+### Synthesis of tracers
 
 We designed double isotope-labeled nicotinamide riboside (NR) and nicotinic acid riboside (NAR) tracers, with a single 13C and a single deuterium on the nicotinamide and ribose moieties, respectively (Figure 4a). Direct incorporation of the intact tracer into NAD yields double-labeled NAD, whereas breakdown and resynthesis by the salvage pathway of any cell yields single-labeled NAD (Figure 4a). The synthesis of the labelled NR was reported previously (Frederick et al., 2016). The synthesis of the 2H, 13C NAR was accomplished as follows: 13C-Nicotinamide was hydrolysed under basic aqueous conditions to generate 13C-nicotinic acid, which following silylation was coupled to the 2D-tetraacetylated riboside under Vorbruggen conditions to yield the triacetylated 2H, 13C-NAR. Standard deprotection conditions employing NH3g-MeOH at −20°C for 4 days were employed to the generate 2H, 13C NAR. 2H, 13C NAR was isolated as a mixture of α/β anomers present in a 15:85 ratio, which could not be successfully separated. This α/β distribution proves reproducible, and is not observed for the non-labelled NAR (1H NMR, 13C NMR, MS, HRMS). The 1H NMR spectra of labeled and unlabeled NAR are provided in Figure 5—figure supplement 1. ESI-MS m/z 258.0926 (M + H); Exact mass calculated for (12C1213C11H132H1N1O6; M + H) 258.0917; found 258.0926.
 
-## Isotopic labeling of cells
+### Isotopic labeling of cells
 
 For the tracer studies, C2C12 myotubes, HEK293, or HL-60 cells were treated with double-isotope labeled 0.1 mM nicotinamide riboside (NR) or nicotinic acid riboside (NAR) in complete culture medium for 4 hr before extracting. The cells were then rapidly harvested using trypsin and media containing the label, were washed with ice-cold isolation buffer, and then 10% of the volume was removed and re-pelleted. To this pellet, 200 µL of 80:20 methanol:water (pre-chilled on dry ice) was added, vortexed vigorously and maintained on dry ice until processing as described below.
 
@@ -139,10 +488,10 @@ Metabolism was quenched and metabolites were extracted by aspirating the wash bu
 
 In each experiment on isolated mitochondria, a single isolation was performed and the mitochondria subdivided into the indicated treatment groups. For experiments in unmodified cells, all experimental dishes were split from the same parental dish prior to the experiment. In the case of genetically modified cell lines, all of the cells to be compared were generated simultaneously from the same parent line, and were handled equivalently throughout the study.
 
-## LC-MS instrumentation and method development
+### LC-MS instrumentation and method development
 
 Nicotinamide, NMN, NR, and NAD+, NAMN, NAR and NAAD+ were analyzed within 24 hr by reversed-phase ion pairing chromatography coupled with positive-mode electrospray-ionization on a Q Exactive hybrid quadrupole-orbitrap mass spectrometer (Thermo); Liquid chromatography separation was achieved on a Poroshell 120 Bonus-RP column (2.1 × 150 mm, 2.7 μm particle size, Agilent). The total run time is 25 min, with a flow rate of 50 μL/min from 0 min to 12 min and 200 μL/min from 12 min to 25 min. Solvent A is 98: two water: acetonitrile with 10 mM ammonium acetate and 0.1% acetic acid; solvent B is acetonitrile. The gradient is 0–70% B in 12 min (Lu et al., 2010). All isotope labeling patterns were corrected for natural abundance using AccuCor with correction matrices calculated based on the chemical formula and the mass of the metabolite (Su et al., 2017).
 
-## Statistics
+### Statistics
 
 Results are expressed as mean ± standard error of the mean of biological replicates. Biological replicates are individually treated samples (cells or isolated mitochondria) whereas technical replicates are repeat assays of the same biological replicate. No outliers were excluded from the presented data. No formal power analyses were used to design experiments. Sample sizes were chosen based on prior experience with similar assays. Comparisons between two groups were performed using Students t test to establish reported p-values. All statistical analyses were performed using Prism 6 (GraphPad Software, Inc).

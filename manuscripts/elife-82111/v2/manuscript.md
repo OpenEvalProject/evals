@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03wmf1y16 Department of Cell and Developmental Biology, University of Colorado School of Medicine Aurora United States
+1. Department of Cell and Developmental Biology, University of Colorado School of Medicine Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 
 † Corresponding author
 
@@ -25,19 +25,39 @@ To address this gap in our knowledge we combined extensive time-lapse and longit
 
 ## Results
 
-## Regional differences in oligodendrocyte sheath number during developmental myelination
+### Regional differences in oligodendrocyte sheath number during developmental myelination
 
 The number of sheaths supported by a single oligodendrocyte in the zebrafish spinal cord at 4 days post fertilization (dpf) is widely variable (Almeida et al., 2011). However, it is unclear how this variability arises during development. Oligodendrocytes in the spinal cord myelinate either dorsal or ventral axon tracts and occupy these regions with differing cell densities. There are ~2-fold more myelinating oligodendrocytes in the ventral tracts compared to the dorsal tracts (Figure 1A and B). These domains have different functions, with ascending dorsal axons primarily transmitting sensory information and descending ventral axons transmitting motor information (Thau and Reddy, 2022). We investigated whether some of the variability in oligodendrocyte sheath number comes from quantifying cells from both regions together. Zebrafish embryos were injected at the single-cell stage with a sox10:eGFP-CAAX plasmid to sparsely label the membrane of individual oligodendrocytes. At 4 dpf, sheath number ranged from 4 to 21 per cell (Figure 1C and D), which is in line with previous work (Almeida et al., 2011). Importantly, oligodendrocytes in the dorsal region of the spinal cord had more sheaths on average than oligodendrocytes in the ventral region (Figure 1E). No statistically significant differences in average sheath length or the total sheath length were found when comparing these groups (Figure 1F and G). Oligodendrocytes in the ventral spinal cord that myelinated Mauthner axons were excluded from all analyses in this manuscript. To investigate how the regional difference in sheath number is generated, we compared sheath initiation and loss by oligodendrocytes in the dorsal and ventral regions of the spinal cord.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig1-v2.jpg)
 
-**Figure 1.:** (A) Lateral image of the spinal cord of a living Tg(mbp:eGFP-CAAX; mbp:TagRFP) larva (scale bar = 20 µm). (B) RFP+ oligodendrocyte cell counts in the dorsal and ventral regions of the spinal cord per field of view (317.4 µm long). (n=10 larvae). (C) Representative lateral images of dorsal and ventral oligodendrocytes in the spinal cord of living larvae at 4 days post fertilization (dpf) labeled by sox10:eGFP-CAAX (scale bar = 5 μm). (D) Sheath number per cell, all data combined (n=53 cells/53 larvae). (E–G) Sheath number per cell (E), average sheath length per cell (F), total sheath length per cell (G), comparing the dorsal and ventral regions (dorsal n=27 cells/27 larvae, ventral n=26 cells/26 larvae). The dashed lines in each plot represent average values with all data points shown. The error bars represent standard deviation. Significance determined by Mann-Whitney tests (see associated source data).Figure 1—source data 1.Figure 1B.Figure 1—source data 2.Figure 1D–G.
+**Figure 1.:** (A) Lateral image of the spinal cord of a living Tg(mbp:eGFP-CAAX; mbp:TagRFP) larva (scale bar = 20 µm). (B) RFP+ oligodendrocyte cell counts in the dorsal and ventral regions of the spinal cord per field of view (317.4 µm long). (n=10 larvae). (C) Representative lateral images of dorsal and ventral oligodendrocytes in the spinal cord of living larvae at 4 days post fertilization (dpf) labeled by sox10:eGFP-CAAX (scale bar = 5 μm). (D) Sheath number per cell, all data combined (n=53 cells/53 larvae). (E–G) Sheath number per cell (E), average sheath length per cell (F), total sheath length per cell (G), comparing the dorsal and ventral regions (dorsal n=27 cells/27 larvae, ventral n=26 cells/26 larvae). The dashed lines in each plot represent average values with all data points shown. The error bars represent standard deviation. Significance determined by Mann-Whitney tests (see associated source data).
 
-## Oligodendrocytes repetitively ensheathed axons in an activity-independent manner
+### Oligodendrocytes repetitively ensheathed axons in an activity-independent manner
 
 To establish parameters for quantifying the dynamics of sheath initiation and loss, we sparsely labeled neurons by injecting the pan-neuronal neuroD:tagRFP-CAAX axon reporter into Tg(nkx2.2:eGFP-CAAX), a transgenic myelin reporter line. The earliest stages of eGFP-CAAX-labeled sheath formation on tagRFP-CAAX-labeled axons were captured with extensive time-lapse imaging from 2.5 to 3 dpf (Figure 2A, see Materials and methods for more details). We could consistently identify immature ensheathments that were ~2 µm or longer, surrounding axons with a cylindrical shape (Figure 2B and C). Unexpectedly, each oligodendrocyte repetitively ensheathed the same axonal domain an average of 2–3 times before any stable sheaths were formed (Figure 2D, E [T0’, T15’, T45’, T60’]). We define repetitive ensheathment as multiple rounds of sheath initiation/loss on the same domain of an axon. Each axon domain was defined as the region between the two most lateral ensheathment attempts made by the same oligodendrocyte during a series of repetitive ensheathments. In cases with only a single ensheathment attempt, the axon domain was considered the region directly underneath the sheath. Of the 25 axonal domains analyzed, 14 of them ended up with a stabilized sheath (Figure 2F) and 11 were lost (Figure 2G). The total number of ensheathment attempts on each axonal domain ranged from 1 to 6, and 72% of these domains were ensheathed more than once. This repetitive ensheathment phenomenon was therefore common in our experiment and possibly fundamental to the process of building myelin sheaths.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig2-v2.jpg)
+
+**Figure 2.:** (A) Axonal ensheathment dynamics experimental paradigm. (B–C) Representative lateral images of immature ensheathments forming in the spinal cord of living Tg(nkx2.2:eGFP-CAAX) (myelin in green) larvae time-lapsed for 18 hr with a 5 min imaging interval starting at 2.5 days post fertilization (dpf). Axons were labeled with neuroD:tagRFP-CAAX (magenta). YZ images are cross sections of the axon (volume projections from Imaris). 3D reconstructions were generated in Imaris. (B) Time-lapse imaging of a stabilized ensheathment (scale bar = 2 μm). (C) Time-lapse imaging of a destabilized ensheathment (scale bar = 2 μm). (D) Representative lateral images of an axonal domain that was repetitively ensheathed four times before a sheath was stabilized. 3D reconstructions were generated in Imaris (scale bar = 2 μm). (E) Plot showing the number of times each axonal domain was ensheathed, for example, seven axonal domains had only one ensheathment attempt. Dotted red line represents the average number of ensheathment attempts. The error bar represents standard deviation (n=25 axonal domains, 18 axons, 12 larvae, 68 ensheathments imaged total). (F) Pie chart of the number of axonal domains with a final stable ensheathment and the number of ensheathment attempts that were made on each of those domains (n=14 axonal domains). (G) Pie chart of the number of destabilized axonal domains and the number of ensheathment attempts that were made on each of those domains (n=11 axonal domains) (see associated source data and supplementary video files).
+
 It is important to note that we performed this time-lapse imaging paradigm using tricaine as anesthesia. This drug is a sodium channel blocker that silences action potentials throughout the CNS. Neuronal activity is important for myelination, and it is possible that the repetitive axonal ensheathment that we observed could result from silencing neuronal activity. We tested this using the same axonal ensheathment imaging paradigm (Figure 3A). We anesthetized each larva in either tricaine or pancuronium bromide, which is a neuromuscular blocking drug that does not dampen neuronal activity in the CNS (https://www.ncbi.nlm.nih.gov/books/NBK538346/). It has also been used previously in zebrafish activity-dependent myelination studies (Hughes and Appel, 2020; Koudelka et al., 2016; Hughes and Appel, 2019). Importantly, there was essentially no difference in the average number of times an oligodendrocyte ensheathed the same axonal domain when comparing these forms of anesthesia (Figure 3B–D). Since we sometimes observed more than one axonal domain on the same axon, we also normalized the data by averaging the total number of ensheathment attempts across all domains of each axon (Figure 3E). However, there was still no difference between the two forms of anesthesia. We also found that 43% of the domains were stabilized (16 of 37) at the end of the imaging paradigm for the tricaine group and 55% were stabilized (16 of 29) for the pancuronium bromide group (Figure 3F). A Fisher’s exact test found no significant difference between these values.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig3-v2.jpg)
+
+**Figure 3.:** (A) Axonal ensheathment dynamics experimental paradigm. (B–C) Representative lateral images of repetitive ensheathments forming in the spinal cord of living Tg(nkx2.2:eGFP-CAAX) (myelin in green) larvae time-lapsed for 18 hr with a 5 min imaging interval starting at 2.5 days post fertilization (dpf). Axons were labeled with neuroD:tagRFP-CAAX (magenta). Scale bars = 2 µm. (B) Example from larva that was anesthetized in tricaine. (C) Example of larva that was anesthetized in pancuronium bromide. (D) Plot showing the number of times each axonal domain was ensheathed for the tricaine and pancuronium bromide groups (n=37 axonal domains for tricaine, n=29 axonal domains for pancuronium bromide). (E) The same data as in (D), but normalized by axon. When more than one domain was observed on an axon, the total number of ensheathments attempts for each domain was averaged (n=21 axons for tricaine collected from 15 larvae, n=20 axons for pancuronium bromide collected from 16 larvae). For (D) and (E), the dotted lines represent the average number of ensheathment attempts for each group. The error bars represent standard deviation. (F) Pie chart of the percent of axonal domains that were stabilized vs. destabilized. The top pie chart is for the tricaine group and the bottom pie chart is for the pancuronium bromide group. Significance was determined using non-parametric Mann-Whitney tests for (D, E). Significance was determined using a Fisher’s exact test for (F) (see associated source data and supplementary video files).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Calcium imaging experimental paradigm. (B) Example of calcium transients presented as dF/F0. (C) Comparison of the total number of calcium transients in the pre and post time-lapse videos for the control spike group. (D) Comparison of the total number of calcium transients in the pre and post time-lapse videos for the tricaine spike group. (E) Comparison of the percentage of calcium transients in the post/pre time-lapse videos between the control spike and tricaine spike groups. The dotted line in (E) represents the average percentage of post/pre calcium transients. The error bars for (E) is standard deviation. Control spike group n = 7 larvae. Tricaine spike group n = 8 larvae. Non-parametric Wilcoxon matched-pairs signed rank tests were used to test for significance in C and D. A non-parametric Mann-Whitney test was used to test for significance in E. (See associated source data and supplementary video files).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Pie charts comparing the percent of axonal domains that were ensheathed a single time vs repetitively (more than once). Tricaine n=62 total domains (data from Figures 2 and 3 are combined). Pancuronium bromide n=29 total domains. (B) Pie charts comparing the percent of repetitively ensheathed axonal domains where each ensheathment came from the same oligodendrocyte. Tricaine n=45 total domains (data from Figures 2 and 3 are combined). Pancuronium bromide n=19 total domains. (C) Pie charts comparing the percent of repetitively ensheathed axonal domains where the same process extending from each oligodendrocyte is responsible for each ensheathment. Tricaine n=45 total domains (data from Figures 2 and 3 are combined). Pancuronium bromide n=19 total domains. (D) Pie charts comparing the percent of repetitively ensheathed axonal domains where the process extending from each oligodendrocyte seems to maintain contact with the axon. Tricaine n=45 total domains (data from Figures 2 and 3 are combined). Pancuronium bromide n=19 total domains. (E) Number of ensheathment attempts made on each axonal domain that ends up stabilized or destabilized. The dotted lines represent the average number of ensheathment attempts for each group. The error bars are standard deviation. Stabilized n=46 domains, destabilized n=45 domains (tricaine and pancuronium bromide groups are combined from Figures 2 and 3 here). Significance was determined using a non-parametric Mann-Whitney test for (E). (F) Pie chart showing the overall stabilization rate as determined by dividing the number of stabilized axonal domains (n=46) by the total number of ensheathment attempts (n=224) (tricaine and pancuronium bromide groups are combined from Figures 2 and 3 here). (G) Pie chart showing the percentage of instances where the process maintains contact with axon during repetitive ensheathment and it results in a stabilized sheath. n=43 total domains (tricaine and pancuronium bromide groups are combined from Figures 2 and 3 here) (see associated source data).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Example of a line scan measurement of the ensheathment from Figure 2B, T5’ panel. Plot is the fluorescence intensity of the axon from the line scan in the image. (B) Simple linear regression comparing the full-width 1/3 max diameter measurements of each stabilized axonal domain compared to the number of times each domain was ensheathed. There are only 27 of 46 data points visible on this plot due to overlap in the same x, y positions. Dashed line shows regression. (C) Simple linear regression comparing the full-width 1/3 max diameter measurements of each destabilized axonal domain compared to the number of times each domain was ensheathed. There are only 32 of 45 data points visible on this plot due to overlap in the same x, y positions. Dashed line shows regression. The R2 values for each group are shown. All data from Figures 2 and 3 were combined for this analysis. This includes combining the tricaine and pancuronium bromide groups in Figure 3 (n=91 total axonal domains) (see associated source data).
 
 As a follow-up to this work, we performed a quality control experiment to demonstrate that there was a measurable difference in the CNS activity of larvae anesthetized in tricaine vs pancuronium bromide in our experiment. To do this we measured calcium transients in the zebrafish spinal cord using the Tg(elav3:H2B-GCaMP6f) pan-neuronal transgenic line (Dunn et al., 2016). We anesthetized larvae at 2.5 dpf in pancuronium bromide and imaged the spinal cord above the yolk sac extension at 4 Hz (Figure 3—figure supplement 1A). Each larva was then spiked with embryo media containing either tricaine or pancuronium bromide (control) for 5 min. After this, another video was collected on the same cells. There was no significant difference in the number of calcium transients in the pre- and post-videos for the controls, but there was a clear reduction in transients after the tricaine spike (Figure 3—figure supplement 1B-D). Due to the variability in the total number of transients that we observed across all the larvae, we also normalized the data by dividing the number of transients in the post-video by the number of transients in the pre-video to generate a percentage. There was still a clear difference in the percentage of calcium transients in the tricaine spiked group relative to the controls (Figure 3—figure supplement 1E). Collectively, this experiment allows us to more strongly conclude that the repetitive ensheathment phenomenon that we observed in Figures 2 and 3 is independent of neuronal activity.
 
@@ -45,13 +65,25 @@ Further assessment of the two axonal ensheathment experiments from Figures 2 and
 
 We next tried to better understand how the stabilization of sheaths might result from this repetitive ensheathment process. Due to the similarity in the outcomes for the tricaine and pancuronium bromide conditions in the previous paragraph, we combined all our data together to look at other metrics. We first looked at whether the average number of repetitive ensheathments for an axonal domain is different based on whether a sheath becomes stabilized. However, we found that there was no significant difference for this parameter (Figure 3—figure supplement 2E). We then divided all stabilized domains by the number of total ensheathment attempts and this results in an a relatively low stabilization rate of 20.5% (Figure 3—figure supplement 2F). This means that only one in five ensheathment attempts is stabilized on average by the end of the imaging paradigm at 3 dpf. However, for the instances when the process maintained contact with the axon, 65.1% of these resulted in a stabilized sheath (Figure 3—figure supplement 2G). This suggests that continuous axonal contact might promote sheath stabilization. Collectively, this data supports a model where oligodendrocytes extensively explore the axonal environment to find targets that are primed for sheath formation.
 
-## The repetitive ensheathment of axons did not correlate with axon diameter
+### The repetitive ensheathment of axons did not correlate with axon diameter
 
 If the repetitive ensheathment of axons is independent of neuronal activity, it is possible that the mechanism is more biophysical in nature. One possibility is that oligodendrocytes measure the size of each axon by wrapping and unwrapping it multiple times. To explore this possibility, we measured the diameters of all the axonal domains in our two repetitive ensheathment experiments from Figures 2 and 3 above. We performed a full-width 1/3 max measurement of the diameter of each axonal domain underneath one of the ensheathments in each series. We then did a linear regression to assess the relationship between the diameter of the axon and the number of times that it was ensheathed. The R2 value was 0.01 regardless of whether the ensheathment was stabilized or not. Thus, we found no relationship between these parameters in our data (Figure 3—figure supplement 3A–C).
 
-## Oligodendrocyte nascent sheath accumulation involved extensive sheath initiation and loss
+### Oligodendrocyte nascent sheath accumulation involved extensive sheath initiation and loss
 
 In the previous axonal ensheathment experiments, we captured the dynamics of sheath initiation from the perspective of the individual processes of an oligodendrocyte. We next sought to understand how these dynamics contribute to the overall sheath number of entire oligodendrocytes. To do this, we modified the ensheathment dynamics imaging paradigm from Figures 2 and 3 (Figure 4A). Embryos were co-injected with our sox10:eGFP-CAAX oligodendrocyte lineage cell membrane reporter and myrf:tagRFP, a cytosolic reporter expressed in myelin-fated oligodendrocytes. This allowed us to identify sparse, double-labeled eGFP+RFP+ cells in both the dorsal and ventral tracts of the spinal cord at 2.5 dpf. We captured the cellular dynamics of each cell for 15 hr with a 5 min imaging interval. At 3 dpf, larvae were placed back into embryo medium. At 4 dpf, the same larvae were remounted, and a single static image was taken for each of the same cells. From this, the formation and loss of every ensheathment could be tracked for each cell. Additionally, quality control experiments determined that the conditions of this imaging paradigm did not change the final sheath number or average sheath length of these cells (Figure 4—figure supplement 1, see Materials and methods for further details).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig4-v2.jpg)
+
+**Figure 4.:** (A) Oligodendrocyte ensheathment dynamics imaging paradigm. (B–E) Lateral images of oligodendrocyte ensheathment dynamics in the spinal cord of living larvae labeled with sox10:eGFP-CAAX and time-lapsed for 15 hours with a 5-minute imaging interval from 2.5-3dpf. (B) Images show the progression of immature sheath accumulation from the first ensheathment attempt in the first panel (set at T0’) to the final ensheathment at T500’ in the bottom panel. Outlined region in first panel is analyzed further in Figure D and E. White arrows identify all immature ensheathments in each frame. (Scale bar = 5 μm). (C) Images showing sheath loss during the stabilization phase. T500’ image is presented again in the top panel and is relabeled to identify future stabilized (cyan) or destabilized (red) ensheathments. This oligodendrocyte has 22 immature sheaths at T500’, 11 of which disappeared, and it has 11 stabilized sheaths at 4dpf in the final panel (Figure 4—figure supplement 2). (Scale bar = 5 μm). (D) Images of the outlined region in the first panel of B visualizing frequent sheath initiation and loss. Each ensheathment is represented with the numbers 1-19 to signify the order that each one appears. The numbers disappear when an ensheathment is lost. Only 5 ensheathment attempts were stabilized out of a total of 19. (Scale bar = 2 μm) (E) Further enlarged images of the outlined region in Figure D (T50’). White arrows point out 3 ensheathment attempts before the final one was stabilized. The YZ images are cross sections of each ensheathment (volume projections in Imaris). A box is drawn around each cylindrical ensheathment in the YZ images. (Scale bar = 2 μm). (See associated source data and supplementary video files).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative lateral images of dorsal and ventral oligodendrocytes for each of three testing groups (standard, agar_tricaine, time-lapse) in the spinal cord of living larvae at 4 days post fertilization (dpf) labeled by sox10:eGFP-CAAX (myelin in green). The images and data for the standard group are the same as in Figure 1 (scale bar = 5 μm). (B) Sheath number per cell, average sheath length per cell, total sheath length per cell from left to right for all dorsal data sets. (C) Sheath number per cell, average sheath length per cell, total sheath length per cell from left to right for all ventral data sets. (D) Sheath number per cell comparing the dorsal and ventral populations within each testing group. Standard: dorsal n=27 cells/27 larvae, ventral n=26 cells/26 larvae; agar_tricaine: dorsal n=24 cells/24 larvae, ventral n=25 cells/25 larvae; time-lapse: dorsal n=19 cells/19 larvae, ventral n=18 cells/18 larvae. The dashed lines in each plot represent average values with all data points shown. The error bars are standard deviation. Significance determined by Kruskal-Wallis test for (B, C). Global p-values are presented for each of these plots. Post hoc multiple comparisons tests were not performed since the global p-values were not significant. Mann-Whitney tests were performed for (D) (see associated source data).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Lateral images of an oligodendrocyte in the spinal cord of living larvae labeled with sox10:eGFP-CAAX at 4 dpf. The first panel is a max projection image of the entire cell. Each subsequent panel is a single optical section labeled 1–7. White arrows are pointing out 11 different sheaths (scale bar = 5 μm).
 
 To begin answering the question of how sheath initiation and loss is balanced for individual oligodendrocytes, every ensheathment was manually tracked and quantified in each frame of our time-lapse data set. As in published studies (Czopka et al., 2013), we found that oligodendrocytes have an initial phase of immature sheath accumulation (Figure 4B), followed by a phase of sheath stabilization and loss (Figure 4C and Figure 4—figure supplement 2). However, the accumulation phase was very dynamic in our studies, with a significant number of ensheathments eventually lost. For example, only 5 out of 19 ensheathment attempts were stabilized for the outlined region of the cell in Figure 4B (# 10, 13, 14, 18, and 19, Figure 4D). This is consistent with our data in Figure 3—figure supplement 2F. We also readily observed instances of possible repetitive ensheathment (Figure 4E). However, since we do not have axons labeled in this experiment, we cannot definitively conclude that this is what we observed.
 
@@ -59,17 +91,29 @@ To better understand the impact of these ensheathment dynamics, we needed to ave
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig5-v2.jpg)
 
-**Figure 5.:** (A) Time required for peak (or max) sheath accumulation per cell (hours). Error bars are standard deviation. (B–F) Videos of n=19 dorsal cells (19 larvae) and n=18 ventral cells (18 larvae) were quantified for sheath initiation and loss in each 5 min frame. The time-lapse videos were then normalized for quantitative comparison by defining the video frame at which each cell accumulated its peak (or max) number of immature ensheathments as T0’. Each frame before or after that was –5 min or +5 min. The vertical dashed line aligns the T0’ time point of each graph in B, D, and F. (B) The average number of immature ensheathments for dorsal and ventral cells that are present in each frame is plotted based on time relative to T0’; error bars represent SEM. (C) Percent of ensheathment attempts from the entire imaging period that occurred prior to reaching peak. Error bars represent SEM. (D) The average number of new ensheathment attempts in each frame is plotted with the same time normalization as in B. Error bars represent SEM. (E) Similar to C, the percent of ensheathments from the entire imaging period that were lost prior to reaching peak. Error bars represent SEM. (F) The average number of ensheathments that were lost in each frame is plotted with the same time normalization as in B. Error bars represent SEM. Individual data points are shown and significance was determined by Mann-Whitney tests in A, C, and E. The data in B, D, and F was cropped at +6.5 hr (see associated source data).Figure 5—source data 1.
+**Figure 5.:** (A) Time required for peak (or max) sheath accumulation per cell (hours). Error bars are standard deviation. (B–F) Videos of n=19 dorsal cells (19 larvae) and n=18 ventral cells (18 larvae) were quantified for sheath initiation and loss in each 5 min frame. The time-lapse videos were then normalized for quantitative comparison by defining the video frame at which each cell accumulated its peak (or max) number of immature ensheathments as T0’. Each frame before or after that was –5 min or +5 min. The vertical dashed line aligns the T0’ time point of each graph in B, D, and F. (B) The average number of immature ensheathments for dorsal and ventral cells that are present in each frame is plotted based on time relative to T0’; error bars represent SEM. (C) Percent of ensheathment attempts from the entire imaging period that occurred prior to reaching peak. Error bars represent SEM. (D) The average number of new ensheathment attempts in each frame is plotted with the same time normalization as in B. Error bars represent SEM. (E) Similar to C, the percent of ensheathments from the entire imaging period that were lost prior to reaching peak. Error bars represent SEM. (F) The average number of ensheathments that were lost in each frame is plotted with the same time normalization as in B. Error bars represent SEM. Individual data points are shown and significance was determined by Mann-Whitney tests in A, C, and E. The data in B, D, and F was cropped at +6.5 hr (see associated source data).
 
-## All oligodendrocytes exhibited a low and consistent sheath stabilization rate
+### All oligodendrocytes exhibited a low and consistent sheath stabilization rate
 
 It is very striking that all oligodendrocytes exhibited a similar rate of sheath loss during the accumulation phase (Figure 5), yet dorsal cells end up with more sheaths than ventral cells. Dorsal oligodendrocytes exhibited more ensheathment attempts, accumulated a higher peak number of immature ensheathments, and maintained more sheaths at the 4 dpf time point compared to ventral cells (Figure 6A–E). Dorsal oligodendrocytes also lost more sheaths during the stabilization phase compared to ventral cells (Figure 6F). However, both populations stabilized a similar percentage of ensheathments throughout the accumulation, stabilization, and combined phases of our experimental paradigm (Figure 6G–I). Thus, the levels of sheath initiation for each cell are very heterogeneous (ranging from ~20 to 190), but all oligodendrocytes exhibit a similar overall rate of sheath stabilization (~10–20%). To be confident with our quantification of this stabilization rate, we needed to be sure that these cells did not produce any new sheaths from 3 to 4 dpf during the sheath stabilization phase. We designed a modified ensheathment dynamics imaging paradigm to test this and found that oligodendrocytes made no new sheaths during this time interval (Figure 6—figure supplement 1, see Materials and methods for further details). Collectively, we conclude that dorsal cells end up with more sheaths at 4 dpf compared to ventral cells due to increased sheath initiation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig6-v2.jpg)
+
+**Figure 6.:** (A) Dorsal and ventral cell lateral images from the ensheathment dynamics imaging paradigm in the spinal cord of living larvae labeled with sox10:eGFP-CAAX (in green) and time-lapse imaged for 15 hr from 2.5 to 3 days post fertilization (dpf). The upper panels are a dorsal (left) and ventral (right) cell also labeled with myrf:tagRFP (magenta) at the beginning of the time-lapse experiment. The subsequent panels are the same cells at the peak of sheath accumulation, at 3 and 4 dpf (scale bar = 5 μm). (B–J) compares dorsal and ventral cells. (B) Total ensheathment attempts per cell. (C) Peak sheath number per cell. (D) Sheath number at 3 dpf per cell. (E) Final sheath number per cell at 4 dpf. (This is the same data and images as presented in Figure 4—figure supplement 1, time-lapse group.) (F) Net sheaths lost from the peak to 4 dpf. (G) Percent of sheaths stabilized during the accumulation phase (peak sheath number/total ensheathment attempts). (H) Percent of sheaths stabilized during the stabilization phase (final sheath number/peak sheath number). (I) Percent of total sheaths stabilized across both the accumulation and stabilization phases (final sheath number/total ensheathment attempts). (J) Simple linear regression comparing the total number of ensheathment attempts to the final sheath number at 4 dpf for each cell. The R2 values for each group are shown. Dorsal n=19 cells/19 larvae, ventral n=18 cells/18 larvae. The dashed lines in each plot represent average values with all data points shown. The error bars are standard deviation. Significance was determined by Mann-Whitney tests (see associated source data and supplementary video files).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Modified oligodendrocyte ensheathment dynamics imaging paradigm. (B) Lateral images in the spinal cord of living larvae labeled with sox10:eGFP-CAAX (in green) and time-lapsed from 2.5 to 4 dpf. The upper panel is an oligodendrocyte that is also labeled with myrf:tagRFP (magenta) at the beginning of the time-lapse experiment. The subsequent panels are of the same cell at 3 and 4 dpf (scale bar = 5 μm). (C) Number of sheaths formed and lost from 3 to 4 dpf per cell. The dashed lines in this plot represent average values with all data points shown. Error bars are standard deviation. (D) Change in sheath number from 3 to 4 dpf per cell. The straight lines are connecting the number of sheaths at 3 and 4 dpf for each cell. Dorsal n=5 cells/4 larvae, ventral n=3 cells/3 larvae (see associated source data and supplementary video files).
+
 We predict that this consistent sheath stabilization rate, irrespective of sheath initiation, could be a fundamentally important parameter for understanding oligodendrocyte ensheathment behavior. Indeed, a simple linear regression comparing the total number of ensheathment attempts with the final number of sheaths for each cell established high correlation of these parameters (R2 value of ~0.73 for dorsal cells and ~0.83 for ventral cells, Figure 6J). Thus, for each stabilized ensheathment, there is a relatively predictable number of ensheathments that are lost. Altogether, these results strongly suggest that while both sheath initiation and loss vary among oligodendrocytes, they are proportionately regulated across all oligodendrocytes.
 
-## Components of the endocytic recycling pathway localized to immature sheaths and regulated myelin sheath number
+### Components of the endocytic recycling pathway localized to immature sheaths and regulated myelin sheath number
 
 The repetitive ensheathment of axons is orchestrated by a dynamic series of morphological transitions that are energetically expensive for oligodendrocytes. Thus, it seems plausible that this process is fundamental for the proper accumulation and stabilization of sheaths. The endocytic recycling pathway is responsible for the reuse or turnover of membrane and membrane proteins in a cell (depicted in Figure 7A). We therefore decided to determine the importance of these early sheath initiation dynamics by disrupting the endocytic recycling pathway.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig7-v2.jpg)
+
+**Figure 7.:** (A) The endocytic recycling pathway during sheath initiation and loss. (B) Lateral images of oligodendrocytes in the early stages of the ensheathment process in the spinal cord of living larvae at 2.5 dpf labeled with sox10:mScarlet-CAAX (magenta) and expressing either myrf:eGFP-RAB5C, myrf:eGFP-RAB7A, or myrf:eGFP-RAB11A (green). White boxes outline immature sheaths with Rab+ endosomal puncta for each fusion protein. (Scale bar = 5 μm). (C) Top panels are grey inset images from the outlined regions in B. The bottom panels are 3D reconstructions of these insets (Membrane in magenta, endosomes in green). (D) Quantification of Rab+ endosomal puncta in immature sheaths. Number of puncta in each sheath was normalized by the length of the sheath. Rab5 n = 36 sheaths (9 ventral cells/2 dorsal cells/11 larvae), Rab11 n = 34 sheaths (8 ventral cells/2 dorsal cells/10 larvae), Rab7 n = 33 sheaths (9 ventral cells/2 dorsal cells/11 larvae). Dashed lines represent average values and error bars are SD. (See associated source data and supplementary video files).
 
 The endocytic recycling pathway is controlled by several Rab-GTPase proteins that act as master regulators of membrane trafficking (reviewed in Pfeffer, 2017). Rab5, Rab7, and Rab11 regulate the early endosome, late endosome/lysosome, and recycling endosome, respectively (Figure 7A). The cargo of endocytic vesicles is sorted at the early endosome (Rab5) and is then trafficked back to the plasma membrane or to the recycling endosome (Rab11) for further sorting. Alternatively, molecular cargo will be degraded as early endosomes mature into late endosomes/lysosomes (Rab7) (Grant and Donaldson, 2009; Langemeyer et al., 2018).
 
@@ -81,13 +125,21 @@ We injected myrf:tagRFP-rab5CS36N, myrf:tagRFP-rab7AT22N, and myrf:tagRFP-rab11A
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig8-v2.jpg)
 
-**Figure 8.:** (A) Representative lateral images of ventral oligodendrocytes in the spinal cord of living larvae at 4 days post fertilization (dpf) labeled by sox10:eGFP-CAAX (green) and one of the following: myrf:tagRFP, myrf:tagRFP-RAB5C, myrf:tagRFP-rab5C, S36N, myrf:tagRFP-RAB7Amyrf:tagRFP-rab7A, and T22Nmyrf:tagRFP-RAB11A, myrf:tagRFP-rab11A (all in magenta). The image and data for the control is the same as for the ventral group in S25NFigure 1 (scale bar = 5 μm). (B) Sheath number per cell. (C) Average sheath length per cell. (D) Total sheath length per cell (myrf:tagRFP n=26 cells/26 larvae, myrf:tagRFP-RAB5C n=28 cells/28 larvae, myrf:tagRFP-rab5C n=27 cells/27 larvaeS36N, myrf:tagRFP-RAB7A n=29 cells/29 larvae, myrf:tagRFP-rab7A n=32 cells/32 larvae, and T22Nmyrf:tagRFP-RAB11A n=30 cells/30 larvae, myrf:tagRFP-rab11A n=27 cells/27 larvae). The dashed lines in each plot represent average values with all data points shown. Error bars are standard deviation. Global significance was determined using a Kruskal-Wallis test for B–D. This global p-value is shown for C since it was not significant. Post hoc multiple comparison tests were not performed for this analysis. Post hoc Dunn’s multiple comparison tests were performed to compare groups in B and D. We compared everything with the control group and compared each wild-type and associated mutant with each other. The different Rab groups were not compared with each other (see associated source data).S25NFigure 8—source data 1.
+**Figure 8.:** (A) Representative lateral images of ventral oligodendrocytes in the spinal cord of living larvae at 4 days post fertilization (dpf) labeled by sox10:eGFP-CAAX (green) and one of the following: myrf:tagRFP, myrf:tagRFP-RAB5C, myrf:tagRFP-rab5CS36N, myrf:tagRFP-RAB7A, myrf:tagRFP-rab7AT22N, and myrf:tagRFP-RAB11A, myrf:tagRFP-rab11AS25N (all in magenta). The image and data for the control is the same as for the ventral group in Figure 1 (scale bar = 5 μm). (B) Sheath number per cell. (C) Average sheath length per cell. (D) Total sheath length per cell (myrf:tagRFP n=26 cells/26 larvae, myrf:tagRFP-RAB5C n=28 cells/28 larvae, myrf:tagRFP-rab5CS36N n=27 cells/27 larvae, myrf:tagRFP-RAB7A n=29 cells/29 larvae, myrf:tagRFP-rab7AT22N n=32 cells/32 larvae, and myrf:tagRFP-RAB11A n=30 cells/30 larvae, myrf:tagRFP-rab11AS25N n=27 cells/27 larvae). The dashed lines in each plot represent average values with all data points shown. Error bars are standard deviation. Global significance was determined using a Kruskal-Wallis test for B–D. This global p-value is shown for C since it was not significant. Post hoc multiple comparison tests were not performed for this analysis. Post hoc Dunn’s multiple comparison tests were performed to compare groups in B and D. We compared everything with the control group and compared each wild-type and associated mutant with each other. The different Rab groups were not compared with each other (see associated source data).
 
-## Rab5 regulated longitudinal sheath stability
+### Rab5 regulated longitudinal sheath stability
 
 We hypothesize that the repetitive ensheathment of axons is required to facilitate optimal sheath accumulation and stabilization and is regulated by the endocytic recycling pathway. We therefore predict that disrupting endocytic recycling will reduce these dynamics and diminish overall sheath accumulation. Both Rab5 and Rab11 are involved in the recycling component of the endocytic pathway and their dominant-negative mutants both decreased the overall sheath number per cell. Therefore, we decided to specifically investigate Rab5 in depth. We analyzed cells expressing the Rab5DN mutant in the ventral spinal cord tracts using the same ‘oligodendrocyte ensheathment dynamics paradigm’ from Figures 4—6 above. Oligodendrocytes expressing either myrf:tagRFP-RAB5C or myrf:tagRFP-rab5CS36N were imaged and compared to the ventral control data from Figures 4—6.
 
 Unexpectedly, the over-expression of the Rab5DN mutant did not change the dynamics of the accumulation phase. These cells formed and lost the same number of ensheathments during this phase and accumulated ensheathments to a similar peak number compared to the controls (Figure 9A–C, Figure 9—figure supplement 1A–F). Instead, the Rab5DN mutant specifically impacted the stabilization phase (which starts after cells reach peak sheath accumulation). We found a strong trend that the mutant increased the net number of sheaths that were lost from the peak sheath number out to 4 dpf although it was not statistically significant (Figure 9C–F). Consistent with this trend, cells over-expressing the Rab5DN mutant stabilized a lower percentage of sheaths in the stabilization phase specifically (Figure 9G–I). A simple linear regression comparing the total ensheathment attempts to the final sheath number showed that the slope of the mutant regression line was significantly lower than for the control group (Figure 9J). Collectively, we conclude that the dominant-negative Rab5 mutant expressed from the myrf driver negatively impacts the longitudinal sheath stabilization rate of oligodendrocytes but has little or no impact on initial sheath accumulation.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig9-v2.jpg)
+
+**Figure 9.:** (A) Lateral images from the ventral spinal cord of living larvae labeled with sox10:eGFP-CAAX (in green) and one of the following: myrf:tagRFP, myrf:tagRFP-RAB5C, myrf:tagRFP-rab5CS36N (all in magenta); and time-lapsed for 15 hours from 2.5-3dpf. The first panel is an image taken immediately before starting the time-lapse experiment. The subsequent panels are the same cells at the peak of sheath accumulation, at 3dpf, and at 4dpf. The images and data for the control are the same as for the ventral group in Figure 6. (Scale bar = 5 μm). (B) Total ensheathment attempts per cell. (C) Peak sheath number per cell. (D) Sheath number at 3dpf per cell. (E) Final sheath number per cell at 4dpf. (F) Net sheaths lost from the peak to 4dpf. (G) Percent of sheaths stabilized during the accumulation phase (peak sheath number/total ensheathment attempts). (H) Percent of sheaths stabilized during the stabilization phase (final sheath number/peak sheath number). (I) Percent of total sheaths stabilized across both the accumulation and stabilization phases (final sheath number/total ensheathment attempts). (J) Simple linear regression comparing the total number of ensheathment attempts to the final sheath number at 4dpf for each cell. (control n=18 cells/18 larvae, wild-type Rab5 n=18 cells/18 larvae, Rab5DN n=18 cells/17 larvae). The dashed lines in each plot represent average values with all data points shown. The error bars are standard deviation. Significance was determined using global Kruskal-Wallis tests. These p-values are shown for B-D and G since they were not significant. Post hoc multiple comparisons tests were not performed for these analyses. Post hoc Dunn’s multiple comparisons tests were done for E, F, H, and I and the individual p-values are shown. (J’) The slopes of the Rab5WT and Rab5DN regression lines from J were compared to the control in Graphpad by (two-tailed) testing the null hypothesis that the slopes are identical (the lines are parallel). P-values are shown in the table. (See associated source data and supplementary video files).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/82111/elife-82111-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Time required for peak (or max) sheath accumulation per cell (hours). Dashed lines represent the average values and the error bars are standard deviation. (B–F) The control, Rab5WT, and Rab5DN time-lapse data sets were quantified for sheath initiation and loss in each 5 min frame. This data was normalized by setting the video frame where each cell accumulates a peak number of immature sheaths as T0’, as in Figure 5. The vertical dashed line aligns the T0’ time point of each graph in B, D, and F. (B) The average number of immature ensheathments in each frame are plotted as a line with error bars representing SEM. The data for the control is the same as for the ventral group in Figure 5. (C) Percent of the total ensheathment attempts that occurred prior to reaching peak. Error bars represent SEM. (D) The average number of new ensheathment attempts in each frame was quantified with the same time normalization as in B. Error bars represent SEM. (E) Similar to C, the percent of the total number of immature ensheathments that were lost prior to reaching peak. Error bars represent SEM. (F) The average number of immature ensheathments that were lost in each frame was quantified with the same time normalization as in B. Error bars represent SEM. Significance was determined using global Kruskal-Wallis tests in A, C, and E. These p-values are shown for each plot since they were not significant. Post hoc multiple comparisons tests were not performed for these analyses. Control n=18 cells/18 larvae, wild-type Rab5WT n=18 cells/18 larvae, Rab5DN n=18 cells/17 larvae. The data in B, D, and F was cropped at +6.5 hr (see associated source data).
 
 ## Discussion
 
@@ -111,11 +163,182 @@ This study highlights several striking observations regarding how oligodendrocyt
 
 All source data have been provided within this manuscript. All reagents will be made available upon reasonable request to Dr. Wendy Macklin.
 
-## Zebrafish lines and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>RAB5C</td>
+      <td>Addgene</td>
+      <td>80518</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>RAB7A</td>
+      <td>Addgene</td>
+      <td>80522</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>RAB11A</td>
+      <td>Addgene</td>
+      <td>80529</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>sox10:eGFP-CAAX</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses membrane localized eGFP in oligodendrocyte lineage.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>sox10:mScarlet-CAAX</td>
+      <td>Gift from Appel lab</td>
+      <td></td>
+      <td>Expresses membrane localized mScarlet in oligodendrocyte lineage.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>neuroD:tagRFP-CAAX</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses membrane localized tagRFP in neurons.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:eGFP-RAB5C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses eGFP-Rab5 fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:eGFP-RAB7A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses eGFP-Rab7 fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:eGFP-RAB11A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses eGFP-Rab11 fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:tagRFP-RAB5C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses tagRFP-Rab5 fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:tagRFP-RAB7A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses tagRFP-Rab7 fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:tagRFP-RAB11A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses tagRFP-Rab11 fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:tagRFP-rab5CS36N</td>
+      <td>This paper and Clark et al., 2011</td>
+      <td></td>
+      <td>Expresses tagRFP-Rab5 DN mutant fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:tagRFP-rab7AT22N</td>
+      <td>This paper and Clark et al., 2011</td>
+      <td></td>
+      <td>Expresses tagRFP-Rab7 DN mutant fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:tagRFP-rab11AS25N</td>
+      <td>This paper and Clark et al., 2011</td>
+      <td></td>
+      <td>Expresses tagRFP-Rab11 DN mutant fusion in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>myrf:tagRFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses cytosolic tagRFP in pre-myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(nkx2.2a:EGFP-CAAX)</td>
+      <td>Kirby et al., 2006; Kucenas et al., 2008</td>
+      <td></td>
+      <td>Transgenic line expressing membrane localized eGFP in oligodendrocyte lineage.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(mbp:eGFP-CAAX)</td>
+      <td>Preston et al., 2019; Brown et al., 2021</td>
+      <td></td>
+      <td>Transgenic line expressing membrane localized eGFP in myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(mbp:tagRFP)</td>
+      <td>Preston et al., 2019; Brown et al., 2021</td>
+      <td></td>
+      <td>Transgenic line expressing cytosolic tagRFP in myelinating oligodendrocytes.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(elav3:H2B-GCaMP6f)</td>
+      <td>Gift from Dr. David Schoppik Dunn et al., 2016</td>
+      <td></td>
+      <td>Transgenic line expressing nuclear localized GCaMP6f in neurons.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine methanesulfonate</td>
+      <td>Syndel</td>
+      <td>MS-222</td>
+      <td>Anesthesia</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pancuronium bromide</td>
+      <td>Sigma</td>
+      <td>P1918</td>
+      <td>Anesthesia</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines and husbandry
 
 The Institutional Animal Care and Use Committee at the University of Colorado School of Medicine approved all animal work (#00419). This group follows the U.S. National Research Council’s Guide for the Care and Use of Laboratory Animals and the U.S. Public Health Service’s Policy on Humane Care and Use of Laboratory Animals. Zebrafish larvae were raised at 28.5°C in embryo medium and were staged as dpf. Transgenic lines used in this study were Tg(nkx2.2a:EGFP-CAAX), Tg(mbp:eGFP-CAAX), and Tg(mbp:tagRFP) (Kirby et al., 2006; Kucenas et al., 2008; Preston et al., 2019; Brown et al., 2021). The Tg(elav3:H2B-GCaMP6f) line was a kind gift from Dr. David Schoppik (Dunn et al., 2016). This line expresses GCaMP6f fused to the histone H2B and is thus localized to the nucleus. All other constructs were introduced by transient transgenesis to achieve sparse labeling for single-cell analysis in wild-type ABs. All experiments and analyses were performed blind to gender since sex is determined at later stages than those studied here.
 
-## Plasmid construction
+### Plasmid construction
 
 Multi-site gateway cloning was used to produce the following plasmids: pEXPR-sox10:eGFP-CAAX, pEXPR-sox10:mScarlet-CAAX (gift from Bruce Appel’s lab), pEXPR-neuroD:tagRFP-CAAX, and pEXPR-mbp:eGFP. The first three plasmids contain a cysteine-aliphatic amino acid-X (CAAX) prenylation motif that targets the fluorescent protein to the cell membrane. The following entry plasmids were used to build these constructs: p5E-sox10 (Mathews and Appel, 2016), p5E-neuroD (gift from Bruce Appel’s lab), p5E-mbp (Brown et al., 2021), pME-eGFP-CAAX, pME-tagRFP-CAAX, p3E-eGFP, p3E-polyA, pDEST-Tol2 (no transgenesis marker).
 
@@ -135,7 +358,7 @@ The rab7AT22N and rab11AS25N mutations were made by Keyclone Technologies (San M
 
 All plasmids were confirmed by diagnostic restriction digest and sequencing.
 
-## Injections, anesthesia, mounting, and general imaging parameters
+### Injections, anesthesia, mounting, and general imaging parameters
 
 Plasmids were injected into zebrafish embryos at the single-cell stage with Tol2 mRNA to achieve transient transgenesis and sparse labeling. On the desired day, the injected larvae were mounted laterally in 0.8% low-melt agarose with 140 µg/mL (0.014%) of tricaine methanesulfonate (Syndel) as anesthesia. All imaging was performed live using a Nikon A1R resonance scanning confocal microscope and a 40× Apochromat long-working distance water immersion objective with a 1.15 NA (Nikon MRD77410). A temperature-controlled stage maintained at 28.5°C was used for all time-lapse experiments. All imaging was done in the spinal cord of each larva above the yolk-sac extension. Oligodendrocytes in the ventral spinal cord that myelinated Mauthner axons were excluded from all analyses in this work.
 
@@ -143,15 +366,15 @@ In the axonal ensheathment activity experiment in Figure 3, we compared tricaine
 
 For the calcium activity experiment, Tg(elav3:H2B-GCaMP6f) larvae were all put down in pancuronium bromide exactly as above. (See this experimental section below for additional details of how the tricaine spike was performed.)
 
-## Myelinating oligodendrocyte cell counts in the spinal cord
+### Myelinating oligodendrocyte cell counts in the spinal cord
 
 Tg(mbp:eGFP-CAAX) and Tg(mbp:tagRFP) transgenic lines that express membrane-tethered eGFP and cytosolic tagRFP in myelinating oligodendrocytes respectively were crossed and embryos were grown to 4 dpf. Both sides of the spinal cord for each larva were imaged laterally above the yolk-sac extension with a 1× optical zoom (0.31 µm XY pixel size), a 0.3 µm z-step size (Nyquist), and 32× line averaging. Cell counts were performed in Imaris (version 9.8). Each image was cropped to separate dorsal and ventral regions. A Gaussian filter was then applied with a 0.311 µm width to smooth out noise. Following this, a local-background subtraction was performed with an estimated cell body size of 7 µm. A threshold for fluorescent intensity was then applied to each image manually. Finally, a 0.5 µm water-shed filter was used to separate contacting cell bodies and Imaris counted the number of cells in each image. Cell bodies occupying the area in between the dorsal and ventral axon tracts were manually removed (these cells were in the minority).
 
-## Static oligodendrocyte imaging for sheath number/length analysis
+### Static oligodendrocyte imaging for sheath number/length analysis
 
 Individual sheaths were visualized by labeling oligodendrocytes with sox10:eGFP-CAAX by transient transgenesis. These cells were imaged at 4 dpf with a 2× optical zoom (0.16 µm XY pixel size), a 0.3 µm z-step size (Nyquist), and 32× line averaging. Cells were chosen that were not too crowded for accurate quantification. Except for Figure 1D, dorsal and ventral cells were never combined for this analysis. In each image every sheath was identified and counted by inspecting individual optical sections. The lengths of each sheath were measured from maximum intensity projections using the simple neurite tracer plugin in Fiji. From this data we calculated sheath number, average sheath length, and the total sheath length per cell (calculated by adding up the length of all sheaths supported by each cell). The same images and ventral control data from this analysis were used and presented in Figures 1 and 8, and Figure 4—figure supplement 1.
 
-## Axonal ensheathment dynamics imaging and analysis
+### Axonal ensheathment dynamics imaging and analysis
 
 Criteria for quantifying ensheathment attempts using labeled axons were established. Axon membranes were sparsely labeled with the neuroD:tagRFP-CAAX plasmid by transient transgenesis in the Tg(nkx2.2:eGFP-CAAX) stable line. At 2.5 dpf larvae were anesthetized in tricaine and mounted, and time-lapse imaging was performed for 15–18 hr with an imaging interval of 5 min. A 2× optical zoom (0.16 µm XY pixel size), a 0.5 µm z-step size, and 16× line averaging were used. Imaging was done in the spinal cord above the yolk sac extension and focused on dorsal and midline axons, since the Tg(nkx2.2:eGFP-CAAX) line was too crowded in the ventral region for visualizing ensheathment dynamics. Regions in each video with potential axonal ensheathments were cropped and corrected for drift using the 3D drift correct plugin in Fiji. Individual optical sections were inspected and a volume projection in Imaris was analyzed for each axonal ensheathment. From this, we developed quantification criteria. Ensheathments had to be ~2 µm or longer and cylindrical in shape around the axon, that is, the axon fluorescent signal had to go through the center of the oligodendrocyte signal, and it had to be more than ~75% of the way around the axon. Once an ensheathment had formed, it had to shrink to below 2 µm in length and be less than half-way around the axon to be considered lost.
 
@@ -161,17 +384,17 @@ For the activity axonal ensheathment experiment in Figure 3, Tg(nkx2.2:eGFP-CAAX
 
 We present data in Figure 3—figure supplement 2C, D showing how often the same process from the same oligodendrocyte performs each repetitive ensheathment. We also report on how often these processes seem to remain in contact with the axon. Except for one instance in this data set (64 repetitively ensheathed domains), if the same process performed each repetitive ensheathment it also remained in contact with the axon. For instances where different processes performed the repetitive ensheathments, this involved complete process retraction before a different process started the next ensheathment in the series. About 15–20% of processes could not be sufficiently tracked throughout the entire video due to periods of crowding from other processes. The activity for these instances was categorized as ‘unclear’. It is important to note that our imaging interval for these experiments was 5 min, which is not fast enough to fully capture all oligodendrocyte process dynamics. Analysis of this data set therefore could have missed some of these process movements.
 
-## Calcium imaging and quantification
+### Calcium imaging and quantification
 
 Tg(elav3:H2B-GCaMP6f) larvae were mounted at 2.5 dpf in pancuronium bromide as described in the ‘Injections, anesthesia, mounting, and general imaging parameters’ section above. We mounted two to three larvae in each well of a multi-well glass-bottom dish (Greiner Bio-One, 627871). This allowed us to pick a single larva per well to do a spike experiment on and then multiple spike experiments could be performed per dish. The same region of the spinal cord above the posterior portion of the yolk-sac extension was imaged. We used a 1× optical zoom (0.31 µm XY pixel size) and 8× line averaging. A 5 min, single optical-section, time-lapse video was collected at 4 Hz (4 fps) to get a baseline of calcium transients in each larva. Each well had 500 µL of embryo media with 0.45 mg/mL pancuronium bromide (same concentration as the agar) for the initial round of imaging. After this, each well was spiked with 500 µL of embryo media containing either pancuronium bromide (control group) or tricaine. For the control group the embryo media contained the same concentration of pancuronium bromide (0.45 mg/mL) and the embryo media for the tricaine spike group was at a 2× concentration (140 µg/mL final concentration as was used for all other experiments). All larvae were incubated for 5 min after the spike. Then, a final round of imaging was performed on the same cells in the same field of view for measuring changes in the overall number of transients.
 
 All videos were processed and quantified post blinding. ROIs for the neuronal cell bodies in each field of view were generated in Fiji. The ‘despeckle’ filter was first used to clean up salt-and-pepper noise. A standard deviation time projection was made to create a visual of all the cell bodies in each video. Huang’s threshold was then applied manually to each projection to binarize the signal of each cell body. We used the ‘analyze particles’ function to automate the generation of ROIs around each cell. The ‘water-shed’ function was then used to separate cell bodies that were touching. Each set of ROIs were then applied to the raw video file and additional ROIs were added manually as needed that were missed by the segmentation work-flow. The mean intensity within each ROI was collected for every frame of the video and was transferred to excel for further analysis. Two ROIs were placed manually in each video for determining background levels. All the intensities in every frame for both background ROIs were averaged, and this single value was subtracted from every other mean intensity value that was collected. Calcium transients were determined with a moving baseline. Ten frames of video prior to each transient were averaged to set the baseline. The fluorescence intensity had to be 3 standard deviations above this baseline for a minimum of three frames to be counted. Within complex calcium transients with multiple peaks, transients were counted as being separate if the signal returned to below 3 standard deviations before going back up again. The total number of calcium transients within each video was quantified and after unblinding, the pre- and post-calcium transient numbers were compared.
 
-## Axon diameter measurements
+### Axon diameter measurements
 
 The diameters of all the domains in both axonal ensheathment experiments (Figures 2 and 3) were measured by selecting the first video frame of a single ensheathment for each axonal domain; a single optical section was then isolated for measurement in Fiji. Two different line scans with a 3-pixel width were drawn manually across each axon at the ensheathment site. The axon fluorescence intensity data was transferred to excel for further analysis. Two 8×4-pixel ROIs were also drawn to measure the background intensity. After background subtraction, the full-width 1/3 maximum was determined for each line scan manually and the two values from each domain were averaged as the representative diameter of each axonal domain.
 
-## Oligodendrocyte ensheathment dynamics imaging and analysis
+### Oligodendrocyte ensheathment dynamics imaging and analysis
 
 Oligodendrocytes were sparsely double-labeled with our pEXPR-sox10:eGFP-CAAX plasmid and one of the following plasmids using transient transgenesis: pEXPR-myrf:tagRFP, pEXPR-myrf:tagRFP-RAB5C, or pEXPR-myrf:tagRFP- rab5CS36N. The myrf-driven plasmids identified cells that were fated to make myelin. At 2.5 dpf, larvae were anesthetized in tricaine and mounted, and eGFP+/RFP+ progenitor cells were chosen for imaging above the yolk-sac extension in the spinal cord. Time-lapse imaging was performed for 15 hr with an imaging interval of 5 min. A 2× optical zoom (0.16 µm XY pixel size), a 0.75 µm z-step size, and 16× line averaging were used. After the time-lapse imaging period was over at 3 dpf, the larvae were removed from the mounting agar and were put back into embryo medium in separate wells of a 24-well plate. At 4 dpf, a final static image was taken for each of the same cells to conclude the imaging paradigm. To be considered for analysis, we had to obtain at least 30 min of imaging before each cell started the ensheathment process. Additionally, each cell had to stop making sheaths for at least 90 min before the end of the imaging interval.
 
@@ -181,11 +404,11 @@ A quality control experiment determined that the conditions of this imaging para
 
 A separate quality control experiment determined that oligodendrocytes did not make any new ensheathments during the stabilization phase from 3 to 4 dpf. Cells were imaged using a modified ensheathment dynamics imaging paradigm. First, from 2.5 to 3 dpf, the imaging interval was 30 min rather than 5 min. At 3 dpf, the larvae were removed from the tricaine and imaging agar and were allowed to recover in embryo media for 30 min. After this the larvae were remounted, and the same cells were imaged for an additional 23 hr with an imaging interval of 15 min. We tracked sheath initiation and loss from 3 to 4 dpf for five dorsal cells and three ventral cells. None of these eight oligodendrocytes produced any new sheaths from 3 to 4 dpf (Figure 6—figure supplement 1).
 
-## Endosome imaging and quantification
+### Endosome imaging and quantification
 
 Our myrf:eGFP-RAB5C, -RAB11A, and -RAB7A fusion constructs were transiently expressed alongside sox10:mScarlet-CAAX to label the membrane of individual oligodendrocytes. At 2.5 dpf, larvae were anesthetized in tricaine, mounted, and cells that were in the early stages of the ensheathment process were chosen for imaging. Static snapshots of a mix of both dorsal and ventral cells were taken using a 3× optical zoom (0.1 µm XY pixel size, Nyquist), a 0.75 µm z-step size, and 16–32× line averaging. A larger z-step size than Nyquist (0.3 µm) was used to minimize motion artifacts during imaging. Images were pre-screened by viewing the membrane marker channel only and individual sheaths with high-quality imaging were cropped for further processing. The number of endosomal puncta in each image was quantified using a spots analysis in Imaris (version 9.2). We used an estimated XY diameter of 0.5 µm to detect Rab5 and 0.4 µm to detect Rab7 and Rab11. After a local-background subtraction, a threshold for fluorescent intensity was applied to each image manually. Imaris counted the number of puncta, and we normalized these numbers to the length of each sheath (in µm), measured using the Imaris filament tracer. Only puncta within a sheath were counted based on overlap with the membrane marker. Puncta that were present in adjacent processes or other structures were manually excluded from each image.
 
-## Statistics, sample size determination, and reproducibility/rigor
+### Statistics, sample size determination, and reproducibility/rigor
 
 All statistics and plots were done using GraphPad Prism (version 9). We used the non-parametric Mann-Whitney test for all unpaired comparisons with no assumption of normality. We used the non-parametric Wilcoxon test for all paired comparisons with no assumption of normality. For groups of three or more, global significance was first assessed using the non-parametric Kruskal-Wallis test. This was followed up by Dunn’s multiple comparison tests if the global p-value was <0.05 (unless otherwise stated in each figure legend). Global p-values are reported when not significant. Non-parametric statistical tests were chosen since each data set had groups that were not normally distributed and/or had unequal variances. A Fisher’s exact test was used when testing categorical data because our sample sizes were less than 100. Simple linear regressions were performed for comparing the association of two variables with each other. Individual data points are shown for all plots with the central dashed lines representing the average of the group. We considered p < 0.05 the threshold for statistical significance and we provide exact p-values for all analyses.
 

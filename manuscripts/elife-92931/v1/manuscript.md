@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04xx1tc24 Max Planck Institute for Biology of Ageing Cologne Germany
+1. Max Planck Institute for Biology of Ageing Cologne Germany ([ROR:04xx1tc24](https://ror.org/04xx1tc24))
 
 † Corresponding author
 

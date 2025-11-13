@@ -15,18 +15,18 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States
-2. https://ror.org/01gdjt538 Structural Biology Initiative, CUNY Advanced Science Research Center New York United States
-3. https://ror.org/00453a208 Ph.D. Program in Biology, The Graduate Center, City University of New York New York United States
+1. Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Structural Biology Initiative, CUNY Advanced Science Research Center New York United States ([ROR:01gdjt538](https://ror.org/01gdjt538))
+3. Ph.D. Program in Biology, The Graduate Center, City University of New York New York United States ([ROR:00453a208](https://ror.org/00453a208))
 4. Atomwise Inc San Francisco United States
-5. https://ror.org/00wmhkr98 Department of Chemistry and Biochemistry, City College of New York New York United States
-6. https://ror.org/00453a208 Ph.D. Programs in Biochemistry, Biology and Chemistry, The Graduate Center, City University of New York New York United States
+5. Department of Chemistry and Biochemistry, City College of New York New York United States ([ROR:00wmhkr98](https://ror.org/00wmhkr98))
+6. Ph.D. Programs in Biochemistry, Biology and Chemistry, The Graduate Center, City University of New York New York United States ([ROR:00453a208](https://ror.org/00453a208))
 
 † Corresponding author
 
 ## Abstract
 
-In their folded state, biomolecules exchange between multiple conformational states that are crucial for their function. Traditional structural biology methods, such as X-ray crystallography and cryogenic electron microscopy (cryo-EM), produce density maps that are ensemble averages, reflecting molecules in various conformations. Yet, most models derived from these maps explicitly represent only a single conformation, overlooking the complexity of biomolecular structures. To accurately reflect the diversity of biomolecular forms, there is a pressing need to shift toward modeling structural ensembles that mirror the experimental data. However, the challenge of distinguishing signal from noise complicates manual efforts to create these models. In response, we introduce the latest enhancements to qFit, an automated computational strategy designed to incorporate protein conformational heterogeneity into models built into density maps. These algorithmic improvements in qFit are substantiated by superior R free and geometry metrics across a wide range of proteins. Importantly, unlike more complex multicopy ensemble models, the multiconformer models produced by qFit can be manually modified in most major model building software (e.g., Coot) and fit can be further improved by refinement using standard pipelines (e.g., Phenix, Refmac, Buster). By reducing the barrier of creating multiconformer models, qFit can foster the development of new hypotheses about the relationship between macromolecular conformational dynamics and function.
+In their folded state, biomolecules exchange between multiple conformational states that are crucial for their function. Traditional structural biology methods, such as X-ray crystallography and cryogenic electron microscopy (cryo-EM), produce density maps that are ensemble averages, reflecting molecules in various conformations. Yet, most models derived from these maps explicitly represent only a single conformation, overlooking the complexity of biomolecular structures. To accurately reflect the diversity of biomolecular forms, there is a pressing need to shift toward modeling structural ensembles that mirror the experimental data. However, the challenge of distinguishing signal from noise complicates manual efforts to create these models. In response, we introduce the latest enhancements to qFit, an automated computational strategy designed to incorporate protein conformational heterogeneity into models built into density maps. These algorithmic improvements in qFit are substantiated by superior Rfree and geometry metrics across a wide range of proteins. Importantly, unlike more complex multicopy ensemble models, the multiconformer models produced by qFit can be manually modified in most major model building software (e.g., Coot) and fit can be further improved by refinement using standard pipelines (e.g., Phenix, Refmac, Buster). By reducing the barrier of creating multiconformer models, qFit can foster the development of new hypotheses about the relationship between macromolecular conformational dynamics and function.
 
 ## Introduction
 
@@ -44,13 +44,13 @@ Here, we present updates to qFit including algorithmic changes to protein confor
 
 ## Results
 
-## Overview of qFit protein algorithm
+### Overview of qFit protein algorithm
 
 qFit protein is a tool that automatically identifies alternative conformations based on a high-resolution density map (generally better than ~2 Å) and a well-refined single-conformer structure (generally Rfree below 20%). For X-ray maps, we recommend using a composite omit map as input to minimize model bias (Terwilliger et al., 2008). For cryo-EM modeling applications, equivalent metrics of map and model quality are still developing, rendering the use of qFit for cryo-EM more exploratory.
 
 Since our previous paper, we have made several modifications to the code, both algorithmically (e.g., scoring now includes BIC, and sampling of B-factors) and computationally (improving the efficiency and reliability of the code). All code and associated documentation can be found in the qFit GitHub repository (https://github.com/ExcitedStates/qfit-3.0, copy archived at Wankowicz et al., 2024). The version of qFit associated with this article is 2024.2 and is available at SBGrid (https://sbgrid.org/; Morin et al., 2013).
 
-## qFit residue
+#### qFit residue
 
 For each residue, qFit samples backbone conformations, side-chain dihedral angles, and B-factors (Figure 1A). Using mixed quadratic programming (MIQP) and BIC, we select a parsimonious multiconformer for each residue. The details of each component of this procedure are outlined below. The sampling and scoring of residues can be run in parallel using Python multiprocessing.
 
@@ -58,15 +58,15 @@ For each residue, qFit samples backbone conformations, side-chain dihedral angle
 
 **Figure 1.:** (A) qFit residue algorithm, demonstrated by Tyr118 in the E46Q mutant structure of the photoactive yellow protein from Halorhodospira halophila (PDB: 1OTA) (Anderson et al., 2004). The 2mFo‐DFc composite omit density map contoured at 1 σ is shown as a blue mesh. (A.1) Backbone sampling: for each residue, qFit performs a collective translation of backbone atom (N, C, Cα, O) coordinates. (A.2) Aromatic angle sampling: for aromatic residues (His, Tyr, Phe, Trp), qFit takes the conformations from the backbone step and samples the Cα-Cβ-Cγ angle. (A.3) Dihedral angle sampling: since Tyr has two χ angles, qFit starts by taking the output conformers from the aromatic angle sampling step and exhaustively samples the χ1 angle, scoring the best conformations based on QP/B-factor/mixed-integer quadratic programming (MIQP) scoring. qFit then uses these best conformations as input to sample the remaining χ angles in the Tyr residue. Since the only angle left to be sampled is the χ2 angle, qFit rotates about the terminal ring of the Tyr and then scores the conformations that best fit the density. (A.4) Final qFit residue scoring: once we reach the terminal ring (all sampling steps have occurred), we perform QP and B-factor sampling, followed by MIQP with Bayesian information criteria (BIC) selection. MIQP with BIC selection removes a redundant overlapping conformation, resulting in two distinct conformations of this Tyr residue. This model is then output as the residue multiconformer. (B) qFit segment algorithm, demonstrated by Tyr118 in PDB: 1OTA. After identifying all optimal conformations for each individual residue, qFit works to connect the protein back together. (B.1) qFit segment: moving linearly along the protein sequence, qFit identifies ’segments' of residues with multiple backbone conformations. Here, Ser117 (i) and Tyr118 (i + 1) have multiple backbone conformations. qFit segment enumerates each possible combination of alternate conformations between these two residues, creating four possible combinations. The optimal combination of conformations is then determined by the QP/MIQP scoring, leading to one combination being culled. (B.2) qFit relabel: qFit uses Monte Carlo optimization with a steric model to assign altloc labels to spatially coupled alternative conformers. In this example, Ser117 and the neighboring Gln32 initially have clashing altloc B conformers. However, relabeling swaps the A and B labels of Gln32 to relieve this clash. (B.3) qFit refinement: we then refine the occupancies, coordinates, and B-factors of the raw qFit output file to produce a final qFit model. qFit improves overall fit to data relative to deposited structures.
 
-## Backbone sampling
+#### Backbone sampling
 
 The qFit process begins with sampling backbone conformations (Figure 1A.1). We first strip all hydrogens. For each residue, we perform a collective translation of backbone atom (N, C, Cα, O) coordinates. If the model has anisotropic B-factors, this translation is guided by the anisotropic B-factors of the Cβ. If anisotropic B-factors are absent, the translation of coordinates occurs in the Cα-Cβ, C-N, and (Cβ-Cα × C-N) directions. Each translation takes place in steps of 0.1 Å along each coordinate axis, extending to 0.3 Å, resulting in 9 (if isotropic) or 81 (if anisotropic) distinct backbone conformations for further analysis. For Gly and Ala, this is the only sampling that occurs.
 
-## Aromatic angle sampling
+#### Aromatic angle sampling
 
 For aromatic residues (His, Tyr, Phe, Trp), qFit takes the conformations from the backbone step (above) and builds part of the side chain out to Cγ (start of the aromatic ring) based on the input model coordinates (Figure 1A.2). Then, we alter the Cα-Cβ-Cγ angle (‘the aromatic angle’) in steps of ±3.75°, extending to ±7.5°, creating five partial side-chain conformations per backbone conformation. For non-aromatic residues, there is no sampling of this angle. These conformers provide variability in the placement of the aromatic ring prior to dihedral angle sampling.
 
-## Dihedral angle sampling
+#### Dihedral angle sampling
 
 The following steps occur for each χdihedral angle for every residue (Figure 1A.3). For the first dihedral angle (χ1), the input is the sampled backbone conformations (or for aromatic residues the backbone and ‘aromatic angle’ conformers described above). We sample around the χ1 dihedral angle by enumerating a conformation every 6° for 24° on each side of an idealized rotamer (Xie et al., 2020) angle. rotamer ± around each rotamer. For proline, we sample the exo and endo conformations of the pyrrolidine ring, by ± 24° in steps of 6°. We then eliminate conformations that clash with other parts of the same sampled conformation of heavy atoms (based on hard spheres) or are redundant (using an all-atom root-mean-square deviation [RMSD] threshold of 0.01  Å).
 
@@ -76,25 +76,29 @@ Next, qFit samples the B-factors of the conformers. The input atomic B-factors a
 
 For residues with subsequent dihedral angles, the conformations selected by the MIQP procedure at the χ(n-1) angle serve as the starting conformers for sampling the χ(n) angle. For residues with only one dihedral angle (Ser, Cys, Thr, Val, Pro), we proceed directly to scoring χ1.
 
-## Final qFit residue scoring
+#### Final qFit residue scoring
 
-Upon reaching the terminal dihedral angle, we perform the optimization steps outlined above (QP/MIQP), but instead of relying only on the optimization algorithm to decide on the number of conformations to output, we also consider the model complexity (Figure 1A.4). qFit runs the MIQP step five times with a cardinality term ranging from 1 to 5. Taking each output, we calculate the BIC. The BIC provides a numerical value of the tradeoff between the difference between the calculated and experimental density (residual sum of squares) and the number of parameters (k). The number of parameters (k) is defined by the following: number of conformers * number of atoms * 4 (representing the x, y, z coordinates and B-factor). A heuristic scaling factor of 0.95 accounts for the fact that the coordinate parameters are not independent due to chemical constraints between atoms during sampling.BIC=n∗In(rss/n)+k∗In(n)∗scalingfactork=numberofconformers∗numberofatoms∗4rss=residualsumofsquaresn=numberofvoxelsindensitymapscalingfactor=0.95
+Upon reaching the terminal dihedral angle, we perform the optimization steps outlined above (QP/MIQP), but instead of relying only on the optimization algorithm to decide on the number of conformations to output, we also consider the model complexity (Figure 1A.4). qFit runs the MIQP step five times with a cardinality term ranging from 1 to 5. Taking each output, we calculate the BIC. The BIC provides a numerical value of the tradeoff between the difference between the calculated and experimental density (residual sum of squares) and the number of parameters (k). The number of parameters (k) is defined by the following: number of conformers * number of atoms * 4 (representing the x, y, z coordinates and B-factor). A heuristic scaling factor of 0.95 accounts for the fact that the coordinate parameters are not independent due to chemical constraints between atoms during sampling.
+
+$$
+BIC=n^{∗}In(rss/n)+k^{∗}In(n)^{∗}scalingfactork=numberofconformers^{∗}numberofatoms^{∗}4rss=residualsumofsquaresn=numberofvoxelsindensitymapscalingfactor=0.95
+$$
 
 qFit then outputs the set of conformations with the lowest BIC value, concluding the qFit residue routine.
 
-## Connecting residues together into a multiconformer model
+#### Connecting residues together into a multiconformer model
 
 After the sampling and scoring of each individual residue, qFit considers the entire protein together. First, we use MIQP and BIC to select the best-fitting conformations among connected residues, ensuring that neighboring backbone conformations have the same occupancy. Second, we label the alternative conformers while being aware of clashes.
 
-## qFit segment
+#### qFit segment
 
 After identifying the optimal conformations for each residue in parallel, qFit reconnects the backbone atoms (Figure 1B.1). Moving from N- to C-terminus along the protein, we identify ‘segments' of residues with multiple backbone conformations, delimited on each end by a residue with a single backbone conformation. The main reason for this step is to find a harmonious set of occupancies for adjacent residues in a segment. Within each segment, qFit creates fragments of three residues, enumerating all possible combinations of conformations in those residues, and selects the final combination of conformations and their relative occupancies using the optimization algorithms outlined above. The BIC is modified for qFit segment such that k equals the number of conformations. qFit then moves along the protein, enumerating and selecting optimal combinations of fragment conformations until reaching the end of the segment.
 
-## qFit relabel
+#### qFit relabel
 
 Next, qFit determines the correct altloc labeling (A, B, C, D, E) of coupled alternative conformers using Monte Carlo optimization with a simple steric model of heavy atoms to prevent spatially adjacent conformers from sterically clashing (Figure 1B.2). There is also an option (‘qFit segment only’) to input a multiconformer model and run only the qFit segment and relabel procedures. This procedure can be especially helpful after manually adding or deleting conformations in Coot (Emsley et al., 2010). Running ‘qFit segment only’ will adjust the occupancy of the remaining conformations and correct the labeling of alternative conformations. This labeling step is not parallelized.
 
-## qFit refinement
+#### qFit refinement
 
 The raw output of qFit (a multiconfomer model) should then be refined. We provide scripts for a refinement procedure with Phenix (Afonine et al., 2012), where we iteratively refine the occupancy, coordinates, and B-factors, removing conformations with occupancies under 10%. Once the model is stable (has no conformations with occupancies less than 10%), we perform a final round of refinement which optimizes the placements of ordered water molecules (‘Methods’). We then apply a mosaic bulk solvent (phenix.mosaic) to the final model, which allows for partial bulk solvent occupancy (Afonine et al., 2024). This refinement protocol outputs a final ‘qFit model’. This model can then be examined and edited in Coot (Emsley et al., 2010) or other visualization software, and further refined using software such as Phenix.refine, Refmac, or Buster as the modeler sees fit.
 
@@ -104,11 +108,25 @@ Each deposited structure was initially re-refined using phenix.refine (‘Method
 
 To evaluate the crystallographic modeling differences between the deposited and qFit models, we compared the Rfree values as an indicator of overall model/data agreement. The qFit model has a lower (improved) Rfree value for 76% (109/144) of structures (Figure 2A, Figure 2—figure supplement 2A, Supplementary file 1). On average, there is an absolute decrease of Rfree value by 0.6% (median deposited models Rfree: 18.1%, median qFit models Rfree: 17.5%), which is in line with theoretical expectations for the increase in model complexity created by qFit (Holton et al., 2014; Vitkup et al., 2002). Rfree is a valuable metric for monitoring overfitting, which is an important concern when increasing model parameters as is done in multiconformer modeling. An additional check on overfitting comes from monitoring R-gap, calculated as the difference between Rwork and Rfree. qFit models have similar R-gap values compared to deposited models (mean: 3.0% for both models). Collectively, these results indicate that qFit improves the quality of most models without overfitting (Figure 2—figure supplement 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig2-v1.jpg)
+
+**Figure 2.:** (A) The distribution of Rfree value in deposited models versus qFit models. The qFit Rfree values improve in 73% of structures.(B) qFit identifies new alternative conformations adjacent to the RNA binding motif in the Pyrococcus horikoshii fibrillarin pre-rRNA processing protein (PDB: 1G8A). (Left) qFit multiconformer model with the region in the right panel highlighted in green and the adjacent RNA binding motif highlighted in red. Key domains in the fibrillarin protein are also annotated in blue. (Right) Comparison of the deposited versus qFit model in a region with several conformationally heterogeneous residues. qFit identified new rotamers for Leu58 (tp) and Met175 (ttp and mtp) (Lovell et al., 2000) and significantly different alternative conformations within the original rotameric well for Phe69. (C) The differences in the number of alternative conformations per residue in deposited models versus qFit models. qFit adds at least one additional alternative conformation in 31.7% of residues (n = 9998). (D) The distribution of rotamer assignment agreement between the deposited and qFit models for different (sub)sets of residues. (Left) All residues (n = 42,626). (Right) Only residues with alternative conformations in the deposited model (n = 970). See main text for definitions of categories.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Distribution of difference of Rfree between deposited and qFit models. The median difference in Rfree is 0.6%. Median deposited models Rfree: 18.1%, median qFit models Rfree: 17.5%. (B) Distribution of R-gap values between deposited and qFit models (median deposited model: 3.0%, median qFit model: 3.0%). (C) Distribution of Rfree value in PDB deposited models versus re-refined deposited models. In this article, deposited models refer to the re-refined deposited models.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Meshes represent 2Fo-Fc density at 1 σ. Green and yellow sticks represent deposited conformer(s). Blue and magenta sticks represent qFit conformer(s). (A) Same: the entire set of rotamers identified in the deposited and qFit models are the same (PDB: 1BN6, His199). (B) Additional rotamer(s) in the qFit model: deposited and qFit models share at least one rotamer, and at least one additional rotamer was identified in the qFit model (PDB: 3CX2, Glu165). (C) Additional rotamer(s) in the deposited model: deposited and qFit models share at least one rotamer, and at least one additional rotamer was identified in the deposited model (PDB: 4P48, Ser6). (D) Consistent and different: deposited and qFit models share at least one rotamer, and at least one unique additional rotamer was identified in both the deposited model and the qFit model (PDB: 3HP4, Arg81). (E) Different: the rotamers in the deposited and qFit models are all different (PDB: 1BN6, Glu110).
+
 Despite this general trend of improved models, 24% of the qFit models have worse Rfree than the deposited models (n = 35). The majority of these structures had a deposited model Rfree of over 20%. These high Rfree values are notable because our re-refinement procedure generally improved Rfree relative to the originally deposited model, particularly for structures with higher starting Rfree (Figure 2—figure supplement 2C). Since qFit builds off of the input structure and the map quality relies on model phases, accurately detecting alternative conformers depends heavily on the agreement between input model and data. This trend reinforced the idea that poor modeling in a deposited model, which serves as input to qFit, will result in poor performance of qFit. It further suggests that qFit is best employed at a late stage of modeling, after the single-structure model is of sufficient quality that it would be deposited in the PDB.
 
 As an example of how qFit can uncover previously unnoticed conformational heterogeneity, we examined differences in conformations in the deposited versus qFit models of the Pyrococcus horikoshii fibrillarin pre-rRNA processing protein (PDB: 1G8A) (Rodriguez-Corona et al., 2015). We focused on the residues adjacent to the RNA binding motif. Among these residues, qFit identified well-justified alternative conformations for residues Leu58, Phe69, and Met175, including new rotamers for Leu58 and Met175, that were not present in the deposited model (Figure 2B). Beyond detecting alternative conformers in each of these residues, the qFit labeling process identified potential coupled motions between the alternative conformers. For example, when Leu58 is in the ‘up’ position (altloc A), Phe69 is also in the ‘up’ position (altloc A). It is possible that this coupled motion plays a role in RNA binding, a hypothesis that may merit further investigation.
 
-## qFit recovers alternative conformations of deposited models and discovers new ones
+### qFit recovers alternative conformations of deposited models and discovers new ones
 
 As qFit mainly alters structures by adding alternative conformations, we examined the differences in the number of alternative conformations between the deposited models and qFit models. Only 2.9% of residues in the deposited models were multiconformers (two or more alternative conformations, n = 970). In contrast, 40.7% (n = 11,049) of residues in the qFit models were multiconformers (Figure 2C). The vast majority (92.5%) of multiconformer residues in the qFit models have only two alternative conformations; only 2.4% of residues have more than two alternative conformations.
 
@@ -122,7 +140,7 @@ The final two categories cover disagreements in rotamer assignments. There are m
 
 Collectively, these analyses revealed that qFit identifies the majority of deposited alternative conformations and discovers new ones. Discrepancies between manually modeled and qFit alternative conformations predominantly result from weak density at terminal χ angles. When considered with the improvements in Rfree, these results indicate that qFit is detecting more of the true underlying conformational heterogeneity that exists in crystallographic data.
 
-## qFit improves multiple side-chain model geometry metrics
+### qFit improves multiple side-chain model geometry metrics
 
 Although qFit improves the agreement of model to data by the addition of alternative conformations, we questioned whether this improvement comes at the cost of degrading model geometry. On one hand, the absence of geometric constraints in qFit backbone residue sampling and the connections made during qFit segment may result in worse geometry. On the other hand, placing additional alternative conformers may alleviate strain in the model that can result from fitting a single conformer into density that should be supported by multiple conformers (Ginn, 2021; Stachowski and Fischer, 2023; Phenix, 2023).
 
@@ -130,11 +148,19 @@ To validate geometry, we used MolProbity to evaluate the deposited and qFit mode
 
 Compared to deposited models, qFit models had improved MolProbity scores (1.27 median deposited vs. 1.09 median qFit, p=0.006 from two-sided t-test; Figure 3A), which indicated that overall qFit improves the geometry while also usually improving fit to data. To further understand which parts of the model geometry were different (if any) between the deposited and qFit models, we explored the individual component scores and observed multiple component scores that improved in the qFit models. This included considerable improvements in bond lengths and angles in the qFit models (RMSD between idealized values for bond lengths: 0.010 Å median deposited vs. 0.007 Å median qFit, p=0.021 from two-sided t-test; RMSD between idealized values for bond angles: 1.30° median deposited vs. 0.91° median qFit, p=3.79e-16 from two-sided t-test; Figure 3B and C). We suspect that the primary factor behind this improvement was the incorporation of multiconformers, rather than straining a single conformer, to explain the density. To visualize an example of these differences, we investigated Met189 from PDB: 1V8F. In the deposited model, this residue has Sδ-Cε bond lengths of 1.596 Å, which are significantly shorter than the idealized lengths of 1.791 ± 0.025 Å (Williams et al., 2018). qFit adds an additional conformation, both explaining previously unmodeled density and bringing the Sδ-Cε bond lengths much closer to the expected values: 1.790 Å (alternative conformer A) and 1.794 Å (alternative conformer B) for the two conformations (Figure 3E). This multiconformer residue with improved geometry is consistent with the hypothesis that qFit is alleviating strained geometry by modeling multiple conformations.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig3-v1.jpg)
+
+**Figure 3.:** (A) Model MolProbity score (deposited model: 1.27 (median) [0.94–0.16] (interquartile range), qFit model: 1.09 (median) [0.90–1.30] (interquartile range)), p-value = 0.006 from two-sided t-test. (B) Model averaged root-mean-square deviation (RMSD) (Å) of idealized versus model bond lengths (deposited model: 0.010 [0.0070–0.015], qFit model: 0.0073 [0.005–0.011]), p-value = 0.002 from two-sided t-test. (C) Model averaged RMSD (Å) of idealized versus model bond angles (deposited model: 1.30 [1.14–1.57], qFit model: 0.91 [0.77–1.13]), p-value = 3.79e-16 from two-sided t-test. (D). Model clashscore (deposited model: 2.50 [1.30–5.92], qFit model: 1.80 [1.31–3.73]), p-value = 0.0028 from two-sided t-test. (E). Example of qFit (right, blue, and magenta) fixing bond length by appropriately modeling in a second conformation. Meshes represent 2Fo-Fc density at 1 σ. Met189 from deposited structure (PDB: 1VF8; left, green) has a Sδ-Cε bond length of 1.596 Å (7.8 σ from idealized length of 1.791 Å) (Williams et al., 2018). qFit models two alternative conformations, filling in unmodeled density, and fixing the Sδ-Cε bond length (1.790 Å for alternative conformation A and 1.794 Å for alternative conformation B). (F) Example of qFit (right, blue, and magenta) fixing a clash between Met83 and Leu81 from deposited structure (PDB: 6HEQ). Meshes represent density at 1 σ. In the deposited model (left, green), Met83 is not correctly fitted into density and is clashing with Leu81 (closest contact: 3.0 Å). qFit corrects this by improving the fit of Met83, leading to the closest contact being 3.8 Å.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Count of number of Cβ deviation (>0.25 Å) per model (deposited model: 0.0 median [interquartile range: 0.0–0.0], qFit model: 0.0 median [interquartile range: 0.0–0.0]), p-value = 0.37 from two-sided t-test. (B) Median count of number of rotamer outliers per model (deposited model: 0.94 [0.00–2.12], qFit model: 0.81 [0.35–1.60]), p-value = 0.73 from two-sided t-test. (C) Percent of Ramachandran favored per model: deposited model (97.70 [96.90–98.93], qFit model: 98.0 [97.05–98.97]), p-value = 0.77 from two-sided t-test. (D) Percent of Ramachandran outliers per model (deposited model 0.0 [0.0–0.0], qFit model: 0.0 [0.0–0.0]), p-value = 0.57 from two-sided t-test.
+
 Additionally, qFit models have improved clashscores (2.50 median deposited, 1.80 median qFit, p=0.0028 from two-sided t-test; Figure 3D). We hypothesized that this was due to a mixture of modeling of alternative conformers and improved fit of single-conformer residues which are re-sampled and refined during the qFit procedure. We looked at the qFit modeling differences in a cluster of Met and Leu residues in PDB: 6HEQ, which had one of the largest changes in clashscores between the deposited and qFit models. We observed that qFit fixes the positioning of Met83, preventing the clash with both conformers of Leu81 and improving the local fit to density (Figure 3F).
 
 We observed almost equivalent rotamer scores, favored Ramachandran values, and C-beta values (median number of rotamer outliers: 0.94 deposited vs. 0.800 qFit; percentage of Ramachandran favored: 97.7% deposited vs. 97.8% qFit; median value of clashscore: 2.50 deposited vs. 1.78 qFit) (Figure 3—figure supplement 1). Overall, the MolProbity scores suggest that qFit improved the model geometry, aligning with improved model/data agreement.
 
-## Simulated data demonstrates qFit is appropriate for high-resolution data
+### Simulated data demonstrates qFit is appropriate for high-resolution data
 
 In the previous sections, we established that qFit has the potential to improve Rfree and some geometry metrics relative to deposited structures. However, the vast majority of the residues in these deposited structures are modeled exclusively as single conformers. This homogeneity in single-conformation models limited our ability to assess how well qFit can recapitulate existing alternative conformers across a wide resolution range. To address this question, we generated artificial structure factors using an ultra-high-resolution structure (0.77 Å) of the SARS-CoV-2 Nsp3 macrodomain (PDB: 7KR0) (Schuller et al., 2021). This model had a high proportion of residues (47%) manually modeled as alternative conformations and did not employ qFit during model building or refinement, making it an ideal comparison structure. We refer to this structure as the ‘ground truth 7KR0 model’ and evaluated how well its alternative conformations were recapitulated by qFit as resolution was artificially worsened across synthetic datasets.
 
@@ -146,7 +172,23 @@ Next, we define each residue as having an agreement between the outputted qFit m
 
 We observed that qFit is consistently strong at capturing single-conformer residues (single conformer match) across resolutions. We did observe a drop off of detecting alternative conformations (multiconformer match) beyond resolutions of ~1.8–2.0 Å (Figure 4B, Figure 4—figure supplement 1C). This behavior is exemplified by Glu114, which is multiconformer in the ground truth model (Figure 4C). At high resolution (1.0 Å), qFit correctly models the alternative conformation and this residue is categorized as a multiconformer match. However, as resolution gets worse, qFit begins to mismodel this residue. At 1.8 Å resolution, qFit still models two alternative conformations and has a good fit to density; however, the secondary conformer has an RMSD greater than 0.5 Å away from the ground truth model; consequently, this residue is now categorized as a multiconformer no match. Finally, at 2.8 Å resolution, qFit only models a single conformer, moving the residue to the single conformer no match category.
 
-## Simulated multiconformer data illustrate the convergence of qFit
+![Figure 4.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig4-v1.jpg)
+
+**Figure 4.:** (A) Ground truth model residues are shown as green and yellow sticks; qFit model residues are shown as magenta, cyan, and gray. Meshes represent density at 1 σ. Multiconformer match: residue is multiconformer in qFit model with root-mean-square deviation (RMSD) < 0.5 Å from ground truth residue. qFit models two distinct alternate conformations which recapitulate the ground truth residue’s alternate conformations. Multiconformer no match: residue is multiconformer in qFit model with RMSD > 0.5 Å from ground truth residue. The example on the left has two alternate conformations in the ground truth. qFit models only one of them correctly. The example on the right is a single-conformation residue in ground truth but qFit models three alternate conformations. Single conformer match: residue is single-conformer in qFit model with RMSD < 0.5 Å from ground truth residue. Both ground truth model and qFit model have one distinct conformation and they align well. Single conformer no match: residue is single conformer in qFit model with RMSD > 0.5 Å from ground truth residue. The example on the left has two alternative conformations in the ground truth residue but only one conformation in the qFit residue. In the example on the right, the single conformer modeled by qFit does not align with the ground truth single conformer. (B) Proportion of all residues in the qFit models of 7KR0 that are modeled as multiconformer match (orange), single conformer match (blue), multiconformer no match (green), and single conformer no match (red) as a function of resolution of input synthetic data from the 7KR0 dataset. The shaded region denotes the 95% confidence interval. (C) Glu114 in the 7KR0 dataset modeled by qFit (cyan and magenta) compared to the ground truth structure (green and yellow) at different synthetic resolutions. Meshes represent density at 1 σ. (D) The fraction of residues in the qFit models of the qFit test dataset with a Q-score within 0.01 to that of the ground truth model as a function of resolution. In multiconformer residues, Q-score for every alternative conformation is calculated separately. Q-scores of residues (or) conformers which have matching occupancy (range) are compared. Occupancies of conformers were binned into three classes: occupancy equal to 1 (blue), 1 > occupancy ≥ 0.5 (orange) and occupancy < 0.5 (green).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Protocol for generating synthetic structure factors at various resolutions starting from the ground truth model. For the 7KR0 dataset, all the steps starting from random shaking of coordinates were done 10 times for each resolution. For the larger test dataset, all steps were only done once. (B) A visualization of synthetic maps generated for the models at varying resolution. The loss in detail of density is clearly visible with worsening resolution. (C) Proportion of all residues in qFit models which have been modeled as multiconformers in the 7KR0 dataset as a function of resolution. The shaded region around the line indicates the spread across 10 runs at every resolution step. (D) Proportion of all residues in the qFit models of qFit test dataset which are modeled as multiconformer match (orange), single conformer match (blue), multiconformer no match (green), and single conformer no match as a function of resolution of input data. The shaded region around the lines indicates the spread across the qFit test dataset which consists of 103 proteins.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The distribution of root-mean-square deviation (RMSD) between qFit residues and corresponding ground truth residues (qFit test set) whenever the RMSD is higher than the 0.5 Å cutoff, resulting in the qFit residues being classified as multiconformer no match. (B) The propensity of each residue type to be modeled with high RMSD from the ground truth (qFit test set), resulting in being classified as multiconformer no match. This propensity of a residue type x is calculated as the ratio between (i) proportion of residue type x among all the residues with a high RMSD and (ii) proportion of residue type x in the entire dataset. (C) The distribution of RMSD between qFit residues and corresponding ground truth residues (qFit test set) whenever the RMSD is higher than the 0.5 Å cutoff, resulting in the qFit residues being classified as single conformer no match. (D) The propensity of each residue type to be modeled with high RMSD from the ground truth (qFit test set), resulting in being classified as single conformer no match.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Rwork (blue) and Rfree (orange) distribution of the input model from the qFit test dataset. These correspond to the models obtained after refining against Fnoisy structure factors (see Figure 4—figure supplement 1). The shaded region around the lines indicates the spread (standard deviation) across the qFit test dataset. (B) Fraction of correctly modeled qFit residues (match multiconformer + match single conformer) as a function of input model Rfree for all structures in the qFit test dataset at 1.6 Å resolution (input Rfree range: 0.17–0.25, n = 103). The shaded region denotes the 95% confidence interval. (C) The fraction of residues in the qFit models of the 7KR0 dataset with a Q-score within 0.01 of that of the ground truth model as a function of resolution. In multiconformer residues, Q-score for every alternate conformer is calculated separately. Q-scores of residues (or) conformations which have matching occupancy (range) are compared. Occupancy of conformations were binned into three classes: occupancy equal to 1 (blue), 1 > occupancy ≥ 0.5 (orange), and occupancy <0.5 (green).
+
+### Simulated multiconformer data illustrate the convergence of qFit
 
 Next, we tested the ability of qFit to detect alternative conformations over a larger, more diverse dataset. We generated artificial structure factors for the qFit models with improved Rfree values over the deposited values from the previous sections (n = 109). Although this dataset is more diverse, it has a notable weakness relative to the 7KR0 dataset test: the 7KR0 alternative conformations were modeled manually, whereas the larger dataset has alternative conformations modeled by qFit. Therefore, this second synthetic dataset assesses convergence of the qFit models across resolution.
 
@@ -154,7 +196,7 @@ Using these qFit models as ground truth models, we generated structure factors, 
 
 We then assessed the agreement between individual conformers and the map. To do this, we used the Q-score (Pintilie et al., 2020), which compares the map profile of an atom with an ideal Gaussian distribution that would be observed if the atom perfectly fits into the density. Across the test dataset, residues that qFit models as single conformers have an almost equivalent Q-score to the ground truth model even at lower resolutions (Figure 4D). The primary alternative conformations in qFit models (occupancy between 0.5 and 1.0) and lower-occupancy alternative conformations (occupancy < 0.5) display Q-scores that are very close to the equivalent ‘ground truth model’ alternative conformations until a resolution of about 1.8 Å. At lower resolutions, there is a dramatic fall-off in model/map agreement for these alternative conformers. These trends were also observed with the 7KR0 dataset (Figure 4—figure supplement 3C). Overall, these analyses on both the 7KR0 and larger synthetic datasets confirm that qFit will best detect alternative conformations with high-resolution (1.8–2.0 Å or better) data.
 
-## qFit models alternative conformers in cryo-EM density maps
+### qFit models alternative conformers in cryo-EM density maps
 
 As single-particle cryo-EM is increasingly producing high-resolution (better than 2 Å) reconstructions where alternative conformers can be detected (Nakane et al., 2020; Xie et al., 2020), we wanted to improve and test the ability of qFit to model alternative conformations guided by cryo-EM maps. While a previous version of qFit introduced cryo-EM compatibility (Riley et al., 2021), we had not optimized the approach to work with cryo-EM maps and models. qFit can now be run in ‘EM mode’ which uses electron structure factors, improves the treatment of solvent background levels, and reduces the default maximum number of alternative conformations (cardinality) (‘Methods’).
 
@@ -163,6 +205,14 @@ To benchmark our ability to model alternative conformations in high-resolution c
 We downloaded the eight models with resolution better than 2 Å from the PDB and their corresponding maps from EMDB. Using the default parameters of phenix.autosharpen, we sharpened all maps and re-refined each structure (phenix.real_space_refine) against its sharpened map. qFit was run with the ‘EM’ flag and the output model was refined using the qFit real space refinement script (‘Methods’).
 
 Across the first asymmetric unit of the eight models, 8.21% (n = 64) of residues in the deposited model had at least two alternative conformers in the deposited structure compared with 39.6% (n = 266) in the qFit model. To determine whether qFit could recapitulate the modeling of alternative conformers from deposited structures, we compared the high-resolution apoferritin deposited model (PDB: 7A4M, resolution: 1.22 Å) with the qFit model using the same criteria outlined in the resolution dependence section above (RMSD within 0.5 Å). qFit correctly models 77% of residues in the first asymmetric unit. This includes Arg22, which has two alternative conformations in the deposited model. qFit was able to recapitulate both alternative conformations (Figure 5A), highlighting that qFit can detect manually modeled alternative conformations in cryo-EM maps. In addition, qFit detected several unmodeled alternative conformers that were visually confirmed (Figure 5B–D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig5-v1.jpg)
+
+**Figure 5.:** Meshes represent density at 1 σ, with blue volumes representing density at 0.5 σ. Green and yellow sticks represent deposited conformation(s). Cyan and magenta sticks represent qFit conformations. Occupancy is labeled based on each conformer. (A) qFit recapitulated the deposited alternative conformations of Arg22 (chain A) in apoferritin (PDB: 7A4M, resolution: 1.22 Å). (B) qFit identified a previously unmodeled alternative conformation of Glu14 (chain A) in apoferritin (PDB: 7A4M, resolution: 1.22 Å). (C) qFit identified a previously unmodeled alternative conformation of Lys49 (chain A) in a different structure of apoferritin (PDB: 6Z9E, resolution: 1.55 Å). (D) qFit identified a previously unmodeled alternative conformation of Gln403 (chain A) in adeno-associated virus (PDB: 7KFR, resolution: 1.56 Å).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90606/elife-90606-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) MolProbity score (deposited model: 1.49 (median) [1.40–1.61] (interquartile range), qFit model: 1.59 (median) [1.39–1.92] (interquartile range)). (B) Model average of RMSD of model bond length from idealized bond length (Å) (deposited model: 0.00 [0.00–0.01], qFit model: 0.00 [0.00–0.00]). (C) Model average of RMSD of model bond angle from idealized bond angle (Å) (deposited model: 0.00 [0.00–0.11], qFit model: 0.00 [0.00–0.01]). (D) Number of residues with clashscore (deposited model: 3.15 [2.74–4.39], qFit model: 8.45 [3.22–10.17]). (E) Number of Cβ deviation (>0.25 Å) per model (deposited model: 0.02 [0.00–0.02], qFit model: 0.00 [0.00–0.00]). (F) Number of rotamer outliers per model (deposited model: 2.0 [2.0–2.0], qFit model: 2.0 [1.0–3.0]). (G) Percent of Ramachandran favored per model (deposited model: 97.6 [96.9–98.9], qFit model: 98.3 [96.7–98.7]).(H) Percent of Ramachandran outliers per model (deposited model: 0.0 [0.0–0.0], qFit model: 0.0 [0.0–0.0]).
 
 As with the X-ray models, we wanted to determine how qFit changes the model geometry. Similar to the X-ray models, we observed that qFit improves bond lengths and angles, and similar Cβ deviations. Unlike the observations in the X-ray dataset, qFit does increase (worsen) the MolProbity score, likely coming from high clashscore of most structures, highlighting a future improvement in the algorithm (Figure 5—figure supplement 1).
 
@@ -186,91 +236,91 @@ In summary, qFit drastically reduces the time and effort required to create mult
 
 ## Methods
 
-## Generating and running the qFit test set
+### Generating and running the qFit test set
 
 To test the impact of algorithmic changes in qFit, we created a dataset of 144 high-resolution (1.2–1.5 Å) X-ray crystallography structures deposited in the PDB (Supplementary file 1). These were single-chain protein structures (in the asymmetric unit and at the level of biological assembly) and contained no ligands or mutations. The maximum sequence identity between any two structures was set as 30%. Based on CATH classification (Orengo et al., 1997), the resultant entries represented 72 folds (Supplementary file 1). The structures represented 24 space groups. All these structures were re-refined as described in ‘Initial refinement protocol’. These re-refined models are referred to as deposited models. To create multiconformer models, we input the re-refined structures in qFit protein, followed by the post qFit refinement protocol. These multiconformer models are referred to as qFit models.
 
-## Initial refinement protocol
+### Initial refinement protocol
 
 All structures from the PDB were re-refined using phenix.refine with the following parameters:
 
 The re-refined models were used as the input for subsequent qFit models.
 
-## Running qFit
+#### Running qFit
 
 For this analysis, qFit was run using the following command from qFit version 2023.1.
 
-## X-ray
+#### X-ray
 
 qfit_protein composite_omit_map.mtz -l 2FOFCWT,PH2FOFCWT rerefine_pdb.pdb.
 
-## Cryo-EM
+#### Cryo-EM
 
 qfit_protein sharpened_map.ccp4 rerefine_cryo-EM.pdb -r <resolution> -em -n 10 -s 5.
 
-## qFit new features
+### qFit new features
 
-## Parallelization of large maps
+#### Parallelization of large maps
 
 Often, cryo-EM maps are very large and reach memory limits using Python multiprocessing. Multiprocessing is used to model multiple residues independently in parallel. We have now implemented a new scheme to divide the density map into portions centered around each residue of interest and feed those portions of the map into our parallelization.
 
-## B-factor sampling
+#### B-factor sampling
 
 To sample B-factors along with atomic coordinates at each step of qFit residue, we first perform one round of quadratic programming to reduce the number of conformations. For all remaining conformations, the input B-factor of each atom in the residue is multiplied by 0.5–1.5 in increments of 0.2. All conformations with sampled B-factors and coordinates are inputs for MIQP.
 
-## Bayesian information criteria
+#### Bayesian information criteria
 
 BIC was implemented in the final selection of residue and segment conformations. BIC is defined as the real space residual correlation coefficient penalized by the number of parameters (k):
 
 BIC is calculated for each candidate cardinality (1–5). We then choose the set of conformations with the lowest BIC as the final conformations for the residue or segment under consideration.
 
-## Iterative optimization algorithm with non-convex problems
+#### Iterative optimization algorithm with non-convex problems
 
 Due to our exhaustive sampling, there are times when the MIQP optimization algorithm fails to find a non-convex solution. To address this limitation, we have implemented a procedure that iteratively removes solutions one-by-one based on the two solutions with the closest RMSD until MIQP identifies a solution.
 
-## Implementation of open-source QP/MIQP algorithms
+#### Implementation of open-source QP/MIQP algorithms
 
 qFit previously relied on IBM CPLEX to score conformations. While this is free to academics, it is not open source. We have switched to CVXPY, an open-source QP and MIQP solver (Agrawal et al., 2018; Diamond and Boyd, 2016).
 
-## Occupancy constraints
+#### Occupancy constraints
 
 To help refine segments (i.e., sets of residues with alternative conformations flanked by residues with only a single conformation) during X-ray refinement, we now output a restraint file at the end of the qFit protein run for X-ray refinement. This restraint file enables ‘group occupancy refinement’ for residues in a segment with the same alternative conformation. In group occupancy refinement, all residues within the group are refined to the same occupancy, reducing the free parameters to fit.
 
-## Finalizing qFit models with iterative refinement
+#### Finalizing qFit models with iterative refinement
 
 We iteratively run five macrocycles of refinement followed by a script that removes any conformations with occupancy less than 0.10. This script also renormalizes the occupancies of any remaining conformations in that segment, ensuring that the occupancy sums to 1. This procedure ends when no conformations have a refined occupancy of less than 0.10 or after 50 total rounds of refinement (whichever comes first). Afterward, we perform one final refinement where we release the occupancy constraints on the segments, turn on automated solvent picking, and optimize B-factors (specified as ADP parameters in Phenix) and coordinate weights.
 
-## Cryo-EM
+#### Cryo-EM
 
 To improve the detection of alternative conformations in cryo-EM structures, we made some key updates to part of the qFit algorithm. All of these updates to the algorithm will turn on with the -em flag. First, we now use electron scattering factors when calculating the modeled electron density. Second, we have removed bulk solvent electron density values (set at 0.3 in X-ray qFit protein). We also restricted the occupancy threshold cardinality to be 0.3 (compared to 0.2 in X-ray qFit protein) to reduce misplaced conformations.
 
-## Q-score
+#### Q-score
 
 We implemented the option for users to use Q-scores to determine whether qFit should be run on a residue or not. This option is off by default. To utilize this feature, first generate Q-scores by using the mapq.py script, which is included in the Q-score command-line interface package (https://github.com/gregdp/mapq, copy archived at gregdp, 2023). qFit takes in a text file of Q-scores by using the –qscore option in qFit_protein. By default, all residues with a Q-score of less than 0.7 are not modeled as multiconformers, but are considered in qFit segment. Users can also adjust this level by using the –qscore_cutoff option in qFit protein.
 
-## qFit-segment-only runs
+#### qFit-segment-only runs
 
 qFit can be used as a tool along with iterative model building and refinement. If a user manually removes or adds additional conformations using Coot (Emsley et al., 2010) or similar software, this can disrupt the occupancy sum of the residue and the connectivity of the backbone. To alleviate such problems, we developed an option (qfit_protein –only-segment) to facilitate manual model adjustment after running qFit. This procedure generates connected backbones with consistent occupancies for coupled neighboring conformers.
 
 For example, suppose residue n has four alternative backbone conformations (A, B, C, D) and residue n+1 has two alternative conformations (A, B). In that case, this procedure will create C and D conformers for residue n+1 by duplicating its A and B conformers. This duplication continues until we reach the end of a segment so that all backbones have the same number of alternative conformations (A, B, C, D) and are, therefore, properly connected. Subsequent crystallographic refinement of this model (see ‘Post-qFit refinement script’ above) will cause the duplicated conformations to diverge slightly and will behave as expected without introducing geometry errors.
 
-## Analysis metrics
+### Analysis metrics
 
 Scripts for all metrics can be found in the scripts folder in the qFit GitHub repository (https://github.com/ExcitedStates/qfit-3.0, copy archived at Wankowicz et al., 2024). Our scripts for running qFit protein on an SGE-based server and all scripts for figures can be found at https://github.com/fraser-lab/qFit_biological_testset/tree/main (copy archived at Wankowicz and Ravikumar, 2024).
 
-## R-values
+#### R-values
 
 R-values were obtained after the final round of refinement for the re-refined deposited models (deposited_rerefine.sh) and for the qFit models after the iterative refinementscript (qfit_final_xray_refine.sh).
 
-## B-factors
+#### B-factors
 
 For each residue, we calculate an occupancy weighted B-factor (each heavy atom B-factor is weighted by its occupancy). For each heavy atom, we calculate the weighted using the following formula:
 
-## Rotamers
+#### Rotamers
 
 The rotamer name for each alternative conformation was determined by phenix.rotalyze (Williams et al., 2018) while manually relaxing the outlier criteria to 0.1%. Rotamers were compared on a residue-by-residue basis. To compare rotamers, we only consider the first two χ dihedral angles. Each residue was classified into four categories: same, additional rotamer in qFit model, additional rotamer in the deposited model, or different.
 
-## Generating synthetic data for resolution dependence
+### Generating synthetic data for resolution dependence
 
 To generate artificial electron density data at increasingly poorer resolutions, we first increased the B-factors of all atoms of the ground truth model by 1 Å2 for every 0.1 Å reduction in resolution and placed the models in a P1 box. We randomly shook the coordinates using the shake argument in phenix.pdbtools with root-mean-square error of shaking given as 0.2 * desired resolution of synthetic data. We generated structure factors (Fshake) for each of these shaken models from 0.8 Å to 3.0 Å in increments of 0.1 Å using the phenix.fmodel command-line function (with bulk solvent parameters k_sol = 0.4, b_sol = 45, and 5% R-free flags). We then added noise to the structure factors as follows:
 
@@ -278,6 +328,6 @@ The scaling factors of 0.2 and 0.5 for shake RMSD and noise addition were determ
 
 The final refined model was given as input to qFit and the composite omit map was obtained for the Fnoisy structure factors. The multiconformer model given by qFit was refined with phenix.refine as explained in the post-qFit refinement script section. Since there is some randomness involved in simulating noise in the synthetic datasets, at each resolution, we generate 10 synthetic datasets and apply the qFit protocol to each one. The same steps of data synthesis were followed for the larger qFit test dataset containing 103 models, except that one set of structure factors was generated for each model at each resolution instead of 10 as in the 7KR0 dataset.
 
-## Match classifications for synthetic data
+### Match classifications for synthetic data
 
 Match multiconformer residues were those with at least two alternative conformations and an RMSD of less than 0.5 Å between the ground truth and qFit model conformations (e.g., qFit model altloc A has an RMSD of less than 0.5 Å to ground truth model altloc A or B, and qFit model altloc B has an RMSD of less than 0.5 Å to the other ground truth model altloc A or B) (Figure 4A). No match multiconformer residues have at least two alternative conformations in the qFit model, but fewer conformations in the ground truth model (Figure 4A). Alternatively, for a no match multiconformer residue, if the ground truth model residue is also multiconformer, then the RMSD between at least one of the conformations of qFit residue and ground truth residue is more than 0.5 Å (Figure 4A). A match single conformer residue is when both the ground truth and qFit model have a single conformer and they have an RMSD of less than 0.5 Å (Figure 4A). A no match single conformer residue is when the qFit model has a single conformer but the ground truth model has more than one alternative conformer or both models have a single conformer but they have an RMSD greater than 0.5 Å (Figure 4A).

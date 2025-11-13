@@ -37,11 +37,19 @@ In this study we used a reverse-engineering strategy to first define the host pr
 
 ## Results
 
-## HCMV virions are enriched with host exosome proteins
+### HCMV virions are enriched with host exosome proteins
 
 HCMV requires the host cellular architecture to assemble and release infectious virions. We therefore reasoned that analyzing host proteins within purified virions may reveal insights into their biogenesis and egress.
 
 First, we collected conditioned medium and infected cells. Cells were sonicated, and the supernatant released was pooled with the conditioned medium for separation on a glycerol-tartrate gradient. Virions, Non-Infectious Enveloped Particles (NIEPs), and Dense Bodies (DBs) resolved clearly, and each band was individually extracted and further enriched on a second gradient (Figure 1—figure supplement 1A). Next, to minimize cytosolic contamination, we omitted the sonicated cell supernatant as input, and separated conditioned medium only. Whilst virions and NIEP bands remained prominent on the gradient, significantly less DBs were present (Figure 1—figure supplement 1B). To quantify this result further, we collected conditioned medium only, and imaged virions, NIEPs and DBs by Cryo-EM (Figure 1—figure supplement 1C). Quantitation of each particle type identified a total of 274 virions, 104 NIEPs and 44 DBs across 20 fields of view (Figure 1—figure supplement 1D). Conditioned medium only was used as input for all subsequent experiments. Proteomic analysis of virions extracted from the second gradient identified 69 viral and 2704 host proteins (Figure 1A, Supplementary file 1). The number of viral proteins identified was similar to a previous proteomic analysis of the HCMV virion in 2004 that reported 71 viral and 70 host proteins (Varnum et al., 2004). However, the number of host proteins was considerably higher (Figure 1A). Quantitative analysis revealed that viral protein abundance was 36%, whilst host proteins were dominant with 64% (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig1-v1.jpg)
+
+**Figure 1.:** (A) Total number of host and viral proteins identified in the virion by mass spectrometry. (B) Abundance proportions of host and viral proteins in the virion, as determined by MaxQuant label-free quantitation (LFQ). (C) Scatter plot of unshaved virion proteins versus HCMV infected cellular lysate (ICL), 5 DPI, MOI = 3. Red: HCMV proteins, green: select mitochondrial marker proteins, orange: nuclear markers, black: endoplasmic reticulum markers, blue: endosome markers, purple: exosome markers. Equation of line: y = x, r = 0.651. (D) Relative abundance of various host organelles in ICL compared to virions purified from infected cell culture supernatant. Total organelle abundance was calculated by summing individual protein abundance. (E) Gene ontology (cellular component) enrichment analysis of unshaved virions compared to ICL background. Analysis was performed using DAVID Functional Annotation and results plotted with GOPlot. (F) Number of host and viral proteins identified in the virion following proteinase K surface shaving. (G) Abundance proportions of host and viral proteins in surface shaved virions. (H) Scatter plot of all proteinase K shaved virion proteins versus HCMV ICL. Red: HCMV proteins, green: select mitochondrial marker proteins, orange: nuclear markers, black: endoplasmic reticulum markers, blue: endosome markers, purple: exosome markers. Equation of line: y = x, r = 0.363. (I) Relative abundance of various host organelles in ICL compared to proteinase K-shaved HCMV virions. (J) Gene ontology (cellular component) enrichment analysis of proteinase K shaved virions compared to ICL background. Performed with DAVID as for (E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Conditioned medium from HCMV infected cells was collected and combined with supernatant released from sonicated cells, passed through a sorbitol cushion, and then loaded onto a glycerol-tartrate gradient for ultracentrifugation-based separation. NIEP, virion and DB bands were individually extracted and re-isolated on secondary gradients. (B) Conditioned medium from HCMV infected cells was collected (cell disruption omitted), and processed as in (A). (C) Representative electron micrograph of HCMV particles and vesicles in conditioned medium. White arrow: DB, white arrowhead: NIEP, black arrows: virions, black arrowheads: vesicles. Scale bar = 500 nm. (D) Quantitation of each particle type from (C). NIEP: Non-Infectious Enveloped Particle, DB: Dense body.
 
 To further confirm that cellular debris from lysed/dead cells did not contaminate conditioned medium-only virion preparations, we performed proteomics on infected cellular lysate (ICL) and plotted the relative abundance of each protein against its relative virion abundance (Figure 1C). As expected, most structural virion components including the major capsid protein (MCP), UL32 and glycoprotein B (gB) were more enriched in the virion compared to the ICL, while the viral polymerase processivity factor UL44 was enriched approximately 30-fold in the ICL. This analysis also revealed that individual host endosome and exosome proteins were more enriched in the virion, whilst some mitochondrial, nuclear, and endoplasmic reticulum marker proteins were enriched in the ICL (Figure 1C). To expand these observations to our global dataset, we calculated a normalized abundance for various host organelles (associated with HCMV assembly and egress) in ICL and virion samples, and computed a relative enrichment ratio. A ratio greater than one indicated enrichment in the virion compared to ICL, and if all host proteins identified in the virion were from lysed cell contamination, then all organelle ratios would be 1. However, exosome and endosome proteins were more enriched in virions, while proteins from the nucleus, ER and mitochondria were under-represented compared to their abundance in the ICL (Figure 1D). Additional gene ontology (GO) term analysis using DAVID software similarly confirmed the enrichment of many host proteins within virions as having ‘extracellular exosome’ cellular component annotation (Figure 1E).
 
@@ -49,11 +57,31 @@ To further validate that the presence of host exosome proteins in virions was no
 
 Collectively, this set of experiments identified a significant enrichment of host endosome and exosome proteins in mature HCMV virions. Their presence was not due to contamination or non-specific binding, as verified by enrichment ratio experiments as well as Proteinase K shaving experiments. Given exosomes are membranous nanovesicles secreted by almost all cells (Colombo et al., 2014), we hypothesized that HCMV may exploit this host pathway for virion maturation.
 
-## Buoyant density can be used to separate exosomes and HCMV virions
+### Buoyant density can be used to separate exosomes and HCMV virions
 
 To explore the intersection of host exosomes and virions experimentally, we established conditions to purify all vesicles released from fibroblasts with and without HCMV infection. Supernatants were collected from uninfected and infected cells, and separated across 10 density-increasing Optiprep gradient fractions (Figure 2—figure supplement 1A–C). Analysis of canonical exosome markers including ESCRTs and tetraspanins across uninfected and infected gradients revealed exosome markers were enriched in less-dense vesicle fractions (2 and 3). This is consistent with the expected density range for exosomes of 1.07–1.10 g/ml (Xu et al., 2015; Figure 2—figure supplement 1D–E). By contrast, viral proteins were enriched in more-dense fractions (7 and 8) on infected gradients (Figure 2—figure supplement 1F). Given our vesicles of interest were sufficiently separated, all 10 fractions from both uninfected and infected gradients were further analyzed by quantitative proteomics in biological triplicate. A total of 2012 proteins were identified (Supplementary file 2), and the relative abundance of each protein in each fraction of the gradient was calculated, for comparison across infected and uninfected conditions (Figure 2—figure supplement 2). Hierarchical clustering was also performed on all fractions using Pearson coefficients to visualise and confirm a robust fractionation process (Figure 2—figure supplement 3).
 
 To more comprehensively evaluate the gradient fraction that exosomes resolved within, we compiled a list of 50 known exosome-associated markers, and used heatmaps to visualise their enrichment across the uninfected gradient. Consistent with western blotting analysis (Figure 2—figure supplement 1D), the majority of exosome marker proteins were primarily enriched in vesicles that resolved in fractions 1 and 2, and a smaller subset were also detected in fraction 7 (Figure 2A). The latter was not totally unexpected since the density of fraction 7 is 1.14–1.19 g/ml (Figure 2—figure supplement 1A), and some of the exosome protein markers are also known to be present in lower abundance in larger, denser MVs derived from the plasma membrane (e.g. CD63) (Xu et al., 2015). Therefore, given the lower relative enrichment of exosome markers, but high relative abundance of ECM proteins, it is most likely that MVs resolved in fraction 7 of the uninfected gradient.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig2-v1.jpg)
+
+**Figure 2.:** Supernatant from uninfected and infected cells was collected, resolved by Optiprep density gradient ultracentrifugation, 10 fractions (increasing density) extracted and proteins identified by mass spectrometry (n = 3 for each condition). Protein abundance was determined by MaxQuant label-free quantitation, and mean values from the triplicate were Z-scored across gradient fractions, and plotted using Perseus. Heatmap distribution of 50 exosome markers, across (A) uninfected gradient fractions, or (B) HCMV infected gradient fractions. (C) Enrichment of HCMV proteins across infected gradient fractions. (D) Infectious units in each fraction, as determined by the IE1 reporter plate assay (n = 4, bars = SEM). (E-F) Representative cryogenic transmission electron micrographs of infected gradient fractions 7 (E) and 3 (F). (G) Schematic summary of all vesicle populations that resolved across density gradients in the current study.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Calculated density of individual gradient fractions. Control fractions were diluted according to manufacturers instructions (AXIS SHIELD), the absorbance measured in triplicate at 340 nm, and density determined using the AXIS SHIELD standard curve equation: density = (Abs+3.8304)/3.8133 g/ml (n = 3, bars = SEM). (B-C) Proteins in each fraction were separated by SDS-PAGE, stained with SYPRO ruby, and quantified by densitometry against the BenchMark Protein Ladder. Uninfected fractions (F) and infected fractions (G), n = 3, bars = SEM. Representative western blot analysis of classical exosome markers across (D) uninfected and (E) HCMV infected gradient fractions. (F) Viral protein marker expression across HCMV infected gradient fractions.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Conditioned medium from uninfected and infected cells was collected, resolved by Optiprep density gradient ultracentrifugation, and proteins from 10 fractions from each condition (increasing density) extracted and analyzed by mass spectrometry (n = 3 for each condition). Protein abundance was determined by MaxQuant-based label-free quantitation, and mean values from the triplicate were Z-scored across gradient fractions, and plotted using Perseus. Heatmap shows the distribution of all 2012 proteins detected across uninfected and infected gradients clustered using k-means.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Comparison of protein profiles from all uninfected and infected gradient fractions, as correlated by Pearson coefficient analysis (mean of 3 biological replicates). Populations were hierarchically clustered using k-means.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Z-scores for each gradient fraction across uninfected and infected conditions for (A) VPS4B and (B) IST1. Green rectangles: uninfected fractions, Blue rectangles: infected fractions, (n = 3, bars = SEM). (C) Z-scores for viral exosome enriched viral proteins IR11, IRL12 and US14 across infected gradient fractions, (n = 3, bars = SEM). (D) Total protein abundance of the 15 top proteins identified by Varnum et al., 2004 in Dense Bodies compared to infected fraction 10. For OptiPrep gradient, (n = 3, bars = SEM). (E) Refinement of the exosome population. A more stringent exosome population was defined based on significant enrichment of proteins, compared to microvesicles. Purple circles: significantly enriched in exosomes, Teal circles: classical exosome markers, Black circles: significantly enriched in MVs, (n = 3, S0 = 0.4, FDR < 0.05, fold change >2). (F) Venn diagram depicting the total number, and proteins commonly identified in the refined exosomes (from E) and microvesicles. (G) Abundance of individual protein groups (based on Venn diagram in panel F), as a proportion of overall total protein abundance, in exosomes or microvesicles (n = 3, bars = SEM).
 
 Next, we characterized vesicle populations released from infected cells. Similar to the uninfected gradient samples, exosome markers were enriched in fractions 1 and 2 (Figure 2—figure supplement 1E). However, the markers were also strongly enriched in fraction 3, indicating that infection may have caused an increase to exosome density. Additionally, exosome markers were also more readily detected in more-dense fractions (4 to 8), and infection altered the expression distribution profile for some markers. For example, VPS4B and IST1 were mainly enriched in fraction two compared to fraction seven on the uninfected gradient (Figure 2A, Figure 2—figure supplement 4A–B). However, the enrichment of both proteins increased in fraction 7 of the infected gradient (Figure 2B, Figure 2—figure supplement 4A–B). This altered distribution caused by HCMV reflected a clear protein re-localization, and suggested that a subset of host exosome proteins were incorporated into a denser infection-specific entity.
 
@@ -65,37 +93,61 @@ There was a small amount of protein present in infected fraction 10, but absent 
 
 Collectively, we established that HCMV infection caused cells to release exosomes with increased density, that contain a subset of viral proteins different to the major virion constituents. HCMV infected cells also released virions that contained host proteins that were normally constituents of exosomes from uninfected cells. Therefore, a potential cross pollination between these two cellular processes continued to emerge.
 
-## Uninfected cell exosomes, viral exosomes, and virions contain distinct protein profiles
+### Uninfected cell exosomes, viral exosomes, and virions contain distinct protein profiles
 
 Enrichment analysis and heatmap visualization revealed that both uninfected and infected gradients contained at least two vesicle/particle populations each. Due to incomplete isolation within a single gradient fraction, we pooled some neighboring fractions, and defined the four populations as exosome or MV (uninfected gradient), and viral exosome or virion (infected gradient) (Figure 2G). As we could not rule out that proteins in fraction one were not from lysed vesicles that consequently did not enter the gradient, this fraction was omitted from pooling. In addition, we realized that both MVs and virions resolved in fraction 7, and this may confound the analysis between exosomes and virions. So, we performed a quantitative comparison between exosomes and MVs (Comparison A, Figure 2G), and excluded any proteins from the exosome population that had less than 2-fold enrichment in exosomes compared to MVs (Figure 2—figure supplement 4E). This more stringently refined exosome proteome contained 765 proteins compared to 1225 in the MV, with 679 common to both populations (Figure 2—figure supplement 4F). The 679 proteins in the intersection accounted for the majority of total exosome protein, but strikingly, only contributed 7.4% of the total MV protein (Figure 2—figure supplement 4G). This indicated that these highly abundant exosome proteins are largely absent from MVs, and therefore the refined exosome proteome was used for all subsequent comparisons.
 
 Pearson correlation and hierarchical clustering demonstrated strong reproducibility between biological triplicates, and revealed that the four populations were clearly distinct in their overall protein composition (Figure 3A). These observations were further supported by principal component analysis (Figure 3B). As somewhat expected, exosomes and viral exosomes were most similar to each other, and this pair was clearly distinguishable from virions. MVs were the least similar to any of the other populations. With four clearly distinct populations, we proceeded with quantitative comparisons focussing on addressing two key questions: (1) how does HCMV alter the proteome of exosomes released during infection? and (2) which host exosome proteins are integrated into HCMV virions?
 
-## Viral exosomes contain specific HCMV proteins with unknown functions
+![Figure 3.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig3-v1.jpg)
+
+**Figure 3.:** (A) Comparison of protein profiles from all vesicle populations and biological replicates, as correlated by Pearson coefficient analysis. Populations were hierarchically clustered using k-means. (B) Comparison of vesicle population protein signatures by principle component analysis. Individual points plotted represent biological replicates, and circles represent 95% confidence intervals. (C) Histogram showing the relative enrichment of viral proteins in viral exosomes, compared to virions (n = 3, bars = SEM). Red hatching: predicted TMHMM transmembrane domain, solid black: no predicted TM domain, blue squares: viral glycoprotein. (D) Venn diagram depicting the total number, and proteins commonly identified in exosomes and viral exosomes. (E) Abundance of individual protein groups (based on Venn diagram in panel D), as a proportion of overall total protein abundance, in exosomes or viral exosomes (n = 3, bars = SEM). (F) Volcano plot showing relative enrichment of host proteins in viral exosomes (positive fold change), compared to exosomes (negative fold change). Red squares: envelopment/egress candidates, Blue crosses: V-ATPase sub-units, Teal circles: classical exosome markers, Black circles: significant differential expression (n = 3, S0 = 0.4, FDR < 0.05, fold change >2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Venn diagram depicting the total number, and commonly identified, proteins in viral exosomes and virions. (B) Abundance of individual protein groups (based on Venn diagram in panel A), as a proportion of overall total protein abundance, in viral exosomes or virions (n = 3, bars = SEM). (C) Abundance proportions of host and viral proteins in viral exosomes, as determined by MaxQuant label-free quantitation. Percentages were calculated based on mean abundances from three biological replicates (D) Gene ontology enrichment analysis of differentially enriched proteins between viral exosomes and exosomes (Figure 3F). Up and down regulated proteins were scored for enrichment against the total exosome protein background. Positive z-scores represent enrichment in viral exosomes. BP: biological process, CC: cellular component, MF: molecular function.
+
+### Viral exosomes contain specific HCMV proteins with unknown functions
 
 HCMV significantly remodelled the protein composition of exosomes released during infection (Figure 3A–B). Viral exosomes contained 1647 host and 60 viral proteins (Figure 3—figure supplement 1A–B), comprising 97% and 3% of the total protein abundance, respectively (Figure 3—figure supplement 1C). To further investigate the specific enrichment of viral proteins in viral exosomes, and eliminate possible contamination from tailing or unresolved virions on the gradient, we first normalized the abundance of each viral protein within a population, and then calculated a ratio between populations (Comparison B, Figure 2G). As expected, abundant structural virion proteins UL83 and MCP had a ratio of 0.46 and 0.66 respectively (Figure 3C), indicating that they were more abundant in the virion. By contrast, envelopment and egress associated tegument proteins UL71, UL94 and UL103 (Ahlqvist and Mocarski, 2011; Phillips and Bresnahan, 2012; Schauflinger et al., 2011; Womack and Shenk, 2010) were approximately 6-fold enriched in viral exosomes, relative to virions (Figure 3C). However, the salient feature of this analysis was the identification of the viral Fc-gamma receptor homologue IR11/gp34 (Corrales-Aguilar et al., 2014), and uncharacterized transmembrane proteins US14 and IRL12 in the viral exosome (Figure 3C, Figure 2—figure supplement 4C). These proteins were enriched between 18–25-fold in the viral exosome, compared to the virion, and it is likely that they are embedded within the exosome membrane or specifically incorporated as molecular cargo. Moreover, this enrichment and unique localization may highlight a novel immuno-modulatory function of HCMV-induced exosomes, that has not yet been described, but currently outside the focus of our study.
 
-## Uninfected cell exosomes and viral exosomes contain a similar host protein signature, but differential expression
+### Uninfected cell exosomes and viral exosomes contain a similar host protein signature, but differential expression
 
 Next, we compared the host proteins in exosomes and viral exosomes (Comparison C, Figure 2G). Of the 765 proteins identified in exosomes, only 11 were unique and absent from viral exosomes (Figure 3D). These 11 proteins comprised a negligible amount of the total protein abundance in exosomes (Figure 3E). Interestingly, the remaining 754 proteins were also identified in viral exosomes, and constituted 91% of the total protein abundance of viral exosomes (Figure 3E). Although infection caused an additional 953 proteins to be identified in the viral exosome (Figure 3D), these proteins accounted for less than 9% of the total protein abundance (3% viral and 6% host) (Figure 3E, Figure 3—figure supplement 1C). Therefore, the host proteins in uninfected cell exosomes and viral exosomes are largely the same with some additional low abundance proteins present in viral exosomes.
 
 Despite a similar qualitative composition of host proteins present in both exosomes and viral exosomes, we next tested for quantitative expression differences. We calculated and plotted the relative protein abundance between samples (Figure 3F), and observed a fold-change distribution indicating that some proteins were statistically enriched in exosomes (black circles, negative fold change), many that were equally expressed (grey circles), and a subset of proteins that were enriched in viral exosomes (black circles, positive fold change). Focussing on the latter, we searched for UniProt functional annotation terms ‘vesicle’, ‘membrane’ and ‘traffic’ which identified STX3, VCP, TMED10, SEC22B, MYH9, IGF2R and VPS35 to be of interest (red squares, Figure 3F, Figure 3—figure supplement 1D). Interestingly, STX3 was previously shown to be important for HCMV maturation (Cepeda and Fraile-Ramos, 2011; Giovannone et al., 2017), whilst VCP came up in a preliminary screen to identify host factors important for HCMV replication, assembly, and egress (McCormick et al., 2018). In addition, the V-ATPase has previously been implicated in HCMV progression (McCormick et al., 2018; Pavelin et al., 2017), and we observed that three sub-units of the V1 domain had increased expression in viral exosomes (blue crosses, Figure 3F), compared to uninfected exosomes. Taken together, this analysis discovered a cluster of host exosome proteins with implications in virion maturation, that were enriched in viral exosomes, relative to uninfected exosomes.
 
-## Virions contain the complete repertoire of uninfected host exosome proteins, with a novel subset enriched
+### Virions contain the complete repertoire of uninfected host exosome proteins, with a novel subset enriched
 
 Examination of the virion proteome revealed 64 viral and 1712 host proteins (Figure 4A), with these proteins providing 36% and 64% of the total virion protein abundance, respectively (Figure 4—figure supplement 1A). When plotted against the ICL, virions isolated on OptiPrep gradients showed a very similar enrichment pattern of host organelle markers and viral proteins to the glycerol-tartrate purified virions (Figure 4—figure supplement 1B, Figure 1C and H). Exosome features within virions were further illuminated via direct comparison of the protein signatures (Comparison D, Figure 2G). Of the 765 proteins identified in exosomes, only 31 were not present in virions (Figure 4A). These proteins comprised only 0.6% of the total protein abundance, whilst the remaining 734 proteins represented 99.4% (Figure 4B). Importantly, these 734 exosome proteins were all subsequently integrated into the virion during infection (Figure 4A). This result indicated near-complete acquisition of the host exosome cargo during infection, and suggested that HCMV and exosomes bud from the same membrane, and are likely to use the same export mechanism.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig4-v1.jpg)
+
+**Figure 4.:** (A) Venn diagram depicting the total number, and proteins commonly identified in exosomes and virions. (B) Abundance of individual protein groups (based on Venn diagram in panel A), as a proportion of overall total protein abundance, in exosomes or virion host proteins (n = 3, bars = SEM). (C) Volcano plot showing relative enrichment of host proteins in virions (positive fold change), compared to exosomes (negative fold change). Black circles: significant differential expression (n = 3, S0 = 0.4, FDR < 0.05, fold change >2). Red squares: envelopment/egress candidates, Teal circles: classical exosome markers, Purple stars: ESCRT sub-units. (D) Scatter plot correlating relative fold change comparisons of exosome vs viral exosome (Figure 3F), and exosome vs virion (C). Red squares: envelopment/egress candidates, Blue crosses: V-ATPase sub-units, Teal circles: classical exosome markers, Purple stars: ESCRT sub-units, (n = 3). (E) Relative transcript levels of host proteins following siRNA-mediated knock-down and HCMV infection (5 DPI, MOI = 3), normalized to cells treated with non-targeting control siRNA (n = 3, bars = SEM). (F) Quantification of infectious units released from siRNA-treated cells infected with HCMV AD169 5 DPI, MOI = 3. Infectious units in the supernatant were transferred to a reporter plate of uninfected cells, and IE1 assay conducted 24 HPI (n = 3, bars = SEM, ns: not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, one-way ANOVA with Dunnet’s post-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Abundance proportions of host and viral proteins in virions, as determined by MaxQuant label-free quantitation. Percentages were calculated based on mean abundances from three biological replicates. (B) Scatter plot of OptiPrep isolated virion proteins versus HCMV infected cellular lysate (ICL), n = 3, 5 DPI, MOI = 3, Red: HCMV proteins, green: select mitochondrial marker proteins, orange: nuclear markers, black: endoplasmic reticulum markers, blue: endosome markers, purple: exosome markers. Equation of line: y = x, r = 0.643. (C) Gene ontology enrichment analysis of differentially enriched host proteins in the virion compared to exosomes (Figure 4C). Up and down regulated proteins were scored for enrichment against the total exosome protein background. Positive z-scores represent enrichment in HCMV virions. BP: biological process, CC: cellular component, MF: molecular function.
 
 To highlight host proteins incorporated into HCMV virions that may perform functional roles in virion maturation, we prioritized candidates based on an enrichment in virions, compared to uninfected exosomes. We first examined the 50 canonical exosome-associated markers (listed in Figure 2A–B). 45 of these were strictly classified as exosomal (based on enrichment comparisons with MVs, Figure 2—figure supplement 4E), and of these, 26 were significantly enriched in exosomes, 18 had no statistical change and only HSP90AA1 was found to be statistically enriched in virions (teal circles, Figure 4C). Next, we examined the relative expression of ESCRT proteins between uninfected cell exosomes and virions. Although all ESCRT-0 and ESCRT-I subunits were detected in exosomes and virions, none were significantly enriched, and SDCBP, STAM, TSG101 and Alix/PDCD6IP were among the least enriched exosome proteins in virions (purple stars, Figure 4C, Figure 4—figure supplement 1C). Similarly, ESCRT-III components and VPS4B had no significant change (Figure 4C).
 
 Given the classical exosome markers showed no enrichment in virions, we instead focussed on the 112 host exosome proteins that significantly did (black circles, positive fold change, Figure 4C). We plotted fold change comparisons (exosome vs virion, and exosome vs viral exosome), and observed a strong positive correlation based on a Pearson coefficient of 0.721 (Figure 4D). Using this analysis, the 194 proteins in the top right quadrant (Figure 4D) were further queried for vesicle biogenesis or trafficking annotation, and nine candidates shortlisted to further investigate an involvement in producing infectious virions.
 
-## Host exosome protein depletion inhibits HCMV replication
+### Host exosome protein depletion inhibits HCMV replication
 
 To examine an involvement producing infectious progeny, the expression of 9 host proteins were knocked-down (KD) using siRNA, and cells subsequently infected with HCMV. 5 DPI, we confirmed successful KD of target host genes by 75–95%, relative to the corresponding level in cells treated with non-targeting control (NTC) siRNA (Figure 4E). Simultaneously, cell supernatant from the infection was transferred to a reporter plate of uninfected cells, and IE1-positive cells counted 24 HPI. KD of all nine host proteins caused a decrease in the release of infectious virus, compared to the NTC (Figure 4F). However, IGF2R/CI-M6PR and STX3 KD did not achieve statistical significance, despite STX3 being previously reported to significantly reduce viral titre (Cepeda and Fraile-Ramos, 2011). KD of the other seven host proteins reduced virus production by varying orders of magnitude, with VCP, VAMP3, TMED10, MYH9 and COPB2 displaying the greatest inhibition (Figure 4F). Given the latter two proteins had been implicated in HCMV infection previously (Jean Beltran et al., 2016; McCormick et al., 2018), we instead focussed on VCP, TMED10, and VAMP3. Further assessment of cells subjected to KD conditions and low MOI infection revealed cells with KD VCP or TMED10 displayed defective cell proliferation and altered cell morphology (Figure 5—figure supplement 1A). This indicated that KD may have introduced a cellular toxicity that contributed to the cells inability to sustain HCMV production. In comparison, VAMP3 KD cells displayed no observable differences morphologically, and mimicked the NTC cells ability to form a coherent monolayer (Figure 5—figure supplement 1A). On this basis, the role of VAMP3 during HCMV infection was explored further.
 
-## VAMP3 is essential for trafficking and release of infectious HCMV progeny
+### VAMP3 is essential for trafficking and release of infectious HCMV progeny
 
 VAMP3 KD significantly reduced the ability of fibroblasts to produce AD169 HCMV (55-fold reduction compared to the NTC, Figure 4F). Conversely, fibroblasts over-expressing VAMP3 caused a significant increase in the release of AD169, compared to control cells (Figure 5A). The requirement for VAMP3 was not HCMV strain-specific, as production of low passage clinical isolate Merlin (RCMV1158) was blocked with even greater potency in VAMP3 KD cells (5200-fold reduction compared to the NTC, Figure 5B). We also measured viral spread in ARPE-19 cells using an epithelial-specific Merlin virus (RCMV1120), with a low MOI infection, over 10 days. Similarly, generation of IE1-positive cells was reduced by approximately 10-fold at 10 DPI in VAMP3 KD cells (Figure 5C). Therefore, VAMP3 is an essential host protein required for HCMV replication across multiple virus strains, and cell types.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig5-v1.jpg)
+
+**Figure 5.:** (A) Quantification of infectious units released from fibroblasts over-expressing (O/E) VAMP3 or GFP-FLAG (CTL) fusion proteins. Cells were infected with HCMV AD169 MOI = 3, and 5 DPI the supernatant was transferred to a reporter plate of uninfected cells, and IE1 assay conducted 24 HPI. (n = 3, bars = SEM, **p<0.01, Student’s t-test). (B) Quantification of infectious units released from siRNA-treated cells infected with HCMV strain Merlin (RCMV1158) MOI = 3. 7 DPI supernatant was transferred to a reporter plate of uninfected cells, and IE1 assay conducted 24 HPI (n = 3, bars = SEM, ****p<0.0001, Student’s t-test). (C) Quantitation of HCMV spread in ARPE-19 cells treated with siRNA. Cells were infected with Merlin (RCMV1120) at low MOI. At indicated time-points post infection, cells were fixed directly and IE1 positive nuclei quantified (n = 3, bars = SEM, *p<0.05, **p<0.01, Student’s t-test). (D) Quantitation of extracellular viral genomes in supernatant from siRNA treated cells infected with HCMV AD169, 5 DPI, MOI = 3. (n = 3, bars = SEM, **p<0.01, Student’s t-test). (E–G) Immunofluorescence staining of UL99, GM130, VAMP3, and gB in siRNA-treated cells infected with HCMV-GFP AD169, 4 DPI, MOI = 0.1. White arrows: peripheral gB puncta, Scale bars = 20 μm. (H) Quantification of peripheral gB-positive puncta (outside Golgi ring) in siRNA-treated or Opti-MEM control cells, infected with HCMV-GFP AD169, 4 DPI, MOI = 0.1. Between 44 and 65 cells were quantified in each condition (n = 3, bars = SD, ns: not significant, ****p<0.0001, one-way ANOVA with Tukey’s post-test). (I) Electron micrographs of VAMP3 siRNA and non-targeting control (NTC) treated cells infected with HCMV AD169, 5 DPI, MOI = 1. White arrows: maturing virions, Black arrows: enlarged empty vesicles, Scale bars = 2.0 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58288/elife-58288-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Images of MRC5 cells transfected with siRNA for NTC, TMED10 KD, VCP KD and VAMP3 KD, and infected with HCMV-GFP AD169 (MOI = 0.1, 4 DPI). Scale bars = 300 μm. (B) Quantitation of intracellular viral genomes from siRNA treated cells infected with HCMV AD169, 5 DPI, MOI = 3 (n = 3, bars = SEM, ns: not significant, **p<0.01, ***p<0.001, one-way ANOVA with Tukey’s post-test). (C) Western blot of Opti-MEM, NTC and VAMP3 KD whole cell lysates infected with HCMV AD169 (MOI = 3, 5 DPI). Membranes were probed with antibodies against various late viral proteins as well as VAMP3 and β-actin loading control. (D) Time course of late stages of HCMV infection from 60 HPI to 96 HPI. At 12 hr intervals, HCMV-GFP AD169 infected cells were fixed and immuno-stained for viral envelope glycoprotein B. Scale bars = 20 μm. (E) Immuno-fluorescence staining of gB and VAMP3 in NTC siRNA treated cells infected with HCMV-GFP AD169 (MOI = 0.1, 4 DPI). Scale bars = 20 μm.
 
 To determine the maturation stage that VAMP3 was required, we first tested whether viral genomes were replicated in the absence of VAMP3. Quantification revealed robust genome replication in VAMP3 KD cells, and a small relative reduction (1.7 fold) compared to NTC cells (Figure 5—figure supplement 1B). Assessment of late-stage viral proteins UL99, UL83, gB and MCP revealed that VAMP3 KD cells had similar expression levels as NTC cells (Figure 5—figure supplement 1C), indicating no obvious delay in viral gene expression. So next we investigated the involvement of VAMP3 in the context of vAC biogenesis, virion cargo recruitment, secondary envelopment, egress, and virion re-entry.
 
@@ -127,78 +179,347 @@ In this study, VAMP3 served exemplar to validate our discovery that host exosome
 
 ## Materials and methods
 
-## Cells and virus
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MRC5 primary fetal lung fibroblasts</td>
+      <td>Purchased from ATCC</td>
+      <td>CCL-17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>ARPE-19 retinal pigment epithelial cells</td>
+      <td>Purchased from ATCC</td>
+      <td>CRL-2302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Phoenix-AMPHO kidney epithelial cells</td>
+      <td>Purchased from ATCC</td>
+      <td>CRL-3213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Human Cytomegalovirus)</td>
+      <td>HCMV BAC clone</td>
+      <td>Thomas Shenk (Princeton University) (Yu et al., 2002)</td>
+      <td>AD169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Human Cytomegalovirus)</td>
+      <td>HCMV BAC clone</td>
+      <td>Richard Stanton (Cardiff University) (Stanton et al., 2010)</td>
+      <td>RCMV1158</td>
+      <td>Unrepaired Merlin virus with GFP cassette</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Human Cytomegalovirus)</td>
+      <td>HCMV BAC clone</td>
+      <td>Richard Stanton (Cardiff University) (Stanton et al., 2010)</td>
+      <td>RCMV1120</td>
+      <td>UL128 repaired Merlin virus without tags</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLXSN</td>
+      <td>Clontech</td>
+      <td>631509</td>
+      <td>Retroviral construct to transduce and express VAMP3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>vamp3_F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-TGACGAATTCATGTCTACAGGTCCA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>vamp3_R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-TGAGGATCCTCATGAAGAGACAAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ul83_F</td>
+      <td>Gault et al., 2001</td>
+      <td>qPCR primer</td>
+      <td>5’-GTCAGCGTTCGTGTTTCCCA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ul83_R</td>
+      <td>Gault et al., 2001</td>
+      <td>qPCR primer</td>
+      <td>5’-GGGACACAACACCGTAAAGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atg5_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>5’-TATTACCCTTTGATGCCTTTTTTTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atg5_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>5’-AACTTGTACCACCAATTCTAAAATG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA screen qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>All sequences available in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siGENOME SMARTpool siRNA</td>
+      <td>Dharmacon</td>
+      <td>All catalogue numbers available in Supplementary file 3</td>
+      <td>All sequences available in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD63 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-5275</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD81 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-166029</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human VPS4 (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>SAB4200215</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human TSG101 (Mouse monoclonal)</td>
+      <td>GeneTex</td>
+      <td>GTX70255</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human ALIX/PDCD6IP (Mouse monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>#2171</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HCMV gB (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab6499</td>
+      <td>WB (1:1000) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HCMV UL83 (Mouse monoclonal)</td>
+      <td>Thomas Shenk (Princeton University) Nowak et al., 1984</td>
+      <td>Clone 8F5</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HCMV UL99 (Mouse monoclonal)</td>
+      <td>Thomas Shenk (Princeton University) Silva et al., 2003</td>
+      <td>Clone 10B4</td>
+      <td>WB (1:1000) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human β-actin (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>A2228</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human VAMP3 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab200657</td>
+      <td>WB (1:1000) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HCMV IE1 (Mouse monoclonal)</td>
+      <td>Thomas Shenk (Princeton University) (Zhu et al., 1995)</td>
+      <td>Clone 1B12</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human GM130 (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610822</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human GM130 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab52649</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse Alexa Fluor (568)</td>
+      <td>Invitrogen</td>
+      <td>A-11004</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit Alexa Fluor (633)</td>
+      <td>Invitrogen</td>
+      <td>A-21070</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse HRP conjugate</td>
+      <td>Bio-Rad</td>
+      <td>#1706516</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit HRP conjugate</td>
+      <td>Bio-Rad</td>
+      <td>#1706515</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Viral DNA spin kit</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 57704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>MaxQuant (Cox and Mann, 2008)</td>
+      <td>version 1.6.0.13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>Perseus (Tyanova et al., 2016)</td>
+      <td>version 1.6.0.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GOPlot</td>
+      <td>GOPlot (Walter et al., 2015)</td>
+      <td>v.1.0.2, CRAN</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells and virus
 
 MRC5 primary fetal lung fibroblasts (ATCC CCL-17) and ARPE-19 retinal pigment epithelial cells (ATCC CRL-2302) were purchased directly from ATCC, were grown in Gibco DMEM (MRC5) or Gibco DMEM/F-12 (ARPE-19) full media, supplemented with 10% (v/v) Fetal Bovine Serum (Cell Sera), 10 U/ml penicillin and 10 U/ml streptomycin and cultured in 5% CO2 at 37°C. All cells were regularly tested for mycoplasma contamination using PCR, and found to be negative. For vesicle-related experiments, confounding bovine vesicles were depleted from serum by centrifugation at 100,000xg for 1 hr at 4°C.
 
 HCMV was reconstituted by electroporating MRC5 or ARPE-19 cells with bacterial artificial chromosomes (BAC) containing the AD169 genome kindly provided by Prof. Thomas Shenk (Yu et al., 2002), or Merlin kindly provided by Dr Richard Stanton (Stanton et al., 2010). Cellular supernatant was harvested and a sorbitol cushion (20% (v/v) D-sortbitol, 50 mM Tris pH 7.4) underlaid, prior to ultracentrifugation at 50,000xg for 1 hr at 4°C (Britt, 2010). Virus pellets were resuspended in full media, titred by TCID50 assay, and stored at −80°C. For HCMV infections, virus was added to cells at the specified multiplicity of infection (MOI) with gentle agitation over 3 hr, then aspirated and replaced with full media until harvesting.
 
-## HCMV virion purification and proteinase K surface shaving
+### HCMV virion purification and proteinase K surface shaving
 
 Fibroblasts were cultured in 6–8 roller bottles, and medium replaced with serum-free DMEM containing pen/strep prior to infection. Cells were infected (MOI = 0.01) with BAC-derived AD169, and cell supernatant collected when 100% of cells were infected before significant cell death. The supernatant was clarified by centrifugation at 1000x g for 10 min, and centrifuged through a 20% sorbitol cushion at 72,000x g for 1.5 hr. The pellet was resuspended in buffer containing 50 mM Tris pH7.4 and 100 mM NaCl (TN buffer) and centrifuged through a sodium tartrate-glycerol gradient to separate virions, non-infectious enveloped particles (NIEPs), and dense bodies from cell-derived vesicles. Individual bands were extracted, diluted 3-fold in TN buffer, and further isolated on a second gradient by centrifugation at 75,000x g for 1 hr. Virions were then either washed with PBS and analyzed by mass spectrometry, or digested with proteinase K. For the surface shaving experiments, virions were treated with 10 ug proteinase K for 3.5 hr. After digestion, virions were diluted 9-fold with PBS containing proteinase inhibitors (Roche), and isolated on another sodium tartrate-glycerol gradient. Finally, virions were extracted, washed with PBS, and analyzed by mass spectrometry.
 
-## Extracellular vesicle separation
+### Extracellular vesicle separation
 
 MRC5 cells were seeded into 150 mm dishes (5.5 × 106 cells per plate). four dishes were infected with HCMV at MOI = 3, and cellular supernatant collected 5 days post infection (DPI). Supernatant from 19 dishes of uninfected cells was also collected 5 days post mock infection. Supernatant collected from both conditions was first clarified at 1500xg for 10 min, then centrifuged at 100,000xg for 90 min at 4°C. Vesicle pellets were washed once in PBS, and resuspended in PBS to determine the protein concentration using the Bradford total protein reagent (BioRad), according to the manufacturer’s instructions. Equal protein amounts from uninfected or infected vesicle samples were added to 5% Optiprep diluted in HEPES buffered saline (0.85% (w/v) NaCl, 10 mM HEPES-NaOH, pH 7.4) and layered onto continuous 10–40% Optiprep density gradients. Ultracentrifugation was performed at 140,000xg for 16 hr at 4°C, after which, 10 individual fractions were aspirated manually, washed with PBS, and used immediately in downstream experiments.
 
-## Densitometry-based protein quantification
+### Densitometry-based protein quantification
 
 Vesicle pellets from individual fractions were lysed with 30 μl LDS buffer (141 mM Tris pH 8.5, 2% (w/v) LDS, 10% (v/v) glycerol, 0.51 mM EDTA, 0.22 mM G250, 50 mM DTT), and denatured at 95°C for 5 min. A 5 μl aliquot from every sample, and 5 μl BenchMark protein standard (Invitrogen) was separated by PAGE (NuPAGE 4–12% Bis-Tris gels), and the gels stained with SYPRO ruby (ThermoFisher Scientific) according to manufacturer’s instructions. Gels were imaged using a Typhoon Trio (GE Healthcare) at a resolution of 200 μm, and excitation (470 nm) and emission filters (610 nm) set. The protein concentration in each fraction was determined by relative densitometry of each lane compared to the BenchMark standard, as calculated by ImageQuant analysis toolbox software (GE Healthcare).
 
-## Western blotting
+### Western blotting
 
 Samples were subjected to PAGE as above, and proteins wet transferred to PVDF membranes using a Mini-PROTEAN Tetra cell (BioRad) at 100 V for 60 min at 4°C. Membranes were blocked with 5% (w/v) skim milk in 1X TBST (150 mM NaCl, 50 mM Tris pH 7.4, 0.1% (v/v) Tween 20) for a minimum of 2 hr at RT, and membranes incubated with primary antibodies: mouse anti-CD63 (Santa Cruz sc-5275), anti-CD81 (Santa Cruz sc-166029), anti-VPS4 (Sigma SAB4200215), anti-TSG101 (GeneTex GTX70255), anti-Alix/PDCD6IP (Cell Signalling Technology #2171), anti-HCMV gB (Abcam ab6499), anti-UL83 (Clone 8F5 Nowak et al., 1984), anti-UL99 (Clone 10B4 Silva et al., 2003), anti-β-actin (Sigma, A2228) and rabbit anti-VAMP3 (Abcam ab200657), diluted 1:1000 in 5% skim milk for 1 hr at RT, or overnight at 4°C. Membranes were washed with TBST, and appropriate HRP-conjugated secondary antibodies (Bio-Rad) incubated for 1 hr at RT. After washing in TBST, membranes were incubated in Clarity ECL substrate (Bio-Rad) for 1 min, and imaged using a Gel Doc imaging system (Bio-Rad). Images were viewed and analyzed using ImageJ.
 
-## Infectivity assay of gradient fractions
+### Infectivity assay of gradient fractions
 
 Supernatant from approximately 1.8 × 107 infected cells was collected and fractionated as above. Instead of lysing vesicles for PAGE-related analysis, washed vesicle pellets in each fraction were resuspended in full media, serially diluted (1:10), and incubated with a 24-well reporter plate containing uninfected MRC5 cells. 1 DPI, cells were fixed in 2% (v/v) formaldehyde in PBS for 15 min at RT, permeabilized with 0.1% (v/v) Triton X-100 in PBS, and washed 3 times with 0.2% (v/v) Tween 20 in PBS. Cells were blocked at RT for 1 hr, incubated with mouse anti-IE1 primary antibody (1:100, Clone 1B12 Zhu et al., 1995) for 90 min, washed as above, and incubated with goat anti-mouse Alexa Fluor secondary antibody for 30 min (1:1000). 1% (v/v) Hoechst stain in PBS was incubated at 37°C for 10 min, and washed prior to imaging. 3 fields of view were imaged for each well with a Nikon eclipse TE2000-U confocal microscope. IE1 positive cells were counted manually.
 
-## Proteomics
+### Proteomics
 
-## Tryptic protein digestion and peptide desalting
+#### Tryptic protein digestion and peptide desalting
 
 Protein samples were reduced and alkylated with 50 mM TCEP and 50 mM chloroacetamide, at 95°C for 10 min. Digestion was based on the FASP method (Manza et al., 2005; Wiśniewski et al., 2009), with slight modification. Samples were transferred to Millipore Ultra-0.5 10 kDa centrifugal filters (Amicon), and buffer-exchanged three times into TUD buffer (0.1 M Tris-HCl, 2% (w/v) sodium deoxycholate, 8 M urea), by centrifugation at 14,000xg for 10 min at RT. For the final exchange, protein samples in 200 μl TUD were mixed with 200 μl of ABC-DOC buffer (50 mM ammonium bicarbonate, 2% (w/v) sodium deoxycholate), and centrifuged as above. 100 μl of digestion buffer (50 mM ammonium bicarbonate), 0.5 μg MS grade trypsin (Pierce) was added, and incubated overnight at 37°C. Digested peptides were recovered, mixed with ethyl acetate (in 2:1 ratio), and adjusted to a final concentration of 0.5% (v/v) trifluoroacetic acid (TFA). Following vortexing for 2 min, samples were centrifuged at 14,000xg for 5 min at RT, and the denser aqueous phase recovered. Peptides were desalted on StageTips (Rappsilber et al., 2003) using Empore SDB-RPS extraction discs (3M Analytical Biotechnologies). Bound peptides were washed first with a solution containing 50% (v/v) ethyl acetate, 0.5% (v/v) TFA, and a second wash with 0.5% (v/v) TFA. Finally, peptides were eluted with 5% (v/v) ammonium hydroxide, 80% (v/v) acetonitrile, concentrated to near dryness using a vacuum centrifuge (CentriVap), and FA solution (0.1% (v/v) formic acid, 2% (v/v) acetonitrile) added to achieve a final volume of 9 μl. Samples were transferred to autosampler vials for liquid chromatography and mass spectrometry analysis (LC-MS).
 
-## Mass spectrometry and protein identification
+#### Mass spectrometry and protein identification
 
 LC-MS was performed using an UltiMate 3000 Ultra High-performance Liquid Chromatography system coupled to Orbitrap Fusion Tribrid mass spectrometer (ThermoFisher.Scientific). Sample peptides were trapped on an Acclaim PepMap 100 column (C18, 2 cm length, 100 μm ID, 5 μm particle size, 100 Å pore size; ThermoFisher Scientific), and subsequently loaded onto an Acclaim PepMap RSLC analytical column (C18, 50 cm length, 75 μm ID, 3 μm particle size, 100‐Å pore size; ThermoFisher Scientific). Peptides were eluted at 250 nL/min, using a linear gradient over 90 min, starting at 7.5% Buffer B (80% acetonitrile, 0.1% formic acid) in Buffer A (0.1% formic acid), and ending at 37.5% Buffer B in Buffer A. The Fusion mass spectrometer was operated in data-dependent acquisition mode with a single acquisition cycle comprising one full-scan (m/z 375–1575) in the Orbitrap (resolution of 120,000), followed by higher-energy collisional dissociation (HCD) fragmentation of the top 15 most intense precursor ions, (resolution of 30,000) using 32% collision energy. Dynamic exclusion was enabled for 15 s.
 
 Raw spectral files were analyzed using MaxQuant (version 1.6.0.13 Cox and Mann, 2008). Peptides spectra were searched using the Andromeda search engine built into MaxQuant (Cox et al., 2011), against a combined Uniprot database comprising Human (Taxon ID: 9606, 20,432 entries) and HCMV strain AD169 (Taxon ID: 10360, 193 entries) proteins. Generally, MaxQuant default search parameters were used, with limited changes. Cysteine carbamidomethylation was set as a ‘fixed modification’, methionine oxidation and N-terminal acetylation were set as ‘variable modifications’, and trypsin/P selected as the ‘digestion enzyme’. Peptide length was set between 7 and 25 residues with a maximum number of 2 missed cleavages allowed. ‘Label-free quantification (LFQ)’ and ‘match between runs’ were enabled, and protein false discovery rate set to one percent with a minimum number of 2 ‘razor and unique peptides’ required for identification.
 
-## Bioinformatics and statistical analysis
+#### Bioinformatics and statistical analysis
 
 MaxQuant proteinGroups files were uploaded into Microsoft Excel for downstream data management, quality control, and normalization. Protein contaminants and reverse hits were deleted from the dataset, and LFQ intensity measurements used for quantitative comparisons in Perseus (Tyanova et al., 2016) to generate heatmaps and volcano plots. All LFQ values were log2 transformed, missing values (log2(0)=NaN) were randomly imputed from the whole matrix distribution after transforming by a shrink factor of 0.3 and down shifting 1.8 standard deviations. For curated exosome marker and viral protein heatmaps, the mean values for each fraction from the triplicate were taken, and subsequently Z-scored across each row. Hierarchical clustering of matrix rows was performed using Euclidean distance (average linkage, K-means) with number of clusters set to 15 with 10 iterations and one restart.
 
 To define vesicle populations, mean LFQ values for each protein from pooled fractions (either 2 or three depending on population) was taken. The average for each protein was divided by the summed total of all averages within a defined population. The sum of all LFQ values for all proteins in each defined population is 1. Normalized values were log2 transformed and matrix rows were further filtered by ‘at least two valid values in at least one population’ to reduce the number of imputed values. For volcano plots, missing values were imputed as before. Statistical significance was determined by the Student’s t-test, with permutation based false discovery rate set to 0.05, S0 constant of 0.4 and a fold change greater than 2. For PCA, missing values were imputed from individual matrix columns (shrink factor 0.3, downshift 1.8 std deviations). Analysis and plots were produced using ClustVis with default settings (Metsalu and Vilo, 2015). For venn diagrams a minimum of 2 ‘razer and unique’ peptides in at least one replicate was required. Gene enrichment analysis was performed using the DAVID 6.7 functional annotation online tool (Huang et al., 2009) with an infected cellular lysate sample as the background or uninfected exosome protein list. Results were downloaded and plotted using the GOPlot (v.1.0.2, CRAN) (Walter et al., 2015) and ggplot2 (v.3.3.0, CRAN) libraries in R with Benjamini corrected p-values.
 
-## Cryogenic transmission electron microscopy
+### Cryogenic transmission electron microscopy
 
 Vesicle pellets from gradient fractions were resuspended in 30 μl HEPES buffered saline (0.85% (w/v) NaCl, 10 mM HEPES-NaOH, pH 7.4) on ice. Holey carbon 2/2 C-flat EM grid (Protochips) grids were glow-discharged for 30 s in N2 plasma, and 2.5 μl of sample was applied to the surface at 4°C and 100% humidity in a FEI Vitrobot. Grids were blotted for 4 s using Whatman 595 blotting paper, then plunge-frozen in liquid ethane. Electron micrographs were acquired using a FEI Titan Krios TEM, operated at 300 KeV in EFTEM mode at a nominal magnification of 6400X and 81000X. Images were digitized using Gatan K2-Bioquantum GIF operated in ‘Counting Mode’. Sample acquisition was performed in ‘Low Dose’ with area exposed to 5-50e-/A2. Dimensions were measured using ImageJ.
 
-## siRNA knockdown and RT-qPCR
+### siRNA knockdown and RT-qPCR
 
 MRC5 cells (5 × 104) were seeded in 24-well plates 24 hr prior to transfection. 20 pmol of siRNA (siGENOME SMARTpool, Dharmacon) was diluted in Opti-MEM (Life Technologies), and transfected using Lipofectamine RNAiMAX (Thermo), according to the manufacturer’s instructions. Cells were transfected twice, 24 hr apart, and then infected with HCMV 24 hr later. 5 DPI, cells were washed with PBS, lysed with TRIzol Reagent (Invitrogen), and total RNA isolated according to manufacturer’s instructions. DNase treatment of RNA and cDNA synthesis was performed using the RQ1 (Promega) and SuperScript III kit (Thermo), respectively, according to manufacturer’s instructions. two step qPCR of all samples was performed using QuantiNova SYBR Green PCR master mix (Qiagen) in a Rotor-Gene-Q real time PCR cycler (Qiagen). Initial heat activation was performed at 95°C for 5 min, then 40 cycles of 30 s denaturation (95°C) and 60 s anneal/extend (60°C). GAPDH was used as the internal control, and relative transcript level quantified using the ddCt method. siRNA and qPCR primer sequences are listed in Supplementary file 3.
 
-## IE1 fluorescent focus assay
+### IE1 fluorescent focus assay
 
 5 DPI, infected cell supernatant was collected, cell debris removed by centrifugation at 500xg for 5 min, and volumes normalized to 500 μ. Serial dilutions using full media (1:4) were performed, starting from neat samples to 4−5, in technical duplicate, and 100 μl of each dilution added to a 96-well reporter plate of confluent uninfected MRC5 cells. 24 HPI, cells were fixed and stained for IE1 as per ‘Infectivity assay of gradient fractions’. Reporter plates were automatically imaged using a DMi8 (Leica) microscope with 10x objective. A focus map was constructed with a single point per well, and autofocused using the Hoechst channel in LAS X navigator (Leica). A 3 × 3 tilescan was performed per well in hoechst, and IE1 channels with 0% image overlap and fill factor 75%. IE1 foci per well were manually counted in LAS X core offline version (Leica) at appropriate dilutions for IU/ml calculations.
 
-## Stable cell line generation
+### Stable cell line generation
 
 A cDNA library was made as per ‘siRNA knockdown and RT-qPCR’ from wild type MRC5 cells. The VAMP3 gene was PCR amplified (Forward primer: 5’-TGACGAATTCATGTCTACAGGTCCA-3’; Reverse primer: 5’-TGAGGATCCTCATGAAGAGACAAC-3’) with Phusion high fidelity polymerase (ThermoFisher Scientific), digested with EcoRI and BamHI, then cloned into pLXSN vector (Clontech). To generate MRC5 cells stably expressing VAMP3 or GFP-FLAG, insert containing plasmids were isolated (PureLink plasmid miniprep kit, Invitrogen), and Phoenix cells (purchased from ATCC, and mycoplasma negative by PCR) transfected twice 24 hr apart using Lipofectamine 3000 (Invitrogen), according to manufacturer’s instructions. 24 hr post transfection, medium containing retroviral particles was added directly to MRC5 cells (two harvests, 24 hr apart). Cells were placed under selection (full media containing 400 μg/ml G-418, Gibco) for 6 days, changed at 48 hr intervals, and then passaged as per ‘cells and virus’.
 
-## Intracellular viral genome quantification
+### Intracellular viral genome quantification
 
 Cells were transfected and infected as per conditions in ‘siRNA knockdown and RT-qPCR’. 5 DPI, cells were washed with PBS, lysed with TRIzol Reagent (Invitrogen), and total DNA isolated according to manufacturer’s instructions. qPCR was performed as per ‘siRNA knockdown and RT-qPCR’ with UL83 specific primers (Forward: 5’-GTCAGCGTTCGTGTTTCCCA-3’; Reverse: 5’-GGGACACAACACCGTAAAGC-3’) and ATG5 specific primers (Forward: 5’-TATTACCCTTTGATGCCTTTTTTTC-3’; Reverse: 5’-AACTTGTACCACCAATTCTAAAATG-3’) for quantification and internal control respectively. The relative number of viral genomes was calculated using the ddCt method, normalized to the Opti-MEM control.
 
-## Extracellular viral genome quantification
+### Extracellular viral genome quantification
 
 5 DPI, infected cell supernatants (103 μl) were thawed on ice, then DNase treated with 5 μl RQ1 DNase (Promega) for 90 min at 37°C. 5 μl STOP solution was added and samples incubated for 10 min at 65°C. Viral DNA was extracted using the Qiagen Virus Spin Kit, according to manufacturer’s instructions. Genome copies in 5 μl eluate were quantified by qPCR using UL83 specific primers as for ‘intracellular viral genome quantitation’. Ct values were normalized to a standard curve constructed from 1:10 serial dilutions of pLXSN-UL83 (1.23 × 107 – 1.23 × 103 copies) and genome copies/ml calculated (Gault et al., 2001).
 
-## Immunofluorescence and confocal microscopy
+### Immunofluorescence and confocal microscopy
 
 MRC5 cells were grown on 12 mm glass coverslips (no. 1.5, Menzel) in 24-well plates. At the indicated timepoints cells were fixed, permeabilized and blocked as for ‘Infectivity assay of gradient fractions’. Mouse anti-HCMV UL99 (Clone 10B4 (21)), mouse anti-HCMV gB, (Abcam ab6499), rabbit anti-GM130 (Abcam ab52649), mouse anti-GM130 (BD Biosciences 610822) and rabbit anti-VAMP3 (Abcam ab200657) primary antibodies were diluted 1:500 in block solution, and coverslips incubated for 60 min at RT, washed three times in PBST, and corresponding anti-mouse or anti-rabbit Alexa Fluor 568 or 633 (Invitrogen) secondary antibodies (1:1000) added for 30 min at RT. Coverslips were washed, and mounted on slides with ProLong Gold containing DAPI (Molecular Probes). Samples were stored at 4°C and protected from light until imaging. Confocal images were acquired using an inverted Leica SP5 using 63x UV corrected oil immersion objective and sequential scan settings of individual channels (Fluor 633, Fluor 568, eGFP and DAPI) with a line average of 4 and frame average 1. Images were viewed and analyzed in LAS X core offline version (Leica).
 
-## Electron microscopy sample preparation and imaging
+### Electron microscopy sample preparation and imaging
 
 Cells were cultured on 6 mm sapphire discs, and treated with siRNA prior to infection with HCMV AD169 for 5 days at MOI = 1. Cryopreservation was performed by high pressure freezing using a Wohlwend HPF Compact 02 using 0.05 mm carriers (Villinger et al., 2014). Hexadecane was used as filler, and no cryoprotecting agent was used (Walther et al., 2013). Freeze substitution and resin embedding was performed using an AFS1 (Leica) with the following conditions: 24 hr, at −90°C in 0.5% OsO4 in acetone (analytical grade), after that the temperature was increased to −10°C at a rate of 4 deg/hour (20 hr), and kept at −10°C for an additional 5 hr. Then OsO4 was removed by three 10 min acetone washes and the temperature was raised to 5°C at a rate 5 deg/hour (3 hr). Resin infiltration (Epon 812, EMS14120) was performed at room temperature in 1.5 mL Eppendorf vials in five steps of 1 hr each, with increasing concentration of resin: 25% then 50% and 75% followed by 2 × 100%. Blocks were polymerized for 72 hr at 60°C, after polymerization the resin blocks were cooled with liquid nitrogen vapor and the discs were mechanically detached. The embedded monolayer of cells was sectioned with a diamond knife to produce 50 nm slices, which were deposited on formvar coated TEM grids. Prior to imaging with the TEM, sections were coated with 5 nm of carbon and examined with a JEM 1400Plus (Jeol, Japan) operated at 80 keV.

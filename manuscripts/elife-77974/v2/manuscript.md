@@ -22,15 +22,15 @@
 
 ### Affiliations
 
-1. https://ror.org/049v75w11 Laboratory of Genetics and Genomics, National Institute on Aging Intramural Research Program, National Institutes of Health Baltimore United States
-2. https://ror.org/049v75w11 Flow Cytometry Core, National Institute on Aging Intramural Research Program, National Institutes of Health Baltimore United States
-3. https://ror.org/049v75w11 Translational Gerontology Branch, National Institute on Aging Intramural Research Program, National Institutes of Health Baltimore United States
+1. Laboratory of Genetics and Genomics, National Institute on Aging Intramural Research Program, National Institutes of Health Baltimore United States ([ROR:049v75w11](https://ror.org/049v75w11))
+2. Flow Cytometry Core, National Institute on Aging Intramural Research Program, National Institutes of Health Baltimore United States ([ROR:049v75w11](https://ror.org/049v75w11))
+3. Translational Gerontology Branch, National Institute on Aging Intramural Research Program, National Institutes of Health Baltimore United States ([ROR:049v75w11](https://ror.org/049v75w11))
 
 † Corresponding author
 
 ## Abstract
 
-Tissue-resident macrophages represent a group of highly responsive innate immune cells that acquire diverse functions by polarizing toward distinct subpopulations. The subpopulations of macrophages that reside in skeletal muscle (SKM) and their changes during aging are poorly characterized. By single-cell transcriptomic analysis with unsupervised clustering, we found 11 distinct macrophage clusters in male mouse SKM with enriched gene expression programs linked to reparative, proinflammatory, phagocytic, proliferative, and senescence-associated functions. Using a complementary classification, membrane markers LYVE1 and MHCII identified four macrophage subgroups: LYVE1−/MHCII hi (M1-like, classically activated), LYVE1+/MHCII lo (M2-like, alternatively activated), and two new subgroups, LYVE1+/MHCII hi and LYVE1−/MHCII lo . Notably, one new subgroup, LYVE1+/MHCII hi , had traits of both M2 and M1 macrophages, while the other new subgroup, LYVE1−/MHCII lo , displayed strong phagocytic capacity. Flow cytometric analysis validated the presence of the four macrophage subgroups in SKM and found that LYVE1− macrophages were more abundant than LYVE1+ macrophages in old SKM. A striking increase in proinflammatory markers ( S100a8 and S100a9 mRNAs) and senescence-related markers ( Gpnmb and Spp1 mRNAs) was evident in macrophage clusters from older mice. In sum, we have identified dynamically polarized SKM macrophages and propose that specific macrophage subpopulations contribute to the proinflammatory and senescent traits of old SKM.
+Tissue-resident macrophages represent a group of highly responsive innate immune cells that acquire diverse functions by polarizing toward distinct subpopulations. The subpopulations of macrophages that reside in skeletal muscle (SKM) and their changes during aging are poorly characterized. By single-cell transcriptomic analysis with unsupervised clustering, we found 11 distinct macrophage clusters in male mouse SKM with enriched gene expression programs linked to reparative, proinflammatory, phagocytic, proliferative, and senescence-associated functions. Using a complementary classification, membrane markers LYVE1 and MHCII identified four macrophage subgroups: LYVE1−/MHCIIhi (M1-like, classically activated), LYVE1+/MHCIIlo (M2-like, alternatively activated), and two new subgroups, LYVE1+/MHCIIhi and LYVE1−/MHCIIlo. Notably, one new subgroup, LYVE1+/MHCIIhi, had traits of both M2 and M1 macrophages, while the other new subgroup, LYVE1−/MHCIIlo, displayed strong phagocytic capacity. Flow cytometric analysis validated the presence of the four macrophage subgroups in SKM and found that LYVE1− macrophages were more abundant than LYVE1+ macrophages in old SKM. A striking increase in proinflammatory markers (S100a8 and S100a9 mRNAs) and senescence-related markers (Gpnmb and Spp1 mRNAs) was evident in macrophage clusters from older mice. In sum, we have identified dynamically polarized SKM macrophages and propose that specific macrophage subpopulations contribute to the proinflammatory and senescent traits of old SKM.
 
 ## Introduction
 
@@ -44,23 +44,125 @@ To better understand the complexity of the macrophage polarization status and th
 
 ## Results
 
-## Isolation of macrophages from mouse SKM and single-cell RNA sequencing
+### Isolation of macrophages from mouse SKM and single-cell RNA sequencing
 
 To isolate macrophages from SKM, we collected all muscles from hind limbs, including quadriceps, gastrocnemius, tibialis, and soleus, from C57BL/6JN male mice, combined and minced them into small cubes, and isolated mononuclear cells by digesting them with enzymes including collagenase and other proteases (Krasniewski et al., 2022; Liu et al., 2015; Figure 1A). To identify macrophage-rich fractions from the mononuclear cell preparation, we carried out flow cytometric analysis based on the presence of CD45, a pan-leukocyte marker, and CD11b, a pan-myeloid lineage marker. As we found previously, CD11b+ cells clearly separated from the rest of the mononuclear cell population (Krasniewski et al., 2022).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig1-v2.jpg)
+
+**Figure 1.:** (A) Workflow of mononuclear cell collection from mouse SKM, CD11b+ cell isolation by FACS, and single-cell RNA-seq analysis using the 10× Genomics platform. (B) Cells isolated from mouse SKM that were CD11b+ and F4/80+. (C) Unsupervised clustering of SKM macrophages revealed 11 clusters. %, proportion of each cluster. (D) Dot plot shows featured mRNAs in each cluster. (E) Heat maps show enriched genes in Cl0, 2, 6, and 8.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Uniform Manifold Approximation and Projection (UMAP) analysis to assess possible contamination of neutrophils and eosinophils in the CD11b+/F4/80+double-positive macrophage population. (B) Percentages of macrophages in each cluster and each biological replicate in young (Y) SKM and old (O) SKM. (C) UMAP representation of three biological replicates of macrophages from young (Y) SKM and old (O) SKM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Uniform Manifold Approximation and Projection (UMAP) representation of Lyve1, Folr2, and Cd163 mRNAs, encoding M2 markers in Cl0 compared to Cl1. Bottom right, designation of unsupervised clusters. (B) Expression levels of M2 marker genes in Cl0 to Cl1. (C) Enrichment of mRNAs encoding M2 markers in Cl1 relative to Cl2-10.
+
 For single-cell RNA-sequencing (scRNA-seq) analysis, we collected CD11b+ cells from three young (3 months old [3 m.o.]) and three old (23 m.o.) male mice as biological triplicates by fluorescence-activated cell sorting (FACS). From each mouse, 5000–10,000 CD11b+ cells were used for single-cell library preparation using the 3’ gene expression pipeline from 10× Genomics followed by RNA-seq analysis. We successfully obtained sequences from 2000 to 5000 single cells from each mouse, and a mean of ~80,000 RNA-seq reads per cell corresponding to a median of >2000 genes per cell (Materials and methods; GEO identifier GSE195507). Sequencing analysis showed that >80% of cells expressing Cd11b mRNA were also positive for F4/80 mRNA (Adgre1 mRNA), another common marker for mouse macrophages (Figure 1B). Those cells expressing both Cd11b mRNA and Adgre1 mRNA were considered SKM macrophages. Very few cells were positive for Ly6g mRNA or Siglecf mRNA (specific markers for neutrophils and eosinophils, respectively; Figure 1—figure supplement 1A), indicating minimal contamination from these cells in our macrophage population.
 
-## Identification of 11 macrophage clusters in SKM by unsupervised classification
+### Identification of 11 macrophage clusters in SKM by unsupervised classification
 
 To gain insight into the subpopulations of SKM macrophages, we pooled scRNA-seq data from young and old mice and performed unsupervised classification. By using FindClusters at a resolution of 0.3, we found 11 clusters (Cl0-10; Figure 1C). Given that we isolated macrophages on three different dates due to technical limitations (lengthy procedure) and mouse availability (Materials and methods), we compared the different datasets to ensure there were no batch effects. Overall, the distribution of macrophages across the 11 clusters was comparable among the biological replicates (Figure 1—figure supplement 1B), and the patterns of transcriptomes were also comparable among the replicates (Figure 1—figure supplement 1C). Those mRNAs that were expressed >1.5-fold higher in a given cluster relative to the other 10 clusters, p<0.05, and were expressed in >25% of macrophages in that cluster are shown in Supplementary file 1. Each cluster showed a distinct gene expression pattern (Figure 1D).
 
 To investigate the functional features of these clusters, we carried out gene ontology (GO) enrichment analysis using g:Profiler (Materials and methods). Although all clusters shared functional terms general to macrophages, including ‘immune system process,’ ‘defense response,’ ‘response to stress,’ ‘cell migration,’ and ‘cell death,’ each cluster also displayed distinct functional associations (Table 1). The largest cluster, Cl0, showed a more reparative function, with high expression of M2-type genes (Mrc1, Cd163, Lyve1, and Folr2 mRNAs) and reduced proinflammatory function compared to the other clusters (Figure 1E and Table 1). The second largest cluster, Cl1, showed a similar expression pattern as Cl0 (Figure 1D), including the expression of M2-type mRNAs (Lyve1 and Folr2 mRNAs), but the expression levels of these mRNAs were lower in Cl1 than in Cl0 (Figure 1—figure supplement 2A, B). This resulted in fewer unique genes in Cl1 when compared to the other 10 clusters (Supplementary file 1). When we excluded Cl0 and compared Cl1 with Cl2-10 (Supplementary file 1, ‘Cl1 vs Cl2-10’), Cl1 showed strong enrichment of M2-type mRNAs (Figure 1—figure supplement 2C) and strong association with reparative functions (Table 1). Thus, the two largest clusters, Cl0 and Cl1, account for nearly one-half of total macrophages and displayed M2-like gene expression patterns.
 
+**Table 1.**
+ Gene ontology (GO) annotation of unsupervised clusters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">GO annotation</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clusters</td>
+      <td>Elevated</td>
+      <td>Reduced</td>
+      <td>Featured membrane proteins</td>
+    </tr>
+    <tr>
+      <td>Cl0</td>
+      <td>Vasculature development (7.8)Amoeboidal-type cell migration (3.7)Endocytosis (3.4)Response to wounding (2.1)</td>
+      <td>Cytokine production (3.6)Positive regulation of inflammatory response (1.9)Cellular detoxification (1.5)</td>
+      <td>↑: LYVE1, FOLR2, MRC1,CD163↓: H2-AB1, H2-DMB1</td>
+    </tr>
+    <tr>
+      <td>Cl1</td>
+      <td>Vasculature development (6.7)Amoeboidal-type cell migration (4.3)Endocytosis (2.9)Response to wounding (1.6)</td>
+      <td>Translation (4.2)</td>
+      <td>↑: LYVE1, FOLR2, MRC1,CD163</td>
+    </tr>
+    <tr>
+      <td>Cl2</td>
+      <td>Antigen processing and presentation via MHC class II (6.7)Cytokine-mediated signaling pathway (4.3)Cellular response to IL-1 (3.3)Chemotaxis (2.2)Defense response to virus (2.2)</td>
+      <td>Vasculature development (5.3)Endocytosis (3.4)Muscle cell proliferation (2.5)Amoeboidal-type cell migration (1.4)</td>
+      <td>↑: H2-AB1, H2-EB1, H2-DMB1, CCR2↓: LYVE1, FOLR2, MRC1,CD163</td>
+    </tr>
+    <tr>
+      <td>Cl3</td>
+      <td>Cellular detoxification (4.0)Lymphocyte activation (1.6)</td>
+      <td>Vasculature development (6.9)Muscle cell proliferation (3.9)Response to wounding (1.7)</td>
+      <td>↑: CCR2↓: LYVE1, FOLR2, MRC1,CD163</td>
+    </tr>
+    <tr>
+      <td>Cl4</td>
+      <td>Fc receptor signaling pathway (4.2)Regulation of phagocytosis (3.5)Antigen processing and presentation via MHC class I (2.5)Cell killing (1.5)</td>
+      <td>Angiogenesis (8.6)IL-1 production (5.2)Muscle cell proliferation (2.2)Antigen processing and presentation via MHC class II (2.2)</td>
+      <td>↑: H2-K1, H2-D1↓: LYVE1, FOLR2, MRC1,CD163, H2-AB1, H2-EB1, H2-DMB1, CCR2</td>
+    </tr>
+    <tr>
+      <td>Cl5</td>
+      <td>Response to LPS (6.4)TLR signaling pathway (2.9)TNF production (2.0)</td>
+      <td>Viral entry into host cell (2.3)</td>
+      <td>↑: TREM2↓: LYVE1, FOLR2, MRC1,CD163</td>
+    </tr>
+    <tr>
+      <td>Cl6</td>
+      <td>Response to lipoprotein particle (3.3)ATP metabolic process (2.6)Long-chain fatty acid transport (2.0)</td>
+      <td>Regulation of transcription from RNA polymerase II promoter in response to stress (7.3)Cell chemotaxis (5.1)</td>
+      <td>↑: GPNMB, TREM2↓: LYVE1, FOLR2, MRC1,CD163, CCR2</td>
+    </tr>
+    <tr>
+      <td>Cl7</td>
+      <td>Translation (12.4)Antigen processing and presentation via MHC class II (5.2)Ribosome assembly (2.2)</td>
+      <td>Vasculature development (8.3)IL-1β production (3.9)Response to wounding (2.1)</td>
+      <td>↑: H2-AB1, H2-EB1, H2-DMB1↓: LYVE1, FOLR2, MRC1,CD163</td>
+    </tr>
+    <tr>
+      <td>Cl8</td>
+      <td>Positive regulation of cell death (4.2)Phagocytosis (2.2)Autocrine signaling (1.9)</td>
+      <td>Antigen processing and presentation via MHC class II (4.4)response to IFN-γ (3.3)</td>
+      <td>↓: LYVE1, FOLR2, MRC1,CD163, H2-AB1, H2-EB1, H2-DMB1, CCR2</td>
+    </tr>
+    <tr>
+      <td>Cl9</td>
+      <td>Cell cycle (20.3)DNA replication (4.5)DNA repair (3.2)</td>
+      <td>Myeloid cell differentiation (3.6)IL-1 production (1.4)</td>
+      <td>↓: LYVE1, FOLR2</td>
+    </tr>
+    <tr>
+      <td>Cl10</td>
+      <td>Vasculature development (19.9)Extracellular matrix organization (9.2)Response to wounding (2.2)</td>
+      <td></td>
+      <td>↑: LY6C1</td>
+    </tr>
+  </tbody>
+</table>
+
+_Parenthesis: negative log10 of adjusted p-value. ↑:elevated in the cluster. ↓:reduced in the cluster._
+
 Clusters Cl2-9 showed very low expression of M2 marker genes (Table 1) and instead displayed more diverse functional associations. Cl2 expressed mRNAs related to inflammation and to the functions of antigen processing and presentation (Figure 1E and Table 1). The mRNAs present in Cl3 were associated with cellular detoxification, and Cl4 was associated with phagocytosis and expressed elevated MHC class I (MHCI) mRNAs. Cl5 expressed mRNAs strongly associated with the inflammatory response. Cl6 was enriched in mRNAs encoding proteins involved in the response to lipoprotein particles, ATP metabolism, and lipid transport; this cluster also expressed Gpnmb, Spp1, Ctsd, Trem2, and Gdf15 mRNAs, encoding proteins involved in senescence and aging (Henjum et al., 2016; Pazolli et al., 2009; Suda et al., 2021; Suda et al., 2022; Tanaka et al., 2018; Williams et al., 2022), and Fabp5 and Fabp4 mRNAs, encoding proteins implicated in atherosclerosis (Babaev et al., 2011; Furuhashi et al., 2007; Makowski et al., 2001; Figure 1E). The mRNAs expressed in Cl7 were strongly associated with translation and antigen processing and presentation via MHC class II, while those expressed in Cl8 were associated with cell death and phagocytosis, although M2-type markers and MHCII genes were reduced. Of note, S100a8 and S100a9 mRNAs, the most robustly elevated mRNAs in Cl8, encode proinflammatory proteins (Figure 1E, Supplementary file 1). Cl9 expressed cell cycle-related mRNAs, with elevated Top2a, Mki67, and Cdk1 mRNAs (Supplementary file 1), likely representing a group of reported proliferating macrophages (Wang et al., 2020). The smallest cluster, Cl10 (0.5% of total CD11b+/F4/80+macrophages [Figure 1C]) was associated with a reparative function, and one-half of Cl10 cells expressed Ly6c1 mRNA (Supplementary file 1).
 
 Overall, unsupervised clustering revealed a wide functional heterogeneity of SKM macrophages. GO annotation identified clusters of macrophages expressing mRNAs that were particularly associated with reparative functions (Cl0, Cl1, and Cl10), the promotion of inflammation (Cl2 and Cl5), antigen processing and presentation via MHC class II (Cl2 and Cl7), cellular detoxification (Cl3), phagocytosis (Cl4 and Cl8), lipid homeostasis and cell senescence (Cl6), protein synthesis (Cl7), and proliferation (Cl9).
 
-## Identification of M2-like macrophages by membrane marker-based classification
+### Identification of M2-like macrophages by membrane marker-based classification
 
 Macrophage membrane markers, including MRC1, CD86, LYVE1, and MHCII, have been successfully used to functionally classify macrophage subgroups (Mantovani et al., 2002; Stein et al., 1992; Dick et al., 2022; Chakarov et al., 2019; Lim et al., 2018). To complement the unsupervised clustering and gain a more comprehensive view of the highly heterogeneous group of SKM macrophages, we further carried out supervised classification with membrane markers.
 
@@ -68,35 +170,91 @@ Initially, we attempted to subgroup SKM macrophages by traditional polarization 
 
 We therefore turned to other candidate membrane markers. Recently, LYVE1 and MHCII were successfully used to subgroup several tissue-resident macrophages (Dick et al., 2022; Chakarov et al., 2019; Lim et al., 2018). By unsupervised clustering, Lyve1 and MHCII mRNAs were differentially expressed in select clusters (Table 1); therefore, we classified SKM macrophages by LYVE1 expression levels first. LYVE1 status divided SKM macrophages into two large, similarly sized groups, LYVE1+ (46.6%) and LYVE1− (53.4%) (Figure 2A). LYVE1+ macrophages displayed an M2-like transcriptomic program, including mRNAs encoding proteins associated with functions in ‘vasculature development,’ ‘wound repair,’ and ‘endocytosis’ (Figure 2B; Buchacher et al., 2015; Stein et al., 1992). Interestingly, transcripts encoding proangiogenic proteins (Ang, Stab1, and Egr1 mRNAs) as well as transcripts encoding antiangiogenic proteins (Cfh and Hspb1 mRNAs) were upregulated in LYVE1+ macrophages. Transcripts encoding proteins implicated in wound healing (Igf1, Nrp1, and Gas6 mRNAs) were also elevated in LYVE1+ macrophages (Figure 2B); and mRNAs encoding endocytosis-related members of the CD209 family (including Cd209d and Cd209b mRNAs) as well as Cd36, Cd163, and Mrc1 mRNAs were also highly expressed in LYVE1+ macrophages. Other mRNAs, such as Timd4 and Fcna mRNAs, were almost exclusively expressed in the LYVE1+ macrophages and might be good candidate markers for this population (Figure 2—figure supplement 1B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig2-v2.jpg)
+
+**Figure 2.:** (A) Lyve1 mRNA expression pattern in skeletal muscle (SKM) macrophages. (B) mRNAs highly expressed in functional clusters of LYVE1+ macrophages. (C) mRNAs highly expressed in LYVE1− macrophages. (D) Validation of select mRNAs differentially abundant as identified in panels (B and C). LYVE1+ and LYVE1− macrophages were isolated by fluorescence-activated cell sorting (FACS) from three male mice, 3 months old (m.o.), and mRNAs elevated in LYVE1+ macrophages (top and bottom left), and mRNAs predominantly elevated in LYVE1− macrophages (bottom right) were quantified by RT-quantitative PCR (qPCR) analysis. Data were normalized to the levels of Gapdh mRNA, also measured by RT-qPCR analysis. Data represent the means and SD from two different sorts for each group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mrc1 (Cd206), Cd86, and Cd80 mRNAs expressed in skeletal muscle (SKM) macrophages. (B) mRNAs almost exclusively expressed in LYVE1+ macrophages. (C) Cluster of mRNAs encoding ribosomal proteins highly expressed in LYVE1− macrophages. Note, genes listed in this panel were expressed in similar number of macrophages in the LYVE1+ and LYVE1− subpopulations but were highly expressed in the LYVE1− subpopulation.
+
 In contrast, LYVE1− macrophages expressed higher levels of mRNAs encoding antigen-processing and antigen-presenting proteins (H2-Eb1, H2-Ab1, H2-DMb1, and Cd74 mRNAs), proteins related to the NF-kB signaling pathway and implicated in cell death (Il1b, Bcl2a1b, Bcl2a1d, Cd14, Traf1, and Malt1 mRNAs), and proteins with function in antioxidant responses (Gsr, Prdx5, Prdx6, Prdx1, and Hp mRNAs). In addition, many mRNAs encoding ribosomal proteins were highly expressed in this group (Figure 2—figure supplement 1C). The full list of mRNAs differentially abundant in LYVE1+ and LYVE1− macrophages is in Supplementary file 2.
 
 To validate the differences in gene expression programs, we separated each population (LYVE1+ and LYVE1− macrophages) by FACS. Reverse transcription (RT) followed by real-time quantitative (q)PCR analysis confirmed that Lyve1, Folr2, Timd4, CD209f, and Fcna mRNAs were almost exclusively expressed in LYVE1 + macrophages (Figure 2D, top, n=2 biological replicates). By contrast, Mrc1, Igf1, and Ang mRNAs were expressed in both LYVE1+ and LYVE1− macrophages, but at much higher levels in LYVE1+, while Il1b mRNA levels were significantly higher in the LYVE1− population (Figure 2D, bottom). The RT-qPCR results (Figure 2D) were consistent with the single-cell transcriptomic analysis (Figure 2B and C; Supplementary file 2), indicating that LYVE1 is an effective marker for subgrouping mouse SKM macrophages.
 
-## LYVE1 and MHCII further classify macrophages into four subgroups
+### LYVE1 and MHCII further classify macrophages into four subgroups
 
 By single-cell profiling analysis, the membrane marker MHCII (encoded by H2-Ab1 and H2-Eb1 mRNAs) divided SKM macrophages into two groups, MHCIIhi and MHCIIlo (Figure 3—figure supplement 1A). Considering the relative levels of LYVE1 and MHCII on the membrane allowed the classification of SKM macrophages into four subgroups: LYVE1+/MHCIIhi, LYVE1+/MHCIIlo, LYVE1−/MHCIIhi, and LYVE1−/MHCIIlo (Figure 3A). Among them, LYVE1+/MHCIIhi and LYVE1−/MHCIIhi were the largest subgroups, comprising 36.55 and 39.97% of all macrophages, respectively (Figure 3A), while LYVE1+/MHCIIlo and LYVE1−/MHCIIlo comprised 10.09 and 13.39%, respectively (biological replicates in Figure 3—figure supplement 1B, C). The overall distribution of cells among the biological replicates was comparable among the subgroups selected based on expression levels of Lyve1 and MhcII mRNAs in supervised analysis (Figure 3—figure supplement 1B, C). Notably, both LYVE1+ subgroups, LYVE1+/MHCIIlo and LYVE1+/MHCIIhi, largely overlapped with two reparative clusters, Cl0 and Cl1, from the unsupervised clustering (compare Figure 3A with Figure 1C). The LYVE1−/MHCIIhi subgroup comprised most macrophages from Cl2, Cl5, Cl6, Cl7, Cl9, and part of Cl3. LYVE1−/MHCIIlo contained Cl4 and part of Cl3 and Cl8. Overall, LYVE1− macrophages showed more heterogeneity than LYVE1+ macrophages (Figures 1C and 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig3-v2.jpg)
+
+**Figure 3.:** (A) Subclassification of mouse SKM macrophages based on LYVE1 and MHCII levels: LYVE1+/MHCIIlo, LYVE1+/MHCIIhi, LYVE1−/MHCIIhi, and LYVE1−/MHCIIlo. Uniform Manifold Approximation and Projection (UMAP) analysis of the distribution and size of each of four subgroups individually (left) and combined (right). (B) Heat map analysis of the single-cell RNA-sequencing (scRNA-seq) data depicting distinct gene expression patterns of the four subgroups. (C) Gene ontology (GO) annotation of the functions of each subgroup. Brown box, LYVE1+/MHCIIlo; green box, LYVE1+/MHCIIhi; blue box, LYVE1−/MHCIIhi; purple box, LYVE1−/MHCIIlo.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Expression patterns of two MHCII genes, H2-Eb1 and H2-Ab1 mRNAs. Right, four supervised macrophage subgroups. (B) Percentages of macrophages in each subgroup and each biological replicate in young (Y) and old (O) SKM. (C) Biological replicates of macrophage classification in young (Y) and old (O) SKM.
+
 Single-cell analysis (Figure 3B) revealed distinct gene expression patterns across the four supervised subgroups. Those mRNAs that were expressed >1.5-fold higher in a given subgroup relative to the other three subgroups (p<0.01) and were expressed in >25% of macrophages in that subgroup are shown in Supplementary file 3. Functional annotations of the genes showing higher expression in each subgroup revealed that LYVE1+/MHCIIlo macrophages (brown box, Figure 3C) expressed higher levels of mRNAs associated with vasculature development and wound healing, similar to the macrophages in Cl0 and Cl1 (Table 1) and M2 macrophages (Krzyszczyk et al., 2018). LYVE1−/MHCIIhi macrophages (blue box, Figure 3C) were associated with antigen processing and presentation, cytokine production, and responses to bacteria and were overall more M1-like (Mills, 2015). LYVE1+/MHCIIhi macrophages (green box, Figure 3C) were a more complex group; GO annotation suggested that they largely shared LYVE1+/MHCIIlo (M2-like) functions like vasculature development and wound healing, but also shared LYVE1−/MHCIIhi (M1-like) functions such as antigen processing and presentation and cytokine production. Finally, LYVE1−/MHCIIlo macrophages (purple box, Figure 3C) were associated with cytotoxicity and phagocytosis. Notably, among the four subgroups, LYVE1+/MHCIIhi and LYVE1−/MHCIIlo were not previously reported in SKM (Wang et al., 2020), and LYVE1−/MHCIIlo macrophages were not reported in any other tissue so far (Chakarov et al., 2019; Lim et al., 2018). Thus, in addition to the M2-like (LYVE1+/MHCIIlo) and M1-like (LYVE1−/MHCIIhi) subgroups, supervised classification revealed two new subgroups, LYVE1+/MHCIIhi and LYVE1−/MHCIIlo, in resting mouse SKM. The supervised classification thus complemented the unsupervised clustering, offering a more comprehensive understanding of the heterogeneity of SKM macrophages.
 
-## Confirmation of four SKM macrophage subgroups by flow cytometry
+### Confirmation of four SKM macrophage subgroups by flow cytometry
 
 We further analyzed if the macrophage subgroups identified from scRNA-seq could be validated by cell-surface protein markers. As anticipated, flow cytometric analysis using antibodies that recognized LYVE1 and MHCII divided CD45+/CD11b+/F4/80+SKM macrophages from 3 m.o. male mice into four subgroups, LYVE1+/MHCIIlo, LYVE1+/MHCIIhi, LYVE1−/MHCIIhi, and LYVE1−/MHCIIlo (Figure 4A, n=4). Notably, the LYVE1+/MHCIIlo, LYVE1−/MHCIIhi, and LYVE1−/MHCIIlo subgroups showed clear clusters of cells, but LYVE1+/MHCIIhi macrophages spread across LYVE1+/MHCIIlo and LYVE1−/MHCIIhi (Figure 4A, bottom). The sizes of each subgroup identified by flow cytometry and those identified by single-cell transcriptomics were comparable (Figures 3A and 4A). While the present study focused on SKM macrophages from male mice, we assessed the overall influence of sex on macrophage polarization in SKM by performing flow cytometric analysis with SKM macrophages from 3 m.o. female mice. As shown, female mice also showed four SKM macrophage subgroups, comparable to male mice (compare Figure 4A with Figure 4—figure supplement 1A; n=4). However, when compared with male SKM macrophages, female SKM LYVE1+/MHCIIhi macrophages were ~17% lower, and LYVE1−/MHCIIlo macrophages were ~42% higher (Figure 4—figure supplement 1B). It was recently reported that mouse gender affects macrophage polarization, function, and morphology (Han et al., 2021; Jaillon et al., 2019). The biological significance of the sex-related differences in specific macrophage subgroups in SKM warrants further study.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig4-v2.jpg)
+
+**Figure 4.:** (A) Flow cytometric analysis of the four subgroups in skeletal muscle (SKM). CD45+/CD11b+/F4/80+macrophages (top three panels show gating) were further classified by LYVE1 and MHCII (bottom right). LYVE1+/MHCIIlo, LYVE1−/MHCIIhi, and LYVE1−/MHCIIlo subgroups formed clear cell clusters, while LYVE1+/MHCIIhi spanned LYVE1+/MHCIIlo and LYVE1−/MHCIIhi. Note: the sizes of each subgroup by flow cytometric analysis (bottom left) were similar to those seen with single-cell RNA-seq analysis. Gating was based on FMO (fluorescence minus one) controls for each experiment. (B) Immunofluorescence analysis of the presence of LYVE1+/MHCIIhi macrophages in mouse SKM. Top, LYVE1+, MHCII+, and LYVE1+/MHCII+ double-positive cells in endomysium and perimysium areas of mouse SKM. Bottom, colocalization of LYVE1 (left) and MHCII (middle) with CD11b, a macrophage marker; secondary antibodies only (right). (C) LYVE1+ macrophages LYVE1+/MHCIIlo and LYVE1+/MHCIIhi, colocalizing with CD31+, depicting blood vessels (top). LYVE1+ and LYVE1− macrophages colocalizing with the nerve fiber marker TUBB3+ (bottom).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Flow cytometric analysis of the four macrophage subgroups in females and males. (B) Quantification of the numbers of each SKM macrophage group in female and male mice.
+
 To validate these macrophage subgroups in intact mouse SKM, we performed immunofluorescence detection analysis (Figure 4B). As anticipated, both LYVE1+ cells (red) and MHCII+ cells (green) were found in intramuscular connective tissues, namely the endomysium and perimysium regions, as visualized with discontinuous lines demarking muscle cell membranes (Figure 4B). Importantly, many LYVE1+ cells were also MHCII+ (LYVE1+/MHCIIhi) in SKM (Figure 4B, yellow arrows, top), consistent with the flow cytometric and the single-cell transcriptomic analyses. Tyramide signal amplification (TSA) staining of CD11b confirmed that LYVE1+ and MHCII + cells were CD11b+ (Figure 4B, bottom). Thus, immunofluorescence analysis indicated that LYVE1+, MHCII+, and LYVE1+/MHCIIhi macrophages were constitutively present in mouse SKM. Further analysis revealed that both LYVE1+/MHCIIlo (white arrows) and LYVE1+/MHCIIhi (yellow arrows), but not LYVE1−/MHCIIhi macrophages, localized near CD31+ blood vessels (Figure 4C, top). However, both LYVE1+ (yellow and white arrows) and LYVE1− (red arrows) macrophages localized near nerve fibers, the latter positive for TUBB3 (Figure 4C).
 
-## Macrophage subgroups show distinct phagocytic capacities
+### Macrophage subgroups show distinct phagocytic capacities
 
 To gain insight into the functional differences among the four subgroups, we assessed their phagocytic capacity, a fundamental function of macrophages, using a flow cytometry-based method that measures the uptake of labeled particles (pHrodo Red Escherichia coli Bioparticle assay, Materials and methods). As anticipated, all macrophage subgroups were strongly phagocytic (Figure 5A), with 97.2% of LYVE1+/MHCIIlo, 98.5% of LYVE1+/MHCIIhi, 86.4% of LYVE1−/MHCIIhi, and 49.6% of LYVE1−/MHCIIlo macrophages actively phagocytizing E. coli particles at 37°C; in control incubations, <17.7% macrophages were active at 4°C (Figure 5A and B, n=3). Significantly, fewer macrophages in the LYVE1−/MHCIIlo subgroup were actively phagocytic compared with the other three subgroups (Figure 5B, p<0.01), but those macrophages that were active showed greater phagocytic capacity than the other three subgroups.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig5-v2.jpg)
+
+**Figure 5.:** (A) Phagocytic activity was measured for mouse skeletal muscle (SKM) macrophages at 4°C (control, low phagocytosis) and 37°C (active phagocytosis, right boxes). Phagocytic capacity was divided into groups that were negative (Neg; intensity <103), low (Lo; 103–104), medium (Med; 104–105), and high (Hi; >105), depending on signal intensities. Gating was established using fluorescence minus one (FMO) controls for each experiment. (B) Quantification of the macrophages showing active phagocytosis (Lo + Med + Hi) in the four subgroups. (C) Signal intensities of macrophages in each capacity group (Lo, Med, and Hi). (D) Quantification of number of active phagocytic macrophages in each subgroup of the three intensity groups. Data are representative of three independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Efferocytosis assays to identify macrophages phagocytizing apoptotic cells. (B) Quantification of the efferocytosis activity of each macrophage subgroup.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Unsupervised clustering revealed six subclusters (SubCl) in LYVE1−/MHCIIlo subgroup. (B) Gene ontology (GO) terms and associated genes in SubCl0.
 
 As macrophages showed a range of phagocytic capacities, we divided them into four groups by their geometric mean fluorescence intensity (gMFI): negative (Neg; intensity <103), low (Lo; 103–104), medium (Med; 104–105), and high (Hi;>105; Figure 5A). The phagocytic capacities of the four macrophage subgroups were similar (Figure 5C, n=3), and LYVE1+/MHCIIlo, LYVE1+/MHCIIhi, and LYVE1−/MHCIIhi subgroups showed similar numbers of active macrophages in each of the low-, medium-, and high-capacity groups (Figure 5D). However, LYVE1−/MHCIIlo macrophages showed significantly fewer active macrophages in the Lo group and strikingly more in the Hi capacity group compared to the other three subgroups (Figure 5D). This finding suggested that the LYVE1−/MHCIIlo group comprised two macrophage subpopulations with different phagocytic capacity: a silent group and a highly phagocytic group, each with roughly the same number of macrophages (Figure 5A, top). We performed efferocytosis assays to further assess the capacity of the macrophage subgroups in phagocytizing apoptotic cells. All four macrophage subgroups showed lower efferocytosis than phagocytosis, but LYVE1−/MHCIIlo macrophages again showed relatively greater capacity (Figure 5—figure supplement 1A, B).
 
 These observations prompted us to further subclassify the LYVE1−/MHCIIlo subgroup by unsupervised clustering, which yielded six subclusters (SubCl; Figure 5—figure supplement 2A). GO annotation showed clustering of phagocytosis-related terms only in SubCl0 (Figure 5—figure supplement 2B). GO annotation suggests that SubCl0 may represent macrophages with higher phagocytic capacity in the LYVE1−/MHCIIlo subgroup (Figure 5A, B and D), although further studies are required for clarification.
 
-## Elevated proinflammatory and senescence-related mRNAs in old SKM macrophages
+### Elevated proinflammatory and senescence-related mRNAs in old SKM macrophages
 
 To investigate if there are aging-related changes in SKM macrophages, we further analyzed the genes differentially expressed in macrophages from young and old mouse SKM. The number of live macrophages isolated from SKM was comparable between young and old mice, both in males and females (Figure 6—figure supplement 1A-D, n=5), and the number of differentially abundant mRNAs was rather small, likely reflecting the lower sensitivity of scRNA-seq analysis. Therefore, we used slightly less strict criteria to find differentially expressed mRNAs: those expressed in >10% of total macrophages in young or old, p<0.01, and fold change >1.3. By these criteria, 41 mRNAs were more abundant, and 47 mRNAs were less abundant in macrophages from old SKM (Figure 6A). GO annotation suggested that mRNAs encoding proteins involved in chemotaxis of granulocytes (e.g. Cxcl1 and Cxcl2 mRNAs; Girbl et al., 2018) and monocytes (e.g. Ccl2 and Ccl7 mRNAs; Deshmane et al., 2009), and the cellular response to IFN-γ (e.g. Tnf, Cxcl10, and Zfp36 mRNAs) were less abundant in old SKM macrophages (Figure 6B and C). Some mRNAs encoding M2-like markers (e.g. Lyve1, Folr2, and Mrc1 mRNAs) were also significantly lower in old SKM macrophages (Figure 6A and C). By contrast, mRNAs encoding proteins related to cellular detoxification (e.g. Gsr, Hp, Prdx1, Prdx5, and Prdx6 mRNAs), inflammation (e.g. S100a8, S100a9, Fabp4, and Il1b mRNAs), senescence (Gpnmb and Spp1 mRNAs), and long-chain fatty acid transporters (Fabp4 and Fabp5 mRNAs; Wang et al., 2018; Babaev et al., 2011; Furuhashi et al., 2007; Pazolli et al., 2009; Suda et al., 2021; Suda et al., 2022) were elevated in old SKM macrophages (Figure 6B and C; full list in Supplementary file 4).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig6-v2.jpg)
+
+**Figure 6.:** (A) In single-cell RNA-sequencing (scRNA-seq) analysis, a total of 88 mRNAs were differentially expressed between old and young SKM. Arrows indicate featured mRNAs upregulated (red) or downregulated (blue) in old SKM macrophages. (B) Gene ontology (GO) annotation depicting the functional categories that were upregulated and downregulated in the old SKM macrophages relative to young SKM macrophages. (C) Fold changes in the abundance of select mRNAs (O/Y), as determined from the scRNA-seq analysis.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Number of corresponding cells from skeletal muscle (SKM) tissues. Male mice tend to have more CD45+, CD45+/CD11b+, and CD45+/CD11b+/F4/80+ cells compared to females (not statistically significant). (B) Females show very similar numbers between young and old. (C) % of corresponding cell populations in CD45+ cells in young and old males. (D) % of corresponding cell populations in CD45+ cells in young and old females.
+
 We next analyzed the relative abundance of macrophage subgroups as a function of age. scRNA-seq indicated that LYVE1+ macrophages decreased, while LYVE1− macrophages increased in old SKM (Figure 7A). Flow cytometric analysis confirmed this trend, as LYVE1+ macrophages decreased and LYVE1− macrophages increased in old SKM (Figure 7B —supporting Figure 1A and B, n=4). Thus, both scRNA-seq and flow cytometric analysis confirmed the changes in numbers of LYVE1+ and LYVE1− macrophages in old SKM, consistent with the changes in Lyve1, Folr2, and Mrc1 mRNAs during aging (Figures 6A, C, 7A and B). All four macrophage subgroups displayed differentially expressed mRNAs. The top 15 elevated and top 10 reduced mRNAs in each subgroup were shown (Figure 7—figure supplement 1C). S100a9 mRNA, encoding a proinflammatory marker, was upregulated in all four subgroups, the senescence-related Gpnmb and Spp1 mRNAs and the fatty acid transporter Fabp5 mRNA were elevated in two MHCIIhi subgroups, LYVE1+/MHCIIhi and LYVE1−/MHCIIhi, while Apoe and Fabp4 mRNAs were only abundant in LYVE1−/MHCIIhi macrophages, and Il1b mRNA was elevated only in LYVE1−/MHCIIlo macrophages in old SKM (Figure 7—figure supplement 1C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig7-v2.jpg)
+
+**Figure 7.:** (A) Single-cell RNA-sequencing (scRNA-seq) analysis showing altered numbers of LYVE1+ and LYVE1− macrophages in old SKM. (B) Flow cytometric analysis showing comparable changes with scRNA-seq in old SKM. (C) Changes in macrophage numbers in unsupervised Cl0, 3, 6, and 8. (D) Top, UMAP plots showing Gpnmb, Spp1 and Fabp5 mRNAs in old (O) and young (Y) SKM (arrow, Cl6); violin plot representing Gpnmb mRNA (number of macrophages and expression levels) in the different clusters. Bottom, S100a8 and S100a9 mRNAs in O and Y SKM (arrow, Cl8).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Flow cytometric analysis of macrophages from old SKM showing four subgroups, as in the young (Figure 4A). Gating was based on fluorescence minus one (FMO) controls for each experiment. (B) Top, % of LYVE1+ and LYVE1− macrophages in old and young SKM. Bottom, % of each of the four macrophage groups in old and young SKM. (C) Select mRNAs differentially expressed in young and old SKM macrophage subgroups.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/77974/elife-77974-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Biological replicates of expression patterns of select Cl6 genes. (B) Biological replicates of expression patterns of select Cl8 genes.
 
 In unsupervised clustering, Cl0 macrophages, mostly Lyve1+/Folr2+/Mrc1+, were less abundant in old SKM, while macrophages in Cl3, 6, and 8 increased in old SKM (Figure 7C). Gpnmb, Spp1, and Fabp5 mRNAs were largely concentrated in Cl6, a cluster that was strikingly enriched in old SKM (Figure 7D), and S100a9 and S100a8 mRNAs were elevated mainly in Cl8 in old SKM (Figure 7D). Biological replicates of the expression patterns of these genes in young and old SKM (Cl6 and Cl8) are shown (Figure 7—figure supplement 2A,B, respectively).
 
@@ -122,23 +280,23 @@ In closing, aging impacts all tissues and organs. Intrinsic and extrinsic factor
 
 ## Materials and methods
 
-## Collection of SKMs from young and aged C57BL/6JN mice
+### Collection of SKMs from young and aged C57BL/6JN mice
 
 All mouse work was done under an Animal Study Proposal (ASP #476-LGG-2023) that was reviewed and approved by the Animal Care and Use Committee of the National Institute on Aging (NIA), National Institutes of Health (NIH). Young (Y, 3 m.o.) and aged (O, 22–24 m.o.) male and female inbred C57BL/6JN mice were purchased from the NIA aged rodent colony (https://ros.nia.nih.gov/). The mice were sacrificed, and all hind limb muscles, including quadriceps, hamstring, gastrocnemius, soleus, and tibialis anterior muscles, were harvested. Collected samples were directly used for mononuclear cell isolation or frozen in isopentane chilled by liquid nitrogen and stored at –80°C for immunohistology.
 
-## Mononuclear cell isolation from SKM
+### Mononuclear cell isolation from SKM
 
 Tendons, blood vessels, and fat tissues were removed under a dissection microscope. Muscle tissues were finely chopped and minced using dissection scissors to form a slurry. For scRNA-seq analysis, we isolated mononuclear cells with Miltenyi’s SKM dissociation kit (#130-098-305) with GentleMACS Octo Dissociator (#130-096-427), as described previously (Krasniewski et al., 2022). For further flow cytometric analysis, we also used an established method (Liu et al., 2015) with slight modifications. Briefly, the muscle slurry was digested with 1000 U/mL Collagenase type II (Gibco, Cat# 17101015) in 10 mL of complete Ham’s F-10 medium (Lonza, Cat# BE02-014F) for 70 min with 70 rpm agitation at 37°C. Partially digested muscles were washed in complete Ham’s F-10 medium and centrifuged at 400 rcf speed for 5 min, and cell pellet with 8 mL of the remaining suspension (pellet 1) was collected; 42 mL of the supernatant was collected in two tubes (21 mL each) that were filled up to 50 mL with Ham’s F-10 media and centrifuged again at 500 rcf for 8 min, and the pellet (pellet 2) was collected. Pellet 1 was subjected to a second round of digestion in 1 mL of 1000 U/mL Collagenase type II and 1 mL of 11 U/mL Dispase II (Thermofisher, Cat# 17105041) along with the 8 mL of the remaining cell suspension, for 20 min with 70 rpm agitation, at 37°C. Digested tissues were aspirated and ejected slowly through 10-mL syringe with 20-gauge needle followed by washing in complete Ham’s F-10 media at 400 rcf for 5 min. The supernatant was collected and centrifuged again at 500 rcf for 8 min, and the pellet obtained (pellet 3) was pooled with the pellet 2 above. The suspension of pellets 2+3 was filtered through 40-μm cell strainer (Fisher scientific, Cat # 22363547), followed by final wash in complete Ham’s F-10 medium. Cell pellets were resuspended in 1 mL complete Ham’s F-10 medium. Cell counting was performed using trypan blue (Invitrogen, Cat# T10282) at a 1:1 ratio in Countess cell counting chamber slides (Invitrogen, Cat# C10228) using Countess II FL Automated Cell Counter (Invitrogen).
 
-## Flow cytometric analysis and FACS
+### Flow cytometric analysis and FACS
 
 Flow cytometric analysis and CD11b+ cell sorting by FACS for scRNA-seq were described in detail in our previous report (Krasniewski et al., 2022). For further flow cytometric validation studies and RT-qPCR analysis, mononuclear cell suspensions were incubated with BD Horizon Fixable Viability Stain 780 (FVS780, BD Biosciences, Cat# 565388, dilution: 1:4000) in PBS (Ca+ and Mg+ free, Thermofisher) for 30 min at 4°C in the dark. Fc receptors were blocked using TruStain FcX (anti-mouse CD16/32) Antibody (Biolegend, Cat# 101320, Clone: 93, dilution 1:1000) for 5 min at 4°C in FACS staining buffer (1% BSA and 10 mM EDTA in Miltenyi’s Auto MACS Rinsing Solution). For macrophage sorting, mononuclear cells were further stained in FACS staining buffer for 40 min at 4°C in the dark, with fluorochrome conjugated antibodies specific to mouse as indicated: BUV395 Rat anti-mouse CD45 (BD Biosciences, Cat# 564279, Clone: 30-F11, dilution: 1:100), PE anti-mouse/human CD11b Antibody (Biolegend, Cat# 101208, Clone: M1/70, dilution: 1:100), PE/Cyanine7 anti-mouse F4/80 Antibody (Biolegend, Cat# 123114, Clone: BM8, dilution: 1:40), Brilliant Violet 711 anti-mouse I-A/I-E Antibody (Biolegend, Cat# 107643, Clone: M5/114.15.2, dilution: 1:40), and APC Rat Anti-Mouse Lyve1 Antibody (Thermofisher, Cat# 50-0443-82, Clone: ALY7, dilution: 1:20; see Supplementary file 5 for a full list of antibodies). Stained cells were fixed using BD Cytofix Fixation buffer (BD Biosciences, Cat# 554655) for 20 min on ice in the dark for analysis (but not for sorting). Compensation matrices were created using single color controls prepared using COMPtrol Kit, Goat anti-mouse Ig (H&L) coated particles, with negative and high in separate vials (Spherotech, Cat# CMIgP-30–2 K), combining one drop from each vial in equal ratio. Gating was based on FMO (fluorescence minus one) controls for each experiment. The cells were acquired on a BD FACSAria Fusion (BD Biosciences) instrument and analyzed with Flowjo software (Tree Star, Inc).
 
-## Macrophage scRNA-seq by 10× Genomics
+### Macrophage scRNA-seq by 10× Genomics
 
 Macrophages isolated from three 3 m.o. and three 23 m.o. C57BL/6JN male mice (biological triplicates) were stained with CD11b antibody and isolated by FACS analysis. Given that the lengthy collection protocol made it impossible to process all the mice on the same day, we isolated cells in three consecutive weeks: from two young mice (Y1 and Y2) the first week, from two old (O1 and O2) the second week, and from one young mouse (Y3) and one old mouse (O3) the last week. Isolated SKM macrophages were immediately subjected to single-cell library construction without culture to minimize differences related to batch effects. Single-cell libraries were prepared with 10× Genomics Chromium Single Cell 3ʹ Reagent Kits v3 (10× Genomics Cat# PN-1000092) with Chip B (10× Genomics, Cat# PN-1000073) following the manufacturer’s protocol. Briefly, 5000–10,000 single macrophages were used for GEM (Gel Bead-in-Emulsion) generation. The cDNAs were then synthesized, and their qualities were assessed on the Agilent Bioanalyzer with High-Sensitivity DNA kit (Agilent Cat# 5067–4626). cDNAs were then used for library preparation and the quality of the final libraries assessed on the Agilent Bioanalyzer with DNA 1000 kit (Agilent, Cat# 5067–1504). The libraries were sequenced with an Illumina NovaSeq 6000 sequencer with a mean depth of ~80,000 (70,876–156,962) RNA-seq reads per cell, corresponding to ~2000 (2027–2256) genes per cell. The numbers of cells from each mouse successfully sequenced and subjected to statistical analysis are as follows: Y1, 3730; Y2, 3325; Y3, 2033 and O1, 3391; O2, 5338; O3, 4097. RNA-seq data were deposited in GEO with identifier GSE195507.
 
-## scRNA-seq data analysis
+### scRNA-seq data analysis
 
 scRNA-seq samples were demultiplexed and mapped to the mm10 mouse reference genome using the Cell Ranger software version 3.0.2 (10× Genomics). Further analysis of the matrices of read counts obtained was carried out in R (version 4.1.3) with the Seurat package, version 4.1.0 (Hao et al., 2021), using default parameters in all functions, unless specified otherwise. To exclude empty droplets, poor-quality cells, and potential doublets from downstream analysis, quality control filtering was applied for each sample, which removed cells containing more than 7.5% mitochondrial genes, cells expressing <300 or >7000 transcripts, and below 500 or above 60,000 counts. Genes that were detected in less than 10 cells were eliminated from the analysis. Cells expressing Itgam (Cd11b) and Adgre1 (F4/80) mRNAs, two key macrophage markers, were subjected to further analyses.
 
@@ -150,20 +308,20 @@ Differentially expressed marker genes for each cluster were identified with Find
 
 Functional annotation of the differentially expressed genes was performed using the web-based tool g:Profiler (Raudvere et al., 2019) (https://biit.cs.ut.ee/gprofiler/gost). The analysis was done with differentially expressed genes in corresponding subpopulations with ‘g:SCS threshold’ as a ‘significance threshold’ and 0.05 as the ‘user threshold’, and functional terms for ‘GO biological process’ were collected. In addition, we used 14,542 genes detected from young and old macrophages in our scRNA-seq analysis as the background gene set for GO annotation.
 
-## RT-qPCR analysis
+### RT-qPCR analysis
 
 For RT-qPCR analysis, CD11b+/F4/80+/LYVE1+ and CD11b+/F4/80+/LYVE1− macrophages were isolated by FACS. Sorted LYVE1+ and LYVE1− macrophages were lysed with lysis buffer (RNeasy Mini Kit, Qiagen, Cat# 74104) and stored at –80°C. RNA was then isolated with a QIAcube (Qiagen) instrument following the manufacturer’s protocol, using a column for RNase-Free DNase I (Qiagen, Cat# 79254) digestion. The quality of isolated RNAs was assessed on the Agilent TapeStation with RNA Screen Tape (Agilent, Cat# 5067–5576). RT was performed by synthesizing cDNAs from the LYVE1+ and LYVE1− mRNAs with the Superscript III First-Strand Synthesis System (Invitrogen, Cat# 18080051), and qPCR amplification was carried out using ready-to-use Taqman probe/primer sets (Applied Biosystems) to detect expression levels for Lyve1 (Mm00475056_m1), Folr2 (Mm00433357_m1), Cd209f (Mm00471855_m1), Fcna (Mm00484287_m1), Timd4 (Mm00724713_m1), Mrc1 (Mm01329362_m1), Igf1 (Mm00439560_m1), Ang (Mm01316661_m1), Il1b (Mm00434228_m1), and Gapdh (Mm99999915_g1) mRNAs. Two biological replicates (n=2 per replicate) were used for the LYVE1+ and LYVE1− macrophages and assayed in triplicate. The relative RNA levels were calculated after normalizing to Gapdh mRNA using the 2−ΔΔCt method, and the data were analyzed for significance using Student’s t-test.
 
-## Phagocytosis assays
+### Phagocytosis assays
 
 Macrophages were isolated from the hind limb muscles of C57BL/6JN male mice as described above. Mononuclear cells from three animals were pooled for each set of experiments, and cells were aliquoted for necessary treatment conditions and technical replicates. Three biological replicates (total nine mice) were analyzed. The phagocytic activity of macrophages was measured by red fluorescence from pHrodo E. coli bioparticles (Invitrogen, Cat# P35361). Briefly, 6×106 macrophages were resuspended in 200 μL of Ham’s F-10 complete media (Lonza, 12–618 F) containing 10% horse serum (Gibco, 16050114) for each sample. Aliquots of 20 μL of pHrodo E. coli bioparticles, resuspended in live-cell imaging buffer (1 mg/mL, Invitrogen, Cat# A14291DJ) and sonicated for 2 min × 3, with 2 min intervals on ice between each sonication, were added to each cell tube, including appropriate FMO control tubes. Cell suspensions were gently and thoroughly mixed to ensure a homogenous distribution of the E. coli bioparticles. One set of samples was immediately transferred to a CO2 incubator for 2 hr at 37°C, and another set (negative control) was incubated on ice for 2 hr. After incubation, cells were washed with live cell imaging solution at 400 rcf for 5 min, followed by another wash with PBS. All steps were performed in the dark.
 
 After the phagocytosis assay, cells were stained with viability dye followed by primary antibody staining as described above. Fluorochrome-conjugated antibodies used for staining the cells are as follows: BUV395 Rat anti-mouse CD45, PE-Cyanine7 anti-mouse/human CD11b Antibody, BUV737 Rat anti-mouse F4/80, Brilliant Violet 711 anti-mouse I-A/I-E Antibody, APC Rat anti-mouse LYVE1 Antibody. The cells were acquired on a BD FACSAria Fusion instrument on the same day and analyzed with Flowjo. For all the samples, including controls, CD11b+/F4/80+macrophages were further categorized as high (Hi, >105), medium (Med, 104–105), low (Lo, 103–104), and negative (Neg, <103) intensity groups based on their ability to engulf labeled bacteria. The relative phagocytosis levels for each group were calculated using gMFI. For statistical analysis, we performed a Shapiro-Wilk test (Mishra et al., 2019) first to assess if our data were normally distributed (GraphPad Prism 8). We found that all data shown in Figure 5B and D, and Figure 4—figure supplement 1B, and Figure 5—figure supplement 1B were normally distributed (not shown). Therefore, we performed parametric tests, one-way ANOVA (Dunnett’s multiple comparisons test) for Figure 5D, and two-way ANOVA (Sidak’s multiple comparisons test) for Figure 5B and Figure 4—figure supplement 1B, and Figure 5—figure supplement 1B using GraphPad Prism 8.
 
-## Efferocytosis assay
+### Efferocytosis assay
 
 To study the engulfment of apoptotic cells by SKM macrophages, hind limb muscles from three male mice were combined as one biological replicate, followed by digestion to generate a mononuclear cell suspension as mentioned above, and pooled for study of phagocytic cells. To generate apoptotic cells, Jurkat T cells, cultured in RPMI 1640 (Thermo Fisher, Cat# 11875–093) with 10% heat-inactivated FBS (Thermo Fisher, Cat# 10438025) at 37°C, 5% CO2 10 mL were collected from a cell culture flask, washed with PBS, pelleted gently, and resuspended in 1 mL PBS. For labeling Jurkat cells, CFSE (CellTrace CFSE Cell Proliferation Kit, Thermo Fisher, Cat# C34554) was added to cells at final 5 µM concentration and incubated at 37°C for 20 min; 10 mL of RPMI 1640 (10% heat-inactivated FBS) was then added, mixed by vortexing, and further incubated at 37°C for 5 min. After washing, cells were resuspended in 1 mL serum-free RPMI 1640 medium. Apoptosis was induced by treatment with 1 µM staurosporine (Millipore Sigma, Cat# 19–123) for 5 hr at 37°C, 5% CO2, followed by washes in RPMI 1640 (10% heat-inactivated FBS) and resuspension in 1 mL RPMI 1640 (10% heat-inactivated FBS) for use in efferocytosis assays. Mononuclear cells from SKM and apoptotic Jurkat T cells were counted and combined at a 1:1 ratio in 2 mL RPMI 1640 (10% heat-inactivated FBS) and incubated for 18 hr at 37°C, 5% CO2. Mononuclear cells from SKM without Jurkat cells were used as controls. After incubation for 18 hr, cells were assayed by flow cytometry, as explained above.
 
-## Immunofluorescent staining of macrophages in mouse SKM
+### Immunofluorescent staining of macrophages in mouse SKM
 
 Frozen sections from rectus femoris muscle from 3 m.o. C57BL/6 J mice were cut, fixed in cold acetone, and subjected to regular double immunofluorescent staining or double TSA staining (Tyramide SuperBoost kit, Thermo Fisher, Cat# B40932) as performed previously (Cui et al., 2019). Primary antibodies recognizing LYVE1 (Abcam, Cat# ab14917, 1:200 dilution), MHCII (Invitrogen, Cat# 14-5321-82, 1:100), CD31 (Millipore, Cat# MAB1398Z, 1:100), and TUBB3 (Biolegend, Cat# 801201, 1:200) worked well for regular immunostaining. Secondary antibodies were used for LYVE1 (Invitrogen, Cat# A-11012, 1:1000 dilution) and MHCII staining (Invitrogen, Cat# A-11006, 1:1000 dilution). Detection of CD11b (Santa Cruz, Cat# sc-1186, 1:50 dilution) required TSA staining. To identify LYVE1+/MHCIIhi macrophages in SKM, we carried out three sets of double staining: LYVE1 with MHCII by regular immunofluorescence staining, CD11b with LYVE1, and CD11b with MHCII by TSA staining. Micrographs were taken on a DeltaVision microscope using a 20× lens.

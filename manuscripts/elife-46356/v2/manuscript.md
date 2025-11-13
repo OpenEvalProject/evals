@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.46356.001 Long-term potentiation (LTP), an increase in synaptic efficacy following high-frequency stimulation, is widely considered a mechanism of learning. LTP involves local remodeling of dendritic spines and synapses. Smooth endoplasmic reticulum (SER) and endosomal compartments could provide local stores of membrane and proteins, bypassing the distant Golgi apparatus. To test this hypothesis, effects of LTP were compared to control stimulation in rat hippocampal area CA1 at postnatal day 15 (P15). By two hours, small spines lacking SER increased after LTP, whereas large spines did not change in frequency, size, or SER content. Total SER volume decreased after LTP consistent with transfer of membrane to the added spines. Shaft SER remained more abundant in spiny than aspiny dendritic regions, apparently supporting the added spines. Recycling endosomes were elevated specifically in small spines after LTP. These findings suggest local secretory trafficking contributes to LTP-induced synaptogenesis and primes the new spines for future plasticity.
+Long-term potentiation (LTP), an increase in synaptic efficacy following high-frequency stimulation, is widely considered a mechanism of learning. LTP involves local remodeling of dendritic spines and synapses. Smooth endoplasmic reticulum (SER) and endosomal compartments could provide local stores of membrane and proteins, bypassing the distant Golgi apparatus. To test this hypothesis, effects of LTP were compared to control stimulation in rat hippocampal area CA1 at postnatal day 15 (P15). By two hours, small spines lacking SER increased after LTP, whereas large spines did not change in frequency, size, or SER content. Total SER volume decreased after LTP consistent with transfer of membrane to the added spines. Shaft SER remained more abundant in spiny than aspiny dendritic regions, apparently supporting the added spines. Recycling endosomes were elevated specifically in small spines after LTP. These findings suggest local secretory trafficking contributes to LTP-induced synaptogenesis and primes the new spines for future plasticity.
 
 ## Introduction
 
@@ -34,29 +34,65 @@ An acute within-slice experimental protocol (Watson et al., 2016) was used to co
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig1-v2.jpg)
 
-**Figure 1.:** (A) Illustration of an acute slice from a P15 rat hippocampus with a recording electrode (rec.) in the middle of CA1 stratum radiatum between two bipolar stimulating electrodes (S1 and S2). S1 and S2 are separated by 600-800 µm. The two experiments were counterbalanced for which of the two electrodes delivered TBS or control stimulation. Tissue samples collected for 3DEM were located ~120 µm beneath and to the side of the stimulating electrodes. D.G., dentate gyrus; Sub., subiculum. (B) Representative waveforms from control (CON, blue) and TBS (LTP, red) sites. Each waveform is the average of the final 10 responses to each stimulating electrode obtained for the last 20 min before delivery of TBS at time 0 (light color) and for 20 minutes before the end of the experiment at 120 min after TBS (dark color). The stimulus intensity was set at population spike threshold to activate a large fraction of the axons in the field of each stimulating electrode. The positive deflection in the post-TBS waveform at ~3-4 ms reflects synchronous firing of pyramidal cells with LTP. (C) Changes in the slope of the field excitatory postsynaptic potential (fEPSP), expressed as a percentage of the average baseline response to test-pulses, were recorded for 20 min before delivery of TBS at time 0 (red) or control stimulation (blue). Responses were recorded for n=2 slices for 120 min after the first TBS train, then fixed and processed for 3DEM as described in Methods. Error bars are SEM. Adapted from Watson et al. (2016) where it was originally published under a CC BY-NC-ND 4.0 license https://creativecommons.org/licenses/by-nc-nd/4.0/).10.7554/eLife.46356.003Figure 1—source data 1.
+**Figure 1.:** (A) Illustration of an acute slice from a P15 rat hippocampus with a recording electrode (rec.) in the middle of CA1 stratum radiatum between two bipolar stimulating electrodes (S1 and S2). S1 and S2 are separated by 600-800 µm. The two experiments were counterbalanced for which of the two electrodes delivered TBS or control stimulation. Tissue samples collected for 3DEM were located ~120 µm beneath and to the side of the stimulating electrodes. D.G., dentate gyrus; Sub., subiculum. (B) Representative waveforms from control (CON, blue) and TBS (LTP, red) sites. Each waveform is the average of the final 10 responses to each stimulating electrode obtained for the last 20 min before delivery of TBS at time 0 (light color) and for 20 minutes before the end of the experiment at 120 min after TBS (dark color). The stimulus intensity was set at population spike threshold to activate a large fraction of the axons in the field of each stimulating electrode. The positive deflection in the post-TBS waveform at ~3-4 ms reflects synchronous firing of pyramidal cells with LTP. (C) Changes in the slope of the field excitatory postsynaptic potential (fEPSP), expressed as a percentage of the average baseline response to test-pulses, were recorded for 20 min before delivery of TBS at time 0 (red) or control stimulation (blue). Responses were recorded for n=2 slices for 120 min after the first TBS train, then fixed and processed for 3DEM as described in Methods. Error bars are SEM. Adapted from Watson et al. (2016) where it was originally published under a CC BY-NC-ND 4.0 license https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-## Limited entry of SER into dendritic spines
+### Limited entry of SER into dendritic spines
 
 Consistent with previous reports on hippocampal dendrites (Spacek and Harris, 1997; Cooney et al., 2002), the SER formed an anastomosing network throughout the dendritic shaft with occasional entry into a subset of dendritic spines (Figure 2A; see Figure 2—figure supplement 1 for all analyzed dendrites reconstructed with SER). While the dendritic spine density more than doubled 2 hr following TBS, a similar increase in the occurrence of SER in spines did not occur (Figure 2B,C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig2-v2.jpg)
+
+**Figure 2.:** (A) Sample serial section EMs (left) and representative 3D reconstructions of dendrites (right) from control (top) and LTP (bottom) conditions, illustrating dendrites (yellow), SER (green), and synapses (red). Synaptic area was measured as the total surface area of the PSD. Arrows point to SER-containing spines. (B) Spine density (#/µm) binned for PSD area. Significant increase in spines following TBS was carried by spines in the category with the smallest PSD areas (<0.05 µm2; ANOVA F(1,12)=50.707, p=0.00001, η2 = 0.81). No statistically significant changes occurred in the frequency of spines with larger synapses (PSD area 0.05 to 0.1 µm2, ANOVA F(1,12)=1.079, p=0.31941; PSD area 0.1 to 0.15 µm2, ANOVA F(1,12)=0.09638, p=0.76154; PSD area 0.15 to 0.2 µm2, ANOVA F(1,12)=3.5065, p=0.08569; PSD area >0.2 µm2, ANOVA F(1,11)=3.0778, p=0.10484). Control n = 8, LTP n = 8 dendrites. (C) Decrease in percentage of spines containing SER following TBS (ANOVA F(1,12)=10.599, p=0.00688, η2 = 0.87). Control n = 8, LTP n = 8 dendrites. (D–F) SER content for spines with PSD areas less than 0.05 µm2. (D) No statistically significant difference between control and LTP conditions in density of spines with SER (ANOVA F(1,12)=2.59, p=0.13322). Control n = 8, LTP n = 8 dendrites. (E) No statistically significant difference in average SER volume per SER-containing spine between control and LTP conditions (hnANOVA F(1,14)=.73111, p=0.40692). Control n = 12, LTP n = 15 spines. (F) No statistically significant difference in SER surface area per SER-containing spine between control and LTP conditions (hnANOVA F(1,14)=3.3120, p=0.09022). Control n = 12, LTP n = 15 spines. (G–I) SER content for spines with total PSD area equal to or greater than 0.05 µm2. (G) No statistically significant difference in density of spines with SER between control and LTP conditions (ANOVA F(1,12)=2.1641, p=0.16700). Control n = 8, LTP n = 8 dendrites. (H) Reduction in average SER volume per SER-containing spine in the LTP relative to control condition (hnANOVA F(1,38)=5.7205, p=0.02182, η2 = 0.13). Control n = 29, LTP n = 25 spines. (I) Reduction in average SER surface area in SER-containing spines in the LTP relative to control condition (hnANOVA F(1, 38)=4.5873 p=0.03868, η2 = 0.12). Control n = 29, LTP n = 25 spines. Bar graphs show mean ± S.E.M. Control (CON, blue) and TBS (LTP, red).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Scale cube is 0.5 µm on each side.
 
 Spines with small synapses, as measured by the surface area of the postsynaptic density (PSD) (<0.05 µm2), accounted for the LTP-induced increase in spine density (Figure 2B). This difference was not present at earlier times, and the small spines more than tripled in density by 2 hr post induction of LTP, suggesting that most of this population comprised newly formed spines (Watson et al., 2016). There were no significant effects on SER content in these small spines; not in frequency of spine-localized SER (Figure 2D), average SER volume (Figure 2E), nor average SER surface area (Figure 2F). Since the occurrence of SER did not keep pace with the increase in small spines, the most parsimonious interpretation is that the LTP-induced new spines did not acquire SER.
 
 In contrast, while the incidence of SER entry into spines with larger synapses (PSD area ≥0.05 µm2) did not change (Figure 2G), there was however a decrease in the average volume (Figure 2H) and surface area (Figure 2I) of SER in these spines. The spine apparatus is an organelle comprising cisterns of SER laminated with electron dense plates that may serve Golgi functions in spines (Gray, 1959; Špaček, 1985; Pierce et al., 2001). Consistent with previous observations (Spacek and Harris, 1997; Cooney et al., 2002), the spine apparatus appeared in only one dendrite in each condition (data not shown), suggesting that this structure is not central to the activity-induced spinogenesis at this age. Overall, these results reveal that SER entry into dendritic spines is limited and does not scale up with rapid synaptogenesis following LTP at P15.
 
-## Reduced complexity in shaft SER after LTP
+### Reduced complexity in shaft SER after LTP
 
 Previous work demonstrated in cultured neurons that local zones of ER complexity produce ER exit sites and compartmentalize membrane proteins near the base of dendritic spines (Cui-Wang et al., 2012). Consistent with this finding, SER was inhomogeneously distributed across spiny and aspiny regions of the dendrites in both control and LTP conditions. SER appeared as small circular profiles on some sections, and swollen cisternae with bridging elements on other sections (Figure 3A). In 3D reconstruction, the primarily tubular structure of SER in aspiny regions and the expanded SER in spiny regions of the dendrite become apparent (Figure 3B). Following LTP, there was a trend towards reduced shaft SER surface area (Figure 3C) that reached statistical significance with reduced shaft SER volume (Figure 3D) when quantified across the total length of the dendritic segments. The SER complexity was estimated by summing the dendritic shaft SER cross-sectional areas in each section, assigning the value to the spiny or aspiny segments, and summing across their independent lengths (Cui-Wang et al., 2012). This measure of SER complexity was greater in spiny than aspiny segments under both conditions yet was significantly reduced in both the aspiny and spiny regions following LTP relative to the control condition (Figure 3E). Considering the prior work, this outcome suggests that SER resources may have contributed to the spine outgrowth by 2 hr following the induction of LTP.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig3-v2.jpg)
 
-**Figure 3.:** (A) Electron micrographs showing the dendrite (yellow), SER (green), and synapses (red). For both control and LTP, the SER in the aspiny segments forms small cross-sectioned tubules, whereas in the spiny segments the SER tubules are broadly expanded. (B) Sample 3D reconstructions from serial section electron micrographs of SER-containing dendrites, illustrating spiny segments (yellow) and aspiny segments (blue) while the other colors match Figure 2. Aspiny segments consist of two or more sections (>100 nm) of no spine origins. Spiny segments had at least one spine and were surrounded by aspiny segments. Scale cube is 0.5 µm on each side. (C) No statistically significant differences between control and LTP conditions were found in surface area of SER in the dendritic shaft (ANOVA F(1,12)=3.8833, p=0.07228). Control n = 8, LTP n = 8 dendrites. (D) Volume of dendritic SER network was reduced in the LTP relative to control conditions (ANOVA F(1,12)=6.4397, p=0.02605, η2 = 0.35). Control n = 8, LTP n = 8 dendrites. (E) Summed cross-sectional area of SER tubules and cisterns as a measure of changes in complexity. More SER on spiny than aspiny sections within both control (hnANOVA F(1,1432) = 51.672, p<0.00000, η2 = 0.034; spiny n = 493, aspiny n = 955 sections) and LTP conditions (hnANOVA F(1,324)=17.535, p=0.00003, η2 = 0.013; spiny n = 714, aspiny n = 626 sections). Reduced SER complexity with LTP for both spiny (hnANOVA F(1,1191) = 51.745, p<0.00000, η2 = 0.019; Control n = 493, LTP n = 714 sections) and aspiny sections (hnANOVA F(1,1565) = 29.991, p<0.00000, η2 = 0.042; Control n = 955, LTP n = 626 sections) relative to control. Bar graphs show mean ± S.E.M. Control (CON, blue) and TBS (LTP, red).10.7554/eLife.46356.008Figure 3—source data 1.
+**Figure 3.:** (A) Electron micrographs showing the dendrite (yellow), SER (green), and synapses (red). For both control and LTP, the SER in the aspiny segments forms small cross-sectioned tubules, whereas in the spiny segments the SER tubules are broadly expanded. (B) Sample 3D reconstructions from serial section electron micrographs of SER-containing dendrites, illustrating spiny segments (yellow) and aspiny segments (blue) while the other colors match Figure 2. Aspiny segments consist of two or more sections (>100 nm) of no spine origins. Spiny segments had at least one spine and were surrounded by aspiny segments. Scale cube is 0.5 µm on each side. (C) No statistically significant differences between control and LTP conditions were found in surface area of SER in the dendritic shaft (ANOVA F(1,12)=3.8833, p=0.07228). Control n = 8, LTP n = 8 dendrites. (D) Volume of dendritic SER network was reduced in the LTP relative to control conditions (ANOVA F(1,12)=6.4397, p=0.02605, η2 = 0.35). Control n = 8, LTP n = 8 dendrites. (E) Summed cross-sectional area of SER tubules and cisterns as a measure of changes in complexity. More SER on spiny than aspiny sections within both control (hnANOVA F(1,1432) = 51.672, p<0.00000, η2 = 0.034; spiny n = 493, aspiny n = 955 sections) and LTP conditions (hnANOVA F(1,324)=17.535, p=0.00003, η2 = 0.013; spiny n = 714, aspiny n = 626 sections). Reduced SER complexity with LTP for both spiny (hnANOVA F(1,1191) = 51.745, p<0.00000, η2 = 0.019; Control n = 493, LTP n = 714 sections) and aspiny sections (hnANOVA F(1,1565) = 29.991, p<0.00000, η2 = 0.042; Control n = 955, LTP n = 626 sections) relative to control. Bar graphs show mean ± S.E.M. Control (CON, blue) and TBS (LTP, red).
 
-## Identifying the dendritic trafficking network
+### Identifying the dendritic trafficking network
 
 Recent work has shown that SER participates in a local, Golgi apparatus-independent secretory trafficking pathway through recycling endosomes in dendrites (Bowen et al., 2017). Recycling endosomes have been identified as transferrin receptor-positive membrane compartments in dendrites by immuno-EM (Park et al., 2006). Other work found that non-SER subcellular components endocytose BSA-conjugated gold particles from the extracellular space (Cooney et al., 2002). Together these findings suggest that while these two compartments interact, the SER is not an endocytic structure. Here we considered the possibility that the endosome-based satellite system was also mobilized during LTP.
 
 Once the continuous network of SER was reconstructed, the non-SER compartments could be identified as distinct terminating structures. Endosomal subtypes were classified as depicted in Figure 4A (Cooney et al., 2002; Park et al., 2006; Deretic, 2008; Von Bartheld and Altick, 2011). Coated pits, coated vesicles, and large vesicles were treated as one category of primary endocytic structures. Sorting complexes and recycling complexes were treated as functionally separate categories. Whorls, free multivesicular bodies, lysosomes, and autophagosomes were classified as degradative structures. Detailed descriptions based on EM morphology follow.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig4-v2.jpg)
+
+**Figure 4.:** (A) Model of the dendritic endosomal pathway. Clathrin-coated pits (CPs) invaginate, becoming clathrin-coated vesicles (CVs) and large vesicles (LVs) after coat shedding. Large vesicles fuse to form tubules, recycling complexes (RCs), and sorting complexes (SCs) with a multivesicular body (MVB). From here, the sorted material may be sent to the plasma membrane via small vesicles (SVs) that pinch off coated tips of tubules. MVBs may serve as exosomes (Exo) or primary lysosomes, that are more darkly stained than exosomes due to the acidic cytomatrix of lysosomes (adapted from Cooney et al., 2002). Sample electron micrographs illustrate (B) recycling complex (pink arrow) and small vesicles (purple arrow), (C) clathrin-coated pit (orange arrow), (D) sorting complex (light blue arrows point to multivesicular body (MVB) in the center and tubules around it), (E) amorphous vesicle (green arrow), (F) lysosome (black arrow), and (G) whorl (black arrow). Scale bar in (G) is 0.5 µm for all images.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** D28 FZYJV sections 108–111. Scale bar 0.5 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Scale bar 0.5 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** D26 PWCNZ sections 41–44. Scale bar 0.5 µm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Scale bar 0.5 µm.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Scale bar 0.5 µm.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Scale bar 0.5 µm.
 
 Tubules were cylindrical in shape with a smooth outer membrane, uniform diameter, and a dark, grainy interior. When two or more tubules occurred in proximity, they were categorized as a recycling complex (Figure 4B; Figure 4—figure supplement 1, Figure 4—video 1). Vesicles were distinguished from tubules by examining adjacent sections. Small vesicles (40–60 nm diameter, Figure 4B; Figure 4—figure supplement 1) and large vesicles (60–95 nm diameter) had a smooth outer membrane and ended within 1–2 sections. Coated pits were omega-shaped invaginations surrounded by clathrin coats (Figure 4C; Figure 4—figure supplement 2). Coated vesicles had a clathrin coat, were free-floating in the cytoplasm. Occasionally, clathrin-coated buds were observed on the ends of tubules.
 
@@ -64,9 +100,21 @@ Multivesicular bodies (MVB) contained a variable number of internal vesicles. Wh
 
 Lysosomes were spherical structures with a homogeneous, electron-dense interior enclosed by one membrane and measuring 70–150 nm in diameter (Figure 4F; Figure 4—figure supplement 5). Lysosomes were classified as degradative structures. A MVB was considered to be a primary lysosome, namely a degradative structure, when found alone and containing vesicles or pieces of membrane in a dark matrix (Parton et al., 1992; Futter et al., 1996; Mukherjee et al., 1997; Cooney et al., 2002). Whorls had multiple convoluted membranes spanning many sections, had a single point of entry into the dendrite, and were classified as degradative structures (Figure 4G; Figure 4—figure supplement 6; Figure 4—video 3). All non-degradative structures were classified as constructive for the quantitative analyses presented next.
 
-## Constructive endosomes occurred more frequently in spines after LTP
+### Constructive endosomes occurred more frequently in spines after LTP
 
 Endosomal structures occurred in the dendritic shafts and a subset of spines (Figure 5A; see Figure 5—figure supplement 1 for all analyzed dendrites reconstructed with constructive endosomes). Overall, endosomal frequency did not change significantly across conditions within dendritic shafts (Figure 5B); however, when analyzed by subtype the occurrence of recycling complexes was increased (Figure 5B). Similarly, there was no significant effect of LTP relative to the control condition on endosomal distribution to aspiny or spiny dendritic segments.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig5-v2.jpg)
+
+**Figure 5.:** (A) Sample serial EM sections and representative 3D reconstructed dendrites illustrate the distribution of endosomal compartments from control and LTP conditions. Dendrites are yellow, synapses are red, and color-coded arrows point to endosome-containing spines. The color-coded key in the lower left corner indicates amorphous vesicles (AV), recycling complexes (RC), coated pits (CP), coated vesicles (CV), large vesicles (LV), sorting complexes (SC), small vesicles (SV) and degradative structures (DEG); these abbreviations apply also to the graphs. Vesicles are represented as 100 nm spheres (AV, CP, CV, LV, and SV). The other structures (RC, SC, DEG) are reconstructed in 3D to scale. (B) Endosomal structures in dendritic shafts (#/µm) with relative distributions to aspiny and spiny segments in control (CON) and LTP conditions. Overall, shaft endosomes (hnANOVA F(1,293)=0.93104, p=0.33539), degradative structures (hnANOVA F(1,293)=0.47789, p=0.48993) or constructive endosomal compartments (Constr. = all minus degradative; hnANOVA F(1,293)=0.62167, p=0.43107) did not differ between LTP and control conditions or segment locations. Recycling complexes (RC) were greater in the LTP than control dendritic shafts (hnANOVA F(1,293)=6.4920, p=0.01135, η2 = 0.022), but no significant differences occurred in the other categories: amorphous vesicles (hnANOVA F(1,293)=1.5092, p=0.22025); small vesicles (hnANOVA F(1, 293)=1.1699, p=28031); coated pits, coated vesicles, and large vesicles (hnANOVA F(1,293)=0.89152, p=0.34584); and sorting complexes (hnANOVA F(1,293)=0.45286, p=0.50151). (For control (CON) n = 151 aspiny + spiny segments and for LTP n = 158 aspiny + spiny segments.) (C) More dendritic spines contained endosomes along the dendrites in the LTP than the control condition (ANOVA F(1,12)=18.047, p=0.00113, η2 = 0.60), an effect that was carried by spines with PSD areas less than 0.05 µm2 (ANOVA F(1,12)=23.642, p=0.00039, η2 = 0.66) but not in spines with PSD area >0.05 µm2 (ANOVA F(1,12)=0.84714, p=0.37550). (D) Stability in percentage of spines containing endosomes following TBS (ANOVA F(1,12)=.72158, p=0.41225). (E) Among spines with PSD area less than 0.05 µm2, the increase in occupancy of endosomes was due to more with coated pits, coated vesicles, and large vesicles (ANOVA F(1,12)=4.94433, p=0.046140, η2 = 0.29), recycling complexes (ANOVA F(1,12)=11.009, p=0.00613, η2 = 0.48), and more with small vesicles (ANOVA F(1,12)=5.2575, p=0.04072, η2 = 0.30). No significant changes in spine occupancy occurred for amorphous vesicles (ANOVA F(1,12)=1, p=0.33705), sorting complexes (ANOVA F(1,12)=1, p=0.33705), or degradative structures (ANOVA F(1,12)=0.46689, p=0.5074). Bar graphs show mean ± S.E.M. (For C–E), Control (CON, n = 8 full dendrite reconstructions) and LTP (n = 8 full dendrite reconstructions).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Scale cube is 0.5 µm on each side.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46356/elife-46356-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Scale cube is 0.5 µm on each side.
 
 In contrast, there was a substantial increase in the occurrence of dendritic spines with endosomes, an effect that was confined to spines with small PSD areas (<0.05 µm2, Figure 5A,C,D). Furthermore, this increase in spines involved constructive endocytic compartments (including coated pits, coated vesicles, large vesicles, recycling complexes, and small vesicles), with no significant effects on the rare occurrence of spines with amorphous vesicles, sorting complexes, or degradative structures (Figure 5E; see Figure 5—figure supplement 2 for all analyzed dendrites reconstructed with degradative endosomes). These data suggest that the non-canonical secretory trafficking contributes locally in support of spines added 2 hr following the induction of LTP at P15.
 
@@ -82,7 +130,7 @@ The findings suggest a model in which local Golgi apparatus-independent secretor
 
 **Figure 6.:** Smooth endoplasmic reticulum (SER, green), postsynaptic density (PSD, red), small vesicle or recycling endosome (RE, turquoise), new silent spines (orange), control activation (Con), theta-burst stimulation (TBS), long-term potentiation (LTP), AMPA receptors (AMPAR).
 
-## Effects of LTP on SER and spines
+### Effects of LTP on SER and spines
 
 Previous work has shown that integral membrane proteins rapidly diffuse throughout tubular SER and become confined in regions where the SER is more complex, having branches between tubules and distended cisternae (Cui-Wang et al., 2012). As spine density increases across development so too does SER complexity, leading to decreased mobility of ER membrane cargo with age. SER complexity was measured as the summed cross-sectional area to capture the local variation. SER and spine density were positively correlated where more dendritic spines clustered locally. Using the same methods, we found SER volume and complexity were greater in spiny than aspiny regions and were reduced in conjunction with TBS-induced spinogenesis along these P15 dendrites. This result suggests that the membrane lost from SER in the shaft could have been used to build new spines after LTP.
 
@@ -92,7 +140,7 @@ At P15, CA1 dendrites have less than one-third mature synaptic density, which wi
 
 SER regulates intracellular calcium ion concentration (Verkhratsky, 2005). Regulation of postsynaptic calcium levels is necessary for the expression of synaptic plasticity (Lynch et al., 1983; Malenka et al., 1988), hence the presence of SER could be important for signaling cascades associated with LTP and stabilization of AMPA receptors at potentiated synapses (Borgdorff and Choquet, 2002). Consistent with this, spines with larger synapses tended to contain SER, and were maintained at stable density post-TBS. However, it might be of some concern that calcium regulation is disrupted by the reduction in SER volume in both adult and P15 hippocampal dendritic shafts by 2 hr after induction of LTP. The reduction in SER volume was by no means complete, and instead likely reflects the multiple roles of SER in membrane and protein trafficking in addition to the regulation of calcium. That a substantial amount of shaft SER remains well after the induction of LTP, supports the hypothesis that SER is a dynamically regulated resource at both ages.
 
-## Role of satellite secretory system in synaptogenesis and subsequent plasticity
+### Role of satellite secretory system in synaptogenesis and subsequent plasticity
 
 Dendrites support local processing and secretory trafficking of newly synthesized cargo independent of a Golgi apparatus (Bowen et al., 2017). Secretory cargo passes from the ER to ER-Golgi intermediate compartments (ERGICs) into recycling endosomes en route to the plasma membrane. While molecular understanding of this pathway has been achieved, the spatial organization of the responsible organelles has been nebulous. Recycling endosomes were seen about 25% of spines on cultured neurons that also contained synaptopodin, a marker for the ER-derived spine apparatus (Bowen et al., 2017). This finding suggested that recycling endosomes might receive newly synthesized cargo directly from a spine apparatus. However, at P15, only one spine apparatus was found in each of the control and TBS conditions, suggesting that recycling endosomes derive from alternate recycling organelles in the dendritic shaft. Previously, this satellite secretory system has only been studied in neurons under baseline conditions in culture. Here, we provide the first evidence that this specialized secretory system locally supports spine formation during plasticity.
 
@@ -100,19 +148,155 @@ Synaptogenesis at P15 does not precede the expression of LTP, as evidenced by a 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus, male)</td>
+      <td>Long-Evans Rat</td>
+      <td>Charles River</td>
+      <td>Charles River strain# 006; RRID:RGD_2308852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium ferrocyanide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P3289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osmium tetroxide</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 19190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyl acetate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 22400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LX-112 embedding kit</td>
+      <td>Ladd Research Industries</td>
+      <td>Cat# 21210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lead nitrate</td>
+      <td>Ladd Research Industries</td>
+      <td>Cat# 23603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pioloform F</td>
+      <td>Ted Pella</td>
+      <td>Cat# 19244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 4</td>
+      <td>WaveMetrics</td>
+      <td>https://www.wavemetrics.net/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Reconstruct</td>
+      <td>Fiala, 2005</td>
+      <td>Executable and manual: http://synapseweb.clm.utexas.edu/software-0</td>
+      <td>Source at:https://github.com/orgs/SynapseWeb/teams/reconstruct-developers</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STATISTICA 13 Academic</td>
+      <td>Tibco</td>
+      <td>https://onthehub.com//statistica/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tissue slicer</td>
+      <td>Stoelting</td>
+      <td>Cat # 51425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vibratome</td>
+      <td>Leica Biosystems</td>
+      <td>VT1000S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ultramicrotome</td>
+      <td>Leica Biosystems</td>
+      <td>UC6</td>
+      <td>Used with a Diatome Ultra35 knife</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SynapTek Grids</td>
+      <td>Ted Pella</td>
+      <td>Cat# 4514 or 4516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Diffraction grating replica</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 80051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Transmission electron microscope</td>
+      <td>JEOL</td>
+      <td>JEM-1230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Harris Lab wiki</td>
+      <td>Harris Lab</td>
+      <td>https://wikis.utexas.edu/display/khlab/</td>
+      <td>This wiki site hosts experimental methods used for this paper and updates.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Hippocampal slices (400 µm) were rapidly prepared from P15 male Long-Evans rats (RRID:RGD_2308852, n > 100, including the initial test experiments and slices used in prior work for the 5 min and 30 min time points; Watson et al., 2016). For the 2 hr time point reported here, one slice each from two rats met the strict physiology and ultrastructural criteria for inclusion as outlined below. All procedures were approved by the University of Texas at Austin Institutional Animal Care and Use Committee and were followed in compliance with NIH requirements for humane animal care and use (Protocol number 06062801). All rats were of comparable features indicative of health at the time they were taken for experimentation.
 
-## Preparation and recording from acute hippocampal slices
+### Preparation and recording from acute hippocampal slices
 
 Rats were decapitated and the left hippocampus was removed and sliced into 400 µm thick slices from the middle third of the hippocampus at a 70° traverse to the long axis using a tissue chopper (Stoelting, Wood Dale, IL). Hippocampal slices were kept room temperature (~25°C) in artificial cerebrospinal fluid (ACSF) bubbled with 95% O2/5% CO2 (Bourne et al., 2007). ACSF consisted of 116.4 mM NaCl, 5.4 mM KCl, 3.2 mM CaCl2, 1.6 mM MgSO4, 26.2 NaHCO3, 1.0 mM NaH2PO4, and 10 mM D-glucose at pH 7.4. Slices were immediately transferred to nets on top of wells containing ACSF at the interface of humidified O2 (95%) and CO2 (5%). Dissection and slice preparation took less than 5 min. The slices were kept at 32°C for approximately 3 hr in vitro prior to recording (Fiala et al., 2003). Two concentric bipolar stimulating electrodes (100 µm diameter, Fred Haer, Brunswick, ME) were positioned ~300–400 µm on either side of a single glass extracellular recording electrode in the middle of stratum radiatum for independent activation of subpopulations of synapses (Sorra and Harris, 1998; Ostroff et al., 2002; Bourne and Harris, 2011). The recording electrode was a glass micropipette filled with 120 µM NaCl. After initial recovery period, stable baseline recordings were obtained from both sites for a minimum of 40 min. Extracellular field potentials (fEPSPs) were obtained with custom designed stimulation data acquisition protocols using Igor software (WaveMetrics, Lake Oswego, OR). fEPSPs were estimated by linear regression over 400 µs along maximal initial slope (mV/ms) of test pulses of 100 µs constant, biphasic current. Stimulus intensity was set to evoke 1/2 maximum fEPSP slope based on a stimulus/response curve for each experiment and was held constant for the duration of the experiment.
 
-## TBS-LTP paradigm
+### TBS-LTP paradigm
 
 Theta burst stimulation (TBS) was used to induce LTP. TBS was administered by one stimulating electrode as one episode of eight trains 30 s apart, each train consisting of 10 bursts at 5 Hz of 4 pulses at 100 Hz. The control stimulating electrode delivered one pulse every 2 min. Stimulations were alternated between the TBS-LTP and the control electrode once every two minutes with a 30 s interval between electrodes. In order to counterbalance across experiments, control and TBS-LTP electrode positions were interchanged between the CA3 and subicular side of the recording electrode (Figure 1A). Physiological responses were monitored for 120 min after the first train of TBS (Figure 1B,C) and then rapidly fixed, as described below.
 
-## Fixation and processing for 3DEM
+### Fixation and processing for 3DEM
 
 One slice from each animal was fixed and processed for electron microscopy 2 hr after induction of LTP. Only slices with good physiology were used, defined as a gradually inclining I/O curve in response to incremental increases in stimulus intensity for both stimulating electrodes, a stable baseline response at both stimulating electrodes unchanged at the control site post LTP-induction, and a significant increase in fEPSP slope that was immediately induced by TBS and was sustained for the duration of the experiment. Within a few seconds of the experiment’s end, electrodes were removed and slices were immersed in fixative (6% glutaraldehyde and 2% paraformaldehyde in 100 mM cacodylate buffer with 2 mM CaCl2 and 4 mM MgSO4), microwaved at full power (700 W microwave oven) for 10 s to enhance penetration of fixative (Jensen and Harris, 1989), stored in the fixative overnight at room temperature, rinsed three times for 10 min in 100 mM cacodylate buffer, and embedded in 7% low melting temperature agarose. They were then trimmed, leaving only the CA1 region that contained the two stimulating electrodes. They were mounted in agarose and vibra-sliced into 70 µm thick slices (VT1000S, Leica, Nusslock, Germany). Vibra-slices were kept in a 24-well tissue culture dish and examined under a dissecting microscope to locate the vibra-slices containing indentations from the stimulating electrodes.
 
@@ -120,11 +304,11 @@ The vibra-slices with the indentations due to the stimulating electrodes and two
 
 Slices with high-quality preservation, defined as dendrites with evenly spaced microtubules, well-defined mitochondrial cristae, and well-defined PSDs that were not thickened or displaced from the membrane, were selected for analysis. The region of interest was selected from middle of the CA1 stratum radiatum and 120–150 µm beneath the air surface, then cut into 150–200 serial sections. The sections were mounted on Pioloform-coated slot grids (Synaptek, Ted Pella, Redding, CA). The sections were counterstained with saturated ethanolic uranyl acetate, then Reynolds lead citrate (Reynolds, 1963) for five minutes each, and then imaged with a JEOL JEM-1230 transmission electron microscope with a Gatan digital camera at 5000X magnification along with a diffraction grating replica for later calibration (0.463 µm cross line EMS, Hatfield, PA or Ted Pella). Imaging was conducted blind to condition.
 
-## 3D reconstructions and measurements of dendrites
+### 3D reconstructions and measurements of dendrites
 
 A random five-letter code was assigned to each series of images for the experimenter to be blind to the original experimental conditions during data collection. Reconstruct software (freely available at http://www.synapseweb.clm.utexas.edu; Fiala, 2005) was used to calibrate pixel size and section thickness, align sections, and trace dendrites, SER, endosomes, and PSD. The diffraction grating replica imaged with each series was used to calibrate pixel size. Cylindrical diameters method was used to calculate section thickness (Fiala and Harris, 2001). Calculated section thicknesses ranged from 46 to 63 nm. Dendrites selected for analysis were chosen based on their orientation (cross-sectioned or radial oblique) and matched for diameter. Microtubule count was used as a measure of dendritic caliber (6–22 MTs) as this range under control condition showed no differences in spine density. All dendrites chosen for the analysis were completely reconstructed. The z-trace tool in Reconstruct was used to measure dendrite lengths across serial sections of each analyzed dendrite. Four dendrites were sampled from each condition (control or TBS-LTP) in each animal, resulting in a total of 16 dendritic segments from four EM series. Each analyzed dendritic segment traversed over 100 serial sections. In total, 173 µm of dendritic length was sampled.
 
-## Identification and quantification of subcellular compartments
+### Identification and quantification of subcellular compartments
 
 The process of tracing, reviewing, and curating dendrites, synapses, and subcellular objects was confirmed by three scientists (Kulik, Watson, and Harris) and conducted blind as to condition. On the rare occasions where there was disagreement, we met to arrive at a consensus based on the 3D structures; hence all objects were eventually provided a confirmed identification as outlined below.
 
@@ -132,16 +316,16 @@ Dendrites and PSDs were traced and dimensions were quantified as previously desc
 
 Only spines that were entirely contained within the series were used for the analyses of subcellular compartments. In this way, we avoided possible undercounting of compartments that may have entered a portion of an incomplete spine outside the series. Spines were considered to contain a subcellular structure when it entered the head or neck of the spine, but not if it was only at the base of a spine. The frequency of occurrence was calculated as the total number of occurrences of objects divided by the length of dendrite in microns. The 3D visualization of dendrites and subcellular structures was achieved with Reconstruct. The 3D reconstructions from serial EMs allowed us to calculate volumes and surface areas of objects and to assess SER and endosome distribution within dendrites.
 
-## Statistical analyses
+### Statistical analyses
 
 The statistical package STATISTICA (version 13.3; TIBCO, Palo Alto, CA) was used for all analyses. There were two conditions represented in each animal: control (CON), and LTP at 120 min following TBS. In this study, eight control dendrites (four from each animal) and 8 LTP dendrites (four from each animal) were analyzed. One-way ANOVAs were run on all density (#/µm) data involving one measurement per dendrite, in which case n = number of dendrites. Hierarchical nested analysis of variance (hnANOVAs) were run when many measures were obtained from each dendrite (e.g. SER volume per spine, PSD area etc.). In this case, n = total spines, as each spine was considered separately. In hnANOVAs dendrite was nested in condition and experiment, and experiment nested in condition to account for inter-experiment variability. Results of the one-way ANOVAs and hnANOVAs are reported as (F(df condition, df observations)=F value, P value) where df is degrees of freedom presented for condition and error. In hnANOVAs degrees of freedom are further decreased by one for each dendrite. Absolute p values are reported for each test. Statistical tests are reported in the figure legends. Data in bar graphs is plotted as mean ± SEM. Significant P values are indicated by asterisks above the bars. Significance was set at p<0.05. The effect sizes for significant differences are also presented in the figure legends as η2 (which was determined as SScondition/SS(condition + error), where SS = sum of squares determined in Statistica for each analysis).
 
 We have provided the raw images, Reconstruct trace files, and analytical tables in the public domain at Texas Data Repository: DOI: https://doi.org/10.18738/T8/5TX9YA.
 
-## Caveats
+### Caveats
 
 One might be concerned that these data arise from two animals. We note that these experiments are within-slice experiments, namely the control and LTP sites are from independent locations within the same slice from two different animals. Based on numerous preliminary experiments, we found that this approach greatly reduces variation due to slice preparation, in vitro conditions, and subsequent processing for electron microscopy when comparing the control and LTP outcomes. We also note that enhanced statistical power came from the large number of synapses and spines tested using the hierarchical nested ANOVA design with dendrite nested in condition by animal (Figures 2E,F,H,I and 3E). In this way, degrees of freedom are adjusted for animal and dendrites, and outcomes are tested to ensure that no one dendrite or animal carried the findings. In addition, we had power to detect changes using multifactor ANOVAs for measurements that involved one measure per dendrite (#/µm listed on the y axes of Figures 2B–D, G, 3C–D and 5B–E). Given the extremely time-consuming nature of the imaging and 3DEM analysis, additional animals and slices were not included.
 
-## Source data files (Named Figures 1-5–source data 1 in each legend)
+### Source data files (Named Figures 1-5–source data 1 in each legend)
 
 There is one source data file for each of Figures 1–5 that contains Excel spreadsheets with the object locations in the Reconstruct trace files (provided in the public domain) for EMs. These files also contain the raw numbers that generated graphs in each part of each figure along with the summary of statistics.

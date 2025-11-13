@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03czfpz43 Department of Orthopaedics, Emory University School of Medicine Atlanta United States
-2. https://ror.org/04z89xx32 VA Medical Center Atlanta United States
+1. Department of Orthopaedics, Emory University School of Medicine Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+2. VA Medical Center Atlanta United States ([ROR:04z89xx32](https://ror.org/04z89xx32))
 
 † Corresponding author
 
 ## Abstract
 
-Bone remodeling is a complex process involving the coordinated actions of osteoblasts and osteoclasts to maintain bone homeostasis. While the influence of osteoblasts on osteoclast differentiation is well established, the reciprocal regulation of osteoblasts by osteoclasts has long remained enigmatic. In the past few years, a fascinating new role for osteoclasts has been unveiled in promoting bone formation and facilitating osteoblast migration to the remodeling sites through a number of different mechanisms, including the release of factors from the bone matrix following bone resorption and direct cell–cell interactions. Additionally, considerable evidence has shown that osteoclasts can secrete coupling factors known as clastokines, emphasizing the crucial role of these cells in maintaining bone homeostasis. Due to their osteoprotective function, clastokines hold great promise as potential therapeutic targets for bone diseases. However, despite long-standing work to uncover new clastokines and their effect in vivo , more substantial efforts are still required to decipher the mechanisms and pathways behind their activity in order to translate them into therapies. This comprehensive review provides insights into our evolving understanding of the osteoclast function, highlights the significance of clastokines in bone remodeling, and explores their potential as treatments for bone diseases suggesting future directions for the field.
+Bone remodeling is a complex process involving the coordinated actions of osteoblasts and osteoclasts to maintain bone homeostasis. While the influence of osteoblasts on osteoclast differentiation is well established, the reciprocal regulation of osteoblasts by osteoclasts has long remained enigmatic. In the past few years, a fascinating new role for osteoclasts has been unveiled in promoting bone formation and facilitating osteoblast migration to the remodeling sites through a number of different mechanisms, including the release of factors from the bone matrix following bone resorption and direct cell–cell interactions. Additionally, considerable evidence has shown that osteoclasts can secrete coupling factors known as clastokines, emphasizing the crucial role of these cells in maintaining bone homeostasis. Due to their osteoprotective function, clastokines hold great promise as potential therapeutic targets for bone diseases. However, despite long-standing work to uncover new clastokines and their effect in vivo, more substantial efforts are still required to decipher the mechanisms and pathways behind their activity in order to translate them into therapies. This comprehensive review provides insights into our evolving understanding of the osteoclast function, highlights the significance of clastokines in bone remodeling, and explores their potential as treatments for bone diseases suggesting future directions for the field.
 
 ## Introduction
 
@@ -74,6 +74,217 @@ An inhibitory role has been described for Semaphorin 4D (SEMA4D), a transmembran
 ## Osteoclast-secreted coupling factors (clastokines)
 
 The concept that osteoclasts might secrete factors promoting osteoblast differentiation is not recent. Scientists began speculating about the existence of osteoclast-derived coupling factors as early as the 1980s (Farley et al., 1987), with more focused efforts initiated in the early 2000s (Martin and Sims, 2005; Karsdal et al., 2008; Karsdal et al., 2007). In 2008, the discovery that conditioned media from human osteoclasts was able to induce bone nodule formation by osteoblasts in a dose-dependent manner sparked further investigation into the mechanisms underlying osteoclastic control of osteoblasts (Karsdal et al., 2008). To this effect, molecules secreted by osteoclasts that demonstrated the ability to influence osteoblastic activity or function have widely been termed ‘clastokines’, and their roles have started to be explored both in vitro and in vivo (Figure 2, Table 1).
+
+**Table 1.**
+ Summary of coupling factors linking bone resorption to bone anabolism.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Known coupling factor</th>
+      <th>Osteoblast receptor</th>
+      <th>Reported coupling and anabolic effects</th>
+      <th>Mechanisms</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Membrane bound</td>
+    </tr>
+    <tr>
+      <td>EFNB2</td>
+      <td>Ephrin B2</td>
+      <td>EPHB4</td>
+      <td>Promotes osteoblast differentiation in vitro and in vivo.Prevents osteoblast apoptosis in vitro and in vivo.</td>
+      <td>Ephrin B2 binds to EPHB4 receptor and inhibits RhoA activity.</td>
+      <td>Zhao et al., 2006; Tonna et al., 2014</td>
+    </tr>
+    <tr>
+      <td colspan="6">Matrix derived</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TGF-β1</td>
+      <td rowspan="2">Transforming growth factor-β1</td>
+      <td rowspan="2">TGFβR1</td>
+      <td>Promotes MSCs migration to the remodeling sites in vitro and in vivo.</td>
+      <td>SMAD signaling mediates the creation of a TGF-β1 gradient that directs cell migration.</td>
+      <td rowspan="2">Tang et al., 2009; Ota et al., 2013b; Ota et al., 2013a</td>
+    </tr>
+    <tr>
+      <td>Stimulates the secretions of other clastokines such as WNT10B, LIF, and CXCL16.</td>
+      <td>TGF-β activates SMAD2/3 signaling to stimulate CXCL16 expression and SMAD2/3 and MEK signaling to stimulate LIF expression.</td>
+    </tr>
+    <tr>
+      <td>IGF-1</td>
+      <td>Insulin-like growth factor 1</td>
+      <td>IGF1R</td>
+      <td>Promotes osteoblast differentiation.</td>
+      <td>IGF-1 activates mTOR1 signaling pathway.</td>
+      <td>Xian et al., 2012</td>
+    </tr>
+    <tr>
+      <td colspan="6">Secreted (clastokines)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">S1P</td>
+      <td rowspan="4">Sphingosine-1-phosphate</td>
+      <td rowspan="4">S1Ps receptors</td>
+      <td>Promotes osteoblast differentiation in vitro.Promotes bone formation in vivo.</td>
+      <td>S1P is phosphorylated by SPHK1, an event inhibited in presence of cathepsin K.S1P is secreted from the osteoclasts thanks to SPNS2 export protein. In the extracellular space, S1P binds its S1PR3 receptor located on osteoblast surface. In presence of calcitonin, binding its receptor (CTR) on osteoclast membrane, PLC signaling results in the inhibition of SPNS2 expression.</td>
+      <td rowspan="4">Ryu et al., 2006; Quint et al., 2013; Pederson et al., 2008; Keller et al., 2014; Lotinun et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Enhances osteoblast migration and survival in vitro.</td>
+      <td>MSCs chemokinesis is stimulated by JAK/STAT3 and FAK/PI3K/AKT signaling pathways via S1PR1 and S1PR2, respectively.</td>
+    </tr>
+    <tr>
+      <td>Increases RANKL expression in vitro.</td>
+      <td>S1P binding to its receptor leads to the activation of ERK and p38 to upregulate COX2 level, leading to increased PGE2 production in the osteoblast.</td>
+    </tr>
+    <tr>
+      <td>Suppresses osteoclast differentiation in vitro.</td>
+      <td>Following RANKL-binding RANK on osteoclast precursors, the downstream activation of p38, c-Fos, and NFATc1 stimulates osteoclast differentiation. RANKL also stimulates S1P production by SPHK1. Intracellular S1P constitutes a negative feedback loop by suppressing p38 and inhibiting osteoclast differentiation.</td>
+    </tr>
+    <tr>
+      <td>WNT10B</td>
+      <td>Wingless-type MMTV integration site family, member 10B</td>
+      <td>N/A</td>
+      <td>Promotes osteoblast differentiation in vitro.Improves bone mineralization, bone quality and quantity in vivo.</td>
+      <td>WNT10B expression and secretion is stimulated by calcitonin and by TGF-β1.</td>
+      <td>Ota et al., 2013a; Pederson et al., 2008; Zheng et al., 2019; Hsiao et al., 2020</td>
+    </tr>
+    <tr>
+      <td>C3a</td>
+      <td>Complement component 3a</td>
+      <td>C3aR</td>
+      <td>Promotes osteoblast differentiation in vitro.Stimulates bone formation and maintains bone mass and structure.</td>
+      <td>C3a binds to its osteoblast receptor C3aR, and then likely induces ERK pathway, but the mechanism is still poorly understood.</td>
+      <td>Matsuoka et al., 2014</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CTHRC1</td>
+      <td rowspan="2">Collagen Triple Helix Repeat Containing 1</td>
+      <td rowspan="2">WAIF1, ROR2</td>
+      <td>Promotes osteoblast differentiation and mineralization in vitro. Suppresses adipocytic differentiation in vitro.Maintains bone mass and trabecular structure through regulation of bone formation in vivo.</td>
+      <td>WAIF1 and ROR2 receptors, located on the surface of stromal cells, bind CTHRC1 and activate the PKCδ/ERK pathway, stimulating differentiation into osteoblasts.</td>
+      <td rowspan="2">Kimura et al., 2008; Takeshita et al., 2013; Matsuoka et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Stimulates chemotaxis of stromal cells.</td>
+      <td>The stimulation occurs in presence of WNT3A, supporting a crosstalk between CTHRC1 and WNT pathway.</td>
+    </tr>
+    <tr>
+      <td>WNT5A</td>
+      <td>Wingless-type MMTV integration site family, member 5A</td>
+      <td>N/A</td>
+      <td>Maintains bone mass through regulation of bone formation in vivo.</td>
+      <td>WNT5A derived from osteoclasts is phosphorylated at Serine residues to acquire its function.</td>
+      <td>Roberts et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SLIT3</td>
+      <td rowspan="2">Slit Guidance Ligand 3</td>
+      <td rowspan="2">ROBO1/2</td>
+      <td>Stimulates osteoblast migration and proliferation in vitro and in vivo.Promotes bone formation in vivo.</td>
+      <td>During osteoclast differentiation, RANKL induces the activation of NF-κB p50 and CREB, increasing SLIT3 expression.SLIT3 signaling is mediated by ROBO1 and ROBO2 receptors in osteoblasts. SLIT3/ROBO complex associates with Abl kinase, N-cadherin, and β-catenin. Following Abl phosphorylation, N-cadherin-associated β-catenin is released, promoting osteoblast migration and proliferation.</td>
+      <td rowspan="2">Kim et al., 2018; Shin et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Suppresses bone resorption in an autocrine manner in vivo.</td>
+      <td>SLIT3 signaling is mediated by ROBO1 and ROBO3 receptors in osteoclasts. Osteoclast SrGAP2 intracellularly binds the SLIT3/ROBO complex and inhibits Rac1 GTPase, resulting in the inhibition of TNF-α-mediated osteoclastogenesis. The pathway has negative feedback: Rac1 promotes the production of SLIT3, which recruits SrGAP2 to inhibit Rac1 expression.</td>
+    </tr>
+    <tr>
+      <td>CT-1</td>
+      <td>Cardiotrophin-1</td>
+      <td>LIFR, gp130</td>
+      <td>Increases osteoblast activity in vitro.Suppresses adipocytic differentiation in vitro.Promotes bone formation in vivo.Inhibits sclerostin production.</td>
+      <td>CT-1 induces the expression of C/EBPδ, which acts in synergy with RUNX2 to promote osteocalcin expression through a C/EBP enhancer element.CT-1 induces high level of STAT3 and ERK phosphorylation in vitro.CT-1 signals through LIFR and gp130 receptors on osteoblast membrane. A third, CT-1-specific receptor subunit that has still not yet been identified might also be involved.</td>
+      <td>Sims and Walsh, 2010; Walker et al., 2008; Walker et al., 2010</td>
+    </tr>
+    <tr>
+      <td>LIF</td>
+      <td>Leukemia inhibitory factor</td>
+      <td>LIFR, gp130</td>
+      <td>Promotes bone formation in vivo.</td>
+      <td>LIF expression and secretion are stimulated by TGF-β1 through SMAD2/3 signaling.LIF binds LIFR and gp130 receptors on osteoblast surface.LIF signaling downregulates sclerostin expression and upregulates WNT/β-catenin pathway in osteoblasts.</td>
+      <td>Ota et al., 2013b; Sims and Walsh, 2010; Walker et al., 2010</td>
+    </tr>
+    <tr>
+      <td colspan="6">Putative clastokines (limited data)</td>
+    </tr>
+    <tr>
+      <td>BMP6</td>
+      <td>Bone morphogenetic protein 6</td>
+      <td>N/A</td>
+      <td>Promotes MSCs differentiation, mineralization, and migration in vitro.</td>
+      <td>N/A</td>
+      <td>Pederson et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Afamin</td>
+      <td>Afamin</td>
+      <td>N/A</td>
+      <td>Induces osteoblast precursors migration in vitro and in vivo.</td>
+      <td>Afamin activates the AKT pathway in osteoblasts.</td>
+      <td>Kim et al., 2012</td>
+    </tr>
+    <tr>
+      <td>PDGF-BB</td>
+      <td>Platelet-derived growth factor BB</td>
+      <td>PDGFR-β</td>
+      <td>Induces a migratory response in MSCs in vitro.Inhibits osteoblast differentiation in vitro.Promotes bone formation in vivo*.</td>
+      <td>N/A</td>
+      <td>Kreja et al., 2010; Sanchez-Fernandez et al., 2008; Kubota et al., 2002; Nash et al., 1994; Mitlak et al., 1996</td>
+    </tr>
+    <tr>
+      <td>HGF</td>
+      <td>Hepatocyte growth factor</td>
+      <td>cMET</td>
+      <td>Promotes osteoblast proliferation in vitro.Stimulates osteoclast migration in vitro.</td>
+      <td>HGF binding to cMET activates the PI3K, Akt, and c-Src cascade, which promotes the binding of c-Jun to the AP-1 site. This results in the stimulation of OPN expression in osteoblasts.</td>
+      <td>Grano et al., 1996; Chen et al., 2012</td>
+    </tr>
+    <tr>
+      <td>CXCL16</td>
+      <td>Chemokine (C-X-C motif) Ligand 16</td>
+      <td>N/A</td>
+      <td>Stimulates osteoblast migration in vitro.</td>
+      <td>CLXC16 expression and secretion are stimulated by TGF-β1 through SMAD2/3 signaling.</td>
+      <td>Ota et al., 2013b</td>
+    </tr>
+    <tr>
+      <td colspan="6">EV-contained</td>
+    </tr>
+    <tr>
+      <td>Vesicular RANK</td>
+      <td>Receptor activator of nuclear factor κB</td>
+      <td>RANKL</td>
+      <td>Promotes osteoblast differentiation and bone formation in vitro and in vivo.</td>
+      <td>The binding activates RANKL reverse signaling, triggering, the PI3K–Akt–mTORC1 pathway with subsequent production of RUNX2 by osteoblasts.</td>
+      <td>Ikebuchi et al., 2018</td>
+    </tr>
+    <tr>
+      <td>miR-214-3p</td>
+      <td></td>
+      <td>EPHA2</td>
+      <td>Suppresses osteoblast differentiation and bone formation in vitro and in vivo.</td>
+      <td>miR-214-3p inhibits ATF4 and Osterix expression.</td>
+      <td>Li et al., 2016; Wang et al., 2013; Shi et al., 2013</td>
+    </tr>
+    <tr>
+      <td>miR-324</td>
+      <td></td>
+      <td>N/A</td>
+      <td>Enhances osteoblast differentiation and mineralization in vitro and in vivo.</td>
+      <td>miR-324 downregulates the expression of ARHGAP1, a member of the RhoGAP family containing GTPase-activating proteins, stimulating RhoA/ROCK signaling.</td>
+      <td>Liang et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+_MSCs: mesenchymal stem cells; N/A: unclear or missing evidence. *Still controversial._
 
 ## Sphingosine-1-phosphate
 

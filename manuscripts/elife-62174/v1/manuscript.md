@@ -36,47 +36,115 @@ Iron is stored in ferritin protein complexes in the cell to prevent an increase 
 
 ## Results
 
-## Generation and characterization of cardiomyocyte-specific NCOA4-deficient mice
+### Generation and characterization of cardiomyocyte-specific NCOA4-deficient mice
 
 To examine the in vivo role of NCOA4-dependent ferritin degradation in the heart, cardiomyocyte-specific NCOA4-deficient mice were generated (Figure 1—figure supplement 1A and B). The homozygous floxed Ncoa4 mice (Ncoa4flox/flox) appeared normal and were externally indistinguishable from littermates of other genotypes. The Ncoa4flox/flox mice were crossed with transgenic mice expressing α-myosin heavy chain (Myh6) promoter-driven Cre recombinase (Myh6-Cre) (Nishida et al., 2004) to generate cardiomyocyte-specific NCOA4-deficient mice (Ncoa4–/–), Ncoa4flox/flox;Myh6-Cre+. The Ncoa4flox/flox;Myh6-Cre– littermates were used as controls (Ncoa4+/+). The Ncoa4+/+ and Ncoa4–/– mice were born at the expected Mendelian ratio (54 and 51 mice, respectively), and they grew to adulthood and were fertile. The protein and mRNA levels of NCOA4 were significantly decreased in Ncoa4–/– hearts by 84% and 81% compared to control, respectively (Figure 1—figure supplement 1C and D). No differences in any physiological or echocardiographic parameters were observed between the Ncoa4–/– and Ncoa4+/+ mice (Figure 1—source data 2).
 
-## Attenuation of pressure overload-induced cardiac remodeling in NCOA4-deficient mice
+### Attenuation of pressure overload-induced cardiac remodeling in NCOA4-deficient mice
 
 To examine whether NCOA4 is related to cardiac remodeling in vivo, Ncoa4+/+ and Ncoa4–/– mice were subjected to pressure overload employing transverse aortic constriction (TAC) and evaluated 4 weeks after the operation. Pressure overload increased the left ventricular (LV) chamber size, indicated by the end-diastolic and end-systolic LV internal dimensions, and reduced fractional shortening (an index of contractility) in Ncoa4+/+ mice compared to sham-operated controls (Figure 1A and B). These pressure overload-induced changes in heart size and function were suppressed in Ncoa4–/– mice. The calculated LV mass, LV weight-to-tibia length ratio, and the cross-sectional area of cardiomyocytes, which are parameters for cardiac hypertrophy, were elevated by pressure overload in both Ncoa4+/+ and Ncoa4–/– mice, but those were significantly lower in TAC-operated Ncoa4–/– mice than in TAC-operated controls (Figure 1B,C and D). TAC-operated Ncoa4+/+ mice displayed higher mRNA expression levels of the cardiac remodeling markers, Nppa, Nppb, and Myh7 than TAC-operated Ncoa4–/– mice (Figure 1—figure supplement 2). Furthermore, the lung weight-to-tibia length ratio, an index of lung congestion, was significantly elevated in TAC-operated Ncoa4+/+ mice compared to both sham-operated Ncoa4+/+ and TAC-operated Ncoa4–/– mice (Figure 1C). The extent of pressure overload-induced fibrosis in heart sections and the mRNA levels of Col1a2 and Col3a1, markers for fibrosis, in Ncoa4–/– mice were lower than in Ncoa4+/+ mice (Figure 1D and Figure 1—figure supplement 2). There were no differences in echocardiographic parameters between TAC-operated Myh6-Cre+ and Myh6-Cre– mice 4 weeks after TAC (Figure 1—figure supplement 3). Thus, the overexpression of Cre recombinase in the heart has no effect on pressure overload-induced cardiac remodeling. Taken together, NCOA4 deficiency attenuated pressure overload-induced cardiac remodeling, including cardiac hypertrophy and dysfunction, chamber dilation, and fibrosis.
 
-## Attenuation of upregulation of ferritinophagy in pressure-overloaded NCOA4-deficient hearts
+![Figure 1.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig1-v1.jpg)
+
+**Figure 1.:** The Ncoa4+/+ and Ncoa4–/– mice were subjected to pressure overload by transverse aortic constriction (TAC) and analyzed 4 weeks after the operation. (A) Representative images of transthoracic M-mode echocardiographic tracing. Scale bars, 0.1 s and 2 mm, respectively. (B) Echocardiographic parameters of the mice (n = 10 biologically independent samples). LVIDd and LVIDs, end-diastolic and end-systolic left ventricular (LV) internal dimensions; IVSd, end-diastolic interventricular septum thickness; LVPWd, end-diastolic LV posterior wall thickness; FS, fractional shortening. (C) Physiological parameters of the mice (n = 10 biologically independent samples). (D) Representative images of the hematoxylin-eosin-stained (upper), Masson’s trichrome-stained (middle), and wheat germ agglutinin-stained (lower) heart sections. Scale bar, 50 μm. The upper and lower right graphs show the ratio of the fibrotic area to whole heart section and the cross-sectional area of cardiomyocytes, respectively (n = 5 biologically independent samples). The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Targeted modification of the Ncoa4 gene. Schematic structures of the wild-type genomic Ncoa4 sequence, the targeting construct, the targeted allele, the floxed allele after flippase recognition target site (FRT)-mediated neomycin-resistance gene (Neo) deletion, and the deleted allele after Cre-mediated recombination are indicated from top to bottom. The black and white arrowheads indicate loxP and FRT sites, respectively. The neomycin resistance gene (PGK-Neo cassette) was inserted between exon six and the downstream loxP site. The diphtheria toxin A (DT) gene was positioned at the 3’ end of the targeting construct for negative selection. The bar labelled as ‘probe’ corresponds to the sequence used for Southern blotting. The scale bar indicates two kbp. (B) Genomic analysis of embryonic stem (ES) cells. To identify homologous recombinants, genomic DNA extracted from ES cells was digested with EcoRV and analyzed by Southern blotting with the 5’ and 3’ probe, respectively. Wild-type and targeted allele respectively showed 7748 and 6,172 bp using the 5’ probe (left) and 5269 and 6,924 bp using the 3’ probe (right). The ES cells with Ncoa4-floxed allele were injected into blastocysts to obtain Ncoa4flox/ mice. (C) Protein expression levels of NCOA4 in Ncoa4+/+ and Ncoa4–/– hearts. Left ventricular homogenates from Ncoa4+/+ and Ncoa4–/– mice were immunoprecipitated with anti-NCOA4 antibody, followed by Western blotting with the antibody. Densitometric analysis is shown. (D) mRNA expression levels of Ncoa4. The average value of NCOA4 (C) or Ncoa4-to-Gapdh ratio (D) in Ncoa4+/+ was set equal to 1. The values are presented as the mean ± SEM of 4 mice for protein expression and eight mice for mRNA expression in each group. The data were evaluated by unpaired, two-tailed Student’s t-test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The Ncoa4+/+ and Ncoa4–/– mice were subjected to TAC. The levels of mRNA were analyzed 4 weeks after the operation (n = 8 biologically independent samples). Gapdh mRNA was used as the loading control. The values are presented as the mean ± SEM. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The Myh6-Cre– and Myh6-Cre mice were subjected to TAC and analyzed 4 weeks after the operation. Echocardiographic parameters of the mice (n = 4 biologically independent samples) are shown. LVIDd and LVIDs, end-diastolic and end-systolic left ventricular (LV) internal dimensions; FS, fractional shortening. The values are presented as the mean ± SEM. The data were evaluated by unpaired, two-tailed Student’s t-test. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+### Attenuation of upregulation of ferritinophagy in pressure-overloaded NCOA4-deficient hearts
 
 The level of ferritinophagy in pressure-overloaded hearts was then evaluated 4 weeks after TAC. The protein level of FTH1 was decreased in Ncoa4+/+ hearts compared to both sham-operated Ncoa4+/+ and TAC-operated Ncoa4–/– hearts (Figure 2A). However, the mRNA level of FTH1 was also decreased in Ncoa4+/+ hearts (Figure 2B). To clarify the ferritinophagic activity, we evaluated the cardiac phenotypes during an earlier time course after pressure overload when the secondary effect to cardiac remodeling was minimal. Cardiac dysfunction and LV chamber dilation were observed in wild-type Ncoa4+/+ hearts (Figure 2—figure supplement 1). Both TAC-operated Ncoa4+/+ and Ncoa4–/– mice showed decreased fractional shortening 3 days after surgery compared to the corresponding sham-operated group. However, there was no significant difference in fractional shortening between TAC-operated Ncoa4+/+ and Ncoa4–/– mice, suggesting mild cardiac dysfunction observed in both groups 3 days after TAC was due to acute response to pressure overload. The protein level of FTH1 decreased from postoperative day 5 compared to sham-operated hearts, while the level of Fth1 mRNA increased 5 and 7 days after TAC and decreased 4 weeks after TAC (Figure 2C and D). NCOA4 is responsible for the selective targeting of the ferritin complex to autophagosomes. In the TAC-operated hearts, the number of LC3B (a marker of an autophagosome)- and FTH1-positive dots increased after postoperative day 5 and then declined 4 weeks after TAC (day 7 versus 4 weeks, p<0.0001), and that of LAMP2a (a marker of a lysosome)- and FTH1-positive dots increased 7 days after TAC (Figure 2E,F,G and H).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig2-v1.jpg)
+
+**Figure 2.:** (A) Western blot analysis of FTH1 in Ncoa4+/+ and Ncoa4–/– hearts 4 weeks after TAC. GAPDH was used as the loading control. The right-hand graphs show the densitometric analysis. The average value for sham-operated Ncoa4+/+ hearts was set to 1 (biologically independent samples: n = 6). (B) mRNA expression of Fth1 in the heart 4 weeks after TAC. Gapdh mRNA was used as the loading control. The average value for sham-operated Ncoa4+/+ hearts was set to 1 (biologically independent samples: n = 8). (C–H) The Ncoa4+/+ mice were subjected to TAC and analyzed 3 days after sham operation and 3, 5, and 7 days and 4 weeks after the operation. (C) Heart homogenates after TAC were subjected to western blot analysis using anti-FTH1 antibody (n = 5 biologically independent samples for each group). GAPDH was used as the loading control. (D) Cardiac Fth1 mRNA levels after TAC (n = 5 biologically independent samples). Gapdh mRNA was used as the loading control. (E and F) Immunofluorescence analysis of LC3B (green) and FTH1 (red) in the heart after TAC (n = 5 biologically independent samples). (G and H) Immunofluorescence analysis of LAMP2a (green) and FTH1 (red) in the heart after TAC (n = 5 biologically independent samples). Scale bar, 5 μm in (E) and (G). Arrows indicate double-positive dots. The values are presented as the mean ± SEM. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05 versus sham-operated group. Exact p-values are provided in Supplementary file 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Time course of changes in the echocardiographic parameters of left ventricular (LV) fractional shortening (FS), the end-diastolic LV internal dimension (LVIDd) and the end-systolic LV internal dimension (LVIDs). Echocardiographic analysis on Ncoa4+/+ and Ncoa4–/– mice were performed before (pre) and 3, 5, and 7 days after TAC (n = 3 biologically independent samples). The values are presented as the mean ± SEM. Two-way analysis of variance (ANOVA) followed by Tukey's multiple comparisons test was used. *p<0.05, **p<0.001, ***p<0.0001. p>0.05, sham-operated Ncoa4+/+ versus TAC-operated Ncoa4+/+. †p<0.05, ††p<0.001, †††p<0.0001. p>0.05, sham-operated Ncoa4–/– versus TAC-operated Ncoa4–/–. ‡p<0.05, ‡‡p<0.001, ‡‡‡p<0.0001. p>0.05, TAC-operated Ncoa4+/+ versus TAC-operated Ncoa4–/–. Exact p-values are provided in Supplementary file 1.
 
 The extent of ferritinophagy in Ncoa4+/+ and Ncoa4–/– mice was then evaluated 7 days after TAC. The ablation of Ncoa4 attenuated the downregulation of FTH1 protein and upregulation of Fth1 mRNA in TAC-operated Ncoa4+/+ hearts (Figure 3A and B). The number of LC3B- and FTH1-positive dots and the number of LAMP2a- and FTH1-positive dots decreased in TAC-operated Ncoa4–/– hearts compared to Ncoa4+/+ hearts (Figure 3C,D,E and F).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig3-v1.jpg)
 
-**Figure 3.:** Ncoa4 in cardiomyocytes showed defective ferritinophagy.(A) Western blot analysis of FTH1 in Ncoa4+/+ and Ncoa4–/– hearts 1 week after transverse aortic constriction (TAC). GAPDH was used as the loading control. The right-hand graphs show the densitometric analysis. The average value for sham-operated Ncoa4+/+ hearts was set to 1 (biologically independent samples: n = 5). (B) mRNA expression of Fth1 in the heart 1 week after TAC. Gapdh mRNA was used as the loading control. The average value for sham-operated Ncoa4+/+ hearts was set to 1 (biologically independent samples: n = 5). (C and D) Immunofluorescence analysis of LC3B (green) and FTH1 (red) in the heart 1 week after TAC. The number of LC3B- and FTH1-positive dots is shown in (D). (E and F) Immunofluorescence analysis of LAMP2a (green) and FTH1 (red) in the heart 1 week after TAC. The number of LAPM2a- and FTH1-positive dots is shown in (F). In (C) and (E), images of the square in the merged images are shown at higher magnification in the right three columns. Scale bar, 5 μm. Arrows indicate double-positive dots. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Western blot analysis of FTH1 in Ncoa4+/+ and Ncoa4–/– hearts 1 week after transverse aortic constriction (TAC). GAPDH was used as the loading control. The right-hand graphs show the densitometric analysis. The average value for sham-operated Ncoa4+/+ hearts was set to 1 (biologically independent samples: n = 5). (B) mRNA expression of Fth1 in the heart 1 week after TAC. Gapdh mRNA was used as the loading control. The average value for sham-operated Ncoa4+/+ hearts was set to 1 (biologically independent samples: n = 5). (C and D) Immunofluorescence analysis of LC3B (green) and FTH1 (red) in the heart 1 week after TAC. The number of LC3B- and FTH1-positive dots is shown in (D). (E and F) Immunofluorescence analysis of LAMP2a (green) and FTH1 (red) in the heart 1 week after TAC. The number of LAPM2a- and FTH1-positive dots is shown in (F). In (C) and (E), images of the square in the merged images are shown at higher magnification in the right three columns. Scale bar, 5 μm. Arrows indicate double-positive dots. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
 
-## Erythropoiesis in NCOA4-deficient mice
+### Erythropoiesis in NCOA4-deficient mice
 
 To determine whether the failure of cardiomyocyte-specific NCOA4-deficient mice to degrade ferritin in cardiomyocytes affects erythropoiesis, as reported in global NCOA4-deficient mice (Bellelli et al., 2016), we explored the effect of NCOA4 deficiency in the heart on red blood cell parameters (Figure 4—source data 2). There were no significant differences in hematological parameters, serum iron, and transferrin saturation between any groups. Pressure overload reduced serum ferritin compared to the corresponding sham-operated group, but there was no significant difference between TAC-operated Ncoa4+/+ and Ncoa4–/– mice. Serum ferritin is both a marker of liver iron stores and acute inflammatory response (Kell and Pretorius, 2014). TAC decreased the level of total non-heme iron in both Ncoa4+/+ and Ncoa4–/– livers, but there was no significant difference in the level between Ncoa4+/+ and Ncoa4–/– mice (Figure 4—figure supplement 1A). TAC increased the serum IL-6 level in both Ncoa4+/+ and Ncoa4–/– mice, which was higher in Ncoa4+/+ than that in Ncoa4–/– (Figure 4—figure supplement 1B). It has been reported that the serum level of IL-6 in the patients with heart failure is related to its severity (Hirota et al., 2004). Thus, the reduced level of serum ferritin level in TAC-operated mice may be due to the reduction in liver iron stores.
 
-## Iron metabolism in pressure-overloaded NCOA4-deficient hearts
+### Iron metabolism in pressure-overloaded NCOA4-deficient hearts
 
 Next, we assessed the effect of pressure overload on iron metabolism in the heart (Figure 4A). Increased free ferrous iron plays a critical role in the Fenton reaction during iron-dependent necrosis. Pressure overload decreased the total non-heme iron content in both Ncoa4+/+ and Ncoa4–/– hearts. The level of ferrous iron in Ncoa4+/+ hearts was higher than that in Ncoa4–/– hearts under pressure overload, whereas the level of ferric iron was lower in Ncoa4+/+ hearts than in Ncoa4–/– hearts. The ratio of ferrous iron to FTH1, which represents the non-binding fraction of ferrous iron to FTH1, was higher in TAC-operated Ncoa4+/+ hearts than in the sham-operated controls and TAC-operated Ncoa4–/– hearts, suggesting free ferrous iron overload in TAC-operated Ncoa4+/+ hearts. When iron is limited, regulatory proteins (IRPs) bind to iron regulatory elements (IREs) found in untranslated regions (UTR) of mRNA involved in iron transport and storage (Anderson et al., 2012). IRP binding to IREs found in the 5’ UTR of mRNA encoding FTH1, FTL and ferroportin 1 (exports iron out of the cell, also known as solute carrier family 40 member 1; SLC40A1) blocks the initiation of translation. IREs, found in the 3’ UTR of transferrin receptor 1 (TFRC; the membrane receptor for iron), divalent metal iron transport (solute carrier family 11 member 2; SLC11A2), cell division cycle 14A (CDC14A), and CDC binding protein kinase alpha (CDC42BPA), bind IRPs to stabilize the mRNA by inhibiting nuclease digestion. The levels of proteins related to intracellular iron metabolism such as IREB2, SLC40A1, and TFRC showed no differences between TAC-operated groups (Figure 4—figure supplement 2A). There were no significant differences in the mRNA levels of Tfrc, Slc11a2, Cdc14a, and Cdc42bpa between TAC-operated groups (Figure 4—figure supplement 2B). The binding of IRP with the 5’ UTR of Slc40a1 exhibited no difference between TAC-operated groups (Figure 4—figure supplement 2C). These suggest that IRP system is impaired in TAC-operated Ncoa4+/+ mice.
 
-## Lipid oxidation in pressure-overloaded NCOA4-deficient hearts
+![Figure 4.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig4-v1.jpg)
+
+**Figure 4.:** (A) Tissue levels of total non-heme, ferrous, and ferric iron in Ncoa4+/+ and Ncoa4–/– hearts 4 weeks after transverse aortic constriction (TAC) (n = 6 biologically independent samples). The ratio of the ferrous iron level to the FTH1 protein level is shown in the right-most panel. The FTH1 protein level for sham-operated Ncoa4+/+ estimated as Western blot analysis in hearts was set to 1. (B) Malondialdehyde (MDA) levels in heart homogenates (n = 5 biologically independent samples). (C) Ptgs2 mRNA levels in the heart (n = 8 biologically independent samples). (D) Serum troponin T (TnT) levels (n = 8 biologically independent samples). (E) Glutathione peroxidase 4 (GPX4) levels in the heart homogenates. The right panel shows the ratio of GPX4 to GAPDH (n = 6 biologically independent samples). (F) The levels of total glutathione (GSH+GSSG), reduced (GSH) and oxidized (GSSG) glutathione and the ratio of GSH to GSSG in heart homogenates (n = 5 biologically independent samples). GSH levels were calculated by subtracting GSSG from total glutathione. (G) Cardiac glutamine levels (n = 5 biologically independent samples). The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Tissue levels of total non-heme iron in Ncoa4+/+ and Ncoa4–/– livers 4 weeks after TAC (n = 6 biologically independent samples). (B) Serum interleukin 6 (IL-6) levels (n = 8 biologically independent samples). The values are presented as the mean ± SEM. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Homogenates from the heart 4 weeks after TAC were subjected to western blot analysis using antibodies against iron-responsive element-binding protein 2 (IREB2), ferroportin 1 (SLC40A1), and transferrin receptor 1 (TFRC) (n = 6 biologically independent samples). GAPDH was used as the loading control. (B) The levels of mRNA were analyzed 4 weeks after the operation (n = 8 biologically independent samples). Gapdh mRNA was used as the loading control. (C) IRP activation in Ncoa4+/+ and Ncoa4–/– hearts. The activation of IRP was analyzed by EMSA. Protein homogenates from mouse heart were incubated with the 5’ UTR of mouse Slc40a1 containing IRE and subjected to electrophoresis. (n = 3 biologically independent samples). The values are presented as the mean ± SEM. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) 4-Hydroxy-2-noneal (HNE) staining of heart sections. Scale bar, 50 μm. The right panel shows the quantitative analysis of 4-HNE-positive area to whole heart section (n = 5 biologically independent samples). (B) Homogenates from the heart were subjected to western blot analysis using antibodies against superoxide dismutase 2 (SOD2) and heme oxygenase 1 (HO-1) (n = 6 biologically independent samples). GAPDH was used as the loading control. The values are presented as the mean ± SEM. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) The mRNA expression level of Slc7a11 in the heart 4 weeks after TAC (n = 8 biologically independent samples). Gapdh mRNA was used as the loading control. (B) The cystine concentration in the heart was analyzed by high–performance liquid chromatography (HPLC) (n = 4 for sham-operated Ncoa4+/+, n = 5 for TAC-operated Ncoa4+/+, sham-operated Ncoa4–/–, and TAC-operated Ncoa4–/– biologically independent samples). (C) Cardiac glutamate levels (n = 5 biologically independent samples). (D) The mRNA expression levels of Slc38a1, Slc1a5, Slc7a5, Gls1, and Gls2 in the hearts 4 weeks after TAC (n = 8 biologically independent samples). Gapdh mRNA was used as the loading control. The values are presented as the mean ± SEM. The data were evaluated by one-way analysis of variance (ANOVA), followed by Tukey–Kramer’s post hoc test. *p<0.05, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+### Lipid oxidation in pressure-overloaded NCOA4-deficient hearts
 
 Lipid peroxidation is a hallmark of iron-dependent necrosis (Dixon et al., 2012). In Ncoa4+/+ hearts, pressure overload increased the levels of malondialdehyde (MDA) and 4-hydroxy-2-nonenal (4-HNE)-positive area; markers for lipid peroxidation (Ayala et al., 2014; Figure 4B and Figure 4—figure supplement 3A). In contrast, these markers were attenuated in Ncoa4–/– hearts. Ptgs2 mRNA, a putative marker for ferroptosis (Yang et al., 2014), was increased in TAC-operated Ncoa4+/+ hearts but not in Ncoa4–/– hearts (Figure 4C). There were no significant differences in the antioxidant protein levels of superoxide dismutase 2 and heme oxygenase 1 between any groups (Figure 4—figure supplement 3B). The increase in serum troponin T (TnT), a marker for necrotic cell death, in TAC-operated Ncoa4+/+ mice was significantly attenuated by Ncoa4 ablation (Figure 4D). Taken together, these results show that iron-dependent necrosis plays an important role in the development of pressure overload-induced heart failure.
 
-## Glutathione and glutamine metabolism in pressure-overloaded NCOA4-deficient hearts
+### Glutathione and glutamine metabolism in pressure-overloaded NCOA4-deficient hearts
 
 The GPX4 protein level was upregulated in TAC-operated Ncoa4+/+ hearts compared to the corresponding controls, while ablation of Ncoa4 suppressed the pressure overload-induced induction of GPX4 (Figure 4E). The levels of total and reduced glutathione (GSH) decreased and oxidized glutathione (GSSG) increased in TAC-operated Ncoa4+/+ hearts, resulting in a decreased GSH to GSSG ratio in Ncoa4 / hearts (Figure 4F). Ncoa4 ablation normalized the ratio to the sham control level. The cysteine-glutamate antiporter (system Xc–, also known as solute carrier family 7 member 11; SLC7A11) is a key regulator for cystine uptake in cell survival against ferroptosis (Gao et al., 2015). There was no significant difference in the level of Slc7a11 mRNA or cardiac cystine between TAC-operated Ncoa4+/+ and Ncoa4–/– mice (Figure 4—figure supplement 4A and B). The level of glutamate in TAC-operated Ncoa4+/+ hearts was lower than that in sham-operated Ncoa4+/+ or TAC-operated Ncoa4–/– mice (Figure 4—figure supplement 4C). L-glutamine uptake is mainly dependent on the receptors SLC38A1, SLC1A5, and SLC7A5 (McGivan and Bungard, 2007), and L-glutamine is converted into glutamate by glutaminase (GLS1 and GLS2). The cardiac glutamine level decreased in TAC-operated Ncoa4+/+ hearts compared to the corresponding sham-operated mice and was lower than that in TAC-operated Ncoa4–/– hearts (Figure 4G). There were no significant differences in the mRNA levels of the glutamine transporters or glutaminases between TAC-operated groups (Figure 4—figure supplement 4D). The changes in glutathione metabolism and glutaminolysis in TAC-operated Ncoa4+/+ hearts were not as seen in typical ferroptosis.
 
-## Isoproterenol-induced cell death in isolated adult cardiomyocytes
+### Isoproterenol-induced cell death in isolated adult cardiomyocytes
 
 The lipid ROS and labile iron pool during iron-dependent necrosis were further estimated using adult cardiomyocytes isolated from Ncoa4+/+ and Ncoa4–/– hearts. The activation of neurohumoral factors such as catecholamine plays an important role in the pathogenesis of heart failure (Shah and Mann, 2011). The synthetic small-molecule compound erastin inhibits the activity of cysteine–glutamate antiporter, leading to the depletion of GSH (Dixon et al., 2012). High-throughput screening has identified ferrostatin-1 as a potent inhibitor of the accumulation of lipid ROS (Dixon et al., 2012; Friedmann Angeli et al., 2014; Skouta et al., 2014). Erastin or isoproterenol induced cell death in Ncoa4+/+ cardiomyocytes, while this occurred to a lesser extent in Ncoa4–/– cardiomyocytes (Figure 5A and Figure 5—figure supplement 1A). Ferrostatin-1 inhibited both erastin- and isoproterenol-induced cardiomyocyte cell death. Treatment of Ncoa4+/+ cardiomyocytes with either erastin or isoproterenol resulted in an increase in the cellular and lipid ROS levels, as estimated using the fluorescent probes H2DCFDA and C11-BODIPY, respectively (Dixon et al., 2012; Figure 5B and C and Figure 5—figure supplement 1B and C). The application of either ferrostatin-1 or Ncoa4 ablation prevented the generation of erastin- or isoproterenol-induced cellular and lipid ROS, which is in agreement with a previous report that used HT-1080 cells (Dixon et al., 2012). The labile iron pool level was measured using calcein-acetoxymethyl ester (Yoshida et al., 2019). Erastin and isoproterenol could both increase the level of the labile iron pool in Ncoa4+/+ cardiomyocytes, which was attenuated by treatment with ferrostatin-1 (Miotto et al., 2020; Figure 5D and Figure 5—figure supplement 1D). Ncoa4 ablation was effective in reducing the erastin- or isoproterenol-induced upregulation of the labile iron pool. Isoproterenol decreased the protein level of FTH1 in an NCOA4-dependent manner (Figure 5E). A small molecule, RSL3, is another ferroptosis inducer, which binds and inhibits GPX4 (Yang et al., 2014). RSL3 induced cardiomyocyte death, which was attenuated by Ncoa4 ablation or ferrostatin-1 treatment (Figure 5—figure supplement 2).
 
-## Attenuation of the development of cardiac remodeling by ferrostatin-1
+![Figure 5.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cell death assay. Cell death was estimated using a Live/Dead Viability/Cytotoxicity Assay Kit. Isolated mouse cardiomyocytes from Ncoa4+/+ and Ncoa4–/– hearts were treated with the indicated concentrations of isoproterenol (Iso) with or without ferrostatin-1 (Fer-1) for 4 hr. Calcein-AM (green) is retained in live cells, while ethidium homodimer produces red fluorescence in dead cells. Scale bar, 100 μm. The percentage of dead cells is shown in the middle left-hand graphs (n = 5 biologically independent samples). (B and C) The accumulation of cellular (B) and lipid (C) reactive oxygen species (ROS) were assessed by H2DCFDA and C11-BODIPY, respectively (n = 5 biologically independent samples). (D) The labile iron pool was measured using the calcein-AM method in isolated mouse cardiomyocytes (n = 5 biologically independent samples). (E) Western blot analysis of FTH1 in isolated mouse cardiomyocytes from Ncoa4+/+ and Ncoa4–/– hearts. GAPDH was used as the loading control. The right-hand graphs show the densitometric analysis (n = 5 biologically independent samples). The average value for vehicle-treated without ferrostatin-1 Ncoa4+/+ cardiomyocytes was set to 1. The values are presented as the mean ± SEM. Two-way analysis of variance (ANOVA) followed by Tukey's multiple comparisons test was used. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05 versus Ncoa4+/+ control without ferrostatin-1 treatment. †p<0.05, ††p<0.001, †††p<0.0001. NS, p>0.05 versus the corresponding group without ferrostatin-1 treatment. ‡p<0.05, ‡‡p<0.001, ‡‡‡p<0.0001. NS, p>0.05 versus the corresponding Ncoa4+/+. Exact p-values are provided in Supplementary file 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cell death assay. Cell death was estimated using a Live/Dead Viability/Cytotoxicity Assay Kit. Isolated mouse cardiomyocytes from Ncoa4+/+ and Ncoa4–/– hearts were treated with the indicated concentrations of erastin (Era) with or without ferrostatin-1 (Fer-1) for 4 hr. Calcein-AM (green) is retained in live cells, while ethidium homodimer produces red fluorescence in dead cells. Scale bar, 100 μm. The percentage of dead cells is shown in the middle left-hand graphs (n = 5 biologically independent samples). (B and C) The accumulation of cellular (B) and lipid (C) reactive oxygen species (ROS) were assessed by H2DCFDA and C11-BODIPY, respectively (n = 5 biologically independent samples). (D) The labile iron pool was measured using the calcein-AM method in isolated mouse cardiomyocytes (n = 5 biologically independent samples). The average value for vehicle-treated without ferrostatin-1 Ncoa4+/+ cardiomyocytes was set to 1. The values are presented as the mean ± SEM. Two-way analysis of variance (ANOVA) followed by Tukey's multiple comparisons test was used. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05 versus Ncoa4+/+ control without ferrostatin-1 treatment. †p<0.05, ††p<0.001, †††p<0.0001. NS, p>0.05 versus the corresponding group without ferrostatin-1 treatment. ‡p<0.05, ‡‡p<0.001, ‡‡‡p<0.0001. NS, p>0.05 versus the corresponding Ncoa4+/+. Exact p-values are provided in Supplementary file 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Cell death assay. Cell death was estimated using a Live/Dead Viability/Cytotoxicity Assay Kit. Isolated mouse cardiomyocytes from Ncoa4+/+ and Ncoa4–/– hearts were treated with the indicated concentrations of RSL3 with or without ferrostatin-1 (Fer-1) for 4 hr. Calcein-AM (green) is retained in live cells, while ethidium homodimer produces red fluorescence in dead cells. Scale bar, 100 μm. The percentage of dead cells is shown in the graphs (n = 5 biologically independent samples). The values are presented as the mean ± SEM. Two-way analysis of variance (ANOVA) followed by Tukey's multiple comparisons test was used. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05 versus Ncoa4+/+ control without ferrostatin-1 treatment. †p<0.05, ††p<0.001, †††p<0.0001. NS, p>0.05 versus the corresponding group without ferrostatin-1 treatment. ‡p<0.05, ‡‡p<0.001, ‡‡‡p<0.0001. NS, p>0.05 versus the corresponding Ncoa4+/+. Exact p-values are provided in Supplementary file 1.
+
+### Attenuation of the development of cardiac remodeling by ferrostatin-1
 
 To examine the involvement of iron-dependent necrosis in the pathogenesis of heart failure and whether iron-dependent necrosis is a therapeutic target for the disease, wild-type C57BL/6J mice received an intraperitoneal daily injection of ferrostatin-1. Four weeks after TAC, saline-administered mice exhibited LV chamber dilation and cardiac dysfunction (Figure 6A and B). Ferrostatin-1 administration significantly reduced the LV chamber size and improved cardiac function in TAC-operated mice. Pressure overload-induced increases in LV mass and weight, the cross-sectional area of cardiomyocytes, and remodeling markers such as Nppa, Nppb, and Myh7 mRNAs were significantly attenuated in ferrostatin-1-treated hearts (Figure 6C and D and Figure 6—figure supplement 1A). TAC-operated saline-treated mice exhibited cardiac fibrosis, which was diminished by ferrostatin-1 (Figure 6D and Figure 6—figure supplement 1A). Thus, ferrostatin-1 prevented the development of pressure overload-induced cardiomyopathy. TAC-operated control mice showed increased lipid ROS and Ptgs2 mRNA, which was inhibited by the administration of ferrostatin-1 (Figure 6E and F and Figure 6—figure supplement 1B). Taken together, these findings indicate that iron-dependent necrosis was involved in the pathogenesis of pressure overload-induced heart failure in the wild-type mice.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig6-v1.jpg)
+
+**Figure 6.:** Wild-type C57BL/6J mice were subjected to transverse aortic constriction (TAC) and analyzed 4 weeks after the operation. Ferrostatin-1 (Fer-1) or saline was intraperitoneally administered daily starting 1 day before TAC. (A) Representative images of transthoracic M-mode echocardiographic tracing. Scale bars, 0.1 s and 2 mm, respectively. (B) Echocardiographic parameters of the mice (n = 10 biologically independent samples). (C) Physiological parameters of the mice (n = 10 biologically independent samples). (D) Histological analysis of the heart. Scale bar, 50 μm. The upper and lower right graphs show the ratio of the fibrotic area to whole heart section and the cross-sectional area of cardiomyocytes, respectively (n = 5 biologically independent samples). (E) Cardiac MDA levels (n = 5 biologically independent samples). (F) Ptgs2 mRNA levels in the hearts (n = 8 biologically independent samples). The data were evaluated by one-way analysis of variance (ANOVA) followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The wild-type C57BL/6J mice were subjected to TAC. Ferrostatin-1 (Fer-1) was intraperitoneally administered daily starting one day before TAC. (A) The levels of mRNA were analyzed 4 weeks after the operation (n = 8 biologically independent samples). Gapdh mRNA was used as the loading control. (B) 4-Hydroxy-2-noneal (4-HNE) staining of heart sections. Scale bar, 50 μm. The right panel shows the quantitative analysis of 4-HNE-positive area (n = 5 biologically independent samples). The values are presented as the mean ± SEM. The data were evaluated by one-way analysis of variance (ANOVA) followed by Tukey–Kramer’s post hoc test. *p<0.05, **p<0.001, ***p<0.0001. NS, p>0.05. Exact p-values are provided in Supplementary file 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62174/elife-62174-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The Ncoa4–/– mice were subjected to TAC. Ferrostatin-1 (Fer-1) or saline was intraperitoneally administered daily starting one day before TAC. (A) Echocardiographic parameters of the mice (n = 5 biologically independent samples). LVIDd and LVIDs, end-diastolic and end-systolic left ventricular (LV) internal dimensions; IVSd, end-diastolic interventricular septum thickness; LVPWd, end-diastolic LV posterior wall thickness; FS, fractional shortening. (B) Physiological parameters of the mice (n = 5 biologically independent samples). The values are presented as the mean ± SEM. The data were evaluated by unpaired, two-tailed Student’s t-test. NS, p>0.05. Exact P p-values are provided in Supplementary file 1.
 
 To examine whether iron-dependent cell death is downstream of NCOA4, Ncoa4–/– mice received an intraperitoneal daily injection of ferrostatin-1. Four weeks after TAC, there was no significant difference in the extent of cardiac remodeling between saline- and ferrostatin-1-treated mice (Figure 6—figure supplement 2).
 
@@ -98,82 +166,512 @@ In summary, the data presented here reveal a novel mechanism underlying the path
 
 ## Materials and methods
 
-## Animal studies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (male Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Envigo UK</td>
+      <td></td>
+      <td>C57BL/6OlaHsd</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (male Mus musculus)</td>
+      <td>Ncoa4flox/flox;Myh6-Cre+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (male Mus musculus)</td>
+      <td>Ncoa4flox/flox;Myh6-Cre–</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (male Mus musculus)</td>
+      <td>Myh6-Cre+</td>
+      <td>Nishida et al., 2004</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody to NCOA4</td>
+      <td>Sigma-Aldrich</td>
+      <td>SAB1404569, Lot: HC071-1F11, RRID:AB_10759525</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody to FTH1</td>
+      <td>Cell Signaling Technology</td>
+      <td>3998, Lot: 2, RRID:AB_1903974</td>
+      <td>for western blots, (1:1000); for immunofluorescence, (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody to LC3B</td>
+      <td>Cell Signaling Technology</td>
+      <td>83506, Lot: 1, RRID:AB_2800018</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal antibody to LAMP2a</td>
+      <td>Abcam</td>
+      <td>ab13524, Lot: GR3317907-1, RRID:AB_2134736</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal antibody to GPX4</td>
+      <td>Millipore</td>
+      <td>MABS1274, Lot: Q2633070, RRID:AB_2885039</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody to 4-HNE</td>
+      <td>Millipore</td>
+      <td>393207, Lot: 3167038, RRID:AB_566310</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody to IREB2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA1-16543, Lot: TK2666362A, RRID:AB_2126583</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody to SLC40A1</td>
+      <td>Alpha Diagnostic International</td>
+      <td>MTP11-A, Lot: 1169899A3-L, RRID:AB_1619475</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody to TFRC</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>13–6800, Lot: TI275369, RRID:AB_2533029</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody to SOD2</td>
+      <td>Abcam</td>
+      <td>ab13534, Lot: GR33618-66, RRID:AB_2191667</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody to HO-1</td>
+      <td>Enzo Life Sciences</td>
+      <td>ADI-SPA-895, Lot: 03301708, RRID:AB_10618757</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody to GAPDH</td>
+      <td>Sigma-Aldrich</td>
+      <td>G8795, Lot: 056M4856V, RRID:AB_1078991</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse immunoglobulin</td>
+      <td>Santa Cruz biochemistry</td>
+      <td>sc-2025, RRID:AB_737182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG</td>
+      <td>Abcam</td>
+      <td>ab37415, RRID:AB_2631996</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fluorescein isothiocyanate-conjugated lectin</td>
+      <td>Sigma-Aldrich</td>
+      <td>L4895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 donkey-anti-mouse</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A21202, RRID:AB_141607</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 donkey-anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A10042, RRID:AB_2534017</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat-anti-rat</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11006, RRID:AB_2534074</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680LT Donkey anti-Mouse IgG Secondary Antibody</td>
+      <td>LI-COR Biosciences</td>
+      <td>926–68020, RRID:AB_10706161</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680LT Donkey anti-Rabbit IgG Secondary Antibody</td>
+      <td>LI-COR Biosciences</td>
+      <td>926–68023, RRID:AB_10706167</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680LT Goat anti-Rat IgG Secondary Antibody</td>
+      <td>LI-COR Biosciences</td>
+      <td>926–68029, RRID:AB_10715073</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Protein G Magnetic Beads</td>
+      <td>Thermo Scientific</td>
+      <td>88848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Fibrous Tissue Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>74704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript IV First-Strand Synthesis System</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>18091050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp SYBR Green Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A25742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Masson's Trichrome Stain Kit</td>
+      <td>Polysciences, Inc</td>
+      <td>25088–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VECTASTAIN Elite ABC-HRP Kit, Peroxidase (Rabbit IgG)</td>
+      <td>Vector Laboratories Inc</td>
+      <td>PK-6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAB Substrate Kit, Peroxidase (HRP), with Nickel, (3,3'-diaminobenzidine)</td>
+      <td>Vector Laboratories Inc</td>
+      <td>SK-4100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>normal donkey serum</td>
+      <td>Abcam</td>
+      <td>ab7475, RRID:AB_2885042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>normal goat serum</td>
+      <td>Abcam</td>
+      <td>ab7481, RRID:AB_2716553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProLong Gold Antifade Reagent with DAPI</td>
+      <td>Life Technologies</td>
+      <td>P36935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Ferritin ELISA Kit (FTL)</td>
+      <td>Abcam</td>
+      <td>ab157713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pointe Scientific Iron/TIBC Reagents</td>
+      <td>Pointe Scientific</td>
+      <td>23-666-320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ELISA Kit for Troponin T Type 2, Cardiac (TNNT2)</td>
+      <td>Cloud-Clone</td>
+      <td>SED232Mu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-6 Quantikine ELISA Kit</td>
+      <td>R and D Systems</td>
+      <td>M6000B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Iron Assay Kit</td>
+      <td>Abcam</td>
+      <td>ab83366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipid Peroxidation (MDA) Assay Kit</td>
+      <td>Abcam</td>
+      <td>ab118970</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GSSG/GSH Quantification Kit</td>
+      <td>Dojindo</td>
+      <td>G257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glutamine Assay Kit</td>
+      <td>Abcam</td>
+      <td>ab197011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glutamate Assay Kit</td>
+      <td>Abcam</td>
+      <td>ab83389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Electrophoretic Mobility-Shift Assay (EMSA) Kit</td>
+      <td>Invitrogen</td>
+      <td>E33075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zero Blunt TOPO PCR Cloning Kit</td>
+      <td>Invitrogen</td>
+      <td>451245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiScribe T7 Quick High Yield RNA Synthesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E2050S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ferrostatin-1</td>
+      <td>Sigma Aldrich</td>
+      <td>SML0583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoprenaline hydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>I5627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Erastin</td>
+      <td>Sigma Aldrich</td>
+      <td>E7781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1S,3R-RSL 3</td>
+      <td>Sigma Aldrich</td>
+      <td>SML2234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>calcein-AM</td>
+      <td>Invitrogen</td>
+      <td>C1430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ethidium homodimer-1</td>
+      <td>Invitrogen</td>
+      <td>E1169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2’, 7’-dichlorodihydrofluorescein diacetate (H2DCFDA)</td>
+      <td>Invitrogen</td>
+      <td>D399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C11-BODIPY</td>
+      <td>Invitrogen</td>
+      <td>D3861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pyridoxal isonicotinoyl hydrazine (PIH)</td>
+      <td>Abcam</td>
+      <td>ab145871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>Version 1.51 r, RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EZChrom Elite</td>
+      <td>Agilent Technologies</td>
+      <td>Version 3.3.2.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal studies
 
 All procedures were carried out in accordance with the King’s College London Ethical Review Process Committee and the UK Home Office (Project License No. PPL70/8889) and were performed in accordance with the Guidance on the Operation of the Animals (Scientific Procedures) Act, 1986 (UK Home Office).
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used in this study: monoclonal mouse antibody to NCOA4 (Sigma-Aldrich, SAB1404569, Lot: HC071-1F11, 1/1000), polyclonal rabbit antibody to FTH1 (Cell Signaling Technology, 3998, Lot: 2, for western blots, 1/1000; for immunofluorescence, 1/100), monoclonal mouse antibody to LC3B (Cell Signaling Technology: 83506, Lot: 1, 1/100), monoclonal rat antibody to LAMP2a (Abcam: ab13524, Lot: GR3317907-1, 1/100), monoclonal rat antibody to GPX4 (Millipore: MABS1274, Lot: Q2633070, 1/1000), polyclonal rabbit antibody to 4-HNE (Millipore: 393207, Lot: 3167038, 1/500), polyclonal rabbit antibody to IREB2 (Thermo Fisher Scientific: PA1-16543, Lot: TK2666362A, 1/250), polyclonal rabbit antibody to SLC40A1 (Alpha Diagnostic International: MTP11-A, Lot: 1169899A3-L, 1/1000), monoclonal mouse antibody to TFRC (Thermo Fisher Scientific: 13–6800, Lot: TI275369, 1/1000), polyclonal rabbit antibody to SOD2 (Abcam: ab13534, Lot: GR33618-66, 1/1000), polyclonal rabbit antibody to HO-1 (Enzo Life Sciences: ADI-SPA-895, Lot: 03301708, 1/1000), monoclonal mouse antibody to GAPDH (Sigma-Aldrich: G8795, Lot: 056M4856V, 1/10,000).
 
-## Generation of cardiomyocyte-specific NCOA4-deficient mice
+### Generation of cardiomyocyte-specific NCOA4-deficient mice
 
 The Ncoa4 gene-targeting vector was constructed using mouse C57BL/6J genomic DNA (Misaka et al., 2018). The targeting vector was electroporated into ES cells (F1; SVJ129 and C57BL/6J), and the transfected ES clones were selected for neomycin resistance according to standard protocols. The neomycin-resistant ES clones with targeted homologous recombination were screened by PCR and further confirmed by Southern blotting. Circular pCAG-Flpe plasmid and pPGK-Puro plasmid were electroporated into the selected ES clones, and the transfected ES clones were selected for puromycin resistance according to standard protocols. The neomycin cassette-excised ES clones were screened by PCR. Southern blotting and karyotyping analyses were performed to obtain ES clones exhibiting the desired homologous recombination and normal karyotype. These targeted ES clones were injected into blastocyst C57BL/6J mouse embryos to generate chimeric mice. The chimeric mice were crossed with C57BL/6J mice to validate germ line transmission. We generated mice with the floxed Ncoa4 allele and crossed them with transgenic mice expressing α-myosin heavy chain promoter-driven Cre recombinase (Myh6-Cre) to obtain cardiomyocyte-specific NCOA4-deficient mice (Ncoa4flox/flox;Myh6-Cre+) (Nishida et al., 2004). Ncoa4flox/flox;Myh6-Cre– littermates were used as controls. The mice had access to food and water ad libitum.
 
-## Immunoprecipitation and western blot analysis
+### Immunoprecipitation and western blot analysis
 
 To evaluate NCOA4 protein expression level in hearts, the protein was immunoprecipitated with an anti-NCOA4 antibody, followed by immunoblot with the antibody. One hundred micrograms protein homogenates with lysis buffer (50 mmol/L Tris-HCl, 50 mmol/L NaCl, 1 mmol/L EDTA, 1% NP-40, a protease inhibitor cocktail, pH 7.4) were precleared with 20 μL of magnetic beads-coupled protein G (Thermo Fisher Scientific, 1004D). Precleared homogenates were subjected to immunoprecipitation using 1 μg of the anti-NCOA4 antibody (Sigma-Aldrich, SAB1404569) or mouse immunoglobulin G (IgG; Santa Cruz biochemistry, sc-2025) and 40 μL of magnetic beads-coupled protein G at 4 °C for 2 hr. The precipitated complexes were washed three times with lysis buffer. Protein homogenates with lysis buffer were extracted from the left ventricles. The precipitated complexes or 5–15 μg of total protein homogenates were subjected to western blot analysis. After incubation with secondary antibody, the blot was developed with an infrared imaging system (ODYSSEY CLx; LI-COR Biosciences). Image Studio software (LI-COR Biosciences) was used for quantitative analysis to evaluate protein expression levels.
 
-## Real-time quantitative reverse transcription PCR
+### Real-time quantitative reverse transcription PCR
 
 Total RNA was isolated from the left ventricles using RNeasy Fibrous Tissue Mini Kit (QIAGEN). The mRNA expression levels were determined by quantitative reverse transcription polymerase chain reaction (PCR) using SuperScript IV reverse transcriptase (Thermo Fisher Scientific Inc) for reverse transcription and a PowerUp SYBR Green PCR Master Mix (Thermo Fisher Scientific) for the quantitative PCR reaction with the following PCR primers: forward 5’-CTATATCCAGGTGCCAGAGCAG-3’ and reverse 5’-TTGCTTACAAGAAGCCACTCAC-3’ for Ncoa4, forward 5’-TGGAGTTGTATGCCTCCTACG-3’ and reverse 5’-TGGAGAAAGTATTTGGCAAAGTT-3’ for Fth1, forward 5’-CAGACAACATAAACTGCGCCTT-3’ and reverse 5’-GATACACCTCTCCACCAATGACC-3’ for Ptgs2, forward 5’-TGGCCAGCAAGATTGTGGAGAT-3’ and reverse 5’-TTTGCGGGTGAAGAGGAAGT-3’ for Slc1a5, forward 5’-ATGGAGTGTGGCATTGGCTT-3’ and reverse 5’-TGCATCAGCTTCTGGCAGAGCA-3’ for Slc7a5, forward 5’-TCTACAGGATTGCGAACATCT-3’ and reverse 5’-CTTTGTCTAGCATGACACCATCT-3’ for Gls1, forward 5’-AGCGTATCCCTATCCACAAGTTCA-3’ and reverse 5’-GCAGTCCAGTGGCCTTCAGAG-3’ for Gls2, forward 5’-TCGTCTTGGCCTTTTGGCT–3’ and reverse 5’-TCCAGGTGGTCTAGCAGGTTCT-3’ for Nppa, forward 5’-AAGTCCTAGCCAGTCTCCAGA-3’ and reverse 5’-GAGCTGTCTCTGGGCCATTTC-3’ for Nppb, forward 5’-ATGTGCCGGACCTTGGAAG-3’ and reverse 5’-CCTCGGGTTAGCTGAGAGATCA-3’ for Myh7, forward 5’-ACGCGGACTCTGTTGCTGCT-3’ and reverse 5’-GCGGGACCCCTTTGTCCACG-3’ for Col1a2, forward 5’-CCCGGGTGCTCCTGGACAGA-3’ and reverse 5’-CACCCTGAGGACCAGGCGGA-3’ for Col3a1, forward 5’-TGCAATCTGCATCTCCATGGCT-3’ and reverse 5’-AAGCAGGAGAGGGCAACAAA-3’ for Slc7a11, forward 5’-TGGAATCCCAGCAGTTTCTT-3’ and reverse 5’-GCTGCTGTACGAACCATTTG-3’ for Tfrc, forward 5’-GGCTTTCTTATGAGCATTGCCTA-3’ and reverse 5’-GGAGCACCCAGAGCAGCTTA-3’ for Slc11a2, forward 5’-TGGACCTCTGAACTTGGCAAT-3’ and reverse 5’-AGATGACGGCATAAGCACCTAT-3’ for Cdc14a, forward 5’-TTTCCACCTAAGCGCAAGACT-3’ and reverse 5’-ATGACATGAGAACCCACAGA-3’ for Cdc42bpa, and forward 5’-ATGACAACTTTGTCAAGCTCATTT-3’ and reverse 5’-GGTCCACCACCCTGTTGCT-3’ for Gapdh. PCR standard curves were constructed using the corresponding cDNA and all data were normalized to the Gapdh mRNA content and are expressed as the fold increase over the control group.
 
-## Transverse aortic constriction (TAC) and echocardiography
+### Transverse aortic constriction (TAC) and echocardiography
 
 The 8– to 12 week-old male mice were subjected to TAC using a 26-gauge needle or to a sham surgery, as previously reported (Omiya et al., 2020). In TAC, a small piece of 6–0 silk suture was placed between the innominate and left carotid arteries. Three loose knots were tied around the transverse aorta, and a 26-gauge needle was placed parallel to the transverse aorta. The knots were tied quickly against the needle and the needle was removed promptly to yield a 26-gauge stenosis. Sham surgeries were identical except for the aortic constriction. Echocardiography was conducted with a Vevo 2100 system (Visual Sonics) on conscious mice (Omiya et al., 2020). Noninvasive measurement of the tail blood pressure was also performed on conscious mice using a NP-NIBP Monitor for mice and rats (Muromachi Kikai), as previously described (Omiya et al., 2020).
 
-## Histological analysis
+### Histological analysis
 
 Left ventricle samples were embedded in OCT compound (Thermo Fisher Scientific Inc) and then immediately frozen in liquid nitrogen. The samples were sectioned into 5 μm thick sections. The sections were fixed with acetone for hematoxylin–eosin staining and Masson’s trichrome staining, with 4% paraformaldehyde for wheat germ agglutinin staining and with Bouin’s solution for 4-HNE staining. Hematoxylin–eosin staining and Masson’s trichrome staining (Masson’s Trichrome Stain Kit, Polysciences Inc) were performed on serial sections. For wheat germ agglutinin staining, heart samples were stained with fluorescein isothiocyanate-conjugated lectin (Sigma, L4895) to measure the cross-sectional area of cardiomyocytes. For 4-HNE staining, rabbit anti-4-HNE antibody or control rabbit IgG (Abcam, ab37415) were used as primary antibody, and avidin-peroxidase (Vectastain Elite ABC Kit; Vector Laboratories Inc) and the DAB Peroxidase Substrate Kit (Vector Laboratories Inc) were applied, followed by counterstaining with hematoxylin as described previously (Omiya et al., 2020). Images were captured by an All-in-one fluorescence microscope (BZ-X700, Keyence). Quantitative analyses of the fibrosis fraction and 4-HNE positive area were examined in whole left ventricles and cardiomyocyte cross-sectional areas we examined in five different areas per section and measured using ImageJ (National Institutes of Health; Version 1.51 r).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 The OCT-compound embedded frozen left ventricle samples were used to detect LC3B-FTH1 and LAMP2a-FTH1 co-localization dots. The samples were sectioned into 5 μm thick sections and fixed with 4% paraformaldehyde for immunohistochemical fluorescence staining. The samples were blocked with 10% normal donkey serum (Abcam, ab7475) to detect LC3B-FTH1 co-localization and with 10% normal donkey serum and 10% normal goat serum (Abcam, ab7481) to detect LAMP2a-FTH1 co-localization. The primary antibodies were rabbit anti-FTH1, mouse anti-LC3B, and rat anti-LAMP2a. The secondary antibodies were Alexa Fluor 488 donkey-anti-mouse (Thermo Fisher Scientific: A21202, 1/500), Alexa Fluor 568 donkey-anti-rabbit (Thermo Fisher Scientific: A10042, 1/500), and Alexa Fluor 488 goat-anti-rat (Thermo Fisher Scientific: A11006, 1/500). DAPI (ProLong Gold Antifade Reagent with DAPI; Life Technologies: P36935) was used to detect nuclei. Micrographs were acquired using a Nikon Eclipse Ti inverted microscope (Nikon) equipped with a Yokogawa CSU-X1 spinning disk unit (Yokagawa) and an Andor EMMCD camera (Andor Technology) using a 100x oil immersion objective lens. The co-localization dots were quantified by counting the number of LC3B-FTH1- or LAMP2a-FTH1-positive dots in 10 different areas (magnification 1000x) per section.
 
-## Measurement of hematological parameters, serum ferritin, serum iron, transferrin saturation, serum troponin T, and serum IL-6
+### Measurement of hematological parameters, serum ferritin, serum iron, transferrin saturation, serum troponin T, and serum IL-6
 
 Blood samples were obtained from the inferior vena cava in anesthetized mice. Full blood count and reticulocyte count were measured at Pinmoore Animal Laboratory Services Limited. Blood samples were centrifuged for 30 min at 850 x g to isolate serum fraction. Serum ferritin levels were measured using a Mouse Ferritin ELISA Kit (FTL) (Abcam, ab157713) according to the manufacturer’s protocols. Serum iron levels and transferrin saturation were measured using Pointe Scientific Iron/TIBC Reagents (Pointe Scientific, 23-666-320) according to the manufacturer’s protocols. Serum troponin T levels were measured using the ELISA Kit for Troponin T Type 2, Cardiac (TNNT2) (Cloud-Clone, SED232Mu) according to the manufacturer’s protocols. Serum IL-6 levels were measured using the ELISA Kit for Mouse IL-6 (R and D Systems, M6000B) according to the manufacturer’s protocols.
 
-## Measurement of total non-heme, ferrous, and ferric iron levels in hearts
+### Measurement of total non-heme, ferrous, and ferric iron levels in hearts
 
 Total non-heme, ferrous, and ferric iron in hearts or liver were analyzed using an Iron Assay Kit (Abcam, ab83366) according to the manufacturer’s protocols. Briefly, the whole heart was perfused with saline and 10–20 mg of left ventricle tissue was homogenized in Iron Assay Buffer. The supernatant without the insoluble fraction was separated by centrifugation and used for analysis. A microplate reader was used to measure the absorbance at OD 593 nm. The level of ferric iron was calculated by subtracting ferrous iron from total non-heme iron. The ratio of the ferrous iron level to the FTH1 protein level was calculated to estimate non-binding fraction of ferrous iron to FTH1. The FTH1 protein level for sham-operated Ncoa4+/+ estimated as Western blot analysis in hearts was set to 1.
 
-## Measurement of malondialdehyde (MDA) in hearts
+### Measurement of malondialdehyde (MDA) in hearts
 
 The amount of MDA in the hearts was measured using a Lipid Peroxidation (MDA) Assay Kit (Abcam, ab118970) according to the manufacturer’s protocols. Briefly, 10–20 mg of fresh left ventricle tissue was homogenized in Lysis Solution containing butylated hydroxytoluene. The insoluble fraction was removed by centrifugation, and the supernatant was used for analysis. The supernatants were mixed with thiobarbituric acid (TBA) solution reconstituted in glacial acetic acid and then incubated at 95°C for 60 min. The supernatants containing MDA-TBA adduct were added into a 96-well microplate for analysis. A microplate reader was used to measure the absorbance at OD 532 nm.
 
-## Glutathione quantification
+### Glutathione quantification
 
 Oxidized glutathione (GSSG) and total glutathione in hearts were analyzed using a GSSG/GSH Quantification Kit (Dojindo, G257) according to the manufacturer’s protocols. Briefly, 20–30 mg of fresh left ventricle tissue was homogenized in 5% 5-sulfosalicylic acid (SSA), and the insoluble fraction was removed by centrifugation. The resultant supernatant was added to double-deionized H2O (ddH2O) to reduce the SSA concentration to 0.5% for the assay. A microplate reader was used to measure absorbance at OD 415 nm. The concentration of reduced glutathione (GSH) was calculated by subtracting 2x GSSG from the total glutathione concentration.
 
-## Measurement of glutamine and glutamate concentration in hearts
+### Measurement of glutamine and glutamate concentration in hearts
 
 The glutamine concentration in hearts was analyzed using a Glutamine Assay Kit (Abcam, ab197011) according to the manufacturer’s protocols. Briefly, 10–20 mg of fresh left ventricle tissue was homogenized in ice-cold Hydrolysis Buffer, and the insoluble fraction was removed by centrifugation. The supernatant was added to perchloric acid (PCA). After 5 minutes incubation on ice, the samples were centrifuged and the supernatants were transferred into new tubes. To remove excess PCA, potassium hydroxide was added to the supernatant and the precipitated PCA was removed by centrifugation. A microplate reader was used to measure the absorbance at OD 450 nm. The glutamate concentration in hearts was analyzed using a Glutamate Assay Kit (Abcam, ab83389) according to the manufacturer’s protocols. Briefly, 10–20 mg of fresh left ventricle tissue was homogenized in ice-cold Assay Buffer, and the insoluble fraction was removed by centrifugation. The supernatants were added into a 96-well microplate for analysis. A microplate reader was used to measure the absorbance at OD 450 nm.
 
-## Free amino acid analysis by high–performance liquid chromatography (HPLC)
+### Free amino acid analysis by high–performance liquid chromatography (HPLC)
 
 The mouse hearts were grinded with liquid nitrogen. Proteins were precipitated out from the mouse hearts using a 5% SSA solution, filtered and then measured by ion exchange chromatography with post column ninhydrin derivatization using a Biochrom 30+ amino acid analyzer with a lithium buffer system (Biochrom). EZChrom Elite software (Version 3.3.2.) was used for analysis.
 
-## Electrophoretic mobility–shift assay (EMSA)
+### Electrophoretic mobility–shift assay (EMSA)
 
 Electrophoretic mobility–shift assay (EMSA) was performed using Electrophoretic Mobility-Shift Assay kit (Invitrogen: E33075), according to the manufacturer's instructions. The following IRE containing mouse Slc40a1 5’ UTR with T7 promoter was synthesized by Integrated DNA Technologies (gBlocks Gene Fragments): 5’-TAATACGACTCACTATAGGGGAGAGCAGGCTCGGGGTCTCCTGCGGCCGGTGGATCCTCCAACCCGCTCCCATAAGGCTTTGGCTTTCCAACTTCAGCTACAGTGTTAGCTAAGTTTGGAAAGAAGACAAAAAGAAGACCCCGTGACAGCTTTGCTGTTGTTGTTTGCCTTAGTTGTCCTTTGGGGTCTTTCGGCATAAGGCTGTTGTGCTTATACTGGTGCTATCTTCGGTTCCTCTCACTCCTGTGAACAAGCTCCCGGGCAAGAGCAGCTAAAGCTACCAGCAT-3’. The 287 bp fragment was cloned into pCR-Blunt II-TOPO (Invitrogen: 451245). This plasmid DNA containing the mouse Slc40a1 5’ UTR was linearized by EcoRI and transcribed using HiScrib T7 Quick High Yield RNA Synthesis Kit (New England Biolabs: E2050S). Twenty micrograms of total protein homogenates from mouse heart were incubated with 50 ng of RNA oligonucleotides and subjected to electrophoresis on 6% nondenaturing polyacrylamide gels. The gels were stained using SYBR Green EMSA stain and captured using ChemiDoc-It Imaging Systems with Transilluminator (UVP).
 
-## Isolation of mouse adult cardiomyocytes
+### Isolation of mouse adult cardiomyocytes
 
 Adult cardiomyocytes were isolated from 8- to 12-week-old male mice using a Langendorff system and cultured (Oka et al., 2012). Briefly, after Ncoa4+/+ or Ncoa4–/– male mice had been deeply anesthetized, the heart was quickly excised, cannulated via the aorta, and perfused at constant flow. Hearts were first perfused for 1 minute at 37°C with a perfusion buffer containing 120 mM NaCl, 5.4 mM KCl, 1.6 mM MgCl2, 1.2 mM NaH2PO4, 5.6 mM glucose, 20 mM NaHCO3 and 5 mM taurine (Sigma-Aldrich), followed by collagenase buffer containing 1.2 mg/ml collagenase type 2 (Worthington Biochemical Corporation), and 0.016 mg/ml protease type XIV (Sigma-Aldrich: P-5147). After collagenase and protease digestion, the supernatant containing the dispersed myocytes was filtered into a sterilized tube and gently centrifuged at 20 x g for 3 minutes. The cell pellet was then promptly resuspended in perfusion buffer containing 200 μM Ca2+. The cardiomyocytes were pelleted by gravity for 10 min, the supernatant was aspirated, and the cardiomyocytes were resuspended in perfusion buffer containing 500 µM Ca2+. The final cell pellet was suspended in perfusion buffer containing 1 mM Ca2+, and an appropriate amount of rod-shaped cardiomyocytes was then suspended in Minimum Essential Medium Eagle (MEM) (Sigma-Aldrich: M5650) supplemented with 2.5% fetal bovine serum, 2 mM L-glutamine, 100 U/ml penicillin, and 100 g/ml streptomycin (Sigma-Aldrich: G6784) and plated onto laminin (Invitrogen: 23017–015)-coated plates. After one hour of incubation in the culture medium, the cardiomyocytes were cultured in MEM (glutamine- and phenol red-free, Gibco: 51200038) supplemented with 1x MEM non-essential amino acids solution (Gibco: 11140035), 100 µg/ml bovine serum albumin, insulin (10 mg/l)-transferrin (5.5 mg/l)-sodium selenite (6.7 μg/l) media supplement (ITS; Gibco: 41400045), 2 mM L-glutamine, 100 U/ml penicillin, and 100 g/ml streptomycin (Sigma-Aldrich: G6784).
 
-## Cell death and ROS production
+### Cell death and ROS production
 
 Cardiomyocyte death was estimated using a Live/Dead Viability/Cytotoxicity Assay Kit (Invitrogen). Isolated adult cardiomyocytes were pre-treated with or without 10 μM ferrostatin-1 (Sigma Aldrich: SML0583) for 30 min before treatment with 10 or 20 μM erastin (Sigma Aldrich: E7781), 10 or 100 μM isoproterenol (Sigma Aldrich: I5627), or 2 or 5 μM RSL3 (Sigma Aldrich: SML2234). The cells were then stimulated with or without ferrostatin-1 in the medium for four hours. After stimulation, the cells were stained with 1 mM calcein-AM (Invitrogen: C1430) and 2 μM ethidium homodimer-1 (Invitrogen: E1169) in the medium at 37°C for 10 min. The cells were washed three times using the medium and observed under a microscope (BZ-X700, Keyence). ROS production was measured by applying several indicators. After treatment with erastin or isoproterenol with or without ferrostatin-1, cells were stained with 25 μM 2’, 7’-dichlorodihydrofluorescein diacetate (H2DCFDA; Invitrogen: D399) or C11-BODIPY (Invitrogen: D3861) in medium at 37°C for 10 min. The cells were then washed with the medium. ROS production was quantified using a fluorescence microplate reader.
 
-## Measurement of the labile iron pool
+### Measurement of the labile iron pool
 
 The labile iron pool in the isolated adult cardiomyocytes was measured by the calcein-AM method (Yoshida et al., 2019). After treatment with indicated concentration of erastin or isoproterenol with or without 30 min treatment of 10 μM ferrostatin-1, cells were incubated with 1 μM calcein-AM at 37°C for 10 min and then washed three times with the medium. The fluorescence was measured using a fluorescence microplate reader. Then, the cells were treated with 10 μM pyridoxal isonicotinoyl hydrazine (PIH; Abcam: ab145871) at 37°C for 10 min, and washed three times with the medium. The fluorescence was measured again in a fluorescence microplate reader. The changes in fluorescence (ΔF) upon PIH treatment was calculated for each sample.
 
-## Administration of ferrostatin-1
+### Administration of ferrostatin-1
 
 Twenty-five mg of ferrostatin-1 was dissolved in 2.5 mL of DMSO, and then diluted with saline to the intended concentration. The final DMSO concentration was 5%. One day before and after TAC operation, the C57BL/6J mice or Ncoa4flox/flox;Myh6-Cre+ mice received an intraperitoneal injection of one mg/kg body weight ferrostatin-1 or saline containing 5% DMSO and every day thereafter. Following saline or ferrostain-1 injection, the mice were randomly assigned into sham and TAC groups.
 
-## Statistics
+### Statistics
 
 The results are shown as the mean ± SEM. Statistical analyses were performed using GraphPad Prism 8 (GraphPad Software). Paired data were evaluated by unpaired, two-tailed Student’s t-test. A one-way analysis of variance (ANOVA) followed by Tukey–Kramer’s post hoc test was used for multiple comparisons. A two-way ANOVA followed by Tukey's multiple comparisons test was used for the in vitro experiments. p<0.05 was considered to be statistically significant.

@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Departments of Biochemistry and Molecular Biophysics and Biological Sciences, Columbia University New York United States
-2. https://ror.org/031e6xm45 Department of Chemistry and Biology, Universidad del Norte Barranquilla Colombia
-3. https://ror.org/00fcszb13 Pacific Biosciences Menlo Park United States
-4. https://ror.org/032db5x82 Department of Mathematics and Statistics, University of South Florida Tampa United States
+1. Departments of Biochemistry and Molecular Biophysics and Biological Sciences, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Department of Chemistry and Biology, Universidad del Norte Barranquilla Colombia ([ROR:031e6xm45](https://ror.org/031e6xm45))
+3. Pacific Biosciences Menlo Park United States ([ROR:00fcszb13](https://ror.org/00fcszb13))
+4. Department of Mathematics and Statistics, University of South Florida Tampa United States ([ROR:032db5x82](https://ror.org/032db5x82))
 
 † Corresponding author
 
 ## Abstract
 
-Ciliates are microbial eukaryotes that undergo extensive programmed genome rearrangement, a natural genome editing process that converts long germline chromosomes into smaller gene-rich somatic chromosomes. Three well-studied ciliates include Oxytricha trifallax , Tetrahymena thermophila, and Paramecium tetraurelia , but only the Oxytricha lineage has a massively scrambled genome, whose assembly during development requires hundreds of thousands of precisely programmed DNA joining events, representing the most complex genome dynamics of any known organism. Here we study the emergence of such complex genomes by examining the origin and evolution of discontinuous and scrambled genes in the Oxytricha lineage. This study compares six genomes from three species, the germline and somatic genomes for Euplotes woodruffi , Tetmemena sp ., and the model ciliate O. trifallax . We sequenced, assembled, and annotated the germline and somatic genomes of E. woodruffi, which provides an outgroup , and the germline genome of Tetmemena sp . We find that the germline genome of Tetmemena is as massively scrambled and interrupted as Oxytricha ’s: 13.6% of its gene loci require programmed translocations and/or inversions, with some genes requiring hundreds of precise gene editing events during development. This study revealed that the earlier diverged spirotrich, E. woodruffi , also has a scrambled genome, but only roughly half as many loci (7.3%) are scrambled. Furthermore, its scrambled genes are less complex, together supporting the position of Euplotes as a possible evolutionary intermediate in this lineage, in the process of accumulating complex evolutionary genome rearrangements, all of which require extensive repair to assemble functional coding regions. Comparative analysis also reveals that scrambled loci are often associated with local duplications, supporting a gradual model for the origin of complex, scrambled genomes via many small events of DNA duplication and decay.
+Ciliates are microbial eukaryotes that undergo extensive programmed genome rearrangement, a natural genome editing process that converts long germline chromosomes into smaller gene-rich somatic chromosomes. Three well-studied ciliates include Oxytricha trifallax, Tetrahymena thermophila, and Paramecium tetraurelia, but only the Oxytricha lineage has a massively scrambled genome, whose assembly during development requires hundreds of thousands of precisely programmed DNA joining events, representing the most complex genome dynamics of any known organism. Here we study the emergence of such complex genomes by examining the origin and evolution of discontinuous and scrambled genes in the Oxytricha lineage. This study compares six genomes from three species, the germline and somatic genomes for Euplotes woodruffi, Tetmemena sp., and the model ciliate O. trifallax. We sequenced, assembled, and annotated the germline and somatic genomes of E. woodruffi, which provides an outgroup, and the germline genome of Tetmemena sp. We find that the germline genome of Tetmemena is as massively scrambled and interrupted as Oxytricha’s: 13.6% of its gene loci require programmed translocations and/or inversions, with some genes requiring hundreds of precise gene editing events during development. This study revealed that the earlier diverged spirotrich, E. woodruffi, also has a scrambled genome, but only roughly half as many loci (7.3%) are scrambled. Furthermore, its scrambled genes are less complex, together supporting the position of Euplotes as a possible evolutionary intermediate in this lineage, in the process of accumulating complex evolutionary genome rearrangements, all of which require extensive repair to assemble functional coding regions. Comparative analysis also reveals that scrambled loci are often associated with local duplications, supporting a gradual model for the origin of complex, scrambled genomes via many small events of DNA duplication and decay.
 
 ## Introduction
 
@@ -43,33 +43,173 @@ This study includes the de novo assemblies of the micronuclear genome of Tetmeme
 
 ## Results
 
-## Germline genome expansion via repetitive elements
+### Germline genome expansion via repetitive elements
 
 Tetmemena sp. and E. woodruffi were both propagated in laboratory culture from single cells. The E. woodruffi MAC genome was sequenced and assembled from paired-end Illumina reads from whole cell DNA, which is mostly MAC-derived. For comparative analysis, the MAC genome of E. woodruffi was assembled using the same pipeline previously used for Tetmemena sp. (Chen et al., 2015). Because MIC DNA is significantly more sparse than MAC DNA in individual cells (Prescott, 1994), MIC DNA was enriched before sequencing (see Methods); however, this leads to much lower sequence coverage of the MIC than the MAC. Third-generation long reads (Pacific Biosciences and Oxford Nanopore Technologies) were combined with Illumina paired-end reads (Methods, see genome coverage in Supplementary file 1) to construct hybrid genome assemblies for Tetmemena sp. and E. woodruffi. Though the final genome assemblies are still fragmented, often due to transposon or other repetitive insertions at boundaries (Figure 2—figure supplement 1), the current draft assemblies cover most (>90%) MDSs for 89.1% of MAC nanochromosomes in Tetmemena, and for 90.0% of MAC nanochromosomes in E. woodruffi. This allowed us to establish near-complete rearrangement maps for the newly assembled genomes of Tetmemena and E. woodruffi, at a level comparable to the published reference for O. trifallax (Chen et al., 2014), which is appropriate for comparative analysis.
 
 Table 1 shows a comparison of genome features for the three species. The three MAC genomes are similar in size, with most nanochromosomes bearing only one gene. The size distributions of MAC chromosomes are similar for the three species, though slightly shorter for E. woodruffi, consistent with prior observation via gel electrophoresis (Prescott, 1994, Figure 2—figure supplement 2). Like O. trifallax (Swart et al., 2013), the maximum number of genes encoded on one chromosome is 7–8 (Table 1). Surprisingly, the MIC genome sizes differ substantially: the Tetmemena MIC genome assembly is 237 Mbp, nearly half that of Oxytricha. The E. woodruffi MIC genome assembly is even smaller, approximately 172 Mbp (Table 1).
 
+**Table 1.**
+ Statistics of somatic macronucleus (MAC) and germline micronucleus (MIC) genomes in three species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Oxytricha trifallax</th>
+      <th colspan="2">Tetmemena sp.</th>
+      <th colspan="2">Euplotes woodruffi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>MACa,*</td>
+      <td>MICb</td>
+      <td>MACc</td>
+      <td>MIC†</td>
+      <td>MAC†</td>
+      <td>MIC†</td>
+    </tr>
+    <tr>
+      <td>Genome size (Mbp)</td>
+      <td>67.1</td>
+      <td>496</td>
+      <td>60.6</td>
+      <td>237</td>
+      <td>72.2</td>
+      <td>172</td>
+    </tr>
+    <tr>
+      <td>N50 (bp)</td>
+      <td>3745</td>
+      <td>27,807</td>
+      <td>3339</td>
+      <td>14,722</td>
+      <td>2702</td>
+      <td>44,656</td>
+    </tr>
+    <tr>
+      <td>GC%</td>
+      <td>31.36</td>
+      <td>28.44</td>
+      <td>37.05</td>
+      <td>32.17</td>
+      <td>36.56</td>
+      <td>35.31</td>
+    </tr>
+    <tr>
+      <td>Number of contigs‡</td>
+      <td>22,426</td>
+      <td>25,720</td>
+      <td>25,206</td>
+      <td>28,446</td>
+      <td>35,099</td>
+      <td>17,655</td>
+    </tr>
+    <tr>
+      <td>Two-telomere contigs</td>
+      <td>14,225</td>
+      <td>-</td>
+      <td>15,802</td>
+      <td>-</td>
+      <td>19,061</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Telomeric contigs</td>
+      <td>20,336</td>
+      <td>-</td>
+      <td>21,165</td>
+      <td>-</td>
+      <td>28,294</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Single-gene telomeric contigs</td>
+      <td>76.1%</td>
+      <td>-</td>
+      <td>75.5%</td>
+      <td>-</td>
+      <td>68.5%</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Maximum number of genes on a telomeric contig</td>
+      <td>8</td>
+      <td>-</td>
+      <td>7</td>
+      <td>-</td>
+      <td>8</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_a - Swart et al., 2013; b - Chen et al., 2014; c - Chen et al., 2015.*This study used the MAC genome of Oxytricha from Swart et al., 2013 instead of the long-read assembly in Lindblad et al., 2019, because the short MAC genomes in the present study were primarily assembled from Illumina reads, as in Swart et al., 2013. Lindblad et al., 2019 updated Swart et al., 2013 by including nanochromosomes captured in single long reads, which are currently not available for the other two species. The MIC genomes of Tetmemena and E. woodruffi were assembled to a similar N50 as the reference O. trifallax genome (Chen et al., 2014) for comparative analysis.†Data from this study.‡Telomere-bearing element (TBE) transposon contaminants in MAC contigs were removed (Methods). Therefore, 24 Oxytricha MAC contigs and 13 Tetmemena MAC contigs were removed from the published versions._
+
 The expansion of repetitive elements in the Oxytricha lineage may contribute to the difference in MIC genome sizes (Figure 2A–C). Oxytricha has a variety of tranposable elements (TEs) in the MIC, with telomere-bearing elements (TBEs) of the Tc1/mariner family the most abundant (Chen et al., 2014; Chen and Landweber, 2016, Supplementary file 2). A complete TBE transposon contains three open reading frames (ORFs). ORF1 encodes a 42kD transposase with a DDE-catalytic motif. Though present only in the germline, TBEs are so abundant in hypotrichs that some were partially recovered and assembled from whole cell DNA (Chen and Landweber, 2016). The Oxytricha MIC genome contains ~10,000 complete TBEs and ~24,000 partial TBEs, which occupy approximately 15.20% (75 Mbp) of the genome (Figure 2A, Supplementary file 3; Chen et al., 2014; Chen and Landweber, 2016). Tetmemena, on the other hand, has many fewer TBE ORFs and only 48 complete TBEs (Supplementary file 3), comprising 1.83% (4.3 Mbp) of its MIC genome (Figure 2B). E. crassus has also been reported to have an abundant transposon family called Tec elements (Transposon of Euplotes crassus). Like TBEs, each Tec consists of three ORFs, and ORF1 also encodes a transposase from the Tc1/mariner family (Baird et al., 1989; Krikau and Jahn, 1991; Jahn et al., 1993; Jahn et al., 1989; Klobutcher and Herrick, 1997). The ~57 kD ORF2 encodes a tyrosine-type recombinase (Doak et al., 2003), and the 20kD ORF3 has unknown function (Jahn et al., 1993). Using the three ORFs of Tec1 and Tec2 as queries for search, we identified 74 complete Tec elements in E. woodruffi. Collectively, Tec ORFs occupy 3.6 Mbp, corresponding to only 2.1% of the MIC genome (Figure 2C). Notably, the transposase-encoding ORF1 is more abundant than the other two TBE/Tec ORFs in all three ciliates (Supplementary file 3), consistent with its proposed role in DNA cleavage during genome rearrangement in Oxytricha (Nowacki et al., 2009).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) MIC genome categories for (A) Oxytricha trifallax, (B) Tetmemena sp., and (C) Euplotes woodruffi. Oxytricha displays the greatest proportion of repetitive elements (telomere-bearing elements [TBE], other repeats, and tandem repeats) relative to the other species. Oxytricha MIC-specific genes were annotated in Chen et al., 2014; Miller et al., 2021. (D–F) Phylogenetic analysis of the three TBE open reading frames (ORFs) in Oxytricha and Tetmemena: (D) 42 kD, (E) 22 kD, and (F) 57 kD, suggest that TBE3 (green) is the ancestral transposon family in Oxytricha. For each ORF, 30 protein sequences from each species were randomly subsampled and maximum likelihood trees constructed using PhyML (Guindon et al., 2010).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Complete and partial TBE/Tec elements were annotated by MIC context. Other transposable elements include all subcategories shown in Supplementary file 2. Boundary (light blue): edges of assembled MIC contigs. MIC-specific contig (orange): no macronuclear destined sequence (MDS) identified on the MIC contig so it cannot be annotated as intergenic or a long internally eliminated sequence (IES). Intergenic (green): MIC regions between MDSs for different MAC contigs. IES paralogous (yellow): transposable element (TE) insertions between duplicate (paralogous) MDSs, so they are neither scrambled nor nonscrambled. IES nonscrambled (dark blue): TE insertions that map between consecutive, nonscrambled MDSs for the same MAC contigs. IES scrambled (magenta): MIC regions between nonconsecutive (scrambled) MDSs for the same MAC contig. Note that TEs in IESs or intergenic regions could be flanked by other MIC-limited sequences extending beyond the TE ends.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Chromosomes over 11 kb are excluded from the plot.
 
 Oxytricha contains three families of TBEs. TBE3 appears to be the most ancient among hypotrichs, based on previous analysis of limited MIC genome data (Chen and Landweber, 2016). We constructed phylogenetic trees using randomly subsampled TBE sequences for all three ORFs from Oxytricha and Tetmemena (Figure 2D–F). This confirmed that only TBE3 is present in the Tetmemena MIC genome, as proposed in Chen and Landweber, 2016. This also suggests that TBE1 and TBE2 expanded in Oxytricha after its divergence from other hypotrichous ciliates. As illustrated in Figure 2—figure supplement 1, the MIC genome contexts of TBEs in Oxytricha and Tetmemena are similar, with many TE insertions within IESs, consistent with either IESs as hotspots for TE insertion or with the model (Klobutcher and Herrick, 1997) that some TE insertions may have generated IESs, as demonstrated in Paramecium (Sellis et al., 2021; Feng and Landweber, 2021). Subsequent sequence evolution at the edges of IES/MDS pointers (DuBois and Prescott, 1995) can give rise to boundaries that no longer correspond precisely to TBE ends. For further discussion of the conservation of TBE locations, see the section, ‘Oxytricha and Tetmemena share conserved rearrangement junctions’ below.
 
 Additionally, Repeatmodeler/Repeatmasker identified that Oxytricha has more MIC repeats in the ‘Other’ category than Tetmemena or E. woodruffi (Figure 2, subcategories of repeat content in Supplementary file 2). 214 Mbp of the Oxytricha MIC genome (43%, which is greater than 35.9% reported in Chen et al., 2014 that used earlier versions of the software) is considered repetitive (including TBEs, tandem repeats, and other repeats in Figure 2), versus 31.7 Mbp for Tetmemena (13.4%) and 28.5 Mbp (16.8%) for E. woodruffi. Oxytricha’s additional ~180 Mbp in repeat content partially explains the significantly larger MIC genome size of Oxytricha versus the other spirotrich ciliates.
 
-## The E. woodruffi genome has fewer IESs
+### The E. woodruffi genome has fewer IESs
 
 We used the genome rearrangement annotation tool, Scrambled DNA Rearrangement Annotation Protocol (SDRAP, Braun et al., 2022) to annotate the MIC genomes of Oxytricha, Tetmemena, and E. woodruffi (Methods). Consistent with their close genetic distance, the genomes of O. trifallax and Tetmemena have similarly high levels of discontinuity (Figure 3A). We annotated over 215,299 MDSs in Oxytricha and over 215,624 in Tetmemena with similar MDS length distributions (Figure 3A). By contrast, E. woodruffi MDSs are typically longer, which indicates a less interrupted genome (Figure 3A). We compared the number of MDSs between single-copy orthologs for single-gene MAC chromosomes across the three species and found that the orthologs have similar coding sequence (CDS) lengths (Figure 3—figure supplement 1A–B). There is a strong positive correlation between number of MDSs for orthologous genes in Oxytricha and Tetmemena (R2=0.75, Figure 3B). There is no correlation among number of MDSs between orthologs of E. woodruffi and Oxytricha (R2=0.003, Figure 3C), since E. woodruffi orthologs typically contain fewer MDSs.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig3-v2.jpg)
+
+**Figure 3.:** (A) Macronuclear destined sequences (MDSs) of Euplotes woodruffi are longer compared to Oxytricha or Tetmemena. (B) Positive correlation between the numbers of MDSs for orthologous genes in Tetmemena and in Oxytricha for 903 single-gene orthologs. Black line is the function of linear regression (R2=0.75). Red line is y=x. (C) Orthologs in E. woodruffi have fewer MDSs compared to Oxytricha, with no correlation (R2=0.003). Note that many highly discontinuous genes in Oxytricha are IES-less in E. woodruffi (present on one MDS). 917 single-gene orthologs are shown. (D) Distribution of pointers on single-gene somatic macronucleus (MAC) chromosomes in Oxytricha vs. (E) E. woodruffi, with MAC chromosomes oriented in gene direction. Pointers significantly accumulate at the 5’ end of single-gene MAC chromosomes in E. woodruffi. (F) Pointer positions on 3684 two-MDS MAC chromosomes demonstrate a preference upstream of the start codon.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Coding sequence (CDS) lengths correlate for Oxytricha, Tetmemena, and E. woodruffi orthologs (related to Figure 3). (A) Tetmemena CDS length positively correlates with that of Oxytricha orthologs (R2=0.96). Black line is the linear regression fitting function. Red line shows y=x. (B) E. woodruffi CDS length positively correlates with that of Oxytricha orthologs (R2=0.83). (C) The distribution of pointers on single-gene somatic macronucleus (MAC) chromosomes in Tetmemena displays a weak 5’ bias (related to Figure 3).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Length distribution of scrambled and nonscrambled pointers ≤30 bp in (A) Oxytricha, (B) Tetmemena, and (C) Euplotes woodruffi. (D–F) Length distribution of scrambled and nonscrambled IESs in (D) Oxytricha (≤100 bp), (E) Tetmemena (≤100 bp), and (F) E. woodruffi (≤300 bp).
+
 The E. woodruffi genome is generally much less interrupted than that of Oxytricha or Tetmemena. 39.9% of MAC nanochromosomes in E. woodruffi lack IESs (IES-less nanochromosomes) compared to only 4.1 and 4.4% in Oxytricha and Tetmemena, respectively. The sparse IES distribution (as measured by plotting pointer distributions) in E. woodruffi displays a curious 5’ end bias on single-gene MAC chromosomes, oriented in gene direction (Figure 3E). A weak 5’ bias is also present in Oxytricha (Figure 3D) and Tetmemena (Figure 3—figure supplement 1C). In addition, E. woodruffi IESs preferentially accumulate in the 5’ UTR, a short distance upstream of start codons (Figure 3F). Notably, the median distance between the 5’ telomere addition site and the start codon in E. woodruffi is just 54 bp for single-gene chromosomes, approximately half that of Oxytricha (Swart et al., 2013).
 
-## E. woodruffi has an intermediate level of genome scrambling
+### E. woodruffi has an intermediate level of genome scrambling
 
 Scrambled genome rearrangements exist in all three species, which we report here for the first time in Tetmemena and the early diverged E. woodruffi. Previous studies have described scrambled genes with confirmed MIC-MAC rearrangement maps for a limited species of hypotrichs (Chen et al., 2014; Chen et al., 2015; Hogan et al., 2001; Chang et al., 2005; Wong and Landweber, 2006; DuBois and Prescott, 1995) and Chilodonella (Katz and Kovner, 2010; Gao et al., 2014) but not in Euplotes. Consistent with the phylogenetic placement of Euplotes as an earlier diverged outgroup to hypotrichs (Lynn, 2008; Gao et al., 2016), the E. woodruffi genome is scrambled, but it contains approximately half as many scrambled genes (2429 genes encoded on 1913 chromosomes, or 7.3% of genes), versus 15.6% scrambled in O. trifallax (3613 genes encoded on 2852 chromosomes) and 13.6% in Tetmemena (3371 genes encoded on 2556 chromosomes). The E. woodruffi lineage may therefore reflect an evolutionary intermediate stage between ancestral genomes with only modest levels of genome scrambling and the more massively scrambled genomes of hypotrichs.
 
 We infer that many genes were likely scrambled in the last common ancestor of Oxytricha and Tetmemena, because these two species share approximately half of their scrambled genes (Supplementary file 4). Furthermore, most scrambled genes are not new genes, since they possess at least one ortholog in other ciliate species (Supplementary file 4, Supplementary file 5).
 
-## Scrambled genes are associated with local paralogy
+### Scrambled genes are associated with local paralogy
 
 Notably, scrambled genes in all three species generally have more paralogs (Figure 4). We identified orthogroups containing genes derived from the same gene in the last common ancestor of the three species (Methods). For each species, orthogroups with at least one scrambled gene are significantly larger than those containing no scrambled genes (p-value <1e−5, Mann-Whitney U test, Figure 4A–C). This association suggests a possible role of gene duplication in the origin of scrambled genes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig4-v2.jpg)
+
+**Figure 4.:** Orthogroups containing at least one scrambled gene (‘scrambled’) are larger than orthogroups that lack scrambled genes (‘nonscrambled’) in (A) Oxytricha, (B) Tetmemena, and (C) Euplotes woodruffi.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The upper panel is the map of a scrambled germline micronucleus (MIC) locus (EUPWOO_MIC_17325). Below is the corresponding map of the somatic macronucleus (MAC) chromosome (EUPWOO_MAC_29939). Pointers between MDSs are labeled above or below the MAC contig (nonscrambled pointer length in blue and scrambled pointers labeled in red). (B) A model for the evolutionary origin of this scrambled MIC locus by partial duplication and subsequent decay. Stage 1: The ancestral MIC locus contains three nonscrambled MDSs (labeled proto-MDSs because they are precursors for the modern state). Stage 2: The region containing two proto-MDSs duplicated in the MIC genome. Stage 3: Nucleotide substitutions accumulated in both paralogous copies at different positions (shown in gray dashed boxes) leading to the fixation of some regions as MDSs, while the regions that accumulated more mutations decayed into internally eliminated sequences, which are removed during genome rearrangement. (B) Has been adapted from a general model in Figure 3 from Gao et al., 2015.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) A diagram describing a typical scrambled region with an odd-even pattern. We propose that the internally eliminated sequence (IES) (S1) between macronuclear destined sequence (MDS) n and MDS n+2 may be ancestrally paralogous to MDS n+1 (S2) which evolved by duplication of MDS n+1 before it was scrambled. S1 and S2 would therefore be homologous in this model. (B) The lengths of modern IES (S1) and MDS (S2) display a strong positive correlation in Euplotes woodruffi (504 pairs). Many data points fall on the y=x (red line). All MDS and IES pairs were only considered if they are on the same germline micronucleus contig, to exclude alleles. (C) Character mapping of scrambled loci onto a phylogeny: (1) examples of scrambled loci uniquely present in one species (only showing for Oxytricha and Tetmemena; most scrambled genes in E. woodruffi have no ortholog detectable in the other two species, possibly because the long genetic distance obscured homology, see main text and Supplementary file 4); (2) scrambled loci shared between Oxytricha and Tetmemena, but not E. woodruffi; and (3) scrambled loci shared in three species. The lengths of IES (S1) and MDS (S2) in typical odd-even regions display a moderately positive correlation in Oxytricha (D) and Tetmemena (E). Newer scrambled loci correlate more strongly. Red line represents y=x. Note that S1 and S2 are flanked by identical pointers, a and b, in all annotated pairs.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** p-Values of Mann-Whitney U tests are shown in blue. The line in orange shows the median. The box shows the range between the first and third quartiles. The upper whisker represents the third quartile + 1.5 × interquartile range (IQR), and the lower whisker shows the first quartile – 1.5 × IQR. Numbers in brackets indicate genes which have a coefficient of variation of TPM (transcripts per million) less than 1.
 
 Scrambled pointers are generally longer than nonscrambled ones in all three species (Figure 3—figure supplement 2), consistent with prior observations (Chen et al., 2014) and the possibility that longer pointers participate in more complex rearrangements, including recombination between MDSs separated by greater distances (Landweber et al., 2000). Scrambled and nonscrambled IESs also differ in their length distribution (Figure 3—figure supplement 2). Curiously, scrambled ‘pointers’ in E. woodruffi can be as long as several hundred base pairs (median 48 bp, average 212 bp) unlike the more typical 2–20 bp canonical pointers. These long ‘pointers’ in E. woodruffi are more likely partial MDS duplications (Figure 4—figure supplement 1A). We also identified MDSs that map to two or more paralogous regions within the same MIC contig (Supplementary file 6), therefore representing MDS duplications and not alleles. Such paralogous regions could be alternatively incorporated into the rearranged MAC product. Moreover, we find that, for all three species, there are significantly more scrambled chromosomes than nonscrambled MAC chromosomes that contain at least one paralogous MDS (chi-square test, p-value <1e−10; Supplementary file 6). An example is shown in Figure 4—figure supplement 1A (MDS 7 and 7').
 
@@ -79,23 +219,43 @@ This model may generally explain the abundance and expansion of ‘odd-even’ p
 
 Scrambled and nonscrambled genes display nearly identical expression support (the presence of at least one read in all three replicates) in both Oxytricha (Supplementary file 8) and Tetmemena. E. woodruffi has slightly more expression support for nonscrambled vs. scrambled genes (Figure 4—figure supplement 3), which could be explained by more recent acquisition of thousands of scrambled loci in E. woodruffi. In some of those cases the nonscrambled paralogs may still contribute the major function. The distribution of expression levels is similar for scrambled vs. nonscrambled genes in all three species, supporting their authenticity (Figure 4—figure supplement 3), although in a Mann-Whitney U test, the average expression level of three replicates is significantly higher in nonscrambled genes for Oxytricha and E. woodruffi, but not significant for Tetmemena.
 
-## Oxytricha and Tetmemena share conserved DNA rearrangement junctions
+### Oxytricha and Tetmemena share conserved DNA rearrangement junctions
 
 To understand the conservation of genome rearrangement patterns, we developed a pipeline guided by protein sequence alignment to compare pointer positions for orthologous genes between any two species (Methods, Figure 5A). We compared pointers for 2503 three-species single-copy orthologs. 4448 pointer locations are conserved between Oxytricha and Tetmemena on 1345 ortholog pairs (Supplementary file 9), representing 38.3% of pointers in these orthologs in Oxytricha and 30.9% in Tetmemena. For Oxytricha/E. woodruffi and Tetmemena/E. woodruffi comparisons, 56 and 58 pointer pairs are conserved, respectively. We also identified 23 pointer locations shared among all three species (Supplementary file 9, Figure 5B, Figure 5—source data 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig5-v2.jpg)
+
+**Figure 5.:** (A) Pipeline for comparison of pointer positions in orthologs. Orthologs are first grouped by OrthoFinder (Emms and Kelly, 2019), and protein sequences of single-copy orthologs aligned by Clustal Omega (Sievers et al., 2011). Then the protein alignments are reverse translated to coding sequence (CDS) alignments by a modified script of pal2nal (105, Methods). Pointers are annotated on the CDS alignments for comparison between any two orthologs. (B) Two examples of pointer conservation across three species. Gray lines represent the alignment of orthologous CDS regions, and boxes show magnified regions containing conserved pointers. The top panel shows a conserved scrambled pointer (Oxytricha: Contig889.1.g68; Tetmemena: LASU02015390.1.g1; Euplotes woodruffi: EUPWOO_MAC_30,105 .g1). The bottom panel shows a conserved nonscrambled pointer (Oxytricha: Contig19750.0.g98; Tetmemena: LASU02002033.1.g1; E. woodruffi: EUPWOO_MAC_31,621 .g1). Pointer sequences are noted, and commas indicate reading frame. Protein domains detected by HMMER (Finn et al., 2011) are marked in purple. (C) Examples of telomere-bearing element (TBE) insertions in nonscrambled internally eliminated sequences. The upper pair of sequences shows an Oxytricha TBE pointer (orange insertion of an incomplete TBE2 transposon containing the 42-kD and 57-kD open reading frames) conserved with a Tetmemena non-TBE pointer (Oxytricha: Contig736.1.g130; Tetmemena: LASU02012221.1.g1). Both species have a TA pointer at this junction. The bottom pair of sequences illustrates a case of nonconserved TBE pointers (Oxytricha: Contig17579.0.g71; Tetmemena: LASU02007616.1.g1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Four intron positions in Euplotes woodruffi (orange boxes in magnified regions) overlap locations of nonscrambled pointers in the orthologous genes in Oxytricha and Tetmemena (Oxytricha: Contig13378.0.g40; Tetmemena: LASU02004100.1.g1; E. woodruffi: EUPWOO_MAC_08,218 .g1) consistent with a possible trend of some ancestral introns becoming IESs in the hypotrich lineage. Two positions fall within a conserved protein domain of unknown function (DUF3591). (B) An orthologous gene with two intron-IES conversions in reciprocal directions (Oxytricha: Contig16930.0.g77; Tetmemena: LASU02013377.1.g1; E. woodruffi: EUPWOO_MAC_15,089 .g1). Colors and annotation as in Figure 5.
 
 To test if these pointer locations are genuinely conserved versus coincidental matching by chance, we performed a Monte Carlo simulation, as also used to study intron conservation (Rogozin et al., 2003). We randomly shuffled pointer positions on CDS regions 1000 times and counted the number of conserved pointer pairs expected for each simulation (Methods). Of the 1000 simulations, none exceeded the observed number of conserved pointer pairs between Oxytricha and Tetmemena (p-value <0.001), suggesting evolutionary conservation of pointer positions (Supplementary file 9). A similar result was obtained for pointers conserved in all three species (Supplementary file 9). However, the numbers of pointer pairs conserved between Oxytricha/E. woodruffi and Tetmemena/E. woodruffi is similar to the expectations by chance (Supplementary file 9). The low level of pointer conservation of either hypotrichs with E. woodruffi may reflect the smaller number of IESs in E. woodruffi; hence, most pointers would have arisen in the hypotrich lineage. Furthermore, E. woodruffi is genetically more distant from the two hypotrichs; hence, the accumulation of substitutions would obscure protein sequence homology, which we used to compare pointer locations. For ortholog pairs between Oxytricha and Tetmemena, scrambled pointers are significantly more conserved than nonscrambled ones (chi-square test, p-value <1e−10, Supplementary file 10). We also find that most pointer sequences differ even if the positions are conserved (Figure 5B, Figure 5—source data 1, Supplementary file 11), suggesting that substitutions may accumulate in pointers without substantially altering rearrangement boundaries.
 
 Oxytricha and Tetmemena both contain a high copy number of TBE transposons (Chen et al., 2014; Chen and Landweber, 2016; Supplementary file 3). We investigated the level of TBE conservation between these two species. To identify orthologous insertions, we focus on TBE insertions in nonscrambled IESs on single-copy orthologs, which include 1706 Oxytricha TBEs inserted in 1296 nonscrambled IESs (multiple TBEs can be inserted into an IES) and 180 Tetmemena TBEs inserted into 170 nonscrambled IESs. We refer to the pointer flanking a TBE-containing IES as a TBE pointer. No TBE pointer locations are conserved between two species. This suggests that TBEs might invade the genomes of Oxytricha and Tetmemena independently, or still be actively mobile in the genome. Only 27 Oxytricha TBE pointers (containing 36 TBEs) are conserved with non-TBE pointers in Tetmemena (Figure 5—source data 2, Figure 5C). No Tetmemena TBE pointer is conserved with an Oxytricha non-TBE pointer. This suggests that TBE insertions may preferentially produce new rearrangement junctions instead of inserting into an existing IES.
 
-## Intron locations sometimes coincide with DNA rearrangement junctions
+### Intron locations sometimes coincide with DNA rearrangement junctions
 
 Ciliate genomes are generally intron-poor. Oxytricha averages 1.7 introns/gene, Tetmemena has 1.1, and E. woodruffi has 2.2. Among three-species orthologs, intron locations sometimes map near pointer positions (within a 20-bp window, Figure 5B, Figure 5—figure supplement 1). IESs and introns are both noncoding regions that are removed from mature transcripts, though at different stages. A previous single-gene study observed that an IES in Paraurostyla overlaps the position of an intron in Uroleptus, Urostyla, and also the human homolog (Chang et al., 2005). This observation suggested an intron-IES conversion model in which the ability to eliminate non-CDS regions as either DNA or RNA provides a potential backup mechanism. Such interconversion has also been observed between two strains of Stylonychia (Möllenbeck et al., 2006). In the present study, we identified 174 potential cases of intron-IES conversion in the three species (Figure 5—figure supplement 1, Supplementary file 12): 103 (59.2%) E. woodruffi introns map near Oxytricha/Tetmemena pointers. We used a 20-bp window for this analysis, since one would only expect the boundaries of introns and IESs to coincide precisely if they were recent evolutionary conversions. A Monte Carlo simulation for these intron-IES comparisons (Supplementary file 12) revealed that p<0.001 for most three-species comparisons. For two-species comparisons, we identify 306 cases where an intron boundary in one species precisely coincides with a pointer sequence in another species, with strongest statistical support for the comparison between Oxytricha intron positions and Tetmemena IES junctions (p=0.008) (Supplementary file 13). Notably, Tetmemena intron locations rarely coincide with Oxytricha IESs (Supplementary file 13), suggesting a possible bias in the direction of intron-IES conversion during evolution.
 
 The observation that E. woodruffi has the most introns but the smallest number of IESs per gene (Figure 3) is consistent with removal of intragenic non-CDS regions as either DNA or RNA. The intron-sparseness of ciliates is compatible with a hypothesis that it is advantageous to eliminate noncoding regions earlier at the DNA level, with intron deletion sometimes providing an opportunity for repair if they fail to be excised as IESs (Chang et al., 2005).
 
-## Evolution of complex genome rearrangements: Russian doll genes
+### Evolution of complex genome rearrangements: Russian doll genes
 
 Genome rearrangements in the Oxytricha lineage can include overlapping and nested loci, with MDSs for different MAC loci embedded in each other (Chen et al., 2014; Braun et al., 2018). When multiple gene loci are nested in each other, these have been called Russian doll loci (Braun et al., 2018). Oxytricha contains two loci with five or more layers of nested genes (Braun et al., 2018). Oxytricha and Tetmemena display a high degree of synteny and conservation in both Russian doll loci. In the first Russian doll gene cluster, one nested gene (green) is present in Oxytricha but absent in Tetmemena (Figure 6A, Figure 6—figure supplement 1, Figure 6—figure supplement 2), confirmed by PCR (Methods). Oxytricha also has a complete TBE3 insertion in the green gene (Figure 6A, Figure 6—figure supplement 1A), hinting at a possible link between transposition and new gene insertion. In addition, a two-gene chromosome in Oxytricha (orange) is present as two single-gene chromosomes in Tetmemena (Figure 6A, Figure 6—figure supplement 1). In Oxytricha, seven orange MDSs ligate across two other loci via an 18-bp pointer (TATATCTATACTAAACTT) to form a two-gene nanochromosome. However, in Tetmemena, telomeres are added to the ends of both gene loci instead, forming two independent MAC chromosomes (Figure 6A, Figure 6—figure supplement 1). The second Russian doll locus has an example of a long, conserved pointer (orange dotted line) that bridges three other loci (the green and blue scrambled loci and one nonscrambled locus, Figure 6B). Close to this region is a decayed TBE insertion (769 bp) in Oxytricha. None of the E. woodruffi orthologs of both Russian doll loci maps to the same MIC contig, which suggests that the Russian doll clusters arose after the divergence of Euplotes from the common ancestor of Oxytricha and Tetmemena.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic comparison of the Russian doll gene cluster on Oxytricha germline micronucleus (MIC) contig OXYTRI_MIC_87484 vs. Tetmemena MIC contig TMEMEN_MIC_21461. Boxes of the same color represent clusters of macronuclear destined sequences (MDSs) for orthologous genes (detailed map in Figure 6—figure supplement 1 and Figure 6—figure supplement 2). Numbers in brackets indicate the number of MDSs in each cluster, grouped by somatic macronucleus (MAC) chromosome. One nested gene (green) in Oxytricha is absent from Tetmemena. A two-gene chromosome (orange) that derives from seven MDSs in Oxytricha is processed as two single-gene chromosomes in Tetmemena instead (indicated by black border around orange boxes). The purple gene in Oxytricha has two paralogs in Tetmemena. Black triangles represent conserved, orthologous, and nonscrambled gene loci inserted between nested Russian doll genes. Empty triangle represents scrambled MDSs for other loci. Gray triangles, complete nonscrambled MAC loci embedded between gene layers in one species with no orthologous gene detected in the other species. Black star, a complete telomere-bearing element (TBE) transposon insertion. Gray star, a partial TBE insertion. (B) Oxytricha MIC contig OXYTRI_MIC_69233 vs. Tetmemena MIC contig TMEMEN_MIC_22886. Pointer sequences bridging the nested MDSs of orange and green genes are highlighted. The underlined pointer portions are conserved between species, e.g., the last 8 bp of the Oxytricha pointer, TAAGTTCAAAGTAG, is identical to the first 8 bp of CAAAGTAGCTCAATC in Tetmemena, illustrating pointer sliding (DuBois and Prescott, 1995), or gradual shifting of MDS/IES boundaries. White star indicates a decayed TBE with no open reading frame identified.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Macronuclear destined sequence (MDS) indices are annotated here for each somatic macronucleus (MAC) locus. Overlined numbers represent inverted MDSs. MAC contig numbers for the MDSs are listed below and shown in corresponding color patterns (the Oxytricha loci were previously characterized in Braun et al., 2018).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82979/elife-82979-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The whole region (~50 kb) was validated by 11 PCRs. The two black arrows indicate the absence of a Russian doll gene (green in Figure 6A) that is present in Oxytricha. Legend lists the 20 Tetmemena somatic macronucleus contigs that contain the corresponding macronuclear destined sequences.
 
 ## Discussion
 
@@ -117,67 +277,67 @@ Recent exciting reports have also described scrambled genomes in metazoa, includ
 
 ## Methods
 
-## DNA collection and sequencing of Tetmemena sp.
+### DNA collection and sequencing of Tetmemena sp.
 
 Tetmemena sp. (strain SeJ-2015; Chen et al., 2015) was isolated as a single cell from a stock culture and propagated as a clonal strain via vegetative (asexual) cell culture. Cells were cultured in Pringsheim media (0.11 mM Na2HPO4, 0.08 mM MgSO4, 0.85 mM Ca(NO3)2, 0.35 mM KCl, pH 7.0) and fed with Chlamydomonas reinhardtii, together with 0.1%(v/v) of an overnight culture of non-virulent Klebsiella pneumoniae. Macronuclei and micronuclei were isolated using sucrose gradient centrifugation (Lauth et al., 1976). Genomic DNA was subsequently purified using the Nucleospin Tissue Kit (Takara Bio USA, Inc). Macronuclear DNA was sequenced and assembled in Chen et al., 2015. Micronuclear DNA was further size-selected via BluePippin (Sage Science) for PacBio sequencing, or via 0.6% (w/v) SeaKem Gold agarose electrophoresis (Lonza) for Illumina sequencing. Micronuclear DNA purification and sequencing protocols are described in Chen et al., 2014.
 
-## DNA collection and sequencing for E. woodruffi
+### DNA collection and sequencing for E. woodruffi
 
 E. woodruffi (strain Iz01) was cultured in Volvic water at room temperature and fed with green algae every 2–3 days. We fed cells with C. reinhardtii for MAC DNA collection, and switched to Chlorogonium capillatum for MIC DNA collection. In order to remove algal contamination, cells were starved for at least 2–3 days before collection. Cells were washed and concentrated as in Chen et al., 2014. Because MAC DNA is predominant in whole cell DNA, we used whole cell DNA (purified via NucleoSpin Tissue kit, Takara Bio USA, Inc) for MAC genome sequencing. Paired-end sequencing was performed on an Illumina Hiseq2000 at the Princeton University Genomics Core Facility.
 
 MIC DNA was enriched from whole cell DNA and sequenced via three sequencing platforms (Illumina, Pacific Biosciences, and Oxford Nanopore Technologies). We used conventional and pulse-field gel electrophoresis (PFGE) to enrich MIC DNA:
 
-## MAC genome assembly of E. woodruffi
+### MAC genome assembly of E. woodruffi
 
 We assembled the MAC genome of E. woodruffi using the same pipeline for Tetmemena sp. (Chen et al., 2015) for comparative analysis: two draft genomes were assembled by SPAdes (Bankevich et al., 2012) and Trinity (Grabherr et al., 2011), and were then merged by CAP3 (Huang and Madan, 1999). Trinity, which is a software developed for de novo transcriptome assembly (Grabherr et al., 2011), has been used to assemble hypotrich MAC genomes (Chen et al., 2015) because their nanochromosome genome structure is similar to transcriptomes, including properties such as variable copy number and alternative isoforms (Lindblad et al., 2019). Telomeric reads were mapped to contigs by BLAT (Kent, 2002), and contigs were further extended and capped by telomeres when at least five reads pile up at a position near ends by custom python scripts (https://github.com/yifeng-evo/Oxytricha_Tetmemena_Euplotes/tree/main/MAC_genome_telomere_capping) (Feng, 2022a). The mitochondrial DNA was removed if the contig has a TBLASTX (Camacho et al., 2009) hit on the Oxytricha mitochondrial genome (Genbank accession JN383842.1 and JN383843.1) or two Euplotes mitochondrial genomes (Euplotes minuta GQ903130.1, E. crassus GQ903131.1). Algal contigs were removed by BLASTN to all C. reinhardtii nucleotide sequences downloaded from Genbank. Non-telomeric contigs were mapped to bacterial NR by BLASTX to remove bacterial contaminations. The genome was further compressed by CD-HIT (Fu et al., 2012) in two steps: (1) contigs <500 bp were removed if 90% of the short contig can be aligned to a contig ≥ 500 bp with 90% similarity (-c 0.9 -aS 0.9 -uS 0.1); (2) then the genome was compressed by 95% similarity (-c 0.95 -aS 0.9 -uS 0.1). Contigs shorter than 500 bp without telomeres were removed. Nine contigs, likely Tec contaminants from the MIC genome, were also excluded (Tblastn, ‘-db_gencode 10 -evalue 1e-5’), and they could be assembled due to the high copy number in the MIC genome (47, 48, Genbank accessions of Tec ORFs are AAA62601.1, AAA62602.1, AAA62603.1, AAA91339.1, AAA91340.1, AAA91341.1, AAA91342.1).
 
-## RNA sequencing of E. woodruffi and Tetmemena sp.
+### RNA sequencing of E. woodruffi and Tetmemena sp.
 
 Three biological replicates of total RNA was isolated from asexually growing E. woodruffi and Tetmemena sp. cells using TRIzol reagent (Thermo Fisher Scientific) and enriched for the poly(A)+fraction using the NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs). Stranded RNA-seq libraries were constructed using the ScriptSeq v2 RNA-seq library preparation kit (Epicentre) and sequenced on an Illumina Nextseq500 at the Columbia Genome Center. For E. woodruffi, the transcriptome was assembled by Trinity (Grabherr et al., 2011), and transcript alignments to the MAC genome were generated by PASA (Haas et al., 2003).
 
-## Gene prediction of the E. woodruffi MAC genome and validation of MAC genome completeness
+### Gene prediction of the E. woodruffi MAC genome and validation of MAC genome completeness
 
 We followed the gene prediction pipeline developed by the Broad institute (https://github.com/PASApipeline/PASApipeline/wiki); using EVidenceModeler (EVM, Haas et al., 2008) to generate the final gene predictions. EVM produced gene structures by weighted combination of evidence from three resources: ab initio prediction, protein alignments, and transcript alignments (the weight was 3, 3, and 10 respectively). Ab initio prediction was generated by BRAKER2 pipeline (Brůna et al., 2021). Protein alignments for EVM were generated by mapping Oxytricha proteins to the E. woodruffi MAC genome by Exonerate (Slater and Birney, 2005). EVM predicted 33,379 genes on MAC chromosomes with at least one telomere.
 
 We assessed MAC genome completeness using three methods: (1) 28,294 (80.6%) of the 35,099 E. woodruffi MAC contigs have at least one telomere. (2) In the E. woodruffi genes predicted on telomeric contigs, 88.8% of BUSCO (Simão et al., 2015; Manni et al., 2021) genes in the lineage database alveolata_odb10 were identified as complete. Within the 171 BUSCO genes, 135 are complete and single-copy, 17 are complete and duplicated, 7 are fragmented, and 12 are missing. This represents the best Euplotes MAC genome assembly available. (3) We identified 51 tRNA genes encoding all 20 amino acids by tRNAscan-SE (Lowe and Eddy, 1997) in the MAC genome, including two suppressor tRNAs of UAA and UAG.
 
-## MIC genome assembly of Tetmemena sp.
+### MIC genome assembly of Tetmemena sp.
 
 The MIC genome of Tetmemena was assembled with a hybrid approach to combine reads from different sequencing platforms. Tetmemena Illumina reads were first assembled by SPAdes (77, parameters ‘-k 21,33,55,77,99,127 –careful’). PacBio reads were error corrected by FMLRC (Wang et al., 2018) using Illumina reads with default parameters. Corrected PacBio reads were aligned to both the MAC genome and the Illumina MIC assembly with BLASTN. Reads were removed if they start or end with telomeres or are aligned better to the MAC. The remaining reads were assembled with wtdbg2 (Ruan and Li, 2020, parameters ‘-x rs’). The PacBio assembly was polished by Pilon (Walker et al., 2014) with the ‘--diploid’ option. The Illumina and PacBio assemblies were merged by quickmerge (Chakraborty et al., 2016) with the ‘-l 5000’ option.
 
-## MIC genome assembly of E. woodruffi
+### MIC genome assembly of E. woodruffi
 
 The MIC genome of E. woodruffi was assembled using a similar procedure as described above for Tetmemena. E. woodruffi reads were filtered to remove bacterial contamination, including abundant high-GC-content contaminants, possibly endosymbionts (Boscaro et al., 2019). Nanopore reads with GC content ≥55% were assembled by Flye (Kolmogorov et al., 2019) with the parameter ‘--meta’ for metagenomic assembly of bacterial contigs. We used kaiju (Menzel et al., 2016) to identify bacteria taxa for these contigs. 9 of 10 top-covered contigs derive from Proteobacteria, from which many Euplotes symbionts derive (Boscaro et al., 2019). Bacterial contamination was removed from Illumina reads if perfectly mapping to these metagenomic contigs by Bowtie2 (Langmead and Salzberg, 2012). The cleaned Illumina reads were then assembled by SPAdes with ‘-k 21,33,55,77,99,127’ (Bankevich et al., 2012). Pacbio raw reads and Nanopore raw reads with GC content <55% were aligned to a concatenated database containing both the MAC genome and the Illumina MIC assembly with BLASTN. Reads were removed if they start or end with telomeres or align better to the MAC. Remaining PacBio/Nanopore reads were assembled by Flye with ‘--meta’ mode. The PacBio-Nanopore assembly was polished by Pilon with the ‘--diploid’ option. Illumina and PacBio-Nanopore assemblies were merged by quickmerge with the ‘-l 10000’ option. Contigs shorter than 1 kb were removed.
 
-## MIC genome decontamination
+### MIC genome decontamination
 
 The draft MIC genome of Tetmemena was first mapped to telomeric MAC contigs by BLASTN. MIC contigs containing MDSs were included in the final assembly. The rest of the MIC contigs were filtered by a decontamination pipeline: (1) contigs were aligned to the K. pneumoniae genome, C. reinhardtii genome, and the Oxytricha mitochondrial genome by BLASTN to remove contaminants; (2) the remaining contigs were then searched against the bacteria NR database and a ciliate protein database (including protein sequences annotated in Tetrahymena thermophila: http://www.ciliate.org/system/downloads/tet-latest/4-Protein%20fasta.fasta; Paramecium tetraurelia: http://paramecium.cgm.cnrs-gif.fr; and O. trifallax: https://oxy.ciliate.org) by BLASTX. Contigs with higher bit score to bacteria NR or G+C >45% were removed. The E. woodruffi MIC genome was decontaminated, similarly, with addition of all Chlorogonium sequences (the algal food source) on NCBI and the two Euplotes mitochondrial genomes (E. minuta GQ903130.1, E. crassus GQ903131.1) to filter contaminants.
 
-## Repeat identification
+### Repeat identification
 
 The repeat content in the MIC genomes was identified by RepeatModeler 1.0.10 (Smit and Hubley, 2008) and RepeatMasker 4.0.7 (Smit et al., 2013) with default parameters.
 
-## TBE/Tec detection
+### TBE/Tec detection
 
 Representative Oxytricha TBE ORFs (Genbank accession AAB42034.1, AAB42016.1, and AAB42018.1) were used as queries to search TBEs in the Oxytricha and Tetmemena MIC genomes by TBLASTN (-db_gencode 6 -evalue 1e-7 -max_target_seqs 30000). Tec ORFs were similarly detected by using E. crassus Tec1 and Tec2 ORFs as queries (-db_gencode 10 -evalue 1e-5 -max_target_seqs 30000, Genbank accessions of Tec ORFs are AAA62601.1, AAA62602.1, AAA62603.1, AAA91339.1, AAA91340.1, AAA91341.1, AAA91342.1). Complete TBEs/Tecs were determined by custom python scripts when three ORFs are within 2000 bp from each other and in correct orientation (https://github.com/yifeng-evo/Oxytricha_Tetmemena_Euplotes/tree/main/TBE_ORFs/TBE_to_oxy_genome_tblastn_parse.py, Chen and Landweber, 2016). 30 TBE ORFs with >70% completeness were subsampled from each species for phylogenetic analysis (except for the 57 kD ORF in Tetmemena, for which 21 were subsampled). The subsampled TBE ORFs were aligned using MUSCLE (Edgar, 2004), and the alignments were trimmed by trimAl ‘-automated1’ (Capella-Gutiérrez et al., 2009). Phylogenetic trees were constructed using PhyML 3.3 (Guindon et al., 2010).
 
-## Rearrangement annotations
+### Rearrangement annotations
 
 SDRAP (Braun et al., 2022) was used to annotate MDSs, pointers, and MIC-specific regions (minimum percent identity for preliminary match annotation = 95, minimum percent identity for additional match annotation = 90, minimum length of pointer annotation = 2). SDRAP requires MAC and MIC genomes as input. For the SDRAP annotation of Oxytricha, we used the MAC genome from Swart et al., 2013 instead of the latest hybrid assembly that incorporated PacBio reads (Lindblad et al., 2019), because the former version was primarily based on Illumina reads, similar to the MAC genomes of Tetmemena (7, Genbank GCA_001273295.2) and E. woodruffi which are also Illumina assemblies. Oxytricha and Tetmemena MAC genomes were preprocessed by removing MAC contigs with TBE ORFs, considered MIC contaminants (Chen and Landweber, 2016). SDRAP is a new program that can output the rearrangement annotations with minor differences from Chen et al., 2014, but most annotations are robust (Figure 3—figure supplement 2). Scrambled and nonscrambled junctions/IESs were annotated by custom python scripts (https://github.com/yifeng-evo/Oxytricha_Tetmemena_Euplotes/tree/main/scrambled_nonscrambled_IES_pointer).
 
-## MIC genome categories
+### MIC genome categories
 
 Each MIC genome region is assigned to only one category in Figure 2A–C, even if it belongs to more than one category. The assignment is based on the following priority: MDS, TBE/Tec, MIC genes (only available for Oxytricha, which has developmental RNA-seq data), IES, tandem repeats, other repeats, and non-coding non-repetitive regions. For example, an MIC region can be a TBE in an IES, and it is only considered as TBE in Figure 2A–C.
 
-## Ortholog comparison pipeline and Monte Carlo simulations
+### Ortholog comparison pipeline and Monte Carlo simulations
 
 Orthogroups of genes on telomeric MAC contigs were detected by OrthoFinder with ‘-S blast’ (Emms and Kelly, 2019). Single-copy orthologs were aligned by Clustal Omega (Sievers et al., 2011). Protein alignments were reversely translated to CDS alignments by a modified script of pal2nal (Suyama et al., 2006, https://github.com/yifeng-evo/Oxytricha_Tetmemena_Euplotes/tree/main/Ortholog_comparison/pal2nal.pl). Two modifications were made in the script: (1) the modified script allows pal2nal to take different genetic codes for three sequences (-codontable 6,6,10); (2) the script also fixed an error in the original pal2nal script in which codontable 10 for the Euplotid nuclear code was the same as the universal code. Visualization of pointer positions and intron locations on orthologs was implemented by a custom python script (https://github.com/yifeng-evo/Oxytricha_Tetmemena_Euplotes/blob/main/Ortholog_comparison/visualization_of_ortholog_comparison.py). Pointer positions or intron locations are considered conserved if they are within a 20-bp alignment window on the CDS alignment. Protein domains were annotated by HMMER (Finn et al., 2011). We performed Monte Carlo simulations by randomly shuffling pointer locations on the CDS but keeping their original position distribution. This was implemented by a custom python script, which transforms the CDS to a circle, rotates pointer positions on the circle, and outputs the shuffled position on the re-linearized CDS (https://github.com/yifeng-evo/Oxytricha_Tetmemena_Euplotes/blob/main/Ortholog_comparison/shuffle_simulation.py). The null hypothesis of the Monte Carlo test is that pointer positions are conserved by chance. p-Value of Monte Carlo test is given by Nexpected>observed/Ntotal (Nexpected>observed is the number of simulations when there are more conserved pointers in the simulation than the observation from real data, Ntotal = 1000 in this study).
 
-## PCR validation of Russian doll locus
+### PCR validation of Russian doll locus
 
 The complex Russian doll locus on MIC contig TMEMEN_MIC_21461 in Tetmemena was validated by PCR to confirm the Tetmemena MIC genome assembly. Tetmemena micronuclear DNA was purified as described previously and used as template for PCR using PrimeSTAR Max DNA polymerase (Takara Bio). 11 primer sets (Supplementary file 14) were designed to amplify products between 3 kb and 6 kb in length, with overlapping regions between consecutive primer pairs. The resulting PCR products were visualized through agarose gel electrophoresis, and bands of the expected size were extracted using a Monarch DNA Gel Extraction Kit (New England Biolabs). The purified gel bands were cloned using a TOPO XL-2 Complete PCR Cloning Kit (Invitrogen), transformed into One Shot OmniMAX 2 T1R E. coli cells (Invitrogen), and individual clones were grown and their plasmids harvested with a QIAprep Spin Miniprep Kit (QIAGEN). The plasmid ends were Sanger sequenced, as well as the region where the Oxytricha MIC assembly contains inserted MDSs (Genewiz). Sanger sequencing reads were mapped to the Tetmemena MIC contig TMEMEN_MIC_21461 and visualized using Geneious Prime 2021.1.1 (https://www.geneious.com).
 
-## Availability of data and materials
+### Availability of data and materials
 
 Custom scripts are public on https://github.com/yifeng-evo/Oxytricha_Tetmemena_Euplotes, (Feng, 2022b copy archived at swh:1:rev:fd66a0efeaf9feb2d79e183313192d641b4e5400). DNA-seq reads and genome assemblies are available at GenBank under Bioprojects PRJNA694964 (Tetmemena sp.) and PRJNA781979 (E. woodruffi). Genbank accession numbers for genomes are JAJKFJ000000000 (Tetmemena sp. Micronucleus genome), JAJLLS000000000 (E. woodruffi Micronucleus genome), and JAJLLT000000000 (E. woodruffi Macronucleus genome).
 

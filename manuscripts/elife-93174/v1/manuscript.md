@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0495fxg12 Institut Pasteur, Université Paris Cité, CNRS UMR 3571, Channel-Receptors Unit Paris France
+1. Institut Pasteur, Université Paris Cité, CNRS UMR 3571, Channel-Receptors Unit Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
 
 † Corresponding author
 
 ## Abstract
 
-The serotonin-gated ion channel (5-HT 3 R) mediates excitatory neuronal communication in the gut and the brain. It is the target for setrons, a class of competitive antagonists widely used as antiemetics, and is involved in several neurological diseases. Cryo-electron microscopy (cryo-EM) of the 5-HT 3 R in complex with serotonin or setrons revealed that the protein has access to a wide conformational landscape. However, assigning known high-resolution structures to actual states contributing to the physiological response remains a challenge. In the present study, we used voltage-clamp fluorometry (VCF) to measure simultaneously, for 5-HT 3 R expressed at a cell membrane, conformational changes by fluorescence and channel opening by electrophysiology. Four positions identified by mutational screening report motions around and outside the serotonin-binding site through incorporation of cysteine-tethered rhodamine dyes with or without a nearby quenching tryptophan. VCF recordings show that the 5-HT 3 R has access to four families of conformations endowed with distinct fluorescence signatures: ‘resting-like’ without ligand, ‘inhibited-like’ with setrons, ‘pre-active-like’ with partial agonists, and ‘active-like’ (open channel) with partial and strong agonists. Data are remarkably consistent with cryo-EM structures, the fluorescence partners matching respectively apo, setron-bound, 5-HT bound-closed, and 5-HT-bound-open conformations. Data show that strong agonists promote a concerted motion of all fluorescently labeled sensors during activation, while partial agonists, especially when loss-of-function mutations are engineered, stabilize both active and pre-active conformations. In conclusion, VCF, though the monitoring of electrophysiologically silent conformational changes, illuminates allosteric mechanisms contributing to signal transduction and their differential regulation by important classes of physiological and clinical effectors.
+The serotonin-gated ion channel (5-HT3R) mediates excitatory neuronal communication in the gut and the brain. It is the target for setrons, a class of competitive antagonists widely used as antiemetics, and is involved in several neurological diseases. Cryo-electron microscopy (cryo-EM) of the 5-HT3R in complex with serotonin or setrons revealed that the protein has access to a wide conformational landscape. However, assigning known high-resolution structures to actual states contributing to the physiological response remains a challenge. In the present study, we used voltage-clamp fluorometry (VCF) to measure simultaneously, for 5-HT3R expressed at a cell membrane, conformational changes by fluorescence and channel opening by electrophysiology. Four positions identified by mutational screening report motions around and outside the serotonin-binding site through incorporation of cysteine-tethered rhodamine dyes with or without a nearby quenching tryptophan. VCF recordings show that the 5-HT3R has access to four families of conformations endowed with distinct fluorescence signatures: ‘resting-like’ without ligand, ‘inhibited-like’ with setrons, ‘pre-active-like’ with partial agonists, and ‘active-like’ (open channel) with partial and strong agonists. Data are remarkably consistent with cryo-EM structures, the fluorescence partners matching respectively apo, setron-bound, 5-HT bound-closed, and 5-HT-bound-open conformations. Data show that strong agonists promote a concerted motion of all fluorescently labeled sensors during activation, while partial agonists, especially when loss-of-function mutations are engineered, stabilize both active and pre-active conformations. In conclusion, VCF, though the monitoring of electrophysiologically silent conformational changes, illuminates allosteric mechanisms contributing to signal transduction and their differential regulation by important classes of physiological and clinical effectors.
 
 ## Introduction
 
@@ -31,21 +31,33 @@ In the present study, we have generated four fluorescent sensors grafted at new 
 
 ## Results
 
-## Generation of four fluorescent sensors along the ECD
+### Generation of four fluorescent sensors along the ECD
 
 To guide the design of fluorescent sensors, we inspected the regions undergoing the largest reorganizations in the various cryo-EM structures, mainly mapping the subunit interface from the apex of the ECD to the ECD-TMD interface and the upper part of the TMD. We introduced cysteines by mutagenesis and covalently labeled them with the fluorescent probe MTS-TAMRA, allowing conjugation of a rhodamine dye with the protein main chain through a flexible 6-atom linker (CH2-S-S-CH2-NH-CO). Since rhodamine fluorescence is sensitive to its local molecular environment, this generates conformational sensors around the graft position (Munro et al., 2019). In order to increase the intensity of fluorescent variations and to report more precisely the motion observed, we also implemented the tryptophan-induced quenching method (Mansoor et al., 2010; Figure 1A). In this technique, the cysteine-labeled rhodamine is introduced together with a nearby tryptophan since the indole moiety of the Trp side chain robustly quenches rhodamine fluorescence when in Van der Waals contact. Such pairs sense the distance between the fluorophore and indole attachment points and/or local environment, and often amplify the extent of the fluorescence variation when allosteric motions are associated with structural reorganization at this level.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93174/elife-93174-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left panel: visualization of the residues mutated, TAMRA-labeled and tested for variation of current and fluorescence on the apo cryo-electron microscopy (cryo-EM) structure of m5-HT3A (from Basak et al., 2018a), in lateral (zoom on the ECD) and top view with two subunits in cartoon representation and the three others represented in surface mode (PDB: 6BE1). Middle panel: representation of the two isomers of the labeling fluorescent probe mixture used in this study, MTS-TAMRA (5(6)-carboxytetramethylrhodamine methanethiosulfonate). Right panel: representation of currents evoked by 50–100 µM of 5-HT on the mutants and of the absolute values of variation of fluorescence (difference between the baseline fluorescence and steady-state fluorescence upon 5-HT perfusion) recorded simultaneously (error bars are +/- SEM, n = 5 to 13). Note the representation of the four selected sensors: in dark green, I160C/Y207W; in magenta, S204C; in purple, V106C/L131W, and in cyan, R219C/Y140W. (B) The sensor S204C, shown on 5-HT-bound conformation (5-HT represented in red; PDB: 6DG8), is located on loop C. Note that the fluorescence variation is significatively increased by the addition of the tryptophan in the sensors I160C/Y207W and V106C/L131W (unpaired t-tests, I160C/Y207W versus I160C p-value = 0.013 (*); V106C/L131W versus V106C p-value = 0,0081 (**)) (C). The sensor I160C/Y207W where I160C is the point of labeling with MTS-TAMRA and is represented in ball representation in fluorescent green, Y207 is mutated into tryptophan and colored in dark green. (D) The sensor V106C/L131W where V106C is represented in ball representation in purple and L131 is mutated into tryptophan and colored in purple. Note the vestibular positioning of this sensor. (E) The sensor R219C/Y140W, where R219C, located in pre-M1 loop, is represented in ball representation in cyan and Y140, located in the Cys-loop, is mutated into tryptophan, and colored in dark cyan. (F) Molecular structures of the ligands used in this study: agonists (in red, 5-HT; in blue, m-chlorophenylbiguanide [mCPBG]; in salmon, varenicline) and antagonists (all represented in orange, A: alosetron, G: granisetron, O: ondansetron, M: metoclopramide). (G) Effect of desensitization on the dynamic of the fluorescence recordings. Examples of desensitizing currents promoted by prolonged perfusion of strong agonists (to elicit robust desensitization): mCPBG perfused on the sensor I160C/Y207W or 5-HT perfused on the sensors S204C, V106C/L131W, and R219C/Y140W. Traces show that the fluorescent signal remains stable during desensitization for all the sensors. Note that the differences in the desensitization kinetics of the displayed traces are due to the variability of different oocyte batches, since the four conditions do not show significant differences in desensitization kinetics (Figure 1—figure supplement 2, Figure 1—source data 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93174/elife-93174-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left panel: wild-type receptor currents dose-response curves for 5-HT (red), m-chlorophenylbiguanide (mCPBG) (blue), and varenicline (salmon) on the voltage-clamp fluorometry (VCF) setup. Middle panel: comparison of maximal current variations evoked by saturating concentrations of 5-HT, mCPBG, varenicline, alosetron, granisetron, ondansetron, and metoclopramide. Values are normalized with the maximal current variations evoked by 5-HT. Left panel: effect of each loss-of-function mutation: Y207W in burgundy, I160C in green, and N101K in khaki. Dose-response curves for 5-HT obtained on the VCF setup. (B) Characterization of the potential effect of MTS-TAMRA labeling on the four sensors developed in this study. Dose-response curves of current with (black curve and dots) and without labeling (gray curve and dots) are shown. (C) Representative recordings of I160C (left, green), V106C (middle, purple), and R219C (right, cyan) labeled with MTS-TAMRA upon different concentrations of 5-HT. Note that on the left panel (I160C), the direct fluorescence quenching evoked by high concentration of 5-HT (1000 μM) is highly visible, which is not the case at lower concentrations. For the entire figure n = 5 to 8 and error bars are representated as +/- SEM. (Figure 1—figure supplement 1—source data 1).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93174/elife-93174-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Desensitization properties for the four sensors studied by two-electrode voltage-clamp electrophysiology (TEVC). Top panel: graphical representation of the remaining current recorded after 45 s of constant perfusion of 5-HT (when nothing is mentioned) or m-chlorophenylbiguanide (mCPBG) (see legends on the graph) at 50 and 100 µM. The remaining current (in %) is normalized to the maximum current obtained for each application. Bottom panel: graphical representation of desensitization constants tau obtained by mono-exponential fitting on the desensitization part of the recordings during long application of 5-HT or mCPBG. Note the significative difference between desensitization properties evoked by 5-HT and mCPBG on V106C/L131W and R219C/Y140W (unpaired t-tests). For the entire figure, n = 5 to 11 and error bars are representated as +/- SEM. (Figure 1—figure supplement 2—source data 1).
 
 Nineteen TAMRA-labeled cysteine mutants were screened by VCF under perfusion of high concentration of 5-HT (Figure 1A). We verified that the mouse wild-type 5-HT3R (m5-HT3R), that does not carry any single cysteine within the ECD, yielded robust 5-HT-elicited currents upon treatment with MTS-TAMRA but no changes in fluorescence intensity. The screening allowed for the selection of four mutants (one cysteine and three cysteine/tryptophan pairs) endowed with robust variations of both current and fluorescence.
 
 We first identified the single mutation S204C, which is located near the tip of loop C, facing the adjacent subunit and the ECD interface above the orthosteric site (Figure 1B). Second, three fluorophore/quencher (cysteine/tryptophan) pairs were selected. In each case, the measured 5-HT-elicited variation of fluorescence (ΔF) was much smaller or unmeasurable when the cysteine but not the tryptophan was introduced, indicating that the dequenching or quenching observed is dominated by Van der Waals interaction between the rhodamine dye and the indole of the tryptophan (Figure 1—figure supplement 1C). The pairs are the following:
 
-## The four sensors monitor fast motions not related to desensitization
+### The four sensors monitor fast motions not related to desensitization
 
 The four sensors were recorded on a custom VCF chamber where the ligands are perfused only on the portion of the oocyte from which the fluorescence emission is collected (Shi et al., 2023). This ensures that the same population of receptors is recorded in current and fluorescence simultaneously. For all sensors, perfusion of a high concentration of strong agonists (5-HT or m-chlorophenylbiguanide [mCPBG], selected depending on the particular sensor, see dedicated section to each sensor) elicit currents reaching maximal value in a few seconds, followed by desensitization appearing with much slower kinetics (Figure 1G). To measure the desensitization kinetics, we performed parallel measurements on a dedicated TEVC setup equipped with a fast perfusion system allowing solution exchange in less than a hundred milliseconds (Gielen et al., 2020). This shows that all sensors display comparable desensitization kinetics to that of the wild-type receptor (WT), evaluated in the 50–150 s range through mono-exponential fitting (Figure 1—figure supplement 2). Thus, activation and desensitization appear well separated in time in the VCF setup. This allows a reasonable evaluation of the extent of activation by measuring the amplitude of the peak current. Concentration-response curves measured at this peak current show that, for all sensors, labeling by MTS-TAMRA has no significant effect in terms of EC50 current (EC50c) (Figure 1—figure supplement 1B).
 
 In fluorescence, labeled S204C, I160C/Y207W, and R219C/Y140W show robust agonist-elicited dequenching and V106C/L131W agonist-elicited quenching. In all cases, the rise time of the fluorescence variations (ΔFs) are in the same range to that of the rise time of the currents (1–10 s range depending on the particular sensor and the agonist concentration, Supplementary file 1). In contrast, prolonged applications of agonist show no significant variation of the fluorescence during the desensitization phase (with the fluorescent signal remaining stable), providing evidence that the sensors do not report movements related to desensitization (Figure 1G). As far as the four sensors are concerned, VCF data suggest that the ECD (and its labels) does not undergo notable conformational changes between activated and desensitized states.
 
-## Competitive antagonists elicit agonist-like reorganizations at the orthosteric site that do not spread to the lower part of the ECD
+### Competitive antagonists elicit agonist-like reorganizations at the orthosteric site that do not spread to the lower part of the ECD
 
 We first explored the action of competitive antagonists on the various sensors. To this end, we applied to the same oocyte saturating concentrations of the agonists 5-HT, mCPBG, and var (varenicline) as well as a selection of four competitive antagonists of different molecular structure: alosetron, granisetron, ondansetron, and metoclopramide (Kilpatrick et al., 1990; Lummis et al., 2011; Thompson and Lummis, 2006). We used a 3 µM concentration of each antagonist, which is far above their nanomolar binding affinities measured on the WT receptor.
 
@@ -53,17 +65,521 @@ On the two sensors neighboring the orthosteric site, antagonists produce no curr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/93174/elife-93174-fig2-v1.jpg)
 
-**Figure 2.:** (A) Exploration and characterization of the sensor S204C. Left upper panel: macroscopic ligand-gated currents (in black) and fluorescence (in magenta) recorded at –60 mV on S204C labeled with MTS-TAMRA evoked by saturating concentrations of agonists (in red, 5-HT, 200 µM; in blue, m-chlorophenylbiguanide [mCPBG], 200 µM; in salmon, varenicline, 400 µM) and antagonists (all represented in orange, A: alosetron, G: granisetron, O: ondansetron, M: metoclopramide, all at 3 µM). Left bottom panel: graphical representation of ligand-induced relative changes of current and fluorescence compared to 5-HT. The normalized values for all the ligands are compared with the mean values obtained for 5-HT. Middle left top panel: representative recording of current and fluorescence variations of S204C labeled with MTS-TAMRA upon different concentrations of perfused 5-HT. Middle left bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) with mean and SEM (normalized by the maximum current of each oocytes) for application of 5-HT. Middle right top panel: representative recording of current and fluorescence variations of S204C labeled with MTS-TAMRA upon different concentrations of perfused mCPBG. Middle right bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) for application of mCPBG. Right top panel: representative recording of current and fluorescence variations of S204C labeled with MTS-TAMRA upon different concentrations of perfused varenicline. Right bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) for application of varenicline. (B) Effect of loss-of-function mutation N101K on the sensor S204C. Same experiments and legends as for panel A, but the construct here is the sensor S204C with the additional loss-of-function mutation N101K. (C) Exploration and characterization of the sensor I160C/Y207W. Same experiments and legends as for panel A, but here currents are represented in black and fluorescence in green. Note also that for the left lower panel, currents and fluorescence have been compared to mCPBG instead of 5-HT (panels A and B, Figure 2—source data 1; panel C, Figure 2—source data 2). For the entire figure, n are at least 5 and error bars are representated as +/- SEM.Figure 2—source data 1.Figure 2 -1.Figure 2—source data 2.Figure 2 -2.
+**Figure 2.:** (A) Exploration and characterization of the sensor S204C. Left upper panel: macroscopic ligand-gated currents (in black) and fluorescence (in magenta) recorded at –60 mV on S204C labeled with MTS-TAMRA evoked by saturating concentrations of agonists (in red, 5-HT, 200 µM; in blue, m-chlorophenylbiguanide [mCPBG], 200 µM; in salmon, varenicline, 400 µM) and antagonists (all represented in orange, A: alosetron, G: granisetron, O: ondansetron, M: metoclopramide, all at 3 µM). Left bottom panel: graphical representation of ligand-induced relative changes of current and fluorescence compared to 5-HT. The normalized values for all the ligands are compared with the mean values obtained for 5-HT. Middle left top panel: representative recording of current and fluorescence variations of S204C labeled with MTS-TAMRA upon different concentrations of perfused 5-HT. Middle left bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) with mean and SEM (normalized by the maximum current of each oocytes) for application of 5-HT. Middle right top panel: representative recording of current and fluorescence variations of S204C labeled with MTS-TAMRA upon different concentrations of perfused mCPBG. Middle right bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) for application of mCPBG. Right top panel: representative recording of current and fluorescence variations of S204C labeled with MTS-TAMRA upon different concentrations of perfused varenicline. Right bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) for application of varenicline. (B) Effect of loss-of-function mutation N101K on the sensor S204C. Same experiments and legends as for panel A, but the construct here is the sensor S204C with the additional loss-of-function mutation N101K. (C) Exploration and characterization of the sensor I160C/Y207W. Same experiments and legends as for panel A, but here currents are represented in black and fluorescence in green. Note also that for the left lower panel, currents and fluorescence have been compared to mCPBG instead of 5-HT (panels A and B, Figure 2—source data 1; panel C, Figure 2—source data 2). For the entire figure, n are at least 5 and error bars are representated as +/- SEM.
 
 In contrast, the sensors at the vestibular site (V106C/L131W) and at the ECD-TMD interface (R219C/Y140W) show no antagonist-elicited current nor ΔF, suggesting that the conformational effects elicited by these competitive antagonists do not spread to the vestibule and lower part of the ECD (Figure 3A and C, left panels).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93174/elife-93174-fig3-v1.jpg)
 
-**Figure 3.:** (A) Exploration and characterization of the sensor V106C/L131W. Left top panel: macroscopic ligand-gated currents (in black) and fluorescence (in purple) recorded at –60 mV on the construct with the sensor V106C/L131W labeled with MTS-TAMRA evoked by saturating concentrations of agonists (in red, 5-HT; in blue, m-chlorophenylbiguanide [mCPBG]; in salmon, varenicline) and antagonists (all represented in orange, A: alosetron, G: granisetron, O: ondansetron, M: metoclopramide). Left bottom panel: graphical representation of ligand-induced relative changes of current and fluorescence compared to 5-HT. The normalized values for all the ligands are compared with the mean values obtained for 5-HT. Middle top panel: representative recording of current and fluorescence variations of V106C/L131W labeled with MTS-TAMRA upon different concentrations of perfused 5-HT. Middle bottom panel: dose-response curves for ΔI (black) and ΔF (purple) with mean and SEM (normalized by the maximum current of each oocyte) for application of 5-HT. Right top panel: representative recording of current and fluorescence variations of V106C/L131W labeled with MTS-TAMRA upon different concentrations of perfused varenicline. Right bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) with mean and SEM (normalized by the maximum current of each oocyte) for application of varenicline. Note the significative difference between dose response of current and fluorescence at 0.5, 1, and 5 µM of perfused varenicline (unpaired t-test). (B) Exploration and characterization of the sensor R219C/Y140W. Same experiments and legends as for panel A, but the construct here is the sensor R219C/Y140W, current is represented in black and fluorescence in cyan (in trace recordings and dose-response representations). (C) Effect of loss-of-function mutation N101K on the sensor R219C/Y140W. Same experiments and legends as for the panel A, but the construct here is the sensor R219C/Y140W with the additional loss-of-function mutation N101K, current is represented in black and fluorescence in cyan (in trace recordings and dose-response representations) (panel A, Figure 3—source data 1; panels B and C, Figure 3—source data 2). For the entire figure, n are at least 5 and error bars are representated as +/- SEM.Figure 3—source data 1.Figure 3 -1.Figure 3—source data 2.Figure 3 -2.
+**Figure 3.:** (A) Exploration and characterization of the sensor V106C/L131W. Left top panel: macroscopic ligand-gated currents (in black) and fluorescence (in purple) recorded at –60 mV on the construct with the sensor V106C/L131W labeled with MTS-TAMRA evoked by saturating concentrations of agonists (in red, 5-HT; in blue, m-chlorophenylbiguanide [mCPBG]; in salmon, varenicline) and antagonists (all represented in orange, A: alosetron, G: granisetron, O: ondansetron, M: metoclopramide). Left bottom panel: graphical representation of ligand-induced relative changes of current and fluorescence compared to 5-HT. The normalized values for all the ligands are compared with the mean values obtained for 5-HT. Middle top panel: representative recording of current and fluorescence variations of V106C/L131W labeled with MTS-TAMRA upon different concentrations of perfused 5-HT. Middle bottom panel: dose-response curves for ΔI (black) and ΔF (purple) with mean and SEM (normalized by the maximum current of each oocyte) for application of 5-HT. Right top panel: representative recording of current and fluorescence variations of V106C/L131W labeled with MTS-TAMRA upon different concentrations of perfused varenicline. Right bottom panel: dose-response curves for ΔI (black) and ΔF (magenta) with mean and SEM (normalized by the maximum current of each oocyte) for application of varenicline. Note the significative difference between dose response of current and fluorescence at 0.5, 1, and 5 µM of perfused varenicline (unpaired t-test). (B) Exploration and characterization of the sensor R219C/Y140W. Same experiments and legends as for panel A, but the construct here is the sensor R219C/Y140W, current is represented in black and fluorescence in cyan (in trace recordings and dose-response representations). (C) Effect of loss-of-function mutation N101K on the sensor R219C/Y140W. Same experiments and legends as for the panel A, but the construct here is the sensor R219C/Y140W with the additional loss-of-function mutation N101K, current is represented in black and fluorescence in cyan (in trace recordings and dose-response representations) (panel A, Figure 3—source data 1; panels B and C, Figure 3—source data 2). For the entire figure, n are at least 5 and error bars are representated as +/- SEM.
 
-## Correlation between the orthosteric site motions and ion channel activation
+### Correlation between the orthosteric site motions and ion channel activation
 
 The sensor S204C displays electrophysiological properties identical to that of the WT, both in terms of agonist potency and efficacy. EC50c are identical between S204C and WT, i.e., 1.8 and 1.8 µM for 5-HT, 1.4 and 1.1 µM for mCPBG, and 20.6 and 21.1 µM for var, respectively (Table 1). mCPBG appears as a near full agonist, eliciting 89% and 92% of maximal 5-HT currents on S204C and WT, respectively, while var appears as a partial agonist eliciting only 33% and 39% of maximal 5-HT currents on S204C and WT, respectively (Table 2). All data on WT are consistent with TEVC data reported in the literature (Lummis et al., 2011).
+
+**Table 1.**
+ EC50 values for current (EC50c) and fluorescence (EC50f) responses to agonists (5-HT, m-chlorophenylbiguanide [mCPBG], varenicline) at labeled and unlabeled m5-HT3A mutants.The top part of the table represents the characterization of the sensors with different ligands and the associated controls (rows 1–13) and the second part the additional allosteric mutations added (rows 14–16).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Molecule</th>
+      <th>EC50c (µM) ± SEM</th>
+      <th>nHillc ± SEM</th>
+      <th>EC50f (µM) ± SEM</th>
+      <th>nHillf ± SEM</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Wild-type (WT)</td>
+      <td>5-HT</td>
+      <td>1.83±0.12</td>
+      <td>1.74±0.13</td>
+      <td>/</td>
+      <td>/</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>mCPBG</td>
+      <td>1.13±0.15</td>
+      <td>1.02±0.14</td>
+      <td>/</td>
+      <td>/</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>21.09±1.03</td>
+      <td>1.595±0.07</td>
+      <td>/</td>
+      <td>/</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>WT+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>3.43±0.24</td>
+      <td>1.98±0.12</td>
+      <td>/</td>
+      <td>/</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">I160C/Y207W+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>31.22±2.76</td>
+      <td>1.69±0.18</td>
+      <td>10.73±0.62</td>
+      <td>1.56±0.14</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>mCPBG</td>
+      <td>7.99±0.58</td>
+      <td>1.19±0.105</td>
+      <td>7.46±0.755</td>
+      <td>0.92±0.08</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>No current</td>
+      <td>/</td>
+      <td>16.80±0.76</td>
+      <td>1.29±0.06</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="3">I160C/Y207W unlabeled</td>
+      <td>5-HT</td>
+      <td>47.33±4.72</td>
+      <td>1.19±0.135</td>
+      <td>/</td>
+      <td>/</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>mCPBG</td>
+      <td>2.73±0.17</td>
+      <td>1.59±0.11</td>
+      <td>/</td>
+      <td>/</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>No current</td>
+      <td>/</td>
+      <td>/</td>
+      <td>/</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>I160C+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>31.01±1.64</td>
+      <td>1.73±0.11</td>
+      <td>/</td>
+      <td>/</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S204C+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>1.78±0.13</td>
+      <td>1.39±0.11</td>
+      <td>2.86±0.248</td>
+      <td>1.51±0.14</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>mCPBG</td>
+      <td>1.45±0.18</td>
+      <td>0.94±0.10</td>
+      <td>2.90±0.40</td>
+      <td>0.80±0.08</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>20.67±0.705</td>
+      <td>1.48±0.05</td>
+      <td>16.31±0.78</td>
+      <td>1.29±0.06</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S204C unlabeled</td>
+      <td>5-HT</td>
+      <td>1.93±0.25</td>
+      <td>1.08±0.12</td>
+      <td>/</td>
+      <td>/</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>mCPBG</td>
+      <td>0.54±0.02</td>
+      <td>1.94±0.16</td>
+      <td>/</td>
+      <td>/</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>17.105±1.12</td>
+      <td>1.385±0.07</td>
+      <td>/</td>
+      <td>/</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V106C/L131W+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>1.25±0.155</td>
+      <td>0.84±0.08</td>
+      <td>0.88±0.16</td>
+      <td>0.68±0.08</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>7.745±0.775</td>
+      <td>0.80±0.05</td>
+      <td>2.33±0.45</td>
+      <td>0.60±0.06</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">V106C/L131W unlabeled</td>
+      <td>5-HT</td>
+      <td>1.91±017</td>
+      <td>0.99±0.07</td>
+      <td>/</td>
+      <td>/</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>6.06±0.32</td>
+      <td>1.47±0.12</td>
+      <td>/</td>
+      <td>/</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>V106C+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>4.47±0.55</td>
+      <td>1.08±0.13</td>
+      <td>/</td>
+      <td>/</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R219C/Y140W+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>0.33±0.05</td>
+      <td>0.82±0.10</td>
+      <td>0.47±0.07</td>
+      <td>0.71±0.07</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>0.94±0.12</td>
+      <td>0.77±0.08</td>
+      <td>0.96±0.19</td>
+      <td>0.68±0.10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R219C/Y140W unlabeled</td>
+      <td>5-HT</td>
+      <td>0.60±0.01</td>
+      <td>0.94±0.10</td>
+      <td>/</td>
+      <td>/</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>1.575±0.28</td>
+      <td>0.875±0.12</td>
+      <td>/</td>
+      <td>/</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>R219C+MTS-TAMRA</td>
+      <td>5-HT</td>
+      <td>0.11±0.03</td>
+      <td>0.92±0.21</td>
+      <td>0.185±0.04</td>
+      <td>0.94±0.15</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>WT+N101K</td>
+      <td>5-HT</td>
+      <td>66.67±3.11</td>
+      <td>1.95±0.185</td>
+      <td>/</td>
+      <td>/</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S204C+N101K</td>
+      <td>5-HT</td>
+      <td>57.11±1.49</td>
+      <td>2.33±0.17</td>
+      <td>12.19±0.90</td>
+      <td>1.285±0.11</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>No current</td>
+      <td>/</td>
+      <td>25.30±2.46</td>
+      <td>0.94±0.07</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>mCPBG</td>
+      <td>13.10±-0.79</td>
+      <td>1.345±0.10</td>
+      <td>4.365±0.495</td>
+      <td>0.72±0.05</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R219C/Y140W+N101K</td>
+      <td>5-HT</td>
+      <td>3.32±0.39</td>
+      <td>0.94±0.10</td>
+      <td>1.62±0.27</td>
+      <td>0.86±0.11</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>15.65±2.70</td>
+      <td>0.76±0.09</td>
+      <td>5.25±0.95</td>
+      <td>0.69±0.07</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Current and fluorescence maximum evoked by ligands (agonist and antagonists) on m5-HT3A mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Molecule</th>
+      <th>ΔImaxmolecule compared to ΔImax5-HT ± SEM</th>
+      <th>ΔFmax molecule compared to ΔFmax5-HT ± SEM</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Wild-type</td>
+      <td>mCPBG</td>
+      <td>0.92±0.03</td>
+      <td>/</td>
+      <td rowspan="6">6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>0.39±0.06</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Alosetron</td>
+      <td>0</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Granisetron</td>
+      <td>0</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Ondasetron</td>
+      <td>0</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Metoclopramide</td>
+      <td>0</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td rowspan="6">S204C+MTS-TAMRA</td>
+      <td>mCPBG</td>
+      <td>0.89±0.04</td>
+      <td>1.09±0.105</td>
+      <td rowspan="6">6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>0.33±0.06</td>
+      <td>1.12±0.16</td>
+    </tr>
+    <tr>
+      <td>Alosetron</td>
+      <td>0</td>
+      <td>1.44±0.20</td>
+    </tr>
+    <tr>
+      <td>Granisetron</td>
+      <td>0</td>
+      <td>1.14±0.19</td>
+    </tr>
+    <tr>
+      <td>Ondasetron</td>
+      <td>0</td>
+      <td>0.78±0.13</td>
+    </tr>
+    <tr>
+      <td>Metoclopramide</td>
+      <td>0</td>
+      <td>0.52±0.08</td>
+    </tr>
+    <tr>
+      <td rowspan="6">I160C/Y207W+MTS-TAMRA</td>
+      <td>mCPBG</td>
+      <td>*5-HT – 0.02±0.004</td>
+      <td>1.21±0.06</td>
+      <td rowspan="6">8</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>*0</td>
+      <td>1.52±0.06</td>
+    </tr>
+    <tr>
+      <td>Alosetron</td>
+      <td>*0</td>
+      <td>2.26±0.10</td>
+    </tr>
+    <tr>
+      <td>Granisetron</td>
+      <td>*0</td>
+      <td>1.12±0.07</td>
+    </tr>
+    <tr>
+      <td>Ondasetron</td>
+      <td>*0</td>
+      <td>1.27±0.03</td>
+    </tr>
+    <tr>
+      <td>Metoclopramide</td>
+      <td>*0</td>
+      <td>0.60±0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="6">V106C/L131W+MTS-TAMRA</td>
+      <td>mCPBG</td>
+      <td>0.64±0.06</td>
+      <td>0.93±-0.06</td>
+      <td rowspan="6">6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>0.33±0.04</td>
+      <td>0.49±0.06</td>
+    </tr>
+    <tr>
+      <td>Alosetron</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Granisetron</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ondasetron</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Metoclopramide</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="6">R219C/Y140W+MTS-TAMRA</td>
+      <td>mCPBG</td>
+      <td>0.62±0.07</td>
+      <td>0.94±0.09</td>
+      <td rowspan="6">6</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>0.34±0.08</td>
+      <td>0.47±0.02</td>
+    </tr>
+    <tr>
+      <td>Alosetron</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Granisetron</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ondasetron</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Metoclopramide</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S204C+N101K-MTS-TAMRA</td>
+      <td>mCPBG</td>
+      <td>1.80±0.11</td>
+      <td>1.23±0.05</td>
+      <td rowspan="2">8</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>0</td>
+      <td>1.73±0.05</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R219C/Y140W+N101K-MTS-TAMRA</td>
+      <td>mCPBG</td>
+      <td>0.83±0.08</td>
+      <td>1.20±0.08</td>
+      <td rowspan="2">7</td>
+    </tr>
+    <tr>
+      <td>Varenicline</td>
+      <td>0.03±0.01</td>
+      <td>0.38±0.06</td>
+    </tr>
+  </tbody>
+</table>
+
+_Here : *comparison with values obtained with mCPBG (in contrast with all the other values in this table that where compared to values obtained with 5-HT)./ : not applicable._
 
 The strong agonists 5-HT and mCPBG elicit similar maximum fluorescence variation (ΔFmax) at saturation. Concentration-response curves show that the variations of current (ΔIs) and fluorescence are well correlated with similar EC50 fluorescence (EC50f) and EC50c. This shows that agonists promote local reorganizations around the binding site that are correlated to the opening of the channel, suggesting a concerted motion of the orthosteric site and the ion channel during activation. As for strong agonists, var displays similar EC50f and EC50c. However, it displays a ΔFmax similar to that of strong agonists despite activating only 33% of the current. Therefore, var at saturation promotes full reorganization of the binding site suggesting that among the population displaying a variation of fluorescence, only a fraction shows an open channel (Figure 2A).
 
@@ -73,7 +589,7 @@ Finally, the sensor I160C/Y207W displays by itself a marked loss-of-function phe
 
 Altogether, VCF data obtained for these two sensors close to the binding site highlight three families of conformations, the apo conformations, the agonist-bound active conformations characterized by a concerted reorganization of the orthosteric site and the ion channel (opening), and ligand-bound intermediate conformations characterized by reorganization of the orthosteric site with a closed channel. On the S204C that displays a WT-like phenotype, these intermediate conformations are partially populated for the partial agonist var. On the two loss-of-function backgrounds (S204C/N101K and I160C/Y207W), these intermediates are fully stabilized by var that behaves as an antagonist and are partially populated for 5-HT and mCPBG at sub-saturating concentrations.
 
-## Correlation between vestibular and ECD-TMD interface motions and ion channel activation
+### Correlation between vestibular and ECD-TMD interface motions and ion channel activation
 
 VCF recordings of both V106C/L131W and R219C/Y140W sensors show reproducible currents upon mCPBG perfusion at saturation but not in the case of long recordings required for dose-response curves, where they were non-reproducible. In contrast, 5-HT and var elicit robust and reproducible currents. For both sensors, quantification of the desensitization kinetics on the fast perfusion TEVC setup suggest a slight, although non-significant, increase in desensitization kinetics for 5-HT and var but shows surprisingly very fast desensitization kinetics for mCPBG (Figure 1—figure supplement 2.). This explains why, in the VCF setup endowed with a relatively slow perfusion system, the very transient mCPBG-elicited activation peak is truncated by desensitization, precluding its further analysis.
 
@@ -105,6 +621,14 @@ Intermediate conformations are also observed on many occasions for the sensors n
 
 Altogether, VCF data highlight a progressive propagation of the signal following ligand binding. Setrons elicit local reorganizations shown by the sensors located around the orthosteric site, partial agonists elicit local reorganizations at the four sensors indicating a motion of the whole ECD with partial pore opening, and strong agonists elicit reorganizations detected by all four sensors together with channel opening. VCF data thus identify four families of conformations endowed with distinct ΔI/ΔF signatures contributing to signal transduction: resting-like apo, setron-inhibited, partial agonist-elicited pre-active and active states. The topological information given by the various sensors are remarkably consistent with the gallery of high-resolution structures solved thus far. Indeed, the data from fluorescence partners are consistent with respectively apo, setron-bound, 5-HT-bound-closed, and 5-HT-bound-open conformations. This provides important information allowing reasonable functional annotation of the various structures to physiological states in a membrane environment, at least regarding the ECD. Figure 4 shows a speculative four-state model as a framework integrating the whole set of data. In addition, VCF data give insights in the action of partial agonists, that do not exclusively stabilize the active state and document the phenotypes of various allosteric mutations.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/93174/elife-93174-fig4-v1.jpg)
+
+**Figure 4.:** Schematic representation of the 5-HT3R representing two subunits in side-view with the orthosteric site and ion channel M2 helices highlighted. The four fluorescent sensors are represented as hexagons following the color code of Figure 1 (S204C in magenta, I160C/Y207W in green, V106C/L131W in purple, R219C/Y140W in cyan). Ligand-elicited fluorescence changes are represented as a light halo. VCF data identifies four different conformations whose fluorescence patterns match known high-resolution structures. These conformations are called resting (matching apo structures, PDB 4PIR, 6BE1, 6H5B, 6Y59), inhibited (matching setron-bound structures, PDB 6HIS, 6W1J, 6W1M, 6W1Y, 6Y1Z), intermediate (matching I1 and state 1, PDB 6HIO, 6DG7), and active (matching F, state 2, and open, PDB 6HIN, 6DG8, 6Y5A).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93174/elife-93174-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Superimposition of 5-HT3R structures in apo, alosetron-bound, 5-HT-bound state 1 (closed channel) and state 2 (open channel). On the pentamers, structures are superimposed at the level of the extracellular domain (ECD) of the subunit adjacent to the one shown (chain B) (the so-called complementary subunit facing loop C, chain A). The superimposition highlights that Alo and 5-HT equally promote the capping of loop C, but that Alo binding is associated with weak reorganization of the lower part of the ECD especially at the level of the Cys-loop and loop 2 near the ECD-transmembrane domain (TMD) interface. In contrast, both 5-HT-bound states show a similar reorganization regardless of whether the channel being open or closed.
+
 A key observation of the study is the identification of pre-active intermediates that are favored upon binding of partial agonists and/or in the presence of loss-of-function mutations. It is noteworthy that single-channel kinetic analyses of pLGICs early showed that the activation transition pathway involves multiple intermediated states. Analysis of numerous mutants of the muscle nAChR analyzed by REFERs (rate equilibrium linear free energy relationships) suggested a multistep reorganization that initiates in the orthosteric site and progressively spreads to the ion channel gate (Grosman et al., 2000). Analysis on GlyRs and nAChRs detected late intermediate states called ‘flip’ (Burzomato et al., 2004) or ‘primed’ (Mukhtasimova et al., 2009), that are favored by loss-of-function mutations (Plested et al., 2007; Lape et al., 2012), while a non-conducting intermediate state has been proposed from kinetic models of a high-conductance mutant of 5-HT3R (Corradi et al., 2009).
 
 More recently, fluorescence and VCF studies identified intermediate conformations for nAChRs, α1-GlyRs, and the bacterial homolog GLIC (Shi et al., 2023; Dahan et al., 2004; Mourot et al., 2008; Menny et al., 2017; Lefebvre et al., 2021). Of note, pre-active intermediates were unraveled by a fluorescence quenching pair at strictly homologous positions at the ECD-TMD interface of 5-HT3R and α1-GlyRs. Indeed, residues R219C/Y140W are homologous to another sensor pair Q219C/K143W engineered on the α1-GlyR. MTS-TAMRA-labeled Q219C/K143W also reports a non-conducting intermediate in the pathway toward activation, with a fluorescence variation revealing an early reorganization of the ECD-TMD interface (Shi et al., 2023). Molecular dynamic simulations starting from a taurine-bound-closed cryo-EM structure was found to recapitulate the pharmacological properties observed by VCF, suggesting that the intermediate conformations correspond to a highly dynamic family of conformations featuring an active-like ECD but a resting-like pore (Yu et al., 2021). Altogether, VCF shows that virtually all pLGICs appear to share a common global mechanism of gating where the proteins visit a family of structurally dynamic intermediates showing an active-like ECD and a resting-like TMD conformation. The present work thus extends this idea to the 5-HT3AR, together with providing structural blueprints for cryo-EM structural annotation.
@@ -113,34 +637,163 @@ In conclusion, by monitoring simultaneously electrophysiologically silent and ac
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>HTR3A, mouse 5-HT3A</td>
+      <td>Derived from doi: https://doi.org/10.1038/s41586-018-0672-3</td>
+      <td>Uniprot: P23979</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus laevis dissociated oocytes</td>
+      <td>Ecocyte Bioscience (Dortmund-Germany)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus laevis ovarian fragments</td>
+      <td>Portsmouth European Xenopus Resource Centre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse 5-HT3A in pcDNA5 vector</td>
+      <td>DOI: https://doi.org/10.1038/s41586-018-0672-3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Serotonin (5-HT), 5-hydroxytryptamin hydrochloride</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 153-98-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mCPBG hydrochloride</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 2113-05-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Varenicline tartrate (var)</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 375815-87-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alosetron hydrochloride</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 122852-69-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Granisetron hydrochloride</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 107007-99-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ondansetron hydrochloride dihydrate</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 103639-04-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metoclopramide</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 364-62-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MTS-TAMRA</td>
+      <td>Clinisciences</td>
+      <td>Catalog Number: 91030</td>
+      <td>MTS-5(6)-carboxytetramethylrhodamine, mixed isomers</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Merck (Sigma)</td>
+      <td>CAS: 67-68-5</td>
+      <td>Anhydrous</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Custom-made recording chamber for VCF</td>
+      <td>DOI: https://doi.org/10.1038/s41467-023-36471-7</td>
+      <td></td>
+      <td>Custom compartment chamber for VCF recordings used in this study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 The ligands used for perfusion: 5-hydroxytryptamine hydrochloride (5-HT, serotonin), mCPBG, var tartrate, alosetron, granisetron, ondansetron, and metoclopramide have been purchased from Merck (Sigma). Hydrosoluble ligands were directly solubilized in distilled water or in recording solution, aliquoted at high concentrations, kept in –20°C and used freshly for dilution on the day of experiment. Less soluble ligands (ondansetron) were first dissolved in DMSO, aliquoted and kept at –20°C, and then diluted in recording solutions at final concentrations not exceeding 1% of final DMSO on the day of experiment. The fluorescent dye MTS-TAMRA was purchased from Clinisciences, aliquoted in DMSO, kept at –20°C, and freshly used for labeling.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 All mutations were carried into the gene of the mouse 5-HT3A (described in Polovinkin et al., 2018, where strep-tags were removed), kindly provided by Hugues Nury (Institut de Biologie Structurale, Grenoble, France). The mutations were introduced by site-directed mutagenesis via PCR (CloneAmp Hifi, Takara). All mutations were assessed by complete sequencing of the gene (Eurofins Genomics). We have chosen to work with the mouse receptor because most of the available atomic structure have been obtained for m5-HT3A receptors.
 
-## Oocytes handling
+### Oocytes handling
 
 X. laevis ovarian fragments (TEFOR PARIS SACLAY CNRS UAR2010/INRAE UMS1451) and dissociated stage VI oocytes (Ecocyte Biosciences, Germany) were used in the context of this study. Concerning ovarian fragments, oocytes were dissociated following enzymatic treatment with collagenase II (1 mg/mL; 1 hr at room temperature in gentle agitation) (Thermo Fisher) in ORII solution (in mM: 82.5 NaCl, 2.5 KCl, 1 MgCl2, 5 HEPES, pH adjusted to 7.6 with NaOH). Selected oocytes were then handled in Barth’s solution (in mM: 88 NaCl, 1 KCl, 0.33 Ca(NO3)2, 0.41 CaCl2, 0.82 MgSO4, 2.4 NaHCO3, 10 HEPES, pH adjusted to 7.6 with NaOH) at 18°C.
 
-## cDNA injection
+### cDNA injection
 
 cDNA encoding for m5-HT3A constructs were injected into the nucleus of oocytes (100 ng) with cDNA encoding for eGFP as a reporter of correct injection (25 ng) by an air injection system (Nanoject II, Drummond). Oocytes were then incubated at 18°C and used to be recorded 48–96 hr after injection.
 
-## Labeling of mutants
+### Labeling of mutants
 
 Oocytes were incubated for 20 min at room temperature with a solution containing 10 μM of MTS-TAMRA (in DMSO) and 1–10 µM of 5-HT (in ND96 0% calcium) allowing the final concentration of DMSO to not exceed 0.1%. The oocytes were then rinsed three times with perfusion solution and recorded during the following 2 hr.
 
-## Voltage-clamp fluorometry
+### Voltage-clamp fluorometry
 
 Oocytes were placed in a custom-made recording chamber (described in Shi et al., 2023). It allows to record and perfuse the same part of the animal pole that faces the perfusion and the inverted microscope. Oocytes were continuously perfused with freshly made ND96 0% calcium (in mM: 96 NaCl, 2 KCl, 5 HEPES, 1 MgCl2, 1 HEPES, 1 EGTA, and pH was adjusted at 7.6 with NaOH). To perform recordings, microelectrodes (borosilicate glass with filament BF150-110-7.5, WPI) of resistances comprised between 0.2 and 2 mΩ (pipette puller PC-10, Narishige) were used and oocytes were clamped at –60 mV for all the experiments. Recordings are performed with a GeneClamp 500 voltage patch-clamp amplifier (Axon Instruments) and a 1400  A digitizer (Axon Instruments) with Clampex 10.6 software (Molecular Devices). Recorded currents were sampled at 2 kHz and filtered at 500 Hz. The fluorescence emission was recorded via a FF01-543_22 bandpass filter (Semrock) and collected by a photo-multiplicator (H10722, Hamamatsu). The intensity of irradiation of the LEDs (pE-4000 CoolLED) and of the sensitivity of detection of the PMT were kept at the same level for all the experiments. For the screening experiment, 5-HT at 50 and 100 µM were perfused (around 10 s). Dose-response curves of 5-HT, mCPBG, and var were adapted to the phenotype of the construct (gain- or loss-of-function) and used at concentrations stated in legends of graphs from the figures. Each concentration has been repeated twice for establishment of the dose-response curves. For the pharmacological experiments, used compounds were perfused on the same oocyte at saturating concentration (5-HT and mCPBG at 200 µM, var at 400 µM, antagonists used have low nanomolar affinities and used here all at 3 µM concentration).
 
-## Two-electrode voltage clamp
+### Two-electrode voltage clamp
 
 Currents from impaled oocytes expressing m5-HT3A constructs were obtained under ND96 0% calcium perfusion. Currents were recorded by a Warner OC-725C amplifier and digitized by a Digidata 1550A with Clampex 10 software (Molecular Devices). Currents were sampled at 500 Hz and filtered at 100 Hz. The voltage clamp is maintained at –60 mV during all experiments. The TEVC setup has a faster perfusion than the VCF setup, as described in a previous paper from our lab (Gielen et al., 2020). To characterize some of the desensitization properties, long application of 5-HT (45 s) at several concentrations (10, 50, 100, 300, and 500 µM) have been applied to calculate the remaining currents after 45 s application and compared to WT.
 
-## Analysis of results
+### Analysis of results
 
 Current and fluorescence analyses were made with Clampfit (Molecular Devices, Sunnyvale, CA, USA). Dose-response curves, EC50, and Hill coefficients are obtained by the normalization of serotonin-induced currents to the maximal current followed by the fitting of the data by one-site Hill equation (GraphPad Prism). Error bars on figures represents ± SEM. Results were obtained from at minima five different oocytes from at minima two different batches of oocytes. Rise time constants and desensitization constants have been calculated in Clampfit by mono-exponential fittings of signals. Statistical analyses have been made with Prism (unpaired t-tests).

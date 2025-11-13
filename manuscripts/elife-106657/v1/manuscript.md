@@ -12,7 +12,7 @@
 
 ### Affiliations
 
-1. https://ror.org/040gcmg81 Laboratory of Genome Integrity, National Cancer Institute, National Institutes of Health Bethesda United States
+1. Laboratory of Genome Integrity, National Cancer Institute, National Institutes of Health Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
 
 † Corresponding author
 
@@ -32,9 +32,17 @@ Secondly, to assess the presence of ssDNA at ALT telomeres, we used S1 nuclease,
 
 ## Results
 
-## END-seq efficiently captures 5′ chromosome termini
+### END-seq efficiently captures 5′ chromosome termini
 
 To study the terminal portion of chromosome, we employed an unbiased and high-resolution approach developed to map and investigate double-strand breaks (DSBs): END-seq (Canela et al., 2016). In this method, biotin-labeled adaptors are ligated to DSBs, which enable their purification and subsequent sequencing by next-generation sequencing (NGS). Based on the directionality of DNA sequencing (5′ to 3′), DSBs are identified as unidirectional reads that originate from the lesion site on either side of the break (Figure 1A). Chromosome ends resemble one-ended DSBs, which by END-seq should be detected as unidirectional reads corresponding to the 5′ telomeric strand, the C-rich strand. To test this hypothesis, we performed END-seq on two telomerase-positive human cell lines, HeLa and telomerase-expressing RPE1. Sequencing reads containing four consecutive TTAGGG repeats (G-rich) or CCCTAA repeats (C-rich) were defined as “telomeric reads” and were normalized to the total number of reads obtained in each individual library. Strikingly, virtually all (99.9%) telomeric END-seq reads correspond to the C-rich strand, in agreement with the fact that chromosome ends are one-ended DSBs (Figure 1B). To exclude possible artifacts derived from the repetitive nature of telomeric reads, we performed a similar analysis of reads corresponding to pan-centromeric repeats; this analysis shows that although the fraction of their presence in the human genome was similar (Figure 1—figure supplement 1A), the pan-centromeric sequences are not enriched to the same level as telomeres nor show any strand bias when detected (Figure 1—figure supplement 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the END-seq method applied to double-strand breaks (DSBs) (left) and natural chromosome ends (right). Blunted dsDNA ends are ligated to biotinylated adaptors, purified, and subsequently sequenced by next-generation sequencing (NGS). Reads originating from DSBs align to either side of the break (left), while telomeric reads align only to the 5′ C-rich template (red). (B) Number of reads containing at least four consecutive telomeric repeats corresponding to the G-rich (green) and C-rich (red) strands in HeLa and RPE1 cell lines. Telomeric reads are normalized to the total number of reads identified by END-seq and are represented as reads per million (RPM). (C) Sequence logo representing the conservation (bits) of the last 6 nucleotides at the 5′ end of chromosomes in HeLa and RPE1 cells. (D) Distribution of the three most frequent telomeric repeats across human cell lines (orange), mouse cells (yellow), and a canine cell line (purple). (E) Schematic representation of T7-mediated randomization of the 5′ termini. (F) Percentage of telomeric reads that have the indicated sequence as a 5′ end. The following sequences (CCCAAT-5′, TCCCAA-5′, and ATCCCA-5′) are grouped and labeled as ‘Rest’. Kullback–Leibler divergence (KL divergence) analysis was used to compare the distributions of the individual conditions. KL divergence between 0.25 and 0.375 is represented by two dots. Prior to the END-seq protocol, cells were either left untreated (NT) or were treated with T7. (G) Percentage of telomeric reads is displayed as described in (F). Cells expressing either a nontargeting shRNA (shScr) or an shRNA targeting POT1 (shPOT1) were harvested 3 days post induction and analyzed by END-seq. KL divergence between 0.125 and 0.25 is represented by one dot (●).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Relative abundance of pan-centromeric and telomeric reads. Reads per million (RPM) of pan-centromeric and telomeric reads found in the human T2T reference genome (Nurk et al., 2022). (B) Normalized number of pan-centromeric and telomeric reads aligned to Watson and Crick strands in HeLa and RPE1-hTERT cell lines. For telomeres, three units of TTAGGG or CCCTAA were used to call Watson (green) or Crick (red) strands. For centromeres, one unit of AAACTAGACAGAAGCATT or AATGCTTCTGTCTAGTTT was used to call Watson (green) or Crick (red) strands. (C) Sequence logo representing the conservation (bits) of the 5′ termini with absolute randomization (top) versus absolute precision (bottom). (D) Effect of in vitro randomization of 5′ termini by T7 exonuclease. Replotting of data presented in Figure 1F. Percentage of telomeric reads that have the indicated sequence as a 5′ sequence that have as a 5′ end. (E, F) Comparison of experimental data with modeled predictions to assess the impact of varying degrees of randomization on the CCAATC-5′ termini. The data presented in Figure 1F for in-plug treatment of T7 (E) and in Figure 1G for POT1 depletion (F) show varying degrees of randomization compared to their respective untreated controls. (G) Relative expression level of POT1 in HeLa cells expression inducible shRNA against POT1 (shPOT1) compared to control (shScr) after 3 days of shRNA induction by doxycycline.
 
 Next, we performed a motif analysis on the C-rich telomeric END-seq reads to determine the prevalent terminal chromosomal sequence. This analysis shows that the vast majority (78% and 65% for HeLa and RPE1, respectively) of chromosomes end with ATC-5′ (Figure 1C and D). Strikingly, this is in agreement with previous data obtained using a PCR-based approach termed STELA on defined chromosome ends in HeLa cells (Sfeir et al., 2005). A major advantage of END-seq over STELA is that it can be applied to telomeres of any length and chromosome location without the need of specific sub-telomeric primers. This excludes possible biases and allows the analysis of telomeres from any cell type and origin. As proof of principle, we expanded the analysis to a collection of telomerase-positive human cell lines, as well as mouse and dog cell lines, and mouse tissues. In these experiments, we found that chromosome ends show a strong bias for ATC-5′ as a terminal sequencing (Figure 1D), in line with previous findings (Tesmer et al., 2023; Smoom et al., 2023), suggesting a conserved mechanism for its generation.
 
@@ -44,15 +52,39 @@ Further, we investigated whether we could detect in vivo alterations of the term
 
 Lastly, we tested how depletion of either or both POT1 paralogs affected the 5′ termini of mouse telomeres. To this end, we engineered mouse embryonic stem cells (mESCs) expressing a FKBP-tagged POT1a protein (POT1adTAG/dTAG) that is degraded when cells are treated with dTAG13 compound (Figure 2—figure supplement 1A–C). Using this cell line, we then generated cell lines lacking POT1b through CRISPR knockout (POT1adTAG/dTAG POT1b-/-) (Figure 2—figure supplement 1D–F). This strategy allowed us to examine the 5′ termini of POT1-proficient ESCs, as well as systematically analyze the effect of either single or double POT1 depletion in a genetically defined background. END-seq analysis revealed that while depletion of POT1a altered 5′ termini, depletion of POT1b had no effect (Figure 2A and B). Using the KL divergence score, we determined that in the POT1-proficient and POT1b-depleted samples, approximately 70% and 85% of reads, respectively, corresponded to the perfect canonical ends. In contrast, in POT1a-depleted samples, this proportion was around 25%, regardless of POT1b status. This striking result highlights a fundamental difference between POT1a and POT1b, demonstrating that POT1a plays a dominant role in maintaining proper 5′ end processing, consistent with recently published work (Tesmer et al., 2023). The stark contrast between their effects underscores the distinct functions of these paralogs and reveals an exciting new layer of telomere regulation. Collectively, these data demonstrate the effectiveness of END-seq to study terminal repeats of chromosomes.
 
-## The terminal 5′ sequence in ALT-positive cells is canonical
+![Figure 2.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig2-v1.jpg)
+
+**Figure 2.:** (A) Comparison of the effect of single and double depletion of POT1a and POT1b on the percentage of telomeric reads with the indicated 5′ end sequences. The following sequences (CCCAAT-5′, TCCCAA-5′, and ATCCCA-5′) are grouped and labeled as ‘Rest’. Kullback–Leibler divergence (KL divergence) analysis was used to compare the distributions across conditions. KL divergence between 0.25 and 0.375 is represented by two dots. (B) Sequence logo illustrating the conservation (in bits) of the last 6 nucleotides at the 5′ end of chromosomes in POT1-proficient, POT1a-depleted, POT1b-depleted, and POT1a/POT1b double-depleted mouse embryonic stem cells (mESCs).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of the POT1a genomic locus (red) and repair template containing homology arms to the Pot1a locus (red), selection marker blasticidin (BSD), 3xflag tag, and FKBP12F36V (blue). Scissors represent the CRISPR/Cas9 cut site used for endogenous knock-in generation. Sanger sequencing confirms the newly generated FKBP12F36V and POT1a junction. (B) PCR genotyping to detect knock-in was performed. (C) Western blot analysis of mESCs expressing Flagx3-FKBP12F36V::POT1a treated with or without dTAG13 (500 nM) for 24 hr. (D) Schematic of the POT1b genomic locus showing exons targeted by sgRNAs (exon 2, E2, in red and exon 4, E4, in blue) and untargeted exons (gray), with wild-type and knockout conditions indicated. Scissors mark the CRISPR/Cas9 cut site used to generate the knockout cell line. Primers for genotyping are labeled as P1, P2, and P3 with arrows. Sanger sequencing confirms the knock-out by generation of newly generated exon 2 and exon 4 junction, resulting in a deletion and frameshift. (E) PCR genotyping to detect knockdown was performed. (F) Relative expression level of POT1b in mESCs compared to control. (G) Comparison of experimental data presented in Figure 2A with modeled predictions to assess the impact of varying degrees of randomization on the CCAATC-5′ termini.
+
+### The terminal 5′ sequence in ALT-positive cells is canonical
 
 Having established that END-seq efficiently captures the terminal repeat of chromosome ends, we sought to investigate whether ALT-positive cells have the same tight regulation of terminal repeats as telomerase-positive cells. We performed END-seq on three ALT-positive cell line: G292, SAOS2, and U2OS. Our analysis shows that in ALT cells, the vast majority of telomeric reads (82–98% across 3 cell lines and 11 biological repeats) correspond to the C-rich strand (Figure 3A–C), consistent with non-ALT cells and the expected pattern for a one-ended-DSB. Motif analysis revealed that the majority of telomeric reads in all three tested cell lines start with the canonical ATC-5′ sequence (Figure 3D, Figure 3—figure supplement 1A–C). These data suggest that regulation of the terminal 5′ of ends of chromosomes occurs independently of the mechanism of telomere elongation. To test this hypothesis, we depleted POT1 in U2OS cells using two different doxycycline-inducible shRNAs (Figure 3—figure supplement 1D). POT1 depletion resulted in formation of 53BP1 foci (Figure 3E and F), consistent with POT1’s established role in suppressing the DNA damage response at chromosome ends (Hockemeyer et al., 2005; Denchi and de Lange, 2007). Next, we performed END-seq to evaluate the effect of POT1 depletion on the terminal sequence. The data show that, similarly to telomerase-positive HeLa cells, depletion of POT1 dramatically altered the 5′ natural termini in ALT-positive cell lines (Figure 3G).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Number of telomeric reads containing at least four consecutive telomeric repeats corresponding to the G-rich (green) and C-rich (red) strands in the ALT-positive G292, SAOS2, and U2OS cell lines. Telomeric reads are normalized to the total number of reads identified by END-seq and are represented as reads per million (RPM). (D) Sequence logo representing the conservation at chromosome ends. A sequence logo representing the conservation (bits) of the last 6 nucleotides at the 5′ end of chromosomes in ALT cells. Fraction of reads with CCAATC as 5′ end is displayed. (E) Cells expressing either a nontargeting shRNA (shScr) or a shRNA targeting POT1 (shPOT1-1) were stained for 53BP1 (red) and telomeric DNA (TTAGGG, green). The scale bar represents 10 μm. (F) Quantification of the data shown in (E). Graphs indicated the percentage of cells that have at least five telomere dysfunctional foci (TIF) with 53BP1 co-localizing at telomeres. (G) Percentage of telomeric reads that have the indicated sequence as a 5′ sequence that have as a 5′ end. The following sequences (CCCAAT-5′, TCCCAA-5′, and ATCCCA-5′) are grouped and labeled as ‘Rest’. Cells expressing either a nontargeting shRNA (shScr) or a shRNA targeting POT1 (shPOT1-1 and shPOT1-2) were harvested 3 days post induction and analyzed by END-seq. Kullback–Leibler divergence (KL divergence) analysis was used to compare the distributions of the individual conditions. KL divergence between 0.25 and 0.375 is represented by two dots (●●), KL divergence greater than 0.375 is represented by three dots (●●●).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Distribution of telomeric reads across biological replicates of ALT-positive G292 (A), SAOS2 (B), and U2OS Cells. The following sequences (CCCAAT-5′, TCCCAA-5′, and ATCCCA-5′) are grouped and labeled as ‘Rest’. (D) Relative expression level of POT1 in U2OS cells expression of two different inducible shRNA against POT1 (shPOT1-1 and shPOT1-2) compared to control (shScr) after 3 days of shRNA induction by doxycycline. (E) Percentage of canonical telomeric reads (CTRs) and variant telomeric reads (VTRs) within the first 30 nucleotides from the 5′ of the terminal of Illumina reads from U2OS or HeLa cells.
+
 Next, we asked whether ALT cells are more likely to contain variant telomeric repeats (VTRs) in the terminal portions of chromosome ends. VTRs have been shown to occur frequently in telomeric reads isolated from ALT-positive cells (Conomos et al., 2012). To establish whether VTRs in ALT cells are contained within terminal repeats, we assessed the frequency of non-canonical telomeric repeats within the first 30 nucleotides from the 5′ of the Illumina reads from U2OS (1.93%) and HeLa (1.93%) cells (Figure 3—figure supplement 1E). This result shows that in ALT-positive cells, VTRs do not occur more frequently than non-ALT cells within the very terminal portion of chromosome ends. Due to the short read lengths used in this approach, we cannot determine whether VTRs in ALT cells are specifically excluded from the terminal region of chromosome ends.
 
-## Frequent occurrence of ssDNA in ALT telomeres
+### Frequent occurrence of ssDNA in ALT telomeres
 
 Having demonstrated that the 5′ terminal repeats in ALT cells are indistinguishable from non-ALT cells, we next asked whether the presence of single-stranded DNA (ssDNA) could be a unique feature of telomeric DNA in ALT-positive cells. Previous work provided indirect evidence for the presence of single-stranded telomeric DNA in ALT-positive cells, such as staining for RPA at telomeres, and FISH under native conditions (Figure 4—figure supplement 1A–D; Loe et al., 2020; Grudic et al., 2007). To test whether telomeres in ALT cells contain ssDNA, we employed S1-END-seq as a direct measure for the presence of ssDNA (Matos-Rodrigues et al., 2022). For this method, the S1 nuclease is used to convert any ssDNA into DSBs which are detected by END-seq. We anticipated that if telomeres do not contain any single-stranded telomeric DNA in addition to the 3′ overhang, telomeric S1-END-seq reads will be indistinguishable from the signal obtained using standard END-seq, corresponding to one-ended DNA ends (Figure 4A). However, S1-mediated cleavage of ssDNA within the internal telomeric tract will generate two-ended DSBs within telomeres. A DSB within telomeres would result in telomeric reads corresponding both to the C-rich and the G-rich strands (Figure 4A). To test this prediction, we performed S1-END-seq on a panel of ALT-positive and ALT-negative (Figure 4B, Figure 4—figure supplement 1E). S1-END-seq in ALT-negative cells revealed only C-strand telomeric reads excluding the presence of a significant amount of ssDNA within the telomeric tract in these cells (Figure 4B, Figure 4—figure supplement 1E). By contrast, performing S1-END-seq on a panel of ALT-positive cell lines revealed that G-rich and C-rich telomeric reads were detected at similar frequencies (Figure 4B, Figure 4—figure supplement 1E). These data show that telomeres in ALT-positive cells contain frequent regions of single-stranded DNA. Furthermore, our data shows that the ratio of C-rich to G-rich reads in S1-END-seq data can distinguish ALT-negative (0.98–0.99) from ALT-positive cell lines (0.4–0.58). Based on this ratio, we estimate that the ALT-positive cells analyzed here contain a minimum of three single-stranded telomeric DNA regions per chromosome end (Figure 4—figure supplement 1F and G).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of the S1-END-seq method applied to telomeres containing either an internal ssDNA region (left) or only the natural G-rich overhang (right). S1 nuclease treatment cleaves ssDNA regions generating two-ended double-strand break (DSB) (left) or one-ended DSB (right). DNA ends are ligated to biotinylated adaptors, purified, and subsequently sequenced by NGS. Reads originating from the double-ended DSB align to either side of the break (left), resulting in C-rich (red) and G-rich (green) reads. Reads originating from the single-ended chromosome ends align only to the C-rich template (red). (B) Proportion of telomeric reads (containing at least four consecutive telomeric reads) corresponding to G-rich reads (green) or C-rich reads (red). (C, D) Proportion of telomeric reads (containing at least four consecutive telomeric reads) corresponding to G-rich reads (green) or C-rich reads (red) in BLM-proficient (U2OS) or -deficient (BML-/-) cells by END-seq (C) or S1-seq (D). (E) Native telomeric FISH (ssTelo) in BLM-proficient (U2OS) or -deficient (BML-/-) cells either left untreated (control) or expressing TRF1-Fok1. The scale bar represents 10 μm. (F) Quantification of the data shown in (E), cells with five ssTelo signal (or greater) were scored as positive. When indicated, cells were induced to express the TRF1-Fok1 nuclease for 24 hr prior to harvesting. (G, H) Proportion of telomeric reads (containing at least four consecutive telomeric reads) corresponding to G-rich reads (green) or C-rich reads (red) in BLM-proficient (U2OS) or -deficient (BML-/-) cells expressing TRF1-Fok1 by END-seq (G) or S1-seq (H).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/106657/elife-106657-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Representative images and quantification of the percentage of ALT-positive U2OS cells and ALT-negative HeLa cells with more than 5 RPA foci colocalizing to TRF2. Data shown repeated in triplicate with a minimum of 250 cells counted per cell line. Error bars represent the standard error of the mean where n=3. The scale bar represents 10 μm. (C, D) Representative images and quantification of the percentage of ALT-positive U2OS cells and ALT-negative HeLa cells with more than five FISH foci where the staining is done under native conditions (ssTelo) to label single-stranded G-rich telomeric DNA (ssTeloG, green) or C-rich telomeric DNA (ssTeloC, red). Data shown repeated in triplicate with a minimum of 250 cells counted per cell line. Error bars represent the standard error of the mean where n=3. The scale bar represents 10 μm. (E) Number of reads containing at least four consecutive telomeric repeats corresponding to the G-rich (green) and C-rich (red) strands in a panel of ALT-negative and ALT-positive cells. Telomeric reads are normalized to the total number of reads identified by S1-END-seq and are represented as reads per million (RPM). (F) Schematics representing the expected number of C-strand and G-strand reads obtained by S1-END-seq in the absence of ssDNA regions within telomeres (1 end), or in the presence of 1 or 2 ssDNA. Bottom graph represents the expected ratio of C/G reads normalized to the total number of telomeric reads. (G) Table representing the expected number of C-strand and G-strand reads following a S1-END-seq in the presence of the listed number of ssDNA region with a single chromosome end. (H) Percentage of canonical telomeric reads (CTRs) and variant telomeric reads (VTRs) within the first 30 nucleotides from the 5′ of the terminal of Illumina reads from END-seq and S1-END-seq libraries of U2OS Cells. (I) Percentage of telomeric reads that have the indicated sequence as a 5′ sequence that have as a 5′ end. The following sequences (CCCAAT-5′, TCCCAA-5′, and ATCCCA-5′) are grouped and labeled as ‘Rest’. Cells expressing either a nontargeting shRNA (shScr) or a shRNA targeting POT1 (shPOT1-1 and shPOT1-2) were harvested 3 days post induction and analyzed by S1-END-seq. Kullback–Leibler divergence (KL divergence) analysis was used to compare the distributions of the individual conditions. KL divergence less than 0.125 are considered nonsignificant and indicated as n/s.
 
 We also investigated whether reads detected by S1-END-seq are more likely to contain VTRs compared to the terminal portions of telomeres. We compared the frequency of VTRs within the first 30 nucleotides of the S1-END-seq reads from U2OS libraries (3.8%) to their control END-seq U2OS libraries (1.93%). This shows that the frequency of VTRs is higher in the internal portions of chromosome ends compared to the terminal portions (Figure 4—figure supplement 1H).
 
@@ -62,15 +94,15 @@ Collectively, these data show that cells undergoing ALT have multiple single-str
 
 ## Discussion
 
-## END-seq as an unbiased tool to study the terminal telomeric repeat
+### END-seq as an unbiased tool to study the terminal telomeric repeat
 
 Here, we show that END-seq can efficiently capture 5′ chromosome termini, providing a high-resolution and unbiased approach to studying the terminal portion of chromosome ends. We found that by END-seq, chromosome ends are detected as one-ended DSBs corresponding to the 5′ C-rich telomeric strand. Our data show that, in agreement with previous work (Sfeir et al., 2005), most chromosomes have the sequence ATC as the 5′ end. END-seq has several advantages over alternative approaches: it is unbiased since it does not rely on capture oligos, it can be applied to telomeres of any length, and does not require any prior knowledge of the subtelomeric sequence. While END-seq is designed to capture chromosome ends in an unbiased manner, we cannot exclude the possibility that certain telomeric structures may hinder detection, potentially leading to underrepresentation of a subset of telomeres. Nevertheless, we have been able to define the terminal identity of chromosome ends in cells with long telomeres, such as murine cells and ALT-positive cells, as well as cells with poorly characterized subtelomeric regions, such as canine cells. These data show that the ATC-5′ sequence appears to be universal, highlighting a conserved mechanism of end-processing in mammalian cells. We also examined the effect of the depletion of POT1 paralogs on the 5′ chromosome termini in mouse cells. While POT1a depletion altered the sequence at 5′ ends, POT1b depletion had no effect. This finding adds to the growing evidence that POT1a and POT1b have distinct functions at mouse telomeres (Tesmer et al., 2023; Denchi and de Lange, 2007; Wu et al., 2006; Nurk et al., 2022; Hockemeyer et al., 2006; Gu et al., 2021).
 
-## Canonical POT1-dependent regulation of the terminal sequences in ALT-positive cells
+### Canonical POT1-dependent regulation of the terminal sequences in ALT-positive cells
 
 Our data show that ALT-positive cells, which use recombination-based mechanisms for telomere elongation, have the same regulation of terminal repeats as telomerase-positive cells. END-seq analysis of three different ALT-positive cell lines (G292, SAOS2, and U2OS) revealed that the majority of telomeric reads correspond to C-rich reads starting with the canonical CCAATC-5′ sequence. This indicates that the regulation of the terminal 5′ end of chromosome ends occurs independently of the telomere elongation mechanism and that ALT-based recombination does not alter this process. Furthermore, our data show that POT1 is critical, even in U2OS cells, to define the 5′ end termini of telomeres.
 
-## Single-stranded DNA in ALT telomeres
+### Single-stranded DNA in ALT telomeres
 
 Using the unbiased S1-END-seq approach, we show that the presence of single-stranded telomeric DNA characterizes ALT-positive cells. This property of ALT is unique in that cells can be readily classified as ALT-positive or ALT-negative based on the occurrence of S1-cuts within the telomeric reads (Figure 4B). The observed single-stranded telomeric DNA may arise from various sources, including R-loops, D-loops, internal DNA loops (i-loops), and extrachromosomal circles, which are known to be prevalent in ALT (Dilley et al., 2016; Henson et al., 2009; Mazzucco et al., 2020; Arora et al., 2014).
 
@@ -78,33 +110,414 @@ Notably, our findings align with previous indirect evidence suggesting that ALT-
 
 ## Materials and methods
 
-## Methods
+**Key resources table**
 
-## Cell culture
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96, RRID:CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa 1.2.11</td>
+      <td>Takai et al., 2010</td>
+      <td>RRID:CVCL_7908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>GM847</td>
+      <td>Henson et al., 2009</td>
+      <td>RRID:CVCL_7908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SUSM1</td>
+      <td>Henson et al., 2009</td>
+      <td>RRID:CVCL_4903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SAOS-2</td>
+      <td>ATCC</td>
+      <td>HTB-85, RRID:CVCL_0548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>G292</td>
+      <td>ATCC</td>
+      <td>CRL-1423, RRID:CVCL_2909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U2OS BLM-/-</td>
+      <td>Loe et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MEFs</td>
+      <td>Okamoto et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>mESC, E14</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>mESC, E14 Pot1a::3×FLAG–FKBP12F36V</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>mESC E14 Pot1b-/-</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>mESC E14 Pot1a::3×FLAG–FKBP12F36V Pot1b-/-</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Cell line (Canis lupus familiaris)</td>
+      <td>KOS</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRF2 (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NB110-57130, RRID:AB_844199</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPA32/RPA2 (4E4) (rat monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2208, RRID:AB_2238543</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc-Tag(9B11) (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2276, RRID:AB_331783</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-53BP1 (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NB100-304, RRID:AB_10003037</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSIT16-U6Tet-sh-EF1-TetRep-2A-Puro</td>
+      <td>Cellecta</td>
+      <td>Cat# SVSHU6TEP-L</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti- CMV TRE3G Puro FLAG-DD-ER-mCherry-TRF1-FokI WT</td>
+      <td>Dilley et al., 2016</td>
+      <td>N/A</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shPOT1 (TGTAGCTTGATCAGACACTTA)</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>shRNA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shPOT1-2 (TATGTATGCTAAATTGGATGG)</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>shRNA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hPOT1_F (qPCR primer)</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′-CAGAACCTGACGACAGCTTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hPOT1_R (qPCR primer)</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′-GCACATAGTGGTGTCCTCTCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hGAPDH_F (qPCR primer)</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′- GTCTCCTCTGACTTCAACAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hGAPDH</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′-ACCACCCTGTTGCTGTAGCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mPOT1b_F (qPCR primer)</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′-TTCGGCCCCAGTAGCACCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mPOT1b</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′-TCTCTTGCTTAAAGTACGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mGAPDH_F (qPCR primer)</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′-TGTGTCCGTCGTGGATCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mGAPDH</td>
+      <td>IDT</td>
+      <td>N/A</td>
+      <td>5′-TTGCTGTTGAAGTCGCAGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>END-seq adaptor 1</td>
+      <td>Matos-Rodrigues et al., 2022</td>
+      <td></td>
+      <td>5′ -phosphate -GATCGGA AGAGCGTCG TGTAGGGAAAGAGTGUU[Biotin-dT]U[BiotindT]UUACACTC TTTCCCTACACGACGCTCTTCCGATC*T-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>END-seq adaptor 2</td>
+      <td>Matos-Rodrigues et al., 2022</td>
+      <td></td>
+      <td>5′ -phosphate -GATCGGA AGAGCACAC GTCUUUUUUUUAGACGTGTGCTCTTCCGA TC*T-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TelC-Cy3</td>
+      <td>PNABio</td>
+      <td>Cat# F1002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TelG-Cy3</td>
+      <td>PNABio</td>
+      <td>Cat# F1006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HiFi HotStart ReadyMix</td>
+      <td>Roche</td>
+      <td>Cat# KK2602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Library Quantification Kit</td>
+      <td>Roche</td>
+      <td>Cat# KK4824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript II Reverse Transcriptase</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 18064014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Power SYBR Green PCR Master</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 4368577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS assay kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Exonuclease T (ExoT)</td>
+      <td>NEB</td>
+      <td>Cat# M0265L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Klenow Fragment (3’→ 5′ exo-)</td>
+      <td>NEB</td>
+      <td>Cat# M0212L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quick Ligation Kit</td>
+      <td>NEB</td>
+      <td>Cat# M2200L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>USER enzyme</td>
+      <td>NEB</td>
+      <td>Cat# M5505L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T4 DNA Polymerase</td>
+      <td>NEB</td>
+      <td>Cat# M0203L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T4 Polynucleotide Kinase</td>
+      <td>NEB</td>
+      <td>Cat# M0201L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNA Polymerase I, Large (Klenow) Fragment</td>
+      <td>NEB</td>
+      <td>Cat# M0210L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>S1 Nuclease</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# EN0321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>S1-END-seq KM12</td>
+      <td>Matos-Rodrigues et al., 2022</td>
+      <td></td>
+      <td>GEO # GSE203632</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>S1-END-seq RKO</td>
+      <td>Matos-Rodrigues et al., 2022</td>
+      <td></td>
+      <td>GEO # GSE203632</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>S1-END-seq SW48</td>
+      <td>Matos-Rodrigues et al., 2022</td>
+      <td></td>
+      <td>GEO # GSE203632</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>S1-END-seq SW620</td>
+      <td>Matos-Rodrigues et al., 2022</td>
+      <td></td>
+      <td>GEO # GSE203632</td>
+    </tr>
+  </tbody>
+</table>
+
+### Methods
+
+#### Cell culture
 
 Human, mouse, and dog cell lines were grown in DMEM medium supplemented with 10% fetal bovine serum (FBS) and 0.5 mg/ml penicillin, streptomycin, and L-glutamine (Gibco) and cultured at 37°C and 5% CO2. HeLa cells used in this study were HeLa1.2.11. G292 cells were grown in McCoy medium supplement with 15% FBS and 0.5 mg/ml penicillin, streptomycin, and L-glutamine (Gibco). Cell lines were tested for mycoplasma contamination. BLM knock-out cells were previously described in Loe et al., 2020, mESC E14 and canine cell line KOS were kind gifts of the Scripps Research Institute Genomics Core Facility and Dr. Amy LeBlanc (NCI), respectively.
 
-## Generation of mESC lines
+#### Generation of mESC lines
 
 Knockout and knock-in cell lines were generated via CRISPR/Cas9 gene targeting by transient transfection using Lipofectamine 2000 (Thermo Fisher Scientific). Cells were transfected with a plasmid encoding SpCas9 (px330) and a plasmid encoding specific gRNAs (backbone Addgene 41824). To introduce the dTAG13 controllable FKBP-tag POT1a in mESCs via homologous recombination-mediated repair, a synthetic repair template containing homology arms to the Pot1a locus, a blasticidin resistance marker, a 3xFLAG tag, and an FKBP tag was used, along with 2 sgRNA targeting the 5′ region of Pot1a (guide 1: 5′- TTACATTAGTGCTAATCCAA-3′, and guide 2: 5′-TTTTCATCAAACAATGTCTT-3′). To generate POT1b-/- cells, two gRNAs were used: guide 1 (5′-GTTCCTTTGCTTAAGTACGG-3′) and guide 2 (5′-GACATTTGATGGCACCTTAG-3′). Transfected cells were single-cell cloned, and resulting clones were screened by PCR to confirm the desired genomic deletion, which was further validated by Sanger sequencing.
 
-## Lentiviral-mediated gene manipulation
+#### Lentiviral-mediated gene manipulation
 
 Lentiviral particles were generated by transfection into HEK293T followed by isolation and transduction as previously described (Loe et al., 2020). Lentiviral expression was achieved with the following constructs and procedure:
 
-## POT1 depletion
+##### POT1 depletion
 
 sgRNA targeting POT1 (POT1-1: TGTAGCTTGATCAGACACTTA, POT1-2: TATGTATGCTAAATTGGATGG) were cloned into an inducible lentiviral vector (pRSITEP-U6Tet-sh-EF1-TetRep-2A-Puro) (Cellecta). Following infection, cells were treated with 1 μg/ml of doxycycline to induce shRNA expression and harvested 3 days later.
 
-## TRF1-Fok1 expression
+##### TRF1-Fok1 expression
 
 pLenti-CMV-TRE3G-ER-TRF1-Fok1 expressing plasmids (Dilley et al., 2016) were a kind gift from Agnel Sfeir. Infected cells were treated with 1 μg/ml of doxycycline and 0.6 μM of 4-hydroxytamoxifen (4-OHT) to induce TRF1-Fok1 and harvested 24 hr later.
 
-## RNA isolation and qRT-PCR
+### RNA isolation and qRT-PCR
 
 Total RNA was extracted from cells using the RNeasy Plus Mini Kit (QIAGEN), and cDNA was made using SuperScript II Reverse Transcriptase (Thermo Fisher). qPCR was performed using Power SYBR Green PCR Master (Fisher Scientific). Samples were run on a Bio-Rad CFX Opus 96 and analyzed on Bio-Rad CFX Maestro. The following primers were used in this study:
 
-## Immunofluorescence (IF) and FISH-based imaging
+### Immunofluorescence (IF) and FISH-based imaging
 
 IF, IF-FISH, and ssTelo staining were carried out as described previously (Loe et al., 2020; Azeroglu et al., 2024).
 
@@ -112,20 +525,20 @@ PNA probes used in this study were TelC-Cy3 (PNABio, Cat# F1002) and TelG-Cy3 PN
 
 Primary antibodies used in this study were TRF2 (NB110-57130, Novus Biologicals, rabbit), RPA32/RPA2 (2208, Cell Signaling, rat), Myc (2276, Cell Signaling, mouse), and 53BP1 (NB100-304, Novus Biologicals, rabbit).
 
-## Imaging and image analysis
+### Imaging and image analysis
 
 Images were acquired using a Zeiss Axio Imager M2 with an Axiocam 702 camera and ZEN 2.6 (blue edition) software; for each experiment and condition, a minimum of 250 cells were imaged. Final figures were assembled using Adobe Photoshop 25.7.0 and Adobe Illustrator 28.5.
 
-## END-seq and S1-END-seq
+### END-seq and S1-END-seq
 
 For END-seq and S1-END-seq, 6–20 × 106 cells were collected, embedded in 1% agarose plugs, and processed as previously reported (Canela et al., 2016; Matos-Rodrigues et al., 2022). For mouse spleen library, mice were euthanized with CO2 following ethical guidelines, and the spleens were surgically removed. Spleen tissues were mashed through a 70 μm cell strainer to obtain a single-cell suspension. The suspension was then centrifuged for 5 min at 300 × g, the pellet was washed with ice-cold PBS three times before proceeding with library preparation. Briefly, plugs were incubated with proteinase K solution for 1 hr at 50°C and then for 7 hr at 37°C, followed by consecutive washes in a wash buffer (10 mM Tris, pH 8.0, and 50 mM EDTA) and TE (10 mM Tris, pH 8.0, and 1 mM EDTA). Washed plugs were then treated with RNAseA (Puregene, QIAGEN), washed again in Wash Buffer, and stored at 4°C for up to 2 weeks. End blunting, A-tailing, and ligation to biotinylated hairpin adaptor 1 (ENDseq-adaptor-1, 5′-Phos-GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGUU[Biotin-dT]U[Biotin-dT]UUACACTCTTTCCCTACACGACGCTCTTCCGATC∗T-3′ [∗phosphorothioate bond]) were performed in the plug to minimize shearing and in vitro damage. Following this, high molecular weight DNA was isolated from agarose plugs and fragmented by sonication. Subsequently, adaptor-ligated fragments were captured with streptavidin-coated beads and sonication-created ends were repaired, A-tailed, and ligated with a distal adaptor (ENDseq-adaptor-2, 5′-Phos-GATCGGAAGAGCACACGTCUUUUUUUUAGACGTGTGCTCTTCCGATC∗T-3′ [∗phosphorothioate bond]). Subsequent PCR amplification resulted in ready-to-sequence libraries where the sequenced first base corresponds precisely to the first base of the blunted DSB on either side of the break. For S1-END-seq, proteinase K and RNAseA-treated plugs were treated with 100 U of S1 nuclease (Thermo Fisher) at 37°C for 30 min and the reaction was terminated by the addition of EDTA to a final concentration of 10 mM. S1-treated plugs were then processed through the standard END-seq protocol. For T7 treatment, proteinase K and RNAseA-treated plugs were incubated with 50 U of T7 exonuclease (NEB) at 37°C for 30 min before processing through the standard END-seq protocol.
 
 The libraries were sequenced on the Nextseq 550 or Nextseq 2000 platform (Illumina) using 75-bp single-end read kits. For each treatment condition, the control (nontreated) and sample libraries were sequenced in parallel in the same flow cell.
 
-## Telomeric motif detector and quantifier
+### Telomeric motif detector and quantifier
 
 We developed a Python script, ‘getTelomereENDseq’, to analyze gzipped FASTQ files for the presence of telomeric motifs in DNA sequences on a command-line environment using a Linux-based operating system and the statistical environment RStudio. The script identifies sequences containing G-rich and C-rich telomeric repeats, quantifies their occurrences, and calculates their relative frequencies. It takes a gzipped FASTQ file as input, and the minimum number of telomeric repeats is required. It generates two output files: one with sequences containing G-rich motifs and another with sequences containing C-rich motifs. For this study, we used a minimum of four consecutive TTAGGG repeats for G-rich reads and a minimum of four consecutive CCCTAA repeats for C-rich reads. Following this, in RStudio, using the stringi, ggseqlogo, ggplot2, ggsci, and tidyverse packages, the telomeric reads were trimmed by the last six nucleotides, reversed, and organized into data frames. These data frames were then used to plot the frequencies of telomeric repeats or motifs.
 
-## Statistical analysis and data visualization
+### Statistical analysis and data visualization
 
 We used RStudio and GraphPad Prism v10 for data visualization and statistical analysis. Statistical analyses are specified in figure legends. For microscopy data, p < 0.05 was considered statistically significant, and p values were assessed by unpaired parametric t-test. The sample size was not predetermined. Statistical analyses are specified in the figure legends. We used KL divergence to compare the distributions of frequencies of telomeric repeats between different samples. The KL divergence is a measure of the difference between two probability distributions. It quantifies how one probability distribution diverges from a second, expected distribution. To compute KL divergence, we used the philentropy package in RStudio. For this study, KL divergence values less than 0.125 are considered nonsignificant, and the rest assigned as follows: ● indicates KL divergence value between 0.125 and 0.25, ●● indicates a value between 0.25 and 0.375, and ●●● indicates a value greater than 0.375.

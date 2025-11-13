@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.35335.001 The HIV capsid is semipermeable and covered in electropositive pores that are essential for viral DNA synthesis and infection. Here, we show that these pores bind the abundant cellular polyanion IP 6 , transforming viral stability from minutes to hours and allowing newly synthesised DNA to accumulate inside the capsid. An arginine ring within the pore coordinates IP 6 , which strengthens capsid hexamers by almost 10°C. Single molecule measurements demonstrate that this renders native HIV capsids highly stable and protected from spontaneous collapse. Moreover, encapsidated reverse transcription assays reveal that, once stabilised by IP 6 , the accumulation of new viral DNA inside the capsid increases >100 fold. Remarkably, isotopic labelling of inositol in virus-producing cells reveals that HIV selectively packages over 300 IP 6 molecules per infectious virion. We propose that HIV recruits IP 6 to regulate capsid stability and uncoating, analogous to picornavirus pocket factors. HIV-1/IP 6 /capsid/co-factor/reverse transcription.
+The HIV capsid is semipermeable and covered in electropositive pores that are essential for viral DNA synthesis and infection. Here, we show that these pores bind the abundant cellular polyanion IP6, transforming viral stability from minutes to hours and allowing newly synthesised DNA to accumulate inside the capsid. An arginine ring within the pore coordinates IP6, which strengthens capsid hexamers by almost 10°C. Single molecule measurements demonstrate that this renders native HIV capsids highly stable and protected from spontaneous collapse. Moreover, encapsidated reverse transcription assays reveal that, once stabilised by IP6, the accumulation of new viral DNA inside the capsid increases >100 fold. Remarkably, isotopic labelling of inositol in virus-producing cells reveals that HIV selectively packages over 300 IP6 molecules per infectious virion. We propose that HIV recruits IP6 to regulate capsid stability and uncoating, analogous to picornavirus pocket factors. HIV-1/IP6/capsid/co-factor/reverse transcription.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Recently, we reported that HIV capsid hexamers possess an electropositive pore t
 
 ## Results
 
-## ATP binds the HIV-1 capsid but does not inhibit ERT
+### ATP binds the HIV-1 capsid but does not inhibit ERT
 
 Our previous study on HIV capsid pores suggested but did not determine that they are unable to discriminate between ribo and deoxyribo nucleotides. This is an important question because ATP is typically present at cytosolic concentrations > 100 fold in excess of dNTPs and thus a potential competitor for dNTP recruitment by the capsid. We therefore investigated whether ATP competes with dNTPs for binding to HIV capsid hexamers and whether the pore can discriminate between them. We used differential scanning fluorimetry (DSF) to determine if ATP binds hexamers by testing for thermal stabilisation, as was previously observed for dNTPs (Jacques et al., 2016). As previously, we used a mutant hexamer protein that is coordinated by disulphide bridges between monomers through the introduction of mutations A14C and E45C and with additional dimerisation mutants W184A and M185A (Pornillos et al., 2010). ATP stabilised hexamers with an almost identical increase in melting temperature (Tm) as dATP (Figure 1a). Moreover, other triphosphate ligands were also stabilising suggesting a shared mode of binding. Next, we solved a crystal structure of hexamer bound to ATP to determine its mode of binding (Table 1). We observed electron density indicating that ATP binds to hexamer at the centre of the sixfold axis and refinement of the six symmetrically equivalent ATP molecules with equal partial occupancy provided a good fit to the data (Figure 1b,c). The structure shows that ATP is coordinated solely by the R18 ring confirming that hexamers do not discriminate ribo versus deoxyribo nucleotides (Figure 1d,e).
 
@@ -46,13 +46,188 @@ Our previous study on HIV capsid pores suggested but did not determine that they
 
 **Figure 1.:** (a) Change in capsid hexamer stability upon addition of different nucleotide triphosphates as measured by differential scanning fluorimetry. Data are from three replicates and representative of at least three independent experiments. (b) Complexed structure of ATP bound to HIV capsid hexamer. The N-terminal β-hairpin is coloured in green, the location of R18 in blue spheres and ATP as bonds. (c) Electron density for ATP in the complex. (d) R18 in the HIV-1 capsid interacts with the adenosine triphosphates. (e) A cutaway view of the HIV-1 capsid surface in cross-section showing ATP (as sticks) bound inside the hexamer. The β-hairpin is in green and R18 in blue.
 
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>6ERM</th>
+      <th>6ERN</th>
+      <th>6ES8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P6</td>
+      <td>P6</td>
+      <td>P6</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>91.04, 91.04, 56.53</td>
+      <td>90.85, 90.85, 56.75</td>
+      <td>91.30, 91.30, 57.20</td>
+    </tr>
+    <tr>
+      <td>a, b, g (°)</td>
+      <td>90.0, 90.0, 120.0</td>
+      <td>90.0, 90.0, 120.0</td>
+      <td>90.0, 90.0, 120.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>78.85–2.00 (2.03–2.00)</td>
+      <td>78.68–2.36 (2.44–2.36)</td>
+      <td>79.08–1.90 (2.0–1.9)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>13.3 (59.0)</td>
+      <td>7.0 (28.7)</td>
+      <td>8.4 (87.8)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (%)</td>
+      <td>99.0 (90.9)</td>
+      <td>99.8 (95.0)</td>
+      <td>99.1 (94.3)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>10.8 (6.1)</td>
+      <td>15.4 (3.9)</td>
+      <td>10.8 (1.6)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100.0 (100.0)</td>
+      <td>92.6 (92.6)</td>
+      <td>91.5 (94.1)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>9.3 (9.2)</td>
+      <td>4.9 (4.7)</td>
+      <td>4.6 (4.4)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.0</td>
+      <td>2.36</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>18217</td>
+      <td>11142</td>
+      <td>21569</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.23/0.18</td>
+      <td>0.24/0.19</td>
+      <td>0.22/0.18</td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td>1808</td>
+      <td>1674</td>
+      <td>1816</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>1569</td>
+      <td>1562</td>
+      <td>1623</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>30</td>
+      <td>30</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>209</td>
+      <td>82</td>
+      <td>122</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>29.0</td>
+      <td>36.87</td>
+      <td>33.2</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>71.6</td>
+      <td>77.49</td>
+      <td>60.2</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>36.3</td>
+      <td>38.39</td>
+      <td>42.7</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.02</td>
+      <td>0.017</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.90</td>
+      <td>1.82</td>
+      <td>1.90</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest-resolution shell._
+
 As capsid hexamers do not discriminate NTPs and dNTPs, we tested how the presence of ATP impacts on ERT. ERT reactions were carried out on capsid cores purified from HIV-1 virions by centrifugation through a triton layer and banding in a sucrose gradient (Shah and Aiken, 2011). To ensure that this procedure allows recovery of intact cores of the expected morphology, we carried out negative stain electron microscopy (EM) on capsid cores further concentrated by pelleting. We observed intact capsids similar to those described previously (Welker et al., 2000) (Figure 2a). We investigated RT inside these cores by adding dNTPs, together with DNAse to remove DNA accumulating outside the capsid. Surprisingly, even at a 100-fold excess of ATP over dNTPs, not only did ATP fail to inhibit ERT but it actually increased the quantity of measured transcripts (Figure 2b). Similar increases were observed with the non-hydrolysable analogue ATPγS, suggesting that this was not due to an undefined ATPase activity. Improvement in ERT efficiency was dose-dependent, with transcripts increasing over two orders of magnitude as ATP was increased from 10 to 1000 µM (Figure 2c). Importantly, ATP had no impact on the activity of purified RT enzyme alone over the same concentration range (Figure 2d). Furthermore, substantial ATP stimulation was only observed in ERT reactions carried out in the presence of nuclease (Figure 2e). In the presence of DNase, any RT products that are made outside of the capsid, or become exposed as a result of uncoating, will be degraded. Thus, ATP does not alter the efficiency of RT directly but facilitates the accumulation of RT products within intact capsids. This is consistent with the fact that ATP hydrolysis is not required, as shown by the ATPγS data. We hypothesised that the ability of ATP to stabilise hexamers, as measured by DSF, may increase capsid stability during ERT. Consistent with this hypothesis, ATP only promoted ERT at concentrations of dNTPs < 100 µM (Figure 2f). At higher dNTP concentrations, ATP presumably had no effect because dNTPs sufficiently stabilised hexamers themselves. This also suggests that different cellular dNTP concentrations (such as during the cell cycle or between different cell types) might alter HIV RT efficiency both directly, by increasing substrate concentration for DNA synthesis, and indirectly by stabilising the capsid. Given that ATP may stabilise hexamers we tested whether ATP is selectively incorporated into HIV particles. ATP was detectable in virions, although at levels approximately similar to those inside the cell (1.5 mM) suggesting no substantial enrichment (Figure 2g).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35335/elife-35335-fig2-v2.jpg)
 
 **Figure 2.:** (a) Electron micrographs of isolated HIV-1 cores as visualised by negative staining. Size bars are 100 nm. (b) ERT in presence of nucleotide triphosphates. (c) ATP dose-dependently increases ERT efficiency. (d) ATP has no effect on in vitro RT in the absence of a capsid. (e) ATP increases accumulation of encapsidated RT products in the presence of DNase. (f) ATP increases ERT at dNTP concentrations < 100 µM. (g) ATP levels in producer cells (~100 cells) and HIV-1 virions (~5×109 virions) as detected by luciferase assay (see Materials and methods). All data are mean of three replicates ± SD.
 
-## Non-nucleoside reverse-transcriptase inhibitors (NNRTIs) inhibit encapsidated RT but do not bind capsid pores
+### Non-nucleoside reverse-transcriptase inhibitors (NNRTIs) inhibit encapsidated RT but do not bind capsid pores
 
 The fact that ATP does not inhibit ERT suggests that only a few pores are sufficient for dNTP import or that there are alternative routes into the capsid. To investigate this further, we compared the ability of nucleotide-based reverse transcription inhibitor (NRTI) AZT and non nucleoside RT inhibitiors Rilpivirine (RVP) and Nevirapine (NVP) to block ERT. We hypothesised that if pores represent the only entry route into the capsid then NNRTIs might be less potent in an encapsidated assay because they lack a triphosphate and may fail to interact with the R18 ring. We first used DSF to test interaction with capsid hexamers and found that only AZT and not the hydrophobic compounds RVP or NVP matched the stabilisation of dATP (Figure 3a). A small increase in hexamer stability was observed with RVP but equally in the presence and absence of DTT. This suggests any RVP interaction is not due to the R18 hexameric ring as this feature will be destroyed upon DTT addition because the disulphides holding the hexamer together become reduced. To corroborate these results we measured binding by fluorescence competition with BODIPY-ATP. Only AZT could compete with BODIPY-ATP and was capable of binding capsid hexamers (Figure 3b). This data is consistent with pore interaction being dependent on the charged triphosphate group. Determining a structure of capsid hexamer in complex with AZT confirmed that interaction occurs in a similar manner to dATP and ATP (Table 1). AZT binds to hexamer at the centre of the six-fold axis and refinement of the six symmetrically equivalent AZT molecules with equal partial occupancy provided a good fit to the electron density (Figure 3c). As with the previous complexes, while there is clear density for the phosphates the position of the base can only be inferred. The AZT triphosphates interact directly with R18, which adopts alternative side-chain conformers to allow multiple hydrogen bonds and prevent steric clashes (Figure 3d). Taken together with the ATP and dATP structures, this confirms that there are no specific hydrophobic interactions with the pore and is consistent with a lack of hexamer stabilisation by hydrophobic, uncharged NNRTIs. Next, we compared the activity of NRTI and NNRTIs in RT and ERT reactions to determine whether encapsidation markedly influences inhibitor potency. At the IC90 for in vitro RT inhibition, both AZT and the NNRTIs RVP and NVP blocked ERT with equivalent efficacy (Figure 3e,f). The fact that NNRTIs are equally capable of preventing ERT despite showing no interaction with the charged pore suggests that specific binding is not required for entry into the capsid. NNRTIs are sufficiently small to pass through the pore and so may enter by simple diffusion. These experiments also do not rule out entry via a different route entirely.
 
@@ -60,33 +235,41 @@ The fact that ATP does not inhibit ERT suggests that only a few pores are suffi
 
 **Figure 3.:** (a) Changes in hexamer capsid stability upon incubation with dATP or inhibitors in the presence and absence of DTT. Data are averaged from three replicates and representative of three independent experiments. (b) Fluorescence anisotropy competition binding experiments to hexamer capsid with inhibitors. A decrease in anisotropy indicates the ligand has displaced bound BODIPY-ATP. Averaged data from three measurements is shown and is representative of three independent experiments. (c) Electron density for NRTI AZT in complex with HIV capsid hexamer. (d) Putative hydrogen bonds between AZT and capsid reside R18. R18 adopts multiple side-chain conformations. (e) In vitro inhibition of reverse transcriptase enzyme. Data are mean of three replicates ± SD. (f) ERT experiments in presence of inhibitors at in vitro IC90 concentrations. Data are mean of three replicates ± SD.
 
-## Inositol phosphate IP6 stabilises capsid hexamers and promotes DNA accumulation during RT
+### Inositol phosphate IP6 stabilises capsid hexamers and promotes DNA accumulation during RT
 
 Our data with ATP suggested that polyanions may have an unappreciated but important role in stabilising HIV capsids and allowing encapsidated DNA synthesis to take place. Previously, we showed that the six-fold symmetric polyaninon hexacarboxybenzene interacts avidly with the R18 charged pore (Jacques et al., 2016). Furthermore, it bound hexamers more tightly than dNTP and stabilised hexamers to a greater extent. Hexacarboxybenzene is not a cellular metabolite nor is it bioavailable; however, it is reminiscent of the fully phosphorylated inositol ring of inositol hexakisphosphate (IP6), a strongly negatively charged metabolite possessing six phosphate rather than carboxylic acid groups (Figure 4a). Moreover, IP6 has previously been shown to interact with immature capsid and catalyse in vitro assembly of the immature lattice (Campbell et al., 2001). We therefore tested by DSF whether IP6 can stabilise the mature capsid and promote ERT by facilitating the accumulation of RT products within the core. To obtain additional information as to stoichiometry of binding, we performed experiments at a range of IP6 concentrations with hexamer protein present at ~33 µM. To show the transition between stabilised species, the melt curves rather than change in stability (ΔTm) are shown (Figure 4b). As predicted, IP6 strongly stabilised capsid hexamers, moreover to a substantially greater degree than ATP (Figure 4c). A concentration of 20 µM IP6 gave approximately half maximal stabilisation to a solution of 33 µM hexamer. This suggests that hexamer stabilisation by IP6 is likely stoichiometric, with one IP6 molecule per hexamer. Importantly, addition of IP6 to an ERT reaction greatly increased the number of reverse transcripts in the presence of nuclease (Figure 4d). This suggests that IP6 promotes the accumulation of RT products within intact capsids. To further test this hypothesis, we repeated our ERT experiment in the presence of the anti-capsid drug PF74. At concentrations > 10 µM, PF74 is thought to destabilise the capsid and induce premature uncoating during infection (Price et al., 2014), while in vitro it leads to a rapid failure of capsid integrity (Marquez et al., submitted). We measured no RT products in the presence of both PF74 and nuclease, consistent with induced uncoating and degradation of exposed transcripts (Figure 4d). Importantly, in the presence of PF74, IP6 no longer had any effect. Taken together our observations suggest that IP6 acts to stabilise capsids but that this stabilisation is not sufficient to prevent capsid failure induced by PF74. Nevertheless, in the absence of PF74, IP6 potently stabilised capsid cores at much lower concentrations than ATP. At concentrations where ATP showed no measurable effect, IP6 was able to maximally increase ERT (Figure 4e).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35335/elife-35335-fig4-v2.jpg)
 
-**Figure 4.:** 6 promotes ERT.(a) IP6 molecule, indicating the non-planar phosphate arrangement. (b) IP6 stabilises capsid hexamers with a 1:1 stoichiometry. Data are representative of three different experiments. (c) IP6 makes capsid hexamers more stable than ATP. The mean of three measurements ± SD is shown and is representative of three independent experiments. (d) IP6 (100 µM) increases RT inside capsid cores (+DNase) but not RT in bulk solution (-DNase). PF74 (30 µM) prevents ERT and counteracts IP6. (e) IP6 stimulates ERT more potently than ATP. ERT data are plotted as the mean ± SD of three replicates.
+**Figure 4.:** (a) IP6 molecule, indicating the non-planar phosphate arrangement. (b) IP6 stabilises capsid hexamers with a 1:1 stoichiometry. Data are representative of three different experiments. (c) IP6 makes capsid hexamers more stable than ATP. The mean of three measurements ± SD is shown and is representative of three independent experiments. (d) IP6 (100 µM) increases RT inside capsid cores (+DNase) but not RT in bulk solution (-DNase). PF74 (30 µM) prevents ERT and counteracts IP6. (e) IP6 stimulates ERT more potently than ATP. ERT data are plotted as the mean ± SD of three replicates.
 
-## IP6 transforms capsid stability from ~7 min to >10 hr
+### IP6 transforms capsid stability from ~7 min to >10 hr
 
 Next, we investigated whether IP6 intrinsically stabilises the HIV capsid or just during RT. Capsid cores are known to be unstable and uncoat after isolation. Consistent with this, addition of dNTPs after 24 hr incubation at room temperature resulted in little measurable ERT, in contrast to dNTP addition at time 0 which resulted in effective DNA synthesis (Figure 5a). Experiments were carried out in the absence of nuclease, indicating that the absence of measured RT in pre-incubated samples reflects the inefficiency of transcription outside the capsid. Importantly, however, capsid cores that were incubated in the presence of IP6 for 24 hr before the addition of dNTPs supported a similar level of RT as capsids that had not been subjected to temperature-induced uncoating. Together with the previous data, this suggests that IP6 stabilises capsids both prior to and after RT. To investigate this further, we sought to define the intrinsic stability of an HIV capsid and how this is impacted by IP6. To accomplish this, we employed a newly developed single molecule assay described in detail in an accompanying report. In summary, this method involves tethering HIV virions to glass cover slips and permeabilizing their lipid envelope using a pore-forming toxin (Figure 5b). Chimeric virions were used in which GFP is cleaved from Gag during maturation of the particle, resulting in GFP molecules packaged within the mature capsid. The uncoating kinetics of individual capsids was then determined by monitoring the loss of GFP signal (Figure 5c). Uncoating, here defined as sufficient core opening to allow the escape of GFP molecules, occurs as a single rapid event at the single-particle level (Figure 5d). In the absence of IP6, we observed that HIV capsids are highly unstable and rapidly uncoat with a half-life of ~7 min (Figure 5d–f). Remarkably, addition of even 1 µM IP6 was sufficient to dramatically stabilise virions and increase their half-life well beyond an hour (Figure 5e and f). Increasing the concentration of IP6 to 10 or 100 µM stabilised capsids so efficiently that too few virions uncoated during the timescale of the experiment for an accurate measurement of the half-life. However, estimates suggest that 10 or 100 µM IP6 stabilises capsid for 5 or 10 hr, respectively.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/35335/elife-35335-fig5-v2.jpg)
 
-**Figure 5.:** 6 stabilises the HIV capsid both before and during DNA synthesis.(a) IP6, dNTP, both or neither were added to capsid cores at the indicated time points and ERT measured at 48 hr in the absence of nuclease. IP6 added at 0 hr maintains HIV capsid integrity sufficiently to allow ERT when dNTPs are added 24rs later. Data are plotted as the mean ± SD of three replicates. (b) Schematic of the core opening assay. (c) Field-of-view of GFP +intact capsids at different time points and concentrations of IP6 (d) Example traces of single particle GFP release upon core opening. Traces from four individual virions undergoing core opening at different times are shown for each condition. (e) Fraction of intact cores as a function of time (f) Half-life of core opening.
+**Figure 5.:** (a) IP6, dNTP, both or neither were added to capsid cores at the indicated time points and ERT measured at 48 hr in the absence of nuclease. IP6 added at 0 hr maintains HIV capsid integrity sufficiently to allow ERT when dNTPs are added 24rs later. Data are plotted as the mean ± SD of three replicates. (b) Schematic of the core opening assay. (c) Field-of-view of GFP +intact capsids at different time points and concentrations of IP6 (d) Example traces of single particle GFP release upon core opening. Traces from four individual virions undergoing core opening at different times are shown for each condition. (e) Fraction of intact cores as a function of time (f) Half-life of core opening.
 
-## IP6 coordinates the R18 ring in HIV hexamer pores
+### IP6 coordinates the R18 ring in HIV hexamer pores
 
 We hypothesised that the remarkable capsid stabilisation achieved by IP6 is likely because the abundant negatively charged groups allow highly efficient coordination and charge neutralisation of the six arginine side-chains in the pore. To investigate this, we solved the structure of hexamer bound to IP6 (Table 1). The electron density for the complex confirmed that IP6 binds the R18 ring and six symmetry copies of IP6 at partial occupancy were an excellent fit to the data (Figure 6a). This illustrates that IP6 can bind in a number of alternate conformations, with the axial phosphate in different orientations. The N-terminal β-hairpin of the hexamer adopts a ‘closed’ conformation in the IP6 complex, with IP6 itself located within the central chamber, above the R18 ring (Figure 6b). Weak density was observed that may correspond to additional IP6 molecules in the solvent channel below R18 but their inclusion did not improve the fit of the model to the data. Previous hexamer structures have shown that the R18 side-chain can adopt multiple alternative rotamer conformations. Two alternate R18 conformers are necessary in the IP6 complex to prevent clashes with the ligand and maintain interaction. Despite the fact that IP6 is not planar and does not bind parallel to the R18 ring, alternate R18 conformers allow each arginine within the hexamer the potential for hydrogen bond or electrostatic interactions with a phosphate (Figure 6c,d). The structure therefore indicates that IP6 is tightly bound by the R18 pore, would effectively neutralise the abundant positive charge and is likely to coordinate and maintain hexamer assembly.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/35335/elife-35335-fig6-v2.jpg)
 
-**Figure 6.:** 6 binds the HIV capsid and coordinates all R18 pore guanidino groups.(a) View of IP6:hexamer complex down the 6-fold symmetry axis. Secondary structure is colored by monomer. R18 in each monomer adopts two alternate side-chain conformers. All symmetrically equivalent orientations of IP6 present in the structure are shown, together with the 2Fo-Fc density (mesh) centred on the ligand and contoured at 1σ. (b) View through the centre of the IP6:hexamer complex orthogonal to the 6-fold axis. The molecular surface of the capsid is shown together with a single bound IP6 molecule. N-terminal β-hairpin residues are shown in green and the R18 ring is shown in blue. (c) View down the 6-fold axis showing IP6 bound within the capsid hexamer. (d) R18 coordination by a single bound IP6 molecule. Putative interactions (2.2–4.2 Å) between each arginine and phosphate is indicated by a black dotted line.
+**Figure 6.:** (a) View of IP6:hexamer complex down the 6-fold symmetry axis. Secondary structure is colored by monomer. R18 in each monomer adopts two alternate side-chain conformers. All symmetrically equivalent orientations of IP6 present in the structure are shown, together with the 2Fo-Fc density (mesh) centred on the ligand and contoured at 1σ. (b) View through the centre of the IP6:hexamer complex orthogonal to the 6-fold axis. The molecular surface of the capsid is shown together with a single bound IP6 molecule. N-terminal β-hairpin residues are shown in green and the R18 ring is shown in blue. (c) View down the 6-fold axis showing IP6 bound within the capsid hexamer. (d) R18 coordination by a single bound IP6 molecule. Putative interactions (2.2–4.2 Å) between each arginine and phosphate is indicated by a black dotted line.
 
-## HIV packages 300 molecules of IP6 per virion
+### HIV packages 300 molecules of IP6 per virion
 
 Inositol hexakisphosphate is an abundant polyanion, present in cells at ~50 µM concentrations (Veiga et al., 2006). It is synthesised from Inositol pentakisphosphate (IP5), which can reach similar concentrations. We therefore tested whether IP5 or other precursor molecules are also capable of promoting ERT. DSF showed that other IP compounds, including IP5 and also to a lesser extent IP4, were capable of stabilising capsid hexamers under assay conditions (Figure 7a). Addition in ERT experiments at 1 µM concentration revealed a clearer distinction between IP compounds, with IP4 unable to stabilise capsids and promote RT product accumulation in the presence of nuclease (Figure 7b). In contrast, IP5 promoted encapsidated RT indistinguishably from IP6. Based on the above data, we hypothesised that IP5 or IP6 could be used by HIV in order to stabilise its capsid. IP5 and IP6 have previously been shown to catalyse the assembly of the immature lattice (Campbell et al., 2001), suggesting that these molecules are recruited either during budding, in a producer cell, or following entry into a target cell. To distinguish between these two possibilities, we attempted to determine whether inositol phosphates are incorporated into HIV virions. We produced viruses from 3H-inositol labelled cells and carefully purified budded viral particles by filtering and multiple centrifugal pelleting steps through sucrose. Virions were acid extracted and strong anion exchange chromatography (Sax-HPLC) was employed to resolve the inositol phosphate present in the virions and in the correspondent infected cell extracts. Scintillation counting of Sax-HPLC eluted fractions revealed the specific presence of IP6 in HIV virions (Figure 7c). Importantly, the levels of IP6 were enriched over those of IP5; indeed little IP5 was detected despite the fact that it is present within cells at concentrations around 25% that of IP6. This suggests that it is IP6 selectively incorporated into virions rather than from potential co-purifying microvesicles that is being measured (Bess et al., 1997). Subtilisin treatment is used to reduce microvesicle contamination in HIV-1 virion preparations (Ott, 2009). To ensure that IP6 detection is not from contaminating microvesicles, we repeated our experiments on subtilisin-treated samples. Subtilisin removed protein contaminants and abolished HIV-1 infectivity consistent with the digestion of envelope proteins, but did not reduce the levels of capsid protein or incorporated IP6 (Figure 7d and Figure 7—figure supplement 1). Finally, to directly demonstrate that IP6 is associated with the capsid core rather than the viral membrane, we stripped the envelope from produced virions using the same triton-layer centrifugation method as employed to prepare cores for ERT (Shah and Aiken, 2011). Incorporation in capsid cores was compared to virions by calculating the scintillation counts for IP6 per µg p24, as determined by ELISA. To confirm that our core prep has removed enveloped particles, we also compared the relative levels of inositol. Inositol is an osmolyte found in the cytosol at ~mM concentrations and is therefore only expected in samples derived from enveloped virions and microvesicles. Consistent with this, we observed loss of the inositol peak in the capsid only sample (Figure 7e). However, we observed the same levels of IP6 in both samples demonstrating that IP6 is associated with the capsid core (Figure 7f). This result reinforces that measured IP6 is not derived from microvesicles but is enriched into HIV-1 virions and bound to the capsid core. We calculated the number of IP6 molecules per virion by determining the fraction of cellular IP6 that is incorporated. Parallel analysis of the cell extracts by PAGE-based separation revealed that 0.8% of total IP6 radioactivity was incorporated into the produced virions (Figure 7g) (Losito et al., 2009; Wilson et al., 2015). This corresponds to approximately 309 ± 41 IP6 molecules per viral particle, which is sufficient for 1:1 stoichiometry with hexamer pores present in an intact virion.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/35335/elife-35335-fig7-v2.jpg)
+
+**Figure 7.:** (a) Hexamer stability in presence of 0.2 µM IP4 – IP6. Data are averaged from three replicates with SD and are representative of at least three independent experiments. (b) IP5 (1 µM) and IP6 (1 µM) promote RT accumulation in presence of nuclease. Data are plotted as the mean of three replicates with SD. (c) HIV produced in 3H-inositol-treated cells, acid-extracted and Sax-HPLC fractioned reveals specific packaging of IP6 but not IP4 or IP5 into virions. Supernatant of mock transfected cells processed in parallel with viral samples was used as a control. Scintillation data are single measurements representative of three independent experiments. (d) IP6 incorporation in virions treated with subtilisin to remove microvesicle contamination (Figure 7—figure supplement 1). (e) Comparison of inositol levels in samples of intact enveloped virions or purified capsid cores (measured as CPM per µg of p24 capsid). (f) As in (e) but comparing the levels of IP6. Enveloped virions and capsid cores have equal IP6 incorporation. (g) Toluidine blue PAGE of IP6 purified from 293 T cells with known IP6 and polyphosphate (PolyP) standards.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35335/elife-35335-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Subtilisin treatment of HIV virions or control supernatant of cells transfected without gag encoding plasmid. (a) Samples were run on SDS PAGE and also blotted for p24 protein. (b) Effect of subtilisin treatment on HIV-1 infection.
 
 ## Discussion
 
@@ -100,54 +283,54 @@ Importantly, as mature hexamers form only after budding, they cannot be responsi
 
 ## Materials and methods
 
-## Protein production and purification
+### Protein production and purification
 
 The CA N-terminal domain and the disulfide-stabilised CA hexamer were expressed and purified as previously described, briefly: p24 capsid protein was disassembled in Tris (pH 8.0, 50 mM), NaCl (40 mM), 2-mercaptoethanol (20 mM), then reassembled in Tris (pH 8.0, 50 mM), NaCl (1 M), 2-mercaptoethanol (20 mM). This was followed by oxidation in Tris (pH 8.0, 50 mM), NaCl (1 M) and redispersion in Tris (pH 8.0, 20 mM), NaCl (40 mM). Reassembled hexamers were observed by non-reducing SDS–PAGE.
 
-## Differential scanning fluorimetry
+### Differential scanning fluorimetry
 
 DSF measurements were performed using a Prometheus NT.48 (NanoTemper Technologies) over a temperature range of 20–95°C using a ramp rate of 2.0°C / min. CA hexamer samples were prepared at a final concentration of 200 µM monomer in Intracellular Buffer in the presence or absence of 4 mM DTT. dNTPs or competitors were added at 200 µM. DSF scans are single reads of three replicates and were performed at least three times unless otherwise stated. Consistency between like points yields an uncertainty in Tm of no greater than 0.2°C.
 
-## Plasmids
+### Plasmids
 
 Lentiviral packaging plasmid psPAX2 encoding the Gag, Pol, Rev, and Tat genes and pMDG2, which encodes VSV-G envelope, was obtained from Didier Trono (Addgene plasmids # 12260 and # 12259). HIV-1 Gag-Pol expression plasmid pCRV-1 (Zennou et al., 2004) and HIV-GFP encoding plasmid CSGW (Naldini et al., 1996) were kind gifts from Stuart Neil. The proviral construct pNL4.3-iGFP-ΔEnv was generated as described previously (Aggarwal et al., 2012). It contains the open-reading frame for eGFP flanked by protease cleavage sites inserted into the Gag gene between the coding sequences for MA and CA. In addition the start codon of the Env gene is mutated to a stop codon to prevent expression of the envelope protein.
 
-## Preparation of HIV-1 virions
+### Preparation of HIV-1 virions
 
 Replication deficient VSV-G pseudotyped HIV-1 virions were produced in HEK293T cells using pMDG2, pCRV GagPol and CSGW as described previously (Price et al., 2014). Viral supernatant from HEK293T cells was pelleted over a 20% sucrose cushion in a SW28 rotor (Beckman) at 28,000 rpm at 4°C. Pellets were resuspended in PBS. For removal of microvesicle contaminants, samples were treated with subtilisin essentially as described by Ott (2009), with virions subsequently purified by ultracentrifugation through 20% sucrose. Subtilisin efficiency was determined by SDS PAGE and infection assay.
 
-## Preparation of HIV-1 cores
+### Preparation of HIV-1 cores
 
 HIV-1 capsid cores were prepared using a protocol based on Shah and Aiken (2011). 90 ml HEK293T supernatant containing VSV-G pseudotyped HIV-1 GFP was pelleted over 20% sucrose dissolved in core prep buffer (CPB; 20 mM Tris (pH 7.4), 20 mM NaCl, 1 mM MgCl2) in an SW28 rotor (Beckman) at 25,000 rpm at 4°C. Pellets were gently resuspended at 4°C in CPB for 1 hr with occasional agitation. Resuspended pellets were treated with DNase I from bovine pancreas (Sigma Aldrich) for 1 hr at 200 µg/ml at room temperature to remove contaminating extra-viral DNA. Virus was subjected to spin-through detergent stripping of the viral membrane as follows. A gradient at 80–30% sucrose was prepared in SW40Ti ultracentrifuge tubes and overlaid with 250 µl 1% Triton X-100 in 15% sucrose, followed by 250 µl 7.5% sucrose. All solutions were prepared in CPB. 750 µl DNase-treated, concentrated virus was layered on top of the gradient and subjected to 32,500 rpm at 4°C for 16 hr. The preparation was fractionated and the location of cores was determined by ELISA for p24 (Perkin Elmer). Core-containing fractions were pooled and snap frozen before storage at −80°C.
 
-## Preparation of cores for EM imaging
+### Preparation of cores for EM imaging
 
 Cores were prepared as above. Pooled core fractions were diluted to reduce the sucrose concentration to 20%, then samples were spun 2 hr at 4˚C at 45 K rpm in TLA55 rotor. Cores were resuspended in 8 µl CPB with 20% sucrose and loaded onto glow discharged carbon grids (Cu, 400 mesh, Electron Microscopy Services) for 5 min then stained for 3 min with 2% uranyl acetate. Micrographs were taken at room temperature on a Tecnai Spirit (FEI) operated at an accelerated voltage of 120 keV and Gatan 2k × 2 k CCD camera. Images were collected with a total dose of 30 e-/A ̊2, between a defocus of 1–3 µm and a magnified pixel size of 0.93 nm/pixel.
 
-## Encapsidated reverse transcription assays
+### Encapsidated reverse transcription assays
 
 Viral cores were diluted to 50 ng/ml p24 with 60% sucrose in CPB. Final concentrations of dNTPs were 1 µM each (unless otherwise indicated), DNase I and RNase A were at 100 mg/ml. 20 µl reactions were incubated at room temperature for 16 hr unless indicated otherwise. 4 µl of 5xMicrolysis Plus (Microzone) was added to each sample and processed according to manufacturers instructions. Reverse transcript products were detected using TaqMan Fast Universal PCR Mix (ABI) and RU5 primers to detect strong-stop DNA40 (RU5 forward: 5'-TCTGGCTAACTAGGGAACCCA-3'; RU5 reverse: 5'-CTGACTAAAAGGGTCTGAGG-3'; and RU5 probe 5'-(FAM) TTAAGCCTCAATAAAGCTTGCCTTGAGTGC(TAMRA)−3'), GFP primers to detect first-strand transfer products (described above) and primers for second-strand transfer products40 (2 ST forward: 5'-TTTTAGTCAGTGTGGAAAATCTGTAGC-3'; 2 ST reverse: 5'-TACTCACCAGTCGCCGCC-3'; and 2 ST probe: 5'-(FAM) TCGACGCAGGACTCGGCTTGCT(TAMRA)−3'). Unless otherwise stated, ERT data is representative of at least three independent experiments.
 
-## Crystallisation, structure solution and analysis
+### Crystallisation, structure solution and analysis
 
 All crystals were grown at 17°C by sitting-drop vapour diffusion in which 100 nl protein was mixed with 100 nl precipitant and suspended above 80 µl precipitant. The structures were all obtained from 10 to 12 mg/ml protein mixed with PEG550MME (13–14%), KSCN (0.15 M), Tris (0.1 M, pH 8.5) and cryoprotected with precipitant supplemented with 20% MPD. For the ATP-bound structure, the protein was supplemented with 1 mM ATP or IP6 immediately before crystallisation. All crystals were flash-cooled in liquid nitrogen and data collected either in-house using Cu Ka X-rays produced by a Rigaku FR-E rotating anode generator with diffractionrecorded on a mar345 image plate detector (marXperts), or at beamline I02 at Diamond Light Source. The data sets were processed using the CCP4 Program suite (Winn, 2003). Data were indexed and integrated with iMOSFLM and scaled and merged with AIMLESS (Evans and Murshudov, 2013). Structures were solved by molecular replacement using PHASER (McCoy, 2007) and refined using REFMAC5 (Murshudov et al., 1997). Between rounds of refinement, the model was manually checked and corrected against the corresponding electron-density maps in COOT (Emsley and Cowtan, 2004). Solvent molecules and bound ligands were added as the refinement progressed either manually or automatically within COOT, and were routinely checked for correct stereochemistry, for sufficient supporting density above a 2Fo − Fc threshold of 1.0 s and for a reasonable thermal factor. The quality of the model was regularly checked for steric clashes, incorrect stereochemistry and rotamer outliers using MOLPROBITY (Chen et al., 2015). Final figures were rendered in The PyMOL Molecular Graphics System, Version 1.5.0.4 Schrödinger, LLC. Structures and data were deposited in the PDB database with codes 6ERM (ATP complex), 6ERN (AZT complex) and 6ES8 (IP6 complex).
 
-## Single molecule measurements
+### Single molecule measurements
 
 Viral particles were produced by transfecting HEK293T cells with a mixture of pNL4.3-iGFP-∆Env and psPAX2 (1.4:1, mol/mol), collected 48 hr post transfection and viral membrane proteins were biotinylated using EZ-Link Sulfo-NHS-LC-LC-Biotin (Thermo Scientific). Biotinylated viral particles were purified by size exclusion chromatography using a HiPrep 16/60 Sephacryl S-500 HR column (GE Healthcare) and captured on the surface of a glass coverslip modified with PLL(20)-g[3.4]-PEG(2)/PEG(3.4)-biotin (Susos AG) and streptavidin. The viral envelope was permeabilised by addition of perfringolysin O (200 nM) in imaging buffer (50 mM HEPES pH 7.0, 100 mM NaCl) via microfluidic delivery and the diffraction-limited signal from the GFP-loaded viral particles was monitored by time-lapse total internal reflection fluorescence microscopy. Images were analysed with software written in MATLAB (The MathWorks, Inc.). Fluorescence intensity traces were calculated for each viral particle in the field of view by integrating the fluorescence intensity in a 7 × 7 pixel region. Membrane permeabilisation was detected as a rapid drop in the signal resulting from the release of GFP contained in the viral particle in the volume outside the capsid (not shown). This step mimics viral fusion in that the capsid is exposed to the surrounding medium and was defined as time zero for measuring capsid opening. Particles with intact cores were identified as those with residual GFP signal after permeabilisation, arising from GFP molecules trapped inside the closed capsid. The onset of capsid uncoating was then detected as the sudden release (loss of the residual signal occurring typically within one frame) of the encapsidated GFP molecules via a sufficiently large defect in the capsid lattice.
 
-## Production of 3H-inositol labelled virus
+### Production of 3H-inositol labelled virus
 
 One × 106 293 T cells were seeded into 2 × 10 cm dishes in inositol-free DMEM and left to adhere overnight. The media was replaced with 5 ml inositol-free DMEM supplemented with 5 µCi/ml 3H-inositol (Perkin Elmer). After 3 days incubation, an additional 5 ml inositol-free media containing 5 µCi/ml 3H-inositol was added onto cells, which were then transfected with pMDG2, pCRV GagPol and CSGW. Cells were left for a further 3 days to produce VSV-G pseudotyped HIV1. Viral supernatants were topped up to 30 ml and pelleted over a 5 ml 20% sucrose cushion) in a SW28 rotor (Beckman) at 28,000 rpm at 4°C. Pellets were resuspended in inositol-free media and pelleted as previously. After the second spin, pellets were resuspended in 1 ml PBS and spun at 13,000 rpm at 4°C in a bench top microfuge for 60 min. Pellets were frozen at −20˚C until processing. Cells were washed with PBS, then harvested by scraping, counted and pelleted for quantification of cellular IP6 labelling. Pellets were frozen at −20˚C until processing. For comparison of virion and purified capsid core samples, p24 levels were determined by ELISA for p24 (Perkin Elmer).
 
-## Cells
+### Cells
 
 293T CRL-3216 cells were purchased from ATCC and authenticated by the supplier. All cells are regularly tested and are mycoplasma free.
 
-## Purification and HPLC analysis of inositol phosphates
+### Purification and HPLC analysis of inositol phosphates
 
 Inositol phosphates extraction and analysis was performed modifying a previously described protocol (Azevedo and Saiardi, 2006). Cells and viral pellets were resuspended in 200 µl of extraction buffer (1M Perchloric acid, 5 mM EDTA) and incubated on ice for 10 min. The samples were spun out at 13,000 rpm at 4°C for 5 min and the supernatant recovered. Viral pellet were re-extracted for 10 min at 100˚C using another 200 µl of extraction buffer and spun out as before. Supernatants from acid extractions were neutralised to pH6-8 using 1M Potassium carbonate, 5 mM EDTA (approximately 100 µl) and incubated on ice with the lids open for 1–2 hr. Samples were spun at 13,000 rpm at 4°C for 5 min and supernatant containing inositol phosphates was loaded onto HPLC or stored at 4°C. Inositol phosphates were resolved by strong anion exchange chromatography Sax-HPLC on a Partisphere SAX 4.6 × 125 mm column (Hichrom). The column was eluted with a gradient generated by mixing buffer A (1 mM EDTA) and buffer B (1 mM EDTA; 1.3 M (NH4)2HPO4, pH 4.0) as follows: 0–5 min, 0% B; 5–10 min, 0–30% B; 10–85 min, 30–100% B; 85–95 min, 100% B. Fractions (1 ml) were collected and analysed by scintillation counting after adding 4 ml of Ultima-Flo AP LCS-cocktail (Perkin Elmer).
 
-## Calculation of ATP and IP6 per virion
+### Calculation of ATP and IP6 per virion
 
 The presence of ATP in virions was determined using a luciferase-based detection system following manufacturers instructions (Abcam ab113849). A sensitivity of 1 nM ATP detection was confirmed using a titration of 293 T cell lysate. The concentration of ATP estimated in 293 T cells assuming a volume of 1.77 × 10−12 L was ~8 mM. The concentration of ATP estimated in HIV virions, assuming a volume of 5.2 × 10−19 L, was ~1.5 mM. The level of IP6 in 293 T cells was determined by PAGE analysis of TiO2 purified inositol phosphates alongside polyphosphate standards (Sigma Aldrich S6128) and known standards of IP6 (Wilson et al., 2015). For 4 × 106 cells there is estimated to be approximately 0.75 nmol IP6. The calculated figure of 309 ± 41 IP6 per virion is an average of three independent biological replicates.

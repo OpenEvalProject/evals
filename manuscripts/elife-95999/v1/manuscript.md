@@ -12,12 +12,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02956yf07 Graduate School of Comprehensive Human Sciences, University of Tsukuba Tsukuba Japan
-2. https://ror.org/02956yf07 Department of Molecular Neurobiology, Institute of Medicine, University of Tsukuba Tsukuba Japan
-3. https://ror.org/0445phv87 Laboratory of Molecular and Cellular Biology, Graduate School of Science and Engineering for Research, University of Toyama Toyama Japan
-4. https://ror.org/0135d1r83 Graduate School of Nanobioscience, Yokohama City University Yokohama Japan
-5. https://ror.org/005t7z309 Exploratory Research Center on Life and Living Systems (ExCELLS), National Institutes of Natural Sciences Okazaki Japan
-6. https://ror.org/048v13307 National Institute for Physiological Sciences, National Institutes of Natural Sciences Okazaki Japan
+1. Graduate School of Comprehensive Human Sciences, University of Tsukuba Tsukuba Japan ([ROR:02956yf07](https://ror.org/02956yf07))
+2. Department of Molecular Neurobiology, Institute of Medicine, University of Tsukuba Tsukuba Japan ([ROR:02956yf07](https://ror.org/02956yf07))
+3. Laboratory of Molecular and Cellular Biology, Graduate School of Science and Engineering for Research, University of Toyama Toyama Japan ([ROR:0445phv87](https://ror.org/0445phv87))
+4. Graduate School of Nanobioscience, Yokohama City University Yokohama Japan ([ROR:0135d1r83](https://ror.org/0135d1r83))
+5. Exploratory Research Center on Life and Living Systems (ExCELLS), National Institutes of Natural Sciences Okazaki Japan ([ROR:005t7z309](https://ror.org/005t7z309))
+6. National Institute for Physiological Sciences, National Institutes of Natural Sciences Okazaki Japan ([ROR:048v13307](https://ror.org/048v13307))
 
 † Corresponding author
 
@@ -39,13 +39,21 @@ Here, we show that late endosomes of VE cells exhibit different modes of fusion 
 
 ## Results
 
-## Endocytic vesicles in mouse yolk sac VE cells
+### Endocytic vesicles in mouse yolk sac VE cells
 
 To visualize endosomal vesicles in yolk sac VE cells, an embryonic day 8.5 (E8.5) whole embryo was labeled with a fluorescent membrane probe, FM1-43, and subsequently stained with organelle markers. The embryo was put on a glass-bottom dish, and VE cells were observed by use of confocal microscopy (Figure 1A). These observations revealed that different types of endosomal vesicles were aligned from the apical to the basal area in the supranuclear portion of VE cells, reflecting the repeated fusion and enlargement of vesicles as they migrated deeper into the cell (Figure 1B and C). In the most superficial portion (within 0.5–1 μm of the apical surface; designated as zone 1, Figure 1—figure supplement 1A), fuzzy FM1-43 staining was observed (Figure 1B). The small vesicles in this zone were positive for EEA1 (Figure 1B), indicating that they were early endosomes. Immediately beneath zone 1, many medium-sized round vesicles were observed (zone 2; at a depth of 1–6 μm from the apical surface, Figure 1—figure supplement 1A). Electroporation of EGFP-Rab7 revealed that these vesicles were positive for Rab7, suggesting that they were late endosomes. In the deep portion (zone 3; at a depth of 6–16 μm from the apical surface, Figure 1—figure supplement 1A), large amorphous lysosomes, positive for LysoTracker Red and LAMP1, were observed (Figure 1B; Koike et al., 2009).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the imaging setup. An E8.5 whole mouse embryo was observed with a laser confocal microscope. (B) Confocal images of VE cells stained with FM 1–43, LysoTracker Red, or anti-EEA1 antibody, or electroporated with EGFP-Rab7. The yellow dotted lines indicate the cell boundaries. The yellow arrows show some vesicles that were positive for LysoTracker Red in zone 2. (C) For descriptive purposes, the supranuclear portion of VE cells is divided into three zones. Zone 1, zone 2, and zone 3 contain early endosomes (EE), late endosomes (LE), and lysosomes, respectively. (D) Confocal images of VE cells labeled with Alexa 488-transferrin. Images taken 1, 10, 20, and 40 min after pulse labeling are shown. The yellow dotted lines indicate the cell boundaries. (E) Time-course analysis of the Alexa 488-transferrin-containing vesicles in VE cells. n=4. The scale bars indicate 4 μm (B) and 10 μm (D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Electron microscopic image showing the position of early endosomes, late endosomes (LE), and a lysosome (Ly) in VE cells. N indicates the nucleus. The scale bar indicates 2 μm. (B) Confocal microscopic images of rhodamine-dextran-labeled endocytic vesicles in the yolk sac VE cells of E8.5 mouse embryos. Images in zones 1–3, taken at 1, 10, 20, and 40 min after labeling, are shown. The scale bar indicates 10 μm.
+
 To examine whether these vesicles constitute endocytic pathways, we traced vesicle trafficking in VE cells. After E8.5 whole embryos were pulse-labeled with Alexa 488-transferrin for 5 min, fluorescently labeled endocytic vesicles were tracked over time. The fluorescent signals were initially detected in small vesicles (area <2.0 μm2) in zone 1; 10–20 min after labeling, the signals were mainly detected in medium-sized vesicles (2.0–25 μm2) in zone 2; 40 min after labeling, the signals were strongly observed in large lysosomes (>25 μm2) in zone 3 (Figure 1D and E). The time course of the numbers of labeled vesicles in each zone showed that endocytosed transferrin was rapidly transported from early endosomes to lysosomes via late endosomes in VE cells, as reported previously (Richardson et al., 2000). In addition, rhodamine-labeled dextran, which was transported by pinocytosis pathways, was also transported to lysosomes in a similar fashion (Figure 1—figure supplement 1B).
 
-## Two distinct modes of late endosomal fusion
+### Two distinct modes of late endosomal fusion
 
 To examine the dynamic changes of endocytic vesicles, we performed time-lapse imaging of Alexa 488-transferrin- or FM 1–43-labeled vesicles. We focused on late endosomes in zone 2 because these vesicles were large enough and suitable for microscopic observation of membrane fusion processes, as described below.
 
@@ -55,35 +63,63 @@ First, from 5 min after pulse labeling, fusion of two neighboring late endosomes
 
 **Figure 2.:** (A) Time-lapse imaging of endocytic vesicles in VE cells. After 5 min of pulse-labeling with Alexa 488-transferrin, homotypic fusion of late endosomes (arrows) was frequently observed in zone 2. In the upper panel, time 0 indicates the start of time-lapse imaging. In the lower panel, time 0 refers to the start of the fusion of the endosomes indicated by arrows. (B) By labeling of VE cells with FM1-43, the fusion process of the cell membranes in zone 2 was observed. Time 0 refers to the start of the fusion of the endosomes, indicated by arrows. (C) Histograms showing the size distribution of total late endosomes (black line, n=265) and the late endosomes that underwent homotypic fusion (gray line, n=37). No significant difference was observed between the two groups (Mann-Whitney U test). (D) Correlation between the size of the late endosomes that underwent homotypic fusion and the time required for completion of fusion (i.e. the time required from membrane fusion to formation of a single round vesicle). The sizes of the larger of the fused vesicles are plotted. Thirty-seven fusion events were measured. The scale bars indicate 5 μm (A, top) and 1.5 μm (A, bottom; B).
 
+![Video 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse recording of homotypic fusion of late endosomes. At 5 min after labeling with Alexa Fluor 488-transferrin, homotypic fusion of late endosomes was observed frequently in the VE cells. The scale bar indicates 10 μm.
+
 Second, from 15 min after pulse labeling, some late endosomes shrank gradually and disappeared from the focal plane (Figure 3A and Video 2). Because a previous paper reported that late endosomes were engulfed by lysosomes in E6.5 mouse VE cells (Kawamura et al., 2012), we examined the mechanism of the disappearance of late endosomes in more detail using different approaches. First, we used differential labeling of late endosomes and lysosomes. When whole embryos were incubated with rhodamine-dextran for 20 min and subsequently pulse-labeled with Alexa 488-transferrin for 5 min, lysosomes and late endosomes were labeled with dextran and transferrin, respectively, at the time of observation (15 min after transferrin labeling). In a diminishing late endosome, the fluorescence intensity of transferrin in the vesicle increased initially and then decreased quickly (Figure 3B–D). At the same time, the rhodamine-dextran in the adjacent lysosome entered the late endosome (Figure 3B–D), indicating that the vesicular contents of the late endosomes and lysosomes were mixed. Second, using electron microscopy, we observed pore formation between a late endosome and a lysosome (Figure 3E). These data suggest that the disappearance of late endosomes is a consequence of fusion with the underlying lysosomes, but not of engulfment in E8.5 embryos. This type of fusion, so-called bridge fusion, described in a previous study (Nicot et al., 2006; Roberts et al., 1999), occurred as a result of the slow mixing of vesicular contents through a narrow fusion pore. Actually, heterotypic fusion was slower than homotypic fusion and was completed within 90–250 s (154.8±1.4 s, n=25), and the fusion time (the time required from membrane fusion to disappearance of the vesicle) did not correlate with the vesicle size (Figure 3F). The size of the labeled late endosomes at this time point (10.1±8.1 μm2, n=256) was larger than that at 5 min after labeling (6.7±6.2 μm2, n=242), indicating that larger late endosomes tended to undergo heterotypic fusion (Figure 3G, see also below). However, the size of the late endosomes that underwent heterotypic fusion (10.2±9.2 μm2, n=34) did not differ from that of the total late endosomes at 15 min after labeling (Figure 3G), indicating that the size of late endosomes is not the sole trigger for heterotypic fusion.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig3-v1.jpg)
 
 **Figure 3.:** (A) Time-lapse imaging of VE cells. After 15 min of pulse-labeling with Alexa 488-transferrin, heterotypic fusion of late endosomes was observed: they shrank gradually and disappeared from the focal plane (arrows). In the upper panel, time 0 indicates the start of time-lapse imaging. In the lower panel, time 0 refers to the start of the fusion of the endosomes indicated by an arrow. (B) Time-lapse imaging of late endosomes in VE cells. Late endosomes and lysosomes were labeled with Alexa 488-transferrin (Tfn, green) and rhodamine-dextran (Dex, red), respectively. The bottom figures show optical sectioning through the dotted line in the upper figure. Time 0 indicates the start of time-lapse imaging. (C, D) Time course of the fluorescence intensity. In a late endosome undergoing fusion (ROI 1 in [B-C]), the fluorescence intensity of transferrin (green) slightly increased and then quickly decreased after membrane fusion. The fluorescence signal of dextran (red) in an underlying lysosome leaked into the fusing late endosome. The white box in (C) indicates the area shown in (B). The gray line in (D) indicates the diameter of the transferrin-positive late endosomes. The blue dotted lines in (D) indicate the moment the fusion pore was formed in ROI 1. ROI 2 is a negative control in a lysosome that did not undergo fusion. (E) Electron microscopic image showing pore formation between a late endosome (LE) and a lysosome (Ly). The inset shows a magnified picture of the boxed region. (F) Correlation between the size of late endosomes that underwent heterotypic fusion and the time required for completion of fusion (i.e. the time from the start of shrinkage to disappearance). Twenty-five fusion events were measured. (G) Histograms showing the size distribution of late endosomes at 5 min (gray line, n=256) and 15 min (red line, n=242) after labeling with Alexa 488-transferrin, as well as the late endosomes that underwent heterotypic fusion at 15 min (blue line, n=34). The average size of the vesicles was larger at 15 min than at 5 min (**p<0.01, Mann-Whitney U test). However, the size distribution of the late endosomes that underwent heterotypic fusion at 15 min did not differ from that of the total late endosomes at 15 min. The scale bars indicate 5 μm (A, top), 1.5 μm (A, bottom), 2 μm (B), 3 μm (C), and 1 μm (E).
 
-## Vesicle size is an important factor for the transition of fusion modes
+![Video 2.](https://cdn.elifesciences.org/articles/95999/elife-95999-video2.mp4.jpg)
 
-To examine whether the differences in membrane deformation of late endosomes depend on their fusion targets, we adopted a mathematical modeling approach that describes the membrane deformation processes after pore formation. According to thermodynamics, the deformation of a physical object proceeds as its free energy decreases. The free energy of a vesicle consists of two terms: bending energy and osmotic energy. The bending energy, b, is the integral of the square of the mean curvature all over the surface (Helfrich, 1973). The osmotic energy is the product of the osmotic pressure difference between the inside and the outside of the vesicle, Δp, and the vesicle volume, V. Thus, the free energy is given byF=b-Δp⋅V.
+**Video 2.:** Time-lapse recording of heterotypic fusion between late endosomes and lysosomes. At 15 min after labeling with Alexa Fluor 488-transferrin, late endosomes often shrank and disappeared from the focal plane as a result of heterotypic fusion of late endosomes with pre-existing lysosomes that were out of the focal plane. The scale bar indicates 10 μm.
+
+### Vesicle size is an important factor for the transition of fusion modes
+
+To examine whether the differences in membrane deformation of late endosomes depend on their fusion targets, we adopted a mathematical modeling approach that describes the membrane deformation processes after pore formation. According to thermodynamics, the deformation of a physical object proceeds as its free energy decreases. The free energy of a vesicle consists of two terms: bending energy and osmotic energy. The bending energy, $b$, is the integral of the square of the mean curvature all over the surface (Helfrich, 1973). The osmotic energy is the product of the osmotic pressure difference between the inside and the outside of the vesicle, $Δp$, and the vesicle volume, $V$. Thus, the free energy is given by
+
+$$
+F=b-Δp⋅V.
+$$
 
 Note that the bending energy depends only on its shape; in other words, two membranes with the same shape but with different sizes have the same bending energy. On the other hand, the volume depends on both the size and the shape. Therefore, the vesicle size intrinsically affects the balance of both energy sources and may be a critical factor for membrane deformation during fusion.
 
-We focused on a closed membrane having a constricted neck region and introduced two shape parameters, the neck width, w, and the area ratio between both sides of the neck, a (Figure 4A), so that the basic processes of the two fusion types are described by the changes in w and a just after pore formation, w=0. The relaxation of the neck in explosive fusion is expressed by the increase in w. On the other hand, the absorption of smaller vesicles by the larger one in bridge fusion is the decrease in a while w remains small.
+We focused on a closed membrane having a constricted neck region and introduced two shape parameters, the neck width, $w$, and the area ratio between both sides of the neck, $a$ (Figure 4A), so that the basic processes of the two fusion types are described by the changes in $w$ and $a$ just after pore formation, $w=0$. The relaxation of the neck in explosive fusion is expressed by the increase in $w$. On the other hand, the absorption of smaller vesicles by the larger one in bridge fusion is the decrease in $a$ while $w$ remains small.
 
-When calculating the free energy as a function of w and a, the deformation is expressed as the process of descending the free-energy landscape in the space. Because the shape giving the minimum free energy is most likely to be realized, we first specified the minimum-free-energy shape and then calculated the free energy value for each parameter set.
+![Figure 4.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig4-v1.jpg)
 
-We considered two extreme conditions: the membrane size is sufficiently small or large. In the former case, the osmotic energy is negligible and the free energy is approximated toF≃Fsmall=b
+**Figure 4.:** (A) Definition of shape parameters. (B) Free-energy landscape for small vesicles. The gray arrow (D) indicates a typical orbit of membrane deformation from the initial condition $w,a=0.0,0.3$. (C) Free-energy landscape for large vesicles. The solid gray arrow (E) indicates the typical orbit of membrane deformation, whereas the dashed gray arrow (D’) indicates the typical orbit of membrane deformation under fluctuated conditions. The inset is a blowup of the region $w=0∼0.15$, $a=0.25∼0.35$. (D, E) Time series of shape variation on the typical orbits indicated in (B) and (C), respectively. Note that the exact time scale cannot be estimated in this analysis. (F) Probability of the explosive fusions in the $F^{large}$ landscape (the orbit of the dashed gray arrow in [C]) for various vesicle sizes, osmotic pressure differences, and fluctuation energies, estimated by Monte-Carlo simulations. $Γ=2\piκ\sqrt{A}/R_{0}$ with the bending modulus $κ=10k_{B}T$ and the minimum bending radius $R_{0}=100nm$. The green shaded region indicates the condition: $Δp≃2.5∼25[Pa],$ $V=4A\sqrt{A}/3\sqrt{\pi}$ with $A=2∼25[\mum^{2}]$ and the fluctuation energy $1[k_{B}T]$ (thermal fluctuation at room temperature). The green shaded region corresponds to late-endosome-sized vesicles ($2.0∼25[\mum^{2}]$) under estimated osmotic pressure difference ($Δp≃2.5∼25[Pa]$) and the thermal noise at room temperature. The blue-shaded region indicates the vesicles under larger fluctuations.
 
-The free-energy landscape on the shape parameter space w,a is shown in Figure 4B. In the latter case, although the osmotic energy is dominant, the bending energy is also not negligible because the bending energy at the neck region becomes considerably large. Thus, the free energy for the large membrane case isF≃Flarge=Bneck-Δp⋅V,
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig4-figsupp1-v1.jpg)
 
-where Bneck is the bending energy at the neck. The free-energy landscape for a vesicle with the projected area of 10μm2 is shown in Figure 4C.
+**Figure 4—figure supplement 1.:** (A) Definition of shape parameters for calculating the bending energy of a part of small vesicles. (B) Definition of shape parameters for calculating the volume of a part of large vesicles. (C) Calculated bending energy of a part of small vesicles using Euler-Lagrange equations (red points) and its fitting curve with a hyperbolic function (blue line). (D, E) Definition of shape parameters for calculating the bending energy of the constricted neck region of large vesicles. (D) is the entire structure and (E) is the close-up of the neck region.
 
-These free-energy landscapes (Figure 4B and C) clearly differ from each other, implying that they drive different deformation processes. In particular, the contour of the Fsmall landscape around w 0 is perpendicular to the w axis, whereas the contour of the Flarge landscape is parallel to the w axis. Typical orbits of the shape deformations from the initial condition w,a=0.0,0.3 generated by the gradients of the landscape are shown as gray arrows in Figure 4B and C. The orbit in the Fsmall landscape is characterized by a smooth increase in w; that is the neck expands quickly (Figure 4D), resulting in explosive fusion. On the other hand, in the Flarge landscape, a increases through the orbit, whilst w remains small, which evokes bridge fusion (Figure 4E).
+When calculating the free energy as a function of $w$ and $a$, the deformation is expressed as the process of descending the free-energy landscape in the space. Because the shape giving the minimum free energy is most likely to be realized, we first specified the minimum-free-energy shape and then calculated the free energy value for each parameter set.
 
-The deformation processes observed in our modeling seem to be qualitatively consistent with our experimental results showing that the size of the fusion target changes the fusion modes (Figures 2 and 3). Next, we made a rough estimate of how much of the vesicle size the mathematical model expects to switch the types of fusion. The typical bending energy of a (spherical) vesicle is b≃2×10-18J (Evans and Rawicz, 1990). Referring to the density differences in the dominant ions of endosomes and cytoplasm (Scott and Gruenberg, 2011), we assume that the total ion difference is in the range of 1∼10mM, and that the osmotic pressure difference is Δp≃2.5∼25[Pa]. From these assumptions, 0.22∼1.0[μm2] would be the vesicle size to switch fusion modes. However, the size of the observed late endosomes (5–20 μm2 in Figure 3F) is much larger than the predicted size, suggesting that homotypic fusion between late endosomes should show the bridge fusion mode.
+We considered two extreme conditions: the membrane size is sufficiently small or large. In the former case, the osmotic energy is negligible and the free energy is approximated to
 
-To resolve these inconsistencies, we considered the fluctuation effects. Intracellular membranes receive various fluctuations including thermal noise and active fluctuation from the cytoskeletons and motor proteins (Biswas et al., 2017; Chen et al., 2009). Although orbits descending the Flarge landscape are energetically restricted to keep w small, these fluctuations may force the orbits to deviate from the restricted path (the dashed arrow in Figure 4C); that is they are expected to induce explosive fusion. Then, we performed Monte-Carlo simulations to generate orbits descending the free-energy landscape with various magnitudes of fluctuations and determined the probabilities of orbits that deviate from the path (Figure 4F). When we consider only the thermal noise with room temperature with the estimated osmotic pressure difference (Δp≃2.5∼25[Pa]), as for late-endosome-sized vesicles (2.0∼25[μm2]), the simulation predicts that vesicles will show bridge fusion (the green-shaded region in Figure 4F). However, if we take into account the fact that a larger fluctuation allows explosive fusion (the blue-shaded region in Figure 4F), fluctuations generated by the cytoskeleton and motor proteins, much larger than thermal noise, may induce explosive fusion.
+$$
+F≃F^{small}=b
+$$
 
-## Actin filaments are bound to late endosomes in VE cells
+The free-energy landscape on the shape parameter space $w,a$ is shown in Figure 4B. In the latter case, although the osmotic energy is dominant, the bending energy is also not negligible because the bending energy at the neck region becomes considerably large. Thus, the free energy for the large membrane case is
+
+$$
+F≃F^{large}=B^{neck}-Δp⋅V,
+$$
+
+where $B^{neck}$ is the bending energy at the neck. The free-energy landscape for a vesicle with the projected area of $10\mum^{2}$ is shown in Figure 4C.
+
+These free-energy landscapes (Figure 4B and C) clearly differ from each other, implying that they drive different deformation processes. In particular, the contour of the $F^{small}$ landscape around w 0 is perpendicular to the $w$ axis, whereas the contour of the $F^{large}$ landscape is parallel to the $w$ axis. Typical orbits of the shape deformations from the initial condition $w,a=0.0,0.3$ generated by the gradients of the landscape are shown as gray arrows in Figure 4B and C. The orbit in the $F^{small}$ landscape is characterized by a smooth increase in $w$; that is the neck expands quickly (Figure 4D), resulting in explosive fusion. On the other hand, in the $F^{large}$ landscape, $a$ increases through the orbit, whilst $w$ remains small, which evokes bridge fusion (Figure 4E).
+
+The deformation processes observed in our modeling seem to be qualitatively consistent with our experimental results showing that the size of the fusion target changes the fusion modes (Figures 2 and 3). Next, we made a rough estimate of how much of the vesicle size the mathematical model expects to switch the types of fusion. The typical bending energy of a (spherical) vesicle is $b≃2\times10^{-18}J$ (Evans and Rawicz, 1990). Referring to the density differences in the dominant ions of endosomes and cytoplasm (Scott and Gruenberg, 2011), we assume that the total ion difference is in the range of $1∼10mM$, and that the osmotic pressure difference is $Δp≃2.5∼25[Pa]$. From these assumptions, $0.22∼1.0[\mum^{2}]$ would be the vesicle size to switch fusion modes. However, the size of the observed late endosomes (5–20 μm2 in Figure 3F) is much larger than the predicted size, suggesting that homotypic fusion between late endosomes should show the bridge fusion mode.
+
+To resolve these inconsistencies, we considered the fluctuation effects. Intracellular membranes receive various fluctuations including thermal noise and active fluctuation from the cytoskeletons and motor proteins (Biswas et al., 2017; Chen et al., 2009). Although orbits descending the $F^{large}$ landscape are energetically restricted to keep $w$ small, these fluctuations may force the orbits to deviate from the restricted path (the dashed arrow in Figure 4C); that is they are expected to induce explosive fusion. Then, we performed Monte-Carlo simulations to generate orbits descending the free-energy landscape with various magnitudes of fluctuations and determined the probabilities of orbits that deviate from the path (Figure 4F). When we consider only the thermal noise with room temperature with the estimated osmotic pressure difference ($Δp≃2.5∼25[Pa]$), as for late-endosome-sized vesicles ($2.0∼25[\mum^{2}]$), the simulation predicts that vesicles will show bridge fusion (the green-shaded region in Figure 4F). However, if we take into account the fact that a larger fluctuation allows explosive fusion (the blue-shaded region in Figure 4F), fluctuations generated by the cytoskeleton and motor proteins, much larger than thermal noise, may induce explosive fusion.
+
+### Actin filaments are bound to late endosomes in VE cells
 
 Previously we found that lysosome biogenesis was regulated by actin dynamics in VE cells (Koike et al., 2009). To examine the relationship between actin filaments and endocytic vesicles, actin filaments were visualized by use of Alexa 488-phalloidin. Endocytic vesicles were visualized by immunostaining with anti-mouse IgG because IgG is endocytosed from the maternal tissue in utero and can be stained without incubation of embryos in vitro for the pulse labeling of endosomes. In VE cells, strong signals were detected to be associated with the cell membrane (Figure 5A–C). In addition, in zone 1, fuzzy cytoplasmic staining was observed (Figure 5A), which appeared to correspond to the actin meshwork in the terminal web. In zone 2, small punctates and short filaments were detected in the cytoplasm (Figure 5B) and were bound to the surface of late endosomes (Figure 5B, B’ and B’’) and infrequently to lysosomes in zone 3 (Figure 5C, C’ and C’’). Optical cross-sectional images and 3D reconstruction showed that several rod-like actin filaments, extending from the apical side of VE cells into the cytoplasm, surrounded and held the late endosomes (Figure 5D–F). These data indicate that most actin punctates observed in the x-y plane correspond to the cross-sectional images of actin filaments extending in the apical-to-basal direction. In addition, when a fusion protein of an actin-bundling protein, fascin-1, with a red fluorescent protein was expressed in VE cells by electroporation, fascin-1 was highly colocalized with the actin punctates, suggesting that most of the actin punctates surrounding the late endosomes were bundled (Figure 5G).
 
@@ -95,21 +131,85 @@ To investigate the endosome-associated actin filaments in more detail, we perfor
 
 To examine the dynamics of actin filaments associated with late endosomes, E7.5 whole embryos were electroporated with a pEGFP-actin vector, and the EGFP signals in VE cells were observed by use of confocal microscopy 24 hr after electroporation. Because high levels of actin overexpression led to the deterioration of cell functions (see white arrows in Figure 6—figure supplement 1A), cells expressing low levels of EGFP-actin were selected for analysis: those selected cells were normal in morphology and endocytosis (see white arrowheads in Figure 6—figure supplement 1A). Punctate signals of EGFP-actin were seen on the late endosomal membrane similarly to those observed in Alexa 488-phalloidin labeling. Time-lapse imaging showed that some new spots had appeared, others had disappeared, and two actin spots were unified on the membrane surface of endocytic vesicles (Figure 6A). To examine the turnover rate of actin spots in VE cells, we performed fluorescence recovery after a photobleaching (FRAP) assay. After EGFP-actin on a late endosome was photobleached, recovery of its fluorescence was measured (Figure 6B). Recovery of actin spots on late endosomes occurred more rapidly than the control recovery measured at the cell surface (t1/2 = 29.0 s; Figure 6C–E). Especially, the recovery of actin spots in the apical area of late endosomes was faster than in the basal area (t1/2 = 11.5 s in the apical area vs. t1/2 = 18.9 s in the basal area; Figure 6C and E). These results indicated that actin turnover on the surface of late endosomes was dynamically regulated, with a tendency to be more active in the apical area than in the basal area. The time-lapse images showed that when late endosomes moved in an x-y plane in zone 2, spots of EGFP-actin were always at the rear-end of the endosomes along the moving direction (Figure 6F, n=13). Because it is known that Arp2/3-dependent actin polymerization on the membrane acts as the driving force of the motility of intracellular pathogens (Welch and Way, 2013) and endosomes/lysosomes in Xenopus egg extracts (Taunton et al., 2000), we examined the localization of Arp2/3 in VE cells to test the possible role of Arp2/3 in endosome migration. When a fusion protein of Arp3-EGFP was expressed in VE cells by electroporation, the EGFP signals were distributed in dots on the late endosomes and partially colocalized with phalloidin spots in the x-y plane in zone 2 (Figure 6—figure supplement 1B). In addition, Arp3-EGFP signals were always seen at the rear-end of the endosomes along the moving direction (Figure 6—figure supplement 1C). Taken together, these data suggest that the radial branched filaments are temporally polymerized to provide the propulsive force on the membrane for intracellular movement.
 
-## Actin dynamics regulate homotypic fusion of late endosomes
+![Figure 6.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative time-lapse images of EGFP-actin spots on a late endosome. VE cells were electroporated with EGFP-actin at E7.5, and time-lapse analysis was performed on the next day. The arrow indicates the fusion of actin spots. The arrowhead indicates the appearance of a new actin spot. Time 0 refers to an arbitrary time point in time-lapse imaging. (B) The turnover rate of actin was analyzed by use of a FRAP assay. The area (4 μm x 4 μm) covering a single late endosome at the apical region of zone 2 of VE cells expressing EGFP-actin was bleached, and the fluorescence recovery was observed by use of time-lapse microscopy. The yellow boxes indicate the laser-irradiated area, and the yellow arrowheads, actin spots recovered after photobleaching. The time laser irradiation was ended is indicated as 0. (C, D) Graphs showing the fluorescence recovery of EGFP-actin surrounding late endosomes at the apical region of zone 2 (light blue in [C], n=4) and the basal region of zone 2 (dark blue in [C], n=3) or at the cell surface of VE cells (D, n=5). Fluorescence intensity was normalized to prebleaching intensities. (E) Half-recovery time (t1/2) of EGFP-actin fluorescence at the apical and basal regions of zone 2 and at the cell surface. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (*p<0.05; **p<0.01). (F) EGFP-actin localization during vesicle movement. Endocytic vesicles (red) visualized by use of rhodamine-dextran in zone 2 are shown. When a vesicle (arrow) moved in a certain direction (upward in this figure), the actin patch (arrowhead) was observed at the rear end of the movement direction. The dotted line indicates the initial position of the vesicle. Time 0 refers to an arbitrary time point in time-lapse imaging. The scale bars indicate 1 μm (A) and 3 μm (B, F).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) VE cells electroporated with EGFP-actin were incubated with 100 μg/ml rhodamine-dextran for 5 min. VE cells expressing low levels of EGFP-actin (white arrowheads) endocytosed rhodamine-dextran normally and showed normal morphology of endosomal vesicles, whereas VE cells expressing high levels of EGFP-actin (white arrows) did not endocytose normally. Thus, cells expressing low levels of EGFP-actin were selected for functional analysis. (B) Arp3-EGFP and Alexa 546-phalloidin were highly colocalized in VE cells. After electroporation of the Arp3-EGFP expression plasmid and 24 h culture, the whole embryos were stained with Alexa 546-phalloidin. In the x-y axis images, phalloidin-positive actin spots were partially positive for Arp3-EGFP. Phalloidin-positive and Arp3-EGFP-negative spots are shown by white arrowheads. The intensity plot along the border of a late endosome (indicated by a white circular arrow in the upper panel) shows partial colocalization between actin and Arp3. (C) Localization of Arp3-EGFP during vesicle movement in the x-y direction. When a vesicle (indicated by the white arrowheads) moved in a certain direction (upward in this figure), an Arp3 patch (indicated by the orange arrowheads) was observed at the rear end of the movement direction. Time 0 refers to an arbitrary time point in time-lapse imaging. The scale bars indicate 30 μm (A), 5 μm (B), and 1 μm (C).
+
+### Actin dynamics regulate homotypic fusion of late endosomes
 
 To examine the roles of actin in late endosomal fusion, we tested whether perturbation of actin dynamics caused defects in vesicle fusion. Treatment with cytochalasin D (a cell-permeable inhibitor of actin polymerization) for 5 min significantly changed the distribution of actin filaments. High-resolution imaging analysis using a deconvolution technique showed that phalloidin-positive filamentous structures decreased and instead actin aggregation was observed in the cytosol (Figure 7—figure supplement 1A). The treatment reduced the frequency of homotypic fusion in a dose-dependent manner (Figure 7A and B; Video 3). In addition, it altered the speed and mode of the fusion. Treatment with 0.1 or 1.0 μM cytochalasin D slowed down homotypic fusion (Figure 7C and D; Figure 7—figure supplement 1B). After membrane fusion, two endosomes remained in a peanut shape for a long time, indicating slower neck expansion than that in the control cells (Figure 7—figure supplement 1B). FM 1–43 labeling revealed that the membranes were rapidly fused, whereas it took a long time for the gourd-shaped vesicles to form a large round vesicle (Figure 7—figure supplement 1B). Furthermore, upon 1.0 μM cytochalasin D treatment, about one-third of homotypic fusion showed bridge fusion (Figure 7C and E; Video 4). Therefore, cytochalasin D slowed down the fusion processes and changed the fusion mode to bridge fusion at higher concentrations. These data are consistent with our mathematical model showing that larger fluctuation is necessary for explosive fusion in homotypic fusion of late endosomes (Figure 4F). Treatment with jasplakinolide (a cell-permeable stabilizer of actin filaments) also changed the actin dynamics. After the treatment, the actin meshwork beneath the plasma membrane (zone 1) was denser (Figure 7—figure supplement 2). Furthermore, actin filaments extending radially from the late endosomes were thicker and the fluorescence intensity was increased, although the actin filaments extending from the apical-basal axis were not changed (Figure 7—figure supplement 2). The treatment reduced the frequency of homotypic fusion in a dose-dependent manner (Figure 7A and B; Video 5), indicating that dynamic actin turnover is required for homotypic fusion.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig7-v1.jpg)
+
+**Figure 7.:** (A) Confocal microscopic images of endocytic vesicles in zone 2. E8.5 mouse embryos pretreated with 0.1 μM cytochalasin D (CD) or 0.1 μM jasplakinolide (Jasp) were labeled with Alexa 488-transferrin for 5 min. Time-lapse images were taken for 400 s from 5 min after labeling. Arrows indicate homotypic fusion. Time 0 indicates the start of time-lapse imaging. (B) Frequency of homotypic fusion calculated from the number of fusions that occurred in 400 s. Data are represented as means ± SEMs of four to nine independent experiments; individual data are shown by circular dots. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (**p<0.01; ***p<0.001). (C) Quantitation of types of homotypic fusion. Fusion types are classified into normal explosive fusion, slow explosive fusion (more than 60 s), and bridge fusion. Cytochalasin D treatment slowed down the fusion process in a dose-dependent manner and induced bridge fusion at 1 μM. Independent experiment numbers are shown on the top of the bars. (D) Quantitation of the time for completion of homotypic fusion. Treatment with 0.1 μM or 1 μM cytochalasin D or with 20 μM CK666, but not with 0.1 μM jasplakinolide, resulted in a significant increase in the fusion time. Data are represented as means ± SEMs of 4–30 independent experiments; individual data are shown by circular dots. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (**p<0.01; ***p<0.001). (E) Representative images of homotypic fusion of late endosomes in VE cells treated with 1 μM cytochalasin D. Endosomes were visualized by incubation with Alexa 488-transferrin. The arrows indicate the vesicles undergoing homotypic fusion in the bridge fusion mode. Time 0 refers to the start of fusion of the endosomes indicated by arrows. (F) Time-lapse imaging of EGFP-actin localization during homotypic fusion of late endosomes. Localization of EGFP-actin (green) and endocytic vesicles (red), visualized by use of rhodamine-dextran, was observed. When a pair of endosomes (arrows) fused, EGFP-actin was newly polymerized at the opposite positions of the docking site and its fluorescence intensity was increased (arrowheads). Time 0 refers to the start of fusion of the endosomes indicated by arrows. (G) Distribution of EGFP-actin during homotypic fusion of late endosomes. The fluorescence intensities of EGFP-actin (dark gray, n=5) and FM 1–43 (light gray, n=5) were measured during homotypic fusion. The percentages of their signals in the proximal (docking site, shown as 1), lateral (shown as 2), and distal (shown as 3) regions at the predocking, docking, rounding, and postfusion stages are shown. Data are represented as means ± SEMs (*p<0.05, unpaired t-test). (H) The time course of changes in the fluorescence intensity of EGFP-actin around a pair of late endosomes during homotypic fusion. Time 0 s indicates the moment the fusion pore of two late endosomes was formed. The graph indicates the average of five independent experiments. The scale bars indicate 10 μm (A), 2 μm (E), and 3 μm (F).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Images of late endosomes and actin filaments at apical or basal regions in zone 2 of VE cells pretreated with 1 μM cytochalasin D for 5 min. E8.5 embryos were subsequently labeled with Alexa 594-transferrin and Alexa 488-phalloidin. Images on the right side show the maximum intensity projection (MIP) images along the x-y axis (upper) and x-z axis (bottom) of a single late endosome in the boxed area in the left side figure. After cytochalasin D treatment, filamentous structures observed on the control late endosomes (both filaments extending radially and in the apical-basal direction) decreased, and instead large clusters (white arrowheads) were observed in the cytosol, which appeared to be due to aggregation of actin filaments. (B) E8.5 mouse embryos pretreated with 0.1 μM cytochalasin D (CD) for 5 min were labeled with Alexa 488-transferrin or FM 1–43 for 5 min. The fluorescent signal was observed 5 min after labeling. Homotypic fusion of late endosomes after cytochalasin D treatment was slow when compared with that of the control nontreated cells. Time is given in s. Time 0 s indicates the moment the fusion pore of 2 late endosomes was formed. The scale bars indicate 2 μm (A, left), 0.6 μm (A, right), and 3 μm (B).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Images of late endosomes and actin of VE cells pretreated with 1 μM jasplakinolide for 5 min. E8.5 embryos were subsequently labeled with Alexa 594-transferrin and Alexa 488-phalloidin. Images on the right side show the maximum intensity projection (MIP) images along the x-y axis (upper) and x-z axis (bottom) of a single late endosome in the boxed area in the figure on the left. After jasplakinolide treatment, the fluorescence intensity of the phalloidin-positive mesh in zone 1 was significantly increased (see the top portion of the x-z-axis image). In addition, at the apical region of zone 2, actin filaments extending radially from the endosomal surface (orange arrowheads) were thicker when compared with those of the control cells (Figure 5H), and the fluorescence intensity of the filaments was increased. In contrast, actin filaments extending along the apical-basal axis were not changed (shown by white arrowheads). The scale bar indicates 2 μm (left side) and 0.5 μm (right side).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Time-lapse imaging of EGFP-actin during homotypic fusion of late endosomes in E8.5 mouse embryos pretreated with 1 μM cytochalasin D for 5 min. Localization of EGFP-actin (green) and endocytic vesicles (red), visualized by use of Alexa 594-transferrin, was observed. EGFP-actin spots appeared to be rigid and static. When a pair of endosomes (arrows) fused, drastic changes in the distribution and fluorescence intensity of EGFP-actin signals as had been observed in the control VE cells were not seen. Time 0 refers to the start of fusion of the endosomes indicated by arrows. The scale bar indicates 3 μm.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** Time-lapse imaging of Arp3-EGFP localization during homotypic fusion of late endosomes. After expression of Arp3-EGFP in VE cells, localization of EGFP was observed. When a pair of endosomes (white arrowheads) fused, Arp3 was highly polymerized at the opposite position of the docking site and its fluorescence intensity was increased (orange arrowheads). Time 0 indicates the moment when the fusion pore of 2 late endosomes was formed. Time is given in s. The scale bars indicate 1 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/95999/elife-95999-video3.mp4.jpg)
+
+**Video 3.:** Time-lapse recording of homotypic fusion of late endosomes. VE cells pretreated with 0.1 μM cytochalasin D for 5 min were labeled with Alexa Fluor 488-transferrin. Homotypic fusion of late endosomes was observed. The scale bar indicates 10 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/95999/elife-95999-video4.mp4.jpg)
+
+**Video 4.:** Time-lapse recording of homotypic fusion of late endosomes. VE cells pretreated with 1 μM cytochalasin D for 5 min were labeled with Alexa Fluor 488-transferrin. Homotypic fusion of late endosomes was observed. The scale bar indicates 3 μm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/95999/elife-95999-video5.mp4.jpg)
+
+**Video 5.:** Time-lapse recording of homotypic fusion of late endosomes. VE cells pretreated with 1 μM jasplakinolide for 5 min were labeled with Alexa Fluor 488-transferrin. Homotypic fusion of late endosomes was observed. The scale bar indicates 10 μm.
+
 We next observed the distribution of actin filaments during homotypic fusion. When late endosomes underwent fusion, EGFP-actin punctates were excluded from the membrane docking sites and highly polymerized transiently at both ends of the fusing vesicles (opposite to the docking region) during the rounding period after membrane fusion (Figure 7F). The fluorescence intensity of EGFP-actin on endosomes was quantitated in the proximal, lateral, and distal regions at the predocking, docking, rounding, and postfusion stages. This analysis indicated that actin filament distribution was spatially regulated during fusion (Figure 7G, dark gray bar), whereas FM 1–43 distribution, used as an unchanged control, was uniform on the membrane throughout the rounding stages (Figure 7G, light gray bar). Furthermore, the total fluorescence intensity of EGFP-actin on late endosomes significantly increased transiently after pore formation (Figure 7H), indicating that actin filaments were polymerized temporarily, not simply distributed differently. However, cytochalasin D treatment stabilized EGFP-actin spots and thereby reduced movement of EGFP-actin spots and temporal polymerization during homotypic fusion (Figure 7—figure supplement 3). Moreover, accumulation of Arp3-EGFP in the distal region during the rounding stage was observed similarly to EGFP-actin accumulation (Figure 7—figure supplement 4), and treatment with CK-666, an Arp2/3 inhibitor, resulted in a decrease in the frequency of homotypic fusion (Figure 7B) and slowed down homotypic fusion (Figure 7C and D). These results suggest that branched actin filaments nucleated by the Arp2/3 complex on the distal surface of late endosomes are necessary to transform the vesicle into a large round sphere quickly after membrane fusion of late endosomes.
 
-## Homotypic and heterotypic fusions are differentially regulated by actin
+### Homotypic and heterotypic fusions are differentially regulated by actin
 
 We next examined the role of actin filaments in heterotypic fusion. Cytochalasin D treatment led to a significant reduction in the frequency of heterotypic fusion in a dose-dependent manner (Figure 8A–C and Video 6). In contrast, jasplakinolide treatment did not inhibit heterotypic fusion and somehow increased the frequency of heterotypic fusion with lysosomes at as early as 5 min after pulse labeling (Figure 8B and Video 7). In addition, CK-666 treatment had no effects, suggesting that Arp2/3 was not required for heterotypic fusion (Figure 8C). These data suggest that actin played distinct roles in homotypic fusion and heterotypic fusion and that stable actin filaments are implicated in driving heterotypic fusion.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig8-v1.jpg)
+
+**Figure 8.:** (A) Confocal microscopic images of endocytic vesicles in zone 2. E8.5 mouse embryos pretreated with 0.1 μM cytochalasin D (CD) or with 0.01 μM jasplakinolide (Jasp) were labeled with Alexa 488-transferrin for 5 min. Time-lapse images were taken for 400 s from 15 min after labeling. The arrows indicate heterotypic fusion with lysosomes. Time 0 indicates the start of time-lapse imaging. (B) Frequency of heterotypic fusion calculated from the number of fusions that occurred in 400 s from 5 min after labeling. Data are represented as means ± SEMs of four to seven independent experiments; individual data are shown by circular dots. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (**p<0.01, ***p<0.001). (C) Quantitation of heterotypic fusion frequency at 15 min after labeling of VE cells pretreated with cytochalasin D (CD), jasplakinolide (Jasp), or CK666. Data are represented as means ± SEMs of four to eight independent experiments; individual data are shown by circular dots. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (*p<0.05, **p<0.01). (D) Effects of myosins on heterotypic fusion. Frequency of heterotypic fusion was calculated at 15 min after labeling. Data are represented as means ± SEMs of five to eight independent experiments; individual data are shown by circular dots. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (*p<0.05, ***p<0.001). (E) Colocalization of EGFP-myosin IIA or EGFP-myosin Va with phalloidin in zone 2 of VE cells. The insets show the magnified images of the boxed area. Following electroporation of the EGFP-fused myosin expression plasmids and 24 hr culture, whole embryos were stained with Alexa 546-phalloidin. EGFP-myosin IIA signals overlapped with phalloidin-positive spots on late endosomes, whereas most of the EGFP-myosin Va signals were juxtaposed with phalloidin-positive spots on late endosomes (see the schemas and fluorescence intensity plots). The scale bars indicate 10 μm (A), 3 μm (E), and 1 μm (E, insert).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** E8.5 mouse embryos pretreated with 10 μM pentachloropseudilin (PClP), 10 μM blebbistatin, 10 μM MyoVin-1, or 10 μM 2,4,6-triiodophenol (TIP) for 5 min were labeled with Alexa 488-transferrin for 5 min. Frequency of homotypic fusion was calculated at 5 min after labeling. Data are represented as means ± SEMs of four to nine independent experiments; individual data are shown by circular dots. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (***p<0.001).
+
+![Video 6.](https://cdn.elifesciences.org/articles/95999/elife-95999-video6.mp4.jpg)
+
+**Video 6.:** Time-lapse recording of heterotypic fusion between late endosomes and lysosomes in VE cells treated with 0.1 μM cytochalasin D. At 15 min after labeling with Alexa Fluor 488-transferrin, VE cells of embryos were observed. The scale bar indicates 10 μm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/95999/elife-95999-video7.mp4.jpg)
+
+**Video 7.:** Time-lapse recording of heterotypic fusion between late endosomes and lysosomes in VE cells treated with 1 μM jasplakinolide. At 15 min after labeling with Alexa Fluor 488-transferrin, VE cells of embryos were observed. The scale bar indicates 10 μm.
+
 Myosins are a superfamily of actin-based motor proteins and their members are grouped into many classes according to their structures and functions (Hartman and Spudich, 2012). To determine which class of myosins is important for vesicle fusion and motility, we examined the effects of inhibitors for several myosin classes that are known to be involved in vesicle transport. We tested inhibitors of myosin I (pentachloropseudilin, PClP), nonmuscle myosin II (NM II) (blebbistatin), myosin V (MyoVin-1), and myosin VI (2,4,6-triiodophenol, TIP; Bond et al., 2013). Heterotypic fusion frequency was reduced to 20% by MyoVin-1 and to a lesser extent, but significantly, by blebbistatin, but was not affected by PClP or TIP (Figure 8D). In contrast, homotypic fusion frequency was significantly reduced by PClP, MyoVin-1, and TIP (Figure 8—figure supplement 1). EGFP-myosin IIA signals overlapped with phalloidin-positive spots on late endosomes (Figure 8E), whereas EGFP-myosin Va signals were juxtaposed to phalloidin-positive spots on late endosomes (Figure 8E).
 
-## Cofilin-dependent actin dynamics are involved in late endosome fusion
+### Cofilin-dependent actin dynamics are involved in late endosome fusion
 
 Late endosomes undergo homotypic fusion almost exclusively at the beginning and then switch to heterotypic fusion over time after endocytosis (Figure 9A). Given that actin plays a different role in homotypic fusion and heterotypic fusion and that pharmacologic changes in actin dynamics shift the fusion mode as shown above, it is suggested that actin dynamics are a critical factor for the transition of fusion modes. Thus, we next decided to look into the regulation of actin dynamics in two different fusion modes. Previously, we found that lysosome biogenesis was regulated by actin dynamics through cofilin downstream of the autotaxin–LPA receptor–Rho–ROCK–LIM kinase pathway in VE cells (Koike et al., 2009). When VE cells were incubated with the S3 peptide, which contains the N-terminal 16 amino acid sequence of cofilin fused to a cell permeation sequence and is used as a competitive inhibitor for LIM kinase and serves as a cofilin activator (Maekawa et al., 1999; Aizawa et al., 2001), lysosomes were fragmented in VE cells and the fluorescence intensity of phalloidin in VE cells was reduced (Koike et al., 2009).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig9-v1.jpg)
+
+**Figure 9.:** (A) Time course of frequencies of homotypic (blue line) and heterotypic (red line) fusion. The graph indicates the means of 6 independent experiments. (B) Distribution of cofilin in zone 2 of VE cells. After whole embryos were electroporated with YFP-cofilin and cultured for 1 d, they were stained with Alexa 546-phalloidin. The lower graph plotting the fluorescence intensity along the white arrow in the upper image indicates colocalization of actin filaments and cofilin. (C) Optical sectioning images (right) of VE cells along the dotted line in the x-y axial panel (left). Embryos, which were electroporated with YFP-cofilin and cultured for 1 d, were stained with Alexa 546-phalloidin. The actin filaments, extending from the apical to the basal region, were highly colocalized with cofilin. Note that the white arrows and blue arrowheads indicate an actin filament that surrounds late endosomes and the cell membrane, respectively. (D) Quantification of the fluorescence intensity of phalloidin and cofilin along the apical-basal axis. The intensity of spots colocalized with phalloidin and cofilin around late endosomes observed in the x-y images was quantified along the z-axis. Fluorescence intensity was normalized to the intensities in the most apical plane (8 late endosomes from 3 VE cells). Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test and represented as means ± SEMs (**p<0.01, ***p<0.001). (E) FRAP assay to evaluate the dynamics of actin at the apical region of zone 2 in VE cell pretreated with the S3 peptide. After treatment with the S3 or RV peptide overnight, the area (4 μm x 4 μm) covering a single late endosome in VE cells expressing EGFP-actin was bleached and the fluorescence recovery was observed by time-lapse microscopy. Three independent experiments were performed. (F, G) Frequency of homotypic (F) and heterotypic fusion (G) in embryos pretreated with 15 μg/ml S3 or RV peptides. Frequencies of homotypic and heterotypic fusions were calculated according to the numbers of fusions in 400 s from 5 min (F) and 15 min (G) after labeling with Alexa 488-transferrin. Data are represented as means ± SEMs of three to four independent experiments; individual data are shown by circular dots. Data were analyzed by use of one-way ANOVA with the Tukey multiple comparison test (*p<0.05). The scale bars indicate 8 μm (B) and 2 μm (C). n.s. indicates no significant difference.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/95999/elife-95999-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Images of late endosomes and actin of VE cells pretreated with the S3 peptide (15 μg/ml) for 24 h and subsequently labeled with Alexa 594-transferrin and Alexa 488-phalloidin. Images on the right side show the maximum intensity projection (MIP) images along the x-y axis (upper) and x-z axis (bottom) of a single late endosome in the boxed area in the figure on the left. Actin filaments extending radially from the endosomal surface (orange arrowheads) were shorter and the fluorescence intensity was decreased by S3 peptide treatment, whereas actin filaments extending from the apical cell surface to the basal side on the surface of late endosomes were not changed (white arrowheads). The scale bars indicate 2 μm (left) and 0.6 μm (right).
 
 We thus focused on cofilin in endosomal fusion in VE cells. YFP-cofilin showed small punctate staining that colocalized with phalloidin-positive spots in the x-y plane and extended along the phalloidin signal (Figure 9B and C). When the fluorescence intensity of Alexa 546-phalloidin- and YFP-cofilin-positive filaments was quantitated along the apical-basal axis of late endosomes in zone 2, cofilin was slightly abundant in the apical region, whereas the phalloidin signal was stronger in the basal region (Figure 9D). Note that the possibility that overexpression of YFP-cofilin changed the distribution of actin filaments cannot be excluded. EGFP-actin on a late endosome showed that treatment of E7.5 whole embryos with the S3 peptide (15 μg/ml) for 24 h resulted in a decrease in radially extended actin filaments in the apical area of zone 2, whereas the actin filaments extending along the apical-basal axis appeared unchanged (Figure 9—figure supplement 1). In addition, a FRAP assay showed that the treatment of S3 peptide induced faster turnover of actin filaments of late endosomes when compared with treatment with the RV peptide (Aizawa et al., 2001), which contains the reverse sequence of cofilin and is used as a negative control (t1/2 = 10.9 s with the S3 peptide, n=9 vs t1/2 = 18.3 s with the RV peptide, n=9; Figure 9E). These results indicate that cofilin distributes with actin filaments on late endosomes and regulates actin dynamics on late endosomes. Finally, the roles of cofilin in late endosomal fusion were investigated. After treatment with the S3 peptide for 24 hr, Alexa 488-transferrin-labeled vesicles were observed by use of time-lapse imaging. When compared with the RV peptide, the S3 peptide strongly inhibited homotypic fusion (Figure 9F) but not heterotypic fusion (Figure 9G). These data suggest that spatial differentiation of actin dynamics along the apical-basal direction, partially contributed to by cofilin, may be a critical factor for the transition of fusion modes (Figure 10).
 
@@ -121,7 +221,7 @@ We thus focused on cofilin in endosomal fusion in VE cells. YFP-cofilin showed s
 
 In this study, we developed a novel imaging method of analyzing the motile behavior of late endosomes in VE cells and found that VE cells have two different types of vesicle fusion regulated by distinct actin-mediated mechanisms.
 
-## Actin filaments are associated with endosomal vesicles
+### Actin filaments are associated with endosomal vesicles
 
 We found two types of actin filaments associated with late endosomes in VE cells: those that extended along the apical-basal axis and those that extended radially from the endosomes (Figure 5). Our findings resemble the previous observation that early endosomes were distributed along with actin cables and that Arp2/3-dependent small cloud-like patches protruded from the membrane (Morel et al., 2009). Actin is reportedly distributed around vesicles in different patterns. In addition to the well-known interaction of vesicles with actin rails in directional vesicle transport (Titus, 2018), actin was localized at the vertex ring in vacuole fusion in yeast (Wang et al., 2002) and entirely surrounded phagosomes in macrophages (Liebl and Griffiths, 2009). Advanced microscopy techniques have clarified the fine structure of actin, which is assembled into polyhedron-like lattices around vesicles in exocrine glands (Ebrahim et al., 2019).
 
@@ -129,7 +229,7 @@ We observed strong actin signals as patches on late endosomes in the focal plane
 
 Actin filaments distribute on endosomes in various patterns depending on the cell types. However, why cells show different patterns of actin filament distribution on vesicles and whether different distribution patterns of actin filaments have different functions remain unclear. In this study, by taking advantage of the large size of endosomes, we found that there are two different types of actin filament distribution on the surface of late endosomes in VE cells and that these actin filaments regulate different aspects of membrane fusion, movement, and endosomal distribution. Taken together, these data suggest that different patterns of actin filament distribution on vesicles have various effects on specific functions of vesicles.
 
-## Actin regulates membrane behavior after pore formation
+### Actin regulates membrane behavior after pore formation
 
 In this study, we found that the membranes of late endosomes behave differently depending on the fusion mode. In homotypic fusion, the fusion pore formed between docked endosomal vesicles expanded quickly and the fusion was completed within 20-30 s (explosive fusion, Figure 2). In contrast, in heterotypic fusion with lysosomes, the pore opened very slowly and late endosomes gradually shrank in diameter and disappeared over 1-2 min (bridge fusion, Figure 3). Using mathematical modeling, we showed that vesicle size is an important factor determining the fusion mode. When the size of the vesicle becomes larger, the free energy for neck relaxation decreases and the pore is kept small. Our modeling predicted that the late endosomes are large enough to allow bridge fusion to occur, although they exhibit explosive fusion in vivo. Similarly, homotypic fusion in an explosive mode was observed in very large vesicles, such as vacuoles in yeast, endosomal vesicles in coelomocytes of C. elegans, and secretory granules in the salivary glands (Liu et al., 2016; Masedunskas et al., 2011; Wang et al., 2002). These observations indicate that vesicle size is not the sole factor determining the fusion mode. Lipid composition, a well-known parameter affecting its bending modulus, is also involved, but the effect on fusion mode may be less dominant when compared with the vesicle size effects (Simson et al., 1998; Faizi et al., 2019; Ridolfi et al., 2021). One of the critical factors other than vesicle size that determine the fusion mode is membrane fluctuation. We found that homotypic fusion was converted to bridge-like fusion after cytochalasin D treatment (Figure 7C), which suggests that actin dynamics around vesicles cause fluctuation and affect the fusion modes. This finding can be successfully explained by introducing minor modifications in our mathematical modeling so that a larger fluctuation can shift the fusion mode from bridge to explosive fusion.
 
@@ -139,7 +239,7 @@ In heterotypic fusion, late endosomes fused with lysosomes in a bridge-like mann
 
 Like homotypic fusion, heterotypic fusion is also dependent on actin, as shown by reduction in fusion frequency upon cytochalasin D treatment. Intriguingly, in heterotypic fusion, NM II, myosin V, and stabilized actin filaments, but not Arp2/3, were required, indicating a distinct contribution of actin to heterotypic fusion when compared with homotypic fusion. We showed that, consistent with the well-known roles of myosin V in trafficking of lysosomes, ER, melanosomes, and synaptic vesicles (Hammer and Sellers, 2011), myosin V facilitates the directional transport of late endosomes towards lysosomes along stabilized actin filaments that serve as a rail (Figure 10). Moreover, our results indicate that NM II, which is primarily responsible for generating contractile force (Svitkina, 2018), partially contributes to heterotypic fusion. It is well established that NM II facilitates the constriction of the membrane into the plasma membrane after membrane pore formation in exocytosis (Ebrahim et al., 2019) in cooperation with actin depolymerization by cofilin-1 (Miklavc et al., 2015). In contrast, our data showed that actomyosin appeared not to form a lattice on the surface of endosomes for the contraction and that cofilin did not show a robust influence on heterotypic fusion. Rather, actin stabilization tended to promote heterotypic fusion (Figure 8A and B). These data suggest that NM II may contribute to heterotypic fusion through a different mechanism from that of exocytosis. NM II is also implicated in the movement of the nucleus along with cell migration, which is akin to a ‘conveyor-belt’ by the sliding of the nuclear membrane along the actin filament (Gomes et al., 2005). Further investigation is necessary to elucidate the mechanisms by which NM II transports late endosomes along actin filaments.
 
-## Determination of fusion targets
+### Determination of fusion targets
 
 Late endosomes, which fuse frequently with neighboring late endosomes, shift the target of fusion towards lysosomes. What triggers the transition of the fusion targets? We found that larger endosomes tend to fuse with lysosomes (Figure 3G). Thus, one possibility is that the larger endosomes located in the basal position have a higher opportunity to fuse with lysosomes than do the smaller endosomes in the more apical portion. However, upon treatment with jasplakinolide, even smaller endosomes distributing in the more apical area underwent heterotypic fusion with lysosomes (Figure 8A and B), thus suggesting rather that the size and the position of vesicles are not the sole factors and that the different dynamics of actin shift the fusion modes. Furthermore, we showed weaker actin polymerization/depolymerization activity in the basal area as compared with that in the apical area (Figure 6C), a decrease in the frequency of homotypic fusion but not of heterotypic fusion induced by S3 peptide treatment (Figure 9F and G), a decrease in radially extending actin filaments by S3 peptide treatment (Figure 9—figure supplement 1), and an increase in actin filaments on endosomes in the basal area as compared with in the apical area (Figure 9D). These findings support the notion that cofilin-dependent regulation of actin polymerization/depolymerization may play a critical role in determination of the fusion target. In parallel with VE cells, it was shown that cofilin was specifically distributed in the apical area of epithelial cells and was highly active under the plasma membrane (Morris et al., 2011; Vitriol et al., 2013). Cofilin regulates actin remodeling for lamellipodia formation and endosomal trafficking (Harrington et al., 2011; Vitriol et al., 2013). Furthermore, early endosomes located close to the plasma membrane fuse frequently when compared with late endosomes located at the perinuclear region (Gruenberg et al., 1989). Taken together, higher dynamics of actin filaments regulated by cofilin at the cell peripheral area may increase the fusion frequency in many cells.
 
@@ -147,36 +247,284 @@ In this study, we developed a method of observing and manipulating late endosome
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Fascin-1</td>
+      <td>NCBI Reference Sequence</td>
+      <td>L33726.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>myosin Va</td>
+      <td>NCBI Reference Sequence</td>
+      <td>XM 006510827.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>myosin IIA</td>
+      <td>NCBI Reference Sequence</td>
+      <td>NM 022410.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Arp3</td>
+      <td>NCBI Reference Sequence</td>
+      <td>AK004554.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pEGFP-Rab7</td>
+      <td>doi: 10.1038 /s41467-019-09617-9</td>
+      <td></td>
+      <td>Backbone:pEGFP C2 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pmRFP-Fascin-1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Backbone:pmRFP C1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pEGFP-myosin Va</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Backbone:pEGFP C2 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pEGFP-myosin IIA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Backbone:pEGFP C2 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pYFP-Cofilin</td>
+      <td>Kindly provided by Kensaku Mizuno</td>
+      <td></td>
+      <td>Backbone:pEGFP C1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pEGFP-actin</td>
+      <td>BD Biosciences</td>
+      <td>#6116–1</td>
+      <td>Backbone:pEGFP C1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>Arp3-pEGFP-N</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Backbone:pEGFP N1 vector</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-EEA1 monoclonal antibody, FITC conjugated, clone 14</td>
+      <td>BD Biosciences</td>
+      <td>AB_399409</td>
+      <td>1:100 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-AffiniPure goat anti-mouse IgG (H+L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>AB_2338690</td>
+      <td>1:500 for IF</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>ICR/CD1</td>
+      <td>CLEA Japan, Japan SLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>FM 1–43 Dye</td>
+      <td>Molecular Probes</td>
+      <td>T3163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>LysoTracker Red DND-99</td>
+      <td>Molecular Probes</td>
+      <td>L7528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Transferrin, Alexa Fluor 488 conjugate</td>
+      <td>Molecular Probes</td>
+      <td>T13342</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Transferrin, Alexa Fluor 594 conjugate</td>
+      <td>Molecular Probes</td>
+      <td>T13343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Dextran, Rhodamin B, 70,000 MW</td>
+      <td>Molecular Probes</td>
+      <td>D1841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Alexa Fluor 488-phalloidin</td>
+      <td>Molecular Probes</td>
+      <td>A12379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Alexa Fluor 546-phalloidin</td>
+      <td>Molecular Probes</td>
+      <td>A22283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Cytochalasin D</td>
+      <td>Sigma-Aldrich</td>
+      <td>C8273</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Jasplakinolide</td>
+      <td>Calbiochem</td>
+      <td>420107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>CK666</td>
+      <td>Calbiochem</td>
+      <td>182515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Pentachloropseudilin</td>
+      <td>AOBIOUS</td>
+      <td>AOB33969</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>203389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>MyoVin-1</td>
+      <td>Calbiochem</td>
+      <td>475984</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>2,4,6-triiodophenol</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>T0452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji-Image J</td>
+      <td>https://imagej.net/software/fiji/downloads</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Canvas for Mac</td>
+      <td>Canvas GFX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KaleidaGraph</td>
+      <td>SYNERGY SOFTWARE</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 All the experiments using animals were approved by the Animal Care and Use Committee of the University of Tsukuba (#24–248) and of the University of Toyama (A2021ENG-1) and performed under their guidelines. Noon of the day on which a vaginal plug was observed was taken as embryonic day 0.5 (E0.5). Time-pregnant ICR mice were purchased from CLEA Japan and Japan SLC.
 
-## Immunohistochemistry and phalloidin staining
+### Immunohistochemistry and phalloidin staining
 
 For whole-mount immunohistochemistry, E8.5 embryos were fixed with 4% paraformaldehyde (PFA) in PBS at 4 °C for 3 hr and incubated with FITC-conjugated anti-EEA1 (1:100, BD Bioscience) or Cy3-labeled anti-mouse IgG (1:500, Jackson ImmunoResearch). For phalloidin staining, the embryos were fixed with 4% PFA in PBS at 37 °C for 15 min and incubated with 0.2 U/ml Alexa Fluor 488- or Alexa Fluor 546-conjugated phalloidin (Molecular Probes) for 60 min.
 
-## Ex vivo whole embryo culture
+### Ex vivo whole embryo culture
 
 The whole embryo culture was performed as described previously (Koike et al., 2009). In brief, embryos were dissected at E7.5 and cultured in 100% rat serum (Charles River) supplemented with 2 mg/ml glucose in a culture bottle placed in a rotation drum culture system (Ikemoto Rika) at 37 °C under 5% O2, 5% CO2, and 90% N2 for 24 hr. In the pharmacologic experiments, embryos were incubated with 15 μg/ml S3 and RV peptides (a kind gift of Dr Kensaku Mizuno, Tohoku University).
 
-## Endocytic uptake assays and intracellular vesicle tracing
+### Endocytic uptake assays and intracellular vesicle tracing
 
 Whole embryos with intact yolk sacs dissected out at E8.5 or embryos cultured for 1 d from E7.5 were transferred into DMEM (Sigma-Aldrich) supplemented with 0.1% BSA. Embryos were incubated in 100 nM LysoTracker Red (Molecular Probes) or 12 μM FM 1–43 (Molecular Probes) in 0.1% BSA/DMEM at 37 °C for 5 min. For tracing endocytic vesicles, embryos were incubated with 20 μg/ml Alexa Fluor 488-labeled transferrin (Molecular Probes) or 100 μg/ml dextran rhodamine B 70,000 MW (Molecular Probes) at 37 °C for 5 min. For differential labeling of late endosomes and lysosomes, whole embryos were initially cultured in 100% rat serum supplemented with 2 mg/ml glucose and 75 μg/ml dextran rhodamine B 70,000 MW at 37 °C for 20 min and then incubated with 20 μg/ml Alexa Fluor 488-labeled transferrin for 5 min. To test the effects of actin inhibitors, embryos were incubated with 0.01–1 μM cytochalasin D (Sigma-Aldrich), 0.01–1 μM jasplakinolide (Calbiochem), 20 μM CK666 (Calbiochem), 10 μM pentachloropseudilin (AOBIOUS), 10 μM blebbistatin (Sigma-Aldrich), 10 μM MyoVin-1 (Calbiochem), and 10 μM 2,4,6-triiodophenol (Tokyo Chemical Industry) for 5 min, and the same drugs were added to the medium during observation.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 For high-resolution imaging, the samples on the glass-bottom dish were mounted with ProLong Glass (Thermo Fisher Scientific). Images were captured by use of a TCS SP8 laser confocal microscope (Leica Microsystems) equipped with an HC PL APO CS2 100×/1.40 OIL objective (Leica). Alexa Fluor 488 and Alexa Fluor 594 dyes were excited at 488 and 594 nm of a supercontinuum white light laser, respectively. The emitted fluorescence was sequentially detected by use of HyD-SMD detectors through a spectral separation module (505–550 nm for Alexa Fluor 488 and 605–700 nm for Alexa Fluor 594). The pinhole size was set at 0.40 Airy units (60.7 μm). The pixel size and z-step were set at 45 nm and 182 nm, respectively. The acquired images were processed using the Lightning deconvolution algorithm on LAS-X software (Leica). Three-dimensional reconstructions of the images were carried out on NIS-Elements software (Nikon) or Imaris software (Bitplane).
 
 An embryo was placed on a glass-bottom dish (No.1S thickness, Matsunami Glass), and confocal fluorescent images were obtained by use of an LSM510 laser scanning microscope (Carl Zeiss) equipped with a C-APOCHROMAT 63 x/1.2 W Korr objective lens (Carl Zeiss) and a pinhole set to 1.0 AU. Images of zone 2 and zone 3 were taken by focusing on the z-axis where late endosomes and lysosomes occupied the largest area in the observation field, respectively. To compare endosomal sizes, the area of all intact endosomes in each image was measured by use of Image J. Time-lapse images were obtained by collecting 40 images with time intervals of 5 or 10 s at room temperature. The series of images of the confocal z-stacks were obtained with a lateral resolution of 1024x1024 pixels and a scanning depth of 6–8 μm with 13–17 layers and 0.5 μm intervals. To quantify fusion frequency, the number of membrane fusion events in the 400 s time-lapse images was counted, and the number of fusions per minute a single late endosome underwent was calculated. To compare the time required for single fusion processes, fusion time was defined as follows. For homotypic fusion, fusion time was defined as the time from the start of membrane fusion of two late endosomes until the formation of a single, round vesicle. For heterotypic fusion, fusion time was defined as the time from when the late endosomes began to shrink until they disappeared as the result of absorption by a lysosome.
 
-## Electroporation of whole embryos
+### Electroporation of whole embryos
 
 The electroporation of whole embryos was described previously (Koike et al., 2009). An E7.5 embryo was inserted into a small hole of an agarose mold (2% agarose/PBS, 7x7 mm) placed in Hanks buffered saline solution (HBSS). The solution bathing the embryos was then replaced with HBSS containing 2 mg/ml DNA. Three square electric pulses (30 V, 50ms duration, 1 pulse/s) were delivered to the agarose mold by use of an electroporator (CUY21, Nepa Gene) and a 10 mm electrode (CUY650P10, Nepa Gene). After electroporation, the embryo was rinsed with HBSS and cultured as described in the previous section. Rab7, nonmuscle myosin IIA, and myosin Va subcloned into a pEGFP-C2 expression vector (Clontech), Arp3 subcloned into a pEGFP-N1 expression vector (Clontech), fascin-1 subcloned into a pmRFP-C1 expression vector (Clontech), pEGFP-Actin (BD Biosciences), and YFP-cofilin (kind gifts of Dr Kensaku Mizuno) subcloned into the pEGFP-C1 vector (Clontech) were used. For cloning, following primers were used: myosin IIA Fwd, 5’-ttcgaattctgcatggctcagcaggctgcag-3’; myosin IIA Rev, 5’-cagaattcctattcagctgccttggcatc-3’; myosin Va Fwd, 5’-ttcgaattctgcatggccgcgtccgagctctac-3’; myosin Va Rev, 5’- cagaattctcagacccgtgcgatgaag-3’; fascin-1 Fwd, 5’-ttcgaattctgcatgaccgccaacggcacg-3’; fascin-1 Rev, 5’-cagaattcctagtactcccagagtgagg-3’; Arp3 Fwd, 5’-tcgaattcatggcgggacggctgcc-3’; and Arp3 Rev, 5’-gtggatcccgggacatgactccaaacactg-3’.
 
-## Photobleaching assay
+### Photobleaching assay
 
 Photobleaching analysis was performed with the LSM510 laser scanning microscope. The EGFP-actin-electroporated embryo was observed by use of a 63 x objective lens. For the bleaching, an ROI was drawn around a late endosome (4 μm x 4 μm) or cell boundary and was bleached by use of a 488 nm laser beam for 8 bleach iterations at 100% intensity, and fluorescence recovery into the bleached area was monitored. To calculate the percentage of recovery after photobleaching, the intensity profiles for the actin filaments in the bleached area, a background region, and the whole cells were collected. The background was subtracted from all the data, and the intensity of the whole cells was used to correct for fluorescence loss during image acquisition.
 
-## Electron microscopy
+### Electron microscopy
 
 E8.5 mouse embryos were fixed with 2% glutaraldehyde and 2% PFA in 0.1 M phosphate buffer (pH 7.4) overnight. After three washes with 0.1 M phosphate buffer, pH 7.4, the embryos were postfixed with 1.0% osmium tetroxide in 0.1 M phosphate buffer for 2 hr, dehydrated, and embedded in Epon 812 according to a standard procedure. Ultrathin sections were stained with uranyl acetate and lead citrate and observed by use of an electron microscope (H-7100, Hitachi).

@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012p63287 Groningen Biomolecular Sciences and Biotechnology Institute, University of Groningen Groningen Netherlands
-2. https://ror.org/04qw24q55 Laboratory of Biophysics, Wageningen University & Research Wageningen Netherlands
+1. Groningen Biomolecular Sciences and Biotechnology Institute, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+2. Laboratory of Biophysics, Wageningen University & Research Wageningen Netherlands ([ROR:04qw24q55](https://ror.org/04qw24q55))
 
 † Corresponding author
 
@@ -21,6 +21,49 @@ Molecular chaperones are vital proteins that maintain protein homeostasis by ass
 ## Peculiarities of the Hsp90 protein system
 
 For common substrate-binding ATPase proteins, such as proteases, helicases, motor proteins, etc., the ATPase mechanism and function are well defined. In stark contrast, Hsp90 performs various functions and (likely for that reason) is less well understood. A comparative overview of Hsp90 and a selection of well-known ATPases (Table 1) reveals several unique features of Hsp90.
+
+**Table 1.**
+ Special features of heat-shock protein 90 (Hsp90) compared to other well-known ATPase proteins (model ATPases): (i) the motor protein kinesin, (ii) the helicase DnaB, (iii) the protease ClpXP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Functional feature</th>
+      <th>Eukaryotic Hsp90</th>
+      <th>Model ATPases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mechanistic role of ATPase:</td>
+      <td>Only partially understood (Kirschke et al., 2014; Zierer et al., 2016; Reidy et al., 2023)</td>
+      <td>Understood hand-over-hand transport (Yildiz et al., 2004; Hancock and Howard, 1999) DNA unwinding (Biswas and Biswas, 1999) unfolded protein translocation (Cordova et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>ATPase rate*:</td>
+      <td>Slow: 0.1–5/min (Lorenz et al., 2014; Falsone et al., 2009; Lopez et al., 2021; Street et al., 2011)</td>
+      <td>Fast: 1–100/s (Hunter and Allingham, 2020; Hackney, 1988; Aubin-Tam et al., 2011; Henderson et al., 2011; Rajendran et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>Substrate specificity:</td>
+      <td>Binds diverse clients (Picard, 2022)</td>
+      <td>Specific binding ofmicrotubules (Hancock and Howard, 1999)DNA (Biswas and Biswas, 1999), orrecognition motifs (Chan et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Interaction affinities:</td>
+      <td>Low (Lorenz et al., 2014; Karagöz et al., 2014)</td>
+      <td>Medium to high (Woehlke et al., 1997; Biswas and Biswas-Fiss, 2006; Singh et al., 2000; Baker and Sauer, 2012)</td>
+    </tr>
+    <tr>
+      <td>ATPase functional cycle:</td>
+      <td>Directionality not well defined (Ratzke et al., 2012a; Zierer et al., 2016)</td>
+      <td>Strict directional order (Cordova et al., 2014; Hunter and Allingham, 2020; Wiegand et al., 2019)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*ATPase in the presence of substrate._
 
 First, Hsp90’s ATP hydrolysis rate is very slow (0.1–1.5/min) (Wayne and Bolon, 2007; Panaretou et al., 1998; Siligardi et al., 2002; Richter et al., 2001) – tens to hundreds of times slower than other ATPases in both the presence or absence of substrate. This is a common feature of the so-called GHKL family (including the eponymous DNA gyrase, Hsp90, histidine kinase (HisK), and MutL), which share slow ATPase rates [generally 0.02–10/min (Surette et al., 1996; Childers et al., 2014; Yang et al., 2022), and DNA gyrase with ~100/min (Maxwell and Gellert, 1984)]. Second, the role of ATP hydrolysis is well understood in the molecular mechanism of many standard ATPases. Contrastingly, the function of ATP hydrolysis by Hsp90 has remained unclear, and several hypotheses have been posed by the Hsp90 field, which we discuss below.
 

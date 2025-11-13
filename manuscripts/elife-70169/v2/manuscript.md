@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Molecular and Cell Biology, Li Ka Shing Center for Biomedical and Health Sciences, University of California, Berkeley Berkeley United States
-2. https://ror.org/01an7q238 CIRM Center of Excellence, University of California, Berkeley Berkeley United States
-3. https://ror.org/006w34k90 Howard Hughes Medical Institute Berkeley United States
+1. Department of Molecular and Cell Biology, Li Ka Shing Center for Biomedical and Health Sciences, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. CIRM Center of Excellence, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Howard Hughes Medical Institute Berkeley United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -25,9 +25,29 @@ Biological processes are driven by interactions between molecules. To understand
 
 While SPT originally targeted proteins on cellular membranes, advances in the past two decades led to intracellular applications (Barak and Webb, 1982, Ghosh and Webb, 1994, Kubitscheck et al., 2000, Goulian and Simon, 2000). These include the use of stochastic labeling to isolate a single emitter’s path (Manley et al., 2008), a principle that can be extended into intracellular settings with genetically encoded photoconvertible proteins (Ando et al., 2002, Wiedenmann et al., 2004) or cell-permeable dyes (Grimm et al., 2015, Grimm et al., 2016). Another advance is pulsed or ‘stroboscopic’ excitation, which reduces blur associated with fast-diffusing emitters (Elf et al., 2007). Together with modifications of TIRF microscopes (Tokunaga et al., 2008), these techniques have facilitated the application of SPT to intracellular settings with fast-moving subpopulations (English et al., 2011, Persson et al., 2013, Izeddin et al., 2014, Normanno et al., 2015, Hansen et al., 2017). Following Manley et al., 2008, we refer to this experiment as ‘sptPALM’ (Figure 1A, Video 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of experimental setup. An inclined illumination source is used in combination with a high-numerical aperture (NA) objective to resolve molecules in a thin slice in a cell. The excitation laser is pulsed to limit motion blur. Tracking yields a set of short trajectories (mean track length 3–5 frames). Trajectories shown are from a 7.48 ms tracking movie with retinoic acid receptor α-HaloTag (RARA-HaloTag) labeled with photoactivatable JF549 in U2OS nuclei. Asterisks in the movie frames mark particles at the edge of the focus. (B) Schematic of our inference problem. Each trajectory’s state is assumed to be a random draw from a distribution of state parameters. The goal is to recover this distribution from the observed trajectories. (C) Effects of particle mobility on trajectory length. RARA-HaloTag trajectories from U2OS nuclei were binned into five groups based on their mean squared displacement (MSD). Individual data points are the mean trajectory length of each group for three distinct knock-in clones of RARA-HaloTag (c156: 36961 trajectories, c239: 27543 trajectories, c258: 60347 trajectories); bar heights are the means across clones.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Illustration of motion blur. Because a fluorescent emitter has non-negligible movement during a single excitation pulse, the observed intensity distribution is not representative of a point source. Any pointwise estimate of its position, including those used in this article, incurs some error. (B) Mean displacement of a 2D Brownian motion during a single excitation pulse ($⟨R⟩=\sqrt{\piDΔt}$). The black dotted line is the image pixel size used in the experiments in this manuscript (0.16 μm), while the red dotted line is a typical range of localization error for fixed cell PALM and STORM (10–30 nm). (C) Examples of simulated Brownian emitters with 2 ms excitation pulses. Imaging was simulated using the sptPALMsim package for a paraxial optical system (‘Materials and methods’). Also see Video 5. (D) Quantification of localization error for Brownian emitters simulated as in (C). Error was defined as the root mean squared deviation of the estimated position from the mean of the particle’s path during each pulse. (E) Scaling of estimated localization error with diffusion coefficient in real sptPALM. Trajectories were categorized according to their mean squared displacement (MSD) and for each category the localization error was estimated as the root negative covariance between sequential jumps. Individual data points in the graph represent biological replicates; each datapoint represents gt19000 trajectories on a separate coverslip in a separate biological clone (RARA-HT) or transfection (H2B-HT, HaloTag-NLS, HaloTag).
+
+![Video 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-video1.mp4.jpg)
+
+**Video 1.:** NPM1-HaloTag in U2OS osteosarcoma nuclei was labeled with 100 nM PA-JFX549-HTL for 5 min followed by washes (‘Materials and methods’), then imaged with a HiLo setup at 7.48 ms frame intervals with 1.5 ms excitation pulses. The pixel size after accounting for magnification is 160 nm. Dots and lines indicate the output of the detection and tracking algorithm; each trajectory has been given a distinct color.
+
 sptPALM experiments on fast-moving emitters in 3D settings pose several challenges for analysis (Hansen et al., 2018). First, apparent motion in sptPALM reflects both the true motion of the emitter and error associated with the estimate for its position (‘localization error’) (Martin et al., 2002, Matsuoka et al., 2009). Like fixed cell PALM and STORM microscopies (Betzig et al., 2006, Rust et al., 2006), the magnitude of localization error in sptPALM depends on the number of photons collected from each emitter (Thompson et al., 2002). But unlike fixed cell microscopies, sptPALM has another component of error due to motion blur, the convolution of the microscope’s point spread function with the path of the emitter. This component of error is not trivial: the mean 2D displacement of a Brownian particle with diffusion coefficient 10 μm2 s-1 during a 1 ms integration is ~180 nm, substantially larger than typical localization error in fixed cell PALM/STORM (Figure 1—figure supplement 1B). Consequently, localization error in sptPALM depends on both the emitter’s mobility and its distance from the focus and is not simple to measure (Kubitscheck et al., 2000, Berglund, 2010, Michalet and Berglund, 2012). Pulsed excitation can be used to reduce motion blur (Elf et al., 2007), but because the laser pulse still has nonzero duration (usually ≥1 ms), motion blur remains an important part of the measurement (Deschout et al., 2012, Lindén et al., 2017).
 
 Second, the high numerical aperture (NA) objectives required to resolve single emitters induce short depths of field, typically less than a micron. Whereas bacteria such as Escherichia coli are often small enough to fit into the resulting focal volume, mammalian cells – with depths ≥5–10 μm – cannot. As a result, intracellular SPT experiments only capture short transits of emitters through the focal volume, a behavior termed defocalization (Figure 1C, Video 2, Video 3; Kues and Kubitscheck, 2002, Mazza et al., 2012, Hansen et al., 2018). The duration of each transit depends on the emitter’s mobility. This creates a sampling problem: slow particles with long residences inside the focal volume contribute a few long trajectories, while fast particles with short residences contribute many short trajectories. Mean trajectory length is often as little as 3–4 frames, severely limiting the ability to infer dynamic parameters (such as diffusion coefficient) from any single trajectory. Fast multifocal imaging may mitigate this problem (Abrahamsson et al., 2013), but such methods currently require higher photon budgets and are not yet applicable to fast-diffusing targets with high motion blur. Meanwhile, the use of cylindrical optics to encode axial position in PSF astigmatism (Kao and Verkman, 1994), while popular in fixed cell PALM/STORM, is complicated in sptPALM by its resemblance to motion blur.
+
+![Video 2.](https://cdn.elifesciences.org/articles/70169/elife-70169-video2.mp4.jpg)
+
+**Video 2.:** Trajectories were simulated in a 5 × 5 × 10 μm ellipsoid μm using the Euler–Maruyama scheme for regular Brownian motions with specular reflections at the ellipsoid boundaries. The diffusion coefficient for all trajectories was held constant at 2.0 μm2 s-1, while trajectories were randomly photoactivated at any point in the sphere and were subject to Poisson bleaching at 14 Hz. The left panel shows the 3D context of the trajectories, with dotted lines indicating the boundaries of the focal volume. The depth of the focal volume was 700 nm, which is roughly equivalent to the measured depth of field for our oil immersion objectives. The right panel shows the projection of the trajectories that coincide with the focal volume onto a hypothetical idealized camera. Notice that particles may make multiple transits through the focal volume that manifest as distinct trajectories.
+
+![Video 3.](https://cdn.elifesciences.org/articles/70169/elife-70169-video3.mp4.jpg)
+
+**Video 3.:** Trajectories were drawn from two states – a fast state with diffusion coefficient 5.0 μm2 and a slow state with diffusion coefficient 0.05 μm2 s-1 – and simulated with a spherical nucleus with 5 μm radius. The left panel shows the trajectories in their native three dimensions while the right panel shows trajectories projected through the focal volume.
 
 Third, the true number of dynamic subpopulations or ‘states’ for a protein of interest is usually unknown a priori. Proteins often participate in many complexes with distinct dynamics. Model-dependent analyses that assume a fixed number of states (Mazza et al., 2012, Hansen et al., 2017, Hansen et al., 2018), while powerful when combined with complementary measurements (Izeddin et al., 2014, Hansen et al., 2020), are limited to measuring coefficients of known models. To compound model complexity, a protein may behave differently in distinct subcellular environments. Indeed, although sptPALM directly observes the spatial context for each trajectory (Xiang et al., 2020), analyses such as jump distribution modeling often discard this information by aggregating jumps across all subcellular locations.
 
@@ -45,7 +65,7 @@ The SA method is publicly available as the pip-installable Python package saspt 
 
 ## Results
 
-## Two approaches to infer subpopulations in sptPALM datasets
+### Two approaches to infer subpopulations in sptPALM datasets
 
 We considered how to infer dynamic subpopulations from the short, fragmented trajectories produced by sptPALM in a manner robust to the effects of localization error and defocalization (Figure 1).
 
@@ -55,13 +75,33 @@ Real estimates of a particle’s position, however, are invariably associated wi
 
 Because individual trajectories produced by sptPALM are usually too short to estimate localization error, and because it does not take into account other effects like defocalization, the MSD histogram approach is prone to large systematic biases (Michalet and Berglund, 2012, Hansen et al., 2018). While techniques exist to mitigate some biases of MSD fitting (Kepten et al., 2015), most are difficult to apply at the single trajectory level due to the small number of points per trajectory.
 
-A distinct approach is represented by Bayesian finite state mixture models (Marin et al., 2005, McLachlan et al., 2019; Figure 2A, Figure 2—figure supplement 1A). Such models are comprised of a collection of states labeled k=1,…,K. Each state is associated with an occupation τk (describing the probability to observe trajectories from that state) and a vector of state parameters θk (describing the kind of trajectories produced by that state). Importantly, θk can also incorporate measurement parameters like the localization error. The probability to observe a particular trajectory x is then ∑k=1KτkpX(x|θk), where pX⁢(x|θk) is a distribution over trajectories produced by state k and depends on the type of motion being considered. The goal is to infer τk and θk for each state given some observed set of trajectories F. A challenge with such methods is choosing the number of states K as well as the high computational cost when pX⁢(x|θ) is nonconjugate to the prior over θ.
+A distinct approach is represented by Bayesian finite state mixture models (Marin et al., 2005, McLachlan et al., 2019; Figure 2A, Figure 2—figure supplement 1A). Such models are comprised of a collection of states labeled $k=1,…,K$. Each state is associated with an occupation $\tau_{k}$ (describing the probability to observe trajectories from that state) and a vector of state parameters $\theta_{k}$ (describing the kind of trajectories produced by that state). Importantly, $\theta_{k}$ can also incorporate measurement parameters like the localization error. The probability to observe a particular trajectory $x$ is then $\sumk=1K\tau_{k}p_{X}(x|\theta_{k})$, where $p_{X}⁢(x|\theta_{k})$ is a distribution over trajectories produced by state $k$ and depends on the type of motion being considered. The goal is to infer $\tau_{k}$ and $\theta_{k}$ for each state given some observed set of trajectories $F$. A challenge with such methods is choosing the number of states $K$ as well as the high computational cost when $p_{X}⁢(x|\theta)$ is nonconjugate to the prior over $\theta$.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig2-v2.jpg)
+
+**Figure 2.:** (A) Finite state mixture models use a discrete set of $K$ states. Challenges include estimating $K$ and producing intelligible output when the underlying dynamic profile is not discrete. (B) Dirichlet process mixture models (DPMMs) address the problem of nondiscrete dynamic profiles by using a continuous distribution over state parameters. Inference routines are slow, so in this work we use approximative motion models. (C) SAs, a special case of the finite state mixture. SAs approximate DPMMs by using a discrete grid of state parameters and have a faster inference routine. Challenges with SAs include the choice of the parameter grid.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Open circles indicate random variables, shaded circles represented random variables that are observed in the sptPALM experiment, solid circles indicate constants, and arrows indicate conditional dependence (Bishop, 2006). (A) Graphical model for finite state mixtures. α is the concentration parameter for a Dirichlet prior over the state occupations. The usual goal is to infer the posterior $p⁢(Z,\tau,\theta_{1},…,\theta_{K}|F)$. (B) Graphical model for Dirichlet process mixtures. α and $H$ are the parameters to a Dirichlet process $D⁢P⁢(\alpha,H)$ used to generate candidate distributions $G$. The usual goal is to infer the posterior $p⁢(\theta|F)$. (C) Graphical model for state arrays. Notice that this is a special case of (A) when the state parameters are treated as constant. The goal is to infer $p⁢(Z,\tau|F)$.
 
 Potential solutions can be found in the Bayesian nonparametric class of methods. These approaches begin with a single model comprising a very large or infinite collection of states. A Bayesian inference algorithm is then used to prune away superfluous complexity, leaving a sparse subset of states sufficient to explain the observed trajectories. The foundational example is the DPMM (Ferguson, 1973), which has the distinct advantage of being able to approximate essentially any mixture of states, discrete or continuous (Neal, 1992, Teh, 2010; Figure 2B). Its disadvantage is the high computational cost associated with inference, which becomes especially severe when considering types of motion with multiple parameters (such as RBME) (Neal, 2000, Andrieu et al., 2003).
 
 We considered two responses to this challenge. First, we constructed a DPMM that uses a cheap approximation to RBME by treating the RBME as a Markov process (Matsuda et al., 2018; Figure 3C). This assumption is strictly true only when the localization error is zero and is the same assumption used to estimate diffusion coefficient via the MSD (Michalet and Berglund, 2012). Because localization error is never actually zero, we were curious to see when and how this method breaks down.
 
-The second approach we explored is a model we refer to as a ‘state array’ (SA). This model is a special case of the finite state mixture, obtained by selecting a large number of states K and fixing the state parameters to the vertices of an ‘array’ that spans some target parameter space (Figure 2C, Figure 2—figure supplement 1). For example, the array for RBME might span a range of biologically plausible diffusion coefficients and localization error variances. An array for an anomalous diffusion model may also incorporate one or more anomaly parameters. The occupation of each ‘state’ in this array is inferred through a variational Bayesian algorithm, driving the occupation of most states to zero to leave a minimal set sufficient to explain the observations (‘Materials and methods’). Importantly, SAs jointly infer a ‘global’ distribution over the state parameters along with ‘individual’ distributions for each trajectory. The nature of the variational inference algorithm means that the ‘global’ distribution is always a weighted mean of these ‘individual’ distributions. We focus our attention on the global distribution in this article, with some consideration of the individual distributions for each trajectory at the end.
+![Figure 3.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig3-v2.jpg)
+
+**Figure 3.:** (A) Regular Brownian motion with localization error (RBME) is a motion model that involves two parameters: diffusion coefficient and localization error variance. (For brevity, we refer to the latter simply as ‘localization error.’) Unlike pure Brownian motion, RBME has correlations between sequential jumps due to the influence of localization error. (B) State array inference for RBMEs. The naive occupation estimate is the initial estimate for the posterior, which is subsequently refined through variational inference. At the end of inference, we marginalize out localization error to yield 1D distributions over the diffusion coefficient. (C) DPMM inference for mixtures of Brownian motions. Because the Gibbs sampling routine for a pure DPMM is slow, we use an approximative motion model that neglects the off-diagonal terms of the covariance matrix in (A). (D) Example of state arrays evaluated on simulated sptPALM. Tracking was simulated in a spherical nucleus with 700 nm focal depth, uniform photoactivation probability, 14 Hz bleaching rate, 7.48 ms frame intervals, and variable localization error. The lines represent the state array posterior mean occupations for independent replicates of the same simulation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The variance of the jumps of a regular Brownian motion with localization error (RBME) depends on both real diffusion and localization error. (B) Naive state occupation estimates for two experimental sptPALM datasets. Dotted white lines indicate contours in the state space with constant jump variance. (C) Illustration of the difficulty in coinference of diffusion coefficient and localization error for a simulated sptPALM dataset with four states. (D) Illustration of the danger of misestimating the localization error for the Dirichlet process mixture model (DPMM) method with simulated mixtures of three RBME states. In this case, the assumed localization error in the DPMM algorithm was held constant at 30 nm. Because state arrays (SAs) naturally incorporate uncertainty about localization error, inference is more stable with respect to changes in the experimental localization error. Note that this has a stronger effect on slower-moving states.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Demonstration of the effect of defocalization on trajectory length. 340,727 Brownian trajectories were simulated in a 5 μm radius nucleus with a 700 nm focal depth and 14 Hz bleaching rate. The diffusion coefficients for each trajectory were drawn with equal probability from a slow state (0.05 μm2 s-1) and a fast state (5 μm2 s-1). Tracking was simulated without gaps, so that particles outside the focal volume at any frame interval are considered ‘lost’ for all subsequent frames. For each observed trajectory length, we quantified the fraction of trajectories with that length in the fast state. (B) Approach used to calculate the fraction of defocalized trajectories. Two possible initial probability densities for the particle in $z$ are shown. The Green’s function for the diffusion model is used to propagate the probability density. At each frame interval, the density that lies outside the focal volume (corresponding to particles that are not observed) is set to zero. (C) Comparison of the algorithm in (B) with the defocalized fraction from simulated data. Trajectories were initialized in a slab with thickness $Δ⁢z$ and infinite XY extent, then tracked without gaps. The fraction of trajectories remaining was quantified at each frame interval. Each black dot corresponds to a simulation with 100,000 trajectories, while the lines correspond to the output of the algorithm in (B).
+
+The second approach we explored is a model we refer to as a ‘state array’ (SA). This model is a special case of the finite state mixture, obtained by selecting a large number of states $K$ and fixing the state parameters to the vertices of an ‘array’ that spans some target parameter space (Figure 2C, Figure 2—figure supplement 1). For example, the array for RBME might span a range of biologically plausible diffusion coefficients and localization error variances. An array for an anomalous diffusion model may also incorporate one or more anomaly parameters. The occupation of each ‘state’ in this array is inferred through a variational Bayesian algorithm, driving the occupation of most states to zero to leave a minimal set sufficient to explain the observations (‘Materials and methods’). Importantly, SAs jointly infer a ‘global’ distribution over the state parameters along with ‘individual’ distributions for each trajectory. The nature of the variational inference algorithm means that the ‘global’ distribution is always a weighted mean of these ‘individual’ distributions. We focus our attention on the global distribution in this article, with some consideration of the individual distributions for each trajectory at the end.
 
 Because the parameters for each state in an SA are fixed, the most expensive computations can be cached and reused throughout inference. As a result, SAs can handle more complex models than DPMMs. In this article, we use a 2D SA for RBME spanning a range of diffusion coefficients and localization error variances. After inference, we marginalize out the localization error part to yield 1D functions of the diffusion coefficient (Figure 3B). This procedure naturally incorporates uncertainty about localization error variance, rendering SAs more robust to variations in localization error than DPMMs (Figure 3—figure supplement 1).
 
@@ -69,15 +109,75 @@ DPMMs and SAs work best with thousands to tens of thousands of trajectories. Thi
 
 Finally, to account for defocalization we developed a method applicable to the posterior distributions of both DPMMs and SAs (Figure 3—figure supplement 2, ‘Materials and methods’).
 
-## Evaluating DPMMs and SAs on simulated sptPALM data
+### Evaluating DPMMs and SAs on simulated sptPALM data
 
 As the target for inference, we considered a mixture of RBMEs enclosed in a spherical membrane with a thin focal volume bisecting the sphere, with dimensions similar to a mammalian cell nucleus. Emitters photoactivate and photobleach throughout the sphere and are only observed when their positions coincide with the focal volume. Because no gaps are allowed during tracking, the result is a highly fragmented set of trajectories with mean length 3–5 frames. We chose simulation settings to approximate real sptPALM experiments, with bleaching rates ≥10 Hz, diffusion coefficients in the range 0–100 μm2 s-1, and localization error variances between 02 and 0.062μm2.
 
 We compared the ability of DPMMs, SAs, and MSD histograms to recover the underlying distribution of diffusion coefficients from this data. We divided these simulations into four classes with increasing difficulty. In class 1, localization error for all states was provided as a known constant to the algorithms (Figure 4A, Figure 4—figure supplement 1A). In class 2, localization error was held constant for all states but was unknown to the algorithms (Figure 4B, Figure 4—figure supplement 1B). In class 3, localization error was allowed to vary between diffusive states and was also unknown to the algorithms (Figure 4C, Figure 4—figure supplement 1C). Finally, for class 4 we simulated full sptPALM-like movies that incorporate heterogeneous localization error, motion blur, camera noise, tracking errors, and defocus (Figure 4—figure supplement 5, Figure 4—figure supplement 6). In these simulations, the localization error is unique for each emitter and depends on the emitter’s axial position, the stochastic number of photons it emits during each integration, and its pattern of motion blur (Video 4, Video 5).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Mixtures of diffusing states were simulated in a 700 nm focal volume with 7.48 ms frame intervals. Simulations were divided into three classes of increasing difficulty based on the treatment of localization error as described in the text. For each replicate, exactly 12,800 trajectories were simulated. Estimated occupations for five independent replicates are overlaid on each subplot. (D) Accuracy of state occupation estimates for each method as a function of sample size. Each method was run on trajectory simulations generated from an underlying three-state dynamic model (0.02 μm2 s-1 [20%], 0.5 μm2 s-1 [30%], 5.0 μm2 s-1 [50%]), then occupations were estimated by integrating the distribution produced by each method. Limits of integration were set to 0–0.08 μm2 s-1 (state 1), 0.08–1.5 μm2 s-1 (state 2), or 1.5–40 μm2 s-1 (state 3). 20 replicates were run per condition. (E) Mean absolute error (MAE) in state occupation estimates for the simulations in (D). Each value is the average MAE across all replicates. (F) Inferring mixtures of diffusing states with similar diffusion coefficients using SAs. For each replicate, a total of 6400 trajectories were simulated with the indicated underlying state distribution. (G) Effect of state transitions on the MSD, DPMM, and SA approaches. We varied the first-order transition rate constant between two diffusing states, simulating 6400 trajectories per replicate.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** In all panels, the y-axis represents the probability (or inferred probability) of a particular diffusion coefficient. In detail: for the ground truth, the y-axis is the probability of simulating a particular diffusion coefficient. For the MSD approach, the y-axis is the proportion of trajectories with estimated diffusion coefficients that fall into the corresponding bin. For the DPMM and SA methods, the y-axis is the posterior probability of each of a discrete set of diffusion coefficient bins spanning 0.01–100.0 μm2 s-1. In the case of SA, this posterior probability has been marginalized over the localization error component. Five independent replicates are overlaid on each subplot. (A) ‘Class 1’ simulations with known and constant localization error (standard deviation 30 nm). (B) ‘Class 2’ simulations with constant but unknown localization error (standard deviation 30 nm). In the cases of DPMM and MSD, the localization error was first inferred using jump covariance and then held constant when estimating the distribution over the diffusion coefficient. In the case of SA, the localization error is jointly inferred with the diffusion coefficient. (C) ‘Class 3’ simulations with variable and unknown localization error. Inference proceeded as in (B), but in the case of the MSD approach, the localization error and diffusion coefficient were jointly inferred for each trajectory.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Accuracy of the mean squared displacement (MSD) histogram, Dirichlet process mixture model (DPMM), and state array (SA) methods for estimating dynamic profiles. The trajectory simulations were the same as in Figure 4—figure supplement 1 using 12,800 simulated trajectories. (A) In order to compare the simulated ground truth profile (which could be discrete or continuous) with the output of each method, we quantified the root mean squared deviation (RMSD) of the estimated cumulative distribution function (CDF) from the ground truth CDF. (B) Accuracies of each method in terms of CDF RMSD. Each value is the average CDF RMSD over five replicates. (C) Scatterplot of CDF RMSDs for each simulation replicate in (B). Each dot represents a replicate of the same simulation.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Trajectories were simulated with two distinct diffusion coefficients (0.1 μm2 s-1 [40% occupation] and 5.0 μm2 s-1 [60% occupation]) in a 5 μm sphere with specular reflections, 7.48 ms frame intervals, 14 Hz bleaching rate, and a 700 nm focal depth (‘Materials and methods’). Occupation estimates were derived by integrating the normalized histogram (for the MSD method) or the mean of the posterior distribution (for DPMM and SA methods). The limits of integration for each state were identical for all methods: 0–1 μm2 s-1 (state 1) and 1–40 μm2 s-1 (state 2). (B) Estimated occupations for each state according to each method (20 replicates per sample size). (C) Mean absolute error (MAE) of state occupation estimates for each replicate in (B). (D) Tabular presentation of the data in (C). Each number is the MAE averaged across all replicates for that simulation.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Trajectories were simulated with four distinct diffusion coefficients: 0.02 μm2 s-1 (10% occupation), 0.2 μm2 s-1 (40% occupation), 1.0 μm2 s-1 (20% occupation), or 8.0 μm2 s-1 (30% occupation). Apart from the dynamic model, the simulation was performed as in Figure 4—figure supplement 3. Occupation estimates were derived by integrating the normalized histogram (for the MSD method) or the mean of the posterior distribution (for DPMM and SA methods). The limits of integration for each state were identical for all methods: 0.0–0.08 μm2 s-1 (state 1), 0.08–0.5 μm2 s-1 (state 2), 0.5–3 μm2 s-1 (state 3), and 3–40 μm2 s-1 (state 4). (B) Estimated occupations for each state according to each method (20 replicates per sample size). (C) Mean absolute error of state occupation estimates for each replicate in (B). (D) Tabular presentation of the data in (C). Each number is the average across all replicates for that simulation.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Summary of approach. We simulated a paraxial imaging system and generated SPT movies by systematically varying the state occupations and fast diffusion coefficients for a two-state Brownian model (‘Materials and methods’). After simulation, we ran tracking and state array or DPMM inference, then compared the recovered state occupations with the simulated ground truth. About 5000 trajectories were identified by the tracking algorithm per condition. (B) Posterior mean occupations for each simulated condition. Each row corresponds to a distinct value for $D_{fast}$ and each color to a distinct slow state occupation; arrows indicate the simulated ground truth states.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Quantitative evaluation of state array and DPMM performance on optical–dynamical simulations from Figure 4—figure supplement 5. (A) Accuracy of state occupation retrieval. The ‘slow fraction’ was defined as the integrated posterior occupation below 0.04 μm2 s-1 and compared against the ground truth. (B) Accuracy of fast diffusion coefficient estimation. The fast diffusion coefficient (‘$D_{fast}$’) was defined as the mean diffusion coefficient above 0.04 μm2 s-1.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** (A) State diagram for two-state regular Brownian motion with first-order state transitions. The transition rate constant $k$ was identical for both transitions. (B) Settings for the state transition simulations. Under these conditions, the mean trajectory length was 7 frames. 6400 trajectories were used for each run. (C) Outcome of the simulations. The y-axis corresponds to the occupation or occupation estimate for a particular diffusion coefficient. Specifically, for the ground truth column, the y-axis is the probability to simulate a particular diffusion coefficient; for mean squared displacement (MSD), it is the fraction of trajectories with estimated diffusion coefficients that fall into the respective bin; for the DPMM and SA methods, it is the posterior mean occupation estimate. For both DPMMs and SAs, we used a maximum trajectory length of 12 frames. For the MSD, DPMM, and SA methods, the result of inference with five independent replicates is overlaid on each subplot.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** (A) Schematic of approach. We performed a trajectory simulation with two states, including one with a diffusion coefficient (10-4 μm2 s-1) smaller than the smallest supported diffusion coefficient for the three methods (10-2 μm2 s-1). Five replicates are overlaid on each subplot. (B) State occupations were estimated by integrating the posterior mean over the peaks. Note that a peak appears at 10-2 rather than the simulated 10-4. (C) Estimates for the occupation of the slow and fast states with each method. (D) Mean absolute error of the state occupation estimates in (C). The value reported is the mean of the mean absolute error over the five replicates.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** (A) Schematic of approach. We performed a trajectory simulation with three clusters of states with similar diffusion coefficients, then analyzed these simulations with the mean squared displacement (MSD) histogram, DPMM, or SA methods. Five replicates are overlaid on each subplot. Notice that none of the three methods could distinguish the states within each cluster. (B) Occupation estimates for each of the three clusters were estimated by integrating the posterior mean over the following ranges: 0–0.2 μm2 s-1, 0.2–2.5 μm2 s-1, and 2.5–40 μm2 s-1. (C) Estimates for the occupation of each cluster of states. (D) Mean absolute error of the state occupation estimates in (C). The value reported is the mean of the mean absolute error over the five replicates.
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp10-v2.jpg)
+
+**Figure 4—figure supplement 10.:** (A) Schematic of approach. sptPALM movies were simulated with an underlying multistate Brownian motion model. These were tracked and analyzed with state arrays and vbSPT. We do not consider the ability of vbSPT to estimate transition rates, and no state transitions were included in the simulation. (B) Comparison of vbSPT and state array accuracy on models with two states. Because the number of states returned by vbSPT is variable (between 2 and 7 for this data), we estimated $D_{fast}$ as the state closest to the true $D_{fast}$. For state arrays, $D_{fast}$ was estimated as the mode of the posterior distribution above 0.02 μm2 s-1. For both methods, the slow fraction was estimated as the sum of the occupation of all states below 1.0 μm2 s-1. (C) Comparison of vbSPT and state arrays on various dynamic models. Each row corresponds to a particular dynamic model, as shown in the left column. The $y$-axis corresponds to true occupation for the ‘Ground truth’ column, occupation of the best model for vbSPT, and the mean posterior occupation for state arrays. On average, 5510 trajectories were tracked in each simulation. In the table at the right, the numbers in parentheses are the deviation from the true number of simulated states.
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp11-v2.jpg)
+
+**Figure 4—figure supplement 11.:** (A) Example FBME trajectories. The two parameters of interest are the modified scaling coefficient $S¯$ (parameterizing the size of the increments, analogous to the diffusion coefficient) and the Hurst parameter $H$ (parameterizing correlations between increments). (B) Increment covariance matrices and angular distributions for the three main regimes of FBME. Notice that the localization error term contributes to the off-diagonal terms in the covariance, resulting in a departure from pure FBM. (C) Schematic of state array for FBME. The state array is comprised of a 3D parameter array of $S¯$, $H$, and localization error variance. After inference, the posterior is marginalized over localization error to yield 2D functions of $S¯$ and $H$. (D) Posterior occupation for various simulated multistate FBM models. SPT movies were simulated with the sptPALMsim package (‘Materials and methods’); red crosshairs indicate the ground truth simulated states.
+
+![Figure 4—figure supplement 12.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig4-figsupp12-v2.jpg)
+
+**Figure 4—figure supplement 12.:** (A) State array posterior distributions for single-state FBME models, simulated as in Figure 4—figure supplement 11. Each subplot represents the posterior distribution for simulations of one motion model. The ground truth model’s Hurst parameter is indicated with a horizontal gray dotted line and the scaling coefficient with a vertical white dotted line. (B) Rationalization of the effect in panel (A). The ‘true path’ is a simulated FBM, the red bars indicate the simulated excitation laser pulses, and ‘mean in pulse’ is the mean position of each particle during each excitation laser pulse. Motion blur may exert a more significant effect for low Hurst parameters because the corresponding FBMEs have more motion in the higher temporal frequencies, which is averaged out over each pulse.
+
+![Video 4.](https://cdn.elifesciences.org/articles/70169/elife-70169-video4.mp4.jpg)
+
+**Video 4.:** Two Brownian states with diffusion coefficients 0.01 and 5.0 μm2 s-1 were simulated; imaging was simulated with settings similar to our experimental SPT system including an objective with numerical aperture 1.49, immersion medium with refractive index 1.515, image pixel size 0.16 μm, frame interval 7.48 ms, and 2 ms excitation pulses. Simulations were performed using the sptPALMsim package.
+
+![Video 5.](https://cdn.elifesciences.org/articles/70169/elife-70169-video5.mp4.jpg)
+
+**Video 5.:** Mixtures of Brownian motions were simulated as in Video 4, except we used 0.5, 2.0, or 8.0 ms excitation pulses and a frame interval of 20 ms. The mixture had four diffusing states with the following diffusion coefficients: 0.1 μm2 s-1 (10% occupation), 2.5 μm2 s-1 (20% occupation), 9.0 μm2 s-1 (30% occupation), and 20.0 μm2 s-1 (40% occupation).
+
 DPMMs and SAs both recovered the dynamic profile for simulations in class 1 with a resolution that exceeded the MSD histogram approach. With large samples of trajectories, DPMMs and SAs inferred even nondiscrete distributions of states (Figure 4A, Figure 4—figure supplement 1A).
 
-When knowledge of the localization error was removed (classes 2 and 3), the SA approach outperformed both the MSD and DPMM approaches. The DPMM’s performance was especially poor when the contributions of diffusion and error to jump variance were similar (D⁢Δ⁢t≈σloc2), likely due to its simplistic treatment of localization error. Meanwhile, the dynamic profile estimated by SAs was unperturbed by variations in the localization error (Figure 4B and C, Figure 4—figure supplement 1B and C). Comparing the results from simulations in class 3 numerically, we found that the root mean squared deviation of the estimated CDF from the true CDF was ≤ 5% for SAs, while it was 5–20% for both the MSD histogram and DPMM approaches (Figure 4—figure supplement 2).
+When knowledge of the localization error was removed (classes 2 and 3), the SA approach outperformed both the MSD and DPMM approaches. The DPMM’s performance was especially poor when the contributions of diffusion and error to jump variance were similar ($D⁢Δ⁢t≈\sigma_{loc}^{2}$), likely due to its simplistic treatment of localization error. Meanwhile, the dynamic profile estimated by SAs was unperturbed by variations in the localization error (Figure 4B and C, Figure 4—figure supplement 1B and C). Comparing the results from simulations in class 3 numerically, we found that the root mean squared deviation of the estimated CDF from the true CDF was ≤ 5% for SAs, while it was 5–20% for both the MSD histogram and DPMM approaches (Figure 4—figure supplement 2).
 
 The dynamic profiles produced by the MSD, DPMM, and SA approaches can be integrated to yield occupation estimates over particular diffusion coefficient ranges. We compared the accuracy and precision of these estimates with discrete two-, three-, or four-state models (Figure 4D, Figure 4—figure supplement 3, Figure 4—figure supplement 4). As the number of trajectories increased, occupations estimated by DPMMs and SAs converted to within 3% of the true values. In contrast, the MSD approach was associated with large systematic errors, an effect previously reported (Mazza et al., 2012, Hansen et al., 2018).
 
@@ -93,7 +193,11 @@ We compared the performance of SAs and vbSPT (Persson et al., 2013) using simula
 
 While our investigation focused primarily on Brownian motion, SAs can be applied to any motion model parameterized by a likelihood function. To explore applications of SAs outside of Brownian motion, we applied it to fractional Brownian motion (FBM), a generalization of Brownian motion capable of producing anomalous diffusion (Mandelbrot and Van Ness, 1968). Whereas Brownian motion’s sole parameter is the diffusion coefficient, FBM parameterizes both the magnitude (via a scaling coefficient) and the temporal correlations (via the Hurst parameter) of a particle’s increments. As with Brownian motion, we simulated sptPALM movies with fraction Brownian particles with variable diffusion coefficient and Hurst parameter (Video 6). To construct a state array for FBM, we used a 3D array over scaling coefficient, Hurst parameter, and localization error variance (Figure 4—figure supplement 11C). As with the RBME array, we marginalized out localization error after inference. While the SA accurately recovered the diffusion coefficient and Hurst parameter for multistate FBM models (Figure 4—figure supplement 11D), we noted a systematic error in the estimation of low (subdiffusive) Hurst parameters due to motion blur (Figure 4—figure supplement 12).
 
-## Performance of state arrays on experimental sptPALM
+![Video 6.](https://cdn.elifesciences.org/articles/70169/elife-70169-video6.mp4.jpg)
+
+**Video 6.:** FBMs with different Hurst parameters were simulated under conditions similar to Video 4 with either 0 ms (instantaneous) or 2 ms excitation pulses and a frame interval of 7.48 ms. The scaling coefficients were modified to maintain the same jump variance between frames for all of the motions (‘Materials and methods’).
+
+### Performance of state arrays on experimental sptPALM
 
 After observing that SAs outperformed DPMMs on simulations, we proceeded to evaluate SAs on real data. We acquired an sptPALM dataset in U2OS osteosarcoma nuclei with endogenously tagged retinoic acid receptor-α-HaloTag (RARA-HT) (Pontén and Saksela, 1967, Los et al., 2008; (Figure 5—figure supplement 1). RARA-HT is a type II nuclear receptor that heterodimerizes via its ligand-binding domain (LBD) with the retinoid X receptor (RXR) to form a complex competent to bind chromatin and regulate target genes Giguere et al., 1987, Petkovich et al., 1987, Brand et al., 1988, Yu et al., 1991, Bugge et al., 1992, Marks et al., 1992, Leid et al., 1992; reviewed in Evans and Mangelsdorf, 2014). In addition, association of coregulator complexes with the RAR/RXR heterodimer has been shown to influence the dimer’s dynamics in FCS studies (Brazda et al., 2011, Brazda et al., 2014). As such, RARA-HT is expected to inhabit a variety of dynamic states in sptPALM.
 
@@ -101,15 +205,35 @@ For comparison, we also performed identical sptPALM experiments with histone H2B
 
 The four proteins presented distinct dynamic profiles (Figure 5A). For both HT and HT-NLS, the SA identified a single highly mobile state. In agreement with previous reports (Xiang et al., 2020), we observed that addition of the NLS reduces HaloTag’s diffusion coefficient by two- to threefold. In contrast, both RARA-HT and H2B-HT had substantial immobile fractions, accounting for roughly 40 and 70% of their total populations, respectively (Figure 5C). SAs identified stark differences in the mobile subpopulations for RARA-HT and H2B-HT. Whereas H2B-HT presented a fast population at 8–10 μm2 s-1, RARA-HT inhabited a broad spectrum of diffusing states ranging from 0.3 to 10.0 μm2 s-1. Biological replicates gave similar results (Figure 5—figure supplement 2A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig5-v2.jpg)
+
+**Figure 5.:** All sptPALM experiments were performed with the photoactivatable dye PA-JFX549 using a TIRF microscope with HiLo illumination, 7.48 ms frame intervals, and 1 ms excitation pulses. (A) Naive and SA occupations for four different tracking targets. The upper two panels are the naive occupations for each nucleus in each of two biological replicates. Biological replicates correspond to separate knock-in clones for RARA-HaloTag or separate transfections for the other constructs (mean 1627 trajectories per nucleus). The bottom panel displays the SA occupations for a run of the SA algorithm on trajectories pooled from a single biological replicate (mean 17,899 trajectories per biological replicate). Asterisks for RARA-HaloTag and H2B-HaloTag indicate that the immobile fraction for these constructs has been truncated to visualize the faster-moving states. (B) Naive occupation estimate for RARA-HaloTag constructs bearing domain deletions or point mutations. ‘Exogenously expressed’ constructs were expressed from a nucleofected PiggyBac vector under an L30 promoter. (C) Quantification of the immobile fractions and mean free diffusion coefficients for the four constructs in (A). The ‘immobile fraction’ was defined as the total occupation below 0.05 μm2 s-1, while the mean free diffusion coefficient was the posterior mean diffusion coefficient above this threshold. Each dot represents a biological replicate (a different knock-in clone for RARA-HT or a different nucleofection for H2B-HT, HT-NLS, and HT).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** In all subpanels, ‘atRA’ refers to all-trans retinoic acid. (A) Western blots for endogenous RARA-HaloTag knock-ins in U2OS cells. The expected molecular weight of RARA-HaloTag-3xFLAG is 97 kDa. (B) Luciferase assays with a retinoic acid-responsive promoter with wildtype or RARA-HaloTag knock-in U2OS cell lines. (C) Luciferase assays with transfected RARA constructs to assess the effect of tagging on transactivation of a retinoic acid response element-driven luciferase gene. RARA(WT) indicates a transgene bearing the wildtype version of RARA, and C88G is a DNA-binding mutant. (D) Spinning disk confocal microscopy images of endogenously tagged RARA-HaloTag cell lines labeled with TMR-HaloTag ligand. The intensities for all three images have been scaled to the same min/max in arbitrary intensity units.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Biological replicates of each of the tracking experiments shown in Figure 5A. Tracking was performed on an inverted TIRF setup with 7.48 ms frame intervals and 1 ms stroboscopic excitation with the dye PAJFX549-HaloTag ligand. RARA-HT cells were knock-ins as described in Figure 5—figure supplement 1, H2B-HaloTag cells were previously described (McSwiggen et al., 2019), and HT and HT-NLS were expressed from a nucleofected PiggyBac vector under an EF1α promoter. (B) Resampling experiment to evaluate the sources of variability in DPMM/SA runs on RARA-HaloTag trajectories. RARA-HaloTag trajectories from one tracking dataset were sampled according to one of three schemes, then analyzed with the Dirichlet process mixture model (DPMM) and SA methods. 20 replicates were performed for each condition, and the Kullback–Leibler divergence of the posterior occupation of each replicate from the cross-replicate posterior occupation was used to quantify variability.
+
 To determine the origins of the dynamic states observed for RARA-HT, we performed domain deletions (Figure 5B). Removal of either the DNA-binding domain (DBD) or LBD resulted in loss of the immobile population. Because both the DBD and LBD are required for chromatin binding by the RAR/RXR heterodimer, this suggests that the immobile fraction represents chromatin-bound molecules. To confirm this, we introduced a point mutation (C88G) in the zinc fingers for the RARA-HT DBD that abolishes DNA-binding in vitro (Zhu et al., 1999). This led to loss of the immobile fraction (Figure 5B). Deletion of the unstructured N-terminal domain (NTD) or C-terminal domain (CTD) had a milder effect, suggesting that these domains are not the primary determinants of the dynamic behavior of RARA-HT.
 
 To understand the origins of heterogeneity in the diffusive profile, we performed three variants of bootstrap aggregation (Figure 5—figure supplement 2B). The primary origins of variability for both DPMMs and SAs were cell-to-cell rather than clone-to-clone variability or intrinsic variability due to finite sample sizes.
 
-## Spatiotemporal context of cellular protein dynamics
+### Spatiotemporal context of cellular protein dynamics
 
 In the process of inferring the global distribution over state parameters for an sptPALM dataset, SAs jointly infer individual distributions for each trajectory. Up to this point, we have analyzed the global distribution. However, it is also possible to aggregate the individual distribution for each trajectory as a function of space or time, yielding, for instance, separate dynamic profiles for every spatial location in an experiment. This approach offers a potential route to understand spatiotemporal variation in the dynamics of a protein target.
 
 We explored this aspect of SAs with a U2OS nucleophosmin-HaloTag (NPM1-HT) sptPALM dataset. NPM1-HT exhibits partial nucleolar localization (Figure 6—figure supplement 1B) and distinct dynamic behavior inside and outside nucleoli (Mitrea et al., 2018). The SA identified a broad range of diffusion coefficients for NPM1-HT, with three modes including an effectively immobile population (Figure 6A). Selecting four ranges of diffusion coefficients for analysis (Figure 6A), we visualized the posterior distribution as a function of space, calculating local fractional occupations for each range (Figure 6B, Figure 6—figure supplement 1C). This analysis revealed that some populations (including a slow-moving mobile population at 0.23 μm2 s-1) are enriched in nucleoli, while others (for instance, a fast-moving population at 4 μm2 s-1) are depleted and still others show no preference (Figure 6C). Notably, these preferences are apparent even in the naive occupations for trajectories in each compartment (Figure 6—figure supplement 1D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig6-v2.jpg)
+
+**Figure 6.:** (A) Posterior occupations for a state array evaluated on NPM1-HaloTag trajectories in U2OS nuclei. The ranges labeled i, ii, iii, and iv indicate parts of the dynamic profile isolated for analysis in subsequent panels. (B) Spatial distribution of the posterior probability in (A) for NPM1-HaloTag trajectories in a single U2OS nucleus. The posterior model over the diffusion coefficient was evaluated for each of the origin trajectories, and these points were then used to perform a kernel density estimate (KDE) with a 100 nm Gaussian kernel. For the local normalized occupation, these KDEs were normalized to estimate the relative fractions of molecules in each state. (C) Quantification of the analysis in (B) for 15 nuclei. ‘Nucleoplasmic’ trajectories were defined as trajectories outside nucleoli but inside the nucleus. (D) Temporal variation in the posterior distribution.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70169/elife-70169-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Western blots of heterozygously tagged NPM1-HaloTag-3xFLAG in U2OS nuclei. (B) U2OS NPM1-HaloTag cells stained with 100 nM TMR-HaloTag ligand and imaged on a spinning disk confocal microscope. (C) Additional examples of cells quantified as in Figure 6B. The local occupation estimate is the fraction of particles in each neighborhood estimated to have the corresponding range of diffusion coefficients, as indicated in Figure 6B. To aid visualization, both localization density and local occupations were smoothed via convolution with a 2D isotropic Gaussian kernel of sigma 100 nm. (D) Naive occupation estimate for trajectories in different subcellular compartments. Trajectories were classified as either inside nucleoli, ‘nucleoplasmic’ (outside nucleoli but inside the nucleus), or extranuclear. The regular Brownian motion with localization error (RBME) likelihood function was evaluated on each set of trajectories, aggregated across trajectories and plotted as a function of the diffusion coefficient. Each row in the plot is separate nucleus, and the occupation estimates have been scaled for each compartment by the total number of trajectories.
 
 The NPM1-HT tracking experiments were performed with an acquisition sequence comprising several phases with distinct levels of photoactivation. As a result, the localization density varied temporally in each movie. To understand the effect of localization density on the diffusion coefficient likelihoods, we aggregated the naive state occupations over 100-frame temporal blocks (Figure 6D). These experiments demonstrated that high localization densities led to a deflation in the occupation of slower-moving states, probably due to tracking errors. As a result, only phases with low localization density were used for posterior estimation. This demonstrates how the temporal perspective on the posterior may be useful as a guide for subsequent analysis, including quality control in SPT experiments.
 
@@ -133,7 +257,7 @@ Neither DPMMs nor SAs have any built-in mechanism to distinguish true jumps from
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 Unless otherwise noted, all PCRs were performed with New England Biosciences Phusion High-Fidelity DNA polymerase (M0530S), and Gibson assemblies (Gibson et al., 2009) were performed with New England Biosciences Gibson Assembly Master Mix (E2611S) following the manufacturer’s instructions. Cloning and expression of plasmids was performed in E. coli DH5α using the Inoue protocol (Im et al., 2011). Plasmids used for nucleofections were purified with Zymo midiprep kit (Zymo D4200) and concentrations were quantified by absorption at 260 nm. Cloning primers were synthesized by Integrated DNA Technologies as 25 nmol DNA oligos with standard desalting, and sequences were verified by Sanger sequencing at the UC Berkeley DNA Sequencing Facility. A complete list of the primers used in this article is provided in Supplementary file 1, and a complete list of the plasmids used in this article is provided in Supplementary file 2.
 
@@ -147,17 +271,17 @@ To generate guide RNA/Cas9 expression plasmids for gene editing at the human RAR
 
 In luciferase assays, we used the retinoic acid-responsive firefly luciferase expression vector pGL3-RARE-luciferase (Addgene plasmid #13458; http://n2t.net/addgene:13458; RRID:Addgene_13458), a gift from T. Michael Underhill (Hoffman et al., 2006). Renilla luciferase was expressed from pRL CMV Renilla (Promega E2261).
 
-## Cell lines
+### Cell lines
 
 Human U2OS cells (female, 15 years old, osteosarcoma) obtained from the UC Berkeley Cell Culture Facility were cultured under 5% CO2 at 37°C in DMEM containing 4.5 g/L glucose supplemented with 10% fetal bovine serum and 10 U/mL penicillin-streptomycin. Cells were subpassaged at a ratio of 1:6 every 3–4 days. The stable cell line expressing H2B-HaloTag-SNAPf was described previously (Hansen et al., 2017, McSwiggen et al., 2019). We induced exogenous expression of HaloTag, HaloTag-NLS, and point mutants and domain deletions of RARA-HaloTag by nucleofection of PiggyBac vectors containing the proteins under EF1a promoters. Expression of wildtype RARA-HaloTag and NPM1-HaloTag was induced by endogenous gene editing, as described in the ‘CRISPR/Cas9-mediated gene editing’ section. The U2OS cell line used here was validated by whole-genome sequencing as described in Hansen et al., 2017, and mycoplasma testing was performed by DAPI staining.
 
 For sptPALM experiments, cells were grown on 25 mm circular No. 1.5 H coverglasses (Marienfeld, Germany, High-Precision 0117650) that were first sonicated in ethanol for 10 min, plasma-cleaned, then stored in isopropanol until use. U2OS cells were grown directly on the coverglasses in regular culture medium. The medium was changed after dye labeling and immediately before imaging into phenol red-free medium.
 
-## Nucleofection
+### Nucleofection
 
 For all imaging experiments involving exogenous expression, we used the Lonza Amaxa II Nucleofector System with Cell Line Nucleofector Kit V reagent (Lonza VCA-1003). Briefly, U2OS cells were grown in 10 cm plates (Thermo Fisher) for 2 days prior to nucleofection, trypsinized, spun down at 1200 rpm for 5 min, combined with vector and Kit V reagent according to the manufacturer’s instructions, and nucleofected with program X-001 on an Lonza Amaxa II Nucleofector. After nucleofection, cells were immediately resuspended in regular culture medium at 37°C and plated onto coverslips. In all imaging experiments involving nucleofection, imaging was performed within 24 hr of plating.
 
-## CRISPR/Cas9-mediated gene editing
+### CRISPR/Cas9-mediated gene editing
 
 Endogenous tagging of RARA in U2OS cells was performed with a protocol roughly following Hansen et al., 2017 with some modifications. A complete list of the plasmids used in gene editing is provided in Supplementary file 2, and a list of the guide sequences is provided in Supplementary file 3.
 
@@ -165,29 +289,29 @@ For U2OS cells, we nucleofected cells with plasmid expressing 3xFLAG-SV40NLS-pSp
 
 For NPM1-GDGAGLIN-HaloTag-3xFLAG knock-in cell lines, we used a different strategy relying on nucleofected Streptococcus pyogenes Cas9 sgRNPs and linear dsDNA homology repair donors. The target insert (GDGAGLIN-HaloTag-3xFLAG from the vector PB PGKp-PuroR L30p MCS-GDGAGLIN-HaloTag-3xFLAG) was first amplified with ultramers encoding 120 bp homology arms (prAH867 and prAH868; IDT) using KAPA2G Robust HotStart polymerase (Kapa Biosystems KR0379) for 12 cycles. A small volume of this reaction was then used to seed a PCR reaction using primers prAH869 and prAH870 in Q5 High-Fidelity 2X Master Mix (QIAGEN M0492). Products were purified by RNAClean XP magnetic beads (Beckman-Coulter A63987) and further cleaned by ethanol precipitation, followed by resuspension in a small volume of RNase-free water. For guides, we performed a three-primer PCR using prAH2000 and prAH2001 along with a unique oligo encoding the spacer (either prAH979 or prAH980) to produce a linear dsDNA product encoding the sgRNA preceded by a T7 promoter. We then used T7 RNA polymerase (NEB E2040S) to transcribe sgRNA from this template and purified the sgRNA with RNAClean XP magnetic beads according to the manufacturer’s instructions. To assemble the sgRNP, we incubated 80 pmol sgRNA with 40 pmol purified SpyCas9-NLS (UC Berkeley Macrolab) for 15 min at 37°C in 20 mM HEPES pH 7.5, 150 mM KCl, 10 mM MgCl2, and 5% glycerol. sgRNPs were subsequent kept on ice and combined with donor immediately before nucleofection. For each nucleofection, we used 40 pmol sgRNP and 5 pmol dsDNA donor template suspended in <10 μL with Lonza Amaxa Nucleofector II protocol X-001 in Lonza Kit V reagent. Roughly 1 million cells were used for nucleofection. Sorting for labeled cells, subcloning, and genotyping proceeded as previously described for RARA-GDGAGLIN-HaloTag-3xFLAG.
 
-## Western blots
+### Western blots
 
 Antibodies were as follows (the ratio indicates the dilution factors used for Western blot): human TBP, Abcam Ab51841, 1:2500 (mouse); FLAG, Sigma-Aldrich F3165, 1:2000 (mouse).
 
 For Western blots, cells were scraped from plates in ice-cold PBS then pelleted. Pellets were resuspended in lysis buffer (0.15 M NaCl, 1% NP-40, 50 mM Tris–HCl [pH 8.0], and a cocktail of protease inhibitors [Sigma-Aldrich 11697498001 dissolved in PBS with supplemented PMSF, aprotinin, and benzamidine]), agitated for 30 min at 4°C, then centrifuged for 20 min at 12,000 rpm, 4°C. The supernatant was then mixed with 2× Laemmli (to final 1×), boiled for 5 min, then run on 12.5% SDS-PAGE. After transfer to nitrocellulose, the membrane was blocked with 10% condensed milk in TBST (500 mM NaCl, 10 mM Tris–HCl [pH 7.4], 0.1% Tween-20) for 1 hr at room temperature. Antibodies were suspended in 5% condensed milk in TBST at the dilutions indicated above and incubated rocking at 4°C overnight. After primary hybridization, the membrane was washed three times for 10 min with TBST at room temperature, hybridized with an anti-mouse HRP secondary antibody in 5% condensed milk in TBST for 60 min at room temperature, washed three more times with TBST for 10 min, then visualized with Western Lightning Plus-ECL reagent (PerkinElmer NEL103001) according to the manufacturer’s instructions and imaged on a Bio-Rad ChemiDoc imaging system. Different exposure times were used for each antibody. The raw Western blots images for RARA-HaloTag and NPM1-HaloTag are provided as Figure 5—source data 1 and Figure 6—figure supplement 1—source data 1 , respectively.
 
-## Luciferase assays
+### Luciferase assays
 
 All luciferase assays used pGL3-RARE-luciferase, a reporter containing firefly luciferase driven by an SV40 promoter with three retinoic acid response elements (RAREs). pGL3-RARE-luciferase was a gift from T. Michael Underhill (Addgene plasmid 13458; http://n2t.net/addgene:13458; RRID:Addgene_13458; Hoffman et al., 2006). Luciferase assays were performed on cells cultivated in 6-well plates. Cells were transfected with 100 ng pGL3-RARE-luciferase and 10 ng pRL Renilla (Promega E2261) using Mirus TransIT-2020 Transfection Reagent (Mirus MIR 5404). Transfection was performed 1 day before assaying luciferase expression with the Dual-Luciferase Reporter Assay System (Promega E1910) according to http://n2t.net/addgene:13458 the manufacturer’s instructions. Readout was performed on a GloMax luminometer (Promega).
 
-## Cell dye labeling
+### Cell dye labeling
 
 For sptPALM experiments, cells were labeled with one of two methods, depending on the dye. For non-photoactivatable fluorescent dyes including TMR-HTL (tetramethylrhodamine-HaloTag ligand; Promega G8251), we stained cells with 100 nM dye in regular culture medium for 10 min, then performed three 10 min incubations in dye-free culture medium separated by PBS washes. All PBS and culture medium was incubated at 37°C between medium changes and washes.
 
 For experiments with photoactivatable dyes, which have lower cell permeability and slower wash-in/wash-out kinetics, we labeled cells with 100 nM dye in regular culture medium for 10–20 min, followed by four 30 min incubations in dye-free culture medium at 37°C. Between each incubation, we washed twice with PBS at 37°C. After the final incubation, cells were changed into phenol red-free medium for imaging.
 
-## sptPALM
+### sptPALM
 
 sptPALM experiments were performed with a custom-built Nikon TI microscope equipped with a ×100/NA 1.49 oil-immersion TIRF objective (Nikon apochromat CFI Apo TIRF 100X Oil), an EMCCD camera (Andor iXon Ultra 897), a perfect focus system to account for axial drift, an incubation chamber maintaining a humidified 37°C atmosphere with 5% CO2, and a laser launch with 405 nm (140 mW, OBIS, Coherent), 488 nm, 561 nm, and 633 nm (all 1 W, Genesis Coherent) laser lines. Laser intensities were controlled by an acousto-optic Tunable Filter (AA Opto-Electronic, AOTFnC-VIS-TN) and triggered with the camera TTL exposure output signal. Lasers were directed to the microscope by an optical fiber, reflected using a multi-band dichroic (405 nm/488 nm/561 nm/633 nm quad-band, Semrock) and focused in the back focal plane of the objective. The angle of incident laser was adjusted for highly inclined laminated optical sheet (HiLo) conditions (Tokunaga et al., 2008). Emission light was filtered using single band-pass filters (Semrock 593/40 nm for PAJFX549 and Semrock 676/37 nm for PAJF646). Hardware was controlled with the Nikon NIS-Elements software.
 
 For stroboscopic illumination, the excitation laser (561 nm or 633 nm) was pulsed for 1–2 ms (most commonly 1 ms) at maximum (1 W) power at the beginning of the frame interval, while the photoactivation laser (405 nm) was pulsed during the ~447 μs camera transition time, so that the background contribution from the photoactivation laser is not integrated. For all sptPALM, we used an EMCCD vertical shift speed of 0.9 μs and conversion gain setting 2. On our setup, the pixel size after magnification is 160 nm and the photon-to-grayscale gain is 109. A total of 15,000–30,000 frames with this sequence were collected per nucleus, during which the 405 nm intensity was manually tuned to maintain low density of fluorescent particles per frame.
 
-## Localization and tracking
+### Localization and tracking
 
 To produce trajectories from raw sptPALM movies, we used a custom sptPALM tracking pipeline publicly available on GitHub (https://github.com/alecheckert/quot, swh:1:rev:1adf7a0574c62f38140f1dec2d14555bfc03b9a7, Heckert, 2022b). All localization and tracking for this article was performed with the following settings:
 
@@ -197,17 +321,17 @@ For experiments involving HaloTag or HaloTag-NLS, which have high mobility, we u
 
 All trajectories from real sptPALM experiments used in this article are publicly accessible as a Dryad dataset (https://doi.org/10.6078/D13H6N).
 
-## Spinning disk confocal imaging
+### Spinning disk confocal imaging
 
 Experiments using spinning disk confocal imaging were performed at the UC Berkeley High-Throughput Screening Facility on a Perkin Elmer Opera Phenix equipped with a controller for 37°C and 5% CO2, using a built-in 40x water immersion objective.
 
-## Simulations
+### Simulations
 
 All simulations in this article belong to one of two categories:
 
 Both types of simulation are important. Trajectory simulations allow us to separate the accuracy of the tracking algorithm from the accuracy of the SA/DPMM algorithm in a tightly controlled setting, while optical–dynamical simulations are ‘end-to-end’ tests that also incorporate realistic features such as motion blur, camera noise, and tracking errors.
 
-## Trajectory simulations
+#### Trajectory simulations
 
 All trajectory simulations were performed with a simple publicly available sptPALM simulation tool (strobesim; https://github.com/alecheckert/strobesim, Heckert, 2022e). This tool generates trajectories for different types of motion and simulates the act of observation in a thin focal plane.
 
@@ -217,19 +341,31 @@ For discrete-state trajectory simulations, the number of particles in each state
 
 For trajectory simulations with state transitions, we modeled the particles as two-state Markov chains with identical transition rates between the states. Each state was associated with a constant diffusion coefficient. These Markov chains were simulated on subframes grained at 100 iterations per frame interval. For instance, for simulations with 7.48 ms frame intervals, the underlying Markov chain was simulated on subframes of 74.8 μs. During each subframe, the state of the MC was assumed to be constant and we simulated diffusion according to the Euler–Maruyama scheme with the current diffusion coefficient. The positions of the particle at the frame interval were recorded.
 
-## Optical–dynamical simulations
+#### Optical–dynamical simulations
 
 The simulations in Figure 1—figure supplement 1, Figure 4—figure supplement 5, Figure 4—figure supplement 6, Figure 4—figure supplement 10, Figure 4—figure supplement 11, and Figure 4—figure supplement 12 were produced with a software package (sptPALMsim, https://github.com/alecheckert/sptpalmsim, Heckert, 2022d) that performs both dynamical and optical simulations to incorporate effects such as defocus, camera noise, motion blur, and tracking errors. The dynamic simulations are identical to those described in the previous section. Here, we outline the optical simulations. A more detailed discussion can be found, for instance, in Hanser et al., 2004.
 
-We assume that the observed intensity Ii⁢j on pixel i,j is produced by a linear gain model with read noise and shot noise:(1)Iij=b+gnij+rijnij∼Poisson(Aij)rij∼N(0,σread noise2)
+We assume that the observed intensity $I_{i⁢j}$ on pixel $i,j$ is produced by a linear gain model with read noise and shot noise:
 
-The offset b, gain g, and read noise variance σread noise2 are assumed to be the same for all pixels in the camera with values similar to an Andor iXon 897 EMCCD (b=470, g=109, and σread noise2=32). The function Ai⁢j defines the rate of photon arrivals at pixel i,j and depends on the distribution of fluorescent emitters in the sample.
+$$
+I_{ij}=b+gn_{ij}+r_{ij}n_{ij}∼Poisson(A_{ij})r_{ij}∼N(0,\sigma_{read noise}^{2})
+$$
 
-We assume that the photon arrival rate Ai⁢j is related to the distribution of emitters in the source plane f⁢(x,y,z) via(2)Aij=∬pixeli,jdxdy∫−Δz/2+Δz/2dzf(x,y,z)∗PSF(x,y,z)
+The offset $b$, gain $g$, and read noise variance $\sigma_{read noise}^{2}$ are assumed to be the same for all pixels in the camera with values similar to an Andor iXon 897 EMCCD ($b=470$, $g=109$, and $\sigma_{read noise}^{2}=3^{2}$). The function $A_{i⁢j}$ defines the rate of photon arrivals at pixel $i,j$ and depends on the distribution of fluorescent emitters in the sample.
 
-* denotes convolution. The z-integral runs over the depth of the simulation (in this article, this is always from z=-2 μm to z=+2 μm). PSF⁢(x,y,z) is assumed to be given by the squared magnitude of a complex-valued function PSFA⁢(x,y,z) such that (Hanser et al., 2004):(3)PSFA(x,y,z)=∬pupilP(kx,ky)ei(kxx+kyy)eikz(kx,ky)zdkxdkykz(kx,ky)=(2πnλ)2−(kx2+ky2)
+We assume that the photon arrival rate $A_{i⁢j}$ is related to the distribution of emitters in the source plane $f⁢(x,y,z)$ via
 
-where P⁢(kx,ky) is the complex-valued microscope pupil function and ei⁢kz⁢(kx,ky)⁢z is a ‘defocus kernel,’ accounting for the phase profile of light exiting the pupil plane. The limits of the integral run over the circular microscope aperture ky2+kx2≤(NAλ)2, where λ is the emission wavelength. In all simulations, we use an ‘ideal’ pupil function with phase 0 and amplitude 1 over the microscope aperture.
+$$
+A_{ij}=∬pixeli,jdxdy\int−Δz/2+Δz/2dzf(x,y,z)∗PSF(x,y,z)
+$$
+
+* denotes convolution. The $z$-integral runs over the depth of the simulation (in this article, this is always from $z=-2$ μm to $z=+2$ μm). $PSF⁢(x,y,z)$ is assumed to be given by the squared magnitude of a complex-valued function $PSF_{A}⁢(x,y,z)$ such that (Hanser et al., 2004):
+
+$$
+PSF_{A}(x,y,z)=∬pupilP(k_{x},k_{y})e^{i(k_{x}x+k_{y}y)}e^{ik_{z}(k_{x},k_{y})z}dk_{x}dk_{y}k_{z}(k_{x},k_{y})=\sqrt{(\frac{2\pin}{\lambda})^{2}−(k_{x}^{2}+k_{y}^{2})}
+$$
+
+where $P⁢(k_{x},k_{y})$ is the complex-valued microscope pupil function and $e^{i⁢k_{z}⁢(k_{x},k_{y})⁢z}$ is a ‘defocus kernel,’ accounting for the phase profile of light exiting the pupil plane. The limits of the integral run over the circular microscope aperture $k_{y}^{2}+k_{x}^{2}\leq(\frac{NA}{\lambda})^{2}$, where λ is the emission wavelength. In all simulations, we use an ‘ideal’ pupil function with phase 0 and amplitude 1 over the microscope aperture.
 
 For our purposes, the integral in 3 is replaced with a sum over a grid with finer spatial grain than the camera pixel size.
 
@@ -237,131 +373,223 @@ Altogether, the optical simulations proceeded in the following way:
 
 The product of these simulations are SPT movies that are subsequently tracked (see ‘Localization and tracking’). Except where otherwise indicated, the settings for these simulations were as follows: numerical aperture 1.49, immersion media refractive index 1.515, emission wavelength 670 nm, frame interval 7.48 ms, image pixel size 0.16 μm, excitation pulse width 2 ms, bleach rate 0.2 Hz, read noise variance 32 grayvalues2, offset 470.0 grayvalues, and gain 109.0 grayvalues per photon. The mean number of photons detected per emitter per frame was 150, although the actual number is random due to the randomness of photon emission and detection (Equation 1). The scripts used to generate the simulations are publicly available at the sptPALMsim repo (https://github.com/alecheckert/sptpalmsim). Video 4 shows an example of a movie simulated with these settings.
 
-## State arrays and Dirichlet process mixture models
+### State arrays and Dirichlet process mixture models
 
 This section describes the SA and DPMM used in this article. We begin with a classic Bayesian finite state mixture model, then introduce modifications that lead to SAs and DPMMs. The finite state mixture has been reviewed in detail elsewhere (Marin et al., 2005, McLachlan et al., 2019), so here we keep details to a minimum.
 
-## Finite state mixtures
+### Finite state mixtures
 
-A finite state mixture is a collection of ‘states’ k=1,…,K, each of which is associated with an occupation τk and a vector of state parameters θk. (Where convenient, we let θ=(θ1,…,θK) be the collection of parameters for all states.) Each state generates trajectories X according to some distribution pX⁢(x|θk). The overall generative process for each trajectory is:
+A finite state mixture is a collection of ‘states’ $k=1,…,K$, each of which is associated with an occupation $\tau_{k}$ and a vector of state parameters $\theta_{k}$. (Where convenient, we let $\theta=(\theta_{1},…,\theta_{K})$ be the collection of parameters for all states.) Each state generates trajectories $X$ according to some distribution $p_{X}⁢(x|\theta_{k})$. The overall generative process for each trajectory is:
 
-The probability to generate a particular trajectory X is thenp(X|τ,θ1,...,θK)=∑k=1KτkpX(x|θk)
+The probability to generate a particular trajectory $X$ is then
 
-To represent the origin state for each trajectory, we use a 1-of-K encoding Zi∈{0,1}K so that Zi⁢k=1 if trajectory i originates from state k and Zi⁢k=0 otherwise. For a dataset with N trajectories, we let Z∈{0,1}N×K be the matrix such that the ith row is Zi.
+$$
+p(X|\tau,\theta_{1},...,\theta_{K})=\sumk=1K\tau_{k}p_{X}(x|\theta_{k})
+$$
 
-Finally, we specify priors over τ and θk. The full Bayesian finite state mixture can then be written as (4)τ∼Dirichlet(αK,...,αK)θk∼HZi|τ∼Multinomial(τ,1)Xi|Zik=1,θk∼pX(x|θk)
+To represent the origin state for each trajectory, we use a 1-of-$K$ encoding $Z_{i}\in{0,1}^{K}$ so that $Z_{i⁢k}=1$ if trajectory $i$ originates from state $k$ and $Z_{i⁢k}=0$ otherwise. For a dataset with $N$ trajectories, we let $Z\in{0,1}^{N\timesK}$ be the matrix such that the ith row is $Z_{i}$.
 
-where H is the prior over the parameters θk, usually chosen to be conjugate to pX⁢(x|θk).
+Finally, we specify priors over $\tau$ and $\theta_{k}$. The full Bayesian finite state mixture can then be written as
 
-This corresponds to the first graphical model in Figure 2—figure supplement 1. The objective is to infer the posterior distribution p⁢(Z,τ,θ|F), where F represents some observed set of trajectories.
+$$
+\tau∼Dirichlet(\frac{\alpha}{K},...,\frac{\alpha}{K})\theta_{k}∼HZ_{i}|\tau∼Multinomial(\tau,1)X_{i}|Z_{ik}=1,\theta_{k}∼p_{X}(x|\theta_{k})
+$$
 
-## State arrays
+where $H$ is the prior over the parameters $\theta_{k}$, usually chosen to be conjugate to $p_{X}⁢(x|\theta_{k})$.
+
+This corresponds to the first graphical model in Figure 2—figure supplement 1. The objective is to infer the posterior distribution $p⁢(Z,\tau,\theta|F)$, where $F$ represents some observed set of trajectories.
+
+### State arrays
 
 Three common challenges with the finite state mixture 4 are:
 
-SAs are a special case of finite mixture models designed in response to these issues. Rather than equating K with the true number of states, SAs instead choose a large, fixed value of K and constant values for each θk. A Bayesian routine is then used to drive the occupation of most states to zero, leaving minimal models sufficient to explain the observations. (The ability of Bayesian inference to identify sparse explanatory models in the presence of more complex alternatives is the same property that drives automatic relevance determination [ARD] in machine learning with Bayesian models.)
+SAs are a special case of finite mixture models designed in response to these issues. Rather than equating $K$ with the true number of states, SAs instead choose a large, fixed value of $K$ and constant values for each $\theta_{k}$. A Bayesian routine is then used to drive the occupation of most states to zero, leaving minimal models sufficient to explain the observations. (The ability of Bayesian inference to identify sparse explanatory models in the presence of more complex alternatives is the same property that drives automatic relevance determination [ARD] in machine learning with Bayesian models.)
 
-Because the state parameters are constant, the only parameters left to infer are Z and τ. Together, this simplified model is(5)τ∼Dirichlet(αK,...,αK)Zi | τ∼Multinomial(τ,1)Xi | Zik=1∼pX(x|θk)
+Because the state parameters are constant, the only parameters left to infer are $Z$ and $\tau$. Together, this simplified model is
 
-This corresponds to the third graphical model shown in Figure 2A. Notice that since each Xi and θk are constant, pX⁢(Xi|θk) is also constant and only needs to be evaluated once during inference.
+$$
+\tau∼Dirichlet(\frac{\alpha}{K},...,\frac{\alpha}{K})Z_{i} | \tau∼Multinomial(\tau,1)X_{i} | Z_{ik}=1∼p_{X}(x|\theta_{k})
+$$
 
-To infer the posterior distribution p⁢(Z,τ|F), we take a variational approach, constructing an approximation q⁢(Z,τ)≈p⁢(Z,τ|F) such that(6)q(Z,τ)=q(Z)q(τ)q(Z,τ)=argmaxZ,τL[q]
+This corresponds to the third graphical model shown in Figure 2A. Notice that since each $X_{i}$ and $\theta_{k}$ are constant, $p_{X}⁢(X_{i}|\theta_{k})$ is also constant and only needs to be evaluated once during inference.
 
-where L⁢[q] is the variational lower bound:(7)L[q]=∑Z∫q(Z,τ)log⁡[p(X,Z,τ)q(Z,τ)]dτ
+To infer the posterior distribution $p⁢(Z,\tau|F)$, we take a variational approach, constructing an approximation $q⁢(Z,\tau)≈p⁢(Z,\tau|F)$ such that
 
-Motivation for the variational lower bound is discussed in detail elsewhere (Bishop, 2006). Here, we only remark that maximization of L[q] minimizes the Kullback–Leibler divergence between the approximation and the true posterior. The factorability criterion in 6 enables an expectation-maximization routine (Dempster et al., 1977) by iteratively evaluating.(8)log⁡q(Z)=Eτ∼q(τ)[log⁡p(X,Z,τ)]+constantlog⁡q(τ)=EZ∼q(Z)[log⁡p(X,Z,τ)]+constant
+$$
+q(Z,\tau)=q(Z)q(\tau)q(Z,\tau)=argmaxZ,\tauL[q]
+$$
 
-The constants are chosen so that each factor, q⁢(Z) or q⁢(τ), is normalized. Combining Equations 8 for model 5 yields the solution(9)q(Z)=∏i=1N∏k=1KrikZikq(τ)=Dirichlet(n1,...,nK)rik=Aikeψ(nk)∑j=1KAijeψ(nj)nk=αK+∑k=1KLirik
+where $L⁢[q]$ is the variational lower bound:
 
-where Li is the number of jumps in trajectory i and ψ⁢(n) is the digamma function. For brevity here, the derivation of Equation 9 is placed in its own section below.
+$$
+L[q]=\sumZ\intq(Z,\tau)log⁡[\frac{p(X,Z,\tau)}{q(Z,\tau)}]d\tau
+$$
 
-q⁢(Z,τ) is parameterized by n and r. These can be inferred with a simple EM algorithm:
+Motivation for the variational lower bound is discussed in detail elsewhere (Bishop, 2006). Here, we only remark that maximization of $L[q]$ minimizes the Kullback–Leibler divergence between the approximation and the true posterior. The factorability criterion in 6 enables an expectation-maximization routine (Dempster et al., 1977) by iteratively evaluating.
 
-Throughout this article, we always report occupations for the SA model as the mean of q⁢(τ) according to Equation 10, twith localization error marginalized out and the appropriate defocalization correction applied.
+$$
+log⁡q(Z)=E_{\tau∼q(\tau)}[log⁡p(X,Z,\tau)]+constantlog⁡q(\tau)=E_{Z∼q(Z)}[log⁡p(X,Z,\tau)]+constant
+$$
 
-## Naive state occupations
+The constants are chosen so that each factor, $q⁢(Z)$ or $q⁢(\tau)$, is normalized. Combining Equations 8 for model 5 yields the solution
+
+$$
+q(Z)=\prodi=1N\prodk=1Kr_{ik}^{Z_{ik}}q(\tau)=Dirichlet(n_{1},...,n_{K})r_{ik}=\frac{A_{ik}e^{ψ(n_{k})}}{\sumj=1KA_{ij}e^{ψ(n_{j})}}n_{k}=\frac{\alpha}{K}+\sumk=1KL_{i}r_{ik}
+$$
+
+where $L_{i}$ is the number of jumps in trajectory $i$ and $ψ⁢(n)$ is the digamma function. For brevity here, the derivation of Equation 9 is placed in its own section below.
+
+$q⁢(Z,\tau)$ is parameterized by $n$ and $r$. These can be inferred with a simple EM algorithm:
+
+Throughout this article, we always report occupations for the SA model as the mean of $q⁢(\tau)$ according to Equation 10, twith localization error marginalized out and the appropriate defocalization correction applied.
+
+### Naive state occupations
 
 Inference of the SA posterior works optimally with thousands to tens of thousands of trajectories. We also found it useful to have a cheap, dirty estimate for state occupations that can be evaluated on a small number of trajectories to visualize nuclei-to-nuclei variability (for instance, in Figure 5A).
 
-For these purposes, we define the ‘naive occupation estimate’ τnaive such that(11)τnaive,k=∑i=1NLirik(0)∑j=1K∑i=1NLirij(0)rik(0)=pX(Xi|θk)∑j=1KpX(Xi|θj)
+For these purposes, we define the ‘naive occupation estimate’ $\tau_{naive}$ such that
 
-Notice that this is just the posterior occupations based on the initial value for r in the algorithm for SA inference. We use the same postprocessing steps for τnaive as for SAs, including marginalizing out localization error and correcting for defocalization.
+$$
+\tau_{naive,k}=\frac{\sumi=1NL_{i}r_{ik}^{(0)}}{\sumj=1K\sumi=1NL_{i}r_{ij}^{(0)}}r_{ik}^{(0)}=\frac{p_{X}(X_{i}|\theta_{k})}{\sumj=1Kp_{X}(X_{i}|\theta_{j})}
+$$
 
-## State arrays for regular Brownian motion
+Notice that this is just the posterior occupations based on the initial value for $r$ in the algorithm for SA inference. We use the same postprocessing steps for $\tau_{naive}$ as for SAs, including marginalizing out localization error and correcting for defocalization.
 
-In the above section, we have left pX⁢(x|θk) unspecified as it depends on the type of motion being considered. This section states the form of pX⁢(x|θk) for RBME, the type of motion considered in this article.
+### State arrays for regular Brownian motion
 
-Suppose that trajectory i is constructed by measuring the position of a Brownian particle over sequential frame intervals of duration Δ⁢t, and that each measured position has some error associated with it. We assume that this error is normally distributed with mean zero and variance σloc2.
+In the above section, we have left $p_{X}⁢(x|\theta_{k})$ unspecified as it depends on the type of motion being considered. This section states the form of $p_{X}⁢(x|\theta_{k})$ for RBME, the type of motion considered in this article.
 
-We refer to the change in the particle’s position over each frame interval as a ‘jump.’ If there are Li total jumps, let x,y∈RLi be the displacements of these jumps along the x and y axes, respectively. Then, the probability density over x and y is(12)pX(x,y|D,σloc2)=exp⁡(−12[xTΓ−1x+yTΓ−1y])2πdet(Γ)
+Suppose that trajectory $i$ is constructed by measuring the position of a Brownian particle over sequential frame intervals of duration $Δ⁢t$, and that each measured position has some error associated with it. We assume that this error is normally distributed with mean zero and variance $\sigma_{loc}^{2}$.
 
-where Γ∈RLi×Li is the covariance matrix defined byΓi⁢j={2⁢(D⁢Δ⁢t+σloc2)  if ⁢i=j-σloc2  if ⁢|i-j|=10  otherwise
+We refer to the change in the particle’s position over each frame interval as a ‘jump.’ If there are $L_{i}$ total jumps, let $x,y\inR^{L_{i}}$ be the displacements of these jumps along the $x$ and $y$ axes, respectively. Then, the probability density over $x$ and $y$ is
 
-where D is the diffusion coefficient and σloc2 is the localization error (Michalet and Berglund, 2012). Due to the contribution of the localization error to the off-diagonal terms of the covariance matrix, the jumps of an RBME are not a Markov process except when σloc2=0.
+$$
+p_{X}(x,y|D,\sigma_{loc}^{2})=\frac{exp⁡(−\frac{1}{2}[x^{T}Γ^{−1}x+y^{T}Γ^{−1}y])}{2\pidet(Γ)}
+$$
 
-The SA for RBME uses a 2D grid of diffusion coefficients and localization errors. In this grid, the diffusion coefficients D are log-spaced between 10-2 and 102 μm2 s-1, while the localization errors σloc are linearly spaced between 0 and 0.06 μm.
+where $Γ\inR^{L_{i}\timesL_{i}}$ is the covariance matrix defined by
 
-## State arrays for fractional Brownian motion
+$$
+Γ_{i⁢j}={2⁢(D⁢Δ⁢t+\sigma_{loc}^{2})  if ⁢i=j-\sigma_{loc}^{2}  if ⁢|i-j|=10  otherwise
+$$
+
+where $D$ is the diffusion coefficient and $\sigma_{loc}^{2}$ is the localization error (Michalet and Berglund, 2012). Due to the contribution of the localization error to the off-diagonal terms of the covariance matrix, the jumps of an RBME are not a Markov process except when $\sigma_{loc}^{2}=0$.
+
+The SA for RBME uses a 2D grid of diffusion coefficients and localization errors. In this grid, the diffusion coefficients $D$ are log-spaced between 10-2 and 102 μm2 s-1, while the localization errors $\sigma_{loc}$ are linearly spaced between 0 and 0.06 μm.
+
+### State arrays for fractional Brownian motion
 
 In Figure 4—figure supplement 11 and Figure 4—figure supplement 12, we consider a generalization of RBME that we refer to as fractional Brownian motion with localization error (FBME). This is a simple modification of Mandelbrot and Van Ness’s FBM (Mandelbrot and Van Ness, 1968) that incorporates localization error.
 
-We define 1D FBME as a mean-zero Gaussian process Xt with the covariance functionCov⁢(Xt,Xs)=S⁢(|t|2⁢H+|s|2⁢H-|t-s|2⁢H)+It=s⁢σloc2
+We define 1D FBME as a mean-zero Gaussian process $X_{t}$ with the covariance function
 
-where S is the scaling coefficient, H is the Hurst parameter (0<H<1), σloc2 is the variance of the localization error, and It=s is the indicator function (1 if t=s and 0 otherwise). Because we always measure the position at regular frame intervals of duration Δ⁢t, we let t=i⁢Δ⁢t and s=j⁢Δ⁢t so that this can be written asCov⁢(Xi⁢Δ⁢t,Xj⁢Δ⁢t)=S⁢Δ⁢t2⁢H⁢(|i|2⁢H+|j|2⁢H-|i-j|2⁢H)+Ii=j⁢σloc2
+$$
+Cov⁢(X_{t},X_{s})=S⁢(|t|^{2⁢H}+|s|^{2⁢H}-|t-s|^{2⁢H})+I_{t=s}⁢\sigma_{loc}^{2}
+$$
 
-The corresponding increment process X~i=Xi⁢Δ⁢t-X(i-1)⁢Δ⁢t is a mean-zero Gaussian process with the covariance function(13)Cov(X~i,X~j)=SΔt2H(|i−j+1|2H+|i−j−1|2H−2|i−j|2H)+(2σloc2)Ii=j−σloc2I|i−j|=1
+where $S$ is the scaling coefficient, $H$ is the Hurst parameter ($0<H<1$), $\sigma_{loc}^{2}$ is the variance of the localization error, and $I_{t=s}$ is the indicator function (1 if $t=s$ and 0 otherwise). Because we always measure the position at regular frame intervals of duration $Δ⁢t$, we let $t=i⁢Δ⁢t$ and $s=j⁢Δ⁢t$ so that this can be written as
+
+$$
+Cov⁢(X_{i⁢Δ⁢t},X_{j⁢Δ⁢t})=S⁢Δ⁢t^{2⁢H}⁢(|i|^{2⁢H}+|j|^{2⁢H}-|i-j|^{2⁢H})+I_{i=j}⁢\sigma_{loc}^{2}
+$$
+
+The corresponding increment process $X~_{i}=X_{i⁢Δ⁢t}-X_{(i-1)⁢Δ⁢t}$ is a mean-zero Gaussian process with the covariance function
+
+$$
+Cov(X~_{i},X~_{j})=SΔt^{2H}(|i−j+1|^{2H}+|i−j−1|^{2H}−2|i−j|^{2H})+(2\sigma_{loc}^{2})I_{i=j}−\sigma_{loc}^{2}I_{|i−j|=1}
+$$
 
 2D and 3D FBMEs are constructed with independent 1D FBMEs along each spatial axis.
 
-In Equation 13, the scaling coefficient has units of μm2s−2H. As a result, its magnitude is highly dependent on H. Because we often want to parameterize the magnitude of the particle’s jumps separately from the covariance between jumps, in this article we use a ‘modified’ scaling parameter S¯ defined by(14)S¯=S⁢Δ⁢t2⁢H-1
+In Equation 13, the scaling coefficient has units of $\mum^{2}s^{−2H}$. As a result, its magnitude is highly dependent on $H$. Because we often want to parameterize the magnitude of the particle’s jumps separately from the covariance between jumps, in this article we use a ‘modified’ scaling parameter $S¯$ defined by
 
-As a result, the jump variance is Var⁢(X~i)=2⁢S¯⁢Δ⁢t, regardless of the Hurst parameter. While S¯ is much easier to work with for one dataset, since it is dependent on Δ⁢t it must not be compared across datasets with different frame intervals and should first be converted to S with Equation 14.
+$$
+S¯=S⁢Δ⁢t^{2⁢H-1}
+$$
 
-## Derivation of Equation 9
+As a result, the jump variance is $Var⁢(X~_{i})=2⁢S¯⁢Δ⁢t$, regardless of the Hurst parameter. While $S¯$ is much easier to work with for one dataset, since it is dependent on $Δ⁢t$ it must not be compared across datasets with different frame intervals and should first be converted to $S$ with Equation 14.
+
+### Derivation of Equation 9
 
 Here, we derive the SA posterior (Equation 9) by substituting model 5 into Equation 8 and imposing some additional physical constraints.
 
-First, let Ai⁢k=pX⁢(Xi|θk). Then factor log⁡p⁢(F,Z,τ) as(15)log⁡p(X,Z,τ)=log⁡p(X|Z)+log⁡p(Z|τ)+log⁡p(τ)=∑k=1K∑i=1NZiklog⁡Aik+∑k=1K∑i=1NZiklog⁡τk+∑k=1K(α−1)log⁡τk+constant
+First, let $A_{i⁢k}=p_{X}⁢(X_{i}|\theta_{k})$. Then factor $log⁡p⁢(F,Z,\tau)$ as
 
-where the constant accounts for normalization factors. Plugging this into the second equation in Equation 8, we havelog⁡q⁢(τ)=∑k=1K(αK-1+∑i=1NEZ∼q⁢(Z)⁢[Zi⁢k])⁢log⁡τk+constant
+$$
+log⁡p(X,Z,\tau)=log⁡p(X|Z)+log⁡p(Z|\tau)+log⁡p(\tau)=\sumk=1K\sumi=1NZ_{ik}log⁡A_{ik}+\sumk=1K\sumi=1NZ_{ik}log⁡\tau_{k}+\sumk=1K(\alpha−1)log⁡\tau_{k}+constant
+$$
 
-We have collected terms that do not depend on τ into the constant. In this article, we choose to weight the contribution of each trajectory to log⁡q⁢(τ) by the number of jumps in the trajectory. This is equivalent to treating jumps (rather than trajectories) as individual observations and is more robust to issues arising from the shallow observation depth of most sptPALM setups. It results in the modified equationlog⁡q⁢(τ)=∑k=1K(αK-1+∑i=1NLi⁢EZ∼q⁢(Z)⁢[Zi⁢k])⁢log⁡τk+constant
+where the constant accounts for normalization factors. Plugging this into the second equation in Equation 8, we have
 
-where Li is the number of jumps in trajectory i. We recognize this as a log Dirichlet distribution, so that(16)q(τ)=Dirichlet(n1,...,nK)nk=αK+∑i=1NLiE[Zik]
+$$
+log⁡q⁢(\tau)=\sumk=1K(\frac{\alpha}{K}-1+\sumi=1NE_{Z∼q⁢(Z)}⁢[Z_{i⁢k}])⁢log⁡\tau_{k}+constant
+$$
 
-Next, we substitute Equation 15 into the first equation in Equation 8, givinglog⁡q⁢(Z)=∑k=1K∑i=1N(log⁡Ai⁢k+Eτ∼q⁢(τ)⁢[log⁡τk])⁢Zi⁢k
+We have collected terms that do not depend on $\tau$ into the constant. In this article, we choose to weight the contribution of each trajectory to $log⁡q⁢(\tau)$ by the number of jumps in the trajectory. This is equivalent to treating jumps (rather than trajectories) as individual observations and is more robust to issues arising from the shallow observation depth of most sptPALM setups. It results in the modified equation
 
-Since q⁢(τ) is the Dirichlet distribution given by Equation 16,Eτ∼q⁢(τ)⁢[log⁡τk]=ψ⁢(nk)-ψ⁢(∑j=1Knj)
+$$
+log⁡q⁢(\tau)=\sumk=1K(\frac{\alpha}{K}-1+\sumi=1NL_{i}⁢E_{Z∼q⁢(Z)}⁢[Z_{i⁢k}])⁢log⁡\tau_{k}+constant
+$$
 
-where ψ⁢(x) is the digamma function. Normalizing over the states for each trajectory i, we have(17)q(Z)=∏i=1N∏k=1KrikZikrik=Aikeψ(nk)∑j=1KAijeψ(nj)
+where $L_{i}$ is the number of jumps in trajectory $i$. We recognize this as a log Dirichlet distribution, so that
+
+$$
+q(\tau)=Dirichlet(n_{1},...,n_{K})n_{k}=\frac{\alpha}{K}+\sumi=1NL_{i}E[Z_{ik}]
+$$
+
+Next, we substitute Equation 15 into the first equation in Equation 8, giving
+
+$$
+log⁡q⁢(Z)=\sumk=1K\sumi=1N(log⁡A_{i⁢k}+E_{\tau∼q⁢(\tau)}⁢[log⁡\tau_{k}])⁢Z_{i⁢k}
+$$
+
+Since $q⁢(\tau)$ is the Dirichlet distribution given by Equation 16,
+
+$$
+E_{\tau∼q⁢(\tau)}⁢[log⁡\tau_{k}]=ψ⁢(n_{k})-ψ⁢(\sumj=1Kn_{j})
+$$
+
+where $ψ⁢(x)$ is the digamma function. Normalizing over the states for each trajectory $i$, we have
+
+$$
+q(Z)=\prodi=1N\prodk=1Kr_{ik}^{Z_{ik}}r_{ik}=\frac{A_{ik}e^{ψ(n_{k})}}{\sumj=1KA_{ij}e^{ψ(n_{j})}}
+$$
 
 Together, Equations 16 and 17 constitute the result in Equation 9.
 
-## Dirichlet process mixture model
+### Dirichlet process mixture model
 
-As mentioned above, a fundamental challenge with the finite state mixture (Equation 4) is determining the number of states. SAs deal with this issue by selecting a large, finite value for K and relying on an inference routine that selects sparse subsets of states from a K-dimensional initial model.
+As mentioned above, a fundamental challenge with the finite state mixture (Equation 4) is determining the number of states. SAs deal with this issue by selecting a large, finite value for $K$ and relying on an inference routine that selects sparse subsets of states from a $K$-dimensional initial model.
 
-DPMMs are more extreme, taking the limit K→∞ (Ferguson, 1973). In this limit, the discrete vector of state occupations is replaced by a continuous distribution over the entire space of state parameters. The generative process for each trajectory is,
+DPMMs are more extreme, taking the limit $K→∞$ (Ferguson, 1973). In this limit, the discrete vector of state occupations is replaced by a continuous distribution over the entire space of state parameters. The generative process for each trajectory is,
 
-This process is formalized by replacing the Dirichlet distribution in Equation 4 with the Dirichlet process DP⁢(α,H), its infinite-dimensional analog. Here, α has the same function as in the finite mixture (defining the relative strength of the prior) and H is the ‘base distribution’ over state parameters. The full DPMM is then(18)G∼DP(α,H)θi | G∼GXi∼pX(x|θi)
+This process is formalized by replacing the Dirichlet distribution in Equation 4 with the Dirichlet process $DP⁢(\alpha,H)$, its infinite-dimensional analog. Here, α has the same function as in the finite mixture (defining the relative strength of the prior) and $H$ is the ‘base distribution’ over state parameters. The full DPMM is then
 
-This corresponds to the second graphical model in Figure 2A. Each draw G is a discrete probability distribution over part of the parameter space (Blackwell, 1973). This formalism is discussed in detail in Teh, 2010 or Neal, 1992. Here, we only remark that recovering the posterior p⁢(θ|F) requires marginalizing over G, yielding a continuous distribution over the parameter space.
+$$
+G∼DP(\alpha,H)\theta_{i} | G∼GX_{i}∼p_{X}(x|\theta_{i})
+$$
 
-To estimate the posterior distribution p⁢(θ|F), we take the Gibbs sampling approach introduced by Neal (Algorithm 8 in Neal, 2000). This involves sampling each θi while hold the other θj≠i constant, yielding samples from the posterior distribution (Geman and Geman, 1984). To counter autocorrelation in the samples, Neal also endowed the sampler with additional Metropolis–Hastings nudges to the candidate state parameters between rounds of Gibbs sampling. For these nudges, we use a Gaussian proposal distribution.
+This corresponds to the second graphical model in Figure 2A. Each draw $G$ is a discrete probability distribution over part of the parameter space (Blackwell, 1973). This formalism is discussed in detail in Teh, 2010 or Neal, 1992. Here, we only remark that recovering the posterior $p⁢(\theta|F)$ requires marginalizing over $G$, yielding a continuous distribution over the parameter space.
 
-In the case of RBME, the state parameters are θ=(D,σloc2). Even with Neal’s sampler, a large number of samples are required to estimate the posterior over this 2D space, potentially requiring hours of computational time per dataset.
+To estimate the posterior distribution $p⁢(\theta|F)$, we take the Gibbs sampling approach introduced by Neal (Algorithm 8 in Neal, 2000). This involves sampling each $\theta_{i}$ while hold the other $\theta_{j\neqi}$ constant, yielding samples from the posterior distribution (Geman and Geman, 1984). To counter autocorrelation in the samples, Neal also endowed the sampler with additional Metropolis–Hastings nudges to the candidate state parameters between rounds of Gibbs sampling. For these nudges, we use a Gaussian proposal distribution.
 
-To make the problem more tractable, we replace this 2D space with a 1D approximation by neglecting the off-diagonal terms in the covariance matrix for RBME (Equation 12). With this approximation, Equation 12 can be rewritten as the log gamma density as (19)log⁡pX⁢(Xi|ϕ)∝-Si⁢e-ϕ-Li⁢ϕ
+In the case of RBME, the state parameters are $\theta=(D,\sigma_{loc}^{2})$. Even with Neal’s sampler, a large number of samples are required to estimate the posterior over this 2D space, potentially requiring hours of computational time per dataset.
 
-where ϕ=log⁡[4⁢(D⁢Δ⁢t+σloc2)], Si is the sum of squared 2D jumps in trajectory i, and Li is the number of jumps. Notice that we cannot distinguish the contributions of D and σloc2 to ϕ without measuring σloc2 by some other method, such as averaging the negative sequential jump covariance across all trajectories in the dataset. This is the price we pay for a tractable DPMM and is the major disadvantage of this model (see, for instance, Figure 3A).
+To make the problem more tractable, we replace this 2D space with a 1D approximation by neglecting the off-diagonal terms in the covariance matrix for RBME (Equation 12). With this approximation, Equation 12 can be rewritten as the log gamma density as
+
+$$
+log⁡p_{X}⁢(X_{i}|ϕ)∝-S_{i}⁢e^{-ϕ}-L_{i}⁢ϕ
+$$
+
+where $ϕ=log⁡[4⁢(D⁢Δ⁢t+\sigma_{loc}^{2})]$, $S_{i}$ is the sum of squared 2D jumps in trajectory $i$, and $L_{i}$ is the number of jumps. Notice that we cannot distinguish the contributions of $D$ and $\sigma_{loc}^{2}$ to $ϕ$ without measuring $\sigma_{loc}^{2}$ by some other method, such as averaging the negative sequential jump covariance across all trajectories in the dataset. This is the price we pay for a tractable DPMM and is the major disadvantage of this model (see, for instance, Figure 3A).
 
 The complete Gibbs sampling routine for our DPMM is the following, which is essentially a modified version of Algorithm 8 from Neal, 2000:
 
-In this algorithm, Φ⁢(x) is the unit Gaussian CDF and its contribution to r is required to make an unbiased proposal distribution for the Metropolis–Hastings updates given that ϕ is confined to the range [ϕmin,ϕmax]. IZi=k is the indicator function and is 1 if Zi=k and 0 otherwise.
+In this algorithm, $Φ⁢(x)$ is the unit Gaussian CDF and its contribution to $r$ is required to make an unbiased proposal distribution for the Metropolis–Hastings updates given that $ϕ$ is confined to the range $[ϕ_{min},ϕ_{max}]$. $I_{Z_{i}=k}$ is the indicator function and is 1 if $Z_{i}=k$ and 0 otherwise.
 
-While the gamma approximation 19 is what makes DPMMs computationally scalable, it also means that in order to disambiguate the contributions of diffusion and localization error to ϕ we need to measure localization error by a different method. This is particularly relevant when accounting for defocalization, which relies on knowledge of D independent of σloc2. In this article, we always use the mean negative covariance between sequential jumps to estimate localization error prior to launching the Gibbs sampler above. However, this means that the DPMM is only as good as our estimate of σloc2 – and as demonstrated in Figure 3 and Figure 3—figure supplement 1, our estimate of σloc2 can be quite noisy with small numbers of trajectories and starts to fail completely when localization error varies a lot between states. SAs, although they require discretizing the parameter space, handle the problem of localization error in a more graceful manner than DPMMs.
+While the gamma approximation 19 is what makes DPMMs computationally scalable, it also means that in order to disambiguate the contributions of diffusion and localization error to $ϕ$ we need to measure localization error by a different method. This is particularly relevant when accounting for defocalization, which relies on knowledge of $D$ independent of $\sigma_{loc}^{2}$. In this article, we always use the mean negative covariance between sequential jumps to estimate localization error prior to launching the Gibbs sampler above. However, this means that the DPMM is only as good as our estimate of $\sigma_{loc}^{2}$ – and as demonstrated in Figure 3 and Figure 3—figure supplement 1, our estimate of $\sigma_{loc}^{2}$ can be quite noisy with small numbers of trajectories and starts to fail completely when localization error varies a lot between states. SAs, although they require discretizing the parameter space, handle the problem of localization error in a more graceful manner than DPMMs.
 
-## Accounting for defocalization
+### Accounting for defocalization
 
 We use ‘defocalization’ to refer to the axial movement of fluorescent emitters out of the microscope’s focus during an sptPALM acquisition. Because fluorescent emitters move quickly, defocalization is rapid and often limits trajectory length to a few frames. Due to defocalization, the probability to observe a jump from a fast-moving particle is less than that of a slow-moving particle because the jumps of a fast-moving particle are more likely to land outside the microscope’s focus.
 
@@ -369,25 +597,53 @@ Defocalization was considered as an experimental avenue to measure diffusion by 
 
 Here, we provide a simpler alternative that is not based on Monte Carlo simulations, enables nonuniform probabilities of detection in the axial detection, and extends to a broader class of diffusion processes than regular Brownian motion. Although the framework can be extended to tracking with gaps, here we consider the case without gaps in tracking (all jumps are strictly between sequential frames).
 
-Let f⁢(z,t=0) be the initial profile of particles in the axial direction of the microscope, and let g⁢(z,Δ⁢t) be the Green’s function for the diffusion process at this frame interval. For regular Brownian motion, g⁢(z,Δ⁢t)=e-z2/4⁢D⁢Δ⁢t/4⁢π⁢D⁢Δ⁢t. Then the axial probability density for the particle after one frame interval can be obtained by convolving its initial profile with the Green’s function: axial profile after 1 frame interval=f⁢(z,0)∗g⁢(z,Δ⁢t)
+Let $f⁢(z,t=0)$ be the initial profile of particles in the axial direction of the microscope, and let $g⁢(z,Δ⁢t)$ be the Green’s function for the diffusion process at this frame interval. For regular Brownian motion, $g⁢(z,Δ⁢t)=e^{-z^{2}/4⁢D⁢Δ⁢t}/\sqrt{4⁢\pi⁢D⁢Δ⁢t}$. Then the axial probability density for the particle after one frame interval can be obtained by convolving its initial profile with the Green’s function:
 
-To account for defocalization, we multiply this density with an appropriate transmission function. For example, if our focal volume is a slab with depth Δ⁢z, infinite XY extent, and perfect recall at any point inside the slab (i.e., all particles inside the slab are detected and no particles outside are detected), then our transmission function T isT(z)={1if z∈[−Δz2,Δz2]0otherwise
+$$
+axial profile after 1 frame interval=f⁢(z,0)∗g⁢(z,Δ⁢t)
+$$
 
-(This is the transmission function considered by Mazza et al., 2012 and Hansen et al., 2018.) The resulting axial profile isf⁢(z,Δ⁢t)=T⁢(z)⁢[f⁢(z,0)∗g⁢(z,Δ⁢t)]
+To account for defocalization, we multiply this density with an appropriate transmission function. For example, if our focal volume is a slab with depth $Δ⁢z$, infinite XY extent, and perfect recall at any point inside the slab (i.e., all particles inside the slab are detected and no particles outside are detected), then our transmission function $T$ is
 
-To calculate the axial profile after n frame intervals, we repeat this process iteratively:f⁢(z,n⁢Δ⁢t)=Diffuse(n)⁢[f⁢(z,0)]
+$$
+T(z)={1if z\in[−\frac{Δz}{2},\frac{Δz}{2}]0otherwise
+$$
 
-where Diffuse(n) denotes n sequential applications of the functionDiffuse⁢[f⁢(z)]=T⁢(z)⁢[f⁢(z)∗g⁢(z,Δ⁢t)]
+(This is the transmission function considered by Mazza et al., 2012 and Hansen et al., 2018.) The resulting axial profile is
 
-This scheme is illustrated in Figure 3—figure supplement 2A. The fraction of particles remaining in focus after n frame intervals can be found by integrating this density:fraction defocalized after n frames=∫−∞+∞Diffuse(n)[f(z,0)]dz
+$$
+f⁢(z,Δ⁢t)=T⁢(z)⁢[f⁢(z,0)∗g⁢(z,Δ⁢t)]
+$$
 
-In the SA and DPMM algorithms, we use this method to account for defocalization in the following way. Suppose that τk is the estimated occupation and Dk is the estimated diffusion coefficient for state k. Then, we define the corrected state occupations τ′ such that(20)τk′=τk/ηk∑j=1kτj/ηjηk=∫−∞+∞Diffuse(1)[f(z′,0)](z)dz
+To calculate the axial profile after $n$ frame intervals, we repeat this process iteratively:
 
-where ηk is the probability for a Brownian motion to remain in focus after one frame interval and Δ⁢z is the focal depth. While defocalization can be incorporated explicitly into the models for SAs or DPMMs, in practice we find it makes little difference if it used as a final postprocessing step after inferring the posterior mean occupations.
+$$
+f⁢(z,n⁢Δ⁢t)=Diffuse^{(n)}⁢[f⁢(z,0)]
+$$
 
-To determine the focal depth Δ⁢z, we used the method described in Hansen et al., 2017.
+where $Diffuse^{(n)}$ denotes $n$ sequential applications of the function
 
-## Method availability
+$$
+Diffuse⁢[f⁢(z)]=T⁢(z)⁢[f⁢(z)∗g⁢(z,Δ⁢t)]
+$$
+
+This scheme is illustrated in Figure 3—figure supplement 2A. The fraction of particles remaining in focus after $n$ frame intervals can be found by integrating this density:
+
+$$
+fraction defocalized after n frames=\int−∞+∞Diffuse^{(n)}[f(z,0)]dz
+$$
+
+In the SA and DPMM algorithms, we use this method to account for defocalization in the following way. Suppose that $\tau_{k}$ is the estimated occupation and $D_{k}$ is the estimated diffusion coefficient for state $k$. Then, we define the corrected state occupations $\tau^{′}$ such that
+
+$$
+\tau_{k}^{′}=\frac{\tau_{k}/η_{k}}{\sumj=1k\tau_{j}/η_{j}}η_{k}=\int_{−∞}^{+∞}Diffuse^{(1)}[f(z^{′},0)](z)dz
+$$
+
+where $η_{k}$ is the probability for a Brownian motion to remain in focus after one frame interval and $Δ⁢z$ is the focal depth. While defocalization can be incorporated explicitly into the models for SAs or DPMMs, in practice we find it makes little difference if it used as a final postprocessing step after inferring the posterior mean occupations.
+
+To determine the focal depth $Δ⁢z$, we used the method described in Hansen et al., 2017.
+
+### Method availability
 
 We have implemented SAs as a simple tool (https://github.com/alecheckert/saspt, Heckert, 2022c), available on the Python Package Index (PyPI) as https://pypi.org/project/saspt/. Documentation is also available at https://saspt.readthedocs.io/en/latest/.
 

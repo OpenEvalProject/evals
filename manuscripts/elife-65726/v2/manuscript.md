@@ -31,19 +31,344 @@ To better understand the performance characteristics and trade-offs involved in 
 
 ## Results
 
-## Clinical evaluation
+### Clinical evaluation
 
 The evaluation enrolled 785 symptomatic patients, of whom 21 tested positive for SARS-CoV-2 by both the ID NOW and Hologic assays, and 2 tested positive only with the Hologic assay (Table 1). In addition, the evaluation enrolled 189 asymptomatic patients, none of whom tested positive by either ID NOW or RT–PCR. An ‘invalid’ ID NOW assay result was reported for nine subjects (two asymptomatic, seven symptomatic), all of whom tested negative by RT–PCR. Thus, the positive percent agreement between the ID NOW assay and the Hologic Panther Assay was 91.3%, and the negative percent agreement was 100%. The median cycle time (Ct) values in patients who had a positive Hologic RT–PCR was 28.2.
 
+**Table 1.**
+ Results from the clinical evaluation comparing randomized anterior nares samples for the ID NOW compared to the Hologic Panther SARS-CoV-2 RT–PCR assay.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="3">Hologic result</th>
+    </tr>
+    <tr>
+      <th>NEG</th>
+      <th>POS</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">ID NOW result</td>
+      <td>NEG</td>
+      <td>942</td>
+      <td>2</td>
+      <td>944</td>
+    </tr>
+    <tr>
+      <td>POS</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Invalid</td>
+      <td>9</td>
+      <td>0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>951</td>
+      <td>23</td>
+      <td>974</td>
+    </tr>
+    <tr>
+      <td colspan="2">Negative agreement</td>
+      <td>100.00% (82–100%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Positive agreement</td>
+      <td></td>
+      <td>91.30% (70–98%)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Two patients had discordant results with a negative ID NOW test and a positive Hologic RT–PCR test. The Hologic Ct values on the two discordant patients were 36.5 and 38.1. Of these discordant results, one patient is a 58-year-old woman who was a former smoker who presented with a cough and mild respiratory symptoms for approximately 6 weeks. She was retested 4 days after the initial discordant results at which time she tested negative in both the ID NOW and Hologic RT–PCR assays. The other patient with discordant results was a 34-year-old man with diabetes; he declined repeat testing but clinically was improving when contacted by phone.
 
-## Systematic review and meta-analysis
+### Systematic review and meta-analysis
 
 Forty papers were considered for inclusion. Of these, 14 met inclusion criteria, as reflected in the PRISMA diagram (Figure 1); 9 of those 14 studies enrolled 100 or more subjects. A brief summary of the studies included in our review, including the clinical study reported in this paper, is described in Table 2. A brief discussion of each paper including the results used in this review is presented in Appendix 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/65726/elife-65726-fig1-v2.jpg)
 
 **Figure 1.:** Note that the data from the current clinical evaluation has been included in the analysis.
+
+**Table 2.**
+ Studies included in the systematic review.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Site</th>
+      <th>ID NOW sampling device</th>
+      <th>Residual sample tested?</th>
+      <th>ID NOW sample dry?</th>
+      <th>Timing of ID NOW test</th>
+      <th>Patient characteristics</th>
+      <th>Patient selection bias?</th>
+      <th>Index test bias?</th>
+      <th>Flow and timing bias</th>
+      <th>N (positive rate)</th>
+      <th>RT–PCR</th>
+      <th>Abbott ID now</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Positive/CP % (95% CI)</td>
+      <td>Positive/CP % (95% CI)</td>
+    </tr>
+    <tr>
+      <td>Lephart et al., 2020</td>
+      <td>AN</td>
+      <td>Foam</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Up to 24 at 4°C</td>
+      <td>Convenience Hosp. and ED</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>88 (31%)</td>
+      <td>27/27 91% (85–100%)</td>
+      <td>12/27 44% (26–64%)</td>
+    </tr>
+    <tr>
+      <td>Basu et al., 2020</td>
+      <td>AN</td>
+      <td>Foam</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Up to 24 at 4°C</td>
+      <td>Convenience Hosp. and ED</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>101 (31%)</td>
+      <td>31/32 97% (82–100%)</td>
+      <td>18/32 56% (38–73%)</td>
+    </tr>
+    <tr>
+      <td>Cradic et al., 2020</td>
+      <td>AN</td>
+      <td>Foam</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Unclear</td>
+      <td>Symptomatic</td>
+      <td>Low</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>182 (7.1%)</td>
+      <td>13/13 100% (72–100%)</td>
+      <td>12/13 92% (62–100%)</td>
+    </tr>
+    <tr>
+      <td>Harrington et al., 2020</td>
+      <td>AN</td>
+      <td>Foam</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Unclear</td>
+      <td>Clinic, ED</td>
+      <td>Low</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>524 (36%)</td>
+      <td>186/188 99% (96–100%)</td>
+      <td>141/188 75% (68–81%)</td>
+    </tr>
+    <tr>
+      <td>Jin et al., 2020†</td>
+      <td>U</td>
+      <td>U</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Unclear</td>
+      <td>U</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>52 (12%)</td>
+      <td>6/6 100% (52–100%)</td>
+      <td>4/6 67% (24–94%)</td>
+    </tr>
+    <tr>
+      <td>Mitchell and George, 2020</td>
+      <td>NP</td>
+      <td>U</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Unclear</td>
+      <td>U</td>
+      <td>High</td>
+      <td>High</td>
+      <td>Unclear</td>
+      <td>61 (75%)</td>
+      <td>46/46 100% (90–100%)</td>
+      <td>33/46 72% (56–84%)</td>
+    </tr>
+    <tr>
+      <td>Moore et al., 2020</td>
+      <td>NP</td>
+      <td>U</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Unclear</td>
+      <td>Symptomatic</td>
+      <td>High</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>200 (64%)</td>
+      <td>127/127 100% (96–100%)</td>
+      <td>94/127 74% (65–81%)</td>
+    </tr>
+    <tr>
+      <td>Rhoads et al., 2020</td>
+      <td>AN, NP</td>
+      <td>U</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Unclear</td>
+      <td>PCR+</td>
+      <td>High</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>96 (100%)</td>
+      <td>96/96 100% (95–100%)</td>
+      <td>90/96 94% (86–97%)</td>
+    </tr>
+    <tr>
+      <td>Smithgall et al., 2020</td>
+      <td>NP</td>
+      <td>U</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Up to 48 hr at 4°C</td>
+      <td>Selected</td>
+      <td>High</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>113 (80%)</td>
+      <td>89/90 99% (94–100%)</td>
+      <td>65/88 74% (64–82%)</td>
+    </tr>
+    <tr>
+      <td>Thwe and Ren, 2020</td>
+      <td>NP</td>
+      <td>U</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>~2 hr</td>
+      <td>Symptomatic Hosp. and ED</td>
+      <td>High</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>129 (7.7%)</td>
+      <td>15/15 100% (75–100%)</td>
+      <td>8/15 53% (27–78%)</td>
+    </tr>
+    <tr>
+      <td>Zhen et al., 2020b</td>
+      <td>NP</td>
+      <td>Many</td>
+      <td>Yes (most)</td>
+      <td>No</td>
+      <td>Up to 72 hr at 4°C</td>
+      <td>Symptomatic</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>Unclear</td>
+      <td>107 (54%)</td>
+      <td>57/58 98% (90–100%)</td>
+      <td>50/57 88 (76–95)</td>
+    </tr>
+    <tr>
+      <td>Comer and Fisk, 2020</td>
+      <td>AN</td>
+      <td>Foam</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>15 m</td>
+      <td>U</td>
+      <td>High</td>
+      <td>Low</td>
+      <td>Low</td>
+      <td>117 (0.9%)</td>
+      <td>1/1 100% (5–100%)</td>
+      <td>0/1 0% (0–95%)</td>
+    </tr>
+    <tr>
+      <td>Ghofrani et al., 2020</td>
+      <td>AN</td>
+      <td>Many</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Unclear</td>
+      <td>Mostly symptomatic convenience</td>
+      <td>High</td>
+      <td>Unclear</td>
+      <td>High</td>
+      <td>113 (16%)</td>
+      <td>17/18 94% (71–99%)</td>
+      <td>17/18 94% (71–99%)</td>
+    </tr>
+    <tr>
+      <td>SoRelle et al., 2020‡</td>
+      <td>S</td>
+      <td>Tube</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Unclear</td>
+      <td>U</td>
+      <td>Unclear</td>
+      <td>Low</td>
+      <td>Low</td>
+      <td>59 (39%)</td>
+      <td>23/23 100% (82–100%)</td>
+      <td>18/23 78% (56–92%)</td>
+    </tr>
+    <tr>
+      <td>Tu (this study)</td>
+      <td>AN</td>
+      <td>Foam</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>15 m</td>
+      <td>symptomatic and asymptomatic</td>
+      <td>Low</td>
+      <td>Low</td>
+      <td>Low</td>
+      <td>974 (2.4%)</td>
+      <td>23/23 100% (82–100%)</td>
+      <td>21/23 91% (70–98%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Likely <2 hr in some cases, more than a single type of sampling device was used. When a dry ID NOW foam swab was used as a part of this study, both the table above and the results reflect the use of that device, which is consistent with the current ID NOW package insert. Comparisons based upon use of other transport media are only shown when no data was presented for use of dry swabs.†Table shows only the comparison between ID NOW and Cobas using dry swabs.‡Table shows comparison of saliva tested on ID NOW vs saliva tested using Cepheid Xpert Xpress SARS-CoV-2.Abbreviations in table: AN = anterior nares; OP = oropharynx; NP = nasopharynx; S = saliva; U = unknown.Data are only presented from papers in which it was possible to construct a composite ‘gold standard’ in which a positive result on any platform contributed to create a ‘composite positive (CP)’. Specificity was assumed to be 100% for all platforms/tests. This differs from the method presented in some of the papers incorporated into this table._
 
 The risk of patient selection spectrum bias associated with the study population, or method of recruitment, was rated as either ‘high’ or ‘unclear’ for 12 of the published studies; this was the most common concern raised in the quality assessment. Studies with a high or unclear risk of bias were characterized by failure to present patient symptom status (five studies), inclusion of subjects who had previously tested positive for SARS-CoV-2 (one study) or use of investigator-selected or non-clinical convenience samples. Evidence of bias associated with the conduct of RT–PCR testing was not identified for any of the 14 studies meeting inclusion criteria. Several studies suffered either from unclear or elevated risk of index test or from flow and timing biases (detailed further in Appendix 1).
 
@@ -61,7 +386,7 @@ We included the two cohorts with low risk of patient selection bias, together wi
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65726/elife-65726-fig3-v2.jpg)
 
-**Figure 3.:** A) and 164 asymptomatic (B) patients who tested positive for SARS-CoV-2 between July 14 and November 16, 2020, using the Abbott m2000 assay at The Everett Clinic.For patients with multiple tests, only the first positive test is included. In (C), data for each group of patients has been normalized so that the sum of all bins is 100, allowing better comparison of the distributions. The Abbott m2000 cycle number is generally about 10 cycles less than the Ct reported for PCR assays on other devices.
+**Figure 3.:** For patients with multiple tests, only the first positive test is included. In (C), data for each group of patients has been normalized so that the sum of all bins is 100, allowing better comparison of the distributions. The Abbott m2000 cycle number is generally about 10 cycles less than the Ct reported for PCR assays on other devices.
 
 ## Discussion
 
@@ -79,9 +404,40 @@ POC testing has substantial advantages over laboratory-based testing when a pat
 
 ## Materials and methods
 
-## Study population and sample collection
+**Key resources table**
 
-## Clinical study
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ID NOW SARS-CoV-2 reagents</td>
+      <td>Abbott</td>
+      <td>Cat. # 190–000 for COVID reagents Cat. # 190–080 for COVID controls</td>
+      <td>https://www.fda.gov/media/136525/download</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SARS-CoV-2 reagents</td>
+      <td>Hologic</td>
+      <td>Cat. # PRD-06420 for the COVID reagents and Cat. # 303014 for the assay fluids reagents</td>
+      <td>https://www.hologic.com/sites/default/files/2020-09/AW-21159-001_004_01.pdf</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study population and sample collection
+
+#### Clinical study
 
 The IRB-approved clinical study was conducted at The Everett Clinic between April 8 and 22, 2020, and engaged ambulatory symptomatic patients seen in the febrile upper respiratory infection (F/URI) clinics and other patients from non-F/URI clinics. Patients who were unable to demonstrate understanding of the study, not willing to commit to having all samples collected, had a history of nosebleed in the past 24 hr, nasal surgery in the past 2 weeks, chemotherapy treatment with documented low platelet and low white blood cell counts, or acute facial trauma were excluded; nonetheless, an attempt was made to consecutively enroll all eligible patients.
 
@@ -103,7 +459,7 @@ ID NOW results, which were reported as ‘invalid’, were treated as negative w
 
 The human ethics review and IRB for these studies was approved by the United Health Group Office of Human Research Affairs (OHRA), Federal wide Assurance #: FWA00028881, OHRP Registration #: IORG0010356.
 
-## Systematic review and meta-analysis
+#### Systematic review and meta-analysis
 
 Our systematic review was designed to answer two questions:
 

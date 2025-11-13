@@ -32,19 +32,39 @@ Here we explored the role of ligands using single and double conditional Jagged 
 
 ## Results
 
-## Jagged ligands precede the appearance of Delta-like ligands in differentiating airway progenitors
+### Jagged ligands precede the appearance of Delta-like ligands in differentiating airway progenitors
 
 Although the expression patterns of Jag and Dll have been reported in both epithelial and mesenchymal layers of the developing lung, specific information about their onset of expression and regional distribution in the epithelial compartment at early stages of differentiation has been scattered and not well integrated to functional studies (Post et al., 2000; Kong et al., 2004; Xu et al., 2010b; Morimoto et al., 2012; Tsao et al., 2009). To gain further insights into this issue we revisited the spatial and temporal pattern of expression of Notch ligands when epithelial cells are initiating commitment to different cell fates in developing airways.
 
 By in situ hybridization (ISH) analysis none of these ligands were detectable in the airway epithelium prior to or at E11.5 (not shown). However, at around E12.0 evidence of Jag2 epithelial signals in the developing trachea made it the first of all Notch ligands to be induced in the differentiation program of airways (Figure 1A). Expression progressed in a proximal-to-distal fashion; at E12.5 low level signals were detected in the epithelium of extrapulmonary but not intrapulmonary airways. This contrasted with the strong Jag2 signals present in the esophageal epithelium and in neighboring vascular structures (Figure 1B). Notably, the Jag2 detection in epithelial progenitors of the trachea and extrapulmonary airways coincided with the previously reported onset of Notch activation and appearance of the secretory cell marker Scgb3a2 locally (Guha et al., 2012). No epithelial Jag1 could be detected anywhere in airways at these stages, although clearly present in vascular structures (Figure 1C). These data supported the idea of a Jag2-Notch program giving rise to secretory cell precursors as one of the earliest events initiating differentiation in airways, even preceding the appearance of pulmonary NE cells (PNEC) reported to begin only within a day later (Li and Linnoila, 2012; Kuo and Krasnow, 2015; Noguchi et al., 2015; Sui et al., 2018). Indeed, expression of Ascl1, which marks PNEC precursors, was first found ~E13-13.5 in large intrapulmonary airways and both Dll1 and Dll4 were then subsequently expressed in these precursors (Figure 1E,D). By E13.5-E14.5 strong Jag2 epithelial signals were seen throughout the trachea and main bronchi, in contrast to Jag1, nearly undetected at these sites (Figure 1, Figure 1—figure supplement 1). At E14.5 NEBs and PNECs were sharply demarcated by Ascl1, and Dll1 and Dll4 transcripts became prominently expressed in NEBs (Figure 1E–F). This was accompanied by the appearance of clusters of cells adjacent to NEBs, collectively marked by expression of the uroplakin Upk3a, the cell surface stem cell (secretory) marker SSEA1, the secretoglobin Scgb3a2 and low levels of the cytochrome gene Cyp2f2 and CC10. The pattern was consistent with the initiation of a Notch-dependent program of secretory cells in the NEB microenvironment (Guha et al., 2012 and described later).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50487/elife-50487-fig1-v2.jpg)
+
+**Figure 1.:** In situ hybridization of E12-E14.5 lungs. (A–C) E12-E12.5: Jag2 is the first and only Notch ligand detected in the epithelium, initially restricted to the trachea (tr) and later extending to extrapulmonary airways but not intrapulmonary large airways (bronchi: br)(B, boxed area enlarged in right panel). Jag1 is absent from both trachea and bronchi. Strong Jag ligand signals in blood vessels (bv) and the esophageal epithelium (es). (D) E13.5: Prominent epithelial Jag2 signals still restricted to trachea and extrapulmonary bronchi; abundant Jag1 in vascular but not in the epithelial compartment. (E–F) E13.5- E14.5: Dll1 and Dll4 signals are first detected at E13.5 in epithelial cell clusters of intrapulmonary main bronchi at sites of NEB formation marked by Ascl1 (inset) and signals become highly localized and prominent from E14.5 onward (G) Schematic summarizing the time and sites of Notch ligand expression throughout the developing respiratory tract epithelium. Arrows depict representative signals in airway epithelium; (*) depicts absence or near background signal. Bars in A-F = 40 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50487/elife-50487-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** In situ hybridization (ISH) of Jag genes in E14.5-E18.5 wild type mouse lungs. (A–B) Prominent Jag2 signals in tracheal (tr, rectangles) and bronchial (br, circles) epithelium, but nearly background Jag1 signals at E14.5 (lower panels: different magnifications). (C–D) Strong Jag2 expression in the E15.5-E16.5 tracheal epithelium enriched in basal cell progenitors as shown by overlapping Jag2-p63 signals (right panel: double Jag2 ISH- p63 immunostaining); (D) Jag1 epithelial signals are weak in main bronchi but increased more distally in bronchioles (brq) preferentially in multiciliated cells (right lower panel: double Jag1 ISH-Foxj1 immunostaining). (E–F) At 18.5 Jag2 signals are mostly in main bronchi (inset) and nearly absent in intrapulmonary airways. By contrast Jag1 is strongly expressed throughout the airway epithelium. Arrowheads depict representative epithelial signals; bv: blood vessels: are always positive for Jag1 and Jag2. (*) depicts absence of signal or nearly background expression levels. Bars in A and C = 40 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50487/elife-50487-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** In situ hybridization (Jag2, Ascl1) in serial sections of E14.5 lungs (A) low magnification image showing both Ascl1-expressing cell clusters (NEBs) and Jag2 epithelial signals in proximal (pr) but not in more distal (di) main bronchus (br), where NEBs emerge in Jag2 negative (*) epithelium. Dotted line depicts the Jag2 positive and negative domains (in brackets). (B) Higher magnification of the bracketed areas in (A). Strong signals in blood vessels (bv) and nerves (nv) confirm specificity of Jag2 and Ascl1 staining, respectively (see also Figure 1—figure supplement 1 for Jag1 expression). Scale bar represents 40 μm.
+
 Thus, Jag and Dll ligands appear in different domains and in a sequential proximal-distal fashion during the establishment of cell fate in airway progenitors, initiating with Jag2 in the trachea, Jag1, and lastly Dll1 and Dll4 once NEBs form in intrapulmonary airways (summary diagram Figure 1G).
 
-## Jag1 and Jag2 regulate the balance of different cell types in extra- and intrapulmonary airways
+### Jag1 and Jag2 regulate the balance of different cell types in extra- and intrapulmonary airways
 
 Given the distinct timing and spatial distribution of Jag ligands described above, we reasoned that common but also non-overlapping functions were likely to exist in the distinct domains of the respiratory tract. Inactivation of Jag1 in epithelial progenitors of intrapulmonary airways undergoing branching morphogenesis using a surfactant protein-c (Sftpc)-tet-O system was shown to disrupt epithelial differentiation (Zhang et al., 2013), confirming the previously reported role of Notch signaling in this process (Tsao et al., 2009; Morimoto et al., 2010). Although efficient, in this targeting strategy Cre-mediated recombination was restricted to intrapulmonary airways, initiating at the onset of Sftpc expression in secondary buds (~E10.5). Thus, information about a putative role of Jag1 in extrapulmonary airways (trachea, main bronchi) and at stages prior to E10.5 was missing. Moreover, little was known about how Jag2 influences lung development and whether there is any functional overlap between Jag2 and Jag1. Jag2 systemic knockout animals die at birth (Jiang et al., 1998). Lastly, no information was available about compensation of Jag by other ligands during epithelial differentiation.
 
 We used the Shh-cre line to inactivate Jag1 and Jag2 individually or in combination in early epithelial progenitors of both extrapulmonary and intrapulmonary at the onset of lung development (Harfe et al., 2004). Jag1flox/flox; Shhcre/+ (Jag1cnull), Jag2flox/flox; Shhcre/+ (Jag2cnull) and double (Jag1cnull; Jag2cnull) null mutants were analyzed at early (E14.5) and late (E18.5) stages of airway differentiation. Gross morphological analysis of the mutant lungs showed no notable macroscopic difference in size or shape (not shown). We compared the effects of Jag1 and Jag2 loss in multiciliated-secretory cell fate selection at E18.5, once differentiated cell profiles were largely established in extrapulmonary (trachea) and intrapulmonary (lung) airways. qPCR analysis of E18.5 lung homogenates showed significant changes in markers of epithelial differentiation in all mutants (Figure 2A). Expression of the secretory markers Scgb3a2 and Scgb1a1 (encoding CC10) were reduced by 86.2% (p=5×10−12) and 85.6% (p=0.0001), respectively in Jag1cnull mutants, but only by 25.9% (p=0.015) and 34.4% (p=0.019), respectively in Jag2cnull mutants. These changes were accompanied by a significant increase in Foxj1 expression in Jag1cnull (183% increase, p=0.0006) but not in Jag2cnull (13% reduction, p=0.501) mutants. Thus, the differentiation program of intrapulmonary airways was more severely affected in Jag1cnull than in Jag2cnull mutants. The predominant contribution of Jag1 to the program of secretory cell fate as represented by these markers could be clearly seen in double Jag1cnull; Jag2cnull mice. These mutants showed Scgb3a2 and Scgb1a1 nearly abolished and an increase in Foxj1 similar to that found in Jag1cnull. Altogether these results indicated that airway progenitors are largely dependent on Jag ligands to initiate secretory cell differentiation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50487/elife-50487-fig2-v2.jpg)
+
+**Figure 2.:** (A) qPCR analysis: markers of multiciliated (Foxj1) and secretory cell fate (Scgb3a2, Scgb1a1 [CC10]) in mutant and respective control lung homogenates (n = 4 Jag1 control, n = 3 Jag1cnull; n = 4 Jag2 control; n = 4 Jag2cnull; n = 4 Jag1/Jag2 control; n = 4 Jag1cnull; Jag2cnull). Decreased expression of secretory markers and increased Foxj1 predominantly in Jag1cnull and in double Jag1cnull; Jag2cnull. Graphs represent mean ± SEM. Student’s t-test: differences statistically significant at *p<0.05, **p<0.005, ***p<0.005, n.s., not significant. (B) Immunofluorescence of lungs from E18.5 control and Jag mutant mice showing changes in expression of Foxj1 and CC10 in intrapulmonary airways consistent with that revealed by qPCR (DAPI in gray). (C) Morphometric analysis: percentage of Foxj1+ cells in control and mutant intrapulmonary airways (normalized by DAPI). Significant increase in the number of Foxj1 labeled cells in Jag1cnull and in Jag1cnull; Jag2cnull, but not in Jag2cnull mutants. (D) In situ hybridization of Jag1 in E18.5 Jag2cnull showing epithelial signals in intrapulmonary airways (arrow, bronchi: br) and in blood vessels (bv). Scale bar in B = 40 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50487/elife-50487-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** IF of basal cells (A: Krt5, B: p63) and multiciliated cells (A: beta-tubulin 4; B: Foxj1) in control and double Jag1cnull; Jag2cnull tracheas. (C) Morphometric analysis of basal cells (top: p63+) and multiciliated cells (bottom: Foxj1 +) in single and double Jag mutant tracheas. Sections of whole trachea were counted for p63+ and DAPI+ cells and the percentage of p63+ cells was determined in airway epithelium. Graphs are mean ± SEM; **p<0.05. Scale bars = 20 μm.
 
 Immunofluorescence of Foxj1 and CC10 in E18.5 lung sections confirmed the changes in gene expression in intrapulmonary airways revealed by qPCR and showed secretory cells less abundant in Jag1cnull compared to Jag2cnull mutants (Figure 2B). Interestingly, multiciliated cell fate appeared to be minimally affected in Jag2cnull airways. Morphometric analysis showed no significant change in the number of Foxj1+ cells in Jag2cnull airways relative to control (p=0.164), in contrast to the ~2.5 fold increase in these cells in Jag1cnull mutants (p=4.17×10−7) (Figure 2C).
 
@@ -54,7 +74,7 @@ IF staining of Krt5 and β-tubulin in E18.5 Jag1cnull; Jag2cnull double mutants 
 
 Together these data suggest that Jag ligands mediate overlapping but distinct events along the respiratory tract epithelium. In extrapulmonary airways (trachea here) Jag2 predominantly contributes to the balance of basal versus luminal cells while Jag1 controls abundance of multiciliated cells. By contrast, in intrapulmonary airways Jag1 is the predominant ligand regulating the balance of multiciliated versus club cell fate with a lesser contribution of Jag2.
 
-## Jag ligands have minimal effects in the establishment and regulation of the NE microenvironment
+### Jag ligands have minimal effects in the establishment and regulation of the NE microenvironment
 
 Next we investigated whether Jag ligands could influence cell fate events that ultimately regulate the PNEC pool in intrapulmonary airways, regardless of its organization as NEBs or as solitary cells. Thus, we compared levels of Ascl1 expression in homogenates of Jag-cnull mutant lungs at E18.5, when NEBs are already widely distributed at branch point and internodal locations. qPCR analysis showed no difference in Ascl1 expression between controls and mutants in any of the Jag-deficient airways (Figure 3A). Consistent with this, immunofluorescence for Cgrp, another established marker of PNEC fate (Li and Linnoila, 2012), did not reveal consistent differences in expression patterns, suggestive of alterations in NEBs' spatial distribution, size (~8–10 PNECs per NEB control, Jag1cnull, Jag2cnull, and double Jag1cnull; Jag2cnull) or frequency in intrapulmonary airways of mutants compared to controls (Figure 3A–D). Since in our mutants Jag is deleted well before epithelial progenitors differentiate, we concluded that Jag-mediated Notch signaling is unlikely to be involved in the mechanisms that initiate or restrict the domains of NEB or PNEC fate. Neither NEBs nor PNECs could be identified in extrapulmonary airways (trachea) of mutants or control animals.
 
@@ -66,7 +86,7 @@ We then examined the effect of Jag deletion in the population of secretory proge
 
 Together these results suggested that Jag1 and Jag2 have overlapping but also distinct roles in the cell fate specification of respiratory lineages in extrapulmonary and intrapulmonary airways. Jag ligands, however, appear to be dispensable for activation of Notch and induction of NEB-associated secretory cells since they can utilize Dll provided by their neighboring NE cells. Moreover, our data show no evidence that Jag ligands have any impact in regulating size or frequency of NEBs.
 
-## Dll ligands control the size of the NEB microenvironment
+### Dll ligands control the size of the NEB microenvironment
 
 Our analysis of Jag1cnull; Jag2cnull mutants identified seemingly self-contained units comprised of Dll-expressing NEBs and immediately adjacent cells able to activate and maintain robust Jag-independent Notch signaling for local secretory differentiation. Previous studies in Ascl1-/- mice showed that these units were strictly dependent on the presence of NEBs (Guha et al., 2012). Questions remained whether preventing NEBs from expressing Dll ligands would have any impact on the NEB microenvironment or elsewhere if Jag ligands were still expressed. Unlike Jag1 and Jag2, found in largely non-overlapping spatial and temporal patterns, Dll1 and Dll4 are collectively expressed in a very restricted fashion to PNEC/NEBs. Given the high probability of functional overlap, we generated mouse mutants in which both Dll ligands were deleted conditionally in the developing lung epithelium. Double deletion (Dll1cnull; Dll4cnull) was achieved from early stages using a similar targeting strategy with a Shhcre/+ line.
 
@@ -74,13 +94,13 @@ IF analysis of E14.5 lungs from control mice showed the solitary PNECs and disti
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50487/elife-50487-fig4-v2.jpg)
 
-**Figure 4.:** (A–B) Ascl1 immunofluorescence (IF) in E14.5 control lungs (A) showing discrete clusters of Ascl1+ NEBs in large intrapulmonary airways (bronchi: br) in contrast to the aberrant NEB expansion in Dll1cnull; Dll4cnull lungs. At E18.5 (B) NEBs at branchpoints are also enlarged in mutants compared to controls and express Cgrp (bottom panel). (C) Double Ki67; Ascl1 IF shows no evidence that NEB expansion results from increased proliferation at E18.5 (top) or E14.5 (bottom panel). (D) qPCR analysis of NE markers at E18.5: significant increase in Ascl1 and Cgrp expression in double null mutants compared to controls; single mutant Dll1cnull but not Dll4cnull showed increased expression of Ascl1 (n = 3 Dll1 control, n = 5 Dll1cnull for Ascl1 and n = 4 Dll1 control, n = 5 Dll1cnull for Cgrp; n = 3 Dll4 control n = 6 Dll4cnull for Ascl1 and Cgrp; n = 3 Dll1/Dll4 control; n = 3 Dll1cnull; Dll4cnull for Ascl1 and Cgrp). Graphs: mean ± SEM. ***p<0.0005; n.s., not significant by Student’s t-test (E) Morphometric analysis of PNECs and NEBs in E14.5 control and Dll mutant lungs. Left panel: NEB size as determined by number of PNECs per NEB. Center panel: solitary PNEC per airway. Right panel: number of NEBs.  n.s., not significant by Student’s t-test. Scale bars in A, B = 40 μm.* P<0.05, ** P<0.005, *** P<0.0005;
+**Figure 4.:** (A–B) Ascl1 immunofluorescence (IF) in E14.5 control lungs (A) showing discrete clusters of Ascl1+ NEBs in large intrapulmonary airways (bronchi: br) in contrast to the aberrant NEB expansion in Dll1cnull; Dll4cnull lungs. At E18.5 (B) NEBs at branchpoints are also enlarged in mutants compared to controls and express Cgrp (bottom panel). (C) Double Ki67; Ascl1 IF shows no evidence that NEB expansion results from increased proliferation at E18.5 (top) or E14.5 (bottom panel). (D) qPCR analysis of NE markers at E18.5: significant increase in Ascl1 and Cgrp expression in double null mutants compared to controls; single mutant Dll1cnull but not Dll4cnull showed increased expression of Ascl1 (n = 3 Dll1 control, n = 5 Dll1cnull for Ascl1 and n = 4 Dll1 control, n = 5 Dll1cnull for Cgrp; n = 3 Dll4 control n = 6 Dll4cnull for Ascl1 and Cgrp; n = 3 Dll1/Dll4 control; n = 3 Dll1cnull; Dll4cnull for Ascl1 and Cgrp). Graphs: mean ± SEM. ***p<0.0005; n.s., not significant by Student’s t-test (E) Morphometric analysis of PNECs and NEBs in E14.5 control and Dll mutant lungs. Left panel: NEB size as determined by number of PNECs per NEB. Center panel: solitary PNEC per airway. Right panel: number of NEBs. * P<0.05, ** P<0.005, *** P<0.0005; n.s., not significant by Student’s t-test. Scale bars in A, B = 40 μm.
 
 To assess the contribution of each of these ligands to the Dll1cnull; Dll4cnull phenotype, we examined Dll1cnull and Dll4cnull individual mutants. E18.5 lungs were isolated from single and double mutants and changes in expression of Ascl1 and Cgrp were analyzed by qPCR in homogenates (Figure 4D). Double Dll mutants showed a significant increase in these transcripts compared to controls (Ascl1 p=1.1×10−6; Cgrp p=5.9×10−5), consistent with the aberrant NE cell expansion. However, in single Dll1cnull or Dll4cnull lungs Ascl1 expression was modestly increased only in Dll1cnull and Cgrp mRNA was not altered in either of these mutants compared to controls. The marked difference in phenotype between double and single Dll mutants suggested functional redundancy between Dll1 and Dll4 in controlling NEB or PNEC-associated events. To better understand these events, we performed morphometric analysis of the NE compartment in E14.5 lungs to determine the impact of Dll in the size and frequency of NEBs and PNECs (Figure 4E). Quantitation of the number of solitary PNECs in the airway epithelium showed no difference between controls and any of the single or double mutants, suggesting that Dll disruption affected primarily the NEB microenvironment. The frequency of NEBs per airway (%) was largely unaffected, although a small difference in Dll4 mutants reached statistical significance. However, the number of PNECs per NEB was significantly increased in both the Dll1cnull; Dll4cnull and single Dll4cnull airways, indicating that the size of NEBs was dramatically altered in these mutants.
 
 Together the data indicated that the mechanisms that restrict PNEC fate and limit expansion of NEB were severely disrupted in Dll mutants.
 
-## Notch signaling and NEB-associated CCs are preserved in the absence of Dll ligands
+### Notch signaling and NEB-associated CCs are preserved in the absence of Dll ligands
 
 The strikingly preserved integrity of the NEB microenvironment of double Jag1cnull; Jag2cnull mutants led us to hypothesize that Dll1 and Dll4 were not only necessary and sufficient to activate local Notch signaling but also endowed the unique features of the NEB-associated club cells that distinguish them from club cells elsewhere. The absence of Dll ligands in the expanded population of NEB from double Dll mutants provided an opportunity to examine this issue. We asked whether the robust activation of Notch signaling seen in NEB-associated club cells (CCs) of control and Jag double mutants was also present in Dll1cnull; Dll4cnull mice. Double IF for Ascl1 and N1ICD in E18.5 lung sections showed strong N1ICD signals in the NE-associated CCs of mutants indistinguishable from that of controls (Figure 5A). Notably, the NEB expansion in Dll1cnull; Dll4cnull mutants was accompanied by a respective expansion of the NEB-associated CCs. The identity of these cell populations was further confirmed by expression of Cgrp (NEB) as well as SSEA1 and low Cyp2f2 (NEB-associated CCs). Double ISH/immunohistochemistry showed the characteristic low levels of Cyp2f2 expression in NEB-associated cells in contrast to the strong signals outside the NEB microenvironment (Figure 5B). The aberrant expansion of the NEB-associated cells was further demonstrated by qPCR analysis of lung homogenates, which showed a significant increase in expression of Upk3a in Dll1cnull; Dll4cnull mutants compared to controls (Figure 6A). Of note, we found no change in expression of markers not directly associated with the NEB microenvironment, such as Scgb1a1 (CC10) or Foxj1, which suggested that the Jag ligands present in double Dll1cnull; Dll4cnull lungs were capable of activating Notch and mediating the balance of secretory-ciliated cell differentiation (Figure 6A).
 
@@ -90,7 +110,7 @@ The strikingly preserved integrity of the NEB microenvironment of double Jag1cnu
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/50487/elife-50487-fig6-v2.jpg)
 
-**Figure 6.:** Upk3a expression domain in Dll1cnull; Dll4cnull lungs.(A) qPCR analysis: significantly increased expression of Upk3a, but not of Scgb1a1 or Foxj1 in mutants relative to controls (n = 3 in both groups). Graphs are mean ± SEM. Student’s t-test *p<0.05. (B) ISH for Upk3a in E18.5 lungs showing marked expansion of the Upk3a expression domain (arrowheads) in intrapulmonary airways of Dll1cnull; Dll4cnull mutants (boxed areas enlarged in the lower panels). (C) Double immunohistochemistry (Ascl1)/ISH (Upk3a) confirms that the Upk3a+ cells (arrowheads) are NEB-associated CCs. Note reciprocal high (arrowhead) and low (*) intensity of signals in areas outside and inside the NEB microenvironment, respectively. Scale bar in B = 40 μm.
+**Figure 6.:** (A) qPCR analysis: significantly increased expression of Upk3a, but not of Scgb1a1 or Foxj1 in mutants relative to controls (n = 3 in both groups). Graphs are mean ± SEM. Student’s t-test *p<0.05. (B) ISH for Upk3a in E18.5 lungs showing marked expansion of the Upk3a expression domain (arrowheads) in intrapulmonary airways of Dll1cnull; Dll4cnull mutants (boxed areas enlarged in the lower panels). (C) Double immunohistochemistry (Ascl1)/ISH (Upk3a) confirms that the Upk3a+ cells (arrowheads) are NEB-associated CCs. Note reciprocal high (arrowhead) and low (*) intensity of signals in areas outside and inside the NEB microenvironment, respectively. Scale bar in B = 40 μm.
 
 Lastly, ISH of E18.5 lungs confirmed the marked expansion in the domain of expression of Upk3a in Dll1cnull; Dll4cnull mice and their association with NEBs (Figure 6B–C). Together the data strongly suggested that, in spite of the inability to express Dll1 and Dll4, key features of the NEB microenvironment are preserved in these mutants by Jag ligand activation of Notch signaling.
 
@@ -112,15 +132,263 @@ In summary our study provides novel insights into developmental mechanisms media
 
 ## Materials and methods
 
-## Mouse models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Dll1flox</td>
+      <td>PMID: 16495313</td>
+      <td>MGI: 3044907</td>
+      <td>Dr. Julian Lewis</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Dll4flox</td>
+      <td>PMID: 18824585</td>
+      <td>MGI: 3828266</td>
+      <td>Dr. Freddy Radtke (École polytechnique fédérale de Lausanne)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Jag1flox</td>
+      <td>PMID: 16495313</td>
+      <td>MGI: 3623344</td>
+      <td>Dr. Julian Lewis</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Jag2flox</td>
+      <td>PMID: 20533406</td>
+      <td>MGI: 4829504</td>
+      <td>Dr. Thomas Gridley (Tufts University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Shhcre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock# 005622, RRID: IMSR_JAX:005622</td>
+      <td>PMID: 15315763</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-beta IV tubulin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab11315, RRID:AB_297919</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ascl1 (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 14-5794-82, RRID: AB_2572887</td>
+      <td>IHC/IF (1:100), IF requires tyramide amplification</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CC10 (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-9772, RRID: AB_2238819</td>
+      <td>IF (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cgrp (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C8198, RRID: AB_259091</td>
+      <td>IF (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Foxj1 (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 14-9965-82, RRID: AB_1548836</td>
+      <td>IHC/IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 9129, RRID: AB_2687446</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Krt5 (rabbit polyclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 905501, RRID: AB_2565050</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Krt8 (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab107115, RRID: AB_10976462</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-N1ICD (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4147, RRID: AB_2153348</td>
+      <td>IF (1:100), requires tyramide amplification</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p63 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc8343, RRID: AB_653763</td>
+      <td>IHC/IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Scgb3a2 (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF3465, RRID: AB_2183550</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SSEA1 (mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat# MAB4301, RRID: AB_177627</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit, Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21206, RRID: AB_2535792</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit, Alexa Fluor 568 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A10042, RRID: AB_2534017</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit, Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A31573, RRID: AB_2536183</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat, Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A11055, RRID: AB_2534102</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat, Alexa Fluor 568 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A11057, RRID: AB_2534104</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat, Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21447, RRID: AB_2535864</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-chicken, Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 703-545-155, RRID: AB_2340375</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BM-Purple</td>
+      <td>Roche</td>
+      <td>Cat# 11442074001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>anti-Mouse IgG (Peroxidase) polymer detection kit, made in horse</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# MP-7402, RRID: AB_2336528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>anti-Rabbit IgG (Peroxidase) polymer detection kit, made in horse</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# MP-7401, RRID: AB_2336529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TSA Plus Cyanine 3</td>
+      <td>Akoya Biosciences</td>
+      <td>Cat# NEL753001KT</td>
+      <td>Previously PerkinElmer</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TSA Plus Cyanine 5</td>
+      <td>Akoya Biosciences</td>
+      <td>Cat# NEL745001K</td>
+      <td>Previously PerkinElmer</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ImmPACT DAB peroxidase (HRP) substrate</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# SK-4105, RRID: AB_2336520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MAXIscript T7</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM1314M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SuperScript IV First-Strand Synthesis System</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18091050</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse models
 
 Dll1flox/flox and Jag1flox/flox mice were provided by Dr. Julian Lewis (Hozumi et al., 2004; Brooker et al., 2006). Dll1cnull mice were generated by crossing Dll1flox/flox female mice with Dll1flox/+; Shhcre/+ males. Dll4flox/flox mice were obtained from Dr. Freddy Radtke (Koch et al., 2008). Dll4cnull mice were generated by crossing Dll4flox/flox female mice with Dll4flox/+; Shhcre/+ males. Dll1cnull; Dll4cnull mice were generated by crossing Dll1flox/flox; Dll4flox/flox females with Dll1flox/+; Dll4flox/+; Shhcre/+ males. Jag1cnull mice were generated by crossing Jag1flox/flox females with Jag1flox/+; Shhcre/+ males. Jag2flox/flox mice were provided by Dr. Thomas Gridley (Xu et al., 2010b). Jag2cnull mice were generated by crossing Jag2flox/flox females with Jag2flox/+; ShhCre/+ males. Jag1cnull; Jag2cnull mice were generated by crossing Jag1flox/flox; Jag2flox/flox females with Jag1flox/+; Jag2flox/+; Shhcre/+ males. Embryos were harvested at E14.5 and E18.5, where day 0.5 was counted as the morning when a vaginal plug was found. All experiments involving animals were performed in accordance with the protocols approved by Columbia University Medical Center.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Whole lung and trachea were harvested from mice at E14.5 and E18.5 and fixed in 4% paraformaldehyde at 4°C overnight. Samples then underwent PBS washes and 15% and 30% sucrose washes before embedding in OCT. Samples were incubated with primary antibodies (overnight at 4°C) and secondary antibodies conjugated with Alexa488, 568, or 647 (1:300) with NucBlue Fixed Cell ReadyProbes Reagent (DAPI) (Thermo Fisher #R37606) for 45 min. After washing, samples were mounted with ProLong Gold antifade reagent for analysis. When necessary, heat-induced epitope retrieval was performed using citric acid-based antigen unmasking solution (Vector Laboratories #H-3300). Ascl1 and N1ICD staining required tyramide amplification (cyanine 3 or cyanine 5) used with horse radish peroxidase conjugation (species-specific ImmPRESS kit, Vector Laboratories). Antibodies used were: anti-β-tubulin IV (Abcam #ab11315, 1:100), anti-Ascl1 (Thermo Fisher #14-5794-82, 1:100), anti-CC10 (Santa Cruz sc9772, 1:150), anti-Cgrp (Sigma Aldrich #C8198, 1:2500), anti-Foxj1 (Thermo Fisher #14-9965-80, 1:50), anti-Ki67 (Cell Signaling #9129, 1:100), anti-Krt5 (Biolegend #905501, 1:500), anti-Krt8 (Abcam #ab107115, 1:500); anti-N1ICD (Cell Signaling #4147, 1:100), anti-p63 (Santa Cruz #sc8343, 1:400), anti-Scgb3a2 (R and D Systems #AF3465, 1:100), anti-SSEA1 (EMD Millipore #MAB4301, 1:300). Images were acquired using a Leica DMi8 microscope or Zeiss LSM710 confocal laser scanning microscope.
 
-## Morphometric analysis
+### Morphometric analysis
 
 To determine the percentage of Foxj1+ ciliated cells in control and Jag-cnull mutant intrapulmonary airways E18.5 coronal sections of whole lungs were stained with Foxj1 and DAPI. Two sections from two separate embryos for each genotype were used for counting. DAPI+ epithelial cells were counted in intrapulmonary airways and were compared to the number of Foxj1+ cells to determine Foxj1+ percentages.
 
@@ -128,10 +396,61 @@ To determine the percentage of Foxj1+ ciliated cells in control and Jag-cnull mu
 
 Analysis of neuroendocrine cells and neuroepithelial bodies (NEBs) was performed on E14.5 Delta-cnull mutants. Sections were stained with Ascl1 and DAPI. Three sections from three separate embryos for each genotype were used for counting. For each section the number of intrapulmonary airways was counted, as well as the number of NEBs and solitary neuroendocrine cells. The ratios of NEBs/airway and solitary neuroendocrine cells/airway were calculated. Additionally, NEB size was examined. In each section, NEB size was determined by counting the number of neuroendocrine cells in contact with each other, where an NEB was determined to be a group of three or more cells.
 
-## In situ hybridization
+### In situ hybridization
 
 Frozen sections were processed as described for immunofluorescence. In situ hybridization was performed using digoxigenin-UTP-labeled probes as previously described (Tsao et al., 2008; Tsao et al., 2009; Guha et al., 2012). Probes are listed in Table 1. Hybridization probes were ordered from Integrated DNA Technologies at 25 nM with standard desalting and stored as 100 µM stocks in DEPC-treated water.
 
-## Quantitative real-time PCR
+**Table 1.**
+ Primers used to generate ISH probes.T7 or T3 primers were added to the reverse or forward primers of each gene, respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward (5’ → 3’)</th>
+      <th>Reverse (5’ → 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dll1</td>
+      <td>AATTAACCCTCACTAAAGGGAGACTGCTGAGAGAGGAAGGGAG</td>
+      <td>TAATACGACTCACTATAGGGAGAAGACCCGAAGTGCCTTTGTA</td>
+    </tr>
+    <tr>
+      <td>Dll4</td>
+      <td>AATTAACCCTCACTAAAGGGAGACTACTCAGACACCCAGCTCC</td>
+      <td>TAATACGACTCACTATAGGGAGAATCCTTTGCAAGCCTCCTCT</td>
+    </tr>
+    <tr>
+      <td>Jag1</td>
+      <td>AATTAACCCTCACTAAAGGGAGACGCCATAGGTAGAGTTTGAGG</td>
+      <td>TAATACGACTCACTATAGGGAGATAGTTGCTGTGGTTCTGAGC</td>
+    </tr>
+    <tr>
+      <td>Jag2</td>
+      <td>AATTAACCCTCACTAAAGGGAGATGGCACCCAGAACCCTTG</td>
+      <td>TAATACGACTCACTATAGGGAGAATACTCCGTTGTTTTCCGCC</td>
+    </tr>
+    <tr>
+      <td>Ascl1</td>
+      <td>AATTAACCCTCACTAAAGGGTCGTCCTCTCCGGAACTGAT</td>
+      <td>TAATACGACTCACTATAGGGAGAAGAAGCAAAGACCGTGGGAG</td>
+    </tr>
+    <tr>
+      <td>Upk3a</td>
+      <td>AATTAACCCTCACTAAAGGGGTGGCTGGACTGTGAACCTC</td>
+      <td>TAATACGACTCACTATAGGGTTGCCCACCCTGACTAGGTA</td>
+    </tr>
+    <tr>
+      <td>Cyp2f2</td>
+      <td>AATTAACCCTCACTAAAGGGGGAACTTTGGAGGCATGAAA</td>
+      <td>TAATACGACTCACTATAGGGAACTCCTGAGGCGTCTTGAA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantitative real-time PCR
 
 Quantitate real-time PCR was performed as previously described (Tsao et al., 2009). RNA was extracted using the RNeasy kit (Qiagen) and reverse transcribed using Oligo(DT) primers (SuperScript III or IV kits, Thermo Fisher). The following primers (Thermo Fisher) were used: Ascl1 (Mm03058063_m1), Cgrp (Mm00801463_g1), Foxj1 (Mm01267279_m1), Scgb1a1/CC10 (Mm00442046_m1), Scgb3a2 (Mm00504412_m1), Upk3a (Mm00452321_m1). Reactions were performed using Taq-Man Advanced Master Mix (Thermo Fisher #4444556) using β-actin as internal control and a Step-One Plus Instrument (Applied Biosystems). ΔΔCT method was used to calculate changes in expression levels.

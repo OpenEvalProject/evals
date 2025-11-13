@@ -30,31 +30,59 @@ Here, we investigated locomotion-related modulation of the IC neural activity in
 
 ## Results
 
-## Spontaneous neural activity of IC neurons is modulated during locomotion
+### Spontaneous neural activity of IC neurons is modulated during locomotion
 
 We made extracellular recordings of spiking neural activity of IC neurons in awake head-fixed mice, placed on a passive treadmill. This preparation enabled us to observe the IC neural activity during locomotion. When the firing rates between stationary and walking periods were compared, in the absence of sound stimulus presentation, we found that the IC neuron firing rates could be strongly modulated during locomotion. Among the 96 recorded IC neurons, 51 (Figure 1A; 53%) significantly increased their firing during locomotion, whereas 22 (Figure 1B; 23%) decreased their firing (Figure 1C). In 23 neurons (24%), firing rates did not significantly differ between the stationary and walking periods. Neurons that increased firing showed a positive correlation between the firing rate and walking speed, whereas those that decreased firing showed a negative correlation (Figure 1D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig1-v2.jpg)
+
+**Figure 1.:** (A-B) Example recordings of spontaneous activity in IC neurons. During walking periods, the neuron in A increased firing (from 7.6 Hz to 21.6 Hz), whereas the neuron in B decreased firing (from 19.1 Hz to 8.2 Hz). In both cases, the smoothed firing rates (black middle traces) exhibit significant correlations with the speed of the treadmill (green traces) (A: r = 0.59; B: r = −0.24). Thick black lines above the neural records indicate walking periods. (C) Population plot comparing average spontaneous firing rates between stationary and walking conditions (n = 96 neurons). Red circles: increased, blue: decreased, black: no significant change in firing. Values for the example neurons in A (cross) and B (triangle) are also shown. (D) Histogram of correlation coefficients between smoothed firing rate and speed (color code as in C). (E) Photomicrograph of a Nissl section with lesion sites marked with red arrow heads (scale bar = 1 mm), and reconstructed recording locations are shown in two transverse sections (5.0 and 5.2 mm posterior to the bregma, respectively). Color code as in C.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top: walking sound recording in sound pressure waveforms (black and green boxes denote 2 sec periods during baseline and walking, respectively, used for power spectrum calculation and playback). Bottom left: picture of the recording setup. Bottom right: normalized power spectrum (black trace: baseline, green trace: walking). (B) Recordings of walking sound (green), and walking sound playback at different sound levels (25, 30, 35, and 40 dB). The playback sound levels were determined from RMS values of thresholded events shown as magenta in the 40 dB waveform. (C) Sound levels of recorded playbacks in B, relative to the level of the walking sound recording (horizontal green dashed line). Sound levels were obtained from whole traces (black) or only from the events (magenta), In both cases, the recording of 30 dB playback was the closest to that of walking sounds. The same events were used for all playback levels and walking sound recording. (D) Example neuron showing a strong positive modulation during locomotion (left; ∆<r> = 11.4 Hz), but weak responses to playback (right; ∆<r> = 2.0 Hz at 30 dB, and ∆<r> = 0.8 Hz at 40 dB). (E) Example neuron showing a suppression during locomotion (left; ∆<r> = −10.3 Hz), but excitatory responses to playback (right, ∆<r> = 8.1 Hz at 30 dB and ∆<r> = 10.9 Hz at 40 dB; in this example, the first 0.5 s of the stimulus period was excluded for firing rate measurement due to the response during the initial baseline period). (F) Average firing rate changes (∆<r> ) during locomotion vs. the changes by walking sound playback at 30 dB (n = 25; r = 0.16, p=0.44). Red and blue squares represent the neurons in D and E, respectively. (G) Same as F, but for playback at 40 dB (n = 20, five neurons excluded due to substantial responses to the recording baseline; r = 0.33, p=0.15). Red square is the neuron in D. The neuron in E was one of the five excluded neurons.
 
 Subdivisions of the IC differ in cytoarchitecture and projection patterns (Morest and Oliver, 1984), with the lateral cortex, for example, known to receive somatosensory inputs (Lesicko et al., 2016). Therefore, we evaluated whether neurons that showed locomotion-related modulation are clustered in the shell region. Anatomical reconstruction of the recording locations did not show any clustering in terms of modulation or the direction of modulation (Figure 1E). Instead, all three types of modulations – increased (red), decreased (blue), or no change (black) - were found across the IC with no clear pattern.
 
 When mice walk on a treadmill, their movements generate low-intensity sounds. These sounds may modulate IC neuron activity. We examined this contribution of auditory reafference by playing back recorded walking sounds at a level similar to the recording (30 dB, n = 25; Figure 1—figure supplement 1). We also presented the walking sounds at a substantially higher level (40 dB) to examine the variation in neural response. Playbacks evoked neural responses, but the response magnitudes did not significantly correlate with those induced by locomotion (Figure 1—figure supplement 1D–G). This suggests that although some of the observed modulation may be induced by walking sounds, it is unlikely that the modulation is mainly due to auditory reafference.
 
-## Neural modulation precedes locomotion onset
+### Neural modulation precedes locomotion onset
 
 If the firing rate change starts before locomotion onset, it indicates that modulation is not simply due to auditory reafference (Schneider et al., 2014). We determined the relative timing of modulation by performing locomotion onset-triggered firing-rate averaging. We found that firing rate changes can begin well before the onset of locomotion (Figure 2A and B). In most of the 30 neurons that yielded a significant onset-triggered average (see Materials and methods), the onset of firing-rate modulation preceded the locomotion onset (Figure 2C, n = 30, median latency = −107 msec). These negative latencies were observed regardless of the direction of the modulation (Figure 2D; positive modulation: red bar, n = 22, –118 msec; negative modulation: blue bar, n = 8, –60 msec; Wilcoxon rank sum test, p=0.25). This demonstrates that neural modulation can begin before any detectable movement, and is, therefore, not simply an auditory response to walking sounds.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig2-v2.jpg)
 
-**Figure 2.:** (A-B) Top: Example neural recordings, corresponding smoothed firing rates, and walking speed. Bottom: Spike rasters aligned at the onset of walking and the locomotion onset-triggered averages of firing rates. Blue shading indicates the 95% confidence interval of the average firing rates. Horizontal solid and dashed lines show the average spontaneous firing rate and the 2x standard deviation above (A) or below (B) the average, respectively. Vertical green lines indicate locomotion onset. Red arrows indicate modulation onset. (C) Histogram of the neural modulation latencies relative to locomotion onset (n = 30). Time zero indicates locomotion onset. (D) Modulation latencies for neurons with increased (red bar, n = 22) and decreased (blue bar, n = 8) firing during locomotion (Wilcoxon rank sum test, p=0.25). Bar graphs show the median latencies.Figure 2—source data 1.
+**Figure 2.:** (A-B) Top: Example neural recordings, corresponding smoothed firing rates, and walking speed. Bottom: Spike rasters aligned at the onset of walking and the locomotion onset-triggered averages of firing rates. Blue shading indicates the 95% confidence interval of the average firing rates. Horizontal solid and dashed lines show the average spontaneous firing rate and the 2x standard deviation above (A) or below (B) the average, respectively. Vertical green lines indicate locomotion onset. Red arrows indicate modulation onset. (C) Histogram of the neural modulation latencies relative to locomotion onset (n = 30). Time zero indicates locomotion onset. (D) Modulation latencies for neurons with increased (red bar, n = 22) and decreased (blue bar, n = 8) firing during locomotion (Wilcoxon rank sum test, p=0.25). Bar graphs show the median latencies.
 
-## Locomotion modulates spontaneous activity in hearing-impaired mice
+### Locomotion modulates spontaneous activity in hearing-impaired mice
 
 To further substantiate that non-auditory neural signals modulate IC activity during locomotion, we performed bilateral deafening by removing the middle ear ossicles and applying an ototoxin (kanamycin) to the cochlea (see Materials and methods; n = 4 mice). Systematic mapping of multi-unit responses to broadband noise across the IC showed that this deafening raised the hearing threshold to ≥70 dB, at least 40 dB higher than the threshold in normal mice (Figure 3A and B). We reasoned that in these mice, it would be highly unlikely that low-intensity walking sounds (~30 dB, Figure 1—figure supplement 1) would evoke neural responses. As demonstrated in Figure 3C, a neuron from a hearing-impaired mouse showed a robust increase in firing during locomotion, while the same neuron did not show any discernible response to broadband sound stimuli (Figure 3D). We observed both increases and decreases in neural firing during locomotion in hearing-impaired mice, as in normal-hearing mice (n = 34; Figure 3E and F). We confirmed anatomically that our recording sites in the hearing-impaired mice were in the IC, and as in normal mice, modulated neurons were found across the IC without any spatial pattern (Figure 3G).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig3-v2.jpg)
+
+**Figure 3.:** (A) Raster plots (30 trials shown for each level) and PSTHs of multi-unit responses to broadband sound (2–64 kHz, 50 msec duration) in the example sites from normal (left) and hearing-impaired (right) mice. Horizontal bars at the top denote the period of stimulus presentation. (B) Rate-level functions from multi-unit sites from a normal mouse (top, 20 sites) and two hearing-impaired mice (bottom, 40 sites (black) and 57 sites (brown); colors represent different mice, and curves from only two mice are shown for clarity). (C) Example neuron from a hearing-impaired mouse that showed a robust modulation in firing rate during locomotion. Thick black lines above the neural record indicate walking periods. (D) The neuron in C did not show any auditory response to broadband noise (black: stationary, green: locomotion). In the raster plots, 30 stationary trials (black dots) and 8–10 walking trials (green dots) are shown for each level. (E) Scatter plot comparing the average spontaneous firing rates between stationary and walking conditions in hearing-impaired mice (n = 34). Red: increased; blue: decreased; black: no significant change. Black square indicates the neuron in C. (F) Histogram of correlation coefficients (color code as in E). (G) Reconstructed recording locations as in Figure 1. Color code as in E.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Proportions of the types of modulation: increased, decreased, or no change. Normal: n = 96; hearing impaired: n = 34. (B) Modulation index (MI) comparison between normal and hearing-impaired mice in neurons that showed positive (left; normal: 0.39 ± 0.04, n = 51; hearing impaired: 0.29 ± 0.06, n = 16; t-test, p=0.18) or negative modulation (right; normal: −0.27 ± 0.05, n = 22; hearing impaired: −0.18 ± 0.04, n = 7; t-test, p=0.28). (C) Latencies of neural activity modulation onset relative to locomotion onset did not significantly differ (median latencies; normal: −107 msec, n = 30; hearing impaired: −89 msec, n = 14; Wilcoxon rank sum test, p=0.65).
+
 Deafening may induce plasticity in the IC during the period before neural recording (8.2 ± 1.1 days; Chambers et al., 2016). However, not only that locomotion-modulated neurons were found in hearing-impaired mice, but also the modulation was similar to that in normal mice in terms of the types, magnitudes, and latencies (Figure 3—figure supplement 1). Although we cannot exclude the influence of deafening-induced plasticity, the existence of locomotion-modulated neurons in hearing-impaired mice with similar characteristics provides strong evidence that non-auditory signals modulate the activity of IC neurons during locomotion.
 
-## Sound-evoked activity of IC neurons is attenuated during locomotion
+### Sound-evoked activity of IC neurons is attenuated during locomotion
 
 Attenuation of sound-evoked activity during locomotion has been shown in the auditory thalamus and cortex, but sources of subcortical attenuation remain unclear (Schneider et al., 2014; Zhou et al., 2014; Williamson et al., 2015; McGinley et al., 2015). We investigated whether the sound-evoked IC activity is also modulated during locomotion by presenting pure tones of different frequencies at 70 dB (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig4-v2.jpg)
+
+**Figure 4.:** (A-C) Tone-evoked responses from three example IC neurons. Black spike rasters and PSTHs are from stationary trials, and green from walking trials. In each neuron, the same number of trials is shown for each condition (A: 35 trials; B: 25 trials; C: 92 trials). Blue shading indicates the period of sound stimulus presentation. Squares in different colors indicate the data points corresponding to the examples in the population plots in G, L, and N. (D-F) Tuning curves (black: stationary, green: walking) based on baseline-subtracted average firing rates at stimulus onset (see Materials and methods). Tuning widths are shown as horizontal bars in each condition (with the centroid shown as a circle at the center). The tuning curves are from the neurons shown in A-C, respectively. (G) Comparison of evoked rates between the stationary and walking conditions at all frequencies with excitatory responses (178 tones, 65 neurons). Values from the example neurons in A-C are indicated as squares in corresponding colors. (H) Histogram of percent evoked-rate modulation across the recorded neurons (n = 65). One-sample t-test for the zero mean, p=1.4×10−10. (I) Comparison of the percent evoked-rate modulation between neurons with weaker and stronger responses (the left two bars; stronger: above the median, n = 33; weaker: below the median, n = 32; t-test, p=0.0175), or between best and non-best frequencies (BF vs. non-BF) (the right two bars; n = 43 of 65 neurons that had responses at both best and non-best frequencies; paired t-test, p=6.98×10−4). Each data point denotes a neuron. (J) Percent evoked-rate modulation in neurons with responses only at the onset vs. neurons with sustained responses (onset type: n = 30; sustained type: n = 35; t-test, p=0.103). (K) Scatter plot of percent evoked-rate modulation as a function of best frequencies (n = 65; r = −0.0031, p=0.98). (L) Frequency tuning widths in octaves for stationary and walking conditions. (M) Histogram of tuning width changes (n = 60, one sample Wilcoxon signed rank test, p=3.0×10−7; mean change = −0.29 octaves). (N) Comparison of best frequencies (n = 60). In L-N, neurons that lost all excitatory responses in the walking condition, yielding the tuning width of 0, were not included (n = 5).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A-D) Tone-evoked responses in four example neurons with different types of spontaneous activity modulation during locomotion: increased (A-B), decreased (C), or no change (D). In raster plots and PSTHs, black indicates stationary and green indicates walking trials. (E) Percent evoked-rate modulation in three different types of spontaneous activity modulation. Red: increased, −31 ± 6%, n = 41; blue: decreased, −42 ± 19%, n = 7; gray: no change, −48 ± 9%, n = 17. One-way ANOVA, p=0.27. (F-H) Plots of percent modulation in spontaneous vs. evoked activity in neurons with increased (F), decreased (G), or no change (H) in spontaneous activity during locomotion. No correlation was found between the degrees of spontaneous and evoked activity modulation in the increased (F; r = −0.16, p=0.32, n = 41) or no change group (H; r = 0.11, p=0.67, n = 17). In the decreased group (G), a positive correlation was found (r = 0.83, p=0.02, n = 7).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52228/elife-52228-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Proportions of modulation types in onset only (n = 29), sustained response (n = 34), or suppression only response type (n = 22). In the sustained group (center), the proportion of positive modulation was higher, while in the suppression only group (right), that of negative modulation was higher than in other response types. (B) Modulation index (MI) comparison across the three response types in neurons that showed positive modulation during locomotion. Onset: 0.45 ± 0.08 (n = 15); sustained: 0.37 ± 0.05 (n = 24); suppressed: 0.27 ± 0.07 (n = 8). One-way ANOVA, p=0.29. (C) MI comparison in neurons that showed negative modulation. Onset: −0.34 ± 0.08 (n = 4); sustained: −0.10 ± 0.04 (n = 4); suppressed: −0.25 ± 0.08 (n = 9). One way ANOVA, p=0.29. (D) Latencies of neural modulation relative to locomotion onset did not significantly differ across response patterns (median latencies: onset: −65 msec, n = 5; sustained: −111 msec, n = 13; suppressed: −84 msec, n = 8). Kruskal-Wallis test, p=0.94.
 
 We found that most IC neurons with excitatory tone-evoked responses showed significant attenuation during locomotion (72%, n = 47/65; Figure 4A–C and G). Percent changes in evoked response across the population showed a significant shift toward negative values (Figure 4H, n = 65; one sample t-test, p=1.4×10−10) with a mean change of −36 ± 5%. Percent attenuation was greater in neurons with relatively weaker responses (below the median) than in those with stronger responses (above the median) (Figure 4I, left; stronger: −17 ± 4%, n = 33; weaker: −56 ± 7%, n = 32; t-test, p=0.0175). For individual neurons, average attenuations at non-best frequencies were greater than those at a neuron’s best frequency (Figure 4I, right; n = 43, –27 ± 5% (BF) vs. −48 ± 7% (non-BF); paired t-test, p=6.98×10−4). The greater attenuation of weaker responses within and across neurons may improve the signal-to-noise ratio across the neuronal population during locomotion.
 
@@ -82,19 +110,64 @@ Neural signals induced by locomotion would inform IC neurons of movement and pos
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6N</td>
+      <td>Orient Bio (Korea)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>VGAT-ChR2-EYFP</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:0145498</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>All data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Open Ephys GUI</td>
+      <td>Open Ephys</td>
+      <td></td>
+      <td>Neural data acquisition</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments performed were approved by the Institutional Animal Care and Use Committee of Sungkyunkwan University in accordance with the National Institutes of Health guidelines. Neural recordings were performed in C57BL/6N mice (n = 15) or a transgenic mouse line (VGAT-ChR2-EYFP line with C57BL/6J background in which ChR2-EYFP was targeted to the Slc32a1 gene that encodes VGAT, Jackson Laboratory stock #014548; n = 10) of both sexes, aged 6–10 weeks. Mice were put under a reversed 12 hr light/12 hr dark cycle. Neural recordings were made during the dark cycle. Food and water were accessible at all times. In the present study, we did not use transgene expression in the transgenic line. No differences in the degree of modulation in spontaneous or evoked activity between the two strains were found.
 
-## Headpost surgery
+### Headpost surgery
 
 For neural recordings in a head-fixed preparation, a custom metal headpost was cemented to the skull. Mice were positioned in a stereotaxic device (Kopf Instrument, Itujunga, CA) and anesthetized using Isoflurane (1–4%) delivered via a vaporizer (DRE Veterinary, Louisville, KY). An eye ointment was applied to keep the eyes from drying. A small amount of lidocaine (2%) was injected under the skin overlying the skull, and an incision was made to expose the skull. The connective tissues were gently removed, and the skull surface was allowed to dry. The head was positioned such that difference in the dorso-ventral coordinates of the bregma and lambda was ≤100 μm. A small ground screw was cemented toward the rostral end of the exposed skull surface. For future craniotomy over the IC, markings were made 5 mm posterior to the bregma. A metal headpost was positioned not to obstruct future access to the IC and was secured using dental cement (Super-bond C&B, Sun Medical, Moriyama city, Japan).
 
-## Neurophysiology
+### Neurophysiology
 
 Mice were acclimated to head-fixing and walking on a passive circular treadmill for 2–4 days (one 30 min session per day) prior to neurophysiological recordings. On the day of neural recording, a cranial window (~1.8 mm x 1 mm) was made over the IC under isofluorane anesthesia (1–4%). The window was covered with Kwik-Cast (WPI, Sarasota, FL) and mice were allowed to recover for at least 2 hr. Recordings were made from the IC (AP ~5.0 mm posterior to the bregma, ML ~0.4–1.8 mm from the midline) using either a single tungsten electrode or a linear array of tungsten electrodes (~5 MΩ, FHC, Bowdoin, ME). The electrodes were controlled by a single-axis motorized micro-manipulator (IVM Mini, Scientifica, Uckfield, UK). Neural signals were acquired using a 16-channel headstage (RHD2132, Intan Technologies, Los Angeles, CA) and Open Ephys data acquisition hardware and software. Spiking activity was band-pass filtered (600–6000 Hz) and digitized at 30 kHz. Locomotion on a treadmill was detected using a rotary encoder (Scitech Korea, Seoul, Korea), and the output voltage signal was recorded as analog and digital inputs for further analysis.
 
-## Sound stimuli
+### Sound stimuli
 
 Pure tone stimuli with a sampling rate of 400 kHz were generated in MATLAB (MathWorks, Natick, MA), and presented at 70 dB SPL using a D/A converter (PCIe-6343, National Instruments), a power amplifier (#70103, Avisoft, Glienicke/Nordbahn, Germany), and an ultrasonic speaker (Vifa, Avisoft). The sound system was periodically calibrated for each tone stimulus frequency using a ¼” microphone (Bruel and Kjaer 4939, Nærum, Denmark). During neurophysiological recordings, the speaker was placed 15 cm from the animal’s right ear at 45° from the body midline. In initial recordings, the tone stimulus set consisted of frequencies between 4 kHz and 64 kHz in one octave steps (duration: 100 msec; on and off ramps: 1 msec; presented pseudorandomly at 2 Hz). In subsequent experiments, to better estimate frequency tuning, tone stimuli were presented at frequencies between 2 kHz and 64 kHz in half octave steps (duration: 50 msec; on and off ramps: 1 msec; presented pseudorandomly at 4 Hz). Each tone stimulus was repeated at least 20 times, but typically much more (mean: 131 trials; range: 20–320). Broadband noise stimuli (2–64 kHz) for assessing hearing thresholds were 50 msec long (5 msec on and off ramps) and presented at 20–90 dB SPL in 10 dB steps in a pseudorandom order. Each sound level was repeated at least 50 times.
 
@@ -102,11 +175,11 @@ Sounds generated by locomotion on our treadmill were recorded by placing a micro
 
 Sound stimuli were presented using a custom-written stimulus presenter program written in Python 2.7 (by Jeff Knowles; https://bitbucket.org/spikeCoder/kranky), which communicated with Open Ephys GUI software (http://www.open-ephys.org/gui).
 
-## Deafening
+### Deafening
 
 To prevent mice from hearing sounds generated by locomotion, a bilateral deafening procedure was performed. Mice were anesthetized by intraperitoneal injection of Ketamine/Xylazine (100 mg/10 mg per kg). A small incision was made ventral and posterior to the pinna. To expose the auditory bulla that surrounds the middle ear cavity, the overlying tissue was gently spread using fine forceps. An opening was made in the bulla to visualize the ossicles and cochlea. The ossicles were removed and kanamycin drops (1 mg/ml) were applied 3–4 times at the oval window of the cochlea in an attempt to induce further hair cell damage. The middle ear cavity was filled with gelfoam, the overlying tissue was closed, and the skin was sutured. Mice were given analgesics (meloxicam, 5 mg/kg) and allowed to recover for 2–3 days before receiving headpost surgery for neural recording.
 
-## Data analysis
+### Data analysis
 
 Spikes were detected and sorted offline using commercial spike sorting software (Offline Sorter v4, Plexon, Dallas, TX). Detected spike waveforms were clustered using principal component analysis (PCA), and clusters with a clear separation in PC space were taken as single units. A refractory period of 0.7 msec was imposed, and the rate of refractory period violation was required to be ≤0.5%.
 
@@ -122,11 +195,11 @@ Tone-evoked activity was analyzed in neurons with excitatory response to at leas
 
 Tuning curves were constructed from the average evoked firing rates at different tone frequencies. To quantify tuning widths, tuning curves were first linearly interpolated between neighboring frequencies (100 points), and tuning widths were expressed as four times the second moment about the centroid, measured in octaves (Escabí et al., 2007; Ono et al., 2017). In rare cases (n = 2) where multiple tuning width segments occurred due to a non-responsive tone in the middle, the widths were summed minus the overlap.
 
-## Histology
+### Histology
 
 At the end of a recording session, small lesions were made by applying current (30 μA, 10 sec) through the recording electrodes. Animals were then transcardially perfused using phosphate-buffered saline (PBS) followed by 4% paraformaldehyde. Brains were post-fixed for at least a day and cryoprotected in 30% sucrose before they were cut on a cryostat. Sections were cut at 40 μm thickness, mounted on slides, and processed for Nissl staining. Recording locations were estimated based on the locations of the lesion.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analysis was performed in MATLAB. The significance level was α = 0.05 except for spontaneous activity modulation, where α = 0.01. Normality was assessed using Lilliefors test (lillietest function in MATLAB), and when data significantly deviated from normal distribution, non-parametric tests were used. Results are presented as mean ± SEM unless otherwise noted.
 

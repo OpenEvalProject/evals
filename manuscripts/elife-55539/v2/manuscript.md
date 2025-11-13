@@ -32,7 +32,33 @@ The model consists of numerous bats searching for and attacking prey in a confin
 
 We first demonstrate that our simulations behave similarly to bats. The simulated bats managed to detect, pursue and capture prey at high rates both when hunting alone and when hunting in a group (see Figure 1, Video 1 and Video 2 for examples of hunting by simulated bats). The movement parameters of the bats in both single and multiple individual scenarios were similar to those of actual bats, flying in a flight room (4.5 × 5.5×2.5 m3), suggesting that our model managed to capture the essence of the foraging movement (Figure 1—figure supplement 1). Moreover, the hunting rate of the simulated bats was also comparable to those of real bats. A simulated bat flying in a density of 10 prey items per 100 m2 attacked 5–7 times per 10 s, similar to the rates reported for P. abramus (Fujioka et al., 2014), a bat with similar foraging behavior, hunting in a comparable environment.
 
-## The influence of a spectral JAR
+![Figure 1.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig1-v2.jpg)
+
+**Figure 1.:** (A) A single simulated bat flying in the arena with five prey items. The bat detects two prey items and decides to pursue the closest one (moth a). Panel A1 shows the trajectories of the bat (black) and the moths (blue), the positions of each emitted call (green dots), and the location of the capture (black cross). Panel A2 shows the bat’s velocity (gray), the distance to the prey (black) and relative angle (blue) to it. Panel A3 shows the level of the following signals (while the bat is in the gray-bounded area in panel A1): the transmitted calls (black), the received echoes reflecting off the prey items (green), and the received masking signals (red). Panel A4 shows a spectrogram of the same segment as in panel 3. Note how the frequency drops at the final terminal buzz. (B) Three bats (out of five in the arena) hunting in an environment with 10 prey items. Bat one detects and pursues a moth, while conspecifics (bats 2 and 3) are flying nearby and emitting echolocation calls. Some of the conspecifics' calls mask (or jam) the echoes received by bat 1. Instances of jamming are marked by red diamonds in panels B1-B4. All colors and symbols in B1-B4 are the same as in A1-A4. Magenta lines depict trajectories of conspecifics. Panel B4 also demonstrates the variations between the calls of each bat due to the different behavioral phases. Note that bat two detects and pursues the same prey item and thus emits 'approach' calls. From the detection to the successful capture, bat 1 emitted 64 echolocation calls, 8 of which were jammed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A typical example of one real bat flying with two conspecifics in a closed flight room (5.5 × 4.5×2.5 m3) and with a feeding platform. A1 illustrates the flight trajectory (two dimensional) of the bat in 10 s. A2 illustrates the linear velocity of the bat as a function of time. (B) The flight-path and velocity of one simulated bat flying in a group of three bats with a static target in a 5 × 5 m 2D arena. (C) Boxplots (median, q1, q3 and outliers) of the linear-velocities and angular-velocities of the real bat (black) and simulated bat (gray). Note that both linear velocity and angular velocities of the model are in the range of natural velocities in similar conditions. Additionally, the acceleration of the model was bounded to 4 m/s2 while real bats’ acceleration was below 5 m/s2 during 95% of the time.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (1) The bat emits an echolocation call. (2) Based on the received signals (echoes from objects and masking signals from conspecifics) the bat detects the targets and estimates their relative locations. (3) According to the sensory output, it decides its next maneuver: keep searching, pursue prey or avoid obstacles, and determines its next phase: Search, Approach or Buzz. (4) If the bat experiences masking and if a JAR is applied, it modifies its echolocation calls. Depending on its decision, the bat adjusts the echolocation parameters (5), and its flight speed and direction (6), and after an inter-pulse-interval, emits another echolocation call (1).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Bat1 receives an echo reflecting off prey1 located at a distance of D from it, and an angle of $ϕ_{target}$ relative to its flight direction (red arrow 1). Prey1 is within the detection range of Bat1, depicted by the green shaded piston area. Bat1 also receives masking signals: the calls emitted by Bat2, arrive at the ear of Bat1 at an angle $ϕ_{t_{x}r_{x}}$ relative to its flight direction and from a distance of $D_{t_{x}r_{x}}$ (red arrow 2). The echolocation calls of Bat2 are reflected off Prey#2, and received by Bat#1, as masking signals at a relative angle of angle $ϕ_{r_{x}}$, and from a distance of Drx from Bat1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig1-figsupp4-v2.jpg)
+
+![Video 1.](https://cdn.elifesciences.org/articles/55539/elife-55539-video1.mp4.jpg)
+
+**Video 1.:** The video presents one simulated bat (thick blue line) flying in the arena with one prey item (thin dot). The bat starts flying randomly, and whenever it detects the prey it heads towards it and tries to capture it. After each successful capture, indicated by a cross in the video, a new prey item reappear in a random place in the arena.
+
+![Video 2.](https://cdn.elifesciences.org/articles/55539/elife-55539-video2.mp4.jpg)
+
+**Video 2.:** The upper panel displays three simulated bats (thick lines) flying simultaneously with 10 prey items (colored dots). Thin lines on top of the bats’ trajectories indicate the behavioral phase: ‘green’ for approach, ‘pink’ for buzz, and ‘cyan’ for an obstacle-avoidance maneuver (avoiding the arena-borders or other bats). Red diamonds indicate locations and timings of the jamming events (i.e. whenever the desired echo is completely blocked by a masker). The lower panel shows the level (dB-SPL) of the following signals as a function of time: the transmitted calls (black), the echoes reflecting off the prey items (green), and the received masking signals (red). The illustrated signals are acquired from the trajectory of the bat that is depicted by the dark blue line, starting at the upper-left position.
+
+### The influence of a spectral JAR
 
 We next compared the detection and localization performance of bats applying a JAR to bats that do not actively react to masking signals. In both groups, the individuals’ terminal frequencies of the FM sweep-calls were sampled from a normal distribution with a standard deviation of 4 kHz, as observed in nature (Schnitzler et al., 1987; Schnitzler et al., 1988; Bartonička et al., 2007), and the bats adjusted their calls according to their task and their distance to object. The JAR was modeled as follows: whenever the echoes reflected off the closest prey were jammed, the bat shifted its entire frequency range in steps of 2 kHz, upward or downward, to minimize the frequencies’ overlap between the masking signal and its own call. If the terminal frequency of the masking signal was higher than its own, the bat shifted the entire frequency-band downward, and vice versa. The bat continued shifting the frequency as long as jamming recurred (Materials and methods).
 
@@ -42,15 +68,63 @@ The JAR has been hypothesized to improve the reception of the desired echo by re
 
 In all scenarios, and for the two different receiver models, the jamming avoidance response did not decrease spectral masking, and did not improve detection performance according to any of the three criteria defined above. See Figure 2: One-way ANOVA statistics for correlation and filter-bank, respectively: jamming-probability: F1,237 = 2.96, p=0.09; F1,237=2.26, p=0.13; F1,237 = 0.02 p=0.88, ranging error: F1,237 = 0.1 , p=0.76; F1,241 = 0.01, p=0.96, false-alarm: F1,237=0.19, p=0.66, for filter-bank only.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig2-v2.jpg)
+
+**Figure 2.:** Panels A-C depict three reception criteria as a function of bat density for a correlation-receiver (solid black), and a filter-bank receiver (solid blue) with and without a JAR (dashed gray and dashed turquoise, respectively). The prey density was constant with 20 prey items per 100 m2. (A) Jamming Probability. (B) Range errors. Note that the range-errors are high because they are calculated for all detected prey. The errors for the pursued prey (i.e. the prey items that bats attacked) are substantially lower, since, as the bats approach their targets echoes have higher SNR and the errors decrease. For the correlation receiver, the range errors are calculated as a function of the SNR (see equation 9). For the filter bank receiver, the range errors are derived from the time difference between the estimated time of the detected peak and the arrival time of the desired echo. (C) False-alarm rate, which is measured only for the filter-bank model (Materials and methods). Error-bars depict standard-errors in all panels. Each data point represents 60–80 individual bats in each scenario.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The effect of JAR behavior can be quantified by examining the similarity between the desired prey echoes and the masking signals. Panel A demonstrates the analysis of the search phase: A1 depicts the spectrogram of a transmitted search call with a duration of 7 ms and bandwidth of 8 kHz (see Table 1). A2 illustrates the correlation function between the transmitted call and possible masking signals of bats at different behavioral phases (black - the correlation with another search call, blue and red- the correlation with two different approach calls, and green – the correlation with a buzz call). The correlation gain is defined as the difference between the peak of the auto-correlation and the maximum of the cross-correlation function (blue arrow denotes the correlation gain for the search call relative to the approach1 call). The correlation gain of the transmitted call with a search call is 0 dB by definition. To examine the effect of a JAR response, we gradually shifted the terminal frequencies of the masking signals and calculated the correlation gain for each frequency shift. A3 describes the correlation gain as a function of the frequency shift. The gain improvement due to a JAR response for signals from the same phase (black –'search') is ca. 2 dB per 2 kHz shift. There is no increase in the correlation gain for signals at other phases (red, blue and green). In this analysis, the received level of all signals were equal. Panels B-D depict the same analysis as panel A for additional calls: (B) approach1 ('the first approach call') with a duration of 3 ms and bandwidth of 35 kHz, (C) approach2 (duration: 2 ms, bandwidth: 30 kHz), and (D) buzz calls (duration: 1 ms, bandwidth: 20 kHz). Panels E1-E3 present the results from the performed simulations of the received signals after correlation with the emitted calls across the different stages of the hunt (i.e. search, approach and buzz). Three conditions are shown: 'Self' depicts the correlation between the transmitted call and the desired echoes reflecting off the target. 'JAR' depicts the cross-correlation with the received masking signals (conspecific’s calls and their reflections off prey items, when bats applied spectral JAR. 'No JAR' is the correlation with the masking signals without JAR. Spectral JAR did not significantly reduced the masking signals in comparison to the no-JAR scenarios (permutation test, effect-size = −5.8 dB /−1.8 dB / 0.7 dB, p=0.03*/0.49/0.41, for 3, 10, 20 bats in 100m2, sample-size = 150, 10000 permutations, 100 repetitions). Negative effect-size means that the no-JAR bats had a better correlation than the JAR bats; an asterisk (*) indicates a significant difference (p<0.05). The permutation test was executed as follows: (1) we randomly sampled 150 points from each data-set (i.e., the received level of 'JAR' and 'no JAR'). (2) We defined the sampled effect-size as the difference between the medians of the samples. (3) We randomly distributed the samples between two groups and calculated the effect-size between the two groups. (4) We repeated step 3 for 10,000 times. (5) The p-value of this sample was the proportion of times the effect-size of the permutations was higher than the sampled effect size (in absolute values). (6) We repeated steps 1–5, for 100 times. The p-value is the median of p-values from all the random samples.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The figure depicts the total number of prey detections per 10 s for the correlation-receiver with no-JAR (solid black), the correlation-receiver with JAR (dashed gray), the filter-bank receiver with no JAR (solid blue) and the filter-bank receiver with JAR (dashed turquoise). A JAR had no significant effect on both correlation-receiver and filter-bank receiver: One Way ANOVA: F1,237 = 0.46, p=0.50; F1,237=0.11, p=0.74, respectively. The number of detections with the correlation-receiver is significantly higher than with a filter-bank receiver: One Way ANOVA: F1,481=205, p<1e-10.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) The bat emits an echolocation call and receives an echo from a target (green). The figure illustrates the correlation receiver's output. The reception window (blue) is composed of two periods: the 'forward masking time' that starts 3 ms before the arrival time of the desired echo, and the 'backward masking time' that starts at the arrival time and lasts 1 ms. The 'forward masking threshold' is set to 5 dB below the maximum of the received echo, and the 'backward masking threshold' is equal to that maximum. Any signal (even below the two thresholds) that arrives within the reception window will mask the target’s echo and will reduce its localization accuracy, as a function of the SNR. If a masking signal’s level is above one of the two relevant thresholds, the echo is jammed, and the bat does not detect the target. Panel B illustrates an example of a received echo with three potentially masking signals (red). Masker one is outside the 'reception window' and, therefore, does not affect the detection. Masker two is above the forward masking threshold, thus it jams the echo and the prey is not detected at all. Masker three is received within the reception window but is below the backward threshold, and, consequently, the echo is detected but the localization errors increase, according to the SNR (Equation 9, Equation 10).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Receiver Scheme: the received signal, s(t), is split to n- channels of gammatone filters. In each channel, the signal is filtered by a band-pass filter, with center frequency fck, and input response hk. The signal passes through a low-pass filter (‘envelope detector’) that removes phase information. Then, each signal is shifted in time (τk) to compensate for the chirp slope (i.e. τk is equal to the time difference between the start of the transmitted chirp, and the response in each channel). The receiver integrates the channels and detects the local maxima (i.e. peaks). Then, it estimates the intensities and delays of the detected peaks’ that cross the detection threshold (see text). Panel B depicts the frequency responses of several gammatone filters (11 out of 80). Panel C illustrates the signals in several points at the process: (C1) Spectrogram of a reflected echo from prey (S(t)); (C2) The response of three gammatone filters (fc1,fc2,fc3), before the time shift; (C3) The receiver’s output (Y(t)) after the integration and peak-detection processes.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Errors are defined as the difference between the estimated location and the actual location (range and direction) of all detected prey. (A) Correlation-receiver: the range errors (left panel) and direction errors (right panel) are calculated according to Equation 9: and Equation 10, respectively. Detections with SNR of 10 dB or higher (detections of nearby prey) have standard errors of ca. 1 cm and 2o for range and direction estimations, respectively. Further objects have lower SNR’s, and, hence, higher estimation errors. The averages of the absolute errors for all detections are 10.4 cm and 9o. (B) Filter-bank receiver: the range errors (left panel) are derived from the timing estimations of the peaks of the detected signals (see Materials and methods). Direction errors right panel) are calculated by Equation 10, as for the correlation-receiver. The average of the absolute errors is 1.1 cm, and 5.20, respectively. The error is lower in comparison to the correlation-receiver because the filter-bank receiver only detects higher SNR objects. Apparently, this difference has little effect on the hunting rate. The figure depicts errors for scenarios with 5 bats and 10 prey items.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** We tested the performance of a Filter-Bank model including half-wave rectifier and low-pass filtering without JAR (solid dark red) and with JAR (dashed orange), and compared them with our previous results for the Filter-Bank with an envelope detector (solid blue and dashed turquoise). See Figure 2, Figure 3. Note that we chose a relatively high cutoff frequency and a moderate slope for this model in order to distinguish it from our previous results. Again, in all scenarios with the half-wave rectifier model, the jamming avoidance response did not decrease spectral masking and did not improve performance according to any of the four criteria. One-way ANOVA statistics for the half-wave rectifier filter-bank: hunting performance: F1, 723 = 2.76, p=0.10; jamming-probability: F1,723 = 0.1, p=0.74; ranging errors: F1,723 = 0.03, p=0.86; false-alarm: F1,723 = 1.07, p=0.3.
+
 A possible explanation for this seemingly surprising result is the fact that a bat’s calls continuously vary depending on its behavioral phase and its distance to the targets. Therefore, at any instance, the calls of two bats will already differ, even if their call repertoire is identical. Thus, the influence of additional variability between the calls, achieved by spectral JAR, is insignificant, as we also demonstrate (see Figure 2—figure supplement 1).
 
-## The effect of masking on hunting
+### The effect of masking on hunting
 
 Next, we tested the effect of masking on hunting performance (i.e., the prey capture rate) under different scenarios. We started with a hypothetical scenario (‘no-masking’), in which bats forage in a group without any masking, that is they detect and pursue prey as if there is no sensory masking, but they still have to avoid other bats and sometimes lose prey due to competition. This null-hypothesis scenario enabled us to estimate the non-sensory effects of group hunting, which would be very difficult to do in an experiment with real bats. Ultimately, it allowed us to isolate the effect of sensory masking only. Hunting performance was measured in different bat-densities (from 1 to 20 bats per 100 m2) and different prey densities (3, 10, 20 moths per 100 m2), see Figure 3.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig3-v2.jpg)
+
+**Figure 3.:** The hunting success rate (A1–C1), masking effect (A2–C2) and jamming probability (A3–C3) are presented for three prey densities per 100 m2: three prey items, 10 prey items, 20 prey items. Panels A1-C1 depict the performance as a function of bat density; a green circle shows the performance of a single bat. Line colors and styles depict the performance of different receiver models: solid green - no-masking; solid black - correlation-detector with random frequency variability and without JAR; dashed dark gray - correlation-detector and random frequency with JAR response; dash-dotted light gray - correlation-detector without frequency variability. The regression slopes of no masking condition (green lines) are (mean ± SD): 0.06 ± 0.0065 0.08 ± 0.0084, 0.079 ± 0.013 captures per bat per ten seconds, at the prey densities above, respectively (ANCOVA: F1, 564 = 84.3, p<0.0001; F1, 679 = 90.4, p<0.0001; F1, 431 = 37.8, p<0.0001). There was no significant difference in performance when applying or not applying spectral JAR - see main text and compare gray and black lines. Panels A2-C2 show the masking-effect on hunting, that is the relative decrease in hunting relative to the 'no-masking' condition. Panels A3-C3 present the probability of jamming during the behavioral phases: search (turquoise marker), approach (magenta marker) and buzz (red markers). Jamming probabilities during the search phase were significantly lower by at most 4.5% when using a JAR (ANCOVA, F1, 2422 = 23.42, p<0.0001). However, in the approach and buzz phases (which are more critical for foraging), there was no significant difference between the two models (ANCOVA, F1,2388 = 0.11, p=0.74; F1, 2347 = 0.11, p=0.73, respectively). Error bars show means and standard-errors for 70–120 simulated bats in each data-point.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The hunting success rate is presented for three prey densities per 100 m2: (A) three prey items; (B) 10 prey items; (C) 20 prey items. Panels A1-C1 depict the performance as a function of bat density; a green circle shows the performance of a single bat. Line colors and styles depict the performance of different receiver models: green- no-masking; solid blue – filter-bank receiver with random call variability; dashed turquoise - filter-bank receiver with JAR response; dash-dotted magenta– filter-bank receiver without call variability. In the no-masking condition (green lines) there is a significant degradation in performance as the bat’s density rises from 1, and it reaches to maxima of ca.: 60%, 43%, 32% where, for 20 bats and 3, 10, 20 prey items per 100 m2, respectively. There was no significant difference in performance when applying or not applying spectral JAR- compare turquoise and blue lines (One -way ANOVA: F2,1007=0.467, p=0.529; F2,1355=0.651, p=0.42; F2,1529=0.207, p=0.645. Panels A2-C2 show the masking-effect on hunting, that is the relative decrease in hunting relative to the 'no-masking' condition. The masking effect for 10 and 20 bats per 100 m2 was between 40%, and 60%, respectively. (A3-C3) The probability of jamming at different behavioral phases: search (turquoise marker), approach (magenta marker) and buzz (red markers). For prey densities of 10 and 20 prey items per 100 m2, there was no significant difference between JAR and no JAR scenarios, in all flight-phases (One-way ANOVA). In scenarios including low prey density (i.e., three prey items per 100 m2), the probability of jamming was low, with a maximum of ca. 10%.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** We analyzed the effect of the echoes reflected off the borders of the arena (10 × 10 m) on (A) the detection of prey items and (B) the hunting performance. Different target strengths (the x-axis) can represent the size, shape, and orientation of the background reflectors. For example, if these are round leaves, this range of targets strengths is equivalent to a radii range between 3 cm and 16 cm (at a frequency of 40 kHz). The data-points located left to the dashed lines represent trials without the effect of background clutter. (A) The clutter probability is the probability that the echoes which are reflected off the borders are received by the bat with higher intensities than the echoes reflected off the prey items at the same time (see Materials and methods). The probability increases as the clutter echoes raise. There is no significant difference between the JAR and no-JAR trials (ANCOVA, F1, 997 = 0.002, p=0.96). (B) Hunting performance decreases as a function of clutter gain, without any significant effect of JAR (ANCOVA, F1, 997 = 0.009, p=0.92). 5 Bats and 10 prey items are simulated in each trial. Each data-point represents 100 bats, error bars indicate standard errors.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–D) Pie charts display the proportions of successful and unsuccessful attacks indicating different failure reasons for groups of 1 to 20 bats, with masking ('correlation-detector') and without masking. Each chart is divided into the following categories: (i) captures - maneuvers that ended with a successful capture; (ii) misses - maneuvers in which the bats failed to capture the target because of insufficient maneuvering and/or masking; (iii) avoid obs (obstacles) – flight paths that came too close to the borders of the arena and the bat seized hunting; (iv) avoid cons (conspecifics) – hunting maneuvers that were ended to avoid collision with another bat; (v) lost to cons –hunting attempts that were terminated because the prey was caught by a conspecific. Each panel includes 100 simulated bats. The absolute rates for each category are presented on the left of each pie chart. In all bat densities the proportion of missing the prey increased when adding sensory masking (One-way ANOVA: effect-size = 3%, F1, 198 = 3.21, p=0.075; effect-size = 11%, F1, 198 = 20.7, p*<0.0001; effect-size = 23%, F1, 198 = 68.8, p*<0.0001, for 5, 10 and 20 bats per 100m2).
+
 Even without any sensory masking (i.e., in the ‘no-masking’ condition), hunting performance significantly degraded as bat density increased due to competition over prey and due to the need to avoid conspecifics (Figure 3A–C; see Green lines). The reduction in performance was significant in all prey densities and resulted in a maximum decrease of 36%, 57% and 67% in performance when the bats’ density increased (from 1 to 20) at three prey densities: 3, 10 and 20 prey items per 100 m2, respectively. See Figure 3 A1–C1, One-way ANOVA, F1, 188 = 64.3, p<0.0001; F1, 188 = 58.9, p<0.0001; F1, 128 = 36.1, p<0.0001, respectively.
 
-We next examined the masking-effect which we defined as the reduction in performance resulting from sensory masking only, relative to the no-masking performance (Equation 1).(1)Masking effect= 100*(1-Performance with masking for a given scenarioPerformance  without masking)
+We next examined the masking-effect which we defined as the reduction in performance resulting from sensory masking only, relative to the no-masking performance (Equation 1).
+
+$$
+Maskingeffect=100*(1-\frac{Performancewithmaskingforagivenscenario}{Performancewithoutmasking})
+$$
 
 Sensory masking further hindered hunting under all conditions, but there was no significant difference in performance whether the bats used a JAR or not (Figure 3, A1-C1, compare blue, black and magenta lines; ANCOVA, F3, 1218 = 2.53, p=0.08, F1, 1581 = 0.57, p=0.56, and F1, 1085 = 0.24, p=0.78, for 3, 10 and 20 prey items per 100 m2, respectively. This was the case also for another theoretical scenario that we tested: the ‘no-frequency variation scenario’, in which all bats had the same call repertoire and, hence, it simulates an extreme case with maximal sensory masking (One-way ANOVA, between ‘no-frequency variation’ and JAR with random frequencies: F2,856=2.74, p=0.1; F2,971=0.85, p=0.36; F2,1086=0.43, p=0.64, for prey densities of 3,10 and 20 prey items per 100 m2, respectively). See Figure 3—figure supplement 1 for a similar analysis using the filter-bank model.
 
@@ -60,11 +134,19 @@ We further explored whether the presence of background clutter echoes would modi
 
 We also analyzed the causes of unsuccessful attacks when bats initiated an attack but failed to capture prey. There were four reasons for failed attacks: avoiding collisions with a nearby conspecifics, losing the prey to a conspecific, avoiding an obstacle (the borders of the arena) and missing the prey due to an insufficient maneuver or due to sensory error (resulting for example, from jamming, hereafter ‘Misses’). We analyzed the proportion of these different sources of failure with and without sensory masking (see Figure 3—figure supplement 3). With 20 bats and 10 prey items per 100 m2, without masking, 34 ± 2% of the capture attempts were successful (mean ± SE). The unsuccessful attempts were due to conspecifics avoidance: 27 ± 2%; lost prey to conspecifics: 17 ± 1.5%; obstacle avoidance: 7 ± 2% and misses: 15 ± 2%. When sensory masking was added, the proportion of successful captures significantly decreased to 26 ± 2% (One-way ANOVA, F1, 198=4.59, p=0.033), and misses became the most substantial cause for failure, significantly increasing to 38 ± 3.5% (One-way ANOVA: F1, 198=68.8, p<0.0001). The total number of hunting attempts, however, was not affected by the masking (effect-size = 0.01 trials per 10 s; one-way ANOVA: F1, 198=0.08, p=0.97).
 
-## The effect of the echolocation signal design and the detection threshold on hunting in a group
+### The effect of the echolocation signal design and the detection threshold on hunting in a group
 
 After observing that spectral changes do not assist mitigating jamming, we tested whether other adjustments to echolocation or physiological parameters could improve bats' performance when hunting in a group. We tested the effect of three prime parameters: source level, call duration, and detection threshold (or hearing sensitivity), which is a function of the auditory system and could, in theory, be changed by evolution. For all parameters, we used a range of values suggested in the bat literature. For each of these parameters, we first examined its effect on the overall hunting success when foraging in a group (i.e., including both direct competition and sensory masking), and we then examined the parameter’s effect specifically on the masking.
 
 Increasing the source level improved hunting performance, but only up to a level of ca. 110–120 dB-SPL, (at 0.1 m) above which the improvement was negligible and insignificant (Figure 4 A1, shows that performance increased significantly when source level increased from 90 to 110 dB: ANCOVA, slope = 0.06 captures/dB, F4, 3815=386, p<0.001; performance did not change when source level increased from 120 to 150 dB: F4, 4795=0.1, p=0.98). Interestingly, the source level did not affect the masking effect (i.e., the reduction in performance beyond the no-masking condition), suggesting that increasing the emission level assists hunting in general (through increasing the detection range) and does not assist overcoming the masking problem specifically (Figure 4 A2; F = 2.45, p=0.16, Pearson linear regression).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig4-v2.jpg)
+
+**Figure 4.:** The panels include the following conditions: the correlation-detector with frequencies normally distributed (black), no-masking (green), and one bat (blue). Solid lines indicate a density of 10 prey items while dashed lines represent scenarios with 20 prey.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55539/elife-55539-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The shift in the average frequency of the emitted calls, as a function of bat density. All simulations were performed with the correlation-detector, with no JAR. The bats react to conspecifics flying nearby as objects and modify their echolocation behavior according to the distance between them. The results clearly demonstrate a significant rise in frequencies as the density increases (Regression test, F1,993=64.4, p<0.0001), there is also a significant rise in frequency when increasing the bat density from 1 to 2 bats per 100 m2 (t-test: t = 3.15, p=0.0017, DF = 389). All trials with one prey item in the arena. The graph indicates mean and standard errors.
 
 Changing the duration of search-calls had no significant effect on the hunting performance (Figure 4 B1: ANCOVA, F1, 2314=0.15, p=0.69). To test the effect of call duration we slightly varied the simulation (see the detection section in the Materials and methods).
 
@@ -92,96 +174,296 @@ Our work demonstrates the power of simulations to reveal new insight into comple
 
 ## Materials and methods
 
-## General
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MATLAB R2018b. MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Model; Simulation</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Newly created using MATALB. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JMP14</td>
+      <td>JMP14 Statistical Discovery. From SAS</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### General
 
 The MATLAB model simulates the flight and echolocation behavior of Pipistrellus kuhlii bats. This small insectivorous bat (approximately 5–9 g) is common in the Mediterranean region and is often observed in groups of ~5 individuals foraging around a street-light (Amichai et al., 2015; Kalko, 1995; Schnitzler et al., 1987; Barak and Yom‐Tov, 1989). Our hunting-ground is a 10 × 10m2 2D area with no obstacles. Our model consists of three major modules: the prey module, the bat module, and the acoustics module. The prey module controls the flight maneuvers of the simulated moths. The bat module simulates the bat's behavior and executes the following processes: decision making, echolocation behavior, flight control, and sensory processing. The acoustics module calculates the received level and timings of all the signals composing the acoustic input (i.e. desired echoes, conspecific calls, and echoes generated by conspecific calls).
 
-## The prey module
+### The prey module
 
-The movement of the targets was simulated by a 'correlated random walk' model, resembling a flight path of a moth (Stevenson et al., 1995; Willis and Arbas, 1991). The linear velocity has an average of 1m/s and it changes every 100ms according to Equation 2, where the velocity's change (∆υ) is sampled from a normal distribution: 0±0.1m/s (mean± SD, standard deviation). The velocity is bounded between 0.8 and 1.2m/s. The flight direction is determined according to Equation 3. In this equation,θn˙, the angular velocity during a 100ms section is a normal random variable with distribution: 0±2 rad/s (mean± SD), and τ is the sample time of the model (0.5 ms). The starting position of each moth is drawn from a uniform distribution across the 2D area, its initial flight-direction is random between 0 to 2π radians, and the starting velocity is also normally distributed: 1±0.1m/s (mean± SD).(2)vpn+1=vpn+∆υ(3)θpt+τ=θpt+θn˙·τ
+The movement of the targets was simulated by a 'correlated random walk' model, resembling a flight path of a moth (Stevenson et al., 1995; Willis and Arbas, 1991). The linear velocity has an average of 1m/s and it changes every 100ms according to Equation 2, where the velocity's change ($\Deltaυ$) is sampled from a normal distribution: 0±0.1m/s (mean± SD, standard deviation). The velocity is bounded between 0.8 and 1.2m/s. The flight direction is determined according to Equation 3. In this equation,$\theta_{n}˙$, the angular velocity during a 100ms section is a normal random variable with distribution: 0±2 rad/s (mean± SD), and τ is the sample time of the model (0.5 ms). The starting position of each moth is drawn from a uniform distribution across the 2D area, its initial flight-direction is random between 0 to $2\pi$ radians, and the starting velocity is also normally distributed: 1±0.1m/s (mean± SD).
 
-The simulated prey does not detect or respond to the pursuing bats. When a moth reaches the borders of the confined area, it changes its flight angle by π2rad relative to the border (to return into the foraging area). To keep a constant prey-density during the simulation, each time a bat captures a moth, a new moth is added to the environment at a random position with a random flight direction.
+$$
+v_{p}n+1=v_{p}n+\Deltaυ
+$$
 
-## The bat module
 
-## Decision making
+
+$$
+\theta_{p}t+\tau=\theta_{p}t+\theta_{n}˙·\tau
+$$
+
+The simulated prey does not detect or respond to the pursuing bats. When a moth reaches the borders of the confined area, it changes its flight angle by $\frac{\pi}{2}rad$ relative to the border (to return into the foraging area). To keep a constant prey-density during the simulation, each time a bat captures a moth, a new moth is added to the environment at a random position with a random flight direction.
+
+### The bat module
+
+#### Decision making
 
 The echolocation behavior and flight-control of the simulated bats are illustrated in Figure 1—figure supplement 2. At the beginning of a simulation, each bat starts foraging in a random position and transmits echolocation calls with 'search' phase parameters (Table 1).
 
+**Table 1.**
+ the echolocation parameters in the different hunting phases.Once prey is detected, the hunting phase is defined by the distance to the target. Based on Table 1. During each behavioral phase, the IPI, call duration, bandwidth, and level (in dB) are reduced linearly between the start and end values (Table 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Flight phase</th>
+      <th>Search</th>
+      <th colspan="2">Approach</th>
+      <th colspan="3">Buzz</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Parameter</td>
+      <td></td>
+      <td>Start</td>
+      <td>End</td>
+      <td>Terminal 1 start</td>
+      <td>Terminal 1 end</td>
+      <td>Terminal 2</td>
+    </tr>
+    <tr>
+      <td>Inter Pulse Interval [ms]</td>
+      <td>100</td>
+      <td>70</td>
+      <td>35</td>
+      <td>18</td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Call Duration [ms]</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Terminal Frequency [kHz]</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Chirp Bandwidth [kHz]</td>
+      <td>8</td>
+      <td>35</td>
+      <td>30</td>
+      <td>30</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Source Level [dB-SPL]</td>
+      <td>110</td>
+      <td>110</td>
+      <td>90</td>
+      <td>90</td>
+      <td>80</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Distance to target [m]</td>
+      <td>&gt;1.2</td>
+      <td>1.2</td>
+      <td>0.4</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>&lt;0.2</td>
+    </tr>
+  </tbody>
+</table>
+
 After emitting an echolocation call, the bat processes the acoustic inputs (including all echoes and masking sounds, see above) and decides its next step. The rules of the decision making are as follows: (1) If the bat's flight-path comes too close to another bat (less than 20 cm) or the borders of the area, it avoids them and changes its flight direction and velocity. (2) If one or more prey items are detected, the bat chooses the closest one and executes a hunting maneuver. (3) Else, the bat continues searching. According to its decision, the bat adjusts its flight control and echolocation behavior. This decision process is executed every inter-pulse-interval (i.e., between the emissions of two echolocation calls).
 
-## Echolocation behavior
+#### Echolocation behavior
 
 The echolocating behavior of the simulated bats was modeled based on a rich body of literature (Schnitzler et al., 1987; Wilson and Moss, 2004; Kober and Schnitzler, 1990; Kuc, 1994). The foraging behavior of insectivorous bats is divided into three main phases: 'Search', 'Approach', and 'Buzz' (Griffin et al., 1965). Each phase is characterized by a different set of echolocation parameters. Our model follows the echolocation and hunting behavior of Pipistrellus kuhlii based on field studies (Kalko, 1995; Schnitzler et al., 1987). The bats in the simulation emit Frequency Modulated (FM) down-sweep signals (mimicking P. kuhliis' first harmonic, see Table 1).
 
-## Alternative JAR models
+### Alternative JAR models
 
 Bats emit linear frequency modulated (FM) down-sweeps. We tested three versions of the model: (1) all bats have the same baseline call, meaning that if two bats are in the same phase and equal distances to targets, their calls will be identical. (2) The bats’ terminal frequency was sampled from a normal distribution, with a mean set to 39 kHz, and a standard deviation of 4 kHz in the 'Search' phase. The bandwidth of the calls is constant between bats, so the entire frequency range shifts according to the terminal frequency. This frequency range is in line with the variance of the terminal frequencies reported in the field for this species (Schnitzler et al., 1987). (3) To examine the effect of JAR in the third version of the model, bats used active JAR. They evaluated whether their echoes were jammed (i.e., the masking signal blocked the detection of the closest prey). In such cases, they shifted their terminal frequency upward or downward in steps of 2 kHz, to reduce the overlap with the masking signal (i.e. if the masker's frequency was lower than their own, they would raise their frequency). These frequency-shifts are in line with the findings of studies reporting evidence of JAR (Ulanovsky et al., 2004; Gillam et al., 2007). The bats kept transmitting the modified call for five consecutive calls, and if during that period another echo was jammed, the bats shifted their frequency again in the proper direction. The terminal frequencies were bounded between 35 and 43 kHz (i.e., there was no shift beyond these boundaries). Real bats could, in theory, sense jamming based on several cues. for example during prey pursuit, a bat has expectations regarding the level and the direction of a received echo and a jamming signal would probably violet these expectations. Furthermore, during a search phase, even before the first echo from the target is detected, bats could potentially sense jamming signals based on their spectra which are different from those of reflected echoes, and perhaps also based on the angle of the sound-source which can be outside the echolocation field of view.
 
-## Flight Control
+#### Flight Control
 
-Before a prey is detected, simulated bats fly according to a 'correlated random walk' path, with a constant linear velocity 3.5 m/s and a random change of direction, sampled from a normal distribution of angular velocities: 0 ± 1 rad/sec (mean ± SD) (Vanderelst and Peremans, 2018; Erwin et al., 2001; Kuc, 1994). A new angular velocity is sampled before each echolocation emission and the bat turns according to this velocity until the next emission. Once a target is detected the bat turns toward the prey by changing its angular velocity according to its relative direction to the target, using a delayed linear adaptive law described in Vanderelst and Peremans, 2018; Ghose, 2006. This dependency is described in Equation 4, where θ˙bat(t+τ) is the angular velocity of the bat in the next time-sample (i.e., time  t+τ), kr is a gain coefficient, limited by the maximal acceleration of the bat (set to 4 m/s2), and ∅target(t) is the current angle between the target and the bat.(4)θ˙bat(t+τ)=kr⋅ϕtarget(t)
+Before a prey is detected, simulated bats fly according to a 'correlated random walk' path, with a constant linear velocity 3.5 m/s and a random change of direction, sampled from a normal distribution of angular velocities: 0 ± 1 rad/sec (mean ± SD) (Vanderelst and Peremans, 2018; Erwin et al., 2001; Kuc, 1994). A new angular velocity is sampled before each echolocation emission and the bat turns according to this velocity until the next emission. Once a target is detected the bat turns toward the prey by changing its angular velocity according to its relative direction to the target, using a delayed linear adaptive law described in Vanderelst and Peremans, 2018; Ghose, 2006. This dependency is described in Equation 4, where $\theta˙_{bat}(t+\tau)$ is the angular velocity of the bat in the next time-sample (i.e., time $t+\tau$), kr is a gain coefficient, limited by the maximal acceleration of the bat (set to 4 m/s2), and $∅_{target}(t)$ is the current angle between the target and the bat.
 
-We neglect head movements; the original model (Vanderelst and Peremans, 2018; Ghose, 2006; Falk et al., 2014) refers to the gaze angle (i.e., the angle between the head's direction and the target), but for simplicity, we assume that the head and body are aligned. Even though we know the head and body are not always aligned; this assumption does not affect the behaviors tested in this study. To keep its direction aligned with the target, the bat typically slows down when the angle to the target (ϕtarget)  is large and accelerates linearly when the target is straight ahead (Ghose et al., 2006; Jones and Rayner, 1991). To model this, we implemented a velocity-model suggested by Vanderelst and Peremans to simulate this behavior (Vanderelst and Peremans, 2018), described in Equation 5. Vphase is the maximal velocity in each behavioral phase (3.5m/s in the approach and search phases, and 2m/s during the buzz phase). Like the direction, the bat adjusts its velocity after each inter-pulse-interval. Indeed, the accelerations and turning rates of the simulated bats correspond well to those reported in the field (Ghose et al., 2006; Jones and Rayner, 1991), see Figure 1—figure supplement 1. (5)Vbat(t+τ)=Vphase⋅cos(ϕtarget(t))
+$$
+\theta˙_{bat}(t+\tau)=k_{r}⋅ϕ_{target}(t)
+$$
+
+We neglect head movements; the original model (Vanderelst and Peremans, 2018; Ghose, 2006; Falk et al., 2014) refers to the gaze angle (i.e., the angle between the head's direction and the target), but for simplicity, we assume that the head and body are aligned. Even though we know the head and body are not always aligned; this assumption does not affect the behaviors tested in this study. To keep its direction aligned with the target, the bat typically slows down when the angle to the target ($ϕ_{target})$ is large and accelerates linearly when the target is straight ahead (Ghose et al., 2006; Jones and Rayner, 1991). To model this, we implemented a velocity-model suggested by Vanderelst and Peremans to simulate this behavior (Vanderelst and Peremans, 2018), described in Equation 5. $V_{phase}$ is the maximal velocity in each behavioral phase (3.5m/s in the approach and search phases, and 2m/s during the buzz phase). Like the direction, the bat adjusts its velocity after each inter-pulse-interval. Indeed, the accelerations and turning rates of the simulated bats correspond well to those reported in the field (Ghose et al., 2006; Jones and Rayner, 1991), see Figure 1—figure supplement 1. 
+
+$$
+V_{bat}(t+\tau)=V_{phase}⋅cos(ϕ_{target}(t))
+$$
 
 A successful hunt (capture) is achieved when the bat is less than 5 cm from the prey (Vanderelst and Peremans, 2018).
 
 We validated our flight model against the flight trajectories of real bats. We used the movement of three P. kuhli bats recorded in Taub and Yovel, 2020 trained to search for and land on a static target in a flight room (4.5 × 5.5×2.5 m3). Then, we performed a simulation with three bats in a 5 × 5m2 arena with one static prey item and compared between the flight trajectories and movement parameters. The flight paths, linear velocities, angular velocities, and accelerations of the model were similar to those of the actual bats (Figure 1—figure supplement 1) implying that our model represents the foraging movement.
 
-## Sensory processing
+#### Sensory processing
 
 The simulated bat detects and estimates the range and direction of objects in the environment (prey and obstacles), based on the incoming acoustic input. Echoes will only be processed if they cross the auditory threshold set to 0 dB-SPL based on the literature (Boonman et al., 2013; Poussin and Simmons, 1982; Coles et al., 1989; Popper and Fay, 1995) (we also tested the influence of that threshold between 0–30 dB-SPL, see results, Figure 4C). We define such detected echoes as 'Pre-Masking Echoes'. Next, we calculate the effect of masking using two different detection-models: the correlation-receiver which is a well-studied theoretical reference model, and the gammatone filter-bank receiver which represents the temporal reaction of the inner ear to auditory signals. After the preliminary detection, the bat chooses its target again, from the non-jammed echoes.
 
 The correlation-receiver is based on a similarity between the bat’s own transmitted calls and the received signals (Denny, 2004; Saillant et al., 1993). The detector calculates two correlations: (i) the self-correlation between the echo and its own transmitted call. (ii) The cross-correlation between the masking signal and its transmitted call. For the echo to be detected, the self-correlation peak should be higher than the cross-correlation peak with more than the 'forward detection threshold' (set to 5 dB) if the cross-correlation peak is within 3 ms before the echo, and higher than the masking peak by more than the 'backward detection threshold' (e.g. 0 db), if the masking signal arrives within 1 ms after the desired echo (see Figure 2—figure supplement 3). The periods and thresholds were defined according to 'the law of first wave-front' (Popper and Fay, 1995) ch. 2.4.5, (Blauert, 1997) ch. 3.1 and (Mhl and Surlykke, 1989), and comprise lower boundaries of real bats’ abilities to cope with masking (Beleyur and Goerlitz, 2019). For simplicity, we used constant thresholds within each window. Even if the echo is detected, masking signals may still degrade the accuracy of the sensory estimations, that is the distance and angle, see below. Masking sounds arriving outside the reception window do not interfere with detection.
 
-The filter-bank receiver is based on the bat hearing model described in Weißenbacher and Wiegrebe (2003) (Weissenbacher and Wiegrebe, 2003). The detector consists of an 80-channel gammatone filter-bank with frequency bandwidths simulating the tuning curve of the inner-ear (Boonman and Ostwald, 2007; Wittekindt et al., 2005). The impulse response of each channel in this model is given by Equation 6; where n is the filter order (set to 4), b is the time constant of the impulse-response (set to 0.15 fc), fc is the center frequency of the channel (Equation 7). The signal is filtered by a lowpass filter, which keeps only the envelope of the signal (‘envelope detector’). Note, that some biological models (e.g. Sanderson et al., 2003) assume that part of the phase information is available to the bat. We chose to implement a simpler biological model in order to set the lower bound for the problem, as opposed to the cross-correlation model that we tested and provides an upper-bound for the effect of JAR. However, to validate that the alternative biological model does not change the results, we also implanted the half-wave rectifier with a 10kHz LPF model and confirmed that it did not influence our results in one context (see Figure 2—figure supplement 6).(6)g(t)=atn−1e−2πbtcos(2πfct)(7)fck=5702∙2k/20.9
+The filter-bank receiver is based on the bat hearing model described in Weißenbacher and Wiegrebe (2003) (Weissenbacher and Wiegrebe, 2003). The detector consists of an 80-channel gammatone filter-bank with frequency bandwidths simulating the tuning curve of the inner-ear (Boonman and Ostwald, 2007; Wittekindt et al., 2005). The impulse response of each channel in this model is given by Equation 6; where $n$ is the filter order (set to 4), $b$ is the time constant of the impulse-response (set to 0.15 $f_{c}$), $f_{c}$ is the center frequency of the channel (Equation 7). The signal is filtered by a lowpass filter, which keeps only the envelope of the signal (‘envelope detector’). Note, that some biological models (e.g. Sanderson et al., 2003) assume that part of the phase information is available to the bat. We chose to implement a simpler biological model in order to set the lower bound for the problem, as opposed to the cross-correlation model that we tested and provides an upper-bound for the effect of JAR. However, to validate that the alternative biological model does not change the results, we also implanted the half-wave rectifier with a 10kHz LPF model and confirmed that it did not influence our results in one context (see Figure 2—figure supplement 6).
+
+$$
+g(t)=at^{n−1}e^{−2\pibt}cos(2\pif_{c}t)
+$$
+
+
+
+$$
+f_{ck}=5702∙2^{k/20.9}
+$$
 
 Then, we shift each channel in time to compensate for the delay time between the emission time and the response time of each channel, according to the chirp’s slope. Finally, we sum the time-compensated filter-channels and look for peaks in the integrated signal. Prominent peaks that are higher than the detection-threshold, set to7 dB-SPL, are referred to as potentially detected echoes, and their distance from the bat is estimated relative to the peak detection-time, see Figure 2—figure supplement 4 panel C. Note that these peaks might be a result of desired echoes or masking signals and their amplitude will be determined simply by running them through the filter-bank model.
 
 Like with the correlation-receiver, for each transmitted call, we implemented the filter-bank receiver twice: (a) only on the echoes from the bat’s own emitted call, and (b) on both masking signals and echoes. We compared the peaks detected in (a) with the peaks in (b) and then defined the following criteria: a jammed signal is a peak that was detected in (a) but not in (b). The time-estimation error is the difference between the estimated peak-time in (b) and the actual received time of the reflected echo. If the first peak in (b) was not detected in (a) and was the first detected peak (in both a and b), the bat mistakenly decided to pursue a ‘fake target’ (i.e., a masking signal). This case was defined as a false-alarm. Note that ‘correlation-receiver’ assumes that the bat can differ between desired prey echoes and masking signals and echoes from conspecifics (Amichai et al., 2015; Yovel et al., 2009). On the other hand, the ‘filter-bank receiver’ did not assume that the bat can discriminate between desired echoes and masking signals and the simulated bats thus pursued the first detected echo (which is, in this case, a masking signal). Therefore, false-alarms were only applicable to the filter-bank receiver.
 
-The SNR (Signal to Noise and interference Ratio) is calculated for each detector by Equation 8.(8)SNR={max(SelfCorr)max(CrossCorr)+NoideLevel,forCorrelationDetectormax(Pdr)max(pdmask)t∈detectiontime+NoiseLevelforFilter−BankDetector
+The SNR (Signal to Noise and interference Ratio) is calculated for each detector by Equation 8.
+
+$$
+SNR={\frac{max(SelfCorr)}{max(CrossCorr)+NoideLevel},forCorrelationDetector\frac{max(Pd_{r})}{max(pd_{mask})_{t\indetectiontime}+NoiseLevel}forFilter−BankDetector
+$$
 
 To analyze the effect of call duration on performance, we modified the model by implementing the correlation-detector in the detection process too, before the masking calculations. Here, the received echo was first correlated with the emitted call, and then it was compared to a detection-threshold. The detection threshold for the correlation was set to 15 dB-SPL, which equals to the maximum of the autocorrelation of n 8 ms 'search' call.
 
-After the detection process, the bat estimates the range and the Direction Of Arrival (DOA) of the reflecting object, based on all of the received signals (echoes and masking signals). The range estimation is based on the acoustic two-way time-travel of the signal with an error (Equation 9), comprised of two elements: the bat's accuracy in measuring time, and a noise term which reduces with increasing SNR (Equation 8, calculated using either the Correlation or the Filter-bank model). For simplicity, because all bat calls are FM-chirps, we use an error that is independent of the signal's parameters: the term k1SNR, where k1 is a coefficient set to scale the error to values of ±1cm at SNR of 10dB, based on behavioral studies (Denny, 2004; Popper and Fay, 1995; Masters and Raver, 1996; Moss and Schnitzler, 1989). The independence of the signal’s parameters is reasonable because all bat signals (calls, echoes, and masking signals) in our simulation were similar. The term TimeRes (in Equation 9) is sampled from a Gaussian distribution with a mean ± SD of 0±50 microseconds, equivalent to a range error of 0.85 cm, which is a low boundary estimation of bats capabilities to measure distance (Genzel et al., 2019). 'c' is the speed of sound: 343m/s.(9)    Rangeerror  = (k1SNR)2+(0.5∙c∙TimeRes)2
+After the detection process, the bat estimates the range and the Direction Of Arrival (DOA) of the reflecting object, based on all of the received signals (echoes and masking signals). The range estimation is based on the acoustic two-way time-travel of the signal with an error (Equation 9), comprised of two elements: the bat's accuracy in measuring time, and a noise term which reduces with increasing SNR (Equation 8, calculated using either the Correlation or the Filter-bank model). For simplicity, because all bat calls are FM-chirps, we use an error that is independent of the signal's parameters: the term $\frac{k_{1}}{SNR}$, where $k_{1}$ is a coefficient set to scale the error to values of ±1cm at SNR of 10dB, based on behavioral studies (Denny, 2004; Popper and Fay, 1995; Masters and Raver, 1996; Moss and Schnitzler, 1989). The independence of the signal’s parameters is reasonable because all bat signals (calls, echoes, and masking signals) in our simulation were similar. The term $Time_{Res}$(in Equation 9) is sampled from a Gaussian distribution with a mean ± SD of 0±50 microseconds, equivalent to a range error of 0.85 cm, which is a low boundary estimation of bats capabilities to measure distance (Genzel et al., 2019). 'c' is the speed of sound: 343m/s.
 
-The estimation error of the DOA, see Equation 10, includes an error which depends on the DOA (i.e. k3+k4∙sin⁡ϕ ), set such that the error equals 1.5o at 0o DOA, and error of 10o at 90o DOA, and a Gaussian noise term: 0o±1o (mean ± SD) at SNR=10dB, see k2SINR in ('Hearing by Bats', Chapter 3.1, Popper and Fay, 1995; Simmons et al., 1983). Figure 2—figure supplement 5 depicts the histogram of the consequential range errors and DOA errors. Note, in our model, we did not simulate the HRTF (Head Related Transfer Function).(10)DOAerror=(k2SNR)2+(k3+k4⋅sin(ϕ))2
+$$
+Range_{error}=\sqrt{(\frac{k_{1}}{SNR})^{2}+(0.5∙c∙Time_{Res})^{2}}
+$$
+
+The estimation error of the DOA, see Equation 10, includes an error which depends on the DOA ($i.e.k_{3}+k_{4}∙sin⁡ϕ)$, set such that the error equals 1.5o at 0o DOA, and error of 10o at 90o DOA, and a Gaussian noise term: 0o±1o (mean ± SD) at SNR=10dB, see $\frac{k_{2}}{SINR}$ in ('Hearing by Bats', Chapter 3.1, Popper and Fay, 1995; Simmons et al., 1983). Figure 2—figure supplement 5 depicts the histogram of the consequential range errors and DOA errors. Note, in our model, we did not simulate the HRTF (Head Related Transfer Function).
+
+$$
+DOA_{error}=\sqrt{(\frac{k_{2}}{SNR})^{2}+(k_{3}+k_{4}⋅sin(ϕ))^{2}}
+$$
 
 In general, our model intentionally underestimates the bats’ actual performance, and thus real bats are likely to cope with acoustic masking even better than our simulated bats: (1) we simulated monaural bats, while real bats use two ears with spatial selectivity (Griffin et al., 1963). We also did not model the effect of reducing masking achieved thanks to directional hearing and referred to as spatial unmasking. Spatial unmasking can improve the detection in the presence of off-axis maskers by up to ca. 30 dB in the Big Brown Bat, Eptesicus fuscus (Sümer et al., 2009). (2) We assumed a low detection threshold (0 dB-SPL), thus the bats were more susceptible to masking (see Figure 4 C2). (3) We chose long backward and forward masking windows (3 ms, 1 ms), and low jamming thresholds: 0 dB for backward masking, 5 dB for forward masking (e.g. a masking signal that was received first, even if it is 5 dB lower than the desired echo, will completely jam it). (4) The model implied a pulse-by-pulse detection and estimation strategy with no memory, therefore, temporal miss-detections caused by momentary jamming had a very substantial effect on hunting attempts.
 
-## Acoustics calculations
+### Acoustics calculations
 
-The estimated intensities of the reflected echoes based on the sonar/radar equation (Mazar, 2016, pp. 196–198), shown in Equation 11, angles and distances are defined according to Figure 1—figure supplement 3.(11)Pr=Pt⋅Gt(ϕtarget,f)⋅Gr(ϕtarget,f)λ2(4π)3D4⋅10−2αatt(f)/10⋅(D−0.1)⋅σ(f)
+The estimated intensities of the reflected echoes based on the sonar/radar equation (Mazar, 2016, pp. 196–198), shown in Equation 11, angles and distances are defined according to Figure 1—figure supplement 3.
+
+$$
+P_{r}=P_{t}⋅\frac{G_{t}(ϕ_{target},f)⋅G_{r}(ϕ_{target},f)\lambda^{2}}{(4\pi)^{3}D^{4}}⋅10^{−2\alphaatt(f)/10⋅(D−0.1)}⋅\sigma(f)
+$$
 
 Where:
 
-The source level (Pt) of a search call equals 110 dB-SPL at a distance of 0.1 meters from the source (Simmons et al., 1983). Pt during the hunt varies according to the distance to the prey (see Table 1). The transmission gain of the bat's mouth Gt(ϕ,f) is modeled by a circular piston source (Strother and Mogus, 1970; Kounitsky et al., 2015; Jakobsen and Surlykke, 2010), given in Equation 12. The directivity of the emitted call depends on the ratio between the wavelength of the signal (λ) and the radius of the emitter (mouth), 'a' (set to 3 mm [Kounitsky et al., 2015]); J1 is the Bessel function of the first order and k= 2π/λ. G0 of the mouth (at the head direction) is set to 1, matching the measurements of intensities of bat's calls from a distance of 0.1m.(12)G(λ,ϕ)=G0⋅[2J1(K⋅a⋅sinϕtarget)K⋅a⋅sinϕtarget]2(13)G0={1:mouthgain4πλ2πa2:eargain
+The source level (Pt) of a search call equals 110 dB-SPL at a distance of 0.1 meters from the source (Simmons et al., 1983). Pt during the hunt varies according to the distance to the prey (see Table 1). The transmission gain of the bat's mouth Gt($ϕ,f)$ is modeled by a circular piston source (Strother and Mogus, 1970; Kounitsky et al., 2015; Jakobsen and Surlykke, 2010), given in Equation 12. The directivity of the emitted call depends on the ratio between the wavelength of the signal (λ) and the radius of the emitter (mouth), 'a' (set to 3 mm [Kounitsky et al., 2015]); J1 is the Bessel function of the first order and k= 2π/λ. G0 of the mouth (at the head direction) is set to 1, matching the measurements of intensities of bat's calls from a distance of 0.1m.
 
-To estimate the gain of the ears (Gr(ϕ) in Equation 11), we modeled them as circular planes, using the piston model (Kuc, 1994), with 'a' (the ear radius) set to 7 mm, matching Pipistrellus kuhlii's ear size (Keeley et al., 2018). G0, the maximum gain of the ear, is defined by Equation 13 (Mazar, 2016 equation 5.36, pp. 181), where A is the geometric area of the ear. Since Pipistrellus bats do not move their ears, this is a reasonable estimate.
+$$
+G(\lambda,ϕ)=G_{0}⋅[\frac{2J_{1}(K⋅a⋅sinϕ_{target})}{K⋅a⋅sinϕ_{target}}]^{2}
+$$
+
+
+
+$$
+G_{0}={1:mouthgain\frac{4\pi}{\lambda^{2}}\pia^{2}:eargain
+$$
+
+To estimate the gain of the ears (Gr($ϕ)$ in Equation 11), we modeled them as circular planes, using the piston model (Kuc, 1994), with 'a' (the ear radius) set to 7 mm, matching Pipistrellus kuhlii's ear size (Keeley et al., 2018). G0, the maximum gain of the ear, is defined by Equation 13 (Mazar, 2016 equation 5.36, pp. 181), where A is the geometric area of the ear. Since Pipistrellus bats do not move their ears, this is a reasonable estimate.
 
 The original piston model is symmetric: the back-lobe is equal to the front-lobe. In our model, bats receive signals from the back hemisphere too, therefore we modified the piston model for the back hemisphere (for transmission and reception), and it is shaped by the piston model with additional attenuation of 0–20 dB, increasing linearly (in dB) from ±90° to ±180°, relative to the bat. The modified piston model for ear and mouth are illustrated in Figure 1—figure supplement 4.
 
-αatt in the sonar equation (Equation 11) is the atmospheric absorption coefficient, set to temperature 20°C and humidity 50%, is approximated by Equation 14 (Kuc, 1994).(14)αatt=3.8∙10-2fkHz-0.3    [dBm]
+$\alpha_{att}$ in the sonar equation (Equation 11) is the atmospheric absorption coefficient, set to temperature 20°C and humidity 50%, is approximated by Equation 14 (Kuc, 1994).
 
-σ, the Radar (sonar) Cross-Section (RCS, or 'target strength') of the moth, is modeled as a disc with a radius ('r') equals 2 cm, equally reflecting in all directions. We apply the approximation of the RCS for this type of reflector (Pouliguen et al., 2008), given in Equation 15, where A is the geometric area of the disc (A=πr2). 'r' was set to 2cm, simulating a moth's wing-length. This approximation is in line with measurements of the target strength of medium-sized insects (Boonman et al., 2013; Figure 1; Kober and Schnitzler, 1990).(15)σ=4πA2λ2
+$$
+\alpha_{att}=3.8∙10^{-2}f_{kHz}-0.3[\frac{dB}{m}]
+$$
 
-The receiving time-delays of the echoes are the 2-way duration of the signals propagating from the emitter to the target, see Equation 16, where, 'c' denotes sound velocity, D is the distance between bat and target, and t is the overall travel time from the emission to the reception.(16)t=2D/c
+$\sigma$, the Radar (sonar) Cross-Section (RCS, or 'target strength') of the moth, is modeled as a disc with a radius ('r') equals 2 cm, equally reflecting in all directions. We apply the approximation of the RCS for this type of reflector (Pouliguen et al., 2008), given in Equation 15, where A is the geometric area of the disc (A=πr2). 'r' was set to 2cm, simulating a moth's wing-length. This approximation is in line with measurements of the target strength of medium-sized insects (Boonman et al., 2013; Figure 1; Kober and Schnitzler, 1990).
 
-The received level of masking signals (Pmask), i.e. echolocation calls transmitted by conspecific bats (tx) and received by the bat (rx), is calculated by Equation 17, where Pt is the source level of the masking call, and the angles are depicted in Figure 1—figure supplement 3.(17)Pmask=Pt⋅Gt(ϕtxrx)4πD2⋅Gr(ϕrxtx)4π10αatt⋅(D−0.1)=PtGt(ϕtxrx)Gr(ϕrxtx)⋅(λ4πD)210−αatt⋅(D−0.1)
+$$
+\sigma=\frac{4\piA^{2}}{\lambda^{2}}
+$$
 
-In addition to its own echoes (Equation 11) and conspecific calls (Equation 17), each bat also receives echoes that are reflections off objects from conspecific calls. The intensities of these potentially masking sounds are estimated by modifying Equation 11 (sonar equation), with fitting angles and distances. This calculation is described in Equation 18, and the angles are defined in Figure 1—figure supplement 3, arrows 3–4.(18)PechoesfromMasking=Pt⋅Gt(ϕtx⋅Gr(ϕrx)λ2(4π)3Dtx2Drx210−αatt⋅(Dtx+Drx−0.2)⋅σ(f)
+The receiving time-delays of the echoes are the 2-way duration of the signals propagating from the emitter to the target, see Equation 16, where, 'c' denotes sound velocity, D is the distance between bat and target, and t is the overall travel time from the emission to the reception.
+
+$$
+t=2D/c
+$$
+
+The received level of masking signals ($P_{mask})$, i.e. echolocation calls transmitted by conspecific bats ($t_{x}$) and received by the bat ($r_{x}$), is calculated by Equation 17, where $P_{t}$ is the source level of the masking call, and the angles are depicted in Figure 1—figure supplement 3.
+
+$$
+P_{mask}=P_{t}⋅\frac{G_{t}(ϕ_{t_{x}r_{x}})}{4\piD^{2}}⋅\frac{G_{r}(ϕ_{r_{x}t_{x}})}{4\pi}10^{\alphaatt⋅(D−0.1)}=P_{t}G_{t}(ϕ_{t_{x}r_{x}})G_{r}(ϕ_{r_{x}t_{x}})⋅(\frac{\lambda}{4\piD})^{2}10^{−\alphaatt⋅(D−0.1)}
+$$
+
+In addition to its own echoes (Equation 11) and conspecific calls (Equation 17), each bat also receives echoes that are reflections off objects from conspecific calls. The intensities of these potentially masking sounds are estimated by modifying Equation 11 (sonar equation), with fitting angles and distances. This calculation is described in Equation 18, and the angles are defined in Figure 1—figure supplement 3, arrows 3–4.
+
+$$
+P_{echoesfromMasking}=P_{t}⋅\frac{G_{t}(ϕ_{tx}⋅G_{r}(ϕ_{rx})\lambda^{2}}{(4\pi)^{3}D_{tx}^{2}D_{rx}^{2}}10^{−\alphaatt⋅(D_{tx+D_{rx}−0.2})}⋅\sigma(f)
+$$
 
 In nature, bats must also deal with the background or clutter echoes reflected off nearby objects, such as vegetation or cave-walls. To examine how background clutter echoes influence hunting in a group and with and without using a JAR, we ran another set of simulations where we also simulated the echoes of the borders of the arena. The borders were modeled as an array of points separated by 5.7 degrees, relative to the bat’s emission. We calculated the timings and intensities of each echo reflected off the points, using the sonar equation (Equation 11), with a target radius of 3 cm (similar to the size of a leaf). We gradually increased the reflectors’ target strength by 0 to 40 dB at the frequency of 40 kHz, simulating a variety of shapes and materials of reflectors. We then summed (using a non-coherent summing) the echoes of all points within an angle of ±90 degrees relative to the bat's emission. We defined a clutter masking event whenever the summed clutter echo is received during the reception window time (see above and Figure 2—figure supplement 3) with higher level than the echo from the prey item. In a clutter masking event, the bat does not detect the prey item at all. The results are depicted in Figure 3—figure supplement 2. All other trials were performed without any background clutter.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 In each scenario that we simulated, we tested the effect of the varied parameters on hunting performance using ANCOVA, ANOVA, or multiple regression, depending on the type of the parameters (e.g. continuous or categorical) and their number. The Statistics were calculated using Standard Least Squares method with JMP 14 and MATLAB R2018b.
 
-For testing the significance of the masking effect, we used a different procedure. Because the masking effect is a ratio (see Equation 1) we had to compute its SD. Thus, for each set of conditions, we estimated the standard deviation of the masking effect, using Equation 19 (Stuart and Ord, 1998). To determine whether the masking effect significantly dependent on the tested parameters, we simulated 100 points in each scenario with the average and SD calculated above and executed ANCOVA to estimate the F test, for the simulated scenario. We repeated this process 1000 times in each scenario and used the average results of the F tests and p-values as the statistics. This process of repetitions was executed only for the statistics of the masking effect.(19)(1)E(uv)=EuEv(2)STD(uv)=EuEv⋅(σu2Eu2+σv2Ev2)
+For testing the significance of the masking effect, we used a different procedure. Because the masking effect is a ratio (see Equation 1) we had to compute its SD. Thus, for each set of conditions, we estimated the standard deviation of the masking effect, using Equation 19 (Stuart and Ord, 1998). To determine whether the masking effect significantly dependent on the tested parameters, we simulated 100 points in each scenario with the average and SD calculated above and executed ANCOVA to estimate the F test, for the simulated scenario. We repeated this process 1000 times in each scenario and used the average results of the F tests and p-values as the statistics. This process of repetitions was executed only for the statistics of the masking effect.
 
-We also evaluated the 'Jamming Probability' as the proportion of pursued prey echoes (echoes of prey the bat chose to pursue) that are blocked by masking signals (Equation 20). Note, that this ratio is not the proportion of all the jammed echoes to all detected echoes, because for each call there can be several detected echoes from different prey items, but only one (maximum) is pursued.(20)Jamming Probability≡total pursuit jamming echoestotal number of echoes from hunted prey
+$$
+(1)E(\frac{u}{v})=\frac{E_{u}}{E_{v}}(2)STD(\frac{u}{v})=\frac{E_{u}}{E_{v}}⋅\sqrt{(\frac{\sigma_{u}^{2}}{E_{u}^{2}}+\frac{\sigma_{v}^{2}}{E_{v}^{2}})}
+$$
 
-## Source data
+We also evaluated the 'Jamming Probability' as the proportion of pursued prey echoes (echoes of prey the bat chose to pursue) that are blocked by masking signals (Equation 20). Note, that this ratio is not the proportion of all the jammed echoes to all detected echoes, because for each call there can be several detected echoes from different prey items, but only one (maximum) is pursued.
+
+$$
+JammingProbability≡\frac{totalpursuitjammingechoes}{totalnumberofechoesfromhuntedprey}
+$$
+
+### Source data
 
 Source data and code summary table: The attached Source data and code summary table summarizes the source-data and source code used to produce the figures of this research. The source-data and source-code are attached as supplementary data, hereafter. readme Bat Simulation: The file ‘readme Bat Simulation’ explains how to execute the attached GUI (Graphical User Interface) and MATALB code which generate the sensorimotor predator-prey simulation.

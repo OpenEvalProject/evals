@@ -20,24 +20,24 @@
 
 ### Affiliations
 
-1. https://ror.org/047272k79 Telethon Kids Institute, The University of Western Australia Perth Australia
-2. https://ror.org/01dbmzx78 Respiratory Environmental Health, Wal-yan Respiratory Research Centre, Telethon Kids Institute Nedlands Australia
-3. https://ror.org/02n415q13 Occupation, Environment and Safety, School of Population Health, Curtin University Perth Australia
-4. https://ror.org/01dbmzx78 Telethon Kids Institute Nedlands Australia
-5. https://ror.org/047272k79 School of Psychological Sciences, University of Western Australia Perth Australia
-6. https://ror.org/0384j8v12 University of Sydney, Faculty of Medicine and Health, Specialty of Child and Adolescent Health Melbourne Australia
-7. https://ror.org/04d87y574 Sydney Children’s Hospitals Network (Westmead) and Kids Research Geelong Australia
-8. https://ror.org/02czsnj07 Deakin University, IMPACT – the Institute for Mental and Physical Health and Clinical Translation, School of Medicine Geelong Australia
-9. https://ror.org/02rktxt32 Murdoch Children’s Research Institute, Royal Children’s Hospital Parkville Australia
-10. https://ror.org/02rktxt32 Department of Paediatrics, University of Melbourne, Royal Children’s Hospital Parkville Australia
-11. https://ror.org/048fyec77 Reproductive Epidemiology, Murdoch Children's Research Institute Parkville Australia
-12. https://ror.org/02czsnj07 Deakin University, School of Psychology, Faculty of Health Geelong Australia
-13. https://ror.org/02rktxt32 Murdoch Children’s Research Institute, Centre for Adolescent Health, Royal Children’s Hospital Melbourne Australia
-14. https://ror.org/03r8z3t63 University New South Wales, National Drug and Alcohol Research Centre Sydney Australia
-15. https://ror.org/047272k79 Harry Perkins Institute of Medical Research, QEII Medical Centre and Centre for Medical Research, The University of Western Australia Perth Australia
-16. https://ror.org/047272k79 ARC Centre of Excellence in Plant Energy Biology, School of Molecular Sciences, The University of Western Australia Perth Australia
-17. https://ror.org/02n415q13 National Drug Research Institute, enAble Institute, Curtin University Perth Australia
-18. https://ror.org/01dbmzx78 Wal-yan Respiratory Research Centre, Telethon Kids Institute Nedlands Australia
+1. Telethon Kids Institute, The University of Western Australia Perth Australia ([ROR:047272k79](https://ror.org/047272k79))
+2. Respiratory Environmental Health, Wal-yan Respiratory Research Centre, Telethon Kids Institute Nedlands Australia ([ROR:01dbmzx78](https://ror.org/01dbmzx78))
+3. Occupation, Environment and Safety, School of Population Health, Curtin University Perth Australia ([ROR:02n415q13](https://ror.org/02n415q13))
+4. Telethon Kids Institute Nedlands Australia ([ROR:01dbmzx78](https://ror.org/01dbmzx78))
+5. School of Psychological Sciences, University of Western Australia Perth Australia ([ROR:047272k79](https://ror.org/047272k79))
+6. University of Sydney, Faculty of Medicine and Health, Specialty of Child and Adolescent Health Melbourne Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+7. Sydney Children’s Hospitals Network (Westmead) and Kids Research Geelong Australia ([ROR:04d87y574](https://ror.org/04d87y574))
+8. Deakin University, IMPACT – the Institute for Mental and Physical Health and Clinical Translation, School of Medicine Geelong Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
+9. Murdoch Children’s Research Institute, Royal Children’s Hospital Parkville Australia ([ROR:02rktxt32](https://ror.org/02rktxt32))
+10. Department of Paediatrics, University of Melbourne, Royal Children’s Hospital Parkville Australia ([ROR:02rktxt32](https://ror.org/02rktxt32))
+11. Reproductive Epidemiology, Murdoch Children's Research Institute Parkville Australia ([ROR:048fyec77](https://ror.org/048fyec77))
+12. Deakin University, School of Psychology, Faculty of Health Geelong Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
+13. Murdoch Children’s Research Institute, Centre for Adolescent Health, Royal Children’s Hospital Melbourne Australia ([ROR:02rktxt32](https://ror.org/02rktxt32))
+14. University New South Wales, National Drug and Alcohol Research Centre Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+15. Harry Perkins Institute of Medical Research, QEII Medical Centre and Centre for Medical Research, The University of Western Australia Perth Australia ([ROR:047272k79](https://ror.org/047272k79))
+16. ARC Centre of Excellence in Plant Energy Biology, School of Molecular Sciences, The University of Western Australia Perth Australia ([ROR:047272k79](https://ror.org/047272k79))
+17. National Drug Research Institute, enAble Institute, Curtin University Perth Australia ([ROR:02n415q13](https://ror.org/02n415q13))
+18. Wal-yan Respiratory Research Centre, Telethon Kids Institute Nedlands Australia ([ROR:01dbmzx78](https://ror.org/01dbmzx78))
 
 † Corresponding author
 
@@ -57,7 +57,7 @@ Given the lack of clarity around the effects of typical patterns of alcohol cons
 
 ## Results
 
-## Comparison of prenatal characteristics across treatment groups
+### Comparison of prenatal characteristics across treatment groups
 
 To investigate the effects of early moderate PAE and an HMD diet across pregnancy on offspring DNA methylation and behavioural outcomes, we employed a murine model with four treatment groups. Treatment groups were designed to assess the effect of alcohol on offspring DNA methylation compared to control mice. An additional treatment group included a maternal diet high in methyl donors, with and without alcohol exposure (Figure 1).
 
@@ -75,7 +75,7 @@ The trajectory of weight gain during pregnancy was similar across all treatment 
 
 **Figure 3.:** There was no significant difference in the average gain of weight in dams between (a) days 1–17 and (b) days 1–19 by treatment group. Both timepoints were included due to some pregnancies ending by day 19. (c) Dams given supplemented chow consumed significantly lower total quantity of liquid across pregnancy. Bar plots show mean and standard deviation for each treatment group. Each point represents one dam. (d) The trajectory of chow consumed by dams across pregnancy significantly varied with the addition of treatments. Points show mean and standard deviation for each treatment group. Statistical analysis involved linear mixed effects regression comparing trajectories of treatment groups to H2O-NC baseline control group. N=36.
 
-## Effects of early moderate PAE on DNA methylation in newborn mice tissue
+### Effects of early moderate PAE on DNA methylation in newborn mice tissue
 
 A subset of 16 newborn pups (n=4 per treatment) matched for sex and litter size were selected for WGBS. Both neonatal brain and liver were harvested to investigate the effects of early moderate PAE on fetal CpG DNA methylation. A total of 21,842,961 CpG sites were initially available for analysis.
 
@@ -91,7 +91,120 @@ Global levels of DNA methylation stratified across different genomic contexts we
 
 Lower DNA methylation with early moderate PAE in NC mice was more frequently observed in liver DMRs (93.5% of liver DMRs), while brain DMRs were almost equally divided between lower and higher DNA methylation with early moderate PAE (52.6% of brain DMRs had lower DNA methylation with early moderate PAE). Some DMRs localised to the same genes in both brain and liver, although they were different regions. The three genes affected by PAE in both brain and the liver tissues were the Autism Susceptibility Gene 2 (Auts2), Androglobin (Adgb), and RNA Binding Protein Fox 1 (Rbfox1) genes (Table 1). In both brain and liver tissues, DMRs were enriched in non-coding intergenic and open sea regions and relatively underrepresented in coding and CpG island regions (Figure 5e and f). Using open chromatin assay and histone modification datasets from the ENCODE project, we found enrichment (p<0.05) of DMRs in open chromatin regions (ATAC-seq), enhancer regions (H3K4me1), and active gene promoter regions (H3K27ac), in mouse fetal forebrain tissue and fetal liver (Table 2). Gene ontology enrichment analysis of liver DMRs that did localise to genes showed enrichment in 10 predominantly neuronal pathways, with neuron projection being the most significant (Figure 5g, Supplementary file 1c and d).
 
-## HMD mitigates the effects of early moderate PAE on DNA methylation
+**Table 1.**
+ Table of differentially methylated regions (DMRs) identified in the intronic regions of genes that contained DMRs in both the brain and liver.Δmeth indicates the percentage change in average methylation level within the DMR with prenatal alcohol exposure (PAE) compared to non-PAE mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Tissue</th>
+      <th>Intronic DMR</th>
+      <th>Width</th>
+      <th>No. CpGs</th>
+      <th>Δmeth</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auts2</td>
+      <td>Brain</td>
+      <td>chr5:131510296–131510465</td>
+      <td>170</td>
+      <td>5</td>
+      <td>–23.5%</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Auts2</td>
+      <td>Liver</td>
+      <td>chr5:131621828–131621999</td>
+      <td>172</td>
+      <td>4</td>
+      <td>–22.5%</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Adgb</td>
+      <td>Brain</td>
+      <td>chr10:10455557–10455883</td>
+      <td>327</td>
+      <td>4</td>
+      <td>–25.0%</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Adgb</td>
+      <td>Liver</td>
+      <td>chr10:10353338–10353613</td>
+      <td>276</td>
+      <td>4</td>
+      <td>–25.9%</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Rbfox1</td>
+      <td>Brain</td>
+      <td>chr16:6813039–6813217</td>
+      <td>179</td>
+      <td>5</td>
+      <td>–24.3%</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Rbfox1</td>
+      <td>Liver</td>
+      <td>chr16:6781985–6782330</td>
+      <td>346</td>
+      <td>5</td>
+      <td>–22.6%</td>
+      <td>&lt;0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Number and percentage of brain and liver differentially methylated regions (DMRs) that overlap with tissue-specific regulatory regions.ATAC-seq, H3K4me1, and H3K27ac regions were obtained at 0 days postnatal from the ENCODE database. p-Values for permutation testing using a randomisation strategy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Assay type</th>
+      <th>Brain DMRs</th>
+      <th>Brain randomised regions</th>
+      <th>Liver DMRs</th>
+      <th>Liver randomised regions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATAC-seq</td>
+      <td>21/78 (26.92%), p=0.01</td>
+      <td>1/78 (1.28%), p=0.16</td>
+      <td>53/759 (6.98%)p=0.01</td>
+      <td>22/759 (2.90%)p=0.31</td>
+    </tr>
+    <tr>
+      <td>H3K4me1</td>
+      <td>4/78 (5.13%)p=0.03</td>
+      <td>2/78 (2.56%)p=0.18</td>
+      <td>38/759 (5.01%)p=0.05</td>
+      <td>35/759 (4.61%)p=0.32</td>
+    </tr>
+    <tr>
+      <td>H3K27ac</td>
+      <td>9/78 (11.54%)p=0.01</td>
+      <td>2/78 (2.56%)p=0.74</td>
+      <td>48/759 (6.32%)p=0.01</td>
+      <td>19/759 (2.50%)p=0.26</td>
+    </tr>
+  </tbody>
+</table>
+
+### HMD mitigates the effects of early moderate PAE on DNA methylation
 
 To determine whether administration of an HMD throughout pregnancy could mitigate the effects of PAE on offspring DNA methylation, we examined alcohol-sensitive DMRs identified in the previous analysis in the HMD mice. Compared to control mice (H2O+NC), PAE+HMD mice exhibited significant (p<0.05) DNA methylation differences in only 12/78 (15%) brain (Supplementary file 1g), and 124/759 (16%) liver (Supplementary file 1h) DMRs, suggesting the effects were predominantly mitigated. Effect sizes compared to mice on the normal chow were substantially lower, in some cases more than 25% reduced in mice on the HMD diet (Figure 6).
 
@@ -99,7 +212,7 @@ To determine whether administration of an HMD throughout pregnancy could mitigat
 
 **Figure 6.:** Average DNA methylation effect sizes above 30% with PAE were observed in some (a) brain and (b) liver differentially methylated regions (DMRs) in normal chow (NC) mice. Mean absolute difference in methylation with PAE is reduced within the HMD mice in (c) brain and (d) liver. Each point represents one DMR. Point colour indicates change in DNA methylation with PAE. Points with a high number of cytosine-guanines (CpGs) and methylation difference are annotated with associated gene if located within a genic region. HMD was associated with (e) higher methylation in the DMR identified proximal to Lamb1 on chromosome 12 in brain and (f) lower methylation in the DMR identified proximal to Socs5 on chromosome 17 in liver. Each plot represents a separate treatment group. Each blue vertical line indicates a CpG site, with the height and corresponding left y-axis indicating the methylation ratio. The grey line and corresponding right y-axis indicate coverage at each CpG site. The black horizontal line indicates (e) 40% and (f) 80% methylation for comparison purposes. The x-axis indicates the base position on the chromosome, with the pink shaded area highlighting the DMR. DMR plots include 200 base pair flanking regions on each side of the DMR.
 
-## Effects of early moderate PAE and HMD on behavioural outcomes in adult mice
+### Effects of early moderate PAE and HMD on behavioural outcomes in adult mice
 
 Remaining littermates from each treatment group were reared to adulthood and underwent behavioural testing assessing various neurocognitive domains that can be affected in FASD including locomotor activity, anxiety, spatial recognition, memory, motor coordination, and balance. There was no evidence that early moderate PAE had a significant effect on any of the behavioural outcomes tested (Figure 7). Mice exposed to HMD exhibited greater locomotor activity, in terms of distance travelled (Figure 8).
 
@@ -111,15 +224,221 @@ Remaining littermates from each treatment group were reared to adulthood and und
 
 **Figure 8.:** HMD was associated with increased locomotor activity compared to NC, indicated by significantly greater total distance travelled in the (a) open field test (N=104), (b) object recognition test (N=108), (c) elevated plus maze test (N=88), and (d) object in place test (N=98) by unpaired t-test. Bars show mean and standard deviation. Each point represents one mouse. NC = normal chow, HMD = high methyl diet, PAE = prenatal alcohol exposure. Time interval for each mouse was (a–c) 300 s and (d) 180 s.
 
-## Replication studies in human PAE and FASD case-control cohorts
+### Replication studies in human PAE and FASD case-control cohorts
 
 We undertook validation studies by examining PAE-sensitive regions identified in our murine model using existing DNA methylation data from human cohorts to address the generalizability of our findings. Only 36 of the 78 (46.2%) brain DMRs, and 294 of the 759 (38.8%) liver DMRs, had homologous regions in the human genome that were able to be tested. In this validation study, DNA methylation array data from 147 newborn buccal swabs from the Asking Questions About Alcohol in Pregnancy (AQUA) cohort (Muggli et al., 2022) were available from this cohort (96 moderate PAE and 51 controls). We performed differential testing on a total of 1898 CpG sites that corresponded to mouse DMRs, comparing ‘never exposed’ newborns to ‘any exposure’ and found no evidence of differential DNA methylation at these CpG (data not shown). We also accessed publicly available DNA methylation array measurements from buccal swabs taken from a Canadian clinical cohort of children with diagnosed FASD and controls (GSE109042). To avoid confounding due to ancestry, we analysed the 118 Caucasian individuals (30 FASD and 88 controls). Differential testing of a total of 2316 CpG sites that were homologous to mouse DMRs statistically replicated seven DMR associations with FASD status (FDR p<0.05) after adjusting for participant age, sex, array number, and estimated cell counts (Table 3). Visual comparisons of DNA methylation across these seven DMRs revealed striking differences in effect sizes between people with FASD and our murine model (Figure 9). Genes associated with these DMRs are linked to clinically relevant traits in the GWAS catalogue including facial morphology (GADD45A; Indencleef et al., 2021), educational attainment (AP2B1; Okbay et al., 2022), intelligence (RP9; Davies et al., 2019), autism and schizophrenia (ZNF823; Autism Spectrum Disorders Working Group of The Psychiatric Genomics Consortium, 2017).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/92135/elife-92135-fig9-v1.jpg)
 
-**Figure 9.:** Lussier et al., 2018 human fetal alcohol spectrum disorder (FASD) cohort.Examples of two PAE DMRs that had significantly lower DNA methylation with a clinical diagnosis of FASD in the Lussier et al., 2018 cohort (a and c), while their mouse liftover DMR also had significantly lower DNA methylation with PAE in the murine model experiment (b and d).
+**Figure 9.:** Examples of two PAE DMRs that had significantly lower DNA methylation with a clinical diagnosis of FASD in the Lussier et al., 2018 cohort (a and c), while their mouse liftover DMR also had significantly lower DNA methylation with PAE in the murine model experiment (b and d).
 
-## Candidate gene analysis of previously defined alcohol-sensitive regions
+**Table 3.**
+ Differentially methylated regions (DMRs) identified in the murine model that were validated in the Lussier et al., 2018 human case-control cohort for a clinical diagnosis of fetal alcohol spectrum disorder (FASD).The upper section describes properties of Lussier et al., 2018 human DMRs. The lower section describes properties of the equivalent murine model DMRs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>DMR</th>
+      <th>Organism</th>
+      <th>Tissue</th>
+      <th>Chr</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Width</th>
+      <th>No. CpGs</th>
+      <th>FDR</th>
+      <th>Meandiff</th>
+      <th>Gene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Human</td>
+      <td>Buccal</td>
+      <td>1</td>
+      <td>68151571</td>
+      <td>68152310</td>
+      <td>740</td>
+      <td>5</td>
+      <td>0.028636</td>
+      <td>–0.00497</td>
+      <td>GADD45A</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Human</td>
+      <td>Buccal</td>
+      <td>19</td>
+      <td>13000782</td>
+      <td>13002357</td>
+      <td>1576</td>
+      <td>11</td>
+      <td>0.000197</td>
+      <td>–0.00203</td>
+      <td>GCDH</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Human</td>
+      <td>Buccal</td>
+      <td>7</td>
+      <td>33148815</td>
+      <td>33149316</td>
+      <td>502</td>
+      <td>11</td>
+      <td>0.001149</td>
+      <td>–0.00011</td>
+      <td>RP9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Human</td>
+      <td>Buccal</td>
+      <td>17</td>
+      <td>33905444</td>
+      <td>33905888</td>
+      <td>445</td>
+      <td>14</td>
+      <td>0.000171</td>
+      <td>–0.00359</td>
+      <td>AP2B1, PEX12</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Human</td>
+      <td>Buccal</td>
+      <td>17</td>
+      <td>27181503</td>
+      <td>27182342</td>
+      <td>840</td>
+      <td>11</td>
+      <td>0.018536</td>
+      <td>–0.00246</td>
+      <td>ERAL1, FAM222B</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Human</td>
+      <td>Buccal</td>
+      <td>19</td>
+      <td>12992181</td>
+      <td>12992479</td>
+      <td>299</td>
+      <td>9</td>
+      <td>0.037431</td>
+      <td>–0.00179</td>
+      <td>CTD-2265O21.7, DNASE2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Human</td>
+      <td>Buccal</td>
+      <td>19</td>
+      <td>11849531</td>
+      <td>11850013</td>
+      <td>483</td>
+      <td>9</td>
+      <td>0.022724</td>
+      <td>–0.00244</td>
+      <td>ZNF823</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Mouse</td>
+      <td>Liver</td>
+      <td>6</td>
+      <td>67034885</td>
+      <td>67035082</td>
+      <td>197</td>
+      <td>4</td>
+      <td>&lt;0.05</td>
+      <td>–0.220833</td>
+      <td>E230016M11Rik</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mouse</td>
+      <td>Liver</td>
+      <td>8</td>
+      <td>84901298</td>
+      <td>84901544</td>
+      <td>246</td>
+      <td>5</td>
+      <td>&lt;0.05</td>
+      <td>–0.234457</td>
+      <td>Klf1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mouse</td>
+      <td>Liver</td>
+      <td>9</td>
+      <td>22453836</td>
+      <td>22453893</td>
+      <td>57</td>
+      <td>5</td>
+      <td>&lt;0.05</td>
+      <td>–0.226427</td>
+      <td>Rp9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Mouse</td>
+      <td>Brain</td>
+      <td>14</td>
+      <td>21403570</td>
+      <td>21403622</td>
+      <td>52</td>
+      <td>4</td>
+      <td>&lt;0.05</td>
+      <td>–0.234193</td>
+      <td>Adk</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Mouse</td>
+      <td>Liver</td>
+      <td>11</td>
+      <td>78069463</td>
+      <td>78070002</td>
+      <td>539</td>
+      <td>9</td>
+      <td>&lt;0.05</td>
+      <td>–0.255864</td>
+      <td>Mir144, Mir451a</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Mouse</td>
+      <td>Liver</td>
+      <td>11</td>
+      <td>78072079</td>
+      <td>78072313</td>
+      <td>234</td>
+      <td>4</td>
+      <td>&lt;0.05</td>
+      <td>–0.215227</td>
+      <td>Mir144, Mir451a</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Mouse</td>
+      <td>Liver</td>
+      <td>2</td>
+      <td>177091927</td>
+      <td>177092945</td>
+      <td>1018</td>
+      <td>5</td>
+      <td>&lt;0.05</td>
+      <td>–0.224354</td>
+      <td>Intergenic</td>
+    </tr>
+  </tbody>
+</table>
+
+### Candidate gene analysis of previously defined alcohol-sensitive regions
 
 We also undertook a replication analysis in our murine data of previously published alcohol-sensitive regions by undertaking a systematic review of previously published mammalian studies (Bestry et al., 2022). Candidate gene studies identified 21 CpG sites (FDR<0.05) in the brain from 15,132 CpG sites tested, including two sites in the Mest (Peg1) gene and 19 sites in Kcnq1 (KvDMR1) (Supplementary file 1i). There were nine FDR-significant CpG sites identified in the liver out of 15,382 CpG sites tested, all of which were in Peg3 (Supplementary file 1j). All FDR-significant CpG sites from both tissues had higher DNA methylation in mice with PAE.
 
@@ -141,22 +460,22 @@ In conclusion, this study demonstrates that early moderate PAE can disturb fetal
 
 ## Materials and methods
 
-## Murine subjects and housing
+### Murine subjects and housing
 
 To study the effects of early moderate PAE on offspring DNA methylation processes, we adapted a murine model study design that has previously reported DNA methylation changes at the Avy locus in Agouti mice (Kaminen-Ahola et al., 2010; Figure 1). This study received animal ethics approval from the Telethon Kids Institute Animal Ethics Committee (Approval Number: 344). Sixty nulliparous C57BL/6J female mice aged ~8 weeks were mated with equivalent stud male mice. Pregnant dams were randomly assigned to one of four treatment groups (n=15 dams per group) that varied based on composition of the drinking water and chow given to the dams:
 
-## WGBS of newborn mouse tissues
+### WGBS of newborn mouse tissues
 
 Pups selected for WGBS in each intervention group were matched on sex and litter size to minimize variability in exposure. Two male and two female pups per treatment group (n=16 total) were euthanised by intraperitoneal injection with ketamine and xylazine on the day of birth for WGBS of their brain and liver tissues. Mouse tissue samples were stored at –80°C. Remaining littermates grew until adulthood for behavioural testing. Ten milligrams of tissue were collected from each liver and brain and lysed in Chemagic RNA Tissue10 Kit special H96 extraction buffer. Total nucleic acid was extracted from the tissues using the Chemagic 360 instrument (PerkinElmer) and quantified with Qubit DNA High Sensitivity Kit (Catalogue Number: Q32854, Thermo Scientific). 100 ng of genomic DNA was spiked with 0.5 ng of unmethylated lambda DNA (Catalogue Number: D1521, Promega) to assess the bisulfite conversion efficiency. Each sample was digested with 2 µl RNase A (Invitrogen) at 37°C for 20 min to remove RNA. 100 ng of genomic DNA from each sample was sheared using a Covaris M220 (300 bp settings, Covaris). Libraries were prepared using the Lucigen NxSeq AmpFREE Low DNA Library Kit (Catalogue Number: 14000-1, Lucigen), according to the manufacturer’s instructions. Nextflex bisulfite-seq barcodes (Catalogue Number: Nova-511913, PerkinElmer) were used as the adapters with incubation at 25°C for 30 min. The libraries were bisulfite converted using the Zymo EZ DNA Methylation-Gold Kit (Catalogue Number: D5005, Zymo Research) and PCR amplified using the KAPA HiFi Uracil PCR Kit (Catalogue Number: ROC-07959052001, Kapa Biosystems). The final libraries were assessed with the Agilent 2200 Tapestation System using D1000 Kit (Catalogue Number: 5067-5582). WGBS was performed by Genomics WA sequencing core on a NovaSeq 6000 (Illumina) using 2×150 bp chemistry on an S4 flow cell. The bisulfite conversion rate in each tissue sample was at least 99%. The overall mean coverage in each sample was 9.69× (range: 6.51–12.12×).
 
-## Behavioural testing in adult mice
+### Behavioural testing in adult mice
 
 Littermates who were not sacrificed at birth were reared on normal chow and drinking water ad libitum until adulthood (~8 weeks after birth) when they underwent behavioural tests assessing five neurodevelopmental domains that can be affected by PAE including locomotor activity, anxiety, spatial recognition, memory, motor coordination, and balance. These tests included the open field test (locomotor activity, anxiety) (Seibenhener and Wooten, 2015), object recognition test (locomotor activity, spatial recognition) (Lueptow, 2017), object in place test (locomotor activity, spatial recognition) (Murai et al., 2007), elevated plus maze test (locomotor activity, anxiety) (Komada et al., 2008), and two trials of the rotarod test (motor coordination, balance) (Deacon, 2013). Between mouse subjects, behavioural testing equipment was cleaned with 70% ethanol. Video recording was employed for all behavioural tests, except for the rotarod, and the assessment process was semi-automated using ANY-maze software (Stoelting Co., Wood Dale, IL, USA).
 
-## Statistical analysis
+### Statistical analysis
 
 Dam characteristics and pup behavioural testing results were generally assessed using unpaired t-tests comparing each treatment group to the baseline control group that was given non-acidified reverse osmosis water and normal chow throughout pregnancy. Trajectories of liquid consumption and weight gain across pregnancy were assessed using a quadratic mixed effects model and the trajectory of chow consumption across pregnancy was assessed using a linear mixed effects model. To examine the effect of alcohol exposure on behavioural outcomes we used linear regression with alcohol group (binary) as the main predictor adjusted for diet and sex. For sequencing data, raw fastq files were mapped to the mm10 mouse reference genome with BSseeker 2 (version 2.1.8) (Guo et al., 2013) and CG-maptools (version number 0.1.2) (Guo et al., 2018) using a custom bioinformatics pipeline. CGmap output files were combined as a bsseq object in the R statistical environment (R Development Core Team, 2021). We filtered the sex chromosomal reads and then combined reads from mice in the same treatment group using the collapseBSseq function, to maximise coverage prior to differential DNA methylation analysis. CpG sites with an aggregated coverage below 10× in each tissue type were removed prior to modelling to ensure there was sufficient coverage in all assessed CpG sites. This retained 94.9% of CpG sites in the brain and 93.8% of CpG sites in the liver. DMRs were identified within each tissue using a Bayesian hierarchical model comparing average DNA methylation ratios in each CpG site between PAE and non-PAE mice using the Wald test with smoothing, implemented in the R package DSS (Wu et al., 2015). False discovery rate (FDR) control was achieved through shrinkage estimation methods. We declared DMRs as those with a local FDR p-value<0.05 based on the p-values of each individual CpG site in the DMR, and minimum mean effect size (delta) of 5%. Gene ontology analysis was performed on the brain and liver DMRs using the gene set enrichment analysis computational method (Subramanian et al., 2005) to determine if the DMRs were associated with any transcription start sites or biological processes. Brain and liver DMRs were tested for enrichment within ENCODE Project datasets (Luo et al., 2020) by an overlap permutation test with 100 permutations using the regioneR package. The ENCODE Project datasets that were assessed included ENCFF845WSI, ENCFF764NTQ, ENCFF937JHP, ENCFF269TLO, ENCFF676TSV, and ENCFF290MLR. DMRs were then tested for enrichment within specific genic and CpG regions of the mouse genome, compared to a randomly generated set of regions in the mouse genome generated with resampleRegions in regioneR, with equivalent means and standard deviations. For candidate gene analysis, we compiled a set of key genes and genomic regions identified in previous mammalian PAE studies for site-specific testing based on our prior systematic review (Bestry et al., 2022), which identified 37 candidate genes (Supplementary file 1e and f). Murine brain and liver datasets were filtered to candidate gene regions and differential testing was then performed across the entire coding sequence, separately in the brain and liver of the mice on a normal diet using the callDML feature in DSS.
 
-## Validation studies in human cohorts
+### Validation studies in human cohorts
 
 We used existing human datasets to validate observations from our murine model (GSE109042), focusing on regions identified in our early moderate PAE model. Validation studies in human cohorts with existing genome-wide DNA methylation datasets and matching PAE data are described in the Supplementary Material. Briefly, Illumina Human Methylation array. iDAT files were pre-processed using the minfi package (Aryee et al., 2014) from the Bioconductor project (http://www.bioconductor.org) in the R statistical environment (http://cran.r-project.org/, version 4.2.2). Sample quality was assessed using control probes on the array. Between-array normalization was performed using the stratified quantile method to correct for Type 1 and Type 2 probe bias. Probes exhibiting a p-detection call rate of >0.01 in one or more samples were removed prior to analysis. Probes containing SNPs at the single base extension site, or at the CpG assay site were removed, as were probes measuring non-CpG loci (32,445 probes). Probes reported to have off-target effects in McCartney et al., 2016, were also removed. Mouse DMRs were converted into human equivalent regions using an mm10 to hg19 genome conversion with the liftover tool in the UCSC Genome Browser (Kent et al., 2002). A minimum 0.1 ratio of bases that must remap was specified as recommended for liftover between regions from different species and multiple output regions were allowed. Differential testing of candidate mouse DMRs was carried out using the R package DMRcate (Peters et al., 2021) for each dataset and DMRs were declared as minimum smoothed FDR<0.05. Cell heterogeneity in each sample including the composition of epithelial, fibroblast, and immune cells was estimated from DNA methylation reads using the R package EpiDISH (Teschendorff et al., 2017).

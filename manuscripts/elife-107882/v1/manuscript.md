@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03m2x1q45 Cardiovascular Translational Research Center, College of Medicine-Phoenix, University of Arizona Phoenix United States
-2. https://ror.org/03m2x1q45 Clinical Translational Sciences (CTS) and Bio5 Institution, University of Arizona Phoenix United States
+1. Cardiovascular Translational Research Center, College of Medicine-Phoenix, University of Arizona Phoenix United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+2. Clinical Translational Sciences (CTS) and Bio5 Institution, University of Arizona Phoenix United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 
 † Corresponding author
 

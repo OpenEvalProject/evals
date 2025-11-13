@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03hnwy706 Instituto de Biología y Medicina Experimental (IByME-CONICET) Buenos Aires Argentina
+1. Instituto de Biología y Medicina Experimental (IByME-CONICET) Buenos Aires Argentina ([ROR:03hnwy706](https://ror.org/03hnwy706))
 
 † Corresponding author
 
 ## Abstract
 
-Numerous reports showed that the epididymis plays key roles in the acquisition of sperm fertilizing ability but its contribution to embryo development remains less understood. Female mice mated with males with simultaneous mutations in Crisp1 and Crisp3 genes exhibited normal in vivo fertilization but impaired embryo development. In this work, we found that this phenotype was not due to delayed fertilization, and it was observed in eggs fertilized by epididymal sperm either in vivo or in vitro . Of note, eggs fertilized in vitro by mutant sperm displayed impaired meiotic resumption unrelated to Ca 2+ oscillations defects during egg activation, supporting potential sperm DNA defects. Interestingly, cauda but not caput epididymal mutant sperm exhibited increased DNA fragmentation, revealing that DNA integrity defects appear during epididymal transit. Moreover, exposing control sperm to mutant epididymal fluid or to Ca 2+ -supplemented control fluid significantly increased DNA fragmentation. This, together with the higher intracellular Ca 2+ levels detected in mutant sperm, supports a dysregulation in Ca 2+ homeostasis within the epididymis and sperm as the main factor responsible for embryo development failure. These findings highlight the contribution of the epididymis beyond fertilization and identify CRISP1 and CRISP3 as novel factors essential for sperm DNA integrity and early embryo development.
+Numerous reports showed that the epididymis plays key roles in the acquisition of sperm fertilizing ability but its contribution to embryo development remains less understood. Female mice mated with males with simultaneous mutations in Crisp1 and Crisp3 genes exhibited normal in vivo fertilization but impaired embryo development. In this work, we found that this phenotype was not due to delayed fertilization, and it was observed in eggs fertilized by epididymal sperm either in vivo or in vitro. Of note, eggs fertilized in vitro by mutant sperm displayed impaired meiotic resumption unrelated to Ca2+ oscillations defects during egg activation, supporting potential sperm DNA defects. Interestingly, cauda but not caput epididymal mutant sperm exhibited increased DNA fragmentation, revealing that DNA integrity defects appear during epididymal transit. Moreover, exposing control sperm to mutant epididymal fluid or to Ca2+-supplemented control fluid significantly increased DNA fragmentation. This, together with the higher intracellular Ca2+ levels detected in mutant sperm, supports a dysregulation in Ca2+ homeostasis within the epididymis and sperm as the main factor responsible for embryo development failure. These findings highlight the contribution of the epididymis beyond fertilization and identify CRISP1 and CRISP3 as novel factors essential for sperm DNA integrity and early embryo development.
 
 ## Introduction
 
@@ -31,21 +31,62 @@ In spite of clear evidence supporting the relevance of CRISP proteins for fertil
 
 ## Results
 
-## Embryo development defects associated with the lack of CRISP1 and CRISP3 are not due to a delayed fertilization
+### Embryo development defects associated with the lack of CRISP1 and CRISP3 are not due to a delayed fertilization
 
 To analyze whether defects in early embryo development were specifically linked to mutations in Crisp1 and Crisp3 genes or could also be contributing to the subfertility of C1/C4 DKO males (Carvajal et al., 2018), superovulated females were mated with mutant or control males from each DKO colony and those eggs recovered from the ampulla and reaching the two-cell stage in vitro (i.e. fertilized eggs) were further incubated to analyze the percentage progressing to blastocysts. Results revealed that whereas two-cell embryos from the C1/C3 DKO group showed a significant decrease in the percentage of blastocysts as previously reported (Curci et al., 2020), those corresponding to C1/C4 DKO mice showed no differences in the percentage of blastocyst compared to controls (Table 1), supporting that early embryo development defects were caused by the specific simultaneous mutation of Crisp1 and Crisp3 genes.
+
+**Table 1.**
+ Analysis of embryo development corresponding to C1/C3 and C1/C4 DKO males.Table 1—source data 1.Raw data and statistical analisys for C1/C3 DKO in vivo fertilization.Table 1—source data 2.Raw data and statistical analisys for C1/C3 DKO embryo development.Table 1—source data 3.Raw data and statistical analisys for C1/C4 DKO in vivo fertilization.Table 1—source data 4.Raw data and statistical analisys for C1/C4 DKO embryo development.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Control</th>
+      <th>C1/C3 DKO</th>
+      <th>Control</th>
+      <th>C1/C4 DKO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total two-cell embryos (N°)</td>
+      <td>53</td>
+      <td>53</td>
+      <td>80</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>Blastocysts (N°)</td>
+      <td>38</td>
+      <td>23</td>
+      <td>52</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Embryo development (%)</td>
+      <td>75.2 ± 8.3%</td>
+      <td>37.4 ± 10.7%**</td>
+      <td>67.7 ± 12.1%</td>
+      <td>66.9 ± 13.4%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Percentage of embryo development was calculated as the mean of at least five independent experiments, n = 5. **p < 0.01 vs control._
 
 Considering that delays in the time of in vivo fertilization could lead to embryonic development defects (Brackett et al., 1978; Lacham and Trounson, 1991; Lacham-Kaplan and Trounson, 1994; Orgebin-Crist, 1968; Orgebin-Crist and Jahad, 1977), and given the presence of aggregates of immotile sperm in the uterus of females mated with C1/C3 DKO males (Curci et al., 2020), we next investigated whether the early embryo development failure in this colony was due to a delayed fertilization caused by an impaired sperm transport within the female reproductive tract. To this aim, we analyzed both sperm migration within the oviduct and in vivo fertilization shortly after mating (i.e. 4 hr) as a way to avoid the possibility that the prolonged stay of sperm within the female tract corresponding to the conventional mating schedule (18 hr), could be giving defective sperm enough time to reach the ampulla and fertilize the eggs. Using Acrosine-GFP (Green Fluorescent Protein)-tagged C1/C3 DKO or control males, we first examined sperm migration within the oviduct via fluorescence microscopy 4 hr after observation of copulatory plugs. Results indicated that both mutant and control sperm exhibited no difficulties to pass the uterotubal junction and migrate within the oviduct as judged by the presence of labeled sperm in both the lower and middle isthmus (Figure 1). The observation of very few fluorescent mutant or control sperm beyond the isthmus (Figure 1B, C) is due to the reported loss of the acrosome in sperm after reaching the middle/upper isthmus (La Spina et al., 2016; Muro et al., 2016). Consistent with these observations, examination of fertilization in the ampulla 4 hr after mating showed no significant differences between groups in the percentage of eggs recovered from the ampulla that develop to two-cell embryos in vitro (Figure 2A), confirming no defects in the time of arrival of sperm to the ampulla. However, once again, the eggs fertilized by mutant sperm exhibited clear defects to reach the blastocyst stage in vitro compared to controls (Figure 2B). Together, our observations suggest that factors other than a delayed fertilization due to transport defects were responsible for the observed embryo development phenotype of the mutant colony.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/97105/elife-97105-fig1-v1.jpg)
 
-**Figure 1.:** (A) Representative diagram showing sperm within the different regions of the female reproductive tract. UTJ, utero-tubal junction. Superovulated females were mated with Acrosine-GFP control or C1/C3 DKO males and, 4 hr after mating, sperm were analyzed inside the tract by fluorescence microscopy. (B) Bright field (upper panel) and fluorescence (lower panel) images of the reproductive tract of a female mated with a control male (×40). (C) Bright field (upper panel) and fluorescence (lower panel) images of the reproductive tract of a female mated with C1/C3 DKO male (×40). Figures are representative of at least three independent experiments.Figure 1—source data 1.Figure 1B).Figure 1—source data 2.Figure 1B).Figure 1—source data 3.Figure 1C).Figure 1—source data 4.Figure 1C).
+**Figure 1.:** (A) Representative diagram showing sperm within the different regions of the female reproductive tract. UTJ, utero-tubal junction. Superovulated females were mated with Acrosine-GFP control or C1/C3 DKO males and, 4 hr after mating, sperm were analyzed inside the tract by fluorescence microscopy. (B) Bright field (upper panel) and fluorescence (lower panel) images of the reproductive tract of a female mated with a control male (×40). (C) Bright field (upper panel) and fluorescence (lower panel) images of the reproductive tract of a female mated with C1/C3 DKO male (×40). Figures are representative of at least three independent experiments.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97105/elife-97105-fig2-v1.jpg)
 
-**Figure 2.:** In vivo fertilization and embryo development.(A) Control and C1/C3 DKO males were mated with superovulated females and the percentage of fertilized eggs recovered from the ampulla 4 hr after mating was evaluated. Eggs were considered fertilized when they reached the two-cell embryo stage 24 hr after in vitro incubation. (B) Two-cell embryos from (A) were incubated in vitro for an additional 3 days, and the percentage reaching the blastocyst stage was determined. (C) Control or C1/C3 DKO cauda epididymal sperm were inseminated into the uterus of superovulated females. After 15 hr, eggs were recovered from the ampulla, incubated for 24 hr in vitro and were considered fertilized when reaching the two-cell embryo stage. (D) Two-cell embryos from (C) were incubated in vitro for an additional 3 days and the percentage reaching the blastocyst stage was determined. Data are mean ± SEM; n = 5, *p < 0.05; **p < 0.01. Percentages of two-cell embryos were determined by dividing the number of two-cell embryos by the total number of eggs examined and percentages of blastocysts as the number of eggs reaching the blastocyst stage divided by the total number of two-cell embryos recovered.Figure 2—source data 1.Figure 2A).Figure 2—source data 2.in vitro from two-cell embryos obtained after in vitro incubation of fertilized eggs recovered from the ampulla 4hs after copulatory plug formation (Figure 2B).Figure 2—source data 3.Figure 2C).Figure 2—source data 4.in vitro from two-cell embryos obtained after in vitro incubation of eggs recovered from the ampulla after intrauterine insemination of cauda epididymal sperm (Figure 2D).
+**Figure 2.:** (A) Control and C1/C3 DKO males were mated with superovulated females and the percentage of fertilized eggs recovered from the ampulla 4 hr after mating was evaluated. Eggs were considered fertilized when they reached the two-cell embryo stage 24 hr after in vitro incubation. (B) Two-cell embryos from (A) were incubated in vitro for an additional 3 days, and the percentage reaching the blastocyst stage was determined. (C) Control or C1/C3 DKO cauda epididymal sperm were inseminated into the uterus of superovulated females. After 15 hr, eggs were recovered from the ampulla, incubated for 24 hr in vitro and were considered fertilized when reaching the two-cell embryo stage. (D) Two-cell embryos from (C) were incubated in vitro for an additional 3 days and the percentage reaching the blastocyst stage was determined. Data are mean ± SEM; n = 5, *p < 0.05; **p < 0.01. Percentages of two-cell embryos were determined by dividing the number of two-cell embryos by the total number of eggs examined and percentages of blastocysts as the number of eggs reaching the blastocyst stage divided by the total number of two-cell embryos recovered.
 
-## Mutant epididymal sperm already carry defects leading to embryo development failure
+### Mutant epididymal sperm already carry defects leading to embryo development failure
 
 Given that our results had been obtained by natural mating, we next investigated whether the embryo development defects observed for C1/C3 DKO males appear during or after epididymal transit. To address this question, we inseminated C1/C3 DKO mature cauda epididymal sperm into one uterine horn and control cauda sperm in the contralateral horn of superovulated females, and then analyzed the percentage of eggs recovered from the ampulla capable of reaching the two-cell and blastocyst stages in vitro. Results showed that although no differences between groups were observed in the percentage of two-cell embryos (Figure 2C), the percentage of two-cell embryos progressing to blastocysts was significantly lower for mutant than for control sperm (Figure 2D), revealing that sperm defects contributing to embryo development deficiencies in C1/C3 DKO males were already present at the epididymal level.
 
@@ -53,31 +94,31 @@ It is known that fertilization under in vitro conditions provides a controlled e
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97105/elife-97105-fig3-v1.jpg)
 
-**Figure 3.:** In vitro fertilization and embryo development.(A, B) In vitro capacitated control or C1/C3 DKO cauda epididymal sperm were co-incubated with cumulus–oocyte complexes (COC) for 3.5 hr. Eggs were either analyzed at that moment and considered fertilized when at least one decondensing sperm nucleus or two pronuclei were found in the ooplasm (n = 3) (A) or incubated for additional 24 hr to determine the percentage reaching the two-cell embryo stage (n = 7) (B). (C) Two-cell embryos from (B) were incubated for 3 days in vitro and the percentage reaching 4/8 cells (day 1), morula (day 2), or blastocyst (day 3) stages determined (n = 7). (D) In vitro capacitated control or C1/C3 DKO epididymal sperm were co-incubated with zona pellucida (ZP)-free eggs for 1 hr and fertilization was evaluated by DNA staining. Eggs were considered fertilized when at least one decondensing sperm nucleus was found in the ooplasm (n ≥ 5). (E) Fertilized ZP-free eggs obtained as in D were incubated for an additional 3 days in vitro and the percentage progressing to blastocysts was determined (n = 5). (F) Fertilized eggs from (D) were analyzed for maternal DNA status and classified as arrested in Metaphase II (Met II) or exhibiting 2nd polar body (2PB) (n ≥ 5). Data are the mean ± SEM; *p < 0.05; **p < 0.01. Percentages of fertilization were determined by dividing the number of fertilized eggs by the total number of eggs examined. Percentages of two-cell embryos were determined by dividing the number of two-cell embryos by the total number of eggs examined. Percentages of either 4/8 cell embryos, morula and blastocysts were calculated as the number of embryos reaching each of these stages divided by the total number of two-cell embryos obtained.Figure 3—source data 1.in vitro co-incubation of cumulus–oocyte complexes (COC) with cauda epididymal sperm (Figure 3A).Figure 3—source data 2.in vitro co-incubation of cumulus–oocyte complexes (COC) and cauda epididymal sperm (Figure 3B).Figure 3—source data 3.in vitro from two-cell eggs obtained after in vitro co incubation of cumulus–oocyte complexes (COC) and cauda epididymal sperm (Figure 3C).Figure 3—source data 4.in vitro co-incubation of zona pellucida-free oocytes with cauda epididymal sperm (Figure 3D).Figure 3—source data 5.in vitro from two-cell eggs obtained after in vitro co-incubation of zona pellucida-free oocytes with cauda epididymal sperm (Figure 3E).Figure 3—source data 6.in vitro co-incubation of zona pellucida-free oocytes with cauda epididymal sperm (Figure 3F).
+**Figure 3.:** (A, B) In vitro capacitated control or C1/C3 DKO cauda epididymal sperm were co-incubated with cumulus–oocyte complexes (COC) for 3.5 hr. Eggs were either analyzed at that moment and considered fertilized when at least one decondensing sperm nucleus or two pronuclei were found in the ooplasm (n = 3) (A) or incubated for additional 24 hr to determine the percentage reaching the two-cell embryo stage (n = 7) (B). (C) Two-cell embryos from (B) were incubated for 3 days in vitro and the percentage reaching 4/8 cells (day 1), morula (day 2), or blastocyst (day 3) stages determined (n = 7). (D) In vitro capacitated control or C1/C3 DKO epididymal sperm were co-incubated with zona pellucida (ZP)-free eggs for 1 hr and fertilization was evaluated by DNA staining. Eggs were considered fertilized when at least one decondensing sperm nucleus was found in the ooplasm (n ≥ 5). (E) Fertilized ZP-free eggs obtained as in D were incubated for an additional 3 days in vitro and the percentage progressing to blastocysts was determined (n = 5). (F) Fertilized eggs from (D) were analyzed for maternal DNA status and classified as arrested in Metaphase II (Met II) or exhibiting 2nd polar body (2PB) (n ≥ 5). Data are the mean ± SEM; *p < 0.05; **p < 0.01. Percentages of fertilization were determined by dividing the number of fertilized eggs by the total number of eggs examined. Percentages of two-cell embryos were determined by dividing the number of two-cell embryos by the total number of eggs examined. Percentages of either 4/8 cell embryos, morula and blastocysts were calculated as the number of embryos reaching each of these stages divided by the total number of two-cell embryos obtained.
 
 To investigate whether difficulties in penetration of the egg coats that surround the egg could generate a potential delay in fertilization that finally leads to embryo development failure, IVF assays were carried out using eggs devoid of both cumulus cells and ZP, and the percentage of fertilized ZP-free eggs analyzed. Under these conditions, there was a lower but still significant decrease in the percentage of eggs fertilized by mutant sperm accompanied again by significantly lower rates of blastocysts (Figure 3D, E), indicating that defects in egg coat penetration were not responsible for embryo development failure.
 
 To further analyze the mechanisms leading to embryo development defects, ZP-free eggs were co-incubated with capacitated sperm as above and both sperm and egg DNA status within the ooplasma of fertilized eggs were analyzed by Hoechst staining. Of note, results showed that whereas all eggs with decondensing heads had already extruded the 2nd polar body in controls, in four out of six experiments, a proportion of eggs with decondensing heads corresponding to the mutant group were still at Metaphase II (Met II) (Figure 3F), revealing defects in epididymal sperm affecting early post-fertilization events as the potential cause of the phenotype observed in the mutant colony.
 
-## Mutant epididymal sperm exhibited higher levels of both DNA fragmentation and intracellular Ca2+
+### Mutant epididymal sperm exhibited higher levels of both DNA fragmentation and intracellular Ca2+
 
 The finding that a proportion of eggs fertilized by epididymal mutant sperm in vitro were still at Met II, opened the possibility of defects in the meiotic resumption event that occurs during egg activation. Based on this, we next monitored the characteristic repetitive series of changes in intracellular Ca2+ concentration (Ca2+ oscillations) known to underpin release from meiotic arrest during egg activation and initiation of embryo development in mammalian eggs (Miyazaki, 2006; Wakai et al., 2019). For this purpose, ZP-free eggs were stained with Fluo-4 AM, co-incubated in vitro with control or mutant capacitated epididymal sperm and subjected to live confocal fluorescence imaging. Results showed no differences between the two genotypes in either the pattern of Ca2+ oscillations (Figure 4A) or in a series of associated parameters such as the number of oscillations within 90 min, time until first oscillation (considered the time to gamete fusion), oscillation frequency, first transient area or first transient duration (Figure 4B–F). Together, these observations indicate that the presence of eggs still at Met II among those fertilized by mutant sperm was not due to defects in Ca2+ dynamics known to be critical for meiotic resumption during egg activation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97105/elife-97105-fig4-v1.jpg)
 
-**Figure 4.:** 2+ oscillations in in vitro fertilized eggs.(A) Representative traces of Ca2+ oscillation patterns following in vitro fertilization of zona pellucida (ZP)-free eggs with control or C1/C3 DKO sperm. Arrows indicate the time of sperm addition. (B) Number of peaks within 90 min, (C) time to first peak, (D) oscillation frequency, (E) first peak area under the curve, and (F) first transient duration. Values were normalized to basal Ca2+ levels recorded prior to sperm addition. Data are mean ± SEM of at least nine oocytes from three independent experiments; (A–F) ns.Figure 4—source data 1.2+ oscillations analyzed by fluorescence microscopy (Figure 4B).Figure 4—source data 2.2+ oscillations analyzed by fluorescence microscopy (Figure 4C).Figure 4—source data 3.2+ oscillations analyzed by fluorescence microscopy (Figure 4D).Figure 4—source data 4.2+ oscillations analyzed by fluorescence microscopy (Figure 4E).Figure 4—source data 5.2+ oscillations analyzed by fluorescence microscopy (Figure 4F).
+**Figure 4.:** (A) Representative traces of Ca2+ oscillation patterns following in vitro fertilization of zona pellucida (ZP)-free eggs with control or C1/C3 DKO sperm. Arrows indicate the time of sperm addition. (B) Number of peaks within 90 min, (C) time to first peak, (D) oscillation frequency, (E) first peak area under the curve, and (F) first transient duration. Values were normalized to basal Ca2+ levels recorded prior to sperm addition. Data are mean ± SEM of at least nine oocytes from three independent experiments; (A–F) ns.
 
 Considering that delays in early embryo development may result from the time taken by the egg to repair damaged paternal DNA (Esbert et al., 2018; Newman et al., 2022; Nguyen et al., 2023), we next decided to analyze possible defects in DNA integrity in mutant cauda epididymal sperm. These studies were carried out using the sperm chromatin dispersion (SCD) assay which is based on the principle that sperm with fragmented DNA fail to produce the characteristic halo of dispersed DNA loops observed in sperm with non-fragmented DNA (Fernández et al., 2003). Interestingly, results showed a significantly higher level of DNA fragmentation in mutant than control sperm as indicated by the distribution of individual cells as a function of their DNA halo area and the percentage of cells failing to produce the halo (Figure 5A). To investigate whether the higher DNA fragmentation levels observed in mutant cauda sperm appear during epididymal transit, DNA fragmentation was also analyzed in immature sperm recovered from the caput region using cauda sperm from the same epididymis as control. Results showed that caput cells exhibited no differences in DNA fragmentation levels between groups, indicating that defects in DNA integrity in mutant sperm develop within the epididymis (Figure 5B). Given the well-established relationship between DNA fragmentation and oxidative stress, we next analyzed reactive oxygen species (ROS) levels in cauda epididymal sperm from control and mutant mice. Interestingly, results showed that ROS levels in mutant sperm were not higher than those observed in the control group (Figure 5C), not favoring the idea that higher sperm DNA fragmentation levels were due to an increase in oxidative stress in mutant cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97105/elife-97105-fig5-v1.jpg)
 
-**Figure 5.:** (A) DNA fragmentation of control or C1/C3 DKO cauda epididymal sperm was analyzed by sperm chromatin dispersion (SCD) assay and both the area of DNA halo in each individual cell (left panel) and the percentage of sperm heads with small or no halo (right panel) determined. (B) DNA fragmentation of cauda and caput epididymal control or C1/C3 DKO sperm was analyzed by SCD assay and the area of DNA halo in each individual cell determined. (C) ROS levels in control and C1/C3 DKO cauda sperm analyzed by fluorescence confocal microscopy. Absence of probe and presence of Oligomycin were used as negative and positive controls, respectively. In all cases, n = 4. *p < 0.05; ****p < 0.0001, different letters indicate significant differences between treatments, p < 0.0001.Figure 5—source data 1.Figure 5A).Figure 5—source data 2.Figure 5A).Figure 5—source data 3.Figure 5B).Figure 5—source data 4.Figure 5C).
+**Figure 5.:** (A) DNA fragmentation of control or C1/C3 DKO cauda epididymal sperm was analyzed by sperm chromatin dispersion (SCD) assay and both the area of DNA halo in each individual cell (left panel) and the percentage of sperm heads with small or no halo (right panel) determined. (B) DNA fragmentation of cauda and caput epididymal control or C1/C3 DKO sperm was analyzed by SCD assay and the area of DNA halo in each individual cell determined. (C) ROS levels in control and C1/C3 DKO cauda sperm analyzed by fluorescence confocal microscopy. Absence of probe and presence of Oligomycin were used as negative and positive controls, respectively. In all cases, n = 4. *p < 0.05; ****p < 0.0001, different letters indicate significant differences between treatments, p < 0.0001.
 
 To assess the impact of the epididymal environment on sperm DNA fragmentation, WT cauda epididymal sperm were exposed to epididymal fluid recovered from mutant mice, and sperm DNA integrity analyzed by the SCD assay. Results showed that, under these conditions, WT sperm exhibited significantly higher levels of DNA fragmentation, supporting the relevance of epididymal fluid for sperm DNA integrity. Exposure of mutant sperm to epididymal fluid from WT mice, on the other hand, did not modify the higher DNA fragmentation levels exhibited by mutant cells (Figure 6A). Considering both reports showing that sperm DNA fragmentation can be induced by divalent cations in the presence of epididymal fluids (Gawecka et al., 2015; Shaman et al., 2006), and that CRISP proteins are Ca2+ channel regulators (Ernesto et al., 2015; Gibbs et al., 2006; Gibbs et al., 2011), we next analyzed the possibility that higher Ca2+ levels in the epididymis might contribute to the impaired DNA integrity of mutant sperm. For this purpose, WT cauda epididymal sperm were incubated in vitro with WT epididymal fluid in the presence of Ca2+ (10 mM), detecting significantly higher levels of DNA fragmentation in these cells compared to controls incubated in the absence of the cation (Figure 6A). As another approach to explore the involvement of Ca2+ in sperm DNA fragmentation, we next analyzed intracellular Ca2+ in cauda epididymal sperm by flow cytometry detecting significantly higher Ca2+ levels in mutant than control sperm either before or after capacitation (Figure 6B). Together, these observations support a dysregulation of Ca2+ within the epididymis and sperm as the main responsible for the higher sperm DNA fragmentation levels and, thus, the subsequent embryo development failure observed for mutant males.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/97105/elife-97105-fig6-v1.jpg)
 
-**Figure 6.:** 2+ levels.(A) DNA fragmentation of control or C1/C3 DKO cauda epididymal sperm incubated for 1 hr with their own or the other genotype epididymal fluid in the presence or absence of 10 mM Ca2+ was analyzed by sperm chromatin dispersion (SCD) assay and the area of DNA halo in each individual cell determined. Different letters indicate significant differences between treatments (p < 0.05). (B) Intracellular Ca2+ levels were evaluated by flow cytometry using Fluo-4-AM probe. Results are shown as normalized mean fluorescence intensity (rMFI) of Fluo-4-AM compared to the control condition in each experiment for non-capacitated (fresh) and capacitated (CAP) sperm. Data are mean ± SEM, n = 5; *p < 0.05.Figure 6—source data 1.in vitro with epididymal fluids and Ca2+ (Figure 6A).Figure 6—source data 2.Figure 6B).
+**Figure 6.:** (A) DNA fragmentation of control or C1/C3 DKO cauda epididymal sperm incubated for 1 hr with their own or the other genotype epididymal fluid in the presence or absence of 10 mM Ca2+ was analyzed by sperm chromatin dispersion (SCD) assay and the area of DNA halo in each individual cell determined. Different letters indicate significant differences between treatments (p < 0.05). (B) Intracellular Ca2+ levels were evaluated by flow cytometry using Fluo-4-AM probe. Results are shown as normalized mean fluorescence intensity (rMFI) of Fluo-4-AM compared to the control condition in each experiment for non-capacitated (fresh) and capacitated (CAP) sperm. Data are mean ± SEM, n = 5; *p < 0.05.
 
 ## Discussion
 
@@ -103,54 +144,183 @@ In summary, our observations provide strong evidence supporting the contribution
 
 ## Materials and methods
 
-## Animals and ethical approval
+### Animals and ethical approval
 
 Adult males (3–5 months old) from C1/C3 DKO (Curci et al., 2020) or C1/C4 DKO colonies (Carvajal et al., 2018) and control young (3–5 weeks old) or adult (2–5 months old) females were used. Animals were maintained with food and water ad libitum in a temperature-controlled room with a 12:12 hr light:dark cycle. Approval for the study protocol was obtained from the CICUAL of Instituto de Biología y Medicina Experimental (IByME-CONICET) (protocol N° 26/2018). All protocols were conducted in accordance with the Guide for Care and Use of Laboratory Animals published by the National Institutes of Health (NIH).
 
-## In vivo fertilization assays and in vitro embryo development
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Crisp1</td>
+      <td>Ensembl</td>
+      <td>ENSMUSG00000025431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Crisp3</td>
+      <td>Ensembl</td>
+      <td>ENSMUSG00000025433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Crisp1</td>
+      <td>Ensembl</td>
+      <td>ENSMUSG00000025431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Crisp4</td>
+      <td>Ensembl</td>
+      <td>ENSMUSG00000025774</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>IBYME Animal Facility, Buenos Aires, Argentina</td>
+      <td></td>
+      <td>https://doi.org/10.1096/fj.202001406R</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6*DBA</td>
+      <td>IBYME Animal Facility, Buenos Aires, Argentina</td>
+      <td></td>
+      <td>https://doi.org/10.1038/s41598-018-35719-3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Equine chorionic gonadotropin</td>
+      <td>Zoetis, Buenos Aires, Argentina</td>
+      <td>Novormon</td>
+      <td>5 UI</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Human chorionic gonadotropin (hCG)</td>
+      <td>Zoetis, Buenos Aires, Argentina</td>
+      <td>Ovusyn</td>
+      <td>5 UI</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSA</td>
+      <td>Sigma-Aldrich</td>
+      <td>A6003</td>
+      <td>3 mg/ml (capacitation medium)1 mg/ml(KSOM médium)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylazine/ketamine</td>
+      <td>Holliday/Richmond Vet Pharma</td>
+      <td></td>
+      <td>10:100 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Eosin B</td>
+      <td>Sigma-Chemical company</td>
+      <td>E-2629</td>
+      <td>0.5% (vol/vol)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluo-4 AM</td>
+      <td>Invitrogen</td>
+      <td>F14201</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pluronic(R) F-127 Low UV</td>
+      <td>Invitrogen</td>
+      <td>P6867</td>
+      <td>0.02% (p/vol)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield</td>
+      <td>Vector</td>
+      <td>H-1000-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellROX-Green</td>
+      <td>Invitrogen</td>
+      <td>C10444</td>
+      <td>25 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Invitrogen</td>
+      <td>H1398</td>
+      <td>10 μg/ml</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vivo fertilization assays and in vitro embryo development
 
 Males were caged individually for one night with superovulated females. For ovulation induction, females were treated with an i.p. injection of equine chorionic gonadotropin (5 UI, Zoetis, Buenos Aires, Argentina), followed by an i.p. injection of human chorionic gonadotropin (hCG; 5 IU, Zoetis, Buenos Aires, Argentina) 48 hr later. Mating was evaluated the following morning and considered successful by the presence of copulatory plugs. Eggs were then recovered from the oviducts, placed in KSOM médium (Erbach et al., 1994) supplemented with 0.1% (wt/vol) of bovine serum albumin (BSA), covered with paraffin oil (Ewe, Sanitas SA, Buenos Aires, Argentina), and incubated overnight at 37°C in an atmosphere of 5% (vol/vol) CO2 in air. Eggs were considered fertilized when they reached the two-cell embryo stage. For evaluation of their development to blastocyst, two-cell embryos were incubated for an additional 3 days under the same conditions.
 
-## Sperm transport and migration within the female tract
+### Sperm transport and migration within the female tract
 
 Male mice expressing a transgene for an acrosomal EGFP were mated with superovulated females to detect sperm within the oviduct, as previously described (La Spina et al., 2016; Curci et al., 2020). Briefly, a wild-type female subjected to superovulation was caged for 45 min with a transgenic male 12 hr after hCG administration. After 4 hr of detection of copulatory plug, the uterus and the oviducts were placed in KSOM medium supplemented with 0.3% (wt/vol) of BSA, mounted on slides, covered with coverslips and immediately observed under an Olympus IX83 microscope (Olympus Corp, Tokyo, Japan) at ×40. The number of fluorescent sperm within the oviduct was evaluated subjectively.
 
-## Epididymal sperm collection and in vitro capacitation
+### Epididymal sperm collection and in vitro capacitation
 
 Mouse sperm were recovered by incising the cauda epididymis in 150 μl of capacitation medium (Fraser and Drury, 1975; Giaccagli et al., 2021) supplemented with 0.3% (wt/vol) BSA, pH 7.3–7.5, allowing motile sperm to swim-out of the cauda for 10 min at 37°C in an atmosphere of 5% (vol/vol) CO2 in air. For in vitro capacitation, aliquots of the swim-out suspension were added to 300 μl of capacitation medium to a final concentration of 1–10 × 106 spermatozoa/ml and incubated for 90 min under the same conditions.
 
-## Intrauterine insemination
+### Intrauterine insemination
 
 For intrauterine insemination young females were superovulated as previously described. Eight hours after hCG injection, the females were anesthetized with an i.p. injection of xylazine/ketamine (10:100 mg/kg), and an incision was made in the abdomen, exposing both uterine horns. Using a syringe, 50 μl of either mutant or control swim-out sperm suspensions (1 × 107 spermatozoa/ml) were introduced into one uterine horn followed by immediate ligation, whereas the remaining sperm suspension was introduced in the contralateral horn. After approximately 15 hr, oocytes were recovered from the ampulla, placed in KSOM medium, incubated at 37°C and 5% vol/vol CO2, and the percentage of cells reaching the two-cell embryo stage was analyzed the following day. Two-cell embryos were then incubated for additional 3 days under the same conditions to evaluate their development to blastocyst.
 
-## IVF assays
+### IVF assays
 
 Gamete interaction assays were carried out as previously reported (Curci et al., 2020). Briefly, COC were collected from superovulated females 12–15 hr after hCG administration. When needed, cumulus cells were removed by incubating the COC in 0.3 mg/ml hyaluronidase (type IV) for 3–5 min and ZP was dissolved by treating the eggs with acid Tyrode solution (pH 2.5) for 10–20 s (Nicolson et al., 1975). COC were inseminated with a final concentration of 1–5 × 105 cells/ml and gametes were co-incubated for 3.5 hr at 37°C in an atmosphere of 5% (vol/vol) CO2 in air. For gamete fusion assays, ZP-free eggs were inseminated with a final concentration of 1–5 × 104 cells/ml and gametes co-incubated for 1 hr under the same conditions. In all cases, eggs were recovered at the end of incubation, washed, fixed with 2% (wt/vol) paraformaldehyde in PBS and stained with 10 μg/ml Hoechst 33342 for evaluation of fertilization under epifluorescence microscope (×200). Eggs were considered fertilized when at least one decondensing sperm nucleus or two pronuclei were observed in the egg cytoplasm. Alternatively, ZP-intact or ZP-free eggs were recovered at the end of incubation and placed in KSOM medium for 24 hr to determine the percentage reaching the two-cell embryo stage or for 3 additional days for evaluation of eggs in blastocyst stage. To avoid sticking, ZP-free eggs were incubated in individual droplets. For evaluation of progression to different stages of embryo development, two-cell embryos obtained from COC were incubated for 3 days in KSOM and the percentage reaching each stage (i.e. 4/8 cells, morula or blastocyst) determined.
 
-## Analysis of sperm functional parameters
+### Analysis of sperm functional parameters
 
 Epididymal sperm concentration was determined using a hemocytometer. Viability was assessed by staining sperm with prewarmed 0.5% (vol/vol) eosin Y and dye exclusion (indicative of sperm viability) analyzed under light microscopy (×400). For progressive motility assessment, sperm suspensions (15 µl) were placed between prewarmed slides and coverslips (22 mm × 22 mm) to create a chamber with 30 mm depth and sperm movement was recorded by video microscopy under a light microscope (Nikon ECLIPSE E200; Basler acA-78075gc) at ×400 magnification for subsequent analysis. The percentage of progressive motile sperm was calculated by analyzing a minimum of 300 cells distributed in at least 20 different microscope fields.
 
-## Oocyte Ca2+ oscillations
+### Oocyte Ca2+ oscillations
 
 ZP-free eggs were incubated with 1 μM Fluo-4 AM, 0.02% (p/vol) pluronic acid and 15 μg/ml Hoechst 33342 in capacitation medium for 25 min at room temperature. Eggs were then extensively washed in fresh medium, mounted in 100 μl of medium covered with paraffin oil and analyzed on an Olympus IX83 Spinning Disk microscope (Olympus Corp, Tokyo, Japan) (×100), equipped with an environmental chamber sustaining a temperature of 37.5°C and 5% CO2. Images were taken every 20 s. Basal Ca2+ was recorded for 10 min. Then, in vitro capacitated sperm were added and image recording continued for at least 1.5 hr. In all cases, fertilization was analyzed by the presence of at least one decondensing sperm head within the ooplasm. Polyspermic eggs were excluded from the analysis. Intracellular Ca2+ was determined in a single equatorial plane of each egg by measuring the fluorescence intensity using the ImageJ software (http://imagej.nih.gov/ij) and normalized to basal fluorescence.
 
-## SCD assay
+### SCD assay
 
 Sperm DNA integrity was assessed as described before (Fernández et al., 2003). Briefly, aliquots of 200 μl of sperm from a swim-out in capacitating medium were mixed with 1% low-melting-point aqueous agarose (to obtain a 0.7% final agarose concentration) at 37°C. In those cases in which caput sperm were used, cells were centrifuged for 3 min at 1500 rpm prior to the addition of agarose. Aliquots of 50 μl of the mixture were pipetted onto a coverslip and then placed over a glass slide precoated with 0.65% standard agarose and left to solidify at 4°C for 10 min. Coverslips were carefully removed, and slides were immediately immersed horizontally in a tray with freshly prepared acid denaturation solution (0.08 N HCl) for 14 min at room temperature in the dark to generate restricted single-stranded DNA (ssDNA) motifs from DNA breaks. Then, proteins were removed by transfer of the slides to a tray with neutralizing and lysing solution 1 (0.4 M Tris, 0.8 M β-mercaptoetanol, 1% SDS, and 50 mM EDTA, pH 7.5) for 20 min at room temperature, which was followed by incubation in neutralizing and lysis solution 2 (0.4 M Tris, 2 M NaCl, and 1% SDS, pH 7.5) for 15 min at room temperature. Slides were thoroughly washed in TBE buffer (0.09 M Tris-borate and 0.002 M EDTA, pH 7.5) for 12 min, dehydrated in sequential 70%, 90%, and 100% ethanol baths (2 min each), and air dried. Cells were stained with Hoechst (10 μg/ml) in Vectashield (Vector Laboratories, Burlingame, CA) and halo surface analyzed by fluorescence microscopy on an Olympus IX83 Spinning Disk microscope (Olympus Corp, Tokyo, Japan) (×600, AN 1.42). Pictures of at least 200 sperm heads were taken and the halo area analyzed by ImageJ software (http://imagej.nih.gov/ij). Sperm DNA was considered fragmented when no halo was observed or when the halo area was smaller than twice the area corresponding to non-dispersed sperm.
 
-## Analysis of ROS
+### Analysis of ROS
 
 ROS levels in sperm were measured by confocal microscopy. Briefly, after swim-out in capacitating medium without BSA, Hoechst 33342 (40 μg/ml) and CellROX-Green (25 μM) were added and sperm incubated under these conditions for 30 min at 37°C and 5% CO2. Samples were then fixed with 4% paraformaldehyde for 10 min, exposed to 100 mM ammonium acetate (pH 9.0), centrifuged at 3000 rpm for 3 min two times and, finally, placed over a glass slide, mounted with glycerol and analyzed on an Olympus IX83 Spinning Disk microscope (Olympus Corp, Tokyo, Japan) (×600). Images of at least 200 sperm heads for each condition were analyzed and fluorescence intensity calculated by ImageJ software (http://imagej.nih.gov/ij).
 
-## Incubation of sperm with epididymal fluids
+### Incubation of sperm with epididymal fluids
 
 After 10 min of swim-out in capacitating medium without BSA, sperm were centrifuged 2 min at 1500 rpm and the recovered supernatants containing diluted cauda fluid stored at 37°C in an atmosphere of 5% (vol/vol) CO2 in air. Sperm were then washed two times with 1 ml of capacitating medium without BSA followed by a 2-min centrifugation at 1500 rpm. After the second centrifugation, cauda fluids from either the same or the other genotype were added and incubation continued for 1 hr at 37°C in an atmosphere of 5% (vol/vol) CO2. For evaluation of the effect of Ca2+, sperm were incubated as described above in the presence of 10 mM Ca2+ prepared from a 100× CaCl2 stock solution.
 
-## Sperm intracellular Ca2+ measurement
+### Sperm intracellular Ca2+ measurement
 
 Cytoplasmic Ca2+ levels in sperm were measured by flow cytometry as previously described (Brukman et al., 2016; Curci et al., 2020). Briefly, after 60 min of incubation in capacitation medium, sperm were loaded with 2 mM of Fluo-4 AM (Invitrogen, Carlsbad, California, USA) diluted in 10% (wt/vol) of Pluronic F-127 (Invitrogen) and incubated for an additional 30 min. Samples were washed to remove the excess of probe, resuspended in BSA-free medium, and exposed to 2.5 μg/ml of propidium iodide (PI) just before measurement. Fluorescence was detected using a BD FACSCantoTM II analyzer following the manufacturer’s indications and at least 10,000 events were analyzed per sample. Data analysis was performed by FlowJo 10 software (FlowJo LLC, Ashland, OR, USA). In each condition, the fluorescence mean was normalized to basal Fluo-4-AM fluorescence.
 
-## Statistical analysis
+### Statistical analysis
 
 Data represent the mean ± SEM of at least three independent experiments and ‘n’ indicates the number of animals analyzed in each group for all experiments except for oocyte Ca2+ oscillations where ‘n’ indicates the number of oocytes analyzed. Calculations were performed using the Prism 8.0 software (GraphPad Software, La Jolla, CA). Comparisons between two experimental groups were analyzed by one-way Student t-test whereas comparisons among three or more groups were analyzed by two-way ANOVA followed by Fisher LSD for embryo development progression and Holm–Sidak’s for both resumption of meiosis and sperm intracellular Ca2+. In those cases in which data did not meet the assumptions required to perform two-way ANOVA (i.e. caput sperm DNA fragmentation, ROS levels, and incubation with fluids), non-parametric Kruskal–Wallis followed by Dunn’s test were used. In all cases, differences were considered significant at a level of p < 0.05.

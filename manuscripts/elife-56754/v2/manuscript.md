@@ -36,15 +36,47 @@ Together, these data establish the organization and function of a key motor cont
 
 ## Results
 
-## Organization and recruitment of motor units controlling the femur-tibia joint of Drosophila
+### Organization and recruitment of motor units controlling the femur-tibia joint of Drosophila
 
 We first sought to understand how muscles in the fly femur control movement of the tibia (Figure 1). Fly leg muscles are each composed of multiple fibers (Soler et al., 2004) and innervated by distinct motor neurons (Baek and Mann, 2009; Brierley et al., 2012). A motor neuron and the muscle fibers it innervates are referred to as a motor unit. In most invertebrate species, multiple motor neurons can innervate the same muscle fiber, so motor units may be overlapping (Hoyle, 1983).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig1-v2.jpg)
+
+**Figure 1.:** (A) Muscles of the right prothoracic leg of a female Drosophila (MHC-LexA; 20XLexAop-GFP). (B) Muscles controlling tibia movement in the fly femur. Top and bottom are confocal sections through the femur. Anterior-posterior axis refers to the leg in a standing posture (Soler et al., 2004). (C) Top: K-means clustering of calcium signals (MHC-Gal4;UAS-GCaMP6f) based on correlation of pixel intensities during 180 s of self-generated leg movements in an example fly (unloaded waving, see methods). Bottom: average change in fluorescence for each cluster, in each frame, when the leg is extended (femur-tibia joint >120°, 20772 frames) vs. flexed (<30°, 61,860 frames), n = 5 flies. Flexion activity was consistently higher (p=0.01 for cluster 5, p<10−6 for all other clusters, 2-way ANOVA, Tukey-Kramer correction). (D) Schematic of the experimental setup. The fly is fixed in a holder so that it can pull on a calibrated force probe with the tibia while calcium signals are recorded from muscles in the femur. (E) Calcium activity in tibia muscles while the fly pulls on the force probe (bottom trace). Cluster six was obscured by the probe and not included. The middle row shows the smoothed, rectified derivative of the cluster fluorescence (dFi/dt) for the two brightest clusters (1 and 2), which we refer to as Flexors. Highlighted periods indicate that both Flexors 1 and 2 are active simultaneously (gray, dF/dt > 0.005), or that Flexor 2 alone is active (magenta). (F) 2D histogram of probe position and velocity, for all frames (n = 13,504) for a representative fly. The probe was often stationary (velocity = 0), either because the fly let go of the probe (F = 0), or because the fly pulled the probe as far as it could (F ~ 85 µN), reflected by the hotspots in the 2D histogram. In F–H), the white circles indicate the centroids of the distributions. (G) Top - 2D histogram of probe position vs. velocity when Flexor 2 fluorescence increased, but not Flexor 1 (n = 637 frames, same fly as F). Gray squares indicate hotspots in F), which are excluded here. Color scaled to log(50 frames). Bottom – example of instance in which Flexor 2 alone is active (magenta shading). (H) Top - Same as G), when Flexor 1 AND 2 fluorescence increased simultaneously (n = 1449 frames). Bottom – gray shading indicates instances of activity in both Flexors 1 and 2. (I) Fraction of total frames for each fly in which both Flexor 1 and 2 fluorescence increased (gray), Flexor 2 alone increased (magenta), or Flexor 1 alone increased. Number of frames for each of five flies: 32,916, 13,504, 37,136, 37,136, 24,476. (J) Shift in the centroid of the 2D histogram when Flexor 1 fluorescence is increasing along with Flexor 2 fluorescence (gray), compared to when Flexor 2 fluorescence alone is increasing (p<0.01, Wilcoxon rank sum test). Black line indicates example cell in G) and H).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of light path for widefield calcium imaging of femur muscles. Infrared illumination is used to track leg movement. GCaMP emission is reflected by a longpass dichroic mirror to a second camera. (B) Tracking the femur and tibia with DeepLabCut. A network was trained to detect six points on the femur and six points on the tibia in the IR illuminated videos of the leg. We calculated the center of the tibia from the six detected points. The elliptical arc of the centroid across frames allowed us to estimate the angle of elevation of the tibia relative to the plane of the metal holder (black background). (C) K-means clustering of GCaMP activity in muscle fibers during unloaded movements of the tibia. Clusters were similar across five flies, including the ventral distal cluster 1, the proximal cluster 2, the more dorsal cluster 3, and a thin dorsal cluster 4. Clusters 5 and 6 were more variable in shape and location. (D) Example epoch from Fly one showing the femur-tibia angle and the fluorescence of each cluster. (E) Averaged fluorescence across all frames in which the tibia was extended (top) vs. flexed (bottom), for Fly 1, normalized to the maximum ΔF/F. Note the lack of signal during extension. (F) K-means clustering with different numbers of clusters for Fly 1, shown in Figure 1. With fewer than five clusters, the proximal cluster tended to be much larger, incorporating much of the region labeled as cluster 3. With more than six clusters, the smallest and least modulated clusters tended to divide, not providing any further information. When k = 6, pixels in the extension region clustered together, but we did not see large increases in fluorescence with extension (Figure 1).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The force probe tip was positioned over an analytical balance, and the base of the force probe was displaced. The weight (force) at each displacement is shown in blue, the linear fit is shown in red. The slope of the line is the spring constant, k = 0.2234 N/m. (B) To measure the effective mass and drag constant of the probe in saline, we flicked the force probe by displacing the tip with a glass hook until it lost contact and snapped back to rest. In blue is the displacement in each frame for 16 different flicks. In orange is the velocity. We used the ode45 solver in Matlab to fit the mass (m = 0.17 mg) and drag coefficient (c = 0.14E-3 kg/s). (C) Using the dynamical parameters from b, we calculated the portion of the force due to elastic properties of the force probe (blue), drag (red), and inertia (yellow). Here, a single spike evoked optogenetically in a fast motor neuron produced a small movement of the probe (as in Figure 4A, Video 2). In Figure 4D–F, we calculated force by including drag and inertia, but in other figures we report leg displacement and the approximation of force, assuming that drag and inertia are negligible. (D) The probe obscured the distal leg during spontaneous movements, so we limited the ROI for clustering to the proximal leg.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The force probe histogram for frames when only Flexor 1 was active, scaled according to Figure 1H. (B) Flexor 2 ΔF/F for all frames across N = 5 flies in which 1) Flexor 2 is activating (21962 frames); 2) Flexor 2 alone is activating (6686 frames); 3) when Flexor 1 alone is active (1805 frames); 4) random values of cluster 2 ΔF/F (1805 values). The mean Flexor 2 ΔF/F is higher when Flexor 1 alone is active than when Flexor 2 is active (asterisk, p<10–8, 2-way ANOVA, Tukey-Kramer correction for multiple comparisons), indicating that Flexor 2 is also likely contracting even though ΔF/F is not increasing. (C) Example epochs in which the derivative of Flexor 1 fluorescence, but not Flexor 2 (blue shading) is positive. These epochs make clear that these periods arise when Flexor 2 and 1 are active and contracting together (Flexor 2 ΔF/F high as in Figure 1H), but the derivative of Flexor 2 ΔF/F is either negative or simply not large. The first example occurs near the end of a trial, when the LED was turned off (green arrow).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) K-means clustering of GFP expression in muscles during spontaneous movements. Clusters were noisy, interleaved and dispersed. In this case, the fly pulled on the probe and the clusters are superimposed over the image of the fly leg. (B) Changes in fluorescence of clusters calculated from videos of GFP expression during spontaneous movements. GFP expression was bright (as shown in Figure 1A), but did not change with movements.
+
 We used widefield fluorescence imaging of muscle calcium signals with GCamp6f (Chen et al., 2013; Lindsay et al., 2017) to map the spatial organization of motor units in the fly femur during spontaneous tibia movements (Figure 1C, Figure 1—figure supplement 1, and Video 1). We observed that spatial patterns of calcium activity were different for different movements (e.g., tibia flexion vs. extension).
+
+![Video 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-video1.mp4.jpg)
+
+**Video 1.:** The video (1) illustrates the arrangement of musculature controlling the fly’s tibia; (2) schematizes the position of a restrained fly relative to the force probe fiber, together with wide-field calcium imaging from muscles in the leg and body; and then (3) shows simultaneous videos of the fly pulling on the force with muscle calcium signals in the femur, together with the movement of the probe, an EMG recording from the fast neuron, and the time course of cluster ΔF/F. Videos are slowed 3X.
 
 To quantify this spatial organization, we performed unsupervised clustering so that pixels with correlated activity were grouped together into activity clusters. We assigned arbitrary numbers to these clusters, from ventral to dorsal (Figure 1—figure supplement 1). Three clusters significantly increased their fluorescence when the leg was flexed (Figure 1C); we refer to these clusters as Flexors 1, 2, and 3. Flexors 2 and 3 were active during most periods of tibia flexion, whereas Flexor 1 was only active only during large, fast movements (Figure 1E). This organization was similar across flies and robust to changes in clustering parameters (Figure 1—figure supplement 1). Likely because of the orientation of the leg in these experiments, we did not observe any clusters whose activity increased specifically during tibia extension (see Figure 1—figure supplement 1 and Materials and Methods for further discussion). For the remainder of this study, we focus our efforts on motor control of tibia flexion.
 
 For Flexors 1 and 2, we could record and identify extracellular motor neuron spikes in the femur (electromyogram: EMG), which confirmed that the activity clusters identified through calcium imaging correspond to distinct motor units (Figure 1E and see Figure 2D, below). In other words, we propose that activity clusters 1 and 2 reflect the firing patterns of specific motor neurons. Below, we elaborate on this relationship further when discussing specific motor neurons.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the muscle fibers innervated by motor neurons labeled by the following Gal4 lines: left: R81A07-Gal4, center: R22A08-Gal4, and right: R35C09-Gal4. (B) Biocytin fills of leg motor neurons from whole-cell patch clamp recordings, labeled in fixed tissue with strepavidin-Alexa-568 (green), counter stained with phalloidin-Alexa-633 (red) labeling actin in muscles, and autofluorescence of the cuticle (cyan). (C) Images of biocytin fills in the VNC following whole-cell patch recordings (schematic). Prothoracic neuromere is outlined. Cells were traced and ‘filled’ with the simple neurite tracer plugin in Fiji. (D) Example recordings from each motor neuron type during spontaneous tibia movement: whole-cell current clamp recordings with detected spike times above (top row, corrected for a liquid junction potential of −13 mV), EMG recordings (middle), and tibia movement (force probe position; bottom). We often observed EMG events from the fast and intermediate neurons. We did not observe EMG events associated with slow neuron firing, though we often observed flexion of the tibia without seeing EMG activity, as seen here.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Maximum intensity projections of fast flexor motor neuron fill (green, neurobiotin). In magenta is the neuropil (nc82). (B) Traced neuron from A), using the simple neurite tracer plugin in FIJI. Also shown in Figure 2C. (C) Maximum intensity projections of intermediate flexor motor neuron fill (green, neurobiotin). In blue is GFP expression driven by R22A08-Gal4. Note, the cell body of the filled neuron was ripped off, but the motor neuron cell body on the contralateral side remains. (D) Traced neuron from C, as shown in Figure 2C. (E) Maximum intensity projections of slow flexor motor neuron fill (green, neurobiotin). In blue is GFP expression driven by R35C09-Gal4. (F) Traced neuron from E), as shown in Figure 2C.
 
 Muscles controlling the same joint may exert different levels of force, depending on fiber type composition and musculoskeletal biomechanics. To understand the relationship between motor unit activity and force production, we allowed the fly to pull on a flexible probe with its tibia (Figure 1D). We calibrated the force required to deflect the probe a given distance and measured a spring constant of 0.22 μN/μm (Figure 1—figure supplement 2). Flies were able to move the force probe up to 400 μm, reaching speeds of 8 mm/s (Figure 1F). That is, the fly was capable of producing close to 100 μN of force at the tip of the tibia and changes in force of ~1.3 mN/s. For comparison, the mass of the fly is ~1 mg for a weight of ~10 μN; this means that the femur-tibia joint can produce enough force to lift approximately ten times the fly’s body weight.
 
@@ -52,7 +84,7 @@ We used the activity clusters computed from unloaded leg movements (Figure 1C) t
 
 The results of Figure 1 illustrate two organizational features of fly leg motor control. First, fly tibia flexion is controlled by a number of distinct motor units in the femur that are active at different levels of force production. Second, the sequential activity of tibia flexor motor units is consistent with a hierarchical recruitment order. The spatial organization of tibia flexor motor units also provides a template that can be used to identify genetic driver lines that label specific motor neurons.
 
-## A gradient of electrophysiological and anatomical properties among motor neurons controlling flexion of the femur-tibia joint
+### A gradient of electrophysiological and anatomical properties among motor neurons controlling flexion of the femur-tibia joint
 
 We visually screened a large collection of Gal4 driver lines (Jenett et al., 2012) for expression in motor neurons that innervate the activity clusters we identified through calcium imaging (Figure 1). We focus our analysis on three lines that each label a single tibia flexor motor neuron in the femur. The first line (R81A07-Gal4) labels a motor neuron that innervates the high-force motor unit (Figure 2, left) that we identified through calcium imaging (Flexor 1). The second (R22A08-Gal4) labels a neuron that projects to the proximal femur (Figure 2, middle), one of several likely candidates that controls Flexor 2 (Baek and Mann, 2009). The muscle fibers innervated by these two neurons connect to the same tibia flexor tendon (Soler et al., 2004). The third line (R35C09-Gal4) labels a single motor neuron that projects to the distal part of the femur, where the signals in our calcium imaging experiments were weak and noisy (Figure 2, right). The muscle fibers in this distal region have been collectively referred to as the reductor muscle (Baek and Mann, 2009; Brierley et al., 2012; Soler et al., 2004), but their alignment and attachment points suggest they control flexion of the tibia (see Materials and Methods for further details).
 
@@ -70,9 +102,21 @@ The intrinsic electrical properties of the tibia flexor motor neurons varied alo
 
 Overall, our electrophysiological characterization of tibia flexor motor neurons (Figures 2, 3) revealed a systematic relationship between motor neuron anatomy, input resistance, resting membrane potential, and spontaneous firing rate. These properties accompany differences in the force generated by a spike in each neuron, which we quantify next.
 
-## A gradient of force per spike across motor neurons
+### A gradient of force per spike across motor neurons
 
 How much force does a single spike in a motor neuron produce? How does force-per-spike, or gain, vary across neurons within a motor pool? To answer these questions, we measured probe displacement as a function of firing rate in each motor neuron type. To evoke spikes in the fast and intermediate neurons, we optogenetically stimulated motor neuron dendrites in the VNC using expression of Chrimson (Klapoetke et al., 2014), a red-shifted channelrhodopsin (Figure 4A–B). Brief (10–20 ms) flashes of increasing intensity produced increasing numbers of spikes, corresponding spikes in the EMG, and movement of the tibia detected by small displacements of the force probe (Video 2). Aligning probe movement to spike onset showed that a single fast motor neuron spike produced ~10 μN of force, resulting in a 50 μm movement of the force probe (Figure 4A). An intermediate neuron spike produced ~1 μN that moved the tibia 5 μm (Figure 4B). For comparison, during take-off, the peak force production of the fly leg is ~100 μN (Zumstein et al., 2004).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig4-v2.jpg)
+
+**Figure 4.:** (A) Optogenetic activation of a fast flexor motor neuron expressing CsChrimson (50 ms flash from a 625 nm LED,~2 mW/mm2). Traces show average membrane potential for trials with one (top) and two (bottom) spikes, the average EMG (top) or overlaid EMGs (bottom), and the resulting tibia movement for each trial (50 µm = 11 µN). The jitter in the force probe movement traces results from variability of when a spike occurs relative to the video exposure (170 fps). (B) Same as A for an example intermediate flexor motor neuron. (C) Tibia movement resulting from current injection in a slow flexor motor neuron. Top: spike rasters from an example cell during current injection. Firing rates are shown below, color coded according to current injection value, followed by the baseline subtracted average movement of the probe (5 µm = 1.1 µN). Bottom: spike rates and probe movement in the presence of the cholinergic antagonist MLA (1 µM), which reduces excitatory synaptic input to the motor neuron. (D) Peak average force vs. number of spikes for fast (blue), intermediate (magenta), and slow (green) motor neurons. The number of spikes in slow neurons is computed as the average number of spikes during positive current injection steps minus the baseline firing rate; that is, the number of additional spikes above baseline. The black line is a linear fit to the slow motor neuron data points, with the slope indicated below. (E) Peak probe displacement for 2 spikes vs. one spike in fast (blue) and intermediate motor neurons (magenta). (F) Summary data showing that zero spikes in fast (n = 7) and intermediate neurons (n = 6) does not cause probe movement, but that hyperpolarization in slow motor neurons (n = 9) causes the fly to let go of the probe, that is, decreases the applied force. The number of spikes (x-axis) is computed as the average number of spikes per trial during the hyperpolarization.(G) Delay between a spike in the cell body and the EMG spike (conduction delay). Note there may be a delay from the spike initiation zone to the cell body that is not captured (n = 5 intermediate cells), p=0.6, Wilcoxon rank sum test. (H) Time to half maximal probe displacement for fast (blue) and intermediate cells (magenta), p=0.2, rank sum test. (I) Estimates of the maximum velocity of tibia movement in each fast (blue) and intermediate motor neuron (magenta), p=0.0012, rank sum test. A line was fit to the rising phase of probe points aligned to single spikes as in B) and D).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confocal image of an intermediate flexor motor neuron axon (neurobiotin fill is shown in green; red is phalloidin) from UAS-GFP;R81A06-Gal4. The filled neuron targets the proximal femur. Scale bar is 50 µm. The axon appears to target different fibers than the intermediate neuron in R22A08-Gal4. (B) Membrane potential, spikes, and probe movement during spontaneous movements. Membrane potential reflects and slightly precedes flexion events, and spikes occur at low forces. (C) Single trial example of sensory feedback. The neuron rests at −67 mV. Passive flexion of the leg (60 μm = 8°) hyperpolarizes the intermediate neuron in R81A06-Gal4. Extension causes an 8 mV EPSP. Compare to Figure 6. (D) Confocal image of a flexor motor neuron axon in the leg, neurobiotin fill is shown in green; red is phalloidin. The recording was from an unidentified, non-GFP-expressing neuron in a UAS-GFP;R35C09-Gal4 fly. The GFP-expressing slow motor neuron is seen in cyan in the right image, at a different z position. The filled neuron targets fibers more proximal than the slow motor neuron. (E) This neuron rested at −55 mV and did not spike at rest. Current injection could evoke spikes, and moderate spike rates caused steady state tension similar in magnitude to a single intermediate neuron spike (~5 um displacement of the probe). Interestingly, the resulting load on the force probe was sufficient to rapidly force the leg into an extended position. This in turn caused a depolarization and spike in the motor neuron, as the fly returned the probe to the resting position by placing more force on the probe. (F) Single trial example of sensory feedback. A slow extension of the leg (60 μm = 8°) depolarized the neuron and drove spikes. (G) Confocal image of a flexor motor neuron axon from UAS-GFP;R81A06-Gal4. The filled neuron appears to have a more extensive axon terminal than the slow motor neuron labeled by R35C09-Gal4. (H) This neuron rested around −53 mV, with a spontaneous spike rate of 12 Hz. Large increases in spike rate increased the force on the probe. The recording ended prematurely and we did not capture the probe returning to rest, but note the depolarization and small increase in the spike rate following the end of the current injection, similar to the neuron in panels D-F). Noise in probe position is due to poor lighting and is not time locked to spikes. (I) Single trial example of sensory feedback. Extension of the leg (60 μm = 8°) of the probe depolarized the neuron and drove spikes. (J) Confocal image of a flexor motor neuron axon from UAS-GFP;R81A04-Gal4. (K) This neuron rested around −51 mV, with a spontaneous spike rate of 28 Hz, an input resistance of 486 MΩ, and could increase flexion force more than the slow neuron labeled by R35C09-Gal4. (L) Single trial example of sensory feedback. Extension of the leg (60 μm = 8°) of the probe depolarized the neuron and drove spikes.
+
+![Video 2.](https://cdn.elifesciences.org/articles/56754/elife-56754-video2.mp4.jpg)
+
+**Video 2.:** The video introduces 1) the dendritic morphology and axon projection of the three neurons we studied: fast, intermediate and slow; 2) shows video of individual trials from a fast neuron in which one or four spikes are driven with optogenetic stimulation in the VNC, together with probe movement, the whole-cell current clamp recording from the soma, and the EMG record from the leg; 3) shows video of individual trials from an intermediate neuron in which one or four spikes are driven with optogenetic stimulation in the VNC; 4) shows video of a trial from a slow motor neuron in which current injection at the soma depolarizes the neuron and drives ~ 100 spikes, and a trial in which the slow neuron is hyperpolarized, reducing the force on the probe. Videos are slowed 3X.
 
 Increasing the spike rate of the slow motor neuron with current injection produced small (~1 µm) and slow tibia movements (Figure 4C). Decreasing slow motor neuron firing produced tibia extension (Figure 4C,E), suggesting that spontaneous firing in this cell contributes to the resting force on the probe. Bath application of 1 μM MLA, an antagonist of nicotinic acetylcholine receptors, led to a decrease in the spontaneous firing rate and reduced the resting force on the probe by ~1.5 μN, or ~15% of the fly’s weight (Figure 4C). This suggests that the spontaneous firing rate in slow motor neurons is set by excitatory synaptic input.
 
@@ -82,9 +126,17 @@ The rates of force generation for the fast and intermediate motor units were gre
 
 We recorded from several other motor neurons controlling tibia flexion, none of which had more extreme properties than the fast and slow motor neurons in Figure 4. Importantly, these cells exhibited similar relationships in morphology, intrinsic properties, and force production (Figure 4—figure supplement 1), which provides confidence that these correlations are not an artifact of the motor neurons we have chosen to highlight in this study.
 
-## Motor neurons are recruited in a temporal sequence from weakest to strongest
+### Motor neurons are recruited in a temporal sequence from weakest to strongest
 
 Calcium imaging from leg muscles suggested that distinct motor units are active during distinct tibia movement regimes, and that this activity follows a recruitment order (Figure 1). To test these hypotheses more rigorously, we examined recordings from single cells and pairs of tibia flexor motor neurons during spontaneous leg movements (Figure 5A–C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig5-v2.jpg)
+
+**Figure 5.:** (A) Membrane potential, EMG, and probe movement, for two example epochs of spontaneous leg movement during a whole-cell recording of the fast motor neuron. Highlighted events are plotted in D. The EMG was recorded in the proximal femur to pick up both fast and intermediate spikes (scale is 10 pA). (B) Same as A, but for an intermediate motor neuron. The EMG for the intermediate neuron was recorded in the proximal part of the femur, the largest events reflect activity in the fast motor neuron (scale is 100 pA). (C) Same as A-B, but for a slow motor neuron. The EMG was recorded in the proximal femur, near the terminal bristle, and large events are likely from the intermediate neuron (scale is 100 pA). (D) Example force probe trajectories from movement examples. The grayscale in D matches that of the trajectories in A-C. Each vertex is a single frame; vertices with dots indicate the occurrence of a spike in the whole-cell recording. (E) 2D histograms of probe force and velocity for video frames within 25 ms following a spike across recordings in cells of each type (fast – five neurons, 4666 frames; intermediate – four neurons, 11,833 frames; slow – nine neurons, 65,473 frames). Crosses indicate the centroids of the histograms for individual neurons. Dots outlined in white indicate centroid of the 2D histograms of all frames, within and outside the 25 ms window. Color scale shows the log number of frames in each bin, normalized to the total number of frames. (F) Schematic illustrating firing rate predictions of the recruitment hierarchy. As force increases, left to right, first the slow neuron begins firing, then the intermediate neuron (magenta line). Once the fast neuron spikes, both intermediate and slow neurons are already firing (blue dotted line). (G) Left) Spike rate of intermediate neuron in 30 ms preceding fast EMG spike (n = 4 pairs); center) slow neuron spike rate preceding fast EMG spike (n = 2 pairs); right) and slow neuron spike rate preceding intermediate EMG spike (n = 3 pairs).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The effective spike rate of fast, intermediate and slow motor neurons, over the course of all trials with spontaneous leg movements. Instantaneous spike rates could be much higher. (B) From the 2D spike-triggered phase histograms and Bayes’ rule, we calculated a likelihood function in order to compare spiking regimes in different neurons. If the force probe has a particular position, p, and velocity, q, the likelihood that a motor neuron fired a spike in the preceding 25 ms (right column, linear color scale from 0 to 1) is given by the number of frames with p,q that follow a spike (middle column, shown in Figure 5) divided by the full distribution of p,q (left column). The centroids of the full histograms (left column) are shown in Figure 5. (C) Comparison of activity in recordings of pairs of motor neurons: the number of EMG spikes preceded by a spike in the whole-cell recording, i.e. in a neuron lower down the recruitment hierarchy. The left hand axis indicates the probability of a spike in each millisecond bin for 30 ms before the EMG spike. The right hand axis indicates the cumulative probability of observing a spike in the period before the EMG spike. We found that a small number of intermediate neurons were not preceded by slow neuron spikes (N = 110/3082 spikes). (D) An example trial in which the normal recruitment hierarchy was violated, which only occurred when the leg was unloaded (tibia angle, bottom). During rapid shaking of the leg (highlighted region), the intermediate neuron could spike before the slow motor neuron and have a higher instantaneous spike rate.
 
 The membrane potential of each tibia flexor motor neuron reflected probe movement, even during periods of purely subthreshold activity (Figure 5A–C). This shows that motor neurons that are not currently spiking are receiving synaptic input that, if shared across the motor pool, could drive other motor neurons to spike (Gabriel and Büschges, 2007). This synaptic input could arise from premotor neurons or proprioceptive feedback.
 
@@ -96,11 +148,23 @@ We tested this model by examining paired recordings of somatic (whole-cell) and 
 
 Interestingly, we sometimes observed violations of this recruitment order (Figure 5—figure supplement 1). The exceptions occurred when the fly was rapidly waving its leg, rather than pulling on the force probe. In these cases, the slow motor neuron spike rate appeared to be suppressed by inhibition. This phenomenon is similar to rapid paw shaking behavior in cats (Smith et al., 1980) and rapid swimming in zebrafish (Menelaou and McLean, 2012). Such violations suggest that motor neuron excitability is not the only factor that determines recruitment order. Rather, differences in presynaptic input may selectively de-recruit slow motor neurons through inhibition.
 
-## A gradient of sensory input to motor neurons
+### A gradient of sensory input to motor neurons
 
 So far, we have shown that tibia flexor motor neurons exhibit a gradient of functional properties (Figures 2–4) and a recruitment order during natural leg movements (Figure 5). We next asked how motor neurons respond to proprioceptive sensory feedback. A key function of proprioceptive feedback is to maintain stability by counteracting sudden perturbations, such as when an animal stumbles during walking (Tuthill and Azim, 2018). Larger perturbations require more corrective force, so as feedback increases it should result in the recruitment of additional motor neurons with increasing force production capacity.
 
 We first compared the amplitude and dynamics of proprioceptive feedback in flexor motor neurons in response to ramping movements of the tibia (Figure 6A–B). Passive extension of the tibia caused excitatory postsynaptic potentials (PSPs) in all three flexor motor neurons, a response known as a resistance reflex. PSP amplitude was largest in slow motor neurons and smallest in fast neurons (Figure 6C–D). The slope of the rising phase of the PSP increased with the rate of extension. In the fast and intermediate neurons, sensory-evoked PSPs typically failed to elicit spikes, whereas the firing rate of slow motor neurons was significantly modulated. Slow motor neurons were exceptionally sensitive to passive tibia movement: a 1° change in tibia angle resulted in a significant change in firing rate (Figure 6F). Extremely fast extension movements were sufficient to evoke single spikes in intermediate neurons (Figure 6—figure supplement 1), but we never observed feedback-evoked spikes in fast motor neurons. The amplitude of the PSP evoked by proprioceptive feedback did not vary across different resting femur-tibia joint angles (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig6-v2.jpg)
+
+**Figure 6.:** (A) Whole-cell recordings of fast, intermediate, and slow motor neurons in response to flexion (black) and extension (gray) of the tibia. Each trace shows the average membrane potential of a single neuron (n = 7 trials). A 60 μm movement of the probe resulted in an 8° change in femur-tibia angle. (B) Spike rasters and firing rates for the same slow neuron as in A. (C) Amplitude of the postsynaptic potential (PSP) vs. angular velocity of the femur-tibia angle (n = 7 fast, seven intermediate, nine slow cells). Responses to fast extension (−123°/s) are not significantly different for fast and intermediate neurons (p=0.5) but are different for slow neurons (p<10−5, 2-way ANOVA, Tukey-Kramer correction for multiple comparisons). (D) Amplitude of firing rate changes in slow motor neurons vs. angular velocity of the femur-tibia angle. (E) Time-course of normalized average responses (± s.e.m. of baseline subtracted responses) to tibia extension (left) and flexion (right, n = 7 fast, seven intermediate, nine slow cells). (F) Sensitivity of firing rate to small tibia movements of 6 μm (0.8°) or 18 μm (2.4°). Spike rasters are from representative cells, the average spike rate across cells is plotted in green below.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The EPSP evoked by fast ramping extension stimuli did not significantly depend on leg angle. (B) We measured the onset of the sensory evoked EPSP (magenta, intermediate neuron) in the motor neurons by fitting a line (black) to the rising phase of the average response. We measured the time from the start of the command to the piezoelectric actuator for the largest step stimulus (8° extension, shown here as reference). Sensory delays in the fast and intermediate neurons were similar. We did not measure the sensory delays in slow neurons because 1) the spike rate was calculated with an acausal smoothing filter and 2) the average EPSPs were not smooth because of the presence of spikes. (C) An example of reflex reversal in a slow motor neuron. Top) A normal resistance reflex in which an extension of the leg depolarizes the membrane potential and increases the spike rate. Bottom) When the fly was pulling on the force probe and the EMG activity was increased, the extension stimulus instead hyperpolarized the neuron. (D) To test faster stimuli than we could deliver with a piezoelectric actuator, we pulled on the probe with a hook until the hook lost contact, and the probe snapped back to rest. We identified intermediate EMG spikes using optogenetic excitation of R22A08-Gal4 motor neurons. This ballistic stimulus was able to evoke intermediate neuron spikes, but not fast neuron spikes (not shown).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Optogenetic activation of proprioceptive feedback to tibia motor neurons. The axons of femoral chordotonal neurons, labeled by iav-LexA, were stimulated with Chrimson activation during whole-cell recordings. (B) Example responses in an intermediate neuron to a high intensity 10 ms light flash that drove activity in chordotonal neurons expressing Chrimson (iav-LexA >Chrimson). The membrane potential and spikes from three trials are shown above (magenta shading) and the simultaneous force probe movement is shown below. Like the flicking stimulus in Figure 5—figure supplement 1, this large stimulus drove intermediate neurons, but not fast neurons, to spike. The effect of the light stimulus was surprisingly long-lasting, producing membrane potential fluctuations and movements over ~200 ms. (C) Expression of Chrimson decreases gain of proprioceptive feedback. Peak of the average EPSP in fast (blue), intermediate (magenta), and slow (green) motor neurons in response to a ramping extension stimulus (123 °/s), in flies that either express Chrimson in FeCO neurons (Chr+ reflex, empty circles) or not (WT reflex, filled circles). Chrimson expression reduces EPSPs, p<0.01 for all neurons, Wilcoxon rank-sum test. (D) Example recordings showing membrane potential, spiking activity, and probe position following an LED flash. Top: low intensity flashes caused the fly to mainly pull on the force probe, from individual fast (5.5 mW/mm2), intermediate (4.8 mW/mm2), and slow neurons (1.3 mW/mm2). Each trace is a single trial; the black traces belong to the same trial. Bottom: higher LED intensities caused the fly to let go of the force probe in fast (10.9 mW/mm2), intermediate (7.8 mW/mm2), and slow neurons (6.3 mW/mm2). (E) Summary of optogenetically-evoked membrane potential changes in motor neurons for low (flexion-producing) and high (extension-producing) LED intensities. Fast and intermediate neurons depolarized initially, so the amplitude of the depolarization is quantified. Slow motor neurons exhibited stronger hyperpolarization.
 
 In addition to differences in amplitude, the sign and dynamics of proprioceptive feedback varied across fast, intermediate, and slow motor neurons. Fast and slow motor neurons both hyperpolarized slightly at flexion onset, while intermediate neurons depolarized once the flexion event ceased (Figure 6E). These results demonstrate that the different tibia flexor motor neurons receive distinct feedback signals from leg proprioceptors.
 
@@ -110,15 +174,43 @@ A major source of proprioceptive information about tibia position is the femoral
 
 Overall, these data demonstrate that the FeCO provides proprioceptive feedback to tibia flexor motor neurons, and that the amplitude and dynamics of proprioceptive feedback signals vary across the different motor neurons. This gradient of sensory feedback amplitude is likely shaped by the concurrent gradient of motor neuron intrinsic properties (Figure 3). We observed differences in the sign and dynamics of proprioceptive feedback, which indicate that tibia flexor motor neurons receive distinct presynaptic inputs. These differences also suggest that proprioceptive feedback signals may be specialized for controlling particular motor neurons.
 
-## Optogenetic perturbation of single motor neurons alters walking behavior
+### Optogenetic perturbation of single motor neurons alters walking behavior
 
 We have thus far measured force production and recruitment order of slow, intermediate, and fast tibia flexor motor neurons under controlled conditions. We next used optogenetics to alter motor neuron activity in tethered, walking flies, in order to test how sensorimotor feedback loops respond to perturbations of normal activity patterns. Flies flex the tibia of the front leg to pull the body forward during walking (Video 4), so we examined how each motor neuron contributes to this movement. We focused a green laser at the ventral thorax, at the base of the left front (T1) leg to optogenetically activate (Gal4 >CsChrimson) (Klapoetke et al., 2014) or silence (Gal4 >gtACR1) (Mohammad et al., 2017) each motor neuron type. As a control, we used an empty-Gal4 driver line, which has the same genetic background but lacks Gal4 expression.
 
 To verify our optogenetic manipulations and characterize basic leg reflexes, we first measured the movement of the femur-tibia joint in headless flies with their legs unloaded (i.e., the fly was suspended in air, Figure 7A). Activation of fast motor neurons caused rapid flexion of the tibia (Figure 7B,C, Video 3). We observed repeated patterns of tibia flexion and extension, suggesting that the fast neuron fired single spikes and that the resulting flexion was immediately countered by a resistance reflex. Activation of intermediate neurons caused slower tibia flexion, while activation of slow neurons caused even slower contractions, often followed by unexpected, prolonged tibia extension. Silencing each motor neuron type did not consistently evoke leg movements, though silencing the full motor neuron population resulted in paralysis (Video 4). These results are consistent with our measures of force production during electrophysiology (Figures 4, 5) and provide a useful baseline for interpreting results from walking flies.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig7-v2.jpg)
+
+**Figure 7.:** (A) Example frame illustrating behavioral effects of optogenetically activating leg motor neurons in headless flies. A green laser (530 nm) is focused at the coxa-body joint of the fly’s left front leg (outlined in white) and the femur-tibia joint (yellow) is monitored with high-speed video. (B) Example traces of femur-tibia joint angles during optogenetic activation (Gal4 >CsChrimson) of each motor neuron type in headless flies. The control line has the same genetic background as motor neuron lines but lacks Gal4 expression (BDP-Gal4 >CsChrimson).( C) Average (± sem) tibia flexion speed during the first 300 ms of CsChrimson activation (n = 5 flies of each genotype). (D) Schematic of the behavioral setup, in which a tethered fly walks on a spherical treadmill. The treadmill and fly are tracked with separate cameras. As in A), a green laser is focused on the coxa of the left front leg. (E) Average treadmill forward velocity (± sem) of walking flies, when activating (top row) or silencing (bottom row) control (n = 11, 13), fast (n = 15, 14), intermediate (n = 9,12), or slow (n = 11, 13) motor neurons for 90 ms (dark colors) or 720 ms (light colors). Black traces indicate trials with no laser (0 ms). Gray boxes indicate the period of optogenetic stimulation. Black dashes above fast and slow flexor activation traces indicate the time points in panel G. (F) Percent change (change in speed/pre-stimulus speed) in the average running speed of flies shown in C during stimulation+200 ms for activation (top) and silencing (bottom). Asterisks indicate p<0.01 relative to control (bootstrapping with false discovery rate correction; see methods for details). (G) Example frames showing representative behavioral responses of running flies during the first 200 ms of fast (top) and slow (bottom) MN activation. (H) Probability that a stationary fly initiated a walking bout during the 500 ms following either MN activation (left) or silencing (right). Dark colors are for the 90 ms stimulus (or no stimulus – black) and light colors are for the 720 ms stimulus (or no stimulus – gray). Asterisks indicate p<0.01 relative to control (bootstrapping with false discovery rate correction; see Methods for details).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56754/elife-56754-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Femur-tibia joint angles during silencing (Gal4 >gtACR1) of the three motor neuron types and a control empty Gal4 driver, in headless, suspended flies. (B) Average (± sem) flexion speed during the initial 300 ms of silencing, on trials where the leg moved. (C) Scatter plot of instantaneous flexion speed vs. leg angle for each video frame, when activating (left) or silencing (right) the three motor neuron types (and empty Gal4 control) in headless suspended flies. Extension would be seen as negative and is not shown. The flexion speeds are largest near 80° for trajectories caused by fast neuron activation (blue points).
+
+![Video 3.](https://cdn.elifesciences.org/articles/56754/elife-56754-video3.mp4.jpg)
+
+**Video 3.:** The video shows the movements of the flies left front tibia caused by optogenetic activation of the fast, intermediate and slow neurons and a control line (BDP-Gal4). The video shows 1) the tibia flexion during the entire 720 ms laser stimulation period slowed 10X; 2) the first 300 ms of the same event, slowed 40X.
+
+![Video 4.](https://cdn.elifesciences.org/articles/56754/elife-56754-video4.mp4.jpg)
+
+**Video 4.:** Motor neurons labelled by OK371-Gal4 expressed gtACR1. The video shows the behavior of different flies on different trials while 1) flies were walking during a 90 ms laser stimulus; 2) flies were stationary during a 90 ms laser stimulus; 3) flies were walking during a 720 ms laser stimulus; 4) flies were stationary during a 720 ms laser stimulus. Videos of behavior are slowed 10X.
+
 To optogenetically manipulate motor neuron activity during walking, we positioned tethered flies on a spherical treadmill (i.e., a Styrofoam ball) within a visual arena (Reiser and Dickinson, 2008; Figure 7D). Previous studies have found that walking speed and gait on the treadmill are similar to freely walking flies (Szczecinski et al., 2018). In our setup, the fly was motivated to walk forward with a wiggling stripe (Figure 7E), and we tracked the treadmill and the fly’s behavior with multiple high-speed cameras.
 
 We first asked how flies would respond to transient optogenetic activation of the different tibia flexor motor neurons. Activation of the fast motor neuron caused the tibia of the front leg to persistently flex, thus, interrupting walking (Figure 7E, Video 5). Consequently, flies appeared to slow down, as measured by a decrease in forward walking velocity. Activation of the slow motor neurons also interrupted walking (Figure 7E), but this was because the fly reacted by extending its tibia, as when the legs were unloaded (Video 7). Based on the muscle fibers innervated by the slow motor neuron, we speculate that optogenetic activation of this neuron may increase twisting at the joint, which the fly reacts to with a compensatory extension of the leg. Unlike the other two cells, activation of the intermediate motor neuron appeared to cause the flies to transiently increase their walking speed. Activation of the intermediate motor neuron in stationary flies also caused them to start walking (Figure 7E–F, Video 6). Extra spikes in the intermediate tibia flexor motor neuron may accelerate the rotation of the treadmill, forcing the other legs to move faster in response. Overall, these results show that activation of different motor neurons drive distinct behavioral responses that depend on the fly’s behavioral state (e.g., walking vs. standing).
+
+![Video 5.](https://cdn.elifesciences.org/articles/56754/elife-56754-video5.mp4.jpg)
+
+**Video 5.:** The video shows the behavior of different flies on different trials while 1) flies were walking and the fast neuron expressed CsChrimson; 2) flies were stationary, and the fast neuron expressed CsChrimson; 4) flies were walking, and the fast neuron expressed gtACR1; 3) flies were stationary, and the fast neuron expressed gtACR1. Videos of behavior are slowed 10X.
+
+![Video 6.](https://cdn.elifesciences.org/articles/56754/elife-56754-video6.mp4.jpg)
+
+**Video 6.:** The video shows the behavior of different flies on different trials while 1) flies were walking and the intermediate neuron expressed CsChrimson; 2) flies were stationary, and the intermediate neuron expressed CsChrimson; 3) flies were walking, and the intermediate neuron expressed gtACR1; 4) flies were stationary, and the intermediate neuron expressed gtACR1. Videos of behavior are slowed 10X.
+
+![Video 7.](https://cdn.elifesciences.org/articles/56754/elife-56754-video7.mp4.jpg)
+
+**Video 7.:** The video shows the behavior of different flies on different trials while 1) flies were walking and the slow neuron expressed CsChrimson; 2) flies were stationary, and the slow neuron expressed CsChrimson; 3) flies were walking, and the slow neuron expressed gtACR1; 4) flies were stationary, and the slow neuron expressed gtACR1. Videos of behavior are slowed 10X.
 
 Optogenetically silencing motor neurons had less pronounced effects on walking speed (Figure 7E). However, silencing of fast and intermediate neurons decreased the probability that a stationary fly would initiate walking compared to controls (Figure 7H, Videos 6 and 7). These results suggest that motor neurons with a high force production capacity (Figure 4) may be dispensable for normal walking behavior, but their activity may be important for producing the high levels of force required to initiate walking.
 
@@ -130,7 +222,7 @@ We found that leg motor neurons are recruited in a specific order: small, low ga
 
 A relationship between force production and recruitment order is a common feature of vertebrate motor systems (Henneman et al., 1965a; Henneman and Olson, 1965; Kernell, 2006; Mcphedran et al., 1965; McPhedran et al., 1965). This organization has been proposed to confer a number of computational and energetic advantages. Recruitment of additional motor units increases force nonlinearly, overcoming suppressive nonlinearities in spike rates and muscle force production (Bakels and Kernell, 1994; Monster and Chan, 1977). Furthermore, the relative increase in force does not decrease with successive recruitment, as it would if all motor units produced similar amounts of force. Thus, much like Weber’s law describes the constant sensitivity to relative stimulus intensity (Fechner, 1860), a recruitment hierarchy maximizes the resolution of motor unit force while also simplifying the dimensionality of the motor system (Henneman et al., 1965b; Mendell, 2005).
 
-## Violations of the size principle and their implications for premotor circuit organization
+### Violations of the size principle and their implications for premotor circuit organization
 
 A key assumption of the original size principle is that all motor neurons within a pool receive the same presynaptic input (Henneman et al., 1965a); the alternative is that different premotor neurons provide input to different subsets of motor neurons. Our results suggest the motor system controlling the fly tibia operates in a middle ground between these two extremes. Although tibia motor neurons generally follow a recruitment order in accordance with the size principle (Figure 5), we found that the dynamics of proprioceptive feedback vary across motor neurons within the pool (Figure 6). We also observed a small but significant proportion of behavioral events in which recruitment order was violated (Figure 5—figure supplement 1). These data suggest that although the tibia flexor motor neuron pool may share some presynaptic inputs, they are not identical. Thus, motor control of the fly tibia is more complex than a straightforward implementation of the size principle.
 
@@ -140,7 +232,7 @@ Investigations of the vertebrate spinal cord have also identified circuit motifs
 
 Our characterization of identified tibia motor neurons provides a handle to investigate similar premotor circuit motifs for flexible limb motor control in the fly. Little is currently known about the leg premotor circuitry in Drosophila. However, the hypotheses generated by this work should soon be testable using connectomic reconstruction of identified motor neurons and their presynaptic inputs in the Drosophila VNC (Maniates-Selvin et al., 2020).
 
-## Organization of motor pools controlling the Drosophila tibia
+### Organization of motor pools controlling the Drosophila tibia
 
 The muscles that control flexion of the Drosophila tibia are innervated by approximately 15 motor neurons (Baek and Mann, 2009; Brierley et al., 2012). Here, we chose to analyze three identified neurons that span the extremes of this motor pool. Each of these motor neurons was stereotyped across flies in its anatomy, physiology, and function. The fast tibia flexor motor neuron labeled by R81A07-Gal4 is the only motor neuron that innervates the large tibia flexor muscle fibers in the middle of the femur (Figure 2B). Because it has the largest axon of any motor neuron in the femur, the fast motor neuron also produces the largest extracellular spikes (Figure 2D). The slow tibia flexor motor neuron labeled by R35C09-Gal4 is one of 8–9 motor neurons that innervates tibia flexor muscle fibers located at the distal tip of the femur. Measurements of force production from other motor neurons that innervated this distal region (Figure 4—figure supplement 1) suggest that the R35C09-Gal4 neuron is among the weakest within this group. Finally, we studied an intermediate motor neuron labeled by R22A08-Gal4 that innervates muscle fibers separate from the fast and slow neurons. Previous anatomical studies suggest that 2–5 neurons innervate nearby muscle fibers in the proximal region of the femur. Our recordings of other tibia flexor motor neurons (Figure 4—figure supplement 1) were consistent with the gradient of properties we describe in detail for three identified motor neurons, which suggests that the relationship between anatomy, physiology, and force production applies to other neurons in the tibia flexor motor pool.
 
@@ -150,7 +242,7 @@ Much of the work in bigger insects and crustaceans has focused on the most relia
 
 Flies differ from these other invertebrates in one major respect: while most arthropods possess GABAergic motor neurons that directly inhibit leg muscles, holometabolous insects such as Drosophila do not (Schmid et al., 1999; Witten and Truman, 1998). Indeed, we found that a transgenic line for GABAergic neurons (Gad1-Gal4; Diao et al., 2015) does not label any axons in the Drosophila leg (data not shown). The presence of inhibitory motor neurons has been proposed as a key underlying reason why insects have been able to achieve flexible motor control with small numbers of motor neurons (Belanger, 2005; Wolf, 2014). That flies lack this capability means that other mechanisms must be at play. Fly legs are innervated by neurons that release neuromodulators, such as octopamine, which could underlie flexible tuning of muscle excitability (Zumstein et al., 2004).
 
-## Behavioral function of different motor neurons within a pool
+#### Behavioral function of different motor neurons within a pool
 
 The large range of gain, or force production, at the femur-tibia joint implies that different subgroups of flexor neurons will be recruited during distinct behaviors. Activity in slow motor neurons produces small, low force movements, while fast motor neuron activity produces fast, high amplitude movements. Consistent with this division, the output of slow motor neurons is more strongly influenced by feedback from leg proprioceptors (Figure 6). Thus, proprioceptive feedback may continuously modulate the firing rate of slow motor neurons for precise stabilization of posture during standing or grooming. When the slow motor neuron is optogenetically activated (Figure 7), flies stop walking and extend their legs. The reason for this response is unclear but could reflect the fly’s reaction to a loss of autonomous motor control.
 
@@ -160,33 +252,225 @@ Even for a specific behavior, such as walking, different motor neurons may be re
 
 In this study, we chose to focus on flexion of the femur-tibia joint of the fly’s front leg. How might these results compare to motor neuron pools of antagonist muscles? Tibia flexor motor neurons outnumber the extensor neurons (Baek and Mann, 2009; Brierley et al., 2012), and thus are likely to possess a shallower gradient of intrinsic and functional properties, as has been found in crayfish (Hill and Cattaert, 2008). Invertebrate muscles also exhibit polyneural innervation, such that a given muscle fiber may be innervated by multiple motor neurons (Brierley et al., 2012; Hoyle, 1983; Sasaki and Burrows, 1998). Polyneural innervation could allow independent activation of motor neurons in order to use the same muscle fibers during different contexts, or it could make the force produced by one motor neuron dependent on coincident activity in another motor neuron (Sasaki and Burrows, 1998).
 
-## Summary
+#### Summary
 
 In this study, we describe an organizing architecture for motor control of tibia movement in Drosophila. These neurons constitute the output of motor circuits that flexibly control a wide range of fly behaviors, from walking to aggression to courtship. Studies of motor control in the fly VNC are now possible thanks to an increasing catalog of genetically-identified cell types (Lacin et al., 2019; Namiki et al., 2018; Shepherd et al., 2019), connectomic reconstruction with serial-section EM (Maniates-Selvin et al., 2020) and the ability to image from VNC neurons in walking flies (Chen et al., 2018). The leg motor neurons we describe also provide valuable targets for understanding the coordinated development of motor neuron and muscle properties (Enriquez et al., 2015; Venkatasubramanian et al., 2019). We anticipate that Drosophila will be a useful complement to other model organisms in understanding the neural basis of flexible motor control.
 
 ## Materials and methods
 
-## Fly husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘w[*]; P{w[+mC]=Mhc-GAL4.K}2’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_55133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{y[+t7.7] w[+mC]=20XUAS-IVS-mCD8::GFP}attP2’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_32194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_47902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40’</td>
+      <td>Other</td>
+      <td>FBrf0212432</td>
+      <td>Barret Pfeiffer, Janelia Farm, HHMI</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘MHC-LexA’</td>
+      <td>Other</td>
+      <td></td>
+      <td>Richard Mann, Columbia University</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘13XLexAop2-IVS-GCaMP6f-p10}su(Hw)attP5’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_44277</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘Berlin-K’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_8522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_40100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_49901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘10XUAS-syn21-Chrimson88-tDT3.1 (attP18)’</td>
+      <td>DOI:10.1016/j.neuron.2017.03.010</td>
+      <td></td>
+      <td>Michael Reiser, Janelia Farm, HHMI</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_55136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘iav-LexA’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_52246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘13XLexAop2-IVS-Syn-21-Chrimson::tdTomato (attP2)’</td>
+      <td>DOI: 10.1038/nmeth.2836</td>
+      <td></td>
+      <td>Barret Pfeiffer, Janelia Farm, HHMI</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{y[+t7.7] w[+mC]=BDP-GAL4}attP2’</td>
+      <td>DOI:10.7554/eLife.08758.027</td>
+      <td></td>
+      <td>Andrew Seeds, Steffi Hampel, UNIVERSITY OF PUERTO RICO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>‘P{w[+mW.hs]=GawB}VGlut[OK371]’</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_26160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>nc82 (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank,</td>
+      <td>RRID:AB_2314866</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MLA</td>
+      <td>Tocris</td>
+      <td>TOCRIS_1029</td>
+      <td>‘1 μM methyllycaconitine citrate’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>DOI:10.1038/s41593-018-0209-y</td>
+      <td></td>
+      <td>Mathis Lab, Rowland Institute, Harvard University https://github.com/AlexEMG/DeepLabCut</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fictrac</td>
+      <td>DOI:10.1016/j.jneumeth.2014.01.010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Force probe fiber</td>
+      <td>Proform CS2.5 AS</td>
+      <td>This paper</td>
+      <td>“PBT fiber from a synthetic paint brush, cut to have a spring constant = 0.22 N/m. Find at any Proform retailer, e.g. Amazon.com’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Green CST DPSS laser,</td>
+      <td>Besram Technology, Inc</td>
+      <td></td>
+      <td>‘532 nm’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin</td>
+      <td>ThermoFisherScientific</td>
+      <td>FISHER: A22284</td>
+      <td>‘633 nm, 1 unit per leg’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>streptavidin-Alexa Fluor</td>
+      <td>ThermoFisherScientific</td>
+      <td>FISHER: S11226</td>
+      <td>‘568 nm’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry
 
 Drosophila melanogaster were raised on cornmeal agar food on a 14 hr dark/10 hr light cycle at 25°C and 70% relative humidity. We used female flies, 1–4 days post eclosion, for all experiments except tethered behavior experiments. Both male and female dark-reared flies, between 2–10 days post-eclosion, were used for tethered walking behavior experiments. For experiments involving optogenetic reagents (Chrimson variants and gtACR1), adult flies were placed on cornmeal agar with all-trans-retinal (100 µL of 35 mM ATR in 95% EtOH, Santa Cruz Biotechnology) for 24 hr prior to the experiment. Vials were wrapped in foil to reduce optogenetic activation during development.
 
-## Electrophysiology and calcium imaging preparation
+### Electrophysiology and calcium imaging preparation
 
 Flies were positioned in a custom steel holder as described in Tuthill and Wilson, 2016b, with modifications to allow us to image movement of the fly leg. Each fly was anesthetized on ice for two minutes, so that she could be positioned ventral side up with her head and thorax fixed in place with UV-cured glue. The front legs were glued to the horizontal top of the holder, the coxa aligned with the thorax, and the femur positioned at a right angle to the coxa and body axis. In this configuration, the fly could freely wave her tibia in an arc at an angle of ~50–65° to the top surface of the holder. The holder was placed in the imaging plane of a Sutter SOM moveable objective microscope. All recordings were performed in extracellular fly saline (recipe below) at room temperature.
 
 We used a water immersion 40X objective (Nikon) for patch-clamping and a 5X air objective (Nikon) to view the fly’s right front femur and tibia through the saline during spontaneous movements of the leg. Videos of the preparation were acquired at 170 Hz through the 5X objective with a Basler acA1300-200um machine vision camera. Custom acquisition code written in MATLAB (Azevedo, 2020a; copy archived at https://github.com/elifesciences-publications/FlySound) controlled generation and acquisition of digital and analog signals through a DAQ (National Instruments). Input signals were digitized at 50 kHz.
 
-## Force measurement and spring constant calibration
+### Force measurement and spring constant calibration
 
 To measure forces produced by leg movements, we imaged the position of a flexible ‘force probe’ as the fly pulled against it. The force probe was a PBT filament fiber from a synthetic paint brush (Proform CS2.5 AS), threaded through the end of a glass micropipette (1.5 mm OD, 1.1 mm ID, WPI). To create a force probe, UV-cured glue (KOA 300, KEMXERT) was sucked up into the micropipette, the fiber was threaded into the glue, leaving 1–2 cm protruding out from the tip of the glass, and the glue was cured. The micropipette allowed us to mount the force probe in a custom holder and to couple it to a micromanipulator (Sutter MP-285). Videos of the force probe were acquired at 170 Hz through the 5X objective with a Basler acA1300-200um machine vision camera. One pixel equaled 1.03 μm2. We wrote custom machine vision code that detects the position of the force probe in each frame of the video by 1) allowing the user to draw a line along the probe in the video, 2) rotate the image of the probe perpendicular to the line, 3) average down the rows of the rotated image to get a single intensity profile, with a peak at the probe’s location, and then 4) find the center of mass of the intensity peak,±FWHM above baseline. A similar technique employing a probe to measure force has been used in Drosophila in previous studies (Elliott and Sparrow, 2012).
 
 At steady state, the position of the force probe was related to the force through a spring constant, k, F = -kx (Figure 1—figure supplement 2). We measured the spring constant by positioning the force probe over an analytical balance. A glass coverslip was oriented vertically on edge in a piece of wax on the balance, and the tip of the force probe was positioned at the top edge of the coverslip. We then moved the micromanipulator to different positions. The ‘mass’ of the force probe was multiplied by gravity to give the force at that position. We then fit a linear relationship between force and position to measure the spring constant (Figure 1—figure supplement 2A). The force probe we used for experiments in this study had a spring constant of k = 0.2234 µN/µm and protruded approximately 1.5 cm past the end of the micropipette.
 
-The force probe was not only a spring. It also had mass and was placed in saline, so inertia (m) and drag (c) affected its dynamics: F = m d2x/dt2 + c dx/dt+kx. To measure these properties, we ‘flicked’ the force probe by moving it to different positions with a glass micropipette, abruptly letting go, and allowing the probe to relax back to rest (Figure 1—figure supplement 2B). We imaged the position of the probe at 1.2 kHz with a restricted region of interest, and extracted dynamical parameters m = 0.1702 mg and c = 0.1377 kg/s. While not zero, the effective mass and drag were negligible (Figure 1—figure supplement 2C). The probe was slightly under-damped with a relaxation time constant of 2.5 ms and oscillation period of 5.8 ms, such that when imaging spontaneous movements at 170 Hz, the probe would effectively come to rest within one frame. The relaxation time constant was much faster than the fly’s spontaneous movements, even when the fly was attempting to let go of the force probe.
+The force probe was not only a spring. It also had mass and was placed in saline, so inertia (m) and drag (c) affected its dynamics: $F=md^{2}x/dt^{2}+cdx/dt+kx$. To measure these properties, we ‘flicked’ the force probe by moving it to different positions with a glass micropipette, abruptly letting go, and allowing the probe to relax back to rest (Figure 1—figure supplement 2B). We imaged the position of the probe at 1.2 kHz with a restricted region of interest, and extracted dynamical parameters m = 0.1702 mg and c = 0.1377 kg/s. While not zero, the effective mass and drag were negligible (Figure 1—figure supplement 2C). The probe was slightly under-damped with a relaxation time constant of 2.5 ms and oscillation period of 5.8 ms, such that when imaging spontaneous movements at 170 Hz, the probe would effectively come to rest within one frame. The relaxation time constant was much faster than the fly’s spontaneous movements, even when the fly was attempting to let go of the force probe.
 
 In Figure 4D–F, we calculate force by including drag and inertia, but in other figures we report leg displacement and the approximation of force, assuming that drag and inertia are negligible. We easily captured the lateral movement of the force probe across the frame but avoided estimating the vertical movement as the fly pulled the probe closer to its leg. As a result, the displacement (and thus the force) measured by the probe in Figures 1, 5 may be slightly underestimated.
 
-## Mechanical stimulation of the leg
+### Mechanical stimulation of the leg
 
 To move the leg and passively stimulate proprioceptive feedback, we mounted the force probe perpendicularly on a piezoelectric actuator with a 60 μm travel range (Physik Instrumente). The axial position of the probe was controlled by an amplifier (Physik), with voltage commands generated in MATLAB and delivered through the DAQ board (National Instruments). The output of the actuator’s strain gauge was used to control the position of the actuator through closed-loop feedback. The strain gauge sensor output was sampled at 50 kHz. The probe tip was positioned near the end of the tibia, giving a lever arm of 417 ± 7 (s.d.) μm across flies (n = 8). We then moved the tibia through its range of motion until it was approximately at 90° to the femur. To measure the effect of leg angle on the amplitude of sensory feedback, we then moved the probe to a range of axial positions (−150 μm = −21°, −75 μm = −10°, 75 μm = 10° and 150 μm = 21°, negative direction is extension) and repeated the stimuli (Figure 6—figure supplement 1).
 
@@ -194,19 +478,19 @@ We delivered ramp stimuli that moved the leg 60 μm (8°) with varying speeds, i
 
 To generate larger, faster movements than we could deliver with the probe, we whacked the leg by flicking the probe, similar to how we calibrated the probe dynamics (Figure 6—figure supplement 1).
 
-## Leg tracking
+### Leg tracking
 
 In trials where the fly was free to wave its leg rather than pull on the force probe, we tracked the leg using DeepLabCut (Mathis et al., 2018). For a training set, we labeled the tibia position for ~45 frames for three different videos from each fly using custom labeling code (Azevedo, 2020b; copy archived at https://github.com/elifesciences-publications/LabelSelectedFramesForDLC) . We labeled six points on the stationary femur, six points on the tibia (Figure 1—figure supplement 1B), as well as prominent bright objects that would otherwise often be falsely identified as part of the legs, such as the EMG electrode, the force probe, and several specular creases in the steel holder. The resnet50 network used in DeepLabCut served as the starting point for training, but as we added more flies to the training set, we initiated further training from the previously trained network. We found that the networks failed to generalize across flies but that ~150 labeled frames were sufficient to ensure >99% accuracy on other frames for that fly (Figure 1—figure supplement 1B).
 
 In post-processing, we measured the distribution of pairwise nearest neighbor distances between the six detected tibia points and assumed that outliers indicated that a point was poorly identified. If only a single point was misidentified (~0.7%), we filled in the point with random draws from the nearest-neighbor pairwise distance distributions. The network misidentified more than one point 0.2% of the time, typically when the fly moved its leg particularly quickly, causing the image to blur. We excluded such frames. We median-filtered the x, y coordinates across video frames, and found the centroid of the six points, approximately the middle of the tibia. The centroid points traced out an ellipse that was the projection of the circular arc of the leg in the plane of the camera. Fitting an ellipse to the centroids allowed us to calculate the azimuthal angle of the leg arc (~50–65°) and the real angle between the stationary femur and the moving leg. We then used the real angle of the leg to detect when the leg was extended (>120°) or flexed (<30°) (Figure 1—figure supplement 1E).
 
-## Calcium imaging
+### Calcium imaging
 
 We imaged the calcium influx into muscles with GCaMP6f (Figure 1, Figure 1—figure supplement 1A), driven by MHC-LexA expression in muscles. Epifluorescent 488 nm illumination excited GCaMP6f fluorescence. A long-pass dichroic (560 nm, Semrock) passed IR wavelengths to the leg imaging camera and reflected GCaMP6f emission to a second Basler camera imaging at 50–60 Hz. The imaging window of the GCaMP camera was restricted to the femur. Video frames were registered (Guizar-Sicairos et al., 2008) to remove vibrations due to movements of the saline meniscus (Video 1).
 
 In the dark, the fly tended not to move its leg. However, the fly began to struggle and move its leg as soon as the blue epifluorescent light turned on to excite the calcium sensor. We imaged spontaneous movements under two conditions. 1) The fly could pull on the force probe with its tibia or 2) the fly waved its leg around spontaneously without the force probe. In the second case, a glass hook was placed near the femur as a barrier to prevent the fly from completely flexing the tibia and obscuring the calcium signals in the femur.
 
-## Clustering of calcium signals
+### Clustering of calcium signals
 
 We used the k-means algorithm in MATLAB to segment calcium signals into clusters. We used trials in which the fly waved its leg with no force probe. We drew an ROI around the femur, excluding only points near the femur tibia joint where intensity changes were dominated by the tibia obscuring the femur. We used the correlation of pixel intensity as the distance metric and varied the number of clusters, k = 3–8. Once pixels were assigned to a cluster, we applied a Gaussian kernel to the pixel cluster assignments and excluded pixels which fell below 0.75, indicating that less than ¾ of the surrounding pixels were of the same cluster. This resulted in clearly defined clusters with separation between them but no major gaps, indicating that similar clusters were also grouped anatomically (Figure 1—figure supplement 1C). To confirm that the clustering indicated changes in calcium influx rather than muscle movement, we also ran the same clustering routines on flies expressing GFP in the muscles (Figure 1—figure supplement 4). In this case, clusters were dispersed, fluctuated very little in intensity and bore no similarity to musculature.
 
@@ -218,7 +502,7 @@ The time constant of the calcium indicator was slower than the fly’s movements
 
 Surprisingly, we did not identify any clusters that increased their calcium activity during tibia extension. Flies occasionally held their legs extended (Video 1), at which point we expected to see some clusters increase fluorescence (Figure 1—figure supplement 1D–E). On average, the leg musculature was dim during these periods Figure 1—figure supplement 1E), whereas the fluorescence of superficial flexors muscle fibers could increase more than six-fold during flexion events. Diffuse emission from the bright and slowly fading flexors may have obscured small increases in extensor fluorescence. We still found it curious that contractions of extensors did not produce brighter events. We speculate that calcium influx and contractile forces may be larger in flexor muscles than extensors because flies use flexion of the forelimb tibia to support their weight, to hold onto the substrate, and to pull their body during walking, whereas extensors generally lift up unloaded limbs when swinging them forward.
 
-## Whole-cell patch clamp electrophysiology
+### Whole-cell patch clamp electrophysiology
 
 To perform whole-cell patch clamp recordings, we first covered the fly in a drop of extracellular saline and dissected a window in the ventral cuticle of the thorax to expose the VNC. The perineural sheath surrounding the VNC was ruptured manually with forceps, near the midline, anterior to the T1 neuromeres. We first used a large bore cleaning pipette (~7–10 μm opening) to remove debris and gently blow cell bodies apart, clearing a path from the ruptured hole in the sheath to the targeted motor neuron soma. The recording chamber was then transferred to the microscope and perfused with saline at a rate of 2–3 mL/min.
 
@@ -232,23 +516,23 @@ The liquid junction potential for the whole cell recordings was −13 mV (Gouwen
 
 We applied 1 μM methyllycaconitine citrate (MLA, Tocris) to block cholinergic transmission in the VNC. To encourage spontaneous self-driven movements, we sometimes bath applied 0.5 mM caffeine (Sigma-Aldrich) during whole cell recordings, which prolonged periods of struggling in response to the epifluorescent light. Figure 5 includes trials recorded in caffeine: 45 of the 90 trials from one fast cell, and 50 of the 100 trials from a second fast cell. Caffeine’s effects have been reported to be due to dopamine receptor agonism (Nall et al., 2016). Caffeine application did not increase activity on the leg electrodes during periods of rest.
 
-## Identifying Gal4 lines that label leg motor neurons
+### Identifying Gal4 lines that label leg motor neurons
 
 We screened the Janelia FlyLight collection (Jenett et al., 2012) to find Gal4 lines that sparsely label leg motor neurons. We obtained flies from the Bloomington Drosophila Stock Center (BDSC), and imaged leg expression of GFP to characterize muscle innervation patterns.
 
 Soler et al., 2004 described the leg musculature in Drosophila, which also serves as the basis for the leg motor neuron nomenclature (Baek and Mann, 2009; Brierley et al., 2012). For clarity, however, we refer to muscles of the femur as flexors or extensors, rather than as depressors or levators, which refer to the natural stance of the insect. Soler et al. in turn based their nomenclature on Miller, 1950. There appears to be a discrepancy between the two: the muscle named the tibia reductor muscle by Soler et al. is described as one of two depressor muscles by Miller, muscles 40 and 41. Miller applied the nomenclature of Snodgrass, 1935 to Drosophila leg muscles. Muscles that control the tibia are located in the femur. Snodgrass described a reductor of the femur that was actually located in the trochanter, perhaps leading to this misreading. The trochanter-femur joint in most insects has limited mobility. Presumably, Snodgrass named it a reductor muscle because depressor or levator would be inaccurate. We agree with the characterization of Miller and Soler that muscles 40 and 41 are two distinct muscles as they attach via distinct tendons, as seen in X-ray images of the leg musculature (Pacureanu et al., 2019). Because the function of muscle 41 is to flex the tibia, we refer to it here as a tibia flexor.
 
-## Extracellular recordings from leg motor neurons
+### Extracellular recordings from leg motor neurons
 
 We recorded electrical activity in the leg by inserting finely pulled glass electrodes (OD 1.5 mm, ID 0.86 mm) into the cuticle of the femur, taking care to avoid impaling the muscle. The electrodes were filled with extracellular saline. Extracellular currents were recorded in voltage clamp to improve the signal-to-noise. We confirmed that injecting currents of similar size did not move the leg nor produce additional electrical activity. The currents we recorded likely reflect spikes from the motor neuron axons, commensurate with the short latencies between somatic spikes and the events on the leg electrode (Figure 4). If we observed extracellular leg spikes that were time locked with whole-cell-recorded somatic spikes, we then never observed unmatched somatic spikes. If we were observing muscle action potentials or muscle EPSPs, we would have expected some failures. For simplicity we refer to activity recorded in the leg as the electromyogram (EMG), consistent with the use of the term in other organisms.
 
 The content of EMG signals recorded in the leg depended on the placement of the electrode. To improve our chances of recording spikes from specific neurons, we used femur bristles (macrochaetes) as landmarks to place the electrode near the branched axon terminals. These include four large distal macrochaetes (‘bristles 0–3’) and one very proximal bristle which we call here the ‘terminal bristle’. Fast motor neuron spikes were most likely found by impaling the leg between bristle 2 and 3, while large intermediate spikes were often found near the terminal bristle. Even still, the polarity, amplitude, and shape of events from identified neurons could vary substantially. When the electrode was placed near the third macrochaete, we tended to record very large units of >200 pA from the fast motor neuron. Fast neuron units were by far the largest amplitude events in the femur. When the electrode was placed in the proximal part of the femur, near the terminal bristle, the spikes from the fast neuron tended to be smaller but still identifiable. We could not unambiguously detect EMG units associated with Flexor 3 in Figure 1. We ran our spike detection routines (see below) on EMG records only in cases where they could be clearly identified or when EMG spikes aligned with the somatic spikes.
 
-## Optogenetic activation of leg motor neurons during electrophysiology
+### Optogenetic activation of leg motor neurons during electrophysiology
 
 To measure force production as a function of motor neuron activity, we drove the expression of CsChrimson (Klapoetke et al., 2014) with 81A07-Gal4, and the expression of Chrimson88 (Strother et al., 2017) with 22A08-Gal4. CsChrimson expression in 22A08-Gal4 prevented straightening of the wings and caused the front legs to be bent midway through each segment. We drove expression of Chrimson (Klapoetke et al., 2014) in sensory neurons with iav-LexA. We activated Chrimson by placing a fiber-coupled cannula (105 μm diameter, Thorlabs) next to the ventral window in the cuticle and illuminating the T1 neuropil with a 625 nm LED (Thorlabs). We used short flashes of 10 or 20 ms to activate neurons, increasing intensity by increasing the voltage supplied to the LED driver (Thorlabs). We measured the power output of the LED for each voltage we used.
 
-## Spike detection from whole-cell recordings and EMG recordings
+### Spike detection from whole-cell recordings and EMG recordings
 
 To detect spikes in current clamp recordings of membrane potential, we applied the following analysis steps to our electrophysiology traces (digitized at 50 kHz): 1) filter, 2) identify events with large peaks above a threshold, 3) compare the shape of the filtered events to a template (distance metric), 4) threshold events based both on the shape and on the amplitude of the unfiltered spike. The parameter space for each of these steps was explored in an interactive spike detection interface (Azevedo, 2020c; copy archived at https://github.com/elifesciences-publications/spikeDetection) .
 
@@ -260,7 +544,7 @@ Since we were interested in measuring spike latencies and conduction velocities,
 
 We used the same algorithm to detect spikes from EMG current records, with different thresholding parameters in Step four for each recording due to the variability in EMG event size.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 After a whole-cell motor neuron recording, we dissected the VNC but left the legs and head attached. We placed the tissue in 4% paraformaldehyde in phosphate-buffered saline (PBS) for 20 min, then separated and retained the VNC and the right leg with the filled motor neuron.
 
@@ -272,21 +556,25 @@ Following staining, the tissue was mounted in Vectashield (Vector Labs) and imag
 
 To quantify morphology (Figure 3), we measured the soma diameter, the width of the neurite entering the neuropil, and the width of the axon, as close to the exit of the neuropil as possible. We made two measurements for each image and location and averaged the values.
 
-## Fly preparation for walking experiments
+### Fly preparation for walking experiments
 
 Fly wings were clipped under cold anesthesia (<4 mins) 24 hr before walking experiments. the fly’s dorsal thorax was attached to a tungsten wire (0.1 mm diameter) with UV-curing glue (KOA 300, KEMXERT). Tethered flies were given only water for 2–5 hr prior to being placed on the treadmill. In some experiments, the tethered flies were then decapitated under cold anesthesia and allowed to recover for 5–20 min prior to the experiment.
 
 Intact tethered flies were positioned on a hand-milled foam treadmill ball (density: 7.3 mg/mm3, diameter: 9.46 mm) that was suspended on a stream of air (5 l/min) and that freely rotated under the fly’s movement (Figure 7D). The ball and fly were illuminated by three IR lights. In experiments on headless flies, we removed the spherical treadmill, leaving the flies suspended in air. For all trials, the temperature in the chamber was maintained between 26–28°C with a relative humidity of 58–65%.
 
-## Tethered behavior assay
+### Tethered behavior assay
 
 We coaxed flies to walk on the ball by displaying visual stimuli on a semi-circular green LED display (Götz and Wenking, 1973; Reiser and Dickinson, 2008). To elicit forward walking, we displayed a single dark bar (width 30°) on a light background which oscillated across 48.75° about the center of the fly’s visual field, at 2.7 Hz. During periods between trials, the LED panels displayed a fixed dark stripe (30°) on a bright background in front of the tethered fly.
 
 To characterize the role of the motor neurons in behaving tethered flies, we optogenetically activated or silenced genetically targeted motor neurons. A green laser (532 nm, CST DPSS laser, Besram Technology, Inc), pulsed at 1200 Hz with a 66% duty cycle, passed through a converging lens and a pinhole (50 µm diameter) with a resulting power of 87 mW/mm2 at the target. It was aimed at the fly’s left thoracic coxa-body wall joint, thus targeting the motor neuron axons and the T1 neuromere below the cuticle. Experiments using a driver line labeling all motor neurons (OK371-Gal4) indicated that optogenetic stimulation primarily effected neurons innervating the left prothoracic leg, though we cannot rule out effects on other VNC neurons (Video 8).
 
+![Video 8.](https://cdn.elifesciences.org/articles/56754/elife-56754-video8.mp4.jpg)
+
+**Video 8.:** The video shows the behavior of different control flies on different trials while 1) UAS-CsChrimson flies were walking; 2) UAS-CsChrimson flies were stationary; 3) UAS- gtACR1 flies were walking; 4) UAS- gtACR1 flies were stationary. Videos of behavior are slowed 10X.
+
 Each trial was four seconds long. We presented walking flies with the visual stimulus, the flies reached a steady running speed at ~1.5 s (Figure 7E), and the laser stimulus began at 2 s. We omitted the laser in some trials (0 ms), or the laser stimulus was either 90 ms or 720 ms in duration, interleaved in random order. Trials were separated by a 25 s period during which video data were written to disk and the LED panels displayed a fixed, stationary stripe.
 
-## Quantification of fly behavior
+### Quantification of fly behavior
 
 We used Fictrac (Moore et al., 2014) to calculate fly walking trajectories (position, speed, and rotational velocity) from live video of the spherical treadmill’s rotation (Point Grey Firefly camera, imaging at 30 Hz). Trajectories were then converted from pixels to mm using the spherical treadmill’s diameter of 9.46 mm. Leg movements were captured from six simultaneously triggered cameras (Basler acA800-510µm, imaging at 300 Hz) that were spatial distributed around the fly’s body. Digital and analog data signals were collected with a DAQ (PCIe-6321, National Instruments) sampling at 10 kHz and recorded with custom MATLAB scripts.
 
@@ -298,16 +586,61 @@ For Walking data, we calculated the average forward velocity over time, for each
 
 We noticed that the laser stimulus caused the empty Gal4 flies (BDP-Gal4) to decrease their walking speed slightly, likely because the flies could see the stimulus. This was particularly noticeable when we first used a fiber-coupled LED with a 105 µm diameter cannula. This prompted us to focus the laser on the fly’s left leg in order to further reduce the spot size and minimize the behavioral artifact. Even so, the optogenetic stimulus increased the probability that stationary flies would start walking (Figure 7H). To control for this effect, we compared the change in speed in motor neuron lines for each stimulus duration, to the change in speed in the control empty Gal4 flies (see statistical analysis below). In no-light trials, walking initiation (Figure 7H, black and gray bars) and changes in speed (Figure 7E, black traces) did not vary across different genotypes, although baseline walking speed varied slightly across the different lines.
 
-## Statistical analyses
+### Statistical analyses
 
 For electrophysiology and calcium imaging results in Figures 1–6, no statistical tests were performed a priori to decide upon sample sizes, but sample sizes are consistent with conventions in the field. Unless otherwise noted, we used the non-parametric Mann-Whitney-Wilcoxon rank-sum test to compare two populations (e.g. Figure 4) and 2-way ANOVA with Tukey-Kramer corrections for multiple comparisons across three populations (e.g. Figure 3). To compare changes in fluorescence across multiple clusters and extension vs flexion (Figure 1), we used a 2-way ANOVA modeling an interaction between clusters and flexion vs. extension, with Tukey-Kramer corrections for multiple comparisons. To compare cluster ΔF/F of multiple clusters (Figure 1—figure supplement 1), we used a 2-way ANOVA with Tukey-Kramer corrections for multiple comparisons. All statistical tests were performed with custom code in MATLAB.
 
 For fly walking behavior in Figure 7, we used bootstrap simulations with 10,000 random draws to compare both the likelihood of stationary flies to start walking, as well as changes in walking speed (Saravanan et al., 2019). Stationary trials were assigned a binary value to indicate that the fly began walking (1) or not (0). For a given stimulus duration and optogenetic condition (Chrimson or gtACR), the binary values for the empty Gal4 control flies and a motor neuron line were combined and then drawn randomly with replacement in proportion to the number of trials for each genotype. As a metric, we measured the difference in the fraction of flies that began walking. The p-value was the fraction of instances in which the randomly drawn distribution produced a value of our metric more extreme then we saw in the data (two-tailed) (Figure 7H). For trials in which the fly was already walking at the onset of the laser stimulus (Walking trials, Figure 7E), we compared the relative change in speed following the stimulus for a given motor neuron line to the empty Gal4 line. We randomly assigned trials to each genotype and calculated the average speed change as above. We used the Benjamini-Hochberg procedure to calculate the false-discovery-rate for either activation or silencing.
 
-## Table of genotypes
+### Table of genotypes
 
-Figure 1AW[*]; P{w[+mC]=Mhc-GAL4.K}2, P{y[+t7.7] w[+mC]=20XUAS-IVS-mCD8::GFP}attP2Figure 1Bw[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+Figure 1C–Iw[1118]; MHC-LexA,w[13XLexAop2-IVS-GCaMP6f-p10}su(Hw)attP5/Berlin WT; +/Berlin WT;Figure 2w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+Figure 3w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+Figure 4w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118], 10XUAS-syn21-Chrimson88-tDT3.1 (attP18); P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+Figure 5w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+Figure 6A–Ew[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+Figure 6G–Hw[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/iav-LexA; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/13XLexAop2-IVS-Syn-21-Chrimson::tdTomato (attP2) w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/iav-LexA; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/13XLexAop2-IVS-Syn-21-Chrimson::tdTomato (attP2) w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/iav-LexA; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/13XLexAop2-IVS-Syn-21-Chrimson::tdTomato (attP2)Figure 7w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=BDP-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/P{y[+t7.7] w[+mC]=20XUAS-IVS-gtACR1}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=BDP-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2 w[1118]; P{w[+mW.hs]=GawB}VGlut[OK371]/+; +/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2
+<table>
+  <thead>
+    <tr>
+      <th>Figure 1A</th>
+      <th>W[*]; P{w[+mC]=Mhc-GAL4.K}2, P{y[+t7.7] w[+mC]=20XUAS-IVS-mCD8::GFP}attP2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1B</td>
+      <td>w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1C–I</td>
+      <td>w[1118]; MHC-LexA,w[13XLexAop2-IVS-GCaMP6f-p10}su(Hw)attP5/Berlin WT; +/Berlin WT;</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118], 10XUAS-syn21-Chrimson88-tDT3.1 (attP18); P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 6A–E</td>
+      <td>w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/+ w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 6G–H</td>
+      <td>w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/iav-LexA; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/13XLexAop2-IVS-Syn-21-Chrimson::tdTomato (attP2) w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/iav-LexA; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/13XLexAop2-IVS-Syn-21-Chrimson::tdTomato (attP2) w[1118]; P{JFRC7-20XUAS-IVS-mCD8::GFP} attp40/iav-LexA; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/13XLexAop2-IVS-Syn-21-Chrimson::tdTomato (attP2)</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=BDP-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS-CsChrimson.mVenus}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR81A07-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR35 C09-GAL4}attP2/P{y[+t7.7] w[+mC]=20XUAS-IVS-gtACR1}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=GMR22A08-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2 w[1118]; +/+; P{y[+t7.7] w[+mC]=BDP-GAL4}attP2/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2 w[1118]; P{w[+mW.hs]=GawB}VGlut[OK371]/+; +/P{y[+t7.7] w[+mC]=20 XUAS-IVS- gtACR1}attP2</td>
+    </tr>
+  </tbody>
+</table>
 
-## Data and software availability
+### Data and software availability
 
 Data will be made available from the authors website. Acquisition code is available at https://github.com/tony-azevedo/FlySound. Analysis code is available at https://github.com/tony-azevedo/FlyAnalysis.

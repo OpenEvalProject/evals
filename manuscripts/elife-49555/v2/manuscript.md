@@ -20,7 +20,7 @@
 
 ## Abstract
 
-In the US, the normal, oral temperature of adults is, on average, lower than the canonical 37°C established in the 19 th century. We postulated that body temperature has decreased over time. Using measurements from three cohorts—the Union Army Veterans of the Civil War (N = 23,710; measurement years 1860–1940), the National Health and Nutrition Examination Survey I (N = 15,301; 1971–1975), and the Stanford Translational Research Integrated Database Environment (N = 150,280; 2007–2017)—we determined that mean body temperature in men and women, after adjusting for age, height, weight and, in some models date and time of day, has decreased monotonically by 0.03°C per birth decade. A similar decline within the Union Army cohort as between cohorts, makes measurement error an unlikely explanation. This substantive and continuing shift in body temperature—a marker for metabolic rate—provides a framework for understanding changes in human health and longevity over 157 years.
+In the US, the normal, oral temperature of adults is, on average, lower than the canonical 37°C established in the 19th century. We postulated that body temperature has decreased over time. Using measurements from three cohorts—the Union Army Veterans of the Civil War (N = 23,710; measurement years 1860–1940), the National Health and Nutrition Examination Survey I (N = 15,301; 1971–1975), and the Stanford Translational Research Integrated Database Environment (N = 150,280; 2007–2017)—we determined that mean body temperature in men and women, after adjusting for age, height, weight and, in some models date and time of day, has decreased monotonically by 0.03°C per birth decade. A similar decline within the Union Army cohort as between cohorts, makes measurement error an unlikely explanation. This substantive and continuing shift in body temperature—a marker for metabolic rate—provides a framework for understanding changes in human health and longevity over 157 years.
 
 ## Introduction
 
@@ -32,7 +32,242 @@ The question of whether mean body temperature is changing over time is not merel
 
 In men, we analyzed: a) 83,900 measurements from the Union Army Veterans of the Civil War cohort (UAVCW) obtained between 1862 and 1930, b) 5998 measurements from the National Health and Nutrition Examination Survey I cohort (NHANES) obtained between 1971 and 1975, and c) 230,261 measurements from the Stanford Translational Research Integrated Database Environment cohort (STRIDE) obtained between 2007 and 2017 (Table 1). We also compared temperature measurements in women within the two later time periods (NHANES, 9303 measurements; and STRIDE, 348,006 measurements).
 
+**Table 1.**
+ Demographic characteristics (N (%)) and mean (SD)) of cohort participants included in the analyses.Table 1—source code 1.R code for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total, N (%)</th>
+      <th>Uavcw</th>
+      <th>Nhanes i</th>
+      <th>Stride</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Individuals</td>
+      <td>189,338 (100%)</td>
+      <td>23,710 (13%)</td>
+      <td>15,301 (8%)</td>
+      <td>150,280 (79%)</td>
+    </tr>
+    <tr>
+      <td>Observations1</td>
+      <td>677,423 (100%)</td>
+      <td>83,699 (12%)</td>
+      <td>15,301 (2%)</td>
+      <td>578,222 (85%)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Overall*</td>
+      <td></td>
+      <td>56.89 (8.85)</td>
+      <td>46.55 (16.74)</td>
+      <td>53.00 (15.62)</td>
+    </tr>
+    <tr>
+      <td>20–40</td>
+      <td>144,379 (21%)</td>
+      <td>1682 (2%)</td>
+      <td>6489 (42%)</td>
+      <td>136,181 (24%)</td>
+    </tr>
+    <tr>
+      <td>40–60</td>
+      <td>283,059 (42%)</td>
+      <td>52,117 (62%)</td>
+      <td>4422 (29%)</td>
+      <td>225,365 (39%)</td>
+    </tr>
+    <tr>
+      <td>60–80</td>
+      <td>249,985 (37%)</td>
+      <td>28,900 (35%)</td>
+      <td>4390 (29%)</td>
+      <td>216,676 (37%)</td>
+    </tr>
+    <tr>
+      <td>Weight (Kg)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+    </tr>
+    <tr>
+      <td>Overall*</td>
+      <td></td>
+      <td>68.63 (10.54)</td>
+      <td>70.44 (15.76)</td>
+      <td>78.53 (19.75)</td>
+    </tr>
+    <tr>
+      <td>&gt;60</td>
+      <td>123,931 (18%)</td>
+      <td>16,147 (19%)</td>
+      <td>4245 (28%)</td>
+      <td>103,516 (18%)</td>
+    </tr>
+    <tr>
+      <td>60–80</td>
+      <td>296,244 (44%)</td>
+      <td>57,475 (69%)</td>
+      <td>7311 (48%)</td>
+      <td>231,312 (40%)</td>
+    </tr>
+    <tr>
+      <td>80–100</td>
+      <td>175,598 (26%)</td>
+      <td>9054 (11%)</td>
+      <td>3115 (20%)</td>
+      <td>163,402 (28%)</td>
+    </tr>
+    <tr>
+      <td>&gt;100</td>
+      <td>81,650 (12%)</td>
+      <td>1023 (1%)</td>
+      <td>630 (4%)</td>
+      <td>79,992 (14%)</td>
+    </tr>
+    <tr>
+      <td>Height (cm)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Overall*</td>
+      <td></td>
+      <td>172.34 (6.8)</td>
+      <td>166.31 (9.17)</td>
+      <td>167.78 (10.46)</td>
+    </tr>
+    <tr>
+      <td>&lt;160</td>
+      <td>145,964 (64%)</td>
+      <td>2587 (3%)</td>
+      <td>4077 (27%)</td>
+      <td>139,295 (24%)</td>
+    </tr>
+    <tr>
+      <td>160–180</td>
+      <td>432,404 (64%)</td>
+      <td>69,506 (83%)</td>
+      <td>9995 (65%)</td>
+      <td>352,762 (61%)</td>
+    </tr>
+    <tr>
+      <td>180–200</td>
+      <td>98,320 (15%)</td>
+      <td>11,569 (14%)</td>
+      <td>1227 (8%)</td>
+      <td>85,470 (15%)</td>
+    </tr>
+    <tr>
+      <td>&gt;200</td>
+      <td>735 (0%)</td>
+      <td>37 (0%)</td>
+      <td>2 (0%)</td>
+      <td>695 (0%)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Women2</td>
+      <td>357,309 (53%)</td>
+      <td>0 (0%)</td>
+      <td>9303 (61%)</td>
+      <td>348,006 (60%)</td>
+    </tr>
+    <tr>
+      <td>Men</td>
+      <td>320,114 (47%)</td>
+      <td>83,699 (100%)</td>
+      <td>5998 (39%)</td>
+      <td>230,216 (40%)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>68,955 (10%)</td>
+      <td>20,801 (25%)</td>
+      <td>2399 (16%)</td>
+      <td>45,689 (8%)</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>381,330 (56%)</td>
+      <td>62,898 (75%)</td>
+      <td>12,716 (83%)</td>
+      <td>305,581 (53%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>78,277 (12%)</td>
+      <td>0 (0%)</td>
+      <td>186 (1%)</td>
+      <td>78,091 (14%)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>148,861 (22%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>148,861 (26%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_SD: standard deviation; UAVCW: Union Army Veterans of the Civil War; NHANES: National Health and Nutrition Examination Survey I; STRIDE: Stanford Translational Research Integrated Database Environment; BMI: body mass index. * Mean (SD). 1 Between one and four temperature measurements were available per person. 2UAVCW included men only._
+
 Overall, temperature measurements were significantly higher in the UAVCW cohort than in NHANES, and higher in NHANES than in STRIDE (Figure 1; Figure 1—figure supplement 1). In each of the three cohorts, and for both men and women, we observed that temperature decreased with age with a similar magnitude of effect (between −0.003°C and −0.0043°C per year of age, Figure 1). As has been previously reported (Eriksson et al., 1985), temperature was directly related to weight and inversely related to height, although these associations were not statistically significant in the UAVCW cohort. Analysis using body mass index (BMI) and BMI adjusted for height produced similar results (Figure 1—figure supplement 2) and analyses including only white and black subjects (Figure 1—figure supplement 3) showed similar results to those including subjects of all ethnicities.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-v2.jpg)
+
+**Figure 1.:** (A) Unadjusted data (local regression) for temperature measurements, showing a decrease in temperature across age in white men, black men, white women, and black women, in the three cohorts. (B) Coefficients and standard errors from multivariate linear regression models for each cohort including age, weight, height, ethnicity group and time of day as available. Yellow cells are statistically significant at a p value of < 0.01, orange cells are of borderline significance (p<0.1 but>0.05), and remaining uncolored cells are not statistically significant. (C) Expected body temperature for 30 year old men and women with weight 70 kg and height 170 cm in each time period/cohort.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Coefficients (and standard errors) are from multivariate linear regression models for each cohort including age, height, BMI adjusted for height and time of day (as available). NHANES I includes population weights. *, **, *** indicates significance at the 90%, 95%, and 99% level, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Coefficients (and standard errors) from multivariate linear regression models for each cohort including age, body weight, height and time of day. Separate regression models were fitted for men and women, in black and white ethnicity groups. NHANES I includes population weights. *, **, *** indicates significance at the 90%, 95%, and 99% level, respectively. (B) Expected body temperature (and associated 95% confidence interval) for 30 year old men and women with body weight 70 kg and height 170 cm in each time period/cohort. These values derive from the regression models presented in A.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Graph shows a decrease of predicted body temperature by birth year for both white men (blue line) and white women (red line) based on the linear regression coefficients displayed in B. No data for women were available for the period 1800–1890. For all measurements from UACWV, where time of the day was not available, the values of 12:00 PM (noon) were imputed. (B) Coefficients (and standard errors) from linear regression model including age, weight in kg, height in cm and birth year.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Mixed effect predictions and confidence intervals of the month during which the measurement was taken on the measured temperature. (A) White men in UACWV, (B) white men in NHANES I, (C) white men in STRIDE, (D) white women in NHANES I, and (E) white women in STRIDE.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Coefficients (and standard errors) are from a multivariate linear regression model for the UAVCW cohort including age, weight, height, month and state climate classification (cold, moderate-cold, moderate, warm or hot). While UAVCW provided state information, NHANES I provided general region only and STRIDE was in Northern California only. *, **, *** indicates significance at the 90%, 95%, and 99% level, respectively.
 
 In both STRIDE and a one-third subsample of NHANES, we confirmed the known relationship between later hour of the day and higher temperature: temperature increased 0.02°C per hour of the day in STRIDE compared to 0.01°C in NHANES (Figure 1, Figure 1—figure supplement 2, Figure 1—figure supplement 4). The month of the year had a relatively small, though statistically significant, effect on temperature in all three cohorts, but no consistent pattern emerged (Figure 1—figure supplement 5). Using approximated ambient temperature for the date and geographic location of the examination in UAVCW and STRIDE, a rise in ambient temperature of one degree Celsius correlated with 0.001 degree (p<0.001) and 0.0004 degree (p=0.013) increases in body temperature in UAVCW and STRIDE, respectively. Because the seasonal and climatic effects were small and the independent variables were unavailable for many measurements, we omitted month and estimated ambient temperature from further models.
 
@@ -42,11 +277,11 @@ One possible reason for the lower temperature estimates today than in the past 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig2-v2.jpg)
 
-**Figure 2.:** (A) Smoothed unadjusted data (local regression) for temperature measurement trends within birth cohorts. The different colors represent different birth cohorts (green: 1820s, blue: 1830s, orange: 1840s). (B) Coefficients (and standard errors) from multivariate linear regression including age, body weight, height and decade of birth (1820–1840) (these coefficients do not correspond to the graph as here the trajectories are approximated by linear functions). Only the three birth cohorts with more than 8000 members are included. * and ** indicate significance at the 90%, and 99% level, respectively. (C) Expected body temperature (and associated 95% confidence interval) for 30 year old men with body weight 70 kg and height 170 cm in each birth cohort. These values derive from the regression models presented in B.Figure 2—source code 1.Figure 2.
+**Figure 2.:** (A) Smoothed unadjusted data (local regression) for temperature measurement trends within birth cohorts. The different colors represent different birth cohorts (green: 1820s, blue: 1830s, orange: 1840s). (B) Coefficients (and standard errors) from multivariate linear regression including age, body weight, height and decade of birth (1820–1840) (these coefficients do not correspond to the graph as here the trajectories are approximated by linear functions). Only the three birth cohorts with more than 8000 members are included. * and ** indicate significance at the 90%, and 99% level, respectively. (C) Expected body temperature (and associated 95% confidence interval) for 30 year old men with body weight 70 kg and height 170 cm in each birth cohort. These values derive from the regression models presented in B.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49555/elife-49555-fig3-v2.jpg)
 
-**Figure 3.:** (A) Body temperature decreases by birth year in white and black men and women. No data for women were available for the birth years from 1800 to 1890. (B) Coefficients (and standard errors) used for the graph from multivariate linear regression including age, body weight, height and birth year. All cells are significant at greater than 99% significance level.Figure 3—source code 1.Figure 3.
+**Figure 3.:** (A) Body temperature decreases by birth year in white and black men and women. No data for women were available for the birth years from 1800 to 1890. (B) Coefficients (and standard errors) used for the graph from multivariate linear regression including age, body weight, height and birth year. All cells are significant at greater than 99% significance level.
 
 ## Discussion
 
@@ -66,7 +301,7 @@ In summary, normal body temperature is assumed by many, including a great prepon
 
 ## Materials and methods
 
-## Cohorts
+### Cohorts
 
 We compared body temperature measurements from three cohorts. Cohort 1: The Union Army Veterans of the Civil War, 1860–1940 (UAVCW) is a database from the ‘Early Indictors of Later Work Levels, Disease and Death Study’, initiated by the late Nobel Laureate, Robert Fogel in 1978 (Fogel and Wimmer, 1992) and continuing today. The study abstracted the Compiled Military Service Records, the Pension Records, Carded Medical Records, the Surgeons' Certificates (detailed medical records) and information from the US Federal Census for a cluster sample of Union Army companies in the US Civil War. In total, 331 companies of white and 52 companies of black Union Army veterans were included in the dataset. The Surgeons’ Certificates were obtained at locations throughout the US for veterans seeking pension benefits. These certificates include comprehensive medical histories and physical examinations. Body temperatures in Fahrenheit were hand-written on 83,900 Surgeons' Certificates from 23,710 individuals (mean: 3.53 examinations per individual; Table 1). Whether the temperatures were taken orally or in the axilla is unknown; both methods were employed in the 19th century although oral temperature was more common (Salinger and Kalteyer, 1900). Precision of the instruments is also unknown. Inspection of the distribution of reads, however, suggest that it is no better than 0.2 degrees Fahrenheit, consistent with the hashmarks on mercury thermometers (Figure 1—figure supplement 1). The UAVCW data—including birth date, temperature, height, weight, location and date of the medical visit, medical history, ongoing medical complaints and findings of physical examinations —are freely available on-line in digital format (The Colored Troops (USCT) original and expanded datasets; Fogel et al., 2000; Costa, 2019). Cohort 2: The National Health and Nutrition Examination Survey (NHANES I) is a multistage, national probability survey conducted between 1971 and 1975 in the US civilian population. A subset of subjects, aged 1 to 74 years (N = 23,710) underwent a medical examination (ICPSR study No. 8055), including 15,301 adults. The major focus of NHANES I was nutrition, and persons with low income, pregnant women and the elderly were consequently oversampled (Centers for Disease Control, National Center for Health Statistics, 1975). Data abstracted included weight, height, sex, ethnicity, and month and geographic region of examination and, as available, time of day the temperature was obtained. In NHANES, mercury thermometers were used and temperatures were taken orally. Precision, as with the UAVCW cohort, is assumed to be 0.2 °F. The medical examination was performed by a physician with the help of a nurse. Cohort 3: The Stanford Translational Research Integrated Database Environment (STRIDE) extracts electronic medical record information from patient encounters at Stanford Health Care (Stanford, CA). All adult outpatient encounters at Stanford Health Care from 2007 to 2017 with recorded temperature measurements in the electronic medical record are included in this study (N = 578,522 adult outpatient encounters). Temperature measurements were obtained orally with annually-calibrated, digital thermometers with precision of 0.1 °F and extracted from the dataset along with age, sex, weight, height, primary concern at the visit, prescribed medications, other conditions in the health record with ICD10 codes, and year and time of day the temperature was obtained (mean: 3.85 examinations per individual; Table 1).
 
@@ -74,7 +309,7 @@ For the UAVCW and STRIDE datasets, any observations having a diagnosis of fever 
 
 The use of the STRIDE data was approved as an expedited protocol by the Stanford Institutional Review Board (protocol 40539) and informed consent was waived since the only personal health information abstracted was month of clinic visit. Anonymized data from NHANES and the data from UAVCW are freely available on-line for research use.
 
-## Data analysis
+### Data analysis
 
 Ethnicity categories were defined differently across cohorts. UAVCW included only white and black men. For comparability, we restricted analyses between the UAVCW and other cohorts to men in these two ethnicity groups. Asians were categorized as ‘Other’ in NHANES and as ‘Asian’ in STRIDE, so were considered as ‘Other ethnicity’ in combined analyses. We performed analyses stratified by sex to account for known temperature differences between men and women. The NHANES study uses sample weights to account for its design; these were incorporated into models including NHANES data (Centers for Disease Control, National Center for Health Statistics, 1975).
 

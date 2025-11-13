@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.30918.001 Mature T cells bearing αβ T cell receptors react with foreign antigens bound to alleles of major histocompatibility complex proteins (MHC) that they were exposed to during their development in the thymus, a phenomenon known as positive selection. The structural basis for positive selection has long been debated. Here, using mice expressing one of two different T cell receptor β chains and various MHC alleles, we show that positive selection-induced MHC bias of T cell receptors is affected both by the germline encoded elements of the T cell receptor α and β chain and, surprisingly, dramatically affected by the non germ line encoded portions of CDR3 of the T cell receptor α chain. Thus, in addition to determining specificity for antigen, the non germline encoded elements of T cell receptors may help the proteins cope with the extremely polymorphic nature of major histocompatibility complex products within the species.
+Mature T cells bearing αβ T cell receptors react with foreign antigens bound to alleles of major histocompatibility complex proteins (MHC) that they were exposed to during their development in the thymus, a phenomenon known as positive selection. The structural basis for positive selection has long been debated. Here, using mice expressing one of two different T cell receptor β chains and various MHC alleles, we show that positive selection-induced MHC bias of T cell receptors is affected both by the germline encoded elements of the T cell receptor α and β chain and, surprisingly, dramatically affected by the non germ line encoded portions of CDR3 of the T cell receptor α chain. Thus, in addition to determining specificity for antigen, the non germline encoded elements of T cell receptors may help the proteins cope with the extremely polymorphic nature of major histocompatibility complex products within the species.
 
 ## Introduction
 
@@ -53,7 +53,7 @@ Most surprisingly, however, the CDR3α sequences differed markedly depending on 
 
 ## Results
 
-## The generation and properties of mice expressing a single TCR beta chain
+### The generation and properties of mice expressing a single TCR beta chain
 
 The impact of positive selection on the TCR repertoire of mature T cells cannot be understood by sequencing only the expressed Tcra or Tcrb chain genes. This is because others and we have found a fairly high percentage of individual TCRα or TCRβ sequences are expressed in animals regardless of their MHC haplotype (Robins et al., 2010; Warren et al., 2011; Liu et al., 2014) (Supplementary file 1). Presumably this is at least in part possible because each individual chain is paired with a different partner(s) in animals with different MHC alleles. Therefore, the pairs of TCR chains expressed in individual T cells must be known in order to understand the impact of thymus selection on the TCR repertoire of mature T cells.
 
@@ -65,29 +65,45 @@ The goal of these studies was to find out how the allele of MHC involved in thym
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig1-v2.jpg)
 
-**Figure 1.:** Cells were isolated from the thymuses and lymph nodes of mice expressing a singl;e TCRβ, DOβWT or DOβ48A, and different MHC haplotypes and stained for expression of CD4 and CD8 and CD44. Results are the means and standard errors of the mean (SEMs) of three independently analyzed mice expressing the indicated TCRβs and MHC II alleles. Student t analyses were used to compare results between the DOβWT and DOβ48A paired samples. *p<0.05., **p<0.01, ***p<0.001.10.7554/eLife.30918.003Figure 1—source data 1.The numbers of thymus and lymph node cells were counted and analyzed for their expression of CD4 and CD8 and T cell receptor.
+**Figure 1.:** Cells were isolated from the thymuses and lymph nodes of mice expressing a singl;e TCRβ, DOβWT or DOβ48A, and different MHC haplotypes and stained for expression of CD4 and CD8 and CD44. Results are the means and standard errors of the mean (SEMs) of three independently analyzed mice expressing the indicated TCRβs and MHC II alleles. Student t analyses were used to compare results between the DOβWT and DOβ48A paired samples. *p<0.05., **p<0.01, ***p<0.001.
 
 There were more mature CD4 than CD8 T cells in the lymph nodes of mice expressing DOβWT and H2b (Figure 1D). The effect was much less marked in mice expressing H2f or H2s. The phenomenon may be due to the fact that DOβWT was found in a TCR that reacts with IAd or IAb plus a foreign peptide (OVA 327–339) and not from an MHCI-reactive TCR (White et al., 1983). The bias towards CD4 versus CD8 T cells in H2b animals was not manifest in lymph node cells bearing DOβ48A and was, indeed, reversed in animals expressing that TCRβ and H2f or H2s.
 
-## The TCRα confers a bias towards reactivity with the selecting MHC allele
+### The TCRα confers a bias towards reactivity with the selecting MHC allele
 
 Mature T cells do not usually react detectably with self MHC alleles plus self peptides, the reactivity that presumably allowed their positive selection in the thymus. However, the potential inadequacies of DOβ48A allowed us to test whether or not the TCRαs that, on mature T cells, paired with it did indeed react preferentially with the MHCII allele on which they were positively selected. We guessed that introduction of the more prominently MHC-reactive DOβWT chain into DOβ48A T cells might reveal the underlying reactivity of the TCRα sequences in these T cells for various MHC alleles. Thus we isolated CD4 T cells from mice expressing the DOβ48A transgene, stimulated them with anti-TCR, transduced them with a GFP+ retrovirus expressing the DOβWT chain, and tested the ability of the transductants to react with cells expressing different alleles of MHC. CD69 expression was used as a marker of activation. Non transduced (GFP-) cells in the same cultures were used as controls. In no case did the nontransduced cells show a significant response. However, some of the DOβWT transduced cells responded. Notably, the percentage of the transduced cells that responded to challenge was always greatest if the antigen presenting cells expressed the MHC allele on which the T cells were positively selected Figure 2, (Figure 2—source data 1). For example, T cells from a DOβ48A H2b mouse, after transduction to express DOβWT, were most likely to react with H2b presenting cells and DOβWT transduced cells from DOβ48A H2s mice reacted only with challenge cells expressing H2s. These experiments show that the TCRα chain that pairs with the transgenic DOβ48A does indeed contribute to the preference of CD4 T cells to react with peptides bound to the MHCII allele involved in positive selection.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig2-v2.jpg)
 
-**Figure 2.:** Naïve CD4 T cells were isolated from the lymph nodes of DOβ48A H2b, f or s mice and incubated for 2 days in wells coated with anti-TCRβ and anti-CD28. Thus activated, the cells were spinfected with GFP-expressing retroviruses expressing also DOβWT or DOβ48A. The cells were cultured for a further 2 days and then challenged with spleen cells from mice expressing the indicated MHC alleles, or in the absence of added spleen cells. One day later the cells were stained for expression of CD69. Results were calculated as the (% of GFP+ T cells transduced with DOβWT-expressing retroviruses that were CD69+) – (the % of GFP+ T cells transfected with DOβ48A-expressing retroviruses that were CD69+) in wells containing the same challenge spleen cells. Shown are the average results ± standard error of the mean (SEM) from three independent experiments. *p<0.05, **p<0.01 by one way ANOVA followed by Neuman Keuls analyses.10.7554/eLife.30918.005Figure 2—source data 1.CD4 T cells were isolated from individual DOb48A mice and transduced with retorviruses expressing DObWT or DOb48A as described in the Methods section. The cells were vultured with spoleen cells from mice expressing various MHC alleles and responses assessed one day later by measuring the % of cells that bore CD69. Data shown are from individual mice assayed on different days.
+**Figure 2.:** Naïve CD4 T cells were isolated from the lymph nodes of DOβ48A H2b, f or s mice and incubated for 2 days in wells coated with anti-TCRβ and anti-CD28. Thus activated, the cells were spinfected with GFP-expressing retroviruses expressing also DOβWT or DOβ48A. The cells were cultured for a further 2 days and then challenged with spleen cells from mice expressing the indicated MHC alleles, or in the absence of added spleen cells. One day later the cells were stained for expression of CD69. Results were calculated as the (% of GFP+ T cells transduced with DOβWT-expressing retroviruses that were CD69+) – (the % of GFP+ T cells transfected with DOβ48A-expressing retroviruses that were CD69+) in wells containing the same challenge spleen cells. Shown are the average results ± standard error of the mean (SEM) from three independent experiments. *p<0.05, **p<0.01 by one way ANOVA followed by Neuman Keuls analyses.
 
-## Expression of only one TCRβ chain limits the numbers of TCRα sequences that can participate in positive selection
+### Expression of only one TCRβ chain limits the numbers of TCRα sequences that can participate in positive selection
 
 Because allelic exclusion of the TCRα locus is not perfect (Malissen et al., 1992), mature T cells may express two functional TCRα proteins. To be sure that the TCRα chains analyzed in our experimental mice were actually those involved in positive selection of the cells bearing them, we crossed the DOβWT or DOβ48A transgenic, TCRβ-/- mice with TCRα-/- TCRβ-/- animals of each MHC haplotype to generate animals that were DOβWT or DOβ48A transgenic, TCRβ-/-, TCRα+/-. Naïve CD4 T cells were isolated from the lymph nodes of these animals and cDNA coding for their TCRαs were sequenced as previously described (Silberman et al., 2016). PCR and sequencing errors in the germ line encoded portions of these sequences were corrected as described in the Materials and methods section. To deal with possible sequencing errors in the non germ line encoded portions of CDR3α, sequences that occurred only once in any given sequencing run were eliminated from further analysis. In fact this decision affected the conclusions of all the experiments show below only slightly. Conclusions from analyses that included all sequences, or that eliminated sequences that occurred with the lowest 5% frequency in each sample were similar (data not shown).
 
 Others have previously reported that the T cells in mice expressing a single TCRβ chain have a limited repertoire of TCRα chains by comparison with WT animals (Fukui et al., 1998). To find out whether this applied to CD4 T cells expressing the DOβWT or DOβ48A TCRβ we constructed species accumulation curves for TCRα sequences in B6 and the TCRβ transgenic animals. These were performed by combining the TCRα sequences from all mice of the same genotype or by plotting the TCRα sequences for individual mice of each genotype (Figure 3—figure supplement 1, the source data for these and all subsequent figures are at GEO accession GSE105129). Species accumulation curves show that the total number of TCRα sequences we could detect on naïve CD4 T cells in the TCRβ transgenic animals ranged from less than 5000 to a maximum of about 30,000. These numbers are less than those found in CD4 naïve T cells from B6 mice, which we found to be similar in number to those found on mouse CD8 T cells (Genolet et al., 2012), >than 105 in number (Figure 3). The numbers of TCRα sequences that could partner with DOβWT in selection of CD4 T cells varied considerably with the selecting MHCII allele. More than four times more TCRα sequences were apparent in mice expressing IAb versus IAs (Figure 3B–D), perhaps because the TCR from which DOβWT is derived can be selected by IAb (Liu et al., 1996). This effect of MHC allele on the numbers of selected TCRα chains was not evident in animals expressing DOβ48A. Notably, the numbers of different TCRα chains associated with DOβ48A was lower than those associated with DOβWT regardless of the MHCII allele involved, possibly because of the extra demands imposed on TCRα chains by the inadequate TCRβ chain lacking an important MHC contact residue, Y48 (Scott-Browne et al., 2009).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig3-v2.jpg)
+
+**Figure 3.:** Naïve CD4 T cells were isolated from the spleens (B6) or lymph nodes of mice expressing MHC b, f or s, single TCRβ chains and heterozygous for expression of functional TCRα chains. Their expressed TCRα chains were sequenced and analyzed with species accumulation curves. Results were combined from three independently sequenced data sets from mice of each genotype except for those for H2s DOβWT animals, which were combined from only two independently sequenced animals. Data are shown together with an estimate (bracketed) of the total numbers of different TCRα protein sequences present in the naïve CD4 T cells of each type of mouse.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Results were calculated as described in Figure 3. Data shown are for individual mice.
+
 Perhaps the real surprise in these results is how many TCRα sequences can partner with a single TCRβ and participate successfully in positive selection since work in humans and mice suggest that, on peripheral T cells, each TCRβ partners with only about 5–25 different TCRαs (Arstila et al., 1999; Casrouge et al., 2000; Venturi et al., 2011; Li et al., 2016).
 
-## Expressed TCRα sequences are strongly influenced by the selecting MHC allele and partner TCRβ
+### Expressed TCRα sequences are strongly influenced by the selecting MHC allele and partner TCRβ
 
 We compared the frequency with which particular TRAV/TRAJ/CDR3α amino acid sequences, that is, the entire TCRα sequences, occurred in the various strains of mice. Data of this type can be compared in several ways. The data can be analyzed to find out whether a particular TRAV/TRAJ/CDR3 sequence occurs in each sample, regardless of how often it appears in the set (comparison of unique sequence use). In this case, Jaccard similarity coefficients can be used to measure the similarity between samples. On the other hand, use of particular TRAV/TRAJ/CDR3 sequences can be compared taking into account the number of times a particular combination occurs. In this case Anne Chao Jaccard abundance based indices (Chao et al., 2012) are an appropriate statistical tool. Both methods were used in the comparisons shown in Figure 4. Jaccard analyses showed that the same combination of TRAV/TRAJ/CDR3 sequences were likely to appear in samples from mice of the same TCRβ and MHC genotype but were very unlikely to be shared with the T cells from mice expressing a different MHC allele (Figure 4A). This was just as apparent when the abundance with which the sequences were expressed was taken into account (Figure 4B). Thus these data show that, given a single TCRβ, the TCRα sequences that can participate in positive selection are dramatically affected by the selecting MHCII allele. Moreover, the fact that the values of the Anne Chao Jaccard analyses for mice of the same MHCII allele are much larger than those of the Jaccard analyses shows that sequences that appear frequently in one mouse of a given genotype are more likely to be found in other mice of the same type. Such a result is a manifestation of the fact that some sequences were repeated many times in all mice of a given MHCII type, whereas other sequences were rare. This uneven and certainly non-Poissonian distribution of TCR sequences has been observed before (Correia-Neves et al., 2001; Fazilleau et al., 2005; Freeman et al., 2009). The phenomenon was not necessarily caused by expansion of single clones of T cells since, even in sets in which the CDR3α amino acid sequences were identical, the DNA sequences were not necessarily all the same (data not shown).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig4-v2.jpg)
+
+**Figure 4.:** TCRαs on naïve CD4 T cells from the lymph nodes of TCRα+/- mice expressing a single TCRα and various MHC alleles were sequenced and analyzed as described in Figure 3. Results are the means and SEMs of three independently sequenced animals of each genotype except for H2s DOβWT animals, of which only two mice were analyzed. ***p<0.001 by one way ANOVA with Newman-Keuls post analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** TCRα sequences were obtained and analyzed as described in Figure 4. Data shown are combined as indicated between all the mice illustrated in Figure 4. Results are the means and SEMs of the data. ***p<0.001 by one way ANOVA with Newman Keuls post analysis.
 
 Similar analyses were applied to samples from mice in which the selecting MHCII allele was identical, but the partner TCRβ differed. The data show that the selected TCRα chains depended on the partner TCRβ, even when the selecting MHC allele was identical. Close inspection revealed, however, that there was slightly more overlap if the co-selected TCRβs were different but the selecting MHCII alleles were identical than if the reverse were true, that is the co-selected TCRβs were the same but the selecting MHCII alleles were different (Figure 4C,D, Figure 4—figure supplement 1) (Fink and Bevan, 1978).
 
@@ -95,33 +111,81 @@ A few sequences appear in at least one mouse of each haplotype. For example, 16 
 
 These data show that positive selection acts on CD4 T cell precursors, via the action of the expressed MHCII allele on particular TCRα/TCRβ pairs.
 
-## TRAV usage depends on the selecting MHCII haplotype and the partner TCRβ chain
+### TRAV usage depends on the selecting MHCII haplotype and the partner TCRβ chain
 
 In order to find out which element(s) of TCRα determine MHC allele specificity we analyzed each element separately using data from the experiments described above. Others have previously reported that certain TRAVs are used more frequently by CD4 versus CD8 T cells or in mice expressing particular alleles of MHC (Jameson et al., 1990; Pircher et al., 1992; Sim et al., 1996; Simone et al., 1997; Merkenschlager et al., 1994). Trav rearrangements occur in thymocytes after the cells have rearranged their TCRβ genes (Lindsten et al., 1987). Thus, the frequency with which TRAVs appear on mature naïve CD4 T cells is predicted to depend on a number of issues, the ease with which the TRAV gene can rearrange (Chen et al., 2015), its ability to pair with the preexisting TCRβ expressed in the cell (Vacchio et al., 1993) and the ability of the TCRα/TCRβ pair to participate in positive, but not negative, selection on the MHCII protein expressed in the thymus.
 
 We first tested whether the expressed MHC haplotype might unexpectedly affect the nature of TRAVs expressed on preselection thymocytes. As shown in Figure 5A, Figure 5—figure supplements 1–2, TRAV usage on preselection thymocytes was similar, regardless of the MHC allele in the donor animal or the coexpressed TCRβ(s). There were, however, some interesting aspects of TRAV use on preselection thymocytes. . TRAVs whose genes are most proximal to the TRAJ locus (TRAVs 17–21) were frequently rearranged, as predicted by previous studies (Villey et al., 1996; Shih et al., 2011; Genolet et al., 2012) (note that the TRAVs are arranged by family and not by position in the TRAV locus). However, in preselection thymocytes we also observed frequent rearrangements involving TRAV 1 and members of the TRAV 3, 6, 7, 10, 11 and 14 families. In the cases of the TRAV families the frequently rearranged TRAVs were not always those which are most proximal to the TRAJ locus. For example, amongst the TRAV7 family, the most frequently rearranged member was TRAV7-2D, one of the family members that is furthest from the TRAJ locus, whereas the close relative of TRAV7-2D, TRAV7-2A, was not frequently rearranged. This suggests that chromatin structure, promoter accessibility and use by rearranging processes also play a role in TRAV rearrangements (Chen et al., 2015).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-v2.jpg)
+
+**Figure 5.:** TCRαs on preselection thymocytes or naïve T cells from the lymph nodes of TCRα+/- mice expressing a single TCRβ and various MHC alleles were sequenced and analyzed as described in Figure 3. (A) Shown are the Euclidean distances for TRAV use between the data for individual mice. Samples are hierachically ordered. Individual mice of the same genotype are numbered m1-3. (B) The average % use of each TRAV in mice expressing the indicated MHCII allele and TCRβ. Results are the means ± SEMs of 3 identical mice, except for H2s DOβWT animals, for which results are the averages of 2 mice. TRAVs are ordered by family, not by position on the chromosome.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Preselection DP thymocytes were obtained from individual mice expressing the indicated MHCII alleles and TCRβs. Shown are the %s with which individual TRAVs were detected. Subfamily members of each family are color coded as shown. Note, the TRAVs are ordered by family and not by their position in the TCRα locus.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Pairwise scatter plots of individual TRAV frequencies between all replicates of mature naïve CD4 T cells from mice expressing different MHCII alleles and different TCRβ chains. Data are plotted as log2 transformed TRAV counts per 1 × 10^4 total TCRα sequences in each mouse noted on the x axis versus each mouse noted on the y axis. Values distributed along the diagonal are equivalent between the two mice compared in the plot. Individual mice of each genotype were numbered m1-m3, numbers for each mouse are used consistently throughout.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Data were obtained and analyzed as described in Figures 3 and 5. DESeq2 was used to compare the frequencies with which different TRAVs were used by naïve CD4 T cells in mice expressing different MHCII alleles and/or different TCRβs. Differential expression analyses were performed using the DESeq2 package (v1.8.1) in the R language (v3.2.2). DESeq2 fit negative binomial regression models to each feature to compare between groups. Corrections for size factors for each sample (animal) to account for differences in repertoire size were applied. The negative binomial dispersion parameter for each feature was then calculated, sharing information across features with similar expression levels to moderate extreme empirical dispersion estimates. Wald tests were applied to each feature to test for differential expression between groups. Features were considered differentially expressed if they had a Benjamini-Hochberg adjusted p-value (i.e., false discovery rate)<0.05.
+
 TRAV use by T cells from mice of the same genotype was very similar (Figure 5B–G, Figure 5—figure supplements 2–3). However, the selecting MHC allele affected the frequency with which different TRAVs were expressed on mature naïve CD4 T cells (Figure 5—figure supplements 2–3). For example members of the TRAV5 family were used to some extent by CD4 T cells selected on IAb, but not by cells selected on IAf or IAs (compare Figure 5B,C with Figure 5D–G). On the other hand, CD4 T cells in DOβWT H2s mice were alone in their use of TRAV17 (Figure 5B,D and F). Differential use of TRAVs was much more marked in DOβ48A mice and illustrated the TRAV preferences of mice selected on different MHCII alleles more strikingly. For example, DOβWT cells selected on IAs used most members of the TRAV6 family whereas DOβ48A expressing cells selected on the same MHC allele used, of the TRAV 6 family, almost entirely TRAV6-5D and TRAV6-7DN and also used more frequently than T cells selected on other MHCII alleles, members of the TRAV16 family. Perhaps this reflects a greater need for basic amino acids in TRAV CDR1 and CDR2 for selection of H2s with DOβ48A as a partner, since, of the TRAV6 family, TRAVs6-5D and TRAV6-7DN (and TRAV6-5A and TRAV6-7DN) have a total of two basic amino acids in these elements whereas other members of the family have none. Likewise all expressed members of the TRAV16 family contain 2 or 3 basic amino acids in their CDR1 and CDR2 segments. This narrowing in TRAV choice by DOβ48A cells may reflect the increasing demands for selection imposed by the absence of the tyrosine at position 48 of the TCRβ chain.
 
 Our analyses are based on a method in which cDNAs from individual mouse T cells are amplified simultaneously with a reverse TRAC oligo and oligos built to match each TRAV family (see Materials and methods Section). Therefore the differences in TRAV discovery could be due to more efficient PCR amplification of some TRAV genes than others. However, since the efficiencies of detection will be similar between members of the same family, it is legitimate to compare the frequency of rearrangement between different members of the same family, or the frequency of use of the same TRAV in mature T cells selected on different MHCs or with different TCRβ partners (see below).
 
-## TRAJ usage depends on the selecting MHCII haplotype and the partner TCRβ chain
+### TRAJ usage depends on the selecting MHCII haplotype and the partner TCRβ chain
 
 TRAJ use by preselection thymocytes was similar regardless of the selecting MHC haplotype or co-expressed TCRβ (Figure 6A, Figure 6—figure supplements 1–2). TRAJ use by naïve CD4 T cells from B6 mice was fairly uniform across the locus (Figure 6B). Unexpectedly, however, and in contrast to preselection thymocytes and naïve CD4 T cells from B6 mice, TRAJ use by T cells from mice expressing a single TCRβ was much more uneven and tended towards TRAJs whose genes were distal to the TRAV locus (Figure 6B–L). Regardless of MHC allele, CD4 T cells in DOβWT animals used TRAJ21 most frequently (Figure 6D–F). The reasons for this bias are unknown. TRAJ21 contains a tyrosine at or near the contact point with MHC but other TRAJs have a tyrosine similarly situated and they are not overexpressed. Moreover TRAJ21 is not overexpressed in T cells expressing DOβ48A, T cells that might be expected to be even more readily selected with an added tyrosine (Scott-Browne et al., 2009). The bias towards use of distal TRAJ genes was even more marked in animals expressing DOβ48A. In these mice TRAJ 9, TRAJ 12 and TRAJs 9,15 and 31 dominated in H2b, H2f and H2s mice respectively (Figure 6G–I). Pairwise comparisons between different mice are shown in Figure 6—figure supplement 1 and DESeq 2 analyses are in Figure 6—figure supplement 2.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig6-v2.jpg)
+
+**Figure 6.:** TCRαs on preselection thymocytes or naïve CD4 T cells from the lymph nodes of TCRα±mice expressing a single TCRβ and various MHC alleles were sequenced and analyzed as described in Figure 3. (A) Shown are the Euclidean distances for TRAJ use between the data for individual mice. Samples are hierachically ordered. Individual mice of the same genotype are numbered m1-3. (B-L) The % use of each TRAJ in mice expressing the indicated MHCII allele and TCRβ. Results are the means and SEMs of 3 identical mice, except for H2s DOβWT animals, for which results are the averages of 2 identical mice. TRAJs are ordered by position on the chromosome. Also shown are the means and SEMs of TRAJ use by five independently sequenced preselection thymocytes and three independently sequenced naïve CD4 T spleen T cells from B6 mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Pairwise scatter plots of individual TRAJ frequencies between all replicates of mature naïve CD4 T cells from mice expressing different MHCII alleles. Each point is a TRAJ. Data are plotted as log2 transformed TRAV counts per 1 × 10^4 total TCRαsequences in each mouse noted on the x axis versus each mouse noted on the y axis. Values distributed along the diagonal are equivalent between the two mice compared in the plot. Individual mice of each genotype were numbered m1-m3, numbers for each mouse are used consistently throughout.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Data were obtained and analyzed as described in Figures 3 and 5. DESeq 2 was used as described in Figure 5—figure supplement 3 to compare the frequencies with which different TRAJs were used by naïve CD4 T cells in mice expressing different MHCII alleles and/or different TCRbs.
 
 We do not know why the distal TRAJ genes were preferred in mice in which the TCRα repertoire was limited by the presence of a single TCRβ. In another study with a fixed TCRβ chain, a bias towards proximal TRAJs was noted with TRAV17, a TRAV that is close to the TRAJ locus (Casanova et al., 1991). The same publication described biases, depending on MHC allele towards use of Type 1 (G rich) or type 2 TRAJs. These explanations don’t apply here, since in the experiments presented here TRAV expression was not particularly biased towards the distal TRAVs and the used TRAJs don’t fall particularly into Types 1 or 2. It is possible that the choice is related to the DOβ chain itself. Alternatively it maybe that, because it is difficult for thymocytes expressing a single TCRβ to find a TCRα that can pair with the TCRβ and contribute to positive selection, multiple TCRα rearrangements have to occur in each thymocyte before a suitable TCRα partner is found. This will inevitably drive expressed TCRαs towards use of the distal TRAJs, although why these should satisfy the demands of positive selection more frequently than the proximal TRAJs do, is not obvious, at least from their amino acid sequences. It has recently been reported that prolonged expression of RAG protects cells, to some extent, from death (Karo et al., 2014). If the thymocytes in TCRβ transgenic mice have to express RAG for a longer time to find a suitable TCRα partner, then the prolonged expression of RAG needed for the multiple rearrangements required to access the TRAC proximal TRAJs might preferentially allow survival of the thymocytes in which this prolonged expression has occurred. Preliminary analyses of the naïve CD4 T cells in the various mice did not, however, suggest that the T cells in the TCRβ transgenic mice were more resistant to death than the equivalent cells in B6 animals. Finally, it is possible that, during the multiple rearrangements that may occur as TRAJ use moves to those at the distal portion of the TRAJ locus, in thymocytes the strength of signal received from the TCR/MHC/peptide interaction needed to drive positive selection might be reduced. Thus selection may occur more easily for thymocytes using distal rather than proximal TRAJs (Moran et al., 2011; Seiler et al., 2012). Future experiments will test this idea.
 
 Overall, like the use of TRAVs, use of TRAJs depended on both the MHC haplotype and TCRβ present in the animals.
 
-## Expressed CDR3α sequences are strongly influenced by the selecting MHC allele and partner TCRβ
+### Expressed CDR3α sequences are strongly influenced by the selecting MHC allele and partner TCRβ
 
 Because of the removal or introduction of bases when TRAVs rearrange to TRAJs, CDR3α protein sequences can vary in the number of amino acids they encode between the conserved C terminal cysteine of the TRAV and the conserved phenyl alanine/leucine/tryptophan glycine pair in the TRAJ region. We compared the average lengths of CDR3αs and the predicted number of N region bases between mice expressing the same TCRβ and different MHCII alleles. CD4 T cells selected on IAb had significantly shorter CDR3α lengths and fewer N region bases than their counterparts selected on IAf or IAs (Figure 7—figure supplement 1).
 
 The analyses shown in Figure 4 compared the frequencies with which entire TCRα sequences appeared under different selecting circumstances. We also analyzed how often particular CDR3α sequences are found in mice that differed in the selecting MHC allele or in the co-expressed TCRβ, using, again, Jaccard or Anne Chao Jaccard analyses to compare particular sequences without or with taking into account the abundance with which they occurred. Data comparing the occurrence of CDR3α protein sequences between mice that expressed the same or different MHCII alleles are shown in Figure 7A–B, and data comparing the occurrence of CDR3α protein sequences between mice expressing the same MHCII but different partner TCRβs are shown in Figure 7C–D. The results were similar to those obtained when comparing the entire TCRα sequences. The expressed CDR3α sequences in mice with a particular MHCII allele were very unlikely to be found in CD4 T cells of mice expressing a different MHCII allele, even if the co-selected TCRβ were the same in the mice (Figure 7A–B). Likewise, CDR3α sequences co-selected with a particular TCRβ were unlikely to be shared with those co-selected with a different TCRβ, even if the selecting MHCII allele were the same.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig7-v2.jpg)
+
+**Figure 7.:** TCRαs on naïve T cells from mice expressing a single TCRβ and various MHCII alleles were sequenced and analyzed for their CDR3α sequences as described in Figures 3 and 4. CDR3α sequences were defined as the amino acids between and including the conserved cysteine at the C terminal end of the TRAV and the conserved phenyl alanine, tryptophan or leucine in the TRAJ region. Shown are the means and SEMs of 3 independently sequenced identical mice except for H2s DOβWT mice, in which case only two mice were analyzed. ***p<0.001, **p<0.01 by one way ANOVA with Newman-Keuls post analysis.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Data were obtained as described in Figures 3 and 4. Shown are the average lengths of CDR3α and N region bases on naïve CD4 T cells coexpressed with the indicated TCRβ. Results are the means and SEMs of 3 mice of the same haplotype except for s DOβWT mice, in which case the results from two mice were averaged. Errors are calculated with one way ANOVA with the Bonferroni post test comparing all pairs. *p<0.05, **p<0.01, ***p<0.001. Statistical results are omitted for pairs which were not significantly different from each other.
+
 The first few amino acids of CDR3α (defined as the stretch between the last C of the TRAVs and the conserved F/W/L G sequence of the TRAJs) are encoded by the TRAVs themselves. Likewise, the last few amino acids of CDR3α are encoded by the TRAJs. Therefore the fact that the CDR3α sequences are controlled by the MHCII allele on which they were selected might have been, to some extent, dictated not by the non germline encoded amino acids in CDR3α but rather by the TRAV encoded amino acids downstream of the cysteine at the C terminal end of the TRAVs or by the TRAJ encoded amino acids upstream of their conserved TRAJ F/W/L. This problem applies particularly to the use of TRAVs since TRAV CDR1 and CDR2 amino acids may contact MHCII and thereby contribute to thymic selection whilst also dictating the first few amino acids of the accompanying CDR3 region.
 
 We therefore checked whether CDR3α sequences associated with particular TRAV/TRAJ pairs differed between T cells selected on different MHCII alleles or associated with different TCRβs. Only a few of the possible TRAV/TRAJ pairs were present in sufficient numbers in all of the mice to be compared, so only a few such comparisons could be made. Examples of such comparisons are shown in Figure 8. Summaries combining all allowable results (in which all the TRAV.TRAJ combinations to be compared included least five different CDR3 sequences/mouse) are shown in Figure 8—figure supplements 1–2. T cells expressing DOβWT and the same TRAV and TRAJ combinations, but selected on different MHCII alleles or with different TCRβs clearly had CDR3α sequences that were almost completely unique to the selecting MHCII alleles.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig8-v2.jpg)
+
+**Figure 8.:** TCRαs on naïve CD4 T cells of mice expressing a single TCRβ and various MHCII alleles were sequenced as described in Figures 3 and 4. Mice were as listed in those Figures. Comparisons were made of N regions derived from the same TRAV TRAJ pair providing that all mice in the comparisons expressed at least five different sequences involving the chosen TRAV TRAJ pair. Results shown are the means ± SEMs of the data from identical mice. Statistical analyses involved one way ANOVA tests with Newman-Keuls post test analyses (A, B) or Student t tests (C–F). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** TCRαs on naïve CD4 T cells of mice expressing a single TCRβ and various MHCII alleles were sequenced as described in Figures 3 and 4. Mice were as listed in those Figures. The results of samples expressing the same TRAV TRAJ pairs for all comparisons in which each mouse expressed at least five different sequences involving the chosen TRAV/TRAJ pair were averaged. Results shown are the means ± SEMs of the data from mice of identical genotypes. Statistical analyses for comparisons involving three different types of mice used one way ANOVA tests with Newman-Keuls post test analyses. Student t tests were used to analyze statistically the differences between pairs of mice. **p<0.01, ***p<0.001.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Data from TCRα sequences obtained as in Figure 4 were used to analyze the frequency with which different amino acids were used at different positions.
 
 A recent study has reported that thymocytes with aromatic/hydrophobic amino acids at the tips of their CDR3β segments are biased towards MHC reactivity, regardless of the selecting MHCII allele (Stadinski et al., 2016). The observations in the paper applied to CD4+ CD8+ (double positive thymocytes) that had been positively, but not negatively, selected, identified by their expression of CD69, and to regulatory T cells compared to preselection thymocytes. Such cells have not been examined in the experiments described here, so we cannot tell directly whether a similar observation applies to TCRα sequences. On the whole the evidence is that cells with aromatic amino acids at positions 6 and 7 on CDR3α are not particularly eliminated by clonal deletion in the thymus (data not shown). Nevertheless, we evaluated individual amino acids that would probably be at the tips of CDR3αs in CDR3α of different lengths. The results show MHCII allele and TCRβ specific selection for particular amino acids and also changes in amino acid preference at CDR3α positions depending on the length of the CDR3 (Figure 8—figure supplement 2). For example, arginine was very frequently used at position 4 in 12 amino acid long CDR3αs selected by IAs with DOβ48A, and similarly over selected at position 5 in 14 amino acid long CDR3αs selected on IAf with DOβWT, but much less frequently used by other MHC selection, TCRβ, CDR3α length combinations. Phenyl alanine was only used with evident frequency at position 5 in 14 amino acid-long CDR3αs selected on IAb with DOβWT. Apart from the phenyl alanine result there was no particular enrichment for aromatic amino acids at these tips.
 
@@ -145,25 +209,112 @@ In the studies presented here, the total number of TCRαs that can be selected w
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T cell receptor beta chain from the DO11.10 hybridoma (mus musculus musculus)</td>
+      <td>DObWT</td>
+      <td>Haskins, K., Kubo, R., White, J., Pigeon, M., Kappler, J. and Marrack, P. The major histocompatibility complex-restricted antigen receptor on T cells. I. Isolation with a monoclonal antibody. J. Exp. Med. 157:1149, 1983.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T cell receptor beta chain from the DO11.10 hybridoma (mus musculus musculus) with the amino acid at position 48 of the chain mutated from a tyrosine to an alanine</td>
+      <td>DOb48A</td>
+      <td>375. Scott-Browne, J.P., White, J., Kappler, J.W., Gapin, L. and Marrack, P. Germline- encoded amino acids in the abT cell receptor control thymic selection. Nature 458:1043–1046, 2009. PMC2679808</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C57BL/6J (mouse)</td>
+      <td>B6</td>
+      <td>The Jackson Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mice congenic with B6 but expressing H2f</td>
+      <td></td>
+      <td>This publication</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mice congenic with B6 but expressing H2s</td>
+      <td></td>
+      <td>This publication</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mice with one TCRa gene inactivated</td>
+      <td>a+/-</td>
+      <td>The Jackson Laboratory; Mombaerts et al. Nature 360:225–231,1992</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B6 mice with the TCRb genes inactivated</td>
+      <td>b-/-</td>
+      <td>The Jackson Laboratory; Creation of a large genomic deletion at the T-cell antigen receptor beta-subunit locus in mouse embryonic stem cells by gene targeting. Mombaerts et al. PNAS 88 3084–7, 1991</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software for analysis and correction of TCRalpha sequences</td>
+      <td></td>
+      <td>https://www.nationaljewish.org/research-science/programs-depts/biomedical-research/labs/kappler-marrack-research-lab/protocols</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B6 TRAV and TRAJ sequences</td>
+      <td>MOVA-B6.VDB MOJA.JDB</td>
+      <td>https://www.nationaljewish.org/research-science/programs-depts/biomedical-research/labs/kappler-marrack-research-lab/protocols</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TCRa sequences used in analyses</td>
+      <td></td>
+      <td></td>
+      <td>GEO accession GSE105129</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mice were purchased from the Jackson Laboratory, Bar Harbor ME and subsequently interbred in the Biological Research Center at National Jewish. Plasmids coding for the DO11.10 TCRβ chain (DOβWT) or its mutant, in which the tyrosine at position 48 was replaced by an alanine (DOβ48A) were created, with the human CD2 promoter to drive expression of the genes (White et al., 1983; Greaves et al., 1989). DNAs coding for the promoters and genes were injected into fertilized C57BL/6J (B6) eggs at the Mouse Genetic Core Facility at National Jewish Health. Mice produced from these eggs were crossed with animals lacking functional TCRβ genes (Mombaerts et al., 1991) and with B10.M (H2f) or B10.S (H2s) animals to create animals expressing the transgenic TCRβ genes, no other TCRβgenes and H2b, f or s. By similar intercrosses animals were produced that expressed no functional TCRα or TCRβ genes and H2b, f or s. These animals were intercrossed to give rise to animals expressing either DOβWT or DOβ48A, no other TCRβ genes, TCRα+/- and H2 b, f or s. Animals were subsequently used for analysis if they expressed the TCRα locus derived from B6 rather than B10 animals.
 
 Animals were handled in strict accordance with good animal practice as defined by the relevant national and/or local animal welfare bodies, and all animal work was approved by the National Jewish Health Animal Care and Use Committee (IACUC). The protocol was approved by National Jewish IACUC (protocol number AS2517).
 
-## T cell isolation
+### T cell isolation
 
 Cells were isolated from the thymuses, spleens (B6 analyses) or peripheral lymph nodes (DOβWT or DOβ48A analyses) of 6–14 week old mice. CD4 T cells were isolated by negative selection on MACS columns (Milltenyi Biotech). The cells were stained with antibodies conjugated to a fluorochrome and specific for: Pacific Blue-CD4 (RM4-5, BioLegend, 100531), Alexa488-TCRβ(Ham-597, made in house), PE-B220 (RA3-6B2, BD Pharmingen, 553090), PE-TCRδ(GL3, BD Pharmingen 553178), PE-CD8α (53–6.7, BD Pharmingen, 553033), PE-Cy5-CD25 (PC61.5, eBioscience, 15-n251-82), Alexa647-CD44 (made in house), PE-Cy7-CD62L (MEL-14, eBioScience, 25-0621-82). The cells were sorted based on their expression of CD4, TCRβ, low levels of CD44 and high levels of CD62L and absence of staining with PE and PE-Cy5. Cells were sorted into staining buffer (BSS, 2% fetal bovine serum, plus sodium azide) by a MoFloXDP (Beckman Coulter Life Sciences or Synergy SY3200 (iCyt) instruments at the National Jewish Health Flow Cytometry Core Facility.
 
-## Retroviral infection of T cells
+### Retroviral infection of T cells
 
 Retroviruses expressing DOβWT or DOβ48A and green fluorescent protein were produced as described in Scott-Browne et al. (2009). CD4 T cells were purified, by negative selection on Automax columns, from the spleens and lymph nodes of DOβ48A transgenic, TCRβ-/- mice expressing various MHC alleles. The cells were activated by 24 hr culture on plates pre-coated with anti-TCRβ (Ham597) and anti-CD28 (37.51) The supernatants were then removed from the plates and replaced with supernatants containing the DOβWT or DOβ48A retroviruses and 8 ug/ml polybrene in culture medium. The cells were spun at 2000G in bags containing 10%CO2/90%air at 37.C for 2 hr. At this point the medium was replaced with complete culture medium containing 10% fetal bovine serum and cultured for 1d followed by addition of IL-2. Three days later the cells were harvested and challenged as described below.
 
-## Assessment of MHC reactivity of transduced T cells
+### Assessment of MHC reactivity of transduced T cells
 
 Red blood cell depleted spleen cells from mice expressing various MHC alleles were cultured overnight with IL-4 plus GM-CSF. The cells were then thoroughly washed and used, at a dose of 106 cells/well, to stimulate 106/well TCRβ transduced CD4+ T cells, prepared as described above. These wells were cultured for 51/2 hr in a final total volume/well of 200 ul of CTM. The cells were then fixed (Permafix), stained and analyzed for expression of CD4 (PerCP anti-CD4), GFP and CD69 (PE anti-CD69).
 
-## TCRα sequencing and analysis
+### TCRα sequencing and analysis
 
 RNA was isolated from purified naïve CD4 T cells, PCR’d to expand Tcra sequences and sequenced as described in Silberman et al. (2016). Post-sequencing analysis was performed to identify the Trav and Traj genes for each sequence along with its corresponding CDR3. Trav family and subfamily members were assigned based on the IMGT designations with modifications based on our own analysis of expressed TRAV sequences in B6 mice. IMGT has identified two gene duplication events in the B6 Trav locus, the ‘original’ genes, most of which are closest to the TRAJ locus are designated by their family number and a number indicating their subfamily membership. Here, for ease of analysis, we have added the letter ‘A’ to their designation, eg TRAV01-1A. TRAV subfamily members in the IMGT designated duplicated ‘D’ and new ‘N’ genes we add the letters ‘D’ or ‘N’, eg TRAV07-6D or TRAV07-6N. In some cases the entire nucleotide sequences of subfamily members are identical and, therefore, indistinguishable by our analyses. In these cases the subfamily members are designated to include all possible source genes, eg TRAV06-3ADN or TRAV06-6AD.
 

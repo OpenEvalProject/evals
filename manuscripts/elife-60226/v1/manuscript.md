@@ -18,7 +18,7 @@
 
 ## Abstract
 
-The mechanisms underlying resistance of the Chagas disease parasite, Trypanosoma cruzi, to current therapies are not well understood, including the role of metabolic heterogeneity. We found that limiting exogenous glutamine protects actively dividing amastigotes from ergosterol biosynthesis inhibitors (azoles), independent of parasite growth rate. The antiparasitic properties of azoles are derived from inhibition of lanosterol 14α-demethylase (CYP51) in the endogenous sterol synthesis pathway. We find that carbons from 13 C-glutamine feed into amastigote sterols and into metabolic intermediates that accumulate upon CYP51 inhibition. Incorporation of 13 C-glutamine into endogenously synthesized sterols is increased with BPTES treatment, an inhibitor of host glutamine metabolism that sensitizes amastigotes to azoles. Similarly, amastigotes are re-sensitized to azoles following addition of metabolites upstream of CYP51, raising the possibility that flux through the sterol synthesis pathway is a determinant of sensitivity to azoles and highlighting the potential role for metabolic heterogeneity in recalcitrant T. cruzi infection.
+The mechanisms underlying resistance of the Chagas disease parasite, Trypanosoma cruzi, to current therapies are not well understood, including the role of metabolic heterogeneity. We found that limiting exogenous glutamine protects actively dividing amastigotes from ergosterol biosynthesis inhibitors (azoles), independent of parasite growth rate. The antiparasitic properties of azoles are derived from inhibition of lanosterol 14α-demethylase (CYP51) in the endogenous sterol synthesis pathway. We find that carbons from 13C-glutamine feed into amastigote sterols and into metabolic intermediates that accumulate upon CYP51 inhibition. Incorporation of 13C-glutamine into endogenously synthesized sterols is increased with BPTES treatment, an inhibitor of host glutamine metabolism that sensitizes amastigotes to azoles. Similarly, amastigotes are re-sensitized to azoles following addition of metabolites upstream of CYP51, raising the possibility that flux through the sterol synthesis pathway is a determinant of sensitivity to azoles and highlighting the potential role for metabolic heterogeneity in recalcitrant T. cruzi infection.
 
 ## Introduction
 
@@ -30,35 +30,87 @@ Azole antifungal medications that target the production of endogenous sterols we
 
 ## Results
 
-## Exogenous glutamine levels modulate sensitivity of intracellular T. cruzi amastigotes to lanosterol-14α-demethylase inhibitors
+### Exogenous glutamine levels modulate sensitivity of intracellular T. cruzi amastigotes to lanosterol-14α-demethylase inhibitors
 
 The mechanisms underlying recalcitrant T. cruzi infection are not well understood. The spontaneous emergence of non-replicative ‘latent’ T. cruzi forms (Sánchez-Valdéz et al., 2018) has been put forward as a possible explanation for the failure to achieve parasitological cure following drug treatment of chronic Chagas patients. However, the potential for metabolic heterogeneity to modulate T. cruzi susceptibility to trypanocidal drugs has not been investigated. To begin to address this prospect, we sought to determine if variable growth conditions known to modulate the proliferative activity of intracellular T. cruzi amastigotes (Dumoulin and Burleigh, 2018) impact the susceptibility of T. cruzi amastigotes to trypanocidal drugs. Dose-response curves for inhibition of intracellular amastigote growth were generated for benznidazole, the first-line therapy for Chagas disease (Bern et al., 2007) and ketoconazole, an azole inhibitor of trypanosome sterol synthesis (Lepesheva et al., 2011), as outlined (Figure 1—figure supplement 1). Shown are the dose-response data for drug-treated cultures in medium with and without supplemental glucose or glutamine. These nutrients were included in the analysis based on knowledge that T. cruzi amastigotes metabolize exogenously supplied glucose and glutamine (Shah-Simpson et al., 2017) and that restriction of either carbon source slows amastigote replication without causing lethality (Dumoulin and Burleigh, 2018). Additionally, the primary neonatal human dermal fibroblasts (NHDF) used as host cells for parasite infection are tolerant of nutrient restriction (Dumoulin and Burleigh, 2018). Here, we find that the dose-response for benznidazole is not altered by these changes in the growth medium (Figure 1A). Similarly, intracellular amastigotes exposed to ketoconazole in complete medium, or medium lacking glucose, exhibited the full range of sensitivity to ketoconazole (Figure 1B). In contrast, inhibition of intracellular amastigote growth with increasing ketoconazole concentration was diminished when T. cruzi-infected monolayers were maintained in the absence of supplemental glutamine (Figure 1B). Analogous results were obtained with other azole inhibitors of lanosterol-14α-demethylase (CYP51), itraconazole, ravuconazole, and posaconazole (Figure 1—figure supplement 2), drugs that failed to deliver sterile cure in the clinic (Molina et al., 2014; Torrico et al., 2018) and in animal models (Khare et al., 2015a).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig1-v1.jpg)
+
+**Figure 1.:** (A) Dose response curves at 66 hpi of benznidazole and (B) ketoconazole treatment, in the indicated media compositions, normalized to the largest mean in each treatment group. Mean (symbols) and standard deviation shown (n = 4). (C) Microscopic counts at 66 hpi and (D) 90 hpi of the number of amastigotes per infected host cell (n = 40), medians indicated. Cartoons at top of graph indicate conditions where extracellular trypomastigotes are visible in the culture supernatant. (E) Growth media was replaced and extracellular trypomastigotes were counted every 24 hr beginning at 90 hpi (n = 2). (F) Detection of clonal outgrowth 14 days after the indicated treatments, normalized to DMSO (vehicle) treatment. Mean and standard deviation shown, circles indicates values of two independent experiments with 28 wells used per treatment within an experiment. (G) Dose response curves of glutamine in the presence of DMSO or (H) ketoconazole (5 nM). Mean and standard deviation shown (n = 3). Grey shading indicates in panel I shows the physiological range found in human plasma (800–300 uM) (Cruzat et al., 2018). Statistical comparisons between medians (C,D) were performed using a Kruskal-Wallis test with Dunn’s multiple comparisons test (****p<0.0001, ns = not significant). Comparisons of means from outgrowth (F) was performed using a two-way ANOVA with Dunnett’s multiple comparisons test (*p<0.05, **p<0.01).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Trypomastigotes (Tula-βgal) are incubated with mammalian host cells for 2 hr to allow invasion. Remaining extracellular parasites are subsequently removed by thorough rinsing of monolayers. Internalized parasites undergo differentiation into mature amastigotes and any treatments or media adjustments are initiated at 18 hpi prior to the first amastigote division. At indicated time points post-infection (e.g. 42–90 hpi), infected cultures have one of several fates depending on the experiment, as illustrated and described in detail in the Materials and methods.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Dose response curves of itraconazole, (B) ravuconazole, and (C) posaconazole treatment measured at 66 hpi. Treatment including media compositions are indicated and growth is normalized to the largest mean in each data set. Mean (symbols) and standard deviation show (n = 4).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The number of infected cells per field (n = 20) at (A) 66 hpi and (B) 90 hpi, mean and standard deviations shown. Comparisons of means (D,F) were performed using a one-way ANOVA and Bonferroni’s multiple comparisons test (****p<0.0001, ns = not significant).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Dose response curves of (A) proline and (B) histidine in the absence of supplemental glutamine (n = 3).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Microscopic counts of amastigotes per host cell (n = 40) and (B) proportion of infected cells (n = 20) at 66 hpi following treatment at 18 hpi with ketoconazole (5 nM) and/or GNF7686 (150 nM) under the indicated conditions. (C) Microscopic counts of amastigotes per host cell (n = 40) and (D) proportion of infected cells (n = 20) at 90 hpi following treatment at 18 hpi with ketoconazole (5 nM) and/or GNF7686 (150 nM) under the indicated conditions. Statistical comparisons between medians (A,C) were performed using a Kruskal-Wallis test with Dunn’s multiple comparisons test (****p<0.0001, **p<0.01, ns = not significant). Comparisons of means (B,D) were performed using a one-way ANOVA and Bonferroni’s multiple comparisons test (****p<0.0001, *p<0.05, ns = not significant). (E) Normalized dose response of N-acetylcysteine and (F) glutathione measured at 66 hpi in the indicated treatment conditions. Mean and standard deviations are show (n = 2). (G) Microscopic counts of the number of amastigotes per infected host cell, mean indicated, (n = 40) and (H) the number of infected cells per 20 fields, mean and standard deviation shown (n = 3). Growth in complete medium under normoxia (20% atmospheric oxygen) or hypoxia (1.3% oxygen) and ketoconazole (5 nM) where indicated. (I) Western blot of uninfected whole host cell lysate. Hif1α is induced under hypoxia and in the presence of DMOG (0.8 mM for 6 hr) as a positive control.
 
 Microscopic analysis of fixed parasite-infected fibroblast monolayers confirmed these findings (Figure 1C,D). For these experiments, the infecting dose of T. cruzi trypomastigotes was titrated to achieve an average of one parasite in each infected cell prior to the introduction of a test condition (see Figure 1—figure supplement 1). Differences in parasite numbers per infected cell or the number of host cells that retain intracellular parasites at later time points provides a reliable metric for growth inhibition and parasite death, respectively, which cannot be resolved using the β-Glo assay (e.g. Figure 1A,B) a rapid higher throughput assay that reports relative parasite abundance (Dumoulin and Burleigh, 2020; Dumoulin and Burleigh, 2018). Microscopic counts reveal that growth of intracellular T. cruzi amastigotes exposed to 5 nM ketoconazole (>IC99) for 48 hr (66 hpi) in complete medium or medium without glucose was significantly impaired (Figure 1C) as expected and with significant loss in the proportion of infected cells (Figure 1—figure supplement 3) suggestive of parasite death. Under conditions of glutamine restriction, intracellular T. cruzi amastigotes survived ketoconazole exposure (Figure 1C) and continued to replicate as evidenced by the greater number of amastigotes per infected cell at 90 hpi (Figure 1D) with no reduction in the proportion of infected cells under these conditions at this time point (Figure 1—figure supplement 3). The detection of extracellular trypomastigotes in the supernatants of untreated cultures and in those treated with ketoconazole in the absence of glutamine at 90 hpi (Figure 1D; symbols), further demonstrates that these ketoconazole-treated amastigotes are competent to complete the intracellular cycle in mammalian host cells and to produce trypomastigotes. As expected given the slower growth of amastigotes in fibroblasts cultured without glutamine and exposed to ketoconazole, the production of trypomastigotes is delayed as compared to untreated controls (Figure 1E).
 
 To evaluate the longer-term impact of ketoconazole exposure on intracellular T. cruzi amastigotes cultured in the absence of supplemental glutamine, a clonal outgrowth assay was utilized to quantitatively measure parasite rebound following treatment (Dumoulin and Burleigh, 2020; Dumoulin and Burleigh, 2018). Detection of outgrowth (>14 days), requires surviving parasites to successfully complete several lytic cycles and therefore this assay distinguishes cytostatic from cidal effects of a test compound. Exposure of intracellular amastigotes to increasing concentrations of ketoconazole in complete medium (from 18 hpi - 66 hpi) results in a proportional decrease in clonal outgrowth (Figure 1F), consistent with irreversible cytotoxicity incurred by exposure to ketoconazole (Goad et al., 1989). In contrast, no evidence of killing was seen when supplemental glutamine was restricted during the period of ketoconazole exposure as clonal outgrowth was comparable to vehicle-treated controls under these conditions (Figure 1F). Extending the ketoconazole exposure time to 72 hr did not alter this outcome (not shown). Combined, these results confirm that intracellular T. cruzi amastigotes are protected from the lethal effects of ketoconazole when supplemental glutamine levels are restricted. Not only do the parasites survive, but they continue to replicate in the presence of 5 nM ketoconazole, which is normally lethal within the time frame of exposure. Importantly, protection occurs at a population level, as opposed to selection of a minor amastigote sub-population that is intrinsically refractory to the drug or in a latent, non-replicative state.
 
-## Glutamine supplementation sensitizes intracellular T. cruzi amastigotes to ketoconazole in a dose-dependent manner
+### Glutamine supplementation sensitizes intracellular T. cruzi amastigotes to ketoconazole in a dose-dependent manner
 
 Intracellular T. cruzi amastigotes succumb to the toxic effects of azoles when glutamine (2 mM) is present in the in vitro growth medium (Figure 1A–F). Given that standard glutamine concentrations in culture medium (1–2 mM) are significantly higher than the physiologic range of human plasma (800–300 μM) (Cruzat et al., 2018), supplemental glutamine was added back to glutamine-free DMSO and ketoconazole-treated cultures (Figure 1G,H; respectively) to determine the concentration range of exogenous glutamine that sensitizes intracellular amastigotes to ketoconazole. In the absence of drug, the intracellular parasite load increases linearly with the addition of glutamine (Figure 1G), but in the presence of a fixed concentration of ketoconazole (5 nM), supplemental glutamine decreased amastigote growth in a dose-dependent manner (IC50 of 133.4 µM for glutamine; Figure 1H). Addition of amino acids known to be metabolized by the epimastigote stage (proline or histidine)(Barisón et al., 2016; Sylvester and Krassner, 1976), but not present in the base mammalian growth medium, failed to sensitize amastigotes to ketoconazole or impact parasite growth in the absence of glutamine (Figure 1—figure supplement 4). These results point to glutamine metabolism or a glutamine sensitive process in the parasite, host cell or both, as a key factor in the susceptibility of intracellular T. cruzi amastigotes to azole drugs.
 
-## Slowed parasite growth does not explain glutamine-sensitive survival of ketoconazole-treated intracellular amastigotes
+### Slowed parasite growth does not explain glutamine-sensitive survival of ketoconazole-treated intracellular amastigotes
 
 Since intracellular T. cruzi amastigote growth is slowed under conditions of glutamine restriction in vitro (Figure 1C,D), and slower growing parasites may be less susceptible to inhibitors of anabolic processes such as sterol synthesis, we cannot rule out the possibility that reduced growth rate alone might protect parasites from the lethal effects of azoles. To assess whether slowed growth is an underlying factor in the protection of intracellular amastigotes from azole-mediated death, we exploited a small molecule inhibitor of parasite cytochrome b, GNF7686 (Khare et al., 2015b) that acts cytostatically to reduce amastigote replication rates in a dose-dependent manner and with no detectable interaction with glutamine (Dumoulin and Burleigh, 2018). At early time points both glutamine restriction and GNF7686 treatment protect parasites from ketoconazole (Figure 1—figure supplement 5A,B), but unlike the protection observed in the absence of supplemental glutamine, the slower growing GNF7686-treated parasites succumbed to ketoconazole treatment in complete medium by 90 hpi (Figure 1—figure supplement 5C,D). Importantly, GNF7686 treatment did not interfere with survival of azole-treated amastigotes under conditions of glutamine restriction.
 
 Other factors associated with glutamine restriction but independent of parasite growth rate may mediate protection from azoles including the generation of reactive oxygen species (ROS) due to glutamine deprivation (Matés et al., 2002), cytochrome b inhibition (Dröse and Brandt, 2008; Fridovich, 1978) or variations in oxygen consumption which is a requirement for sterol synthesis (Parks, 1978). ROS does not play a role in protection of intracellular T. cruzi amastigotes from azole-mediated cytotoxicity given that antioxidant supplementation does not alter the susceptibility of amastigotes to azoles under any of the conditions tested (Figure 1—figure supplement 5E,F). Similar outcomes were achieved when experiments were conducted under normoxic (~20% O2) or hypoxic (1.3% O2) conditions (Figure 1—figure supplement 5G–I). Thus, combined with the observation that restriction of supplemental glucose, another amastigote growth-limiting condition fails to protect intracellular parasites from ketoconazole (Figure 1B–D), our results point to dysregulated glutamine metabolism, rather than slowed parasite growth or oxidative stress, in the survival of intracellular T. cruzi amastigotes following exposure to azoles.
 
-## Glutamine-derived carbons are incorporated into amastigote sterols
+### Glutamine-derived carbons are incorporated into amastigote sterols
 
 The connection between glutamine availability and amastigote sensitivity to azoles is not clear. If CYP51 inhibition by azoles results in the build-up of 14-methylated intermediates that become toxic to the parasite, then any condition that modulates metabolic flux in the direction of CYP51 has the potential to modulate this pool of intermediates. To investigate the possibility of a metabolic link between exogenous glutamine and endogenous sterol synthesis in amastigotes, metabolic 13C-tracer analysis was performed. T. cruzi-infected fibroblasts were cultured in medium supplemented with universally labeled [U 13C]-glutamine (2 mM) in the presence and absence of 5 nM ketoconazole. Intracellular amastigotes were isolated at 52 hpi, a time point that maximizes labeling time and minimizes parasite loss due to azole treatment (Figure 2—figure supplement 1) under conditions that minimize contamination from host cell membranes (Gazos-Lopes et al., 2017). The GC-MS chromatograms of sterols extracted from untreated amastigotes reveal several peaks with retention times between 12.4 and 13.3 (Figure 2A) that disappear in ketoconazole-treated parasites (Figure 2A) indicating their positions up- or downstream of CYP51 in the sterol synthesis pathway (Figure 2B). Carbons from exogenous 13C-glutamine were incorporated into sterol species downstream of CYP51 (e.g. zymosterol and isomers of ergosterol and episterol; Figure 2B). Consistent with reports that T. cruzi amastigotes do not generate ergosterol as a final species from endogenous sterol synthesis (Gunatilleke et al., 2012; Liendo et al., 1999; Ottilie et al., 2017) we could not detect canonical ergosterol in this analysis, although isomers of ergosterol were present (Figure 2B). 13C-labeled lanosterol and eburicol, both upstream of CYP51, accumulated in azole-treated amastigotes (Figure 2) as expected (Gunatilleke et al., 2012; Ottilie et al., 2017). In addition to these sterols, host-derived cholesterol was present in all samples, independent of azole treatment and did not incorporate 13C under any of the conditions examined. Notably, 13C incorporation into some amastigote sterols was as high as 20–30% (Figure 2B), suggesting that the contribution of exogenous glutamine to the endogenous sterol pool in T. cruzi amastigotes is significant.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig2-v1.jpg)
+
+**Figure 2.:** (A) Chromatogram from GC-MS detection of samples. Host-cell-derived cholesterol is seen at retention time 12.21, eburicol at 13.30, lanosterol at 13.04 and the internal standard at 12.98. (B) Table of detectable isolated amastigote sterol species from panel A and the percentage of natural sterols (i.e. without detectable 13C). The proportion of species found with the indicated number of incorporated 13C carbons are shown (e.g. 13C1, 13C2). (C) Quantification, using an internal standard, of lanosterol and (D) eburicol in isolated amastigotes (52 hpi) following treatment with ketoconazole (5 nM) at 18 hpi with or without glutamine (2 mM). Mean and standard deviation shown of independent treatments, infections and amastigote isolations (n = 2). Statistical comparisons are made using a Student’s t-test (*p<0.05, ns = not significant).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Time course following treatment with ketoconazole (5 nM) in complete media. (A) Amastigotes per infected host cell (n = 40) and (B) infected cells per 20 fields are shown. Fifty-two hpi identified as maximum time of ketoconazole exposure prior to measurable loss of intracellular amastigotes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Isolated amastigotes (52 hpi) were prepared on three independent occasions (biological) and each isolation was extracted three separate times (sterol extraction). The coefficient of variation of standard normalized area (GC-MS) was determined, means indicated. Variation in cholesterol between biological replicates prohibits reliable quantification.
 
 With the establishment of a metabolic link between glutamine and sterol biosynthesis in T. cruzi amastigotes (Figure 2A,B), we sought to determine the impact of glutamine restriction on amastigote sterol levels using internal standard (ISTD)-based quantification (GC-MS/ISTD). The low experimental variation in normalized lanosterol and eburicol levels (coefficient of variation <0.3; Figure 2—figure supplement 2) validates this comparative approach, and also highlights the variability in host-derived cholesterol in different biological samples (coefficient of variation >0.3; Figure 2—figure supplement 2). We find that the increase in lanosterol that occurs with azole treatment compared to non-treated controls to be lower in amastigotes cultured in medium without supplemental glutamine (Figure 2C), whereas eburicol levels were similar in both conditions (Figure 2D).
 
 With this reasoning, we sought to determine how perturbation of host glutamine metabolism would impact amastigote sterol pools. We employed BPTES, a small molecule inhibitor of the host glutaminase (GLS1) enzyme, to block the conversion of glutamine to glutamate in the host cell (Robinson et al., 2007). As T. cruzi lacks a glutaminase with discernable identity to human GLS1 and BPTES fails to inhibit glutamine-dependent respiration in amastigotes (Figure 3—figure supplement 1A), a process that requires the conversion of glutamine to glutamate, we expect that any effect(s) of BPTES are due to the inhibition of host GLS1 and related metabolic changes. Our results show that [U 13C]-glutamine incorporation into endogenously synthesized amastigote sterols is significantly increased as compared to untreated control parasites (Figure 3A). This result is consistent with the idea that inhibition of host GLS1 with BPTES increases glutamine availability for intracellular amastigotes to take up, increasing the flow of carbons from glutamine into the parasite sterol pool. The increase in 13C-labeling of amastigote sterols in the presence of BPTES coincides with a marked increase in the relative amounts of endogenously synthesized sterols (Figure 3B), bolstering the conclusion that sterol production in intracellular T. cruzi amastigotes is influenced by glutamine availability and/or flux through the sterol synthesis pathway.
 
-## Treatment with BPTES or supplementation with pathway intermediates is sufficient to re-sensitize T. cruzi amastigotes to ketoconazole in the absence of glutamine
+![Figure 3.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig3-v1.jpg)
+
+**Figure 3.:** (A) Table of detectable isolated amastigote sterol species from and the percentage of natural sterols (i.e. without detectable 13C). The proportion of species found with the indicated number of incorporated 13C carbons are shown (e.g. 13C1, 13C2). (B) Normalized area (ISTD) of the indicated species without and without BPTES treatment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Measurement of the oxygen consumption rate (OCR) of isolated amastigotes when glutamine is the sole carbon source. BPTES was injected three times, increasing the BPTES concentration by 5 μM per injection for a final well concentration of 15 µM. (B) Dose response curves of glutamine in the presence of ketoconazole and at various indicated concentrations of BPTES.
+
+### Treatment with BPTES or supplementation with pathway intermediates is sufficient to re-sensitize T. cruzi amastigotes to ketoconazole in the absence of glutamine
 
 The generation of 14-methylated sterol precursors has been implicated in the detrimental phenotypes associated with inactivation of CYP51 in other kinetoplastid protozoan parasites and in yeast (Goad et al., 1989; Kelly et al., 1995; Mukherjee et al., 2019). If flux and/or generation of these methylated intermediate species modulates the sensitivity of T. cruzi amastigotes to azoles, we reasoned that BPTES treatment, which results in increased incorporation of carbons from glutamine into parasite sterols (Figure 4A), could re-sensitize the parasites to ketoconazole under conditions of glutamine restriction. While BPTES treatment alone had no measurable effect on T. cruzi amastigote replication, parasites succumbed to ketoconazole treatment in the absence of glutamine when BPTES was present (Figure 3—figure supplement 1B) suggesting that glutamine-dependent sensitization of intracellular parasites to azoles is correlated with increased flux through the sterol synthesis pathway.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of endogenous sterol synthesis. Dash lined arrows indicate omission of steps for simplicity. (B) Microscopic counts of amastigotes per infected cell (n = 40) at 90 hpi treated with BPTES (5 μM), (C) αKG (10 mM), (D) FPP or (E) farnesol. Statistical comparisons between medians were performed using a Kruskal-Wallis test with Dunn’s multiple comparisons test (****p<0.0001, ***p<0.001, *p<0.05, ns = not significant).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60226/elife-60226-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Microscopic counts of infected cells per field (n = 20) at 90 hpi treated with BPTES (5 μM), (B) αKG (10 mM), (C) FPP or (D) farnesol. Comparisons of means were performed using a one-way ANOVA and Bonferroni’s multiple comparisons test (****p<0.0001, ns = not significant).
 
 Next, we sought to determine if provision of metabolites downstream of glutamine in this pathway, but upstream of CYP51 (Figure 4A), would have a similar effect in increasing the susceptibility of intracellular amastigotes to ketoconazole in the absence of supplemental glutamine. Similar to the results with BPTES (Figure 4B), addition of a cell-permeable form of α-KG, dimethyl α-ketoglutarate (di-α-KG), to parasite-infected cells resulted in a significant reduction of intracellular amastigote growth following treatment with ketoconazole in the absence of glutamine (Figure 4C). However, as compared to the results with BPTES, the effect of di-α-KG was less dramatic and may reflect conversion of di-α-KG to glutamate and then to glutamine.
 
@@ -84,50 +136,116 @@ The novel observations presented have implications for T. cruzi antimicrobial pr
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Trypanosoma cruzi)</td>
+      <td>Tula-βgal</td>
+      <td>ATCC</td>
+      <td>PRA-330</td>
+      <td>Tulahuén LacZ clone C4: PMID:8913471</td>
+    </tr>
+    <tr>
+      <td>Cell line (Macaca mulatta)</td>
+      <td>LLC-MK2</td>
+      <td>ATCC</td>
+      <td>CCL-7</td>
+      <td>PMID:14449902/14449901</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NHDF</td>
+      <td>Lonza</td>
+      <td>CC-2509</td>
+      <td>Normal Human Neonatal Dermal Fibroblasts</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ketoconazole</td>
+      <td>Enzo</td>
+      <td>Cat# EI107</td>
+      <td>≥99% (HPLC)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GNF7686</td>
+      <td>Vitas-M Laboratory</td>
+      <td>Cat# STK393240</td>
+      <td>PMID:26186534</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>glutamine</td>
+      <td>Gibco</td>
+      <td>Cat# A2916801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>13C-glutamine</td>
+      <td>Cambridge Isotope Laboratories, Inc</td>
+      <td>Cat# CLM-1822</td>
+      <td>Chemical Purity 98%</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 Tulahuén LacZ clone C4 (Tula-βgal), PRA-330 (ATCC, Manassas, Virginia) and LLC-MK2, CCL-7 (ATCC, Manassas, Virginia) cells were obtained directly from ATCC. Normal Human Neonatal Dermal Fibroblasts (NHDF; Lonza, Basel, Switzerland) were obtained directly from Lonza, catalog number CC-2509. Testing for mycoplasma contamination was performed monthly using the PlasmoTest (InvivoGen, San Diego, California) HEK-Blue-2 kit.
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 Mammalian cells were maintained at 37°C in a 5% CO2 incubator. Dulbecco’s modified Eagle medium (DMEM; HyClone, Logan, Utah) supplemented with 10% FBS (Gibco, Waltham, Massachusetts), 25 mM glucose, 2 mM L-glutamine, and 100 U/mL penicillin-streptomycin was used for propagated for uninfected cultures (DMEM-10). Unless stated otherwise, cultures infected with Trypanosoma cruzi were maintained in DMEM with 2% FBS (DMEM-2). Normal Human Neonatal Dermal Fibroblasts (NHDF; Lonza, Basel, Switzerland) were passaged prior to reaching confluence.
 
-## Parasite maintenance
+### Parasite maintenance
 
 Tula-βgal, (ATCC, Manassas, Virginia) was passaged weekly in LLC-MK2 (ATCC, Manassas, Virginia) cells (Buckner et al., 1996). Trypomastigotes were prepared by collecting the supernatant from infected cultures and centrifuging for 10 min at 2060 x g followed by incubation at 37°C for >2 hr to allow for trypomastigotes to swim from the pellet. After incubation the supernatant containing trypomastigotes was collected and washed in DMEM-2, enumerated using a Neubauer chamber and used for subsequent infections.
 
-## Quantification of parasite load by luminescence
+### Quantification of parasite load by luminescence
 
 Tula-βgal parasite load was measured using luminescence as described previously (Caradonna et al., 2013; Shah-Simpson et al., 2017). One day prior to infection NHDFs were seeded in 384-well plates (Corning, Corning, New York) at a density of 1,500 cells per well and allowed to attach. Purified trypomastigotes were added at a multiplicity of infection (MOI) of 1.25 and allowed to invade for 2 hr, followed by two washes with PBS and subsequent addition of DMEM-2 without phenol red. Treatments were initiated at 18 hr post infection (hpi) to avoid any potential impacts of trypomastigote invasion and/or differentiation. At the indicated time points, growth media was removed and 10 μl Beta-Glo (Promega, Madison, Wisconsin) was added per well. Plates were incubated for >30 min at room-temperature to allow the reaction to reach equilibrium and read using an EnVision plate reader (PerkinElmer, Waltham, Massachusetts). Luminescence from uninfected wells was determined for each treatment and subtracted from infected wells to account for signal not derived from parasites.
 
-## Compound and supplement stocks
+### Compound and supplement stocks
 
 Compounds were purchased and diluted to stock concentrations: Ketoconazole (Enzo, Farmingdale, New York) 15 mM stock in DMSO, Ravuconazole (Sigma, St. Louis, Missouri) 15 mM DMSO, Itraconazole (BioVision, Milpitas, California) 15 mM DMSO, GNF7686 (Vitas-M Laboratory, Champaign, Illinois) 5 mM stock in DMSO, FPP (Sigma, St. Louis, Missouri) 2.3 mM stock in methanol, Farnesol (Sigma, St. Louis, Missouri) 100 mM in ethanol, NAC (Sigma, St. Louis, Missouri) 200 mM in DMEM base, Glutathione (Sigma, St. Louis, Missouri) 162 mM in media, benznidazole (Sigma, St. Louis Missouri) 20 mM in DMSO, BPTES (Selleckchem, Houston Texas) 20 mM in DMSO.
 
-## Microscopy
+### Microscopy
 
 Host cells were seeded 1 day prior to infection on coverslips (EMS, Hatfield, Pennsylvania) in 24-well plates at a density of 4 × 104 cells per well. Cells were infected for 2 hr at a MOI of 2 and subsequently washed twice with PBS followed by addition of DMEM-2. Coverslips were fixed in 1% PFA-PBS and stained in a 0.1% Triton X-100–PBS solution containing 100 ng/ml DAPI (Sigma, St. Louis, Missouri) for 5 min. After staining, coverslips were washed with PBS and mounted with ProLong Antifade (Thermo Fisher, Waltham, Massachusetts) on glass slides. Amastigotes were counted using a Nikon eclipse TE300. Amastigotes per infected host cell and the number of infected host cells per microscopic field were recorded.
 
-## Western blot
+### Western blot
 
 Uninfected cells were lysed in 1 mL M-PER Mammalian Protein Extraction Reagent (Thermo Fisher, Waltham, Massachusetts) directly in culture wells and boiled for 10 min. Soluble lysate (50 μg) was loaded onto a 10% Mini-Protean TGX Gel (Bio-Rad, Hercules, CA). Proteins were transferred to a nitrocellulose membrane and blocked with a 1:1 dilution of SEA BLOCK (Thermo Fisher, Waltham, Massachusetts): PBS overnight at 4°C. The membrane was probed in blocking buffer with anti-Hif1a EPR16897 (1:1500) (Abcam, Cambridge, MA) and anti-βactin (Sigma, St. Louis, Missouri) (1:1000) for 1 hr at room temperature in hybridization tubes. After probing the membrane was washed in 1X PBS for 30 min, replacing PBS every 5 min for a total of 6 washes. Secondary antibodies, anti-mouse DyLight 680 (Cell Signaling, Dancers, MA) (1:15,000) and anti-rabbit Dylight 800 (Thermo Fisher, Waltham, Massachusetts) (1:10,000) were added and incubated for 1 hr at room temperature. The membrane was visualized using a LI-COR imaging system (LI-COR, Lincoln, NE).
 
-## Sterol extraction
+### Sterol extraction
 
 The method for extraction of sterols was based on protocols described in Sharma et al., 2017. Extraction occurred in glass PYREX tubes (Corning, Corning, New York) and all solvents used were HPLC grade or higher. Lipids were first extracted three times from cell pellets using C:M (2:1, v/v) and centrifuged each time at 1800 x g for 15 min at 4°C followed by collection of the supernatant in new tubes. The supernatant was dried under a constant stream of N2 and the resulting material was subjected to a Folch’s partitioning (4:2:1.5, C:M:W). The lower phase was removed, dried under N2 and re-suspended in chloroform, passed over a silica 60 column and eluted with chloroform.
 
-## GC-MS
+### GC-MS
 
 GC/MS analysis was performed on a Thermo Scientific TRACE 1310 Gas Chromatograph equipped with a Thermo Scientific Q Exactive Orbitrap mass spectrometry system. Fifty microliters of the (BSTFA+10% TMCS)/pyridine (5/1 v/v) was added into each vial, vortexed well, and heated at 70°C for 30 min. A total of 1 µL sample was injected into a Thermo fused-silica capillary column of cross-linked TG-5SILMS (30 m x 0.25 mm x 0.25 µm). The GC conditions were as follows: inlet and transfer line temperatures, 290°C; oven temperature program, 50°C for 0 min, 24°C/min to 325°C for 5.7 min; inlet helium carrier gas flow rate, 1 mL/min; split ratio, 5. The electron impact (EI)-MS conditions were as follows: ion source temperature, 310°C; full scan m/z range, 30–750 Da; resolution, 60,000; AGC target, 1e6; maximum IT, 200 ms. Data were acquired and analyzed with Thermo TraceFinder 4.1 software package. Standards for cholesterol, ergosterol, lanosterol, episterol, and zymosterol were used for identification. Universal 13C-glutamine was re-suspended to a stock concentration of 200 mM in water (Cambridge Isotope Labs, Tewksbury, Massachusetts). Prior to sterol extraction, sitosterol-d7 (Avanti Polar Lipids, Alabaster, Alabama) was added as an internal standard (ISTD) at 1.12 μg/2e7 isolated amastigotes. Thermo Fisher Scientific’s data analysis software Compound Discoverer 3.1 was used for the measurement of the enrichment of 13C-sterols, with 30 being the maximum number of exchangeable carbon atoms.
 
-## Amastigote isolation
+### Amastigote isolation
 
 Infected monolayers were washed two times with PBS and cell detachment was achieved using a sterol free dissociation reagent, Accumax (Innovative Cell Technologies, San Diego, California). Cell suspensions were washed two times with PBS by centrifugation at 700 x g for 10 min at 4°C. The resulting cell pellets were lysed by passage through a 28-gauge needle or using the Miltenyi GentleMACS dissociator (M tubes, Protein_01 protocol). Lysate was passed over a PD-10 column (GE Healthcare, Chicago, Illinois) equilibrated with PBS. Eluted parasites were washed three times in PBS by centrifugation at 2300 x g at 4°C.
 
-## Clonal outgrowth
+### Clonal outgrowth
 
 Measurement of clonal outgrowth utilized a modified protocol from Dumoulin and Burleigh, 2018 to allow for detection by luminescence. Host cells were seeded in 384 well plates and 25 trypomastigotes per well were allowed to invade for 2 hr, followed by two washes with PBS to removed uninvaded trypomastigotes. Treatments were initiated at 18 hpi and wells were washed at 66 hpi twice with PBS followed by addition of DMEM-2. Cultures were allowed to grow for 14 days and subsequently measured for presence of parasites by luminescence as described previously.
 
-## Seahorse bioenergetics profiling
+### Seahorse bioenergetics profiling
 
 Amastigotes were isolated from infected cultures and prepared as described (Shah-Simpson et al., 2016). Isolated amastigotes were profiled in Krebs-Henseleit Buffer (KHB) with 2 mM glutamine as the sole carbon source and received either BPTES (5 µM) and Antimycin A (1 µM) or KHB + glutamine during the assay. BPTES was injected three times, bringing the concentration in the well from 0 µM at baseline to 5 µM after the first injection, 10 µM after the second injection, and 15 µM after the third injection. 1 µM Antimycin A (AA) was injected last to indicate how much of the oxygen consumption rate (OCR) was due to non-mitochondrial respiration vs. basal respiration. Measurements were done with 1 min of mixing, 1 min of waiting, and 2 min of measuring.

@@ -42,15 +42,27 @@ EPSTI1 was identified as a stromal fibroblast-induced gene upon co-cultures of b
 
 ## Results
 
-## Genome-wide polysome profiling reveals translational regulation of EPSTI1 by KSR1
+### Genome-wide polysome profiling reveals translational regulation of EPSTI1 by KSR1
 
 ERK signaling regulates global and selective mRNA translation through RSK1/2-dependent modification of cap-dependent translation (McCall et al., 2016; Roux et al., 2007). Phosphorylation of cap binding protein 4E-BP1 releases eIF4E to promote translation and the abundance of eIF4E is a rate-limiting factor for oncogenic Ras- and Myc-driven transformation (Truitt Morgan et al., 2015). We showed previously that KSR1 maximizes ERK activation in the setting of oncogenic Ras (Kortum et al., 2006), which is required for increased Myc translation via dephosphorylation of 4E-BP1, supporting CRC cell growth (McCall et al., 2016). These observations imply that the ERK scaffold function of KSR1 alters the translational landscape in CRC cells to support their survival.
 
 To determine the effect of KSR1 on translatomes in colon cancer cells, we performed genome-wide polysome profiling (King and Gerber, 2016). We stably expressed short hairpin RNA (shRNA) constructs targeting KSR1 (KSR1 RNAi) or a non-targeting control in two K-Ras mutant CRC cell lines, HCT116 and HCT15 (Figure 1D, top panels). We isolated and quantified both total mRNA and efficiently translated mRNAs (associated with ≥3 ribosomes) using RNA sequencing (Figure 1A, Figure 1—figure supplement 1). We used Anota2seq (Oertlin et al., 2019) to calculate translation efficiency (TE) by comparing the differences in efficiently translated mRNAs to the total transcript of each mRNA and observed that a significant number of mRNAs ([selDeltaTP ≥ log (1.2) and selDeltaPT ≥ log (1.2)] and p-value < 0.05) showed either reduced TE or upregulated TE upon KSR1 disruption (Figure 1B–C, Supplementary file 1, Source data 1) in both HCT116 and HCT15 cells. Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005) of significantly enriched genes in HCT116 and HCT15 (Figure 1B, Figure 1—figure supplement 2A-B), identified 11 mRNAs in the gene set titled “Hallmark EMT signature”, “Jechlinger EMT Up”, and “Gotzmann EMT up” , that had significantly decreased translation upon KSR1 disruption (Supplementary file 2). Among the genes with decreased translation, EPSTI1 was one of the highly significant mRNAs. We sought to determine the functional relevance of KSR1-dependent induction of EPSTI1 to phenotypic plasticity in colon cancer cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66608/elife-66608-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative polysome profiles from control and KSR1 knockdown (KSR1 RNAi) HCT116 and HCT15 cells. Sucrose gradient fractions 3–5 denote the low-molecular-weight complexes (monosomes) and the fractions 6–8 are the high-molecular-weight complexes (polysomes). (B) Scatter plot of polysome-associated mRNA to total mRNA log2 fold-changes upon KSR1 knockdown in HCT116 and HCT15 with RNA-seq. The statistically significant genes in the absence of KSR1 are classified into four groups with a fold change (|log2FC|) > 1.2 and p-value < 0.05. The number of mRNAs with a change in TE (orange and red) are indicated (n = 3 for each condition). TE, translational efficiency. (C) Heatmap of TE changes for the top 40 RNAs control and KSR1 knockdown (KSR1 RNAi) HCT116 and HCT15 cells (n = 3 for each condition). (D) Western blot analysis of KSR1 and EPSTI1 following KSR1 knockdown in HCT116 and HCT15 cells. (E) RT-qPCR analysis of EPSTI1 mRNA from total RNA and polysomal RNA (fractions number 6–8) in control and KSR1 knockdown HCT116 and HCT15 cells, the TE was calculated as the ratio of polysomal mRNA to the total mRNA (n = 3; *, p < 0.05). (F) RT-qPCR analysis of EPSTI1 mRNA levels isolated from sucrose gradient fractions of the control and KSR1 knockdown HCT116 and HCT15 cells. Fractions 3–5 (low MW) and 6–8 (high MW) are plotted for the control and KSR1 knockdown state with values corresponding to the percentage of total mRNA across these fractions n = 3. Experiments shown in (A - F) are representative of three independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66608/elife-66608-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Figure 1—figure supplement 2A and 1B were used as representative images for Figure 1A.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66608/elife-66608-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Scatter plot of polysome-associated mRNA to total mRNA log2 fold-changes upon KSR1 knockdown in HCT116 (top) and HCT15 (bottom) with RNA-seq. The statistically significant genes in the absence of KSR1 are classified into four groups with a fold change (|log2FC| > 1.2) and p-value < 0.05. The number of mRNAs with a change in TE (orange and red) are indicated (n = 3 for each cell line). TE, translational efficiency (B) Differential gene expression analysis comparing genes whose TE is changed upon KSR1- knockdown in HCT116 and HCT15 (C) RT-qPCR analysis of HPRT mRNA levels isolated from sucrose gradient fractions of the control and KSR1 knockdown HCT116 and HCT15 cells. Fractions 3–5 (low MW) and 6–8 (high MW) are plotted for the control and KSR1 knockdown state with values corresponding to the percentage of total mRNA across these fractions. Experiments shown in (A - C) are representative of three independent experiments. (D) EPSTI1 and KSR1 levels were assessed by western blot following treatment with cycloheximide (CHX) for 0, 2, 4, and 6 hr in HCT116 cells. (E) Representative western blot images showing HCT116 control and KSR1 CRISPR cells treated with DMSO or 10 µM of MG132 for 6 hours in the presence or absence of 10 µM of CHX for 6 hr and levels of KSR1 or EPSTI1 protein were revealed by western blot. Experiments shown in (D–E) are representative of at least two independent experiments.
+
 To confirm that EPSTI1 translation is KSR1-dependent, we observed that, EPSTI1 protein expression was decreased with the knockdown of KSR1 in HCT116 and HCT15 cells (Figure 1D), while the total mRNA transcript was unchanged upon KSR1 disruption (Figure 1E, left panel). EPSTI1 TE was markedly decreased upon KSR1 depletion (Figure 1E, right). RT-qPCR analysis of sucrose-gradient fractions of monosome mRNA and polysome RNA distribution confirmed that EPSTI1 mRNA shifted from actively translating high-molecular-weight (MW) polysome fractions to low-MW fractions in KSR1 knockdown cells (Figure 1F). In contrast, HPRT1 mRNA was insensitive to KSR1 knockdown in HCT116 and HCT15 cells, and qPCR analysis of HPRT1 mRNA isolated from sucrose gradient fractions of control and KSR1 knockdown cells showed no significant shift between the low-MW and the high-MW fractions (Figure 1—figure supplement 2C). To determine if KSR1 promotes EPSTI1 degradation, we first assessed EPSTI1 turnover in HCT116 cells following treatment with a protein-synthesis inhibitor, cycloheximide (CHX) and observed that EPSTI1 has a 6 hr half-life (Figure 1—figure supplement 2D). We analyzed EPSTI1 turnover using a combination of proteasome inhibitor, MG132 and CHX in control and CRISPR-targeted KSR1 HCT116 cells (Figure 1—figure supplement 2E). EPSTI1 turnover was not sensitive to MG132 treatment in HCT116 cells lacking KSR1 expression. Therefore, in HCT116 cells, KSR1 does not mediate ubiquitin proteosome system (UPS)-mediated degradation of EPSTI1. These data support our conclusion that EPSTI1 translation is induced by KSR1.
 
-## KSR1/ERK signaling regulates EPSTI1 expression in colon cancer cells
+### KSR1/ERK signaling regulates EPSTI1 expression in colon cancer cells
 
 To confirm our observations in KSR1 knockdown cells, we tested the effect of CRISPR/Cas9-mediated targeting of KSR1 on EPSTI1 in CRC cell lines. EPSTI1 protein expression was decreased upon KSR1 depletion in HCT116 and HCT15 cells and EPSTI1 expression was restored in knockout cells upon expression of a KSR1 transgene (+ KSR1) (Figure 2A). Similar to inhibition of KSR1, treatment with ERK inhibitor SCH772984 (Morris et al., 2013) suppressed EPSTI1 protein expression in both CRC cell line HCT116 and tumorigenic patient derived colon organoid engineered with deletion of APC, p53, SMAD4, and K-RasG12D mutation (PDO-11 AKPS) (Figure 2B; Drost et al., 2015). To determine if EPSTI1 expression is also dependent on mTOR signaling, we tested the effect of mTOR inhibition on EPSTI1expression. Though mTOR inhibitor, AZD8055 (Chresta et al., 2010) robustly inhibited phosphorylation of mTOR substrate p70 S6 kinase, its ability to decrease EPSTI1 expression in HCT116 cells was weak relative to treatment with the ERK inhibitor (Figure 2C). These observations suggest the ERK affects EPSTI1 expression via mechanisms distinct from mTOR. While the total protein was reduced upon ERK inhibition in HCT116, the EPSTI1 transcript levels were not altered significantly by SCH772984 treatment (Figure 2D).
 
@@ -60,7 +72,7 @@ To confirm our observations in KSR1 knockdown cells, we tested the effect of CRI
 
 We performed polysome profiling in HCT116 cells, either treated with DMSO or ERK inhibitor, SCH772984 and we isolated mRNA from low-MW monosome (fractions 3–5) and high-MW polysome (fractions 6–8) fractions (Figure 2E). RT-qPCR demonstrated that EPSTI1 mRNA shifted from high-MW fractions to the low-MW fractions upon ERK inhibition (Figure 2F). The distribution of mRNA for HPRT1 within the same profile was not altered by SCH772984 treatment (Figure 2F). These data indicate that KSR1-dependent ERK signaling is a critical regulator of EPSTI1 mRNA translation in colon cells and organoids.
 
-## EPSTI1 is required for anchorage-independent growth in colon cancer cells
+### EPSTI1 is required for anchorage-independent growth in colon cancer cells
 
 KSR1 disruption inhibits HCT116 cell anchorage-independent growth in vitro and tumor formation in vivo (Fisher et al., 2015). Similarly, disruption of KSR1 by CRISPR/Cas9-mediated targeting decreased HCT116 and HCT15 cell viability under anchorage-independent conditions on simulated by poly-(HEMA) coating (Figure 3A). KSR1 transgene expression restored cell viability in HCT116 and HCT15 cells lacking KSR1 (KSR1 CRISPR+ KSR1) (Figure 3A). We showed previously that KSR1 expression is upregulated in colon cancer cell lines when compared to the non-transformed human colon epithelial cells (HCECs) (Fisher et al., 2015). We observed that EPSTI1 protein is aberrantly expressed in colon cancer cell lines HCT116 and HCT15, while its expression is detected weakly in HCECs (Figure 3B). EPSTI1 protein expression is also markedly higher in AKPS organoids than normal colon organoids (Figure 3B).
 
@@ -70,7 +82,7 @@ KSR1 disruption inhibits HCT116 cell anchorage-independent growth in vitro and t
 
 To determine the regulation of EPSTI1 in human colon tumor maintenance, we performed siRNA knockdown of EPSTI1 in HCT116 and HCT15 cells. EPSTI1 disruption suppressed viability on poly-(HEMA) coated by 40 % in HCT15 cells, and over 70%, in HCT116 cells (Figure 3C). EPSTI1 knockdown reduced colony formation in soft agar by 63 % in HCT116 cells and 71 % in SW480 cells (Figure 3D). These observations show that KSR1-dependent translation of ESPTI1 is required for anchorage-independent growth of colon tumor cell lines.
 
-## KSR1 or EPSTI1 disruption decreases cell mobility in CRC cells
+### KSR1 or EPSTI1 disruption decreases cell mobility in CRC cells
 
 Considering the suggested role of EPSTI1 in promoting EMT-like phenotypes (Nielsen et al., 2002; Li et al., 2014), we sought to evaluate the biological role of EPSTI1 in colon cancer cells. Time-lapse images of control and EPSTI1 knockdown in HCT116 cell motility in a scratch wound was analyzed by measuring the relative wound density (Johnston et al., 2015) over 72 hours (Figure 4A, bottom). IncuCyte software was used to calculate relative wound density, that is, the percentage of spatial cell density inside the wound relative to the spatial density outside of the wound area at a given time point. The calculation of cell migration using this method, avoids false changes in cell density due to proliferation. Motility was also assessed in control, CRISPR-targeted (KSR1 CRISPR), and CRIPSR-targeted HCT116 cells expressing KSR1 (KSR1 CRISPR+ KSR1) (Figure 4A, top). Cells lacking either EPSTI1 or KSR1 were approximately 20 % less motile compared to control cells. Reintroduction of KSR1 expression in CRISPR-targeted HCT116 cells restored motility comparable to the control cells (Figure 4A, top).
 
@@ -80,15 +92,31 @@ Considering the suggested role of EPSTI1 in promoting EMT-like phenotypes (Niels
 
 EPSTI1 knockdown HCT116 and SW480 cells were subjected to Transwell invasion assays. EPSTI1 RNAi suppresses cell invasion through Matrigel by 72 % in HCT116 and by 75 % in SW480. (Figure 4B, top right and bottom). Since KSR1 is required for EPSTI1 translation, we determined the functional contribution of KSR1 in regulating cell invasion. KSR1 depletion suppressed invasion by 64 % in HCT116 and by 53 % SW480 cells (Figure 4B, top left and bottom). Overall, these results suggest the KSR1-dependent EPSTI1 signaling contributes to cell migration and invasion in CRC cells.
 
-## KSR1 or EPSTI1 disruption causes cadherin switching in CRC cells
+### KSR1 or EPSTI1 disruption causes cadherin switching in CRC cells
 
 To understand the underlying mechanism by which KSR1 or EPSTI1 promote motility and invasion in CRC cells, we evaluated their contribution to the expression of critical determinants of EMT that modulate cell adhesion, E- and N-cadherins and EMT-TFs. Compared to the non-targeting control, KSR1 disruption in HCT116, HCT15 and SW480 cells had elevated levels of E-cadherin, along with a coincident decrease in EMT-TF Slug (Figure 5A). Expression of Vimentin, and Snail1 was not changed in HCT116 cells (Figure 5—figure supplement 1A). Upon knockdown of EPSTI1 with either of two siRNA oligos, we observed a decrease in the expression of N-cadherin, ZEB1 and Slug. Coincident with the decrease in EMT-TFs, E-cadherin levels were elevated (Figure 5B). While there was no significant change in the Slug and ZEB1 mRNA upon EPSTI1 knockdown (Figure 5—figure supplement 1B), EPSTI1 disruption decreased N-cadherin mRNA expression over 50 % in HCT116 and SW480 cells (Figure 5C). Following EPSTI1 knockdown, we subjected control HCT116 cells and HCT116 cells overexpressing N-cadherin to Transwell invasion assay through Matrigel. EPSTI1 knockdown suppressed cell invasion. The expression of N-cadherin in cells lacking EPSTI1 was sufficient to restore invasiveness to HCT116 cells (Figure 5—figure supplement 1C-D). This is consistent with previous observations that upregulation of N-cadherin expression enhances motility in multiple cancer cell lines (Nieman et al., 1999; Hulit et al., 2007; Mrozik et al., 2018). These results indicate that the switch of E-cadherin to N-cadherin expression promotes the progression of migratory and invasive behavior orchestrated by EPSTI1 signaling in CRC cells.
 
-## EPSTI1 is necessary and sufficient for EMT-like phenotype in CRC cells
+![Figure 5.](https://cdn.elifesciences.org/articles/66608/elife-66608-fig5-v2.jpg)
+
+**Figure 5.:** (A) Western blot analysis of the cell lysates prepared from control, and two clones of CRISPR-targeted HCT116, SW480, and HCT15 cells (KSR1 CRISPR) for the E-cadherin, Slug, and EPSTI1. (B) Western blot of ZEB1, Slug, E-cadherin, and N-cadherin in HCT116 and SW480 cells 72 hr following EPSTI1 knockdown. (C) RT-qPCR analysis of EPSTI1 mRNA (upper) and N-cadherin (lower) following knockdown of EPSTI1 for 72 hr in HCT116 and SW480 cells. n = 6; ***, p < 0.001; ****, p < 0.0001. Western blots shown in (A) and (B) and qPCR shown in (C) are representative of at least three independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66608/elife-66608-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot analysis of the cell lysates prepared from control, and two clones of CRISPR-targeted HCT116 (KSR1 CRISPR) for (Top- upper) E-cadherin and Vimentin, and (bottom-lower) Cell lysates prepared from control, CRISPR-targeted (KSR1 CRISPR) and CRISPR-targeted HCT116 cells expressing KSR1 (MSCV-KSR1) analyzed for Slug and Snail. (B) RT-qPCR analysis of Slug mRNA (top-upper) and ZEB1 (bottom-lower) following knockdown of EPSTI1 for 72 hr in HCT116 and SW480 cells. (C) (Upper panels) Control, EPSTI1 knockdown (siEPSTI1) with and without N-cadherin over-expression (N-cadherin OE) were subjected to Transwell migration assay through Matrigel for 24 hr using 10 % FBS as chemoattractant. The number of invaded cells per field were counted. Data are the mean ± SD (n = 4); ***, p < 0.001. (Lower panels) Representative images of Giemsa-stained cells 24 hr after invasion through Matrigel. (D) Western blot analysis of EPSTI1 and N-cadherin from control and EPSTI1 knockdown cell lysates with and without N-cadherin OE. Experiments are representative of at least two independent experiments.
+
+### EPSTI1 is necessary and sufficient for EMT-like phenotype in CRC cells
 
 To determine the extent to which KSR1- and ERK-dependent EPSTI1 translation is critical to colon tumor cell growth and invasion, we expressed a MSCV-FLAG-EPSTI1-GFP construct in KSR1-CRISPR knockout HCT116, SW480, and HCT15 cells. CRISPR/Cas9-mediated deletion of KSR1 disrupted EPSTI1 expression, downregulated Slug and N-cadherin expression and elevated E-cadherin expression (Figure 6A). E-cadherin staining was absent in control CRC cells but evident at the cell membrane in KSR1 knockout cells (Figure 6B). Exogenous expression of EPSTI1 in cells lacking KSR1 restored the cadherin switch, by decreasing the expression of E-cadherin (Figure 6A and B) and increasing N-cadherin levels comparable to control cells (Figure 6A). Suppression of E-cadherin and restoration of N-cadherin expression by the EPSTI1 transgene reestablished the ability of KSR1 knockout cells to migrate in monolayer culture (Figure 6C) and invade through Matrigel. Forced expression of EPSTI1 in these cells, increased the number of invading cells by over threefold (Figure 6D). To determine the effect of EPSTI1 on cell proliferation, we analyzed the cell growth kinetics in HCT116 and SW480 cells (Figure 6—figure supplement 1). Over 3 days, EPSTI1 knockdown had no effect on cell proliferation compared to control HCT116 and SW480 cells. While EPSTI1 expression in KSR1 knockout cells had no significant effect on cell proliferation for 24 hr in HCT116 and SW480 cells (Figure 6—figure supplement 1A-B), EPSTI1 expression increased the number of invading cells in that period over 50 % in HCT116 and over 70 % in SW480 cells (Figure 6D). Although, EPSTI1 expression has a significant effect on cell proliferation over 7 days compared to KSR1 knockout cells in HCT116 and SW480 cells, EPSTI1 expression rescued migratory potential by over 60 % in KSR1-depleted HCT116 and SW480 cells within 24 hr (Figure 6C). These data reveal that disabling the cadherin switch and inhibition of cell invasion by KSR1 disruption interrupts EPSTI1 translation, highlighting the pivotal role of this pathway for the induction of EMT-like phenotype in CRC cells.
 
-## EPSTI1 re-expression reverses the KSR1-dependent growth inhibition and N-cadherin gene expression
+![Figure 6.](https://cdn.elifesciences.org/articles/66608/elife-66608-fig6-v2.jpg)
+
+**Figure 6.:** (A) EPSTI1 protein expression was assessed by western blotting in control, KSR1-targeted (KSR1 CRISPR) HCT116, SW480, and HCT15 cells with and without EPSTI1 (FLAG-EPSTI1) expression. Cells were lysed and probed for Slug, E-cadherin, N-cadherin, Lamin β2, and β actin. (B) Immunofluorescence staining for E-cadherin (Red) and DAPI (blue) in control or KSR1-targeted (KSR1 CRISPR) HCT116, SW480, and HCT15 cells with and without EPSTI1 (FLAG-EPSTI1) expression. (C) Control, CRIPSR- targeted (KSR1-CRISPR), and CRISPR-targeted HCT116 and SW480 cells expressing EPSTI1 (KSR1 CRISPR+ FLAG-EPSTI1) were subjected to the 96-well IncuCyte scratch wound assay. The graph represents the time kinetics of percent wound density, calculated by IncuCyte ZOOM software, shown as mean ± SD, n = 12; **, p < 0.005; ***, p < 0.001; ****, p < 0.0001. Matched results were analyzed for statistical significance using one-way ANOVA with Dunnett’s posttest for multiple comparisons. (D) Control, CRISPR-targeted (KSR1 CRISPR), and CRISPR-targeted HCT116 and SW480 cells expressing EPSTI1 (KSR1 CRISPR+ FLAG-EPSTI1) were subjected to Transwell migration assay through Matrigel . The number of invaded cells per field were counted, (n = 4); ****, p < 0.0001. Representative microscopic images of the respective cells following invasion through Matrigel are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66608/elife-66608-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Cell proliferation growth curves in control (blue), KSR1 CRISPR (red) HCT116 (A) and SW480 (B) with and without EPSTI1 (green) or KSR1 expression (orange) (n = 4; ns, non-significant, statistical analysis using t test with individual variances computed comparing KSR1 knockout versus control (a), KSR1 re-expression (b), and EPSTI1 re-expression (c, d); a, b, c = p < 0.0001; d = p < 0.005). (C) Western blot analysis of KSR1 and EPSTI1 in control, KSR1-targeted (KSR1 CRISPR) HCT116 and SW480 cells with and without EPSTI1 or KSR1 expression. HCT116 (D) and SW480 (E) were transfected with EPSTI1 siRNA (siEPSTI1) or non-targeting control (siControl). After plating cells evenly, cells were counted on day 1, 3, 5, and 7. (n = 4; ns, non-significant **, p < 0.005; ****, p < 0.0001). (F) Validation of EPSTI1 knockdown after 7 days was done using western blot.
+
+### EPSTI1 re-expression reverses the KSR1-dependent growth inhibition and N-cadherin gene expression
 
 Knockdown of EPSTI1 in HCT116 and SW480, decreased N-cadherin mRNA expression 50 % (Figure 5C). Upon KSR1 depletion, N-cadherin mRNA decreased 32 % in HCT116% and 89% in SW480 cells (Figure 7A). Ectopic expression of EPSTI1 in these cells restored the N-cadherin mRNA expression to levels observed in control SW480 cells, while in HCT116 KSR1 KO, forced EPSTI1 expression increased N-cadherin mRNA levels threefold above that seen in control HCT116 cells (Figure 7A). We tested the effect of ectopic expression of EPSTI1 on invasion in non-transformed HCECs. We stably expressed MSCV-IRES-GFP or MSCV-IRES-EPSTI1-GFP in HCECs and subjected the cells to Transwell invasion assay through Matrigel (Figure 7B, top), and observed that EPSTI1 alone was sufficient to dramatically induce the expression of N-cadherin and double the invasive activity of HCECs (Figure 7B). These data indicate that EPSTI1 mediates the expression of N-cadherin to promote invasive behavior in non-transformed colon epithelial cells and colon cancer cells.
 
@@ -112,15 +140,294 @@ Upon removal of KSR1 or EPSTI1, the tumor cells switch back from highly migrator
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Colorectal carcinoma, epithelial</td>
+      <td>ATCC</td>
+      <td>HCT116 (ATCC, Cat# CCL-247, RRID: CVCL_0291)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Colorectal carcinoma, epithelial</td>
+      <td>ATCC</td>
+      <td>HCT15 (ATCC, Cat# CCL-225, RRID: CVCL_0292)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Colorectal adenocarcinoma, epithelial</td>
+      <td>ATCC</td>
+      <td>SW480 (ATCC, Cat# CCL-228, RRID: CVCL_0546)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Immortalized colon epithelial</td>
+      <td>Obtained from Dr. Jerry Shay</td>
+      <td>HCEC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Kidney; epithelial fibroblast (fetus)</td>
+      <td>ATCC</td>
+      <td>HEK-293T (ATCC Cat# CRL-3216, RRID: CVCL_0063)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Kidney; epithelial fibroblast (fetus)</td>
+      <td>Obtained from Rob Kortum</td>
+      <td>Phoenix-GP</td>
+      <td>Available at ATCC (Cat# CRL-321)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA to non-targeting control</td>
+      <td>Dharmacon</td>
+      <td>Cat# D-001810-01-20</td>
+      <td>UGGUUUACAUGUCGACUAA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA to EPSTI1</td>
+      <td>Dharmacon</td>
+      <td>Cat# 015094-09-0020</td>
+      <td>GAACAGAGCUAAACCGGUU</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA to EPSTI1</td>
+      <td>Dharmacon</td>
+      <td>Cat# 015094-12-0020</td>
+      <td>UCUGGAGGCUGUUGGAAUA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Con shRNA#1</td>
+      <td>Fisher et al., 2015</td>
+      <td>pLKO.1 MC1 puro</td>
+      <td>CAACAAGATGAAGAGCACCAA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>KSR1 shRNA#1</td>
+      <td>Fisher et al., 2015</td>
+      <td>pLKO.1 KSR.1 puro</td>
+      <td>GTGCCAGAAGAGCATGATTTT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>KSR1 shRNA#2</td>
+      <td>Fisher et al., 2015</td>
+      <td>pLKO.1 KSR.2 puro</td>
+      <td>GCTGTTCAAGAAAGAGGTGAT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>CON sgRNA#1</td>
+      <td>This paper</td>
+      <td>pCAG-SpCas9-GFP-U6-gNC1</td>
+      <td>GTATTACTGATATTGGTGGG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>KSR1 sgRNA#1</td>
+      <td>This paper</td>
+      <td>pCAG-SpCas9-GFP-U6-gCR1.1</td>
+      <td>GTGCCAGAAGAGCATGATTTT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>KSR1 sgRNA#2</td>
+      <td>This paper</td>
+      <td>pCAG-SpCas9-GFP-U6-gCR1.2</td>
+      <td>GTGCCAGAAGAGCATGATTTT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-KSR1 (plasmid)</td>
+      <td>Fisher et al., 2015</td>
+      <td>MSCV-KSR1-IRES-GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-EPSTI1 (plasmid)</td>
+      <td>This paper</td>
+      <td>MSCV-FLAG-EPSTI1-IRES-GFP</td>
+      <td>MGC Human EPSTI1 Sequence-Verified cDNA (Cat# MHS6278-202832484) cloned into MSCV-IRES-GFP construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>N-cad OE (plasmid)</td>
+      <td>Gift from Dr. Keith Johnson</td>
+      <td>N-cadherin-mGFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EPSTI1 (PCR primer)</td>
+      <td>IDT</td>
+      <td>Cat# Hs.PT.58.50471678</td>
+      <td>Forward primer 5’-GTGAATTACTGGAACTGAAACGG-3’Reverse primer 5’ TCCAACAGCCTCCAGATTG 3’ Tm 55 °C, Exon Location 10–11</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>N-cadherin (PCR primer)</td>
+      <td>IDT</td>
+      <td>Cat# Hs.PT.58.26024443</td>
+      <td>Forward primer 5’-GTTTGCCAGTGTGACTCCA-3’Reverse primer 5’-CATACCACAAACATCAGCACAAG-3’Tm 55 °C, Exon Location 13–14</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HPRT1 (PCR primer)</td>
+      <td>IDT</td>
+      <td>Cat# Hs.PT.58v.45621572</td>
+      <td>Forward Primer: 5’ GTATTCATTATAGTCAAGGGCATATCC 3’Reverse Primer: 5’AGATGGTCAAGGTCGCAAG 3’Tm 60 °C, Exon Location 8–9</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZEB1 (PCR primer)</td>
+      <td>IDT</td>
+      <td>Cat# Hs.PT.58.39178574</td>
+      <td>Forward primer 5’-GAGGAGCAGTGAAAGAGAAGG-3’Reverse primer 5’-TACTGTACATCCTGCTTCATCTG-3’Tm 60 °C, Exon Location 3–5</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SLUG (PCR primer)</td>
+      <td>IDT</td>
+      <td>Cat# Hs.PT.58.50471678</td>
+      <td>Forward primer 5’-AGGACACATTAGAACTCACACG-3’Reverse primer 5’-CAGATGAGCCCTCAGATTTGAC-3’Tm 55 °C, Exon Location 2–3</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KSR1, Rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab68483</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EPSTI1, Rabbit polyclonal</td>
+      <td>Proteintech</td>
+      <td>Cat# 11627–1-AP, RRID: AB_2877786</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td rowspan="2">Anti-N-cadherin</td>
+      <td>Gift from Dr. Keith Johnson</td>
+      <td>Cat# 13A9</td>
+      <td>WB (1:20)</td>
+    </tr>
+    <tr>
+      <td>Cell Signaling</td>
+      <td>Cat# 13116, RRID: AB_2687616</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td rowspan="2">Anti-E-cadherin</td>
+      <td>Gift from Dr. Keith Johnson</td>
+      <td>Cat# 4A2</td>
+      <td>WB (1:10) IF (1:1)</td>
+    </tr>
+    <tr>
+      <td>Cell Signaling</td>
+      <td>Cat# 3195, RRID: AB_2291471</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Slug, Rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9585, RRID:AB_2239535</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lamin β2, Rabbit monoclonal</td>
+      <td>Abclonal</td>
+      <td>Cat# A6483, RRID: AB_2767083</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β actin, Mouse monoclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat# 47778, RRID:AB_2714189</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho RSK S380, Rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9341, RRID: AB_330753</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Total RSK, Rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9355, RRID: AB_659900</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho p70S6K T389, Rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9206 RRID: AB_2285392</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-total p70S6K, Rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9202, RRID: AB_331676</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SNAIL, Rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3879, RRID: AB_2255011</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vimentin, Rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5741, RRID:AB_10695459</td>
+      <td>WB (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Colorectal cancer cell lines HCT116, HCT15, and SW480 were acquired from American Type Culture Collection (ATCC). The cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) containing high glucose with 10 % fetal bovine serum (FBS) and grown at 37 °C with ambient O2 and 5 % CO2. Cells were routinely tested for mycoplasma. No further authentication of cell lines was performed by the authors. Non-transformed immortalized human colon epithelial cell line (HCEC) was a gift from J. Shay (University of Texas [UT] Southwestern) and were grown and maintained as described previously (Fisher et al., 2015; Roig et al., 2010). HCECs were grown in a hypoxia chamber with 2% O2 and 5% CO2 at 37°C in four parts DMEM to 1 part medium 199 (Sigma-Aldrich #M4530) with 2% cosmic calf serum (GE Healthcare, #SH30087.03), 25 ng/mL EGF (R&D, Minneapolis, MN #236-EG), 1 µg/mL hydrocortisone (Sigma-Aldrich, #H0888), 10 µg/mL insulin (Sigma-Aldrich, #I550), 2 µg/mL transferrin (Sigma-Aldrich, #T1428), 5 nM sodium selenite (Sigma-Aldrich #S5261), and 50 µg/mL gentamicin sulfate (Gibco #15750–060) as described previously (Fisher et al., 2015). Normal and quadruple mutant AKPS (APC KO/KRASG12D/P53 KO/SMAD4KO) tumor colon organoids obtained from the Living Organoid Biobank housed by Dr. Hans Clevers and cultured as described previously (Drost et al., 2015; van de Wetering et al., 2015). The normal organoids were cultured in medium containing advanced DMEM/F12 (Invitrogen #12634) with 50 % WNT conditioned media (produced using stably transfected L cells), 20 % R-spondin1, 10 % Noggin, 1 X B27 (Invitrogen #17504–044), 10 mM nicotinamide (Sigma-Aldrich #N0636), 1.25 mM N-acetylcysteine (Sigma-Aldrich #A9165-5G), 50 ng/mL EGF (Invitrogen #PMG8043), 5000 nM TGF-b type I receptor inhibitor A83-01 (Tocris #2939), 10 nM Prostaglandin E2 (Tocris #2296), 3 µM p38 inhibitor SB202190 (Sigma-Aldrich #S7067), and 100 µg/mL Primocin (Invivogen #ant-pm-1). The quadruple mutant AKPS organoids were grown in media lacking WNT conditioned media, R-spondin 1, noggin and EGF and containing 10 µM nutlin-3 (Sigma #675576-98-4).
 
-## RNA interference
+### RNA interference
 
 Approximately 500,000 cells were transfected using a final concentration of 20 nM EPSTI1 (J-015094-09-0020 and J-015094-12-0020) or non-targeting (D-001810-01-20 and D-001810-02-20) ON-TARGETplus siRNAs from GE Healthcare Dharmacon using 20 µL of Lipofectamine RNAiMAX (ThermoFisher #13778–150) and 500 µL OptiMEM (ThermoFisher #31985070). Cells were incubated for 72 hr before further analysis.
 
-## Generation of KSR1 shRNA knockdown and KSR1 CRISPR/Cas9 knockout cell lines
+### Generation of KSR1 shRNA knockdown and KSR1 CRISPR/Cas9 knockout cell lines
 
 A lentiviral pLKO.1-puro constructs targeting KSR1, and non-targeting control were transfected into HEK-293T cells using trans-lentiviral packaging system (ThermoFisher Scientific). The virus was collected, and the medium was replaced 48 hr post transfection. HCT116 and HCT15 cells were infected with virus with 8 µg/mL of Polybrene for several days. The population of cells with depleted KSR1 was selected with 10 µg/mL puromycin. The KSR1 knockdown was confirmed via western blotting.
 
@@ -128,50 +435,50 @@ pCAG-SpCas9-GFP-U6-gRNA was a gift from Jizhong Zou (Addgene plasmid #79144), KS
 
 MSCV-IRES-GFP, MSCV-IRES-KSR1-GFP, MSCV-IRES-FLAG-EPSTI1, and N-cadherin mGFP constructs were transfected into Phoenix GP cells using trans-lentiviral packaging system (ThermoFisher Scientific). The virus was collected, and the medium was replaced 48 hours post transfection. HCECs/ KSR1-CRISPR HCT116, HCT15, and SW480 cells were infected with virus with 8 µg/mL of Polybrene for 96 hours. The population of cells with KSR1 expression was selected following GFP sorting using fluorescence-activated cell sorting (FACS). The KSR1/EPSTI1 expression was confirmed via western blotting.
 
-## Cell lysis and western blot analysis
+### Cell lysis and western blot analysis
 
 Whole cell lysate was extracted in radioimmunoprecipitation assay (RIPA) buffer containing 50 mM Tris-HCl, 1% NP-40, 0.5 % Na deoxycholate, 0.1 % Na dodecyl sulfate, 150 mM NaCl, 2 mM EDTA, 2 mM EGTA, and 1 X protease and phosphatase inhibitor cocktail (Halt, ThermoFisher Scientific #78440). Cytoplasmic and nuclear fractionation was performed using NE-PER Nuclear and Cytoplasmic Extraction Reagents (ThermoFisher Scientific #PI78835). The estimation of protein concentration was done using BCA protein assay (Promega #PI-23222, PI-23224). Samples were diluted using 1 X sample buffer (4 X stock, LI-COR #928–40004) with 100 mM dithiothreitol (DTT) (10 X stock, 1 mM, Sigma #D9779-5G). The protein was separated using 8–12% SDS-PAGE and transferred to nitrocellulose membrane. The membrane was blocked with Odyssey TBS blocking buffer (LICOR-Biosciences #927–50003) for 45 min at room temperature, then incubated with primary antibodies (Key Resources Table) at least overnight at 4°C. IRDye 800CW and 680RD secondary antibodies (LI-COR Biosciences # 926–32211, # 926–68072) were diluted 1:10,000 in 0.1% TBS-Tween and imaged on the Odyssey Classic Scanner (LI-COR Biosciences).
 
-## Polysome profiling
+### Polysome profiling
 
 Cells were treated with 100 µg/mL cycloheximide (Sigma #C4859) on ice in PBS for 10 min. The cells were lysed with 10 mM HEPES, 100 mM KCL, 5 mM MgCl2, 100 µg/mL cycloheximide, 2 mM DTT, 1 % Triton-X100, 2.5 µl RNaseOUT (ThermoFisher Scientific #10777019). The lysates were cleared by centrifugation for 10 min at 13,200 rpm at 4°C. Approximately 200 µL of the total RNA was collected in a new RNAse-free microcentrifuge tube and the remaining supernatant was loaded onto a 15–45% sucrose gradient. The samples were spun at 37,500 rpm for 2 hr at 4°C in SW55Ti Beckman ultracentrifuge and separated on a gradient fractionation system to resolve the polysomes. Polysome profiles were identified at 260 nM using an absorbance detector. Gradient fractions were collected dropwise at 0.75 mL/min. For RNAseq, the total RNA and RNA pooled from the polysome fraction (fractions 6–9) of three sets of independently isolated cells was isolated using RNAzol (Molecular Research Centre #RN 190) according to the manufacture’s protocol. RNA purity was evaluated by the UNMC DNA Sequencing Core using a BioAnalyzer.
 
-## RNA-sequencing and analysis
+### RNA-sequencing and analysis
 
 RNA sequencing (RNA seq) was conducted by the UNMC DNA Sequencing Core. For RNA-seq, RNA was purified from three biological replicates of total and polysome-bound RNA from HCT116 and HCT15, control and KSR1 knockdown cells as previously described. Stranded RNA sequencing libraries were prepared as per manufactures’ protocol using TrueSeq mRNA protocol kit (Illumina) and 500 ng of the total RNA was used for each of the samples. Purified libraries were pooled at a 0.9 pM concentration and sequenced on an Illumina NextSeq550 instrument, using a 75 SR High-output flow cell, to obtain approximately 45 million single-end reads per sample. NGS short reads from RNA-seq experiments was downloaded from the HiSeq2500 server in FASTQ format. FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) was used to perform quality control checks on the fastq files that contain the raw short reads from sequencing. The reads were then mapped to the Homo sapiens (human) reference genome assembly GRCh38 (hg38) using STAR v2.7 alignment. The --quantMode GeneCounts option in STAR 2.7 (Dobin et al., 2013) was used to obtain the HTSeq counts per gene. Gencode v32 Gene Transfer Format (GTF) was used for the transcript/gene annotations. The output files were combined into a matrix using R. The gene counts were further used as input for downstream analysis using Anota2seq. The high-throughput sequencing data have been deposited in the Gene Expression Omnibus (GEO) database, http://www.ncbi.nlm.nih.gov/geo (accession no. GSE164492).
 
-## Translational efficiency
+### Translational efficiency
 
 The altered levels of total mRNA can impact the changes in the pool of polysome-bound mRNA, leading to a spurious calculation translational efficiency (TE). Anota2seq (Oertlin et al., 2019) allows the quantification of actual changes in TE. TE was calculated using the R Bioconductor anota2Seq package for the HTSeq counts by first removing genes that did not contain expression values in more than 10% of the samples. 16,023 genes remained after this step. TMM normalization was further performed prior to log2 counts per million computation (CPM) using the voom function of the limma package using the anota2seqDataSetFromMatrix function (with parameters datatype = “RNAseq”, normalize = TRUE, transformation = “TMM-log2”). TE was calculated using the 2 × 2 factorial design model for the two cell lines (HCT116 and HCT15). Genes were considered significantly regulated at Adjusted p-value < 0.05 when passing filtering criteria (parameters for anota2seqSelSigGenes function) using Random variance Model [useRVM = TRUE], [selDeltaPT > log2(1.2)], [minSlopeTranslation >−1], [maxSlopeTranslation <2], [selDeltaTP> log2(1.2)], [minSlopeBuffering >−2] and [maxSlopeBuffering <1], [selDeltaP> log2 (1)], [selDetaT > log2 (1)]. The scatterplots were obtained using the anota2seqPlotFC function. The heatmaps were generated using the TE values for the two cell lines using the R Bioconductor ComplexHeatmap package.
 
-## Anchorage-independent growth [poly-(HEMA)] assay
+### Anchorage-independent growth [poly-(HEMA)] assay
 
 Poly-(HEMA) stock solution (10 mg/mL) was prepared by dissolving poly-(HEMA) (Sigma #3932–25 G) in 95% ethanol at 37°C until fully dissolved (overnight). Ninety-six-well optical bottom plates (Thermo Scientific Nunc #165305) were coated in 200 µL of poly-(HEMA) solution and allowing it to evaporate. Cells were plated in complete growth medium of the poly-(HEMA) coated plates at a concentration of 10,000 cells/ 100 µL. Cell viability was measured at the indicated time points by the addition of CellTiter-Glo 2.0 reagent (Promega #G9242) and luminescence was measured (POLARstar Optima plate reader) according to the manufacturer’s protocol.
 
-## Anchorage-independent growth (soft agar) assay
+### Anchorage-independent growth (soft agar) assay
 
 A total of 6000 cells were seeded in 1.6 % NuSieve Agarose (Lonza #50081) to assess anchorage-independent growth according to the protocol of Fisher et al., 2015. Colonies greater than 100 µm in diameter from six replicates per sample were counted, representative photomicrographs were taken after 10–14 days of incubation at 37°C and 5 % CO2.
 
-## RT-qPCR
+### RT-qPCR
 
 Cells were harvested using 1 mL TRIzol (ThermoFisher Scientific #15596026) and RNA extraction was performed using RNeasy spin columns (Qiagen #74104). RNA was eluted with nuclease-free water. The RNA was quantified using a NanoDrop 2000 (Thermo Scientific) and Reverse Transcription (RT) was performed with 2 µg RNA per 40 µl reaction mixture using iScript Reverse Transcription Supermix (Bio-Rad #170–8891). RT-qPCR was performed using primers antibodies (Key Resources Table), and all targets were amplified using SsoAdvanced Universal SYBR green Supermix (Bio-Rad #1725271) with 40 cycles on a QuantStudio 3 (ThermoFisher Scientific). The analysis was performed using 2-ΔΔCT method (Schmittgen and Livak, 2008). For polysome gradients, the RNA levels were quantified from the cDNA using the standard curve method, summed across all fractions (Kortum and Lewis, 2004; Nguyen et al., 2002; Fisher et al., 2011; Fisher et al., 2015; Morrison et al., 2009; Rao et al., 2020) and presented as a percentage of the total fractions.
 
-## Cell migration (scratch-test) assay
+### Cell migration (scratch-test) assay
 
 An in vitro scratch test was performed with the IncuCyte Zoom according to the manufacturer’s instructions. Approximately 35,000 cells were seeded onto a 96-well ImageLock plates (Essen BioScience #4379) and grown to 90–95% confluency. The scratches were created using WoundMaker (Essen BioScience #4563) in all the wells, after which the cells were washed with 1 x PBS, and media without containing serum was replaced. Images of the cells were obtained every 20 min for a total duration of 72 hr using IncuCyte Kinetic Live Cell Imaging System (Essen BioScience) and analyzed using the IncuCyte Zoom software (Essen BioScience). IncuCyte Software was used to calculate the relative wound density metric to quantify the cell migration over time. The metric is designed to be zero at t = 0% and 100% when cell density inside the wound is the same as the cell density outside the initial wound, thus, allowing to experimentally quantify the effects of cell migration separate from changes that occurs as result of cell proliferation.
 
-## Cell invasion (transwell) assay
+### Cell invasion (transwell) assay
 
 Transwell inserts (24-well Millicell cell culture, #MCEP24H48) were coated with 50 µL of Matrigel (Corning, # 356234) and allowed to solidify for 15–30 min. Approximately 20,000 stably generated knockout cells, or cells after 48 hr of transfection were plated in serum free media in the upper chamber of transwell insert. Cells were allowed to invade toward 10% serum containing media in the lower chamber for 24 hr, after which cells and gel in the upper chamber was gently removed with a sterile cotton applicator and the cells in the lower side of the insert was fixed with 3.7% formaldehyde for 2 min, permeabilized with 100% methanol for 20 min and stained with Giemsa for 15 min. The numbers of cells were counted using an inverted microscope at ×20 magnification.
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 Cells were plated on glass coverslips to 70–80% confluence for 48 hr in growth media. Cells were fixed in 1 % formaldehyde diluted in PBS for 15 min. The cells were rinsed three times with PBS for 5 min and coverslips were blocked for 1 hr with 1 X PBS/ 5% goat serum/0.3% Triton X-100 and then incubated with E-cadherin antibody (#4A2) overnight. Cells were washed three times for 5 min with PBS and incubated in anti-mouse IgG Alexa Fluor 555 Conjugate (Cell signaling #4409) at a dilution of 1:500 for 1 hr. Coverslips were rinsed three times for 5 min in PBS and briefly rinsed in distilled water prior to mounting in Prolong Gold Antifade Reagent with DAPI (Cell signaling #8961). All Images were acquired using a Zeiss LSM-780 confocal microscope and processed using ZEISS ZEN 3.2 (blue edition) software.
 
-## Cell growth assay
+### Cell growth assay
 
 Cells were transfected with siRNA targeting EPSTI1 or a non-targeting control as previously described. The next day, control, KSR1-CRISPR, KSR1-CRISPR HCT116 and SW480 cells expressing KSR1 or EPSTI1, siControl and siEPSTI1 HCT116 and SW480 cells were counted and approximately 1 × 104 cells were plated in all wells of a 12-well plate for each condition. The next day, four of the wells from each 12-well plate were harvested and stained with 0.4% trypan blue (Sigma, # T6146-5G) and were then counted and recorded using Countess II automated cell counter (ThermoFisher, #A27977). This procedure was repeated for indicated days and the cells from day 7 were harvested and a western blot analysis was performed to ensure the expression of the target protein was maintained. Cell counts were then graphed in GraphPad.
 
-## Reagents
+### Reagents
 
 The ERK inhibitor SCH772984 was purchased from SelleckChem (S7101), Z-Leu-Leu-Leu-al (MG132, S2619) were purchased from Fisher and mTOR inhibitor AZD8055 (HY_10422) MedChem Express.

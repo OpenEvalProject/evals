@@ -94,29 +94,29 @@ In conclusion, the data of the present study indicate that saccade suppression i
 
 ## Materials and methods
 
-## Apparatus
+### Apparatus
 
 Subjects were seated 45 cm from a Eizo FlexScan T57S with the head stabilized by a forehead rest. The visible screen diagonal was 20 in., resulting in a visual field of 40 dva × 30 dva. Stimuli were presented on the monitor with a vertical frequency of 120 Hz on a homogeneous gray background.
 
-## Participants
+### Participants
 
 Four subjects participated in the context-selectivity experiment (2 female, 2 male, mean age: 28; 3 naive to the purpose of each condition and the author), five subjects in Experiment 2 (3 female, 2 male, mean age: 29; 4 different subjects than in Experiment 1 and naive to the purpose of each condition and the author) and five subjects in Experiment 3 (4 female, 1 male, mean age: 29; 3 different subjects than in Experiment 1 and naive to the purpose of each condition, one subject that already participated in Experiment 2 and the author). All subjects had normal or corrected-to-normal vision. Experimental procedures were approved the local ethics committee of the psychological department of the Heinrich- Heine University Düsseldorf. Written informed consent was obtained prior to each experiment in accordance with the declaration of Helsinki.
 
-## Eye movement recording
+### Eye movement recording
 
 Eye movements were monitored by the EyeLink 1000 system (SR Research), which samples gaze positions with a frequency of 1000 Hz. Viewing was binocular, but only the dominant eye was recorded. A standard 9 point calibration was performed at the beginning of each block of trials. The system detected the start and the end of a saccade when eye velocity exceeded or fell below 22 dva/s and acceleration was above or below 4000 dva/s2 respectively.
 
-## Timing of stimulus presentation
+### Timing of stimulus presentation
 
 In order to test the exact time of stimulus presentation on the screen, I used a photodiode that was connected to an electronic circuit and sent a TTL impulse to the parallel port of the eyelink PC for every luminance change on the screen. A lowpass filter prohibited that the luminance change at the time of the screen refresh entered into signal recording. This measuring device was custom built with electronic parts. The delay of the device itself was measured by an oscilloscope and found to operate in the nanosecond range. Thus, the measuring device plus the recording in the eyelink PC should not have added any detectable delay. In the analysis, I compared the timestamp of the message that my stimulus program sent to the Eyelink PC against the timestamp of the TTL impulse sent by the measuring device. With the setup that I used this display lag was measured to be on average 4.35 ms (S.E.M. 0.29). Therefore, I added 4.35 ms to all data in the analysis.
 
-## Trial structure and data analysis
+### Trial structure and data analysis
 
 In all experiments, a session contained 385 trials. Experiment 1 consisted of 5 different types of session. Four of these sessions each contained context trials in which motion was displayed relative to the saccade (grating moved 35/98/187 ms after saccade onset) or no motion was displayed (grating remained stationary). Importantly, in one session only one type of context trials was presented. The fifth type of sessions were baseline sessions which did not contain context trials. In order to obtain sufficient data for the estimation of the suppression curve, participants repeated sessions of each context type several times (context 35 ms: 8 (S.E. 1.96), context 98 ms: 6 (S.E. 1.22), context 187 ms: 6.5 (S.E. 0.96), context no motion: 4 (S.E. 0.91), baseline: 7.75 (S.E. 0.75)). The order in which participants completed these sessions was randomized. The required saccade distance in each trial of all experiments was 20 dva. Trials in which saccade amplitudes were shorter than 10 dva were excluded from analysis.
 
 For statistical analysis of Experiments 2 and 3, a non-parametric repeated measures ANOVA was calculated, using the Aligned Rank Transform (Wobbrock et al., 2011). Significance was determined by applying the Kenward-Roger approximation to estimate p-values, a procedure that has been shown to produce acceptable Type 1 error rates even for smaller samples (Luke, 2017).
 
-## Procedure
+### Procedure
 
 All experiments were carried out in a complete dark environment. To avoid visibility of the screen borders, the display was covered with a transparent foil that reduced the luminance by about 2 log units. Each experimental session, except baseline sessions, contained context trials and test trials (see Figure 1E). Context sessions began with 105 context trials. After these, 5 test trials alternated with 5 context trials until the end of the session, containing 385 trials in total.
 

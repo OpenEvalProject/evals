@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/026stee22 Department of Collective Behaviour, Max Planck Institute of Animal Behavior Konstanz Germany
-2. https://ror.org/0546hnb39 Zukunftskolleg, University of Konstanz Konstanz Germany
-3. https://ror.org/03abrgd14 Centre for Ecological Research and Forestry Applications (CREAF) Barcelona Spain
-4. https://ror.org/00hx57361 Department of Ecology and Evolutionary Biology, Princeton University Princeton United States
-5. https://ror.org/0384j8v12 School of Life and Environmental Sciences, University of Sydney Sydney Australia
-6. https://ror.org/00b30xv10 Department of Biology, University of Pennsylvania Philadelphia United States
-7. https://ror.org/00cvxb145 eScience Institute, University of Washington Seattle United States
-8. https://ror.org/00cvxb145 Center for an Informed Public, University of Washington Seattle United States
-9. https://ror.org/0546hnb39 Department of Biology, University of Konstanz Konstanz Germany
-10. https://ror.org/0546hnb39 Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany
+1. Department of Collective Behaviour, Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+2. Zukunftskolleg, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+3. Centre for Ecological Research and Forestry Applications (CREAF) Barcelona Spain ([ROR:03abrgd14](https://ror.org/03abrgd14))
+4. Department of Ecology and Evolutionary Biology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+5. School of Life and Environmental Sciences, University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+6. Department of Biology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+7. eScience Institute, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+8. Center for an Informed Public, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+9. Department of Biology, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+10. Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
 
 † Corresponding author
 
@@ -45,29 +45,140 @@ To advance our understanding of differential predation risk in animal groups, we
 
 **Figure 1.:** Cropped image from a sample video trial moments before the attack with key tracking data overlaid. Shiners are coloured yellow to blue based on their distance from the group centroid. Red target indicates the targeted individual, black concentric circles the group centroid, and the dark grey line the automatically determined school boundary based on hierarchical clustering. Rays (white) represent a visualization of the pike’s field of view. Inlay figure presents detailed temporal data of the attack relative to strike initiation, with shiners positioned relative to the pike (black arrows) at the origin facing north.
 
+**Table 1.**
+ Description of features used in our multi-model inference approach for predicting which individuals were targeted and survived attacks.For a visualisation of the features, see Figure 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Acronym</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body length</td>
+      <td>BL</td>
+      <td>Shiner’s body length (cm)</td>
+    </tr>
+    <tr>
+      <td>Centre distance</td>
+      <td>CD</td>
+      <td>Shiner’s distance from the group centroid (cm)</td>
+    </tr>
+    <tr>
+      <td>Centre-edge position</td>
+      <td>CDrank</td>
+      <td>Shiner’s CD ranked and scaled from 0 (most central) to 1 (least central)</td>
+    </tr>
+    <tr>
+      <td>Convex hull position</td>
+      <td>Hpos</td>
+      <td>Whether a shiner was part of the group hull or not</td>
+    </tr>
+    <tr>
+      <td>Inter-individual distance</td>
+      <td>IID</td>
+      <td>Shiner’s median distance to all of its group mates</td>
+    </tr>
+    <tr>
+      <td>Local misalignment</td>
+      <td>LMis</td>
+      <td>Difference in orientation angle (in degrees) between the shiner and its group mates within 10 cm</td>
+    </tr>
+    <tr>
+      <td>Voronoi area</td>
+      <td>VA</td>
+      <td>Area (cm2) around a shiner closest to that individual and not another individual, limited to the boundaries of the testing arena (log-transformed)</td>
+    </tr>
+    <tr>
+      <td>Limited domain of danger</td>
+      <td>LDOD</td>
+      <td>VA limited to a max radius of 10 cm from the shiner (log-transformed)</td>
+    </tr>
+    <tr>
+      <td>Front-back centre distance</td>
+      <td>FBCD</td>
+      <td>Shiners’ distance from the group centroid in the plane of the group average orientation (positive values indicate in front of the centroid)</td>
+    </tr>
+    <tr>
+      <td>Front-back position</td>
+      <td>FBrank</td>
+      <td>Shiners’ FBCD ranked and scaled from 1 (front) to 0 (back)</td>
+    </tr>
+    <tr>
+      <td>Visual weighted degree</td>
+      <td>WDeg</td>
+      <td>The proportion of each shiner’s vision occupied by conspecifics</td>
+    </tr>
+    <tr>
+      <td>Distance to the pike</td>
+      <td>PD</td>
+      <td>Shiner’s distance to the head centroid of the pike (cm)</td>
+    </tr>
+    <tr>
+      <td>Angle to the pike</td>
+      <td>PA</td>
+      <td>Shiner’s position relative to the pike facing north (degrees), 0° being straight in front and 180° directly behind</td>
+    </tr>
+    <tr>
+      <td>Orientation to the pike</td>
+      <td>PO</td>
+      <td>The relative orientation (head to tail angle) of the shiner to that of the pike</td>
+    </tr>
+    <tr>
+      <td>Pike vision of shiner</td>
+      <td>PVS</td>
+      <td>Pike’s field of view occupied by the individual shiner (deg)</td>
+    </tr>
+    <tr>
+      <td>Target max speed</td>
+      <td>TMS</td>
+      <td>Targeted shiner’s maximum speed (cm/s) (smoothed data)</td>
+    </tr>
+    <tr>
+      <td>Target max acceleration</td>
+      <td>TMA</td>
+      <td>Targeted shiner’s maximum acceleration (m/s2) (smoothed data)</td>
+    </tr>
+    <tr>
+      <td>Target max turn</td>
+      <td>TMT</td>
+      <td>Targeted shiner’s maximum orientation change (deg) in the 0.5 s until the time of attack</td>
+    </tr>
+    <tr>
+      <td>Pike max acceleration</td>
+      <td>PMA</td>
+      <td>Pike’s maximum acceleration (m/s2) (smoothed data)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## How do pike attack groups of prey?
+### How do pike attack groups of prey?
 
-The pikes’ predatory movements typically began with an orientation phase in which they slowly turned their long body axis towards the schooling prey, followed by a stealthy approach (69% of attacks the pike moved steadily at <0.5 BL/s) during which on average only 5% of shiners turned away (>90°). After getting into position, the pike adopted an S-shaped body posture (see Appendix 1—figure 1) to get ready for the actual attack – the strike – one sharp, sudden burst of movement (Figure 2A). By curving their body, the pike were able to generate a very rapid increase in kinetic energy (see further Domenici and Blake, 1997; Webb and Skadsen, 1980) and within a couple milliseconds attain a forward acceleration of 26.7±0.7 m/s2 (mean ± SE), reaching speeds of 122.7±3.6 cm/s, almost 1.5 x higher than the escape speed of the prey they targeted (84.1±2.7 cm/s; χ2 = 104.7, p<0.001; Figure 2B; reported values based on smoothed data). Due to its abrupt nature, we could automatically determine the exact moment of strike initiation at <0.01 s resolution (see Appendix 1), defined as the ‘time of attack’, and thus could investigate the individual and collective behaviour of the prey and predator in relation to this exact moment of the attack.
+The pikes’ predatory movements typically began with an orientation phase in which they slowly turned their long body axis towards the schooling prey, followed by a stealthy approach (69% of attacks the pike moved steadily at <0.5 BL/s) during which on average only 5% of shiners turned away (>90°). After getting into position, the pike adopted an S-shaped body posture (see Appendix 1—figure 1) to get ready for the actual attack – the strike – one sharp, sudden burst of movement (Figure 2A). By curving their body, the pike were able to generate a very rapid increase in kinetic energy (see further Domenici and Blake, 1997; Webb and Skadsen, 1980) and within a couple milliseconds attain a forward acceleration of 26.7±0.7 m/s2 (mean ± SE), reaching speeds of 122.7±3.6 cm/s, almost 1.5 x higher than the escape speed of the prey they targeted (84.1±2.7 cm/s; $χ^{2}$ = 104.7, p<0.001; Figure 2B; reported values based on smoothed data). Due to its abrupt nature, we could automatically determine the exact moment of strike initiation at <0.01 s resolution (see Appendix 1), defined as the ‘time of attack’, and thus could investigate the individual and collective behaviour of the prey and predator in relation to this exact moment of the attack.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76344/elife-76344-fig2-v2.jpg)
 
 **Figure 2.:** (A) Pike attack trajectories that successfully resulted in prey capture (n=88). Data are shown from the time of attack (strike initiation), with the predator positioned at the origin pointing north. (B) Density plots of the maximum (smoothed) speed of the pike and targeted shiners during the attack (from –0.5 s to +0.1 s relative to strike initiation). (C) Barplots of shiners’ clustering (top) and pikes’ likelihood to attack different clusters (bottom). Top bar shows if prey were found in a single cluster (yellow), one large cluster with small clusters of one or two individuals (green), or in multiple larger clusters (blue), as indicated by drawing above, while the bottom bar shows the number of attacks for each type of cluster. (D) Polar plot showing the distribution of group orientations relative to the pike pointing north, coloured blue (0°) to yellow (-/+180°). (E) Positioning of targeted prey relative to the pike, with arrow headings indicating prey orientations. (F) Histogram of pikes’ distance from the group boundary. For figure D-F, data were subsetted to attacks of the main cluster (n=117) and focus on the time of attack.
 
-## What is the collective state of the prey at the time of attack?
+### What is the collective state of the prey at the time of attack?
 
 First, we determined if the shiners were generally found in one large school or multiple smaller groups using a hierarchical clustering approach. In short, fish were automatically clustered based on their inter-individual distance. If a large discontinuity in cluster distances was found, we considered there to be multiple groups of prey, based on a predetermined threshold (see Materials and methods). We found that, by and large, the shiners were organised in one large, cohesive school at the time of attack and rarely showed fission-fusion behaviour (merging and splitting of schools) during the trials. Only occasionally there were one or two singletons besides the main school (25 attacks) or multiple clusters of more than two fish (12 attacks Figure 2C), which tended to exist relatively briefly (mean school size: 36.5±0.8). In more than 80% of these cases, pike still targeted an individual in the main cluster (Figure 2C). We therefore focused all subsequent analyses on the attacks where the pike targeted an individual in the main cluster, which comprised 94% of all attacks (n=117).
 
 In terms of the collective behaviour of the prey at the time of attack, the shiners were generally highly cohesive (mean inter-individual distance: 16.3±0.4 cm), moderately well aligned (median polarization: 0.59), and moved at a modest speed (mean: 7.7±0.6 cm/s; 90% quantile: 16.3 cm/s, based on the group centroid). Proper rotational milling was rarely observed (mean group rotation order: 0.26), a state that is more characteristic of larger shoal sizes, as observed in similarly-sized experimental arenas (Davidson et al., 2021; Tunstrøm et al., 2013).
 
-## Where do pike attack schooling prey?
+### Where do pike attack schooling prey?
 
 To quantify if pike had a tendency to approach and strike the schools from a certain direction, we computed the groups’ centroid position, orientation, and heading (i.e. movement angle) based on all the shiners in the group, and transposed these to be relative to the pike facing north (0°). This revealed that pike had a strong tendency to attack individuals by approaching the groups head-on, both in terms of the groups’ relative orientation (circular mean: 170.7°, Rayleigh’s test: mean vector = 0.28, p<0.001; Figure 2D) and direction of motion (when moving at >1.5 cm/s, n=102; circular mean: 150.6°, mean vector = 0.25, p=0.002). On average, pike launched their attack at 11.5±0.6 cm from the group centroid and only 5.3±0.2 cm from the prey they targeted (Figure 2E; 5.46±0.3 cm including attacks where the pike did not attack the main cluster). While the shiners did not show a change in their packing fraction (median nearest-neighbour distance) with repeated exposure to the pike (F1,52 = 1.81, p=0.185), they increasingly avoided the area directly in front of the pike’s head (Appendix 2—figure 1) resulting in the pike attacking from increasingly further away (target distance: F1,52 = 45.52, p<0.001, see Appendix 2—figure 1B and C).
 
 Ranking individuals front to back (and scaling 1–0), we found that, rather than attacking individuals in the front of the group, pike tended to target individuals in relatively central positions (mean position: 0.45±0.02; n=117). Excluding groups with low polarization (<0.4; n=80), where it is more difficult to determine the ‘front’, did not substantially change this effect (0.48±0.03). To investigate further if pike potentially launched some of their attacks from inside the school, we computed the smallest convex polygon that encompassed all individuals in the group and used concave approximations to create a realistic approximation of the group boundaries (see Figure 1). We found that indeed for more than half the attacks (63.2%), the pike was already partly inside the group boundary at the moment of the attack (based on the location of the head centroid; Figure 2F). To investigate if this was by the pike actively entering the group or the group moving to and around the pike we computed the groups’ relative motion to that of the pike (see Materials and methods). This revealed that for almost all attacks (92.3%) it was the pike that was responsible for most of this relative movement, with the pike moving more towards the school than the school moving towards the pike.
 
-## Which factors best predict individuals’ risk to be targeted in schooling prey?
+### Which factors best predict individuals’ risk to be targeted in schooling prey?
 
 To infer which features were the most predictive of being targeted for the individuals within the school, we used a multi-model inference approach (for details, see Appendix 3). This is a commonly used technique whereby, rather than fitting a single model, models are fitted for every possible combination of features and their support is ranked based on information criteria (Grueber et al., 2011; Harrison et al., 2018). Features’ importance can then be assessed based on their relative weight across all models, with top-performing models being given more weight (Burnham and Anderson, 2002; Johnson and Omland, 2004). This approach is not meant to provide evidence for causal relationships but helps to better understand and predict response variables from predictive features. In our models, we considered a combination of features where we had strong biological reasoning to be of potential influence (c.f. Burnham and Anderson, 2002), including those related to the spatial positioning, orientation, spacing, and visual field of both predator and prey (see Table 1 and Figure 3). Where relevant, ranked predictors, which place more attention on the relative differences between individuals, were also considered. Input variables were checked for collinearity and otherwise excluded in a step-wise manner (see Material and methods).
 
@@ -75,27 +186,27 @@ To infer which features were the most predictive of being targeted for the indiv
 
 **Figure 3.:** (A–L) Schooling shiners and pike (black) at the time of attack, with the shiners coloured based on the range of features used in our multi-model inference approach. Visualisations show data for a random representative trial and frame. An explanation of the acronyms can be found in Table 1. Note that ranked centre distance (CDrank) and front-back positioning (FBrank) are not included here but will visually resemble plots A and G. Also, for this particular example group rotation was high (0.81) and thus front-back positioning is not meaningful.
 
-## Prey-focused approach
+#### Prey-focused approach
 
-We started with a ‘prey-focused approach’ whereby we ran multi-model inference using logistic regression considering all individuals in the school as potential prey and excluded any features regarding the predator, thus considering the predator as an abstract source of risk, in line with much previous work (for further details about the models, see Appendix 3). Of the 11 features considered, three key predictive features emerged based on their overall weights (Figure 4A) as well as being in the top model (Appendix 3—figure 1A) (i) shiner’s ranked centre-to-edge position, (ii) shiner’s misalignment to surrounding neighbours (within a 10 cm radius), and (iii) the size of shiner’s limited domain of danger, the area around a shiner closest to that individual and not another individual, limited to a radius containing on average 25% of the other group members. In contrast to the widely held assumption that predation risk is lowest in the group centre, we found that prey near the centre were more than twice as likely to be targeted than those near the edge of the group (scaled rank 0–1; estimate: –1.69±0.37; LRT: χ2 = 20.38, p<0.001; Figure 4B). Multi-model inference also revealed that individuals were less likely to be attacked when they showed better alignment with their neighbours (estimate: 0.014±0.004 misalignment in degrees; LRT: χ2 = 15.01, p<0.001; Figure 4D) and had a smaller limited domain of danger (LDOD), i.e. were surrounded closely by other groupmates (log area estimate: 0.41±0.12; LRT: χ2 = 12.99, p<0.001; Figure 4C). LDOD was inherently smaller for prey the closer they were to the group centre (correlation coefficient r=0.52), with considerable unexplained variance between these two features (R2=0.28). Prey’s front-back position, weighted degree (proportion of vision occupied by conspecifics), or whether they were positioned on the group edge or not were much less predictive of individual’s risk to be targeted (i.e. the features were lower ranked, Figure 4A). Excluding groups with low polarization did not change the effect of front-back positioning (see Appendix 3).
+We started with a ‘prey-focused approach’ whereby we ran multi-model inference using logistic regression considering all individuals in the school as potential prey and excluded any features regarding the predator, thus considering the predator as an abstract source of risk, in line with much previous work (for further details about the models, see Appendix 3). Of the 11 features considered, three key predictive features emerged based on their overall weights (Figure 4A) as well as being in the top model (Appendix 3—figure 1A) (i) shiner’s ranked centre-to-edge position, (ii) shiner’s misalignment to surrounding neighbours (within a 10 cm radius), and (iii) the size of shiner’s limited domain of danger, the area around a shiner closest to that individual and not another individual, limited to a radius containing on average 25% of the other group members. In contrast to the widely held assumption that predation risk is lowest in the group centre, we found that prey near the centre were more than twice as likely to be targeted than those near the edge of the group (scaled rank 0–1; estimate: –1.69±0.37; LRT: $χ^{2}$ = 20.38, p<0.001; Figure 4B). Multi-model inference also revealed that individuals were less likely to be attacked when they showed better alignment with their neighbours (estimate: 0.014±0.004 misalignment in degrees; LRT: $χ^{2}$ = 15.01, p<0.001; Figure 4D) and had a smaller limited domain of danger (LDOD), i.e. were surrounded closely by other groupmates (log area estimate: 0.41±0.12; LRT: $χ^{2}$ = 12.99, p<0.001; Figure 4C). LDOD was inherently smaller for prey the closer they were to the group centre (correlation coefficient r=0.52), with considerable unexplained variance between these two features (R2=0.28). Prey’s front-back position, weighted degree (proportion of vision occupied by conspecifics), or whether they were positioned on the group edge or not were much less predictive of individual’s risk to be targeted (i.e. the features were lower ranked, Figure 4A). Excluding groups with low polarization did not change the effect of front-back positioning (see Appendix 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76344/elife-76344-fig4-v2.jpg)
 
 **Figure 4.:** (A) Relative feature weights based on multi-model inference ranked from highest (top) to lowest (bottom), revealing three key predictive features emerged (for acronyms, see Table 1). (B–D) Top three features affecting the probability that an individual is targeted: (B) its ranked centre-to-edge position, (C) its misalignment with nearby neighbours (within 10 cm), and (D) its limited domain of danger (log-transformed). Plots are created using predicted values from the final model (see Appendix 3—figure 1), with the envelope showing the 95% confidence intervals. Red and grey histograms are of the raw data of the targeted and non-targeted individuals respectively.
 
-## Predator-focused approach
+#### Predator-focused approach
 
-By studying predation risk from the prey’s perspective, one ignores potentially crucial information about the predator’s attack strategy and decision-making (Hirsch and Morrell, 2011; Lima, 2002; Stankowich, 2003). To account for this, we reran multi-model inference but now also considered features about the predator, including shiners’ distance, angle, and relative orientation to the pike, as well as the proportion of pike’s vision occupied by each shiner (see e.g. Figure 3L). As most predators only have a specific region that they are biologically capable of attacking, we also only considered shiners found inside the pikes’ strike zone, an area of roughly 8 cm wide and 15 cm long directly in front of the pike within which all targeted prey were positioned (Figure 2E). Using this predator-focused approach, we found as most predictive features (Figure 5A): (i) prey’s distance to the (head of) the pike (–0.514±0.054; LRT: χ2 = 146.82, p<0.001; Figure 5B), (ii) prey’s angle to the pike (–0.070±0.011; LRT: χ2 = 61.32, p<0.001; Figure 5C), and, as for the prey-focused approach, (iii) their limited domain of danger (0.675±0.137; LRT: χ2 = 26.02, p<0.001; Figure 5D). Shiners were 6 times as likely to be targeted when they were positioned within 6 cm and directly in front of the pike (-/+45°) compared to when further away or more towards the side (49.1% vs 8.2% of attacks). To investigate if pike actually tended to attack the closest prey, one of the assumptions of Hamilton’s model (Hamilton, 1971), as opposed to generally attacking prey that are near, we ranked individuals based on their distance from the pike, again considering only individuals within the domain of danger. This revealed that for 73% of attacks (86/117) the pike did indeed attack the nearest individual (ahead) and for 90% of attacks one of the three nearest individuals. Consequently, swapping the feature of absolute pike distance with ranked pike distance considerably increased the predictive power of the model (ΔBIC = –37.4), thereby resulting in LDOD to drop as a significant feature.
+By studying predation risk from the prey’s perspective, one ignores potentially crucial information about the predator’s attack strategy and decision-making (Hirsch and Morrell, 2011; Lima, 2002; Stankowich, 2003). To account for this, we reran multi-model inference but now also considered features about the predator, including shiners’ distance, angle, and relative orientation to the pike, as well as the proportion of pike’s vision occupied by each shiner (see e.g. Figure 3L). As most predators only have a specific region that they are biologically capable of attacking, we also only considered shiners found inside the pikes’ strike zone, an area of roughly 8 cm wide and 15 cm long directly in front of the pike within which all targeted prey were positioned (Figure 2E). Using this predator-focused approach, we found as most predictive features (Figure 5A): (i) prey’s distance to the (head of) the pike (–0.514±0.054; LRT: $χ^{2}$ = 146.82, p<0.001; Figure 5B), (ii) prey’s angle to the pike (–0.070±0.011; LRT: $χ^{2}$ = 61.32, p<0.001; Figure 5C), and, as for the prey-focused approach, (iii) their limited domain of danger (0.675±0.137; LRT: $χ^{2}$ = 26.02, p<0.001; Figure 5D). Shiners were 6 times as likely to be targeted when they were positioned within 6 cm and directly in front of the pike (-/+45°) compared to when further away or more towards the side (49.1% vs 8.2% of attacks). To investigate if pike actually tended to attack the closest prey, one of the assumptions of Hamilton’s model (Hamilton, 1971), as opposed to generally attacking prey that are near, we ranked individuals based on their distance from the pike, again considering only individuals within the domain of danger. This revealed that for 73% of attacks (86/117) the pike did indeed attack the nearest individual (ahead) and for 90% of attacks one of the three nearest individuals. Consequently, swapping the feature of absolute pike distance with ranked pike distance considerably increased the predictive power of the model (ΔBIC = –37.4), thereby resulting in LDOD to drop as a significant feature.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/76344/elife-76344-fig5-v2.jpg)
 
 **Figure 5.:** (A) Relative feature weights based on multi-model inference and ranked from highest (top) to lowest (bottom), revealing three key predictive features emerged. (B–D) Top three features affecting the probability that an individual is targeted using a predator-focused approach: (B) its distance to the pike, (C) its angle relative to the pike’s orientation, and (D) its limited domain of danger. Plots are created using predicted values from the final model (see Appendix 3—figure 1), with the envelope showing 95% confidence intervals. Red and grey histograms are of the raw data of the targeted and non-targeted individuals, respectively.
 
-## Which factors best predict the likelihood for targeted individuals to survive attacks?
+### Which factors best predict the likelihood for targeted individuals to survive attacks?
 
 The pike in our study were allowed to catch and consume their prey and were relatively successful, with 70% of attacks resulting in prey being eaten. In contrast to previous work that only investigated the likelihood for an individual to be targeted (e.g. Handegard et al., 2012; Ioannou et al., 2012; Romenskyy et al., 2020), we could therefore also assess in detail what features are associated with targeted fish to survive the attack. We compared individuals that were targeted yet successfully evaded capture (n=34) with those individuals that were caught (n=83), and considered as potential relevant features those that were found to be important in predicting which individual was targeted (see above), pike’s vision of its target at the time of attack, the targeted individual’s maximum speed, acceleration, and turning rate (max change in orientation), and pike’s maximum acceleration, all in the same standard 0.5 s time window until the time of attack.
 
-Running multi-model inference as before, two main predictive features emerged (Figure 6A; Appendix 3—figure 2): (i) shiner’s maximum acceleration until the strike (Figure 6B) and (ii) shiner’s distance to the pike’s head (Figure 6C), which were themselves only very weakly related (4.9% of variance explained between them). In other words, targeted prey were more likely to evade capture when they showed a quick acceleration response in the moments before the pike launched its attack (–0.12±0.04; LRT: χ2 = 13.19, p<0.001) and were positioned further from its head (–0.27±0.09; LRT: χ2 = 8.98, p=0.003).
+Running multi-model inference as before, two main predictive features emerged (Figure 6A; Appendix 3—figure 2): (i) shiner’s maximum acceleration until the strike (Figure 6B) and (ii) shiner’s distance to the pike’s head (Figure 6C), which were themselves only very weakly related (4.9% of variance explained between them). In other words, targeted prey were more likely to evade capture when they showed a quick acceleration response in the moments before the pike launched its attack (–0.12±0.04; LRT: $χ^{2}$ = 13.19, p<0.001) and were positioned further from its head (–0.27±0.09; LRT: $χ^{2}$ = 8.98, p=0.003).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76344/elife-76344-fig6-v2.jpg)
 
@@ -129,25 +240,25 @@ In conclusion, using a quantitative empirical approach in which we acquired high
 
 ## Materials and methods
 
-## Study species and animal holding
+### Study species and animal holding
 
 For the design and execution of our study we made sure to adhere to the guidelines of the STRANGE framework (Webster and Rutz, 2020) and the standards set forth by the ASAB/ABS, 2012 and the guidelines for predation experiments described by Huntingford, 1984. We used golden shiners (Notemigonus crysoleucas) as prey and Northern pike (Esox lucius), a common predator of shiners (Johannes et al., 1989; Nursall, 1973), as predator in our experiments. Juvenile shiners and pike were respectively purchased from Anderson Farms in Lonoke, Arkansas, USA and the New Jersey Division of Fish and Wildlife hatchery. Fish were reared communally in semi-natural conditions at the hatcheries and fed a diet of pelleted food. After arriving at the Princeton University laboratories, fish were kept under controlled conditions (water temperature 16.5°C ± 1°C; room lighting: 12:12 hr light:dark cycle), with shiners and pike kept in separate rooms under social conditions reflecting their natural social context. Shiners were housed in groups with 20 individuals in 37 L glass tanks on a flow-through system and fed pelleted food (Zeigler Finfish) ad libitum once daily except for the day prior to an experimental trial. Pike were housed individually in 114 L tanks containing gravel and artificial plants, and were fed a single shiner every other day for the first 10 days after arrival after which they were only able to feed during the experimental trials (see details below). All pike readily took and ate the shiners in their home tank. Experiments started after two weeks of acclimation in the laboratory. We ran two batches of experiments with the shiners within a batch all being of similar age and size (batch 1: 7.9 cm, 95% CI: 6.7–9.8; batch 2: 10.0 cm, 95% CI: 8.6–11.9 cm) and the pike being about 2.5 x their size (batch 1: 20.0±0.1 cm, n=9; pike batch 2: 27.9±0.4 cm, n=4). The sex of the fish was not determined. As shiners mainly school when they are juveniles, sex is not expected to play a major role in the observed findings. No instances of poor health or body condition were observed among any of the experimental fish throughout the experimental period.
 
-## Experimental arena
+### Experimental arena
 
 Trials took place in a 3.5 × 6.5 ft (1.06 × 1.98 m) white Perspex tank. External disturbances were minimised by placing the tank on two layers of carpet (to dampen vibrations), surrounded by white curtains, and positioned it in an otherwise empty experimental room. Diffused light was provided by two LED panels positioned outside the curtains at the far ends of the tank. The tank was filled with water to a depth of 6 cm, about 1.5x – 2x the body height of the pike, that had approximately the same temperature and quality as the water of fishes’ home tanks. The right-bottom corner of the tank contained an opaque Plexiglass partition to visually separate the pike from the shiners at the start of each trial. A Sony NEX-FS700 camera positioned at 2 m above the exact centre of the tank was used to film the experimental trials at 120 fps with a resolution of 1920 × 1080 pixels.
 
-## Experimental procedure
+### Experimental procedure
 
 Before the first trial, each pike was acclimated to the experimental arena by two mock trials with one and subsequently three shiners on two separate days, while each shiner group was allowed to acclimate to the experimental tank for 24 hr before their first pike exposure. An experimental trial started with netting a pike from the nearby holding room, transferring it to the experimental room in a covered bucket, and immediately releasing it into the partitioned corner of the experimental tank. While the pike was left to acclimate in the holding corner, a group of 40 shiners was taken from the separate holding room, transferred to the experimental room in a covered bucket, and released into the centre of the experimental tank. Subsequently, the experimenter closed the curtains around the tank, started video recording, and moved to a separate isolated section of the room. Shiners were allowed to acclimate to the tank for five minutes. After that, the partition was raised using a remote pulley system, giving the pike access to the whole tank. Ten min later video recording was stopped and, to decrease potential stress, experimental lights were turned off and dim red lights turned on. To keep the experimental period consistent across all trials, trials were not stopped after the first shiner was captured or eaten. About a minute after turning on the red lights the shiners were carefully netted from the experimental tank and returned to the holding tanks and immediately fed with pelleted food. Subsequently, the pike was netted from the experimental arena in a gentle way and transferred to its home tank. After each trial, we drained and scrubbed the experimental tank thoroughly with a sponge to remove any potential predator and alarm cue odours. Three to four experimental trials were run per day between 10:00 and 18:30.
 
 We ran the experiment with two batches of pike and shiners, with the fish of each batch tested repeatedly in the arena over time. Pike were randomly selected, but only after they had at least three rest days since the previous trial, which was decided based on pilot work that showed pike were less motivated when tested with less time between trials. For each trial, shiners were also randomly selected from the holding tanks to create groups of 40 fish. Shiners were mixed to avoid potential effects of familiarity between individuals and the associated social feedback and learning effects related to group composition. However, as we used a repeated-measures design, we made sure that all shiners in the same group had the same number of exposures to the pike by keeping shiners in separate social holding tanks based on their number of pike exposures. In total we used 20 pike and started with about 1500 shiners. Pike had a mean number of 1.84±0.14 attacks per trial, with 18 trials having more than 1 successful attack. However, not all pike did always attack during the trials, and 7 pike never attacked. As those trials did not provide any data on the attacks they were excluded and the pike not used in further trials. Also the shiners were excluded for subsequent trials as their future behaviour in the assay could be influenced by having had experience with a pike that did not attack. As a result, our sample size decreased with exposure and we stopped at a maximum number of 6 exposures. Like the pike, shiners were also generally tested with three rest days between trials but sometimes groups had one or a few fish that only had two rest days. This was inevitable due to the difficulty of just being able to run a few trials each day, and sometimes pike thus not attacking. Although none of the fish had any previous experience with any experiments, during the repeated exposures both shiners and pike had time to learn about the conditions they were confronted with, thus enabling us to also investigate how this impacted predators’ attack behaviour and prey response.
 
-## Fish tracking
+### Fish tracking
 
 After automatically correcting all videos for minor camera lens distortion, we used custom developed tracking software to acquire highly detailed individual-based movement data for both the shiners (SchoolTracker, by Haishan Wu) and the pike (ATracker, by J. W. Jolles), including head position and body orientation in two dimensions. Full details of how SchoolTracker detects fish, tracks their movement, and corrects occlusions can be found in Rosenthal et al., 2015 ATracker uses background subtraction algorithms and blob detection, shape, and threshold algorithms to get the pikes’ position and orientation while excluding the shiners. For our analyses we manually checked for constancy of individual shiners’ identities in the large schools at 120 fps from one second before strike initiation through to one second later, and manually corrected identity swaps and centroid and heading positions where needed. The identity of the targeted individual was acquired by carefully comparing the video and visualisations of the tracking data at the moment of the attack. For the far majority of unsuccessful attacks we also acquired the identity of the targeted shiner with high certainty because the pike attacked the prey from very near and exhibited a clear attack trajectory. In the few cases, there was a second potential target we were able to determine the most likely target by carefully going back and forth through the video, frame-by-frame, at the moment of the attack.
 
-## Quantification of behaviour
+### Quantification of behaviour
 
 After tracking, we smoothed the positional coordinates using a Savitzky-Golay smoothing filter with a window of 0.1 s and converted pixels to mm. Using the head as reference, we then computed each fish’s velocity, speed, and acceleration as well as their distance to the closest wall. For each shiner we also computed their distance to the pike, their angle to the pike (absolute, with 0° being directly in front of and 180° directly behind the pike), and relative orientation to the pike (with 0° being the same orientation as the pike and 180° an opposite orientation). We did this by shifting the coordinates of the fish so that the origin of the coordinate system was at the pike and rotated such that the pike was pointed north (0°) to have a common frame of reference. The maximum speed and acceleration values we report in the text are based on the smoothed data, which helps overcome the issue that already tiny shifts in reference points in subsequent frames during tracking can confound single data values. Computing these metrics on unsmoothed data instead results in maximum speed and acceleration values that are in line with that typically reported for attacks or escape (Domenici and Blake, 1997; Walker et al., 2005).
 
@@ -157,6 +268,6 @@ Next, for each shiner we quantified their Voronoi polygon area, limited domain o
 
 Finally, to estimate the visual information available to each fish we used a ray-casting algorithm, originally developed for Rosenthal et al., 2015 (for further details see their paper). Visual features computed using this method have been shown to be informative of evasion behaviour (Rosenthal et al., 2015; Sosna et al., 2019), even in field conditions (Hein et al., 2018). We used the visual information to compute the proportion of each shiner’s vision that was occupied by conspecifics (weighted degree) and the proportion of a shiner that was visible to the pike. While individuals form a relatively planar group structure near the water surface, as schools are not perfectly two-dimensional, it may be the case that neighbouring individuals do not always block an external view. However, shiners tend to form relatively planar groups near the water surface (Hall et al., 1979; Stone et al., 2016), and using incomplete rather than full blockage seems to have very little effect on an individual shiner’s detection coverage (Davidson et al., 2021).
 
-## Analyses
+### Analyses
 
 To investigate if pike had a higher maximum speed than the shiner they targeted, we computed both fishes’ (smoothed) speed from 0.5 s before until 0.1 s after strike initiation and ran a linear mixed model with fish as fixed factor (predator, prey), maximum speed as response variable, and attack id as a random factor. To determine if groups were more likely to attack the groups head-on in terms of their orientation and direction of motion/heading, that is if their angles concentrated around 180° relative to the pike pointing north (0°), we ran Rayleigh tests for uniformity, with the Rayleigh statistic varying from R=0, indicating a uniform distribution in all directions, to R=1, representing that all vectors point in the same direction at 180°. For the analysis regarding the group heading, we made sure to subset the data to attacks where the group was moving at least at a speed of 1.5 cm/s (n=102). To investigate how repeated exposure changed the shiners packing fraction and avoidance of the pike’s head and pikes’ distance from the targeted individual, we ran a linear model with exposure, fitted as a cubic function, as a fixed factor and data subsetted to pikes’ first attack attempt during the trials. To determine what features were most predictive of whether a shiner is targeted by the pike and survives an attack, we used a multi-model inference approach (Burnham et al., 2011), focusing our analyses on all attacks where the pike attacked the main school (n=117), described in detail in Appendix 3. Thereby estimates, likelihood-ratio tests, and p-values reported in the text were acquired from the final models. In some cases, we included Pearson correlations and linear models to further investigate the relationship and explained variance (R2) between two predictor variables.

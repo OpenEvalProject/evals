@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.31311.001 N 6 -methyladenosine (m 6 A) is the most abundant internal modification of eukaryotic messenger RNA (mRNA) and plays critical roles in RNA biology. The function of this modification is mediated by m 6 A-selective ‘reader’ proteins of the YTH family, which incorporate m 6 A-modified mRNAs into pathways of RNA metabolism. Here, we show that the m 6 A-binding protein YTHDC1 mediates export of methylated mRNA from the nucleus to the cytoplasm in HeLa cells. Knockdown of YTHDC1 results in an extended residence time for nuclear m 6 A-containing mRNA, with an accumulation of transcripts in the nucleus and accompanying depletion within the cytoplasm. YTHDC1 interacts with the splicing factor and nuclear export adaptor protein SRSF3, and facilitates RNA binding to both SRSF3 and NXF1. This role for YTHDC1 expands the potential utility of chemical modification of mRNA, and supports an emerging paradigm of m 6 A as a distinct biochemical entity for selective processing and metabolism of mammalian mRNAs.
+N6-methyladenosine (m6A) is the most abundant internal modification of eukaryotic messenger RNA (mRNA) and plays critical roles in RNA biology. The function of this modification is mediated by m6A-selective ‘reader’ proteins of the YTH family, which incorporate m6A-modified mRNAs into pathways of RNA metabolism. Here, we show that the m6A-binding protein YTHDC1 mediates export of methylated mRNA from the nucleus to the cytoplasm in HeLa cells. Knockdown of YTHDC1 results in an extended residence time for nuclear m6A-containing mRNA, with an accumulation of transcripts in the nucleus and accompanying depletion within the cytoplasm. YTHDC1 interacts with the splicing factor and nuclear export adaptor protein SRSF3, and facilitates RNA binding to both SRSF3 and NXF1. This role for YTHDC1 expands the potential utility of chemical modification of mRNA, and supports an emerging paradigm of m6A as a distinct biochemical entity for selective processing and metabolism of mammalian mRNAs.
 
 ## Introduction
 
@@ -45,53 +45,125 @@ In this work, we demonstrate that the nuclear m6A ‘reader’ protein YTHDC1 me
 
 m6A promotes the clearance of cytoplasmic and nuclear mRNAs and is known to facilitate rapid clearance of mRNAs from the cytoplasm due to direct binding of YTHDF2 and recruitment of the CCR4–NOT deadenylase complex (Du et al., 2016; Wang et al., 2014a). We confirmed this cytoplasmic role by treating HeLa cells with Actinomycin D and then monitoring m6A methylation in cytoplasmic mRNA (polyA selected, ribosomal RNA-depleted transcripts) by liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) (Figure 1—figure supplement 1). Cells treated with control short interfering RNA (siRNA) preferentially cleared m6A-containing mRNAs, as indicated by a reduction in the m6A/A ratio in the absence of new transcription (Figure 1A, black). These data confirm that in the absence of newly transcribed RNA, methylated mRNAs are selectively cleared from the cytoplasmic pool, allowing us to calculate an apparent half-life of mRNA methylation from the decreasing m6A/A signal. This ensemble measurement allows us to identify changes in the relative rate at which methylated transcripts are cleared under two conditions without determining the absolute half-lives of mRNAs. Knockdown of the cytoplasmic protein YTHDF2 resulted in increased m6A levels (t = 0), and extended the apparent half-life for m6A in cytoplasmic mRNA by ~4 fold (Figure 1A, gray, Figure 1—figure supplement 1A), as would be expected in the absence of the m6A-specific mRNA decay factor. We next asked whether m6A methylation similarly facilitates the expedited clearance of mRNA from cell nuclei. Following inhibition of transcription, nuclear m6A levels in mRNA decreased over a six-hour time course, suggesting that selective processing and clearance of these mRNAs is common to both the nuclear and the cytoplasmic compartments (Figure 1B, black). Knockdown of the only nuclear member of the YTH family and known m6A-binding protein, YTHDC1, resulted in increased m6A levels in nuclear mRNA (t = 0) and in a decreased rate of clearance of m6A methylation in mRNA, extending the apparent half-life of methylation more than 2-fold (Figure 1B, red, Figure 1—figure supplement 1B and C). Analysis of mRNA from the nucleus showed no difference between control and YTHDF2 knockdown samples, confirming that the dominant role of YTHDF2 takes place in the cytoplasm under normal growth conditions (Figure 1C). Knockdown of YTHDC1 resulted in decreased cytoplasmic levels of m6A, but these levels approached control levels over the time course (Figure 1D). These data suggest that while YTHDF2 mediates cytoplasmic decay of methylated mRNA transcripts, YTHDC1 mediates nuclear clearance of mRNAs and affects their resulting cytoplasmic abundance.
 
-## YTHDC1 mediates nuclear to cytoplasmic transport of methylated mRNAs
+![Figure 1.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig1-v2.jpg)
+
+**Figure 1.:** (A) m6A methylation in cytoplasmic mRNA analyzed at 0, 3, and 6 hr after transcription inhibition. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. Curves fit to exponential decay. (B) m6A methylation in nuclear mRNA analyzed at 0, 3, and 6 hr after transcription inhibition. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. Curves fit to exponential decay. (C) m6A methylation in nuclear mRNA analyzed at 0, 3, and 6 hr after transcription inhibition. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. Curves fit to exponential decay. (D) m6A methylation in cytoplasmic mRNA analyzed at 0, 3, and 6 hr after transcription inhibition. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. Curves fit to exponential decay.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Calibration and unknown determination for LC-MS/MS quantification of m6A/A. (A) Representative western blot for YTHDF2 knockdown efficiency. (B) Representative Western blot for YTHDC1 knockdown efficiency. (C) Northern blot of nuclear and cytoplasmic RNA. (D,E) Representative data from LC-MS/MS for A and m6A. Standards curves (black) are generated, and unknown concentrations (red) are calculated.
+
+### YTHDC1 mediates nuclear to cytoplasmic transport of methylated mRNAs
 
 We further examined the relationship between YTHDC1 and the subcellular localization of methylated mRNAs by LC-MS/MS. Knockdown of YTHDC1 does not affect the m6A/A ratio in mRNA transcripts from whole cell lysate, but results in accumulation of m6A in nuclear mRNA and in an accompanying cytoplasmic depletion of m6A levels (Figure 2A). These effects occurred without changes in the expression of YTHDF2, or of key components of the nuclear export machinery, the mRNA export receptor NXF1 or the adaptor protein ALYREF (Figure 2B). We can directly observe the effect of YTHDC1 knockdown on mRNA distribution by fluorescence in situ hybridization of polyA RNAs in HeLa cells, in which YTHDC1 knockdown results in increased signal intensity in the nuclear region and depletion in the cytoplasmic regions (Figure 2C and D), suggesting a positive role for YTHDC1 in nuclear mRNA export.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig2-v2.jpg)
+
+**Figure 2.:** (A) Quantification of m6A methylation in total (T), nuclear (N), and cytoplasmic (C) mRNA. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (B) Representative western blot of YTHDF2 and members of the mRNA export pathway following knockdown of YTHDC1. (C) Representative analysis of polyA imaging. Nuclei were defined using DAPI signal. Cytoplasmic regions were defined by subtracting nuclear signal from total signal, as defined by DIC imaging. (D) Quantification of polyA signal density. n = 25, two-sided t-test. (E,F) Quantification of m6A methylation in nuclear and cytoplasmic mRNA. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative western blot for YTHDC1 overexpression. (B) Representative western blot for YTHDC1 overexpression in a YTHDF2 knockdown background. (C) Interactions between YTHDC1 and components of the NEXT/PAXT machinery. (D) m6A/A ratios in pre-mRNA following knockdown of YTHDC1 and NEXT/PAXT components. (E) Representative western blots of knockdown samples for panel (D). (F) Representative immunofluorescence of YTHDC1–FLAG in HeLa cells. (G) Dot-blot of nascent RNA. HeLa cells were labeled for 1 hr with 4-thio-uridine (4SU), conjugated to biotin and exposed with Streptavidin–HRP. (H) Methylene blue staining of (G) (loading control).
+
 Overexpression of YTHDC1 reduced levels of m6A in nuclear mRNA, suggesting that it contributes directly to the clearance of these transcripts, but did not result in increased levels of cytoplasmic m6A as anticipated (Figure 2E, Figure 2—figure supplement 1A). One possibility is that YTHDC1 may interact with components of the nuclear RNA decay machinery to mediate nuclear mRNA decay. Indeed, YTHDC1 has been reported to interact with ZCCHC8, a component of the NEXT complex (Lubas et al., 2011), an interaction that we verified by western Blot. We found a robust interaction between YTHDC1 and ZCCHC8, but no interaction between YTHDC1 and MTR4 (Figure 2—figure supplement 1B). Knockdown of these components did not produce an increase in nuclear RNA that is depleted for ribosomal transcripts (Figure 2—figure supplement 1C and D). These results suggest that the accumulation of mature mRNA transcripts with YTHDC1 knockdown may not be attributed to nuclear decay. We then overexpressed YTHDC1 following knockdown of YTHDF2 (Figure 2—figure supplement 1E). Under these conditions, we observed nuclear depletion as expected, as well as an increase in cytoplasmic m6A levels compared to empty vector control, suggesting that YTHDC1 mediates nuclear export of methylated mRNAs (Figure 2F) and that this nuclear localized protein can affect subcellular distribution of methylated transcripts (Figure 2—figure supplement 1F). We compared the bulk transcriptional activity of HeLa cells treated with siRNA against YTHDC1 with control and YTHDC1-overexpressing lines, and found that these perturbations of YTHDC1 did not dramatically affect the incorporation of 4-thio-urudine in a 1-hr pulse period (Figure 2—figure supplement 1G and H), suggesting that YTHDC1 functions post-transcriptionally.
 
-## YTHDC1 affects subcellular abundance of target transcripts
+### YTHDC1 affects subcellular abundance of target transcripts
 
 In order to appreciate the function of YTHDC1 on the subcellular distribution of its target transcripts, we employed RIP-seq as a complimentary method of identifying high-confidence RNA substrates when combined with our previously reported PAR-CLIP data (Peritz et al., 2006; Xu et al., 2014). We generated two YTHDC1 RIP-seq data sets; one with RNA purified by polyA selection, the other with ribosomal depletion. The two datasets show good correlation overall, with major deviation a result of enrichment for methylated transcripts lacking polyA tails in the ribosomal RNA-depleted sample (Figure 3—figure supplement 1A). We identified targets as transcripts that were bound in each previous replicate of PAR-CLIP and enriched at least two-fold in each replicate of RIP-seq. These criteria produced over 700 targets of YTHDC1 (Figure 3—figure supplement 1B). We then analyzed the subcellular transcriptome of HeLa cells following knockdown of YTHDC1. Consistent with our mass spectrometry data, knockdown of YTHDC1 does not affect the abundance of target transcripts relative to non-target mRNAs in whole-cell samples (Figure 3A). Notably, target abundance is unchanged from control levels in YTHDC1 knockdown cells (Figure 3—figure supplement 1C). In the nuclear RNA sample, however, target abundance is increased following knockdown of YTHDC1, as indicated by a right shift in the cumulative fraction of these transcripts compared to non-target mRNAs (Figure 3B). An accompanying decrease in cytoplasmic target abundance suggests that YTHDC1 mediates the subcellular distribution of its target mRNAs by promoting nuclear to cytoplasmic transport of bound transcripts (Figure 3C). This shift in subcellular distribution is also observable for PAR-CLIP and RIP-seq targets of YTHDC1 (Figure 3—figure supplement 2A–D).
 
-## YTHDC1 mediates nuclear export of nascent mRNA
+![Figure 3.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig3-v2.jpg)
+
+**Figure 3.:** (A) Left: Cumulative distribution of log2 fold changes in RNA expression following knockdown of YTHDC1 in total mRNA. P-value calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA-seq fold changes. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test. (B) Left: Cumulative distribution of log2 fold changes in RNA expression following knockdown of YTHDC1 in nuclear mRNA. P-value calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA-seq fold changes. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test. (C) Left: Cumulative distribution of log2 fold changes in RNA expression following knockdown of YTHDC1 in cytoplasmic mRNA. P-value calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA-seq fold changes. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test. Data represent biological replicates using unique siRNAs against YTHDC1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of YTHDC1 RIP-seq data sets. (B) Selection of YTHDC1 target mRNAs from PAR-CLIP and RIP-seq data. (C) Expression of YTHDC1 target mRNAs under control and YTHDC1 knockdown conditions. Left: Cumulative fraction of RNA expression. P-values calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA expression. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Left: Cumulative distribution of log2 fold changes in RNA expression following knockdown of YTHDC1 in nuclear mRNA. P-value calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA-seq fold changes. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test. (B) Left: Cumulative distribution of log2 fold changes in RNA expression following knockdown of YTHDC1 in cytoplasmic mRNA. P-value calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA-seq fold changes. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test. (C) Left: Cumulative distribution of log2 fold changes in RNA expression following knockdown of YTHDC1 in nuclear mRNA. P-value calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA-seq fold changes. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test. (D) Left: Cumulative distribution of log2 fold changes in RNA expression following knockdown of YTHDC1 in cytoplasmic mRNA. P-value calculated using the Mann-Whitney-Wilcoxon Test. Right: Boxplot representation of RNA-seq fold changes. Whiskers represent three times the interquartile range. P-value calculated using Welch’s T-test.
+
+### YTHDC1 mediates nuclear export of nascent mRNA
 
 In order to investigate the effect of YTHDC1 on the localization of newly synthesized mRNA, we utilized nascent RNA labeling using 5-ethynyl uridine. Following a 4-hr pulse with the nucleoside analog, we isolated nuclear and cytoplasmic RNA from cells treated with a control siRNA and with siRNA against YTHDC1 (Figure 4—figure supplement 1A). We then analyzed the subcellular abundance of several targets of YTHDC1 under control and knockdown conditions in these nascent RNA fractions (Figure 4—figure supplement 1B). Upon knockdown of YTHDC1, we observed nuclear accumulation of nascent mRNA for both APC and MCL1 transcripts compared to control, whereas the difference in nuclear SOX12 mRNA abundance was modest and not significant in our assay (Figure 4A). Cytoplasmic RNA invariably showed reduced abundance of newly synthesized YTHDC1 targets upon knockdown, suggesting that these transcripts fail to accumulate within the cytoplasm when compared to control levels (Figure 4B). Taken together, these data indicate that YTHDC1 is required for proper transport of mature mRNA species from the nucleus to the cytoplasm, as we utilized primer sequences specific for exon-exon junctions of mature transcripts. Knockdown of YTHDC1 did not have a significant effect on the distribution of non-target transcripts (Figure 4—figure supplement 1C).
 
-## YTHDC1 affects subcellular mRNA localization independent of pre-mRNA splicing
+![Figure 4.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig4-v2.jpg)
+
+**Figure 4.:** (A,B) RT-qPCR of nascent mRNA in the nucleus (A) and cytoplasm (B). Error bars represent mean ± standard deviation, n = 6 (three biological replicates x two technical replicates), two-sided t-test with equal variance. (C) Translation of reporter mRNA in response to binding by the full-length YTHDC1. Error bars represent mean ± standard deviation, n = 4. (D) Nuclear and cytoplasmic RT-qPCR of reporter mRNA 4 hr after induction of reporter transcript. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (E) Translation of reporter mRNA in response to binding by the YTHDC1 C-terminus. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (F) Nuclear and cytoplasmic RT-qPCR of reporter mRNA 4 hr after induction of reporter transcript. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic for nascent RNA labeling of HeLa cells. (B) Selection of YTHDC1 target transcripts based on PAR-CLIP and RIP-seq data. (C) Nuclear and cytoplasmic levels of nascent mRNA of non-target transcripts. Error bars represent mean ± standard deviation, n = 6 (three biological replicates x two technical replicates), two-sided t-test with equal variance. Differences between siControl and siYTHDC1 were not significant (p>0.05 in all cases).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Analysis of paired-end RNA-seq data using MISO (Katz et al., 2010). Example code can be found in the Materials and Methods section. (B) Comparison of YTHDC1-dependent skipped exons with METTL3-dependent skipped exons (data from Alarcón et al., 2015). (C) Comparison of YTHDC1 target mRNAs and mRNAs with alternative isoform usage upon YTHDC1 knockdown by RNA-seq. I-value calculated using Fisher’s Exact Test. (D) Comparison of YTHDC1 non-target mRNAs and mRNAs with alternative isoform usage upon YTHDC1 knockdown by RNA-seq. P-value calculated using Fisher’s Exact Test. (E) Sashimi plot and RT-PCR of YTHDC1 target mRNAs APC and MCL1 under control and YTHDC1-knockdown conditions.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Construction of the Luciferase reporter system, as previously reported (Wang et al., 2014a). (B) Modular structure of YTHDC1. Low complexity regions annotated according to SMART (Letunic et al., 2015). (C) Cellular localization of YTHDC1 effector constructs. (D) Translation of reporter mRNA in response to binding by YTHDC1–W377A. Error bars represent mean ± standard deviation, n = 4. (E) Translation of reporter mRNA in response to binding by the YTHDC1 N-terminus. Error bars represent mean ± standard deviation, n = 4. (F) Nuclear and cytoplasmic RT-qPCR of reporter mRNA 4 hr after induction of reporter transcript. Error bars represent mean ± standard deviation, n = 4, *p < 0.05.
+
+### YTHDC1 affects subcellular mRNA localization independent of pre-mRNA splicing
 
 Both m6A and YTHDC1 have been shown to affect alternative splicing patterns in mRNA (Alarcón et al., 2015; Dominissini et al., 2012; Liu et al., 2015; Xiao et al., 2016). In order to identify whether changes in subcellular localization were due to changes in alternative splicing, we performed paired-end sequencing of total RNA following knockdown of YTHDC1. Analysis using Mixture of Isoforms (MISO) software (Katz et al., 2010) identified 426 alternative splicing events with a difference in percent spliced in (psi, Ψ) value of 0.2 or greater (Figure 4—figure supplement 2A, Materials and methods). However, the alternative splicing events observed following knockdown of YTHDC1 show only weak negative correlations to those observed following knockdown of METTL3 (Figure 4—figure supplement 2B) (Alarcón et al., 2015). Of these 426 alternative splicing events, 85 occur in our high confidence YTHDC1 targets (85/737, 11.5%, Figure 4—figure supplement 2C). 108 of the 426 alternative splicing events occur in YTHDC1 non-targets (108/4,848, 2.2%, Figure 4—figure supplement 2D). In addition, individual transcripts of APC and MCL1 do not show significant changes in alternative exon usage following knockdown of YTHDC1 (Figure 4—figure supplement 2E), whereas SOX12 mRNA has only one isoform and is therefore not a candidate for regulation by potential alternative splicing events. These results show that YTHDC1 does affect alternative splicing patterns, but may play limited roles in alternative splice site selection in HeLa cells (Ke et al., 2017).
 
 To confirm a role in mRNA export independent of pre-mRNA splicing, we conducted a reporter assay to study the effect of direct binding by YTHDC1. Firefly luciferase was fused to five copies of the BoxB sequence and placed under control of a Tet-off promoter (Wang et al., 2014a). Effector constructs derived from YTHDC1 were fused to the lambda peptide, providing a high affinity interaction between protein and RNA. This system offers several advantages in studying the relationship between RNA binding and mRNA fate. The system is inducible and thus offers time-resolved information concerning both mRNA localization and protein production. The transcript is splicing-independent, and the RNA binding of the effector constructs is methylation-independent due to the lambda peptide-BoxB interaction. Last, the system is internally normalized by the presence of constitutively active Renilla luciferase on the same plasmid as the inducible Firefly luciferase (Figure 4—figure supplement 3A). Using this construct, we fused full length YTHDC1 to the lambda peptide and monitored translation of the Firefly luciferase following a 2-hr pulse of transcription. When bound by YTHDC1 rather than by a G-S-S control effector, we observed an increase in Firefly/Renilla luciferase signal (Figure 4C). This effect occurs independent of m6A binding and it is maintained for the W377A mutant construct (Figure 4—figure supplement 3D). Analysis of mRNA distribution 4 hr after the induction of transcription showed that binding by YTHDC1 favors mRNA distribution to the cytoplasm: we observed decreased mRNA levels of Firefly/Renilla mRNA in the nucleus, and increased ratios in the cytoplasm (Figure 4D). We further analyzed this system using both N- and C-terminal constructs of YTHDC1, both of which feature several distinct regions of predicted low complexity (Letunic et al., 2015). Tethering of the C-terminal effector also produced increased translation of the Firefly reporter construct (Figure 4E), and biased the mRNA distribution of the Firefly transcript towards the cytoplasm (Figure 4F), despite both the full-length and C-terminal constructs being strictly localized to the nucleus (Figure 4—figure supplement 3C). Tethering by the N-terminal construct produced no significant change in translation, although Firefly mRNA is retained in the nucleus upon binding by this construct (Figure 4—figure supplement 3E and F). This result is consistent with roles for the N-terminus of YTHDC1 in pre-mRNA splicing and function of the XIST non-coding RNA (Patil et al., 2016; Xiao et al., 2016). The effects of binding by the C-terminal region of YTHDC1 represent a new role for YTHDC1 in mRNA export.
 
-## YTHDC1 bridges m6A selectivity to mRNA export via SRSF3
+### YTHDC1 bridges m6A selectivity to mRNA export via SRSF3
 
 YTHDC1 is known to interact with members of the SR protein family, which play diverse roles in pre-mRNA splicing and export (Huang and Steitz, 2001; Huang et al., 2003; Müller-McNicoll et al., 2016; Xiao et al., 2016). We confirmed the interactions between flag-tagged YTHDC1 and several members of the SR family which have been previously reported (Xiao et al., 2016) (Figure 5—figure supplement 1A). We further confirmed the interaction between endogenous YTHDC1 and SRSF3 by immunoprecipitation (IP) of YTHDC1. Although YTHDC1 interacts with SRSF3, we did not observe any direct interaction between YTHDC1 and the export receptor NXF1, nor did we observe interaction between YTHDC1 and the common mRNA adaptor protein ALYREF (Figure 5A). We hypothesized that the interaction between YTHDC1 and the mRNA export pathway is mediated by export adaptor proteins. Indeed, SRSF3 is known to interact with both the splicing and the export machinery, and is known to do so in a phosphorylation-dependent manner, with hypo-phosphorylated protein interacting with the export receptor (Huang et al., 2004). When probing for serine phosphorylation in YTHDC1 IP samples, we did not detect phosphorylation at the molecular weight of SRSF3, indicating interaction between YTHDC1 and an export-competent form of SRSF3 that lacks serine phosphorylation. We validated the interaction between SRSF3 and NXF1 by IP of the endogenous SRSF3 and NXF1 proteins. SRSF3 robustly interacts with YTHDC1 in the presence and absence of RNA, whereas NXF1 shows no direct interaction with YTHDC1 but is able to co-precipitate SRSF3 (Figure 5B). We further hypothesized that the C-terminus of YTHDC1 interacts with hypo-phosphorylated SRSF3. Indeed, we observed an RNA-independent interaction between endogenous SRSF3 and the C-terminus of YTHDC1, but did not observe an interaction between endogenous SRSF3 and the N-terminus of YTHDC1 (Figure 5—figure supplement 1B). Confirmation of these YTHDC1–SRSF3 and SRSF3–NXF1 protein complexes provides a mechanistic basis for incorporation of m6A-modified mRNAs into the mRNA export pathway.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig5-v2.jpg)
+
+**Figure 5.:** (A) Immunoprecipitation (IP) of endogenous YTHDC1 from HeLa cell lysate. (B) IP of endogenous SRSF3 and NXF1 from HeLa cell lysate. (C) LC-MS/MS of mRNA cross-linked to SRSF3 and NXF1. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (D) Quantification of m6A in nuclear mRNA following knockdown of SR proteins. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoprecipitation (IP) of YTHDC1-FLAG with members of the SR protein family. (B) IP of YTHDC1 C- and N-terminal regions with phosphorylated SRSF3. (C) Coomassie stain of His-SRSF3-RRM purified from Escherichia coli. (D) In vitro IP of HeLa mRNA with His-SRSF3-RRM. Error bars represent mean ± standard deviation, n = 4 (two biological x two technical replicates), two-sided t-test of equal variance.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A,B) Full data from Figure 5D. Error bars represent mean ± standard deviation, n = 4, *p<0.05, **p<0.01, ***p<0.001, two sided t-test with equal variance. (C) Representative western blots for siRNA knockdown performed for Figure 5D. (D) PolyA imaging of HeLa cells following treatment with siControl, siYTHDC1, or siSRSF3. Yellow outlines the nuclear regions (defined by DAPI signal) and the cytoplasmic regions (defined by DIC). (E) m6A methylation in nuclear mRNA analyzed at 0, 3, and 6 hr after transcription inhibition. Error bars represent mean ± standard deviation, n = 4, *p<0.05, **p<0.01, ***p<0.001, two-sided t-test with equal variance. Curves fit to exponential decay.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Fragments per kilobase of transcript per million (FPKM) from total RNA-seq (average of two biological replicates). (B) Estimate of protein copies per cell in HeLa cells (Nagaraj et al., 2011).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Representative western blot for simultaneous siRNA knockdown of METTL3 and METTL14 in HeLa cells. (B) RT-PCR of nuclear RNA following knockdown of YTHDC1, SRSF3, and METTL3/14 in HeLa cells. Error bars represent mean ± standard deviation, n = 4, *p<0.05, **p<0.01, ***p<0.001, two-sided t-test with equal variance. (C) RT-PCR of cytoplasmic RNA following knockdown of YTHDC1, SRSF3, and METTL3/14 in HeLa cells. Error bars represent mean ± standard deviation, n = 4, *p<0.05, **p<0.01, ***p<0.001, two-sided t-test with equal variance.
+
 We next tested whether SRSF3 and NXF1 can enrich for m6A by performing CLIP followed by LC-MS/MS of the bound mRNA. We found that both SRSF3 and NXF1 are able to enrich m6A compared to input, with SRSF3 producing the greatest enrichment (Figure 5C). Although the protein could enrich for m6A when immunoprecipitated from cells, the RNA recognition motif of SRSF3 showed no selectivity for m6A in vitro (Figure 5—figure supplement 1C and D).
 
-## SRSF3 is a key adaptor in the export of methylated mRNAs
+### SRSF3 is a key adaptor in the export of methylated mRNAs
 
 We further investigated the role of SRSF3 in nuclear export by performing LC-MS/MS on nuclear and cytoplasmic mRNA following knockdown of the protein in HeLa cells. We find that knockdown of SRSF3 leads to a large increase in nuclear m6A levels, whereas other members of the SR protein family that interact with YTHDC1 show only modest changes in m6A levels in the nucleus or cytoplasm upon knockdown (Figure 5D, Figure 5—figure supplement 2A–C). Depletion of the other nuclear reader proteins HNRNPA2B1 and HNRNPC does not significantly affect subcellular m6A levels in a manner consistent with a role in mRNA export (Figure 5—figure supplement 2A–C). Like knockdown of YTHDC1, knockdown of SRSF3 results in increased nuclear staining of polyA RNAs and decreased cytoplasmic signal (Figure 5—figure supplement 2D). Analyzing clearance of m6A in nuclear mRNA upon knockdown of SRSF3 shows that while initial levels are high, the clearance rate resulting from such a perturbation is rapid, and may rely on mechanisms that have yet to be revealed (Figure 5—figure supplement 2E). Taken together, these data suggest that SRSF3 facilitates the export of m6A-methylated mRNAs via interaction with both the m6A-selective protein and YTHDC1 and the canonical mRNA export receptor NXF1, and that SRSF3 may contribute to additional fates for modified nuclear transcripts. According to the results of both RNA-sequencing (our data) and proteomic studies (Nagaraj et al., 2011), YTHDC1 is a limiting protein in this system (Figure 5—figure supplement 3A and B). Knockdown of YTHDC1, SRSF3, or the methyltransferase components METTL3/14 results in nuclear accumulation of YTHDC1 targets without affecting non-target HPRT1 mRNA (Figure 5—figure supplement 4A and B). In the cytoplasm, knockdown of either YTHDC1 or SRSF3 reduces levels of YTHDC1 targets, whereas depletion of the methyltransferase results in significant accumulations – probably as a result of reduced cytoplasmic clearance of transcripts bearing reduced m6A through YTHDF2 (Figure 5—figure supplement 4C).
 
-## YTHDC1 facilitates RNA binding to SRSF3 and NXF1
+### YTHDC1 facilitates RNA binding to SRSF3 and NXF1
 
 The YTH domain of YTHDC1 has been extensively biochemically characterized as a nuclear ‘reader’ protein, and binds mRNA with preference for m6A (Xu et al., 2014). Thus, we hypothesized that this domain serves as a source of selectivity for mRNA export by facilitating the association of methylated mRNAs with components of the export machinery. Previous work has suggested that YTHDC1 is required for RNA binding by SRSF3, consistent with a role for YTHDC1 in facilitating mRNA export selectivity (Xiao et al., 2016). In order to test this functional role in mRNA export, we performed CLIP of SRSF3 followed by LC-MS/MS of bound mRNAs under control and YTHDC1-knockdown conditions. We observed enrichment of m6A in mRNA bound by SRSF3 under both conditions. However, knockdown of YTHDC1 reduced enrichment of m6A by SRSF3, suggesting that YTHDC1 partially facilitates substrate selection by SRSF3 (Figure 6A). Sequencing of SRSF3-bound RNAs under control and knockdown conditions further supports this role of YTHDC1, as knockdown of YTHDC1 reduced target transcript enrichment of SRSF3 (Figure 6B). Similarly, knockdown of YTHDC1 abolished m6A enrichment by NXF1 as determined by LC-MS/MS (Figure 6C) and reduced transcript enrichment as determined by NXF1 RIP-seq (Figure 6D). These data show that YTHDC1 is required for proper incorporation of methylated mRNA targets into mRNPs consisting of SRSF3 and NXF1, which together function to facilitate nuclear export of their RNA cargo.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig6-v2.jpg)
 
-**Figure 6.:** (A) LC-MS/MS of mRNA cross-linked to SRSF3. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (B) Target enrichment by SRSF3. Whiskers represent three times the interquartile range. Data were analyzed across two independent experiments representing biological replicates. P-value calculated using Welch’s T-test. Whiskers represent three times the interquartile range. (C) LC-MS/MS of mRNA cross-linked to NXF1. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (D) Target enrichment by NXF1. Whiskers represent three times the interquartile range. Data were analyzed across two independent experiments representing biological replicates. P-value calculated using Welch’s T-test. Whiskers represent three times the interquartile range.10.7554/eLife.31311.027Figure 6—source data 1.
+**Figure 6.:** (A) LC-MS/MS of mRNA cross-linked to SRSF3. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (B) Target enrichment by SRSF3. Whiskers represent three times the interquartile range. Data were analyzed across two independent experiments representing biological replicates. P-value calculated using Welch’s T-test. Whiskers represent three times the interquartile range. (C) LC-MS/MS of mRNA cross-linked to NXF1. Error bars represent mean ± standard deviation, n = 4, two-sided t-test with equal variance. (D) Target enrichment by NXF1. Whiskers represent three times the interquartile range. Data were analyzed across two independent experiments representing biological replicates. P-value calculated using Welch’s T-test. Whiskers represent three times the interquartile range.
 
-## SRSF3 binding is required for export of YTHDC1 targets
+### SRSF3 binding is required for export of YTHDC1 targets
 
 Our data suggest that SRSF3 serves as a key adaptor in mediating the export of mRNA bound by YTHDC1, as SRSF3 and other members of the SR protein family interact directly with the export receptor NXF1 (Huang et al., 2003; Müller-McNicoll et al., 2016). A prediction of this model is that YTHDC1's targets require association with SRSF3 in order to experience selective export upon binding by YTHDC1. In order to test this, we utilized our RIP-seq data on SRSF3 to analyze the fate of transcripts that are bound by both YTHDC1 and SRSF3 (Group IV), and to compare these transcripts to those that are bound by YTHDC1 but not SRSF3 (Group II) (Figure 7—figure supplement 1A). We analyzed subcellular RNA-seq data following knockdown of YTHDC1 according to these transcript groupings, and found that only transcripts bound by both YTHDC1 and SRSF3 show significant nuclear accumulation upon YTHDC1 knockdown, whereas transcripts bound by YTHDC1 but not SRSF3 show no significant nuclear accumulation when comparing mean abundance (Figure 7A). We observe a similar dependence on SRSF3 binding in cytoplasmic depletion following knockdown of YTHDC1, indicating a functional role for binding by both YTHDC1 and SRSF3 as opposed to YTHDC1 binding alone (Figure 7—figure supplement 1B). SRSF3 is a protein that is involved in multiple distinct nuclear functions. Our data suggest that SRSF3 serves as an export adapter for methylated nuclear mRNAs bound by both YTHDC1 and SRSF3. This study provides a basis for distinct nuclear fates for mRNAs that are bound by YTHDC1 in which a downstream adaptor protein — here, SRSF3 – forms the functional protein–RNA complex for selective association with NXF1 for export to the cytoplasm (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig7-v2.jpg)
+
+**Figure 7.:** (A) Nuclear abundance of transcripts based on binding by YTHDC1 and/or SRSF3. Cumulative fractions: Mann-Whitney-Wilcoxon Test. Box plot: Welch’s T-Test. Whiskers represent three times the interquartile range. (B) Model of selective export of methylated mRNAs by YTHDC1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31311/elife-31311-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Definition of transcript groups based on YTHDC1 target binding by SRSF3. (B) Cytoplasmic abundance of transcripts based on binding by YTHDC1 and/or SRSF3. Cumulative fractions: Mann-Whitney-Wilcoxon Test. Box plot: Welch’s T-Test. Whiskers represent three times the interquartile range.
 
 ## Discussion
 
 We present a previously unrecognized function for YTHDC1 in mediating nuclear to cytoplasmic mRNA transport of methylated mRNAs. We further provide a mechanistic basis for this phenomenon, in which the methylated mRNA is recognized by the nuclear protein YTHDC1 and delivered to the nuclear mRNA export receptor NXF1 via association with SRSF3. The knockdown of YTHDC1 results in defective nuclear export of target mRNAs, and does so in an m6A-dependent, splicing-independent manner. Binding of YTHDC1 to target transcripts is sufficient to facilitate nuclear export, which indirectly leads to increased translation by increasing the cytoplasmic abundance of its targets. The interaction between YTHDC1 and SRSF3 couples m6A selectivity to nuclear export, in which m6A binding by YTHDC1 propagates transport via NXF1 involving the adaptor SRSF3, which itself does not impart biochemical selectivity for m6A in vitro. YTHDC1 knockdown results in decreased association of target mRNAs with both SRSF3 and NXF1, indicating that YTHDC1 is partially responsible for substrate selection by components of the mRNA export pathway. Taken together, these data present a pathway for m6A-dependent nuclear export, and provide evidence for the emerging regulatory capacity of the nuclear mRNA export machinery.
 
-## m6A selectivity in nuclear mRNA processing and export
+### m6A selectivity in nuclear mRNA processing and export
 
 Although m6A methylation in mRNA occurs co-transcriptionally, processes that select for methylated mRNAs within the nucleus are still under investigation. Mechanisms that maintain efficient processing and export of nascent transcripts are critical to enable proper gene expression, given that the vast majority of RNA transcribed in the nucleus is degraded prior to nuclear export (Moore, 2002). Previous observations have suggested that cytoplasmic appearance of mRNA is dependent on m6A methylation (Camper et al., 1984). Although YTHDC1 has been shown to affect alternative splicing of select mRNAs (Rafalska et al., 2004; Xiao et al., 2016; Zhang et al., 2010), our data suggest that YTHDC1 can affect the transport of mRNAs from the nucleus in addition to roles in pre-mRNA splicing. These results are consistent with the tight biochemical coupling of mRNA splicing and export, and are reminiscent of the dual roles observed for similar adaptor proteins, particularly those of the SR-family which have been well documented (Huang and Steitz, 2001; Huang et al., 2003; Müller-McNicoll et al., 2016; Strässer and Hurt, 2001; Valencia et al., 2008; Zhou et al., 2000). This work reveals a mechanism by which methylated mRNAs are selectively incorporated into known pathways for mRNA export.
 
@@ -103,7 +175,7 @@ Current data suggest that m6A in mRNA serves to facilitate critical steps in mRN
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
 λ peptide sequence MDAQTRRRERRAEKQAQWKAAN was fused to the N-terminus of YTHDC1-Flag (Xu et al., 2014) by subcloning into pcDNA3.0. YTHDC1 C-Terminal and YTHDC1 N-Terminal regions were similarly subcloned into pcDNA3.0 with C-terminal Flag tags.
 
@@ -147,7 +219,7 @@ R: GCTACTCGAGTTATTTTTCACCATTCGACAGTTCCA (XhoI)
 
 Plasmids with high purity for mammalian cell transfection were prepared using Highspeed Maxiprep or Midiprep Kits (Qiagen, Hilden, Germany).
 
-## Mammalian cell culture, siRNA knockdown and plasmid transfection
+### Mammalian cell culture, siRNA knockdown and plasmid transfection
 
 The HeLa cell line used in this study was purchased from and validated by ATCC by STR profiling (ATCC CCL-2) and cultured in DMEM (Gibco [ThermoFisher], Waltham, MA, 11965) supplemented with 10% FBS (Gemini Bio Products, West Sacramento, CA) and 1% 100 x Pen Strep (Gibco). Upon revival, the cell lines tested negative for Mycoplasma contamination using the LookOut Mycoplasma PCR Detection Kit (Sigma Aldrich MP0035). New cells were thawed periodically every 2–3 months of this study. Transfections were carried out using Lipofectamine 2000, Lipofectamine LTX (for cotransfection) or Lipofectamine RNAiMAX (ThermoFisher) according to the manufacturer’s protocol in the absence of antibiotics.
 
@@ -279,23 +351,23 @@ MRT4, Hs_SLIV2L2_3
 
 Target sequence: CCAGGTCGTTTGGTAAAGGTA
 
-## Actinomycin D treatment
+### Actinomycin D treatment
 
 Actinomycin D (Sigma) was dissolved in DMSO to a final concentration of 5 mg/mL. This stock was diluted 1:1000 (5 μg/mL final concentration) in fresh media and applied to control and YTHDC1 knockdown HeLa cells in culture. Cells were collected by cell lifter at designated time points.
 
-## Cellular fractionation and RNA isolation
+### Cellular fractionation and RNA isolation
 
 HeLa cells were fractionated using NE-PER Nuclear and Cytoplasmic Extraction Reagents (ThermoFisher) according to the manufacturer's protocol with the following modifications: following cytoplasmic isolation, nuclei were washed extensively (4 × 200 μL) with PBS. RNA from each portion was collected using Directzol RNA miniprep (Zymo Research, Irvine, CA) and treated with DNaseI prior to elution in water.
 
 RNA was further purified for RNA-sequencing by RiboMinus Eukaryotic Kit v2 (ThermoFIsher) unless otherwise noted, and concentrated using RNA Clean and Concentrator (Zymo Research) for RNA ≥200 nt. Sequencing libraries were prepared using the TruSeq Stranded mRNA LT Library Construction Kit (Illumina, San Diego, CA) according to the manufacturer's protocol and sequenced with 50 bp single end reads.
 
-## Western blotting protocol
+### Western blotting protocol
 
 Protein electrophoresis was performed with NuPAGE Novex 4–12% Bis-Tris Protein Gels (Novex) in MOPS SDS running buffer. Blots were transferred to a nitrocellulose membrane and blocked with 5% milk in TBST (0.05% Tween-20) for 30 min at room temperature. Primary antibodies were incubated overnight in 5% milk in TBST at 4°C over night. Secondary antibodies were incubated at room temperature for one hour, washed and developed using chemiluminescence with SuperSignal West Pico Luminol/Enhancer solution (ThermoFisher) in the FluorChem M system (ProteinSimple, San Jose, CA).
 
 For blots probing for phosphorylation, membranes were blocked using 5% Bovine Serum Albumin (BSA) (EMD Millipore, Billerica, MA), and primary and secondary dilutions were prepared using 5% BSA in TBST.
 
-## Antibodies (target, source, use, dilution, supplier)
+### Antibodies (target, source, use, dilution, supplier)
 
 Primary
 
@@ -341,7 +413,7 @@ MTR4: Rabbit polyclonal, western blot, 1:1,000, Abcam, MA (ab93337)
 
 Phosphoserine: Rabbit polyclonal, western blot, 1:100, Abcam, MA (ab9332)
 
-## Secondary
+### Secondary
 
 Rabbit IgG: Goat polyclonal, western blot, 1:5,000, Bethyl, Montgomery, TX (A120-101P)
 
@@ -351,7 +423,7 @@ Mouse IgG: Goat polyclonal – TexasRed, IF, 1:300, Molecular Probes, Eugene, OR
 
 Rat IgG: Donkey polyclonal – Alexa488, IF, 1:300, Molecular Probes, OR (A-21208)
 
-## Northern blotting protocol
+### Northern blotting protocol
 
 RNA from nuclear and cytoplasmic extracts was isolated using Trizol according to the manufacturer's protocol, then further purified using RNA Clean and Concentrator with DNase treatment (Zymo Research). 300 ng of total RNA was diluted 1:2 in 2X TBE-Urea Sample Buffer (ThermoFisher), heated to 65°C for 10 min, and separated on a 6% TBE-Urea gel (180 V, 1 hr) run at 4°C. RNA was transferred at 4°C to an Amersham HyBond-N +membrane in 0.5X TBE Buffer. The membrane was crosslinked using the Stratalinker 2400 (Stratagene, San Diego, CA) autocrosslink option. The membrane was blocked in pre-hybridization buffer (10X final concentration Denhardt’s Solution (ThermoFisher)), 6X final concentration SSC Buffer (ThermoFisher), 0.1% SDS, 10 μg/mL salmon sperm DNA (ThermoFisher) at 42°C for 2 hr.
 
@@ -363,11 +435,11 @@ TGGTAGCAGAGGATGGTTTCGATCCATCGACCTCTGGGTTATGGGCCCAGCACGCTTCCGCT GCGCCACTCTGCT
 
 U2 snRNA: GAACAGATACTACACTTGATCTTAGCCAA
 
-## Dot blot protocol
+### Dot blot protocol
 
 HeLa cells were cultured as previously described. Prior to harvesting, 4-thio-uridine was added to the media to a final concentration of 100 μM for 1 hr. Total RNA from Hela cells (Control [−4SU], Control [+4 SU], YTHDC1-overexpression, siYTHDC1) was isolated as previously described). RNA was diluted to 250 ng/μL, serially diluted, and spotted on Amersham HyBond-N +membrane. The membrane was crosslinked using the Stratalinker 2400 autocrosslink option. The membrane was blocked overnight at 4°C in 10% BSA in TBST. After blocking, Streptavidin-HRP (BIO-RAD) was added 1:10,000 and incubated at room temperature for 1 hr. The membrane was washed 8 times for 10 min at room temperature, and exposed using chemiluminescence with SuperSignal West Pico Luminol/Enhancer solution (ThermoFisher) in the FluorChem M system (ProteinSimple, San Jose, CA). Following exposure, the membrane was incubated in methylene blue (Sigma Aldrich) at room temperature for 10 min, and washed briefly with water before imaging.
 
-## RT-PCR
+### RT-PCR
 
 RT-PCR was performed using SuperScript III Platinum One-Step qRT-PCR Kit w/ROX (ThermoFisher) from 50 ng total RNA on an Applied Biosystems 7300 Real-Time PCR System.
 
@@ -395,17 +467,17 @@ F: GTAACGCTGCCTCCAGCTAC
 
 R: CCAAGCGGTGAGGTACTTGT
 
-## LC-MS/MS
+### LC-MS/MS
 
 2 × 107 HeLa cells (2 × 15 cm plates) were subjected to 72 hr knockdown using Lipofectamine RNAiMAX according to the manufacturer's protocol. After 72 hours, cells were washed with PBS and collected with a Cell Lifter (Corning). 10% was used for analysis of total RNA, and the remainder was separated into cytoplasmic and nuclear components. For all samples of mRNA, mRNA was isolated by polyA selection using Dynabeads mRNA DIRECT (ThermoFisher) followed by ribosomal RNA depletion by RiboMinus Eukaryotic Kit v2 (ThermoFisher), then concentrated using RNA Clean and Concentrator (Zymo Research). 100 ng of mRNA was digested using Nuclease P1 (Wako Chemicals, Richmond, VA) at 37°C for 2 hr in a reaction volume of 24 μL. Escherichia coli alkaline phosphatase (Sigma Aldrich) was added to the solution along with 5 μL 1M ammonium bicarbonate (aq.) and incubated at 37°C over night. Solutions were diluted 1:2 with water, filtered (0.22 μm) and subjected to LC-MS/MS on an Agilent 6460 Triple Quad MS-MS mass spectrometer coupled to a 1290 UHPLC for multiple reaction monitoring. Nucleotides were separated using a ZORBAX XDB-C18 column (Agilent, 927700–902) with mobile phase of water +0.1% formic acid (Sigma Aldrich) (Buffer A) and methanol +0.1% formic acid. Calibration curves for LC-MS/MS runs were generated prior to each experiment, and used to calculate analyte concentrations for experimental samples. Injections were conducted induplicate and averaged to generate one data point.
 
-## Analysis of high-throughput sequencing data
+### Analysis of high-throughput sequencing data
 
 YTHDC1 PAR-CLIP was performed as previously described (Xu et al., 2014). YTHDC1-RIP was performed according to the procedure described in the literature (Peritz et al., 2006) using polyA selected RNA and ribosomal-RNA-depleted RNA as biological replicates. mRNA for subcellular RNA-seq was isolated by ribosomal depletion. A summary of sequencing data is provided as Supplementary file 1.
 
 Treatment of raw data: reads were trimmed using Cutadapt v.1.4.1 (Martin, 2011) and aligned to hg19 using TopHat v.2.0.11 (Kim et al., 2013). PAR-CLIP peaks were called using PARalyzer v.1.5 (Corcoran et al., 2011) with default parameters. Binding motifs were determined by HOMER v.4.7 (Heinz et al., 2010). Differential expression between replicate data sets was calculated using Cufflinks v.2.2.1 (Trapnell et al., 2012). Overlapping genomic elements were assessed using BedTools v.2.2.1 (Quinlan and Hall, 2010) and analyzed using PeakAnnotator v.1.4 (Salmon-Divon et al., 2010). Differential splicing was analyzed using MISO v.0.5.3 (Katz et al., 2010).
 
-## Example MISO code
+### Example MISO code
 
 #Make indexed gff file after downloading their annotation for hg19
 #running for SE (in siYTHDC1_PE150 folder)
@@ -429,19 +501,19 @@ Raw and processed data files have been deposited in the Gene Expression Omnibus 
 
 A summary of sequencing experiments can be found in Supplementary file 1.
 
-## Immunofluorescence
+### Immunofluorescence
 
 HeLa cells were seeded in eight chamber microscope slides (Nunc 155409) and treated with siRNA as previously described. After 72 hr, cells were washed with PBS, then fixed with 4% paraformaldehyde (Sigma) in PBST (PBT +0.05% Tween-20), freshly prepared by heating at 65° C until clear, at RT for 15 min. Fixative was removed and chilled (−20°C) methanol was added dropwise and incubated at RT for 15 min. Cells were washed with PBS and blocked with 10% FBS in PBST at RT for 1 hr. Primary antibody incubation was performed in 10% FBS in PBST at 4°C overnight. After 4 × 5 min washes with PBST secondary antibody incubation was performed at RT for 1 hr. After 4 × 5 min washes with PBST, cells were treated with SlowFade Gold antifade reagent with DAPI (Molecular Probes) and imaged using a Leica TCS SP5 II STED laser scanning confocal microscope (Leica Microsystems, Inc.).
 
-## PolyA imaging
+### PolyA imaging
 
 HeLa cells were fixed in PFA and MeOH as above. Following methanol treatment, cells were washed with PBST. PBST was removed and RISH-positive control DIG probe (PanPath Q152P.9900) (37-mer oligonucleotide complementary to PolyA) was added as a 1:3 dilution in PBST and incubated at 37° C for 2 hr. Cells were washed four times for 5 min with PBST at RT and subjected to an IF staining protocol. Image quantification was performed using Fiji (Schindelin et al., 2012).
 
-## Nascent RNA-labeling
+### Nascent RNA-labeling
 
 Nascent RNA labeling was conducted using the Click-iT Nascent RNA Capture Kit (Molecular Probes) according to the manufacturer's protocol. Briefly, HeLa cells treated with siRNA were fed 5-ethynyl-urudine (EU) at a concentration of 200 μM for 4 hr. After 4 hr, RNA wasisolated from whole cells (10%) and nuclear and cytoplasmic portions. Click chemistry was performed on RNA, precipitated in ethanol and enriched using provided streptavidin beads. cDNA synthesis was performed on the beads using SuperScript VILO (Invitrogen). RT-PCR was performed using FastStart Essential DNA Green Master in a LightCycler 96 (Roche).
 
-## RT-PCR primer sequences
+### RT-PCR primer sequences
 
 APC
 
@@ -479,13 +551,13 @@ F: TGACACTGGCAAAACAATGCA
 
 R: GGTCCTTTTCACCAGCAAGCT
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 All reporter experiments were conducted in HeLa Tet-off cells (Clontech, 631156) cultured in DMEM with 1% 100 x Pen Strep (Gibco) supplemented with 10% Tet-System approved FBS (Clontech, 631106). Cultures were maintained in 200 μg/mL G418 (Takara) and tested negative for Mycoplasma contamination using the LookOut Mycoplasma PCR Detection Kit (Sigma Aldrich MP0035).
 
 In a six well plate, ~1 × 106 cells were cultured with 100 ng/mL doxycycline (Dox). Cells were transfected with 50 ng reporter plasmid and 450 ng effector plasmid using Lipofectamine LTX according to manufacturer’s protocol. The following day, cells were washed with PBS, trypsinized and washed thoroughly (4 × 15 mL PBS) to induce luciferase expression. Washed pellets were suspended in 3 mL culture media and seeded in 96-well plates. After 2 hr of induction, Dox was added to a final concentration of 500 ng/mL to halt firefly transcription. Luciferase was quantified using the Dual-Glo Luciferase Assay System (Promega, Madison, WI) in a Synergy HTX Multi-Mode Reader (BioTek). Each sample was normalized to Renilla luciferase signal from the same well.
 
-## Isoform analysis by RT-PCR
+### Isoform analysis by RT-PCR
 
 RNA was collected as previously described, including treatment with DNase. Reverse transcription was conducted with SuperScript VILO according to the manufacturer’s protocol, and PCR was conducted using primer sequences designed to span the region in question using Pfusion High Fidelity PCR Master Mix (NEB). Fragments were separated on 3.0% agarose and visualized using ethidium bromide (Sigma Aldrich).
 
@@ -507,7 +579,7 @@ R: ACCAGCTCCTACTCCAGCAA
 
 Product observed: 525 bp
 
-## Protein co-immunoprecipitation
+### Protein co-immunoprecipitation
 
 HeLa cells transfected with empty plasmid or YTHDC1-Flag were washed with PBS twice, then collected using a cell lifter and spun at 2000 x g for 5 min. Pellets were suspended in two volumes (compared to pellet) Buffer A (10 mM HEPES, pH 7.5, 1.5 mM MgCl2, 10 mM KCl, 0.5 mM DTT), vortexed briefly, and incubated on ice for 15 min. NP-40 was added to a final concentration of 0.25%, vortexed, and left on ice for 5 min. Suspensions were spun at 2000 x g for 3 min at 4°C. The supernatant (cytoplasmic extract) was removed and saved. Nuclei were suspended in two volumes of Buffer B (20 mM HEPES, pH 7.5, 0.42 M KCl, 4 mM MgCl2, 1 mM EDTA, 0.5 mM DTT, 10% glycerol), vortexed briefly, and incubated on ice for 30 min. The suspension was spun at 15,000 x g for 15 min at 4° C, and supernatant combined with the cytoplasmic extract. This was incubated on ice for 15 min and spun again at 15,000 x g for 15 min at 4° C. The supernatant was removed and used as the HeLa lysate.
 
@@ -517,18 +589,18 @@ Endogenous IP: lysate from untreated HeLa cells was treated with rabbit IgG cont
 
 SRSF3 and NXF1 RIP-seq in the presence and absence of YTHDC1 was conducted following immunoprecipitation under these conditions and subsequent Ribo(-) treatment of isolated RNA.
 
-## CLIP-LC-MS/MS
+### CLIP-LC-MS/MS
 
 Crosslinking was performed using the Stratalinker 2400 (Stratagene) autocrosslink option on untreated HeLa cells. Protein co-IP was performed as described, and washed beads were resuspended in 100 uL wash buffer. 100 uL 2X Proteinase K buffer (100 mM Tris-HCl, pH 7.5, 200 mM NaCl, 2 mM EDTA, 1% SDS) was added, followed by Proteinase K (Thermo Fisher) to a final concentration of 500 ug/mL and heated for 1 hr at 65°C. RNA was isolated using TriZol. Recovered RNA was purified using two rounds of poly(A)-selection, digested, and subjected to LC-MS/MS.
 
-## Protein expression and purification from E. coli
+### Protein expression and purification from E. coli
 
 His-SRSF3-AA1-85, constituting the RRM of SRSF3, was transformed into NEB T7-Express competent E. coli (NEB), expanded to 4L and shaken at 37°C. When the optical density reached 0.6–0.8, IPTG was added to a final concentration of 2 mM and the culture was cooled to 16°C overnight. Cultures were collected by centrifugation and resuspended in lysis buffer (20 mM Tris-HCl, pH 7.5, 400 mM NaCl, 1 mM PMSF) for sonication. Sonication was performed on ice at 25% amplitude for 15 min (10 s on, 10 s off, 30 min total). The supernatant was collected after centrifugation at 13,000 x g for 30 min at 4°C and filtered (0.22 um). The supernatant was applied to Ni-NTA resin (GE Healthcare) by gravity flow and washed extensively with wash buffer (lysis buffer + 30 mM imidazole), and eluted in elution buffer (lysis buffer + 500 mM imidazole). The eluate was concentrated and further purified by Superdex 75 gel filtration in a buffer containing 10 mM Tris-HCl, pH 7.5, 150 mM NaCl and 1 mM DTT. The protein was concentrated to ~2.5 mg/mL and used for in vitro IP.
 
-## In vitro IP
+### In vitro IP
 
 Purified recombinant His-SRSF3-AA1-85 was diluted to a final concentration of 500 nM in IPP buffer (10 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.1% NP-40, 0.5 mM DTT and 20 U/uL SUPERase-In RNase Inhibitor along with 800 ng HeLa mRNA fragmented with RNA fragmentation reagents [ThermoFIsher]). Protein and RNA were mixed at 4°C for 2 hr. Dynabeads His-Tag Isolation and Pulldown beads (ThermoFisher, 20 uL) were added after being washed four times and resuspended in 40 uL IPP buffer. The mixture was rotated for an additional two hours. The beads were immobilized and the aqueous phase (flow through) precipitated by ethanol precipitation. The beads were washed four times in 500 uL IPP buffer and homogenized in TriZol reagent. RNA was collected and digested for LC-MS/MS to quantify m6A in each sample.
 
-## Accession numbers
+### Accession numbers
 
 Raw and processed data files have been deposited in the Gene Expression Omnibus (GEO, http://www.ncbi.nlm.nih.gov/geo) and are accessible under GSE74397. A summary of all sequencing samples can be found in Supplementary file 1.

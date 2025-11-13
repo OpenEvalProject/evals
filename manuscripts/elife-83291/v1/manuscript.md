@@ -19,11 +19,11 @@
 
 ### Affiliations
 
-1. https://ror.org/008cfmj78 Wyss Institute, Harvard University Boston United States
+1. Wyss Institute, Harvard University Boston United States ([ROR:008cfmj78](https://ror.org/008cfmj78))
 2. Department of Genetics, Harvard Medical School Boston United States
-3. https://ror.org/002pd6e78 Massachusetts General Hospital Center for Cancer Research, Harvard Medical School Charlestown United States
-4. https://ror.org/00py81415 Department of Biomedical Engineering, Duke University Durham United States
-5. https://ror.org/00py81415 Department of Computer Science, Duke University Durham United States
+3. Massachusetts General Hospital Center for Cancer Research, Harvard Medical School Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+4. Department of Biomedical Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+5. Department of Computer Science, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -51,15 +51,27 @@ Manipulation of TFs allows reprogramming of cell identity and offers a rapid and
 
 ## Results
 
-## In silico prediction of granulosa cell-regulating TFs
+### In silico prediction of granulosa cell-regulating TFs
 
 We began by predicting candidate TFs that could direct the differentiation of hiPSCs to granulosa-like cells. We first selected 21 TFs that were differentially expressed in granulosa cells compared to hESCs and early mesoderm, using previously published datasets for these cell types (Irie et al., 2015; Zhang et al., 2018). We also included five TFs based on previous developmental biology studies, mainly showing that these TFs were important for mouse ovarian development (Manuylov et al., 2008; Niu and Spradling, 2020; Voronina et al., 2007; Richards, 2001; Nicol et al., 2019). Finally, we identified nine additional TFs that we predicted to be upstream of the others on the list, based on a gene regulatory network analysis taking into account co-expression data as well as binding motifs (Kramme et al., 2021a). The list of TFs (35 in total) is in Figure 2—source data 2. Next, we assembled a PiggyBac library by cloning cDNAs into a barcoded destination plasmid (Kramme et al., 2021b). The TFs were expressed under the control of a doxycycline-inducible promoter, which we characterized in previous work (Kramme et al., 2021a).
 
-## Overexpression screening identifies TFs that drive granulosa-like cell formation
+### Overexpression screening identifies TFs that drive granulosa-like cell formation
 
 To enable identification of granulosa-like cells, we used CRISPR/Cas9-mediated homology-directed repair to engineer an hiPSC line with a homozygous knock-in of a T2A-tdTomato reporter at the C-terminus of FOXL2 (Figure 2—figure supplement 1). We chose FOXL2 due to its specific expression in granulosa cells (Ottolenghi et al., 2005; Cocquet et al., 2002). Next, the pooled cDNA library was co-electroporated with a PiggyBac transposase expression plasmid, and a population of cells with integrated transposons was selected by treatment with puromycin. In these experiments, we tested several different library compositions and DNA concentrations (see Methods, Figure 2—source data 2, and Figure 2—figure supplement 2).
 
 For screening, we induced TF expression with doxycycline, and sorted reporter-positive cells after 5 days of treatment. In addition to screening TF expression in the pluripotency-supporting mTeSR Plus medium, we also expressed TFs following differentiation of hiPSCs to early-stage mesoderm by treatment with the GSK3 inhibitor CHIR99021. The TF expression resulted in a small fraction of FOXL2+ cells, from which we extracted gDNA and sequenced barcodes. In both conditions, we observed barcodes for NR5A1 to be strongly enriched in FOXL2+ cells relative to negative cells, as well as relative to the barcodes in the pre-induced hiPSC population (Figure 2A). Other TFs showed more modest barcode enrichment (RUNX2, GATA4, and TCF21), or enrichment in only one condition (KLF2 and NR2F2). Interestingly, barcodes for FOXL2 were strongly depleted (Figure 2A), suggesting negative feedback whereby exogenous FOXL2 directly or indirectly suppresses the expression of the endogenous FOXL2 reporter allele.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig2-v1.jpg)
+
+**Figure 2.:** (A) Pooled screening of barcoded TF cDNA libraries (see Methods for details) identifies TFs enriched in FOXL2-T2A-tdTomato+ cells. Library #1 is the full library of 35 TFs, and library #2 is a library containing a subset of 18 TFs. Empty values correspond to TFs that were absent in library #2. (B) Combinatorial screening identifies minimal TF combinations for inducing granulosa-like cells. TF combinations were integrated into human induced pluripotent stem cells (hiPSCs); a ‘1’ in the left-hand box signifies the presence of the TF in the combination corresponding to that row. For each combination, the polyclonal hiPSC population was differentiated with TF induction (see Methods). For the last 24 hr of differentiation, cells were additionally treated with FSH and androstenedione. Estradiol production and granulosa markers were measured by ELISA and flow cytometry after a total of 5 days. NR5A1 expression induced high levels of estradiol synthesis, but the combination of NR5A1 with RUNX1 or RUNX2 was required to give the best results for granulosa markers. ‘All markers’ signifies FOXL2+CD82+AMHR2+EPCAM−.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic for Cas9/HDR knock-in with a donor plasmid followed by selection marker excision. Primer-binding sites for genotyping are also shown (not to scale). (B) Genotyping to verify homozygous editing. Initial screening was performed with primers 176/177. Candidate clones (denoted A, B, C, D) were further verified by additional genotyping. Note that primers 127/128 bind outside of the region used as homology arms for the donor plasmid.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** A PiggyBac transposon library of barcoded doxycycline-inducible TF cDNAs was electroporated into iPSCs at varying concentrations. The amount of transposase plasmid was held constant (500 ng). After selection, gDNA was extracted and the transposon copy number was measured by quantitative polymerase chain reaction (qPCR) using primer pairs CK107/108 (amplifies RPP30 genomic control) and qMPS015 (amplifies TET3G, present in all TF expression plasmids). To calculate the copy number, a standard curve was generated using a control plasmid with a known 1:1 ratio of RPP30 and TET3G. Each point represents a biological replicate, and error bars represent 95% confidence intervals of the technical replicates. The curve in light gray is a weighted-least-squares fit of a zero-truncated Poisson mean, which represents the theoretical relationship. For pooled screening, a higher copy number improves the sensitivity to detect multiway interactions, at the cost of less specificity because the reporter-positive cells will also contain ‘free rider’ TFs that are not important. In this study, we mostly performed screening at 5 fmol (medium-copy), with two experiments at 50 fmol (high-copy).
 
 Using the top TFs identified in barcode screening (NR5A1, RUNX1/RUNX2, TCF21, and GATA4) we then further optimized the conditions for generation of FOXL2+ cells. We included RUNX1 in this list along with RUNX2 because the two TFs are structurally and functionally similar, and RUNX1 is known to play an important role for granulosa cell maintenance in the mouse (Nicol et al., 2019). We integrated these TFs into hiPSCs and established monoclonal lines, which we screened by flow cytometry after TF induction. We monitored FOXL2-tdTomato as well as the surface markers CD82, follicle-stimulating hormone receptor (FSHR), and EpCAM. CD82 is absent in hiPSCs, but highly expressed in granulosa cells beginning at the primordial follicle stage (Zhang et al., 2018). FSHR is specific for late-stage (secondary/antral) granulosa cells and Sertoli cells (the male equivalent). By contrast, EpCAM is expressed in hiPSCs and epithelial cells, but not granulosa cells (Zhang et al., 2018).
 
@@ -67,11 +79,23 @@ Out of 23 lines tested, 4 showed >50% FOXL2-tdTomato+CD82+EpCAM− cells after 5
 
 Subsequently, we set out to determine which TFs were sufficient for induction of granulosa-like cells. We tested combinations of hit TFs from our screening (NR5A1, RUNX2, TCF21, GATA4, KLF2, and NR2F2) as well as TFs reported to be important for ovarian function (RUNX1, WT1 [−KTS isoform], and FOXL2). We tested expression of each TF individually, as well as combinations of other TFs and our top hit NR5A1. In addition to flow cytometry, we also measured production of estradiol after treatment of the cells with FSH and androstenedione. We observed that combinations containing NR5A1 and RUNX1 or RUNX2 upregulated FOXL2-tdTomato expression, as well as granulosa surface markers AMHR2 and CD82 (Figure 2B). Estradiol production was strongly induced by NR5A1, and weakly by GATA4 and KLF2. RUNX1 and RUNX2 expression somewhat decreased estradiol production, suggesting a regulatory role of these factors. Overall, these results indicate that NR5A1 and either RUNX1 or RUNX2 are sufficient to induce a granulosa-like phenotype.
 
-## TF-mediated differentiation drives granulosa-like cell formation based on gene expression signatures
+### TF-mediated differentiation drives granulosa-like cell formation based on gene expression signatures
 
 We next examined the gene expression of our granulosa-like cells. We compared the bulk transcriptomes of hiPSCs, COV434 and KGN ovarian tumor cells, and sorted FOXL2+CD82+ granulosa-like cells from day 5 of a polyclonal differentiation with expression of our previously identified top TFs (NR5A1, TCF21, GATA4, and RUNX1; see Figure 2). As an additional control, we included hiPSCs differentiated under the same conditions but without TF induction.
 
 In the absence of TF expression, the hiPSCs differentiated into cells expressing mesoderm markers (full gene expression data are provided in the Source Data for Figure 3). At day 5 of differentiation, we observed strong upregulation relative to hiPSCs of genes associated with both lateral mesoderm (HAND1 and BMP5) as well as paraxial mesoderm (PAX3), which potentially indicates the presence of a heterogeneous population. Upregulated genes were enriched for gene ontology terms related to heart, blood vessel, muscle, and skeletal development (Supplementary file 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig3-v1.jpg)
+
+**Figure 3.:** (A) Gene expression of selected markers in granulosa-like cells. Log2(TPM) values for gondal/granulosa, adrenal, and pluripotent marker genes were compared between 7 wpf male and female fetal gonad somatic cells, primary and primordial granulosa cells, TF-induced FOXL2+ cells, KGN cells, COV434 cells, and human induced pluripotent stem cells (hiPSCs). (B) Transcriptome overlap measure (TROM) comparison of TF-induced FOXL2+ cells, COV434 cells, and hiPSCs with published in vivo data from different time points in ovarian development. (C) Regulatory effects of granulosa-related TFs. RNA-seq was performed after 2 days of TF overexpression in hiPSCs (TFs shown in magenta). A differential gene expression (DEG) analysis was performed for all samples relative to the hiPSC control (n = 2 biological replicates each). Black arrows represent significant (false discovery rate <0.05) upregulation, with the width proportional to the log2-fold change. Interactions are shown between TFs (magenta) and granulosa marker genes (yellow), as well as the stromal/theca marker NR2F2 (red) and the pre-granulosa marker LGR5 (green). (D–I) Volcano plots showing DEGs in the TF overexpression experiments. Colors are as in panel C; other DEGs not listed in panel C are shown in blue. Not all DEGs could be labeled due to space limits, but they are listed in the Source Data for this figure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Lines generated by integrating the indicated transcription factor (TF) expression vectors into the F3/FOXL2-T2A-tdTomato hiPSC reporter line were evaluated by flow cytometry for FOXL2, CD82, EPCAM, and follicle-stimulating hormone receptor (FSHR). Note that line F3/N.T #5 lacks the RUNX2 expression vector (see panel C). (B) Lines generated by integrating the indicated TF expression vectors into the F66 wild-type hiPSC line were evaluated by flow cytometry for CD82 and EPCAM, as well as for estradiol production and qPCR to measure AMHR2 expression (the no-TF control was used as a reference for calculating ∆∆Ct). (C) Genotyping to detect integrated TF expression vectors in selected lines. The negative control was wild-type F66 gDNA, and the positive control was gDNA plus TF Library #1. Primer sequences are listed in Supplementary file 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Method of inducing granulosa-like cells from hiPSCs. Vertical black bars represent media changes. (B) Dose dependence for the production of FOXL2+CD82+EPCAM− granulosa-like cells, shown in two monoclonal lines. Granulosa-like cells are efficiently induced from both clones (but not from control cells lacking TF expression vectors) in a doxycycline-dependent manner. (C) Representative gating strategy to analyze flow cytometry data.
 
 With TF induction, we observed expression of bipotential gonad and granulosa markers, notably including AMHR2, CD82, FOXL2, FSHR, IGFBP7, KRT19, STAR, and WNT4 (Figure 3A). The ovarian stromal/theca cell marker NR2F2 was also upregulated. The expression levels (transcripts per million (TPM)) were generally comparable to those observed in previously published data from granulosa cells and human fetal gonad (Zhang et al., 2018; Sybirna et al., 2020). The only major exception was WT1, which had much weaker expression than in vivo (although still greater than hiPSCs and KGN cells). We also examined the expression of pluripotent and adrenal markers to check for incomplete or off-target differentiation. We did not observe adrenal marker expression, although we did note some residual POU5F1 (encoding the OCT4 protein) expression that may indicate that our polyclonal population did not fully differentiate. COV434 cells, which were commonly considered as granulosa-like cells but recently reclassified as small cell ovarian carcinoma (Price et al., 2012; Zhang et al., 2000; Karnezis et al., 2021), did not express most granulosa markers, but did express high levels of WT1 and NR2F2. By contrast, KGN cells expressed high levels of most granulosa markers, but not WT1.
 
@@ -83,7 +107,7 @@ In the differential expression analysis, we additionally found that GATA4 upregu
 
 Finally, we conducted a gene ontology enrichment analysis of upregulated and downregulated genes for each TF (Mi et al., 2021). Significantly enriched terms were mainly related to generic developmental processes (e.g., ‘tissue development’, see Supplementary file 3) although terms related to gonad development were also significantly enriched for NR5A1 upregulated genes.
 
-## Granulosa-like cells respond to FSH and perform steroidogenesis
+### Granulosa-like cells respond to FSH and perform steroidogenesis
 
 We next validated the ability of our granulosa-like cells to carry out one of the key endocrine functions of granulosa cells: the production of estradiol. In the ovary, theca cells convert cholesterol to androstenedione, which is the substrate for estradiol production in granulosa cells. The rate-limiting step is oxidative decarboxylation by CYP19A1 (aromatase), producing estrone, which is subsequently reduced to estradiol by enzymes in the HSD17B family, typically HSD17B1 in granulosa cells (Hakkarainen et al., 2015). In vivo, this pathway of estrogen synthesis is stimulated by FSH (Sasson et al., 2004; Welsh et al., 1984).
 
@@ -91,17 +115,25 @@ We treated our granulosa-like cells with androstenedione, in the presence or abs
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig4-v1.jpg)
 
-**Figure 4.:** (A) Granulosa-like cells produce estradiol in the presence of androstenedione and either FSH or forskolin (FK). Results are shown from nine monoclonal populations (see Figure 3—source data 2) of granulosa-like cells (n = 2 biological replicates for each of 9 clones, error bars are 95% CI), as well as the COV434 and KGN human ovarian cancer cell lines, HGL5 immortalized primary human granulosa cells, and primary adult mouse granulosa cells. Asterisks mark lines where FSH production significantly (two-tailed t-test, p < 0.05) increased upon stimulation. Exact p values are given in the Source Data. (B) Ovaroids produce both estradiol and progesterone. Estradiol production requires androstenedione and is stimulated by FSH. Results are shown for ovaroids formed with six different monoclonal samples of granulosa-like cells (n = 1 sample per ovaroid per condition), at 3 days post-aggregation.Figure 4—source data 1.
+**Figure 4.:** (A) Granulosa-like cells produce estradiol in the presence of androstenedione and either FSH or forskolin (FK). Results are shown from nine monoclonal populations (see Figure 3—source data 2) of granulosa-like cells (n = 2 biological replicates for each of 9 clones, error bars are 95% CI), as well as the COV434 and KGN human ovarian cancer cell lines, HGL5 immortalized primary human granulosa cells, and primary adult mouse granulosa cells. Asterisks mark lines where FSH production significantly (two-tailed t-test, p < 0.05) increased upon stimulation. Exact p values are given in the Source Data. (B) Ovaroids produce both estradiol and progesterone. Estradiol production requires androstenedione and is stimulated by FSH. Results are shown for ovaroids formed with six different monoclonal samples of granulosa-like cells (n = 1 sample per ovaroid per condition), at 3 days post-aggregation.
 
 The levels of estradiol produced by our three FSH-responsive lines were similar to those produced by KGN human granulosa tumor cells, which also showed responses to FSH and forskolin (Figure 4A). In contrast, COV434 cells, which showed no FSHR expression in our RNA-seq data (Figure 3A), were unresponsive to FSH alone, producing estradiol only in the presence of forskolin. HGL5 immortalized human granulosa cells did not produce estradiol under any condition. Primary adult mouse ovarian somatic cells produced similar amounts of estradiol to our hiPSC-derived granulosa-like cells (Figure 4A). However, the mouse cells did not show a response to FSH or forskolin, possibly because they were already exposed to FSH in vivo.
 
 We also investigated whether our granulosa-like cells maintained their steroidogenic activity during ovaroid (ovarian organoid) co-culture with hPGCLCs (see below). We measured hormone levels in ovaroid supernatants in the presence or absence of androstenedione and FSH. In addition to estradiol, we also measured progesterone, which granulosa cells produce in vivo after ovulation and formation of the corpus luteum. We observed production of both hormones in five out of six samples (Figure 4B). Estradiol was produced only in the presence of androstenedione supplementation, and levels increased with FSH treatment. Progesterone was produced in all conditions but was highest in the absence of androstenedione.
 
-## Granulosa-like cells support germ cell development within ovaroids
+### Granulosa-like cells support germ cell development within ovaroids
 
 Current methods for inducing and culturing hPGCLCs produce cells corresponding to immature, premigratory PGCs that lack expression of gonadal PGC markers such as DAZL (Irie et al., 2015). During fetal development, PGCs mature through interactions with gonadal somatic cells, with DAZL playing a key role in downregulation of pluripotency factors and commitment to gametogenesis (Nicholls et al., 2019; Chen et al., 2014). This process has recently been recreated in vitro using mouse fetal ovarian somatic cells (Yamashiro et al., 2018), which allowed the development of hPGCLCs to the oogonia-like stage. We hypothesized that in vitro-derived human granulosa-like cells could perform a similar role, with the potential for eliminating interspecies developmental mismatches. Therefore, we combined our granulosa-like cells with hPGCLCs to form ovarian organoids, which we termed ovaroids.
 
 To generate ovaroids, we aggregated these two cell types in low-binding U-bottom wells, followed by transfer to air–liquid interface Transwell culture. As a comparison, we followed a previously described protocol (Yamashiro et al., 2020) to isolate fetal mouse ovarian somatic cells and aggregate them with hPGCLCs. By immunofluorescence, we observed expression of the mature marker DAZL beginning in a subset of OCT4 + hPGCLCs at 4 days of co-culture with hiPSC-derived granulosa-like cells (Figure 5A). In contrast, robust DAZL expression in co-culture with mouse cells was not observed until day 32 (Figure 5B), with fainter expression visible at day 26 (Supplementary file 4). Similarly, in a previous study using the same hPGCLC line and anti-DAZL antibody, DAZL expression was observed only after 77 days of co-culture with mouse fetal testis somatic cells (Kobayashi et al., 2022).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig5-v1.jpg)
+
+**Figure 5.:** Scale bars in immunofluorescence images are 40 µm. (A) Human ovaroid (F66/N.R1.G.F #4 granulosa-like cells + hPGCLCs) sections at days 2, 4, 14, and 32 of culture, stained for FOXL2 (granulosa), OCT4 (germ cell/pluripotent), and DAZL (mature germ cell). (B) Mouse ovaroid (fetal mouse ovarian somatic cells + hPGCLCs) sections stained as in panel A. (C) Fraction of OCT4+ and DAZL+ cells relative to the total (DAPI+) over time in human ovaroids and mouse xeno-ovaroids. Counts were performed at 11 time points on images from 2 replicates of human ovaroids (F66/N.R1.G.F #4 and F66/N.R2 #1 granulosa-like cells + hPGCLCs) and 1 replicate of mouse xeno-ovaroids. (D) Human ovaroid (F66/N.R2 #1 granulosa-like cells + hPGCLCs) sections at days 4 and 8 of culture, stained for SOX17 (germ cell), TFAP2C (early germ cell), and AMHR2 (granulosa).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Some DAZL+OCT4− cells (magenta arrows) are visible, as well as DAZL+OCT4+ cells (cyan arrows). Ovaroids are also beginning to form follicle-like morphology (yellow arrows). Scale bar is 40 µm.
 
 The fraction of DAZL+ cells reached its maximum at day 14 in human ovaroids and day 38 in mouse ovaroids (Figure 5C). In human ovaroids, the fraction of OCT4+ cells declined after day 8. In mouse ovaroids, the fraction of OCT4+ cells also declined over time. At day 16 in human ovaroids, DAZL+OCT4− cells were also apparent (Figure 5—figure supplement 1) in addition to DAZL+OCT4+ cells, and past day 38 there were more DAZL+ cells than OCT4+ cells in total (Figure 5C). The downregulation of OCT4 in DAZL+ oogonia occurs in vivo during the second trimester of human fetal ovarian development (Anderson et al., 2007); however, we did not observe the transition of DAZL to exclusively cytoplasmic localization that was reported to take place at this stage. Expression of TFAP2C, an early-stage PGC marker, declined during ovaroid culture (Figure 5D) and was almost entirely absent by day 8. By contrast, SOX17 expression was still visible on day 8, and OCT4 and DAZL expression continued to day 54 (Figure 5A, C).
 
@@ -117,7 +149,7 @@ To further examine the gene expression of hPGCLCs and somatic cells in this syst
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83291/elife-83291-fig7-v1.jpg)
 
-**Figure 7.:** (A) Expression (log2 CPM) of selected granulosa (FOXL2), stroma/theca (NR2F2), and germ cell (PRDM1) markers. (B) Leiden clustering shows four main clusters; the expression (log2 CPM) of marker genes is plotted for each. (C) Mapping of cells onto a human fetal ovary reference atlas (Garcia-Alonso et al., 2022) and assignment of cell types. (D) Proportion of somatic cell types, germ cells, DAZL+ cells, and DDX4+ cells in ovaroids from each day.Figure 7—source data 1.
+**Figure 7.:** (A) Expression (log2 CPM) of selected granulosa (FOXL2), stroma/theca (NR2F2), and germ cell (PRDM1) markers. (B) Leiden clustering shows four main clusters; the expression (log2 CPM) of marker genes is plotted for each. (C) Mapping of cells onto a human fetal ovary reference atlas (Garcia-Alonso et al., 2022) and assignment of cell types. (D) Proportion of somatic cell types, germ cells, DAZL+ cells, and DDX4+ cells in ovaroids from each day.
 
 We also observed a cluster of hPGCLCs expressing marker genes such as CD38, KIT, PRDM1, TFAP2C, PRDM14, NANOG, and POU5F1. Notably, X-chromosomal lncRNAs XIST, TSIX, and XACT were all more highly expressed (an average of ~80-, ~20-, and ~2900-fold, respectively) in the hPGCLCs relative to other clusters (Figure 7B), suggesting that the hPGCLCs were starting the process of X-reactivation (Vallot et al., 2017), which in hPGCs is associated with high expression of both XIST and XACT (Chitiashvili et al., 2020). The X-chromosomal HPRT1 gene, known to be more highly expressed in cells with two active X chromosomes (Epstein, 1972), was also ~3-fold upregulated (Figure 7—source data 1).
 
@@ -143,27 +175,471 @@ Overall, our rapid, scalable, and efficient method of producing human granulosa-
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>CD-1</td>
+      <td>Charles River Labs</td>
+      <td>RRID:IMSR_CRL:022</td>
+      <td>Used for fetal ovary isolation</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>BALB/c</td>
+      <td>Charles River Labs</td>
+      <td>RRID:IMSR_APB:4790</td>
+      <td>Used for adult ovary isolation</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>F3 iPSC</td>
+      <td>ATCC</td>
+      <td>ATCC-BXS0116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>F66 iPSC</td>
+      <td>Other</td>
+      <td></td>
+      <td>Previously derived in-house from the NIA Aging Cell Repository fibroblast line AG07141 using Epi5 footprint-free episomal reprogramming</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>F2 PGCLC</td>
+      <td>Kobayashi et al., 2022; PMID:35148847</td>
+      <td>PMID:35148847</td>
+      <td>Derived from the ATCC-BXS0115 hiPSC line</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHDR-FOXL2-T2A-tdTomato-PuroTK</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192892</td>
+      <td>For engineering reporter hiPSCs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-FOXL2-cterm</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192893</td>
+      <td>For engineering reporter hiPSCs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Super PiggyBac Transposase Expression Vector</td>
+      <td>System Bioscience</td>
+      <td>Cat:PB210PA-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-TCF21</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192894</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-JUN</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192895</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-GATA4</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192896</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-CEBPD</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192897</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-EMX2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192898</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-MYC</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192899</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-NR2F2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192900</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-FOSB</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192901</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-KLF2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192902</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-ZBTB16</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192903</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-YBX1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192904</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-LHX1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192905</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-WT1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192906</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-JUNB</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192907</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-KLF4</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192908</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-KLF6</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192909</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-HOXC9</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192910</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-ATF4</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192911</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-PPARG</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192912</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-EGR1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192913</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-FOXL2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192914</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-NR5A1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192915</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-TSC22D3</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192916</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-MAFF</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192917</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-ELK1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192918</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-NR1H2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192919</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-TOX2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192920</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-LHX9</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192921</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-ZFPM2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192922</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-HOPX</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192923</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-FOS</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192924</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-NR4A1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192925</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-RUNX2</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192926</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-TAF4B</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192927</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB-cT3G-cERP2-RUNX1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_192928</td>
+      <td>Dox-inducible TF expression</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AMHR2 (Rabbit IgG, polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat:PA5-13902; RRID:AB_2305463</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DAZL (Rabbit IgG, monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat:ab215718; RRID:AB_2893177</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FOXL2 (Goat IgG, polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat:NB100-1277; RRID:AB_2106187</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-44838 (Mouse IgG, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat:611202; RRID:AB_398736</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX17 (Goat IgG, polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat:AF1924; RRID:AB_355060</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TFAP2C (Mouse IgG, monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat:ab110635; RRID:AB_10858471</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NR2F2 (Mouse IgG, monoclonal)</td>
+      <td>Novus</td>
+      <td>Cat:H7147; RRID:AB_1964214</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AMHR2-FITC (Rabbit IgG polyclonal)</td>
+      <td>Biorbyt</td>
+      <td>Cat:orb37457; RRID:AB_10992015</td>
+      <td>Flow cytometry (1:60)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD82-PerCP-Cy5.5 (Mouse IgG monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat:342111; RRID:AB_2750124</td>
+      <td>Flow cytometry (1:60)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EpCAM-APC-Cy7 (Mouse IgG monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat:324245; RRID:AB_2783193</td>
+      <td>Flow cytometry (1:60)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FSHR-APC (Mouse IgG monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat:FAB65591A; RRID:AB_2920602</td>
+      <td>Flow cytometry (1:60)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IgG-AF647 (Donkey IgG polyclonal)</td>
+      <td>Fisher</td>
+      <td>Cat:A31571; RRID:AB_162542</td>
+      <td>IF secondary (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Goat IgG-AF568 (Donkey IgG polyclonal)</td>
+      <td>Fisher</td>
+      <td>Cat:A11057; RRID:AB_2534104</td>
+      <td>IF secondary (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG-AF488 (Donkey IgG F(ab’)2 polyclonal)</td>
+      <td>Jackson</td>
+      <td>Cat:711-546-152; RRID:AB_2340619</td>
+      <td>IF secondary (1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Estradiol ELISA</td>
+      <td>DRG</td>
+      <td>Cat:EIA-2693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Progesterone ELISA</td>
+      <td>DRG</td>
+      <td>Cat:EIA-1561</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python scripts for data analysis</td>
+      <td>This paper (Brixi et al., 2023)</td>
+      <td></td>
+      <td>https://github.com/programmablebio/granulosa, (copy archived at swh:1:rev:3c650290779db376c4d1f3a14960b08b17ae5561)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Parse Biosciences barcode alignment pipeline</td>
+      <td>Parse Biosciences</td>
+      <td>Version 0.9.6</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Two parental hiPSC lines were used in this study: ATCC-BXS0116 female hiPSCs, which we refer to as the F3 line, and the F66 line, an in-house hiPSC line derived from the NIA Aging Cell Repository fibroblast line AG07141 using Epi5 footprint-free episomal reprogramming. The karyotypes of parental lines, as well as engineered reporter lines, were verified by Thermo Fisher Cell ID (single-nucleotide polymorphism-based authentication) + Karyostat, and pluripotency was assessed by Thermo Fisher Pluritest. All lines were identified as normal.
 
 hiPSCs were cultured in mTESR Plus medium (Stemcell Technologies) on standard polystyrene plates coated with hESC-qualified Matrigel (Corning). Medium was changed daily. Passaging was performed using 0.5 mM ethylenediaminetetraacetic acid solution in phosphate-buffered saline (PBS), or TRYPLE for experiments requiring single-cell dissociation. hiPSCs were treated with 10 µM Y-27632 (Ambeed) for 24 hr after each passage. COV434 cells were cultured in Dulbecco’s modified Eagle medium (DMEM) + 10% fetal bovine serum (FBS) + 1× GlutaMax (Gibco). KGN cells (RIKEN, RCB1154) were cultured in DMEM/F12 + 10% FBS + 1× GlutaMax (Gibco). HGL5 cells (ABM cat. T0650) were cultured in Prigrow IV medium (ABM) with 10% FBS. Passaging was performed with TRYPLE (Gibco). hPGCLCs were cultured in S-CM medium as previously described (Kobayashi et al., 2022), and passaged with Accutase (Stemcell Technologies). Mycoplasma testing was performed by polymerase chain reaction (PCR) every 3 months; all cells tested negative.
 
-## Electroporations
+### Electroporations
 
 Electroporations were performed using a Lonza Nucleofector with 96-well shuttle, with 200,000 cells in 20 µl of P3 buffer. Pulse setting CA-137 was used for all electroporations. Selection with the appropriate agent was begun 48 hr after electroporation and continued for 5 days. For the agents used in this study, this time was sufficient to give a high-purity final cell population.
 
-## Reporter construction
+### Reporter construction
 
 Homology arms for FOXL2 were amplified by PCR from genomic DNA. A targeting plasmid, containing an in-frame C-terminal T2A-tdTomato reporter, as well as a Rox-PGK-PuroTK-Rox selection cassette (Figure 2—figure supplement 1A), was constructed by Gibson assembly. The plasmid backbone additionally had an MC1-DTA marker to select against random integration. sgRNA oligos targeting the C-terminal region of FOXL2 were cloned into pX330 (Addgene #42230). For generation of the reporter lines, 1 µg donor plasmid and 1 µg sgRNA plasmid were co-electroporated into hiPSCs, which were subsequently plated in one well of a 6-well plate. After selection with puromycin (400 ng/ml), colonies were picked manually with a P20 pipette. The hiPSC lines generated were genotyped by PCR for the presence of wild-type and reporter alleles. Homozygous clones were further verified by PCR amplification of the entire FOXL2 locus (Figure 2—figure supplement 1B) and Sanger sequencing.
 
 To excise the selection cassette, hiPSCs were electroporated with pCAGGS-Dre (1 µg). Selection was performed with ganciclovir (4 µM) and colonies were picked as described above. The excision of the selection cassette was verified by genotyping. Primers used in this study are listed in Supplementary file 1.
 
-## TF plasmid construction
+### TF plasmid construction
 
 TF cDNAs were obtained from the TFome (Ng et al., 2021) or the ORFeome (ORFeome Collaboration, 2016) as Gateway entry clones. These were cloned into a barcoded Dox-inducible expression vector (Addgene #175503) using MegaGate cloning (Kramme et al., 2021b). The final expression constructs were verified by Sanger sequencing, which also served to determine the barcode sequences for each TF. Two unique barcodes were used per TF during library pooling. Libraries were pooled using an equimolar quantity of each plasmid (measured using QuBit).
 
-## TF screening for granulosa differentiation
+### TF screening for granulosa differentiation
 
 A pooled library of barcoded TF plasmids was electroporated into FOXL2-tdTomato reporter hiPSCs, typically at 5 fmol library and 500 ng PiggyBac transposase expression plasmid (Systems Bio). These conditions were chosen to give an average copy number of approximately 5/cell (Figure 2—figure supplement 2). Some experiments were also performed at 50 fmol to explore the effects of higher copy numbers. For the screening data presented in Figure 2, two libraries were used: library #1, containing 35 TFs, and library #2, containing 18 TFs. Library #1 was used only at 5 fmol, whereas library #2 was used at both 5 and 50 fmol.
 
@@ -171,56 +647,56 @@ After selection with puromycin (400 ng/ml), hiPSCs were treated with doxycycline
 
 Barcodes were amplified by PCR (KAPA polymerase), using 10 ng input gDNA per reaction and typically 22 PCR cycles (95°C 15 s denature, 58°C 20 s anneal/extend). PCR products were purified using ProNex beads, and a second round of PCR (NEB Q5 polymerase, six cycles of 98°C 5 s denature, 61°C 20 s anneal, 72°C 5 s extend, final extension 72°C 2 min) was performed to add Illumina indices (primers are given in Supplementary file 1). These amplicons were again purified using ProNex beads. Samples were normalized and pooled, and barcodes were sequenced on an Illumina MiSeq with 10% PhiX spike-in. To call barcodes, reads were aligned to the set of known barcode sequences. Fold changes were calculated by comparing barcode frequencies in the sorted FOXL2+ cells to the frequencies in the starting population.
 
-## Flow cytometry/cell sorting
+### Flow cytometry/cell sorting
 
 Cells were dissociated by treatment with TRYPLE for 5 min, which was quenched with 4 volumes of ice-cold DMEM + 10% FBS. The suspension was passed through a 70-µm cell strainer. Cells were pelleted (200 g, 5 min) and resuspended in staining buffer (PBS + 3% FBS + antibodies, approx. 100 µl per million cells). Staining continued on ice in the dark for 30 min. The suspension was diluted with 9 volumes of PBS + 3% FBS. Cells were pelleted (200 g, 5 min) and resuspended in PBS + 3% FBS + 100 ng/ml 4′,6-diamidino-2-phenylindole (DAPI). The suspension was kept on ice in the dark until analysis. Flow cytometry was performed on a BD LSRFortessa, and sorting was performed on a Sony SH800 with 100-µm chip.
 
 Antibody capture beads (BD Biosciences, RRID AB_10051478), or hiPSCs expressing tdTomato, were used as compensation controls. Antibodies used are given in the Key Resources table. Data analysis was performed using the Cytoflow Python package (version 1.0.0, https://github.com/cytoflow/cytoflow, Teague, 2022).
 
-## Optimized protocol for granulosa differentiation
+### Optimized protocol for granulosa differentiation
 
 iPSCs were dissociated with TRYPLE, and plated in DK10 medium (DMEM–F12, 15 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid [HEPES], 1× GlutaMax, 10% knockout serum replacement [KSR]) with Y-27632 (10 µM), CHIR99021 (3 µM), and doxycycline (1 µg/ml) at a cell density of 12,500/cm2 on Matrigel-coated polystyrene plates. For 24-well plates the medium volume per well was 0.5 ml; for 6-well plates it was 2 ml. 48 hr after plating, the medium was changed to DK10 + doxycycline (1 µg/ml), and the medium was subsequently changed every 24 hr. Cells were harvested on day 5 unless otherwise indicated. In the no-TF control differentiation for RNA-seq, the protocol was the same except the cells did not contain TF expression plasmids.
 
-## RNA-seq
+### RNA-seq
 
 Total RNA was extracted from sorted FOXL2+ granulosa-like cells using the Arcturus PicoPure kit (Thermo Fisher), or from COV434 cells and hiPSCs using the Monarch Total RNA Miniprep kit (NEB). For experiments involving TF overexpression, TF expression plasmids were integrated into hiPSCs as described above (50 fmol/200,000 cells). After selection with puromycin, TF expression was induced using doxycycline (1000 ng/ml).
 
 Two biological replicates were collected for each sample (iPSC, hiPSC+ individual TFs, sorted FOXL2+, no-TF differentiation, KGN, COV434). Libraries were prepared using the NEBNext Ultra II Directional kit following the manufacturer’s protocol, and sequenced on an Illumina NextSeq 500 (2 × 75 bp paired-end reads). The TPM data shown in Figure 3 were generated using kallisto (Bray et al., 2016) to pseudoalign reads to the reference human transcriptome (Ensembl GRCh38 v96). Differential expression analysis was performed using DESeq2. PantherDB (Mi et al., 2021) was used to calculate gene ontology enrichment for significantly upregulated (log2fc >3, padj < 0.05) and downregulated (log2fc <−3, padj < 0.05) genes for each sample relative to hiPSCs.
 
-## TROM analysis
+### TROM analysis
 
 The TROM method was employed to identify associated genes that capture molecular characteristics of biological samples and subsequently comparing the biological samples by testing the overlap of their associated genes (Li et al., 2017). TROM scores were calculated as the −log10(Bonferroni corrected p value of association) on a scale of 0–300. The TROM magnitude is positively correlated with similarity between two independent samples, with a standard threshold of 12 as a generally accepted indicator of significant similarity.
 
-## Ovaroid formation with hPGCLCs and granulosa-like cells
+### Ovaroid formation with hPGCLCs and granulosa-like cells
 
 F2 female hPGCLCs (see Key Resources table) were maintained in long-term culture as previously described (Kobayashi et al., 2022). Briefly, hPGCLCs were cultured on Matrigel in STO-conditioned medium (Glasgow Minimum Essential Medium [GMEM] with 13% KSR and 1× non-essential amino acids, sodium pyruvate, and GlutaMax, all from Gibco), supplemented with stem cell factor (SCF) (100 ng/ml, Peprotech), ascorbic acid (50 µg/ml, Gibco), and 2-mercaptoethanol (25 µM, Gibco). hPGCLCs were harvested with Accutase. To form ovaroids, granulosa-like cells were harvested with TRYPLE, counted, and mixed with F2 hPGCLCs. For hormone assays in Figure 3, we used granulosa-like cells from F3/N.R1 #6, F66/N.R1.G.F #4, F66/N.R1.G #7, F66/N.R2 #1, F66/N.R2 #5, and F66/N.R2.G #3. For immunofluorescence experiments in Figures 4 and 5, we used F66/N.R1.G.F #4 and F66/N.R2 #1. For scRNA-seq in Figure 6, we used F66/N.R1.G.F #4.
 
 For each ovaroid, 100,000 granulosa-like cells and 10,000 hPGCLCs were added to each well of a 96-well U-bottom low-bind plate (Corning #7007) in 200 µl of GK15 medium (GMEM, 15% KSR, with 1× GlutaMax, sodium pyruvate, and non-essential amino acids) supplemented with 10 mM Y-27632, 0.1 mM 2-mercaptoethanol, 1 µg/ml doxycycline, 100 ng/ml SCF, and 50 µg/ml primocin. The plate was centrifuged (100 × g, 2 min) and incubated (37°C, 5% CO2) for 2 days. Subsequently, ovaroids were transferred to Transwells (collagen-coated polytetrafluoroethylene, 3-µm pore size, 24-mm diameter, Corning #3492) for air–liquid interface culture with Alpha Minimum Essential Medium, 10% KSR, 55 µM 2-mercaptoethanol, 500 ng/ml doxycycline, and 50 µg/ml primocin. Typically five to six ovaroids were cultured on each 6-well Transwell. The medium (1.5 ml) was changed every 2 days.
 
-## Ovaroid formation with hPGCLCs and mouse fetal ovarian somatic cells
+### Ovaroid formation with hPGCLCs and mouse fetal ovarian somatic cells
 
 Fetal ovarian somatic cells were isolated from E12.5 female embryos of CD-1 mice (Charles River) as described by Yamashiro et al., 2020. For each ovaroid, 50,000 fetal ovarian somatic cells and 5000 F2 hPGCLCs were combined. Ovaroids were cultured as described above. All mouse experiments were approved by the Harvard Medical School Institutional Animal Care and Use Committee (IACUC).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Ovaroids were washed with PBS and fixed with 1% paraformaldehyde solution in PBS overnight at 4°C. After another PBS wash, ovaroids were detached from the Transwell. In preparation for cryosectioning, ovaroids were transferred to 10% sucrose in PBS. After 24 hr at 4°C, the 10% sucrose solution was removed and replaced with 20% sucrose in PBS. After an additional 24 hr at 4°C, the ovaroids were embedded in OCT compound and stored at −80°C until sectioning.
 
 The ovaroids were sectioned to 10 µm using a Leica CM3050S cryostat. Sections were transferred to Superfrost Plus slides, which were washed with PBS to remove OCT compound. The slides were washed with PBST (0.1% Triton X-100 in PBS) and sections were circled with a Pap pen. Slides were blocked for 30 min at room temp. with blocking buffer (1% bovine serum albumin and 5% normal donkey serum [Jackson ImmunoResearch, #017-000-121, lot #152961] in PBST). The blocking buffer was removed and replaced with a solution of primary antibodies in blocking buffer, and the slides were incubated overnight at 4°C. The antibody solution was removed and the slides were washed with PBST for 3 × 5 min. The slides were incubated with secondary antibody and DAPI solution in blocking buffer for 1 hr. at room temp. in the dark, followed by two 5-min washes with PBST and one wash with PBS. After staining, samples were mounted in Prolong Gold medium and covered with coverslips. Imaging was performed on a Leica SP5 confocal microscope. Antibodies used are given the Key Resources Table. Images were adjusted for brightness (and only for brightness) in ImageJ (version 2.9.0/1.53t), and cell counts for Figure 4C were performed manually by a researcher who was blinded to the species of the ovaroids.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 Ovaroids (6 ovaroids per sample, 2 samples per time point) were dissociated using the Miltenyi Embryoid Body Dissociation Kit (Miltenyi #130-096-348). The cells were passed through a 40-µm strainer, fixed using the Parse Biosciences fixation kit, and stored at −80°C until all time points had been collected. Libraries were prepared using the Parse Biosciences WT Mega v1 kit generating libraries of an average of 450 bp. The ovaroids took up 8 of the 96 samples; the remaining kit capacity was used for other experiments. The libraries were sequenced on an Illumina NovaSeq 2 × 150 bp S4 flow cell using single index, 6 bp, libraries and a 5% PhiX spike-in. Data were demultiplexed into library fastq files and counts matrices were generated using Parse Bioscience’s analysis pipeline (version 0.9.6). Downstream data processing, such as doublet filtering, dimensionality reduction, and clustering, was performed using Scanpy (version 1.8.2) (Wolf et al., 2018). For cell type assignment, the fetal ovarian dataset from the human reproductive cell atlas (Garcia-Alonso et al., 2022) was used as a reference for scanpy ingest.
 
-## Collection of primary mouse ovarian somatic cells
+### Collection of primary mouse ovarian somatic cells
 
 Female BALB/c mice (age 10–12 weeks) were confirmed to be in proestrus by visual examination. Mice were killed by CO2 exposure followed by cervical dislocation, and ovaries were removed by dissection. Ovaries were placed in HEPES-buffered DMEM/F12 with 0.1% bovine serum albumin (2 ovaries per 1.5-ml tube, with 500-µl medium) and mechanically disrupted by stabbing with forceps. The cell suspensions were strained through a 40-µm strainer to remove oocytes and clumps prior to culture for hormone assays.
 
-## Steroid hormone assays
+### Steroid hormone assays
 
 Androstenedione (500 ng/ml) was added to the medium on day 4 of granulosa differentiation. FSH (0.25 IU/ml, BioVision #4781-50 lot 5F07L47810) or forskolin (100 µM, Sigma-Aldrich) were also added as indicated. The total medium volume was 0.5 ml per well of 24-well plate. We performed these assays on each of the lines listed in Figure 3—source data 2. For controls using human cell lines (COV434, KGN, or HGL5) or mouse primary ovarian somatic cells, 75,000 cells were seeded per well. After 24 hr, the medium was analyzed for estradiol content by ELISA (DRG International, EIA-2693). Concentrations were calculated with a 4-parameter logistic curve fit using the data from the standards provided in the kit. Samples outside the range of the calibration curve were diluted and re-run.
 
 For measuring hormone production in ovaroids, ovaroids were aggregated as described above. Androstenedione (500 ng/ml) and/or FSH (0.25 IU/ml) were added to the aggregation medium (total volume 200 µl per ovaroid). After 3 days of culture, the medium was removed and analyzed by ELISA for estradiol (DRG International, EIA-2693) and progesterone (DRG International, EIA-1561). Hormone concentrations were calculated as described above.
 
-## Materials availability
+### Materials availability
 
 Cell lines generated in this study are available for noncommercial use; contact the authors to negotiate a Material Transfer Agreement. Plasmids generated in this study are available via Addgene; see the Key Resources Table for accession numbers.

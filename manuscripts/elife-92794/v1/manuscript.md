@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/035t8zc32 Research Institute for Microbial Diseases, Osaka University Osaka Japan
-2. https://ror.org/035t8zc32 Graduate School of Pharmaceutical Sciences, Osaka University Osaka Japan
-3. https://ror.org/035t8zc32 Center for Infectious Disease Education and Research (CiDER), Osaka University Osaka Japan
-4. https://ror.org/057zh3y96 The Institute of Medical Science, The University of Tokyo Tokyo Japan
-5. https://ror.org/035t8zc32 Center for Advanced Modalities and DDS (CAMaD), Osaka University Osaka Japan
+1. Research Institute for Microbial Diseases, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+2. Graduate School of Pharmaceutical Sciences, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+3. Center for Infectious Disease Education and Research (CiDER), Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+4. The Institute of Medical Science, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+5. Center for Advanced Modalities and DDS (CAMaD), Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
 
 † Corresponding author
 
@@ -35,29 +35,61 @@ During spermiogenesis, post-translational modifications of proteins are critical
 
 ## Results
 
-## Fbxo24 is expressed predominantly in male germ cells after meiosis and interacts with SKP1
+### Fbxo24 is expressed predominantly in male germ cells after meiosis and interacts with SKP1
 
 We performed RT-PCR using cDNAs obtained from multiple mouse tissues and found a specific band for Fbxo24 in testes (Figure 1A). To identify stages in which Fbxo24 was expressed in spermatogenesis, we performed RT-PCR using postnatal mouse testes over time. Fbxo24 signals increased after birth, with solid signals observed around postnatal day 21 (Figure 1B) when round spermatids appear (Kluin et al., 1982). Consistent with the RT-PCR results, single-cell transcriptome data (Hermann et al., 2018) indicates that mouse Fbxo24 and its human orthologue, FBXO24, are expressed during the post-meiotic stages (Figure 1—figure supplement 1A and B). Pairwise sequence alignment of amino acids sequences revealed that FBXO24 is highly conserved between mice and humans (88% amino acid identity) (Figure 1—figure supplement 1C) with the F-box domains located near the N-terminus (Figure 1—figure supplement 1D). Because it has been reported that F-box proteins bind to SKP1 via the F-box domain to form the SCF complex (Bai et al., 1996; Schulman et al., 2000), we investigated the interaction of FBXO24 with SKP1 by co-immunoprecipitation using HEK293T cells. We constructed vectors that express FBXO24 tagged with 3×FLAG with (wild-type [WT]) or without (ΔF) the F-box domain (Figure 1C). When SKP1-1D4 was immunoprecipitated with an anti-1D4 antibody, WT FBXO24-FLAG was co-immunoprecipitated, whereas ΔF FBXO24-FLAG was not (Figure 1D, left). Conversely, when an anti-FLAG antibody was used to immunoprecipitate WT or ΔF FBXO24-FLAG, SKP1-1D4 was co-immunoprecipitated only with WT FBXO24-FLAG (Figure 1D, right). These results suggest that FBXO24 could function as a component of the SCF complex in mouse testis, during the post-meiotic stages of spermatogenesis.
 
-## Lack of Fbxo24 causes male sterility in mice
+![Figure 1.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig1-v1.jpg)
+
+**Figure 1.:** (A) RT-PCR of Fbxo24 in mouse adult tissues. Fbxo24 is predominantly expressed in the testis. Br: brain, Th: thymus, Lu: lung, He: heart, Li: liver, Sp: spleen, Ki: kidney, Te: testis, Ut: uterus, Ov: ovary, and N.C.: negative control (water). Actb was used as a control. (B) RT-PCR of Fbxo24 using RNAs obtained from mouse testes at various postnatal days. Actb was used as a control. Water was used as a negative control (N.C.). (C) Construction of expression vectors for FBXO24 with (wild-type [WT]) or without (ΔF) the F-box domain. (D) Fbxo24 (WT)-FLAG or Fbxo24 (ΔF)-FLAG was transiently expressed with Skp1-1D4 in HEK293T cells. Immunoprecipitation (IP) was performed using anti-1D4 antibody or anti-FLAG antibody. FBXO24-FLAG interacts with SKP1-1D4 via the F-box domain. α-Tubulin was used as a loading control. (E) Schematic for generating Fbxo24 knockout (KO) mice using the CRISPR/Cas9 system. White boxes indicate untranslated regions while black boxes indicate protein coding regions. The gRNAs used are shown. Fw and Rv indicate the forward and reverse primer used for genotyping, respectively. (F) Genotyping of obtained Fbxo24 mutant mice. Fw #1-Rv #1 primers for KO allele and Fw #2-Rv #2 primers for WT allele in (E) were used. N.C. indicates negative control (water). (G) Amplicons of the PCR product using Fw #1-Rv #1 primers were subjected to direct sequencing and the 11,575 bp deletion was confirmed in the KO allele. (H) The number of pups born per plug was counted to assess male fertility. Each WT or KO male was mated with three WT females for 3 months. Error bars are mean ± standard deviation. Statistical significance was assessed with a two-tailed Welch's t-test. ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression profile of mouse Fbxo24 in spermatogenic cells is shown. Expression profiling was obtained from the testis single-cell RNA-seq dataset (Hermann et al., 2018). Ud spg: undifferentiated spermatogonia, A1- A2 Spg: A1 and A2 differentiating spermatogonia, A3-B Spg: A3, A4, In, and B differentiating spermatogonia, Prele Sc: preleptotene spermatocytes, Le/Zy Sc: leptotene/zygotene spermatocytes, Pa Sc: pachytene spermatocytes, Di/Se Sc: diplotene/secondary spermatocytes, Early St: early round spermatids, Mid St: mid round spermatids, Late St: late round spermatids, SC: Sertoli cells, PTM: peritubular myoid cells, LC: Leydig cells, and EC: endothelial cells. (B) Expression of human FBXO24 in spermatogenic cells is shown. Expression profiling was obtained from the testis single-cell RNA-seq dataset (Hermann et al., 2018). Dif Spg: differentiating spermatogonia. (C) Pairwise sequence alignment of amino acids between mouse and human FBXO24. Dark blue highlight indicates identical amino acids. (D) The F-box domain of mouse and human FBXO24 was identified with a protein database search (Simple Modular Architecture Research Tool [SMART]; http://smart.embl-heidelberg.de/).
+
+### Lack of Fbxo24 causes male sterility in mice
 
 To examine the role of Fbxo24 in spermatogenesis, we generated Fbxo24 KO mice using the CRISPR/Cas9 system. Two gRNAs were designed to delete the majority of the coding region of Fbxo24 (Figure 1E). One hundred fertilized eggs were electroporated, and the resulting 89 two-cell stage embryos were transferred to the oviducts of pseudopregnant ICR mice. One out of 18 born pups contained the large deletion of the coding region and subsequent mating was performed to obtain Fbxo24 KO mice. We found no overt gross defects in development, behavior, or survival in Fbxo24 KO mice. We performed genomic PCR using the primers described in Figure 1E and F and confirmed that Fbxo24 KO mice had a deletion of 11,575 bp by Sanger sequencing (Figure 1G). Fbxo24 KO male mice were then mated with three WT females for 3 months to analyze fertility. Although 20 vaginal plugs were detected, no pups were born from the Fbxo24 KO male mice (Figure 1H), suggesting that Fbxo24 is indispensable for male fertility.
 
-## Disruption of Fbxo24 results in impaired spermiation and abnormal sperm morphology
+### Disruption of Fbxo24 results in impaired spermiation and abnormal sperm morphology
 
 We first examined spermatogenesis to determine the cause of male infertility in Fbxo24 KO mice. No apparent differences in gross testicular morphology (Figure 2—figure supplement 1A) or weights (Figure 2—figure supplement 1B) were found between controls and Fbxo24 KO mice. We then performed He-PAS staining of testicular and epididymis sections (Figure 2A and Figure 2—figure supplement 1C). Although elongating spermatids can be found in Fbxo24 KO testes, step 16 spermatids were still present in Stage IX seminiferous tubules (Figure 2A), indicating that spermiation was impaired in Fbxo24 KO testes. In contrast, we could not find apparent differences in the cross sections of the cauda epididymis between the two genotypes (Figure 2—figure supplement 1C). Next, we observed mature spermatozoa collected from the cauda epididymis. While KO spermatozoa showed comparable head morphology to the controls, KO spermatozoa exhibited abnormal tail structures such as bent or coiled flagella (Figure 2B and C). Further analyses of sperm head morphology with immunostaining showed no overt abnormalities in the acrosome or nucleus (Figure 2—figure supplement 1D). Since abnormal flagellar morphology could result in decreased motility, we performed computer-assisted sperm analysis (CASA) after 10 and 120 min of incubation in capacitation medium. CASA revealed that the percentages of motile spermatozoa were significantly reduced in Fbxo24 KO mice compared to the controls (Figure 2D and Figure 2—videos 1 and 2). Furthermore, all velocity parameters such as average path velocity, straight line velocity, and curvilinear velocity were lower in Fbxo24 KO spermatozoa (Figure 2E–G). These results indicate that FBXO24 is critical in sperm flagellum formation during spermiogenesis.
 
-## Fbxo24 KO spermatozoa cannot fertilize eggs in vitro and fail to migrate from the uterus into the oviduct
+![Figure 2.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig2-v1.jpg)
+
+**Figure 2.:** (A) The histology of seminiferous tubules at different stages. An asterisk indicates remaining sperm heads. (B) Morphology of mature spermatozoa obtained from cauda epididymis. White arrowhead indicates straight spermatozoa. Red arrowhead indicates bent spermatozoa. Black asterisk indicates coiled spermatozoa. Red asterisk indicates headless spermatozoa. (C) Stacked bar graph showing the frequency of sperm morphology classified as straight, bent, coiled, and headless. n = 3 independent experiments. (D) Percentages of motile spermatozoa were analyzed at 10 and 120 min after incubation in capacitation medium. (E) VAP (average path velocity) was analyzed at 10 and 120 min after incubation in capacitation medium. (F) VSL (straight line velocity) was analyzed at 10 and 120 min after incubation in capacitation medium. (G) VCL (curvilinear velocity) was analyzed at 10 and 120 min after incubation in capacitation medium. Error bars are mean ± standard deviation. Each dot indicates individual mouse. Statistical significance was assessed with a two-tailed Welch's t-test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gross morphology of testes obtained from Fbxo24 heterozygous and KO males. (B) Test weight (mg)/body weight (mg) of Fbxo24 heterozygous and KO mice. (C) PAS-hematoxylin staining of testes and cauda epididymis sections. (D) Spermatozoa obtained from the cauda epididymis were stained for IZUMO1 (magenta). Nuclei were stained with Hoechst 33342 (blue). Error bars are mean ± standard deviation. Each dot indicates individual mouse. Statistical significance was assessed with a two-tailed Welch's t-test. n.s. = non-significant.
+
+### Fbxo24 KO spermatozoa cannot fertilize eggs in vitro and fail to migrate from the uterus into the oviduct
 
 To further evaluate the fertilizing ability of Fbxo24 KO spermatozoa, we performed in vitro fertilization (IVF). Consistent with male sterility observed in vivo (Figure 1H), Fbxo24 KO spermatozoa could not fertilize eggs in vitro (Figure 3A). Furthermore, removing cumulus cells (Figure 3B) or both cumulus cells and the ZP (Figure 3C) could not rescue the fertilization rates, suggesting that Fbxo24 KO spermatozoa may have defects in not only sperm motility but also the acrosome reaction, which is a prerequisite for spermatozoa to pass through the ZP and fuse with eggs (Morohoshi et al., 2023). Therefore, we crossed Fbxo24 mutant mice with transgenic (Tg) mice which express EGFP in the acrosome and DsRed2 in the mitochondria (Red Body Green Sperm [RBGS] mice) (Hasuwa et al., 2010) and analyzed the acrosome reaction rates. RBGS spermatozoa lose EGFP fluorescent signal when the spermatozoa undergo the acrosome reaction. First, to test whether Fbxo24 KO spermatozoa were viable, we performed propidium iodide (PI) staining and found that the percentages of dead spermatozoa were significantly higher in Fbxo24 KO mice (Figure 3—figure supplement 1A). We then analyzed the acrosome reaction rates of PI-negative live spermatozoa. While the control spermatozoa underwent the acrosome reaction after 120 min of incubation in capacitation medium and with Ca2+ ionophore (A23187) treatment, Fbxo24 KO spermatozoa rarely underwent the acrosome reaction even after adding A23187 (Figure 3—figure supplement 1B). Since the SNARE complex is considered critical for the acrosome reaction (Hutt et al., 2005; Katafuchi et al., 2000; Schulz et al., 1997; Tomes et al., 2002), we examined the amounts of SNARE-related proteins in mature spermatozoa using mass spectrometry (MS) and immunoblotting (Figure 3—figure supplement 1C and D), but no notable differences were found in SNARE-related proteins between the control and Fbxo24 KO spermatozoa. Further, no significant differences were found in PLCD4 that has been reported to be important for the acrosome reaction (Fukami et al., 2001).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig3-v1.jpg)
+
+**Figure 3.:** (A) The fertilizing ability of spermatozoa was analyzed in vitro using cumulus-intact oocytes. (B) The fertilizing ability of spermatozoa was analyzed in vitro using cumulus-free oocytes. (C) The fertilizing ability of spermatozoa was analyzed in vitro using zona-free oocytes. (D) Uterus and oviducts of wild-type (WT) females mated with WT or Fbxo24 knockout (KO) males carrying Red Body Green Sperm (RBGS) transgene. Female reproductive tracts were dissected 4 hr after confirming a plug. Right figures are magnified images of the boxes indicated in the middle panels. (E) Immunoblotting of ADAM3 using testis and mature spermatozoa of Fbxo24 heterozygous or KO mice. (F) Intracytoplasmic sperm injection (ICSI) experiment. The number of two-cell stage embryos and pups developed from WT oocytes injected with WT or Fbxo24 KO spermatozoa. (G) Pups derived from WT or Fbxo24 KO spermatozoa. (H) Genotyping of pups obtained from Fbxo24 KO spermatozoa. N.C. indicates negative control (water). Error bars are mean ± standard deviation. Each dot indicates individual mouse. Statistical significance was assessed with a two-tailed Welch's t-test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Viability of cauda epididymal spermatozoa was assessed with propidium iodide (PI) at 10 and 120 min incubation in TYH medium. (B) The acrosome reaction rates of cauda epididymal spermatozoa were assessed using Red Body Green Sperm (RBGS) Tg mice after 10 and 120 min of incubation in TYH medium. To induce the acrosome reaction, Ca2+ ionophore A23187 was added to the medium after 120 min of incubation. (C) Mass spectrometry (MS) analyses of Triton X-100 soluble proteins obtained from mature spermatozoa. Quantitative value of identified SNARE-related proteins and PLCD4 were listed. (D) Immunodetection of STX2 in Fbxo24 wild-type (WT) and knockout (KO) spermatozoa. IZUMO1 was used as a loading control. (E) Immunodetection of LY6K and ADAM3 in Fbxo24 WT and KO spermatozoa. SLC2A3 was used as a loading control. Error bars are mean ± standard deviation. Each dot indicates individual mouse. Statistical significance was assessed with a two-tailed Welch's t-test. *p<0.05, **p<0.01, n.s. = non-significant.
 
 Next, we observed sperm migration in the female reproductive tract using RBGS mice. Although the control spermatozoa migrate through the uterotubal junction (UTJ) 4 hr after mating, Fbxo24 KO spermatozoa hardly passed through the UTJ (Figure 3D). Since the processing of sperm membrane protein, ADAM3, is necessary for sperm migration through the UTJ (Fujihara et al., 2019; Yamaguchi et al., 2006), we performed immunoblotting analyses and found that ADAM3 was processed correctly even in Fbxo24 KO spermatozoa (Figure 3E). We further performed immunoblotting of LY6K because Ly6k KO spermatozoa cannot migrate through the UTJ even with normal ADAM3 processing (Fujihara et al., 2014). However, we did not detect significant differences in the amounts of LY6K (Figure 3—figure supplement 1E). Considering that the acrosome reaction is not essential for sperm migration in the female reproductive tract (Morohoshi et al., 2023) and defects in sperm motility could cause impaired migration through the UTJ (Chung et al., 2014; Fujihara et al., 2018; Miyata et al., 2015; Shimada et al., 2019), these results suggest that lower viability and decreased sperm motility can be the cause of abnormal sperm migration and male sterility in vivo.
 
 Next, we performed intracytoplasmic sperm injection (ICSI) to examine whether nuclei of Fbxo24 KO spermatozoa have the potential to generate the next generation. We injected Fbxo24 KO sperm heads into 91 WT oocytes, and obtained 48 two-cell stage embryos (Figure 3F). By transplanting the two-cell embryos into the oviduct of pseudopregnant ICR females, we obtained four pups, which were confirmed to have the heterozygous mutation by PCR (Figure 3G and H). These results indicate that ICSI can rescue male sterility of Fbxo24 KO mice.
 
-## FBXO24 is required for the sperm midpiece formation
+### FBXO24 is required for the sperm midpiece formation
 
 We analyzed mitochondria localization in Fbxo24 KO spermatozoa because abnormal mitochondrial sheath structures were found in spermatozoa with bent tails, such as in Armc12 KO, Tbc1d21 KO, and Gk2 KO mice (Shimada et al., 2021; Shimada et al., 2019). We observed midpieces using RBGS Tg mice and revealed that mitochondria were disorganized in Fbxo24 KO spermatozoa (Figure 4A). We also observed SEPT4, a component of the annulus (Kissel et al., 2005), and found that SEPT4 localized to the proper region (Figure 4—figure supplement 1A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig4-v1.jpg)
+
+**Figure 4.:** (A) Epididymal spermatozoa of Red Body Green Sperm (RBGS) Tg mice were stained with Hoechst 33342 (nuclei). Mitochondria were labeled with su9-DsRed2. White arrowheads indicate disorganized mitochondria. (B) Sperm mitochondrial sheath formation during spermiogenesis was observed by scanning electron microscopy (SEM). (C) Cross sections of spermatozoa in the cauda epididymis. Asterisks indicate electron-dense granules. (D) Longitudinal sections of spermatozoa in the cauda epididymis. An asterisk indicates electron-dense granules. (E) Percentages of morphologically abnormal mitochondria observed with transmission electron microscopy (TEM). The number of flagellar sections analyzed is shown above each bar. (F) Percentages of electron-dense granules observed in the midpiece cross sections with TEM. The number of flagellar sections analyzed is shown above each bar. Error bars are mean ± standard deviation. Each dot indicates individual mouse. Statistical significance was assessed with a two-tailed Welch's t-test. *p<0.05, **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Localization of the annulus in cauda epididymal spermatozoa. Anti-SEPT4 antibody was used to visualize the annulus (green). Nuclei were detected with Hoechst 33342 (blue). The acrosome was detected with anti-IZUMO1 antibody (magenta). (B) Transmission electron microscopy (TEM) observation of the principal piece. A white arrowhead indicates a disruption of the axoneme and outer dense fiber (ODF). (C) Percentages of morphologically abnormal fibrous sheaths (FS) observed with TEM. The number of flagellar sections analyzed is shown above each bar. (D) Percentages of morphologically abnormal axonemes (AX) observed with TEM. The number of flagellar sections analyzed are shown above each bar. (E) Percentages of morphologically abnormal ODF observed with TEM. The number of flagellar sections analyzed are shown above each bar. (F) TEM observation of the principal piece. A red arrowhead indicates electron-dense granules. (G) Percentages of electron-dense granules observed in principal piece cross sections. The number of flagellar sections analyzed are shown above each bar. Error bars are mean ± standard deviation. Each dot indicates individual mouse. Statistical significance was assessed with a two-tailed Welch's t-test. *p<0.05, ***p<0.001.
 
 We then used a scanning electron microscope (SEM) to observe the formation of mitochondrial sheaths. During the early step of mitochondrial sheath formation, mitochondria wrap around the axoneme. In both control and Fbxo24 KO spermatids, spherical mitochondria were aligned correctly at this step (Figure 4B, left panels). In the next step, mitochondria became crescent-shaped and were interlocked in the control spermatids, whereas irregular interlocking was observed in Fbxo24 KO spermatids (Figure 4B, middle panels). Subsequently, elongating mitochondria remain irregularly arranged in Fbxo24 KO spermatids (Figure 4B, right panels).
 
@@ -65,17 +97,37 @@ To further investigate the morphological abnormality of the midpiece in Fbxo24 K
 
 Because membraneless electron-dense granules accumulated in Fbxo24 KO spermatozoa, we examined RNP granule-related proteins in Fbxo24 KO mice. We performed immunoblotting analyses for ADAD1, ADAD2, MILI, MIWI, RNF-17, YTHDC2, TSKS, and TSSK1, which localized in germ-cell RNP granules and are essential for spermatogenesis (Lu et al., 2023; Meikar et al., 2011; Pan et al., 2005; Shang et al., 2010; Shimada et al., 2023; Snyder et al., 2020), but we did not see any differences in the amounts of these proteins between Fbxo24 heterozygous and KO testes (Figure 5—figure supplement 1A). Further, we found no abnormalities in the localization of MIWI in Fbxo24 KO testes (Figure 5—figure supplement 1B). MIWI was localized in the IMCs of late spermatocytes and CBs of round spermatids and disappeared in elongating spermatids (Figure 5—figure supplement 1B). Further, no abnormalities were found in the immunostaining of TSKS, which localized in the reticulated body and CB remnant of elongating spermatids (Figure 5—figure supplement 1C).
 
-## IPO5 and KPNB1 amounts increase in Fbxo24 KO flagella
+### IPO5 and KPNB1 amounts increase in Fbxo24 KO flagella
 
 Since previous studies show that loss of F-box protein causes the accumulation of substrates (Nakayama et al., 2000; Tsunematsu et al., 2004), we investigated whether certain proteins accumulated in Fbxo24 KO spermatozoa. MS analyses revealed that the amounts of several proteins significantly increased in Fbxo24 KO mature spermatozoa (Figure 5A). Among the significantly increased proteins, we focused on IPO5 (importin 5, also known as KPNB3 and RanBP5) and KPNB1 (karyopherin subunit beta 1, also known as importin β1) because the fold changes (KO/WT) are the highest in these two proteins. Both IPO5 and KPNB1 are members of the karyopherin-β (KPNB) family of nuclear transport receptors (NTRs), which play a crucial role in nucleocytoplasmic transport (Chook and Blobel, 2001; Chook and Süel, 2011; Conti and Izaurralde, 2001; Kimura and Imamoto, 2014). In rodent testes, KPNB1 localized to the cytoplasm of spermatogonia, spermatocytes, and Sertoli cells, and IPO5 localized to the cytoplasm of elongating spermatids (Loveland et al., 2015; Loveland et al., 2006). Immunoblotting analyses confirmed that the amounts of IPO5 and KPNB1 increased in Fbxo24 KO mature spermatozoa (Figure 5B). In contrast, the amounts of KPNA2 (importin α1), a member of karyopherin-α (KPNA) family of NTRs which localized to the cytoplasm and nucleus of spermatocytes and the cytoplasm of elongating spermatids (Miyamoto et al., 2013), were comparable between the control and Fbxo24 KO spermatozoa. Since the anti-KPNB1 antibody did not work for immunostaining, we performed immunostaining of mature spermatozoa using an anti-IPO5 antibody. We detected IPO5 in the Fbxo24 KO flagella but not in control (Figure 5C).
 
-## FBXO24 could interact with IPO5
+![Figure 5.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig5-v1.jpg)
+
+**Figure 5.:** (A) Mass spectrometry analyses of mature spermatozoa. Significantly upregulated proteins are shown with red dots whereas significantly downregulated proteins are shown with blue dots. (B) Immunoblotting analysis was performed using proteins extracted from testes or mature spermatozoa. IPO5 was detected using rabbit anti-IPO5 polyclonal antibody. KPNA2 and IZUMO1 were detected as negative control and loading control, respectively. (C) Spermatozoa obtained from the cauda epididymis were stained for IPO5 (magenta) using rabbit anti-IPO5 polyclonal antibody. Nuclei were stained with Hoechst 33342 (blue). (D) Immunoprecipitation (IP) of FBXO24-FLAG from Fbxo24-FLAG Tg testes. FBXO24 could interact with IPO5. IPO5 was detected using mouse anti-IPO5 monoclonal antibody. IPO5 band is slightly larger after IP likely due to different protein composition in the sample. β-Actin was used as a loading control. A picture with high contrast was shown for the input FLAG band. (E) IP of FBXO24-FLAG using HEK293T cells. FBXO24 could interact with IPO5 but not with KPNB1. IPO5 was detected using mouse anti-IPO5 monoclonal antibody. β-Actin was used as a loading control. (F) A ubiquitination assay of IPO5 using HEK293T cells. IPO5-PA was immunoprecipitated and the level of ubiquitination was analyzed using anti-HA antibody. β-Actin was used as a loading control.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunodetection of ADAD1, ADAD2, MILI, MIWI, RNF-17, YTHDC2, TSKS, and TSSK1 in Fbxo24 heterozygous and KO testes. β-Actin was used as a loading control. (B) Immunofluorescence observation of MIWI (green) in wild-type (WT) and Fbxo24 KO testes. Acrosomes were stained with PNA (red) and nuclei were stained with Hoechst 33342 (white). (C) Immunofluorescence observation of TSKS (green) in WT and Fbxo24 KO testes. Acrosomes were stained with PNA (red) and nuclei were stained with Hoechst 33342 (white).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Schematic of the Fbxo24-3×FLAG construct used to generate Tg mice. (B) Immunodetection of FBXO24-3×FLAG in the testis from the Tg mice. β-Actin was used as a loading control. (C) Morphology of cauda epididymal spermatozoa. (D) Schematic for generating Fbxo24 knockout (KO) #2 mice using the CRISPR/Cas9 system. White boxes indicate untranslated regions while black boxes indicate protein coding regions. The gRNAs used are shown. Fw and Rv indicate the forward and reverse primers used for genotyping, respectively. (E) Genotyping of obtained Fbxo24 mutant mice. Fw #3-Rv #3 primers in (D) were used. N.C. indicates negative control (water). (F) Predicted FBXO24 amino acid sequences of KO #2 mutant mice. The 205 bp deletion and 1 bp insertion resulted in E32A mutation with a premature stop codon introduced 49 amino acids later. (G) Morphology of mature spermatozoa obtained from cauda epididymis. (H) The list of identified proteins by immunoprecipitation mass spectrometry (IP-MS) analysis. The top 15 identified proteins in Tg are shown. The quantitative value (normalized total spectra) was calculated using Scaffold proteome software. IgG-related proteins, which is likely from the antibody used for IP, were removed from the list.
+
+### FBXO24 could interact with IPO5
 
 Next, we investigated the proteins that interacted with FBXO24. Because we could not obtain anti-FBXO24 antibodies that worked for immunoprecipitation, we generated Tg mice expressing 3×FLAG-tagged Fbxo24 under a testis-specific Prm1 promoter (Figure 5—figure supplement 2A and B). This transgene could not rescue Fbxo24 KO sperm morphology (Figure 5—figure supplement 2C). By looking for long non-coding RNAs, we found Gm36266 that is located around Exon 9 and 10 of Fbxo24, which is deleted in Fbxo24 KO mice (Figure 1E); however, a partial deletion of Exon 2 and 3 of Fbxo24 showed the same defects in sperm morphology (Figure 5—figure supplement 2D–G) as mice lacking Exon 3–10 (Figure 2B), suggesting that Fbxo24, not Gm36266, is responsible for the phenotypes observed in this study. Abnormal sperm morphology was not rescued by the transgene, likely due to lower expression of FBXO24 (Figure 5D and Figure 5—figure supplement 2B) and/or FLAG-tag interfering with FBXO24 function. Using Tg mice, we could immunoprecipitate FBXO24-FLAG with an anti-FLAG antibody, and subsequent MS analyses detected not only FBXO24 but also IPO5 with the highest quantitative values (Figure 5—figure supplement 2H), indicating that these proteins interact in vivo. We also found SKP1 in this analysis, consistent with the in vitro study (Figure 1D). We confirmed that IPO5 co-immunoprecipitated with FBXO24-FLAG in mouse testes using immunoblotting analysis (Figure 5D). Further, we transiently expressed 3×FLAG-tagged Fbxo24 in HEK293T cells, performed immunoprecipitation analysis using an anti-FLAG antibody, and found that FBXO24 could interact with endogenous IPO5 but not with endogenous KPNB1 (Figure 5E). To examine if FBXO24 can ubiquitinate IPO5, we performed a ubiquitination assay using HEK293T cells and revealed that ubiquitination of IPO5 was upregulated when cells were transfected with WT FBXO24, but not with ΔF FBXO24 that lacks the F-box domain (Figure 5F). These results suggest that FBXO24 recognizes and ubiquitinates IPO5 for subsequent protein degradation.
 
-## IPO5 is recruited into RNP granules under stress conditions
+### IPO5 is recruited into RNP granules under stress conditions
 
 The amounts of known RNP granule-related proteins were not upregulated in Fbxo24 KO testes (Figure 5—figure supplement 1A) and spermatozoa (Figure 5A). In contrast, the total amount of RNAs was significantly increased in Fbxo24 KO spermatozoa (Figure 6A and B) although the contamination of somatic cells or immature spermatogenic cells were rarely found (Figure 6—figure supplement 1). Previous studies showed that various stresses, such as heat shock, arsenite treatment, or proteasome inhibition, trigger the formation of cytoplasmic stress granules (SGs), membraneless granules composed of RNPs. Further, it has been shown that SGs could contain KPNB1 (Chang and Tarn, 2009; Mahboubi et al., 2013). Increased amounts of KPNB1 and RNAs suggest that RNP granules may be formed in Fbxo24 KO spermatozoa. We analyzed whether IPO5 can localize to SGs under stress conditions to explore this possibility. We examined the subcellular localization of endogenous IPO5 and KPNB1 in COS7 cells treated with arsenite, an oxidative stress inducer. Immunostaining analyses revealed that IPO5 was predominantly localized to the cytoplasm without the stress inducer (Figure 6C); however, when cells were treated with arsenite, IPO5 was detected not only in the cytoplasm but also in cytoplasmic granules that were colocalized with KPNB1 (Figure 6C). We then analyzed if the stress of proteasome inhibition could cause a similar response. We performed immunostaining of IPO5 and KPNB1 in COS7 cells using a proteasome inhibitor, MG132. Consistent with arsenite, MG132 caused the accumulation of cytoplasmic granules that contained IPO5 and KPNB1 (Figure 6D). These results support the idea that RNP granules that contain KPNB1 and IPO5 are formed in Fbxo24 KO spermatozoa.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig6-v1.jpg)
+
+**Figure 6.:** (A) Total RNA amounts in spermatozoa were measured by ultraviolet absorption. (B) Electrophoresis of RNA extracted from mature spermatozoa. (C) KPNB1 and IPO5 were localized to SGs under exposure to oxidative stress. COS7 cells were treated with water (upper row) or arsenite (lower row). Nuclei were stained with Hoechst 33342 (blue). (D) KPNB1 and IPO5 were localized to SGs under exposure to a proteasome inhibitor. COS7 cells were treated with DMSO (upper row) or MG132 (lower row). Nuclei were stained with Hoechst 33342 (blue). Error bars are mean ± standard deviation. Each dot indicates individual mouse. Statistical significance was assessed with a two-tailed Welch's t-test. ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92794/elife-92794-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Spermatozoa were obtained from Fbxo24 heterozygous or knockout (KO) male mice. Immature spermatogenic cells or somatic cells were rarely observed.
 
 ## Discussion
 
@@ -91,110 +143,110 @@ In conclusion, we reveal that numerous RNP granules accumulated in sperm flagell
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animal experiments were approved by the Animal Care and Use Committee of the Research Institute for Microbial Diseases, Osaka University (#Biken-AP-H30-01 and #Biken-AP-R03-01). Mice were purchased from CLEA Japan (Tokyo, Japan) or Japan SLC (Shizuoka, Japan). WT or Fbxo24 heterozygous (HET) mice were used as controls. All gene-modified mice generated in this study will be made available through either the RIKEN BioResource Research Center or the Center for Animal Resources and Development (CARD), Kumamoto University.
 
-## Isolation of RNA and RT-PCR
+### Isolation of RNA and RT-PCR
 
 Adult mouse multi-tissues and mouse testes at different ages were obtained from C57BL/6N mice. RNA samples were isolated and purified using TRIzol (Thermo Fisher Scientific, Waltham, MA, USA). RNA was reverse transcribed to cDNA using SuperScript IV First-Strand Synthesis System (Thermo Fisher Scientific) using an oligo (dT) primer. PCR was performed using the KOD Fx Neo DNA Polymerase (Toyobo, Tokyo, Japan). Primers used in this study are listed in Supplementary file 1.
 
-## Transfection of HEK293T cells and induction of stress
+### Transfection of HEK293T cells and induction of stress
 
 HEK293T cells (Tiscornia et al., 2006) and COS7 cells (#RCB0539, RIKEN BioResource Research Center) were maintained in Dulbecco’s Modified Eagle Medium supplemented with 10% fetal bovine serum (Sigma-Aldrich, St. Louis, MO, USA) and 1% Gibco penicillin/streptomycin (Thermo Fisher Scientific) at 37°C under 5% CO2. For transfection, HEK293T cells were transiently transfected with the plasmid DNA using the calcium phosphate transfection method (Tiscornia et al., 2006), and cultured for 24 hr before harvesting. For oxidative stress, COS7 cells were treated with 0.5 mM sodium arsenite in medium for 30 min and controls were incubated with water in medium. For proteasome inhibition, COS7 cells were treated with 10 μM sodium MG132 (Sigma-Aldrich) in medium for 3 hr and controls were incubated with DMSO in medium.
 
-## Generation of Fbxo24 KO mice
+### Generation of Fbxo24 KO mice
 
 Fbxo24 KO mice were generated using CRISPR/Cas9. Three crRNAs, 5′- TGTGGAGGCGCATCTGTCGA –3′, 5′- TCCTGAAGGAAGTCGAGCCG –3′ and 5′- TCAGTTGTTCCCCCCAGAGC –3′ were designed using the online source CRISPRdirect (Naito et al., 2015) and annealed to SygRNA Cas9 Synthetic tracrRNA (#TRACRRNA05N-5NMOL, Sigma-Aldrich). The gRNAs were mixed with TrueCut Cas9 Protein v2 (A36498, Thermo Fisher Scientific) and incubated at 37°C for 5 min to form CRISPR/Cas9 complexes. The complexes were introduced into fertilized eggs which were from superovulated WT B6D2F1 females mated with B6D2F1 males. Electroporation was performed using the super electroporator NEPA21 (NEPA GENE, Chiba, Japan) (poring pulse, voltage: 225 V, pulse width: 2 ms, pulse interval: 50 ms, number of pulses: +4, and attenuation: 10%; transfer pulse, voltage: 20 V, pulse width: 50 ms, pulse interval: 50 ms, number of pulses: ±5, and attenuation: 40%). The treated eggs were developed into two-cell-stage embryos by cultivating in KSOM medium (Ho et al., 1995) and transplanted into pseudopregnant ICR females. The obtained pups were genotyped by PCR to detect the KO and/or WT allele and then subjected to Sanger sequencing to verify the deleted sequence.
 
-## Fertility test
+### Fertility test
 
 For the in vivo fertility analysis, sexually mature KO male mice or WT male mice were caged with three 8-week-old B6D2F1 female mice for 3 months and plugs were checked every morning. The number of pups was counted on the day of birth. For the in vitro fertility assay, IVF analysis was performed as previously described (Morohoshi et al., 2021) with some minor changes. For ZP-free oocytes, sperm insemination was performed at a final density of 2×104 spermatozoa/ml.
 
-## Histological analysis
+### Histological analysis
 
 PAS staining of sections were performed as previously described (Morohoshi et al., 2020). Testes or cauda epididymis were fixed at 4°C in Bouin’s solution (Polysciences, Inc, Warrington, PA, USA) and were processed for paraffin embedding. Paraffin sections were cut at a thickness of 5 μm using an HM325 microtome (Microm, Walldorf, Germany). After rehydrating the sections, they were stained with 1% periodic acid (Nacalai Tesque, Kyoto, Japan) and Schiff’s reagent (FUJIFILM WakoPure Chemical, Osaka, Japan) for 20 min each at room temperature. The sections were then counterstained with Mayer’s hematoxylin solution (FUJIFILM WakoPure Chemical). The sections were observed with an Olympus BX-53 microscope (Tokyo, Japan).
 
-## Morphological and motility analysis of spermatozoa
+### Morphological and motility analysis of spermatozoa
 
 Spermatozoa extracted from cauda epididymis were suspended in TYH medium (Muro et al., 2016). After 10 min incubation, spermatozoa were collected to observe morphology. Sperm motility was analyzed as previously described (Miyata et al., 2021; Miyata et al., 2020). The motility of more than 200 spermatozoa was measured after incubation at 10 and 120 min in TYH medium using CEROS II (software version 1.4; Hamilton Thorne Biosciences, Beverly, MA, USA).
 
-## Observation of sperm flagellum ultrastructure using TEM
+### Observation of sperm flagellum ultrastructure using TEM
 
 Cauda epididymis specimens were prepared as previously described (Shimada et al., 2019). The prepared samples were observed using a JEM-1400 plus electron microscope (JEOL, Tokyo, Japan) at 80 kV with a CCD Veleta 2K × 2K camera (Olympus).
 
-## Observation of sperm mitochondria during spermatogenesis using SEM
+### Observation of sperm mitochondria during spermatogenesis using SEM
 
 Testes specimens were prepared as previously described (Shimada et al., 2019). The prepared samples were observed using an S-4800 field emission SEM (Hitachi, Tokyo, Japan).
 
-## Pfam domain search
+### Pfam domain search
 
 Pfam domains were detected from amino acid sequences using Simple Modular Architecture Research Tool (SMART) (http://smart.embl-heidelberg.de/). Mouse FBXO24 amino acid sequence (CCDS51674.1) and human FBXO24 (CCDS5698.1) were obtained from the CCDS database (https://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi).
 
-## Alignment of amino acid sequences
+### Alignment of amino acid sequences
 
 Amino acid sequences of mouse FBXO24 (CCDS51674.1) and human FBXO24 (CCDS5698.1) were aligned using ‘Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/)’. Aligned sequences were edited using Jalview version 2.11.2.0 (https://www.jalview.org/). Domains within the sequences were identified using ‘SMART (http://smart.embl-heidelberg.de/)’.
 
-## In silico expression data analysis
+### In silico expression data analysis
 
 Single-cell transcriptome data in the mouse and human testis was obtained from previously published work (Hermann et al., 2018). Fbxo24 expression in those cells was analyzed using the Loupe Cell Browser 3.3.1 (10X Genomics, Pleasanton, CA, USA).
 
-## Plasmids
+### Plasmids
 
 The open reading frames of Fbxo24 and Skp1 were cloned and amplified using cDNA obtained from mouse testis and inserted into the multiple cloning site of pCAG1.1 vector (Addgene; Plasmid #173685). To generate the expression vector coding Fbxo24(ΔF-box), inverse PCR was performed with KOD -Plus- Mutagenesis Kit (Toyobo, Tokyo, Japan) according to the manufacturer’s instructions. Primers used for inverse PCR are listed in Supplementary file 1. Human HA-Ubiquitin was obtained from the Addgene (plasmid # 18712; Kamitani et al., 1997).
 
-## Observation of spermatozoa migration inside the female reproductive tract
+### Observation of spermatozoa migration inside the female reproductive tract
 
 The Fbxo24 KO mouse line was crossed with B6D2 Tg mice carrying CAG/Su9-DsRed2, Acr3-EGFP (RBGS) (Hasuwa et al., 2010) to label the mitochondria with DsRed2. B6D2F1 females were superovulated by injecting pregnant mare serum gonadotropin (PMSG, ASKA Pharmaceutical, Tokyo, Japan) followed by human chorionic gonadotropin (hCG, ASKA Pharmaceutical) 48 hr apart. The superovulated female was mated with a WT male or Fbxo24 KO male mice 12 hr after the hCG injection. Female mice were sacrificed 4 hr after confirming a vaginal plug and the female reproductive tracts were collected. Spermatozoa inside the oviducts were observed using a BZ-X710 microscope (Keyence Japan, Osaka, Japan).
 
-## Protein extraction from testes, spermatozoa, and culture cells
+### Protein extraction from testes, spermatozoa, and culture cells
 
 HEK293T cells were lysed in 1% Triton X-100 lysis buffer (1% Triton X-100, 50 mM Tris-HCl pH 7.4, 150 mM NaCl, and 1% [vol/vol] protease inhibitor cocktail [Nacalai Tesque]) at 4°C with end-over-end rotation for 2 hr. Testes or spermatozoa were homogenized in 1% Triton X-100 lysis buffer at 4°C with end-over-end rotation for 2 hr or sample buffer containing 66 mM Tris-HCl pH 6.8, 2% SDS, 10% glycerol, and 0.005% Bromophenol Blue, and boiled for 5 min. Supernatants were obtained after centrifugation at 15,300×g for 15 min at 4°C.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Immunoprecipitation was performed as described previously (Kaneda et al., 2023). Proteins from HEK293T cells were extracted using 1% Triton X-100 lysis buffer (1% Triton X-100, 50 mM Tris-HCl pH 7.4, 150 mM NaCl, and 1% [vol/vol] protease inhibitor cocktail [Nacalai Tesque]). The lysates were centrifuged at 15,300×g for 5 min at 4°C to collect supernatants. Protein lysates were mixed with 20 μl Protein G-conjugated magnetic beads (#10009D, Thermo Fisher Scientific) preincubated with 1.0 μg antibody. After incubation for 1 hr at 4°C, the beads were washed three times with wash buffer (40 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.1% Triton X-100, and 10% glycerol). For immunoblotting, the immune complexes were eluted with 2×SDS sample buffer (132 mM Tris HCl pH 6.8, 4% SDS, 20% glycerol, and 0.01% Bromophenol Blue) for 10 min at 70°C. For MS, the immune complexes were eluted with 150 ng/µl 3×FLAG peptide (Sigma-Aldrich) in TBS solution for 30 min at 4°C. Antibodies used in this study are listed in Supplementary file 2.
 
-## Immunoblotting
+### Immunoblotting
 
 Proteins were separated with sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) under reducing conditions using 2-ME and transferred onto polyvinylidene difluoride membrane using the Trans Blot Turbo system (Bio-Rad, Hercules, CA, USA). After blocking with 10% skim milk (Becton Dickinson, Franklin Lakes, NJ, USA) in TBST, the blots were incubated with primary antibody overnight at 4°C, and then incubated with HRP-conjugated secondary antibodies (1:5000) for 2 hr at room temperature. Chemiluminescence was detected with Chemi-Lumi One Super (#02230, Nacalai Tesque) or Chemi-Lumi One Ultra (#11644, Nacalai Tesque).
 
-## In vivo ubiquitination assay
+### In vivo ubiquitination assay
 
 HEK293T cells were transiently transfected with the plasmid DNA following the transfection protocol mentioned above. After 36 hr of transfection, HEK293T cells were treated with 10 µM MG132 for 9 hr. Immunoprecipitation and immunoblotting were performed following the abovementioned protocols.
 
-## Assessment of sperm viability in vitro
+### Assessment of sperm viability in vitro
 
 Spermatozoa extracted from cauda epididymis were dispersed in TYH medium and incubated for 10 and 120 min at 37°C under 5% CO2. PI was carefully added to the TYH drop to achieve a final concentration of 10 μg/ml and a small volume of the sperm suspension was placed on a glass slide. More than 200 spermatozoa were counted for each trial.
 
-## Assessment of acrosome reaction in vitro
+### Assessment of acrosome reaction in vitro
 
 The Fbxo24 KO mouse line was crossed with B6D2 Tg mice carrying CAG/Su9-DsRed2, Acr3-EGFP (RBGS) (Hasuwa et al., 2010) to label the acrosome with EGFP. Spermatozoa extracted from cauda epididymis were dispersed in TYH medium for 10 and 120 min of incubation at 37°C under 5% CO2. After 120 min of incubation, spermatozoa were incubated with Ca2+ ionophore A23187 (Merck, Rahway, NJ, USA) at 20 μM to induce the acrosome reaction at 37°C under 5% CO2. 10 mM stock solution of Ca2+ ionophore A23187 in DMSO was diluted 10 times with TYH medium before carefully adding to the sperm suspension to reach the final concentration. PI (10 μg/ml at final concentration) was added to the TYH drop, and a small volume of the sperm suspension was placed on a glass slide. Acrosome-reacted spermatozoa were determined by observing EGFP signals while distinguishing viable spermatozoa with PI staining using a BX-53 microscope (Olympus). More than 200 spermatozoa were counted for each trial.
 
-## Intracytoplasmic sperm injection
+### Intracytoplasmic sperm injection
 
 B6D2F1 females were superovulated by injecting PMSG (ASKA Pharmaceutical) followed by hCG (ASKA Pharmaceutical) 48 hr later. MII oocytes were collected 14 hr after injection of hCG. Cumulus cells were removed from the collected eggs after 10 min treatment with 330 µg/ml hyaluronidase (Sigma-Aldrich). Cumulus-free oocytes were placed in KSOM medium at 37°C under 5% CO2 until just before performing ICSI. Each sperm head separated from the tail by applying a few piezo pulses was injected into a cumulus-free MII oocyte using a piezo manipulator (PrimeTech, Tokyo, Japan). Obtained two-cell embryos were transferred to pseudopregnant ICR females the next day.
 
-## Immunofluorescence of testis cross sections
+### Immunofluorescence of testis cross sections
 
 Testes were fixed in 4% paraformaldehyde in PBS for 3 hr at 4°C soon after dissection and infused with 15% and 30% sucrose in PBS at 4°C. The testes were embedded in OCT medium (Tissue-Tek, Miami, FL, USA) and frozen in liquid nitrogen. Testis blocks were sectioned at 10 μm thickness using a cryostat and the sections were dried on microscope slides at 42°C to make them adhere. The testis sections were then processed and imaged in the same manner as sperm immunostaining. After permeabilization with 0.1% Triton X-100 in PBS for 15 min, the sections were blocked with 3% bovine serum albumin (Sigma-Aldrich), 10% goat serum, and 0.1% Triton X-100 in PBS for 1 hr at room temperature. The sections were then incubated with primary antibody overnight at 4°C. After washing the sections with PBS for 10 min, the sections were secondarily blocked with 3% bovine serum albumin (Sigma-Aldrich), and 10% goat serum in PBS for 1 hr at room temperature. The sections were further incubated with fluorophore-conjugated secondary antibodies (1:2000) and Alexa Fluor 568 Dye PNA Lectin (1:2000) for 2 hr at room temperature. After a wash with PBS, the sections were incubated with Hoechst 33342 (Thermo Fisher Scientific) in PBS (2 μg/ml) for 5 min at room temperature. Once washed with PBS, the sections were mounted with Shandon Immu-Mount (Thermo Fisher Scientific) before imaging.
 
-## Immunostaining of spermatozoa
+### Immunostaining of spermatozoa
 
 Spermatozoa extracted from cauda epididymis were dispersed in PBS. A small aliquot of the sperm suspension was spotted onto glass slides and then air-dried at room temperature. Spermatozoa were then fixed with 4% paraformaldehyde in PBS for 10 min and washed three times with PBS for 5 min each. The slides were blocked with blocking solution (5% bovine serum albumin and 10% goat serum in PBS) for 1 hr at room temperature. The slides were incubated with primary antibody overnight at 4°C, washed with PBS three times for 5 min each, and incubated with Alexa Fluor-conjugated secondary antibody for 2 hr at room temperature. The slides were washed with PBS three times for 5 min each, incubated with Hoechst 33342 (2 μg/ml) (Thermo Fisher Scientific) for 5 min, and washed with PBS three times for 5 min each. The slides were mounted with Shandon Immu-Mount (Thermo Fisher Scientific) before imaging. Fluorescence images were captured with an Olympus BX-53 microscope (Olympus).
 
-## Immunofluorescence of COS7 cells
+### Immunofluorescence of COS7 cells
 
 COS7 cells were fixed with 4% paraformaldehyde in PBS for 15 min at room temperature. After permeabilization with 0.1% Triton X-100 in PBS for 15 min, cells were blocked with 1% bovine serum albumin (Sigma-Aldrich) in PBS for 1 hr at room temperature. The cells were then incubated with primary antibody overnight at 4°C. After washing three times with PBS, the cells were further incubated with fluorophore-conjugated secondary antibodies (1:1000) for 2 hr at room temperature. After washing three times with PBS, the cells were incubated with Hoechst 33342 (Thermo Fisher Scientific) in PBS (2 μg/ml) for 5 min at room temperature. After washing three times with PBS, the cells were mounted with Shandon Immu-Mount (Thermo Fisher Scientific) before imaging.
 
-## Extraction of RNA from epididymal spermatozoa
+### Extraction of RNA from epididymal spermatozoa
 
 A small cut was made in the cauda epididymis with ophthalmic scissors and spermatozoa were squeezed out from the cut. Collected spermatozoa were dispersed in PBS and the number of spermatozoa was counted using a hemacytometer. Spermatozoa were centrifuged at 15,300×g for 2 min and the sperm pellet was lysed in TRIzol (Thermo Fisher Scientific). Chloroform was added to the lysate and incubated for 5 min at room temperature. The sample was centrifuged at 15,300×g for 15 min and the aqueous phase was transferred to a fresh centrifuge tube. To precipitate RNA, an equal volume of isopropanol was added to the aqueous phase and centrifuged at 15,300×g for 20 min at 4°C. The supernatant was removed and the pellet was washed with 75% ethanol. The washed pellet was dried and resuspended in nuclease-free water. The RNA solution was DNAse treated using deoxyribonuclease (RT Grade) (NIPPON GENE, Tokyo, Japan) to remove genomic DNA. Then the RNA solution was incubated at 55°C for 10 min. The sample was stored at –80°C. The concentration was measured using NanoDrop One (Thermo Fisher Scientific). The TAE/formamide method (Masek et al., 2005) was used to perform electrophoresis of RNA.
 
-## Generation of Fbxo24-FLAG Tg mice
+### Generation of Fbxo24-FLAG Tg mice
 
 Two-PN embryos (B6D2 background) were obtained by IVF. The linearized DNA (Fbxo24-FLAG with Prm1 promoter) was injected into one of the pronuclei. The embryos were cultivated and transferred into females as mentioned above. Genotyping was performed with primers (Fbxo24 Tg Fw and Fbxo24 Tg Rv) shown in Supplementary file 1.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using the two-tailed Welch’s t-test using Microsoft Office Excel 2016 (Microsoft Corporation, Redmond, WA, USA). Differences were considered significant at p<0.05 (*), p<0.01 (**), p<0.001 (***). Error bars are standard deviation.

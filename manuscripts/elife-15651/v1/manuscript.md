@@ -46,7 +46,7 @@
 
 ## Abstract
 
-10.7554/eLife.15651.001 Salmonella Typhi is the causative agent of typhoid. Typhoid is diagnosed by blood culture, a method that lacks sensitivity, portability and speed. We have previously shown that specific metabolomic profiles can be detected in the blood of typhoid patients from Nepal (Näsström et al., 2014). Here, we performed mass spectrometry on plasma from Bangladeshi and Senegalese patients with culture confirmed typhoid fever, clinically suspected typhoid, and other febrile diseases including malaria. After applying supervised pattern recognition modelling, we could significantly distinguish metabolite profiles in plasma from the culture confirmed typhoid patients. After comparing the direction of change and degree of multivariate significance, we identified 24 metabolites that were consistently up- or down regulated in a further Bangladeshi/Senegalese validation cohort, and the Nepali cohort from our previous work. We have identified and validated a metabolite panel that can distinguish typhoid from other febrile diseases, providing a new approach for typhoid diagnostics. DOI: http://dx.doi.org/10.7554/eLife.15651.001
+Salmonella Typhi is the causative agent of typhoid. Typhoid is diagnosed by blood culture, a method that lacks sensitivity, portability and speed. We have previously shown that specific metabolomic profiles can be detected in the blood of typhoid patients from Nepal (Näsström et al., 2014). Here, we performed mass spectrometry on plasma from Bangladeshi and Senegalese patients with culture confirmed typhoid fever, clinically suspected typhoid, and other febrile diseases including malaria. After applying supervised pattern recognition modelling, we could significantly distinguish metabolite profiles in plasma from the culture confirmed typhoid patients. After comparing the direction of change and degree of multivariate significance, we identified 24 metabolites that were consistently up- or down regulated in a further Bangladeshi/Senegalese validation cohort, and the Nepali cohort from our previous work. We have identified and validated a metabolite panel that can distinguish typhoid from other febrile diseases, providing a new approach for typhoid diagnostics.
 
 ## Introduction
 
@@ -54,45 +54,262 @@ Typhoid is a systemic infection caused by the bacterium Salmonella Typhi (S. Typ
 
 ## Results
 
-## Plasma metabolites in Bangladeshi typhoid fever patients
+### Plasma metabolites in Bangladeshi typhoid fever patients
 
-By hierarchical multivariate curve resolution, we resolved 394 peaks from the GCxGC-TOFMS data (Materials and methods) in 30 plasma samples from febrile patients in Bangladesh (
+By hierarchical multivariate curve resolution, we resolved 394 peaks from the GCxGC-TOFMS data (Materials and methods) in 30 plasma samples from febrile patients in Bangladesh (Table 1); after filtering to remove low-quality peaks and metabolites with a high run order correlation we detected 236 metabolite peaks suitable for modeling. Of the detected metabolite peaks, 65/236 (27.5%) had a putative annotation, 8/236 (3.4%) had a metabolite class, 32/236 (13.6%) were of uncertain identity, and 131/236 (55.5%) were unknown (Supplementary file 1A). Initial modeling of these 236 metabolites revealed one outlying sample in the fever control group, which was excluded. We applied a supervised pattern recognition approach using Orthogonal Partial Least Squares with Discriminant Analysis (OPLS-DA) to differentiate the metabolite profiles between two sample classes (culture positive typhoid patients and fever controls). This model was then used to predict the identity of the individual samples in a third sample class (clinically suspected typhoid). The OPLS-DA model provided excellent predictive power for distinguishing between culture-positive typhoid patients and fever controls in the first predictive component using 236 informative primary metabolite features (t[1] and tcv[1]) (p=0.006) (Figure 1A and Supplementary file 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15651/elife-15651-fig1-v1.jpg)
 
-**Figure 1.:** (A) OPLS-DA model generated from GCxGC-TOFMS data from the plasma of 10 patients with culture-positive typhoid and 10 fever controls using 236 metabolites. Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red) and fever control samples (grey) (p=0.006). (B) Column plot of the predicted scores for the first predictive component (tPS[1]) where clinically suspected typhoid samples (n = 9) (blue columns) have been predicted into the model distinguishing between culture-positive typhoid (red) and fever control samples (grey). Plot shows five samples were more similar to the culture-positive typhoid samples and three more similar to the controls; one sample remained marginal. The blue stars identify PCR-amplification-positive samples.DOI: http://dx.doi.org/10.7554/eLife.15651.002
+**Figure 1.:** (A) OPLS-DA model generated from GCxGC-TOFMS data from the plasma of 10 patients with culture-positive typhoid and 10 fever controls using 236 metabolites. Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red) and fever control samples (grey) (p=0.006). (B) Column plot of the predicted scores for the first predictive component (tPS[1]) where clinically suspected typhoid samples (n = 9) (blue columns) have been predicted into the model distinguishing between culture-positive typhoid (red) and fever control samples (grey). Plot shows five samples were more similar to the culture-positive typhoid samples and three more similar to the controls; one sample remained marginal. The blue stars identify PCR-amplification-positive samples.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15651/elife-15651-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) OPLS-DA model generated from UHPLC-Q-TOFMS data from the urine of 10 patients with culture-positive typhoid and 10 fever controls using 941 metabolites (positive ionization mode). Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red) and fever control samples (grey) (p=0.025). (B) Column plot of the predicted scores for the first predictive component (tPS[1]) where culture-negative/suspected typhoid typhoid samples (n = 9) (blue columns) have been predicted into the model distinguishing between culture-positive typhoid (red) and fever control samples (grey); PCR-amplification-positive samples are identified by the blue stars.DOI: http://dx.doi.org/10.7554/eLife.15651.003
+**Figure 1—figure supplement 1.:** (A) OPLS-DA model generated from UHPLC-Q-TOFMS data from the urine of 10 patients with culture-positive typhoid and 10 fever controls using 941 metabolites (positive ionization mode). Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red) and fever control samples (grey) (p=0.025). (B) Column plot of the predicted scores for the first predictive component (tPS[1]) where culture-negative/suspected typhoid typhoid samples (n = 9) (blue columns) have been predicted into the model distinguishing between culture-positive typhoid (red) and fever control samples (grey); PCR-amplification-positive samples are identified by the blue stars.
 
-## Prediction of culture-negative/clinically suspected typhoid fever
+**Table 1.**
+ Patient group metadata for the Bangladeshi cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical parameter*</th>
+      <th>Culture confirmed typhoid† (n = 10)¶</th>
+      <th>Suspected typhoid‡ (n = 9)</th>
+      <th>Fever controls§ (n = 10)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>23 (20–30)</td>
+      <td>22 (16–30)</td>
+      <td>46 (20–65)</td>
+    </tr>
+    <tr>
+      <td>Sex (male)</td>
+      <td>5</td>
+      <td>6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Fever duration (days)</td>
+      <td>7 (5–11)</td>
+      <td>10 (6–12)</td>
+      <td>5 (5–9)</td>
+    </tr>
+    <tr>
+      <td>Abdominal pain</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Diarrhoea</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Constipation</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Vomiting</td>
+      <td>5</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Cough</td>
+      <td>2</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Rash</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Dysuria</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Headache</td>
+      <td>6</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Seizure</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Drowsy</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Bloody stool/ Melaena</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Confusion/unconscious</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Axillary temperature (oC)</td>
+      <td>38.6 (38.3–39.4)</td>
+      <td>38.9 (38.5–39.4)</td>
+      <td>38.6 (38.3–38.9)</td>
+    </tr>
+    <tr>
+      <td>Pulse (bpm)</td>
+      <td>108 (97–114)</td>
+      <td>100 (92–110)</td>
+      <td>105 (86–123)</td>
+    </tr>
+    <tr>
+      <td>Jaundice</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Hepatomegaly</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Splenomegaly</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Hb</td>
+      <td>11.9 (10.4–12.9</td>
+      <td>12.0 (9.6–12.1)</td>
+      <td>12.6 (10.4–14.0)</td>
+    </tr>
+    <tr>
+      <td>WBC</td>
+      <td>6.6 (4.9–8.4)</td>
+      <td>7.0 (4.2–8.5)</td>
+      <td>14.4 (10.7–21.1)</td>
+    </tr>
+    <tr>
+      <td>Neutrophils (%)</td>
+      <td>79 (70–81)</td>
+      <td>70 (63–72)</td>
+      <td>80 (78–88)</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (%)</td>
+      <td>19 (15–26)</td>
+      <td>25 (24–33)</td>
+      <td>15 (8–18)</td>
+    </tr>
+    <tr>
+      <td>Monocytes (%)</td>
+      <td>2 (2–3)</td>
+      <td>2 (2–4)</td>
+      <td>2 (2–4)</td>
+    </tr>
+    <tr>
+      <td>Eosinophils (%)</td>
+      <td>1 (1–1)</td>
+      <td>1 (1–2)</td>
+      <td>1 (1–2)</td>
+    </tr>
+    <tr>
+      <td>Platelets</td>
+      <td>170 (160–232)</td>
+      <td>180 (160–265)</td>
+      <td>280 (180–320)</td>
+    </tr>
+    <tr>
+      <td>Urea</td>
+      <td>24.6 (21.4–28.0)</td>
+      <td>24.1 (22.1–29.5)</td>
+      <td>67.9 (21.4–81.2)</td>
+    </tr>
+    <tr>
+      <td>Creatinine</td>
+      <td>0.9 0.6–1.0)</td>
+      <td>0.9 (.7–1.0)</td>
+      <td>1.6 (0.8–2.4)</td>
+    </tr>
+    <tr>
+      <td>AST</td>
+      <td>101 (47–137)</td>
+      <td>51 (33–199)</td>
+      <td>32 (16–78)</td>
+    </tr>
+    <tr>
+      <td>ALT</td>
+      <td>93 (48–137)</td>
+      <td>36 (28–105)</td>
+      <td>31 (20–43)</td>
+    </tr>
+    <tr>
+      <td>Complications**</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Died††</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Median and interquartile range (IQR) for each patient group given for quantitative parameters and number of patients with presence of symptom/characteristics for qualitative parameters.†Typhoid confirmed by a positive blood culture for S. Typhi.‡Clinical suspected typhoid fever with a negative blood culture, final diagnoses included: Clinically suspected typhoid with blood PCR amplification positive for S. Typhi (3); clinical suspected typhoid (4); clinical suspected typhoid or leptospirosis (1); possible typhoid encephalopathy (1).§Fever controls included: pneumonia (3), malaria (2), meningitis (2); sepsis (1), cellulitis (1), urinary tract infection (1).¶One sample removed from analysis due to discrepant metabolite profile.**Complications were: gastrointestinal bleeding and severe anaemia requiring transfusion in the typhoid group; respiratory failure, hepatorenal failure, septic shock and cardiopulmonary arrest, coma and cardiopulmonary arrest, and an acute myocardial infarction in the fever controls.††Deaths in this group were associated with sepsis and malaria._
+
+### Prediction of culture-negative/clinically suspected typhoid fever
 
 A major challenge in diagnosing typhoid is identifying true typhoid patients but have a negative blood culture result (Moore et al., 2014). We observed a significant overlap between the culture-negative/clinically suspected typhoid metabolite profiles with both the culture-positive group and the fever control group (Figure 1B). We used the OPLS-DA model that distinguished between the culture-positive typhoid patients and the fever controls to predict the clinically suspected typhoid samples. We found that 5/9 plasma samples had a metabolite profile indicative of culture-positive typhoid and three exhibited a greater degree of resemblance to fever controls (one indifferent) (Figure 1B). Notably, 3/5 clinically suspected typhoid samples with a metabolite profile indicative of typhoid were additionally PCR amplification positive for S. Typhi in blood (Table 1 and Figure 1B). We also investigated potential diagnostic typhoid signatures in urine samples from the same patients using UPLC-Q-TOFMS (Materials and methods). Examination of 941 putative metabolite peaks obtained from urine using positive ionization an OPLS-DA model resulted in significantly different metabolite profiles between the S. Typhiculture-positive patients and the fever controls (p=0.025) (Figure 1—figure supplement 1 and Supplementary file 1B).
 
-## Reproducible typhoid metabolite patterns in Bangladeshi and Nepali cohorts
+### Reproducible typhoid metabolite patterns in Bangladeshi and Nepali cohorts
 
-We next compared informative plasma metabolites of Bangladeshi
+We next compared informative plasma metabolites of Bangladeshi S. Typhiculture-positive patients with the metabolites in the S. Typhi patients from our previous investigation in Nepal (Näsström et al., 2014). We found 99 informative metabolites in plasma from both cohorts. Comparing the direction of change and the degree of significance we identified 33 metabolites that were consistently up- or downregulated between the culture-positive S. Typhi patients and fever/asymptomatic controls in the two studies (Supplementary file 1C). Fifteen of the 33 metabolites were multivariate significant with a stricter criteria (w*>|x¯ ±SD|) in the Bangladeshi cohort and all 33 metabolites were multivariate significant (w*>|0.03|) in the Nepali cohort. OPLS-DA models with the 15 multivariate significant metabolites resulted in significant separations between S. Typhiculture-positive patients and fever controls in the current study (Bangladeshi cohort) (p=0.016), and the asymptomatic controls in the previous study (Nepali cohort) (p<0.0001) (Figure 2 and Supplementary file 1B). Models based on all 33 correspondingly up or downregulated metabolites could also distinguish the S. Typhiculture-positive patients from the fever/asymptomatic controls (current study: p=0.077, previous study: p<0.0001) (Supplementary file 1B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15651/elife-15651-fig2-v1.jpg)
 
-**Figure 2.:** OPLS-DA models generated from GCxGC-TOFMS data using 15 informative metabolites from the current study (Bangladeshi cohort) and the previous study in Nepali cohort that were consistently up- or downregulated and significantly different in a multivariate model separating culture-positive S. Typhi patients from controls. (A) Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red; n = 10) and fever control samples (grey; n = 10) (p=0.016) in the Bangladeshi cohort. (B) Column plot of model covariance loadings (w*[1]) for the first predictive component for the 15 common named metabolites in the Bangladeshi cohort, showing metabolites with a higher relative concentration in the culture-positive typhoid group in red and metabolites with a higher relative concentration in the fever control group in grey. (C) Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red; n = 33 including eight analytical replicates) and afebrile control samples (grey; n = 32 including seven analytical replicates) (p<0.0001) from the Nepali cohort. (D) Column plot of model covariance loadings (w*[1]) for the first predictive component for the 15 common named metabolites in the Nepali cohort, showing metabolites with a higher relative concentration in the typhoid group in red and metabolites with a higher relative concentration in the afebrile control group in grey.DOI: http://dx.doi.org/10.7554/eLife.15651.005
+**Figure 2.:** OPLS-DA models generated from GCxGC-TOFMS data using 15 informative metabolites from the current study (Bangladeshi cohort) and the previous study in Nepali cohort that were consistently up- or downregulated and significantly different in a multivariate model separating culture-positive S. Typhi patients from controls. (A) Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red; n = 10) and fever control samples (grey; n = 10) (p=0.016) in the Bangladeshi cohort. (B) Column plot of model covariance loadings (w*[1]) for the first predictive component for the 15 common named metabolites in the Bangladeshi cohort, showing metabolites with a higher relative concentration in the culture-positive typhoid group in red and metabolites with a higher relative concentration in the fever control group in grey. (C) Regular (circles) and cross-validated (squares) scores for the first predictive component (t[1] and tcv[1], respectively, linked by broken line) showing a separation between culture-positive typhoid (red; n = 33 including eight analytical replicates) and afebrile control samples (grey; n = 32 including seven analytical replicates) (p<0.0001) from the Nepali cohort. (D) Column plot of model covariance loadings (w*[1]) for the first predictive component for the 15 common named metabolites in the Nepali cohort, showing metabolites with a higher relative concentration in the typhoid group in red and metabolites with a higher relative concentration in the afebrile control group in grey.
 
-## Typhoid fever metabolites in Bangladeshi and Senegalese validation cohorts
+### Typhoid fever metabolites in Bangladeshi and Senegalese validation cohorts
 
-For further validation, we analyzed an additional 54 plasma samples from febrile patients from Bangladesh and Senegal using a different analytical technique (GC-TOFMS, methods). This validation cohort included samples from patients with confirmed typhoid and samples from patients with malaria or infections caused by other pathogens. Through an independent targeted processing approach, we detected 247 putative metabolites; after manual filtering, 104 metabolites were suitable for modeling (
+For further validation, we analyzed an additional 54 plasma samples from febrile patients from Bangladesh and Senegal using a different analytical technique (GC-TOFMS, methods). This validation cohort included samples from patients with confirmed typhoid and samples from patients with malaria or infections caused by other pathogens. Through an independent targeted processing approach, we detected 247 putative metabolites; after manual filtering, 104 metabolites were suitable for modeling (Supplementary file 1D). Initially, a three-class OPLS-DA model was obtained indicating the discrimination of typhoid samples from the two control groups (malaria and other pathogens) (Figure 3—figure supplement 1 and Supplementary file 1B). Furthermore, a two-class OPLS-DA model for separation between typhoid and all control samples together showed significant separation for the new Bangladeshi samples (one overlapping control) and the majority of the Senegalese samples (p<0.0001) (Figure 3A and Supplementary file 1B). Malaria presents with a clinical syndrome that can be indistinguishable from typhoid fever; therefore, distinguishing between the diseases using their metabolite profiles is an important diagnostic approach. The typhoid samples were compared to the malaria positive samples in a separate OPLS-DA model and showed significant separation (p=0.0001), with two overlapping Senegalese typhoid samples, potentially signifying co-infection (Figure 3B and Supplementary file 1B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15651/elife-15651-fig3-v1.jpg)
 
-**Figure 3.:** OPLS-DA models generated from GC-TOFMS using 104 metabolites. (A) Column plot of the first predictive component scores, t[1] showing a separation of typhoid infection samples (red; n = 14) from the two control groups; malaria (light grey; n = 15) and infections caused by other bacteria/pathogens (grey; n = 25) (p<0.0001). For the Bangladeshi samples, there is a clear separation except for one control sample behaving as a typhoid sample, there is more overlap for the Senegalese samples. (B) Column plot of the first predictive component scores, t[1] showing a separation of typhoid infection samples (red; n = 14) from malaria samples (light grey; n = 15) (p<0.001). There is a clear separation for the Bangladeshi samples and for the Senegalese samples except two typhoid samples behaving as malaria.DOI: http://dx.doi.org/10.7554/eLife.15651.006
+**Figure 3.:** OPLS-DA models generated from GC-TOFMS using 104 metabolites. (A) Column plot of the first predictive component scores, t[1] showing a separation of typhoid infection samples (red; n = 14) from the two control groups; malaria (light grey; n = 15) and infections caused by other bacteria/pathogens (grey; n = 25) (p<0.0001). For the Bangladeshi samples, there is a clear separation except for one control sample behaving as a typhoid sample, there is more overlap for the Senegalese samples. (B) Column plot of the first predictive component scores, t[1] showing a separation of typhoid infection samples (red; n = 14) from malaria samples (light grey; n = 15) (p<0.001). There is a clear separation for the Bangladeshi samples and for the Senegalese samples except two typhoid samples behaving as malaria.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15651/elife-15651-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Score plot with the scores of the two first predictive component, t[1] (x-axis) and t[2] (y-axis) showing a separation of typhoid infection samples, shown in red, from the two control groups (malaria, shown in light grey, and infections caused by other bacteria/pathogens, shown in dark grey) along the first component (with some overlap) and a separation of the malaria control group from the other infections control group along the second component (with some overlap) (p=0.0035).DOI: http://dx.doi.org/10.7554/eLife.15651.007
+**Figure 3—figure supplement 1.:** Score plot with the scores of the two first predictive component, t[1] (x-axis) and t[2] (y-axis) showing a separation of typhoid infection samples, shown in red, from the two control groups (malaria, shown in light grey, and infections caused by other bacteria/pathogens, shown in dark grey) along the first component (with some overlap) and a separation of the malaria control group from the other infections control group along the second component (with some overlap) (p=0.0035).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/15651/elife-15651-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** The metabolite pattern separating typhoid samples from controls in the Bangladeshi/Senegalese validation cohort was compared to the corresponding metabolite patterns in the Bangladeshi cohort in the current study and the Nepali cohort in the previous study to find metabolites that were consistently up- or downregulated and multivariate significant in the three cohorts. Column plots of first predictive component scores (t[1]) for OPLS-DA models separating typhoid samples (red) from controls (dark grey, including a malaria group in light grey in A) for (A) GC-TOFMS data of plasma samples from the Bangladeshi/Senegalese validation cohort based on 24 significant metabolites consistently up- or downregulated in the Bangladeshi/Senegalese cohort and the Bangladeshi cohort and/or the Nepali cohort (p<0.0001), (B) GCxGC-TOFMS data of plasma samples from the Bangladeshi cohort based on 13 significant metabolites consistently up- or downregulated in the Bangladeshi/Senegalese cohort and the Bangladeshi cohort (p=0.39) and (C) GCxGC-TOFMS data of plasma samples from the Nepali cohort based on 14 significant metabolites consistently up or downregulated in the Bangladeshi/Senegalese cohort and the Nepali cohort (p<0.0001). Five metabolites were consistently up or downregulated in all three cohorts.DOI: http://dx.doi.org/10.7554/eLife.15651.008
+**Figure 3—figure supplement 2.:** The metabolite pattern separating typhoid samples from controls in the Bangladeshi/Senegalese validation cohort was compared to the corresponding metabolite patterns in the Bangladeshi cohort in the current study and the Nepali cohort in the previous study to find metabolites that were consistently up- or downregulated and multivariate significant in the three cohorts. Column plots of first predictive component scores (t[1]) for OPLS-DA models separating typhoid samples (red) from controls (dark grey, including a malaria group in light grey in A) for (A) GC-TOFMS data of plasma samples from the Bangladeshi/Senegalese validation cohort based on 24 significant metabolites consistently up- or downregulated in the Bangladeshi/Senegalese cohort and the Bangladeshi cohort and/or the Nepali cohort (p<0.0001), (B) GCxGC-TOFMS data of plasma samples from the Bangladeshi cohort based on 13 significant metabolites consistently up- or downregulated in the Bangladeshi/Senegalese cohort and the Bangladeshi cohort (p=0.39) and (C) GCxGC-TOFMS data of plasma samples from the Nepali cohort based on 14 significant metabolites consistently up or downregulated in the Bangladeshi/Senegalese cohort and the Nepali cohort (p<0.0001). Five metabolites were consistently up or downregulated in all three cohorts.
 
 The informative plasma metabolites from the Bangladeshi/Senegalese validation cohort were compared to the primary Bangladeshi and Nepali cohorts. We identified 49 common metabolites across all datasets. After comparing the direction of change and degree of multivariate significance, we found 24 metabolites that were consistently up- or downregulated in the Bangladeshi/Senegalese validation cohort and the Bangladeshi cohort and/or the Nepali cohort (Supplementary file 1D). OPLS-DA models of the consistently up- or downregulated metabolites resulted in significant separations between those with typhoid and the control samples for the Bangladeshi/Senegalese validation cohort (p<0.0001) (Figure 3—figure supplement 2A) and for the Nepali cohort (p<0.0001) (Figure 3—figure supplement 2C), the model was weaker for the primary Bangladeshi cohort (p=0.39) (Figure 3—figure supplement 2B) (Supplementary file 1B).
 

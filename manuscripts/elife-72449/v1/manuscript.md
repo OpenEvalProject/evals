@@ -28,7 +28,7 @@ Cellular senescence was formerly described by Hayflick and colleagues, after wit
 
 Importantly, SCs stopped being regarded as just undead or zombie cells that refuse to die. Though one might say they walk a fine line between life and death, it is now clear that SCs are much more than what was initially thought. In fact, they suffer numerous phenotypic changes and remain metabolically active cells with a complex secretory phenotype, through which they can modify the surrounding microenvironment (Muñoz-Espín and Serrano, 2014; Figure 1). Strikingly, SCs have recently emerged as beneficial players in various physiological processes, from embryonic development to cellular reprogramming and tissue injury responses such as wound healing and tissue repair (Rhinn et al., 2019).
 
-## What truly defines a SC?
+### What truly defines a SC?
 
 Cellular senescence has several biomarkers but none is absolutely specific (Figure 1). The cell cycle arrest is not exclusive of senescence and pRB and p53 are also involved in other forms of proliferative withdrawal (Rodier and Campisi, 2011). Even p16INK4a, one of the strongest senescence markers, might not be expressed in all SCs and is expressed in certain non-SCs (Hernandez-Segura et al., 2017; Sharpless and Sherr, 2015). The p53/p21CIP1 pathway does not always drive senescence and, in some tissues, cells that stain positively for senescence-associated β-galactosidase (SA-β-gal) lack the expression of p21CIP1 (Huang and Rivera-Pérez, 2014; Xu et al., 2019). In fact, despite its prominence, SA-β-gal is not a requirement of the senescent phenotype and it is possible to have SA-β-gal-negative SCs (e.g., those lacking GLB1) (Lee et al., 2006). In addition, false-positive SA-β-gal staining was also detected in macrophages (Hall et al., 2017). DNA segments with chromatin alterations reinforcing senescence (DNA-SCARS) and senescence-associated heterochromatic foci (SAHF) are stimulus-dependent and therefore cannot be regarded as a global feature of SCs (Di Micco et al., 2011; Kennedy et al., 2010; Rodier et al., 2011). The senescence-associated lipid profile seems to be variable depending on the trigger and mitochondrial dysfunction also portrays other cellular processes, so none of these are absolute biomarkers of senescence (Eisner et al., 2018; Quijano et al., 2012).
 
@@ -42,7 +42,7 @@ Given the nature of the SASP, senescence signalling is often linked to inflammat
 
 It is clear that the manifestation of each senescence hallmark is context-dependent and varies according to factors such as the stress trigger, the cell or tissue type, and, last but not least, time from induction of the senescence programme (Calcinotto et al., 2019). Besides this huge heterogeneity, one must also account for the fact that non-SCs (even proliferative cells) may express some of the features normally associated with senescence. An example is the difficulty in often distinguishing whether secreted factors have a SASP origin or are molecules secreted by other non-SCs. This is why a multi-parametric approach is required in order to define a senescence signature. Data from transcriptome analysis and single-cell studies is proving to be a valuable tool in providing senescence-gene-expression signatures in several different conditions. For example, a proteomic atlas of SASP factors originating from senescent fibroblasts and epithelial cells submitted to multiple senescence inducers has been recently reported (Basisty et al., 2020). This type of comprehensive analysis is fundamental to define biomarker candidates with greater selectivity to specific pathological contexts, but information is still lacking and more studies are needed, especially in vivo. Meanwhile, a three-step multi-marker system has been proposed to identify SCs with more accuracy. This multi-marker workflow includes: (1) screening for senescence with SA-β-gal and/or lipofuscin accumulation; (2) co-staining with markers frequently present (p16INK4a, p21CIP1) or absent (proliferation markers, Lamin B1) in SCs; and (3) identification of factors predicted to be altered in specific senescence contexts (SASP, DNA damage, PI3K/FOXO/mTOR) (Gorgoulis et al., 2019).
 
-## Senescence: the good, the bad, and the ugly
+### Senescence: the good, the bad, and the ugly
 
 The discovery of additional cellular senescence features and biological roles provided a shifting view from a simple cell autonomous stress response to a dynamically active mobilization of environmental signalling cues with local or systemic repercussions for tissue function and, ultimately, organismal life. Some of these repercussions are beneficial while others are detrimental (Figure 2). In some contexts, these seemingly paradoxical roles are challenging to reconcile, justifying the apparent chaotic nature of this yet undeciphered phenomenon.
 
@@ -50,7 +50,7 @@ The discovery of additional cellular senescence features and biological roles pr
 
 **Figure 2.:** The SASP can have a wide range of effects in the surrounding microenvironment, including matrix remodelling, mitogenic signalling, clearance regulation, inflammation, immune modulation, cell proliferation, migration, differentiation and plasticity, as well as vascularization. Depending on the time duration of the senescence programme and the associated SASP response, effects can be beneficial or detrimental. Anti-fibrotic and anti-inflammatory effects are normally correlated to a transient SASP and favour tissue repair and regeneration. A short-term SASP also favours immune-mediated clearance of SCs in order to avoid their accumulation and persistence. Likewise, a transient senescence profile is fundamental for tissue patterning during development. In contrast, long-lasting SASP responses have detrimental pro-fibrotic and pro-inflammatory effects on the microenvironment. Therefore, the persistent accumulation of SCs leads to tissue dysfunction and is associated with chronic inflammation and a broad spectrum of aging-related diseases. Persistent senescence responses can also deplete stem cell progenitor pools, impairing the repair/regenerative capability of affected tissues. In turn, the role of the SASP in cancer is more ambiguous than the rest, as SCs can both promote tumour suppression and tumour progression/invasiveness. However, current knowledge suggests that the SASP suppresses tumour growth in early stages, while supplying pro-tumourigenic chronic inflammatory environments in later stages.
 
-## Aging
+#### Aging
 
 In zebrafish, rodents, primates, and humans, SCs are found in many tissues throughout life (Campisi, 2005; Dimri et al., 1995; Jeyapalan et al., 2007; Kishi, 2004). Though relatively rare in young organisms, they accumulate with age in several organs and tissues, such as the skin, heart, lung, spleen, kidney, and liver (Wang et al., 2009; Yang and Fogo, 2010). Aging entails a progressive loss of tissue functions that eventually leads to several chronic and age-related diseases (Campisi, 2013). So, a causal link between cellular senescence and aging seems quite plausible. In fact, senescence has been associated to a wide range of human age-associated pathologies, including cancer, fibrosis, cardiovascular diseases, type 2 diabetes, obesity, sarcopenia, osteoarthritis, osteoporosis, and neurological disorders (Calcinotto et al., 2019; van Deursen, 2014). Remarkably, the use of progeroid mouse models has provided evidence that ablation of p16INK4a+ cells improves many of these disease symptoms, reinforcing a detrimental role of SCs in aged tissues (Baker et al., 2011; Rhinn et al., 2019).
 
@@ -58,7 +58,7 @@ Some studies have also suggested that, with aging, senescence plays a role in th
 
 Similar to a ‘chicken or the egg’ paradox, one might wonder whether it is the accumulation of SCs that leads to aging or the opposite. The mechanisms behind SC accumulation with age and their influence on disease progression are still unclear. Some hypothesize that SCs develop ways to escape from immunosurveillance. In support of this, authors have shown that senescent dermal fibroblasts express atypical levels of MHC molecule HLA-E, induced by SASP-associated cytokines and regulated by p38MAPK (Pereira et al., 2019). HLA-E interacts with the inhibitory receptor NKG2A expressed by natural killer (NK) and highly differentiated CD8+ T cells, allowing senescent fibroblasts to evade immune clearance. Others theorize that, with age, the immune system becomes progressively compromised (immunosenescence) and cannot efficiently clear SCs as it should or that the generation rate of SCs is just too big to cope with (Furman et al., 2019). In any case, there is a very important notion to take from the relationship between senescence and aging: a persistent accumulation of SCs without a controlled clearance is detrimental for tissue function.
 
-## Cancer
+#### Cancer
 
 Cellular senescence is a powerful barrier to tumourigenesis (Collado and Serrano, 2010). The first experimental evidence of OIS came from the overexpression of oncogenic Ras in human fibroblasts, resulting in upregulation of p53, p16INK4a, pRB, and permanent cell cycle arrest (Serrano et al., 1997). This can be bypassed by inactivation of p53 and p16INK4a or co-expression of other oncogenes like c-MYC, E1A, or DRIL1 (Serrano et al., 1997). BRAF is another oncogene that promotes OIS by inducing p16INK4a expression, in a process that requires the co-expression of IGFBP7 (Wajapeyee et al., 2008). The loss or inactivation of tumour suppressor genes, such as PTEN, also induces a senescence response (Chen et al., 2005). Loss of PTEN induces p53 through activation of mTOR and ARF-mediated inhibition of MDM2, but also p16INK4a through upregulation of the transcription factor Ets2 (Ohtani et al., 2001). Contrarily to OIS, PTEN loss-induced senescence occurs in the absence of DNA damage response (DDR) but can also be bypassed by p53 inactivation (Ohtani et al., 2001).
 
@@ -70,21 +70,194 @@ Chemotherapy drugs or ionizing radiation are used to induce senescence in cancer
 
 The role of senescence in cancer rightfully epitomizes the good, the bad, and the ugly sides of this cellular phenomenon, by suppressing tumour growth in early stages, contributing to tumour development in later stage and eliciting tumour relapse and increased malignancy after arrest escape or chemotherapy. Importantly, with aging, this scenario becomes even more grim as SCs accumulate and supply pro-tumourigenic chronic inflammatory environments.
 
-## Development
+#### Development
 
 The discovery of SCs throughout embryonic development was very exciting and brought relevant insights to better understand the physiological roles of senescence. So far, SCs have been found during development of mouse and human embryos (Chuprin et al., 2013; Muñoz-Espín et al., 2013; Storer et al., 2013), but also in naked mole rats (Zhao et al., 2018), birds (Gibaja et al., 2019; Nacher et al., 2006; Storer et al., 2013), amphibians (Davaapil et al., 2017; Villiard et al., 2017), and fish (Da Silva-Álvarez et al., 2020; Villiard et al., 2017) embryos and/or larvae. SCs in developing embryonic structures exhibit SA-β-gal activity and upregulation of p21CIP1, while expression of other senescence markers, like p53, p16INK4a, and DDR, is absent (Muñoz-Espín et al., 2013). This suggests a different senescence phenotype from that observed later in life and pinpoints the relevance of p21CIP1 in developmental senescence. Indeed, genetic disruption of p21CIP1 or senolytic treatment results in loss of senescence and patterning abnormalities in various structures (Davaapil et al., 2017; Gibaja et al., 2019; Muñoz-Espín et al., 2013; Storer et al., 2013). Interestingly, patterning defects are only observed transiently and are eventually compensated by other mechanisms, namely apoptosis (Muñoz-Espín et al., 2013; Storer et al., 2013). This suggests that SCs are intrinsic to development but not essential.
 
 Overall, existing studies suggest that developmental senescence is not a damage-triggered event but rather a highly organized and programmed process with precise patterns in time and space, which may be orchestrated by other cues such as biophysical forces during morphogenesis. During development, SCs seem to contribute to tissue remodelling by controlling the balance of cell populations, fine-tuning of cell fate specification, morphogenetic signalling, and structural degeneration (the latter mediated by macrophage-dependent elimination).
 
-## Wound healing and tissue repair
+#### Wound healing and tissue repair
 
 A role of senescence in wound healing and tissue repair has been described in several organs, such as the liver (Krizhanovsky et al., 2008), the skin (Demaria et al., 2014; Jun and Lau, 2010), the heart (Meyer et al., 2016; Zhu et al., 2013), and the lung (Schafer et al., 2017; Table 1). In all cases, SCs seem to be closely associated with the levels of fibrotic tissue generated upon wound resolution, which in turn affect the outcome of the repair process (Baker et al., 2016; Yun, 2018). The deposition of ECM is critical for the maintenance of tissue integrity during wound healing but, if left unchecked, may lead to fibrosis and scarring. In the skin, CCN1, a matricellular protein expressed upon wound healing, elicits a senescence response in fibroblasts by triggering p53 and p16INK4a via ERK and p38MAPK pathways (Jun and Lau, 2010). This response controls the proliferation of fibroblasts and ECM deposition, limiting the fibrotic scar and contributing to the healing process. Importantly, defects in CCN1 lead to fibrosis exacerbation (Jun and Lau, 2010). Also in the skin, in a more recent study using the p16-3MR transgenic model, Demaria and colleagues demonstrated that a transient accumulation of senescent fibroblasts and endothelial cells at the wound site induces myofibroblast differentiation through secretion of platelet growth factor AA (PDGF-AA) (Demaria et al., 2014). Elimination of p16+ cells resulted in delayed wound healing and increased fibrosis. Notably, topical administration of PDGF-AA reverted the delay in wound closure while maintaining the levels of fibrotic tissue, suggesting more SASP factors (likely MMPs) are involved in the healing process. In a mouse model of chronic liver damage, the administration of CCl4 induces fibrotic scarring and senescence in hepatic stellate cells (HSCs) also via a CCN1/p53/p16INK4a pathway (Krizhanovsky et al., 2008). Senescent HSCs facilitate fibrotic resolution through secretion of MMPs. Finally, the cycle is completed by recruitment of NK cells to promote their own elimination. Moreover, p53;INK4A/ARF null mice displayed decreased numbers of senescent HSCs and extensive cirrhosis upon CCl4 treatment (Krizhanovsky et al., 2008). A time-controlled SASP-mediated clearance of SCs seems to be, in fact, a fundamental step for the outcome of the repair process. In a recent study using both human and mouse models of ischemic retinopathy, the SASP of senescent endothelial cells stimulated neutrophil recruitment and the extrusion of neutrophil extracellular traps, which both removed dysfunctional endothelial SCs and facilitated vascular pruning and repair (Binet et al., 2020).
+
+**Table 1.**
+ Senescence in tissue repair and regeneration.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Model (tissue/type of injury)</th>
+      <th>Role (beneficial vs. detrimental)</th>
+      <th>Profile (transient vs. persistent)</th>
+      <th>Main findings</th>
+      <th>Biomarkers</th>
+      <th>SASP factors (identified)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse</td>
+      <td>Cutaneous wound healing</td>
+      <td>BeneficialAnti-fibrotic.</td>
+      <td>N/E</td>
+      <td>- CCN1 → DNA damage/p53 activation + ROS-dependent p16INK4a/pRB activation → fibroblast senescence → ↑ expression of antifibrotic genes- CCN1 mutant mice → ↓ senescence → exacerbated fibrosis</td>
+      <td>SA-β-Gal, p16INK4a, p53</td>
+      <td>IL-6, IL-8, IL-11, MMP1, MMP3</td>
+      <td>Jun and Lau, 2010</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Cutaneous wound healing</td>
+      <td>BeneficialAnti-fibrotic.Promote differentiation.</td>
+      <td>Transient</td>
+      <td>- Fibroblast and endothelial cell senescence at the wound site → PDGF-AA secretion → myofibroblast differentiation- Elimination of p16INK4a+ cells → delayed wound healing + ↑ fibrosis</td>
+      <td>SA-β-Gal, p16INK4a, p21CIP1,↓ laminB1</td>
+      <td>PDGF-AA, VEGF, PAI-1, CCL5, and CCL2</td>
+      <td>Demaria et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Chronic liver damage</td>
+      <td>BeneficialAnti-fibrotic.Recruitment of immune system.</td>
+      <td>N/E</td>
+      <td>- CCl4 administration → activation of CCN1/p53/p16INK4a pathway → hepatic stellate cell senescence → secretion of MMPs → fibrotic resolution → recruitment of NK cells to promote their own clearance- p53;INK4A/ARF null mice → ↓ senescence upon CCl4 treatment → ↑ cirrhosis</td>
+      <td>SA-β-Gal, p21CIP1, p53, HMGA1</td>
+      <td>MICA, IL-8, ULBP2, CD58,MMP1, MMP3</td>
+      <td>Krizhanovsky et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Heart infarction</td>
+      <td>BeneficialAnti-fibrotic.</td>
+      <td>Transient</td>
+      <td>- CCN1-dependent cardiac myofibroblast senescence → ↓ fibrosis → improved heart function- p53 deficiency → ↑ collagen deposition</td>
+      <td>SA-β-Gal, p16INK4a, p21CIP1, p53, p19ARF</td>
+      <td>MMP2, MMP9, IL-6, IL-11, CXCL1</td>
+      <td>Zhu et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Cardiac hypertrophy</td>
+      <td>BeneficialAnti-fibrotic.</td>
+      <td>N/E</td>
+      <td>- CCN1-dependent cardiac myofibroblast senescence → ↓ fibrosis → improved heart function- SC genetic ablation → ↑ fibrosis</td>
+      <td>SA-β-Gal, p16INK4a, p21CIP1,</td>
+      <td>N/E</td>
+      <td>Meyer et al., 2016;</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Cardiac ischaemia-reperfusion injury</td>
+      <td>Detrimental.Pro-fibrotic.Pro-inflammatory.</td>
+      <td>Persistent</td>
+      <td>- Oxidative stress → Cardiomyocyte and interstitial cell senescence → ↑ fibrosis and inflammation → impaired heart function- SC clearance → ↓ scar size and inflammation + ↑ myocardial vascularization → improved heart function</td>
+      <td>SA-β-Gal, p16INK4a, p21CIP1,</td>
+      <td>IP-10, TGF-β3, IL-6, IL-11, IL-16, CCL22, MIP-3β, CX3CL1</td>
+      <td>Dookun et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Human/mouse</td>
+      <td>Ischemic retinopathy</td>
+      <td>BeneficialRecruitment of immune system.Pro-regenerative.</td>
+      <td>Transient</td>
+      <td>- Rapid proliferation of vascular cells → ↑ endothelial cell senescence → cytokine secretion+ neutrophil recruitment → formation of neutrophil extracellular traps (NETs) → removal of SCs → regression of pathological angiogenesis + regeneration of functional vessels- Inhibition of NETosis / neutrophil inactivation → impaired SC clearance → no regression of pathological angiogenesis</td>
+      <td>SA-β-Gal, PML</td>
+      <td>CXCL1, IL-1β</td>
+      <td>Binet et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Idiopathic pulmonary fibrosis (IPF)</td>
+      <td>Detrimental.Promote differentiation.Pro-fibrotic (indirectly).</td>
+      <td>Persistent</td>
+      <td>- Accumulation of senescent epithelial cells and fibroblasts → myofibroblast differentiation → ↑ fibrosis- SC elimination (genetic ablation and pharmacological) → improved pulmonary function and physical health</td>
+      <td>P16INK4a, p53, γH2AX</td>
+      <td>PAPPA, IGFBP2, IGFBP4, COL1A1, MMP10, MMP12, VCAM1, MCP1, PAI1, TNF-α</td>
+      <td>Schafer et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Salamander</td>
+      <td>Limb amputation</td>
+      <td>N/E</td>
+      <td>Transient</td>
+      <td>- Turnover of SCs (unidentified) at injury site during regeneration</td>
+      <td>SA-β-Gal(in vivo)</td>
+      <td>N/E(in vivo)</td>
+      <td>Yun et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Zebrafish/mouse (P1)</td>
+      <td>Heart injury</td>
+      <td>N/E</td>
+      <td>Transient</td>
+      <td>- Turnover of senescent cardiac fibroblasts during regeneration</td>
+      <td>SA-β-Gal, p53</td>
+      <td>N/E</td>
+      <td>Sarig et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Zebrafish</td>
+      <td>Caudal fin amputation</td>
+      <td>Beneficial.</td>
+      <td>Transient</td>
+      <td>- Turnover of SCs (unidentified) at injury site during regeneration.SC removal → impaired regeneration</td>
+      <td>SA-β-Gal, p21CIP1</td>
+      <td>N/E</td>
+      <td>Da Silva‐Álvarez et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Acute muscle injury</td>
+      <td>Beneficial.Anti-inflammatory.Pro-regenerative.</td>
+      <td>Transient</td>
+      <td>- Senescence of fibro-adipogenic progenitors (FAPs) → cytokine secretion → anti-inflammatory environment → muscle regeneration</td>
+      <td>SA-β-Gal, γH2AX, p16INK4a, p53</td>
+      <td>TSG-6IL-33</td>
+      <td>Saito et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Biliary injury</td>
+      <td>Detrimental.Pro-fibrotic.Pro-inflammatory.Paracrine senescence.</td>
+      <td>Persistent</td>
+      <td>- Senescent cholangiocytes → TGF-β secretion → paracrine senescence of cholangiocytes and hepatocytes → ↑ fibrosis and inflammation → impaired liver regeneration- Inhibition of TGF-β-signaling → disruption of paracrine senescence → restoration of liver function</td>
+      <td>p16INK4a, p21CIP1, DCR2,γH2AX, p27, p53</td>
+      <td>TGF-β, IL1α</td>
+      <td>Ferreira-Gonzalez et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Zebrafish</td>
+      <td>Spinal cord injury</td>
+      <td>N/E</td>
+      <td>Transient</td>
+      <td>- Turnover of senescent neurons at lesion periphery during regeneration</td>
+      <td>SA-β-Gal, p21CIP1,No BrdU</td>
+      <td>N/E</td>
+      <td>Paramos-de-Carvalho et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Spinal cord injury</td>
+      <td>Detrimental.Pro-inflammatory.Pro-fibrotic.</td>
+      <td>Persistent</td>
+      <td>- Continuous accumulation of senescent neurons at lesion periphery.- SC pharmacological depletion → ↑ myelin and axonal sparing + ↓ fibrosis and inflammation → improved motor and sensory functions</td>
+      <td>SA-β-Gal, p16INK4a,γH2AX</td>
+      <td>Amphiregulin, PDGF-BB, IGFBP-3, Serpin E1, IL-15, TNF- α, M-CSF, I-TAC, CCL11, ICAM-1, CCL20</td>
+      <td>Paramos-de-Carvalho et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+_N/E - not explored._
 
 The contrasting effects of transient vs. persistent senescence responses are further substantiated upon cardiac injury. In mouse models of cardiac hypertrophy and heart infarction, cardiac myofibroblasts enter senescence through a CCN1-dependent manner, reducing fibrosis in the short-term and improving heart function (Meyer et al., 2016; Zhu et al., 2013). However, after cardiac ischaemia-reperfusion injury, a long-term oxidative stress-induced senescence response in cardiomyocytes and interstitial cells promotes fibrosis and mediates a pro-inflammatory SASP, impairing heart function (Dookun et al., 2020). Similarly, in a mouse model of idiopathic pulmonary fibrosis (IPF), a chronic lung disease characterized by decreased lung function due to persistent scarring, senescent epithelial cells and fibroblasts accumulate continuously over time, inducing myofibroblast differentiation and exacerbating the fibrotic response (Schafer et al., 2017). In this case, the elimination of SCs improves the disease condition.
 
 Together, these results suggest that timely and coordinated activation of SCs controls the early fibrotic response and is beneficial for wound repair. Yet, in the absence of proper clearance, persistent SCs accumulate and have a negative impact in tissue repair (Figure 2).
 
-## Regeneration
+#### Regeneration
 
 Though still a very understudied topic, recent findings suggest that SCs have indeed a part to play in regenerative processes (Table 1). In 2015, the team of Jeremy Brockes (UCL, London) reported a recurrent turnover of senescence during limb regeneration in the salamander (Yun et al., 2015). SCs were transiently induced near the amputation plane throughout regeneration and subsequently cleared by a macrophage-dependent immunosurveillance mechanism. This finding led to the obvious question of whether these transient SCs could be contributing to the regenerative response. Considering that salamanders regenerate limbs through dedifferentiation (Tanaka et al., 2016), this model constitutes a good system to study the impact of senescence on this particular process of cellular plasticity. However, due to the scarcity of tools to manipulate SCs in this model and assess their function, it is still unclear how senescence contributes to limb regeneration. One hypothesis is that SCs might stimulate dedifferentiation and/or create a more pro-regenerative microenvironment through the SASP (e.g., ECM remodelling, vascularization). Recruited immune cells, namely macrophages and NK cells, can also execute pro-regenerative functions (Godwin et al., 2013; Lucas et al., 2010; Rajagopalan and Long, 2012). Another possibility is that SCs work as a population balancing mechanism, controlling the proliferation of certain cell types during tissue re-growth and patterning, much like during development. Yet, it is possible that SCs are just a consequence of the local tissue damage cues from the injury and need to be removed, which then still raises the question of why not follow the apoptosis route instead. Whatever the case, current understanding of the functions of cell senescence tells us that these cells are likely modulating the surrounding microenvironment.
 
@@ -98,11 +271,11 @@ In our lab, we have recently provided evidence that there are distinct senescenc
 
 Transversal to all these reports is the timely elimination of SCs, which suggests that their persistence could eventually turn detrimental for the regenerative response. Current knowledge seems to support this hypothesis, given the outcome of transient vs. persistent SASP exposure in pathological conditions or aging.
 
-## Reprogramming
+#### Reprogramming
 
 Recent studies have uncovered another unexpected facet of senescence: a role in cellular reprogramming. This facet became even more interesting when it was discovered that senescence has opposite effects in vitro and in vivo reprogramming. In vitro, the expression of the four Yamanaka factors (OCT3/4, SOX2, KLF4 and c-MYC, OSKM) activates senescence markers in targeting cells, such as SA-β-gal, p16INK4a, p21CIP1, and SAHF (Banito et al., 2009). This seemingly intrinsic barrier to reprogramming probably explains why the iPS cell generation efficiency is so low (≈0.02%) (Takahashi et al., 2007; Takahashi and Yamanaka, 2006). In fact, silencing of senescence-associated genes like p53, CIP1, and INK4a has been shown to increase iPS cell generation rate from mouse and human fibroblasts (Banito et al., 2009; Hong et al., 2009; Li et al., 2009). Strikingly, cellular senescence exerts a contrary effect on in vivo reprogramming. Such has been demonstrated in mice engineered to transiently express the four OSKM factors in an inducible fashion (i4F). i4F wild-type mice exhibited co-expression of SA-β-gal and NANOG, a pluripotency marker (Mosteiro et al., 2016). Without INK4a/ARF, this co-expression was lost. Remarkably, in mouse models of lung and muscle damage in which senescence is induced at the lesion sites, the efficiency of reprogramming of i4F mice was increased (Chiche et al., 2017; Mosteiro et al., 2016). This efficiency was also enhanced in conditions that elicit senescence activation, including Palbociclib treatment, irradiation, and even aging. On the other hand, reprogramming was decreased after p16INK4a deletion or treatment with the senolytic drug ABT-263 (Chiche et al., 2017; Mosteiro et al., 2016). This senescence-induced favourable environment for reprogramming was found to be mediated by secretion of the SASP factor IL-6 that activates the JAK/STAT target PIM1 to promote cellular plasticity, which can be reverted by treatment with IL-6 antibodies (Chiche et al., 2017; Mosteiro et al., 2016). In another study, Ras-mediated OIS in the skin and liver was shown to induce the expression of stemness markers, such as CD34, Lgr6, and Nestin, in senescent keratinocytes (Ritschka et al., 2017). This was also demonstrated to be SASP-dependent, as it was abolished with nuclear factor kappa B (NF-κB) inhibition. However, the expression of stemness markers was overcome by senescence features upon a longer (6 days) exposure to the OIS-driven SASP, which was proposed as a cell-intrinsic anti-tumourigenic response to counteract stemness. It is interesting to speculate that there is a risk that a short exposure to an oncogenic trigger can initiate a premature senescent response entailing a stemness profile with aberrant plasticity and high tumour-initiating capability. In any case, the relationship between senescence and reprogramming seems to be defined by the time of exposure to the SASP.
 
-## Targeting cellular senescence
+### Targeting cellular senescence
 
 The role of senescence in diverse pathological settings has elevated SCs to a hot target in a wide range of therapeutic approaches for injured or aged tissues (Paez-Ribes et al., 2019). Despite the proposition that removing SCs might extend lifespan, it becomes imperative to consider the potential drawbacks of removing SCs from certain tissues. In fact, a recent study has proven that senescent liver sinusoid endothelial cells have important structural and functional roles in the aging organism and cannot be replaced after removal (Grosse et al., 2020). Consequently, their acute elimination promoted liver and perivascular tissue fibrosis, as well as health deterioration. Nonetheless, in aging-related scenarios, targeting senescence has become considered targeting aging itself. Thus, the last few years have witnessed a boom in the development of senescence-targeted strategic tools with translational impact. Given the lack of a specific biomarker that could be used for specific targeting, current senescence-directed therapeutic approaches rely on three main strategies: (1) interference with important senescence pathways (e.g., pro-survival); (2) manipulation of the SASP; and (3) immune system activation (Paez-Ribes et al., 2019).
 
@@ -118,7 +291,7 @@ From a therapeutic point of view, there is an urgent need of reliable tools for 
 
 Recently, it has been proposed that cellular senescence, contrarily to what was long thought, can be reverted. In 2018, Kornicka and colleagues demonstrated that a combination of 5‐Azacytydine and Resveratrol reversed the senescent phenotype of adipose stem cells through modulation of mitochondrial dynamics and autophagy (Kornicka et al., 2019). Upon this combinatorial treatment, adipose stem cells exhibited increased proliferation rate, decreased SA-β-gal activity, and lower reactive oxygen species (ROS) accumulation. Similar results were found in replicative senescent retinal pigment epithelial (RPE) cells co-cultured with embryonic stem cells (Wang et al., 2020). In this case, senescent RPE cells displayed increased proliferative capacity re-entering the S and G2/M cycle phases, along with the downregulation of several senescence biomarkers, such as SA-β-gal, p53, p21CIP1, p16INK4a. Though the mechanisms by which the senescent state can be reverted are still unclear, it has been shown that 3-phosphoinositide-dependent protein kinase 1 (PDK1) inhibition suppresses NF-κB and mTOR signalling and abolishes senescence hallmarks in senescent human dermal fibroblasts, restoring their quiescent state (An et al., 2020). The development of ‘senoreverters’ is thus rising as a promising alternative strategy to target SCs.
 
-## Hanging questions and considerations
+### Hanging questions and considerations
 
 While much progress has been achieved in understanding the biological roles of senescence, its apparently chaotic nature may yet reveal deeper complexities. How can we reconcile such a heterogeneous and puzzling phenomenon? Are there common fingerprints across different settings? In time, single-cell transcriptional analysis combined with machine learning tools will yield invaluable information on context-specific senescent signatures and patterns.
 

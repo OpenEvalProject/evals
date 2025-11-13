@@ -22,19 +22,674 @@
 
 ## Abstract
 
-We demonstrate that prostate cancer can be identified by flow cytometric profiling of blood immune cell subsets. Herein, we profiled natural killer (NK) cell subsets in the blood of 72 asymptomatic men with Prostate-Specific Antigen (PSA) levels < 20 ng ml -1 , of whom 31 had benign disease (no cancer) and 41 had prostate cancer. Statistical and computational methods identified a panel of eight phenotypic features ( , C ⁢ D ⁢ 56 d ⁢ i ⁢ m ⁢ C ⁢ D ⁢ 16 h ⁢ i ⁢ g ⁢ h , C ⁢ D ⁢ 56 + ⁢ D ⁢ N ⁢ A ⁢ M - 1 - , C ⁢ D ⁢ 56 + ⁢ L ⁢ A ⁢ I ⁢ R - 1 + , C ⁢ D ⁢ 56 + ⁢ L ⁢ A ⁢ I ⁢ R - 1 - , C ⁢ D ⁢ 56 b ⁢ r ⁢ i ⁢ g ⁢ h ⁢ t ⁢ C ⁢ D ⁢ 8 + , C ⁢ D ⁢ 56 + ⁢ N ⁢ K ⁢ p ⁢ 30 + , C ⁢ D ⁢ 56 + ⁢ N ⁢ K ⁢ p ⁢ 30 - ) that, when incorporated into an Ensemble machine learning prediction model, distinguished between the presence of benign prostate disease and prostate cancer. The machine learning model was then adapted to predict the D’Amico Risk Classification using data from 54 patients with prostate cancer and was shown to accurately differentiate between the presence of low-/intermediate-risk disease and high-risk disease without the need for additional clinical data. This simple blood test has the potential to transform prostate cancer diagnostics. C ⁢ D ⁢ 56 + ⁢ N ⁢ K ⁢ p ⁢ 46 +
+We demonstrate that prostate cancer can be identified by flow cytometric profiling of blood immune cell subsets. Herein, we profiled natural killer (NK) cell subsets in the blood of 72 asymptomatic men with Prostate-Specific Antigen (PSA) levels < 20 ng ml-1, of whom 31 had benign disease (no cancer) and 41 had prostate cancer. Statistical and computational methods identified a panel of eight phenotypic features (C⁢D⁢56d⁢i⁢m⁢C⁢D⁢16h⁢i⁢g⁢h, C⁢D⁢56+⁢D⁢N⁢A⁢M-1-, C⁢D⁢56+⁢L⁢A⁢I⁢R-1+, C⁢D⁢56+⁢L⁢A⁢I⁢R-1-, C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+, C⁢D⁢56+⁢N⁢K⁢p⁢30+, C⁢D⁢56+⁢N⁢K⁢p⁢30-, C⁢D⁢56+⁢N⁢K⁢p⁢46+) that, when incorporated into an Ensemble machine learning prediction model, distinguished between the presence of benign prostate disease and prostate cancer. The machine learning model was then adapted to predict the D’Amico Risk Classification using data from 54 patients with prostate cancer and was shown to accurately differentiate between the presence of low-/intermediate-risk disease and high-risk disease without the need for additional clinical data. This simple blood test has the potential to transform prostate cancer diagnostics.
 
 ## Introduction
 
 Early diagnosis and treatment increase curative rates for many cancers. The WHO considers that the burden of cancer on health services can be reduced by early detection and that this is achievable via three integrated steps: 1) awareness and accessing care, 2) clinical evaluation, diagnosis, and staging, 3) access to treatment (http://www.who.int/mediacentre/factsheets/fs297/en/). Although the clinical introduction of the Prostate-Specific Antigen (PSA) test in 1986 increased the early diagnosis of localized prostate cancer (Catalona et al., 1991; Hankey et al., 1999), elevated PSA levels are not necessarily indicative of prostate cancer because PSA levels can be raised by prostatitis, other localised infections, benign hyperplasia and/or factors such as physical stress. Contrastingly, 15% of men with ‘normal’ PSA levels typically have prostate cancer, with a further 15% of these cancers being high-grade (https://prostatecanceruk.org/prostate-information/prostate-tests/psa-test). The reliable diagnosis of prostate cancer based on PSA levels alone is therefore not possible and confirmation using invasive biopsies is currently required. In 2011/12 approximately 32,000 diagnostic biopsies (28,000 TRUS and 4,000 TPTPB) were performed by the NHS in England (NICE, 2014). Although the transrectal ultrasound guided prostate (TRUS) biopsy is the most commonly used technique, it is limited to taking 10 to 12 biopsies primarily from the peripheral zone of the prostate and has a positive detection rate between 26% and 33% (Aganovic et al., 2011; Nafie et al., 2014a; Naughton et al., 2000; Yuasa et al., 2008). The Transperineal Template Prostate biopsy (TPTPB) is a 36 core technique that samples all regions of the prostate and delivers a better positive detection rate between 55% and 68% (Dimmen et al., 2012; Nafie et al., 2014b; Pal et al., 2012). However, invasive biopsies are painful and associated with a significant risk of potentially serious side-effects such as urosepsis and erectile dysfunction (Chang et al., 2013). Given the potential challenges of invasive tests and the risk of significant side-effects, considerable interest in the potential of non-invasive blood or urine-based tests/approaches (‘liquid biopsies’) for diagnosing disease has developed (Quandt et al., 2017). Liquid biopsies can provide information about both the tumour (e.g. circulating cells, cell-free and exosomal DNA and RNA) and the immune response (e.g. immune cell composition and their gene, protein, and exosome expression profiles). Liquid biopsies are minimally invasive and enable serial assessments and ‘live’ monitoring speedily and cost-effectively (Quandt et al., 2017).
 
-Based on the reciprocal interaction between cancer and the immune system, we have proposed that immunological signatures within the peripheral blood (the peripheral blood ‘immunome’) can discriminate between men with benign prostate disease and those with prostate cancer and thereby reduce the dependency of diagnosis on invasive biopsies. To this end, we have previously shown that the incorporation of a peripheral blood immune phenotyping-based feature set comprising five phenotypic features C⁢D⁢8+⁢C⁢D⁢45⁢R⁢A-⁢C⁢D⁢27-⁢C⁢D⁢28- (C⁢D⁢8+ Effector Memory cells), C⁢D⁢4+⁢C⁢D⁢45⁢R⁢A-⁢C⁢D⁢27-⁢C⁢D⁢28- (C⁢D⁢4+ Effector Memory cells), C⁢D⁢4+⁢C⁢D⁢45⁢R⁢A+⁢C⁢D⁢27-⁢C⁢D⁢28- (C⁢D⁢4+ Terminally Differentiated Effector Memory Cells re-expressing CD45RA), C⁢D⁢3-⁢C⁢D⁢19+ (B cells), C⁢D⁢3+⁢C⁢D⁢56+⁢C⁢D⁢8+⁢C⁢D⁢4+ (NKT cells) into a computation-based prediction tool enables the better detection of prostate cancer and strengthens the accuracy of the PSA test in asymptomatic men having PSA levels < 20 ng/ml (Cosma et al., 2017). Herein, we have extended this new approach to determine if phenotypic profiling of peripheral blood natural killer (NK) cell subsets can also discriminate between the presence of benign prostate disease and prostate cancer in the same cohort of asymptomatic men. We also investigate the potential of the peripheral blood dataset to discriminate between low- or intermediate-risk prostate cancer and high-risk prostate cancer in those men having prostate cancer.
+Based on the reciprocal interaction between cancer and the immune system, we have proposed that immunological signatures within the peripheral blood (the peripheral blood ‘immunome’) can discriminate between men with benign prostate disease and those with prostate cancer and thereby reduce the dependency of diagnosis on invasive biopsies. To this end, we have previously shown that the incorporation of a peripheral blood immune phenotyping-based feature set comprising five phenotypic features $C⁢D⁢8^{+}⁢C⁢D⁢45⁢R⁢A^{-}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$ ($C⁢D⁢8^{+}$ Effector Memory cells), $C⁢D⁢4^{+}⁢C⁢D⁢45⁢R⁢A^{-}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$ ($C⁢D⁢4^{+}$ Effector Memory cells), $C⁢D⁢4^{+}⁢C⁢D⁢45⁢R⁢A^{+}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$ ($C⁢D⁢4^{+}$ Terminally Differentiated Effector Memory Cells re-expressing CD45RA), $C⁢D⁢3^{-}⁢C⁢D⁢19^{+}$ (B cells), $C⁢D⁢3^{+}⁢C⁢D⁢56^{+}⁢C⁢D⁢8^{+}⁢C⁢D⁢4^{+}$ (NKT cells) into a computation-based prediction tool enables the better detection of prostate cancer and strengthens the accuracy of the PSA test in asymptomatic men having PSA levels < 20 ng/ml (Cosma et al., 2017). Herein, we have extended this new approach to determine if phenotypic profiling of peripheral blood natural killer (NK) cell subsets can also discriminate between the presence of benign prostate disease and prostate cancer in the same cohort of asymptomatic men. We also investigate the potential of the peripheral blood dataset to discriminate between low- or intermediate-risk prostate cancer and high-risk prostate cancer in those men having prostate cancer.
 
 ## Results
 
-## Distinguishing between benign prostate disease and prostate cancer: statistical analysis of NK cell phenotypic features and PSA levels
+### Distinguishing between benign prostate disease and prostate cancer: statistical analysis of NK cell phenotypic features and PSA levels
 
 Herein, we consider a ‘feature’ to be a single phenotypic variable (as determined using flow cytometry) or a pre-grouped set of phenotypic variables, as shown in Table 1. It was not possible to discriminate between men with benign prostate disease and men with prostate cancer based on differences between phenotypic features/profiles due to their similarity (Table 1, Figure 1, Figure 2).
+
+**Table 1.**
+ Descriptive statistics of the dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Min.</th>
+      <th colspan="2">Max.</th>
+      <th colspan="2">Mean</th>
+      <th colspan="2">Std.</th>
+      <th colspan="2">IQR</th>
+      <th colspan="2">Range</th>
+      <th>Diff.</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Beni.</th>
+      <th>Canc.</th>
+      <th>Beni.</th>
+      <th>Canc.</th>
+      <th>Beni.</th>
+      <th>Canc.</th>
+      <th>Beni.</th>
+      <th>Canc.</th>
+      <th>Beni.</th>
+      <th>Canc.</th>
+      <th>Beni.</th>
+      <th>Canc.</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>PSA</td>
+      <td>4.70</td>
+      <td>4.70</td>
+      <td>19.00</td>
+      <td>19.00</td>
+      <td>8.26</td>
+      <td>8.34</td>
+      <td>3.31</td>
+      <td>3.28</td>
+      <td>3.30</td>
+      <td>4.08</td>
+      <td>14.30</td>
+      <td>14.30</td>
+      <td>−0.08</td>
+    </tr>
+    <tr>
+      <td colspan="15">C⁢D⁢56d⁢i⁢m %</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>C⁢D⁢16+</td>
+      <td>83.85</td>
+      <td>73.04</td>
+      <td>96.61</td>
+      <td>96.98</td>
+      <td>90.98</td>
+      <td>90.64</td>
+      <td>3.35</td>
+      <td>5.46</td>
+      <td>4.13</td>
+      <td>5.02</td>
+      <td>12.76</td>
+      <td>23.94</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>C⁢D⁢16h⁢i⁢g⁢h</td>
+      <td>24.38</td>
+      <td>49.66</td>
+      <td>87.46</td>
+      <td>89.33</td>
+      <td>72.88</td>
+      <td>73.32</td>
+      <td>11.74</td>
+      <td>10.22</td>
+      <td>15.00</td>
+      <td>10.45</td>
+      <td>63.08</td>
+      <td>39.67</td>
+      <td>−0.44</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>C⁢D⁢16l⁢o⁢w</td>
+      <td>5.17</td>
+      <td>6.57</td>
+      <td>64.22</td>
+      <td>44.00</td>
+      <td>17.74</td>
+      <td>16.84</td>
+      <td>10.40</td>
+      <td>7.45</td>
+      <td>8.76</td>
+      <td>7.66</td>
+      <td>59.05</td>
+      <td>37.43</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>C⁢D⁢16-</td>
+      <td>1.41</td>
+      <td>1.25</td>
+      <td>11.11</td>
+      <td>18.06</td>
+      <td>4.83</td>
+      <td>4.89</td>
+      <td>2.45</td>
+      <td>3.48</td>
+      <td>2.58</td>
+      <td>2.68</td>
+      <td>9.70</td>
+      <td>16.81</td>
+      <td>−0.06</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>C⁢D⁢56d⁢i⁢m⁢t⁢o⁢t⁢a⁢l</td>
+      <td>91.29</td>
+      <td>87.24</td>
+      <td>98.70</td>
+      <td>98.70</td>
+      <td>95.81</td>
+      <td>95.53</td>
+      <td>2.02</td>
+      <td>2.58</td>
+      <td>2.96</td>
+      <td>3.02</td>
+      <td>7.41</td>
+      <td>11.46</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td colspan="15">C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t %</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>C⁢D⁢16+</td>
+      <td>0.46</td>
+      <td>0.65</td>
+      <td>5.10</td>
+      <td>5.88</td>
+      <td>1.91</td>
+      <td>1.83</td>
+      <td>1.06</td>
+      <td>1.04</td>
+      <td>1.64</td>
+      <td>0.92</td>
+      <td>4.64</td>
+      <td>5.23</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>C⁢D⁢16h⁢i⁢g⁢h</td>
+      <td>0.09</td>
+      <td>0.12</td>
+      <td>1.97</td>
+      <td>1.15</td>
+      <td>0.60</td>
+      <td>0.47</td>
+      <td>0.44</td>
+      <td>0.25</td>
+      <td>0.50</td>
+      <td>0.40</td>
+      <td>1.88</td>
+      <td>1.03</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>C⁢D⁢16l⁢o⁢w</td>
+      <td>0.34</td>
+      <td>0.40</td>
+      <td>3.11</td>
+      <td>4.95</td>
+      <td>1.27</td>
+      <td>1.35</td>
+      <td>0.72</td>
+      <td>0.86</td>
+      <td>0.97</td>
+      <td>0.63</td>
+      <td>2.77</td>
+      <td>4.55</td>
+      <td>−0.07</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>C⁢D⁢16-</td>
+      <td>0.61</td>
+      <td>0.58</td>
+      <td>5.78</td>
+      <td>9.09</td>
+      <td>2.28</td>
+      <td>2.64</td>
+      <td>1.14</td>
+      <td>1.82</td>
+      <td>1.42</td>
+      <td>1.75</td>
+      <td>5.17</td>
+      <td>8.51</td>
+      <td>−0.36</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢t⁢o⁢t⁢a⁢l</td>
+      <td>1.30</td>
+      <td>1.30</td>
+      <td>8.71</td>
+      <td>12.76</td>
+      <td>4.19</td>
+      <td>4.47</td>
+      <td>2.02</td>
+      <td>2.58</td>
+      <td>2.95</td>
+      <td>3.01</td>
+      <td>7.41</td>
+      <td>11.46</td>
+      <td>−0.28</td>
+    </tr>
+    <tr>
+      <td colspan="15">C⁢D⁢8%</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢8+</td>
+      <td>21.88</td>
+      <td>9.20</td>
+      <td>86.70</td>
+      <td>80.47</td>
+      <td>46.43</td>
+      <td>40.71</td>
+      <td>15.64</td>
+      <td>14.66</td>
+      <td>24.03</td>
+      <td>20.05</td>
+      <td>64.82</td>
+      <td>71.27</td>
+      <td>5.72</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢8-</td>
+      <td>13.30</td>
+      <td>19.53</td>
+      <td>78.12</td>
+      <td>90.80</td>
+      <td>53.57</td>
+      <td>59.29</td>
+      <td>15.64</td>
+      <td>14.66</td>
+      <td>24.03</td>
+      <td>20.05</td>
+      <td>64.82</td>
+      <td>71.27</td>
+      <td>−5.72</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>C⁢D⁢56d⁢i⁢m⁢C⁢D⁢8+</td>
+      <td>19.63</td>
+      <td>8.60</td>
+      <td>82.38</td>
+      <td>77.47</td>
+      <td>45.18</td>
+      <td>39.11</td>
+      <td>15.31</td>
+      <td>14.10</td>
+      <td>24.72</td>
+      <td>19.36</td>
+      <td>62.75</td>
+      <td>68.87</td>
+      <td>6.07</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+</td>
+      <td>0.37</td>
+      <td>0.25</td>
+      <td>4.75</td>
+      <td>6.64</td>
+      <td>1.41</td>
+      <td>1.70</td>
+      <td>1.07</td>
+      <td>1.41</td>
+      <td>0.70</td>
+      <td>1.60</td>
+      <td>4.38</td>
+      <td>6.39</td>
+      <td>−0.29</td>
+    </tr>
+    <tr>
+      <td colspan="15">NKp30 %</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢30+</td>
+      <td>40.69</td>
+      <td>56.80</td>
+      <td>96.74</td>
+      <td>98.43</td>
+      <td>79.78</td>
+      <td>88.56</td>
+      <td>16.42</td>
+      <td>10.41</td>
+      <td>21.80</td>
+      <td>10.44</td>
+      <td>56.05</td>
+      <td>41.63</td>
+      <td>−8.78</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢30-</td>
+      <td>3.26</td>
+      <td>1.57</td>
+      <td>58.34</td>
+      <td>44.59</td>
+      <td>20.05</td>
+      <td>11.43</td>
+      <td>16.22</td>
+      <td>10.46</td>
+      <td>20.54</td>
+      <td>10.49</td>
+      <td>55.08</td>
+      <td>43.02</td>
+      <td>8.61</td>
+    </tr>
+    <tr>
+      <td colspan="15">NKp46 %</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢46+</td>
+      <td>38.11</td>
+      <td>45.37</td>
+      <td>86.52</td>
+      <td>95.82</td>
+      <td>62.65</td>
+      <td>69.82</td>
+      <td>13.49</td>
+      <td>11.58</td>
+      <td>23.90</td>
+      <td>12.71</td>
+      <td>48.41</td>
+      <td>50.45</td>
+      <td>−7.18</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢46-</td>
+      <td>14.02</td>
+      <td>4.32</td>
+      <td>62.97</td>
+      <td>55.68</td>
+      <td>38.40</td>
+      <td>30.87</td>
+      <td>13.58</td>
+      <td>11.64</td>
+      <td>24.89</td>
+      <td>13.44</td>
+      <td>48.95</td>
+      <td>51.36</td>
+      <td>7.53</td>
+    </tr>
+    <tr>
+      <td colspan="15">DNAM-1 %</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>C⁢D⁢56+⁢D⁢N⁢A⁢M-1+</td>
+      <td>63.69</td>
+      <td>88.56</td>
+      <td>99.18</td>
+      <td>99.60</td>
+      <td>95.35</td>
+      <td>96.46</td>
+      <td>6.81</td>
+      <td>2.59</td>
+      <td>3.37</td>
+      <td>3.49</td>
+      <td>35.49</td>
+      <td>11.04</td>
+      <td>−1.11</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>C⁢D⁢56+⁢D⁢N⁢A⁢M-1-</td>
+      <td>0.86</td>
+      <td>0.42</td>
+      <td>37.29</td>
+      <td>11.66</td>
+      <td>4.74</td>
+      <td>3.59</td>
+      <td>6.96</td>
+      <td>2.61</td>
+      <td>3.45</td>
+      <td>3.54</td>
+      <td>36.43</td>
+      <td>11.24</td>
+      <td>1.14</td>
+    </tr>
+    <tr>
+      <td colspan="15">NKG2D %</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢D+</td>
+      <td>85.17</td>
+      <td>80.79</td>
+      <td>98.77</td>
+      <td>98.96</td>
+      <td>93.49</td>
+      <td>94.07</td>
+      <td>4.45</td>
+      <td>4.87</td>
+      <td>6.81</td>
+      <td>3.83</td>
+      <td>13.60</td>
+      <td>18.17</td>
+      <td>−0.58</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢D-</td>
+      <td>1.22</td>
+      <td>1.03</td>
+      <td>14.76</td>
+      <td>19.12</td>
+      <td>6.44</td>
+      <td>5.84</td>
+      <td>4.36</td>
+      <td>4.76</td>
+      <td>6.80</td>
+      <td>3.96</td>
+      <td>13.54</td>
+      <td>18.09</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PSA</td>
+      <td>4.70</td>
+      <td>4.70</td>
+      <td>19.00</td>
+      <td>19.00</td>
+      <td>8.26</td>
+      <td>8.34</td>
+      <td>3.31</td>
+      <td>3.28</td>
+      <td>3.30</td>
+      <td>4.08</td>
+      <td>14.30</td>
+      <td>14.30</td>
+      <td>−0.08</td>
+    </tr>
+    <tr>
+      <td colspan="15">NKp44 %</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢44+</td>
+      <td>0.43</td>
+      <td>0.28</td>
+      <td>3.71</td>
+      <td>6.77</td>
+      <td>1.16</td>
+      <td>1.34</td>
+      <td>0.82</td>
+      <td>1.20</td>
+      <td>0.78</td>
+      <td>1.25</td>
+      <td>3.28</td>
+      <td>6.49</td>
+      <td>−0.18</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢44-</td>
+      <td>96.10</td>
+      <td>93.70</td>
+      <td>99.53</td>
+      <td>99.70</td>
+      <td>98.82</td>
+      <td>98.64</td>
+      <td>0.83</td>
+      <td>1.13</td>
+      <td>0.80</td>
+      <td>1.25</td>
+      <td>3.43</td>
+      <td>6.00</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td colspan="15">CD85j %</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢85⁢j+</td>
+      <td>19.53</td>
+      <td>14.21</td>
+      <td>84.73</td>
+      <td>91.59</td>
+      <td>53.37</td>
+      <td>55.10</td>
+      <td>19.04</td>
+      <td>18.34</td>
+      <td>30.49</td>
+      <td>20.23</td>
+      <td>65.20</td>
+      <td>77.38</td>
+      <td>−1.74</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢85⁢j-</td>
+      <td>14.93</td>
+      <td>8.50</td>
+      <td>81.54</td>
+      <td>86.08</td>
+      <td>46.94</td>
+      <td>45.24</td>
+      <td>19.21</td>
+      <td>18.43</td>
+      <td>30.28</td>
+      <td>21.48</td>
+      <td>66.61</td>
+      <td>77.58</td>
+      <td>1.69</td>
+    </tr>
+    <tr>
+      <td colspan="15">LAIR-1 %</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>C⁢D⁢56+⁢L⁢A⁢I⁢R-1+</td>
+      <td>94.97</td>
+      <td>21.43</td>
+      <td>99.90</td>
+      <td>99.89</td>
+      <td>99.07</td>
+      <td>97.47</td>
+      <td>1.07</td>
+      <td>12.19</td>
+      <td>0.49</td>
+      <td>0.47</td>
+      <td>4.93</td>
+      <td>78.46</td>
+      <td>1.60</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>C⁢D⁢56+⁢L⁢A⁢I⁢R-1-</td>
+      <td>0.02</td>
+      <td>0.05</td>
+      <td>5.24</td>
+      <td>78.20</td>
+      <td>0.76</td>
+      <td>2.40</td>
+      <td>1.02</td>
+      <td>12.15</td>
+      <td>0.42</td>
+      <td>0.43</td>
+      <td>5.22</td>
+      <td>78.15</td>
+      <td>−1.65</td>
+    </tr>
+    <tr>
+      <td colspan="15">NKG2A %</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢A+</td>
+      <td>20.43</td>
+      <td>19.01</td>
+      <td>77.57</td>
+      <td>73.01</td>
+      <td>46.14</td>
+      <td>44.24</td>
+      <td>17.41</td>
+      <td>13.73</td>
+      <td>30.82</td>
+      <td>17.47</td>
+      <td>57.14</td>
+      <td>54.00</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢A-</td>
+      <td>22.62</td>
+      <td>27.11</td>
+      <td>79.40</td>
+      <td>80.85</td>
+      <td>54.01</td>
+      <td>55.99</td>
+      <td>17.39</td>
+      <td>13.67</td>
+      <td>30.48</td>
+      <td>17.90</td>
+      <td>56.78</td>
+      <td>53.74</td>
+      <td>−1.98</td>
+    </tr>
+    <tr>
+      <td colspan="15">2B4 %</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>C⁢D⁢56+⁢2⁢B⁢4+</td>
+      <td>98.41</td>
+      <td>97.06</td>
+      <td>99.99</td>
+      <td>99.96</td>
+      <td>99.53</td>
+      <td>99.50</td>
+      <td>0.39</td>
+      <td>0.59</td>
+      <td>0.32</td>
+      <td>0.33</td>
+      <td>1.58</td>
+      <td>2.90</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>C⁢D⁢56+⁢2⁢B⁢4-</td>
+      <td>0.01</td>
+      <td>0.05</td>
+      <td>1.59</td>
+      <td>2.95</td>
+      <td>0.48</td>
+      <td>0.50</td>
+      <td>0.39</td>
+      <td>0.59</td>
+      <td>0.31</td>
+      <td>0.34</td>
+      <td>1.58</td>
+      <td>2.90</td>
+      <td>−0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+_Min. is the minimum value, Max. is maximum value, Mean is the mean or average value, and Std. is Standard Deviation. Range is the difference between the minimum and maximum values. The Interquartile range (IQR) is a measure of data variability and was derived by computing the distance between the Upper Quartile (i.e. top) and Lower Quartile (i.e. bottom) of the boxes illustrated in Figure 1. Difference is computed as diff = mean(Benign)-mean(Cancer)._
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/50936/elife-50936-fig1-v2.jpg)
 
@@ -42,35 +697,906 @@ Herein, we consider a ‘feature’ to be a single phenotypic variable (as deter
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/50936/elife-50936-fig2-v2.jpg)
 
-These findings highlight the difficulty in identifying combinations of features that can best identify the presence of cancer. These difficulties are compounded by the challenge of identifying the best combination of predictors which comprise n number of features, and that features within a combination, ideally, should not correlate. It is important to evaluate correlations between features, because if two features are highly correlated, then only one of these could serve as a candidate predictor. However, there may be occasions where both features are needed and besides the impact of this on the dimensionality of the dataset, there is no other negative impact. Furthermore, when two features are highly correlated and are important, it may be difficult to decide which feature to remove. Figure 3 shows the correlations between features, where +1.0 indicates a strong positive correlation between two features, and −1.0 indicates a strong negative correlation between two features.
+These findings highlight the difficulty in identifying combinations of features that can best identify the presence of cancer. These difficulties are compounded by the challenge of identifying the best combination of predictors which comprise $n$ number of features, and that features within a combination, ideally, should not correlate. It is important to evaluate correlations between features, because if two features are highly correlated, then only one of these could serve as a candidate predictor. However, there may be occasions where both features are needed and besides the impact of this on the dimensionality of the dataset, there is no other negative impact. Furthermore, when two features are highly correlated and are important, it may be difficult to decide which feature to remove. Figure 3 shows the correlations between features, where +1.0 indicates a strong positive correlation between two features, and −1.0 indicates a strong negative correlation between two features.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50936/elife-50936-fig3-v2.jpg)
 
-The Kolmogorov-Smirnov and Shapiro-Wilk tests of normality were carried out to determine whether the dataset is normally distributed, as this would determine the choice of statistical tests, that is whether to use parametric (for normally distributed datasets), or non-parametric (for not normally distributed datasets) tests. The results of the normality tests are shown in Table 2. The results revealed that only 7–8 features (depending on the normality test) were normally distributed (with p>0.05), and for the remaining features the p value was less than 0.05 (p<0.05) which indicates that there is a statistically significant difference between the distribution of the data of those features and the normal distribution. Based on the results of the test, we can conclude that the dataset is not normally distributed.
+The Kolmogorov-Smirnov and Shapiro-Wilk tests of normality were carried out to determine whether the dataset is normally distributed, as this would determine the choice of statistical tests, that is whether to use parametric (for normally distributed datasets), or non-parametric (for not normally distributed datasets) tests. The results of the normality tests are shown in Table 2. The results revealed that only 7–8 features (depending on the normality test) were normally distributed (with $p>0.05$), and for the remaining features the p value was less than 0.05 ($p<0.05$) which indicates that there is a statistically significant difference between the distribution of the data of those features and the normal distribution. Based on the results of the test, we can conclude that the dataset is not normally distributed.
 
-Given that most features in the dataset are not normally distributed, the Kruskal-Wallis (also called the ‘one-way ANOVA on ranks’, a rank-based non-parametric test) tests were used to check for statistically significant differences between the mean ranks of the NK cell phenotypic features in men with benign prostate disease and patients with prostate cancer rather than its parametric equivalent (one-way analysis of variance, ANOVA). Although the Kruskal-Wallis test did not return any significant differences in the mean PSA values between individuals with benign disease and those with prostate cancer (χ2=0; p=0.949, Figure 4), statistically significant differences at the alpha level of α=0.05 in the mean ranks of the C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+ (ID14, p=0.007), C⁢D⁢56+⁢N⁢K⁢p⁢30+ (ID15, p=0.008), C⁢D⁢56+⁢N⁢K⁢p⁢30- (ID16, p=0.031), C⁢D⁢56+⁢N⁢K⁢p⁢46+ (ID17, p=0.023) populations in men with benign prostate disease and those with prostate cancer (Table 3) were observed.
+**Table 2.**
+ Tests of normality results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="9">Tests of normality</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>NK cell values</th>
+      <th colspan="3">Kolmogorov-Smirnova</th>
+      <th colspan="3">Shapiro-Wilk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Statistic</td>
+      <td>df</td>
+      <td>Sig.</td>
+      <td>Statistic</td>
+      <td>df</td>
+      <td>Sig.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16+</td>
+      <td>0.15</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.85</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16h⁢i⁢g⁢h</td>
+      <td>0.11</td>
+      <td>71.00</td>
+      <td>0.03</td>
+      <td>0.89</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16l⁢o⁢w</td>
+      <td>0.17</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.79</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16-</td>
+      <td>0.19</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.82</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢56d⁢i⁢m⁢t⁢o⁢t⁢a⁢l%</td>
+      <td>0.15</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.91</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16+</td>
+      <td>0.13</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.88</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16h⁢i⁢g⁢h</td>
+      <td>0.15</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.87</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16l⁢o⁢w</td>
+      <td>0.14</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.85</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16-</td>
+      <td>0.16</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.86</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢t⁢o⁢t⁢a⁢l</td>
+      <td>0.15</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.91</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢8+</td>
+      <td>0.10</td>
+      <td>71.00</td>
+      <td>0.06</td>
+      <td>0.98</td>
+      <td>71.00</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢8-</td>
+      <td>0.10</td>
+      <td>71.00</td>
+      <td>0.06</td>
+      <td>0.98</td>
+      <td>71.00</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56d⁢i⁢m⁢C⁢D⁢8+</td>
+      <td>0.09</td>
+      <td>71.00</td>
+      <td>0.20*</td>
+      <td>0.98</td>
+      <td>71.00</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+</td>
+      <td>0.19</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.82</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>N⁢K⁢p⁢30</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢30+</td>
+      <td>0.21</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.81</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>N⁢K⁢p⁢30</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢30-</td>
+      <td>0.21</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.81</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>N⁢K⁢p⁢46</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢46+</td>
+      <td>0.08</td>
+      <td>71.00</td>
+      <td>0.20*</td>
+      <td>0.98</td>
+      <td>71.00</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>N⁢K⁢p⁢46</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢46-</td>
+      <td>0.07</td>
+      <td>71.00</td>
+      <td>0.20*</td>
+      <td>0.99</td>
+      <td>71.00</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>D⁢N⁢A⁢M-1</td>
+      <td>C⁢D⁢56+⁢D⁢N⁢A⁢M-1+</td>
+      <td>0.23</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.56</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>D⁢N⁢A⁢M-1</td>
+      <td>C⁢D⁢56+⁢D⁢N⁢A⁢M-1-</td>
+      <td>0.23</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.55</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>N⁢K⁢G⁢2⁢D</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢D+</td>
+      <td>0.19</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.84</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>N⁢K⁢G⁢2⁢D</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢D-</td>
+      <td>0.18</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.85</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>N⁢K⁢p⁢44</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢44+</td>
+      <td>0.18</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.76</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>N⁢K⁢p⁢44</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢44-</td>
+      <td>0.17</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.78</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>C⁢D⁢85⁢j</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢85⁢j+</td>
+      <td>0.11</td>
+      <td>71.00</td>
+      <td>0.05</td>
+      <td>0.96</td>
+      <td>71.00</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>C⁢D⁢85⁢j</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢85⁢j-</td>
+      <td>0.10</td>
+      <td>71.00</td>
+      <td>0.07</td>
+      <td>0.96</td>
+      <td>71.00</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>L⁢A⁢I⁢R-1</td>
+      <td>C⁢D⁢56+⁢L⁢A⁢I⁢R-1+</td>
+      <td>0.43</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.14</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>L⁢A⁢I⁢R-1</td>
+      <td>C⁢D⁢56+⁢L⁢A⁢I⁢R-1-</td>
+      <td>0.43</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.14</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>N⁢K⁢G⁢2⁢A</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢A+</td>
+      <td>0.09</td>
+      <td>71.00</td>
+      <td>0.20*</td>
+      <td>0.97</td>
+      <td>71.00</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>N⁢K⁢G⁢2⁢A</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢A-</td>
+      <td>0.08</td>
+      <td>71.00</td>
+      <td>0.20*</td>
+      <td>0.97</td>
+      <td>71.00</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>2⁢B⁢4</td>
+      <td>C⁢D⁢56+⁢2⁢B⁢4+</td>
+      <td>0.23</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.75</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>2⁢B⁢4</td>
+      <td>C⁢D⁢56+⁢2⁢B⁢4-</td>
+      <td>0.23</td>
+      <td>71.00</td>
+      <td>0.00</td>
+      <td>0.75</td>
+      <td>71.00</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_*. This is a lower bound of the true significance.Those values in bold are of those features whose data is normally distributed.If the p>0.05, we can accept the null hypothesis, that there is no statistically significant difference between the data and the normal distribution, hence we can presume that the data of those features are normally distributed.If the p<0.05, we can reject the null hypothesis because there is a statistically significant difference between the data and the normal distribution, hence we can presume that the data of those features are not normally distributed._
+
+Given that most features in the dataset are not normally distributed, the Kruskal-Wallis (also called the ‘one-way ANOVA on ranks’, a rank-based non-parametric test) tests were used to check for statistically significant differences between the mean ranks of the NK cell phenotypic features in men with benign prostate disease and patients with prostate cancer rather than its parametric equivalent (one-way analysis of variance, ANOVA). Although the Kruskal-Wallis test did not return any significant differences in the mean PSA values between individuals with benign disease and those with prostate cancer ($χ^{2}=0$; p=0.949, Figure 4), statistically significant differences at the alpha level of $\alpha=0.05$ in the mean ranks of the $C⁢D⁢56^{b⁢r⁢i⁢g⁢h⁢t}⁢C⁢D⁢8^{+}$ (ID14, p=0.007), $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{+}$ (ID15, p=0.008), $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{-}$ (ID16, p=0.031), $C⁢D⁢56^{+}⁢N⁢K⁢p⁢46^{+}$ (ID17, p=0.023) populations in men with benign prostate disease and those with prostate cancer (Table 3) were observed.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50936/elife-50936-fig4-v2.jpg)
 
+**Table 3.**
+ Results of the Kruskal-Wallis test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Chi-Sq.(χ2)</th>
+      <th>Asy. sig. p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>PSA</td>
+      <td></td>
+      <td>0</td>
+      <td>0.949</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">NK cells</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16+</td>
+      <td>0.001</td>
+      <td>0.981</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16h⁢i⁢g⁢h</td>
+      <td>0.069</td>
+      <td>0.793</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16l⁢o⁢w</td>
+      <td>0.555</td>
+      <td>0.456</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢16-</td>
+      <td>0.033</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>C⁢D⁢56d⁢i⁢m</td>
+      <td>C⁢D⁢56d⁢i⁢m⁢t⁢o⁢t⁢a⁢l%</td>
+      <td>0.063</td>
+      <td>0.802</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16+</td>
+      <td>0.836</td>
+      <td>0.361</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16h⁢i⁢g⁢h</td>
+      <td>0.201</td>
+      <td>0.654</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16l⁢o⁢w</td>
+      <td>0.106</td>
+      <td>0.744</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢16-</td>
+      <td>0.030</td>
+      <td>0.861</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢t⁢o⁢t⁢a⁢l</td>
+      <td>2.415</td>
+      <td>0.120</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢8+</td>
+      <td>2.415</td>
+      <td>0.120</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢8-</td>
+      <td>2.849</td>
+      <td>0.091</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56d⁢i⁢m⁢C⁢D⁢8+</td>
+      <td>0.417</td>
+      <td>0.518</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>C⁢D⁢8</td>
+      <td>C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+</td>
+      <td>7.230</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>N⁢K⁢p⁢30</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢30+</td>
+      <td>7.106</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>N⁢K⁢p⁢30</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢30-</td>
+      <td>4.638</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>N⁢K⁢p⁢46</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢46+</td>
+      <td>5.179</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>N⁢K⁢p⁢46</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢46-</td>
+      <td>0.001</td>
+      <td>0.981</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>D⁢N⁢A⁢M-1</td>
+      <td>C⁢D⁢56+⁢D⁢N⁢A⁢M-1+</td>
+      <td>0.001</td>
+      <td>0.972</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>D⁢N⁢A⁢M-1</td>
+      <td>C⁢D⁢56+⁢D⁢N⁢A⁢M-1-</td>
+      <td>0.293</td>
+      <td>0.588</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>N⁢K⁢G⁢2⁢D</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢D+</td>
+      <td>0.325</td>
+      <td>0.568</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>N⁢K⁢G⁢2⁢D</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢D-</td>
+      <td>0.033</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>N⁢K⁢p⁢44</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢44+</td>
+      <td>0.072</td>
+      <td>0.789</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>N⁢K⁢p⁢44</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢p⁢44-</td>
+      <td>0.049</td>
+      <td>0.825</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>C⁢D⁢85⁢j</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢85⁢j+</td>
+      <td>0.072</td>
+      <td>0.789</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>C⁢D⁢85⁢j</td>
+      <td>C⁢D⁢56+⁢C⁢D⁢85⁢j-</td>
+      <td>2.135</td>
+      <td>0.144</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>L⁢A⁢I⁢R-1</td>
+      <td>C⁢D⁢56+⁢L⁢A⁢I⁢R-1+</td>
+      <td>1.343</td>
+      <td>0.247</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>L⁢A⁢I⁢R-1</td>
+      <td>C⁢D⁢56+⁢L⁢A⁢I⁢R-1-</td>
+      <td>0.060</td>
+      <td>0.807</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>N⁢K⁢G⁢2⁢A</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢A+</td>
+      <td>0.072</td>
+      <td>0.789</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>N⁢K⁢G⁢2⁢A</td>
+      <td>C⁢D⁢56+⁢N⁢K⁢G⁢2⁢A-</td>
+      <td>0.879</td>
+      <td>0.348</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>2⁢B⁢4</td>
+      <td>C⁢D⁢56+⁢2⁢B⁢4+</td>
+      <td>0.890</td>
+      <td>0.346</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>2⁢B⁢4</td>
+      <td>C⁢D⁢56+⁢2⁢B⁢4-</td>
+      <td>0.890</td>
+      <td>0.346</td>
+    </tr>
+  </tbody>
+</table>
+
 This initial analysis provided insight into which phenotypic features might be good candidates for distinguishing between the presence of benign disease and prostate cancer. The next step was to examine whether using these as inputs into a machine learning algorithm can achieve this. An Ensemble Subspace kNN classifier was developed for the task at hand. The section which follows explains the approaches that were used to compare the diagnostic accuracy of the classifier when using the subset of features derived from the statistical analysis, and those features which were selected as a combination using the Genetic Algorithm (GA) for feature selection.
 
-## Distinguishing between benign prostate disease and prostate cancer: GA
+### Distinguishing between benign prostate disease and prostate cancer: GA
 
 The GA was used to identify a subset of features that, as a combination, provide an NK cell-based immunophenotypic ‘fingerprint’ which can determine if an asymptomatic individual with PSA levels below 20 ng ml-1 has benign prostate disease or prostate cancer. This fingerprint, or feature set, would then be used to construct a diagnostic/prediction model. Given that GAs stochastically select multiple individuals (i.e. features) from the current population (based on their ‘fitness’), each run can return different results. A common approach to identifying the best solution(s) is, therefore, to run the algorithm several times to obtain the frequency of the solution(s). Since the aim herein is to identify the most commonly occurring subset of NK cell phenotypic predictors, the GA was applied to the dataset and the most frequent subset of features returned was considered as being the best and most promising.
 
-Let fc denote the number of times (frequency) a combination was returned during the n number of runs, then the relative frequency of a combination (Rf⁢c) can be calculated using formula (Equation 1),(1)Rf⁢c=fcn
+Let $f_{c}$ denote the number of times (frequency) a combination was returned during the $n$ number of runs, then the relative frequency of a combination ($R_{f⁢c}$) can be calculated using formula (Equation 1),
 
-Table 4 shows the most frequent feature combinations returned at the end of each of the 30 runs when setting λ to different values. In Table 4, λ is the number of features in a combination. No. different comb is the number of unique combinations returned during the n number of runs (i.e. n = 30) for a given λ; Comb. with highest freq is the combination which was returned most frequently during the n number of runs; Freq of Comb. is the frequency of the most common combination found in the previous column; Relative Freq. (%) is computed using formula (Equation 1) converted to a percentage.
+$$
+R_{f⁢c}=\frac{f_{c}}{n}
+$$
 
-As the optimum number of features is not known, the GA was run by setting λ=2,3,…,n where n is the total number of features in the dataset. Table 4 shows the results for the first 10 combinations. The results indicate that the combination comprising four features is the most promising in terms of its ability to discriminate between benign prostate disease and prostate cancer on NK cell phenotypic data alone. Features 2, 20, 27, 28, were returned in all 30 runs when searching for the best combination comprising of four features. Furthermore, features 20, 27, 28 were returned together in all combinations comprising more than three features (see feature ID’s in combinations λ=4 to λ=10 in Table 4). These results strongly suggest that these are good predictors when grouped. The fact that the same combination was returned in 30 iterations is a strong indicator that these four features are the most reliable for distinguishing between the presence of benign prostate disease and prostate cancer. Although the statistical analysis presented in Table 3 determined that features: ID14: C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+, ID15: C⁢D⁢56+⁢N⁢K⁢p⁢30+, ID16: C⁢D⁢56+⁢N⁢K⁢p⁢30-, and ID17: C⁢D⁢56+⁢N⁢K⁢p⁢46+ were the only ones with values which were significantly different in the two groups at α=0.05, and for which p values were therefore less than 0.05, none of the features selected by the statistical analysis were returned by the GA when searching for the best combination of features for discriminating between the presence of benign prostate disease and prostate cancer. The features selected by the GA were: ID2: C⁢D⁢56d⁢i⁢m⁢C⁢D⁢16h⁢i⁢g⁢h, ID20: C⁢D⁢56+⁢D⁢N⁢A⁢M-1-, ID27: C⁢D⁢56+⁢L⁢A⁢I⁢R-1+, and ID28: C⁢D⁢56+⁢L⁢A⁢I⁢R-1-. Referring back to Figure 3 and the correlation values between the selected features 2, 20, 27, 28, 14, 15, 16, 17, it is shown that these features do not have a strong positive correlation. There is a strong negative correlation between features 27 and 28, but we decided to keep both features since these were selected by the feature selection method.
+Table 4 shows the most frequent feature combinations returned at the end of each of the 30 runs when setting $\lambda$ to different values. In Table 4, $\lambda$ is the number of features in a combination. No. different comb is the number of unique combinations returned during the $n$ number of runs (i.e. n = 30) for a given $\lambda$; Comb. with highest freq is the combination which was returned most frequently during the $n$ number of runs; Freq of Comb. is the frequency of the most common combination found in the previous column; Relative Freq. (%) is computed using formula (Equation 1) converted to a percentage.
+
+**Table 4.**
+ Results of the Genetic Algorithm when searching for the best subset of features.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>λ</th>
+      <th>No. different comb</th>
+      <th>Comb. with highest freq.</th>
+      <th>Freq. of comb.</th>
+      <th>Relative freq. (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>17,28</td>
+      <td>16</td>
+      <td>53.3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>17,27,29</td>
+      <td>23</td>
+      <td>76.7</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>2,20,27,28</td>
+      <td>30</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>3,20,27,28,32</td>
+      <td>29</td>
+      <td>96.7</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2</td>
+      <td>3,7,20,27,28,32</td>
+      <td>26</td>
+      <td>86.7</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3</td>
+      <td>3,7,20,23,27,28,32</td>
+      <td>24</td>
+      <td>80.0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>4</td>
+      <td>3,7,20,22,23,27,28,32</td>
+      <td>19</td>
+      <td>63.3</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>3</td>
+      <td>3,7,19,20,22,23,27,28,32</td>
+      <td>24</td>
+      <td>80.0</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>3</td>
+      <td>2,3,7,19,20,22,23,27,28,32</td>
+      <td>21</td>
+      <td>70.0</td>
+    </tr>
+  </tbody>
+</table>
+
+As the optimum number of features is not known, the GA was run by setting $\lambda=2,3,…,n$ where $n$ is the total number of features in the dataset. Table 4 shows the results for the first 10 combinations. The results indicate that the combination comprising four features is the most promising in terms of its ability to discriminate between benign prostate disease and prostate cancer on NK cell phenotypic data alone. Features 2, 20, 27, 28, were returned in all 30 runs when searching for the best combination comprising of four features. Furthermore, features 20, 27, 28 were returned together in all combinations comprising more than three features (see feature ID’s in combinations $\lambda=4$ to $\lambda=10$ in Table 4). These results strongly suggest that these are good predictors when grouped. The fact that the same combination was returned in 30 iterations is a strong indicator that these four features are the most reliable for distinguishing between the presence of benign prostate disease and prostate cancer. Although the statistical analysis presented in Table 3 determined that features: ID14: $C⁢D⁢56^{b⁢r⁢i⁢g⁢h⁢t}⁢C⁢D⁢8^{+}$, ID15: $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{+}$, ID16: $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{-}$, and ID17: $C⁢D⁢56^{+}⁢N⁢K⁢p⁢46^{+}$ were the only ones with values which were significantly different in the two groups at $\alpha=0.05$, and for which p values were therefore less than 0.05, none of the features selected by the statistical analysis were returned by the GA when searching for the best combination of features for discriminating between the presence of benign prostate disease and prostate cancer. The features selected by the GA were: ID2: $C⁢D⁢56^{d⁢i⁢m}⁢C⁢D⁢16^{h⁢i⁢g⁢h}$, ID20: $C⁢D⁢56^{+}⁢D⁢N⁢A⁢M-1^{-}$, ID27: $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{+}$, and ID28: $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{-}$. Referring back to Figure 3 and the correlation values between the selected features 2, 20, 27, 28, 14, 15, 16, 17, it is shown that these features do not have a strong positive correlation. There is a strong negative correlation between features 27 and 28, but we decided to keep both features since these were selected by the feature selection method.
 
 The next step in the analysis involves evaluating the predictive performance of the feature subsets returned by the statistical test and by the GA. The features identified from the statistical and GA approaches were input into the proposed Ensemble Subspace kNN classifier to determine whether it can learn these features and discriminate between the presence of benign prostate disease and prostate cancer. For transparency of the machine learning model, it was important to keep the predictor selection and machine learning processes separate. The feature selection algorithm identified a set of novel NK cell phenotypic features for diagnosing the presence of prostate cancer which will be used to construct a transparent prediction tool.
 
-## Distinguishing between benign prostate disease and prostate cancer: machine learning
+### Distinguishing between benign prostate disease and prostate cancer: machine learning
 
 This section describes the outcome of experiments that were performed to determine the predictive performance of various feature subsets using the Ensemble Subspace kNN model, which was designed for the task. Machine learning classifiers that are constructed using small training sets have a large variance which means that the estimate of the target function will change if different training data are used (Skurichina and Duin, 2002). It is therefore expected, and normal, that classifiers will exhibit some variance. This means that small changes in input variable values can result in very different classification rules. To ensure that the proposed approach does not suffer from low variance, we evaluated the performance of the classifier using the 10-fold cross-validation approach which was repeated 30 times, for which the average and standard deviation of each run were recorded. Multiple runs of 10-fold cross-validation are performed using different partitions (i.e. folds), and the validation results are averaged over the runs to estimate a final predictive model. Each run of the cross-validation involves randomly partitioning a sample of data into complementary subsets, for which one subset is used as the training set, and the other is used as the validation subset. Cross validation randomly partitions the dataset into training and validation sets to limit overfitting problems, and to provide an insight into how the model will generalise to an independent dataset which was not previously seen by the model. A random seed generator was used to generate a different sequence of values each time the k-fold was run, and this was reseeded using a seed that was created using the current time. It is normal that a classifier returns a different validation accuracy in each fold and run, since it is training and validating on different samples. The aim is to create a low variance classifier, meaning that the results of each validation test are close together. The closer the results of each validation test, the more robust the classifier. To evaluate the predictive performance of various feature subsets derived from the computational and statistical feature selection approaches, each of these feature subsets was input into an Ensemble Subspace kNN classifier. Applying 10-fold validation resulted in 10 different partitions of the dataset of approximately 64 randomly selected samples for training and 7 randomly selected samples for validation in each partition (1 dataset comprising 63 training cases and 8 validation cases; and 9 datasets comprising 64 validation cases and 7 validation cases). All samples went through validation at some point during the evaluations. We consider 10-fold cross validation to be suitable given the small size of the dataset and the fact that sufficient samples are needed during the training process.
 
-Table 5 shows the results of the comparison when running the 10-fold validation 30 times using six sets of features: 1) the four features selected by the GA; 2) the four features which were returned by the Kruskal-Wallis statistical test (STAT); 3) combined features selected by the GA and the statistical test (GA+STAT); 4) PSA values combined with features selected by the GA and the statistical test (PSA+GA+STAT); 5) PSA values alone as a predictor (PSA); and 6) using all 32 features (All features). The averages of the Area Under the Curve (AUC), Optimal ROC Point (ORP) False Positive Rate (FPR) of the AUC, ORP True Positive Rate (TPR) of the AUC, and Accuracy (ACC) of each fold are provided. The last column of Table 5 shows the Rank of each model, where 1 is the best model and 6 is the worst. The results of each k-fold were averaged, and these average values are plotted in the box plot shown in Figure 5. As shown in Table 5, combining the features selected by the GA ID2: C⁢D⁢56d⁢i⁢m⁢C⁢D⁢16h⁢i⁢g⁢h, ID20: C⁢D⁢56+⁢D⁢N⁢A⁢M-1-, ID27: C⁢D⁢56+⁢L⁢A⁢I⁢R-1+, ID28: C⁢D⁢56+⁢L⁢A⁢I⁢R-1-; with the four features which were returned by the Kruskal-Wallis statistical test as features with values which were statistically significant between individuals with benign prostate disease and patients with prostate cancer, ID14: C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+, ID15: C⁢D⁢56+⁢N⁢K⁢p⁢30+, ID16: C⁢D⁢56+⁢N⁢K⁢p⁢30-, ID17: C⁢D⁢56+⁢N⁢K⁢p⁢46+ yielded the highest classification accuracy, with AUC = 0.818, ORP FPR = 0.201, ORP TPR = 0.836 and Accuracy = 0.821. PSA values input into the classifier resulted in weak classification performance, AUC = 0.698, ORP FPR = 0.217, ORP TPR = 0.609, and Accuracy = 0.692. Although PSA is used as a screening test in clinical practice for identifying prostate cancer in men, it is the weakest of all the predictors. Importantly, predictive accuracy improved when PSA is combined with GA+STAT flow cytometry features (PSA+GA+STAT): AUC = 0.812, ORP FPR = 0.208, ORP TPR = 0.832, and ACC = 0.815. Combining PSA with the NK cell phenotypic fingerprint increased accuracy by +0.123 points when compared to using PSA alone.
+Table 5 shows the results of the comparison when running the 10-fold validation 30 times using six sets of features: 1) the four features selected by the GA; 2) the four features which were returned by the Kruskal-Wallis statistical test (STAT); 3) combined features selected by the GA and the statistical test (GA+STAT); 4) PSA values combined with features selected by the GA and the statistical test (PSA+GA+STAT); 5) PSA values alone as a predictor (PSA); and 6) using all 32 features (All features). The averages of the Area Under the Curve (AUC), Optimal ROC Point (ORP) False Positive Rate (FPR) of the AUC, ORP True Positive Rate (TPR) of the AUC, and Accuracy (ACC) of each fold are provided. The last column of Table 5 shows the Rank of each model, where 1 is the best model and 6 is the worst. The results of each k-fold were averaged, and these average values are plotted in the box plot shown in Figure 5. As shown in Table 5, combining the features selected by the GA ID2: $C⁢D⁢56^{d⁢i⁢m}⁢C⁢D⁢16^{h⁢i⁢g⁢h}$, ID20: $C⁢D⁢56^{+}⁢D⁢N⁢A⁢M-1^{-}$, ID27: $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{+}$, ID28: $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{-}$; with the four features which were returned by the Kruskal-Wallis statistical test as features with values which were statistically significant between individuals with benign prostate disease and patients with prostate cancer, ID14: $C⁢D⁢56^{b⁢r⁢i⁢g⁢h⁢t}⁢C⁢D⁢8^{+}$, ID15: $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{+}$, ID16: $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{-}$, ID17: $C⁢D⁢56^{+}⁢N⁢K⁢p⁢46^{+}$ yielded the highest classification accuracy, with AUC = 0.818, ORP FPR = 0.201, ORP TPR = 0.836 and Accuracy = 0.821. PSA values input into the classifier resulted in weak classification performance, AUC = 0.698, ORP FPR = 0.217, ORP TPR = 0.609, and Accuracy = 0.692. Although PSA is used as a screening test in clinical practice for identifying prostate cancer in men, it is the weakest of all the predictors. Importantly, predictive accuracy improved when PSA is combined with GA+STAT flow cytometry features (PSA+GA+STAT): AUC = 0.812, ORP FPR = 0.208, ORP TPR = 0.832, and ACC = 0.815. Combining PSA with the NK cell phenotypic fingerprint increased accuracy by +0.123 points when compared to using PSA alone.
+
+**Table 5.**
+ Naming of the models includes the feature selection method (GA) combined with the proposed Ensemble Subspace kNN classifier.Validation results are presented at k = 10 fold cross validation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">Results of 10-fold cross validation over 30 runs</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>AUC</th>
+      <th>ORP FPR</th>
+      <th>ORP TPR</th>
+      <th>ACC</th>
+      <th>Mean std.</th>
+      <th>Rank</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GA</td>
+      <td>Mean</td>
+      <td>0.776</td>
+      <td>0.296</td>
+      <td>0.833</td>
+      <td>0.781</td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.024</td>
+      <td>0.065</td>
+      <td>0.026</td>
+      <td>0.023</td>
+      <td>0.035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STAT</td>
+      <td>Mean</td>
+      <td>0.769</td>
+      <td>0.303</td>
+      <td>0.828</td>
+      <td>0.774</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.022</td>
+      <td>0.057</td>
+      <td>0.023</td>
+      <td>0.021</td>
+      <td>0.031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GA+STAT</td>
+      <td>Mean</td>
+      <td>0.818</td>
+      <td>0.201</td>
+      <td>0.836</td>
+      <td>0.821</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.021</td>
+      <td>0.027</td>
+      <td>0.021</td>
+      <td>0.020</td>
+      <td>0.022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PSA+GA+STAT</td>
+      <td>Mean</td>
+      <td>0.812</td>
+      <td>0.208</td>
+      <td>0.832</td>
+      <td>0.815</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.020</td>
+      <td>0.031</td>
+      <td>0.018</td>
+      <td>0.019</td>
+      <td>0.022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PSA</td>
+      <td>Mean</td>
+      <td>0.698</td>
+      <td>0.217</td>
+      <td>0.609</td>
+      <td>0.692</td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.022</td>
+      <td>0.025</td>
+      <td>0.043</td>
+      <td>0.020</td>
+      <td>0.028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All features</td>
+      <td>Mean</td>
+      <td>0.812</td>
+      <td>0.213</td>
+      <td>0.836</td>
+      <td>0.815</td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.022</td>
+      <td>0.035</td>
+      <td>0.021</td>
+      <td>0.021</td>
+      <td>0.025</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/50936/elife-50936-fig5-v2.jpg)
 
@@ -78,23 +1604,387 @@ Table 5 shows the results of the comparison when running the 10-fold validation 
 
 The closer the standard deviation value is to 0 the less spread out are the results across the 30 runs, and hence the classifier variability is low (see Table 5). This results in a low variance classifier. A low standard deviation indicates that the data points tend to be close to the mean (also called the expected value) of the set, whereas a high standard deviation indicates that the data points are spread out over a wider range of values. Observing the data shown in Table 5 and Figure 5 for each evaluation measure (i.e. AUC, ORP TPR, ORP FPR, Accuracy (ACC)), the aim is to have a high AUC and low Std.; low ORP FPR and low Std.; high ORP TPR and low Std.; and high Accuracy and low Std. The results show that the classifier achieved the best performance when using the GA+STAT input and the results using k-fold across the 30 runs returned the lowest mean standard deviation and hence the least variability in the results. The results reveal that using the GA+STAT predictors delivers a more reliable classification model with regards to training and validation on new data which will be generated in the future using the prediction model.
 
-## Importance of findings
+### Importance of findings
 
 The GA+STAT prediction model achieved the best performance, in that the ORP FPR was the lowest, and the AUC, ORP TPR, and Accuracy (ACC) were the highest compared to the other prediction models. The experimental results are promising and the proposed prediction model is expected to achieve even higher classification accuracy in identifying the presence of prostate cancer in asymptomatic individuals with PSA levels < 20 ng ml-1 based on peripheral blood NK cell phenotypic profiles as more data become available in the future. Table 5 shows the performance of the classifier when using various feature subsets. When using the GA+STAT features, the AUC is higher, and FPR is lower (this is an important distinction) than when using all features or the other alternative feature subsets. The most important aspect is that better performance was achieved using a much smaller set of biomarkers (features), which indicates that we have identified a fingerprint for detecting the presence of prostate cancer in asymptomatic men with PSA levels < 20 ng ml-1 which is indeed significant from a clinical perspective. Feature selection is important, as the fundamental aim of this project is to develop a subset of phenotypic biomarkers that is smaller than the original set of biomarkers (i.e. 32 biomarkers in total) which can confidently identify the presence of prostate cancer. Ultimately, the approach will be embedded into a software application to be used by clinicians, and the aim is to create an interface that requires the clinician to input a few values (features), that is 8 instead of 32. Importantly, identifying a small subset of 8 features which is needed for detecting the presence of prostate cancer, results in the construction of an explainable disease detection and categorization model. Working with a small set of the most promising biomarkers provides a better understanding of the disease and allows cancer immunobiologists and clinicians to focus on performing further laboratory evaluations using the specific subset of biomarkers, in a more cost effective and less time-consuming manner.
 
-## Comparing the performance of the proposed ensemble subspace kNN classifier with alternative classifiers
+#### Comparing the performance of the proposed ensemble subspace kNN classifier with alternative classifiers
 
 The experiments discussed thus far utilised a machine learning model comprised of an Ensemble of kNN learners (see Section ‘Proposed Ensemble Learning Classifier for the task of Predicting Prostate Cancer’). We then undertook experiments to determine the impact of using the proposed Ensemble method over conventional machine learning classifiers: simple kNN; Support Vector Machine; and Naive Bayes models. The last column of Table 6 shows the difference in the performance of the methods. The proposed method, denoted as EkNN, returned better performance than all other alternative classifiers. EkNN also returned the lowest Standard Deviation values and these are an indicator of a more stable and reliable model since the average values are clustered closely around the mean. SVM-linear returned the highest ORP TPR; however, the higher ORP FPR, higher Std. values, the low AUC, and low Accuracy values suggest that this model is worse than the proposed EkNN. Naive Bayes was the least efficient classifier, and although it returned the lowest ORP FPR, it also returned the lowest ORP TPR, lowest AUC and Accuracy values; and its Std. values were also higher than those of the EkNN model.
 
-## Statistically significant differences in predictive performance when using various feature subsets
+**Table 6.**
+ Comparing the performance of the proposed Ensemble Subspace kNN model against conventional machine learning models when using the GA+STAT feature set.Results of 10-fold cross validation over 30 runs.
 
-The next step in the analysis is to determine whether statistically significant differences exist between the average AUC performance values of the classifier when using the various feature subsets, for which Friedman’s two-way Analysis of Variance (ANOVA) test was used. It was also important to observe whether including the PSA test values significantly strengthens the diagnostic accuracy and capacity. The average k-fold values across the 30 runs for each feature set were computed. A matrix C was derived which holds the results of the classifier when using one of five feature subsets. Friedman’s chi-square statistic compares the mean values of the columns of matrix C. The test returned a statistically significant difference in the AUC predictive performance depending on which type of feature subset was input into the classifier, χ2⁢(4)=106.55, p=3.968⁢E-22. This suggests that the mean AUC ranks of at least one feature subset are significantly different than the others. The mean ranks were as follows: GA = 12.050, STAT = 10.733, GA+STAT = 20.283, PSA = 3.067, PSA+GA+STAT = 18.867. A post hoc test was run alongside the Friedman test to pinpoint which feature subsets differ from each other. Post hoc analysis using a Bonferroni correction was used to reduce the likelihood of erroneously declaring a statistically significant due to multiple comparisons (a Type I error). Table 7 shows the results of multiple comparisons and adjusted p values. There were statistically significant differences between group 8 (GA+STAT vs. GA) and 10 (PSA vs. PSA+GA+STAT) (p=0.001). We can conclude that GA+STAT returned a significantly higher AUC than PSA, and the difference between their mean ranks is diff = 17.217. PSA returned a significantly lower AUC than PSA+GA+STAT (p=0.002), and the difference between their mean ranks is diff=-15.800.
 
-## Comparing the best prediction models over 30 runs
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Proposed ensemble subspace kNN (EkNN) model (No. of learners (NL): 30; Subspace Dimension (SD): 16)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Parameters</td>
+      <td></td>
+      <td>AUC</td>
+      <td>ORP FPR</td>
+      <td>ORP TPR</td>
+      <td>ACC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NL: 30, SD:16</td>
+      <td>Mean</td>
+      <td>0.818</td>
+      <td>0.201</td>
+      <td>0.836</td>
+      <td>0.821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.021</td>
+      <td>0.027</td>
+      <td>0.021</td>
+      <td>0.020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7">Simple kNN model (Distance: Euclidean)</td>
+    </tr>
+    <tr>
+      <td>k</td>
+      <td></td>
+      <td>AUC</td>
+      <td>ORP FPR</td>
+      <td>ORP TPR</td>
+      <td>ACC</td>
+      <td>Acc. Diff. (EkNN vs. kNN)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mean</td>
+      <td>0.768</td>
+      <td>0.241</td>
+      <td>0.730</td>
+      <td>0.751</td>
+      <td>+0.070</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.119</td>
+      <td>0.160</td>
+      <td>0.393</td>
+      <td>0.128</td>
+      <td>−0.108</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Mean</td>
+      <td>0.778</td>
+      <td>0.300</td>
+      <td>0.833</td>
+      <td>0.783</td>
+      <td>+0.038</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.107</td>
+      <td>0.265</td>
+      <td>0.103</td>
+      <td>0.103</td>
+      <td>−0.083</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Mean</td>
+      <td>0.753</td>
+      <td>0.371</td>
+      <td>0.845</td>
+      <td>0.758</td>
+      <td>+0.063</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.137</td>
+      <td>0.350</td>
+      <td>0.120</td>
+      <td>0.131</td>
+      <td>−0.111</td>
+    </tr>
+    <tr>
+      <td colspan="7">Support Vector Machine models</td>
+    </tr>
+    <tr>
+      <td>Kernel</td>
+      <td></td>
+      <td>AUC</td>
+      <td>ORP FPR</td>
+      <td>ORP TPR</td>
+      <td>ACC</td>
+      <td>Acc. Diff. (EkNN vs. SVM)</td>
+    </tr>
+    <tr>
+      <td>Linear</td>
+      <td>Mean</td>
+      <td>0.782</td>
+      <td>0.342</td>
+      <td>0.860</td>
+      <td>0.784</td>
+      <td>+0.037</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.126</td>
+      <td>0.352</td>
+      <td>0.110</td>
+      <td>0.120</td>
+      <td>−0.100</td>
+    </tr>
+    <tr>
+      <td>Gaussian</td>
+      <td>Mean.</td>
+      <td>0.808</td>
+      <td>0.353</td>
+      <td>0.876</td>
+      <td>0.799</td>
+      <td>+0.022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.112</td>
+      <td>0.416</td>
+      <td>0.107</td>
+      <td>0.111</td>
+      <td>−0.091</td>
+    </tr>
+    <tr>
+      <td colspan="7">Naive Bayes model</td>
+    </tr>
+    <tr>
+      <td>Predictor distributions</td>
+      <td></td>
+      <td>AUC</td>
+      <td>ORP FPR</td>
+      <td>ORP TPR</td>
+      <td>ACC</td>
+      <td>Acc. Diff. (EkNN vs. Naïve Bayes)</td>
+    </tr>
+    <tr>
+      <td>Normal</td>
+      <td>Mean.</td>
+      <td>0.695</td>
+      <td>0.132</td>
+      <td>0.455</td>
+      <td>0.662</td>
+      <td>+0.159</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Std.</td>
+      <td>0.169</td>
+      <td>0.163</td>
+      <td>0.493</td>
+      <td>0.181</td>
+      <td>−0.161</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistically significant differences in predictive performance when using various feature subsets
+
+The next step in the analysis is to determine whether statistically significant differences exist between the average AUC performance values of the classifier when using the various feature subsets, for which Friedman’s two-way Analysis of Variance (ANOVA) test was used. It was also important to observe whether including the PSA test values significantly strengthens the diagnostic accuracy and capacity. The average k-fold values across the 30 runs for each feature set were computed. A matrix C was derived which holds the results of the classifier when using one of five feature subsets. Friedman’s chi-square statistic compares the mean values of the columns of matrix C. The test returned a statistically significant difference in the AUC predictive performance depending on which type of feature subset was input into the classifier, $χ^{2}⁢(4)=106.55$, $p=3.968⁢E-22$. This suggests that the mean AUC ranks of at least one feature subset are significantly different than the others. The mean ranks were as follows: GA = 12.050, STAT = 10.733, GA+STAT = 20.283, PSA = 3.067, PSA+GA+STAT = 18.867. A post hoc test was run alongside the Friedman test to pinpoint which feature subsets differ from each other. Post hoc analysis using a Bonferroni correction was used to reduce the likelihood of erroneously declaring a statistically significant due to multiple comparisons (a Type I error). Table 7 shows the results of multiple comparisons and adjusted p values. There were statistically significant differences between group 8 (GA+STAT vs. GA) and 10 (PSA vs. PSA+GA+STAT) (p=0.001). We can conclude that GA+STAT returned a significantly higher AUC than PSA, and the difference between their mean ranks is diff = 17.217. PSA returned a significantly lower AUC than PSA+GA+STAT (p=0.002), and the difference between their mean ranks is diff=-15.800.
+
+**Table 7.**
+ Ad hoc test results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Ad hoc test</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Ll 95%</th>
+      <th>Diff. betw.means</th>
+      <th>Ul 95%</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>GA</td>
+      <td>STAT</td>
+      <td>−12.658</td>
+      <td>1.317</td>
+      <td>15.292</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GA</td>
+      <td>GA+STAT</td>
+      <td>−22.208</td>
+      <td>−8.233</td>
+      <td>5.742</td>
+      <td>0.525</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>GA</td>
+      <td>PSA</td>
+      <td>−4.992</td>
+      <td>8.983</td>
+      <td>22.958</td>
+      <td>0.344</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>GA</td>
+      <td>PSA+GA+STAT</td>
+      <td>−20.792</td>
+      <td>−6.817</td>
+      <td>7.158</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>STAT</td>
+      <td>GA+STAT</td>
+      <td>−23.525</td>
+      <td>−9.550</td>
+      <td>4.425</td>
+      <td>0.245</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>STAT</td>
+      <td>PSA</td>
+      <td>−6.308</td>
+      <td>7.667</td>
+      <td>21.642</td>
+      <td>0.710</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>STAT</td>
+      <td>PSA+GA+STAT</td>
+      <td>−22.108</td>
+      <td>−8.133</td>
+      <td>5.842</td>
+      <td>0.555</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>GA+STAT</td>
+      <td>PSA</td>
+      <td>3.242</td>
+      <td>17.217</td>
+      <td>31.192</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>GA+STAT</td>
+      <td>PSA+GA+STAT</td>
+      <td>−12.558</td>
+      <td>1.417</td>
+      <td>15.392</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>PSA</td>
+      <td>PSA+GA+STAT</td>
+      <td>−29.775</td>
+      <td>−15.800</td>
+      <td>−1.825</td>
+      <td>0.002</td>
+    </tr>
+  </tbody>
+</table>
+
+_The first two columns show the groups that are compared. The third and fifth columns show the lower and upper limits for 95% confidence intervals for the true mean difference. The fourth column shows the difference between the estimated group means. The sixth column contains the p-value for testing a hypothesis that the corresponding mean difference is equal to zero._
+
+#### Comparing the best prediction models over 30 runs
 
 With regard to constructing a model which has the potential to be used in clinical practice, it is necessary to finalise an initial prediction model, since the last experiment returned 30 different variations of each prediction model when using different training and validation data partitions. Those experiments were crucial in determining whether the prediction models (five models, a different one for each feature subset) suffer from low variance. We then observed the classification performance of each model for each run, to identify the highest performance achieved using a single 10-fold cross validation in any of the runs. This provides a way of comparing the performance of each prediction model as it would be used in the clinical setting. Table 8 provides the results of the highest performing model, and the performance of the models is ranked (with 1 being the best model and 5 the worst model).
 
-## Predicting low-/intermediate risk cancer vs. high-risk cancer
+**Table 8.**
+ Results of the best prediction models created during the 30 runs.Validation results are presented at k = 10 fold cross validation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Best prediction model results</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>AUC</th>
+      <th>ORP FPR</th>
+      <th>ORP TPR</th>
+      <th>Accuracy</th>
+      <th>Rank</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GA</td>
+      <td>0.818</td>
+      <td>0.192</td>
+      <td>0.829</td>
+      <td>0.820</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>GA+STAT</td>
+      <td>0.853</td>
+      <td>0.157</td>
+      <td>0.862</td>
+      <td>0.855</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PSA</td>
+      <td>0.734</td>
+      <td>0.218</td>
+      <td>0.685</td>
+      <td>0.730</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>PSA+GA+STAT</td>
+      <td>0.844</td>
+      <td>0.175</td>
+      <td>0.864</td>
+      <td>0.848</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>STAT</td>
+      <td>0.811</td>
+      <td>0.227</td>
+      <td>0.85</td>
+      <td>0.817</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Predicting low-/intermediate risk cancer vs. high-risk cancer
 
 The continuing, significant clinical challenge resides in distinguishing men with low- or intermediate-risk prostate cancer which is unlikely to progress (for both of which ‘active surveillance’ is the most appropriate approach), from men with intermediate disease which is likely to progress and men with high-risk prostate cancer (both of which require treatment). The diagnosis of men with low-risk or small volume intermediate-risk prostate cancer as having prostate cancer is unhelpful as these men will very rarely require treatment. The inappropriate assignment of men to potentially life-threatening invasive procedures and life-long surveillance for prostate cancer has significant psychological, quality of life, financial, and societal consequences. Furthermore, the definitive diagnosis of prostate cancer currently requires painful invasive biopsies with which is associated a risk of potentially life-threatening urosepsis in 5% of individuals. We, therefore, undertook experiments to train the proposed Ensemble Subspace kNN model to predict the D’Amico Risk Classification for those patients with prostate cancer (see subsection ‘The cancer patients dataset used for building the risk prediction modelin Methods), in terms of Low/Intermediate (L/I) risk and High (H) risk disease using NK cell phenotypic data alone.
 
@@ -106,8 +1996,6 @@ The Ensemble model was modified to take as input all 32 features (described in T
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/50936/elife-50936-fig7-v2.jpg)
 
-**Figure 7.:** a) k-fold validation results, and (b) independent testing results (i.e. using 10 patient records).
-
 The dataset that was utilized to identify the biomarker (that comprised eight features) for detecting the presence of prostate cancer (i.e. benign prostate disease vs prostate cancer) in 71 men, and thus it was large enough to perform the combinatorial feature selection task for finding the best subset of features. The GA that was used for the combinatorial feature selection task is described in Section Computational Methods. Given that detecting the presence of prostate cancer and its risk if present are two different tasks, it is expected that the biomarkers for those tasks will be different since a different target is given to the GA (i.e. the target for the prostate cancer detection model comprises 0 (benign prostate disease) and 1 (prostate cancer) values; the target for the prostate cancer risk prediction model comprises 0 (L/I risk) and 1 (High risk) values). For the L/I vs H risk task, the dataset was small (n = 54 men (L/I = 36, H = 16)), and we could not perform the combinatorial feature selection task with confidence. Hence, it was decided to use the entire feature set for the risk prediction task. The results obtained from the risk prediction model were very promising as shown experimentally, and this provided the confidence to report these preliminary results. The combinatorial feature selection task to identify the best subset of features for the risk prediction task will be performed once a larger dataset is available.
 
 Herein, we demonstrate that all 32 phenotypic features are required to distinguish between low/intermediate risk cancer (L/I) and high risk (H) cancer. However, we expect to be able to identify smaller subset(s) of these features as the datasets increase and the prediction model is retrained on the larger dataset. As indicated above, the generation and delivery of additional datasets is beyond the scope of this paper.
@@ -116,11 +2004,11 @@ Herein, we demonstrate that all 32 phenotypic features are required to distingui
 
 The clinical challenge in prostate cancer diagnosis resides in distinguishing men with low- or small volume intermediate-risk prostate cancer which is unlikely to progress (both require 'active surveillance') from men with intermediate disease which is likely to progress or high-risk disease (both of which require treatment). It is essential that men with low-risk prostate abnormalities are not diagnosed as having prostate cancer, as those with low-risk/grade disease do not require active treatment. Furthermore, unnecessarily labeling men as having prostate cancer can assign these men to life-long surveillance and have significant psychological, quality of life, financial and societal consequences. Recent findings from a decade-long study involving 415,000 British men (The Cluster Randomized Trial of PSA Testing for Prostate Cancer (CAP) Randomized Clinical Trial) have not supported single PSA testing for population-based screening and suggest that asymptomatic men should not be routinely tested to avoid unnecessary anxiety and treatment. It is therefore essential that new approaches for enabling more definitive, early detection of prostate cancer are developed. The reliable diagnosis of prostate cancer based on PSA levels alone is not possible and confirmation using invasive biopsies or other approaches such as MRI and biopsy are currently required. Although interest in the potential diagnostic capabilities of MRI scanning is developing, MRI cannot currently be used as a sole diagnostic as a positive MRI can be incorrect in approximately 25% of cases and a negative MRI can be incorrect in approximately 20% of cases Ahmed et al., 2017. Although the findings from the CAP study do not support using the PSA test as an approach for population-based screening, combining PSA measurements with other approaches that either identify individuals for additional testing or strengthen the capacity to diagnose prostate cancer have significant merit, and it is based on this concept that the current study has been performed. The studies presented herein have focused on asymptomatic men with a PSA < 20 ng/ml, as men with a PSA level > 20 ng/ml are more likely to harbour prostate cancer and are thereby less likely to pose a clinical diagnostic quandary. In contrast, men with a PSA < 20 ng/ml pose a major problem because although only 30–40% of these men will have prostate cancer, all currently undergo potentially unnecessary invasive prostate biopsies to determine who has the disease. It is, therefore, this group of men for which the development of new and more accurate approaches for the early detection of cancer is a clear unmet clinical need, and for whom the benefits of such an approach will be most relevant and significant.
 
-## Comparing results to the previous study
+### Comparing results to the previous study
 
-We have previously shown that incorporating peripheral blood immune phenotyping-based features into a computation-based prediction tool enables the better detection of prostate cancer and, furthermore, strengthens the accuracy of the PSA test in asymptomatic individuals having PSA levels < 20 ng/ml (Cosma et al., 2017). The phenotypic feature set which was shown to be discriminatory between benign disease and prostate cancer comprised C⁢D⁢8+⁢C⁢D⁢45⁢R⁢A-⁢C⁢D⁢27-⁢C⁢D⁢28- (C⁢D⁢8+ Effector Memory cells), C⁢D⁢4+⁢C⁢D⁢45⁢R⁢A-⁢C⁢D⁢27-⁢C⁢D⁢28- (C⁢D⁢4+ Effector Memory Cells), C⁢D⁢4+⁢C⁢D⁢45⁢R⁢A+⁢C⁢D⁢27-⁢C⁢D⁢28-(C⁢D⁢4+ Terminally Differentiated Effector Memory Cells re-expressing CD45RA), C⁢D⁢3-⁢C⁢D⁢19+ (B cells), C⁢D⁢3+⁢C⁢D⁢56+⁢C⁢D⁢8+⁢C⁢D⁢4+ (NKT cells).
+We have previously shown that incorporating peripheral blood immune phenotyping-based features into a computation-based prediction tool enables the better detection of prostate cancer and, furthermore, strengthens the accuracy of the PSA test in asymptomatic individuals having PSA levels < 20 ng/ml (Cosma et al., 2017). The phenotypic feature set which was shown to be discriminatory between benign disease and prostate cancer comprised $C⁢D⁢8^{+}⁢C⁢D⁢45⁢R⁢A^{-}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$ ($C⁢D⁢8^{+}$ Effector Memory cells), $C⁢D⁢4^{+}⁢C⁢D⁢45⁢R⁢A^{-}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$ ($C⁢D⁢4^{+}$ Effector Memory Cells), $C⁢D⁢4^{+}⁢C⁢D⁢45⁢R⁢A^{+}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$($C⁢D⁢4^{+}$ Terminally Differentiated Effector Memory Cells re-expressing CD45RA), $C⁢D⁢3^{-}⁢C⁢D⁢19^{+}$ (B cells), $C⁢D⁢3^{+}⁢C⁢D⁢56^{+}⁢C⁢D⁢8^{+}⁢C⁢D⁢4^{+}$ (NKT cells).
 
-Using samples from the same cohort of asymptomatic individuals, herein we have further investigated the phenotype and function of NK cell subsets. Using a combination of statistical and computational feature selection approaches, we have identified a subset of eight phenotypic features C⁢D⁢56d⁢i⁢m⁢C⁢D⁢16h⁢i⁢g⁢h, C⁢D⁢56+⁢D⁢N⁢A⁢M-1-, C⁢D⁢56+⁢L⁢A⁢I⁢R-1+, C⁢D⁢56+⁢L⁢A⁢I⁢R-1-, C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+, C⁢D⁢56+⁢N⁢K⁢p⁢30+, C⁢D⁢56+⁢N⁢K⁢p⁢30-, C⁢D⁢56+⁢N⁢K⁢p⁢46+ which distinguish between the presence of benign prostate disease and prostate cancer. These features were used to implement a prediction model. The kNN machine learning approach developed in our previous study (Cosma et al., 2017) has been extended to an Ensemble of kNN learners to improve performance in identifying patterns in even more complex data. As was observed in our previous study, flow cytometry predictors significantly outperform the PSA test. The findings presented herein significantly reinforce our previous finding (Cosma et al., 2017) that complementing the PSA prediction model with a subset of flow cytometry-based phenotypic predictors can significantly increase the accuracy of the initial prostate cancer test and reduce misclassification. The performance of the prediction model which was built using the phenotypic ‘signature’ presented in our previous study -C⁢D⁢8+⁢C⁢D⁢45⁢R⁢A-⁢C⁢D⁢27-⁢C⁢D⁢28-, C⁢D⁢4+⁢C⁢D⁢45⁢R⁢A-⁢C⁢D⁢27-⁢C⁢D⁢28-, C⁢D⁢4+⁢C⁢D⁢45⁢R⁢A+⁢C⁢D⁢27-⁢C⁢D⁢28-, C⁢D⁢3-⁢C⁢D⁢19+, C⁢D⁢3+⁢C⁢D⁢56+⁢C⁢D⁢8+⁢C⁢D⁢4+ (Cosma et al., 2017), is similar to the model which was built using the NK cell-based phenotypic signature presented herein, C⁢D⁢56d⁢i⁢m⁢C⁢D⁢16h⁢i⁢g⁢h, C⁢D⁢56+⁢D⁢N⁢A⁢M-1-, C⁢D⁢56+⁢L⁢A⁢I⁢R-1+, C⁢D⁢56+⁢L⁢A⁢I⁢R-1-, C⁢D⁢56b⁢r⁢i⁢g⁢h⁢t⁢C⁢D⁢8+, C⁢D⁢56+⁢N⁢K⁢p⁢30+, C⁢D⁢56+⁢N⁢K⁢p⁢30-, C⁢D⁢56+⁢N⁢K⁢p⁢46+. Specifically, the prediction model using the five flow cytometry features identified in Cosma et al., 2017 achieved Accuracy: 83.33% , AUC: 83.40%, ORP TPR: 82.93%, FPR: 16.13%, whereas the prediction model presented herein achieved AUC: 85.3%, ORP FPR: 15.7%, ORP TPR: 86.2%, Accuracy: 85.5%. Across the 30 runs the average performance of the prediction model presented herein is AUC: 81.8%, ORP TPR: 83.6%, FPR: 20.1%, Accuracy: 82.1%.
+Using samples from the same cohort of asymptomatic individuals, herein we have further investigated the phenotype and function of NK cell subsets. Using a combination of statistical and computational feature selection approaches, we have identified a subset of eight phenotypic features $C⁢D⁢56^{d⁢i⁢m}⁢C⁢D⁢16^{h⁢i⁢g⁢h}$, $C⁢D⁢56^{+}⁢D⁢N⁢A⁢M-1^{-}$, $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{+}$, $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{-}$, $C⁢D⁢56^{b⁢r⁢i⁢g⁢h⁢t}⁢C⁢D⁢8^{+}$, $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{+}$, $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{-}$, $C⁢D⁢56^{+}⁢N⁢K⁢p⁢46^{+}$ which distinguish between the presence of benign prostate disease and prostate cancer. These features were used to implement a prediction model. The kNN machine learning approach developed in our previous study (Cosma et al., 2017) has been extended to an Ensemble of kNN learners to improve performance in identifying patterns in even more complex data. As was observed in our previous study, flow cytometry predictors significantly outperform the PSA test. The findings presented herein significantly reinforce our previous finding (Cosma et al., 2017) that complementing the PSA prediction model with a subset of flow cytometry-based phenotypic predictors can significantly increase the accuracy of the initial prostate cancer test and reduce misclassification. The performance of the prediction model which was built using the phenotypic ‘signature’ presented in our previous study $-C⁢D⁢8^{+}⁢C⁢D⁢45⁢R⁢A^{-}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$, $C⁢D⁢4^{+}⁢C⁢D⁢45⁢R⁢A^{-}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$, $C⁢D⁢4^{+}⁢C⁢D⁢45⁢R⁢A^{+}⁢C⁢D⁢27^{-}⁢C⁢D⁢28^{-}$, $C⁢D⁢3^{-}⁢C⁢D⁢19^{+}$, $C⁢D⁢3^{+}⁢C⁢D⁢56^{+}⁢C⁢D⁢8^{+}⁢C⁢D⁢4^{+}$ (Cosma et al., 2017), is similar to the model which was built using the NK cell-based phenotypic signature presented herein, $C⁢D⁢56^{d⁢i⁢m}⁢C⁢D⁢16^{h⁢i⁢g⁢h}$, $C⁢D⁢56^{+}⁢D⁢N⁢A⁢M-1^{-}$, $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{+}$, $C⁢D⁢56^{+}⁢L⁢A⁢I⁢R-1^{-}$, $C⁢D⁢56^{b⁢r⁢i⁢g⁢h⁢t}⁢C⁢D⁢8^{+}$, $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{+}$, $C⁢D⁢56^{+}⁢N⁢K⁢p⁢30^{-}$, $C⁢D⁢56^{+}⁢N⁢K⁢p⁢46^{+}$. Specifically, the prediction model using the five flow cytometry features identified in Cosma et al., 2017 achieved Accuracy: 83.33% , AUC: 83.40%, ORP TPR: 82.93%, FPR: 16.13%, whereas the prediction model presented herein achieved AUC: 85.3%, ORP FPR: 15.7%, ORP TPR: 86.2%, Accuracy: 85.5%. Across the 30 runs the average performance of the prediction model presented herein is AUC: 81.8%, ORP TPR: 83.6%, FPR: 20.1%, Accuracy: 82.1%.
 
 The difference in the performance of the model presented in the first study (Cosma et al., 2017) and the study described herein is a consequence of different data and prediction models being used in each study. Given that the phenotypic features that were used to create the prediction models were different, the studies resulted in different prediction models. In particular, the model presented previously (Cosma et al., 2017) was based on a kNN classifier, and herein the kNN classifier was extended to construct an Ensemble Subspace kNN method which comprised several kNN classifiers (see Figure 9). The dataset used herein was more complex, and it was therefore necessary to create a more complex classifier. At this point in the studies, it is not possible to determine which set of phenotypic features is better at identifying prostate cancer. However, it is evident that both approaches have significant promise. Since the publication of our previous study (Cosma et al., 2017), the model developed for that study was used to predict the outcomes of a further 20 new patients which were previously unseen by the prediction model. The model correctly identified the presence of prostate cancer in 19 of the 20 patients (data not shown).
 
@@ -128,7 +2016,7 @@ Encouragingly, the prediction models generated in the study reported upon herein
 
 The proposed machine learning model was adapted to predict the D’Amico Risk Classification of patients with prostate cancer using NK cell phenotypic data alone. Experiments with data from 54 patients revealed the significant potential of using the proposed machine learning model for determining if men with prostate cancer are in the low-/intermediate- or high-risk groups, without the need for additional clinical data (i.e. PSA, Gleason, clinical stage data). One limitation of the current study is that the small patient numbers required for low- and intermediate-risk patients to be grouped. Future work, for which additional sample collections are required, will train the model to separately predict low-, intermediate- and high-risk cancer. Future work involves collecting more patient samples to conduct further testing of the proposed machine learning models. In terms of future work from a computational perspective, once we have a larger patient dataset we plan to design deep learning models and compare their performance to the conventional machine learning model which was proposed in this paper.
 
-## Potential impact
+### Potential impact
 
 Currently available screening methods and tests for prostate cancer lack accuracy and reliability, the consequence of which is that many men unnecessarily undergo invasive tests such as biopsy and/or are misdiagnosed as having the disease. Furthermore, a biopsy involves removing samples of tissue from the prostate and it is an extremely uncomfortable procedure which also puts men at risk of developing life-threatening infections. As biopsy results are not definitive, there is a significant potential for misdiagnosis and over- and under- treatment. It is therefore essential that new non-invasive approaches such as blood tests that are more accurate than the Prostate Specific Antigen (PSA) test are developed to reduce misdiagnosis and unnecessary procedures. Misdiagnosis unnecessarily subjects many men to lifelong monitoring for prostate cancer which can have undesirable psychological and quality of life side-effects, as well as place a significant financial burden on the NHS and other healthcare systems. This paper proposes a computerised model, which detects the presence of prostate cancer in men by analyzing immune system cells in the blood. The model uses the data from the blood tests and artificial intelligence-based computing (machine learning) to more accurately detect the presence of prostate cancer. A preliminary model has also been presented to detect the clinical risk that any prostate cancer which is present poses. The tool has two elements, the first detects whether a man has prostate cancer. If prostate cancer is detected, the second element will detect the clinical risk of the disease (low, intermediate, high) and thereby enable the clinician to decide whether the patient requires no further investigation/treatment (‘watch and wait’) or whether further investigation and treatment are required.
 
@@ -138,39 +2026,540 @@ The novelty of this approach is that it interrogates the immunological response 
 
 ## Materials and methods
 
-## Data collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological Sample</td>
+      <td>Hyclone fetal bovine serum (FBS)</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>SV30180.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human DNAM-1 (CD226) (clone 11A8); FITC</td>
+      <td>BioLegend</td>
+      <td>338304</td>
+      <td>5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human NKG2D (CD314) (clone 1D11); PE</td>
+      <td>eBioscience</td>
+      <td>12-5878-42</td>
+      <td>5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human CD56 (clone N901); ECD (PE-Texas Red)</td>
+      <td>Beckman Coulter</td>
+      <td>A82943</td>
+      <td>2.5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human CD16 (clone 3G8); PerCP-Cy5.5</td>
+      <td>BioLegend</td>
+      <td>302028</td>
+      <td>5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human NKp46 (CD335) (clone 9E2); PE-Cy7</td>
+      <td>BioLegend</td>
+      <td>331916</td>
+      <td>5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human NKp30 (CD337) (clone P30-15); Alexa Fluor 647</td>
+      <td>BioLegend</td>
+      <td>325212</td>
+      <td>5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human CD3 (clone UCHT1); Alexa Fluor 700</td>
+      <td>BioLegend</td>
+      <td>300424</td>
+      <td>2 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human CD19 (clone HIB19); Alexa Fluor 700</td>
+      <td>BioLegend</td>
+      <td>302226</td>
+      <td>1 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human CD8 (clone SK1); APC-Cy7</td>
+      <td>BioLegend</td>
+      <td>344714</td>
+      <td>2.5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG2b anti human CD85j (ILT2) (clone GHI/75); FITC</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-098-437</td>
+      <td>10 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human LAIR-1 (CD305) (clone DX26); PE</td>
+      <td>BD Biosciences</td>
+      <td>550811</td>
+      <td>20 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG2b anti human NKG2A (CD159a) (clone Z199); PE-Cy7(PC7)</td>
+      <td>Beckman Coulter</td>
+      <td>B10246</td>
+      <td>20 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human NKp44 (CD336) (clone P44-8); Alexa Fluor 647</td>
+      <td>BioLegend</td>
+      <td>325112</td>
+      <td>5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse IgG1 kappa anti human 2B4 (CD244.2) (clone C1.7); FITC</td>
+      <td>BioLegend</td>
+      <td>329506</td>
+      <td>5 μl per tube / 106cells</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>LIVE/DEAD Fixable Violet Dead Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L34955</td>
+      <td>1 μl in 1 μl</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Novagen Benzonase Nuclease</td>
+      <td>Merck Millipore</td>
+      <td>70664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>CTL Wash Solution</td>
+      <td>Cellular Technology Limited</td>
+      <td>CTLW-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Trypan Blue viability stain</td>
+      <td>Santa Cruz</td>
+      <td>sc-216028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Santa Cruz</td>
+      <td>sc-202581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Calbiochem bovine serum albumin (BSA)</td>
+      <td>Merck Millipore</td>
+      <td>2905-OP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Sigma-Aldrich sodium azide</td>
+      <td>Merck Millipore</td>
+      <td>S8032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Sigma-Aldrich lithium heparin</td>
+      <td>Merck Millipore</td>
+      <td>H0878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Ficoll-Paque</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>17-1440-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Isoton II isotonic buffered saline solution</td>
+      <td>Beckman Coulter</td>
+      <td>844 80 11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>RPMI medium</td>
+      <td>Lonza</td>
+      <td>12-167Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound</td>
+      <td>Phosphate Buffered Saline (PBS)</td>
+      <td>Lonza</td>
+      <td>17-517Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leucosep tubes</td>
+      <td>Greiner Bio-One International</td>
+      <td>227290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Kaluza v1.3</td>
+      <td>Beckman Coulter</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Data collection
 
 Peripheral blood samples were obtained from individuals suspected of having prostate cancer that attended the Urology Clinic at Leicester General Hospital (Leicester, UK) between 24th October 2012 and 15th August 2014. Only patients who had provided informed consent and met the criteria of being biopsy naive, a benign feeling Digital Rectal Examination (DRE) with a PSA level of < 20 ng ml-1 and agreeing to undergo a simultaneous 12 core TRUS biopsy and a 36 core transperineal template prostate biopsy (TPTPB) were included in the study. Further details regarding the TPTPB technique are provided in Nafie et al., 2014b. A total of 71 males (30 patients diagnosed with benign disease and 41 patients diagnosed with cancer, as confirmed by pathological examination of TPTPB biopsies) met the criteria. Of the 30 patients diagnosed with benign disease; 9 patients were diagnosed with High Grade Prostatic Intraepithelial Neoplasia (PIN), 10 patients were diagnosed with Atypia and 2 patients were diagnosed with Atypical Small Acinar Proliferation. The remainder were diagnosed with benign disease. Of the men diagnosed with prostate cancer, 16 had Gleason 6 disease, 23 had Gleason 7 disease and 2 had Gleason 9 disease on biopsy-based evidence. The clinical features of individuals with benign disease and patients with prostate cancer are provided in Table 9.
 
-## The cancer patients dataset used for building the risk prediction model
+**Table 9.**
+ Patient clinical features.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient group</th>
+      <th>Gleason score</th>
+      <th>Number of patients</th>
+      <th>Age range (years)</th>
+      <th>PSA range (ng/ml)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Benign</td>
+      <td>Benign</td>
+      <td>9</td>
+      <td>64-71</td>
+      <td>5.3–15</td>
+    </tr>
+    <tr>
+      <td>Benign</td>
+      <td>HGPIN</td>
+      <td>9</td>
+      <td>54–70</td>
+      <td>5.1–12</td>
+    </tr>
+    <tr>
+      <td>Benign</td>
+      <td>Atypia</td>
+      <td>10</td>
+      <td>50–76</td>
+      <td>4.7–19</td>
+    </tr>
+    <tr>
+      <td>Benign</td>
+      <td>ASAP</td>
+      <td>2</td>
+      <td>59–60</td>
+      <td>5.3–7.8</td>
+    </tr>
+    <tr>
+      <td>Cancer</td>
+      <td>Gleason 6</td>
+      <td>16</td>
+      <td>55–80</td>
+      <td>4.7–11</td>
+    </tr>
+    <tr>
+      <td>Cancer</td>
+      <td>Gleason 7</td>
+      <td>23</td>
+      <td>53–77</td>
+      <td>4.7–19</td>
+    </tr>
+    <tr>
+      <td>Cancer</td>
+      <td>Gleason 9</td>
+      <td>2</td>
+      <td>65–75</td>
+      <td>6.3–18</td>
+    </tr>
+  </tbody>
+</table>
+
+### The cancer patients dataset used for building the risk prediction model
 
 Data derived from the 41 individuals with prostate cancer were extracted from the dataset shown in Table 9. All 41 patients had PSA < 20 ng ml-1. However, three of the 41 patients who had a High D’Amico risk were removed because their clinical profiles were very different from those of other high risk patients. They were patients with either a Gleason score 3+3 or had a benign biopsy. In the future, we aim to collect more data from such infrequent patient groups to train the algorithms on patients with such clinical profiles. The remaining 38 patients had PSA levels < 20 ng ml-1 and belonged to the D’Amico L/I risk group.
 
 Data were collected from an additional 16 patients with prostate cancer who were diagnosed as having a D’Amico High risk profile (see Table 10). Thus, the new cancer patient dataset comprised 54 patients with prostate cancer, of which 38 patients belonged to the D’Amico L/I risk group and all had PSA<20 ng ml-1, and 16 patients belong to the D’Amico H risk group and have PSA 4.3 ng ml-1≤ PSA ≤ 2617 ng ml-1. The 16 patients were diagnosed with Gleason scores of: 4+4 = 8 (n = 2), 5+4 = 9 (n = 2), and 4+5 = 9 (n = 11), and 1 patient was diagnosed with small cell cancer. The combined dataset (i.e. 38+16 = 54) comprised 15 patients with Gleason 6 (3+3), 18 patients with Gleason 7 (3+4), 5 patients with Gleason 7 (4+3), 2 patients with Gleason 8 (4+4), 11 patients with Gleason 9 (4+5), 2 patients with Gleason 9 (5+4), and 1 patient with small cell cancer.
 
+**Table 10.**
+ Dataset used for differentiating between patients with L/I and H cancer.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient group</th>
+      <th>Count</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L/I</td>
+      <td>38</td>
+      <td>70.37</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>16</td>
+      <td>29.63</td>
+    </tr>
+  </tbody>
+</table>
+
 Since 11 of those 16 patients had a PSA > 20 ng ml-1, their data could only be utilised for building the prostate cancer risk prediction model, as the detection model focuses on detecting prostate cancer in asymptomatic men with PSA< 20 ng ml-1.
 
-## Flow cytometric analysis
+### Flow cytometric analysis
 
 Peripheral blood (60 ml) was collected from all patients using standard clinical procedures. Aliquots (30 ml) were transferred into two sterile 50 ml polypropylene (Falcon) tubes containing 300 μl of sterilized Sigma Aldrich Lithium Heparin (1000 U/ml, Merck Millipore). Anti-coagulated samples were transferred to the John van Geest Cancer Research Centre at Nottingham Trent University (Nottingham, UK) and processed immediately upon receipt (always within 3 hr of collection). Peripheral blood (60 ml) was mixed with Phosphate Buffered Saline (PBS, 30 ml, Lonza) and layered over Ficoll-Paque (GE Healthcare Life Sciences) in Leucosep tubes (20 ml blood per tube) and then centrifuged at 800 g for 20 min. The peripheral blood mononuclear cell (PBMC) fraction was harvested and washed twice with PBS before being re-suspended in Hyclone fetal bovine serum (FBS, GE Healthcare Life Sciences). Viable cells were counted using trypan blue (0.1 % v/v trypan blue, Santa Cruz) and a haemocytometer. Cells were frozen in 90% v/v FBS, 10% v/v DMSO (Santa Cruz) in aliquots of 10 × 106 PBMC/vial and stored in liquid nitrogen until phenotypic analysis. At the time of analysis, one vial from each patient was thawed by mixing with 10 ml ‘thaw’ solution (90% v/v RPMI (Lonza)), 10% v/v CTL wash solution (Cellular Technology Limited) and 10 μl of Novagen Benzonase (Merck Millipore) at room temperature.
 
 PBMCs were centrifuged at 400 g for 5 min followed by resuspension in 1 ml of RPMI (supplemented with 10% v/v FBS, 1% v/v L-glutamine (Lonza)). Cells were rested for 1 hr at 37, after which viable cells were counted using trypan blue dye (Santa Cruz) exclusion. For each monoclonal antibody (mAb) panel shown in Table 11, 1 × 106 cells were washed and incubated in 100 μl of Wash Buffer (PBS +2% w/v Calbiochem bovine serum albumin (BSA, Merck Millipore) +0.02% w/v sodium azide (Sigma)) containing the relevant mAb cocktail for 15 min, after which cells were washed with 1 ml PBS and then incubated in 1 ml LIVE/DEAD Fixable Violet dead stain (Thermo Fisher Scientific) for 30 min. All incubations were performed at 4 protected from light. The cells were washed with PBS and then re-suspended in Beckman Coulter Isoton isotonic buffered saline solution.
 
+**Table 11.**
+ Antibody panels for measuring the phenotype of Natural Killer cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Fluorochrome</th>
+      <th>Clone no.</th>
+      <th>Supplier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Panel 1</td>
+    </tr>
+    <tr>
+      <td>DNAM-1 (CD226)</td>
+      <td>FITC</td>
+      <td>11A8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>NKG2D (CD314)</td>
+      <td>PE</td>
+      <td>1D11</td>
+      <td>eBioscience</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>ECD (PE-Texas Red)</td>
+      <td>N901</td>
+      <td>Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>CD16</td>
+      <td>PerCP-Cy5.5</td>
+      <td>3G8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>NKp46 (CD335)</td>
+      <td>PE-Cy7</td>
+      <td>9E2</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>NKp30 (CD337)</td>
+      <td>Alexa Fluor 647</td>
+      <td>P30-15</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>Alexa Fluor 700</td>
+      <td>UCHT1</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>Alexa Fluor 700</td>
+      <td>HIB19</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>APC-Cy7</td>
+      <td>SK1</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Live/Dead</td>
+      <td>Dye (violet)</td>
+      <td></td>
+      <td>Thermo Fisher Scientific</td>
+    </tr>
+    <tr>
+      <td colspan="4">Panel 2</td>
+    </tr>
+    <tr>
+      <td>CD85j (ILT2)</td>
+      <td>FITC</td>
+      <td>GHI/75</td>
+      <td>Miltenyi Biotec</td>
+    </tr>
+    <tr>
+      <td>LAIR-1 (CD305)</td>
+      <td>PE</td>
+      <td>DX26</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>ECD (PE-Texas Red)</td>
+      <td>N901</td>
+      <td>Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>CD16</td>
+      <td>PerCP-Cy5.5</td>
+      <td>3G8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>NKG2A (CD159a)</td>
+      <td>PC7 (PE-Cy7)</td>
+      <td>Z199</td>
+      <td>Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>NKp44 (CD336)</td>
+      <td>Alexa Fluor 647</td>
+      <td>P44-8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>Alexa Fluor 700</td>
+      <td>UCHT1</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>Alexa Fluor 700</td>
+      <td>HIB19</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>APC-Cy7</td>
+      <td>SK1</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>LIVE/DEAD</td>
+      <td>Dye (violet)</td>
+      <td></td>
+      <td>Thermo Fisher Scientific</td>
+    </tr>
+    <tr>
+      <td colspan="4">Panel 3</td>
+    </tr>
+    <tr>
+      <td>2B4 (CD244.2)</td>
+      <td>FITC</td>
+      <td>C1.7</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>ECD (PE-Texas Red)</td>
+      <td>N901</td>
+      <td>Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>CD16</td>
+      <td>PerCp-Cy5.5</td>
+      <td>3G8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>Alexa Fluor 700</td>
+      <td>UCHT1</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>Alexa Fluor 700</td>
+      <td>HIB19</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>APC-Cy7</td>
+      <td>SK1</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>LIVE/DEAD</td>
+      <td>Dye (violet)</td>
+      <td></td>
+      <td>Thermo Fisher Scientific</td>
+    </tr>
+  </tbody>
+</table>
+
 Data (on viable cells) were acquired within 1 hr using a 10-color/3-laser Beckman Coulter Gallios flow cytometer and analyzed using Beckman Coulter Kaluza v1.3 data acquisition and analysis software. Controls used a Fluorescence Minus One (FMO) approach. A typical gating strategy for the analyses is presented in Figure 8.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/50936/elife-50936-fig8-v2.jpg)
 
-**Figure 8.:** Using density plots, the NK cell phenotypic profiles were determined by first gating on ‘live cells’ in the forward scatter (FSc) linear vs side scatter (SSc) linear density plot and then gating on single cells (determined by FSc Linear vs FS time of flight). The expression of activating and inhibitory receptors was determined by gating on  cells using fluorescence minus one (FMO) controls. The expression of each NK cell receptor was measured using the ‘Logical’ setting.C⁢D⁢3-⁢C⁢D⁢19-⁢C⁢D⁢56+
+**Figure 8.:** Using density plots, the NK cell phenotypic profiles were determined by first gating on ‘live cells’ in the forward scatter (FSc) linear vs side scatter (SSc) linear density plot and then gating on single cells (determined by FSc Linear vs FS time of flight). The expression of activating and inhibitory receptors was determined by gating on $C⁢D⁢3^{-}⁢C⁢D⁢19^{-}⁢C⁢D⁢56^{+}$ cells using fluorescence minus one (FMO) controls. The expression of each NK cell receptor was measured using the ‘Logical’ setting.
 
-## Computational methods
+### Computational methods
 
 Initially, the GA by Ludwig and Nunes, 2010 was adopted to identify the best subset of features (i.e. predictors), and thereafter a prediction model was constructed using the Ensemble classifier. This section also explains the metrics adopted for evaluating the performance of the prediction model.
 
-## GA for selecting the best subset of features
+### GA for selecting the best subset of features
 
-The GA is a metaheuristic, commonly used to generate solutions to optimization and search problems. Given the large number of combinations, the process of selecting the best subset of flow cytometry features for creating the prediction algorithm is performed using a GA. The GA adopted in the experiments was developed by Ludwig and Nunes, 2010. The particular GA performs combinatorial optimization to identify a subset of features that comprises the optimum feature set, in which the order of features has no relation with their importance. The algorithm works by maximising the mutual information between the target y (where y can have a value 1 for cancer or 0 for benign) and the input features (i.e. these are the 32 features listed in Table 1). Mutual information is the measure of the mutual dependence between the two variables, i.e. an input feature and the target. Adopting a GA eliminates the computational effort which is necessary to evaluate all the possible combinations of features. The fitness function of the GA (Ludwig and Nunes, 2010) is based on the principle of max-relevance and min-redundancy (mRMR), for which the objective is that the outputs of the selected features present discriminant power, thereby avoiding redundancy. The principle of max-relevance and min-redundancy corresponds to searching the set of feature indexes that are mutually exclusive and correlated to the target output. Let m×n be a feature-by-patient matrix, X=[xi⁢j] with m features and n patients. Thus, the matrix element xi⁢j is the flow cytometry value i of patient j. Let y be a vector of size 1×n which holds the diagnosis of each patient (1 for cancer and 0 for benign). Hence, each patient x is mapped to a diagnosis y. The GA takes three inputs: 1) the feature-by-patient matrix X; 2) the vector y which holds the corresponding labels for each patient record; and 3) the desired number of features, λ. The GA returns the IDs of the best subset of features, where the subset has size λ. GAs stochastically select multiple features from the current population and thus each run of the GA can return different results. Consequently, we proposed an approach to identify the best subset of features by running the algorithm several times and then obtaining the frequency of the subsets.
+The GA is a metaheuristic, commonly used to generate solutions to optimization and search problems. Given the large number of combinations, the process of selecting the best subset of flow cytometry features for creating the prediction algorithm is performed using a GA. The GA adopted in the experiments was developed by Ludwig and Nunes, 2010. The particular GA performs combinatorial optimization to identify a subset of features that comprises the optimum feature set, in which the order of features has no relation with their importance. The algorithm works by maximising the mutual information between the target y (where y can have a value 1 for cancer or 0 for benign) and the input features (i.e. these are the 32 features listed in Table 1). Mutual information is the measure of the mutual dependence between the two variables, i.e. an input feature and the target. Adopting a GA eliminates the computational effort which is necessary to evaluate all the possible combinations of features. The fitness function of the GA (Ludwig and Nunes, 2010) is based on the principle of max-relevance and min-redundancy (mRMR), for which the objective is that the outputs of the selected features present discriminant power, thereby avoiding redundancy. The principle of max-relevance and min-redundancy corresponds to searching the set of feature indexes that are mutually exclusive and correlated to the target output. Let $m\timesn$ be a feature-by-patient matrix, $X=[x_{i⁢j}]$ with $m$ features and $n$ patients. Thus, the matrix element $x_{i⁢j}$ is the flow cytometry value $i$ of patient $j$. Let $y$ be a vector of size $1\timesn$ which holds the diagnosis of each patient (1 for cancer and 0 for benign). Hence, each patient $x$ is mapped to a diagnosis $y$. The GA takes three inputs: 1) the feature-by-patient matrix X; 2) the vector $y$ which holds the corresponding labels for each patient record; and 3) the desired number of features, $\lambda$. The GA returns the IDs of the best subset of features, where the subset has size $\lambda$. GAs stochastically select multiple features from the current population and thus each run of the GA can return different results. Consequently, we proposed an approach to identify the best subset of features by running the algorithm several times and then obtaining the frequency of the subsets.
 
-## Proposed ensemble learning classifier for identifying the presence of prostate cancer
+### Proposed ensemble learning classifier for identifying the presence of prostate cancer
 
 This section discusses the machine learning classifier which was developed for the task of identifying the presence of benign prostate disease or prostate cancer using the identified subset of phenotypic features. The challenging task is that a suitable and reliable classifier must be developed using only 72 patient records. A limitation is that classifiers that have been trained on small sample size data are likely to be unstable because small changes in the training set cause large changes in the classifier. It was for this reason that the Ensemble machine learning classifier was preferred as an approach for developing a more stable and reliable classifier. Ensemble classifiers achieve stability and reliability by constructing many ‘weak’ classifiers instead of a single classifier and then combine the weak classifiers (i.e. weak learners) to create a more powerful decision rule than that constructed when using a single classifier. In clinical applications, it is important to construct prediction models which have a low bias, meaning that the classifier suggests fewer assumptions about the form of the target function. Because Ensemble learning makes fewer assumptions about the form of the target function, it was considered to be a suitable classifier for the task. Several techniques for combining the classifiers of an Ensemble model exist and these include Boosting, Bagging, and Random Subspace Dimension.
 
@@ -180,17 +2569,51 @@ In the proposed method, the Random Subspace Dimension approach was utilised as a
 
 **Figure 9.:** Ensembles combine predictions from different models to generate a final prediction. Because Ensemble approaches combine baseline predictions, they perform at least as well as the best baseline model.
 
-Figure 9 provides an overview of the architecture of the proposed kNN Ensemble learning, and the description that follows explains the architecture in more detail. Let m be the number of dimensions (variables) to sample in each learner minus 1. Let d be the number of dimensions in the data, which is the number of predictors in the data matrix X. Let n be the number of learners in the ensemble. The basic random subspace algorithm performs the following steps using the above-mentioned parameters:
+Figure 9 provides an overview of the architecture of the proposed kNN Ensemble learning, and the description that follows explains the architecture in more detail. Let $m$ be the number of dimensions (variables) to sample in each learner minus 1. Let $d$ be the number of dimensions in the data, which is the number of predictors in the data matrix X. Let $n$ be the number of learners in the ensemble. The basic random subspace algorithm performs the following steps using the above-mentioned parameters:
 
-## Performance evaluation measures
+### Performance evaluation measures
 
 A variety of relevant evaluation metrics were adopted for the task of evaluating the performance of the machine learning prostate cancer presence and risk prediction models.
 
-Prostate cancer presence prediction models: Let |T⁢P| be the total number of patients with cancer who were correctly classified as having cancer; |T⁢N| be total the number of individuals with benign disease who were correctly classified as having benign disease; |F⁢P| be the total number of individuals with benign disease who were incorrectly classified as having cancer; |F⁢N| be the total number of patients with cancer who were incorrectly classified as having benign disease; |P| be the total number of patients with cancer that exist in the dataset, where |P|=|T⁢P|+|F⁢N|; and |N| be the total number of individuals with benign disease that exist in the dataset, where |N|=|F⁢P|+|T⁢N|. The following commonly used evaluation measures can be defined.(2)Accuracy=|TP|+|TN||TP|+|FP|+|FN|+|TN|,∈[0,1].(3)TPR=|TP||TP|+|FN|,∈[0,1].(4)TNR=|TN||TN|+|FP|,∈[0,1].(5)FNR=|F⁢N||T⁢P|+|F⁢N|=1-Sensitivity,∈[0,1].(6)FPR=|F⁢P||F⁢P|+|T⁢N|=1-Specificity,∈[0,1].
+Prostate cancer presence prediction models: Let $|T⁢P|$ be the total number of patients with cancer who were correctly classified as having cancer; $|T⁢N|$ be total the number of individuals with benign disease who were correctly classified as having benign disease; $|F⁢P|$ be the total number of individuals with benign disease who were incorrectly classified as having cancer; $|F⁢N|$ be the total number of patients with cancer who were incorrectly classified as having benign disease; $|P|$ be the total number of patients with cancer that exist in the dataset, where $|P|=|T⁢P|+|F⁢N|$; and $|N|$ be the total number of individuals with benign disease that exist in the dataset, where $|N|=|F⁢P|+|T⁢N|$. The following commonly used evaluation measures can be defined.
+
+$$
+Accuracy=\frac{|TP|+|TN|}{|TP|+|FP|+|FN|+|TN|},\in[0,1].
+$$
+
+
+
+$$
+TPR=\frac{|TP|}{|TP|+|FN|},\in[0,1].
+$$
+
+
+
+$$
+TNR=\frac{|TN|}{|TN|+|FP|},\in[0,1].
+$$
+
+
+
+$$
+FNR=\frac{|F⁢N|}{|T⁢P|+|F⁢N|}=1-Sensitivity,\in[0,1].
+$$
+
+
+
+$$
+FPR=\frac{|F⁢P|}{|F⁢P|+|T⁢N|}=1-Specificity,\in[0,1].
+$$
 
 The closer the values of Accuracy, True Positive Rate (i.e. TPR, Sensitivity) and True Negative Rate (i.e. TNR, Specificity) are to 1.0, then the better the classification performance of a system.
 
-The Receiver Operating Characteristic (ROC) is an effective measure for evaluating the quality of a prediction model’s performance. The ROC curve has an optimal ROC point which comprises two values: the False Positive Rate (FPR) and the True Positive Rate (TPR) values. The optimal ROC point is computed by function (Equation 7) for finding the slope, S.(7)S=C⁢o⁢s⁢t⁢(P|N)-C⁢o⁢s⁢t⁢(N|N)C⁢o⁢s⁢t⁢(N|P)-C⁢o⁢s⁢t⁢(P|P)×NP,where C⁢o⁢s⁢t⁢(N|P) is the cost of misclassifying a positive class (i.e. cancer) as a negative class (i.e. benign); C⁢o⁢s⁢t⁢(P|N) is the cost of misclassifying a negative class, as a positive class; P, and N, are the total instance counts in the cancer and benign class, respectively. The optimal ROC point is identified by moving the straight line with slope S from the upper left corner of the ROC plot (F⁢P⁢R=0, T⁢P⁢R=1) down and to the right, until it intersects the ROC curve.
+The Receiver Operating Characteristic (ROC) is an effective measure for evaluating the quality of a prediction model’s performance. The ROC curve has an optimal ROC point which comprises two values: the False Positive Rate (FPR) and the True Positive Rate (TPR) values. The optimal ROC point is computed by function (Equation 7) for finding the slope, $S$.
+
+$$
+S=\frac{C⁢o⁢s⁢t⁢(P|N)-C⁢o⁢s⁢t⁢(N|N)}{C⁢o⁢s⁢t⁢(N|P)-C⁢o⁢s⁢t⁢(P|P)}\times\frac{N}{P},
+$$
+
+where $C⁢o⁢s⁢t⁢(N|P)$ is the cost of misclassifying a positive class (i.e. cancer) as a negative class (i.e. benign); $C⁢o⁢s⁢t⁢(P|N)$ is the cost of misclassifying a negative class, as a positive class; $P$, and $N$, are the total instance counts in the cancer and benign class, respectively. The optimal ROC point is identified by moving the straight line with slope $S$ from the upper left corner of the ROC plot ($F⁢P⁢R=0$, $T⁢P⁢R=1$) down and to the right, until it intersects the ROC curve.
 
 The Area Under the ROC Curve (AUC) is another important performance evaluation metric which reflects the capacity of a model capacity to discriminate between the data obtained from individuals with benign disease and patients with cancer. The larger the AUC, the better the overall capacity of the classification system to correctly identify benign disease and cancer.
 

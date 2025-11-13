@@ -41,11 +41,88 @@ A total of 499 single neurons were recorded by single tungsten microelectrode in
 
 **Figure 2.:** (A) Sagittal and coronal planes in one animal (monkey Q), with green shaded areas indicating PCC and red shaded areas indicating RSC. Electrode penetration is indicated by the dark shaded lines. (B–C). Recording sites are reconstructed and superimposed onto one plane in each of the three animals. RSC, retrosplenial cortex; PCC, posterior cingulate cortex; cs, central sulcus; ips, intraparietal sulcus; ls, lateral sulcus; lv, lateral ventricle.
 
-## General temporal and spatial modulation properties of vestibular signals
+### General temporal and spatial modulation properties of vestibular signals
 
 Many neurons in the posterior cingulate region particularly in PCC carried robust vestibular signals yet with heterogeneous temporal and spatial modulation. Figure 3 showed peristimulus time histograms (PSTHs) from two example PCC neurons under the translation condition. For the first example neuron (Figure 3A, upper panels), there were clear activities in response to rightward and upward motion stimuli under the translation condition, with response envelope close to the Gaussian velocity profile, indicating a strong velocity signal. In addition, directions with maximal firing were unvaried across stimulus duration (Figure 3A, lower panels). By contrast, the second example neuron as shown in Figure 3B exhibited strong peak-to-trough modulation under the translation condition, resembling the biphasic acceleration profile. This type of neurons contained strong acceleration-component signals. Unlike the first example neuron, the maximal firing directions of the second neuron varies across stimulus duration (Figure 3B, lower panels). The two example neurons also exhibited robust activities under the rotation contion (Figure 3—figure supplement 1). In RSC, we also found a population of neurons carried significant vestibular modulation, albeit less reliable compared to those in PCC. In Figure 3—figure supplement 2, the example RSC neurons showed some temporal modulations under both translation and rotation conditions, but the spatial tunings were not truly clear.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig3-v1.jpg)
+
+**Figure 3.:** (A) Upper panels: PSTHs of an example PCC velocity-dominant neuron across 26 directions under the translation condition. The red dashed lines indicate the velocity peak time of velocity profile and the two blue dashed lines indicate the peak time of acceleration peak and trough. Bottom panels: Contour figures show firing rates as a function of azimuth and elevation at three different time points (velocity peak time, acceleration peak and trough, respectively). (B) Upper panels: PSTHs of an example acceleration-d neuron under the translation condition. Bottom panels: Contour figures of this neuron.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Upper panels: PSTHs of the velocity-dominant neuron across 26 directions. The red dashed lines indicate the velocity peak time of velocity profile and the two blue dashed lines indicate the peak time of acceleration peak and trough. Bottom panels: Contour figures show firing rates as a function of azimuth and elevation at three different time points (velocity peak time, acceleration peak and trough, respectively). (B) PSTHs and contour figures of the acceleration-dominant neuron.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Upper panels: PSTHs of an example neuron across 26 directions under translation condition. The red dashed lines indicate the velocity peak time of velocity profile and the two blue dashed lines indicate the peak time of acceleration peak and trough. Bottom panels: Contour figures show firing rates as a function of azimuth and elevation at three different time points (velocity peak time, acceleration peak and trough, respectively). (B) PSTHs and contour figures of another example neuron under rotation condition.
+
 To quantify the strength of vestibular temporal and spatial modulations in each area, we conducted our analyses based on the averaged PSTHs across trials in each translation direction or rotation axis. We first used a criterion of temporal tuning (Chen et al., 2010) to assess proportion of neurons significantly modulated by the vestibular stimuli in each area (see more detail in Materials and methods). According to this criterion, in PCC, 68% (252/372) cells were significantly modulated by inertial motion under translation condition, whereas 59% (161/271) cells were significantly modulated under the rotation condition (Figure 4A, pie graph and Table 1). About half of the neurons (50%, 131/263) were significantly modulated by both translation and rotation stimuli, indicating that quite a large proportion of PCC neurons received inputs from otolith and semicircular canals at the same time. Compared to PCC, fewer RSC neurons were significantly modulated under translation (32%, 37/114) and rotation (29%, 25/87) conditions (Figure 4A, pie graph). Only 17% (14/83) RSC neurons responded to both translation and rotation stimuli. Thus, more PCC neurons (~2/3) than RSC neurons (~1/3) are temporally modulated by inertial motion stimuli.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig4-v1.jpg)
+
+**Figure 4.:** (A). Proportion of neurons in each category. (B) DDI distribution of neurons with significant temporal tuning. Filled bars indicate neurons with significant spatial tuning. (C) Distribution of preferred directions for neurons with significant spatial tuning. Dark blue symbol: translation condition; Light blue symbol: rotation condition.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A). Proportion of neurons in each category. (B) DDI distribution of neurons with significant temporal tuning. Filled bars indicate neurons with significant spatial tuning. (C) Distribution of preferred directions for neurons with significant spatial tuning. Dark blue symbol: translation condition; Light blue symbol: rotation condition. Note that RSC neurons were not recorded form monkey P.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A). Proportion of neurons in each category. (B) DDI distribution of neurons with significant temporal tuning. Filled bars indicate neurons with significant spatial tuning. (C) Distribution of preferred directions for neurons with significant spatial tuning. Dark blue symbol: translation condition; Light blue symbol: rotation condition.
+
+**Table 1.**
+ Temporal and spatial tuning properties across subregions of posterior cingulate area under different conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Subregion</th>
+      <th rowspan="2">Conditions</th>
+      <th colspan="2">Vestibular</th>
+      <th colspan="2">Visual</th>
+    </tr>
+    <tr>
+      <th>Temporally tuned</th>
+      <th>Spatially tuned</th>
+      <th>Temporally tuned</th>
+      <th>Spatially tuned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">PCC</td>
+      <td>Translation</td>
+      <td>252/372 (68%)</td>
+      <td>189/252 (75%)</td>
+      <td>114/367 (31%)</td>
+      <td>41/114 (36%)</td>
+    </tr>
+    <tr>
+      <td>Rotation</td>
+      <td>161/271 (59%)</td>
+      <td>124/161 (77%)</td>
+      <td>84/260 (32%)</td>
+      <td>20/84 (24%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">RSC</td>
+      <td>Translation</td>
+      <td>37/114 (32%)</td>
+      <td>5/37 (14%)</td>
+      <td>13/114 (11%)</td>
+      <td>0/13 (0%)</td>
+    </tr>
+    <tr>
+      <td>Rotation</td>
+      <td>25/87 (29%)</td>
+      <td>9/25 (36%)</td>
+      <td>12/87 (14%)</td>
+      <td>1/12 (1%)</td>
+    </tr>
+  </tbody>
+</table>
 
 We considered these neurons with significant temporal modulations as vestibular tuned cells, and further assessed their spatial tuning across all 26 motion vectors by statistics of one-way ANOVA (see Materials and methods). We found in PCC, a large proportion of neurons showed significant direction tuning (p<0.01, one-way ANOVA) under translational condition (75%, 189/252) and under rotation condition (77%, 124/161, Figure 4A, bar graph). Around 71% (93/131) neurons were spatially tuned under both translation and rotation conditions. However, in RSC, only 14% (5/37) and 36% (9/25) neurons were spatially tuned to translation and rotation stimuli, respectively (Figure 4A, bar graph). And only 21% (3/14) neurons had significant spatial tuning in both translation and rotation conditions.
 
@@ -55,7 +132,7 @@ For neurons with significant spatial tuning, we also investigated their preferre
 
 Finally, we examined data and did not find any significant difference among individual animals and hemispheres (Figure 4—figure supplement 1, Figure 4—figure supplement 2).
 
-## Dark and sound control
+### Dark and sound control
 
 To further confirm that the observed vestibular responses in the posterior cingulate region indeed originated from otolith and canals instead of from other cues, we conducted two control experiments.
 
@@ -71,19 +148,63 @@ We analyzed data based on a population of neurons that were tested under both fi
 
 **Figure 6.:** (A–C) Pearson correlation coefficient of PSTHs (A), DDI (B), maximum firing rate (C) between regular vestibular and total darkness conditions. Filled symbols indicate neurons with significant spatial tuning, whereas open symbols indicate neurons without significant spatial tuning in either stimuli condition. Dark blue symbol: translation condition; Light blue symbol: rotation condition. (D–E) Pearson correlation coefficient of PSTHs (D), DDI (E), maximum firing rate (F) between regular vestibular and sound control condition.
 
+**Table 2.**
+ Temporal and spatial tuning properties under total darkness and sound control experiments.Note in the sound control conditions, there is no neuron with significant temporal tuning, so we did not calculate the spatial tuning properties.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Conditions</th>
+      <th colspan="2">Dark control</th>
+      <th colspan="2">Sound control</th>
+    </tr>
+    <tr>
+      <th>Temporally tuned</th>
+      <th>Spatially tuned</th>
+      <th>Temporally tuned</th>
+      <th>Spatially tuned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Translation</td>
+      <td>42/49 (86%)</td>
+      <td>34/43 (79%)</td>
+      <td>0/10 (0%)</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Rotation</td>
+      <td>16/18 (89%)</td>
+      <td>15/16 (94%)</td>
+      <td>0/1 (0%)</td>
+      <td>/</td>
+    </tr>
+  </tbody>
+</table>
+
 The second control experiment was a sound condition, aiming to exclude the possibility that the observed responses under the vestibular condition was from sound generated from motion platforms during mechanical motion. To do this, we recorded the sounds when the motion platform moved in the vestibular condition, and delivered them from one loudspeaker to the animals when motion platform was stationary in the sound control experiment. As shown by the example neuron in Figure 5C, PSTHs in sound condition were dramatically changed, generating a null-modulation pattern that was totally unlike that in the fixation condition (r = −0.07, p=0.0002, Pearson’s correlation).
 
 We tested 11 neurons in total. None of these neurons exhibited significant temporal tuning in the sound control experiment (p>0.01, one-way ANOVA, and see Table 2 for details), and all neurons showed quite weak correlation with the PSTHs in the vestibular condition (Figure 6D). Moreover, neither DDI nor Maximal firing rate were close in the fixation and sound tasks (Figure 6E,F).
 
 Thus, we exclude the possibility that the vestibular responses observed in the posterior cingulate region are visual responses due to residual retinal slip. We also largely exclude the possibility from an auditory cue, yet a more thorough investigation covering more factors, such as spatial location, binaural effect, loudness of these cues should be conducted in future studies.
 
-## Fitting neural dynamics by a 3D spatiotemporal model
+### Fitting neural dynamics by a 3D spatiotemporal model
 
 The aforementioned traditional analyses revealed that there were robust vestibular signals in the posterior cingulate sulcus particularly in PCC. These vestibular-tuned cells typically carried complex temporal dynamics that contained both velocity and acceleration components. To further characterize the temporal and spatial tuning properties for different signal components, we fitted responses (PSTHs) of each neuron with a 3D spatiotemporal dynamic model. Note that we only considered neurons with significant temporal tuning, thus for PCC, 252 neurons under translational motion and 161 neurons under rotational motion were included. For RSC, only 37 neurons for translation and 25 neurons for rotation were included in this analysis.
 
 The spatiotemporal model was a linear weighted sum of temporal functions with different signal components, with each component multiplied by a spatial function (see Materials and methods and Figure 7—figure supplement 1 for details). We first considered a simpler model by including two most salient components of the velocity and acceleration (‘VA’ model) that were frequently observed in many neurons. A more complex model including more terms would be further illustrated in the next section. Specifically, in the VA model, the velocity temporal kernel was defined by a Gaussian function and the acceleration temporal kernel was the derivative of the velocity function. For the spatial term, it was modeled as a cosine function fed through a linear function that was depended on parameters of preferred azimuth and preferred elevation (see Materials and methods).
 
 Figure 7 showed PSTHs from two example neurons fitted with VA model. The first neuron (Figure 7A) was the same velocity-dominant unit as in Figure 3A. This neuron was fitted well by the VA model (R2 = 0.88), as evident by the large overlap between the fitted curve and the responses. Moreover, the fitted weight of the velocity term was much larger than that of the acceleration (wV = 0.75 versus wA = 0.25), indicating a velocity domination signal. As a comparison, the second example neuron (Figure 7B) which was the same acceleration-dominant unit as in Figure 3B, was also fitted well by the VA model (R2 = 0.65), yet the weight of acceleration component was much larger than that of the velocity (wV = 0.24 versus wA = 0.76), indicating a greater contribution of the acceleration signal.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig7-v1.jpg)
+
+**Figure 7.:** (A–B) Upper panels: PSTHs of two example cells fitted by VA model. Gray areas are PSTHs and superimposed black lines are fitted data. Red dashed lines: peak time of velocity; Blue dashed lines: peak and trough time of acceleration. The fitted weight of velocity and acceleration are shown in the gray box. These two examples are the same neurons shown in Figure 3. Lower panels: Contour figures of spatial kernels of the velocity and acceleration components.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The full PVAJ model contains four different components, velocity, acceleration, jerk and position, which are summed linearly by their corresponding weights, with their own temporal kernel and spatial kernel. The spatial kernel is cosine function fed through a linear function that was depended on parameters of preferred azimuth and preferred elevation.
 
 Across population, we first assessed the goodness of fit by VA model through calculating coefficient of determination between the fitted and measured response (R2). The distributions of R2 in PCC and RSC under translational and rotational conditions were shown in Figure 8A. Overall, PCC responses were well fitted by VA model in both conditions, with median R2 value of 0.49 for translation and 0.42 for rotation. The overall response delay (τ) was around 0 ms. However, fitting in RSC was worse (p<<0.001 in both translation and rotation, t-test), with only four neurons and one showing R2 value greater than 0.5 under translational and rotation condition, respectively. This result was roughly matched with a lack of clear velocity or acceleration signals inspected by eyeballing from the PSTHs of RSC neurons. Thus, in the following analysis, we only included PCC data.
 
@@ -95,7 +216,7 @@ We then characterized contributions of the velocity and acceleration quantity fo
 
 We further analyzed spatial tuning for each temporal component. In particular, preferred direction for each component was defined based on the spatial kernel (Figure 7—figure supplement 1). For example, both units as shown in Figure 7 exhibited similar preferred directions between the velocity and acceleration components (Figure 7A&B, lower panels). However, this was not the case across population, similar to that found previously in other brain regions (Laurens et al., 2017).
 
-## Jerk and position signals
+### Jerk and position signals
 
 In addition to velocity and acceleration components, we also noticed some other temporal signals that were missed in the VA model. In one of these, the jerk signal is the derivative of acceleration and defines smoothness of the accelerated motion of the head or whole body in the environment. Previous psychophysical and neurophysiological studies have indicated that such a signal was present in the vestibular afferents (Fernández and Goldberg, 1976) and used by subjects to help detect strength of self-motion (Benson et al., 1986; Grant and Haycock, 2008). The other is the position signal, resulted from the integral of the velocity signal and defines the travelled distance, or rotated head direction, which is critical for path integration (Etienne and Jeffery, 2004). Thus, we further fitted neural responses with a more complicated 3D spatiotemporal model including two additional terms of jerk and position based on the previous VA model. The new full model contained four signal components in total (i.e. position, velocity, acceleration, jerk, so-called ‘PVAJ’ model), with each component having its own temporal and spatial kernel (Figure 7—figure supplement 1). For example, Figure 9 showed PSTHs from two example neurons fitted by the full PVAJ model. The fitted weight of the first unit (Figure 9A, upper panels) was wV = 0.24, wA = 0.22, wJ = 0.42 and wP = 0.13, among which the weight of jerk was largest. The second unit (Figure 9B, upper panels) instead presented a larger weight of position signal: wV = 0.08, wA = 0.32, wJ = 0.17 and wP = 0.43.
 
@@ -107,13 +228,13 @@ These two example units presented better goodness of fit (R2) of the full PVAJ m
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig10-v1.jpg)
 
-**Figure 10.:** (A) Goodness of fit (R) from the PVAJ model assessed by Pearson correlation between the experimental and fitted data. Triangles: median value. (2B) Distribution of partial correlation coefficient between neuronal response and the fitted data of each temporal component in the full model. Filled bar indicates significance with p<0.05. (C) Comparison of BIC between VA model and PVAJ model. The large blue circles indicate mean value that are superimposed on individual values (small circles). (D) Cumulative distributions of the weight of different signal components. Only data with R2 >0.5 were included.
+**Figure 10.:** (A) Goodness of fit (R2) from the PVAJ model assessed by Pearson correlation between the experimental and fitted data. Triangles: median value. (B) Distribution of partial correlation coefficient between neuronal response and the fitted data of each temporal component in the full model. Filled bar indicates significance with p<0.05. (C) Comparison of BIC between VA model and PVAJ model. The large blue circles indicate mean value that are superimposed on individual values (small circles). (D) Cumulative distributions of the weight of different signal components. Only data with R2 >0.5 were included.
 
 To confirm that the two additional terms of jerk and position quantity really contribute to the neuronal response, we performed two analyses. In the first way, we calculated partial correlation coefficient between neuronal responses (PSTHs) and the fitted data of each temporal component. As shown in Figure 10B, majority of neurons exhibited significant and positive partial correlations for all temporal components (p<0.05, Partial correlation). The average partial coefficients were varied, but comparable across different temporal components, suggesting that the full model captured more variance in the data. In the second way, we addressed the issue from the perspective that any models containing more free parameters would theoretically lead to better fit compared to models with fewer parameters. So we applied Bayesian Information Criterion (BIC) analysis to calibrate this parameter-size effect. As shown in Figure 10C, after removing the effect of the number of free parameters, BIC value of PVAJ model was still significantly smaller than that of VA model, confirming that including the jerk and position terms did capture more signals embedded in PCC neurons (p<<0.001, Paired t-test).
 
 After confirming significant contributions from all four temporal components, we further investigated the relative contribution of each signal captured by the full model. Specifically, proportion of neurons was plotted as a function of each weight value only for those neurons with better goodness of fit (R2 >0.5, Figure 10D). This criterion removed a small proportion of units with unreliable model fits and still reserved a large dataset (translation: n = 217; rotation: n = 130) for the analysis. In particular, the velocity was still more dominant in the rotation condition compared to the other signals which was consistent with that in the VA model (red curves in Figure 10D). Acceleration and jerk signals weighed more in the translation condition compared to those in the rotation condition (blue and orange curves respectively in Figure 10D). The position signal was less dominant compared to the others, particularly in the translation condition (green curves in Figure 10D). Similar to that in the VA model, all temporal components did not show consistent relationships among each other, suggesting that different type of signals may be inherited from different sources.
 
-## Comparison with extrastriate visual cortex
+### Comparison with extrastriate visual cortex
 
 Previous studies have discovered robust vestibular self-motion signals in other cortical areas (Cheng and Gu, 2018; Gu, 2018). One of these areas that has received heavy studies is the dorsal portion of the medial superior temporal sulcus (MSTd) in the dorsal visual pathway (Duffy and Wurtz, 1997; Bremmer et al., 1999; Page and Duffy, 2003; Gu et al., 2006). Population analysis has indicated that MSTd neurons contain robust vestibular signals with velocity-dominant component under translation conditions (Gu et al., 2006; Laurens et al., 2017). To quantitatively compare temporal dynamics in MSTd with that in the posterior cingulate region, here we used the same spatiotemporal model, including both VA and PVAJ models to fit MSTd responses.
 
@@ -121,13 +242,25 @@ Neural data was fitted quite well by the two spatiotemporal models in MSTd (Figu
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig11-v1.jpg)
 
-**Figure 11.:** (A) Distribution of goodness of fit (R). Triangles: medians. (2B) Left column: difference in the BIC (Bayesian Information Criterion) between the two models (BDI, BIC difference index, see Materials and methods). Five cases in PCC with BDI larger than two were cut off at two for sake of illustration. Right column: Comparison of the BDI between PCC and MSTd. Bars are the mean value and the error bars are s.e.m. ***: p=0.00034. (C) Cumulative distributions of the weight of signal component. Only data with R2 >0.5 were included.
+**Figure 11.:** (A) Distribution of goodness of fit (R2). Triangles: medians. (B) Left column: difference in the BIC (Bayesian Information Criterion) between the two models (BDI, BIC difference index, see Materials and methods). Five cases in PCC with BDI larger than two were cut off at two for sake of illustration. Right column: Comparison of the BDI between PCC and MSTd. Bars are the mean value and the error bars are s.e.m. ***: p=0.00034. (C) Cumulative distributions of the weight of signal component. Only data with R2 >0.5 were included.
 
-## Visual signals in posterior cingulate region
+### Visual signals in posterior cingulate region
 
 Self-motion in the environment evokes visual stimuli such as optic flow or array which contains rich information about heading direction or travel distance during spatial navigation (Gibson, 1950; Frenz and Lappe, 2005; Frenz et al., 2007; Britten, 2008). In addition to inertial motion, here we also measured neural activities in response to optic flow under the translation and rotation conditions on a large proportion of posterior cingulate cortical neurons (PCC: translation: n = 367; rotation: n = 260; RSC: translation: n = 114; rotation: n = 87). In particular, to simulate real motion, optic flow stimuli containing identical motion profiles as used in the vestibular-only condition were provided to the animals (Gu et al., 2006; Takahashi et al., 2007). Note that the motion platform was always stationary under this condition so that all the motion information could only be acquired from the visual signals.
 
 Surprisingly, we found that visual self-motion signals were much weaker compared to the vestibular signals in either region (Figure 12A and Table 1). In PCC, only one third showed significant temporal modulations to optic flow (Translation: 31%, 114/367; Rotation: 32%, 84/260). Furthermore, among those cells with significant temporal modulations, only one third units showed significant (p<0.01, one-way ANOVA) spatial modulations (Translation: 36%, 41/114; Rotation: 24%, 20/84). In RSC, visual responses were even negligible. Only about one tenth neurons exhibited significant temporal modulations (Translation: 11%, 13/114; Rotation: 14%, 12/87), among which almost no units presented significant (p<0.01, one-way ANOVA) spatial modulations (Translation: n = 0; Rotation: n = 1). Thus, across all the cells recorded with an unbiased sampling (see Materials and methods), the proportion of neurons showing significant spatiotemporal modulations in response to visual heading stimuli was fairly small (~10% in PCC, and ~0% in RSC).
+
+![Figure 12.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig12-v1.jpg)
+
+**Figure 12.:** (A) Proportion of temporal and spatial tuning in PCC and RSC. (B) Distributions of DDI. (C) Preferred direction. Symbol representations are same as in Figure 4.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** (A) Proportion of neurons in each category. (B) DDI distribution of neurons with significant temporal tuning. Filled bars indicate neurons with significant spatial tuning. (C) Distribution of preferred directions for neurons with significant spatial tuning. Dark red symbol: translation condition; Light red symbol: rotation condition. Note that RSC neurons were not recorded form monkey P, and there is no significant spatially tunned PCC neuron in monkey W in translation condition and RSC neuron in monkey Q in rotation condition.
+
+![Figure 12—figure supplement 2.](https://cdn.elifesciences.org/articles/64569/elife-64569-fig12-figsupp2-v1.jpg)
+
+**Figure 12—figure supplement 2.:** (A). Proportion of neurons in each category. (B) DDI distribution of neurons with significant temporal tuning. Filled bars indicate neurons with significant spatial tuning. (C) Distribution of preferred directions for neurons with significant spatial tuning. Dark red symbol: translation condition; Light red symbol: rotation condition. Note that there is no significant spatially tunned RSC neuron in left hemispheres in rotation condition.
 
 We also calculated DDI for the posterior cingulate cortical neurons to assess their visual tuning strength (Figure 12B). It turned out that the average DDI was much weaker compared to the vestibular DDI in PCC (p<<0.001, t-test), as well as compared to the visual tuning in the extrastriate visual cortex (e.g. MSTd, Gu et al., 2006; Takahashi et al., 2007). Hence, visual self-motion signals are overall weak in the posterior cingulate region including both PCC and RSC subregions. Similar to the vestibular signals, visual signals also did not show any significant difference across animals or hemispheres (Figure 12—figure supplement 1, Figure 12—figure supplement 2).
 
@@ -135,13 +268,13 @@ We also calculated DDI for the posterior cingulate cortical neurons to assess th
 
 Numerous studies have indicated that the posterior part of cingulate cortex is involved in many complex behavioral contexts, yet in these studies top-down signals such as attention, anticipation, memory and reward are often mixed with bottom-up sensory driven signals which are difficult to be disentangled from each other. In our current study, by recording spiking activities from these areas in macaques during passive physical motions, we provided solid evidence showing that majority of PCC neurons (~2/3), and a modest proportion (~1/3) of RSC neurons carry robust vestibular linear translation and rotation signals originated from otolith organs and semicircular canals, respectively. A combined 3D spatiotemporal model captured PCC data well and revealed multiple temporal components that could be useful for estimation of instantaneous heading direction or head direction. These properties are consistent with the view that posterior cingulate region may serve as an important hub mediating self-motion related signals propagated from parietal-temporal lobes to hippocampal system for path integration during vector-based spatial navigation (Rushworth et al., 2006; Vincent et al., 2010; Kravitz et al., 2011). Surprisingly though, the same region does not appear to carry robust visual self-motion signals such as optic flow or grating, indicating that posterior cingulate cortex is a vestibular dominant region.
 
-## Comparison with previous studies
+### Comparison with previous studies
 
 Vestibular signals in the posterior region of cingulate cortex have been indicated in previous studies using functional magnetic resonance imaging (fMRI) techniques. For example, Smith et al., 2012 reported clear vestibular signals in a homologues area (cingulate sulcus visual area, CSv) in the human brain. Other researchers using similar techniques also observed similar activity in similar areas (Bense et al., 2001; Shinder and Taube, 2010). In these imaging studies, vestibular stimuli were typically provided through caloric or galvanic stimulations due to restraint of head positions during scanning. To achieve more real inertial motion stimuli, Schindler and Bartels, 2018 adopted a clever method by physically rotating the head of human subjects in the scanner, and measured the blood oxygen level dependent (BOLD) signal immediately after termination of head motion. While these imaging studies provide valuable information of identified vestibular-related signals across the whole brain, there are limitations. In particular, caloric or galvanic stimulation techniques can only activate the vestibular system in a general way (Suzuki et al., 2001; Fitzpatrick and Day, 2004; Utz et al., 2010), instead of being able to simulate real and accurate self-motion including translation along certain directions or rotation around specific axis in 3D environment. Moreover, vestibular signals typically carry complex temporal dynamics (i.e. in milliseconds) that cannot be easily captured by BOLD signals with a relatively slow temporal resolution (i.e. in seconds). Thus, it is important to further conduct studies using single-unit recording techniques to acquire neurophysiological data with much higher spatial and temporal resolutions. In general, we found robust vestibular signals in similar regions as indicated in previous imaging studies (yet with more spatiotemporal information as discussed in the following sections), confirming a rough consistency between spiking activity from single neurons with BOLD signals (Berens et al., 2010).
 
 However, Smith and colleagues also reported robust visual signals in human cingulate sulcus (Wall and Smith, 2008; Fischer et al., 2012), as well as in macaque PCC (Cottereau et al., 2017). By contrast, we discovered much weaker visual responses using global optic flow or grating. Our results seem to be more consistent with another study, in which BOLD signals were suppressed in response to random motion and static visual stimuli (Pitzalis et al., 2013). The inconsistency of visual responses reported across studies may be due to different stimuli used in each experiment. For example, researchers observed visual activity in the posterior region of cingulate cortex when complex optic flow patterns were dynamically changing over time (e.g. switching back and forth between expansion and rotation) (Wall and Smith, 2008; Cottereau et al., 2017). These activities were basically gone when patterns of optic flow became consistent and stable (Smith et al., 2017). It is possible that the posterior cingulate region is more involved in more complex environment when visual stimuli are ever-changing. Other possibilities include specific parameters in the stimuli, for example, the range of temporal frequency of visual stimulus which have been limited in our experiments (see Materials and methods). More types of stimuli and temporal frequencies should be used to test this hypothesis in future experiments.
 
-## Functional implications of vestibular signals in PCC
+### Functional implications of vestibular signals in PCC
 
 Direct inputs of vestibular signals to PCC originate from a number of sources, including the thalamus (Shinder and Taube, 2010), the parietal insular vestibular cortex (PIVC) (Guldin and Grüsser, 1998), and the parietal-temporal cortices (Pandya et al., 1981; Vogt et al., 1987; Musil and Olson, 1988; Cavada and Goldman-Rakic, 1989; Olson and Musil, 1992; Akbarian et al., 1994; Shinder and Taube, 2010). Previous studies have demonstrated that vestibular signals with diverse temporal and spatial modulations are ubiquitously distributed across many areas, pointing out a vestibular network in sensory cortices (Guldin and Grüsser, 1998; Laurens et al., 2017; Cheng and Gu, 2018; Gu, 2018).
 
@@ -153,7 +286,7 @@ As to the outputs of PCC, it also directly sends signals back to the vestibular 
 
 Among the brain limbic system, PCC is the one that has been less studied and its exact functions to date remain unclear and debatable compared to the other parts, for example, its counterpart at the anterior cingulate cortex (ACC), an area of which is identified to be involved in emotion processing (Vogt and Gabriel, 1993). Both anterior and posterior parts of cingulate cortex are heavily connected with each other. PCC is also reciprocally connected with PIVC that in turn receives projections from the viscera system through the solitary tract and the parabrachial complex (Vogt, 2019). Electrical stimulation in PIVC evokes unpleasant emotions including vomiting, nausea, dizziness, and pain (Penfield and Faulk, 1955; Penfield, 1957; Mazzola et al., 2012). Thus, vestibular signals in PCC may also be related to emotion, which requires further investigations in the future. In addition, PCC has been indicated to play roles in many other cognitive functions including default mode network (DMN), visual spatial map, action, learning, spatial memory, decisions (see reviews and books by Vogt et al., 1992; Vogt and Gabriel, 1993; Vogt and Laureys, 2005; Fransson and Marrelec, 2008; Leech and Sharp, 2014). For example, in a recent study, Gold and his colleagues reported that PCC neurons contain spatial choice and reward-target signals in a complex, adaptive task (Li et al., 2019). Future studies need to be conducted for investigation of how vestibular signals in PCC are involved in these functions.
 
-## Self-motion signals in macaque RSC
+### Self-motion signals in macaque RSC
 
 Similar to PCC, RSC has also been indicated to be involved in spatial navigation tasks albeit mainly in human and rodent studies (Cooper et al., 2001; Maguire, 2001; Spiers and Maguire, 2007; Vann et al., 2009; Clark et al., 2010; Cullen and Taube, 2017). Vestibular yaw-rotation signals have been observed in mice RSC (Keshavarzi et al., 2021), as well as primary visual cortex (V1) which may originate directly from RSC as revealed by tracing and functional mapping (Vélez-Fort et al., 2018). At the same time, mice RSC also receives heavy inputs from V1 as well as other sensory information related with spatial perception, suggesting RSC is a multisensory area albeit biased toward visual (Zingg et al., 2014). Recently, Powell and colleagues also reported visual responses modulated by grating stimuli in mice RSC (Powell et al., 2020). By contrast, although we discovered that about one-third RSC neurons in macaques exhibited significant temporal modulations to physical translation or rotation stimuli, visual modulations overall by optic flow appeared to be fairly weak in this area (Figure 12B). To verify that we have not missed other visual motion signals, we also introduced the visual gratings stimuli. Similar to optic flow, the responses to grating stimuli is also quite weak in this region (data not shown). A number of factors may lead to heterogeneous results across studies.
 
@@ -163,7 +296,7 @@ Compared to PCC, we discovered that vestibular signals overall are less clear in
 
 ## Materials and methods
 
-## Subjects and system set-up
+### Subjects and system set-up
 
 We performed the experiments on three male monkeys (Macaca mulatta), weighted 8–12 kg (monkey Q, P, and W). The monkeys were chronically implanted with a circular molded lightweight plastic ring above cranium for head fixation and recording, and scleral coils for monitoring eye movements in real time inside a magnetic field with phase detector (Riverbend instrument).
 
@@ -171,7 +304,7 @@ During behavior training and neural recording, monkeys were comfortably seated i
 
 After monkeys were well-trained to the tasks, a recording grid was tightly settled inside the plastic ring horizontally. The grid contains small holes arranged in array with a diameter of 0.5 mm and the holes were apart from each other by 0.8 mm. With the help of the grid and figures from MRI, we can map the position of each site which we performed recording on. All animal procedures were approved by the Animal Care Committee of Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences and have been described previously in detail (Gu et al., 2006).
 
-## Experimental protocol
+### Experimental protocol
 
 During each task, there was a small fixation point (0.2°×0.2°) appeared at the center of the screen from the beginning and disappeared till the stimulus was vanished. The monkeys needed to saccade to the fixation point and maintain fixation for 200 ms to initiate the self-motion stimuli. The animals maintained fixation for the following 1.5 s within an electronic window (3°×3°) before the stimulus was removed. Monkeys were rewarded with juice at the end of trial if they completed the trial successfully, otherwise the trial would stop and the data were aborted.
 
@@ -187,24 +320,76 @@ While the animals were experienced self-motion stimuli, single-unit activity was
 
 After entering the targeted areas, single-unit extracellular recording was performed. Tungsten microelectrodes with impedance around 1 MΩ (FHC) were used. Data were recorded and single units were isolated using a multichannel recording system from Alpha Omega (Israel) and CED (Spike2).
 
-## Data analysis
+### Data analysis
 
-## Characterizing tuning properties
+#### Characterizing tuning properties
 
 Peristimulus time histograms (PSTHs) in each stimulus condition was constructed and illustrated with a 25 ms bin and was smoothed with a 300 ms Gaussian filter. To quantify whether a neuron was significantly modulated by the stimulus, a two-sided Wilcoxon rank sum test was used to compare responses during the 1.5 s stimulus duration with the spontaneous activity. The spontaneous activity was based on the time window of 100 ms before and 300 ms after stimulus onset. Responses in the 1.5 s stimulus duration was divided into 60 bins, each of which covered 300 ms and stepped at 25 ms. To avoid false positive results, a neuron was considered to have significant temporal tuning only when satisfying two strict criteria at the same time. First, at least five consecutive bins needed to show significant modulation (p<0.01, Wilcoxon rank sum test). Secondly, the first requirement needed to happen in at least two adjacent spatial directions (Chen et al., 2010).
 
 To quantify whether neurons were spatially tuned, we first calculated response in each 300 ms-bin and performed ANOVA analysis across 26 vectors (i.e. translation directions or rotation axes). Responses at a certain bin was considered to be significant when p value was smaller than 0.01. To identify the number of response peak across all bins, we performed an analysis as used in previous studies (Chen et al., 2010). Briefly, for all those bins with significant spatial tuning (p<0.01, one-way ANOVA), a local peak was temporarily assigned when it was higher than its neighboring bins. Across all these local peaks, a next step was performed to identify which of them were within one group, meaning one real peak, or were separated from each other, meaning multiple peaks (actually only two-peak cases were considered whereas tri-peak or higher were not considered because those peaks were usually small and unreliable according to experience). In particular for each pair of neighboring local peaks, Pearson correlation coefficient was measured between the two vectors composed of responses in the 26 directions at the local peak bins. Positive correlation led to conclusion that the compared local peaks belonged to the same one peak and negative correlation suggested that they belonged to different peaks. If there was only one real peak in the end, a neuron was defined as ‘single-peak’ cell, and if there were two peaks, it was defined as ‘double-peak’ neuron.
 
-To quantify the strength of direction tuning, we used a direction discrimination index (DDI) given by Takahashi et al., 2007, as follows:DDI=Rmax−RminRmax−Rmin+2SSEN−M,
+To quantify the strength of direction tuning, we used a direction discrimination index (DDI) given by Takahashi et al., 2007, as follows:
+
+$$
+DDI=\frac{R_{max}−R_{min}}{R_{max}−R_{min}+2\sqrt{\frac{SSE}{N−M}}},
+$$
 
 where Rmax and Rmin are the maximal and minimal responses respectively, SSE is the sum squared error around mean responses, N is the total number of observations (trials), and M is the number of stimulus directions (here, M = 26). Neurons with strong response modulations will have DDI values closer to 1, while neurons with weak response modulations will have DDI values closer to 0. To compute each neuron’s DDI, we first found the maximum response direction based on the full 1.5 s stimulus duration. In that direction, we then found the maximum response time bin in one of the 60 bins (300 ms window with a step of 25 ms), and assigned this bin as the Rmax. Using this time bin, Rmin was assigned for the minimum response bin across the other 25 directions. Permutation test was applied to assess significance of DDI.
 
 For neurons with significant spatial tuning, spatial preference of each unit was calculated from vector sum of responses in all directions, with azimuth and elevation as spherical coordinates. For single-peak neuron, preferred direction was calculated around the response peak time. For double-peak neuron, only the first peak time was used since responses at the first peak were generally larger than the second peak in the opposite directions (Chen et al., 2010).
 
-## The 3D spatiotemporal model
+#### The 3D spatiotemporal model
 
-A combined spatiotemporal model was constructed to fit PSTH data in 26 directions at the same time. The simplest form of this model is a linear combination of different temporal components. Each term is a multiplication of a spatial tuning kernel, ygθ,φ and a temporal response profile ft-τ:Responseθ,φ,t=A∙∑m=V,A,J,Pwm∙fmt-τ∙ymgmθ,φ+FR0+where A is the amplitude, FR0 is spontaneous firing rate (baseline) and wm is the corresponding weight of each component. The [] + means that any fitted firing rate less than 0 would be set to 0. For models with different components, ft-τ can be defined as following with τ representing the delay time for neural response:Acceleration:fa(t−τ)=(t−τ)σ2⋅e−(t−τ)22⋅σ2Velocity:fv(t−τ)=e−(t−τ)22⋅σ2Position:fp(t−τ)=∫−∞t e−(t−τ)22⋅σ2dtJerk:fj(t−τ)= −(t−τ)2−σ2σ4⋅e−(t−τ)22⋅σ2and in the spatial tuning component, gθ,φ is the cosine of the difference between each direction and the preferred direction, with θ and φ indicating the preferred azimuth and elevation. y(x) is a linear function that is typically used to describe non-cosine spatial tuning frequently seen in central vestibular neurons instead of the peripheral afferents (Angelaki and Dickman, 2000). It is given by Laurens et al., 2017:y(x)= o+(1−|o|)⋅x,where o is the offset parameter, ranging from −1 to 1, allowing the spatial tuning to vary in both amplitude and width.
+A combined spatiotemporal model was constructed to fit PSTH data in 26 directions at the same time. The simplest form of this model is a linear combination of different temporal components. Each term is a multiplication of a spatial tuning kernel, $yg\theta,\phi$ and a temporal response profile $ft-\tau$:
 
-To evaluate model fit quality, we use the Bayesian Information Criterion (BIC) (Schwarz, 1978) that could calibrate extra fitting benefit from additional free parameters included in the model. BIC is given by:BIC=n⋅ln⁡RSSn+p⋅ln⁡n,where RSS is the residual sum of squares, n is the number of data points and p is the number of free parameters.
+$$
+Response\theta,\phi,t=A∙\sum_{m=V,A,J,P}w_{m}∙f_{m}t-\tau∙y_{m}g_{m}\theta,\phi+FR_{0}+
+$$
 
-To compare with other brain areas, we defined an index called the BIC difference index (BDI):BDI= BICVA model−BICPVAJ model|BICPVAJ model|,the data was fitted better by VA model if the BDI value is less than 0, and vice versa for the PVAJ model if the BDI value is greater than 0.
+where A is the amplitude, FR0 is spontaneous firing rate (baseline) and $w_{m}$ is the corresponding weight of each component. The [] + means that any fitted firing rate less than 0 would be set to 0. For models with different components, $ft-\tau$ can be defined as following with $\tau$ representing the delay time for neural response:
+
+$$
+Acceleration:f_{a}(t−\tau)=\frac{(t−\tau)}{\sigma^{2}}⋅e^{−\frac{(t−\tau)^{2}}{2⋅\sigma^{2}}}
+$$
+
+
+
+$$
+Velocity:f_{v}(t−\tau)=e^{−\frac{(t−\tau)^{2}}{2⋅\sigma^{2}}}
+$$
+
+
+
+$$
+Position:f_{p}(t−\tau)=\int_{−∞}^{t} e^{−\frac{(t−\tau)^{2}}{2⋅\sigma^{2}}}dt
+$$
+
+
+
+$$
+Jerk:f_{j}(t−\tau)= −\frac{(t−\tau)^{2}−\sigma^{2}}{\sigma^{4}}⋅e^{−\frac{(t−\tau)^{2}}{2⋅\sigma^{2}}}
+$$
+
+and in the spatial tuning component, $g\theta,\phi$ is the cosine of the difference between each direction and the preferred direction, with $\theta$ and $\phi$ indicating the preferred azimuth and elevation. y(x) is a linear function that is typically used to describe non-cosine spatial tuning frequently seen in central vestibular neurons instead of the peripheral afferents (Angelaki and Dickman, 2000). It is given by Laurens et al., 2017:
+
+$$
+y(x)= o+(1−|o|)⋅x,
+$$
+
+where o is the offset parameter, ranging from −1 to 1, allowing the spatial tuning to vary in both amplitude and width.
+
+To evaluate model fit quality, we use the Bayesian Information Criterion (BIC) (Schwarz, 1978) that could calibrate extra fitting benefit from additional free parameters included in the model. BIC is given by:
+
+$$
+BIC=n⋅ln⁡\frac{RSS}{n}+p⋅ln⁡n,
+$$
+
+where RSS is the residual sum of squares, n is the number of data points and p is the number of free parameters.
+
+To compare with other brain areas, we defined an index called the BIC difference index (BDI):
+
+$$
+BDI= \frac{BIC_{VA model}−BIC_{PVAJ model}}{|BIC_{PVAJ model}|},
+$$
+
+the data was fitted better by VA model if the BDI value is less than 0, and vice versa for the PVAJ model if the BDI value is greater than 0.

@@ -33,11 +33,9 @@ Suggestions:
 
 a) It would be helpful to show a detailed comparison of the previous XFEL data with the current data. For example, what is the correlation of intensities between previous and current processed data, and what is the I/σ vs. resolution for each, after selecting the data that are in common between the two?
 
-Comparison of the originally-processed (“old”) and re-processed (“new”) XFEL datasets using the reflections in common shows a significant drop in correlation after ~4.3 Å (Author response image 1). These results suggest that the improved XFEL diffraction data processing techniques reported here most strongly affected the high-resolution diffraction data.10.7554/eLife.18740.017Author response image 1.Statistical analysis of XFEL diffraction dataset reprocessing.Correlation coefficients (red line) and R-values (blue line) between original and reprocessed XFEL diffraction datasets.DOI: http://dx.doi.org/10.7554/eLife.18740.017
+Comparison of the originally-processed (“old”) and re-processed (“new”) XFEL datasets using the reflections in common shows a significant drop in correlation after ~4.3 Å (Author response image 1). These results suggest that the improved XFEL diffraction data processing techniques reported here most strongly affected the high-resolution diffraction data.10.7554/eLife.18740.017Author response image 1.Statistical analysis of XFEL diffraction dataset reprocessing.Correlation coefficients (red line) and R-values (blue line) between original and reprocessed XFEL diffraction datasets.
 
 Correlation coefficients (red line) and R-values (blue line) between original and reprocessed XFEL diffraction datasets.
-
-DOI: http://dx.doi.org/10.7554/eLife.18740.017
 
 b) It would also be helpful to refine the same model against the previous and current XFEL datasets, only adjusting parameter values, to have a more convincing comparison based on decrease in the free R.
 
@@ -53,11 +51,9 @@ The synchrotron diffraction data for Syt1-SNARE were collected using a Dectris P
 
 ii) It might be a good idea to include the "sawtooth" B-versus-frame number plot for the single crystals, to show how much damage resulted from the total exposure at each location.
 
-The Rd plots, provided by the XDS package as a crude measure of radiation damage (Diederichs, 2006), show a clear effect vs. exposure (Author response image 2A–C). This suggests that synchrotron data collection resulted in noticeable radiation damage to the crystal despite the care that was taken to minimize it.10.7554/eLife.18740.018Author response image 2.Analysis of radiation damage effect on synchrotron diffraction data.(A–C) Rd plot vs. Φ angle for diffraction data collected at three separate positions on the same Syt1-SNARE crystal. Colored boxes represent sub-datasets (green – first 1/3 of the dataset, red – mid 1/3 of the dataset, blue – last 1/3 of the dataset). (D) R-factors between the full XFEL diffraction dataset and the three synchrotron sub-datasets; (E) Correlation coefficients between the two datasets. The colors for (D) and (E) follow the same scheme as that of (A–C); the full synchrotron dataset is shown as a black line.DOI: http://dx.doi.org/10.7554/eLife.18740.018
+The Rd plots, provided by the XDS package as a crude measure of radiation damage (Diederichs, 2006), show a clear effect vs. exposure (Author response image 2A–C). This suggests that synchrotron data collection resulted in noticeable radiation damage to the crystal despite the care that was taken to minimize it.10.7554/eLife.18740.018Author response image 2.Analysis of radiation damage effect on synchrotron diffraction data.(A–C) Rd plot vs. Φ angle for diffraction data collected at three separate positions on the same Syt1-SNARE crystal. Colored boxes represent sub-datasets (green – first 1/3 of the dataset, red – mid 1/3 of the dataset, blue – last 1/3 of the dataset). (D) R-factors between the full XFEL diffraction dataset and the three synchrotron sub-datasets; (E) Correlation coefficients between the two datasets. The colors for (D) and (E) follow the same scheme as that of (A–C); the full synchrotron dataset is shown as a black line.
 
 (A–C) Rd plot vs. Φ angle for diffraction data collected at three separate positions on the same Syt1-SNARE crystal. Colored boxes represent sub-datasets (green – first 1/3 of the dataset, red – mid 1/3 of the dataset, blue – last 1/3 of the dataset). (D) R-factors between the full XFEL diffraction dataset and the three synchrotron sub-datasets; (E) Correlation coefficients between the two datasets. The colors for (D) and (E) follow the same scheme as that of (A–C); the full synchrotron dataset is shown as a black line.
-
-DOI: http://dx.doi.org/10.7554/eLife.18740.018
 
 The Rd plots also demonstrate why multi-volume diffraction data collection was needed in this case, and suggests that a serial data collection approach – such as one used in our XFEL experiment – might improve upon synchrotron diffraction data.
 

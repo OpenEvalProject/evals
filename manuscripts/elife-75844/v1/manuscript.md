@@ -22,21 +22,21 @@
 
 ### Affiliations
 
-1. https://ror.org/02ttsq026 Department of Biochemistry, University of Colorado Boulder United States
-2. https://ror.org/03wmf1y16 Medical Scientist Training Program, University of Colorado Anschutz Medical Campus Aurora United States
-3. https://ror.org/006w34k90 Howard Hughes Medical Institute, University of Colorado Boulder United States
-4. https://ror.org/00f54p054 Department of Pathology, Stanford University Stanford United States
-5. https://ror.org/00f54p054 Department of Neuropathology, Stanford University Stanford United States
-6. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-7. https://ror.org/02ttsq026 Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder United States
-8. https://ror.org/03wmf1y16 Department of Surgery, University of Colorado Aurora United States
-9. https://ror.org/03wmf1y16 Molecular Biology Program and Department of Biochemistry and Molecular Genetics, University of Colorado Anschutz Medical Campus Aurora United States
-10. https://ror.org/00f54p054 Center for Personal and Dynamic Regulomes, Stanford University Palo Alto United States
-11. https://ror.org/03mtd9a03 Department of Neurology and Neurological Sciences, Stanford University School of Medicine Stanford United States
-12. https://ror.org/03mtd9a03 Paul F. Glenn Center for the Biology of Aging, Stanford University School of Medicine Stanford United States
-13. https://ror.org/00nr17z89 Center for Tissue Regeneration, Repair, and Restoration, Veterans Affairs Palo Alto Health Care System Palo Alto United States
-14. https://ror.org/006w34k90 Howard Hughes Medical Institute, Stanford University Stanford United States
-15. https://ror.org/03wmf1y16 University of Colorado School of Medicine, RNA Bioscience Initiative, University of Colorado Anschutz Medical Campus Aurora United States
+1. Department of Biochemistry, University of Colorado Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+2. Medical Scientist Training Program, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+3. Howard Hughes Medical Institute, University of Colorado Boulder United States ([ROR:006w34k90](https://ror.org/006w34k90))
+4. Department of Pathology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. Department of Neuropathology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+6. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+7. Department of Molecular, Cellular and Developmental Biology, University of Colorado Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+8. Department of Surgery, University of Colorado Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+9. Molecular Biology Program and Department of Biochemistry and Molecular Genetics, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+10. Center for Personal and Dynamic Regulomes, Stanford University Palo Alto United States ([ROR:00f54p054](https://ror.org/00f54p054))
+11. Department of Neurology and Neurological Sciences, Stanford University School of Medicine Stanford United States ([ROR:03mtd9a03](https://ror.org/03mtd9a03))
+12. Paul F. Glenn Center for the Biology of Aging, Stanford University School of Medicine Stanford United States ([ROR:03mtd9a03](https://ror.org/03mtd9a03))
+13. Center for Tissue Regeneration, Repair, and Restoration, Veterans Affairs Palo Alto Health Care System Palo Alto United States ([ROR:00nr17z89](https://ror.org/00nr17z89))
+14. Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:006w34k90](https://ror.org/006w34k90))
+15. University of Colorado School of Medicine, RNA Bioscience Initiative, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 
 † Corresponding author
 
@@ -58,17 +58,25 @@ Even though RBPs are essential for skeletal muscle regeneration and are frequent
 
 ## Results
 
-## Myogenic cell fate transitions revealed by single-cell RNA-sequencing
+### Myogenic cell fate transitions revealed by single-cell RNA-sequencing
 
 Skeletal muscle has a remarkable ability to repair following injury mediated by MuSCs, which activate, proliferate, and differentiate to produce the majority of myonuclei by 4 days post injury (dpi) (De Micheli et al., 2020; Cuter et al., 2019). During this time, MuSCs self-renew to replenish the quiescent MuSC stem cell population as demonstrated by DNA-lineage-tracing experiments (De Micheli et al., 2020; Cuter et al., 2019). MuSCs undergo dramatic transcriptional changes during myogenesis, of which the resultant RNA is regulated by RBPs. Yet, the timing and function of RBPs during myogenesis remain understudied. Here, we sought to define RBP function in individual cells during MuSC activation, proliferation, differentiation, and self-renewal.
 
 We performed single-cell RNA-sequencing on regenerating skeletal muscle at 4 dpi and 7 dpi following an injury by BaCl2 injection into adult mouse tibialis anterior (TA) muscles (Caldwell et al., 1990). We observed infiltration of immune cells, dynamic cycling of individual fibro/adipogenic progenitors (FAPs), and a robust myogenic progenitor population in the sequencing datasets (Figure 1A, Figure 1—figure supplement 1A and B). Sequencing dataset analyses show strong reproducibility amongst biological replicates (Figure 1—figure supplement 1A and B) defining the cellular composition of regenerating skeletal muscle. The cellular constituents we identified overlap with recently published muscle single-cell RNA-sequencing datasets (Barruet et al., 2020; De Micheli et al., 2020; Dell’Orso et al., 2019). Thus, acutely injured muscle undergoes similar cellular regeneration irrespective of the inciting injury.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig1-v1.jpg)
+
+**Figure 1.:** (A) Single-cell atlas of regenerating skeletal muscle at 4 and 7 days post injury (dpi). (B) Cell cycle scoring in regenerating myogenic subclusters. (C) Violin plots showing expression of myogenic markers of regeneration per myogenic clusters. (D) Myogenic subclusters comprising the regenerating myogenic cellular population. (E) RNA velocity-inferred myogenic cell fate trajectories. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) of regenerating skeletal muscle at 4 and 7 days post injury (dpi) with colored individual sequencing libraries (B) and by individual cellular clusters. (C) RNA velocity of myogenic subclusters. (D) Velocity-inferred cell–cell connectivity between myogenic subclusters.
+
 Gene expression and cell cycle scoring analysis of the myogenic cells reveals three dominant myogenic clusters: (i) a proliferative Pax7-positive MuSC population, (ii) a differentiating Myogenin (Myog)-positive population exiting cell cycle, and (iii) a postmitotic, terminally differentiating muscle population expressing sarcomeric mRNAs (Figure 1B and C, Figure 1—figure supplement 1C). These dominant myogenic populations are further subclassified into nine subclusters that define the regenerating myogenic population (Figure 1D) and may represent cells at various points along a more continuous differentiation trajectory or may reflect specific cell state transition points during myogenesis.
 
 We next identified temporal dynamics between each of the nine myogenic subclusters using RNA velocity (Bergen et al., 2020), which infers cellular dynamics for a single cell by comparing the ratio of unspliced, pre-mRNA to mature mRNA (La Manno et al., 2018). RNA velocity shows myogenic differentiation directionality within specific subclusters (Figure 1—figure supplement 1C), resolving myogenic differentiation trajectories using processed and unprocessed RNA (Figure 1—figure supplement 1C). To infer connectivity and directionality between the nine subclusters, we employed partition-based graph abstraction (PAGA), which estimates connectivity among different subclusters while preserving global data topology, providing a more granular analysis than traditional pseudotemporal analyses (Wolf et al., 2019). PAGA identified a directed connectivity between the myogenic subclusters 0–6 (Figure 1E, Figure 1—figure supplement 1D) where we see robust connections between MuSC clusters and differentiating clusters. These connections highlight the inherent complexity of MuSC cell fate decisions (Figure 1—figure supplement 1D). Very few connections lead to mature muscle, suggesting that progenitor MuSC fate decisions are plastic. By contrast, the commitment to terminal differentiation may follow a single universal pathway. Together, these data reveal a trajectory map of in vivo myogenesis during muscle regeneration.
 
-## RNA-binding protein expression is temporally defined during myogenesis
+### RNA-binding protein expression is temporally defined during myogenesis
 
 The mechanisms of myogenic cell fate change are likely multifactorial and include post-transcriptional regulation of mRNAs. Post-transcriptional regulation permits rapid and dynamic cell fate changes in myogenic cells that is critical for cell fate transitions (Hausburg et al., 2015), but is poorly understood during myogenesis at a cellular resolution (Apponi et al., 2011; Hinkle et al., 2019; Weskamp et al., 2020). Since a number of RBP transcripts increase during muscle regeneration, examining the timing and magnitude of expression for RBPs in individual MuSCs may reveal an unexplored role for RBPs in mediating myogenic cell fate transitions (Weskamp et al., 2020). We hypothesize that RBP expression timing influences myogenic cell fates by post-transcriptionally regulating RNA. We defined RBP expression in MuSCs, focusing on myogenic subclusters 0–6. The MuSCs in these subclusters undergoing cell fate changes to either self-renew, continue to proliferate, or terminally differentiate. Thus, examining RNA regulation in these cells may reveal roles for RBPs in directing cell fate decisions.
 
@@ -82,23 +90,51 @@ We hypothesized that RBP expression timing relates to the times in which those R
 
 Two of the most highly expressed RBPs are Hnrnpa1 and Hnrnpa2b1 (Figure 2B), and when disrupted cause inclusion body myopathy (Kim et al., 2013). Hnrnpa1 and Hnrnpa2b1 expression is highest in select proliferating and differentiating subclusters. While Hnrnpa1 function is essential for muscle differentiation, Hnrnpa2b1 function in muscle is unknown (Li et al., 2020). Thus, we focused on Hnrnpa2b1 as a model RBP for understanding cell state-specific RBP function. Defining the role for Hnrnpa2b1 in specific cell states may provide insight into how disruption of this RBP causes inclusion body myopathy.
 
-## Hnrnpa2b1 expression dynamics in regenerating skeletal muscle
+### Hnrnpa2b1 expression dynamics in regenerating skeletal muscle
 
 Hnrnpa2b1 regulates RNA splicing, stability, and transport (Alarcón et al., 2015; Geissler et al., 2016; Percipalle et al., 2002) and, in stem cells, Hnrnpa2b1 regulates differentiation (Wang et al., 2018) and proliferation (He and Smith, 2009). Thus, we hypothesized that Hnrnpa2b1 may function as a myogenic RNA regulator during differentiation.
 
 We examined the levels of Hnrnpa2b1 protein in regenerating muscle in vivo where in uninjured muscle, Hnrnpa2b1 is present in a subset of Pax7-postitive MuSCs and in some peripherally located myonuclei in mature skeletal muscle fibers (Figure 3A and B, Figure 3—figure supplement 1A). By 5 dpi, Hnrnpa2b1 protein levels increase and Hnrnpa2b1 is present in the majority of Pax7-postitive MuSCs and centrally located myonuclei of immature regenerating myofibers (Figure 3A–C, Figure 3—figure supplement 1A and B). Hnrnpa2b1 levels peak at 10 dpi in both Pax7-positive MuSCs and regenerating myofibers and then Hnrnpa2b1 levels decline as myofibers fully regenerate by 28 dpi (Figure 3A–C, Figure 3—figure supplement 1A,C and D). Therefore, the changes in Hnrnpa2b1 protein levels correlate well with expression dynamics detected by single-cell sequencing in regenerating muscle.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig3-v1.jpg)
+
+**Figure 3.:** (A) Hnrnpa2b1 immunoreactivity in uninjured (UI), 5, 10, and 30 days post injury (dpi) regenerating mouse muscle. All images represent n = 3 biological replicates; scale = 20 µM. (B) Nuclear Hnrnpa2b1 immunoreactivity in UI, 5, 10, and 28 dpi regenerating muscle. (C) Nuclear Hnrnpa2b1 immunoreactivity intensity in either myonuclei or non-myonuclei in UI, 5, 10, and 28 dpi regenerating muscle. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Secondary-only immunoreactivity controls of muscle sections for all time points assessed by immunofluorescence (IF) in Figure 1A. (B) Quantified Western blot analysis of Hnrnpa2b1 protein expression from whole uninjured (UI) and 5 days post injury (dpi) regenerating muscle (one-tailed Student’s t-test). (C) Hnrnpa2b1 nuclear intensity in Pax7-positive myonuclei in UI, 5, 10, and 28 dpi regenerating muscle. (D) Scatter plot and R2 values for expression changes in myonuclear Pax7 and Hnrnpa2b1 in UI, 5, 10, and 28 dpi regenerating muscle. (E) Immunoreactivity in 5 dpi regenerating muscle for Tardbp, myosin heavy chain (Myhc), and Pax7. (F) Scatter plot and R2 values for Tardbp expression changes in Pax7 myonuclei in UI and 5 dpi. (G) Tardbp nuclear protein in UI, 5 dpi , and 10 dpi regenerating muscle. All images represent n = 3 biological replicates; scale = 20 µM. All quantified data represent mean ± SD, two-tailed Student’s t-test p-value: *<0.05, **<0.01, ***<0.001, ****<0.0001 unless otherwise stated.
+
 These results show that Hnrnpa2b1 expression increases in both Pax7-positive MuSCs and regenerating myofibers early during regeneration . By contrast, Tardbp expression peaks at 5 dpi, near the peak of muscle progenitor proliferation (Figure 3—figure supplement 1E–G). As Tardbp is critical for early muscle regeneration, Hnrnpa2b1 may play a similarly critical role later during muscle regeneration.
 
-## Hnrnpa2b1 is required for myoblast differentiation
+### Hnrnpa2b1 is required for myoblast differentiation
 
 To better understand the role of Hnrnpa2b1 during myogenesis, we examined the protein levels of Hnrnpa2b1 in both proliferating and differentiating myoblasts. Hnrnpa2b1 immunoreactivity increases during myoblast differentiation, peaking by 3 days of differentiation, and declines as differentiating myoblasts and myotubes mature (Figure 4A and B). The levels of transcript mirror Hnrnpa2b1 expression in vivo and suggest a role for Hnrnpa2b1 in regulating differentiation, and thus, we predict that a functional requirement for Hnrnpa2b1 is highest during differentiation. To test this hypothesis, we knocked out Hnrnpa2b1 in myoblasts using CRISPR/Cas9 and assessed the consequences of Hnrnpa2b1 loss on myoblast proliferation and differentiation (Figure 4C, Figure 4—figure supplement 1A and B). Hnrnpa2b1 wild type (WT) and knockout (KO) cells show no significant differences in proliferation when labeled with a timed pulse of the thymidine analog 5-ethynyl-2′-deoxyuridine (EdU; Figure 4D and E). The Hnrnpa2b1 WT and KO populations exhibit no differences in nuclear morphology (Figure 4—figure supplement 1E and F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig4-v1.jpg)
+
+**Figure 4.:** (A) Hnrnpa2b1 nuclear protein in exponentially growing myoblasts (0 hr) and differentiating myotubes at 72 and 168 hr. (B) Immunoreactivity of Hnrnpa2b1 in myoblasts and differentiating myotubes. (C) Western blot analysis of CRISPR-Cas9 knockout (KO) and scrambled sequence Hnrnpa2b1 sgRNA-treated C2C12 myoblasts. (D) EdU-pulsed wild type (WT) myoblasts and Hnrnpa2b1 KO myoblasts (scale = 10 µM). (E) Quantification of EdU incorporation in WT and KO Hnrnpa2b1 myoblasts (ns = nonsignificant). (F) Immunoreactivity for Myhc in differentiating WT and KO Hnrnpa2b1 myotubes (scale = 200 µM). (G) Quantification of Fusion Index (percentage of nuclei fused into myotubes) during differentiation in either WT or KO Hnrnpa2b1 myotubes. All quantified data represent mean ± SD, two-tailed Student’s t-test p-value: *<0.05, **<0.01, ***<0.001, ****<0.0001 unless otherwise stated. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Hnrnpa2b1 protein in wild type (WT) and Hnrnpa2b1 knockout (KO) myoblasts (scale = 10 µM). (B) Western blot intensity quantification of Hnrnpa2b1 in WT and Hnrnpa2b1 KO C2C12 myoblasts. (C) Western blot image of Hnrnpa2b1 in WT and Hnrnpa2b1 KO C2C12 myoblasts. (D) Myhc immunoreactivity in Hnrnpa2b1 WT and KO 168 hr differentiated C2C12 myotubes. (E, F) Quantification of Hnrnpa2b1 WT and KO myoblast nuclear area and circularity during differentiation. All images represent n = 3 biological replicates from three independent Hnrnpa2b1 WT and KO clones: scale = 20 µM. All quantified data represent mean ± SD, two-tailed Student’s t-test p-value: **<0.01.
+
 Differentiation is impaired upon loss of Hnrnpa2b1. After 48 hr of differentiation, Hnrnpa2b1 WT myoblasts had largely differentiated into multinucleated, myosin heavy chain-positive myotubes (Figure 4F and G). Conversely, Hnrnpa2b1 KO myoblasts were unable to form large multinucleated myotubes (Figure 4F and G). The Hnrnpa2b1 KO differentiation defect persisted after 3 days of differentiation in culture. These results suggest that Hnrnpa2b1 KO myoblasts are unable to effectively differentiate (Figure 4G, Figure 4—figure supplement 1C). Thus, Hnrnpa2b1 function is required for differentiation, but not proliferation.
 
-## Hnrnpa2b1 is a myogenic splicing regulator critical for terminal myogenic differentiation
+### Hnrnpa2b1 is a myogenic splicing regulator critical for terminal myogenic differentiation
 
 We hypothesized that Hnrnpa2b1 regulates RNA splicing during muscle differentiation, and that altered Hnrnpa2b1-mediated splicing may lead to impaired muscle differentiation. To test this hypothesis, we performed high-coverage RNA-sequencing of Hnrnpa2b1 KO cells and WT differentiating myotubes. The transcripts detected correlate closely to previously published myogenic differentiation datasets, indicating negligible effects due to differing growth conditions (Figure 5—figure supplement 2A and B). Differential splicing analysis identifies 2167 alternatively spliced RNAs of which 40% are differentially expressed (Figure 5A, Figure 5—figure supplement 2E). Differential splicing analysis reveals that Hnrnpa2b1 regulates the splicing of other RBPs. Many of these RBPs in turn regulate RNA splicing, including Mbnl1, Mbnl2, and Rbfox2 (Figure 5B). Loss of Rbfox2 or loss of both Mbnl1 and Mbnl2 impairs myogenic differentiation (Lee et al., 2013; Singh et al., 2014), and thus Hnrnpa2b1 loss appears to lead to the exclusion of Mbnl1, Mbnl2, and Rbfox2 exons encoding zinc fingers and RNA recognition motifs, respectively, which are predicted to disrupt function of these RBPs (Figure 5B). Thus, the splicing regulator cascade resulting from Hnrnpa2b1 loss disrupts Mbnl1, Mbnl2, and Rbfox2 splicing and may impair myogenesis.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig5-v1.jpg)
+
+**Figure 5.:** (A) Differential gene expression identified by DESeq2 in wild type (WT) and Hnrnpa2b1 knockout (KO) myotubes after 48 hr of differentiation with alternative splicing changes identified by LeafCutter (differential gene expression significance p-adjusted<0.05, splicing false discovery rate [FDR] p-value<0.05). (B) Sashimi plots of significant alternative splicing changes (delta percent spliced in [dPSI]) for Mbnl1, Mbnl2, Rbfox2 in differentiating Hnrnpa2b1 KO myotubes. (C) Venn diagram of significantly altered spliced transcripts in Hnrnpa2b1 KO, Mbnl1/Mbnl2 double KO (Thomas et al., 2017), and Rbfox2 KO (Singh et al., 2014) differentiating myogenic cultures. (D) Myogenic-trained CIBERSORTx-imputed stacked bar chart of myogenic subcluster percentages in C2C12 differentiation time course (Trapnell et al., 2010). (E) Myogenic-trained CIBERSORTx machine learning imputed percentages of myogenic clusters from WT and KO Hnrnpa2b1 differentiating myotubes. Y-axis refers to fold change between myogenic cluster percentages. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Hnrnpa2b1-Rbfox or Hnrnpa2b1-Mbnl1/Mbnl2 delta percent spliced in (dPSI) changes in shared significantly altered spliced RNAs. (B, C) Myogenic-trained CIBERSORTx-imputed percentages of myogenic clusters from RNA-sequencing performed in biological duplicate of C2C12 differentiation time course (Trapnell et al., 2010). (D) Myogenin immunoreactivity and DAPI nuclear staining of exponentially proliferating C2C12 myoblasts. Bar plot represents percentage of myogenin+ proliferating C2C12 myoblasts, n = 3 biological replicates, scale = 50 µM. (E) Percentage of Hnrnpa2b1 knockout (KO) splicing alterations in significantly differentially expressed transcripts identified per myogenic cluster.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B) Correlation of base mean and log2 fold change between Hnrnap2b1KO myoblasts and WT myoblasts differentiated for 48 hr and C2C12 myoblasts differentiated for 48 hr from Xue et al., 2020. RNA-sequencing data was compared against 0 hr proliferating myoblasts from Xue et al., 2020. (C, D) Venn diagrams showing differentially expressed genes identified by DESeq2 and alternative spliced transcripts identified by LeafCutter for 48 hr differentiation (Xue et al., 2020) for Hnrnpa2b1 WT cells and Hnrnpa2b1 KO cells. All data are compared to 0 hr proliferating myoblasts from Xue et al., 2020. (E) MA plot for differential gene expression changes identified in Hnrnpa2b1 KO cells compared to 0 hr proliferating myoblasts from Xue et al., 2020. Specific alternatively spliced transcripts identified in (D) are highlighted. (F) Impact of Hrnpa2b1 KO-specific alternatively spliced transcripts identified in (D) on differentially expressed transcripts present in single-cell myogenic clusters. Three independent RNA-sequencing datasets were analyzed for 0 and 48 hr cultures from Liu et al., and for Hnrnpa2b1 WT and KO.
 
 We performed differential splicing analysis of Mbnl1, Mbnl2, and Rbfox2 in differentiating Hnrnpa2b1 KO cells (Lee et al., 2013; Singh et al., 2014). The alternatively spliced RNAs in Hnrnpa2b1 KO cells, compared to Mbnl1, Mbnl2 double KO cells, significantly overlap (hypergeometric p-value=1.2 × 10-77). Similarly, alternatively spliced RNAs in Hnrnpa2b1 KO cells and Rbfox2 KO cells also overlap (hypergeometric p-value=6.1 × 10-143) (Figure 5C), demonstrating that Hnrnpa2b1 loss likely leads to altered splicing of RNAs regulated by Mbnl1, Mbnl2, and Rbfox2, respectively. As RBPs function together to co-regulate the splicing of target RNAs (Klinck et al., 2014; Venables et al., 2013), Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 may cooperatively regulate target RNA splicing. Indeed, Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1 KOs exhibit identical splice site location and share changes in splicing of target RNAs (Figure 5—figure supplement 1A). Thus, a network of RBPs, including Mbnl1, Mbnl2, Rbfox2, and Hnrnpa2b1, appear to cooperatively regulate RNA splicing during muscle differentiation.
 
@@ -108,9 +144,25 @@ We first trained CIBERSORTx on our myogenic single-cell dataset and then imputed
 
 Next, we tested the impact of Hnrnpa2b1 KO using myogenic-trained CIBERSORTx. Hnrnpa2b1 KO cells show an enrichment for subcluster 5 myogenic cell signatures and a decrease in subcluster 7 (Figure 5D), demonstrating that Hnrnpa2b1 KO cells are slow to transition to subcluster 7 and accumulate in subcluster 5. We then used CIBERSORTx to examine the impact of Hnrnpa2b1 KO on specific myogenic cell states. We first performed differential gene expression analysis for each of the subclusters identified by CIBERSORTx (clusters 2–5, 7) to identify differentially expressed genes enriched in the cells of each specific cluster. These differentially expressed genes provide a molecular signature for the cells at each of these specific stages embedded in bulk RNA-sequencing data. By examining the splicing changes for the differentially expressed genes, we found that Hnrnpa2b1 KO alters splicing in each of these clusters, with cluster 5 showing the most changes in splicing (Figure 5E, Figure 5—figure supplement 1E, Figure 5—figure supplement 2F). Using this approach, we can control for population-wide cell state differences and demonstrate that Hnrnpa2b1 is a key splicing regulator in specific differentiating myogenic cell states.
 
-## RBP engagement scoring delineates timing of RBP function during myogenesis
+### RBP engagement scoring delineates timing of RBP function during myogenesis
 
 The expression of an RBP and RBP target RNAs is necessary for an RBP to alter splicing of the RPB target. Therefore, expression of Hnrnpa2b1 target RNAs during myogenic differentiation governs when Hnrnpa2b1 is capable of splicing target transcripts. To identify Hnrnpa2b1 target RNAs during myogenesis, we performed Hnrnpa2b1 enhanced UV crosslinking and immunoprecipitation (eCLIP) in both myoblasts and myotubes (Figure 6A, Figure 6—figure supplement 1A–C). Hnrnpa2b1 eCLIP reveals 808 binding sites across 247 genes for myoblasts and 1030 binding sites across 137 genes for myotubes, which are significantly enriched compared to size-matched input (reflecting all RNA–protein interactions in the input) (Figure 6—figure supplement 1D). Hnrnpa2b1 RNA target eCLIP peaks were highly correlated between biological replicates, had thousands of reproducible eCLIP clusters by irreproducible discovery rate analysis, and capture prior identified Hnrnpa2b1 RNA targets including Hnrnpa2b1’s own 3′UTR (Figure 6—figure supplement 1D–G; Martinez et al., 2016). Analysis of Hnrnpa2b1 RNA-binding sites reveals an enrichment for binding sites in the 3′UTR and proximal introns of target RNAs, potentially indicating a role of Hnrnpa2b1 in RNA localization or translation (Figure 6A). Further, Hnrnpa2b1 binding maps closely to splicing clusters, indicating a role for Hnrnpa2b1 in splicing regulation (Figure 6—figure supplement 2B and C). Hnrnpa2b1 binding spatially correlates to splicing changes in the two significantly differentially spliced transcripts Hnrnpa2b1 and Myl1 (Figure 6—figure supplement 3A and B). We validated the interaction of Hnrnpa2b1 with several target RNAs using RIP qRT-PCR (Figure 6B, Figure 6—figure supplement 1H).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-v1.jpg)
+
+**Figure 6.:** (A) Genomic distribution of Hnrnpa2b1 enhanced UV crosslinking and immunoprecipitation (eCLIP) peaks in myoblasts and myotubes. (B) Native (non-denaturing) Hnrnpa2b1 RNA immunoprecipitation (RIP)-qRT-PCR of RNA targets identified by eCLIP. (C) Schematic for RBP-Target RNA engagement scoring. (D) RBP-Target RNA engagement scoring of Tardbp and Hnrnpa2b1 in myogenic subclusters (median ± 95% CI across all RBP-RNA engagement scores in each myogenic subcluster). (E) Differential gene expression analysis of myogenic subcluster 5. (F) Myog immunoreactivity in wild type (WT) and Hnrnpa2b1 knockout (KO) 48 hr differentiated myotubes. (G) Myog immunoreactivity signal intensity in differentiating WT and Hnrnpa2b1 KO myotubes (mean ± SD, two-tailed Student’s t-test p-value: ****<0.0001). See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Autoradiogram of 32P-labeled Hnrnpa2b1 RNA–RNA complexes fractionated by PAGE (B) and (C) immunoprecipitation of Hnrnpa2b1 RNA complexes used for enhanced UV crosslinking and immunoprecipitation (eCLIP) in C2C12 myoblasts or myotubes (n = 2 biologically independent samples). (D) Scatter plots indicate correlation between significant Hnrnpa2b1 RNA eCLIP peaks in biological replicates. Scatter plots represent fold enrichment for each region in Hnrnpa2b1 RNA eCLIP relative to paired size-matched input with significant peaks in red (p≤10–8 over size-matched input). (E) Irreproducible discovery rate (IDR) analysis comparing peak fold enrichment across indicated eCLIP datasets. (F) Integrative Genomics Viewer (IGV) tracing showing Hnrnpa2b1 RNA 3′UTR eCLIP peaks in Hnrnpa2b1 RNA transcript in myoblasts and (G) myotubes (H), where dark boxes denote significantly enriched binding sites above SMInput (p<10–8). Western blot for Hnrnpa2b1 used in RNA immunoprecipitation experiments in both Hnrnpa2b1 RNA wild type and knockout (KO) C2C12 cells. (I) Uniform manifold approximation and projection (UMAP) displaying Myog expression across myogenic single cells.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Volcano plot showing delta percent spliced in (dPSI) versus p-value (false discovery rate [FDR]) for significant splicing changes detected in Hnrnpa2b1 KO cells. (B) Global proximity mapping of Hnrnpa2b1 enhanced UV crosslinking and immunoprecipitation (eCLIP) sites and significantly alternatively spliced clusters. (C) Relative distance mapping for eCLIP sites to alternative splice clusters using bedtools reldist.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/75844/elife-75844-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) UCSC gene track mapping delta percent sliced in (dPSI) (splicing changes) in reference to annotated Hnrnpa2b1 exons, introns, and Hnrnpa2b1 eCLIP-binding sites. (B) UCSC gene track showing dPSI (splicing changes) in reference to annotated Myl1 exons, introns, and Hnrnpa2b1 eCLIP-binding sites.
 
 Having defined Hnrnpa2b1 mRNA targets, we next looked to develop a computational toolset to identify myogenic cells in which Hnrnpa2b1 is functioning. We reasoned that many RBPs engage with target RNAs co-transcriptionally to regulate RNA splicing (Fu and Ares, 2014). Newly transcribed RNAs or pre-mRNAs can be identified as RNAs that contain introns. These newly transcribed pre-mRNAs can then be computationally defined in single-cell data (La Manno et al., 2018) where RBP function will correlate with the expression level of an RBP and the RBP’s target pre-mRNA. For example, RBP function is predicted to occur in cells with both high RBP expression and target pre-mRNAs expression, which we term ‘RBP engagement scoring’ (Figure 6C).
 
@@ -130,23 +182,23 @@ The model we propose explains the seemingly discordant myogenic phenotypes resul
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Mice were bred and housed according to the National Institutes of Health (NIH) guidelines for the ethical treatment of animals in a pathogen-free facility at the University of Colorado at Boulder. The University of Colorado Institutional Animal Care and Use Committee (IACUC) approved all animal protocols and procedures and studies complied with all ethical regulations. IACUC protocol number 2516, Animal Welfare Assurance number A3646-01. WT mice were genotype C57BL/6 (Jackson Laboratories). Cells and TA muscles were isolated from 3- to 6-month-old male and female WT mice.
 
-## Mouse injuries
+### Mouse injuries
 
 Male and female mice between 3 and 6 months of age were anesthetized with isoflurane and the left TA muscle was injected with 50 μl of 1.2% BaCl2. The injured and contralateral TA muscles were harvested at the indicated time points.
 
-## TA collections and cell isolations
+### TA collections and cell isolations
 
 TA muscles were dissected and placed into 400 U/ml collagenase at 37°C for 1 hr with shaking and then placed into Ham’s F-12C supplemented with 15% horse serum to inactivate the collagenase. Cells were passed through three strainers of 100, 70, and 40 µm (BD Falcon) and flow through was centrifuged at 1500 × g for 5 min, and the cell pellets were resuspended in Ham’s F-12C. To remove dead cells and debris, cells were passed over Miltenyi dead cell removal kit columns (Cat# 130-090-101). To remove RBCs, cells were incubated with antiTer119 micro magnetic beads and passed over a Miltenyi column (Cat# 130-049-901). For adult uninjured Tas, six TA muscles (from three mice) were pooled together. For injured TA muscles, two TA muscles from two different mice were pooled together. Cells were then counted using a Bio-Rad TC20 automated cell counter and processed with a 10X Genomics single-cell sequencing kit.
 
-## Single-cell sequencing
+### Single-cell sequencing
 
 To capture, label, and generate transcriptome libraries of individual cells, we used the 10X Genomics Chromium Single Cell 3′ Library and Gel Bead Kit v2 (Cat# PN-120237) following the manufacturer’s protocols. Briefly, the single-cell suspension, RT-PCR master mix, gel beads, and partitioning oil were loaded into a Single Cell A Chip 10 genomics chip, placed into the chromium controller, and the Chromium Single Cell A program was run to generate Gel Bead-In-EMulsion (GEMs) that contain RT-PCR enzymes, cell lysates and primers for Illumina sequencing, barcoding, and poly-DT sequences. GEMs were then transferred to PCR tubes and the RT-PCR reaction was run to generate barcoded single-cell identified cDNA. Barcoded cDNA was used to make sequencing libraries for analysis with Illumina sequencing. We captured 1709 cells from young uninjured muscle, 5077 from the 4 dpi muscle, and 2668 from the 7 dpi muscle. Sequencing was completed on an Illumina NovaSeq 6000 using paired-end 150 cycle 2 × 150 reads by the genomics and microarray core at the University of Colorado Anschutz Medical Campus.
 
-## Single-cell Informatics
+### Single-cell Informatics
 
 Preprocessing was performed using Cellranger v3.0.1 (10X Genomics) count module that was used for alignment using cellranger-mm10-3.0.0 refdata, filtering, barcode counting, and UMI counting of the single-cell FASTQs. Postprocessing was performed using Seurat according to standardized workflows (Butler et al., 2018; Stuart et al., 2019). In brief, using RStudio (v4.0.0), Seurat objects were created for each Cellranger processed sample by importing filtered_gene_bc_matrices. Multiple Seurat objects then were merged, filtered, normalized, feature selected, scaled, and clustered. Nonlinear dimensional reduction was performed using uniform manifold approximation and projection (UMAP).
 
@@ -156,60 +208,60 @@ RBP Engagement Scoring was performed by first determining the raw unspliced read
 
 CIBERSORTx of myogenic clusters was performed according to published workflows (Newman et al., 2019). In brief, a single-cell reference txt file was created from our Seurat processed single-cell RNA-seq dataset. A mixture file for bulk RNA-sequencing samples was created using TPM values extracted from StringTie serve as input. A single-cell reference txt matrix of cells organized by myogenic clusters was then used to train CIBERSORTx using default parameters (Supplementary file 3). Cell fractions were then imputed using 100 permutations for significance analysis.
 
-## Immunofluorescence staining of tissue sections
+### Immunofluorescence staining of tissue sections
 
 TA muscles were dissected, fixed on ice for 2 hr with 4% paraformaldehyde, and then transferred to PBS with 30% sucrose at 4°C overnight. Muscle was mounted in O.C.T. (Tissue-Tek) and cryo-sectioned on a Leica cryostat to generate 10-μm-thick sections. Frozen tissues and sections were stored at –80°C. Prior to immunofluorescent staining, tissue sections were post-fixed in 4% paraformaldehyde for 10 min at room temperature (RT) and washed three times for 5 min in PBS. Staining with anti-Pax7, Laminin, and Hnrnpa2b1 antibodies required heat-induced epitope retrieval, which was performed by placing post-fixed slides in citrate buffer, pH 6.0, and subjected them to 6 min of high-pressure cooking in a Cuisinart model CPC-600 pressure cooker. For immunostaining, tissue sections were permeabilized with 0.25% Triton-X100 (Sigma) in PBS containing 2% bovine serum albumin (Sigma) for 60 min at RT. Incubation with primary antibody occurred at 4°C overnight followed by incubation with secondary antibody at RT for 1 hr. Primary antibodies included anti-Pax7 (Developmental Studies Hybridoma Bank, University of Iowa, USA) at 1:750, rabbit anti-laminin (Sigma-Aldrich) at 1:200, and a mouse anti-Hnrnpa2b1 (ab6102, Abcam) at 1:200. Alexa Fluor secondary antibodies (Molecular Probes) were used at a 1:1000 dilution. For analysis that included EdU detection, EdU staining was completed prior to antibody staining using the Click-iT EdU Alexa Fluor 488 detection kit (Molecular Probes) following the manufacturer’s protocols. Sections were incubated with 1 μg/ml DAPI for 10 min at RT then mounted in Mowiol supplemented with DABCO (Sigma-Aldrich) or ProLong Gold (Thermo) as an anti-fade agent. All microscopy images used for quantitation were taken of samples cultured, immunohistochemically stained, and imaged in parallel and under identical conditions to enable quantitative comparison.
 
-## Cell culture and growth conditions
+### Cell culture and growth conditions
 
-## C2C12 myoblast cells
+#### C2C12 myoblast cells
 
 Immortalized murine myoblasts (American Type Culture Collection CRL-1772) were maintained on uncoated standard tissue culture plastic or gelatin-coated coverslips for imaging experiments at 37°C with 5% CO2 in Dulbecco's Modified Eagle Medium (DMEM) with 20% fetal bovine serum and 1% penicillin/streptomycin. To induce myoblast differentiation and fusion into myotubes, C2C12 myoblasts at 80% confluence were switched to DMEM media supplemented with 5% horse serum, 1% penicillin/streptomycin, and 1X Insulin-Transferrin-Selenium in DMEM. Cell lines were validated using RNA deep sequencing concurrent with certification provided by the manufacturer. Cells tested negative for mycoplasma contamination by the BioFrontiers cell culture core facility.
 
-## Hnrnpa2b1 CRISPR-Cas9 knockout and EdU incorporation
+### Hnrnpa2b1 CRISPR-Cas9 knockout and EdU incorporation
 
 CRISPR-Cas9 knockout was performed in C2C12 myoblasts. Single-guide RNA (sgRNA) against Hnrnpa2b1 (5′-GAGTCCGCGATGGAG) were designed using (crispr.mit.edu) and cloned into pSpCas9(BB)–2A-Puro (PX459). C2C12 myoblasts were transfected with JetPrime using the manufacturer’s protocols. Myoblasts that integrated the CRISPR construct were selected with puromycin (1 µg/ml) for 1 week. Three independent myoblasts KO and WT clones were isolated using a cloning ring to selectively detach clonal populations via trypsinization. Clonal population KO was validated via immunofluorescence (IF) and Western blotting against Hnrnpa2b1 with anti-Hnrnpa2b1 antibodies (ab6102 and ab31645). EdU incorporation: C2C12 myoblasts were incubated with 10 µM EdU (Life Technologies) for 3 hr. Cells were washed, fixed, and stained using the methods described below.
 
-## Immunofluorescence staining of cells
+### Immunofluorescence staining of cells
 
 C2C12 myoblast cells were washed with PBS in a laminar flow hood and fixed with 4% paraformaldehyde for 10 min at RT in a chemical hood. Cells were permeabilized with 0.25% Triton-X100 in PBS containing 2% bovine serum albumin (Sigma) for 1 hr at RT. Cells were incubated with primary antibody at 4°C overnight, then incubated with secondary antibody at RT for 1 hr. Primary antibodies included mouse anti-Hnrnpa2b1 (ab6102, Abcam) at 1:200, mouse-anti-myogenin (ab82843, Abcam), and a mouse anti-MHC MF-20 (Developmental Studies Hybridoma Bank, University of Iowa) at undiluted, ‘neat’ concentration. Alexa Fluor secondary antibodies (Molecular Probes) were used at a 1:1,000 dilution.
 
-## Microscopy and image analyses
+### Microscopy and image analyses
 
 Images were captured on a Nikon inverted spinning disk confocal microscope. Objectives used on the Nikon were ×10/0.45 NA Plan Apo, ×20/0.75 NA Plan Apo, and ×40/0.95 Plan Apo. Confocal stacks were projected as maximum intensity images for each channel and merged into a single image. Brightness and contrast were adjusted for the entire image as necessary against secondary antibody-treated control immunofluorescent sections. Cellprofiler was used to quantify immunohistochemistry (IHC) and IF images using custom analysis pipelines unless otherwise stated.
 
-## Western blotting of cell and tissue lysates
+### Western blotting of cell and tissue lysates
 
 Western blot was performed according to standard protocols. Equal volumes (20 µl) of fractions were then resolved on a 4–12% Bis-Tris SDS-PAGE gel and transferred to a nitrocellulose membrane (Bio-Rad). Primary antibodies included mouse anti-Hnrnpa2b1 (1:200; ab6102, Abcam) and monoclonal rabbit anti-GAPDH (14C10) conjugated to HRP (1:2000; Cell Signaling, 3683S).
 
-## Hnrnpa2b1 eCLIP sequencing
+### Hnrnpa2b1 eCLIP sequencing
 
 C2C12 myoblasts were seeded at 6 × 106 cells per 15 cm plate, grown 24 hr at 37°C, 5% CO2, and either harvested (undifferentiated myoblasts) or differentiated in differentiation media for 4 days. Hnrnpa2b1 eCLIP was performed according to established protocols (Nguyen et al., 2018; Van Nostrand et al., 2016). In brief, Hnrnpa2b1-RNA interactions were stabilized with UV crosslinking (254 nm, 150 mJ/cm2). Cell pellets were collected and snap-frozen in liquid N2. Cells were thawed, lysed in eCLIP lysis buffer (50 mM Tris-HCl pH 7.4, 100 mM NaCl, 1% NP-40, 0.1% SDS, 0.5% sodium deoxycholate, and 1× protease inhibitor), and sonicated (Bioruptor). Lysate was RNAse I (Ambion, 1:25) treated to fragment RNA. Protein-RNA complexes were immunoprecipitated using the rabbit polyclonal anti-Hnrnpa2b1 (ab31645, Abcam) antibody. One size-matched input (SMInput) library was generated per biological replicate using an identical procedure without immunoprecipitation. Stringent washes were performed as described, RNA was dephosphorylated (FastAP, Fermentas), T4 PNK (NEB), and a 3′ end RNA adaptor was ligated with T4 RNA ligase (NEB). Protein-RNA complexes were resolved on an SDS-PAGE gel, transferred to nitrocellulose membranes, and RNA was extracted from membrane. After RNA precipitation, RNA was reverse-transcribed using SuperScript IV (Thermo Fisher Scientific), free primer was removed, and a 3′ DNA adapter was ligated onto cDNA products with T4 RNA ligase (NEB). Libraries were PCR-amplified and dual-indexed (Illumina TruSeq HT). Pair-end sequencing was performed on Illumina NextSeq sequencer.
 
-## eCLIP bioinformatic and statistical analysis
+### eCLIP bioinformatic and statistical analysis
 
 Read processing and cluster analysis for Hnrnpa2b1 eCLIP were performed as previously described (Van Nostrand et al., 2016; Vogler et al., 2018). Briefly, 3′ barcodes and adapter sequences were removed using standard eCLIP scripts. Reads were trimmed, filtered for repetitive elements, and aligned to the mm9 reference sequence using STAR. PCR duplicate reads were removed based on the read start positions and randomer sequence. Bigwig files for genome browser display were generated based on the location of the second paired-end reads. Peaks were identified using the encode_branch version of CLIPPER using the parameter ‘-s mm9.’ Peaks were normalized against size-matched input by calculating fold enrichment of reads in IP versus input and were designated as significant if the number of reads in the IP sample was greater than in the input sample, with a Bonferroni corrected Fisher’s exact p-value<10–8.
 
-## RNA-sequencing library preparation and sequencing
+### RNA-sequencing library preparation and sequencing
 
 C2C12 Hnrnpa2b1-WT and KO myoblasts were seeded at 6 × 106 cells per 15 cm plate, grown for 24 hr at 37°C, 5% CO2, and differentiated via serum withdrawal and ITS supplementation for 2 days. Differentiated C2C12 myoblasts and myotubes were washed with PBS in a laminar flow hood and scraped from the tissue culture plate. Total RNA was extracted using a QIAGEN RNeasy Plus Mini Kit, following the manufacturer’s instructions. Isolated RNA quality was assessed by the CU Boulder BioFrontiers Next-Gen Sequencing core facility using an Agilent tape station. Isolated RNA was sent to the University of Colorado Cancer Center Genomics and Microarray Core for ‘Ribominus’ Ribosomal RNA depletion, NGS library preparation, and total RNA sequencing.
 
-## RNA-sequencing informatics
+### RNA-sequencing informatics
 
 All RNA-sequencing data preprocessing was carried using standardized Nextflow RNA-sequencing (nf-core/rnaseq) with STAR alignment (genome GRCm39), transcriptome mapping with Salmon, and in silico ribosomal depletion using SortMeRNA. Differential gene expression was performed on feature counts tables using DESeq2 (Love et al., 2014). RNA splicing analysis was performed using LeafCutter (Li et al., 2018).
 
-## CLIP/splicing cluster analysis
+#### CLIP/splicing cluster analysis
 
 The locations of splicing clusters generated using LeafCutter and Hnrnpa2b1 eCLIP peaks from myotubes were each compared against genes in the mm10 refGene table from the UCSC Genome Browser to determine the number of clusters or peaks overlapping each gene. The overlap of each cluster or peak was then subdivided into coverage of either UTR or segments of the gene, divided into percentiles along the gene. These were normalized and plotted against each other using R and ggplot2.
 
-## Relative distance
+#### Relative distance
 
 Relative distance between splicing clusters generated using LeafCutter and Hnrnpa2b1 eCLIP peaks from myotubes were generated using the bedtools reldist command, using eCLIP peaks as the first input, and splicing clusters in genes with eCLIP peaks as the second input (Favorov et al., 2012).
 
-## QAPA poly-A analysis
+#### QAPA poly-A analysis
 
 As previously described, RNA-sequencing reads were trimmed, in silico ribodepleted, and reads were mapped to an mm10 3′UTR annotation file using Salmon v0.13.1. Quantification of alternative polyadenylation (QAPA) was then used to estimate relative alternative 3′UTR isoform usage (Ha et al., 2018). Lengthening or shortening of a gene’s poly(A) tail was determined by first calculating a proximal poly(A) site usage (PPAU) defined as the percentage of reads mapping to the most proximal poly(A) site relative to reads mapping to the whole 3′UTR. ΔPPAU was then calculated as the median PPAU Hnrnpa2b1 KO – median PPAU WT (three replicates per condition). A gene with a ΔPPAU >20 was defined as having a shortened poly(A) tail, and a gene with a ΔPPAU < –20 was defined as having a lengthened poly(A) tail.
 
-## Hnrnpa2b1 immunoprecipitation and qRT-PCR
+### Hnrnpa2b1 immunoprecipitation and qRT-PCR
 
 C2C12 Hnrnpa2b1-WT and KO myoblasts were seeded at 6 × 106 cells per 15 cm plate, grown 24 hr at 37°C, 5% CO2, and harvested as undifferentiated myoblasts. Myoblasts were lysed in a CHAPS-based buffer and pre-cleared using protein-A bound Dynabeads (Thermo, 10001D). Pre-cleared cell lysates were incubated with rabbit polyclonal anti-Hnrnpa2b1 antibody (ab31645, Abcam). Antibody-bound Hnrnpa2b1 was bound to protein-A Dynabeads overnight and magnetically isolated from the whole-cell lysate. Hnrnpa2b1-bound RNA was isolated from the Dynabead-Antibody-Hnrnpa2b1 complex via TRIZol RNA purification. cDNA libraries were created from purified RNA via oligo-DT priming and SuperScriptIII-enzyme reverse transcription. cDNA libraries were probed against Hnrnpa2b1-eCLIP hits chosen as a subset of the significantly enriched Gene Ontology terms via quantitative, real-time PCR (qRT-PCR). Primers used target Gapdh, Hnrnpa2b1, Prpf19, Snrnp70, Sfpq, Mbnl1, Hnrnpa3, and Mef2a. (Primer sequence is given in Supplementary file 1.) qRT-PCR was performed using SYBR-Green qRT-PCR reagent (Bio-Rad), and fluorescent emission was measured using a Bio-Rad CFX384 Real-Time PCR Detection system.

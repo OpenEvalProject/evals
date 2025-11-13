@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05e6pjy56 Laureate Institute for Brain Research Tulsa United States
-2. https://ror.org/04wn28048 Department of Biological Sciences, University of Tulsa Tulsa United States
-3. https://ror.org/04xeg9z08 Laboratory of Brain and Cognition, National Institute of Mental Health Bethesda United States
-4. https://ror.org/035rzkx15 Laboratory for Autonomic Neuroscience, Imaging, and Cognition (LANIC), Department of Psychosomatic Medicine and Psychotherapy, Jena University Hospital Jena Germany
-5. https://ror.org/046rm7j60 Department of Psychiatry and Biobehavioral Sciences, Semel Institute for Neuroscience and Human Behavior, David Geffen School of Medicine, University of California at Los Angeles Los Angeles United States
+1. Laureate Institute for Brain Research Tulsa United States ([ROR:05e6pjy56](https://ror.org/05e6pjy56))
+2. Department of Biological Sciences, University of Tulsa Tulsa United States ([ROR:04wn28048](https://ror.org/04wn28048))
+3. Laboratory of Brain and Cognition, National Institute of Mental Health Bethesda United States ([ROR:04xeg9z08](https://ror.org/04xeg9z08))
+4. Laboratory for Autonomic Neuroscience, Imaging, and Cognition (LANIC), Department of Psychosomatic Medicine and Psychotherapy, Jena University Hospital Jena Germany ([ROR:035rzkx15](https://ror.org/035rzkx15))
+5. Department of Psychiatry and Biobehavioral Sciences, Semel Institute for Neuroscience and Human Behavior, David Geffen School of Medicine, University of California at Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
@@ -42,9 +42,169 @@ Of the 127 total participants included in this study, 57 ADE individuals and 46 
 
 **Figure 1.:** During a single functional neuroimaging scanning session two neuroimaging tasks were used to localize the convergence between bottom-up and top-down interoceptive processing. The isoproterenol infusion (ISO) task manipulated interoceptive input in a bottom-up manner, while the visceral interoceptive attention (VIA) task manipulated interoceptive attention in a top-down manner. During the ISO task, participants were asked to attend to their cardiorespiratory sensations while receiving double-blinded infusions of either isoproterenol 2.0 micrograms (mcg, solid line) or 0.5 mcg (not pictured), a rapidly acting peripheral beta-adrenergic agonist eliciting transiently increased cardiovascular and respiratory signals in a manner akin to adrenaline, or infusions of saline (dashed line), resulting in no physiological change. During the VIA task, on-screen cues directed participants to shift their attention towards naturally occurring body sensations from a particular internal organ (heart, lungs, or stomach, the interoceptive attention conditions) or the word ‘TARGET’ (the exteroceptive attention condition) that would flash at different intensities. No infusions were given during this task, so the body remained at physiological rest. Both tasks were preceded and followed by a resting state scan.
 
-## Convergence analysis
+**Table 1.**
+ Demographic information for the transdiagnostic anxiety, depression, and/or eating disorders (ADE) group and the propensity-matched healthy comparison (HC) group.GAD=generalized anxiety disorder, MDD=major depressive disorder, AN=anorexia nervosa, PTSD=post-traumatic stress disorder, OCD=obsessive-compulsive disorder, SUD=substance use disorder, BMI=body mass index, STAI=State-Trait Anxiety Inventory, ASI=Anxiety Sensitivity Index, with a Total Score, and Physical, Cognitive, and Social subscales, PHQ-9=depression module of the Patient Health Questionnaire, SCOFF=‘Sick, Control, One, Fat, Food’ eating disorder questionnaire.
 
-Bilateral patches of the ventral mid-insular cortex were commonly activated during the ISO and VIA tasks (Figure 2) (Table 2). Quantification of the spatial extent of this convergence in the pre-defined probabilistic agranular, dysgranular, and granular subregions revealed that these convergent clusters were localized primarily to the dysgranular insula bilaterally (Figure 3A), but with a hemispheric asymmetry across groups: the ADE group showed a greater proportion of overlapping voxels within the left dysgranular insula (χ21 = 26.7, p<0.001 for group comparison) whereas the HC group showed a greater number of overlapping voxels within the right dysgranular insula (χ21 = 26.7, p<0.001 for group comparison) (Figure 3B). Correspondingly, the spatial similarity of these convergently activated voxels between the groups was lower for the left dysgranular insula (Dice coefficient of 0.58) than for the right (Dice coefficient of 0.78) (Figure 2). In addition to these group hemispheric differences in spatial extent, there was a lower amount of overlap between the two tasks in the left dysgranular insula for both groups (left hemisphere overlap coefficients: 0.42 and 0.63 for HC and ADE, respectively; right hemisphere overlap coefficients: 0.83 and 0.78, for HC and ADE, respectively).
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HC (n=46)</th>
+      <th>ADE (n=46)</th>
+      <th>t</th>
+      <th>df</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Sex</td>
+      <td>41 Female</td>
+      <td>45 Female</td>
+      <td rowspan="2">-</td>
+      <td rowspan="2">-</td>
+      <td rowspan="2">-</td>
+    </tr>
+    <tr>
+      <td>5 Male</td>
+      <td>1 Male</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>24 (5)</td>
+      <td>25 (7)</td>
+      <td>0.57</td>
+      <td>80.49</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>23.48 (3.26)</td>
+      <td>23.34 (3.33)</td>
+      <td>–0.20</td>
+      <td>89.97</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>STAI</td>
+      <td>30.0 (1.1)</td>
+      <td>56.0 (1.4)</td>
+      <td>–14.43</td>
+      <td>83.01</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ASI-Total</td>
+      <td>7.39 (5.26)</td>
+      <td>13.98 (8.89)</td>
+      <td>8.89</td>
+      <td>57.47</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ASI-Physical</td>
+      <td>1.15 (1.59)</td>
+      <td>5.19 (5.81)</td>
+      <td>5.81</td>
+      <td>53.38</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ASI-Cognitive</td>
+      <td>0.98 (1.47)</td>
+      <td>7.41 (6.53)</td>
+      <td>6.52</td>
+      <td>49.54</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ASI-Social</td>
+      <td>5.26 (4.04)</td>
+      <td>13.83 (6.08)</td>
+      <td>7.96</td>
+      <td>78.28</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>PHQ-9</td>
+      <td>0.78 (1.11)</td>
+      <td>10.39 (5.98)</td>
+      <td>10.72</td>
+      <td>48.12</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>SCOFF</td>
+      <td>0 (0)</td>
+      <td>1.09 (1.23)</td>
+      <td>6.01</td>
+      <td>45</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Diagnoses</td>
+      <td rowspan="7">No psychiatric disorders</td>
+      <td>67% GAD</td>
+      <td rowspan="7">-</td>
+      <td rowspan="7">-</td>
+      <td rowspan="7">-</td>
+    </tr>
+    <tr>
+      <td>72% MDD (current or remitted)</td>
+    </tr>
+    <tr>
+      <td>35% AN</td>
+    </tr>
+    <tr>
+      <td>13% Social anxiety disorder</td>
+    </tr>
+    <tr>
+      <td>11% PTSD</td>
+    </tr>
+    <tr>
+      <td>4% OCD</td>
+    </tr>
+    <tr>
+      <td>4% SUD</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Medication use</td>
+      <td rowspan="8">None</td>
+      <td>Taking one or more psychiatric medication:</td>
+      <td rowspan="8">-</td>
+      <td rowspan="8">-</td>
+      <td rowspan="8">-</td>
+    </tr>
+    <tr>
+      <td>Serotonergic*: 35%</td>
+    </tr>
+    <tr>
+      <td>Histaminergic†: 11%</td>
+    </tr>
+    <tr>
+      <td>Dopaminergic‡: 7%</td>
+    </tr>
+    <tr>
+      <td>SNRI§: 7%</td>
+    </tr>
+    <tr>
+      <td>Benzodiazepene¶: 4%</td>
+    </tr>
+    <tr>
+      <td>Miscellaneous**: 2%</td>
+    </tr>
+    <tr>
+      <td>Beta-blocker††: 2%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Escitalopram, Fluoxetine, Trazodone, Sertraline, Paroxetine, Duloxetine.†Lamotrigine, Hydroxyzine, Doxepin.‡Olanzapine, Aripiprazole, Quetiapine.§Atomoxetine, Buproprion, Desvenlafaxine.¶Clonazepam, Alprazolam.**Vortioxetine.††Propranolol (as needed usage)._
+
+### Convergence analysis
+
+Bilateral patches of the ventral mid-insular cortex were commonly activated during the ISO and VIA tasks (Figure 2) (Table 2). Quantification of the spatial extent of this convergence in the pre-defined probabilistic agranular, dysgranular, and granular subregions revealed that these convergent clusters were localized primarily to the dysgranular insula bilaterally (Figure 3A), but with a hemispheric asymmetry across groups: the ADE group showed a greater proportion of overlapping voxels within the left dysgranular insula ($χ$21 = 26.7, p<0.001 for group comparison) whereas the HC group showed a greater number of overlapping voxels within the right dysgranular insula ($χ$21 = 26.7, p<0.001 for group comparison) (Figure 3B). Correspondingly, the spatial similarity of these convergently activated voxels between the groups was lower for the left dysgranular insula (Dice coefficient of 0.58) than for the right (Dice coefficient of 0.78) (Figure 2). In addition to these group hemispheric differences in spatial extent, there was a lower amount of overlap between the two tasks in the left dysgranular insula for both groups (left hemisphere overlap coefficients: 0.42 and 0.63 for HC and ADE, respectively; right hemisphere overlap coefficients: 0.83 and 0.78, for HC and ADE, respectively).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92820/elife-92820-fig2-v1.jpg)
 
@@ -53,6 +213,56 @@ Bilateral patches of the ventral mid-insular cortex were commonly activated duri
 ![Figure 3.](https://cdn.elifesciences.org/articles/92820/elife-92820-fig3-v1.jpg)
 
 **Figure 3.:** (A) Hemisphere-specific convergence maps (white outlines) overlaid on a tripartite probabilistic cytoarchitectonic division of the insular cortex. (B) Quantification of convergence within each cytoarchitectonic subregion (i.e. number of co-activated voxels in relation to the total number of voxels within that subregion), showing asymmetric proportional voxel co-activation in the left and right dysgranular insula between the groups. *indicates significant group difference for the proportion of co-activated voxels in each subregion via chi-square test. HC: healthy comparison. ADE: anxiety, depression, and/or eating disorders.
+
+**Table 2.**
+ Insular regions demonstrate convergent processing between top-down and bottom-up interoception.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">MNI coordinates (center of mass)</th>
+      <th rowspan="2">Volume (mm3)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left Insula: ADE</td>
+      <td>–39</td>
+      <td>–0.1</td>
+      <td>–8.2</td>
+      <td>1736 (217 voxels)</td>
+    </tr>
+    <tr>
+      <td>Left Insula: HC</td>
+      <td>–40</td>
+      <td>–1.3</td>
+      <td>–4.8</td>
+      <td>1240 (155 voxels)</td>
+    </tr>
+    <tr>
+      <td>Right Insula: ADE</td>
+      <td>39</td>
+      <td>2.3</td>
+      <td>–12.9</td>
+      <td>1088 (136 voxels)</td>
+    </tr>
+    <tr>
+      <td>Right Insula: HC</td>
+      <td>39.9</td>
+      <td>2.2</td>
+      <td>–10.3</td>
+      <td>1960 (245 voxels)</td>
+    </tr>
+  </tbody>
+</table>
 
 Despite these group differences in the spatial extent and spatial similarity of convergence, the magnitude of activation within convergent dysgranular subregions during the Peak of perturbation (ISO 2.0 mcg dose) or Heart and Lung attention (VIA task) was not different between groups (F1,90=0.64 and 0.05, p=0.43 and 0.82 for main effect of group in ISO and VIA tasks, respectively). However, during both of these task conditions, activation was greater within the right hemisphere than the left (F1,90=6.13 and 5.10, p=0.015 and 0.027 for main effect of hemisphere during ISO and VIA tasks, respectively; t90=–2.48 and –2.25, p=0.02 and 0.03 for post-hoc contrasts between the left versus right hemisphere when collapsed across groups) (Figure 4A). This hemispheric effect on activation magnitude was specific to interoceptive processing, as no similar hemispheric difference was seen during the exteroceptive condition of the VIA task (F1,90=0.68, p=0.41). Furthermore, the magnitude of activation within the right (but not the left) dysgranular convergent region during the peak of cardiorespiratory perturbation was associated with the intensity of real-time cardiorespiratory sensations (i.e. mean dial rating) during this period when examined across the entire sample (Pearson’s r=0.12 and 0.21, p=0.25 and 0.046 for the left and right hemispheres, respectively; Figure 4B). Conversely, PSC in either convergent hemisphere during perturbation was not associated with objective measures of physiological arousal (i.e. mean change in heart rate, Pearson’s r=0.11 and 0.09, p=0.31 and 0.40 for left and right hemispheres, respectively), post-scan ratings of cardiac intensity (Pearson’s r=0.16 and 0.20, p=0.15 and 0.06), post-scan ratings of respiratory intensity (Pearson’s r=0.12 and 0.06, p=0.26 and 0.58 for left and right hemispheres, respectively), post-scan ratings of state anxiety (Pearson’s r=0.14 and 0.08, p=0.20 and 0.49 for left and right hemispheres, respectively), or trait measures of anxiety sensitivity (i.e. ASI-Total, Pearson’s r=0.12 and 0.16, p=0.25 and 0.13 for left and right hemispheres, respectively).
 
@@ -66,25 +276,119 @@ Finally, pre- to post-task resting state functional connectivity of the converge
 
 **Figure 5.:** (A) Functional connectivity between the right convergent dysgranular insula subregion and the left middle frontal gyrus showed opposing effects in the anxiety, depression, and/or eating disorders (ADE) versus healthy comparisons (HC) groups. (B) While functional connectivity between these regions increased from baseline following interoception in the ADE group, it decreased in the HC group, resulting in a significant interaction effect. (C) Across the entire sample changes in functional connectivity were associated with trait measures of anxiety and depression. When examined in each group individually, associations between connectivity change and trait anxiety occurred in opposite directions (left and middle panel).
 
-## Divergence analysis
+### Divergence analysis
 
-The Anticipation period of the ISO task engaged large swaths of the bilateral agranular insular cortex that were not activated at any point during the VIA task (Figure 6A) (Table 3). During this period, the right hemisphere was activated to a greater spatial extent than the left in both groups (χ21 = 22.7 and 7.3, p<0.001 and p=0.007 for left vs. right in the HC and ADE groups, respectively), and to a greater spatial extent in HC versus ADE individuals in the right hemisphere only (χ21 = 7.3, p=0.007 for group comparison). There was no group difference in the spatial extent in the left hemisphere (χ21 = 2.0, p=0.15) (Figure 6B). Notably, these spatial patterns of activation were similar between groups (Dice coefficient = 0.86 in the left and 0.87 in the right).
+The Anticipation period of the ISO task engaged large swaths of the bilateral agranular insular cortex that were not activated at any point during the VIA task (Figure 6A) (Table 3). During this period, the right hemisphere was activated to a greater spatial extent than the left in both groups ($χ$21 = 22.7 and 7.3, p<0.001 and p=0.007 for left vs. right in the HC and ADE groups, respectively), and to a greater spatial extent in HC versus ADE individuals in the right hemisphere only ($χ$21 = 7.3, p=0.007 for group comparison). There was no group difference in the spatial extent in the left hemisphere ($χ$21 = 2.0, p=0.15) (Figure 6B). Notably, these spatial patterns of activation were similar between groups (Dice coefficient = 0.86 in the left and 0.87 in the right).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92820/elife-92820-fig6-v1.jpg)
 
 **Figure 6.:** (A) Selective activation of the bilateral agranular anterior insula during the Anticipation period (top) and Saline Peak period (bottom) of the isoproterenol (ISO) task. Both epochs demarcate periods of maximal expectancy about future changes in body state while the body remains at physiological rest (i.e. no ensuring evidence of heart rate or breathing rate increases). These brain areas showed activity only during these periods of the ISO task and were not active during the Heart and Lung attention part of the visceral interoceptive attention (VIA) task, indicating they have specialized roles. (B) Quantifying the spatial extent of this agranular activation (i.e. number of active voxels in relation to total number of voxels in that subregion) revealed that greater right hemisphere activation during the anticipation window occurred for both groups, and more so in the HC than the ADE group. During the peak period of Saline, this activation covered more of the bilateral agranular insula in both groups. However, the right hemisphere was activated more than the left in both groups, and the HC group exhibited more active voxels in the right hemisphere than the left, and more than the ADE group in both hemispheres, while the ADE group showed no hemispheric difference during this window. (C) Increased ISO-specific activation of agranular insular during the anticipation period versus the saline peak period. This pattern, occurring for both hemispheres and across both groups, was greater in the right than the left hemisphere.
 
-During the Peak period of the Saline dose, the spatial extent of activation in the agranular insula increased to include significantly more voxels, for both groups and hemispheres (χ21 = 75.3 and 71.4, p<0.001 for Anticipation vs. Peak in the left and right hemispheres in HC; χ21 = 36.3 and 12.1, p<0.001 for Anticipation vs. Peak in the left and right hemispheres in ADE) (Figure 6B). This activation expansion occurred to a greater degree in the HC versus ADE group (χ21 = 17.2 and 70.3, corrected p<0.001 for HC versus ADE in the left and right hemispheres, respectively). Finally, agranular insula recruitment within the HC group during the Saline Peak period was shifted towards the right hemisphere (i.e. more active voxels in the right than the left, χ21 = 24.3, p<0.001), while the ADE group showed no hemispheric difference during this period (χ21 = 0.10, p=0.75). Despite this difference in number of activated voxels, the spatial patterns of activation were still largely overlapping between groups (Dice coefficient = 0.88 in the left, 0.82 in the right).
+**Table 3.**
+ Agranular anterior insular regions demonstrate divergent processing during periods of increased bodily expectancies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">MNI coordinates (center of mass)</th>
+      <th rowspan="2">Volume (mm3)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Anticipation</td>
+      <td rowspan="2">Left: ADE</td>
+      <td>–31.6</td>
+      <td>17.9</td>
+      <td>4.8</td>
+      <td>1168 (146 voxels)</td>
+    </tr>
+    <tr>
+      <td>–31.9</td>
+      <td>9.2</td>
+      <td></td>
+      <td>344 (43 voxels)</td>
+    </tr>
+    <tr>
+      <td>Left: HC</td>
+      <td>–31.5</td>
+      <td>15.2</td>
+      <td>–1.2</td>
+      <td>1688 (211 voxels)</td>
+    </tr>
+    <tr>
+      <td>Right: ADE</td>
+      <td>35.4</td>
+      <td>19.1</td>
+      <td>1.4</td>
+      <td>1648 (206 voxels)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Right: HC</td>
+      <td>37</td>
+      <td>13</td>
+      <td>–9</td>
+      <td>1744 (218 voxels)</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>7</td>
+      <td>–19</td>
+      <td>368 (46 voxels)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Saline (Peak)</td>
+      <td>Left: ADE</td>
+      <td>–33.1</td>
+      <td>16.7</td>
+      <td>–1.6</td>
+      <td>2264 (283 voxels)</td>
+    </tr>
+    <tr>
+      <td>Left: HC</td>
+      <td>–33.2</td>
+      <td>15.7</td>
+      <td>–2.7</td>
+      <td>2760 (345 voxels)</td>
+    </tr>
+    <tr>
+      <td>Right: ADE</td>
+      <td>35.4</td>
+      <td>18.6</td>
+      <td>–0.9</td>
+      <td>2120 (265 voxels)</td>
+    </tr>
+    <tr>
+      <td>Right: HC</td>
+      <td>34.3</td>
+      <td>16.7</td>
+      <td>–4.7</td>
+      <td>3024 (378 voxels)</td>
+    </tr>
+  </tbody>
+</table>
+
+During the Peak period of the Saline dose, the spatial extent of activation in the agranular insula increased to include significantly more voxels, for both groups and hemispheres ($χ$21 = 75.3 and 71.4, p<0.001 for Anticipation vs. Peak in the left and right hemispheres in HC; $χ$21 = 36.3 and 12.1, p<0.001 for Anticipation vs. Peak in the left and right hemispheres in ADE) (Figure 6B). This activation expansion occurred to a greater degree in the HC versus ADE group ($χ$21 = 17.2 and 70.3, corrected p<0.001 for HC versus ADE in the left and right hemispheres, respectively). Finally, agranular insula recruitment within the HC group during the Saline Peak period was shifted towards the right hemisphere (i.e. more active voxels in the right than the left, $χ$21 = 24.3, p<0.001), while the ADE group showed no hemispheric difference during this period ($χ$21 = 0.10, p=0.75). Despite this difference in number of activated voxels, the spatial patterns of activation were still largely overlapping between groups (Dice coefficient = 0.88 in the left, 0.82 in the right).
 
 Along with expansions in the spatial extent of activation, the signal intensity in the agranular insula increased from the Anticipation period to the Saline Peak period (F1,270=28, p<0.0001 for the main effect of epoch), with no differences between groups (F1,270 = 0.25, p=0.62 for the main effects of group) (Figure 6C). This increase occurred in both hemispheres (t270=2.7 and 4.8, p=0.008 and <0.001 for Saline Peak – Anticipation contrast in the left and right hemispheres, respectively, when collapsed across groups). Notably, the right hemisphere was activated more strongly than the left during the Saline Peak period (t270=–3.0, p=0.003), whereas there was no difference across hemispheres in the Anticipation window (t270=–0.8, p=0.41). The magnitude of agranular insula activation was not related to trait measures of anxiety sensitivity in either epoch or hemisphere when examined transdiagnostically across groups (ASI * hemispheric interaction effect: F1,90 = 1.9, p=0.17 for Anticipation, and F1,90 = 1.7, p=0.19 for Saline Peak).
 
-## Physiological response and perceptual ratings
+### Physiological response and perceptual ratings
 
 During the 2.0 mcg dose there were large perturbations in heart rate in both groups, and while the ADE appeared to have a slightly greater response on average, this reached statistical significance via permutation testing only during two continuous time points in the Peak period (98 s through 99 s, t=1.7 and 1.5, p=0.044 and 0.045, Figure 7A). However, the ADE group reported significantly higher real-time dial ratings for the latter portion of the Peak period extending into much of the ensuing recovery period (110 s through 142 s, t=1.8–2.3, p=0.008–0.042, Figure 7B). During the Saline dose of the ISO task, both heart rate and perceptual dial ratings remained near baseline levels. While heart rate did not differ between groups (t=–0.53–1.64, p=0.05–1.00), the HC group showed small but statistically significant increases in dial ratings compared to those of the ADE group for portions of the Peak period and the ensuing recovery period (t=–1.67 to –2.60, p=0.005–0.048) (Figure 7A and B). Although there were ISO-induced differences in continuous measures of cardiorespiratory sensation, there were no group differences in retrospective cardiac or respiratory intensity ratings for the 2.0 mcg infusion (t80=1.5 and 1.2 for heart and lungs respectively, p=0.13 and 0.25) or the saline infusion (t80=0.3 and 1.2, p=0.75 and 0.22) (Figure 7C). The ADE group reported greater retrospective anxiety than the HC group following infusions (t85=4.8 and 3.8 for 2.0 mcg and Saline, respectively, p<0.001), with no differences in excitement (t85=0.2 and 0.9, p=0.80 and 0.37 for 2.0 mcg and Saline, respectively). During the VIA task, the ADE group reported higher cardiac intensity ratings than the HC group during heart-focused attention (t89=2.0, p=0.04) but lower exteroceptive intensity ratings during the target condition (t90=2.7, p<0.01). There were no group differences in the intensity of reported lung or stomach sensations (t89=1.6 and 1.4, p=0.10 and 0.16) (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92820/elife-92820-fig7-v1.jpg)
 
-**Figure 7.:** A) and continuous dial ratings (B) during the 2.0 mcg (solid lines) and Saline (dotted lines) doses of the isoproterenol (ISO) task.Heart rate changes observed during both infusions were generally similar between both groups across the majority of the infusion period. The cluster-based permutation analysis showed a 2 s instance of significantly higher heart rate in the anxiety, depression, and/or eating disorders (ADE) group starting at the 98th second of the 2.0 mcg dose only during the Peak period, followed by a prolonged increase in dial rating for large portions of the Peak and Recovery periods (110 s through 142 s, shown via the shaded area). No heart rate differences were observed during the Saline infusion. *indicates p<0.05 for significant group differences using permutation analysis. (C) Retrospective ratings on the ISO task showed no significant group differences in cardiac or respiratory intensity or excitement following saline or the 2.0 mcg infusion, while the ADE group reported increased anxiety following both infusions. (D) Sensation ratings during the visceral interoceptive attention (VIA) task. The ADE group reported higher cardiac intensity ratings than the healthy comparison (HC) group but lower exteroceptive ratings, with no group difference in respiratory or gastric sensation ratings. *indicates p<0.05 for a two-sample t-test between groups, separately for each condition. Where appropriate, both the p-value and Cohen’s d are shown.
+**Figure 7.:** Heart rate changes observed during both infusions were generally similar between both groups across the majority of the infusion period. The cluster-based permutation analysis showed a 2 s instance of significantly higher heart rate in the anxiety, depression, and/or eating disorders (ADE) group starting at the 98th second of the 2.0 mcg dose only during the Peak period, followed by a prolonged increase in dial rating for large portions of the Peak and Recovery periods (110 s through 142 s, shown via the shaded area). No heart rate differences were observed during the Saline infusion. *indicates p<0.05 for significant group differences using permutation analysis. (C) Retrospective ratings on the ISO task showed no significant group differences in cardiac or respiratory intensity or excitement following saline or the 2.0 mcg infusion, while the ADE group reported increased anxiety following both infusions. (D) Sensation ratings during the visceral interoceptive attention (VIA) task. The ADE group reported higher cardiac intensity ratings than the healthy comparison (HC) group but lower exteroceptive ratings, with no group difference in respiratory or gastric sensation ratings. *indicates p<0.05 for a two-sample t-test between groups, separately for each condition. Where appropriate, both the p-value and Cohen’s d are shown.
 
 ## Discussion
 
@@ -110,29 +414,29 @@ In conclusion, this study confirms the pivotal role of the dysgranular insula in
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Seventy individuals with primary diagnoses of anxiety, depression, and/or eating disorders (ADE) and 57 healthy comparisons (HC) were included in the study. Diagnoses were based on DSM-5 criteria using the Mini-International Neuropsychiatric Interview (Sheehan et al., 1998). Comorbid anxiety and depression were allowed, but those with panic disorder were excluded to reduce the likelihood of isoproterenol-induced panic anxiety (Pohl et al., 1988) in the scanner. Participants with a primary diagnosis of anxiety were further required to have scores greater than seven for the GAD-7 (Spitzer et al., 2006) and greater than 10 for the Overall Anxiety Severity and Impairment Scale (OASIS) (Campbell-Sills et al., 2009), indicative of clinically significant anxiety levels. Participants with eating disorders were required to have met lifetime DSM-5 criteria for anorexia nervosa but were required to be weight restored as defined by a minimum body mass index of 18.5 or greater for at least 1 month to control for the well-described state effects of acute starvation on neural activation (Wierenga et al., 2015). We used several self-report scales to measure symptom severity across the sample due to our interest in transdiagnostic markers of pathology. Psychotropic medications were allowed as long as there was no change in dosage during the four weeks preceding the MRI. Finally, a medical evaluation including a 12-lead electrocardiogram read by a cardiologist ensured all participants were generally healthy, free of cardiorespiratory, endocrine, metabolic, or other illnesses, as well as free of major neurological disorders or other psychiatric disorders besides ADE. Additional exclusion criteria involved anything that would render the participant unfit for the MRI environment, such as inability to remove body piercings or implanted electrodes. The study was part of a larger project investigating interoception in anorexia nervosa and generalized anxiety disorder (ClinicalTrials.gov Identifier: NCT02615119). Additional recruitment, screening, and exclusion information can be found in Teed et al., 2022, which used a subset of the current sample for a separate analysis.
 
 All study procedures were approved by the Western Institutional Review Board (WIRB#20170214), and all participants provided written informed consent before participation. All data were collected at the Laureate Institute for Brain Research in Tulsa, OK.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 During a single scanning session, participants completed two fMRI tasks designed to preferentially assess intersecting aspects of cardiorespiratory interoception while measuring blood oxygen level-dependent (BOLD) signals (Figure 1). The Isoproterenol Infusion (ISO) task was always performed before the Visceral Interoceptive Attention (VIA) task, which we considered to preferentially emphasize the bottom-up or top-down processing of interoceptive signals, respectively. The fixed order of these tasks reflected the project’s primary emphasis on acquiring the infusion data. Complete details of these paradigms are described in the following sections. Both tasks were immediately preceded by and followed by an 8 min eyes-open resting state scan. For the resting state scans, participants were instructed to remain as still as possible, to keep their eyes open and fixated on a white cross centered upon a dark screen, and to ‘clear your mind and do not think about anything in particular.’ To minimize head motion during scanning, a layer of tape was gently placed over the participant’s forehead to provide them with tactile feedback regarding the head position. Cardiac and respiratory activity was measured simultaneously at 40 Hz during all scans using a pulse oximeter and thoracic respiratory belt, respectively. Finally, participants completed a high-resolution anatomical MRI scan before any resting state or task-based imaging data was collected.
 
-## Isoproterenol infusion task
+#### Isoproterenol infusion task
 
 Intravenous bolus infusions of the peripherally-acting beta-adrenergic agonist isoproterenol (ISO) were used to manipulate afferent interoceptive signals in a bottom-up fashion. Infusions of 2.0 micrograms (mcg), 0.5 mcg, or Saline were administered 60 s into each 4 min infusion scan as per (Hassanpour et al., 2018) and (Teed et al., 2022). Infusion delivery was randomized, double-blinded, and repeated twice for each dose for a total of six infusions (i.e. six infusion scans). Throughout each infusion scan, participants were instructed to focus their attention on the sensations from their heart and lungs while providing real-time, continuous intensity ratings using an MRI-compatible dial (Current Designs Inc) with their dominant hand, the rating of which was visible to them on the screen while scanning. The intensity rating scale ranged from 0 (none or normal) to 10 (most ever). Thus, this task engaged top-down attention towards cardiorespiratory sensations while parametrically perturbing the bottom-up stream in the ISO trials, with an absence of such perturbation in Saline trials. Following our lab’s previous studies (Hassanpour et al., 2018; Teed et al., 2022) we split the time course of this task into pre-defined epochs of interest, and focused on the Anticipation period (60–80 s, directly following the infusion but before the ISO-induced rise in heart rate) and the Peak period (80–120 s, encompassing the onset and peak magnitude of ISO-induced heart rate change), and contrasted these with the Baseline period (the initial 45 s of the task). Following each scan, participants also retrospectively reported the intensity of perceived cardiac or respiratory sensations, separately, that they felt during the scan, as well as their anxiety or excitement. To familiarize participants with the task and isoproterenol-induced sensations, single-blinded infusions of 1 mcg ISO and Saline (one trial each) were given before the MRI session.
 
-## Visceral interoception attention task
+#### Visceral interoception attention task
 
 The visceral interoceptive attention (VIA) task was used to assess the top-down attentional processing of interoceptive signals at rest (i.e. no infusions were delivered). This minimalistic task, adapted from Simmons et al., 2013, involved repeated trials of interoceptive or exteroceptive attention delivered across three 6 min runs, with the order of these runs randomized across participants. During the interoceptive attention trials, the words ‘HEART’ ‘LUNGS,’ or ‘STOMACH’ were presented on the screen for 8 s, during which participants were instructed to focus their attention on the naturally-occurring sensations experienced from that organ. During the exteroceptive attention control trials, the word ‘TARGET’ was shown on the screen at changing shades of black to gray, and participants were instructed to pay attention to the degree of color change. After half of all trials in each condition, participants were asked to indicate via an MRI-compatible button box the intensity of sensations they had perceived from that organ (interoceptive condition) or the intensity of the color change (exteroceptive condition) on a rating scale of 1 (no sensation/no change in color) to 7 (high intensity).
 
-## MRI data acquisition
+#### MRI data acquisition
 
 All scans were conducted in a three Tesla General Electric scanner with an eight-channel head coil (GE MR750; GE Healthcare). Anatomical images were acquired via T1-weighted, magnetization-prepared, rapid gradient-echo sequences images (MPRAGE). MPRAGE parameters were: 190 axial slices, slice thickness = 0.9 mm, TR/TE = 5/2.012 ms, FOV = 240 × 192 mm2, matrix size 256 × 256, flip angle 8 degrees, inversion time 725 ms, SENSE acceleration R=2, with a sampling bandwidth of 31.2. For the task-based and resting state functional scans, T2*-weighted images were acquired via an echoplanar sequence of the following parameters: single-shot gradient echo planar imaging (EPI) sequence covering the whole brain, obtaining 39 axial slices, 2.9 mm thick with no gap and a voxel size of 1.875 × 1.875 × 2.9 mm3, with TR/TE = 2000/27 ms, FOV = 240 × 240 mm2, flip angle 78 degrees, SENSE acceleration R=2 with a 96 × 96 matrix.
 
-## fMRI task-based analysis
+#### fMRI task-based analysis
 
 Each task was analyzed separately in AFNI (Cox, 1996), following the previously-published preprocessing pipelines specific to each task (Simmons et al., 2013; Teed et al., 2022). Preprocessing steps common to both tasks included removal of the first four volumes (ISO) or five volumes (VIA) for steady-state tissue magnetization, despiking, slice time correction, spatial smoothing (6 mm full width at half maximum Gaussian kernel), co-registration to the first volume, scaling of each voxel, and normalization to Talairach space. In the ISO task, temporal fluctuations of cardiac and respiratory frequencies and their first-order harmonics were additionally removed from the imaging data using RETROICOR, implemented via custom code in MATLAB (MathWorks).
 
@@ -142,13 +446,13 @@ After the creation of individual-level maps, quality control checks were perform
 
 Using this propensity-matched sample, group-level statistical activation maps were created for each task and group separately, using whole-brain voxel-wise t-tests (3dttest ++in AFNI) with Equitable Threshold And Clustering corrections for an overall False Positive Rate of 5% (Cox, 2019). With these group activation maps, we were thus able to identify voxels significantly active at the group level in each experimental condition.
 
-## Convergence maps
+#### Convergence maps
 
 To examine voxels co-activated across the ISO and VIA tasks, we restricted the functional neuroimaging analysis to the specific portions of each task that best exemplified the interoceptive processes of interest: namely, Heart + Lung interoceptive attention relative to exteroceptive attention in the VIA task, and the Peak period of the 2.0 mcg dose relative to the Baseline period in the ISO task. We narrowed the focus of analysis to this specific time period and dose of the ISO task because it represents, as shown in previous studies, the peak level of cardiorespiratory perturbation that can be confidently ascertained by subjective reports in all individuals (Hassanpour et al., 2018; Teed et al., 2022). Using the statistically-thresholded group activation maps from each task, binarized into active and non-active voxels, we created convergence maps by joining the binary maps across the specified contrasts of each task. These convergence maps thus identified which voxels were commonly activated, i.e., convergent, at the group level during both tasks. Due to our pre-specified focus on cytoarchitectural processing of the insular cortex, we subdivided these convergence maps (after converting to MNI space) into three bilateral insular subregions of interest, defined using the Brainnetome probabilistic cytoarchitectonic atlas (Fan et al., 2016), as follows: agranular anterior (regions 165 and 167 for the left hemisphere, 166 and 168 for the right), dysgranular mid (regions 169 and 173 for the left hemisphere, 170 and 174 for the right), and granular posterior (region 163 and 171 for the left hemisphere, 164 and 172 for the right).
 
 Each convergence map was evaluated in four ways: (1) the spatial extent of convergence (i.e. number of convergent voxels) within each insular subregion, tested for group differences via chi-square tests, (2) the spatial similarity of patterns of convergence between HC versus ADE groups, measured via Dice coefficient separately for each hemisphere (using AFNI’s 3ddot), (3) the degree of task overlap within each group and hemisphere separately, quantified via the overlap coefficient (i.e. the proportion of the ISO cluster overlapping with the VIA cluster, as per Bowring et al., 2019), and finally (4) the average PSC across convergent voxels within each cytoarchitectonic subregion, compared across groups and hemispheres using linear mixed effects regression (lmerTest library in R, with the following equation: percent signal change ~group * hemisphere + (1|subject)). In this linear model, the fixed effects of group and hemisphere were tested with respect to the magnitude of activation within subregion-specific convergent voxels, and significant main effects were interpreted using post-hoc contrasts between the estimated marginal means of each condition (emmeans library in R). Additionally, linear regression was used to examine possible associations between PSC in the hemisphere- and subregion-specific convergent voxels and the following variables: trait measures of anxiety and depression, the objective degree of peripheral perturbation (i.e. mean change in heart-rate during the Peak period of the 2.0 mcg dose), real-time subjective rating of cardiorespiratory intensity (i.e. mean change in dial rating during the Peak period of the 2.0 mcg dose), and retrospective ratings of cardiac and respiratory intensity, anxiety, and excitement following the 2.0 mcg dose. For these associations, we used a dimensional approach that collapsed across groups, considering all participants on a continuous scale.
 
-## fMRI resting state analysis
+#### fMRI resting state analysis
 
 In an exploratory whole-brain resting state functional connectivity (FC) analysis, we aimed to identify which connections, if any, between convergent regions and the rest of the brain were altered following the interoceptive manipulations, and if these patterns of connectivity change differed between groups. We predicted that residual group-specific changes in functional connectivity of the insular regions activated during the ISO and VIA tasks would be present in the resting state scan at the end of the scanning session, reflecting additional neural signatures of interoceptive processing. We did not include a temporal control condition for this exploratory analysis, and thus we were unable to examine the specificity of insular connectivity changes across time in relation to test-retest reliability measures of the group’s resting state data.
 
@@ -156,12 +460,12 @@ Resting state scans were analyzed in AFNI with a preprocessing pipeline optimize
 
 From the pre- and post-interoception resting state scans, time series were extracted from the convergent ROIs within the left and right hemispheres for HC and ADE groups separately, and correlated these respective time series against those of all other voxels in the brain to create an FC map for each resting state period (i.e. pre- and post-interoception). The resulting correlation coefficients were converted to Fisher z-statistics to produce a more normally distributed variable. To examine group differences in the effect of time (i.e. pre- versus post-interoception tasks) on resting-state FC, all resulting clusters of this group*time interaction analysis were corrected for multiple comparisons using the 3dClustSim function in AFNI, using 10,000 Monte Carlo simulations of whole-brain fMRI data to determine the cluster size at which the false positive probability was below α<0.05 with an uncorrected voxel-wise threshold of p<0.001, yielding a threshold of 150 contiguous voxels. This approach allowed the identification of regions that changed connectivity with the convergent insula differently for HC vs. ADE groups following top-down and bottom-up interoception. Finally, we conducted a correlational analysis to examine whether individual changes in FC were related to trait measures of anxiety and depression in the transdiagnostic sample, using the Bonferroni method for multiple comparison correction. These correlations were performed to help interpret the functional significance of residual changes, based on previous studies showing trait-related differences following interoception (De la Cruz et al., 2023).
 
-## Divergence maps
+#### Divergence maps
 
 To isolate voxels selective to the engagement of top-down expectancies about the body, we focused on specific time windows of the ISO task were where expectations of potential interoceptive change were preferentially engaged: namely, the Anticipation period across all doses, and the Peak period of the Saline dose. The Anticipation period covered the 20 s epoch right after the intravenous infusion was delivered but before the onset of any cardiorespiratory perturbation (in the case of an isoproterenol dose administration). Thus, the Anticipation period represented a time when no peripheral change was occurring, but also one where participants were unsure about whether or not such a change was coming. This state of uncertainty would continue into the Peak period of the Saline dose, where again, no peripheral physiological change was induced. In the setting of isoproterenol dose administration, this state of uncertainty would resolve when participants correctly identified and rated the onset of changes in cardiorespiratory sensation. Based on previous studies from our lab using this task, we expected that by the end of the Saline Peak window, some participants would update their beliefs about what had occurred after realizing that they had not reported experiencing a cardiorespiratory perturbation (i.e. their dial ratings remained at zero). Together, the Anticipation period and the ensuing Peak period of the Saline dose share some similarities with the VIA task in their involvement of top-down interoceptive attention during physiological rest, but critically, they differ in their added expectancies about possible changes in the state of the body. Thus, by isolating voxels preferentially active during these ISO anticipatory windows that were not active during VIA top-down attention alone, it we presumed it would be possible to separate the effect of bodily expectancies from the general effect of bodily attention.
 
 For this aim, group-level activation maps from the Anticipation period (averaged across all doses) and the Peak period of the Saline dose, both relative to the Baseline period, were examined. Like the convergence map approach described above, these maps were binarized within each period and group separately, transformed to MNI space, reduced to the cytoarchitecturally-subdivided insular cortex, and joined with the binarized activation map for the Heart and Lung relative to Target contrast in the VIA task. Here, our focus was instead on the divergent voxels, i.e., on those that were active only during specific periods of the ISO task and that were not co-active during the VIA task. As per our hypothesis regarding anterior insula involvement in interoceptive expectancy processing, these ‘ISO task only’ voxels were restricted to those within the agranular anterior insula, and were evaluated in two ways: (1) spatial extent of activation (i.e. number of voxels) across groups, time periods, and hemispheres, examining differences via chi-square tests with Bonferroni correction for multiple comparisons, and (2) magnitude of activation, examining differences in average PSC across the fixed effects of group, hemisphere, and time period using linear mixed effects regression and interpreting significant main effects using post-hoc contrasts of estimated marginal means (as previously described). Finally, we examined possible associations between average PSC in these expectancy-specific agranular regions and trait measures of anxiety using linear regression, transdiagnostically across groups.
 
-## Physiological and behavioral analysis
+#### Physiological and behavioral analysis
 
 To test for group differences in the time courses of heart rate and real-time dial ratings during the ISO task (2.0mcg isoproterenol and Saline infusions), we used cluster-based permutation testing (permutes package in R) separately for each dose after averaging across both trials. A significant group difference was defined as any contiguous set of time points (two or more continuous seconds) where permutation testing revealed a statistical difference at p<0.05. We used linear regression transdiagnostically to test if the magnitude of heart rate or dial rating change, when averaged across each epoch of interest, was associated with dimensional measures of trait anxiety and depression across groups. Finally, we used two-tailed t-tests separately for each task and condition to test group differences in retrospective ratings of interoceptive intensity, anxiety, and excitement in the ISO task and interoceptive and exteroceptive intensity in the VIA task. This approach reflected our primary interest in investigating group differences in perceptual ratings, rather than performing additional within-group comparisons across modalities or doses.

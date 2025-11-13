@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.08789.001 We previously demonstrated that network level functional connectivity in the human brain could be related to levels of inhibition in a major network node at baseline ( Stagg et al., 2014 ). In this study, we build upon this finding to directly investigate the effects of perturbing M1 GABA and resting state functional connectivity using transcranial direct current stimulation (tDCS), a neuromodulatory approach that has previously been demonstrated to modulate both metrics. FMRI data and GABA levels, as assessed by Magnetic Resonance Spectroscopy, were measured before and after 20 min of 1 mA anodal or sham tDCS. In line with previous studies, baseline GABA levels were negatively correlated with the strength of functional connectivity within the resting motor network. However, although we confirm the previously reported findings that anodal tDCS reduces GABA concentration and increases functional connectivity in the stimulated motor cortex; these changes are not correlated, suggesting they may be driven by distinct underlying mechanisms. DOI: http://dx.doi.org/10.7554/eLife.08789.001
+We previously demonstrated that network level functional connectivity in the human brain could be related to levels of inhibition in a major network node at baseline (Stagg et al., 2014). In this study, we build upon this finding to directly investigate the effects of perturbing M1 GABA and resting state functional connectivity using transcranial direct current stimulation (tDCS), a neuromodulatory approach that has previously been demonstrated to modulate both metrics. FMRI data and GABA levels, as assessed by Magnetic Resonance Spectroscopy, were measured before and after 20 min of 1 mA anodal or sham tDCS. In line with previous studies, baseline GABA levels were negatively correlated with the strength of functional connectivity within the resting motor network. However, although we confirm the previously reported findings that anodal tDCS reduces GABA concentration and increases functional connectivity in the stimulated motor cortex; these changes are not correlated, suggesting they may be driven by distinct underlying mechanisms.
 
 ## Introduction
 
@@ -28,57 +28,51 @@ Here, we aimed to extend our previous finding of a trait relationship between GA
 
 ## Results
 
-12 healthy controls each attended two MR sessions, during which they received either anodal or sham tDCS (
+12 healthy controls each attended two MR sessions, during which they received either anodal or sham tDCS (Figure 1). Magnetic resonance spectroscopy (MRS) data were acquired from the left M1 (Figure 2A) at baseline, during, and post either 20 min of 1 mA anodal tDCS applied to the left M1 or sham stimulation. Resting state fMRI data were acquired at baseline and post stimulation and were analysed using an independent component analysis approach (Figure 2B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08789/elife-08789-fig1-v3.jpg)
 
-**Figure 1.:** All subjects participated in two testing sessions with either anodal or sham tDCS, the order of which was counterbalanced across the group. GABA was measured at three time points (baseline, during, post) and resting state connectivity was measured at two time points (baseline, post). Timeline shown is an estimate of the length of the scans in minutes.DOI: http://dx.doi.org/10.7554/eLife.08789.002
+**Figure 1.:** All subjects participated in two testing sessions with either anodal or sham tDCS, the order of which was counterbalanced across the group. GABA was measured at three time points (baseline, during, post) and resting state connectivity was measured at two time points (baseline, post). Timeline shown is an estimate of the length of the scans in minutes.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08789/elife-08789-fig2-v3.jpg)
 
-**Figure 2.:** A) MR spectrum and (B) Group mean motor resting state network.DOI: http://dx.doi.org/10.7554/eLife.08789.003
+### Baseline GABA levels and M1 functional connectivity are inversely correlated
 
-## Baseline GABA levels and M1 functional connectivity are inversely correlated
-
-We first wished to investigate the previously described baseline relationship between GABA levels within M1 and the strength of motor functional connectivity in the same region. To ensure the specificity of this relationship, we calculated the baseline values within a 2 × 2 × 2 cm voxel corresponding to the location of the MRS acquisition for each individual separately. A partial correlation was then computed between the baseline GABA levels and baseline motor network strength within the MRS voxel across the two MR sessions, controlling for individual subjects. We demonstrated a significant inverse correlation between M1 GABA levels and the strength in motor functional connectivity within the MRS voxel (r(21) = −0.62, p < 0.01;
+We first wished to investigate the previously described baseline relationship between GABA levels within M1 and the strength of motor functional connectivity in the same region. To ensure the specificity of this relationship, we calculated the baseline values within a 2 × 2 × 2 cm voxel corresponding to the location of the MRS acquisition for each individual separately. A partial correlation was then computed between the baseline GABA levels and baseline motor network strength within the MRS voxel across the two MR sessions, controlling for individual subjects. We demonstrated a significant inverse correlation between M1 GABA levels and the strength in motor functional connectivity within the MRS voxel (r(21) = −0.62, p < 0.01; Figure 3), though not within the whole motor network as a whole (r(21) = −0.23, p = 0.29).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08789/elife-08789-fig3-v3.jpg)
 
-**Figure 3.:** DOI: http://dx.doi.org/10.7554/eLife.08789.004
+### Anodal tDCS decreases GABA levels within M1
 
-## Anodal tDCS decreases GABA levels within M1
-
-We then went on to investigate the time course of any M1 GABA changes induced by tDCS, using a repeated measures ANOVA with one factor of stimulation and one factor of time. As expected, there was no significant main effect of stimulation (F(1,11) = 3.22, p = 0.10) nor time (F(6,66) = 0.96, p = 0.46), but a significant stimulation × time interaction (F(6,66) = 2.29, p = 0.048;
+We then went on to investigate the time course of any M1 GABA changes induced by tDCS, using a repeated measures ANOVA with one factor of stimulation and one factor of time. As expected, there was no significant main effect of stimulation (F(1,11) = 3.22, p = 0.10) nor time (F(6,66) = 0.96, p = 0.46), but a significant stimulation × time interaction (F(6,66) = 2.29, p = 0.048; Figure 4). Post-hoc t-tests revealed significantly lower GABA post anodal tDCS compared with sham tDCS at both the post stimulation time points (paired t-test, Post1: t(11) = −4.14, p < 0.01; Post2: t(11) = −2.86, p = 0.02). GABA levels were also significantly lower post anodal tDCS compared with baseline (Post1: t(11) = −3.75, p < 0.01; Post2 t(11) = −2.51, p = 0.03) but not post sham tDCS compared with baseline (Post1: t(11) = 0.165, p = 0.87; Post2 t(11) = 0.75, p = 0.47). There were no significant differences between anodal and sham tDCS at any time point during stimulation (all p > 0.1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08789/elife-08789-fig4-v3.jpg)
 
-**Figure 4.:** (A) Gradual decrease in GABA levels was observed during anodal stimulation with the most prominent decrease approximately 10–15 min after stimulation has finished (Post1). Break in the lines indicate a time gap when approximately 7 min of resting state acquisition was performed immediately after tDCS stimulation. Timescale shows the approximate time from the beginning of the scan session. (Post 1: t(11) = −4.14, p < 0.01; Post 2: t(11) = −2.86, p = 0.02).DOI: http://dx.doi.org/10.7554/eLife.08789.005
+**Figure 4.:** (A) Gradual decrease in GABA levels was observed during anodal stimulation with the most prominent decrease approximately 10–15 min after stimulation has finished (Post1). Break in the lines indicate a time gap when approximately 7 min of resting state acquisition was performed immediately after tDCS stimulation. Timescale shows the approximate time from the beginning of the scan session. (Post 1: t(11) = −4.14, p < 0.01; Post 2: t(11) = −2.86, p = 0.02).
 
-## Anodal tDCS increases functional connectivity within M1
+### Anodal tDCS increases functional connectivity within M1
 
-To explore any tDCS-induced changes in motor network connectivity under the stimulating electrode, we wished first to define the region of M1 that showed the greatest connectivity with the rest of the motor network before stimulation. We therefore placed a 8 × 8 × 8 mm region of interest (ROI) centred on the peak coordinates of the motor RSN within the left M1. We calculated the mean motor network strength within this ROI for each subject, stimulation condition, and time point separately. As expected, a repeated measures ANOVA demonstrated no significant main effect of stimulation (F(1,11) = 0.20, p = 0.67) nor time (F(1,11) = 2.78, p = 0.12), but a significant stimulation × time interaction (F(1,11) = 6.39, p = 0.03;
+To explore any tDCS-induced changes in motor network connectivity under the stimulating electrode, we wished first to define the region of M1 that showed the greatest connectivity with the rest of the motor network before stimulation. We therefore placed a 8 × 8 × 8 mm region of interest (ROI) centred on the peak coordinates of the motor RSN within the left M1. We calculated the mean motor network strength within this ROI for each subject, stimulation condition, and time point separately. As expected, a repeated measures ANOVA demonstrated no significant main effect of stimulation (F(1,11) = 0.20, p = 0.67) nor time (F(1,11) = 2.78, p = 0.12), but a significant stimulation × time interaction (F(1,11) = 6.39, p = 0.03; Figure 5A). Post-hoc t-tests demonstrated a significant increase in the strength of functional connectivity in the motor network within the left M1 ROI post anodal stimulation (t(11) = −2.45, p = 0.03), but not post sham stimulation (t(11) = 0.07, p = 0.95; Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08789/elife-08789-fig5-v3.jpg)
 
-**Figure 5.:** (A) Anodal tDCS applied to M1, significantly increased functional connectivity within M1 of the motor network (t (11) = −2.45, p = 0.03). (B) There were no differences in the sham condition (t(11) = 0.07, p = 0.95).DOI: http://dx.doi.org/10.7554/eLife.08789.006
+**Figure 5.:** (A) Anodal tDCS applied to M1, significantly increased functional connectivity within M1 of the motor network (t (11) = −2.45, p = 0.03). (B) There were no differences in the sham condition (t(11) = 0.07, p = 0.95).
 
-## No relationship between change in GABA levels due to tDCS and change in functional connectivity
+### No relationship between change in GABA levels due to tDCS and change in functional connectivity
 
-Finally, we wished to investigate whether the relationship between M1 GABA levels and M1 functional connectivity observed at baseline (
+Finally, we wished to investigate whether the relationship between M1 GABA levels and M1 functional connectivity observed at baseline (Figure 4) held after modulation by tDCS. To do this, we compared change in GABA due to tDCS and the strength of motor network connectivity within the same voxel. There was no significant relationship between GABA levels post-tDCS [mean of Post1 and Post2] and functional connectivity within the MRS voxel post-tDCS, either when both anodal and sham stimulation were considered (r = −0.27, p = 0.22) or when anodal tDCS was considered alone (r = −0.453, p = 0.14; Figure 6). Neither was there any relationship between the tDCS-induced decrease in GABA levels (calculated as [(post average − baseline average)/baseline average]) and the tDCS-induced increase in functional connectivity (calculated as [(post − baseline)/baseline]) within the MRS voxel (r = −0.21, p = 0.52), nor within the motor network as a whole (r = −0.01, p = 0.981).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08789/elife-08789-fig6-v3.jpg)
-
-**Figure 6.:** DOI: http://dx.doi.org/10.7554/eLife.08789.007
 
 ## Discussion
 
 This study was performed to investigate the relationship between local inhibition within a major network node (here quantified via MRS-assessed GABA levels in M1) and functional connectivity within the motor network (quantified as network strength). In line with previous findings, we demonstrated that, at baseline, GABA levels within M1 correlate with the strength of the motor network at rest. We have also replicated the previous finding that anodal tDCS reduces GABA concentration (Stagg et al., 2009, 2011a) and increases functional connectivity in the stimulated cortex (Sehm et al., 2012; Amadi et al., 2014; Stagg et al., 2014). However, we show for the first time that the magnitude of these changes does not correlate across subjects, suggesting that they may be driven by distinct underlying mechanisms. We also provide novel evidence on the time course of GABA change with anodal tDCS and demonstrate that the previously described reduction in GABA is most prominent in the 30 min period after stimulation.
 
-## Effects of anodal tDCS on GABA
+### Effects of anodal tDCS on GABA
 
 As predicted, we saw a significant decrease in GABA levels in response to anodal tDCS with effects developing during stimulation and persisting for at least 30 min following stimulation. These results extend those of previous studies (Stagg et al., 2009, 2011a), in which we were not able to acquire data during stimulation, and data were only acquired for 20 min post stimulation. As we could not practically continue beyond 30 min, it is not clear how long it would take for GABA to fully return to baseline after the stimulation period. Previous neurophysiological data show an increase in cortical excitability lasting for 90 min following 13 min of 1 mA anodal tDCS (Nitsche and Paulus, 2001), suggesting that much longer scan times may be required to fully track the time course of tDCS-induced GABA changes.
 
-## Relationship between GABA and functional connectivity changes
+### Relationship between GABA and functional connectivity changes
 
 To our knowledge, this is the first study to directly test for relationships between GABA and resting fMRI both at baseline and after plasticity induction. At baseline, in line with previous studies (Kapogiannis et al., 2013; Stagg et al., 2014), we found a significant negative correlation between the degree of resting inhibition in M1 and the degree of motor network functional connectivity. This finding reflects strong evidence from experimental and theoretical studies that long-range connectivity relates to local oscillatory activity in the beta and gamma bands (Cabral et al., 2011), activity which in turn is directly determined by local GABAA synaptic activity (Hall et al., 2011).
 
@@ -92,19 +86,19 @@ Given the close biochemical relationship between GABA and glutamate, GABA measur
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twelve healthy participants (four males; aged 22–28 years, mean 24 years) gave their informed consent to participate in this study in accordance with ethical approval from the East London Research Ethics Committee (Ref: 10/H0703/50). All participants were right handed as assessed by the Edinburgh Handedness Inventory (Oldfield, 1971).
 
-## Experimental design
+### Experimental design
 
 All subjects participated in two testing sessions with either anodal or sham tDCS. The sessions were separated by at least one week and the order of the sessions was counterbalanced across the group. In each experimental session, GABA measurements were acquired at three time points: at baseline, during, and post-tDCS. Measures of resting state connectivity were acquired at baseline and immediately post-tDCS (Figure 1).
 
-## tDCS
+### tDCS
 
 A DC-Stimulator (Magstim, Ltd; UK) delivered a 1-mA current to the brain via electrodes measuring 5 × 7 cm (Easycap, GmbH; Germany). One electrode was centred over the left M1 and positioned 5 cm lateral to mid-pre-central position (Cz). The reference electrode was placed over the contralateral supraorbital ridge. High Chloride Electrolyte-Gel (Easycap, GmbH; Germany) was used as the conducting medium between the scalp and electrodes. The electrodes contained 5 kΩ resistors and extension leads connected the stimulator, which was located outside of the magnetic field, to the subject positioned in the scanner. For anodal stimulation, the current was ramped up over 10 s and was then held at 1 mA for 20 min, before being ramped down over 10 s. For sham stimulation the DC-stimulator was ramped up for 10 s then switched off, as previously described (Stagg et al., 2011a).
 
-## Magnetic resonance acquisition
+### Magnetic resonance acquisition
 
 All data were acquired on a 3-T Siemens Verio scanner. T1-weighted images (MPRAGE, 192 × 1 mm axial slices, TR/TE = 2040/5 ms, flip angle = 8°, FOV 200 × 181) were used to place a 2 × 2 × 2 cm voxel of interest over the left precentral knob, a known landmark for the hand motor representation (Yousry et al., 1997).
 
@@ -112,7 +106,7 @@ Edited GABA spectra were acquired using the MEGA-PRESS sequence (TR/TE = 2000/68
 
 A multiband 2 mm isotropic echo-planar imaging (EPI) acquisition (TR/TE = 1300/40 ms, FOV = 212 × 212 mm, bandwidth = 1814 Hz/Px, multi-band acceleration factor 6, voxel dimension = 2 mm isotropic, whole brain, acquisition time = 6:42 min for a total of 300 vol) (Feinberg et al., 2010; Moeller et al., 2010) was performed before and immediately after tDCS. Subjects fixated on a cross-hair image presented centrally on the screen during resting fMRI acquisition and watched a nature video at all other times.
 
-## MRS analysis
+### MRS analysis
 
 MRS data pre-processing was performed using in-house scripts, including removal of motion-corrupted averages, frequency drift, and zero- and first-order phase corrections. To increase signal-to-noise, data from subsequent blocks within each time period were then averaged together, resulting in GABA measurements from 9:52 min acquisitions for the following time points: Baseline1, Baseline2, During1, During2, During3, Post1, and Post2.
 
@@ -120,7 +114,7 @@ MRS analysis was performed on the combined spectra using jMRUI v2.2 (http://www.
 
 FMRIB's automated segmentation tool (FAST), part of the FMRIB software library (http://www.fmrib.ox.ac.uk/fsl), calculated the relative quantities of grey matter and white matter within the voxel of interest on the T1-weighted structural scan as previously reported (Stagg et al., 2011a). As has been done previously, the amplitude of GABA peaks were corrected for the proportion of grey matter volume within the voxel (divided by [GM]/([GM] + [WM] + [CSF])), and Creatine concentrations were corrected for the proportion of total brain tissue volume within the voxel (divided by (([GM] + [WM])/([GM] + [WM] + [CSF])) All neurotransmitter concentrations reported are given as a ratio to Creatine (GABA:Cr). Mean GABA:Cr values for each time point were normalised to the average of the baseline values for that condition, and henceforth are referred to as GABA levels for simplicity. We used Creatine as a simultaneously acquired reference peak as this is likely to remain stable over the timescale of this study. Note that in our original study (Stagg et al., 2014), this was not possible due to acquisition limitations with an older scanner, and so in that study we referenced GABA to NAA. However, we would not expect this to have a significant impact on our findings.
 
-## Resting state functional connectivity analysis
+### Resting state functional connectivity analysis
 
 Analysis of resting state fMRI data was carried out using an independent component analysis (ICA) approach as implemented in MELODIC (Beckmann et al., 2005) and tools from the FMRIB Software Library (FSL; http://www.fmrib.ox.ac.uk/fsl). Standard pre-processing steps were applied, which included motion correction, brain extraction, spatial smoothing using a Gaussian kernel of full-width at half-maximum (FWHM) of 2 mm, and high-pass temporal filtering equivalent to 100 s. fMRI volumes were registered to the individual's structural scan using boundary-based registration (BBR) (Greve and Fischl, 2009) and then to standard space images using FMRIB's nonlinear image registration tool (FNIRT). Pre-processed functional data containing 300 volumes for each time point and each subject were temporally concatenated across subjects to create a single 4D data set.
 
@@ -130,6 +124,6 @@ We then performed region of interest (ROI) analyses on the resulting subject-spe
 
 To investigate the relationship between GABA levels and motor functional connectivity, individual subject masks of the MRS voxel were created to quantify the strength of motor network functional connectivity within the same region where the GABA was measured. In addition, to investigate the tDCS-induced changes in motor resting state connectivity, the voxel with the maximum degree of connectivity across the group was identified within the left precentral gyrus. This voxel was then dilated to create a 8 mm-radius ROI, which included the hand knob of M1 (Yousry et al., 1997). A mean measure of motor RSN functional connectivity strength within the ROIs was then extracted for each subject at each time point and condition separately.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses on the data were conducted using SPSS (Version 22, IBM). Repeated measures ANOVAs (RM ANOVAs) were run with one factor of stimulation type (anodal, sham), and one factor of time (Baseline1, Baseline2, During1, During2, During3, Post1, Post2). Post-hoc Student's t-tests (paired samples, two-tailed) were performed as appropriate.

@@ -70,19 +70,9 @@ Specific comments:
 
 1) Figure 2A, ChIP-Seq: the statistics of the ChIP-Seq should be provided. How many total reads, how many reads mapped back to the CMV genome. Also, the peak calling algorithm is not entirely clear. What is the quality of the ChIP-Seq on cellular genome (this should be relatively simple to provide and will serve as quality control for the ChIP-Seq experiment). Also, the methods for normalization of the ChIP-Seq and ChIP-PCR (Figure 3) are not clearly described.
 
-All statistics and Datasets of the ChIP-Seq will be available on Geo as described in Material and methods. We had 163 Million total reads and mapped 135 Million of them on the human genome. Besides this, 400,000 reads corresponded to the HCMV genome. As the CMV-specific signal was broad, the MACS software was not appropriate for peak calling, requesting the development of a special algorithm. All positive, poorly enriched and negative regions were also analyzed by qPCR, which confirmed the results of the ChIP-Seq. The method of ChIP-PCR normalization is explained in the Material and methods section. The Quality control for the ChIP-seq is provided in Author response image 1, together with its Total Input Quality control in Author response image 2:10.7554/eLife.06068.036Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.06068.03610.7554/eLife.06068.037Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.06068.037
+All statistics and Datasets of the ChIP-Seq will be available on Geo as described in Material and methods. We had 163 Million total reads and mapped 135 Million of them on the human genome. Besides this, 400,000 reads corresponded to the HCMV genome. As the CMV-specific signal was broad, the MACS software was not appropriate for peak calling, requesting the development of a special algorithm. All positive, poorly enriched and negative regions were also analyzed by qPCR, which confirmed the results of the ChIP-Seq. The method of ChIP-PCR normalization is explained in the Material and methods section. The Quality control for the ChIP-seq is provided in Author response image 1, together with its Total Input Quality control in Author response image 2:10.7554/eLife.06068.036Author response image 1.10.7554/eLife.06068.037Author response image 2.
 
-DOI: http://dx.doi.org/10.7554/eLife.06068.036
-
-DOI: http://dx.doi.org/10.7554/eLife.06068.037
-
-Examples of positive peaks on the cellular genome as additional quality controls for the experiment are shown in Author response image 3, Author response image 4, and Author response image 5:10.7554/eLife.06068.038Author response image 3.DOI: http://dx.doi.org/10.7554/eLife.06068.03810.7554/eLife.06068.039Author response image 4.DOI: http://dx.doi.org/10.7554/eLife.06068.03910.7554/eLife.06068.040Author response image 5.DOI: http://dx.doi.org/10.7554/eLife.06068.040
-
-DOI: http://dx.doi.org/10.7554/eLife.06068.038
-
-DOI: http://dx.doi.org/10.7554/eLife.06068.039
-
-DOI: http://dx.doi.org/10.7554/eLife.06068.040
+Examples of positive peaks on the cellular genome as additional quality controls for the experiment are shown in Author response image 3, Author response image 4, and Author response image 5:10.7554/eLife.06068.038Author response image 3.10.7554/eLife.06068.039Author response image 4.10.7554/eLife.06068.040Author response image 5.
 
 2) What sequence specific DNA binding proteins on the viral genome recruit KAP? Are there any characterized KRAB Zn finger proteins at each of these KAP bound sites?
 

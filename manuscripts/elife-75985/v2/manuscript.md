@@ -33,26 +33,26 @@
 
 ### Affiliations
 
-1. https://ror.org/05vghhr25 Turku PET Centre, University of Turku and Turku University Hospital Turku Finland
-2. https://ror.org/04a7f6w43 Max Planck Institute of Experimental Medicine Göttingen Germany
-3. https://ror.org/036b2ww28 Internal Medicine Department, Regional University Hospital of Málaga, Biomedical Research Institute of Málaga (IBIMA), University of Málaga (UMA) Málaga Spain
-4. https://ror.org/03nzegx43 Internal Medicine Department, Infanta Cristina University Hospital Madrid Spain
-5. https://ror.org/03nzegx43 Internal Medicine Department, Gregorio Marañón University Hospital Madrid Spain
-6. https://ror.org/03nzegx43 Internal Medicine Department, 12 de Octubre University Hospital Madrid Spain
+1. Turku PET Centre, University of Turku and Turku University Hospital Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
+2. Max Planck Institute of Experimental Medicine Göttingen Germany ([ROR:04a7f6w43](https://ror.org/04a7f6w43))
+3. Internal Medicine Department, Regional University Hospital of Málaga, Biomedical Research Institute of Málaga (IBIMA), University of Málaga (UMA) Málaga Spain ([ROR:036b2ww28](https://ror.org/036b2ww28))
+4. Internal Medicine Department, Infanta Cristina University Hospital Madrid Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))
+5. Internal Medicine Department, Gregorio Marañón University Hospital Madrid Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))
+6. Internal Medicine Department, 12 de Octubre University Hospital Madrid Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))
 7. Internal Medicine Department, General University Hospital of Alicante, Alicante Institute for 22 Health and Biomedical Research (ISABIAL) Alicante Spain
-8. https://ror.org/002x1sg85 Data Science Unit, Research Institute Hospital 12 de Octubre Madrid Spain
-9. https://ror.org/0065mvt73 Internal Medicine Department, Hospital Costa del Sol Marbella Spain
-10. https://ror.org/0065mvt73 Hospital Costa del Sol. Research Unit Marbella Spain
-11. https://ror.org/0065mvt73 Preventive Medicine Department, Hospital Costa del Sol Marbella Spain
-12. https://ror.org/04djj4v98 Hospital Británico of Buenos Aires Buenos Aires Argentina
+8. Data Science Unit, Research Institute Hospital 12 de Octubre Madrid Spain ([ROR:002x1sg85](https://ror.org/002x1sg85))
+9. Internal Medicine Department, Hospital Costa del Sol Marbella Spain ([ROR:0065mvt73](https://ror.org/0065mvt73))
+10. Hospital Costa del Sol. Research Unit Marbella Spain ([ROR:0065mvt73](https://ror.org/0065mvt73))
+11. Preventive Medicine Department, Hospital Costa del Sol Marbella Spain ([ROR:0065mvt73](https://ror.org/0065mvt73))
+12. Hospital Británico of Buenos Aires Buenos Aires Argentina ([ROR:04djj4v98](https://ror.org/04djj4v98))
 13. Internal Medicine Service, Hospital Santa Cruz - Caja Petrolera de Salud Santa Cruz Bolivia
 14. Epidemiology Unit, Hospital of San Juan de Dios Santa Cruz Bolivia
 15. Instituto Hondureno of social security, Hospital Honduras Medical Centre Tegucigalpa Honduras
 16. Hospital Velez Sarsfield Buenos Aires Argentina
-17. https://ror.org/00bq4rw46 Hospital Italiano de Buenos Aires Buenos Aires Argentina
-18. https://ror.org/04a7f6w43 Max Planck Institute for Experimental Medicine Göttingen Germany
+17. Hospital Italiano de Buenos Aires Buenos Aires Argentina ([ROR:00bq4rw46](https://ror.org/00bq4rw46))
+18. Max Planck Institute for Experimental Medicine Göttingen Germany ([ROR:04a7f6w43](https://ror.org/04a7f6w43))
 19. Institute for Software and Systems Engineering at TU Clausthal Clausthal Germany
-20. https://ror.org/03prydq77 Systems Biology of Pain, Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, University of Vienna Vienna Austria
+20. Systems Biology of Pain, Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 
@@ -72,7 +72,7 @@ The collective effort presented here unveils the power of machine learning for h
 
 ## Materials and methods
 
-## Patient cohorts
+### Patient cohorts
 
 The training and two test cohorts (Test 1 and Test 2) of this study are based on the SEMI (Sociedad Espanola de Medicina Interna) COVID-19 Registry (Casas-Rojo et al., 2020) It is an ongoing multicentre nationwide cohort of consecutive patients hospitalized for COVID-19 across different Spanish regions (109 hospitals). Eligibility criteria were age ≥18 years, confirmed diagnosis of COVID-19, defined as a positive result on real-time reverse-transcription-polymerase-chain-reaction (RT-PCR) for the presence of SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples, first hospital admission for COVID-19, and hospital discharge or in-hospital death (Casas-Rojo et al., 2020).
 
@@ -88,35 +88,172 @@ The cohorts used in the online validation of the two online CODOP subtypes were 
 
 Process of personal data are in strict compliance with National Laws of personal data and in accordance with the principles of the Declaration of Helsinki. The release of anonymized clinical data used in this study has been reviewed by the institutional ethical review boards for each institution participating in this study (approval numbers: 1575, 5562, and 5606 for the Argentinian datasets, 143-CB-HE for Honduras Medical Centre). For the Hospital Santa Cruz Caja Petrolera de Salud and Hospital San Juan de Dios, please contact corresponding authors for additional details regarding the IRB approval documents. Informed consent to publish their de-identified clinical data for academic purposes was obtained from all the patients. When it was not possible to obtain informed consent in writing due to biosafety concerns or if the patient had already been discharged, informed consent was requested verbally and noted on the medical record.
 
-## Predictors and outcomes
+### Predictors and outcomes
 
 We included patient characteristics and blood test values (see Table 1) that were present in all training and test cohorts, measured at different times during hospitalization, as potential predictors. We limited our potential predictors to variables that had less than 40% missing values. The percentage of missing values is listed in Table 1. Most of the variables have less than 5% of missing values. Missing values were imputed in all datasets using the mean value of original variables in the training cohort. We trained a binary classification model in which the outcome is patient mortality: 1, if the patient was deceased, or 0, if discharged.
+
+**Table 1.**
+ Features used during CODOP development with the training cohort, the values used for imputation, and the percentage of missing values.Numerical variables are reported by median (Md) and interquartile range (IQR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Imputed value</th>
+      <th>Md (IQR)</th>
+      <th>Missing %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>66·67,911</td>
+      <td>68 (56–79)</td>
+      <td>0·0</td>
+    </tr>
+    <tr>
+      <td>Sex (male, female)</td>
+      <td>none</td>
+      <td>6 775 females and 9 127 males</td>
+      <td>0·0</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin (g/dL)</td>
+      <td>13·33,201</td>
+      <td>13 (12–15)</td>
+      <td>1·7</td>
+    </tr>
+    <tr>
+      <td>Platelet Count (x 106 /L)</td>
+      <td>250 097·7</td>
+      <td>223,000 (164 000-311 000)</td>
+      <td>1·8</td>
+    </tr>
+    <tr>
+      <td>Eosinophils (x 106 /L)</td>
+      <td>63·81,817</td>
+      <td>10 (0–100)</td>
+      <td>3·0</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (x 106 /L)</td>
+      <td>1 243·575</td>
+      <td>1,000 (700-1 420)</td>
+      <td>1·9</td>
+    </tr>
+    <tr>
+      <td>Neutrophils (x 106 /L)</td>
+      <td>5 525·894</td>
+      <td>4 490 (3 090-6 800)</td>
+      <td>2·2</td>
+    </tr>
+    <tr>
+      <td>Monocytes (x 106 /L)</td>
+      <td>535·8,804</td>
+      <td>470 (300–660)</td>
+      <td>2·7</td>
+    </tr>
+    <tr>
+      <td>C-Reactive Protein (mg/L)</td>
+      <td>74·48,964</td>
+      <td>41 (12–108)</td>
+      <td>4·6</td>
+    </tr>
+    <tr>
+      <td>Creatinine (mg/dL)</td>
+      <td>1·156,574</td>
+      <td>1 (1–1)</td>
+      <td>2·0</td>
+    </tr>
+    <tr>
+      <td>Lactate Dehydrogenase (U/L)</td>
+      <td>363·9,083</td>
+      <td>306 (234–424)</td>
+      <td>13·0</td>
+    </tr>
+    <tr>
+      <td>Aspartate aminotransferase (U/L)</td>
+      <td>49·27,098</td>
+      <td>35 (24–53)</td>
+      <td>18·4</td>
+    </tr>
+    <tr>
+      <td>Alanine aminotransferase (U/L)</td>
+      <td>48·99,699</td>
+      <td>32 (20–54)</td>
+      <td>7·4</td>
+    </tr>
+    <tr>
+      <td>Total bilirrubin (mg/dL)</td>
+      <td>0·6429202</td>
+      <td>1 (0–1)</td>
+      <td>26·5</td>
+    </tr>
+    <tr>
+      <td>Serum Sodium (mmol/L)</td>
+      <td>138·4,268</td>
+      <td>138 (136–141)</td>
+      <td>2·6</td>
+    </tr>
+    <tr>
+      <td>Serum Potassium (mmol/L)</td>
+      <td>4·178,441</td>
+      <td>4 (4–4)</td>
+      <td>3·7</td>
+    </tr>
+    <tr>
+      <td>Glucose (mg/dL)</td>
+      <td>124·2,852</td>
+      <td>108 (92–135)</td>
+      <td>5·2</td>
+    </tr>
+    <tr>
+      <td>Prothrombin time (s)</td>
+      <td>19·99,798</td>
+      <td>13 (12–14)</td>
+      <td>35·8</td>
+    </tr>
+    <tr>
+      <td>Fibrinogen (mg/dL)</td>
+      <td>608·0043</td>
+      <td>601 (497–713)</td>
+      <td>37·0</td>
+    </tr>
+    <tr>
+      <td>Dimer (ng/mL)</td>
+      <td>2 122·158</td>
+      <td>672 (370–1 320)</td>
+      <td>21·7</td>
+    </tr>
+  </tbody>
+</table>
 
 For each cohort, the subjects were divided into two groups based on their survival status. The normality of each numerical variable in the groups was tested with the Shapiro-Wilk normality test. None of the variables was normally distributed. For each variable, statistical difference was tested between the two groups with the Wilcoxon rank-sum test for numerical variables and with the chi-squared test for categorical variables. The obtained p-values were adjusted for multiple testing by Benjamini-Hochberg Procedure.
 
 Models for both the need of mechanical ventilation and admission to the ICU were constructed in a similar fashion.
 
-## CODOP development
+### CODOP development
 
 CODOP was built using modified stable iterative variable selection (SIVS) (Mahmoudian et al., 2021) and linear regression with least absolute shrinkage and selection operator (lasso) regularisation (Friedman et al., 2010). In model building only the training cohort was used and models were built using 10-fold cross-validation. In the feature selection stage of SIVS, 100 models were built and for each model selected variables were recorded. For reducing the number of features to as few as possible (therefore, increasing the easiness of use of CODOP), we tuned the weighting function in SIVS (called variable importance scoring) so that only features occurring in all of the 100 models were selected for the final model building stage. This method has shown to be very efficient, especially when the ratio of positive and negative outcomes is imbalanced (Klén et al., 2019). Lasso models were built in R Development Core Team, 2010 (version 3.6.0) package glmnet (Friedman et al., 2010) (version 4.1–1). All predictions were done blinded to the final clinical outcome. For converting numeric prediction into binary prediction, Youden’s J statistic was used (Youden, 2006). For building the two online CODOP subtypes, we used alternative thresholds, which were selected to be the largest threshold value in the training cohort with a sensitivity of 95% for CODOP-Ovt and specificity of 95% for CODOP-Unt. Calibration plots were created with R package caret (Kuhn, 2020) (version 6.0–86). Survival analysis was performed using univariable Cox proportional hazards regression model (Cox, 1972). Survival analysis and Kaplan-Meyer plots were produced with R packages survival (Therneau and Lumley, 2020) (R package version 3.2–11) and survminer (Alboukadel et al., 2018) (R package version 0.4.9). For horizon analyses, the data were considered separately for survival time of one to nine days.
 
 The final model can be found in the Klén etal_Supplementary file 1 and it is freely accessible in the following Github addresses: https://github.com/TUC-Circular-Economy-Department/COvid-19-Disease-Outcome-Predictor#uir https://github.com/TUC-Circular-Economy-Department/COvid-19-Disease-Outcome-Predictor#documentation.
 
-## Benchmarking
+### Benchmarking
 
 To evaluate the performance of CODOP, we used three benchmark methods: COPE (van Klaveren et al., 2021), model by Zhang et al., 2020, and a univariable model. COPE model is a linear regression model, which uses variables age, respiratory rate, C-reactive protein, lactic dehydrogenase, albumin, and urea. Zhang et al. model is a logistic regression model, which uses variables age, sex, neutrophil count, lymphocyte, platelet, C-reactive protein, and creatinine. From the different models described in Zhang et al., model DL for prediction of death (Table S2 of Zhang et al.) was used for benchmarking purposes. Univariable analysis was performed in the training dataset for all variables. The best univariable model was selected based on the average ranking of AUROC, accuracy, sensitivity and specificity. Different models were evaluated using four evaluation metrics: area under receiver operating curves (AUROC), accuracy, sensitivity, and specificity. The metrics were calculated using R packages pROC (Robin et al., 2011) (version 1.17.0.1) and caret (Kuhn, 2020 R package version 6.0–86).
 
-## Online evaluation
+### Online evaluation
 
 Forty-two different Latin American hospitals provided the values for the 12 features used by CODOP that were measured in patients at two different time points between March 7th 2020 and October 16th 2021: during the time of hospitalization, and the worst values measured during hospitalization. The former datasets were used for calculating AUROC, calibration curves, and confusion matrices. Both times points were used for performing horizon analysis and risk-stratification. All predictions were done blinded to the final clinical outcome.
 
-## Role of the funding source
+### Role of the funding source
 
 The Max Planck Society support the payment of the article processing fees. No other funding supported the study. The funders of the had no role in study design, data collection, data analysis, interpretation of data, writing of the report, or in the decision to submit the paper for publication.
 
 ## Results
 
-## CODOP development, performance, and benchmark
+### CODOP development, performance, and benchmark
 
 We developed CODOP following a multistep process (Figure 1) using a training dataset with measurements of 20 features (18 blood biochemical parameters plus Age and Sex; Table 1) routinely measured during admission on 15902 COVID-19 patients hospitalized in 109 Spanish healthcare centres during the first COVID-19 wave that occurred in Spain between February 5th and July 6th 2020 (SEMI-COVID-19 Network database Casas-Rojo et al., 2020).
 
@@ -126,7 +263,17 @@ As a first step, data pre-processing included standardization of the laboratory 
 
 Next, we benchmarked the performance of CODOP, using the same training dataset, against the predictor developed by Zhang et al., 2020, against the predictor COPE (van Klaveren et al., 2021), and against Age (as the univariable feature with more predictive power; Supplementary file 1). The two prognostic models were selected based on the availability of the model’s details and their use of blood-based features. CODOP showed a superior discriminative ability in predicting in-hospital mortality (area under the receiver operating curves or AUROC: 0·889, 95% CI 0·885–0·894; Figure 2A) reaching 0·84% and 0·78% sensitivity and specificity, respectively (Supplementary file 1). In addition, CODOP has better calibration for all the different risk groups as reflected by a lower RMSE value (Figure 2B and Supplementary file 1). A detailed inspection of the calibration curves shows that the predictor published by Zhang et al. underestimated the probability of death for low-risk patients and overestimates the probability of death for high-risk patients. On the other side, while COPE underestimates the probability of death for all risk groups, Age showed a clear overestimation (Figure 2B).
 
-## Influence of the geographical location, the vaccination status and the type of VOCs in the discriminative ability of CODOP
+![Figure 2.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-v2.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The mean squared error is plotted versus log of the Penalty parameter (λ). Figure is produced by function cv.glmnet from R package glmnet.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-figsupp3-v2.jpg)
+
+### Influence of the geographical location, the vaccination status and the type of VOCs in the discriminative ability of CODOP
 
 The size, demographic diversity (in terms of age, gender, ethnicity and comorbidities; see Table 1 of Casas-Rojo et al., 2020), and geographical spread of the training dataset, suggest the generalizability of the predictions made by CODOP. However, the rapid evolution of the pandemic challenges any prediction model that relies on past datasets. We investigated the discriminative ability and calibration of CODOP in geographical diverse patient cohorts having different vaccination statuses and infected with different VOCs.
 
@@ -138,15 +285,23 @@ To evaluate the discriminative ability of CODOP in the vaccinated population we 
 
 Altogether, our results show the stability of CODOP during the fluctuating scenario of the COVID-19 pandemic (the appearance of different VOCs, the different immune protection among the population, the use of more tailored clinical interventions), suggesting that CODOP captures key biomarkers involved in the physiological deterioration of COVID-19 hospitalized patients.
 
-## Estimation of fixed prediction horizons and dynamic risk-stratification
+### Estimation of fixed prediction horizons and dynamic risk-stratification
 
 Many patients of the different cohorts had multiple blood samples taken during their hospitalization. This offers a possibility for investigating the time window, before clinical resolution, at which CODOP can predict the death of hospitalized patients with high sensitivity.
 
 For that, we compared the performance of CODOP at a fixed time before the clinical resolution using the training cohort. On average, CODOP predicted the outcome of all patients nine days in advance with an average sensitivity (at a fixed specificity of 75%) and AUROC values higher than 90% (Figure 3A and Supplementary file 1, respectively). In comparison to the other benchmarked predictors, CODOP maintained a stable sensitivity along the nine days horizon time significantly outperforming (Figure 3A; p < 0.01, paired two-sided T-test).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig3-v2.jpg)
+
+**Figure 3.:** In the horizon plot, x-axis represents the number of days at the hospital before clinical resolution, the bar plot is for the number of samples (the green colour is for survival and red for death), and lines are for sensitivity when the specificity was fixed at 75% in the training cohort (the black line is CODOP, the red line is COPE, the green line is Zhang et al., and the blue line is Age). In the survival analysis, the risk scores refer to the probability provided by CODOP.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Shade areas indicate 95% confidence intervals. The risk scores refer to the probability provided by CODOP.
+
 Next, we demonstrated that CODOP enables a continuous stratification of patients into a high-risk group over the course of the hospitalization, as patients with a higher risk score (which refers to the probability provided by CODOP), who were more likely to die over time (Figure 3B). We obtained similar stratification results when using other test cohorts (Figure 3—figure supplement 1). Hence, CODOP represents an early and dynamic warning tool in the clinical status of COVID-19 patients.
 
-## Multinational evaluation of an online CODOP predictor
+### Multinational evaluation of an online CODOP predictor
 
 During the COVID-19 pandemic, the availability of resources in hospitals around the world experiences significant fluctuations following successive infection waves. Thus, a clinically useful prediction tool needs to reckon with these dynamic scenarios for effectively assisting undertriage and overtriage decisions.
 
@@ -158,9 +313,15 @@ Following this, we constructed and evaluated an easy-to-use web-based applicatio
 
 To make a stringent external evaluation of this application with datasets collected from very different patient cohorts, we established a multinational collaboration with 42 hospitals from three Latin American countries (Figure 4A), which at the time of this evaluation were under a new surge of COVID-19 infections and admissions coinciding with the beginning of the Autumn-Winter season in the Southern Hemisphere. All these hospitals provided the values for the 12 features used by CODOP and measured in patients at the time of hospitalization between March 7th 2020 to October 16th 2021. Following, these data were uploaded to the two CODOP online subtypes and we obtained the mortality predictions that were compared to the real patient outcome (for which the online predictor was blinded).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig4-v2.jpg)
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The black solid line is CODOP-Ovt and black dotted line is CODOP-Unt.
+
 Importantly, AUROC values for CODOP-Ovt and CODOP-Unt demonstrate the generalizability of the predictor (Supplementary file 1). A detailed analysis of the results indicates that if these were a prospective study, CODOP-Ovt would have identified the majority of the patients that finally died during hospitalization albeit wrongly classifying them as high-risk a significant number of patients that finally survived (78–100% sensitivity and 48–67% specificity, respectively; Figure 4B and Supplementary file 1). On the other side, the use of CODOP-Unt would have correctly triaged the vast majority of the survivors despite missing a significant number of patients that finally died (89–97% specificity and 19%–50% sensitivity, respectively; Figure 4B and Supplementary file 1). These results strongly suggest that the online version of CODOP could represent a useful clinical tool in the triage decision protocols.
 
-## Discussion
+### Discussion
 
 The differential access to COVID-19 vaccines, the emergence of new viral variants of concern, the waning of the immune protection, and the relaxation of mitigation measurements anticipate a longer period of health systems under pressure due to an increasing number of COVID-19 patients, particularly in resource-limited countries. A conflagration-like scenario will likely be the final set of the pandemic for many nations (Kofman et al., 2021) As a result of an altruistic multicontinental effort, we developed and evaluated CODOP, a machine-learning-based online tool able to assist in triage decisions in hospitalized COVID-19 patients. CODOP uses 12 clinical parameters easy to collect in most hospitals. Its predictive performance among cohorts of patients with different geographical locations, vaccination statuses and infected by diverse VOCs, strongly suggests its generalizability and supports its potential for improving patient care during this pandemic.
 
@@ -180,7 +341,7 @@ The proposed objective of CODOP is not to indicate a specific clinical treatment
 
 The clinical utility of MHL has to take into account the changing pressure supported by hospitals during the successive pandemic waves. Our data support the strategy of using either CODOP-Unt or CODOP-Ovt as an effective first-line triage tool in the overall clinical decision procedure. We expect that future participation of more institutions from regions non-represented in our study (Africa, Asia) will improve the reproducibility and overall clinical utility of CODOP supporting subgroup-specific predictions (e.g. based on underlying comorbidities or ethnical background).
 
-## Data sharing
+### Data sharing
 
 The raw patient data used in this study are not freely available due to legal restrictions of the ethical committees of the different hospitals. However, they can be accessed upon request to the Scientific Committees of these organisms. An exception to this is the patient data from the USA cohort, which has been published elsewhere (Del Valle et al., 2020).
 

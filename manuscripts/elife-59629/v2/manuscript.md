@@ -21,7 +21,7 @@ A major goal of cancer genomics is to identify all genes that play critical role
 
 ## Introduction
 
-## Genetic, epigenetic, transcriptomic, and proteomic changes driving carcinogenesis
+### Genetic, epigenetic, transcriptomic, and proteomic changes driving carcinogenesis
 
 In the last two decades, the rapid advance in genomics, epigenomics, transcriptomics, and proteomics permitted an insight into the molecular basis of carcinogenesis. These studies have confirmed that tumors evolve from normal tissues by acquiring a series of genetic, epigenetic, transcriptomic, and proteomic changes with concomitant alterations in the control of the proliferation, survival, and spread of affected cells.
 
@@ -41,7 +41,7 @@ Alterations in the splicing of primary transcripts of protein-coding genes also 
 
 There is now convincing evidence that dysregulation of processes responsible for proteostasis also contributes to the development and progression of numerous cancer types (Mofers et al., 2017; Chen et al., 2017c; Voutsadakis, 2017). Recent studies on tumor tissues have revealed that genetic alterations and abnormal expression of various components of the protein homeostasis pathways (e.g. FBXW7, VHL) contribute to progression of human cancers by excessive degradation of tumor-suppressor molecules or through impaired disposal of oncogenic proteins (Ge et al., 2018; Bernassola et al., 2019).
 
-## Hallmarks of cancer and the function of genes involved in carcinogenesis
+### Hallmarks of cancer and the function of genes involved in carcinogenesis
 
 Hanahan and Weinberg have defined a set of hallmarks of cancer that allow the categorization of cancer genes with respect to their role in carcinogenesis (Hanahan and Weinberg, 2011). These hallmarks describe the biological capabilities usually acquired during the evolution of tumor cells: these include sustained proliferative signaling, evasion of growth suppressors, evasion of cell death, acquisition of replicative immortality, acquisition of capability to induce angiogenesis and activation of invasion and metastasis. Underlying all these hallmarks are defects in genome maintenance that help the acquisition of the above capabilities. Additional emerging hallmarks of potential generality have been suggested to include tumor promoting inflammation, evasion of immune destruction and reprogramming of energy metabolism in order to most effectively support neoplastic proliferation (Hanahan and Weinberg, 2011).
 
@@ -51,7 +51,7 @@ Figure 1 summarizes our current view of the cellular processes that play key rol
 
 **Figure 1.:** The central circle refers to processes involved in the maintenance of the integrity of the genome, epigenome, transcriptome, and proteome: defects in these processes increase the chance that genes and proteins of other cellular pathways (represented by segments of the outer circle) will suffer alterations that favor the acquisition of capabilities that permit the proliferation, survival, and metastasis of tumor cells.
 
-## Chronology of tumor evolution: initiation and progression
+### Chronology of tumor evolution: initiation and progression
 
 In the first phase of carcinogenesis, a cell may acquire a mutation that permits it to proliferate abnormally, and in the next phase, other mutations allow the expansion of cell number and this process of mutations (and associated epigenetic, transcriptomic and proteomic alterations) continues, thus generating a primary tumor that can eventually metastasize to distant organs. Recent studies on the chronology and genomic landscape of the events that drive carcinogenesis suggest that complex structural changes of the genome occur early, whereas point mutations occur in later disease phases (Maura et al., 2019; Voronina et al., 2020).
 
@@ -63,7 +63,7 @@ Analyses of the mutation landscapes and evolutionary trajectories of various tum
 
 The life history and evolution of mutational processes and driver mutation sequences of 38 types of cancer has been analyzed recently by whole-genome sequencing analysis of 2658 cancers. This study has shown that early oncogenesis is characterized by mutations in a constrained set of driver genes and that the driver mutations that most commonly occur in a given cancer also tend to occur the earliest (Gerstung et al., 2020).
 
-## Cancer genes and passenger genes
+### Cancer genes and passenger genes
 
 The prominent role of KRAS and TP53 genes in initiating carcinogenesis has been evident from the observation that their mutation rate in tumors far exceeds those of other genes, suggesting that their mutations are subject to positive selection during tumor evolution.
 
@@ -101,7 +101,7 @@ In summary, although a variety of approaches have been developed to identify ‘
 
 We must point out, however, that the majority of genomics-based methods were biased as they defined the aim of cancer genomics as the identification of mutated driver genes (equating them with ‘cancer genes’) that are causally implicated in oncogenesis (Futreal et al., 2004). In all these studies, the underlying rationale for interpreting a mutated gene as causal in cancer development is that the mutations are likely to have been positively selected because they confer a growth advantage on the cell population from which the cancer has developed. An inevitable consequence of this focus on positive selection was that most studies neglected the possibility that negative selection may also play a significant role in tumor evolution.
 
-## Carcinogenesis as an evolutionary process
+### Carcinogenesis as an evolutionary process
 
 In principle, with respect to its effect on carcinogenesis, a somatic mutation may promote or may hinder carcinogenesis or may have no effect on carcinogenesis. In cancer genomics, the mutations that promote carcinogenesis (and are subject to positive selection during tumor evolution) are called ‘driver mutations’ to distinguish them from ‘passenger mutations’ that do not play a role in carcinogenesis (and are not subject to positive or negative selection during tumor evolution). Mutations that impair the growth, survival, and invasion of tumor cells have received much less attention, although they could also play a significant role in shaping the mutation pattern of genes during carcinogenesis. Hereafter, we will refer to this category of mutations as ‘cancer blocking mutations’ because they are deleterious from the perspective of tumor growth.
 
@@ -137,7 +137,7 @@ Significantly, we have identified a cluster of human genes that show clear signs
 
 ## Results
 
-## Distinguishing PGs and cancer genes
+### Distinguishing PGs and cancer genes
 
 The rationale of the analyses described in the present work is that — due to their different roles in carcinogenesis — proto-oncogenes, TSGs, TEGs, and PGs are expected to experience different patterns of selection during tumor evolution and this is reflected in the relative rates of missense, nonsense, and silent mutations of their protein-coding regions. To monitor these differences, we have calculated for each transcript the fraction of somatic substitutions that could be assigned to the silent (fS), misssense (fM), and nonsense (fN) category and analyzed their relative rates. (For details, the reader should consult the Materials and methods section).
 
@@ -177,7 +177,7 @@ The various types of observed/expected ratios (rN*, rM*, rS*; rSM*, rNM*, rNS*; 
 
 **Figure 7.:** The figure shows the results of the analysis of transcripts containing at least 100 subtle, confirmed somatic mutations from tumor tissues. Axes x, y, and z represent the rSMN*, rMSN*, and rNSM* values, respectively. Each ball represents a human transcript; the positions of transcripts of the genes identified by Vogelstein et al., 2013 as oncogenes (OGs, large red balls) or tumor suppressor genes (TSGs, large blue balls) are highlighted. Panels A1, A2 show the distribution of the transcripts at different magnification. Note that the majority of human genes are present in a dense cluster but known OGs and TSGs separate significantly from the central cluster and from each other. The rNSM* values of TSGs are higher, their rMSN* and rSMN* are lower than those of passenger genes (PGs). OGs also separate from PGs in that their rMSN* values are higher and their rSMN* and rNSM* values are lower than those of PGs. Panels B1, B2 show data only for candidate cancer genes present in the CG_SO2SD_SSI2SD list (see Materials and methods). The positions of novel cancer gene transcripts validated in the present work are highlighted as large green balls.
 
-## Analyses of candidate cancer gene sets
+### Analyses of candidate cancer gene sets
 
 We assumed that the genes whose patterns of subtle mutations deviate significantly (by more than 2SD) from those of prototypical PGs are enriched in cancer genes that play important role in carcinogenesis. The patterns of subtle mutations of candidate cancer genes assign them to one of the three main clusters that show signs of positive and/or negative selection (see Figures 2–7). (A) Genes positively selected for inactivating (nonsense and frame-shift) mutations – putative TSGs; (B) genes positively selected for missense mutations and negatively selected for inactivating mutations – putative proto-oncogenes; (C) negatively selected genes – putative TEGs.
 
@@ -187,7 +187,7 @@ To check the validity and predictive value of the assumption that the genes assi
 
 The genes discussed below include genes positively selected for truncating mutations (putative TSGs), genes positively selected for missense mutations and negatively selected for inactivating mutations (putative proto-oncogenes) and negatively selected genes (putative TEGs). In the main text, we summarize only the major conclusions of our analyses; for annotations of the individual genes, the reader should consult Appendix 1. We discuss examples of negatively selected genes in the main text in more detail since earlier studies that focussed on positive selection of driver mutations inevitably missed these genes. We also discuss some instructive examples of’ false’ hits, that is cases where the mutation parameters deviate significantly from those of PGs, but this deviation is not due to selection.
 
-## Novel cancer genes positively selected for nonsense mutations
+### Novel cancer genes positively selected for nonsense mutations
 
 We have selected genes positively selected for truncating mutations from the combined list of candidate transcripts, that is, transcripts whose parameters deviate from those of PGs by more than 2SD (for details see Materials and methods). We have used the additional restriction that genes with indel_rNSM <0.125 were excluded (Supplementary file 1), thereby removing OGs and TEGs. Out of the 624 genes that satisfy these criteria, we have subjected B3GALT1, BMPR2, BRD7, ING1, MGA, PRRT2, RASA1, RNF128, SLC16A1, SPRED1, TGIF1, TNRC6B, TTK, ZNF276, ZC3H13, ZFP36L2, and ZNF750 to further analysis.
 
@@ -195,11 +195,68 @@ Annotation of the majority of these genes (BMPR2, BRD7, ING1, MGA, PRRT2, RASA1,
 
 Based on functional annotation of the TSGs identified and validated in the present work (see Appendix 1), we have assigned them to various cellular processes of cancer hallmarks in which they are involved (Table 1).
 
+**Table 1.**
+ Assignment of novel positively or negatively selected cancer genes to key cellular processes of carcinogenesis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Hallmarks of cancer</th>
+      <th>Gene symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Defects of genome, epigenome, transcriptome, or proteome maintenance</td>
+      <td>CDK8, FOXG1, IDH3B, MARCH7, MGA, NOVA1, PNCK, RNF128, TGIF1, TNRC6B, TWIST1, ZC3H13, ZFP36L1, ZFP36L2, ZNF750</td>
+    </tr>
+    <tr>
+      <td>Sustained proliferation</td>
+      <td>AURKA, BRD7, ING1, FOXG1, MAPK13, PNCK, PRRT2, RASA1, RIT1, SPRED1, TRIB2, TTK, YAP1, YES1, ZFP36L1, ZFP36L2, ZNF750</td>
+    </tr>
+    <tr>
+      <td>Evasion of growth suppressors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reprogramming of metabolism</td>
+      <td>BRD7, G6PD, SLC16A1, SLC16A3, SLC2A1, SLC2A8, YAP1, YES1</td>
+    </tr>
+    <tr>
+      <td>Replicative immortality</td>
+      <td>NOVA1</td>
+    </tr>
+    <tr>
+      <td>Evasion of cell death</td>
+      <td>BRD7, ING1, MAPK13, PNCK, PRRT2, TP73, TRIB2, TTK, YAP1, YES1, ZNF750</td>
+    </tr>
+    <tr>
+      <td>Evasion of immune destruction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tumor promoting inflammation</td>
+      <td>BMP2R, CCR2, CCR5, CX3CR1, MAPK13</td>
+    </tr>
+    <tr>
+      <td>Inducing angiogenesis</td>
+      <td>CCR2</td>
+    </tr>
+    <tr>
+      <td>Activation of invasion and metastasis</td>
+      <td>CCR2, CCR5, CX3CR1, RASA1, TBXA2R</td>
+    </tr>
+  </tbody>
+</table>
+
+_For annotation of novel genes identified in the present study see Appendix 1. The names of negatively selected genes are marked by bold underline._
+
 Comparison of the list of 624 genes present in this dataset (CG_SSI2SD rNSM >0.125) with lists identified by others (Supplementary file 1) revealed that ~60–100 of our candidate TSG-like genes are also found in several gene lists identified by others through analyses of somatic mutations of tumor tissues. Many of the genes selected for annotation are present in at least one of the candidate gene lists identified by others; the genes of MGA, RASA1, TGIF1, ZFP36L2, and ZNF750 are present in multiple cancer gene lists (Supplementary file 1). It is noteworthy, however, that RNF128, SLC16A1, SPRED1, TNRC6B, and TTK are novel in that they are found only among the candidate cancer genes identified by forward genetic screens in mice (Abbott et al., 2015) or among the genes whose expression changes in cancer (Torrente et al., 2016).
 
 We have also analyzed the genes present in dataset CG_SO*2SD_rNSM >3, that is, candidate cancer genes for which the observed rNSM values are more than threefold higher than expected taking into account mutational signature-derived substitution probabilities of tumors (Supplementary file 2). We have found that 164 (100%) of the 164 genes present in this dataset are also present in the dataset CG_SSI2SD rNSM >0.125. It is noteworthy that the majority of candidate TSGs selected for annotation (B3GALT1, BMPR2, BRD7, ING1, MGA, PRRT2, RASA1, SLC16A1, SPRED1, TGIF1, ZNF276, ZFP36L2, and ZNF750) are present among the genes shared by the two datasets that show the strongest signals of positive selection for nonsense substitutions.
 
-## Novel cancer genes positively selected for missense and negatively selected for nonsense mutations
+### Novel cancer genes positively selected for missense and negatively selected for nonsense mutations
 
 We have selected genes positively selected for missense and negatively selected for inactivating mutations from the list of candidate transcripts using the restriction that genes with rMSN <3.00 (440) were excluded, thereby removing the majority of TSGs and TEGs (Supplementary file 1). Out of the 440 genes that satisfy these criteria, we have subjected AURKA, CDK8, IDH3B, MARCH7, RIT1, YAP1, and YES1 to further analysis.
 
@@ -213,7 +270,7 @@ Out of the genes that we have selected for annotation only the RIT1 gene has bee
 
 We have also analyzed the genes present in dataset CG_SO*2SD_rMSN >1.50, that is, genes for which the observed rMSN values are more than 1.5-fold higher than expected taking into account mutational signature-derived substitution probabilities of tumors (Supplementary file 2). We have found that 119 (98.3%) of the 121 genes present in this dataset are also present in the dataset CG_SO2SD rMSN >3.00. It should be noted that the majority of candidate OGs selected for annotation (AURKA, RIT1, YAP1, and YES1) are found among the genes shared by the two datasets, showing strong signals of positive selection for missense substitutions.
 
-## Negatively selected genes
+### Negatively selected genes
 
 We have selected putative TEGs from the list of candidate cancer genes using the restriction that we have excluded genes with rSMN <0.5 to eliminate OGs and TSGs (Supplementary file 3). Out of the 505 genes, we have subjected CX3CR1, FOXG1, FOXP2, G6PD, MAPK13, MLLT3, NOVA1, PNCK, RUNX2, SLC16A3, SLC2A1, SLC2A8, TBP, TBXA2R, TP73, and TRIB2 to further analysis.
 
@@ -229,7 +286,7 @@ In summary, the pro-oncogenic, negatively selected genes annotated and validated
 
 We have also analyzed the genes present in dataset CG_SO*2SD rSMN >1.50, that is, candidate cancer genes for which the observed rSMN values are more than 1.5-fold higher than expected taking into account mutational signature-derived substitution probabilities of tumors (Supplementary file 4). We have found that 200 (86.5%) of the 231 genes present in this dataset are also present in dataset CG_SO2SD rSMN >0.5. It should be noted that the majority of candidate TEGs selected for annotation (CX3CR1, FOXG1, FOXP2, MAPK13, MLLT3, NOVA1, RUNX2, SLC16A3, SLC2A8, TBP, TBXA2R, and TRIB2) are found among the 200 genes shared by the two datasets and that show the strongest signals of negative selection for missense and nonsense substitutions.
 
-## Negative selection, cell essentiality, and tumor essentiality of genes
+### Negative selection, cell essentiality, and tumor essentiality of genes
 
 As we have emphasized in the Introduction, the conclusions drawn from earlier studies searching for signs of negative selection are highly controversial. A highly publicized study has propagated the conclusion that negative selection has no role in tumor evolution (Martincorena et al., 2017; Bakhoum and Landau, 2017; Koch, 2017; Vitale and Galluzzi, 2018). Martincorena et al., 2017 have argued that the practical absence of purifying selection during tumor evolution is due to the buffering effect of diploidy and functional redundancy of most cellular pathways.
 
@@ -271,7 +328,7 @@ Due to abnormal conversion of pyruvic acid to lactic acid even under normoxia, t
 
 Interestingly, the thromboxane A2 receptor gene (TBXA2R) as well as several chemokine receptor protein genes (CCR2, CCR5, CX3CR1) were also found among the genes showing strong signs of purifying selection (see Appendix 1). (Note that Pyatnitskiy et al., 2015 have also identified CCR5 as a negatively selected gene). The most likely explanation for their essentiality for tumor growth is that tumor cells rely on these receptors in various steps of invasion and metastasis (see Appendix 1). It is noteworthy in this respect that another member of the family of chemokine receptors, the atypical chemokine receptor 3, ACKR3 is also among the genes showing very high values of rSMN, suggesting negative selection of missense and nonsense mutations (Supplementary file 3). (Note that Zhou et al., 2017 have also identified ACKR3 as a negatively selected gene). Significantly, ACKR3 is a well-known OG, present in Tier 1 of the Cancer Gene Census. Several studies support the key role of ACKR3 in tumor invasion and metastasis (Li et al., 2014; Stacer et al., 2016; Zhao et al., 2017; Puddinu et al., 2017; Melo et al., 2018; Qian et al., 2018). Since knock-down or pharmacological inhibition of ACKR3 has been shown to reduce tumor invasion and metastasis, ACKR3 is a promising therapeutic target for the control of tumor dissemination (for further details see Appendix 1).
 
-## Negative selection of germline mutations in the human population versus negative selection of somatic mutations in cancer
+### Negative selection of germline mutations in the human population versus negative selection of somatic mutations in cancer
 
 The data discussed in the previous section indicate that the importance (‘essentiality’) of a given gene is a question of perspective. Cell-essential genes may be non-essential for tumor growth, whereas TEGs with tumor-specific functions do not necessarily have cell-essential functions. Similarly, we may assume that the importance of a gene might be quite different from the perspective of tumor cells and from the perspective of the entire organism. One could speculate that somatic mutations of genes with functions that have no relevance for tumor growth (PGs) experience neutral evolution during tumor growth, whereas germline mutations of the same genes may be subject to purifying selection at the level of organismal evolution, as is true for the majority of genes (Gorlov et al., 2006). One may also assume that genes with tumor essential, tumor-specific functions may be subject to purifying selection during both tumor evolution and organism evolution, but the strength of purifying selection of these genes is increased in tumors relative to those of genes that do not have tumor-specific functions.
 
@@ -313,7 +370,7 @@ We believe that the approach reported here will promote the identification of nu
 
 ## Materials and methods
 
-## Somatic mutation data
+### Somatic mutation data
 
 Cancer somatic mutation data were extracted from COSMIC v88, the Catalogue Of Somatic Mutations In Cancer (https://cancer.sanger.ac.uk/cosmic/download), which includes single nucleotide substitutions and small insertions/deletions affecting the coding sequence of human genes. The downloaded file (CosmicMutantExport.tsv, release v88) contained data for 29,415 transcripts (Supplementary file 8). For all subsequent analyses we have retained only transcripts containing mutations that were annotated under’ Mutation description’ as substitution or subtle insertion/deletion. This dataset contained data for 29,405 transcripts containing 6,449,721 mutations (substitution and short indels, SSI) and 29,399 transcripts containing 6,141,650 substitutions only (SO). Supplementary file 9 contains the metadata for these SO and SSI datasets.
 
@@ -337,11 +394,11 @@ Our choice of 100 as the minimum number of somatic mutation per transcript may a
 
 The COSMIC database of somatic mutations used in the present study contains data obtained by three main types of sequencing: whole-genome sequencing (WGS), whole-exome sequencing (WES) and targeted sequencing. As shown in Supplementary file 8, targeted screens provided substitution mutation data for only 13,120 transcripts of human genes, whereas genome wide screens covered 29,407 human transcripts as opposed to 29,415 transcripts covered by targeted plus genome wide screens. The contribution of targeted screens to somatic point mutations is even more restricted: only 508,124 (8.3%) of the 6,141,650 somatic point mutations of the entire COSMIC database were identified by targeted sequencing (Supplementary file 8). To check the impact of targeted sequencing on the dataset, in some analyzes we have used somatic mutation data only from genome-wide screens, excluding those obtained by targeted sequencing. We have found that omission of the data from targeted screens had no significant effect on the conclusions drawn from our analyses. Several factors may explain this observation. First, targeted screens usually focus on known cancer genes and they usually just reinforce the ‘known cancer gene’ status of the targeted genes. Second, since only a small fraction of the somatic mutations originates from targeted screens their impact is limited even in the case of the targeted genes. Finally, inclusion or omission of data from targeted screens has no impact on the number and pattern of mutations of non-targeted genes identified in genome wide screens.
 
-## Germline mutation data
+### Germline mutation data
 
 Information on SNPs affecting the coding regions of human genes was downloaded from the dbSNP database (https://www.ncbi.nlm.nih.gov/snp/). For each SNP, we extracted nucleotide and amino acid variants from the original dbSNP file. In cases where two or three mutant variant was reported for a specific rsID, each variant was treated as an independent polymorphism. The retrieved SNPs were assigned to three functional categories: (i) Nonsense or Stop_gained mutations (N), which change an amino acid-encoding codon into a stop codon, (ii) Missense mutations (M), which change an amino acid into a mutant amino acid, and (iii) Synonymous or silent mutations (S), which do not change the amino acid. We have focused only on SNPs of genes that were also found to contain at least 100 confirmed somatic, non polymorphic mutations in the COSMIC database (Supplementary file 5). Supplementary file 6 shows the numbers and fractions of SNPs affecting the coding sequences of the various human genes, according to the functional categories of the point mutations.
 
-## Substitution metrics
+### Substitution metrics
 
 The 61 sense codons can undergo 549 single base substitutions and, depending on the wild type and mutant codon, each substitution can be assigned to the silent, missense or nonsense mutation category. Out of the 549 single-base substitutions, 392 result in missense mutation, 134 lead to silent mutation, and 23 generate nonsense mutation, thus – assuming equal codon frequency, equal probability of the different types of substitutions and neutrality – the expected fractions of nonsense, missense and silent substituions are fN = 0.04189, fM = 0.71403, and fS = 0.24408, respectively.
 
@@ -357,7 +414,7 @@ In order to correct for the influence of mutation bias on fN, fM, and fS values 
 
 In the case of germline cells, we have also calculated the expected fN**, fM**, and fS** values for all human transcripts using the mutation probabilities characteristic of these cells (Supplementary file 28). It has been shown earlier that the human germline mutation spectrum can be recapitulated by a combination of the cancer signatures SBS1 and SBS5 (Alexandrov et al., 2015; Rahbari et al., 2016; Heredia-Genestar et al., 2020). In the present work, we have combined the effect of mutation signatures SBS1 and SBS5 on the germline mutation spectrum of proteins according to the formula (0.1 × SBS1 + 0.9 × SBS5) recommended by Heredia-Genestar et al., 2020. It is noteworthy that the average values of expected fN**, fM**, and fS** (fN**=0.03791, fM**=0.68653, and fS**=0.27556) are similar to those expected for tumor tissues (fN*=0.04483, fM*=0.69114, and fS*=0.26402).
 
-## Per-gene detection of selection signals in tumor tissues
+### Per-gene detection of selection signals in tumor tissues
 
 We have used two approaches to determine the observed fM, fS, and fN values of transcripts: one in which we have restricted our analyses to single nucleotide substitutions (hereafter referred to as SO for 'substitution only') and a version in which we have also taken into account subtle indels (hereafter referred to as SSI for 'substitutions and subtle indels').
 
@@ -401,14 +458,14 @@ As outlined in the section on Substitution metrics, a limitation of the analyses
 
 As shown in Figures 5–7, the distribution of transcripts in these 3D scatter plots are similar to those observed in the corresponding Figures 2–4, in that known OGs, TSGs, and TEGs are separated from the central cluster of PGs as well as from each other (Supplementary file 32).
 
-## Per-gene detection of selection signals in the database of human single-nucleotide polymorphisms
+### Per-gene detection of selection signals in the database of human single-nucleotide polymorphisms
 
 As a reference, we have carried out similar analyses of the fN, fM, and fS parameters of germline mutations, through the analysis of the human database of human single-nucleotide polymorphisms (SNPs; Supplementary file 6). Supplementary file 33 contains the various types of observed/expected ratios (rN**, rM**, rS**; rSM**, rNM**, rNS**; rSMN**, rMSN**, and rNSM**) of germline mutations calculated for all transcripts. Data were analyzed in 3D scatter plots as described for somatic mutations. Details of these analyses are presented in the Results section.
 
-## Cancer gene list
+### Cancer gene list
 
 As the gold standard of 'known' cancer genes we have used the lists of OG and TSGs identified by Vogelstein et al., 2013. As another list of known cancer genes we have also used the genes of the Cancer Gene Census (Sondka et al., 2018).
 
-## Statistical analyses
+### Statistical analyses
 
 The statistical package of Origin 2018 was used for all data processing and statistical analysis. We report details of statistical tests in the Supplementary files of the respective sections. Statistical significance was set as a p value of < 0.05.

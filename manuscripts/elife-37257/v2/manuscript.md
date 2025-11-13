@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.37257.001 The voltage-gated potassium channel K V 7.1 and the auxiliary subunit KCNE1 together form the cardiac I Ks channel, which is a proposed target for future anti-arrhythmic drugs. We previously showed that polyunsaturated fatty acids (PUFAs) activate K V 7.1 via an electrostatic mechanism. The activating effect was abolished when K V 7.1 was co-expressed with KCNE1, as KCNE1 renders PUFAs ineffective by promoting PUFA protonation. PUFA protonation reduces the potential of PUFAs as anti-arrhythmic compounds. It is unknown how KCNE1 promotes PUFA protonation. Here, we found that neutralization of negatively charged residues in the S5-P-helix loop of K V 7.1 restored PUFA effects on K V 7.1 co-expressed with KCNE1 in Xenopus oocytes. We propose that KCNE1 moves the S5-P-helix loop of K V 7.1 towards the PUFA-binding site, which indirectly causes PUFA protonation, thereby reducing the effect of PUFAs on K V 7.1. This mechanistic understanding of how KCNE1 alters K V 7.1 pharmacology is essential for development of drugs targeting the I Ks channel.
+The voltage-gated potassium channel KV7.1 and the auxiliary subunit KCNE1 together form the cardiac IKs channel, which is a proposed target for future anti-arrhythmic drugs. We previously showed that polyunsaturated fatty acids (PUFAs) activate KV7.1 via an electrostatic mechanism. The activating effect was abolished when KV7.1 was co-expressed with KCNE1, as KCNE1 renders PUFAs ineffective by promoting PUFA protonation. PUFA protonation reduces the potential of PUFAs as anti-arrhythmic compounds. It is unknown how KCNE1 promotes PUFA protonation. Here, we found that neutralization of negatively charged residues in the S5-P-helix loop of KV7.1 restored PUFA effects on KV7.1 co-expressed with KCNE1 in Xenopus oocytes. We propose that KCNE1 moves the S5-P-helix loop of KV7.1 towards the PUFA-binding site, which indirectly causes PUFA protonation, thereby reducing the effect of PUFAs on KV7.1. This mechanistic understanding of how KCNE1 alters KV7.1 pharmacology is essential for development of drugs targeting the IKs channel.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ KV7.1, the alpha subunit of the IKs channel, is a potassium channel protein comp
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/37257/elife-37257-fig1-v2.jpg)
 
-**Figure 1.:** V7.1 channel voltage dependence.(A) Schematic side view of one subunit of KCNE1 and KV7.1. KCNE1 is in light orange. KV7.1 is in grey (transmembrane helices S1-S4 forming the voltage-sensing domain) and blue (transmembrane helices S5 and S6 forming the pore domain). P denotes pore helix. (B) Schematic top-down view of the KV7.1+E1 channel complex. Same coloring as in A. The putative localization of a polyunsaturated fatty acid between neighboring voltage-sensing domains is included. (C) Cartoon and representative example of previously published key data showing that at pH 7.4 70 µM DHA facilitates KV7.1 channel opening by electrostatically facilitating outward S4 movement, seen as a shift of G(V) curve towards more negative voltages (modified data from Liin et al. [2015b]). (D) Cartoon and representative example of previously published key data showing that at pH 7.4, co-expression with KCNE1 decreases the local pH at the PUFA-binding site, which renders DHA uncharged and ineffective. As a consequence, 70 µM DHA fails to facilitate KV7.1+E1 channel opening at pH 7.4, seen as a lack of shift of G(V) curve toward more negative voltages (modified data from Liin et al. [2015b]). (E) KCNE1 changes the pH dependence of the DHA-induced shift in the voltage dependence of channel opening, ΔV50. [DHA]=70 µM. The ΔV50 values were normalized to the fitted maximum ΔV50 (using Equation 2) at very basic pH for each channel type to better visualize the different pKa values for the different channel constructs. Relative ΔV50 are expressed as mean ± SEM (modified and complemented data from Liin et al. [2015b]). Best fit of Equation (2): pKa = pH 8.7 for KV7.1+E1 and 7.8 for KV7.1 alone. n = 3–6 per data point.
+**Figure 1.:** (A) Schematic side view of one subunit of KCNE1 and KV7.1. KCNE1 is in light orange. KV7.1 is in grey (transmembrane helices S1-S4 forming the voltage-sensing domain) and blue (transmembrane helices S5 and S6 forming the pore domain). P denotes pore helix. (B) Schematic top-down view of the KV7.1+E1 channel complex. Same coloring as in A. The putative localization of a polyunsaturated fatty acid between neighboring voltage-sensing domains is included. (C) Cartoon and representative example of previously published key data showing that at pH 7.4 70 µM DHA facilitates KV7.1 channel opening by electrostatically facilitating outward S4 movement, seen as a shift of G(V) curve towards more negative voltages (modified data from Liin et al. [2015b]). (D) Cartoon and representative example of previously published key data showing that at pH 7.4, co-expression with KCNE1 decreases the local pH at the PUFA-binding site, which renders DHA uncharged and ineffective. As a consequence, 70 µM DHA fails to facilitate KV7.1+E1 channel opening at pH 7.4, seen as a lack of shift of G(V) curve toward more negative voltages (modified data from Liin et al. [2015b]). (E) KCNE1 changes the pH dependence of the DHA-induced shift in the voltage dependence of channel opening, ΔV50. [DHA]=70 µM. The ΔV50 values were normalized to the fitted maximum ΔV50 (using Equation 2) at very basic pH for each channel type to better visualize the different pKa values for the different channel constructs. Relative ΔV50 are expressed as mean ± SEM (modified and complemented data from Liin et al. [2015b]). Best fit of Equation (2): pKa = pH 8.7 for KV7.1+E1 and 7.8 for KV7.1 alone. n = 3–6 per data point.
 
 However, we previously observed that this activating effect of DHA at physiological pH (i.e. pH 7.4) was abolished when KV7.1 was co-expressed with KCNE1 to form the IKs channel complex (Liin et al., 2015b). In addition, we proposed that this reduced effect is the result of KCNE1 decreasing the local pH at the DHA-binding site, inducing protonation of the DHA carboxyl head at pH 7.4 (Figure 1D) (Liin et al., 2015b). Therefore, DHA becomes uncharged and ineffective at physiological pH. As a consequence, PUFA analogues with a lower pKa of the head group, which prevents protonation at physiological pH, was able to activate KV7.1+E1 at physiological pH (Liin et al., 2016, 2015b). Moreover, we showed that the inhibiting effect of the positively charged PUFA analogue arachidonoyl amine (AA+) was potentiated by KCNE1, as if the decreased local pH at the PUFA-binding site further protonated the amine head of AA+ (Liin et al., 2015b). This improved protonation improves the electrostatic repulsion on the voltage sensor induced by AA+ (Liin et al., 2015b). However, it remains unclear how KCNE1 decreases the local pH at the PUFA-binding site. A mechanistic understanding of how KCNE1 tunes the pharmacology of the IKs channel is critical for our ability to predict which PUFAs modulate the IKs channel, knowledge that will guide the development of synthetic PUFA analogues that pharmacologically target the KV7.1+E1 channel. In this work, we propose a molecular mechanism that explains the KCNE1-induced protonation of PUFA.
 
@@ -35,31 +35,47 @@ To identify structural motifs in the KV7.1+E1 channel that are responsible for P
 
 ## Results
 
-## Removal of charged amino acids in KCNE1 did not affect the pH dependence of the DHA effect
+### Removal of charged amino acids in KCNE1 did not affect the pH dependence of the DHA effect
 
 First, we tested the impact that charged amino acids in the extracellular N terminus of KCNE1 have on the pH dependence of the DHA effect on KV7.1. We created three KCNE1 constructs to systematically remove these charged amino acids. The first construct, E1/∆N2-38, removed most of the N terminus, including the charges E19, R32, R33, and R36 (Figure 2A). The second construct, E1/D39C/E43C, removed the two remaining negative charges in the N-terminal end of KCNE1, and the third construct, E1/K41C, removed the remaining positive charge (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/37257/elife-37257-fig2-v2.jpg)
 
-**Figure 2.:** V7.1-like DHA effect.(A) Sequences of the N-terminal segments of WT human KCNE1 and three different KCNE1 mutants. Acidic residues colored red and basic residues colored blue. (B) pH dependence of the DHA effect (70 µM) on the relative ΔV50 for each KCNE1 mutant co-expressed with WT KV7.1. Data shown as mean ± SEM. n = 3–6 per data point. Fits for KV7.1 alone (black dashed line) and KV7.1+E1 (solid black line) from data in Figure 1E are shown for comparison. (C) Apparent pKa for the DHA effect on indicated mutants. Data shown as mean ± asymmetrical 95% confidence interval determined using Equation 2 on the data in B (best fit with Equation 2: pKa = pH 8.7 for KV7.1+E1/∆N2-38, 8.8 for KV7.1+E1/D39C/E43C, and 8.5 for KV7.1+E1/K41C).
+**Figure 2.:** (A) Sequences of the N-terminal segments of WT human KCNE1 and three different KCNE1 mutants. Acidic residues colored red and basic residues colored blue. (B) pH dependence of the DHA effect (70 µM) on the relative ΔV50 for each KCNE1 mutant co-expressed with WT KV7.1. Data shown as mean ± SEM. n = 3–6 per data point. Fits for KV7.1 alone (black dashed line) and KV7.1+E1 (solid black line) from data in Figure 1E are shown for comparison. (C) Apparent pKa for the DHA effect on indicated mutants. Data shown as mean ± asymmetrical 95% confidence interval determined using Equation 2 on the data in B (best fit with Equation 2: pKa = pH 8.7 for KV7.1+E1/∆N2-38, 8.8 for KV7.1+E1/D39C/E43C, and 8.5 for KV7.1+E1/K41C).
 
 We assessed the pH dependence of the effect of extracellular application of 70 µM DHA (relative ΔV50, see Materials and methods for details) on these KCNE1 mutants to test whether each mutant had a KV7.1+E1 like (continuous line in Figure 2B) or KV7.1-like (dashed line in Figure 2B) pH dependence of the DHA effect. When co-expressed with WT KV7.1, all three KCNE1 mutants generated currents with voltage dependence of channel opening shifted to more positive voltages compared to WT KV7.1+E1 (Supplementary file 1). As shown earlier, interactions of the N-terminal end of KCNE1 with several parts of KV7.1 (e.g. S1, S4, S6, and the S5-P-helix loop) may underlie the shifts in voltage dependence induced by these mutations (Barro-Soria et al., 2017; Chung et al., 2009; Xu et al., 2013). We found that the pH dependence of the DHA effect on all three constructs was similar to the pH dependence of the DHA effect on WT KV7.1+E1 (Figure 2B). The apparent pKa of the DHA effect on WT KV7.1 co-expressed with the KCNE1 mutants were close to the apparent pKa for the DHA effect on WT KV7.1+E1 (Figure 2C). Thus, mutations of the extracellular N terminus of KCNE1 did not restore KV7.1-like pH dependence of the DHA effect, as if extracellular charged amino acids in KCNE1 are not important for protonation of DHA in KV7.1+E1.
 
-## Removal of negative charges in the S5-P-helix loop affected the pH dependence of the DHA effect
+### Removal of negative charges in the S5-P-helix loop affected the pH dependence of the DHA effect
 
 Because charged amino acids in the N terminus of KCNE1 are not responsible for the KCNE1-induced change in the pH dependence of the DHA effect, we looked at charged amino acids in the extracellular loops of KV7.1. The S5-P-helix loop in KV7.1 is long and contains several negatively charged residues (Figure 3A). Xu et al. previously reported that cysteines introduced into the S5-P-helix loop of KV7.1 form disulfide bonds with residues in the N terminus of KCNE1 (Xu et al., 2013). In other KV channels, the S5-P-helix loop exerts electrostatic effects on S4 due to its close proximity (Broomand et al., 2007; Elinder et al., 2016). Because the S5-P-helix loop could be in close proximity to the PUFA-binding site (which is proposed to be next to S4), we tested whether charged residues in the S5-P-helix loop influence DHA protonation. To this end, we created mutants in which the negatively charged amino acids E284, D286, E290, E295, and D301 in the S5-P-helix loop were, one by one, exchanged for cysteines (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/37257/elife-37257-fig3-v2.jpg)
+
+**Figure 3.:** (A) Sequences of the S5-P-helix loop of WT human KV7.1 and five KV7.1 mutants. Acidic residues colored red. (B) pH dependence of the DHA effect (70 µM) on the relative ΔV50 for each KV7.1 mutants co-expressed with WT KCNE1. Data shown as mean ± SEM. n = 3–7 for each data point. Fits for KV7.1 alone (black dashed line) and KV7.1+E1 (solid black line) from data in Figure 1E are shown for comparison. (C) Apparent pKa for the DHA effect on indicated mutants. Data shown as mean ± asymmetrical 95% confidence interval determined using Equation 2 (best fit with Equation 2: pKa = pH 8.3 for KV7.1/E284C + E1, 8.2 for KV7.1/D286C + E1, 7.8 for KV7.1/E290C + E1, 8.1 for KV7.1/E295C + E1, and 8.4 for KV7.1/D301C + E1). Figure 3—figure supplement 1 is associated with Figure 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37257/elife-37257-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) pH dependence of the DHA effect (70 µM) on the relative ΔV50 for KV7.1/E290A + E1 and KV7.1/E290C + E1 in the presence of DTT (0.5 mM DTT was added to the incubation solution and control solution to prevent disulphide bond formation during oocyte incubation and experiment). Data shown as mean ± SEM. n = 4–7 for each data point. Fit for KV7.1+E1 (solid black line) and KV7.1 alone (black dashed line) are shown for comparison. Best fit with Equation 2: pKa = pH 8.0 for KV7.1/E290A + E1, and 7.9 for KV7.1/E290C + E1 in DTT. (B) pH dependence of the DHA effect (70 µM) on the relative ΔV50 for KV7.1/E290A + E1 and KV7.1/E290R + E1. Data shown as mean ± SEM. n = 3–7 for each data point. Fit for KV7.1+E1 (solid black line) is shown for comparison. Best fit with Equation 2: pKa = pH 8.0 for KV7.1/E290A + E1, and 7.7 for KV7.1/E290R + E1.
+
 When co-expressed with WT KCNE1, four of the KV7.1 mutants (D301C being the exception) generated currents with voltage dependence of channel opening that were shifted slightly to more positive voltages compared to WT KV7.1+E1 (Supplementary file 1). By plotting the pH dependence of the DHA effect, we found that these mutants showed a range of pH-response curves in-between the curves of WT KV7.1+E1 and KV7.1 alone (Figure 3B). The pH-response curve for the DHA effect on KV7.1/D301C + E1 most closely resembled the pH-response curve for the DHA effect on WT KV7.1+E1 (Figure 3B, blue curve). In contrast, the pH-response curve for the DHA effect on KV7.1/E290C + E1 overlapped with the pH-response curve for the DHA effect on KV7.1 alone (Figure 3B, red curve). The apparent pKa of the DHA effect on KV7.1/E290C + E1 was close to the apparent pKa for the DHA effect on WT KV7.1 (Figure 3C). The apparent pKa of the DHA effect on KV7.1/E290A + E1 or KV7.1/E290C + E1 with DTT (1,4-Dithiothreitol) in the extracellular solution, to prevent formation of any potential disulfide bonds by E290C, were also similar to the apparent pKa for the DHA effect on WT KV7.1 (Figure 3—figure supplement 1A). In addition, the apparent pKa of the DHA effect on KV7.1/E290R + E1 was lower than for KV7.1/E290A + E1 (Figure 3—figure supplement 1B). Altogether, these data suggest that negatively charged residues in the S5-P-helix loop (especially E290) promote the protonation of DHA in KV7.1+E1. This protonation could be due to the negative charges in the S5-P-helix loop attracting hydrogen ions to the DHA-binding site. Because DHA protonation is promoted by KCNE1, a requisite for this hypothesis is that these negatively charged residues in the S5-P-helix loop are located close to the binding site for DHA when KCNE1 is present, but not when KCNE1 is absent. To further explore this possibility, we performed experiments using the KV7.1/E290C mutation with the largest impact on the pH dependence of the DHA effect.
 
-## Neutralization of E290 did not affect the pH dependence of the DHA effect on KV7.1 alone
+### Neutralization of E290 did not affect the pH dependence of the DHA effect on KV7.1 alone
 
 To test the prediction that the E290C mutation does not alter the pH dependence of the DHA effect in the absence of KCNE1, we tested the effect of DHA on KV7.1/E290C without KCNE1 co-expressed. As described previously (Wang et al., 2015), KV7.1/E290C generated currents with WT KV7.1-like voltage dependence for channel opening (Supplementary file 1). The pH-response curve for the DHA effect on KV7.1/E290C alone closely resembled the pH-response curve for the DHA effect on WT KV7.1 (Figure 4A, compare red dashed and black dashed curves). The apparent pKa of the DHA effect on KV7.1/E290C was close to the apparent pKa for the DHA effect on WT KV7.1 (Figure 4B). Extracellular application of 70 µM DHA at pH 8.2 shifted the voltage dependence of channel opening of KV7.1/E290C similar to WT KV7.1 (Figure 4C). This was clearly distinct from the altered pH dependence and increase in the DHA effect by the E290C mutation at pH 8.2 in the presence of KCNE1 (Figure 4A–C). These findings suggest that E290 only promotes DHA protonation when KV7.1 is co-expressed with KCNE1.
 
-## Restoring the negative charge at position 290 restored KV7.1+E1 like pH dependence of the DHA effect
+![Figure 4.](https://cdn.elifesciences.org/articles/37257/elife-37257-fig4-v2.jpg)
+
+**Figure 4.:** (A) pH dependence of the DHA effect (70 µM) on the relative ΔV50 for KV7.1/E290C expressed without KCNE1. Data shown as mean ± SEM. n = 4–14 for each data point. Fits for KV7.1 alone (black dashed line), KV7.1+E1 (solid black line), and KV7.1/E290C co-expressed with KCNE1 (red solid line) are shown for comparison. (B) Apparent pKa for the DHA effect on indicated mutants. Data shown as mean ± asymmetrical 95% confidence interval determined using Equation 2 (best fit with Equation 2: pKa = pH 8.0 for KV7.1/E290C). (C) Summary of ∆V50 induced by 70 µM DHA at pH 8.2 for indicated mutants. The E290C mutation only increases the DHA effect when KCNE1 is co-expressed. Data shown as mean ± SEM. n = 3–5. One-way ANOVA with Tukey’s multiple comparison test. *** denotes p<0.001 and ns denotes p>0.05. (D) Summary of ∆V50 induced by 70 µM DHA at pH 8.2 for indicated mutants. MTSES—modification of E290C is denoted by -SES—. MTSES—modification of E290C restores WT KV7.1+E1 like response to DHA. Data shown as mean ± SEM. n = 3–7. One-way ANOVA with Dunnett’s multiple comparison test and KV7.1/E290C-SES—+E1 set as control. *** denotes p<0.001 and ns denotes p>0.05. (E–F) Representative effect of DHA (70 µM) on the G(V) curve at pH 8.2 for (E) KV7.1/E290C + E1 and (F) KV7.1/E290C-SES—+E1. Control data in black and DHA data in red. (G) Summary of effect of arachidonoyl amine (AA+, 70 µM, structure on top) on V50 of indicated mutants at pH 7.4. The E290C mutation decreases the AA+ effect on KV7.1+E1. Data shown as mean ± SEM (modified WT data from Liin et al. [2015b]). n = 3–10. One-way ANOVA with Dunnett’s multiple comparison test and KV7.1/E290C + E1 set as control. * denotes p<0.05 and ns denotes p>0.05. Schematic illustration describes electrostatic AA+-induced prevention of outward S4 movement (right). Figure 4—figure supplement 1 is associated with Figure 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37257/elife-37257-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative current family for KV7.1/E290C + E1 before (left) and after (right) MTSES— (10 mM) modification at pH 7.4. Activating voltage steps from −80 mV to + 60 mV from a holding voltage of −80 mV. Tail voltage to −20 mV. (B) Representative normalized G(V) curve for KV7.1/E290C + E1 before (open symbols) and after (red symbols) MTSES— (10 mM) modification. The average ∆V50 induced by MTSES— modification was −4.0 ± 2.5 mV (n = 3).
+
+### Restoring the negative charge at position 290 restored KV7.1+E1 like pH dependence of the DHA effect
 
 Next, we tested whether we could restore WT KV7.1+E1 like response to DHA by restoring the negative charge at position 290 in the KV7.1/E290C + E1 mutant. For these experiments, we used the negatively charged cysteine-specific sodium [2-sulfonatoethyl] methanethiosulfonate (MTSES—) reagent to covalently attach the negatively-charged SES— group to E290C. To maximize the chance of seeing a difference in the DHA effect, we compared the effect of DHA on KV7.1/E290C + E1 with and without MTSES— modification at pH 8.2, the pH at which the difference in the DHA effects was greatest between KV7.1 and KV7.1+E1. Modification of KV7.1/E290C + E1 by extracellular application of 10 mM MTSES— had no clear effect on the intrinsic properties of KV7.1/E290C + E1 (Figure 4—figure supplement 1). However, modification of KV7.1/E290C + E1 with MTSES— dramatically reduced the ability of 70 µM DHA to shift V50 (Figure 4D–F). The DHA-induced shift of V50 in MTSES— modified and unmodified KV7.1/E290C + E1 was −11.8 ± 1.4 mV and −30.2 ± 2.6 mV, respectively. In addition, DHA induced a similar V50 shift in both WT KV7.1+E1 and MTSES— modified KV7.1/E290C + E1 at pH 8.2 (Figure 4D). This data further supports the notion that the negative charge at position 290 is important for tuning DHA protonation.
 
-## Decreased effect of positively charged PUFA analogue arachidonoyl amine on KV7.1/E290C + E1 compared to WT KV7.1+E1
+### Decreased effect of positively charged PUFA analogue arachidonoyl amine on KV7.1/E290C + E1 compared to WT KV7.1+E1
 
 As a final test of whether E290 changes the local pH at the binding site of PUFAs, we tested the effect of arachidonoyl amine (AA+) on KV7.1/E290C + E1. AA+ is a PUFA analogue in which the negatively charged carboxyl head has been exchanged for a positively charged amine head (structure in Figure 4G). We previously showed that AA+ shifts the V50 of KV7.1 and KV7.1+E1 by approximately +10 and +23 mV, respectively (Liin et al., 2015b), as if KCNE1-induced protonation of the amine head improves the electrostatic repulsion on the voltage sensor induced by AA+ and further prevents channel opening (Figure 4G, cartoon). In the presence of KCNE1, here we found that mutation of E290 caused a significant reduction in the AA+-induced V50 shift (Figure 4G, compare black and red bar). The AA+ effect on KV7.1/E290C + E1 was similar to that on WT KV7.1 alone (Figure 4G, compare red and striped bar), as if primarily E290 is responsible for the improved effect of AA+ in the presence of KCNE1. These experiments using the positively charged PUFA analogue AA+ provide further support for the hypothesis that E290 is important for the KCNE1-induced protonation of the PUFAs.
 
@@ -79,15 +95,60 @@ A detailed mechanistic understanding of how KCNE1 impairs the sensitivity of KV7
 
 ## Materials and methods
 
-## Molecular biology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>KCNQ1</td>
+      <td>NA</td>
+      <td>GenBank Acc.No. NM_000218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>KCNE1</td>
+      <td>NA</td>
+      <td>GenBank Acc.No. NM_000219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Docosahexaenoic acid (DHA)</td>
+      <td>Sigma</td>
+      <td>Cat#: D2534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium [2-sulfonatoethyl] methanethiosulfonate (MTSES-)</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Cat#: S672000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular biology
 
 KV7.1 (GenBank Acc.No. NM_000218) in expression plasmid pXOOM and KCNE1 (NM_000219) in pGEM have been previously described (Jespersen et al., 2002; Schmitt et al., 2007). Mutations were introduced using site-directed mutagenesis (QuikChange II XL with 10 XL Gold cells, Agilent, CA). Newly mutated constructs were sequenced at the core facility at Linköping University to ensure correct sequence. cRNA was prepared using T7 mMessage mMachine transcription kit (Ambion/Invitrogen, CA). RNA concentration was quantified using spectrophotometry (NanoDrop 2000c, Thermo scientific, MA).
 
-## Xenopus laevis oocyte experiments
+### Xenopus laevis oocyte experiments
 
 Xenopus oocytes were surgically isolated at Linköping University or purchased from EcoCyte Bioscience (Castrop-Rauxel, Germany). Animal experiments were uppriven by the local ethics committee. Isolated Xenopus oocytes were injected with 50 nl RNA (each oocyte injected with 50 ng KV7.1 RNA for expression of KV7.1 alone or 25 ng KV7.1 RNA and 8 ng KCNE1 RNA for co-expression of KV7.1+E1). The oocytes were incubated at 16°C for 2 to 3 days before performing two-electrode voltage clamp experiments. The two-electrode voltage clamp recordings were performed using a Dagan CA-1B Amplifier (Dagan, MN). Currents were filtered at 500 Hz and sampled at 5 kHz. The holding voltage was generally set to −80 mV. Activation curves were generally generated in steps between −80 and +80 mV in increments of 10 mV (3 s duration for KV7.1 alone and 5 s duration for KV7.1+E1). The tail voltage was generally set to −20 mV. In experiments using arachidonoyl amine, a brief hyperpolarizing pulse (50 ms at −120 mV) was introduced between the activation step and tail step to relief channels from inactivation, as previously described (Liin et al., 2015b). The control solution contained 88 mM NaCl, 1 mM KCl, 15 mM HEPES, 0.4 mM CaCl2, and 0.8 mM MgCl2. pH was set to 7.4 using NaOH. When performing experiments at higher pH, pH was set the same day as the experiment using NaOH.
 
-## Test compounds
+### Test compounds
 
 4,7,10,13,16,19-all-cis-Docosahexaenoic acid was bought from Sigma-Aldrich (Stockholm, Sweden). Arachidonoyl amine was synthesized in house, as previously described (Liin et al., 2015b). Stock solutions of the compounds were prepared in 99.5% ethanol. Final test solution was prepared shortly before experiments. Previously, the effective concentration of PUFA has been shown to be 70% of the nominal concentration due to PUFA binding to the chamber walls (Börjesson et al., 2008). Here, the PUFA concentrations are the estimated effective concentration (i.e. 70% of the nominal concentration). Control solution was applied using a gravity driven perfusion system. Test compounds were added manually using a syringe, as previously described (Börjesson et al., 2008). The chamber was cleaned in-between each oocyte using albumin-supplemented control solution.
 
@@ -95,12 +156,24 @@ For MTS experiments, fresh MTSES— (sodium [2-sulfonatoethyl] methanethiosulfon
 
 For DTT experiments, 0.5 mM DTT (1,4-Dithiothreitol, Sigma-Aldrich, Stockholm, Sweden) was added to the incubation solution and the control solution to prevent disulphide-bond formation during incubation and experiment.
 
-## Electrophysiological analysis
+### Electrophysiological analysis
 
-Electrophysiological analysis was performed in GraphPad Prism 6 and 7 (GraphPad Software Inc., CA). To quantify the voltage dependence for channel opening, tail currents were measured shortly after stepping to the tail voltage and plotted against the preceding activation voltage. A Boltzmann function was fitted to the data to generate the conductance versus voltage (G(V)) curve:(1)G(V)=A1+(A2−A1)/(1+exp(v50−vs)),where A1 is the minimal conductance, A2 the maximal conductance, V50 the midpoint (i.e. the voltage at which the conductance is half the maximal conductance determined from the fit) and s the slope of the curve. The slope of the curve (s) was constrained to be equal for control and PUFA in each oocyte. The difference in V50 induced by DHA in each oocyte (i.e. ∆V50) was calculated to quantify the shift in the voltage dependence for channel opening. In the figures, G(V) curves have been normalized between 0 and 1 based on the fitted maximum conductance for clarity. For representative current traces, the current generated by a voltage step 20 mV more negative than V50 was selected.
+Electrophysiological analysis was performed in GraphPad Prism 6 and 7 (GraphPad Software Inc., CA). To quantify the voltage dependence for channel opening, tail currents were measured shortly after stepping to the tail voltage and plotted against the preceding activation voltage. A Boltzmann function was fitted to the data to generate the conductance versus voltage (G(V)) curve:
 
-To plot the pH dependence of the DHA-induced shift in V50 as a function of the H+ concentration, the following concentration-response curve was fitted to the data:(2)ΔV50=ΔV50,max/(1+([H+]50[H+])−1),where ∆V50,max is the maximal shift in V50 and [H+]50 the H+ concentration needed to cause 50% of the maximal shift in V50. ∆V50 was then normalized between 0 and −1 for each mutant (referred to as relative ∆V50). The normalization is based on the fitted maximal value of ∆V50 from Equation (2), set as −1. Massive cell leakage at pH 10 prevented us from quantifying the DHA effect at pH 10 for KCNE1 and KV7.1 mutants. Therefore, the Hill coefficient of the concentration-response curves was constrained to −1 (as found for the DHA concentration-response curve for WT KV7.1) to make the fits more robust. [H+]50 values were determined with asymmetrical 95% confidence interval in GraphPad Prism 7. [H+]50 and confidence interval were log-transformed to achieve apparent pKa values.
+$$
+G(V)=A1+(A2−A1)/(1+exp(\frac{v_{50}−v}{s})),
+$$
 
-## Statistical analysis
+where A1 is the minimal conductance, A2 the maximal conductance, V50 the midpoint (i.e. the voltage at which the conductance is half the maximal conductance determined from the fit) and s the slope of the curve. The slope of the curve (s) was constrained to be equal for control and PUFA in each oocyte. The difference in V50 induced by DHA in each oocyte (i.e. ∆V50) was calculated to quantify the shift in the voltage dependence for channel opening. In the figures, G(V) curves have been normalized between 0 and 1 based on the fitted maximum conductance for clarity. For representative current traces, the current generated by a voltage step 20 mV more negative than V50 was selected.
+
+To plot the pH dependence of the DHA-induced shift in V50 as a function of the H+ concentration, the following concentration-response curve was fitted to the data:
+
+$$
+ΔV_{50}=ΔV_{50,max}/(1+(\frac{[H^{+}]_{50}}{[H^{+}]})^{−1}),
+$$
+
+where ∆V50,max is the maximal shift in V50 and [H+]50 the H+ concentration needed to cause 50% of the maximal shift in V50. ∆V50 was then normalized between 0 and −1 for each mutant (referred to as relative ∆V50). The normalization is based on the fitted maximal value of ∆V50 from Equation (2), set as −1. Massive cell leakage at pH 10 prevented us from quantifying the DHA effect at pH 10 for KCNE1 and KV7.1 mutants. Therefore, the Hill coefficient of the concentration-response curves was constrained to −1 (as found for the DHA concentration-response curve for WT KV7.1) to make the fits more robust. [H+]50 values were determined with asymmetrical 95% confidence interval in GraphPad Prism 7. [H+]50 and confidence interval were log-transformed to achieve apparent pKa values.
+
+### Statistical analysis
 
 Average values are expressed as mean ± SEM or mean ± 95% confidence interval (indicated in each figure legend). Statistical analyses were done using one-way ANOVA followed by a multiple comparison test. Dunnett’s multiple comparisons test was used when comparing to defined reference data. Tukey’s multiple comparisons test was used when testing all data against each other. p<0.05 was considered statistically significant.

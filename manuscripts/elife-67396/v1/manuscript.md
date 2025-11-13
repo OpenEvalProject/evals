@@ -44,27 +44,47 @@ Single-cell RNA-sequencing (scRNA-seq) studies have provided unprecedented high-
 
 ## Results
 
-## Single-cell analysis of AqH requires optimized sample processing and recruitment
+### Single-cell analysis of AqH requires optimized sample processing and recruitment
 
 We here aimed for an unbiased characterization of leukocytes in the AqH in AU flares. We screened 4980 total patients with any intraocular inflammation seen at our uveitis center. We included 11 patients with current onset of uveitis flare (n = 8) or endophthalmitis (n = 3) into this study, being untreated with topical corticosteroids for this flare (Supplementary file 1a), corresponding to a recruitment rate of approximately 0.18%. In 10 of the AqH samples, cytokine analysis was performed. Cellular infiltrates were analyzed via scRNA-Seq in AqH samples of four patients with active B27+ AAU, two patients with active B27-AU, and one patient with active bacterial endophthalmitis (Streptococcus pneumoniae); five of those samples were analyzed in parallel via flow cytometry (Supplementary file 1a). Deep characterization of AqH-infiltrating leukocytes is thus feasible.
 
 The endophthalmitis patients were significantly older than B27+ AAU patients (analysis of variance (ANOVA), p = 0.0157; Supplementary file 1a). There were four females in the B27-AU cohort, and three males and one female in the B27+ AAU cohort. All B27+ AAU patients had associated SpA, and two of them received adalimumab therapy. Both uveitis groups did not differ significantly regarding age (ANOVA, p = 0.566), Antinuclear antibodies (ANA) status, frequency of systemic anti-inflammatory treatment, topical medication, previous ocular surgery, or time since uveitis onset.
 
-## Single-cell transcriptomics reconstructs key leukocyte lineages in aqueous humor
+### Single-cell transcriptomics reconstructs key leukocyte lineages in aqueous humor
 
 We then performed scRNA-seq of ocular infiltrating cells from fresh AqH fine-needle aspirates (Supplementary file 1a). We defined 5000 input cells as our maximum intended input per sample and used excess cells beyond that number for flow cytometry analysis. Thereby, we obtained transcriptional information of 13,550 total individual cells and 1936 average cells (± 1411 SD) per patient with 830 average genes (± 402 SD) detected per cell (Supplementary file 1b). This is in accordance with the expected cell recovery rate of 50% of the scRNA-seq technique we employed (Zheng et al., 2017). After quality control, we clustered the single-cell (sc) transcriptomes of all patients combined and identified 13 individual cell clusters (Figure 1A and B). We manually annotated these clusters based on the expression of marker genes (Figure 1C, Figure 1—figure supplement 1, Supplementary file 1c). As previously shown in AqH aspirates of human uveitis patients (Denniston et al., 2012), only hematopoietic cell clusters were identified. Clusters were broadly classified into cells of myeloid (40%; cDCa, cDCb, pDC, mature DC (matDC), granulo, myeloid) and of lymphoid origin (60%; natural killer (NK), γδ T cells (gdTC), CD8, regulatory T (Treg), CD4, naive B cells (Bc), plasma). Myeloid clusters separated into cDC clusters tentatively named cDCa (ITGAX, CLEC7A) and cDCb (CLEC10A, MRC1), pDC (IL3RA/CD123, CLEC4C/CD303) and matDC (TMEM176B, IDO1, FSCN1, LAMP3, CD83), granulocytes (granulo; S100A12/ S100 A8 high, CCL2 low), and myeloid cells with unclear assignment (myeloid; S100A12/S100 A8 low, CCL2 high) (Figure 1C). The marker genes expressed by the cDC sub-clusters did not fully overlap with previously described cDC type 1/2 markers used to identify DC subsets from cerebrospinal fluid (DC1: CLEC9A, XCR1, BATF3; DC2: CD1C, FCER1A, CLEC10A) (Heming et al., 2021) or peripheral blood (DC1: CLEC9A, C1ORF54, HLA-DPA1, CADM1, CAMK2D; DC2: CD1C, FCER1A, CLEC10A, ADAM8) (Villani et al., 2017). We therefore intentionally named these clusters cDCa/b to prevent ambiguity.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig1-v1.jpg)
+
+**Figure 1.:** (A) Uniform manifold approximation and projection (UMAP) projection of seven pooled samples (control n = 1; B27-AU n = 2; B27+ AAU n = 4). The single-cell (sc) transcriptomes were manually annotated to cell types based on marker gene expression and distinguished in 13 cell clusters (color-coded; each dot represents one cell). (B) The mean proportion of cells (%) in each cluster per group is depicted in a stacked bar plot. (C) Dot plot of selected marker genes grouped by cluster. The average gene expression level is color-coded, and the circle size represents the percentage of cells expressing the gene. Threshold was set to a minimum of 10% of cells in the cluster expressing the gene. DC: dendritic cell, pDC: plasmacytoid DC, matDC: mature DC; granulo: granulocytes, NK cells: natural killer cells, gdTC: γδ T cells, Treg cells: regulatory T cells, Bc: B cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Expression of lineage markers ITGAX, AXL, CLEC10A, MRC1, CLEC4C, IL3RA, CD83, LAMP3, CCL2, S100A8, CD33, S100A12, CD4, CD3G, CD8A, TRBC2, FOXP3, IL2RA, GNLY, IL7R, TRDC, NKG7, MS4A1, and IGHG1 is shown as feature plots. Each dot represents one cell.
+
 Lymphoid clusters were classified as CD4+ T cells (CD4; IL7R, CD3G), CD8+ T cells (CD8; CD8A, CD3G), gdTC (NKG7, TRDC), Treg cells (IL2RA, FOXP3), NK cells (GNLY, NKG7), naive Bc (MS4A1, CD19, IGHD), and plasma cells (plasma; IGHG1, CD38, SDC1/CD138) (Figure 1C). We thus identified all major leukocyte lineages in AqH fine-needle aspirates (Figure 1B, Supplementary file 1d).
 
-## Diverse uveitis entities exhibit a unique intraocular leukocyte composition
+### Diverse uveitis entities exhibit a unique intraocular leukocyte composition
 
 We next sought to understand how intraocular inflammation differed between uveitis entities. First, we assessed the endophthalmitis control patient and found almost exclusively myeloid lineage clusters with predominating granulocytes in accordance with an acute anti-bacterial response (Figure 2B; Figure 2—figure supplement 1; Engstrom et al., 1991).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig2-v1.jpg)
+
+**Figure 2.:** (A) UMAP projection of pooled B27-AU (n = 2) versus pooled B27+ AAU (n = 4) samples. The single-cell (sc) transcriptomes were manually annotated to cell types based on marker gene expression and distinguished in 13 cell clusters (color-coded; each dot represents one cell). (B) The proportion of cells (%) in each cluster is depicted in a stacked bar plot for individual samples. (C) Dot plot of cluster abundance of B27-AU versus B27+ AAU. The x axis represents the decadic logarithm of fold change of proportional cluster size. (D) Box plots of proportion of cells (%) of cDCa and pDC from B27-AU and B27+ AAU. The boxes show the median, and the lower and upper quartile. Whiskers include 1.5 times the interquartile range of the box. The overlaid dots represent individual observations. (E) Leukocytes of aqueous humor (AqH) samples were analyzed according to their frequency (%) of granulocytes, monocytes/macrophages/DCs, CD4+ and CD8+ T cells, and NK cells. The proportion of each cell population identified via flow cytometry is depicted in a stacked bar plot. DC: dendritic cell, pDC: plasmacytoid DC, matDC: mature DC; granulo: granulocytes, NK cells: natural killer cells, gdTC: γδ T cells, Treg cells: regulatory T cells, Bc: B cells, mono: monocyte, macro: macrophage.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** UMAP projection as in Figure 2A of only the endophthalmitis control patient. The single-cell (sc) transcriptomes were manually annotated to cell types based on marker gene expression and distinguished in 13 cell clusters (color-coded; each dot represents one cell).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Leukocytes in side scatter (SSC)/forward scatter (FSC) scatter were identified, doublets were excluded, and leukocytes were gated on CD3-CD11b+ myeloid cells, CD3+ CD11b- T cells, and CD3-CD11b- cells. Myeloid cells were further classified into CD11c+ HLA-DR- granulocytes and CD11c+ HLA-DR+ monocytes/macrophages/dendritic cells (DCs). T cells were further subdivided into CD4+- and CD8+-expressing cells. CD3-CD11b- cells were analyzed according to their frequency of CD56+ natural killer (NK) cells. Representative analysis is shown. (B) Correlation plot (Spearman’s correlation coefficient) between flow proportions (columns) and single-cell RNA-sequencing (scRNA-seq) (rows) proportions is shown as a heatmap, with high correlation coefficients shown in red.
 
 In contrast, the cellular infiltrates in B27-AU and B27+ AAU patients’ AqH were of more lymphoid origin, reflecting their autoimmune etiology (Figure 2A and B). When systematically comparing B27+ AAU vs B27-AU samples, inter-patient variability was high (Figure 2A and B), but several populations still substantially differed between uveitis subtypes (Figure 2C, Supplementary file 1d). While the CD8 and naive Bc clusters were reduced, the pDC and cDCa clusters were more abundant in B27+ AAU patients (Figure 2C and D), overall indicating an influx or expansion of DC in this uveitis entity.
 
 Next, we sought to confirm our findings using flow cytometry (Figure 2E; Figure 2—figure supplement 2). The expression of canonical lineage markers differs between mRNA and protein quantification (Peterson et al., 2017), and we therefore used widely applicable pan-lineages in flow cytometry. AqH-derived cells of some of the patients (Supplementary file 1a) were analyzed to distinguish granulocytes (CD3-CD11b+HLA-DR-), monocytes/macrophages/DCs (CD3-CD11b+HLA-DR+), CD4+ and CD8+ T cells (CD3+CD11b-), and NK cells (CD3-CD11b-CD56+). This confirmed the mainly myeloid infiltrate in the endophthalmitis patient (Figure 2E). B27-AU patients showed an infiltrate dominated by T cells, low NK cells, and low cells of myeloid origin. In B27+ AAU patients, myeloid cells were more abundant than in B27-AU (Figure 2E). Also, the abundance of broad cell classes quantified by scRNA-seq and flow cytometry showed a positive correlation (Figure 2E, Figure 2—figure supplement 2B). The higher frequency of granulocytes detected in flow cytometry than in the scRNA-seq might be due to the higher fragility of these cells during processing for scRNA-seq (Zilionis et al., 2019). Overall, subtypes of uveitis were thus characterized by a unique pattern of local inflammatory cells.
 
-## Specific transcriptional phenotype of intraocular leukocytes in subtypes of uveitis
+### Specific transcriptional phenotype of intraocular leukocytes in subtypes of uveitis
 
 Next, we sought to understand how local leukocytes differ transcriptionally between uveitis entities. To analytically account for low total cell numbers, we merged clusters into five broad cell type of ‘meta-clusters’ for differential expression analysis (Figure 3A, Supplementary file 1e): helper T cells (help; Treg, CD4), cytotoxic cells (toxic; CD8, NK, gdTC), merged DCs (mergeDC; matDC, pDC, cDCa, cDCb), other myeloid cells (myeloidLin; myeloid, granulo), and B-cell lineage (BcLin: naive Bc, plasma). We then tested for differentially expressed (DE) genes between B27+ AAU and B27-AU. Across all clusters, multiple major histocompatibility complex (MHC) class I and class II related genes (HLA-A, HLA-DPA1, HLA-DRA, HLA-DRB1, B2M) were expressed at lower levels in B27+ AAU samples (Figure 3B–F). Furthermore, in B27+ AAU, the help and BcLin meta-clusters downregulated one cytokine receptor (CXCR4). The toxic meta-cluster downregulated signs of cytotoxicity (GZMK, GZMH, LTA). The BcLin meta-cluster featured an increase of macrophage-inhibitory factor (MIF), known to inhibit NK cell activity (Apte et al., 1998). The myeloid meta-cluster reduced expression of several interferon (IFN)-regulated genes (IFITM genes; Figure 3B–F).
 
@@ -78,15 +98,27 @@ We also found elevated expression of prefoldin 5 (PFDN5) in myeloid, toxic, and 
 
 The risk for developing HLA-B27-associated autoimmune diseases is partially determined by variants in non-HLA genetic loci (Robinson et al., 2015; Lin et al., 2011; Australo-Anglo-American Spondyloarthritis Consortium (TASC) et al., 2010; Li et al., 2019; Evans et al., 2011; International Genetics of Ankylosing Spondylitis Consortium (IGAS) et al., 2013; Trochet et al., 2019; Ellinghaus et al., 2016; Huang et al., 2020). We therefore interlinked our transcriptional data with existing genetic information, by testing which ‘meta-clusters’ differentially expressed AAU/SpA risk genes between B27+ AAU and B27-AU (Figure 3G, Supplementary file 1g). Both uveitis-related and SpA-related risk genes were included in the analysis because all B27+ AAU patients had systemic SpA (Supplementary file 1). Many SpA-related risk genes were highly expressed in the BcLin cluster (eg, CLEC16A, IFNLR1), and in the mergeDC cluster (eg, IFNGR2, AHR) in B27+ AAU (Figure 3G, Supplementary file 1g). Compared to B27-AU, expression of genes involved in the detection of pathogens (eg, CARD9, TLR4) showed lower expression in the mergeDC cluster in B27+ AAU. Notably, most AU-related risk genes were preferentially expressed in the B27+ AAU mergeDC cluster (eg, EYS, HLA-DRB5, ERAP1, and IL18R1). This indicates the relevance of DC in B27+ AAU.
 
-## Subtype-specific local leukocyte communication in uveitis
+### Subtype-specific local leukocyte communication in uveitis
 
 We also attempted to understand how uveitis controlled the local inter-cellular signaling circuitry. We therefore used a computational tool (CellPhoneDB; Efremova et al., 2020) to predict cell-cell interactions between human leukocytes in uveitis from scRNA-seq data. The pDC and plasma clusters had to be excluded because of their small size in B27-AU. In the resulting analysis, the granulo and myeloid clusters had the highest number of predicted interactions (Figure 4—figure supplement 1). In both uveitis groups, most interactions were between myeloid, granulo, gdTC, and multiple DC clusters. Myeloid lineage clusters thus express the highest capacity for cell-cell interaction.
 
 Next, we tested for differences of predicted interactions between both subtypes of uveitis. We calculated the number of predicted interactions in B27+ AAU minus that in B27-AU (Figure 4A). B27-AU displayed many interactions between T/NK clusters with myeloid, matDC, and cDCb clusters (Figure 4A, Figure 4—figure supplement 1A). In contrast, the cDCa cluster showed widespread interactions in B27+ AAU (Figure 4A, Figure 4—figure supplement 1B.). This suggests that preferential interactions differ between uveitis entities and that the cDCa cluster might be involved in intraocular inflammation in B27+ AAU.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig4-v1.jpg)
+
+**Figure 4.:** (A) The total count of receptor-ligand interactions between cell clusters of B27-AU and B27+ AAU single-cell (sc) transcriptomes was obtained with CellPhoneDBv2.0 (see Figure 4—figure supplement 1 for separate analyses). The heatmap shows the differences between B27+ AAU and B27-AU (amount of predicted interactions of all cell types, excluding plasma and plasmacytoid DC (pDC) due to few cells (<10) of B27+ AAU minus those of B27-AU). (B) Overview of all ligand–receptor interactions of the cDCa cluster with at least one significant interaction. Circle size indicates the p-values. The means of the average expression level of interacting molecule 1 in cluster 1 and interacting molecule 2 in cluster 2 are color-coded. (C) Heatmap showing aqueous humor (AqH) cytokine level of B27-AU (n = 3) and B27+ AAU (n = 4) patients (see Supplementary file 1h showing single values). Data were scaled column wise. Columns were clustered using euclidean distance measure and complete linkage. (D) Box plots of interleukin (IL)-2, IL-6, interferon (IFN)-γ, IL-18, IL-22, IL-1β, IL-5, IL-17A, and IL-1 receptor antagonist (IL-1RA) (pg/ml) in the AqH of patients with B27-AU and B27+ AAU. Dots represent individual data. Mann-Whitney U-test (*p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Predicted receptor-ligand interactions between cell clusters in (A) B27-AU and (B) B27+ AAU were obtained with CellPhoneDBv2.0. The legend represents the amount of interactions.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67396/elife-67396-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Heatmap showing gene expression of cytokines that were used for luminex analysis within each ´meta-cluster´. Data were scaled column wise. Columns were clustered using euclidean distance measure and complete linkage. (B) Heatmap showing the serum cytokine level of B27-AU (n = 5) and B27+ AAU (n = 6) patients (see Supplementary file 1i showing single values). Data were scaled row wise. Columns were clustered hierarchically using euclidean distance measure and complete linkage. (C) Box plots of interferon (IFN)-γ and interleukin-1 receptor antagonist (IL-1RA) (pg/ml) in the sera of patients with B27-AU and B27+ AAU. Dots represent individual data. Mann-Whitney U-test (*p<0.05).
+
 Notably, when focusing on individual interactions of the cDCa cluster (Figure 4B), MHC class II-related transcripts (eg, CD74, HLA-E) were predicted to interact with surface molecules such as MIF or KLRC1 with immunomodulatory capacity and known association to autoimmunity (Figueiredo et al., 2018; Borrego et al., 1998). The predicted interaction of cDCa with pDC clusters in B27+ AAU samples also included the LAIR-LILRB4 and AXL-GAS6 interaction pairs (Figure 4B) that exert immunosuppressive phagocytosing functions (Scutera et al., 2009; Brown et al., 2009). Overall, our findings indicate subtype-specific local inter-cellular leukocyte signaling and indicate that DC forms a central signaling node in uveitis.
 
-## Increased level of pro-inflammatory cytokines in AAU patients
+### Increased level of pro-inflammatory cytokines in AAU patients
 
 Next, we sought to characterize the intraocular immune response through the analysis of soluble mediators. We therefore quantified a predefined set of cytokines in the AqH of these patient groups (Supplementary file 1h). Several cytokines were below detection limits, and the most notable feature of all these samples was a pronounced presence of interleukin (IL)-6 and IL-1 receptor antagonist (IL-1RA). High levels of immunosuppressive IL1-RA in AqH of uveitis/endophthalmitis patients have also been shown in B27+ AAU patients (Zhao et al., 2015; de Vos et al., 1994; Planck et al., 2012) and may reflect the immune-privileged microenvironment in the anterior chamber (Zhao et al., 2015; de Vos et al., 1994; Planck et al., 2012; Dana et al., 1998). The cytokine milieu in endophthalmitis was characterized by innate-related IL-6, tumor necrosis factor (TNF)-α, and IL-1β (Supplementary file 1h), which are involved in ocular barrier breakdown and leukocyte recruitment into ocular tissue (Hao et al., 2016; Feys et al., 1994; Giese et al., 1998).
 
@@ -112,7 +144,7 @@ In scRNA-seq, the alarmins S100A8/S100A9 are assigned mainly as marker genes for
 
 The analysis of the cytokine pattern of AqH and sera in the study confirmed previous observations describing elevated IL-18 and IFN-γ levels in the AqH (Zhao et al., 2015; Lacomba et al., 2000), and an elevated serum IFN-γ level in B27+ AAU patients during active uveitis (Chen et al., 2015; Lacomba et al., 2000). In particular, IL-18 is a main costimulatory factor for IFN-γ expression in T and NK cells (Okamura et al., 1995). Further, the elevated expression of several IFN-γ-related transcripts in B27+ AAU samples matched with previous observations in SpA joint biopsies (Carlberg et al., 2019), indicating a IFN-γ-driven immune response during active uveitis.
 
-## Limitations of the study
+### Limitations of the study
 
 The main limitation of the study is its small sample size combined with a high inter-patient variability influenced by multiple potential confounders (eg, age, sex, disease duration, medication, comorbidities). However, considering the invasiveness of the procedure, the rarity of the disease, and the high costs of sc transcriptomics, our study is relatively sizable. Since both flow cytometry and scRNA-seq were performed with fresh material and since AqH is precious material with limited cell numbers, we were not able to verify several of the hall markers identified with the unbiased scRNA-seq approach. Additional studies that verify the identified genes in a larger cohort will be necessary. Furthermore, the study lacks matched blood data, and we observed an inter-assay variability in some cell populations (eg, granulocytes) between scRNA-seq and flow cytometry. In future studies, multiplex staining with antibodies conjugated to a feature barcode oligonucleotide could improve phenotyping of cells, and an unbiased low-input proteomics analysis will be beneficial to link protein and gene-expression analyses.
 
@@ -120,54 +152,253 @@ Despite these limitations, our study demonstrates the proof-of-concept feasibili
 
 ## Materials and methods
 
-## Patients and inclusion criteria
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Aqueous humor (AqH)</td>
+      <td>Department of Ophthalmology at St Franziskus Hospital, Münster, Germany</td>
+      <td>Deidentified</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (H. sapiens)</td>
+      <td>Serum</td>
+      <td>Department of Ophthalmology at St Franziskus Hospital, Münster, Germany</td>
+      <td>Deidentified</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3 (mouse monoclonal;OKT3; PerCP-Cy5.5)</td>
+      <td>Biolegend</td>
+      <td>Cat# 317336; RRID:AB_2561628</td>
+      <td>Dilution (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4 (mouse monoclonal; OKT4;BV510)</td>
+      <td>Biolegend</td>
+      <td>Cat# 317444; RRID:AB_2561866</td>
+      <td>Dilution (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8a (mouse monoclonal; SK1; APC)</td>
+      <td>Biolegend</td>
+      <td>Cat# 344722; RRID:AB_2075388</td>
+      <td>Dilution (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b (rat monoclonal; M1/70; FITC)</td>
+      <td>Biolegend</td>
+      <td>Cat# 101205; RRID:AB_312788</td>
+      <td>Dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11c (mouse monoclonal; 3.9; Pacific Blue)</td>
+      <td>Biolegend</td>
+      <td>Cat# 301625; RRID:AB_10662901</td>
+      <td>Dilution (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD56 (mouse monoclonal; N901; PC7)</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# A21692; RRID:AB_2892144</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HLA-DR (mouse monoclonal; Immu-357;ECD)</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# IM3636;RRID:AB_10643231</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FcR-blocking reagent, human</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130-059-901; RRID:AB_2892112</td>
+      <td>20 µl/Test</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProcartaPlex Human Cytokine Panel 1B (25 plex) 96 tests Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PX250-12166-901; RRID:AB_2576119</td>
+      <td>Luminex analysis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3' Library &amp; Gel Bead Kit v2 and v3</td>
+      <td>10x Genomics</td>
+      <td>Cat# PN-120237Cat# PN-1000075</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AMPure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# A63881</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NextSeq 500/550 High Output Kit v2.5 (150 cycles)</td>
+      <td>Illumina</td>
+      <td>Cat# 20024907</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NovaSeq 6,000 S4 Reagent Kit v1.5 (300 cycles)</td>
+      <td>Illumina</td>
+      <td>Cat# 20028312</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cellranger v3.0.2</td>
+      <td>10x Genomics; https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger</td>
+      <td>RRID:SCR_017344</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing; R v4.0.2</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td>RNA-seq analysis; statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v3.1.5</td>
+      <td>Stuart et al., 2019; http://seurat.r-forge.r-project.org/</td>
+      <td>RRID:SCR_007322</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HARMONY</td>
+      <td>Korsunsky et al., 2019; https://github.com/immunogenomics/harmony</td>
+      <td></td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellPhoneDB</td>
+      <td>Efremova et al., 2020; https://www.cellphonedb.org/</td>
+      <td>RRID:SCR_017054</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EnhancedVolcano.</td>
+      <td>Blighe et al., 2018;https://github.com/kevinblighe/EnhancedVolcano</td>
+      <td>RRID:SCR_018931</td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cerebroApp</td>
+      <td>Hillje et al., 2020;https://github.com/romanhaa/cerebroApp</td>
+      <td></td>
+      <td>RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACS Kaluza software v2.1.1</td>
+      <td>Beckman Coulter; https://www.beckman.com/coulter-flow-cytometers/software/kaluza</td>
+      <td>RRID:SCR_016182</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10.6.1</td>
+      <td>BD Biosciences; https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ProcartaPlex Analyst 1.0 software</td>
+      <td>Thermo Fisher Scientific; https://www.thermofisher.com/de/de/home/global/forms/life-science/procartaplex-analyst-software.html</td>
+      <td></td>
+      <td>Luminex analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MedCalc Statistical Software version 19.3.1</td>
+      <td>MedCalc Software Ltd, Ostend, Belgium; https://www.medcalc.org; 2020</td>
+      <td>RRID:SCR_015044</td>
+      <td>Statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Patients and inclusion criteria
 
 Inclusion criteria (all must be fulfilled) were as follows: patients with clinically non-granulomatous AU with an anterior chamber (AC) cell grade >2 + according to SUN guidelines or with infectious endophthalmitis (Jabs et al., 2005). Even though patients received topical corticosteroids in previous recurrences, at the time of sampling, patients received no topical anti-inflammatory medication.
 
 Patients included in the study were classified into the following groups (Supplementary file 1a). (1) Patients with HLA-B27-associated AAU (B27+ AAU) and with typical clinical signs of AAU. (2) Patients with HLA-B27-negative AU (B27-AU), with typical clinical signs but without inflammatory/immune-mediated systemic disease associated with uveitis. (3) Patients with infectious endophthalmitis. Patients with ages, gender, and systemic medical therapies typical for these three entities were chosen.
 
-## Laboratory parameters
+### Laboratory parameters
 
 The following standard laboratory parameters were tested in all patients: differential blood count, liver and kidney function tests, C-reactive protein, angiotensin-converting enzyme, soluble interleukin 2-receptor, and serological testing for Treponema pallidum. The patient was excluded from the study if any of those were remarkable. Patients were analyzed for their HLA-B27 status using established olymerase chain reaction (PCR) (licensed lab standard).
 
 In addition, patients underwent chest x-ray and consultation with a specialist for internal medicine or rheumatology to identify any associated systemic immune-mediated disease. Patients were classified as having HLA-B27-associated uveitis (eventually with associated systemic disease) if none of the tests except HLA-B27 positivity produced any further findings indicating non-related associated systemic disease. Patients with a clinical appearance of infectious (eg, herpes simplex virus (HSV)- or varicella-zoster virus (VZV)-induced) uveitis or uveitis syndromes (eg, Fuchs uveitis syndrome) were not included in the study.
 
-## Ophthalmic examinations
+### Ophthalmic examinations
 
 A standardized ophthalmic database was applied for the analysis that included the following parameters: clinical ophthalmic observations on uveitis in the involved eyes were documented according to the SUN criteria (Jabs et al., 2005). Briefly, best-corrected visual acuity testing (in LogMAR), slit-lamp examination, Goldmann tonometry, and funduscopy were performed by two independent observers. Any uveitis-related intraocular complications were recorded (Supplementary file 1a).
 
-## AqH fine-needle aspirates
+### AqH fine-needle aspirates
 
 AqH (100–150 µl) was collected from each study subject using a 30 G needle under local anesthesia and immediately shipped at 4°C to the department of neurology at the University Clinic Muenster (Germany) for scRNA-seq and/or flow cytometry analysis. Freshly isolated cells were centrifuged once, counted, and up to 5000 of the input cells were used for scRNA-seq, and the remaining cells were used for flow cytometry. For protein (luminex) analysis, 60 µl of the AqH was centrifuged for 5 min at 12,000×g and stored at –80°C until analysis.
 
-## Single-cell RNA-sequencing and analysis
+### Single-cell RNA-sequencing and analysis
 
 Freshly isolated sc suspensions were loaded onto the Chromium Single Cell Controller using the Chromium Single Cell 3' Library & Gel Bead Kit v2 or v3 chemistry (both from 10x Genomics). Sample processing and library preparation were performed according to the manufacturer’s instructions using AMPure XP beads (Beckman Coulter). Sequencing was either carried out on a local Illumina Nextseq 500 using the High-Out 75 cycle kit with a 26-8-0-57 read setup and 150 cycles or commercially (Microanaly, China) on a NovaSeq 6000 using the 300 cycle kit with a paired-end 150 read setup. Sample library kits version and sequencing information are shown in Supplementary file 1b.
 
-## Preprocessing of sequencing data
+### Preprocessing of sequencing data
 
 Processing of sequencing data was performed with the cellranger pipeline v3.0.2 (10x Genomics) according to the manufacturer’s instructions. Raw bcl files were de-multiplexed using the cellranger mkfastq pipeline. Subsequent read alignments and transcript counting were done individually for each sample using the cellranger count pipeline with standard parameters. The cellranger aggr pipeline was employed to generate an sc barcode matrix containing all the samples without normalization. The normalization of each library was subsequently performed in Seurat (see below).
 
-## Quality control, normalization, clustering, alignment, and visualization of scRNA-seq data
+### Quality control, normalization, clustering, alignment, and visualization of scRNA-seq data
 
 Subsequent analysis steps were carried out using Seurat v3.1.5 (Stuart et al., 2019) using R v4.0.2 as recommended by the Seurat tutorials. Briefly, cells were filtered to exclude cell doublets and low-quality cells with few genes (<200), high genes (>900–3500), or high mitochondrial percentages (5–7%) in each patient individually. After quality control, the total cell number used for the analysis was 12,305 (Supplementary file 1b). To account for technical variation, data were normalized using regularized negative binomial regression (Hafemeister and Satija, 2019), taking into account mitochondrial percentage and cycle score. Dimensionality reduction was done by principal component analysis. The number of principal components used for the further analysis was determined using an elbow plot. Cells were clustered using the ‘FindNeighbors’ (based on k-nearest neighbor (KNN) graphs) and ‘FindCluster’ (Louvain algorithm) functions in Seurat. To account for batch effects, different samples were aligned using Harmony (Korsunsky et al., 2019). The UMAP was then used to visualize cells in a two-dimensional space. Clusters were annotated based on known marker genes.
 
-## Identifying differentially expressed genes
+### Identifying differentially expressed genes
 
 The ‘FindMarker’ function in Seurat, which used the Wilcoxon rank sum test, was applied to normalized and aligned data. The threshold of the adjusted p-value was set to 0.05. Volcano plots were created with the R package EnhancedVolcano. DE genes identified by Seurat were used as the input. The threshold for the average log fold change was set at 0.5 and that for p-values at 0.001.
 
-## Average expression of GWAS risk gene
+### Average expression of GWAS risk gene
 
 Summary statistics were downloaded from the NHGRI-EBI GWAS Catalog (Buniello et al., 2019) for the studies GCST007362/GCST007361 (Robinson et al., 2015), GCST001345 (Lin et al., 2011), GCST000563 (Australo-Anglo-American Spondyloarthritis Consortium (TASC) et al., 2010), GCST007361 (Robinson et al., 2015), GCST007844 (Li et al., 2019), GCST001149 (Evans et al., 2011), GCST005529 (International Genetics of Ankylosing Spondylitis Consortium (IGAS) et al., 2013), GCST008910 (Trochet et al., 2019), GCST003097 (Ellinghaus et al., 2016), and GCST010481 (Huang et al., 2020) downloaded on 04/09/2020.
 
-## Identifying cellular interactions
+### Identifying cellular interactions
 
 Cellular interactions were analyzed using CellPhoneDB (Efremova et al., 2020). Normalized and aligned scRNA-seq data with the clusters identified by Seurat separated by diagnosis were used for analysis. Clusters with less than 10 cells were excluded. Statistical iterations were set at 1000 and genes expressed by less than 10% of cells in a cluster were removed. Resulting interactions are based on the CellPhoneDB repository. Heatmaps were produced by using the integrated heatmap function and then calculating the difference of the count of significant interactions in condition 1 and condition 2. Dot plots were created with the integrated dot plot function.
 
-## Flow cytometry of AqH-derived cells
+### Flow cytometry of AqH-derived cells
 
 Flow cytometry analysis was performed on the maximum of recovered cells from the AqH samples (≤106 cells). Cells were first blocked with FcR anti-human blocking reagent (Miltenyi). Afterwards, cells were stained for 30 min at 4°C in the dark with a combination of the following anti-human antibodies: CD3 (perCp-Cy5.5, clone OKT3), CD4 (BV510, clone OKT4), CD8 (APC, clone SK1), CD11b (FITC clone M1/70), CD11c (Pacific Blue, clone 3.9)—all from Biolegend—and CD56 (Pe-Cy7, clone N901) and HLA-DR (ECD, clone Immu-357) from Beckman Coulter. Samples were measured on a Gallios (10 colors, 3 lasers; Beckman Coulter) flow cytometer using FACS Kaluza software v2.1.1 (Beckman Coulter). Data were analyzed with FlowJo v10.6.1 (BD Biosciences). The gating strategy is illustrated in Figure 2—figure supplement 2.
 
-## Quantification of cytokines in AqH
+### Quantification of cytokines in AqH
 
 Cytokines in AqH samples were quantified via luminex analysis using a ProcartaPlex Human Cytokine-Panel 1B (Thermo Fisher Scientific, Waltham, Massachusetts, USA) that quantifies granulocyte macrophage-colony stimulating factor (GM-CSF), IFN-α, IFN-γ, IL-1α, IL-1β, IL-1RA, IL-2, IL-4, IL-5, IL-6, IL-7, IL-9, IL-10, IL-12p70, IL-13, IL-15, IL-17A, IL-18, IL-21, IL-22, IL-23, IL-27, IL-31, TNF-α, and TNF-β, according to the manufacturer’s instructions. Standards and samples were measured in duplicates using Bio-Plex MAGPIX Multiplex Reader (BioRad, Hercules, California, USA) and cytokines were quantified in (pg/µl) using ProcartaPlex Analyst 1.0 software (Thermo Fisher Scientific).

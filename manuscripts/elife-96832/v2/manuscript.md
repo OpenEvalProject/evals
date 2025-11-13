@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01yq9ya27 Department of the Control of Genetic Processes, Institute of Gene Biology Russian Academy of Sciences Moscow Russian Federation
-2. https://ror.org/01yq9ya27 Center for Precision Genome Editing and Genetic Technologies for Biomedicine, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation
-3. https://ror.org/01q3tbs38 Bioscience Program, Division of Biological and Environmental Science and Engineering (BESE), King Abdullah University of Science and Technology (KAUST) Thuwal Saudi Arabia
-4. https://ror.org/05qrfxd25 Bach Institute of Biochemistry, Research Center of Biotechnology Russian Academy of Sciences Moscow Russian Federation
-5. https://ror.org/00v0z9322 Moscow Institute of Physics and Technology, Institutsky lane 9 Moscow Russian Federation
+1. Department of the Control of Genetic Processes, Institute of Gene Biology Russian Academy of Sciences Moscow Russian Federation ([ROR:01yq9ya27](https://ror.org/01yq9ya27))
+2. Center for Precision Genome Editing and Genetic Technologies for Biomedicine, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation ([ROR:01yq9ya27](https://ror.org/01yq9ya27))
+3. Bioscience Program, Division of Biological and Environmental Science and Engineering (BESE), King Abdullah University of Science and Technology (KAUST) Thuwal Saudi Arabia ([ROR:01q3tbs38](https://ror.org/01q3tbs38))
+4. Bach Institute of Biochemistry, Research Center of Biotechnology Russian Academy of Sciences Moscow Russian Federation ([ROR:05qrfxd25](https://ror.org/05qrfxd25))
+5. Moscow Institute of Physics and Technology, Institutsky lane 9 Moscow Russian Federation ([ROR:00v0z9322](https://ror.org/00v0z9322))
 
 † Corresponding author
 
@@ -47,23 +47,71 @@ In this study, we investigated the presence of TTK-type and canonical BTB domain
 
 ## Results
 
-## Most BTB domains of transcription factors in Drosophila melanogaster are of TTK-type
+### Most BTB domains of transcription factors in Drosophila melanogaster are of TTK-type
 
 The Drosophila melanogaster genome contains 28 genes encoding transcription factors with BTB domains (Figure 1). Many genes encode several BTB-containing protein isoforms, which differ in their C-terminal sequences. At two exceptional loci, mod(mdg4) and lola, multiple isoforms are formed by trans-splicing, the mechanism of which is still unclear (Tikhonov et al., 2018). The mod(mdg4) locus encodes at least 30 isoforms, most of which have FLYWCH domains (Bradley and Andrew, 2001). Seventeen of the 20 isoforms produced by the lola locus contain different C-terminal C2H2 zinc-fingers (Horiuchi et al., 2003).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig1-v2.jpg)
 
-**Figure 1.:** Drosophila transcription factors with broad-complex, Tramtrack, and bric-a-brac (BTB) domains.Only one representative isoform is shown for each gene. Pipsqueak psq DNA-binding domain is depicted as ‘HTH’ since it is a type of helix-turn-helix (HTH) domain.
+**Figure 1.:** Only one representative isoform is shown for each gene. Pipsqueak psq DNA-binding domain is depicted as ‘HTH’ since it is a type of helix-turn-helix (HTH) domain.
 
 BTB domains of transcription factors belong to the distinct subtype of BTB domains (ZBTB) with N-terminal extension playing a role in their homodimerization (Bonchuk et al., 2023). A characteristic feature of the TTK-type BTB domain is the presence of the FxLRWN motif at this N-terminal extension. Comparison of the amino acid sequence of BTBs from 28 Drosophila BTB-containing transcription factors showed that 24 BTB domains contain the characteristic ‘TTK motif’ (Figure 2a and b). The TTK-type BTB domains are usually located at the N-termini of proteins, however, in two proteins (CG6118, bric-a-brac2), the BTB domains are located in the middle of the protein (Figure 1). As an exception, Batman consists of only the BTB domain. Four transcription factors (CP190, CG6792, CG15725, and Ken) have BTB domains without a TTK motif (Figure 1).
 
-## The TTK-type BTB domains display a broad heteromeric interaction propensity
+![Figure 2.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-v2.jpg)
+
+**Figure 2.:** (a) Multiple sequence alignment of BTB domains from Drosophila transcription factors and a few human BTB domains with known 3D structures. Secondary structure elements are labeled according to Stogios et al., 2005.(b) Hidden Markov Model (HMM)-profile models for the TTK motif (upper) and the main dimer-dimer interaction interface (lower) were obtained for 14 Diptera species. (c) Testing of the GAF, Mod(mdg4), and LOLA BTB domains for interaction with all TTK-type BTB domains found in Drosophila melanogaster. Original data are shown in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Growth assay plates without histidine are shown (yeasts are unable to grow on this medium in the absence of interaction). AD stands for Activation Domain, BD – for DNA-Binding Domain of GAL4 protein. Unlabeled plate segments correspond to excessive controls.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp10-v2.jpg)
+
+**Figure 2—figure supplement 10.:** Designations are the same as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig2-figsupp11-v2.jpg)
+
+**Figure 2—figure supplement 11.:** Designations are the same as in Figure 2—figure supplement 1.
+
+### The TTK-type BTB domains display a broad heteromeric interaction propensity
 
 The characteristic feature of the TTK-type BTB domains is their ability to selectively interact with each other (Bonchuk et al., 2011). We tested the interaction of all TTK-type BTB domains with BTB domains from Mod(mdg4), LOLA, Chinmo, CG8924, and GAF in a yeast two-hybrid assay (Y2H; Figure 2c, and Supplementary file 2 and Figure 2—figure supplements 1–6). We found that all BTB domains can interact with themselves. 23 out of 24 TTK-type BTB domains also interacted with at least one of the GAF, LOLA, or Mod(mdg4) BTB domains. GAF, Mod(mdg4), LOLA, and CG8924 all interacted with at least 10 of the 24 TTK-type BTB domains, while Chinmo interacted with 18 TTK-type BTB domains (Figure 2c, Supplementary file 2). The homology between interacting domains was mostly in the range 35–47%, but could be as low as 25%. No obvious relationship between homology and heteromeric interaction ability was found (Supplementary file 3).
 
 We also tested the interaction between four non-TTK BTB domains (CP190, Ken, CG15275, and CG6792 (dPLZF)) and did not find heteromeric interaction between them (Supplementary file 4). The BTBs of CP190 and CG6792 formed homodimers in vitro, like all other classical BTB domains (Figure 3—figure supplement 2). The Ken and CG15725 BTB domains were insoluble after bacterial expression. Using Y2H, we detected only a small number of interactions between the non-TTK BTB domains of CP190 and Ken with the TTK-type BTB domains: CP190 interacted with GAF and Ribbon, while Ken interacted with Batman and Mamo (Supplementary file 5 and Figure 2—figure supplements 7–11). These data also serve as an additional negative control for results showing the broad ability of TTK-type to heteromerization in Y2H assay. These results confirm that the TTK-type domains are functionally distinct from classical BTB domains.
 
-## Cryo-electron microscopy reveals hexameric assembly of the BTB domain of CG6765 protein through a previously uncharacterized interface
+### Cryo-electron microscopy reveals hexameric assembly of the BTB domain of CG6765 protein through a previously uncharacterized interface
 
 To test the ability of TTK-type BTB domains to multimerize and shed light on their possible structure, we screened all TTK-type BTB domains from Drosophila melanogaster for the possibility of high-yield expression and soluble purification for subsequent structural analysis.
 
@@ -73,15 +121,109 @@ Only three BTB domains (CG67651-133, CG321211-147, and LOLA1-120) were soluble a
 
 Hence, we used single-particle cryo-EM to elucidate the structure of BTB domain assemblies. To enhance particle contrast on cryo-EM images, we used the BTB domain of CG67651-133 fused to MBP (40 kDa), which resulted in a monomer Mw of 56 kDa. Iterative masked refinement excluding flexible MBP regions resulted in a final reconstruction of core CG67651-133 multimer at a resolution of 3.3 Å (full data processing flowchart is shown at Figure 3—figure supplement 1). The map clearly shows the hexameric assembly consisting of three dimers (Figure 3a). To model the atomic structure of CG6765 hexamers, we utilized an AlphaFold multimer implementation (Evans et al., 2022). The hexamer was predicted with high confidence and despite the loop regions the model fits well into the obtained cryo-EM map (Figure 3b). CG6765 hexamer consists of three canonical BTB dimers with extensive hydrophobic molecular contacts and main-chain hydrogen bonds (N78, V82, Y84, V86) forming a β-sheet between two parallel β4-strands (corresponding to B3 according to Stogios et al., 2005; Figure 3b and c). In addition, a bifurcated hydrogen bond is formed from the side chain hydroxy group of Y84 of one dimer to the sidechain of T77 and main-chains of either N78 or I76 of the second dimer. Furthermore, a few inter-dimer hydrogen bonds are formed between (i) T50 and T73, (ii) N78 and N80, and (iii) side chain hydroxy group of Y36 and P75/M70 main chain atoms. Interdimeric interactions were further strengthened by hydrophobic contacts between A2 (F66, M70, P75), the loop preceding B1 (I48), and B2/B1/B3 sheet (V34, V86) (Figure 3b), with the B3 strand formed by residues highly conserved only within the TTK group (Figure 2a). Residues with large hydrophobic or aromatic side-chains at positions corresponding to Y84 and V86 of CG6765 are characteristic for all TTK-type BTBs, whereas residues involved in stabilizing interactions at B1/A2 and adjacent loops are less conserved (Figure 2a and b). The N-terminal TTK-motif is located within the first β-strand and is involved only in intra-dimer stabilization forming antiparallel beta-sheet with B4 (Figure 3b). Central part of the hexamer forms a pore, residues of loop regions surrounding the pore are not conserved, thus it is unlikely that it can possess some physiological function.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig3-v2.jpg)
+
+**Figure 3.:** (a) Cryo-EM map of CG6765 BTB domain. Map regions are colored according to corresponding protein chains. (b) Refined model of CG6765 BTB domain hexamer. Individual dimers are depicted, and details of dimer-dimer interaction interface and beta-sheet formation by FxLRWN (‘the Tramtrack group, TTK’) motif are shown at the right. Secondary structure elements are depicted according to Stogios et al., 2005. (c) Overlay of the dimeric subunit of CG6765 BTB domain and classical dimer of Bcl6 BTB domain (PDB ID: 1R28) (Ahmad et al., 2003). (d) Summary of the involvement of the secondary structural elements of BTB domains in multimerization. Overlays of BTB multimeric assemblies are shown at the Figure 3—figure supplement 5. (d) has been adapted from Figure 3A from Bonchuk et al., 2023.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Details are described in the Methods section.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Positions of molecular weight markers are shown below. Molecular weights of monomers are shown in brackets.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Positions of molecular weight markers (in kDa) are shown below. Molecular weights of monomers in kDa are shown in brackets.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Positions of molecular weight markers (in kDa) are shown below. Molecular weights of monomers in kDa are shown in brackets.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) ZBTB5 filamentous assembly (PDB ID: 9B9R Park et al., 2024) and with (b) T1-type tetrameric broad-complex, tramtrack, and bric-a-brac (BTB) from KV1.2 protein (PDB ID: 1QDV [Minor et al., 2000]). CG6765 hexamer is shown as ribbons, ZBTB5 /KV1.2 are shown as tube helices. Models are colored by dimer in (a) and by chain in (b). Only three subunits of CG6765 hexamer are shown in (b) for clarity.
+
 While hexamerization of TTK-type BTB domains is unique for the ZBTB family, the formation of tetramers and pentamers is a common property of the T1/KCTD structural subclass of BTBs. However, the mechanism of multimerization is completely different (Figure 3d, Figure 3—figure supplement 5): T1/KCTD multimerize through the interaction between the B2 strand and A3 helix of adjacent subunits, further stabilized by contacts between the A4 helix and B3/A3 loop (Dementieva et al., 2009; Ji et al., 2016; Kreusch et al., 1998; Minor et al., 2000). The contribution of structural elements differs between families: the formation of T1 tetramers mostly relies on the B3/A3 loop interaction with the A3 helix, whereas the A3/A4 loop interaction with A4 is more important for the formation of KCTD pentamers (Figure 3d). Recently another subclass of multimer-forming human ZBTBs was described (Mance et al., 2024; Park et al., 2024). These domains use yet another interface to form large filamentous multimers (through A2/A4/A5 helices and the B3-A3/A4-A5 linkers of each dimer).
 
 Thus, the structure of CG6765 BTB domain obtained with cryo-EM reveals the first hexameric structure of the BTB domain of the TTK group consisting of three canonical BTB dimers connected via a novel interface formed by two parallel β-strands which has not yet been implicated in BTB multimerization.
 
-## Hexamers are the main oligomeric state of TTK-type BTB domains in solution
+### Hexamers are the main oligomeric state of TTK-type BTB domains in solution
 
 As it was noted earlier, 8 out of 10 soluble BTB domains of the TTK group formed stable high-order multimers. The SEC profile for the representative BTB domain of LOLA had a single symmetric peak, the position of which remained unchanged even upon 10-fold dilution (Figure 4a). Since the apparent Mw of 113 kDa determined relative to protein standards did not allow us to unequivocally determine the oligomeric state of LOLA (the predicted monomer mass is 15.25 kDa), it was analyzed using SEC-MALS, which provides the absolute Mw. The Mw determined by this method was 86.3 kDa, which was 5.7 times larger than the predicted monomeric Mw, and therefore was closest to a hexameric species. The monodispersity of the sample (Mw/Mn = 1.000) and the unchanged position on the elution profile upon dilution together indicated that the observed oligomer is stable. Consistent with this, we observed that MBP-fused LOLA also had a single symmetrical peak on the SEC profile, and its MALS-derived Mw of 315 kDa suggested a monodisperse (Mw/Mn = 1.000) ~5.6 mer (Figure 4b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-v2.jpg)
+
+**Figure 4.:** Size-exclusion chromatography with multi-angle light scattering (SEC-MALS) data for LOLA. (a) and MBP-LOLA (b) showing the chromatographic peaks with the Mw distributions across each peak. Average Mw values in kDa, polydispersity index (Mw/Mn), and the formally calculated oligomeric state are shown. D280 designates optical density at 280 nm (absorbance units). The second Y axes are Mw, and kDa. Note that the 10-fold dilution of LOLA (black and red curves in panel a) did not cause any shift of the chromatographic peak, indicating the stability of the observed oligomer. AlphaFold2-derived models of LOLA (c) and CG6765 (d) oligomers and fits of their theoretical scattering data to the experimental SAXS data. Models are colored according to AlphaFold pLDDT values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Alphafold2 derived models of LOLA oligomers and their fits to the experimental SAXS data for the LOLA sample, shown along with the fit quality (chi2). (b) Alphafold2 derived models of CG6765 oligomers and their fits to the experimental SAXS data for the CG6765 sample, shown along with the fit quality (chi2). Note that the hexamers provided the most satisfactory fits. All attempts to build 7-mers returned disconnected models, which were not considered in analysis.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Models of hexameric assemblies of TTK-type BTB domains. Models are colored according to AlphaFold pLDDT values. (b) Molecular modeling of Mod(mdg4) BTB domain hexamer with a close-up view of dimer-dimer interaction interface. (c) Close-up view of dimer-dimer interaction interface of Alphafold models of LOLA, CG6765, and Batman hexamers.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Close-up views of AlphaFold-derived molecular models of dimer-dimer interaction interfaces and effect of single amino-acid substitutions on the oligomerization status of BTB domains of Mod(mdg4) (a), LOLA (b), and CG6765 (c) studied with Superdex S200 size-exclusion chromatography. Amino acids subjected to mutagenesis are shown in red. Positions of molecular weight markers are shown below. Molecular weights of monomers are shown in brackets. Further details are shown in Figure 4—figure supplements 4–6. (d) The self-interaction ability studied with a yeast two-hybrid assay. Growth assay plates are shown in Figure 4—figure supplement 7. asterisk indicates that the interaction was observed only in case when wild-type BTB was BD-fused. Double asterisk indicates that result is unreliable due to high self-activatory activity.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Positions of molecular weight markers (in kDa) are shown below. Molecular weights of monomers in kDa are shown in brackets. The gel showing the content of size-exclusion chromatography (SEC) fractions peaks of alanine mutant is shown below, molecular weight markers are shown at the left. Uncropped gel images are available as separate files in Figure 4—figure supplement 4—source data 1.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Positions of molecular weight markers (in kDa) are shown below. Molecular weights off monomers in kDa are shown in brackets. The gel showing the content of size-exclusion chromatography (SEC) fractions peaks of alanine mutant is shown below, molecular weight markers are shown at the left. Uncropped gel images are available as separate files in Figure 4—figure supplement 5—source data 1.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Positions of molecular weight markers (in kDa) are shown below. Molecular weights of monomers in kDa are shown in brackets. The gel showing the content of size-exclusion chromatography (SEC) fractions peaks of mutant protein is shown below, molecular weight markers are shown at the left. Uncropped gel images are available as separate files in Figure 4—figure supplement 6—source data 1.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Growth assay plates without histidine are shown (yeasts are unable to grow on this medium in the absence of interaction). AD stands for Activation Domain, BD – for DNA-Binding Domain of GAL4 protein.
+
 Since particles of BTB domains of CG6765 and LOLA are monodisperse in solution, we expected that BTB domain of LOLA would have a similar structure as was revealed by cryo-EM for CG6765. On the other hand, B3 element involved in hexamer formation is conserved among all TTK-type BTBs, but B3 of CG6765 substantially differs from others (Figure 2a). To further verify the structures and stability of stoichiometry of hexameric assemblies for LOLA BTB domain devoid of additional tags, we applied the SAXS method and AlphaFold modeling using CG6765 BTB as a reference. SAXS-derived structural parameters are listed in Table 1. Estimated molecular weights for LOLA and CG6765 BTB domains roughly correspond to hexamers and are in agreement with SEC-MALS and cryo-EM data. Then, we critically assessed AlphaFold models with different stoichiometries (from dimers to octamers) using the approximation of experimental SAXS data with curves calculated from the models using CRYSOL (Svergun et al., 1995 Figure 4—figure supplement 1a, b). For both CG6765 and LOLA BTBs, the theoretical scattering for hexameric models agreed best with the experimental data (χ2 values 1.7 and 3.6, respectively Figure 4c and d), while the fits from alternative oligomeric assemblies predicted by AlphaFold were inadequate (Figure 4—figure supplement 1a, b). The models of 7-mers contained largely disconnected hexamers and an additional subunit and were not considered. The models of 5-mers provided second-best fit to the experimental SAXS profiles, but were disregarded due to symmetry considerations, the contradiction to cryo-EM data, and also because they appeared to represent hexamers lacking one of the subunits. We believe that, while the presence of incomplete assemblies in vitro cannot be excluded, they do not represent the main oligomeric state of TTK-type BTB domains. Thus, SAXS data support that the prevalent oligomer state in the solution of LOLA and CG6765 BTB domains is the hexamer, in accordance with the CryoEM data. The overall structures of both hexamers are highly similar (Figure 4c and d).
+
+**Table 1.**
+ SAXS-derived structural parameters for CG6765 and LOLA broad-complex, tramtrack, and bric-a-brac (BTB) domains.Rg is the radius of gyration, Dmax – the maximum dimension of the particles, and Vp – is Porod volume – volume of the particles. The sample of CG67651-133 with the concentration of 1.5 mg/ml provided sufficiently high-quality scattering data, which were used for all fitting experiments, whereas data obtained for LOLA1-120 at concentrations 1.0 and 3.0 mg/ml were merged to obtain the necessary quality. Samples with higher concentrations exhibited signs of aggregation and were excluded from analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Polypeptide</th>
+      <th>Sample concentration, mg/ml</th>
+      <th>Rg, nm</th>
+      <th>Dmax, nm</th>
+      <th>Vp, nm3</th>
+      <th>Estimated molecular weight, kDa</th>
+      <th>Molecular weight of the monomer, kDa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CG67651-133</td>
+      <td>1.5</td>
+      <td>3.7</td>
+      <td>12.7</td>
+      <td>166</td>
+      <td>90.5–116.5</td>
+      <td>15.3</td>
+    </tr>
+    <tr>
+      <td>LOLA1-120</td>
+      <td>merged data for 1.0 and 3.0 mg/ml</td>
+      <td>4.1</td>
+      <td>14.5</td>
+      <td>189</td>
+      <td>108–136</td>
+      <td>15.2</td>
+    </tr>
+  </tbody>
+</table>
 
 We also modeled hexamer assemblies of different BTB domains of the TTK group (Figure 4—figure supplement 2) including Mod(mdg4) protein (Figure 4—figure supplement 2b), which is the best-studied protein of the family so far (Golovnin et al., 2007; Melnikova et al., 2017). All models had an architecture similar to those of the LOLA and CG6765 hexamers with interdimeric interface predicted with high confidence (Figure 4—figure supplement 2a). The dimer-dimer interaction interface is also conserved in Batman, which did not form multimers larger than dimer, according to SEC data. We, therefore, modeled a Batman BTB dimer and compared its structure with a LOLA dimer within the hexamer. We found no steric hindrance obstructing hexamer formation in Batman, although some hexamer-stabilizing interactions were absent in this case, for example, F42, which stabilized the LOLA hexamer, is T42 in Batman, in the cryo-EM structure of the CG6765 BTB this interaction is supported by Y36 from adjacent beta-strand (Figure 4—figure supplement 2a and c). From this observation, we suggest that the core β-sheet might be not sufficient for stable hexamer formation, and further stabilizing contacts are required, which may determine the specificity of the interaction. The dimer-dimer interaction interface was substantially different in the model of Chinmo BTB, which can still form multimers, as well as in Ribbon and CG15812. Unfortunately, we could not test the multimerization of the latter two domains due to strong aggregation; however, the AlphaFold model suggested that the β-strand involved in the dimer-dimer interaction remained unchanged, but the confidence of prediction was substantially lower (Figure 4—figure supplement 2a and c).
 
@@ -89,9 +231,21 @@ It is likely that unusually broad interactions between different TTK-type BTB do
 
 In summary, various approaches independently confirm that hexameric assembly of three dimers is the main oligomeric state of TTK group BTB domains.
 
-## TTK-type BTB domains are specific to Arthropoda
+### TTK-type BTB domains are specific to Arthropoda
 
 In D. melanogaster, most transcription factor BTB domains are of TTK-type. We, therefore, investigated when these domains emerged over the course of evolution and how widespread in animals they are. We built the Hidden Markov Model (HMM) profile ‘TTK motif’ based on sequence alignment of TTK-type BTBs from 14 Dipteran species (Figure 2b) and performed a search within the main groups of Arthropoda and several other Metazoan species (including basal groups such as Onychophora, Tardigrada, and Nematoda). TTK-type BTB domains were not found outside of Arthropoda. The most basal clades in which they emerged were Crustaceans and Arachnoidea (Figure 5a). This agrees with a recent study which traced the origin of GAF and Mod(mdg4) insulator proteins to ancestral groups of insects related to modern Protura and Plecopthera (Pauli et al., 2016). TTK-type BTB domains underwent a lineage-specific expansion in modern phylogenetic groups of insects, to the most extent in Diptera and Hymenoptera. In these species, TTK-type BTB domains almost completely replace transcription factors with classical dimeric BTB domains, as in D. melanogaster (Figure 5a). An ortholog search of the 11 best-studied Drosophila TTK-type BTB proteins revealed that the oldest proteins with TTK-type BTBs are LOLA, bric-a-brac2, and Tramtrack, for which orthologs were found in the most basal clades (Figure 5b). The same search for four non-TTK Drosophila BTB proteins revealed that CP190 and CG6792 (a Drosophila PLZF homolog) are the oldest: a CP190 ortholog was found in Nematodes and CG6792 orthologs are present in almost all other Metazoan taxa (Figure 5c). Notably, each non-TTK Drosophila BTB-C2H2 protein has only one isoform, whereas many factors with a TTK-type BTB have multiple isoforms, which typically differ in their DNA-binding domain, resulting in a wide diversity of these factors.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig5-v2.jpg)
+
+**Figure 5.:** (a) Phylogenetic analysis of the distribution of the main DNA and protein interaction domain types in TTK-type BTB proteins in proteomes of representatives of Hexapoda, Crustacea, Myriapoda, and Arachnida. Each type of BTB protein domain architecture is shown as a bar segment. Total search results are shown in Supplementary file 7. The orthologs of several Drosophila BTB domains of TTK-type (b) and non-TTK-type (c) in proteomes of key taxa in major Arthropod and other Ecdysozoa phylogenetic groups. The phylogenetic relationships among taxa are according to the NCBI Taxonomy Database. Azure blue – the ortholog is absent in the taxa, dark blue – the ortholog is present in the taxa, dark cyan – orthologs are not uniquely defined.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** BTB from Trichoplax B3RQ74 protein devoid of 3-box/BACK domain is shown in bold.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96832/elife-96832-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Multiple sequence alignment of the Tramtrack group (TTK)-type broad-complex, tramtrack, and bric-a-brac (BTB) domains from Drosophila and top-score BTB domains found in InterPro using Hidden Markov Model (HMM) profile built on the sequences involved in the hexamer formation ranging from A2 to B3 structural elements. (b) AlphaFold-multimer predictions of top-score BTB domains from HMM search. Models are colored according to AlphaFold pLDDT values.
 
 Most transcription factors with ZBTB also contain C2H2 or HTH DNA-binding domains. With the exception of Arachnida, in all examined Arthropoda species, the FLYWCH and HTH domains are found only in combination with the TTK-type BTB domains (Figure 6a). In the human proteome, BTB-containing transcription factors almost exclusively utilize C2H2 zinc-fingers as DNA-binding domains. Interestingly, TTK-type BTBs are usually associated with one or two C2H2 domains (only MAMO has five C2H2 domains), while mammalian transcription factors commonly have BTB domains in combination with arrays consisting of an average of five C2H2 domains (Figure 6b).
 
@@ -123,7 +277,213 @@ In conclusion, TTK-type BTB proteins form a structurally and functionally distin
 
 ## Materials and methods
 
-## Bioinformatics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>CG6765</td>
+      <td>GenBank</td>
+      <td>NM_139976.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Lola</td>
+      <td>GenBank</td>
+      <td>NM_170623.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen</td>
+      <td>69450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMALX(A) (plasmid)</td>
+      <td>Moon et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET32a(+) (plasmid)</td>
+      <td>Novagen</td>
+      <td>69015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGAD424</td>
+      <td>TaKaRa bio</td>
+      <td>NCBI gi: 464015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBT9</td>
+      <td>TaKaRa bio</td>
+      <td>NCBI gi: 470667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 4.0 and 5.0beta</td>
+      <td>Scheres, 2012 Kimanius et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CryoSPARC v4.3.1</td>
+      <td>Punjani et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyEM</td>
+      <td>Asarnow et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix.refine</td>
+      <td>Liebschner et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ISOLDE</td>
+      <td>Croll, 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Topaz</td>
+      <td>Bepler et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX v.1.6</td>
+      <td>Pettersen et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ATSAS package</td>
+      <td>Franke et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold2</td>
+      <td>Evans et al., 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaPulldown</td>
+      <td>Yu et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HMMSEARCH</td>
+      <td>Potter et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEME</td>
+      <td>Bailey et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUSCLE</td>
+      <td>Edgar, 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>biomaRt</td>
+      <td>Durinck et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OrthoDB</td>
+      <td>Kriventseva et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA-X</td>
+      <td>Kumar et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>taxize</td>
+      <td>Chamberlain and Szöcs, 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CDD/SPARCLE NCBI</td>
+      <td>Lu et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bioinformatics
 
 The search for orthologs for 24 D. melanogaster proteins with BTB domains containing ttk sequences was carried out in Metazoa, with the exception of Chordata, using the OrthoDB database (Kriventseva et al., 2019). There were no records for Mod(mdg4), GAF, and LOLA in OrthoDB, and orthologs of Fruitless were found only in Diptera. In order to fill up the data obtained from OrthoDB, orthologs for these proteins were searched in Ensembl using biomaRt (Durinck et al., 2009). The total number of identified orthologs was 3027. Amino acid sequences of orthologs of 23 ttk proteins of D. melanogaster in 14 Diptera species (five Drosophila species, two Aedes species, two Anopheles species, one Culex and fore flies) were aligned in MUSCLE (Edgar, 2004). The motif of the ttk domain in the resulting alignment was isolated using the EM algorithm by positional weight matrix (PWM) (at no limit motif E-value threshold and motif size 6–10 aa (Figure 2a)) in MEME (MEME SUITE) (Bailey et al., 2009), then in FIMO (MEME SUITE) we searched for the motif in the obtained database of orthologous sequences for all Metazoa (the threshold FDR value was 0.001). In addition, for the training set for 14 Diptera species, a hmm profile for the ttk domain was generated in MEGA-X (Kumar et al., 2018), and it was searched using HMMSEARCH (HmmerWeb version 2.41.1 Potter et al., 2018) in the UniProtKB database at E-value=10. Data on full protein sequences (n=259, excluding isoforms) deposited in UniProtKB were combined with previously obtained ttk-containing sequences of orthologs from OrthoDB and Ensembl (n=2208). In addition, in the large taxa closest to Arthropoda (several phyla of Protostomes: Tardigrada, Onychophora, Priapulida, Kinorhyncha, Loricifera, Nematoda, Annelida, Mollusca), the search for the ttk sequence motif in blastp and hmm-profile in HMMSEARCH were carried out; in the representatives of the above taxa, no proteins containing the ttk motif were found in non-redundant DBs.
 
@@ -139,23 +499,23 @@ Proteome-scale analysis of the simultaneous presence of C2H2 zinc-fingers and BT
 
 AlphaFold predictions were run locally using AlphaFold 2.3 installation (Evans et al., 2022; Jumper et al., 2021) with a full set of genetic databases. Multiple predictions were arranged using AlphaPulldown wrapper scripts (Yu et al., 2023).
 
-## Plasmids and cloning
+### Plasmids and cloning
 
 cDNAs of BTB domains were PCR-amplified using corresponding primers (Supplementary file 10) and cloned into modified pET32a(+) vector (Novagen) encoding TEV protease cleavage site after 6X His-tag and Thioredoxin, and into pGAD424 and pGBT9 vectors (Clontech) in frame with GAL4 Activation or DNA-binding domains, respectively. PCR-directed mutagenesis was used to create constructs expressing mutant BTBs using mutagenic primers (Supplementary file 10). For MBP fusions cDNAs of BTB domains were cloned into pMALX(A) vector (Moon et al., 2010).
 
-## Protein expression and purification
+### Protein expression and purification
 
 BL21(DE3) cells transformed with a construct expressing BTB domain fused with TEV-cleavable 6xHis-Thioredoxin were grown in 1 L of LB media to a D600 of 1.0 at 37 °C and then induced with 1 mM IPTG at 18 °C overnight. Cells were disrupted by sonication in buffer A (30 mM HEPES (pH 7.5), 400 mM NaCl, 5 mM β-mercaptoethanol, 5% glycerol, 0.1% NP40, 10 mM imidazole) containing 1 mM PMSF and Calbiochem Complete Protease Inhibitor Cocktail VII (1 μL/ml). After centrifugation, lysate was applied to a Ni-NTA column, and after washing with buffer B (30 mM HEPES (pH 7.5), 400 mM NaCl, 5 mM β-mercaptoethanol, 30 mM imidazole) was eluted with 300 mM imidazole. For cleavage of the 6X-His-thioredoxin-tag, 6X-His-tagged TEV protease was added at a molar ratio of 1:50 directly to the eluted protein, and the mixture was incubated for 2 hr at room temperature, then dialyzed against buffer A without NP-40 and applied to a Ni-NTA column. Flow-through was collected; dialyzed against 20 mM Tris-HCl (pH 7.4), 50 mM NaCl, and 1 mM DTT; and then applied to a SOURCE15Q 4.6/100 column (GE Healthcare) and eluted with a 50–500 mM linear gradient of NaCl. Fractions containing protein were concentrated, frozen in liquid nitrogen, and stored at –70 °C. Size-exclusion chromatography was performed in 20 mM Tris-HCl (pH 7.4), 200 mM NaCl, and 1 mM DTT using Superdex S200 10/300 GL column (GE Healthcare).
 
-## SEC-MALS
+### SEC-MALS
 
 Size-exclusion chromatography with multi-angle light scattering (SEC-MALS) detection was used to determine absolute Mw for LOLA and MBP-LOLA samples. Protein samples (1–5 mg/ml) were loaded individually on a Superdex 200 Increase 10/300 column (GE Healthcare), and the elution profiles were obtained using a tandem of sequentially connected UV-Vis Prostar 335 (Varian, Australia) and miniDAWN detectors (Wyatt Technology, USA). The column was pre-equilibrated with filtered (0.1 μm) and degassed 20 mM Tris-HCl buffer, pH 7.6, containing 200 mM NaCl and 5 mM β-mercaptoethanol and was operated at a 0.8 ml/min flow rate. Data were processed in ASTRA 8.0 (Wyatt Technology, USA) using dn/dc equal to 0.185 and extinction coefficients ε(0.1%) at 280 nm equal to 0.80 ml/(mg cm) and 1.38 ml/(mg cm) for LOLA and MBP-LOLA, respectively. Additionally, apparent Mw values were determined from column calibration with standard proteins. Data were processed and presented using Origin 9.0 (Originlab, Northampton, MA, USA).
 
-## Cryo-EM grid preparation and data collection
+### Cryo-EM grid preparation and data collection
 
 Quantifoil R1.2/1.3 Cu 300-mesh carbon grids were glow-discharged for 60 s at 20 mA using a GloQube (Quorum) instrument. 4 μl of the MBP-CG67651-133 sample (4 μg/μl) were applied to the freshly glow-discharged grids and plunge-frozen in LN2-cooled liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific) with a blotting time of 2.5 s. Temperature and relative humidity were maintained at 4°C and 100%, respectively. Grids were clipped and loaded into a 300-kV Titan Krios G4i microscope (Thermo Fisher Scientific, USA) equipped with a Selectris X energy filter and a Falcon 4i (Thermo Fisher Scientific, USA) direct electron detector. Micrographs were recorded at a nominal magnification of 165,000X corresponding to a calibrated pixel size of 0.729  Å. A total of 9765 movies were recorded with a total dose of ~40 electron/Å2 per movie. The Defocus range was set between −0.5 μm and −2 μm. Data collection and processing statistics are summarized in Supplementary file 1.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 Figure 3—figure supplement 1 illustrates the data processing workflow for the MBP-CG67651-133 dataset. The following pre-processing steps were performed with cryoSPARC Live v4.3.1 (Punjani et al., 2017). Movie stacks were motion-corrected and dose-weighted, and contrast transfer function (CTF) estimates for the motion-corrected micrographs were calculated. Particles were initially picked with a blob-picker using subset-selected micrographs, and these were used for reference-free two-dimensional (2D) classification to generate picking templates. Subsequent image processing was carried out with cryoSPARC v4.3.1 (Punjani et al., 2017). The templates were used to train a picking model in Topaz (Bepler et al., 2019), which was subsequently used to pick particles from the whole dataset. Auto-picking using Topaz from 9765 micrographs yielded ~100,000 particles. Initial models were generated without imposing symmetry (C1) using stochastic gradient descent in cryoSPARC Live. Best initial model was subjected to homogeneous and heterogeneous refinement rounds and the best classes were used to create templates for another round of template picking, followed by 2D classification and training the new Topaz picking model, which was used for the final picking round. 480721 particles were picked. Particles were classified with three-dimensional (3D) heterogenous refinement using four classes, resulting in 197,562 particles.
 
@@ -163,10 +523,10 @@ To generate a high-resolution reconstruction, particles were re-extracted in 448
 
 AlphaFold model of the hexamer was used as the initial model, it was fitted into the reconstruction using UCSF Chimera (Pettersen et al., 2004), followed by manual real-space refinement in Coot, and further refined with Phenix.refine (Liebschner et al., 2019) and ISOLDE (Croll, 2018). Figures were prepared with UCSF ChimeraX (Pettersen et al., 2021).
 
-## Yeast two-hybrid assay
+### Yeast two-hybrid assay
 
 Yeast two-hybrid assay was performed as described (Bonchuk et al., 2011).
 
-## SAXS data collection and analysis
+### SAXS data collection and analysis
 
 Synchrotron radiation X-ray scattering data were collected using standard procedures on the BM29 BioSAXS beamline at the ESRF (Grenoble, France) as described previously (Bonchuk et al., 2020). Data analysis was performed using the ATSAS software package (Franke et al., 2017). Approximation of the experimental scattering profiles using calculated scattering curves was performed with CRYSOL (Svergun et al., 1995). The molecular mass (MM) of the protein was calculated using several algorithms implemented in the ATSAS package (Franke et al., 2017).

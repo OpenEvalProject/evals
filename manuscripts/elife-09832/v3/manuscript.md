@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.09832.001 The Dna2 nuclease-helicase maintains genomic integrity by processing DNA double-strand breaks, Okazaki fragments and stalled replication forks. Dna2 requires ssDNA ends, and is dependent on the ssDNA-binding protein Rpa, which controls cleavage polarity. Here we present the 2.3 Å structure of intact mouse Dna2 bound to a 15-nucleotide ssDNA. The nuclease active site is embedded in a long, narrow tunnel through which the DNA has to thread. The helicase domain is required for DNA binding but not threading. We also present the structure of a flexibly-tethered Dna2-Rpa interaction that recruits Dna2 to Rpa-coated DNA. We establish that a second Dna2-Rpa interaction is mutually exclusive with Rpa-DNA interactions and mediates the displacement of Rpa from ssDNA. This interaction occurs at the nuclease tunnel entrance and the 5’ end of the Rpa-DNA complex. Hence, it only displaces Rpa from the 5’ but not 3’ end, explaining how Rpa regulates cleavage polarity. DOI: http://dx.doi.org/10.7554/eLife.09832.001
+The Dna2 nuclease-helicase maintains genomic integrity by processing DNA double-strand breaks, Okazaki fragments and stalled replication forks. Dna2 requires ssDNA ends, and is dependent on the ssDNA-binding protein Rpa, which controls cleavage polarity. Here we present the 2.3 Å structure of intact mouse Dna2 bound to a 15-nucleotide ssDNA. The nuclease active site is embedded in a long, narrow tunnel through which the DNA has to thread. The helicase domain is required for DNA binding but not threading. We also present the structure of a flexibly-tethered Dna2-Rpa interaction that recruits Dna2 to Rpa-coated DNA. We establish that a second Dna2-Rpa interaction is mutually exclusive with Rpa-DNA interactions and mediates the displacement of Rpa from ssDNA. This interaction occurs at the nuclease tunnel entrance and the 5’ end of the Rpa-DNA complex. Hence, it only displaces Rpa from the 5’ but not 3’ end, explaining how Rpa regulates cleavage polarity.
 
 ## Introduction
 
@@ -37,37 +37,202 @@ To understand the mechanism of action and regulation of this multi-faceted enzym
 
 ## Results and discussion
 
-## Overall structure of the Dna2-ssDNA complex
+### Overall structure of the Dna2-ssDNA complex
 
-We determined the 2.3 Å crystal structure of full-length mouse Dna2 (residues 1 to 1062) bound to a ssDNA substrate of 21 nucleotides (nts), 15 of which are well ordered (
+We determined the 2.3 Å crystal structure of full-length mouse Dna2 (residues 1 to 1062) bound to a ssDNA substrate of 21 nucleotides (nts), 15 of which are well ordered (Figure 1A and Table 1). The structure also contains an Fe4-S4 iron-sulfur cluster, ADP and two active-site Ca2+ ions, which do not support nuclease activity but can mimic magnesium coordination (Yang et al., 2006).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig1-v3.jpg)
 
-**Figure 1.:** (A) Cartoon representation of the Dna2-ssDNA complex. The α1 helix, which packs with the hel2A domain of a crystallographic symmetry related protomer, is omitted from this view. The individual domains of Dna2 are colored separately as indicated in (D), ssDNA is red, ADP is shown as sticks, calcium ions are shown as green spheres, the iron-sulfur cluster is shown in a space-filling representation (nuc: nuclease domain; hel1A: helicase 1A domain, hel2A: helicase 2A domain, OB: oligonucleotide/oligosaccharide binding domain). (B) View looking up the vertical axis of (A). (C) Schematic of the complex illustrating the relative arrangement of the Dna2 domains, and highlighting its cylinder-like shape. Colored as in (A). (D) Linear representation of the Dna2 domains and their boundaries; colored as in (A).DOI: http://dx.doi.org/10.7554/eLife.09832.003
+**Figure 1.:** (A) Cartoon representation of the Dna2-ssDNA complex. The α1 helix, which packs with the hel2A domain of a crystallographic symmetry related protomer, is omitted from this view. The individual domains of Dna2 are colored separately as indicated in (D), ssDNA is red, ADP is shown as sticks, calcium ions are shown as green spheres, the iron-sulfur cluster is shown in a space-filling representation (nuc: nuclease domain; hel1A: helicase 1A domain, hel2A: helicase 2A domain, OB: oligonucleotide/oligosaccharide binding domain). (B) View looking up the vertical axis of (A). (C) Schematic of the complex illustrating the relative arrangement of the Dna2 domains, and highlighting its cylinder-like shape. Colored as in (A). (D) Linear representation of the Dna2 domains and their boundaries; colored as in (A).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig1-figsupp1-v3.jpg)
 
-**Figure 1—figure supplement 1.:** Helices are indicated as cylinders, b strands as arrows, segments lacking regular secondary structure as solid lines, and disordered regions as dashed lines. Secondary structure elements are colored as in Figure 1A. The N-terminal extensions, relative to mammalian Dna2, of the other orthologs are not shown. In the alignment of yeast Dna2, reliable homology starts with the β2 strand of the OB domain at residues 44 and 417 of the mouse and yeast orthologs, respectively. The ~360 residue, unique N-terminal segment of yeast Dna2 has an overall low hydrophobicity content indicative of lack of globular structure, and short regions of homology with closely related yeasts suggests that this region acts through linear epitopes, some of which may be acidic/amphipathic helices (not shown). Residues that contact the DNA are marked by “d”, active site residues by “c” and iron-sulfur cluster ligands by “f”. The entire protein structure is within 0.9 Å Cα r.m.s.d. in DNA-bound and apo Dna2 crystals, and the overall DNA conformation is essentially identical in a different crystal form of Dna2 bound to a 21-nt ssDNA (Table 1).DOI: http://dx.doi.org/10.7554/eLife.09832.004
+**Figure 1—figure supplement 1.:** Helices are indicated as cylinders, b strands as arrows, segments lacking regular secondary structure as solid lines, and disordered regions as dashed lines. Secondary structure elements are colored as in Figure 1A. The N-terminal extensions, relative to mammalian Dna2, of the other orthologs are not shown. In the alignment of yeast Dna2, reliable homology starts with the β2 strand of the OB domain at residues 44 and 417 of the mouse and yeast orthologs, respectively. The ~360 residue, unique N-terminal segment of yeast Dna2 has an overall low hydrophobicity content indicative of lack of globular structure, and short regions of homology with closely related yeasts suggests that this region acts through linear epitopes, some of which may be acidic/amphipathic helices (not shown). Residues that contact the DNA are marked by “d”, active site residues by “c” and iron-sulfur cluster ligands by “f”. The entire protein structure is within 0.9 Å Cα r.m.s.d. in DNA-bound and apo Dna2 crystals, and the overall DNA conformation is essentially identical in a different crystal form of Dna2 bound to a 21-nt ssDNA (Table 1).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig1-figsupp2-v3.jpg)
 
-**Figure 1—figure supplement 2.:** (A) The nuclease domain packs with the OB domain extensively, through both polar and hydrophobic residues. The four residues between the last b strand of the OB domain and the first b strand of the nuclease domain are buried in the interface between the two domains. The OB groove, where DNA or peptides bind in other OB fold proteins, is solvent exposed opposite from its surface that packs with the nuclease domain. Individual domains are colored as in Figure 1A. (B) The Dna2 nuclease core fold has a three-helix insertion (residues 176 to 227) that packs with the helicase 1B domain. This three-helix insertion is also present in the AddB nuclease, where it packs with the N-terminal portion of the protein. (C) The nuclease domain also links to the helicase domain indirectly, through the stalk domain that is sandwiched between the two.DOI: http://dx.doi.org/10.7554/eLife.09832.005
+**Figure 1—figure supplement 2.:** (A) The nuclease domain packs with the OB domain extensively, through both polar and hydrophobic residues. The four residues between the last b strand of the OB domain and the first b strand of the nuclease domain are buried in the interface between the two domains. The OB groove, where DNA or peptides bind in other OB fold proteins, is solvent exposed opposite from its surface that packs with the nuclease domain. Individual domains are colored as in Figure 1A. (B) The Dna2 nuclease core fold has a three-helix insertion (residues 176 to 227) that packs with the helicase 1B domain. This three-helix insertion is also present in the AddB nuclease, where it packs with the N-terminal portion of the protein. (C) The nuclease domain also links to the helicase domain indirectly, through the stalk domain that is sandwiched between the two.
+
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Set</th>
+      <th>Dna2-5’ overhang DNA*</th>
+      <th>Dna2-ssDNA</th>
+      <th>apo Dna2</th>
+      <th>apo Dna2 (SeMet)</th>
+      <th>DNA2 α1-RPA 70N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P22121</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>C121</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>87.2, 118.5, 149.3</td>
+      <td>120.2, 149.2, 172.9</td>
+      <td>120.9, 148.6, 170.5</td>
+      <td>120.9, 148.6, 170.5</td>
+      <td>134.3, 50.9, 76.5</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 103.9, 90.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50.0 - 2.35 (2.43 - 2.35)</td>
+      <td>30.0 – 3.11 (3.23 - 3.11)</td>
+      <td>50.0 – 3.0 (3.11 - 3.0)</td>
+      <td>30.0 – 3.4 (3.52 - 3.4)</td>
+      <td>60.0 – 1.5 (1.55 - 1.5)</td>
+    </tr>
+    <tr>
+      <td>Rsym</td>
+      <td>12.6(65.6)</td>
+      <td>13.7(87.5)</td>
+      <td>13.1(78.7)</td>
+      <td>15.8(59.3)</td>
+      <td>7.4(80.1)</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>6.3(36.6)</td>
+      <td>6.6(57.1)</td>
+      <td>6.8(41.9)</td>
+      <td>4.0(15.1)</td>
+      <td>5.1(54.1)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>16.4(1.9)</td>
+      <td>13.2(1.4)</td>
+      <td>7.9(1.3)</td>
+      <td>19.3(4.7)</td>
+      <td>23.5(3.2)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.0(98.6)</td>
+      <td>99.0(99.2)</td>
+      <td>98.3(98.9)</td>
+      <td>100.0(100)</td>
+      <td>84.3(79.7)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>5.0(3.9)</td>
+      <td>6.1(6.0)</td>
+      <td>4.4(4.5)</td>
+      <td>15.1(15.3)</td>
+      <td>2.7(2.7)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50.0-2.36</td>
+      <td>30.0–3.15</td>
+      <td>50.0–3.0</td>
+      <td></td>
+      <td>30.0-1.55</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>57,871</td>
+      <td>51,122</td>
+      <td>54,107</td>
+      <td></td>
+      <td>57,455</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (%)</td>
+      <td>20.8/24.6</td>
+      <td>22.3/25.6</td>
+      <td>21.1/24.5</td>
+      <td></td>
+      <td>23.2/26.7</td>
+    </tr>
+    <tr>
+      <td>Protein atoms</td>
+      <td>8,298</td>
+      <td>16,536</td>
+      <td>16,536</td>
+      <td></td>
+      <td>3,933</td>
+    </tr>
+    <tr>
+      <td>DNA atoms</td>
+      <td>290</td>
+      <td>674</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cofactor atoms</td>
+      <td>41</td>
+      <td>70</td>
+      <td>70</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Rmsd bond lengths (Å)</td>
+      <td>0.009</td>
+      <td>0.009</td>
+      <td>0.009</td>
+      <td></td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Rmsd bond angles (°)B factors (Å2):proteinDNACa2+waterWilson</td>
+      <td>1.4 65.5107.658.949.558.4</td>
+      <td>1.4</td>
+      <td>1.46</td>
+      <td></td>
+      <td>1.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Only the ssDNA is ordered. Values in parentheses are for the highest-resolution shell._
 
 The structure consists of a ∼310 residue domain that contains the PD-(D/E)XK nuclease motif, followed by a ∼450 residue, C-terminal helicase domain that has two RecA-like folds characteristic of the SF1 helicase subfamily (domains 1A and 2A; Figure 1A,B). In addition, the structure reveals an OB (oligonucleotide/oligosaccharide-binding) fold domain N-terminal to the nuclease domain, and a β barrel domain that occurs between the nuclease and helicase domains and which is held in place by a stalk of two long alpha helices (Figure 1 and Figure 1—figure supplement 1A).
 
 The overall structure has a cylindrical shape with a central tunnel through which the ssDNA threads (Figure 1A,B). The base of the cylinder is formed by the nuclease domain, which adopts a doughnut-like structure with the active site embedded in the central tunnel (Figure 1C). The β barrel and helicase 1A domains pack on top of the nuclease doughnut and extend the cylinder and central tunnel. The helicase 2A domain, which packs with the 1A domain as in the ADP states of other SF1 helicase structures, hangs over the tunnel opening at the top of the cylinder. Most of the DNA-binding sites of the nuclease and helicase 1A domains are inside the tunnel, whereas those of the helicase 2A domain are solvent exposed. The OB domain decorates the exterior of the nuclease domain, and is uninvolved in DNA binding. The nuclease domain is the hub that organizes the overall structure. It packs with the flanking OB and β barrel-stalk domains, as well as the helicase 1B domain (Figure 1C and Figure 1—figure supplement 2).
 
-The ssDNA is positioned with its 5’ end at the helicase domain, and its 3’ end at the nuclease domain (
+The ssDNA is positioned with its 5’ end at the helicase domain, and its 3’ end at the nuclease domain (Figure 1A). A 7-nt segment at the 5’ end contacts first the helicase 2A domain outside the tunnel and then the 1A domain inside the tunnel. The DNA crosses over from the helicase to the nuclease domains over the next two nucleotides, which are in the vicinity of the β barrel domain in the middle of the tunnel, but do not make any protein contacts (Figure 1A). The subsequent 6-nt segment binds to the nuclease domain. Here, the first three nucleotides are fully enclosed by the tunnel, while the last three nucleotides contact the tunnel opening. The DNA bases stack continuously, except for a base step at the helicase, one at the nuclease and one at the transition between the two domains (Figure 2C). Two of the three unstacked base steps are at pyrimidine-pyrimidine pairs, and this may contribute to the DNA binding at a well-defined register. An N-terminal acidic/amphipathic α helix (α1; residues 1 to 13) packs with the helicase domain of a symmetry-related complex. The α1 helix is flexibly tethered to the rest of the protein, as the 6 residues that connect it to the OB domain have no electron density in the crystals. As shown later, this helix is one of the two Rpa-binding elements of Dna2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig2-v3.jpg)
 
-**Figure 2.:** (A) Superposition of the Dna2 nuclease domain on the AddB nuclease domain. The N-terminal βαα extension (residues 122 to 154) and the C-terminal αα extension (residues 384 to 412) is colored in orange, with the corresponding elements of AddB in dark cyan. Green spheres are calcium ions. (B) DNA contacts and active site residues of the Dna2 nuclease domain. Hydrogen bonds are depicted as green dotted lines, calcium ions as blue spheres, water as a red sphere. (C) Diagram showing the contacts depicted in (B) and (E). The residues are colored according to the domain they belong as in Figure 1D (mc: main chain, sc: side chain). (D) Superposition of the Dna2 helicase domain on Ighmbp2. Dna2 is colored as in Figure 1D. The Ighmbnp2 1A (hel1A) and 2A (hel2A) helicase domains are colored gold, its β barrel in light orange, and stalk dark orange. (E) DNA contacts of the helicase 1A (pink) and 2A (cyan) domains, showing residues that are involved in either hydrogen bond (green dotted lines) or van der Waals contacts.DOI: http://dx.doi.org/10.7554/eLife.09832.007
+**Figure 2.:** (A) Superposition of the Dna2 nuclease domain on the AddB nuclease domain. The N-terminal βαα extension (residues 122 to 154) and the C-terminal αα extension (residues 384 to 412) is colored in orange, with the corresponding elements of AddB in dark cyan. Green spheres are calcium ions. (B) DNA contacts and active site residues of the Dna2 nuclease domain. Hydrogen bonds are depicted as green dotted lines, calcium ions as blue spheres, water as a red sphere. (C) Diagram showing the contacts depicted in (B) and (E). The residues are colored according to the domain they belong as in Figure 1D (mc: main chain, sc: side chain). (D) Superposition of the Dna2 helicase domain on Ighmbp2. Dna2 is colored as in Figure 1D. The Ighmbnp2 1A (hel1A) and 2A (hel2A) helicase domains are colored gold, its β barrel in light orange, and stalk dark orange. (E) DNA contacts of the helicase 1A (pink) and 2A (cyan) domains, showing residues that are involved in either hydrogen bond (green dotted lines) or van der Waals contacts.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig2-figsupp1-v3.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Top panel shows a stereo view of the mF electron density at the active site, calculated with phases after omitting the two calcium ions (blue spheres), the water molecule (red sphere), a 3-nt segment centered on the scissile phosphate group and the side chain of Lys301, and subjecting the rest of the entire structure to simulated annealing from 3000°K. The dark blue map is contoured at 5 σ, and the light green map at 2.5 σ. The orientation is similar to that of o-DFcFigure 2B. For comparison, the corresponding residues of the λ nuclease-DNA complex (Zhang et al., 2011) are shown as black sticks (the lysine is mutated to alanine in that structure), and the calcium ions and water molecule as black spheres. The Dna2 Ca-1 ion and water molecule have a coordination shell and position very similar to the first magnesium and associated water in λ nuclease, but the position of Ca-2 is different. The Ca coordination shell and residue labels are shown in bottom panel. For clarity, not shown are the electron density, λ nuclease, and the His164 side chain to which the green-dotted bond from Ca-1 would be connected. (B) Superposition of Dna2 helicase domains 1A (pink) and 2A (cyan) with Ighmbp2 (gold). DNA is colored in red, RNA is colored in green. The only regions of the Dna2 helicase that do not have counterparts in the Upf1 subfamily are the ~40 residue 1B domain, which packs with the nuclease domain, and the ~20 residue 2B domain, which is distal from the rest of the protein and the DNA (Figure 1D). (C) Superposition of individual Dna2 helicase domains 1A (pink) and 2A (cyan) with Upf1 (gold). DNA is colored in red, RNA is colored in green. Motif III residues are shown as sticks. Supplemental discussion of helicase translocation. Based on the proposed SF1B translocation mechanism (Saikrishnan et al., 2009), ATP binding and concomitant closure of the cleft between the 1A and 2A domains would be coupled to domain 2A releasing the DNA and rebinding it at a register shifted by 1 nt in the 5’ to 3’ direction, while domain 1A would retain its DNA. On ATP hydrolysis, domain 1A would be the one releasing its DNA and rebinding it at the +1 nt register, restoring the initial open-cleft conformation. In the Dna2-ssDNA structure, however, the rebinding of 1A to DNA at the shifted register will have to await the transient dissociation of the nuclease domain from DNA. The increased half life of the closed cleft would likely also reduce the rate of exchange of ADP for ATP, as the γ phosphate binding site of the helicase fold is far less solvent accessible in the closed cleft.DOI: http://dx.doi.org/10.7554/eLife.09832.008
+**Figure 2—figure supplement 1.:** (A) Top panel shows a stereo view of the mFo-DFc electron density at the active site, calculated with phases after omitting the two calcium ions (blue spheres), the water molecule (red sphere), a 3-nt segment centered on the scissile phosphate group and the side chain of Lys301, and subjecting the rest of the entire structure to simulated annealing from 3000°K. The dark blue map is contoured at 5 σ, and the light green map at 2.5 σ. The orientation is similar to that of Figure 2B. For comparison, the corresponding residues of the λ nuclease-DNA complex (Zhang et al., 2011) are shown as black sticks (the lysine is mutated to alanine in that structure), and the calcium ions and water molecule as black spheres. The Dna2 Ca-1 ion and water molecule have a coordination shell and position very similar to the first magnesium and associated water in λ nuclease, but the position of Ca-2 is different. The Ca coordination shell and residue labels are shown in bottom panel. For clarity, not shown are the electron density, λ nuclease, and the His164 side chain to which the green-dotted bond from Ca-1 would be connected. (B) Superposition of Dna2 helicase domains 1A (pink) and 2A (cyan) with Ighmbp2 (gold). DNA is colored in red, RNA is colored in green. The only regions of the Dna2 helicase that do not have counterparts in the Upf1 subfamily are the ~40 residue 1B domain, which packs with the nuclease domain, and the ~20 residue 2B domain, which is distal from the rest of the protein and the DNA (Figure 1D). (C) Superposition of individual Dna2 helicase domains 1A (pink) and 2A (cyan) with Upf1 (gold). DNA is colored in red, RNA is colored in green. Motif III residues are shown as sticks. Supplemental discussion of helicase translocation. Based on the proposed SF1B translocation mechanism (Saikrishnan et al., 2009), ATP binding and concomitant closure of the cleft between the 1A and 2A domains would be coupled to domain 2A releasing the DNA and rebinding it at a register shifted by 1 nt in the 5’ to 3’ direction, while domain 1A would retain its DNA. On ATP hydrolysis, domain 1A would be the one releasing its DNA and rebinding it at the +1 nt register, restoring the initial open-cleft conformation. In the Dna2-ssDNA structure, however, the rebinding of 1A to DNA at the shifted register will have to await the transient dissociation of the nuclease domain from DNA. The increased half life of the closed cleft would likely also reduce the rate of exchange of ADP for ATP, as the γ phosphate binding site of the helicase fold is far less solvent accessible in the closed cleft.
 
-## Nuclease structure and active site
+### Nuclease structure and active site
 
 As predicted, the Dna2 nuclease domain contains the core αβββαβ fold of the PD-(D/E)XK nuclease superfamily (Aravind et al., 2000; Pingoud et al., 2005). Based on the DALI server, its closest structural homologs are the bacteriophage λ exonuclease and the E. coli RecB and B. subtilis AddB nucleases, all of which are involved in the resection of DNA ends during homologous recombination (Krajewski et al., 2014; Singleton et al., 2004; Zhang et al., 2011). These superimpose on the ∼310-residue Dna2 nuclease domain with a ∼2 Å root-mean-square deviation (r.m.s.d.) in the Cα positions of 128, 112 and 106 residues, respectively.
 
@@ -77,7 +242,7 @@ The Dna2 nuclease domain binds to a total of four phosphodiester groups, two bef
 
 The base groups of the 6 nt segment stack in two sets of three, with Met157 and other crossover loop side chains wedging in between the Ade12 and Gua13 base groups (Figure 2B). This is very similar to the λ exonuclease crossover loop, which marks the transition from double stranded to single stranded and is thought to play a key role in unwinding dsDNA, although λ exonuclease does so without a helicase domain and in the context of a homo-trimeric assembly that contacts the dsDNA of the substrate (Zhang et al., 2011). Nevertheless, Met157 and the crossover loop may have an analogous function in the weak strand-separating activity of Dna2.
 
-## Helicase structure
+### Helicase structure
 
 Dna2’s combination of the β barrel, stalk and helicase domains, and their relative arrangement are strikingly similar to RNA/DNA helicases of the Upf1 subfamily, which contains Upf1, Ighmbp2 and Senataxin (Fairman-Williams et al., 2010). The ∼600-residue assembly of the stalk, β barrel and helicase 1A and 2A domains can be superimposed on the structure of Ighmbp2 with a 1.5 Å Cα r.m.s.d. over 452 residues, with most of the non-superimposing residues accounted for by a ∼10° rotation of the β barrel, which otherwise is structurally conserved (Figure 2D). The structural similarity between Dna2 and Ighmbp2 is actually more extensive than that between Ighmbp2 and Upf1 (1.8 Cα Å r.m.s.d for 436 residues) (Chakrabarti et al., 2011; Lim et al., 2012).
 
@@ -87,7 +252,7 @@ DNA binds to Dna2 through both its phosphodiester and base groups (Figure 2E). D
 
 The helicase and ssDNA-dependent ATPase activities of Dna2 are considerably weaker than other helicases (Budd et al., 2000; Masuda-Sasa et al., 2006). One possible explanation, at least for the low ATPase/translocation rate, is the helicase domain being 5’ to the nuclease domain on the DNA. This would, in principle, make completion of the ATPase/translocation cycle dependent on the nuclease domain releasing its grip on the DNA (see Figure 2—figure supplement 1 legend for discussion of translocation).
 
-## Mechanism of DNA binding
+### Mechanism of DNA binding
 
 The structure explains why the nuclease activity of Dna2 requires the ssDNA to have a free end (Bae and Seo, 2000; Kao et al., 2004). The active site is embedded in a ∼10 Å wide portion of the tunnel, and the tunnel entrances leading to it are too narrow to accommodate dsDNA or a single-stranded loop of a gap substrate (Figure 1A,B).
 
@@ -97,41 +262,41 @@ The 5’ to 3’ nuclease activity was shown to require ∼15 nts of ssDNA for o
 
 To investigate this in more detail, we assayed the Dna2 affinity and cleavage of a series of 5’ overhang substrates with ssDNA lengths that extend successively from the nuclease to the helicase 1A and 2A domains. The ssDNA consisted of deoxythymidine nucleotides, which have minimal secondary structure and thus do not require Rpa for cleavage by Dna2 (5’(dT)6 to 5’(dT)24) (Figure 3—figure supplement 1A). The short substrates that can span only the nuclease domain (5’(dT)6 and 5’(dT)8) have Dna2 affinities approximately two orders of magnitude lower than that of 5’(dT)24, and they exhibit minimal cleavage (Figure 3—figure supplement 1A,B). With the slightly longer 5’(dT)8, low level cleavage occurs 7 and 8 nucleotides from the 5’ end, indicating that the ssDNA extends to the helicase 1A domain (Figure 3—figure supplement 1A). The sites of cleavage indicate that Dna2 opens up ∼2 base pairs (bps) of the duplex, since the tunnel entrance 3’ to the scissile phosphate is too narrow to accommodate double-stranded DNA. As ATP is neither required, nor has a significant effect, this DNA unwinding is the result of threading, likely analogous to DNA unwinding by λ exonuclease (Zhang et al., 2011). Extending the ssDNA by 2 nts, (5’(dT)10), results in a major increase in Dna2 affinity and cleavage, with the cleavage sites indicating the engagement of the helicase 2A domain after the unwinding of ∼2 bps (Figure 3—figure supplement 1A). With 5’(dT)17 where the ssDNA is long enough to reach both the 1A and 2A domains without duplex unwinding, there is a final increase in Dna2 affinity and cleavage that plateau at the levels of 5’(dT)24.
 
-The 3’ to 5’ nuclease activity would require the 3’ end of the ssDNA to enter the tunnel at the helicase 2A domain. As the phosphodiester-binding sites of the 2A domain are fully accessible to bulk solvent, the structure suggests that 3’ end threading should be more efficient than 5’ end threading in the absence of ATP. Indeed, Dna2 cleaves a 3’ overhang (dT)
+The 3’ to 5’ nuclease activity would require the 3’ end of the ssDNA to enter the tunnel at the helicase 2A domain. As the phosphodiester-binding sites of the 2A domain are fully accessible to bulk solvent, the structure suggests that 3’ end threading should be more efficient than 5’ end threading in the absence of ATP. Indeed, Dna2 cleaves a 3’ overhang (dT)18 substrate at least 3-fold faster than the corresponding 5’(dT)18 (Figure 3A). The structure further suggests that the reported inhibition of 3’ end cleavage by ATP is due to 3’ end threading being counteracted by the helicase domain moving the DNA in the opposite direction (Figure 3A) (Bae and Seo, 2000; Masuda-Sasa et al., 2006).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig3-v3.jpg)
 
-**Figure 3.:** (A) Denaturing PAGE showing ATP inhibits the nuclease activity on 3’ overhang substrate, while slightly increasing it for the 5’ overhang substrate. Substrates are at 15 nM. For this and subsequent nuclease assays, cleavage was quantified by loss of substrate and plotted with ± s.d. error bars (n = 3). (B) Nuclease time course of 2 nM Dna2 with 10 nM 5’ RNA-DNA overhang or 5’ DNA overhang substrates. ATP or AMPPNP is at 1.3 mM.DOI: http://dx.doi.org/10.7554/eLife.09832.009
+**Figure 3.:** (A) Denaturing PAGE showing ATP inhibits the nuclease activity on 3’ overhang substrate, while slightly increasing it for the 5’ overhang substrate. Substrates are at 15 nM. For this and subsequent nuclease assays, cleavage was quantified by loss of substrate and plotted with ± s.d. error bars (n = 3). (B) Nuclease time course of 2 nM Dna2 with 10 nM 5’ RNA-DNA overhang or 5’ DNA overhang substrates. ATP or AMPPNP is at 1.3 mM.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig3-figsupp1-v3.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Denaturing PAGE showing length dependency and cleavage sites of 5’ overhang DNA at a 30 nM concentration (asterisk indicates FAM labeling of the 3’ end) in the presence (top panel) or absence (bottom) of 1.3 mM ATP. Also shown are the dissociation constants (K of Dna2(D278A) for each substrate, according to the data shown in d)Figure 3—figure supplement 1B. (B) Electrophoretic mobility shift assays (EMSA) of Dna2(D278A) binding to 5’ overhang DNA substrates. The graph shows fraction bound. Dotted lines are simulated binding curves based on the indicated K values.dDOI: http://dx.doi.org/10.7554/eLife.09832.010
+**Figure 3—figure supplement 1.:** (A) Denaturing PAGE showing length dependency and cleavage sites of 5’ overhang DNA at a 30 nM concentration (asterisk indicates FAM labeling of the 3’ end) in the presence (top panel) or absence (bottom) of 1.3 mM ATP. Also shown are the dissociation constants (Kd) of Dna2(D278A) for each substrate, according to the data shown in Figure 3—figure supplement 1B. (B) Electrophoretic mobility shift assays (EMSA) of Dna2(D278A) binding to 5’ overhang DNA substrates. The graph shows fraction bound. Dotted lines are simulated binding curves based on the indicated Kd values.
 
 Taken together, these findings support the model that a major role for the helicase domain is augmenting the DNA affinity of Dna2. As lack of ATP hydrolysis does not affect overall DNA binding by the helicase 1A and 2A domains, this model is consistent with the Dna2 ATPase-activity being dispensable for viability in yeast, and for DSB end resection in vitro, in contrast to the nuclease activity that is essential for both (Bae and Seo, 2000; Budd et al., 2000; Cejka et al., 2010; Niu et al., 2010; Zhu et al., 2008).
 
-## Role of helicase activity in 5’ Okazaki fragment processing
+### Role of helicase activity in 5’ Okazaki fragment processing
 
 RNA, which is not cleaved by Dna2, can substitute for part of DNA in the length-dependency of cleavage, suggesting that it can interact with at least part of Dna2 (Bae et al., 2001; Bae and Seo, 2000). In accord, we find that the affinity of Dna2 for a 5’(U)24 RNA overhang-DNA duplex is within an order of magnitude of its affinity for a comparable all-DNA substrate (Figure 3—figure supplement 1B). This observance, coupled with the structural similarity of Dna2 to the Upf1 subfamily of RNA/DNA helicases raises the possibility that the helicase activity facilitates the bypassing of the 5’ RNA primer of Okazaki fragments. Indeed, ATP but not the non-hydrolyzable ATP analogue AMPPNP stimulates the cleavage of a 5’(U)12–(dT)12 RNA-DNA overhang substrate by ∼50% (Figure 3B, top panel). By contrast, ATP had a minimal effect on the cleavage of the corresponding all-DNA (dT)24 substrate, while AMPPNP inhibited cleavage slightly (Figure 3B, bottom panel).
 
-## Dna2-Rpa association
+### Dna2-Rpa association
 
 Rpa is a heterotrimeric protein that consists of the Rpa70, Rpa32 and Rpa14 subunits. Genetic and biochemical studies in budding yeast indicated that Dna2 binds to the Rpa70 subunit, through an interaction between the N-terminal portions of the two proteins (Bae et al., 2003). These studies further pointed to additional binding sites on Dna2 and Rpa70, as deletion of the N-terminal interacting segments reduced but did not eliminate Dna2-Rpa association and the stimulation of the nuclease activity (Bae et al., 2003). The N-terminal portion of yeast Dna2 (residues 1 to 405) is poorly conserved in mammalian orthologs and also contains a ∼350-residue yeast-specific extension, although it appears to contain an acidic/amphipathic helix analogous to α1 of mouse Dna2, and likely encompasses a portion of the OB domain (Figure 1—figure supplement 1A).
 
-We thus tested whether a mouse Dna2 fragment consisting of the α1 helix and OB domain (thereafter α1OB; residues 1 to 122) binds to mouse Rpa using a GST pull-down assay. As shown in
+We thus tested whether a mouse Dna2 fragment consisting of the α1 helix and OB domain (thereafter α1OB; residues 1 to 122) binds to mouse Rpa using a GST pull-down assay. As shown in Figure 4A, GST-α1OB but not isolated GST binds to heterotrimeric Rpa in a 30 μM stoichiometric solution (lanes 1 and 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig4-v3.jpg)
 
-**Figure 4.:** (A) GST pull-down assay showing that α1OB of Dna2 (residues 1–122) interacts with Rpa70NAB (1–431), but not the rest of Rpa heterotrimer (Rpa(-NAB)). (B) Schematic drawing of the Rpa trimer, showing the OB domains as rectangles and the winged helix (WH) domain of Rpa32 as a sphere. (C) ITC curves for the human α1OB-Rpa70NAB, α1-Rpa70N and OB-Rpa70AB complexes. (D) Structure of the α1-Rpa70N complex. The α1 peptide is in yellow and Rpa70N in cyan. For clarity, the main chain amide group of L87 and carbonyl groups of M11, K13, F15 are not labeled.DOI: http://dx.doi.org/10.7554/eLife.09832.011
+**Figure 4.:** (A) GST pull-down assay showing that α1OB of Dna2 (residues 1–122) interacts with Rpa70NAB (1–431), but not the rest of Rpa heterotrimer (Rpa(-NAB)). (B) Schematic drawing of the Rpa trimer, showing the OB domains as rectangles and the winged helix (WH) domain of Rpa32 as a sphere. (C) ITC curves for the human α1OB-Rpa70NAB, α1-Rpa70N and OB-Rpa70AB complexes. (D) Structure of the α1-Rpa70N complex. The α1 peptide is in yellow and Rpa70N in cyan. For clarity, the main chain amide group of L87 and carbonyl groups of M11, K13, F15 are not labeled.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig4-figsupp1-v3.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Superposition of the α1–Rpa70 OBN structure on the fusion protein of Rpa70 OBN and p53. In the fusion protein structure, the Rpa70 OBN (gray) groove has two p53 peptides, one (cyan) from its fused p53 and another (green) from a crystallographic-symmetry related fusion protein. While it was suggested that only the latter represented the solution-state complex, our structure has aspects of both p53-Rpa70 OBN interfaces. An acidic/amphipathic helix from the symmetry-related p53 superimposes with the Dna2 helix, and part of the second p53 peptide overlaps with the Dna2 β turn and associated contacts. α1 peptide is red. (B) The Dna2 OB groove (cyan) has an overall hydrophobic- and basic-residue content similar to that of the Rpa70 OBN (pink). The L12 and L45 loops (labeled), which in DNA-binding OB domains partially wrap around the DNA, but are truncated in the Rpa70 OBN domain are, respectively, truncated and absent in the Dna2 OB domain, resulting in a wide open groove. Residues mutated in Figure 5A are labeled. (C) ITC titration profile of human Dna2 α1 (residues 1–20) binding to human Rpa70N (residues 1–120). (D) ITC titration profile of human Dna2 OB (residues 21–122) binding to human Rpa70AB (residues 181–422). (E) ITC titration profile of human Dna2 α1OB (residues 1–122) binding to human Rpa70NAB (residues 1–422). (F) The Dna2 OB domain does not exhibit any detectable DNA-binding at concentrations up to 80 μM in an EMSA assay with (dT)20 ssDNA. A shifted, smeary band appearing at 160 μM OB has ~ 4% of the total DNA.DOI: http://dx.doi.org/10.7554/eLife.09832.012
+**Figure 4—figure supplement 1.:** (A) Superposition of the α1–Rpa70 OBN structure on the fusion protein of Rpa70 OBN and p53. In the fusion protein structure, the Rpa70 OBN (gray) groove has two p53 peptides, one (cyan) from its fused p53 and another (green) from a crystallographic-symmetry related fusion protein. While it was suggested that only the latter represented the solution-state complex, our structure has aspects of both p53-Rpa70 OBN interfaces. An acidic/amphipathic helix from the symmetry-related p53 superimposes with the Dna2 helix, and part of the second p53 peptide overlaps with the Dna2 β turn and associated contacts. α1 peptide is red. (B) The Dna2 OB groove (cyan) has an overall hydrophobic- and basic-residue content similar to that of the Rpa70 OBN (pink). The L12 and L45 loops (labeled), which in DNA-binding OB domains partially wrap around the DNA, but are truncated in the Rpa70 OBN domain are, respectively, truncated and absent in the Dna2 OB domain, resulting in a wide open groove. Residues mutated in Figure 5A are labeled. (C) ITC titration profile of human Dna2 α1 (residues 1–20) binding to human Rpa70N (residues 1–120). (D) ITC titration profile of human Dna2 OB (residues 21–122) binding to human Rpa70AB (residues 181–422). (E) ITC titration profile of human Dna2 α1OB (residues 1–122) binding to human Rpa70NAB (residues 1–422). (F) The Dna2 OB domain does not exhibit any detectable DNA-binding at concentrations up to 80 μM in an EMSA assay with (dT)20 ssDNA. A shifted, smeary band appearing at 160 μM OB has ~ 4% of the total DNA.
 
 The Dna2-interacting N-terminal segment of yeast Rpa70 (residues 1 to 180) consists of an OB fold domain (named OBN) that is a known protein-protein interaction site and a ~60 residue flexible linker (Figure 4B) (Bochkareva et al., 2005; Fan and Pavletich, 2012; Fanning et al., 2006; Gomes and Wold, 1996). The rest of Rpa70 consists of three OB folds that are the main DNA-binding domains (named DBD-A, DBD-B and DBD-C; Figure 4B) (Bochkarev et al., 1997; Fan and Pavletich, 2012). Because DBD-A and DBD-B can also participate in protein-protein interactions (Jiang et al., 2006; Loo and Melendy, 2004; Yuzhakov et al., 1999), this raised the possibility that they account for the remainder of Rpa70’s Dna2 affinity.
 
 We tested this using a mouse Rpa70 fragment containing the OBN, DBD-A and DBD-B domains (residues 1 to 431; thereafter Rpa70NAB). As shown in Figure 4A, GST-α1OB binds to Rpa70NAB (lanes 3 and 4) but not to the Rpa heterotrimer lacking this fragment (Rpa(-NAB); lanes 5 to 6). The dissociation constant (Kd) of the α1OB–Rpa70NAB complex, determined by isothermal titration calorimetry (ITC), is 12 ± 1 μM (Figure 4C and Figure 4—figure supplement 1E). Using ITC, we found that the Dna2 α1 helix (residues 1 to 20) binds to the OBN domain of Rpa70 (residues 1 to 120; thereafter Rpa70N), while the Dna2 OB domain (residues 21 to 122) binds to the Rpa70 fragment containing DBD-A and DBD-B (residues 181 to 422; thereafter Rpa70AB), with Kd values of 34 ± 7 and 46 ± 10 μM, respectively (Figure 4C and Figure 4—figure supplement 1). The Kd values of these subcomplexes relative to that of α1OB–Rpa70NAB indicate only a low level of cooperativity, consistent with the two interacting elements on both Rpa and Dna2 being separated by flexible linkers. Further dividing Rpa70AB into the individual DBD-A and DBD-B polypeptides failed to show detectable binding to Dna2 OB under the same conditions, indicating both are required (not shown).
 
-## Structure of the Dna2 α1 helix bound to the OBN domain of Rpa70
+### Structure of the Dna2 α1 helix bound to the OBN domain of Rpa70
 
 We co-crystallized a human Dna2 peptide (residues 1 to 20) containing the α1 helix with the OBN domain of human Rpa70 (residues 1 to 120). In the 1.6 Å structure, residues 6 to 17 of Dna2 form a 2-turn amphipathic helix followed by a β turn, while the rest are disordered (Figure 4D). The peptide binds to a shallow OBN groove that corresponds to the DNA-binding grooves of other OB domains (Bochkarev et al., 1997; Fan and Pavletich, 2012). The only other OBN-peptide structure available is of OBN fused to the p53 transactivation domain peptide, where two p53 peptides occupy the OBN groove (Bochkareva et al., 2005). The amphipathic helix of Dna2 overlaps with one of the p53 peptides, while the β turn coincides with part of the other p53 peptide (Figure 4—figure supplement 1A).
 
@@ -139,27 +304,27 @@ The mixed basic and hydrophobic character of the OBN groove complements the acid
 
 We do not know the structure of the Dna2 OB domain bound to the Rpa70 DBD-A and DBD-B domains, but the OB structure in intact Dna2 is consistent with a role in protein-protein interactions (Figure 4—figure supplement 1B), and the isolated OB domain polypeptide does not exhibit any DNA-binding in EMSA at concentrations up to 80 μM (Figure 4—figure supplement 1F).
 
-## Mechanism of Rpa displacement by Dna2
+### Mechanism of Rpa displacement by Dna2
 
 A common feature of proteins involved in Rpa-dependent processes is their ability to bind to Rpa, either directly or through accessory factors, and this is thought to form the basis for the displacement of Rpa from ssDNA (Fanning et al., 2006; Zou et al., 2006). Rpa displacement is best understood with the simian virus 40 (SV40) T antigen and related viral replication proteins, where T antigen-Rpa interactions allosterically modulate Rpa’s ssDNA affinity (Jiang et al., 2006; Loo and Melendy, 2004; Yuzhakov et al., 1999). Because Dna2 has been shown to displace Rpa from 5’ flap DNA (Stewart et al., 2008), we sought to address whether Dna2-Rpa interactions have an analogous, direct role in Rpa displacement, or whether they reflect a simple recruitment process that allows Dna2 to better compete with Rpa for ssDNA.
 
-We first confirmed that both the α1 helix and OB domain of Dna2 are required for the stimulation of the nuclease activity by Rpa. For this, we used a 5’ overhang substrate with a stem loop secondary structure that makes the Dna2 nuclease activity dependent on Rpa (5’SL
+We first confirmed that both the α1 helix and OB domain of Dna2 are required for the stimulation of the nuclease activity by Rpa. For this, we used a 5’ overhang substrate with a stem loop secondary structure that makes the Dna2 nuclease activity dependent on Rpa (5’SL24) (Figure 5—figure supplement 1A). In keeping with the findings with the yeast Dna2△405N mutant, deletion of the Dna2 α1 helix reduced cleavage of the Rpa-coated 5’SL24 by a factor of ~2 compared to intact Dna2 (Figure 5A). The analogous experiment to address the importance of the OB domain was not possible, as the OB-deleted Dna2 is insoluble (not shown). We instead mutated three OB residues at positions corresponding to protein-protein contacts on the Rpa70 OBN domain (Figure 4—figure supplement 1B). As shown in Figure 5A, two of these mutations (I82A and R66E) synergized with α1 deletion and reduced 5’SL24 cleavage further, whereas the third (I110A) had no discernible effect. To rule out that these mutations do not affect the structural integrity of Dna2, we tested the Rpa-independent cleavage of the 5’(dT)24 substrate and found that it is not affected by neither the OB mutations nor the α1 deletion (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig5-v3.jpg)
 
-**Figure 5.:** (A) Cleavage of a 5’ stem-loop overhang substrate (15 nM) by wild type, α1-deleted, and OB mutant Dna2 in the presence of 15 nM Rpa. (B) Nuclease activity of the same set of enzymes as in (A), but using a 5’ (dT)24 overhang substrate in the absence of Rpa. (C) GST pull-down assay showing that α1OB and (dT)24 ssDNA bind to Rpa in a partially mutually exclusive manner. Protein and DNA concentrations are in μM, and the bar graph shows the quantitation of Rpa70 binding relative to the lane in the absence of DNA, which is set to 1. Error bars are standard deviations from three repetitions of each experiment. (D) The binding of α1 to the Rpa70N polypeptide is unaffected by (dT)8 ssDNA. GST pull-down assay and quantitation as in (C). (E) The binding of OB to the Rpa70AB polypeptide is abolished by (dT)8 ssDNA. GST pull-down assay and quantitation as in (C).DOI: http://dx.doi.org/10.7554/eLife.09832.013
+**Figure 5.:** (A) Cleavage of a 5’ stem-loop overhang substrate (15 nM) by wild type, α1-deleted, and OB mutant Dna2 in the presence of 15 nM Rpa. (B) Nuclease activity of the same set of enzymes as in (A), but using a 5’ (dT)24 overhang substrate in the absence of Rpa. (C) GST pull-down assay showing that α1OB and (dT)24 ssDNA bind to Rpa in a partially mutually exclusive manner. Protein and DNA concentrations are in μM, and the bar graph shows the quantitation of Rpa70 binding relative to the lane in the absence of DNA, which is set to 1. Error bars are standard deviations from three repetitions of each experiment. (D) The binding of α1 to the Rpa70N polypeptide is unaffected by (dT)8 ssDNA. GST pull-down assay and quantitation as in (C). (E) The binding of OB to the Rpa70AB polypeptide is abolished by (dT)8 ssDNA. GST pull-down assay and quantitation as in (C).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig5-figsupp1-v3.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Cleavage of a 5’ overhang substrate that has a predicted 6 bp stem-loop secondary structure at the 5’ end of the ssDNA (5’ SL24). Dna2, at the indicated concentrations, failed to cleave 5’ SL24 (30 nM) appreciably under conditions where ~95% of the corresponding 5’ (dT)24 substrate was cleaved, irrespective of ATP. Addition of Rpa, at a stoichiometric amount to ssDNA, stimulated SL24 cleavage by over a factor of 20, but had only a modest effect on (dT)24 cleavage. In the presence of Rpa, the cleavage of the two substrates was within a factor of two, compared to being nearly two orders of magnitude apart in its absence. (B) Cleavage of a 178-nt long 5’ overhang substrate (80 nM) by Dna2 (20 nM). As with the shorter 5’ overhang substrates, ATP (1.3 mM) has only a minor stimulatory effect. Because mixed-sequence ssDNA of this length would invariably have some secondary structure (the lowest energy secondary structure, predicted by the UNAfold server (mfold.rna.albany.edu), is shown at bottom, right), cleavage is stimulated by Rpa (400 nM) as with the 5’ SL24 substrate. For this specific experiment, samples are quantified by integration of final products in the box.DOI: http://dx.doi.org/10.7554/eLife.09832.014
+**Figure 5—figure supplement 1.:** (A) Cleavage of a 5’ overhang substrate that has a predicted 6 bp stem-loop secondary structure at the 5’ end of the ssDNA (5’ SL24). Dna2, at the indicated concentrations, failed to cleave 5’ SL24 (30 nM) appreciably under conditions where ~95% of the corresponding 5’ (dT)24 substrate was cleaved, irrespective of ATP. Addition of Rpa, at a stoichiometric amount to ssDNA, stimulated SL24 cleavage by over a factor of 20, but had only a modest effect on (dT)24 cleavage. In the presence of Rpa, the cleavage of the two substrates was within a factor of two, compared to being nearly two orders of magnitude apart in its absence. (B) Cleavage of a 178-nt long 5’ overhang substrate (80 nM) by Dna2 (20 nM). As with the shorter 5’ overhang substrates, ATP (1.3 mM) has only a minor stimulatory effect. Because mixed-sequence ssDNA of this length would invariably have some secondary structure (the lowest energy secondary structure, predicted by the UNAfold server (mfold.rna.albany.edu), is shown at bottom, right), cleavage is stimulated by Rpa (400 nM) as with the 5’ SL24 substrate. For this specific experiment, samples are quantified by integration of final products in the box.
 
 We then addressed whether the α1 helix and OB domain play a direct role in Rpa displacement, which in principle can occur either through the allosteric destabilization of Rpa-ssDNA interactions as shown for T antigen, or through α1OB binding to an Rpa site that overlaps with or sterically hinders a ssDNA-binding site. We did not expect the isolated α1OB, in the absence of the DNA-affinity provided by the nuclease and helicase domains, to displace Rpa from ssDNA, as the affinities of the α1OB-Rpa and Rpa-ssDNA complexes differ by 5 orders of magnitude (Kd values of ∼12 μM and ∼100 pM, respectively). Instead, we reasoned that if α1OB has a role destabilizing Rpa-ssDNA interactions, then this should be reflected in ssDNA interfering with α1OB-Rpa association. As shown in Figure 5C, addition of (dT)24 substantially reduced Rpa binding to GST-α1OB (lanes 1 to 3), consistent with α1OB and ssDNA interacting with Rpa in a mutually exclusive manner. However, while one molar equivalent of (dT)24 reduced the bound Rpa by a factor of ∼4, the remaining Rpa was clearly above the background level of the GST-only reaction (lanes 4 and 5), suggesting that only one of the two Dna2-Rpa interactions is mutually exclusive with Rpa-ssDNA interactions. Consistent with this, addition of (dT)8 had no discernible effect on the binding of GST-α1 to Rpa70N (Figure 5D), whereas it eliminated the binding of GST-OB to Rpa70AB in a manner dependent on the stoichiometry of (dT)8 to Rpa70AB (Figure 5E).
 
-These findings indicate that the interaction between the Dna2 α1 helix and the Rpa OBN domain is a simple recruitment step, consistent with both of these elements being flexibly tethered to the remainder of their polypeptides and with their lack of ssDNA affinity. This simple recruitment would be important for Dna2 accessing ssDNA-bound Rpa, where the interaction between the Dna2 OB and Rpa DBD-A–DBD-B domains would not be initially available. The simple recruitment interaction would also increase the effective concentration of the Dna2 OB at the Rpa DBD-A–DBD-B, as they immediately follow the α1 helix and OBN domain, respectively (
+These findings indicate that the interaction between the Dna2 α1 helix and the Rpa OBN domain is a simple recruitment step, consistent with both of these elements being flexibly tethered to the remainder of their polypeptides and with their lack of ssDNA affinity. This simple recruitment would be important for Dna2 accessing ssDNA-bound Rpa, where the interaction between the Dna2 OB and Rpa DBD-A–DBD-B domains would not be initially available. The simple recruitment interaction would also increase the effective concentration of the Dna2 OB at the Rpa DBD-A–DBD-B, as they immediately follow the α1 helix and OBN domain, respectively (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/09832/elife-09832-fig6-v3.jpg)
 
-**Figure 6.:** (A) Schematic of the proposed mechanism of Dna2 displacing Rpa from a 5’ overhang DNA. Dna2 is shown as a hollow cylinder, except for its α1 helix and OB fold domains that are shown as a rectangle and circle, respectively. The label “nuc” marks the nuclease tunnel entrance into which the ssDNA would thread, and “hel2A” marks the helicase tunnel exit where the 5’ end of the ssDNA would end up after threading. (B) Schematic illustrating that at a 3’ overhang DNA, Dna2-Rpa interactions do not result in a free ssDNA end that can thread into the Dna2 tunnel. (C) Nuclease-dead Dna2 (D278A) displaces Rpa from 5’- but not 3’ overhang DNA. The overhang consists of (dT)26 and the DNA is conjugated to streptavidin (shown by “S”) through a biotin group at the end of the duplex. Column graph showing quantitation of Rpa32 plots the molar ratio relative to the reaction lacking Dna2 for each DNA substrate (lanes 2, 3 for 5’ overhang DNA, and lanes 5 and 6 for 3’ overhang DNA), or relative to lane 1 for the comparison of Rpa loading onto 5’- and 3’-overhang DNA. Quantitation of relative Dna2 loading is similarly shown in the last column graph. Error bars are standard deviations from three repetitions of each experiment.DOI: http://dx.doi.org/10.7554/eLife.09832.015
+**Figure 6.:** (A) Schematic of the proposed mechanism of Dna2 displacing Rpa from a 5’ overhang DNA. Dna2 is shown as a hollow cylinder, except for its α1 helix and OB fold domains that are shown as a rectangle and circle, respectively. The label “nuc” marks the nuclease tunnel entrance into which the ssDNA would thread, and “hel2A” marks the helicase tunnel exit where the 5’ end of the ssDNA would end up after threading. (B) Schematic illustrating that at a 3’ overhang DNA, Dna2-Rpa interactions do not result in a free ssDNA end that can thread into the Dna2 tunnel. (C) Nuclease-dead Dna2 (D278A) displaces Rpa from 5’- but not 3’ overhang DNA. The overhang consists of (dT)26 and the DNA is conjugated to streptavidin (shown by “S”) through a biotin group at the end of the duplex. Column graph showing quantitation of Rpa32 plots the molar ratio relative to the reaction lacking Dna2 for each DNA substrate (lanes 2, 3 for 5’ overhang DNA, and lanes 5 and 6 for 3’ overhang DNA), or relative to lane 1 for the comparison of Rpa loading onto 5’- and 3’-overhang DNA. Quantitation of relative Dna2 loading is similarly shown in the last column graph. Error bars are standard deviations from three repetitions of each experiment.
 
 This juxtaposition would then increase the probability of DBD-A–DBD-B transiently associating with OB and dissociating from ssDNA. This is plausible, because while the DNA affinity of DBD-A–DBD-B (~50 nM Kd) is substantially higher than its Dna2 affinity, those of the individual DBD-A (2 μM Kd) and DBD-B (20 μM Kd) are not, and as with the intact Rpa heterotrimer, they are thought to associate with and dissociate from DNA sequentially (Arunkumar et al., 2005; Fan and Pavletich, 2012; Fanning et al., 2006). By itself, the transient displacement of DNA from DBD-A–DBD-B will not lead to the release Rpa from ssDNA. However, because the DBDA–DBDB is at the 5’ end of the Rpa-DNA complex (Bochkarev et al., 1997; Fan and Pavletich, 2012), and the Dna2 OB domain is next to the nuclease tunnel entrance, the transiently free 5’ end of the DNA will be well-placed to start threading through the nuclease tunnel (Figure 6A). The threading process then should be able to completely dissociate the already weakened Rpa-DNA complex (Figure 6A). At a 3’ end of DNA, by contrast, the transient dissociation of DBD-A–DBD-B from DNA will expose an internal ssDNA lacking an end that can be trapped by the Dna2 tunnel, and DBD-A–DBD-B will revert to their DNA-bound state (Figure 6B).
 
@@ -175,7 +340,7 @@ The requirement for threading necessitates Dna2 having a mechanism to displace R
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 Full-length mouse Dna2 was cloned into a pFastbac1 baculovirus vector engineered with a cleavable N-terminal GST tag and a non-cleavable C-terminal FLAG tag, and was expressed in Hi-5 insect cells (Life technologies, Carlsbad, CA). The recombinant protein was purified first by GST-affinity chromatography and, after cleavage of the GST tag, by anion exchange and gel-filtration chromatography. Purified Dna2 was concentrated to ∼20 mg/mL in 20 mM Tris-HCl, 250 mM NaCl, 0.3 mM TCEP, pH 8.0. All buffers were degassed before use. The various Dna2 mutants and seleno-methionine substituted protein were purified similarly. Seleno-methionine substituted Dna2 was expressed according to manufacturer’s protocol (Expression systems, Davis, CA) and was purified similarly.
 
@@ -183,19 +348,19 @@ For the expression of the mouse Rpa heterotrimer, Rpa70 was cloned into a pFastb
 
 GST-tagged mouse Dna2 α1 (residues 1–20), α1OB (residues 1–122) and OB (residues 21–122) and Rpa70NAB (residues 1–431), Rpa70N (residues 1–122), and Rpa70AB (residues 191–431) fragments, as well as the corresponding human polypeptides used in ITC measurements, were cloned into a pGEX-4T vector and expressed in E. coli BL21DE3 cells. They were purified by GST affinity chromatography, ion exchange and/or heparin chromatography, and gel-filtration chromatography. The corresponding untagged polypeptides were expressed fused to an N-terminal 6-His-sumo tag in E. coli BL21DE3 cells. Following nickel affinity chromatography and cleavage of the 6-His-sumo tag by Ulp1, they were further purified by ion exchange and/or heparin, and gel-filtration chromatography.
 
-## Crystallization
+### Crystallization
 
 Crystals of the Dna2-ADP complex were grown in 4°C using the hanging drop vapor diffusion method from a crystallization buffer of 80 mM MES, 250 mM Li2SO4, 2 mM MgCl2, 8–12% PEG MME 5000, 0.5 mM TCEP, pH 6.5, containing 12 mg/mL Dna2 and 1 mM ADP. Seleno-methionine substituted Dna2 was crystallized under similar conditions using seeding. Crystals of Dna2 bound to 21-nt ssDNA and ADP (Dna2-ssDNA in Table 1) were grown from a crystallization buffer of 80 mM MES, 20 mM CaCl2, 10 mM spermidine, 4–9% isopropanol, 0.5 mM TCEP, pH 6.5, and 1 mM ADP. They contain two molecules in the asymmetric unit. Crystals of Dna2 bound to 5’ overhang DNA, which consists of a 17-nt 5’ overhanging ssDNA and a 6 base pair dsDNA (Dna2-5’ overhang DNA in Table 1), grew from a similar condition but in a different space group, and have one complex in the asymmetric unit and higher diffraction limits. As there is no electron density for the duplex, we presume it is disordered. All crystals were cryo-protected in crystallization buffer supplemented with 20–25% glycerol or ethylene glycol, and were flash-frozen in liquid nitrogen. The human DNA2 α1-RPA70 OBN complex was crystallized by mixing an 8.7 mg/ml solution of the RPA70N polypeptide (residues 1–120) with a 3-fold molar excess of a synthetic DNA2 α1 peptide (residues 1–20) from 50 mM Tris-HCl, 35% PEG 1500, 2 mM TCEP, pH 8.0. Crystals were cryo-protected in crystallization buffer supplemented with 20–25% glycerol and flash-frozen in liquid nitrogen.
 
-## Structure determination and refinement
+### Structure determination and refinement
 
 Diffraction data were collected at the 24IDC and 24IDE beamlines of the Advanced Photon Source (Argonne National Laboratory) and the X29 beamline of the National Synchrotron Light Source (Brookhaven National Laboratory). Data sets were processed with the HKL2000 suite (Otwinowski and Minor, 1997). The structure of Dna2-ADP complex was determined using SAD with data collected at the selenium edge (Bricogne et al., 2003). The phases were improved using solvent flattening and two-fold NCS averaging with multiple masks with the program DM (Winn et al., 2011). The model was built using O (Jones et al., 1991)and Coot (Emsley et al., 2010) and refined with REFMAC5 (Winn et al., 2011) and PHENIX (Adams et al., 2010) using tight NCS restraints on atom positions. Initial phases for the two Dna2-ADP-ssDNA complexes were obtained by molecular replacement with PHASER (McCoy et al., 2007) using the apo-Dna2 structure as the search model, and the structures were refined using REFMAC5 (Winn et al., 2011) and PHENIX (Adams et al., 2010), with TLS parameterization of temperature factors of the high resolution Dna2-5’ overhang DNA complex. The Ramachandran plot of the final model has 90.5%, 8.9%, 0.5% and 0% of the residues in the most favored, additional allowed, generously allowed and disallowed regions. The statistics from data collection and refinement are shown in Table 1. Figures were generated using PyMOL (http://www.pymol.org).
 
-## Nuclease assays
+### Nuclease assays
 
 Unless otherwise noted, experiments were performed in a 15 μL volume in 20 mM Tris-HCl, 125 mM NaCl, 6 mM MgCl2, 1.3 mM ATP, 0.2 mg/mL BSA, 2% glycerol, pH 8.0. Reactions were incubated for 30 min at 25°C and stopped by adding 0.5% SDS, 20 mM EDTA and 1 unit of proteinase K. Reactions were analyzed by 16% or 12% denaturing urea-PAGE. For Rpa-containing reactions, Rpa was incubated with DNA for 15 min at 4°C before the addition of Dna2. For reactions using 6-FAM labeled DNA, wet gels were scanned using a fluorescent laser scanner (Fujifilm FLA 5000), and the bands were quantified with ImageGauge software (Fujifilm).
 
-## Protein-protein interaction assays
+### Protein-protein interaction assays
 
 For GST pull-down experiments, 30 μM GST-tagged mouse α1-OB (residues 1 to 122) or GST was incubated with an equal molar amount of full-length Rpa, Rpa70NAB or Rpa(-NAB). Binding reactions (40 μL) were carried out in 20 mM Tris-HCl, 80 mM NaCl, 0.3 mM TCEP, 2% glycerol, pH 8.0 at 4°C for 30 min before addition of glutathione beads. After 30 min, the beads were washed three times with binding buffer. Proteins were eluted with 20 mM glutathione and analyzed by SDS-PAGE. Other GST pull-down experiments were carried out similarly, with protein concentrations indicated in the main text or figure legends.
 
@@ -203,6 +368,6 @@ For Rpa displacement experiments, 2 μM 5’- or 3’-(dT)26 overhang DNA that w
 
 ITC experiments were carried out using a MicroCal ITC200 calorimeter (Malvern Instruments Inc., Westborough, MA) at 20°C in a buffer of 20 mM HEPES, 80 mM NaCl, 0.2 mM TCEP, pH 7.5.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 Binding reactions (10 μl) containing 0.075 or 0.3 nM of 32P-labelled DNA substrates with increasing amounts of nuclease-dead Dna2 were carried out in 20 mM Tris-HCl, 80 mM NaCl, 0.3 mM TCEP, 0.2 mg/mL BSA (New England Biolabs, Ipswich, MA), 2% glycerol, pH 8.0. Reactions were incubated on ice for 30 min., followed by electrophoresis at 4°C on 4% (w/v) native PAGE gels in 1x TB buffer. The dried gels were scanned using a phosphorimager (GE Typhoon 7000, GE Healthcare, Pittsburg, PA), bands were quantified with ImageGauge software (Fujifilm), and the apparent dissociation constants (Kd) were calculated from the equilibrium expression of a one-site binding model. Curve fitting was done by minimizing the sum of the square of the differences between the observed fraction of bound DNA and the fraction predicted from the model.

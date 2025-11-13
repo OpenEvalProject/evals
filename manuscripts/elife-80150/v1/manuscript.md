@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/04ypx8c21 Department of Hepatobiliary and Pancreatic Surgery, The First Affiliated Hospital of Zhengzhou University Zhengzhou China
-2. https://ror.org/04ypx8c21 Institute of Hepatobiliary and Pancreatic Diseases, Zhengzhou University Zhengzhou China
+1. Department of Hepatobiliary and Pancreatic Surgery, The First Affiliated Hospital of Zhengzhou University Zhengzhou China ([ROR:04ypx8c21](https://ror.org/04ypx8c21))
+2. Institute of Hepatobiliary and Pancreatic Diseases, Zhengzhou University Zhengzhou China ([ROR:04ypx8c21](https://ror.org/04ypx8c21))
 3. Zhengzhou Basic and Clinical Key Laboratory of Hepatopancreatobiliary Diseases Zhengzhou China
-4. https://ror.org/056swr059 Department of Interventional Radiology, The First Affiliated Hospital of Zhengzhou University Zhengzhou China
-5. https://ror.org/01wfgh551 Department of Neurosurgery, The Fifth Affiliated Hospital of Zhengzhou University Zhengzhou China
+4. Department of Interventional Radiology, The First Affiliated Hospital of Zhengzhou University Zhengzhou China ([ROR:056swr059](https://ror.org/056swr059))
+5. Department of Neurosurgery, The Fifth Affiliated Hospital of Zhengzhou University Zhengzhou China ([ROR:01wfgh551](https://ror.org/01wfgh551))
 
 † Corresponding author
 
@@ -37,25 +37,43 @@ To develop an ideal biomarker, based on 32 consensus prognostic genes (CPGs), we
 
 ## Results
 
-## Integrated development of a pancreatic cancer consensus signature
+### Integrated development of a pancreatic cancer consensus signature
 
 Our workflow is outlined in Figure 1. Based on univariate Cox regression, we screened 32 CPGs from 15,288 intersection genes in the training and nine testing cohorts (Figure 2B). Next, these 32 CPGs were further incorporated into our integration program to develop an AIDPS. In the PACA-AU-Array training cohort, we applied 76 algorithm combinations via ten-fold cross-validation to construct prediction models and calculated the average C-index of each algorithm in the remaining nine testing cohorts. As shown in Figure 2A, the combination of CoxBoost and Survival-SVM with the highest average C-index (0.675) was selected as the final model. We further calculated AIDPS scores of each sample in all 13 cohorts according to the expression files of nine genes included in the AIDPS (Figure 2—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig1-v1.jpg)
 
-**Figure 1.:** Figure 1—source data 1.
-
 ![Figure 2.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig2-v1.jpg)
 
-**Figure 2.:** (A) The C-indexes of 76 machine-learning algorithm combinations in the nine testing cohorts. (B) Discovery of 32 consensus prognosis genes from 10 independent multicenter cohorts. (C–J) The predictive performance of AIDPS was compared with common clinical and molecular variables in the PACA-AU-Array (C), TCGA-PAAD (D), PACA-AU-Seq (E), PACA-CA-Seq (F), E-MTAB-6134 (G), GSE62452 (H), GSE78229 (I), and GSE79668 (J). Z-score test: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 2—source data 1.
+**Figure 2.:** (A) The C-indexes of 76 machine-learning algorithm combinations in the nine testing cohorts. (B) Discovery of 32 consensus prognosis genes from 10 independent multicenter cohorts. (C–J) The predictive performance of AIDPS was compared with common clinical and molecular variables in the PACA-AU-Array (C), TCGA-PAAD (D), PACA-AU-Seq (E), PACA-CA-Seq (F), E-MTAB-6134 (G), GSE62452 (H), GSE78229 (I), and GSE79668 (J). Z-score test: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## Consistent prognostic value of AIDPS
+### Consistent prognostic value of AIDPS
 
 To evaluate the prognostic performance of AIDPS, we categorized PACA patients into high and low AIDPS groups according to the median value. The Kaplan–Meier curve for OS and RFS demonstrated the high AIDPS group possessed significantly longer survival in the PACA-AU-Array training cohort (p<0.0001 in OS and p=0.012 in RFS, Figure 3A and B). After removing batch effects, the Meta-Cohort combining 10 cohorts (training and nine testing cohorts) also exhibited the same trend (all p<0.05, Figure 3C and D). In addition, we further enrolled several important clinical traits for multivariate Cox analysis, and the results indicated that AIDPS was an independent protective factor for OS and RFS in the PACA-AU-Array cohort (HR: 0.593 [0.504–0.697] for OS and 0.762 [0.611–0.949] for RFS, both p<0.05, Figure 3E and F). Similar results were also found in the Meta-Cohort (HR: 0.603 [0.531–0.685] for OS and 0.667 [0.552–0.805] for RFS, both p<0.05, Figure 3G and H).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Kaplan–Meier survival analysis for overall survival (OS) (A) and relapse-free survival (RFS) (B) between the high and low AIDPS groups in the PACA-AU-Array. (C, D) Kaplan–Meier survival analysis for OS (C) and RFS (D) between the high and low AIDPS groups in the Meta-Cohort. (E, F) Multivariate Cox regression analysis of OS (E) and RFS (F) in the PACA-AU-Array. (G, H) Multivariate Cox regression analysis of OS (G) and RFS (H) in the Meta-Cohort. (I, J) Calibration curve for predicting 1-, 2-, and 3-year OS in the PACA-AU-Array (I), and Meta-Cohort (J). (K, L) Time-dependent receiver-operator characteristic (ROC) analysis for predicting 1-, 2-, and 3-year OS in the PACA-AU-Array (K), and Meta-Cohort (L).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–I) Kaplan–Meier survival analysis for overall survival (OS) between the high and low AIDPS groups in the TCGA-PAAD (A), PACA-AU-Seq (B), PACA-CA-Seq (C), E-MTAB-6134 (D), GSE62452 (E), GSE28735 (F), GSE78229 (G), GSE79668 (H), and GSE85916 (I). (J–M) Kaplan–Meier survival analysis for relapse-free survival (RFS) between the high and low AIDPS groups in the TCGA-PAAD (J), PACA-AU-Seq (K), PACA-CA-Seq (L), and E-MTAB-6134 (M). (N) Multivariate Cox regression analysis of OS in the TCGA-PAAD.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–F) Multivariate Cox regression analysis of overall survival (OS) in the PACA-AU-Seq (A), PACA-CA-Seq (B), E-MTAB-6134 (C), GSE79668 (D), GSE62452 (E), and GSE78229 (F). (G–J) Multivariate Cox regression analysis of relapse-free survival (RFS) in the TCGA-PAAD (G), E-MTAB-6134 (H), PACA-CA-Seq (I), and PACA-AU-Seq (J).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Time-dependent receiver-operator characteristic (ROC) analysis for predicting 1-, 2-, and 3-year overall survival (OS) in the TCGA-PAAD (A), PACA-AU-Seq (B), PACA-CA-Seq (C), E-MTAB-6134 (D), GSE62452 (E), GSE28735 (F), GSE78229 (G), GSE79668 (H), and GSE85916 (I).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Univariate Cox regression analysis of AIDPS and 86 published signatures of pancreatic cancer (PACA) in three external validation cohorts. (B–D) Kaplan–Meier survival analysis for overall survival (OS) in the GSE21501 (B), GSE57495 (C), and GSE71729 (D) cohorts. (E–G) Time-dependent receiver-operator characteristic (ROC) analysis for predicting 1-, 2-, and 3-year OS in the GSE21501 (E), GSE57495 (F), and GSE71729 (G). (H–J) Calibration curve for predicting 1-, 2-, and 3-year OS in the GSE21501 (H), GSE57495 (I), and GSE71729 (J).
+
 In the nine testing cohorts, Kaplan–Meier curves consistently showed a significantly prolonged OS in the high AIDPS group compared with the low AIDPS group (all p<0.05, Figure 3—figure supplement 1A–I). Similarly, the comparison of RFS also demonstrated that patients in the high AIDPS group possessed dramatically lower recurrence rate than low AIDPS group in the TCGA-PAAD (n = 69, p=0.029), PACA-CA-Seq (n = 113, p=0.0023), and E-MTAB-6134 (n = 288, p<0.0001) cohorts (Figure 3—figure supplement 1J, L, M). It is worth mentioning that only 28 samples in the PACA-AU-Seq owned complete RFS information. Although Kaplan–Meier analysis showed a corresponding trend, the log-rank test did not reach statistical significance (p=0.063, Figure 3—figure supplement 1K). After adjustment for available clinicopathological features, such as age, gender, TNM stage, grade, surgical margin, history of radiotherapy or alcohol consumption and KRAS, TP53, or CDKN2A mutations, multivariate Cox analysis results still indicated that AIDPS was an independent prognostic factor for OS (all p<0.05, Figure 3—figure supplements 1N and 2A–F). Consistently, the multivariate results of RFS also revealed that AIDPS remained statistically significant in the TCGA-PAAD, PACA-CA-Seq, and E-MTAB-6134 (all p<0.05, Figure 3—figure supplement 2G–I). However, given the small sample size of PACA-AU-Seq, the p-value was not statistically significant (p=0.338, Figure 3—figure supplement 2J).
 
-## Robust predictive performance of AIDPS
+### Robust predictive performance of AIDPS
 
 To measure the discrimination of AIDPS, we plotted calibration curves and receiver-operator characteristic (ROC) curves. The calibration curves of both the PACA-AU-Array training cohort and Meta-Cohort showed that AIDPS had good prediction performance (Figure 3I and J). The area under the ROC curve (AUCs) of 1-, 2-, and 3-year OS were 0.715, 0.748, and 0.671 in the PACA-AU-Array training cohort and 0.717, 0.719, and 0.719 in the Meta-Cohort (Figure 3K and L). Similarly excellent results were found in the nine testing cohorts, with 0.705, 0.711, and 0.797 in the TCGA-PAAD; 0.749, 0.808, and 0.827 in the PACA-AU-Seq; 0.662, 0.683, and 0.691 in the PACA-CA-Seq; 0.773, 0.698, and 0.675 in the E-MTAB-6134; 0.676, 0.787, and 0.834 in the GSE62452; 0.734, 0.865, and 0.871 in the GSE28735; 0.669, 0.809, and 0.844 in the GSE78229; 0.791, 0.761, and 0.786 in the GSE79668; and 0.748, 0.766, and 0.811 in the GSE85916, respectively (Figure 3—figure supplement 3A–I). The results of AUCs greater than 0.65 in multiple independent cohorts indicated that our AIDPS could stably and robustly predict the prognosis of PACA patients.
 
@@ -65,25 +83,41 @@ In addition, to validate our model more rigorously, we evaluated the predictive 
 
 Overall, Kaplan–Meier survival analysis, Cox regression analysis, timeROC curve, C-index, and calibration curve results of the training cohort, nine testing cohorts, Meta-Cohort, and three external validation cohorts consistently indicated that AIDPS could accurately and robustly predict the prognosis of PACA patients, suggesting that AIDPS may become an attractive tool to serve clinical practice.
 
-## Re-evaluation of previously 86 published signatures in PACA
+### Re-evaluation of previously 86 published signatures in PACA
 
 The rapid development of high-throughput sequencing has shed light on the stratified management and precise treatment of tumors. In recent years, numerous prognostic signatures of PACA have been constructed via machine-learning algorithms such as LASSO and Stepwise Cox based on large amounts of high-quality data (Wang et al., 2022; Tan et al., 2020; Yuan et al., 2021). Therefore, we additionally collected 86 published mRNA/lncRNA prognostic signatures to compare the predictive accuracy of AIDPS and these models (Figure 4—source data 1). Signatures containing miRNAs were excluded due to the lack of necessary miRNA expression information. The results of univariate Cox regression showed that only our AIDPS and 20-gene signature of Demirkol CS had consistent statistical significance in all 13 independent cohorts and Meta-Cohort (Figure 4A, Figure 3—figure supplement 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig4-v1.jpg)
+
+**Figure 4.:** (A) Univariate Cox regression analysis of AIDPS and 86 published signatures of pancreatic cancer (PACA). (B) C-indexes of AIDPS and 86 published signatures in the PACA-AU-Array, TCGA-PAAD, PACA-AU-Seq, PACA-CA-Seq, E-MTAB-6134, GSE62452, GSE28735, GSE78229, GSE79668, GSE85916, and Meta-Cohort. Z-score test: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) C-indexes of AIDPS and 86 published signatures in the GSE21501. (B) C-indexes of AIDPS and 86 published signatures in the GSE57495. (C) C-indexes of AIDPS and 86 published signatures in the GSE71729. (D) The C-indexes of AIDPS and models constructed by other methods for nine AIDPS genes in the nine testing cohorts and three external validation cohorts. (E) The C-indexes for the six-gene signature of Stratford JK in all 13 cohorts. (F) The C-indexes for the 15-gene signature of Chen DT in all 13 cohorts. (G) The C-indexes for the five-gene signature of Kim J in all 13 cohorts. Z-score test: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 We then compared the predictive power of AIDPS and these 86 signatures via C-index across the training cohort, nine testing cohorts, and Meta-Cohort (Figure 4B). Our AIDPS exhibited distinctly superior accuracy than the other models in almost all cohorts (ranked first in four cohorts, ranked second in three cohorts, and ranked third in two cohorts), revealing the robustness of AIDPS. Of note, various prognostic signatures owned higher C-index in their TCGA-PAAD training cohort (e.g., Zhang C, Xu Q, Li Z, etc.), but performed poorly in other cohorts, which might be due to impaired generalization ability from overfitting (Figure 4B).
 
 In addition, our AIDPS also possessed robust predictive performance across the three external validation cohorts, ranking fourth in the GSE57495 cohort as well as fifth in the GSE21501 and GSE71729 cohorts, which outperformed almost all published signatures (Figure 4—figure supplement 1A–C). Notably, although the six-gene signature of Stratford JK was significantly better than AIDPS in the GSE21501 and GSE71729 cohorts, it was constructed in the GSE21501 cohort and performed very poorly in other cohorts, with C-index even less than 0.6 in the GSE57495, TCGA-PAAD, PACA-AU-Seq, etc. (Figure 4—figure supplement 1E). The 15-gene signature of Chen DT owned observably superior performance in his own training cohort GSE57495, but it was unsatisfactory in the GSE21501, GSE71729, PACA-CA-Seq, and other cohorts (Figure 4—figure supplement 1F). Similarly, Kim J’s five-gene signature performed well in the training cohort GSE71729 as well as GSE21501 and PACA-AU-Seq cohorts, but very poorly in most other cohorts such as GSE85916, GSE57495, PACA-CA-Seq, and E-MTAB-6134 (Figure 4—figure supplement 1G). Furthermore, although the 20-gene signature of Demirkol CS, the 3-gene signature of Chen H, the 6-gene signature of Hou J, the 7-gene signature of Liu X, and the 6-gene signature of Yu X_2 were superior to AIDPS in their training cohort or a few other cohorts, only our AIDPS possessed acceptable performance in all PACA cohorts, and the vast majority of cohorts had good performance with a C-index greater than 0.65 (Figure 4B, Figure 4—figure supplement 1A–C). In conclusion, the above results suggested that the nine-gene AIDPS could robustly predict the prognosis of PACA patients, and fewer genes might make it more valuable for clinical promotion.
 
-## The clinical signature of AIDPS
+### The clinical signature of AIDPS
 
 We further compared several familiar clinical characteristics between the high and low AIDPS groups, and the results indicated the absence of statistical differences in age, gender, and TNM stage (Figure 5A–C, Figure 5—figure supplement 1A–L). However, patients with low AIDPS possessed more advanced grades, which might contribute to their worse prognosis (Figure 5D, Figure 5—figure supplement 1M–P).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig5-v1.jpg)
+
+**Figure 5.:** (A–D) Composition percentage of the two groups in clinical characteristics such as age (A), gender (B), stage (C), and grade (D) in the PACA-AU-Array. (E–H) Kaplan–Meier survival analysis for overall survival (OS) in the TCGA-LIHC (E), TCGA-STAD (F), TCGA-COAD (G), and TCGA-READ (H). (I, J) The top five Gene Ontology (GO)-enriched pathways (I) and Kyoto Encyclopedia of Genes and Genomes (KEGG)-enriched pathways (J) in the high AIDPS groups. (K, L) The top five GO-enriched pathways (K) and KEGG-enriched pathways (L) in the low AIDPS groups.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, E, I, M) Composition percentage of the two groups in clinical characteristics such as age (A), gender (E), stage (I), and grade (M) in the TCGA-PAAD cohort. (B, F, J, N) Composition percentage of the two groups in clinical characteristics such as age (B), gender (F), stage (J), and grade (N) in the PACA-AU-Seq cohort. (C, G, K, O) Composition percentage of the two subtypes in clinical characteristics such as age (C), gender (G), stage (K), and grade (O) in the Meta-Cohort cohort. (D, H, L) Composition percentage of the two groups in clinical characteristics such as age (D), gender (H), and stage (L) in the PACA-CA-Seq cohort. (P) Composition percentage of the two groups on grade in the E-MTAB-6134 cohort.
+
 In addition, given the excellent predictive power of AIDPS in PACA, we additionally tested its performance in several other common digestive system tumors. As shown in Figure 5E–H, the Kaplan–Meier survival curves exhibited significantly dismal OS for patients in the low AIDPS group in four tumors, including LIHC (p=0.016), STAD (p=0.037), COAD (p=0.032), and READ (p=0.026). These results supported our hypothesis, suggesting that AIDPS constructed in PACA, as a biomarker, has broad prospects for generalization to other tumors.
 
-## The underlying biological mechanisms of AIDPS
+### The underlying biological mechanisms of AIDPS
 
 Gene set enrichment analysis (GSEA) was applied to elucidate the potential functional pathways of AIDPS. As illustrated in Figure 5I and J, the high AIDPS group was remarkably enriched for digestive and metabolism-related pathways, such as insulin secretion and regulation, peptide hormone secretion and regulation, fat digestion and absorption, pancreatic secretion, maturity onset diabetes of the young, and type Ⅱ diabetes mellitus. While the low AIDPS group was predominantly correlated with the regulation of T cell proliferation, IL-17 signaling pathway, and other immune-related pathways, as well as cell cycle, nuclear chromosome segregation, homologous recombination, and other proliferation-related biological processes, which partly explained its more advanced grades and worse prognosis (Figure 5K and L).
 
-## Genome alteration landscape of AIDPS
+### Genome alteration landscape of AIDPS
 
 To investigate genomic heterogeneity between the high and low AIDPS groups, we performed a comprehensive analysis of mutations and copy number alteration (CNA, Figure 6A). As shown in Figure 6C, the low AIDPS group possessed observably higher tumor mutation burden (TMB). Combining the 10 oncogenic signaling pathways in TCGA (Sanchez-Vega et al., 2018), we found that the classical tumor suppressor genes TP53, CDKN2A, and oncogene KRAS were more frequently mutated in the low AIDPS group than high AIDPS group, whereas the opposite was true for SMAD4, TTN, and RNF43 (Figure 6A and B). Next, based on the popular mutational signatures in PACA, we discovered that mutational signature 3 (BRCA1/2 mutations-related) was enriched in the high AIDPS group, while mutational signature 1 (age-related) was more dominant in low AIDPS group.
 
@@ -93,15 +127,31 @@ To investigate genomic heterogeneity between the high and low AIDPS groups, we p
 
 In addition, we further explored the CNA landscape of the two groups. Compared to the high AIDPS group, the low AIDPS group owned evidently higher amplification or deletion in the focal and chromosome arm levels, such as the amplification of 8q24.21, 19q13.2, and 8p11.22 as well as deletion of 9p21.3, 18q21.2, 6p22.2, and 22q13.31 (Figure 6A and D). This result was again corroborated in gene level by the obvious amplification of the oncogene MYC within 8q24.21, and the distinct deletion of the tumor suppressor genes CDKN2A, CDKN2B, and SMAD4 within 9p21.3 and 18q21.2 (Figure 6A). Overall, oncogenes amplification and tumor suppressor genes deletion in the low AIDPS group might contribute to their poor prognosis.
 
-## Methylation-driven events of AIDPS
+### Methylation-driven events of AIDPS
 
 Referring to our previous process (Liu et al., 2021b; Liu et al., 2021c), we screened four methylation driver genes (MDGs) whose methylation levels were significantly inversely related to matched gene expression levels in PACA. Compared to the low AIDPS group, the high AIDPS group possessed higher MAP3K8 and PCDH7 methylation levels as well as significantly lower mRNA expression levels, while the opposite was true for PCDHB1 and SPAG6 (Figure 6E and F). Furthermore, the Kaplan–Meier analysis showed that higher methylation levels of MAP3K8 and PCDH7 and lower methylation level of SPAG6 brought significantly prolonged OS for the high AIDPS group (all p<0.05, Figure 6G, H and J). PCDHB1 also exhibited a similar trend with SPAG6, although statistical significance was not reached (p=0.07, Figure 6I).
 
-## Immune landscape and molecular expression of AIDPS
+### Immune landscape and molecular expression of AIDPS
 
 The above GSEA revealed that several immune-related pathways were highly enriched in the low AIDPS group, and we consequently investigated the immune landscape and immune checkpoint molecules (ICMs) expression between the two groups. According to single-sample gene set enrichment analysis (ssGSEA), we found that the low AIDPS group exhibited a relatively higher infiltration abundance of immune cell types, including activated CD4+ T cells, CD56dim natural killer cells, central memory CD8+ T cells, gamma delta T cells, and type 2T helper cells (all p<0.05, Figure 7A and B). In addition, among the 27 ICMs we included, the low AIDPS group had dramatically increased relative expression level, such as CD274, CD276, PDCD1LG2, CD40, CD70, TNFRSF18, TNFRSF4, TNFRSF9, and NT5E (Figure 7C). Together, these results consistently indicated that PACA patients with low AIDPS were more likely to respond to immunotherapy.
 
-## Prognostic value and biological relevance of nine AIDPS genes
+![Figure 7.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig7-v1.jpg)
+
+**Figure 7.:** (A) The heatmap of 28 immune cell types in the high and low AIDPS groups. (B) Boxplot of relative infiltrate abundance of 28 immune cell types in patients with high and low AIDPS groups. (C) Boxplot of relative expression levels at 27 immune checkpoints profiles between the high and low AIDPS patients. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–J) Univariate Cox regression analysis of overall survival (OS), disease-free survival (DFS), relapse-free survival (RFS), disease-specific survival (DSS), and progression-free survival (PFS) for AIDPS (A), SELENBP1 (B), PLCB4 (C), DCBLD2 (D), PRR11 (E), UNC13D (F), EREG (G), ADM (H), CDCA4 (I), and TGM2 (J) in the training cohort, nine testing cohorts, and three external validation cohorts. .
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A–C) The correlation between AIDPS and its nine genes at expression level in the whole (A), high AIDPS (B) and low AIDPS (C) TCGA-PAAD cohort. (D–F) The correlation of AIDPS and its nine genes with 27 immune checkpoint molecules in the whole (D), high AIDPS (E), and low AIDPS (F) TCGA-PAAD cohort. (G–I) The correlation of AIDPS and its nine genes with 28 immune cell types in the whole (G), high AIDPS (H), and low AIDPS (I) TCGA-PAAD cohort.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/80150/elife-80150-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** From top to bottom panels, the AIDPS and expression of nine AIDPS genes SELENBP1, PLCB4, DCBLD2, PRR11, UNC13D, EREG, ADM, CDCA4, and TGM2 for each sample; top 15 mutated genes and broad-level copy number alterations (>20%), and selected genes located within chromosomes 8q24.21, 9p21.3, and 18q21.2 are shown in the high and low AIDPS TCGA-PAAD cohort. The proportion of the high and low AIDPS groups in each alteration is presented in the right bar charts.
+
+### Prognostic value and biological relevance of nine AIDPS genes
 
 The currently known biological functions of these nine AIDPS genes are summarized in Appendix 1. Based on large multicenter survival data from the training cohort, nine testing cohorts, and three external validation cohorts, we performed an integrated univariate Cox regression analysis of survival variables using AIDPS and its nine genes as continuous variables. As shown in Figure 7—figure supplement 1A, AIDPS was an independent protective factor in all 13 cohorts (consistent with Figure 3—figure supplement 1K, only 28 samples in the PACA-AU-Seq with RFS information, and although exhibited a corresponding trend, it did not reach statistical significance). Correspondingly, because the 32 CPGs used to construct AIDPS with consistent prognostic value in at least 8/10 cohorts, nine AIDPS genes had relatively stable performance in the training and nine testing cohorts (Figure 7—figure supplement 1B–J). However, in the three external validation cohorts, the poor performance of these nine AIDPS genes was hardly satisfactory. Furthermore, based on the expression files of these nine AIDPS genes in the PACA-AU-Array training cohort, we constructed 18 models via 10 common machine-learning algorithms (α values for elastic networks from 0.1 to 0.9). As expected, among all 18 models, the model built by survival-SVM, namely, our nine-gene AIDPS, achieved a maximum mean C-index of 0.666 in the remaining 12 multicenter cohorts (Figure 4—figure supplement 1D). That is, for the nine genes obtained from 32 CPGs after dimensionality reduction by CoxBoost, these results reconfirmed our previous pipeline results (Figure 2A), and the AIDPS constructed by survival-SVM was the best choice. Overall, our AIDPS brings significant performance improvements compared to the nine AIDPS genes alone.
 
@@ -109,7 +159,7 @@ To describe the biological relevance between AIDPS and its nine genes, we perfor
 
 In terms of genomic alteration, we also observed that SELENBP1 and PLCB4, which were positively correlated with AIDPS, were significantly lower in the low AIDPS group with superior mutation and CNA frequency, suggesting that they were significantly negatively correlated with TMB and CNA burden (Figure 7—figure supplement 3). Correspondingly, DCBLD2, PRR11, UNC13D, EREG, ADM, CDCA4, and TGM2, which were negatively correlated with AIDPS, were remarkably increased in the low AIDPS group, hinting they were significantly positively correlated with TMB and CNA burden (e.g., the low AIDPS group possessed higher TP53 mutation and 8q24.21 amplification, as well as higher DCBLD2 expression, Figure 7—figure supplement 3).
 
-## Predictive value of AIDPS for immunotherapy
+### Predictive value of AIDPS for immunotherapy
 
 Given that patients in the low AIDPS group possessed higher genomic alteration frequency and TMB, combined with their relatively activated TME and increased ICMs expression, we speculated that PACA patients with low AIDPS were more sensitive to immunotherapy. Based on the Tumour Immune Dysfunction and Exclusion (TIDE) web tool, the low AIDPS group resulted in significantly lower TIDE scores and higher immunotherapy response rates (Figure 8A and B). The results of the Subclass Mapping (Submap) also suggested that expression patterns of patients with low AIDPS was more similar to those of melanoma patients who responded to ICIs (Figure 8C). Overall, these results demonstrated that the low AIDPS group was more likely to benefit from immunotherapy.
 
@@ -117,7 +167,7 @@ Given that patients in the low AIDPS group possessed higher genomic alteration f
 
 **Figure 8.:** (A) Boxplot of Tumour Immune Dysfunction and Exclusion (TIDE) score between the high and low artificial intelligence-derived prognostic signature (AIDPS) groups. (B) Percentage of immunotherapy responses at high and low AIDPS groups. (C) Submap analysis of the two groups and 47 pretreated patients with comprehensive immunotherapy annotations. For Submap analysis, a smaller p-value implied a more similarity of paired expression profiles. (D) Barplot of ouabain and panobinostat CMap scores in patients with high AIDPS. (E) Schematic outlining the strategy to develop potential therapeutic agents with higher drug sensitivity in the high AIDPS group. (F) Comparison of estimated gemcitabine’s sensitivity between high and low PAK1 expression groups. (G, H) The results of Spearman’s correlation analysis of Cancer Therapeutics Response Portal (CTRP)-derived compounds (G) and profiling relative inhibition simultaneously in mixtures (PRISM)-derived compounds (H). (I, J) The results of differential drug response analysis of CTRP-derived compounds (I) and PRISM-derived compounds (J), the lower values on the y-axis of boxplots imply greater drug sensitivity. CMap, Connectivity Map *p<0.05, **p<0.01, ***p<0.001.
 
-## Searching for potential therapeutic agents for the high AIDPS group
+### Searching for potential therapeutic agents for the high AIDPS group
 
 As illustrated in Figure 8E, we developed potential agents for PACA patients with high AIDPS using sensitivity data from Cancer Therapeutics Response Portal (CTRP, includes 481 compounds over 835 cancer cell lines [CCLs]) and profiling relative inhibition simultaneously in mixtures (PRISM) (includes 1448 compounds over 482 CCLs) datasets (Yang et al., 2021). To ensure the reliability of our protocol, gemcitabine, as a first-line treatment for PACA, was employed to investigate whether the estimated sensitivity and clinical practice were concordant. A laboratory study found that elevated PAK1 activity was required for gemcitabine resistance in PACA, and that PAK1 inhibition enhanced the efficacy of gemcitabine. Consistent with this study, our results revealed that patients with low PAK1 expression possessed distinctly lower estimated AUC values, suggesting greater sensitivity to gemcitabine (Figure 8F). Afterward, we applied this formula to identify potentially sensitive agents for the high AIDPS group, and finally generated four CTRP-derived agents (brefeldin A, oligomycin A, ouabain, and panobinostat) and nine PRISM-derived agents (aspirin, BAY-87–2243, EVP4593, GSK2656157, I-BET151, LY303511, OTX015, oxaliplatin, and XL388). The estimated AUC values of these agents were not only statistically negatively correlated with AIDPS scores, but also significantly lower in the high AIDPS group (Figure 8G–J).
 
@@ -149,60 +199,60 @@ In conclusion, based on 32 CPGs from training cohort, nine testing cohorts, and 
 
 ## Materials and methods
 
-## Data acquisition and preprocessing
+### Data acquisition and preprocessing
 
 We collected datasets from The Cancer Genome Atlas (TCGA, http://portal.gdc.cancer.gov/), International Cancer Genome Consortium (ICGC, http://dcc.icgc.org/), ArrayExpress (https://www.ebi.ac.uk/arrayexpress/), and Gene Expression Omnibus (GEO, https://www.ncbi.nlm.nih.gov/geo/) public databases according to the following procedure: (1) more than 40 samples with survival information; (2) at least 15,000 clearly annotated genes; and (3) patients with primary tumors and no other treatments were given before resection. Finally, we enrolled 1570 samples from 13 cohorts, TCGA-PAAD (n = 176), ICGC-PACA-AU-Seq (PACA-AU-Seq, n = 81), ICGC-PACA-AU-Array (PACA-AU-Array, n = 267), ICGC-PACA-CA (PACA-CA-Seq, n = 182), E-MTAB-6134 (n = 288), GSE62452 (n = 65), GSE28735 (n = 42), GSE78229 (n = 49), GSE79668 (n = 51), GSE85916 (n = 79), GSE21501 (n = 102), GSE57495 (n = 63), and GSE71729 (n = 125). The FPKM data in the TCGA-PAAD was downloaded from UCSC Xena database (https://xenabrowser.net/datapages/) and further converted into log2 (TPM + 1) format. The RNA-Seq data of ICGC were downloaded from its portal and converted into log2 (TPM + 1) format. The normalized exp-Array data from ICGC, ArrayExpress, and GEO were generated directly from their portal. Detailed clinical and pathological information of these 13 cohorts is presented in Figure 1—source data 1.
 
-## Univariate Cox regression analysis
+### Univariate Cox regression analysis
 
 Based on intersection genes, we performed univariate Cox regression analysis in the training cohort, nine testing cohorts. We selected consensus prognosis genes (CPGs) for the next study according to the following criteria: p<0.05 and all hazard ratios (HRs) consistently >1 or <1 in more than 8/10 cohorts.
 
-## Artificial intelligence-derived prognostic signature
+### Artificial intelligence-derived prognostic signature
 
 To construct a consensus prognosis model for PACA, we performed our previous workflow (Liu et al., 2022a; Liu et al., 2022b). (1) First, we integrated 10 classical algorithms: random forest (RSF), least absolute shrinkage and selection operator (LASSO), gradient boosting machine (GBM), survival support vector machine (Survival-SVM), supervised principal components (SuperPC), ridge regression, partial least squares regression for Cox (plsRcox), CoxBoost, Stepwise Cox, and elastic network (Enet). Among them, RSF, LASSO, CoxBoost, and Stepwise Cox have the function of dimensionality reduction and variable screening, and we combined them with other algorithms into 76 machine-learning algorithm combinations. (2) Next, we utilized the PACA-AU-Array with larger sample size in ICGC as the training cohort and used these 76 combinations to construct signatures separately in the expression files with 32 CPGs. (3) Finally, in the nine testing cohorts (TCGA-PAAD, PACA-AU-Seq, PACA-CA-Seq, E-MTAB-6134, GSE62452, GSE28735, GSE78229, GSE79668, GSE85916), we calculated the AIDPS score for each cohort using the signature obtained in the training cohort. Based on the average C-index of the nine testing cohorts, we finally picked the best consensus prognosis model for PACA.
 
-## Validating the prognostic value of AIDPS in 14 datasets
+### Validating the prognostic value of AIDPS in 14 datasets
 
 Patients in the training cohort, nine testing cohorts, Meta-Cohort (obtained by removing batch effects and repetitions from training cohort and nine testing cohorts), and three external validation cohorts (GSE21501, GSE57495, and GSE71729) were categorized into high and low AIDPS groups according to the median value. The prognostic value of AIDPS was evaluated by Kaplan–Meier curve and multivariate Cox regression analysis. The calibration curve and receiver-operator characteristic (ROC) curve were plotted to assess the predictive accuracy of AIDPS.
 
-## Collection and calculation of PACA published signatures
+### Collection and calculation of PACA published signatures
 
 With the attention paid to the stratified management and precise treatment of PACA, many prognostic signatures have been constructed, including m6A-related lncRNA signature, metabolic reprogramming-related signature, and SMAD4-driven immune signature, etc. (Wang et al., 2022; Tan et al., 2020; Yuan et al., 2021). To compare the predictive performance of AIDPS and these published signatures, we systematically searched PubMed for published prognostic model articles up to January 1, 2022. Afterward, we calculated their risk scores in the 14 cohorts based on the genes and coefficients provided by the article, and comprehensively evaluated their prognostic performance in PACA by univariate Cox analysis and C-index.
 
-## Evaluating clinical significance of AIDPS
+### Evaluating clinical significance of AIDPS
 
 We compared the differences in several pivotal clinical traits such as age, gender, TNM stage, and grade between the high and low AIDPS groups. In addition, to explore the application value of AIDPS in other prevalent gastrointestinal tumors, we acquired the mRNA expression and survival data of LIHC, STAD, COAD, and READ in the same way as TCGA-PAAD, and further performed Kaplan–Meier analysis.
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 GSEA was applied to identify specific functional pathways in the high and low AIDPS groups. After differential analysis using the DESeq2 package, all genes were ranked in descending order according to log2FoldChange (log2FC). Next, we identified GO and KEGG enriched pathways by the clusterProfiler package and further selected the top five pathways in normalized enrichment score (NES) for visualization.
 
-## Genomic alteration landscape
+### Genomic alteration landscape
 
 To investigate the genomic alteration landscape in the high and low AIDPS groups, we performed a comprehensive analysis of mutation and CNA data in the TCGA-PAAD. (1) After obtaining the raw mutation file, we calculated the TMB of each sample and visualized the top 15 genes through the maftools package. (2) As described in Lu et al., 2021, we applied the deconstructSigs package to extract the mutational signatures for each PACA patients, and selected mutational signature 1 (age-related), mutational signature 2 (APOBEC activity-related), mutational signature 3 (BRCA1/2 mutations-related), and mutational signature 6 (dMMR-related) with higher frequency of occurrence in PACA for visualization (Alexandrov et al., 2013). (3) Recurrent amplified or deleted genome regions were decoded and localized through GISTIC 2.0 module in Firebrowse tool (http://firebrowse.org/). We finally selected regions with broad-level CNA frequency >20% and several genes located within chromosomes 8q24.21, 9p21.3, and 18q21.2 for display.
 
-## Estimation of methylation-driven events
+### Estimation of methylation-driven events
 
 Following the pipeline developed in previous studies (Liu et al., 2021b; Liu et al., 2021a), we identified MDGs for TCGA-PAAD. Furthermore, we compared the differences in the methylation levels and mRNA expression levels of MDGs in the two groups, and further evaluated the effect of MDGs methylation levels on the prognosis by Kaplan–Meier survival curve.
 
-## Immune molecule expression and tumor microenvironment evaluation
+### Immune molecule expression and tumor microenvironment evaluation
 
 The ssGSEA was utilized to comprehensively infer the infiltration abundance of immune and stromal component in the high and low AIDPS groups (Wang et al., 2022; Liu et al., 2021c). In addition, we recruited 27 ICMs from our previous study, including B7-CD28 family, TNF superfamily, etc., and measured their expression levels between the two groups (Wang et al., 2022).
 
-## Response to immunotherapy
+### Response to immunotherapy
 
 TIDE web tool was used to predict responsiveness to ICIs between the high and low AIDPS groups, and lower TIDE scores suggested better immunotherapeutic efficacy (Jiang et al., 2018). Additionally, we applied the Submap to calculate the expression similarity between patients in the high and low AIDPS groups and patients who responded/non-responded to ICIs, and then speculated immunotherapy efficacy (Hoshida et al., 2007).
 
-## Development and validation of potential therapeutic agents
+### Development and validation of potential therapeutic agents
 
 As shown in Figure 8D, we developed potential therapeutic agents for the high AIDPS group according to the protocol of Yang et al., 2021. (1) First, we acquired drug sensitivity data for CCLs from the CTRP as well as PRISM repurposing datasets, and expression data of CCLs from the Cancer Cell Line Encyclopedia (CCLE) database. (2) The CTRP and PRISM datasets own AUC values, and lower AUC values suggest increased sensitivity to this compound. Moreover, as a first-line chemotherapeutic drug for PACA, we further selected gemcitabine to verify the scientific and rigor of this approach. (3) Based on Wilcoxon rank-sum test, we performed a differential analysis of drug response between the high AIDPS (first 10%) and low AIDPS (last 10%) groups, and the threshold log2FC > 0.2 was set to identify compounds with lower AUC values in the high AIDPS group. (4) Next, we applied Spearman correlation to further screen compounds with AUC values that had negative correlation coefficients with AIDPS (setting threshold R<−0.4). (5) Finally, we identified potential drugs for patients in the high AIDPS group by the intersection of the compounds obtained from (3) and (4).
 
 The CMap (https://clue.io/) is a publicly available web tool for discovering candidate compounds that may target AIDPS-related pathways based on gene expression signature (Subramanian et al., 2017; Malta et al., 2018). Based on differential expression analysis, we identified potential compounds in PACA using CMap to further validate the results obtained from the CTRP and PRISM databases.
 
-## Statistical analysis
+### Statistical analysis
 
 All data cleaning, analysis, and result visualization for this research were performed in R 4.1.2. Continuous variables were analyzed by Wilcoxon rank-sum test or Student’s t-test. Categorical variables were statistically compared using Chi-square test or Fisher’s exact test. The survival package was used for univariate, multivariate Cox as well as Kaplan–Meier survival analysis. The timeROC package and rms package were utilized to plot ROC curve and calibration curve, respectively. The MethylMix package was applied to identify MDGs. p-Value (two-sided) < 0.05 was considered statistically significant.
 
-## Data availability
+### Data availability
 
 All data generated during this study are included in the manuscript and supporting files. The basic script for our AIDPS model is available on the GitHub website (https://github.com/Zaoqu-Liu/AIDPS, copy archived at swh:1:rev:f9d929456fa9f0cd7721cea6a5e2a1412ffae4a7; Liu, 2022); the researchers entered the expression matrix of these nine AIDPS genes and could obtain patient-specific risk scores. Source data files have been provided for Figures 1, 2 and 4.

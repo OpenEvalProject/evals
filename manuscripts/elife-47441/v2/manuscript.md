@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.47441.001 Hearing sensation relies on the mechano-electrical transducer (MET) channel of cochlear hair cells, in which transmembrane channel-like 1 (TMC1) and transmembrane channel-like 2 (TMC2) have been proposed to be the pore-forming subunits in mammals. TMCs were also found to regulate biological processes other than MET in invertebrates, ranging from sensations to motor function. However, whether TMCs have a non-MET role remains elusive in mammals. Here, we report that in mouse hair cells, TMC1, but not TMC2, provides a background leak conductance, with properties distinct from those of the MET channels. By cysteine substitutions in TMC1, we characterized four amino acids that are required for the leak conductance. The leak conductance is graded in a frequency-dependent manner along the length of the cochlea and is indispensable for action potential firing. Taken together, our results show that TMC1 confers a background leak conductance in cochlear hair cells, which may be critical for the acquisition of sound-frequency and -intensity.
+Hearing sensation relies on the mechano-electrical transducer (MET) channel of cochlear hair cells, in which transmembrane channel-like 1 (TMC1) and transmembrane channel-like 2 (TMC2) have been proposed to be the pore-forming subunits in mammals. TMCs were also found to regulate biological processes other than MET in invertebrates, ranging from sensations to motor function. However, whether TMCs have a non-MET role remains elusive in mammals. Here, we report that in mouse hair cells, TMC1, but not TMC2, provides a background leak conductance, with properties distinct from those of the MET channels. By cysteine substitutions in TMC1, we characterized four amino acids that are required for the leak conductance. The leak conductance is graded in a frequency-dependent manner along the length of the cochlea and is indispensable for action potential firing. Taken together, our results show that TMC1 confers a background leak conductance in cochlear hair cells, which may be critical for the acquisition of sound-frequency and -intensity.
 
 ## Introduction
 
@@ -39,65 +39,97 @@ In this study, we set out to determine the non-MET functions of TMCs and to tack
 
 ## Results
 
-## TMC1 but not TMC2 mediates a background current in hair cells
+### TMC1 but not TMC2 mediates a background current in hair cells
 
 During the whole-cell voltage-clamp recording from P6 outer hair cells (OHCs) (Figure 1A) in regular 144 mM Na+-containing external solution (144 Na), we always recorded a ‘leaky’ membrane current (Im, 73 pA on average) (Figure 1B,C). When Na+ was replaced in the external solution by N-methyl-D-glucamine (NMDG+) (144 NMDG), the Im was small (Figure 1B), demonstrating that this background current is significantly carried by an ion channel in the cell membrane. When reperfused with 144 Na solution, the current baseline returned to ‘leaky’ status (Figure 1B). However, the Im was markedly diminished in Tmc1-knockout OHCs (Figure 1B,C). For more accurate quantification, the amplitude of the background current (IBG) was calculated by subtracting the Im in 144 NMDG solution (INMDG) from that in 144 Na solution (INa) (Figure 1B). On average, the INMDG (7 pA) in wild-type OHCs was larger than that (4 pA) in Tmc1-knockout OHCs, but both were small (Figure 1D); the IBG in wild-type OHCs was 71 pA, while it was reduced to 18 pA in Tmc1-knockout OHCs (Figure 1E). Furthermore, the voltage dependence of Im and INMDG was analyzed by applying a series of voltage-pulse stimuli to OHCs (Figure 1F–I). The Im-V curves obtained from these measurements verified a reduced Im (Figure 1G) and a more negative reversal potential (Figure 1H) in Tmc1-knockout OHCs. After subtraction (only inward IBG was calculated because NMDG was applied extracellularly), it was clear that the IBG altered almost linearly with holding potentials and was dramatically reduced in Tmc1-knockout OHCs (Figure 1I).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig1-v2.jpg)
 
-**Figure 1.:** (A) Diagram of the recording configuration. The P6 outer hair cells (OHCs, mostly P6 apical-middle OHCs if not specified otherwise) in acutely dissociated cochlea were whole-cell voltage-clamped with Cs+ in the recording electrode and perfused with either 144 Na or 144 NMDG external solutions. 144 Na, regular recording solution; 144 NMDG, Na+ substituted with NMDG+. (B) Representative traces of membrane current (Im) in OHCs from wild-type and Tmc1-knockout (Tmc1 KO) mice. The light gray and pink traces were recorded traces that were low-pass filtered to less noisy traces shown in black and red (similar filtering applied in the following figures). IBG (background current) was calculated by subtraction of Im in 144 Na (INa) and Im in 144 NMDG (INMDG) to exclude technical leak. (C–E) Quantification of the INa (C), INMDG (D), and IBG (E) measured from recordings similar to (B). Wild-type INa, –73 ± 6 pA, Tmc1-knockout INa, –21 ± 3 pA; wild-type INMDG, –7 ± 1 pA, Tmc1-knockout INMDG, –4 ± 1 pA; wild-type IBG, –71 ± 5 pA, Tmc1-knockout IBG, –18 ± 2 pA (F). Example of Im in wild-type (black and gray) and Tmc1-knockout (red and pink) OHCs undergoing a series of membrane depolarization, with tissues bathed in 144 Na followed by 144 NMDG. (G–I) Composite data showing I-V curve (G), reversal potential (H), and IBG (I) measured and calculated from recordings similar to (F). (G) I-V curve from recordings in 144 Na. (H) Mean reversal potentials calculated from I-V curve recorded in OHCs in 144 Na. (I) IBG-V curve after subtracting INMDG. Only inward current was measured because NMDG was only applied extracellularly. The external solution contained 1.3 mM Ca2+. The holding potential was −70 mV. Data are presented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, Student’s t-test.10.7554/eLife.47441.003Figure 1—source data 1.
+**Figure 1.:** (A) Diagram of the recording configuration. The P6 outer hair cells (OHCs, mostly P6 apical-middle OHCs if not specified otherwise) in acutely dissociated cochlea were whole-cell voltage-clamped with Cs+ in the recording electrode and perfused with either 144 Na or 144 NMDG external solutions. 144 Na, regular recording solution; 144 NMDG, Na+ substituted with NMDG+. (B) Representative traces of membrane current (Im) in OHCs from wild-type and Tmc1-knockout (Tmc1 KO) mice. The light gray and pink traces were recorded traces that were low-pass filtered to less noisy traces shown in black and red (similar filtering applied in the following figures). IBG (background current) was calculated by subtraction of Im in 144 Na (INa) and Im in 144 NMDG (INMDG) to exclude technical leak. (C–E) Quantification of the INa (C), INMDG (D), and IBG (E) measured from recordings similar to (B). Wild-type INa, –73 ± 6 pA, Tmc1-knockout INa, –21 ± 3 pA; wild-type INMDG, –7 ± 1 pA, Tmc1-knockout INMDG, –4 ± 1 pA; wild-type IBG, –71 ± 5 pA, Tmc1-knockout IBG, –18 ± 2 pA (F). Example of Im in wild-type (black and gray) and Tmc1-knockout (red and pink) OHCs undergoing a series of membrane depolarization, with tissues bathed in 144 Na followed by 144 NMDG. (G–I) Composite data showing I-V curve (G), reversal potential (H), and IBG (I) measured and calculated from recordings similar to (F). (G) I-V curve from recordings in 144 Na. (H) Mean reversal potentials calculated from I-V curve recorded in OHCs in 144 Na. (I) IBG-V curve after subtracting INMDG. Only inward current was measured because NMDG was only applied extracellularly. The external solution contained 1.3 mM Ca2+. The holding potential was −70 mV. Data are presented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, Student’s t-test.
 
 We next considered whether overexpression of TMC1 would enhance the background current in hair cells. Three constructs were used for these experiments: enhanced green fluorescent protein (EGFP) as control, wild-type TMC1 (TMC1_WT), and TMC1 deafness (TMC1_dn) that carries a deletion mutation linked to deafness. Using cochlear injectoporation (Xiong et al., 2014), these constructs were delivered into wild-type OHCs on postnatal day 3 (P3). The cells were cultured for 1 day in vitro (1DIV) and then analyzed by immunostaining (Figure 2A) and voltage-clamp recording (Figure 2B). As revealed by HA antibody, exogenously expressed TMC1 was largely distributed in the soma of OHCs (Figure 2A), consistent with previous observations (Kawashima et al., 2011). Overexpression of the EGFP and Tmc1_dn did not affect the IBG (18 pA and 16 pA) (Figure 2C,D), while the IBG in OHCs overexpressing Tmc1_WT was increased nearly 2.5-fold (43 pA) (Figure 2C,D). These data indicated that TMC1 functionally contributes a background leak conductance in hair cells.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig2-v2.jpg)
+
+**Figure 2.:** (A) Exogenous expression of TMC1 in wild-type OHCs from organotypic P3 cochlear tissue cultured for 1 day in vitro (P3 + 1DIV). EGFP was co-expressed as an indicator. The OHCs were stained to show spatial distribution of TMC1 (recognized by HA antibody, red), EGFP (by GFP antibody, green), and actin-enriched stereocilia (by Phalloidin, magenta), with two OHCs from the white dashed frame shown in detail. (B) Diagram of the recording configuration. The OHCs expressed engineered TMC1 with EGFP and whole-cell voltage clamped with Cs+ in the recording electrode and Na+ extracellularly. (C) Examples of Im of wild-type OHCs at P3 + 1DIV, expressing control (EGFP), deafness TMC1 (TMC1_dn), or wild-type TMC1 (TMC1_WT). (D) Quantification of IBG from wild-type OHCs expressing EGFP, TMC1_dn, and TMC1_WT under conditions similar to those in (C). IBG values: EGFP, –17 ± 3 pA; TMC1_dn, –16 ± 3 pA; TMC1_WT, –43 ± 7 pA. (E) Representative traces of IBG in P6 Tmc2- and Lhfpl5-knockout OHCs from acutely dissociated cochleae. (F) Quantification of IBG measured from recordings similar to (E) from Tmc2- and Lhfpl5-knockout mice at assigned ages. IBG values: P1 wild-type, –1 ± 0 pA, P1 Tmc2-knockout, –0 ± 0 pA; P3 wild-type, –19 ± 4 pA, P3 Tmc2-knockout, –26 ± 4 pA; P6 wild-type, –66 ± 5 pA, P6 Tmc2-knockout, –73 ± 7 pA, P6 Lhfpl5-knockout, –14 ± 2 pA. The external solution contained 1.3 mM Ca2+. The holding potential was −70 mV. Data are presented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, one-way ANOVA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Exogenous expression of TMC2 in P3 + 1DIV OHCs. The OHCs were stained to show spatial pattern of TMC2 (by HA antibody, red) and EGFP (by GFP antibody, green). The hair bundle was stained by Phalloidin (magenta). Two transfected OHCs are shown enlarged from the white dashed frame.
+
 It has been suggested that TMC2 is closely coupled with TMC1 in MET function. Tmc2 expression in the cochlea is highest between P1 and P3, then falls after P4 (Kawashima et al., 2011). Exogenously expressed TMC2 was visibly located in hair bundles of OHCs, as shown by HA tag (Figure 2—figure supplement 1). We further examined the extent to which TMC2 could contribute a background current. Our data showed that the IBG was not altered in Tmc2-knockout OHCs at P1, P3, and P6 compared to controls (Figure 2E,F). Consistently, overexpression of TMC2 did not noticeably change the Im baseline (data not shown). In parallel, we analyzed the IBG in Lhfpl5-knockout OHCs. Interestingly, similar to Tmc1-knockout, there was no evident IBG in Lhfpl5-knockout OHCs (Figure 2E,F), consistent with the previous findings that LHFPL5 and TMC1 function in a common pathway (Beurg et al., 2015b; Xiong et al., 2012).
 
-## TMC1-mediated leak current is not carried by the resting open MET channel
+### TMC1-mediated leak current is not carried by the resting open MET channel
 
 Because of existing tension in the hair bundle, the open probability of MET channels at rest in hair cells is significant (Assad and Corey, 1992; Corey and Hudspeth, 1983; Johnson et al., 2012). Thus, the IBG may come from the resting MET current. To determine the relationship between IBG and resting MET current, we analyzed the leak current during mechanical closure of hair bundles or in the presence of the MET channel blocker dihydrostreptomycin (DHS) (Figure 3A). As conductance through the MET channel is enhanced when the external Ca2+ concentration is low, we carried out the experiments in 0.3 mM Ca2+ to increase the readout of the leak current. A sinusoidal fluid jet deflected the hair bundle back and forth to open and close the MET channels (Figure 3A, inset). The Im was 98 pA at rest (Figure 3A,B), while the Im was 45 pA at fluid-jet-closed status (Figure 3B, #1). When OHC was perfused with solution containing 144 mM Na and 100 μM DHS (144 Na + 0.1 DHS), the current (IDHS) was 55 pA (Figure 3B, #2 and #3). Moreover, the INMDG was near zero when switching to 144 NMDG solution (Figure 3B, #3), from which ILeak was defined as MET-independent leak current by subtracting IDHS from INMDG. Thus, the ILeak persisted in either mechanical closure or pharmacological blockade of the MET channel (Figure 3C). We further examined the proportion of ILeak in IBG at different Ca2+ concentrations, which became a major part of IBG when [Ca2+]o was 1.3 mM and larger (Figure 3D). In general, the ILeak in 1.3 mM [Ca2+]o was −51 pA in P6 wild-type OHCs and −17 pA in P6 Tmc1-knockout OHCs (Figure 3E), by subtracting currents recorded in 144 NMDG and 144 Na + 0.1 DHS. In the following experiments, we present the ILeak in 1.3 mM [Ca2+]o as most of the measured membrane currents.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative Im trace showing fluid jet (FJ)-induced open and closed status of MET current and DHS-induced alteration of baseline current. The OHCs were bathed in external solution with 0.3 mM Ca2+ instead of 1.3 mM Ca2+. Insets: left, a diagram of fluid jet stimulation on a hair bundle; right, a 40 Hz sinusoidal stimulation protocol was used to induce forward and reverse deflection of the hair bundle. (B) Dashed frames #1, #2, and #3 in (A) are shown as enlarged traces. The baseline current was similar when the MET channels were closed by either FJ (#1) or DHS (IDHS, #2), as highlighted with a red dashed line. As shown in #3, the DHS-sensitive resting MET current (IResting-MET) was calculated by subtraction of INa and IDHS. The baseline current was further closed by NMDG (INMDG). ILeak was defined as the subtraction of IDHS and INMDG. (C) Quantification of subtracted currents under different conditions: background, –113 ± 7 pA; FJ-NMDG (ILeak subtracted from current baseline closed at negative FJ), –72 ± 6 pA; DHS-NMDG (ILeak subtracted from that closed by 100 μM DHS), –65 ± 6 pA. (D) Quantification of ratio of ILeak to IBG (ILeak/IBG) under different [Ca2+]o conditions: 0.1 mM, 0.29 ± 0.04; 0.3 mM, 0.45 ± 0.05; 0.5 mM, 0.47 ± 0.07; 1.3 mM, 1.00 ± 0.03; 3.0 mM, 0.96 ± 0.03. (E) Quantification of the ILeak of OHCs measured in 1.3 [Ca2+]o. Wild-type ILeak, –51 ± 3 pA, Tmc1-knockout ILeak, –17 ± 2 pA. The external solution contained variable Ca2+ concentration as indicated. The holding potential was −70 mV. Data are represented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, (C) ANOVA; (E) Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A photo showing the OHC in recording with hair bundle removed. The circles with white dashed line indicate hair-bundle removed OHCs. (B) Quantification of ILeak recorded in wild-type OHCs with or without hair-bundle removal. The holding potential was −70 mV. Data are represented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, Student’s t-test.
+
 We queried where the ILeak comes from, hair bundle or soma. This question was examined by whole-cell voltage-clamp recordings in wild-type OHCs after removing the hair bundles (Figure 3—figure supplement 1). Compared to the ILeak recorded from hair-bundle preserved OHCs (48 pA), the ILeak from hair-bundle removed OHCs was much smaller (10 pA). This result suggests that the leak channels mostly function in hair bundles.
 
-## Amino-acid substitutions in TMC1 alter the TMC1-mediated leak current
+### Amino-acid substitutions in TMC1 alter the TMC1-mediated leak current
 
 We next addressed whether essential amino acids of TMC1 affect the leak channel. It has been reported that six amino acids in TMC1 are critical for MET channel function by affecting the pore properties of the channel (Pan et al., 2018) (Figure 4A). We replaced these six amino acids with cysteine, as reported by Pan et al. (2018), and expressed the mutations in Tmc1-knockout OHCs by injectoporation to assess the effects on the leak current (Figure 4B). As controls, we used TMC1_WT and TMC1_dn, and found that the ILeak in Tmc1-knockout OHCs at P3+1DIV was restored by TMC1_WT but not by TMC1_dn (Figure 4C,D). Among the cysteine-substituted TMC1 constructs, five out of the six amino acids failed to restore the leak current. Especially the G411C, N447C, D528C, and D569C mutations nearly abolished the ILeak, while T532C partially restored it. Surprisingly, M412C, which has been linked to deafness in Beethoven mice (Vreugde et al., 2002), behaved like wild-type TMC1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig4-v2.jpg)
+
+**Figure 4.:** (A) TMC1 with 10 putative transmembrane domains. The six substituted amino acids are highlighted as colored balls in the predicted positions, and the deafness (dn) truncation is at the third extracellular loop between TM5 and TM6. (B) Diagram of the analysis of leak current in cultured Tmc1-knockout OHCs (P3 + 1 DIV) expressing modified TMC1 (TMC1*). (C) Representative traces showing the rescue of leak conductance in OHCs by control full-length TMC1 (TMC1_WT), deafness TMC1 (TMC1_dn), TMC1-G411C (G411C), TMC1-M412C (M412C), TMC1-N447C (N447C), TMC1-D528C (D528C), TMC1-T532C (T532C), and TMC1-D569C (D569C). Perfusion contents are indicated below. An 800 nm step deflection was applied to the hair bundle every 10 s by a glass probe. The glass probe induced MET currents are marked ‘+', accompanying unwanted MET currents and electrical artefacts induced by switching the perfusion system (#). Note that the MET current was truncated to better show the leak current. (D) Quantification of rescue by mTMC1 constructs. ILeak values: TMC1_WT, –49 ± 5 pA, G411C, –23 ± 3 pA; M412C, –40 ± 6 pA, N447C, –15 ± 1 pA; D528C, –22 ± 4 pA, T532C, –32 ± 4 pA, D569C, –23 ± 3 pA, TMC1_dn, –18 ± 3 pA. The rescue indexes of FL and dn were used to evaluate significant difference. Cell numbers are shown on each bar. The external solution contained 1.3 mM Ca2+. The holding potential was −70 mV. Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, ANOVA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Plots of amplitude of the background current recorded from Tmc1-knockout OHCs expressing engineered TMCs as indicated, before and after MTSET treatment. (B) Representative trace of Im recording in a P1 + 3 DIV Tmc1;Tmc2 double-knockout OHC expressing TMC1-M412C. A 10 Hz train of 800 nm step deflection was applied to the hair bundle by a glass probe. (C) Summary of absolute values and normalized ratios of ILeak and IMET. The ILeak values were measured from data in Figure 4. The restored MET values of all TMC1 constructs were measured from Pan et al. (2018), excepting that of dn, which was collected in vestibular hair cells from Kawashima et al. (2011).
+
 Treatment with MTSET (2-(trimethylammonium)ethyl methanethiosulfonate, bromide) did not, however, change the current baseline in OHCs when expressing any of the six cysteine-substituted TMC1 constructs (Figure 4—figure supplement 1A). This was not because of the insensitivity of cysteine, or a weak MTSET effect, because MTSET treatment did change the MET current amplitude in Tmc1;Tmc2 double-knockout OHCs expressing M412C (Figure 4—figure supplement 1B) as previously reported (Pan et al., 2018). The cysteine replacement did not show a consistent pattern of modulation of the leak current or the MET current (Figure 4—figure supplement 1C), implying that different molecular mechanisms underlie the two types of current.
 
-## Pharmacological blockade of the TMC1-mediated leak conductance
+### Pharmacological blockade of the TMC1-mediated leak conductance
 
 Next, we set out to evaluate the properties of the leak current by further analyzing its response to pharmacological inhibitors of the MET channel. We first examined the inhibitory effects of the commonly used MET channel blockers DHS, d-tubocurarine (dTC), and amiloride (Figure 5A–D). DHS had no blocking effect on the current baseline at a working concentration (100 μM) that blocks MET channels (Figure 5A,B). However, the background conductance was 50% inhibited at 487 μM DHS from the fit, 30-times the IC50 of the MET channel (Figure 5A,B), and dTC and amiloride also affected the leak current, albeit at higher concentrations than the MET current (Figure 5C,D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig5-v2.jpg)
 
-**Figure 5.:** (A and B) Representative trace (A) and statistical curve (B) of Im inhibition by DHS. A 10 Hz train of 800 nm step deflection was applied to the hair bundle by a glass probe to induce MET currents. IMET and IBG were calculated and plotted against the DHS concentration. As fitted, the IC50 of DHS was 15 μM for the MET channels and 487 μM for the leak conductance. Cell numbers, 7–11. Hill slope: IMET, −1.10; IBG, −0.65. (C and D) Statistical dose curve of Im with graded concentrations of d-tubocurarine (dTC) (C) and amiloride (D). dTC IC50: IMET, 6 μM; IBG, 82 μM. dTC Hill slope: IMET, −0.47; IBG, −2.80. dTC cell numbers, 5–15. Amiloride IC50: IMET, 46 μM; IBG, 365 μM. Amiloride Hill slope: IMET, −1.36; IBG, −1.67. Amiloride cell numbers, 7–16. (E and F) Dosage effect of Gd3+. Example trace (E) and statistical curve (F) of Im in OHCs during perfusion with solutions containing graded concentrations of Gd3+. A train of 800 nm step deflection was applied to the hair bundle by a glass probe to induce MET currents. The MET and leak current amplitudes changed because of the channel sensitivity of Gd3+ and NMDG. IC50: IMET, 66 μM; IBG, 524 μM. Hill slope: IMET, −0.48; IBG, −2.49. Cell numbers, 7–16. (G and H) Dose effect of La3+. Example trace (G) and dosage curve (H) of Im with La3+ treatment. A train of 800 nm step deflection was applied to the hair bundle by a glass probe to induce MET currents. IC50: IMET, 259 μM; IBG, 531 μM. Hill slope: IMET, −1.06; IBG, −5.67. Cell numbers, 7–8. For space reasons, 144 NMDG is shown as 0 Na. The external solution contained 1.3 mM Ca2+. The holding potential was −70 mV. Data are presented as mean ± SEM.10.7554/eLife.47441.016Figure 5—source data 1.
+**Figure 5.:** (A and B) Representative trace (A) and statistical curve (B) of Im inhibition by DHS. A 10 Hz train of 800 nm step deflection was applied to the hair bundle by a glass probe to induce MET currents. IMET and IBG were calculated and plotted against the DHS concentration. As fitted, the IC50 of DHS was 15 μM for the MET channels and 487 μM for the leak conductance. Cell numbers, 7–11. Hill slope: IMET, −1.10; IBG, −0.65. (C and D) Statistical dose curve of Im with graded concentrations of d-tubocurarine (dTC) (C) and amiloride (D). dTC IC50: IMET, 6 μM; IBG, 82 μM. dTC Hill slope: IMET, −0.47; IBG, −2.80. dTC cell numbers, 5–15. Amiloride IC50: IMET, 46 μM; IBG, 365 μM. Amiloride Hill slope: IMET, −1.36; IBG, −1.67. Amiloride cell numbers, 7–16. (E and F) Dosage effect of Gd3+. Example trace (E) and statistical curve (F) of Im in OHCs during perfusion with solutions containing graded concentrations of Gd3+. A train of 800 nm step deflection was applied to the hair bundle by a glass probe to induce MET currents. The MET and leak current amplitudes changed because of the channel sensitivity of Gd3+ and NMDG. IC50: IMET, 66 μM; IBG, 524 μM. Hill slope: IMET, −0.48; IBG, −2.49. Cell numbers, 7–16. (G and H) Dose effect of La3+. Example trace (G) and dosage curve (H) of Im with La3+ treatment. A train of 800 nm step deflection was applied to the hair bundle by a glass probe to induce MET currents. IC50: IMET, 259 μM; IBG, 531 μM. Hill slope: IMET, −1.06; IBG, −5.67. Cell numbers, 7–8. For space reasons, 144 NMDG is shown as 0 Na. The external solution contained 1.3 mM Ca2+. The holding potential was −70 mV. Data are presented as mean ± SEM.
 
 It has been reported that trivalent cations such as Gd3+ and La3+, block MET channels (Farris et al., 2004; Kimitsuki et al., 1996), so we applied Gd3+ and La3+ at various concentrations and monitored the inhibitory effects on evoked MET current as well as leak current (Figure 5E–H). Surprisingly, the leak current was not affected even when [Gd3+]o reached 80 μM, the IC50 for blocking the MET current (Figure 5E,F). However, the leak current was inhibited by [Gd3+]o with an IC50 of 541 μM (Figure 5E,F). Similarly, [La3+]o inhibited the MET channel with an IC50 of 259 μM and the leak current with an IC50 of 531 μM (Figure 5G,H). It is noteworthy that the IBG included the IResting-MET and the ILeak when the concentration of the blockers was low, but the IBG was mainly composed of the ILeak when the concentration of blockers was high enough (Figure 5).
 
-## Ionic permeability of the TMC1-mediated leak conductance
+### Ionic permeability of the TMC1-mediated leak conductance
 
 To further characterize the leak current in OHCs, we carried out a series of ion-permeation tests using the cations Li+, Cs+, Ba2+, Zn2+, Co2+, Mg2+, and Ca2+ (Figure 6A,B). Most of the cations shared a size of ILeak similar to Na+, except for Cs+ and Ca2+ (Figure 6A,B). The Cs+-conducted ILeak was slightly larger (Figure 6A), while 75 mM Ca2+ robustly blocked the ILeak (Figure 6B). The Ca2+ permeability of the leak channel was further determined from calculation of reversal potentials by a voltage ramp stimulation with Ca2+ and DHS extracellularly and Cs+ intracellularly (Figure 6C). Compared to Na+ and Mg2+ permeability, the Ca2+ likely provided an inhibition function on the leak channel (Figure 6D), which is different with the Ca2+ permeability of the MET channel (around six for PCa/PCs at P5 apical OHCs) (Kim and Fettiplace, 2013). Next, we monitored the background and MET currents in solutions containing different concentrations of Ca2+ and Na+. Results showed that the leak current was highly sensitive to Ca2+; increasing when [Ca2+]o declined, and inversely, decreasing when [Ca2+]o escalated (Figure 6E,F). The MET current was initially reduced following the increase of [Ca2+]o, and reached a plateau after [Ca2+]o was at least >10 mM (Figure 6E,F), by which the concentration was sufficient enough to block the leak current to an extent similar to that observed in Tmc1-knockout OHCs (Figure 6G).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig6-v2.jpg)
 
-**Figure 6.:** 2+ blocks the leak current but not MET current.(A) Monovalent cations Li+ and Cs+ conducted the leak current. In this experiment, 150 mM NaCl was substituted with 150 mM LiCl or 150 mM CsCl in the external solution. (B) Divalent cations 10 mM Ba2+, 75 mM Zn2+, 75 mM Co2+, 150 mM Mg2+, and 75 mM Ca2+, conducted the leak current. The 150 mM NaCl was partially or completely replaced with cations as described in the Materials and methods. (C) Representative Im traces by ramp stimulation for calculation of ionic permeability of the leak channel. The extracellular ion was switched from 150 mM Na+ to 75 mM Ca2+, and to 150 NMDG+, all containing 100 μM DHS. In the intracellular solution, 150 mM CsCl was used. (D) Quantification of ionic permeability calculated from similar recordings in (C). (E) Example trace of Im of OHCs during perfusion with solutions containing graded concentrations of Ca2+ and Na+. An 800 nm step deflection was applied to the hair bundle by a glass probe. The glass probe induced MET currents are marked ‘+', accompanying unwanted MET currents and artefacts induced by switching the perfusion system (#). (F) Dose curves of IBG and IMET in wild-type OHCs in different Ca2+ and Na+ concentrations (cell numbers, 9–20). (G) Quantification of dose-dependent background leak current in OHCs from wild-type (black) and Tmc1-knockout (red) mice when bathed in mixed Ca2+ and Na+. The ions and concentrations used in test external solutions were variable, as described in this figure legend and the Materials and methods. The holding potential was −70 mV. Data are presented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, (B,D) ANOVA.10.7554/eLife.47441.018Figure 6—source data 1.2+ blocks the leak current but not MET current.
+**Figure 6.:** (A) Monovalent cations Li+ and Cs+ conducted the leak current. In this experiment, 150 mM NaCl was substituted with 150 mM LiCl or 150 mM CsCl in the external solution. (B) Divalent cations 10 mM Ba2+, 75 mM Zn2+, 75 mM Co2+, 150 mM Mg2+, and 75 mM Ca2+, conducted the leak current. The 150 mM NaCl was partially or completely replaced with cations as described in the Materials and methods. (C) Representative Im traces by ramp stimulation for calculation of ionic permeability of the leak channel. The extracellular ion was switched from 150 mM Na+ to 75 mM Ca2+, and to 150 NMDG+, all containing 100 μM DHS. In the intracellular solution, 150 mM CsCl was used. (D) Quantification of ionic permeability calculated from similar recordings in (C). (E) Example trace of Im of OHCs during perfusion with solutions containing graded concentrations of Ca2+ and Na+. An 800 nm step deflection was applied to the hair bundle by a glass probe. The glass probe induced MET currents are marked ‘+', accompanying unwanted MET currents and artefacts induced by switching the perfusion system (#). (F) Dose curves of IBG and IMET in wild-type OHCs in different Ca2+ and Na+ concentrations (cell numbers, 9–20). (G) Quantification of dose-dependent background leak current in OHCs from wild-type (black) and Tmc1-knockout (red) mice when bathed in mixed Ca2+ and Na+. The ions and concentrations used in test external solutions were variable, as described in this figure legend and the Materials and methods. The holding potential was −70 mV. Data are presented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, (B,D) ANOVA.
 
-## The leak current modulates action potential firing in IHCs
+### The leak current modulates action potential firing in IHCs
 
 Next, we investigated the physiological relevance of the TMC1-mediated background conductance in auditory transduction. A significant leak conductance would be expected to depolarize the membrane and affect cell excitability. IHCs are innervated by the spiral ganglion neurons that transmit sound information to the CNS, and signal transmission from hair cells to the spiral ganglion; therefore possibly being affected by the leak conductance. Therefore, we measured the membrane potential (Vm) in IHCs bathed in external solution with 100 μM DHS by whole-cell current-clamp recording (Figure 7A). In wild-type IHCs, the resting Vm varied (actively and periodically) in bursting and non-bursting states (Figure 7A). However, the resting Vm was more hyperpolarized, and there was limited action potential firing in Tmc1-knockout IHCs (Figure 7A). With positive current injection, the Tmc1-knockout IHCs fired action potentials at threshold similar to wild-type IHCs (Figure 7A). Although the Vm baseline in the non-bursting state was more hyperpolarized in wild-type IHCs, it was still more depolarized than the Vm baseline in Tmc1-knockout IHCs (Figure 7A,B). This change of membrane excitability was also determined by monitoring the action potential bursting rate (Figure 7C) and the leak current (Figure 7D). We found that the leak current was smaller in IHCs than that in OHCs, which may be because of a different expression profile of potassium channels (Marcotti et al., 2006; Marcotti et al., 2003). Results also showed that, with ramp current injection, the firing threshold was similar, but the minimum injected current required to induce firing in Tmc1-knockout IHCs was ~20 pA greater than that in wild-type IHCs (Figure 7E,G,H). When depolarized by stepped current injection, the firing rate was lower in Tmc1-knockout IHCs and the rate-current curve was shifted to the right but finally reached a similar level when a larger current was injected (Figure 7F,I).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig7-v2.jpg)
 
-**Figure 7.:** Tmc1-knockout mice.(A) Representative current-clamp recording in IHCs bathed in external solution with 100 μM DHS from wild-type (black) and Tmc1-knockout (red) mice. For the most part, the IHCs were held at 0 pA. To define excitability, a ramp current was injected into the Tmc1-knockout IHCs to induce a burst of spikes. (B) Quantification of Vm recorded in IHCs similar to (A). Values of Vm in wild-type IHCs were defined as two states, bursting and non-bursting, which did not apply to Tmc1-knockout IHCs. Vm of wild-type in bursting state, 49 ± 2 mV; wild-type in non-bursting state, 60 ± 2 mV; Tmc1-knockout, 73 ± 2 mV. (C) Quantification of firing rate (spikes/s) in IHCs similar to (A). Values of firing rate: wild-type, 3.2 ± 0.7 Hz; Tmc1-knockout, 0 ± 0 Hz. (D) Quantification of ILeak from voltage-clamp recording in IHCs. Values of ILeak: wild-type, 24 ± 4 pA; Tmc1-knockout, 14 ± 2 pA. (E) Representative current-clamp traces of Vm in IHCs with ramp-current injection from –100 pA to +100 pA for 3 s. (F) Representative current-clamp recording in IHCs stimulated by a family of depolarization currents from –50 pA to +125 pA at 25 pA steps. (G) Quantification of firing threshold from data as in (E). Values of threshold were –47 ± 1 mV in wild-type OHCs and –47 ± 1 mV in Tmc1-knockout OHCs. (H) Quantification of minimum current injected (Injected Imin) to evoke an action potential from data as in (E). In wild-type OHCs: –0 ± 7 pA; in Tmc1-knockout OHCs: –21 ± 4 pA. (I) Quantification of numbers of spikes per second from data as in (F). Wild-type: 0 pA, 1.3 ± 0.7; 25 pA, 9.1 ± 0.8; 50 pA, 12.3 ± 0.7; 75 pA, 13.1 ± 0.7, 100 pA, 13.3 ± 0.6; 125 pA, 13.6 ± 0.7. Tmc1-knockout: 0 pA, 0 ± 0; 25 pA, 5.1 ± 1.3; 50 pA, 10.6 ± 1.1; 75 pA, 12.7 ± 0.7, 100 pA, 13.0 ± 0.9; 125 pA, 13.2 ± 1.1. In this figure, the external solution contained 1.3 mM Ca2+ and 100 μM DHS. K+ was used in the intracellular solution for current-clamp recordings in this figure except that Cs+ was used for voltage-clamp recording in (D). Data are presented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, (B) ANOVA; (C,D,G,H,I) Student’s t-test.10.7554/eLife.47441.020Figure 7—source data 1.Tmc1-knockout mice.
+**Figure 7.:** (A) Representative current-clamp recording in IHCs bathed in external solution with 100 μM DHS from wild-type (black) and Tmc1-knockout (red) mice. For the most part, the IHCs were held at 0 pA. To define excitability, a ramp current was injected into the Tmc1-knockout IHCs to induce a burst of spikes. (B) Quantification of Vm recorded in IHCs similar to (A). Values of Vm in wild-type IHCs were defined as two states, bursting and non-bursting, which did not apply to Tmc1-knockout IHCs. Vm of wild-type in bursting state, 49 ± 2 mV; wild-type in non-bursting state, 60 ± 2 mV; Tmc1-knockout, 73 ± 2 mV. (C) Quantification of firing rate (spikes/s) in IHCs similar to (A). Values of firing rate: wild-type, 3.2 ± 0.7 Hz; Tmc1-knockout, 0 ± 0 Hz. (D) Quantification of ILeak from voltage-clamp recording in IHCs. Values of ILeak: wild-type, 24 ± 4 pA; Tmc1-knockout, 14 ± 2 pA. (E) Representative current-clamp traces of Vm in IHCs with ramp-current injection from –100 pA to +100 pA for 3 s. (F) Representative current-clamp recording in IHCs stimulated by a family of depolarization currents from –50 pA to +125 pA at 25 pA steps. (G) Quantification of firing threshold from data as in (E). Values of threshold were –47 ± 1 mV in wild-type OHCs and –47 ± 1 mV in Tmc1-knockout OHCs. (H) Quantification of minimum current injected (Injected Imin) to evoke an action potential from data as in (E). In wild-type OHCs: –0 ± 7 pA; in Tmc1-knockout OHCs: –21 ± 4 pA. (I) Quantification of numbers of spikes per second from data as in (F). Wild-type: 0 pA, 1.3 ± 0.7; 25 pA, 9.1 ± 0.8; 50 pA, 12.3 ± 0.7; 75 pA, 13.1 ± 0.7, 100 pA, 13.3 ± 0.6; 125 pA, 13.6 ± 0.7. Tmc1-knockout: 0 pA, 0 ± 0; 25 pA, 5.1 ± 1.3; 50 pA, 10.6 ± 1.1; 75 pA, 12.7 ± 0.7, 100 pA, 13.0 ± 0.9; 125 pA, 13.2 ± 1.1. In this figure, the external solution contained 1.3 mM Ca2+ and 100 μM DHS. K+ was used in the intracellular solution for current-clamp recordings in this figure except that Cs+ was used for voltage-clamp recording in (D). Data are presented as mean ± SEM. N values are shown in each panel. *p<0.05, **p<0.01, ***p<0.001, (B) ANOVA; (C,D,G,H,I) Student’s t-test.
 
-## The leak current follows the tonotopic gradient of the MET response in OHCs
+### The leak current follows the tonotopic gradient of the MET response in OHCs
 
 The MET currents increase in OHCs from apex to base, which is considered as a manifestation of cochlear tonotopy. First, we examined the ILeak in OHCs along the cochlear coil (Figure 8A). As anticipated, we found a gradient in the leak current in wild-type OHCs, while the gradient was abolished in Tmc1-knockout OHCs (Figure 8B,C). We next analyzed the MET current along the cochlear coil when blocking the leak current with 35 mM [Ca2+]o, as 35 mM [Ca2+]o was sufficient to block the leak current to an extent similar to TMC1 removal in OHCs (Figure 6G). Strikingly, the gradual increase in MET current amplitude was severely blunted in OHCs in the presence of 35 mM [Ca2+]o (Figure 8D,E). Consistently, the OHCs lacking TMC1 lost the gradient of the MET currents as previously reported (Beurg et al., 2014) and we observed (Figure 8D,E). These data suggest that the tonotopic properties of the TMC1-participated leak channel and MET channel in OHCs could be modulated by external Ca2+. The leak and MET current decreased from apex to base in Tmc1-knockout OHCs, which may correlate with the graded expression level of TMC1 along the cochlear coil. We further questioned temporal correlation of TMC1 and the leak conductance as Tmc1 expression starts to increase from P3 and reaches a plateau in adult mice (Kawashima et al., 2011). We therefore investigated how the leak current changed in ageing OHCs before MET maturation (P3) and after the onset of hearing (P14). We found that the leak current amplitude increased from P3 to P6, and to P14 (Figure 8—figure supplement 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig8-v2.jpg)
+
+**Figure 8.:** (A) Diagram showing the tonotopic map in mouse hair cells (adapted from Figure 1B in Kim and Fettiplace, 2013), labeled with response frequencies (kHz, gray) and location (D% to apex, black). The apex and base are defined as 0 and 1, with reference to which D05, D20, D40, D60, and D80 represent distances of 0.05, 0.2, 0.4, 0.6, and 0.8. (B) Representative traces of Im recorded in OHCs at different locations along the cochlear coil, from wild-type (black) and Tmc1-knockout (red) mice. The external solution contained 1.3 mM Ca2+. The apex and base are defined as 0 and 1, with reference to which D05, D20, D40, and D60 represent distances of 0.05, 0.2, 0.4, and 0.6. (C) Quantification of location-specific ILeak from similar recordings to those in (B). Values of ILeak in wild-type OHCs (pA): D05, –23 ± 4; D20, –63 ± 4; D40, –67 ± 7; D60, –84 ± 7. ILeak values in Tmc1-knockout OHCs (pA): D05, –18 ± 3; D20, –18 ± 2; D40, –10 ± 2; D60, –5 ± 1. (D) Representative traces of location-specific MET current in wild-type OHCs when bathed in 1.3 mM or 35 mM Ca2+ and Tmc1-knockout OHCs when bathed in 1.3 mM Ca2+. A sinusoidal deflection was applied to the hair bundle by a fluid jet. (E) Quantification of location-specific macroscopic MET current. Values of IMET in wild-type OHCs in 1.3 mM Ca2+ (pA): D05, –505 ± 37 pA; D20, –780 ± 24 pA; D40, –872 ± 21 pA; D80, –939 ± 22 pA. Values of IMET in wild-type OHCs in 35 mM Ca2+ (pA): D05, –369 ± 13 pA; D20, –369 ± 13 pA; D40, –384 ± 30 pA; D60, –461 ± 31 pA. Values of IMET in Tmc1-knockout OHCs in 1.3 mM Ca2+ (pA): D20, –371 ± 35 pA; D40, –177 ± 19 pA; D60, –117 ± 15 pA; D80, –102 ± 9 pA. The holding potential was −70 mV. In (C) and (E), data are presented as mean ± SEM with N values. *p<0.05, **p<0.01, ***p<0.001, ANOVA.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative Im traces in whole-cell voltage-clamp recorded OHCs from P14 wild-type and Tmc1-knockout mice. (B) Quantification of ILeak recorded from P3, P6, and P14 OHCs under conditions similar to those in (A). ILeak values (pA) for wild-type: P3, –26 ± 8; P6, –66 ± 5; P14, –150 ± 21. For Tmc1-knockout: P3, –10 ± 2; P6, –18 ± 2; P14, –23 ± 7. The holding potential was −70 mV. Data are presented as mean ± SEM and N values are shown in panel B. *p<0.05, **p<0.01, ***p<0.001, ANOVA.
 
 We next determined whether the change in macroscopic MET current represents a change in the unitary MET channel conductance, and whether the absence of the leak current disrupts the tonotopic gradient. The unitary MET channel analysis showed that 35 mM [Ca2+]o reduced the unitary MET channel current to ~5 pA in both low-frequency and high-frequency OHCs (Figure 9A,B). These data further suggest that the extracellular Ca2+ modulates leak conductance and MET channel properties, accordingly.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/47441/elife-47441-fig9-v2.jpg)
 
-**Figure 9.:** 2+ removes the MET conductance gradient as revealed by unitary channel analysis.(A) Location-specific single MET channel recording from wild-type OHCs in solution with 3 mM or 35 mM Ca2+ at D05 or D60. The traces were chosen to show nice dual-peak fitting but did not represent normal flickers. A 100 nm step deflection was applied to the hair bundle by a glass probe. (B) Statistical analysis of location-specific unitary MET channel current. Values of unitary IMET in 3 mM Ca2+: D05, –7.0 ± 0.2 pA; D20, –7.9 ± 0.2 pA; D60, –10.6 ± 0.2 pA. Values of IMET in 35 mM Ca2+: D05, –4.7 ± 0.1 pA; D20, –4.8 ± 0.1 pA; D60, –4.9 ± 0.1 pA. The holding potential was −70 mV. N values are shown as events/cells. Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, ANOVA.10.7554/eLife.47441.026Figure 9—source data 1.2+ removes the MET conductance gradient as revealed by unitary channel analysis.
+**Figure 9.:** (A) Location-specific single MET channel recording from wild-type OHCs in solution with 3 mM or 35 mM Ca2+ at D05 or D60. The traces were chosen to show nice dual-peak fitting but did not represent normal flickers. A 100 nm step deflection was applied to the hair bundle by a glass probe. (B) Statistical analysis of location-specific unitary MET channel current. Values of unitary IMET in 3 mM Ca2+: D05, –7.0 ± 0.2 pA; D20, –7.9 ± 0.2 pA; D60, –10.6 ± 0.2 pA. Values of IMET in 35 mM Ca2+: D05, –4.7 ± 0.1 pA; D20, –4.8 ± 0.1 pA; D60, –4.9 ± 0.1 pA. The holding potential was −70 mV. N values are shown as events/cells. Data are presented as mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, ANOVA.
 
 ## Discussion
 
@@ -113,15 +145,382 @@ Because of limited information about the structure of TMC1, we do not yet know 
 
 ## Materials and methods
 
-## Mouse strains and animal care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>TMC1</td>
+      <td>NCBI ID: 13409</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>TMC2</td>
+      <td>NCBI ID:192140</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Lhfpl5</td>
+      <td>NCBI ID: 328789</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL6</td>
+      <td>Vitalriver</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL6 TMC1 knockout</td>
+      <td>MGI: J:184419</td>
+      <td>Griffith AJ etc.</td>
+      <td>From JAX</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL6 TMC2 knockout</td>
+      <td>MGI: J:184419</td>
+      <td>Griffith AJ etc.</td>
+      <td>From JAX</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL6 Lhfpl5 knockout</td>
+      <td>MGI: J:98396</td>
+      <td>Johnson KR etc.</td>
+      <td>From JAX</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-GFP</td>
+      <td>aveslab</td>
+      <td>RRID:AB_10000240</td>
+      <td>Cat:GFP-1020 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse HA Clone 16B12</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2565335</td>
+      <td>Cat:901513 (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa FluroTM 488 goat anti-chicken IgG(H+L)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_142924</td>
+      <td>Cat: A-11039 Lot:1937504 (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa FluroTM 568 goat anti-mouse IgG(H+L)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2534072</td>
+      <td>Cat: A-11004 Lot:2014175 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TMC1-DF-F</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:tgagattaacaacaaggaat tcgtgcgtctcaccgttt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TMC1-DF-R</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:tgagacgcacgaattcctt gttgttaatctcatccatcaaggc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-G411C-F</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’: aatgtccctcctgTGTatgtt ctgtcccaccctgtttga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-G411C-R</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:ACAcaggagggacattacc atgttcatttcatttttttcccacca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-M412C-F</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:gtccctcctggggTGTttc tgtcccaccctgtttgactt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-M412C-R</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:ACAccccaggagggacatt accatgttcatttcatttttttccca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-N447C-F</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:tcttcttctaggcTGTttg tatgtattcattctcgcctt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-N447C-R</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:ACAgcctagaagaaga gcaaaaatgcgccccaggag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-D528C-F</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:tctcaccgtttctTGTgtcct gaccacttacgtcacgat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-D528C-R</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:ACAagaaacggtgagacgc acgaattcctgccccaccattgtttc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-T532C-F</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:tgacgtcctgaccTGTta cgtcacgatcctcattggcga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-T532C-R</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:ACAggtcaggacgtcaga aacggtgagacgcacgaattc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-D569C-F</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:atacacagaattcTGT atcagtggcaacgtcctcgctct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTMC1-D569C-R</td>
+      <td>Ruibio Tech</td>
+      <td>This paper</td>
+      <td>5’:ACAgaattctgtgtatgaag gatatccatattctaagtcccagca</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydrostreptomycin sulfate</td>
+      <td>HarveyBio</td>
+      <td></td>
+      <td>Cat: HZB1169-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>d-Tubocurarine</td>
+      <td>TCI</td>
+      <td></td>
+      <td>Cat: C0433</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amiloride</td>
+      <td>Cayman</td>
+      <td></td>
+      <td>Cat: 21069</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MTSET</td>
+      <td>Cayman</td>
+      <td></td>
+      <td>Cat: 21069</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GdCl3</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat: 439770–5G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LaCl3</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat: 298182–10G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CoCl2</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat: 60818–50G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZnCl2</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat: 793523–100G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat: M8266-100G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat: 746495–100G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CsCl</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat:C3139-25G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat:P9333-500G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat:S7653-1KG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaOH</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat:S8045-500G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KOH</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat:306568–100G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CsOH</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat:C8518-10G</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAPTA Tetrasodium salt hydrate</td>
+      <td>Bioruler</td>
+      <td></td>
+      <td>Cat: RH100017-1g</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGTA</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Cat: 03780</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor 6</td>
+      <td>WaveMetrics, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Micro-manager 1.4</td>
+      <td>micro-manager.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HEKA patchmaster</td>
+      <td>HEKA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab 2014</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism GraphPad 6</td>
+      <td>GraphPad Software.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HEKA whole cell recording amplifier</td>
+      <td>HEKA</td>
+      <td></td>
+      <td>Order Number: 895273</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Micromanipulator</td>
+      <td>Sensapex</td>
+      <td></td>
+      <td>Cat:uMp-3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains and animal care
 
 The mouse strains used in this study, B6.129-TMC1 < tm1.1Ajg>/J, B6.129-TMC2 < tm1.1Ajg>/J, and B6.129-Lhfpl5 < tm1Kjn>/Kjn, were from the Jackson Laboratory (Bar Harbor, ME). The experimental procedures on mice (Animal Protocol #: 15-XW1) were approved by the Institutional Animal Care and Use Committee of Tsinghua University.
 
-## DNA constructs, cochlear culture, and injectoporation
+### DNA constructs, cochlear culture, and injectoporation
 
 Mouse Tmc1 and Tmc2 cDNAs were cloned into CMV-Script and pCDNA3.1- vectors, respectively. To obtain the Tmc1-deafness vector and amino-acid-substituted Tmc1 constructs, specific primers were designed and used for PCR (Supplementary File 1). Cochlear culture and injectoporation were performed as previously described (Xiong et al., 2014). In brief, the organ of Corti was isolated from P3 mice and cut into three pieces in Dulbecco’s modified Eagle’s medium/F12 with 1.5 μg/ml ampicillin. For electroporation, a glass pipette (2 μm tip diameter) was used to deliver cDNA plasmids (0.2 μg/μl in 1 × Hanks' balanced salt solution) to hair cells in the sensory epithelium. EGFP was used as an indicator for the selection of transfected hair cells. A series of three pulses at 60 V lasting 15 ms at 1 s intervals was applied to cochlear tissues by an electroporator (ECM Gemini X2, BTX, CA). The cochlear tissues were cultured for 1 day in vitro and then used for electrophysiological recording.
 
-## Electrophysiology
+### Electrophysiology
 
 Hair cells were recorded using whole-cell voltage or current clamp as previously described (Xiong et al., 2012). All experiments were performed at room temperature (20–25°C). Briefly, the basilar membrane with hair cells was acutely dissected from neonatal mice. The dissection solution contained (in mM): 141.7 NaCl, 5.36 KCl, 0.1 CaCl2, 1 MgCl2, 0.5 MgSO4, 3.4 L-glutamine, 10 glucose, and 10 H-HEPES (pH 7.4). Then the basilar membrane was transferred into a recording chamber with recording solution containing (in mM): 144 NaCl, 0.7 NaH2PO4, 5.8 KCl, 1.3 CaCl2, 0.9 MgCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4). For ILeak calculation, the cells were further bathed in recording solution containing 144 mM NMDG that replaced 144 mM NaCl. The acutely isolated or cultured basilar membrane was used for electrophysiological recording within 1 h. Hair cells were imaged under an upright microscope (BX51WI, Olympus, Tokyo, Japan) with a 60 × water immersion objective and an sCMOS camera (ORCA Flash4.0, Hamamatsu, Hamamatsu City, Japan) controlled by MicroManager 1.6 software (Edelstein et al., 2010). Patch pipettes were made from borosilicate glass capillaries (BF150-117-10, Sutter Instrument Co., Novato, CA) with a pipette puller (P-2000, Sutter) and polished on a microforge (MF-830, Narishige, Tokyo, Japan) to resistances of 4–6 M'Ω. Intracellular solution contained (in mM): 140 CsCl, 1 MgCl2, 0.1 EGTA, 2 Mg-ATP, 0.3 Na-GTP, and 10 H-HEPES, pH 7.2), except when CsCl was replaced with KCl in current-clamp. Hair cells were recorded with a patch-clamp amplifier (EPC 10 USB and Patchmaster software, HEKA Elektronik, Lambrecht/Pfalz, Germany). As measured, the liquid junction potential of the pipette with CsCl intracellular solution had a value of +4 mV in regular recording solution and −6 mV in 144 mM NMDG+ solution, which was not corrected in the data shown.
 
@@ -129,21 +528,33 @@ For single-channel recordings, we followed published procedures (Ricci et al., 2
 
 The sampling rate was 1 kHz for leak current recording, 50 kHz for the IV protocol and current-clamp recording, and 100 kHz for unitary channel recording. The voltage-clamp used a –70 mV holding potential, and the current-clamp was held at 0 pA. Only recordings with a current baseline <20 pA in NMDG solution were used for statistical analysis.
 
-## Hair bundle stimulation and removal
+### Hair bundle stimulation and removal
 
 The hair bundle was deflected by two types of mechanical stimulus, fluid jet and glass probe. The fluid jet stimulation was performed as described previously (Beurg et al., 2014). In brief, a 40 Hz sinusoidal wave stimulus was delivered by a 27-mm-diameter piezoelectric disc driven by a home-made piezo amplifier pipette with a tip diameter of 3–5 μm positioned 5–10 μm from the hair bundle to evoke maximum MET currents. For glass probe stimulation, hair bundles were deflected with a glass pipette mounted on a P-885 piezoelectric stack actuator (Physik Instrumente, Karlsruhe, Germany). The actuator was driven with voltage steps that were low-pass filtered at 10 KHz. To avoid bundle damage caused by overstimulation, the glass probe was shaped to have a slightly smaller diameter than the hair bundles, and the stimulation distance was 800 nm for macroscopic current and 100 nm for unitary channel recording. For hair bundle removal, a pipette with 1 μm diameter tip was used to suck away the hair bundles of the target OHCs. The hair-bundle-removed OHCs with good condition were further recorded. Examined by a fluid-jet stimulation, the OHCs without obvious MET current were further measured for the leak current.
 
-## Inhibitors, ion substitution, permeability, and perfusion
+### Inhibitors, ion substitution, permeability, and perfusion
 
-In Figure 5, DHS, dTC, amiloride, GdCl3, and LaCl3 were added as calculated to the recording solution (in mM) 144 NaCl, 0.7 NaH2PO4, 5.8 KCl, 1.3 CaCl2, 0.9 MgCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4). Dose-inhibition curves were fitted with a Hill equation:Ix/Imax=Xh/(Kh+Xh))
+In Figure 5, DHS, dTC, amiloride, GdCl3, and LaCl3 were added as calculated to the recording solution (in mM) 144 NaCl, 0.7 NaH2PO4, 5.8 KCl, 1.3 CaCl2, 0.9 MgCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4). Dose-inhibition curves were fitted with a Hill equation:
+
+$$
+I_{x}/I_{max}=X^{h}/(K^{h}+X^{h}))
+$$
 
 Where K is the half-inhibition dose (IC50) and h is the Hill slope. Imax is the maximal current in control condition.
 
 In Figure 6, all the ion substitution solutions were derived from a simplified external solution (in mM): 147 NaCl, 1.3 CaCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4). In Figure 6A, LiCl and CsCl were 150 mM, completely substituting for NaCl. In Figure 6B, the Ba2+ solution was (in mM) 10 BaCl2, 137 NaCl, 1.3 CaCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4); the Zn2+ solution was 75 ZnCl2, 75 NaCl, 1.3 CaCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4); the Co2+ solution was 75CoCl2, 75 NaCl, 1.3 CaCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4); the Mg2+ solution was 150 MgCl2, 5.6 glucose, and 10 H-HEPES (pH 7.4); and the Ca2+ solution was 75 CaCl2, 75 NaCl, 5.6 glucose, and 10 H-HEPES (pH 7.4).
 
-Ca2+ permeability was measured by performing whole-cell voltage-clamp recording on P6 OHCs, with intracellular solution containing (in mM): 140 CsCl, 1 MgCl2, 0.1 EGTA, 2 Mg-ATP, 0.3 Na-GTP, and 10 H-HEPES, pH 7.2. A voltage-ramp stimulation from −120 to 80 mV lasting for 2 s was applied to calculate the reversal potential. For measuring Na+ permeability, OHCs were perfused with the external solution containing (in mM): 150 NaCl,1.3 CaCl2, 5.6 glucose, and 10 H-HEPES. For measurement of Ca2+ or Mg2+ permeability, 150 NaCl was substituted with 75 Ca2+ or 75 Mg2+ supplemented with 75 NMDG+. To eliminate the influence of technical leak, an identical voltage-ramp stimulation was applied on each recorded OHC in 150 NMDG. The part of the inward current trace was fitted linearly to calculate the voltage value cross point between interest of ion and NMDG solution, which represented the reverse potential of the leak between this ion and Cs+. The relative permeability of the monovalent cation was calculated as described (Hille, 2001)PX/PCs=[Cs]iexp(ErrevF/RT)/[X]o
+Ca2+ permeability was measured by performing whole-cell voltage-clamp recording on P6 OHCs, with intracellular solution containing (in mM): 140 CsCl, 1 MgCl2, 0.1 EGTA, 2 Mg-ATP, 0.3 Na-GTP, and 10 H-HEPES, pH 7.2. A voltage-ramp stimulation from −120 to 80 mV lasting for 2 s was applied to calculate the reversal potential. For measuring Na+ permeability, OHCs were perfused with the external solution containing (in mM): 150 NaCl,1.3 CaCl2, 5.6 glucose, and 10 H-HEPES. For measurement of Ca2+ or Mg2+ permeability, 150 NaCl was substituted with 75 Ca2+ or 75 Mg2+ supplemented with 75 NMDG+. To eliminate the influence of technical leak, an identical voltage-ramp stimulation was applied on each recorded OHC in 150 NMDG. The part of the inward current trace was fitted linearly to calculate the voltage value cross point between interest of ion and NMDG solution, which represented the reverse potential of the leak between this ion and Cs+. The relative permeability of the monovalent cation was calculated as described (Hille, 2001)
 
-And for divalent cations, the equation was:PX/PCs=γCs[Cs]iexp(ErrevF/RT)[exp(Erev/RT)+1]/4γX[X]o
+$$
+P_{X}/P_{Cs}=[Cs]_{i}exp(Er_{rev}F/RT)/[X]_{o}
+$$
+
+And for divalent cations, the equation was:
+
+$$
+P_{X}/P_{Cs}=\gamma_{Cs}[Cs]_{i}exp(Er_{rev}F/RT)[exp(E_{rev}/RT)+1]/4\gamma_{X}[X]_{o}
+$$
 
 For which γCs = 0.70 (Hille, 2001), γCa = 0.4657, γMg = 0.5271 (Rodil and Vera, 2001).
 
@@ -153,6 +564,6 @@ For the Ca-NMDG solution in Figure 6E-F, 1 CaCl2 was exchanged for 2 NMDG-Cl. Fo
 
 The gravity perfusion system (ALA-VM8, ALA Scientific Instruments, Farmingdale, NY) is controlled manually to switch and deliver solutions. The perfusion tubing and tip were modified as previously reported (Wu et al., 2005). For cochlear tissue, the perfusion tip was placed 2–3 mm from the patched hair cell and the perfusion rate was ~0.5 ml/min. Extra solution in the recording dish was removed by a peristaltic pump (PeriStar, World Precision Instruments, Sarasota, FL) to maintain a steady liquid level.
 
-## Data analysis
+### Data analysis
 
 Every experiment contained at least three biological replicates, which were collected at least every 2 weeks within a 3 month window to maintain the stability of a data set. For certain experiments, such as single-channel recording, the trace numbers were over 100. All cell numbers were noted in the figure legends. Multiple recordings from one cell with the identical stimulus protocol were considered as technical replications, which were averaged to generate a single biological replication representing value/data from one cell. Data were managed and analyzed with Excel (Microsoft), Prism 6 (GraphPad Software, San Diego, CA), and Igor pro 6 (WaveMetrics, Lake Oswego, OR). The current traces similar to Figure 1B were low-pass filtered to less noisy traces with the smoothing function (Binomial 20) provided by Igor software. All data are shown as mean ± SEM. We used student’s T-test for one-to-one comparison and ANOVA for multiple comparisons to determine statistical significance (*p<0.05, **p<0.01, ***p<0.001). Values and N numbers are defined in the figures and figure legends.

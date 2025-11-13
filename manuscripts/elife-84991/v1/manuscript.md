@@ -7,14 +7,14 @@
 
 ### Affiliations
 
-1. https://ror.org/027bh9e22 Leiden University Leiden Netherlands
-2. https://ror.org/02tyrky19 Trinity College Dublin Dublin Ireland
+1. Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+2. Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
 
 † Corresponding author
 
 ## Abstract
 
-Addressing the climate crisis requires radical and urgent action at all levels of society. Universities are ideally positioned to lead such action but are largely failing to do so. At the same time, many academic scientists find their work impeded by bureaucracy, excessive competitiveness, and a loss of academic freedom. Here, drawing on the framework of “Doughnut Economics,” developed by Kate Raworth, we suggest seven new principles for rethinking the norms of scientific practice. Based on these, we propose a call to action, and encourage academics to take concrete steps towards the creation of a flourishing scientific enterprise that is fit for the challenges of the 21 st century.
+Addressing the climate crisis requires radical and urgent action at all levels of society. Universities are ideally positioned to lead such action but are largely failing to do so. At the same time, many academic scientists find their work impeded by bureaucracy, excessive competitiveness, and a loss of academic freedom. Here, drawing on the framework of “Doughnut Economics,” developed by Kate Raworth, we suggest seven new principles for rethinking the norms of scientific practice. Based on these, we propose a call to action, and encourage academics to take concrete steps towards the creation of a flourishing scientific enterprise that is fit for the challenges of the 21st century.
 
 ## Our predicament
 
@@ -56,7 +56,7 @@ The doughnut’s under- and overshoot will be recognized by many – you may eve
 
 ## Seven ways to think like a 21st century scientist
 
-## Change the goal
+### Change the goal
 
 Our understanding of the purpose of universities has shifted dramatically over the last few decades (Collini, 2012). The core function of the university is traditionally to preserve, generate and share knowledge and understanding. Since the 1980s, however, universities have increasingly been operated as corporations. This has caused radical changes in what governments, the public, and indeed, academics themselves understand to be the goal of the university (Collini, 2017; Glaser, 2015). Students are viewed as customers who pay (ever increasing) fees for a degree that will serve them in an unpredictable labor market. Academic institutions compete for increasingly scarce public funds, driving a race for reputation, student fees, and grant funding. Curiosity-driven and fundamental research must be justified by appealing to future applications, innovations, and intellectual property (Flexner and Dijkgraaf, 2017). The arts and humanities are devalued, and in some universities, eliminated (Costa, 2019). Pressures to publish (surprising results, in specific outlets, and often) incentivize questionable research practices and even outright fraud. The resulting replication crisis has shaken both scientific communities and the public’s trust in science.
 
@@ -64,7 +64,7 @@ The fixation on metrics manifests as ever-increasing demands for “accountabili
 
 Rather than striving for ever-more quantifiable achievements, we must defend what’s unique about the university, an institution for independent scholarship, science, and education for the public good, responsible for “conserving, understanding, extending, and handing on to subsequent generations the intellectual, scientific, and artistic heritage of [hu]mankind” (Collini, 2012). We can do this by realigning our goals towards respecting the academic doughnut’s boundaries. Changing goals, values, and attitudes may be the most difficult of all system changes, but it is ultimately the most important (Meadows, 2008).
 
-## Get savvy with systems
+### Get savvy with systems
 
 As individuals within the university, we can feel like powerless cogs in the academic machine. After all, who can refuse their Head of Department’s requests for a report on their outputs and impacts, which, if unsatisfactory, will result in the department’s budget being cut? We argue that our ability to resist the forces of metric fixation, competition, and commercialization is impeded by the same barriers that impede climate action: overwork, time poverty, inertia, and the internalization of unhelpful norms (Castiglione et al., 2022; Giurge et al., 2020; Yarkoni, 2018). Many of us are simply too bogged down in busyness and burgeoning bureaucracy to push back on metric fixation in the first place. It is not conspiratorial to suggest, as others have done, that this is not an accident (Glaser, 2015; Graeber, 2013).
 
@@ -72,7 +72,7 @@ To overcome this helplessness, we must see academia not as a research-producing 
 
 As scientists, we are uniquely positioned to play our role in the climate movement: we understand complex data (some of us even study human behavior); our expertise is respected and is often influential in driving policy; we work in large organizations from which change can percolate; and we teach the next generation of bright minds. Understanding academia’s systems can help us embrace these social and moral responsibilities to educate and to act (Box 1).
 
-## See the big picture
+### See the big picture
 
 As academics, we must nurture a self-image that reflects our embeddedness within society and on the planet. This contrasts with the traditional, stereotypical image of academia as an ivory tower, where learned men engage in the noble pursuit of objective and “pure” knowledge. Recent years have witnessed a revision of that image, through a greater appreciation of the reciprocal relationship between science and society, and growing acknowledgement of the fact that academic activities are not value-neutral but are influenced by the values and morals of the culture in which they are embedded. Taking an even wider view, academic activities must respect and protect our planet’s natural systems.
 
@@ -82,7 +82,7 @@ There are no universities on a dead planet (to borrow a protest slogan): seeing 
 
 We must not only attend to our carbon footprint but also our “climate shadow”: the total climate impact of our actions, including our impact on others and on society (Pattee, 2021). This means ending activities that support, maintain, and legitimize the fossil fuel industry. Universities must end collaborations with environmentally extractive and other harmful industries, in research, teaching, and funding. Tellingly, research performed in fossil fuel-funded research centers is less favorable towards renewable energy, highlighting how corporate influence can bias scientific outcomes (Almond et al., 2022). Calls for fully “fossil-free research” are beginning to have an impact: universities are starting to reject recruitment and funding from fossil fuel companies (Carrington, 2022; Gilchrist and Kaufman, 2022; Tabuchi, 2022). Universities must also divest their endowments from fossil fuels and from financial institutions that support the fossil fuel industry. More broadly, a shift in our core values is required; the principle of climate justice requires us to center inequality, human rights, and the legacies of colonialism in our approach to the climate and biodiversity crisis (Boyle and Stephens, 2022). As members of the university, we must demand transformative change within our institutions and hold leadership accountable for their commitments and responsibilities (Urai et al., 2022).
 
-## Create to regenerate
+### Create to regenerate
 
 To re-evaluate our academic goals, we need time and energy. Freedom from excessive workload and bureaucracy allows us to engage in slow, sustainable, creative work, including curiosity-driven and blue-skies research without obvious monetary or applied value (Berg and Seeber, 2016; Frith, 2020; Haswell, 2017; O’Donovan, 2022). More intellectual breathing space is also crucial to address the breakdown in peer review, mentoring, and other unpaid service that all academics need to do (if the system is to function), but few are willing to take on, since it is scarcely incentivized. Moreover, women (particularly women of color) and members of other underrepresented groups typically carry a disproportionate burden of service work in academia (El-Alayli et al., 2018; Hirshfield and Joseph, 2012).
 
@@ -92,7 +92,7 @@ Inside the academic doughnut, teaching is central. We educate and invest in the 
 
 By treating ourselves, our colleagues, and our students as full human beings, rather than just producers of outputs, we can free up space for creativity, collegiality, kindness, and reflection (Berg and Seeber, 2016). This includes working on the climate crisis, which now mostly happens outside people’s day jobs (Gardner et al., 2021). Slowing down and stepping away from the rat race may feel like a strange and radical act, but can ultimately bring great joy into our science, our lives, and the lives of our students.
 
-## Nurture human nature
+### Nurture human nature
 
 Our self-image as scientists should nurture human nature, especially our collaborative character. The traditional view remains centered on the lone wolf genius hunched over his desk at night (the image continues to be mostly male and white), as he prepares his high-impact research in solitude. When the image of success is that of the genius or solo research star, it acts as an impediment to the kinds of cooperation and collective action needed to address society’s greatest challenges. Moreover, incentives for individual success enable and even promote power misuse, bullying, and harassment, with ample examples of discrimination and bad behavior throughout the echelons of science (Täuber and Mahmoudi, 2022).
 
@@ -100,13 +100,13 @@ A narrow focus on individual scientific progress ignores the crucial work of bui
 
 Better ways of crediting and rewarding these collaborative roles in teams is an ongoing effort, which must ultimately be incorporated in hiring, promotion, and funding decisions (Cline et al., 2020). For instance, academia’s values are being re-examined in discussions around recognizing and rewarding scientists in The Netherlands (NWO, 2019). There, national funding bodies and universities have committed to diversifying the dimensions along which individual researchers are assessed, recognizing more diverse career paths that focus on teaching, governance, or outreach. A similar positive step is the Declaration on Research Assessment (DORA), a set of principles that aims to move away from journal-based metrics to assess academics, towards assessing research on its own merits. As academics and reviewers, we can push for our universities and funding agencies to adopt such alternative principles of assessment.
 
-## Design to distribute
+### Design to distribute
 
 Academia is not fair. The distribution of scientific funding, publications in high-impact journals, and the concentration of resources at high-prestige institutions show evidence of the “Matthew effect,” a system where the rich get richer (Bol et al., 2018; Huber et al., 2022). This is dispiriting and wastes academic resources (Gross and Bergstrom, 2019; Roumbanis, 2019; Dresler et al., 2022). It impedes scientific progress by reducing the diversity of people and thought vital to a thriving and resilient scientific community. To ensure sufficient and equitable research support, we need to consider alternative ways of distributing funding, resources, and power. For instance, competitive funding schemes with low success rates (and much time wasted on writing unsuccessful proposals) can be replaced by partial lotteries that free up time and money, without loss of quality (Gross and Bergstrom, 2019; Roumbanis, 2019). Researchers may also be provided with continued rolling grants to provide for basic research needs, pooling together their money to pursue specific projects or redistribute some of their funds to colleagues (Dresler, 2022; Bollen et al., 2014). These alternatives would not only distribute money more fairly, but also free up much-needed time for research, mentoring, activism or even a bit of rest.
 
 The academic doughnut calls for a re-evaluation of how universities use research funds. In recent decades, academics have increasingly served corporate interests through innovations and Intellectual Property generation. Instead, when publicly funded work (such as the development of mRNA vaccines or the PageRank algorithm) is used by private enterprise, the benefits should be fairly and openly shared with the taxpayer to serve the public good. We need to dismantle the publication system that allows academic labor to be siphoned off by publishers with extraordinary profit margins (Resnick and Belluz, 2019). However, with the move towards open access publishing (e.g., Plan S, US regulations) care must be taken to avoid shifting the financial burden onto universities through extortionate Open Access fees. Misuse of community resources by for-profit corporations is widespread (Staller, 2022): Microsoft’s recent release of GitHub Copilot, a programming tool that learns from publicly shared code without respecting its license, met with vocal criticism from the open software community (Gershgorn, 2021). These examples show how applying market principles of commodification, monetization, and private ownership can sour a space that is better served as a community-managed commons (Morrison, 2019; Ostrom, 1990). The success of more disruptive actions such as Sci-Hub (Himmelstein et al., 2018) demonstrates the appetite and capacity for change.
 
-## Be agnostic about growth
+### Be agnostic about growth
 
 The pervasive marketization of universities emphasizes growth: more students getting more degrees, resulting in more quantifiable skills delivered to the labor force; more researchers bringing in more grant money, publishing more papers - that nobody has time to read. Returning to the core question of what universities are actually for (Collini, 2012), we need to engage with broader discussions about growthism.
 
@@ -136,6 +136,6 @@ If universities do not take a leading role in climate action, we risk being drag
 
 Universities are ideally positioned to cultivate the transformative societal, economic, and political change required to address the climate and biodiversity crisis, but can academic communities overcome inertia and barriers to action? A first step towards change is to look at things differently. We have described new ways to view ourselves as researchers, educators, members of the university and of a global scientific community. We hope that our call to action will move us along the path towards the academic doughnut and a thriving biosphere for future generations.
 
-## Citation diversity statement
+### Citation diversity statement
 
 Recent work in several fields of science has identified a bias in citation practices such that papers from women and other minority scholars are under-cited relative to the number of such papers in the field (Zurn et al., 2020). Here, we sought to proactively choose diverse references. Our references contain 36% woman/woman, 12% man/woman, 10% woman/man and 42% man/man (reflecting the first and last author, where a single author was counted as both first and last).

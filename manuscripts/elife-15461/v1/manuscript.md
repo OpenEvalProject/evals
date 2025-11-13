@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.15461.001 When unperturbed, somatic stem cells are poised to affect immediate tissue restoration upon trauma. Yet, little is known regarding the mechanistic basis controlling initial and homeostatic ‘scaling’ of stem cell pool sizes relative to their target tissues for effective regeneration. Here, we show that TEAD1-expressing skeletal muscle of transgenic mice features a dramatic hyperplasia of muscle stem cells (i.e. satellite cells, SCs) but surprisingly without affecting muscle tissue size. Super-numeral SCs attain a ‘normal’ quiescent state, accelerate regeneration, and maintain regenerative capacity over several injury-induced regeneration bouts. In dystrophic muscle, the TEAD1 transgene also ameliorated the pathology. We further demonstrate that hyperplastic SCs accumulate non-cell-autonomously via signal(s) from the TEAD1-expressing myofiber, suggesting that myofiber-specific TEAD1 overexpression activates a physiological signaling pathway(s) that determines initial and homeostatic SC pool size. We propose that TEAD1 and its downstream effectors are medically relevant targets for enhancing muscle regeneration and ameliorating muscle pathology. DOI: http://dx.doi.org/10.7554/eLife.15461.001
+When unperturbed, somatic stem cells are poised to affect immediate tissue restoration upon trauma. Yet, little is known regarding the mechanistic basis controlling initial and homeostatic ‘scaling’ of stem cell pool sizes relative to their target tissues for effective regeneration. Here, we show that TEAD1-expressing skeletal muscle of transgenic mice features a dramatic hyperplasia of muscle stem cells (i.e. satellite cells, SCs) but surprisingly without affecting muscle tissue size. Super-numeral SCs attain a ‘normal’ quiescent state, accelerate regeneration, and maintain regenerative capacity over several injury-induced regeneration bouts. In dystrophic muscle, the TEAD1 transgene also ameliorated the pathology. We further demonstrate that hyperplastic SCs accumulate non-cell-autonomously via signal(s) from the TEAD1-expressing myofiber, suggesting that myofiber-specific TEAD1 overexpression activates a physiological signaling pathway(s) that determines initial and homeostatic SC pool size. We propose that TEAD1 and its downstream effectors are medically relevant targets for enhancing muscle regeneration and ameliorating muscle pathology.
 
 ## Introduction
 
@@ -36,83 +36,83 @@ Here, we report a murine SC hyperplasia model and investigate the effects on reg
 
 ## Results
 
-## TEAD1-Tg mice have normal skeletal muscle size and number, but have SC hyperplasia
+### TEAD1-Tg mice have normal skeletal muscle size and number, but have SC hyperplasia
 
-A remarkable feature of skeletal muscle is its ability to adapt to changing physiologic demands via reversible modulation of tissue size and of fiber-type composition, to accommodate differential force exertion or contractile usage patterns, respectively. To this end, we previously identified a regulatory role for Tead1 in the induction of slow muscle gene expression: skeletal muscle of TEAD1-Tg mice features a transition to the slow muscle contractile phenotype (
+A remarkable feature of skeletal muscle is its ability to adapt to changing physiologic demands via reversible modulation of tissue size and of fiber-type composition, to accommodate differential force exertion or contractile usage patterns, respectively. To this end, we previously identified a regulatory role for Tead1 in the induction of slow muscle gene expression: skeletal muscle of TEAD1-Tg mice features a transition to the slow muscle contractile phenotype (Tsika et al., 2008; Vyas et al., 1999). To further confirm this transition, we employed immunofluorescence (IF) analysis to tibialis anterior (TA) muscle cross-sections from adult TEAD1-Tg and wild type (Wt) sibling mice using antibodies against fiber-type specific myosins (Figure 1—figure supplement 1). Fast glycolytic myofibers express IIX myosin and make up approximately half of all TA fibers of Wt mice (Figure 1—figure supplement 1A). By contrast, this fiber type is absent in TEAD1-Tg TA muscle (Figure 1—figure supplement 1B; quantification in Figure 1I). Reciprocal analysis using an antibody detecting any myosin but the IIX type confirmed the complete loss of this fiber type as all TA muscle fibers stained positive in TEAD1-Tg samples (Figure 1—figure supplement 1C–D; quantification in Figure 1I). While the low percentage of slow twitch (I myosin+) fibers is not affected, a more than 2-fold increase in IIa myosin+ fibers suggests that the fast glycolytic fibers are replaced in large part by fast oxidative fibers in TEAD1-Tg TA muscles (Figure 1—figure supplement 1E–H; quantification in Figure 1I). Whether additional tissue alterations accompany this TEAD1-induced change in fiber-type composition is unknown. For further characterization, we decided to evaluate muscle fiber number (hyperplasia) and size (hypertrophy) in TEAD1-Tg mice.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig1-v1.jpg)
 
-**Figure 1.:** (A–P) H and E (A–B, E–F, I–J, M–N) and Sirius Red (C–D, G–H, K–L, O–P) stains of TA (A–D), EDL (E–H), Plantaris (I–L), and Soleus (M–P) from Wt (A, C, E, G, I, K, M, O) and TEAD1-Tg mice (B, D, F, H, J, L, N, P). Insets are magnified images of the representative areas within the tissue. (Q–S) EDL fiber number (Q), fiber area (R), and fiber diameter (S) are quantified for both genotypes (n > 3 adult mice for all measurements).DOI: http://dx.doi.org/10.7554/eLife.15461.003
+**Figure 1.:** (A–P) H and E (A–B, E–F, I–J, M–N) and Sirius Red (C–D, G–H, K–L, O–P) stains of TA (A–D), EDL (E–H), Plantaris (I–L), and Soleus (M–P) from Wt (A, C, E, G, I, K, M, O) and TEAD1-Tg mice (B, D, F, H, J, L, N, P). Insets are magnified images of the representative areas within the tissue. (Q–S) EDL fiber number (Q), fiber area (R), and fiber diameter (S) are quantified for both genotypes (n > 3 adult mice for all measurements).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Wt (A, C, E, G) and TEAD1-Tg (B, D, F, H) TA muscles were queried for percentages of type IIX fibers (A, B), fibers that were not IIX (C, D), type IIa fibers (E, F), and type I fibers (G, H). The TA muscle was chosen for analysis because it is comprised of all muscle fiber types. The results were then quantified (I). n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.004
+**Figure 1—figure supplement 1.:** Wt (A, C, E, G) and TEAD1-Tg (B, D, F, H) TA muscles were queried for percentages of type IIX fibers (A, B), fibers that were not IIX (C, D), type IIa fibers (E, F), and type I fibers (G, H). The TA muscle was chosen for analysis because it is comprised of all muscle fiber types. The results were then quantified (I). n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
 We investigated the size of skeletal muscle of multiple hind limb muscle groups from TEAD1-Tg mice by weight and by histological staining to determine muscle fiber size and number. Four muscle groups were chosen based on their fiber-type compositions as follows: primarily fast-twitch glycolytic fibers (EDL and plantaris), slow-twitch oxidative fibers (soleus), and mixed fast- and slow-fiber types (TA) (Figure 1). Histological staining by haematoxylin and eosin (H and E), as well as, by Sirius Red of the chosen muscle groups from 3-months old TEAD1-Tg and Wt littermates did not reveal histopathology as myofiber nuclei were peripherally located, and interstitial spacing between individual fibers was normal with no excess collagen or mononucleated cells (Figure 1A–P). TEAD1-Tg mice also did not display muscle hypertrophy, as weights of all analyzed hind limb muscles were unchanged (Table 4). Because its fibers extend the entire length of the muscle, the EDL muscle facilitates accurate determination of myofib er number and size in cross sections. No differences were detected in myofiber number (Figure 1Q), or in myofiber size by cross-sectional area (Figure 1R) and fiber diameter (Figure 1S) between TEAD1-Tg and Wt samples. All together, we conclude that forced expression of TEAD1 does not induce any overt pathological (i.e. fibrosis) or size (i.e. hypertrophy or hyperplasia) alterations of skeletal muscle.
 
-Reports of a higher density of SCs in slow-twitch compared to fast-twitch muscles (
+Reports of a higher density of SCs in slow-twitch compared to fast-twitch muscles (Gibson and Schultz, 1983; Schmalbruch and Hellhammer, 1977) prompted us to investigate the SC compartment in TEAD1-Tg muscle, which has an increase in slow muscle gene expression (Tsika et al., 2008). We determined SC number by assessing Pax7+ cells on TA muscle sections by IF staining (Figure 2A,Bi; quantification in Figure 2I). A striking 5-fold increase in Pax7+ cells in TEAD1-Tg was found as compared to Wt TA muscle (Figure 2I). This increase is of much greater magnitude than expected from the ~2-fold difference in SC number between slow- and fast-twitch muscles (Gibson and Schultz, 1983; Schmalbruch and Hellhammer, 1977). The increase in SC number was consistent between 3 independent TEAD1-Tg mouse lines (L12, L4, L14) excluding the possibility of transgene integration sites accounting for the observed increase in SCs (Figure 2I). For the rest of this study, we utilized line L12 exclusively for consistency.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig2-v1.jpg)
 
-**Figure 2.:** (A–H) Pax7 IF in hind limb muscle groups: TA (iA–A, iB–B), Plantaris (iC–C, iD–D), Soleus (iE–E, iF–F), and EDL (iG–G, iH–H). Wt (iA–A, iC–C, iE–E, iG–G) and TEAD1-Tg muscles (iB–B, iD–D, iF–Fi, H–H) are represented. iA–iH are zoomed images of areas represented by the white boxes in iA–H, arrows indicate Pax7 (green) positive nuclei (blue). (I–K) Quantification of SC hyperplasia (fold increase above Wt) in TA sections from three independent TEAD1 transgenic lines with different transgene insertion sites (I). Quantification of TA sections from Wt and TEAD1-Tg line L12 for fold increase of myonuclei per fiber, SC per fiber, and SC per myonuclei (J). Quantification of plantaris, soleus, and EDL muscle group sections for fold increase in SC number in TEAD1-Tg line L12 compared to WT (K). n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.005
+**Figure 2.:** (A–Hi) Pax7 IF in hind limb muscle groups: TA (A–Ai, B–Bi), Plantaris (C–Ci, D–Di), Soleus (E–Ei, F–Fi), and EDL (G–Gi, H–Hi). Wt (A–Ai, C–Ci, E–Ei, G–Gi) and TEAD1-Tg muscles (B–Bi, D–Di, F–Fi, H–Hi) are represented. Ai–Hi are zoomed images of areas represented by the white boxes in A–H, arrows indicate Pax7 (green) positive nuclei (blue). (I–K) Quantification of SC hyperplasia (fold increase above Wt) in TA sections from three independent TEAD1 transgenic lines with different transgene insertion sites (I). Quantification of TA sections from Wt and TEAD1-Tg line L12 for fold increase of myonuclei per fiber, SC per fiber, and SC per myonuclei (J). Quantification of plantaris, soleus, and EDL muscle group sections for fold increase in SC number in TEAD1-Tg line L12 compared to WT (K). n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
 The absence of myofiber hyperplasia and/or hypertrophy (Figure 1) argues for a specific SC hyperplasia in TEAD1-Tg muscle. To confirm this, we quantified myofiber nuclei in TA muscles, which revealed no differences in the myonuclei to myofiber ratio, yet the SC to myonuclei ratio is increased 5-fold when comparing TEAD1-Tg and Wt samples, thus establishing a selective effect in SC hyperplasia (Figure 2J). We also detected significant increases in SCs among the groups of muscle of TEAD1-Tg mice, including ~4.5-fold increase in the plantaris, ~6-fold increase in the soleus, and ~2.5-fold increase in the EDL (Figure 2C–Hi; quantification in Figure 2K). The SC hyperplasia of the predominantly slow-twitch soleus is particularly noteworthy as it argues against the increase in SCs being a simple consequence of myofiber conversion to the slow phenotype (Tsika et al., 2008). Collectively, these findings rule out skeletal muscle hypertrophy and hyperplasia, and demonstrate specific SC hyperplasia in TEAD1-Tg fast- and slow-twitch skeletal muscles of the lower hind limb.
 
-## SC hyperplasia is established during early postnatal development
+### SC hyperplasia is established during early postnatal development
 
-During muscle development, SCs gradually become quiescent by 3–4 weeks after birth (
+During muscle development, SCs gradually become quiescent by 3–4 weeks after birth (Lepper et al., 2009; White et al., 2010). Intriguingly, peak HA-TEAD1 expression is detected prior to this time, at around postnatal day 14 (PN 14d) (Tsika et al., 2008). Therefore, we next examined whether TEAD1-Tg muscles show SC hyperplasia during this early postnatal time period. SCs were quantified in hind limb muscles of TEAD1-Tg and Wt sibling mice at designated postnatal time points (PN 10d, PN 12d, PN 14d and PN 20d), as was done for adult muscles at three months (Figure 2, Materials and methods). To monitor SC proliferation during the postnatal period, we applied the thymidine analogue EdU. At PN 10d and PN 12d, we did not detect differences in the numbers of sublaminal Pax7+ cells or in the percentages of EdU+/Pax7+ cells between TEAD1-Tg and Wt sibling TA muscles (Figure 3A,Biii; quantification in Figure 3E,G). At PN 14d, TEAD1-Tg TA muscles had begun accumulating an ~1.5-fold greater number of Pax7+ cells when compared to Wt TA muscles (Figure 3E,F). This difference became greater at PN 20d when TA muscles boasted a >3-fold increase in SCs in TEAD1-Tg versus Wt mice (Figure 3C,Diii; quantification in Figure 3E-F). Quantification of the percentage of sublaminal Pax7+/EdU+ cells at PN 20d revealed a significant 2-fold increase in the percentage of proliferative SCs in TEAD1-Tg compared to Wt TA muscles (Figure 3G). Conceivably, SCs could be protected from cell death in TEAD1-Tg muscle, which could contribute to the greater number of SCs. To assay for SC apoptosis, we performed TUNEL labeling coupled with anti-Pax7 IF on TA muscle sections from TEAD1-Tg and Wt siblings at PN 14d when initial SC increases are detected (Figure 3H,I). A single instance of co-labeling was detected in the TEAD1-Tg sections (0.15%) while none were observed in the Wt sections (Figure 3J) suggesting TEAD1-Tg SC protection from apoptosis does not drive the SC hyperplasia. Together, these data indicate that TEAD1-Tg muscle accumulates super-numeral SCs beginning at ~2 weeks after birth via extending the proliferation period. Such super-numeral SCs appear to be excluded from fusion with the myofiber (no increase in the myonuclei/fiber ratio), providing the basis for the specific increase of SCs over myonuclei number.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig3-v1.jpg)
 
-**Figure 3.:** (A–D) Wt (iiiA–A, iiiC–C) and TEAD1-Tg (iiiB–B, iiiD–D) SC numbers and proliferation were assessed. Postnatal day 12 (PN 12d, iiiA–B) and day 20 (PN 20d, iiiC–D) are represented in IF images. Pax7 (green) alone is shown in iiiA, B, C, and D, and combined with DAPI (blue) and laminin (red) in the merged images A, iB, iC, iD. EdU (red) alone is represented in iA, iiB, iiC, iiD and combined with Pax7 (green) in merged images iiA, iiiB, iiiC, iiiD, arrows indicate nuclei labeled with both EdU and Pax7 while arrowheads are Pax7 positive nuclei that show no EdU label. (iiiE–G) Numbers of SCs normalized to total myofibers per image is quantified for PN 10d, 12d, 14d, and 20d Wt or TEAD1-Tg TA sections (E). Fold increase in SC numbers in TEAD1-Tg TA sections compared to Wt was quantified for PN 10d, 12d, 14d, and 20d (F). Fold increase in percent EdU positive SCs in TEAD1-Tg TA sections compared to Wt was quantified for PN 12d and 20d (G). (H–J) Apoptosis rates of SCs were assessed for PN 14d. Representative images for Wt (H) and TEAD1-Tg muscle (I) show Pax7 (green) and TUNEL (red) stained nuclei (blue). Percent of SCs that were TUNEL positive or negative was quantified (J). n > 3 mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.006
+**Figure 3.:** (A–Diii) Wt (A–Aiii, C–Ciii) and TEAD1-Tg (B–Biii, D–Diii) SC numbers and proliferation were assessed. Postnatal day 12 (PN 12d, A–Biii) and day 20 (PN 20d, C–Diii) are represented in IF images. Pax7 (green) alone is shown in A, B, C, and D, and combined with DAPI (blue) and laminin (red) in the merged images Ai, Bi, Ci, Di. EdU (red) alone is represented in Aii, Bii, Cii, Dii and combined with Pax7 (green) in merged images Aiii, Biii, Ciii, Diii, arrows indicate nuclei labeled with both EdU and Pax7 while arrowheads are Pax7 positive nuclei that show no EdU label. (E–G) Numbers of SCs normalized to total myofibers per image is quantified for PN 10d, 12d, 14d, and 20d Wt or TEAD1-Tg TA sections (E). Fold increase in SC numbers in TEAD1-Tg TA sections compared to Wt was quantified for PN 10d, 12d, 14d, and 20d (F). Fold increase in percent EdU positive SCs in TEAD1-Tg TA sections compared to Wt was quantified for PN 12d and 20d (G). (H–J) Apoptosis rates of SCs were assessed for PN 14d. Representative images for Wt (H) and TEAD1-Tg muscle (I) show Pax7 (green) and TUNEL (red) stained nuclei (blue). Percent of SCs that were TUNEL positive or negative was quantified (J). n > 3 mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
-## Super-numeral SCs have normal niche interactions
+### Super-numeral SCs have normal niche interactions
 
-During adult homeostasis, SCs localize to the myofiber sublaminal space, are highly polarized, and maintain a quiescent state, all of which is characterized by typical molecular marker expression and a non-proliferative state. To determine if super-numeral SCs of TEAD1-Tg mice have acquired the quiescent muscle stem cell state, we performed extensive marker and proliferation analyses in adult (3-months old) mice. First, we determined proper niche localization of SCs using anti-Pax7 and anti-laminin dual-IF staining (
+During adult homeostasis, SCs localize to the myofiber sublaminal space, are highly polarized, and maintain a quiescent state, all of which is characterized by typical molecular marker expression and a non-proliferative state. To determine if super-numeral SCs of TEAD1-Tg mice have acquired the quiescent muscle stem cell state, we performed extensive marker and proliferation analyses in adult (3-months old) mice. First, we determined proper niche localization of SCs using anti-Pax7 and anti-laminin dual-IF staining (Figure 4A,B). All SCs of TEAD1-Tg muscle localized to the sublaminal space (Figure 4G). Next, we analyzed SC polarity using β1-Integrin as a basal marker and M-Cadherin as an apical marker (Figure 4C–F). Similar to controls, ≥80% of SCs displayed proper polarity (Figure 4H). Calcitonin receptor (CTR) is specifically expressed by quiescent SCs and important for maintenance of quiescence (Fukada et al., 2007; Yamaguchi et al., 2015). Like Wt SCs, SCs from TEAD1-Tg mice express CTR (Figure 4I–Ji; quantification in Figure 4KJ) and also the general stem cell marker, CD34 (Figure 4K). These data suggest that super-numeral adult SCs of TEAD1-Tg mice maintain proper cell polarity, niche interaction, as well as the quiescent state. To probe the quiescent state more rigorously, we conducted long-term proliferation assays via administering BrdU in the drinking water for a month and assaying for BrdU+ nuclei in the sublaminal space (Figure 4L–M). No differences were found in proliferation between SCs of TEAD1-Tg and those of Wt muscles (Figure 4N–O). All together, we conclude that super-numeral SCs of TEAD1-Tg muscle acquire and maintain proper niche occupation and cell polarity, as well as, the quiescent state typical of adult muscle stem cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig4-v1.jpg)
 
-**Figure 4.:** (A–H) Localization of SC (Pax7, green) within the muscle fiber basal lamina (laminin, red) shown by IF of adult Wt (A) and TEAD1-Tg (B) TA sections and quantified for TEAD1-Tg TA sections (G). Polarized Integrin-β1 expression (Integrin, green) in SCs (Pax7, red) was assessed on TEAD1-Tg and Wt isolated EDL fibers (myofiber, mf) and found to be basally localized in all instances where the position of the SC on the fiber allowed for assessment (C,D). M-Cadherin (Mcad, green) polarization in SCs (Pax7, nuclei shown in red) was assessed in TA sections for apical localization (E,F), which is quantified in H. Non-polarized Mcad in Wt and TEAD1-Tg samples is likely due to imperfect SC orientation within the section. I–K) Assessment of quiescent marker (calcitonin receptor, CTR) expression in SCs (Pax7, I and iJ) on Wt (iI) and TEAD1-Tg (J) isolated EDL fibers are represented by IF and quantified in K along with the general stem cell marker, CD34. L–N) Following a month-long BrdU treatment, Wt (L) and TEAD1-Tg (M) adult TA sections were assessed for long-term proliferation. Since myonuclei are non-proliferative and SC nuclei present the only other sublaminal nuclear species, this assay cumulatively captures any SC proliferation over the one-month long period. Very low numbers of BrdU nuclei were detected in both sublaminal and interstitial compartments of TA muscles from TEAD1-Tg and Wt mice. BrdU (green) labeled nuclei (blue) within the basal lamina (red) of the myofiber were quantified (N) and normalized to SC number (O). For G, H, and K n > 50 cells, while for N, 3 mice were quantified for each genotype.DOI: http://dx.doi.org/10.7554/eLife.15461.007
+**Figure 4.:** (A–H) Localization of SC (Pax7, green) within the muscle fiber basal lamina (laminin, red) shown by IF of adult Wt (A) and TEAD1-Tg (B) TA sections and quantified for TEAD1-Tg TA sections (G). Polarized Integrin-β1 expression (Integrin, green) in SCs (Pax7, red) was assessed on TEAD1-Tg and Wt isolated EDL fibers (myofiber, mf) and found to be basally localized in all instances where the position of the SC on the fiber allowed for assessment (C,D). M-Cadherin (Mcad, green) polarization in SCs (Pax7, nuclei shown in red) was assessed in TA sections for apical localization (E,F), which is quantified in H. Non-polarized Mcad in Wt and TEAD1-Tg samples is likely due to imperfect SC orientation within the section. I–K) Assessment of quiescent marker (calcitonin receptor, CTR) expression in SCs (Pax7, Ii and Ji) on Wt (I) and TEAD1-Tg (J) isolated EDL fibers are represented by IF and quantified in K along with the general stem cell marker, CD34. L–N) Following a month-long BrdU treatment, Wt (L) and TEAD1-Tg (M) adult TA sections were assessed for long-term proliferation. Since myonuclei are non-proliferative and SC nuclei present the only other sublaminal nuclear species, this assay cumulatively captures any SC proliferation over the one-month long period. Very low numbers of BrdU nuclei were detected in both sublaminal and interstitial compartments of TA muscles from TEAD1-Tg and Wt mice. BrdU (green) labeled nuclei (blue) within the basal lamina (red) of the myofiber were quantified (N) and normalized to SC number (O). For G, H, and K n > 50 cells, while for N, 3 mice were quantified for each genotype.
 
-## Skeletal muscle regeneration is accelerated in TEAD1-Tg mice
+### Skeletal muscle regeneration is accelerated in TEAD1-Tg mice
 
-Since we found SCs of TEAD1-Tg skeletal muscle to have a normal quiescent phenotype (
+Since we found SCs of TEAD1-Tg skeletal muscle to have a normal quiescent phenotype (Figure 4), we next asked whether they retain the functional capacity to regenerate tissue after injury. To determine this, the TA muscles of adult (2–3 months old) TEAD1-Tg and Wt littermates were injured by intra-muscular injection of cardiotoxin (CTX; see Materials and methods). Histological analyses of muscle regenerates were performed 3, 7, and 14 days post injury (dpi, Figure 5A–Fi). Remarkably, while not detectable in Wt samples, very small regenerative myotubes could be detected histologically at 3 dpi in TEAD1-Tg regenerates (Figure 5A–Bi), indicating that the regeneration process is accelerated in muscle with super-numeral SCs. To confirm this, we applied IF analyses using embryonic myosin heavy chain (eMyHC) as a marker for early regenerated myotubes and found widespread and robust eMyHC expression in TEAD1-Tg muscle regenerates, which is in contrast to Wt regenerates, for which eMyHC expression is more sparse and less robust (Figure 5I–Ji). At 7 and 14 dpi, regenerative myofibers with centrally located myonuclei were present in both Wt and TEAD1-Tg samples, with no evidence of fibrosis or immune cell infiltration (Figure 5C–Fi), demonstrating that TEAD1-Tg muscle retains full regenerative capacity. Consistent with the accelerated formation of new myofibers at 3 dpi, when we quantified the sizes of regenerated myofibers at 7 dpi, we found both fiber area and diameter to be significantly increased in TEAD1-Tg muscle regenerates compared to Wt (Figure 5G–H). By 14 dpi, no difference in fiber size was detected. Maturation of regenerative myofibers is normal in TEAD1-Tg TA muscles as fiber sizes were no different compared to Wt at 35 dpi (Figure 5G–H). These data demonstrate that TEAD1-Tg muscle features accelerated kinetics of initial myotube formation upon injury. Despite this accelerated regeneration process and super-numeral SCs, we are surprised that no myofiber hypertrophy resulted from the injury-induced regenerative myogenesis. We therefore suggest that these two processes are separable.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig5-v1.jpg)
 
-**Figure 5.:** (A–F) H and E stains of Wt (iA–A, iC–C, iE–E) and TEAD1-Tg (iB–B, iD–D, iF–F) TA muscle 3 days (3 dpi, iA–B), 7 days (7 dpi, iC–D), or 14 days (14 dpi, iE–F) after injury with cardiotoxin (CTX). Panels iAi–Fi show a higher magnification of the regenerating muscle (indicated by arrows and central nuclei). A lack of arrows in A is due to a lack of identifiable young fibers at that stage in Wt muscle. iG–H) Quantification of fiber area (G) and fiber diameter (H) for 7 dpi, 14 dpi, and 35 dpi. I–J) IF of embryonic myosin heavy chain (eMyHC, iI–J) localized to regenerating fibers in Wt (iI–I) and TEAD1-Tg (iJ–J) TA muscles 3 days after injury by CTX. Images iI and iJ show a zoomed-in region indicated by the white boxes in images iI and J. n > 3 mice for all samples quantified. p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.008
+**Figure 5.:** (A–Fi) H and E stains of Wt (A–Ai, C–Ci, E–Ei) and TEAD1-Tg (B–Bi, D–Di, F–Fi) TA muscle 3 days (3 dpi, A–Bi), 7 days (7 dpi, C–Di), or 14 days (14 dpi, E–Fi) after injury with cardiotoxin (CTX). Panels Ai–Fi show a higher magnification of the regenerating muscle (indicated by arrows and central nuclei). A lack of arrows in Ai is due to a lack of identifiable young fibers at that stage in Wt muscle. G–H) Quantification of fiber area (G) and fiber diameter (H) for 7 dpi, 14 dpi, and 35 dpi. I–Ji) IF of embryonic myosin heavy chain (eMyHC, I–Ji) localized to regenerating fibers in Wt (I–Ii) and TEAD1-Tg (J–Ji) TA muscles 3 days after injury by CTX. Images Ii and Ji show a zoomed-in region indicated by the white boxes in images I and J. n > 3 mice for all samples quantified. p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
-We applied an additional injury paradigm via the myotoxin BaCl
+We applied an additional injury paradigm via the myotoxin BaCl2, which is thought to display less toxicity towards SCs compared to cardiotoxin (Boldrin et al., 2012; Gayraud-Morel et al., 2009), to more accurately elucidate the rapid kinetics of initial muscle repair (3, 5 and 7 dpi; Figure 6A–Hi). Confirming our observations made with the cardiotoxin injury paradigm (Figure 5), we found significantly larger myofibers in TEAD1-Tg compared to Wt control regenerates demonstrated by increased fiber area (Figure 6I) and diameter (Figure 6J) at both 5 and 7 dpi. We conducted IF analyses of myogenic marker expression to examine the timing of myogenic differentiation in more detail (Figure 6K–R). Myogenin is a terminal marker of myogenic differentiation and its expression gradually increases from 3 to 5 dpi; while eMyHC expression typically initiates at 3 dpi, peaks at 4 and 5 dpi, and then diminishes by 6 to 7 dpi, at which point it becomes replaced by adult myosin heavy chain isoforms. Consistent with the earlier detection of new myotubes by 3 dpi by histology in TEAD1-Tg compared to Wt regenerates (Figure 5A,B), we found both Myogenin and eMyHC to be increased at this early regeneration time point in TEAD1-Tg compared to Wt samples (Figure 6K–N). By 5 dpi, while the number of Myogenin+ cells is still increased in TEAD1-Tg compared to Wt regenerates (Figure 6O–P), eMyHC expression is already reduced in TEAD1-Tg regenerative myofibers (Figure 6R) compared to the 3 dpi time point (Figure 6N) and the peak expression observed in Wt 5 dpi skeletal muscle regenerates (Figure 6P), suggesting it is already being replaced by more mature myosins. Taken together, these data demonstrate acceleration of skeletal muscle regeneration by super-numeral SCs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig6-v1.jpg)
 
-**Figure 6.:** 2.(A–H) H and E stains of Wt (iA–D) and TEAD1-Tg (iE–H) TA muscle 3 days (iB–B, iF–F), 5 days (iC–C, iG–G), or 7 days (iD–D, iH–H) after injury with BaCli2 or uninjured (A–A, iE–E). Images iA are higher magnification views of regenerating areas of muscle (regenerating fibers indicated by black arrows). i–HiI–J) Quantification of fiber area (I) and fiber diameter (J) for 5 days and 7 days after BaCl2 injury. K–R) IF images show myogenin (green) and DAPI (blue; K,M,O,Q) or embryonic myosin heavy chain (green) with laminin (red; L,N,P,R) localized to regenerating fibers in Wt (K–L, O–P) and TEAD1-Tg (M–N, Q–R) TAs 3 days and 5 days after BaCl2 injury. For quantification of fiber number and diameter n=3 mice were used. p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.009
+**Figure 6.:** (A–Hi) H and E stains of Wt (A–Di) and TEAD1-Tg (E–Hi) TA muscle 3 days (B–Bi, F–Fi), 5 days (C–Ci, G–Gi), or 7 days (D–Di, H–Hi) after injury with BaCl2 or uninjured (A–Ai, E–Ei). Images Ai–Hi are higher magnification views of regenerating areas of muscle (regenerating fibers indicated by black arrows). I–J) Quantification of fiber area (I) and fiber diameter (J) for 5 days and 7 days after BaCl2 injury. K–R) IF images show myogenin (green) and DAPI (blue; K,M,O,Q) or embryonic myosin heavy chain (green) with laminin (red; L,N,P,R) localized to regenerating fibers in Wt (K–L, O–P) and TEAD1-Tg (M–N, Q–R) TAs 3 days and 5 days after BaCl2 injury. For quantification of fiber number and diameter n=3 mice were used. p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
-## Super-numeral SCs of TEAD1-Tg muscle retain full regenerative capacity over repeated injury-induced regeneration bouts
+### Super-numeral SCs of TEAD1-Tg muscle retain full regenerative capacity over repeated injury-induced regeneration bouts
 
-SCs represent a self-renewable reservoir of stem cells able to repeatedly provide myonuclei for muscle repair. To test if super-numeral SCs of TEAD1-Tg muscle can self-renew, we assayed for their capacity to support repeated regeneration bouts. For this, we injured the TA muscles of TEAD1-Tg and Wt littermates three times, allowing 5 weeks between injuries for complete regeneration (
+SCs represent a self-renewable reservoir of stem cells able to repeatedly provide myonuclei for muscle repair. To test if super-numeral SCs of TEAD1-Tg muscle can self-renew, we assayed for their capacity to support repeated regeneration bouts. For this, we injured the TA muscles of TEAD1-Tg and Wt littermates three times, allowing 5 weeks between injuries for complete regeneration (Figure 7A). Indeed, robust regeneration in both singly (Figure 7B,D) and triply (Figure 7C,E) injured TA muscles of both Wt and TEAD1-Tg mice were observed. We did not detect any excess collagen deposition in TEAD1-Tg TA muscles after one or three injury-induced regeneration bouts compared to Wt TA muscles (Figure 7F–I). These data demonstrate that super-numeral SCs of TEAD1-Tg skeletal muscle retain regenerative capacity after repeated injury and suggest that these SCs self-renew (to maintain their numbers as cells are recruited for fusion into myofibers). To test if these SCs participated in and contributed to the regeneration process prior to replenishing the Pax7+ muscle reserve cell pool, we interrogated whether Pax7+ SCs of skeletal muscle regenerates had proliferated by administering EdU during the proliferative period of the regeneration process to mark cells in S-Phase. Two weeks after injury, we could readily detect EdU+/Pax7+ cells in both Wt and TEAD1-Tg samples (Figure 7J–K). We did not detect any statistically significant differences in the percentages of EdU+/Pax7+ SCs between Wt and TEAD1-Tg samples (Figure 7L). These data further support that SCs of TEAD1-Tg mice are self-renewing. Furthermore, we not only detected sublaminal Pax7+ SCs in singly-, but also in triply-injured TA muscles of both TEAD1-Tg and Wt littermates (Figure 7M–P). Quantification of the number of Pax7+ SCs revealed that super-numeral SCs are maintained in skeletal muscle regenerates of TEAD1-Tg mice (Figure 7Q–R), though the magnitude of the typical 5-fold increase in SCs in uninjured muscle is reduced to ~3.5-fold after one and ~3-fold after three injuries (Figure 7R). This reduction in the magnitude of the SC hyperplasia after three injuries could reflect a diminished self-renewal capacity. All together, these data demonstrate that super-numeral SCs of TEAD1-Tg muscle can self-renew and maintain the tissue’s high capability for regeneration after repeated traumatic insults.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig7-v1.jpg)
 
-**Figure 7.:** Adult mouse TA muscles were injured with BaCl2 multiple times with 35-day regeneration periods between injuries as indicated (A). This injury paradigm applies to panels B–I, M–P) H and E stains show muscle after 35 days of regeneration following one injury (B,D) or 3 injuries (C,E) for Wt (B,C) or TEAD1-Tg muscle (D,E). (F–I) Sirius Red stains show the connective tissue after 35 days of regeneration following one injury (F,H) or 3 injuries (G,I) for Wt (F,G) or TEAD1-Tg muscle (H,I). (J–L) Wt (J) and TEAD1-Tg (K) TA muscles were injured with CTX and regenerated for 2 weeks. EdU was given on days 2–5 of regeneration. IF of Pax7 (green), laminin (red), EdU (white), and counterstained with DAPI (blue) allowed for quantification of sublaminal Pax7 and EdU positive cells (L). Myonuclei in images are EdU positive but reduced in intensity due to larger nuclear volume. M–P) Numbers of Pax7 expressing cells were assessed by IF of Pax7 (green) and laminin (red), counterstained with DAPI (blue) after 35 days of regeneration following one injury (M,O) or 3 injuries (N,P) for Wt (M,N) or TEAD1-Tg muscle (O,P) and is quantified as SC averages per area (Q) and fold increase relative to Wt (R). Uninjured data from Figure 2 displayed for comparison. n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.010
+**Figure 7.:** Adult mouse TA muscles were injured with BaCl2 multiple times with 35-day regeneration periods between injuries as indicated (A). This injury paradigm applies to panels B–I, M–P) H and E stains show muscle after 35 days of regeneration following one injury (B,D) or 3 injuries (C,E) for Wt (B,C) or TEAD1-Tg muscle (D,E). (F–I) Sirius Red stains show the connective tissue after 35 days of regeneration following one injury (F,H) or 3 injuries (G,I) for Wt (F,G) or TEAD1-Tg muscle (H,I). (J–L) Wt (J) and TEAD1-Tg (K) TA muscles were injured with CTX and regenerated for 2 weeks. EdU was given on days 2–5 of regeneration. IF of Pax7 (green), laminin (red), EdU (white), and counterstained with DAPI (blue) allowed for quantification of sublaminal Pax7 and EdU positive cells (L). Myonuclei in images are EdU positive but reduced in intensity due to larger nuclear volume. M–P) Numbers of Pax7 expressing cells were assessed by IF of Pax7 (green) and laminin (red), counterstained with DAPI (blue) after 35 days of regeneration following one injury (M,O) or 3 injuries (N,P) for Wt (M,N) or TEAD1-Tg muscle (O,P) and is quantified as SC averages per area (Q) and fold increase relative to Wt (R). Uninjured data from Figure 2 displayed for comparison. n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
-## Dystrophic pathology is ameliorated in mdx; TEAD1-Tg skeletal muscle
+### Dystrophic pathology is ameliorated in mdx; TEAD1-Tg skeletal muscle
 
-To challenge the regenerative capacity of TEAD1-Tg muscle further, we subjected the tissue to a state of chronic degeneration. To accomplish this, we bred TEAD1-Tg mice to the
+To challenge the regenerative capacity of TEAD1-Tg muscle further, we subjected the tissue to a state of chronic degeneration. To accomplish this, we bred TEAD1-Tg mice to the mdx mouse, a mouse model of Duchenne muscular dystrophy, which is the most severe form of the muscle wasting diseases. These mice lack the sarcolemmal protein dystrophin, which results in greatly destabilized muscle fibers and thus, chronically injured and regenerating muscle tissue, evidenced by the presence of many regenerative myofibers with centrally located nuclei, a hallmark pathological feature of this disease. Histological analyses revealed greatly reduced numbers of regenerative muscle fibers in mdx; TEAD1-Tg compared to mdx TA muscles of 2–3 months old littermates (Figure 8A–B). The percentage of fibers with central nuclei was reduced from ~55% in Wt to less than 20% in TEAD1-Tg muscles (Figure 8C), implying less degeneration in mdx; TEAD1-Tg muscle. We also noted a concomitant significant reduction in myofiber hypertrophy, a secondary pathological feature of the mdx dystrophy model (Figure 8D–E). To further probe the extent of improvement of the dystrophic phenotype, we assayed for fibrosis, another histological hallmark feature of skeletal muscle dystrophy. Trichrome stainings revealed a significant reduction in fibrotic area in mdx; TEAD1-Tg compared to mdx muscle (Figure 8F–G; quantification in Figure 8H). Dystrophic muscle fibers have an altered sarcolemmal permeability, which can be assessed via Evans Blue Dye (EBD) uptake. While large numbers of EBD positive fibers where detected in mdx muscle, EBD incorporation by fibers of mdx; TEAD1-Tg mice was largely stunted (Figure 8I–J; quantification in Figure 8K). The absence of evidence for worsened muscle pathology and by contrast, an amelioration of the dystrophy argues for SCs being functional in dystrophic TEAD1-Tg muscle. Lastly, we assayed for SCs in dystrophic muscle of mdx and mdx; TEAD1-Tg littermates (Figure 8L–M). Quantification of Pax7+ cells revealed an ~2-fold increase in SCs in mdx; TEAD1-Tg mice (Figure 8N). While less dramatic compared to the fold increase observed in healthy muscle, the SC hyperplasia in dystrophic muscle is quite substantial considering the baseline SC numbers are already increased due to higher SC proliferation in the chronically de- and regenerating environment. The magnitude of the SC hyperplasia is potentially also affected by impaired dystrophin-deficient SCs (Dumont et al., 2015b).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig8-v1.jpg)
 
-**Figure 8.:** Histology, IF analyses, and qRTPCR on dystrophic muscle from mdx mice modeling chronic injury. A–C) Asterisks in H and E stained muscle sections indicate regenerated fibers in mdx (A) and mdx; TEAD1-Tg mice (B). The percent of fibers that are regenerative is quantified for each genotype in C. D–E) The fiber area (D) and fiber diameter (E) for mdx or mdx; TEAD1-Tg TA muscle is also quantified. F–H) Trichrome staining was employed to label fibrotic areas in mdx (F) or mdx; TEAD1-Tg (G) TA muscle. Percent fibrotic area was quantified (H). I–K) Membrane leakage was assessed by Evan’s Blue Dye incorporation into the myofibers of mdx (I) or mdx; TEAD1-Tg (J) TA muscle. Positive fibers per area were quantified (K). (L–N) Numbers of Pax7 expressing cells were assessed by IF of Pax7 (green), and laminin (red), counterstained with DAPI (blue) in mdx (L) or mdx; TEAD1-Tg (M). TA muscles are quantified as fold increase relative to mdx in N. Utrophin (Utrn) expression was quantified in mdx or mdx; TEAD1-Tg TA muscle via qRTPCR (O). n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.011
+**Figure 8.:** Histology, IF analyses, and qRTPCR on dystrophic muscle from mdx mice modeling chronic injury. A–C) Asterisks in H and E stained muscle sections indicate regenerated fibers in mdx (A) and mdx; TEAD1-Tg mice (B). The percent of fibers that are regenerative is quantified for each genotype in C. D–E) The fiber area (D) and fiber diameter (E) for mdx or mdx; TEAD1-Tg TA muscle is also quantified. F–H) Trichrome staining was employed to label fibrotic areas in mdx (F) or mdx; TEAD1-Tg (G) TA muscle. Percent fibrotic area was quantified (H). I–K) Membrane leakage was assessed by Evan’s Blue Dye incorporation into the myofibers of mdx (I) or mdx; TEAD1-Tg (J) TA muscle. Positive fibers per area were quantified (K). (L–N) Numbers of Pax7 expressing cells were assessed by IF of Pax7 (green), and laminin (red), counterstained with DAPI (blue) in mdx (L) or mdx; TEAD1-Tg (M). TA muscles are quantified as fold increase relative to mdx in N. Utrophin (Utrn) expression was quantified in mdx or mdx; TEAD1-Tg TA muscle via qRTPCR (O). n > 3 adult mice for all measurements, p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
 Whether increased SCs, altered myofiber properties, or both contribute to the amelioration of the dystrophic pathology in mdx; TEAD1-Tg muscle is unclear. Besides differing in their contractile properties, slow-twitch muscle features higher utrophin levels compared to fast-twitch muscle (Gramolini et al., 2001). Utrophin can functionally substitute for dystrophin (Rafael et al., 1998). Since TEAD1-Tg muscle features a transition to the slow contractile muscle protein phenotype, we decided to investigate utrophin expression in mdx; TEAD1-Tg skeletal muscle. Quantitative PCR revealed an ~3-fold increase in utrophin expression in mdx; TEAD1-Tg compared to mdx muscle samples (Figure 8O). Additionally, we assayed for revertant myofibers via anti-dystrophin IF. No increased reversion rates were found in mdx; TEAD1-Tg compared to mdx muscle samples (data not shown). These data suggest that stabilization of the sarcolemma via utrophin up-regulation contributes to amelioration of the dystrophic muscle pathology of mdx; TEAD1-Tg mice.
 
-## Non-cell autonomous induction of SC hyperplasia in TEAD1-Tg muscle
+### Non-cell autonomous induction of SC hyperplasia in TEAD1-Tg muscle
 
-The HA-tagged TEAD1 transgene is under the control of the muscle creatine kinase promoter and presumed to be exclusively expressed by the myofiber and not its associated SCs. To confirm this, we determined the expression of the TEAD1 transgene with respect to SCs or the myofiber plasmalemma by co-IF for HA and Pax7 in TEAD1-Tg skeletal muscle (
+The HA-tagged TEAD1 transgene is under the control of the muscle creatine kinase promoter and presumed to be exclusively expressed by the myofiber and not its associated SCs. To confirm this, we determined the expression of the TEAD1 transgene with respect to SCs or the myofiber plasmalemma by co-IF for HA and Pax7 in TEAD1-Tg skeletal muscle (Figure 9A–Biii). We found no overlap of HA+ and Pax7+ nuclei (Figure 9A–Aiii). All HA expression was localized below the dystrophin+ domain revealing that the only TEAD1 expressing nuclear species are those within the myofiber (Figure 9B–Biii). To more rigorously probe MCK promoter-controlled TEAD1 transgene expression, we grew myoblasts in heterogeneous cultures containing both proliferative myoblasts as well as differentiated myocytes. We then assayed for transgene expression (HA) in post-mitotic differentiated myocytes (Myogenin+). All HA staining was contained within the domain of Myogenin+ cells (Figure 9C). These data demonstrate that the TEAD1 transgene is not expressed by proliferative myoblasts but only by differentiated myogenic cells. Reciprocally, we probed for TEAD1 transgene expression (via HA) in Pax7+ reserve cells. As expected, transgene expression was excluded from the domain of Pax7+ reserve cells (Figure 9C).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/15461/elife-15461-fig9-v1.jpg)
 
-**Figure 9.:** (A–A) IF images of TEAD1-Tg TA adult muscle show Pax7 expressing SCs (green; iiiA) and HA tagged TEAD1 (red; A), and are merged in image (iA) and a zoomed-in merged image (iiA) to show that these genes are expressed in distinct compartments. iiiB–B) IF of HA-TEAD1 (red, iiiB) and dystrophin (green, iB) show that the TEAD1 transgene is expressed in nuclei of the myofiber in TA adult muscle. Transgene expression was also queried by HA colocalization with Myogenin (Myog) and Pax7-expressing reserve cells in differentiated cell culture experiments after 3 and 5 days of differentiation, respectively (C). (D–J) In vitro differentiation of myoblasts derived from Wt (D–F) or TEAD1-Tg (G–I) hind limb muscle shows equivalent expression of MyoD (D,G; green), Myogenin (E,H; green), and myosin heavy chain (F,I; green) and is quantified in J (n> 480 cells for all). (K–M) Cultures of Wt (K) or TEAD1-Tg (L) myoblasts show equivalent EdU label (green), which is quantified in M (n>375 cell for each). N–P) Muscle fibers and associated SC were isolated and grown in culture for 72 hr with EdU in the growth media after 24 hr in culture. A minimum number of 50 fibers were quantified. Cell clones labeled with Pax7 (green), DAPI (blue), and/or EdU (red) can be observed on isolated muscle fibers from Wt (N) or TEAD1-Tg (O) mice and are quantified in P. The average number of Pax7-positive cells (T0) and the average number of clones on muscle fibers after 72 hr (T72) in growth media are quantified in Q. Clone sizes for TEAD1-Tg and Wt fibers at 72 hr post myofiber isolation in R (n=3 mice each). After 72 hr in culture, the ratio of self-renewing SCs to differentiating cells within these clones is quantified in U (n>150 clone) for both Wt (S) and TEAD1-Tg (T) isolated fibers cultured in 10% FBS/ DMEM. p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).DOI: http://dx.doi.org/10.7554/eLife.15461.012
+**Figure 9.:** (A–Aiii) IF images of TEAD1-Tg TA adult muscle show Pax7 expressing SCs (green; A) and HA tagged TEAD1 (red; Ai), and are merged in image (Aii) and a zoomed-in merged image (Aiii) to show that these genes are expressed in distinct compartments. B–Biii) IF of HA-TEAD1 (red, Bi) and dystrophin (green, B) show that the TEAD1 transgene is expressed in nuclei of the myofiber in TA adult muscle. Transgene expression was also queried by HA colocalization with Myogenin (Myog) and Pax7-expressing reserve cells in differentiated cell culture experiments after 3 and 5 days of differentiation, respectively (C). (D–J) In vitro differentiation of myoblasts derived from Wt (D–F) or TEAD1-Tg (G–I) hind limb muscle shows equivalent expression of MyoD (D,G; green), Myogenin (E,H; green), and myosin heavy chain (F,I; green) and is quantified in J (n> 480 cells for all). (K–M) Cultures of Wt (K) or TEAD1-Tg (L) myoblasts show equivalent EdU label (green), which is quantified in M (n>375 cell for each). N–P) Muscle fibers and associated SC were isolated and grown in culture for 72 hr with EdU in the growth media after 24 hr in culture. A minimum number of 50 fibers were quantified. Cell clones labeled with Pax7 (green), DAPI (blue), and/or EdU (red) can be observed on isolated muscle fibers from Wt (N) or TEAD1-Tg (O) mice and are quantified in P. The average number of Pax7-positive cells (T0) and the average number of clones on muscle fibers after 72 hr (T72) in growth media are quantified in Q. Clone sizes for TEAD1-Tg and Wt fibers at 72 hr post myofiber isolation in R (n=3 mice each). After 72 hr in culture, the ratio of self-renewing SCs to differentiating cells within these clones is quantified in U (n>150 clone) for both Wt (S) and TEAD1-Tg (T) isolated fibers cultured in 10% FBS/ DMEM. p<0.05 represented by (*), p<0.005 represented by (**), p<0.0005 represented by (***).
 
 The above results predict that the hyper-proliferation of SCs in TEAD1-Tg skeletal muscle (Figure 3) depends on their associated differentiated progeny, in which the TEAD1 transgene is expressed via the MCK promoter, i.e. the myofiber. To test this prediction, we performed in vitro myoblast culture experiments either in the absence or presence of the associated TEAD1-Tg myofiber (Figure 9D–U). First, we cultured primary myoblasts derived from either TEAD1-Tg or Wt hind limb muscles (Figure 9D–M). We detected no differences in the differentiation or proliferation capacities between them. Upon serum starvation, myoblasts from either genotype readily differentiated as indicated by early (MyoD), late (Myogenin), and terminal (myosin heavy chain) differentiation marker expression (Figure 9D–I; quantified inFigure 9J). Proliferation assays using EdU incorporation, also revealed no differences between primary myoblasts from TEAD1-Tg and from Wt muscles (Figure 9K–L; quantified in Figure 9M). To determine if the TEAD1-Tg myofiber affects proliferation of its attached cohort of SCs, we cultured single myofibers from EDL muscles of TEAD1-Tg and Wt littermates and determined SC proliferation via cumulative marking of Pax7+ cells in S-Phase via EdU (Figure 9N–O; quantification in Figure 9P). The majority (~92%) of SCs on Wt fibers proliferated. The proportion of proliferating SCs was significantly increased on TEAD1-Tg myofibers, as all Pax7+ cells are positive for EdU (Figure 9P). No statistically significant differences in apoptotic rates were found via anti-Caspase-3/Pax7 co-IF staining (~0.8±1.4% versus ~3.2±1% Caspase3+/Pax7+ cells on Wt and TEAD1-Tg fibers, respectively; p>0.05). To determine the effect of the increased proliferation rate on SC clone formation, we quantified SCs on single myofibers at t=0 hr, and number of clones as well as clone size at t=72 hr on both Wt and TEAD1-Tg myofibers (Figure 9Q–R). As expected, we found significantly increased numbers of SCs associated with freshly isolated TEAD1-Tg compared to Wt myofibers (Figure 9Q). At t=72 hr, the number of SC clones vastly exceeded that of the starting number of SCs for both Wt and TEAD1-Tg samples suggesting that some clones split into 2 or more clones (Figure 9Q). Yet, significantly greater numbers of cells were found per clone on TEAD1-Tg compared to Wt fibers (Figure 9R). This evidence suggests that increased proliferation yields larger clones on TEAD1-Tg cultured myofibers rather than fusion of clones derived from multiple SCs, as clone fracturing occurs more frequently than clone fusion and at similar rates between Wt and TEAD1-Tg samples (Figure 9N–R). We next assayed cells of these clones for differentiating (MyoD+), expanding (MyoD+/Pax7+), and self-renewing (Pax7+) cell fates (Figure 9S–T). Quantification revealed that hyper-proliferation of SCs on TEAD1-Tg myofibers does not alter the relative distributions of these cell fates, but instead involves a proportional increase in the sizes of each fraction (Figure 9U). These data further confirm the SC self-renewal capacity in vivo (Figure 7).
 
@@ -122,7 +122,7 @@ A model of increased proliferation yielding a larger number of progeny, and cons
 
 Here we show a novel mouse model featuring, at its core, a robust 5- to 6-fold increase in the number of quiescent SCs, accelerated kinetics of muscle repair, amelioration of the muscular dystrophy pathology, and non-cell autonomous induction of SC hyperplasia. Because SC hyperplasia occurs without myofiber hyperplasia or hypertrophy, scaling between initial SC pool size and muscle fiber volume/length can be uncoupled, or at least altered. The teleological ramification of our findings is discussed.
 
-## TEAD1-Tg mice: A novel mouse model for SC hyperplasia
+### TEAD1-Tg mice: A novel mouse model for SC hyperplasia
 
 SC hyperplasia in TEAD1-Tg mice is universal among the muscle groups analyzed, including pre-dominantly fast- or pre-dominantly slow-twitch muscle groups. Since the TEAD1-Tg features a transition to the slow-twitch muscle contractile phenotype, i.e. loss of type IIX fibers (Figure 1—figure supplement 1; Tsika et al., 2008), the pervasiveness of the SC hyperplasia among the different muscles analyzed is particularly noteworthy. Higher SC densities have been found in slow-twitch compared to fast-twitch muscles (Gibson and Schultz, 1983; Schmalbruch and Hellhammer, 1977; Collins et al., 2005). As such, the fast- to slow-twitch fiber transition may account for the SC hyperplasia in TEAD1-Tg mice. However, the pre-dominantly slow-twitch soleus muscle, which is devoid of type IIX fibers, features the largest increase (6-fold) in SCs in TEAD1-Tg mice. Hence, the increase in SCs cannot solely be a ‘passenger effect’ of the fast- to slow-twitch fiber transition. The SC hyperplasia originates at the time of peak TEAD1 transgene expression around PN 14d (Figure 3) and eventually features normal quiescent adult SCs indistinguishable from their Wt counterparts (Figure 4). In particular, we utilized this new mouse model of SC hyperplasia to investigate whether an increase in the physical number of stem cells had any impact on skeletal muscle regeneration and discovered faster regeneration kinetics in TEAD1-Tg mice (Figures 5 and 6). The SC hyperplasia persists through multiple and chronic injuries (Figures 7 and 8) and notably, derives from cell-cell signaling between the myofiber and the SCs (Figure 9). All together, these features uniquely prime the TEAD1-Tg mouse model for the future discovery of the elusive signaling pathway(s) regulating muscle stem cell number.
 
@@ -130,64 +130,386 @@ Though SC hyperplasia is not well studied, other genetic or pharmacologically in
 
 While informative, the above mouse models are not useful in elucidating the molecular regulation underlying initial scaling of SC pool size during the perinatal period. They feature many distinct aspects including a less robust increase of SCs, a non-developmental origin of SC increase, overall muscle tissue hypertrophy and/or failure to generate a stably quiescent pool of adult SCs. The TEAD1 transgene induced SC hyperplasia is of the greatest known magnitude to-date, stably established during early postnatal development and features a normal adult quiescent phenotype. The timing of the SC increase in TEAD1-Tg muscle is particularly noteworthy and should incite new investigations of the aforementioned mouse models during the early postnatal period to further unravel this fundamental 'stem cell scaling' process in skeletal muscle. Furthermore, while myofiber-specific TEAD1 overexpression reveals a surprising plasticity of the muscle stem cell niche to harbor greatly increased SCs, we do not know if there are any functional requirements for the Tead transcription factor family in the regulation of SC number. Further studies of Tead loss-of-function mouse models are needed.
 
-## Developmentally induced SC hyperplasia
+### Developmentally induced SC hyperplasia
 
 The activity of early postnatal SCs is markedly different from their adult counterparts. Adult SCs are kept in a quiescent state, while early postnatal SCs are highly proliferative providing differentiated myonuclei for muscle growth as they progressively exit the cell cycle to be set aside as quiescent stem cells during the first three weeks after birth (Lepper et al., 2009; White et al., 2010). The signals that orchestrate the SC transition from the proliferative to the quiescent state are unknown but likely entail both ‘proliferation’ and ‘quiescence’ cues from the local niches leading to the formation of an adult muscle stem cell pool of defined size. Super-numeral SCs and increased SC proliferation were first detected in TEAD1-Tg muscle during this early postnatal period at 2 weeks after birth (Figure 3). Since TEAD1-Tg muscle is not hypertrophic and does not accumulate more nuclei than Wt (Figures 1 and 2), a 'Stop' signal must exist, and be still intact in TEAD1-Tg mice to prevent further fusion by excessive SCs. Thus, we propose that the extra rounds of SC proliferation are a selectively symmetric expansion of the stem cell pool. The likely mechanism driving the SC hyperplasia is over-expression or prolonged expression of physiologically normal ‘proliferation’ factor(s), or reduced expression of ‘quiescence’ factor(s) in early postnatal TEAD1-Tg muscle. Therefore, this animal model may also be useful to uncover the physiological signaling underlying the complex transition from a proliferative juvenile progenitor to a quiescent adult stem cell.
 
-## Reduced SC hyperplasia of regenerated muscle
+### Reduced SC hyperplasia of regenerated muscle
 
 Applying EdU to monitor SC proliferation both in vivo (Figure 7) and in vitro (Figure 9), we found super-numeral SCs of TEAD1-Tg muscle to be self-renewing stem cells. This conclusion is further supported by the observation that the TEAD1 transgene induced SC hyperplasia is maintained even over several injury-induced regeneration cycles (Figure 7). Of note, the magnitude of the hyperplasia is slightly lessened with multiple bouts of regeneration. It is possible that the SC self-renewal capacity is slightly reduced in TEAD1-Tg mice. It is also possible that the regenerating tissue lacks the ability to promote SC hyperplasia to the same degree as the early postnatal myofiber. The adult niche is destroyed by injury leading to a transient loss of the TEAD1-expressing cell, i.e. the muscle fiber. This is in contrast to the ‘intact’ early postnatal niche, which drives the establishment of super-numeral SCs in TEAD1-Tg mice and features intimate contact between the TEAD1-expressing muscle fiber and its SCs. Moreover, there appear to be differences in the regulation of proliferating early postnatal versus quiescent adult SCs. Temporally-controlled inactivation of Pax7 in SCs shortly after birth leads to an immediate dramatic loss in regenerative capacity while inactivation in the adult leads to a slow progressive loss of SCs, which is reflected by normal regeneration over the short-term and impaired regeneration over the long-term (Günther et al., 2013; Lepper et al., 2009). It is possible that early postnatal SCs are uniquely primed to receiving proliferation and quiescence cues from their local niches, which leads to the formation of a properly proportioned adult muscle stem cell pool. Such cues may be expressed at a higher level or for a longer period of time in the developing muscles than in adult regenerating muscles of TEAD1-Tg mice. Or, the adult SC niche may be more restrictive to proliferation, and thus limiting to the extent of re-establishment of the SC hyperplasia during regeneration. For example, the stiffness of the extracellular matrix from skeletal muscle has been demonstrated to increase with age (Wood et al., 2014), and substrate elasticity has been shown to affect the regenerative competence of SCs (Gilbert et al., 2010). Along this line of thought, it is interesting to note that neither developmental nor regenerative muscles of TEAD1-Tg mice produce hypertrophy despite the SC hyperplasia (Figures 1, 5 and 6). It seems reasonable that upon acquiring the ‘correct’ number of myonuclei, to efficiently support the transcriptional and metabolic needs, the myofiber sends 'dominant' signal(s) to prevent additional fusion by SCs, and possibly to stop SC proliferation. A longer period of SC proliferation during early postnatal development versus adult regeneration could be the basis for the plasticity of the magnitude of the SC hyperplasia.
 
-## Ameliorated dystrophy in mdx; TEAD1-Tg mice
+### Ameliorated dystrophy in mdx; TEAD1-Tg mice
 
 The muscle histopathology found in the mdx mouse model was significantly mitigated in the TA muscle of mdx; TEAD1-Tg mice (Figure 8). This finding can likely be accounted for based on a TEAD1-induced slow-oxidative phenotype in both fast and slow-twitch muscles, which we determined previously by high-resolution electrophoretic separation and quantification of native myosin heavy chain isoforms and confirmed here by IF (Tsika et al., 2008). This notion is consistent with previous studies demonstrating that slow-twitch oxidative fibers in human and murine dystrophic muscles are less susceptible to the degenerative outcome of muscular dystrophies than are fast-twitch fibers (Moens et al., 1993; Webster et al., 1988; Consolino and Brooks, 2004). More recent therapeutic efforts shown to mitigate the dystrophic pathology in the mdx model have utilized transgenic (calcineurin, peroxisome proliferator-activated receptor-γ coactivator-1α, AMP-activated protein kinase, Kruppel-like factor 15) or pharmacological (Resveratol, AICAR, GW501516, Wnt7a) mediators, all previously shown to remodel dystrophic muscle to reflect a greater proportion of slow-oxidative fiber-types (Stupka et al., 2006; Chakkalakal et al., 2004; Handschin et al., 2007; Hori et al., 2011; Tabebordbar et al., 2013; Ljubicic et al., 2014; von Maltzahn et al., 2012b; Morrison-Nozik et al., 2015). It is therefore conceivable that the TEAD1-Tg-induced slow-oxidative myofiber phenotype ameliorates dystrophic pathology in mdx muscle in similar fashion to the aforementioned studies. In particular, utrophin, which can functionally substitute for dystrophin, is elevated in slow-twitch when compared to fast-twitch muscle (Gramolini et al., 2001; Rafael et al., 1998). Elevated utrophin transcript levels in mdx; TEAD1-Tg muscle are a highly likely contributor to the betterment of the dystrophic pathology (Figure 8). Additional mechanisms are likely at play. Calcineurin is a direct transcriptional activator of utrophin and skeletal-muscle specific overexpression results in increased utrophin protein levels and results in amelioration of the dystrophic pathology (Stupka et al., 2006). Yet, the extent of the observed amelioration is significantly smaller when compared to the mdx; TEAD1-Tg model. Additional properties of the myofiber affected by the TEAD1 transgene could further protect the fiber from degeneration. It is also possible that the increased number of SCs in mdx; TEAD1-Tg muscle contributes to a more speedy repair process, thereby stabilizing the dystrophic muscle. Or, both mechanisms may contribute. Additionally, it would be of great interest to quantify SCs in the murine models above to determine if their numbers are increased as well, which could also potentially contribute to an ameliorated disease state.
 
-## SC hyperplasia without muscle hypertrophy
+### SC hyperplasia without muscle hypertrophy
 
 It is conceivable that the size of the resident stem cell pool could be modulated with, and thus, be directly linked to the size of tissue, for example via physical expansion or reduction of available stem cell niches. To extend this idea, it is of interest to consider the exquisite molecular mechanisms that have evolved to initially establish and then maintain proper skeletal muscle tissue size. Signaling pathways including Hippo, IGF-1, Wnt, calcium (via NFAT), and TGF-β contribute to the regulation of myofiber size and number. In particular, the TGF-β family member myostatin and its receptor activin receptor type-IIB (ActRIIB) play prominent roles, as both genetic inactivation of myostatin and ActRIIB antagonism result in a double muscling phenotype in mice with both hyperplasia and hypertrophy (McPherron et al., 1997; Zhou et al., 2010; Lee and McPherron, 2001). However, it remains controversial whether a corresponding SC increase accompanies and is required for the increase in muscle mass by inhibition of myostatin signaling (McCroskery et al., 2003; Wang and McPherron, 2012; Zhou et al., 2010; Lee et al., 2012). Inactivation of ActRIIB specifically in the myofiber causes myofiber hypertrophy arguing against myofiber size regulation being dependent on the SC pool (Lee et al., 2012). Likewise, myostatin inhibition has been shown to result in skeletal muscle hypertrophy in the absence of satellite cell activity (Amthor et al., 2009). Canonical Wnt signaling has been implicated in regulating myogenic progenitor and myofiber number during fetal myogenesis and muscle repair after injury (Hutcheson et al., 2009; Murphy et al., 2014; Rudolf et al., 2016). Similarly, calcium signaling via NFAT proteins has been implicated in regulating skeletal muscle size (Schulz and Yutzey, 2004). In our previous work, we found both Wnt and NFAT signaling to be significantly reduced in TEAD1-Tg muscle (Tsika et al., 2008). Yet, we did not find muscle tissue size to be altered (Figure 1). This apparent discrepancy can likely be attributed to the late onset of MCK promoter driven TEAD1 transgene expression, which happens after muscle differentiation. Thus, neither differentiation nor fusion is affected in these mice. And the non-autonomous induction of super-numeral SCs results in the uncoupling of the molecular regulation of SC number from muscle size in TEAD1-Tg mice. Similarly, muscle groups of different ontology appear to maintain different SC to muscle nuclei ratios, i.e. branchiomeric muscles have significantly fewer SCs compared to somite-derived muscles (Ono et al., 2010). Still, muscle fibers and their associated cohort of SCs have co-evolved to maintain a relatively fixed ratio. While the evolutionary selection pressures for both processes are unknown they are of great biological curiosity.
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 hTEAD1 transgenic mice were previously described (Tsika et al., 2008). Age-matched C57BL/6 siblings served as Wt controls. mdx mice (ID: 001801) were obtained from the Jackson Laboratory (ME). Injury with cardiotoxin (10 µM, Sigma C9759) to the TA (after anesthesia) used 50 µl for adult (>2 months) mice. For injury by BaCl2 (after anesthesia), TA muscles were injected with 25 µl of 1.2% (w:v) Barium Chloride (Sigma 217565) in PBS. For multiple rounds of injury, TA muscles were injected with 25 μl of BaCl2 for each injury and allowed to regenerate for 35 days between injuries. EdU (Invitrogen; CA) was administered as previously described (Lepper et al., 2009). BrdU (5-bromo-2’-deoxyuridine, Sigma B5002) was provided in drinking water (0.8 mg/mL) for 30 consecutive days. All procedures were approved by IACUC.
 
-## PCR genotyping and quantitative PCR (qPCR)
+### PCR genotyping and quantitative PCR (qPCR)
 
-For adult animals, tail DNA was used for genotyping by PCR. For perinatal mice, toe DNA was used. DNA was extracted using the ExtractN’Amp kit (Sigma XNAT2) following the manufacturer’s instructions. PCR reactions were carried out using GoTaq polymerase (Promega M8291) with buffers supplied by the manufacturer with 0.1 mM dNTPs and 2.5 mM MgCl2. PCR products were resolved in a 2% agarose gel, stained with 0.5 µg/mL ethidium bromide (Gibco 15585011), and digitally imaged with a Bio-Rad Gel Doc system for record keeping. Primer sequences, product sizes, and PCR conditions are in Table 1.10.7554/eLife.15461.013Table 1.PCR genotyping and RT primers, and conditions.DOI: http://dx.doi.org/10.7554/eLife.15461.013GeneForward primerReverse primerSizeTEAD-HA5’-ATCCATGCTTGTTACCTTCAG-3’5’-ACTACAAGGACGATGACAAG-3’460 bpInternal Control5’-CAGCTCTACATCACCTGCCA-3’5’-CACTGGGAAGAGACACTCAG-3’520 bpPCR conditionsDenature: 94°C for 30 s Anneal: 56°C for 30 s Extend: 72°C for 60 s (34 cycles)Dystrophin (WT)5’-GCGCGAAACTCATCAAATATGCGTGTTAGTGT-3’5’-GATACGCTGCTTTAATGCCTTTAGTCACTCAGATAGTTGAAGCCATTTTG-3’134 bpDystrophin (mdx)5’-GCGCGAAACTCATCAAATATGCGTGTTAGTGT-3’5’-CGGCCTGTCACTCAGATAGTTGAAGCCATTTTA-3’117 bpPCR conditionsDenature: 94°C for 20 s Anneal: 60°C for 20 s Extend: 72°C for 20 s (5 cycles) Denature: 94°C for 20 s Anneal: 64°C for 20 s Extend: 72°C for 20 s (23 cycles)utrophin5’-AGTATGGGGACCTTGAAGCC-3’5’-CGAGCGTTTATCCATTTGGT-3’cycloA5’-ATTTCTTTTGACTTGCGGGC-3’5’-AGACTTGAAGGGGAATG-3’actin5’-CCCTAAGGCCAACCGTGAA-3’5’-CAGCCTGGATGGCTACGTACA-3’
+For adult animals, tail DNA was used for genotyping by PCR. For perinatal mice, toe DNA was used. DNA was extracted using the ExtractN’Amp kit (Sigma XNAT2) following the manufacturer’s instructions. PCR reactions were carried out using GoTaq polymerase (Promega M8291) with buffers supplied by the manufacturer with 0.1 mM dNTPs and 2.5 mM MgCl2. PCR products were resolved in a 2% agarose gel, stained with 0.5 µg/mL ethidium bromide (Gibco 15585011), and digitally imaged with a Bio-Rad Gel Doc system for record keeping. Primer sequences, product sizes, and PCR conditions are in Table 1.
+
+**Table 1.**
+ PCR genotyping and RT primers, and conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+      <th>Size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TEAD-HA</td>
+      <td>5’-ATCCATGCTTGTTACCTTCAG-3’</td>
+      <td>5’-ACTACAAGGACGATGACAAG-3’</td>
+      <td>460 bp</td>
+    </tr>
+    <tr>
+      <td>Internal Control</td>
+      <td>5’-CAGCTCTACATCACCTGCCA-3’</td>
+      <td>5’-CACTGGGAAGAGACACTCAG-3’</td>
+      <td>520 bp</td>
+    </tr>
+    <tr>
+      <td>PCR conditions</td>
+      <td colspan="3">Denature: 94°C for 30 s Anneal: 56°C for 30 s Extend: 72°C for 60 s (34 cycles)</td>
+    </tr>
+    <tr>
+      <td>Dystrophin (WT)</td>
+      <td>5’-GCGCGAAACTCATCAAATATGCGTGTTAGTGT-3’</td>
+      <td>5’-GATACGCTGCTTTAATGCCTTTAGTCACTCAGATAGTTGAAGCCATTTTG-3’</td>
+      <td>134 bp</td>
+    </tr>
+    <tr>
+      <td>Dystrophin (mdx)</td>
+      <td>5’-GCGCGAAACTCATCAAATATGCGTGTTAGTGT-3’</td>
+      <td>5’-CGGCCTGTCACTCAGATAGTTGAAGCCATTTTA-3’</td>
+      <td>117 bp</td>
+    </tr>
+    <tr>
+      <td>PCR conditions</td>
+      <td colspan="3">Denature: 94°C for 20 s Anneal: 60°C for 20 s Extend: 72°C for 20 s (5 cycles) Denature: 94°C for 20 s Anneal: 64°C for 20 s Extend: 72°C for 20 s (23 cycles)</td>
+    </tr>
+    <tr>
+      <td>utrophin</td>
+      <td>5’-AGTATGGGGACCTTGAAGCC-3’</td>
+      <td>5’-CGAGCGTTTATCCATTTGGT-3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cycloA</td>
+      <td>5’-ATTTCTTTTGACTTGCGGGC-3’</td>
+      <td>5’-AGACTTGAAGGGGAATG-3’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>actin</td>
+      <td>5’-CCCTAAGGCCAACCGTGAA-3’</td>
+      <td>5’-CAGCCTGGATGGCTACGTACA-3’</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Total RNA was extracted and purified from TA muscles using the Direct-zol RNA MiniPrep Kit (ZymoResearch, R2051). Reverse transcription was performed using M-MLV Reverse Transcriptase (Thermo Scientific, 28025013). Real Time PCR was performed using the BioRad CFX96 Real-Time System and primers listed in Table 1. Data analysis was performed using the CFX manager. Utrophin expression was normalized to both actin and cyclophilin A expression.
 
-## Immunofluorescence (IF)
+### Immunofluorescence (IF)
 
-For IF staining, muscles were isolated, partially imbedded in tragacanth (Sigma 9000-65-1) on a slice of cork, and flash frozen in isopentane (Sigma 78–78-4) cooled by liquid nitrogen. Samples were cryo-sectioned at 10 µm and mounted on Superfrost Plus slides (VWR 48311–703). Following fixation for 10 min (4% PFA/PBS) on ice and PBS wash, antigen retrieval was performed (Dako S1699). Slides were placed in a solution of Sudan black dye (0.1%, Sigma 199664) in ethanol (70%) for 20 min to lessen autofluorescence. Samples were then blocked with 10% normal goat serum diluted in 0.02% triton-100/PBS (PBT). Subsequent primary and secondary antibodes were used at concentrations described (Tables 2 and 3) diluted in 2% FBS in 0.02% PBT for one hour to overnight in a humidified chamber. TUNEL labeling was performed immediately following the IF staining protocol using the ApopTag Red In Situ Apoptosis Detection Kit (Millipore, S7165). Coverslips were mounted with a drop of mounting media (Vector Laboratories, H1200) and sealed. All IF images were obtained using Nikon E800 and Zeiss Axioscop microscopes (described below).10.7554/eLife.15461.014Table 2.Primary antibodies used for immunofluorescence. The monoclonal antibodies for Pax7, Myog, Myosin, IIx type myosin, IIa type myosin, non-IIx type myosin, I type myosin, and embryonic myosin, developed by Stefano Schiaffino, C Lucas, A Kawakami, WE Wright, DA Fischman, and HM Blau were obtained from the Developmental Studies Hybridoma Bank, created by the NICHD of the NIH and maintained at The University of Iowa, Department of Biology, Iowa City, IA 52242.DOI: http://dx.doi.org/10.7554/eLife.15461.014AntibodiesHostDilutionSourceAnti-Pax7mouse (IgG1)1:4-5DSHB Pax7 (RRID:AB_528428)Anti-Lamininrabbit1:3000Sigma L9393 (RRID:AB_477163)Anti-HArabbit1:1000Invitrogen PA1-985 (RRID:AB_559366)Anti-HArabbit1:100Sigma H6908 (RRID:AB_260070)Anti-HAmouse (IgG1)1:100Covance mms-101P (RRID:AB_2314672)Anti-B1 Integrinrat1:200Abcam AB95623 (RRID:AB_10676803)Anti-Mcadherinmouse1:200Santa Cruz SC81471 (RRID:AB_2077111)Anti-Calcitonin Receptorrabbit1:250AbD Serotec AHP635 (RRID:AB_2068967)Anti-CD34rat1:25BD Biosciences 553731 (RRID:AB_395015)Anti-Dystrophinmouse1:1000Genetex GTX27164 (RRID:AB_386029)Anti-Dystrophinrabbit1:100Abcam AB15277 (RRID:AB_301813)Anti-MyoDrabbit1:50Santa Cruz SC760 (RRID:AB_2148870)Anti-MyoDmouse (IgG1)1:200Santa Cruz SC32758 (RRID:AB_627978)Anti-Myogeninmouse1:20DSHB F5D (RRID:AB_528355)Anti-Myogeninmouse (IgG1)1:200Santa Cruz SC12732 (RRID:AB_627980)Anti-MyHCmouse1:20DSHB MF20 (RRID:AB_2147781)Anti-eMyHCmouse (IgG1)1:400DSHB F1.652 (RRID:AB_528358)Anti-myosin (IIX)mouse (IgM)1:2DSHB 6H1 (RRID:AB_2314830)Anti-myosin (non-IIX)mouse (IgG1)1:2DSHB BF-35 (RRID:AB_2274680)Anti-myosin (IIA)mouse (IgG1)1:2DSHB SC-71 (RRID:AB_2147165)Anti-myosin (I)mouse1:2DSHB BA-D5 (RRID:AB_2235587)Anti-cleaved caspase 3rabbit1:100Cell Signaling 9664S (RRID:AB_2070042)10.7554/eLife.15461.015Table 3.Secondary antibodies used for immunofluorescence.DOI: http://dx.doi.org/10.7554/eLife.15461.015HostAntigenFluorophoreDilutionSourceGoatRabbit IgGAlexa 4881:1000Invitrogen A11034 (RRID:AB_2576217)GoatMouse IgGAlexa 4881:1000Invitrogen A11001 (RRID:AB_2534069)GoatMouse IgG1Alexa 4881:100 - 1:1000Invitrogen A21121 (RRID:AB_2535764)GoatRabbit IgGAlexa 5681:1000Invitrogen A11011 (RRID:AB_2534078)GoatRabbit IgGAlexa 5461:100Invitrogen A11035 (RRID:AB_2534093)GoatMouse IgGAlexa 5681:1000Invitrogen A11031 (RRID:AB_2534090)GoatRat IgGAlexa 5461:200Invitrogen A11081 (RRID:AB_2534125)GoatMouse IgMAlexa 5941:1000Invitrogen A21044 (RRID:AB_2535713)
+For IF staining, muscles were isolated, partially imbedded in tragacanth (Sigma 9000-65-1) on a slice of cork, and flash frozen in isopentane (Sigma 78–78-4) cooled by liquid nitrogen. Samples were cryo-sectioned at 10 µm and mounted on Superfrost Plus slides (VWR 48311–703). Following fixation for 10 min (4% PFA/PBS) on ice and PBS wash, antigen retrieval was performed (Dako S1699). Slides were placed in a solution of Sudan black dye (0.1%, Sigma 199664) in ethanol (70%) for 20 min to lessen autofluorescence. Samples were then blocked with 10% normal goat serum diluted in 0.02% triton-100/PBS (PBT). Subsequent primary and secondary antibodes were used at concentrations described (Tables 2 and 3) diluted in 2% FBS in 0.02% PBT for one hour to overnight in a humidified chamber. TUNEL labeling was performed immediately following the IF staining protocol using the ApopTag Red In Situ Apoptosis Detection Kit (Millipore, S7165). Coverslips were mounted with a drop of mounting media (Vector Laboratories, H1200) and sealed. All IF images were obtained using Nikon E800 and Zeiss Axioscop microscopes (described below).
 
-## EdU and BrdU cell proliferation assays
+**Table 2.**
+ Primary antibodies used for immunofluorescence. The monoclonal antibodies for Pax7, Myog, Myosin, IIx type myosin, IIa type myosin, non-IIx type myosin, I type myosin, and embryonic myosin, developed by Stefano Schiaffino, C Lucas, A Kawakami, WE Wright, DA Fischman, and HM Blau were obtained from the Developmental Studies Hybridoma Bank, created by the NICHD of the NIH and maintained at The University of Iowa, Department of Biology, Iowa City, IA 52242.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Host</th>
+      <th>Dilution</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-Pax7</td>
+      <td>mouse (IgG1)</td>
+      <td>1:4-5</td>
+      <td>DSHB Pax7 (RRID:AB_528428)</td>
+    </tr>
+    <tr>
+      <td>Anti-Laminin</td>
+      <td>rabbit</td>
+      <td>1:3000</td>
+      <td>Sigma L9393 (RRID:AB_477163)</td>
+    </tr>
+    <tr>
+      <td>Anti-HA</td>
+      <td>rabbit</td>
+      <td>1:1000</td>
+      <td>Invitrogen PA1-985 (RRID:AB_559366)</td>
+    </tr>
+    <tr>
+      <td>Anti-HA</td>
+      <td>rabbit</td>
+      <td>1:100</td>
+      <td>Sigma H6908 (RRID:AB_260070)</td>
+    </tr>
+    <tr>
+      <td>Anti-HA</td>
+      <td>mouse (IgG1)</td>
+      <td>1:100</td>
+      <td>Covance mms-101P (RRID:AB_2314672)</td>
+    </tr>
+    <tr>
+      <td>Anti-B1 Integrin</td>
+      <td>rat</td>
+      <td>1:200</td>
+      <td>Abcam AB95623 (RRID:AB_10676803)</td>
+    </tr>
+    <tr>
+      <td>Anti-Mcadherin</td>
+      <td>mouse</td>
+      <td>1:200</td>
+      <td>Santa Cruz SC81471 (RRID:AB_2077111)</td>
+    </tr>
+    <tr>
+      <td>Anti-Calcitonin Receptor</td>
+      <td>rabbit</td>
+      <td>1:250</td>
+      <td>AbD Serotec AHP635 (RRID:AB_2068967)</td>
+    </tr>
+    <tr>
+      <td>Anti-CD34</td>
+      <td>rat</td>
+      <td>1:25</td>
+      <td>BD Biosciences 553731 (RRID:AB_395015)</td>
+    </tr>
+    <tr>
+      <td>Anti-Dystrophin</td>
+      <td>mouse</td>
+      <td>1:1000</td>
+      <td>Genetex GTX27164 (RRID:AB_386029)</td>
+    </tr>
+    <tr>
+      <td>Anti-Dystrophin</td>
+      <td>rabbit</td>
+      <td>1:100</td>
+      <td>Abcam AB15277 (RRID:AB_301813)</td>
+    </tr>
+    <tr>
+      <td>Anti-MyoD</td>
+      <td>rabbit</td>
+      <td>1:50</td>
+      <td>Santa Cruz SC760 (RRID:AB_2148870)</td>
+    </tr>
+    <tr>
+      <td>Anti-MyoD</td>
+      <td>mouse (IgG1)</td>
+      <td>1:200</td>
+      <td>Santa Cruz SC32758 (RRID:AB_627978)</td>
+    </tr>
+    <tr>
+      <td>Anti-Myogenin</td>
+      <td>mouse</td>
+      <td>1:20</td>
+      <td>DSHB F5D (RRID:AB_528355)</td>
+    </tr>
+    <tr>
+      <td>Anti-Myogenin</td>
+      <td>mouse (IgG1)</td>
+      <td>1:200</td>
+      <td>Santa Cruz SC12732 (RRID:AB_627980)</td>
+    </tr>
+    <tr>
+      <td>Anti-MyHC</td>
+      <td>mouse</td>
+      <td>1:20</td>
+      <td>DSHB MF20 (RRID:AB_2147781)</td>
+    </tr>
+    <tr>
+      <td>Anti-eMyHC</td>
+      <td>mouse (IgG1)</td>
+      <td>1:400</td>
+      <td>DSHB F1.652 (RRID:AB_528358)</td>
+    </tr>
+    <tr>
+      <td>Anti-myosin (IIX)</td>
+      <td>mouse (IgM)</td>
+      <td>1:2</td>
+      <td>DSHB 6H1 (RRID:AB_2314830)</td>
+    </tr>
+    <tr>
+      <td>Anti-myosin (non-IIX)</td>
+      <td>mouse (IgG1)</td>
+      <td>1:2</td>
+      <td>DSHB BF-35 (RRID:AB_2274680)</td>
+    </tr>
+    <tr>
+      <td>Anti-myosin (IIA)</td>
+      <td>mouse (IgG1)</td>
+      <td>1:2</td>
+      <td>DSHB SC-71 (RRID:AB_2147165)</td>
+    </tr>
+    <tr>
+      <td>Anti-myosin (I)</td>
+      <td>mouse</td>
+      <td>1:2</td>
+      <td>DSHB BA-D5 (RRID:AB_2235587)</td>
+    </tr>
+    <tr>
+      <td>Anti-cleaved caspase 3</td>
+      <td>rabbit</td>
+      <td>1:100</td>
+      <td>Cell Signaling 9664S (RRID:AB_2070042)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Secondary antibodies used for immunofluorescence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Host</th>
+      <th>Antigen</th>
+      <th>Fluorophore</th>
+      <th>Dilution</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Goat</td>
+      <td>Rabbit IgG</td>
+      <td>Alexa 488</td>
+      <td>1:1000</td>
+      <td>Invitrogen A11034 (RRID:AB_2576217)</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>Mouse IgG</td>
+      <td>Alexa 488</td>
+      <td>1:1000</td>
+      <td>Invitrogen A11001 (RRID:AB_2534069)</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>Mouse IgG1</td>
+      <td>Alexa 488</td>
+      <td>1:100 - 1:1000</td>
+      <td>Invitrogen A21121 (RRID:AB_2535764)</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>Rabbit IgG</td>
+      <td>Alexa 568</td>
+      <td>1:1000</td>
+      <td>Invitrogen A11011 (RRID:AB_2534078)</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>Rabbit IgG</td>
+      <td>Alexa 546</td>
+      <td>1:100</td>
+      <td>Invitrogen A11035 (RRID:AB_2534093)</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>Mouse IgG</td>
+      <td>Alexa 568</td>
+      <td>1:1000</td>
+      <td>Invitrogen A11031 (RRID:AB_2534090)</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>Rat IgG</td>
+      <td>Alexa 546</td>
+      <td>1:200</td>
+      <td>Invitrogen A11081 (RRID:AB_2534125)</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>Mouse IgM</td>
+      <td>Alexa 594</td>
+      <td>1:1000</td>
+      <td>Invitrogen A21044 (RRID:AB_2535713)</td>
+    </tr>
+  </tbody>
+</table>
+
+### EdU and BrdU cell proliferation assays
 
 EdU was injected at 0.1 mg/20g bodyweight. EdU was detected in muscle sections via Click-iT Kit (Invitrogen C10640). BrdU was detected following IF staining by antigen retrieval (BD biosciences 550803) and ABC amplification (Vector Laboratories PK4000). In cultured cells grown on chamber slides (Sigma C7182) coated in matrigel (Fisher CB-40234), EdU was added to a concentration of 10 µM for 45 min and detected by Click-iT Kit following IF procedures. In experiments of EdU labeled fiber-associated cell clones, EdU (10 µM) was provided throughout the culturing period beginning at t=24 hr.
 
-## Histology
+### Histology
 
 H and E staining has been previously described (Lepper et al., 2009). Sections were stained with Sirius Red using protocol and reagents of the Picro-Sirius Red staining kit (American MasterTech KTPSRPT) following fixation in Bouin’s solution (Sigma HT01032) for 30 min at 56°C. Trichrome stains were performed according to manufacturer’s instructions using the Gomori’s One-Step Trichrome Kit (Polysciences Inc. 24205). All histology was imaged on the Zeiss Stemi SV11 (for low magnification) and Nikon E800 DIC microscopes (for high magnification) described below.
 
 Evans Blue dye (EBD, Sigma E2129) was administered to mice at a 1% concentration in PBS via intra-peritoneal injection (10 μL/g bodyweight). Mice were sacrificed 20 hr later and the TA and EDL were harvested, flash frozen, then sectioned at 8 μm. Sections were fixed in cold acetone (−20°C) for 10 min, rinsed with PBS, and mounted. The dye’s fluorescence was visualized via red light excitation.
 
-## Quantifying muscle fiber size
+### Quantifying muscle fiber size
 
-Muscle size was determined by weight (Table 4) and by measurements and quantifications of muscle fibers. Cross-sections (by cryostat sections at 10 µm) of muscles were stained for dystrophin by IF or subjected to H and E stains (for mdx muscle samples). Using ImageJ software, fibers were manually outlined and then measured via ImageJ for area and minimum ferret diameter.10.7554/eLife.15461.016Table 4.Weights (mgSD) of respective muscle groups in Wt vs. TEAD1-Tg mice. TEAD1-Tg hind limb muscles are equivalent in weight to Wt. Weight measurements (mg) and standard deviation for TA, EDL, Soleus, and Plantaris muscles from TEAD1-Tg or Wt mice. By t-test no significant difference was found between genotypes (n > 5 muscles for all measurements).DOI: http://dx.doi.org/10.7554/eLife.15461.016TAEDLSoleusPlantarisWt41.0 ± 5.59.3 ± 1.98.3 ± 1.416.5 ± 2.5TEAD1-Tg38.6 ± 3.49.5 ± 1.59.7 ± 0.914.3 ± 2.7
+Muscle size was determined by weight (Table 4) and by measurements and quantifications of muscle fibers. Cross-sections (by cryostat sections at 10 µm) of muscles were stained for dystrophin by IF or subjected to H and E stains (for mdx muscle samples). Using ImageJ software, fibers were manually outlined and then measured via ImageJ for area and minimum ferret diameter.
 
-## Myoblast isolation and IF
+**Table 4.**
+ Weights (mgSD) of respective muscle groups in Wt vs. TEAD1-Tg mice. TEAD1-Tg hind limb muscles are equivalent in weight to Wt. Weight measurements (mg) and standard deviation for TA, EDL, Soleus, and Plantaris muscles from TEAD1-Tg or Wt mice. By t-test no significant difference was found between genotypes (n > 5 muscles for all measurements).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TA</th>
+      <th>EDL</th>
+      <th>Soleus</th>
+      <th>Plantaris</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wt</td>
+      <td>41.0 ± 5.5</td>
+      <td>9.3 ± 1.9</td>
+      <td>8.3 ± 1.4</td>
+      <td>16.5 ± 2.5</td>
+    </tr>
+    <tr>
+      <td>TEAD1-Tg</td>
+      <td>38.6 ± 3.4</td>
+      <td>9.5 ± 1.5</td>
+      <td>9.7 ± 0.9</td>
+      <td>14.3 ± 2.7</td>
+    </tr>
+  </tbody>
+</table>
+
+### Myoblast isolation and IF
 
 Genotyped animals were killed by cervical dislocation and hind limb muscles were removed and minced with scissors. Samples were digested with collagenase and dispase as described previously (Springer et al., 2002). Dissociated muscles were then transferred to 15 mL conical tubes with 10 mL myoblast media (20% fetal bovine serum/5% horse serum in DMEM), spun down in a clinical centrifuge, resuspended in myoblast media, and passed through a 70 µm filter. The remaining cells were twice pre-plated onto uncoated tissue culture dishes for 30 min to remove fibroblasts. The remaining cells were quantified by hemocytometer and placed at equal numbers into wells of chamber slides (Sigma C7182) coated with matrigel (Fisher CB-40234). These cells were differentiated for 2–5 days in media containing 2% horse serum in DMEM. For IF, these cells were fixed with prewarmed 4% PFA/PBS for 10 min, then permeabilized for 15 min in 0.5% PBT and washed with PBS. Primary and secondary antibodies were diluted in goat blocking buffer (blocking powder [Perkin Elmer P1012] in normal goat serum [Genetex GTX73245]) and applied for one hour to overnight with PBS washes in between primary and secondary antibody applications. After washing, the chamber portion was removed from the slide, and coverslips were mounted using a drop of fluoromount mounting media (Fisher OB100-01) containing DAPI.
 
-## Isolation of myofibers
+### Isolation of myofibers
 
 Genotyped animals were killed by cervical dislocation and EDL muscles were placed in a solution of 0.2% collagenase/DMEM for 90 min in a 37°C shaking (80 rpm) water bath. Digested muscles were placed in a pre-warmed solution of DMEM on horse serum coated tissue culture dishes for one hour. The muscles were then titurated with a large bore glass pipette to loosen outer myofibers, which were collected and moved to a new horse serum-coated dish of 10% FBS/DMEM or growth media (20% FBS/ 5% horse serum/ DMEM) via a small bore glass pipette. This continued until sufficient myofibers were obtained. Myofibers were incubated 48 or 72 hr in media (replaced daily). Myofibers were fixed in pre-warmed 4% PFA/PBS for 10 min. The myofibers were then washed three times in PBS and moved to a 1.5 mL microfuge tube. IF of isolated myofibers proceeded as follows: permeabilization (0.5% PBT) occurred for 15 min, myofibers were washed with PBS, then primary and secondary antibodies in goat blocking buffer were applied for one hour to overnight with PBS washes in between primary and secondary antibody applications. Fibers were mounted on Superfrost Plus slides in a drop of mounting media containing DAPI, covered with a coverslip, and sealed with nail polish.
 
-## Statistics
+### Statistics
 
 Error bars in histograms represent standard deviation (SD) over either the mean or fold change. Using an excel spreadsheet, all data was subjected to a two-tailed t test or chi square test (indicated in figure legend) when appropriate to determine statistical differences. Statistical significance was defined as a p value <0.05. Sample size was predetermined based on published SC counts, which reveal very low variability, and on preliminary data revealing a highly robust and large change in the number of SCs in TEAD1-Tg mice.
 
-## Microscopy
+### Microscopy
 
 The Nikon E800 upright epifluorescence microscope uses a 100 watt mercury arc lamp fluorescent source. Images were taken with Hamamatsu Orca-Flash 4.0 LT sCMOS camera under objectives: Plan Fluor 10x (NA 0.30), 20x (NA 0.50), 40x (NA 0.75). The Zeiss Axioskop upright epifluorescence microscope uses an 89North PhotoFluor metal halide fluorescent source. Images were taken with a Zeiss AxioCam monochrome CCD camera under objectives: Plan-Neofluar 10x (NA 0.30), 20x (NA 0.50), Plan-Neofluar 40x (NA 0.75). The Zeiss Stemi SV11 dissecting microscope was used with a Canon EOS Rebel T1i DSLR camera under a 1x objective. The Nikon E800 upright microscope w/ DIC optics was used with a Canon EOS Rebel T3i DSLR camera under objectives: Plan Fluor 4x (NA 0.13), Plan Apo 10x NA 0.45 and Plan Fluor 40x (NA 1.30 Oil).

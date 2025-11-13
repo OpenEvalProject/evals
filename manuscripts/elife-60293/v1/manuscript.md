@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Recognition of conserved microbial molecules activates immune responses in plants, a process termed pattern-triggered immunity (PTI). Similarly, insect eggs trigger defenses that impede egg development or attract predators, but information on the nature of egg-associated elicitors is scarce. We performed an unbiased bioactivity-guided fractionation of eggs of the butterfly Pieris brassicae . Nuclear magnetic resonance (NMR) spectroscopy and mass spectrometry of active fractions led to the identification of phosphatidylcholines (PCs). PCs are released from insect eggs, and they induce salicylic acid and H 2 O 2 accumulation, defense gene expression and cell death in Arabidopsis , all of which constitute a hallmark of PTI. Active PCs contain primarily C16 to C18-fatty acyl chains with various levels of desaturation, suggesting a relatively broad ligand specificity of cell-surface receptor(s). The finding of PCs as egg-associated molecular patterns (EAMPs) illustrates the acute ability of plants to detect conserved immunogenic patterns from their enemies, even from seemingly passive structures such as eggs.
+Recognition of conserved microbial molecules activates immune responses in plants, a process termed pattern-triggered immunity (PTI). Similarly, insect eggs trigger defenses that impede egg development or attract predators, but information on the nature of egg-associated elicitors is scarce. We performed an unbiased bioactivity-guided fractionation of eggs of the butterfly Pieris brassicae. Nuclear magnetic resonance (NMR) spectroscopy and mass spectrometry of active fractions led to the identification of phosphatidylcholines (PCs). PCs are released from insect eggs, and they induce salicylic acid and H2O2 accumulation, defense gene expression and cell death in Arabidopsis, all of which constitute a hallmark of PTI. Active PCs contain primarily C16 to C18-fatty acyl chains with various levels of desaturation, suggesting a relatively broad ligand specificity of cell-surface receptor(s). The finding of PCs as egg-associated molecular patterns (EAMPs) illustrates the acute ability of plants to detect conserved immunogenic patterns from their enemies, even from seemingly passive structures such as eggs.
 
 ## Introduction
 
@@ -40,35 +40,79 @@ Currently, the nature of EAMPs that induce immune responses in Arabidopsis is un
 
 ## Results
 
-## Purification of P. brassicae eggs
+### Purification of P. brassicae eggs
 
 In order to find marker genes that we could robustly use to identify defense-inducing compounds in eggs, we performed an RNA sequencing experiment using Arabidopsis plants on which eggs were naturally oviposited by P. brassicae butterflies and compared it with plants treated with EE. After 5 days, hundreds of genes were significantly upregulated by each treatment and their induction was highly similar between treatments (Figure 1—figure supplement 1, Supplementary file 1). This conserved transcriptomic signature strongly supports our previous observations that oviposition and EE treatment trigger comparable responses in Arabidopsis. Amongst the most highly upregulated genes, we selected PATHOGENESIS-RELATED PROTEIN1 (PR1, At2g14610), SENESCENCE-ASSOCIATED GENE 13 (SAG13, At2g29350), and KUNITZ INHIBITOR PROTEIN 1 (TI, At1g73260), which were equally induced by oviposition and EE treatment (Figure 1—figure supplement 1, Supplementary file 1) and which were initially found to be strongly responsive to P. brassicae oviposition and to treatment by EE from different insect species (Bruessow et al., 2010). Furthermore, PR1 is a known marker gene of the SA pathway (van Loon et al., 2006), whereas SAG13 and TI have been shown to be involved in the regulation of cell death and defense (Brodersen et al., 2002; Li et al., 2008; Dhar et al., 2020).
 
 Preliminary tests indicated that egg-derived defense eliciting compounds are of lipidic nature (Bruessow et al., 2010; Gouhier-Darimont et al., 2013). To confirm this observation, we used Cleanascite solid-phase aqueous reagent to selectively adsorb lipids from EE. Application of the lipid-containing phase to PR1::GUS, SAG13::GUS, and TI::GUS Arabidopsis reporter lines triggered strong and localized GUS staining, similar to EE treatment. In contrast, the supernatant containing proteins and other non-lipidic molecules was not active, indicating that defense gene-inducing molecules were restricted to the lipid phase (Figure 1A). Then, we collected approximately 100'000 P. brassicae eggs and extracted 1.1 g of total lipids with CHCl3/EtOH (1:1, v/v). The lipid fraction (LF) was separated onto a solid-phase extraction (SPE) C18-cartridge by elution with increasing concentration of MeOH followed by a final wash with ethyl acetate. Each fraction was tested for its ability to induce PR1 expression by qPCR and compared to the defense-inducing capability of LF. Most of the inducing activity was found in the fraction that eluted with 100% MeOH (Fr. 4, Figure 1B). Fr. four was further separated by reverse-phase semi-preparative HPLC with evaporative light scattering detector (ELSD) and 17 subfractions (Fr. 4.1 to Fr. 4.17) that corresponded to peaks eluting during the isocratic phase of the gradient (see Materials and methods) were collected and tested for activity. Subfractions Fr. 4.10 to 4.17 induced PR1 expression, Fr. 4.14, Fr. 4.15, and Fr. 4.16 being the most active ones (Figure 1C).
 
-## Identification of active PCs
+![Figure 1.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig1-v1.jpg)
+
+**Figure 1.:** (A) Expression of defense genes PR1, SAG13, and TI in response to purified P. brassicae egg lipids. Purification of egg lipids was conducted using Cleanascite. GUS reporter lines were treated with the lipid-free supernatant (CS SN) or the lipid fraction (CS LF). Untreated and egg extract (EE)-treated plants served as controls. The experiment was repeated three times with similar results and representative pictures from one experiment are shown. (B) Relative PR1 expression upon treatment with purified P. brassicae egg lipids (LF) and with fractions from LF separated by solid-phase extraction (SPE). LF and SPE fractions were applied at 5 µg/µL solved in 1% DMSO and plants treated with 1% DMSO served as controls. Transcript levels represent means ± SE of three independent experiments. Different letters indicate significant differences between treatments (ANOVA followed by Tukey’s honest significant difference test, p<0.05). (C) PR1 expression upon treatment with fractions obtained from semi-preparative HPLC-fractionation of SPE Fr. four detected in ELSD (mV). Subfractions Fr. 4.1 to Fr. 4.17 were applied at 5 µg/µL solubilized in 1% DMSO. PR1 expression was normalized to the expression value obtained upon treatment with SPE Fr. four (indicated by the dashed line). Transcript levels represent means ± SE of two to five independent experiments. HPLC chromatogram used for fraction collection is indicated in orange.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Plants were naturally oviposited by P. brassicae butterflies and leaves containing one egg batch (ca. 20–30 eggs) were harvested after 5 days. For EE treatment, leaves were treated with 2 × 2 μL of EE (corresponding to ca. 30 eggs) and harvested after 5 days. Expression ratios calculated from experiments comparing oviposited and control plants (three biologically independent replicates) are plotted against expression ratios between EE-treated and control plants (three biologically independent replicates). Marker genes used in this study are indicated in red. PR1, PATHOGENESIS-RELAZED PROTEIN 1 (At2g14610); SAG13, SENESCENCE-ASSOCIATED GENE 13 (At2g29350); TI, KUNITZ TRYPSIN INHIBITOR 1 (At1g73260).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Assignment of the main classes of phospholipids is reported as follow: PC for phosphatidylcholine, LPC1 and LPC2 for lysophosphatidylcholine, SM for sphingomyelin, PE for phosphatidylethanolamine, and LPE for lysophosphatidylethanolamine.
+
+### Identification of active PCs
 
 To obtain information about the chemical composition of active fractions, we used one-dimensional (1D) and two-dimensional (2D) 1H and 31P nuclear magnetic resonance (NMR) spectroscopy. The 1H NMR spectrum of Fr. four displayed typical profile of phosphatidylcholine (PC) derivatives with signals from the glycerol part at δH 5.24, 4.44, 4.18, 4.00, and from the choline part at δH 4.28, 3.65, 3.23. The 31P NMR spectrum confirmed the presence of phosphorylated compounds and indicated that it contained different classes of phospholipids (Figure 1—figure supplement 2). To identify them, a 2D 1H−31P heteronuclear total correlation spectroscopy (TOCSY) experiment was performed (Balsgart et al., 2016). Then, 31P signals (each corresponding to a class of phospholipid) from each subfraction was integrated and the concentration was calculated using a solution of 48.5 mM of triphenyl phosphate as external standard. The active subfractions Fr. 4.10–4.17 contained mainly phosphatidylcholines (PCs), with low amounts of sphingomyelin (SM) and phosphatidylethanolamines (PEs) (Figure 2A). To confirm these findings, a shotgun lipidomics analysis of P. brassicae EE by direct infusion mass spectrometry (DIMS) (Surma et al., 2015) indicated that PCs are the most abundant lipid species (46%), followed by PEs (23%), triacylglycerides (14%), diacylglycerides (7%), and other lipids at lower concentrations (Figure 2B). PC species contained mainly C16 to C18 fatty acyl chains with different combinations and levels of desaturation (Figure 2C). For clarity, we employ the following PC nomenclature: when known, the length and level of desaturation of each of the two fatty acyl chain is indicated (e.g., PC(18:1/18:1)); otherwise, only the total number of carbons and double bonds is mentioned (e.g., PC36:2); in addition, sn-1 or sn-2 position of different acyl chains is not indicated.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig2-v1.jpg)
+
+**Figure 2.:** (A) Phospholipid composition of HPLC fractions was obtained by 1D 31P NMR. (B) Lipid composition of P. brassicae EE measured by MS shotgun lipidomic analysis. Values are given as percentage of the total lipid mass and display means of three different EE preparations. (C) Absolute levels of phosphatidylcholines (PCs) in P. brassicae EE measured by MS shotgun lipidomic analysis. Different PC species are reported according to their molecular composition with the total number of carbon atoms and the sum of double bonds in fatty acyl chains. PC levels represent the means ± SE of three different EE preparations. (D) Absolute quantification of total PC content in P. brassicae EE measured by 1D 31P NMR and MS shotgun lipidomic analysis. Total PC levels represent means ± SE of three different EE preparations. (E) Relative PR1 expression upon treatment with EE and EE digested with phospholipase D (PLD) and phospholipase A2 (PLA2). Untreated plants served as controls (CTL). Transcript levels represent means ± SE of three independent experiments. Different letters indicate significant differences between treatments (ANOVA followed by Tukey’s honest significant test, p<0.05). (F) 1D 31P NMR spectra of EE + TIPB (bottom) and EE + PLD + PLA2 + TIBP (top). TIBP is used as an internal standard. (G) Relative PR1 expression upon treatment with EE, a synthetic egg lipid mix (SELM), a synthetic egg lipid mix without PCs (SELM-PC), and a PC-Mix. The SELM was composed of 5 µg/µL PC-Mix, 2.5 µg/µL PE-Mix, 1.75 µg/µL TAG(18:1/18:1/18:1), 1 µg/µLDAG(16:0/18:1), 1 µg/µL LPC-Mix, 0.2 µg/µL LPE-Mix and 0.1 µg/µL PA-Mix. The compounds were solubilized in 1% DMSO, 0.5% Glycerol and 0.1% Tween. Plants treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween (CTL) and untreated plants (UT) served as controls. Transcript levels represent means ± SE of three independent experiments. Asterisks denote statistically significant differences between control and treated plants (Welch's t-test, *p<0.05). CE, cholesterol ester; DAG, diacylglycerol; LPC1 and LPC2, lysophosphatidylcholine; LPE, lysophosphatidylethanolamine; PA, phosphatidic acid; PC, phosphatidylcholine; PE, phosphatidylethanolamine; PG, phosphatidylglycerol; PI, phosphatidylinositol; PS, phosphatidylserine; SM, sphingomyelin; TAG, triacylglycerol.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Lipid composition of P. brassicae and S. littoralis EE measured by MS shotgun lipidomic analysis. Values are given as percentage of the total lipid mass and display means of three different EE preparations. CE, cholesterol ester; DAG, diacylglycerol; PA, phosphatidic acid; PC, phosphatidylcholine; PE, phosphatidylethanolamine; PG, phosphatidylglycerol; PI, phosphatidylinositol; PS, phosphatidylserine; SM, sphingomyelin; TAG, triacylglycerol. (B) Absolute quantification of total PC content in P. brassicae and S. littoralis EE by 1D 31P NMR and MS shotgun lipidomic analysis. Values represent the means ± SE of three different EE preparations, except for S. littoralis where quantification by the NMR-based method which was conducted once. (C) Absolute levels of phosphatidylcholines (PCs) in P. brassicae and S. littoralis EE measured by MS shotgun lipidomic analysis. Different PC species are reported according to their molecular composition with the total number of carbon atoms and the sum of double bonds in the fatty acyl chains. PC levels represent the means ± SE of three different EE preparations.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Transcript levels represent means ± SE of one representative experiment with technical triplicates. The experiment was repeated three times with similar results. Different letters indicate significant differences between treatments (ANOVA followed by Tukey’s honest significant test, p<0.05).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** HPLC subfractions Fr. 4.13 and Fr. 4.14 were analyzed by mass spectrometry using a precursor ion scan to identify parent ions generating a phosphocholine (detected as a m/z 184.074). The parent ions for the precursor ion scan for Fr. 4.13 (upper panel) and Fr. 4.14 (lower panel) are shown.
 
 Total PC quantification in P. brassicae EE by 1D 31P NMR or by MS shotgun lipidomics yielded a similar concentration of ca. 5 μg/μL (Figure 2D), which corresponds to 0.5 μg of PCs per egg. In addition, a similar lipid content and concentration were found in eggs of the generalist moth Spodoptera littoralis (Figure 2—figure supplement 1), which were previously shown to also induce defense responses in Arabidopsis (Bruessow et al., 2010).
 
 Results from the purification of P. brassicae EE clearly suggested that phospholipids, and presumably PCs, are active compounds in insect eggs. To test this hypothesis, we treated EE with phospholipase D, which preferentially cleaves the choline headgroup of PCs, and phospholipase A2, which cleaves the fatty acid in position sn-2 of phospholipids. A combined treatment with both phospholipases abolished PR1-inducing activity of EE, confirming that a phospholipid is crucial for triggering defense gene expression (Figure 2E). In addition, treatment of EE with single phospholipases showed that PLA2 reduced PR1-inducing activity of EE to ca. 20% whereas PLD was less effective, probably because of the release of phosphatidic acid (PA) from PCs (see below) (Figure 2—figure supplement 2). Loss of the 31P NMR signal for PCs and PEs in PLD/PLA2-treated sample indicated that phospholipases efficiently degraded the main lipid classes of EE (Figure 2F). To further evaluate the specific contribution of PCs to the PR1-inducing activity of EE, we reconstituted a synthetic egg lipid mix (SELM). We included the major phospholipids identified in EE and active fractions (PC, PE, TAG, DAG, LPC, LPE; Figure 2A,B) and added them at their respective concentration. Given the potential role of PA, we also added PA at the concentration found in EE. SELM application triggered PR1 expression to a similar extent as EE (Figure 2G). However, when PCs were omitted from the mix (SELM-PC), no PR1 expression could be detected, strongly suggesting that PCs are responsible for the observed induction. Indeed, treatment with a PC-Mix triggered PR1 induction, albeit to a lower extent, which could indicate that some additional EE components are needed for a full PC response or that PCs are more potent when diluted in the EE solution (Figure 2G).
 
-## PCs are active molecules in eggs
+### PCs are active molecules in eggs
 
 To obtain further information on the chemical nature of PCs contained in active subfractions, a MS/MS analysis was performed in positive and negative modes and precursor ion scans were analyzed. To identify fatty acyl chains, LiAc was added and loss of specific fatty acids was detected by neutral ion loss analysis. Results indicated the presence of PC(16:0/16:1) (m/z 732.39) in Fr. 4.14, PC(18:1/18:3) (m/z 782.37) in Fr. 4.13 and Fr. 4.14, PC(16:1/18:1) (m/z 758.43) in Fr. 4.14, and PC36:3 (m/z 756.40) in Fr. 4.13 (Figure 2—figure supplement 3). The fatty acyl chains of PCs in other active subfractions could not be determined precisely due to a lack of clear fragmentation pattern. Then, to test whether pure PCs can activate defense gene expression, we applied commercially available phospholipids onto PR1::GUS, SAG13::GUS, and TI::GUS Arabidopsis lines. All PCs with C16 or C18 fatty acyl chains, including PC(16:1/16:1) found in very small amount in Fr. 4.13, and the abundant PC(18:3/18:3) identified by MS shotgun lipidomics, robustly activated gene expression in the three reporter lines, irrespective of the level of fatty acid desaturation. A mixture of purified PCs from chicken egg yolk was also active. In contrast, a PC with C3 fatty acyl chains, lysoPCs, PEs, lysoPEs, and sphingomyelin (SM) were inactive (Figure 3A). Then, to test which part of the PC molecule is important for activity, we applied different PC constituents to GUS reporter lines. The entire PC(18:1/18:1) molecule was active, as well as PA (which lacks the choline head group), whereas choline, phosphocholine, lysophosphocholine LPC(18:1/18:1) or 18:1 free fatty acid did not cause GUS staining (Figure 3B). We further evaluated the PR1-inducing activity of phospholipids found in EE. At the same concentration (1 μg/μL), PC(18:1/18:1) robustly activated PR1 gene expression whereas LPC(18:1), PE(18:1/18:1), LPE(18:1), DAG(16:0/18:1), and TAG(18:1/18:1/18:1) were inactive. As observed with GUS lines, PA(18:1/18:1) activated PR1 gene expression as well but to a lower extent than PC(18:1/18:1) (Figure 3—figure supplement 1). Finally, treatment with 10 μg of PC(16:1/16:1), which corresponds to the amount of total PC found in 2 μL of EE used for experiments, triggered PR1 expression to similar levels as EE treatment. However, lower amounts down to 0.02 μg (13.6 μM) still significantly upregulated PR1 expression, indicating that PCs are active at low micromolar range (Figure 3C). Overall, these data indicate that PCs containing long- chain fatty acids are active molecules in insect eggs, but that the type of fatty acid desaturation and exact length are not crucial for activity.
 
-## PCs can diffuse out of the eggs
+![Figure 3.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig3-v1.jpg)
+
+**Figure 3.:** (A) Expression of PR1, SAG13, and TI upon treatment with different PCs and purified phospholipid preparations. Phospholipids were applied to GUS reporter lines at 1 µg/µL, solubilized in 1% DMSO, 0.5% Glycerol and 0.1% Tween. Plants treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween (CTL) served as controls. Each phospholipid was tested at least twice for its capability to activate defense gene expression and representative pictures from one experiment are shown. (B) Expression of PR1, SAG13, and TI in response to treatment with choline, phosphocholine, phosphatidic acid (PA) (18:1/18:1), lysophosphatidylcholine LPC(18:1), oleic acid (C18:1), and PC(C18:1/C18:1). All compounds were applied to GUS reporter lines at 1 µg/µL, solubilized in 1% DMSO, 0.5% Glycerol and 0.1% Tween. Plants treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween (CTL) served as controls. The experiment was repeated three times with similar results and representative pictures from one experiment are shown. (C) Relative PR1 expression upon treatment with EE and PC(C16:1/C16:1) at different concentrations. PC(C16:1/C16:1) was solubilized in 1% DMSO, 0.5% Glycerol and 0.1% Tween. Untreated plants (UT) and plants treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween (CTL) served as controls. Total amounts of PC(C16:1/C16:1) applied per treatment are given below each bar. Transcript levels represent means ± SE of four independent experiments. Different letters indicate significant differences between treatments (ANOVA followed by Tukey’s honest significant test, p<0.05). SM-mix, sphingomyelin mix.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Relative PR1 expression upon treatment with PC(18:1/18:1), LPC(18:1), PE(18:1/18:1), LPE(18:1), PA(18:1/18:1), DAG(16:0/18:1) and TAG(18:1/18:1/18:1). Phospholipids were applied at 1 µg/µL solubilized in 1% DMSO, 0.5% Glycerol and 0.1% Tween. Plants treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween (CTL) served as controls. Transcript levels represent means ± SE of three independent experiments. Asterisks denote statistically significant differences between CTL and treated samples (Welch's t-test, *p<0.05).
+
+### PCs can diffuse out of the eggs
 
 Having shown that PCs are abundant components of P. brassicae and S. littoralis eggs, that they are found in PR1-inducing fractions and that they can activate defense gene expression when applied exogenously, we wondered if phospholipids are released by eggs onto the leaf after oviposition. To tackle this technically challenging question, we took advantage of the ability of butterflies to lay eggs on filter paper. Eggs from P. brassicae and S. littoralis deposited on filter paper were gently removed after one or three days, respectively, and the presence of phospholipids on the filter paper was measured by MS/MS. Strikingly, PCs were identified on filter paper and their profile was highly similar to the PC profile found in EE from both insects (Figure 4). For example, PC(36:2) to PC(36:6) and PC(34:1) to PC(34:3) were the most abundant PCs from P. brassicae EE and filter paper samples. In contrast, empty control filter paper contained low levels of PCs (Figure 4—figure supplement 1). The total amount of PCs released by P. brassicae eggs during one day was 0.23 ± 0.05 μg / batch, which falls in the range of active concentrations that induce PR1 expression (Figure 3C). S. littoralis eggs released four-fold more PCs (Figure 4), which can be explained by a higher number of eggs deposited and a longer exposure to the filter paper. We thus conclude that PCs can diffuse out of the eggs and are released in sufficient amounts to trigger a response in the plant.
 
-## PCs and EE induce similar defense responses
+![Figure 4.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig4-v1.jpg)
+
+**Figure 4.:** MS-based quantification of PCs extracted from filter papers on which P. brassicae (upper panel) and Spodoptera littoralis (lower panel) eggs were deposited by natural oviposition. 80 P. brassicae eggs or 150–200 s. littoralis eggs were oviposited on filter papers and PCs from the filter papers were extracted one day and three days later, respectively. PC species are reported according to their molecular composition with the total number of carbon atoms and the sum of double bonds in the fatty acyl chains and the levels represent the mean ± SE of three independent samples. Total amount of PCs is describing the sum of all PC species per filter paper extract and represents the mean ± SE of three independent samples.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (B) Control (no eggs) and S. littoralis eggs oviposited on filter paper and removed after 2–3 days. Masses where most changes in PC levels occur are shown.
+
+### PCs and EE induce similar defense responses
 
 Oviposition or EE application trigger similar SA accumulation, ROS production, cell death, and defense gene expression in Arabidopsis (Little et al., 2007; Bruessow et al., 2010; Gouhier-Darimont et al., 2013; Gouhier-Darimont et al., 2019; Figure 1—figure supplement 1). In addition, we recently showed that the receptor-like kinase LecRK-I.8 is an early component of egg-induced signaling responses (Gouhier-Darimont et al., 2019). To test whether PCs can mimic these responses in a LecRK-I.8-dependent manner, Arabidopsis Col-0 and a T-DNA knock-out lecrk-I.8 mutant were exposed to oviposition by P. brassicae butterflies, or treated with EE and different synthetic PCs. Eggs, EE or PCs induced similar SA accumulation, and this response was significantly reduced in lecrk-I.8 (Figure 5A). Then, although they were not as potent as oviposition or EE in triggering defense gene expression, a PC-Mix, PC(16:1/16:1), and PC(18:3/18:3) induced PR1, SAG13 and TI expression in Col-0, but significantly less in lecrk-I.8 (Figure 5B). In addition, to test if these immune responses could be triggered by a release of leaf-derived PCs that would act as damage-associated molecular patterns (DAMPs), we gently wounded the abaxial leaf with forceps on a surface equivalent to the EE- or PC-treated area. Unlike oviposition, EE or PC treatment, wounding did not trigger SA accumulation and defense gene expression, strongly suggesting that the observed effects are due to egg-derived PCs (Figure 5A,B). Finally, like EE treatment, PCs triggered local accumulation of H2O2 and cell death, and the response was significantly lower in lecrk-I.8 (Figure 5C,D,E). Thus, these data show that PCs closely mimic the effect of EE in inducing PTI-like responses, likely through LecRK-I.8 activity, supporting their role as EAMPs from insect eggs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60293/elife-60293-fig5-v1.jpg)
 
-**Figure 5.:** (A) Endogenous levels of salicylic acid (SA) in Col-0 and lecrk-I.8 in response to P. brassicae oviposition (OP), EE, PC-Mix, PC(C16:1/C16:1), PC(C18:3/C18:3), and wounding (W). Total SA levels represent means ± SE of four independent experiments. Asterisks denote statistically significant differences between the same treatment of Col-0 and lecrk-I.8 (Welch's t-test, ***p<0.001). (B) Relative expression of PR1, SAG13 and TI in Col-0 and lecrk-I.8 upon treatment with oviposition (OP), EE, PC-Mix, PC(C16:1/C16:1), PC(C18:3/C18:3), and wounding (W). Transcript levels represent means ± SE of one representative experiment with technical triplicates. The experiment was repeated three times with similar results. Asterisks denote statistically significant differences between the same treatment of Col-0 and lecrk-I.8 (Welch's t-test, *p<0.05, **p<0.01, ***p<0.001). (C) Histochemical staining of leaves of Col-0 and lecrk-I.8 with 3,3-diaminobenzidine (DAB) to detect H2O2 accumulation and trypan blue to detect cell death in response to treatment with EE, PC-Mix, PC(C16:1/C16:1), and PC(C18:3/C18:3). The experiment was repeated twice with similar results and representative pictures from one experiment are shown. (D, E) Quantification of H2O2 and cell death accumulation as in (C). Staining intensity was measured on images with ImageJ software. Means ± SE of five to six leaves are shown. Asterisks denote statistically significant differences between the same treatment of Col-0 and lecrk-I.8 (Mann-Whitney U test (D) and Welch's t-test (E), *, p<0.05; **, p<0.01; ***, p<0.001). For all experiments, PCs were applied at 1 µg/µL (A, B) or 5 µg/µL (C–E), solubilized in 1% DMSO, 0.5% Glycerol and 0.1% Tween. Untreated plants (UT) and plants treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween (CTL) served as controls.Figure 5—source data 1.Figure 5A–E.
+**Figure 5.:** (A) Endogenous levels of salicylic acid (SA) in Col-0 and lecrk-I.8 in response to P. brassicae oviposition (OP), EE, PC-Mix, PC(C16:1/C16:1), PC(C18:3/C18:3), and wounding (W). Total SA levels represent means ± SE of four independent experiments. Asterisks denote statistically significant differences between the same treatment of Col-0 and lecrk-I.8 (Welch's t-test, ***p<0.001). (B) Relative expression of PR1, SAG13 and TI in Col-0 and lecrk-I.8 upon treatment with oviposition (OP), EE, PC-Mix, PC(C16:1/C16:1), PC(C18:3/C18:3), and wounding (W). Transcript levels represent means ± SE of one representative experiment with technical triplicates. The experiment was repeated three times with similar results. Asterisks denote statistically significant differences between the same treatment of Col-0 and lecrk-I.8 (Welch's t-test, *p<0.05, **p<0.01, ***p<0.001). (C) Histochemical staining of leaves of Col-0 and lecrk-I.8 with 3,3-diaminobenzidine (DAB) to detect H2O2 accumulation and trypan blue to detect cell death in response to treatment with EE, PC-Mix, PC(C16:1/C16:1), and PC(C18:3/C18:3). The experiment was repeated twice with similar results and representative pictures from one experiment are shown. (D, E) Quantification of H2O2 and cell death accumulation as in (C). Staining intensity was measured on images with ImageJ software. Means ± SE of five to six leaves are shown. Asterisks denote statistically significant differences between the same treatment of Col-0 and lecrk-I.8 (Mann-Whitney U test (D) and Welch's t-test (E), *, p<0.05; **, p<0.01; ***, p<0.001). For all experiments, PCs were applied at 1 µg/µL (A, B) or 5 µg/µL (C–E), solubilized in 1% DMSO, 0.5% Glycerol and 0.1% Tween. Untreated plants (UT) and plants treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween (CTL) served as controls.
 
 ## Discussion
 
@@ -90,13 +134,156 @@ In summary, we report here the identification of PCs as EAMPs from insect eggs. 
 
 ## Materials and methods
 
-## Plant material and insect growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>PR1</td>
+      <td>arabidopsis.org</td>
+      <td>At2G14610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>SAG13</td>
+      <td>arabidopsis.org</td>
+      <td>At2G29350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>TI</td>
+      <td>arabidopsis.org</td>
+      <td>At1g73260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>LecRK-I.8</td>
+      <td>arabidopsis.org</td>
+      <td>At5g60280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>lecrk-I.8 T-DNA</td>
+      <td>Nottingham Arabidopsis stock center (NASC)</td>
+      <td>SALK_066416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>PR1::GUS</td>
+      <td>Bruessow et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>SAG13::GUS</td>
+      <td>Bruessow et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>TI::GUS</td>
+      <td>Bruessow et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>sid2-1</td>
+      <td>Nawrath and Métraux, 1999</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Acinetobacter sp. ADPWH_lux.)</td>
+      <td>bacterial biosensor</td>
+      <td>Huang et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PR1_FWD</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGGGTTAGCGAGAAGGCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PR1_RV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTTTGGCACATCCGAGTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SAG13_FWD</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTCGTGCATGTCAATGTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SAG13_RV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAAGGACAAACAGAGTTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TI_FWD</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTCGTGGTTGCTGGTCCAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TI_RV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTCTCACATAGTCTTGGACGAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SAND_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AACTCTATGCAGCATTTGATCCACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SAND_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGATTGCATATCTTTATCGCCATC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant material and insect growth conditions
 
 Arabidopsis thaliana plants were vernalized for 2 days at 4°C and cultivated in pots containing moist compost. Plants were grown in a controlled environmental chamber with a 10-hr day / 14-hr night cycle as described previously (Reymond et al., 2004). Experiments were conducted with four- to five-week-old plants. The lecrk-I.8 T-DNA (SALK_066416) (Gouhier-Darimont et al., 2013) and sid2-1 (Nawrath and Métraux, 1999) mutants, and the GUS reporter lines PR1::GUS, SAG13::GUS, and TI::GUS (Bruessow et al., 2010) were described previously.
 
 A colony of P. brassicae (large white butterfly) was reared on Brassica oleracea var. gemmifera as described previously (Bonnet et al., 2017). Spodoptera littoralis eggs were obtained from Syngenta (Dr. O. Kindler, Stein, Switzerland).
 
-## EE preparation and purification of defense eliciting P. brassicae egg lipids
+### EE preparation and purification of defense eliciting P. brassicae egg lipids
 
 EE was prepared from P. brassicae eggs collected from cabbage leaves. P. brassicae eggs were crushed with a pestle in a 1.5 mL reaction tubes and centrifuged for 3 min at 15'000 g. The supernatant (EE) was stored at −20°C. Natural oviposition and EE application to plants have been described previously (Gouhier-Darimont et al., 2013; Gouhier-Darimont et al., 2019). After three days, P. brassicae eggs and the EE were carefully removed from treated leaves before sample analysis.
 
@@ -108,54 +295,54 @@ For SPE fractionation, 1.1 g of LF was mixed with 7 g of silica gel and loaded t
 
 Further fractionation of Fr. four was performed on a semi-preparative HPLC equipment (Armen modular spot prep II, Saint-Avé, France) connected to an ELSD Sedex LT-ELSD 85 (Sedere, Alfortville, France). The fractionation was performed on 30 mg using a reverse-phase semi-preparative X-bridge C18 column (150 × 19 mm, 5 μm; Waters, Milford, MA, USA), with water (A) and methanol (B) containing both 0.1% formic acid as mobile phase. Separation was performed with a step gradient from 5% to 96% of B in 60 min, held during 30 min, then 96% to 100% of B in 20 min, held during 20 min. The flow rate was fixed at 17 mL/min. The UV detection in the scan mode (210–366 nm) and the ELSD conditions at 1 mL/min, 40°C, 3.1 bar N2 and gain 8. Separation of Fr. four led to 17 subfractions (Fr. 4.1 to Fr. 4.17) with clearly distinguishable ELSD signal, which were eluted during the isocratic phase of the gradient (96% of B, 60–90 min) and were collected, evaporated under a nitrogen stream and used for further treatments and analyses. For plant treatment, aliquots of HPLC fractions were solubilized in 1% DMSO at 5 µg/µL by sonication. Eight leaves from four plants (two leaves per plant) were treated with a 2 µL drop of each HPLC fraction from the abaxial side of the leaf and treated leaves were harvested three days later for analysis. Plants treated with SPE Fr. four (5µg/µL) served as controls.
 
-## Detection of egg lipids on filter paper
+### Detection of egg lipids on filter paper
 
 Filter paper sheets were clipped on leaves from B. oleracea and placed in a cage with adult P. brassicae butterflies. Sheets containing egg batches were removed and left at room temperature for one day. Then, eggs were gently removed and the oviposited area was cut and 2–4 filter paper pieces (equivalent to 80 eggs) were placed into a 1.5 mL glass vial containing 600 μL MeOH. After gentle agitation for 10 min, the pieces were removed and the solution was dried with N2 before further analysis. Filter paper sheets clipped on B. oleraceae leaves but not exposed to butterflies were used as controls. For S. littoralis, egg batches were obtained on filter paper three days after oviposition. Pieces of 0.5 cm2 (150–200 eggs) were cut and placed in MeOH.
 
-## Nuclear magnetic resonance (NMR) spectroscopy
+### Nuclear magnetic resonance (NMR) spectroscopy
 
 The samples were dissolved in CD3OD and the NMR experiments were recorded on a Bruker Avance III HD 600 MHz NMR spectrometer equipped with a QCI 5 mm Cryoprobe and a SampleJet automated sample changer (Bruker BioSpin, Rheinstetten, Germany). For assignment of 31P signals the heteronuclear TOCSY pulse sequence of Kellogg, 1992 modified by Balsgart et al., 2016 was employed with a mixing time of 70 ms. The 2D 1H−31P NMR experiments were recorded using 256 t1 increments each consisting of 32 scans with a repetition delay of 1 s and eight dummy scans. The quantitative 1D 31P NMR experiments were recorded under inverse gated decoupling to avoid NOE transfer from 1H to 31P and employed 128 scans and repetition delays of 20 s. Chemical shifts are reported in parts per million (δ) using the residual CD3OD signal (δH 3.31) as internal standard for 1H and the TIBP (triisobutyl phosphate) signal (δP−0.36) as internal standards for 31P NMR. The PC quantification was performed either by the ERETIC method (Akoka et al., 1999) using the triphenyl phosphate solution as external reference (48.5 mM) or by adding TIBP as internal standard (1.5 mM). All NMR spectra were recorded at 298 K.
 
-## MS analysis of lipids in HPLC fractions and on filter paper
+### MS analysis of lipids in HPLC fractions and on filter paper
 
 Dried fractions were dissolved in chloroform/methanol (1:1 v/v) and diluted into chloroform/methanol (1:2) containing 5 mM ammonium acetate, which were then infused into a Triple Stage Quadrupole Vantage (Thermo Scientific) equipped with a Triversa NanoMate (Advion) and analyzed by full scan in positive and negative modes as well as precursor ion scans for PCs (positive mode, m/z 184.074, collision energy 30). The data were analyzed using Xcalibur (Thermo Scientific). Relatively little material was detected in the negative ion mode and in the positive mode, the major species were found in the precursor ion scan for PCs. Possible PC species were identified by their masses, giving a PC with x number of C and y number of double bonds (eg. m/z 732.4 = PC(32:1)). To identify fatty acyl chains, LiAc was added to 5 mM and fragmentation of the desired PC species was performed using the compound optimization method for fragmentation (TSQ Tune) (Hsu and Turk, 1999). Loss of specific fatty acids were detected by neutral ion loss analysis.
 
 For samples on filter paper, dried samples were resuspended in 100 microliters of chloroform/methanol/water (2:7:1, with 5 mM ammonium acetate) and infused into the TSQ triple quadrupole MS. A full scan was performed in the positive mode to see all positively charged lipids. A calibration curve was done with 0.05, 0.5 and 5 μg PC(16:1/16:1) spotted on filter paper and extracted like egg samples.
 
-## MS shotgun lipidomic analysis
+### MS shotgun lipidomic analysis
 
 MS analysis of P. brassicae and S. littoralis EE was performed at Lipotype GmbH (Dresden, Germany) according to Surma et al., 2015. Lipid profiling was conducted in triplicates for both insect species.
 
-## Phospholipase treatment of EE
+### Phospholipase treatment of EE
 
 For phospholipase treatment, 100 µL of EE were mixed with 20 U of Phospholipase D (Sigma-Aldrich, P8398) (PLD) and 20 U of Phospholipase A2 (Sigma-Aldrich, P6534) (PLA2) and incubated for 1.5 hr at 30°C followed by incubation at 37°C for another 1.5 hr. For separate phospholipase treatments, 100 µL of EE were mixed with 20 U PLD or PLA2 and incubated for 1.5 hr at 30°C for PLD or 1.5 hr at 37°C for PLA2. Eight leaves from four plants (two leaves per plant) were treated from the abaxial side of the leaf with a 2 µL drop of the phospholipase-treated EE or an untreated EE which was incubated in the same way as described above. Treated leaves were harvested three days later for analysis and untreated plants served as controls.
 
 Efficacy of PC degradation in phospholipase-treated EE was checked by 31P 1D NMR (see above).
 
-## Phospholipid treatments and wounding
+### Phospholipid treatments and wounding
 
 Pure phospholipids for plant treatments were ordered from Avanti Polar Lipids (Alabaster, Alabama, USA) PC(3:0/3:0), 1,2-dipropionyl-sn-glycero-3-phosphocholine, 850305; PC(16:0/16:0), 1,2-dipalmitoyl-sn-glycero-3-phosphocholine, 850355; PC(16:0-18:1), 1-palmitoyl-2-oleoyl-glycero-3-phosphocholine, 850457; PC(16:1/16:1), 1,2-dipalmitoleoyl-sn-glycero-3-phosphocholine, 850358; PC(18:0-18:1), 1-stearoyl-2-oleoyl-sn-glycero-3-phosphocholine, 850467; PC(18:1/18:1), 1,2-dioleoyl-sn-glycero-3-phosphocholine, 850357; PC(18:3/18:3), 1,2-dilinolenoyl-sn-glycero-3-phosphocholine, 850395; PE(18:1/18:1), 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine, 850725; PA(18:1/18:1), 1,2-dioleoyl-sn-glycero-3-phosphate, 840875; DAG(16:0/18:1), 1-palmitoyl-2-oleoyl-sn-glycerol, 800815; TAG(18:1/18:1/18:1), 1,2,3-tri-(9Z-octadecenoyl)-glycerol, 870110; LPC(18:1), 1-hydroxy-2-oleoyl-sn-glycero-3-phosphocholine, 845875; LPE(18:1), 1-oleoyl-2-hydroxy-sn-glycero-3-phosphoethanolamine, 846725; PC-Mix purified from chicken egg, 840051; Lyso-PC-Mix purified from chicken egg, 830071; PE-Mix purified from chicken egg, 840021; Lyso-PE-Mix purified from chicken egg, 860081. PA-Mix purified from chicken egg, 84010; SM-Mix purified from chicken egg, 860061. Phospholipid stock solutions were made in 100% MeOH analytical grade. For phospholipid application, an appropriated amount of the stock solution was transferred in a fresh tube, the MeOH was evaporated under a nitrogen-flux and the phospholipids were solved in 1% DMSO, 0.5% Glycerol and 0.1% Tween 20 by sonication. For GUS staining analysis, six leaves of two plants (three leaves per plant) were treated, for qPCR analysis eight leaves of four plants (two leaves per plant) were treated, and for DAB and trypan blue staining nine leaves of three plants (three leaves per plant) were treated. Plants were treated from the abaxial side of the leaf with a 2 µL drop of the phospholipid solution and harvested after three days. Control plants were treated with 1% DMSO, 0.5% Glycerol and 0.1% Tween 20. Oleic acid (C18:1) (Sigma-Aldrich, O1008) solution was prepared as described for phospholipids. Choline (Sigma-Aldrich, C7017) and phosphocholine (Sigma-Aldrich, P0378) stock solutions were made in H2O and diluted in the control solution for plant treatments. The concentrations used for each separated or combined phospholipid or chemical treatment are given in the corresponding figure legends.
 
 For wounding experiment, a one-side corrugated forceps wounded the leaves mostly from the abaxial site. The size of the corrugated wounding-surface was adjusted to the size of a 2 µL drop of EE. Samples were harvested after three days.
 
-## RNA sequencing experiment
+### RNA sequencing experiment
 
 For experiments with natural oviposition, 15 plants were placed in a 60 × 60×60 cm tent containing approximately 30 P. brassicae butterflies. After 24 hr, four plants containing one egg batch on two leaves were placed in a growth chamber for four days. Just before hatching, eggs were gently removed with a forceps. For EE application, 2 × 2 µL of EE were spotted under the surface of each of two leaves of each treated plant. Four plants were treated with EE for 5 days. Treated or oviposited leaves were harvested and quickly stored in liquid N2. Untreated plants were used as controls.
 
 Total RNA from three biologically independent experiments was extracted using an RNeasy plant mini kit (Qiagen). DNase treatment was added to the protocol. For cDNA synthesis, RNA samples were purified by NaAC 3M and EtOH precipitation. Library were synthetized from 500 ng of purified total RNA using the TrueSeq stranded mRNA kit (Illumina). RNA and library quality was assessed with a fragment analyzer from Advanced Analytical. Library were sequenced with the Illumina HiSeq 2500 sequencer at the Genomic Technologies Facility platform of the University of Lausanne (LGTF) (http://www.unil.ch/gtf/en/home.html). Libraries were multiplexed and sequenced twice aiming to obtain 35 million reads per sample. Reads were mapped to the Arabidopsis TAIR10 genome release using STAR (Dobin et al., 2013). Counts were normalized according to the Trimmed Mean of M-values (TMM) method and per library size. Data were transposed in normalized counts/million reads (in log2) to be further analyzed using R Bioconductor package LIMMA. Data have been deposited in the National Center for Biotechnology Information’s Gene Expression Omnibus (GEO) under the accession number GSE144091.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA was extracted using the Relia Prep RNA Tissue Mini Prep System (Promega) following the manufacturer’s instructions. cDNA synthesis was conducted using 1 µg of total RNA for reverse-transcription by M-MLV reverse transcriptase (Invitrogen) in a final volume of 25 μL. cDNA was synthesized in triplicates and diluted eightfold with water for subsequent quantitative real-time PCR (qPCR) analysis. qPCR analysis was performed with gene specific primers for PR1 (At2g14610; FW: 5′-GTGGGTTAGCGAGAAGGCTA-3′, RV: 5′-ACTTTGGCACATCCGAGTCT-3′), SAG13 (At2g29350; FW: 5′-GTCGTGCATGTCAATGTTGG-3′, RV: 5′-CCAAGGACAAACAGAGTTCG-3′), and TI (At1g73260; FW: 5′-CCTCGTGGTTGCTGGTCCAAA-3′, RV: 5′-CCTCTCACATAGTCTTGGACGAAA-3′) in a final volume of 20 μL containing 2 μL of cDNA, 0.2 μM of each primer, 0.03 μM of reference dye (ROX), and 10 µL of Brilliant III Ultra Fast SYBR Green QPCR Master Mix (Agilent) on a QuantStudio three real-time PCR machine (Applied Biosystems; Thermo Scientific) with the following program: 95°C for 3 min, then 40 cycles of 10 s at 95°C and 20 s at 60°C. mRNA levels were normalized to the house keeping gene SAND (At2g28390; FW: 5′-AACTCTATGCAGCATTTGATCCACT-3′, RV: 5′-TGATTGCATATCTTTATCGCCATC-3′).
 
-## Histochemical staining
+### Histochemical staining
 
 GUS staining and visualization of cell death by trypan blue staining were done as described previously (Little et al., 2007). Detection of hydrogen peroxide by 3,3′-diaminobenzidine (DAB) staining was conducted as described previously (Daudi and O’Brien, 2012).
 
-## Measurement of total SA
+### Measurement of total SA
 
 Determination of total SA was done using the bacterial biosensor Acinetobacter sp. ADPWH_lux. (Huang et al., 2005; Huang et al., 2006) according to Defraia et al., 2008 with minor modification. Briefly, 18 leaves of six plants (three leaves per plant) were exposed to natural oviposition, treated with 2 µL of EE, PC-Mix, PC(16:1/16:1) or PC(18:3/18:3), or wounded. Untreated plants and plants treated with the solvent control served as controls. Three days later, six leaf discs of 0.7 cm diameter from two plants were harvested per sample, combined and the fresh weight was determined. Samples were ground in liquid nitrogen and extracted in 200 mL of 0.1 M sodium acetate buffer (pH 5.6) and centrifuged at 4°C for 15 min at 16’000 g. 50 µLof the extract was incubated with 5 µL β-glucosidase from almonds (Sigma-Aldrich, G0395; 0.5 U/µL in acetate buffer) for SA release from SA-glucoside for 90 min at 37°C. Afterwards, 20 µL of the extract was mixed with 60 µL of Luria Broth medium and 50 µL of an overnight log phase culture of Acinetobacter sp. ADPWH_lux (OD600 = 0.4), and incubated for 1 hr at 37°C. Luminescence was measured with a Hidex microplate reader using a 485 ± 10 nm filter for 1 s. For absolute SA quantification, a SA standard curve (0–60 ng) in untreated sid2-1 leaf extracts was read in parallel.
 
-## Statistical analyses
+### Statistical analyses
 
 We assume normal distribution of values for gene expression levels. Because of the large range of relative expression values all statistical tests on gene expression data were performed on log-transformed data. Determination of statistically significant differences between gene expression samples was evaluated by analysis of variance (ANOVA) followed by Tukey’s honest significant. Because criteria for homogeneity of variance were not always met (Levene test), statistical differences for pairwise comparisons were evaluated by a two-sided Welch's t-test. When values were not normally distributed (Shapiro-Wilk test), we used the Mann-Whitney U test. All statistical tests were done in R (RStudio version 1.1.442). The choice of statistical test is given in the corresponding figure legend.

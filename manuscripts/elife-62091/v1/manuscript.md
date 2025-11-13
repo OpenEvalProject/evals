@@ -41,11 +41,35 @@ We investigated the relationship between spontaneous activity and mitochondrial 
 
 Previous studies reported that neuronal activity and calcium signaling reduce mitochondrial motility in dendrites in vitro (Li et al., 2004; Chang et al., 2006), but this idea has not been tested in vivo. Therefore, we first investigated the interaction between spontaneous network activity and mitochondrial motility in neonatal mice. Overall, we observed an anti-correlation between the frequency of spontaneous global calcium transients and the percentage of moving mitochondria in awake (unanesthetized) animals (Figure 2A). Upon closer inspection, it became clear that these parameters were linked systematically to the age of the animal: in older animals (≥P8) activity levels were consistently higher and mitochondrial motility was low (Figure 2A–D). We observed a similar relationship between neuronal activity, mitochondrial motility, and age in anesthetized mice (0.8% isoflurane, Figure 2—figure supplement 1A-D). Therefore, we combined both groups for the analyses shown below (Figure 2E–G).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62091/elife-62091-fig2-v1.jpg)
+
+**Figure 2.:** (A) Anti-correlation between the frequency of spontaneous global calcium transients and the percentage of moving mitochondria in imaging experiments of awake pups (n = 13 pups, Spearman’s rank correlation; 1192 mitochondria in 131 dendrites). (B) The frequency of spontaneous global calcium transients increased until postnatal day (P) 9 (but not significantly for the entire age range, Spearman’s rank correlation) and the percentage of moving mitochondria decreased over P6–11 in vivo (Spearman’s rank correlation). (C-D) When comparing awake animals younger than P8 to P8 and older, the frequency of spontaneous global calcium transients increased (t-test, n = 5 vs. n = 8, p = 0.02) and the percentage of moving mitochondria decreased (t-test, n = 5 vs. n = 8, p = 0.045). (E-F) Application of tetrodotoxin (TTX, 2 µM) on the surface of the cortex (n = 7 pups, 1625 mitochondria in 160 dendrites) completely abolished spontaneously occurring global calcium transients (paired t-test, p = 6*10–4) and increased the percentage of moving mitochondria (paired t-test, p = 0.035). (G) Higher baseline frequency of spontaneous global calcium transients was correlated with a larger effect of TTX on the percentage of moving mitochondria (n = 7 pups, Pearson correlation, r = 0.85, p = 0.015). (H-I): Mean mitochondrial motility time-locked to the onset of single global calcium transients. The percentage of moving mitochondria did not change significantly between the 2 minutes before and after spontaneously occurring global calcium transients in awake animals (n = 136 transients, paired t-test, p = 0.33).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62091/elife-62091-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Anti-correlation between the frequency of spontaneous global calcium transients and the percentage of moving mitochondria in animals under isoflurane anesthesia (Spearman’s rank correlation: rs = –0.47, p = 0.04). (B) The frequency of spontaneous global calcium transients increased with age (Spearman’s rank correlation). (C-D) When comparing animals younger than postnatal day (P) 8 to P8 and older, the frequency of spontaneous global calcium transients increased (t-test, n = 5 vs. n = 14, p = 3*10–6) and the percentage of moving mitochondria decreased (t-test, n = 5 vs. n = 14, p = 0.002) in animals under isoflurane anesthesia. (E-F) Mean mitochondrial speed time-locked to the onset of single global calcium transients. The speed of moving mitochondria did not change between the 2 min before and after a single spontaneously occurring calcium transient in vivo (right, Student’s t-test, n = 1029 mitochondria, p = 0.07).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62091/elife-62091-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Two examples of local calcium transients (green) in spines of a layer II/III pyramidal neuron dendrite at postnatal day (P) 13 (red: mitochondrial-DsRed). Arrow heads mark two spines that are activated in A or B.
+
 Since overall calcium signaling correlated with mitochondrial motility, we asked whether neuronal activity could directly affect mitochondrial motility. First, we replicated previous experiments performed in cell cultures (DIV14–17) that showed an increase of mitochondrial motility after blocking action potential firing (Li et al., 2004; Chang et al., 2006). Application of the sodium channel blocker TTX (2 µM) to the surface of the brain (P5–12) abolished global calcium transients (Figure 2E) and, as expected, led to a significant increase in mitochondrial motility (Figure 2F, see also Materials and methods for an extended discussion on statistics). Furthermore, the effect of TTX on mitochondrial motility was highly proportional to the frequency of baseline activity (r2 = 0.81; Figure 2G), suggesting that natural patterns of neuronal activity efficiently constrain mitochondrial motility.
 
 We then examined whether spontaneously occurring single global calcium transients affected mitochondrial motility. We compared mitochondrial motility before and after global calcium transients across all recordings by aligning the occurrence of global calcium transients in time and plotting the percentage of moving mitochondria around this time point (Figure 2H). We found that spontaneous global calcium transients did not precede a change in mitochondrial motility (Figure 2H–I) or mitochondrial speed (Figure 2—figure supplement 1E, F). Together, these experiments showed that while neuronal activity modulated mitochondrial motility, global calcium transients – most likely reflecting single back-propagating action potentials and bursts of back-propagating action potentials – were ineffective in doing so. We therefore speculated that synaptic transmission, rather than postsynaptic action potential firing, might regulate mitochondrial motility. To address this possibility we aimed at analyzing the relationship between synaptic activity and mitochondrial motility. Our in vivo recordings showed transmission events at individual synapses (Figure 2—figure supplement 2), but we detected these events too rarely to quantify any possible effect of synaptic activity on mitochondrial motility.
 
 Therefore, we moved to organotypic slice culture preparations, which allow higher signal-to-noise ratio imaging and more stable recordings to investigate the role of transmission at synapses. We obtained cortical slices at P5 or P8 and kept them in culture for at least 3 days before imaging. Slices obtained from older animals showed a trend toward higher spontaneous activity levels (Figure 3A, Figure 3—figure supplement 1A, B) and significantly lower mitochondrial motility than slices obtained from younger animals (Figure 3B, Figure 2—figure supplement 1A, B). As in vivo, spontaneous global calcium transients did not precede changes in mitochondrial motility (Figure 3C–D, Figure 3—figure supplement 1C, D) or speed (Figure 3—figure supplement 1E, F). Thus, mitochondrial motility and its independence of spontaneous global calcium signaling were maintained in slice cultures (Figure 3—figure supplement 1A, B). Together, we reproduced our in vivo observations on mitochondrial motility in slice cultures and, thus, found them suitable to investigate the role of synaptic activity in regulating mitochondrial motility.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62091/elife-62091-fig3-v1.jpg)
+
+**Figure 3.:** (A-B) Frequency of global calcium transients and mitochondrial motility in slices obtained from postnatal day (P) 5 and P8 pups. The frequency of spontaneous global calcium transients did not change significantly (n = 15 vs. n = 5 cells, Student’s t-test, p = 0.37). The percentage of moving mitochondria was significantly decreased in slices from older animals (n = 15 [252 mitochondria] vs. n = 5 [85 mitochondria], Student’s t-test, p = 0.02), similar to the in vivo results. (C-D) The percentage of moving mitochondria did not change significantly between the 2 min before and after spontaneously occurring calcium transients in P5 (n = 158 transients, paired t-test, p = 0.07) or P8 slices (paired t-test, n = 101 transients, p = 0.3). (E) Dendritic segment and kymograph showing a mitochondrion approaching and passing an inactive synapse (arrow). (F) Same dendritic segment as in A. A mitochondrion arrived near the same synapse (arrow) after a synaptic calcium transient occurred and stopped within its vicinity (Δx: distance to synapse, Δt: time after synaptic calcium transient). (G-H) Mitochondria moving toward a synapse can show one of two behaviors: they may continue moving (left) or stop near the synapse (right). We compared the percentage of approaching mitochondria that stopped within a specific distance range before individual synaptic calcium transients occurred (G) with that of mitochondria that reached a synapse after a transient (H) within a specific time interval. (I) There was a significant increase in the percentage of stopping mitochondria after a single local calcium transient occurred (distance ≤ 1 µm; interval ≤ 120 s; *p = 6*10–5, chi-squared test). (J) We compared the effect size of mitochondrial arrest at active synapses to a distribution generated by shuffling the time points at which synaptic calcium transients occurred (1000 runs). The observed effect size was within the top 5 percentile of those generated from shuffled data for distances ≤ 1 µm and intervals ≤ 120 s. (K) Quantitative estimation of the spatio-temporal characteristics of mitochondrial arrest (chi-squared test for each distance/interval pair Bonferroni-corrected; distance ≤ 1 µm; interval ≤ 80 s, p = 0.0035; interval ≤ 100 s, p = 0.0016; interval ≤ 120 s, p = 0.0025). (L) Matrix showing the individual chi-squared test p-values from each distance/interval pair. Roughly, p < 0.05 for intervals between 80 and 120 s and distances of up to 5 µm. (Number of observations for K,L: see Figure 3—figure supplement 2B.) (M) Distribution of mitochondrial arrest durations after single spontaneous synaptic events. Shown in dark gray are underestimated durations for data points where mitochondria remained immotile until the end of the recording.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62091/elife-62091-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A-B) In slices obtained from postnatal day (P) 5 (A) or P8 pups (B), the frequency of spontaneous global calcium transients increased slightly over days in vitro whereas the motility of mitochondria did not change significantly (Spearman’s rank correlation). (C-D) Mean mitochondrial motility time-locked to the onset of single global calcium transients for slices obtained from P5 (C) and P8 pups (D). (E-F) The speed of moving mitochondria did not change between the 2 min before and after a single spontaneously occurring calcium transient in cells from P5 (E, Student’s t-test, n = 1592 mitochondria, p = 0.1) or P8 pups (F, paired t-test, n = 769 mitochondria, p = 0.5).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62091/elife-62091-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Significance levels (Figure 3L) and (B) number of observations for mitochondrial arrest at synapses after synaptic transmission events for each interval and distance bin.
 
 In slice cultures, visual cortex layer II/III neurons frequently showed spontaneous calcium transients in spines representing synaptic transmission events at excitatory synapses, as shown previously in the developing visual cortex and hippocampus (Kleindienst et al., 2011; Winnubst et al., 2015; Niculescu et al., 2018). In nine cells (P5 + 3–7 DIV), we identified 157 spines of which 71 (45%) showed spontaneous synaptic calcium transients (376 transients). We asked whether synaptic activity affected the motility of passing mitochondria. We observed that mitochondria typically passed by inactive synapses (Figure 3E), but frequently halted when they reached a synapse that had just been active (Figure 3F). Therefore, we specifically determined whether synaptic calcium transients affected the likelihood that incoming mitochondria stopped at or passed by synapses. To quantify this effect, we compared the percentage of approaching mitochondria that stopped at a synapse before and after the occurrence of a synaptic calcium transient (Figure 3G–H). When we compared the percentage of stopping mitochondria during a 120 s interval before a single synaptic calcium transient occurred with an interval of the same duration after that calcium transient, we found that the percentage of stopping mitochondria increased significantly after the transient (Figure 3I). To answer whether the observed effect size (the difference between the arrest rates before and after a local calcium transient) was likely to occur by chance or not, we performed a bootstrap analysis where we randomized the time points of synaptic calcium transients in our recordings and determined the resulting effect size for a total of 1000 runs. We found that the observed effect size was above the 95 percentile of the randomized effect size distribution (Figure 3J) demonstrating that this effect was unlikely to be observed by chance.
 
@@ -55,7 +79,7 @@ To address the potential mechanism of mitochondrial arrest at active synapses, w
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62091/elife-62091-fig4-v1.jpg)
 
-**Figure 4.:** (A, B) Perfusing layer II/III pyramidal neurons (postnatal day [P] 5 + 3–7 DIV) with high-potassium medium [50 mM] triggered a massive influx of calcium and significantly reduced mitochondrial motility within 2 min (n = 9 cells; 107 mitochondria, paired t-test, p = 0.04). (C-E) Stimulating synaptic vesicle release with latrotoxin (LTX) interrupted mitochondrial motility entirely. (C) Example kymographs from recordings during baseline, in the presence of tetrodotoxin (TTX), TTX and LTX, and after washout of LTX. Basal calcium levels were elevated and mitochondrial motility was absent during the presence of LTX. (D) Averaged time course of mitochondrial motility and GCaMP6 ΔF/F0 for the duration of the experiments. Shaded areas and horizontal bars indicate SEMs of values and time points, respectively. (E) Percentage of moving mitochondria across all conditions (p = 0.0058, repeated measures ANOVA, *p = 0.028 (baseline vs. LTX + TTX), *p = 0.022 (TTX vs. TTX + LTX), post hoc t-test with Bonferroni multi-measures correction, n = 5 cells, 92 mitochondria). (F-G) Triggering calcium transients with focal application of glutamate (100 µM) in the presence of TTX did not affect mitochondrial motility significantly (P5 + 3–7 DIV, n = 74 transients from 13 cells, 146 mitochondria, paired t-test, before vs. after, 10.32 ± 2.09 vs. 7.12 ± 1.12, p = 0.1).Figure 4—source data 1.Figure 4B.Figure 4—source data 2.Figure 4D,E.Figure 4—source data 3.Figure 4G.
+**Figure 4.:** (A, B) Perfusing layer II/III pyramidal neurons (postnatal day [P] 5 + 3–7 DIV) with high-potassium medium [50 mM] triggered a massive influx of calcium and significantly reduced mitochondrial motility within 2 min (n = 9 cells; 107 mitochondria, paired t-test, p = 0.04). (C-E) Stimulating synaptic vesicle release with latrotoxin (LTX) interrupted mitochondrial motility entirely. (C) Example kymographs from recordings during baseline, in the presence of tetrodotoxin (TTX), TTX and LTX, and after washout of LTX. Basal calcium levels were elevated and mitochondrial motility was absent during the presence of LTX. (D) Averaged time course of mitochondrial motility and GCaMP6 ΔF/F0 for the duration of the experiments. Shaded areas and horizontal bars indicate SEMs of values and time points, respectively. (E) Percentage of moving mitochondria across all conditions (p = 0.0058, repeated measures ANOVA, *p = 0.028 (baseline vs. LTX + TTX), *p = 0.022 (TTX vs. TTX + LTX), post hoc t-test with Bonferroni multi-measures correction, n = 5 cells, 92 mitochondria). (F-G) Triggering calcium transients with focal application of glutamate (100 µM) in the presence of TTX did not affect mitochondrial motility significantly (P5 + 3–7 DIV, n = 74 transients from 13 cells, 146 mitochondria, paired t-test, before vs. after, 10.32 ± 2.09 vs. 7.12 ± 1.12, p = 0.1).
 
 These experiments indicated that single synaptic transmission events have the capacity to stop mitochondria for 1 to a few minutes and that massive synaptic activation interrupts mitochondrial motility almost entirely for periods of tens of minutes. Finally, we asked whether the transmitter glutamate is responsible for presynaptic release-mediated mitochondrial arrest. We applied single puffs of glutamate (100 µM) to individual dendrites using a pico-spritzer. Focal glutamate delivery triggered calcium increases in the dendrite extending 7–59 µm (27 ± 14 µm; mean ± standard deviation). We analyzed mitochondrial motility before and after glutamate application in the dendritic stretch that responded with a calcium rise. We found that mitochondrial motility was slightly, but not significantly, reduced after glutamate puffs (Figure 4F and G), demonstrating that glutamate is not sufficient to cause vesicle release-mediated mitochondrial arrest.
 
@@ -87,27 +111,121 @@ The regulation of mitochondrial motility through synaptic activity we describe h
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male/ female)</td>
+      <td>C57Bl/6 J, male and female</td>
+      <td>Janvier Labs;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>GCaMP6s (species: Rattus norvegicus)</td>
+      <td>Add gene plasmid 40753; Douglas Kim</td>
+      <td>RRID:Addgene_40753</td>
+      <td>Cloned into pCAG vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Mitochondrial-DsRed (species: Homo sapiens)</td>
+      <td>Gift from Thomas Misgeld</td>
+      <td></td>
+      <td>Mitochondrial targeting sequence from subunit VIII of human cytochrome c oxidase causing mitochondrial localization as previously described; Rizzuto et al., 1995; Li et al., 2004; MacAskill et al., 2009 Cloned into pCAG vector</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTX</td>
+      <td>1078, Bio-Techne, Minneapolis, MN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LTX</td>
+      <td>ALX-630–027 C040, Enzo Life Sciences b.v., Farmingdale, NY</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamate</td>
+      <td>G1626, Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MitoMotil</td>
+      <td>This study</td>
+      <td></td>
+      <td>https://github.com/annikc/MitoMotil (copy archived at swh:1:rev:a4cfb2b4fd66579f63ea5a150a0f9b1b21b89a83, Yalnizyan-Carson, 2021)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>The MathWorks</td>
+      <td></td>
+      <td>https://mathworks.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NormCorre</td>
+      <td>Flatiron Institute, Simons Foundation</td>
+      <td></td>
+      <td>https://github.com/flatironinstitute/NoRMCorre, Pnevmatikakis and Giovannucci, 2021</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python Software Foundation</td>
+      <td></td>
+      <td>https://www.python.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Elephant library</td>
+      <td>Human Brain Project</td>
+      <td></td>
+      <td>https://elephant.readthedocs.io/en/latest/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 To investigate the relationship between neuronal activity and mitochondria, we used the genetically encoded calcium indicator GCaMP6s (Addgene plasmid 40753; Douglas Kim) in combination with mitochondrial-DsRed (mitochondrial targeting sequence from subunit VIII of human cytochrome c oxidase causing mitochondrial localization as previously described; Rizzuto et al., 1995; Li et al., 2004; MacAskill et al., 2009). These plasmids were cloned into pCAGGS, to enable delivery to neurons via in utero electroporation.
 
-## Animals and in utero electroporation
+### Animals and in utero electroporation
 
 All experimental procedures were approved by the institutional animal care and use committee of the Royal Netherlands Academy of Arts and Sciences. To sparsely deliver the plasmids of interest to pyramidal neurons of layer II/III of the visual cortex, pregnant C57Bl/6 J female mice at 16.5 days gestation underwent in utero electroporation surgery. Pregnant females were anesthetized using 3% isoflurane mixed with 1 l/min oxygen and kept under anesthesia with 1.5–2% isoflurane. A midline incision was made and uterine horns were exposed. Plasmid DNA (mitochondrial-DsRed: 0.1 µg/µl, GCaMP6s: 2 µg/µl) was dissolved in 10 mM Tris and 0.05% Fast Green. Approximately 1 µl of this mixture was injected through a pulled capillary pipette in the lateral ventricle of each embryo using a picospritzer (PLI-100, BTX Harvard Apparatus, Holliston, MA). A custom-made square wave isolated pulse generator (voltage of 50 V, 5 pulses, pulse width 50 ms, and 150 ms interval) was used for electroporation. After electroporation, the uterine horns were carefully placed back in the abdomen cavity and the abdomen was sutured. During the surgery, embryos were kept moist with warm saline and the mothers were kept warm using a euthermic pad. Pregnant females were allowed to recover after Lidocaine ointment was applied on the wound for local analgesia and Metacam (1 mg/kg s.c.) was administered for post-operative analgesia. Once the pups were born they were checked before P2 for expression and targeting of V1.
 
-## Organotypic slice cultures
+### Organotypic slice cultures
 
 Organotypic slice cultures of transfected visual cortex were prepared as follows: at P5 or P8, animals were decapitated quickly, and brains were placed in ice-cold Gey’s balanced salt solution under sterile conditions. Coronal slices (400 μm for P5 and 250 μm for P8) were cut using a tissue chopper (McIlwain) and incubated with serum-containing medium on Millicell culture inserts (Millipore, Merck, New York, NY). Slices were kept in culture for 3–7 days before imaging.
 
-## Confocal microscopy of organotypic slice cultures
+### Confocal microscopy of organotypic slice cultures
 
 For confocal imaging, slices were excised from their membrane supports and placed in a flow-through chamber. Slices were continuously perfused with heated (35°C) Hank’s Balanced Salt Solution (HBSS, Fisher Scientific, Waltham, MA, supplemented with in mM: 4.2 NaHCO3, 2.6 CaCl2, 0.1 Trolox). Slices were imaged on a SP5 Leica confocal microscope with a 63× objective (0.9 NA, Leica, Wetzlar, Germany). For imaging we selected neurons that showed the following characteristics: soma localized in upper layer II, apical dendrite pointing to layer I, low basal GCaMP6s fluorescence as well as long and dim mitochondria. Preference was given to isolated cells, to minimize background fluorescence. Apical dendrites (at least 50 µm from the soma) were imaged using an argon laser at 488 nm and power levels between 0.3% and 1%. Time-lapse image stacks (up to six optical sections, 1.2 µm z-spacing), at 0.23 µm per pixel, 350 ms per stack were collected for 350 s, every 10 min, for a total of 10 times per cell. We observed no changes in fluorescence intensity, cell activity levels, or mitochondrial motility levels with time under these conditions. At the end of the experiment, low magnification image stacks (0.23 µm pixel size and 1 µm z-spacing) were collected to localize the recorded dendrite within the dendritic arborization.
 
-## In vivo two-photon microscopy
+### In vivo two-photon microscopy
 
 For in vivo imaging, transfected neonatal mice (P5–12) were pre-anesthetized using 3% isoflurane mixed with 1 l/min oxygen and kept under anesthesia with 1–2% isoflurane. A head bar with an opening (4 mm Ø) was attached to the skull above the visual cortex (0–2 mm rostral from lambda and 0–2 mm lateral from the midline) with superglue (Henkel, Düsseldorf, Germany) and dental cement (Heraeus, Hanau, Germany). A small craniotomy above the visual cortex (approximately 1–2 mm Ø) was performed with a needle and forceps and care was taken not to damage the dura mater. The exposed cortical surface was kept moist with cortex buffer (in mM: 125 NaCl, 5 KCl, 10 glucose, 10 HEPES, 2 MgSO4, 2 CaCl2, pH 7.4). For additional stability, a thin layer of 1.5% high electroendosmosis agarose (Biomol, Hamburg, Germany) was applied to the cortical surface. Before imaging, isoflurane was decreased to 0.8% (under anesthesia condition) or 0% (awake condition). A pulsed titanium sapphire laser (Chameleon Vision II, Coherent, Palo Alto, CA) at 900 nm and power up to 30% was used with a 25× water-immersion objective (1.10 NA, Nikon). Time-lapse image stacks (up to five optical sections, 2 µm z-spacing) were obtained at a pixel size of 0.13–0.17 µm and stack rate of 5–10 Hz. Throughout the entire experiment, physiological parameters such as heartbeat and body temperature were monitored, and temperature was controlled using a heating pad.
 
-## Pharmacological manipulations
+### Pharmacological manipulations
 
 High extracellular potassium in vitro: cells were imaged as described above for at least 20 min and then the imaging medium was replaced by one supplemented with KCl to a final concentration of 50 mM. After 20 min of high potassium incubation and imaging, normal medium was restored and cells were imaged for at least 20 more minutes. Cells did not show dendritic blebbing and in most cells spontaneous activity reappeared, suggesting that they were healthy until the end of the experiment.
 
@@ -117,7 +235,7 @@ Focal glutamate application: TTX (1 µM; No. 1078, Bio-Techne, Minneapolis, MN) 
 
 To block action potential firing in vivo, TTX (2 µM) was prepared in cortex buffer and in agarose. After baseline imaging, the agarose was carefully removed from the top of the brain and the TTX solution in cortex buffer was applied to the surface of the brain for 2 min. Then, this cortex buffer was removed and agarose with TTX was applied to the surface of the brain. Imaging continued as previously. This procedure blocked neuronal activity for the entire imaging period, while the pups’ physiological parameters did not change.
 
-## Image analysis
+### Image analysis
 
 All images were processed using ImageJ software. Images were filtered using a median filter (radius one pixel). Maximal intensity projections of image stacks were generated. All stacks recorded at one dendrite were corrected for motion artifacts due to drift as well as aligned with respect to each other using NoRMCorre (Pnevmatikakis and Giovannucci, 2017).
 
@@ -125,10 +243,10 @@ From the resulting stacks, two-dimensional projections of time (x-axis) vs. disp
 
 For the analysis of local calcium transients, ΔF/F0 images were calculated where F0 was the average fluorescence of the first 200 frames without apparent calcium transients of the first recording for each cell. Custom-made Matlab scripts aided the manual identification of synaptic events: signals had to last for more than the duration of two frames, did not spread from other sites, and were localized to the spine head.
 
-## Statistics
+### Statistics
 
 Calcium transients per minute and percent moving mitochondria per 1 s bins are shown in all figures where we compare global calcium transient activity or mitochondrial motility across time or different experimental conditions, respectively. Spearman’s rank correlation was used to detect correlations across time. For single comparisons t-tests (two-tailed, paired, or unpaired) and for multiple comparisons repeated measures ANOVA with post hoc t-tests and Bonferroni multi-measure correction were used. Since for the in vivo measurements (Figure 2) the initial percentages of moving mitochondria were very low, the observed effect may be susceptible to discretization. To test whether age and TTX do indeed affect mitochondrial motility in vivo, we performed additional analyses. The number of moving and stable mitochondria were counted in 2 min bins (MacAskill et al., 2009) and then summed across all recordings for both conditions, respectively, and the resulting contingency tables (see Source Data Tables) were used to perform Fisher’s exact test. We found that the number of observed mitochondria moving was significantly decreased in animals that were P8 or older compared to younger animals (p < 0.00001) and that TTX increased the number of moving mitochondria significantly (p = 0.0034). To test whether there is a significant relationship between the occurrence of individual synaptic calcium transients and the arrest of mitochondria, we used chi-squared tests and performed a bootstrap analysis as described in the Results section.
 
-## Modeling mitochondrial motility modulation by synaptic inputs (MitoMotil)
+### Modeling mitochondrial motility modulation by synaptic inputs (MitoMotil)
 
 The model of mitochondrial motility was written with Python 3.6 (Python Software Foundation). First, a population of mitochondria (n = 500) was generated where each mitochondrion was initialized with a recovery time drawn from a normal distribution. We ran simulations varying recovery time distribution means over 1–5 min (σ = 2.5 min in each condition). All mitochondria were in the motile pool at the beginning of the simulation run. Synaptic transmission events were generated from a homogeneous Poisson process (from the Elephant library, https://elephant.readthedocs.io/en/latest/) with synaptic input frequencies ranging from 0.001 to 0.5 Hz. We ran each simulation for 1500 s to allow the percentage of immobile mitochondria to reach steady state. Each synaptic transmission event immobilized a variable number of mitochondria randomly selected from the total pool. The proportion of affected mitochondria was drawn from a normal distribution (μ = 0.05, σ = 0.01). These values were based on our observation that single synaptic transmission events affected approximately 5–10 μm of a 100 µm stretch of dendrite. This variable proportion of affected mitochondria was used to calculate the number of mitochondria from the population for immobilization. Affected mitochondria remained immobilized for the duration of the recovery time variable with which they were initialized. If a mitochondrion was already immobilized and selected from the total pool for immobilization by a subsequent event, the immobilization time was extended by the second event.

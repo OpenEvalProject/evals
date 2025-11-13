@@ -23,7 +23,7 @@ Immunotherapies are proving particularly effective in the clinic and are rapidly
 
 Although their functionality has been largely overlooked in the context of cancer, fibroblasts—and their associated matrix—account for the majority of tumor mass in many cancer types (Marsh et al., 2013) and fibroblasts are known to influence malignant cells behavior through both biochemical and biomechanical signals. Additionally, fibroblasts can exert a strong immunomodulatory influence, regulating the infiltration and phenotype of immune cells within the TME and influencing their spatial localization and functionality intra-tumorally. In this review, we focus on the intersection of fibroblast-derived factors and tumor immunity and discuss the role of fibroblasts in immunotherapy resistance.
 
-## Fibroblast activation
+### Fibroblast activation
 
 Fibroblasts are a difficult cell type to define due to a lack of unique markers expressed exclusively and by all fibroblasts (Sahai et al., 2020). Fibroblasts are heterogeneous populations of mesenchymal cells that perform essential roles in formation and maintenance of connective tissue ECM and govern parenchymal cell behavior. Fibroblasts are found in virtually all tissues and, under homeostatic conditions, exist in a quiescent state defined by a low proliferative capacity and metabolic state. Fibroblasts, like resident leukocytes, serve as sentinels that sense disruptions in homeostasis, and fibroblast activation is a common early response to such disruptions. Activation is characterized by increased proliferative capacity, increased synthetic activity—including production of a provisional matrix and production of growth factors, cytokines, and chemokines—and increased metabolic activity, all designed to restore homeostasis (Darby and Hewitson, 2007; Darby et al., 2014). This reparative fibro-proliferative response is arguably best understood in the context of wound healing, where specialized subsets of activated fibroblasts proliferate and migrate into the wound site, produce ECM to restore damaged tissue, and act in concert with inflammatory, immune, and other cells as necessary to restore homeostasis (Darby and Hewitson, 2007; Darby et al., 2014). However, many features of fibroblast activation are shared in other contexts, including cancer, where activated CAFs can strongly influence the TME. Moreover, both quiescent and activated fibroblasts are heterogeneous and exhibit marked context-dependent diversity in their phenotypes and functionality.
 
@@ -35,7 +35,7 @@ Understanding the relationship between tumor cells, tumor infiltrating immune ce
 
 In addition to malignant cells, endothelial, inflammatory and immune cells in the TME also secrete mediators of fibroblast activation. Moreover, activated fibroblasts produce factors and matrix (Kojima et al., 2010) that drive their autocrine activation in a feed-forward manner, as fibroblasts are responsive to substratum composition and stiffness (Avery et al., 2018; Hadjipanayi et al., 2009). Stiffness within compliant normal tissues typically ranges from ~0.05 to 5kPa (Cox and Erler, 2011), while progressive stiffening of tumor tissue can reach up to ~20 kPa in the most desmoplastic tumors such as pancreatic cancer (Kalli and Stylianopoulos, 2018). Moreover, substratum composition and stiffness may also be important factors in driving heterogeneity amongst activated fibroblasts (Avery et al., 2018). Integration of biochemical and biomechanical signals can also drive dedifferentiation of other mesenchymal cell types, such as pericytes and adipocytes, to a CAF-like state (Hosaka et al., 2016; Nieman et al., 2013; Zoico et al., 2016). Notably, diverse cancer types and tumors at different stages of progression, can vary with regard to prevalence of, and dependence on stroma.
 
-## Activated fibroblasts are heterogeneous
+### Activated fibroblasts are heterogeneous
 
 In view of clinical evidence for a correlation between CAF markers and poor overall prognosis in multiple cancer types, CAFs were conventionally considered to be pro-tumorigenic (Calon et al., 2015; Comito et al., 2014). However, initial attempts at depleting myofibroblasts from the TME unexpectedly enhanced tumor progression (Özdemir et al., 2015; Rhim et al., 2014). Such seemingly confounding observations led to the current push to better understand the heterogeneity of fibroblasts within the TME.
 
@@ -55,13 +55,101 @@ Determining whether iCAF and myCAF designations based on these criteria will app
 
 Independently, a number of other markers defining activated fibroblast subpopulations have been noted. These include CD29 (Costa et al., 2018), CD90 (Huynh et al., 2016), caveolin (CAV1) (Costa et al., 2018), fibroblast activation protein (FAP) (Park et al., 1999), podoplanin (PDPN) (Kitano, 2010; Astarita et al., 2012), fibroblast-specific protein 1 (FSP-1/S100A4) (Sugimoto et al., 2006; Strutz et al., 1995), meflin (Maeda et al., 2016), and platelet-derived growth factor receptor alpha (PDGFRα) (Sugimoto et al., 2006; Farahani and Xaymardan, 2015; Nurmik et al., 2020; Table 1). These markers can be used alone or combinatorically to distinguish subpopulations with key functional differences within the TME (see Table). For example, FAP expressing fibroblasts can be further divided based on functionality and/or the presence of other markers such as α-SMA, while PDPN+ cells can be subdivided by their expression of FAP, with the FAP-PDPN+ cells being identified as pericytes for instance (Table 1; Cremasco et al., 2018).
 
+**Table 1.**
+ Common markers recently used to study CAF populations that influence tumor immunity and progression.Many potential markers have been described throughout the literature; however, this table has been limited to the markers most relevant to the topics outlined in this review.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenotypic marker</th>
+      <th>Features of expressing populations</th>
+      <th>Reported tumor types</th>
+      <th>Subcellular localization</th>
+      <th>Refs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>aSMA (ACTA2)</td>
+      <td>Myofibroblasts/myCAFs Context dependent tumor promotion and/or tumor restraint Preferentially located tumor adjacent Contractile</td>
+      <td>Most</td>
+      <td>Cytoplasmic</td>
+      <td>Özdemir et al., 2015; Costa et al., 2018; Zhou et al., 2018; Kato et al., 2018</td>
+    </tr>
+    <tr>
+      <td>FAP (FAP)</td>
+      <td>Tumor promoting through immune-dependent and immune-independent mechanisms Major producers of immunosuppressive cytokines like CXCL12 and CCL2 in the TME</td>
+      <td>Most</td>
+      <td>Membrane</td>
+      <td>Feig et al., 2013; Yang et al., 2016; Lo et al., 2015; Lee et al., 2011</td>
+    </tr>
+    <tr>
+      <td>FSP1 (S100A4)</td>
+      <td>Commonly used fibroblast marker Marks both quiescent and activated fibroblasts Also present on macrophages</td>
+      <td>Most</td>
+      <td>Cytoplasmic, Nuclear</td>
+      <td>Strutz et al., 1995; Österreicher et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Gli1 (GLI1)</td>
+      <td>Fibroblast sub-population that closely associates with vasculature and ducts in pancreas Preferentially expands over other fibroblast populations during pancreatic tumor progression</td>
+      <td>Pancreatic</td>
+      <td>Cytoplasmic, Nuclear</td>
+      <td>Garcia et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Hoxb6 (HOXB6)</td>
+      <td>Fibroblast sub-population present dispersed throughout healthy pancreas Minimal contribution to desmoplasia in pancreatic tumor progression</td>
+      <td>Pancreatic</td>
+      <td>Nuclear</td>
+      <td>Garcia et al., 2020</td>
+    </tr>
+    <tr>
+      <td>LRRC15 (LRRC15)</td>
+      <td>TGF-β-driven gene expression signature Correlate with poor tumor immunity</td>
+      <td>Pancreatic</td>
+      <td>Membrane</td>
+      <td>Dominguez et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Ly6C (Ly6c1)</td>
+      <td>Defines iCAF population in mouse, in combination with other CAF markers Common on myeloid cells</td>
+      <td>Pancreatic</td>
+      <td>Membrane</td>
+      <td>Elyada et al., 2019; Biffi et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Meflin (ISLR)</td>
+      <td>Suppress PDAC progression Expression correlates with CD8+ T cells, macrophages and dendritic cells in gastric cancer</td>
+      <td>Pancreatic, gastric</td>
+      <td>GPI-linked Membrane Protein</td>
+      <td>Maeda et al., 2016; Mizutani et al., 2019; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PDGFRα (PDGFRA)</td>
+      <td>Pan-fibroblast marker Marks both quiescent fibroblasts and CAFs</td>
+      <td>Most</td>
+      <td>Membrane</td>
+      <td>Farahani and Xaymardan, 2015; Nurmik et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PDPN (PDPN)</td>
+      <td>Associated with poor tumor immunity Marker of follicular RCs and some macrophages</td>
+      <td>Most</td>
+      <td>Membrane</td>
+      <td>Kitano, 2010; Astarita et al., 2012; Shindo et al., 2013; Kerrigan et al., 2012</td>
+    </tr>
+  </tbody>
+</table>
+
 ## CAF-immune cell interactions
 
 CAFs are now understood to be a major source of immunosuppressive activity in the TME (Figure 1). Fibroblasts can influence immune cell infiltration either directly—via secreted cytokines and chemokines and cell surface proteins—or indirectly—through deposition of various ECM components and remodeling of matrix on which immune cells depend for intra-tumoral localization and migration. Better defining these interactions is particularly important in the context of expanding immunotherapies, as CAFs can not only influence de novo immune responses but dictate the success of immunotherapies as well. Notably, many studies of CAF-immune cell interactions to-date were performed using heterogeneous CAF populations and therefore, specific observations may be manifestations of either a balance between multiple subpopulations or of a predominant subpopulation present. Importantly, the representation of distinct subpopulations may vary dramatically depending on in vivo context.
 
 Although remodeling of ECM by tumor cells, inflammatory cells, and CAFs is another important mechanism by which immune cell recruitment and function are regulated in the TME, in the interest of space and focus, in this review, we focus our discussion in particular on direct signaling between CAFs and immune cells in the context of cancer and refer the reader to other recent reviews that focus on ECM influences on tumor immunity (Sorokin, 2010; Kai et al., 2019; Yamauchi et al., 2020).
 
-## Myeloid cells
+### Myeloid cells
 
 Myeloid cells are well studied in the context of the TME where they exhibit remarkable phenotypic plasticity (Kiss et al., 2018), but often acquire an immunosuppressive state that suppresses cytotoxic T cell activity and subdue anti-tumor immunity (Gabrilovich and Nagaraj, 2009). Early evidence that CAFs may contribute to this immunosuppressive phenotype was based on clinical data showing a correlation between stromal markers and immunosuppressive cell types such as tumor-associated macrophages (TAMs) and myeloid-derived suppressor cells (MDSC) (Zhou et al., 2018; Takahashi et al., 2017; Herrera et al., 2013). The development of MDSCs correlates not only with poorer overall survival across a variety of cancers, but also with whether or not patients will respond to immunotherapy (Calon et al., 2015; Diaz-Montero et al., 2014).
 
@@ -75,7 +163,7 @@ Also within the IL-6 family of cytokines, LIF and IL-11 have been identified as 
 
 Other myeloid targeting cytokines produced by CAFs include CXCL16 and IL-33—both important for myeloid cell recruitment (Allaoui et al., 2016; Shani et al., 2020), chitinase 3-like 1 (Chi3L1)—which drives M2 polarization in macrophages (Cohen et al., 2017), and CXCL1—which has been implicated in CAF-mediated myeloid suppressor cell accumulation with important considerations in therapy as discussed below (Kumar et al., 2017). However, which CAF signaling pathways are the predominant drivers of myeloid phenotype are context-dependent as, studies showing the role of IL-8/CXCR2 in the recruitment of myeloid cells in CRC were associated with little, if any, contribution from CXCL12/CXCR4 (Chen et al., 2019b; Zhang et al., 2019). The ratio of different fibroblast subpopulations and influence of the specific cancer type likely play a role in determining the dominate signaling pathways.
 
-## T cells
+### T cells
 
 Given that T cells are prominent cytotoxic responders to cancer cells, some of the most extensive work on CAFs’ role in tumor immunity have been done in this space. Understanding these interactions is of compounded importance as many of the barriers to efficacy in T-cell-based therapies, such as checkpoint blockade and adoptive T cell therapy like CAR-T, are thought to be a result of these immunosuppressive stromal interactions.
 
@@ -93,7 +181,7 @@ Even when T cells are functionally capable of mounting a response against tumor 
 
 Not all fibroblast-mediated signaling in the TME is immunosuppressive however, and a number of studies highlight fibroblast populations capable of stimulating cytotoxic T cell responses. In some settings, IL-6 signaling from fibroblasts exposed to T cells enhanced T cell stimulation (Barnas et al., 2010). Such data highlights the functional and clinical significance of CAF heterogeneity in vivo with certain populations performing opposing functions and exhibiting distinct secretomes (Nazareth et al., 2007). It is worth noting, that immune suppressive fibroblast populations may even be over-represented in past literature, as common in vitro methods of cultivating fibroblasts can promote transition of fibroblasts into an immunosuppressive state, artificially minimizing the potential contribution of other populations (Barnas et al., 2010; Ghebeh and Dermime, 2007).
 
-## Natural killer cells
+### Natural killer cells
 
 Our understanding of the role of natural killer (NK) cells in tumor immunity has grown considerably in recent years (Nicholson et al., 2019; Ben-Shmuel et al., 2020). Like T cells, NK cells possess the intrinsic ability to detect and kill malignant cells (Nicholson et al., 2019). However, also similar to T cells, NK cell responses are greatly influenced by CAFs in the TME which can interfere with NK cell-mediated killing (Bassani et al., 2019).
 
@@ -105,13 +193,13 @@ CAF signaling can also act upon tumor cells to render them more resistant to NK-
 
 As NK cells become a major focus as candidates for novel off-the-shelf adoptive cell immunotherapies (Saetersmoen et al., 2019), they are likely to face many of the same barriers within the TME as T cells. Better understanding of the relationship between CAFs and NK cells will be vital going forward in order to give such therapies the best chance at therapeutic success.
 
-## Mast cells
+### Mast cells
 
 Mast cells can have varying effects on the TME. On one hand, mast cells drive a number of pro-tumorigenic processes in the TME, such as immunosuppression via expression of PD-L1 and promoting angiogenesis (Lv et al., 2019). On the other, mast cell infiltration into the TME is correlated with a positive prognosis across multiple cancers (Samoszuk et al., 2005).
 
 CAFs are able to recruit mast cells to the TME via CXCL12/CXCR4 signaling (Figure 1) in prostate cancer but infiltrating mast cells were shown to be pro-tumorigenic in this setting (Ellem et al., 2014). Once recruited, mast cell signaling can enhance a variety of fibroblast functions including contraction of collagen lattices via stem cell factor (SCF)/c-kit signaling (Yamamoto et al., 2000) and increased production of collagenolytic enzymes via IL-1α and TNFα signaling (Dabbous et al., 1995). The broad and often conflicting functions of mast cells within the TME is an area in need of further study but given the close interactions of mast cells and fibroblasts, it is likely CAFs may be a major determinant in the role mast cells play.
 
-## Neutrophils
+### Neutrophils
 
 As with many of the immune cell types mentioned above, neutrophils can have both antitumor and pro-tumor functions, although infiltration of tumor-associated neutrophils (TANs) correlates with negative outcome in many solid tumors (Ocana et al., 2017; Wu et al., 2019). In gastric cancer, TANs drive CAF formation by producing inflammatory cytokines like IL-17, IL-23, and TNF-α (Zhang et al., 2020). In pancreatic cancer, neutrophil extracellular traps (NETs) produced in response to pancreatic cancer metastases drive CAF formation in liver micrometastases, and treatment with DNase1 can significantly reduce CAF formation and metastasis growth in these models (Takesue et al., 2020).
 
@@ -129,7 +217,7 @@ Several approaches are being taken to target fibroblasts: (1) targeting upstream
 
 **Figure 2.:** (1) Inhibitors of pathways known to drive fibroblast activation can block tumor cells ability to manipulate fibroblasts for their own survival. (2) The functional heterogeneity between CAF populations in the TME means that targeting specific subpopulations can be an effective strategy. Targeted therapeutics such as chimeric antigen receptor (CAR) expressing T cells (CAR-T) and antibody-drug conjugates (ADCs) can target the fibroblast sub-populations responsible for tumor protection and immunosuppression while leaving quiescent and tumor restraining populations intact. (3) Blocking CAFs ability to exert immunosuppressive/tumor promoting influence within the TME may alleviate immunosuppression and allow immunotherapies to be effective within this space. Some targets, such as TGF-β, can act both upstream and downstream, blocking CAF formation and attenuating downstream signaling in CAFs that are already established. (Figure created with BioRender.com).
 
-## Targeting specific CAF subpopulations
+### Targeting specific CAF subpopulations
 
 Early attempts to therapeutically target CAFs within the TME were unsuccessful in preclinical models and in patients, and actually worsened tumor prognosis (Özdemir et al., 2015; Rhim et al., 2014). These early attempts, however, were limited by an incomplete understanding of fibroblast heterogeneity and in retrospect may have selectively targeted populations of myofibroblast-like CAFs by specifically depleting SMA+ cells or targeting the sonic hedgehog pathway. These populations can exert tumor restraining activity in the particular cancer context studied (Özdemir et al., 2015; Rhim et al., 2014). In contrast, targeting other populations of fibroblasts have provided promising results.
 
@@ -137,7 +225,7 @@ One of the most successful approaches has been in targeting FAP+ fibroblasts (C
 
 Indeed, multiple different approaches to depleting this population have shown success, from genetic depletion (Feig et al., 2013; Kraman et al., 2010), to using more translatable approaches like vaccines (Liao et al., 2009; Chen et al., 2015), drug delivering nanoparticles that are activated upon cleavage by FAP (Ji et al., 2016), FAP antibody-drug conjugates (ADCs) (Fabre et al., 2020), and CAR-T cells directed at FAP+ cells (Wang et al., 2014; Lo et al., 2015; Figure 2). Such treatments are typically designed to enhance the activity of conventional chemotherapies and immunotherapies but have also shown efficacy on their own, perhaps through favoring an immune permissive environment. So far, FAP+ populations have been the primary focus in stromal depletion therapies but as definition of CAF subpopulations are refined, we will likely see other targets taken advantage of.
 
-## Targeting upstream and downstream pathways in CAFs
+### Targeting upstream and downstream pathways in CAFs
 
 Of the therapies moving into, or already in the clinical space, there are two major therapeutic approaches being explored to target CAFs for cancer therapy. The first approach involves targeting with the upstream signaling required to drive fibroblasts from tumor restraining populations to tumor permissive or promoting (Figure 2). Drugs targeting these pathways currently include FAK inhibitors (Lin et al., 2018), Hedgehog inhibitors (Ko et al., 2016), fibroblast growth factor receptor (FGFR) inhibitors (Nishina et al., 2018), connective tissue growth factor (CTFG) antagonists (Neesse et al., 2013), and TGF-β inhibitors (de Gramont et al., 2017; Colak and ten Dijke, 2017). Targets such as TGF-β are multifaceted, influencing both CAF formation and downstream signaling of already established CAF populations.
 

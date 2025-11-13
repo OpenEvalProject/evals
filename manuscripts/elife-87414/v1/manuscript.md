@@ -15,15 +15,15 @@
 
 ### Affiliations
 
-1. https://ror.org/04xeg9z08 Unit on Neural Circuits and Adaptive Behaviors, National Institute of Mental Health Bethesda United States
-2. https://ror.org/00trqv719 Department of Neuroscience, Del Monte Institute for Neuroscience, University of Rochester Medical Center Rochester United States
-3. https://ror.org/00b30xv10 Department of Neuroscience, Mahoney Institute for Neurosciences, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
+1. Unit on Neural Circuits and Adaptive Behaviors, National Institute of Mental Health Bethesda United States ([ROR:04xeg9z08](https://ror.org/04xeg9z08))
+2. Department of Neuroscience, Del Monte Institute for Neuroscience, University of Rochester Medical Center Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))
+3. Department of Neuroscience, Mahoney Institute for Neurosciences, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
 ## Abstract
 
-Dopamine system dysfunction is implicated in adolescent-onset neuropsychiatric disorders. Although psychosis symptoms can be alleviated by antipsychotics, cognitive symptoms remain unresponsive and novel paradigms investigating the circuit substrates underlying cognitive deficits are critically needed. The frontal cortex and its dopaminergic input from the midbrain are implicated in cognitive functions and undergo maturational changes during adolescence. Here, we used mice carrying mutations in Arc or Disc1 to model mesofrontal dopamine circuit deficiencies and test circuit-based neurostimulation strategies to restore cognitive functions. We found that in a memory-guided spatial navigation task, frontal cortical neurons were activated coordinately at the decision-making point in wild-type but not Arc -/- mice. Chemogenetic stimulation of midbrain dopamine neurons or optogenetic stimulation of frontal cortical dopamine axons in a limited adolescent period consistently reversed genetic defects in mesofrontal innervation, task-coordinated neuronal activity, and memory-guided decision-making at adulthood. Furthermore, adolescent stimulation of dopamine neurons also reversed the same cognitive deficits in Disc1 +/- mice. Our findings reveal common mesofrontal circuit alterations underlying the cognitive deficits caused by two different genes and demonstrate the feasibility of adolescent neurostimulation to reverse these circuit and behavioral deficits. These results may suggest developmental windows and circuit targets for treating cognitive deficits in neurodevelopmental disorders.
+Dopamine system dysfunction is implicated in adolescent-onset neuropsychiatric disorders. Although psychosis symptoms can be alleviated by antipsychotics, cognitive symptoms remain unresponsive and novel paradigms investigating the circuit substrates underlying cognitive deficits are critically needed. The frontal cortex and its dopaminergic input from the midbrain are implicated in cognitive functions and undergo maturational changes during adolescence. Here, we used mice carrying mutations in Arc or Disc1 to model mesofrontal dopamine circuit deficiencies and test circuit-based neurostimulation strategies to restore cognitive functions. We found that in a memory-guided spatial navigation task, frontal cortical neurons were activated coordinately at the decision-making point in wild-type but not Arc-/- mice. Chemogenetic stimulation of midbrain dopamine neurons or optogenetic stimulation of frontal cortical dopamine axons in a limited adolescent period consistently reversed genetic defects in mesofrontal innervation, task-coordinated neuronal activity, and memory-guided decision-making at adulthood. Furthermore, adolescent stimulation of dopamine neurons also reversed the same cognitive deficits in Disc1+/- mice. Our findings reveal common mesofrontal circuit alterations underlying the cognitive deficits caused by two different genes and demonstrate the feasibility of adolescent neurostimulation to reverse these circuit and behavioral deficits. These results may suggest developmental windows and circuit targets for treating cognitive deficits in neurodevelopmental disorders.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ Mouse genetic models of frontal dopamine deficits and the adolescence malleabili
 
 ## Results
 
-## Characterization of cognitive and mesofrontal innervation deficits in Arc mutant mice
+### Characterization of cognitive and mesofrontal innervation deficits in Arc mutant mice
 
 We first used an Arc mutant model of a hypofunctioning mesofrontal circuit (Managò et al., 2016) for behavioral, anatomical tracing, and neural activity imaging studies. To assess whether genetic disruption of Arc (by knocking in a GFP reporter cassette; Wang et al., 2006) affects cognitive control of behavior, we examined wild-type and Arc homozygous mutant mice in a Y-maze spatial navigation task. This task takes advantage of the innate spatial navigation ability of mice and does not require extensive pretraining, making it well suited for both developmental and adult testing (Belforte et al., 2010; Lalonde, 2002; Richman et al., 1986). Wild-type mice explore the three arms of the maze using a memory-based decision-making strategy, preferring to visit a new arm instead of the most recently visited arm (Figure 1a). The percentage of new arm visits out of the total arm visits is referred to as ‘alternation percentage’, which is approximately 67% in wild-type mice and significantly above the chance level from random exploration (50%). By contrast, the alternation percentage in Arc mutant mice is significantly reduced toward the chance level (p=0.001, t-test, t(15) = 3.975, WT: 67.2 ± 2.6%, vs. Arc-/-: 53.4 ± 2.3%, N=8 and 9 mice, respectively; Figure 1b). Arc mutant mice showed a similar number of total arm entries as the wild-type mice (Figure 1c), suggesting that the Arc mutation did not affect the overall locomotor activity or motivation level. Taken together, these results suggest that Arc mutant mice have a deficit in memory-guided choice behaviors.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig1-v1.jpg)
+
+**Figure 1.:** (a) Diagram showing the navigation choices for mice in a Y-maze. At the center of the maze, a mouse has a choice to enter either a new arm (alternation) or a previously visited old arm. (b) Alternation percentage in the Y-maze task showing significant reduction in the Arc-/- animals compared to wild-type animals (**p=0.001, t-test, t(15)=3.975, WT N=8, Arc-/- N=9 mice, both groups passed Shapiro-Wilk normality test at alpha = 0.05). (c) Total arm entries are comparable between Arc-/- and WT. (d) Top, schematic for AAV injection in Th-Cre animals to label dopaminergic neurons. Bottom, confocal image showing tdTomato (red) and SypGFP (green) labeling in the ventral tegmental area (VTA). Scale bar, 100 µm. (e) Left, confocal image showing labeled dopaminergic axons in the frontal cortex. The dotted line indicates the region-of-interest for M2. Scale bar, 100 µm. Right, zoomed-in region showing labeled axons (tdTomato, red) and boutons (tdTomato+SypGFP, yellow). Scale bar, 20 µm. (f, g) The normalized axon length (f) is not significantly different. The normalized bouton density (g) is significantly reduced in Arc-/- animals compared to WT (*p=0.034, t-test, t(12)=2.393, N=7 mice for each group). The axon length is normalized by the number of labeled cells in VTA, the bouton density is normalized by the axon length, and both are expressed as a percentage of the group average in WT mice. All the error bars indicate SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Confocal image showing expression of control mCherry or DREADD-Gi-mCherry in M2 frontal cortex. Scale bar, 500 µm. (b) Alternation in the Y-maze task showing significant reduction in the Gi animals compared to control animals (*p=0.017, t-test, t(10)=2.845, Gi N=6, Ctrl N=6, including three saline control in Gi-labeled mice (pink dots) and three mCherry control with CNO injection (red dots). These two control groups showed no significant difference, and their data were pooled together). (c) Total arm entries and (d) left-right turns (percentage of right turns shown) are not significantly different. All the error bars indicate SEM.
 
 Optimal performance in the Y-maze requires an intact frontal cortex and VTA (Delatour and Gisquet-Verrier, 1996; Divac et al., 1975; Pioli et al., 2008). The M2 region of the frontal cortex plays an important role in action planning, generating the earliest neural signals among frontal cortical regions that are related to upcoming choice during spatial navigation (Sul et al., 2011; Sul et al., 2010). To verify the involvement of the M2 cortex in Y-maze alternation, we expressed the chemogenetic inhibitor DREADD-Gi (Roth, 2016) in M2 with an adeno-associated viral (AAV) vector and used clozapine N-oxide (CNO) injection to inhibit M2 neural activity in wild-type mice (Figure 1—figure supplement 1a). We found that the alternation percentage was significantly reduced in the DREADD-Gi animals compared with control animals (p=0.017, t-test, t(10)=2.845, Ctrl: 64.6 ± 1.8%, Gi: 54.1 ± 3.2%, N=6 for each group, Figure 1—figure supplement 1b), while other aspects of motor behaviors in this task were not affected (Figure 1—figure supplement 1c and d). These results confirm the involvement of M2 frontal cortical neurons in memory-guided decision-making during the Y-maze task.
 
@@ -49,17 +57,33 @@ Mesocortical dopamine neurons have much stronger tyrosine hydroxylase (TH) expre
 
 We injected Cre-dependent AAV vectors into the VTA of Th-Cre mice to label dopaminergic axons with a cytoplasmic marker tdTomato, and the dopamine release sites in axonal boutons with a GFP reporter fused to synaptic vesicle protein synaptophysin (Figure 1d and e; Manion et al., 2022; Mastwal et al., 2014; Oh et al., 2014; Wang et al., 2017). Although the dopaminergic axon length in the M2 frontal cortex (normalized by the number of labeled cells in VTA) was not significantly different between Arc mutant and wild-type animals (Figure 1f), we found a significant reduction in the dopaminergic bouton density in this region in Arc mutant mice compared to wild-type animals (p=0.034, t-test, t(12)=2.393, WT: 100 ± 5%, Arc -/-: 84 ± 5%, N=7 for each group; bouton density normalized by axon length; Figure 1g). These results suggest that dopaminergic innervations of the M2 frontal cortex are reduced in Arc mutant mice, which agrees with our previous findings of reduced frontal dopamine release and mesofrontal activity in Arc-/- mice (Managò et al., 2016). Our new results provide further anatomical evidence for a hypofunctional mesofrontal dopamine circuit in these mice.
 
-## Task-coordinated frontal neuronal ensemble activity is disrupted in Arc mutant mice
+### Task-coordinated frontal neuronal ensemble activity is disrupted in Arc mutant mice
 
 To determine how M2 neuronal activities during Y-maze performance might be affected by Arc mutation and reduced dopaminergic input, we expressed a genetically encoded calcium indicator GCaMP6 (Chen et al., 2013) in superficial layer (L2/3) M2 neurons and used a head-mounted miniaturized microscope (Ghosh et al., 2011; Li et al., 2017; Liu et al., 2018; Wang et al., 2017) to image task-related neuronal ensemble activity in adult wild-type and Arc-/- mice (Figure 2a). The microscope lens was placed above the pial surface rather than inserted into the cortex to avoid damage of M2 neurons, and neuronal activities in superficial cortical layers were imaged (Figure 2—figure supplement 1a–c, Figure 2—video 1). We found that the activity of individual M2 neurons occurred at various positions along the track during Y-maze navigation (Figure 2b). An increased proportion of neurons showed peak activation when the wild-type animal was near the center of the maze before making an arm entry (Figure 2c). In contrast, this proportion was significantly reduced in Arc mutant mice compared to wild-type animals (p<0.0001, chi-square test, WT 938 cells from 8 mice, Arc-/- 1338 cells from 7 mice). This effect is not due to a general reduction of neural activity in Arc-/- mice, because there is no difference between wild-type and Arc-/- mice in the average activity of neurons throughout the task period (Figure 2—figure supplement 1d–f). In addition, there is no correlation between the average activity of neurons with alteration behaviors in Y-maze (Figure 2—figure supplement 1j). Thus, these results suggest that the coordinated activation of M2 neurons before making a choice is disrupted in Arc mutant mice.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig2-v1.jpg)
+
+**Figure 2.:** (a) Diagram showing the setup for miniaturized microscope imaging of frontal cortical activity in mice performing the Y-maze task. The example image represents the projection (by standard deviation of ΔF/F) of a calcium activity movie (~500 s), showing labeled M2 frontal cortical neurons. Scale bar, 100 µm. (b) Top, an example plot showing the positions of a wild-type mouse relative to the Y-maze center during navigation. Bottom, raster plot showing the calcium activity of M2 neurons simultaneously recorded during navigation. (c) Top, the average activity of individual frontal cortical neurons at binned positions relative to the center of Y-maze in WT (938 neurons from 8 animals) and Arc-/- (1338 neurons from 7 animals) animals. Bottom, the proportion of neurons showing maximal activation at each maze position. This proportion peaked right before the maze center in WT mice but reduced significantly in Arc-/- mice. Shaded areas indicate 95% confidence intervals. (d) Examples of neurons showing differential (alternation-selective, traces from three neurons on the left) or similar (non-selective, traces from three neurons on the right) activity between new and old arm visits. (e) The proportion of alternation-selective neurons peaked right before the maze center in WT mice but reduced significantly in Arc-/- mice. Shaded areas indicate 95% confidence intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Schematic drawing of the outline of experimental procedures. (b) Confocal fluorescence images of coronal brain sections showing superficial layer cortical neurons that are labeled by infusion of AAV9-GCaMP6 virus from the pial surface. Left:10×, right: 20×. Scale bar, 100 µm. (c) Left: A representative standard deviation projection image of 15,000 frames collected over 8 min in the M2 frontal cortex of a freely moving mouse in a Y-maze. Right: The ΔF/F activity traces of labeled cortical neurons matched in color with the left image. Scale bar, 100 µm. (d–f) Quantifications of average calcium transient amplitude (d), frequency (e), and duration (f) in WT and Arc-/- mice during Y-maze exploration. Each dot on the plot represented the cell average from one mouse. No significant difference was detected. (d) p=0.548, t-test, t(13)=0.617; (e) p=0.117, t-test, t(13)=1.679; (f) p=0.264, t-test, t(13)=1.168. (g) Y-maze alternation percentage for animals in the miniscope imaging experiments, showing reduction in Arc-/- animals compared to WT (*p=0.047, t-test, t(13)=2.196, WT N=8, Arc-/- N=7 mice, both groups passed Shapiro-Wilk normality test at alpha = 0.05). (h) Total entries. (i) Left-right turns (percentage of right turns shown) are not significantly different. (h) p=0.69, t-test, t(13)=0.408; (i) p=0.304, t-test, t(13)=1.07. All the error bars indicate SEM. (j) Pearson pairwise correlation between the frequency of calcium events and the alternation scores or total entries in WT, Arc-/-, and both genotype groups. No significant correlation was found.
+
 To further examine how exploratory choices may be encoded in the activities of individual M2 neurons, we compared the neuronal activity patterns along the navigation trajectories leading to new arm visits versus old arm visits. Neurons selective for alternation were identified by differential neural activation between alternating and non-alternating paths (Figure 2d). This analysis showed that the proportion of alternation-selective neurons increased in the wild-type mice as the animal approached the maze center, but this increase was blunted in the Arc mutant animals (p<0.0001, chi-square test, Figure 2e). These same mutant animals also showed a specific reduction of alternation choices in the Y-maze (p=0.047, t-test, t(13)=2.196, WT: 67.8 ± 4.4%, N=8 mice; Arc-/-: 54.5 ± 4.1%, N=7 mice, Figure 2—figure supplement 1g–i), replicating the deficit we observed in separate groups of animals that did not carry the miniaturized microscope (Figure 1b). Together, these results demonstrate that both task-related frontal cortical activity and memory-guided decision behavior are impaired in Arc mutant mice.
 
-## Adolescent dopamine neuron stimulation leads to long-term reversal of mesofrontal circuit deficits
+### Adolescent dopamine neuron stimulation leads to long-term reversal of mesofrontal circuit deficits
 
 Given the hypofunctioning mesofrontal dopaminergic circuit in Arc mutant mice, we next investigated the possibility of developing neurostimulation strategies to restore normal circuit functions. The dopaminergic innervation in the mesofrontal circuit exhibits a protracted maturation from postnatal day 21 (P21) to P56 (Hoops and Flores, 2017; Kalsbeek et al., 1988; Naneix et al., 2012; Niwa et al., 2010). P35–42 is in the center of this period and captures the mid-adolescent stage in rodents (Spear, 2000). We have previously shown that increasing dopamine neuron activity by wheel running or optogenetic stimulation during this period, but not adulthood, can induce formation of mesofrontal dopaminergic boutons and enhance mesofrontal circuit activity in wild-type mice (Mastwal et al., 2014). We therefore chose the P35–P42 adolescent window to stimulate the mesofrontal dopamine circuit and test the long-term effect of this intervention on the frontal circuit and memory-guided decision-making deficits in adult Arc mutant mice.
 
 To stimulate dopamine neuron activity, we expressed chemogenetic activator DREADD-Gq (Alexander et al., 2009) in the VTA dopamine cells using a combination of stereotaxically injected Cre-dependent AAV vectors and a Th-Cre transgenic mouse line (Mastwal et al., 2014; Figure 3a, Figure 3—figure supplement 1a). CNO (1 mg/kg) was injected systemically to enhance the activity of DREADD-Gq-expressing dopamine neurons. To control for any potential off-target effect of CNO, another group of Th-Cre mice that expressed AAV-mCherry reporter in dopamine neurons also received CNO injection. Previous studies have shown that DREADD-Gq-induced neural activation reaches its peak approximately 1 hr after CNO injection and returns to baseline approximately 9 hr after injection (Alexander et al., 2009). Increased VTA dopamine activity is known to enhance frontal cortical activity, which can be measured with calcium indicator GCaMP6 (Lavin et al., 2005; Managò et al., 2016; Mastwal et al., 2014). We validated the DREADD-Gq-induced enhancement of mesofrontal activity by examining M2 cortical activity with GCaMP6 before and after CNO injection in these mice (Figure 3a and b, Figure 3—figure supplement 1b). There was a significant increase in the M2 cortical activity measured 1 hr after the injection of CNO in DREADD-Gq animals, whereas no significant effect occurred in control mCherry animals (DREADD-Gq: 82±17% vs. mCherry Ctrl: 20 ± 14%, p=0.018, t-test, t(10)=2.814, N=6 for each group; Figure 3c). In addition, saline injection in DREADD-Gq-expressing mice did not alter M2 neural activity, and CNO-induced increase in M2 neural activity was suppressed by D1 antagonist SCH23390 (p=0.0002, N=7 for each group, Figure 3—figure supplement 1c). These results confirmed CNO-induced activation of the mesofrontal dopaminergic circuit in DREADD-Gq animals.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig3-v1.jpg)
+
+**Figure 3.:** (a) Schematic for labeling dopamine neurons with DREADD-Gq-mCherry and imaging frontal cortical activity with GCaMP6. The example image at the top shows a two-photon image of labeled cortical neurons. Scale bar, 20 μm. (b) Example traces of spontaneous cortical activity averaged from the whole image frame in control mCherry only (blue) and DREADD-Gq (red) animals before and 1 hr after clozapine N-oxide (CNO) injection. (c) Gq animals show significantly higher change in cortical activity after CNO injection compared to control mCherry only animals, suggesting CNO-induced activation of the mesofrontal circuit (*p=0.018, t-test, t(10)=2.814, N=6 mice for each group). Cortical activity is summarized by the standard deviation (SD) of the spontaneous activity traces. Activity change is calculated as (SD2-SD1)/SD1, where SD1 is before and SD2 after treatment. (d) Diagram showing experimental procedures to evaluate the effect of adolescent dopamine neuron stimulation on the structure of frontal dopaminergic projections. (e, f) Normalized axon length (e) is not significantly different. Normalized bouton density (f) is significantly increased in Gq animals compared to Ctrl (*p=0.013, t-test, t(18)=2.763, N=10 for each group). The axon length is normalized by the number of labeled cells in ventral tegmental area (VTA), the bouton density is normalized by the axon length, and both are expressed as a percentage of the group average in Ctrl mice. (g) Diagram showing procedures to determine the effect of adolescent dopamine neuron stimulation on mesofrontal circuit activity in Arc-/-;Th-Cre mice labeled with DREADD-Gq or mCherry-Ctrl. (h) Schematic showing the experimental setup to measure the mesofrontal circuit activity by VTA electrical stimulation and GCaMP6 imaging in the frontal cortex. (i) Time courses of cortical calcium signals in response to VTA stimulation in Arc-/-;mCherry-Ctrl and Arc-/-; DREADD-Gq mice. 1, 5, or 10 pulses of electrical stimuli (50 Hz) were delivered at 20 s after the start of imaging. The cortical calcium activity at each time point is represented by the change in image fluorescence relative to the baseline image fluorescence (ΔF/F). (5 pulse F(1,10)=6.0, *p=0.034, 10 pulse F(1,10)=9.5, *p=0.012, two-way ANOVA, N=6 mice per group).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Example confocal image of DREADD-Gq-mCherry labeling in the midbrain. Scale bar, 100 µm. (b) Top, example images showing standard deviation projection of in vivo two-photon calcium activity movies in the M2 frontal cortex. Bottom, example traces of spontaneous cortical activity in a representative sample of individual cells before and 1 hr after CNO injection in a DREADD-Gq animal. Scale bar, 20 µm. (c) Saline injection in DREADD-Gq-expressing mice did not alter M2 neural activity, and CNO-induced increase in M2 neural activity was suppressed by D1 antagonist SCH23390 (1 mg/kg, i.p.). Two injections (CNO-SAL, CNO-SCH, or SAL-SAL) were done in each animal. Three imaging sessions were conducted: before any injection, 1 hr after the first injection to allow CNO to take effect, and 30 min after the second injection to allow SCH to take effect. Cortical activity is summarized by the standard deviation (SD) of the spontaneous activity traces. Activity changes are calculated as (SD-SD0)/SD0, where SD0 is before any drug or saline injection, and SD is after CNO, saline, or SCH23390 injection (two-way repeated measures ANOVA, group × treatment, F(2,18) = 8.9, p=0.0020; Sidak’s multiple comparison: CNO followed by SAL, p=0.5667; CNO followed by SCH, ***p=0.0002; SAL followed by SAL, p=0.8492; N=7 mice for each group).
 
 After the validation of activity enhancement by chemogenetic stimulation of dopamine neurons, we examined if this treatment would have any long-term effect on the circuit deficits in Arc mutant mice. Our previous work in wild-type adolescent mice showed that a single optogenetic stimulation session or a 2 hr wheel running session is sufficient to induce bouton formation in mesofrontal dopaminergic axons (Mastwal et al., 2014). In this study, we sought to rescue existing structural and functional deficits in the mesofrontal dopaminergic circuits due to genetic mutations. Because previous studies suggested that an optimal level of dopamine is important for normal cognitive function (Arnsten et al., 1994; Floresco, 2013; Robbins, 2000), we elected to do multiple stimulation sessions to boost the potential rescue effects.
 
@@ -67,19 +91,35 @@ We first tested whether the structural deficits in the mesofrontal dopaminergic 
 
 We next tested whether adolescent dopamine neuron stimulation would also lead to long-term improvement of the functional deficits in the mesofrontal circuit of Arc mutant mice. Our previous work indicated that Arc mutants have reduced frontal cortical response to VTA stimulation (Managò et al., 2016). Using the same assay in adult mice, we found that the cortical calcium activity in response to VTA electrical stimulation was significantly enhanced in DREADD-Gq mice compared to control mCherry mice after adolescence CNO treatment (10 pulse F(1,10)=9.513, p=0.012, two-way ANOVA, N=6 mice per group, Figure 3g–i). These results suggest that adolescent dopamine neuron stimulation also leads to long-term improvement of the functional deficits in the mesofrontal dopaminergic circuit of Arc mutants.
 
-## Adolescent dopamine neuron stimulation leads to restoration of coordinated frontal neuronal activity and cognition in adulthood
+### Adolescent dopamine neuron stimulation leads to restoration of coordinated frontal neuronal activity and cognition in adulthood
 
 To further examine whether the uncoordinated frontal neural activity patterns in Arc mutant mice during the Y-maze task would be renormalized by this adolescent dopamine neuron stimulation strategy, we conducted calcium imaging using the head-mounted miniature microscope in these mice (Figure 4a). We found that the coordinated activation of neurons near the maze center (Figure 4b) and the proportion of alternation-selective neurons (Figure 4c) were both significantly enhanced in Arc mutant mice that received the DREADD-Gq activation compared to the mCherry control group (p<0.0001, chi-square tests, DREADD-Gq 1008 cells from 7 mice, mCherry 1286 cells from 7 mice). In contrast, the average activity of M2 neurons throughout the task period was not affected by adolescent DREADD-Gq stimulation (Figure 4—figure supplement 1a–c). Strikingly, the DREADD-Gq-stimulated animals also showed an enhancement of behavioral alternation (p=0.010, t-test, t(12)=3.043, Ctrl: 56.8 ± 2.8%, Gq: 67.6 ± 2.2%, N=7 each group, Figure 4d), reaching a level comparable to that in the wild-type mice (Figure 1b). Total arm entries were not affected (Figure 4e), suggesting no alternations in general locomotor activity. These results indicate that adult task-related functional activity in the M2 frontal cortex is restored by adolescent dopamine neuron stimulation in Arc mutant mice.
 
-## Efficacy requirements for adolescent dopamine neuron stimulation
+![Figure 4.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig4-v1.jpg)
+
+**Figure 4.:** (a) Diagram showing procedures for adolescent stimulation of dopamine neurons and functional imaging of frontal cortical neuron activity in adult Arc-/-;Th-Cre mice. (b) The average activity of individual frontal cortical neurons at binned positions relative to the center of Y-maze in Arc -/-; mCherry-Ctrl (1288 neurons from 7 mice) and Arc-/-; DREADD-Gq (1008 neurons from 7 mice) animals. Bottom, the proportion of neurons showing maximal activation at each maze position. This proportion reached a higher peak right before the maze center in Arc-/-; DREADD-Gq mice compared to Arc-/-; mCherry-Ctrl mice. Shaded areas indicate 95% confidence intervals. (c) The proportion of alternation-selective neurons reached a significantly higher peak right before the maze center in Arc-/-; DREADD-Gq compared to Arc-/-; mCherry-Ctrl mice. Shaded areas indicate 95% confidence intervals. (d) Y-maze alternation percentage for the animals used in the miniaturized microscope imaging experiments shows significant increase in Arc-/-;DREADD-Gq animals compared to Arc-/-; mCherry-Ctrl (*p=0.010, t-test, t(12)=3.043, N=7 mice for each group, both groups passed Shapiro-Wilk normality test at alpha = 0.05). (e) Total arm entries are not significantly different (p=0.399, t-test, t(12)=0.875). All the error bars indicate SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a–c) Quantifications of calcium transient amplitude (a), frequency (b), and duration (c) in Arc-/-; mCherry-Ctrl and Arc-/-;DREADD-Gq mice during Y-maze exploration show no significant difference. (a) p=0.952, t-test, t(12)=0.062; (b) p=0.985, t-test, t(12)=0.019; (c) p=0.879, t-test, t(12)=0.155. Each dot on the plot represented the cell average from one mouse. All the error bars indicate SEM.
+
+### Efficacy requirements for adolescent dopamine neuron stimulation
 
 To further characterize the experimental conditions that are important for the restoration of memory-guided decision-making behavior in Arc mutant mice, we examined several variables including post-stimulation test interval, stimulation duration, and the age of stimulation. First, we replicated the effects of adolescent dopamine neuron stimulation on Y-maze navigation in adulthood in another cohort of Arc mutant mice (p=0.023, t-test, t(12)=2.598, Ctrl: 59.5 ± 2.4%, Gq: 68.5 ± 2.5%, N=7 for each group) (Figure 5a). Furthermore, when tested only 1 day after the 3-day CNO treatment procedure (one injection per day) in adolescence, Arc mutant mice already showed an increased alternation percentage (p=0.031, t-test, t(20)=2.322, Ctrl: 55.8 ± 2.9%, Gq: 64.7 ± 2.5%, N=11 for each group) (Figure 5b), which is comparable to the effect observed 1 month after treatment in adult mice (Figure 5a). These results suggest that the adolescent neurostimulation effect on cognitive behavioral improvement is both fast acting and long lasting.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig5-v1.jpg)
+
+**Figure 5.:** (a) Top, diagram showing the base procedure for the stimulation of midbrain dopamine neurons and Y-maze testing in Arc-/-;Th-Cre mice labeled with DREADD-Gq or mCherry control viruses. Animals were injected with clozapine N-oxide (CNO) (1 mg/kg) once per day for 3 days in adolescence (5 weeks of age) and then tested in the Y-maze at adulthood (~1 month later). Arc-/-; DREADD-Gq animals show significantly higher alternation compared to Arc-/-; mCherry-Ctrl at adulthood (*p=0.023, t-test, t(12)=2.598, N=7 mice for each group, both groups passed Shapiro-Wilk normality test at alpha = 0.05). (b) The behavioral effect at the test interval of 1 day after CNO injection. Arc-/-; DREADD-Gq animals show significantly higher alternation compared to Arc-/-; mCherry-Ctrl (*p=0.031, t-test, t(20)=2.322, N=11 mice for each group, both groups passed Shapiro-Wilk normality test at alpha = 0.05). (c) The behavioral outcome following a long duration stimulation starting in adolescence (2 times per day, 5 days per week, for 3 weeks). These animals did not show any improvement but a declining trend in performance (p=0.12, t-test, t(9)=1.727, Arc-/-; mCherry-Ctrl N=5, Arc-/-; DREADD-Gq, N=6 mice, both groups passed Shapiro-Wilk normality test at alpha = 0.05). (d) The behavioral outcome following 3 days of CNO stimulation administered in adult mice (2–3 months). These animals did not show significant difference (p=0.97, t-test, t(11)=0.037, Arc-/-;mCherry-Ctrl, N=6; Arc-/-;DREADD-Gq, N=7 mice, both groups passed Shapiro-Wilk normality test at alpha = 0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Top, diagram showing procedures for the stimulation of midbrain dopamine neurons and Y-maze testing in Arc-/-;Th-Cre mice labeled with DREADD-Gq or mCherry-Ctrl viruses. Total entries and left-right turns (percentage of right turns shown) in the Y-maze are not significantly different between mCherry-Ctrl and DREADD-Gq animals at adulthood after 3-day adolescent clozapine N-oxide (CNO) stimulation. (b) Total entries and left-right turns (percentage of right turns shown) in the Y-maze are not significantly different between mCherry-Ctrl and DREADD-Gq animals 1 day after 3-day adolescent CNO stimulation. (c) Total entries and left-right turns (percentage of right turns shown) in the Y-maze are not significantly different between mCherry-Ctrl and DREADD-Gq animals at adulthood after 3-week adolescent CNO stimulation. (d) Total entries and left-right turns (percentage of right turns shown) in the Y-maze are not significantly different between mCherry-Ctrl and DREADD-Gq animals after 3-day adult CNO stimulation. All the error bars indicate SEM.
 
 Second, we also tested a more intense CNO stimulation procedure involving two injections per day for 3 weeks (5 days per week) starting in adolescence. However, this strong 3-week stimulation did not enhance behavioral alternation and appeared to decrease it even further (Figure 5c). These results indicate that moderate but not excessive stimulation of dopamine neurons can provide functional improvement of a deficient mesofrontal circuit, consistent with previous studies showing that an optimal level of dopamine is important for normal cognitive function (Arnsten et al., 1994; Floresco, 2013; Robbins, 2000).
 
 Third, we found that in adult Arc mutant mice with DREADD-Gq expression, 3-day CNO injection did not lead to any effects on Y-maze alternation behavior assayed 1 month later (Figure 5d). These results indicate that adolescent, but not adult, intervention is critical for reversing this behavioral dysfunction, in agreement with the elevated adolescent structural and functional plasticity reported for the mesofrontal circuit (Mastwal et al., 2014). In addition, because 3 weeks of adolescent CNO treatment or 3 days of adult CNO treatment in DREADD-Gq mice did not lead to any rescue effects, DREADD-Gq expression alone is unlikely to generate any behavior improvement. Taken together, our findings suggest that a brief stimulation of midbrain dopamine neurons in adolescence has a long-lasting effect to reverse the memory-guided decision-making deficits in Arc mutant mice, while not affecting other aspects of motor behaviors in the Y-maze (Figure 5—figure supplement 1a–d).
 
-## Specific stimulation of adolescent frontal dopaminergic axons reverses both cognitive and psychomotor deficits
+### Specific stimulation of adolescent frontal dopaminergic axons reverses both cognitive and psychomotor deficits
 
 To further evaluate the impact of adolescent dopamine neuron stimulation on another frontal cortex-dependent behavioral deficit in Arc mutant mice, we subjected these mice to an amphetamine-induced hyperactivity test, which is considered an animal model for drug-induced psychomotor symptoms (Forrest et al., 2014; Managò et al., 2016). Classical neuropharmacological studies have shown that amphetamine-induced locomotor activity is facilitated by dopaminergic input to the nucleus accumbens but inhibited by dopaminergic input to the frontal cortex (Chambers et al., 2003; Le Moal and Simon, 1991; Tzschentke, 2001). Consistent with a hypoactive frontal dopamine input, Arc mutant mice showed hyper-reactivity to amphetamine compared to the wild-type mice (Figure 6—figure supplement 1a) as reported before (Managò et al., 2016).
 
@@ -89,13 +129,29 @@ Subsequently, we tested whether targeted stimulation of dopaminergic axons proje
 
 To validate the effect of SSFO-based stimulation, we expressed Cre-dependent SSFO in the midbrain dopamine neurons and stimulated their axonal projections in the M2 frontal cortex with blue light through a cranial window (Figure 6a; Figure 6—figure supplement 1c–d). We monitored M2 neural activity using calcium reporter GCaMP6 before and 30 min after light activation. Similar to the DREADD-Gq-mediated activity changes in the mesofrontal circuit, frontal cortical activity was increased after light activation compared to before in SSFO animals, and this increase was significantly higher than the control EGFP animals that were also exposed to the light (p=0.001, t-test, t(8)=5.135, Ctrl: 7.5 ± 3.1%, SSFO: 46.7 ± 6.9%, N=5 each group, Figure 6b–c, Figure 6—figure supplement 1e). These results indicate that light stimulation of SSFO-labeled frontal dopamine axons can enhance the activity in the mesofrontal circuit.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig6-v1.jpg)
+
+**Figure 6.:** (a) Schematic for labeling dopamine neurons with stabilized step function opsin (SSFO) and two-photon imaging of frontal cortical activity with GCaMP6. (b) Example traces of spontaneous cortical activity averaged from the whole image frame in control EGFP only (blue) and SSFO (orange)-labeled animals before and 30 min after frontal cortical blue light stimulation. (c) SSFO animals show significantly higher change in cortical activity (summarized by the standard deviation of spontaneous activity traces) compared to control EGFP animals after the light activation, suggesting light activation of SSFO expressing dopamine neurons (***p=0.001, t-test, t(8)=5.135, N=5 mice for each group). Cortical activity is summarized by the standard deviation (SD) of the spontaneous activity traces. Activity change is calculated as (SD2-SD1)/SD1, where SD1 is before and SD2 after treatment. (d) Diagram showing procedures for local light activation of frontal dopaminergic projections and Y-maze testing in Arc-/-;Th-Cre mice labeled with SSFO or Ctrl-GFP viruses. Light activation was delivered in adolescence (5 weeks of age) once per day for 3 days. Animals were first tested in the Y-maze 1 day after the last light activation and then tested again in the Y-maze at adulthood, followed by an amphetamine-induced locomotion test. (e–h) SSFO-expressing animals show significantly higher alternation compared to control animals 1 day after light activation (e) (*p=0.028, t-test, t(15)=2.440, N=9 EGFP, N=8 SSFO mice, both groups passed Shapiro-Wilk normality test at alpha = 0.05), with no difference in total entries (f). These animals also show higher alternation at adulthood (g) (*p=0.015, t-test, t(15)=2.748, EGFP N=9, SSFO N=8, both groups passed Shapiro-Wilk normality test at alpha = 0.05) with no difference in total entries (h). (i) In Arc-/-;Th-Cre mice that received adolescent frontal light stimulation, amphetamine-induced locomotion is significantly reduced at adulthood in SSFO animals compared to GFP control animals (F(1,14)=5.3, *p=0.037, two-way ANOVA, N=8 mice per group). All the error bars indicate SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Amphetamine-induced locomotion is significantly increased in Arc-/- animals compared to WT. (F(1,14)=9.5, *p=0.032, two-way ANOVA, N=8 mice per group). (b) Amphetamine-induced locomotion at adulthood is not significantly different between Arc-/-;Th-Cre mice labeled with mCherry-Ctrl or DREADD-Gq and treated with clozapine N-oxide (CNO) for 3 days in adolescence. All the error bars indicate SEM. (c) Confocal image of coronal midbrain section showing SSFO expression in the ventral tegmental area (VTA). Scale bar, 100 µm. (d) Confocal image of coronal cortical section showing SSFO expression in the frontal dopaminergic axons projecting from the VTA. Scale bar, 20 µm. (e) Top, example images showing standard deviation projection of in vivo two-photon calcium activity movies in the M2 frontal cortex. Bottom, example traces of spontaneous cortical activity in a representative sample of individual cells before and 30 min after light stimulation in an SSFO-labeled animal. Scale bar, 20 µm.
+
 To determine whether adolescent stimulation of mesofrontal dopamine axons would be sufficient to reinstate memory-guided decision-making in Arc mutant mice, we stimulated SSFO-labeled dopamine axons in the frontal cortex once per day for 3 days in adolescence (Figure 6d). When tested either 1 day after light stimulation or 1 month after in adulthood, SSFO-labeled mice showed a significant increase in the Y-maze alternation percentage compared to control EGFP animals (Figure 6e, 1 day after, p=0.028, t-test, t(15)=2.440, Ctrl: 58.4 ± 1.4%, SSFO: 66.5 ± 3.2%; Figure 6g, adulthood, p=0.015, t-test, t(15)=2.748, Ctrl: 55.5 ± 2.5%, SSFO: 66.7 ± 3.3%; N=9 for Ctrl, N=8 for SSFO). On the other hand, total arm entries were not affected (Figure 6f and h). These results suggest that similar to VTA dopamine neuron stimulation, projection-specific stimulation of dopaminergic axons in the frontal cortex is sufficient to restore memory-guided decision-making in Arc mutant animals.
 
 Moreover, SSFO-mediated frontal dopamine axon stimulation in adolescence also significantly reduced the hyper-reactivity to amphetamine in adult Arc mutant mice (p=0.037, F(1,14)=5.3, two-way ANOVA, N=8 each, Figure 6i). Thus, adolescent stimulation of dopaminergic projections in the frontal cortex provides an effective strategy for reversing frontal dysfunctions in both memory-guided decision-making and psychostimulant reactivity.
 
-## Adolescent dopamine neuron stimulation reverses cognitive deficits in Disc1 mutant mice
+### Adolescent dopamine neuron stimulation reverses cognitive deficits in Disc1 mutant mice
 
 Finally, we sought to determine if this adolescent neurostimulation strategy would be applicable to another genetic model with a hypoactive mesofrontal circuit. Previous studies showed that knocking down Disc1 or overexpressing a dominant negative Disc1 reduced mesofrontal dopaminergic innervation, dopamine release, and cognitive dysfunction (Niwa et al., 2013; Niwa et al., 2010). Using a Disc1 mouse model that contains a knocked-in mutation (Disc1+/-) identified from a subset of human patients (Kim et al., 2021; Wen et al., 2014), we first examined whether mesofrontal activity is also impaired in this model by imaging the calcium activity of M2 frontal cortex with two-photon microscopy in response to VTA stimulation (Figure 7a). Our results showed a reduction of VTA-induced frontal cortical activity in Disc1 mutants compared to wild-type animals (10 pulse F(1,10)=16.5, p=0.002, two-way ANOVA, N=6 mice per group, Figure 7b), indicating a mesofrontal hypofunction in this Disc1 mutant line consistent with other Disc1 models (Niwa et al., 2013; Niwa et al., 2010).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig7-v1.jpg)
+
+**Figure 7.:** (a) Schematic showing the experimental setup to measure the mesofrontal circuit activity by ventral tegmental area (VTA) electrical stimulation and GCaMP6 imaging in the frontal cortex. (b) Time courses of cortical calcium signals in response to VTA stimulation in WT and Disc1+/- mice. 1, 5, or 10 pulses of electrical stimuli (50 Hz) were delivered at 20 s after the start of imaging. The cortical calcium activity at each time point is represented by the change in image fluorescence relative to the baseline image fluorescence (ΔF/F) (1 pulse F(1,10)=5.7, *p=0.038; 10 pulse F(1,10)=16.5, **p=0.002, two-way ANOVA, N=6 per group). (c) Disc1+/- mice show significant reduction in Y-maze alternation compared to WT (*p=0.044, t-test, t(18)=2.171, N=10 mice for each group, both groups passed Shapiro-Wilk normality test at alpha = 0.05). (d) Disc1+/-;Th-Cre mice with DREADD-Gq-labeled dopamine neurons show significantly higher alternation in the Y-maze at adulthood compared to mCherry-Ctrl-labeled mice after 3-day adolescent clozapine N-oxide (CNO) injections (*p=0.012, t-test, t(9)=3.139, Disc1+/-; mCherry N=5, Disc1+/-;DREADD-Gq, N=6 mice, both groups passed Shapiro-Wilk normality test at alpha = 0.05). All the error bars indicate SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87414/elife-87414-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Total entries and left-right turns (percentage of right turns shown) in the Y-maze are not significantly different between Disc1+/- and WT animals. (b) Top, diagram showing procedures for the stimulation of midbrain dopamine neurons and Y-maze testing in Disc1+/-;Th-Cre mice labeled with DREADD-Gq or mCherry-Ctrl viruses. Total entries and left-right turns (percentage of right turns shown) in the Y-maze are not significantly different between mCherry-Ctrl and DREADD-Gq animals at adulthood after 3-day adolescent clozapine N-oxide (CNO) stimulation. All the error bars indicate SEM.
 
 To further determine if our Disc1 mutants have deficits in memory-guided decision-making, we conducted the Y-maze test and found reduced alternation in the Disc1 mutants compared to the wild-type animals (p=0.044, t-test, t(18)=2.171, WT: 66.8 ± 2.6%, Disc1+/-: 58.9 ± 2.5%, N=10 for each group; Figure 7c). Thus, similar to Arc mutant mice, Disc1 mutant mice also exhibit a hypofunctional mesofrontal circuit and impaired cognitive function.
 
@@ -103,13 +159,13 @@ We then tested whether the same adolescent neurostimulation strategy used in the
 
 ## Discussion
 
-## Fast-acting and long-lasting cognitive rescue by adolescent dopamine circuit stimulation
+### Fast-acting and long-lasting cognitive rescue by adolescent dopamine circuit stimulation
 
 In this study, we have demonstrated a powerful role of adolescent dopaminergic input in inducing long-lasting circuit reorganization to reverse genetic deficits in frontal cortex function. Previous studies of dopamine function have focused on its transient neuromodulatory actions on neural dynamics or involvement in reinforcement learning (Lohani et al., 2019; Schultz, 2007; Seamans and Yang, 2004; Tritsch and Sabatini, 2012). Here, by examining the effect of dopamine neuron stimulation over a developmental time scale, we have identified both fast acting and persistent effect of adolescent dopamine neuron activity at neuroanatomical, neurophysiological, and behavioral levels. The cognitive dysfunction present in adolescent mutant mice is readily reversed 1 day after neurostimulation and the restored performance level is maintained even 1 month later at adulthood. Interestingly, the behavioral improvement afforded by dopamine neuron stimulation is observed when the intervention was introduced transiently during the adolescence period, but not adulthood, suggesting a sensitive and limited time window for plasticity-inducing therapeutic interventions within mesofrontal dopamine circuits. These results may also stimulate future research to identify the molecular and cellular mechanisms controlling the adolescent plasticity window and explore the possibility and therapeutic potential of reopening plasticity in adulthood (Caballero and Tseng, 2016; Hoops and Flores, 2017; Mastwal et al., 2016; Mastwal et al., 2014).
 
 We used both chemogentic (DREADD-Gq) and optogenetic (SSFO) methods to deliver adolescent dopamine circuit stimulation. We did not measure the precise firing patterns of the dopaminergic neurons targeted by SSFO but evaluated the effects of SSFO activation on the frontal cortex. Similar to DREADD-Gq-mediated activity changes in the mesofrontal circuit, which was blocked by D1 antagonist, we found increased frontal cortical activity post-light stimulation of frontal dopamine axons in our SSFO-treated animals. While quantitatively the firing patterns of DREADD-Gq and SSFO-activated dopaminergic neurons likely differ, qualitatively both of these manipulations lead to increased mesofrontal circuit activity and improvements in cognitive behaviors. In our previous work with wild-type adolescent mice, both wheel running and a single 10 min session of phasic optogenetic stimulation of the VTA resulted in dopaminergic bouton outgrowth in the frontal cortex (Mastwal et al., 2014). Taken together, these results suggest that adolescent dopaminergic mesofrontal projections are highly responsive to neural activity changes and a variety of adolescent stimulation paradigms are sufficient to elicit lasting changes in this circuit. As dopamine’s effects often display an inverted-U dose-response curve (Floresco, 2013; Vijayraghavan et al., 2007), it will be interesting for future research to compare the effects of specific stimulation methods between wild-type mice and mutant mice with underlying dopamine deficiency. In addition, although we targeted dopamine neurons in our adolescent stimulation, the final behavioral outcome likely includes contributions from co-released neurotransmitters such as glutamate and non-dopaminergic neurons via network effects (Lohani et al., 2019; Morales and Margolis, 2017), which will be interesting directions for future research.
 
-## Cellular alterations in the mesofrontal circuit underlying cognitive dysfunction and rescue
+### Cellular alterations in the mesofrontal circuit underlying cognitive dysfunction and rescue
 
 Our examination across different mechanistic levels suggests a coherent picture in which increased dopamine neuron activity in adolescence leads to enhanced frontal dopaminergic innervation and cortical response to dopamine. Although many of dopamine boutons are not associated with defined postsynaptic structures, these axonal boutons and the active zones they contain are the major release sites for dopamine (Arbuthnott and Wickens, 2007; Goldman-Rakic et al., 1989; Liu et al., 2021; Sulzer et al., 2016). Past studies have established a consistent association between increased dopaminergic innervation in the frontal cortex and an increase in dopamine levels (Naneix et al., 2012; Niwa et al., 2010). Our previous work also found that increasing dopaminergic boutons through adolescent VTA stimulation led to prolonged frontal local field potential responses with high-frequency oscillations (Mastwal et al., 2014), which is characteristic of increased dopaminergic signaling (Gireesh and Plenz, 2008; Lewis and O’Donnell, 2000; Lohani et al., 2019; Wood et al., 2012). Importantly, in our quantification of the structural changes in this study, we evaluated boutons which were labeled with synaptophysin, a molecular marker indicating the presence of synaptic vesicle release machinery (Li et al., 2010; Oh et al., 2014). Thus, our study, taken in the context of the previous work, suggests the increased number of boutons signifying an increase in dopaminergic signaling within the mesofrontal circuit.
 
@@ -117,13 +173,13 @@ Previous electrophysiological studies have suggested that dopaminergic signaling
 
 It is important to note that dopamine can act on five different receptors expressed in both excitatory and inhibitory postsynaptic neurons (O’Donnell, 2010; Seamans and Yang, 2004; Tseng and O’Donnell, 2007), and the frontal GABAergic inhibitory network undergoes major functional remodeling during adolescence (Caballero and Tseng, 2016). The developmental increases in dopaminergic innervation to the frontal cortex and local GABAergic transmission are likely synergistic processes, which both contribute to the maturation of high-order cognitive functions supported by the frontal cortex (Caballero and Tseng, 2016; Larsen and Luna, 2018). Adolescent stimulation of dopamine neurons may interact with this maturational process to promote a network configuration conducive for synchronous and high signal-to-noise neural computation (Mukherjee et al., 2019; Murty et al., 2016; Porter et al., 1999). The microcircuit mechanisms underlying adolescent dopamine stimulation-induced changes, particularly in the GABAergic inhibitory neurons, will be an exciting direction for future research.
 
-## Reversal of cognitive deficits in independent genetic models
+### Reversal of cognitive deficits in independent genetic models
 
 Our studies have shown that the mesofrontal dopamine circuit is a common target disrupted by mutations in Arc and Disc1. The initial motivation of this study was to test if adolescent dopamine stimulation can rescue the deficits in the mesofrontal dopaminergic circuit and cognitive function of Arc-/- mice, which were identified in our previous studies (Managò et al., 2016). We first conducted multiple levels of analyses including viral tracing, in vivo calcium imaging, and behavioral tests to establish the coherent impacts of adolescent dopamine neuron stimulation on circuits and behaviors. We then examined a range of stimulation protocols to assess the efficacy requirements for cognitive improvement, which is our primary goal. Finally, we included Disc1 mice in our study to test if adolescent dopamine stimulation can also reverse the cognitive deficit in another genetic model for mesofrontal dopamine deficiency. By demonstrating a similar cognitive recuse effect of adolescent VTA stimulation in an independent mouse model, this study provides a foundation for future research to compare the detailed cellular mechanisms that underlie the functional rescue in different genetic models.
 
 Arc and Disc1 have different protein interaction partners and function in distinct molecular pathways. Arc is best understood for its role in regulating the trafficking of excitatory neurotransmitter receptors at synapses, whereas Disc1 has been shown to act as a scaffold protein to interact with multiple cytoskeletal proteins and synaptic molecules (El-Boustani et al., 2018; Ishizuka et al., 2006; Kirov et al., 2012; Zhang et al., 2015). Dopamine-related deficits have been reported in multiple Arc and Disc1 mutant lines or direct knockdown of these molecules (Gao et al., 2019; Managò et al., 2016; Niwa et al., 2013; Niwa et al., 2010; Penrod et al., 2019; Salery et al., 2017), but the exact molecular mechanisms underlying these deficits and the varying severity in different models remain to be elucidated in future studies. Considering the widely reported roles of Arc and Disc1 in regulating activity-dependent synaptic plasticity (Shepherd and Bear, 2011; Tropea et al., 2018), mutations in these genes may compromise activity-dependent maturation of the mesofrontal dopaminergic circuit. In the two mouse lines we tested, both Arc and Disc1 mutations lead to a hypoactive mesofrontal circuit and deficits in memory-guided decision-making behaviors. Our study demonstrates that the cognitive behavioral phenotypes arising from distinct genetic origins can be effectively rescued by the same neurostimulation strategy targeting a convergent mesofrontal circuit phenotype during a critical adolescent window.
 
-## Reversal of both cognitive and psychomotor deficits by targeting frontal dopamine projections
+### Reversal of both cognitive and psychomotor deficits by targeting frontal dopamine projections
 
 Our work reveals a specific circuit target for long-lasting restoration of cognitive control functions. Dopamine neurons projecting to the frontal cortex are located in the VTA but are distinct from those projecting to the nucleus accumbens (Björklund and Dunnett, 2007; Lammel et al., 2008). Our initial chemogenetic neuromodulation strategies targeted most of the dopamine neurons in the VTA. While changes in the mesofrontal dopamine circuit were clearly induced, we cannot rule out other potential changes in the brain that might be also induced by such a targeting strategy and result in the lack of net effect related to amphetamine reactivity. The more refined optogenetic (SSFO) neurostimulation method allowed us to specifically target the dopaminergic axons projecting to the frontal cortex. Enhancing their activity transiently in adolescence is sufficient to not only restore memory-guided decision-making in the Y-maze task but also prevent hyper-reactivity to amphetamine. Thus, the mesofrontal dopaminergic circuit may provide an important therapeutic target to restore both cognitive control functions and prevent psychomotor symptoms.
 
@@ -135,23 +191,201 @@ In conclusion, our results suggest that adolescent frontal dopaminergic projecti
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Arc</td>
+      <td>NCBI Gene ID</td>
+      <td>11838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Disc1</td>
+      <td>NCBI Gene ID</td>
+      <td>244667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>The Jackson Laboratory</td>
+      <td>000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Arc-/-</td>
+      <td>The Jackson Laboratory</td>
+      <td>007662</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Disc1+/-</td>
+      <td>The Jackson Laboratory</td>
+      <td>036106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Th-Cre</td>
+      <td>MMRRC</td>
+      <td>031029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>AAV2/9 -Syn-GCaMP6s</td>
+      <td>Boston Children’s Hospital Viral Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>AAV8-CaMKIIa-hM4D(Gi)-mCherry</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>AAV8-Syn-mCherry</td>
+      <td>Boston Children’s Hospital Viral Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>AAV2/9-phSyn1(S)-Flex-tdTomato-T2A-SynEGFP-WPRE</td>
+      <td>Boston Children’s Hospital Viral Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>AAV9.CAG.Flex.tdTomato.WPRE.bGH</td>
+      <td>Penn Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>pAAV8-hSyn-DIO-hM3D(Gq)-mCherry</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>pAAV8-hSyn-DIO-mCherry</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>AAV1.Syn.Flex.GCaMP6s.WPRE.SV40</td>
+      <td>Penn Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>pAAV9-EF1a-DIO-hChR2(C128S/D156A)-EYFP</td>
+      <td>Penn Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated Virus)</td>
+      <td>AAV2/1.CAG.FLEX.EGFP.WPRE.bGH</td>
+      <td>Penn Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>d-Amphetamine</td>
+      <td>Sigma</td>
+      <td>A5880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N-oxide</td>
+      <td>Enzo Life Sciences</td>
+      <td>BML-NS105-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SCH23390</td>
+      <td>Sigma</td>
+      <td>D054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mosaic</td>
+      <td>Inscopix</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prizm</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 Arc-/- (Wang et al., 2006), Disc1+/- (Kim et al., 2021), and hemizygote Th-Cre transgenic (Gong et al., 2007) mice in the C57BL/6 strain were used in this study. Arc-/-;Th-Cre and Disc1+/-;Th-Cre lines were generated by in-house breeding. Mice were normally housed in groups of two to five animals. Estrous cycles are known to affect frontal dopamine activity (Becker and Cha, 1989; Dazzi et al., 2007) and the experiments in this study are limited to male mice of appropriate genotypes. It will be important for future studies to examine female mice at various estrous stages. Litter mates were randomly assigned into control or experimental groups. Behavioral tests were run blinded to the experimental conditions. Experimental protocols were approved by the National Institute of Mental Health Animal Care and Use Committee and the University Committee on Animal Resources (UCAR) at the University of Rochester Medical Center.
 
-## Method details
+### Method details
 
-## Spontaneous alternation in the Y-maze
+#### Spontaneous alternation in the Y-maze
 
 A three-arm plexiglass Y-maze (45 cm length × 8 cm width × 12 cm height for each arm) was used to test spontaneous alternation. Animals were brought into the testing room at least 30 min prior to the start of the session to acclimate to the room. Room lights were dimmed to ~10–15 lux. Animals were placed in the start arm facing away from the center. Recording of the session was started when the animal started to move toward the center and the animal was allowed to freely explore the Y-maze for 8 min. The Y-maze was cleaned with 70% ethanol between animals.
 
 Videos of the sessions were analyzed blindly offline. Arms were identified as A, B, C. Starting from the start arm, entry into each arm was recorded as a sequence of arm letters. Entry was recorded if all four paws of the animal entered the arm. The number of alternating entries (triplet sequences with non-repeating letters, e.g. ABC) and total entries (total number of letters) were counted. Alternation percentage was calculated as: (total alternating entries/(total entries-2)) × 100.
 
-## Amphetamine-induced locomotion
+#### Amphetamine-induced locomotion
 
 An animal was placed in an open field arena (50 cm × 50 cm × 25 cm) and monitored by video camera for 10 min. After that, d-amphetamine (1.5 mg/kg) was injected (i.p.), and the animal was monitored by video camera for another 60 min in the arena. Locomotion was automatically tracked using the animal’s body position by the Limelight video tracking system (Actimetrics-Coulbourn Instruments).
 
-## Calcium imaging with head-mounted miniature microscope
+#### Calcium imaging with head-mounted miniature microscope
 
 WT and Arc-/- animals were prepared for surgery following previous published procedures (Cao et al., 2015; Cao et al., 2013; Li et al., 2017). Mice were anesthetized with Avertin (1.5% solution given at 0.01 ml/g, i.p.) and treated with dexamethasone (0.2 mg/kg, s.c.) and carprofen (5 mg/kg, s.c.) to prevent brain swelling and inflammation. A piece of skull (3.5 mm in diameter) in the frontal cortex was removed after high-speed dental drilling. AAV2/9 -Syn-GCaMP6s (3–5×1012 copies/ml, 0.6 μl per animal) was infused into M2 frontal cortex (Bregma, AP1.7, ML0.8) from the pial surface using a micro-syringe pump (Li et al., 2017). A 3 mm coverslip was used to seal the cranial window and the exposed scalp was sutured after cranial window surgery. 7–10 days later, the baseplate of a miniaturized integrated fluorescent microscope (Inscopix) was fixed on top of the coverslip. Animals were habituated to the attachment of the microscope (20 min per day for 4 days), then imaged during the spontaneous Y-maze alternation task.
 
@@ -163,17 +397,17 @@ To identify periods of increased neuronal activity, we searched for the rising p
 
 To measure an animal’s movement in the Y-maze, the center of body mass was tracked in background-subtracted behavioral video using custom-written Matlab scripts. The animal’s movement in Y-maze was divided into trials. Each trial began when the animal started moving away from the terminal of one arm and ended after it stopped at the terminal of another arm. To analyze neuronal activity changes along the Y-maze track, the animal’s position in each trial was mapped into 20 equally divided location bins from one terminal to another. The calcium activity for each neuron in each trial was then averaged according to the binned position. To compare neuronal activity under different experimental conditions, the spatially averaged activities were further averaged across trials. The resulting traces from all detected cortical neurons were sorted based on their peak activation time and displayed in temporal raster plots. The proportion of neurons that showed maximal activity at each binned location was then calculated. To measure the alternation selectivity of neurons, neuronal activity difference between alternating and non-alternating trials were calculated at each track position. If the difference at a particular position is higher than 2 standard deviations of the differences at all other positions, the activity was determined as alternation-selective at the designated position.
 
-## Frontal cortex inhibition and Y-maze testing
+#### Frontal cortex inhibition and Y-maze testing
 
 Animals were prepared for surgery following previous published procedures (Cao et al., 2015; Cao et al., 2013; Li et al., 2017). Mice were anesthetized with Avertin (1.5% solution given at 0.01 ml/g, i.p.). 0.7 μl of AAV8-CaMKIIa-hM4D(Gi)-mCherry (4×1012 copies/ml, UNC Vector Core) or AAV8-Syn-mCherry (3×1012 copies/ml, Boston Children’s Hospital Viral Core) was injected into the M2 frontal cortex (from bregma: AP 1.7, ML 0.5, DV 1.0 mm) bilaterally. After 2 weeks, mCherry-expressing controls were injected with CNO (3 mg/kg) and Gi-expressing animals were injected with either CNO (3 mg/kg) or 0.9% saline control. Animals were run in the Y-maze 1 hr after the injections. After behavioral testing, animals were perfused and M2 frontal cortical expression was confirmed by confocal microscopy of brain sections.
 
-## Labeling and imaging of VTA dopaminergic neurons and projections to the frontal cortex
+#### Labeling and imaging of VTA dopaminergic neurons and projections to the frontal cortex
 
 AAV2/9-phSyn1(S)-Flex-tdTomato-T2A-SynEGFP-WPRE (4×1013 copies/ml, Boston Children’s Hospital Viral Core, 0.5 µl) and AAV9.CAG.Flex.tdTomato.WPRE.bGH (9×1012 copies/ml, Penn Vector Core, 0.3 µl) were mixed together and injected into the right hemisphere of the midbrain region (from bregma: AP –3.2, ML 0.5, DV 4.4mm) of Arc+/+;Th-Cre and Arc-/-;Th-Cre animals. Animals were allowed to recover for ~2 weeks. Animals were then perfused with 0.9% saline followed by 4% paraformaldehyde (PFA) and post-fixed overnight at 4°C. Coronal 100 µm thick sections in the frontal cortical and midbrain regions were prepared with a sliding microtome. Three sections in the frontal cortical region (AP 1.6, 1.8, and 2.0; 25× lens, 10 µm Z-stack, 10 stacks per section) and five sections in the midbrain region (AP −2.9, –3.1, −3.3, –3.5, and –3.7; 10× lens, single-frame images) were imaged in both the green and red channels using confocal microscopy (Olympus FV1000). For the frontal cortex, each image stack was maximum projected, and the 10 stacks were stitched together for each section. Animals that did not show VTA labeling were excluded from further analysis.
 
 Image analysis was carried out using custom Matlab scripts. For boutons and axons, an ROI for the M2 region was drawn in each section using the mouse brain atlas (Paxinos) as reference, and boutons and axons were identified within this region. SypGFP-labeled green channel images were used for bouton quantification. Boutons were detected automatically using a Laplacian filter and thresholded at 5 standard deviations above background. tdTomato-labeled red channel images were used for the axon quantification. Axons were detected automatically using a Hessian filter, thresholded at 2 standard deviations above background, and skeletonized. For the midbrain sections, cells were detected automatically using a Laplacian filter and thresholded at 2 standard deviations above background. For each animal, the bouton density was normalized by the total axon length, and the total axon length was normalized by the total number of tdTomato-labeled midbrain dopamine cells.
 
-## Expression of DREADD-Gq in midbrain dopamine neurons and validation of CNO-induced mesofrontal activation
+#### Expression of DREADD-Gq in midbrain dopamine neurons and validation of CNO-induced mesofrontal activation
 
 0.7 µl of pAAV8-hSyn-DIO-hM3D(Gq)-mCherry (6×1012 copies/ml, UNC Vector Core) or pAAV8-hSyn-DIO-mCherry (3×1012 copies/ml, UNC Vector Core) was injected into the right hemisphere of the midbrain region (from bregma: AP –3.2, ML 0.5, DV 4.4 mm) and 0.7 µl of AAV1.Syn.Flex.GCaMP6s.WPRE.SV40 (2×1012 copies /ml, Penn Vector Core) was injected into the right hemisphere of the frontal cortex (from bregma: AP 1.7, ML 0.7, DV 0.4 mm) of Th-Cre adult animals.
 
@@ -181,28 +415,28 @@ After ~2 weeks, a cranial window was opened above the AAV-GCaMP6 injected region
 
 Images were analyzed using NIH ImageJ. Two 2 min movies of spontaneous activity before and after CNO were analyzed. The mean pixel intensity in each image frame of the movie was calculated as Ft. Baseline fluorescence (F0) was defined as the average of the fluorescent signals (Ft) in the time series. Changes in calcium signals (ΔF/F) are calculated as (Ft-F0)/F0. The standard deviation of the (ΔF/F) was used as a quantitative measure of overall cortical activity.
 
-## CNO stimulation of DREADD-Gq in midbrain dopamine neurons and behavior testing
+#### CNO stimulation of DREADD-Gq in midbrain dopamine neurons and behavior testing
 
 Animals were prepared for surgery as above. 0.7 µl of pAAV8-hSyn-DIO-hM3D(Gq)-mCherry or pAAV8-hSyn-DIO-mCherry was bilaterally injected into the midbrain region (from bregma: AP –3.2, ML 0.5, DV 4.4mm) of Arc-/-;Th-Cre or Disc1+/-;Th-Cre animals within postnatal days P21–P25. CNO (1 mg/kg, i.p.) was injected 1 time per day for 3 days into the animals within postnatal days P35–P42. For 1-day-after tests, animals were tested on the Y-maze 1 day after the last injection day. For adulthood tests, animals were tested at 2–3 month age on the Y-maze. Some of the adult animals were also tested for amphetamine-induced locomotion as described above. After behavior testing, animals were perfused, and DREADD-Gq expression was confirmed in the ventral midbrain region. Animals that did not show VTA labeling were excluded from further analysis.
 
-## CNO stimulation of DREADD-Gq in midbrain dopamine neurons and in vivo imaging of cortical activity
+#### CNO stimulation of DREADD-Gq in midbrain dopamine neurons and in vivo imaging of cortical activity
 
 Animals were prepared for surgery as described above. 0.7 µl of pAAV8-hSyn-DIO-hM3D(Gq)-mCherry or pAAV8-hSyn-DIO-mCherry was bilaterally injected into the midbrain region (from bregma: AP –3.2, ML 0.5, DV 4.4mm) of Arc-/-;Th-Cre animals within postnatal days P21–P25. CNO (1 mg/kg, i.p.) was injected 1 time daily for 3 days into the animals for activation within postnatal days P35–P42. At adulthood, GCaMP6 labeling, cranial window opening, and imaging during Y-maze were carried out as described above. After an interval of at least 1 day after miniscope imaging, animals were used for VTA electrical stimulation coupled with in vivo two-photon imaging. A bipolar stimulation electrode was placed into the VTA (from bregma: AP –3.2, ML 0.5, and DV 4.5 mm) and glued in place in animals anesthetized with isofluorane (~1.5%). A head plate was also glued on to the skull. The animals were then taken off the anesthesia and allowed to recover for ~1 hr before imaging. Time series images lasting ~40 s (115 frames at 0.351 s/frame) were taken for each stimulus train, with the VTA stimulus delivered at 20 s after the start of imaging. Image analysis was carried out as described above. Baseline fluorescence (F0) was defined as the average of the fluorescent signals (Ft) in the first 15 s of the time series. Changes in calcium signals (ΔF/F) are calculated as (Ft-F0)/F0. After imaging, animals were perfused, and DREADD-Gq expression was confirmed in the midbrain regions. Animals that did not show VTA labeling were excluded from further analysis.
 
-## CNO stimulation of DREADD-Gq in midbrain dopamine neurons and imaging of mesofrontal axons and boutons
+#### CNO stimulation of DREADD-Gq in midbrain dopamine neurons and imaging of mesofrontal axons and boutons
 
 Animals were prepared for surgery as described above. A mixture of 0.4 µl of pAAV8-hSyn-DIO-hM3D(Gq)-mCherry or pAAV8-hSyn-DIO-mCherry 0.5 µl AAV2/9-phSyn1(S)-Flex-tdTomato-T2A-SynEGFP-WPRE and 0.3 µl AAV9.CAG.Flex.tdTomato.WPRE.bGH was injected into the midbrain region (from bregma: AP –3.2, ML 0.5, DV 4.4 mm) of Arc-/-;Th-Cre animals within postnatal days P21–P25. The procedure was later modified with a 0.6 µl of pAAV8-hSyn-DIO-hM3D(Gq)-mCherry or pAAV8-hSyn-DIO-mCherry first and then immediately followed by an injection of a mixture of 0.5 µl AAV2/9-phSyn1(S)-Flex-tdTomato-T2A-SynEGFP-WPRE and 0.3 µl AAV9.CAG.Flex.tdTomato.WPRE.bGH. 12 animals from the first procedure and 8 animals from the latter procedure were pooled together for the analysis. CNO (1 mg/kg, i.p.) was injected one time daily for 3 days into the animals within postnatal days P35–P42. At adulthood, animals were then perfused with 0.9% saline followed by 4% PFA and post-fixed overnight at 4°C. Coronal 100 µm thick sections in the frontal cortical and midbrain regions were prepared with a sliding microtome. Three sections in the frontal cortical region (AP 1.6, 1.8, and 2.0) and five sections in the midbrain region (AP −2.9, –3.1, −3.3, –3.5, and –3.7) were imaged in both the green and red channels using confocal microscopy. Image analysis was carried out as described above.
 
-## SSFO expression in midbrain dopamine neurons and validation of cortical light activation
+#### SSFO expression in midbrain dopamine neurons and validation of cortical light activation
 
 0.7 µl of pAAV9-EF1a-DIO-hChR2(C128S/D156A)-EYFP (titer 5×1013 copies/ml diluted 1:20 in PBS, Penn Vector Core) or AAV2/1.CAG.FLEX.EGFP.WPRE.bGH (titer 8×1012 copies/ml, Penn Vector Core) was injected into the midbrain region (from bregma: AP –3.2, ML 0.5, DV 4.4 mm) and 0.7 µl of AAV1.Syn.Flex.GCaMP6s.WPRE.SV40 (titer 8×1012copies/ml, Penn Vector Core) was injected into the frontal cortex (from bregma: AP 1.7, ML 0.7, DV 0.4 mm) of Th-Cre adult animals.
 
 After ~2 weeks, cranial window (from Bregma: AP 1.0–2.5 mm, ML 1 mm) opening and two-photon imaging was carried out as described above. Animals were imaged before and 30 min after light activation with an optical fiber (200 μm in diameter, Thor Labs) connected to a 473 nm solid-state laser diode (CrystaLaser) with ~10 mW output from the fiber. Three spots separated by around 200 µm anterior-posterior in the center of the window were activated with a 2 s light pulse for each spot. After imaging, animals were perfused, and SSFO expression was confirmed in the midbrain regions. Images were analyzed as described above. Three min times series images of spontaneous activity before and after CNO were analyzed. Baseline fluorescence (F0) was defined as the average of the fluorescent signals (Ft) in the time series. The standard deviation of the (ΔF/F) was used as a quantitative measure of overall cortical activity.
 
-## Light activation of SSFO in frontal dopaminergic axons and behavioral testing
+#### Light activation of SSFO in frontal dopaminergic axons and behavioral testing
 
 0.7 µl of pAAV9-EF1a-DIO hChR2(C128S/D156A)-EYFP or AAV2/1.CAG.FLEX. EGFP.WPRE.bGH was bilaterally injected into the midbrain region (from bregma: AP –3.2, ML 0.5, DV 4.4mm) of Arc-/-;Th-Cre animals within postnatal days P21–P25. Around postnatal days P35–P42, a cranial window was opened in above the frontal cortex (from Bregma: AP 1.0–2.5 mm, ML 1 mm across both sides of the midline) in animals anesthetized with isofluorane (~1.5%). The cranial window was filled with silicone gel, covered with a glass coverslip, and sealed with dental cement. A head bar was glued on the skull for fixation during light activation. Animals were allowed to wake and recover for at least 2 hr. Animals were then head fixed and an optical fiber (200 μm in diameter, Thor Labs) connected to a 473 nm solid-state laser diode (CrystaLaser) with ~10 mW output from the fiber was used to deliver 2 s light pulses to the frontal cortex. Three spots separated by around 200 µm anterior-posterior in the center of the window were activated in each hemisphere. The light activation was repeated for 2 more days. For 1-day-after tests, animals were tested in the Y-maze 1 day after the last injection day. For adulthood tests, animals of 2–3 month age were first tested in the Y-maze, then tested for amphetamine-induced locomotion as described above. After behavior testing, animals were perfused, and SSFO expression was confirmed in the midbrain regions. Animals that did not show VTA labeling were excluded from further analysis.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical analyses were performed in Prism 9 or Matlab. No statistical methods were used to predetermine sample size. Sample sizes were chosen based on previous studies using similar techniques to determine biological effects (Liu et al., 2018; Managò et al., 2016; Mastwal et al., 2014; Wang et al., 2017). Statistical differences between the means of two groups were evaluated with two-tailed t-test and normality was confirmed with Shapiro-Wilk test. Statistical differences between the means of multiple groups were determined using ANOVA. Statistical differences between two proportions were evaluated with chi-squared test.

@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0575yy874 Department of Medical Microbiology, University Medical Center Utrecht Utrecht Netherlands
-2. https://ror.org/04pp8hn57 Biomolecular Mass Spectrometry and Proteomics, Bijvoet Center for Biomolecular Research and Utrecht Institute for Pharmaceutical Sciences, University of Utrecht Utrecht Netherlands
+1. Department of Medical Microbiology, University Medical Center Utrecht Utrecht Netherlands ([ROR:0575yy874](https://ror.org/0575yy874))
+2. Biomolecular Mass Spectrometry and Proteomics, Bijvoet Center for Biomolecular Research and Utrecht Institute for Pharmaceutical Sciences, University of Utrecht Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
 3. Netherlands Proteomics Center Utrecht Netherlands
 
 † Corresponding author
@@ -33,41 +33,89 @@ Here, we show that sMAC is primarily formed when complement is activated on bact
 
 ## Results
 
-## sMAC is primarily formed by MAC-resistant Gram-negative bacteria
+### sMAC is primarily formed by MAC-resistant Gram-negative bacteria
 
 To understand how sMAC is formed when bacteria activate complement, we analyzed sMAC formation by different bacteria. A panel of 12 laboratory and clinical E. coli strains were incubated with pooled human serum. First, we studied if these E. coli strains were sensitive to killing by MAC pores. Bacterial viability was assessed by counting colony forming units (CFUs) and revealed that four strains were killed in serum (Figure 1a). Killing was MAC-dependent because it could be inhibited with C5 inhibitors OmCI and eculizumab (Figure 1—figure supplement 1a), indicating that these strains are ‘MAC-sensitive’. The other eight strains survived in serum (Figure 1a). C3 conversion was measured to determine if these serum-resistant strains activated complement at all. Deposition of C3b on the bacterial surface (Figure 1b) and release of C3a in the supernatant (Figure 1—figure supplement 1b) were similar on three strains compared to the MAC-sensitive strains, indicating that these strains activate complement efficiently. We have previously shown that MAC components bind to these strains after complement activation (Doorduijn et al., 2021), suggesting that they are ‘MAC-resistant’ strains. The other five strains showed little to no deposition of C3b and were considered ‘complement-resistant’.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig1-v2.jpg)
+
+**Figure 1.:** Escherichia coli strains (5×107 bacteria/ml) were incubated in 5% pooled human serum. Bacterial viability was determined after 60 min by counting colony forming units (CFUs) and calculating the survival compared to t=0. The horizontal dotted line represents the detection limit of the assay. (b) E. coli strains (5×107 bacteria/ml) were incubated in 10% C5-depleted serum. Bacteria were stained with AF488-labelled mouse monoclonal anti-C3b after 30 min and staining was measured by flow cytometry. The relative binding was calculated by normalizing the geoMFI to the geoMFI of unlabelled bacteria. (c) sMAC was detected in the reaction supernatant (100-fold diluted) by enzyme-linked immunosorbent assay (ELISA) after E. coli strains (5×108 bacteria/ml) were incubated in 5% C6-depleted serum supplemented with C6-biotin for 60 min. Serum without bacteria (serum only) was taken as background control. (d) sMAC was detected by ELISA for a dilution range of reaction supernatant collected in c for E. coli strains MG1655, 552059.1, and 547655.1. Orange strains are MAC-sensitive (MAC-sens), blue strains MAC-resistant (MAC-res), and black strains complement-resistant (comp-res). Flow cytometry data (b) are represented by individual geoMFI values of the bacterial population. Data represent mean ± SD (d) or individual values with mean ± SD (a, b, c) of three independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** MAC-sensitive E. coli strains (5×108 bacteria/ml) were incubated in 5% pooled human serum supplemented with C5 conversion inhibitors 6 µg/ml OmCI and 6 µg/ml eculizumab. Bacterial viability was determined after 60 min by counting colony forming units (CFUs) and calculating the survival compared to t=0. The horizontal dotted line represents the detection limit of the assay. (b) MAC-sensitive (MAC-sens, orange) and MAC-resistant (MAC-res, blue) E. coli strains (5×107 bacteria/ml) were incubated in 5% pooled human serum. Supernatant was collected by centrifugation after 60 min. C3a in the supernatant was quantified by enzyme-linked immunosorbent assay (ELISA). Data represent individual values with mean ± SD of three independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) sMAC was formed in 5% C6-depleted serum supplemented with C6-biotin incubated alone, with 10 µg/ml CVF or 6 µg/ml eculizumab for 60 min. Afterwards, the reaction mix was serially diluted and sMAC was detected by ELISA. Data represent mean ± SD of three independent experiments. (b) Escherichia coli strains (5×108 bacteria/ml) were incubated in 5% C6-depleted serum with C6-biotin, with and without C5 conversion inhibitors OmCI (6 µg/ml) and eculizumab (6 µg/ml). Supernatant was collected by centrifugation after 60 min. sMAC was detected in the reaction supernatant (100-fold diluted) by ELISA. (c) Klebsiella strains (5×108 bacteria/ml) were also incubated in 5% C6-depleted serum with C6-biotin and supernatant was collected by centrifugation after 60 min. sMAC was detected in the reaction supernatant (100-fold diluted) by ELISA. Orange strains are MAC-sensitive (MAC-sens), blue strains MAC-resistant (MAC-res), and black strains complement-resistant (comp-res). Serum without bacteria (serum only) was taken as background control. Data represent individual values with mean ± SD of three (b) or two (c, where a biological duplicate of KP567709.1 was measured in one experiment) independent experiments.
+
 We next wanted to see which E. coli strains formed sMAC in serum using an in-house sandwich ELISA. In short, sMAC in serum was captured using an antibody recognizing a neo-epitope of C9 when it is part of sMAC (Mollnes et al., 1985). Next, C6 was detected with streptavidin-HRP, since we used C6-depleted serum supplemented with biotinylated C6. The specificity of our sMAC ELISA was validated using cobra venom factor (CVF) (Figure 1—figure supplement 2a), which can form fluid-phase C5 convertases in serum (Vogel and Fritzinger, 2010). All tested MAC-resistant strains efficiently formed sMAC in serum, whereas MAC-sensitive strains and most complement-resistant strains only generated slightly more sMAC than present in serum alone (Figure 1c). Titration of the supernatant of MAC-resistant 552059.1 suggested that there was at least fivefold more sMAC compared to MAC-sensitive MG1655 or complement-resistant 547654.1 (Figure 1d). sMAC was formed in a complement-dependent manner, since C5 inhibitor OmCI and eculizumab prevented formation of sMAC (Figure 1—figure supplement 2b). Finally, two MAC-resistant Klebsiella strains also formed more sMAC in serum compared to MAC-sensitive Klebsiella strains (Figure 1—figure supplement 2c), suggesting that these findings can also be translated to other Gram-negative species. Altogether, these data suggest that for Gram-negative bacteria sMAC is primarily formed in serum by MAC-resistant strains.
 
-## Gram-positive bacteria also form sMAC in serum
+### Gram-positive bacteria also form sMAC in serum
 
 Our data indicate that sMAC is mainly produced by MAC-resistant Gram-negative bacteria in serum. However, sMAC is also detected in plasma of patients that suffer from bacterial infections with Gram-positive bacteria (Barnum et al., 2020; Lin et al., 1993; Mook-Kanamori et al., 2014). Gram-positive bacteria are intrinsically resistant to MAC-dependent killing (Brown, 1985), which is thought to be caused by the composition of the bacterial cell envelope. Gram-negative bacteria have a cell envelope containing an outer membrane, periplasmic peptidoglycan layer, and a cytosolic IM, whereas Gram-positive bacteria only have a cytosolic membrane that is shielded by a thick peptidoglycan layer. This thick peptidoglycan layer is thought to be responsible for preventing MAC formation in the cytosolic membrane and bacterial killing (Brown, 1985). Here, we wanted to study if complement activation on Gram-positive bacteria also generates sMAC in serum.
 
 Three Staphylococcus aureus strains (SH1000, Wood46 and Newman), one Staphylococcus epidermidis strain (KV103), and one Streptococcus agalactiae strain (COH-1) were incubated in serum to detect sMAC in the serum supernatant. We have previously shown that these strains activate complement and resist killing by MAC pores (Berends et al., 2013). sMAC was formed in all five Gram-positive strains (Figure 2). Since we could not compare this with MAC-sensitive Gram-positive bacteria because of intrinsic resistance to MAC, we compared sMAC generation with MAC-sensitive E. coli MG1655. sMAC generation was three- to fivefold higher for Gram-positive strains compared to MAC-sensitive E. coli MG1655 (Figure 2), corresponding more or less with the difference observed for MAC-resistant E. coli (Figure 1d). Altogether, these data indicate that Gram-positive bacteria also form sMAC in serum.
 
-## MAC-resistant E. coli strains potently convert C5 in serum
+![Figure 2.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig2-v2.jpg)
+
+**Figure 2.:** MAC-sensitive Escherichia coli MG1655 and Gram-positive strains (5×108 bacteria/ml) were incubated in 5% C6-depleted serum supplemented with C6-biotin. The supernatant was collected after 60 min by centrifugation. Serum without bacteria (serum only) was taken as background control. sMAC was detected in a dilution range of reaction supernatant by enzyme-linked immunosorbent assay (ELISA). Data represent mean ± SD of three independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Membrane attack complex (MAC)-sensitive Escherichia coli MG1655 and Gram-positive strains (5×108 bacteria/ml) were incubated in 5% C6-depleted serum supplemented with C6-biotin. The supernatant was collected after 60 min by centrifugation. Serum without bacteria (serum only) was taken as background control. C5a in the supernatant was quantified by enzyme-linked immunosorbent assay (ELISA). Data represent individual values with mean ± SD of three independent experiments.
+
+### MAC-resistant E. coli strains potently convert C5 in serum
 
 Because conversion of C5 into C5b is crucial to initiate the assembly of sMAC, we wanted to know if conversion of C5 was also higher on MAC-resistant strains compared to MAC-sensitive strains in serum. To study this, we compared C5 conversion for the MAC-sensitive and MAC-resistant E. coli strains used in Figure 1. Western blotting of the serum supernatant confirmed that MAC-resistant strains converted all C5 in serum (Figure 3a), whereas leftover C5 was still visible for MAC-sensitive strains. A sandwich ELISA was also used to quantify the released C5a into serum supernatant, which revealed that MAC-resistant strains generated ± fivefold more C5a compared to MAC-sensitive strains (Figure 3b). This was comparable to the difference in sMAC (Figure 1d). Gram-positive bacteria that generated sMAC (Figure 2) also generated more C5a compared to MAC-sensitive MG1655 (Figure 2—figure supplement 1), although this difference in C5a generation was smaller (±threefold) compared to the difference between MAC-resistant and MAC-sensitive E. coli (±tenfold, Figure 3b). One MAC-sensitive strain (547563.1) converted more C5 and released more C5b into the supernatant compared to the other MAC-sensitive strains (Figure 3a and b), although this difference was not detected by sMAC ELISA (Figure 1c). Nonetheless, these data suggest that MAC-resistant bacteria potently convert C5 in serum.
 
-## Expression of LPS O-Ag on E. coli increases C5a and sMAC generation in serum
+![Figure 3.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig3-v2.jpg)
+
+**Figure 3.:** E. coli strains (5×108 bacteria/ml) were incubated in 5% pooled human serum and supernatant was collected by centrifugation after 60 min. (a) Representative Western blot for C5 of the supernatant. The upper band represents the α-chain of C5, the middle band of C5b (α’), and the lower band the β-chain of both C5 and C5b. Serum without bacteria (ser) was taken as control for the absence of C5 conversion. The Western blot is a representative of at least three independent experiments. (b) C5a in the supernatant was quantified by enzyme-linked immunosorbent assay (ELISA). Orange strains are MAC-sensitive (MAC-sens) and blue strains are MAC-resistant (MAC-res). E. coli CGSC7740 wildtype without lipopolysaccharide (LPS) O-antigen (O-Ag) (O-Agneg) and wbbL+ with LPS O-Ag (O-Agpos) were also incubated in 5% pooled human serum to collect supernatant. C5a (c) and sMAC (d) in the supernatant were quantified by ELISA. ELISA data represent individual values with mean ± SD of three independent experiments. Statistical analysis was done using an unpaired two-tailed t-test with the mean C5a concentrations of MAC-sensitive strains vs. MAC-resistant strains (b) or a paired two-tailed t-test on individual samples (c and d). Relevant p-values are indicated in the figure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Escherichia. coli strains (a) and Klebsiella strains (b) were typed for the presence of LPS O-Ag via silver staining (methods described in Doorduijn et al., 2021). LPS-core were distinguished from LPS O-Ag based on size. Orange strains are MAC-sensitive (MAC-sens), blue strains MAC-resistant (MAC-res), and black strains complement-resistant (comp-res). The silver stain was previously shown in part (only for silver MAC-res and MAC-sens E. coli strains) in Doorduijn et al., 2021. (c) 5×107 bacteria/ml of E. coli strain CGSC7740 wildtype (O-Agneg) and wbbL+ (O-Agpos) were incubated in a titration of C5-depleted serum for 30 min. Bacteria were washed and stained with AF488-labelled mouse monoclonal anti-C3b for 30 min. Antibody staining was measured by flow cytometry. Flow cytometry data are represented by individual geoMFI values of the bacterial population. Data represent individual values with mean ± SD of two independent experiments.
+
+### Expression of LPS O-Ag on E. coli increases C5a and sMAC generation in serum
 
 We wanted to further study how MAC-resistance in E. coli could affect C5 conversion and sMAC generation. We wondered if differences in the expression of lipopolysaccharide (LPS) O-antigen (O-Ag) could contribute. LPS O-Ag is an important constituent of the outer membrane of Gram-negative bacteria that has frequently been associated with MAC resistance (Grossman et al., 1987). We have previously shown that the three tested MAC-resistant strains express O-Ag (Doorduijn et al., 2021), whereas only one out of four MAC-sensitive strains (547563.1) does as well (shown in Figure 3—figure supplement 1a, summarized in Table 1). Silver staining of O-Ag for Klebsiella strains suggested a comparable trend, showing little detectable O-Ag for MAC-sensitive strains compared to MAC-resistant strains (Figure 3—figure supplement 1b). To more directly study if LPS O-Ag affects C5a generation and sMAC release, a MAC-sensitive E. coli K12 strain without O-Ag (O-Agneg) was incubated in 5% human serum and compared with an isogenic MAC-resistant strain in which O-Ag expression is restored (O-Agpos) (Doorduijn et al., 2021). Expression of O-Ag increased C5a generation in the supernatant 10-fold (Figure 3c) and sMAC release 3.5-fold (Figure 3d). C3b deposition on the bacterial surface was comparable both in the presence and absence of O-Ag in serum (Figure 3—figure supplement 1c), suggesting that initial complement activation was not affected by the expression of O-Ag, similar to other MAC-resistant E. coli (Figure 1b). Therefore, these data indicate that expression of O-Ag on E. coli can increase C5a generation and sMAC release in serum.
 
-## Binding of C8 and C9 triggers release of MAC precursors from MAC-resistant E. coli
+### Binding of C8 and C9 triggers release of MAC precursors from MAC-resistant E. coli
 
 We next studied at what stage of MAC assembly the nascent MAC is released from the bacterial surface. MAC pores assemble in a stepwise manner. C5b binds to C6 to form a stable C5b6 complex, which next binds C7 to anchor the C5b-7 complex to the membrane of bacteria (Preissner et al., 1985). Finally, binding of C8 inserts the nascent MAC into the bacterial cell envelope, and is more tightly inserted when C9 binds and polymerizes a transmembrane ring (Bayly-Jones et al., 2017). Release of C5b into the supernatant was therefore measured in the presence or absence of downstream MAC components for both MAC-resistant E. coli 552059.1 and MAC-sensitive E. coli MG1655. Bacteria were labelled with convertases in C5-depleted serum and washed as done previously (Heesterbeek et al., 2019). Next, C5 and C6 were added in the presence or absence of downstream MAC components (Figure 4a). Western blotting of the supernatant revealed that more C5 was converted into C5b for MAC-resistant 552059.1 compared to MAC-sensitive MG1655 (Figure 4b, indicated by the orange and blue arrow), in line with Figure 4b. Western blotting revealed that binding of C7 to the nascent MAC prevented release of C5b6 from the bacterial surface (Figure 4b), as was previously observed for MAC-sensitive MG1655 (Doorduijn et al., 2020). Binding of C7 also appeared to increase C5 conversion on MAC-resistant 552059.1 (Figure 4b). However, binding of C8 to the nascent MAC triggered release of C5b from MAC-resistant 552059.1, even in the presence of final MAC component C9 (Figure 4b). Binding of C8 triggered some release of C5b from the surface of MAC-sensitive MG1655, but this was prevented when C9 was also present (Figure 4b). Quantification of C5b6 by ELISA revealed that binding of C8 and C9 released fourfold more C5b6 from the surface of MAC-resistant E. coli (Figure 4c and d). These data suggest that binding of C8 and C9 to C5b-7 triggers release of the nascent MAC from MAC-resistant E. coli.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig4-v2.jpg)
 
-**Figure 4.:** Escherichia coli.(a) Schematic overview of how E. coli (orange rods) MG1655 (MAC-sensitive) and 552059.1 (MAC-resistant) were labelled with convertases (green ovals) in 10% C5-depleted serum. Next, bacteria were washed and bacteria (5×108 bacteria/ml for b, 1×108 bacteria/ml for c and d) were incubated with alternative pathway (AP) convertase components (5 µg/ml FB and 0.5 µg/ml FD) and 100 nM C5 and C6 (1); 100 nM C5, C6, and C7 (2); 100 nM C5, C6, C7, and C8 (3) or 100 nM C5, C6, C7, C8, and 1000 nM C9 (4). The supernatant was collected after 60 min by centrifugation. (b) Western blot for C5 of the supernatant. The Western blot is a representative of at least three independent experiments. The upper band represents the α-chain of C5, the middle band of C5b (α’), and the lower band the β-chain of both C5 and C5b. C5b6 in the supernatant of MAC-sensitive MG1655 (c) and MAC-resistant 552059.1 (d) was quantified by enzyme-linked immunosorbent assay (ELISA). Dotted line represents the background OD450. ELISA data represent individual values with mean ± SD of three independent experiments. Statistical analysis was done using an ordinary one-way ANOVA with Tukey’s multiple comparisons test (c and d) and relevant p-values are indicated in the figure.Figure 4—source data 1.Escherichia coli MG1655 and 552059.1 were labelled with convertases in 10% C5-depleted serum.Next, bacteria were washed and 5×108 bacteria/ml were incubated with alternative pathway (AP) convertase components (5 µg/ml FB and 0.5 µg/ml FD) and 100 nM C5 and C6 (2); 100 nM C5, C6, and C7 (3); 100 nM C5, C6, C7, and C8 (4) or 100 nM C5, C6, C7, C8, and 1000 nM C9 (5). The supernatant was collected after 60 min by centrifugation and analyzed by Western blotting for C5. Ten nM C5 or pC5b6 were loaded as positive controls for C5 and C5b.
+**Figure 4.:** (a) Schematic overview of how E. coli (orange rods) MG1655 (MAC-sensitive) and 552059.1 (MAC-resistant) were labelled with convertases (green ovals) in 10% C5-depleted serum. Next, bacteria were washed and bacteria (5×108 bacteria/ml for b, 1×108 bacteria/ml for c and d) were incubated with alternative pathway (AP) convertase components (5 µg/ml FB and 0.5 µg/ml FD) and 100 nM C5 and C6 (1); 100 nM C5, C6, and C7 (2); 100 nM C5, C6, C7, and C8 (3) or 100 nM C5, C6, C7, C8, and 1000 nM C9 (4). The supernatant was collected after 60 min by centrifugation. (b) Western blot for C5 of the supernatant. The Western blot is a representative of at least three independent experiments. The upper band represents the α-chain of C5, the middle band of C5b (α’), and the lower band the β-chain of both C5 and C5b. C5b6 in the supernatant of MAC-sensitive MG1655 (c) and MAC-resistant 552059.1 (d) was quantified by enzyme-linked immunosorbent assay (ELISA). Dotted line represents the background OD450. ELISA data represent individual values with mean ± SD of three independent experiments. Statistical analysis was done using an ordinary one-way ANOVA with Tukey’s multiple comparisons test (c and d) and relevant p-values are indicated in the figure.
 
-## Release of MAC precursors from E. coli triggers lysis of bystander human erythrocytes, but is prevented by serum regulators Vn and Clu
+### Release of MAC precursors from E. coli triggers lysis of bystander human erythrocytes, but is prevented by serum regulators Vn and Clu
 
 Although we measured the release of C5b (Figure 4), the composition of the released complexes and their capacity to lyse cells remained unclear. Previous reports showed that complement activation on erythrocytes can cause MAC-dependent lysis of bystander cells that are not recognized by the complement system, the so-called bystander lysis (Lachmann and Thompson, 1970; Götze and Müller-Eberhard, 1970; Cooper and Müller-Eberhard, 1970). We next tested whether complement activation and subsequent release of MAC precursors from MAC-resistant E. coli can also cause bystander lysis. Therefore, E. coli were labelled with convertases in C5-depleted serum as described in Figure 4a. Next, these convertase-labelled bacteria were incubated with purified MAC components and unlabelled human erythrocytes to measure bystander lysis (Figure 5a). This resulted in lysis of bystander erythrocytes for all MAC-resistant E. coli strains and MAC-sensitive 547563.1 (Figure 5b), corresponding with the production of sMAC (Figure 5—figure supplement 1). Lysis was prevented in the presence of C5 conversion inhibitor OmCI (Figure 5b), suggesting that lysis was MAC-dependent. These data show that release of MAC precursors from E. coli can result in lysis of bystander human cells. However, when we studied bystander lysis in a human serum environment, we observed that the 552059.1 did not trigger bystander lysis of erythrocytes (Figure 5c). Serum regulators Vn and Clu are known to scavenge and inactivate sMAC (Zipfel and Skerka, 2009; Schmidt et al., 2016). Indeed, both Vn and Clu inhibited bystander lysis of erythrocytes when MAC assembled on convertase-labelled E. coli 552059.1 (as described in Figure 5a) at concentrations representative for 10% serum (Figure 5c). SDS-PAGE revealed that Clu, but not Vn, prevents the formation of polymeric-C9 in the supernatant (Figure 5—figure supplement 2a). This suggests that Vn and Clu interfere at different stages in the assembly of sMAC. Vn and Clu both specifically prevent lysis of bystander cells by MAC, since Vn and Clu did not inhibit binding of C9 (Figure 5—figure supplement 2b), or MAC-dependent killing (Figure 5—figure supplement 2c) when MAC was assembled by local conversion of C5 on convertase-labelled MAC-sensitive MG1655. Altogether, our data suggest that release of MAC precursors from E. coli can trigger lysis of bystander human erythrocytes, but that serum regulators Vn and Clu can inhibit this bystander lysis.
 
-## sMAC that is released from bacteria is a heterogeneous protein complex with different stoichiometries
+![Figure 5.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig5-v2.jpg)
+
+**Figure 5.:** (a) Schematic overview of the bystander lysis assay. E. coli strains (orange rods) were labelled with convertases (green ovals) in 10% C5-depleted serum and washed. Next, convertase-labelled bacteria (3.3×108 per ml) were incubated with: human erythrocytes (1×108 per ml), alternative pathway (AP) convertase components (5 nM FB and 20 nM FD) and MAC proteins (100 nM C5, 100 nM C6, 100 nM C7, 100 nM C8, and 500 nM C9). The supernatant was collected after 60 min by centrifugation and analyzed for the presence of hemoglobulin. The percentage of lysed erythrocytes was calculated by setting a buffer-only control at 0% lysis and MilliQ control at 100% lysis. (b) Bystander erythrocyte lysis for MAC-sensitive (MAC-sens) and MAC-resistant (MAC-res) E. coli strains. (c) Bystander erythrocyte lysis for convertase-labelled MAC-resistant E. coli 552059.1 incubated with 10% pooled human serum, MAC proteins (30 nM C5, 30 nM C6, 30 nM C7, 30 nM C8, and 300 nM C9) or MAC components with 133 nM Vn, 133 nM Clu, or 20 µg/ml C5 conversion inhibitor OmCI. Data represent individual values with mean ± SD of three independent experiments. Statistical analysis was done using an ordinary one-way ANOVA with Tukey’s multiple comparisons test (c) and relevant p-values are indicated in the figure (all conditions compared with MAC proteins only).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** MAC-sensitive (MAC-sens, in orange) and MAC-resistant (MAC-res, in blue) E. coli strains were labelled with convertases in 10% C5-depleted serum and washed. Next, convertase-labelled bacteria (3.3×108 per ml) were incubated with alternative pathway (AP) convertase components (50 and 20 nM FD) and MAC components (100 nM C5, 100 nM C6, 100 nM C7, 100 nM C8, and 500 nM C9). The supernatant was collected by centrifugation after 60 min. sMAC was detected in the reaction supernatant (100-fold diluted) by enzyme-linked immunosorbent assay (ELISA). MAC components without bacteria (MAC components only) were taken as background control. Data represent individual values with mean ± SD of three independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) MAC-resistant Escherichia coli 552059.1 was labelled with convertases in 10% C5-depleted serum and washed. Next, convertase-labelled bacteria (3.3×108 per ml) were incubated with: alternative pathway (AP) convertase components (50 nM FB and 20 nM FD), MAC components C5-C9 (30 nM C5, 30 nM C6, 30 nM C7, 30 nM C8, and 300 nM Cy5-labelled C9) with or without 133 nM Vn or 133 nM Clu. SDS-PAGE was performed to distinguish monomeric-C9 from polymeric-C9 by in-gel Cy5 fluorescence. (b, c) MAC-sensitive E. coli MG1655 were labelled with convertases in 10% C5-depleted serum and washed. Next, convertase-labelled bacteria (5×107 per ml) were incubated with: inner membrane (IM) damage marker 2.5 µM Sytox blue, a concentration range of MAC components (C5:C6:C7:C8:C9 as 1:1:1:1:3) alone and with 100 nM Vn or Clu. After 30 min, bacteria were analyzed by flow cytometry for binding of Cy5-labelled C9 (b) and Sytox fluorescence as read-out for IM damage (c). Flow cytometry data are represented by geoMFI values of the bacterial population, in the case of Sytox the relative geoMFI was calculated compared to bacteria in buffer and Sytox only. The SDS-PAGE image are representative for at least three independent experiments. Data represent mean ± SD of three independent experiments.
+
+### sMAC that is released from bacteria is a heterogeneous protein complex with different stoichiometries
 
 Next, we aimed to define the molecular composition of sMAC generated when complement is activated on bacteria. sMAC was generated by incubating MAC-resistant E. coli 552059.1 in C6-depleted serum with His-tagged C6 and captured and isolated with HisTrap beads (Figure 6—figure supplement 1a). SEC was used to separate sMAC from monomeric-C6. The SEC profile of serum incubated with MAC-resistant E. coli shifted to much shorter elution times compared to nonactivated serum (Figure 6a, fractions B5-B12), indicating a mass shift. As a control, we analyzed commercially available sMAC, which is generated with zymosan particles in serum. Commercial sMAC eluted from the SEC column in the same fractions (B5-B12), indicating that these bacterial-eluate fractions contain sMAC. Blue-native PAGE (BN-PAGE) and subsequent Western blotting for C6 and C9 confirmed that these fractions contain sMAC (Figure 6b). Compared to commercial sMAC, bacterial sMAC eluted somewhat later from the SEC column (Figure 6b, most apparent in fractions B11 and B12). In addition, sMAC complexes generated by E. coli seemed to run further into the gel. These data suggest that bacterial sMAC complexes have a different composition compared to commercial sMAC.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig6-v2.jpg)
+
+**Figure 6.:** sMAC was generated by incubating MAC-resistant (MAC-res) Escherichia coli 552059.1 in C6-depleted serum supplemented with His-tagged C6 (His-C6). sMAC in the supernatant was captured with HisTrap beads and eluted. (a) Concentrated eluate was separated by size exclusion chromatography (SEC) on a Superose 6 column and OD280 was measured to determine protein content (OD280). Eluate from serum without bacteria (nonactivated serum) and 50 µg commercially available sMAC (Complement Technology) were analyzed as controls. (b) BN-PAGE was performed with pooled (B5+B6 and B7+B8) or individual (B9-B12) SEC fractions and analyzed by Western blotting for C6 (above) and C9 (below). Black fractions represent SEC fractions commercially available sMAC, blue fractions represent SEC fractions of serum incubated with MAC-res E. coli. Two µg of purified sMAC and His-C6 were loaded as control. (c) The protein abundance of all sMAC components (iBAQ value) was determined by LC-MS/MS for individual SEC fractions (B5–B12). (d) The ratio of all individual sMAC components to C5 was determined in a pooled sample of fraction B5-B12. The mean ratio of individual samples was indicated for relevant components above the dot plots. (e) In addition, the ratio of C8 and C9 to C5 was determined for each individual fraction separately for serum incubated with MAC-res E. coli and commercially available sMAC (f). The dotted line (d, e, and f) represents a ratio of 1. The SEC profile and Western blot are representative of three independent experiments. LC-MS/MS data represent three individual digests of the same fraction with mean ± SD that are representative for two independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77503/elife-77503-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** sMAC was detected by enzyme-linked immunosorbent assay (ELISA) at different steps during the isolation procedure using HisTrap beads. His-tagged sMAC was generated by incubating Escherichia coli strain 552059.1 (5×108 per ml) in 10% C6-depleted serum with 50 nM His-tagged C6 (His-C6) for 60 min at 37°C. Supernatant was collected by centrifugation (serum supernatant) and His-tagged sMAC was captured with HisTrap beads for 90 min at 4°C. Supernatant was collected from the beads (supernatant HisTrap beads) and sMAC was eluted from beads with 250 mM imidazole (eluate HisTrap beads) for 30 min at 4°C. (a) sMAC was detected by ELISA for a dilution range of samples. Data represent mean ± SD of four independent experiments. (b–e) LC-MS/MS was performed on individual SEC fractions of concentrated bead eluate for serum incubated with MAC-res E. coli and 50 μg commercially available sMAC. The protein abundance of individual sMAC components (iBAQ value) and ratio of individual sMAC components (compared to C5) were represented for serum incubated with E. coli (b, d) and commercial sMAC (c, e). The dotted line (d and e) represents a ratio of 1. LC-MS/MS data represent three individual digests of the same fraction with mean ± SD that are representative for two independent experiments.
 
 Menny et al., 2021 recently reported that the commercially available sMAC used in our study consists of C5b-8, one to three copies of C9 and several copies of Vn and Clu, using proteomics, cross-linking MS, and cryo-electron microscopy. Here, we compared the average composition of sMAC generated by MAC-resistant E. coli with commercial sMAC by profiling sMAC components with liquid chromatography-tandem mass spectrometry (LC-MS/MS). The total amount of sMAC components that were detected with LC-MS/MS in individual fractions (Figure 6c and Figure 6—figure supplement 1b,c) corresponded with BN-PAGE (Figure 6b), suggesting that most bacterial sMAC eluted later from the SEC column than commercial sMAC. For both bacterial and commercial sMAC, sMAC components C5, C7, and C8 were present in equal amounts in a pooled sample of fractions B5-B12 (Figure 6d). However, C6 and Vn were both twofold more abundant for bacterial sMAC (Figure 6d). The increased ratio of C6 is likely explained by the fact that not all monomeric-C6 could be separated during SEC (as was visible in fraction B9-B12 by BN-PAGE in Figure 6b). Surprisingly, bacterial sMAC contained on average less C9 per C5 (Figure 6d, ratio of 2:1) than commercially available sMAC (Figure 6d, ratio of 3:1). The relative amount of C9 per C5 (Figure 6e), but not other sMAC components (Figure 6—figure supplement 1d), decreased in fractions that eluted later from the SEC column for bacterial sMAC. This was not observed for commercially available sMAC (Figure 6f and Figure 6—figure supplement 1e). These data suggest that sMAC generated by bacteria contains more complexes with less C9 compared to commercial sMAC.
 
@@ -97,33 +145,166 @@ Altogether, we show that sMAC represents an inactivated complex that is primaril
 
 ## Materials and methods
 
-## Serum and complement proteins
+### Serum and complement proteins
 
 Pooled human serum was obtained from healthy volunteers as previously described (Berends et al., 2015b). Serum depleted of complement components C5 or C6 was obtained from Complement Technology. CVF was obtained from Quidel. Preassembled C5b6, C8, and sMAC (SC5b-9) were obtained from Complement Technology. His-tagged C5, C6, C7, and factor B (FB) were expressed in HEK293E cells at U-Protein Express as described previously (Doorduijn et al., 2020). Factor D (FD) and OmCI were produced in HEK293E cells at U-Protein Express and purified as described before (Nunn et al., 2005). To produce fluorescently labelled C9, C9-3xGGGGS-LPeTG-6xHis was recombinantly expressed in Expi293F cells and site-specifically labelled with Cy5 via C-terminal sortagging as done previously (Heesterbeek et al., 2019). Biotinylated C6 was produced in a similar manner, by expressing and isolating C6-LPeTGG-6xHis (previously described in Doorduijn et al., 2020) and subsequent C-terminal sortagging with GGGK-biotin (kindly provided by Louris Feitsma, Department of Crystal and Structural Chemistry, Bijvoet Institute). Eculizumab was kindly provided by Genmab. Vn (plasma isolated) was obtained from Advanced Biomatrix and recombinantly expressed human Clu from R&D Systems. Monoclonal mouse-anti C3b (bH6, kindly provided by Peter Garred) was randomly labelled with NHS-Alexa Fluor 555 (AF555, Thermo Fisher Scientific) as done previously (Heesterbeek et al., 2019). The concentrations of MAC components in 100% serum are ~375 nM C5, 550 nM C6, 600 nM C7, 350 nM C8, and 900 nM C9.
 
-## Bacterial growth
+### Bacterial growth
 
 Bacterial strains that were used in this study are shown in Table 1. CGSC7740 wildtype (O-Agneg) and wbbL+ (O-Agpos) were kindly provided by Benjamin Sellner (Biozentrum, University of Basel). In the wbbL+ strain, an IS5-element that inactivates the wbbL gene is removed. This restores expression of an essential rhamnose transferase wbbL that is required for the expression of O-Ag (Doorduijn et al., 2021; Liu and Reeves, 1994). CGSC7740 wbbL+ was constructed by replacing the IS5-element present in the wbbL+ gene with a sacB-kan cassette to select for kanamycin resistance. The sacB-kan cassette was then replaced with wildtype wbbL without the IS5-element and selected by counter selection on sucrose.
 
+**Table 1.**
+ Bacterial strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Origin</th>
+      <th>Amount of detectable LPS O-Ag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Escherichia coli MG1655</td>
+      <td>Laboratory strain</td>
+      <td>Absent (Doorduijn et al., 2021) (also in Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli BW25113</td>
+      <td>Laboratory strain</td>
+      <td>Absent (Doorduijn et al., 2021) (also in Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli MC1061</td>
+      <td>Laboratory strain</td>
+      <td>Absent (Doorduijn et al., 2021) (also in Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 547563.1</td>
+      <td>Clinical isolate*</td>
+      <td>Low† (Doorduijn et al., 2021) (also in Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 552059.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Doorduijn et al., 2021) (also in Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 552060.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Doorduijn et al., 2021) (also in Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 567705.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Doorduijn et al., 2021) (also in Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 566989.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 552912.1</td>
+      <td>Clinical isolate*</td>
+      <td>No (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 552866.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 547654.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli 547655.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Klebsiella variicola 402</td>
+      <td>Clinical isolate*</td>
+      <td>Low† (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Klebsiella pneumoniae 567880.1</td>
+      <td>Clinical isolate*</td>
+      <td>Low† (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Klebsiella pneumoniae 567702.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Klebsiella pneumoniae 567709.1</td>
+      <td>Clinical isolate*</td>
+      <td>High (Figure 3—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli CGSC7740</td>
+      <td>Laboratory strain</td>
+      <td>Absent (Doorduijn et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli CGSC7740 wbbL+</td>
+      <td>Laboratory strain</td>
+      <td>High (Doorduijn et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus aureus SH1000</td>
+      <td>Laboratory strain</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus aureus Wood46</td>
+      <td>Laboratory strain</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus aureus Newman</td>
+      <td>Laboratory strain</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus epidermidis KV103</td>
+      <td>Clinical isolate*</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td>Streptococcus agalactiae COH-1</td>
+      <td>Clinical isolate*</td>
+      <td>n.a.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All clinical isolates were obtained from the clinical Medical Microbiology department at the University Medical Center Utrecht.†Detection of O-Ag was limited, but not absent. n.a. means O-Ag expression is not applicable, because these are Gram-positive bacteria that inherently do not express LPS._
+
 Bacteria were plated from glycerol stocks on blood agar plates. Single colonies were picked and grown overnight at 37°C in shaking conditions (600 rpm). Gram-negative bacteria were grown in lysogeny broth (LB). S. aureus were grown in Todd Hewitt Broth (THB) and S. epidermidis in Trypticase Soy Broth. Streptococcus agalactiae COH-1 was grown in THB in non-shaking conditions and at 5% CO2. The next day, subcultures were grown by diluting at least 1/30 and these were grown to mid-log phase (OD600 between 0.4 and 0.6). Once grown to mid-log phase, bacteria were washed by centrifugation three times (11,000 rcf for 2 min) and resuspended to OD 1.0 (1 × 109 bacteria/ml, validated by flow cytometry for all individual bacterial strains) in RPMI (Gibco) + 0.05% human serum albumin (HSA, Sanquin).
 
-## Complement activation and killing in serum
+### Complement activation and killing in serum
 
 To activate complement on bacteria, bacteria (the amount is specified in figure legends) were incubated in 5% pooled human serum for 60 min at 37°C. For sMAC ELISAs with C6-biotin, C6-depleted serum was used supplemented with 28 nM of C6-biotin. For ELISAs and Western blotting, supernatant was collected by centrifugation of bacteria at 11,000 rcf for 2 min. Blocking of C5 conversion in serum was accomplished by adding 6 µg/ml OmCI (unless otherwise specified) with and without 6 µg/ml eculizumab.
 
-## Convertase labelling and purified MAC formation
+### Convertase labelling and purified MAC formation
 
 Bacteria were labelled with convertases in C5-depleted serum as reported previously (Heesterbeek et al., 2019). In short, bacteria (5×108 bacteria/ml) were incubated with 10% C5-depleted serum for 30 min at 37°C, washed three times (11,000 rcf for 2 min) and resuspended in RPMI-HSA. Bacteria were counted by flow cytometry to ensure that bacterial concentrations were comparable between different strains after convertase labelling. Convertase-labelled bacteria (concentrations specified in figure legends) were next incubated with MAC components (concentrations specified in figure legends) and AP convertase components (50 nM FB and 20 nM FD) for 60 min at 37°C. Supernatant for ELISA and Western blotting was collected by pelleting bacteria by centrifugation at 11,000 rcf for 2 min.
 
-## Bacterial viability
+### Bacterial viability
 
 Bacterial viability was assessed by determining CFUs. A serial dilution was made in PBS (100-, 1,000-, 10,000-, and 100,000-fold) and plated in duplicate on LB agar plates. After overnight incubation at 37°C, colonies were counted and the corresponding concentration of CFU/ml was calculated. Survival was calculated by dividing the CFU/ml in the sample by the CFU/ml at t=0.
 
-## Flow cytometry
+### Flow cytometry
 
 To measure killing by flow cytometry, 2.5 µM of Sytox Blue Dead Cell stain (Thermo Fisher Scientific) was added during the assay to measure inner membrane (IM) damage. To measure C3b deposition by flow cytometry, bacteria (~5 × 107 bacteria/ml) were stained after labelling with convertases with 3 µg/ml AF488- or AF555-labelled mouse-anti C3b for 30 min at 4°C. Finally, bacterial samples were diluted to ~1 × 106 bacteria/ml in RPMI-HSA and subsequently analyzed in a MACSquant flow cytometer (Miltenyi) for forward scatter (FSC), side scatter (SSC), Sytox, AF555, and Cy5 intensity. Flow cytometry data was analyzed in FlowJo version 10. Bacteria were gated on FSC and SSC.
 
-## Complement activation product ELISAs
+### Complement activation product ELISAs
 
 Serum supernatants were diluted (as specified in figure legends) in PBS + 0.05% Tween (PBS-T) supplemented with 1% bovine serum albumin (BSA). Next, sample dilutions were analyzed for the presence of complement activation products C3a, C5a, sMAC, and C5b6 via enzyme-linked immunosorbent assays (ELISAs) on Nunc Maxisorp ELISA plates. For C5a, a sandwich-ELISA kit was used (R&D Systems, DY2037), which includes two mouse monoclonal C5a antibodies that specifically detect C5a and not native C5.
 
@@ -131,46 +312,46 @@ For C3a, sMAC, and C5b6, plates were coated overnight at 4°C with 1 µg/ml of c
 
 At each step for all ELISAs, 50 µl was added per well, antibodies were diluted in PBS-T + 1% BSA and incubation was done for 60 min at RT (except for coating). In between steps, wells were washed three times with PBS-T in between each step. Quantification of C3a, C5a, C5b6, and sMAC was accomplished by interpolation with a standard curve of purified C3a-desarginine, C5a (Bachem), C5b6, and sMAC/SC5b-9 (Complement Technology).
 
-## C5b Western blots
+### C5b Western blots
 
 Bacterial supernatants were collected as described above and the cell pellets were also collected. Samples were diluted 1:1 in ×2 reducing SDS sample buffer (0.1 M Tris [pH 6.8], 39% glycerol, 0.6% SDS, and bromophenol blue) supplemented with 50 mg/ml dithiothreitol (DTT) and incubated at 95°C for 5 min. Samples were run on a 4–12% Bis-Tris gradient gel (Invitrogen) for 60 min at 200 V. Proteins were next transferred with the Trans-Blot Turbo Transfer system (Bio-Rad) to 0.2 µM PVDF membranes (Bio-Rad). Initially, samples were blocked with PBS supplemented with 0.1% Tween-20 (PBS-T) and 4% dried skim milk (ELK, Campina) for 60 min at 37°C. Primary staining was performed with a 1:500 dilution (~80 µg/ml) of polyclonal goat-anti human C5 (Complement Technology) in PBS-T supplemented with 1% ELK for 60 min at 37°C. Secondary staining was performed with a 1:10,000 dilution of HRP-conjugated pooled donkey antisera against goat IgG (H+L) (Southern Biotech) in PBS-T supplemented with 1% ELK for 60 min at 37°C. In between all steps and after the final staining, membranes were washed three times with PBS-T. Finally, membranes were developed with Pierce ECL Western Blotting Substrate (Thermo Fisher Scientific) for 1 min at RT and imaged on the LAS4000 Imagequant (GE Healthcare).
 
-## Bystander lysis assay
+### Bystander lysis assay
 
 Human erythrocytes were collected from heparin-sulfate-treated human blood of healthy donors. Erythrocytes were washed at 1000 rcf for 5 min three times with PBS. The packed erythrocyte pellet was resuspended in Veronal buffered saline (2 mM Veronal, 145 mM NaCl, pH = 7.4) supplemented with 0.1% BSA and 2.5 mM MgCl2 (VBS+) and diluted to 1% (~1 × 108 erythrocytes/ml). Erythrocytes (1×108 erythrocytes/ml) were next incubated with convertase-labelled bacteria (5×108 bacteria/ml) and 100 nM C5-C8, 300 nM C9, 50 nM FB, and 20 nM FD (unless specified otherwise in figure legends) for 60 min at 37°C. Supernatant of the reaction was collected by centrifugation (1250 rcf for 5 min) and the supernatant was next diluted 1:3 in MilliQ (MQ). Hemoglobulin release was measured by measuring the absorbance at OD405 nm. The percentage of lysed erythrocytes was calculated by setting a buffer-only control at 0% lysis and an MQ control at 100% lysis. Blocking of C5 conversion in serum was done with 15 µg/ml OmCI.
 
-## Polymeric-C9 detection by SDS-PAGE
+### Polymeric-C9 detection by SDS-PAGE
 
 Reaction supernatants were resuspended and diluted 1:1 in ×2 SDS sample buffer supplemented with 50 mg/ml DTT and incubated at 95°C for 5 min. Samples were run on a 4–12% Bis-Tris gradient gel (Invitrogen) for 75 min at 200 V. Gels were imaged for 10 min with increments of 30 s on the LAS4000 Imagequant (GE Healthcare) for in-gel Cy5 fluorescence. Monomeric-C9 (mono-C9) and polymeric-C9 (poly-C9) were distinguished by size, since mono-C9 runs at 63 kDa and poly-C9 is retained in the comb of the gel.
 
-## HisTrap isolation of sMAC with His-tagged C6
+### HisTrap isolation of sMAC with His-tagged C6
 
 E. coli bacteria (5×108 bacteria/ml) were incubated in 10% C6-depleted serum supplemented with 50 nM His-tagged C6 in a total volume of 1 ml for 60 min at 37°C. Serum supernatant was collected as described above and incubated with a pellet of 900 μl Dynabeads His-Tag Isolation & Pulldown (Invitrogen) equilibrated in wash buffer (50 mM Tris, 300 mM NaCl, 10 mM imidazole, pH 7.8) on a tube rotator for 90 min at 4°C. Beads were separated using a magnet to collect the bead supernatant. Beads were washed three times in wash buffer and next His-tagged proteins were eluted with elution buffer (50 mM Tris, 300 mM NaCl, 300 mM imidazole, pH 7.8) on a tube rotator for 30 min at 4°C. Beads were separated using a magnet to collect the eluate. The eluate was finally filtered through a 0.22 µm filter and concentrated in a 100 kDa Amicon tube. sMAC was next separated from free leftover proteins by SEC on a Superose 6 Increase column with PBS. Fifty μl fractions were collected and used for subsequent analyses.
 
-## BN-PAGE and Western blot
+### BN-PAGE and Western blot
 
 Samples were diluted 1:1 in ×2 NativePAGE sample buffer (Invitrogen). SDS-PAGE samples were run on a 4–12% Bis-Tris gradient gel (Invitrogen) for 75 min at 200 V. Samples were run on a NativePAGE 3–12% Bis-Tris gradient gel (Invitrogen) for 3 hr at 150 V, after which the gel was destained overnight with demineralized water. Proteins were transferred to 0.2 µM PVDF membranes with the Trans-Blot Turbo Transfer system (Bio-Rad). Membranes were blocked in PBS/0.1% Tween (PBS-T) with 4% ELK (Campina) for 45 min at 37°C. Primary detection antibodies (polyclonal goat anti-human C9 from Complement Technology) were diluted 1:500 in PBS-T/1% ELK and incubated for 45 min at 37°C. Secondary detection antibody (HRP-conjugated donkey anti-goat IgG from Southern Biotech) was diluted 1:10,000 in PBS-T/1% ELK and incubated for 45 min at 4°C. In between each step, membranes were washed three times with PBS-T. The staining was developed with Pierce ECL Western Blotting Substrate (Thermo Fisher Scientific) for 1 min at RT. Images were made using the LAS4000 Imagequant (GE Healthcare).
 
-## SEC of activated and nonactivated serum samples
+### SEC of activated and nonactivated serum samples
 
 Two-hundred µl S. aureus Wood46 (1.5×109 bacteria/ml) in PBS was pelleted and resuspended in 250 µl serum for 3 hr at 37°C while shaking. Bacteria were spun down at 11,000 rcf rpm for 3 min. The supernatant was collected and the centrifugation step repeated to remove remaining bacteria. The supernatant was then kept on ice and filtered through a 0.22 µm filter. SEC separation of serum samples was done using an Agilent 1290 Infinity HPLC system (Agilent Technologies) consisting of a vacuum degasser, refrigerated autosampler with a 100 µl injector loop, binary pump, thermostated two-column compartment, auto collection fraction module, and multi-wavelength detector. The dual-column set-up, comprising a tandem Yarra 4000-Yarra 3000 (SEC-4000, 300×7.8 mm ID, 3 µm, 500 Å; SEC-3000, 300×7.8 mm ID, 3 µm, 290 Å) two-stage set-up. Both columns were purchased from Phenomenex. The columns were cooled to 17°C while the other bays were chilled to 4°C to minimize sample degradation. The mobile phase buffer consisted of 150 mM ammonium acetate in water and filtered using a 0.22 µm disposable membrane cartridge (Millipore) before use. Approximately 1.25 mg of serum protein (activated and nonactivated fresh serum) was injected per run. The proteins were eluted using isocratic flow within 60 min, and the flow rate was set to 500 µl/min. In total, 74 fractions were collected within a 20–42 time window using an automated fraction collector. The chromatograms were monitored at 280 nm.
 
-## Trypsin digestion of SEC fractions
+### Trypsin digestion of SEC fractions
 
 We used bottom-up LC-MS/MS analysis to determine SEC elution profile serum proteins, isolated sMAC, and commercial sMAC. The fractions were introduced into the digestion buffer containing 100 mM Tris-HCl (pH 8.5), 1% w/v sodium deoxycholate (SDC), 5 mM Tris (2-carboxyethyl) phosphine hydrochloride, and 30 mM chloroacetamide. Proteins were digested overnight with trypsin at an enzyme-to-protein ratio of 1:100 (w/w) at 37°C. After, the SDC was precipitated by bringing the sample to 1% trifluoroacetic acid. The supernatant was collected for subsequent desalting by an Oasis µElution HLB 96-well plate (Waters) positioned on a vacuum manifold. The desalted proteolytic digest was dried with a SpeedVac apparatus and stored at –20°C. Prior to LC-MS/MS analysis, the sample was reconstituted in 2% formic acid (FA).
 
-## LC-MS/MS analysis of isolated sMAC SEC fractions
+### LC-MS/MS analysis of isolated sMAC SEC fractions
 
 The digested SEC fractions of isolated and commercial sMAC were analyzed using an Ultimate 3000 system (Thermo Fisher Scientific) coupled online to an Orbitrap Fusion (Thermo Fisher Scientific) controlled by Thermo Scientific Xcalibur software. First, peptides were trapped using a 0.3×5 mm PepMap-100 C18 pre-column (Thermo Fisher Scientific) of 5 µm particle size and 100 Å pore size prior to separation on an analytical column (50 cm of length, 75 µm inner diameter; packed in-house with Poroshell 120 EC-C18, 2.7 µm). Trapping of peptides was performed for 1 min in 9% solvent A (0.1% FA) at a flow rate of 0.03 ml/min. The peptides were subsequently separated by a 55 min gradient as follows: 9–13% solvent B (80% acetonitrile/0.1% FA) in 1 min, 13–44% B in 37 min, 44–99% B in 3 min, 99% B for 4 min, 99–9% B in 1 min, and finally 9% B for 8 min. The flow was 300 nl/min. The mass spectrometer was operated in a data-dependent mode. Full-scan MS spectra from 375 to 1600 Th were acquired in the Orbitrap at a resolution of 60,000 with standard automatic gain control (AGC) target and auto maximum injection time. Cycle time for MS2 fragmentation scans was set to 1 s. Only peptides with charge states 1–6 were fragmented, and dynamic exclusion properties were set to n=1, for a duration of 10 s. Fragmentation was performed using HCD collision energy of 28% in the ion trap and acquired in the Orbitrap at a resolution of 15,000 and standard AGC target with an isolation window of 1.4 Th and maximum injection time mode set to auto.
 
-## LC-MS/MS analysis of SEC serum fractions
+### LC-MS/MS analysis of SEC serum fractions
 
 The 74 digested SEC fractions of activated or nonactivated serum were analyzed by LC-MS/MS. Separation of digested protein samples was performed on an Agilent 1290 Infinity HPLC system (Agilent Technologies). Samples were loaded on a 100 µm×20 mm trap column (in-house packed with ReproSil Pur C18-AQ, 3 µm) (Dr Maisch GmbH, Ammerbuch-Entringen, Germany) coupled to a 50 µm×500 mm analytical column (in-house packed with Poroshell 120 EC-C18, 2.7 µm) (Agilent Technologies, Amstelveen). Ten µL of digest from each SEC fraction was used and the amount ~0.1 µg of peptides was loaded on the LC column. The LC-MS/MS run time was set to 60 min with a 300 nL/min flow rate. Mobile phases A (water/0.1% FA) and B (80% acetronitrile/0.1% FA) were used for 66 min gradient elution: 13–44% B for 35 min and 44–100% B over 8 min. Samples were analyzed on a Thermo Fisher Scientific Q Exactive HF quadrupole-Orbitrap instrument (Thermo Fisher Scientific). Nano-electrospray ionization was achieved using a coated fused silica emitter (New Objective) biased to 2 kV. The mass spectrometer was operated in positive ion mode, and the spectra were acquired in the data-dependent acquisition mode. Full MS scans were acquired with 60,000 resolution (at 200 m/z) and at a scan mass range of 375–1600 m/z. The AGC target was set to 3×106 with a maximum injection time of 20 ms. Data-dependent MS/MS (dd-MS/MS) scan was acquired at 30,000 resolution (at 200 m/z) and with a mass range of 200–2000 m/z. AGC target was set to 1×105 with a maximum injection time defined at 50 ms. One µscan was acquired in both full MS and dd-MS/MS scans. The data-dependent method was set to isolation and fragmentation of the 12 most intense peaks defined in a full MS scan. Parameters for isolation/fragmentation of selected ion peaks were set as follows: isolation width = 1.4 Th, HCD normalized collision energy (NCE)=27%.
 
-## LC-MS/MS data analysis
+### LC-MS/MS data analysis
 
 The LC-MS/MS data were searched against UniProtKB/Swiss-Prot human proteome sequence database with MaxQuant software (version 1.5.3.30 or 2.0.3.0). For label-free quantification, iBAQ values were selected as output. For profiling of sMAC components in serum, each fraction’s iBAQ values were extracted and normalized to the highest intensity.
 
-## Data analysis and statistical testing
+### Data analysis and statistical testing
 
 Unless stated otherwise, graphs are comprised of at least three biological replicates. Statistical analyses were performed in GraphPad Prism 8 and are further specified in the figure legends.

@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04k9dce70 Department of Neurology, Shuang Ho Hospital, Taipei Medical University-Shuang Ho Hospital New Taipei City Taiwan
-2. https://ror.org/04k9dce70 Department of Neurology, School of Medicine, College of Medicine Taipei Medical University-Shuang Ho Hospital Taipei Taiwan
-3. https://ror.org/05031qk94 Taipei Neuroscience Institute, Taipei Medical University Taipei Taiwan
-4. https://ror.org/02jx3x895 Division of Psychiatry, University College London London United Kingdom
+1. Department of Neurology, Shuang Ho Hospital, Taipei Medical University-Shuang Ho Hospital New Taipei City Taiwan ([ROR:04k9dce70](https://ror.org/04k9dce70))
+2. Department of Neurology, School of Medicine, College of Medicine Taipei Medical University-Shuang Ho Hospital Taipei Taiwan ([ROR:04k9dce70](https://ror.org/04k9dce70))
+3. Taipei Neuroscience Institute, Taipei Medical University Taipei Taiwan ([ROR:05031qk94](https://ror.org/05031qk94))
+4. Division of Psychiatry, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -34,11 +34,147 @@ The levels of synaptic proteins in blood exosomes, a specific type of EV, decrea
 
 The participants’ demographic data at baseline and 1-year follow-up are presented in Table 1. In total, 144 participants (101 PwP and 43 HCs, all of them are Taiwanese) were followed up. No significant difference was noted in plasma EV SNAP-25, GAP-43, and synaptotagmin-1 levels at baseline and follow-up between PwP and HCs after adjustment for age and sex (Figure 1A [representative image] and Figure 1B–D [dot plot]).
 
+**Table 1.**
+ Demographic data of study participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HCs (n = 43)</th>
+      <th>PwP (n = 101)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (y)</td>
+      <td>65 (10.24)</td>
+      <td>69 (7.76)</td>
+    </tr>
+    <tr>
+      <td>Women</td>
+      <td>15</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Baseline</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MMSE</td>
+      <td>27 (3.92)</td>
+      <td>26 (4.15)</td>
+    </tr>
+    <tr>
+      <td>MoCA</td>
+      <td>23 (4.63)</td>
+      <td>21 (5.70)</td>
+    </tr>
+    <tr>
+      <td>Disease duration (y)</td>
+      <td>-</td>
+      <td>2 (2.24)</td>
+    </tr>
+    <tr>
+      <td>UPDRS-II</td>
+      <td>-</td>
+      <td>8 (5.58)</td>
+    </tr>
+    <tr>
+      <td>UPDRS-III</td>
+      <td>-</td>
+      <td>22 (9.30)</td>
+    </tr>
+    <tr>
+      <td>1-year follow-up</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MMSE</td>
+      <td>28 (4.12)</td>
+      <td>27 (5.61)</td>
+    </tr>
+    <tr>
+      <td>MoCA</td>
+      <td>24 (5.82)</td>
+      <td>23 (6.45)</td>
+    </tr>
+    <tr>
+      <td>UPDRS-II</td>
+      <td>-</td>
+      <td>11 (6.41)</td>
+    </tr>
+    <tr>
+      <td>UPDRS-III</td>
+      <td>-</td>
+      <td>19 (9.39)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data is presented as median (standard deviation).HC = healthy control; PwP = people with Parkinson’s disease; MMSE = Mini-Mental State Examination; MoCA = Montreal Cognitive Assessment; UPDRS = Unified Parkinson’s Disease Rating Scale._
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/87501/elife-87501-fig1-v1.jpg)
 
-**Figure 1.:** (A) Representative protein blot images of different synaptic proteins, including SNAP-25, GAP-43, and synaptotagmin-1. Heat shock protein 70 (HSP-70) was the protein loading control. (B–D) Comparison of plasma SNAP-25, GAP-43, and synaptotagmin-1 levels between PwP and HCs at baseline and follow-up. Data are presented using a dot plot displaying the median and first and third quartile values. n.s., nonsignificant.Figure 1—source data 1.A), synaptotagmin-1 (B), SNAP-25 (C), and HSP-70 (D).
+**Figure 1.:** (A) Representative protein blot images of different synaptic proteins, including SNAP-25, GAP-43, and synaptotagmin-1. Heat shock protein 70 (HSP-70) was the protein loading control. (B–D) Comparison of plasma SNAP-25, GAP-43, and synaptotagmin-1 levels between PwP and HCs at baseline and follow-up. Data are presented using a dot plot displaying the median and first and third quartile values. n.s., nonsignificant.
 
 The association between changes in plasma EV synaptic protein levels and clinical parameters in PwP was assessed through a generalized linear model (Table 2). The changes in the total score of Unified Parkinson’s Disease Rating Scale (UPDRS)-II was positively associated with the change in plasma EV synaptic proteins (SNAP-25, GAP-43, and synaptotagmin-1). The changes in total score of UPDRS-III and akinetic rigidity (AR) subscore were significantly associated with the changes in plasma EV GAP-43 and synaptotagmin-1. The changes in Mini-Mental Status Examination (MMSE) and Montreal Cognitive Assessment (MoCA) scores were nonsignificantly associated with the changes in plasma EV synaptic protein levels.
+
+**Table 2.**
+ The association between the change in plasma EV synaptic protein abundance (between baseline and follow-up) with the change in clinical severity in motor and cognitive domains (between baseline and follow-up) in people with Parkinson’s disease.A generalized linear model was employed, and the data is presented as coefficient (p-value).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>UPDRS-II</th>
+      <th>UPDRS-III</th>
+      <th>Tremor</th>
+      <th>AR</th>
+      <th>PIGD</th>
+      <th>MMSE</th>
+      <th>MoCA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SNAP-25 * follow-up</td>
+      <td>0.218 (0.049)</td>
+      <td>0.312 (0.076)</td>
+      <td>0.004 (0.432)</td>
+      <td>0.016 (0.066)</td>
+      <td>0.009 (0.440)</td>
+      <td>–0.007 (0.932)</td>
+      <td>0.048 (0.647)</td>
+    </tr>
+    <tr>
+      <td>GAP-43 * follow-up</td>
+      <td>0.984 (0.031)</td>
+      <td>1.711 (0.018)</td>
+      <td>0.001 (0.972)</td>
+      <td>0.089 (0.011)</td>
+      <td>0.073 (0.115)</td>
+      <td>–0.099 (0.767)</td>
+      <td>–0.054 (0.901)</td>
+    </tr>
+    <tr>
+      <td>Synaptomagtin-1 * follow-up</td>
+      <td>1.543 (0.012)</td>
+      <td>2.205 (0.024)</td>
+      <td>0.007 (0.815)</td>
+      <td>0.107 (0.023)</td>
+      <td>0.109 (0.080)</td>
+      <td>–0.361 (0.421)</td>
+      <td>–0.260 (0.661)</td>
+    </tr>
+  </tbody>
+</table>
+
+_UPDRS = Unified Parkinson's Disease Rating Scale; AR = akinetic rigidity; PIGD = postural instability and gait disturbance; MMSE = Mini-Mental Status Examination; MoCA = Montreal Cognitive Assessment._
 
 The association between the severity of clinical parameters of PD at follow-up and baseline plasma EV synaptic protein levels was further evaluated. After adjustment for age, sex, and disease duration, the plasma EV SNAP-25, GAP-43, and synaptotagmin-1 levels were nonsignificantly associated with the UPDRS-II, UPDRS-III, MMSE, and MoCA scores at follow-up (Figure 2; for details, refer to Supplementary file 1). However, when UPDRS-III scores were divided into tremor, AR, and postural instability and gait disturbance (PIGD) subscores, the initial levels of plasma EV SNAP-25 and GAP-43 showed a significant positive correlation with PIGD subscores at follow-up. Additionally, a similar trend was observed with the plasma EV synaptotagmin-1 level.
 
@@ -51,6 +187,207 @@ Participants with PD were grouped based on their baseline plasma EV synaptic pro
 ![Figure 3.](https://cdn.elifesciences.org/articles/87501/elife-87501-fig3-v1.jpg)
 
 **Figure 3.:** (A) and postural instability and gait disturbance (PIGD) subscores (B) after adjustment for age, sex, and disease duration in patients with Parkinson’s disease (PwP) with (n=36) and without (n=66) elevated levels of any one plasma extracellular vesicle synaptic protein (first quartile) at baseline and follow-up. Data are presented as means with 95% confidence intervals. n.s., nonsignificant.
+
+**Table 3.**
+ The clinical severity in people with Parkinson’s disease with and without elevated (first quartile) baseline plasma extracellular vesicle (EV) synaptosome-associated protein 25 (SNAP-25), growth-associated protein 43 (GAP-43), and synaptotagmin-1.p-Value indicates the inter-group comparisons for the changes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasma EV</th>
+      <th></th>
+      <th colspan="4">SNAP-25</th>
+      <th colspan="3">GAP-43</th>
+      <th colspan="3">Synaptotagmin-1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>L (n = 74)</td>
+      <td>H (n = 28)</td>
+      <td>p</td>
+      <td>L (n = 74)</td>
+      <td>H (n = 28)</td>
+      <td>p</td>
+      <td colspan="2">L (n = 74)</td>
+      <td>H (n = 28)</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UPDRS-II</td>
+      <td>Baseline</td>
+      <td>8.26 ± 5.80</td>
+      <td>9.04 ± 4.90</td>
+      <td rowspan="2">&lt;0.001</td>
+      <td>8.53 ± 5.67</td>
+      <td>8.32 ± 5.33</td>
+      <td rowspan="2">&lt;0.001</td>
+      <td colspan="2">8.46 ± 5.70</td>
+      <td>8.50 ± 5.24</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Follow-up</td>
+      <td>10.38 ± 6.11</td>
+      <td>13.36 ± 6.72</td>
+      <td>10.65 ± 6.30</td>
+      <td>12.64 ± 6.53</td>
+      <td colspan="2">10.57 ± 6.25</td>
+      <td>12.86 ± 6.58</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UPDRS-III</td>
+      <td>Baseline</td>
+      <td>22.31 ± 9.54</td>
+      <td>23.89 ± 8.65</td>
+      <td rowspan="2">0.259</td>
+      <td>22.22 ± 9.66</td>
+      <td>24.14 ± 8.25</td>
+      <td rowspan="2">0.244</td>
+      <td colspan="2">21.97 ± 9.37</td>
+      <td>24.79 ± 8.93</td>
+      <td rowspan="2">0.145</td>
+    </tr>
+    <tr>
+      <td>Follow-up</td>
+      <td>20.01 ± 9.33</td>
+      <td>24.21 ± 8.87</td>
+      <td>19.96 ± 9.25</td>
+      <td>24.36 ± 8.99</td>
+      <td colspan="2">20.04 ± 9.39</td>
+      <td>24.14 ± 8.70</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Tremor</td>
+      <td>Baseline</td>
+      <td>0.34 ± 0.46</td>
+      <td>0.46 ± 0.38</td>
+      <td rowspan="2">0.037</td>
+      <td>0.34 ± 0.34</td>
+      <td>0.46 ± 0.37</td>
+      <td rowspan="2">0.034</td>
+      <td colspan="2">0.33 ± 0.34</td>
+      <td>0.47 ± 0.38</td>
+      <td rowspan="2">0.014</td>
+    </tr>
+    <tr>
+      <td>Follow-up</td>
+      <td>0.27 ± 0.26</td>
+      <td>0.35 ± 0.32</td>
+      <td>0.27 ± 0.26</td>
+      <td>0.35 ± 0.32</td>
+      <td colspan="2">0.28 ± 0.29</td>
+      <td>0.32 ± 0.22</td>
+    </tr>
+    <tr>
+      <td rowspan="2">AR</td>
+      <td>Baseline</td>
+      <td>1.04 ± 0.46</td>
+      <td>1.09 ± 0.44</td>
+      <td rowspan="2">0.300</td>
+      <td>1.03 ± 0.47</td>
+      <td>1.11 ± 0.42</td>
+      <td rowspan="2">0.325</td>
+      <td colspan="2">1.03 ± 0.46</td>
+      <td>1.13 ± 0.45</td>
+      <td rowspan="2">0.195</td>
+    </tr>
+    <tr>
+      <td>Follow-up</td>
+      <td>0.96 ± 0.46</td>
+      <td>1.10 ± 0.42</td>
+      <td>0.95 ± 0.45</td>
+      <td>1.12 ± 0.43</td>
+      <td colspan="2">0.96 ± 0.46</td>
+      <td>1.10 ± 0.42</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PIGD</td>
+      <td>Baseline</td>
+      <td>0.76 ± 0.61</td>
+      <td>0.81 ± 0.44</td>
+      <td rowspan="2">0.023</td>
+      <td>0.77 ± 0.60</td>
+      <td>0.77 ± 0.45</td>
+      <td rowspan="2">0.046</td>
+      <td colspan="2">0.74 ± 0.56</td>
+      <td>0.86 ± 0.58</td>
+      <td rowspan="2">0.027</td>
+    </tr>
+    <tr>
+      <td>Follow-up</td>
+      <td>0.74 ± 0.59</td>
+      <td>1.07 ± 0.75</td>
+      <td>0.78 ± 0.61</td>
+      <td>0.98 ± 0.74</td>
+      <td colspan="2">0.73 ± 0.56</td>
+      <td>1.11 ± 0.80</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MMSE</td>
+      <td>Baseline</td>
+      <td>25.32 ± 4.45</td>
+      <td>25.29 ± 3.29</td>
+      <td rowspan="2">0.483</td>
+      <td>25.58 ± 4.16</td>
+      <td>24.61 ± 4.11</td>
+      <td rowspan="2">0.470</td>
+      <td colspan="2">25.62 ± 3.91</td>
+      <td>24.50 ± 4.69</td>
+      <td rowspan="2">0.342</td>
+    </tr>
+    <tr>
+      <td>Follow-up</td>
+      <td>24.78 ± 5.93</td>
+      <td>25.14 ± 4.64</td>
+      <td>25.05 ± 5.79</td>
+      <td>24.43 ± 5.10</td>
+      <td colspan="2">25.23 ± 5.61</td>
+      <td>23.96 ± 5.50</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MoCA</td>
+      <td>Baseline</td>
+      <td>20.68 ± 6.00</td>
+      <td>21.21 ± 5.00</td>
+      <td rowspan="2">0.834</td>
+      <td>21.14 ± 5.77</td>
+      <td>20.04 ± 5.62</td>
+      <td rowspan="2">0.899</td>
+      <td colspan="2">21.12 ± 5.33</td>
+      <td>20.07 ± 6.69</td>
+      <td rowspan="2">0.926</td>
+    </tr>
+    <tr>
+      <td>Follow-up</td>
+      <td>20.60 ± 6.85</td>
+      <td>21.46 ± 5.37</td>
+      <td>21.10 ± 6.55</td>
+      <td>20.18 ± 6.30</td>
+      <td colspan="2">21.19 ± 6.33</td>
+      <td>19.93 ± 6.80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_L = second to fourth quartile at baseline; H = first quartile at baseline; UPDRS = Unified Parkinson’s Disease Rating Scale; AR = akinetic rigidity; PIGD = postural instability and gait disturbance; MMSE = Mini-Mental Status Examination; MoCA = Montreal Cognitive Assessment._
 
 ## Discussion
 
@@ -66,22 +403,22 @@ In conclusion, the changes in the levels of plasma EV synaptic proteins, namely 
 
 ## Methods
 
-## Study participants
+### Study participants
 
 A total of 101 PwP and 43 HCs were enrolled. PD was diagnosed in accordance with the criteria used in another study (Hughes et al., 1992). Patients diagnosed as having early-to-mid-stage PD (Hoehn and Yahr stages I–III) were invited to participate in this study. HCs were excluded if they had comorbidities, such as neurodegenerative, psychiatric, or major systemic diseases (malignant neoplasm or chronic kidney disease). HCs were mainly recruited from neurological outpatient clinics; they had minor chronic health conditions, such as hypertension, diabetes, or hyperlipidemia. The research protocol was approved by the Joint Institutional Review Board of Taipei Medical University (approval nos. N201609017 and N201801043).
 
-## Clinical assessments
+### Clinical assessments
 
 The participants’ background data were obtained through a personal interview. Their cognitive function was assessed by trained nurses using the Taiwanese versions of the MMSE and MoCA. The severity of PD was assessed using parts I–III of the UPDRS during clinic visits. PwP were assumed to be in their ‘on’ time. Tremor, AR, and PIGD subscores were calculated from the subitems in UPDRS-III as described previously (Lewis et al., 2005), with some modifications.
 
-## Plasma EV isolation and characterization
+### Plasma EV isolation and characterization
 
 Venous blood was collected by from PwP and HCs after their outpatient clinic (non-fasting) by 21-gauge needle, and the plasma was isolated through centrifugation at 13,000 × g for 20 min immediately. Plasma was stored in the −80°C freezer before EV isolation. Plasma EVs were isolated from 1 mL of plasma using exoEasy Maxi Kit (QIAGEN, Valencia, CA) in accordance with the manufacturer’s instructions and stored in the −80°C freezer. It was a membrane-based affinity binding step to isolate exosomes and other EVs without relying on a particular epitope. The isolated plasma EVs were then eluted and stored. Usually, 400 μL of eluate is obtained per mL of plasma. The isolated plasma EVs underwent validation in accordance with the guidelines of the International Society of Extracellular Vesicles. This validation process encompassed several steps. First, the presence of markers was confirmed, including CD63 (ab59479, Abcam, Cambridge, UK), CD9 (ab92726, Abcam), and tumor susceptibility gene 101 protein (GTX118736, GeneTex, CA), along with the absence of cytochrome c (ab110325; Abcam). Second, physical characterization was performed using nanoparticle tracking analysis. This analysis revealed that the majority of EVs were primarily within the 50–100 nm size range. Third, the morphology of the EVs was examined through electron microscopy analysis. The validation had been described previously (Chung et al., 2020d; Chung et al., 2020a; Chung et al., 2021a).
 
-## Quantification of plasma EV synaptic proteins
+### Quantification of plasma EV synaptic proteins
 
 The isolated plasma EVs were directly lysed using protein sample buffer (RIPA Lysis Buffer, Millipore) and analyzed using protein sodium dodecyl sulfate–polyacrylamide gel electrophoresis. Antibodies against SNAP-25 (GeneTex, GTX113839, 1:1000), GAP-43 (GeneTex, GTX114124, 1:5000), and synaptotagmin-1 (GeneTex, GTX127934, 1:1000) were used for the analysis. The antibodies were prepared in Tris-buffered saline containing 0.1% Tween 20 and 5% bovine serum albumin. Secondary antibodies, including antimouse immunoglobulin G (IgG)-conjugated horseradish peroxidase (HRP; 115-035-003) and antirabbit IgG-conjugated HRP (111-035-003), were purchased from Jackson ImmunoResearch. Protein blot intensities were quantified using ImageJ software. The expression levels of plasma EV synaptic proteins were normalized to that of heat shock protein 70 (Proteintech, Cat# 10995-1-AP, 1:2000). For each participant, equal volume of EV suspension (5 μL) was applied to the protein quantification. To ensure that the data could be compared between different gels, all the data were normalized to the average of the control group in the same gel.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using SPSS for Windows 10 (version 26; SPSS Inc, Chicago, IL). A linear mixed model was used to assess whether the changes in plasma EV synaptic protein levels differed between PwP and HCs after adjustment for age and sex. A generalized linear model was used to determine the association between the changes in plasma EV synaptic protein levels and the changes in clinical parameters in PwP after adjustment for age, sex, and disease duration. Multivariate logistic regression was performed to assess the association between plasma EV synaptic proteins and clinical parameters at follow-up in PwP after adjustment for age, sex, and disease duration. Repeated-measures analysis of covariance with estimated marginal means was employed to compare the changes in clinical parameters between baseline and follow-up in PwP with elevated baseline levels (first quartile) of any one plasma EV synaptic protein. Finally, p-values<0.05 were considered statistically significant.

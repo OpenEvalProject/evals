@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 National Institute for Biotechnology and Information, National Library of Medicine, National Institutes of Health Bethesda United States
+1. National Institute for Biotechnology and Information, National Library of Medicine, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
@@ -27,9 +27,31 @@ In this study, we used the most up-to-date set of TF ChIP-seq assays available f
 
 ## Results
 
-## HOT loci are one of the prevalent modes of TF-DNA interactions
+### HOT loci are one of the prevalent modes of TF-DNA interactions
 
 To define and analyze the HOT loci, we used the most up-to-date catalog of ChIP-seq datasets (n=1003) of TFs obtained from the ENCODE Project assayed in HepG2, K562, and H1-hESC (H1) cells (545, 411, and 47 ChIP-seq assays, respectively, see Methods for details). While the TFs are defined as sequence-specific DNA-binding proteins that control the transcription of genes, the currently available ChIP-seq datasets include the assays of many other types of transcription-related proteins such as cofactors, coactivators, histone acetyltransferases, as well as RNA Polymerase 2 variants. Therefore, we collectively call all of these proteins DNA-associated proteins (DAPs). Using the datasets of DAPs, we overlaid all of the ChIP-seq peaks and obtained the densities of DAP binding sites across the human genome using a non-overlapping sliding window of length 400 bp and considered a binding site to be present in a given window if 8 bp centered at the summit of a ChIP-seq peak as overlapping. Given that the analyzed three cell lines contain varying numbers of assayed DAPs, we binned the loci according to the number of overlapping DAPs in a logarithmic scale with 10 intervals and defined HOT loci as those that fall to the highest four bins, which translates to those which contain on average >18% of available DAPs for a given cell line (see Methods for a detailed description and justifications). This resulted in 25,928, 15,231, and 2732 HOT loci in HepG2, K562, and H1 cells, respectively. We applied our definition to the Roadmap Epigenomic ChIP-seq datasets and observed that the number of available ChIP-seq datasets significantly affects the resulting HOT loci. However, the HOT loci defined using the Roadmap Epigenomic datasets were almost entirely composed of subsets of the ENCODE-based HOT loci, comprising 50%, 62%, and 15% in HepG2, K562, and H1, respectively (Supplementary file 1, table S5). Importantly, we note that the distribution of the number of loci is not multimodal, but rather follows a uniform spectrum, and thus, this definition of HOT loci is ad hoc (Figure 1A, Figure 1—figure supplement 1). Therefore, in addition to the dichotomous classification of HOT and non-HOT loci, we use all of the DAP-bound loci to extract the correlations with studied metrics with the number of bound DAPs when necessary. Throughout the study, we used the loci from the HepG2 cell line as the primary dataset for analyses and used the K562 and H1 datasets when the comparative analysis was necessary.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig1-v1.jpg)
+
+**Figure 1.:** (A) Distribution of the number of loci by the number of overlapping peaks 400 bp loci. Loci are binned on a logarithmic scale (Table 1, Methods). The shaded region represents the HOT loci. (B) Prevalence of DNA-associated proteins (DAPs) in HOT loci. Each dot represents a DAP. X-axis: percentage of HOT loci in which DAP is present (e.g. MAX is present in 80% of HOT loci). Y-axis: percentage of total peaks of DAPs that are located in HOT loci (e.g. 45% of all the ChIP-seq peaks of MAX is located in the HOT loci). Dot color and size are proportional to the total number of ChIP-seq peaks of DAP. (C) Breakdown of HepG2 HOT loci to the promoter, intronic, and intergenic regions. (D) Fractions of HOT enhancer and promoter loci located in ATAC-seq. (E) Overlaps between the HOT enhancer, HOT promoter, super-enhancer, regular enhancer, H3K27ac, and H4K4me1 regions. Horizontal bars on bottom left represent the total number of loci of the corresponding class of loci. All of the visualized data is generated from the HepG2 cell line.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Loci are binned on a logarithmic scale (Table 1, see Methods).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Overlaps are calculated in terms of fractions of overlapping bps.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Bar plots depict median values, error bars are 95% confidence intervals. p-Values are Mann-Whitney U test results.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig1-figsupp6-v1.jpg)
 
 Although the HOT loci represent only 5% of all the DAP-bound loci in HepG2, they contain 51% of all mapped ChIP-seq peaks. The fraction of the ChIP-seq peaks of each DAP overlapping HOT loci varies from 0% to 91%, with an average of 65% (Figure 1B, y-axis). Among the DAPs that are present in the highest fraction of HOT loci are (Figure 1B, x-axis) SAP130, MAX, ARID4B, ZGPAT, HDAC1, MED1, TFAP4, and SOX6. The abundance of histone deacetylase-related factors mixed with transcriptional activators suggests that the regulatory functions of HOT loci are a complex interplay of activation and repression. RNA Polymerase 2 (POLR2) is present in 42% of HOT loci arguing for active transcription at or in the proximity of HOT loci (including mRNA and eRNA transcription). When the fraction of peaks of individual DAPs overlapping with the HOT loci are considered (Figure 1B, y-axis), DAPs with >90% overlap are GMEB2 (essential for replication of parvoviruses), ZHX3 (zinc finger transcriptional repressor), and YEATS2 (subunit of acetyltransferase complex). Whereas the DAPs that are least associated with HOT loci (<5%) are ZNF282 (transcriptional repressor), MAFK, EZH2 (histone methyltransferase), and TRIM22 (ubiquitin ligase). The fact that HOT loci harbor more than half of the ChIP-seq peaks suggests that the HOT loci are one of the prevalent modes of TF-DNA interactions rather than an exceptional case, as has been initially suggested by earlier studies (Teytelman et al., 2013; Wreczycka et al., 2019).
 
@@ -39,6 +61,26 @@ To further dissect the composition of HOT enhancer loci, we compared them to sup
 
 A 400 bp HOT locus, on average, harbors 125 DAP peaks in HepG2. However, the peaks of DAPs are not uniformly distributed across HOT loci. There are 68 DAPs with >80% of all of the peaks located in HOT loci (Figure 1B). To analyze the signatures of unique DAPs in HOT loci, we performed a PCA where each HOT locus is represented by a binary (presence/absence) vector of length equal to the total number of DAPs analyzed. This analysis showed that the principal component 1 (PC1) is correlated with the total number of distinct DAPs located at a given HOT locus (Figure 2—figure supplement 1A). PC2 separates the HOT promoters and HOT enhancers (Figure 2A, Figure 2—figure supplement 1B), and the PC1-PC2 combination also separates the p300-bound HOT loci (Figure 2B, Figure 2—figure supplement 1C). This indicates that the HOT promoters and HOT enhancers must have distinct signatures of DAPs. To test if such signatures exist, we clustered the DAPs according to the fractions of HOT promoter and HOT enhancer loci that they overlap with. This analysis showed that there is a large cluster of DAPs (n=458) which on average overlap with only 17% of HOT loci which are likely secondary to the HOT locus formation (Figure 2—figure supplement 2). We focused on the other, HOT-enriched, cluster of DAPs (n=87) which are present in 53% of HOT loci on average (Figure 2—figure supplement 2) and consist of four major clusters of DAPs (Figure 2D). Cluster I comprises four DAPs ZNF687, ARID4B, MAX, and SAP130 which are present in 75% of HOT loci on average. The three latter of these DAPs form a PPI interaction network (PPI enrichment p-value=0.001) (Figure 2—figure supplement 3A). We called this cluster of DAPs essential regulators given their widespread presence in both HOT enhancers and HOT promoters. Cluster II comprises 29 DAPs which are present in 47% of the HOT loci and are 1.7× more likely to overlap with HOT promoters than HOT enhancers. Among these DAPs are POLR2 subunits, PHF8, GABP1, GATAD1, TAF1, etc. The strongest associated GO molecular function term with the DAPs of this cluster is RNA Polymerase transcription factor initiation activity suggestive of their direct role in transcriptional activity (Figure 2—figure supplement 3B). Cluster III comprises 16 DAPs which are 1.9× more likely to be present in HOT enhancers than in HOT promoters. These are a wide variety of transcriptional regulators among which are those with high expression levels in liver NFIL3, NR2F6, and pioneer factors HNF4A, CEBPA, FOXA1, and FOXA2. The majority (13/16) of DAPs of this cluster form a PPI network (PPI enrichment p-value<10–16, Figure 2—figure supplement 3C). Among the strongest associated GO terms of biological processes are those related to cell differentiation (white fat cell differentiation, endocrine pancreas development, dopaminergic neuron differentiation, etc.) suggesting that cluster III HOT enhancers underlie cellular development. Cluster IV comprises 12 DAPs which are equally abundant in both HOT enhancers and HOT promoters (64% and 63%, respectively), which form a PPI network (PPI enrichment p-value<10–16, Figure 2—figure supplement 3D) with HDAC1 (histone deacetylase 1) being the node with the highest degree, suggesting that the DAPs of the cluster may be involved in chromatin-based transcriptional repression. Lastly, Cluster V comprises 26 DAPs of a wide range of transcriptional regulators, with a 1.3× skew toward the HOT enhancers. While this cluster contains prominent TFs such as TCF7L2, FOXA3, SOX6, FOSL2, etc., the variety of the pathways and interactions they partake in makes it difficult to ascertain the functional patterns from the constituent of DAPs alone. Although this clustering analysis reveals subsets of DAPs that are specific to either HOT enhancers or HOT promoters (Clusters II and III), it still does not explain what sorts of interplays take place between these recipes of HOT promoters and HOT enhancers, as well as with the other clusters of DAPs with equal abundance in both the HOT promoters and HOT enhancers.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig2-v1.jpg)
+
+**Figure 2.:** Each dot represents a HOT locus: (A) PC1 and PC2, marked promoters and enhancers. (B) PC1 and PC2, marked p300-bound HOT loci. (C) PC1 and PC4, marked CTCF-bound HOT loci. The dashed lines in A, B, C are logistic regression lines. auROC values are results of logistic regression. (D) DAPs hierarchically clustered by their involvement in HOT promoters and HOT enhancers. Heatmap colors indicate the % of HOT enhancers or promoters that a given DAP overlaps with. All of the visualized data is generated from the HepG2 cell line.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each dot represents a HOT locus: (A) PC1 and PC2 correlated with the number of overlapping DAPs. (B) PC2 and PC3, with promoter and enhancer marked. (C) PC1 and PC2, marked p300-bound HOT loci. (D) PC1 and PC4, marked Cohesin-bound HOT loci.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The top cluster comprises the DAPs which on average overlap with 13% of HOT loci. The DAPs which form the bottom cluster are present in 53% of HOT loci.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Names of the clusters are indicated as titles. Refer to the text for interpretations.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Distances to the nearest TSSs in HOT loci bound by CTCF and Cohesin. (B) Numbers of total DNA-associated proteins (DAPs) in HOT loci bound by CTCF and Cohesin.
+
 Notably, PC4 separates HOT loci associated with CTCF (Figure 2C) and Cohesin (Figure 2—figure supplement 1D). This clear separation of CTCF- and Cohesin-bound HOTs is surprising, given that only relatively small fractions of their peaks (21% and 38%, respectively) reside in HOT loci, and present in 36% of the HOT loci, compared to some other DAPs with much higher presence described above, that do not get separated clearly by the PCA. Furthermore, CTCF- and Cohesin-bound HOT enhancer loci are located significantly closer (p-value<10–100; Mann-Whitney U test) to the nearest genes (Figure 2—figure supplement 4A), making it more likely that those loci are proximal enhancers. And the total number of overlapping DAPs is significantly higher (p-value<10–100; Mann-Whitney U test) in CTCF- and Cohesin-bound loci compared to the rest of the HOT loci (Figure 2—figure supplement 4B), suggesting that at least a portion of the number of DAPs in HOT loci can be explained by 3D chromatin contacts between the genomic regions mediated by CTCF-Cohesin complex.
 
 To comprehensively quantify the 3D chromatin interactions involving the HOT loci, we used Hi-C data with 5 kb resolution (Lieberman-Aiden et al., 2009) (see Methods). First, we obtained statistically significant chromatin interactions using FitHiChIP tool (Bhattacharyya et al., 2019) (see Methods) and observed that HOT loci are enriched in chromatin interactions and 1.66× more likely to engage in chromatin interactions than the regular enhancers (p-value<10–20, Chi-square test). When all of the DAP-bound loci are considered, the number of chromatin interactions positively correlates with the number of bound DAPs (rho = 0.3, p-value<10–100, Spearman correlation). Next, we overlayed the chromatin interactions with the loci binned by the number of bound DAPs. We observed that the loci with high numbers of bound DAPs are more likely to engage in chromatin interactions with other loci harboring large numbers of DAPs, i.e., the HOT loci have the propensity to connect through long-range chromatin interactions with other HOT loci (Figure 3A). To further validate this observation, we obtained frequently interacting regions (FIREs) (Schmitt et al., 2016), and observed that the FIREs are 2.89× (p-value<10–230, Chi-square test) enriched HOT loci compared to the regular enhancers (see Methods). Moreover, 66% of HOT loci are located in TAD regions and 21% are located in chromatin loops. In particular, the HOT loci are 2.97× (p-value<10–230, Mann-Whitney U test) enriched in the chromatin loop anchor regions (11% of the HOT loci) compared to regular enhancers. To investigate further, we analyzed the loop anchor regions harboring HOT loci and observed that the number of multi-way contacts on loop anchors (i.e. loci that serve as anchors to multiple loops) correlates with the number of bound DAPs (rho = 0.84 p-value<10–4; Pearson correlation). The number of multi-way interactions in loop anchor regions varies between 1 and 6, with only one locus, in an extreme case, serving as an anchor for 6 overlapping loops on chromosome 2 (Figure 3B). Of the loop anchor regions with >3 overlapping loops, more than half contained at least one HOT locus, suggesting an interplay between chromatin loops and HOT loci (Figure 3B). Overall, 94% of HOT loci are located in regions with at least one chromatin interaction. This observation is consistent with previous reports that much of the long-range 3D chromatin contacts form through the interactions of large protein complexes (Quinodoz et al., 2018). While there is a correlation between the HOT loci and chromatin interactions, the causal relation between these two properties of genomic loci is not clear.
@@ -47,17 +89,43 @@ To comprehensively quantify the 3D chromatin interactions involving the HOT loci
 
 **Figure 3.:** (A) Densities of long-range Hi-C chromatin contacts between the DNA-associated protein (DAP)-bound loci. Each horizontal and vertical bin represents the loci with the number of bound DAPs between the edge values. The density values of each cell are normalized by the maximum value across all pairwise bins. Green boxes represent HOT loci. (B) Distribution of HOT loci in Hi-C contact regions. X-axis is the number of Hi-C contacts. Numbers in the top row indicate the total number of genomic loci engaging in the given number of Hi-C contacts. Bars indicate the % of Hi-C loci that contain at least one HOT locus. (C) Distribution of the number of HOT loci in regions with a given number of Hi-C contacts. X-axis is the same as B. All of the visualized data is generated from the HepG2 cell line.
 
-## A set of DAPs stabilizes the interactions of DAPs at HOT loci
+### A set of DAPs stabilizes the interactions of DAPs at HOT loci
 
 Next, we sought to analyze the patterns of ChIP-seq signal values at HOT loci, as a metric for overall DAP occupancy at genomic loci. We observed that the overall signals of DAPs correlate with the total number of colocalizing DAPs (Figure 4A, rho = 0.97, p-value<10–10; Spearman correlation). Moreover, even when calculated DAP-wise, the average of the overall signal strength of every DAP correlates with the fraction of HOT loci that the given DAP overlaps with (rho = 0.6, p-value<10–29; Spearman correlation, Figure 4B), meaning that the overall average value of the signal intensity of a given DAP is largely driven by the ChIP-seq peaks which are located in HOT loci.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig4-v1.jpg)
+
+**Figure 4.:** (A) Distribution of the signal values of the ChIP-seq peaks by the number of bound DNA-associated proteins (DAPs). The shaded region represents the HOT loci. (B, C) DAPs sorted by the ratio of ChIP-seq signal strength of the peaks located in HOT loci and non-HOT loci. 20 most HOT-specific (red bars) and 20 most non-HOT-specific (blue bars) DAPs are depicted. (B) Fold-change (log2) of the HOT and non-HOT loci ChIP-seq signals. (C) Distribution of the average ChIP-seq signal in the loci binned by the number of bound DAPs. Rows represent the loci with the bound DAPs indicated by the values of the edges (y-axis). Green box regions demarcate the HOT regions. (D) Signal values of sequence-specific DAPs (ssDAPs), non-sequence-specific DAPs (nssDAPs) (see the text for description), H3K27ac, CTCF, P300 peaks in HOT promoters and enhancers. All of the visualized data is generated from the HepG2 cell line.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The hierarchical clustering is done using the columns. That is, the leftmost outer group (in the green box) contains the DAPs in the presence of which most of the other DAPs yield highest ChIP-seq signal values.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig4-figsupp2-v1.jpg)
 
 While the overall average of the ChIP-seq signal intensity in HOT loci is greater when compared to the rest of the DAP-bound loci, individual DAPs demonstrate different levels of involvement in HOT loci. When sorted by the ratio of the signal intensities in HOT vs. non-HOT loci, among those with the highest HOT-affinities are GATAD1, MAX, NONO, as well as POLR2G and Mediator subunit MED1 (Figure 4B and C). Whereas those with the opposite affinity (i.e. those that have the strongest binding sites in non-HOT loci) are REST, RFX5, TP53, etc. (Figure 4B and C). By analyzing the signal strengths of DAPs jointly, we observed that a host of DAPs likely has a stabilizing effect on the binding of DAPs in that, when present, the signal strengths of the majority of DAPs are on average 1.9× greater (p-value<10–100, Mann-Whitney U test). These DAPs are CREB1, RFX1, ZNF687, RAD51, ZBTB40, and GPBP1L1 (Appendix 1 – Joint DAPs analysis, Figure 4—figure supplements 1 and 2).
 
 So far, we have treated the DAPs under a single category and did not make a distinction based on their known DNA-binding properties. Previous studies have discussed the idea that sequence-specific DAPs (ssDAPs) can serve as anchors, similar to the pioneer TFs, which could facilitate the formation of HOT loci (Ramaker et al., 2020; Partridge et al., 2020; Xie et al., 2013). We asked if ssDAPs yield greater signal strength values than non-sequence-specific DAPs (nssDAPs). To test this hypothesis, we classified the DAPs into those two categories using the definitions provided in the study (Lambert et al., 2018), where the TFs are classified by curation through extensive literature review and supported by annotations such as the presence of DNA-binding domains and validated binding motifs. Based on this classification, we categorized the ChIP-seq signal values into these two groups. While statistically significant (p-value<0.001, Mann-Whitney U test), the differences in the average signals of ssDAPs and nssDAPs in both HOT enhancers and HOT promoters are small (Figure 4D). Moreover, while the average signal values of ssDAPs in HOT enhancers are greater than that of the nssDAPs, in HOT promoters this relation is reversed. At the same time, the average signal strength of the DAPs is 3× greater than the average signal strength of H3K27ac peaks in HOT loci. Based on this, we concluded that the ChIP-seq signal intensities do not seem to be a function of the DNA-binding properties of the DAPs.
 
-## Sequence features that drive the accumulation of DAPs
+### Sequence features that drive the accumulation of DAPs
 
 We next analyzed the sequence features of the HOT loci. For this purpose, we first addressed the evolutionary conservation of the HOT loci using phastCons scores generated using an alignment of 46 vertebrate species (Siepel et al., 2005). The average conservation scores of the DAP-bound loci are in strong correlation with the number of bound DAPs (rho = 0.98, p-value<10–130; Spearman correlation), indicating that the negative selection exerted on HOT loci are proportional to the number of bound DAPs (Figure 5A). With 120 DAPs per locus on average, these HOT regions are 1.7× more conserved than the regular enhancers in HepG2 (Figure 5B). We observed a similar trend of conservation levels when the phastCons scores generated from primates and placental mammals and primates were considered, the HOT loci being 1.45× and 1.1× more conserved than the regular enhancers, respectively (Figure 5—figure supplement 1). In addition, we observed that the HOT loci of all three cell lines (HepG2, K562, and H1) overlap with 22 ultraconserved regions, among which are the promoter regions of 11 genes including SP5, SOX5, AUTS2, PBX1, ZFPM2, ARID1A, OLA1 and the enhancer regions of (within <50 kb of their TSS) 5S rRNA, MIR563, SOX21, etc. (full list in Supplementary file 1, table S4). Among them are those which have been linked to diseases and other phenotypes. For example, DNAJC1 (Michailidou et al., 2017) and OLA1 (which interacts with BRCA1) have been linked to breast cancer in cancer GWAS studies (Liu et al., 2020). Whereas AUTS2 (Biel et al., 2022) and SOX5 (Schanze et al., 2013) have been linked to predisposition to neurological conditions such as autism spectrum disorder, intellectual disability, and neurodevelopmental disorder. Of these genes, ARID1A, AUTS2, DNAJC1, OLA1, SOX5, and ZFPM2 have been reported to have strong activities in the Allen Mouse Brain Atlas (Daigle et al., 2018).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig5-v1.jpg)
+
+**Figure 5.:** (A) Distribution of conservation score in loci bound by DNA-associated proteins (DAPs) in HepG2 and K562. The logarithmic part of the bins is expressed in terms of the percentages of loci that each bin covers, averaged over two cell lines. The shaded region represents HOT loci. (B) phastCons conservation scores of regular enhancer, HOT loci, and exon regions. The values are normalized by the average scores of regular enhancers. (C) Classification performances (auROC) of HOT loci against the backgrounds of DNase-I hypersensitivity sites (DHS), promoter, and regular enhancer regions. The x-axis values are the methods used for classifications. Methods starting with ‘seq -’ are based on sequences (convolutional neural networks [CNNs] and gkmSVM). Starting with ‘feat -’ are methods where all sequence features are used (GC, CpG, GpC, CpG island).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Fractions of DNA-associated protein (DAP)-bound loci overlapping CpG islands. X-axis is bins of number of bound DAPs. The logarithmic bins are represented in terms of percent of total number of DAPs in given cell line. (B) GC contents of DAP-bound loci. X-axis is the same as in A. (C) Fractions of loci DAP-bound overlapping repeat elements. X-axis is the same as in A.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig5-figsupp3-v1.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Expression levels of target genes of DAP-bound loci in HepG2. (B) Distance to the nearest TSS from the DAP-bound non-promoter loci in HepG2 and K562.
 
 CpG islands have been postulated to serve as permissive TF binding platforms (Pachano et al., 2021; Deaton and Bird, 2011) and this has been listed as one of the possible reasons for the existence of HOT loci in a previous study (Wreczycka et al., 2019). To test this hypothesis, we extracted the overlap rates of all DAP-bound loci with CpG islands (Methods). While the overall fraction of loci that overlap CpG islands correlates strongly with the number of bound DAPs (rho = 0.7, p-value=0.001; Pearson correlation), only 12% of HOT enhancers overlapped CpG island whereas, for the HOT promoters, this fraction was 83%, suggesting that CpG islands alone do not explain HOT enhancer loci despite accounting for the majority of HOT promoters loci (Figure 5—figure supplement 2A). Similarly, the average GC content is strongly correlated with the number of bound DAPs (rho = 0.89, p-value<10–4; Pearson correlation, Figure 5—figure supplement 2B), with the average GC content of 64% and 51% in HOT promoters and HOT enhancers respectively (p-value<10–100, Mann-Whitney U test), in both HepG2 and K562.
 
@@ -69,7 +137,7 @@ To address this question with a broader approach, we asked whether the HOT loci 
 
 Extending the input regions from 400 bp to 1 kb for sequence-based classification did not lead to a significant increase in performance, suggesting that the core 400 bp regions contain most of the information associated with DAP density (Figure 5—figure supplement 3).
 
-## Highly expressed housekeeping genes are commonly regulated by HOT promoters
+### Highly expressed housekeeping genes are commonly regulated by HOT promoters
 
 After characterizing the HOT loci in terms of the DAP composition and sequence features, we sought to analyze the cellular processes they partake in. HOT loci were previously linked to highly expressed genes (Wreczycka et al., 2019). In both inspected differentiated cell lines (HepG2 and K562), the number of DAPs positively correlates with the expression level of their target gene (enhancers were assigned to their nearest genes for this analysis; rho = 0.56, p-value<10–10; Spearman correlation; Figure 5—figure supplement 4A). In HepG2, the average expression level of the target genes of promoters with at least one DAP bound is 1.7× higher than that of the target genes of enhancers with at least one DAP bound, whereas when only HOT loci are considered this fold-increase becomes 4.7×. This suggests that the number of bound DAPs of the HOT locus has a direct impact on the level of the target gene expression. Moreover, highly expressed genes (RPKM>50) were 4× more likely to have multiple HOT loci within the 50 kb of their TSSs than the genes with RPKM<5 (p-value<10–12, Chi-square test). In addition, the average distance between HOT enhancer loci and the nearest gene is 4.5× smaller than with the regular enhancers (p-value<10–30, Mann-Whitney U test). Generally, we observed that the distances between the HOT enhancers and the nearest genes are negatively correlated with the number of bound DAPs (rho = −0.9; p-value<10–6; Pearson correlation; Figure 5—figure supplement 4B), suggesting that the increasing number of bound DAPs makes the regulatory region more likely to be the TSS-proximal regulatory region.
 
@@ -81,19 +149,31 @@ To further analyze the distinction in involved biological functions between the 
 
 We then asked whether the tissue specificities of the expression levels of target genes of the HOT loci reflect their involvement in the regulation of HK genes. For this purpose, we used the tau metric as reported by Palmer et al., 2021, where a high tau score (between 0 and 1) indicates a tissue-specific expression of a gene, whereas a low tau score means that the transcript is expressed stably across tissues. We observed that the average tau scores of target genes of HOT enhancers are significantly but by a small margin greater than the regular enhancers (0.66 and 0.63, respectively; p-value<10–18, Mann-Whitney U test), with super-enhancers being equal to regular enhancers (0.63). The difference in the average tau scores of the HOT and regular promoters is stark (0.57 and 0.74, respectively, p-value<10–100, Mann-Whitney U test), representing a 23% increase (Figure 6B). Combined with the involvement in the regulation of HK genes, average tau scores suggest that the HOT promoters are more ubiquitous than the regular promoters whereas HOT enhancers are more tissue-specific than the regular and super-enhancers. Further supporting this, the GO enrichment analysis showed that the GO terms associated with the set of genes regulated by HOT promoters are basic HK cellular functions (such as RNA processing, RNA metabolism, ribosome biogenesis, etc.), whereas HOT enhancers are enriched in GO terms of cellular response to the environment and liver-specific processes (such as response to insulin, oxidative stress, epidermal growth factors, etc.) (Figure 6C).
 
-## A core set of HOT loci is active during development which expands after differentiation
+### A core set of HOT loci is active during development which expands after differentiation
 
 Having observed that the HOT loci are active regions in many other human cell types, we asked if the observations made on the HOT loci of differentiated cell lines also hold true in the embryonic stage. To that end, we analyzed the HOT loci in H1 cells. It is important to note that the number of available DAPs in H1 cells is significantly smaller (n=47) than in HepG2 and K562, due to a much smaller size of the ChIP-seq dataset generated in H1. Therefore, the criterion of having >17% of available DAPs yields n>15 DAPs for the H1, as opposed to 77 and 55 for HepG2 and K562, respectively. However, many of the features of the loci that we’ve analyzed so far demonstrated similar patterns (GC contents, target gene expressions, ChIP-seq signal values, etc.) when compared to the DAP-bound loci in HepG2 and K562, suggesting that albeit limited, the distribution of the DAPs in H1 likely reflects the true distribution of HOT loci. To alleviate the difference in available DAPs, in addition to comparing the HOT loci defined using the complete set of DAPs, we also (a) applied the HOT classification routing using a set of DAPs (n=30) available in all three cell lines, (b) randomly subselected DAPs in HepG2 and K562 to match the number of DAPs in H1.
 
 We observed that, when the complete set of DAPs is used, 85% of the HOT loci of H1 are also HOT loci in either of the other two differentiated cell lines (Figure 7A). However, only <10% of the HOT loci of the two differentiated cell lines overlapped with H1 HOT loci, suggesting that the majority of the HOT loci are acquired after the differentiation. A similar overlap ratio was observed based on DAPs common to all three cell lines (Figure 7B), where 68% of H1 HOT loci overlapped with that of the differentiated cell lines. These overlap levels were much higher than the randomly selected DAPs matching the H1 set (30%, Figure 7C).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig7-v1.jpg)
+
+**Figure 7.:** (A) Overlaps between the HOT loci of three cell lines. (B) Overlaps between the HOT loci of cell lines defined using the set of DNA-associated proteins (DAPs) available in all three cell lines. (C) Fractions of H1 HOT loci overlapping with that of the HepG2 and K562 using the complete set of DAPs, common DAPs, and DAPs randomly subsampled in HepG2/K562 to match the size of H1 DAPs set. (D) phastCons scores of HOT loci in HepG2, K562, and H1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig7-figsupp1-v1.jpg)
+
 Average evolutionary conservation scores (phastCons) of the developmental HOT loci are 1.3× higher than K562 and HepG2 HOT loci (p-value<10–10, Mann-Whitney U test, Figure 7D). It is conceivable to hypothesize that the embryonic HOT loci are located mainly in regions with higher conservation regions, and more regulatory regions emerge as HOT loci after the differentiation. Some of these tissue-specific HOT loci could be those that are acquired more recently (compared to the H1 HOT loci), as it is known that the enhancers are often subject to higher rates of evolutionary turnover than the promoters (Domené et al., 2013).
 
 GO enrichment analysis showed that H1 HOT promoters, similarly to the other cell lines, regulate the basic HK processes (Figure 7—figure supplement 1) while the HOT enhancers regulate responses to environmental stimuli and processes active during the embryonic stage such as TORC1 signaling and beta-catenin-TCF assembly. This suggests that the main processes that the HOT promoters are involved in during the development remain relatively unchanged after the differentiation (in terms of associated GO terms, and due to being the same loci as the HOT promoters in differentiated cell lines), whereas the scope of the cellular activities regulated by HOT enhancers gets expanded after differentiation to be more exclusively tissue-specific.
 
-## HOT loci are enriched in causal variants
+### HOT loci are enriched in causal variants
 
 After establishing the expression and tissue specificities of the HOT loci, we next analyzed the polymorphic variability in HOT loci and whether these loci are enriched in phenotypically causal variants. First, we analyzed the density of common variants extracted from the gnomAD database (Karczewski et al., 2020) (filtered with MAF>5%). We observed that HOT enhancers and HOT promoters are depleted in INDELs (4.7 and 4.1 variants per 1 kb, respectively), compared to the regular enhancers and regular promoters (5.5 and 6.2 variants per 1 kb, p-value<10–4 and <10–100, respectively, Mann-Whitney U test; Figure 8A). Contradicting the pattern of conservation scores described above, the distribution of common SNPs is elevated in HOT enhancers and HOT promoters compared to regular enhancers and regular promoters (1.14× and 1.07× fold-enrichment, p-values<10–20 and <10–100, respectively, Mann-Whitney U test; Figure 8B). This elevation of common variants in HOT loci, despite being located in conserved loci, has been reported in a previous study in which the binding motifs of TFs were observed to colocalize in regions where the density of common variants was higher than average (Vierstra et al., 2020).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig8-v1.jpg)
+
+**Figure 8.:** (A) Common INDELs (MAF>5%), (B) common SNPs (MAF >5%), (C) eQTLs, (D) chromatin accessibility QTLs (caQTLs), (E) reporter array QTLs (raQTLs), and (F) GWAS and LD (r2>0.8) variants in high-occupancy target (HOT) loci and regular promoters and enhancers. (G) Enriched GWAS traits in HOT enhancers and promoters. All of the visualized data is generated from the HepG2 cell line.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/95170/elife-95170-fig8-figsupp1-v1.jpg)
 
 The eQTLs, on the other hand, are 2.0× enriched in HOT promoters compared to the regular promoters (p-value<10–21, Mann-Whitney U test), while HOT enhancers are only moderately enriched in eQTLs compared to the regular enhancers (1.15×, p-value>0.05, Mann-Whitney U test; Figure 8C). eQTL enrichment in HOT promoters and regular promoters (compared to HOT and regular enhancers, respectively) is in line with the known characteristics of the eQTL dataset, that the eQTLs most commonly reflect TSS-proximal gene-variant relationships, and therefore are enriched in promoter regions since the TSS-distal eQTLs are hard to detect due to the burden of multiple tests (Consortium, 2015).
 
@@ -105,7 +185,7 @@ Combined, all three QTL datasets show a pronounced enrichment in HOT promoters c
 
 Finally, we used the GWAS SNPs combined with the LD SNPs (r2>0.8) and observed that the HOT promoters are significantly enriched in GWAS variants (1.8×, p-value>10–100) whereas the HOT enhancers show no significant enrichment over regular enhancers (p-value>0.1, Mann-Whitney U test) (Figure 8F). We then calculated the fold-enrichment levels of GWAS traits SNPs using the combined DHS regions of Roadmap Epigenome cell lines as a background (see Methods). Filtering the traits with significant enrichment in HOT loci (p-value<0.001, Binomial test, Bonferroni corrected, see Methods) left seven traits, of which all are definitively related to the liver functions (Figure 8G). Of the seven traits, only one (Blood protein level) was significantly enriched in regular promoters. While the regular enhancers are enriched in most of the (six of seven) traits, the overall enrichment values in HOT enhancers are 1.3× greater compared to the regular enhancers. The fold-increase is even greater (1.5×) between the HOT and DHS regions. When the enrichment significance levels are selected using unadjusted p-values, we obtained 24 GWAS traits, of which 22 are related to liver functions (Figure 8—figure supplement 1). This analysis demonstrated that the HOT loci are important for phenotypic homeostasis.
 
-## Transcriptional condensates as a model for explaining the HOT regions
+### Transcriptional condensates as a model for explaining the HOT regions
 
 Recent studies on phase-separated condensates have established that condensates are ubiquitous in cells and play crucial roles in gene regulation through transcriptional condensates (Nair et al., 2019; Lee et al., 2022; Feric and Misteli, 2022; Ahn et al., 2021). We postulated that the HOT loci could be explainable if it can be shown that the HOT loci demonstrate a high propensity for the formation of transcriptional condensates. The hallmarks of transcriptional condensates include (not limited to) scaffolding proteins that undergo liquid-to-liquid phase separation (LLPS), DNA and RNA molecules, and intrinsically disordered (IDR) proteins. We sought to analyze whether these properties can be attributed to the HOT loci.
 
@@ -135,7 +215,7 @@ One of the main limitations of our study is the lack of higher-resolution TF-DNA
 
 ## Methods
 
-## Datasets
+### Datasets
 
 TF (DAP), histone modification, DHS ChIP-seq, and ATAC-seq datasets for HepG2, K562, H1-hESC cell lines were batch downloaded from the ENCODE Project (Wang et al., 2013). For each DAP of each cell line, if there were multiple datasets, the one with the latest date was selected, prioritizing the ones with the least among the audit errors and warnings (Supplementary file 1, table S1). The GRCh37/hg19 assembly was used as a reference genome throughout the study. In those cases when ChIP-seq dataset was reported on GRCh38/hg38, the coordinates were converted to hg19 using liftOver. The phastCons evolutionary conservation scores generated from 46 vertebrate species, placental mammals, and primates. For comparing, averaged values of phastCons scores over the 400 bp loci were used. CpG islands, repeat elements, and GENCODE TSS annotations were all obtained from the UCSC genome browser database (Davis et al., 2018). Transcribed enhancer regions (eRNAs) were obtained from the FANTOM database (Lizio et al., 2019). Super-enhancer regions were obtained from Hnisz et al., 2013.
 
@@ -145,9 +225,83 @@ GC contents were calculated using the ‘nuc’' functionality of the bedtools p
 
 LLPS protein annotations were obtained from CD-CODE website https://cd-code.org. Predicted intrinsically disordered region annotations of proteins were obtained from MobiDB website https://mobidb.org. RBP ChIP-seq datasets used in the study are in Supplementary file 1, table S6. eCLIP datasets used in the study are in Supplementary file 1, table S7. PINTS eRNA dataset was obtained from https://pints.yulab.org. CAGE datasets were downloaded from ENCODE (ENCFF184VBV, ENCFF246WDH, ENCFF933JJT) and merged.
 
-## Definitions
+### Definitions
 
 The loci were divided into bins according to a two-part scale. The first part is on a linear scale from 1 to 5 (4 bins), the second part is on a natural logarithmic scale from 5 to the maximum number of DAPs bound to a single locus in that cell line (10 bins) (Table 1).
+
+**Table 1.**
+ Schema of classifying loci according to the number of bound DNA-associated proteins (DAPs).The initial 4 bins are loci bound by DAPs increasing linearly from 1 to 5 (gray fields). The remaining 10 bins are defined by edge values increasing on a logarithmic scale from 5 to the maximum number of available DAPs in each cell line (orange and red fields) using the Numpy formula np.logspace(np.log10(5), np.log10(max_tfs), 11, dtype = int). HOT loci correspond to the last 5 bin edges (red fields).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="15">Bin edges (n=15)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HepG2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>7</td>
+      <td>12</td>
+      <td>19</td>
+      <td>31</td>
+      <td>48</td>
+      <td>77</td>
+      <td>122</td>
+      <td>192</td>
+      <td>304</td>
+      <td>480</td>
+    </tr>
+    <tr>
+      <td>K562</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>7</td>
+      <td>11</td>
+      <td>16</td>
+      <td>24</td>
+      <td>37</td>
+      <td>55</td>
+      <td>82</td>
+      <td>123</td>
+      <td>184</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <td>H1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>10</td>
+      <td>12</td>
+      <td>15</td>
+      <td>18</td>
+      <td>22</td>
+      <td>26</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="5">Linear growth (n=4)</td>
+      <td colspan="10">Logarithmic growth (n=10)</td>
+    </tr>
+  </tbody>
+</table>
 
 We considered an average TFBS to be 8 bp long (Vinson et al., 2011; Wunderlich and Mirny, 2009). Given that we analyzed the loci in 400 bp, we reasoned that, theoretically, there can be at most 50 simultaneous binding events in the locus (8×50 = 400). Therefore, we considered the bins containing >50 DAPs in K562 as HOT loci, which meant the last four bins in Table 1. The reason we chose K562 for setting the threshold was the fact that K562 is the lesser of the two most TF ChIP-seq abundant cell lines. So, the corresponding threshold number for HepG2 is >77 TFs.
 
@@ -159,7 +313,7 @@ Promoters were defined as 1.5 kb upstream and 500 bp downstream regions of the c
 
 All the genomic arithmetic operations were done using the bedtools program (Quinlan and Hall, 2010). Figures were generated using Matplotlib (Hunter, 2007) and Seaborn (Waskom, 2021) packages. Statistical and numerical analyses were done using the pandas, NumPy, SciPy, and sklearn packages (Virtanen et al., 2020) in Python programming language. Genomic repeat regions were extracted from RepeatMasker table obtained from http://www.repeatmasker.org/. CpG islands were extracted from cpgIslandExt table obtained from the UCSC Genome Browser. Protein-protein interaction network information was obtained using the https://string-db.org web interface (Szklarczyk et al., 2019).
 
-## Statistical analyses
+### Statistical analyses
 
 All the statistical significance analyses were done using the SciPy package. Statistical significance of genomic region overlaps was calculated using the ‘bedtools fisher’ command. The p-values too small to be represented by the command line output were represented as <10–100.
 
@@ -167,26 +321,26 @@ Correlation values with the number of bound TFs were calculated using the averag
 
 For calculating the statistical significance, we used the non-parametric Mann-Whitney U test when the compared data points are non-linearly correlated and multi-modal. When the data distributions are bell-curve shaped, the Student’s t-test was used.
 
-## GWAS analysis
+### GWAS analysis
 
 NHGRI-EBI GWAS database variants were grouped according to their traits (dataset e0_r2022-11-29). For each GWAS SNP, LD SNPs with r2>0.8 were added using the plink v1.9 (Chang et al., 2015) program using the parameters --ld-window-r2 0.8 --ld-window-kb 100 --ld-window 1000000. Enrichments of GWAS-trait SNPs were calculated as the ratios of densities of SNPs in each class of regions (e.g. HOT enhancers, HOT promoters) to either that of the regular enhancers or the DHS regions. Statistical significance of enrichment was calculated using the binomial test. FDR values were calculated using the Bonferroni correction.
 
-## Sequence classification analysis
+### Sequence classification analysis
 
 Classification tasks were constructed in a binary classification setup. The control regions were used from: (a) randomly selected (10× the size of the HOT loci) merged DHS regions from all the available datasets from Roadmap Epigenomic Project, (b) all of the promoter regions as defined above, (c) regular enhancers as defined above, with the HOT loci subtracted (see Appendix 1 – Classification datasets for details).
 
-## Sequence-based classification (CNN)
+#### Sequence-based classification (CNN)
 
 Sequences were converted to one-hot encoding and a CNN was trained using each of the control regions as negative set. The model was built using tensorflow v2.3.1 (Abadi et al., 2016) and trained on NVIDIA k80 GPUs (see Appendix 1 – Sequence-based classification for details).
 
-## Sequence-based classification (SVM)
+#### Sequence-based classification (SVM)
 
 SVM models were trained using the LS-GKM package (Lee, 2016) (see Appendix 1 – Sequence-based classification for details).
 
-## Feature-based classification
+#### Feature-based classification
 
 Sequences were represented in terms of GC, CpG, GpC contents and overlap percentages with annotated CpG islands. SVM classifiers were trained using these sequence features (see Appendix 1 – Feature-based classification for details).
 
-## Variant analysis
+### Variant analysis
 
 Common SNPs and INDELs were extracted from the gnomAD r2.1.1 dataset (Karczewski et al., 2020). Variants with PASS filter value and MAF>5% were selected using the “view -f PASS -i 'MAF[0]>0.05'” options of bcftools program (Li, 2011). Loss-of-function variants were downloaded from the gnomAD website under the option ‘all homozygous LoF curation’ section of v2.1.1 database. raQTLs were downloaded from https://sure.nki.nl (van Arensbergen et al., 2019). Liver and blood eQTLs were extracted from the GTEx v8 dataset (https://www.gtexportal.org/home/datasets). Liver caQTLs were obtained from the supplementary material of Currin et al., 2021. NHGRI-EBI GWAS database variants were grouped according to their traits (dataset e0_r2022-11-29). For each GWAS SNP, LD SNPs with r2>0.8 were added using the plink v1.9 program using the parameters ‘--ld-window-r2 0.8 --ld-window-kb 100 --ld-window 1000000’. Enrichments of GWAS-trait SNPs were calculated as the ratios of densities of SNPs in each class of regions (e.g. HOT enhancers, HOT promoters) to either that of the regular enhancers or the DHS regions. The statistical significance of enrichment was calculated using the binomial test. FDR values were calculated using the Bonferroni correction.

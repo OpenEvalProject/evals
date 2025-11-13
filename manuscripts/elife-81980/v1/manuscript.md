@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/04rq5mt64 Program in Neuroscience, University of Maryland School of Medicine Baltimore United States
-2. https://ror.org/04rq5mt64 Department of Anatomy and Neurobiology, University of Maryland School of Medicine Baltimore United States
-3. https://ror.org/02v51f717 State Key Laboratory of Membrane Biology, Peking University School of Life Sciences; PKU-IDG/McGovern Institute for Brain Research; Peking-Tsinghua Center for Life Sciences Beijing China
+1. Program in Neuroscience, University of Maryland School of Medicine Baltimore United States ([ROR:04rq5mt64](https://ror.org/04rq5mt64))
+2. Department of Anatomy and Neurobiology, University of Maryland School of Medicine Baltimore United States ([ROR:04rq5mt64](https://ror.org/04rq5mt64))
+3. State Key Laboratory of Membrane Biology, Peking University School of Life Sciences; PKU-IDG/McGovern Institute for Brain Research; Peking-Tsinghua Center for Life Sciences Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
 ## Abstract
 
-Midbrain and striatal dopamine signals have been extremely well characterized over the past several decades, yet novel dopamine signals and functions in reward learning and motivation continue to emerge. A similar characterization of real-time sub-second dopamine signals in areas outside of the striatum has been limited. Recent advances in fluorescent sensor technology and fiber photometry permit the measurement of dopamine binding correlates, which can divulge basic functions of dopamine signaling in non-striatal dopamine terminal regions, like the dorsal bed nucleus of the stria terminalis (dBNST). Here, we record GRAB DA signals in the dBNST during a Pavlovian lever autoshaping task. We observe greater Pavlovian cue-evoked dBNST GRAB DA signals in sign-tracking (ST) compared to goal-tracking/intermediate (GT/INT) rats and the magnitude of cue-evoked dBNST GRAB DA signals decreases immediately following reinforcer-specific satiety. When we deliver unexpected rewards or omit expected rewards, we find that dBNST dopamine signals encode bidirectional reward prediction errors in GT/INT rats, but only positive prediction errors in ST rats. Since sign- and goal-tracking approach strategies are associated with distinct drug relapse vulnerabilities, we examined the effects of experimenter-administered fentanyl on dBNST dopamine associative encoding. Systemic fentanyl injections do not disrupt cue discrimination but generally potentiate dBNST dopamine signals. These results reveal multiple dBNST dopamine correlates of learning and motivation that depend on the Pavlovian approach strategy employed.
+Midbrain and striatal dopamine signals have been extremely well characterized over the past several decades, yet novel dopamine signals and functions in reward learning and motivation continue to emerge. A similar characterization of real-time sub-second dopamine signals in areas outside of the striatum has been limited. Recent advances in fluorescent sensor technology and fiber photometry permit the measurement of dopamine binding correlates, which can divulge basic functions of dopamine signaling in non-striatal dopamine terminal regions, like the dorsal bed nucleus of the stria terminalis (dBNST). Here, we record GRABDA signals in the dBNST during a Pavlovian lever autoshaping task. We observe greater Pavlovian cue-evoked dBNST GRABDA signals in sign-tracking (ST) compared to goal-tracking/intermediate (GT/INT) rats and the magnitude of cue-evoked dBNST GRABDA signals decreases immediately following reinforcer-specific satiety. When we deliver unexpected rewards or omit expected rewards, we find that dBNST dopamine signals encode bidirectional reward prediction errors in GT/INT rats, but only positive prediction errors in ST rats. Since sign- and goal-tracking approach strategies are associated with distinct drug relapse vulnerabilities, we examined the effects of experimenter-administered fentanyl on dBNST dopamine associative encoding. Systemic fentanyl injections do not disrupt cue discrimination but generally potentiate dBNST dopamine signals. These results reveal multiple dBNST dopamine correlates of learning and motivation that depend on the Pavlovian approach strategy employed.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ The dBNST receives dense dopaminergic input from several midbrain regions includ
 
 ## Results
 
-## BNST GRABDA signals respond to cues and rewards in a Pavlovian learning task
+### BNST GRABDA signals respond to cues and rewards in a Pavlovian learning task
 
 We sought to determine if BNST GRABDA signals correlate with individual differences in approach to Pavlovian cues (Experiment timeline in Figure 1A). First, we trained rats in Pavlovian Lever Approach (PLA) for five days (Figure 1B) to examine the acquisition of lever- and food cup-directed behaviors across training in sign and goal tracking/intermediate rats. Representative and histological inventory of GRABDA expression from these rats is shown in Figure 1C. We analyzed the behavioral PCA score using a mixed ANOVA with between-subject factors of Tracking (ST, GT/INT) and within-subject factors of Session (Day 1, Day 5; Figure 1D). STs show greater PCA score on Day 5 compared to GT/INTs (Figure 1D, PCA score: Session: F(1,14) = 67.3, p<0.001, Session × Tracking: F(1,14) = 15.04, p=0.002, Tracking: F(1,14) = 11.59, p=0.004; post hoc, Day 5 ST vs. GT/INT presses: t14 = .92, p<0.001). Next, to confirm rats could discriminate the reinforced and non-reinforced lever cues, we examined the difference between CS + and CS− presses (Δ presses) and pokes (Δ pokes) using a mixed ANOVA with between-subject factors of Tracking (ST, GT/INT) and within-subject factors of Session (Day 1, Day 5, Figure 1E). ST rats show better discrimination for lever directed behavior (Δ presses) on Day 5 compared to GT/INTs (Session: F(1,14) = 35.75, p<0.001, Session × Tracking: F(1,14) = 11.66, p<0.001, Tracking: F(1,14) = 17.81, p=0.001; post hoc, Day 5 ST vs. GT/INT presses: t14=3.93, p=0.002). In contrast, GT/INTs show better discrimination for food cup-directed behavior (Δ pokes) on Day 5 compared to STs during the CS (Figure 1F: Session × Tracking: F(1,14) = 4.90, p=0.044, Tracking: F(1,14) = 15.17, p=0.002; post hoc, Day 5 ST vs. GT/INT pokes: t14 = 3.92, p=0.002).
 
@@ -42,15 +42,35 @@ We sought to determine if BNST GRABDA signals correlate with individual differen
 
 To investigate the endogenous dBNST dopamine activity across PLA training, we used fiber photometry to monitor the fluorescent activity of the genetically encoded dopamine sensor, GRABDA (Sun et al., 2018). We see evidence of associative encoding during PLA (Figure 2). Both lever insertion and retraction/reward delivery increased dBNST GRABDA signals in ST and GT/INT rats (representative heat map and population average traces on Day 1 and Day 5 for STs in Figure 2A and GT/INTs in Figure 2B). To determine whether ST and GT/INT rats show differences in cue-evoked dopamine signals across acquisition of PLA, we compared the strength of CS+ onset (Δ lever extension area under curve (AUC) = (CS+) – (CS−) AUC; 2 s after CS onset) signals between Day 1 and Day 5 using a mixed ANOVA with between-subject factors of Tracking (ST, GT/INT) and within-subject factor of Session (Day 1, Day 5). While CS+ onset-evoked GRABDA signals increased across conditioning for both ST and GT/INT (Figure 2C, Session: F(1,14) = 19.69, p=0.001) the magnitude of the CS+ signal increase differed between tracking groups (Session × Tracking: F(1,14) = 5.99, p=0.028, Tracking: F(1,14) = 10.35, p=0.006). Post hoc analyses revealed a greater cue-evoked dBNST GRABDA signal in ST compared to GT/INT on Day 5, which was not evident on Day 1 (Day 1: t14 = 0.17, p=0.87; Day 5: t14 = 2.93, p=0.011). Next, we asked whether GRABDA signals correlated with the tracking phenotype. We observed a positive correlation between Day 5 CS onset GRABDA signals and Day 5 PLA score (Figure 2D; R2=0.41, p=0.009) but not Day 1 CS onset GRABDA signals and Day 1 PLA score (Figure 2—figure supplement 1A; R2=0.21, p=0.09).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81980/elife-81980-fig2-v1.jpg)
+
+**Figure 2.:** Representative heat maps illustrating GRABDA signal changes (z-scores) during CS+ and CS− presentations on Day 1 (top left) and Day 5 (top right) and trial-averaged GRABDA signal change (z-scored ∆F/F) during CS+ and CS− presentations on Day 1 (bottom left) and Day 5 (bottom right) in (A) STs and (B) GT/INTs. (C) Trial averaged quantification Δ lever extension ((CS+) – (CS−); 2 s) GRABDA area under curve (AUC) between STs and GT/INTs. (D) Correlation between Day 5 Pavlovian conditioned approach (PCA) scores and Day 5 Δ lever extension AUC. (E) Trial averaged quantification of Δ cue period ((CS+) – (CS−); 10 s) in AUC during cue period between STs and GT/INTs. (F) Correlation between Day 5 PCA scores and Day 5 Δ cue period AUC. (G) Trial averaged quantification of Δ cue-reward ((CS+) – (US), 2 s) in AUC between STs and GT/INTs. (H) Correlation between Day 5 PCA scores and Day 5 change in Δ cue-reward AUC. Data are mean ± SEM. *p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81980/elife-81980-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Correlation between (A) Day 1 PCA scores and Day 1 Δ lever extension area under curve (AUC). (B) Day 1 PCA scores and Day 1 Δ cue period AUC and (C) Day 1 PCA scores and Day 1 Δ cue-reward AUC.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81980/elife-81980-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Trial-averaged GRABDA signal change (z-scored ∆F/F) and (B) Average Δ Presses (CS+) – (CS−) and average Δ pokes (CS+) – (CS−) (inset) when rats were injected with vehicle or Reboxetine during PLA. Trial average quantification of change (CS+) – (CS−) in area under GRABDA z-scored curve (AUC) during (C) lever extension (2 s), (D) cue period (10 s), and (E) reward consumption between vehicle and reboxetine conditions. Data are mean ± SEM. Veh = Vehicle, Reb = Reboxetine.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/81980/elife-81980-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative heat maps illustrating GRABDA signal changes (z-scores) during CS+ and CS− presentations on Day 1 (top left) and Day 5 (top right) and trial-averaged GRABDA signal change (z-scored ∆F/F) for n=4 rats during CS+ and CS- presentations on Day 1 (bottom left) and Day 5 (bottom right). (B) Average Pavlovian conditioned approach (PCA) scores for sign-trackers (STs) and goal-tracking/intermediates (GT/INTs) on Day 1 and Day 5 of PLA. (C) Average Δ Presses (CS+) – (CS−) on Day 1 and Day 5. (D) Average Δ Pokes (CS+) – (CS−) on Day 1 and Day 5.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/81980/elife-81980-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Trial-averaged GRABDA signal change (z-scored ∆F/F) for sign-tracking (ST) (top) and goal-tracking/intermediate (GT/INT) rats (bottom) during CS+ and CS− presentations on (A) Day 1 and (B) Day 5 depicting the food cup entry nose poke artifact during pellet retrieval. (C) Average Pavlovian conditioned approach (PCA) scores for STs and GT/INTs on Day 1 and Day 5 of PLA. (D) Average Δ Presses (CS+) – (CS−) on Day 1 and Day 5. (E) Average Δ Pokes (CS+) – (CS−) on Day 1 and Day 5. (F) Trial averaged quantification Δ lever extension ((CS+) – (CS−); 2 s) GRABDA area under curve (AUC) between STs and GT/INTs. (G) Trial averaged quantification of Δ cue period ((CS+) – (CS−); 10 s) in AUC during cue period between STs and GT/INTs.
+
 Next, we examined tracking differences in the sustained GRABDA signal between STs and GT/INTs throughout the duration of the CS, during which STs and GT/INTs show differences in lever and food cup-directed behaviors. We compared Day 1 vs. Day 5 CS+ maintained (Δ cue-period AUC = (CS+) – (CS−) AUC during the full 10 s CS lever insertion period) GRABDA signaling. CS+ maintained GRABDA signals increased across conditioning for both STs and GT/INTs (Figure 2E, Session: F(1,13) = 11.45, p=0.005, Session × Tracking: F(1,13) = 3.07, p=0.1, Tracking: F(1,13) = 16.5, p=0.001). Like cue onset, we saw a strong positive correlation between Day 5 GRABDA signals during CS interaction and Day 5 PLA score (Figure 2F, R2=0.49, p=0.004) but not Day 1 GRABDA signals and Day 1 PLA score (Figure 2—figure supplement 1B, R2=0.08, p=0.3) suggesting that as rats display ST behavior, there’s an increase in sustaineddBNST GRABDA signal.
 
 Prior work shows that NAc dopamine shifts from US to CS after conditioning to a greater degree in STs compared to GTs (Flagel et al., 2011; Lee et al., 2018; Saddoris, 2016). Since we observed differences in CS evoked BNST GRABDA signals between STs and GT/INTs, we wanted to determine if there was similar tracking specificity in the US to CS shift for BNST GRABDA signals. We quantified the relative CS/US dynamics across conditioning using a difference score (Δ cue-reward AUC = (CS+) – (US) AUC for the 2 s after CS+ onset and reward delivery) and compared it between Day 1 and Day 5. We used a mixed ANOVA with between-subject factors of Tracking (ST, GT/INT) and within-subject factor of Session (Day 1, Day 5). The relative CS/US dynamics across PLA differed by tracking group (Figure 2G, Session: F(1,14) = 4.79, p=0.046, Session × Tracking: F(1,14) = 8.9, p=0.01). We found no tracking group differences in the (CS+) – (US) difference score on Day 1, but by Day 5 the CS/US difference score was greater in STs compared to GT/INTs (ST vs. GT/INT, Day 1: t14=–1.6, p=0.13; ST vs. GT/INT, Day 5: t14=2.43, p=0.029). While the correlation between (CS+) – (US) GRABDA signal and Day 5 PCA scores was marginal (Figure 2H, R2=0.22, p=0.06) there was no relationship between these measures on Day 1 (Figure 2—figure supplement 1C, R2=0.025, p=0.56). Overall, these data indicate sign-tracking specific dBNST GRABDA signals increase to Pavlovian cue onset and during cue-maintained sign-tracking behaviors, and back propagate from the reward to cue onset across conditioning.
 
-## dBNST GRABDA signals during PLA are specific to dopamine
+### dBNST GRABDA signals during PLA are specific to dopamine
 
 Even though the GRABDA construct we used is 15-fold more sensitive to dopamine than norepinephrine (NE); BNST NE plays an important role in motivated behaviors and dBNST receives dense noradrenergic input with relatively slow NE clearance measured in vivo (Egli et al., 2005; Flavin and Winder, 2013; Park et al., 2009; Sun et al., 2020). To validate that the signals we recorded during PLA were dopaminergic and not noradrenergic, we injected a NE reuptake inhibitor Reboxetine (1 mg/kg) 30 min prior to PLA. NE levels in the brain remain elevated at this dose for up to 3 hr peaking at ~20 min after injection (Page and Lucki, 2002). We found that Reboxetine injection did not alter behavior (Figure 2—figure supplement 2B) or increase BNST GRABDA signal to lever extension or reward consumption (Figure 2—figure supplement 2A, C and E, Epoch: F(1,12) = 3.82, p=0.074, Epoch × Treatment: F(1,12) = 0.20, p=0.66, Treatment: F(1,12) = 0.21, p=0.66) compared to saline injection. Furthermore, there was no difference in the cue-interaction period between reboxetine and saline-injected conditions (Figure 2—figure supplement 2D; t6=1.14, p=0.3). These data confirm that the signals we recorded during PLA are not sensitive to noradrenergic reuptake inhibition and are most likely due to fluctuations in DA signaling in the BNST.
 
-## BNST dopamine encodes reward prediction error
+### BNST dopamine encodes reward prediction error
 
 After five Pavlovian autoshaping sessions, we conducted a Reward Prediction Error (RPE) session in which we randomly intermixed expected food reward trials with unexpected food reward delivery and omission trials. Expected reward (Expected) trials are identical to those delivered during training, with a 10 s CS+ lever insertion followed by retraction and food reward delivery. Unexpected reward (Positive) trials consist of randomly delivered food reward that is not signaled by a cue. Unexpected omission (Negative) trials consist of 10 s CS+ lever insertion and retraction, but no food reward is delivered. During these sessions, we monitored BNST GRABDA signals to examine whether dopamine signals track errors in reward prediction (representative heat map for each trial type in Figure 3A–C; Schultz et al., 1997).
 
@@ -66,17 +86,17 @@ In a parallel analysis in ST rats considering all trial types (Expected, Positiv
 
 We collected behavioral data during RPE sessions and examined the pre-trial food cup checking rate (responses/10 s prior to CS onset/reward delivery) on the trial after a reward violation, during which prior studies establish invigoration of conditioned responses and orienting (Holland and Gallagher, 1993a, Holland and Gallagher, 1993b, Calu et al., 2010; Roesch et al., 2010). Rats increase their pre-trial food cup checking on trials after a reward violation (Figure 3I). We performed repeated measures ANOVA including factors of Trial Type (Expected, Positive, Negative) and Tracking (ST, GT/INT). While ST rats increase their pre-trial food cup checking after both positive (p=0.042) and negative (p=0.016) trials, GT/INTs only increase their pre-trial food cup checking following negative (p=0.013) trials (Figure 3I, Trial Type: F(2,22) = 10.9, p=0.001, Trial Type × Tracking: F(2,22) = 4.39, p=0.025, Tracking: F(1,11) = 1.77, p=0.21). These data indicate that STs and GT/INTs use different reward-seeking behavioral strategies following the violation of reward expectations.
 
-## Reinforcer-specific but not general satiety attenuates cue-triggered GRABDA signal
+### Reinforcer-specific but not general satiety attenuates cue-triggered GRABDA signal
 
 In the current and following sections, we report the number of ST and GT/INT rats for each experimental phase but do not report tracking differences due to decreased statistical power to detect group differences. Prior studies indicate that the midbrain and striatal dopamine system tracks motivational state through satiety-dependent changes in the magnitude of dopamine responses (Cone et al., 2014; Hsu et al., 2018; Wilson et al., 1995). Here, we determined whether the motivational state also decreases task-related BNST GRABDA signals during lever autoshaping. After rats completed 25 trials of PLA along with the GRABDA recordings, we sated rats (n=11, ST = 4, GT/INT = 7) on the training pellets presented in a ceramic ramekin in the homecage or presented a sham condition in which an empty ramekin was placed in the homecage for 30 min. Immediately after, we recorded GRABDA signals during the remaining 25 trials of PLA sessions. First, we compared Δ presses and Δ pokes ((CS+) – (CS−)) between hungry and sated or hungry and sham conditions using two-way ANOVA with factors of State (Hungry, Sated) and Condition (Real, Sham). The number of presses differed based on the satiety condition compared to the hungry condition (State × Condition: F(1,20) = 9.65, p=0.006). Post hoc analysis revealed that rats sated on training pellets decreased lever presses predictive of food pellet reward (Figure 4A left, hungry vs sated presses: t10=3.02, p=0.013; hungry vs. sham presses: t10=–1.51, p=0.16). In contrast, the number of pokes generally but not differentially increased during the sated and sham conditions compared to the hungry condition (Figure 4A right, State: F(1,20) = 6.73, p=0.017, State × Condition: F(1,20) = 3.72, p=0.068). Similarly, we examined cue-evoked GRABDA signal ((CS+) – (CS−); 2 s after cue onset) between hungry and sated or hungry and sham conditions using ANOVA with factors of State (Hungry, Sate) and Condition (Real, Sham). The differential change in lever presses was associated with the difference in cue-evoked GRABDA signal during the sated and sham conditions compared to hungry condition (State × Condition: F(1,20) = 6.68, p=0.018). Post hoc analysis revealed that rats sated on pellets show a decrease in cue evoked GRABDA signals but not in sham conditions (Figure 4E left, hungry vs. sated: t10=2.71, p=0.022; hungry vs. sham: t10=–0.95, p=0.35). While we observed a decrease in cue-triggered dopamine signals in sated conditions, there was no change in reward consumption-related dopamine signals in both sated and sham conditions (Figure 4E right, F’s<0.52, p’s>0.05). These results further bolster our finding that BNST GRABDAsignals encode cue-outcome associations, which, similar to striatal dopamine signaling, is blunted when the animal has reduced motivational drive (Cone et al., 2014; Wilson et al., 1995).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81980/elife-81980-fig4-v1.jpg)
 
-**Figure 4.:** DA signals attenuate after reinforcer-specific but not general satiety.(A) Average Δ Presses (CS+) – (CS−) (left) and average Δ pokes (CS+) – (CS−) (right) when rats were either sated on training food pellets in the ramekin or sham-sated (ramekin only). (B) Average Δ Presses (CS+) – (CS−) (left) and average Δ pokes (CS+) – (CS−) (right) when rats were either sated or sham-sated on homecage chow. (C) Trial-averaged GRABDA signal change (z-scored ∆F/F) during CS+ and CS− presentations when rats were hungry versus sated (top) and when rats were hungry versus sham-sated (bottom) on food pellets and (D) on homecage chow. (E) Trial average quantification of change (CS+) – (CS−) in an area under GRABDA z-scored curve (AUC) during lever extension (2 s) (left) and reward consumption (right) between food pellet sated and sham and (F) between homecage chow sated and sham conditions. Data are mean ± SEM, *p<0.05. H=Hungry, S=Sated, Sh = Sham conditions.
+**Figure 4.:** (A) Average Δ Presses (CS+) – (CS−) (left) and average Δ pokes (CS+) – (CS−) (right) when rats were either sated on training food pellets in the ramekin or sham-sated (ramekin only). (B) Average Δ Presses (CS+) – (CS−) (left) and average Δ pokes (CS+) – (CS−) (right) when rats were either sated or sham-sated on homecage chow. (C) Trial-averaged GRABDA signal change (z-scored ∆F/F) during CS+ and CS− presentations when rats were hungry versus sated (top) and when rats were hungry versus sham-sated (bottom) on food pellets and (D) on homecage chow. (E) Trial average quantification of change (CS+) – (CS−) in an area under GRABDA z-scored curve (AUC) during lever extension (2 s) (left) and reward consumption (right) between food pellet sated and sham and (F) between homecage chow sated and sham conditions. Data are mean ± SEM, *p<0.05. H=Hungry, S=Sated, Sh = Sham conditions.
 
 Next, we examined whether the reduction in cue evoked GRABDA signal is specific to the training pellet or whether it is sensitive to a general satiety state by sating rats on homecage chow (n=7, ST = 3, GT/INT = 4). We conducted analyses similar to the pellet satiety experiment. When we sated rats on chow, the number of presses differed based on the satiety condition compared to the hungry condition (State × Condition: F(1,12) = 5.86, p=0.032), however, there was no change in cue-evoked GRABDA signals (Figure 4B, D, F F’s<1.8, p’s>0.05). Similarly, the number of pokes also differed based on the satiety condition compared to the hungry condition (State × Condition: F(1,12) = 9.61, p=0.009). Post hoc analysis revealed that rats decreased their poking for sham compared to hungry (t6=2.87, p=0.03). This is presumably due to a concurrent non-significant increase in lever presses (sham sate presses: t6=–1.92, p=0.1). But this decrease in food cup pokes was not accompanied by a change in reward consumption evoked GRABDA signal (F’s<1.3, p’s>0.05). These results suggest that when rats are sated on the outcome associated with the Pavlovian cue, there is an attenuation in GRABDA signals while a general satiety doesn’t attenuate cue responding or GRABDA signals.
 
-## Systemic fentanyl administration boosts GRABDA signals to reward-related cues
+### Systemic fentanyl administration boosts GRABDA signals to reward-related cues
 
 Opioids potentiate NAc activity and NAc DA responses to natural rewards and natural reward-associated cues (Bassareo et al., 2013; Castro and Berridge, 2014; Mahler et al., 2007; Peciña and Berridge, 2005). Here, we sought to determine whether opioids also potentiate task-related BNST GRABDA signals during natural reward seeking during lever autoshaping. We recorded GRABDA signals in a subset of rats (n=4, ST=2, GT/INT=2) during PLA after i.p injection of synthetic μ-opioid agonist, fentanyl, 5 μg/kg (population average traces for saline and ip fentanyl injection in Figure 5A). We observed the main effects of Treatment (vehicle, fentanyl) and CS (CS+, CS−), but the interaction was not significant, indicating that cue discrimination is maintained with systemic fentanyl injections, which generally potentiate DA signaling in the dBNST (Figure 5B, CS: F(1,6) = 24.42, p=0.003, Treatment: F(1,6) = 7.16, p=0.037, CS × Treatment: F(1,6) = 2.8, p=0.15).
 
@@ -84,7 +104,7 @@ Opioids potentiate NAc activity and NAc DA responses to natural rewards and natu
 
 **Figure 5.:** (A) Trial-averaged GRABDA signal change (z-scored ∆F/F) when rats were injected with vehicle (left) or fentanyl (right) during Pavlovian lever autoshaping (PLA) (B) Trial average quantification of the area under GRABDA z-scored curve (AUC) during CS+ and CS− lever extension (2 s) between vehicle and fentanyl conditions. Data are mean ± SEM, *p<0.05.
 
-## Sex as a biological variable
+### Sex as a biological variable
 
 We use both male and female rats and have analyzed our photometry data from Pavlovian autoshaping, RPE, satiety, and fentanyl test sessions using Sex instead of Tracking as a factor. We observed no main effects of Sex or interaction between Sex and any other factor.
 
@@ -114,50 +134,214 @@ The present findings add substantially to the role of dBNST dopamine in motivate
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>AAV9.hsyn.DA4.4.eyfp</td>
+      <td>WZ Biosciences</td>
+      <td>h-D03</td>
+      <td>Titer &gt;1.0 × 10E13GC/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fentanyl</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat: 22659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Reboxetine Mesylate</td>
+      <td>MedChemExpress</td>
+      <td>Cat: HY-14560C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCS</td>
+      <td>Access Technologies</td>
+      <td>Cat: TCS-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma</td>
+      <td>Cat: P6148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MED-PC IV</td>
+      <td>Med Associates</td>
+      <td>RRID: SCR_012156</td>
+      <td>Version: IV</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>RRID: SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID: SCR_019096</td>
+      <td>Version: 26</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID: SCR_001622</td>
+      <td>Version: 2020 a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad Software</td>
+      <td>RRID: SCR_002798</td>
+      <td>Version: 9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Synapse Software</td>
+      <td>Tucker-Davis Technologies</td>
+      <td>RRID: SCR_006495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LED Driver</td>
+      <td>ThorLabs</td>
+      <td>Cat: DC4100</td>
+      <td>LED Driver capable of driving high-power four-wavelength LED sources simultaneously with a current range between 0 and 1000 mA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorescence Minicube</td>
+      <td>Doric</td>
+      <td>Cat: ilFMC4-G2_IE(400-410)_E(460-490)_F(500-550)_S</td>
+      <td>Fluorescence Mini Cube with 4 ports: one port for the functional fluorescence excitation light, one for the isosbestic excitation, one for the fluorescence detection, and one for the sample</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fiber optic patchcord</td>
+      <td>Doric</td>
+      <td>D202-4094-3</td>
+      <td>MFP_400/430/LWMJ-0.48_3 m_FCM-MF2.5</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fiber optical cannula</td>
+      <td>ThorLabs</td>
+      <td>Cat: CFMC54L10</td>
+      <td>Ceramic ferrule Ø400 µm core, 0.50 NA fiber that is flat cleaved to a length 10 mm</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Metabond powder</td>
+      <td>Parkell</td>
+      <td>Cat: S396</td>
+      <td>See Virus and fiber optic implantation surgery for more details</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Metabond quick base</td>
+      <td>Parkell</td>
+      <td>Cat: S398</td>
+      <td>See Virus and fiber optic implantation surgery for more details</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Metabond catalyst</td>
+      <td>Parkell</td>
+      <td>Cat: S371</td>
+      <td>See Virus and fiber optic implantation surgery for more details</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental Cement</td>
+      <td>DenMat</td>
+      <td>Cat: 034524101</td>
+      <td>See Virus and fiber optic implantation surgery for more details</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental Cement Catalyst</td>
+      <td>DenMat</td>
+      <td>Cat: 4506</td>
+      <td>See Virus and fiber optic implantation surgery for more details</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sucrose pellets</td>
+      <td>Test Diet</td>
+      <td>5TUL; Cat: 1811155</td>
+      <td>Purified ingredient rodent tablet, protein: 20.6%, fat: 12.7%, carbohydrate: 66.7%</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 We used 8-weeks-old male and female Sprague Dawley rats (Charles River, n=42) weighing >250 g before surgery. After surgery, we individually housed the rats and maintained them under a reversed 12:12 hr light/dark cycle (lights off at 9 AM). We estimated the sample size based on prior studies (Bacharach et al., 2018; Kochli et al., 2020) and pilot experiments. Each primary experiment was replicated in at least one additional cohort. Investigators were blinded to the tracking phenotype until the end of the experiments. We performed all experiments in accordance with the ‘Guide for the care and use of laboratory animals’ (8th edition, 2011, US National Research Council) and the University of Maryland Institutional Animal Care and Use Committee approved all experimental procedures. We excluded rats because of a lack of viral expression (n=4), incorrect fiber optic placements (n=6), and headcap loss (n=4). Additionally, rats (n=4) presented in Figure 2—figure supplement 3 were excluded that had sufficient viral expression and fiber placement but did not show robust photometry signals in the dBNST during CS+ presentation by day five of PLA training (see Photometry Analysis subsection for more details). Finally, we excluded rats (n=8) presented in Figure 2—figure supplement 4 that showed food cup entry artifacts before we optimized our photometry setup. The artifacts resulted in the loss of signal due to the patch cord hitting the wall of the food cup.
 
-## Virus and fiber optic implantation surgery
+### Virus and fiber optic implantation surgery
 
 We anesthetized 9-week-old rats with isoflurane (4.5% induction, 2–3% maintenance) and placed them in a stereotaxic frame. We maintained stable body temperature with a heating pad and administered pre-operative analgesic carprofen (5 mg/kg, s.c) and lidocaine (10 mg/mL at the site of incision). We made a scalp incision and drilled a hole above left dBNST AP = 0.0 or –0.1 from bregma, ML = +3.5, DV = −6.75 or –6.8 at 16° from midline for viral injection, and DV = –6.6 or –6.7mm relative to the skull for fiber implantation. In addition, we also drilled three holes anterior and posterior to attach anchor screws. We lowered the 5 μL Hamilton syringe unilaterally into the dBNST and injected AAV9.hsyn.DA4.4.eyfp (1.14 × 1014 GC/mL; WZ Biosciences) via a micropump at a volume of 0.7–1 μL over 10 min. We implanted the fiber optic (ThorLabs CFMC54L10, 400 μm, 0.50 NA, 10 mm) 0.1 mm or 0.15 mm above the virus injection site. We anchored the fiber optic to the skull using dental cement (Metabond and Denmat) and jeweler screws. We handled the rats at least three times a week after surgery before starting behavioral and photometry sessions.
 
-## Apparatus
+### Apparatus
 
 We conducted behavioral experiments in operant chambers housed in sound-attenuating cabinets (Med Associates). Each chamber had one white house light that was illuminated during the entire session. On the opposite wall, two retractable levers (CS+ and CS−, right or left location counterbalanced) were located on either side of the food cup. The food cup was attached to a programmed pellet dispenser that delivered 45 mg training pellets (Testdiet, 5 TUL, protein 20.6%, fat 12.7%, carbohydrate 66.7%).
 
-## Pavlovian lever autoshaping (PLA)
+### Pavlovian lever autoshaping (PLA)
 
 We conducted all training sessions during the dark phase. Schematic of our behavioral design can be found in Figure 1A. Five weeks after viral injection surgery, we maintained rats at 90% of ad libitum body weight during all behavioral sessions unless noted otherwise. Prior to the PLA training, we exposed rats to 25 magazine training trials divided into three sessions to acclimatize rats to the operant box and fiber optic cables. The three sessions consisted of 7, 8, and 10 trials, respectively in which two food pellets (US) were delivered, 0.5 s apart using a variable interval (VI) the 60 s (50–70 s) schedule. After magazine training sessions, we trained rats in five 46 min PLA sessions. Each session consisted of 25 reinforced (CS+) and 25 non-reinforced (CS−) lever presentation trials on a mean VI 45 s (35–55 s) schedule (Figure 1B). Each CS+ trial consisted of the insertion and retraction of a lever for 10 s followed by delivery of two food pellets, 0.5 s apart. CS− trials consisted of insertion/retraction of another lever, but no US delivery. We recorded the food cup and lever approach during the 10 s CS interaction and calculated a Pavlovian Conditioned Approach (PCA) score (Berg et al., 2014; Meyer et al., 2012). We use the PCA score as a comprehensive measure of individual differences in PLA that accounts for contact, latency, and probability differences. We used each rat’s Days 4 and 5 average PCA score to determine whether they are sign-trackers (avg PCA score ≥0.5, ST) or goal-trackers/intermediates (avg PCA score <0.5, GT/INT).
 
-## Reward prediction error (RPE) probe sessions
+### Reward prediction error (RPE) probe sessions
 
 After five PLA sessions, we gave rats (n=13) one session in which we violated rats’ reward expectations to probe for reward prediction error signaling. During this session, only the CS+ lever was presented, and rats received 48 trials divided into three different trial types presented in pseudorandom order. In the ‘expected reward’ condition, we gave 24 reinforced CS+ → US trials (50% of total trials). In the ‘unexpected reward or positive’ condition, we delivered two food pellets (US) randomly during the intertrial interval period without the predictive CS+ (12 trials, 25% of total trials). Finally, in the ‘unexpected reward omission or negative’ condition, we delivered the CS+, but omitted the US (12 trials, 25% of total trials) (Patriarchi et al., 2018).
 
-## Satiety test
+#### Satiety test
 
 After the RPE session, we trained a subset of rats (n=11) in PLA for two more days when rats were either sated on food pellets or hungry. On the first day, we gave half the rats 30 g of the training food pellets in a ramekin for 30 min (pellet-sated condition) in their home cage after the rats had completed 25 out of 50 trials. For the other half of the rats, we gave empty ramekins in their home cage (sham condition). After 30 min, we placed the rats back into the operant chamber where they completed the remaining 25 trials in PLA. The next day, we gave training pellets to rats that received empty ramekins on the first day and vice versa. We ran the chow satiety test in a subset of rats (n=7) using the same experimental design as the pellet satiety test but replaced the food pellets in the ramekins with homecage chow instead.
 
-## Fentanyl i.p injections
+### Fentanyl i.p injections
 
 We injected 5 μg/kg i.p fentanyl (Cayman Chemical) or vehicle in rats (n=4) 5 min before PLA sessions. We selected this dose based on pilot experiments. In two counterbalanced PLA sessions, we gave the rats either i.p injection of fentanyl or saline.
 
-## Fiber photometry
+### Fiber photometry
 
 We used LEDs (ThorLabs) to deliver 465 nm (wavelength to excite GRABDA) and 405 nm (isosbestic control) and measure dopamine activity. The isosbestic signal is used as a control for fiber bleaching and motion artifacts as it is subtracted from the 465 nm signal during analysis. We sinusoidally modulated the intensity of the 465 nm and 405 nm light at 210 and 337 Hz, respectively and connected the LEDs to a four-port fluorescence mini cube (Doric Lenses). The combined LED output passed through a fiber optic cable (1 m long; 400 μm core; 0.48 NA; Doric Lenses) which was connected to the implanted fiber optics with sleeves. We maintained the light intensity at the tip of the fiber optic cable at 10–15 μW across behavioral sessions. We collected the GRABDA and isosbestic control channel emission using the same fiber optic cable and focused the emission light onto a photoreceiver (Newport). We low pass filtered and digitized the emission light at 3 Hz and 5 KHz, respectively by a digital processor controlled by Synapse software suite (RZ5P, Tucker Davis Technologies (TDT)). We time-stamped the behavioral events including lever insertion/retraction, lever press, food cup entry, etc. by sending them as TTL (transistor-transistor logic) pulses to Synapse software.
 
-## Histology
+### Histology
 
 After all behavioral testing, we deeply anesthetized rats with isoflurane and transcardially perfused them with 200 mL of 0.1 M PBS followed by 400 mL of 4% paraformaldehyde (PFA) in distilled H2O. We quickly removed the brains and post-fixed them in 4% PFA for at least 2 hr before we transferred them to 30% sucrose in PBS for 48 hr at 4 °C. We subsequently froze the brains using dry ice and stored them at −20 °C until sectioning. We collected 50 μm coronal sections containing BNST on a cryostat (Leica Microsystems) and preserved them in a cryopreservant. We mounted the sections on slides and coverslipped them with Vectashield mounting medium with DAPI (Vector Laboratories). We verified fiber optic placements and viral expression in the dBNST using anatomical boundaries defined by Paxinos and Watson, 2006 under a confocal microscope. A representative example and summary of GRABDA expression and fiber placements are shown in Figure 1C.
 
-## Photometry analysis
+### Photometry analysis
 
 We analyzed the signals using custom-written MATLAB (Mathworks) scripts. We calculated ΔF/F (z score) by smoothing signals from the isosbestic control channel (Lerner et al., 2015; Root et al., 2020). We regressed the isosbestic signal onto the GRABDA-dependent signal to create a fitted isosbestic signal by using the linear model generated during the regression. We then calculated z scores by subtracting the fitted isosbestic signal from the GRABDA-dependent signal and dividing by the fitted isosbestic signal. This resulted in a GRABDA signal devoid of artifacts created by photobleaching, fiber bending, or movements. We collected z scores in the behavioral window of interest defined as 5 s before cue onset to 10 s after pellet delivery. We quantified the area under the curve (AUC) in the 2 s following cue onset and pellet delivery and independently calculated these parameters for CS+ and CS− trials. In all dopamine signal analyses, unless otherwise noted, we subtract CS− signal from the CS+ signal. We defined significant transients in our behavioral window if the peak amplitude during the trials (0 to +20 s relative to cue onset) was 2z-score (p=0.05) above baseline (5 s prior to cue onset) during the entire behavioral window on Day 1 or Day 5 of PLA. Furthermore, to ensure these signals were time-locked to cues and not spurious, we calculated 95% confidence intervals using bootstrapped resampling (1000 resamples) of all trials' photometry data for each rat across CS+ trials of Day 5 of PLA. Most rats displayed a consistent, robust increase in the signal reaching significantly above baseline within 70 milliseconds of CS+ onset, that stayed above baseline for a minimum of 40 milliseconds, consecutively. Four rats did not meet either of these criteria (greater than 2z-score peak signal or 40 ms of consecutive time with the significantly elevated signal at CS+) and were excluded. Their data is in Figure 2—figure supplement 3. All included rats met both criteria. We also removed trials where the patch cord disconnected from further signal processing.
 
-## Statistical analysis
+### Statistical analysis
 
 We analyzed the data using SPSS, GraphPad Prism, and Matlab. We used mixed design repeated measures ANOVAs to analyze PLA behavioral and GRABDA signal data. Whenever ANOVAs revealed significant interactions between groups, we ran t-tests with Bonferroni corrections for multiple comparisons to guard against Type I errors. We define dependent measures, within/between-subject factors, and report significant effects and interactions in the corresponding results section.
 
-## Code availability
+### Code availability
 
 Modified TDT-supplied MATLAB code is available on GitHub (https://github.com/ugyawali/photometry copy archived at Gyawali, 2022).

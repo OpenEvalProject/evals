@@ -40,43 +40,139 @@ Here, we reported the design, synthesis, and application of a dual-activatable f
 
 ## Results
 
-## Design and synthesis of IBS440
+### Design and synthesis of IBS440
 
 First, we developed a dual-activatable fluorescent molecular rotor IBS440 to monitor the increased cytoplasmic viscosity and hypoxia-induced nitroreductase. Based on the principle of twisting intramolecular charge transfer, we designed a molecular rotor to monitor viscosity. The rotor showed a weak ﬂuorescence intensity in low-viscosity situation, which was ascribed to the free intramolecular rotation between pyridium derivative and dimethylaniline. With increasing viscosity, the intramolecular rotation was restricted, releasing a strong red fluorescence. Meanwhile, nitrobenzene was introduced into the chemical structure as an alternative to nitroreductase substrate, which interacted with nitroreductase under the existence of nicotinamide adenine dinucleotide phosphate (NADPH) as electron donor; and then the nitro group of IBS440 was reduced to amine group triggering elimination reaction to obtain a new compound, named IBS224. Due to the mechanism of intramolecular charge transfer, a strong green fluorescence signal was emitted from IBS224. Chemical structures of IBS440 and IBS224 were characterized by 1H NMR, 13C NMR, and HRMS spectra (see Appendix 1: the 1 H NMR, 13 C NMR, and HRMS spectra.).
 
-## Fluorescence emission and absorption profiles of IBS440
+### Fluorescence emission and absorption profiles of IBS440
 
 The fluorescence and Ultraviolet-visible (UV-vis) absorption spectrums of IBS440 were measured to evaluate its photophysical features in response to viscosity and nitroreductase. Recombinant E. coli nitroreductase was expressed and purified as a fusion protein with a His tag. The protein molecular weight was 27 kD and its purity were confirmed by sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) (Figure 1—figure supplement 1). The fluorescence intensity of IBS440 in different ratios of ethanol and glycerol mixtures was investigated. With an increase in the proportion of glycerol, accompanied with an increased viscosity, the corresponding emission intensity of IBS440 was significantly enhanced compared with in pure ethanol (Figure 1A). There was an approximately 18-fold enhancement of intensity from ethanol to glycerol. A good linear relationship existed between fluorescent intensity (lgI) and viscosity (lgη), with a correlation coefficient of 0.994 (Figure 1B), indicating it enabled quantitative determination of viscosity. To test the recognition of nitroreductase, the spectral response of IBS440 to nitroreductase was assessed in reaction buffer with 500 μM NADPH as cofactor (Figure 1C). Upon the addition of nitroreductase (0–9.0 μg/mL), the nitro group of IBS440 was reduced to amine group, thereby triggering an elimination reaction to produce a new compound IBS224. The blue-shifts in wavelength were observed in the UV-vis absorption spectra of IBS440 and IBS224 (Figure 1—figure supplement 2). Meanwhile, the fluorescence intensity of IBS440 was found to be linearly proportional to nitroreductase concentration within the range 0–9.0 μg/mL (Figure 1C and D). The limit of detection (LOD) was calculated using the equation of LOD = 3σ/k, wherein σ was the standard deviation, and k was the slope of the linear line. According to the linear correlation, k was determined to be 11166.424, and σ was set to 77.883, leading to a sensitive detection limit of 20.9 ng/mL (Figure 1D). It suggested that this molecule can detect nitroreductase sensitively in liquid solutions.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig1-v2.jpg)
+
+**Figure 1.:** (A) Fluorescence spectra of IBS440 (10 μM) in different ratios of Ethanol/Glycerol mixtures. (B) The linear response between the fluorescence intensity at 610 nm (lgI(Intensity)) of the probe IBS440 (10 μM) and the viscosity (lgη(Viscosity)) in the Ethanol/Glycerol solvent. (C) The fluorescence response of IBS440 (10 μM) to nitroreductase at the varied concentrations in reaction buffer (50 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.1 mM EDTA, pH 8.0). The spectra were recorded upon treatment of IBS440 (10 μM) with nitroreductase (0–9.0 μg/mL) in the presence of NADPH (500 μM). (D) A linear correlation between the concentration of nitroreductase and the fluorescence intensity of the reaction mixture. (E) Fluorescence intensity of IBS440 (10 μM) at 610 nm in various solvents of methanol (MeOH), N, N-Dimethylformamide (DMF), dimethyl sulfoxide (DMSO), acetonitrile (CH3CN), ethanol (EtOH), ethyl acetate (EtOAc), phosphate buffer saline (PBS), H2O, tetrahydrofuran (THF), glycerol. (F) Fluorescence responses of IBS440 (10 μM) in the presence of NADPH (500 μM) to various species. λex = 400 nm. λem = 520 nm. (G) Effects of pH on the response of IBS440 in solvents with different viscosity (ethanol and 50 % glycerol in ethanol). The fluorescence intensity at 610 nm was plotted against different pH values. λex = 500 nm. (H) The emission intensity (at 520 nm) of IBS224 and IBS440 at different pH Tris-HCl buffer, containing 20 % DMSO as a cosolvent. Error bars represent standard deviation of three repeated experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SDS-PAGE (12%) confirmation and (B) Immunoblotting analysis of different concentration of Recombinant nitroreductase. M: Prestained Protein Molecular Weight Marker. (A) 1–6: 50 μg/mL, 100 μg/mL, 150 μg/mL, 200 μg/mL, 250 μg/mL, 300 μg/mL of NTR. (B) 1–3: 0.2 μg/mL, 0.8 μg/mL, 1.6 μg/mL.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** λex = 500 nm, λem = 610 nm.
 
 To confirm whether the fluorescence of IBS440 was influenced by polarity changes, the fluorescence spectral profiles of IBS440 in various polarity solvents were evaluated. As shown in Figure 1E, IBS440 exhibited a strong fluorescence emission in glycerol, in contrast, it showed much weaker fluorescence in other solvents. To examine the nitroreductase selectivity of IBS440, its fluorescence intensity was measured upon addition of various biologically relevant cations. Compared to some ions (Na+, Mg2+, Ca2+, K+, Cl-, AcO-, CO32-, SO32-) and biologically relevant species (Cys, Hcy, GSH, H2O2, EDTA, DTT, glucose), IBS440 showed a specific fluorescence emission in nitroreductase in the presence of NADPH (Figure 1F). These results illustrated that IBS440 was insensitive to the polarity of the solvents and highly selective to nitroreductase, suggesting it can be used to detect viscosity and nitroreductase changes in complex microenvironments.
 
 In addition, as the pH across organelles varies, it is important that the fluorescence feature of IBS440 is not affected by pH variation. We measured the effects of pH (4.0–9.0) on the fluorescence of IBS440 in pure ethanol and 50 % glycerol-ethanol mixture as well as the fluorescence of IBS440 and IBS224 in reaction buffer. The emission values of IBS440 at 610 nm in ethanol and at 520 nm in reaction buffer had almost no change, while weak change of IBS440 in 50 % glycerol media over the range of pH 4.0–9.0 and optimum value of IBS224 in pH 7.0 was observed (Figure 1G and H), demonstrating that IBS440 was stable at the physiological pH conditions and may promote its application in biological systems. Notably, the fluorescence intensity at 610 nm was decreased about 0.6 % when IBS440 was exposed to 500 nm excitation laser for 10 min and decreased 2 % after 1 hr, showing good photostability of IBS440 (Figure 1—figure supplement 3). Therefore, these data exhibited the sensitivity and specificity of IBS440 respond to viscosity and hypoxia-induced nitroreductase in liquid solutions.
 
-## Fluorescence localization of IBS440 in live cells and ex vivo tumor tissues
+### Fluorescence localization of IBS440 in live cells and ex vivo tumor tissues
 
 To explore the feasibility of applying IBS440 into live cell system, we first evaluated its cytotoxicity by a standard CCK8 assay in three different cell lines including MHCC97H, A549 and FaDu cells (Figure 2—figure supplement 1). We incubated the cells with IBS440 at a gradient concentration from 5 μM to 50 μM for 12 hr or 24 hr. The cell viabilities were higher than 70 % even the concentration was increased to 50 μM and the incubation time was 24 hr. The following experimental concentration we chose was 5 μM considering that its cell viability was above 90 %. We then tested the subcellular localization of IBS440. Cells were co-stained with a commercially available green fluorescent mitochondrial dye (Mito-Tracker Green) and IBS440. The merged image of red channel was well overlaid with the green channel leading to colocalization coefficient (Pearson’s correlation) of 0.9363 for MHCC97H cells, 0.9386 for FaDu cells and 0.9257 for A549 cells (Figure 2A), implying that IBS440 mainly localized in mitochondria of live cells. To further measure the ability of IBS440 to illuminate tumor tissues, we incubated the fresh mice tumor slices with IBS440 and imaged on microscopic level. Freshly excised tissue represents the best in vivo situation for the determination of localization. Hoechst 33,342 is a specific dye for AT-rich regions of double-stranded DNA and suitable for DNA, chromosome and nuclear staining. We found that the red fluorescence of the molecule mainly occurred around the cell nuclear (blue fluorescence) in tumor slices (Figure 2B), indicating IBS440 enabled to light up tumor cells in fresh tumor tissues.
 
-## Fluorescence imaging of Mito-Tracker Green in live cells and tissues
+![Figure 2.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-v2.jpg)
+
+**Figure 2.:** (A) The cells were treated with IBS440 (5 μM) for 20 min and then stained with Hoechst 33,342 (1x) and Mito Tracker Green (10 μM) for 10 min. Blue channel (λex = 405 nm, λem = 430–480 nm). Green channel (λex = 488 nm, λem = 500–550 nm). Red channel (λex = 488 nm, λem = 580–630 nm). Scale bar: 25 μm. (B) Visualization in 3D reconstruction (i) and the max merge image of 3D structure (ii). Scale bar: 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The error bar is the mean standard deviation of six separate measurements.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** They were incubated with a commercial lipophilic mitochondrial dye Mito-Tracker Green (1 μM) for 20 min. Blue channel (λex = 405 nm, λem = 430–480 nm). Green channel (λex = 488 nm, λem = 500–550 nm). Scale bar: 25 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** They were incubated with a commercial lipophilic mitochondrial dye Mito-Tracker Green (1 μM) for 20 min. Blue channel (λex = 405 nm, λem = 430–480 nm). Green channel (λex = 488 nm, λem = 500–550 nm).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** β-actin were served as loading control.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Cells were cultured under normoxic (20 % O2) for 12 hr and then treated with IBS440. (B) Cells were cultured under hypoxic (2 % O2) conditions for 12 hr and then treated with IBS440. Blue channel (λex = 405 nm, λem = 430–480 nm). Green channel (λex = 488 nm, λem = 500–550 nm). Scale bar: 25 μm.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Blue channel (λex = 405 nm, λem = 430–480 nm). Red channel (λex = 488 nm, λem = 580–630 nm). Scale bar: 25 μm.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** heart, B. liver, C. spleen, D. lung, E. kidney, F muscle, G. fat, H. brain and MHCC97H tumor tissue (I) in confocal fluorescence 3D reconstruction. All tissues were incubated with IBS440 (10 μM) for 20 min. Blue channel (λex = 405 nm, λem = 430–480 nm). Red channel (λex = 488 nm, λem = 580–630 nm). Scale bar: 50 μm.
+
+### Fluorescence imaging of Mito-Tracker Green in live cells and tissues
 
 Fluorescent small molecules are effectively used in imaging fields because of simple synthesis, high sensitivity and noninvasiveness. Because of their lipophilicity and small molecular weight, the way that they enter cells mainly depends on passive diffusion, which is one of the most common and important transportation methods in lipophilic molecule transportation (Bressloff and Newby, 2013). As shown in Figure 2—figure supplement 2, the cancerous cells (MHCC97H, A549 and FaDu) and noncancerous cells (RAW264.7, A7r5) were incubated with a commercial lipophilic mitochondrial dye Mito-Tracker Green, the result shows the fluorescence intensity in these cells have no significant difference. As shown in Figure 2—figure supplement 3, hepatocellular cancer and normal tissues were incubated with Mito-Tracker Green, and there was also no significant difference in fluorescence intensity. These results showed that the uptake of lipophilic small molecules by cancerous cells and noncancerous cells is at the very similar level.
 
-## Fluorescence imaging of hypoxia in live cells
+### Fluorescence imaging of hypoxia in live cells
 
 We next validated the fluorescence responses of IBS440 to elevations in nitroreductase in cultured cell lines. Hypoxia inducible factor 1α (HIF-1α) is overexpressed in common human cancers (Liao et al., 2007). It was stablely expressed when cells were cultured under 2 % O2 for 12 hr or 24 hr, indicating that the cells were under a hypoxic station (Figure 2—figure supplement 4). As shown in Figure 2—figure supplement 5, fluorescence signal was faint under normoxic condition (20 % O2), suggesting that the level of nitroreductase expressed in cells was low under normoxic condition. The fluorescence intensity increased when the concentration of O2 decreased to 2%, which implied the up regulation of nitroreductase expression. Thus, the hypoxia condition of cells is well reflected by the fluorescence-based detection of nitroreductase. These results evidenced that IBS440 served as a hypoxia monitor in live cells.
 
-## Fluorescence imaging of viscosity in live cells
+### Fluorescence imaging of viscosity in live cells
 
 We further studied the fluorescence of IBS440 in viscosity detection channel of cancerous and noncancerous cells. MHCC97H, A549, FaDu, RAW264.7 and A7r5 cells were chosen for fluorescence imaging by confocal microscopy. As shown in Figure 2—figure supplement 6, the cancerous cells (MHCC97H, A549 and FaDu) and noncancerous cells (RAW264.7, A7r5) were stained with IBS440, the fluorescence intensity of the cancerous cells was stronger than that of the noncancerous cells. Specifically, the normal tissues of mice (including heart, liver, spleen, lung, kidney, muscle, fat, and brain) and MHCC97H tumor tissue were treated with IBS440, respectively. In comparison with the dim fluorescence signals from normal tissues, the tumor tissue exhibited significantly enhanced fluorescence (Figure 2—figure supplement 7), implying the increased viscosity of tumor tissue.
 
-## In vivo and ex vivo fluorescence imaging of mouse tumor
+### In vivo and ex vivo fluorescence imaging of mouse tumor
 
 Next, we evaluated its capability to monitor viscosity and nitroreductase in vivo. We used BALB/c nude mouse models bearing subcutaneous MHCC97H cells, A549 cells and FaDu cells, respectively. Significant signals from both viscosity and nitroreductase fluorescence detection channels were observed in the tumor regions, in contrast to the background signals in muscle (Figure 3A). To extend the application of IBS440, the major organs (heart, liver, spleen, lung, kidney and muscle) and the tumor tissues of the mice were harvested and incubated with IBS440 for ex vivo imaging. It could be observed that the fluorescence signals of the tumor tissues were much stronger than the major organs (Figure 3B). Hematoxylin and eosin staining analysis validated the tumor tissues, confirming that the fluorescence signals were tumor specific (Figure 3C and Figure 3—figure supplement 1). These results showed that IBS440 responded to viscosity and nitroreductase in tumor-bearing mice in vivo as well as resected tissues ex vivo.
 
-## Ex vivo imaging of patients’ resected tumor specimens
+![Figure 3.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig3-v2.jpg)
+
+**Figure 3.:** (A) In vivo fluorescence imaging of the tumor-bearing mice after stained with IBS440. (B) Ex vivo fluorescence imaging of the major organs (heart, liver, spleen, lung, and kidney) and tumor tissues of tumor-bearing mice. (C) Hematoxylin and eosin microscopic imaging of the resected tumor tissues. Scale bar: 100 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig3-figsupp1-v2.jpg)
+
+### Ex vivo imaging of patients’ resected tumor specimens
 
 The primary aim of our study was to provide assessments of tumor-involved margins in surgical specimens, thus we measured two types of patients’ resected specimens including hepatocellular cancer and lung cancer. First, nine pairs of liver cancerous/noncancerous tissue tissues derived from nine individual patients and five pairs of lung cancerous/noncancerous tissues derived from five individual patients (pathologically validated by the subsequent hematoxylin and eosin staining) were used as a training dataset and incubated with IBS440 and imaged by an in vivo small animal instrument, respectively. As shown in Figures 4 and 5, Figure 5—figure supplement 2 and Figure 5—figure supplement 3, the stronger fluorescence signals emitted from cancerous tissues and the weaker signals from noncancerous tissues. The maximal gray-scales signal intensities of the same cancer type samples were used to plot a scatter graph. The centroid of scatter points, computed by K-means clustering algorithm, were determined as the threshold. As shown in Figure 4—figure supplement 1, Figure 5—figure supplement 1, Figure 5—figure supplement 4 and Figure 5—figure supplement 5, the threshold value was calculated as (160.3,164.3) of hepatocellular cancer, (164.4,165.8) of lung cancer, (164.7,165.3) of oral cancer and (163.5, 167.1) of renal cancer. According to the threshold point, any sample would be located into one of the three divided groups, that is, the definitely positive (++) group showing two high intensities in both x and y axis; the suspiciously positive (+) group showing a high intensity in x or y axis; and negative (-) group showing two low intensities in both x and y axis.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig4-v2.jpg)
+
+**Figure 4.:** They were incubated with IBS440 (10 μM) for 20 min and taken imaging. Scale bar: 100 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The threshold (160.3,164.3) was computed by K-means clustering algorithm.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig5-v2.jpg)
+
+**Figure 5.:** They were incubated with IBS440 (10 μM) for 20 min and taken imaging. Scale bar: 100 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The threshold (164.4,165.8) was computed by K-means clustering algorithm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** They were incubated with IBS440 (10 μM) for 20 min and taken imaging. Scale bar: 100 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** They were incubated with IBS440 (10 μM) for 20 min and taken imaging. Scale bar: 100 μm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** The threshold (164.7,165.3) was computed by K-means clustering algorithm.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** The threshold (163.5, 167.1) was computed by K-means clustering algorithm.
+
 Second, to verify the thresholds, 35 pieces of resection margin tissues derived from one hepatocellular cancer patient and 16 pieces of resection margin tissues derived from one lung cancer patient were used as test datasets, respectively. All samples were incubated with IBS440 and imaged by an in vivo small animal instrument. As shown in Figures 6A and 7A, there were differences in fluorescence intensity across samples, as assessed through the viscosity and nitroreductase detection channels. All the samples, prior to pathological examination, were categorized into three groups according to the thresholds (Figures 4 and 5): definitely positive (++), strong fluorescence in both channels; suspiciously positive (+), strong fluorescence in one channel; and negative (-), weak fluorescence in both channels (Figures 6B and 7B). The hematoxylin and eosin staining of permanent sections were followed to confirm the classification results (Figures 6C and 7C, Figure 6—figure supplement 1 and Figure 7—figure supplement 1). Overall, a specificity of 100 % was achieved in screening tumor-free samples from positive ones among the liver and lung tumor samples. There was no test dataset of oral and renal cancer samples due to the small tumor volume and insufficient sampling numbers.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig6-v2.jpg)
+
+**Figure 6.:** (A) Photograph imaging and fluorescence imaging of resected tissues. (B) Clustering analysis using K-means algorithm on the maximal gray-scales signal intensities of each tissue sample in nitroreductase and viscosity detection channels. (C) Hematoxylin and eosin microscopic imaging of the representative liver samples. Scale bar: 50 μm. (D) The correlation analysis of liver tissue samples between fluorescence signals and hematoxylin and eosin staining results. Pre-screening: (++): definitely positive; (+): suspiciously positive; (-): negative. Paraffin H&E Positive: P; Paraffin H&E Negative: N.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig6-figsupp1-v2.jpg)
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig7-v2.jpg)
+
+**Figure 7.:** (A) Photograph imaging and fluorescence imaging of resected tissues. (B) Clustering analysis using K-means algorithm on the maximal gray-scales signal intensities of each tissue sample in nitroreductase and viscosity detection channels. (C) Hematoxylin and eosin microscopic imaging of the representative lung samples. Scale bar: 50 μm. (D) The correlation analysis of lung tissue samples between fluorescence signals and hematoxylin and eosin staining results. Pre-screening: (++): definitely positive; (+): suspiciously positive; (-): negative. Paraffin H&E Positive: P; Paraffin H&E Negative: N.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-fig7-figsupp1-v2.jpg)
 
 ## Discussion
 
@@ -94,9 +190,250 @@ This study has a few limitations. First, the fluorescence threshold was slightly
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>TransGen Biotech</td>
+      <td>Cat#CD701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIF-1A antibody (Rabbit polyclonal)</td>
+      <td>Sangon Biotech</td>
+      <td>Cat#D162108RRID:AB_1674786</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-6 His antibody (Rabbit polyclonal)</td>
+      <td>Sangon Biotech</td>
+      <td>Cat#D110002RRID:AB_10575638</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>FaDu cells</td>
+      <td>Stem Cell Bank, Chinese Academy of Sciences</td>
+      <td>Cat#TCHu132</td>
+      <td>RRID:CVCL_1218</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549 cells</td>
+      <td>Stem Cell Bank, Chinese Academy of Sciences</td>
+      <td>Cat#SCSP-503</td>
+      <td>RRID:CVCL_0023</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MHCC97H cells</td>
+      <td>Zhongshan Hospital, Fudan University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>RAW264.7 cells</td>
+      <td>Stem Cell Bank, Chinese Academy of Sciences</td>
+      <td>Cat#TCM13</td>
+      <td>RRID:CVCL_0493</td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>A7r5 cells</td>
+      <td>Stem Cell Bank, Chinese Academy of Sciences</td>
+      <td>Cat#GNR 7</td>
+      <td>RRID:CVCL_0137</td>
+    </tr>
+    <tr>
+      <td>Biological sample (mouse)</td>
+      <td>BALB/c nude mouse (4–6 weeks old, female)</td>
+      <td>School of Pharmacy,Fudan University</td>
+      <td>http://www.lacsp.fudan.edu.cn/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Lung carcinoma specimens</td>
+      <td>Zhongshan Hospital, Fudan University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Renal carcinoma specimens</td>
+      <td>Zhongshan Hospital, Fudan University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Hepatocellular carcinoma specimens</td>
+      <td>Zhongshan Hospital, Fudan University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Oral carcinoma specimens</td>
+      <td>Shanghai Ninth People’s Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-picoline</td>
+      <td>Energy-Chemical</td>
+      <td>Cat#W3300080250</td>
+      <td>CAS: 108-89-4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>potassium tert-butoxide</td>
+      <td>Energy-Chemical</td>
+      <td>Cat#E0600050250</td>
+      <td>CAS: 865-47-4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-(bromomethyl)–4-nitrobenzene</td>
+      <td>Energy-Chemical</td>
+      <td>Cat#W610062</td>
+      <td>CAS: 100-11-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Energy-Chemical</td>
+      <td>Cat#E010368</td>
+      <td>CAS: 7647-14-5</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide Adenine Dinucleotide Phosphate (NADPH)</td>
+      <td>Energy-Chemical</td>
+      <td>Cat#10107824001</td>
+      <td>CAS: 2646-71-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>glycerol</td>
+      <td>Energy-Chemical</td>
+      <td>Cat#A0404071000</td>
+      <td>CAS: 56-81-5</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 DNA ligase</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0202</td>
+      <td>a final concentration of 20 units/μL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>XhoI</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R0146</td>
+      <td>a final concentration of 0.4 units/μL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BamHI-HF</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R3136</td>
+      <td>a final concentration of 0.4 units/μL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Taq DNA polymerase</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0273</td>
+      <td>a final concentration of 0.025 units/μL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay kit</td>
+      <td>Beyotime</td>
+      <td>Cat#P0012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Counting Kit-8</td>
+      <td>Beyotime</td>
+      <td>Cat#C0038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>gel extraction kit</td>
+      <td>Tiangen Biotech</td>
+      <td>Cat#DP209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chemdraw 20</td>
+      <td>PerkinElmer Informatics</td>
+      <td>https://www.chemdraw.com.cn</td>
+      <td>RRID:SCR_016768</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 8.0</td>
+      <td>Origin Lab</td>
+      <td>https://www.originlab.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ilustrator 2021</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>Image J</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33,342</td>
+      <td>Beyotime</td>
+      <td>Cat#C1029</td>
+      <td>dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mito-Tracker Green</td>
+      <td>Beyotime</td>
+      <td>Cat#C1048</td>
+      <td>a final concentration of 1 μM</td>
+    </tr>
+  </tbody>
+</table>
+
 Apparatus: The pH of the testing systems was determined by Orion Star A211 pH Meter (USA). The fluorescent spectra were recorded at room temperature on an Edinburgh Photoluminescence Spectrometer FLS1000 (UK). The UV-vis absorption spectra were recorded on a UV-vis spectrometer L6 (China). All cell and tissue slides fluorescence images were acquired by a Leica TCS SP8 STED (Germany). A 405 nm laser was used as the excitation source and the emission wavelength was collected using a blue channel (430–480 nm) for cell nucleus staining dye Hoechst 33342, a 405 nm laser was used as the excitation source and the emission wavelength was collected using a green channel (480–530 nm) for IBS440 recognition of nitroreductase, a 488 nm laser was used as the excitation source and emissions were collected using a green channel (500–550 nm) for Mito-Tracker Green, and 488 nm laser was used as the excitation source and emissions were collected using a red channel (580–630 nm) for IBS440 recognition of viscosity. In vivo animal and organs fluorescence imaging were acquired by an In Vivo Bruker Xtreme (USA).
 
-## Synthesis of IBS224 and IBS440
+### Synthesis of IBS224 and IBS440
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/70471/elife-70471-scheme1-v2.jpg)
 
@@ -108,33 +445,33 @@ Compound IBS224 (1.122 g, 5 mmol) and 1-(bromomethyl)–4-nitrobenzene (1.082 g,
 
 Yield: 1.783 g (81%).1 H NMR (400 MHz, DMSO-d6) δ 8.86 (d, J = 6.8 Hz, 2 H), 8.28 (d, J = 8.8 Hz, 2 H), 8.08 (d, J = 6.7 Hz, 2 H), 7.94 (d, J = 16.0 Hz, 1 H), 7.71 (d, J = 8.6 Hz, 2 H), 7.58 (d, J = 8.6 Hz, 2 H), 7.17 (d, J = 16.0 Hz, 1 H), 6.81–6.73 (m, 2 H), 5.80 (s, 2 H), 3.01 (s, 6 H). 13C NMR (100 MHz, DMSO-d6) δ 154.30, 151.91, 147.58, 143.64, 142.87, 141.78, 130.26, 129.49, 124.00, 122.57, 122.23, 116.80, 111.80, 60.45. calcd for C22H22N3O2 m/z M+ 360.1, found 360.1.
 
-## Cell culture
+### Cell culture
 
 MHCC97H, FaDu, A549, RAW264.7 and A7r5 cells were grown in Dulbecco’s modified Eagle’s medium (DMEM) with 10 % fetal bovine serum (FBS) and 100 U/mL penicillin and 100 U/mL streptomycin. The cells were negative for mycoplasma contamination.
 
-## Cell line derived tumor xenograft mouse models
+### Cell line derived tumor xenograft mouse models
 
 The BALB/c nude mouse (4–6 weeks old, female) were originally purchased from the SPF experimental Animal Center. All experimental procedures were conducted in accordance with the protocols approved by the Department of Laboratory Animal Science, Fudan University (202012023 S). Three cell lines including MHCC97H cells, FaDu cells and A549 cells were used to form tumor-bearing animal models for the in vivo and ex vivo imaging study. Tumor cells for subcutaneous flank graft were suspended in 100 μL of serum-free media. BALB/c nude mice were injected subcutaneously in the flank with about 1 × 106 cells of each cell line to form tumor-bearing mouse models, respectively. Tumors with diameters of around 8 mm were formed after 21 days.
 
-## Surgical specimens
+### Surgical specimens
 
 Surgical resected tumor specimens, including lung carcinoma, renal carcinoma and hepatocellular carcinoma specimens were collected from Zhongshan Hospital, Fudan University and oral carcinoma specimens were collected from Shanghai Ninth People’s Hospital, Shanghai Jiaotong University School of Medicine. Written informed consent and consent to publish were obtained from all patients before participation. All procedures were conducted in accordance with the protocols approved by the Ethics Committee of the Institutes of Biomedical Sciences, Fudan University (2020–014). The tissue samples were immediately used for fluorescence imaging experiments. Nine hepatocellular cancer samples were obtained from nine individual patients (mean age: 49.7 years; range: 39–61 years; 7 males), five lung cancer samples were obtained from five individual patients (mean age: 65.8 years; range: 55–76 years; 3 males), five oral cancer samples were obtained from five individual patients (mean age: 67.8 years; range: 58–78 years; 4 males), and six renal cancer samples were obtained from six individual patients (mean age: 67.8 years; range: 58–78 years; 2 males).The patients’ basic information is available in Supplementary file 6.
 
-## Preparation and purification of E. coli nitroreductase
+### Preparation and purification of E. coli nitroreductase
 
 Primers were designed according to the nitroreductase gene sequence (NC_000913.3), primer 1 is 5’-GGTGCTCGAGTTACACTTCGGTTAAGGTGA-3’, primer 2 is 5’-TCGCGGATCCATGGATATCATTTCTGTCGC-3’, and the underscore was the cleavage site of XhoI and BamHI. The nitroreductase gene sequence was amplified in the Escherichia coli genome by PCR with primers 1 and 2. The process of PCR began with denaturation at 95 °C for 1 min, 30 cycles of ampliﬁcation (95 °C for 30 s, 49 °C for 20 s, 72 °C for 30 s), and ended with a single extension step of 72 °C for 3 min. The PCR products were obtained by gel extraction kit and digested by XhoI and BamHI, then cloned to pET-28a. The correct recombinant pET-28a-nitroreductase was confirmed by sequencing. pET-28a-nitroreductase was transformed into chemically competent E. coli BL21 (DE3) cells, an aliquot was plated on SOB agar with kanamycin (50 μg/ml) and grew overnight at 37 °C. A single colony was used for the preculture of which 10 mL was inoculated in 1 L SOB medium with kanamycin (50 μg/ml). The bacterial culture was incubated at 37 °C, 200 rpm until OD 600 of 0.6–0.8 was reached and then changed the temperature to 15 °C for another 2 hr. Then the production of the protein was induced with 0.5 mM IPTG and the culture was incubated at 15 °C, 200 rpm for additional 15 hr. Then E. coli cells were harvested by centrifugation (5000 rpm for 15 min at 4 °C). The cell pellet was resuspended in pre-cooled lysis buffer (50 mM Tris-HCl, 300 mM NaCl, 2/10,000 mercaptoethanol, pH 8.0) and lysed by sonication. Cell debris was removed by centrifugation (15,000 rpm for 30 min at 4 °C), the soluble fraction was loaded onto Ni agarose column and the resulting suspention was gently mixed for 2 hr at 4 °C. The column was washed with 3 × 1 bed volumes of pre-cooled lysis buffer and finally the protein was gradient eluted with elution buffer (50 mM Tris-HCl, 150 mM NaCl, 2/10000 mercaptoethano, pH 8.0) containing different imidazole range from 20 mM to 500 mM. Elution buffer was exchanged to storage buffer (50 mM Tris-HCl, 150 mM NaCl, 0.1 mM EDTA, 1 mM DTT, pH 8.0, 10 % glycerol (v/v)). Protein concentration was determined by using BCA protein assay kit.
 
-## Fluorescence and UV-Vis absorption spectroscopy
+### Fluorescence and UV-Vis absorption spectroscopy
 
 The solutions for viscosity were prepared by mixing EtOH and glycerol in different proportions. The solutions of IBS440 in different viscosities were prepared by adding the stock solution of IBS440 (1 mM, 50 μL) to EtOH-glycerol mix solution (5 mL) to obtain the final concentration of IBS440 (10 μM). These solutions were sonicated for 30 min to eliminate air bubbles. Then, the fluorescence spectra were recorded at excitation of 500 nm with both the excitation and emission slit widths set at 1 nm. The relationship between the fluorescence emission intensity of IBS440 and the viscosity of the solvent was well expressed by the Forster-Hoffmann equation: log(If) = c + x log η, where If was the fluorescence intensity, η was the viscosity of solution, x and c were constant.
 
 In a reaction buffer solution (50 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.1 mM EDTA, pH 8.0), IBS440 and NADPH at a final working concentration of 10 μM and 500 μM were added. The stock solution of IBS440 was 1 mM in DMSO and NADPH was 5 mM in NaOH (50 mM) solution, respectively. Then, nitroreductase with different concentration was added and the reaction mixture was incubated at 37 °C for 60 min. After that, the mixture was incubated at 80 °C for 5 min to inactivate the enzymes and added with DMSO to increase the solubility of IBS224. Fluorescence spectra were recorded at the excitation wavelength of 400 nm with both the excitation and emission slit widths set at 1 nm. Absorption spectra of IBS440 (10 μM), IBS440 (10 μM)+ NADPH (500 μM)+ NTR (9 μg/mL), IBS224 (10 μM) in reaction buffer, containing 20 % DMSO as a co-solvent were recorded, respectively.
 
-## Cytotoxicity assay
+### Cytotoxicity assay
 
 Cell suspension was seeded in 96-well plates and incubated for 24 h (at 37 °C, 5 % CO2). IBS440 and IBS224 of different concentrations (5, 10, 20, 30, 40, 50 μM) were added to the culture plate and incubate for 12 hr and 24 hr. Then the cells were replaced with fresh medium, added with 10 μL CCK8 solution and incubated for 45 min, the absorbance of each plate at 450 nm was recorded.
 
-## Cellular imaging
+### Cellular imaging
 
 Three cell lines including MHCC97H cells, FaDu cells and A549 cells were used for cell imaging experiment. To determine the cellular colocalization of IBS440, the cells were treated with IBS440 for 30 min and further stained with 1 μM Mito-Tracker Green for 15 min. The signal of Mito-Tracker Green was collected in a range of 500–550 nm using 488 nm laser. To detect intracellular nitroreductase, cells were grown at 37 °C under normoxic conditions (20 % O2) for 12 hr after being seeded into confocal dishes. Then cells were devided into two groups and incubated under normoxia and hypoxia conditions (2 % O2) for another 12 hr, respectively. After that, the cell medium was then replaced with 5 μM IBS440 in DMEM media and incubated at 37 °C for 20 min. The cells were washed with PBS twice to remove the free IBS440. All cell images were obtained with excitation at 405 nm and emission in a range of 480–530 nm. Hoechst 33,342 (blue channel) was also used to stain the cell nuclei to improve image visualization.
 
@@ -142,7 +479,7 @@ To detect cellular viscosity, the cancerous cells (MHCC97H, A549 and FaDu) and n
 
 To test the uptake of Mito-Tracker Green in different cells, the cancerous cells (MHCC97H, A549 and FaDu) and noncancerous cells (RAW264.7, A7r5) were incubated with a commercial lipophilic mitochondrial dye Mito-Tracker Green (1 μM) for 20 min, then the cells were washed with PBS twice and taken image. The fluorescence signal of Mito-Tracker Green was collected in an emission range of 500–550 nm using 488 nm laser.
 
-## In vivo and ex vivo fluorescence imaging
+### In vivo and ex vivo fluorescence imaging
 
 Briefly, 100 μL of 10 μM IBS440 solution was injected in situ of tumor. Before imaging, the tumor-bearing mice were anesthetized with isoflurane. Fluorescence imaging was acquired with excitation of 500 nm and collected with 600 nm emission filter for in vivo viscosity detection. After about 20 min, fluorescence imaging was acquired with excitation of 410 nm and collected with 560 nm emission filter for nitroreductase detection.
 
@@ -152,10 +489,10 @@ The surgical specimens were trimmed and incubated with IBS440 solution (10 μM) 
 
 Imaging of resected tumor specimens was performed using a fluorescence imaging device (In Vivo Xtreme, Bruker). Exposure type: Standard, Exposure time: 2 s, fStop: 1.4. Using an image processing program (Image J), max fluorescence intensity (gray-scales of images) of every specimen was recorded.
 
-## Histological staining
+### Histological staining
 
 The mouse tumor, major mouse organs including heart, liver, spleen, lung and kidney, and surgical specimens were sectioned into 2 mm tissue sections and fixed with 10 % paraformaldehyde for 24 hr. Subsequently, the tissue sections were embedded in paraffin and representative 5 μm sections were cut for routine hematoxylin and eosin staining and evaluation.
 
-## Immunoblotting analysis
+### Immunoblotting analysis
 
 Cell suspensions (1 × 106) were counted and cultured in six-well plates under normoxic (20 % O2) or hypoxia (2 % O2) conditions. Being cultured for 12 hr or 24 hr, cells were digested and washed with PBS, then resuspended in 1× SDS protein loading buffer, denatured at 100 °C for 10 min and centrifuged for 5 min to remove the cell fragments. The samples were separated by 12 % SDS-PAGE gel and transferred to PVDF membranes. The membranes were blocked with 5 % skimmed milk in PBS-T for 2 hr, then incubated with primary antibodies at 4 °C overnight. HRP-conjugated secondary antibody was used for detection.

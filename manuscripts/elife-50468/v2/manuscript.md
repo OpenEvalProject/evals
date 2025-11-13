@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Multidrug-resistant Klebsiella pneumoniae is an increasing cause of infant mortality in developing countries. We aimed to develop a quantitative understanding of the drivers of this epidemic by estimating the effects of antibiotics on nosocomial transmission risk, comparing competing hypotheses about mechanisms of spread, and quantifying the impact of potential interventions. Using a sequence of dynamic models, we analysed data from a one-year prospective carriage study in a Cambodian neonatal intensive care unit with hyperendemic third-generation cephalosporin-resistant K. pneumoniae . All widely-used antibiotics except imipenem were associated with an increased daily acquisition risk, with an odds ratio for the most common combination (ampicillin + gentamicin) of 1.96 (95% CrI 1.18, 3.36). Models incorporating genomic data found that colonisation pressure was associated with a higher transmission risk, indicated sequence type heterogeneity in transmissibility, and showed that within-ward transmission was insufficient to maintain endemicity. Simulations indicated that increasing the nurse-patient ratio could be an effective intervention.
+Multidrug-resistant Klebsiella pneumoniae is an increasing cause of infant mortality in developing countries. We aimed to develop a quantitative understanding of the drivers of this epidemic by estimating the effects of antibiotics on nosocomial transmission risk, comparing competing hypotheses about mechanisms of spread, and quantifying the impact of potential interventions. Using a sequence of dynamic models, we analysed data from a one-year prospective carriage study in a Cambodian neonatal intensive care unit with hyperendemic third-generation cephalosporin-resistant K. pneumoniae. All widely-used antibiotics except imipenem were associated with an increased daily acquisition risk, with an odds ratio for the most common combination (ampicillin + gentamicin) of 1.96 (95% CrI 1.18, 3.36). Models incorporating genomic data found that colonisation pressure was associated with a higher transmission risk, indicated sequence type heterogeneity in transmissibility, and showed that within-ward transmission was insufficient to maintain endemicity. Simulations indicated that increasing the nurse-patient ratio could be an effective intervention.
 
 ## Introduction
 
@@ -41,9 +41,94 @@ To address these knowledge gaps, we used data collected from a year-long prospec
 
 ## Results
 
-## Descriptive epidemiological data
+### Descriptive epidemiological data
 
 Over the year-long observation period, there were consistently high rates of patient carriage of third generation cephalosporin-resistant (3GC-R) K. pneumoniae sensu lato. Of 333 infants admitted to the neonatal unit, 121 of 289 (42%) were found to be colonised on the first swab taken within 48 hours of ward admission. A further 21 out of 44 (48%) were positive on the first swab that was taken more than 48 hours after admission. Overall, 109/191 (57%) infants who initially screened negative for 3GC-R K. pneumoniae s.l. became positive during their stay in the neonatal unit. Almost all 3GC-R K. pneumoniae s.l. isolates were ESBL producers (1412/1423; 99%), and only 5/1423 (0.35%) were resistant to imipenem. Co-colonisation with 3GC-R E. coli was observed in 52 infants on their first swab, and a further 102 infants became co-colonised with both resistant organisms during their stay on the neonatal unit. Full details on the study population, including blood-stream infections and mortality have been reported previously (Turner et al., 2016), and a summary is provided in Table 1.
+
+**Table 1.**
+ Summary of characteristics of infants admitted to the neonatal intensive care unit at a children’s hospital in Cambodia from September 2013 to September 2014.Colonisation status with third generation cephalosporin-resistant Klebsiella pneumoniae sensu lato was recorded through prospectively taken rectal swabs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Males</th>
+      <th>Females</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Patients</td>
+      <td>177 (53.1%)</td>
+      <td>156 (47.8%)</td>
+      <td>333 (100%)</td>
+    </tr>
+    <tr>
+      <td>Length of Stay in Days Median, (IQR)*</td>
+      <td>**6 (4, 11)</td>
+      <td>6 (4, 11)</td>
+      <td>6 (4, 11)</td>
+    </tr>
+    <tr>
+      <td>Colonised with K. pneumoniae at Entry (or Unknown Time)†</td>
+      <td>66 (10)</td>
+      <td>55 (11)</td>
+      <td>121 (21)</td>
+    </tr>
+    <tr>
+      <td>Colonised with K. pneumoniae During Admission</td>
+      <td>54/101 (54.5%)</td>
+      <td>55/90 (61.1%)</td>
+      <td>109/191 (57.1%)</td>
+    </tr>
+    <tr>
+      <td>Co-colonised with K. pneumoniae and E. coli at Entry (or Unknown Time)†</td>
+      <td>26 (5)</td>
+      <td>19 (2)</td>
+      <td>45 (7)</td>
+    </tr>
+    <tr>
+      <td>Co-colonised with K. pneumoniae and E. coli During Admission</td>
+      <td>49/146 (33.6%)</td>
+      <td>53/135 (39.3%)</td>
+      <td>102/281 (36.3%)</td>
+    </tr>
+    <tr>
+      <td>Age at Entry in Days (IQR)*</td>
+      <td>*8 (2, 15)</td>
+      <td>9 (1, 17)</td>
+      <td>8 (1, 16)</td>
+    </tr>
+    <tr>
+      <td>Probiotic Taken‡</td>
+      <td>76/177 (42.9%)</td>
+      <td>62/156 (39.7%)</td>
+      <td>138/333 (41.4)</td>
+    </tr>
+    <tr>
+      <td>Breast Milk Fed</td>
+      <td>163/177 (92.1%)</td>
+      <td>139/156 (89.1%)</td>
+      <td>302/333 (90.1%)</td>
+    </tr>
+    <tr>
+      <td>Severe§</td>
+      <td>35/177 (19.8%)</td>
+      <td>32/156 (20.5%)</td>
+      <td>67/333 (20.1%)</td>
+    </tr>
+    <tr>
+      <td>Born Premature</td>
+      <td>30/177 (16.9%)</td>
+      <td>24/156 (15.4%)</td>
+      <td>54/333 (16.2%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Interquartile range. † Colonised at entry is defined as an initial positive swab within the first 48 hours of admission; if the first swab is positive and it was taken later than 48 hours from admission then the infant is considered to be colonised at an unknown time. ‡ Assigned by clinician to receive oral Lactobacillus acidophilus. § Severe symptoms are requiring ventilation, continuous airway pressure or inotopes._
 
 The daily counts of infants known to be colonised with 3GC-R K. pneumoniae s.l. (Figure 1A), shows no clear trend but large stochastic fluctuations, which are expected given the small size of the ward (eight beds) and frequent discharges of patients and introduction of colonised infants (imported carriage). A representation of swabbing interval outcomes, as used in the models, is shown in Figure 1B. While the median length of stay was four days, the distribution is highly skewed with a tail of long-staying patients (Figure 1C). The most frequently used antibiotic combination was ampicillin with gentamicin which was used empirically to treat suspected sepsis in infants admitted from the community and was taken on one fifth (19%) of patient days on the ward. This was followed by imipenem, which was taken on 12% of patient days. Imipenem was typically used when culture results showed non-susceptibility to first-line antibiotic choices and empirically in infants with suspected hospital-acquired infection. All other antibiotic combinations were used at a much lower frequency (Figure 1D).
 
@@ -51,51 +136,240 @@ The daily counts of infants known to be colonised with 3GC-R K. pneumoniae s.l. 
 
 **Figure 1.:** Daily counts of neonates colonised with third generation cephalosporin-resistant (3GC-R) Klebsiella pneumoniae sensu lato over the study period are shown in panel A, where colour reflects uncolonised, imported or acquired cases, according to case definitions. The total height of the peaks shows the ward occupancy on that day. The results from rectal swabs among the 191 infants uncolonised at entry for 3GC-R K. pneumoniae s.l. are shown in panel B, with the window highlighting the swab outcomes from the first thirty five infants uncolonised at entry. Each row represents a patient and each coloured block represents a swab interval, where the width is the number of days in the interval (i.e. time between swabs). Outcomes are shown up to the first swab positive for 3GC-R K. pneumoniae s.l., after which time the patient is assumed to be colonised until discharge. The length of stay distribution for infants in the neonatal unit is shown as a histogram in panel C, where the bin width is two days. An infant’s length of stay is the total time in the neonatal unit during the study period, including re-admissions. The 333 infants were present in the neonatal unit for a total of 3417 study days. The proportion of study days when infants took the six most common antibiotic combinations, or other antibiotics, or none are shown in panel D.
 
-## Factors associated with carriage acquisition
+### Factors associated with carriage acquisition
 
 Infants were prospectively screened for the organism whilst on the ward by culture of rectal swabs on selective media. For infants with negative cultures for 3GC-R K. pneumoniae s.l. on admission to the ward, the outcome (acquisition of the organism) was therefore interval censored between subsequent rectal swabs that were taken a median of 2 days apart (IQR 1, 3 days). In total there were 400 swab outcomes (either negatives or a first positive swab) over 864 patient days from 191 infants with a negative culture at entry.
 
 Four models were fitted to the interval censored swab data to determine factors associated with daily risk of carriage acquisition. The best performing single intercept model (model A; Table 2) with the lowest WAIC (see Methods) considered exposure to antibiotics in the previous 96 hours and did not include a term for colonisation pressure (i.e. daily per-patient acquisition risk did not depend on the number of other patients who were colonised on a given day). Models with a 48 hour antibiotic exposure period (model B) and those that included a colonisation pressure term (model C) showed slightly worse fits.
 
+**Table 2.**
+ Comparison of models for the risk of acquiring third generation cephalosporin-resistant Klebsiella pneumoniae sensu lato over 864 patient days in a neonatal intensive care unit in Cambodia.Models vary by explanatory variables (A-C) or by permitting the intercept to vary between study months in a hierarchical model (D). Models were fitted on the log-odds scale with a logit link function, hence prior distributions are shown as log-odds. Posterior parameter distributions have been transformed using the logistic function and are shown as probabilities. Prior distributions are normal distributions, shown in brackets are the mean and standard deviation respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Risk Factor Model</th>
+      <th>Parameters</th>
+      <th>Priors</th>
+      <th>Posterior Median (95% CrI)*</th>
+      <th>WAIC†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(A) Single intercept Standard covariates‡ 96 hour antibiotic exposure</td>
+      <td>α (intercept) β (slopes)</td>
+      <td>normal(0, 10) normal(0, 5)</td>
+      <td>0.23 (0.055, 0.60) ORs§ in results</td>
+      <td>438</td>
+    </tr>
+    <tr>
+      <td>(B) Single intercept Standard covariates‡ 48 hour antibiotic exposure</td>
+      <td>α (intercept) β (slopes)</td>
+      <td>normal(0, 10) normal(0, 5)</td>
+      <td>0.26 (0.068, 0.63) Not shown</td>
+      <td>441</td>
+    </tr>
+    <tr>
+      <td>(C) Single intercept Standard covariates‡ + colonisation pressure term¶ 96 hour antibiotic exposure</td>
+      <td>α (intercept) β (slopes)</td>
+      <td>normal(0, 10) normal(0, 5)</td>
+      <td>0.26 (0.059, 0.64) Not shown</td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <td>(D) Intercept varies by month Standard covariates‡ 96 hour antibiotic exposure</td>
+      <td>α[month] (intercept) μ (normal mean) σ (normal standard de- viation) β (slopes)</td>
+      <td>normal(μ, σ) normal(0, 3) half-normal(0, 1) normal(0, 3)</td>
+      <td>Varies by month†† 0.21 (0.044, 0.57) 0.54 (0.51, 0.63) Not shown</td>
+      <td>440</td>
+    </tr>
+  </tbody>
+</table>
+
+_* 95% Credible interval. † Widely applicable information criterion (a model comparison statistic where lower values indicate better fitting models). ‡ Standard covariates: use of ampicillin, ampicillin + gentamicin, cloxacillin (oral), ceftriaxone, cloxacillin + gentamicin, and imipenem within the previous 48 or 96 hours; whether breast fed; receipt of an oral probiotic on entry (Lactobacillus acidophilus), sex, premature (born before the 37th week of pregnancy), severity (defined as severe if requiring ventilation, continuous positive airway pressure or inotopes), already colonised with 3GC-R E. coli, age in days on first admission to the NU, and the daily number of nurses on the ward. These explanatory variables were treated as binary and, where appropriate, time-varying. Covariates were recorded for every day the infant was present in the neonatal unit (see Methods for full details). § Odds ratios. ¶ Colonisation pressure is the number of known colonised patients on the ward on a given day. †† Median posterior probability ranges by month 0.20–0.23._
+
 The covariates associated with reduced daily risk of acquisition were breast milk feeding (odds ratio [OR] 0.69 [95% CrI 0.35, 1.41]) and increasing the number of nurses, for instance three nurses in the ward was associated with an OR of 0.55 (95% CrI 0.15, 1.77) relative to zero nurses (baseline). Male sex was also associated with a reduced risk of acquisition (OR 0.68 [95% CrI 0.43, 1.04]). Other covariates such as taking a probiotic (OR 0.88 [95% CrI 0.55, 1.41]), a severe condition (OR 1.10 [95% CrI 0.55, 2.13]), prior colonisation with 3GC-R E. coli (OR 1.07, [95% CrI 0.65, 1.75]), and age at admission (10 days compared with zero days, OR 0.95 [95% CI 0.73, 1.24]) had ORs distributions centred closer to unity. As anticipated (though, to our knowledge, not previously shown), antibiotics taken (intravenously, with the exception of cloxacillin) within the past 96 hours were mostly associated with an increased risk of colonisation with 3GC-R K. pneumoniae s.l.. Ampicillin (OR 1.77 [95% CrI 0.88, 3.26]), ampicillin with gentamicin (OR 1.96 [95% CrI 1.18, 3.36]), ceftriaxone (OR 1.85 [95% CrI 0.68, 4.54]), oral cloxacillin (OR 1.49 95% CrI 0.47, 4.02]), and cloxacillin with gentamicin (OR 1.94 [95% CrI 0.55, 5.66]) were all associated with an increased risk of acquisition. Only intravenous imipenem (OR 1.01 [0.40, 2.30]) had a posterior distribution centred near unity, consistent with the carbapenem sensitivity of 3GC-R K. pneumoniae found in this setting. See Figure 2A for odds ratio posterior distributions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50468/elife-50468-fig2-v2.jpg)
+
+**Figure 2.:** Odds ratios for the daily risk of colonisation are shown in panel A. The daily risk of colonisation per patient day is shown in panel B. Note that the 864 patient days have been thinned by a factor of five for visualisation. The cumulative risk for different patient scenarios is explored in panel C; a four day old girl, born full term, without severe conditions, breast milk fed and not taking antibiotics or probiotics over eight days in the neonatal unit is shown in blue. The red line shows the same infant, however ampicillin + gentamicin is taken from day three onwards. The lines and points in both cases show the cumulative probability posterior median, and the shaded area shows the 80% credible interval (CrI). In panel D, we took the probability of colonisation for each of the 400 swab interval and binned them into five quantiles. We then compared the expected number of colonisation events predicted by the model with the observed number of colonisation events (squares) in the swab intervals by quantile. In panels A, B and D points represent posterior medians, thick blue/purple lines represents the 80% CrI and thinner black lines represent the 95% CrI.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50468/elife-50468-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The parameters are the intercept [alpha] and 14 slopes for covariates [betas]. The Gelman-Rubin diagnostic ($R^$) is <1.01 for all parameters. The tail effective sample size (ESStail) ranges from 1948 to 2499 and the bulk effective sample size (ESSbulk) ranges from 1808 to 2350.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50468/elife-50468-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The intercept (α) prior is varied from normal (μ=0, σ=10) to normal (μ=0, σ=2). This changes the median posterior probability from 0.23 to 0.26 (panels A and B). Covariate prior distributions were varied from normal (μ=0, σ=5) to normal (μ=0, σ=1.5). The median odds ratio for the effect of breast feeding on the risk of acquisition/detection of resistant Klebsiella pneumoniae changes from 0.68 to 0.69 (C–D), and the effect of taking ampicillin + gentamicin within the past 48 hours changes from 2.0 to 1.9 (E–F). Note that priors are fitted on the log-odds scale and that the prior and posterior distributions shown in this figure have been logit-transformed (A–B) or exponentiated (C–F).
 
 Using the covariate posterior distributions, we also estimated the probability of colonisation for each of the 864 patient days where patients were at risk for acquiring 3GC-R K. pneumoniae s.l.. The median daily probability of first acquisition of 3GC-R K. pneumoniae s.l. for an infant was estimated from the best fitting model as 0.15. There is considerable variability in the risk of acquisition between patient days and the medians of the posterior probability distribution ranges nearly eight-fold from 0.047 to 0.35 (Figure 2B).
 
 The risk of becoming colonised with 3GC-R K. pneumoniae s.l. is cumulative over an infant’s length of stay and varies in response to interventions, such as consumption of antibiotics. We show the cumulative risk of first acquisition under two scenarios: 1) where an initially four day old, breastfed, female infant remains in the ward for eight days without taking antibiotics or probiotics; and 2) where an infant with the same characteristics is prescribed ampicillin with gentamicin from day three onwards. The median cumulative risk of acquiring 3GC-R K. pneumoniae s.l. after eight days for the first scenario is 0.57 (80% CrI 0.42, 0.71) and for the second scenario is 0.75 (80% CrI 0.64, 0.85). Although the median cumulative risk between the two scenarios diverges the longer the infants are in the neonatal unit, the uncertainty also increases with time (Figure 2C).
 
-## Swab sensitivity
+### Swab sensitivity
 
 We estimated the sensitivity of rectal swabs for detecting 3GC-R K. pneumoniae s.l. by examining the swabs that followed a positive from the same patient. There were 936 such swabs which were taken from a patient after at least one swab positive for 3GC-R K. pneumoniae s.l., and 90 (9.6%) of these were negatives. Under the assumption that all negatives following a positive culture are false negatives, the false negative rate posterior median was 0.096 (95% CrI 0.078, 0.12) and the posterior median swab sensitivity was 0.90 (95% CrI 0.88, 0.92). Under the second assumption that three or more consecutive negative swabs following a positive culture represent a true decolonisation event, there were 72 false negatives, giving a false negative rate of 0.073 (95% CrI 0.058, 0.091) and a swab sensitivity of 0.93 (95% CrI 0.91, 0.94).
 
-## Model assessment and comparison
+### Model assessment and comparison
 
-The measures of Markov chain convergence showed high effective sample sizes (>400) and R^<1.01, indicating that the chains had run for long enough and had mixed well (see Methods and Figure 2—figure supplement 1). Model assessment was performed with a posterior predictive check; we estimated the probability of acquisition for each of the 400 swabbing intervals and binned these probabilities into groups defined by the quintiles. We then calculated the expected number of colonisation events in each of the five groups and compared these with the observed number of acquisitions. Within each of these groups, the posterior median of the predicted number of acquisitions was close to the observed number of events, and the observed values were always within the 80% CrI of the model estimates (Figure 2D). The results from fitting risk factor model A with alternative prior distributions are shown in Figure 2—figure supplement 2; substantially reducing the variance of the priors for the model intercept and covariates had a negligible effect on the posterior parameter estimates.
+The measures of Markov chain convergence showed high effective sample sizes (>400) and $R^$<1.01, indicating that the chains had run for long enough and had mixed well (see Methods and Figure 2—figure supplement 1). Model assessment was performed with a posterior predictive check; we estimated the probability of acquisition for each of the 400 swabbing intervals and binned these probabilities into groups defined by the quintiles. We then calculated the expected number of colonisation events in each of the five groups and compared these with the observed number of acquisitions. Within each of these groups, the posterior median of the predicted number of acquisitions was close to the observed number of events, and the observed values were always within the 80% CrI of the model estimates (Figure 2D). The results from fitting risk factor model A with alternative prior distributions are shown in Figure 2—figure supplement 2; substantially reducing the variance of the priors for the model intercept and covariates had a negligible effect on the posterior parameter estimates.
 
 When the intercept was permitted to vary by study month in a hierarchical model (risk factor model D; Table 2), little variation was observed between months; the median posterior baseline probability ranged from 0.20 to 0.23 with wide credible intervals. As these models did not include a colonisation pressure term, the intercept incorporated time-varying changes in the underlying intensity of transmission. The low variance in the monthly intercepts therefore suggests a relatively constant force of infection over the 12-month study period. In models where we included a colonisation pressure term (risk factor model C; Table 2) this was found to have a slightly negative slope for acquisition of 3GC-R K. pneumoniae s.l. (OR 0.96 [95% CrI 0.86, 1.09]). This is surprising, as if patient-to-patient transmission was occurring, we would usually expect the force of infection to increase with the colonisation pressure (Bonten, 2012). The finding therefore suggested that one of the following three possibilities was true: i) patient-to-patient transmission was not occurring at a high frequency in this ward; ii) patient-to-patient transmission was occurring but, because of the continually high ward-level prevalence, variations in the force of infection could not be identified; iii) patient-to-patient transmission was occurring but exposure to the presence of two or more colonised patients presented a similar risk for acquisition as exposure to one. We therefore used K. pneumoniae s.l. whole-genome sequence data to help determine the most plausible scenario.
 
-## Klebsiella whole-genome assemblies
+### Klebsiella whole-genome assemblies
 
 We examined whole-genome assemblies of 317 3GC-R K. pneumoniae s.l. isolates cultured from rectal or environmental swabs in the neonatal unit over a four month period (see Methods). A phylogeny based on k-mer distances between assemblies is shown in Figure 3A. Of note is the highly diverse and structured nature of the pathogen population, in contrast to one dominated by a clonal expansion of a single lineage. Overall 62 distinct sequence types were identified in our collection of isolates. The species identified from culture as K. pneumoniae s.l. consists of three distinct subpopulations that meet the criteria for separate species. We isolated all three species from infants in the cohort (K. pneumoniae n = 219, K. quasipneumoniae subspecies similipneumoniae n = 95, K. variicola n = 3), and found diversity similar to that observed in a global collection of K. pneumoniae isolates (Holt et al., 2015), suggesting that the diversity accumulated within a Cambodian neonatal unit over four months is comparable to the diversity of K. pneumoniae globally. Many STs were characterised by only a single carriage isolate, suggestive of importations that were not subsequently transmitted to other patients (Figure 3B). The STs with the largest number of carriage isolates were ST334 (K. quasipneumoniae; n = 29), ST101 (K. pneumoniae; n = 21), ST1074 (K. pneumoniae; n = 21) and ST45 (K. pneumoniae; n = 17). The most frequent blaESBL genes in the whole-genome assemblies were CTX-M-15 (201/317; 63%), followed by CTX-M-14 (43/317; 13%) and CTX-M-63 (38/317; 12%).
 
-## Transmission models for sequence types
+![Figure 3.](https://cdn.elifesciences.org/articles/50468/elife-50468-fig3-v2.jpg)
+
+**Figure 3.:** An unrooted phylogeny of 317 3GC-R Klebsiella isolates cultured from rectal and environmental swabs over a four month period in a neonatal unit in a children’s hospital in Cambodia is shown in panel A, where the branch lengths correspond to the mash distance (a measure of k-mer similarity) between whole-genome assemblies. The four largest STs are labelled as well as the population subdivisions by Klebsiella species. The frequency distribution of STs is shown in panel B, with the four largest STs shown in colour. Results from a transmission model estimating the force of infection by ST are shown in panel C, where the force of infection scales linearly with the number of colonised infants with that ST. The largest four STs have again been highlighted. Horizontal jitter has been applied to prevent overplotting of points. The uncertainty around the transmission parameter estimates are shown in panel D for the four most common STs, where the posterior mean is shown with a dotted line. The daily incidence of new colonisation events with the four most frequent STs are shown between the 1st January to the 15th March 2014 in panel E, along with the estimated force of infection over the same period in panel F using parameter estimates of β from transmission model 4 (Table 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50468/elife-50468-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Transmission model 1; intercept [alpha] $R^$=1.001, ESSbulk = 1359, ESStail = 1171. (B) Transmission model 2; alpha and beta; $R^$ ranges from 1.001 to 1.002, ESSbulk ranges from 1144 to 1298, ESStail ranges from 1247 to 1282. (C) Transmission model 3; alpha, beta, gamma and lambda. R̂ ranges from 1.000 to 1.003, ESSbulk ranges from 1274 to 1396, ESStail ranges from 1180 to 1285. (D) Transmission model 4. alpha and beta hyper-parameters scale/shape 1, location/shape two and transmission parameters for each ST (62, not shown), $R^$ ranges from 0.999 to 1.003, ESSbulk ranges from 1687 to 2887 and ESStail ranges from 2105 to 2796.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50468/elife-50468-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The more informative prior, half-normal(µ=1, σ=2), gave a median parameter estimate of 4.7 (panel A) corresponding to an environmental half life of 3.6 hours (panel C). The less informative prior, half-normal(µ=0, σ=5), gave a median parameter estimate of 6.7 (panel B) corresponding to an environmental half life of 2.5 hours (panel C). The only published estimate of resistant Klebsiella pneumoniae half life on surfaces is 12 hours (λ=1.39, see Methods), therefore the informative prior gives more weight to biologically plausible values of λ. The qualitative interpretation of the model (that environmental contamination with K. pneumoniae decays quickly) is unchanged with either prior, as is WAIC.
+
+**Table 3.**
+ Transmission models fitted to prospectively collected, genotyped swab data on the acquisition of third-generation cephalosporin-resistant (3GC-R) Klebsiella pneumoniae sensu lato.The table shows the parameters, prior and posterior distributions along with the WAIC (model comparison measure where lower values indicate a better fit to data). See methods for equations. Normal prior distributions show the mean and standard deviation respectively within brackets, beta prior distributions show the two shape parameters within brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transmission Model (Equations in Methods)</th>
+      <th>Parameters</th>
+      <th>Priors</th>
+      <th>Posterior Median (95% CrI)*</th>
+      <th>WAIC †</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(1) Constant risk of transmission</td>
+      <td>α (intercept)</td>
+      <td>beta(2, 8)</td>
+      <td>0.0038 (0.0032, 0.0044)</td>
+      <td>1919</td>
+    </tr>
+    <tr>
+      <td>(2) Pseudo mass action (PMA) principal</td>
+      <td>α (intercept) β (transmission)‡</td>
+      <td>beta(2, 8) beta(2, 8)</td>
+      <td>0.0019 (0.0015, 0.0024) 0.0096 (0.0075, 0.012)</td>
+      <td>1739</td>
+    </tr>
+    <tr>
+      <td>(3) PMA plus environmen- tal contamination, from colonised patients, which decays over time</td>
+      <td>α (intercept) β (transmission)‡ γ (environment) λ (decay term)</td>
+      <td>beta(2, 8) beta(2, 8) beta(2, 8) half-normal(1, 2)</td>
+      <td>0.0019 (0.0014, 0.0023) 0.0088 (0.0063, 0.011) 0.097 (0.0086, 0.37) 4.7 (2.2, 7.1)</td>
+      <td>1740</td>
+    </tr>
+    <tr>
+      <td>(4) Hierarchical PMA varying transmission coefficient by ST4</td>
+      <td>α (intercept) β (transmission)‡ αs (beta shape 1) βs (beta shape 2)</td>
+      <td>beta(2, 8) beta(αs , βs ) half-normal(2, 5) half-normal(8, 5)</td>
+      <td>0.0021 (0.0016, 0.0026) Varies by ST§ 0.23 (0.14, 0.38) 17 (9.7, 25)</td>
+      <td>1733</td>
+    </tr>
+    <tr>
+      <td>(5) Hierarchical PMA varying intercept by ST§</td>
+      <td>α (intercept) β (transmission)‡ αs (beta shape 1) βs (beta shape 2)</td>
+      <td>beta(αs , βs ) beta(2, 8) half-normal(2, 5) half-normal(8, 5)</td>
+      <td>Varies by ST§ 0.0094 (0.0073, 0.012) 0.23 (0.16, 0.31) 21 (13, 29)</td>
+      <td>1793</td>
+    </tr>
+  </tbody>
+</table>
+
+_* 95% Credible interval. † Widely applicable information criterion (WAIC). ‡ Transmission parameter that is multiplied by the number of infants colonised with the sequence type on the same day to give the force of infection (colonisation pressure). § 3GC-R K. pneumoniae s.l. sequence type (ST)._
+
+### Transmission models for sequence types
 
 We fitted mechanistic models representing different transmission processes to the ST swab data. Within the four month period where sequence data were available, there were 171 events for first acquisition of a 3GC-R K. pneumoniae s.l. ST among 150 infants. Among transmission models 1–3 that were initially tested, the model with the best fit to data by WAIC was transmission model 2 (see Table 3 and Methods), which has an intercept (α), representing a constant risk of acquisition, and a slope (β) which scales the risk of acquisition for each infant colonised with a given ST in the ward (i.e. it accounts for colonisation pressure). The model estimated the values for α as 0.0019 (95% CrI 0.0015, 0.0023) and β as 0.0097 (95% CrI 0.0075, 0.012). We then fitted transmission model 2 with a random effect term, where β was permitted to vary by ST and the underlying distribution of β was assumed to follow a beta distribution, with shape hyper-parameters α and β (transmission model 4). We also fitted transmission model 2 with a random effect term where α was permitted to vary by ST (transmission model 5).
 
 Transmission model 1 has a constant colonisation pressure by ST which was not linked to the daily number of colonised individuals with that ST; this model showed a substantially worse fit to the data by WAIC (Table 3). Transmission model 3, which included terms for colonisation pressure and contamination in the hospital environment also failed to improve the model fit, and the high estimate for λ (4.7 95% CrI [2.0, 7.0]) suggests that contamination left by previously colonised infants decays rapidly to background levels, with an estimated environmental half life of 3.6 hours (95% CrI 2.4, 7.6 hours; Table 4). Varying the α parameter by ST (transmission model 5) resulted in a substantially worse fit to data, suggesting there was not enough information in the model to differentiate ST-specific background rates of colonisation.
 
+**Table 4.**
+ Key epidemiological parameters estimated in this study from longitudinal swab data on third generation cephalosporin-resistant Klebsiella pneumoniae sensu lato from a neotatal intensive care unit from a Children’s Hospital in Cambodia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Method</th>
+      <th>Estimate</th>
+      <th>Uncertainty interval</th>
+      <th>Key Assumptions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Daily risk of acquisition for neonates</td>
+      <td>Bayesian regression model</td>
+      <td>0.15</td>
+      <td>0.091, 0.19 (IQR*)</td>
+      <td>Culture diagnostic 100% sensitive</td>
+    </tr>
+    <tr>
+      <td>Force of infection from one colonised infant</td>
+      <td>Bayesian transmission model</td>
+      <td>0.016</td>
+      <td>0.0093, 0.027 (95% CrI†)</td>
+      <td>Expected values from transmission model 4</td>
+    </tr>
+    <tr>
+      <td>Swab sensitivity (1)</td>
+      <td>Negatives following a positive swab Beta conjugate prior</td>
+      <td>0.90</td>
+      <td>0.88, 0.92 (95% CrI†)</td>
+      <td>All positives are false negatives Beta(1,7) prior</td>
+    </tr>
+    <tr>
+      <td>Swab sensitivity (2)</td>
+      <td>Negatives following a positive swab Beta conjugate prior</td>
+      <td>0.93</td>
+      <td>0.91, 0.94 (95% CrI†)</td>
+      <td>Three consecutive negatives are a true decolonisation Beta(1,7) prior</td>
+    </tr>
+    <tr>
+      <td>Environmental half life‡</td>
+      <td>Bayesian transmission model</td>
+      <td>3.6 hours</td>
+      <td>2.4, 7.6 hours (95% CrI*)</td>
+      <td>Exponential decay Normal(1, 2) prior</td>
+    </tr>
+    <tr>
+      <td>Ward reproduction number RA)</td>
+      <td>Agent-based simulation</td>
+      <td>0.65</td>
+      <td>0.36, 1.1 (95% interval§)</td>
+      <td>Ward size of 8 susceptible neonates</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Interquartile range (IQR) taken from distribution of daily risk of acquisition (Figure 2B). † Credible interval (CrI). ‡ Inverse rate of decay of environmental contamination, as estimated in transmission model 3, multiplied by ln(2). § 95% of simulated values fell within this interval._
+
 The central estimates of the force of infection by ST from transmission model 4 are shown in Figure 3C, with estimates from the four most frequent STs highlighted in colour. The uncertainty around these parameter estimates for the four STs is shown in Figure 3D. The daily interval-censored colonisation incidence for the most frequent STs are clustered in time, generally emerging and reaching extinction in the ward within a matter of weeks, suggestive of importation and subsequent patient-to-patient transmission. The incidence and estimated force of infection for the four most frequent STs over a period in the study where all 3GC-R K. pneumoniae s.l. isolates were sequenced are shown in Figure 3E and F. Parameter estimates for all transmission models are shown in Table 3. Model fitting diagnostics showed that Markov chains had converged satisfactorily (see Methods and Figure 3—figure supplement 1).
 
-## Sequence Type SNP diversity
+### Sequence Type SNP diversity
 
 We mapped reads from isolates in two STs with the highest estimated force of infection (ST45 and ST101; see Figure 3) to ST consensus reference genomes. The 21 ST101 carriage isolates had a mean read depth ranging from 25x to 125x (median 57x), and the 17 ST45 carriage isolates had a mean read depth ranging from 20x to 67x (median 56x). All the carriage isolates in both STs had >90% of the genome covered by >5x coverage. We then called and filtered SNPs (see Methods) to determine if the relatedness of carriage isolates within STs was consistent with recent person-to-person transmission. The pairwise number of variants in ST101 isolates between infants ranged from 15 to 68 SNPs (median 30), which was comparable to the variation seen within infants in ST101 (from 18 to 38 SNPs; median 28). Similarly in ST45 the pairwise SNP differences between infants varied from 13 to 223 (median 125), which was comparable to the within-host ST diversity (from 55 to 212 SNPs; median 124). Therefore the SNP diversity observed within and between-hosts was very similar for both ST45 and ST101.
 
-## Simulations with agent-based models
+### Simulations with agent-based models
 
 We used the posterior parameter estimates obtained from model fitting for forward simulations using a dynamic agent-based model in order to evaluate the potential impact of interventions (see Methods). We first estimated the ward-level reproduction number (RA) for 3GC-R K. pneumoniae s.l. by simulating the introduction of a single colonised patient into a ward of eight susceptible patients. For all patients, length of stay was sampled from the empirical length of stay distribution (Figure 1C) and colonised patients had a transmission potential sampled from the posterior hyperparameter distribution from transmission model 4 (Table 3). The median of the RA distribution was 0.65% and 95% of values fell between 0.36 and 1.09. The distribution of RA values is shown in Figure 4A.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50468/elife-50468-fig4-v2.jpg)
 
-**Figure 4.:** Klebsiella pneumoniae sensu lato among neonates in a Children’s Hospital in Cambodia.The distribution of ward reproduction number (R) values shown in panel AA was obtained by taking 2000 samples from the force of infection posterior distribution, and for each sample running the agent-based simulation 100 times and taking the mean value. The results from simulating counterfactual scenarios with a dynamic agent-based model are shown in panels B, C and D. In B, the proportion of infants taking a probiotic (Lactobacillus acidophilus) on entry to the ward was varied between 0, -.5 and 1 in setting with a high proportion of imported cases (0.4) and a lower proportion of imported cases (0.05). In panel C, the proportion of infants that were breast milk fed was varied was varied between 0.25, 0.5 and 0.9in settings with a high proportion of imported cases (0.4) and a lower proportion of imported cases (0.05). In panel D, the infant nurse ratio was varied between 3:1, 2:1 and 1:1 in settings with a high proportion of imported cases (0.4) and a lower proportion of imported cases (0.05). The outcome measure in all simulations is the proportion of infants susceptible on entry that remained uncolonised with 3GC-R K. pneumoniae s.l. on discharge. The simulated outcomes are displayed as density plots, with dashed lines showing the median value.
+**Figure 4.:** The distribution of ward reproduction number (RA) values shown in panel A was obtained by taking 2000 samples from the force of infection posterior distribution, and for each sample running the agent-based simulation 100 times and taking the mean value. The results from simulating counterfactual scenarios with a dynamic agent-based model are shown in panels B, C and D. In B, the proportion of infants taking a probiotic (Lactobacillus acidophilus) on entry to the ward was varied between 0, -.5 and 1 in setting with a high proportion of imported cases (0.4) and a lower proportion of imported cases (0.05). In panel C, the proportion of infants that were breast milk fed was varied was varied between 0.25, 0.5 and 0.9in settings with a high proportion of imported cases (0.4) and a lower proportion of imported cases (0.05). In panel D, the infant nurse ratio was varied between 3:1, 2:1 and 1:1 in settings with a high proportion of imported cases (0.4) and a lower proportion of imported cases (0.05). The outcome measure in all simulations is the proportion of infants susceptible on entry that remained uncolonised with 3GC-R K. pneumoniae s.l. on discharge. The simulated outcomes are displayed as density plots, with dashed lines showing the median value.
 
 We then simulated the impact of interventions to reduce the rate of 3GC-R K. pneumoniae s.l. acquisition by combining parameter estimates for colonisation pressure from transmission model 4 with the marginal effect of modifiable covariates from risk factor model A (Table 2). In the first intervention scenario, we varied the proportion of infants given an oral probiotic, in addition to varying the proportion of infants that were colonised on entry (imported cases; 5% or 40%). We used as an outcome the proportion of infants susceptible to 3GC-R K. pneumoniae s.l. on admission that remained uncolonised on discharge. When the importation rate was high (40% colonised on entry; similar to our study population, see Table 1), setting the proportion of infants taking the probiotic to be 0%, 50% or 100% resulted in the median proportion remaining uncolonised as 0.54 (95% interval 0.34, 0.72), 0.56 (95% interval 0.38, 0.72) and 0.59 (95% interval 0.39, 0.75) respectively. In the lower importation setting (5% of infants colonised on entry), setting the proportion of infants taking the probiotic to be 0%, 50% or 100% resulted in the median proportion remaining uncolonised as 0.80 (95% interval 0.54, 0.93), 0.82 (95% interval 0.60, 0.93) and 0.84 (95% 0.61, 0.94), respectively.
 
@@ -137,47 +411,101 @@ In summary, this study provides strong evidence for person-to-person within ward
 
 ## Materials and methods
 
-## Epidemiological and microbiological data
+### Epidemiological and microbiological data
 
 We used data collected prospectively from a neonatal intensive care unit in a children’s hospital in Siem Reap, Cambodia between September 2013 (when the neonatal unit newly opened) and September 2014. The study protocol required rectal swabs to be taken within 48 hours of admission and subsequently every two to three days. We assumed that any patient testing positive on their first swab taken within 48 hours of admission was positive on arrival. Patients who had their first swab taken >48 hours from admission but tested negative were included in the analysis, while those that tested positive were omitted. Infants that were re-admitted to the ward and had been colonised prior to first discharge were assumed to still be colonised and were thus excluded. Details of the microbiological treatment of rectal swabs, including resistance assays, have been published previously (Turner et al., 2016).
 
-## Probability of acquisition
+### Probability of acquisition
 
-We estimated the daily probability of colonisation with 3GC-R K. pneumoniae s.l. using a discrete time model with time steps of one day. Each day in the ward a previously uncolonised patient can become colonised. As rectal swabs are not taken on every day of a patient’s stay the outcome is interval censored: we know that a negative swab followed by a positive swab indicates that a patient became colonised on some day between the two swabs, but not on which day. If the probability of becoming colonised on day i for patient j is pij, given the patient is uncolonised at the start of the day, then the probability of remaining uncolonised is (1-pi⁢j). In interval k for patient j consisting of Nkj days, then the probability of remaining uncolonised is:∏i=1Nk⁢j(1-pi⁢j)
+We estimated the daily probability of colonisation with 3GC-R K. pneumoniae s.l. using a discrete time model with time steps of one day. Each day in the ward a previously uncolonised patient can become colonised. As rectal swabs are not taken on every day of a patient’s stay the outcome is interval censored: we know that a negative swab followed by a positive swab indicates that a patient became colonised on some day between the two swabs, but not on which day. If the probability of becoming colonised on day i for patient j is pij, given the patient is uncolonised at the start of the day, then the probability of remaining uncolonised is (1-p$_{i⁢j}$). In interval k for patient j consisting of Nkj days, then the probability of remaining uncolonised is:
 
-Therefore the probability of becoming colonised (vkj) is the complement:vk⁢j=1-∏i=1Nk⁢j(1-pi⁢j)
+$$
+\prodi=1N_{k⁢j}(1-p_{i⁢j})
+$$
 
-The outcome for patient j in interval k, Ykj ∈ {0,1}, as the patient either becomes colonised (1) or remains uncolonised (0) with 3GC-R Klebsiella. Therefore the likelihood is given by:Yk⁢j∼B⁢e⁢r⁢n⁢o⁢u⁢l⁢l⁢i⁢(vk⁢j)
+Therefore the probability of becoming colonised (vkj) is the complement:
 
-## Risk factor models for carriage acquisition
+$$
+v_{k⁢j}=1-\prodi=1N_{k⁢j}(1-p_{i⁢j})
+$$
 
-The daily probability of becoming colonised (pij) is related by the logit link function to a linear function of covariates:πi⁢j=α+β1⁢x1+β2⁢x2+β3⁢x3⁢…pi⁢j=e⁢x⁢p⁢(πi⁢j)e⁢x⁢p⁢(πi⁢j)+1
+The outcome for patient j in interval k, Ykj ∈ {0,1}, as the patient either becomes colonised (1) or remains uncolonised (0) with 3GC-R Klebsiella. Therefore the likelihood is given by:
 
-Where x1, x2, x3 … is a vector of predictors (data) and β1, β2, β3 … is a vector of slopes (parameters) that are to be estimated. The intercept α can be a single parameter, or permitted to vary over m periods of time in a random effects model. When using such a random effects model α was assumed to be normally distributed, with a mean µ and standard deviation σ, which are themselves parameters with their own prior distributions. The prior distributions used in the analysis are shown in Table 2. Results from models with alternative prior distributions are shown in Figure 2—figure supplement 2.αm∼n⁢o⁢r⁢m⁢a⁢l⁢(μ,σ)
+$$
+Y_{k⁢j}∼B⁢e⁢r⁢n⁢o⁢u⁢l⁢l⁢i⁢(v_{k⁢j})
+$$
+
+### Risk factor models for carriage acquisition
+
+The daily probability of becoming colonised (pij) is related by the logit link function to a linear function of covariates:
+
+$$
+\pi_{i⁢j}=\alpha+\beta_{1}⁢x_{1}+\beta_{2}⁢x_{2}+\beta_{3}⁢x_{3}⁢…
+$$
+
+
+
+$$
+p_{i⁢j}=\frac{e⁢x⁢p⁢(\pi_{i⁢j})}{e⁢x⁢p⁢(\pi_{i⁢j})+1}
+$$
+
+Where x1, x2, x3 … is a vector of predictors (data) and β1, β2, β3 … is a vector of slopes (parameters) that are to be estimated. The intercept α can be a single parameter, or permitted to vary over m periods of time in a random effects model. When using such a random effects model α was assumed to be normally distributed, with a mean µ and standard deviation σ, which are themselves parameters with their own prior distributions. The prior distributions used in the analysis are shown in Table 2. Results from models with alternative prior distributions are shown in Figure 2—figure supplement 2.
+
+$$
+\alpha_{m}∼n⁢o⁢r⁢m⁢a⁢l⁢(\mu,\sigma)
+$$
 
 Fourteen standard covariates included in all risk factor models were: exposure to the six most common combinations of antibiotics, taken intravenously unless otherwise stated (ampicillin, ampicillin + gentamicin, cloxacillin (oral), ceftriaxone, cloxacillin + gentamicin, and imipenem) within the past 48 or 96 hours; whether the infant was breast milk fed; if the infant recieved an oral probiotic on entry (Lactobacillus acidophilus) for prevention of necrotising enterocolitis; sex; born prematurely (before the 37th week of pregnancy); severity (defined as either i. requiring ventilation, ii. requiring continuous positive airway pressure or iii. requiring inotopes); and if already colonised with 3GC-R E. coli. These explanatory variables were treated as binary (0/1). We also included the age in days on first admission to the NU, and the daily number of nurses on the ward. An additional covariate included in one of the risk factor models (see below) was a term for colonisation pressure, which is an integer value representing the number of individuals known to be colonised with 3GC-R K. pneumoniae s.l. on that day. Covariates were recorded for every day the infant was present in the neonatal unit and data were treated as complete. We considered the following models:
 
-## Rectal swab/culture sensitivity
+### Rectal swab/culture sensitivity
 
 Swab sensitivity was estimated from the number of negative swabs following a positive swab, i) under the assumption that all negative results following a positive swab were false negatives and ii) under the assumption that three or more consecutive negative swabs following a positive represented a true decolonisation event. Posterior distributions of the false negative rate and swab sensitivity were estimated using a conjugate beta prior; beta(α=1, β=7) (Bolker, 2008).
 
-## Pathogen sequencing and bioinformatics
+### Pathogen sequencing and bioinformatics
 
 We whole-genome sequenced 317 cultured isolates identified morphologically as 3GC-R K. pneumoniae s.l. from i) rectal swabs from all colonised patients within a four month period of the study and ii) twice weekly swabs from seven environmental surfaces around the ward (6 sinks and one computer keyboard) within the same time frame. Sequencing was performed with the Illumina HiSeq 2500 platform, producing 150 base-pair paired-end reads. The reads were trimmed for adapter sequence using TrimGalore (v0.4.4) before assembly with Unicycler (v0.4.5) (Wick et al., 2017), contigs <1 kilobase were discarded. Distances between assemblies were calculated using mash (v1.1) (Ondov et al., 2016) and a phylogeny constructed with mashtree (v0.33). Sequence types (STs) were identified using Kleborate 0.2.0 (Wyres et al., 2016). Variant calling was performed within STs by mapping reads to ST consensus reference genomes (5.32 Mbp) with SMALT (v.0.7.6) https://www.sanger.ac.uk/science/tools/smalt-0 (parameters -x -y 0.85 r 1 j 100 -i 800), before sorting and removing unpaired mate reads and technical duplicates from binary alignment files with samtools (v.1.8). Single nucleotide variants (SNPs) were called by piping output from samtools mpileup into bcftools (v.1.8) and were conservatively filtered to remove SNPs within 50 bp of indels, with a read depth <10x and >200x, a mapping quality score <30 or read quality score <100. Repetitive regions were identified with nucmer (v.3.1), phage regions with PHASTER (Arndt et al., 2016), and recombination with ClonalFrameML (v.1.11) (Didelot and Wilson, 2015), and these regions subsequently masked from SNP calling.
 
-## Transmission models incorporating sequence type data
+### Transmission models incorporating sequence type data
 
 We assessed within-ward transmission of 3GC-R K. pneumoniae s.l. STs under the assumption that individuals remain colonised with a given ST for the duration of their stay until discharge (Birgand et al., 2013). We fitted data to five linear transmission models.
 
-The probability p of colonisation for individual j on day i with ST c for the respective models are:pijc=αpijc=α+βnicpijc=α+βnic+γ∑i′=0i−1ni′ce−λ(i−i′)pijc=α+βcnicpijc=αc+βnic
+The probability p of colonisation for individual j on day i with ST c for the respective models are:
+
+$$
+p_{ijc}=\alpha
+$$
+
+
+
+$$
+p_{ijc}=\alpha+\betan_{ic}
+$$
+
+
+
+$$
+p_{ijc}=\alpha+\betan_{ic}+\gamma\sumi^{′}=0i−1n_{i^{′}c}e^{−\lambda(i−i^{′})}
+$$
+
+
+
+$$
+p_{ijc}=\alpha+\beta_{c}n_{ic}
+$$
+
+
+
+$$
+p_{ijc}=\alpha_{c}+\betan_{ic}
+$$
 
 We opted to fit transmission models on the linear, rather than logistic, scale as we consider a linear increase in the force of infection with the number of colonised infants to be a more realistic assumption than the, initially, exponential increase that results from a logistic transformation.
 
-## Statistical model fitting
+### Statistical model fitting
 
-We fitted the statistical models using Hamiltonian Markov chain Monte Carlo in Stan (version 2.17.3) within the R environment (v. 3.4.3). Prior distributions were selected to be weakly informative normal distributions for the risk-factor models (McElreath, 2018), see Table 2. For the transmission models, beta distributions were used as priors. in the case of the hierarchical transmission models (4 and 5) the scale and location parameters are themselves hyper-parameters with their own priors. Studies have shown the half life of carbapenem-resistant K. pneumoniae inoculated onto hospital surfaces to be around 12 hours (Weber et al., 2015); this corresponds to λ=1.39 in our model. We therefore gave λ in transmission model 3 a more informative prior, normal(µ=1, σ=2), to give weight to biologically plausible estimates. Prior distributions for all transmission models are shown in Table 3. Results from a less informative prior distribution for λ are shown in Figure 3—figure supplement 2. Chains were run for a varying number of iterations depending on the number of parameters to estimate, though with a minimum of 12,000 iterations over four chains, including burn-in. The Gelman-Rubin statistic (R^) was used as a diagnostic, where values <1.01 indicate chains have converged and additionally posterior chains were visually inspected for convergence. Effective sample sizes (ESS) for both the centre of the posterior distribution (bulk) and the ends of the distribution (tail) was ensured to be >400 (Vehtari et al., 2019). Model comparison was performed with widely applicable information criterion (WAIC) (Vehtari et al., 2017). We used 95% credible intervals (CrIs) as a measure of uncertainty around posterior parameter distributions and posterior medians as the central estimate. Uncertainty in parameter estimates is represented by the posterior distributions, and the estimated probability that a particular parameter is within a certain range is given by the area under the curve of that parameter’s marginal posterior distribution within that range.
+We fitted the statistical models using Hamiltonian Markov chain Monte Carlo in Stan (version 2.17.3) within the R environment (v. 3.4.3). Prior distributions were selected to be weakly informative normal distributions for the risk-factor models (McElreath, 2018), see Table 2. For the transmission models, beta distributions were used as priors. in the case of the hierarchical transmission models (4 and 5) the scale and location parameters are themselves hyper-parameters with their own priors. Studies have shown the half life of carbapenem-resistant K. pneumoniae inoculated onto hospital surfaces to be around 12 hours (Weber et al., 2015); this corresponds to λ=1.39 in our model. We therefore gave λ in transmission model 3 a more informative prior, normal(µ=1, σ=2), to give weight to biologically plausible estimates. Prior distributions for all transmission models are shown in Table 3. Results from a less informative prior distribution for λ are shown in Figure 3—figure supplement 2. Chains were run for a varying number of iterations depending on the number of parameters to estimate, though with a minimum of 12,000 iterations over four chains, including burn-in. The Gelman-Rubin statistic ($R^$) was used as a diagnostic, where values <1.01 indicate chains have converged and additionally posterior chains were visually inspected for convergence. Effective sample sizes (ESS) for both the centre of the posterior distribution (bulk) and the ends of the distribution (tail) was ensured to be >400 (Vehtari et al., 2019). Model comparison was performed with widely applicable information criterion (WAIC) (Vehtari et al., 2017). We used 95% credible intervals (CrIs) as a measure of uncertainty around posterior parameter distributions and posterior medians as the central estimate. Uncertainty in parameter estimates is represented by the posterior distributions, and the estimated probability that a particular parameter is within a certain range is given by the area under the curve of that parameter’s marginal posterior distribution within that range.
 
-## Agent-based forward simulations
+### Agent-based forward simulations
 
 We forward simulated the impact of interventions using an agent-based model implemented in Python (v. 2.7.15) and hosted at https://github.com/tc13/ward-infection-ABM (copy archived at https://github.com/elifesciences-publications/ward-infection-ABM). In brief, we model in discrete time steps a ward containing a fixed number of beds and where patients sample a length of stay and colonisation status on entry. Simulations to estimate the ward reproduction number RA introduced a single colonised individual into a full ward of susceptible patients. The probability of any uncolonised patient acquiring resistant Klebsiella from the index patient on day one is pijc, where pijc is sampled from a beta distribution with shape hyper-parameters α and β from transmission model 4 (Table 3). This probability changes on subsequent days based on the number of other infants that become colonised and start transmission, and the lengths of stay. The simulation ends when the index patient is discharged.
 

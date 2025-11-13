@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.33442.001 Centromere protein (CENP) A, a histone H3 variant, is a key epigenetic determinant of chromosome domains known as centromeres. Centromeres nucleate kinetochores, multi-subunit complexes that capture spindle microtubules to promote chromosome segregation during mitosis. Two kinetochore proteins, CENP-C and CENP-N, recognize CENP-A in the context of a rare CENP-A nucleosome. Here, we reveal the structural basis for the exquisite selectivity of CENP-N for centromeres. CENP-N uses charge and space complementarity to decode the L1 loop that is unique to CENP-A. It also engages in extensive interactions with a 15-base pair segment of the distorted nucleosomal DNA double helix, in a position predicted to exclude chromatin remodelling enzymes. Besides CENP-A, stable centromere recruitment of CENP-N requires a coincident interaction with a newly identified binding motif on nucleosome-bound CENP-C. Collectively, our studies clarify how CENP-N and CENP-C decode and stabilize the non-canonical CENP-A nucleosome to enforce epigenetic centromere specification and kinetochore assembly.
+Centromere protein (CENP) A, a histone H3 variant, is a key epigenetic determinant of chromosome domains known as centromeres. Centromeres nucleate kinetochores, multi-subunit complexes that capture spindle microtubules to promote chromosome segregation during mitosis. Two kinetochore proteins, CENP-C and CENP-N, recognize CENP-A in the context of a rare CENP-A nucleosome. Here, we reveal the structural basis for the exquisite selectivity of CENP-N for centromeres. CENP-N uses charge and space complementarity to decode the L1 loop that is unique to CENP-A. It also engages in extensive interactions with a 15-base pair segment of the distorted nucleosomal DNA double helix, in a position predicted to exclude chromatin remodelling enzymes. Besides CENP-A, stable centromere recruitment of CENP-N requires a coincident interaction with a newly identified binding motif on nucleosome-bound CENP-C. Collectively, our studies clarify how CENP-N and CENP-C decode and stabilize the non-canonical CENP-A nucleosome to enforce epigenetic centromere specification and kinetochore assembly.
 
 ## Introduction
 
@@ -33,47 +33,426 @@ Accurate segregation of chromosomes from a mother cell to its two daughters duri
 
 In the last two decades, substantial progress in our understanding of the molecular features of the chromosome segregation apparatus has been made. A crucial role in this process is played by centromeres, specialized chromatin domains whose defining mark in almost all known eukaryotes is the enrichment of centromeric protein A (CENP-A, also known as CenH3), which replaces histone H3 in nucleosomes (Fukagawa and Earnshaw, 2014; Musacchio and Desai, 2017). The primary function of centromeres is to provide a platform for the assembly of macromolecular complexes known as kinetochores, whose task in turn is the physical capture of microtubules of the mitotic spindle. Kinetochores contain approximately 30 core subunits, normally subdivided in centromere-proximal and microtubule-proximal groups. The microtubule-proximal subunits (outer kinetochore), which are directly implicated in microtubule binding, are usually denoted as the KMN assembly, from the name of three sub-complexes, the Knl1, Mis12, and Ndc80 complexes (Musacchio and Desai, 2017). The centromere-proximal subunits (inner kinetochore), which are also organized in sub-complexes, are collectively identified as the constitutive centromere associated network (CCAN) because they appear to reside at centromeres for the entire cell cycle (Cheeseman and Desai, 2008; Foltz et al., 2006; Izuta et al., 2006; Obuse et al., 2004; Okada et al., 2006) (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of crucial CCAN and KMN subunits discussed in the text. The Knl1-Mis12-Ndc80 (KMN) complex is the main microtubule receptor at the kinetochore. Other interactions are discussed in the main text. The question mark indicates that the precise determinants for the recruitment of CENP-LN to CENP-C and for the interaction of CENP-N with the CENP-A nucleosome have not been identified. (B) Schematic depicting constructs described in the manuscript. (C–E) Solid phase binding assays where the indicated GST fusion proteins were immobilized on glutathione-sepharose beads (at a final concentration of 1 µM) and incubated with 3 µM of the indicated nucleosome core particles. After incubation (see Materials and methods), beads were centrifuged, washed, and bound proteins visualized by SDS-PAGE and Coomassie staining.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Solid phase binding assay demonstrating that CENP-LN230-C does not interact with the CENP-A nucleosome. The indicated GST fusion proteins were immobilized on glutathione-sepharose beads (at a final concentration of 1 µM) and incubated with 3 µM of the indicated nucleosome core particles. After incubation (see Materials and methods), beads were pelleted, washed, and bound proteins visualized by SDS-PAGE and Coomassie staining.
+
 The ability of CENP-A to nucleate kinetochores depends on its incorporation into nucleosomes (CENP-A nucleosomes) with histones H2A, H2B, and H4. In vitro, these interact specifically and selectively with two CCAN components, CENP-C and CENP-N (Carroll et al., 2010, 2009; Guo et al., 2017; Guse et al., 2011; Hoffmann et al., 2016; Klare et al., 2015; Nagpal et al., 2015; Samejima et al., 2015; Weir et al., 2016). Binding of these proteins to CENP-A nucleosomes has been shown to require two regions where the CENP-A sequence diverges significantly from that of histone H3, the L1 loop and the C-terminal tail (Carroll et al., 2009; Fachinetti et al., 2013; Guo et al., 2017; Kato et al., 2013; Logsdon et al., 2015). An evolutionary conserved motif of CENP-C, present in one or two copies in different organisms, is sufficient for recognition of CENP-A in vitro. This motif interacts primarily with a solvent-exposed acidic patch on the H2A and H2B subunits of the CENP-A nucleosome and also decodes the divergent C-terminal tail of CENP-A (Guo et al., 2017; Kato et al., 2013). The two copies of this motif in human CENP-C are referred to as the central motif (or domain) and the CENP-C motif (Figure 1A). While at least the central motif has been shown to be required for efficient centromere retention of newly incorporated CENP-A (Guo et al., 2017), neither motif appears to be strictly necessary for centromere localization of CENP-C in human cells (Guo et al., 2017), likely because CENP-C contains binding sites for additional CCAN subunits that can stabilize its centromere localization even in the absence of a direct interaction with CENP-A (Guo et al., 2017; Hinshaw and Harrison, 2013; Klare et al., 2015; McKinley et al., 2015; Nagpal et al., 2015; Weir et al., 2016). The specific succession of binding sites within CENP-C, a protein that secondary structure prediction algorithms identify as being largely intrinsically disordered, has led to suggest that it acts as a blueprint in the establishment of the inner to outer kinetochore axis, with an N-terminal motif involved in stabilizing the outer kinetochore, a middle region involved in stabilizing the inner kinetochore CCAN complex, and a C-terminal region involved in interactions with the centromeric chromatin (Figure 1A) (Gascoigne et al., 2011; Kato et al., 2013; Klare et al., 2015; McKinley et al., 2015; Przewloka et al., 2011; Screpanti et al., 2011).
 
 CENP-N forms a constitutive complex with CENP-L (designated CENP-LN complex), which in turn interacts with the CENP-HIKM complex and with CENP-C (Guo et al., 2017; Hinshaw and Harrison, 2013; Klare et al., 2015; McKinley et al., 2015; Weir et al., 2016). Binding of CENP-N requires the exposed L1 loop of CENP-A and may also reach into the neighboring DNA (Carroll et al., 2010; Carroll et al., 2009; Fang et al., 2015; Guo et al., 2017). The structural basis of the interaction of CENP-N with the CENP-A nucleosome, however, has remained elusive. Furthermore, it is unclear whether this interaction is sufficient for the recruitment of CENP-N to the kinetochore, or whether additional interactions with CCAN subunits are also required. Here, we addressed both issues. First, we combined X-ray crystallography and cryo electron microscopy (EM) to gain a high-resolution view of the CENP-N:CENP-A nucleosome complex, and identified and validated the main determinants of this interaction. Second, we defined the determinants of a physical interaction of CENP-LN with CENP-C and demonstrated that kinetochore recruitment of CENP-N requires the coincident presence of CENP-A and CENP-C at kinetochores. Our studies have important implications for kinetochore assembly and epigenetic specification of centromeres.
 
 ## Results
 
-## Crystal structure of CENP-N1-235
+### Crystal structure of CENP-N1-235
 
 Human CENP-N, a 339-residue protein (Figure 1B), interacts directly with CENP-L (Hinshaw and Harrison, 2013; Weir et al., 2016). When immobilized on solid phase and challenged with CENP-A or H3 nucleosome core particles (NCPs), CENP-LN interacted specifically with CENP-ANCP (Figure 1C). As shown previously (Carroll et al., 2009), the CENP-A-binding region of the CENP-LN complex lies within the N-terminal region of CENP-N, because a stable fragment encompassing residues 1–212 of human CENP-N (CENP-N1-212) also bound selectively to CENP-ANCPs but not H3NCPs (Figure 1D).
 
 To address the structural features of CENP-N and the basis of its interaction with the CENP-ANCP, we therefore focused our structural analysis on N-terminal constructs of CENP-N (Figure 1B). We obtained well diffracting crystals of the CENP-N1-235 construct and determined its crystal structure at 2.8 Å resolution (Table 1). CENP-N1-235 consists of two closely juxtaposed domains that interact through an extended interface to form a single structural unit (Figure 2A–B). The first domain (residues 1–77) consists of a five-helix bundle, whereas the second domain (residues 78–212, cyan in Figure 1A) consists of a six-stranded anti-parallel β-sheet sandwiched between α-helices (Figure 2C–D). There is no clear density beyond residue ~210, indicating that the structure is disordered after this point. Fold-recognition by DALI (Holm and Rosenström, 2010) identified similarity of the first domain to PYRIN domains (PYDs; a superposition is shown in Figure 2—figure supplement 1A–B). PYDs are ‘death fold’ family domains implicated in protein-protein interactions relevant to inflammation and apoptosis (Ratsimandresy et al., 2013). They have not been previously implicated in interactions with DNA or chromatin.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cartoon model of CENP-N1-235 with secondary structure and domain organization. (B) Close-up of the boxed region in A. (C) Topology diagram of CENP-N. The topology of the Pyrin and CLN-HD domains was directly derived from the crystal structure of CENP-N1-235 reported here. The topology of the CENP-L-binding domain was derived from the crystal structure of the Chl4 fragment in the complex of the Chl4CENP-N:Iml3CENP-L yeast homolog (Hinshaw and Harrison, 2013). (D) Multiple sequence alignment of CENP-N from the indicated species with secondary structure. Green, blue, and orange dots indicate solvent-exposed, semi-buried, and buried side chains, respectively. Positions with conserved residues are displayed red; positions with conserved side chain charge are boxed. (E) Schematic summarizing domain organization of CENP-L, CENP-N, and their dimerization.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cartoon model of the ‘death fold’ Pyrin domain of AIM2 (Lu et al., 2014). (B) Structural superposition of the AIM2 Pyrin domain (red) with the CENP-N Pyrin domain.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Overall domain organization of Iml3CENP-L with cartoon model illustrating the CLN-HD in green and the CENP-L insert in yellow. The latter includes the Chl4CENP-N-binding domain, which is conserved in humans, as shown in panel E (Hinshaw and Harrison, 2013). (B) Topology diagram of CENP-L, based on the structure of the Iml3CENP-L yeast homolog (Hinshaw and Harrison, 2013) and its comparison with the crystal structure of CENP-N after identification of structural homology by program DALI.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Structure-based sequence alignment generated with program Chimera of the C-terminal region of CENP-N (model) and the C-terminal region of Chl4CENP-N (structure) with β-strands shown in green and α-helices in yellow (secondary structure predictions in case of the model), and of the C-termini of CENP-L (model) and Iml3 (PDB structure 4KR1) with the same colour scheme. (B) Schematics of the overall organization of the CENP-LN complex, and complementarity of the CENP-N1-212 and 4JE3 structures. (C) Structural superposition of the CLN-HD of Iml3CENP-L (green) on the corresponding middle domain of CENP-N1-235. (D) Structure-based sequence alignment generated with program Chimera of CENP-N, CENP-L, and their yeast homologs Iml3CENP-L and Chl4CENP-N, with β-strands shown in green and α-helices in yellow, including the two structures (CENP-N and Iml3) and sequences and predicted secondary structures for the two models (Chl4 and CENP-L).
+
+**Table 1.**
+ X-ray data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Data collection and processing</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Native</th>
+      <th>SeMet 1</th>
+      <th>SeMet 2</th>
+      <th>SeMet 1 + 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P41</td>
+      <td>P41</td>
+      <td>P41</td>
+      <td>P41</td>
+    </tr>
+    <tr>
+      <td>Wavelength</td>
+      <td>0.97793</td>
+      <td>0.9793</td>
+      <td>0.9793</td>
+      <td>0.9793</td>
+    </tr>
+    <tr>
+      <td>No. xtals</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td>SLS</td>
+      <td>PETRA</td>
+      <td>PETRA</td>
+      <td>PETRA</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Pilatus 6M</td>
+      <td>Pilatus6M</td>
+      <td>Pilatus 6M</td>
+      <td>Pilatus 6M</td>
+    </tr>
+    <tr>
+      <td>Mol/AU</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>a,b,c (Å)</td>
+      <td>87.3 87.3 81.1</td>
+      <td>88.99 88.99 76.96</td>
+      <td>89.14 89.14 77.22</td>
+      <td>88.99 88.99 76.96</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90 90 90</td>
+      <td>90 90 90</td>
+      <td>90 90 90</td>
+      <td>90 90 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>87.3–2.74 (2.81–2.74)*</td>
+      <td>48.7–3.3 (3.9–3.3)</td>
+      <td>48.8–3.2 (3.3–3.2)</td>
+      <td>48.7–3.3 (3.4–3.3)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>8.2 (155.1)</td>
+      <td>17.2 (153.4)</td>
+      <td>18.8 (173.4)</td>
+      <td>18.7 (167.8)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>17.3 (1.4)</td>
+      <td>7.5 (1.1)</td>
+      <td>7.2 (1.0)</td>
+      <td>10.4 (1.4)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.8 (98.5)</td>
+      <td>100.0 (100.0)</td>
+      <td>99.9 (98.8)</td>
+      <td>100.0 (100.0)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>9.4 (8.7)</td>
+      <td>7.1 (7.2)</td>
+      <td>7.0 (6.3)</td>
+      <td>14.1 (14.1)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Refinement</td>
+      <td>Phasing</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>87.3–2.7</td>
+      <td></td>
+      <td></td>
+      <td>FOM 0.39</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>17103</td>
+      <td></td>
+      <td></td>
+      <td>BAYES-CC 38.1</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree(%)</td>
+      <td>21.6/26.1</td>
+      <td></td>
+      <td></td>
+      <td>12 Selenium-sites</td>
+    </tr>
+    <tr>
+      <td>No. atoms:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein/ Ligands</td>
+      <td>3432/6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>aver. B (Å2)</td>
+      <td>90.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.0076</td>
+      <td>Ramachandran plot: 98.0% favourable, 0% outliers</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.27</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Values in parentheses are for highest resolution shell_
+
 Iml3 and Chl4 are fungal orthologs of CENP-L and CENP-N, respectively. We referred to a previously reported crystal structure of the full-length Iml3 protein bound to the C-terminal region of Chl4 (Iml3:Chl4C, PDB ID 4JE3) (Hinshaw and Harrison, 2013) to deduce the structural organization of the human CENP-LN complex. Iml3 consists of an N-terminal domain (shown in green in Figure 2—figure supplement 2A) and a C-terminal domain (the ‘insert’ domain shown in yellow; the topology of Iml3 is shown in Figure 2—figure supplement 2B). Iml3 hetero-dimerizes with Chl4 through a subdomain within the insert domain (Figure 2—figure supplement 2B) (Hinshaw and Harrison, 2013). Due to strong sequence similarity of Iml3 and CENP-L throughout their length (not shown), the structure of Iml3 provides an excellent model for the structure of CENP-L. Importantly, although our crystal structure does not encompass the C-terminal region of CENP-N, the sequence of the latter is strongly related to that of Chl4C (Figure 2—figure supplement 3A), which was captured in complex with Iml3 in the Iml3:Chl4C structure, indicating that they are also structurally related (Figure 2C). Indeed, as already observed (Guo et al., 2017; Hinshaw and Harrison, 2013), the C-terminal region of CENP-N (CENP-N230-C) was sufficient to interact with CENP-L (Figure 1—figure supplement 1). Thus, the structure of CENP-N1-235 reported here and that of the Iml3:Chl4C complex are complementary, and together provide an almost comprehensive view of the CENP-LIml3:CENP-NChl4 complex (Figure 2—figure supplement 3A and Figure 2—figure supplement 3B).
 
 Besides identifying the N-terminal domain of CENP-N1-235 as a PYRIN domain, DALI also identified an unanticipated structural homology of the second domain of CENP-N1-235 with the N-terminal domain of Iml3CENP-L (Figure 2—figure supplement 3C). We therefore refer to these domains of CENP-N and CENP-L as CLN-HD (for CENP-L and CENP-N homology domain). Structural similarities of the CLN-HD suggest that CENP-N and CENP-L are evolutionary related. However, sequence identity of the two domains, even after structural superposition, is minimal, likely explaining why structural similarity had not been predicted (Figure 2—figure supplement 3D). CENP-L, or its complex with CENP-N230-C, did not interact with CENP-ANCPs or H3NCPs (Figure 1E and Figure 1—figure supplement 1). Thus, CENP-L and CENP-N, even if partly structurally related, have clearly distinct functions. In conclusion, the structure of CENP-N contains an N-terminal Pyrin domain, a central CLN-HD, and a C-terminal CENP-L dimerization domain, while CENP-L contains an N-terminal CLN-HD, interrupted immediately before the C-terminal helix by an insertion that contains a region required for CENP-N dimerization.
 
-## Cryo-EM analysis of the CENP-N:CENP-A nucleosome complex
+### Cryo-EM analysis of the CENP-N:CENP-A nucleosome complex
 
 Using cryo electron microscopy (cryo-EM), we obtained a three-dimensional reconstruction of CENP-N1-289 bound to CENP-ANCPs at ~4.0 Å (Figure 3A–B, Figure 3—figure supplement 1, and Table 2). We built an atomic model of the CENP-N:CENP-ANCP complex by fitting into the EM density high-resolution models of the CENP-A histone core (PDB ID 3AN2) (Tachiwana et al., 2011), combined with DNA derived from a nucleosome reconstituted with the 145 bp 601 DNA sequence (PDB ID 3LZ0; Vasudevan et al., 2010), and the newly determined crystal structure of CENP-N1-235. Both manual and automatic fitting strategies produced unequivocal fits, allowing the first visualization of the interaction of CENP-N with the CENP-A nucleosome (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cartoon model of the CENP-ANCP with bound CENP-N1-235, determined by cryo-EM. (B) Surface representation of the complex. In A and B, the L1 loop of CENP-A is displayed in red. (C) Comparison of the DNA ends in the crystal structure of the CENP-A nucleosome (Tachiwana et al., 2011) and in the structure of the CENP-A:CENP-N complex. (D) Electrostatic potential at the CENP-N DNA binding interface with contour levels ± 4 kBT/e (kB, Boltzmann constant; T, absolute temperature; e, the magnitude of electron charge, calculated with the APBS Pymol plugin). (E) Interaction of CENP-N with backbone, minor groove, and major groove of DNA with close-up views of selected interactions. (F) Interactions at the CENP-A L1 loop and comparison with superimposed H3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Collected micrograph after CTF correction at −2.5 μm defocus (nominal). Scale bar = 100 nm. (B) Representative 2D class averages from RELION (Scheres, 2012) 2D classification. (C) Fourier Shell Correction (FSC) curve for the maps. (D) Estimated local resolution for the CENP-N1-289:CENP-ANCP by RELION. The unit for color scale is Å. (E) Euler angular distribution of the 3D reconstruction. (F) Histogram and directional FSC plot for unmasked map. Sphericity = 0.901 out of 1, global resolution = 4.08 Å.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative areas of the map of the CENP-N1-289:CENP-ANCP complex contoured at 3σ shows very clear density for the DNA ends and for the N-terminal helix of CENP-A, starting from residue G46. The grey arrow points to a zoomed-in region close to the DNA end. (B) The zoomed-in region. (C) Overall fit of the CENP-N1-235 crystallographic model in the EM density. (D) The H4 N-terminal region is clearly ordered starting at residue R23, possibly due to packing against the β3-β3 loop of CENP-N. (E) Illustrative example of model fit in the map around H2A. (F) Illustrative example of model fit in the map around H2B.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) EMSAs (electrophoretic mobility shift assays) with the indicated NCPs and CENP-N1-289. (B) Quantification of data in A. Data were fitted in Graphpad using the specific binding model with Hill coefficient fitting.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Cartoon model of the CENP-A nucleosome (this work). CENP-A is shown in light blue and in a zoomed-in view. (B) Alignment of CENP-A and H3 sequences from three species showing divergence in the L1 loop region.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Close-up view of the CENP-A:CENP-N interface with EM density map. The superposition with H3 (dark blue) illustrates that H3 would be unable to form productive contacts with CENP-N. V82 of CENP-A packs against the side chain of Y147 of CENP-N. The A and N superscripts indicate that the shown residues belong to CENP-A or CENP-N, respectively. aDD HERE WHAT THE SUPERSCRIPT LETTERS ARE.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A–B) Two views in different orientation of the structure of the CENP-N1-289:CENP-ANCP complex, with CENP-A in light blue and CENP-N in teal and cyan. (C–D) Two views in different orientations of the SWI2/SNF2:H3NCP complex (Liu et al., 2017) illustrating similarities in the interactions with the nucleosome. The contacts of SWI/SNF with the proteinaceous part of the H3NCP particle are more limited than for CENP-N. (E–F) Two views in different orientations of the BAH:H3NCP complex (Armache et al., 2011). The contacts of the BAH domain with DNA are very limited, while there are extensive interactions with the H2A-H2B acidic patch and with the H4 N-terminal tail and with H3.
+
+**Table 2.**
+ EM data collection, processing, and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Data collection and processing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Voltage (kv)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>290,000x</td>
+    </tr>
+    <tr>
+      <td>Defocus (μm, nominal)</td>
+      <td>−1.0 to −2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>electron dose rate (counts/pixel/s)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Total electron dose (e- /Å2)</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Number of images (collected/processed)</td>
+      <td>3900/3024</td>
+    </tr>
+    <tr>
+      <td>Number of frames per image</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Initial particle number</td>
+      <td>1,843,269</td>
+    </tr>
+    <tr>
+      <td>Particle number for 3D classification</td>
+      <td>1,267,674</td>
+    </tr>
+    <tr>
+      <td>Final particle for refinement</td>
+      <td>937,118</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked/unmasked) (Å)</td>
+      <td>4.0/4.2</td>
+    </tr>
+    <tr>
+      <td>Map sharpened b-factor (Å2)</td>
+      <td>−233</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model refinement</td>
+    </tr>
+    <tr>
+      <td>r.m.s. deviation (bonds)</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>r.m.s. deviation (angles)</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>All-atom clashscore</td>
+      <td>2.30</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>4.59</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>95.81</td>
+    </tr>
+    <tr>
+      <td colspan="2">CaBLAM analysis:</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>1.92</td>
+    </tr>
+    <tr>
+      <td>Disfavored (%)</td>
+      <td>6.65</td>
+    </tr>
+    <tr>
+      <td>Ca outliers (%)</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
 The CENP-A nucleosome appears to be stabilized by its interaction with CENP-N (Guo et al., 2017). There is clear density for 139 of the 147 bp of DNA and for the N-terminal helix of CENP-A (Figure 3C and Figure 3—figure supplement 2A), two features reported to be largely disordered and thus invisible in the crystal structure of the CENP-ANCP (PDB ID 3AN2) (Tachiwana et al., 2011). CENP-N, whose structure changes very little upon binding to the CENP-A nucleosome, is positioned on top of the L1 loop of CENP-A (also called RG loop for the presence of a conserved arginine-glycine motif at the loop’s apex) and contacts approximately 15 base pairs of the adjacent DNA gyre (Figure 3A). There is clear density only until CENP-N1-289 residue ~210, indicating that the following approximately 80 C-terminal residues (at the opposite end of the nucleosome interaction interface) may be flexible. Of the ~2400 Å2 of CENP-ANCP and CENP-N surface area that become buried in the complex,~1400 Å2 are at the CENP-N:DNA interface, where both CENP-N domains form extensive interactions with DNA from bp −21 to −35 relative to the twofold axis, or superhelical location [SHL] −2 to −3. There is a marked accumulation of positively charged residues on this DNA binding interface (Figure 3D). Four loops in the CLN-HD straddle the DNA double helix over ~8 bp, and the consecutive 7 bp are bound by the PYRIN domain, which is positioned to insert an arginine (R44) into the compressed minor groove in an arrangement that is reminiscent of the minor groove arginines inserted by the histones (Figure 3E). The highly conserved P17 in the PYRIN domain positions the main chain of CENP-N to latch on to the phosphate backbone of the DNA, with interactions made through the side chains of K15, R42, K45, K81, and R194. There are also likely insertions of CENP-N side chains into two minor grooves (besides R44, also K148, M167, R170) and the intervening major groove at SHL −3 [R196, see also (Carroll et al., 2009) (Figure 3E)]. In agreement with the presence of a large interaction interface with nucleosomal DNA, CENP-N bound more tightly to CENP-ANCPs but retained substantial binding affinity for H3NCPs in electrophoretic mobility shift assays (EMSAs) (Figure 3—figure supplement 3A–B). Likely, this residual binding to H3NCPs in the EMSAs, which emerged less clearly in solid phase binding assays (Figure 1C), reflects emphasis on electrostatic interactions under the low-salt conditions of the EMSA assays (150 mM NaCl for complex formation, followed by further dilution upon loading onto the gel), compared to the GST-binding assays (300 mM NaCl), as also discussed in the context of Figure 4—figure supplement 2.
 
-## The CENP-N:CENP-A interface
+### The CENP-N:CENP-A interface
 
 The substantial interface with DNA explains why CENP-N does not bind CENP-A:H4 tetramers lacking DNA (Carroll et al., 2009). However, while DNA binding clearly contributes to the binding affinity of this interaction, it is unlikely to contribute to the discrimination of CENP-ANCPs from H3NCPs, because CENP-N bound selectively to CENP-ANCPs even when the CENP-ANCPs and H3NCPs contained the same DNA sequence (Figure 1B–C). Conversely, the structure clearly suggests why recognition of the L1 loop is crucial for discrimination (Black et al., 2004; Carroll et al., 2010, 2009). CENP-N binds the L1 loop through a continuous interface comprising the α1 helix in CENP-NPD and the β3-β4 loop in CENP-NCLN-HD. Several of the infrequent conserved solvent-exposed residues of CENP-N (identified by a green dot in Figure 2D), including E3, E7, R11, K143, P145, N146, and K148 reside in this interface. Y147, which is less conserved, contributes to the stabilization of the relative arrangements of the CENP-NPD and CENP-NCLN-HD, which is largely unchanged in the nucleosome-bound and free structures of CENP-N. Insertion of the side chain of M1 into the hydrophobic core contributes to the stabilization of the α1 helix. The interaction with the CENP-A L1 loop engages a triad of residues, E3CENP-N, E7CENP-N, and R11CENP-N, whose side chains emerge from the same face of the α1 helix looking toward the L1 loop (Figure 3F).
 
 The CENP-A residues R80CENP-A and G81CENP-A form a two-residue insertion that is the most conspicuous difference between the L1 loops in CENP-A and H3 (Figure 3F, Figure 3—figure supplement 4A–B). The insertion is crucial, because it allows R80CENP-A to form hydrogen bonds with both E3CENP-N and E7CENP-N, while absence of a side chain at G81CENP-A allows the CENP-A loop to insert deeply into a cleft formed between the two CENP-N domains, where the side chain of Y147CENP-N packs tightly against V82CENP-A. In EMSAs, mutation of R80 and G81 to alanine partly ablated the preference of CENP-N for CENP-ANCPs (Figure 3—figure supplement 3A–B). The side chain of R11CENP-N, a residue previously shown to be important for the CENP-N:CENP-ANCP interaction (Carroll et al., 2009), on the other hand, is squeezed between the loop 1 region of CENP-A and the loop 2 region of H4, where it may be involved in a double salt bridge with E74H4 and E7CENP-N (Figure 3F and Figure 3—figure supplement 5).
 
-## Mutational validation of the CENP-N:CENP-ANCP structure
+### Mutational validation of the CENP-N:CENP-ANCP structure
 
 We generated a collection of single and double alanine point mutants to probe the role of individual CENP-N residues in the interaction with the CENP-ANCP. In pull-down assays in vitro, we found essentially complete loss of binding with an alanine (A) mutant of R11 (Figure 4A), and substantial reductions of binding with alanine mutants of E7 or Y147, at the CENP-A L1 interface, or of K15 or K45, at the interface with DNA (Figure 4—figure supplement 1A). Combining mutations of Y147 with either K15 or K45 almost completely disrupted CENP-ANCP binding (Figure 4A), in line with the idea that recognition of the L1 loop and of the DNA jointly contribute to the binding affinity of CENP-N for the CENP-A nucleosome. CENP-N targeting to centromeres in U2OS cells reflected the observations made in vitro, with R11A single mutant and the K15A-Y147A and K45-Y147A double mutants appearing severely impaired in the ability to target centromeres (Figure 4B–C), and other single mutants suffering intermediate effects on binding to centromeres (Figure 4—figure supplement 1B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig4-v2.jpg)
+
+**Figure 4.:** (A) In vitro binding assay probing the interaction of GST-CENP-N1-212 immobilized on solid phase with CENP-ANCP. (B) Fluorescence microscopy analysis comparing localization at human kinetochores (U2OS osteosarcoma cells) of a wild-type CENP-N-mCherry fluorescent reporter and of its mutant variants. (C) Quantification of localization of the mCherry constructs in B normalized to CREST. The same concentrations of transiently transfected plasmids were compared. Error bars represent SD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) In vitro binding assay probing the interaction of wild type and mutant GST-CENP-N1-212 immobilized on solid phase with CENP-ANCP. (B) Fluorescence microscopy analysis comparing kinetochore localization of a wild-type CENP-N-mCherry fluorescent reporter and of the indicated mutant variants in U2OS cells. The same concentrations of transiently transfected plasmids were compared.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Gel shift assays with differentially labelled CENP-ANCPs (red) and H3NCPs (green) at 125 nM in presence of the indicated CENP-N wild type and mutant species (1 µM). The two individual channels are shown below. The nature of all slow-migrating species formed upon binding of CENP-N and its mutants to nucleosomes is unknown, but we suspect they represent higher order oligomerization. Note that mutants affecting the CENP-A L1 loop-binding interface of CENP-N affect CENP-ANCPs binding more than H3NCPs binding, likely because the latter is solely based on the intact DNA-binding interface of CENP-N (see text for additional details).
+
 In competition gel shift assays, CENP-N mutants at the CENP-A L1 loop interface (L1 mutants), including R11A and two double mutants (E3A-E7A and K143A-Y147A), lost the ability of CENP-Nwt to discriminate between CENP-A and H3-nucleosomes (Figure 4—figure supplement 2A-B). We have shown in Figure 4A that CENP-NR11A does not bind CENP-ANCPs in solid phase-binding assays. The residual interaction of this mutant with CENP-ANCPs or H3NCPs in EMSAs likely reflects the extensive binding interface of CENP-N for nucleosomal DNA (whose effects are emphasized under low-salt conditions, as already indicated for CENP-Nwt in the context of Figure 3—figure supplement 3). In line with this interpretation, we find that in the EMSAs the L1 mutants of CENP-N bind H3NCPs indistinguishably from CENP-Nwt, whereas the same mutants bind to CENP-ANCPs considerably worse than CENP-Nwt (Figure 4—figure supplement 2). Collectively, these results further emphasize the importance of the L1 loop of CENP-A in selective recognition by CENP-N.
 
-## Identification of a CENP-C region involved in CENP-LN binding
+### Identification of a CENP-C region involved in CENP-LN binding
 
 As discussed in the Introduction, CENP-C, an intrinsically disordered protein, provides a defined succession of binding sites for different kinetochore components (Klare et al., 2015) (Figure 1A). CENP-C, CENP-LN, and CENP-HIKM, another kinetochore sub-complex located in the vicinity of CENP-A, form a 7-subunit complex (designated CHIKMLN) that binds CENP-ANCPs cooperatively, that is with increased binding affinity in comparison to any of the individual subunits or sub-complexes (McKinley et al., 2015; Weir et al., 2016). Within this assembly, CENP-C2-545 binds the CENP-LN complex in vitro [Figure 5—figure supplement 1A and (Hinshaw and Harrison, 2013; McKinley et al., 2015; Nagpal et al., 2015; Weir et al., 2016).
 
 We set out to exploit biochemical reconstitution and our improved structural understanding of the CENP-LN complex to query the importance of this interaction for kinetochore assembly in humans. Trimming of CENP-C2-545 identified CENP-C225-364 as a minimal CENP-LN interaction domain (Figure 5A), in line with a recent study (Guo et al., 2017). Neither CENP-L nor CENP-N1-235 bound to CENP-C2-545 (Figure 5—figure supplement 1B–C). However, the CENP-LN230-C dimer bound CENP-C in the absence of nucleosomes (Figure 5B). Thus, CENP-C225-364 binds at or near the CENP-LN dimer interface, possibly also exploiting structural ordering of these regions upon dimerization. CENP-C225-364 contains a handful of conserved residues, some of which were previously shown to mediate an interaction with the CENP-HIKM complex (Klare et al., 2015) (Figure 5C). We probed an additional conserved linear motif in CENP-C225-364 (residues 302–306) for its potential role in CENP-N binding. A 5-alanine mutant of residues 302–306 (identified as CENP-C5A) failed to interact with CENP-NL, identifying this region of CENP-C as the CENP-LN binding motif (Figure 5D and Figure 5—figure supplement 2). Importantly, CENP-C2-545-5A did not interact with CENP-LN, but retained binding to CENP-ANCPs and CENP-HIKM (Figure 5E–F). In isothermal titration calorimetry (ITC) experiments, CENP-LN230-C bound CENP-C225-364 with a dissociation constant (KD) of 1 µM, but it showed no binding to CENP-C225-364-5A (Figure 5G–H).
 
-## CENP-LN binding motif of CENP-C is required for kinetochore recruitment of CENP-N
+![Figure 5.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig5-v2.jpg)
+
+**Figure 5.:** (A) Size exclusion chromatography (SEC) runs of CENP-C225-364, CENP-LN complex, and their combination at the indicated loaded concentrations, identified a binding site for CENP-LN in CENP-C225-364. Elution fractions were separated by SDS-PAGE and visualized by Coomassie staining. (B) CENP-LN230-C binds CENP-C2-545, indicating that the CENP-N N-terminal region is not required for CENP-C binding. (C) Sequence of a segment of the PEST-rich domain CENP-C that contains a binding site for the CENP-HIKM complex (Klare et al., 2015) (residues indicated in salmon). The CENP-N-binding motif is shown in grey. (D) CENP-LN does not bind CENP-C2-545-5A. (E) CENP-C2-545-5A retains the ability to bind to CENP-ANCP. (F) CENP-C2-545-5A retains the ability to bind to the CENP-HIKM complex. (G) Isothermal titration calorimetry (ITC) experiment quantifying the physical interaction of the CENP-L:CENP-N230-C complex with CENP-C225-364. (H) In agreement with the SEC data, CENP-C225-364-5A fails to interact with the CENP-L:CENP-N230-C complex in an ITC experiment.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) SEC experiment demonstrating an interaction of CENP-C2-545 with CENP-LN complex, as shown previously (Weir et al., 2016). (B) SEC experiment demonstrating that CENP-L does not bind CENP-C2-545. (C) SEC experiment demonstrating that CENP-N1-235 does not bind CENP-C2-545.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33442/elife-33442-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Solid-phase-binding assay with immobilized GST-CENP-LN complex and soluble CENP-C2-545 or CENP-C2-545-5A mutant.
+
+### CENP-LN binding motif of CENP-C is required for kinetochore recruitment of CENP-N
 
 The availability of a CENP-LN binding mutant of CENP-C gave us an opportunity to ask if the interaction of CENP-LN with CENP-A, besides being necessary, is also sufficient for kinetochore recruitment of CENP-N. For this, we depleted CENP-C by RNAi and replaced it with exogenous wild type (wt) or mutant (5A) copies. Depletion of CENP-C prevented kinetochore localization of CENP-N, showing that nucleosome binding is not sufficient for CENP-N to reach kinetochores at the low cellular concentration of these proteins. Exogenously expressed wild-type CENP-C promoted CENP-N recruitment, while CENP-C5A failed to promote it (Figure 6A–B). Thus, the CENP-LN binding site of CENP-C, while not crucial for CENP-C recruitment to kinetochores, is instead crucial for CENP-N recruitment. Overall, these observations indicate that the CENP-LN complex reads the presence of two features of kinetochores, the presence of CENP-A and the presence of CENP-C, both of which are necessary for its efficient recruitment.
 
@@ -99,55 +478,55 @@ In summary, our analysis of the mechanisms of the interactions of the CENP-NL co
 
 ## Materials and methods
 
-## Production of recombinant proteins in insect cells
+### Production of recombinant proteins in insect cells
 
 GST-CENP-L and its complexes with CENP-N fragments were produced in insect cells. Specifically, the coding sequence expressing 3C cleavable GST-tagged CENP-L was sub-cloned into MCS2 of the MultiBac vector pFL (Bieniossek et al., 2012), while the coding sequences of CENP-N or CENP-N230-C were sub-cloned into MCS1 of pFL for co-expression. All constructs were further transformed into EMBacY cells and subsequently transfected into Sf9 cells in order to produce baculovirus. Baculovirus was amplified in Sf9 cells and used to infect Tnao38 cells. Tnao38 cells expressing GST-CENP-L:CENP-N, GST-CENP-L:CENP-N230-C, or GST-CENP-L virus were cultured for 72 hr and isolated (Weir et al., 2016). Briefly, cells were resuspended in lysis buffer containing 50 mM HEPES (pH 7.5), 300 mM NaCl, 10% glycerol, 4 mM 2-mercaptoethanol, 1 mM MgCl2 pH 7.5 in presence of Benzonase. Resuspended cells were lysed by sonication and centrifuged at 100,000 g at 4°C for 1 hr. Cleared lysates were incubated with pre-equilibrated GSH-Sepharose beads (Amintra, Expedion, San Diego, USA) at 4°C for 2 hr. After extensive washing with lysis buffer, the GST fusion proteins were eluted in lysis buffer supplemented with 20 mM reduced glutathione. The eluted proteins were concentrated in a 10 K Da Amicon-Ultra-15 Centrifugal filter (Millipore, USA) either alone or in the presence of GST-tagged 3C protease. Concentrated proteins were subsequently loaded onto a Superdex 200 16/600 column equilibrated in 20 mM HEPES pH 7.5, 2.5% glycerol, 300 mM NaCl and 1 mM TCEP. The corresponding peak fractions were collected and concentrated in a 10 KDa MWCO concentrator and then flash frozen in liquid N2, and stored at −80°C until further use.
 
 Full length CENP-N was cloned into a pACEbac1 vector. CENP-NNT constructs (containing the N-terminal constructs 1–289 and 1–238) were generated by introducing a sequence encoding 6His followed by two stop codons at the designated positions. CENP-NNT constructs were expressed in SF21 insect cells (Invitrogen, Thermo Fisher Scientific, USA). Pellets from 1 L of cell culture (~2 million cells/ml) were lysed in 100 ml lysis buffer (50 mM sodium phosphate pH 7.5, 300 mM NaCl, 20 mM imidazole and 10% glycerol). Nickel NTA beads (1.5 ml) were incubated with the lysed cells overnight at 4°C. Beads were washed with wash buffer (20 mM Tris.Cl pH 7.5, 300 mM NaCl, 30 mM imidazole and 10% glycerol), and eluted with elution buffer (20 mM Tris.Cl pH 7.5, 300 mM NaCl, 150 mM imidazole and 10% glycerol). The concentrated eluate was loaded onto an S200 gel filtration column in buffer containing 20 mM Tris.Cl pH 7.5, 300 mM NaCl, 10% glycerol and 1 mM DTT for the final purification.
 
-## Production of recombinant proteins in bacteria
+### Production of recombinant proteins in bacteria
 
 Fragments encoding different constructs of CENP-N were sub-cloned from a cDNA into pST50Tr-DHFRHIS for expression of recombinant C-terminally polyhistidine-tagged products (Tan et al., 2005). To produce GST-tagged CENP-N, a GST encoding sequence was sub-cloned in pST50Tr-DHFRHIS in frame with the sequence coding for CENP-N1-212. Mutant CENP-N1-212 constructs were created by site-directed mutagenesis using the QuikChange kit (Agilent Technologies, Boulder, CO). Escherichia coli (DE3) cells harboring vectors expressing CENP-N1-212-His or CENP-N1-235-His were grown in TB media supplemented with 100 µg ampicillin at 37°C at an OD600 of 0.8–1.0. Then the temperature was reduced to 20°C and protein expression was induced with 0.3 mM IPTG for 16 hr. Cells were harvested at 4600 g for 15 min. Bacterial pellets were resuspended in lysis buffer containing 50 mM HEPES (pH 7.5), 300 mM NaCl, 10% glycerol, 2 mM 2-mercaptoethanol, 10 mM MgCl2 and 5 mM imidazole. Resuspended cells were lysed by sonication and cleared by centrifugation at 100,000 g at 4°C for 30 min. The cleared lysate was incubated with cOmpleteTM his tag beads (Sigma-Aldrich) and incubated at 4°C for 2 hr. After extensive washing, CENP-N1-212-His or CENP-N1-235-His were eluted in lysis buffer supplemented with 300 mM Imidazole. A 6 ml ResourceS cation exchange column was pre-equilibrated in 15% buffer B (20 mM HEPES, 1 M NaCl, 10% glycerol, 10 mM MgCl2 pH 7.5, 1 mM TCEP) and 85% buffer A (20 mM HEPES, 10% glycerol, 10 mM MgCl2 pH 7.5, 1 mM TCEP). CENP-N1-212 -His or CENP-N1-235-His were diluted with buffer A to reach a final concentration of 150 mM NaCl, loaded onto the ResourceS column (GE Healthcare Life Sciences and eluted with a linear gradient of buffer B from 150 to 1000 mM NaCl. Fractions containing CENP-N1-212 His or CENP-N1-235 His were concentrated in a 10 kDa MWCO and loaded onto a Superdex200 16/600 column equilibrated in 20 mM HEPES pH 7.5, 2.5% glycerol, 300 mM NaCl and 1 mM TCEP. The corresponding peak fractions were collected and concentrated in a 10 kDa MWCO concentrator and then flash frozen in liquid N2, and stored at −80°C until further use. The expression and purification procedure was identical for wild-type or mutants GST-CENP-N sequences, except that the concentration of NaCl in the lysis buffer was raised to 500 mM NaCl (instead of 300 mM).
 
 CENP-C fragments encoding CENP-C2-545 or CENP-C225-364 were obtained from codon-optimized CENP-C cDNA and subcloned in pGEX-6P-2rbs for 3′ fusion to the sequence encoding GST. Mutant CENP-C constructs were created by site-directed mutagenesis using the QuikChange kit (Agilent Technologies, Boulder, CO). Expression and purification for all CENP-C constructs and mutants was carried out as described (Klare et al., 2015). All constructs were sequence-verified.
 
-## Nucleosome reconstitution
+### Nucleosome reconstitution
 
 Plasmids for the production of X. laevis H2A, H2B, H3 and H4 were a gift from D. Rhodes. Plasmids for the production of human CENP-A:H4 histone tetratmer were a gift from A.F. Straight. 145 bp DNA (601-Widom) wrapped around CENP-A or H3 octamers was a gift from C.A. Davey. Purification of CENP-A or H3 containing NCPs were performed as previously described (Guse et al., 2011; Guse et al., 2012; Weir et al., 2016). For cryo-EM studies, nucleosomes were reconstituted from recombinant human H2A, H2B, CENP-A, and H4. Nucleosomes were reconstituted using the salt dialysis method (Dyer et al., 2004). ‘601’ DNA (147 bp), H2A:H2B dimer, and CENP-A:H4 (or H3:H4) dimer were mixed at molar ratios of 1 to 2.4 to 2.4 in buffer containing 20 mM Tris.Cl pH 7.5, 2M NaCl, and 1 mM EDTA. Sample was transferred to a dialysis tube (D-tube Dialyzer, EMD Millipore), and dialyzed against RB high (Reconstitution Buffer high: 20 mM Tris.Cl pH7.5, 2 M NaCl, 1 mM EDTA and 1 mM DTT) for 4 hr at 4°C. Gradient dialysis was set up as described (Dyer et al., 2004). A peristaltic pump (flow rate 1.5 ml/minute) was used for replacing RB high with RB low (Reconstitution Buffer low: 20 mM Tris.Cl pH7.5, 0.25 M NaCl, 1 mM EDTA and 1 mM DTT) for 18 hr. Finally, the sample was dialyzed against storage buffer (20 mM Tris.Cl pH7.5, 20 mM NaCl, 1 mM EDTA and 1 mM DTT) for 8 hr.
 
-## GST pull-down assays
+### GST pull-down assays
 
 GST pulldown assays were performed as previously described (Klare et al., 2015) with minor modifications. Briefly, pre-blocked GSH Sepharose beads were incubated in pull-down buffer consisting of 10 mM HEPES pH 7.5, 2.5% glycerol, 1 mM TCEP and either 300 mM NaCl for GST-LN-CENP-C assays or 150 mM NaCl for GST-LN-NCPs assays. GST-CENP-LN or GST-CENP-N1-212 as baits (at a 1 μM overall concentration) were incubated with either NCPs or CENP-C as prey at a 3 μM concentration. The bait was loaded onto 10 µl pre-blocked beads before adding the prey. The reaction volume was topped up to 40 μl with buffer and incubated at 4°C for 1 hr. Beads were spun down at 500 g for 3 min. The supernatant was removed and beads were washed twice with 200 μl pull-down buffer supplemented with 0.05% Triton-X-100. Supernatant was removed completely, samples boiled in 15 µl Laemmli sample loading buffer and run on a 14% SDS–PAGE gel. Bands were visualized with Coomassie brilliant blue staining. For pre-blocking of GSH sepharose beads, 750 μl of GSH sepharose beads were washed twice with 1 ml washing buffer (20 mM HEPES pH 7.5, 200 mM NaCl) and incubated in 1 ml blocking buffer (20 mM HEPES pH 7.5, 500 mM NaCl, 500 μg/μl BSA) overnight at 4°C with rotation. Beads were washed five times with 1 ml washing buffer and resuspended in 500 μl washing buffer to have a 50/50 slurry of beads and buffer. Pull-down assays were repeated at least three times.
 
-## Analytical SEC analysis
+### Analytical SEC analysis
 
 Analytical SEC was performed on either Superdex 200 5/150 or Superose 6 5/150 columns in a buffer containing 20 mM HEPES (pH 7.5), 300 mM NaCl, 2.5% glycerol, 2 mM TCEP, pH 7.5 on an ÄKTAmicro system (GE Healthcare). Proteins were mixed at 6 μM in a total volume of 50 μl, incubated for one hour on ice, spun for 15 min in a bench-top centrifuge before each injection. All samples were eluted under isocratic conditions at 4°C in SEC buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 2.5% glycerol, 2 mM TCEP) at a flow rate of 0.1 ml/min. Elution of proteins was monitored at 280 nm. Fractions (100 μl) were collected and analyzed by SDS–PAGE and Coomassie blue staining.
 
-## CENP-N:CENP-A nucleosome complex preparation
+### CENP-N:CENP-A nucleosome complex preparation
 
 Complexes containing CENP-A nucleosome and CENP-NNT (CENP-N:CENP-A nucleosome complex) were generated by mixing CENP-A nucleosome and CENP-NNT at a molar ratio of 1:3, then dialyzed against 20 mM Tris.Cl pH 7.5, 50 mM NaCl, 1 mM EDTA and 1 mM DTT. The complexes were concentrated to approximately 2.5 µM using a Millipore concentrator (MW 50 kD cut-off).
 
-## EMSA assays
+### EMSA assays
 
 Nucleosomes were mixed with CENP-NNT constructs in buffer containing 20 mM Tris.Cl, pH 7.5, 1 mM EDTA, 150 mM NaCl, 1 mM DTT and 0.1% CHAPS for 30 min at room temperature. The mixture was analyzed by 5% native PAGE, and the gel was stained with SYBR Gold. The gel was imaged at 488 nm (for SYBR Gold staining or Alexa488 labelled H2B in the nucleosome) and 647 nm (for Atto N 647 labeled H2B in the nucleosome) using a Typhoon imager (GE Healthcare). Intensity at 647 nm was used for binding curves, with the number of replicates indicated. The intensity of the nucleosome band (not the shifted bands) was quantified, and normalized to the nucleosome sample without CENP-N.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 All protein samples were loaded onto a Superdex 200 10/300 column equilibrated in 20 mM HEPES pH 7.5, 2.5% glycerol, 300 mM NaCl and 1 mM TCEP prior to ITC runs. ITC measurements were performed at 25°C on an ITC200 micro calorimeter (GE Healthcare). In each titration, the protein in the cell (at a 5–8 µM concentration) was titrated with 19 × 2 µl injections (at 180 s intervals) of protein ligand (at 50–80 µM concentration). The injections were continued beyond saturation to allow for determination of heats of ligand dilution. Data were fitted by least-square procedure to a single site binding model using ORIGIN software package (MicroCal, Malvern Instruments, Worcestershire, UK).
 
-## Mammalian plasmids
+### Mammalian plasmids
 
 Plasmids for stable cell lines were generated in pCDNA5/FRT/TO-EGFP-IRES, a modified version of the pCDNA5/FRT/TO vector (Invitrogen, Carlsbad, CA). The starting plasmid for EGFP expression was made by PCR amplifying the EGFP sequence of the pEGFP-C1 plasmid (Takara Bio Inc., Shiga, Japan) and cloning it into the pcDNA5/FRT/TO vector previously modified to carry an internal ribosomal entry site (IRES) sequence creating the pcDNA5/FRT/TO EGFP-IRES vector (Petrovic et al., 2010). Mammalian expression plasmids used in this study to express N-terminally tagged CENP-C WT or the PEST mutant were derived from the pCDNA5/FRT/TO-EGFP-IRES and used either for genomic integration or transient expression of human CENP-C proteins. A modified version of the pCDNA5/FRT/TO-EGFP-IRES plasmid where EGFP was removed and replaced with mCherry to create the pCDNA5/FRT/TO-mCherry-IRES was used to express all C-terminally tagged CENP-N constructs either via genomic integration or transient expression. To create the EGFP tagged CENP-C protein and CENP-N tagged with mCherry protein full-length proteins were amplified by PCR from full-length human codon-optimized cDNA synthesized by GeneArt (Life Technologies, Thermo Fisher, USA). Using the Gibson cloning method36 the cDNA sequence was ligated with the PCR amplified pCDNA5/FRT/TO-EGFP-IRES or pCDNA5/FRT/TO-mCherry-IRES to create the final constructs used in this study. Each plasmid was then sequence verified before use.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 U2OS cells, a gift from A. Bird (MPI-Dortmund, Germany), were grown in DMEM (PAN Biotech, Aidenbach, Germany) supplemented with 10% FBS (Clontech, part of Takara Bio group, Shiga, Japan), penicillin and streptomycin (GIBCO, Carlsbad, CA), and 2 mM L-glutamine (PAN Biotech). Transient transfections were performed using pCDNA5-FRT-TO plasmids carrying either CENP-Nwt or mutants with a C-terminal-mCherry tag transfected into asynchronously growing cells and expressed for 24 hr before preparation for immunofluorescence analysis. To analyze whether the CENP-C5A mutant abrogates kinetochore localization of CENP-N, we used Flp-In T-REx HeLa cells (a gift from SS Taylor, University of Manchester, Manchester, England, UK) to generate stable doxycycline-inducible cell lines, which were maintained in DMEM (PAN Biotech, Aidenbach, Germany) with 10% tetracycline-free FBS (Clontech) supplemented with 50 μg/ml Zeocin (Invitrogen) and 2 mM L-glutamine (PAN Biotech). Flp-In T-REx HeLa expression cell lines were generated as previously described (Krenn et al., 2012). FlpIn T-REx HeLa cells stably expressing mCherry-CENP-N were grown on coverslips pre-coated with poly-D-Lysine (Millipore, 15 µg/ml). The day after cells were seeded, expression of mCherry-CENP-N was induced using 0.2–0.5 µg/ml doxycycline (Sigma, St. Louis, MO). Further, cells were transiently transfected with GFP-CENP-CWT or GFP-CENP-C5A mutant and CENP-C siRNA for 72 hr. When required 16 hr before fixation cells were synchronized overnight in 0.33 µM nocodazole (Sigma–Aldrich) to assess mitotic localization. Endogenous CENP-C was depleted by siRNA (target sequence: 5′-GGAUCAUCUCAGAAUAGAA-3′ obtained from ThermoFisher), transfected into cells using Lipofectamine RNAiMAX Transfection Reagent (ThermoFisher) as per the manufactures instructions for 72 hr.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Either U2OS or FlpIn T-REx HeLa cells were fixed using 4% paraformaldehyde in phosphate buffered saline (PBS), permeablised using 0.25% Triton X-100 in PBS and blocked in 3% BSA/PBS. U2OS cells were stained for with the following antibodies: anti-CENP-C [rabbit polyclonal antibody SI410, diluted 1:1000 (Trazzi et al., 2009); and CREST/anti-centromere antibody (Antibodies Inc. 15-234-0001), diluted 1:100]. FlpIn T-REx HeLa cells were stained for GFP (GFP-Boost, Chromotek gba-488, 1:500), mCherry (RFP-Boost, Chromotek, rba-594, 1:500), CENP-C [rabbit polyclonal antibody SI410; 1:1000 (Trazzi et al., 2009), CREST/anti-centromere antibodies (Antibodies, Inc., Davis, CA, 1:100), or CENP-A (Mouse, Gene Tex GTX13939, 1:500) diluted in blocking buffer for 2–4 hr. Donkey anti-human Alexa Fluor 405 and donkey anti-rabbit Alexa Fluor 488, donkey anti-human (Jackson ImmunoResearch Laboratories, Inc., West Grove, PA), as well as donkey anti-mouse (Invitrogen) were used as secondary antibodies. DNA was stained with 0.5 µg/ml DAPI (Serva), and coverslips were mounted with Mowiol mounting media (Calbiochem). U2OS cells were imaged with a Deltavision Elite System (GE Healthcare, UK) equipped with an IX-71 inverted microscope (Olympus, Japan), a PLAPON 60x/1.42NA objective and a pco.edge sCMOS camera (PCO-TECH Inc., USA). Images were acquired as Z-sections (using the softWoRx software from Deltavision) and converted into maximal intensity projections TIFF files for illustrative purposes while FlpIn T-REx HeLa Cells were imaged at room temperature using a spinning disk confocal device on the 3i Marianas system equipped with an Axio Observer Z1 microscope (Zeiss), a CSU-X1 confocal scanner unit (Yokogawa Electric Corporation, Tokyo, Japan), Plan-Apochromat 63 × or 100×/1.4NA Oil Objectives (Zeiss), and Orca Flash 4.0 sCMOS Camera (Hamamatsu). Images were acquired as z-sections at 0.2 µm. Images were converted into maximal intensity projections, exported, and converted into 8-bit. Quantification of kinetochore signals was performed on unmodified 16-bit z-series images using Imaris 7.3.4 32-bit software (Bitplane, Zurich, Switzerland). Measurements were exported in Excel (Microsoft) and graphed with GraphPad Prism 6.0 (GraphPad Software, San Diego California USA). For quantification in Figure 4B-C after background subtraction, all signals were normalized to CREST and the values obtained were then normalized by the mean of the CENP-N-mCherryWT construct. Quantifications are based on one experiment where a range of 7 to 10 cells and 177 to 393 kinetochores per condition were analyzed.
 
-## Crystallization of CENP-N1-235his and structure determination
+### Crystallization of CENP-N1-235his and structure determination
 
 Initial crystallization hits of CENP-N1-212His6 (His6, hexahistidine tag) or CENP-N1-235His6 were obtained in sitting drop crystallization experiments at c.a. 6 mg/ml in a 96 well format using a Mosquito protein crystallization robot (TTP Labtech) at 4°C. Crystals grew in various commercial screens including Qiagen Nextal PEGSII conditions B11 and B12 and Qiagen Nextal PEG conditions H6 and H8 within 24–48 hr, reaching maximum size in 5–7 days. CENP-N1-235His6 crystals were further optimized in 24-well plates via hanging drop method using a two-dimensional grid screen varying PEG3350 (from 6–16%) and pH (from 6.6 to 7.2). Selenomethionine (SeMet) derivatives of CENP-N1-235His6 were crystallized under similar conditions. Crystals were cryo-cooled in a mother liquor solution containing 20–25% (v/v) glycerol. All data were collected at 100K using a Pilatus 6M detector either at the X10SA beamline at the SLS in Villigen, Switzerland, or at the P11 beamline of PETRA in Hamburg, Germany. All data sets were integrated and scaled using XDS and XSCALE (Kabsch, 2010).
 
@@ -155,14 +534,14 @@ Both native and selenomethionine (SeMet) crystals grew in space group P41 with t
 
 Monomers A and B in the asymmetric unit are quite similar except for a minor hinge-bending between the two subdomains of each monomer, and except for loops 137–142 and 164–174. In monomer B, the 137–142 loop is pulled approximately 3 Å away from the remainder of the molecule by a symmetry contact, and in turn pulls on the neighbouring loop causing a 2.6 Å movement of the backbone of K117. This loop has no crystal contacts in monomer A. Similarly, residues 164–174 of monomer B pack against a symmetry related molecule, most likely causing the observed (relative) stabilization of M167 in monomer B and backbone shifts of up to 7.3 Å relative to monomer A. Residues 166–168 have very weak density especially in chain A, corresponding to a weak and multiple anomalous density of SeM167, indicating multiple conformations of this loop. The coordinates of CENP-N have been submitted to the protein data bank (PDB) with code 6EQT.
 
-## CryoEM grid preparation and microscopy
+### CryoEM grid preparation and microscopy
 
 Quantifoil 2/2 grids (Quantifoil Micro Tools GmbH, Grossloebichau, DE) were used for the CENP-NNT:CENP-ANCP complex (2.5 µM concentration). The grids were glow discharged (EMItec, Lohmar, DE) at 40 mA for 20 s. 4 µl sample was applied onto the grid before plunge freezing into Ethane, using a Vitrobot (FEI, MARK IV). Blot time was 4 s. All grids were stored in liquid nitrogen before imaging. CENP-NNT:CENP-ANCP complex was imaged at nominal magnification of 29000x on a FEI Titan Krios (300 kV), equipped with a Gatan K2 Summit direct detector. Pixel size was 1.02 Å. The movies were captured in super resolution mode with electron dose rate at 10 electrons per pixel per second for 8 s and 0.2 s per frame. Defocus range was −1.0 to −2.5 µm.
 
-## Single particle analysis of cryoEM images
+### Single particle analysis of cryoEM images
 
 Motioncor2 was used for the alignment of images (motion correction) (Zheng et al., 2017). GCTF was applied for Constant transfer function (CTF) estimation (Zhang, 2016). Images were evaluated manually by inspecting their power spectra. Particles were manually picked for the initial 2D classification (10 class averages) in RELION 2.05 (Fernandez-Leiro and Scheres, 2017). Initial 2D class averages were used for particle auto-picking as described in Relion2.0 tutorials. Particles from auto-picking were extracted and sorted for reference free 2D classification. In 2D classification, 200 class averages were generated. Noisy class averages were discarded. Particles from the retained class averages were used for reference free 3D reconstruction in cryoSPARC (Punjani et al., 2017). The low-pass filtered map from the 3D reconstruction in cryoSPARC was used as reference for 3D classification in RELION 2.05 (Fernandez-Leiro and Scheres, 2017). Four 3D classes were created after 3D classification. Particle images from the class at high resolution were used for 3D refinement in Relion 2.1b1. The map was then sharpened in ‘post-process’, using a mask file created by Relion2.1b1. The local resolution of the map was estimated by Relion (Kucukelbir et al., 2014). Anisotropy was analyzed by 3DFSC calculation (Tan et al., 2017).
 
-## CryoEM structure modeling
+### CryoEM structure modeling
 
 The original 3D refined map and post-processed map were used for the model fitting and refinement. DNA was taken from a high-resolution crystal structure of a nucleosome with 601 DNA [Protein Data Bank accession code 3LZ0 (Vasudevan et al., 2010), CENP-A containing histone core was taken from Protein Data Bank accession code 3AN2 (Tachiwana et al., 2011). The crystal structure of CENP-N (amino acids 1–212) was used to fit into the remaining density using UCSF Chimera (Pettersen et al., 2004) (rigid body without allowing flexibility). Based on map density, the model was iteratively modified and locally refined in Coot (Emsley et al., 2010). The final model was subjected to real space refinement in PHENIX (Adams et al., 2010). The coordinates and maps were deposited in the protein data base (pdb code 6C0W, and EMD-7326).

@@ -49,7 +49,7 @@
 
 ## Abstract
 
-10.7554/eLife.20532.001 Populations are often divided categorically into distinct racial/ethnic groups based on social rather than biological constructs. Genetic ancestry has been suggested as an alternative to this categorization. Herein, we typed over 450,000 CpG sites in whole blood of 573 individuals of diverse Hispanic origin who also had high-density genotype data. We found that both self-identified ethnicity and genetically determined ancestry were each significantly associated with methylation levels at 916 and 194 CpGs, respectively, and that shared genomic ancestry accounted for a median of 75.7% (IQR 45.8% to 92%) of the variance in methylation associated with ethnicity. There was a significant enrichment (p=4.2×10 -64 ) of ethnicity-associated sites amongst loci previously associated environmental exposures, particularly maternal smoking during pregnancy. We conclude that differential methylation between ethnic groups is partially explained by the shared genetic ancestry but that environmental factors not captured by ancestry significantly contribute to variation in methylation. DOI: http://dx.doi.org/10.7554/eLife.20532.001
+Populations are often divided categorically into distinct racial/ethnic groups based on social rather than biological constructs. Genetic ancestry has been suggested as an alternative to this categorization. Herein, we typed over 450,000 CpG sites in whole blood of 573 individuals of diverse Hispanic origin who also had high-density genotype data. We found that both self-identified ethnicity and genetically determined ancestry were each significantly associated with methylation levels at 916 and 194 CpGs, respectively, and that shared genomic ancestry accounted for a median of 75.7% (IQR 45.8% to 92%) of the variance in methylation associated with ethnicity. There was a significant enrichment (p=4.2×10-64) of ethnicity-associated sites amongst loci previously associated environmental exposures, particularly maternal smoking during pregnancy. We conclude that differential methylation between ethnic groups is partially explained by the shared genetic ancestry but that environmental factors not captured by ancestry significantly contribute to variation in methylation.
 
 ## Introduction
 
@@ -65,41 +65,213 @@ Our findings have important implications for both the use of ancestry to capture
 
 ## Results
 
-The study included 573 participants, the majority of whom self-identified as being either of Puerto Rican (n = 220) or Mexican origin (n = 276).
+The study included 573 participants, the majority of whom self-identified as being either of Puerto Rican (n = 220) or Mexican origin (n = 276). Table 1 displays baseline characteristics of the GALA II study participants with methylation data included in this study, stratified by ethnic subgroups (Puerto Rican, Mexican, Other Latino, and Mixed Latinos who had grandparents of more than one national origin). Figure 1 shows the distribution of African, European, and Native American ancestry among the 524 participants with genomic ancestry estimates.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig1-v1.jpg)
 
-**Figure 1.:** Mexicans, on average, had a greater proportion of Native American ancestry than Puerto Ricans; Puerto Ricans had a greater proportion of European and African ancestry. Mixed and other Latinos were intermediate.DOI: http://dx.doi.org/10.7554/eLife.20532.003
+**Figure 1.:** Mexicans, on average, had a greater proportion of Native American ancestry than Puerto Ricans; Puerto Ricans had a greater proportion of European and African ancestry. Mixed and other Latinos were intermediate.
+
+**Table 1.**
+ Baseline characteristics of GALA II participants with methylation data, stratified by ethnicity. Continuous variables are reported with inter-quartile range in brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mexican</th>
+      <th>Puerto rican</th>
+      <th>Mixed latino</th>
+      <th>Other latino</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>276</td>
+      <td>220</td>
+      <td>16</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>Males (%)</td>
+      <td>125 (45.3%)</td>
+      <td>127 (57.7%)</td>
+      <td>6 (37.5%)</td>
+      <td>28 (45.9%)</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>11.4 [9.3: 14.7]</td>
+      <td>12.3 [10.4: 14.2]</td>
+      <td>11.8 [10.7: 14.9]</td>
+      <td>11.8 [10: 15.7]</td>
+    </tr>
+    <tr>
+      <td>Asthma cases (%)</td>
+      <td>124 (44.9%)</td>
+      <td>147 (66.8%)</td>
+      <td>9 (56.3%)</td>
+      <td>31 (50.8%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Ancestry (n = 524)</td>
+    </tr>
+    <tr>
+      <td>African</td>
+      <td>4.3% [2.9%: 6.0%)</td>
+      <td>22.8% [16.6%: 29.4%)</td>
+      <td>8.5% [5.6%: 19.2%)</td>
+      <td>12.3% [6.3%: 25.8%)</td>
+    </tr>
+    <tr>
+      <td>Native American</td>
+      <td>55.4% [44.5%: 65.7%)</td>
+      <td>11.2% [9.8%: 13%)</td>
+      <td>31.5% [20.9%: 45.6%)</td>
+      <td>32.8% [10.4%: 49.3%)</td>
+    </tr>
+    <tr>
+      <td>European</td>
+      <td>40.5% [29.9%: 50.2%)</td>
+      <td>65.7% [59.2%: 71%)</td>
+      <td>50.5% [44.6%: 57.6%)</td>
+      <td>48.9% [40%: 58.5%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Recruitment Site</td>
+    </tr>
+    <tr>
+      <td>Chicago</td>
+      <td>140 (50.7%)</td>
+      <td>15 (6.8%)</td>
+      <td>11 (68.9%)</td>
+      <td>15 (24.6%)</td>
+    </tr>
+    <tr>
+      <td>New York</td>
+      <td>18 (6.5%)</td>
+      <td>10 (4.5%)</td>
+      <td>1 (6.3%)</td>
+      <td>23 (37.7%)</td>
+    </tr>
+    <tr>
+      <td>Puerto Rico</td>
+      <td>0</td>
+      <td>193 (87.7%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>San Francisco</td>
+      <td>78 (28.3%)</td>
+      <td>0</td>
+      <td>2 (12.5%)</td>
+      <td>23 (37.7%)</td>
+    </tr>
+    <tr>
+      <td>Houston</td>
+      <td>40 (14.5%)</td>
+      <td>2 (0.9%)</td>
+      <td>2 (12.5%)</td>
+      <td>5 (8.2%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Cell Counts (estimated)</td>
+    </tr>
+    <tr>
+      <td>Granulo cytes</td>
+      <td>51.2% [46.0%: 55.7%)</td>
+      <td>51.6% [46.8%: 57%)</td>
+      <td>51% [43.6%: 57.2%)</td>
+      <td>49.1% [43.8%: 55.8%)</td>
+    </tr>
+    <tr>
+      <td>Lympho cytes</td>
+      <td>41.9% [36.9%: 46.6%)</td>
+      <td>41.8% [36.9%: 46.5%)</td>
+      <td>41.9% [36.1%: 51.6%)</td>
+      <td>43.9% [36.8%: 49.6%)</td>
+    </tr>
+    <tr>
+      <td>Mono cytes</td>
+      <td>7.1% [5.8%: 8.3%)</td>
+      <td>6.74% [5.74%: 8.24%)</td>
+      <td>6.6% [5.7%: 7.6%)</td>
+      <td>7.4% [6.2%: 8.6%)</td>
+    </tr>
+  </tbody>
+</table>
 
 Methylation data used in this study has been previously made publicly available at the Gene Expression Omnibus at https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77716 (Rahmani et al., 2016). Genotyping data has been deposited in dbGaP; link will be activated when the data becomes publicly available (Burchard, http://www.ncbi.nlm.nih.gov/gap/?term=phs001180).
 
-## Global patterns of methylation
+### Global patterns of methylation
 
-Differences in ethnicity and ancestry resulted in discernible patterns in the global methylation profile as demonstrated in a multidimensional scaling analysis (
+Differences in ethnicity and ancestry resulted in discernible patterns in the global methylation profile as demonstrated in a multidimensional scaling analysis (Figure 2A). As expected (Houseman et al., 2012; Lam etal., 2012), the first few principal coordinates are strongly correlated to imputed cell composition (Figure 2B–C). There are also significant associations of self-identified sub-ethnicity with PC2 (p-ANOVA = 0.003), PC3 (p-ANOVA = 0.004), PC6 (p-ANOVA = 0.0001), PC7 (p-ANOVA = 0.0003) (Figure 3A), and PC8 (p-ANOVA = 0.0003), after adjusting for age, sex, disease status, cell components, and technical laboratory factors (plate and position). Genetic ancestry was associated with PC3 (p=0.002), PC7 (p=0.0004) (Figure 3B) and PC8 (p=0.001) in a two degree of freedom ANOVA test, adjusting for age, sex, disease status, cell components, technical factors, and ethnicity. Supplementary file 1A summarizes the results of the simple correlation analysis of methylation with ethnicity and ancestry, as well as the adjusted nested ANOVA models described above and the mediation results described below.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig2-v1.jpg)
 
-**Figure 2.:** (A) Distribution of the first 10 principal coordinates of the methylation data. Plots in the diagonal show the univariate distribution; those in the lower left triangle show bivariate relationship between each pair of PCs, while those in the upper right show the bivariate density. (B) Bivariate or ANOVA associations between principal coordinates and technical factors (chip, position), cell counts, genetic ancestry (European, Native American, African), recruitment site (New York, NY, San Francisco, CA, Chicago, IL, Houston, TX, and Puerto Rico), demographic factors (ethnicity, age, sex), and case status. (C) Correlation coefficients between the various factors and principal coordinates.DOI: http://dx.doi.org/10.7554/eLife.20532.005
+**Figure 2.:** (A) Distribution of the first 10 principal coordinates of the methylation data. Plots in the diagonal show the univariate distribution; those in the lower left triangle show bivariate relationship between each pair of PCs, while those in the upper right show the bivariate density. (B) Bivariate or ANOVA associations between principal coordinates and technical factors (chip, position), cell counts, genetic ancestry (European, Native American, African), recruitment site (New York, NY, San Francisco, CA, Chicago, IL, Houston, TX, and Puerto Rico), demographic factors (ethnicity, age, sex), and case status. (C) Correlation coefficients between the various factors and principal coordinates.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig3-v1.jpg)
 
-**Figure 3.:** (A) Association between ethnicity and principal coordinate 7. (B) Association between Native American ancestry proportion and PC7, colored by ethnicity. Native American ancestry explains approximately 81% of the association between PC7 and ethnicity.DOI: http://dx.doi.org/10.7554/eLife.20532.006
+**Figure 3.:** (A) Association between ethnicity and principal coordinate 7. (B) Association between Native American ancestry proportion and PC7, colored by ethnicity. Native American ancestry explains approximately 81% of the association between PC7 and ethnicity.
 
 A mediation analysis (Tingley et al., 2014) revealed that the associations between ethnicity and PCs 3, 7, and eight were significantly mediated by Native American ancestry, which explained ~100% (95% CI: 37–100%, p=0.01) of PC3, 83% (95% CI 37–100%, p<0.001) of PC7 and 66% (95% CI: 25% to 100%, p<0.001) of PC8. Inclusion of Native American ancestry in the regression model of PCs 3, 7, and eight caused the ethnicity associations to be non-significant. However, the associations of ethnicity with PCs 2 and 6 were not explained by Native American, African or European ancestry (mediation p>0.05), suggesting that the ethnic differences in these principal components are associated with global methylation patterns not captured by the shared genetic ancestry of each ethnic group. When genetic ancestry was regressed on the methylation data with the principal coordinates recalculated using the residuals of the regression between methylation and ancestry, there was an association between ethnicity and PC6 (p-ANOVA = 0.003). However, there was no association with any of the other principal coordinates. These observations suggest that while shared genetic ancestry can explain over 50% of the association between ethnicity and global methylation patterns in three PC’s, other non-genetic factors, such as environmental and social exposure differences associated with ethnicity influence methylation and are not captured by measures of genetic ancestry in two others.
 
-## Epigenome-wide association of self-identified ethnicity
+### Epigenome-wide association of self-identified ethnicity
 
-An epigenome-wide association study of self-identified ethnicity (see Materials and methods for details of ascertainment of ethnicity) and methylation identified a significant difference in methylation M-values between ethnic groups at 916 CpG sites at a Bonferroni-corrected significance level of less than 1.6 × 10
+An epigenome-wide association study of self-identified ethnicity (see Materials and methods for details of ascertainment of ethnicity) and methylation identified a significant difference in methylation M-values between ethnic groups at 916 CpG sites at a Bonferroni-corrected significance level of less than 1.6 × 10−7 (Figure 4A and Supplementary file 1B). The most significant association with ethnicity occurred at cg12321355 in the ABO blood group gene (ABO) on chromosome 3 (p-ANOVA 6.7 × 10−22) (Figure 4B). A two degree of freedom ANOVA test for genomic ancestry was also significantly associated with methylation level at this site (p=2.3×10−5) (Figure 4C), and when the analysis was stratified by ethnic sub-group, showed an association in both Puerto Ricans and Mexicans (p=0.001 for Puerto Ricans, p=0.003 for Mexicans). Although adjusting for genomic ancestry attenuated the effect of ethnicity, a significant association between ethnicity and methylation remained (p=0.04). Recruitment site, an environmental exposure proxy, was not significantly associated with methylation at this locus (p=0.5), suggesting that environmental differences associated with ethnicity beyond geography and ancestry are driving the association.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig4-v1.jpg)
 
-**Figure 4.:** A) Manhattan plot showing the associations between ethnicity and methylation at individual CpG loci.(B) Violin plot showing one such locus, cg19145607. Mexicans are relatively hypermethylated compared to Puerto Ricans (p=1.4×10–19). (C) Plot showing the association between Native American ancestry at the locus and methylation levels at the locus colored by ethnicity; Native American ancestry accounts for 58% of the association between ethnicity and methylation at the locus.DOI: http://dx.doi.org/10.7554/eLife.20532.007
+**Figure 4.:** (B) Violin plot showing one such locus, cg19145607. Mexicans are relatively hypermethylated compared to Puerto Ricans (p=1.4×10–19). (C) Plot showing the association between Native American ancestry at the locus and methylation levels at the locus colored by ethnicity; Native American ancestry accounts for 58% of the association between ethnicity and methylation at the locus.
 
 To determine the contribution of shared genetic ancestry and other factors associated with ethnicity, we repeated the analysis adjusting for ancestry. A significant association remained in 314 of the 834 (37.8%, p=1.7×10−183 for enrichment) CpG sites associated with ethnicity (Figure 5A and Supplementary file 1B) (82 sites were excluded because they demonstrated unstable coefficient estimates and inflated standard errors due to strong correlations between ethnicity and ancestry, especially Native American ancestry [see Figure 1]).
 
+Table 2 and Figure 5b show the proportion of variance explained by ethnicity, genomic ancestry, and their joint effect in the 916 CpG’s associated with ethnicity, as well as the 314 CpG’s that remained associated with ethnicity after adjustment for ancestry and the 520 CpG’s whose association with ethnicity was no longer significant when ancestry terms were introduced into the model. Even after adjusting for genomic ancestry, ethnicity explained 1.7% (IQR 0.785% to 3.0%) but as much as 13.4% of the variance in methylation across these loci. Genomic ancestry explained a median of 4.2% (IQR 1.8% to 8.3%) of the variance in methylation at all loci associated with ethnicity and accounts for a median of 75.7% (IQR 45.8% to 92%) of the total variance in methylation explained jointly by ethnicity and ancestry (median of 6.8%, IQR 4.5% to 10.0%) (Figure 5B).
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig5-v1.jpg)
 
-**Figure 5.:** (A) Venn diagram showing the effect of adjustment for ancestry on the association between ethnicity and methylation. The components of the diagram represent the number of CpG’s that remained associated with ethnicity after adjustment for ancestry and the number of CpG’s that were associated with ancestry. (B) Relative proportion of variance in methylation explained by ethnicity and genomic ancestry across loci significantly associated with ethnicity. Mediation analysis of associations between ethnicity and methylation M-values for (C) Native American ancestry and (D) African ancestry. For simplicity, only significant mediation effects are shown.DOI: http://dx.doi.org/10.7554/eLife.20532.008
+**Figure 5.:** (A) Venn diagram showing the effect of adjustment for ancestry on the association between ethnicity and methylation. The components of the diagram represent the number of CpG’s that remained associated with ethnicity after adjustment for ancestry and the number of CpG’s that were associated with ancestry. (B) Relative proportion of variance in methylation explained by ethnicity and genomic ancestry across loci significantly associated with ethnicity. Mediation analysis of associations between ethnicity and methylation M-values for (C) Native American ancestry and (D) African ancestry. For simplicity, only significant mediation effects are shown.
+
+**Table 2.**
+ Proportion of variance in methylation explained by ethnicity and ancestry. Numbers represent the median and interquartile range.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>All CpG’s associated with ethnicity (n = 916)</th>
+      <th>CpG’s associated with ethnicity after adjusting for ancestry (n = 314)</th>
+      <th>CpG’s whose association with ethnicity is explained by ancestry (n = 520)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Joint</td>
+      <td>6.8% (4.5% to 10%)</td>
+      <td>6.2% (4.4% to 8.8%)</td>
+      <td>7.8% (5.3% to 11.1%)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity</td>
+      <td>1.7% (0.78% to 3.0%)</td>
+      <td>3.5% (2.2% to 5.1%)</td>
+      <td>&lt;1%</td>
+    </tr>
+    <tr>
+      <td>Ancestry</td>
+      <td>4.2% (1.8% to 8.3%)</td>
+      <td>1.8% (0.8% to 4.0%)</td>
+      <td>6.6% (4.0% to 10.2%)</td>
+    </tr>
+  </tbody>
+</table>
 
 Ethnicity and ancestry jointly explained as much as 38.5% of the variance in methylation in one CpG (cg0966827) and there were 17 CpG’s where ethnicity and ancestry jointly explain more 25% of the variance. Among the 314 CpG’s that remained associated with ethnicity after adjustment for ancestry, ethnicity accounted for a larger share of the joint variance than genomic ancestry (3.5%, IQR 2.2% to 5.1% versus 1.8%, IQR 0.8% to 4.0%). We saw a moderate amount of correlation between the 314 methylation sites associated with ethnicity after adjusting for ancestry (median R2 of 0.044, IQR 0.01 to 0.13).
 
@@ -117,7 +289,7 @@ As only 16 participants self-identified as ‘Mixed Latino’, we performed a se
 
 We conclude that shared genetic ancestry explains much but not all of the association between ethnicity and methylation. Other, non-genetic factors associated with ethnicity likely explain the ethnicity-associated methylation changes that cannot be accounted for by genomic ancestry alone.
 
-## Ethnic differences in environmentally-associated methylation sites
+### Ethnic differences in environmentally-associated methylation sites
 
 Methylation at CpG loci that had previously been reported to be associated with environmental exposures whose exposure prevalence differs between ethnic groups were tested for association with ethnicity in this study. A recent meta-analysis of maternal smoking during pregnancy, an exposure that varies significantly by ethnicity (Oh et al., 2012), identified associations with methylation at over 6000 CpG loci (Joubert et al., 2016). We found 1341 of 4404 that passed QC in our own study (30.4%) were nominally associated with ethnicity (p<0.05), which represented a highly significant (p<2×10−16) enrichment. Using a Bonferroni correction for the 4404 loci tested, 126 maternal-smoking related loci were associated with ethnicity (p<1.1×10−5), and 27 loci were among the 916 CpG’s reported above as associated with ethnicity (Supplementary file 1G). Of these, 14 were among the 314 CpG’s whose association with ethnicity could not be explained by ancestry and 12 were among the 263 CpG’s whose association with ethnicity could not be explained by ancestry or fine-scale substructure. We also examined methylation loci from an earlier study of maternal smoking in Norwegian newborns (Joubert et al., 2012) as well as studies of diesel exhaust particles (Jiang et al., 2014) and exposure to violence (Chen et al., 2013). These results are supportive of our hypothesis that environmental exposures may be responsible for the observed differences in methylation between ethnic groups and are presented in Supplementary file 1H.
 
@@ -125,23 +297,21 @@ In an earlier study of maternal smoking in Norwegian newborns (Joubert et al., 2
 
 We also found that CpG loci previously reported to be associated with diesel-exhaust particle (DEP) exposure (Jiang et al., 2014) were significantly enriched among the set of loci whose methylation levels varied between ethnic groups. Specifically, of the 101 CpG sites that were significantly associated with exposure to DEP and passed QC in our dataset, 31 were nominally associated with ethnicity (p<0.05), and five were associated with ethnicity after adjusting for 101 comparisons (p<0.005). Finally, we found that methylation levels at cg11218385 in the pituitary adenylate cyclase-activating polypeptide type I receptor gene (ADCYAP1R1), which had been associated with exposure to violence in Puerto Ricans (Chen et al., 2013) and with heavy trauma exposure in adults (Ressler et al., 2011), was significantly associated with ethnicity (p=0.02).
 
-We also found 194 loci with a significant association between global genetic ancestry and methylation levels (after adjusting for ethnicity) at a Bonferroni corrected association p-value of less than 1.6 × 10
+We also found 194 loci with a significant association between global genetic ancestry and methylation levels (after adjusting for ethnicity) at a Bonferroni corrected association p-value of less than 1.6 × 10−7 (Figure 6 and Supplementary file 1I), including 48 that were associated with ethnicity in our earlier analysis. Of these significant associations, 55 were driven primarily by differences in African ancestry, 94 by differences in Native American ancestry, and 45 by differences in European ancestry. The most significant association between methylation and ancestry occurred at cg04922029 in the Duffy antigen receptor chemokine gene (DARC) on chromosome 1 (ANOVA p-value 3.1 × 10−24) (Figure 6B). This finding was driven by a strong association between methylation level and global African ancestry; each 25 percentage point increase in African ancestry was associated with an increase in M-value of 0.98, which corresponds to an almost doubling in the ratio of methylated to unmethylated DNA at the site (95% CI 0.72 to 1.06 per 25% increase in African ancestry, p=1.1×10−21). There was no significant heterogeneity in the association between genetic ancestry and methylation between Puerto Ricans and Mexicans (p-het = 0.5). Mexicans have a mean unadjusted methylation M-value 0.48 units lower than Puerto Ricans (95% CI 0.35 to 0.62 units, p=1.1×10−11). However, adjusting for African ancestry accounts for the differences in methylation level between the two sub-groups (p-adjusted = 0.4), demonstrating that ethnic differences in methylation at this site are due to differences in African ancestry.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig6-v1.jpg)
 
-**Figure 6.:** (A) Manhattan plot showing the associations between genomic ancestry and methylation at individual CpG loci. (B) Plot showing one such locus, cg04922029, and genomic African ancestry, showing a strong correlation between African ancestry and hypermethylation at that site.DOI: http://dx.doi.org/10.7554/eLife.20532.010
+**Figure 6.:** (A) Manhattan plot showing the associations between genomic ancestry and methylation at individual CpG loci. (B) Plot showing one such locus, cg04922029, and genomic African ancestry, showing a strong correlation between African ancestry and hypermethylation at that site.
 
-The distribution of methylation M-values at cg04922029 is tri-modal, raising the possibility that a SNP whose allele frequency differs between African and non-African populations may be driving the association. We therefore looked at the association between methylation at cg0422029 and ancestry at that locus. We found almost perfect correlation between methylation and African ancestry at the locus (p=6×10
+The distribution of methylation M-values at cg04922029 is tri-modal, raising the possibility that a SNP whose allele frequency differs between African and non-African populations may be driving the association. We therefore looked at the association between methylation at cg0422029 and ancestry at that locus. We found almost perfect correlation between methylation and African ancestry at the locus (p=6×10−162) (Figure 7A). Each African haplotype at the CpG site was associated with an increase in methylation M-value of 2.7, corresponding to a 6.5-fold increase in the ratio of methylated to unmethylated DNA per African haplotype at that locus. We then looked for SNPs within 10,000 base pairs of the CpG site that explained the admixture mapping association. We found that methylation at cg04922029 was significantly correlated with SNP rs2814778 (Figure 7B), the Duffy null mutation, 212 base pairs away; each copy of the C allele was associated with an increase in M-value of 1.5, or a 2.9-fold increase in the ratio of methylated to unmethylated DNA (p=3.8×10−90) (Figure 7C).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig7-v1.jpg)
 
-**Figure 7.:** (A) Association between cg04922029 on the DARC locus and African ancestry, color coded by ethnic group. There is near perfect correlation between the two. (B) Association between SNPs located within 1 Mb of cg04922029 and methylation levels at that CpG. (C) Association between rs2814778 (Duffy null) genotype and methylation at cg04922029, color coded by the number of African alleles present. There is near perfect correlation between genotype, ancestry and methylation at the locus. (D) Allele frequency of rs2814778 by 1000 Genomes population. The C allele is nearly ubiquitous in African populations and nearly absent outside of African populations and their descendants.DOI: http://dx.doi.org/10.7554/eLife.20532.011
+**Figure 7.:** (A) Association between cg04922029 on the DARC locus and African ancestry, color coded by ethnic group. There is near perfect correlation between the two. (B) Association between SNPs located within 1 Mb of cg04922029 and methylation levels at that CpG. (C) Association between rs2814778 (Duffy null) genotype and methylation at cg04922029, color coded by the number of African alleles present. There is near perfect correlation between genotype, ancestry and methylation at the locus. (D) Allele frequency of rs2814778 by 1000 Genomes population. The C allele is nearly ubiquitous in African populations and nearly absent outside of African populations and their descendants.
 
-When we examined the effect of local ancestry at the other 194 CpG’s we find that a substantial proportion of the effect of global ancestry on local methylation levels is due to local ancestry acting in –cis. Among the 194 CpG sites associated with global ancestry, local ancestry at the CpG site explained a median of 10.4% (IQR 3.0% to 19.4%) of the variance in methylation, accounting for a median of 52.8% (IQR 20.3% to 84.9%) of the total variance explained jointly by local and global ancestry (
+When we examined the effect of local ancestry at the other 194 CpG’s we find that a substantial proportion of the effect of global ancestry on local methylation levels is due to local ancestry acting in –cis. Among the 194 CpG sites associated with global ancestry, local ancestry at the CpG site explained a median of 10.4% (IQR 3.0% to 19.4%) of the variance in methylation, accounting for a median of 52.8% (IQR 20.3% to 84.9%) of the total variance explained jointly by local and global ancestry (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/20532/elife-20532-fig8-v1.jpg)
-
-**Figure 8.:** DOI: http://dx.doi.org/10.7554/eLife.20532.012
 
 ## Discussion
 
@@ -171,7 +341,7 @@ Our findings have important implications for the independent and joint effects o
 
 ## Materials and methods
 
-## Participant recruitment
+### Participant recruitment
 
 All research on human subjects was approved by the Institutional Review Board at the University of California and each of the recruitment sites (Kaiser Permanente Northern California, Children’s Hospital Oakland, Northwestern University, Children’s Memorial Hospital Chicago, Baylor College of Medicine on behalf of the Texas Children’s Hospital, VA Medical Center in Puerto Rico, the Albert Einstein College of Medicine on behalf of the Jacobi Medical Center in New York and the Western Review Board on behalf of the Centro de Neumologia Pediatrica), and all participants/parents provided age-appropriate written assent/consent. Latino children were enrolled as a part of the ongoing GALA II case-control study (Oh et al., 2012).
 
@@ -179,7 +349,7 @@ A total of 4702 children (2374 participants with asthma and 2328 healthy control
 
 Trained interviewers, proficient in both English and Spanish, administered questionnaires to gather baseline demographic data, as well as information on general health, asthma status, acculturation, social, and environmental exposures.
 
-## Methylation
+### Methylation
 
 Genomic DNA (gDNA) was extracted from whole blood using Wizard Genomic DNA Purification Kits (Promega, Fitchburg, WI). A subset of 573 participants (311 cases with asthma and 262 healthy controls) was selected for methylation. Methylation was measured using the Infinium HumanMethylation450 BeadChip (Illumina, Inc., San Diego, CA) following the manufacturer’s instructions.
 
@@ -187,17 +357,17 @@ Genomic DNA (gDNA) was extracted from whole blood using Wizard Genomic DNA Purif
 
 Failed probes were identified using detection p-values using Illumina’s recommendations. Probes on sex chromosomes and those known to contain genetic polymorphisms in the probe sequence were also excluded, leaving 321,503 probes for analysis. Raw data were normalized using Illumina’s control probe scaling procedure. Beta values of methylation (ranging from 0 to 1) were converted to M-values via a logit transformation (Du et al., 2010).
 
-## Genotyping
+### Genotyping
 
 Details of genotyping and quality control procedures for single nucleotide polymorphisms (SNPs) and individuals have been described elsewhere (Galanter et al., 2014). Briefly, participants were genotyped at 818,154 SNPs on the Axiom Genome-Wide LAT 1, World Array 4 (Affymetrix, Santa Clara, CA) (Hoffmann et al., 2011). We removed SNPs with >5% missing data and failing platform-specific SNP quality criteria (n = 63,328), along with those out of Hardy-Weinberg equilibrium (n = 1845; p<10–6) within their respective populations (Puerto Rican, Mexican, and other Latino), as well as non-autosomal SNPs. Subjects were filtered based on 95% call rates and sex discrepancies, identity by descent and standard Affymetrix Axiom metrics. The total number of participants passing QC was 3804 (1902 asthmatic cases, 1902 healthy controls), and the total number of SNPs passing QC was 747,129. The number of participants with both methylation and genotyping data was 524.
 
-## Ancestry and PCA analysis
+### Ancestry and PCA analysis
 
 GALA II participants were combined with ancestral data from 1000 Genomes European (CEU) and African (YRI) populations and 71 Native American (NAM) samples genotyped on the Axiom Genome-Wide LAT one array. A final sample of 568,037 autosomal SNPs with relevant ancestral data was used to estimate local and global ancestry. Global ancestry was estimated using the program ADMIXTURE (Alexander et al., 2009), with a three population model. Local ancestry at all positions across the genome was estimated using the program LAMP-LD (Baran et al., 2012), assuming three ancestral populations.
 
 Principal components for the genetic data were determined using the program EIGENSTRAT (Patterson et al., 2006).
 
-## Statistical analysis
+### Statistical analysis
 
 Using a variance in methylation m-value of 0.2 units, which corresponded to approximately the 90th percentile of the variance in m-value in our pilot data, we determined that in order to have an 80% power to detect a difference in mean methylation between the two major ethnic groups of 0.25 units, using a Bonferroni significance threshold of 1.6 × 10−7 a sample, a sample size of 251 participants in each group was required. That total sample size of 502 participants gave us 80% power to detect correlations between ancestry and methylation of medium (Pearson r > 0.25) effect, meaning that we had 80% power to detect loci where ancestry accounted for at least 6.25% of the variance in methylation.
 

@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0265d1010 Laboratory of Bone and Adipose Biology, Shanxi Medical University Taiyuan China
+1. Laboratory of Bone and Adipose Biology, Shanxi Medical University Taiyuan China ([ROR:0265d1010](https://ror.org/0265d1010))
 2. Department of Dentistry, The 980th Hospital of the PLA Joint Logistic Support Force Shijiazhuang China
-3. https://ror.org/0265d1010 Shanxi Medical Universityersity, The Second Hospital, University Shanxi Medical University Taiyuan China
-4. https://ror.org/03d1wq758 Maine Medical Center Research Institute Scarborough United States
+3. Shanxi Medical Universityersity, The Second Hospital, University Shanxi Medical University Taiyuan China ([ROR:0265d1010](https://ror.org/0265d1010))
+4. Maine Medical Center Research Institute Scarborough United States ([ROR:03d1wq758](https://ror.org/03d1wq758))
 
 † Corresponding author
 
@@ -39,19 +39,19 @@ To address this challenge, we can utilize a GFP reporter driven by the endogenou
 
 To precisely define Fshr expression in mice, we utilized several complementary strategies, including Fshr endogenous promoter driving ZsGreen knockin reporter mice, immunofluorescence (IF) staining with antibodies against tissue/cell type-specific markers and Fshr, droplet digital RT-PCR (ddRT-PCR) and single RNA-fluorescence in situ hybridization (RNA-smFISH), to comprehensively examine Fshr expression.
 
-## Generation of Fshr-ZsGreen knockin reporter mice
+### Generation of Fshr-ZsGreen knockin reporter mice
 
 CRISPR/Cas9-mediated homologous recombination was used to generate embryonic stem cell clones, in which a P2A-ZsGreen cassette was precisely inserted before the stop codon of the Fshr gene followed by the 3′ UTR of the Fshr allele, as described in the Methods (Figure 1A). This P2A-ZsGreen expression cassette under the control of endogenous Fshr regulatory elements ultimately generates ZsGreen proteins without disrupting Fshr expression. The 19 amino acids P2A sequences function to cause ribosomal ‘skipping’ during translation, resulting in a missing peptide bond and effectively separates the two proteins, e.g., Fshr and ZsGreen (Zhu et al., 2023; Trichas et al., 2008; Luke and Ryan, 2018). The injected zygotes were transferred into oviducts of Kunming pseudopregnant females to generate F0 mice. F0 mice with the expected genotype were confirmed by tail genomic DNA PCR, DNA sequencing, and Southern blotting (Figure 1B and C) and then mated with C57BL/6J mice to establish F1 heterozygous mice with the germline-transmitted transgene. F1 heterozygous mice were further genotyped by tail genomic PCR, DNA sequencing and Southern blotting (Figure 1B and C). The results from these tail genomic PCR, DNA sequencing, and Southern blots in both F0 and F1 pups demonstrated that the targeted P2A-ZsGreen cassette was accurately inserted into the designed site between exon 10 and the stop codon of the Fshr gene before the 3’ UTR. We maintained heterogeneous Fshr-ZsGreen mice and used homogeneous mice for experiments. These mice were genotyped using primer sets specific to P2A-ZsGreen, as shown in Figure 1D. Fshr and GFP are transcribed in a bicistronic mRNA but subsequently translated into two independent proteins rather than as a fusion protein. This design ensures unaffected Gαi3 transcription and function and simultaneous GFP expression as a reporter protein. All animals were fertile and showed normal behavior and no obvious abnormal phenotypes.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/93413/elife-93413-fig1-v1.jpg)
 
-**Figure 1.:** (A) CRISPR/Cas9-mediated targeting strategy to generate Fshr-P2A-ZsGreen knockin mice. (B) Detection of integration by PCR in F0 and F1 mice: (a) Schematic of PCR primer design specific to Fshr-P2A-ZsGreen and the wild-type allele. The results of genomic DNA PCR genotypes using the primer pair EGE-YHN-013-A-L-GT-F/EGE-YHN-013-A-Mut-R (b) and another primer pair EGE-YHN-013-A-R-GT-F/EGE-YHN-013-A-R-GT-R (c). (C) Southern blot confirmation of the correct integration of the P2A-ZsGreen allele in F0 and F1 mice. The Southern blot results demonstrated the successful generation of the targeted P2A-Fshr-ZsGreen allele: (a) Restriction sites in the wild-type sequence and targeted vector; (b) Southern blot analysis probes, expected restriction fragment lengths as indicated and blotted images.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) CRISPR/Cas9-mediated targeting strategy to generate Fshr-P2A-ZsGreen knockin mice. (B) Detection of integration by PCR in F0 and F1 mice: (a) Schematic of PCR primer design specific to Fshr-P2A-ZsGreen and the wild-type allele. The results of genomic DNA PCR genotypes using the primer pair EGE-YHN-013-A-L-GT-F/EGE-YHN-013-A-Mut-R (b) and another primer pair EGE-YHN-013-A-R-GT-F/EGE-YHN-013-A-R-GT-R (c). (C) Southern blot confirmation of the correct integration of the P2A-ZsGreen allele in F0 and F1 mice. The Southern blot results demonstrated the successful generation of the targeted P2A-Fshr-ZsGreen allele: (a) Restriction sites in the wild-type sequence and targeted vector; (b) Southern blot analysis probes, expected restriction fragment lengths as indicated and blotted images.
 
-## Examination of Fshr expression in Fshr-ZsGreen reporter mice
+### Examination of Fshr expression in Fshr-ZsGreen reporter mice
 
 With confirmation that the Fshr-P2A-ZsGreen targeting vector was successfully inserted into the Fshr locus, we investigated Fshr expression by confocal microscopy to detect ZsGreen expression and immunostaining for tissue/cell markers in frozen sections of tissues/organs of Fshr-ZsGreen reporter mice. To ensure that there was no nonspecific expression of Fshr-ZsGreen in the examined tissues/organs, we took frozen sections derived from wild-type mice (B6) as negative controls. The negative controls were imaged under the conditions used for examining Fshr-ZsGreen expression. The representative results are shown in Appendix 1—figure 1, showing no nonspecific expression of Fshr-ZsGreen in the negative controls. On this basis, we performed the following imaging to examine Fshr-ZsGreen expression in the major organs and tissues.
 
-## Reproductive organs
+### Reproductive organs
 
 As the reproductive system is well known to express Fshr, we first tested Fshr-ZsGreen expression in the ovary and testis to ensure ZsGreen expression driven by the endogenous Fshr promoter. In the ovary, we observed Fshr-ZsGreen expression in the different stages of follicles from primordial follicles to primary follicles, secondary follicles, and the corpus luteum (Figure 2A-b and e). In the ovarian/Graafian follicles, expression was observed in the oocytes, granulosa cells/follicle cells and theca (interna and externa) (Figure 2A-b, c, e, and f). We also found Fshr-ZsGreen expression in the ciliated epithelial cells in the oviduct (Figure 2A-d and h). Furthermore, we employed an antibody against Stra8 (Miyauchi et al., 2017) to perform IF staining to identify reproductive cells and observed the colocalization of Fshr-ZsGreen with Stra8 staining as a marker for reproductive cells (Figure 2A).
 
@@ -69,7 +69,7 @@ Last, we also searched for FSHR expression in single-cell RNA-seq (scRNA-seq) da
 
 Overall, we observed Fshr-ZsGreen expression in the reproductive system, demonstrating that ZsGreen is a reliable readout for Fshr expression. In addition to its sole expression in granulosa cells and Sertoli cells, as reported previously, our findings clearly reveal that Fshr is also expressed in other cell types in the reproductive system, particularly in Leydig cells.
 
-## Skeletal tissues
+### Skeletal tissues
 
 Fsh has been thought to have a direct role in bone (Sun et al., 2006) , therefore we next examined the expression pattern of Fshr in femoral sections, as shown in Figure 3A, under confocal fluorescence microscopy. The representative areas are presented at two magnifications of ×400 and ×1000. In the epiphyseal growth plate, we observed lower expression of Fshr in chondrocytes, as indicated by two dotted lines, compared to its expression in cells located in the sponge area above or under the dotted lines (Figure 3A-a). At higher magnification, Fshr was expressed in the columns of chondrocytes from the resting zone to the transformation zone (Figure 3A-e).
 
@@ -87,7 +87,7 @@ To examine whether skeletal stem/progenitor cells express Fshr, we performed IF 
 
 We also examined Fshr expression in osteocytes from DMP1-CreERT2+:Fshrfl/fl mice (osteocyte-specific Fshr cKO) where the control mice (DMP1-CreERT2-:Fshrfl/fl) as a positive control. We noticed a significant drop of Fshr expression in osteocytes in Fshr cKO mice when tamoxifen was intraperitoneally administrated to the mice (Figure 3D). We also found an increased thickness of cortex triggered by Fshr cKO (Figure 3D - the left panels, the thickness indicated by dotted lines). The finding further demonstrated Fshr present in osteocytes, the largest cell population in bones, and the specificity of the Fshr antibody.
 
-## Adipose tissues
+### Adipose tissues
 
 Because our previous works and others have provided evidence on the role of Fsh in adipose tissues, we then examined Fshr-ZsGreen expression in adipose tissues. As expected, we found Fshr-ZsGreen expression in adipocytes of the frozen sectioned inguinal WAT, as shown in the left panel of Figure 4A at a low magnification (×40), which was further confirmed under a higher magnification (×400) in the three representative areas, demonstrating that Fshr-ZsGreen was expressed in the cellular membranes of individual adipocytes (Figure 4A-a, b, and c).
 
@@ -107,7 +107,7 @@ To further ensure Fshr expression in adipose tissues, we also performed IF stain
 
 Taken together, the above-described findings on Fshr-ZsGreen expression in reproductive, skeletal, and adipose tissues convincingly demonstrate that Fshr-ZsGreen is a reliable readout of Fshr expression. Furthermore, we identified Fshr expression in Leydig cells and follicles at different developmental stages, cells of osteoblast lineage, and peripheral nerve fibers. With confidence that Fshr-ZsGreen is a reliable readout, we used this powerful tool to further examine Fshr expression in other tissues and organs.
 
-## Heart and aorta
+### Heart and aorta
 
 To examine Fshr expression in the cardiovascular system, we used the heart and aorta as key organs/tissues to detect Fshr-ZsGreen expression. As expected, we observed strong Fshr-ZsGreen expression in the myocardium (Figure 5A-a) and large muscular arteries (a representative is shown in Figure 5A-b). Then, we further confirmed Fshr-ZsGreen expression by IFs with two antibodies against α-SMA and EMCN (Chai et al., 2023) that recognize alpha smooth muscle actin of smooth muscle and endomucin of endothelial cells at higher magnifications. With IF staining for α-SMA, we imaged several areas of both heart and blood vessels, as shown in the left image of the upper panel (×40). In the heart, we observed that Fshr-ZsGreen was highly expressed in cardiomyocytes in longitudinal and transverse orientations of the myocardium, which were positively stained for α-SMA (Figure 6B-a, b, and c). At a magnification of ×1000, it was also expressed in the endothelial layer of arterioles between muscle fibers (Figure 5B-i).
 
@@ -131,13 +131,13 @@ Using an antibody against EMCN, a marker for endothelial cells, we further confi
 
 In addition to large blood vessels on the heart, we also took a close look at the ascending aorta. We obtained two types of sections with longitudinal and transverse orientations for IFs with the two antibodies as above. In both sections, we found that Fshr-ZsGreen+ smooth muscle fibers were strongly stained for α-SMA in the first layer of SM close to the endothelium, where the second layer of smooth muscle was relatively weak for staining with α-SMA (Figures 5D-a and 6B-e). Fshr-ZsGreen was also present at the endothelium, which was costained positively for α-SMA (Figure 6A-a and B-e). Using an anti-EMCN antibody, we noticed that positive staining was in the upper part of Fshr-ZsGreen+ endothelial cells facing the lumen of the examined blood vessels (Figure 5A-c and B-f). In addition to Fshr-ZsGreen expression in the endothelium of the tunica intima, it was also observed in the areas of subendothelial connective tissue and tunica media (smooth muscle), but these areas were not stained for EMCN (Figure 5A-c and B-f).
 
-## Lung and kidney
+### Lung and kidney
 
 To identify whether Fshr is expressed in epithelial cells, we first detected Fshr-ZsGreen in the lung. Unexpectedly, we observed high Fshr-ZsGreen expression in the lung (Figure 6A). Fshr-ZsGreen was brightly expressed in the columnar epithelium of the respiratory conducting zone/tract, including the trachea, bronchus, bronchi, and bronchiole, at low magnification (Figure 6A, left panel). At higher magnifications, it was clearly shown that Fshr-ZsGreen was expressed not only in the columnar epithelium but also in the bronchial gland and alveoli (Figure 6A-a, b, d, e, f, and g). In the alveoli, Fshr-ZsGreen was observed in the respiratory portion of both type I and II cells, as indicated by empty arrowheads and white arrows, respectively (Figure 6A-d and h). We confirmed the identification of respiratory cells by IF with an anti-PD-L1 antibody, which showed the colocalization of Fshr-GFP with PD-L1 (Guo et al., 2024) staining (Figure 6A).
 
 Then, we aimed to examine Fshr expression in epithelial cells of the kidney. In the frozen section of the kidney, it was astonishing to observe high expression of Fshr-ZsGreen in the proximal and distal convoluted tubules (Figure 6B-e and f), whereas relatively weak expression was observed in the glomerular capillaries at different magnifications (Figure 6B-e and f at ×400 and Figure 6B-g at ×1000). Again, we observed Fshr-ZsGreen expression in the endothelial layer of the arteriole in the kidney tissue (Figure 6B-h). We also observed colocalization of Fshr-ZsGreen with positive staining for Col1a1 (Kuroda et al., 2014) in the kidney (Figure 6B).
 
-## Other key tissues and organs (liver, pancreas, thyroid, skin and skeletal muscle, spleen, bone marrow, and brain)
+### Other key tissues and organs (liver, pancreas, thyroid, skin and skeletal muscle, spleen, bone marrow, and brain)
 
 With the power of Fshr-ZsGreen, we characterized Fshr-ZsGreen expression in the liver. We observed Fshr-ZsGreen expression in the hepatocytes and arteries inside the hepatocytes, which were positively stained for Col1a1 or CD31 (Wang et al., 2021; Ismail et al., 2003), respectively (Figure 7A and B). Although it is weakly expressed inside large nerve fibers, Fshr-ZsGreen is strongly expressed in small neural fibers and shows a costaining pattern with KCBMA1 (Simms and Zamponi, 2014), a marker used for the detection of peripheral nerve fibers (Figure 7C, indicated by white arrowhead, whereas large nerve fibers are indicated by white arrows).
 
@@ -177,7 +177,7 @@ Finally, we examined Fshr-ZsGreen expression and its colocalization with markers
 
 **Figure 13.:** Fshr expression in three representative areas of the brain - the olfactory bulbs (a, d, and g), pallidum (b, e, and h), and hippocampus (c, f, and j). Each section was immunofluorescently stained with antibodies against GFAP, Iba1, or NeuN that recognized markers for astrocytes (a–c), microglia (d–f), or neuron (g–j), respectively. Their colocalizations are indicated by white arrowheads. Abbreviation: OLB, olfactory bulb. Magnifications: ×400 for (a, c, and f) and ×1000 for (b, d, e, f, g, and h). Scale bars are indicated in each image.
 
-## Confirmation of Fshr-ZsGreen expression with an Fshr-specific antibody and ddRT-PCR
+### Confirmation of Fshr-ZsGreen expression with an Fshr-specific antibody and ddRT-PCR
 
 Finally, to confirm the accuracy of the above results obtained from Fshr-ZsGreen mice, we performed fluorescence immunostaining with a specific antibody against mouse Fshr and accurate ddRT-PCR with mouse Fshr-specific primers to confirm the above data. An isotype-matched rabbit IgG was used as a negative control for IFs with anti-Fshr antibody using sections from Fshr-ZsGreen mice. Imaging was performed under the same conditions to record each corresponding tissue/organ stained with anti-Fshr antibody. The images of negative controls are shown in Appendix 1—figure 2, showing specific binding of the secondary antibody to anti-Fshr antibody without any nonspecific binding of the secondary antibody to the examined sections.
 
@@ -221,32 +221,32 @@ Although the Fshr-ZsGreen reporter line is a powerful tool for detecting the loc
 
 ## Methods
 
-## Generation of the CRISPR/Cas9-mediated Fshr-ZsGreen knockin reporter line
+### Generation of the CRISPR/Cas9-mediated Fshr-ZsGreen knockin reporter line
 
 Fshr-P2A-ZsGreen knockin reporter mice were generated by a CRISPR/Cas9-based approach. Briefly, one sgRNA was designed by the CRISPR design tool (http://www.sanger.ac.uk/) to target the region of the stop codon in the transcript NM_013523.3 exon 10 of mouse Fshr (Huhtaniemi et al., 1992), and then was screened for on-target activity using a Universal CRISPR Activity Assay (UCATM, Biocytogen Pharmaceuticals [Beijing] Co., Ltd). The targeting vector containing P2A-ZsGreen and two homology arms of left (1378 bp) and right (1493 bp) each was used as a template to repair the DSBs generated by Cas9/sgRNA. P2A-ZsGreen was precisely inserted before the stop codon of the Fshr locus. The T7 promoter sequence was added to the Cas9 or sgRNA template by PCR amplification in vitro. Cas9 mRNA, sgRNA, and the targeting vector were co-injected into the cytoplasm of one-cell stage fertilized C57BL/6J eggs. The injected zygotes were transferred into oviducts of Kunming pseudopregnant females to generate F0 mice. F0 mice with the expected genotype as confirmed by tail genomic DNA PCR, DNA sequencing, and Southern blotting were mated with C57BL/6J mice to establish germline transmitted F1 heterozygous mice. F1 heterozygous mice were further genotyped by tail genomic PCR, DNA sequencing, and Southern blotting. Primer sequences for genotyping F0 and F1 are described in Appendix 2.
 
 The produced Fshr-ZsGreen (Fshr-ZsG) knockin mice were maintained as heterozygotes, and homozygotes were used for experiments. For genotyping, genomic DNA was extracted from tail tips and assayed using polymerase chain reaction (PCR) primer sets for the Fshr-ZsGreen allele. The primer sequences for genotyping are described in Appendix 2. All mice were maintained on a 12 hr light/dark cycle with food and water ad libitum. The care and treatment of animals in all procedures strictly followed the NIH Guide for the Care and Use of Laboratory Animals. The animal protocols used in this study were approved by the Shanxi Medical University IACUC committee.
 
-## Tissue harvest and preparation
+### Tissue harvest and preparation
 
 Mice were terminated by CO2, and organs were harvested and fixed with 4% paraformaldehyde for 12–24 hr at 4°C. For bone samples, decalcification was performed with daily changes of EDTA solution (0.5 M, pH 8) for 7 days. After fixation and decalcification processes, samples were transferred to 15% and 30% sucrose overnight, respectively. The tissues were then embedded with optimal cutting temperature compound and stored at –80°C. The embedded samples were sectioned into 5- to 25-μm-thick sections using a Leica cryostat CM1950.
 
-## IF staining
+### IF staining
 
 IF staining was performed as described previously (Chai et al., 2023). Briefly, air-dried 7- to 25-μm-thick frozen sections were washed with 1× PBS for 10 min three to five times, followed by blocking with 10% BSA for 20 min at room temperature, and the samples were permeabilized with 0.5% Triton X-100 in 1× PBS for 10 min. Then, diluted primary antibodies were added to the slides. After overnight incubation with antibodies at 4°C, the slides were washed with 1× PBS for 15 min three to five times and then incubated with secondary antibody conjugated with fluorescence for 30 min at room temperature. The slides were washed again thoroughly with 1× PBS for 10 min three times. The slides were then stained with DAPI, rinsed with 1× PBS three times for 5 min each, and mounted with 50% glycerol for confocal imaging. Rabbit IgG was used as the negative control. Primary and secondary antibodies were purchased from Servicebio (Wuhan Servicebio Technology Co., Wuhan, China), except when indicated otherwise. The primary antibodies are listed in Appendix 3. In addition, sections of different tissues/organs derived from C57BL/6J (B6) mice were used as negative controls for Fshr-ZsGreen expression. A donkey anti-rabbit IgG conjugated with Cy3 was employed at a 1:400 dilution as the secondary antibody (Servicebio, Wuhan, China).
 
-## RNA-smFISH
+### RNA-smFISH
 
 RNA in situ hybridization, the gold standard method for visualizing RNA expression and localization in cells, tissue sections, and whole organs, was performed on tissue sections as described previously (Young et al., 2020). Briefly, frozen tissue sections of the testis from Fshr-ZsGreen mice were washed with 1× PBS three times. The sections were then treated with proteinase K (20 μg/mL) for 5 min at 37°C to permeabilize the cells and allow probe penetration, followed by three washes with 1× PBS. Specific oligonucleotide sense and antisense DNA probes for Fshr were designed and synthesized by the manufacturer (GeneCreate Biological Engineering Co., Ltd., Wuhan, China). The probes were labeled with a fluorescent dye (e.g. Cy3) for visualization. RNA-smFISH was performed on tissue sections using a commercially available kit (e.g. SureFISH, Agilent Technologies) at 37°C for 2 hr. After hybridization, the sections were washed with SSC solution (2× SSC, 37°C for 10 min, 1× SSC, 37°C for 5 min twice, 0.5× SSC for 10 min) to remove unbound probes, and counterstained with a nuclear stain (e.g. DAPI) to visualize the tissue architecture. The sections were imaged using a fluorescence microscope equipped with appropriate filter sets. A sense probe was used as a negative control to ensure specificity and sensitivity. The sequences of sense and antisense probes are described in Appendix 3.
 
-## Imaging
+### Imaging
 
 Imaging of the slides was carried out as described before (Chai et al., 2023). Briefly, the fluorescence images of the frozen sections were obtained using a Nikon A1 HD25 confocal microscope with a DUVB detector and plan Apo λ 4×, plan Apo VC 20× DIC N2, plan Apo λ 40×, and plan Apo λ 100×C oil objectives, illuminated with a wavelength of 405, 488, or 561 nm to excite DAPI, GFP, or Cy3, respectively; detection was performed with a 425–475, 500–550, or 570–620 nm bandpass filter. To assess the number of cells in each field of view, tissue-cleared images were converted from 3D to MAIP (maximum projection of the Z-stack across the whole section). Data were acquired with NIS-Elements AR 5.20.00 64-bit software.
 
-## ddRT-PCR
+### ddRT-PCR
 
 Tissues were harvested from 10-week-old B6 mice. Samples were dissected free of connective tissue and homogenized with a fast multi-sample tissue cryogenic grinder (LC-FG-96, Lichen Instrument Technology Co., Ltd., Shanghai, China), and total RNA was extracted using NucleoZOL (NucleoZOL; Macherey-Nagel GmbH & Co., KG, Dylan, Germany). mRNA was reverse-transcribed using an M5 Super qPCR RT kit with gDNA remover (MF012-T, Mei5bio, Beijing). Droplet digital PCR was performed as described previously (Chai et al., 2023). The primers used for ddRT-PCR were as follows: mFshr Fwd-5’-ccgcagggacttcttcgtcc-3’; mFshr Rev-5’-ttggtgactctgggagccga-3’.
 
-## Cell cultures of Leydig cell line TM3
+### Cell cultures of Leydig cell line TM3
 
 TM3 cells were purchased from Pricella (Wuhan Pricella Biotechnology Co., Ltd., Wuhan, China) and subcultured with DMEM/F12+5% HS+2.5% FBS+1% P/S with the company’s instruction in T25 flasks for extraction of total RNA and on coverslips for IF staining of Fshr expression.

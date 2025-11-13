@@ -58,7 +58,7 @@
 
 ## Abstract
 
-10.7554/eLife.05519.001 Lack of reproducibility is an ongoing problem in some areas of the biomedical sciences. Poor experimental design and a failure to engage with experienced statisticians at key stages in the design and analysis of experiments are two factors that contribute to this problem. The RIPOSTE (Reducing IrreProducibility in labOratory STudiEs) framework has been developed to support early and regular discussions between scientists and statisticians in order to improve the design, conduct and analysis of laboratory studies and, therefore, to reduce irreproducibility. This framework is intended for use during the early stages of a research project, when specific questions or hypotheses are proposed. The essential points within the framework are explained and illustrated using three examples (a medical equipment test, a macrophage study and a gene expression study). Sound study design minimises the possibility of bias being introduced into experiments and leads to higher quality research with more reproducible results. DOI: http://dx.doi.org/10.7554/eLife.05519.001
+Lack of reproducibility is an ongoing problem in some areas of the biomedical sciences. Poor experimental design and a failure to engage with experienced statisticians at key stages in the design and analysis of experiments are two factors that contribute to this problem. The RIPOSTE (Reducing IrreProducibility in labOratory STudiEs) framework has been developed to support early and regular discussions between scientists and statisticians in order to improve the design, conduct and analysis of laboratory studies and, therefore, to reduce irreproducibility. This framework is intended for use during the early stages of a research project, when specific questions or hypotheses are proposed. The essential points within the framework are explained and illustrated using three examples (a medical equipment test, a macrophage study and a gene expression study). Sound study design minimises the possibility of bias being introduced into experiments and leads to higher quality research with more reproducible results.
 
 ## Introduction
 
@@ -86,35 +86,359 @@ The framework was developed in two stages. The NIHR Statistics Group held a labo
 
 We present here a framework to support early discussions within a multidisciplinary research team, which should consist of both scientists and statisticians. The framework contains a comprehensive list of the details that facilitate reproduction of research and is intended to promote discussion about key aspects of the design, conduct and analysis of a planned laboratory study. The framework offers a series of prompts that raise pertinent questions to facilitate shared understanding of the research and the environment in which it is being undertaken.
 
-The catch-all term ‘laboratory studies’ covers a wide range of study types (
+The catch-all term ‘laboratory studies’ covers a wide range of study types (Box 4), and some aspects of the framework will not always be applicable in all studies. Similarly, some aspects of the framework will not always be relevant for discussion with statisticians, but nevertheless concern issues that still require careful consideration within the research team. We see this framework as a useful toolbox in the hands of the scientist, which takes and builds upon many points raised in recent journal and topic specific publication guidelines. Our workshop confirmed that it can take a long time for a statistician to fully understand the basic designs of a series of experiments when first presented. This is often due to lack of familiarity with the field of application. We felt that using some carefully selected case-studies to demonstrate how the prompts in the framework can be used would help both statisticians and scientists in its implementation. We have, therefore, included three hypothetical case studies as examples which have been selected to cover a broad spectrum of biomedical laboratory settings. The first (Box 1) is a study of combinations of components of automated medical dosing equipment, where the motivation is to look for equivalent performance. The second study (Box 2) examines macrophage activity when cells are infected with bacteria and treated with a drug. This experiment illustrates replicate measurement, treatment and infection control contrasts and plate or batch effects. The third (Box 3) is a gene expression study in patients with hypertension (cases) and without hypertension (controls), where the aim is to identify genes that are differentially expressed. This example allows us to illustrate multiple hypothesis testing and a variety of sources of batch effects from tissue processing through to RNA analysis. The framework is presented in Table 1; this sets out the major prompts for topics to be considered and gives some brief notes for each. The following sections follow the headings in Table 1 and provide a more detailed breakdown and discussion of items from the framework, clarifying our recommendations.10.7554/eLife.05519.003Box 1.Example: Elastomer pump studyA study is planned to assess a new type of disposable elastomer pump and catheter for use in delivering anaesthetic directly to wounds following major surgery. The study aims to assess whether the new pump and catheter—or combinations of the new pump and catheter with an existing pump and catheter—achieve an acceptable flow rate over time (i.e., where an ‘acceptable’ flow rate is defined as within 15% of the set rate). The researchers also wish to assess whether the performance of the equipment declines after with reuse.Methods and materials: The experimental set-up is presented in Box 1 Figure 1. In order to mimic clinical practice, the flow rate will be set to 4 ml/hr, and each experiment will run over a period of 48 hr. Automated weight measurements of the pump will be taken every 2 hr via a laptop, and concurrent measurements of the room temperature will also be made as temperature may impact upon the flow. Each type of pump (P = existing pump; p = new pump) is to be tested with each type of catheter (C = existing catheter; c = new catheter). Four experiments will be run simultaneously over four units, with each experiment repeated three times before changing equipment (i.e., each experiment will be run in triplicate). Due to limited study resources, only four pumps and four catheters of each type are available for use.10.7554/eLife.05519.005Box 1 Figure 1.Equipment set-up for elastomer pump experiment.Design: Box 1 Table 1 illustrates two possible arrangements of the pump/catheter combinations over the 4 units. Design A runs a particular combination over all 4 units at the same time before switching to the next combination, while Design B tests the four different combinations of pumps and catheters simultaneously before alternating the order of the combinations over the units after each set of triplicate experiments.10.7554/eLife.05519.004Box 1 Table 1.Two potential study designs in which either (a) four pumps and four catheters of the same type are tested simultaneously or (b) pump and catheter types are balanced during each 48 hr period of data collection, assuming only four pump-catheter units can be used concurrently and each is tested for 48 hr, three times in successionArrangementDurationBench 1Bench 2Bench 3Bench 4Suboptimal design with potential for confounding 148 hrs × 3P CP CP CP C 248 hrs × 3P cP cP cP c 348 hrs × 3p Cp Cp Cp C 448 hrs × 3p cp cp cp cOptimal, balanced design 148 hrs × 3P CP cp Cp c 248 hrs × 3P cP Cp cp C 348 hrs × 3p cp CP cP C 448 hrs × 3p Cp cP CP cThere are four benches of equipment being tested, each with one of each type of pump and one of each type of catheter (P = existing pump; p = new pump, C = existing catheter; c = new catheter).DOI: http://dx.doi.org/10.7554/eLife.05519.00310.7554/eLife.05519.006Box 2.Example: Macrophage StudyA series of experiments are planned to characterise macrophage activity (cytokine production and apoptosis) when cells which are infected with bacteria are treated with a drug. Blood will be taken from multiple volunteer donors to obtain peripheral blood mononuclear cells from which differentiated macrophages are produced. The macrophages will be infected with a specific dose of bacteria and treated with a drug. The cytokine production and apoptosis will be measured at intervals over 24 hr. The panel of 10 cytokines will be measured by a multiplex bead system. Each donor will be processed with internal controls so the four combinations of infection status (infected/mock infected) and treatment (drug treatment/control) will be measured.Research Question: Does treatment with a specific drug to cells infected with bacteria affect macrophage immune function measured by cytokine production and apoptosis?The basic experimental design will include:The assessment of baseline cytokine production in infected and mock infected macrophages.The time course of cytokine production following the infection point, captured by measuring levels every 2 hr.The matched design ensures that cells from each donor can be studied for response to both infection and treatment. Exactly half of the infected and half of the mock infected macrophages are treated with the drug and this is balanced over all donors.The four combinations of treatment and infection will be processed in parallel on the samples.Box 2 Figure 2 illustrates two possible ways that macrophages from just two donors might be arranged, for incubation in a single experiment on two eight well sections of a plate. Each subject has macrophages grown in eight wells, four of these will be infected with the same bacteria, and four will be mock infection controls. Two of the infected and two of the mock infected will be treated with the drug. Hence for each donor the measurement of variables under each condition is done twice (i.e., in duplicate). Arrangements A and B show a total of four possible plate arrangements. Some arrangements have conditions or donors clustered or organised into rows or columns. The two plates for ‘A’ make it easy for the infectious agent to be dosed out in one block, whereas ‘B’ has all the wells to be treated with the drug in a single column. In three of the plates, wells from different donors are never direct neighbours; however, the infection is done in blocks or pairs of neighbours. The diagram shown here shows only a part of a larger plate. Plate sizes of 24 or 96 well plates are available for use here; therefore multiple plates need to be used. The bead system for measuring cytokine levels uses assays which are automated, however, the assessment of apoptosis involves visual inspection and counting of cells. The colour of the medium indicates exactly which samples are infected and which are treated, which means the measurements cannot be taken ‘blind’ to the treatment.10.7554/eLife.05519.007Box 2 Figure 1.Production of differentiated macrophages from donor samples.10.7554/eLife.05519.008Box 2 Figure 2.Infection and treatment of donor macrophages.DOI: http://dx.doi.org/10.7554/eLife.05519.00610.7554/eLife.05519.009Box 3.Example: Gene expression study using RNA-seqA study is designed to examine differences in gene expression in kidney tissue taken from human subjects who exhibit a hypertensive phenotype and those who do not. Gene expression will be assessed using RNA sequencing (RNA-seq), which quantifies the expression of both genes and the RNA transcripts produced by genes. Each gene can have multiple transcripts—in humans there are approximately 213,000 known transcripts produced by ∼62,000 genes.Aims of the study: To identify genes that are differentially expressed in hypertensive patients compared to normotensive controls. This study will function as a discovery stage to pick up differentially expressed genes to take forward for evaluation in a larger sample.Research Question/Hypotheses: The aim will be to identify transcripts and genes that differ in expression between cases and controls. A hypothesis will be tested for each transcript to assess whether or not it associates with the disease status. A transcript would be declared as differentially expressed if the log2 fold difference between cases and controls is statistically significant after accounting for multiple testing using the false-discovery rate.Outcomes of interest: The primary outcome is the expression level for each transcript or gene; there will be multiple of these (10,000 s). The measurement of the outcome will involve three stages. First the kidney tissue samples are collected and the RNA extracted and assessed for quality using the RNA Integrity Number (RIN), secondly samples are then to be sent to a bioscience company for sequencing. Finally the sequence data is received from the company and a toolkit such as Tuxedo will be used for data processing. There is the potential to report on the use of standard protocols in each of these steps.Materials and Techniques: There are SOPs for the RNA extraction and the methods employed within the bioscience company. The material will need to be run in batches, so a mix (random or balanced) of cases and controls will be sent in each batch and each batch will contain at least one common sample to assist in the control of batch effects. The quality of the RNA (as it arrives at the company) will be a predictor of the quality of the sequencing. The sample processing and source of the samples (i.e., the preparation before sending for sequencing) may mean that there are systematic (batch) differences between cases and controls.Software: Specialist software exists for each stage of this planned analysis. The Tuxedo suite is designed to process the raw data output from the sequencing. PEER has been developed to identify and correct for sources of variation. The statistical analysis will be done using R Bioconductor. A workflow diagram to indicate how the options for each program were set at each stage of the data processing and analysis will be constructed during the study and will be used at the analysis and reporting stage.Constraints: The main constraint is the cost of the sequencing, hence the preference is to opt for fewer subject samples so sequencing can be done at a higher coverage. The maximum number of samples to be processed is around 40.Randomisation and Blinding: There is no treatment to be applied. However cases and controls will be randomly mixed in batches for shipping to the sequencing company. The bioscience company will be blind to the case control status.Statistical Analysis: There are two groups, cases and controls, all analyses will adjust for the confounders age, sex and body mass index. The Limma package in R Bioconductor fits linear models to each gene/transcript, then ‘normalises’ across genes and estimates p-values using an empirical Bayes estimator. The multiple testing will be accounted for with the FDR correction. The correction will be for the full number of transcripts analysed (i.e., post all ‘Quality control’ (QC) criteria). Sequencing uncertainty is reflected in low expression values so genes with uncertain reads are likely to not meet the threshold. The QC requirements are that a transcript must be expressed in a minimum number of samples to be included for further analysis.Validation: To ensure the results are not due to a technical artefact the most significant results will be validated using a different technology (the same samples run through a different technique).DOI: http://dx.doi.org/10.7554/eLife.05519.00910.7554/eLife.05519.010Box 4.Examples of laboratory studiesWhat do we mean by ‘laboratory study’?A study in which any aspect of the procedure or analysis is carried out in a research facility/lab.May be in vivo (e.g., imaging) or in vitro (e.g., cell culture).Includes both experimental and observational studies, but excludes interventional trials*.May involve estimation, hypothesis generation or hypothesis testing/confirmation.Can be small (e.g., within a single lab) or large scale (e.g., multi-centre genome-wide association studies).*Specific guidance is available for interventional trials, however many of the RIPOSTE recommendations will be relevantDOI: http://dx.doi.org/10.7554/eLife.05519.010
 
-![Box 1 Figure 1.](https://cdn.elifesciences.org/articles/05519/elife-05519-fig1-v2.jpg)
+**Table 1.**
+ RIPOSTE discussion framework
 
-**Box 1 Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.05519.005
 
-![Box 2 Figure 1.](https://cdn.elifesciences.org/articles/05519/elife-05519-fig2-v2.jpg)
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Prompt/Consideration</th>
+      <th>Details (relevance of question will depend on study type)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Research aims, objectives, specific outcomes and hypotheses</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Aims and objectives</td>
+      <td rowspan="2">Define the key aims of the study</td>
+      <td>What does the study ultimately aim to show?</td>
+    </tr>
+    <tr>
+      <td>What are the primary and any secondary objectives?</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Outcomes, interventions and predictors of interest</td>
+      <td rowspan="3">Identify the variables and quantities/qualities of interest that will be measured (these may be different for each hypothesis)</td>
+      <td>What is the primary outcome/response variable?</td>
+    </tr>
+    <tr>
+      <td>Are there any secondary outcomes you also wish to measure and/or assess?</td>
+    </tr>
+    <tr>
+      <td>What are the key interventions/groups/predictors you will be testing?</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Research questions/Hypotheses</td>
+      <td rowspan="6">List the research question(s) that will be addressed and/or any hypotheses that you would like to test</td>
+      <td>The research question(s) should be defined in such a way that they</td>
+    </tr>
+    <tr>
+      <td>- relate directly to the study objectives</td>
+    </tr>
+    <tr>
+      <td>- relate to a specific outcome (or set of outcomes) and specific comparisons/predictors</td>
+    </tr>
+    <tr>
+      <td>Each hypothesis should</td>
+    </tr>
+    <tr>
+      <td>- be clearly testable</td>
+    </tr>
+    <tr>
+      <td>- indicate what signifies a positive result for example, what is the minimum effect you would deem important?</td>
+    </tr>
+    <tr>
+      <td colspan="3">Study planning</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Logistical considerations</td>
+      <td rowspan="2">Ethical approval</td>
+      <td>Will ethical approval be required for the study?</td>
+    </tr>
+    <tr>
+      <td>- Will statistical support be required for the ethics application?</td>
+    </tr>
+    <tr>
+      <td>Statistical support</td>
+      <td>What level of ongoing statistical support is available for this study?</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Data collection and management</td>
+      <td>How will the data be recorded and stored—will this require construction of a database?</td>
+    </tr>
+    <tr>
+      <td>What steps will be taken to validate the data entered against what was collected?</td>
+    </tr>
+    <tr>
+      <td>Who will be responsible for data entry and validation?</td>
+    </tr>
+    <tr>
+      <td>Will any additional information (‘meta data’) be recorded to indicate data quality?</td>
+    </tr>
+    <tr>
+      <td rowspan="15">Materials and techniques</td>
+      <td rowspan="2">Laboratory equipment and methods</td>
+      <td>What specialist equipment and/or techniques will be used?</td>
+    </tr>
+    <tr>
+      <td>Are there any aspects of these that may impact or limit the design of the study?</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Configuration and standardisation of materials and methods</td>
+      <td>Is there an accepted or validated way to measure the outcomes for this specific study or preliminary work be required to determine this?</td>
+    </tr>
+    <tr>
+      <td>What are the possible sources of variation or systematic bias between samples/batches/observers/laboratories/centres?</td>
+    </tr>
+    <tr>
+      <td>Are any aspects susceptible to systematic variation and/or bias? What steps will be taken to minimise measurement bias and variation with consideration to:</td>
+    </tr>
+    <tr>
+      <td>- Technical factors—such as sample collection, processing, storage and analysis?</td>
+    </tr>
+    <tr>
+      <td>- Biological factors—which may include the effects of comorbidities, diet, medications, stress, biological rhythms etc, on the measurement variable?</td>
+    </tr>
+    <tr>
+      <td>Possible steps to consider in addressing these sources of variation might be the use of existing standards for sample processing or analysis (e.g., BRISQ, ISO, ASTM or CLSI), equipment calibration and maintenance, user training, randomisation of interventions.</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Software</td>
+      <td>What software (if any) will be used during data processing/collection/storage?</td>
+    </tr>
+    <tr>
+      <td>What software will be used during data analysis—will specialist software be required?</td>
+    </tr>
+    <tr>
+      <td>Does the software conform to any quality assurance standards, if applicable?</td>
+    </tr>
+    <tr>
+      <td>Is the software up-to-date?</td>
+    </tr>
+    <tr>
+      <td rowspan="3">What constraints/limits are there to the available resources?</td>
+      <td>What constraints are there? For example, due to cost and/or time</td>
+    </tr>
+    <tr>
+      <td>- Are there any limits in terms of the available equipment (e.g., number of plates/chips) or materials (e.g., binding agents/gels)?</td>
+    </tr>
+    <tr>
+      <td>- What would be the maximum number of samples that could be used/processed given the available resources and time?</td>
+    </tr>
+    <tr>
+      <td colspan="3">Study design</td>
+    </tr>
+    <tr>
+      <td rowspan="34">Design</td>
+      <td rowspan="4">Units of measurement</td>
+      <td>What are the sampling units in the study (e.g., blood samples from individuals)?</td>
+    </tr>
+    <tr>
+      <td>Will the units be organised according to any structure (e.g., onto plates, chips, and/or into batches) or clustered/correlated in any way (e.g., samples from different centres), or within families, matched or paired samples/measurements?</td>
+    </tr>
+    <tr>
+      <td>Will any repeated or replicate samples be taken? For example, any measurements over time; any biological replicates; any technical replicates.</td>
+    </tr>
+    <tr>
+      <td>Are there any inclusion/exclusion criteria?</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Randomisation</td>
+      <td>Will any interventions or conditions be allocated at random to the units?</td>
+    </tr>
+    <tr>
+      <td>- If so, how? (e.g., method of random allocation and process of generating random numbers)</td>
+    </tr>
+    <tr>
+      <td>- If not, why not?</td>
+    </tr>
+    <tr>
+      <td>Are there any other possible confounders (e.g., batches or plates) to which the units may need to be randomly allocated?</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Blinding (masking)</td>
+      <td>Will blinding be used? If not, why not?</td>
+    </tr>
+    <tr>
+      <td>Who will be blinded and how?</td>
+    </tr>
+    <tr>
+      <td>How will allocation be concealed and how will masking be maintained?</td>
+    </tr>
+    <tr>
+      <td>Under what circumstances will the data be unblinded?</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Groups, treatments, and other predictors of interest</td>
+      <td>What are the primary groups or treatments of interest?</td>
+    </tr>
+    <tr>
+      <td>What is your control or comparison group?</td>
+    </tr>
+    <tr>
+      <td>Are there multiple independent variables to assess simultaneously (for example, treatment and time)? If so, will a factorial design be used (involving testing all levels of each variable with all levels of each other)?</td>
+    </tr>
+    <tr>
+      <td>Are there any interactions of interest (which may, for example, lead to factorial designs)?</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Use of analytical controls</td>
+      <td>What analytical controls will be used? For example, qualitative (positive/negative) and/or quantitative quality controls (QCs); comparative/normalisation controls</td>
+    </tr>
+    <tr>
+      <td>How will the controls be used/for what purpose?</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Other potential biases, confounders and sources of variability</td>
+      <td>Will you take any steps to minimise any background noise/variation?</td>
+    </tr>
+    <tr>
+      <td>Will you measure and take into account any potential confounding variables? For example, the age and sex of any participants; batch/plate/chip effects; etc.</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Sample size considerations</td>
+      <td>Sample size will depend on the primary objective of the study, whether the aim is to test hypotheses, estimate a quantity with specified precision or assess feasibility</td>
+    </tr>
+    <tr>
+      <td>Hypothesis testing:</td>
+    </tr>
+    <tr>
+      <td>- Is there a single pre-specified primary hypothesis? Is a correction for multiple testing required?</td>
+    </tr>
+    <tr>
+      <td>- What signifies a positive result (e.g., the minimum effect size, margin of agreement)?</td>
+    </tr>
+    <tr>
+      <td>- What existing data are available to base the sample size calculation on? (e.g., SD of outcome)</td>
+    </tr>
+    <tr>
+      <td>- What power and overall level of significance will be used? Will one or two tailed tests be used?</td>
+    </tr>
+    <tr>
+      <td>Feasibility, pilot and proof of concept:</td>
+    </tr>
+    <tr>
+      <td>- Understanding sources of variation (e.g., standard deviation of the outcome)</td>
+    </tr>
+    <tr>
+      <td>▪ The sample size needs to be large enough to give an accurate estimates of any components of variation</td>
+    </tr>
+    <tr>
+      <td>- Estimating with precision (e.g., proportion of samples that pass QC)</td>
+    </tr>
+    <tr>
+      <td>▪ What is the acceptable precision (e.g., width of confidence interval) required?</td>
+    </tr>
+    <tr>
+      <td>- Preliminary proof of effect (e.g., superiority of a new cell extraction technique)</td>
+    </tr>
+    <tr>
+      <td>▪ What probability needs to be set to observe the correct ordering of your outcomes?</td>
+    </tr>
+    <tr>
+      <td>▪ What level of significance would provide enough evidence to progress to fully powered study?</td>
+    </tr>
+    <tr>
+      <td colspan="3">Planned analysis</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Data assessment and preparation</td>
+      <td rowspan="3">QC criteria</td>
+      <td>What pre-specified criteria will be used to assess data from quantitative analytical QCs?</td>
+    </tr>
+    <tr>
+      <td>What pre-specified criteria will be used to assure the reproducibility of results?</td>
+    </tr>
+    <tr>
+      <td>- Will any thresholds be set to screen or benchmark data quality (e.g., setting a maximum coefficient of variation that would be deemed acceptable)?</td>
+    </tr>
+    <tr>
+      <td>Data verification</td>
+      <td>Have you allowed time for data validation and correction to be completed prior to analysis?</td>
+    </tr>
+    <tr>
+      <td>Data normalisation/correction</td>
+      <td>Will the data be normalised or transformed in any way? If so, how?</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>What methods and criteria will be used to identify any outlying data?</td>
+    </tr>
+    <tr>
+      <td rowspan="15">Statistical methods</td>
+      <td rowspan="7">Describe the different analyses to be performed</td>
+      <td>Which models or tests will be used (e.g., t-tests; ANOVA; mixed effects models etc)?</td>
+    </tr>
+    <tr>
+      <td>- Do these methods appropriately handle any repeated or correlated measurements?</td>
+    </tr>
+    <tr>
+      <td>What assumptions do the statistical methods rely upon? How will these be assessed? Do the data require any transformation?</td>
+    </tr>
+    <tr>
+      <td>Which comparisons will be made? For example, will all pairs of treatments be compared, or will each treatment just be compared to a control?</td>
+    </tr>
+    <tr>
+      <td>What covariates will be adjusted for?</td>
+    </tr>
+    <tr>
+      <td>If applicable, what model terms will be fitted, for example, which main effects and interactions, which fixed and/or random effects?</td>
+    </tr>
+    <tr>
+      <td>Will sensitivity analyses be performed to assess the validity of the findings?</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Missing data</td>
+      <td>What might be the reasons for missing data?</td>
+    </tr>
+    <tr>
+      <td>How will missing data be handled, for example, will missing data points be excluded or imputed?</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Multiple testing</td>
+      <td>Will a correction for multiple testing be required? If so, how many tests will be accounted for?</td>
+    </tr>
+    <tr>
+      <td>Which adjustment for multiplicity will be used, for example, Tukey, Bonferroni, false-discovery rate</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Interim analysis</td>
+      <td>Will interim analyses be performed (before the full number of samples dictated by the sample size calculation has been collected)? If so, for what purpose (e.g., to update the required sample size)?</td>
+    </tr>
+    <tr>
+      <td>Have any necessary adjustments to the sample size been made to account for the interim analysis?</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Replication and/or validation</td>
+      <td>Is there an intention to replicate the results (e.g., in an independent set of samples)?</td>
+    </tr>
+    <tr>
+      <td>In there an intention to validate the results (e.g., using a different technique or method of analysis)?</td>
+    </tr>
+    <tr>
+      <td colspan="3">Reporting results</td>
+    </tr>
+    <tr>
+      <td>Guidelines/standards</td>
+      <td>Identify relevant reporting standards</td>
+      <td>What are the most appropriate reporting guidelines or standards that apply to the study design (e.g., BRISQ, MIFlowCyt and see www.equator-network.org). Identifying reporting standards at the planning stage helps to ensure that the information required to be reported is collected during the study and/or produced during the analysis of the data.</td>
+    </tr>
+  </tbody>
+</table>
 
-**Box 2 Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.05519.007
-
-![Box 2 Figure 2.](https://cdn.elifesciences.org/articles/05519/elife-05519-fig3-v2.jpg)
-
-**Box 2 Figure 2.:** DOI: http://dx.doi.org/10.7554/eLife.05519.008
+_This framework is intended to support discussion within the research team as a whole, including the statistician._
 
 ## Research aims and objectives, specific outcomes and hypotheses
 
-## Aims and objectives
+### Aims and objectives
 
 The first stage of any study design should involve clarifying key details such as the aims and objectives, and the outcome(s) that will be measured. Early specification of the primary and any secondary objectives helps to ensure that the key goals can be appropriately addressed within a study by steering the necessary planning and resources towards tackling these issues. Often, multiple relevant and related objectives exist, but it may not be possible or desirable to adequately address them all within a single study. Resources, therefore, may need to be allocated according to the priority of each objective, and if any objectives cannot be adequately addressed it may be desirable to narrow down the focus of the study or to initiate further studies/collaborations to address the open issues. Note that decisions about which objectives should be prioritised over others may fundamentally impact on the best study design to use. The objectives need to be agreed upon at the outset to ensure the best and most efficient use of available resources.
 
 Example(s): In the elastomer pump study in Box 1, the researchers ideally want to assess whether the new equipment performs as well as the existing equipment, and whether the performance of the equipment degrades over time. The amount of equipment available for use in the study is limited, however, so it may be sensible to prioritise one objective over the other unless both can be satisfactorily addressed with sufficient statistical power.
 
-## Outcomes interventions and predictors of interest
+### Outcomes interventions and predictors of interest
 
 The outcomes being measured should clearly relate to a study's objectives, and need to be chosen and prioritised accordingly. Primary outcomes are defined when undertaking hypothesis testing when the aim is to detect a specified effect. Secondary outcomes can also be tested, but the results from such tests will be interpreted as hypothesis generating rather than confirmatory. Any sample size calculation will be based on the primary outcome. If there are multiple primary outcomes a correction for multiple testing will be required, which will increase the required sample size for the study. Outcomes therefore need to be decided upon upfront, to ensure that an informed sample size calculation can be made.
 
 Example(s): In the macrophage study in Box 2, the researchers want to assess the cumulative level of production for each of 10 cytokines over a 24 hr period. This study has 10 primary outcomes, and any sample size calculation would need to assume that (at least) 10 tests will be performed. The researchers also wish to compare levels between specific cytokines by measuring their ratios; these ratios may be viewed as secondary outcomes. If the estimated power for the study is too low (or, to paraphrase, the estimated sample size required is too large), the number of outcomes being assessed may have to be limited or reprioritised. A distinction should be drawn between the primary and secondary outcomes when reporting the findings from the study, with an acknowledgement that the assessment of the secondary outcomes may not be sufficiently powered.
 
-## Research questions/hypotheses
+### Research questions/hypotheses
 
 Study hypotheses indicate how specific objectives will be addressed in a study, by spelling out the specific propositions and/or tests that will be assessed and how. The criteria used to address the objectives can have a major impact on all aspects of a study, from its design through to the interpretation of its results. Specifying the hypotheses upfront therefore ensures that these key details are decided upon at an early stage, and helps focus aspects of the study planning and design on tackling these questions.
 
@@ -140,7 +464,7 @@ These hypotheses confirm the key (primary) questions of interest that will be ta
 
 ## Study planning
 
-## Logistical considerations
+### Logistical considerations
 
 This section of the framework addresses aspects of the study which might impact on the extent of statistical support required. In some cases, scientists may have limited access to a statistician, and whilst we would argue that statisticians should play an integral role in the research team, we accept there may be some instances in which the opportunities for them to provide advice and input are rare. Therefore it is useful to consider early on whether statistical support might be required during the planning and conduct of the study. If there is limited statistical support then this may limit the complexity of the analytical approach that can be recommended.
 
@@ -148,17 +472,17 @@ Giving early thought to the means by which data will be collected and managed du
 
 Example: In the study in Box 3, it would be a good idea to collect meta-data regarding the batch numbers and date(s) on which the samples were processed.
 
-## Materials and techniques
+### Materials and techniques
 
 The design of a study clearly depends on the materials and equipment available for use. All studies have resource constraints and, as described in section A, these need to be discussed in order to ensure that the key hypotheses can be appropriately addressed. Other restrictions concerning the materials and equipment can also impact on study design.
 
-## Laboratory equipment and methods
+#### Laboratory equipment and methods
 
 Financial constraints are the most commonly encountered limiting factor, which in turn may lead to limited access to facilities. However, particular equipment may also be limited in terms of the number of units that can be processed within the available timeframe and/or in a particular batch. If the equipment or resources available for use are heavily constrained and not sufficient to provide an adequate sample size for the primary research question identified in section A it may be preferable to revisit and redefine the study's objectives, hypotheses and/or outcomes to be measured in some other way, rather than carrying out an underpowered study.
 
 Example: Box 1 presents a study where the number of units of equipment available to test is strictly limited. The experimenters could consider redefining how they assess an ‘acceptable’ flow rate (e.g., specifying a minimum number of measurements that must fall within set boundaries, rather than testing for equivalence or statistically significant differences). Alternatively, the researchers may decide to go ahead with the study as originally planned, with the acceptance that it will be unlikely to deliver a conclusive answer to the primary research questions. In this scenario, the study could serve to generate pilot-data to assist the planning of a future follow-up study, and/or to contribute a wider meta-analysis of other, sufficiently similar studies.
 
-## Configuration and standardisation of materials and methods
+#### Configuration and standardisation of materials and methods
 
 Processing samples in different batches or across different pieces of equipment frequently introduces technical variability into a study, yet is often unavoidable. These potential sources of variability need to be anticipated and even studied in advance, and steps taken at the design stage to avoid confounding technical variation with any particular groups or comparisons of interest (see later sections on ‘Other potential biases, confounders and sources of variability’ and ‘Randomisation’).
 
@@ -170,7 +494,7 @@ Example: In the macrophage example in Box 2, the bead arrays require prior valid
 
 ## Study design
 
-## Units of measurement
+#### Units of measurement
 
 Experimental units are the entities that receive a given ‘treatment’; it should be possible for two different experimental units to receive two different treatments of study conditions. Sampling units are the entities upon which measurements will be made. The experimental units can usually be considered to be independent of one another, so increasing the number of experimental units measured in a study usually increases the amount of independent information sampled. In contrast, any repeat or replicated measurements taken on the units do not contribute additional independent information, but can nevertheless help to gauge measurement uncertainty and/or stabilise estimates of inherently variable measurements. Repeated measurements may also be used to answer additional questions of interest. An important consideration concerning the experimental units is the definition of any inclusion or exclusion criteria.
 
@@ -178,7 +502,7 @@ Example(s): In Box 1, each combination of a specific pump and a specific cathete
 
 In the study in Box 3, the sampling units refer to samples taken from individual volunteer donors. A single sample is taken from each donor, so in this case the sampling units are independent of each other and the sample size for the analysis is the total number of sampling units. The aim is to compare gene expression between hypertensive and normotensive individuals; therefore, both hypertensive and normotensive must be defined along with any other restrictions on co-morbidity or age and gender.
 
-## Randomisation
+#### Randomisation
 
 Randomisation plays a crucial role in protecting studies from known and unknown sources of variation, bias and confounding. Moreover, implementation of an appropriate randomisation strategy can also begin to produce evidence of causality in experiments. Randomisation is already widely used in clinical trials during the allocation of treatments to units, but it serves the same fundamental purposes in laboratory settings involving the direct manipulation of any experimental treatments or conditions. Although implementing a randomisation scheme can be cumbersome to employ and may involve added complexity within a study, the potential benefits it provides offer researchers protection against future claims of unconscious bias and should directly lead to enhanced reproducibility. A randomisation plan should therefore be devised wherever possible.
 
@@ -192,7 +516,7 @@ The way that macrophage differentiation is shown in Box 2 Figure 1 would suggest
 
 In the study in Box 1, there are multiple ‘treatments’ (i.e., combinations of new/existing pump with new/existing catheter) to test on each of the four equipment benches. This is an example of a study where it may be desirable to manually control the order in which units receiving each treatment are tested rather than using a fully randomised design. For instance, Box 1 Figure 1 shows one potential, manually allocated design, in which every combination of pump and catheter is tested across the four benches at any one time, and where the order of running the combinations is different on each bench. This design avoids biasing measurements on any particular combination due to any potential time-dependent effects/drift (i.e., as all combinations are always tested at the same time); in addition, it allows each combination to be tested with both the unused and used version of each pump, and both the unused and used version of each catheter. Note that although this arrangement is not strictly random, a random process may be used to select which components are used together at the starting point. Alternative arrangements, such as completely randomising the combinations over the benches, or manually arranging the combinations without regard to potential confounders (e.g., at the convenience of the experimenters), would be unlikely to balance the combinations over all potentially confounding factors in this relatively small scale study, and may be inferior to a carefully planned, manually allocated design.
 
-## Blinding
+#### Blinding
 
 Blinding (or ‘masking’) aims to guard against potential bias within a study by concealing information about the allocation of treatments or interventions from the individuals involved—such as patients, experimenters and/or analysts. Awareness of the true allocation of treatments may consciously or unconsciously influence the behaviour of those involved, thereby biasing evidence in favour or one treatment over another. Blinding is especially important if qualitative judgement makes up any part of the measurement process.
 
@@ -200,7 +524,7 @@ Example(s): In example study 1, blinding may be implemented by concealing the pu
 
 In the study in Box 2, the experimenter should ideally be blinded to the infection status of the cells and to the treatment type.
 
-## Groups, treatments and other predictors of interest
+#### Groups, treatments and other predictors of interest
 
 Most studies involve making at least one form of comparison between groups or interventions of interest. Comparator groups—usually called ‘control’ groups—may be positive or negative in nature (i.e., active or inactive respectively), depending on the aims of the study. For instance, a negative control group may be included to assess whether an experimental treatment has a greater effect than a placebo, while a positive control group might be used to assess whether the experimental treatment is superior to an existing treatment. These controls, data from which contribute to statistical assessment of the research question, are distinct from analytical controls used during data collection to check that laboratory processes are running as expected (see section on ‘Use of analytical controls’, below).
 
@@ -208,19 +532,50 @@ Often, it may be of interest to compare experimental groups under different cond
 
 Example: The Box 2 example may also be considered a factorial experiment, because it assesses the effects of both bacterial infection and drug treatment on macrophage activity simultaneously. Here, the factorial nature of the study allows the researchers to assess whether the effect of the drug differs depending on whether the cells are infected with bacteria (i.e., whether there is an interaction between drug treatment and bacterial infection). In this study, each factor of interest (‘bacterial infection’ and ‘drug treatment’) is to be validated against a negative control (‘mock infected cells’ and ‘no treatment’ respectively). The controls here serve to enable claims to be made about any potentially causal effects of the factors of interest. For instance, if the drug treatment was compared to a pre-treatment or baseline measure instead of a control, no information about what could or would have happened in absence of treatment would be available (for example, perhaps macrophage activity could have changed naturally between the two time-points).
 
-## Use of analytical controls
+#### Use of analytical controls
 
-Analytical controls tend to be used to validate practices within an experimental assay, helping to ensure that measurements are accurate and may be interpreted correctly. Analytical controls may be required for each variable or condition in the experiment, for quality control (QC) purposes and/or to gauge and adjust for background variation that may systematically influence certain sets of measurements (see Table 2 and the ‘QC’ section for further details).10.7554/eLife.05519.011Table 2.Commonly encountered examples of analytical controlsDOI: http://dx.doi.org/10.7554/eLife.05519.011Control typePurposeQCsQualitative QCs typically indicate whether specific aspects of the experimental and/or analytical procedure work in the intended ways, and are often included in the same analytical run used to collect study data. For example, a negative control may be a sample or unit that is known to be negative for the outcome and, hence, should assign a negative measurement in the assay. In contrast, a positive control would be expected to assign a positive result.Quantitative QCs are used to monitor the performance of a quantitative measurement system and ensure that it is performing within acceptable limits. Typically quantitative QC samples are run at two or more concentrations across the range of the assay and interpreted using graphical and statistical techniques, such as Levy-Jennings plots and Westgard rules. QC materials are generally not used for calibration in the same process in which they are used as controls.In instances where any QC checks fail, certain aspects of the experimental procedure may have to be altered in order to remedy the problem or one or more units associated with the violation may have to be reprocessed until satisfactory checks are achieved.Comparative/normalisation controlsThese can be alternative physical or biochemical parameters measured alongside the analyte of interest usually within the same sample, for the purposes of normalisation and/or correction. For example, in RT-PCR housekeeping genes are usually amplified as well as targets of interest, with the final output expressed as a ratio between the target and the housekeeping gene.
+Analytical controls tend to be used to validate practices within an experimental assay, helping to ensure that measurements are accurate and may be interpreted correctly. Analytical controls may be required for each variable or condition in the experiment, for quality control (QC) purposes and/or to gauge and adjust for background variation that may systematically influence certain sets of measurements (see Table 2 and the ‘QC’ section for further details).
+
+**Table 2.**
+ Commonly encountered examples of analytical controls
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Control type</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>QCs</td>
+      <td>Qualitative QCs typically indicate whether specific aspects of the experimental and/or analytical procedure work in the intended ways, and are often included in the same analytical run used to collect study data. For example, a negative control may be a sample or unit that is known to be negative for the outcome and, hence, should assign a negative measurement in the assay. In contrast, a positive control would be expected to assign a positive result.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quantitative QCs are used to monitor the performance of a quantitative measurement system and ensure that it is performing within acceptable limits. Typically quantitative QC samples are run at two or more concentrations across the range of the assay and interpreted using graphical and statistical techniques, such as Levy-Jennings plots and Westgard rules. QC materials are generally not used for calibration in the same process in which they are used as controls.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>In instances where any QC checks fail, certain aspects of the experimental procedure may have to be altered in order to remedy the problem or one or more units associated with the violation may have to be reprocessed until satisfactory checks are achieved.</td>
+    </tr>
+    <tr>
+      <td>Comparative/normalisation controls</td>
+      <td>These can be alternative physical or biochemical parameters measured alongside the analyte of interest usually within the same sample, for the purposes of normalisation and/or correction. For example, in RT-PCR housekeeping genes are usually amplified as well as targets of interest, with the final output expressed as a ratio between the target and the housekeeping gene.</td>
+    </tr>
+  </tbody>
+</table>
 
 Example: In the elastomer pump study in Box 1, temperature measurements made during data collection can be used as a form of normalisation control to obtain temperature-adjusted estimates of flow rate.
 
-## Other potential biases, confounders and sources of variability
+#### Other potential biases, confounders and sources of variability
 
 Potential sources of bias and variability need to be anticipated upfront—at the design stage of a study—in order to avoid or account for their effects. Systematic sources of variation can often be tackled via careful study design; for example, by balancing and/or randomising treatment arms over potentially confounding variables (such as plates or batches, or having multiple observers/experimenters involved in data collection). Similarly, potential biases may be avoided by ensuring experimental runs are conducted under homogeneous conditions wherever possible (such as under a fixed temperature), and that measurements are consistently made (e.g., by using properly calibrated equipment). If any unwanted sources of variation cannot be controlled, it may be possible to adjust for their effects during analysis if the key variables are measured during the study (Stegle et al., 2012). Note that, as suggested above, an additional source of variation may occur where multiple researchers are involved in conducting an experiment or in any aspect of the measurement. This is often seen as a negative aspect of an experiment where the goal is to reduce error as far as possible. However, one positive aspect of this is that results can give an indication of how robust the experiment is in a wider context. Ultimately, some level of variation should be anticipated to occur amongst operators or sites and this needs to be reported and accounted for (Barnhart et al., 2007; Maecker et al., 2011).
 
 Example(s): In the Box 1 example, temperature cannot be controlled between experiments or time points, but plans have been made to measure it concurrently with the flow rates. As such, any confounding effects of temperature can be controlled at the analysis stage by including temperature as a covariate. As this study has a hierarchical design (i.e., where measurements will be taken on units across multiple experiments and over sequential time-points within an experiment), there will also be multiple sources of variation that need to be accounted for during analysis (such as ‘between time-points within an experiment’ and ‘between experiments on the same unit’).
 
-## Sample size considerations
+#### Sample size considerations
 
 Sample size calculations aim to establish the minimum sample size that a study requires in order to be in a strong position to answer the primary research question. The primary research question may take the form of a statistical hypothesis test, an estimate with specified precision, or to obtain evidence for proof of concept (POC). With a statistical hypothesis test the aim is to control for two forms of error; type 1 in which the null hypothesis is rejected when it is true (false positive), and the type 2 error in which the null hypothesis is not rejected when the alternative is true (false negative). The most common error levels to adhere to are 5% for a type 1 error and 10% or 20% for a type 2. When the type 2 error is 20% we have an 80% chance (or power) of rejecting the null when the stated alternative is true. In the precision context, the aim is to estimate a population parameter of interest such as the standard deviation of an outcome, or an event or prevalence rate. In this form of study, the aim is to control the expected standard error of the estimate derived from the sample. POC studies are typically conducted to obtain some preliminary evidence that a treatment/intervention works. One approach is to calculate the sample size that will give a sufficiently high probability (90–95%) to observe the correct ordering of the primary outcome of the treatment/intervention and control group. If the estimate for the primary outcome is favourable for the treatment/intervention group then this would support a decision to continue with a larger hypothesis testing study (Piantadosi, 2005).
 
@@ -234,9 +589,9 @@ Example(s): The study in Box 1 plans to take repeated measurements on each exper
 
 ## Planned analysis
 
-## Data assessment and preparation
+### Data assessment and preparation
 
-## QC criteria
+#### QC criteria
 
 QC procedures aim to assess the validity of any data collected in a study, and to detect any errors that may have occurred, thereby helping to avoid the potential effects of any biases or unwanted variation that may arise. Often, QC procedures involve analysing control samples included in the design of the study (see ‘Use of analytical controls’ section). Plans for handling data from any analytical controls therefore need to be defined upfront so that any experiments or samples that fail QC can be repeated or reanalysed if required.
 
@@ -246,37 +601,37 @@ Another reason to set criteria is, to check whether data from calibrators, analy
 
 Example(s): In the macrophage study data are collected at multiple time points. Results may fail QC at any one of the measurement time points and in any assay batch. The cause of this failure may be due to a whole plate being contaminated before the assay, or due to a technical fault of the measurement system. The impact of a failed plate when longitudinal measurements are made may be larger as this prevents further measurements being made and calls into question prior measurements before the contamination was detected. So a full or partial repeat of the whole experiment may be necessary. The failure of a single assay batch may be more recoverable depending on the proportion of missing data in measurements needed at that time point. In the described design there are two replicates so a sensitivity analysis could be employed in which extreme values (e.g., single measurements more than 3 SD away from the batch specific mean) are coded as missing.
 
-## Data verification
+#### Data verification
 
 Where necessary data in the database for analysis should be checked against its source to identify data entry errors prior to analysis. This important step can take time and should be incorporated into the analysis plan.
 
-## Data normalisation/correction
+#### Data normalisation/correction
 
 Other aspects of data preparation may involve attempting to correct for potential problems such as known (or unknown) biases or confounding effects. Normalisation methods are often used to align data to an expected distribution, with the aim of ensuring that the groups being tested are comparable. This can involve taking into account information on the structure of the study design such as batch or centre numbers or by using data from appropriate analytical controls. The planned normalisation or correction procedure may have implications for the subsequent analysis of the data and should be specified in advance.
 
 Example(s): The study in Box 3 involves several stages of sample and/or data processing, each of which may require implementation of specific QC procedures. For instance, RNA quality and the possible impact of DNA contamination need to be assessed, with criteria potentially set to exclude bad samples (e.g., using the RNA integrity number score). The processes involved in quantifying the transcriptome (e.g., using the Tuxedo suite of software) may also be subject to data quality issues and need to be assessed accordingly. As RNA-sequencing can be inherently susceptible to batch effects and/or other unwanted sources of variation, data correction techniques such as PEER (Stegle et al., 2012) may also be employed to normalise data profiles across samples.
 
-## Outliers
+#### Outliers
 
 Having performed appropriate checks that the data are accurate and reproducible, it is good practice to use a combination of descriptive and graphical methods to assess the distributions of your study variables to check for outliers. It is not good practice to routinely discard such outliers from analysis; however, having performed the primary analysis on the full dataset, one can perform sensitivity analyses that exclude outliers, to show how they might be influencing the conclusions. Where possible the criteria for identifying potential outliers should be specified in advance of obtaining the results.
 
-## Statistical methods
+### Statistical methods
 
 Early consideration of the statistical methods helps to ensure that a study's objectives will be reliably addressed. It allows study design to be optimised by enabling an appropriate sample size calculation to be made, and ensures that the resulting data will be suitable for the most appropriate statistical analysis. Specifying firm details about the anticipated statistical methods upfront, including the analytical strategy for any secondary research questions or potential subgroup analyses, can also help to avoid biases at the analysis and reporting stages. In particular, it helps guard against the selective reporting (or ‘cherry picking’) of favourable results, and provides full transparency about the initial analysis plan. A further advantage of clarifying details about the planned statistical analyses upfront is that, where applications for funding will be submitted, it may provide an opportunity to cost in time for any necessary statistical support that will be required, such as for regular integrated discussions with a statistician or for the dedicated statistical analysis. This section of the checklist details the key analytical considerations that should be decided upon upfront during study planning.
 
-## Describe the different analyses to be performed
+#### Describe the different analyses to be performed
 
 The methods that will be used can fundamentally impact on the types of inferences that can be drawn from a study. As such, these should be decided upon upfront, along with related details such as any model terms or covariates that will be considered and the specific tests or comparisons that will be performed. If data require a transformation prior to the analyses then all such transformations need to be documented and clearly justified. These aspects of the statistical methodology all have implications for the sample size calculation, and can influence the scope and the validity of the findings. As different statistical methodologies rely on different assumptions, plans to assess the validity of these assumptions should also be made. If any of the assumptions do not hold then the results of the analysis may be misleading. For such situations it may be that a simple data transformation will suffice, if not alternative methods may be required for which additional statistical support may need to be sought. Sensitivity analyses can provide a means of assessing the dependency of research findings upon the assumptions, and can help to strengthen any conclusions being made.
 
 Example(s): The study in Box 1 measures flow rates over time on each pump-catheter combination, and plans to replicate each experiment three times on a particular experimental unit. As such, the measurements collected in this study are not independent; flow rates recorded close together in time may be more similar than those recorded at different times, whereas the measurements gained in a particular experiment or unit may be more similar than those measured across experiments or units. Many conventional statistical methods assume that all observations are independent and, hence, may produce misleading results if applied in this study and pseudo or false replication occurs when there is such a mismatch between the experimental design and the statistical analysis method (Hurlbert, 1984). An appropriate method for handling repeated measurements would instead be required, such as a mixed-effects model. Mixed-effects models handle non-independent measurements (sometimes referred to as ‘pseudo-replicates’) by including ‘random effect’ terms. Any parameters or factors of interest that need to be tested—such as the pump and catheter effects—would be included as ‘fixed effects’. After fitting such a model, planned comparisons can be made to assess the key hypotheses; for example, to quantify: (1) the difference between new and existing pumps; (2) the difference between new and existing catheters; and (3) the difference between each combination involving a new pump and/or catheter and the combination of existing pump and existing catheter.
 
-## Missing data
+#### Missing data
 
 Planning to handle any missing data that may arise upfront can help to avoid potential problems and bias at the analysis stage. Missing data may arise for any number of reasons, but any obvious problems that could occur should be anticipated in advance and plans made to deal with their possible effects. Depending on the study design, it may be possible to guard against missing or inaccurate data by monitoring data quality as it accrues; pilot studies are a good way of identifying potential issues before the full study begins.
 
 Example: In the elastomer pump example, measurements were to be made automatically over a period of 48 hr. If for any reason the equipment were to fail during this period, longitudinal data would be missing from the point of failure onwards. In this example, use of a mixed-effects model would allow for the inclusion of incomplete longitudinal datasets; in contrast, if an alternative method such as repeated-measures ANOVA were used, sets with missing data would have to be excluded, reducing power, or the missing values would need to be imputed, possibly introducing bias depending on the methods used.
 
-## Multiple testing
+#### Multiple testing
 
 Running multiple tests within a study usually requires some form of correction for the number of tests being made (often referred to as accounting for ‘multiplicity’). This guards against the increased chance of obtaining positive results just by chance as you increase the number of tests or observations being made on the same data. A type 1 error rate of 5%, that is, testing at p < 0.05, suggests that 1 in every 20 tests will be significant simply by chance. The two most commonly used forms of adjustment involve controlling either the ‘family-wise error rate’ or the ‘false-discovery rate’ (FDR). The family-wise error rate assumes a given probability of obtaining one or more false-positive results within a set (or ‘family’) of tests. Often, a 5% family-wise error rate is used—meaning that, on average, only 5 out of 100 repetitions of the complete set of tests would contain at least one false-positive result. In contrast, the FDR assumes—usually less stringently—that a given proportion of a particular set of positive results are false-positive. Deciding upon the means of adjusting for multiplicity—including defining the number of tests to adjust for and/or what constitutes a single family of tests, can be a contentious issue.
 
@@ -284,7 +639,7 @@ Example(s): In the study in Box 2, 10 cytokines will be tested, and multiple com
 
 In the Box 3 example, a large number of transcripts will be tested for association with hypertensive status, creating a multiple testing issue. Many of the transcripts are expected to be highly correlated with one another, however, while most adjustments for multiplicity assume that all tests being corrected for are independent. In this scenario, adjusting for the full number of transcripts tested would be conservative, and could—arguably—unfairly reduce the statistical power of the study. As such, it may be reasonable to use a less conservative adjustment in this study, or to seek a more sophisticated approach that can better account for the number of independent tests being made.
 
-## Interim analysis
+#### Interim analysis
 
 Properly planned interim analyses can strengthen the quality of the data and/or reduce costs, because they potentially allow for the sample size calculation to be updated with more accurate information, or for data collection to be stopped early. However, they must be planned in advance; ad hoc analysis of data before the final sample size is reached risks falsely rejecting the null hypothesis, due to multiple testing or to obtaining a biased estimate of the effect size in too small a sample.
 
@@ -292,7 +647,7 @@ Having discussed the study design with reference to the framework, there may be 
 
 Example(s): The study in Box 1 has not been subject to a formal sample size calculation due to a lack of available data on the magnitude of the various components of variation planned into the design (e.g., the variation in flow rates between time-points in a particular experiment on a particular unit, the variation between experiments, and the variation between units). As such, it would be desirable to plan for an interim analysis of the data during the study in order to estimate the sample size required to run any equivalence tests with sufficient power. If the interim analysis solely involved estimating variance components, it would not be necessary to break the blinding of the interventions or add to any multiple testing burden. However, if the experimenters wished to assess for equivalence at an interim stage of the study, the planned sample size would need to be increased further in order to properly allow for this. Note that, contrary to these plans, this entire study may instead be considered to be a pilot for a larger future study. In this scenario, it may not be worth conducting any interim analyses; the resources planned for the current study may already be fixed, with no scope for increasing the sample size if required.
 
-## Replication and/or validation
+#### Replication and/or validation
 
 Validation and/or replication of the results provides valuable support to research findings. Validation usually involves using a different method and/or technique to confirm data that has been obtained—it thereby helps to guard against any biases or confounding associated with measurement and/or processing. In contrast, replication usually refers to reproducing results in an independent dataset (such as an additional set of samples that were not included in the original analysis). Replication can help guard against confounding associated with the experimental/sampling units, and also protects against statistical issues such as ‘overfitting’ and ‘The Winner's Curse’.
 

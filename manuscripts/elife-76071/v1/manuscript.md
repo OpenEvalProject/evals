@@ -22,20 +22,20 @@
 
 ### Affiliations
 
-1. https://ror.org/056d84691 The Systems Virology Lab, Division of Clinical Microbiology, Department of Laboratory Medicine, Karolinska Institute, ANA Futura, Campus Flemingsberg Stockholm Sweden
-2. https://ror.org/02xzytt36 Manipal Institute of Virology (MIV), Manipal Academy of Higher Education Manipal India
-3. https://ror.org/04f81fm77 Department of Infectious Diseases and Clinical Microbiology, Medical Faculty, Cumhuriyet University Sivas Turkey
-4. https://ror.org/05x4m5564 Public Health Agency of Sweden Solna Sweden
-5. https://ror.org/00vbvha87 Public Health England, Porton Down Salisbury United Kingdom
-6. https://ror.org/04v2twj65 Oxford Brookes University Oxford United Kingdom
-7. https://ror.org/04f81fm77 Department of Nutrition and Dietetics, Faculty of Health Sciences, Sivas Cumhuriyet University Sivas Turkey
-8. https://ror.org/056d84691 Division of Chemistry I, Department of Medical Biochemistry and Biophysics, Karolinska Institutet Stockholm Sweden
-9. https://ror.org/056d84691 Division of Clinical Microbiology, Department of Laboratory Medicine, Karolinska Institute, ANA Futura, Campus Flemingsberg Stockholm Sweden
-10. https://ror.org/05f0yaq80 National Bioinformatics Infrastructure Sweden (NBIS), Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University Stockholm Sweden
-11. https://ror.org/04fhee747 National Institute of Immunology, Aruna Asaf Ali Marg New Delhi India
+1. The Systems Virology Lab, Division of Clinical Microbiology, Department of Laboratory Medicine, Karolinska Institute, ANA Futura, Campus Flemingsberg Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+2. Manipal Institute of Virology (MIV), Manipal Academy of Higher Education Manipal India ([ROR:02xzytt36](https://ror.org/02xzytt36))
+3. Department of Infectious Diseases and Clinical Microbiology, Medical Faculty, Cumhuriyet University Sivas Turkey ([ROR:04f81fm77](https://ror.org/04f81fm77))
+4. Public Health Agency of Sweden Solna Sweden ([ROR:05x4m5564](https://ror.org/05x4m5564))
+5. Public Health England, Porton Down Salisbury United Kingdom ([ROR:00vbvha87](https://ror.org/00vbvha87))
+6. Oxford Brookes University Oxford United Kingdom ([ROR:04v2twj65](https://ror.org/04v2twj65))
+7. Department of Nutrition and Dietetics, Faculty of Health Sciences, Sivas Cumhuriyet University Sivas Turkey ([ROR:04f81fm77](https://ror.org/04f81fm77))
+8. Division of Chemistry I, Department of Medical Biochemistry and Biophysics, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+9. Division of Clinical Microbiology, Department of Laboratory Medicine, Karolinska Institute, ANA Futura, Campus Flemingsberg Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+10. National Bioinformatics Infrastructure Sweden (NBIS), Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University Stockholm Sweden ([ROR:05f0yaq80](https://ror.org/05f0yaq80))
+11. National Institute of Immunology, Aruna Asaf Ali Marg New Delhi India ([ROR:04fhee747](https://ror.org/04fhee747))
 12. Institute for Virology, FB10-Veterinary Medicine, Justus-Liebig University Giessen Germany
-13. https://ror.org/00a0jsq62 Faculty of Infectious and Tropical Diseases, London School of Hygiene and Tropical Medicine London United Kingdom
-14. https://ror.org/00awbw743 National Veterinary Institute Uppsala Sweden
+13. Faculty of Infectious and Tropical Diseases, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+14. National Veterinary Institute Uppsala Sweden ([ROR:00awbw743](https://ror.org/00awbw743))
 
 † Corresponding author
 
@@ -53,15 +53,344 @@ Here, we have applied global blood transcriptomics in longitudinal samples colle
 
 ## Results
 
-## Samples and clinical data
+### Samples and clinical data
 
 In this study, 18 samples were collected during the acute phase of the disease with a median time of 4 days (range 1–6 days) after the onset of symptoms. We used the severity grading scores (SGS) to define the CCHF severity that calculated using age, clinical findings (bleeding, hepatomegaly, organ failure), routine laboratory parameters (blood levels of liver enzymes and lactate dehydrogenase, blood platelet, and leucocyte counts, blood coagulation tests [prothrombin time, D-dimer and fibrinogen]; Bakir et al., 2012). By using these criteria, a standard SGS sheet for each patient was filled by the infectious diseases physician on admission day. By using SGS criteria, 33% (6/18) patients were grouped into severity group 1 (SG-1), 61% (11/18) patients into severity group 2 (SG-2), and, 6% (1/18) patients into severity group 3 (SG-3). The median age of the patients was 49 years (range: 18–79), and 12 (66.7%) of the patients were male. A 79-year-old male patient in SG-3 died on the third day of hospitalization. The case-fatality rate (CFR) for the cohort was 5.6%. Follow-up samples were collected from 12 individuals after a median duration of 54 weeks (range: 46–57 weeks). The CCHF patient characteristics are summarized individually in Table 1 and the calculated daily SGS scores during hospitalization in Table 1—source data 1.
 
-## System-level metabolic reprogramming during the acute phase of CCHFV infection
+**Table 1.**
+ The CCHF patient characteristics.Table 1—source data 1.Severity grade scoring during hospitalization.The symptoms onset and sampling time are marked.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PID</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>The date of symptoms onset</th>
+      <th>The date of hospitalization</th>
+      <th>Time to hospitalization (days)</th>
+      <th>The date of the first sampling</th>
+      <th>The date of the second sampling</th>
+      <th>SGS score</th>
+      <th>Severity group**</th>
+      <th>Rt-pcr</th>
+      <th>CT-values</th>
+      <th>Anti-CCHFV IgM</th>
+      <th>Outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P01</td>
+      <td>33</td>
+      <td>Female</td>
+      <td>30 May 2017</td>
+      <td>03 June 2017</td>
+      <td>4</td>
+      <td>03 June 2017</td>
+      <td>05 July 2018</td>
+      <td>5</td>
+      <td>1</td>
+      <td>Positive</td>
+      <td>31,85</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P02</td>
+      <td>18</td>
+      <td>Male</td>
+      <td>06 June 2017</td>
+      <td>12 June 2017</td>
+      <td>6</td>
+      <td>12 June 2017</td>
+      <td>ND</td>
+      <td>7</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>25,89</td>
+      <td>positive</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P03</td>
+      <td>45</td>
+      <td>Male</td>
+      <td>12 June 2017</td>
+      <td>13 June 2017</td>
+      <td>1</td>
+      <td>14 June 2017</td>
+      <td>01 July 2018</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Positive</td>
+      <td>21,87</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P04</td>
+      <td>67</td>
+      <td>Male</td>
+      <td>13 June 2017</td>
+      <td>16 June 2017</td>
+      <td>3</td>
+      <td>17 June 2017</td>
+      <td>05 July 2018</td>
+      <td>8</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>22,38</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P05</td>
+      <td>48</td>
+      <td>Male</td>
+      <td>12 June 2017</td>
+      <td>18 June 2017</td>
+      <td>6</td>
+      <td>19 June 2017</td>
+      <td>08 July 2018</td>
+      <td>7</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>29,79</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P06</td>
+      <td>68</td>
+      <td>Male</td>
+      <td>13 June 2017</td>
+      <td>19 June 2017</td>
+      <td>6</td>
+      <td>20 June 2017</td>
+      <td>05 July 2018</td>
+      <td>5</td>
+      <td>1</td>
+      <td>Positive</td>
+      <td>28,41</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P07</td>
+      <td>77</td>
+      <td>Male</td>
+      <td>19 June 2017</td>
+      <td>22 June 2017</td>
+      <td>3</td>
+      <td>23 June 2017</td>
+      <td>05 July 2018</td>
+      <td>6</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>24,77</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P08</td>
+      <td>29</td>
+      <td>Female</td>
+      <td>20 June 2017</td>
+      <td>24 June 2017</td>
+      <td>4</td>
+      <td>25 June 2017</td>
+      <td>02 July 2018</td>
+      <td>6</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>26,91</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P09</td>
+      <td>50</td>
+      <td>Female</td>
+      <td>20 June 2017</td>
+      <td>25 June 2017</td>
+      <td>5</td>
+      <td>26 June 2017</td>
+      <td>06 July 2018</td>
+      <td>4</td>
+      <td>1</td>
+      <td>Positive</td>
+      <td>26,36</td>
+      <td>Positive</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>35</td>
+      <td>Female</td>
+      <td>07 July 2017</td>
+      <td>12 July 2017</td>
+      <td>5</td>
+      <td>12 July 2017</td>
+      <td>04 July 2018</td>
+      <td>3</td>
+      <td>1</td>
+      <td>negative</td>
+      <td>NA</td>
+      <td>Positive</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P11</td>
+      <td>64</td>
+      <td>Female</td>
+      <td>15 July 2017</td>
+      <td>18 July 2017</td>
+      <td>3</td>
+      <td>19 July 2017</td>
+      <td>ND</td>
+      <td>10</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>22,46</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>57</td>
+      <td>Male</td>
+      <td>16 July 2017</td>
+      <td>21 July 2017</td>
+      <td>5</td>
+      <td>22 July 2017</td>
+      <td>09 July 2018</td>
+      <td>9</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>20,81</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P13</td>
+      <td>79</td>
+      <td>Male</td>
+      <td>22 July 2017</td>
+      <td>24 July 2017</td>
+      <td>2</td>
+      <td>24 July 2017</td>
+      <td>ND</td>
+      <td>11</td>
+      <td>3</td>
+      <td>Positive</td>
+      <td>22</td>
+      <td>ND</td>
+      <td>Died</td>
+    </tr>
+    <tr>
+      <td>P14</td>
+      <td>36</td>
+      <td>Male</td>
+      <td>01 August 2017</td>
+      <td>06 August 2017</td>
+      <td>5</td>
+      <td>07 August 2017</td>
+      <td>04 July 2018</td>
+      <td>7</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>24,66</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P15</td>
+      <td>62</td>
+      <td>Male</td>
+      <td>15 August 2017</td>
+      <td>20 August 2017</td>
+      <td>5</td>
+      <td>21 August 2017</td>
+      <td>06 July 2018</td>
+      <td>9</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>19,86</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P16</td>
+      <td>48</td>
+      <td>Male</td>
+      <td>05 September 2017</td>
+      <td>07 September 2017</td>
+      <td>2</td>
+      <td>07 September 2017</td>
+      <td>ND</td>
+      <td>4</td>
+      <td>1</td>
+      <td>Positive</td>
+      <td>22,09</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P17</td>
+      <td>55</td>
+      <td>Male</td>
+      <td>12 April 2018</td>
+      <td>17 April 2018</td>
+      <td>5</td>
+      <td>18 April 2018</td>
+      <td>ND</td>
+      <td>9</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>26,16</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+    <tr>
+      <td>P18</td>
+      <td>44</td>
+      <td>Female</td>
+      <td>23 April 2018</td>
+      <td>27 April 2018</td>
+      <td>4</td>
+      <td>29 April 2018</td>
+      <td>ND</td>
+      <td>9</td>
+      <td>2</td>
+      <td>Positive</td>
+      <td>21,27</td>
+      <td>ND</td>
+      <td>Survived</td>
+    </tr>
+  </tbody>
+</table>
+
+_ND: not determined; NA: not applicable; SGS: severity grading system; RT-PCR: real-time - polymerase chain reaction; CT: cycle threshold; CCHFV: Crimean-Congo hemorrhagic fever virus.*1: Low (0–5); 2: Intermediate (6-10); 3: High (11-16)._
+
+### System-level metabolic reprogramming during the acute phase of CCHFV infection
 
 Due to the natural heterogeneity in human cohorts, we used longitudinal samples from 12 patients (SG-1: n = 5; SG-2: n = 7) to perform differential expression analyses for each infected patient between the time of infection and approx. 1 year post-recovery (Range: 46–57 weeks). The differential gene expression (DGE) profile for the acute phase compared to the recovered phase in all patients showed an upregulation of 2891 genes and a downregulation of 2738 genes (adj. p<0.05)(Figure 1A and Supplementary file 1). To check whether the gene expression changes between the acute phase and recovered phase may be due to differences in cell types abundances, we performed digital cell quantification (DCQ) using the Estimating the Proportions of Immune and Cancer cells (EPIC) (Racle and Gfeller, 2020) algorithm for blood circulating immune cells. No statistically significant (adj p < 0.05) difference was observed in the key immune cell types (Figure 1—figure supplement 1). Next, we used the functional analysis using a consensus scoring approach based on multiple gene set analysis (GSA) runs by incorporating the directionality of gene abundance using R/Bioconductor package PIANO (Väremo et al., 2013) for KEGG pathway gene-set. Using the group-specific consensus scores (acute vs. recovered) and directionality classes, we identified distinct upregulation (adj. p < 0.05) of metabolic pathways such as one carbon pool by folate, oxidative phosphorylation (OXPHOS), glycolysis, N-glycan biosynthesis, and antiviral pathways like the NOD-like receptor signaling pathway (Figure 1B and Supplementary file 2). However, the pathways related to the down-regulated genes were mainly antiviral defense mechanism-associated pathways including innate immune responses like Th1, Th2, and Th17 cell differentiation, the NF-kB pathways, chemokine signaling pathway, etc. (Figure 1B). Additionally, since most of the metabolic pathways were upregulated, we used the DGE results of acute-vs-recovered to identify reporter metabolites. Reporter metabolites are metabolites around which most of the transcriptional changes occur (Patil and Nielsen, 2005) thus being indicative of gene-level altered regulation of metabolism. The analysis identified 37 significantly upregulated reporter metabolites (adj. p < 0.1), that were part of OXPHOS, TCA-cycle, nucleotide metabolism, N-glycan metabolism, and amino acid-related pathways (Figure 1C). To specifically investigate the genes that were significantly associated with disease severity during the acute phase, the samples were grouped into either SG-1 or SG-2 and 3 combined. There were 12 genes (ERG, PROM1, HP, HBD, AHSP, CTSG, PPARG, TIMP4, SMIM10, RNASE1, VSIG4, CMBL, MT1G) that were significantly upregulated in patients in the SG-2 and SG-3 combination group compared to SG-1 (Figure 1—figure supplement 2A) However, no obvious links between these genes were noted and no apparent clustering was observed (Figure 1—figure supplement 2B). This was further supported by serum secretome analysis using the 22 soluble cytokine and chemokine markers by Luminex assay on samples collected during the acute phase of the disease from SG-1 (n = 6) and SG-2 (n = 11). Of the 22 markers used for analysis, only interleukin 8 (IL-8) and Granulocyte-macrophage colony-stimulating factor (GM-CSF) was shown borderline significance between SG-1 and SG-2 (Figure 1—figure supplement 3). However, when we compared the acute phase with the recovered phase in SG-1, and SG-2 separately, there was a distinct DGE profile. In SG-1 the differentially expressed genes were significantly fewer (adj. p < 0.05; n = 1617, upregulated: 954 and downregulated: 663) compared to those in SG-2 (adj. p < 0.05; n = 4256, upregulated: 2182 and downregulated: 2074) (Figure 1D and E). There were 1451 overlapping genes between SG-1 and SG-2 that were differentially upregulated (n = 882) and downregulated (n = 569). Using gene ontology (GO) analysis after removal of the redundant terms using REVIGO (Supek et al., 2011), the majority of the genes from the top two GO terms that were significantly upregulated were part of the IFN-I signaling pathway (GO:0060337) and the regulation of viral genome replication (GO:0045069) (Figure 1F). This indicates that the disease severity significantly affected gene expression of the interferon signaling pathway profiling during the acute phase, whereas it was comparable when they recovered.
 
-## Distinct interferon signaling-related pathways in CCHFV-infection
+![Figure 1.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig1-v1.jpg)
+
+**Figure 1.:** (A) Heatmap of Z-score transformed expression values of significantly regulated genes in the pair-wise comparisons namely recovered vs. acute (overall), recovered vs. acute (SG-1), recovered vs. acute (SG-2). The columns represent the patient samples and their corresponding severity groups at different time points. The rows represent genes that are hierarchically clustered based on Euclidean distance. (B) Pathways were found to be significantly regulated (adj. p < 0.05) by genes expressed at the acute infection phase compared to recovered phase. The heatmap visualizes negative log scaled adjusted p-values of different directionality classes. Non-directional p-values were generated based on gene-level statistics alone without considering the expression direction. The mixed-directional p-values were calculated using subset of gene-level statistics of up and down-regulated genes respectively for mixed-directional up and down. Distinct directional up and distinct directional down p-values are calculated from gene statistics with expression direction (C) Network visualization of significant reporter metabolites (adj. p < 0.1) and reporter subsystems (pathways) identified in acute compared to recovered. The yellow node denotes reporter metabolite and blue node denotes reporter subsystems. Light red and green colored nodes represent upregulated and downregulated genes respectively. Each edge in the network denotes association of genes with reporter metabolites and subsystems based on the human genome-scale metabolic model. (D) Venn diagram of significantly up-regulated genes in recovered vs acute (SG-1) and recovered vs acute (SG-2) phases (E) Venn diagram of significantly down-regulated genes in recovered vs. acute (SG-1) and recovered vs. acute (SG-2) phases. (F) Gene ontology (GO, biological process) enrichment analysis results of commonly regulated genes (882 upregulated and 569 down-regulated) from (D) and (E). The color gradient and bubble size correspond to the gene ratio of each GO term and the adjusted p-value of the enrichment test, respectively. The adjacent bar graph represents the percentage of genes upregulated or downregulated in each GO term.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) MA-plot of differentially regulated genes during the acute phase between samples of severity group 1 and severity group 2 and 3. (B) Sample distribution during the acute phase of infection in different severity groups as reported.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig1-figsupp3-v1.jpg)
+
+### Distinct interferon signaling-related pathways in CCHFV-infection
 
 To identify the CCHFV-induced changes in the interferon-related signaling pathways, we used our previously curated datasets for genes (n = 205) associated with the interferon response (Chen et al., 2021). The majority of the genes of the interferon signaling pathways were upregulated (36%, 73/205, adj p < 0.05), while 11% (22/205) were downregulated (Figure 2A). Of the IFN-regulated genes, IFI27 (ISG12) showed the most robust upregulation (Figure 2B). This was further supported by RNAscope analysis targeting the IFI27 transcript in the SW13 cell line infected with CCHFV strain IbAr10200 (Figure 2C). Apart from this ISG20, ISG15, Mx1, Mx2, and several other ISGs showed upregulation in the acute phase (Supplementary file 1). Given that the interferon signaling pathways have a role in disease severity, we next performed an association between the patient viral load and genes in the interferon signaling-related pathways. We identified six genes (TRIM25, IFI35, EIF2AK2, USP18, IFI6, and BST2) that were negatively associated with the cycle threshold (CT) value of RT-PCR (adj p < 0.05 and R > −0.8, Figure 2D), suggesting a higher viral load was associated with an increased expression of these ISGs. Overall, the gene expression data indicate that the CCHFV infection regulates IFN responses and patients with a successful disease outcome showed stimulation of several ISGs during the acute phase of infection.
 
@@ -69,17 +398,39 @@ To identify the CCHFV-induced changes in the interferon-related signaling pathwa
 
 **Figure 2.:** (A) Heatmap visualizes the expression pattern of IFN-signaling genes (including ISGs) significantly different between the recovered and acute phases. The columns represent the patient samples and their corresponding severity groups at different time points. The rows represent genes hierarchically clustered based on Euclidean distance. (B) MA-plot of differentially regulated genes between the recovered and acute phases. ISGs are marked. (C) RNAscope analysis targeting IFI27 genes in infected and non-infected cells. (D) Spearman correlation between viral load and IFN signaling genes (adj p < 0.05).
 
-## Network analysis identified the central role of central carbon and energy metabolism (CCEM) in the regulation of signaling pathways
+### Network analysis identified the central role of central carbon and energy metabolism (CCEM) in the regulation of signaling pathways
 
 To further deepen our understanding of the cellular regulation of acute CCHFV-infection at the molecular level from a systems perspective, we employed a weighted gene co-expression network analysis at the transcriptomic level. Based on the network analysis of pairwise gene co-expression (adj. p < 0.001, Spearman ρ > 0.84), we identified a set of seven communities of strongly interconnected genes (Figure 3A). Next, we ranked all the communities based on their centrality (average degree of nodes) to identify the sets of genes with the highest coordinated expression changes that were predicted to influence network behavior robustly. The functional enrichment analysis of the central community (c1) of the transcriptomics is associated (adj. p < 0.05) mainly with alterations in pyruvate metabolism, TCA-cycle, and to a smaller extent to glycolysis and gluconeogenesis (adj. p < 0.2) (Figure 3A and Figure 3—figure supplement 1). Further, we observed (Figure 3B and Figure 3—figure supplement 2) a high number of negative correlations between community (c1) and those associated with Notch, mechanistic target of rapamycin (mTOR) and Forkhead box protein O (FoxO) signaling (c5), and hypoxia inducing factor-1 (HIF-1) signaling (c7). Interestingly, the OXPHOS-associated community (c3) also tends to be negatively correlated with those involved in Notch/mTOR/FoxO signaling (c5) and HIF-1 signaling (c7). These patterns are also observed among the top 10% of most central genes in each community, suggesting key opposite differences not only at a global community level but also in key genes in each community (Figure 3B). At a pathway level, we indeed observed antagonistic trends between the above-mentioned pathways (Figure 3C). Our functional and network community analyses in the patient transcriptomics identified the coordination of biological signaling systems like FoxO, Notch and mTOR/HIF-1 signaling with metabolic pathways of CCEM during CCHFV-infection.
 
-## Quantitative proteomics analysis identified modulation of key metabolic processes and signaling pathways during productive replication in vitro
+![Figure 3.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig3-v1.jpg)
+
+**Figure 3.:** (A) Network visualization of seven gene co-expression communities identified. Nodes and node size represent genes and their centrality (degree) respectively and edges represent significant Spearman correlation (adj p < 0.001 and R > 84). Key significantly regulated pathways (adj. p < 0.05) in each community are labeled. (B) Heatmap of correlations among top 5% central genes in each community. Column and row annotation denotes corresponding communities. (C) Heatmap of significant correlation (adj. p < 0.05) between key metabolic and signaling pathways mentioned in (A). Column and row annotation denotes corresponding pathways.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig3-figsupp2-v1.jpg)
+
+### Quantitative proteomics analysis identified modulation of key metabolic processes and signaling pathways during productive replication in vitro
 
 Our longitudinal transcriptomics analysis of CCHF patient samples revealed alternations in the several key metabolic processes and signaling pathways during the acute phase of infection at a system level. As CCHFV fails to infect the peripheral blood mononuclear cells (PBMCs) (Connolly-Andersen et al., 2009), to understand the global changes in the cellular response during productive CCHFV-infection, we infected Huh7 and SW13 cells with CCHFV, which are the common cell lines used in pathogenesis studies and considered highly permissive for CCHFV (Dai et al., 2021). To allow multiple rounds of infection we used a multiplicity of infection (MOI) of 1 and used a time-course proteomic experiment for 24 and 48hpi using single batch TMT-labeling based mass-spectrometric analysis to avoid batch effects, inflated false-positive results, and minimize the typical missing values issue (Brenes et al., 2019). Due to the higher cell death the proteomics analysis could not be performed in SW13 48hpi. In the UMAP clustering of the proteome data, we observed a clear separation between the mock and virus-infected cells in both the cell lines (Figure 4A). At 24hpi and 48hpi a substantial amount of CCHFV proteins, N, M, and L protein were detected (Figure 4B). The immune fluorescence analysis targeting N-protein of CCHFV infected Huh7 cells at 24hpi with 1 MOI is shown in Figure 4C. The differential protein analysis (DPA) identified 3205 and 3070 proteins upregulated and 2926 and 3279 proteins downregulated in the infected samples at 24hpi and 48hpi in Huh7 cells and 2,217 upregulated and 1705 downregulated in SW13 cells respectively compared to the mock (adj. p < 0.05) (Supplementary file 3). The consensus scoring-based gene set analysis (GSA) using PIANO on the DPA at 24hpi and 48hpi in Huh7 and 24hpi in SW13 identified 68 pathways to be dysregulated in at least one of the comparisons. We observed downregulation (adj. p < 0.05) of the glycolysis/gluconeogenesis, purine metabolism, PI3K-Akt, and HIF-1 signaling pathways in both Huh7 and SW13 cell lines at 24hpi (Figure 4D) indicating CCHFV utilized these pathways during productive replication at an early phase. These pathways are known to have feedback mechanisms (Hayward, 2004; Locasale, 2018) to maintain cellular homeostasis, which is consistent with the observation that at 48hpi (in Huh7 cells) the pathways were not significantly dysregulated. The pathways like TCA-cycle and insulin secretion showed opposite trends in the cell lines indicating cell type-specific differential regulation of metabolic and signaling pathways during CCHFV replication. In time-series analysis in Huh7 cells, oxidative phosphorylation (OXPHOS) pathway was upregulated during CCHFV infection in a temporal manner indicating shift in metabolic processes towards OXPHOS during productive replication of the virus. The other pathways that also showed distinct temporal upregulation during CCHFV infection in vitro were N-glycan biosynthesis and cytokine-cytokine receptor interactions. In turn, pathways like FoxO signaling, T-cell receptor signaling pathways, Th1 and Th2 cell differentiation, and NK cell-mediated cytotoxicity were downregulated and upregulated of Notch signaling in Huh7 24hpi but not at 48hpi indicating the role of these pathways at the early stage of infection. A severe metabolic rearrangement occurred in SW13 cells at 24hpi toward central carbon and energy metabolism and amino acid metabolism as the pathways like pyruvate metabolism, glycine, serine, and threonine metabolism, tryptophan metabolism etc. were downregulated (Figure 4D). We also performed quantitative proteomics analysis of the Huh7 cells with 4 MOI infections at 24hpi and observed similar alterations in the pathways (Figure 4—figure supplement 1). Next, we performed gene set enrichment analysis (GSEA ) in Enrichr and compared Huh7 and SW13, 24hpi and patients RNAseq data and observed the key common dysregulated pathways were TCA cycle, HIF-1, and FoxO signaling pathways (Figure 4E). Glycolysis and OXPHOS are molecular interconversion systems, where the end product of the glycolysis is fueling OXPHOS through the TCA cycle which normally is the primary energy source and major pathways of CCEM. Glutaminolysis is an alternative pathway for mitochondrial energy production through OXPHOS under altered metabolic conditions (Zhang et al., 2019; Zheng, 2012). Therefore, we blocked glycolysis and glutaminolysis in SW13 and Huh7 cells using 2-deoxy-D-glucose (2-DG) (5 mM) and 6-diazo-5-oxo-L-norleucine (DON) (50 μm), respectively (Figure 4F) following infection. Infectivity of CCHFV, quantified as relative CCHFV L-gene levels in cells lysates, showed a significant decrease in 2-DG treated cells in both SW13 and Huh7 (p = 0.003 and p = 0.028, respectively). While in the DON treated cells a significant decrease was observed in SW13 cell (p < 0.001) and an inhibitory trend in Huh7 (p = 0.162) (Figure 4G). These data indicate that alteration in the CCEM affects CCHFV replication despite the cell-specific differences.
 
-## Temporal dynamics of interferon response in vitro
+![Figure 4.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig4-v1.jpg)
+
+**Figure 4.:** (A) Principal component analysis of proteomics samples of Huh7 cells and SW13 (inset) using only human proteins. (B) Identification of the CCHFV N (UniProtKB P89522.1), M (UniProtKB Q8JSZ3.1) and L (UniProtKB Q6TQR6.2) protein in the quantitative proteomics analysis. (C) Immunofluorescence staining of the CCHFV nucleoprotein to assess the infectivity. (D) Significantly regulated pathways (adj p < 0.05) in any of the pair-wise proteomics analyses in Huh7 and SW13 cells. The heatmap visualizes negative log scaled adjusted p-values of different directionality classes. Non-directional p-values are generated based on gene-level statistics alone without considering the expression direction. The mixed-directional p-values are calculated using subset of gene-level statistics of up and down-regulated genes respectively for mixed-directional up and down. Distinct directional up and distinct directional down p-values are calculated from gene statistics with expression direction. The first column annotation represents directionality of pathways and second column annotation denotes corresponding differential expression analysis. (E) Venn diagram showing commonly dysregulated pathways in patients transcriptomics and cell line proteomics. (F) Schematic diagram of the glycolysis and glutaminolysis and targeted drugs. (G) Metabolic control of viral replication in vitro. Fold change of the CCHFV L-gene following infection and treatment of 2-DG and DON at indicated concentrations compared to untreated in SW13 cells and Huh7 cells. A two-tailed paired Student t-test was performed, and p values are mentioned.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Protein set enrichment analysis identified 33 pathways that were dysregulated where the top pathways remain unchanged.
+
+### Temporal dynamics of interferon response in vitro
 
 The temporal changes in the interferome (cluster of interferon genes) are represented as a heat-map in Figure 5A and the log2fold change of the significantly altered protein levels at 24hpi and 48hpi are represented as volcano plots in Figure 5B. Several ISGs, such as Mx1, Mx2 IFIT1, ISG15, ISG20, and IFI6, were transcriptionally upregulated in the acute phase in patient samples (Supplementary Data File 1), were also significantly elevated in proteomics of infected Huh7 cells by 48hpi (Figure 5C). To determine that the observed induction of ISGs is due to the CCHFV-infection itself and not caused by the presence of any residual interferon in the virus-containing supernatant, we performed infection using UV-inactivated virus supernatant. As shown in the immunoblots in Figure 5D, a significant increase in expression of several ISGs namely RIG-I, IFIT1, ISG15 and a noticeable increase in Mx1, Mx2, and ISG20 proteins were observed in CCHFV-infected cells and not in UV inactivated virus supernatant, confirming that CCHFV-infection induces the expression of these ISGs. The WB images from all three experiments were given in Figure 5—figure supplement 1 and the Figure 5—source data 1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig5-v1.jpg)
+
+**Figure 5.:** (A) Heatmap of Z-score transformed expression values of proteins belonging to the cellular response to IFN signaling pathways in Mock-infected and CCHFV-infected Huh7 cells at 24hpi and 48hpi as identified in proteomics. The log-2-fold change in the genes corresponding to the indicated proteins identified in our patient transcriptomics data (recovered vs acute) is shown under the column name RNASeq. (B and C) Volcano plot of ISGs visualizing the expression status of Mock-infected and CCHFV-Infected samples at (B) 24hpi and (C) 48hpi. The size and color gradients of the dots correspond to the adjusted P values of differential expression analysis and the log2 fold change, respectively. (D) Representative western blots illustrate the indicated ISGs in Mock-infected, CCHFV-infected, and UV-inactivated CCHFV-infected Huh7 cells at 48hpi. ISG20 antibody gave a specific band at approx. 40 kDa without any non-specific band in the membrane that was cut at 50 kDa in the top. (E) The densitometric intensity of the bands was quantified using Fiji (ImageJ) software. The intensity of the individual bands was first normalized to the respective β-actin loading control and further relative normalization with respect to the mock-infected control was done. The bars are represented as means ± SD of three independent experiments. A two-tailed paired Student t-test was performed, and p values are represented as *p < 0.05, **p < 0.01 and ***p < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76071/elife-76071-fig5-figsupp1-v1.jpg)
 
 ## Discussion
 
@@ -103,44 +454,44 @@ In conclusion, our study comprehensively describes the host-immune response agai
 
 ## Materials and methods
 
-## Study design, patients, and sample collection
+### Study design, patients, and sample collection
 
 We enrolled 18 adult patients ( ≥ 18 years) diagnosed with CCHF who were followed up by the clinical service of Infectious Diseases and Clinical Microbiology of Sivas Cumhuriyet University Hospital, Sivas, Turkey. The CCHF patients were divided into three groups using the SGS scores of 1, 2, and 3 (Bakir et al., 2012). Blood samples were collected on the admission day (acute stage) and from the survivors, 1 year after their recovery (Table 1) following confirmed positive real-time RT-PCR test (Altona Diagnostics, Hamburg, Germany) and/or serology by IgM indirect immunofluorescence antibody (IFA) assay (Euroimmun, Luebeck, Germany). Serum cytokine profiling targeting 22 cytokines/chemokines was performed by Public Health England using a 22 -plex customized Luminex kit (Merck Millipore, Darmstadt, Germany).
 
-## Cells and viruses
+### Cells and viruses
 
 The CCHFV strain IbAr10200 (isolated initially from Hyalomma excavatum ticks from Sokoto, Nigeria, in 1966) was used in this study. The small cell carcinoma in the adrenal cortex cells, SW13-ATCC-CCL-105, and human hepatocyte-derived cellular carcinoma cell line Huh7 was obtained from Marburg Virology Laboratory (Philipps-Universität Marburg, Marburg, Germany) and matched the STR reference profile of Huh7. The cell lines were tested negative for mycoplasma contamination.
 
-## RNA sequencing (RNAseq) analysis
+### RNA sequencing (RNAseq) analysis
 
 Peripheral blood mononuclear cells (PBMCs) RNA sequencing (RNAseq) from acute phase and convalescent phase of CCHFV-infected patients was performed as described by us recently (Appelberg et al., 2020; Zhang et al., 2018a). Total RNA was extracted from Trizol-treated PBMC using the Direct-zol RNA Miniprep (Zymo Research, CA, USA) according to the manufacturer’s protocol. RNA-Seq was performed at the National Genomics Infrastructure, Science for Life Laboratory, Stockholm, Sweden, as described by us previously (Zhang et al., 2018a). The transcriptomics data pre-processing, alignment, and read counting were performed as described by us recently (Appelberg et al., 2020).
 
 All the downstream analysis was performed only on protein-coding genes. Firstly, sample similarity and dissimilarity were accessed through dimensionality reduction using Uniform Manifold Approximation and Projection (UMAP). Normalized expression data of all protein-coding genes were subjected to UMAP dimensionality reduction using R package UMAPv0.2.6.0. The reduced dimensions of the data were plotted in 2D space using the R package ggplot2 v3.3.2 (https://cran.r-project.org/web/packages/ggplot2/index.html). Differential gene expression analysis was performed using raw read counts using the R/Bioconductor package DESeq2 v1.26.0 (Love et al., 2014). Genes with adjusted p-values < 0.05 were considered significantly regulated. Further, functional enrichment analysis was done on differential gene expression analysis results to identify significantly regulated pathways. The analysis was carried out using R package PIANO v2.2.0 (Väremo et al., 2013) (nperm = 500, geneset stat = mean). Nominal p-values and log2 fold change values of all genes are inputted to the package. Pathways belonging to KEGG category of metabolism, environmental information processing and organismal systems were used as gene-sets for the analysis. Pathways with adjusted p-value < 0.05 were chosen as significantly regulated. Additionally, three gene sets related to IFN-signaling curated by the group (Chen et al., 2021) were also considered for the enrichment analysis of gene communities. Gene ontology (GO) enrichment analysis was performed using the enrichr for GO biological process 2018 gene-set (https://maayanlab.cloud/Enrichr/). Redundant GO terms were removed using the online tool REVIGO (Supek et al., 2011). Reporter metabolites (Patil and Nielsen, 2005) were identified through R package PIANO (nperm = 500, geneset stat = reporter).The human reference genome-scale metabolic model obtained from metabolic atlas (Robinson et al., 2020) was used to generate the metabolite-gene sets. Metabolites with adjusted p-values < 0.1 were chosen as significantly regulated (Radic Shechter et al., 2021). Metabolic subsystems associated with significant reporter metabolites were extracted from reference metabolic model using in-house Perl scripts. Digital cell type quantification was performed using Estimating the Proportions of Immune and Cancer cells (EPIC) (Racle and Gfeller, 2020) algorithm for blood circulating immune cells. Mann-Whitney U test was performed to identify significantly changed cell types.
 
-## Network analysis
+#### Network analysis
 
 The co-expression network analysis was performed as described previously (Arif et al., 2021) and adapted in viral diseases (Appelberg et al., 2020; Mikaeloff et al., 2022). Networks were built by computing pairwise Spearman rank correlations between all genes after removal of non-expressed (row median FPKM <1) or lowly variant (row variance <0.1) genes and analyzed in igraph for those displaying statistically significant (adjusted p < 0.001) positive correlations. Centrality analysis was performed by computing degree centrality. Communities were identified by modularity maximization through the Leiden algorithm (Traag et al., 2019). Functional enrichment analysis of network communities was carried out using enrichr module of python package GSEAPY v0.9.16 (Subramanian et al., 2005; Chen et al., 2013) (https://github.com/zqfang/GSEApy).
 
-## Visualization
+#### Visualization
 
 Heatmaps were generated using the R/Bioconductor package ComplexHeatmapv2.2.0 (Gu et al., 2016) Bubble plots, MA plots, volcano plots, violin plots and bar plots were created using the R package ggplot2 v3.3.2. Network visualization was performed using Cytoscape v3.6.1 (https://cytoscape.org/). Venn diagrams were constructed using the online tool InteractiVenn (http://www.interactivenn.net/).
 
-## In vitro infection assays in Huh7 and SW13 cells
+### In vitro infection assays in Huh7 and SW13 cells
 
 Huh7 and SW13 cells were infected with the CCHFV in triplicate, as described by us previously (Appelberg et al., 2020; Krishnan et al., 2021). Briefly, Huh7 cells were infected with CCHFV IbAr10200 at a multiplicity of infection (MOI) of 1. After 1 hr of incubation (37 °C, 5% CO2) the inoculum was removed, the cells were washed with PBS, and 2 ml DMEM supplemented with 5% heat-inactivated FBS was added to each well. Samples were collected in triplicate at 24 and 48hpi along with controls. Due to high permissiveness, we restricted the SW13 infection of 1 MOI for 24 hr only. The infection in Huh7 24hpi was confirmed by immunofluorescence staining of CCHFV nucleoprotein-protein. The cells were fixed in ice-cold acetone-methanol (1:1) and stained using a rabbit polyclonal anti-CCHFV nucleocapsid antibody (home-made) followed by a fluorescein isothiocyanate (FITC)-conjugated anti-rabbit antibody (Thermo Fisher Scientific, US) and DAPI (Roche, US).
 
-## Tandem mass tag (TMTpro) labeled reversed-phase liquid chromatography mass-spectrometric (RPLC-MS/MS) analysis
+### Tandem mass tag (TMTpro) labeled reversed-phase liquid chromatography mass-spectrometric (RPLC-MS/MS) analysis
 
 The RPLC-MS/MS of the TMTpro labeled samples was performed as described by us recently (Appelberg et al., 2020; Chen et al., 2021). Briefly, following the protein digestion in S-Trap microcolumns (Protifi, Huntington, NY), the resulting peptides were labeled with TMTpro tags. Labeled peptides were fractionated by high pH (HpH) reversed-phase chromatography, and each fraction was analyzed on an Ultimate 3,000 UHPLC (Thermo Scientific, San Jose, CA) in a 120 min linear gradient. Proteins were searched against the SwissProt human database and CCHFV strain Nigeria/IbAr10200/1970 separately using the search engine Mascot v2.5.1 (MatrixScience Ltd, UK) in Proteome Discoverer v2.5 (Thermo Scientific, US) software allowing up to two missed cleavages.
 
-## Proteomics data analysis
+### Proteomics data analysis
 
 The raw data were first filtered to remove missing data. Proteins detected in all samples were retained for analysis resulting in 8501 proteins in the filtered dataset. The filtered data were then normalized by applying eight different methods using R/Bioconductor package NormalyzerDE v1.4.0 (http://quantitativeproteomics.org/normalyzerde). The quantile normalization was superior to other methods and was selected for further use. Differential protein expression analysis was performed using R/Bioconductor package limma v3.42.2 (https://bioconductor.org/packages/release/bioc/html/limma.html). Proteins with adjusted p-values of less than 0.05 were regarded as significant. KEGG pathway enrichment analysis was performed as mentioned in the transcriptomics section. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD022672.
 
-## RNAscope and western blot
+### RNAscope and western blot
 
 The RNAscope ISH Assays (ACD Bioscience, US) targeting IFI27 (440111, ACD Bioscience, US) and CCHFV (510621, ACD Bioscience, US) were performed as described previously ( Zhang et al., 2018b). The western blot (WB) analysis targeting RIG-I, IFIT1, ISG20, ISG15, MX1, and MX2 were performed as described by us previously (Chen et al., 2021).
 
-## Metabolic perturbation and virus infection
+### Metabolic perturbation and virus infection
 
 To inhibit glycolysis and glutaminolysis, following 1hpi (moi 0.1) the cells were treated with 2-deoxy-D-glucose (2-DG, 5 mM), and diazo-5-oxo-L-norleucine (DON, 50 uM) respectively. The concentrations were selected based on the minimal [mean (SD) cell viability, DON-SW13: 84% (4%), DON-Huh7: 78% (2%) and 2-DG-SW13: 80% (2%) or no cytotoxicity (2-DG in Huh7]) in the respective cells 24 hr following drug treatment. The cells were collected after 24hpi and the cells were lysed in Trizol reagent. RNA was extracted using the Direct-zol RNA Miniprep kit (Zymo Research, Irvine, CA) according to the manufacturer’s instructions. Viral RNA was measured by quantitative real real-time polymerase chain reaction (qRT-PCR) using TaqMan Fast Virus 1-Step Master Mix (Thermo Fisher Scientific) with primers and probe specific for the CCHFV L gene; Forward: 5-GCCAACTGTGACKGTKTTCTAYATGCT-3’, Reverse-1: 5’- CGGAAAGCCTATAAAACCTACCTTC-3’, Reverse-2: 5’-CGGAAAGCCTATAAAACCTGCCYTC-3’ and Reverse-3: 5’-CGGAAAGCCTAAAAAATCTGCCTTC-3’ and Probe FAM-CTGACAAGYTCAGCAAC –MGB. RNAse was used as endogenous control. The cycling reactions were performed using a capillary Roche LightCycler 2.0 system.

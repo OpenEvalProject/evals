@@ -9,12 +9,12 @@
 
 ### Affiliations
 
-1. https://ror.org/057zh3y96 Physical and Health Education, Graduate School of Education, The University of Tokyo Tokyo Japan
-2. https://ror.org/02qg15b79 Theoretical Sciences Visiting Program, Okinawa Institute of Science and Technology Okinawa Japan
-3. https://ror.org/04a9tmd77 Department of Psychiatry, Icahn School of Medicine at Mount Sinai New York United States
-4. https://ror.org/026vcq606 Division of Computational Science and Technology, School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology Stockholm Sweden
-5. https://ror.org/04ev03g22 Science for Life Laboratory Solna, Stockholm Sweden
-6. https://ror.org/057zh3y96 International Research Center for Neurointelligence (WPI-IRCN), The University of Tokyo Tokyo Japan
+1. Physical and Health Education, Graduate School of Education, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+2. Theoretical Sciences Visiting Program, Okinawa Institute of Science and Technology Okinawa Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))
+3. Department of Psychiatry, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+4. Division of Computational Science and Technology, School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))
+5. Science for Life Laboratory Solna, Stockholm Sweden ([ROR:04ev03g22](https://ror.org/04ev03g22))
+6. International Research Center for Neurointelligence (WPI-IRCN), The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ Next, we address other biological plausibility issues with FA-based rule. Specif
 
 ## Results
 
-## Online value-RNN with fixed random feedback
+### Online value-RNN with fixed random feedback
 
 We considered an online value-RNN in the cortico-basal ganglia circuits (Figure 1). In this model, a cortical region/population represents information of sensory observation (o) and sends it to another cortical region/population which estimates a state (x) given the sensory inputs. We approximate this cortical population as an RNN (number of RNN units was varied between 5 and 40). Neurons in the RNN learn to represent states by updating the strengths of recurrent connections A and feed-forward connections B. The activity of a population of striatal neurons that receive inputs from the RNN is supposed to learn to represent the state values (v), by learning the weights (w) of cortico-striatal connections. DA neurons in the ventral tegmental area (VTA) receive information about the value and reward (r) from the striatum (both direct and indirect pathways) and other structures, and the activity of the DA neurons, as well as released DA, represents TD-RPE (δ). The TD-RPE-representing DA is released in the striatum and also in the cortical RNN through mesocorticolimbic projections and used for modifying A, B, and w (Figure 1).
 
@@ -48,7 +48,7 @@ We assumed that a single RNN unit corresponds to a small population of neurons t
 
 In each simulation, the recurrent (A) and feed-forward connection (B) weights onto the RNN units were initialized to pseudo standard normal random numbers. As a negative control, we also conducted simulations in which these connections were not updated from initial values, referring to as the case with ‘untrained (fixed) RNN’. Notably, the value weights w (i.e., connection weights from the RNN to the striatal value unit) were still trained in the models with untrained RNN. The oVRNN models, and the model with untrained RNN, were continuously trained across trials in each task, because we considered that it was ecologically more plausible than episodic training of separate trials.
 
-## Simulation of a Pavlovian cue–reward association task with variable inter-trial intervals
+### Simulation of a Pavlovian cue–reward association task with variable inter-trial intervals
 
 First, we took a small RNN with 7 units to represent state in the cortex and simulated a Pavlovian cue–reward association task, in which a cue was followed by a reward three time steps later, and inter-trial interval (ITI, i.e., reward to next cue) was randomly chosen from 4, 5, 6, or 7 time steps (Figure 2A). Given that a single time step corresponds to 500 ms as mentioned above, three time steps from cue to reward correspond to 1.5 s, which matches the delay in the conditioning task used by Schultz et al., 1997. In this task, states after receiving cue information can be defined by time steps from the cue, and the state values of these states can be estimated by calculating the expected cumulative discounted future rewards (Sutton and Barto, 2018) through simulations; we refer to them as ‘estimated true state values’ (Figure 2B, black line). Expected TD-RPE can be calculated from these estimated true values (Figure 2B, red line).
 
@@ -62,7 +62,7 @@ We then examined our oVRNN agents, with backprop-type transported downstream wei
 
 The results above indicate that value-RNN could be trained online by fixed random feedback at least to a certain extent, although somewhat less effectively than by backprop-type feedback. Results of individual simulations shown in Figure 2H, I indicate that state values developed in oVRNNrf were largely comparable to those developed in oVRNNbp once they were successfully learned, but the success rate was smaller than oVRNNbp while still larger than the untrained RNN.
 
-## Systematic simulations and analyses
+#### Systematic simulations and analyses
 
 Next, we tested whether learning performance of oVRNNbp, oVRNNrf, and the agent with untrained fixed RNN depends on the number of RNN units (n). For a valid comparison with the previously shown cases with 7 RNN units, the learning rate for the value weights was normalized by dividing by n/7. Learning performance was measured by the mean of squares of differences between the state values developed by each of these three types of agents and the estimated true state values (Figure 2B) between cue and reward at 1000th trial. As shown in the left panel of Figure 2J, on average across simulations, oVRNNbp and oVRNNrf exhibited largely comparable performance and always outperformed the untrained RNN (p < 0.00022 in Wilcoxon rank sum test for oVRNNbp or oVRNNrf vs untrained for each number of RNN units), although oVRNNbp somewhat outperformed or underperformed oVRNNrf when the number of RNN units was small (≤10 (p < 0.049)) or large (≥25 (p < 0.045)), respectively. As the number of RNN units increased from 5 to 15 or 20, all three agents improved their performance. Additional increase of RNN units did not largely change the mean performance in oVRNNrf, while moderately decreasing it in oVRNNbp and untrained RNN. The green line in Figure 2J, right shows the performance of a special case where the random feedback in oVRNNrf was fixed to the direction of (1, 1,..., 1)T (i.e., uniform feedback) with a random coefficient, which was largely comparable to, but somewhat worse than, that for the general oVRNNrf (blue line).
 
@@ -70,21 +70,21 @@ In order to examine the dimensionality of RNN dynamics, we conducted principal c
 
 We examined how learning proceeded across trials in the models with 20 RNN units. As shown in Figure 2L, learning became largely converged by the 1000th trial, although slight improvement continued afterward. We further examined the cases with longer cue–reward delays. As shown in Figure 2M, as the delay increased, the mean squared error of state values (at 3000-th trial) increased, but the relative superiority of oVRNNbp and oVRNNrf over the model with untrained RNN remained to hold, except for cases with small number of RNN units (5) and long delay (5 or 6) (p < 0.0025 in Wilcoxon rank sum test for oVRNNbp or oVRNNrf vs untrained for each number of RNN units for each delay).
 
-## Occurrence of FA and an intuitive understanding of its mechanism
+#### Occurrence of FA and an intuitive understanding of its mechanism
 
 Next, we questioned how FA contributes to the learnability of oVRNNrf. To address this question, we used an RNN with 7 units and examined whether the value weight vector w became aligned to the random feedback vector c in oVRNNrf, by looking at the changes in the angle between these two vectors across trials. As shown in Figure 3A, this angle, averaged across simulations, decreased over trials, indicating that the value weight w indeed tended to become aligned to the random feedback c. We then examined whether better alignment of w to c related to better development of state value by looking at the relation between the angle between w and c and the value of the pre-reward state at 1000th trial. As shown in Figure 3B, there was a negative correlation such that the smaller the angle (i.e., more aligned), the larger the state value (r = −0.288, p = 0.00362), consistent with our expectation. These results indicate that the mechanism of FA, previously shown to work for supervised learning, also worked for TD learning of value weights and recurrent/feed-forward connections.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104101/elife-104101-fig3-v1.jpg)
 
-**Figure 3.:** (A) Over-trial changes in the angle between the value-weight vector w and the fixed random feedback vector c in the simulations of oVRNNrf (7 recurrent neural network [RNN] units). The solid line and the dashed lines indicate the mean ± SD across 100 simulations, respectively. (B) Negative correlation (r = −0.288, p = 0.00362) between the angle between w and c (horizontal axis) and the value of the pre-reward state (vertical axis) at 1000th trial. The dots indicate the results of individual simulations, and the line indicates the regression line. (C) Angle between the hypothetical change in  in cases x(t)=f(Ax(t−1),Bo(t−1))\begin{document}$x\left (t\right)=f\left (Ax\left (t- 1\right),{\rm B}o\left (t- 1\right)\right)$\end{document}A and B were replaced with their updated ones, multiplied with the sign of TD-RPE (sign(δ(t))), and the fixed random feedback vector c across time steps. The black thick line and the gray lines indicate the mean ± SD across 100 simulations, respectively (same applied to (D)). (D) Multiplication of TD-RPEs in successive trials at individual states (top: cue, fourth from the top: reward). Positive or negative value indicates that TD-RPEs in successive trials have the same or different signs, respectively. (E) Left: RNN trajectories mapped onto the primary and secondary principal components (horizontal and vertical axes, respectively) in three successive trials (red, blue, and green lines (heavily overlapped)) at different phases in an example simulation (10th to 12th, 300th to 302nd, 600th to 602nd, and 900th to 902nd trials from top to bottom). The crosses and circles indicate the cue and reward states, respectively. Right: State values (black lines) and TD-RPEs (red lines) at 11th, 301st, 601st, and 901st trials.
+**Figure 3.:** (A) Over-trial changes in the angle between the value-weight vector w and the fixed random feedback vector c in the simulations of oVRNNrf (7 recurrent neural network [RNN] units). The solid line and the dashed lines indicate the mean ± SD across 100 simulations, respectively. (B) Negative correlation (r = −0.288, p = 0.00362) between the angle between w and c (horizontal axis) and the value of the pre-reward state (vertical axis) at 1000th trial. The dots indicate the results of individual simulations, and the line indicates the regression line. (C) Angle between the hypothetical change in $x(t)=f(Ax(t−1),Bo(t−1))$ in cases A and B were replaced with their updated ones, multiplied with the sign of TD-RPE (sign(δ(t))), and the fixed random feedback vector c across time steps. The black thick line and the gray lines indicate the mean ± SD across 100 simulations, respectively (same applied to (D)). (D) Multiplication of TD-RPEs in successive trials at individual states (top: cue, fourth from the top: reward). Positive or negative value indicates that TD-RPEs in successive trials have the same or different signs, respectively. (E) Left: RNN trajectories mapped onto the primary and secondary principal components (horizontal and vertical axes, respectively) in three successive trials (red, blue, and green lines (heavily overlapped)) at different phases in an example simulation (10th to 12th, 300th to 302nd, 600th to 602nd, and 900th to 902nd trials from top to bottom). The crosses and circles indicate the cue and reward states, respectively. Right: State values (black lines) and TD-RPEs (red lines) at 11th, 301st, 601st, and 901st trials.
 
-How did the FA mechanistically occur? We made an attempt to obtain an intuitive understanding. Assume that positive TD-RPE (δ(t)>0)\begin{document}$(\delta (t)\gt 0)$\end{document} is generated in a state, S(=x(t))\begin{document}$S(=\boldsymbol x(t))$\end{document} in a trial. Because of the update rule for w(w←w+aδ(t)x(t))\begin{document}$\boldsymbol w (\boldsymbol w\leftarrow \boldsymbol w+a\delta (t)\boldsymbol x (t))$\end{document} (Equation 1.9 in the Methods), w is updated in the direction of x(t)\begin{document}$\boldsymbol x (t)$\end{document}. Next, what is the effect of updates of recurrent/feed-forward connections (A and B) on x? For simplicity, here we consider the case where observation is null (o = 0) and so x(t)=f(Ax(t−1))\begin{document}$\boldsymbol x(t)=\boldsymbol f({\boldsymbol {\rm A}\boldsymbol x}(t- 1))$\end{document} holds (but a similar argument can be done in the case where observation is not null). If A is replaced with its updated one, it can be calculated that the ith element of Ax(t−1)\begin{document}$\boldsymbol {Ax}\left (t- 1\right)$\end{document} will hypothetically change by ci × (a positive value) (technical note: the value is aδ(t){Σjxj(t−1)2}(0.5+xi(t))(0.5−xi(t))\begin{document}$a\delta (t) \{\Sigma _{j}x_{j}(t- 1)^{2} \} (0.5+x_{i} (t)) (0.5- x_{i}(t))$\end{document} (cf., Equation 1.10) which is positive unless x(t−1)=0\begin{document}$x(t- 1)=\boldsymbol 0$\end{document}), and therefore the vector Ax(t−1)\begin{document}$\boldsymbol {{\rm A}x}(t- 1)$\end{document} as a whole will hypothetically change by a vector that is in a relatively close angle with c, or more specifically, is in the same quadrant as (and thus within at maximum 90° from) c (e.g, [c1 c2 c3]T and [0.5c1 1.2c2 0.8c3]T). Then, because f is a monotonically increasing sigmoidal function, x(t)=f(Ax(t−1))\begin{document}$\boldsymbol x\left (t\right)=f\left (\boldsymbol {Ax}\left (t- 1\right)\right)$\end{document} will also hypothetically change by a vector that is in a relatively close angle with c. This was indeed the case in our simulations as shown in Figure 3C, which plotted the angle between the hypothetical change in x(t)=f(Ax(t−1),Bo(t−1))\begin{document}$\boldsymbol x(t)=\boldsymbol f (\boldsymbol {Ax} (t- 1),\boldsymbol {Bo} (t- 1))$\end{document} in cases A and B were replaced with their updated ones, multiplied with the sign of TD-RPE (sign(δ(t))), and the fixed random feedback vector c across time steps.
+How did the FA mechanistically occur? We made an attempt to obtain an intuitive understanding. Assume that positive TD-RPE $(\delta(t)>0)$ is generated in a state, $S(=x(t))$ in a trial. Because of the update rule for $w(w←w+a\delta(t)x(t))$ (Equation 1.9 in the Methods), w is updated in the direction of $x(t)$. Next, what is the effect of updates of recurrent/feed-forward connections (A and B) on x? For simplicity, here we consider the case where observation is null (o = 0) and so $x(t)=f(Ax(t−1))$ holds (but a similar argument can be done in the case where observation is not null). If A is replaced with its updated one, it can be calculated that the ith element of $Ax(t−1)$ will hypothetically change by ci × (a positive value) (technical note: the value is $a\delta(t){Σ_{j}x_{j}(t−1)^{2}}(0.5+x_{i}(t))(0.5−x_{i}(t))$ (cf., Equation 1.10) which is positive unless $x(t−1)=0$), and therefore the vector $Ax(t−1)$ as a whole will hypothetically change by a vector that is in a relatively close angle with c, or more specifically, is in the same quadrant as (and thus within at maximum 90° from) c (e.g, [c1 c2 c3]T and [0.5c1 1.2c2 0.8c3]T). Then, because f is a monotonically increasing sigmoidal function, $x(t)=f(Ax(t−1))$ will also hypothetically change by a vector that is in a relatively close angle with c. This was indeed the case in our simulations as shown in Figure 3C, which plotted the angle between the hypothetical change in $x(t)=f(Ax(t−1),Bo(t−1))$ in cases A and B were replaced with their updated ones, multiplied with the sign of TD-RPE (sign(δ(t))), and the fixed random feedback vector c across time steps.
 
-In this way, at state S where TD-RPE is positive, w is updated in the direction of x(t)\begin{document}$\boldsymbol x\left (t\right)$\end{document}, and x(t)\begin{document}$\boldsymbol x\left (t\right)$\end{document} will hypothetically change by a vector that is in a relatively close angle with c if A is replaced with its updated one. Then, if the update of w and the hypothetical change in x(t)\begin{document}$\boldsymbol x\left (t\right)$\end{document} due to the update of A could be integrated, w would become aligned to c (if TD-RPE is instead negative, w is updated in the opposite direction of x(t)\begin{document}$\boldsymbol x\left (t\right)$\end{document}, and x(t)\begin{document}$\boldsymbol x\left (t\right)$\end{document} will hypothetically change by a vector that is in a relatively close angle with −c, and so the same story holds in the end).
+In this way, at state S where TD-RPE is positive, w is updated in the direction of $x(t)$, and $x(t)$ will hypothetically change by a vector that is in a relatively close angle with c if A is replaced with its updated one. Then, if the update of w and the hypothetical change in $x(t)$ due to the update of A could be integrated, w would become aligned to c (if TD-RPE is instead negative, w is updated in the opposite direction of $x(t)$, and $x(t)$ will hypothetically change by a vector that is in a relatively close angle with −c, and so the same story holds in the end).
 
-There is, however, a caveat regarding how the update of w and the hypothetical change in x(t)\begin{document}$\boldsymbol x\left (t\right)$\end{document} can be integrated. Although technical, here we briefly describe the caveat and a possible solution for it. The updates of w and A use TD-RPE, which are calculated based on v(t)=wTx(t)\begin{document}$v(t)=\boldsymbol w^{T}\boldsymbol x (t)$\end{document} and v(t+1)=wTx(t+1)\begin{document}$v (t+1)=w^{T}\boldsymbol x (t+1)$\end{document}, and so x(t)\begin{document}$\boldsymbol x(t)$\end{document} and x(t+1)\begin{document}$\boldsymbol x(t+1)$\end{document} should already be determined beforehand. Therefore, the hypothetical change in x(t)\begin{document}$\boldsymbol x(t)$\end{document} due to the update of A, described in the above, does not actually occur (this was why we mentioned ‘hypothetical’) and thus cannot be integrated with the update of w. Nevertheless, integration could still occur across successive trials, at least to a certain extent. Specifically, although TD-RPEs at S in successive trials would generally differ from each other, they would still tend to have the same sign, as was indeed the case in our simulations (Figure 3D). Also, although the trajectories of RNN activity (x) in successive trials would differ, we could expect a certain level of similarity because the RNN is entrained by observation-representing inputs, again as was indeed the case in our example simulation (Figure 3E). Then, the hypothetical change in x(t)\begin{document}$\boldsymbol x\left (t\right)$\end{document} due to the update of A, considered above, could become a reality in the next trial, to a certain extent, and could thus be integrated into the update of w, explaining the occurrence of FA.
+There is, however, a caveat regarding how the update of w and the hypothetical change in $x(t)$ can be integrated. Although technical, here we briefly describe the caveat and a possible solution for it. The updates of w and A use TD-RPE, which are calculated based on $v(t)=w^{T}x(t)$ and $v(t+1)=w^{T}x(t+1)$, and so $x(t)$ and $x(t+1)$ should already be determined beforehand. Therefore, the hypothetical change in $x(t)$ due to the update of A, described in the above, does not actually occur (this was why we mentioned ‘hypothetical’) and thus cannot be integrated with the update of w. Nevertheless, integration could still occur across successive trials, at least to a certain extent. Specifically, although TD-RPEs at S in successive trials would generally differ from each other, they would still tend to have the same sign, as was indeed the case in our simulations (Figure 3D). Also, although the trajectories of RNN activity (x) in successive trials would differ, we could expect a certain level of similarity because the RNN is entrained by observation-representing inputs, again as was indeed the case in our example simulation (Figure 3E). Then, the hypothetical change in $x(t)$ due to the update of A, considered above, could become a reality in the next trial, to a certain extent, and could thus be integrated into the update of w, explaining the occurrence of FA.
 
-## Simulation of tasks with probabilistic structures of reward timing/existence
+#### Simulation of tasks with probabilistic structures of reward timing/existence
 
 Previous work (Starkweather et al., 2017) examined the response of DA neurons in cue–reward association tasks in which reward timing was probabilistically determined (early in some trials but late in other trials). There were two tasks, which were largely similar, but there was a key difference that reward was given in all the trials in one task, whereas reward was omitted in some randomly determined trials in another task. Starkweather et al., 2017 found that the DA response to later reward was smaller than the response to earlier reward in the former task, presumably reflecting the animal’s belief that delayed reward will surely come, but the opposite was the case in the latter task, presumably because the animal suspected that reward was omitted in that trial. Starkweather et al., 2017 then showed that such response patterns could be explained if DA encoded TD-RPE under particular state representations that incorporated the probabilistic structures of the task (called the ‘belief state’). In that study, such state representations were ‘handcrafted’ by the authors, but the subsequent work (Hennig et al., 2023) showed that the original value-RNN with backprop (BPTT) could develop similar representations and reproduce the experimentally observed DA patterns.
 
@@ -92,13 +92,13 @@ In order to examine if our online value-RNN with fixed random feedback could als
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/104101/elife-104101-fig4-v1.jpg)
 
-**Figure 4.:** Starkweather et al., 2017) and modeled by the original value-recurrent neural network (RNN) with Backpropagation-Through-Time (BPTT) (Hennig et al., 2023).(A) Simulated two tasks, in which reward was given at the early or the late timing with equal probabilities in all the trials (task 1) or 60% of trials (task 2). (B) (a) Top: Trial types. Two trial types (with early reward and with late reward) in task 1 and three trial types (with early reward, with late reward, and without reward) in task 2. Bottom: Value of each timing in each trial type estimated through simulations. (b) Agent’s probabilistic belief about the current trial type, in the case where agent was in fact in the trial with early reward (top row), the trial with late reward (second row), or the trial without reward (third row in task 2). (c) Top: States defined by considering the probabilistic beliefs at each timing from cue. Bottom: True state/timing values calculated by taking (mathematical) expected value of the estimated value of each timing in each trial type. (C) Expected TD-RPE calculated from the estimated true values of the states/timings for task 1 (left) and task 2 (right). Red lines: case where reward was given at the early timing, blue lines: case where reward was given at the late timing. It is expected that TD-RPE at early reward is larger than TD-RPE at late reward in task 1, whereas the opposite is the case in task 2, as indicated by the inequality signs. (D–H) TD-RPEs at the latest trial within 1000 trials in which reward was given at the early timing (red lines) or the late timing (blue lines), averaged across 100 simulations (error bars indicating ± SEM across simulations), in the different types of agent: TD-RL agent having punctate state representation and state values without (D) or with (E) continuation between trials; (F) oVRNNbp. The number of RNN units was 12 (same applied to (G, H)); (G) oVRNNrf; (H) agent with untrained RNN. The p values are for paired t-test between TD-RPE at early reward and TD-RPE at late reward (100 pairs, two-tailed), and the d values are Cohen’s d using an average variance and their signs are with respect to the expected patterns shown in (C) (same applied to Figures 8 and 9C).
+**Figure 4.:** (A) Simulated two tasks, in which reward was given at the early or the late timing with equal probabilities in all the trials (task 1) or 60% of trials (task 2). (B) (a) Top: Trial types. Two trial types (with early reward and with late reward) in task 1 and three trial types (with early reward, with late reward, and without reward) in task 2. Bottom: Value of each timing in each trial type estimated through simulations. (b) Agent’s probabilistic belief about the current trial type, in the case where agent was in fact in the trial with early reward (top row), the trial with late reward (second row), or the trial without reward (third row in task 2). (c) Top: States defined by considering the probabilistic beliefs at each timing from cue. Bottom: True state/timing values calculated by taking (mathematical) expected value of the estimated value of each timing in each trial type. (C) Expected TD-RPE calculated from the estimated true values of the states/timings for task 1 (left) and task 2 (right). Red lines: case where reward was given at the early timing, blue lines: case where reward was given at the late timing. It is expected that TD-RPE at early reward is larger than TD-RPE at late reward in task 1, whereas the opposite is the case in task 2, as indicated by the inequality signs. (D–H) TD-RPEs at the latest trial within 1000 trials in which reward was given at the early timing (red lines) or the late timing (blue lines), averaged across 100 simulations (error bars indicating ± SEM across simulations), in the different types of agent: TD-RL agent having punctate state representation and state values without (D) or with (E) continuation between trials; (F) oVRNNbp. The number of RNN units was 12 (same applied to (G, H)); (G) oVRNNrf; (H) agent with untrained RNN. The p values are for paired t-test between TD-RPE at early reward and TD-RPE at late reward (100 pairs, two-tailed), and the d values are Cohen’s d using an average variance and their signs are with respect to the expected patterns shown in (C) (same applied to Figures 8 and 9C).
 
 In these tasks, states can be defined in the following way. There were two types of trials, with early or late reward, in task 1, and additionally one more type of trial, without reward, in task 2 (Figure 4Ba, top). For each timing after receival of cue information in each of these trial types, its value can be estimated through simulations (Figure 4Ba, bottom). The agent could not know the current trial type until receiving reward at the early timing or the late timing or receiving no reward at both timings. Until these timings, the agent could have probabilistic belief about the current trial type, for example, 50% in the trial with early reward and 50% in the trial with late reward (in task 1) or 30% in the trial with early reward, 30% in the trial with late reward, and 40% in the trial without reward (in task 2) (Figure 4Bb). States of the timings after receival of cue information can be defined by incorporating these probabilistic beliefs at each timing (Figure 4Bc, top). Their true values can be calculated by taking (mathematical) expected value of the estimated values of each timing in each trial type (Figure 4Bc, bottom). Expected TD-RPE calculated from the estimated true values (Figure 4C) exhibited features that matched the conjecture mentioned above: in task 1, TD-RPE upon reception of late reward, which was actually 0, was smaller than TD-RPE upon reception of early reward, whereas in task 2, TD-RPE upon reception of late reward was larger than TD-RPE upon reception of early reward (as indicated by the inequality signs on Figure 4C).
 
 As mentioned above, the previous work (Starkweather et al., 2017) has shown that VTA DA neurons exhibited similar activity patterns to the abovementioned TD-RPE patterns, and the subsequent work (Hennig et al., 2023) has shown that the original value-RNN with backprop (BPTT) could reproduce such TD-RPE patterns. We examined how our oVRNNbp and oVRNNrf (with 12 RNN units) behaved in our simulated two tasks. oVRNNbp developed the expected TD-RPE patterns, that is, smaller TD-RPE upon late than early timing in task 1 but opposite pattern in task 2 (Figure 4F), and oVRNNrf also developed such patterns, although the effect size for task 1 was small (Figure 4G). These results indicate that online value-RNN could learn the probabilistic structures of the tasks even with fixed random feedback. By contrast, agents with punctate state representation without or with continuous value update across trials (Figure 4D, E), as well as agents with untrained fixed RNN (Figure 4H), could not develop such patterns well.
 
-## Online value-RNN with further biological constraints
+### Online value-RNN with further biological constraints
 
 So far, the activities of neurons in the RNN (x) were initialized to pseudo standard normal random numbers, and thereafter took numbers in the range between −0.5 and 0.5 that was the range of the sigmoidal input-output function. The value weights (w) could also take both positive and negative values since no constraint was imposed. The fixed random feedback in oVRNNrf (c) was generated by pseudo standard normal random numbers, and so could also be positive or negative. Negativity of the neurons’ activities and the value weights could potentially be regarded as inhibitory or smaller-than-baseline quantities. However, because neuronal firing rate is non-negative and cortico-striatal projections are excitatory, it would be biologically more plausible to assume that the activities of neurons in the RNN and the value weights are non-negative. As for the fixed random feedback, if it is negative, the update rule becomes anti-Hebbian under positive TD-RPE, and so assuming non-negativity would be plausible since Hebbian property has been suggested for rapid plasticity of cortical synapses (Feldman, 2009) (see Appendix 1.2 for possible consideration of behavioral time-scale synaptic plasticity (BTSP) in our models). Regarding the connection weights in/onto the RNN, here we keep the original assumption that they could be positive or negative because it could be an approximate description of recurrent neuronal network with both recurrent excitation and inhibition. Later (the ‘Models with excitatory and inhibitory units’ section) we will examine extended models that incorporate excitatory and inhibitory units and conform to Dale’s law.
 
@@ -116,7 +116,7 @@ We examined how these revised models, in comparison with agents with untrained R
 
 **Figure 6.:** State values (black lines) and TD-RPEs (red lines) at the 1500th trial in oVRNNbp-rev (A), oVRNNrf-bio (B), agent with naive untrained RNN (i.e., randomly initialized RNN) with x and w constrained to be non-negative (C), and agent with untrained RNN with connections shuffled from those learned in oVRNNrf-bio and also with non-negative x and w (D). The number of RNN units was 12 in all the cases. Error bars indicate mean ± SEM across 100 simulations; same applied to the followings unless otherwise mentioned. The right histograms show the across-simulation distribution of the value of the pre-reward state in each model. The vertical black dashed lines in the histograms indicate the true value of the pre-reward state (estimated through simulations). (E) Left: Mean squared value-error at the 1500th trial in oVRNNbp-rev (red line), oVRNNrf-bio (blue line), agent with naive untrained RNN (gray solid line: partly out of view), and agent with shuffled untrained RNN (gray dotted line) when the number of RNN units (n) was varied from 5 to 40. Learning rate for value weights was normalized by dividing by n/12 (same applied to the followings). Right: Mean squared value-error in oVRNNrf-bio (blue line: same data as in the left panel), oVRNN-bio with random-magnitude uniform feedback (green line), oVRNN-bio with fixed-magnitude (0.5) uniform feedback (light blue line), and oVRNNrf-rev where the update rule of oVRNNrf-bio was changed back to the original one (blue dotted line). (F) Left: Mean of the elements of the recurrent and feed-forward connections (at 1500th trial) of oVRNNbp-rev (red line), oVRNNrf-bio (blue line), and naive untrained RNN (gray solid line). Right: Mean of the elements of the recurrent and feed-forward connections of oVRNNrf-bio (blue line: same data as in the left panel), oVRNN-bio with random-magnitude uniform feedback (green line), oVRNN-bio with fixed-magnitude (0.5) uniform feedback (light blue line), and oVRNNrf-rev (blue dotted line). (G) Learned state values (left panel) and TD-RPEs (right panel) in oVRNNbp-rev (red lines) and oVRNNrf-bio (blue lines) in the cases with 40 RNN units, compared to the estimated true values (black lines). (H) Log of contribution ratios of the principal components of the time series (for 1500 trials) of RNN activities in each model with 20 RNN units. (I) Mean squared value-error in each model with 20 RNN units across trials. (J) Mean squared value-error at 3000th trial in each model in the cases where the cue–reward delay was 3, 4, 5, or 6 time steps (top to bottom panels). Left and right panels show the results with default learning rates and halved learning rates, respectively.
 
-## Systematic simulations and analyses
+#### Systematic simulations and analyses
 
 We varied the number of RNN units (n), with the learning rate for value weights normalized by dividing by n/12, and compared the performance (mean of squared errors of state values between cue and reward at 1500th trial) of oVRNNbp-rev and oVRNNrf-bio, in comparison with models with naive or shuffled untrained RNN. As shown in the left panel of Figure 6E, oVRNNbp-rev and oVRNNrf-bio exhibited largely comparable performance and always outperformed the models with untrained RNN (p < 2.5 × 10−12 in Wilcoxon rank sum test for oVRNNbp-rev or oVRNNrf-bio vs naive or shuffled untrained for each number of RNN units), although oVRNNbp-rev somewhat outperformed or underperformed oVRNNrf-bio when the number of RNN units was small (≤10 (p < 0.00029)) or large (≥25 (p < 3.7 × 10−6)), respectively (Figure 6G shows the learned state values and TD-RPEs in oVRNNbp-rev and oVRNNrf-bio in the cases with 40 RNN units, compared to the estimated true values). Remarkably, oVRNNrf-bio generally achieved better performance than both oVRNNbp and oVRNNrf, which did not have the non-negative constraint (Wilcoxon rank sum test, vs oVRNNbp: p < 7.8 × 10−6 for 5 or ≥25 RNN units; vs oVRNNrf: p < 0.021 for ≤10 or≥20 RNN units).
 
@@ -128,13 +128,13 @@ Figure 6H shows contribution ratios of PCs of the time series of RNN activities 
 
 **Figure 7.:** TD-RPEs at the latest trial within 2000 trials in which reward was given at the early timing (red lines) or the late timing (blue lines) in task 1 (left) and task 2 (right), averaged across 100 simulations (error bars indicating ± SEM across simulations), are shown for the four types of agent: (A) oVRNNbp-rev; (B) oVRNNrf-bio; (C) agent with naive untrained RNN; (D) agent with untrained RNN with connections shuffled from those learnt in oVRNNrf-bio. The number of RNN units was 20 for all the cases.
 
-## Loose alignment and FA
+#### Loose alignment and FA
 
 Coming back to the original cue–reward association task, we examined how the angle between the value weights (w) and the random feedback (c) changed across trials in oVRNNrf-bio with 12 RNN units. As shown in Figure 8A, the angle was on average smaller than 90°, which was the chance-level angle in the case without non-negative constraint, from the beginning, while there was no further alignment over trials. This could be understood as follows. Because both the value weights (w) and the random feedback (c) were now constrained to be non-negative, these two vectors were ensured to be in a relatively close angle (i.e., in the same quadrant) from the beginning. By virtue of this loose alignment, the random feedback could act similarly to backprop-type transported-weight feedback, even without further alignment.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/104101/elife-104101-fig8-v1.jpg)
 
-**Figure 8.:** w) and the random feedback (c) in oVRNNrf-bio (with 12 recurrent neural network [RNN] units).(A) Over-trial changes in the angle between the value weights w and the fixed random feedback c. The solid line and the dashed lines indicate the mean ± SD across 100 simulations, respectively. (B) No correlation between the w–c angle (horizontal axis) and the value of the pre-reward state (vertical axis) at 1500th trial (r = 0.0117, p = 0.908). The dots indicate the results of individual simulations. (C) Correlation between the w–c angle at kth trial (horizontal axis) and the value of the cue, post-cue, pre-reward, or reward state (top-bottom panels) at 500th trial across 1000 simulations. The solid lines indicate the correlation coefficient, and the short vertical bars at the top of each panel indicate the cases in which p-value was less than 0.05. (D) Distribution of the angle between two 12-dimensional vectors when the elements of both vectors were drawn from [0 1] uniform pseudo-random numbers (a) or when one of the vectors was replaced with [1 0 0... 0] (i.e., on the edge of the non-negative quadrant) (b) or [1 1 0... 0] (i.e., on the boundary of the non-negative quadrant) (c). (E) Across-simulations histograms of elements of w in oVRNNrf-bio with 12 RNN units ordered from the largest to smallest ones after 1500 trials when there was no value-weight-decay (a) or there was value-weight-decay with decay rate (per time step) of 0.001 (b) or 0.002 (c). The error bars indicate the mean ± SEM across 100 simulations. (F) Over-trial changes in the angle between the value weights w and the fixed random feedback c when there was value-weight decay with decay rate (per time step) of 0.001 (top panel) or 0.002 (bottom panel). Notations are the same as those in (A). (G) Mean squared value-error at the 1500th trial in oVRNNrf-bio with 12 RNN units with the rate of value-weight decay varied (horizontal axis). The error bars indicate the mean ± SEM across 100 simulations.
+**Figure 8.:** (A) Over-trial changes in the angle between the value weights w and the fixed random feedback c. The solid line and the dashed lines indicate the mean ± SD across 100 simulations, respectively. (B) No correlation between the w–c angle (horizontal axis) and the value of the pre-reward state (vertical axis) at 1500th trial (r = 0.0117, p = 0.908). The dots indicate the results of individual simulations. (C) Correlation between the w–c angle at kth trial (horizontal axis) and the value of the cue, post-cue, pre-reward, or reward state (top-bottom panels) at 500th trial across 1000 simulations. The solid lines indicate the correlation coefficient, and the short vertical bars at the top of each panel indicate the cases in which p-value was less than 0.05. (D) Distribution of the angle between two 12-dimensional vectors when the elements of both vectors were drawn from [0 1] uniform pseudo-random numbers (a) or when one of the vectors was replaced with [1 0 0... 0] (i.e., on the edge of the non-negative quadrant) (b) or [1 1 0... 0] (i.e., on the boundary of the non-negative quadrant) (c). (E) Across-simulations histograms of elements of w in oVRNNrf-bio with 12 RNN units ordered from the largest to smallest ones after 1500 trials when there was no value-weight-decay (a) or there was value-weight-decay with decay rate (per time step) of 0.001 (b) or 0.002 (c). The error bars indicate the mean ± SEM across 100 simulations. (F) Over-trial changes in the angle between the value weights w and the fixed random feedback c when there was value-weight decay with decay rate (per time step) of 0.001 (top panel) or 0.002 (bottom panel). Notations are the same as those in (A). (G) Mean squared value-error at the 1500th trial in oVRNNrf-bio with 12 RNN units with the rate of value-weight decay varied (horizontal axis). The error bars indicate the mean ± SEM across 100 simulations.
 
 We examined if the angle between the value weights (w) and the random feedback (c) at the 1500th trial was associated with the developed value of pre-reward state across simulations, but found no association (r = 0.0117, p = 0.908) (Figure 8B). We then examined if the w–c angle at earlier trials (2nd to 500th trials) was associated with the developed values at 500th trial, with the number of simulations increased to 1000 so that small correlation could be detected. We found that the w–c angle at initial trials (2nd to around 10th trials) was negatively correlated with the developed values of the reward state and preceding states at 500th trial (Figure 8C). As for the reward state, negative correlation at around 100th to 300th trial was also observed. These results suggest that better alignment of w and c at initial and early timings was associated with better development of state values, in line with the conjecture that loose alignment of w and c coming from the non-negative constraint supported learning. It should be noted, however, that there were cases where positive (although small) correlation was observed. Its exact reason is not sure, but it could be related to the fact that the largeness of developed values or the speed of value development does not necessarily mean good learning.
 
@@ -142,7 +142,7 @@ As mentioned above, while the angle between w and c was on average smaller than 
 
 We considered that if a slight decay (forgetting) of value weights (cf., Morita and Kato, 2014; Kato and Morita, 2016; Kato and Morita, 2025) was assumed, such a prominent growth of a few elements of w may be mitigated and alignment of w to c, beyond the initial loose alignment because of the non-negative constraint, may occur. These conjectures were indeed confirmed by simulations (Figure 8Eb, c, F). The mean squared value-error slightly increased when the value-weight decay was assumed (Figure 8G); however, presumably reflecting a decrease in developed values and a deterioration of learning because of the decay.
 
-## Models with excitatory and inhibitory units
+### Models with excitatory and inhibitory units
 
 As mentioned above, in oVRNNbp-rev and oVRNNrf-bio, the connection weights in/onto the RNN could be both positive and negative, against Dale’s law. Recent studies started to examine neural networks incorporating Dale’s law (Cornford et al., 2021; Li et al., 2023) or other connectivity features (Mastrogiuseppe and Ostojic, 2018). So we examined extended models, named oVRNNbp-rev-ei and oVRNNrf-bio-ei, which incorporated excitatory E-units, modeling pyramidal cells, and inhibitory I-units, modeling fast-spiking (FS) cells (Figure 9A). Cortical excitation can operate slowly due to slow synaptic dynamics (Mongillo et al., 2008; Morishima et al., 2011) (see the description about the time step in the Methods for details). In contrast, inhibition from FS cells to pyramidal cells may operate more quickly, since it was shown (Morita et al., 2008) that observed phases of regular-spiking (RS, putatively pyramidal) cells’ and FS cells’ spikes (Hasenstaub et al., 2005) could be explained by fast FS → RS inhibition and temporally distributed recurrent excitation.
 
@@ -156,7 +156,7 @@ We examined how these extended models behaved in the Pavlovian task and the prob
 
 As such, the extended models with E- and I-units showed largely similar behaviors to those of the original oVRNNbp-rev and oVRNNrf-bio with mixed positive and negative RNN weights. This is actually reasonable, because combining the update equations for I- and E-units in the extended models (top two equations in Figure 9A) results in an equation largely similar to the update equation for RNN units in the original models (top equation in Figure 1). In other words, the original models with mixed positive and negative RNN weights could be regarded as a simplified description of the models with E- and I-units under the abovementioned assumptions. Therefore, for simplicity, we will return to mixed positive and negative RNN weights in the following.
 
-## Task with distractor cue
+#### Task with distractor cue
 
 So far, we have examined situations where there existed a reward and a cue associated with the reward. However, in real environments, it is likely that there exist both reward-associated and non-associated (distractor) cues, and the agent does not initially know which cue is associated with reward and which is not. Learning cue–reward association in such distractor-existing environments is generally not easy for biologically constrained models, and it has been addressed by only a few previous works (Cone et al., 2024). We examined whether our biologically constrained oVRNNrf-bio, as well as oVRNNbp-rev, could learn the cue–reward association under the presence of distractor cue. We considered a simple case where there existed a distractor cue, which was presented to the agent with a certain probability at every time step, between cue–reward duration or reward–cue duration (i.e., ITI) or simultaneously with cue or reward. As for the agent’s models, we assumed that the observation inputs had an additional element (dimension), which was set to 1 when the distractor was presented and 0 when not (Figure 10A).
 
@@ -166,7 +166,7 @@ So far, we have examined situations where there existed a reward and a cue assoc
 
 We examined how oVRNNbp-rev, oVRNNrf-bio, and the models with untrained RNN behaved in the modified Pavlovian task with a distractor cue, which was presented with probability 0, 0.1, 0.2, or 0.3 at every time step (Figure 10B–E, left panels). As a result, even when there was such a distractor cue, oVRNNbp-rev and oVRNNrf-bio could still learn the state values better than the models with naive or shuffled untrained RNN (p < 1.7 × 10−10 in Wilcoxon rank sum test for oVRNNbp-rev or VRNNrf-bio vs naive or shuffled untrained for each number of RNN units for each level of distractor probability) (Figure 10C–E, middle panels), although the accuracy moderately decreased compared with the case without distractor cue (Figure 10B, middle panel). These results suggest robustness of the learning ability of oVRNNrf-bio against distractor in realistic situations. We further examined how the models with E- and I-units behaved in the task with a distractor cue and confirmed that even in the presence of a distractor cue, oVRNNbp-rev-ei and oVRNNrf-bio-ei could learn the state values better than the models with naive or shuffled untrained RNN (p < 3.2 × 10−8 in Wilcoxon rank sum test for oVRNNbp-rev-ei or oVRNNrf-bio-ei vs naive or shuffled untrained for each number of RNN units for each level of distractor probability) (Figure 10B–E, right panels).
 
-## Incorporation of action selection
+#### Incorporation of action selection
 
 Ultimate purpose of animals and RL agents is to optimize their policy, that is, probability of action selection at each state to maximize rewards. Therefore, we examined if our models could be extended to incorporate action selection. In reference to the proposals that algorithms akin to the actor-critic method may be implemented in the brain (Bellec et al., 2020; Sutton and Barto, 1998; Takahashi et al., 2008), we considered extended models oVRNNbp-rev-ac and oVRNNrf-bio-ac, which incorporated an actor-critic architecture (Figure 11A). Specifically, each RNN unit was assumed to connect to not only the state-value (v)-representing unit in the ventral striatum but also the action-value (qk)-representing units in the dorsal striatum. Their non-negative weights (ukj) represented (as a vector) action preferences, which slightly decayed with time so as not to unboundedly increase.
 
@@ -182,7 +182,7 @@ We examined how these models (oVRNNbp-rev-ac and oVRNNrf-bio-ac) and control mod
 
 We have shown that state representation and value can be learned online in the RNN and its readout by using random feedback instead of biologically unavailable downstream weights. This was achieved through FA, and we have presented an intuitive understanding of its mechanism. We have further shown that the non-negative constraint realizes loose alignment of the forward weights and feedback from the beginning, which appeared to support learning.
 
-## Roles of DA
+### Roles of DA
 
 Midbrain DA neurons project to both striatum and cortex, including the prefrontal cortex (Williams and Goldman-Rakic, 1998) and the hippocampus (Broussard et al., 2016). As for striatal DA, DA-dependent cortico-striatal plasticity is considered to implement TD-RPE-based value update (Reynolds et al., 2001; Samejima et al., 2005). By contrast, while cortical DA has been implicated in working memory (Brozoski et al., 1979; Sawaguchi and Goldman-Rakic, 1991; Durstewitz et al., 2000; Brunel and Wang, 2001), decision making (Floresco and Magyar, 2006), and aversive memory (Tsetsenis et al., 2021), its role as TD-RPE remains unclear, despite findings suggesting that cortical DA does encode (TD-)RPE (O’Doherty et al., 2003; Takahashi et al., 2011; Starkweather et al., 2018; Takahashi et al., 2023) and modulate plasticity (Otani et al., 2003; Sayegh et al., 2024). Learnability of our biologically constrained online value-RNN suggests that TD-RPE-encoding cortical DA modulates plasticity of RNN so that appropriate state representation can be learned.
 
@@ -192,7 +192,7 @@ VTA DA neurons also project to the basolateral amygdala (BLA) (Beier et al., 201
 
 There are many DA-related mechanisms that were not incorporated into our models, including the distinctions of D1-direct and D2-indirect pathways (Gerfen and Surmeier, 2011; Collins and Frank, 2014; Mikhael and Bogacz, 2016; Morita and Kawaguchi, 2018; Lowet et al., 2025) and cortical projections to them (Wall et al., 2013; Morita, 2014; Hooks et al., 2018; Morita et al., 2019), as well as mechanisms underlying TD-RPE encoding (cf., Morita and Kawaguchi, 2018; Tian et al., 2016) or learning for it (cf., Cone et al., 2024). Future studies are expected to incorporate these.
 
-## Predictions and implications of our models
+### Predictions and implications of our models
 
 oVRNNrf predicts that the feedback vector c and the value-weight vector w become gradually aligned, while oVRNNrf-bio predicts that c and w are loosely aligned from the beginning. Element of c could be measured as the magnitude of pyramidal cell’s response to DA stimulation. The element of w corresponding to a given pyramidal cell could be measured, if striatal neuron that receives input from that pyramidal cell can be identified (although technically demanding), as the magnitude of response of the striatal neuron to activation of the pyramidal cell. Then, the abovementioned predictions could be tested by (1) identifying cortical, striatal, and VTA regions that are connected, (2) identifying pairs of cortical pyramidal cells and striatal neurons that are connected, (3) measuring the responses of identified pyramidal cells to DA stimulation, as well as the responses of identified striatal neurons to activation of the connected pyramidal cells, and (4) testing whether DA → pyramidal responses and pyramidal → striatal responses are associated across pyramidal cells, and whether such associations develop through learning.
 
@@ -200,7 +200,7 @@ Testing this prediction, however, would be technically quite demanding, as menti
 
 We have shown that oVRNNrf and oVRNNrf-bio could work even when the random feedback was uniform, that is, fixed to the direction of (1, 1,..., 1)T, although the performance was somewhat worse. This is reasonable because uniform feedback can still encode scalar TD-RPE that drives our models, in contrast to a previous study (Wärnberg and Kumar, 2023), which considered DA’s encoding of vector error and thus regarded uniform feedback as a negative control. If oVRNNrf/oVRNNrf-bio-like mechanism indeed operates in the brain and the feedback is near uniform, alignment of the value weights w to near (1, 1,..., 1) is expected to occur. This means that states are (learned to be) represented in such a way that simple summation of cortical neuronal activity approximates value, thereby potentially explaining why value is often correlated with regional activation (fMRI BOLD signal) of cortical regions (Levy and Glimcher, 2012). Notably, uniform feedback coupled with positive forward weights was shown to be effective also in supervised learning of one-dimensional output in feed-forward networks (Konishi et al., 2023), and we guess that loose alignment may underlie it.
 
-## On the RNN unit
+### On the RNN unit
 
 In our oVRNNbp without non-negative constraint, as the number of RNN units increased, the squared error initially decreased but then increased (Figure 2J) (while intriguingly it was not the case for the models with non-negative constraint (Figure 6E)). In contrast, in the original value-RNN (Qian et al., 2025; Hennig et al., 2023), the ability to develop belief-state-like representation was reported to improve as the number of RNN units increased to 100 or 50. There are at least two possible reasons for this difference, other than the difference in the performance measures. The first one is the difference in the update rules. As mentioned earlier, the original value-RNN used BPTT (Rumelhart et al., 1986b) whereas our oVRNNbp used an online learning rule, which only considered the influence of the recurrent weights at the previous time step.
 
@@ -208,7 +208,7 @@ The second one is a difference in the RNN unit. Specifically, the original value
 
 From a bottom-up viewpoint, our RNN unit did not incorporate spiking (Payeur et al., 2021; Gjorgjieva et al., 2011; Shouval et al., 2010) nor nonlinear dendritic computations (Pagkalos et al., 2024; Poirazi et al., 2003; Morita, 2008). Recent studies suggest that dendritic mechanisms (Guerguiev et al., 2017; Sacramento et al., 2018), possibly in combination with burst-dependent plasticity (Payeur et al., 2021; Greedy et al., 2022), can realize credit assignment without backprop in supervised and unsupervised learning (Körding and König, 2001; Illing et al., 2021). Also, a recent model of hippocampus Cone and Clopath, 2024 has shown that a network of multi-compartment units could learn complex representations. Having dendritic mechanisms is different from just increasing the number of neural-network layers because of their own specific features/constraints, and it was argued (Pagkalos et al., 2024) that adding such biological constraints enables learning in deep neural networks. Therefore, incorporation of biological details into RNN unit in our models would be hopeful also from the bottom-up viewpoint.
 
-## Comparison to other algorithms
+### Comparison to other algorithms
 
 As an alternative to backprop in hierarchical network, aside from FA (Lillicrap et al., 2016), Associative Reward–Penalty (AR–P) algorithm has been proposed (Barto and Jordan, 1987; Mazzoni et al., 1991a; Mazzoni et al., 1991b). In AR–P, the hidden units behave stochastically, allowing the gradient to be estimated via stochastic sampling. Recent work by Max et al., 2024 has proposed Phaseless Alignment Learning, in which high-frequency noise-induced learning of feedback projections proceeds simultaneously with learning of forward projections using the feedback in a lower frequency. Noise-induced learning of the weights on readout neurons from untrained RNN by reward-modulated Hebbian plasticity has also been demonstrated (Hoerzer et al., 2014). Such noise- or perturbation-based (Lillicrap et al., 2020) mechanisms are biologically plausible because neurons and neural networks can exhibit noisy or chaotic behavior (Faisal et al., 2008; Aihara and Matsumoto, 1986; van Vreeswijk and Sompolinsky, 1996), and might improve the performance of value-RNN if implemented.
 
@@ -218,111 +218,261 @@ First, we have shown that alignment to random feedback occurs in the models driv
 
 ## Methods
 
-## Online value-RNN with backprop (oVRNNbp)
+### Online value-RNN with backprop (oVRNNbp)
 
-We constructed an online value-RNN model based on the previous proposals (Qian et al., 2025; Hennig et al., 2023) but with several differences. We assumed that the activities of neurons in the RNN at time t + 1 were determined by the activities of these neurons and neurons representing observation (cue, reward, or nothing) at time t:(1.1)x(t+1)=f(Ax(t)+Bo(t)),\begin{document}$$\displaystyle \boldsymbol x\left (t+1\right)=f\left (\boldsymbol {Ax}\left (t\right)+\boldsymbol {Bo}\left (t\right)\right),$$\end{document}
+We constructed an online value-RNN model based on the previous proposals (Qian et al., 2025; Hennig et al., 2023) but with several differences. We assumed that the activities of neurons in the RNN at time t + 1 were determined by the activities of these neurons and neurons representing observation (cue, reward, or nothing) at time t:
+
+$$
+x(t+1)=f(Ax(t)+Bo(t)),
+$$
 
 where
 
-x=(xj)\begin{document}$\boldsymbol x=\left (x_{j}\right)$\end{document}: activity of jth neuron in the RNN (j=1,..,n\begin{document}$j=1,..,n$\end{document})
+$x=(x_{j})$: activity of jth neuron in the RNN ($j=1,..,n$)
 
-o=(ok)\begin{document}$\boldsymbol o=\left (o_{k}\right)$\end{document}: activity of kth neuron in the observation layer (k = 1, 2)
+$o=(o_{k})$: activity of kth neuron in the observation layer (k = 1, 2)
 
-if there was a cue at t,o(t)=(10)T\begin{document}$t,\boldsymbol o\left (t\right)=\left (1\,0\right)^{T}$\end{document},
+if there was a cue at $t,o(t)=(10)^{T}$,
 
-if there was a reward at t,o(t)=(01)T\begin{document}$t,\boldsymbol o\left (t\right)=\left (0\,1\right)^{T}$\end{document},
+if there was a reward at $t,o(t)=(01)^{T}$,
 
-and otherwise, o(t)=(00)T\begin{document}$\boldsymbol o\left (t\right)=\left (0\,0\right)^{T}$\end{document}
+and otherwise, $o(t)=(00)^{T}$
 
-A=(Aij)\begin{document}$\boldsymbol A=\left (A_{ij}\right)$\end{document}: recurrent connection strength from xj\begin{document}$x_{j}$\end{document} to xi\begin{document}$x_{i}$\end{document}
+$A=(A_{ij})$: recurrent connection strength from $x_{j}$ to $x_{i}$
 
-B=(Bik)\begin{document}$B=\left (B_{ik}\right)$\end{document}: feed-forward connection strength from ok\begin{document}$o_{k}$\end{document} to xi\begin{document}$x_{i}$\end{document}(1.2)f(z)=1/(1+exp(−z))−0.5:\begin{document}$$\displaystyle f\left (z\right)={1}/{(1+exp\left (- z\right)})- 0.5:$$\end{document}
+$B=(B_{ik})$: feed-forward connection strength from $o_{k}$ to $x_{i}$
+
+$$
+f(z)=1/(1+exp(−z))−0.5:
+$$
 
 sigmoidal function representing neuronal input–output relation.
 
-The estimated value of the state at t was calculated as(1.3)v(t)=wTx(t)\begin{document}$$\displaystyle v(t)=\boldsymbol w^{\rm T} \boldsymbol x(t)$$\end{document}
+The estimated value of the state at t was calculated as
 
-wherew=(wj)\begin{document}$$\displaystyle \boldsymbol w=(w_{j})$$\end{document}
+$$
+v(t)=w^{T}x(t)
+$$
 
-were the value weights. The error between this estimated value and the true value, vtrue(t)\begin{document}$v_{true}\left (t\right)$\end{document}, was defined as(1.4)ε(t)=vtrue(t)−v(t)\begin{document}$$\displaystyle \varepsilon (t)=v_{true}(t)- v(t)$$\end{document}(1.5)−∂(ε(t)2)/∂wj=2ε(t)∂ε(t)/∂wj=−2ε(t)∂(vtrue(t)−wTx(t))/∂wj=−2ε(t)(−xj(t))=2ε(t)xj(t)≈2δ(t)xj(t)\begin{document}$$\displaystyle  &{-\partial \left (\varepsilon \left (t\right)^{2}\right)}/{\partial _{wj}}\\&={2\varepsilon \left (t\right)\partial \varepsilon \left (t\right)}/{\partial w_{j}}\\ &=- {2\varepsilon \left (t\right)\partial \left (v_{true}\left (t\right)- w^{T}x\left (t\right)\right)}/{\partial _{wj}}\\ &=- 2\varepsilon \left (t\right)\left (- x_{j}\left (t\right)\right)\\ &=2\varepsilon \left (t\right)x_{j}\left (t\right)\\ &\approx 2\delta \left (t\right)x_{j}\left (t\right)$$\end{document}
+where
 
-In the last line, since ε(t)\begin{document}$\varepsilon \left (t\right)$\end{document} was unavailable as vtrue(t)\begin{document}$v_{true}\left (t\right)$\end{document} was unknown, it was approximated by the TD-RPE:(1.6)δ(t)=r(t)+γv(t+1)−v(t).\begin{document}$$\displaystyle \delta \left (t\right)=r\left (t\right)+\gamma v\left (t+1\right)- v\left (t\right).$$\end{document}
+$$
+w=(w_{j})
+$$
 
-−∂(ε(t)2)/∂Aij\begin{document}${- \partial \left (\varepsilon \left (t\right)^{2}\right)}/{\partial A_{ij}}$\end{document} was calculated as follows:(1.7)−∂(ε(t)2)/∂Aij=−2ε(t)∂(vtrue(t)−wTx(t))/∂Aij≈2δ(t)∂(wTf(Ax(t−1)+Bo(t−1)))/∂Aij=2δ(t)xi(t−1)(0.5+xi(t))(0.5−xi(t))wi\begin{document}$$\displaystyle  &{- \partial \left (\varepsilon \left (t\right)^{2}\right)}/{\partial A_{ij}}\\ &=-{2\varepsilon \left (t\right)\partial \left (v_{true}\left (t\right)- w^{T}x\left (t\right)\right)}/{\partial A_{ij}}\\ &\approx {2\delta \left (t\right)\partial \left (w^{T}f\left (Ax\left (t- 1\right)+Bo\left (t- 1\right)\right)\right)}/{\partial A_{ij}}\\ &=2\delta \left (t\right)x_{i}\left (t- 1\right)\left (0.5+x_{i}\left (t\right)\right)\left (0.5- xi\left (t\right)\right)w_{i}$$\end{document}
+were the value weights. The error between this estimated value and the true value, $v_{true}(t)$, was defined as
 
-Similarly, −∂(ε(t)2)/∂Bik\begin{document}$- \partial (\varepsilon (t)^{2})/\partial B_{ik}$\end{document} was calculated as follows:(1.8)−∂(ε(t)2)/∂Bik≈2δ(t)ok(t−1)(0.5+xi(t))(0.5−xi(t))wi\begin{document}$$\displaystyle  &-{\partial \left( \varepsilon(t)^{2} \right)}/{\partial B_{ik}} \\[6pt] & \approx 2 \, \delta(t) \, o_k(t-1) \, \left(0.5 + x_i(t)\right) \, \left(0.5 - x_i(t)\right) \, w_i $$\end{document}
+$$
+\epsilon(t)=v_{true}(t)−v(t)
+$$
 
-According to these, the online update rule for the value-RNN was determined as follows:(1.9)wj←wj+avalueδ(t)xj(t)\begin{document}$$\displaystyle w_{j}\leftarrow w_{j}+a_{\rm value}\delta \left (t\right)x_{j}\left (t\right)$$\end{document}(1.10)Aij←Aij+aRNNδ(t)xj(t−1)(0.5+xi(t))(0.5−xi(t))wi\begin{document}$$\displaystyle A_{ij}\leftarrow A_{ij}+a_{\rm RNN}\delta \left (t\right)x_{j}\left (t- 1\right)\left (0.5+x_{i}\left (t\right)\right)\left (0.5- x_{i}\left (t\right)\right)w_{i}$$\end{document}(1.11)Bik←Bik+aRNNδ(t)ok(t−1)(0.5+xi(t))(0.5−xi(t))wi,\begin{document}$$\displaystyle B_{ik}\leftarrow B_{ik}+a_{\rm RNN}\delta \left (t\right)o_{k}\left (t- 1\right)\left (0.5+x_{i}\left (t\right)\right)\left (0.5- x_{i}\left (t\right)\right)w_{i},$$\end{document}
+
+
+$$
+−∂(\epsilon(t)^{2})/∂_{wj}=2\epsilon(t)∂\epsilon(t)/∂w_{j}=−2\epsilon(t)∂(v_{true}(t)−w^{T}x(t))/∂_{wj}=−2\epsilon(t)(−x_{j}(t))=2\epsilon(t)x_{j}(t)≈2\delta(t)x_{j}(t)
+$$
+
+In the last line, since $\epsilon(t)$ was unavailable as $v_{true}(t)$ was unknown, it was approximated by the TD-RPE:
+
+$$
+\delta(t)=r(t)+\gammav(t+1)−v(t).
+$$
+
+$−∂(\epsilon(t)^{2})/∂A_{ij}$ was calculated as follows:
+
+$$
+−∂(\epsilon(t)^{2})/∂A_{ij}=−2\epsilon(t)∂(v_{true}(t)−w^{T}x(t))/∂A_{ij}≈2\delta(t)∂(w^{T}f(Ax(t−1)+Bo(t−1)))/∂A_{ij}=2\delta(t)x_{i}(t−1)(0.5+x_{i}(t))(0.5−xi(t))w_{i}
+$$
+
+Similarly, $−∂(\epsilon(t)^{2})/∂B_{ik}$ was calculated as follows:
+
+$$
+−∂(\epsilon(t)^{2})/∂B_{ik}≈2\delta(t)o_{k}(t−1)(0.5+x_{i}(t))(0.5−x_{i}(t))w_{i}
+$$
+
+According to these, the online update rule for the value-RNN was determined as follows:
+
+$$
+w_{j}←w_{j}+a_{value}\delta(t)x_{j}(t)
+$$
+
+
+
+$$
+A_{ij}←A_{ij}+a_{RNN}\delta(t)x_{j}(t−1)(0.5+x_{i}(t))(0.5−x_{i}(t))w_{i}
+$$
+
+
+
+$$
+B_{ik}←B_{ik}+a_{RNN}\delta(t)o_{k}(t−1)(0.5+x_{i}(t))(0.5−x_{i}(t))w_{i},
+$$
 
 where avalue and aRNN were the learning rates. In each simulation, the elements of A and B, as well as the elements of x, were initialized to pseudo standard normal random numbers, and the elements of w were initialized to 0.
 
-## Online value-RNN with fixed random feedback (oVRNNrf)
+### Online value-RNN with fixed random feedback (oVRNNrf)
 
 We considered an implementation of the online value-RNN described above in the cortico-basal ganglia-DA system (Figure 1):
 
-The update rule for w (Equation 1.9):wj←wj+avalueδ(t)xj(t)\begin{document}$$\displaystyle w_{j}\leftarrow w_{j}+a_{\rm value}\delta \left (t\right)x_{j}\left (t\right)$$\end{document}
+The update rule for w (Equation 1.9):
 
-could be naturally implemented as cortico-striatal synaptic plasticity, which depends on DA (δ(t)) and pre-synaptic (cortical) neuronal activity (xj(t)). However, an issue emerged in the implementation of the update rules for A and B (Equations 1.10 and 1.11):Aij←Aij+aRNNδ(t)xj(t−1)(0.5+xi(t))(0.5−xi(t))wi\begin{document}$$\displaystyle A_{ij}\leftarrow A_{ij}+a_{\rm RNN}\delta \left (t\right)x_{j}\left (t- 1\right)\left (0.5+x_{i}\left (t\right)\right)\left (0.5- x_{i}\left (t\right)\right)w_{i}$$\end{document}Bik←Bik+aRNNδ(t)ok(t−1)(0.5+xi(t))(0.5−xi(t))wi,\begin{document}$$\displaystyle B_{ik}\leftarrow B_{ik}+a_{\rm RNN}\delta \left (t\right)o_{k}\left (t- 1\right)\left (0.5+x_{i}\left (t\right)\right)\left (0.5- x_{i}\left (t\right)\right)w_{i},$$\end{document}
+$$
+w_{j}←w_{j}+a_{value}\delta(t)x_{j}(t)
+$$
 
-Specifically, wi\begin{document}$w_{i}$\end{document} included in the rightmost of these update rules (for the strengths of cortico-cortical synapses Aij\begin{document}$A_{ij}$\end{document} and Bik\begin{document}$B_{ik}$\end{document}) is the connection strength from cortical neuron xi\begin{document}$x_{i}$\end{document} to striatal neurons, that is, the strength of the cortico-striatal synapses (located within the striatum), which is considered to be unavailable at the cortico-cortical synapses (located within the cortex).
+could be naturally implemented as cortico-striatal synaptic plasticity, which depends on DA (δ(t)) and pre-synaptic (cortical) neuronal activity (xj(t)). However, an issue emerged in the implementation of the update rules for A and B (Equations 1.10 and 1.11):
 
-As mentioned in the Introduction, this is an example of the long-standing difficulty in biological implementation of backprop, and recently a potential solution for this difficulty, that is, replacement of the downstream connection strengths in the update rule for upstream connections with fixed random strengths, has been demonstrated in supervised learning of feed-forward and recurrent networks (Murray, 2019; Lillicrap et al., 2016; Wärnberg and Kumar, 2023). The online value-RNN, which we considered here, differed from supervised learning considered in these previous studies in two ways: (1) it was TD learning, apparent in the approximation of the true error ε(t)\begin{document}$\varepsilon \left (t\right)$\end{document} by the TD-RPE δt\begin{document}$\delta \left (t\right)$\end{document} in the derivation described above, and (2) it used a scalar error (TD-RPE) rather than a vector error. But we expected that the FA mechanism could still work at least to some extent and explored it in this study. Specifically, we examined a modified online value-RNN with fixed random feedback (oVRNNrf), in which the update rules for A and B were modified as follows:(2.1)Aij←Aij+aRNNδ(t)xj(t−1)(0.5+xi(t))(0.5−xi(t))ci\begin{document}$$\displaystyle  A_{ij} \leftarrow A_{ij} + a_{\mathrm{RNN}} \, \delta(t) \, x_{j}(t-1) \, \left(0.5 + x_{i}(t)\right) \, \left(0.5 - x_{i}(t)\right) \, c_{i}$$\end{document}(2.2)Bik←Bik+aRNNδ(t)ok(t−1)(0.5+xi(t))(0.5−xi(t))ci,\begin{document}$$\displaystyle B_{ik}\leftarrow B_{ik}+a_{\rm RNN}\delta \left (t\right)o_{k}\left (t- 1\right)\left (0.5+x_{i}\left (t\right)\right)\left (0.5- x_{i}\left (t\right)\right)c_{i},$$\end{document}
+$$
+A_{ij}←A_{ij}+a_{RNN}\delta(t)x_{j}(t−1)(0.5+x_{i}(t))(0.5−x_{i}(t))w_{i}
+$$
 
-where wi\begin{document}$w_{i}$\end{document} in the update rules of the online value-RNN with backprop (oVRNNbp) was replaced with a fixed random parameter ci\begin{document}$c_{i}$\end{document}. Notably, these modified update rules for the cortico-cortical connections A and B required only pre-synaptic activities (xj(t−1)\begin{document}$x_{j}\left (t- 1\right)$\end{document},ok(t−1)\begin{document}$o_{k}\left (t- 1\right)$\end{document}), post-synaptic activities (xi(t))\begin{document}$(x_{i}\left (t\right))$\end{document}, TD-RPE-representing DA (δ(t))\begin{document}$(\delta \left (t\right))$\end{document}, and fixed random strengths (ci\begin{document}$c_{i}$\end{document}), which would all be available at the cortico-cortical synapses given that VTA DA neurons project not only to the striatum but also to the cortex and random ci\begin{document}$c_{i}$\end{document} could be provided by intrinsic heterogeneity. In each simulation, the elements of c\begin{document}$c$\end{document} were initialized to pseudo standard normal random numbers.
 
-## Revised online value-RNN models with further biological constraints
 
-In the later part of this study, we examined revised online value-RNN models with further biological constraints. Specifically, we considered models in which the value weights and the activities of neurons in the RNN were constrained to be non-negative. In order to do so, the update rule for w was modified to:(3.1)wj←max(0,wj+avalueδ(t)xj(t)),\begin{document}$$\displaystyle w_{j}\leftarrow \max\left (0,w_{j}+a_{\rm value}\delta \left (t\right)x_{j}\left (t\right)\right),$$\end{document}
+$$
+B_{ik}←B_{ik}+a_{RNN}\delta(t)o_{k}(t−1)(0.5+x_{i}(t))(0.5−x_{i}(t))w_{i},
+$$
 
-where max(q1, q2) returned the maximum of q1 and q2. Also, the sigmoidal input–output function was replaced with(3.2)f(z)=1/(1+exp⁡(−z)),\begin{document}$$\displaystyle f\left (z\right)={1}/{(1+ \exp\left (- z\right))},$$\end{document}
+Specifically, $w_{i}$ included in the rightmost of these update rules (for the strengths of cortico-cortical synapses $A_{ij}$ and $B_{ik}$) is the connection strength from cortical neuron $x_{i}$ to striatal neurons, that is, the strength of the cortico-striatal synapses (located within the striatum), which is considered to be unavailable at the cortico-cortical synapses (located within the cortex).
 
-and the elements of x were initialized to pseudo uniform [0 1] random numbers. The backprop-based update rules for A and B in oVRNNbp were replaced with(3.3)Aij←Aij+aRNNδ(t)xj(t−1)xi(t)(1−xi(t))wi\begin{document}$$\displaystyle A_{ij} \leftarrow A_{ij} + a_{\mathrm{RNN}} \, \delta(t) \, x_{j}(t-1) \, x_{i}(t) \, \bigl(1 - x_{i}(t)\bigr) \, w_{i}$$\end{document}(3.4)Bik←Bik+aRNNδ(t)ok(t−1)xi(t)(1−xi(t))wi\begin{document}$$\displaystyle  B_{ik} \leftarrow B_{ik} + a_{\mathrm{RNN}} \, \delta(t) \, o_{k}(t-1) \, x_{i}(t) \, \bigl(1 - x_{i}(t)\bigr) \, w_{i}$$\end{document}
+As mentioned in the Introduction, this is an example of the long-standing difficulty in biological implementation of backprop, and recently a potential solution for this difficulty, that is, replacement of the downstream connection strengths in the update rule for upstream connections with fixed random strengths, has been demonstrated in supervised learning of feed-forward and recurrent networks (Murray, 2019; Lillicrap et al., 2016; Wärnberg and Kumar, 2023). The online value-RNN, which we considered here, differed from supervised learning considered in these previous studies in two ways: (1) it was TD learning, apparent in the approximation of the true error $\epsilon(t)$ by the TD-RPE $\deltat$ in the derivation described above, and (2) it used a scalar error (TD-RPE) rather than a vector error. But we expected that the FA mechanism could still work at least to some extent and explored it in this study. Specifically, we examined a modified online value-RNN with fixed random feedback (oVRNNrf), in which the update rules for A and B were modified as follows:
+
+$$
+A_{ij}←A_{ij}+a_{RNN}\delta(t)x_{j}(t−1)(0.5+x_{i}(t))(0.5−x_{i}(t))c_{i}
+$$
+
+
+
+$$
+B_{ik}←B_{ik}+a_{RNN}\delta(t)o_{k}(t−1)(0.5+x_{i}(t))(0.5−x_{i}(t))c_{i},
+$$
+
+where $w_{i}$ in the update rules of the online value-RNN with backprop (oVRNNbp) was replaced with a fixed random parameter $c_{i}$. Notably, these modified update rules for the cortico-cortical connections A and B required only pre-synaptic activities ($x_{j}(t−1)$,$o_{k}(t−1)$), post-synaptic activities $(x_{i}(t))$, TD-RPE-representing DA $(\delta(t))$, and fixed random strengths ($c_{i}$), which would all be available at the cortico-cortical synapses given that VTA DA neurons project not only to the striatum but also to the cortex and random $c_{i}$ could be provided by intrinsic heterogeneity. In each simulation, the elements of $c$ were initialized to pseudo standard normal random numbers.
+
+### Revised online value-RNN models with further biological constraints
+
+In the later part of this study, we examined revised online value-RNN models with further biological constraints. Specifically, we considered models in which the value weights and the activities of neurons in the RNN were constrained to be non-negative. In order to do so, the update rule for w was modified to:
+
+$$
+w_{j}←max(0,w_{j}+a_{value}\delta(t)x_{j}(t)),
+$$
+
+where max(q1, q2) returned the maximum of q1 and q2. Also, the sigmoidal input–output function was replaced with
+
+$$
+f(z)=1/(1+exp⁡(−z)),
+$$
+
+and the elements of x were initialized to pseudo uniform [0 1] random numbers. The backprop-based update rules for A and B in oVRNNbp were replaced with
+
+$$
+A_{ij}←A_{ij}+a_{RNN}\delta(t)x_{j}(t−1)x_{i}(t)(1−x_{i}(t))w_{i}
+$$
+
+
+
+$$
+B_{ik}←B_{ik}+a_{RNN}\delta(t)o_{k}(t−1)x_{i}(t)(1−x_{i}(t))w_{i}
+$$
 
 We referred to the model with these modifications to oVRNNbp as oVRNNbp-rev.
 
 As a revised online value-RNN with fixed random feedback (oVRNNrf), in addition to the abovementioned modifications of the update of w, the sigmoidal input-output function, and the initialization of x, the fixed random feedback c was assumed to be non-negative. Specifically, the elements of c were set to pseudo uniform [0 1] random numbers. Moreover, the update rules for A and B were replaced with
 
-(when xi(t)≤0.5\begin{document}$x_{i}\left (t\right)\leq 0.5$\end{document})(3.5)Aij←Aij+aRNNδ(t)xj(t−1)xi(t)(1−xi(t))ci\begin{document}$$\displaystyle  A_{ij} \leftarrow A_{ij} + a_{\mathrm{RNN}} \, \delta(t) \, x_{j}(t-1) \, x_{i}(t) \, \bigl(1 - x_{i}(t)\bigr) \, c_{i} $$\end{document}(3.6)Bik←Bik+aRNNδ(t)ok(t−1)xi(t)(1−xi(t))ci\begin{document}$$\displaystyle  B_{ik} \leftarrow B_{ik} + a_{\mathrm{RNN}} \, \delta(t) \, o_{k}(t-1) \, x_{i}(t) \, \bigl(1 - x_{i}(t)\bigr) \, c_{i}$$\end{document}
+(when $x_{i}(t)\leq0.5$)
 
-(when xi(t)>0.5\begin{document}$x_{i}\left (t\right)\gt 0.5$\end{document})(3.7)Aij←Aij+0.25aRNNδ(t)xj(t−1)ci\begin{document}$$\displaystyle  A_{ij} \leftarrow A_{ij} + 0.25 \, a_{\mathrm{RNN}} \, \delta(t) \, x_{j}(t-1) \, c_{i} $$\end{document}(3.8)Bik←Bik+0.25aRNNδ(t)ok(t−1)ci\begin{document}$$\displaystyle B_{ik} \leftarrow B_{ik} + 0.25 \, a_{\mathrm{RNN}} \, \delta(t) \, o_{k}(t-1) \, c_{i}$$\end{document}
+$$
+A_{ij}←A_{ij}+a_{RNN}\delta(t)x_{j}(t−1)x_{i}(t)(1−x_{i}(t))c_{i}
+$$
 
-so that the originally non-monotonic dependence on xi(t) (post-synaptic activity) became monotonic + saturation (Figure 5B). These update rules with non-negative ci could be said to be Hebbian with additional modulation by TD-RPE (Hebbian under positive TD-RPE) (see Appendix 1.2 for possible consideration of behavioral time-scale synaptic plasticity (BTSP) in our models). We referred to the model with these modifications to oVRNNrf as oVRNNrf-bio. In the right panels of Figure 6E, F, we also examined the model where the modified update rules of oVRNNrf-bio were changed back to the original ones, referred to as oVRNNrf-rev. In some simulations in Figure 8E–G, we examined a modified oVRNNrf-bio with a slight decay (forgetting) of value weights, in which each element of w decayed at every time step:(3.9)wi←(1−dr)wi\begin{document}$$\displaystyle  w_{i} \leftarrow (1 - dr) \, w_{i}$$\end{document}
+
+
+$$
+B_{ik}←B_{ik}+a_{RNN}\delta(t)o_{k}(t−1)x_{i}(t)(1−x_{i}(t))c_{i}
+$$
+
+(when $x_{i}(t)>0.5$)
+
+$$
+A_{ij}←A_{ij}+0.25a_{RNN}\delta(t)x_{j}(t−1)c_{i}
+$$
+
+
+
+$$
+B_{ik}←B_{ik}+0.25a_{RNN}\delta(t)o_{k}(t−1)c_{i}
+$$
+
+so that the originally non-monotonic dependence on xi(t) (post-synaptic activity) became monotonic + saturation (Figure 5B). These update rules with non-negative ci could be said to be Hebbian with additional modulation by TD-RPE (Hebbian under positive TD-RPE) (see Appendix 1.2 for possible consideration of behavioral time-scale synaptic plasticity (BTSP) in our models). We referred to the model with these modifications to oVRNNrf as oVRNNrf-bio. In the right panels of Figure 6E, F, we also examined the model where the modified update rules of oVRNNrf-bio were changed back to the original ones, referred to as oVRNNrf-rev. In some simulations in Figure 8E–G, we examined a modified oVRNNrf-bio with a slight decay (forgetting) of value weights, in which each element of w decayed at every time step:
+
+$$
+w_{i}←(1−dr)w_{i}
+$$
 
 where dr was the decay rate per time step and was set to 0.001 or 0.002.
 
-We further examined extensions of oVRNNbp-rev and oVRNNrf-bio, referred to as oVRNNbp-rev-ei and oVRNNrf-bio-ei, which incorporated excitatory E-units and inhibitory I-units (Figure 9A). Based on biological suggestions (see the Results), we made the following assumptions. Each E-unit received inputs from the observation units o (connections: BE), all the E-units (connections: AE), and a particular I-unit (with a strength h), and projected to the striatal value unit (connections: w). Each I-unit received inputs from the observation units o (connections: BI) and all the E-units (connections: AI). Excitation from the observation units and E-units to E- and I-units took one time step, whereas I → E inhibition operated within a time step. The activation function for E-unit and plasticity rules for connections from/to E-units were the same as those for the RNN unit in the original models. I-unit had a linear activation function, and there was no plasticity for connections from/to I-units. The update rule for w was the same as the original one with the activity of the RNN units replaced with the activity of E-units. Equations for the activities of E-units and I-units, xE and xI, are given as follows:(3.10)xI(t+1)=AIxE(t)+BIo(t)\begin{document}$$\displaystyle \boldsymbol x_{\rm I}\left (t+1\right)=\boldsymbol {A_{\rm I}x_{\rm E}}\left (t\right)+\boldsymbol {B_{\rm I}o}\left (t\right)$$\end{document}(3.11)xE(t+1)=f(AEx(t)+BEo(t)−hxI(t+1)),\begin{document}$$\displaystyle \boldsymbol {x_{\rm E}}\left (t+1\right)=\boldsymbol f\left (\boldsymbol {A_{\rm E}x}\left (t\right)+\boldsymbol {B_{\rm E}o}\left (t\right)- h\boldsymbol {x_{\rm I}}\left (t+1\right)\right),$$\end{document}
+We further examined extensions of oVRNNbp-rev and oVRNNrf-bio, referred to as oVRNNbp-rev-ei and oVRNNrf-bio-ei, which incorporated excitatory E-units and inhibitory I-units (Figure 9A). Based on biological suggestions (see the Results), we made the following assumptions. Each E-unit received inputs from the observation units o (connections: BE), all the E-units (connections: AE), and a particular I-unit (with a strength h), and projected to the striatal value unit (connections: w). Each I-unit received inputs from the observation units o (connections: BI) and all the E-units (connections: AI). Excitation from the observation units and E-units to E- and I-units took one time step, whereas I → E inhibition operated within a time step. The activation function for E-unit and plasticity rules for connections from/to E-units were the same as those for the RNN unit in the original models. I-unit had a linear activation function, and there was no plasticity for connections from/to I-units. The update rule for w was the same as the original one with the activity of the RNN units replaced with the activity of E-units. Equations for the activities of E-units and I-units, xE and xI, are given as follows:
 
-where h was set to 1. The elements of AI, BI, AE, and BE were initialized to be non-negative:max(0,3+z),\begin{document}$\rm {max} (0,3+\it z),$\end{document}
+$$
+x_{I}(t+1)=A_{I}x_{E}(t)+B_{I}o(t)
+$$
+
+
+
+$$
+x_{E}(t+1)=f(A_{E}x(t)+B_{E}o(t)−hx_{I}(t+1)),
+$$
+
+where h was set to 1. The elements of AI, BI, AE, and BE were initialized to be non-negative:$max(0,3+z),$
 
 where z was a pseudo standard normal random number. The elements of xE were initialized to pseudo uniform [0 1] random numbers, and the initial values of xI were determined according to the abovementioned equation.
 
-## Incorporation of action selection
+### Incorporation of action selection
 
-We considered extensions of oVRNNbp-rev and oVRNNrf-bio that incorporated an actor-critic architecture, referred to as oVRNNbp-rev-ac and oVRNNrf-bio-ac (Figure 11A). Each RNN unit additionally connected to additional two units representing the action-values of action 1 and action 2 (q1 and q2):(4.1)q(t)=Ux(t),\begin{document}$$\displaystyle \boldsymbol q\left (t\right)=\boldsymbol {\rm U}x\left (t\right),$$\end{document}
+We considered extensions of oVRNNbp-rev and oVRNNrf-bio that incorporated an actor-critic architecture, referred to as oVRNNbp-rev-ac and oVRNNrf-bio-ac (Figure 11A). Each RNN unit additionally connected to additional two units representing the action-values of action 1 and action 2 (q1 and q2):
 
-where U=(ukj)\begin{document}$U=\left (u_{kj}\right)$\end{document} consisted of two row vectors that represented the preferences of the two actions. At the time step next to cue presentation, one action was selected in a soft-max manner based on the action values. Specifically, action k was selected with the probability of(4.2)exp⁡(βqk)/(exp⁡(βq1)+exp⁡(βq2)),\begin{document}$$\displaystyle {\exp (\beta q_{k})}/{(\exp (\beta q_{1})+\exp (\beta q_{2}))},$$\end{document}
+$$
+q(t)=Ux(t),
+$$
 
-where β was the inverse temperature parameter, set to 1 or 2, representing the degree of exploitation over exploration. The selected action was then informed to the RNN units. Specifically, the observation layer had two additional elements (o' in Figure 11A) corresponding to the two actions. These elements became 1 when the corresponding action was selected and 0 otherwise. The preference of selected action k was updated by using the TD-RPE δ(t) as follows:(4.3)ukj←ukj+aprefδ(t)xj(t),\begin{document}$$\displaystyle u_{kj}\leftarrow u_{kj}+a_{\rm pref}\delta \left (t\right)x_{j}\left (t\right),$$\end{document}
+where $U=(u_{kj})$ consisted of two row vectors that represented the preferences of the two actions. At the time step next to cue presentation, one action was selected in a soft-max manner based on the action values. Specifically, action k was selected with the probability of
 
-where apref was the learning rate. In order to prevent unbounded increase of action preference, we assumed a slight decay of all the action preferences at every time step:(4.4)ukj←(1−dr)ukj\begin{document}$$\displaystyle  u_{kj} \leftarrow (1 - dr) \, u_{kj} $$\end{document}
+$$
+exp⁡(\betaq_{k})/(exp⁡(\betaq_{1})+exp⁡(\betaq_{2})),
+$$
+
+where β was the inverse temperature parameter, set to 1 or 2, representing the degree of exploitation over exploration. The selected action was then informed to the RNN units. Specifically, the observation layer had two additional elements (o' in Figure 11A) corresponding to the two actions. These elements became 1 when the corresponding action was selected and 0 otherwise. The preference of selected action k was updated by using the TD-RPE δ(t) as follows:
+
+$$
+u_{kj}←u_{kj}+a_{pref}\delta(t)x_{j}(t),
+$$
+
+where apref was the learning rate. In order to prevent unbounded increase of action preference, we assumed a slight decay of all the action preferences at every time step:
+
+$$
+u_{kj}←(1−dr)u_{kj}
+$$
 
 where dr was the decay rate per time step and was set to 0.001. ukj (i.e., the elements of U) were initialized to 0. The connection weights from the action-observation units o', as well as from o and the RNN units, onto the RNN units were initialized to pseudo standard normal random numbers.
 
-## Simulation of the tasks
+### Simulation of the tasks
 
 In the Pavlovian cue–reward association task, at time 1 of each trial, cue observation was received by the RNN, and at time 4, reward observation was received. The trial was pseudo-randomly ended at time 7, 8, 9, or 10, and the next trial started from the next time step (i.e., ITI was 4, 5, 6, or 7 time steps with equal probabilities). Reward size was r=1. We also conducted simulations with longer cue–reward delays, in which reward was given at time 5, 6, or 7, and the end of trial was shifted accordingly. The tasks with probabilistic structures (tasks 1 and 2) were implemented in the same way except that reward timing was not time 4 but time 3 or 5 with equal probabilities, specifically, 50% and 50% in task 1 and 30% and 30% in task 2, and there was no reward in the remaining 40% of trials in task 2. The tasks with action selection were also implemented in the same way except that size 2 reward was received, that is, the reward term in the TD-RPE calculation as well as the reward-corresponding element of the observation inputs were set to 2, at time 4 when action 1 was selected, whereas size 1 reward was received at time 4 (in the first choice task) or time 3 (in the second choice task) when action 2 was selected.
 
-The cue or reward state/timing, mentioned in the text and marked in the figures, was defined to be the timing when the RNN received the cue or reward observation, respectively. Specifically, if o(t)=(10)T\begin{document}$\boldsymbol o\left (t\right)=\left (1\,0\right)^{T}$\end{document} or o(t)=(01)T\begin{document}$\boldsymbol o\left (t\right)=\left (0\,1\right)^{T}$\end{document} at time t, t + 1 was defined to be a cue or reward timing, respectively. For the agents with punctate state representation, which is also referred to as the complete serial compound representation (Montague et al., 1996; Sutton and Barto, 2018; Ludvig et al., 2012), each timing from a cue in the tasks was represented by a 10-dimensional one-hot vector, starting from (1 0 0... 0)T for the cue state, with the next state (0 1 0... 0)T and so on.
+The cue or reward state/timing, mentioned in the text and marked in the figures, was defined to be the timing when the RNN received the cue or reward observation, respectively. Specifically, if $o(t)=(10)^{T}$ or $o(t)=(01)^{T}$ at time t, t + 1 was defined to be a cue or reward timing, respectively. For the agents with punctate state representation, which is also referred to as the complete serial compound representation (Montague et al., 1996; Sutton and Barto, 2018; Ludvig et al., 2012), each timing from a cue in the tasks was represented by a 10-dimensional one-hot vector, starting from (1 0 0... 0)T for the cue state, with the next state (0 1 0... 0)T and so on.
 
 In the simulations of the cue–reward association task with distractor cue, the observation units o = (ok) had an additional element o3 (Figure 10A), which was 1 at the time steps where distractor cue was present and 0 otherwise. We examined four cases, in which the probability of the presence of distractor cue at every time step throughout the task was 0, 0.1, 0.2, and 0.3 (Figure 10B–E).
 
 Learning rates were set as follows. For the models with punctate state representation, avalue = 0.1. For oVRNNbp, oVRNNrf, and the model with untrained RNN compared with these two, aRNN = 0.1 and avalue = 0.1/(n/7). For oVRNNbp-rev, oVRNNrf-bio, and the models with untrained RNN compared with these two, aRNN = 0.1 and avalue = apref = 0.1/(n/12) except for the right panels of Figure 6J, and aRNN = 0.05 and avalue = 0.05/(n/12) for the right panels of Figure 6J. Time discount factor (γ) was set to 0.8.
 
-## Estimation of true state/timing values
+### Estimation of true state/timing values
 
-As for the Pavlovian cue–reward association task, we defined states after agent’s receival of cue information by relative timings from the cue and estimated their (true) values by simulations according to the definition of state value. We generated a sequence of cues and rewards corresponding to 1000 trials with the ITI after the first trial, ITI1, fixed to one of the possible lengths (4, 5, 6, or 7 time steps), and calculated cumulative discounted future rewards within the sequence:Σt−rew (rγt−rew),\begin{document}$$\displaystyle  \Sigma_{t_{-} \text {rew }}(r \gamma^{t_{-} \text{rew}}),$$\end{document}
+As for the Pavlovian cue–reward association task, we defined states after agent’s receival of cue information by relative timings from the cue and estimated their (true) values by simulations according to the definition of state value. We generated a sequence of cues and rewards corresponding to 1000 trials with the ITI after the first trial, ITI1, fixed to one of the possible lengths (4, 5, 6, or 7 time steps), and calculated cumulative discounted future rewards within the sequence:
 
-where trew\begin{document}$t_{rew}$\end{document} denotes the time step of each reward counted from the starting state, starting from +1,..., and +3 + ITI1 time steps from a cue (the last one corresponded to the cue timing of the next trial). For each case where ITI1 = 4, 5, 6, or 7, we repeated this 1000 times, generating 1000 sequences (i.e., 1000 simulations of 1000 trials), with different sets of pseudo-random numbers, and calculated the average over these 1000 sequences (we refer to these as ITI1-specific values). We estimated the value of each state of +1,..., and +7 time steps from cue (i.e., −2,...,+4 time steps from reward) by taking the average of the ITI1-specific values for four possible ITI1.
+$$
+Σ_{t_{−}rew }(r\gamma^{t_{−}rew}),
+$$
+
+where $t_{rew}$ denotes the time step of each reward counted from the starting state, starting from +1,..., and +3 + ITI1 time steps from a cue (the last one corresponded to the cue timing of the next trial). For each case where ITI1 = 4, 5, 6, or 7, we repeated this 1000 times, generating 1000 sequences (i.e., 1000 simulations of 1000 trials), with different sets of pseudo-random numbers, and calculated the average over these 1000 sequences (we refer to these as ITI1-specific values). We estimated the value of each state of +1,..., and +7 time steps from cue (i.e., −2,...,+4 time steps from reward) by taking the average of the ITI1-specific values for four possible ITI1.
 
 We also estimated the true values of the cue timing and one and two timing(s) before it in the following way; these values could not be estimated in the abovementioned way because the agent should not know the length of ITI (i.e., when ITI ends) until receiving cue information at the cue timing. In the case where ITI is in fact 4 time steps, until receiving the next cue, the agent should think that ITI can be 4, 5, 6, or 7 time steps with equal probabilities (1/4 for each). Thus, the value of next cue timing and one and two timing(s) before it should be the average of the four ITI1-specific values of +4, +3, and +2 time steps from reward. Similarly, in the case where ITI is in fact 5 time steps, until the previous time step of the next cue, the agent should think that ITI can be 4, 5, 6, or 7 time steps with equal probabilities (1/4 for each). Thus, the value of one and two timing(s) before next cue should be the average of the four ITI1-specific values of +4 and +3 time steps from reward. On the other hand, at the timing of the next cue, the agent should think that ITI can be 5, 6, or 7 (but not 4) time steps with equal probabilities (1/3 for each). Thus, the value of next cue timing should be the average of the three ITI1-specific values (for ITI1 = 5, 6, or 7) of +5 time steps from reward. Similar considerations can be made for the cases where ITI is in fact 6 or 7 time steps. And then, the ‘true’ value of (next) cue timing can be calculated as the average of the values of next cue timing in the cases where ITI is in fact 4, 5, 6, or 7 time steps. Using these estimated true state values, we calculated TD-RPE at each state/timing (−2, –1, ..., and +5 time steps from cue). True state/timing values in the cases where the cue–reward delay was 4, 5, or 6 time steps were estimated in the same way.
 
@@ -330,6 +480,6 @@ We also estimated true state/timing values for tasks 1 and 2 that had probabilis
 
 As for task 2, we first estimated the values of each timing in each of the trial types (Figure 4Ba, right), in which reward was given at early (2 time steps after cue) or late (4 time steps after cue) timing or was not given. Then, based on the agent’s belief about trial types (Figure 4Bb, right), we defined the following states: +1 and +2 time steps from cue (i.e., states visited [entered] before knowing whether reward was given at the early timing), +3, 4, 5, and 6 time steps from cue after reception of reward at the early timing, +3 and 4 time steps from cue after no reception of reward at the early timing (states visited [entered] before knowing whether reward was given at the late timing [= +4 time step from cue]), +5 and 6 time steps from cue after reception of reward at the late timing, and +5 and 6 time steps from cue after no reception of reward at both early and late timings (Figure 4Bc, right-top). We estimated the true values of these states and also of the cue timing and one and two timing(s) before cue (Figure 4Bc, right-bottom) in the same manner as for task 1, and using these true values, we calculated TD-RPE (Figure 4C, right).
 
-## Analyses, software, and code availability
+### Analyses, software, and code availability
 
 SEM was approximated by SD/√N (number of samples). Cohen’s d using an average variance was calculated as (difference in the means)/(square root of the average of variances). Linear regression, PCA, Wilcoxon rank sum test, and t-tests were conducted by using R (functions lm, prcomp, wilcox.exact (in package exactRankTests), and t.test). The difference in the Wilcoxon rank sum test and t-tests was reported when p < 0.05. Simulations were conducted by using MATLAB, and pseudo-random numbers were implemented by using rand, randn, and randperm functions. The codes for simulations and analyses are available at GitHub (https://github.com/kenjimoritagithub/oVRNN1, copy archived at Morita, 2025).

@@ -15,23 +15,23 @@
 
 ### Affiliations
 
-1. https://ror.org/0495fxg12 Institut Pasteur, Université Paris Cité, Epidemiology and Modelling of Antibiotic Evasion (EMAE) unit Paris France
-2. https://ror.org/01ed4t417 Université Paris-Saclay, Université de Versailles Saint-Quentin-en-Yvelines, Inserm U1018, CESP, Anti-infective evasion and pharmacoepidemiology team Montigny-Le-Bretonneux France
-3. https://ror.org/0175hh227 Modélisation, épidémiologie et surveillance des risques sanitaires (MESuRS), Conservatoire national des arts et métiers Paris France
-4. https://ror.org/052gg0110 Health Economics Research Centre, Nuffield Department of Health, University of Oxford Oxford United Kingdom
-5. https://ror.org/0175hh227 PACRI unit, Institut Pasteur, Conservatoire national des arts et métiers Paris France
-6. https://ror.org/0175hh227 Centre National de Référence des Pneumocoques, Centre Hospitalier Intercommunal de Créteil Créteil France
-7. https://ror.org/04qe59j94 Institut Mondor de Recherche Biomédicale-Groupe de Recherche Clinique Groupe d’Etude des Maladies Infectieuses Néonatales et Infantiles (IMRB-GRC GEMINI), Université Paris Est, 94000 Créteil France
+1. Institut Pasteur, Université Paris Cité, Epidemiology and Modelling of Antibiotic Evasion (EMAE) unit Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+2. Université Paris-Saclay, Université de Versailles Saint-Quentin-en-Yvelines, Inserm U1018, CESP, Anti-infective evasion and pharmacoepidemiology team Montigny-Le-Bretonneux France ([ROR:01ed4t417](https://ror.org/01ed4t417))
+3. Modélisation, épidémiologie et surveillance des risques sanitaires (MESuRS), Conservatoire national des arts et métiers Paris France ([ROR:0175hh227](https://ror.org/0175hh227))
+4. Health Economics Research Centre, Nuffield Department of Health, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+5. PACRI unit, Institut Pasteur, Conservatoire national des arts et métiers Paris France ([ROR:0175hh227](https://ror.org/0175hh227))
+6. Centre National de Référence des Pneumocoques, Centre Hospitalier Intercommunal de Créteil Créteil France ([ROR:0175hh227](https://ror.org/0175hh227))
+7. Institut Mondor de Recherche Biomédicale-Groupe de Recherche Clinique Groupe d’Etude des Maladies Infectieuses Néonatales et Infantiles (IMRB-GRC GEMINI), Université Paris Est, 94000 Créteil France ([ROR:04qe59j94](https://ror.org/04qe59j94))
 8. Groupe de Pathologie Infectieuse Pédiatrique (GPIP), 06200 Nice France
-9. https://ror.org/04n1nkp35 Unité Court Séjour, Petits Nourrissons, Service de Néonatologie, Centre Hospitalier, Intercommunal de Créteil Créteil France
-10. https://ror.org/03t4ktv29 Association Clinique et Thérapeutique Infantile du Val-de-Marne (ACTIV), 94000 Créteil France
-11. https://ror.org/0495fxg12 Association Française de Pédiatrie Ambulatoire (AFPA), 45000 Orléans France
+9. Unité Court Séjour, Petits Nourrissons, Service de Néonatologie, Centre Hospitalier, Intercommunal de Créteil Créteil France ([ROR:04n1nkp35](https://ror.org/04n1nkp35))
+10. Association Clinique et Thérapeutique Infantile du Val-de-Marne (ACTIV), 94000 Créteil France ([ROR:03t4ktv29](https://ror.org/03t4ktv29))
+11. Association Française de Pédiatrie Ambulatoire (AFPA), 45000 Orléans France ([ROR:0495fxg12](https://ror.org/0495fxg12))
 
 † Corresponding author
 
 ## Abstract
 
-Non-pharmaceutical interventions implemented to block SARS-CoV-2 transmission in early 2020 led to global reductions in the incidence of invasive pneumococcal disease (IPD). By contrast, most European countries reported an increase in antibiotic resistance among invasive Streptococcus pneumoniae isolates from 2019 to 2020, while an increasing number of studies reported stable pneumococcal carriage prevalence over the same period. To disentangle the impacts of the COVID-19 pandemic on pneumococcal epidemiology in the community setting, we propose a mathematical model formalizing simultaneous transmission of SARS-CoV-2 and antibiotic-sensitive and -resistant strains of S. pneumoniae . To test hypotheses underlying these trends five mechanisms were built into the model and examined: (1) a population-wide reduction of antibiotic prescriptions in the community, (2) lockdown effect on pneumococcal transmission, (3) a reduced risk of developing an IPD due to the absence of common respiratory viruses, (4) community azithromycin use in COVID-19 infected individuals, (5) and a longer carriage duration of antibiotic-resistant pneumococcal strains. Among 31 possible pandemic scenarios involving mechanisms individually or in combination, model simulations surprisingly identified only two scenarios that reproduced the reported trends in the general population. They included factors (1), (3), and (4). These scenarios replicated a nearly 50% reduction in annual IPD, and an increase in antibiotic resistance from 20% to 22%, all while maintaining a relatively stable pneumococcal carriage. Exploring further, higher SARS-CoV-2 R 0 values and synergistic within-host virus-bacteria interaction mechanisms could have additionally contributed to the observed antibiotic resistance increase. Our work demonstrates the utility of the mathematical modeling approach in unraveling the complex effects of the COVID-19 pandemic responses on AMR dynamics.
+Non-pharmaceutical interventions implemented to block SARS-CoV-2 transmission in early 2020 led to global reductions in the incidence of invasive pneumococcal disease (IPD). By contrast, most European countries reported an increase in antibiotic resistance among invasive Streptococcus pneumoniae isolates from 2019 to 2020, while an increasing number of studies reported stable pneumococcal carriage prevalence over the same period. To disentangle the impacts of the COVID-19 pandemic on pneumococcal epidemiology in the community setting, we propose a mathematical model formalizing simultaneous transmission of SARS-CoV-2 and antibiotic-sensitive and -resistant strains of S. pneumoniae. To test hypotheses underlying these trends five mechanisms were built into the model and examined: (1) a population-wide reduction of antibiotic prescriptions in the community, (2) lockdown effect on pneumococcal transmission, (3) a reduced risk of developing an IPD due to the absence of common respiratory viruses, (4) community azithromycin use in COVID-19 infected individuals, (5) and a longer carriage duration of antibiotic-resistant pneumococcal strains. Among 31 possible pandemic scenarios involving mechanisms individually or in combination, model simulations surprisingly identified only two scenarios that reproduced the reported trends in the general population. They included factors (1), (3), and (4). These scenarios replicated a nearly 50% reduction in annual IPD, and an increase in antibiotic resistance from 20% to 22%, all while maintaining a relatively stable pneumococcal carriage. Exploring further, higher SARS-CoV-2 R0 values and synergistic within-host virus-bacteria interaction mechanisms could have additionally contributed to the observed antibiotic resistance increase. Our work demonstrates the utility of the mathematical modeling approach in unraveling the complex effects of the COVID-19 pandemic responses on AMR dynamics.
 
 ## Introduction
 
@@ -51,31 +51,462 @@ Here, to disentangle how the COVID-19 pandemic has impacted the epidemiological 
 
 ## Results
 
-## Antibiotic resistance trends and incidence of invasive pneumococcal disease in 2020
+### Antibiotic resistance trends and incidence of invasive pneumococcal disease in 2020
 
 In routine surveillance data reported to the European Antimicrobial Resistance Surveillance Network (EARS-Net), most European countries reported an increase in antibiotic resistance in S. pneumoniae from 2019 to 2020, as indicated by increases in the proportion of invasive isolates with phenotypic resistance to both penicillin and macrolides (Figure 1A). On the contrary, the total number of reported invasive isolates in the EU/EEA decreased by 44.3% from 2019 to 2020 (European Centre for Disease Prevention and Control and World Health Organization, 2022) suggesting a decrease in incidence of IPD (Appendix 2—table 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85701/elife-85701-fig1-v2.jpg)
+
+**Figure 1.:** (A) The proportion of invasive S. pneumoniae isolates resistant to penicillin and macrolides (azithromycin/ clarithromycin/ erythromycin) reported to EARS-Net (European Antimicrobial Resistance Surveillance Network) for 24 European countries. Error bars show 95% confidence intervals. (B) The proportion of invasive S. pneumoniae isolates resistant to penicillin (MIC >0.064 mg/L) and macrolides (erythromycin) according to age. Error bars show 95% confidence intervals. The total number of invasive pneumococcal isolates reported in France decreased by 45.1% from 2019 to 2020 (from 1119–614). Data are provided by the French National Reference Center for Pneumococci.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85701/elife-85701-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The proportion of invasive S. pneumoniae isolates resistant to penicillin (A) and macrolides (B) according to age. Error bars show 95% confidence intervals. Across the period 2017–2020, a consistent decline in antibiotic resistance is observed for both penicillin and macrolides. Notably, this general trend experienced an anomaly in 2020, coinciding with the onset of the COVID-19 pandemic. Data are provided by the French National Reference Center for Pneumococci.
+
 Invasive pneumococcal isolate data for France provided by the French National Reference Center for Pneumococci (CNRP) revealed similar trends. In France, the total number of reported invasive pneumococcal isolates decreased by 45.1% from 2019 to 2020 (from 1119–614), while antibiotic resistance in S. pneumoniae isolates to penicillin and macrolides showed an increasing trend from 26.2% in 2019 to 35.5% in 2020 for penicillin, and from 20.9% in 2019 to 23.0% in 2020 for macrolides (Figure 1B). General decreasing trend in antibiotic resistance from 2017 to 2019 in S. pneumoniae was interrupted in 2020 (Figure 1—figure supplement 1). These variations in antibiotic resistance manifested differently across age, with some age groups showing an increase in antibiotic resistance in 2020 compared to 2019, while others showed no significant change (Figure 1B).
 
-## Coinfection model of SARS-CoV-2 and Streptococcus pneumoniae
+### Coinfection model of SARS-CoV-2 and Streptococcus pneumoniae
 
 As mentioned above, several mechanisms may underlie the explanation of these contrasting observations (Figure 2A). COVID-19 NPIs may have led to reduced person-to-person bacterial transmission, potentially contributing to reduced rates of IPD incidence. These containment measures also massively reduced circulation of common respiratory viruses and the incidence of influenza-like-illnesses (ILIs). Respiratory viruses are known triggers and risk factors for developing an IBD from otherwise asymptomatic carriage; in that context, their reduction may have led to reduced infection risk (Domenech de Cellès et al., 2019; Smith and Opatowski, 2021). Due to reductions in primary care consultations in 2020, 26 European countries reported an estimated average decrease of 18.3% in overall antibiotic consumption, aligning with the global trend of reduced antibiotic prescriptions compared to 2019 (Högberg et al., 2021). On the other hand, frequent prescribing of azithromycin, a macrolide antibiotic initially hypothesized to be effective in COVID-19 treatment, has raised concerns for pandemic-associated antimicrobial overuse or misuse and may have exacerbated AMR during and following the first wave of the pandemic (Clancy et al., 2020; Knight et al., 2021; Kournoutou and Dinos, 2022; Langford et al., 2021; PRINCIPLE Trial Collaborative Group, 2021; Rusic et al., 2021). There are still uncertainties about pneumococcal ecology and the evolutionary processes that enable the robust coexistence of strains sensitive and resistant to antibiotics. The role of carriage duration, along with the impact of antibiotic consumption, is also not fully understood in this context. Longer carriage duration of antibiotic-resistant pneumococcal strains is a proposed explanation for this coexistence (Lehtinen et al., 2017). If so, antibiotic-resistant pneumococcal strains may have had an advantage during the lockdown period due to smaller clearance rates, ultimately leading to an increase in antibiotic resistance. Finally, among individuals with COVID-19, potential within-host interactions between SARS-CoV-2 and S. pneumoniae could also have had an impact on bacterial colonization and infection dynamics (Amin-Chowdhury et al., 2021).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85701/elife-85701-fig2-v2.jpg)
 
-**Figure 2.:** Streptococcus pneumoniae in the community setting, in the context of both general antibiotic prescribing and azithromycin prescribing for COVID-19 infected individuals.(A) Non-pharmaceutical interventions (NPIs) implemented to control SARS-CoV-2 transmission (lockdown, face mask use, improved hygiene practices, travel restrictions, quarantine, telemedicine, and physical distancing) may also modify transmission of other pathogens, in addition to impacting antibiotic prescribing due to altered inter-individual contact and health-care seeking behavior. (B) SEIR (Susceptible-Exposed-Infected-Recovered) model with antibiotic treatment compartments depicts interaction between SARS-CoV-2 infection and antibiotic prescribing, including both general community prescribing and azithromycin prescribing among individuals infected with SARS-CoV-2. (C) Diagram depicting how pneumococcal colonization and the community antibiotic prescribing are affected by the COVID-19 pandemic impacts. Initiation of antibiotic treatment is assumed independent of bacterial carriage, reflecting widespread bystander selection for commensal bacteria like S. pneumoniae. For a complete modeling framework, see section S2 in Supporting Information.
+**Figure 2.:** (A) Non-pharmaceutical interventions (NPIs) implemented to control SARS-CoV-2 transmission (lockdown, face mask use, improved hygiene practices, travel restrictions, quarantine, telemedicine, and physical distancing) may also modify transmission of other pathogens, in addition to impacting antibiotic prescribing due to altered inter-individual contact and health-care seeking behavior. (B) SEIR (Susceptible-Exposed-Infected-Recovered) model with antibiotic treatment compartments depicts interaction between SARS-CoV-2 infection and antibiotic prescribing, including both general community prescribing and azithromycin prescribing among individuals infected with SARS-CoV-2. (C) Diagram depicting how pneumococcal colonization and the community antibiotic prescribing are affected by the COVID-19 pandemic impacts. Initiation of antibiotic treatment is assumed independent of bacterial carriage, reflecting widespread bystander selection for commensal bacteria like S. pneumoniae. For a complete modeling framework, see section S2 in Supporting Information.
 
 To test mechanistic impacts of responses to the COVID-19 pandemic on pneumococcal epidemiology, we developed a compartmental, deterministic transmission model describing infection with SARS-CoV-2 being introduced on 1 Jan 2020 (Figure 2B) after colonization with S. pneumoniae reached an equilibrium in a large, well-mixed human population (Figure 2C). Two lockdowns were implemented in the model in agreement with the two lockdowns implemented in France in 2020. The model was parameterized to S. pneumoniae and five mechanisms were built in into the model: (1) a population-wide reduction of antibiotic prescriptions in the community by 18% due to the reduced healthcare-seeking behavior, (2) lockdown reducing pneumococcal transmission by 25%, (3) a reduced risk of developing an IPD from asymptomatic carriage due to the absence of common respiratory viruses during the first lockdown (reduced by a factor IPDrisk = 0.2), which continues after the first lockdown, albeit at a diminished level (IPDrisk = 0.4), (4) community azithromycin use in 10% of COVID-19 infected individuals, (5) and a longer carriage duration of antibiotic-resistant pneumococcal strains giving them a fitness advantage over antibiotic-resistant strains (40 vs 30 days).
 
-## Exploring the mechanisms and identifying the optimal scenario for explaining reported trends
+### Exploring the mechanisms and identifying the optimal scenario for explaining reported trends
 
 We conducted assessments on five distinct hypotheses, each characterized by a precise underlying mechanism, and explored these hypotheses in combination within 31 pandemic scenarios, along with two pre-pandemic (baseline) scenarios, which assume no SARS-CoV-2 circulation in the population and allow for the same 30-day carriage duration (pre-pandemic 1) of both antibiotic-sensitive and -resistant strains (ds=dR) or a longer, 40-day carriage duration (pre-pandemic 2) of -resistant strains (ds> dR) (Table 1).
+
+**Table 1.**
+ Five mechanisms implemented in 31 pandemic scenarios proposed to explain the reported trends of IPD incidence, antibiotic resistance, and pneumococcal carriage in S. pneumoniae.Scenarios explore all possible combinations of mechanisms proposed to test hypotheses that can explain the reported trends of annual invasive pneumococcal disease incidence (annual no. of cases per 100,000 inhabitants), antibiotic resistance (% of annual antibiotic-resistant IPD cases among total IPD cases), and % change in the pneumococcal carriage prevalence at the end of the first 60-day lockdown compared the prevalence before the lockdown. Model simulations were initiated assuming the initial 20% antibiotic resistance. Two pre-pandemic scenarios assume no SARS-CoV-2 circulation in the population and allow for the same 30-day carriage duration of both antibiotic-sensitive and -resistant strains (dS = dR) or a longer, 40-day carriage duration of -resistant strains (dR > dS) . When implemented, these five mechanisms assume 18% reduction in community antibiotic prescribing, a reduced risk of developing an IPD during (0.2) and after the first lockdown (0.4), a 25% reduction in transmission of pneumococcal carriage during the first lockdown, a 10% of azithromycin use among COVID-19 infected individuals, and a longer 40-day carriage duration of -resistant strains. For a full list of parameters see Appendix 2—table 2. Reported trends in European countries showed a decrease in annual IPD incidence by 44.3% on average, an increase in antibiotic resistance, and generally stable asymptomatic pneumococcal carriage in healthy individuals during the first lockdown period. Only scenarios S19 and S29 fulfill all three reported trends during the COVID-19 pandemic in 2020 simultaneously while accounting for the reported reduction in community antibiotic prescribing ($d_{S}$ = carriage duration of antibiotic-sensitive pneumococcal strains; $d_{R}$ = carriage duration of antibiotic-resistant pneumococcal strains; PENI = penicillin; ERY = erythromycin).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="9"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Scenarios</td>
+      <td colspan="5">Mechanisms</td>
+      <td rowspan="2">IPD inc.</td>
+      <td rowspan="2">AR (%)</td>
+      <td rowspan="2">Sp. (%)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Pre-pandemic 1: (dS = dR)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>10.8</td>
+      <td>20.0</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Pre-pandemic 2: (dR &gt; dS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>11.3</td>
+      <td>20.0</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Pandemic: S1</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>10.9</td>
+      <td>19.2</td>
+      <td>+1.3</td>
+    </tr>
+    <tr>
+      <td>S2</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>8.9</td>
+      <td>20.1</td>
+      <td>–36.1</td>
+    </tr>
+    <tr>
+      <td>S3</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>5.9</td>
+      <td>20.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>9.9</td>
+      <td>23.7</td>
+      <td>–9.1</td>
+    </tr>
+    <tr>
+      <td>S5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>11.3</td>
+      <td>20.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S6</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>9.1</td>
+      <td>19.4</td>
+      <td>–35.2</td>
+    </tr>
+    <tr>
+      <td>S7</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>6.0</td>
+      <td>19.4</td>
+      <td>+1.3</td>
+    </tr>
+    <tr>
+      <td>S8</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>10.1</td>
+      <td>22.9</td>
+      <td>–8.0</td>
+    </tr>
+    <tr>
+      <td>S9</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>11.5</td>
+      <td>19.3</td>
+      <td>+1.3</td>
+    </tr>
+    <tr>
+      <td>S10</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>5.2</td>
+      <td>20.0</td>
+      <td>–36.1</td>
+    </tr>
+    <tr>
+      <td>S11</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>8.9</td>
+      <td>20.1</td>
+      <td>–36.1</td>
+    </tr>
+    <tr>
+      <td>S12</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>9.4</td>
+      <td>20.9</td>
+      <td>–34.3</td>
+    </tr>
+    <tr>
+      <td>S13</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>5.6</td>
+      <td>22.5</td>
+      <td>–9.1</td>
+    </tr>
+    <tr>
+      <td>S14</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>6.2</td>
+      <td>20.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>10.4</td>
+      <td>23.4</td>
+      <td>–9.1</td>
+    </tr>
+    <tr>
+      <td>S16</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>5.3</td>
+      <td>19.6</td>
+      <td>–35.2</td>
+    </tr>
+    <tr>
+      <td>S17</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>8.3</td>
+      <td>22.4</td>
+      <td>–41.3</td>
+    </tr>
+    <tr>
+      <td>S18</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>9.6</td>
+      <td>20.3</td>
+      <td>–33.5</td>
+    </tr>
+    <tr>
+      <td>S19</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>5.7</td>
+      <td>22.0</td>
+      <td>–8.0</td>
+    </tr>
+    <tr>
+      <td>S20</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>6.3</td>
+      <td>19.5</td>
+      <td>+1.3</td>
+    </tr>
+    <tr>
+      <td>S21</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>10.6</td>
+      <td>22.7</td>
+      <td>–7.9</td>
+    </tr>
+    <tr>
+      <td>S22</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>5.0</td>
+      <td>22.0</td>
+      <td>–42.1</td>
+    </tr>
+    <tr>
+      <td>S23</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>5.5</td>
+      <td>20.6</td>
+      <td>–34.3</td>
+    </tr>
+    <tr>
+      <td>S24</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>8.7</td>
+      <td>23.9</td>
+      <td>–40.2</td>
+    </tr>
+    <tr>
+      <td>S25</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>5.9</td>
+      <td>22.3</td>
+      <td>–9.1</td>
+    </tr>
+    <tr>
+      <td>S26</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>5.0</td>
+      <td>21.6</td>
+      <td>–41.3</td>
+    </tr>
+    <tr>
+      <td>S27</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>5.6</td>
+      <td>20.1</td>
+      <td>–33.5</td>
+    </tr>
+    <tr>
+      <td>S28</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>8.8</td>
+      <td>23.2</td>
+      <td>–39.4</td>
+    </tr>
+    <tr>
+      <td>S29</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>5.9</td>
+      <td>21.8</td>
+      <td>–7.9</td>
+    </tr>
+    <tr>
+      <td>S30</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>5.2</td>
+      <td>22.5</td>
+      <td>–40.2</td>
+    </tr>
+    <tr>
+      <td>S31</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>5.3</td>
+      <td>22.1</td>
+      <td>–39.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>REPORTED TRENDS:</td>
+      <td colspan="4">IPD inc.</td>
+      <td colspan="3">AR (%)</td>
+      <td>Sp. (%)</td>
+    </tr>
+    <tr>
+      <td>Pre-pandemic (FR, 2019)</td>
+      <td colspan="4">10.5 [10.3–10.7]</td>
+      <td colspan="3">26.2 (PENI) and 20.9 (ERY)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Pandemic (FR, 2020)</td>
+      <td colspan="4">5.8 [5.7–5.9]</td>
+      <td colspan="3">35.5 (PENI) and 23.0 (ERY)</td>
+      <td>Stable</td>
+    </tr>
+    <tr>
+      <td>Pandemic (EU/EEA, 2020)General trends</td>
+      <td colspan="4">Decrease by 44.3% on avg.</td>
+      <td colspan="3">Majority of EU countries report an increase</td>
+      <td>Generally stable</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mechanisms: (1) Reduced community antibiotic prescribing; (2) Lockdown effect on reducing transmission of S. pneumoniae; (3) Reduced risk of developing an IPD; (4) Community azithromycin use in COVID-19 infected individuals; (5) Longer carriage duration of antibiotic-resistant pneumococcal strains._
 
 We assessed how different combinations of mechanisms may impact: (i) a change in the annual IPD incidence as compared to the pre-pandemic (baseline) period, (ii) antibiotic resistance rate in IPDs, defined as the annual number of antibiotic-resistant IPD cases over the total number of IPD cases, and (iii) daily prevalences of antibiotic-resistant and total pneumococcal carriage in a simulated population of 100,000 individuals (see Appendix 2—table 2 for parameter values). To identify scenarios most compatible with the reported trends, results from model simulations were compared to reported data trends from France in 2020 and more broadly to general EU/EEA reported trends that followed similar patterns. Surprisingly only two scenarios were compatible with reported trends. Scenarios S19 and S29 univocally reproduced increased antibiotic resistance in the general population (AR%) accompanied by a reduction in the annual IPD incidence by almost 50% (IPD inc) with generally stable pneumococcal carriage prevalence in healthy individuals during lockdown (Sp.). In contrast, model simulations revealed that a reduction in the community antibiotic consumption alone (–18%) could not explain the reported trends and generally led to a reduction of antibiotic resistance (Table 1, see scenario S1). Assuming a longer duration of antibiotic-resistant pneumococcal carriage alone did not explain either the rise in antibiotic resistance (Table 1, see scenario S5). Hypothesizing that lockdown reduced the transmission of pneumococcal carriage (by 25%) in addition to a reduced community antibiotic prescribing did not seem probable since, in simulations, this yielded a major reduction in pneumococcal carriage during containment measures in all scenarios where this mechanism was implemented. On the other hand, considering an indirect impact of lockdown on pneumococcal carriage where we implemented a reduction factor for the risk of developing and IPD from otherwise asymptomatic carriage due to the absence of viral respiratory infections during (IPDrisk = 0.2) and after lockdown (IPDrisk = 0.4) reproduced the reported reduction in the annual IPD incidence while maintaining a stable prevalence of pneumococcal carriage during lockdown (Table 1, see scenario S3). By itself however, this scenario did not allow to observe an increase in antibiotic resistance.
 
 When we combined reduced antibiotic prescribing and a reduced risk of developing an IPD with community azithromycin use in a proportion of COVID-19 infected individuals, which remains in the body for an additional 15.5 days after the last dose, in a single scenario, this scenario satisfied the observed trends in AMR (Table 1, see scenario S19). A similar outcome was observed in scenario S29 when adding a longer carriage duration of antibiotic resistant strains on top of this, however, in the absence of community azithromycin use in COVID-19 infected (Table 1, see scenario S1, S5, S3, S19, and S20) trends of increasing antibiotic resistance cannot be reproduced. Therefore, our best model scenario for describing the observed trends combined: (1) a reduction in the overall community antibiotic consumption; (2) the assumption that lockdown effectively reduced SARS-CoV-2 transmission including transmission of other respiratory viruses, but not pneumococcal carriage transmission, indirectly reducing the risk of developing an IPD; (3) either identical or longer carriage durations of antibiotic-resistant strains compared to antibiotic-sensitive strains, and (4) the community azithromycin use in a proportion of COVID-19 infected individuals.
 
-## Effect of age
+### Effect of age
 
 Next, we used the pandemic scenario S19 that best explains the reported trends to test the model using different parameter combinations to mimic different subpopulations (children and the elderly) considering that SARS-CoV-2 infection risk, pneumococcal disease risk, disease severity, bacterial carriage prevalence, and antibiotic prescribing are all highly heterogeneous across age groups. Using scenario S19, we initialized the model with lower and higher baseline carriage prevalence (10%, 20%, and 30%) (Cohen et al., 2023; Rose et al., 2021; Rybak et al., 2022; Tinggaard et al., 2023; Wang et al., 2017), we varied durations of pneumococcal carriage (20, 30, and 45 days), pneumococcal invasion rate, and considered reductions of antibiotic consumption at various levels (–13%, –18%, and –39%) consistent with the French data along with a range of community azithromycin use in COVID-19 infected (0–20%). For a full list of parameters see Appendix 2—table 2. Simulations showed that annual IPD incidence decreased between 43% and 51% compared to the pre-pandemic (baseline) scenario for children, the elderly, and the general population (Figure 3, grey bars). Although the overall antibiotic prescribing in the community was reduced (between 13% and 39%), antibiotic resistance is expected to increase (from 20.1% up to 23.6% in the elderly and from 32.8% up to 36.0% in children) compared to the pre-pandemic period in all age groups and in all scenarios where azithromycin was used in COVID-19 infected individuals (Figure 3, red bars). Daily prevalence of total pneumococcal carriage remained relatively stable, exhibiting higher levels of decrease with increased azithromycin use, while the prevalence of antibiotic-resistant pneumococcal carriage is expected to increase since clearance of antibiotic-susceptible strains due to azithromycin use shifts the competitive balance in favor of the existing resistant strains (Figure 3, third panel).
 
@@ -85,15 +516,15 @@ Next, we used the pandemic scenario S19 that best explains the reported trends t
 
 General trends produced in model simulations using scenario S19 remained unchanged across different age groups. The extent of the impact depended on the combined magnitude of a decrease in the general antibiotic use in the community and a degree of azithromycin use in COVID-19 infected individuals belonging to a particular age group or a subpopulation. In the elderly (≥65 years-old) and the general population, antibiotic resistance is expected to increase due to azithromycin use in COVID-19 infected. Black arrows indicate model outcomes that approximate the reported trends in antibiotic resistance in France for different age groups including general population (Figure 3). Only in instances when there was no azithromycin use in COVID-19 infected individuals, we observed a decrease in antibiotic resistance relative to the pre-pandemic period (e.g. children <5 years-old). When combining the largest decrease in overall antibiotic use with no or minimal azithromycin use in COVID-19 infected individuals, we expect to see the largest decrease or no change in antibiotic resistance relative to the pre-pandemic period.
 
-## Effect of SARS-CoV-2 basic reproduction number (R0) and within-host pathogen interactions on AMR
+### Effect of SARS-CoV-2 basic reproduction number (R0) and within-host pathogen interactions on AMR
 
 Considering that model simulations reproduced an absolute increase in antibiotic resistance comparable to that of 2% reported for macrolides in France but did not reproduce the reported larger increase in penicillin resistance, which was more than a 9% rise (35.5% relative increase) in France, we explored additional factors that may have amplified this increase. Using model scenario S19, we show that an association between higher values of SARS-CoV-2 R0 and a greater percentage of COVID-19 infected individuals taking azithromycin leads to increased cumulative incidence of antibiotic-resistant IPDs and elevated antibiotic resistance (Figure 4A). For example, if pre-lockdown R0 of SARS-CoV-2 was 3.8 instead of 3.2, model simulations predict an increase of 3.5% (23.5%) in antibiotic resistance from the pre-pandemic levels instead of 2%. As the R0 value increases, the impact of azithromycin use becomes more pronounced.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85701/elife-85701-fig4-v2.jpg)
 
-**Figure 4.:** 0 and percentage of COVID-19 infected individuals taking azithromycin in scenario S19 on antibiotic resistance (%) and the annual incidence of antibiotic-resistant invasive pneumococcal disease (IPD).Hypothetical within-host interactions contribute to an excess incidence of antibiotic-resistant IPDs. (A) Cumulative incidence of antibiotic-resistant IPDs and antibiotic resistance increase with greater values of SARS-CoV-2 R0 and higher percentage of the COVID-19 infected individuals taking azithromycin. The reproduction number for SARS-CoV-2 (R0) in the community corresponds to the most common estimates of R0 in France and other European countries ranging from R0=2–4 (Allieta et al., 2022; D’Arienzo and Coniglio, 2020; Di Domenico et al., 2020; Flaxman et al., 2020; Liu et al., 2020; Roux et al., 2020; Salje et al., 2020). (B) Annual excess in cumulative antibiotic-resistant IPD incidence in scenario S19 due to synergistic within-host ecological interactions compared to the same scenario with no within-host interactions and no azithromycin use (1.17 resistant IPD cases/100,000 inhabitants). A rate of disease progression increased by a factor  (no within-host interaction) and ψc=1 in scenario S19 applied to the general population assuming azithromycin use in 10% of the infected individuals resulted in approximately 0.06 and 0.75 additional cases of antibiotic-resistant disease per 100,000 inhabitants over the course of 1 year, respectively, compared to the scenario S19 assuming no within-host interaction and no azithromycin use (indicated by the black arrow). For more details, see ψc=40Appendix 2—figure 1.
+**Figure 4.:** Hypothetical within-host interactions contribute to an excess incidence of antibiotic-resistant IPDs. (A) Cumulative incidence of antibiotic-resistant IPDs and antibiotic resistance increase with greater values of SARS-CoV-2 R0 and higher percentage of the COVID-19 infected individuals taking azithromycin. The reproduction number for SARS-CoV-2 (R0) in the community corresponds to the most common estimates of R0 in France and other European countries ranging from R0=2–4 (Allieta et al., 2022; D’Arienzo and Coniglio, 2020; Di Domenico et al., 2020; Flaxman et al., 2020; Liu et al., 2020; Roux et al., 2020; Salje et al., 2020). (B) Annual excess in cumulative antibiotic-resistant IPD incidence in scenario S19 due to synergistic within-host ecological interactions compared to the same scenario with no within-host interactions and no azithromycin use (1.17 resistant IPD cases/100,000 inhabitants). A rate of disease progression increased by a factor $ψ_{c}=1$ (no within-host interaction) and $ψ_{c}=40$ in scenario S19 applied to the general population assuming azithromycin use in 10% of the infected individuals resulted in approximately 0.06 and 0.75 additional cases of antibiotic-resistant disease per 100,000 inhabitants over the course of 1 year, respectively, compared to the scenario S19 assuming no within-host interaction and no azithromycin use (indicated by the black arrow). For more details, see Appendix 2—figure 1.
 
-Assuming within-host interactions where SARS-CoV-2 infection favors progression from pneumococcal colonization to disease (ψc>1) , we found that surges in COVID-19 cases accompanied by increasing levels of azithromycin use lead to excess number of cases caused by antibiotic-resistant strains. Indeed, a rate of disease progression increased by a factor ψc=40 in scenario S19 with 10% of infected using azithromycin applied to the general population results in approximately 0.75 additional cases of antibiotic-resistant disease per 100,000 inhabitants over the course of 1 year compared to 0.06 additional cases if there are no within-host interactions (Figure 4B). This represents 5% rise in resistance from the pre-pandemic levels (25% relative increase).
+Assuming within-host interactions where SARS-CoV-2 infection favors progression from pneumococcal colonization to disease $(ψ_{c}>1)$ , we found that surges in COVID-19 cases accompanied by increasing levels of azithromycin use lead to excess number of cases caused by antibiotic-resistant strains. Indeed, a rate of disease progression increased by a factor $ψ_{c}=40$ in scenario S19 with 10% of infected using azithromycin applied to the general population results in approximately 0.75 additional cases of antibiotic-resistant disease per 100,000 inhabitants over the course of 1 year compared to 0.06 additional cases if there are no within-host interactions (Figure 4B). This represents 5% rise in resistance from the pre-pandemic levels (25% relative increase).
 
 ## Discussion
 
@@ -119,26 +550,26 @@ In conclusion, we introduce the first epidemiological model outlining the impact
 
 ## Methods
 
-## Streptococcus pneumoniae surveillance data
+### Streptococcus pneumoniae surveillance data
 
 Antibiotic resistance trends reported in 2019 and 2020, provided by EARS-Net (European Antimicrobial Resistance Surveillance Network) were acquired from a joint 2022 report on AMR during 2020 by WHO and ECDC (European Centre for Disease Prevention and Control and World Health Organization, 2022). The annual incidence of S. pneumoniae invasive isolates for 2019 and 2020 was measured as the number of invasive isolates from blood or cerebrospinal fluid. The proportion of resistant isolates represents the proportion of isolates with phenotypic resistance to penicillin and macrolides using standardized bacterial culture methods and EUCAST breakpoints. Out of 28 European countries that reported antibiotic resistance data for S. pneumoniae, 24 countries had enough samples to establish 2019–2020 resistance trends for penicillin and macrolides. The resistance data for France, which were subsequently analyzed, were provided by the CNRP (The French National Reference Center for Pneumococci).
 
-## Model structure
+### Model structure
 
-We developed a pathogen co-circulation model (Appendix 2—figure 2) written using systems of ordinary differential equations (ODEs) (Appendix 2-Equations; code available on GitHub, copy archived at Kovacevic, 2024). The model simultaneously describes potential infection with SARS-CoV-2 and colonization with antibiotic-sensitive and/or -resistant strains of S. pneumoniae in a well-mixed community population. SARS-CoV-2 infection is modeled by a Susceptible-Exposed-Infectious-Recovered (SEIR) process where individuals become exposed to SARS-CoV-2 at rate βC upon contact with other infected individuals. Infection begins with a non-infectious exposed period lasting 1/εdays and is followed by an infectious period lasting 1/γC days, eventually leading to recovery and immunization against future re-infection. Waning immunity and competitive multi-strain SARS-CoV-2 dynamics are not considered.
+We developed a pathogen co-circulation model (Appendix 2—figure 2) written using systems of ordinary differential equations (ODEs) (Appendix 2-Equations; code available on GitHub, copy archived at Kovacevic, 2024). The model simultaneously describes potential infection with SARS-CoV-2 and colonization with antibiotic-sensitive and/or -resistant strains of S. pneumoniae in a well-mixed community population. SARS-CoV-2 infection is modeled by a Susceptible-Exposed-Infectious-Recovered (SEIR) process where individuals become exposed to SARS-CoV-2 at rate βC upon contact with other infected individuals. Infection begins with a non-infectious exposed period lasting 1/εdays and is followed by an infectious period lasting $1/\gamma^{C}$ days, eventually leading to recovery and immunization against future re-infection. Waning immunity and competitive multi-strain SARS-CoV-2 dynamics are not considered.
 
-Individuals in S, E, I, and R compartments can be uncolonized with S. pneumoniae (U), colonized with either a drug-sensitive (CS) or a drug-resistant strain (CR), or co-colonized with two strains (CSS, CRR, CSR). Colonization with each respective strain is acquired at rates βS and βsf upon contact with other colonized individuals (Appendix 2—table 2). We assume a metabolic cost of resistance, whereby the drug-resistant strain has a reduced intrinsic transmission rate relative to the drug-sensitive strain due to reduced fitness, f. Bacterial carriage is cleared naturally after an average duration of 1γS=1γR=1γSR=1γSS=1γRR days, which we assume to be the same for all types of carriers in our baseline scenario (in the scenarios assuming longer carriage duration of antibiotic-resistant strains, 1γS=1γSS and 1γR=1γSR=1γRR). We further assume that some share of the population is exposed to antibiotics at any given time, independent of bacterial carriage, with individuals initiating antibiotic therapy at rate τ, which lasts for an average duration of 1r days. Another model assumption is that a proportion paz of those infected with COVID-19 in the community (between 0% and 20% of individuals in an I compartment) receive azithromycin prescription from general practitioner reflecting azithromycin prescriptions in the early pandemic, while the rest of the infectious individuals (1-paz) are exposed to the baseline antibiotic therapy. We assume baseline treatment duration of 7 days, on average, regardless of the antibiotic prescribed and without any assumed persistence of the antibiotic in the system after the last dose 1r . In case of antibiotic treatment with azithromycin for COVID-19 infected individuals we assume the treatment lasts three days with antibiotics remaining in the system for additional 15.5 days after the last dose for a total of 18.5 days of antibiotic exposure where COVID-19 recovered individuals Raz treated with azithromycin retain azithromycin in their system for an additional 11.5 days 1raz after COVID-19 recovery. Individuals treated with antibiotics are unable to acquire the sensitive strain. Antibiotics are assumed to clear colonization with sensitive strains at a rate ω while having no direct impact on colonization with resistant strains. This bacterial colonization process results in antibiotic selection for resistance via competition for limited hosts, facilitates epidemiological coexistence between strains and is adapted from previous models of S. pneumoniae (Colijn et al., 2010; Lipsitch et al., 2009; Mulberry et al., 2020). For a full list of parameter values see Appendix 2—table 2.
+Individuals in S, E, I, and R compartments can be uncolonized with S. pneumoniae (U), colonized with either a drug-sensitive (CS) or a drug-resistant strain (CR), or co-colonized with two strains (CSS, CRR, CSR). Colonization with each respective strain is acquired at rates $\beta_{S}$ and $\beta_{s}f$ upon contact with other colonized individuals (Appendix 2—table 2). We assume a metabolic cost of resistance, whereby the drug-resistant strain has a reduced intrinsic transmission rate relative to the drug-sensitive strain due to reduced fitness, f. Bacterial carriage is cleared naturally after an average duration of $\frac{1}{\gamma^{S}}=\frac{1}{\gamma^{R}}=\frac{1}{\gamma^{SR}}=\frac{1}{\gamma^{SS}}=\frac{1}{\gamma^{RR}}$ days, which we assume to be the same for all types of carriers in our baseline scenario (in the scenarios assuming longer carriage duration of antibiotic-resistant strains, $\frac{1}{\gamma^{S}}=\frac{1}{\gamma^{SS}}$ and $\frac{1}{\gamma^{R}}=\frac{1}{\gamma^{SR}}=\frac{1}{\gamma^{RR}}$). We further assume that some share of the population is exposed to antibiotics at any given time, independent of bacterial carriage, with individuals initiating antibiotic therapy at rate $\tau$, which lasts for an average duration of $\frac{1}{r}$ days. Another model assumption is that a proportion $p_{az}$ of those infected with COVID-19 in the community (between 0% and 20% of individuals in an I compartment) receive azithromycin prescription from general practitioner reflecting azithromycin prescriptions in the early pandemic, while the rest of the infectious individuals ($1-p_{az}$) are exposed to the baseline antibiotic therapy. We assume baseline treatment duration of 7 days, on average, regardless of the antibiotic prescribed and without any assumed persistence of the antibiotic in the system after the last dose $\frac{1}{r}$ . In case of antibiotic treatment with azithromycin for COVID-19 infected individuals we assume the treatment lasts three days with antibiotics remaining in the system for additional 15.5 days after the last dose for a total of 18.5 days of antibiotic exposure where COVID-19 recovered individuals $R_{az}$ treated with azithromycin retain azithromycin in their system for an additional 11.5 days $\frac{1}{r_{az}}$ after COVID-19 recovery. Individuals treated with antibiotics are unable to acquire the sensitive strain. Antibiotics are assumed to clear colonization with sensitive strains at a rate $\omega$ while having no direct impact on colonization with resistant strains. This bacterial colonization process results in antibiotic selection for resistance via competition for limited hosts, facilitates epidemiological coexistence between strains and is adapted from previous models of S. pneumoniae (Colijn et al., 2010; Lipsitch et al., 2009; Mulberry et al., 2020). For a full list of parameter values see Appendix 2—table 2.
 
-## Simulation in an early COVID-19 pandemic context
+### Simulation in an early COVID-19 pandemic context
 
 ODEs were integrated numerically using the R package deSolve to simulate and quantify epidemiological dynamics (Soetaert et al., 2010). First, bacterial dynamics were simulated until endemic equilibrium was achieved, under the assumption that S. pneumoniae was at endemic equilibrium upon the emergence of COVID-19. Second, using equilibrium states as initial conditions and re-initializing simulation time to t=0, a single SARS-CoV-2 infected individual was introduced into the population and ODEs were again integrated numerically to t=365 days. Parameter values used for simulation were taken from prior studies prioritizing French data and are provided in Appendix 2—table 2.
 
-These simulations were conducted in the context of an ‘early pandemic scenario’ coinciding with the implementation of population-wide NPIs to slow SARS-CoV-2 transmission. This was conceived as the implementation of two 60 day lockdown periods starting on day 75 and on day 305 in response to the simulated surge in COVID-19 cases. Lockdowns were assumed to have three major potential impacts on population behavior and, in turn, the transmission dynamics of SARS-CoV-2 and S. pneumoniae. These impacts were incorporated into simulations by modifying epidemiological parameters in the model coincident with lockdowns. Three such modifications were considered and switched on and off, considering all possible combinations. First, lockdown led to reduced SARS-CoV-2 transmissibility by a factor θc . Second, lockdown led to a population-wide change in antibiotic initiation rate by a factor a (representing modified healthcare-seeking behavior leading to a reduction in the number of antibiotic prescriptions). Finally, lockdowns changed the pneumococcal disease risk by a factor IPDrisk (representing a reduced risk of developing an IPD due to the absence of other respiratory viruses).
+These simulations were conducted in the context of an ‘early pandemic scenario’ coinciding with the implementation of population-wide NPIs to slow SARS-CoV-2 transmission. This was conceived as the implementation of two 60 day lockdown periods starting on day 75 and on day 305 in response to the simulated surge in COVID-19 cases. Lockdowns were assumed to have three major potential impacts on population behavior and, in turn, the transmission dynamics of SARS-CoV-2 and S. pneumoniae. These impacts were incorporated into simulations by modifying epidemiological parameters in the model coincident with lockdowns. Three such modifications were considered and switched on and off, considering all possible combinations. First, lockdown led to reduced SARS-CoV-2 transmissibility by a factor $\theta_{c}$ . Second, lockdown led to a population-wide change in antibiotic initiation rate by a factor a (representing modified healthcare-seeking behavior leading to a reduction in the number of antibiotic prescriptions). Finally, lockdowns changed the pneumococcal disease risk by a factor $IPD_{risk}$ (representing a reduced risk of developing an IPD due to the absence of other respiratory viruses).
 
-## Effect of SARS-CoV-2 basic reproduction number (R0) on AMR
+#### Effect of SARS-CoV-2 basic reproduction number (R0) on AMR
 
-Impacts of SARS-CoV-2 on antibiotic-resistant IPD incidence may also depend on the characteristics of locally circulating SARS-CoV-2 R0. To account for potential impacts of SARS-CoV-2 transmissibility and azithromycin use in the community, in simulations we varied (i) values of R0 (basic reproduction number) for SARS-CoV-2 in France (2≤R0≤4) and (ii) the proportion of the COVID-19 infected individuals using azithromycin at simulation outset (from 0% to 20%).
+Impacts of SARS-CoV-2 on antibiotic-resistant IPD incidence may also depend on the characteristics of locally circulating SARS-CoV-2 R0. To account for potential impacts of SARS-CoV-2 transmissibility and azithromycin use in the community, in simulations we varied (i) values of R0 (basic reproduction number) for SARS-CoV-2 in France ($2\leqR_{0}\leq4$) and (ii) the proportion of the COVID-19 infected individuals using azithromycin at simulation outset (from 0% to 20%).
 
-## Effect of within-host interactions on AMR
+#### Effect of within-host interactions on AMR
 
-SARS-CoV-2 infection may impact progression from bacterial colonization to IBD at the within-host level. To incorporate this mechanism in our model, we included a within-host interaction term in scenario S19: the ecological interaction term (ψc) increases the rate of progression to invasive disease among colonized individuals who are also infected with SARS-CoV-2. The equations for calculating daily IPD incidence assuming within-host interactions due to SARS-CoV-2 co-infection with accompanying details can be found in Appendix 2.
+SARS-CoV-2 infection may impact progression from bacterial colonization to IBD at the within-host level. To incorporate this mechanism in our model, we included a within-host interaction term in scenario S19: the ecological interaction term $(ψ_{c})$ increases the rate of progression to invasive disease among colonized individuals who are also infected with SARS-CoV-2. The equations for calculating daily IPD incidence assuming within-host interactions due to SARS-CoV-2 co-infection with accompanying details can be found in Appendix 2.

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.46348.001 Artificial stimulation of Agouti-Related Peptide (AgRP) neurons promotes intense food consumption, yet paradoxically during natural behavior these cells are inhibited before feeding begins. Previously, to reconcile these observations, we showed that brief stimulation of AgRP neurons can generate hunger that persists for tens of minutes, but the mechanisms underlying this sustained hunger drive remain unknown (Chen et al., 2016). Here we show that Neuropeptide Y (NPY) is uniquely required for the long-lasting effects of AgRP neurons on feeding behavior. We blocked the ability of AgRP neurons to signal through AgRP, NPY, or GABA, and then stimulated these cells using a paradigm that mimics their natural regulation. Deletion of NPY, but not AgRP or GABA, abolished optically-stimulated feeding, and this was rescued by NPY re-expression selectively in AgRP neurons. These findings reveal a unique role for NPY in sustaining hunger in the interval between food discovery and consumption.
+Artificial stimulation of Agouti-Related Peptide (AgRP) neurons promotes intense food consumption, yet paradoxically during natural behavior these cells are inhibited before feeding begins. Previously, to reconcile these observations, we showed that brief stimulation of AgRP neurons can generate hunger that persists for tens of minutes, but the mechanisms underlying this sustained hunger drive remain unknown (Chen et al., 2016). Here we show that Neuropeptide Y (NPY) is uniquely required for the long-lasting effects of AgRP neurons on feeding behavior. We blocked the ability of AgRP neurons to signal through AgRP, NPY, or GABA, and then stimulated these cells using a paradigm that mimics their natural regulation. Deletion of NPY, but not AgRP or GABA, abolished optically-stimulated feeding, and this was rescued by NPY re-expression selectively in AgRP neurons. These findings reveal a unique role for NPY in sustaining hunger in the interval between food discovery and consumption.
 
 ## Introduction
 
@@ -30,6 +30,18 @@ AgRP neurons are a small population of cells in the arcuate nucleus of the hypot
 Although AgRP neurons are gradually activated during fasting, they are inhibited within seconds when a hungry animal sees or smells food (Betley et al., 2015; Chen et al., 2015; Mandelblat-Cerf et al., 2015). Paradoxically, this rapid inhibition of AgRP neurons often occurs before a single bite of food has been consumed and then persists for the duration of the ensuing meal. These observations raise the question of how AgRP neuron activity is able to drive food consumption, given that these neurons are inhibited during the act of feeding itself (Chen and Knight, 2016).
 
 To reconcile these observations, we hypothesized that AgRP neurons may transmit a long-lasting signal that continues to drive food consumption even after AgRP neurons have been inhibited by food cues (Chen and Knight, 2016). Consistent with this, we showed that brief optogenetic stimulation of AgRP neurons in the absence of food can drive voracious food intake tens of minutes later, long after AgRP neuron stimulation has been terminated (Chen et al., 2016). This indicates that AgRP neurons can generate an unusual ‘sustained hunger drive’ that outlasts their acute firing (Figure 1A). The mechanisms underlying this long-lasting potentiation of feeding behavior are unknown.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig1-v2.jpg)
+
+**Figure 1.:** (a) AgRP neurons are rapidly inhibited by food presentation but nevertheless promote food intake through a sustained hunger signal. (b) System for measuring food intake in response to activation of AgRP neurons in animals with blockade of signaling through AgRP, GABA or NPY (indicated as -) or littermate controls (indicated as +). (c) Raster plot showing pellet consumption of mice with different genotypes in response to pre-stimulation of AgRP neurons (15 min). Each row shows a representative trial from an individual mouse. (d) Feeding behavior paradigm with variable pre-stimulation lengths (blue). (e-g) Food intake (1 hr) following pre-stimulation of variable lengths. Genotypes: AgRP+ (black; N = 10) and AgRP- (red; N = 5) (e), GABA+ (black; N = 6) and GABA- (red; N = 8) (f), and NPY+ (black; N = 7) and NPY- (red; N = 6) (g). (h) Feeding behavior paradigm with variable delay length inserted between the end of pre-stimulation and start of food availability. (i-k) Food intake (1 hr) following pre-stimulation (5 min) and delay of varying lengths. Genotypes: AgRP+ (black; N = 6) and AgRP- (red; N = 6) (i), GABA+ (black; N = 5) and GABA- (red; N = 7) (j), and NPY+ (black; N = 7) and NPY- (red; N = 4) (k). (l) Image of ARC from NPY- mice that received laser stimulation (30 min) in the absence of food before perfusion. Sample was stained for ChR2-EYFP (cyan) and Fos (magenta). (m) Logarithmic growth model of relationship between food intake and pre-stimulation duration (N = 23 mice). (n) Exponential decay model of the relationship between food intake and delay length (N = 18 mice). Error bars in e-g, i-k, m and n represent mean ± SEM. Holm-Sidak multiple comparisons test was used to report adjusted P-values in e-g and i-k. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 or ns (not significant) compares adjacent control (black) and experimental (red) group with same pre-stimulation protocol.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a–f) Raster plot of pellet intake (1 hr) by AgRP- (a), AgRP+ (d), GABA- (b), GABA+ (e), NPY- (c) and NPY+ (f) mice in response to pre-stimulation of variable length. Red color indicates cumulative food consumption at each time point. (g–l) Raster plot of pellet intake (1 hr) by AgRP- (g), AgRP+ (j), GABA- (h), GABA+ (k), NPY- (i) and NPY+ (l) mice in response to pre-stimulation (5 min) followed by a delay of variable length.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Bout size for food intake (1 hr) by AgRP+ (N = 10) and AgRP- (N = 5) (a), GABA+ (N = 6) and GABA- (N = 8) (b), and NPY+ (N = 7) and NPY- (N = 6) (c) mice in response to pre-stimulation of variable length. (d–f) Bout size for food intake (1 hr) by AgRP+ (N = 6) and AgRP- (N = 6) (d), GABA+ (N = 5) and GABA- (N = 7) (e), and NPY+ (N = 7) and NPY- (N = 4) (f) mice in response to pre-stimulation followed by a delay of variable length. (g–i) Bout number for food intake (1 hr) by AgRP+ (N = 10) and AgRP- (N = 5) (g), GABA+ (N = 6) and GABA- (N = 8) (h), and NPY+ (N = 7) and NPY- (N = 6) (i) mice in response to pre-stimulation of variable length. (j–l) Bout size for food intake (1 hr) by AgRP+ (N = 6) and AgRP- (N = 6) (j), GABA+ (N = 5) and GABA- (N = 7) (k), and NPY+ (N = 7) and NPY- (N = 4) (l) mice in response to pre-stimulation (5 min) followed by a delay of variable length.
 
 ## Results
 
@@ -57,6 +69,14 @@ NPY is expressed in cell types other than AgRP neurons. This raises the possibil
 
 We have focused here on the behavioral effects of AgRP neuron pre-stimulation (Chen et al., 2016). While this paradigm cannot replicate the precise details of asynchronous natural activity, it does mimic the broad features of the natural regulation of these cells (i.e. that AgRP neurons are more active before food discovery than during food consumption). In contrast, many earlier studies used a protocol in which AgRP neurons are stimulated concurrently with food consumption (Aponte et al., 2011; Atasoy et al., 2012; Betley et al., 2013; Betley et al., 2015). This protocol induces an activity pattern that is the opposite of what occurs naturally (i.e. greater AgRP neuron activity during feeding than before). To place our results in the context of this earlier work, we concurrently stimulated AgRP neurons using either chemogenetics (Figure 4A–C) or optogenetics (Figure 4E–H) and then measured food intake in NPY+ and NPY- mice. We found that concurrent chemogenetic stimulation increased food consumption in mice lacking NPY (Figure 4C,D and Figure 4—figure supplement 1), consistent with a previous report (Krashes et al., 2013). In contrast, during concurrent optogenetic stimulation NPY- mice consumed only a small fraction of the food consumed by NPY+ controls (Figure 4E,F). We could partially rescue food intake in NPY- mice by using a higher intensity optogenetic stimulation protocol (Figure 4F), whereas NPY+ controls showed no difference in food consumption between high and moderate intensity stimulation (high intensity refers to continuous 20 Hz stimulation, whereas moderate intensity refers to 20 Hz stimulation in a 2 s ON, 3 s OFF pattern; Figure 4G). This indicates that intense concurrent optogenetic stimulation of AgRP neurons can partially overcome the requirement for NPY, likely through increased release of GABA (Atasoy et al., 2012; Krashes et al., 2013; Tong et al., 2008). It remains unclear why concurrent chemogenetic stimulation of AgRP neurons does not also require NPY to induce feeding (Figure 4C,D and Krashes et al., 2013). In contrast to these variable responses to concurrent stimulation, we found that increased stimulation intensity could not compensate to any degree for loss of NPY in a pre-stimulation paradigm (Figure 4H). This is presumably because endogenous GABA and AgRP are unable to drive food intake effectively on the timescale of sustained hunger (tens of minutes immediately after the offset of stimulation).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic for measurement of food intake during chemogenetic stimulation of AgRP neurons. (b) Expression of hM3Dq in AgRP neurons. Sample was stained for the HA tag on hM3Dq (magenta). (c) Food intake (2 hr) for NPY+ (hM3Dq+ N = 4; hM3Dq- N = 4) and NPY- (hM3Dq+ N = 6; hM3Dq- N = 4) mice following chemogenetic stimulation (CNO, 0.3 mg/kg) or control treatment. (d) Food intake (1 hr) for NPY+ (N = 5) and NPY- (N = 8) mice after overnight fasting. (e) Raster plot showing temporal pattern of pellet (20 mg) consumption by NPY- and NPY +mice in response to concurrent stimulation at high intensity (20 Hz, continuous) or moderate intensity (20 Hz, interleaved with 2 s ON/3 s OFF). (f) Food intake (30 min) for AgRP+ (N = 4) and AgRP- (N = 5), GABA+ (N = 5) and GABA- (N = 6), and NPY+ (N = 4) and NPY- (N = 5) mice in response to no stimulation (black) and concurrent stimulation (red; moderate-intensity). (g) Food intake (30 min) for NPY+ (N = 4) and NPY- (N = 5) mice in response to no stimulation (black), moderate intensity concurrent stimulation (red) and high intensity concurrent stimulation (orange). (h) Food intake (60 min) for NPY+ (N = 4) and NPY- (N = 4) mice in response to no stimulation (black), moderate intensity pre-stimulation (red) and high intensity pre-stimulation (orange). Error bars in c-e and g-j represent mean ± SEM. Holm-Sidak multiple comparisons test was used to report adjusted P-values in c-d and f-h. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 or ns (not significant). Black lines denote the pairs that are being compared. In f, adjacent control (black) and experimental (red) groups subject to the same pre-stimulation protocol are compared.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Food intake (1 hr) for NPY+ (hM3Dq+ N = 4; hM3Dq- N = 4) and NPY- (hM3Dq+ N = 6; hM3Dq- N = 4) mice following chemogenetic stimulation (CNO, 0.3 mg/kg) or control treatment. (b) Cumulative distribution function of food intake for NPY+ and NPY- mice in response to CNO mediated stimulation of AgRP neurons or control treatment (NPY+ N = 4; NPY- N = 6). Holm-Sidak multiple comparisons test was used to report adjusted P-values in (c-d) and (f-h). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 or ns (not significant). In b, thick lines represent averaged data and shaded area denote SEM.
+
 ## Discussion
 
 NPY was implicated in the regulation of feeding decades ago, but its precise contribution has been difficult to establish (Loh et al., 2015). Early studies showed that infusion of picomoles of NPY into the PVH can elicit voracious food intake (Clark et al., 1985; Stanley and Leibowitz, 1984), identifying NPY as an unusually potent orexigen. Consistent with this, NPY is highly expressed in hunger-promoting AgRP neurons (Hahn et al., 1998), and its expression in these cells is increased by energy deficit (Sahu et al., 1988; White and Kershaw, 1990). However genetic deletion of NPY, alone (Erickson et al., 1996) or in combination with AgRP (Qian et al., 2002), had little effect on food intake or body weight. Similarly deletion of NPY receptors, alone (Kushi et al., 1998; Marsh et al., 1998; Pedrazzini et al., 1998) or in combination (Nguyen et al., 2012), failed to produce the expected lean phenotype. More recently, the advent of cell-type-specific tools for neural manipulation made it possible to acutely stimulate AgRP neurons and then measure the effect of blocking NPY signaling. One study found that food intake following chemogenetic stimulation of AgRP neurons requires either NPY or GABA signaling, but not both (Krashes et al., 2013). Another study showed that antagonists of NPY or GABA receptors in PVH could partially block feeding induced by optogenetic stimulation of AgRP neurons (Atasoy et al., 2012). Taken together, these observations have led to a general view that NPY and GABA have partially redundant functions in mediating food intake by AgRP neurons.
@@ -71,17 +91,90 @@ A central challenge of neuroscience is to explain how the neurochemical organiza
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6; Agrptm1(cre)Lowl/J</td>
+      <td>Jackson Labs Stock</td>
+      <td>#012899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6; 129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J;</td>
+      <td>Jackson Labs Stock</td>
+      <td>#012569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6; Tg (CAG-CHRM3,-mCitrine)1Ute/J</td>
+      <td>Jackson Labs Stock</td>
+      <td>#026220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6; Cg-Ay/J</td>
+      <td>Jackson Labs Stock</td>
+      <td>#000021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Slc32a1tm1Lowl/J</td>
+      <td>Jackson Labs Stock</td>
+      <td>#012897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>129S-Npytm1Rpa/J</td>
+      <td>Jackson Labs Stock</td>
+      <td>#004545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NPY (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>11976</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-EF1a-DIO-NPY</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>plasmid with AAV backbone to express NPY in the presence of Cre recombinase</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mice were group housed on a 12:12 light:dark cycle with ad libitum access to water and mouse chow (PicoLab Rodent Diet 20, 5053 tablet, TestDiet). Adult mice (8–20 weeks old) were used for experiments. For channelrhodopsin-2 expression in AgRP neurons, Agrp-IRES-Cre mice (Jackson Labs stock 012899, B6; Agrptm1(cre)Lowl/J; RRID:IMSR_JAX:012899) were crossed with Ai32: ROSA26-loxStoplox-ChR2-eYFP mice (Jackson Labs stock 012569, B6; 129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J; RRID:IMSR_JAX:012569) to generate double mutant animals. For hM3Dq expression in AgRP neurons, Agrp-IRES-Cre mice were crossed with CAG-LSL-HA-hM3Dq-pta-mCitrine transgenic mice (Jackson Labs Stock 026220, B6; Tg(CAG-CHRM3,-mCitrine)1Ute/J.; RRID:IMSR_JAX: 026220) to generate double mutant animals. To block melanocortin signaling, mice were bred into heterozygotic Ay background (Jackson Labs stock 000021, B6.Cg-Ay/J; RRID:IMSR_JAX:000021); wild type cohorts were used as controls. To ablate GABA signaling specifically in AgRP neurons, mice were crossed into Agrp-IRES-Cre;Vgatflox/flox (Jackson Labs stock 012897, Slc32a1tm1Lowl/J; RRID:IMSR_JAX:012897) background; Agrp-IRES-Cre;Vgatflox/+ animals were used as controls. To block NPY signaling, mice were crossed into NPY-/- background (Jackson Labs stock 004545, 129S-Npytm1Rpa/J; RRID:IMSR_JAX:004545); NPY-/+ cohorts were used as controls.
 
 Experimental protocols were approved by the University of California, San Francisco IACUC (Protocol AN133011) following the NIH guidelines for the Care and Use of Laboratory Animals.
 
-## Stereotaxic viral delivery and fiber implantation
+### Stereotaxic viral delivery and fiber implantation
 
 We performed intracranial surgery as previously described (Chen et al., 2015). For re-expression of NPY, pAAV-EF1a-DIO-NPY were generated from pAAV-EF1a-DIO-EYFP. Both vectors were made into AAV8 in Stanford Vector Core. 200 nL of AAV8-EF1a-DIO-NPY or AAV8-EF1a-DIO-EYFP was bilaterally injected into the ARC (bregma: AP: −1.75 mm, ML: ±0.3 mm, DV: −5.9 mm). For optogenetic implants, custom-made fiberoptic implants (0.39 NA Ø200 µm core Thorlabs FT200UMT and CFLC230-10) were installed above the ARC (bregma: AP: −1.75 mm, DV: dorsal surface −5.6 mm, ML: −0.25 mm).
 
-## Optogenetic food intake assay
+### Optogenetic food intake assay
 
 To generate light pulses, a 473 nm laser was modulated by Coulbourn Graphic State software through a TTL signal generator (Coulbourn H03-14) and synchronized with behavioral experiments for each subject. The laser was passed through a single patch cable (Doric Lenses) to a custom-made fiber optic patch cable (Thorlabs FT200UMT, CFLC230-10; Fiber Instrument Sales F12774) through a rotary joint (Doric Lens FRJ 1 × 1). Patch cables were connected to the implant on each mouse through a zirconia mating sleeve (Thorlabs ADAL1). Laser power was set to 12–18 mW at the terminal of each patch cable unless otherwise specified.
 
@@ -89,15 +182,98 @@ Mice were allowed to recover for seven days after implant surgery before experim
 
 The following protocols were performed back to back to test the dose dependence of pre-stimulation on food intake. The sequence of testing was counter-balanced based on pre-stimulation duration.
 
+<table>
+  <tbody>
+    <tr>
+      <td>70 min habituation</td>
+      <td>0 min opto-stim</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>65 min habituation</td>
+      <td>5 min opto-stim</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>55 min habituation</td>
+      <td>15 min opto-stim</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>40 min habituation</td>
+      <td>30 min opto-stim</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>10 min habituation</td>
+      <td>60 min opto-stim</td>
+      <td>60 min food access</td>
+    </tr>
+  </tbody>
+</table>
+
 *Laser was modulated at 20 Hz on a 2 s ON and 3 s OFF cycle with 10 ms pulse width.
 
 The following protocols were performed back to back to test the decay kinetics of pre-stimulation on food intake. The sequence of testing was counter-balanced based on delay duration.
+
+<table>
+  <tbody>
+    <tr>
+      <td>70 min habituation</td>
+      <td>0 min opto-stim</td>
+      <td>0 min delay</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>65 min habituation</td>
+      <td>5 min opto-stim</td>
+      <td>0 min delay</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>50 min habituation</td>
+      <td>5 min opto-stim</td>
+      <td>15 min delay</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>35 min habituation</td>
+      <td>5 min opto-stim</td>
+      <td>30 min delay</td>
+      <td>60 min food access</td>
+    </tr>
+    <tr>
+      <td>5 min habituation</td>
+      <td>5 min opto-stim</td>
+      <td>60 min delay</td>
+      <td>60 min food access</td>
+    </tr>
+  </tbody>
+</table>
 
 *Laser was modulated at 20 Hz on a 2 s ON and 3 s OFF cycle with 10 ms pulse width.
 
 The following protocols were performed back to back to test the kinetics of the sustained hunger signal on the timescale of tens of seconds.
 
+<table>
+  <tbody>
+    <tr>
+      <td>2 min opto-stim</td>
+      <td>2 min no-stim</td>
+    </tr>
+  </tbody>
+</table>
+
 Repeated 30 times. Food always available.
+
+<table>
+  <tbody>
+    <tr>
+      <td>1 min opto-stim</td>
+      <td>1 min no-stim</td>
+    </tr>
+  </tbody>
+</table>
 
 Repeated 60 times. Food always available.
 
@@ -105,24 +281,44 @@ Repeated 60 times. Food always available.
 
 The following protocols were performed back to back to test the effect of concurrent stimulation and its interaction with stimulation intensity.
 
+<table>
+  <tbody>
+    <tr>
+      <td>30 min no-stim</td>
+      <td>30 min opto-stim</td>
+      <td>30 min no-stim</td>
+    </tr>
+  </tbody>
+</table>
+
 Food always available. Laser was modulated at 20 Hz with 10 ms pulse width.
+
+<table>
+  <tbody>
+    <tr>
+      <td>30 min no-stim</td>
+      <td>30 min opto-stim</td>
+      <td>30 min no-stim</td>
+    </tr>
+  </tbody>
+</table>
 
 Food always available. Laser was modulated at 20 Hz on a 2 s ON and 3 s OFF cycle with 10 ms pulse width.
 
-## DREADDs food intake assay
+### DREADDs food intake assay
 
 Housing and habituation of animals was identical to the optogenetic food intake assays. Mice were additionally habituated to handling for I.P injection twice before actual experiments. After habituation, mice were tested at most once every day during light phase for food intake (2 hr). Mice were injected with CNO (0.3 mg/kg) or vehicle (0.01 mg/kg DMSO) at the beginning of each food intake assay (2 hr).
 
-## Progressive ratio testing
+### Progressive ratio testing
 
 For training, mice were acutely food deprived 5 hr before the start of dark cycle and trained with fixed-ratio 1 (FR1), FR3, and FR7 protocols overnight until active lever presses exceeded learning thresholds, which were 50, 150, and 300 respectively. Of note, NPY- mice were trained for longer periods due to their slower learning rate that was partially caused by their lack of exploration in the operant chamber. Mice were then acutely food deprived overnight and tested with a progressive ratio 3 (PR3) task for 1.5 hr at the start of the dark phase.
 
 For optogenetic experiments, during the first 70 min of the testing protocol (habituation/pre-stim), access to the levers and pellet trough was blocked using a custom-cut acrylic board. After the initial 70 min, the acrylic board was removed, and a single pellet was delivered following active lever presses according to the PR3 schedule (3,6,9,12…). Each experiment was subject to multiple repetitions to test robustness.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunofluorescence was performed as previously described (Chen et al., 2015) using the following pairs of primary and secondary antibodies: chicken anti-GFP (1:1000; Abcam Cat# ab13970, RRID:AB_300798) and polyclonal donkey anti-chicken FITC (1:1000; Abcam Cat# ab63507, RRID:AB_1139472); goat anti-Fos (1:500; Santa Cruz Biotechnology Cat# sc-52-G, RRID:AB_2629503) and donkey anti-goat Alexa-fluorophore 568 (1:1000; Thermo Fisher Scientific Cat# A-11057, RRID:AB_2534104); rabbit anti-NPY (1:1000; Cell Signaling Technology Cat# 11976, RRID:AB_2716286) and donkey anti-rabbit Alexa-fluorophore 647 (1:1000; Thermo Fisher Scientific Cat# A-31573, RRID:AB_2536183); goat anti-HA (1:1000; for validation of HA-tagged hM3Dq expression; Abcam Cat# ab9134, RRID:AB_307035) and donkey anti-goat Alexa-fluorophore 568 (1:1000; Thermo Fisher Scientific Cat# A-11057, RRID:AB_2534104).
 
-## Statistics
+### Statistics
 
 Raw behavioral data were analyzed with custom MATLAB scripts to obtain time-stamped behavioral events. Multiple measurements from the same mouse in the same experiment (e.g. on different days) were considered technical repeats and were averaged before statistical analyses. Control experiments were repeated at the beginning and end of each set of assays. Experiments with technical failures (e.g. dysfunction of the behavioral system, pellets stuck in feeder, broken fiberoptic patch cables) were excluded from further analysis and repeated. The average of these technical repeats for each mouse in each experiment was considered a single biological repeat. All sample sizes are numbers of biological repeats. Data was analyzed by two-way ANOVA using Graphpad Prism seven to test for an effect of genotype and stimulation protocol or one-way ANOVA. Individual p-values were corrected using Holm-Sidak’s multiple comparisons test. Regression analysis for experiments investigating feeding kinetics was performed using Graphpad.

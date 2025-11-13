@@ -28,7 +28,7 @@
 
 ## Abstract
 
-The neurotoxicity of air pollution is undefined for sex and APOE alleles. These major risk factors of Alzheimer’s disease (AD) were examined in mice given chronic exposure to nPM, a nano-sized subfraction of urban air pollution. In the cerebral cortex, female mice had two-fold more genes responding to nPM than males. Transcriptomic responses to nPM had sex- APOE interactions in AD-relevant pathways. Only APOE 3 mice responded to nPM in genes related to Abeta deposition and clearance ( Vav2 , Vav3 , S1009a ). Other responding genes included axonal guidance, inflammation (AMPK, NFKB, APK/JNK signaling), and antioxidant signaling (NRF2, HIF1A). Genes downstream of NFKB and NRF2 responded in opposite directions to nPM. Nrf2 knockdown in microglia augmented NFKB responses to nPM, suggesting a critical role of NRF2 in air pollution neurotoxicity. These findings give a rationale for epidemiologic studies of air pollution to consider sex interactions with APOE alleles and other AD-risk genes.
+The neurotoxicity of air pollution is undefined for sex and APOE alleles. These major risk factors of Alzheimer’s disease (AD) were examined in mice given chronic exposure to nPM, a nano-sized subfraction of urban air pollution. In the cerebral cortex, female mice had two-fold more genes responding to nPM than males. Transcriptomic responses to nPM had sex-APOE interactions in AD-relevant pathways. Only APOE3 mice responded to nPM in genes related to Abeta deposition and clearance (Vav2, Vav3, S1009a). Other responding genes included axonal guidance, inflammation (AMPK, NFKB, APK/JNK signaling), and antioxidant signaling (NRF2, HIF1A). Genes downstream of NFKB and NRF2 responded in opposite directions to nPM. Nrf2 knockdown in microglia augmented NFKB responses to nPM, suggesting a critical role of NRF2 in air pollution neurotoxicity. These findings give a rationale for epidemiologic studies of air pollution to consider sex interactions with APOE alleles and other AD-risk genes.
 
 ## Introduction
 
@@ -46,9 +46,27 @@ Sex and APOE alleles can also alter NRF2 and NFKB activities, as shown for the l
 
 To define brain transcriptional responses of air pollution and interactions with sex and APOE alleles, we examined responses of adult C57BL/6J (wild type, ‘B6’) and B6 mice carrying human APOE3 and APOE4 alleles by targeted replacement (APOE-TR) to nPM, a subfraction of ultrafine PM (PM0.2). Three independent exposures used different batches of nPM at specified durations of exposure (details on sample collection and chemical composition in Figure 1—figure supplement 1 and Zhang et al., 2019). In vitro studies on BV2 microglia examined the role of NRF2 and NFKB in responding inflammatory pathways.
 
-## Cerebral cortex transcriptome responses to nPM
+### Cerebral cortex transcriptome responses to nPM
 
 Differentially expressed genes (DEGs) were analyzed by RNAseq for nPM responses. Stratification by APOE and sex was done subsequently to establish general effects. The multivariate model of combined B6 and APOE-TR data was adjusted statistically for sex, APOE genotype, and different nPM batches of the two exposures. For p=0.005, there were 140 DEGs (118 increased, 22 decreased) responses to nPM (Figure 1A). Ingenuity pathway analysis (IPA) of responding pathways included synapse function (e.g. axonal guidance, calcium signaling, endocannabinoid neuronal synapse), inflammation (e.g. AMPK, SAPK/JNK), circadian rhythm, NRF2 mediated antioxidant response, and hypoxia-inducible factor 1-α (HIF1A) signaling (Figure 1B). The top DEGs include Grin1 (+20%) and Rap1a (−20%) (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig1-v1.jpg)
+
+**Figure 1.:** (A) Multivariate differential expression analysis of nPM responses in combined data from the independent exposures of C57BL/6J (B6) and APOE-TR. Covariates included sex, APOE genotype, and nPM. DEGs identified at p-value, 0.005. (B) Canonical pathways associated with nPM DEGs. (C) Examples of nPM associated DEGs. (D) Sex- and APOE-stratified DE and WGCNA modules associated with nPM responses. Male, M; Female, F. The top 150 genes of modules (kME inter-module connectivity) were used for IPA analysis. Significance was calculated from the Pearson correlation of eigengene of the modules with nPM. (E) Upstream regulators and F) canonical pathways associated with nPM transcriptome responses in B6 and APOE-TR mice. Solid horizontal lines separate responses that are shared and sex-specific. Heatmaps were sorted by the sum of -log10 (p-values) in each row. p-values<10−6 were converted to 10−6 for better visualization; grey, not significant. RNAseq sample size was 4/genotype/sex/treatment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The batch IDs (nPM-b) correspond to our analysis of nPM chemistry from batches collected after 2016 (Zhang et al., 2019). The APOE-TR exposure was done during Feb-May 2013, for which chemical characterization is not available. Representative annual value for nPM-2013 metal content is shown, which was comparable with nPM-b5.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Venn diagram of the nPM DEGs in each group. (B) Brain RNAseq cell type deconvolution using BRETIGEA package in R. (C) Top upstream regulators and (D) canonical pathways of nPM associated genes in ApoE-TR mouse.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Three-way interaction of qPCR and RNAseq shows high overlap of significant factors. Mean ± SE.
 
 RNAseq data were stratified to identify sex- and APOE-specific nPM responses by linear models and by weighted gene co-expression (WGCNA). Females had more DEG than males for both B6 and APOE-TR mice, by up to two-fold (Figure 1D). Females of APOE3 and B6 had the most nPM responding genes (153 vs 189, respectively). Gene modules identified by WGCNA also had more female responses to nPM for B6 and APOE-TR (Figure 1D). Modules were constrained to a maximum of 150 hub genes, based on connectivity (Materials and methods). Both analyses (DE, WGCNA) showed more nPM-responding gene responses for APOE3 than APOE4.
 
@@ -56,9 +74,15 @@ Upstream regulators and canonical pathways were identified by IPA for sex-specif
 
 Stratified analysis by APOE and sex for canonical pathways showed nPM responses of neuronal pathways; for example G-protein-coupled receptors, axonal guidance, ephrin receptors, synaptic long-term depression, and endocannabinoid development neuron pathway (Figure 1F). Other nPM responding genes were related to relaxin, GM-CSF, and c-AMP-mediated signaling. Female-specific responses include genes associated with the following pathways: AMPK, dopamine-PARPP32 feedback in cAMP, gap junction signaling, and nitric oxide production. Male-specific responses in both mouse strains were enriched for ‘cardiac hypertrophy’ signaling; for example, Elk1 (transcription factor) and Hsp27 (Figure 1F). APOE3 and APOE4 of both sexes had different inflammatory responses for NFKB, IL6, CREB, and IL22 pathways (Figure 1—figure supplement 3). Cell-type deconvolution analysis of RNAseq also showed APOE and sex-specificity for microglial and astrocyte responses to nPM (Figure 1—figure supplement 3B).
 
-## Baseline effects of APOE4 allele and the overlap with nPM responses
+### Baseline effects of APOE4 allele and the overlap with nPM responses
 
 Baseline differences by APOE in non-exposed controls were analyzed by sex in two steps. The combined multivariate model showed 133 DEGs differed in baseline APOE allele effect (5% FDR) (Figure 2A). These DEGs were enriched for immune-related pathways including rheumatoid arthritis, granulocyte adhesion, IL10, and NFKB signaling. APOE4 baseline differences included pathways of glutamate metabolism, and production of nitric oxide, superoxide and hydrogen peroxide, the LXL/RXR pathway of cholesterol efflux, and atherosclerosis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig2-v1.jpg)
+
+**Figure 2.:** (A) Differential expression analysis of APOE4- vs APOE3-TR, at 5% FDR and p-value, 0.005. (B) WGCNA modules associated with APOE4 allele. IPA of the top 150 genes of the modules identified by kME (inter-module connectivity). Significance was calculated from the Pearson correlation of eigengenes for modules with APOE4 allele. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. IPA analysis of overlapped genes between baseline differences by APOE allele and nPM response in females (C) and males (D). The genes in each group are a combination of identified genes based on DE and WGCNA. RNAseq sample size was 4/genotype/sex/treatment. Detailed IPA analysis of APOE allele baseline DEGs (Figure 2—figure supplement 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig2-figsupp1-v1.jpg)
 
 In stratified analysis, males had 60% more DEGs differing by APOE alleles (male, 75 genes; female, 45 genes (Figure 2B, Figure 2—figure supplement 1). For WCGNA modules differing by APOE alleles, males had 3-fold excess (male 12 modules; female, four modules). Subsets of DEG (females, 70 DEGs; males, 37) had 7% overlap with nPM responding genes (Figure 2C–D), suggesting convergent effects of APOE4 allele and nPM. For females, the shared responding genes involved metabolic pathways (glycolysis, oxidative phosphorylation) and DNA repair (HMGN1). The male overlap involved a different set of genes related to iron homeostasis, telomere extension, and immune response (TREM1, IL11, JAK signaling).
 
@@ -70,25 +94,25 @@ AD-related pathways differed by sex and APOE alleles for nPM responses (Figure 3
 
 About 10% of genes related to amyloid clearance (5/46) differed by APOE or nPM. For amyloid clearance genes, only APOE3 carriers in both sexes responded to nPM (Figure 3E). Three genes responded to nPM with sex differences only in APOE3. For APOE3 females, Vav2 (+50%); Vav3 (decreased −50%); the Vav guanine nucleotide exchange factors mediate phagocytosis of fibrillar Aβ (Wilkinson et al., 2006). For APOE3 males, S100a9 (−60%), also known as Mrp14, regulates microglial phagocytosis of fibrillar Aβ (Kummer et al., 2012). Baseline expression of two complement genes was higher in APOE3 than APOE4: C3 (10-fold), C3ar1 (+50%).
 
-## Sex- and APOE- specific nPM-mediated NFKB responses
+### Sex- and APOE- specific nPM-mediated NFKB responses
 
 Next, we examined genes of the NFKB pathway, which regulate pro-inflammatory responses to nPM, as shown for responses of wildtype mice (B6 males) in hippocampus to nPM (Woodward et al., 2017a). In cerebral cortex, APOE-TR mice responded to nPM with a subset of genes downstream of NFKB (13%, 8/133) that differed by sex and APOE (Figure 4A). Two clusters of nPM responses were identified by Principal Component Analysis for these 133 NFKB downstream genes: Principal component (PC) 2 (20% of variance, nPM: sex interaction) and PC4 (2.5% of variance nPM:APOE4 interaction) (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig4-v1.jpg)
 
-**Figure 4.:** APOE specificity.(A) Stratified analysis of NFKB downstream genes responses to nPM. The combined IPA datasets included 133 NFKB downstream genes. (B) Principal component analysis of 133 NFKB downstream genes in APOE-TR: PC2 (20% of total variance) was associated with nPM: sex interaction; PC4 (2.5% of variance), associated with nPM:APOE interaction. (C) Protein levels of genes downstream of NFKB were correlated with PC2: positive correlations for CXCL1 and IL1B; inverse correlation with TNFA. Only females responded to nPM. Sample size of 4/genotype/sex/treatment.
+**Figure 4.:** (A) Stratified analysis of NFKB downstream genes responses to nPM. The combined IPA datasets included 133 NFKB downstream genes. (B) Principal component analysis of 133 NFKB downstream genes in APOE-TR: PC2 (20% of total variance) was associated with nPM: sex interaction; PC4 (2.5% of variance), associated with nPM:APOE interaction. (C) Protein levels of genes downstream of NFKB were correlated with PC2: positive correlations for CXCL1 and IL1B; inverse correlation with TNFA. Only females responded to nPM. Sample size of 4/genotype/sex/treatment.
 
 Cytokine protein levels were examined for association with these PCs in cerebral cortex. PC2, but not PC4, was correlated with TNFA (r = −0.39, p=0.02), IL1B (r = 0.51, p=0.002), and CXCL1 (r = 0.43, p=0.01) proteins (Figure 4C). Only females responded to nPM for these cytokines. These RNA and protein responses are notable for consistent sex-specific inflammatory responses to nPM.
 
-## Sex- and APOE allele-specific NRF2 responses
+### Sex- and APOE allele-specific NRF2 responses
 
 NRF2 downstream responses to nPM differed by sex and APOE (Figure 5A). The 60 responding genes included Gpx3, and Gstp1, Jun, Nfe2l1 (Nrf1), and several Maf family transcription factors. A subset of gene responses was validated by qPCR, for example Nrf1 (Figure 5B; Figure 1—figure supplement 4). Female B6 and APOE-TR had 2-fold or more Nrf2 downstream genes responding to nPM. PC2 is associated with nPM for interactions with sex (p=0.01) and APOE (p=0.02), 6.4% of the variance, mainly associated with APOE3 females (Figure 5C). The strong inverse correlation of Nrf2 PC2 with Nfkb PC2 (Figure 5E, r = - 0.95, p=0.0001) suggests crosstalk between these transcriptional factors during exposure to nPM.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/54822/elife-54822-fig5-v1.jpg)
 
-**Figure 5.:** Nrf2 responses to nPM in B6 and APOE-TR mice.(A) Heatmap of log2 fold changes of nPM responses, showing altered expression of at least 60 genes downstream of Nrf2, differing by sex or APOE genotype. (B) Validation by qPCR of Nfe2l1 (Nrf1) changes in RNAseq. (C) Principal component analysis of 513 Nrf2 downstream genes in APOE-TR: Only PC2 (6.4% of variance) had nPM-sex interaction (p=0.01) and APOE (p=0.02). APOE3 females had the highest nPM response. (D) PC2 of Nrf2 downstream genes varied inversely (R2 = 0.91, p=0.0001) with the PC2 of Nfkb downstream genes. Sample size of 4/genotype/sex/treatment.
+**Figure 5.:** (A) Heatmap of log2 fold changes of nPM responses, showing altered expression of at least 60 genes downstream of Nrf2, differing by sex or APOE genotype. (B) Validation by qPCR of Nfe2l1 (Nrf1) changes in RNAseq. (C) Principal component analysis of 513 Nrf2 downstream genes in APOE-TR: Only PC2 (6.4% of variance) had nPM-sex interaction (p=0.01) and APOE (p=0.02). APOE3 females had the highest nPM response. (D) PC2 of Nrf2 downstream genes varied inversely (R2 = 0.91, p=0.0001) with the PC2 of Nfkb downstream genes. Sample size of 4/genotype/sex/treatment.
 
-## Inhibitory effects of NRF2 on NFKB response to nPM
+### Inhibitory effects of NRF2 on NFKB response to nPM
 
 The relationship of NRF2 and NFKB responses of nPM was further explored in an independent dose-response experiment. The duration of inhalation exposure was only 3 weeks to assess the initial responses of nPM by male C57BL/6 mice. After 3-week exposure to 300 μg/m3 nPM, the cerebral cortex had nuclear translocation of NRF2 protein (+50%) and increased cytosolic NFKBP65 (+25%) (Figure 6A). Downstream of NRF2, the rate limiting enzyme of glutathione synthetase (GCLC) had dose-dependent increase correlated with Nrf2 mRNA (r, 0.6, p=0.005) (Figure 6B). Nrf2 and Nfkb responses of B6 male mice at three nPM doses had opposing changes of increased Nrf2 mRNA, but decreased Nfkbp65, Nfkbp50 mRNA and IL2 protein, all with dose-dependence (Figure 6C).
 
@@ -98,7 +122,7 @@ The relationship of NRF2 and NFKB responses of nPM was further explored in an in
 
 Nrf2 and Nfkb interactions were examined in BV2 microglia in vitro during acute (6 hr) exposure to nPM. Partial knockdown of Nrf2 (−40%) by siRNA increased the Nfkb mediated responses of nPM (Figure 6D), with 30% higher Nfkbp50 mRNA, and 200% higher mRNA of Inos, Il1b and Il6.
 
-## NRF2 and NFKB are potential regulators of the nPM responses in the cerebral cortex and mixed glial culture
+### NRF2 and NFKB are potential regulators of the nPM responses in the cerebral cortex and mixed glial culture
 
 The top canonical pathways related to nPM exposure in the cerebral cortex of adult mice comprised of calcium signaling, HIF1α signaling, circadian rhythm pathway, AMPK signaling, SAPK/JNK signaling, endocannabinoid pathways and NRF2 oxidative stress responses (Figure 1A). These highly interconnected pathways comprise a larger network of oxidative and inflammatory responses (Figure 7). Thus, the hub regulators of nPM responses could broadly affect these pathways. Using IPA analysis, we built two networks from the NRF2 and NFKB downstream genes in the identified canonical pathways. Exposure to nPM caused expression changes in four of these genes in the cerebral cortex of adult mice: Smarca4 (+25%), Cftr (+25%), Hdac1 (−65%), and Vegfc (−65%).
 
@@ -138,40 +162,218 @@ In summary, air pollution neurotoxicity was shown to have sex- and APOE allele-s
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>APOE3-TR+/+ APOE4-TR+/+</td>
+      <td>PMID:8980023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J (B6)</td>
+      <td>Jackson laboratory</td>
+      <td>000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>BV2 microglia</td>
+      <td>ATCC</td>
+      <td>EOC 20 (ATCC CRL-2469); RRID:CVCL_5745</td>
+      <td>Female originated</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mixed glia (microglia and astrocyte)</td>
+      <td>R. norvegicus</td>
+      <td></td>
+      <td>Postnatal days 3–5, mixed sexes</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Nfe2l2 siRNA</td>
+      <td>Thermofisher Scientific</td>
+      <td>156499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine RNAiMAX reagent</td>
+      <td>Thermofisher Scientific</td>
+      <td>13778500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NRF2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab137550; RRID:AB_2687540</td>
+      <td>WB, 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>D1H2; RRID:AB_10544537</td>
+      <td>WB, 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-32233; RRID:AB_627679</td>
+      <td>WB, 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NFKBP65 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>D14E12; RRID:AB_10859369</td>
+      <td>WB, 1:750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IRDye 800CW</td>
+      <td>LICOR</td>
+      <td>926–32210; RRID:AB_621842</td>
+      <td>WB, 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IRDye 680RD</td>
+      <td>LICOR</td>
+      <td>926–68070; RRID:AB_10956588</td>
+      <td>WB, 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRUseq Stranded mRNA Kit</td>
+      <td>Illumina</td>
+      <td>20020594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qScript cDNA Supermix</td>
+      <td>Quantabio</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taq master mix</td>
+      <td>Biopioneer</td>
+      <td>MAT-2.1–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>12–230 kDa Jess or Wes Separation Module</td>
+      <td>Protein Simple</td>
+      <td>SM-W004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>V-PLEX proinflammatory panel one immunoassay</td>
+      <td>Mesoscale Diagnostics, Rockville, MD</td>
+      <td>K15048D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>V-PLEX Aβ Peptide Panel 1 (4G8) Kit</td>
+      <td>Mesoscale Diagnostics, Rockville, MD</td>
+      <td>K15199E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Invitrogen</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rstudio</td>
+      <td></td>
+      <td></td>
+      <td>Packages: LIMMA, WGCNA, BRETIGEA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity pathway analysis</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td></td>
+      <td>Version 8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Husbandry and experimental procedures were approved by the USC Institutional Animal Care and Use Committee (approval numbers: APOE-TR experiment, 20417; B6 experiments and mixed glial culture, 11233). The C57BL/6J and APOE-TR (Xu et al., 1996) mice were aged 2 months at exposure onset (Cacciottolo et al., 2016; Youmans et al., 2012). For long-term nPM exposures (8–15 weeks), four mice for each sex, genotype (C57BL/6J, APOE3-TR, APOE4-TR), and exposure (48 mice total) were randomly assigned to nPM exposure or control. The dose-response experiment was done with 10 male C57BL/6J mice per group. After exposure, mice were euthanized by isoflurane anesthesia and perfused transcardially with phosphate-buffered saline. Brains were hemisected at midline; total cerebral cortex was frozen on dry ice and stored at −80°C. Investigators were blinded to exposure groups during data measurement and analyses.
 
-## Air pollution nPM collection and exposure
+### Air pollution nPM collection and exposure
 
 Mice were exposed to nPM, a nano-sized subfraction of airP particulate matter of 2.5 microns diameter (PM2.5) collected from a local urban freeway corridor (Woodward et al., 2017b; Haghani et al., 2020). Briefly, PM0.2 samples were collected by a High-Volume Ultrafine Particle (HVUP) Sampler (Misra et al., 2002) at 400 L/min flow rate on an 8 × 10 inch-Zeflour PTFE filter (Pall Life Sciences, Ann Arbor, MI). The Particle Instrumentation Unit of University of Southern California is located within 150 m downwind of a major freeway (I-110). Chemical composition and size distribution of re-aerosolized nPM is characterized by high-resolution mass spectrometry (SF-ICPMS) and Sievers 900 Total Organic Carbon Analyzer as described before (Morgan et al., 2011; Haghani et al., 2020). Chemical characterization of the nPM batches in this study is in Supplementary data (Figure 1—figure supplement 4). Re-aerosolized nPM or filtered air (control) was delivered to the sealed exposure chambers at approximately 300 μg/m3 concentration to model chronic exposure: 5 h/day, 3 days/week, for 8 (C57BL/6J) or 15 weeks (APOE-TR). For dose-response experiment, 8 weeks male C57BL/6J mice were exposed to approximately 100, 200, and 300 μg/m3 for 3 weeks. The duration and nPM dosages were based on brain responses in prior studies (Haghani et al., 2020; Cheng et al., 2016). The 3 weeks of intermittent exposure (5 h/day, 3 days/week) to 300 μg/m3 nPM yields an average hourly exposure of 27 μg/m3, as experienced in many cities.
 
-## RNA sequence (RNAseq) analysis of mouse cerebral cortex
+### RNA sequence (RNAseq) analysis of mouse cerebral cortex
 
 RNA was extracted with TRIzol (Invitrogen) and RNAeasy Mini Kit (Qiagen) with DNase digestion. Libraries were made with the TRUseq Stranded mRNA Kit (Illumina) with 1 mg of RNA. For Illumina NextSeq500sequencing, a single end-sequencing length of >50 nt was used. Reads were aligned and quantified to the mouse reference genome RefSeq mm10 with Tophat2 (v2.0.8b), restricted to uniquely mapping reads with three possible mismatches using the Partek flow software platform (Trapnell et al., 2012).
 
 Differential gene expression was calculated by linear modeling (Limma package in R). Significance was calculated at 5% FDR rate or p-value, 0.005. Gene responses were analyzed by Qiagen Ingenuity Pathway Analysis (IPA) software. In combining the datasets generated from B6 and APOE-TR experiments, the models were adjusted by the COMBAT method to control for unknown variance (Johnson et al., 2007). Additional downstream analysis and plotting were done in Rstudio and GraphPad Prism. Cell type deconvolution analysis was done using BRETIGEA (BRain cEll Type specIfic Gene Expression Analysis) R package (McKenzie et al., 2018), which uses single-cell RNAseq data to identify cell-type-specific gene-signatures to predict the proportion of each cell type in bulk RNAseq data.
 
-## Weighted gene co-expression network analysis (WGCNA)
+### Weighted gene co-expression network analysis (WGCNA)
 
 The co-expression network, based on WGCNA, was constructed from RNAseq data. WGCNA is an unsupervised clustering approach, which assigns groups of genes with shared expression patterns into modules (Langfelder and Horvath, 2008). Briefly, the adjacency matrix (correlations between genes) was converted to a scale-free network using soft threshold power (tuned in each group) of the signed matrix. The result was converted to a topological overlap matrix (TOM). Hierarchical clustering used 1-TOM distance measure (dissimilarity). A dynamic tree-cut algorithm was used to assign modules containing at least 30 genes. Module eigengenes (MEs) were calculated as the maximum amount of the variance of the model for each module, based on the Singular Value Decomposition method. Linear regression models estimated association of nPM or APOE with the MEs. The top 150 hub genes of the modules were selected for IPA analysis by the highest eigengene connectivity (kME). In total, 32 nPM associated gene modules were identified based on different analyses. Thus, the modules were renamed to M1-M32 to distinguish each analysis.
 
-## Cell culture and Nrf2 siRNA
+### Cell culture and Nrf2 siRNA
 
 BV2 microglia (mouse-derived) were grown in Dulbecco’s modified Eagle’s medium (DMEM)/F12 (Cellgro, Mediatech, Herndon, VA) containing 10% fetal bovine serum, 1% penicillin/streptomycin, and 1% L-glutamine (Woodward et al., 2017a). These cells were authenticated by expression of microglial markers, cell morphology, phagocytic activity, and comparison of nPM or LPS responses with mixed glial culture and other literature. The cells were not tested for mycoplasma. Nfe2l2 (Nrf2) siRNA (156499, Thermofisher Scientific) was delivered by Lipofectamine RNAiMAX reagent (Thermofisher Scientific).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Extracted RNA was reverse transcribed to cDNA using qScript cDNA Supermix (Quantabio). qPCR used Taq master mix (Biopioneer) and gene-specific primers (supplementary file 1; Figure 1—figure supplement 4).
 
-## Protein extraction
+### Protein extraction
 
 Frontal cerebral cortex (anterior to Bregma, excluding olfactory bulbs) was homogenized (20 mg in 0.2 ml) in 1x RIPA buffer supplemented with 1 mM Na3VO2, 1 mM phenylmethane sulfonyl fluoride (PMSF), 10 mM NaF, phosphatase inhibitor cocktail (Sigma), and Complete Mini EDTA-free Protease Inhibitor Cocktail Tablet (Roche). Supernatants were obtained by centrifugation at 12,000 g/15 min.
 
-## NRF2 subcellular localization
+### NRF2 subcellular localization
 
 Nuclear and cytosolic fractions were separated after tissue homogenization in sucrose-Tris-MgCl2 (STM) buffer with phosphatase and protease inhibitors and centrifuged 800g × 15 min (Dimauro et al., 2012). After removing supernatant, the nuclear pellet was washed in STM buffer, resuspended in HEPES pH 7.9 buffer (20 mM HEPES 1.5 mM MgCl2, 0.5 M NaCl, 0.2 mM EDTA, 20% glycerol, 1% Triton-X-100, protease and phosphatase inhibitors) and sonicated. Cell fraction purity was validated by immunoblotting for nuclear histone 3 (H3) and cytosolic glyceraldehyde 3-phosphate dehydrogenase (GAPDH).
 
-## Protein analysis
+### Protein analysis
 
 NRF2 was detected by Western blot using anti-NRF2 primary antibody (1:1000, rabbit polyclonal, ab137550). Proteins (20 μg) were electrophoresed on Criterion 4–15% TGX gels (Biorad) and transferred to PVDF membranes. After washing with TBS+0.05% Tween-20 (PBST), membranes were blocked (LiCOR) 1 hr/ambient, then incubated with primary antibody overnight at 4°C: anti-NRF2 (1:1000, rabbit polyclonal, ab137550), anti-NFKBP65 (1:750, Rabbit polyclonal, Cell Signaling Technology, D14E12), anti-H3 (1:1000, Rabbit polyclonal, Cell Signaling Technology, D1H2), and anti-GAPDH (1:500, Mouse monoclonal, Santa Cruz Biotechnology, sc-32233). Bands were identified by incubation with 1:20,000 fluorochome-conjugated LICOR-antibodies (anti-mouse IRDye 800CW or anti-rabbit IRDye 680RD); band intensity was analyzed by ImageJ. GCLC was assayed by capillary electrophoresis (12–230 kDa range, Jess ProteinSimple, California, USA). Total lysate 1 μg/μl was electrophoresed and treated with anti-GCLC (1:100) and HRP-labeled secondary antibody. Results were normalized to total protein (PN module, ProteinSimple). IL2 was assayed by V-PLEX proinflammatory panel one immunoassay (Mesoscale Diagnostics, Rockville, MD). Abeta 40 and 42 peptides were assayed by 4G8 Kit VPLEX (Peptide Panel 1, Meso Scale Discovery, Rockville, MD).

@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01070mq45 Department of Physiology, Wayne State University School of Medicine Detroit United States
-2. https://ror.org/01070mq45 Department of Pharmacology, Wayne State University School of Medicine Detroit United States
-3. https://ror.org/01070mq45 Department of Neurology, Wayne State University School of Medicine Detroit United States
+1. Department of Physiology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
+2. Department of Pharmacology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
+3. Department of Neurology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
 
 † Corresponding author
 
@@ -34,11 +34,23 @@ Here, we tested the effects of chronic exercise in three Drosophila models of po
 
 ## Results
 
-## Exercise differentially impacts mobility in Drosophila polyQ SCA models
+### Exercise differentially impacts mobility in Drosophila polyQ SCA models
 
 Expression of polyQ disease proteins in flies causes reduced motility and neuronal cell death, as we and others have shown in various publications (Bonini and Fortini, 2003; Perrimon et al., 2016; Pandey and Rajamma, 2018; Ueyama and Nagai, 2018; Tsou et al., 2015a; Sutton et al., 2017; Ristic et al., 2018; Jackson et al., 1998; Fernandez-Funez et al., 2000; Romero et al., 2008; Hsu et al., 2014; Rosas-Arellano et al., 2018). To test if endurance exercise reduces polyQ-dependent phenotypes in the fly, we selected three SCAs: 2, 3, and 6 (Figure 1A). Full-length, human disease protein was expressed through the binary, RU486-inducible Gal4-UAS system (Sujkowski et al., 2015; Brand et al., 1994) in all fly neurons and only during adulthood, which is toxic (Tsou et al., 2013; Tsou et al., 2015a; Tsou et al., 2015b; Costa et al., 2016; Tsou et al., 2016; Sutton et al., 2017; Ristic et al., 2018). We have established an optimized exercise protocol (Figure 1B) that drives reproducible effects that are robust across genotypes (Piazza et al., 2009). These effects are not due to non-specific stress or behavioral effect of the regimen—unexercised flies exposed to training, but prevented from running, do not experience improvements (Piazza et al., 2009).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig1-v5.jpg)
+
+**Figure 1.:** (A) Spinocerebellar ataxia (SCA) models used in this study. Box in SCA6 highlights the transcription factor, β1A-CT that is encoded through an internal ribosomal entry site of the β1A transcript. It is this transcript that we utilized for SCA6 model flies. (B) Timeline of endurance exercise program and assessment of physiology and disease protein levels. (C–E) Representative climbing speed images (upper panels) in Drosophila models of (C) SCA2, (D) SCA3 and (E) SCA6. Photos taken 2 s after inducing negative geotaxis response in 4-week-old flies, following endurance exercise completion. Bottom panels: quantification by ANOVA with Tukey’s post-hoc for significantly different groups; means ± SD. n = 10. Each individual datum depicts average week four climbing speed in arbitrary units (a.u.) for five vials of 20 flies.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig1-figsupp1-v5.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) elav-Gal4 (GS)> pwEmpty vector flies improve (A) climbing speed and (B) endurance independent of RU486-feeding. (C) Flies expressing an isolated polyQ-80 repeat in adult neurons have lower climbing speed than age-matched, uninduced control flies and do not increase speed with exercise. Mobility and endurance experiments performed in triplicate. Each individual datum depicts average climbing speed for ≥5 vials of 20 flies, analyzed by 2-way ANOVA (climbing speed), or time for 80% of flies in an individual vial (n ≥ 8 vials of 20 flies) to reach exhaustion, analyzed by log rank (endurance). Error bars indicate ± SD. pwEmpty: pwalium10.moe host vector inserted into the chromosomal site attP2 of the fly and in the same genetic background as the SCA lines used in this study.
+
 Exercised wild-type flies retained faster climbing speed than age-matched, unexercised siblings (Sujkowski and Wessells, 2018). SCA2 model flies expressing polyQ-expanded ATXN2 specifically in adult neurons (elav-Gal4 (GS)> ATXN2Q117) had reduced climbing speed by 4 weeks of age, but exercise fully rescued climbing speed to the level of age-matched, uninduced control flies that complete the three-week, ramped exercise program (Figure 1C, Video 1). In contrast, four-week-old SCA3 model flies (elav-Gal4 (GS)> ATXN3Q77 RU+) did not increase climbing speed after exercise training (Figure 1D). Flies expressing polyQ-expanded β1ACT (elav-Gal4 (GS)> β1ACTQ70), the disease gene in SCA6 (Tsou et al., 2016), had reduced week-four climbing speed in comparison to uninduced, unexercised control flies, but climbing was partially rescued after exercise training (Figure 1E).
+
+![Video 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-video1.mp4.jpg)
+
+**Video 1.:** Video of 4-week-old uninduced control and SCA2 model flies taken after 3 weeks of ramped endurance exercise. Order of vials depicted, left to right: Vial 1-uninduced, exercised control, Vials 2,3-SCA2 model, exercised, Vials 4,5-SCA2 model, unexercised.
 
 Neurodegenerative severity of polyQ disorders tends to increase with age (Zoghbi and Orr, 2000; La Spada and Taylor, 2003). We have previously shown that exercise-induced improvements to climbing speed and endurance are long-lasting and persist even after the three-week exercise program is complete (Piazza et al., 2009). Neither RU486 feeding, nor expression of the empty vector used to generate transgenic flies in adult neurons, altered exercise adaptations to either climbing speed or endurance. Furthermore, expression of an isolated polyQ80 repeat (Johnson et al., 2020) in adult neurons reduced climbing speed and abrogated exercise benefits, while age-matched, uninduced control flies adapted to exercise (Figure 1—figure supplement 1).
 
@@ -48,11 +60,11 @@ Spinocerebellar ataxias type 2 model flies had reduced climbing speed by adult w
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig2-v5.jpg)
 
-**Figure 2.:** Drosophila models of SCA.(A) Flies ectopically expressing polyQ-expanded ATXN2 in adult neurons (RU+ UN) have lower climbing speed than unexercised, uninduced control flies (RU- UN) by adult week 4. Exercise fully rescues climbing speed to the level of exercised, uninduced control flies (compare RU- EX to RU+ EX). (B) Flies expressing polyQ-expanded ATXN2 in adult neurons (RU+) have similar endurance to uninduced control flies (RU-) whether exercised or not. (C) Exercise reduces ATXN2 protein levels in flies ectopically expressing polyQ-expanded ATXN2 in adult neurons, quantified in (I). (D, E) Flies ectopically expressing polyQ-expanded ATXN3 in adult neurons (RU+) have similar (D) climbing speed and endurance to uninduced, unexercised control flies and fail to improve either (D) climbing speed (E) endurance with exercise. (F) Exercise does not affect ATXN3 protein levels in flies expressing CAG-expanded ATXN3 in adult neurons, quantified in (I). (G) Flies ectopically expressing CAG-expanded β ACT in adult neurons (RU+) have lower climbing speed than unexercised, uninduced control flies (RU- UN) by adult week 3, and exercise partially rescues climbing speed, although not to the level of exercised, uninduced control flies. (H) Exercise improves endurance in flies expressing CAG-expandedα1ACT in adult neurons (RU+ EX), but not to the level of exercised, uninduced control siblings (compare RU- EX to RU+ EX). Mobility and endurance data are presented as representative experiments from triplicate biological replicates. Each individual datum depicts average climbing speed for ≥5 vials of 20 flies, analyzed by 2-way ANOVA (climbing speed), or time for 80% of flies in an individual vial (n ≥ 8 vials of 20 flies) to reach exhaustion, analyzed by log rank (endurance). Representative Western blots (five flies/lysate) from three biological repetitions, analyzed by ANOVA with Tukey’s post-hoc for significantly different groups. Error bars indicate ± SD.Figure 2—source data 1.Figure 2C.Figure 2—source data 2.Figure 2F.
+**Figure 2.:** (A) Flies ectopically expressing polyQ-expanded ATXN2 in adult neurons (RU+ UN) have lower climbing speed than unexercised, uninduced control flies (RU- UN) by adult week 4. Exercise fully rescues climbing speed to the level of exercised, uninduced control flies (compare RU- EX to RU+ EX). (B) Flies expressing polyQ-expanded ATXN2 in adult neurons (RU+) have similar endurance to uninduced control flies (RU-) whether exercised or not. (C) Exercise reduces ATXN2 protein levels in flies ectopically expressing polyQ-expanded ATXN2 in adult neurons, quantified in (I). (D, E) Flies ectopically expressing polyQ-expanded ATXN3 in adult neurons (RU+) have similar (D) climbing speed and endurance to uninduced, unexercised control flies and fail to improve either (D) climbing speed (E) endurance with exercise. (F) Exercise does not affect ATXN3 protein levels in flies expressing CAG-expanded ATXN3 in adult neurons, quantified in (I). (G) Flies ectopically expressing CAG-expanded β ACT in adult neurons (RU+) have lower climbing speed than unexercised, uninduced control flies (RU- UN) by adult week 3, and exercise partially rescues climbing speed, although not to the level of exercised, uninduced control flies. (H) Exercise improves endurance in flies expressing CAG-expandedα1ACT in adult neurons (RU+ EX), but not to the level of exercised, uninduced control siblings (compare RU- EX to RU+ EX). Mobility and endurance data are presented as representative experiments from triplicate biological replicates. Each individual datum depicts average climbing speed for ≥5 vials of 20 flies, analyzed by 2-way ANOVA (climbing speed), or time for 80% of flies in an individual vial (n ≥ 8 vials of 20 flies) to reach exhaustion, analyzed by log rank (endurance). Representative Western blots (five flies/lysate) from three biological repetitions, analyzed by ANOVA with Tukey’s post-hoc for significantly different groups. Error bars indicate ± SD.
 
 In contrast, SCA3 model flies did not improve climbing speed or endurance (Figure 2D, E) after exercise training. Furthermore, exercised and unexercised SCA3 flies had similar levels of ATXN3, the causative, polyQ-expanded disease protein in SCA3 (D’Abreu et al., 2010; Figure 2F, I). SCA6 model flies had reduced climbing speed at weeks three and five compared to unexercised, uninduced siblings, and exercise training improved climbing speed, albeit not to the level of uninduced, exercised control flies (Figure 2G). Unexercised SCA6 flies trended toward lower endurance relative to uninduced, unexercised control flies (log-rank, P = 0.0559) and improved endurance after exercise training, but did not equal the endurance of uninduced, exercised controls (log-rank, P = 0.0218) (Figure 2H).
 
-## Sestrin expression improves phenotypes in SCA2 model flies without exercise
+### Sestrin expression improves phenotypes in SCA2 model flies without exercise
 
 We have previously shown that the stress-inducible protein, Sesn, is necessary for exercise adaptations in multiple species (Kim et al., 2020), and Sesn activity has been proposed to play a protective role against neurodegeneration (Chen et al., 2019). Both endurance exercise and Sesn increase autophagy by inhibiting mTOR (Sujkowski et al., 2015; Mahalakshmi et al., 2020; Lee et al., 2010), and increased autophagy enhances ATXN2 solubility and reduces phenotypes in SCA2 patient cells (Wardman et al., 2020). Since muscle-specific dSesn overexpression is sufficient to replicate the beneficial adaptations of endurance exercise, even in sedentary Drosophila (Kim et al., 2020), we next overexpressed dSesn in SCA2 model flies.
 
@@ -60,9 +72,21 @@ Longevity assessment in SCA model flies expressing polyQ-expanded disease protei
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig3-v5.jpg)
 
-**Figure 3.:** Cumulative mortality in (A) elav-Gal4 (GS)> ATXN2 flies is similar whether exercised or not (compare RU- UN to RU+ UN, and RU- EX to RU+ EX). (Q117B) elav-Gal4 (GS)> ATXN3 flies have reduced lifespan compared to uninduced controls, and exercise does not negatively affect either group. (Q77C) elav-Gal4 (GS)>α1ACT flies have lower lifespan than uninduced controls, and exercise reduces lifespan further in this cohort. n ≥ 231, analyzed by log-rank tests.Q70
+**Figure 3.:** Cumulative mortality in (A) elav-Gal4 (GS)> ATXN2Q117 flies is similar whether exercised or not (compare RU- UN to RU+ UN, and RU- EX to RU+ EX). (B) elav-Gal4 (GS)> ATXN3Q77 flies have reduced lifespan compared to uninduced controls, and exercise does not negatively affect either group. (C) elav-Gal4 (GS)>α1ACTQ70 flies have lower lifespan than uninduced controls, and exercise reduces lifespan further in this cohort. n ≥ 231, analyzed by log-rank tests.
 
-## Oxidative resistance and mTOR modulating functions of Sesn are necessary to improve SCA2 phenotypes
+![Figure 4.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig4-v5.jpg)
+
+**Figure 4.:** Female (A, B) and male (D, E) flies ubiquitously expressing two copies of CAG-expanded ATXN2 (red lines) have early death (A, D) and lower climbing speed (B, E) than age-matched background control flies (blue and black lines). dSesn expression in flies also expressing polyQ-expanded ATXN2 (green lines) partially rescues early death (A, D) and fully rescues decreased mobility (B, E). ATXN2 protein levels are lower in both female (C) and male (F) flies ubiquitously expressing both dSesn and polyQ-expanded ATXN2. Survival and mobility experiments performed in triplicate. Individual survival experiments comprise ≥200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for ≥5 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate ± SD. Representative Western blots from five biological replicates (five flies per lysate), quantified in Figure 7.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig4-figsupp1-v5.jpg)
+
+**Figure 4—figure supplement 1.:** Survival curves in female (A) and male (B) background control flies (black) or flies ubiquitously expressing polyQ-expanded ATXN3 and either wild-type dSesn (orange), dSesnC86S (blue), dSesnD424A (pink), or dSesnD423A/D424A (green). n ≥ 73, analyzed by log-rank tests. (C) No adults eclose in flies ubiquitously expressing polyQ-expanded α1ACT regardless of dSesn expression. Sufficient parental crosses set up for >400 flies per genotype.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig4-figsupp2-v5.jpg)
+
+**Figure 4—figure supplement 2.:** Survival curves in female (A) and male (B) flies expressing either wild-type dSesn (green), dSesnC86S (red), dSesnD424A (blue), dSesnD423A/D424A (purple) or background control (black). Flies ubiquitously expressing dSesn mutations have similar or lower survival than flies ubiquitously expressing wild type dSesn. n ≥ 97, analyzed by log-rank tests.
+
+### Oxidative resistance and mTOR modulating functions of Sesn are necessary to improve SCA2 phenotypes
 
 Sesn is a multi-functional protein with separate, previously identified oxidoreductase and mTOR interacting domains (Kim et al., 2015). The C86S (dSesnC86S) mutation abolishes oxidoreductase activity while the D424A (dSesnD424A) and D423A/D424A (dSesnD423A/D424A) substitutions disrupt TORC1 inhibiting and TORC2/Akt potentiating functions of dSesn (Kim et al., 2015). We previously showed that interaction with mTOR is required for the mobility-extending effects of dSesn in wild-type, sedentary flies (Kim et al., 2020). Overexpression of either wild-type or mutated dSesns did not increase longevity in a wild-type background (i.e. without polyQ protein expression; Figure 4—figure supplement 2). To explore the requirement of Sesn’s various functions for suppression of polyQ phenotypes, we performed mobility, survival, and protein expression experiments in which we ubiquitously overexpressed dSesnC86S, dSesnD424A, dSesnD423A/D424A, or wild-type dSesn (dSesnWT) in SCA2 flies.
 
@@ -70,11 +94,11 @@ First, we overexpressed dSesn without its antioxidant function(sqh>ATXN2Q; dSesn
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig5-v5.jpg)
 
-**Figure 5.:** Ubiquitous expression of dSesn harboring a point mutation that abolishes oxidoreductase activity (dSesn orange lines) exacerbates early death in SCA2 model flies (compare orange lines to red lines) in both females (C86S,A) and males (D). In contrast, climbing speed is partially rescued in the same female flies (expressing both dSesnC86S and polyQ-expanded ATXN2, in orange) (B) and fully rescued in males (E). (C, F) Both wild-type dSesn and dSesnC86S expression reduce ATXN2 levels, but the effect of dSesnC86S expression is variable (examples of variability shown in panel [C]). Survival and mobility experiments performed in triplicate. Individual survival experiments are composed of ≥200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for 5 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate ± SD. Representative Western blots from five biological replicates (five flies per lysate), quantified in Figure 7.Figure 5—source data 1.Figure 5C (females) and Figure 5F (males).Figure 5—source data 2.Figure 5C depicting examples of variabliity.
+**Figure 5.:** Ubiquitous expression of dSesn harboring a point mutation that abolishes oxidoreductase activity (dSesnC86S, orange lines) exacerbates early death in SCA2 model flies (compare orange lines to red lines) in both females (A) and males (D). In contrast, climbing speed is partially rescued in the same female flies (expressing both dSesnC86S and polyQ-expanded ATXN2, in orange) (B) and fully rescued in males (E). (C, F) Both wild-type dSesn and dSesnC86S expression reduce ATXN2 levels, but the effect of dSesnC86S expression is variable (examples of variability shown in panel [C]). Survival and mobility experiments performed in triplicate. Individual survival experiments are composed of ≥200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for 5 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate ± SD. Representative Western blots from five biological replicates (five flies per lysate), quantified in Figure 7.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig6-v5.jpg)
 
-**Figure 6.:** Ubiquitous expression of dSesn harboring two separate mutations that abolish mTORC interaction dSesn (D424AA–D), dSesn D423A/D424A (E–H) (denoted by orange lines) exacerbates early death (A,E, females, C,G, males) and fails to rescue mobility (B,F, females, D,H, males) in SCA2 flies. Survival and mobility experiments performed in triplicate. Individual survival experiments are composed of ≥200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for ≥5 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate ± SD.
+**Figure 6.:** Ubiquitous expression of dSesn harboring two separate mutations that abolish mTORC interaction dSesnD424A (A–D), dSesn D423A/D424A (E–H) (denoted by orange lines) exacerbates early death (A,E, females, C,G, males) and fails to rescue mobility (B,F, females, D,H, males) in SCA2 flies. Survival and mobility experiments performed in triplicate. Individual survival experiments are composed of ≥200 flies/genotype, scored every second day for death and analyzed by log-rank tests. Each individual climbing datum depicts average climbing speed for ≥5 vials of 20 flies, analyzed by 2-way ANOVA. Error bars indicate ± SD.
 
 We next ubiquitously expressed two separate amino-acid substitutions of dSesn that knock out its ability to modulate mTOR (Kim et al., 2015). Like dSesnC86S experiments, expression of either dSesnD424A (Figure 6A–D) or dSesnD423A/D424A (Figure 6E–H) increased early death in both female (Figure 6A, E) and male (Figure 6C, G) SCA2 flies. In female flies, both dSesnD424A and dSesn D423A/D424A conferred modest improvements to climbing speed compared to SCA2 model flies, but improvement did not equal that of wild-type dSesn expression and was absent at later timepoints (Figure 6B, F). Male flies ubiquitously expressing dSesnD424A did not display rescued mobility defects at any age (Figure 6D), while overexpression of dSesn D423A/D424A provided modest climbing speed improvements at early ages only (Figure 6H). Thus, interaction with mTOR appears critical for full rescue of climbing speed and protection against early death in SCA2 flies.
 
@@ -82,7 +106,7 @@ To examine the relative impact of dSesn expression on disease protein levels, we
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig7-v5.jpg)
 
-**Figure 7.:** Ubiquitous expression of dSesn significantly reduces ATXN2 levels (A–C) and increases AtgIIa;AtgIa ratios (C–E). n = 5 biological replicates, 5 flies per lysate, analyzed by ANOVA with Tukey post-hoc comparison for significantly different groups. (F) Genotypes in representative Western blot and from independent biological replicates, quantified in (A, B, D, E). Bracket in (F) indicates quantifications in (A, B, D, E).Figure 7—source data 1.Figure 7C.
+**Figure 7.:** Ubiquitous expression of dSesn significantly reduces ATXN2 levels (A–C) and increases AtgIIa;AtgIa ratios (C–E). n = 5 biological replicates, 5 flies per lysate, analyzed by ANOVA with Tukey post-hoc comparison for significantly different groups. (F) Genotypes in representative Western blot and from independent biological replicates, quantified in (A, B, D, E). Bracket in (F) indicates quantifications in (A, B, D, E).
 
 Based on these results and on our prior observations in exercised flies and flies with muscle-specific dSesn overexpression (Kim et al., 2020; Sujkowski et al., 2020), we hypothesized that dSesn overexpression and reduced ATXN2 levels relate to changes in autophagy. We observed that AtgIIa/Ia ratios increased in both male and female SCA2 model flies that were overexpressing wild-type dSesn, while its mutated versions had higher variability, which largely trended towards increased autophagy, but without reaching significance (Figure 7C–F). These data may reflect different mechanisms of protection at play, discussed further below.
 
@@ -90,7 +114,7 @@ Finally, since dSesn overexpression improved survival in flies ubiquitously expr
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/75389/elife-75389-fig8-v5.jpg)
 
-**Figure 8.:** ATXN2.Exercised female flies expressing two copies of CAG-expanded ATXN2 ubiquitously (A) or in adult neurons (C) have increased survival compared to age-matched, unexercised siblings, while exercised male flies expressing two copies of CAG-expanded ATXN2 ubiquitously (B) or in adult neurons (D) trend toward increased survival only in the first 25 days, the period in which flies are still training. Brackets indicate exercise training period. p-Values indicate log-rank for entire survival curve, n ≥ 170, performed in duplicate.
+**Figure 8.:** Exercised female flies expressing two copies of CAG-expanded ATXN2 ubiquitously (A) or in adult neurons (C) have increased survival compared to age-matched, unexercised siblings, while exercised male flies expressing two copies of CAG-expanded ATXN2 ubiquitously (B) or in adult neurons (D) trend toward increased survival only in the first 25 days, the period in which flies are still training. Brackets indicate exercise training period. p-Values indicate log-rank for entire survival curve, n ≥ 170, performed in duplicate.
 
 In summary, both exercise and dSesn expression ameliorated mobility and survival defects in SCA2 model flies and these improvements correlated with reduced disease protein levels. Furthermore, these neuroprotective effects relied on known functions of dSesn related to mTOR and oxidoreductase activities (Figure 9).
 
@@ -114,11 +138,147 @@ To conclude, we propose endurance exercise as a promising therapeutic interventi
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ATXN2</td>
+      <td>GenBank</td>
+      <td>FLYB: FBgn0267931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ATXN3</td>
+      <td>GenBank</td>
+      <td>FLYB: FBgn0024961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>CACNA1A</td>
+      <td>GenBank</td>
+      <td>FLYB: FBgn0283733</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Sesn</td>
+      <td>GenBank</td>
+      <td>FLYB: FBgn0034897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS- ATXN2Q117</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC68394: FBst0068394</td>
+      <td>Flybase Symbol:w*; P{UAS-ATXN2.117Q}8B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS- ATXN2Q117</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC68395: FBst0068395</td>
+      <td>Flybase Symbol: w*; P{UAS-ATXN2.117Q}9 A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ATXN3Q77</td>
+      <td>Tsou et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-α1ACTQ70</td>
+      <td>Sutton et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118;UAS-ATXN2Q117/CyO;UAS-ATXN2Q117</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See methods lines 305–306</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118;sqh/CyO;UAS- dSesnWT/TM3-Sb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See methods lines 311–314</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118;sqh/CyO;UAS- dSesnC86S/TM3-Sb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See methods lines 311–314</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118;sqh/CyO;UAS- dSesnD424A/TM3-Sb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See methods lines 311–314</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118;sqh/CyO;UAS- dSesnD423A/D424A/TM3-Sb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See methods lines 311–314</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ataxin-2 (mouse monoclonal)</td>
+      <td>BD biosciences</td>
+      <td>611,378</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ataxin-3 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>1H9, MAB5360</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GABARAP (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab1398</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-dSesn (rabbit polyclonal)</td>
+      <td>Kim et al., 2020</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies
 
 Primary antibodies were obtained from the following sources: anti-ATXN2 (mouse monoclonal, 1:500; BD biosciences, Franklin Lakes, NJ) anti-ATXN3 (mouse monoclonal 1H9, MAB5360, 1:500–1000; Millipore, Burlington, MA), anti-dSesn (rabbit polyclonal, 1:500, Lee et al., 2010), anti-GABARAP (rabbit polyclonal, 1:1000, Abcam, Cambridge, United Kingdom). Peroxidase-conjugated secondary antibodies (goat anti-mouse, goat anti-rabbit, 1:5000; Jackson Immunoresearch, West Grove, PA).
 
-## Fly stocks and maintenance
+### Fly stocks and maintenance
 
 Gifted stocks used in this study were sqh-Gal4 (Daniel Kiehart, Duke University, abbreviated “sqh” throughout), and w1118 (Russ Finley, Wayne State University). UAS-Q80, UAS-ATXN3Q77, UAS-α1ACTQ70 and elav-Gal4 (GS) were previously described in Tsou et al., 2016; Johnson et al., 2020; Johnson et al., 2019 UAS- ATXN2Q117 (BDSC#68394, BDSC#68395), on chromosomes II and III, respectively, were obtained from the Bloomington Drosophila Stock Center (Bloomington, IN). Both SCA2 lines were used for pilot work. A single line containing UAS-ATXN2Q117 on both chromosomes II and III was then generated using standard crosses (w1118;UAS-ATXN2Q117/CyO;UAS-ATXN2Q117).
 
@@ -128,26 +288,26 @@ Prior to all experiments, fly cultures were maintained at a constant density for
 
 Flies were housed in a 25°C incubator on a 12:12 h light:dark cycle at 50% relative humidity. Control flies for all non-gene-switch Gal4 UAS experiments consisted of both the UAS and Gal4 lines into w1118. For gene-switch experiments, RU- flies of the same genotype served as the negative control. RU+ group received 100 μM RU486/mifepristone (Cayman Chemical, Ann Arbor, MI), which activates the gene switch (GS) driver, while RU- group received the same volume of vehicle solution (70% ethanol).
 
-## Exercise training
+### Exercise training
 
 Triplicate cohorts of at least 800 flies were collected under light CO2 anesthesia within 6 hr of eclosion and separated into vials of 20. Flies were then further separated into two large cohorts of at least 400 flies, which served as exercised and unexercised groups. Exercised groups received three weeks of ramped exercise as described previously (Piazza et al., 2009). The unexercised groups were placed on the exercise training device at the same time as the exercised groups, but were prevented from running by the placement of a foam stopper low in the vial. Both cohorts were housed in the same incubator with normal foam stopper placement at all times other than during an exercise bout.
 
-## Climbing speed
+### Climbing speed
 
 Negative geotaxis was assessed in Rapid Negative Geotaxis (RING) assays in groups of at least 100 flies as described (Damschroder et al., 2018a). Briefly, vials of 20 flies were briskly tapped down, then measured for climbing distance after 2 s of inducing the negative geotaxis instinct. For each group of vials, an average of five consecutive trials was calculated and batch-processed using ImageJ (Bethesda, MD). Flies were longitudinally tested 2–3 times per week for 5–7 weeks. Between assessments, flies were returned to food vials and housed normally as described above. Negative geotaxis results were analyzed using two-way ANOVA analysis (age-effect and genotype effect) with post hoc Tukey’s multiple comparison tests in GraphPad Prism (San Diego, CA). All negative geotaxis experiments were performed in triplicate, with one complete trial shown in each graph.
 
-## Endurance
+### Endurance
 
 At least eight vials of 20 flies from each cohort were subjected to the endurance analysis on day 25 of adulthood, immediately after exercise was complete and after 2 days of recovery. For each session, the flies were placed on the Power Tower exercise machine (Sujkowski and Wessells, 2018) and the climbing instinct was induced until flies no longer responded to the negative geotaxis stimulus. Monitored at 15 min intervals, a vial of flies was visually determined to be fatigued when 10% or fewer flies could climb higher than 1 cm after three consecutive drops. Each vial was plotted as a single datum. Endurance experiments were performed in triplicate and at the same time as age-matched background controls and were scored blindly wherever possible. The time from the start of the assay to the time of fatigue was recorded for each vial, and the data analyzed using log-rank analysis in GraphPad Prism (San Diego, CA). Each graph represents an independent, representative repetition.
 
-## Longevity
+### Longevity
 
 For exercise experiments, appropriate food vials (RU486, vehicle, or standard 10% sucrose 10% yeast) were changed and deaths were recorded five times per week during exercise training and three times per week after completion of the training program. All other longevity experiments were scored three times per week. Dead flies were removed and counted until no flies remained. Differences in survival were plotted as cumulative mortality and assessed following censoring using log-rank analysis in GraphPad Prism (San Diego, CA). Longevity experiments were performed in triplicate and in parallel with background controls, with each individual graph depicting a representative biological repetition.
 
-## Western blots
+### Western blots
 
 Three-to-five whole flies per biological replicate, depending on experiment, were homogenized in boiling lysis buffer (50 mM Tris pH 6.8, 2% SDS, 10% glycerol, 100 mM dithiothreitol), sonicated, boiled for 10 min, and centrifuged at 13,300xg at room temperature for 10 min. Western blots were developed ChemiDoc (Bio-Rad, Hercules, CA) and quantified with ImageLab (Bio-Rad, Hercules, CA). For direct blue staining, PVDF membranes were submerged for 10 min in 0.008% Direct Blue 71 (Sigma-Aldrich, St. Louis, MO) in 40% ethanol and 10% acetic acid, rinsed in 40% ethanol/10% acetic acid, air dried, and imaged. Western blots were performed using at least three biological replicates, and statistical analysis was performed in GraphPad Prism (San Diego, CA).
 
-## Statistical analysis
+### Statistical analysis
 
 Survival and endurance analyses were analyzed by log-rank. Non-natural deaths were censored and did not exceed 10% of flies for any group. Climbing speed over time was analyzed by two-way ANOVA for age effect and genotype effect, with Tukey post-hoc comparison between significantly different groups. Western blots were analyzed using either student t-test or ANOVA depending on experiment. All statistics were performed using GraphPad Prism software version 9.2.0 (San Diego, CA, USA) for Macintosh.

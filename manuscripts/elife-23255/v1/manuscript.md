@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.23255.001 Manipulative experiments and observations along environmental gradients, the two most common approaches to evaluate the impacts of climate change on nutrient cycling, are generally assumed to produce similar results, but this assumption has rarely been tested. We did so by conducting a meta-analysis and found that soil nutrients responded differentially to drivers of climate change depending on the approach considered. Soil carbon, nitrogen, and phosphorus concentrations generally decreased with water addition in manipulative experiments but increased with annual precipitation along environmental gradients. Different patterns were also observed between warming experiments and temperature gradients. Our findings provide evidence of inconsistent results and suggest that manipulative experiments may be better predictors of the causal impacts of short-term (months to years) climate change on soil nutrients but environmental gradients may provide better information for long-term correlations (centuries to millennia) between these nutrients and climatic features. Ecosystem models should consequently incorporate both experimental and observational data to properly assess the impacts of climate change on nutrient cycling. DOI: http://dx.doi.org/10.7554/eLife.23255.001
+Manipulative experiments and observations along environmental gradients, the two most common approaches to evaluate the impacts of climate change on nutrient cycling, are generally assumed to produce similar results, but this assumption has rarely been tested. We did so by conducting a meta-analysis and found that soil nutrients responded differentially to drivers of climate change depending on the approach considered. Soil carbon, nitrogen, and phosphorus concentrations generally decreased with water addition in manipulative experiments but increased with annual precipitation along environmental gradients. Different patterns were also observed between warming experiments and temperature gradients. Our findings provide evidence of inconsistent results and suggest that manipulative experiments may be better predictors of the causal impacts of short-term (months to years) climate change on soil nutrients but environmental gradients may provide better information for long-term correlations (centuries to millennia) between these nutrients and climatic features. Ecosystem models should consequently incorporate both experimental and observational data to properly assess the impacts of climate change on nutrient cycling.
 
 ## Introduction
 
@@ -40,11 +40,9 @@ Temporal or spatial observations along environmental gradients at regional or gl
 
 Biodiversity–productivity relationships contain an apparent paradox: experiments that directly manipulate species diversity often report a positive effect of diversity on productivity, whereas observations of natural communities identify various productivity–diversity relationships (Jiang et al., 2009; Wardle and Jonsson, 2010). Short-term experiments of N fertilization reported nearly ubiquitous negative productivity–diversity relationships (Suding et al., 2005). Contrasting patterns may be found for the diversity–invasibility relationship: experiments usually detect negative relationships, and field surveys find positive relationships (Clark et al., 2013; Fridley et al., 2007). The paradox has led to debates on the relevance of the results of manipulative experiments for natural communities, and understanding the mechanisms behind the apparent conflicts is therefore a major step toward developing general theories of community processes, including those for soil nutrients. Nutrient cycling plays a fundamental role in ecosystem services such as food and fiber production, C sequestration, and climate regulation, so this knowledge gap may hamper our ability to accurately predict ecosystem functioning under climate change. Fortunately, compared with the lack of data for other ecosystem response variables (e.g. species diversity, gas exchange, and microbial attributes), a wealth of data for soil nutrients is available for testing the consistency between experimental and observational approaches.
 
-No study, to the best of our knowledge, has directly tested the congruence of soil nutrient responses to changing regimes of precipitation or temperature obtained from experimental
+No study, to the best of our knowledge, has directly tested the congruence of soil nutrient responses to changing regimes of precipitation or temperature obtained from experimental vs. observational approaches, despite the importance of soil for ecosystem functioning. We thus conducted a meta-analysis of 1421 data points from 182 experimental studies and of a total of 1346 sites from 141 studies of natural gradients around the world (see Figure 1 and Supplementary References). We evaluated the similarity of the predictions from experimental and observational approaches by assessing the direction of the responses of soil nutrients to changing precipitation/temperature. Further analyses were conducted to compare the response ratios from experimental studies to changes in precipitation or temperature at the various study sites with the overall response across all observational studies as a function of precipitation, aridity and temperature. We used total nutrient concentrations because they represent long-term nutrient reservoirs in terrestrial ecosystems and are more stable than extractable nutrients in soils. Total C, N, and P concentrations generally indicate overall nutrient availability and are positively correlated with each other (Bertiller et al., 2006; Jacoby, 2005; Silver, 1994). Given that temperature varies across precipitation gradients we also used aridity, which incorporates both potential evapotranspiration and precipitation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig1-v1.jpg)
-
-**Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.23255.002
 
 We hypothesized that short-term local manipulative experiments and large-scale observational studies identify different responses of soil nutrients to changes in climatic conditions. These differences may be due to the manner in which the entire ecosystem responds to rapid (i.e. days to months, e.g. drought) vs. slow (i.e. centuries to thousands of years, e.g. changes in aridity) climatic changes. The properties of ecosystems thus often respond in a simultaneous and predictive manner to slow changes in climate (e.g. plant cover, diversity, soil properties and nutrient pools), but rapid climatic changes will likely disrupt the simultaneous responses of these slowly changing processes to climate change. For example, a change in water supply in manipulative precipitation experiments in local environments (e.g. similar plant species, plant cover, or soil type) could directly influence the balance between nutrient uptake/leaching vs. mineralization/decomposition, particularly in arid ecosystems (Ansley et al., 2014; Davidson et al., 2004). In contrast, and in addition to precipitation, abiotic factors (such as temperature and soil age and taxonomy) and vegetation co-vary simultaneously along a precipitation gradient. For example, increases in aridity across a gradient often lead to reductions in the diversity and cover of vascular plants, rates of litter decomposition, and availability of C and N (Delgado-Baquerizo et al., 2013; Jiao et al., 2016), all of which co-evolve over millennia (Ehrenfeld et al., 2005; Lambers et al., 2009). All these co-varying factors likely affect the processes involved in the cycling and storage of soil C, N, and P. We thus posit that short-term local manipulative experiments could provide useful information for predicting shifts in soil processes in response to rapid changes in climate (from years to decades, e.g. drought), such as those we are facing today. In contrast, observational studies might provide unique information for understanding the response of soil processes to long-term changes in climate (from centuries to thousands of years, e.g. increases in aridity [Huang et al., 2015]).
 
@@ -52,41 +50,244 @@ As stated above, the contrasting findings between manipulative experiments and o
 
 ## Results
 
-Contrasting responses of soil total C, N, and P concentrations were found between experimental and observational studies. The responses of soil total C, N, and P concentrations generally differed between paired manipulative experiments and environmental gradients (
+Contrasting responses of soil total C, N, and P concentrations were found between experimental and observational studies. The responses of soil total C, N, and P concentrations generally differed between paired manipulative experiments and environmental gradients (Figures 2–4, Figure 2—figure supplement 1). Overall, adding water in experiments decreased soil N, P, and C concentrations by 5.4, 9.3, and 2.7%, respectively (non-significantly for C). In contrast, N concentration increased with precipitation across environmental gradients. The enhanced effects of increasing precipitation on C and P concentrations were not significant (Figure 2). Experimental drought treatments significantly increased the concentrations of C, N, and P by 6.1, 17.9, and 6.8%, respectively. Soil N and P concentrations decreased with increasing aridity and C concentration did not change significantly when precipitation was replaced by aridity. The aridity-related patterns were opposite to those observed in manipulative drought experiments (Figure 3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig2-v1.jpg)
 
-**Figure 2.:** a) C, (b) N, and (c) P concentrations to wetting by using response ratios in manipulative experiments and slopes in precipitation gradient observations.Symbols with error bars show the mean response ratios or slopes with 95% confidence intervals. Plus (+) and minus (–) signs represent positive and negative means, respectively. Green symbols are positive and red symbols are negative means whose confidence intervals do not include zero. ‘Multiple’ indicates results from studies conducted across an environmental gradient for multiple types of ecosystems or soils. Manipulative experiments are on the left and gradient observations are on the right of each panel. Numbers indicate the number of studies used in each case.DOI: http://dx.doi.org/10.7554/eLife.23255.003
+**Figure 2.:** Symbols with error bars show the mean response ratios or slopes with 95% confidence intervals. Plus (+) and minus (–) signs represent positive and negative means, respectively. Green symbols are positive and red symbols are negative means whose confidence intervals do not include zero. ‘Multiple’ indicates results from studies conducted across an environmental gradient for multiple types of ecosystems or soils. Manipulative experiments are on the left and gradient observations are on the right of each panel. Numbers indicate the number of studies used in each case.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** a) and gradient observations (b).Aridity is defined as 1–AI, where AI, the ratio of precipitation to potential evapotranspiration, is the aridity index. Symbols with error bars show the mean response ratios with 95% confidence intervals. Symbols are colored according to significant differences. Green symbols with a plus sign (+) and pink symbols with a minus sign (–) represent positive and negative differences, respectively. Due to limited sample size, we do not present differences among ecosystem or soil types.DOI: http://dx.doi.org/10.7554/eLife.23255.004
+**Figure 2—figure supplement 2.:** Aridity is defined as 1–AI, where AI, the ratio of precipitation to potential evapotranspiration, is the aridity index. Symbols with error bars show the mean response ratios with 95% confidence intervals. Symbols are colored according to significant differences. Green symbols with a plus sign (+) and pink symbols with a minus sign (–) represent positive and negative differences, respectively. Due to limited sample size, we do not present differences among ecosystem or soil types.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig3-v1.jpg)
 
-**Figure 3.:** a) C, (b) N, and (c) P concentrations to drying by using response ratios in manipulative drought experiments and slopes in aridity gradient observations.Aridity is defined as [maximum AI in the data set – AI], where AI is the aridity index, the ratio of precipitation to potential evapotranspiration. Same symbols and explanations as in Figure 2.DOI: http://dx.doi.org/10.7554/eLife.23255.005
+**Figure 3.:** Aridity is defined as [maximum AI in the data set – AI], where AI is the aridity index, the ratio of precipitation to potential evapotranspiration. Same symbols and explanations as in Figure 2.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig4-v1.jpg)
 
-**Figure 4.:** a) C, (b) N, and (c) P concentrations to warming by using response ratios in manipulative temperature experiments and slopes in temperature gradient observations.Same symbols and explanations as in Figure 2.DOI: http://dx.doi.org/10.7554/eLife.23255.006
+**Figure 4.:** Same symbols and explanations as in Figure 2.
 
 Responses to changes in temperature also differed between experimental and observational studies. Experimental warming generally increased the concentrations of C, N, and P, especially that of N (Figure 4). In contrast, these concentrations tended to decrease along gradients of increasing mean annual temperature (Figure 4). Similar results were found for temperature-related changes in C, N, and P concentrations across different types of ecosystems or soils: patterns were inconsistent between manipulative experiments and environmental gradient observations for the same climate-change factor of precipitation or temperature (Figures 2–4).
 
-Cross-study analyses found that response ratios varied between experimental studies along climatic gradients. The response ratio of soil C concentration increased quadratically with mean annual precipitation in water-addition experiments, but decreased non-significantly with precipitation in drought experiments (
+Cross-study analyses found that response ratios varied between experimental studies along climatic gradients. The response ratio of soil C concentration increased quadratically with mean annual precipitation in water-addition experiments, but decreased non-significantly with precipitation in drought experiments (Figure 5). The response ratios of N and P concentrations in manipulative precipitation experiments were not significantly correlated with mean annual precipitation. The response ratio of P concentration in drought experiments decreased with precipitation (Figure 5). This relationship, however, was mainly dependent on two data points (Figure 5) and disappeared when they were removed (R2 = 0.01, p=0.84). The response ratio of C concentration in warming experiments was linearly correlated with mean annual temperature. Unimodal curves best described the relationships between the response ratio of N and P concentrations in warming experiments and mean annual temperature. At low to moderate levels, mean annual temperature increased the response ratio of P concentrations.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig5-v1.jpg)
 
-**Figure 5.:** Details of the fitted models are given within each panel.DOI: http://dx.doi.org/10.7554/eLife.23255.007
+**Figure 5.:** Details of the fitted models are given within each panel.
 
-In the cross-study analyses of all observational studies, climatic data (temperature and precipitation) collectively explained ~30% of the variation in soil total C, N, and P concentrations. Soil and ecosystem types were also strong drivers of total C, N, and P concentrations. When all data were included, the variables of climate, aridity, and type of ecosystem and soil accounted for ~63–77% of the variation observed in the C, N, and P concentrations (
+In the cross-study analyses of all observational studies, climatic data (temperature and precipitation) collectively explained ~30% of the variation in soil total C, N, and P concentrations. Soil and ecosystem types were also strong drivers of total C, N, and P concentrations. When all data were included, the variables of climate, aridity, and type of ecosystem and soil accounted for ~63–77% of the variation observed in the C, N, and P concentrations (Table 1). Soil C, N and P concentrations, based on all observations from the observational studies, changed quadratically with mean annual precipitation and temperature (Figure 6). Both C and N concentration were significantly and positively correlated with mean annual precipitation but negatively correlated to aridity. Soil P was negatively correlated with precipitation but was not significantly correlated with the aridity. Soil C, N and P were quadratically correlated to with temperature. Similar but clearer patterns were found between soil nutrients and climate variables when only considering the controls from all experiments (Figure 7). Soil P concentrations increased at low level of precipitation but decreased at high level of precipitation. Neither C nor N were significantly correlated with precipitation. In contrast, soil C, especially N and P, significantly decreased with aridity. Soil C and N were negatively correlated with temperature but soil P was positively correlated with temperature.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig6-v1.jpg)
 
-**Figure 6.:** Details of the fitted models are given within each panel. Aridity is defined as [maximum AI in the data set – AI], where AI is the aridity index, the ratio of precipitation to potential evapotranspiration.DOI: http://dx.doi.org/10.7554/eLife.23255.008
+**Figure 6.:** Details of the fitted models are given within each panel. Aridity is defined as [maximum AI in the data set – AI], where AI is the aridity index, the ratio of precipitation to potential evapotranspiration.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/23255/elife-23255-fig7-v1.jpg)
 
-**Figure 7.:** Details of the fitted models are given within each panel. Aridity is defined as [maximum AI in the data set – AI], where AI is the aridity index, the ratio of precipitation to potential evapotranspiration.DOI: http://dx.doi.org/10.7554/eLife.23255.009
+**Figure 7.:** Details of the fitted models are given within each panel. Aridity is defined as [maximum AI in the data set – AI], where AI is the aridity index, the ratio of precipitation to potential evapotranspiration.
+
+**Table 1.**
+ R2 values of multiple regression analyses of soil carbon, nitrogen, and phosphorus concentrations for the observational studies. Abbreviations: T, mean annual temperature; P, mean annual precipitation; A, aridity; S, FAO soil classification; E, type of ecosystem. Letter combinations indicate which explanatory terms are included in a model. Values in bold indicate significant effects (p<0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>[C]</th>
+      <th>[N]</th>
+      <th>[P]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td>0.051</td>
+      <td>0.012</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>0.222</td>
+      <td>0.061</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>0.319</td>
+      <td>0.181</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>0.334</td>
+      <td>0.179</td>
+      <td>0.107</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>0.420</td>
+      <td>0.215</td>
+      <td>0.158</td>
+    </tr>
+    <tr>
+      <td>TP</td>
+      <td>0.342</td>
+      <td>0.190</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td>TA</td>
+      <td>0.331</td>
+      <td>0.201</td>
+      <td>0.070</td>
+    </tr>
+    <tr>
+      <td>TS</td>
+      <td>0.494</td>
+      <td>0.252</td>
+      <td>0.248</td>
+    </tr>
+    <tr>
+      <td>TE</td>
+      <td>0.509</td>
+      <td>0.288</td>
+      <td>0.285</td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>0.386</td>
+      <td>0.213</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>PS</td>
+      <td>0.562</td>
+      <td>0.230</td>
+      <td>0.166</td>
+    </tr>
+    <tr>
+      <td>PE</td>
+      <td>0.510</td>
+      <td>0.270</td>
+      <td>0.156</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>0.492</td>
+      <td>0.349</td>
+      <td>0.212</td>
+    </tr>
+    <tr>
+      <td>AE</td>
+      <td>0.514</td>
+      <td>0.340</td>
+      <td>0.261</td>
+    </tr>
+    <tr>
+      <td>SE</td>
+      <td>0.700</td>
+      <td>0.350</td>
+      <td>0.359</td>
+    </tr>
+    <tr>
+      <td>TPA</td>
+      <td>0.424</td>
+      <td>0.285</td>
+      <td>0.115</td>
+    </tr>
+    <tr>
+      <td>TPS</td>
+      <td>0.685</td>
+      <td>0.349</td>
+      <td>0.322</td>
+    </tr>
+    <tr>
+      <td>TPE</td>
+      <td>0.583</td>
+      <td>0.358</td>
+      <td>0.322</td>
+    </tr>
+    <tr>
+      <td>TAS</td>
+      <td>0.569</td>
+      <td>0.450</td>
+      <td>0.361</td>
+    </tr>
+    <tr>
+      <td>TAE</td>
+      <td>0.566</td>
+      <td>0.446</td>
+      <td>0.374</td>
+    </tr>
+    <tr>
+      <td>TSE</td>
+      <td>0.758</td>
+      <td>0.411</td>
+      <td>0.484</td>
+    </tr>
+    <tr>
+      <td>PAS</td>
+      <td>0.564</td>
+      <td>0.418</td>
+      <td>0.256</td>
+    </tr>
+    <tr>
+      <td>PAE</td>
+      <td>0.577</td>
+      <td>0.432</td>
+      <td>0.307</td>
+    </tr>
+    <tr>
+      <td>PSE</td>
+      <td>0.743</td>
+      <td>0.409</td>
+      <td>0.418</td>
+    </tr>
+    <tr>
+      <td>ASE</td>
+      <td>0.671</td>
+      <td>0.554</td>
+      <td>0.479</td>
+    </tr>
+    <tr>
+      <td>TPAS</td>
+      <td>0.621</td>
+      <td>0.511</td>
+      <td>0.469</td>
+    </tr>
+    <tr>
+      <td>TPAE</td>
+      <td>0.617</td>
+      <td>0.542</td>
+      <td>0.434</td>
+    </tr>
+    <tr>
+      <td>TPSE</td>
+      <td>0.799</td>
+      <td>0.493</td>
+      <td>0.562</td>
+    </tr>
+    <tr>
+      <td>TASE</td>
+      <td>0.730</td>
+      <td>0.668</td>
+      <td>0.582</td>
+    </tr>
+    <tr>
+      <td>PASE</td>
+      <td>0.726</td>
+      <td>0.632</td>
+      <td>0.542</td>
+    </tr>
+    <tr>
+      <td>TPASE</td>
+      <td>0.771</td>
+      <td>0.727</td>
+      <td>0.629</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 

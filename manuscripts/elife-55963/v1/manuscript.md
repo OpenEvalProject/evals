@@ -32,9 +32,17 @@ Despite its high biological relevance, nuclear transport of large cargoes is sti
 
 ## Results and discussion
 
-## A large cargo toolkit for nuclear transport studies
+### A large cargo toolkit for nuclear transport studies
 
 We first aimed to develop a set of model import cargoes with known size and tuneable number of NLSs (#NLSs) on their surface. Naturally occurring cargoes with multiple NLSs, such as proteasomes, pre-ribosomes, mRNA or RNA-protein complexes do not offer the possibility to control both properties reliably at the same time. Vice versa, for artificial large substrates, like quantum dots or gold nanoparticles, it can be challenging to tune size and #NLSs and extensive functionalisation is typically required. Thus we turned to viral capsids, which are known to self-assemble from one or few proteins into large structures of fixed size. We screened the literature for capsid-like particles obeying the following criteria: i) Large-scale high yielding recombinant expression is possible in an expression host like Escherichia coli. ii) Surface modification via a unique residue is possible. Thus, we focused on systems with existing crystal and/or EM structures and checked for single functional surface exposed cysteines or the possibility of mutating another residue to one with no impact on capsid assembly. iii) Capsid is stable at physiological conditions. iv) Capsid diameter is between 15 nm and 40 nm: this size range focuses on rather uncharted territory, with its upper limit reported to be the largest size of cargoes transported by the NPC (Hepatitis B virus, Panté and Kann, 2002). As a result, the following four icosahedral shaped capsids of different size were selected for this study (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the mixed labelling reaction with maleimide reactive NLS peptide and maleimide reactive fluorescent dye. The capsid protein, containing a cysteine mutation (in red), self-assembles into a capsid. The purified capsids are then labelled with a mixture of dye and NLS peptide, in different ratios according to the desired reaction outcome. (B) Capsid structures rendered in Chimera (Pettersen et al., 2004) (top) and EM images of the purified capsids (bottom). The scale bar corresponds to 50 nm. (C) SDS-PAGE gel of MS2S37P samples with increasing number of NLS peptides attached (top band). The lower band corresponds to a capsid protein tagged with dye or no dye, but 0 NLS. The upper band corresponds always to the capsid protein without any dye, but NLS, as evident from the fluorescent scan on the right side. (D) Representative FCS autocorrelation curves for the MS2S37P, I53-47 and MS2 capsids. The curves were fitted with a diffusion model to calculate the capsid brightness and concentration. (E) DLS quantification of capsid diameters (blue bars) compared with reference values from literature and structural information (red bars).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Analog to main text Figure 1 (A) shows I53-50 capsid structures rendered in Chimera (Pettersen et al., 2004) (left) and EM image of the purified sample (right). The scale bar corresponds to 50 nm. (B) SDS-PAGE gel of I53-50 capsids labelled with Alexa647. The different columns correspond to fractions from the main peak of the size exclusion column. Note, how fluorescent labelling is observed in both chain A (top band) and chain B (bottom band), while the labelling aimed only to label an inserted reactive cysteine residue in chain B. This labelling ambiguity could result in an inaccurate estimate of the #NLSs coupled to the capsid surface, therefore this capsid was excluded from further analysis.
 
 MS2S37P (diameter 17 nm): This capsid is derived from the bacteriophage MS2, formed by a single coat protein with a point mutation S37P. The coat protein assembles into dimers and then into 12 pentamers yielding an icosahedron with a total of 60 copies (Asensio et al., 2016). A cysteine mutation (T15C) that had previously been shown not to interfere with capsid assembly was introduced to allow surface tagging via maleimide labelling (Peabody, 2003).
 
@@ -48,11 +56,23 @@ After successful purification, the next step was to engineer the capsid surface 
 
 Figure 1 summarises the labelling scheme used for all capsids and its characterisation. Figure 1B shows negative staining EM images of capsids after purification and labelling, visualizing intact capsids with the expected diameter. To guarantee the robustness of the quantitative experiments, it was crucial to determine each capsids’ fluorescence brightness (i.e. how many dyes are attached to one capsid) as well as the #NLSs. The #dyes/capsid was determined via fluorescence correlation spectroscopy (FCS), a widely employed biophysical tool to probe brightness and concentration of a freely diffusing species (Figure 1D, Table 1). FCS can also be used to estimate the size and size distribution (such as substantial contaminations of other species than intact capsids) of the samples, which was found to be in line with the high purity indicated by the EM micrographs. Additional DLS (dynamic light scattering) studies were employed to further validate capsid diameter in solution and presence of intact capsids as the dominant species (Figure 1E). The #NLSs was determined from gel shift assays, as NLS-labelled capsid monomers migrate substantially different than their unlabelled counterparts. In contrast, the dye labelling did not alter capsid monomers mobility on gel (Figure 1C). Estimated #NLSs and #dyes/capsid are listed for all samples in Table 1. The presence of a single cysteine per monomer ensures that each is labelled either with NLS or dye, but not both: in this way, unassembled monomers cannot be fluorescently detectable NLS-dependent import substrates. We note that labelling with a synthetic NLS pre-tagged with a dye was found to be impractical in preliminary experiments, as the unreacted species can contribute to elevated background fluorescence in the nucleus.
 
-## Import kinetics of large cargoes are tuned by size and NLS numbers (#NLS)
+### Import kinetics of large cargoes are tuned by size and NLS numbers (#NLS)
 
 The different labelled capsids samples (total 30, Table 1) were subjected to nuclear import assays using the widely employed permeabilised cell assay (Adam et al., 1990). Figure 2A outlines the details of the experiments. In brief, mild digitonin treatment was used to permeabilise the plasma membrane of HeLa cells, leaving the nuclear envelope intact. In these conditions, functional nucleocytoplasmic transport can be reconstituted for a few hours by adding the key components of the transport machinery: Importinβ, Importinα, RanGDP, NTF2 (a NTR which allows recycling of RanGDP) and GTP to the cells. Intactness of the nuclear envelope and functional nuclear transport were always validated by a set of control experiments using fluorescently labelled dextran and model cargoes (see Materials and methods). As shown in Figure 2B exemplarily for the MS2S37P and MS2 capsids, cargoes labelled with NLSs showed an increased nuclear accumulation over time, indicative of functional nuclear import.
 
-Experiments were performed on a semi-automated confocal microscope, recording time-lapse images over several cells and different field of views (error bars correspond to standard deviations between different FOV). Note that for practical reasons, imaging always started ~ 2 min after addition of the transport mix to the cells. This timing offset was accounted for by an offset fitting parameter A in our fit equation (I(t)=A+IMAX(1−e−τ∗t)).
+![Figure 2.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig2-v1.jpg)
+
+**Figure 2.:** (A) Scheme of the transport assay experiment: HeLa cells were permeabilised and incubated with a transport mix containing the cargo of interest, nuclear transport receptors and energy. Confocal images were acquired in 12 different areas every 2 min, for 80 min in total. (B) Representative time-lapse snapshots of cargo import (MS2S37P and MS2 capsids). The scale bar corresponds to 20 μm. (C) Overview of the image analysis pipeline for import kinetics experiments. Two reference stain images (Hoechst and MitoTracker) were segmented and used to generate three masks corresponding to the regions of interest: nucleus, nuclear envelope and cytoplasm. The masks were then applied to the cargo images to calculate the average intensity in the different regions. (D) Representative raw import kinetics traces for the three cellular compartments of interest. Note that imaging starts after 2 min of adding the transport mix to the cells. Curves depict the average fluorescence measured in the different regions; the shaded areas represent the standard deviation over 12 areas.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** In order to validate the transport assays in permeabilised cells, we performed several control experiments to rule out the possibility that the measured kinetics were for example influenced by depletion of components in the transport mix during the course of the experiment. Panel A shows a comparison of the same MS2S37P sample measured in normal conditions, with a fivefold excess of Importinα, with a twofold excess of GTP and with addition of an energy regeneration system to the transport mix (0.1 mM ATP, 4 mM creatine phosphate and 20 U/ml creatine kinase). For all cases, capsid import did not change substantially compared to the typical variability in these experiments (the shaded area represents the standard deviation of intensity over 12 different areas acquired). In order to further exclude issues with recycling of transport mix components over time, we purified CAS (the protein responsible for shuttling Importinα back into the cytoplasm [Sun et al., 2013]) and tested its effect on the transport of a MS2S37P sample with 23 NLSs. As can be seen in panel B, including 1 µM CAS in the transport mix, no major differences in the capsid nuclear import were observed.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Confocal images of starfish oocytes injected with MS2S37P, I53-47 and MS2 capsids. The plots on the right side correspond to the normalised fluorescence profiles across the nucleus (0 corresponds to the centre of the nucleus, distance in μm, dashed line on the image indicates where the profile is calculated). Note that additional dark areas in the oocyte correspond to oil droplets at the site of injection. For each capsid type, a sample without NLSs was compared with a sample with high #NLSs that showed import in permeabilised cells. Consistent with our results in permeabilised cells with HeLa cells, the efficiency of nuclear accumulation scales with cargo size. Images were taken 1–1.5 hr after injection. Scale bar 50 μm.
+
+Experiments were performed on a semi-automated confocal microscope, recording time-lapse images over several cells and different field of views (error bars correspond to standard deviations between different FOV). Note that for practical reasons, imaging always started ~ 2 min after addition of the transport mix to the cells. This timing offset was accounted for by an offset fitting parameter $A$ in our fit equation ($I(t)=A+I_{MAX}(1−e^{−\tau∗t})$).
 
 Besides the nuclear signal, we also recorded the nuclear envelope and cytoplasmic signals using suitable imaging masks (Figure 2C, Materials and methods and Source code 1 for details). We took precautions to distinguish nuclear fluorescence from nuclear envelope fluorescence by eroding the nuclear mask to a region furthest away from the rim. This turned out to be important, as some capsids showed nuclear envelope targeting but no substantial accumulation into the nucleoplasm (for instance, HBV and MS2 capsids with few NLSs). In addition, this method enabled us to discriminate nuclear signal from sticking of capsids to the cytoplasm, which was observed in some cases.
 
@@ -62,7 +82,310 @@ To further support our findings under fully physiological conditions, we carried
 
 Figure 3 shows representative nuclear import data for the three kinetically investigated capsids MS2S37P, I53-47 and MS2 (see Figure 3—figure supplement 1 for full dataset). The results for HBV capsids will be discussed in the next paragraph. Figure 3 panel A displays typical confocal images of cargoes with different #NLSs and panel B shows representative nuclear kinetic traces extracted from semi-automated microscopy. Figure 3—figure supplement 1 shows the full dataset overlaid with the mono-exponential fits. In absence of NLSs (0 NLSs), all capsids localised to the cytoplasm and no targeting to the nuclear envelope or accumulation in the nucleus was observed, in line with an Importin-dependent pathway. With increasing #NLSs present on the capsid surface we observed progressive nuclear envelope targeting, and eventually, efficient accumulation of cargo in the nucleoplasm. Strikingly, the #NLSs required to observe similar behavior with different capsids scaled dramatically with cargo size, as can be seen by comparing for example the I53-47 sample image with 35 NLSs and the MS2 one with 86 NLSs. The observation of robust bulk import for all capsid constructs with sufficiently high #NLSs highlights another benefit of using viral capsids as large cargo models: in a previous study using coated quantum dots (18 nm) no bulk import could be detected but only rare import events were captured by advanced single molecule technologies (Lowe et al., 2010).
 
-## Modified HBV capsids are targeted to NPCs but do not accumulate into the nucleoplasm
+![Figure 3.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig3-v1.jpg)
+
+**Figure 3.:** (A) Confocal images of nuclear import of the different large cargoes. Cells were incubated for up to 1.5 hr with capsids tagged with different number of NLS peptides on their surface. All cargoes displayed a distinct NLS-dependent behaviour. The scale bar corresponds to 20 μm. (B) Representative nuclear import traces for the three large cargoes labelled with increasing amount of NLS peptides. The corrected nuclear intensities are obtained by background-subtracting the raw nuclear intensities, scaling them according to capsid brightness (#dyes) estimated from FCS (Table 1) and subtracting the initial offset $A$ determined by the mono-exponential fit, to better compare the import efficiencies. The corrected intensities are proportional to capsid concentration and allow us to compare the import efficiency of the different samples. See Figure 3—figure supplement 1 for the full dataset displayed without offsetting by $A$ and overlaid with mono-exponential fits.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Corresponding to main text Figure 3, here we show all measured kinetics for the MS2S37P (A), I53-47 (B) and MS2 (C) capsids. The traces represent the average nuclear intensity measured in 12 different areas, background-subtracted and corrected to account for the different sample brightness (#dyes estimated with FCS, see Table 1). Overlaid on top of the traces, we show the mono-exponential fits used to extract the kinetic parameters.
+
+**Table 1.**
+ Sample properties and parameters from fits of import kinetics.Here we list all capsid sample properties (estimated #NLSs and #dyes per capsids), as well as all parameters extracted from fitting the import traces with an inverse exponential $It=A+I_{MAX}1-e^{-\tau*t}$. The initial flux is calculated as $J=I_{MAX}*\tau$. When different biological replicates were measured for the same sample, the values indicate the average.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>sample</th>
+      <th>#dyes</th>
+      <th>#NLSs</th>
+      <th>A</th>
+      <th>IMAX</th>
+      <th>τ</th>
+      <th>J</th>
+      <th>ΔG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">MS2S37P</td>
+      <td>1</td>
+      <td>23</td>
+      <td>0</td>
+      <td>0.24</td>
+      <td>0.39</td>
+      <td>0.022</td>
+      <td>0.01</td>
+      <td>6.34</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>15</td>
+      <td>14</td>
+      <td>0.65</td>
+      <td>0.94</td>
+      <td>0.054</td>
+      <td>0.05</td>
+      <td>4.54</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>30</td>
+      <td>19</td>
+      <td>1.12</td>
+      <td>12.44</td>
+      <td>0.041</td>
+      <td>0.49</td>
+      <td>2.01</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>34</td>
+      <td>23</td>
+      <td>0.64</td>
+      <td>16.63</td>
+      <td>0.053</td>
+      <td>0.88</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>25</td>
+      <td>29</td>
+      <td>0.33</td>
+      <td>28.91</td>
+      <td>0.022</td>
+      <td>0.64</td>
+      <td>1.51</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>38</td>
+      <td>38</td>
+      <td>1.45</td>
+      <td>43.59</td>
+      <td>0.037</td>
+      <td>1.60</td>
+      <td>−0.02</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>10</td>
+      <td>54</td>
+      <td>2.33</td>
+      <td>49.76</td>
+      <td>0.029</td>
+      <td>1.37</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td rowspan="12">I53-47</td>
+      <td>8</td>
+      <td>24</td>
+      <td>0</td>
+      <td>0.18</td>
+      <td>1.58</td>
+      <td>0.018</td>
+      <td>0.03</td>
+      <td>5.27</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>30</td>
+      <td>15</td>
+      <td>0.80</td>
+      <td>3.71</td>
+      <td>0.085</td>
+      <td>0.32</td>
+      <td>3.19</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>31</td>
+      <td>18</td>
+      <td>3.81</td>
+      <td>3.89</td>
+      <td>0.056</td>
+      <td>0.22</td>
+      <td>3.29</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>36</td>
+      <td>22</td>
+      <td>2.34</td>
+      <td>2.95</td>
+      <td>0.080</td>
+      <td>0.23</td>
+      <td>3.36</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>16</td>
+      <td>22</td>
+      <td>2.01</td>
+      <td>5.35</td>
+      <td>0.060</td>
+      <td>0.32</td>
+      <td>3.04</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>31</td>
+      <td>25</td>
+      <td>1.83</td>
+      <td>2.91</td>
+      <td>0.094</td>
+      <td>0.27</td>
+      <td>3.15</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>6</td>
+      <td>30</td>
+      <td>2.27</td>
+      <td>7.22</td>
+      <td>0.063</td>
+      <td>0.45</td>
+      <td>2.41</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>3</td>
+      <td>35</td>
+      <td>1.18</td>
+      <td>16.82</td>
+      <td>0.048</td>
+      <td>0.81</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>8</td>
+      <td>37</td>
+      <td>1.21</td>
+      <td>6.67</td>
+      <td>0.053</td>
+      <td>0.35</td>
+      <td>2.28</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>3</td>
+      <td>37</td>
+      <td>2.16</td>
+      <td>13.80</td>
+      <td>0.059</td>
+      <td>0.81</td>
+      <td>1.52</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>10</td>
+      <td>41</td>
+      <td>1.13</td>
+      <td>13.92</td>
+      <td>0.057</td>
+      <td>0.79</td>
+      <td>1.54</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>8</td>
+      <td>44</td>
+      <td>0.31</td>
+      <td>11.78</td>
+      <td>0.038</td>
+      <td>0.45</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td rowspan="8">MS2</td>
+      <td>20</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0.07</td>
+      <td>0.18</td>
+      <td>0.038</td>
+      <td>0.01</td>
+      <td>6.88</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>38</td>
+      <td>42</td>
+      <td>0.47</td>
+      <td>0.52</td>
+      <td>0.106</td>
+      <td>0.05</td>
+      <td>4.94</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>58</td>
+      <td>54</td>
+      <td>0.19</td>
+      <td>1.07</td>
+      <td>0.241</td>
+      <td>0.26</td>
+      <td>2.95</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>44</td>
+      <td>57</td>
+      <td>0.07</td>
+      <td>1.83</td>
+      <td>0.074</td>
+      <td>0.13</td>
+      <td>3.49</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>52</td>
+      <td>77</td>
+      <td>0.47</td>
+      <td>1.31</td>
+      <td>0.072</td>
+      <td>0.09</td>
+      <td>3.96</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>61</td>
+      <td>86</td>
+      <td>0.55</td>
+      <td>2.67</td>
+      <td>0.042</td>
+      <td>0.11</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>57</td>
+      <td>93</td>
+      <td>0.38</td>
+      <td>2.04</td>
+      <td>0.051</td>
+      <td>0.10</td>
+      <td>3.88</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>54</td>
+      <td>98</td>
+      <td>0.27</td>
+      <td>3.82</td>
+      <td>0.033</td>
+      <td>0.12</td>
+      <td>3.49</td>
+    </tr>
+  </tbody>
+</table>
+
+### Modified HBV capsids are targeted to NPCs but do not accumulate into the nucleoplasm
 
 We next used the established pipeline to investigate the transport of HBV capsids, achieving a maximum of 50% capsid monomer labelling (120 NLSs). The capsids were targeted to the nuclear envelope; however, no bulk nuclear import could be detected (Figure 4, first row). As we were not able to further increase the #NLS with our chemical labelling strategies, and we wondered whether 120 NLSs might still be insufficient, we resorted to genetic tools to achieve the full coverage of 240 NLSs per capsid. To do this, we designed a capsid based on the SplitCore construct (Walker et al., 2011), in which a core-GFP fusion protein was split into two halves that self-assemble before forming the capsid. This exposes a free C terminus, which we exploited to introduce an NLS. Also for this capsid, we did not observe any bulk import. However, the slightly increased size due to the GFP could potentially push this capsid over the maximum NPC transport size limit. We thus tested another strategy, and introduced an NLS into an exposed capsid loop (Figure 4, last row). Again, no functional bulk import could be observed. EM showed that the engineered capsids are less homogenous, but still a large number of intact capsid was observed. Hence we conclude that none of the tested HBV capsids constructs can functionally be enriched in the nucleus. As the chances that our careful modifications rendered the HBV capsid transport-incompetent seem rather low, our data is in line with studies that suggest that only the mature infectious virus can translocate through the NPC into the nucleoplasm (Rabe et al., 2003; Kann et al., 1999). Our results are consistent with EM data of intact HBV capsids entering the NPC barrier, (Panté and Kann, 2002) as we also see strong NE accumulation. However, additional mechanisms would be required for cargo release into the nucleoplasm such as the previously reported structural destabilisation of mature capsids (Cui et al., 2013) or other mechanism that can disassemble capsid that are docked at the NPC. Collectively, this suggests that 36 nm capsids might be able to enter the NPC barrier, but are too large to pass the NPC intact into the nucleus (i.e. undock or release). We, thus, focus our global quantitative analysis on the three capsids for which we could experimentally identify conditions of functional import and nuclear enrichment.
 
@@ -70,27 +393,86 @@ We next used the established pipeline to investigate the transport of HBV capsid
 
 **Figure 4.:** Following the same labelling approach as described in Figure 1, HBV capsids with up to 120 NLSs were generated (first row). In order to test capsids with a higher number of NLSs exposed on the surface, we designed two additional versions of the HBV core protein with a direct NLS insertion (total of 240 NLSs). The middle row shows a construct based on the SplitCore-SplitGFP (Walker et al., 2011), where the HBV core protein is split via artificial stop and start codons into two halves and fused to a split-GFP (GFPβ1–10 and GFPβ11), to which we further added an NLS. Once co-expressed, the two core-GFP halves self-assemble into capsid-like particles. The last row shows a construct where the NLS is inserted in the c/e1 epitope loop of the core protein (orange loop) and a cysteine mutation is introduced to perform labelling with a dye (red star). All capsids were targeted to the nuclear envelope but did not give rise to bulk nuclear accumulation in import experiments using permeabilised cells. (A) Schematic representations of the different HBV core protein constructs. (B) EM images of the purified capsids. The scale bar corresponds to 100 nm. (C) Confocal images of capsid import experiments after 1.5 hr. The scale bar corresponds to 20 μm.
 
-## Quantitative analysis of nuclear import in relation to cargo size and #NLSs
+### Quantitative analysis of nuclear import in relation to cargo size and #NLSs
 
 Our results on large cargo import kinetics (Figure 3) highlight the strikingly different #NLS requirements for the nuclear import of differently sized cargoes. We formulate here a biophysical model that considers the translocation of a large ‘spherical object’ through the crowded NPC permeability barrier (scheme in Figure 5A) and enables us to extract key information about the energetics of transport from our kinetic data.
 
-The final steady state accumulation and the late kinetics of the capsid import are affected by a number of factors that are still incompletely understood – such as the competition between Ran and NTRs for the cargo, the back leakage of the cargo into the cytoplasm and potential clogging of the pores by the capsids (Kim and Elbaum, 2013a; Kim and Elbaum, 2013b). For this reason, we focus our quantitative analysis on the initial flux J (slope of the kinetic curve at the initial time point). Unlike the steady state accumulation, the initial flux J of cargoes into the nucleus is independent of the rates of cargo-NTR dissociation kinetics and is less affected by any potential rate-limiting steps in the Ran cycle (Kim and Elbaum, 2013a; Kim and Elbaum, 2013b; Görlich et al., 2003). To this end, all nuclear import curves were fitted with a mono-exponential kinetic model I(t)=A+IMAX(1−e−τ∗t), with IMAX being the plateau value reached by the fit at infinity, τ the reaction constant with units 1/s and A is the offset parameter. A accounts for any nonzero offset, which could be due to: i) initial recruitment of the cargoes to the cells and nuclear envelope. ii) limiting accuracy in pipetting and sample mixing (there is a 2-min delay in our experiments between the addition of the sample and the start of imaging) and for slightly different background levels due to non-specific adhesion of some samples to cellular structures. A is thus fitted in every experiment and not expected to be a constant. The initial flux can be calculated from the fit parameters as J=IMAX*τ (see Table 1 for values of all fit parameters). We emphasize that the mono-exponential fit is a mathematical tool to estimate the initial flux from the data. Calculating the initial flux from the mono-exponential fits was more robust than the alternative of measuring the initial flux directly from a linear fit of the first few data points, since the timing resolution of the experiment and the accuracy of defining the zero time point when mixing the cargo with the cells was limited. We note that more complex fits, such as bi-exponential fits have been discussed in the literature to include additional effects such as cargo leaking back into the cytoplasm. (Kim and Elbaum, 2013a; Kim and Elbaum, 2013b). In Supplementary file 1, we further compare bi-exponential and the mono-exponential fits. The initial rates for all samples are plotted in Figure 5C (experimental data displayed as dots). We also note that despite the samples having different labelling ratios (see #dyes, Table 1), we confirmed that there were no global correlations between overall #dyes/capsid ratio and extrapolated rate (R2=0.14).
+![Figure 5.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig5-v1.jpg)
 
-Based on extensive previous theoretical and experimental work on the NPC (Iyer‐Biswas and Zilman, 2016; Zilman, 2009; Zilman et al., 2007; Berezhkovskii et al., 2002; Pagliara et al., 2013), the initial flux J  can be approximated as J=kONcaRan+eΔG, where kON is the rate of cargoes reaching the NPC entrance, c is the concentration of cargoes in the cytoplasm, aRan is a number between 1 and 2 depending on the availability of RanGTP at the nuclear exit (aRan=2 corresponds to the absence of RanGTP, and aRan=1 corresponds to RanGTP always being immediately available at the nuclear exit). ΔG is the effective average non-equilibrium free energy potential of the cargo inside the NPC (expressed in units of kBT≈0.6 kcal/mol); a conceptually similar expression was used in Frey and Görlich, 2007 to analyse the transport of cargoes through FG Nup 'hydrogels'. This expression mathematically describes the fact that the probability of a particle that impinges on the NPC entrance to actually translocate to the other side is Ptr=1aRan+eΔG due to the random nature of the diffusive motion inside the NPC. For cargoes that are strongly repelled by the FG Nup network, ΔG≫1, and the flux is exponentially inhibited, as J∼e-ΔG. By contrast, for cargoes that interact attractively with the FG Nups,  ΔG<0 resulting in significant flux through the pore. However, the flux can be significant and well detectable already for ΔG≃1kBT. This expression remains valid for the low concentrations studied here and the intermediate values of ΔG appropriate for our capsids. For higher concentrations or higher #NLS, which we did not experimentally assess, additional corrections may need to be introduced (Zilman et al., 2007; Pagliara et al., 2013).
+**Figure 5.:** (A) Cartoon of the determinants for large cargo import: the free energy cost of inserting a large cargo into the dense FG Nup barrier must be compensated by the binding to FG Nups via multiple NTRs (binding sites represented in orange, NTRs omitted for simplicity). The NPC scaffold structure is from EMD-8087. (B) Dependence of $ΔG$ on the capsid size and #NLS for $a_{Ran}=2$. Shaded regions show one standard deviation of $FR$ and $ϵ$. Fitted values for $FR$ and $ϵ$ are shown in Table 2. (C) Initial flux (corresponding to the slope of the kinetic curve at the initial time point) modelled as $J∝\frac{1}{a_{Ran}+e^{FR-ϵN}}$ overlaid on the (normalised) experimental data (dots). Additional experiments with MS2S37P capsids containing additional charges are overlaid and shown as squares. Whenever independent biological replicates were available, the initial flux is calculated as an average and shown with the error extracted from the technical replicates (12 areas imaged in each experiment). In Figure 5—figure supplement 5 we show that the uncertainty between different cells imaged in a single experiment captures well the variability of independent experiments.
 
-From experimental and theoretical studies (Gu et al., 2017; Ghavami et al., 2016; Vovk et al., 2016; Maguire et al., 2020), in the first approximation the main components of ΔG are: 1) the cost of insertion of the capsid into the FG assembly FR, arising from the entropic cost of FG Nup displacement, osmotic pressure and the effective surface tension penalty, and 2) the effective energetic/enthalpic gain ϵ from the attractive contacts formed between the NTR binding sites and FG repeats, which can partially compensate for the cost of insertion. ΔG can also include non-equilibrium logarithmic corrections arising from the dependence of the diffusion coefficient on the cargo size and the #NLSs (Zilman, 2009; Maguire et al., 2020).
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig5-figsupp1-v1.jpg)
 
-Previous studies indicate that the cost of insertion, FR, increases with the particle size (Gu et al., 2017; Ghavami et al., 2016; Vovk et al., 2016). In simple situations such as the partitioning of a relatively small spherical particle into a polymer brush or a polymer-coated channel representing the NPC, this cost scales as  FR∝Rα with 1 ≤ α ≤ 3, where R is the radius of the particle (Gu et al., 2017; Ghavami et al., 2016) but the exact form of the dependence on R is unknown for very large cargoes studied here. The energetic gain is given by the total average energy of binding between NTRs and FG repeats, which, in the first approximation, for independent binding is expected to be proportional to the #NLSs on the particle surface, which we denote here as N. Combining these terms yields ∆G=FR-ϵN, where ϵ is the effective binding interaction energy of an NTR with the FG environment; ϵ is proportional to the product of the density of the FG motifs in the pore ϕ, and ϵ0, the bare average interaction energy of an NTR with an FG motif, so that ϵ=ϵ0ϕ. When the insertion cost term dominates, ΔG is large and positive, and the initial accumulation rate is low. On the other hand, when the energetic gain term dominates (large N), ΔG decreases and eventually becomes negative, and the initial accumulation rate is high.
+**Figure 5—figure supplement 1.:** Results from biophysical model with $a_{Ran}=1$.(A) Dependence of $ΔG$ on capsid size and #NLS for $a_{Ran}=1$. Shaded regions show one standard deviation of $FR$ and $ϵ$. (B) Initial flux modeled as $J∝\frac{1}{a_{Ran}+e^{FR-ϵN}}$ overlaid on the (normalised) experimental data. (C) Fitted values for $FR$ and $ϵ$.
 
-In order to gain insight into the transport mechanism, we analysed the experimental data using the minimal model described above. First, we inverted the equation for the initial flux to obtain the ΔG values as a function of the #NLSs N for the three capsids of different sizes. For each capsid size, ΔG  values were fit with a straight line, obtaining the values for FR and ϵ from the y-intercepts and slopes, respectively (Figure 5B). We assumed here aRan=2; results for aRan=1 are very similar, as shown in Figure 5—figure supplement 1. The actual value of the initial flux depends on the kON (see above) and the number of the NPCs in the nuclear envelope – variables that are hard to estimate experimentally. Thus, for the purpose of comparison with the model, the data were normalised to the maximal observed value among all technical replicates that was still within 95% confidence interval for that value. The conclusions of the analysis were robust with respect to the choice of the normalisation constant.
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig5-figsupp2-v1.jpg)
 
-Figure 5C shows the experimentally measured initial flux J data (dots) overlaid with the theoretical equation for J using the values of FR and ϵ obtained from the fit (Figure 5B, parameters values are listed in Table 2). The fits in both figures agree well with our experimental data. Consistent with the theoretical expectations, the cost of insertion FR was the highest for the largest capsid. The differences between the insertion costs for the two smaller capsids were within the error bars. To control for the possibility that the similar values of FR observed for all three capsids are an artefact of the limitations on the experimental accuracy at very low fluxes, we repeated the model fit, excluding the #NLS=0 point, which resulted in essentially the same fitting parameter values (Figure 5—figure supplement 2). Another possibility is that for such large capsids the insertion cost saturates to a plateau value at maximal FG Nup compression.
+**Figure 5—figure supplement 2.:** (A) Dependence of $ΔG$ on capsid size and #NLS where the data for #NLS=0 have been excluded from the fitting. (B) The flux determined by the parameters from the fits in (A) overlaid on the initial flux data. (C) Fitted values for $FR$ and $ϵ$, where the data for #NLS=0 have been excluded from the fits.
 
-Surprisingly, the ϵ values were different for different capsids, with the ϵ for the MS2 (largest) capsid substantially lower than those for MS2S37P and I53-47 capsids. At first glance, one would expect the main difference in the fluxes of capsids of different size to stem from the difference in the insertion cost FR, while the interaction energy would be relatively unaffected by the particle size. It was also surprising that significant accumulation in or near the nuclear envelope was observed even for the cargo samples whose interaction with the NPC is insufficient to cause substantial nuclear accumulation (Figure 2D).
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig5-figsupp3-v1.jpg)
 
-To further understand the implications of these findings, we extended the model to include a variation in the FG Nup density along the pore. Our model is a variant of previously postulated 'vestibule'/'docking'models (Tagliazucchi et al., 2013; Tu et al., 2013; Lowe et al., 2015), with a central 'barrier' region with high density of FG Nups and correspondingly high insertion cost, and a 'vestibule' outside the NPC (corresponding to a low density cloud of FG Nups extending into the cytoplasm). The capsids weakly bind in the vestibule but experience no insertion cost as FG Nups and capsids are unconstrained by the NPC scaffold in this region. Bridging between the barrier and the vestibule there are narrow transition regions at the NPC peripheries, with a medium density of FG Nups and correspondingly low insertion cost. As shown in Figure 5—figure supplement 3, this simple extension of the model allows us to explain the fluxes of all capsids with the same value of the 'bare' NTR-FG binding energy ϵ0, as well as the accumulation in the cytoplasmic 'vestibule' even at low ϵ. Assuming the average number of FG motifs in the pore ∼3000 (Tu et al., 2013), corresponding to the average volume fraction/density ϕ=0.01, the obtained values of ϵ0≃4-15 kBT are within the range of the common estimates of NTR-FG interaction strength (Aramburu and Lemke, 2017; Tu et al., 2013; Kapinos et al., 2014; Eisele et al., 2010; Milles et al., 2015). This analysis should be viewed with the caveat that this minimal model is likely to be modified in the future with more molecular details; we return to this point in the Discussion.
+**Figure 5—figure supplement 3.:** (A) The mathematical model used in the main text corresponds to the simplest case where the density of available NTR binding sites within the FG network is uniform throughout the channel (i.e. $ΔG$ has no dependence on the position along the NPC axis). In reality, accumulating evidence indicates that the density of the FG motifs, and consequently the free energy profile, vary along the pore (Lowe et al., 2010; Tagliazucchi et al., 2013; Tu et al., 2013; Lowe et al., 2015). The top panel depicts one such experimentally motivated density profile, which includes a high density 'barrier' region of high FG Nup density at the centre of the pore ($ϕ_{0}$) (which also increases the cost of insertion in this region [Ghavami et al., 2016; Tagliazucchi et al., 2013]); the low density ($ϕ_{v}$ cytoplasmic 'docking/vestibule' region with no insertion cost (dashed line), and the transition region between the two with intermediate FG Nup density ($ϕ_{1}$). In this case, the effective free energy in the central region is given by $ΔG_{0}=-ϵ_{0}ϕ_{0}N+FR,ϕ_{0}$ while in the transition regions the effective free energy is $ΔG_{1}=-ϵ_{0}ϕ_{1}N+FR,ϕ_{1}$, where $ϵ_{0}$ is the 'bare' free energy of NTR interaction with an FG motif. The effective free energy in the 'vestibule' is $ΔG_{v}=-ϵ_{0}ϕ_{v}N$. The initial flux is $J∝\frac{1}{a_{Ran}+2\frac{l_{1}}{l_{T}}e^{ΔG_{1}}+\frac{l_{0}}{l_{T}}e^{ΔG_{0}}+\frac{l_{v}}{l_{T}}e^{ΔG_{v}}}$ where $l_{0},l_{1},l_{v}$ are the lengths of the central, peripheral and vestibule regions respectively and $l_{T}=l_{0}+2l_{1}+l_{v}$. Compared with the uniform model in the main text (Figure 5B), $l_{T}e^{ΔG}=2l_{1}e^{ΔG_{1}}+l_{0}e^{ΔG_{0}}+l_{v}e^{ΔG_{v}}$. Bottom panel: Red, green, blue schematically depict effective free energy profiles for N=35 for MS2S37P, I53-47, MS2 respectively. (B) Top panel: for non-uniform effective free energy, the data for all capsid sizes can be described by a single value of the bare interaction energy $ϵ_{0}$. Parameter values are: $l_{0}$ = 30 nm, $l_{1}$ = 5 nm, $l_{v}=20$nm, $ϕ_{0}$ = 0.01, $ϕ_{1}$ = 0.001, $ϕ_{v}=0.0005$, $ϵ_{0}$ = 15.1 $k_{B}T$. For MS2S37P: F($ϕ_{0}$) = 5.5 $k_{B}T$, F($ϕ_{1}$) = 0.9 $k_{B}T$; for I53-47: F($ϕ_{0}$) = 5.7 $k_{B}T$, F($ϕ_{1}$) = 3.3 $k_{B}T$; and for MS2 F($ϕ_{0}$) = 6.5 $k_{B}T$, F($ϕ_{1}$) = 6.0 $k_{B}T$. We emphasize that this density profile and the parameter values are just one possible combination consistent with the data, and the results are robust with respect to parameter choice. Bottom panel: overlay of the model with the experimental data.
 
-## Surface property effects on large viral import
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Coulombic surface colouring of the three kinetically investigated capsids, generated in Chimera (Pettersen et al., 2004). The colour scale is in units of kcal/(mol*e), where e is the charge of a single electron. (B) Hydrophobicity surface colouring generated in Chimera, the colour scale refers to units in the Kyte-Doolittle hydrophobicity scale (Kyte and Doolittle, 1982).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/55963/elife-55963-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** We show here the comparison of six independent biological replicates of the MS2S37P sample with 38 NLSs. The error bars correspond to the standard deviation between technical replicates (12 different areas images in one experiment). As the technical error already captures the variability between replicates extremely well, we averaged biological replicates when available for the different samples and took the largest technical error as the corresponding uncertainty on the initial flux.
+
+The final steady state accumulation and the late kinetics of the capsid import are affected by a number of factors that are still incompletely understood – such as the competition between Ran and NTRs for the cargo, the back leakage of the cargo into the cytoplasm and potential clogging of the pores by the capsids (Kim and Elbaum, 2013a; Kim and Elbaum, 2013b). For this reason, we focus our quantitative analysis on the initial flux J (slope of the kinetic curve at the initial time point). Unlike the steady state accumulation, the initial flux J of cargoes into the nucleus is independent of the rates of cargo-NTR dissociation kinetics and is less affected by any potential rate-limiting steps in the Ran cycle (Kim and Elbaum, 2013a; Kim and Elbaum, 2013b; Görlich et al., 2003). To this end, all nuclear import curves were fitted with a mono-exponential kinetic model $I(t)=A+I_{MAX}(1−e^{−\tau∗t})$, with $I_{MAX}$ being the plateau value reached by the fit at infinity, $\tau$ the reaction constant with units 1/s and $A$ is the offset parameter. $A$ accounts for any nonzero offset, which could be due to: i) initial recruitment of the cargoes to the cells and nuclear envelope. ii) limiting accuracy in pipetting and sample mixing (there is a 2-min delay in our experiments between the addition of the sample and the start of imaging) and for slightly different background levels due to non-specific adhesion of some samples to cellular structures. $A$ is thus fitted in every experiment and not expected to be a constant. The initial flux can be calculated from the fit parameters as $J=I_{MAX}*\tau$ (see Table 1 for values of all fit parameters). We emphasize that the mono-exponential fit is a mathematical tool to estimate the initial flux from the data. Calculating the initial flux from the mono-exponential fits was more robust than the alternative of measuring the initial flux directly from a linear fit of the first few data points, since the timing resolution of the experiment and the accuracy of defining the zero time point when mixing the cargo with the cells was limited. We note that more complex fits, such as bi-exponential fits have been discussed in the literature to include additional effects such as cargo leaking back into the cytoplasm. (Kim and Elbaum, 2013a; Kim and Elbaum, 2013b). In Supplementary file 1, we further compare bi-exponential and the mono-exponential fits. The initial rates for all samples are plotted in Figure 5C (experimental data displayed as dots). We also note that despite the samples having different labelling ratios (see #dyes, Table 1), we confirmed that there were no global correlations between overall #dyes/capsid ratio and extrapolated rate (R2=0.14).
+
+Based on extensive previous theoretical and experimental work on the NPC (Iyer‐Biswas and Zilman, 2016; Zilman, 2009; Zilman et al., 2007; Berezhkovskii et al., 2002; Pagliara et al., 2013), the initial flux $J$ can be approximated as $J=\frac{k_{ON}c}{a_{Ran}+e^{ΔG}}$, where $k_{ON}$ is the rate of cargoes reaching the NPC entrance, c is the concentration of cargoes in the cytoplasm, $a_{Ran}$ is a number between 1 and 2 depending on the availability of RanGTP at the nuclear exit ($a_{Ran}=2$ corresponds to the absence of RanGTP, and $a_{Ran}=1$ corresponds to RanGTP always being immediately available at the nuclear exit). $ΔG$ is the effective average non-equilibrium free energy potential of the cargo inside the NPC (expressed in units of $k_{B}T≈0.6kcal/mol)$; a conceptually similar expression was used in Frey and Görlich, 2007 to analyse the transport of cargoes through FG Nup 'hydrogels'. This expression mathematically describes the fact that the probability of a particle that impinges on the NPC entrance to actually translocate to the other side is $P_{tr}=\frac{1}{a_{Ran}+e^{ΔG}}$ due to the random nature of the diffusive motion inside the NPC. For cargoes that are strongly repelled by the FG Nup network, $ΔG≫1$, and the flux is exponentially inhibited, as $J∼e^{-ΔG}$. By contrast, for cargoes that interact attractively with the FG Nups, $ ΔG<0$ resulting in significant flux through the pore. However, the flux can be significant and well detectable already for $ΔG≃1$$k_{B}T$. This expression remains valid for the low concentrations studied here and the intermediate values of $ΔG$ appropriate for our capsids. For higher concentrations or higher #NLS, which we did not experimentally assess, additional corrections may need to be introduced (Zilman et al., 2007; Pagliara et al., 2013).
+
+From experimental and theoretical studies (Gu et al., 2017; Ghavami et al., 2016; Vovk et al., 2016; Maguire et al., 2020), in the first approximation the main components of $ΔG$ are: 1) the cost of insertion of the capsid into the FG assembly $FR,$ arising from the entropic cost of FG Nup displacement, osmotic pressure and the effective surface tension penalty, and 2) the effective energetic/enthalpic gain $ϵ$ from the attractive contacts formed between the NTR binding sites and FG repeats, which can partially compensate for the cost of insertion. $ΔG$ can also include non-equilibrium logarithmic corrections arising from the dependence of the diffusion coefficient on the cargo size and the #NLSs (Zilman, 2009; Maguire et al., 2020).
+
+Previous studies indicate that the cost of insertion, $FR$, increases with the particle size (Gu et al., 2017; Ghavami et al., 2016; Vovk et al., 2016). In simple situations such as the partitioning of a relatively small spherical particle into a polymer brush or a polymer-coated channel representing the NPC, this cost scales as $FR∝R^{\alpha}$ with 1 ≤ α ≤ 3, where $R$ is the radius of the particle (Gu et al., 2017; Ghavami et al., 2016) but the exact form of the dependence on $R$ is unknown for very large cargoes studied here. The energetic gain is given by the total average energy of binding between NTRs and FG repeats, which, in the first approximation, for independent binding is expected to be proportional to the #NLSs on the particle surface, which we denote here as $N$. Combining these terms yields $\DeltaG=FR-ϵN$, where $ϵ$ is the effective binding interaction energy of an NTR with the FG environment; $ϵ$ is proportional to the product of the density of the FG motifs in the pore $ϕ$, and $ϵ_{0}$, the bare average interaction energy of an NTR with an FG motif, so that $ϵ=ϵ_{0}ϕ$. When the insertion cost term dominates, $ΔG$ is large and positive, and the initial accumulation rate is low. On the other hand, when the energetic gain term dominates (large $N$), $ΔG$ decreases and eventually becomes negative, and the initial accumulation rate is high.
+
+In order to gain insight into the transport mechanism, we analysed the experimental data using the minimal model described above. First, we inverted the equation for the initial flux to obtain the $ΔG$ values as a function of the #NLSs $N$ for the three capsids of different sizes. For each capsid size, $ΔG$ values were fit with a straight line, obtaining the values for $FR$ and $ϵ$ from the y-intercepts and slopes, respectively (Figure 5B). We assumed here $a_{Ran}=2$; results for $a_{Ran}=1$ are very similar, as shown in Figure 5—figure supplement 1. The actual value of the initial flux depends on the $k_{ON}$ (see above) and the number of the NPCs in the nuclear envelope – variables that are hard to estimate experimentally. Thus, for the purpose of comparison with the model, the data were normalised to the maximal observed value among all technical replicates that was still within 95% confidence interval for that value. The conclusions of the analysis were robust with respect to the choice of the normalisation constant.
+
+Figure 5C shows the experimentally measured initial flux J data (dots) overlaid with the theoretical equation for J using the values of $FR$ and $ϵ$ obtained from the fit (Figure 5B, parameters values are listed in Table 2). The fits in both figures agree well with our experimental data. Consistent with the theoretical expectations, the cost of insertion $FR$ was the highest for the largest capsid. The differences between the insertion costs for the two smaller capsids were within the error bars. To control for the possibility that the similar values of $FR$ observed for all three capsids are an artefact of the limitations on the experimental accuracy at very low fluxes, we repeated the model fit, excluding the #NLS=0 point, which resulted in essentially the same fitting parameter values (Figure 5—figure supplement 2). Another possibility is that for such large capsids the insertion cost saturates to a plateau value at maximal FG Nup compression.
+
+**Table 2.**
+ Parameters from free energy fit.Fitted values for $FR$ and $ϵ$ values, for $a_{Ran}=2$. The error corresponds to the standard deviation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Capsid</th>
+      <th>Diameter [nm]</th>
+      <th>F(R) [kBT]</th>
+      <th>ϵ [kBT]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MS2S37P</td>
+      <td>17</td>
+      <td>5.2 ± 0.9</td>
+      <td>0.12 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>I53-47</td>
+      <td>23</td>
+      <td>4.9 ± 0.3</td>
+      <td>0.08 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>MS2</td>
+      <td>27</td>
+      <td>6.0 ± 0.7</td>
+      <td>0.03 ± 0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+Surprisingly, the $ϵ$ values were different for different capsids, with the $ϵ$ for the MS2 (largest) capsid substantially lower than those for MS2S37P and I53-47 capsids. At first glance, one would expect the main difference in the fluxes of capsids of different size to stem from the difference in the insertion cost $FR$, while the interaction energy would be relatively unaffected by the particle size. It was also surprising that significant accumulation in or near the nuclear envelope was observed even for the cargo samples whose interaction with the NPC is insufficient to cause substantial nuclear accumulation (Figure 2D).
+
+To further understand the implications of these findings, we extended the model to include a variation in the FG Nup density along the pore. Our model is a variant of previously postulated 'vestibule'/'docking'models (Tagliazucchi et al., 2013; Tu et al., 2013; Lowe et al., 2015), with a central 'barrier' region with high density of FG Nups and correspondingly high insertion cost, and a 'vestibule' outside the NPC (corresponding to a low density cloud of FG Nups extending into the cytoplasm). The capsids weakly bind in the vestibule but experience no insertion cost as FG Nups and capsids are unconstrained by the NPC scaffold in this region. Bridging between the barrier and the vestibule there are narrow transition regions at the NPC peripheries, with a medium density of FG Nups and correspondingly low insertion cost. As shown in Figure 5—figure supplement 3, this simple extension of the model allows us to explain the fluxes of all capsids with the same value of the 'bare' NTR-FG binding energy $ϵ_{0}$, as well as the accumulation in the cytoplasmic 'vestibule' even at low $ϵ$. Assuming the average number of FG motifs in the pore ∼3000 (Tu et al., 2013), corresponding to the average volume fraction/density $ϕ=0.01$, the obtained values of $ϵ_{0}≃4-15k_{B}T$ are within the range of the common estimates of NTR-FG interaction strength (Aramburu and Lemke, 2017; Tu et al., 2013; Kapinos et al., 2014; Eisele et al., 2010; Milles et al., 2015). This analysis should be viewed with the caveat that this minimal model is likely to be modified in the future with more molecular details; we return to this point in the Discussion.
+
+### Surface property effects on large viral import
 
 Surface properties such as charge or hydrophobicity have been frequently indicated to influence the import properties through the nuclear pore complex of smaller cargoes, which in many cases were systematically assessed by creating large data sets in which the cargo properties were carefully studied and/or tuned (Frey et al., 2018; Naim et al., 2009; Colwell et al., 2010).
 
@@ -104,9 +486,9 @@ For small cargo transport, biochemical or physicochemical properties of the carg
 
 Our work significantly expands the range of sizes and #NLSs for which nuclear import has been characterised: Tu et al., 2013 previously reported a single molecule study of a β-galactosidase cargo, which has four NLSs. This approximately cylindrical molecule is 18 nm at its longest axis, similar to MS2S37P, and 9 nm along its shorter axis. If the cargo crosses the NPC in a favourable orientation (through its narrow end), this would result in a lower cost of insertion and explain well why for this substrate 4 NLSs are sufficient for import (Tu et al., 2013). By comparison, our smallest cargo, MS2S37P, which is spherical with a 17 nm diameter, was not substantially imported below 10 NLSs within the timeframe of our assay. For the larger MS2, more than 30 NLSs were required to detect a clear signal. It is important to note that in addition to cargo shape (Mohr et al., 2009), its mechanical stability and rigidity are likely to play a role in nucleocytoplasmic transport: the import rate of proteins is inversely correlated with its mechanical stability (Infante et al., 2019), and flexibility is likely relevant for the transport of large deformable synthetic cargoes, such as polymer vesicles (Zelmer et al., 2020).
 
-While our simple biophysical model can explain the experimental data very well with only two fitting parameters per capsid (FR  and ϵ) it also raises several interesting questions. The model provides quantitative estimates of the free energy cost of capsid insertion into the FG Nup assembly, as well as the effective binding energy needed to compensate for the insertion cost. Notably, despite the fact that a single MS2 capsid already occupies ≈1/3 of the estimated volume of the central NPC channel (Isgro and Schulten, 2005) (as illustrated in the cartoon in Figure 5) the free energy cost of insertion is relatively low (on the order of a few kBT’s), and is similar for the capsids of different sizes. This might indicate that further mechanisms facilitate large cargo transport, such as NPC scaffold dilation, a hypothesis supported also by multiple evidences for tentative hinge elements in the NPC scaffold structures (Bui et al., 2013; Kelley et al., 2015), or bistability in the FG density in the radial direction induced by such extremely large cargo (Osmanović et al., 2013).
+While our simple biophysical model can explain the experimental data very well with only two fitting parameters per capsid ($FR$ and $ϵ$) it also raises several interesting questions. The model provides quantitative estimates of the free energy cost of capsid insertion into the FG Nup assembly, as well as the effective binding energy needed to compensate for the insertion cost. Notably, despite the fact that a single MS2 capsid already occupies ≈1/3 of the estimated volume of the central NPC channel (Isgro and Schulten, 2005) (as illustrated in the cartoon in Figure 5) the free energy cost of insertion is relatively low (on the order of a few $k_{B}T$’s), and is similar for the capsids of different sizes. This might indicate that further mechanisms facilitate large cargo transport, such as NPC scaffold dilation, a hypothesis supported also by multiple evidences for tentative hinge elements in the NPC scaffold structures (Bui et al., 2013; Kelley et al., 2015), or bistability in the FG density in the radial direction induced by such extremely large cargo (Osmanović et al., 2013).
 
-In terms of the effective interaction energy ϵ, the largest MS2 capsid required a fit with the lowest effective ϵ. This finding is surprising at first glance, because one would expect that the main difference between the capsids would stem from their size difference, while the interaction energy of an NTR with an FG motif stays relatively constant. One can think of several potential origins for this effect, among those are the lack of independence in the NTR binding of the FG repeats in case of large surface coverage, or the loss of accessibility of the FG motifs due to the high compression of the FG assembly by the largest capsid, which will be explored in future work. Nevertheless, we found that all these features can be explained in a minimal model that incorporates the potential heterogeneity of the FG Nup distribution along the NPC axis, whereby there are at least two different regions of different FG Nup densities, as has been previously suggested in a 'two gate' or 'vestibule' pictures of the NPC (Tu et al., 2013; Lowe et al., 2015; Yamada et al., 2010). In Figure 5—figure supplement 3, we show that such a spatially heterogeneous model would be consistent with the data across all three capsid data sets, without invoking different effective interaction energies for the different capsids.
+In terms of the effective interaction energy $ϵ$, the largest MS2 capsid required a fit with the lowest effective $ϵ$. This finding is surprising at first glance, because one would expect that the main difference between the capsids would stem from their size difference, while the interaction energy of an NTR with an FG motif stays relatively constant. One can think of several potential origins for this effect, among those are the lack of independence in the NTR binding of the FG repeats in case of large surface coverage, or the loss of accessibility of the FG motifs due to the high compression of the FG assembly by the largest capsid, which will be explored in future work. Nevertheless, we found that all these features can be explained in a minimal model that incorporates the potential heterogeneity of the FG Nup distribution along the NPC axis, whereby there are at least two different regions of different FG Nup densities, as has been previously suggested in a 'two gate' or 'vestibule' pictures of the NPC (Tu et al., 2013; Lowe et al., 2015; Yamada et al., 2010). In Figure 5—figure supplement 3, we show that such a spatially heterogeneous model would be consistent with the data across all three capsid data sets, without invoking different effective interaction energies for the different capsids.
 
 In our model, the energetic terms represent the binding between FG repeats and NTRs. The microscopic binding mechanism between NTRs and FG repeats during NPC passage is probably similar both for import and export, with a few exceptions - such as the binding of the export factor Crm1 to a specific stretch of Nup214, (which has likely a larger role in undocking than permeability barrier passage) (Port et al., 2015; Tan et al., 2018). We thus anticipate that basic principles of our work could also help in the future to better understand export of large cargoes, such as pre-ribosomal subunits and large RNA export complexes.
 
@@ -116,37 +498,215 @@ A more complete picture of nuclear transport and refined model building in the f
 
 ## Materials and methods
 
-## Large cargo expression and purification
+**Key resources table**
 
-## MS2 and MS2S37P capsids
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td></td>
+      <td>AI strain</td>
+    </tr>
+    <tr>
+      <td>Cell Line (Homo-sapiens)</td>
+      <td>HeLa Kyoto</td>
+      <td>Gift from Martin Beck’s Lab</td>
+      <td>RRID:CVCL_1922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD_MS2_Coat_Protein–(1–393) (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (MS2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET29b(+)_I53–47A.1–B.3_D43C (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (I53-47)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD_MS2_Coat_Protein–(1–393)_S37P (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (MS2S37P)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a2-SCSG-GB1-coreN-GFPβ1–10//NLS-GFPβ11-coreC149H6 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (HBV SplitCore)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD-MCS-CoreN-cys-loop-CoreC-TEV-12His (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (HBV core with cysteine and NLS)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a2-HBc14SH6_S81C (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (HBV core with cysteine)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTXB3-12His-Importin beta WT (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (Impβ)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD-Importα1-FL-InteinCBD-12His (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (Impα)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTXB3-NTF2-intein-6His (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (NTF2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTXB3-Ran Human FL-Intein-CBD-12His (plamid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Protein expression plasmid for E. coli (Ran)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NLS peptide</td>
+      <td>PSL GmbH</td>
+      <td></td>
+      <td>Mal-GGGGKTGRLESTPPKKKRKVEDSAS</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NLS peptide with additional charges</td>
+      <td>PSL GmbH</td>
+      <td></td>
+      <td>Mal-DEDED-GGGGKTGRLESTPPKKKRKVEDSAS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst</td>
+      <td>Sigma</td>
+      <td>B2261</td>
+      <td>For nuclei labelling</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mitotracker green</td>
+      <td>Invitrogen</td>
+      <td>M7514</td>
+      <td>For mitochondria labelling</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FITC-Dextran 70 kDa</td>
+      <td>Sigma</td>
+      <td>53471</td>
+      <td>Used for checking nuclear envelope integrity</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647 maleimide</td>
+      <td>Invitrogen</td>
+      <td>A20347</td>
+      <td>Dye for capsid labelling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>http://www.rbvi.ucsf.edu/chimera/</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc/#</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SymphoTime</td>
+      <td>PicoQuant</td>
+      <td>RRID:SCR_016263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Large cargo expression and purification
+
+#### MS2 and MS2S37P capsids
 
 A colony of E. coli BL21 AI cells containing the pBAD_MS2_Coat Protein-(1-393) or the pBAD_MS2_Coat Protein-(1-393)_S37P plasmids was inoculated in LB medium containing 50 μg/mL ampicillin. The culture was grown overnight shaking at 37°C (180 rpm) and then used at a 1:100 dilution to inoculate an expression culture in LB medium. Protein expression was induced at OD600 = 0.6–0.7 by adding 0.02% arabinose and carried out at 37°C shaking (180 rpm), for 4 hr. Cells were harvested by centrifugation in a Beckmann centrifuge, rotor JLA 8.100 at 4500 rpm, for 20 min, at 4°C. For purification, pellets were resuspended in an equal volume of lysis buffer (10 mM Tris pH 7.5, 100 mM NaCl, 5 mM DTT, 1 mM MgCl2, 1 mM PMSF) and lysed through 3–4 rounds in a microfluidizer, at 4°C. The lysate was incubated with 0.2% PEI (polyethylenimine) for 1 hr, on ice and then clarified by centrifugation in a Beckmann centrifuge, rotor JA 25.50 at 10,000 rpm, for 30 min. A saturated solution of (NH4)2SO4 was added at 4°C drop-wise to the clear lysate under continuous mild stirring up to 25% of ammonium sulphate. After 1 hr, the lysate was spun down again at 10000 rpm, for 30 min. The supernatant was discarded, and the pellets were gently resuspended with 10–20 mL of lysis buffer on a rotator, at room temperature. The lysate was then centrifuged at 10,000 rpm, for 30 min and the clear supernatant was collected. The supernatant was cleared using the KrosFlo system (SpectrumLabs) with a 0.2 μm cut-off membrane to remove large impurities. The membrane permeate containing the cleared sample was collected on ice. In order to maximise protein recovery, the remaining supernatant was washed with 50 mL of lysis buffer and the permeate was pooled with the previously collected one. The sample was then concentrated using the KrosFlo with a 500 kDa cut-off membrane (for the smaller MS2S37P capsid, a 30 kDa cutoff was used).
 
-## I53-47 capsids
+#### I53-47 capsids
 
 A colony of E. coli BL21 AI cells containing the pET29b(+)_I53-47A.1-B.3_D43C plasmid was inoculated in LB medium containing 50 μg/mL kanamycin. The culture was grown overnight shaking at 37°C (180 rpm) and then used at a 1:100 dilution to inoculate an expression culture in LB medium. Protein expression was induced at OD600 = 0.8 by adding 1 mM IPTG and carried out at 37°C shaking (180 rpm), for 3 hr. Cells were harvested by centrifugation in a Beckmann centrifuge, rotor JLA 8.100 at 4500 rpm, for 20 min, at 4°C. The purification procedure was adapted from Bale et al., 2016. Pellets were resuspended in two pellet volumes of lysis buffer (25 mM Tris pH 8.0, 250 mM NaCl, 20 mM imidazole, 1 mM PMSF, 0.2 mM TCEP), sieved to remove clumps and supplemented with 1 mg/mL lysozyme and DNase. Cells were lysed by sonication on ice, and the lysate was clarified by centrifugation at 24,000 g, for 35 min, at 4°C. The clear lysate was incubated with Ni-beads (1 mL/L expression) for 1–2 hr, at 4°C under gentle rotation. Ni-beads with lysate were poured in a polypropylene (PP) column and the flow through (FT) was collected. Ni-beads were washed three times with 20 mL of lysis buffer followed by elution with 5 mL of elution buffer, containing 500 mM imidazole. The elution was immediately supplemented with 5 mM EDTA to prevent Ni-mediated aggregation of the sample. The buffer of the protein was then exchanged to dialysis buffer (25 mM Tris pH 8.0, 150 mM NaCl, 0.2 mM TCEP), at 4°C. After dialysis, the protein was transferred to a new tube and spun down for 10 min, at 5000 rpm, at 4°C, in order to remove any precipitation. The protein was concentrated using the KrosFlo with a 100 kDa cutoff membrane, which also helps removing any remaining unassembled capsid proteins. After concentrating down to 3–4 mL of volume, the sample was washed with 50 mL of fresh dialysis buffer using the continuous buffer exchange mode of the KrosFlo.
 
-## HBV capsids
+#### HBV capsids
 
 A colony of E. coli AI cells containing the desired HBV plasmid was inoculated in TB medium containing 50 μg/mL ampicillin. The culture was grown overnight shaking at 37°C (180 rpm) and then used at a 1:100 dilution to inoculate an expression culture in LB medium. Protein expression was induced at OD600 = 0.8–1 by adding 0.02% arabinose and carried out at 20°C shaking (180 rpm) overnight. Cells were harvested by centrifugation in a Beckmann centrifuge, rotor JLA 8.100 at 4500 rpm, for 20 min, at 4°C. The purification procedure was adapted from Walker et al., 2011. Pellets were resuspended in one pellet volume of lysis buffer (25 mM Tris pH 7.5, 500 mM NaCl, 0.2 mM TCEP, 10 mM CHAPS) and lysed by sonication 3 × 30 s, on ice. The lysate was spun down in a Beckmann centrifuge rotor JA 25.50 at 10,000 rpm, for 10 min. The cleared supernatant was then loaded on a step gradient 10–60% sucrose obtained by mixing lysis and sucrose buffers (25 mM Tris pH 7.5, 500 mM NaCl, 0.2 mM TCEP, 10 mM CHAPS, 60% sucrose) in appropriate ratios and by carefully layering the different percentage buffers into ultracentrifugation tubes. The lysate was then subjected to ultra-centrifugation at 28,000 rpm, for 3.5 hr at 4°C. Fractions of 2 mL were collected by gravity, by puncturing the ultracentrifugation tube from the bottom. Fractions containing the capsids were pooled and concentrated using the KrosFlo with a 500 kDa cutoff membrane.
 
-## Large cargo maleimide labelling and characterisation
+### Large cargo maleimide labelling and characterisation
 
 Purified capsids were labelled via maleimide chemistry to couple a fluorescent dye and NLS peptide to the exposed cysteines. The dye (AlexaFluor647 maleimide, Invitrogen) and NLS peptide (Maleimide-GGGGKTGRLESTPPKKKRKVEDSA, PSL Peptide Specialty Laboratories) were stored at −80°C and freshly resuspended in anhydrous DMSO. The capsids were incubated with different molar excesses of dye and NLS peptide according to the desired degree of labelling for 1–2 hr, at room temperature. A typical reaction was: 30–50 nmol of protein, 50 nmol of dye and 100–250 nmol of NLS peptide depending on the target #NLSs. The reaction was then quenched by adding 10 mM DTT and the protein was spun down at 10,000 rpm, for 10 min, at 4°C to remove any precipitation. The excess dye was removed by loading the capsid sample on a HiPrep Sephacryl 16/60 size exclusion column (GE Healthcare), using the appropriate buffer (for MS2 and MS2S37P: 10 mM Tris pH 7.5, 100 mM NaCl, 5 mM DTT; for I53-47: 25 mM Tris pH 8.0, 150 mM NaCl, 1 mM DTT and for HBV: 25 mM Tris pH 7.5, 500 mM NaCl, 0.2 mM TCEP, 10 mM CHAPS, 10% sucrose). Relevant fractions containing the labelled capsids were then pooled and concentrated using the KrosFlo. For long-term storage at −80°C, the sample was supplemented with 25% glycerol (30% sucrose for HBV) and either flash-frozen with liquid nitrogen or directly transferred to the −80°C freezer (for I53-47 capsids). The ratio of capsid monomers tagged with NLS peptide was quantified by the gel band ratio on a SDS PAGE gel with Coomassie staining, as the labelled monomers migrate differently due to their increased molecular weight. We note that the quantified #NLSs represents an average of the labelling reaction.
 
-## Electron microscopy
+### Electron microscopy
 
 Capsid integrity was confirmed by imaging the samples with an electron microscope using negative staining. Carbon-coated 300 meshes Quantifoil Cu grids were glow-discharged for 10 s in a vacuum chamber. Then, a 3 μL drop of sample was adsorbed on a grid for 2 min, blotted with Whatman’s filter paper and washed three times with sample buffer, then three times with a solution of 2% uranyl acetate. Once the grids were dry, the sample was imaged using a Morgagni 268 microscope (FEI).
 
-## Dynamic light scattering
+### Dynamic light scattering
 
 Dynamic light scattering (DLS) measurements to quantify the hydrodynamic radius of capsids and test for sample aggregation or disassembly were performed on a Zetasizer Nano (Malvern). Samples were diluted to a final concentration of 0.5 μM in filtered TB and spun down for 10 min at 10,000 g prior to each measurement. For each sample, at least 10 measurements were acquired, using a 12 μL quartz cuvette. Count rates per second were typically higher than 200 kcps, and the polydispersity index was below 0.2, indicating a monodisperse solution. Data were analysed using the Malvern software, using the Multiple Narrow Bands fitting algorithm and Refractive Index and Absorption settings for proteins.
 
-## Fluorescence correlation spectroscopy
+### Fluorescence correlation spectroscopy
 
 Fluorescence correlation spectroscopy (FCS) was used to characterise the large cargoes and quantify their concentration and brightness (#dyes/capsid). FCS experiments were carried out on a custom-built multiparameter spectrometer confocal setup, equipped with a 60x water objective (NA = 1.27). The capsid samples were diluted in freshly filtered 1XTB and spun down for 10 min at 10.000g at 4°C prior to the start of the experiment. FCS measurements were carried out in 8-well Lab-Tek, which had been pre-incubated for 30 min with a solution of 1 mg/ml BSA to prevent sample sticking. For each sample, at least 10 FCS curves of 30 s each were acquired. Low power (1–5 μW) was used to avoid bleaching of the samples during their diffusion through the confocal volume. A calibration FCS measurement with a free dye solution was carried out every 2–3 samples to measure the structural parameter and confirm the stability of the setup. Data analysis was performed with SymphoTime software. Autocorrelation curves were computed for lag times between 0.0001 and 1000 ms and fitted with a diffusion model. Capsid brightness was calculated by dividing the measured particle brightness by the measured brightness of a calibration dye solution at the same laser power settings. Due to large aggregates in the absence of Importins, HBV was not probed by FCS.
 
-## Nuclear import assays
+### Nuclear import assays
 
 HeLa Kyoto cells were cultured at 37°C, 5% CO2 atmosphere in Dulbecco’s modified Eagle’s medium with 1 g/mL glucose (Gibco 31885023) supplemented with 1% penicillin-streptomycin (Sigma P0781), 1% L-Glutamine (Sigma G7513) and 9% FBS (Sigma F7524). The cells were regularly tested for mycoplasma contamination and found to be mycoplasma-negative. The cells were passaged every 2–3 days up to maximum of 15–17 passages. Cells were seeded 1 or 2 days prior the experiment at low density (10,000–12,000 cells per well) in a glass-bottom eight-well Lab-Tek II chambered coverglass (Thermo Scientific Nunc, 155383).
 
@@ -154,18 +714,18 @@ Cells for transport assays were stained with 100 nM MitoTracker green (Invitroge
 
 Cells were then washed once with transport buffer (1XTB: 20 mM Hepes, 110 mM KOAc, 5 mM NaOAc, 2 mM MgOAc, 1 mM EGTA, pH 7.3 adjusted with KOH) and permeabilised by incubation for 10 min, at room temperature with digitonin (40 μg/mL). Cells were then washed 3 times with 1XTB supplied with 5 mg/mL PEG 6000 to avoid osmotic shock. After the final wash, excess buffer was removed and the transport mix was quickly added to the cells to start the experiment. The final transport mix was composed of 1 μM Importinα, 1 μM Importinß, 4 μM RanGDP, 2 μM NTF2, 2 mM GTP and 8 nM capsid cargo. In order to allow the import complex to form, the cargo was first pre-incubated with Importinß and Importinα on ice for at least 10 min, then the rest of the transport mix was added and the solution was spun down for 10 min at 10000 g to remove any aggregates. Each experiment was performed side-by-side with control cells incubated with fluorescently labelled 70 kDa Dextran (Sigma 53471) to confirm nuclear envelope intactness throughout the whole experiment. We note that, in order to exclude possible contaminations of free capsid monomers and/or fragments in our experiments, we applied stringent quality checks to each capsid prep and only used samples that had all of the following: uniform EM images, good quality monodisperse DLS, FCS parameters in line with monodisperse cargo of the right size.
 
-## Microinjection in starfish oocytes
+### Microinjection in starfish oocytes
 
 Starfish (Patiria pectinifera) were kindly provided by Kazoyushi Chiba (Ochanomizu University, Tokyo, Japan) and kept at 16°C in seawater aquariums at MPI-BPC’s marine facilities. Oocytes were extracted from the animals fresh for each experiment as described earlier (Lénárt et al., 2003). Fluorescent proteins were injected using microneedles, as described previously (Borrego-Pinto et al., 2016; Jaffe and Terasaki, 2004).
 
-## Confocal fluorescence microscopy
+### Confocal fluorescence microscopy
 
 Time-lapse confocal imaging of nuclear import was performed on an Olympus FLUOVIEW FV3000 scanning confocal microscope, using a 40x air objective (NA = 0.95). An automated multi-position acquisition was carried out, where 12 different regions (typically containing 10 cells each) were imaged in two different wells. Three channels were recorded at each time step, using the 405 nm (Hoechst), 488 nm (Mitotracker) and 640 nm (cargo) laser lines for excitation. Images were acquired every 2 min for 80–90 min, using continuous autofocusing with Z-drift compensation to ensure imaging stability.
 
-## Image and data analysis
+### Image and data analysis
 
-Results of the time-lapse import experiments were analysed with a custom-written Fiji (Schindelin et al., 2012) script (Source code 1). The Hoechst and Mitotracker channels were used to generate reference masks for the nucleus, nuclear envelope and cytoplasm at each time point. Briefly, the two images were pre-processed with Gaussian blur to aid in area segmentation, and then thresholded. The nuclear mask was eroded three times to remove contributions coming from the nuclear envelope, and the envelope mask was generated by subtracting the eroded mask from the non-eroded one. The final masks were then used to extract the average intensity of cargo signal in the different areas of interest. Final data analysis and plotting was performed in IgorPro (Wavemetrics). Fluorescence intensities were background-corrected, rescaled according to the capsid brightness and fitted to an inverse exponential function It=A+IMAX1-e-τ*t, with IMAX being the plateau value reached at infinity, τ the reaction constant with units 1/s and A an offset parameter.
+Results of the time-lapse import experiments were analysed with a custom-written Fiji (Schindelin et al., 2012) script (Source code 1). The Hoechst and Mitotracker channels were used to generate reference masks for the nucleus, nuclear envelope and cytoplasm at each time point. Briefly, the two images were pre-processed with Gaussian blur to aid in area segmentation, and then thresholded. The nuclear mask was eroded three times to remove contributions coming from the nuclear envelope, and the envelope mask was generated by subtracting the eroded mask from the non-eroded one. The final masks were then used to extract the average intensity of cargo signal in the different areas of interest. Final data analysis and plotting was performed in IgorPro (Wavemetrics). Fluorescence intensities were background-corrected, rescaled according to the capsid brightness and fitted to an inverse exponential function $It=A+I_{MAX}1-e^{-\tau*t}$, with $I_{MAX}$ being the plateau value reached at infinity, $\tau$ the reaction constant with units 1/s and $A$ an offset parameter.
 
-## Mathematical analysis of the data
+### Mathematical analysis of the data
 
-The initial flux was estimated from the mono-exponential fit as J=τ⋅IMAX. Error bars in the initial flux show sample standard deviations across the 12 imaged regions. For comparison with the theoretical predictions, where the flux saturates to a maximal value Jmax/(kONc)=1aRan  reached as N→∞, we normalised all the flux measurements by the maximal observed value of the flux across all the technical replicate (that was still within 95% confidence interval of the mean value). Changing the normalisation value of the flux does not qualitatively change the conclusions of the model; however, it may cause a slight increase to our FR values and a slight decrease to our ϵ values. FR and ϵ values were obtained using a least-squares fit implemented in Python. Plots of ΔG and overlays of our fits onto the initial flux were also performed using Python.
+The initial flux was estimated from the mono-exponential fit as $J=\tau⋅I_{MAX}$. Error bars in the initial flux show sample standard deviations across the 12 imaged regions. For comparison with the theoretical predictions, where the flux saturates to a maximal value $J_{max}/(k_{ON}c)=\frac{1}{a_{Ran}}$ reached as $N→∞$, we normalised all the flux measurements by the maximal observed value of the flux across all the technical replicate (that was still within 95% confidence interval of the mean value). Changing the normalisation value of the flux does not qualitatively change the conclusions of the model; however, it may cause a slight increase to our $FR$ values and a slight decrease to our $ϵ$ values. $FR$ and $ϵ$ values were obtained using a least-squares fit implemented in Python. Plots of $ΔG$ and overlays of our fits onto the initial flux were also performed using Python.

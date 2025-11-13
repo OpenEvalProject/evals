@@ -127,19 +127,19 @@
 5. Department of Infectious Diseases, Central Clinical School, Monash University Melbourne Australia
 6. Wellcome Sanger Institute, Wellcome Genome Campus Hinxton United Kingdom
 7. Department of Microbiology and Immunology at the Peter Doherty Institute for Infection and Immunity, The University of Melbourne Melbourne Australia
-8. https://ror.org/05h1kgg64 National Institute of Health Islamabad Pakistan
+8. National Institute of Health Islamabad Pakistan ([ROR:05h1kgg64](https://ror.org/05h1kgg64))
 9. Nigeria Field Epidemiology and Laboratory Training Programme Abuja Nigeria
 10. College of Veterinary Medicine, North Carolina State University Raleigh United States
 11. United Kingdom Health Security Agency London United Kingdom
-12. https://ror.org/04fp9fm22 National University Hospital Singapore Singapore
+12. National University Hospital Singapore Singapore ([ROR:04fp9fm22](https://ror.org/04fp9fm22))
 13. Centre for International Health, University of Otago Dunedin New Zealand
 14. Department of Clinical Sciences, Liverpool School of Tropical Medicine Liverpool United Kingdom
 15. Malawi-Liverpool Wellcome Programme, Kamuzu University of Health Sciences Blantyre Malawi
 16. Centre for Pathogen Genomics, Department of Microbiology and Immunology, University of Melbourne at Doherty Institute for Infection and Immunity Melbourne Australia
 17. Microbiological Diagnostic Unit Public Health Laboratory, The University of Melbourne at the Peter Doherty Institute for Infection and Immunity Melbourne Australia
 18. Independent consultant Johannesburg South Africa
-19. https://ror.org/008x57b05 University of Antwerp Antwerp Belgium
-20. https://ror.org/042twtr12 Centers for Disease Control and Prevention Atlanta United States
+19. University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
+20. Centers for Disease Control and Prevention Atlanta United States ([ROR:042twtr12](https://ror.org/042twtr12))
 21. Global Health Research Unit (GHRU) for the Genomic Surveillance of Antimicrobial Resistance, Faculty of Pharmacy, University of Ibadan Ibadan Nigeria
 22. Lady Willingdon Hospital Manali India
 23. Department of Clinical Microbiology, Christian Medical College Vellore India
@@ -149,10 +149,10 @@
 27. Oxford University Clinical Research Unit Nepal Kathmandu Nepal
 28. KEM Hospital Research Centre Pune India
 29. Department of Medicine, Division of Infectious Diseases, University of Toronto Toronto Canada
-30. https://ror.org/02yfanq70 International Vaccine Institute Seoul Republic of Korea
+30. International Vaccine Institute Seoul Republic of Korea ([ROR:02yfanq70](https://ror.org/02yfanq70))
 31. International Centre for Diarrhoeal Disease Research Dhaka Bangladesh
 32. UCLA Fielding School of Public Health Los Angeles United States
-33. https://ror.org/047dqcg40 Korea University Seoul Republic of Korea
+33. Korea University Seoul Republic of Korea ([ROR:047dqcg40](https://ror.org/047dqcg40))
 34. Topiwala National Medical College Mumbai India
 35. ESR, Institute of Environmental Science and Research Ltd., Porirua Wellington New Zealand
 36. Grupo de Microbiologia, Instituto Nacional de Salud Bogota Colombia
@@ -164,7 +164,7 @@
 42. Sabin Vaccine Institute Washington DC United States
 43. Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool Liverpool United Kingdom
 44. Federation University Australia Churchill Australia
-45. https://ror.org/01x6n0t15 Papua New Guinea Institute of Medical Research Goroka Papua New Guinea
+45. Papua New Guinea Institute of Medical Research Goroka Papua New Guinea ([ROR:01x6n0t15](https://ror.org/01x6n0t15))
 46. Post Graduate Institute of Medical Education and Research Chandigarh India
 47. Technical University of Denmark Copenhagen Denmark
 48. Research Department of Infection, Division of Infection and Immunity, University College London London United Kingdom
@@ -175,13 +175,13 @@
 53. Department of Community Health, Christian Medical College Vellore India
 54. Medical Research Council Unit The Gambia at London School Hygiene & Tropical Medicine Fajara Gambia
 55. All India Institute of Medical Sciences Delhi India
-56. https://ror.org/04r1cxt79 Centre for Microbiology Research, Kenya Medical Research Institute Nairobi Kenya
+56. Centre for Microbiology Research, Kenya Medical Research Institute Nairobi Kenya ([ROR:04r1cxt79](https://ror.org/04r1cxt79))
 57. Quadram Institute Bioscience Norwich United Kingdom
 58. Makunda Christian Hospital Assam India
 59. Center for Vaccine Development and Global Health (CVD), University of Maryland School of Medicine, Baltimore, Maryland, USA Baltimore United States
 60. Central Research Laboratory, Kempegowda Institute of Medical Sciences Bengaluru India
 61. National Microbiology Reference Laboratory Harare Zimbabwe
-62. https://ror.org/01m294726 World Health Organization Harare Zimbabwe
+62. World Health Organization Harare Zimbabwe ([ROR:01m294726](https://ror.org/01m294726))
 63. Kamuzu University of Health Sciences Blantyre Malawi
 64. Saint Johns Medical College and Hospital Bengaluru India
 65. Ministry of Health, Government of Samoa Apia Samoa
@@ -212,7 +212,7 @@
 
 ## Abstract
 
-The Global Typhoid Genomics Consortium was established to bring together the typhoid research community to aggregate and analyse Salmonella enterica serovar Typhi (Typhi) genomic data to inform public health action. This analysis, which marks 22 years since the publication of the first Typhi genome, represents the largest Typhi genome sequence collection to date (n=13,000). This is a meta-analysis of global genotype and antimicrobial resistance (AMR) determinants extracted from previously sequenced genome data and analysed using consistent methods implemented in open analysis platforms GenoTyphi and Pathogenwatch. Compared with previous global snapshots, the data highlight that genotype 4.3.1 (H58) has not spread beyond Asia and Eastern/Southern Africa; in other regions, distinct genotypes dominate and have independently evolved AMR. Data gaps remain in many parts of the world, and we show the potential of travel-associated sequences to provide informal ‘sentinel’ surveillance for such locations. The data indicate that ciprofloxacin non-susceptibility (>1 resistance determinant) is widespread across geographies and genotypes, with high-level ciprofloxacin resistance (≥3 determinants) reaching 20% prevalence in South Asia. Extensively drug-resistant (XDR) typhoid has become dominant in Pakistan (70% in 2020) but has not yet become established elsewhere. Ceftriaxone resistance has emerged in eight non-XDR genotypes, including a ciprofloxacin-resistant lineage (4.3.1.2.1) in India. Azithromycin resistance mutations were detected at low prevalence in South Asia, including in two common ciprofloxacin-resistant genotypes. The consortium’s aim is to encourage continued data sharing and collaboration to monitor the emergence and global spread of AMR Typhi, and to inform decision-making around the introduction of typhoid conjugate vaccines (TCVs) and other prevention and control strategies. No specific funding was awarded for this meta-analysis. Coordinators were supported by fellowships from the European Union (ZAD received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 845681), the Wellcome Trust (SB, Wellcome Trust Senior Fellowship), and the National Health and Medical Research Council (DJI is supported by an NHMRC Investigator Grant [GNT1195210]).
+Background:The Global Typhoid Genomics Consortium was established to bring together the typhoid research community to aggregate and analyse Salmonella enterica serovar Typhi (Typhi) genomic data to inform public health action. This analysis, which marks 22 years since the publication of the first Typhi genome, represents the largest Typhi genome sequence collection to date (n=13,000).Methods:This is a meta-analysis of global genotype and antimicrobial resistance (AMR) determinants extracted from previously sequenced genome data and analysed using consistent methods implemented in open analysis platforms GenoTyphi and Pathogenwatch.Results:Compared with previous global snapshots, the data highlight that genotype 4.3.1 (H58) has not spread beyond Asia and Eastern/Southern Africa; in other regions, distinct genotypes dominate and have independently evolved AMR. Data gaps remain in many parts of the world, and we show the potential of travel-associated sequences to provide informal ‘sentinel’ surveillance for such locations. The data indicate that ciprofloxacin non-susceptibility (>1 resistance determinant) is widespread across geographies and genotypes, with high-level ciprofloxacin resistance (≥3 determinants) reaching 20% prevalence in South Asia. Extensively drug-resistant (XDR) typhoid has become dominant in Pakistan (70% in 2020) but has not yet become established elsewhere. Ceftriaxone resistance has emerged in eight non-XDR genotypes, including a ciprofloxacin-resistant lineage (4.3.1.2.1) in India. Azithromycin resistance mutations were detected at low prevalence in South Asia, including in two common ciprofloxacin-resistant genotypes.Conclusions:The consortium’s aim is to encourage continued data sharing and collaboration to monitor the emergence and global spread of AMR Typhi, and to inform decision-making around the introduction of typhoid conjugate vaccines (TCVs) and other prevention and control strategies.Funding:No specific funding was awarded for this meta-analysis. Coordinators were supported by fellowships from the European Union (ZAD received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 845681), the Wellcome Trust (SB, Wellcome Trust Senior Fellowship), and the National Health and Medical Research Council (DJI is supported by an NHMRC Investigator Grant [GNT1195210]).
 
 ## Introduction
 
@@ -232,17 +232,465 @@ The accumulation of resistance to almost all therapeutic options means that ther
 
 ## Methods
 
-## Ethical approvals
+### Ethical approvals
 
 Each contributing study or surveillance programme obtained local ethical and governance approvals, as reported in the primary publication for each dataset. For this study, inclusion of data that were not yet in the public domain by August 2021 was approved by the Observational/Interventions Research Ethics Committee of the London School of Hygiene and Tropical Medicine (ref #26408), on the basis of details provided on the local ethical approvals for sample and data collection (Supplementary file 1).
 
-## Sequence data aggregation
+### Sequence data aggregation
 
 Attempts were made to include all Typhi sequence data generated in the 20 years since the first genome was sequenced, through August 2021. Genome data and the corresponding data owners were identified from literature searches and sequence database searches (European Nucleotide Archive [ENA]; NCBI Short Read Archive [SRA], and GenBank; Enterobase). Unpublished data, including those from ongoing surveillance studies and routine public health laboratory sequencing, were identified through professional networks, published study protocols (Carey et al., 2020), and an open call for participation in the GTGC. All data generators thus identified were invited to join the GTGC and to provide or verify corresponding source information, with year and location isolated being required fields (‘metadata’, see below). Nearly all those contacted responded and are included as consortium authors on this study. The exceptions, where authors did not respond to email inquiries, were: (i) one genome reported from Malaysia (Ahmad et al., 2017) and n=133 draft genomes reported from India (Katiyar et al., 2020), which were excluded as sequence reads were not available in NCBI; and (ii) n=39 genomes reported in studies of travel-associated or local outbreaks (Burnsed et al., 2018; Hao et al., 2020; Shin et al., 2021), which were included as raw sequence data and sufficient metadata were publicly available. A further n=850 genomes sequenced by US Centers for Disease Control and Prevention and available in NCBI were excluded from analysis because travel history was unknown and most US cases are travel-associated. Table 1 summarises all studies and unpublished public health laboratory datasets from which sequence data were sourced.
 
+**Table 1.**
+ Summary of published studies and other data sources.Details of research studies and public health laboratory data aggregated in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Published studiesPubMed ID or DOI (citation as per reference list)</th>
+      <th>Total genomes</th>
+      <th>*Representative cases 2010–2020</th>
+      <th>†Travel associated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11677608 (Parkhill et al., 2001)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12644504 (Deng et al., 2003)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18660809 (Holt et al., 2008)</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25392358 (Hendriksen et al., 2015a)</td>
+      <td>22</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25428145 (Hendriksen et al., 2015b)</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25961941 (Wong et al., 2015)</td>
+      <td>1736</td>
+      <td>733</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>26411565 (Baker et al., 2015)</td>
+      <td>30</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26974227 (Pham Thanh et al., 2016a)</td>
+      <td>77</td>
+      <td>77</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27069781 (Ashton et al., 2016)</td>
+      <td>489</td>
+      <td>432</td>
+      <td>356</td>
+    </tr>
+    <tr>
+      <td>27331909 (Pham Thanh et al., 2016b)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27657909 (Wong et al., 2016b)</td>
+      <td>128</td>
+      <td>111</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27703135 (Wong et al., 2016a)</td>
+      <td>99</td>
+      <td>43</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>28060810 (Dyson et al., 2017)</td>
+      <td>44</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>28280021 (Rodrigues et al., 2017)</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>28705963 (Kong et al., 2017)</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>28931025 (Kuijpers et al., 2017)</td>
+      <td>64</td>
+      <td>59</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29051234 (Gul et al., 2017)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29136410 (Phoba et al., 2017)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29216342 (Day et al., 2018)</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>29255729 (Matono et al., 2017)</td>
+      <td>107</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29463654 (Klemm et al., 2018)</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29616895 (Djeghout et al., 2018)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29684021 (Britto et al., 2018)</td>
+      <td>192</td>
+      <td>169</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30425150 (Tanmoy et al., 2018)</td>
+      <td>536</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30504848 (Park et al., 2018)</td>
+      <td>249</td>
+      <td>209</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30236166 (Burnsed et al., 2018)</td>
+      <td>30</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>31225619 (Oo et al., 2019)</td>
+      <td>39</td>
+      <td>39</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>31513580 (Ingle et al., 2019)</td>
+      <td>107</td>
+      <td>99</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td>31730615 (Hooda et al., 2019)</td>
+      <td>12</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>31872221 (Sah et al., 2019)</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>31665304 (Britto et al., 2020)</td>
+      <td>94</td>
+      <td>94</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32003431 (Pragasam et al., 2020)</td>
+      <td>194</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32106221 (Rahman et al., 2020)</td>
+      <td>202</td>
+      <td>147</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32119918 (Chirico et al., 2020)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32217683 (Tagg et al., 2020)</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32253142 (Liu et al., 2021)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32732230 (Hao et al., 2020)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32883020 (Rasheed et al., 2020)</td>
+      <td>27</td>
+      <td>27</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33079054 (Maes et al., 2020)</td>
+      <td>7</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33085725 (Thanh Duy et al., 2020)</td>
+      <td>116</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33347558 (Mashe et al., 2021)</td>
+      <td>29</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34223059 (Duy et al., 2020)</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33496224 (Octavia et al., 2021)</td>
+      <td>15</td>
+      <td>15</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>33515460 (Carey et al., 2021)</td>
+      <td>66</td>
+      <td>66</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33593966 (Sajib et al., 2021)</td>
+      <td>80</td>
+      <td>80</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33651791 (Shin et al., 2021)</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33704480 (Nair et al., 2021)</td>
+      <td>58</td>
+      <td>58</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>33965548 (Jacob et al., 2021)</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34370659 (Chattaway et al., 2021)</td>
+      <td>631</td>
+      <td>604</td>
+      <td>584</td>
+    </tr>
+    <tr>
+      <td>34463736 (Gauld et al., 2022)</td>
+      <td>262</td>
+      <td>262</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34515028 (Kariuki et al., 2021)</td>
+      <td>136</td>
+      <td>88</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34529660 (Guevara et al., 2021)</td>
+      <td>77</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34543095 (Ingle et al., 2021)</td>
+      <td>116</td>
+      <td>116</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td>34626469 (Argimón et al., 2021b)</td>
+      <td>92</td>
+      <td>92</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34812716 (Kanteh et al., 2021)</td>
+      <td>16</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>35344544 (Dyson et al., 2022)</td>
+      <td>41</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>35750070 (da Silva et al., 2022)</td>
+      <td>3402</td>
+      <td>3390</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>35767580 (Maes et al., 2022)</td>
+      <td>203</td>
+      <td>90</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>35999186 (Lagrada et al., 2022)</td>
+      <td>190</td>
+      <td>190</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>36026470 (Ikhimiukor et al., 2022a)</td>
+      <td>22</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>36094088 (Sikorski et al., 2022)</td>
+      <td>202</td>
+      <td>174</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>37327220 (Rutanga et al., 2023)</td>
+      <td>51</td>
+      <td>26</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>37339282 (Smith et al., 2023)</td>
+      <td>281</td>
+      <td>281</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>DOI: 10.1101/2022.09.01.506167 (Thilliez et al., 2022)</td>
+      <td>57</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DOI: 10.1101/2022.10.03.510628 (Carey et al., 2022)</td>
+      <td>463</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DOI: 10.1101/2023.03.27.23287794 (Ashton et al., 2023)</td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DOI: 10.1101/2023.03.11.23286741 (Dyson et al., 2023)</td>
+      <td>732</td>
+      <td>707</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="4">Previously unpublished public health laboratory data</td>
+    </tr>
+    <tr>
+      <td>France (Institut Pasteur)</td>
+      <td>23</td>
+      <td>23</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>New Zealand (ESR)</td>
+      <td>99</td>
+      <td>97</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>USA (CDC)</td>
+      <td>889</td>
+      <td>850</td>
+      <td>712</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>13,000</td>
+      <td>9508</td>
+      <td>2297</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Genomes associated with assumed acute typhoid cases, isolated from 2010 onwards from non-targeted sampling frames; this is the subset of data used to generate genotype prevalence distributions shown in Figures 1—3.†Genomes recorded as travel-associated and with known travel to a specific country in this region, associated with assumed acute typhoid isolated from 2010 onwards from non-targeted sampling frames._
+
 Whole genome sequence data, in the form of Illumina fastq files, were sourced from the ENA or SRA or were provided directly by the data contributors in the case of data that was unpublished in August 2021. Run, BioSample, and BioProject accessions are provided in Supplementary file 2, together with contributed metadata and PubMed or preprint identifiers.
 
-## Sequence analysis
+### Sequence analysis
 
 Primary sequence analysis was conducted on the Wellcome Sanger Institute compute cluster. Genotypes, as defined under the GenoTyphi scheme (Dyson and Holt, 2021; Wong et al., 2016a), were called directly from Illumina reads using Mykrobe v0.12.1 with Typhi typing panel v20221207, and collated using the Python code available at https://github.com/typhoidgenomics/genotyphi (v2.0, doi: 10.5281/zenodo.7430538; Ingle et al., 2022).
 
@@ -250,7 +698,7 @@ Illumina reads were assembled using the Centre for Genomic Pathogen Surveillance
 
 Phylogenetic trees were generated using Pathogenwatch, which estimates pairwise genetic distances between genomes (based on counting SNVs across 3284 core genes) and infers a neighbour-joining tree from the resulting distance matrix (Argimón et al., 2021b). The Pathogenwatch collections used to generate the tree files are available at https://bit.ly/Typhi4311P1 (tree showing position of Rwp1-PK1, in context with other genomes from Pakistan) and https://bit.ly/Typhi232 (tree for genotype 2.3.2 genomes).
 
-## Metadata curation and variable definitions
+### Metadata curation and variable definitions
 
 Owners of the contributing studies were asked to provide or update source information relating to their genome data, using a standardised template (http://bit.ly/typhiMeta). Repeat isolates were defined as those that represent the same occurrence of typhoid infection (acute disease or asymptomatic carriage) as one that is already included in the dataset. In such instances, data owners were asked to indicate the ‘primary’ isolate (either the first, or the best quality, genome for each unique case) to use in the analysis. Repeat isolates were then excluded from the dataset entirely (excluded from Supplementary file 2).
 
@@ -258,23 +706,180 @@ Data provided on the source of isolates (specimen type and patient health status
 
 We defined ‘country of origin’ as the country of isolation; or for travel-associated infections, the country recorded as the presumed country of infection based on travel history (Centers for Disease Control and Prevention, 2011; Ingle et al., 2021; Ingle et al., 2019; Matono et al., 2017). Countries were assigned to geographical regions using the United Nations Statistics Division standard M49 (see https://unstats.un.org/unsd/methodology/m49/overview/); we used the intermediate region label where assigned, and subregion otherwise. To identify isolate collections that were suitably representative of local pathogen populations, for the purpose of calculating genotype and AMR prevalences for a given setting, data owners were asked to indicate the purpose of sampling for each study or dataset. Options available were either ‘Non Targeted’ (surveillance study, routine diagnostics, reference lab, other; n=11,086), ‘Targeted’ (cluster investigation, AMR focused, other; n=1862), or ‘Not Provided’ (n=17). Only samples from ‘Non Targeted’ sampling frames with known year of isolation and country of origin were included in national prevalence estimates.
 
-## AMR determinants and definitions
+### AMR determinants and definitions
 
 AMR determinants identified in the genome assemblies using Pathogenwatch were used to define AMR genotype as follows. MDR: resistance determinants for chloramphenicol (catA1 or cmlA), ampicillin (blaTEM-1D, blaOXA-7), and co-trimoxazole (at least one dfrA gene and at least one sul gene). Ciprofloxacin non-susceptible (CipNS): one or more of the QRDR mutations at GyrA-83, GyrA-87, ParC-80, ParC-84, GyrB-464 or presence of a plasmid-mediated quinolone resistance (PMQR) gene (qnrB, qnrD, qnrS); note, this typically corresponds to MIC ≥0.06 mg/L (Day et al., 2018). CipR: QRDR triple mutant (GyrA-83 and GyrA-87, together with either ParC-80 or ParC-84), or PMQR gene together with GyrA-83, GyrA-87, and/or GyrB-464. This typically corresponds to MIC ≥1 mg/L, and CipR is a subset of CipNS. Ceftriaxone resistant (CefR): presence of an ESBL (blaCTX-M-12, blaCTX-M-15, blaCTX-M-23, blaCTX-M-55, blaSHV-12). XDR: MDR plus CipR plus CefR. AziR: mutation at AcrB-717. The above lists all those AMR determinants that were found here in ≥1 genome and used to define AMR profiles and prevalences; additional AMR genes sought by Typhi Pathogenwatch but not detected are listed in Supplementary Table 2 of (Argimón et al., 2021b).
 
-## Genotype and AMR prevalence estimates and statistical analysis
+### Genotype and AMR prevalence estimates and statistical analysis
 
 All statistical analyses were conducted in R v4.1.2 (R Development Core Team, 2021), code is available in R markdown format at https://github.com/typhoidgenomics/TyphoidGenomicsConsortiumWG1 (v1.0, doi:10.5281/zenodo.7487862; Holt, 2022). Genotype and AMR frequencies were calculated at the level of country and UN world region (based on ‘country of origin’) as defined above. Inclusion criteria for these estimates were: known ‘country of origin’, known year of isolation, non-targeted sampling, assumed acute illness (see definitions of these variables above). A total of 10,726 genomes met these criteria; the subset of 9478 isolated from 2010 onwards were the focus of the majority of analyses and visualisations, including all prevalence estimates. The prevalence estimates reported in text and figures are simple proportions; 95% confidence intervals (CIs) for proportions are given in text and supplementary tables where relevant. Annual prevalence rates were estimated for countries that had N≥50 representative genomes and ≥3 years with ≥10 representative genomes. Association between MDR prevalence and prevalence of IncHI1 plasmids amongst MDR genomes was assessed for countries with ≥5% MDR prevalence between 2000 and 2020. The significance of increases or decreases in prevalence was assessed using a Chi-squared test for trend in proportions (using the proportion.trend.test function in R). There are no established thresholds for the prevalence of resistance that should trigger changes in empirical therapy recommendations for enteric fever; hence, we defined our own categories of resistance prevalence for visualisation purposes, to reflect escalating levels of concern for empirical antimicrobial use: (i) 0, no resistance detected; (ii) >0 and≤2%, resistance present but rare; (iii) 2–10%, emerging resistance; (iv) 10–50%, resistance common; (v) >50%, established resistance. Robustness of prevalence estimates was assessed informally, by comparing overlap of 95% CIs computed for different laboratories from the same country (for genomes isolated 2010–2020, and laboratories with N≥20 genomes [Southern Asia] or N≥10 [Nigeria] meeting the inclusion criteria during this period).
 
-## Data visualisations
+### Data visualisations
 
 All analyses and plots were generated using R v4.1.2, code is available in R markdown format at https://github.com/typhoidgenomics/TyphoidGenomicsConsortiumWG1 (v1.0, doi:10.5281/zenodo.7487862; Holt, 2022). Data processing was done using the R packages tidyverse v1.3.1, dplyr v1.0.7, reshape2 v1.4.4, and janitor v2.1.0; figures were generated using packages ggplot2 v3.3.5, ggExtra v0.9, patchwork v1.1.1, RColorBrewer v1.1-2, and pals v1.7; maps were generated using packages sf v1.0-5, rvest v1.0.2, maps v3.4.0, scatterpie v0.1.7, ggnewscale v0.4.5; trees were plotted using ggtreeio v1.18.1 and ggtree v3.2.1.
 
 ## Results
 
-## Overview of available data
+### Overview of available data
 
 A total of 13,000 confirmed Typhi genomes were collated from 65 studies and 5 unpublished public health laboratory datasets (see Table 1, Supplementary file 2). N=35 genomes had assembly sizes outside of the plausible range (4.5–5.5 Mbp, see Figure 1—figure supplement 1), leaving n=12,965 high-quality genomes originating from 110 countries. The distribution of samples by world region (as defined by WHO statistics division M49) is shown in Table 2, with country breakdown in Supplementary file 4. The majority originated from Southern Asia (n=8231), specifically India (n=2705), Bangladesh (n=2268), Pakistan (n=1810), and Nepal (n=1436). A total of n=1140 originated from South-eastern Asia, with >100 each from Cambodia (n=279), Vietnam (n=224), the Philippines (n=209), Indonesia (n=145), and Laos (n=139). Overall, 1106 genomes originated from Eastern Africa, including >100 each from Malawi (n=569), Kenya (n=254), Zimbabwe (n=110). Other regions of Africa were less well represented, with n=384 from Western Africa, n=317 from Southern Africa, n=59 from Middle Africa (so-named in the M49 region definitions, although more commonly referred to as Central Africa), and n=41 from Northern Africa (see Table 2 and Supplementary file 4 for details).
+
+**Table 2.**
+ Summary of genomes by region.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Total genomes</th>
+      <th>*Representative cases 2010–2020</th>
+      <th>†Travel (%) amongst representative cases 2010–2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Australia and NZ</td>
+      <td>57</td>
+      <td>57</td>
+      <td>0 (0%)</td>
+    </tr>
+    <tr>
+      <td>Caribbean</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20 (100%)</td>
+    </tr>
+    <tr>
+      <td>Central America</td>
+      <td>103</td>
+      <td>100</td>
+      <td>100 (100%)</td>
+    </tr>
+    <tr>
+      <td>Eastern Africa</td>
+      <td>1106</td>
+      <td>830</td>
+      <td>49 (5.9%)</td>
+    </tr>
+    <tr>
+      <td>Eastern Asia</td>
+      <td>12</td>
+      <td>3</td>
+      <td>3 (100%)</td>
+    </tr>
+    <tr>
+      <td>Eastern Europe</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1 (100%)</td>
+    </tr>
+    <tr>
+      <td>Melanesia</td>
+      <td>232</td>
+      <td>37</td>
+      <td>30 (81.1%)</td>
+    </tr>
+    <tr>
+      <td>Micronesia</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1 (100%)</td>
+    </tr>
+    <tr>
+      <td>Middle Africa</td>
+      <td>59</td>
+      <td>21</td>
+      <td>6 (28.6%)</td>
+    </tr>
+    <tr>
+      <td>Northern Africa</td>
+      <td>41</td>
+      <td>6</td>
+      <td>6 (100%)</td>
+    </tr>
+    <tr>
+      <td>Northern America</td>
+      <td>167</td>
+      <td>140</td>
+      <td>2 (1.4%)</td>
+    </tr>
+    <tr>
+      <td>Northern Europe</td>
+      <td>109</td>
+      <td>105</td>
+      <td>0 (0%)</td>
+    </tr>
+    <tr>
+      <td>Polynesia</td>
+      <td>324</td>
+      <td>262</td>
+      <td>45 (17.2%)</td>
+    </tr>
+    <tr>
+      <td>South America</td>
+      <td>367</td>
+      <td>105</td>
+      <td>5 (4.8%)</td>
+    </tr>
+    <tr>
+      <td>South-eastern Asia</td>
+      <td>1140</td>
+      <td>584</td>
+      <td>72 (12.3%)</td>
+    </tr>
+    <tr>
+      <td>Southern Africa</td>
+      <td>317</td>
+      <td>286</td>
+      <td>2 (0.7%)</td>
+    </tr>
+    <tr>
+      <td>Southern Asia</td>
+      <td>8231</td>
+      <td>6623</td>
+      <td>1878 (28.4%)</td>
+    </tr>
+    <tr>
+      <td>Southern Europe</td>
+      <td>10</td>
+      <td>6</td>
+      <td>6 (100%)</td>
+    </tr>
+    <tr>
+      <td>Western Africa</td>
+      <td>384</td>
+      <td>267</td>
+      <td>34 (12.7%)</td>
+    </tr>
+    <tr>
+      <td>Western Asia</td>
+      <td>47</td>
+      <td>21</td>
+      <td>21 (100%)</td>
+    </tr>
+    <tr>
+      <td>Western Europe</td>
+      <td>7</td>
+      <td>3</td>
+      <td>3 (100%)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>225</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>12965</td>
+      <td>9478</td>
+      <td>2284 (24.1%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Genomes associated with assumed acute typhoid cases, isolated from 2010 onwards from non-targeted sampling frames; this is the subset of data used to generate genotype prevalence distributions shown in Figures 1—3.†Genomes recorded as travel-associated and with known travel to a specific country in this region, associated with assumed acute typhoid isolated from 2010 onwards from non-targeted sampling frames. Countries were assigned to world regions based on the United Nations (UN) Statistics Division standard M49._
 
 Overall, there were 36 countries with ≥20 genomes (total n=12,409 genomes, 95.7%) and 21 countries with ≥100 genomes (n=11,761 genomes, 90.7%) (see Supplementary file 4). Countries with the most genomes available (n≥100 each) were mainly those where local surveillance studies have utilised WGS for isolate characterisation: India (Britto et al., 2020; da Silva et al., 2022), Bangladesh (Rahman et al., 2020; da Silva et al., 2022), Nepal (Britto et al., 2018; da Silva et al., 2022; Pham Thanh et al., 2016a), Pakistan (da Silva et al., 2022), Cambodia (Kuijpers et al., 2017; Pham Thanh et al., 2016b), Laos (Wong et al., 2015), Vietnam (Holt et al., 2011a), Kenya (Kariuki et al., 2021; Kariuki et al., 2010), Malawi (Feasey et al., 2015), Zimbabwe (Mashe et al., 2021; Thilliez et al., 2022), Ghana (Park et al., 2018), Nigeria (Ikhimiukor et al., 2022a; Wong et al., 2016b), Chile (Maes et al., 2022), Samoa Sikorski et al., 2022; plus South Africa (Smith et al., 2023), the Philippines (Lagrada et al., 2022), United Kingdom, and United States, where Typhi isolates are sequenced as part of national surveillance programmes.
 
@@ -282,23 +887,43 @@ The genome collection included n=3381 isolates that were recorded as travel-asso
 
 In total, n=10,726 genomes were assumed to represent acute typhoid fever and recorded as derived from ‘non-targeted’ sampling frames, meaning local population-based surveillance studies or reference laboratory-based national surveillance programmes that could be considered representative of a given time (year of isolation) and geography (country and region of origin) (see Methods for definitions). The majority of these isolates (n=9478, 88.4%) originate from 2010 onwards; hence, we focus our reporting of genotype and AMR prevalences on this period. Most come from local typhoid surveillance studies (n=5574) or routine diagnostics/reference laboratory referrals capturing locally acquired (n=1543) or travel-associated (n=2284) cases. All prevalence estimates reported in this study derive from this data subset, unless otherwise stated.
 
-## Geographical distribution of genotypes
+### Geographical distribution of genotypes
 
 The breakdown of genotype prevalence by world region, for genomes isolated from non-targeted sampling frames from 2010 onwards, is shown in Figure 1a (denominators in Table 2, full data in Supplementary file 5). Annual breakdown of regional genotype prevalence rates is given in Figure 1—figure supplement 2 (raw data, proportions, and 95% CIs in Supplementary file 5). Notably, while our data confirm that H58 genotypes (4.3.1 and derived) dominate in Asia, Eastern Africa, and Southern Africa, they were virtually absent from other parts of Africa, from South and Central America, as well as from Polynesia and Melanesia (Figure 1). Instead, each of these regions was dominated by their own local genotypes. Typhoid fever is no longer endemic in Northern America, Europe, or Australia/New Zealand. The genotype distributions shown for these regions were estimated from Typhi that were isolated locally but not recorded as being travel-associated; nevertheless, these genomes can be assumed to result from limited local transmission of travel-associated infections, and thus to reflect the diversity of travel destinations for individuals living in those regions. Annual national genotype prevalences for well-sampled countries with endemic typhoid are shown in Figure 1b (full data in Supplementary file 6 and Figure 1—figure supplement 3). Below, we summarise notable features of the global genotype distribution, by world region (as defined by WHO statistics division, see Methods).
 
-## Southern Asia
+![Figure 1.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig1-v1.jpg)
+
+**Figure 1.:** Based on assumed acute cases isolated from untargeted sampling frames from 2010 onwards, with known country of origin (total N=9478 genomes). (a) Genotype prevalence by world region, 2010–2020. Countries contributing data are shaded in beige, and are grouped by regions as defined by the UN statistics division. (b) Annual genotype prevalence for countries with ≥50 genomes where typhoid is endemic. In both plots, colours indicate prevalence of Typhi genotypes, as per inset legend. Genotypes not exceeding 20% frequency in at least one country are aggregated as ‘other’. Full data on regional and national genotype prevalences, including raw counts, proportions, and 95% confidence intervals, are given in Supplementary files 5 and 6, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) All assemblies examined (n=13,000). (b) Assemblies of genomes included in the analysis (n=12,965), inclusion criterion being size between 4.5 and 5.5 Mbp.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Bars show genotype prevalence rates observed per annum, coloured as per inset legend. Genotypes present at ≥20% frequency in any country are indicated separately, rare genotypes are aggregated as ‘other’. Full data, including raw counts, proportions, and 95% confidence intervals, are available in Supplementary file 5.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (Note plots for countries with ≥50 genomes are shown in Figure 1b, full data including raw counts, proportions, and 95% confidence intervals, are in Supplementary file 6). Bars show genotype prevalence rates observed per annum, coloured as per inset legend. Genotypes present at ≥20% frequency in any country are indicated separately, rare genotypes are aggregated as ‘other’.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The tree is a core-genome distance-based neighbour-joining tree generated from assemblies using Pathogenwatch, including n=164 genotype 2.3.2 genomes, outgroup rooted using a diverse set of genomes from Ingle et al., 2021 (n=115 genomes from 16 genotypes). Tips are coloured by world region, according to inset legend; triangles indicate genomes harbouring QRDR mutations resulting in predicted non-susceptibility to ciprofloxacin (CipNS). Clades representing putative local clonal expansions are shaded.
+
+#### Southern Asia
 
 Southern Asia was the most represented region, with 6623 genomes suitable for prevalence analysis. The genotype distribution confirms the widely reported finding that the H58 lineage (4.3.1 and derived genotypes) is the dominant form of Typhi in Southern Asia, where it is thought to have originated (Carey et al., 2022; Roumagnac et al., 2006; da Silva et al., 2022; Wirth, 2015; Wong et al., 2015) (overall prevalence, 70.4% [95% CI, 69.3–71.5%]; n=4662/6623). Notably though, the distribution of H58 genotypes was different between countries in the region (see Figure 1b), and in Bangladesh, it was associated with a minority of genomes (42% [n=670/1591], compared with 73% in India [n=1655/2267], 74% in Nepal [n=941/1275], and 94% in Pakistan [n=1390/1484]). India and Nepal were dominated by sublineage 2 (genotype 4.3.1.2 and derived genotypes; 54% [n=1214/2267] and 57% [n=736/1275], respectively), which was rare in Bangladesh (0.6%; n=9/1591) and Pakistan (3.2%; n=47/1484). In India, H58 lineage 1 (4.3.1.1) was also present at appreciable frequency (12%; n=268/2267) as was 4.3.1 (i.e. H58 that does not belong to any of the defined sublineages 4.3.1.1–3; 7.4% [n=168/2267]). In Nepal, 4.3.1 was present at 12% frequency (n=152/1275) and 4.3.1.1 at just 4.9% (n=63/1275).
 
 In Pakistan, lineage 1 (genotype 4.3.1.1 and derived genotypes) was most common (73%; 1089/1484), with the XDR sublineage (genotype 4.3.1.1.P1) appearing in 2016 (Gul et al., 2017; Klemm et al., 2018; Rasheed et al., 2020) and rapidly rising to dominance (87% in 2020 [n=27/31]; see Figure 1b). Pakistan also had prevalent 4.3.1 (17%; n=254/1484). H58 lineage 1 (4.3.1.1) was the single most common genotype in Bangladesh, but made up only one-third of the Typhi population (34%; n=546/1591). Bangladesh has its own H58 lineage 3 (4.3.1.3) (Rahman et al., 2020; Tanmoy et al., 2018), whose prevalence was 7.1% (n=113/1591); only two 4.3.1 isolates and nine 4.3.1.2 isolates were detected. Non-H58 genotypes were also evident in the region, with the greatest diversity in Bangladesh (see Figure 1b). Those exceeding 5% in any one country were: 3.3.2 (5.8% in Bangladesh [n=93/1591], 12.9% in Nepal [n=164/1275]), 2.5 in India (8.4%; n=190/2267), 3.3 in India (6.6%; n=150/2267), 2.3.3 in Bangladesh (17.2%; n=274/1591), and 3.2.2 in Bangladesh (6.6%; n=264/1591). Annual prevalence estimates were fairly stable over the past decade, with the exception of the 4.3.1.1.P1 in Pakistan, which emerged in 2016 and became dominant shortly thereafter (see Figure 1b).
 
-## South-eastern and Western Asia
+#### South-eastern and Western Asia
 
 In South-eastern Asia, H58 accounted for 47.3% [95% CI, 43.2–51.3%; 276/584] of isolates in aggregate (mostly 4.3.1.1, 43.0% of total genomes; 251/584). However, the population structures varied between individual countries in the region (see Figure 1b and Figure 1—figure supplement 3), with H58 accounting for nearly all isolates in Cambodia (98%, n=216/221, all lineage 1), Myanmar (94%, n=46/49, mixed lineages), and Singapore (n=4/4, mixed lineages), but largely absent from Indonesia (3%, n=2/65), Laos (4%, n=1/27), and the Philippines (0.5%, n=1/206). These latter countries showed distinct populations with multiple genotypes exceeding 5% frequency: 4.1 (26%, n=17/65), 3 (18%, n=12/65), 2.1 (15%, n=10/65), and 3.1.2 (12%, n=8/65) in Indonesia; 3.4 (44%, n=12/27), 3.5.2 (15%, n=4/27), 2.3.4 (11%, n=3/27), 3.2.1 (11%, n=3/27), and 4.1 (7%, n=2/27) in Laos; 3 (79%, n=163/206), 3.2.1 (11%, n=23/206), and 4.1 (7%, n=16/206) in the Philippines (Lagrada et al., 2022).
 
 Data from Western Asia were limited to a small number of travel-associated infections (total n=21, from Iraq, Lebanon, Qatar, Saudi Arabia, Syria, United Arab Emirates), most of which were H58 (71%; n=15/21); with 38% 4.3.1.1 (n=8/21) and 19% 4.3.1.2 (n=4/21).
 
-## Africa
+#### Africa
 
 Only 1410 (15%) of the 9478 genomes from untargeted sampling frames in 2010–2020 were isolated from residents in or travellers to Africa. There is significant underrepresentation from this continent with high endemicity and varying epidemiology across subregions. Our aggregated data confirmed that H58 was the dominant cause of typhoid in Eastern Africa during the study period (93.3% H58 [95% CI, 91.5–95.0%] n=774/830; see Figure 1a). It was recently shown that H58 in Kenya was derived from three separate introductions of H58 into the region, which are now assigned their own genotypes (Kariuki et al., 2021) (4.3.1.1.EA1, 4.3.1.2.EA2, 4.3.1.2.EA3). Here, we found that at the region level, 4.3.1.1.EA1 dominated (78%, [95% CI 75.1–80.8%] n=647/830; see Figure 1a). However, there were country-level differences, with 4.3.1.1.EA1 dominating in Malawi (94%; n=524/558), Tanzania (83%; n=15/18), Zimbabwe (80%; n=20/25), and earlier years in Kenya (59%, n=86/145 in 2012–2016), and 4.3.1.2.EA3 dominating in Rwanda (85%, n=23/27) (Rutanga et al., 2023) and Uganda (97%, n=35/36) (Figure 1b and Figure 1—figure supplement 3). Although the specific periods of sampling differ for these countries, the prevalence of H58 was consistently high across the available time frames for all countries, with no change in dominant genotypes (see Figure 1b and Figure 1—figure supplement 3; note the apparent shift to 4.3.1.2.EA3 in Kenya is based on n=4 isolates only so requires confirmation).
 
@@ -308,35 +933,71 @@ In Western Africa, the common genotypes were 3.1.1 (64.4%, [95% CI, 58.7–70.2%
 
 Very limited genome data were available from the Middle Africa region (n=19; Table 2). Genomes from Democratic Republic of the Congo (DRC) comprised 16 genotype 2.5.1 isolates (15 isolated locally, plus one from USA CDC) and a single 4.3.1.2.EA3 isolate (from the UK reference lab). Two genomes each were available from Angola (both 4.1.1, via UK) and Chad (both 2.1, via France). Northern Africa was similarly poorly represented, with one isolate from Egypt (0.1, via UK), two from Morocco (0.1, via UK and 1.1, via USA), two from Sudan (genotype 4, via UK), and one from Tunisia (3.3, from UK).
 
-## The Americas
+#### The Americas
 
 Strikingly, Central American isolates were dominated by 2.3.2 (55%, [95% CI, 45.2–64.8%] n=55/100), which was also common in Western Africa (13.9%, [95% CI, 9.7–18.0%]; n=37/266) (Figure 1a). Little has been reported about Typhi populations from this region previously, and the genomes collated here were almost exclusively novel ones contributed via the US CDC and isolated between 2016 and 2019. The available genomes for the period 2010–2020 mainly originated from El Salvador (n=19, 2012–2019, 89% 2.3.2), Guatemala (n=22, 2016–2019, 41% 2.3.2), and Mexico (n=58, 2011–2019, 50% 2.3.2). Prior to 2010, genotype 2.3.2 was also identified in isolates from Mexico referred to the French reference lab in 1972 (representing a large national outbreak; Baine et al., 1977) and 1998. The distance-based phylogeny for 2.3.2 included several discrete clades from different geographical regions in West Africa and the Americas (see Figure 1—figure supplement 4), consistent with occasional continental transfers between these regions followed by local clonal expansions. Three clades were dominated by West African isolates (one with isolates from West Coast countries, and two smaller clades from Nigeria and neighbouring countries); two clades of South American isolates (from Chile, Argentina, and Peru); one small clade of Caribbean (mainly Haiti) and USA isolates; and one large clade of Central American isolates (from Mexico, Guatemala, and El Salvador) (see Figure 1—figure supplement 4). Other common genotypes identified in Central America were 2.0.2 (overall prevalence 24% [95% CI, 16–32%, n=24/100]; 32% in Guatemala [n=7/22], 26% in Mexico [n=15/58], 11% in El Salvador [n=2/19]) and 4.1 (17%, [95% CI, 9.6–24% n=17/100]; 23% in Guatemala [n=5/22], 21% in Mexico [n=12/58], not detected from El Salvador).
 
 There were 105 genomes available from South America, of which 92% (n=97) were from a recent national surveillance study in Chile (Maes et al., 2022). South American Typhi were genetically diverse, with no dominant genotype accounting for the majority of cases in the 2010–2020 period (Figure 1a). Genotypes with ≥5% prevalence in the region were 3.5 (27%; n=28/105), 1.1 (18%; n=19/105), 2 (18%; n=19/105), 1.2.1 (5.7%; n=6/105), and 2.0.2 (5.7%; n=6/105). WGS data recently reported by Colombia’s Instituto Nacional de Salud (Guevara et al., 2021) were not included in the regional prevalence estimates as they covered only a subset (5%) of surveillance isolates that were selected to maximise diversity, rather than to be representative. However, only four genotypes were detected in the Colombia study (1.1, 2, 2.5, 3.5), and two-thirds of isolates sequenced were genotype 2.5 (67%; n=51/77); 3.5 was also common, at 25% (n=20/77) (Guevara et al., 2021). Similarly, all five isolates from French Guiana (sequenced via the French reference laboratory) were genotype 2.5, consistent with limited diversity and a preponderance of genotype 2.5 organisms in the north of the continent.
 
-## Pacific Islands
+#### Pacific Islands
 
 In Melanesia and Polynesia, each island has their own dominant genotype (Figure 1a): 2.1.7 and its derivatives in Papua New Guinea (n=5/5 in post-2010 genomes, consistent with the longer-term trend) (Dyson et al., 2022), 3.5.3 and 3.5.4 in Samoa (96%; n=249/259, consistent with a recent report) (Sikorski et al., 2022), and 4.2 and its derivatives in Fiji (97%; n=31/32, consistent with recent data that was not yet available at the time of this analysis) (Davies et al., 2022).
 
-## Global distribution of AMR
+### Global distribution of AMR
 
 We estimated the regional and national prevalence of clinically relevant AMR profiles in Typhi for the period 2010–2020, inferred from WGS data from non-targeted sampling frames for which country of origin could be determined (as per genotype prevalences, see Methods). In order to understand the potential implications of these AMR prevalences for local empirical therapy, we categorised them according to a traffic light-style system (see Methods), whereby amber colours signal emerging resistance of potential concern (<10%), and red colours signal prevalence rates of AMR that may warrant reconsideration of empirical antimicrobial use (>10%; see Figure 2 and Figure 2—figure supplement 1). The regional view (Figure 2—figure supplement 1, Supplementary file 7) highlights that CipNS is widespread, whereas CipR, AziR, and XDR have been mostly restricted to Southern Asia. MDR was most prevalent in African regions, and to a lesser degree in Asia. Full country-level data is mapped in Figure 2—figure supplement 2 and detailed in Supplementary file 8. National estimates for countries with sufficient data where typhoid is endemic (≥50 representative genomes available for the period 2010–2020, see Figure 2) indicate that MDR remains common across all well-sampled African countries (39% in Nigeria, 61% in South Africa, 66% in Ghana, 78% in Kenya, 93% in Malawi), but is much more variable in Asia (3% in India [n=67/2267] and Nepal [n=36/1275], 25% in Bangladesh [n=393/1591], 68% in Pakistan [n=1004/1484], 76% in Cambodia [n=167/221]) and essentially absent from Indonesia (n=0), the Philippines (n=0), Samoa (n=0), Mexico (n=1, 1.7%), and Chile (n=0). The underlying genotypes are shown in Figure 2—figure supplement 3, and highlight that MDR in Asia, Eastern Africa, and Southern Africa has been mostly associated with H58 (i.e. 4.3.1 and derived genotypes) but in Western Africa is associated with the dominant genotype in that region, 3.1.1. In contrast, CipNS was associated with more diverse Typhi genotypes in each country, including essentially all common genotypes in Southern Asian countries (Figure 2—figure supplement 3). National annual prevalence data suggest that AMR profiles were mostly quite stable over the last decade (with the notable exception of the emergence and rapid spread of XDR Typhi in Pakistan) but reveal some interesting differences between settings in terms of AMR trends and the underlying genotypes (see Figure 3, Figure 2—figure supplement 3, Figure 2—figure supplement 4, Figure 3—figure supplement 1).
 
-## Ciprofloxacin non-susceptible
+![Figure 2.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig2-v1.jpg)
+
+**Figure 2.:** For all countries with ≥50 representative genomes (untargeted, assumed acute cases) from 2010 to 2020, where typhoid is endemic. Percentage resistance values are printed for each country/drug combination, and are coloured by categorical ranges to reflect escalating levels of concern for empirical antimicrobial use: (i) 0: no resistance detected; (ii) >0 and ≤2%: resistance present but rare; (iii) 2–10%: emerging resistance; (iv) 10–50%: resistance common; (v) >50%: established resistance. Annual rates underlying these summary rates are shown in Figure 3 and Supplementary file 8. Full data including counts and confidence intervals are included in Supplementary file 8. MDR, multidrug resistant; XDR, extensively drug resistant; CipNS, ciprofloxacin non-susceptible; CipR, ciprofloxacin resistant; CefR, ceftriaxone resistant; AziR, azithromycin resistant. Countries are grouped by geographical region.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Percentage resistance values are printed for each region/drug combination, and are coloured by categorical ranges to reflect escalating levels of concern for empirical antimicrobial use: (i) 0: no resistance detected; (ii) >0 and ≤2%: resistance present but rare; (iii) 2–10%: emerging resistance; (iv) 10–50%: resistance common; (v) >50%: established resistance. Full data including counts and confidence intervals are in Supplementary file 7. MDR, multidrug resistant; XDR, extensively drug resistant; CipNS, ciprofloxacin non-susceptible; CipR, ciprofloxacin resistant; CefR, ceftriaxone resistant; AziR, azithromycin resistant.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Data are shown only for countries with N≥20 isolates (others are coloured grey). Countries are coloured by the prevalence of resistance per country, as per the inset legend. MDR, multidrug resistant; XDR, extensively drug resistant; CipNS, ciprofloxacin non-susceptible; CipR, ciprofloxacin resistant; CefR, ceftriaxone resistant; AziR, azithromycin resistant.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** For countries with ≥50 representative genomes between 2010 and 2020 and endemic typhoid. Genotypes for (a) MDR and (b) CipNS genomes are coloured according to the inset legends; sensitive genomes of all genotypes are aggregated and coloured grey.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** For selected countries discussed in text. Node size indicates total number of isolates for a given combination of genotype (row) and determinant (column); nodes are coloured to indicate the frequency of the determinant within that genotype. Wt = wildtype; that is, no quinolone resistance determining mutations was detected in gyrA or parC and no plasmid-borne quinolone resistance (qnr) genes were detected.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Rows show all n=24 unique combinations of Typhi genotype, quinolone-resistance determining region (QRDR) mutations (in gyrA, gyrB, parC, see Methods) and acquired plasmid-mediated quinolone resistance (PMQR) genes (qnrB, qnrD, qnrS) identified in genomes that are predicted to result in ciprofloxacin resistance (presence of ≥1 QRDR mutation+≥1 PMQR gene, or presence of ≥3 QRDR mutations).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig3-v1.jpg)
+
+**Figure 3.:** For countries with ≥3 years with ≥10 representative genomes (untargeted, assumed acute cases) from 2000 to 2020. Data are shown only for country/year combinations with N≥5 isolates. MDR, multidrug resistant; XDR, extensively drug resistant; CipNS, ciprofloxacin non-susceptible; CipR, ciprofloxacin resistant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** For countries with ≥3 years with ≥10 representative genomes (untargeted, assumed acute cases) from 2000 to 2020 and endemic typhoid. Data are shown only for country/year combinations with N≥5 isolates. MDR, multidrug resistant; XDR, extensively drug resistant; CipNS, ciprofloxacin non-susceptible; CipR, ciprofloxacin resistant; CefR, ceftriaxone resistant; AziR, azithromycin resistant.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** For countries with endemic typhoid and ≥5% MDR prevalence between 2000 and 2020.
+
+#### Ciprofloxacin non-susceptible
 
 CipNS was near-ubiquitous (exceeding 95% prevalence) in India and Bangladesh throughout the period 2010–2020 (Figure 3, Figure 3—figure supplement 1). This was associated mainly with GyrA-S83F (79% prevalence in Bangladesh, 70% in India) and GyrA-S83Y mutations (9.2% prevalence in Bangladesh, 26% in India), which were detected across diverse genotype backgrounds (Figure 2—figure supplement 3, Figure 2—figure supplement 4); in total, CipNS variants were present in 30 genotype backgrounds in India (out of n=34 genotypes, 88%) and 17 in Bangladesh (out of n=21 genotypes, 81%). In neighbouring Nepal, CipNS prevalence has stabilised in the 85–95% range since 2011 (70% GyrA-S83F, 12% GyrA-S83Y; CipNS in 12 genotype backgrounds) (see Figure 3 and Figure 2—figure supplement 3). The persistence of ciprofloxacin-susceptible Typhi in Nepal was largely associated with genotype 3.3.2, which maintained annual prevalence of 3–10% (mean 5.8%) throughout 2010–2018, rising to 39% in 2019. In Pakistan, CipNS has exceeded 95% since 2012 (Figure 3), across n=14/17 genotypes (Figure 2—figure supplement 3). Sustained high prevalence of CipNS was also evident in Cambodia (4.3.1.1 with GyrA-S83F). In contrast, CipNS has been relatively rare in African countries, but has been increasing in recent years, especially in Kenya (from 20% in 2012 to 65% in 2016, p=3 × 10–9 using proportion trend test) and Nigeria (from 8% in 2013 to 80% in 2019, p=7 × 10–6; see Figure 3). CipNS in these settings was associated with QRDR mutations in the locally dominant genotypes, specifically GyrA-S83F (15% of 4.3.1.1.EA1), GyrA-S83Y (100% of 4.3.1.2.EA3) and GyrA-S464F in Kenya (100% of 4.3.1.2.EA2), and GyrA-S83Y (27% of 3.1.1) in Nigeria (see Figure 2—figure supplement 3 and Figure 2—figure supplement 4).
 
-## Ciprofloxacin resistant
+#### Ciprofloxacin resistant
 
 CipR emerges in a stepwise manner in Typhi, through acquisition of additional QRDR mutations and/or PMQR genes in strains already carrying a QRDR mutation. CipR genomes were common (≥10%) in Pakistan, India, and Nepal, and emerging (3–6%) in Bangladesh, South Africa, Chile, and Mexico (Figure 2). A total of 26 distinct CipR genotypes (comprising unique combinations of Typhi genotype, QRDR mutations, and/or PMQR genes) were identified, of which five were found in appreciable numbers (>5 genomes each, see Figure 2—figure supplement 5). The XDR strain 4.3.1.1.P1 (carrying GyrA-S83F+qnrS) was first identified in Pakistan in 2016 (Klemm et al., 2018; Rasheed et al., 2020), and here accounted for 75% of Typhi genomes from Pakistan in 2020 and a dramatic rise in CipR prevalence (Figure 3). This genotype was only detected three times without a known origin in Pakistan (one isolate each in India, Mexico, and USA, see Figure 2—figure supplement 5). The CipR strain 4.3.1.3.Bdq (carrying GyrA-S83F and qnrS) emerged in Bangladesh in ~1989 (da Silva et al., 2022) and here accounted for 95% of CipR genomes in this country. 4.3.1.3.Bdq genomes were also detected in India (n=4), Singapore (n=1), and South Africa (n=1). The other major CipR genotypes were the QRDR triple-mutant 4.3.1.2.1, its derivative 4.3.1.2.1.1 (which also carries plasmid-borne qnrB), and a QRDR triple-mutant sublineage of 3.3. These three CipR variants were most common in India, where we estimated consistently high CipR prevalence (19–27% per year) from 2014 onwards (Figure 3), associated with 15 unique CipR genotypes (Figure 2—figure supplement 5). Most Indian CipR genomes belong to 4.3.1.2.1 (92.3%). CipR 4.3.1.2.1 was also found in 12 other countries, most notably Nepal (accounting for 95% of CipR genomes), where it has been shown to have been introduced from India and result in treatment failure (Pham Thanh et al., 2016a); Pakistan (accounting for 6.6% of CipR genomes); Myanmar (accounting for n=17/17 CipR genomes); and Chile (accounting for n=5/5 CipR genomes) (see Figure 2—figure supplement 5). The 3.3 QRDR triple-mutant accounted for 3.8% of CipR genomes in India, and was also found in neighbouring Nepal (n=4, 3% of CipR). CipR genomes were identified from Zimbabwe (4.3.1.1.EA1 with gyrA S83F+qnrS, associated with recent CipR outbreaks; Thilliez et al., 2022) and South Africa (five different genotypes, totalling 3.5%; see Figure 2—figure supplement 5; Smith et al., 2023), but were otherwise absent from African Typhi genomes.
 
-## Multidrug resistant
+#### Multidrug resistant
 
 Prevalence of MDR (co-resistance to ampicillin, chloramphenicol, and co-trimoxazole) has declined in India (p=2 × 10–9 using proportion trend test) to 2% (0–3% per year, 2016–2020), and is similarly rare in Nepal (mean 5% in 2011–2019) (see Figure 3). MDR prevalence has also declined in Bangladesh (p=2 × 10–4 using proportion trend test) but remains high enough to discourage deployment of older first-line drugs, with prevalence exceeding 20% in most years (see Figure 3). In Pakistan, the emergence of the XDR strain 4.3.1.1.P1 has driven up MDR prevalence dramatically (p=4 × 10–11 using proportion trend test), to 87% in 2020 (see Figure 3 and Figure 2—figure supplement 3b). MDR prevalence has remained high in Kenya and Malawi since the first arrival of MDR H58 strains (estimated early 1990s in Kenya [Kariuki et al., 2021]; 2009 in Malawi [Feasey et al., 2015]), but has declined steadily in Nigeria, from 72% in 2009 to 10% in 2017 (p=3 × 10–4 using proportion trend test; see Figure 3). All MDR isolates in Nigeria were genotype 3.1.1 and carried large IncHI1 MDR plasmids, which are associated with a fitness cost (Doyle et al., 2007). Chromosomal integration of the MDR transposon, which accounted for 100% of MDR in Malawi and 19% in Kenya (all in H58 genotype backgrounds), is associated with comparably lower fitness cost; and this difference in fitness cost may explain why MDR has remained at high prevalence in some settings (where resistance is chromosomally integrated) while declining in other settings (where resistance is plasmid-borne).
 
 Figure 3—figure supplement 2 shows prevalence of MDR overlaid with prevalence of IncHI1 plasmid carriage amongst MDR strains. Two countries showed a significant rise in MDR prevalence (Pakistan, p=4 × 10–11; South Africa, p=9 × 10–8); in both countries, this rise coincided with loss of IncHI1 plasmids (see Figure 3—figure supplement 2) and assumed migration of MDR to the chromosome (as has been clearly shown in XDR 4.3.1.1.P1 strains in Pakistan) (Klemm et al., 2018). A decline in the prevalence of MDR over time was observed in Cambodia as in Nigeria, whereby all MDR strains belonged to the same genotype (4.3.1.1 in Cambodia, 3.1.1 in Nigeria) and carried the IncHI1 plasmid (see Figure 3—figure supplement 2). As noted above, MDR was maintained at high prevalence rates in Kenya and Malawi, where the IncHI1 plasmid frequency was either in decline (Kenya) or entirely absent (Malawi; see Figure 3—figure supplement 2). Notably, a significant decline in total MDR prevalence was observed in Bangladesh (p=2 × 10–4), and in MDR prevalence within the dominant genotype 4.3.1.1 (p=0.049), despite the majority of MDR (and all MDR within 4.3.1.1) being chromosomal rather than plasmid-associated (Rahman et al., 2020; da Silva et al., 2022). However, as noted above, MDR did persist in Bangladesh (exceeding 20% prevalence in most years). This is consistent with the hypothesis that the MDR plasmid is associated with a fitness cost that is removed when the MDR transposon becomes chromosomally integrated.
 
-## Extensively drug resistant
+#### Extensively drug resistant
 
 The XDR 4.3.1.1.P1 sublineage (i.e. MDR with additional resistance to fluoroquinolones and third-generation cephalosporins including ceftriaxone) was recognised as emerging in late 2016 in Sindh Province, where it caused an outbreak of XDR typhoid that has since spread throughout Pakistan (Klemm et al., 2018; Nair et al., 2021; Rasheed et al., 2020). Here, we identified the genome of strain Rwp1-PK1 (assembly accession NIFP01000000), isolated from Rawalpindi in July 2015, as genotype 4.3.1.1.P1. Rwp1-PK1 was isolated from a 17-year-old male with symptomatic typhoid whose infection did not resolve following ceftriaxone treatment and was found to be phenotypically XDR (resistant to ampicillin, co-trimoxazole, chloramphenicol, ciprofloxacin, ceftriaxone) (Munir et al., 2016). The isolate was later sequenced and reported as carrying blaCTX-M-15, blaTEM-1, qnrS1, and GyrA-S83F (Gul et al., 2017), but was not genotyped nor included in comparative genomics analyses investigating the emergence of XDR in Pakistan, so has not previously been recognised as belonging to the 4.3.1.1.P1 XDR sublineage. We found that the Rwp1-PK1 genome carries the 4.3.1.1.P1 marker SNV, clusters with the 4.3.1.1.P1 sublineage in a core-genome tree (Figure 4), and shares the full set of AMR determinants typical of 4.3.1.1.P1, indicating that this XDR strain was present in northern Pakistan for at least a full year before it was reported as causing outbreaks in the southern province of Sindh.
 
@@ -344,23 +1005,187 @@ The XDR 4.3.1.1.P1 sublineage (i.e. MDR with additional resistance to fluoroquin
 
 **Figure 4.:** Core-genome distance-based neighbour-joining tree generated in Pathogenwatch, using all genomes from Klemm et al., 2018 (the first genomic characterisation of the extensively drug-resistant [XDR] outbreak clade, including outbreak strains and local context strains from Sindh Province in 2016–2017) and Rasheed et al., 2020 (genomic report of XDR outbreak strains from Lahore in 2019). Tree tips are coloured by genotype, according to inset legend; the 2015 strain Rwp1-PK1 is labelled in the tree and indicated with a triangle. Year of isolation and presence of antimicrobial resistance (AMR) determinants are indicated in the heatmap, according to inset legend.
 
-## Ceftriaxone resistant
+#### Ceftriaxone resistant
 
 There was no evidence for establishment of 4.3.1.1.P1 nor other XDR lineages outside Pakistan. However, ESBL genes were identified in n=32 non-4.3.1.1.P1 genomes, belonging to eight other genotypes (Table 3). Several carried a blaCTX-M-15; these include instances with no other acquired AMR genes (genotype 3 in the Philippines [Hendriksen et al., 2015b; Lagrada et al., 2022]; genotype 4.3.1.2 in Iraq [Nair et al., 2021]); one instance with chromosomally integrated AMR genes plus IncY plasmid-borne blaCTX-M-15 (genotype 2.5.1 in DRC; Phoba et al., 2017); and instances with a 4.3.1.1.P1-like profile carrying qnrS in the IncY plasmid and the MDR locus in the chromosome (n=4 4.3.1, India and Pakistan; n=1 4.3.1.1, Pakistan; see Table 3). However, overall, blaCTX-M-15 IncY plasmids were rare (n=1–4 genomes) in all genotype backgrounds except 4.3.1.1.P1 (total n=655), suggesting that the IncY blaCTX-M-15 plasmid has not been stably maintained in other Typhi lineages (see Table 3). IncY plasmids were also identified in a single genotype 2.3.3 organism isolated in the UK in 1989 associated with travel to Pakistan (carrying catA1, tetA(B)); and in a sublineage of IncHI1-negative 3.1.1 genomes from Nigeria carrying blaTEM-1D, dfrA14, sul2, tetA(A), as has been recently reported (Ikhimiukor et al., 2022a; Wong et al., 2016b). Other examples of ESBL carriage in Typhi genomes appear to represent isolated events (1 or 2 genomes per ESBL/plasmid or ESBL/genotype combination, see Table 3), except for a sublineage of 4.3.1.2.1 from India carrying blaSHV-12 in a IncX3 plasmid backbone. Concerningly, the plasmid also carries qnrB and is present in the well-established 4.3.1.2.1 QRDR triple-mutant strain background, resulting in a combination of resistance to ciprofloxacin, third-generation cephalosporins and ampicillin (Argimón et al., 2021b; Chattaway et al., 2021; Ingle et al., 2021; Jacob et al., 2021) (although lacking resistance determinants for chloramphenicol, co-trimoxazole, and azithromycin). This group comprised 15 isolates from Mumbai (Argimón et al., 2021b; Jacob et al., 2021) (across two studies, 2015–2018), plus three additional isolates from travellers returning to England, Australia, and the USA from India (Chattaway et al., 2021; Ingle et al., 2021) (2018–2020). This strain therefore appears to have originated in Mumbai and persisted there since at least 2015 for at least 6 years, but our data do not indicate onward spread out of Maharashtra or India.
 
-## Azithromycin resistant
+**Table 3.**
+ Extended spectrum beta-lactamase (ESBL) genes detected in Typhi genomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>ESBL</th>
+      <th>3GCR</th>
+      <th>Country of origin</th>
+      <th>n</th>
+      <th>Years</th>
+      <th>Other plasmid/AMR markers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2.5.1</td>
+      <td>CTX-M-15</td>
+      <td>Y</td>
+      <td>DRC Phoba et al., 2017</td>
+      <td>1</td>
+      <td>2015</td>
+      <td>IncY‡; blaTEM-1, dfrA7, sul1(gyrA-S83F)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td>CTX-M-15</td>
+      <td>Y</td>
+      <td>Philippines Lagrada et al., 2022</td>
+      <td>1</td>
+      <td>2013</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>SHV-12</td>
+      <td>Y</td>
+      <td>Philippines Hendriksen et al., 2015a; Lagrada et al., 2022</td>
+      <td>2</td>
+      <td>2007</td>
+      <td>IncHI2A*; blaTEM-1, dfrA18, tetA(D)</td>
+    </tr>
+    <tr>
+      <td>3.3</td>
+      <td>CTX-M-15</td>
+      <td>Y</td>
+      <td>UK</td>
+      <td>1</td>
+      <td>2012</td>
+      <td>(gyrA-S83F)</td>
+    </tr>
+    <tr>
+      <td>3.3.2</td>
+      <td>CTX-M-15</td>
+      <td>Y</td>
+      <td>Bangladesh Djeghout et al., 2018; Tanmoy et al., 2018</td>
+      <td>2</td>
+      <td>2000</td>
+      <td>IncI1*; blaTEM-1</td>
+    </tr>
+    <tr>
+      <td>3.5</td>
+      <td>CTX-M-12</td>
+      <td>Y</td>
+      <td>Colombia Guevara et al., 2021</td>
+      <td>1</td>
+      <td>2012</td>
+      <td>IncL, IncFIB(pHCM2); blaTEM-1, sul1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">4.3.1</td>
+      <td rowspan="2">CTX-M-15</td>
+      <td>Y</td>
+      <td>India Sah et al., 2019</td>
+      <td>1</td>
+      <td>2019</td>
+      <td>IncY*; qnrS, blaTEM-1, dfrA14, sul2,(gyrA-S83Y)</td>
+    </tr>
+    <tr>
+      <td>Y/N</td>
+      <td>Pakistan da Silva et al., 2022; Klemm et al., 2018</td>
+      <td>2</td>
+      <td>2018</td>
+      <td>IncY ‡; qnrS, blaTEM-1, sul2, catA1, dfrA7, sul1, tetA(A); (gyrA-S83F)</td>
+    </tr>
+    <tr>
+      <td>4.3.1.1</td>
+      <td>CTX-M-15</td>
+      <td>N</td>
+      <td>Pakistan da Silva et al., 2022</td>
+      <td>1</td>
+      <td>2016</td>
+      <td>IncY; qnrS, blaTEM-1, sul2, catA1, dfrA7, sul1, tetA(A); (gyrA-S83F)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">4.3.1.1.P1</td>
+      <td rowspan="4">CTX-M-15</td>
+      <td>Y</td>
+      <td>India Klemm et al., 2018; Nair et al., 2021</td>
+      <td>1</td>
+      <td>2019</td>
+      <td rowspan="5">IncY*†qnrS, blaTEM-1, sul2, catA1, dfrA7, sul1(gyrA-S83F)</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>Mexico https://wwwn.cdc.gov/narmsnow/</td>
+      <td>1</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>Pakistan Klemm et al., 2018; Munir et al., 2016; Rasheed et al., 2020</td>
+      <td>656</td>
+      <td>2015–20</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>USA https://wwwn.cdc.gov/narmsnow/</td>
+      <td>1</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <td>CTX-M-55</td>
+      <td>Y</td>
+      <td>Pakistan Nair et al., 2021</td>
+      <td>1</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td>4.3.1.2</td>
+      <td>CTX-M-15</td>
+      <td>Y</td>
+      <td>Iraq Nair et al., 2021</td>
+      <td>2</td>
+      <td>2019</td>
+      <td>IncY; (gyrA-S83F)</td>
+    </tr>
+    <tr>
+      <td>4.3.1.2.1</td>
+      <td>SHV-12</td>
+      <td>Y</td>
+      <td>India Argimón et al., 2021a; Chattaway et al., 2021; Ingle et al., 2021; Jacob et al., 2021</td>
+      <td>18</td>
+      <td>2015–20</td>
+      <td>IncX3*; qnrB(gyrA-S83F, gyrA-D87N, parC-S80I)</td>
+    </tr>
+  </tbody>
+</table>
+
+_‘Other plasmid/AMR markers’ column includes: (i) plasmid replicons (Inc types) identified in the genome (in bold); (ii) other acquired AMR genes; (iii) chromosomal AMR mutations (in brackets). n.a. indicates susceptibility data not available.*indicates this plasmid is the reported location of the ESBL gene in the genome assembly.†n=31 4.3.1.1 .P1 isolates from Pakistan lacked plasmid replicons.‡the ESBL 4.3.1. isolate from Klemm et al., 2018, was phenotypically third-generation cephalosporin resistant (3GCR), but the one from da Silva et al., 2022, was phenotypically 3GC sensitive._
+
+#### Azithromycin resistant
 
 AziR-associated mutations in acrB were identified in 74 genomes. The majority of acrB mutants were from Bangladesh (n=55, 73%), followed by India (n=11, 15%) (see Figure 5a), although the overall prevalence of resistance was very low even in these locations (2.6% in Bangladesh, 0.5% in India). Thirteen distinct combinations of genotype and acrB mutation were identified, implying at least thirteen independent events of AziR emergence; six were singleton isolates, and four were represented by two to three isolates each (Figure 5b). The three more common AziR variants all carried R717Q, in 4.3.1.1 (n=38, mainly from Bangladesh), 3.2.2 (n=12, from Bangladesh), or 4.3.1.2 (n=7, from India). Notably, half (n=7/13) of all acrB/genotype combinations were identified in Bangladesh (see Figure 4b). All acrB mutants also carried QRDR mutations, and eight were cipR: n=6 belong to the CipR 4.3.1.2.1 lineage in India (all carried R717Q and were isolated in 2017 in Chandigarh) and n=2 belong to the CipR 4.3.1.3.Bdq lineage (both carried R717L and were isolated in 2019, one in Singapore and one in Bangladesh).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig5-v1.jpg)
 
-**Figure 5.:** acrB mutations detected in Typhi genomes.(a) Temporal distribution of acrB mutants. (b) Distribution of acrB mutants by genotype and mutation. The first acrB mutant appeared in Samoa in 2007. Other mutants have appeared independently across a range of genetic backgrounds, largely in South Asian countries, but remain at low prevalence levels overall (see Figure 2). Country of origin is coloured as per inset label.
+**Figure 5.:** (a) Temporal distribution of acrB mutants. (b) Distribution of acrB mutants by genotype and mutation. The first acrB mutant appeared in Samoa in 2007. Other mutants have appeared independently across a range of genetic backgrounds, largely in South Asian countries, but remain at low prevalence levels overall (see Figure 2). Country of origin is coloured as per inset label.
 
-## Robustness of national estimates across studies
+### Robustness of national estimates across studies
 
 The estimates of genotype and AMR prevalence represented here reflect post hoc analyses of data that were generated for a variety of different primary purposes in different settings, by different groups using varied criteria for sample collection, including in-country surveillance and travel-associated cases recorded in other countries. Whilst datasets known to be biased towards sequencing of AMR strains including outbreak investigations were excluded from prevalence estimates, there is still substantial heterogeneity across data sources. To explore the robustness of these national-level estimates, we compared prevalence estimates for the same country from different studies/sources, where sufficient data existed to do so.
 
 Southern Asian countries were each represented by multiple in-country data sources plus travel-associated data collected in three or four other countries. Figure 6—figure supplement 1 shows genotype prevalence estimates derived from these different sources (for laboratories contributing ≥20 isolates each) and Figure 6a shows the annual genotype frequency distributions (for years with ≥20 isolates). In most cases (67% of genotype-source combinations), genotype prevalence rates estimated from individual source laboratories yielded 95% CIs that overlapped with those of the pooled national estimates (see Figure 6—figure supplement 1). The main exception was for genotype 4.3.1.2 in India; for most source laboratories (many contributing via the Surveillance for Enteric Fever in India [SEFI] network; Carey et al., 2020; da Silva et al., 2022), this was the most prevalent genotype, but the point estimates ranged from 16% to 82%, compared with the pooled estimate of 53.4% (95% CI, 51.4–55.5%), and 95% CIs were frequently non-overlapping (see Figure 6—figure supplement 1). High prevalence of 4.3.1.2 was estimated from contributing laboratories in urban Vellore (82% [95% CI, 78–87%]), Chennai (67% [56–77%]), Bengaluru (70% [62–78%]), and Mumbai (two laboratories, estimates 74% [65–83%] and 63% [46–79%]); with lower prevalence in northern India, New Delhi (three laboratories, estimates 48% [28–68%], 40% [31–49%], 39% [22–56%]) and Chandigarh (39% [33–45%]). Two Indian laboratories were clear outliers, with little or no 4.3.1.2 but very high prevalence of a different genotype: 4.3.1.1 in rural Bathalapalli (81% [67–95%]) and 2.5 in the northern city of Ludhiana (77% [66–88%]). The relative prevalence of 4.3.1.1.P1 (XDR lineage) in Pakistan versus its parent lineage 4.3.1.1 also varied between sources, which could be explained by differences in the sampling periods and locations relative to the emergence of 4.3.1.1.P1 (see Figure 6a); notably, the highest estimate of XDR prevalence (n=27/27, 100%) came from a hospital-based study (Rasheed et al., 2020), which may select for more severe cases that were unresponsive to antibiotics received in the community setting. AMR prevalence estimates were also highly concordant across data sources (see Figure 6—figure supplement 2), and showed strikingly similar temporal trends (Figure 6b).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig6-v1.jpg)
+
+**Figure 6.:** Labs shown are those with ≥20 isolates; and years shown for each lab are those with N≥5 isolates from that year. (a) Bars are coloured to indicate annual genotype prevalence, as per inset legend. (b) Lines indicate annual frequencies of key AMR profiles, coloured by isolating laboratory as per inset legend. MDR, multidrug resistant; XDR, extensively drug resistant; CipNS, ciprofloxacin non-susceptible; CipR, ciprofloxacin resistant; CefR, ceftriaxone resistant. See Supplementary file 9 for three-letter laboratory code master list.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** For source laboratories with N≥20 isolates. Lines show 95% confidence interval for each proportion (prevalence) estimate; solid circles highlight the pooled point estimate for national prevalence in each country. Lines are coloured by country as per the inset legend. See Supplementary file 9 for three-letter laboratory code master list.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/85867/elife-85867-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** For source laboratories with N≥20 isolates from which to estimate prevalence. Lines show 95% confidence interval for each proportion (prevalence) estimate; solid circles highlight the pooled point estimate for national prevalence in each country. Lines are coloured by country as per the inset legend. See Supplementary file 9 for three-letter laboratory code master list.
 
 The only other country represented by ≥10 sequenced isolates each from multiple laboratories was Nigeria; these were located in Abuja (Zankli Medical Center, n=105, 2010–2013) and Ibadan (University of Ibadan, n=14, 2017–2018), and reference laboratories in England (n=15, 2015–2019) and the USA (n=10, 2016–2019) (see Figure 7). Genotype prevalence estimates were concordant across different sources, with single-laboratory 95% CIs overlapping with one another and with the pooled point estimate, for all five common genotypes (see Figure 7). The exception was that genotype 3.1.1 accounted for all n=14/14 isolates sequenced from Ibadan, but ranged from 53% to 70% prevalence at other laboratories and yielded a pooled national prevalence estimate of 67% [95% CI, 60–75%] (see Figure 7a and c). AMR prevalence estimates for Nigeria were more variable across laboratories (see Figure 7b), but this could be explained by their non-overlapping sampling times: Abuja data from earlier years (2010–2013) showed high MDR (49%) and low CipNS (4%); whereas Ibadan data from later years (2017–2018) showed comparatively lower MDR (21%) and higher CipNS (79%), in agreement with contemporaneous travel data (12% MDR, 60% CipNS, from total n=25 isolated 2015–2019).
 
@@ -370,7 +1195,7 @@ The only other country represented by ≥10 sequenced isolates each from multipl
 
 ## Discussion
 
-## Strengths and limitations
+### Strengths and limitations
 
 This study presents the most comprehensive genomic snapshot of Typhi to date, with 12,965 high-quality genomes originating from 110 countries in 21 world regions. The consortium model provides improved consistency and completeness of source data aggregated from 77 laboratories and 66 unique studies. Our dataset also includes 1290 novel genomes sequenced by public health laboratories that would not otherwise have been published, including travel data from countries not previously represented in published Typhi genomics studies (e.g. El Salvador, Guatemala, Haiti, Mexico, and Peru). However, it is a post hoc analysis of isolates that were cultured in different contexts (including routine diagnostics, as well as study settings where culture would not normally be undertaken) and sequenced for different reasons (including retrospective studies, outbreak investigations, and routine surveillance). The study therefore has important limitations, most notably the scarcity of genomic data from many countries and world regions where typhoid is believed to be endemic (GBD 2019 Antimicrobial Resistance Collaborators, 2022), including Northern and Middle Africa, Western Asia, as well as Central and South America (Figures 1—3, Figure 1—figure supplements 2–4, Figure 2—figure supplements 1–3, Figure 3—figure supplement 1). These genomic data gaps reflect an underlying lack of routine blood culture or sustained blood-culture surveillance, and limited resources and expertise in many settings (Ikhimiukor et al., 2022b; Iskandar et al., 2021). In addition, public health authorities may be disincentivized to generate, analyse, and publish genomic data; we hope that this analysis strengthens the case for data generation and sharing for public good. Substantial investments have been made in recent years to improve and expand microbiological surveillance capacity in some low- and middle-income countries, but major regional surveillance gaps remain. It is therefore important to maximise information recovery from available data sources, especially WGS, which provides data on the emergence and spread of AMR variants. While the inference of AMR phenotype from WGS is currently highly reproducible and accurate for Typhi (Argimón et al., 2021b; Chattaway et al., 2021), continued phenotypic antimicrobial susceptibility testing remains crucial to monitor for emerging mechanisms and to guide changes in empiric therapy.
 
@@ -378,13 +1203,13 @@ For now, routine sequencing of travel-associated Typhi infections diagnosed in h
 
 Another key limitation stemming from the post hoc nature of this study is that it is hard to assess how representative the prevalence estimates are for a given region/country and timeframe. The GTGC has developed new source/metadata standards for Typhi (see Methods), that include information on the purpose of sampling, which were completed by the original owners of each dataset (data available in Supplementary file 2). Such ‘purpose-of-sampling’ fields are currently lacking from metadata templates used for submission of bacterial genomes to the public sequencing archives (e.g. NCBI, ENA), and our approach was modelled on that established for sharing of SARS-CoV-2 sequence data, designed by the PHA4GE consortium (Griffiths et al., 2022). In this study, the purpose-of-sampling information was used to identify the subset of genome data that could be reasonably considered to be representative of national annual trends in genotype and AMR prevalence for public health surveillance purposes (n=9478 genomes post 2010; Figures 1—3). These originate mainly from local typhoid surveillance studies (59%), or routine diagnostics/surveillance capturing locally acquired (19%) and travel-associated (24%) infections. The comparisons of estimates for a given country based on different sources of genomes (Figures 6–7, Figure 6—figure supplements 1–2) are reassuring that the general scale and trends of AMR prevalence are reliable. The genome-based estimates are also in broad agreement with available phenotypic prevalence data on AMR in Typhi (Browne et al., 2020; Kariuki et al., 2015), although systematic aggregation of susceptibility data is limited. Both phenotypic and genomic analyses necessarily reflect blood-culture-confirmed cases, which may be biased towards more resistant infections resulting in overestimation of AMR prevalence. Notably, the genome data adds an additional layer of information on resistance mechanisms and the emergence and spread of lineages or variants. Importantly, our study clearly shows that, whilst much attention has been given to the emergence and spread of drug-resistant H58 Typhi, other clones predominate outside of Southern Asia and Eastern Africa (Figure 1) and can be associated with CipNS (Figure 2—figure supplements 3–4), azithromycin (Figure 6), or ceftriaxone (Table 3), the drugs currently recommended by the World Health Organization as first choice treatment for enteric fever (World Health Organization, 2022).
 
-## AMR
+### AMR
 
 Our data demonstrate that CipNS is emerging or established in all regions except Melanesia (here represented by n=35 genomes from Fiji and Papua New Guinea, mainly from 2010, although more recent reports support a lack of CipNS in Fiji [Davies et al., 2022; Getahun Strobel et al., 2019]; see Figure 2—figure supplement 1). For countries with sufficient data to assess (≥50 genomes), CipNS was emerging or established in all countries except Ghana (Figure 2, Figure 3—figure supplement 1), with no evidence of declining prevalence (Figure 3, Figure 3—figure supplement 1). A diverse range of genotypes and QRDR mutations are involved (Figure 2—figure supplements 3–4), likely reflecting the lack of fitness cost associated with these mutations (Baker et al., 2013). That QRDR mutations are so widespread is highly concerning, as infections with CipNS strains can take longer to resolve, and full clinical resistance can emerge relatively easily against this background, through acquisition of either a mobile qnr gene (as occurred in 4.3.1.1.P1 in Pakistan) or additional QRDR mutations (as occurred in 4.3.1.2.1 in India). Notably, the data suggest that CipR typhoid is now a well-established problem across Southern Asia and is emergent in Chile, Mexico, and South Africa (Figures 2 and 3, Figure 2—figure supplement 1, Figure 3—figure supplement 1). A recent study estimating national annual antibiotic consumption highlighted differences in rates of fluoroquinolone usage between regions and countries, which could potentially drive these differences in resistance prevalence (Browne et al., 2021). The highest rates of fluoroquinolone consumption were estimated in South Asian countries, rising from 1.67 defined daily doses (DDD) per 1000 per day in 2000 to 2.81 DDD/1000/day in 2010 and 2.94 DDD/1000/day in 2018 (see https://www.tropicalmedicine.ox.ac.uk/research/oxford/microbe/gram-project/antibiotic-usage-and-consumption). Fluoroquinolone consumption was also estimated to increase substantially in Latin America, rising from 0.64 DDD/1000/day in 2000 to 1.85 DDD/1000/day in 2010 and 2.26 DDD/1000/day in 2018. Our data show that the highest incidence of CipR burden is associated with four main variants (Figure 2—figure supplement 5). In Pakistan, India, and Bangladesh, it is associated with locally emerged variants; however, the relatively high burden in Nepal is associated with variants acquired from India (Britto et al., 2018; Pham Thanh et al., 2016a). In other regions, CipR burden is low and so far linked mainly to the spread of 4.3.1.2.1 (Britto et al., 2020; da Silva et al., 2022) out of India (Britto et al., 2020; da Silva et al., 2022), plus occasional de novo emergence of resistant variants, which show no evidence of geographical spread (Figure 2—figure supplement 5). However, the high rates of CipNS in Kenya (53%) and Nigeria (40%) are concerning, especially given the increasing usage of fluoroquinolones in these countries (estimated 2.1 DDD/1000/day in 2018 in Kenya and 2.76 DD/1000/day in Nigeria) (Browne et al., 2021), which could potentially drive local emergence and spread of CipR.
 
 While resistance to azithromycin and ceftriaxone have been detected (Table 3, Figures 4—6, Figure 2—figure supplements 1–2, Figure 3—figure supplement 1), their prevalence remains low and, with the exception of XDR 4.3.1.1.P1, clonal expansion of resistant variants has not been observed. To our knowledge, there are no data reported on the fitness cost of acrB mutations or CefR plasmids in Typhi; however, the genomic evidence suggests a higher fitness cost compared with QRDR mutations, providing further support for the use of ceftriaxone or azithromycin over ciprofloxacin as we work to introduce preventative measures. Most instances of ESBL-gene carriage in Typhi (conferring CefR phenotype) have been short-lived (Table 3), suggesting selection against the acquisition of new ESBL genes or plasmids. The expansion and dominance of the XDR 4.3.1.1.P1 genotype in Pakistan is obviously concerning (Figures 4 and 6, Figure 2—figure supplement 3a, Figure 3—figure supplement 1); however, despite circulating at high prevalence in Pakistan for more than 5 years, the strain remains azithromycin-susceptible. There is also limited evidence of local transmission of 4.3.1.1.P1 in other countries; however, most countries near Pakistan have limited data available. A short local outbreak of XDR 4.3.1.1.P1 was reported in China, linked to contamination of an apartment block’s water (Wang et al., 2022) and non-travel-associated cases have been reported in the USA (Hughes et al., 2021). Notably, a CefR+CipR lineage of 4.3.1.2.1 that appears to be well established in Mumbai, India, has been isolated only occasionally since 2015 (Argimón et al., 2021b; Chattaway et al., 2021; Ingle et al., 2021; Jacob et al., 2021; Table 3); however, this is the only example of persistence of a CefR strain besides 4.3.1.1.P1, and there is no evidence it has yet spread outside Mumbai. We hypothesise that the lack of widespread dissemination of 4.3.1.1.P1 and ESBL-positive 4.3.1.2.1 so far may be due to the fitness cost imposed by the associated plasmids (~85 Kbp IncY plasmid in 4.3.1.1.P1 [Klemm et al., 2018]; ~43 Kbp IncX3 plasmid in 4.3.1.2.1 [Argimón et al., 2021b]). The temporal trend data on MDR prevalence and IncHI1 plasmids (Figure 3—figure supplement 2) suggest that migration of the MDR locus from the plasmid to the chromosome may have mitigated the fitness cost associated with plasmid-borne MDR. The same may be true for ESBL genes, that is, the movement of the ESBL locus from the plasmid to the chromosome (as has recently been reported in 4.3.1.1.P1; Nair et al., 2021) may result in a fitter CefR or XDR variant that can spread more easily. Our data show that acrB mutations are occurring spontaneously and independently in multiple locations across a variety of genetic backgrounds (Figure 5). While they are still not prevalent, increased use of azithromycin through public health programmes (e.g. trachoma elimination) as well as widespread misuse of azithromycin to treat SARS-CoV-2 infections and use of azithromycin as first-line therapy for typhoid-like illness may lead to increased selection pressure. It will therefore be important to maintain and expand genomic surveillance, particularly in typhoid endemic countries where azithromycin is used widely. It is also notable that, while they are rare overall, acrB mutations have already arisen in two of the most common CipR lineages (4.3.1.2 and 4.3.1.3.Bdq); this relatively frequent co-occurrence warrants continued monitoring and investigation. While we did not detect the mobile AziR gene mphA, it is circulating in other S. enterica serovars (Nair et al., 2016; Tack et al., 2022) and other enteric bacteria that share plasmids with Typhi (including the human-specific Shigella; Baker et al., 2018), providing another potential mechanism for emergence of AziR in Typhi.
 
-## Applications of genomic surveillance for typhoid fever control
+### Applications of genomic surveillance for typhoid fever control
 
 We are at a pivotal stage in the history of typhoid control. Wider access to clean water and improved sanitation have led to a major reduction in global incidence of typhoid fever, which has also been reflected in declining incidence of other enteric diseases (Steele et al., 2016). This should continue but will require sustained investment from national and local governments and thus remains a long-term objective. In the short to medium term, widespread use of TCVs can help to further reduce global incidence of typhoid fever. The WHO has prequalified two TCVs and recommended their use in endemic countries, as well as settings where a high prevalence of AMR Typhi has been reported (World Health Organization, 2018). Gavi, the Vaccine Alliance, has committed funds to support the procurement and distribution of TCVs in typhoid endemic countries (Gavi: The Vaccine Alliance, 2023a; Gavi: The Vaccine Alliance, 2023b). Five countries have undertaken Gavi-supported national introductions (Pakistan, Liberia, Zimbabwe, Nepal, Malawi) and one country has self-financed a national introduction (Samoa) (Neuzil, 2020; Sikorski, 2020). In Pakistan and Zimbabwe, TCV introduction was stimulated by the occurrence of AMR Typhi outbreaks in major urban centres, highlighting that the case for prevention can be stronger when curative therapy is less available. Additional support is likely required to inform TCV decision-making in other typhoid endemic countries, particularly where burden and AMR data are scarce.
 

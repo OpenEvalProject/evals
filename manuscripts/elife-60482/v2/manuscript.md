@@ -36,27 +36,382 @@ Here we determined the structure of the E. coli 70S ribosome to a global resolut
 
 ## Results
 
-## Overall map quality
+### Overall map quality
 
 We determined the structure of the E. coli 70S ribosome in the classical (non-rotated) state with mRNA and tRNAs bound in the aminoacyl-tRNA and peptidyl-tRNA sites (A site and P site, respectively). Partial density for exit-site (E-site) tRNA is also visible in the maps, particularly for the 3’-terminal C75 and A76 nucleotides. Our final maps were generated from two 70S ribosome complexes that were formed separately using P-site tRNAfMet that differed only by being charged with two different non-amino acid monomers (see Materials and methods). In both complexes, we used the same mRNA and A-site Val-tRNAVal. Both complexes yielded structures in the same functional state, with similar occupancy of the tRNAs. As neither A-site nor P-site tRNA 3’-CCA-ends were resolved in the individual cryo-EM maps, we merged the two datasets for the final reconstructions (Figure 1—figure supplement 1). After Ewald sphere correction in RELION (Zivanov et al., 2018), global resolution of the entire complex reached 1.98 Å resolution by GS-FSC, with local resolution reaching 1.8 Å (Figure 1A, Figure 1—figure supplement 2, Table 1). The global resolution reached 2.04 Å using the map-to-model FSC criterion (Figure 1—figure supplement 2). We also used focused refinement of the large (50S) and small (30S) ribosomal subunits, and further focused refinements of smaller regions that are known to be conformationally flexible, to enhance their resolution (Figure 1—figure supplement 3; von Loeffelholz et al., 2017). In particular, focused refinement of the 30S subunit improved its map quality substantially, along with its immediate contacts to the 50S subunit and the mRNA and tRNA anticodon stem-loops. Additional focused refinement of the central protuberance (CP) in the 50S subunit, the 30S head domain, and the 30S platform aided in model building and refinement. In the following descriptions, maps of specific ribosomal subunits or domains refer to the focused-refined maps. Details of the resolutions obtained are given in Figure 1—figure supplements 2–3 and Tables 2–3.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cutaway view through the local resolution map of the 70S ribosome reconstruction. (B) Base pair density in the cores of the 30S (left) and 50S (right) ribosomal subunits. Examples demonstrate the overall high resolution of base pairs and nearby solvation and Mg2+ sites. B factors of −15 Å2 and −10 Å2 were applied to the RELION post-processed 50S subunit and 30S subunit head-focused maps, respectively. (C) Nucleotide ribose in the core of the 30S subunit (left) and 50S subunit (right). A B factor of −10 Å2 was applied to the 30S subunit density after post-processing. (D) Cryo-EM density of the 50S subunit showing the polyamine spermidine.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The number of particles at each stage is shown, as well as the final resolutions as defined by half-map FSCs (cutoff of 0.143).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Half-map FSC curve for the 70S ribosome is shown. The ‘gold-standard’ cutoff value for resolution (0.143) is indicated. (B) The map-to-model FSC curve for the 70S ribosome, with an overall resolution indicated at an FSC value of 0.5.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Local resolution of the 30S and 50S subunits. Brackets indicate regions masked for further focused refinement. 16S rRNA helix h44 and 23S rRNA helices H34 and H69 are also labeled. (B) Half-map FSC curves for focused-refined maps of the 50S subunit, 30S subunit, 50S central protuberance, 30S subunit head domain, and 30S subunit platform are shown. The ‘gold-standard’ cutoff value for resolution (0.143) is indicated in each graph. (C) The map-to-model FSC curves for the focused-refined maps of the 50S subunit, 30S subunit, 50S central protuberance, 30S subunit head domain, and 30S subunit platform are shown.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Examples include magnesium ions with different levels of direct coordination to the rRNA or proteins. The fully-hydrated Mg2+ is located near 23S rRNA nucleotide A973.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Post-transcriptionally modified nucleotides and post-translationally modified amino acids in the 30S subunit. The density for m7G527 and mSAsp89 is contoured at a lower level to show the presence of the modifications. (B) Post-transcriptionally modified nucleotides and post-translationally modified amino acids in the 50S subunit. In panel A, nucleotides m7G527 and m62A1519 appear hypomodified, when compared to m7G2069 in 23S rRNA, and when compared to other methylated nucleobases and m62A1518 in 16S rRNA.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Both m7G527 (light purple) and β-methylthio-Asp89 in uS12 (pink) appear hypomodified based on the cryo-EM map contour level required to enclose adjacent atoms and residues.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Map around nucleotides C2443, C2442, and U2441 of the 50S subunit in a reconstruction from frames 1–2 of the exposure, corresponding to the first ~2 electrons per Å2. The same nucleotides are shown for the first three frames (~3 electrons per Å2) (B) and the final 50S-focused, Ewald sphere-corrected map with all frames included (~40 electrons per Å2, with dose weighting) (C). Some features persist in all three reconstructions, for instance, the break between C3’ and C4’ in C2443 or between C5’ and O5’ in U2441 (indicated with black triangles). Some features become less connected with longer exposure (e.g. O3’ in C2441, indicated with a white triangle), while others appear improved with longer exposure (e.g. O4’ in C2443 and C2442, indicated with blue triangles).
+
+**Table 1.**
+ Data collection and processing.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Magnification</td>
+      <td>109,160</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Spherical aberration (mm)</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>39.89</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−0.6/−1.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.7118</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>874,943</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>307,495</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>2.02</td>
+    </tr>
+    <tr>
+      <td>Map resolution with Ewald correction (Å)</td>
+      <td>1.98</td>
+    </tr>
+    <tr>
+      <td>FSC threshold (gold-standard)</td>
+      <td>0.143</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Model resolutions for subunits and domains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Without Ewald correction (Å)</th>
+      <th>Ewald sphere corrected (Å)</th>
+      <th>Map sharpening B factor for Ewald (Å2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30S subunit</td>
+      <td>2.15</td>
+      <td>2.11</td>
+      <td>−25.7</td>
+    </tr>
+    <tr>
+      <td>30S subunit head domain</td>
+      <td>2.09</td>
+      <td>2.01</td>
+      <td>−19.7</td>
+    </tr>
+    <tr>
+      <td>30S subunit platform</td>
+      <td>2.12</td>
+      <td>2.08</td>
+      <td>−21.8</td>
+    </tr>
+    <tr>
+      <td>50S subunit</td>
+      <td>1.92</td>
+      <td>1.9</td>
+      <td>−25.1</td>
+    </tr>
+    <tr>
+      <td>50S subunitcentral protuberance</td>
+      <td>2.28</td>
+      <td>2.26</td>
+      <td>−21.5</td>
+    </tr>
+    <tr>
+      <td>70S ribosome</td>
+      <td>2.06</td>
+      <td>2.04</td>
+      <td>−29.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Map-vs-model FSC with threshold = 0.5._
+
+**Table 3.**
+ Model refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model component</th>
+      <th>70S ribosome</th>
+      <th>30S subunit</th>
+      <th>50S subunit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model resolution, Ewald-corrected map (Å)</td>
+      <td>2.04</td>
+      <td>2.11</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>FSC threshold (map-vs.-model)</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−29.5</td>
+      <td>−25.7</td>
+      <td>−25.1</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>non-hydrogen atoms</td>
+      <td>149356</td>
+      <td>54550</td>
+      <td>91592</td>
+    </tr>
+    <tr>
+      <td>Mg2+ ions</td>
+      <td>309</td>
+      <td>93</td>
+      <td>218</td>
+    </tr>
+    <tr>
+      <td>Zn2+ ions</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>polyamines</td>
+      <td>17</td>
+      <td>2</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>waters</td>
+      <td>7248</td>
+      <td>2413</td>
+      <td>4835</td>
+    </tr>
+    <tr>
+      <td>ligands (paromomycin)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>23.83</td>
+      <td>28.09</td>
+      <td>20.9</td>
+    </tr>
+    <tr>
+      <td>protein</td>
+      <td>24.42</td>
+      <td>28.91</td>
+      <td>20.95</td>
+    </tr>
+    <tr>
+      <td>waters</td>
+      <td>20.66</td>
+      <td>17.94</td>
+      <td>22.02</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>29.29</td>
+      <td>20.35</td>
+      <td>33.12</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations from ideal values</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond (Å)</td>
+      <td>0.006</td>
+      <td>0.005</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Angle (°)</td>
+      <td>0.952</td>
+      <td>0.838</td>
+      <td>0.997</td>
+    </tr>
+    <tr>
+      <td>Molprobity all-atom clash score</td>
+      <td>7.34</td>
+      <td>7.12</td>
+      <td>7.02</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96</td>
+      <td>95.66</td>
+      <td>96.26</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.87</td>
+      <td>4.17</td>
+      <td>3.65</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.13</td>
+      <td>0.17</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>RNA validation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Angles outliers (%)</td>
+      <td>0.02</td>
+      <td>0.009</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Sugar pucker outliers (%)</td>
+      <td>0.46</td>
+      <td>0.39</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>Average suiteness</td>
+      <td>0.579</td>
+      <td>0.586</td>
+      <td>0.583</td>
+    </tr>
+  </tbody>
+</table>
+
 The high resolution indicated by the FSC curves is supported by several visual features observable in the maps, including holes in many aromatic rings and riboses, as well as ring puckers, the directionality of non-bridging phosphate oxygens in ribosomal RNA, and numerous well-resolved ions, water molecules, and small molecules (Figure 1B–D, Figure 1—figure supplement 4). The maps also reveal known post-transcriptional and post-translational modifications of ribosomal RNA and proteins in detail (Figure 1—figure supplement 5, Figure 1—figure supplement 6), many of which are as previously described (Fischer et al., 2015; Noeske et al., 2015; Polikanov et al., 2015; Stojković et al., 2020). As seen in other ribosome structures, elements of the ribosome at the periphery are less ordered, including the uL1 arm, the GTPase activating center, bL12 proteins, and the central portion of the A-site finger in the 50S subunit (23S rRNA helix H38), as well as the periphery of the 30S subunit head domain and spur (16S rRNA helix h6). The resolution of the maps for the elbow and acceptor ends of the P-site and A-site tRNAs is also relatively low, likely as a result of poor accommodation of the unnatural substrates used.
 
-## High-resolution structural features of the 30S ribosomal subunit
+### High-resolution structural features of the 30S ribosomal subunit
 
 The 30S ribosomal subunit is highly dynamic in carrying out its role in the translation cycle (Munro et al., 2009). Previously published structures demonstrate that even in defined conformational states of the ribosome, the 30S subunit exhibits more flexibility than the core of the 50S subunit. Furthermore, the mass of the 50S subunit dominates alignments in cryo-EM reconstructions of the 70S ribosome. Solvation of the 30S subunit has not been extensively modeled, again owing to the fact that it is generally more flexible and less well-resolved than the 50S subunit, even in available high-resolution structures (Noeske et al., 2015; Polikanov et al., 2015). Using focused-refined maps of the 30S subunit, we achieved the resolution necessary for in-depth chemical analysis of key contacts to mRNA and tRNAs, the 50S subunit, and to generate more complete models of 30S subunit components, Mg2+ ion positions, and solvation (Figure 2—figure supplement 1).
 
-## mRNA and tRNA interactions with the 30S ribosomal subunit
+### mRNA and tRNA interactions with the 30S ribosomal subunit
 
 The 30S ribosomal subunit controls interactions of tRNAs with mRNA and helps maintain the mRNA in the proper reading frame. The present structure reveals the interactions of the 30S subunit with mRNA and tRNA in the A and P sites including solvation. The tight binding of tRNA to the P site (Lill et al., 1986) is reflected in extensive direct contacts between the tRNA anticodon stem-loop (ASL) and both the 30S subunit head and platform domains (Figure 2A–D). The C-terminal residues Lys129 and Arg130 of protein uS9, which are important for translational fidelity (Arora et al., 2013), form ionic and hydrogen bonding interactions with the nucleotides in the U-turn motif of the P-site ASL, and Arg130 stacks with the base of U33 (Figure 2D). However, the C-terminal tails of ribosomal proteins uS13 and uS19, which come from the 30S subunit head domain and are lysine-rich, are not visible in the map, suggesting they do not make specific contacts with the tRNA when the ribosome is in the unrotated state. Direct interactions between A-site tRNA and the 30S subunit are highly localized to the top of helices h44 and h18 in 16S rRNA and to helix H69 in 23S rRNA (i.e. 16S rRNA nucleotides G530, A1492, and A1493, and 23S rRNA nucleotide A1913). By contrast, contacts between the A-site tRNA and 30S subunit head domain are entirely solvent mediated (Figure 2E) apart from nucleotide C1054, possibly reflecting the weaker binding of tRNA to the A site (Lill et al., 1986) and the need for A-site tRNA conformational dynamics during mRNA decoding (Rodnina et al., 2017).
 
-## Contacts of protein bS21 with the 30S subunit head domain
+![Figure 2.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig2-v2.jpg)
+
+**Figure 2.:** (A) Overall view of P-site tRNA anticodon stem-loop (ASL, cyan), mRNA (red), 16S rRNA nucleotides (light purple), and uS9 residues (gold). (B) Interactions between 30S subunit head nucleotide G1338 with P-tRNA ASL. (C) Interactions between 30S subunit head nucleotide A1339 with P-site ASL. (D) Interactions between P-tRNA ASL and protein uS9. Arg130 is observed stacking with nucleotide U33 of the ASL and forming hydrogen bonds with backbone phosphate groups. (E) Solvation of A-site tRNA near the 30S subunit head domain. A-site tRNA ASL in green, 16S rRNA in light purple, and mRNA in purple-red. Water oxygen atoms in red spheres and Mg2+ in green spheres. Maps shown in panels B–E are from the 30S subunit head-focused refinement.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Solvation of the 30S subunit with solvent oxygen atoms shown as red spheres. (B) Polyamine (gray carbon) and Mg2+ (green) sites in the 30S subunit, shown with metal-coordinating atoms (oxygen in red, nitrogen in blue). Cryo-EM density is shown with a low-pass filter of 8 Å.
+
+### Contacts of protein bS21 with the 30S subunit head domain
 
 Protein bS21, which resides near the path of mRNA on the 30S subunit platform (Held et al., 1973; Marzi et al., 2007; Sashital et al., 2014), is essential in E. coli (Bubunenko et al., 2007; Goodall et al., 2018). Although partial structural models of bS21 have been determined (Fischer et al., 2015; Noeske et al., 2015), structural disorder in this region has precluded modeling of the C-terminus. In the present maps, low-pass filtering provides clear evidence for the conformation of the entire protein chain, including 13 amino acids at the C-terminus that extend to the base of the 30S subunit head domain (Figure 3A). Most of the C-terminal residues are found in an alpha-helical conformation near the Shine-Dalgarno helix formed between the 3’ end of 16S rRNA and the mRNA ribosome binding site (Shine and Dalgarno, 1975), while the C-terminal arginine-leucine-tyrosine (RLY) motif makes close contacts with 16S rRNA helix h37 and nucleotide A1167 (Figure 3B). The arginine and leucine residues pack in the minor groove of helix h37, and the terminal tyrosine stacks on A1167. Multiple sequence alignment of bS21 sequences from distinct bacterial phyla revealed that the RLY C-terminal motif is conserved in bS21 sequences of the Gammaproteobacteria phylum while in Betaproteobacteria, the sibling group of Gammaproteobacteria, bS21 sequences possess a lysine-leucine-tyrosine (KLY) C-terminal motif instead (Figure 3C). Interestingly, such C-terminal extensions (RLY or KLY) are absent in other bacterial phyla (Figure 3—figure supplement 1). Recently, putative homologs of bS21 were identified in huge bacteriophages, which were shown to harbor genes encoding components of the translational machinery (Al-Shayeb et al., 2020). Inspection of sequence alignments reveals that some phage S21 homologs also contain KLY-like motifs (Figure 3C). The presence of phage S21 homologs containing KLY-like motifs is consistent with the host range of these phages (Figure 3C, Supplementary file 1). Other phages with predicted hosts lacking the C-terminal motif in bS21 encode S21 homologs that also lack the motif (Supplementary file 1). Although the C-terminal region of bS21 resides near the Shine-Dalgarno helix, the examination of ribosome binding site consensus sequences in these bacterial clades and the predicted ribosome binding sites in the associated phages do not reveal obvious similarities (Supplementary file 1).
 
-## Post-translational and post-transcriptional modifications in the 30S subunit
+![Figure 3.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig3-v2.jpg)
+
+**Figure 3.:** (A) bS21 C-terminal structure in the 30S subunit head-focused map, with Shine-Dalgarno helical density shown in gray and density for bS21 in rose. Low-pass filtering to 3.5 Å resolution was applied to clarify helical density. 16S rRNA shown in light purple ribbon and bS21 shown in light green. 16S rRNA bases that interact with the RLY motif are shown in stick representation. (B) Closeup of the RLY motif of bS21 and contacts with 16S rRNA h37 and A1167. (C) Protein bS21 sequence alignment near the C-terminus, along with associated phage S21 sequences. Gammaproteobacteria (blue), Betaproteobacteria (green), and phage (red) are shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Sequence alignments of phage S21 homologs (in red) and associated host bacterial clades from (A) Bacteroidetes (orange), (B) The Candidate Phyla Radiation (magenta), (C) Betaproteobacteria (green) and Gammaproteobacteria (blue), (D) Spirochetes (blue-green), and (E) Firmicutes (black). Phage sequences in bold indicate phages with a predicted bacterial host.
+
+### Post-translational and post-transcriptional modifications in the 30S subunit
 
 Ribosomal protein uS11 is a central component of the 30S subunit platform domain and assembles cooperatively with ribosomal proteins uS6 and uS18 (Stern et al., 1988), preceding the binding of bS21 late in 30S subunit maturation (Held et al., 1973; Sashital et al., 2014). Protein uS11 makes intimate contact with 16S rRNA residues in a 3-helix junction that forms part of the 30S subunit E site and stabilizes the 16S rRNA that forms the platform component of the P site (Stern et al., 1988). Remarkably, an inspection of the 30S subunit map uncovered a previously unmodeled isoaspartyl residue in protein uS11, at the encoded residue N119 (Figure 4; see Materials and methods), marking the first identified protein backbone modification in the ribosome. While it has been known that this modification can exist in uS11 (David et al., 1999), its functional significance has remained unclear, and prior structures did not have the resolution to pinpoint its exact location. Conversion of asparagine to isoaspartate inserts an additional methylene group into the backbone (the Cβ position) and generates a methylcarboxylate side chain (Reissner and Aswad, 2003). In the present map, the shapes of the backbone density and proximal residues in the chain reveal the presence of the additional methylene, allowing it the flexibility to pack closely with the contacting rRNA nucleotides (Figure 4A and B). A 30S-focused reconstruction using only early movie frames, in which damage to carboxylates would not be as severe (Marques et al., 2019), shows improved density for the IAS sidechain, albeit at slightly lower resolution overall (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig4-v2.jpg)
+
+**Figure 4.:** (A) Model of isoAsp at residue position 119 in uS11, with nearby residues and cryo-EM density from the 30S subunit platform-focused refinement. Weak density for the carboxylate is consistent with the effects of damage from the electron beam. The asterisk indicates the position of the additional backbone methylene group. (B) Shape complementarity between uS11 and 16S rRNA nucleotides surrounding IsoAsp119. 16S rRNA is shown in light purple and uS11 in orange, with atomistic coloring for the stick model. (C) Sequence logos of conserved amino acids spanning the putative isoAsp residue in all three domains of life.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Frames 1–3 of the acquired movies were used to calculate a 30S focused-refined cryo-EM map. (A) The model of isoaspartate 119 in uS11 and neighboring amino acids is shown in the density. The arrow points to the isoaspartate sidechain density, and the asterisk indicates the position of the additional backbone methylene group. The map-to-model resolution for the 30S subunit in this map was 2.45 Å and GS-FSC resolution was 2.26 Å. (B) An alternative view of isoaspartate sidechain in uS11 (orange) showing interaction with R35 of protein bS21 (green).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Phylogenetic tree of the uS11 ribosomal proteins in eukaryotes, including both cytoplasmic and organelle examples, along with Escherichia coli and the amino acids around the PHNG motif. The maximum likelihood tree was constructed under an LG+G4 model of evolution. Nodes with bootstrap values ≥ 85 are indicated by red circles. Scale bar indicates the average substitutions per site. (B) Sequence conservation in uS11 homologs in different bacterial and archaeal phyla.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Comparisons of published uS11 models (blue) in the archaeal (Nürenberg-Goloub et al., 2020) (A) and eukaryotic (Tesina et al., 2020) ribosomes (B) with models incorporating the IsoAsp modification (yellow-orange), real-space refined into the corresponding published maps. (C) Real-space correlations of models refined into the archaeal 30S subunit cryo-EM map, on a per-residue basis. (D) Real-space correlations of models refined into the eukaryotic ribosome cryo-EM map.
 
 Investigation of residues flanking the isoaspartate in uS11 reveals near-universal conservation in bacteria, chloroplasts, and mitochondria (Figure 4C, Figure 4—figure supplement 2), suggesting that the isoaspartate may contribute to 30S subunit assembly or stability. Consistent with this idea, the isoaspartate allows high shape complementarity including van der Waals contacts and hydrogen bonds between this region of uS11 and the 16S rRNA it contacts, which involves three consecutive purine-purine base pairs in bacteria (Supplementary file 2), and a change in rRNA helical direction that is capped by stacking of histidine 118 in uS11 on a conserved purine (A718 in E. coli; Figure 4B, Supplementary file 2). Strikingly, the sequence motif in bacterial uS11 is also conserved in a domain-specific manner in archaea and eukaryotes (Figure 4C, Figure 4—figure supplement 1), as are the rRNA residues near the predicted isoAsp (Supplementary file 2). Remodeling the isoAsp motifs in maps from recently-published cryo-EM reconstructions of an archaeal 30S ribosomal subunit complex at 2.8 Å resolution (Nürenberg-Goloub et al., 2020) and a yeast 80S ribosome complex at 2.6 Å resolution (Tesina et al., 2020) shows that the isoaspartate also seems to be present in these organisms based on the residue-level correlation between map and model (Figure 4—figure supplement 2). Taken together, the phylogenetic data and structural data indicate that the isoaspartate in uS11 is nearly universally conserved, highlighting its likely important role in ribosome assembly and function.
 
@@ -64,7 +419,7 @@ The E. coli 30S ribosomal subunit has eleven post-transcriptionally modified nuc
 
 Within the 30S subunit platform near the P site, the two dimethylated adenosines–m62A1518 and m62A1519–have also been connected to antibiotic resistance. Although impacting the assembly of the 30S subunit (Connolly et al., 2008) and ribosome function (Sharma and Anand, 2019), loss of methylation of these nucleotides also leads to kasugamycin resistance (Ochi et al., 2009). By contrast, bacteria lacking KsgA, the methyltransferase responsible for dimethylation of both nucleotides, become highly susceptible to other antibiotics including aminoglycosides and macrolides (O’Farrell and Rife, 2012; Phunpruch et al., 2013; Zou et al., 2018). In the present structure, m62A1519 is singly-methylated whereas m62A1518 is fully methylated (Figure 1—figure supplement 5). KsgA fully methylates both nucleotides in in vitro biochemical conditions (O'Farrell et al., 2012), but the methylation status of fully-assembled 30S subunits in vivo has not been determined. The loss of a single methylation of m62A1519, observed here for the first time, could be a mechanism for conferring low-level antibiotic resistance to some antibiotics without appreciably affecting assembly of the 30S subunit or leading to sensitivity to other classes of antibiotics, a hypothesis that could be tested in the future.
 
-## Paromomycin binding in the mRNA decoding site
+### Paromomycin binding in the mRNA decoding site
 
 Aminoglycoside antibiotics (AGAs) are a widely-used class of drugs targeting the mRNA decoding site (A site) of the ribosome, making them an important focus for continued development against antibiotic resistance (Sati et al., 2019). Paromomycin, a 4,6-disubstituted 2-deoxystreptamine AGA (Figure 5A), is one of the best-studied structurally. Structures include paromomycin bound to an oligoribonucleotide analog of the A site at 2.5 Å resolution (Vicens and Westhof, 2001), to the small subunit of the T. thermophilus ribosome at 2.5 Å resolution (Kurata et al., 2008), and to the full 70S T. thermophilus ribosome at 2.8 Å resolution (Selmer et al., 2006). While the overall conformation of rings I–III of paromomycin is modeled in largely the same way (Figure 5B), the resolution of previous structures did not allow for unambiguous interpretation of ring IV, and only the oligoribonucleotide structural model of the decoding site includes some water molecules in the drug’s vicinity (Vicens and Westhof, 2001). Although ring IV remains the least ordered of the four rings in the present structure, the cryo-EM map of the focus-refined 30S subunit allows high-resolution modeling of the entire molecule and the surrounding solvation for the first time (Figure 5C and D). The conformation of paromomycin in the oligonucleotide structure (Vicens and Westhof, 2001) agrees most closely with the current structure, with ring IV adopting a chair conformation with the same axial and equatorial positioning of exocyclic functional groups. However, the N6’’’ group in the present structure points in the opposite direction and forms multiple contacts with the backbone phosphate groups of G1489 and U1490 (Figure 5D). Tilting of ring IV in the present model also positions N2’’’ and O3’’’ to make contacts with the G1405 and A1406 phosphate groups, respectively. The paromomycin models in the previous structures of the 30S subunit and 70S ribosome differ further by modeling ring IV in the alternative chair conformation, which also breaks the contacts observed here. We do not see paromomycin bound in H69 of the 50S ribosomal subunit, a second known AGA binding site, consistent with prior work indicating that binding of aminoglycosides to H69 may be favored in intermediate states of ribosomal subunit rotation (Wang et al., 2012; Wasserman et al., 2015).
 
@@ -72,7 +427,7 @@ Aminoglycoside antibiotics (AGAs) are a widely-used class of drugs targeting the
 
 **Figure 5.:** (A) Chemical structure of paromomycin (PAR) with ring numbering. (B) Comparison of paromomycin conformations in different structures. Paromomycin from three prior structural models (Kurata et al., 2008; Selmer et al., 2006; Vicens and Westhof, 2001), shown in yellow, dark pink, and light blue, respectively, superimposed with the present model of paromomycin, shown in pink. The binding pocket formed by 16S rRNA is shown in light purple. (C) Overall positioning of PAR within the binding site including solvation. (D) Paromomycin ring IV contacts to the phosphate backbone in 16S rRNA helix h44. Dashed lines denote contacts within hydrogen-bonding distance. The map was blurred with a B factor of 10 Å2.
 
-## Ribosomal subunit interface
+### Ribosomal subunit interface
 
 The ribosome undergoes large conformational changes within and between the ribosomal subunits during translation, necessitating a complex set of interactions that maintain ribosome function. Contacts at the periphery of the subunit interface have been less resolved in many structures, likely due to motions within the ribosome populations. Additionally, some key regions involved in these contacts are too conformationally flexible to resolve in structures of the isolated subunits. In the present structure of the unrotated state of the ribosome, with tRNAs positioned in the A site and P site, improvement of maps of the individual ribosomal subunits and smaller domains within the subunits help to define these contacts more clearly. Helix H69 of the 50S subunit, which is mostly disordered in the isolated subunit, becomes better defined once the intact ribosome is formed. The 23S rRNA stem-loop closed by H69 is intimately connected to the 30S subunit at the end of 16S rRNA helix h44 near the mRNA decoding site and tRNA binding sites in the ribosome. During mRNA decoding, the RNA loop closing H69 rearranges to form specific interactions with the A-site tRNA (Selmer et al., 2006). The stem of H69 also compresses as the 30S subunit rotates during mRNA and tRNA translocation, thereby maintaining contacts between the 30S and 50S subunits (Dunkle et al., 2011). In the present reconstructions, helix H69 seems conformationally more aligned to the 30S subunit than the 50S subunit, as the cryo-EM density for H69 is much better defined in the map of the 30S subunit compared to the map of the 50S subunit.
 
@@ -82,17 +437,41 @@ The loop comprising 23S rRNA nucleotides G713-A718 closing helix H34 forms an ad
 
 **Figure 6.:** (A) Interaction of the C-terminus of uS15 (light blue) with 23S rRNA nucleotides 713–715 (purple). The 30S subunit cryo-EM map is shown with a B factor of 20 Å2 applied. (B) Interaction between uS13 (salmon) and the A-site finger hairpin loop nucleotide C888 in the 50S subunit (purple). A B factor of 10 Å2 was applied to the head-focused map.
 
-## High-resolution structural features of the 50S ribosomal subunit
+### High-resolution structural features of the 50S ribosomal subunit
 
 The core of the 50S subunit is the most rigid part of the ribosome, which has enabled it to be modeled to a higher resolution than the 30S subunit, historically and in the present structure. In the present 70S ribosome and 50S subunit reconstructions, which have global map-to-model resolutions of 2.04 Å and 1.90 Å, respectively, the resolution of the core of the 50S subunit reaches 1.8 Å (Figure 1, Figure 1—figure supplement 3A, Table 2), revealing unprecedented structural details of 23S rRNA, ribosomal proteins, ions, and solvation (Figure 1—figure supplement 4, Figure 1—figure supplement 5, Figure 7—figure supplement 2). The resulting maps are also superior in the level of detail when compared to maps previously obtained by X-ray crystallography (Noeske et al., 2015; Polikanov et al., 2015), which aided in improving models of high-resolution chemical features like backbone dihedrals in much of the rRNA, non-canonical base pairs and triples, arginine side-chain rotamers, and glycines in conformationally constrained RNA-protein contacts. The density also enabled modeling of thousands of water molecules, dozens of magnesium ions, and polyamines (Figure 1—figure supplement 4, Figure 7—figure supplement 2, Table 3) The present model now even allows for comparison of ribosome phylogenetic conservation to the level of solvent positioning. For example, water molecules and ions with conserved positions in the peptidyl transferase center (PTC) can be seen in comparisons of different bacterial and archaeal ribosome structures, even when solvation was not included in the deposited models (Halfon et al., 2019; Polikanov et al., 2015; Schmeing et al., 2005; Figure 7). The central protuberance (CP) of the 50S subunit, which contacts the P-site tRNA and the head of the 30S subunit, is dynamic, however, is well-resolved with focused refinement, here reaching a resolution of 2.13 Å by GS-FSC and 2.26 Å in map-to-model FSC comparisons (Figure 1—figure supplement 3). The improved resolution of the CP aided in modeling ribosomal proteins uL5 and bL31A, as well as the CP contact to P-site tRNA.
 
-## Breaks in RNA backbone EM density
+![Figure 7.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig7-v2.jpg)
+
+**Figure 7.:** Comparison of solvation in the PTC near E. coli nucleotide G2447 to that in phylogenetically diverse 50S subunits. Solvent molecules conserved in bacterial ribosomes from E. coli, S. aureus, and T. thermophilus (Halfon et al., 2019; Polikanov et al., 2015) and in the archaeal 50S subunit from H. marismortui (Schmeing et al., 2005) are colored red. Water molecules conserved in three of four structures are colored yellow. Mg2+ is shown in green. Asterisk (*) denotes density modeled as K+ in the H. marismortui 50S subunit structure.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The map-to-model FSC curves calculated with the map from Stojković et al., 2020 (EMD-20353) against the associated model (orange; PDB: 6PJ6) and the 50S model presented here (blue). (B) The map-to-model FSC curves calculated for the map and model from Halfon et al., 2019 (EMD-10077; PDB: 6S0Z). (C) The map-to-model FSC curves were calculated with the map from Pichkur et al., 2020 (EMD-10655) against the associated model (orange; PDB: 6XZ7) and the 50S model presented here (blue).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Water molecules modeled in the 50S subunit are shown as red spheres (oxygen atoms) in the outline of the map. The view is from the 30S subunit interface side, with approximate locations of uL1 and bL12 (disordered in the structure) shown. (B) Polyamine (gray carbons) and Mg2+ (green) sites in the 50S subunit, shown with metal-coordinating atoms (oxygen in red, nitrogen in blue, and carbons in violet, ivory, cyan). Cryo-EM density is shown with a low-pass filter of 8 Å.
+
+### Breaks in RNA backbone EM density
 
 Despite the overall high resolution of the 50S subunit core, there are a number of regions where the RNA backbone density shows relatively poor connectivity (Figure 1—figure supplement 7). In some cases, linkages between the ribose and phosphate groups become weakly visible or broken, with the phosphate group having an overall more rounded appearance than in cases where density is strong throughout the backbone. In some cases, breaks in the ribose ring are observed. Our initial impression was that this may be indicative of damage from the electron beam. However, reconstructions using the first two or three frames (corresponding to the first ~2–3 e-/Å2 in the exposure) show similar patterns of weak or broken density in these regions (Figure 1—figure supplement 7). This suggests that RNA conformational flexibility rather than radiation damage may be responsible for the broken density.
 
-## Backbone modification in ribosomal protein uL16
+### Backbone modification in ribosomal protein uL16
 
 Details of post-transcriptional and post-translational modifications are also clear in the 50S subunit maps (Figure 1—figure supplement 5). Surprisingly, the post-translationally modified β-hydroxyarginine at position 81 in uL16 (Ge et al., 2012) is followed by unexplained density consistent with a thiopeptide bond between Met82 and Gly83 (Figure 8A). Adjusting the contour level of the map shows map density for the modified atom similar to that of the sulfur in the adjacent methionine and nearby phosphorus atoms in the RNA backbone, in contrast to neighboring peptide oxygen atoms. In the other cryo-EM maps of the 50S subunit (Pichkur et al., 2020; Stojković et al., 2020), the density for the sulfur in the thioamide is not visible or barely visible (Figure 8—figure supplement 1). Notably, the mass for E. coli uL16 has been shown to be 15328.1 Da and drops to 15312.1 Da with loss of Arg81 hydroxylation (Ge et al., 2012). However, this mass is still +30.9 more than the encoded sequence (15281.2 Da, Uniprot P0ADY7). In E. coli uL16 is also N-terminally methylated (Brosius and Chen, 1976), leaving 16 mass units unaccounted for, consistent with the thiopeptide we observe in the cryo-EM map. We examined a high-resolution mass spectrometry bottom-up proteomics dataset (Dai et al., 2017) to find additional evidence supporting the interpretation of the cryo-EM map as a thiopeptide. Several uL16 peptides were found across multiple experiments that matched the expected mass shift closer to that of a thiopeptide’s O to S conversion (+15.9772 Da) rather than oxidation (+15.9949), a common modification with a similar mass shift (Figure 8B). Fragmentation spectra localized the mass shift near the Met82-Gly83 bond, further supporting the presence of a thiopeptide (Figure 8C). Taken together, the cryo-EM map of the 50S subunit and mass spectrometry data support the model of a thiopeptide between Met82 and Gly83 in E. coli uL16.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig8-v2.jpg)
+
+**Figure 8.:** (A) Structural model of thioamide between Met82 and Gly83 in uL16 (mint), with the 50S subunit cryo-EM density map contoured at two levels to highlight sulfur and phosphorus atoms. The lower contour level is shown as a gray surface and the higher contour level is shown as fuchsia mesh. 23S rRNA is shown in purple. Asterisk marks the position of the sulfur in the thiocarbonyl. (B) LC-MS/MS data supporting the presence of a thioamide bond between M82 and G83 of uL16 (Dai et al., 2017). Shown are selected uL16 peptides with designated modifications found in the spectral search and their associated experimental masses, theoretical masses, and mass differences. All peptides were found in multiple fractions and replicates of the experiment. The final row shows a hypothetical peptide identical to the first row, except carrying an oxidation modification instead of O to S replacement. (C) Annotated fragmentation spectra from the LC-MS/MS experiment showing a uL16 peptide with a thioamide bond. Peptide is assigned modifications of: oxidation on M, oxidation on R, and a thiopeptide between M and G. Fragmentation ions are annotated with experimental and theoretical m/z ratios.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Structural model of thioamide between Met82 and Gly83 in uL16 (mint), with the cryo-EM density of map EMD-20353 contoured at two levels to highlight sulfur and phosphorus atoms. The lower contour level is shown as a gray surface and the higher contour level is shown as fuchsia mesh. 23S rRNA is shown in purple. The asterisk highlights the position of the sulfur in the thioamide. (B) Structural model of thioamide between Met82 and Gly83 in uL16 (mint), with the cryo-EM density of map EMD-10655 contoured at two levels to highlight sulfur and phosphorus atoms, as in panel (A).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/60482/elife-60482-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Phylogenetic tree of YcaO family members. The maximum likelihood tree was constructed under an LG+F+G4 model of evolution. Scale bar indicates the average substitutions per site. The inner circle shows the organismal distribution, while the outer circle shows neighboring gene patterns. Star indicates the location of E. coli str K-12 substr MG1655. (B) Genes neighboring YcaO in E. coli K-12 substr MG1655.
 
 The enzymes that might be responsible for the insertion of the thioamide in uL16 remain to be identified. E. coli encodes the prototypical YcaO enzyme, which can form thiopeptides but for which no substrate is known (Burkhart et al., 2017). A phylogenetic tree of YcaO family members shows a clear break separating YcaO proteins associated with secondary metabolism into a major branch (Figure 8—figure supplement 2A). A sub-grouping in the other major branch includes YcaO family members within Gammaproteobacteria (Figure 8—figure supplement 2A). The examination of genes in close proximity to YcaO across Gammaproteobacteria reveals three genes that form the focA-pfl operon involved in the anaerobic metabolism of E. coli (Figure 8—figure supplement 2B; Sawers and Suppmann, 1992). The combination of its unknown substrate in E. coli, the ability to catalyze thioamidiation in other species, and syntenic conservation in Gammaproteobacteria identify YcaO as a primary candidate for uL16 thioamidation.
 
@@ -118,25 +497,112 @@ Moreover, as it tends to be most convenient to develop tools with the highest re
 
 ## Materials and methods
 
-## Biochemical preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (species)</td>
+      <td>Escherichia coli (MRE600)</td>
+      <td>Gift of Arto Pulk, UC Berkeley</td>
+      <td>ATCC #29417, NCTC #8164</td>
+      <td>Strain with low ribonuclease activity</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>300 mesh R1.2/1.3 UltraAuFoil grids</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Q350AR13A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Schorb et al., 2019</td>
+      <td>RRID:SCR_017293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFind4</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>RRID:SCR_016732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Zivanov et al., 2018</td>
+      <td>Version 3 and 3.1 RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cryosparc</td>
+      <td>Punjani et al., 2017</td>
+      <td>Version 2 RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Liebschner et al., 2019</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Casañal et al., 2020</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Biochemical preparation
 
 E. coli 70S ribosome purification (Travin et al., 2019) and tRNA synthesis, purification, and charging (Ad et al., 2019) were performed as previously described. Briefly, 70S ribosomes were purified from E. coli MRE600 cells using sucrose gradients to isolate 30S and 50S ribosomal subunits, followed by subunit reassociation and a second round of sucrose gradient purification. Transfer RNAs were transcribed from PCR DNA templates using T7 RNA polymerase and purified by phenol-chloroform extraction, ethanol precipitation, and column desalting. Flexizyme ribozymes were used to charge the P-site tRNAfMet with either pentafluorobenzoic acid or malonate methyl ester and the A-site tRNAVal with valine (Goto et al., 2011). Ribosome-mRNA-tRNA complexes were formed non-enzymatically by incubating 10 µM P-site tRNA, 10 µM mRNA, and 100 µM paromomycin with 1 µM ribosomes for 15 min at 37°C in buffer AC (20 mM Tris pH 7.5, 100 mM NH4Cl, 15 MgCl2, 0.5 mM EDTA, 2 mM DTT, 2 mM spermidine, 0.05 mM spermine). Then, 10 µM A-site tRNA was added and the sample was incubated for an additional 15 min at 37°C. Complexes were held at 4°C and diluted to 100 nM ribosome concentration in the same buffer immediately before grid preparation. The mRNA of sequence 5’-GUAUAAGGAGGUAAAAAUGGUAUAACUA-3’ was chemically synthesized (IDT) and was resuspended in water without further purification. The Shine-Dalgarno sequence is shown in bold, and the Met-Val codons are in italics.
 
-## Cryo-EM sample preparation
+### Cryo-EM sample preparation
 
 300 mesh R1.2/1.3 UltraAuFoil grids from Quantifoil with an additional amorphous carbon support layer were glow discharged in a Pelco sputter coater. About 4 µL of each sample was deposited onto grids and incubated for 1 min, then washed in buffer AC with 20 mM NH4Cl rather than 100 mM NH4Cl. Grids were plunge-frozen in liquid ethane using a Vitrobot Mark IV with settings: 4°C, 100% humidity, blot force 6, blot time 3.
 
-## Data acquisition
+### Data acquisition
 
 Movies were collected on a 300-kV Titan Krios microscope with a GIF energy filter and Gatan K3 camera. Super-resolution pixel size was 0.355 Å, for a physical pixel size of 0.71 Å. SerialEM (Schorb et al., 2019) was used to correct astigmatism, perform coma-free alignment, and automate data collection. Movies were collected with the defocus range −0.6 to −1.5 µm and the total dose was 39.89 e-/Å2 split over 40 frames. One movie was collected for each hole, with image shift used to collect a series of 3 × 3 holes for faster data collection (Cheng et al., 2018), and stage shift used to move to the center hole. Based on the 1.2/1.3 grid hole specification, this should correspond to a maximum image shift of ~1.8 μm, although the true image shift used was not measured. The beam size was chosen such that its diameter was slightly larger than that of the hole, that is, >1.2 μm, although we have observed variation in the actual hole size compared to the manufacturer specifications.
 
-## Image processing
+### Image processing
 
 Datasets of 70S ribosome complexes with the two differently charged P-site tRNAs were initially processed separately. Movies were motion-corrected with dose weighting and binned to the recorded physical pixel size (0.71 Å) within RELION 3.0 (Scheres, 2012) using MotionCor2 (Zheng et al., 2017). CTF estimation was done with CTFFind4 (Rohou and Grigorieff, 2015), and micrographs with poor CTF fit as determined by visual inspection were rejected. Particles were auto-picked with RELION’s Laplacian-of-Gaussian method. The 2D classification of particles was performed in RELION, and 4× binned particles were used for all classification steps. Particles were separated into 3D classes in cryoSPARC heterogeneous refinement (Punjani et al., 2017), using an initial model generated from PDB 1VY4 with A-site and P-site tRNAs (Polikanov et al., 2014) low-pass filtered to the default 20 Å resolution, and keeping particles that were sorted into well-resolved 70S ribosome classes. Particles were migrated back to RELION to generate an initial 3D-refined volume (reference low-pass filtered to 60 Å) on which to perform masked 3D classification without alignment to further sort particles based on A-site tRNA occupancy. CTF Refinement and Bayesian polishing were performed in RELION 3.1 before pooling the two datasets together, with nine optics groups defined based on the 3 × 3 groups for image shift-based data collection. The resulting 70S ribosome reconstruction was used as input for focused refinements of the 50S and 30S subunits. We used rigid-body docked coordinates for the 70S ribosome, individual ribosomal subunits or domains (30S subunit head, 50S subunit central protuberance) to define the boundaries of the map regions to be used in the focused refinements. Focused refinement of the central protuberance was performed starting from the 50S subunit-focused refinement reconstruction, and head- and platform-focused refinements started from the 30S subunit focused refinement reconstruction. Ewald sphere correction, as implemented in RELION 3.1 with the single side-band correction (Russo and Henderson, 2018; Zivanov et al., 2018), provided some additional improvements in resolution (Tables 1–2).
 
 In addition to using the 40-frame movies, we used the first three frames corresponding to a ~3 electron/Å2 dose to calculate 3D reconstructions, including focused refinements of the 30S and 50S subunits. The focused-refined map of the 30S subunit had a resolution of 2.45 Å by the map-to-model FSC metric. These maps were used to examine the density for the isoAsp in uS11, which lacked clear density for the side chain in maps reconstructed from the full 40-frame movies. We also used the maps from the initial three frames to examine connectivity in ribose density, to determine if there is visual evidence for the impact of electron damage.
 
-## Modeling
+### Modeling
 
 The previous high-resolution structure of the E. coli 70S ribosome (Noeske et al., 2015) was used as a starting model. We used the ‘Fit to Map’ function in Chimera (Pettersen et al., 2004) to calibrate the magnification of the cryo-EM map of the 50S ribosomal subunit generated here to maximize correlation, resulting in a pixel size of 0.7118 Å rather than the recorded 0.71 Å. Focused-refined maps were transformed into the frame of reference of the 70S ribosome for modeling and refinement, using the ‘Fit to Map’ function in Chimera, and resampling the maps on the 70S ribosome grid. The 50S and 30S subunits were refined separately into their respective focused-refined maps using PHENIX real-space refinement (RSR; Liebschner et al., 2019). Protein and rRNA chains were visually inspected in Coot (Casañal et al., 2020) and manually adjusted where residues did not fit well into the density, making use of B-factor blurred maps where needed to interpret regions of lower resolution. Focused-refined maps on smaller regions were used to make further manual adjustments to the model, alternating with PHENIX RSR. Some parts of the 50S subunit, including H69, H34, and the tip of the A-site finger, were modeled based on the 30S subunit focused-refined map. The A-site and P-site tRNAs were modeled as follows: anticodon stem-loops, 30S subunit focused-refined map; P-site tRNA body, 50S subunit focused-refined map, with a B factor of 20 Å2 applied; A-site tRNA body, 30S subunit focused-refined map and 50S subunit focused-refined map with B factors of 20 Å2 applied; tRNA-ACCA 3’ ends, 50S subunit focused-refined map with B factors of 20–30 Å2 applied. Alignments of uS15 were generated using BLAST (Altschul et al., 1997) with the E. coli sequence as reference. The model for bL31A (E. coli gene rpmE) was manually built into the CP and 30S subunit head domain focused-refined maps before refinement in PHENIX.
 
@@ -146,11 +612,11 @@ Ribosome solvation including water molecules, magnesium ions, and polyamines wa
 
 Along with the individual maps used for model building and refinement, we have also generated a composite map of the 70S ribosome from the focused-refined maps for deposition to the PDB and EMDB for ease of use (however, experimental maps are recommended for the examination of high-resolution features). We made the composite map using the ‘Fit in Map’ and vop commands in Chimera. First, we aligned the unmasked focus-refined maps with the 70S ribosome map using the ‘Fit in Map’ tool. We then used the ‘vop resample’ command to transform these aligned maps to the 70S ribosome grid. After the resampling step, we recorded the map standard deviations as reported in the ‘Volume Mean, SD, RMS’ tool. Then, we added the maps sequentially using ‘vop add’ followed by rescaling the intermediate maps to the starting standard deviation using the ‘vop scale’ command.
 
-## Modeling of isoAsp residues in uS11
+### Modeling of isoAsp residues in uS11
 
 Initial real-space refinement of the 30S subunit against the focused-refined map using PHENIX resulted in a single chiral volume inversion involving the backbone of N119 in ribosomal protein uS11, indicating that the L-amino acid was being forced into a D-amino acid chirality, as reported by phenix.real_space_refine. Of the 10,564 chiral centers in the 30S subunit model, the Cα of N119 had an energy residual nearly two orders of magnitude larger than the next highest deviation. Inspection of the map in this region revealed clear placement for carbonyl oxygens in the backbone, and extra density consistent with an inserted methylene group, as expected for isoAsp. The model of isoAsp at this position was refined into the cryo-EM map using PHENIX RSR, which resolved the stereochemical problem with the Cα chiral center. IsoAsp was also built and refined into models of archaeal and eukaryotic uS11 based on cryo-EM maps of an archaeal 30S ribosomal subunit complex (PDB 6TMF; Nürenberg-Goloub et al., 2020) and a yeast 80S ribosome complex (PDB 6T4Q; Tesina et al., 2020). These models were refined using PHENIX RSR, and real-space correlations by residue calculated using phenix.model_map_cc.
 
-## Phylogenetic analysis of uS11 and its rRNA contacts
+### Phylogenetic analysis of uS11 and its rRNA contacts
 
 All archaeal genomes were downloaded from the NCBI genome database (2618 archaeal genomes, last accessed September 2018). Due to the high number of bacterial genomes available in the NCBI genome database, only one bacterial genome per genus (2552 bacterial genomes) was randomly chosen based on the taxonomy provided by the NCBI (last accessed in December 2017). The eukaryotic dataset comprises nuclear, mitochondrial, and chloroplast genomes of 10 organisms (Homo sapiens, Drosophila melanogaster, Saccharomyces cerevisiae, Acanthamoeba castellanii, Arabidopsis thaliana, Chlamydomonas reinhardtii, Phaeodactylum tricornutum, Emiliania huxleyi, Paramecium aurelia, and Naegleria gruberi).
 
@@ -160,30 +626,30 @@ Ribosomal uS11 genes were detected based on matches to the uS11 Pfam domain (PF0
 
 16S and 18S rRNA genes were identified from the prokaryotic and eukaryotic genomes using the method based on hidden Markov model (HMM) searches using the cmsearch program from the Infernal package (Nawrocki et al., 2009) and fully described in Brown et al., 2015. The sequences were aligned using the MAFFT software.
 
-## Phylogenetic analysis of bS21 and phage S21 homologs
+### Phylogenetic analysis of bS21 and phage S21 homologs
 
 S21 sequences were retrieved from the huge phage database described in Al-Shayeb et al., 2020. Cd-hit was run on the set of S21 sequences to reduce the redundancies (Fu et al., 2012; default parameters; version 4.8.1). Non redundant sequences were used as a query against the database of prokaryotic genomes used for uS11 above using BLASTP (version 2.10.0+; e-value 1e-20; Altschul et al., 1997). Alignment and tree reconstruction were performed as described for uS11 except that we did not perform the alignment trimming step.
 
-## Phylogenetic analysis of YcaO genes
+### Phylogenetic analysis of YcaO genes
 
 Similarly to uS11, the YcaO sequences were identified in prokaryotic genomes based on its PFAM accession (PF02624; Punta et al., 2012) using hmmsearch with an E-value below 0.001 (Eddy, 1998). Amino acid sequences were aligned using the MAFFT software (version v7.453; Katoh and Standley, 2016). Alignment was further trimmed using Trimal (version 1.4.22; --gappyout option; Capella-Gutiérrez et al., 2009). Tree reconstruction was performed using IQ-TREE (version 1.6.12; Nguyen et al., 2015), using ModelFinder (Kalyaanamoorthy et al., 2017) to select the best model of evolution, and with 1000 ultrafast bootstraps (Hoang et al., 2018). The tree was visualized with iTol (version 4; Letunic and Bork, 2019). The three genes downstream and upstream of each YcaO gene were identified and annotated using the PFAM (Punta et al., 2012) and the Kegg (Kanehisa et al., 2016) databases.
 
-## Map-to-model FSC calculations
+### Map-to-model FSC calculations
 
 Masks for each map were generated in two ways. First, to calculate the map-to-model FSC curves for comparisons of the present models with the cryo-EM maps generated here, we used masked maps generated by RELION during postprocessing (Zivanov et al., 2018 ). The effective global resolution of a given map is given at the FSC cutoff of 0.5 in Table 2 and Figure 1—figure supplements 2–3. Second, we used refined PDB coordinates for the 70S ribosome, individual ribosomal subunits or domains (30S subunit head, 50S subunit central protuberance) for comparisons to the 70S ribosome map or focused-refined maps, and to previously published maps and structural models. Masks for each map were generated in Chimera (Pettersen et al., 2004) using the relevant PDB coordinates as follows. A 10 Å resolution map from the coordinates was calculated using molmap, and the surface defined at one standard deviation was used to mask the high-resolution map. For the present models and maps, the effective global resolution of a given map using this second approach was similar or slightly lower than that using the approach in RELION (within a few hundredths of an Å).
 
-## Map-to-model comparisons for other 50S subunit reconstructions (emd_20353, emd_10077)
+### Map-to-model comparisons for other 50S subunit reconstructions (emd_20353, emd_10077)
 
 For the recent E. coli 50S subunit structure (Stojković et al., 2020), we used Chimera to resize the deposited map (emd_20353) to match the dimensions of the maps presented here. Briefly, our atomic coordinates for the 50S subunit were used with the ‘Fit to Map’ function and the voxel size of the deposited map was calibrated to maximize correlation. The resulting voxel size changed from 0.822 Å to 0.8275 Å in linear dimension. After rescaling the deposited map, we used phenix.model_map_cc to compare the map with rescaled atomic coordinates deposited in the PDB (6PJ6) or to the present 50S model, yielding a map-to-model FSC of 0.5 at ~2.5 Å. Similar comparisons of the structure of the Staphylococcus aureus 50S subunit to the deposited map (PDB 6S0Z, emd_10077; Halfon et al., 2019) yielded a map-to-model FSC of 0.5 at 2.43 Å, accounting for a change in voxel linear dimension from 1.067 Å to 1.052 Å. For comparisons to the map and model deposited by Pichkur et al., 2020 (EMD-10655 and PDB 6XZ7), we removed tRNA bodies, the L1 arm, and the GTPase-associated-center coordinates from 6XZ7 since these regions are disordered or missing in the deposited 50S subunit reconstruction.
 
-## Analysis of uL16 mass spectrometry datasets
+### Analysis of uL16 mass spectrometry datasets
 
 Previously published E. coli tryptic peptide mass spectrometry (MS/MS) raw data was used for the analysis (Dai et al., 2017; MassIVE accession: MSV000081144). Peptide searches were performed with MSFragger (Kong et al., 2017) using the default parameters for a closed search with the following exceptions: additional variable modifications were specified on residues R (hydroxylation, Δ mass: 15.9949) and M (thioamide, Δ mass: 15.9772), maximum modifications per peptide set to four, and multiple modifications on a residue were allowed. Spectra were searched against a database of all E. coli proteins plus common contaminants concatenated to a decoy database with all original sequences reversed. Results were analyzed using TPP (Deutsch et al., 2015) and Skyline (Pino et al., 2020).
 
-## Figure preparation
+### Figure preparation
 
 Cryo-EM maps were supersampled in Coot for smoothness. Figure panels showing structural models were prepared using Pymol (Schrödinger) and ChimeraX (Goddard et al., 2018). Sequence logo figures were made with WebLogo 3.7.4 (Crooks et al., 2004). Phylogenetic trees were visualized with iTol (version 4; Letunic and Bork, 2019) and multiple alignments were visualized with geneious 9.0.5 (https://www.geneious.com).
 
-## Data deposition
+### Data deposition
 
 Ribosome coordinates have been deposited in the Protein Data Bank (entry 7K00), maps in the EM Database (entries EMD-22586, EMD-22607, EMD-22614, EMD-22632, EMD-22635, EMD-22636, and EMD-22637 for the 70S ribosome composite map, 70S ribosome, 50S subunit, 30S subunit, 30S subunit head, 30S subunit platform, and 50S subunit CP maps, respectively), and raw movies in EMPIAR (entry EMPIAR-10509).

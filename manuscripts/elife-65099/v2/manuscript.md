@@ -42,11 +42,23 @@ In this study, we attempted to circumvent the above-mentioned person-to-person v
 
 ## Results
 
-## Sleep deprivation program
+### Sleep deprivation program
 
 The awake period started after subjects arrived at the hospital and spent the previous night. During the 34 hr of study, the subjects were kept awake with two researchers and took eight times of Stanford Sleepiness Scales (SSS) evaluations and TMS assessments, and three times of EEG measurements (Figure 1A and B, Figure 1—figure supplement 1). Sleepiness showed an increased after 16 hr (group average SSS scores increased from 2.75 to 4.5), and then a slight decrease after 24 hr (from 4.5 to 3.25) (Figure 1C, Figure 1—figure supplement 2). This decrease in sleepiness agrees with previous sleep deprivation studies (Manganotti et al., 2001), likely due to circadian modulations. Furthermore, consistent with previous reports (Cajochen et al., 1995), EEG showed a stereotypical increase in the power of theta band (4–8 Hz), and a decrease in the alpha band (8–12 Hz) (Figure 1D and E, Figure 1—figure supplement 2). While all brain regions showed consistent global trends, we observed more prominent changes in the occipital areas, consistent with previous studies indicating these areas showed more prominent changes around sleep onsets (Gorgoni et al., 2019; Finelli et al., 2001). We did not observe an increase in the alpha and beta band in frontal regions, a prominent feature associated with sleep onset (Finelli et al., 2001; Marzano et al., 2013), suggesting that the subjects did not fall in and out sleep. In sum, the self-report sleepiness and EEG patterns provided quantitative measurements of the degree of sleepiness in our subjects throughout the study.
 
-## Raw TMS measurements showed weak correlations to sleepiness
+![Figure 1.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematics of study design. All subjects received eight sessions of transcranial magnetic stimulation (TMS) measurements, but only 15 subjects received electroencephalogram (EEG) measurements (Figure 1—figure supplement 1). (B) Locations of EEG electrodes used in the study. Positionings are labeled following the extended international 10–20 system. (C) Measurements of self-report sleepiness using Stanford Sleepiness Scales (SSS). All individuals received eight measurements. Individuals’ scores were showed in gray and averaged responses were plotted in red curve (applied spline interpolation for smooth visualization). Statistical comparisons between sessions are reported in Figure 1—figure supplement 2. (D) Averaged heatmaps of different frequency bands’ powers in EEG data (N = 15). Interpolations between electrodes were calculated using triangulation-based cubic interpolation method. (E) Quantifications of frequency bands’ powers showed in (D) at different timepoints. Average powers among all electrodes were used for plotting. Red dotted plots show averaged SSS (from C). Data are represented as mean ± SD (in shaded areas). Powers at 21 hr and 28 hr are compared with the 4 hr ones using paired t-test with Bonferroni’s correction for multiple comparisons. Statistically significant points were labeled (*p<0.05; **p<0.01; ***p<0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Gender and age of each participant is shown. 23 subjects received five transcranial magnetic stimulation (TMS) protocols (purple group) and 15 subjects received six TMS protocols and electroencephalogram measurements (green group). Ages and genders are balanced in both groups.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A-F) Raw data from all TMS measurements of each subject is plotted with group averages, showing mean ± SD. Related to Figure 2. (G–I) Post-hoc pair-wise comparison from ANOVA for Figures 1C, 2C and E. Multiple comparison is corrected with Bonferroni’s correction. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+### Raw TMS measurements showed weak correlations to sleepiness
 
 We performed TMS stimulation on subjects’ motor cortices on the left hemispheres and measured motor-evoked potentials (MEPs) in first interosseous dorsal (FDI) muscle on the right hand (Figure 2A and B, Table 1). On average, the minimal power necessary for eliciting reliable MEPs decreased after the subjects woke up and mildly increased after 21 hr (Figure 2C). The delay between TMS and MEP followed a similar pattern (Figure 2E). The increase of minimal power and delay time indicates a reduction in excitability with prolonged wakefulness. However, individuals’ data often do not agree with the average trend (Figure 1—figure supplement 2), and correlations between individuals’ sleepiness score and these parameters showed wide ranges of variabilities (Figure 2D and F). The MT (motor response threshold) and MEP latency are influenced by the excitability along the corticospinal tract. In contrast, the pair-pulse protocols reflect characteristics within the cortex. Among four types of pair-pulse protocols (SICF, SICI, ICF, and LICI; Figure 2G, J, M and P), SICI, ICF, and LICI showed strengthening trends on average, yet none were statistically significant (Figure 2H, K, N and Q), nor any showed consistent correlations to SSS (Figure 2I, L, O and R). In summary, raw TMS measurements showed weak correlation with sleepiness on average, with considerable variance among subjects.
 
@@ -54,13 +66,142 @@ We performed TMS stimulation on subjects’ motor cortices on the left hemispher
 
 **Figure 2.:** (A) Position of TMS targeting. (B) Schematics of the TMS study design. The electroencephalogram (EMG) trace showed is for illustrative purpose only. (C) Averaged measurements of motor threshold. Data are represented as mean ± SD (in shaded areas). ANOVA test was applied to test the differences among timepoints; p-value is showed when statistically significant. (D) Distribution of the correlation coefficients between individuals’ sleepiness scores and motor threshold measurements (median in red line, 25% and 75% quantiles in dotted lines). One-sample t-test was used to compare the distribution to 0; p-value is showed when statistically significant. Equivalent to the formats of (C) and (D), later panels show data for motor-evoked potentials latencies (E, F), short interval intracortical facilitations (SICFs) (H, I), short interval intracortical inhibitions (SICIs) (K, L), intracortical facilitations (ICFs) (N, O), and long interval intracortical inhibition (LICI) (Q, R). For the four pair-pulse protocols, a schematic is showed for the respective protocol, (G) SICF, (J) SICI, (M) ICF, and (P) LICI. For all TMS measurements, N = 38 except for LICI (Q, R, N = 15, Figure 1—figure supplement 1). Statistical comparisons between sessions are reported in Figure 1—figure supplement 2.
 
-## Sleepiness states can be mapped to latent dimensions in TMS measurements
+**Table 1.**
+ The result of the Stanford Sleepiness Scales (SSS) and transcranial magnetic stimulation (TMS).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SSS</th>
+      <th>MT (% MSO)</th>
+      <th>MEP latency (ms)</th>
+      <th>SICF</th>
+      <th>ICF</th>
+      <th>SICI</th>
+      <th>LICI</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>38</td>
+      <td>38</td>
+      <td>38</td>
+      <td>38</td>
+      <td>38</td>
+      <td>38</td>
+      <td>15</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td>2.68 ± 0.189</td>
+      <td>0.49 ± 0.02</td>
+      <td>21.67 ± 0.26</td>
+      <td>1.64 ± 0.10</td>
+      <td>1.14 ± 0.09</td>
+      <td>0.49 ± 0.04</td>
+      <td>0.39 ± 0.07</td>
+      <td>0 hr</td>
+    </tr>
+    <tr>
+      <td>1.76 ± 0.122</td>
+      <td>0.45 ± 0.02</td>
+      <td>21.46 ± 0.27</td>
+      <td>1.71 ± 0.13</td>
+      <td>1.29 ± 0.09</td>
+      <td>0.47 ± 0.05</td>
+      <td>0.35 ± 0.07</td>
+      <td>4 hr</td>
+    </tr>
+    <tr>
+      <td>2.26 ± 0.180</td>
+      <td>0.45 ± 0.02</td>
+      <td>2.43 ± 0.25</td>
+      <td>1.72 ± 0.08</td>
+      <td>1.27 ± 0.08</td>
+      <td>0.42 ± 0.04</td>
+      <td>0.31 ± 0.07</td>
+      <td>10 hr</td>
+    </tr>
+    <tr>
+      <td>2.34 ± 0.143</td>
+      <td>0.45 ± 0.02</td>
+      <td>21.48 ± 0.26</td>
+      <td>1.71 ± 0.11</td>
+      <td>1.39 ± 0.08</td>
+      <td>0.39 ± 0.04</td>
+      <td>0.26 ± 0.07</td>
+      <td>16 hr</td>
+    </tr>
+    <tr>
+      <td>3.74 ± 0.149</td>
+      <td>0.47 ± 0.02</td>
+      <td>21.91 ± 0.23</td>
+      <td>1.58 ± 0.08</td>
+      <td>1.46 ± 0.14</td>
+      <td>0.38 ± 0.03</td>
+      <td>0.24 ± 0.07</td>
+      <td>21 hr</td>
+    </tr>
+    <tr>
+      <td>4.50 ± 0.191</td>
+      <td>0.46 ± 0.02</td>
+      <td>21.86 ± 0.26</td>
+      <td>1.73 ± 0.11</td>
+      <td>1.46 ± 0.09</td>
+      <td>0.42 ± 0.03</td>
+      <td>0.25 ± 0.06</td>
+      <td>24 hr</td>
+    </tr>
+    <tr>
+      <td>3.79 ± 0.21</td>
+      <td>0.45 ± 0.02</td>
+      <td>21.66 ± 0.27</td>
+      <td>1.71 ± 0.0.9</td>
+      <td>1.33 ± 0.09</td>
+      <td>0.45 ± 0.04</td>
+      <td>0.31 ± 0.09</td>
+      <td>28 hr</td>
+    </tr>
+    <tr>
+      <td>3.32 ± 0.223</td>
+      <td>0.45 ± 0.02</td>
+      <td>21.62 ± 0.26</td>
+      <td>1.75 ± 0.14</td>
+      <td>1.31 ± 0.10</td>
+      <td>0.46 ± 0.04</td>
+      <td>0.26 ± 0.07</td>
+      <td>34 hr</td>
+    </tr>
+  </tbody>
+</table>
+
+_MT: motor response threshold; MSO: maximal stimulation output; MEP: motor-evoked potential; SICF: short interval intracortical facilitation; ICF: intracortical facilitation; SICI: short interval intracortical inhibition; LICI: long interval intracortical inhibition._
+
+### Sleepiness states can be mapped to latent dimensions in TMS measurements
 
 Considering the individual variability in the TMS measurements, we hypothesized that each subject may have certain intrinsic noise pattern and group averages do not separate these noises from underlying correlation between TMS and sleepiness. In order to explore whether TMS measurements encode sleepiness states, we performed a PLS regression using six TMS parameters as predictors and sleepiness scores as responses (15 subjects, Figure 1—figure supplement 2). When we mapped the non-sleepy states (SSS = 1 or 2, blue dots) and sleepy states (SSS = 5, 6, or 7, red dots) on the first two PLS dimensions, we found that the first dimension showed significant separation between these two states, and a mild-sleepy state (SSS = 3 or 4) showed an intermediate peak (Figure 3A). Interestingly, while the first dimension explained only ~13 % of the total data variance, other PLS dimensions did not show separation of sleepiness states, suggesting that indeed the TMS data contain high variance, and a particular linear combination of the parameters captures the association to the degree of sleepiness. In comparison, similar analysis using the power of different EEG frequency bands from the same subjects showed obvious separation between sleepy states and non-sleepy states, yet the mild sleepiness showed a bimodal distribution, rather than forming an intermediate cluster (Figure 3B). Our results indicated that EEG data exhibits a phasic switch to sleepiness, while TMS data showed a correlation to the degree of sleepiness.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-v2.jpg)
+
+**Figure 3.:** (A) Partial least squares (PLS) regression of TMS measurements to sleepiness scores (15 subjects with eight timepoints each, N = 120 states). The plot shows a scatter plot of each state in the first two PLS dimensions (Stanford Sleepiness Scales [SSS] = 1 or 2 for non-sleepy state, blue dots; SSS = 3 or 4 for mild sleepy state, purple dots; and SSS = 5, 6, or 7 for sleepy state, red dots). The heatmaps show density plots of the blue and red dots. And the distributions along each dimension are plotted on top and right side of the plot. Student’s t-tests were used to compare the distributions between sleepy and non-sleepy states, with p-value indicated if statistically significant. (B) PLS regression of electroencephalogram (EEG) measurements (15 subjects with three timepoints each, N = 45 states), similar to panel (A). (C) Log likelihood of different regression models. Increase in absolute values indicates a worse fit. Dash line indicates the level of full model. All models were compared to the full model using F-test of all four information criteria: Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), log likelihood and deviance; with asterisks showing statistical significance. The red bar indicates the model chosen for later analysis. (D) Mixed-effect linear model fitting results from the training set (15 subjects with eight timepoints each, N = 120 states). Green line shows mean ± SEM of the model predictions. p-Values of each coefficient was showed. (E) Mixed-effect linear model fitting results from the testing set (23 subjects with eight timepoints each, N = 184 states). All coefficients were kept the same with the training set in (D), except allowing a new random effect on intercept for each new subject. p-value was calculated with a F-test of a linear regression between predicted values to reported values to show the slope is significantly different from 0. Inset in (E) shows average performance from fivefold cross-validation compared to shuffled control. (F) Comparison of mixed-effect linear model fittings between TMS and EEG measurements, with balanced dataset (15 subjects with three timepoints each, N = 45 states for both). Heatmaps were calculated by fitting a normal distribution density function with the predicted values at each reported value bin.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) PLS regression of EEG measurements to SSS using only extreme states. Non-sleepy: SSS = 1 or 2; sleepy state: SSS = 5, 6, or 7. Density heatmaps were generated similar to Figure 3. (B) PLS regression of EEG measurements to SSS using only datasets from 11 a.m. (sleep deprived for 4 and 28 hr). After controlling for this circadian effect, EEG data still show obvious separation between non-sleepy and sleepy states.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Partial least squares (PLS) regression of TMS measurements to Stanford Sleepiness Scales (SSS) using matched timepoints. The 7 a.m. and 11 a.m. group showed separation between sleepy and non-sleepy state, but not the 5 p.m. group. (B) Mixed-effect model predictions of hour of the day based on TMS measurements. No significant prediction power is found between TMS measurements and hour of the day.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** CCA analysis using four variables of TMS (motor response threshold [MT], motor-evoked potentials latentcy [MEPL], short interval intracortical inhibition [SICI], and intracortical facilitation [ICF]) and four variables of EEG (delta, theta, alpha, and beta). Four output modes are plotted, and linear correlation is evaluated with a regression of the scatter plots. The Stanford Sleepiness Scales (SSS) of each datapoint is superimposed on the scatter plot.
+
 In order to examine whether the observed correlations between sleepiness and TMS or EEG measurements are due to a confounding effect of circadian modulation, we conducted three groups of paired analyses for datapoints at 7 a.m. (sleep deprived 0 and 24 hr), 11 a.m. (sleep deprived 4 and 28 hr), and 5 p.m. (sleep deprived 10 and 34 hr). The separation between no sleepy and sleepy states remained primarily consistent, except for the 5 p.m. group with TMS measurements (Figure 3—figure supplements 1 and 2). The lack of correlation in the 5 p.m. group could be due to a lack of sufficient variation in the sleepy states in this timepoint. These data indicate that after controlling for the circadian modulation TMS and EEG measurements still correlate sleepiness.
 
-## TMS quantitatively predicts sleepiness
+### TMS quantitatively predicts sleepiness
 
 Based on the conclusion above, we further hypothesized that a mixed-effect model of TMS measurements should be able to predict subjects’ sleepiness, while tolerating the high degree of inter-subject variability. We established a linear full model using data from 15 subjects with all six TMS measurements to predict sleepiness scores (Figure 1—figure supplement 2), without considering any interaction among these measurements, and each subject was given a random effect on intercept. The model showed a statistically significant fit. We then performed backward variable selection based on F-test of the standard model information criterion (Figure 3C, plotting log likelihood as representative), and found that SICF and LICI can be eliminated without reducing the model performance. With the updated model, all four TMS parameters (MT, MEP latency, SICI, and ICF) showed statistically significant coefficients, and the predicted sleepiness showed high correlation to the reported sleepiness (Figure 3D). Using the same coefficients on these four TMS parameters, we predicted the other 23 subjects’ sleepiness (Figure 1—figure supplement 2), allowing a new random effect for each subject. Our prediction showed high degree of correlation to their reported sleepiness (Figure 3E), strongly indicating that these coefficients represent a stable pattern in the TMS that robustly correlated with the degree of sleepiness. Using these four parameters and data from all subjects, we performed fivefolded cross-validation of our model (Colby and Bair, 2013). Testing group showed performance close to the training group, while shuffled control generated chance-level prediction, further supporting the validity of our model. Similar analysis using TMS measurements from matched SSS states to predict time of the data showed no significant correlation (Figure 3—figure supplement 2B), indicating that circadian modulation contributed minimally in the TMS variance in our dataset.
 
@@ -84,17 +225,17 @@ In conclusion, our study showed that the strengthening of both excitatory and in
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Thirty-eight healthy participants (21 males, 17 females, age: 22.46 ± 0.29 years, age range: 20–27 years, Figure 1—figure supplement 1) with no history of sleep disorders (Pittsburgh Sleep Quality Index; Buysse et al., 1989), head trauma, psychiatric conditions, or any other chronic disease were recruited for present study. The subjects were free of medication and tobacco use. All participants wrote informed consent before the experiment; the study has been approved by the Ethics Committee of Huashan Hospital (2017-410).
 
-## Study flow
+### Study flow
 
 The subjects were asked to stay in their regular sleep pattern at least 1 week before the experiment, and the experiment would postpone if the participants have a cold or any other uncomfortable situation. The subjects arrived at the laboratory 1 day before the experiment for preparation and to adapt to the environment. They slept in the separate and quiet room for one night. They were asked not to use the alarm and are wakened by the researchers at 7 a.m. of the second day.
 
 The study lasts for 34 hr, during which the subjects received eight times for SSS evaluation and TMS assessments, as well as three times resting-state EEG measurements (Figure 1). SSS was used in our study due to its wide usage in research, previous validation against objective measurements, and brevity (Hungs, 2012). During the study period, the subjects were not allowed engaging in vigorous exercise or taking coffee or tea, and were maintained awake by two independent researchers.
 
-## EEG recording and data processing
+### EEG recording and data processing
 
 The EEG signal was recorded by EEG system of BrainAmp MR32, BrainProducts, using a 32-channel EEG cap. A specific electrode was used as the reference channel placed between Cz and Fz. Reference would then be transferred offline into overall average reference. Subjects were seated in a comfortable chair with a computer screen in front of them showing instructions when recording the resting state EEG. Subjects were asked to focus on a cross symbol on the screen for 5 min to record their open-eye EEG and followed by another 5 min of close-eye EEG epoch and then repeated for totally 20 min EEG recording with two episodes of open and close eye EEG, respectively. The EEG was acquired at 4, 21, and 28 hr from awake.
 
@@ -102,13 +243,55 @@ The collected EEG signals were processed offline using MATLAB (The MathWorks Inc
 
 The EEG signals were decomposed into the delta (1–4 Hz), theta (4–8 Hz), alpha (8–12 Hz), and low-beta (12–20 Hz) frequency components, spectral power (μV2) of which was analyzed separately via fast Fourier transform (FFT) for overall average at the three timepoints, respectively.
 
-## TMS procedures
+### TMS procedures
 
 The subjects were seated on a comfortable chair in a silent environment. TMS studied was conducted with OSF–priming TMS (YRD CCY-IA, Yiruide Co., Wuhan, China) connected with a 70 mm figure-of-8 coil (CCY-I TMS instrument, Yiruide Co.). The motor hotspot for FDI muscle on the contralateral hemisphere of primary motor cortex (M1) was defined with maximum MEP value. The MT is defined as the lowest density that can be evoked at least 5 MEP, with amplitude more than 50 μV in 10 times of successive stimulation with the relaxed recording muscle (Rossini et al., 2015). Then, the intensity of the test stimulation (TS) was determined when the average amplitude reached at 400–1000 μV. The TS was given 10 times continuously, and their latency and amplitude were recorded.
 
-The paired-pulses TMS (ppTMS) included short interval intracortical inhibition (SICI), long interval intracortical inhibition (LICI), short interval intracortical facilitation (SICF), and intracortical facilitation (ICF). The ppTMS also included three controllable parameters, TS, conditioning stimulation (CS), and interstimulus intervals (ISI). The setting of ppTMS in this study is shown in Table 2 (Rossini et al., 2015; Lazzaro and Ziemann, 2013). Every index was repeated 10 times, and the single pulse of the TS was inserted between the pulses to guarantee the accurate stimulation site and the angle of the coil. The pause was set within 5–7 s between the pulses to make sure the excitability would not have been interfered by the last stimulation. The format of the index of the ppTMS is shown below. The 10 times stimulation of each index were averaged.ppTMS%MEP=amplitude of ppTMSamplitude of TS×100%
+The paired-pulses TMS (ppTMS) included short interval intracortical inhibition (SICI), long interval intracortical inhibition (LICI), short interval intracortical facilitation (SICF), and intracortical facilitation (ICF). The ppTMS also included three controllable parameters, TS, conditioning stimulation (CS), and interstimulus intervals (ISI). The setting of ppTMS in this study is shown in Table 2 (Rossini et al., 2015; Lazzaro and Ziemann, 2013). Every index was repeated 10 times, and the single pulse of the TS was inserted between the pulses to guarantee the accurate stimulation site and the angle of the coil. The pause was set within 5–7 s between the pulses to make sure the excitability would not have been interfered by the last stimulation. The format of the index of the ppTMS is shown below. The 10 times stimulation of each index were averaged.
 
-## Statistical analysis
+$$
+ppTMS%MEP=\frac{amplitude of ppTMS}{amplitude of TS}\times100%
+$$
+
+**Table 2.**
+ The setting of the ppTMS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SICI</th>
+      <th>LICI</th>
+      <th>SICF</th>
+      <th>ICF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CS (%MEP)</td>
+      <td>70</td>
+      <td>120</td>
+      <td>90</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>TS (%MEP)</td>
+      <td colspan="4">Average amplitude reached at 400–1000 μV</td>
+    </tr>
+    <tr>
+      <td>ISI</td>
+      <td>2</td>
+      <td>150</td>
+      <td>1.5</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+
+_ppTMS: paired-pulses transcranial magnetic stimulation; SICI: short interval intracortical inhibition; LICI: long interval intracortical inhibition; SICF: short interval intracortical facilitation; ICF: intracortical facilitation; MEP: motor-evoked potential; CS: conditioning stimulation; TS: test stimulation: ISI: interstimulus interval._
+
+### Statistical analysis
 
 The data were repeated measurement variables of single group. One-way ANOVA was used for statistics, and the sample size was calculated based on the data from previous studies. TMS and SSS were repeated seven times and EEG three times. PASS 11 was used to calculate the sample size of 34 (power = 0.9, α = 0.05 [double-sided]). If the lost rate was assumed to be 10%, then the sample size was 34/0.9 = 38 cases. In the actual study, 40 cases were included and lost 2 cases.
 

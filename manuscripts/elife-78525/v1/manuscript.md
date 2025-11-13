@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01vjw4z39 Department of Psychology, School of Public Health, Southern Medical University Guangzhou China
-2. https://ror.org/03yj89h83 Ecology and Genetics Research Unit, University of Oulu Oulu Finland
-3. https://ror.org/026zzn846 Biological and Experimental Psychology, School of Biological and Behavioural Sciences, Queen Mary University of London London United Kingdom
-4. https://ror.org/01sf06y89 Department of Biological Sciences, Macquarie University Sydney Australia
-5. https://ror.org/01vjw4z39 Department of Psychiatry, Zhujiang Hospital, Southern Medical University Guangzhou China
-6. https://ror.org/01vjw4z39 Guangdong-Hong Kong-Macao Greater Bay Area Center for Brain Science and Brain-Inspired Intelligence, Southern Medical University Guangzhou China
+1. Department of Psychology, School of Public Health, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+2. Ecology and Genetics Research Unit, University of Oulu Oulu Finland ([ROR:03yj89h83](https://ror.org/03yj89h83))
+3. Biological and Experimental Psychology, School of Biological and Behavioural Sciences, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
+4. Department of Biological Sciences, Macquarie University Sydney Australia ([ROR:01sf06y89](https://ror.org/01sf06y89))
+5. Department of Psychiatry, Zhujiang Hospital, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+6. Guangdong-Hong Kong-Macao Greater Bay Area Center for Brain Science and Brain-Inspired Intelligence, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
 
 † Corresponding author
 
@@ -38,9 +38,100 @@ Only more recently have investigations of absolute and relative information trav
 
 Specifically, we adopt an instrumental learning paradigm that combines a contextual training phase and a transfer-test phase (Palminteri and Lebreton, 2021). This paradigm essentially involves two distinct learning contexts (e.g. AB context and CD context; Figure 1), with each context offering two options of contrasting properties (e.g. A>B and C>D in reward sizes). After training, animals’ learned preferences are tested with a novel combination of options (e.g. B vs C). Note that behavioural tests for transitive inference (Guez et al., 2013; Vasconcelos, 2008) involve a similar task design, which includes several training phases and a test phase of new combinations. However, this method provides overlapped relational premises during training (e.g. A>B, B>C, C>D, and D>E) in order to examine if animals can infer the relationship between a pair of options within the chained sequence which had previously not been experienced together (e.g. B vs D). In contrast, our paradigm provides no direct overlapped training between contexts (e.g. A>B and C>D), and therefore, animals cannot infer the relationship between unchained options (e.g. B vs C). Rather, by providing both absolute and relative information during training, our paradigm is used to assess whether, and in what combination, bumblebees retain and utilise absolute and ranking memories.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78525/elife-78525-fig1-v1.jpg)
+
+**Figure 1.:** (A, C, and E) The corresponding sucrose concentration of each stimulus is displayed on a log scale to visually represent their relative differences according to Weber’s Law (Akre and Johnsen, 2014). Training sessions are indicated by separate grey backgrounds, and the test options in each experiment are indicated with dashed lines. The bi-colour squares indicate that the colours for the focal options used were counterbalanced across bees. (B, D, and F) Test results for each experiment. Groups indicate different counterbalanced training sequence and colour-reward contingency (see Figure 1—figure supplement 3 for more details). Each filled circle represents the proportion of choices for option C by an individual bumblebee (10 individuals per group). Dashed horizontal lines indicate chance performance. Vertical lines indicate mean ± SEM. p values were calculated from generalised linear models (Materials and methods); NS: p > 0.05; *: p < 0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78525/elife-78525-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** In each experiment, artificial flowers of paired colours were horizontally presented in the training and testing phase.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78525/elife-78525-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Spectral reflectance plot of blue, orange, yellow, and green colours used. (B) Loci of colours in the hexagonal bee colour space, determined by the responses each colour elicits on the bee’s UV, blue, and green photoreceptors (Chittka, 1992).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78525/elife-78525-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Groups of bees were trained and tested with counterbalanced colour sets and training sequences in each experiment.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/78525/elife-78525-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** To ensure that bees were able to learn to discriminate between two differently coloured flowers in our setup, we examined bees’ preference between two flower types after having been trained individually on these flowers. One group of bees (n=10) learned that blue flowers contained 45% sucrose solution and that yellow flowers contained 30% sucrose solution. Another group of bees (n=10) learned the counterbalanced colour-reward contingency. During a subsequent unrewarded test (all flowers with unrewarding water), bees showed a clear preference for (landed more often on) the flowers that had been associated with the higher reward during training (generalised linear model [GLM]: N=20, 95% CI = [0.64, 1.37], and p=3.39e-5). These results show that in our setup, bumblebees were able to easily learn to discriminate the different flower colours used in our experiments and do so via the different sucrose concentrations associated with each flower type. Groups indicate different counterbalanced colour-reward contingency for bees. Dotted horizontal lines indicate chance performance. Vertical lines indicate mean ± SEM. p values were calculated from generalised linear models (Materials and methods); *: p < 0.01.
+
 ## Results
 
 If bumblebees encode and retrieve memories for absolute values, their preference for a particular option should not depend on the context in which that option was learned (Padoa-Schioppa and Assad, 2008). To test this idea, we conducted experiment 1 with a multi-contextual design where certain flowers had the same quality of reward but different ranking. Bees were first trained (individually in all experiments) on two different pairs of coloured flowers (A and B; C and D; Figure 1A, Figure 1—figure supplement 1, and Figure 1—figure supplement 2). The sucrose concentrations of the different pairs of flowers were chosen according to Weber’s Law (Akre and Johnsen, 2014) to represent the same perceived difference, i.e. A:B=45%:30% had the same contrast of incentives as C:D=30%:20% (Figure 1A). Note that for all experiments, the order of training sessions was counterbalanced to ensure that test preferences were not a result of a recency effect. Meanwhile, the focal colours used in the unrewarded test were counterbalanced during training to account for any colour effects (Materials and methods; Figure 1; Figure 1—figure supplement 3). Following sequential training in both contexts (Figure 1—figure supplement 3 and Figure 1—figure supplement 4), we tested each bee’s preference between flower types B and C, which had the same reward quality (30%) during training. Therefore, if bumblebees’ preferences were driven exclusively by their memory for absolute values for options, they should show no preference between B and C in the test. Any significant preference would suggest a contextual effect due to B and C having different rankings during training (B<A while C>D). In an unrewarding test with B and C flowers, bees significantly preferred C over B (generalised linear model [GLM]: 95% CI = [0.08, 0.38], N=40, and p=4.00e-3; Figure 1B and Figure 1—figure supplement 3). Although these results suggest that bees store memories for the relative ranking of flowers, they still may encode absolute information (Table 1), and therefore, we carried out additional experiments.
+
+**Table 1.**
+ Predictions for various decision strategies for bumblebees’ flower preferences in experiments 1, 2, and 3.The left column lists the different categories of decision strategies. The middle three columns show the predicted results of each strategy for each experiment. The right column shows whether the predictions of each strategy match the behaviour of bumblebees in all experiments. A lexicographic combination strategy is where choices are determined by a difference in a priority dimension, but if options are equal in that dimension, then choices rely on a secondary dimension. For example, bumblebees might choose between two flower types based on a remembered ranking (as long as flowers differed in ranking during training), no matter what the absolute sugar concentration differences were. However, if the remembered rankings of the flowers are the same (i.e. they cannot use ranking to make a choice), bumblebees might then use any difference in absolute memory. In contrast, a non-lexicographic combination strategy is where differences in either dimension can be used to make a choice. For example, bumblebees might use absolute memories to choose flowers that differ in ranking, even if the ranking and absolute contrasts are distinct (e.g. one ordinal rank difference vs threefold absolute difference). Value by association entails one option acquiring a higher value because it was experienced in a richer environment (Pompilio and Kacelnik, 2010), i.e. bumblebees might assign a higher value to flower B because it was experienced with A (the highest rewarding flower), compared to a lower value assigned to C because it was experienced with D (the lowest rewarding flower). State-dependent valuation learning (SDVL) refers to assigning values to options based on whether subjects were in a better or worse internal state when experiencing those options (McNamara et al., 2012). For example, bumblebees may assign different values to a flower type based on whether they are foraging in a more or less profitable environment, i.e. based on the comparison between each flower type’s sugar concentration and the average sucrose concentration within the bee’s current crop load.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="3">Strategy</th>
+      <th colspan="3">Expected preference</th>
+      <th rowspan="2">Matches bees’ behaviour</th>
+    </tr>
+    <tr>
+      <th>Experiment 1B (30%) vs C (30%)</th>
+      <th>Experiment 2B (30%) vs C (15%)</th>
+      <th>Experiment 3A (45%) vs C (30%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Absolute memory</td>
+      <td>Indifferent</td>
+      <td>B</td>
+      <td>A</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td colspan="3">Remembered ranking</td>
+      <td>C</td>
+      <td>C</td>
+      <td>Indifferent</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td colspan="3">Lexicographic combination—absolute memory priority</td>
+      <td>C</td>
+      <td>B</td>
+      <td>A</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td colspan="3">Lexicographic combination—ranking priority</td>
+      <td>C</td>
+      <td>C</td>
+      <td>A</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td colspan="3">Non-lexicographic combination</td>
+      <td>C</td>
+      <td>B/C/indifferent</td>
+      <td>A</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td colspan="3">Value by association</td>
+      <td>B</td>
+      <td>B</td>
+      <td>A</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td colspan="2">State-dependent valuation learning</td>
+      <td></td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>✗</td>
+    </tr>
+  </tbody>
+</table>
 
 Bees may still store and use memories for both absolute and relative information in some combined fashion. To test this, in experiment 2, we set the reward quality of flowers B and C to be different (Figure 1C and Figure 1—figure supplement 3). The sucrose concentration of flowers was A>B >> C>D (45%, 30%, 15%, and 10%). After training in both contexts, bees’ preference between B and C flowers was tested. If bumblebees retain and use memories for both ranking and absolute information (and the value weights for these two different types of information are not extremely unbalanced), bees should either prefer B over C because it is much higher in quality, or this value difference would cancel out the ranking difference (B<A while C>D), and their preference for B and C should be equal. On the other hand, a preference for the much lower reward quality flower C would indicate they have access to only ranking memories. Similar to experiment 1, the result of the unrewarding test showed that bees preferred C (GLM: 95% CI = [0.07, 0.28], N=40, and p=3.30e-3; Figure 1D).
 
@@ -70,30 +161,30 @@ There is no reason yet to suggest a bee’s brain lacks the neural substrates to
 
 ## Materials and methods
 
-## Animals and setup
+### Animals and setup
 
 Bumblebee (Bombus terrestris) colonies were obtained from the Chinese branch of the Biobest Group (Biobest Belgium N.V., Westerlo, Belgium) and housed in wooden nest boxes (28 cm × 16 cm × 11 cm). Although there are no current requirements regarding insect care and use in research, experimental design and procedures were guided by the 3Rs principles (replacement, reduction, and refinement; Russell and Burch, 1959). The behavioural tests were non-invasive, and the types of manipulations used (sucrose and water) are all experienced by bumblebees during their natural foraging life in the wild. The bumblebees were cared for on a daily basis by trained and competent staff, which included routine monitoring of welfare and provision of correct and adequate food during the experimental period. A foraging arena (40 cm × 59 cm × 41 cm; Figure 1—figure supplement 1) was connected to the nest boxes via an acrylic tunnel with sliding doors, allowing experimenters to control bees’ access to the arena. Individual bees were marked with number tags (Opalithplättchen, Warnholz & Bienenvoigt, Ellerau, Germany), which were super-glued to the bees’ thorax. To ensure the sucrose solution concentration used in experiments was motivating, colonies were fed outside of experiments with 5–15% sucrose solution (w/w). They were also provided with ~3 g pollen every day. Illumination was provided by daylight fluorescent tubes (MASTER TL-D 90 DeLuxe 36 W/965, Philips, Eindhoven, the Netherlands) and near-UV fluorescent tubes (TL-D 36 W BLB, Philips) with high-frequency electronic ballasts (EB-Ci 1–2 36 W/1–4 18 W, 42–60 kHz, Philips) to generate a flicker frequency beyond the bumblebee’s flicker-fusion frequency. Coloured acrylic squares (25 mm × 5 mm × 5 mm) set on top of opaque glass cylinders as (artificial) flowers were placed in the arena with a different random spatial arrangement each trial. The spectral reflectance (Figure 1—figure supplement 2A) of all flower colours used in experiments was measured with a wavelength range of 300–700 nm and with 1 nm increments, using a spectrophotometer (Ocean Optics USB 2000+; Shanghai, China) and a deuterium/halogen light source. The perceptual positions of the colours in the bee colour hexagon space (Figure 1—figure supplement 2B) were calculated using the spectral reflectance measurements and the published Bombus terrestris spectral sensitivity functions of their three photoreceptors (Chittka, 1992; Skorupski et al., 2007). The minimal perceptual distance of all the colour combinations used in this study was above 0.14 hexagon units, which can be well differentiated by bumblebees (Dyer and Chittka, 2004). Furthermore, neurophysiological (Miriyala et al., 2018) and behavioural evidence (Whitney et al., 2008) verify that the sugar concentration differences used in this study can be readily discriminated by bumblebees.
 
-## Experimental protocol
+### Experimental protocol
 
 All bees were individually pre-trained on eight transparent artificial flowers and were allowed to collect a full crop of sucrose solution from those flowers. Once a bee had successfully foraged for at least three consecutive bouts, she was moved to the training phase of an experiment.
 
-## Experiments 1, 2, and 3
+#### Experiments 1, 2, and 3
 
 Bees (N=40 for each experiment) were trained to forage from eight flowers, four of each of two colours (Figure 1—figure supplement 1 and Figure 1—figure supplement 3). In experiment 1, one group of bees (n=10) learned (individually) that green flowers contained 45% sucrose solution and that yellow flowers contained 30% sucrose solution. Once training on these two flower types was complete (more detail below), this group of bees learned (individually) that orange flowers contained 30% sucrose solution and that blue flowers contained 20% sucrose solution. Training for bees in experiments 2 and 3 was the same except the sucrose concentrations were different. Training sequences and colour combinations were equally counterbalanced across bees in each experiment (Figure 1—figure supplement 3). Flower colours and sequences for all experiments are listed in Figure 1—figure supplement 3. Initially during training, all bees would land and drink from both flowers. As bees learned the colour-reward contingency, they began to land on the less rewarded flowers but did not drink. Once this behaviour was observed, during subsequent bouts, we removed and replaced one higher-ranking flower with one lower-ranking flower. By doing so, and because none of the flowers were refilled during training bouts, bees would again visit the lower-ranking flowers and drink the sugar water droplet. This method helped us to ensure that bees experienced drinking sucrose solution from both options an equal number of times. Training was completed when a bee collected 50 of the 20 μl aliquots of sugar reward from flowers of both colours. Note that we verified, in our setup, that bees could learn to discriminate between flowers of different colours and sucrose concentrations (Figure 1—figure supplement 4). After training, each bee was individually tested with two types of flowers (four of each type) offering 20 μl droplets of unrewarding water, and all flower visits were recorded for 2 min. Note that in all tests, the two flowers types presented had not been experienced previously together in the same arena by the bees.
 
-## Experiment 4
+#### Experiment 4
 
 Bees (N=20) were trained in the same way as the other experiments except that during training only one flower type was in the arena at any one time, i.e. either all of the flowers offered 45% sucrose solution or all flowers offered 30% sucrose solution (Figure 1—figure supplement 3; Figure 2A). Also, the inter-session interval for experiment 4 was 1 hr. Each session ended when the bee completed 50 flower visits. After training and after another 1 hr interval, bees underwent an unrewarded test with the two flower types they had been trained on, presented simultaneously in the arena. Both the colour/sucrose concentration contingency and the order of training sessions (which type of flower was trained last) were counterbalanced across bees (Figure 1—figure supplement 3; Figure 2B).
 
-## Experiment 5
+#### Experiment 5
 
 Bees (n=10) were trained similarly to experiment 4 in which only one flower type was in the arena at any one time (Figure 1—figure supplement 3; Figure 2C). However, instead of two long sessions, bees experienced each flower in alternating bouts (visits to the arena to fill their crop). Once bees experienced 50 flower visits on each flower type, training ended and the bees underwent an unrewarded preference test with both flower types in the arena (Figure 1—figure supplement 3; Figure 2D).
 
-## Experiment 6
+#### Experiment 6
 
 Bees (N=20) were trained and tested similarly to experiments 1–3 except that the two sets of flowers were in the arena at the same time and accessible to the bee during each bout. However, flowers were also separated by an opaque wall to prevent the bees from seeing both sets simultaneously (Figure 1—figure supplement 3; Figure 2E). The wall extended to cover most but not the full length of the arena, and there was space at the entrance and the far end of the arena so that bees could freely choose to visit flowers on either side of the wall. No matter where the bee was in the arena, she could not see both pairs of flowers at the same time. In addition, flowers were refilled after the bees emptied one and began drinking on another. Each group (n=10) was trained with either the yellow or green flower as the high concentration flower. The training was deemed complete when either a bee performed 200 landings or when a bee only landed exclusively on any one option for three consecutive bouts (note that bees never landed exclusively on the lower rewarding option for three bouts consecutively). After training, the bees were individually tested with all four flowers (two of each type) presented in the same arena with the opaque barrier removed (Figure 1—figure supplement 3; Figure 2F).
 
-## Statistical analyses
+### Statistical analyses
 
 R v.3.6.1 was used to perform all GLMs with quasibinomial distribution and logit link function. For all models, the response variable was the proportion of choices for the flower that had been associated with high concentration sugar water. Fixed factors for models for results of experiments were (i) colony of each bee, (ii) flower colour, and (iii) training sequence (whether the higher concentration sugar reward was used during the first or second training session). Significance of fixed effects was tested using likelihood ratio tests, and none were found to have a significant effect on bees’ preferences during the tests in any experiment. When comparing preference for flower C across experiments 1 and 2, experiment was set as a fixed factor.

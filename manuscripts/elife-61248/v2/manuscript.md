@@ -36,11 +36,33 @@ Here, we examined single-unit activity in dCDh of macaque monkeys while they per
 
 ## Results
 
-## Temporal discounting accounts for monkeys’ behavior
+### Temporal discounting accounts for monkeys’ behavior
 
-We studied computation of the motivational value using temporal discounting in macaque monkeys induced delaying reward delivery (Figure 1A). In the basic task, the monkey must release a bar when a red spot turns green. A visual cue appears at the beginning of each trial and remains on throughout. Each of the six cues is linked to one combination of reward size (one small drop; three or four large drops) and delay to reward (one of 0, 3.3, and 6.9 s; Figure 1B). In this and similar tasks, the error rate, i.e., the proportion of trials with an incorrect response (either releasing the bar too early or too late), reflects the monkey’s motivation for action, which can be interpreted as the motivational value or decision utility for whether to act or not, according to its prediction about the forthcoming reward. In our previous studies, the error rate was inversely related to the motivational value (Minamimoto et al., 2009). In previous behavioral studies, the subjective value of delayed reward was formulated as a hyperbolic discounting model (Mazur, 1984; Mazur, 2001; Green and Myerson, 2004),(1)DV=R1+kDwhere DV is the value of delayed reward (i.e., temporally discounted value), R is the magnitude of reward, k is a discount parameter, and D is the delay to the reward. Accordingly, to describe error rates in this delayed reward task, we extended the inverse relation, incorporating it into a hyperbolic discounting model as shown in Equation 2, with error rates (E), reward size (R), delay (D), and a monkey-specific free-fitting parameter (a) (Minamimoto et al., 2009),(2)E=1+kDaR
+We studied computation of the motivational value using temporal discounting in macaque monkeys induced delaying reward delivery (Figure 1A). In the basic task, the monkey must release a bar when a red spot turns green. A visual cue appears at the beginning of each trial and remains on throughout. Each of the six cues is linked to one combination of reward size (one small drop; three or four large drops) and delay to reward (one of 0, 3.3, and 6.9 s; Figure 1B). In this and similar tasks, the error rate, i.e., the proportion of trials with an incorrect response (either releasing the bar too early or too late), reflects the monkey’s motivation for action, which can be interpreted as the motivational value or decision utility for whether to act or not, according to its prediction about the forthcoming reward. In our previous studies, the error rate was inversely related to the motivational value (Minamimoto et al., 2009). In previous behavioral studies, the subjective value of delayed reward was formulated as a hyperbolic discounting model (Mazur, 1984; Mazur, 2001; Green and Myerson, 2004),
+
+$$
+DV=\frac{R}{1+kD}
+$$
+
+where DV is the value of delayed reward (i.e., temporally discounted value), R is the magnitude of reward, k is a discount parameter, and D is the delay to the reward. Accordingly, to describe error rates in this delayed reward task, we extended the inverse relation, incorporating it into a hyperbolic discounting model as shown in Equation 2, with error rates (E), reward size (R), delay (D), and a monkey-specific free-fitting parameter (a) (Minamimoto et al., 2009),
+
+$$
+E=\frac{1+kD}{aR}
+$$
 
 As shown in Figure 1C, the error rates were higher when a small reward size was expected, and for both reward sizes, the errors increased linearly as the expected delay duration increased. This pattern of the averaged error rates was well described by the inverse relation with hyperbolic delay discounting (Equation 2) (R2 = 0.96, 0.88, and 0.94 for monkeys BI, FG, and ST, respectively; Figure 1C, solid lines). The exponential discounting model (Equation 3) also explained the majority of the cases (7/10 monkeys, R2 > 0.9; e.g., Figure 1C, dotted curves for monkeys BI and ST) well. Consistent with previous results (Minamimoto et al., 2009), leave-one-out cross-validation analysis confirmed that the hyperbolic model fitted the error rates significantly better than exponential function for all three monkeys as well as for seven additional monkeys (p<0.05; see Materials and methods).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sequence of events of behavioral tasks. (B) Example of relationship between cue and outcome in delayed reward task. (C) Ratio of error trials (mean ± sem) as a function of delay duration in monkeys BI, FG, and ST. Data of small (one drop) and large reward (three or four drops) trials are indicated by black and red, respectively. Solid lines and dotted curves are best fit of Equations 2 and 3, respectively. Note that since two straight lines were simultaneously fitted to the averaged data, the fitting was worse for the data of trials with larger rewards. (D) Series of coronal sections illustrating locations of recorded neurons plotted by dots. Anterior–posterior positions of sections (distance, in mm) are indicated by plus and minus numbers from anterior commissure (AC), respectively. Red, cue-responsive neurons with DV coding; pink, cue-responsive neurons without DV coding; gray, neurons without cue response. Coronal sections of CT-MR fusion image in top left visualize an electrode (*) in dCDh. CD, caudate nucleus; Put, putamen.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Proportion of early error for each monkey. Thick and thin dots indicate mean and data of each session, respectively. (B) Distribution of timing for early and late bar release for each monkey. Red arrows indicate the timing of go. (C) Reaction time (mean ± SD) of delayed reward task as a function of delay duration in monkeys BI, FG, and ST. Black and white symbols indicate small (one drop) and large reward (three or four drops), respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Density plots of eye position during cue period of delayed reward task obtained from monkey RI. Colors indicate normalized looking-time. White squares indicate the frame of cue stimulus. (B) Time course of the proportion of eye position within the cue area aligned by CUE (left) and GO onset (right). Thick curves and shaded areas represent mean and SD, respectively. Colors represent rewarding condition.
 
 The proportion of early errors differed across monkeys, but was relatively consistent within each monkey (Figure 1—figure supplement 1A). Nine of 10 monkeys exhibited a pattern in which early errors increased over time, reaching a peak at about 0.7 s or 1.8 s after cue onset, while only one monkey (monkey TM) showed an increase in early errors immediately after cue onset. These results suggest that early errors were not rejection responses, but rather the consequence of insufficient motivation to make the correct response. In addition, the late releases did not always occur immediately after the end of the 1 s response window, suggesting that they were not due to extensions of slow reaction (Figure 1—figure supplement 1B). These results also support the interpretation that errors are caused by insufficient motivation to respond correctly.
 
@@ -48,7 +70,7 @@ The reaction times also covaried with both reward size and reward delay; reactio
 
 Together, these results suggest that the monkeys adjusted their motivation of action based on the temporally discounted value, which forms a hyperbolic relationship between expected size and delay of forthcoming reward.
 
-## Neuronal activity of dCDh reflects temporally discounted value
+### Neuronal activity of dCDh reflects temporally discounted value
 
 We examined the role of the caudate nucleus in the motivational control of action based on the temporally discounted value. Specifically, we focused on dCDh and recorded the activity of 150 presumed projection neurons (i.e., phasically active neurons; see Materials and methods) (Figure 1D), while the monkeys performed the delayed reward task. Most of the neurons (n = 118) significantly increased their activity around more than one of three task phases: cue (immediately after cue appearance), release (at the time of bar release), and/or reward (at the time of reward delivery) (Figure 2A–C; p<0.05, χ2 test). The cue response was the most prominent activity of dCDh neurons during the task (Figure 2A,C); the proportion of cue-responsive neurons (100/150) was significantly larger than that of release-responsive neurons (49/150; p<0.01, χ2 test) and reward-responsive neurons (Figure 2D; 49/150; p<0.0001, χ2 test).
 
@@ -58,9 +80,29 @@ We examined the role of the caudate nucleus in the motivational control of actio
 
 Some of the cue responses signaled a temporally discounted value (DV) of the forthcoming reward (Equation 1). An example of the activity shown in Figure 3A exhibited the strongest activation after the cue associated with a large and immediate reward. The cue response became smaller as the delay duration became longer, and with the smallest reward with long delay, the neuron did not respond at all. The neuron presented in Figure 3B had the opposite response pattern; the activation was stronger when the cue predicted smaller rewards with longer delays.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Activity of example neurons during cue period. Rasters and spike density histograms are aligned at cue onset. The color corresponds to each reward condition. Rasters are shown in order of occurrence of trials from bottom to top in each condition. Shaded areas on rasters are time windows for evaluating the magnitude of cue response. (C, D) Relationship between firing rate (mean ± sem) and temporally discounted value (DV, Equation 1) for neuronal activities shown in (A) and (B), respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Table shows that the number of neurons whose activity is explained best by models 1–4. Note that linear mixed model (LMM) analysis was applied to 22 of 27 DV-coding neurons recorded in a session in which the monkeys made at least three error trials. fr, firing rate; dv, discounted value; trial, trial type (correct or error). Seventeen neurons were differently modulated by DV depending on whether the monkey perform correct or not, while remaining five were similarly modulated regardless of performance.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Example of differential activity between error and correct trials of a DV-coding neuron. Thin and thick dots indicate relationship between firing rate and temporally discounted value (Equation 1) in individual trials and mean values for each rewarding condition, respectively. Color indicate correct (red) and error (green) trials, respectively. Thick lines indicate best-fit of LMM (model four in Figure 3—figure supplement 1).
+
 We related spike discharge rates to DV estimated using the hyperbolic function obtained from individual behavior (Equations 2 and 7). The firing rate during the cue period of example neurons (Figure 3A,B) correlated with DV positively (Figure 3C, R2 = 0.86, p<0.01) and negatively (Figure 3D, R2 = 0.77, p<0.05). A significant regression coefficient for DV (p<0.05, t-test) was found in 27 of 100 cue-responsive neurons (11, 6, and 10 in monkeys BI, FG, and ST, respectively); 18 and 9 exhibited positive and negative correlations, respectively. The result did not seem to depend on the shape of DV function: a similar number of neurons showed a significant DV relation when estimating using the exponential function (Equation 3; n = 25). By contrast, significant DV relation was relatively minor in release-related (5/49) and reward responses (3/49). The DV relation was not likely to be a direct reflection of the eye movement or gaze variables, since the monkeys tended to looked at cue location from cue to go signal regardless of rewarding condition (Figure 1—figure supplement 2).
 
 Besides the DV relation, the cue response might solely reflect reward size or delay duration. We compared the effect of size or delay alone on cue response with that of DV using multiple linear regression analysis (Equation 8). We found that only three and four neurons showed a significant exclusive effect of size or delay on their cue response, respectively (Figure 4A,B, blue and green). In contrast, for 19 and 5 neurons, DV and both delay and size had a significant effect on the cue response, respectively (Figure 4A,B, red and pink), the proportions of which were significantly larger than that of neurons by chance coding both delay and reward size (p<0.01; χ2 test). The strength of size or delay effect was relatively smaller than that of DV. Thus, DV-related neurons were not just a selected population from the neurons representing mixtures of these delay and size by chance; rather, the entire neuronal population seemed to represent reward size and delay in an integrated manner. Such population-level DV relation was also observed in the release response, but not in the reward response (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Scatterplots of standardized partial regression coefficients (SPRC) of DV (ordinate) against those for reward size or delay (abscissa) for discharge rates during cue period, respectively. Colored dots indicate neurons with significant (p<0.05) coefficient, while gray dots correspond to neurons without any significant effect (NA). DV/DV and Other, neurons with significant coefficient of DV; Size and Delay, those with both size and delay; Size, those exclusively with size; Delay, those exclusively with delay. Numbers in parentheses indicate number of neurons.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Scatterplot of standardized partial regression coefficients (SPRC) of DV (ordinate) against those of size and delay on release response, respectively (abscissa). (B) Same as (A), but for reward response. Colored dots indicate neurons with significant (p<0.05) coefficient, while gray dots correspond to neurons without any significant effect (NA). DV/DV and Other, neurons with significant coefficient of DV; Size and Delay, those with both size and delay; Size, those with size exclusively; Delay, those with delay exclusively. Numbers in parentheses indicate number of neurons.
 
 Together, our results suggest that the temporally discounted value of the forthcoming reward is represented in dCDh neurons, that is, mainly in a subpopulation of neurons. In the following section, we will focus on this subset of neurons and refer to neurons with and without significant correlation with DV as DV-coding neurons (n = 27) and non-DV-coding neurons (n = 73), respectively. DV-coding neurons were not confined to specific locations, but were found throughout the dCDh (Figure 1D).
 
@@ -68,19 +110,47 @@ To quantify the time course of DV coding of the cue responses, the effect size o
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) Time-dependent change of DV coding. Each row represents color-coded effect size (R) of DV for a single DV-coding neuron. Responses were aligned by cue onset and bar release, respectively. (2C, D) Time-dependent change of effect size of DV for DV coding (red, n = 27) and non-DV-coding neurons (black, n = 73) aligned by cue onset and bar release, respectively. Thick curve and shaded areas indicate mean ± sem, respectively. Arrows indicate time of go signal (first 3 of 5 with variable interval). (E, F) Time course of normalized activity for DV coding (red, n = 27) and non-DV-coding neurons (black, n = 73) aligned by cue onset and bar release, respectively. Conventions are the same as (C, D).Figure 5—source data 1.
+**Figure 5.:** (A, B) Time-dependent change of DV coding. Each row represents color-coded effect size (R2) of DV for a single DV-coding neuron. Responses were aligned by cue onset and bar release, respectively. (C, D) Time-dependent change of effect size of DV for DV coding (red, n = 27) and non-DV-coding neurons (black, n = 73) aligned by cue onset and bar release, respectively. Thick curve and shaded areas indicate mean ± sem, respectively. Arrows indicate time of go signal (first 3 of 5 with variable interval). (E, F) Time course of normalized activity for DV coding (red, n = 27) and non-DV-coding neurons (black, n = 73) aligned by cue onset and bar release, respectively. Conventions are the same as (C, D).
 
 Non-DV-coding neurons, on the other hand, did not change the effect size from 0 during the cue period, whereas it increased after the bar release (black curve, Figure 5C,D). Comparing the normalized activity of these two populations, whereas DV-coding neurons showed an increase in activity toward the bar release, non-DV-coding neurons showed a marked transient response to the cue (Figure 5E,F). Given that the monkeys tended to look at the cue location during cue period (Figure 1—figure supplement 2B), the activity of non-DV-coding neurons appeared to largely reflect visual response, but was unlikely to be evoked by eye movement. This suggests that non-DV-coding neurons might have a role in detecting cue appearance.
 
-## DV coding is insensitive to satiation
+### DV coding is insensitive to satiation
 
 The motivational value of reward should decrease as the physiological drive state changes from thirst to satiation. In every daily session, the monkeys were allowed to work until they stopped by themselves, meaning that the data were collected as the monkeys were approaching satiation. As the normalized cumulative reward (Rcum) increased, the overall error rate in each combination of reward size and delay also increased (Figure 6A). When we looked at the data from one quarter (e.g., Figure 6B, Rcum = 0.75–1), the error rate increased linearly as the delay duration increased with each reward size. These observations were well in accordance with the psychological concepts of incentive motivation assuming a multiplicative interaction between the value of outcome (i.e., discounted value) and the satiation effect (Toates, 1986; Berridge, 2004; Zhang et al., 2009; Equation 6; see Materials and methods). The error rates were well explained by Equation 4 for each individual monkey (R2 = 0.89 ± 0.06; mean ± sem) as well as for the average across nine monkeys (R2 = 0.98, Figure 6A,B). The satiation effect, F(Rcum) (Figure 6C), indicated that the motivational value of reward decreased at a rate of more than 15% (16%, 33%, and 17% for BI, FG, and ST, respectively) in a single recording session (i.e., 120 trials) according to the number of average success trials in a daily session.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig6-v2.jpg)
+
+**Figure 6.:** (A) Ratio of error trials (mean ± sem) as a function of normalized cumulative reward (Rcum) on average across nine monkeys. Dotted curves are the best fit of Equation 4 to the data. (B) Error rates (mean ± sem) as a function of delay duration for each quarter of Rcum. (C) Satiation function, F(Rcum), along with Rcum in three individual monkeys and average across nine monkeys. Since average total trials were 934, 512, and 493 in BI, FG, and ST, motivational value became 84%, 67%, and 83% through 120 trials (i.e., 16%, 33%, and 17% devalued), respectively. (D) Example of comparison of cue responses in first and second half of recording period for each reward condition in single dCDh neuron (monkey ST). Spike density histograms are aligned at cue onset; one and three drops in reward size, respectively. (E) Comparison of cue responses in first and second half of recording period for each trial type in positive DV-coding neurons (n = 18). Responses were normalized by firing rate of cue response in immediate large reward trials during first half of the period.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Scatterplot of standardized regression coefficients (SRC) of discharge rates during cue period for DV (ordinate) against those for cumulative reward (abscissa). Red dots indicate DV-coding neurons. Red and blue, and purple circles indicate non-DV-coding neurons with significant (p<0.05) coefficient for DV and cumulative reward (CR), and both, respectively. Black circles correspond to neurons without any significant effect (NS). (B) Representative waveforms (mean ± SD) recorded from a CD neuron (Monkey ST #10) during first (purple) and last quartile (orange) of recording period. Changes in firing rate were not attributable to alteration in action potential isolation.
+
 Although satiation significantly influenced behavior, satiation did not influence dCDh activity, not even when coding DV. When we compared the cue responses between the first and second halves of 120 successful trials, the activity patterns were indistinguishable between the first and second halves of the recording period in a single neuron (Figure 6D). Similarly, the normalized mean discharge rate of cue responses for each reward condition did not significantly change between the first and second halves in 18 positive DV-coding neurons (repeated-measures two-way ANOVA; main effect of trial type, F(5, 119) = 16.8, p<10−8; main effect of satiation, F(1, 119) = 1.7, p=0.29; Figure 6E). Additional neuron-by-neuron analysis using a multiple linear regression model (Equation 9) demonstrated that a significant satiation effect was not found in any of the cue-responsive dCDh neurons (97/100) except for three non-DV-coding neurons (Figure 6—figure supplement 1). Therefore, dCDh neurons encode the expected temporally discounted value in their cue response without reflecting internal physiological drive.
 
-## Inactivation of dCDh specifically impairs behavioral pattern to delay discounting
+### Inactivation of dCDh specifically impairs behavioral pattern to delay discounting
 
 In our results, the activity of a subset of dCDh neurons encoded DV after the cue, but not reward size or delay alone. This raises the question of whether the activity is needed to judge the values reflected by DV. To test this, we inactivated bilateral dCDh by local injection of muscimol (GABAA receptor agonist) or by a chemogenetic technology (DREADDs), two complementary methods to produce the comparable behavioral change when applied to the primate striatum (Nagai et al., 2016). Two monkeys had muscimol injected locally into the dCDh, which was confirmed by CT images of injection cannulae overlaying MR images, matching with the recording sites (Figure 7A and B; see Figure 1D for comparison). Another monkey received injections of a viral vector expressing an inhibitory DREADD, hM4Di, into the dCDh bilaterally. A positron emission tomography (PET) scan with a DREADD-selective radioligand, [11C]deschloroclozapine (DCZ) (Nagai et al., 2020), confirmed that hM4Di expression covered the dCDh (Figure 7C). Chemogenetic silencing was achieved by systemic administration of the selective DREADD agonist DCZ (Nagai et al., 2020). Both pharmacological and chemogenetic inactivation resulted in a significant shift in error rate patterns with respect to reward size and delay in all three monkeys (Figure 7D, left); the behavioral patterns were idiosyncratic across the monkeys, but they were generally not in accordance with the temporal discounting model (i.e., Equation 2; R2 = 0.41, 0.19, and 0.76, for monkeys BI, RI, and ST, respectively). By contrast, the error rate pattern following vehicle injection remained well explained by the model (Figure 7D, right; R2 > 0.86).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig7-v2.jpg)
+
+**Figure 7.:** (A) CT-based localization of muscimol injection sites. CT image visualizing injection cannulae targeting CD bilaterally (hot color) overlaid on MR image (gray scale) in monkey BI. Scale bar, 5 mm. (B) Muscimol (magenta) and saline injection sites (blue) are mapped by estimating diffusion (4 mm in diameter) from the tip of the cannula. The data of two subjects are overlaid and are separately mapped 3 mm anterior and 3 mm posterior to the anterior commissure (AC). (C) [11C]DCZ-PET visualizing hM4Di expression in vivo in monkey ST. Parametric image of specific binding (BPND) of [11C]DCZ-PET overlaying MR image. Scale bar, 5 mm. (D) Error rates (mean ± sem) as function of delay duration under inactivation (left) and control condition (right). Black and red symbols are low and high reward trials, respectively. Dotted lines represent best-fit function of hyperbolic temporal discounting (Equation 2). Number in parentheses indicates number of sessions tested. (E) Distribution of sum of squared residuals (SSR) of best-fit function (Equation 2) to averaged resample data obtained by bootstrap method (n = 20,000). Blue and red lines indicate SSR of best fit of Equation 2 to mean error rates in control and inactivation sessions, respectively.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Comparison of reaction time (mean ± SD) between baseline, control, and inactivation session in monkeys BI, RI, and ST.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Density plots of eye position during cue period of delayed reward task obtained from monkey RI. Colors indicate normalized looking-time. Left and right panels for control and inactivation sessions, respectively. White squares indicate frame of cue stimulus.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Symbols represent normalized error rates for each reward condition by maximum error rates in each session. Thick lines connect average error rates for three delay conditions in each reward size. Vertical lines indicate sem.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Error rates (mean ± sem) as a function of normalized cumulative reward (Rcum) in baseline, control, and inactivation session of delayed reward task. Dotted curves are the best fit of Equation 4 to the data. Note that the satiation effect was disrupted in the inactivation session in the monkey ST, but remained normal after inactivation in the reward-size task in the same monkey (see Figure 8C).
 
 Despite changing error patterns, inactivation did not produce statistically significant changes in the overall error rates (inactivation vs. control; two-way ANOVA for treatment × reward condition; main effect of treatment, F(1, 2) = 13.6, p=0.07; interaction, F(5, 164) = 2.1, p=0.07). Apart from the error rates, the inactivation did not affect other behavioral parameters. The total reward earned during the task was unchanged in each monkey (inactivation vs. control; Brunner–Munzel test, p>0.18). There was no significant effect of treatment on reaction time in two monkeys (two-way ANOVA, effect size of treatment: η2 < 0.01, monkeys BI and RI) but a moderate effect of treatment in monkey ST (η2 = 0.06) (Figure 7—figure supplement 1). Type of error (i.e., releasing too early or too late) was unaffected by inactivation (main effect of treatment, F(1,26) = 1.07, p=0.31). The monkeys touched and released the bar several times during the delay period, even though the delay time was not shortened. The number of releases depended on reward condition (main effect of reward condition, F(5, 143) = 25.22, p<0.001), but there was no significant main effect of treatment (two-way ANOVA, treatment, F(1, 143) = 2.90, p=0.09) or interaction (F(5, 143) = 0.42, p=0.83). The duration of gazing at the cue was slightly but not significantly longer during muscimol inactivation (t-test, p=0.063, Figure 7—figure supplement 2). Together, the bilateral inactivation of dCDh did not cause impairments in overall motivation, motor, or anticipatory behavior.
 
@@ -89,6 +159,14 @@ These results demonstrated that dCDh inactivation appeared to produce a consiste
 To examine the effect of dCDh inactivation on satiation, we plotted error rates along with the normalized cumulative reward (Rcum). Like the results shown in Figure 6A, the error rate in each combination of reward size and delay increased as Rcum increased in baseline and vehicle control sessions (Figure 7—figure supplement 4). Satiation-dependent increase in error rates was also observed in two of three monkeys in dCDh inactivation, while monkey ST failed to show this tendency (Figure 7—figure supplement 4). We also examined trial initiation time (duration between the time the reward was received and the start of the next trial), reflecting satiation effects as a measure of motivation to start time in a previous study (Fujimoto et al., 2019). In both control and inactivation sessions, the trial initiation time was significantly longer in the second half of the session (two-way ANOVA, main effect of first vs second, F(1,54) = 4.32, p=0.042), where no significant interactive effect of dCDh inactivation was observed (first vs second × treatment, F(1,54) = 0.32, p=0.57). These results suggest that dCDh inactivation does not have a strong effect on satiation.
 
 Was the impairment specifically related to the temporally discounted value? Alternatively, it may reflect the dysfunction of the motivational process in general. Since the temporally discounted value is often referred to as ‘subjective value’, dCDh inactivation could produce a general dysregulation of computation for motivational value – a subjective impact of the upcoming reward on performance. To examine the effects of dCDh inactivation on motivational value without delay, we tested two monkeys in a reward-size task in which the task requirement remained the same as the delayed reward task, but a successful bar release was immediately rewarded with one of four reward sizes (one, two, four, or eight drops) associated with a unique cue (Figure 8A). It has been repeatedly shown that the error rates of this task will be well explained by the joint function of reward size and satiation (Equation 6; Minamimoto et al., 2009; Minamimoto et al., 2012b; Fujimoto et al., 2019). Pharmacological or chemogenetic inactivation of bilateral dCDh did not alter the pattern of the error rate in this task; in both cases they remained to be well explained by the model (R2 > 0.7) (Figure 8C) and were equally well compared with the baseline data (p>0.15, bootstrap significance test; Figure 8D). The inactivation did not change the overall error rates (three-way ANOVA, treatment, F(1, 243) = 1.35, p=0.45) or the interactive effect with reward size on the error rates (treatment × size, F(3, 243) = 1.69, p=0.17). The lack of change in the error rate pattern in the reward-size task could be attributed to the relative ease of associating cues with outcome compared to the delayed reward task. However, no clear difference was evident between the two tasks in establishing the cue–outcome relationship as judged by the behavior during the training period (Figure 8—figure supplement 1). Overall, these results suggest that dCDh activity is specifically involved in computing the motivational value based on delay discounting, rather than general motivational processes based on the integration of incentives and drive.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig8-v2.jpg)
+
+**Figure 8.:** (A) Cue stimuli used in reward-size task uniquely associated with forthcoming reward size (one, two, four, or eight drops). (B) Top: Error rates (mean ± sem) as function of reward size in muscimol treatment (magenta) and non-treatment control session (black) for monkey RI, respectively. Bottom: Error rates (mean ± sem) as function of reward size after DCZ treatment (red) and after vehicle treatment (black) for monkey ST, respectively. Dotted curves represent best-fit of inverse function. (C) Error rates (mean ± sem) as function of normalized cumulative reward (Rcum) for monkeys RI (top) and ST (bottom), respectively. Each reward size condition was shown in a different color. Number in parentheses indicates numbers of sessions tested. (D) Distribution of sum of squared residuals (SSR) of best-fit function (Equation 6) to averaged resample data obtained by bootstrap method (n=20,000). Blue and red lines indicate SSR of best-fit of Equation 6 to the mean error rates in control and inactivation sessions, respectively.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/61248/elife-61248-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Monkey RI was trained with reward-size task followed by delayed reward task. (Top) Error rates as a function of session were plotted for both tasks. (Bottom) Error rates as a function of reward size or delay duration during initial and stable phase were shown. (B) Monkey ST was trained with delayed reward task followed by reward-size task. Others are the same as (A).
 
 ## Discussion
 
@@ -108,11 +186,11 @@ In summary, our work indicates that dCDh neurons encode, at a single-neuron leve
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Ten male rhesus macaque monkeys (5–11 kg) were used in this study. Of these, three (BI, FG, and ST) were also used for recording, and one (ST) and two (BI and RI) for chemogenetic and pharmacological inactivation experiments, respectively. All surgical and experimental procedures were approved by the National Institutes for Quantum and Radiological Science and Technology (11-1038-11) and by the Animal Care and Use Committee of the National Institute of Mental Health (Annual Report ZIAMH002619), and were in accordance with the Institute of Laboratory Animal Research Guide for the Care and Use of Laboratory Animals.
 
-## Behavioral tasks
+### Behavioral tasks
 
 The monkeys squatted on a primate chair inside a dark, sound-attenuated, and electrically shielded room. A touch-sensitive bar was mounted on the chair. Visual stimuli were displayed on a computer video monitor in front of the animal. Behavioral control and data acquisition were performed using a real-time experimentation system (REX) (Hays et al., 1982). Neurobehavioral Systems Presentation software was used to display visual stimuli (Neurobehavioral Systems).
 
@@ -122,37 +200,55 @@ In the behavioral experiment, the visual cue indicated a unique combination of r
 
 Two monkeys (RI and ST) were also tested with the reward-size task, in which the reward was always delivered immediately (0.3 ± 0.1 s), but the size of the reward (one, two, four, and eight drops) varied and was assigned by unique cue (Figure 8A; Minamimoto et al., 2009). The sequence and timing of events were the same as those in the delayed reward task.
 
-## Surgery
+### Surgery
 
 After behavioral training, magnetic resonance (MR) images at 1.5T (monkey FG) and 7T (monkeys BI, RI, and ST) were obtained under anesthesia (intravenous infusion of propofol 0.2–0.6 mg/kg/min or pentobarbital sodium 15–30 mg/kg) to determine the position of the recording or local injection. After obtaining each MR image, a surgical procedure was carried out under general isoflurane anesthesia (1–2%) to implant chambers for unit recording and/or chemical inactivation. For monkeys BI and FG, we implanted a rectangle chamber (22 × 22 mm ID; KDS Ltd.) from vertical in the coronal plane aiming for the bilateral CD. We implanted one or two cylinder chambers (19 mm ID; Crist Instrument Co., Inc) angled 10° or 20° from vertical in the coronal plane targeting the right or bilateral CD for monkeys ST and RI, respectively. Based on measurements made from the MR images, the centers of the chambers were placed to target the CD near the anterior commissure. A post for head fixation during data collection was also implanted.
 
-## Recording neuronal activity and mapping recording location
+### Recording neuronal activity and mapping recording location
 
 Single-unit activity was recorded (51, 31, and 68 from monkeys BI, FG, and ST, respectively), while monkeys performed the delayed reward task in a block usually consisting of 120 trials. Action potentials of single neurons were recorded from the left CD using epoxy-coated 1.1–1.5 MΩ tungsten microelectrodes (Microprobes for Life Science; 1.1–1.5 MΩ at 1 kHz) or glass-coated 1.0 MΩ tungsten microelectrodes (Alpha Omega Engineering Ltd). A guide tube was inserted through the grid hole in the implanted recording chamber into the brain, and the electrodes were advanced through the guide tube by means of a micromanipulator (Narishige MO-97A or Alpha Omega EPS). Spike sorting to isolate single-neuron discharges was performed with a time-window algorithm (TDT-RZ2, Tucker Davis Technologies) or custom-made software written in LabVIEW (National Instruments). Striatal neuronal activities were classified into two subtypes: presumed projection neurons and tonically active neurons (TANs, presumed cholinergic interneurons) based on their spontaneous discharge rates and action potential waveforms, as previously described (Yamada et al., 2016). We exclusively examined the activity of the presumed projection neurons, which are characterized as having a low spontaneous discharge rate (<2 spikes/s) outside the task context and exhibiting phasic discharges in relation to one or more behavioral task events. The activity of TANs recorded from the CD of monkeys performing a similar task was reported in a previous study (Falcone et al., 2019). The timing of action potentials was recorded together with all task events at millisecond precision. In the inactivation study, eye movements were monitored for corneal reflection of an infrared light beam through a video camera at a sampling rate of 120 Hz (i_rec, http://staff.aist.go.jp/k.matsuda/eye/).
 
 To confirm the recording location, MR or CT (3D Accuitomo 170, J.MORITA CO.) images were acquired with a tungsten microelectrode (Figure 1D). Recording sites extended from 2 mm anterior to the anterior commissure (AC) to 3 mm posterior to the AC for monkey BI, from 4 mm anterior to the AC to 3 mm posterior to the AC for monkey FG, and from 3 mm anterior to the AC to 2 mm posterior to the AC for monkey ST.
 
-## Chemogenetic inactivation
+### Chemogenetic inactivation
 
 One monkey (ST) received bilateral injections of an adeno-associated virus vector (AAV2.1-hSyn-hM4Di-IRES-AcGFP; 3 μL/site; 4.7 × 1013 particles/mL; Kimura et al., 2021) at two locations into each side of the CD. The injection procedure was as described previously (Nagai et al., 2016). Forty-nine days post-vector injection, the monkey underwent a PET scan with [11C]DCZ to visualize in vivo hM4Di expression. Chemogenetic silencing was achieved by intramuscular injection (i.m.) with a DREADD-selective agonist, DCZ (HY-42110, MedChemExpress; 0.1 mg/kg). DCZ was dissolved in 2% dimethyl sulfoxide (DMSO) in saline to a final volume of 0.65 ml. DCZ solution or vehicle (as control) was administered intramuscularly. Five to 10 min following administration, the animal was allowed to start performing the tasks, which continued for 100 min. Based on a previous study, chemogenetic silencing would be effective for 15–120 min after DCZ administration. We performed at most one inactivation study per week. Note that we verified that the DCZ administration (0.1 mg/kg, i.m.) does not cause any significant motivational/motor impairments or alteration of the incentive effect of the performance of reward-size task in monkeys without expressing DREADDs (n = 3) (Nagai et al., 2020). Detailed protocols for PET imaging were described elsewhere (Nagai et al., 2020).
 
-## Pharmacological inactivation
+### Pharmacological inactivation
 
 To inactivate neuronal activity, we injected a GABAA receptor agonist, muscimol (M1523, Sigma-Aldrich), locally into the bilateral CD of monkeys BI and RI. We used two stainless steel injection cannulae inserted into the CD (O.D. 350 µm; BRC Inc, Japan), one in each hemisphere. Each cannula was connected to a 5 µl microsyringe (Hamilton, #7105KH) via polyethylene tubing. These cannulae were advanced through the guide tube by means of an oil-drive micromanipulator. Muscimol (4 µg/1 µL saline) was injected at a rate of 0.2 µL/min by auto-injector (Legato210, KD Scientific Inc) for a total volume of 3 µL in each side. Soon after the injection was completed, the animal was allowed to start performing the tasks, which continued for 100 min. We performed at most one inactivation study per week. For control, we injected saline at other times using the same parameters as those used for muscimol. At the end of each session, a CT scan was conducted to visualize the injection cannulae in relation to the chambers and skull. The CT images were overlaid on MR images by using PMOD and VirtualPlace (Canon Medical Solutions Corp) image analysis software to assist in identifying the injection sites (Figures 1D and 7A). We plotted the injection sites based on the estimate of the liquid diffusion range (4 mm diameter) reported previously (Yoshida et al., 1991; Martin and Ghez, 1999).
 
-## Data analysis
+### Data analysis
 
 The R statistical computing environment (R Development Core Team, 2004) was used for all data analyses.
 
-## Behavioral data analysis
+### Behavioral data analysis
 
-Error rates in task performance were calculated by dividing the total number of errors by the total number of trials for each reward condition and then averaged across all sessions. The average error rates in the delayed reward task were fitted with the inverse function of reward size with hyperbolic (Equation 2) or that with exponential temporal discounting (Minamimoto et al., 2009) as follows:(3)E=e−kDaR
+Error rates in task performance were calculated by dividing the total number of errors by the total number of trials for each reward condition and then averaged across all sessions. The average error rates in the delayed reward task were fitted with the inverse function of reward size with hyperbolic (Equation 2) or that with exponential temporal discounting (Minamimoto et al., 2009) as follows:
+
+$$
+E=\frac{e^{−kD}}{aR}
+$$
 
 We fitted these two models to the data with least-squares minimization using ‘optim’ function in R and compared the models by leave-one-out cross-validation as described previously (Minamimoto et al., 2009).
 
-To examine the effects of satiation, we divided each session into quartiles based on normalized cumulative reward, Rcum, which was 0.125, 0.375, 0.625, and 0.875 for the first through fourth quartiles, respectively. We fitted the error rates in the delayed reward task obtained from each monkey and the average data across monkeys to the following model:(4)E=1+kDaR×F(Rcum)where the satiation effect, F(Rcum), as the reward value was exponentially decaying in Rcum at a constant λ (Minamimoto et al., 2012a):(5)F(Rcum)=e−λRcum
+To examine the effects of satiation, we divided each session into quartiles based on normalized cumulative reward, Rcum, which was 0.125, 0.375, 0.625, and 0.875 for the first through fourth quartiles, respectively. We fitted the error rates in the delayed reward task obtained from each monkey and the average data across monkeys to the following model:
 
-For modeling satiation effects of the error rates in reward-size task, we used an inverse model integrating satiation effect (Equation 5), as follows:(6)E=1aR×F(Rcum)
+$$
+E=\frac{1+kD}{aR\timesF(R_{cum})}
+$$
+
+where the satiation effect, F(Rcum), as the reward value was exponentially decaying in Rcum at a constant λ (Minamimoto et al., 2012a):
+
+$$
+F(R_{cum})=e^{−\lambdaR_{cum}}
+$$
+
+For modeling satiation effects of the error rates in reward-size task, we used an inverse model integrating satiation effect (Equation 5), as follows:
+
+$$
+E=\frac{1}{aR\timesF(R_{cum})}
+$$
 
 We also applied conventional ANOVA modeling to the behavioral data. The proportional behavioral data were transformed using the variance stabilizing arcsine transformation before hypothesis testing (Zar, 2010).
 
@@ -162,10 +258,28 @@ Significance of deviation from baseline data was examined by means of the parame
 
 The Brunner–Munzel test was used as non-parametric analysis for median value with Bonferroni correction (Hui et al., 2008).
 
-## Neuronal data analysis
+### Neuronal data analysis
 
 Only neuronal data from correct trials were used for the analyses. For each neuron, we collected data from 20 to 30 correct trials for each combination of reward-size-and-delay duration, a total of 120–180 successful trials. For each neuron, we first determined the start and end of event-related responses by using a series of χ2 tests (Ravel and Richmond, 2006). The background window was defined as the activity between 500 and 0 ms before cue onset. The test window spanned 100 ms for cue responses, and it moved in 10 ms increments, from 0 to 1500 ms, after cue appearance. For bar-release responses, the 100 ms test window moved from 300 ms before to 300 ms after bar release. For reward-related responses, the 100 ms test window moved from 0 to 500 ms after reward appearance. For each 100 ms test window, an χ2 test was used to determine whether the proportions of filled to empty 1 ms bins in the 100 ms test interval were significantly different from the proportion in the 500 ms background window. Start of the response was taken to be the middle of the first of four consecutive 100 ms test intervals showing a significant difference (p<0.05) in spike count between the test and background window. End of the response was defined as the middle of the last window showing a significant difference. Duration of the response was defined as the difference between the start and end of the response. The procedure worked well for all tested neurons, yielding latencies that matched those we would have chosen by visual inspection. A neuron was classified as responsive to the three events when a significant response could be detected in at least five consecutive windows.
 
-To quantify the influence of temporal discounting of reward value on the response, we applied linear regression analysis. For each significant response, firing rates (Y) were fitted by the following linear regression model:(7)Y=β0+βVDVwhere βV is the regression coefficient and β0 is the intercept, and DV is the temporally discounted value formulated by a hyperbolic function (Equation 1; Mazur, 1984; Mazur, 2001; Green and Myerson, 2004). The effect of DV was compared with that of delay and reward size information on the response by the following multiple linear regression model:(8)Y=β0+βdelayD+βsizeR+βDVDVwhere D and R are delay duration and reward size, respectively, βdelay, βsize, and βDV are the regression coefficients, and β0 is the intercept. Another linear regression analysis was performed to quantify the influence of temporal discounting of reward value and satiation on the response, as follows:(9)Y=β0+βDVDV+βRcumRcumwhere DV and Rcum are the temporally discounted value and cumulative reward, respectively, βDV and βRcum are the regression coefficients, and β0 is the intercept.
+To quantify the influence of temporal discounting of reward value on the response, we applied linear regression analysis. For each significant response, firing rates (Y) were fitted by the following linear regression model:
+
+$$
+Y=\beta_{0}+\beta_{V}DV
+$$
+
+where βV is the regression coefficient and β0 is the intercept, and DV is the temporally discounted value formulated by a hyperbolic function (Equation 1; Mazur, 1984; Mazur, 2001; Green and Myerson, 2004). The effect of DV was compared with that of delay and reward size information on the response by the following multiple linear regression model:
+
+$$
+Y=\beta_{0}+\beta_{delay}D+\beta_{size}R+\beta_{DV}DV
+$$
+
+where D and R are delay duration and reward size, respectively, βdelay, βsize, and βDV are the regression coefficients, and β0 is the intercept. Another linear regression analysis was performed to quantify the influence of temporal discounting of reward value and satiation on the response, as follows:
+
+$$
+Y=\beta_{0}+\beta_{DV}DV+\beta_{Rcum}R_{cum}
+$$
+
+where DV and Rcum are the temporally discounted value and cumulative reward, respectively, βDV and βRcum are the regression coefficients, and β0 is the intercept.
 
 To examine whether DV-coding neurons differentially behave between correct and error trials, we performed LMMs (Bates et al., 2015), in which there is mixed effect of trial completion (correct/error) on slope and/or intercept. Four models were nested to consider the presence or absence of random effects (Figure 4—figure supplement 1). We applied the LMM analysis on DV-coding neurons recorded in a session in which the monkeys made at least three error trials. The best model was selected based on BIC.

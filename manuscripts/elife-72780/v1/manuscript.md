@@ -20,17 +20,17 @@
 
 1. RNA Systems Biochemistry Laboratory, RIKEN Cluster for Pioneering Research Saitama Japan
 2. Cellular Memory Laboratory, RIKEN Cluster for Pioneering Research Saitama Japan
-3. https://ror.org/023rffy11 Laboratory for Translation Structural Biology, RIKEN Center for Biosystems Dynamics Research Yokohama Japan
-4. https://ror.org/010rf2m76 Biomolecular Characterization Unit, Technology Platform Division, RIKEN Center for Sustainable Resource Science Saitama Japan
-5. https://ror.org/010rf2m76 RIKEN Center for Sustainable Resource Science Saitama Japan
+3. Laboratory for Translation Structural Biology, RIKEN Center for Biosystems Dynamics Research Yokohama Japan ([ROR:023rffy11](https://ror.org/023rffy11))
+4. Biomolecular Characterization Unit, Technology Platform Division, RIKEN Center for Sustainable Resource Science Saitama Japan ([ROR:010rf2m76](https://ror.org/010rf2m76))
+5. RIKEN Center for Sustainable Resource Science Saitama Japan ([ROR:010rf2m76](https://ror.org/010rf2m76))
 6. Synthetic Organic Chemistry Lab, RIKEN Cluster for Pioneering Research Saitama Japan
-7. https://ror.org/057zh3y96 Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, The University of Tokyo Chiba Japan
+7. Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, The University of Tokyo Chiba Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 
 † Corresponding author
 
 ## Abstract
 
-Protein methylation occurs predominantly on lysine and arginine residues, but histidine also serves as a methylation substrate. However, a limited number of enzymes responsible for this modification have been reported. Moreover, the biological role of histidine methylation has remained poorly understood to date. Here, we report that human METTL18 is a histidine methyltransferase for the ribosomal protein RPL3 and that the modification specifically slows ribosome traversal on Tyr codons, allowing the proper folding of synthesized proteins. By performing an in vitro methylation assay with a methyl donor analog and quantitative mass spectrometry, we found that His245 of RPL3 is methylated at the τ- N position by METTL18. Structural comparison of the modified and unmodified ribosomes showed stoichiometric modification and suggested a role in translation reactions. Indeed, genome-wide ribosome profiling and an in vitro translation assay revealed that translation elongation at Tyr codons was suppressed by RPL3 methylation. Because the slower elongation provides enough time for nascent protein folding, RPL3 methylation protects cells from the cellular aggregation of Tyr-rich proteins. Our results reveal histidine methylation as an example of a ribosome modification that ensures proteome integrity in cells.
+Protein methylation occurs predominantly on lysine and arginine residues, but histidine also serves as a methylation substrate. However, a limited number of enzymes responsible for this modification have been reported. Moreover, the biological role of histidine methylation has remained poorly understood to date. Here, we report that human METTL18 is a histidine methyltransferase for the ribosomal protein RPL3 and that the modification specifically slows ribosome traversal on Tyr codons, allowing the proper folding of synthesized proteins. By performing an in vitro methylation assay with a methyl donor analog and quantitative mass spectrometry, we found that His245 of RPL3 is methylated at the τ-N position by METTL18. Structural comparison of the modified and unmodified ribosomes showed stoichiometric modification and suggested a role in translation reactions. Indeed, genome-wide ribosome profiling and an in vitro translation assay revealed that translation elongation at Tyr codons was suppressed by RPL3 methylation. Because the slower elongation provides enough time for nascent protein folding, RPL3 methylation protects cells from the cellular aggregation of Tyr-rich proteins. Our results reveal histidine methylation as an example of a ribosome modification that ensures proteome integrity in cells.
 
 ## Introduction
 
@@ -44,13 +44,25 @@ In this work, we studied the previously uncharacterized methyltransferase METTL1
 
 ## Results
 
-## METTL18 is a histidine τ-N-methyltransferase
+### METTL18 is a histidine τ-N-methyltransferase
 
 To overview τ-N-histidine methylation in cells and the corresponding enzymes, we quantified τ-N-methylhistidine by mass spectrometry (MS). To distinguish the two types of histidine methylations, we performed multiple reaction monitoring (MRM) of digested amino acids to trace specific m/z transitions from the precursor (Davydova et al., 2021) (see ‘Materials and methods’ section for details). Because SETD3 modifies abundant actin proteins (Dai et al., 2019; Guo et al., 2019; Kwiatkowski et al., 2018; Wilkinson et al., 2019; Zheng et al., 2020), SETD3 knockout (KO) in HEK293T cells (Figure 1—figure supplement 1B–E) greatly reduced τ-N-methylhistidine (Figure 1A). However, a substantial fraction of τ-N-methylhistidine was left in the SETD3 KO cells (Figure 1A), suggesting the presence of other mammalian τ-N-methyltransferase(s).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig1-v1.jpg)
+
+**Figure 1.:** (A) Multiple reaction monitoring (MRM)-based identification of τ-N-methylated histidine in bulk proteins from the indicated cell lines. Data from three replicates (points) and the mean (bar) with SD (error bar) are shown. Significance was determined by Student’s t-test (unpaired, two-sided). (B) Schematic representation of the ProSeAM-SILAC approach. (C) ProSeAM-labeled proteins in cell lysate with recombinant His-METTL18 protein. Biotinylated proteins were detected by streptavidin-HRP. Western blot for α-tubulin was used as a loading control. (D) Venn diagram of proteins identified in two independent ProSeAM-SILAC experiments. The reproducibly detected protein was RPL3. (E) Methylated histidine residue in ectopically expressed RPL3-FLAG was searched by liquid chromatography mass spectrometry (LC-MS/MS). (F) Quantification of methylated and unmethylated peptides (KLPRKTH) from the indicated cells. RPL3-FLAG was ectopically expressed and immunopurified for LC-MS/MS. WT, wild type; MT, Asp193Lys-Gly195Arg-Gly197Arg mutant. (G) MRM-based identification of τ-N-methylhistidine in peptides from RPL3. The τ-N-methylhistidine standard, π-N-methylhistidine standard, and RPL3-FLAG peptide (KLPRKTH) results are shown. MeHis, methylhistidine.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Chemical structure of histidine, π-N-methylhistidine, and τ-N-methylhistidine. (B) Schematic representation of guide RNAs (gRNAs) designed for CRISPR-Cas9-mediated gene KO. (C) Genomic PCR validated the partial DNA deletion in the METTL18 gene locus. (D, E) Western blot of the indicated proteins to confirm the KO of SETD3 and METTL18 (D) and the quantification (E). α-Tubulin was probed as a loading control and for normalization. (E) Data from three replicates (points) and the mean (bar) with SD (error bar) are shown. (F) Multiple reaction monitoring (MRM)-based identification of π-N-methylated histidine in bulk proteins from the indicated cell lines. Data from three replicates (points) and the mean (bar) with SD (error bar) are shown. MeHis, methylhistidine. (G) Coomassie brilliant blue (CBB) staining of recombinant METTL18 proteins used in this study.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sucrose density gradient for ribosomal complexes. Lysate was prepared with a buffer containing EDTA to dissociate 80S into 40S and 60S. The 60S fraction used for liquid chromatography mass spectrometry (LC-MS/MS) analysis is highlighted in gray. (B) Coomassie brilliant blue (CBB) staining of proteins in the 60S fraction in naïve and METTL18 KO HEK293T cells. (C) Methylated histidine residue in endogenous RPL3 in 60S was searched by LC-MS/MS. (D) Quantification of methylated and unmethylated peptide (KLPRKTH) from endogenous RPL3 in 60S cells.
+
 An apparent candidate for the remaining τ-N-methyltransferase in SETD3 KO cells was METTL18, whose yeast homolog (histidine protein methyltransferase 1 [Hpm1]) has been reported to catalyze τ-N-methylation on histidine in Rpl3 (Al-Hadid et al., 2016; Al-Hadid et al., 2014; Webb et al., 2010). Indeed, the SETD3-METTL18 double-KO (DKO) cells (Figure 1—figure supplement 1B–E) had even lower levels of τ-N- methylhistidine than the SETD3 single-KO cells (Figure 1A). Note that we could not detect any significant alteration in π-N-methylhistidine in any cells tested in this study (Figure 1—figure supplement 1F).
 
-## METTL18 catalyzes τ-N-methylation on His245 in RPL3
+### METTL18 catalyzes τ-N-methylation on His245 in RPL3
 
 These observations led us to survey the methylation substrate of METTL18. For this purpose, we harnessed propargylic Se-adenosyl-l-selenomethionine (ProSeAM), an analog of S-adenosyl-l-methionine (SAM). This compound acts as a donor in the methylation reaction by the SET domain and 7-β-strand methyltransferase (Davydova et al., 2021; Shimazu et al., 2014; Shimazu et al., 2018). Instead of a methyl moiety, a propargyl unit was added to the substrate residue, allowing biotin tagging with a click reaction (Davydova et al., 2021; Shimazu et al., 2014; Shimazu et al., 2018; Figure 1B). Using ProSeAM, we performed in vitro methylation with recombinant METTL18 (Figure 1—figure supplement 1G) in the lysate of METTL18 KO cells and detected the ProSeAM-reacted proteins in a METTL18 protein-dependent manner (Figure 1C). The high background signals are likely to have originated from methyltransferases other than METTL18 in the lysate.
 
@@ -62,27 +74,254 @@ To distinguish the methylation forms on histidine, we applied MRM to the peptide
 
 Thus, taken together, our data demonstrated that His245 of RPL3 is a METTL18 substrate for the formation of τ-N-methylhistidine in cells.
 
-## METTL18 associates with early pre-60S
+### METTL18 associates with early pre-60S
 
 As RPL3 in crude lysate was methylated in vitro (Figure 1C and D), we set out to recapitulate this reaction by purified factors using 14C-labeled SAM as a methyl donor. Irrespective of the human or mouse homolog, the immunopurified FLAG-tagged RPL3 proteins transiently expressed in METTL18 KO cells were efficiently labeled by recombinant METTL18 (Figure 2A). Moreover, changing His245 to Ala completely abolished the reaction, validating His245 as a methylation site.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig2-v1.jpg)
 
-**Figure 2.:** (A) In vitro methylation assay with recombinant His-GST-METTL18 protein and 14C-labeled S-adenosyl-l-methionine (SAM). Immunopurified human or mouse RPL3 expressed in METTL18 knockout (KO) cells and recombinant human RPL3 expressed in bacteria were used as substrates. (B) Western blot for the indicated proteins in ribosomal complexes separated by sucrose density gradient.Figure 2—source data 1.Figure 2A.Figure 2—source data 2.Figure 2B.
+**Figure 2.:** (A) In vitro methylation assay with recombinant His-GST-METTL18 protein and 14C-labeled S-adenosyl-l-methionine (SAM). Immunopurified human or mouse RPL3 expressed in METTL18 knockout (KO) cells and recombinant human RPL3 expressed in bacteria were used as substrates. (B) Western blot for the indicated proteins in ribosomal complexes separated by sucrose density gradient.
 
 In contrast, recombinant RPL3 expressed in bacteria was a poor substrate (Figure 2A). A similar deficiency in the in vitro methylation assay by Hpm1 on solo RPL3 protein produced in bacteria was seen in yeast (Al-Hadid et al., 2014). Given that RPL3 expressed in mammalian cells assembled into ribosomes but RPL3 expressed in bacteria did not, we hypothesized that METTL18 recognizes RPL3 within ribosomes or preassembled intermediates. To characterize the molecular complex associated with METTL18, we separated the ribosomal complexes through a sucrose density gradient and found that METTL18 was associated with a complex smaller than mature 60S (Figure 2B). Given the smaller size, we speculated that the METTL18-associating complex is pre-60S in the middle of biogenesis. Indeed, the METTL18-containing subfractions also possessed PES1 (a yeast Nop7 homolog), a ribosome biogenesis factor at an early step (Kater et al., 2017; Sanghai et al., 2018), and a small portion of RPL3 (Figure 2B). On the other hand, NMD3, an adaptor protein of the late-stage pre-60S for cytoplasmic export (Ma et al., 2017; Malyutin et al., 2017), was almost exclusive to the METTL18-associating pre-60S. These data suggested that RPL3, in an early intermediate complex of 60S biogenesis, is an efficient substrate for METTL18.
 
-## Structural comparison of methylated and unmethylated His245 of RPL3 in ribosomes
+### Structural comparison of methylated and unmethylated His245 of RPL3 in ribosomes
 
 The presence of METTL18 in the pre-60S complex led us to investigate the role of methylation in ribosome biogenesis. However, assessed by the bulk 28S rRNA abundance (Figure 3—figure supplement 1A) and the 60S fraction in sucrose density gradient (Figure 3—figure supplement 1B and C), no altered abundance of the 60S subunit (relative to the 40S subunit) was observed in METTL18 KO cells, while the knockdown of RPL17, which is known to hamper 60S biogenesis (Wang et al., 2015), reduced the 60S abundance in a sucrose density gradient (Figure 3—figure supplement 1D–F).
 
 Thus, we hypothesized that RPL3 methylation may impact protein synthesis. To understand the potential role of methylation in RPL3, we reanalyzed published cryo-EM data (Osterman et al., 2020) and assessed the τ-N-methyl moiety on His245 of RPL3 (Figure 3A), which indicated that τ-N-methylated RPL3 is a stoichiometric component of the ribosome. A similar density of methylation on the histidine of RPL3 has also been found in rabbit ribosomes (Bhatt et al., 2021). On the other hand, the ribosomes isolated from METTL18 KO cells lost density at the τ-N position of the His245 (Figure 3B, Figure 3—figure supplement 2, Table 1). The absence of methylation at the τ-N position allowed nitrogen to form hydrogen bonds with G1595 of 28S rRNA (Figure 3B). Given that G1595 is located in the loop of helix 35, which macrolide antibiotics target in bacterial systems (Kannan and Mankin, 2011), this difference in the interaction between His245 and G1595 suggests an alteration in the translation reaction.
 
-## Methylation of His245 of RPL3 slows ribosome traverse at Tyr codons
+![Figure 3.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig3-v1.jpg)
+
+**Figure 3.:** (A) Stick models of 244GHR246 of RPL3 and G1595 of the 28S rRNA of the human ribosome are shown with the cryo-electron microscopy (cryo-EM) density map around His245. The τ-N-methyl group was manually added to the original model (PDB ID: 6Y6X) (Osterman et al., 2020) based on the cryo-EM density map. (B) The same model as in (A) of human ribosome from METTL18 knockout (KO) cells. A hydrogen bond between His245 and G1595 is indicated with a dotted blue line.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Electropherogram of ribosomal RNAs from naïve and METTL18 knockout (KO) HEK293T cells. Data from two replicates are shown. (B, C) Sucrose density gradient for ribosomal complexes from naïve and METTL18 KO HEK293T cells (B) and the quantification (C). The lysate was prepared with a buffer containing EDTA to dissociate 80S into 40S and 60S. In (C), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. (D) Western blot of the indicated proteins to confirm the knockdown of RPL17. β-Actin was probed for as a loading control. (E, F) Sucrose density gradient for ribosomal complexes from control siRNA (siControl) and RPL17 siRNA (siRPL17)-transfected cells (E) and the quantification (F). The lysate was prepared with a buffer containing EDTA to dissociate 80S into 40S and 60S. In (F), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. Significance was determined by Student’s t-test (unpaired, two-sided).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative cryo-electron microscopy (cryo-EM) micrographs of human ribosomes isolated from METTL18 KO cells. (B) Flow of the cryo-EM structural analysis of the human 60S subunit from METTL18 KO cells. (C) Resolution curves of the reconstituted cryo-EM structure of the human 60S subunit from METTL18 KO cells.
+
+**Table 1.**
+ Data collection, model building, refinement, and validation statistics for cryo-electron microscopy (cryo-EM) data obtained in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Human large ribosomal subunit (obtained from METTL18 KO cells) (PDB: 7F5S, EMD-31465)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td>Tecnai Arctica</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>K2 Summit</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>39,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Exposure per frame</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>Number of frames collected</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–1.5 to –3.1</td>
+    </tr>
+    <tr>
+      <td>Micrographs (no.)</td>
+      <td>5,517</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>3D processing package</td>
+      <td>RELION-3.1</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>381,227</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>118,470</td>
+    </tr>
+    <tr>
+      <td>Initial reference map</td>
+      <td>EMD-9701 (40 Å)</td>
+    </tr>
+    <tr>
+      <td>RELION estimated accuracy</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rotations (°)</td>
+      <td>0.162</td>
+    </tr>
+    <tr>
+      <td>Translations (pixel)</td>
+      <td>0.287</td>
+    </tr>
+    <tr>
+      <td>Map resolution</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>masked (FSC = 0.143, Å)</td>
+      <td>2.72</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor</td>
+      <td>–63.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model refinement package</td>
+      <td>phenix.real_space_refine</td>
+    </tr>
+    <tr>
+      <td>Initial model used</td>
+      <td>6QZP</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chains</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>138,634</td>
+    </tr>
+    <tr>
+      <td>Residues</td>
+      <td>Protein: 6509; nucleotide: 3991</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>ZN: 5, MG: 297</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>62.85</td>
+    </tr>
+    <tr>
+      <td>Nucleotide</td>
+      <td>81.15</td>
+    </tr>
+    <tr>
+      <td>r.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.834</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.92</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>9.61</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>CaBLAM outliers (%)</td>
+      <td>3.35</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>93.79</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>6.08</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Map CC (CCmask)</td>
+      <td>0.90</td>
+    </tr>
+  </tbody>
+</table>
+
+### Methylation of His245 of RPL3 slows ribosome traverse at Tyr codons
 
 To investigate the impacts of the modification on protein synthesis, we assessed global translation in METTL18 KO cells. However, we could not detect a significant difference in overall translation probed by polysome formation (Figure 4—figure supplement 1A and B), whereas RPL17 knockdown reduced the polysome (Figure 4—figure supplement 1C and D). Similarly, we could not observe a significant alteration in nascent peptides labeled with O-propargyl-puromycin (OP-puro) (Figure 4—figure supplement 1E).
 
 Nonetheless, we investigated the implications of RPL3 methylation defects across the transcriptome by ribosome profiling (Ingolia et al., 2009; Iwasaki and Ingolia, 2017). Strikingly, we found increased translation elongation of Tyr codons in METTL18 KO cells; ribosome occupancy on Tyr codons at the A-site was selectively reduced in the mutant cells (Figure 4A and B). This trend in ribosome occupancy was not observed at the P and E sites (Figure 4—figure supplement 2A and B). To evaluate the amino acid context associated with the high elongation rate, we surveyed the motifs around the A-site with reduced ribosome occupancy by METTL18 depletion (Figure 4C) and analyzed the enriched/depleted sequence in the group (Figure 4D). Remarkably, Tyr at the A-site was the predominant determinant for fast elongation in METTL18 KO cells (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig4-v1.jpg)
+
+**Figure 4.:** (A) Ribosome occupancy at A-site codons in naïve and METTL18 knockout (KO) HEK293T cells. Data were aggregated into codons with each amino acid species. (B) Ribosome occupancy changes at A-site codons caused by METTL18 KO. (C) Histogram of ribosome occupancy changes in METTL18 KO cells across motifs around A-site codons (seven amino acid motifs). Cyan: motifs with reduced ribosome occupancy (defined by ≤ mean – 2 SD). (D) Amino acid motifs associated with reduced ribosome occupancy in METTL18 KO cells (defined in C) are shown relative to the A-site (at the 0 position). (E) Distribution of footprint length in naïve and METTL18 KO HEK293T cells. (F) Ribosome occupancy changes on Tyr codons by METTL18 KO along all, long (28–33 nt), and short (20–24 nt) footprints. Significance was determined by the Mann–Whitney U-test. (G) The recovery of long footprint reduction in METTL18 KO cells by ectopic expression of METTL18 protein. Significance was determined by the Mann–Whitney U-test. (H) Changes in ribosome occupancy on Tyr codons by METTL18 KO in HAP1 cells along long (28–33 nt) footprints. Del., deletion. In (A–C) and (E–H), the means of two independent experiments are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Sucrose density gradient for ribosomal complexes from naïve and METTL18 knockout (KO) HEK293T cells (A) and the quantification (B). The 80S ribosome and polysomes were stabilized by Mg ion and cycloheximide. In (B), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. (C, D) Sucrose density gradient for ribosomal complexes from control siRNA (siControl)- and RPL17 siRNA (siRPL17)-transfected cells (C) and the quantification (D). 80S and polysomes were stabilized by Mg ion and cycloheximide. In (D), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. Significance was determined by Student’s t-test (unpaired, two-sided). (E) Newly synthesized proteins in naïve and METTL18 KO HEK293T cells were labeled with OP-puro and then conjugated with infrared 800 (IR800) dye with a click reaction. The signal was normalized to total proteins stained with Coomassie brilliant blue (CBB). Data from three replicates (points) and the mean (bar) with SD (error bar) are shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) Ribosome occupancy at P-site (A) and E-site (B) codons. Data were aggregated into codons with each amino acid species. The means of two independent experiments are shown. (C, D) Northern blot for tRNATyrGUA (C) and its quantification (D). U6 snRNA was used as loading control. In (D), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. Significance was determined by Student’s t-test (unpaired, two-sided). (E, F) Same as (C) and (F) but for tRNALeuHAG. In (F), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. H stands for A, C, or U. (G) Schematic representation of mutations in METTL18 KO HAP1 cells. Del., deletion.
 
 The smoother elongation may be caused by increased tRNA abundance. However, tRNATyrGUA, which decodes both UAU and UAC codons, was noticeably reduced by METTL18 depletion (Figure 4—figure supplement 2C and D). On the other hand, the abundance control tRNALeuHAG was not altered (Figure 4—figure supplement 2E and F). Thus, tRNA abundance did not explain the reduced footprints on Tyr codons.
 
@@ -90,9 +329,17 @@ Further ribosome profiling data analysis supported that the accommodation of tRN
 
 To test the cell-type specificity, we further extended our ribosome profiling experiments in HAP1 cells, which originate from chronic myelogenous leukemia. We investigated ribosome footprints on the Tyr codons in three independent METTL18 KO cell lines (1-nt, 2-nt, and 4-nt deletions) that should lead to truncated proteins (Figure 4—figure supplement 2G) and observed the reduction of ribosome occupancies on the codons in those cell lines as well (Figure 4H). These data suggested consistent effects of RPL3 methylation on elongation irrespective of cell type.
 
-## Ribosomes deficient for RPL3 methylation exhibit higher processivity on Tyr codons in vitro
+### Ribosomes deficient for RPL3 methylation exhibit higher processivity on Tyr codons in vitro
 
 To further assess the effect of RPL3 methylation on Tyr codon elongation, we combined hybrid in vitro translation (Erales et al., 2017; Panthu et al., 2015) with the Renilla-firefly luciferase fusion reporter system (Kisly et al., 2021; Figure 5A). In this setup, we purified ribosomes from HEK293T (naïve or METTL18 KO) cells, added them to ribosome-depleted rabbit reticulocyte lysate (RRL), and then conducted an in vitro translation assay (i.e., hybrid translation) (Erales et al., 2017; Panthu et al., 2015; Figure 5A). Indeed, we observed that removal of the ribosomes from RRL decreased protein synthesis in vitro and that complementation with ribosomes from HEK293T cells recovered the activity (Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic representation of the hybrid translation system and the processivity reporter. (B) The box plot for the relative ratio of SlopeFluc to SlopRluc for the reporter with Tyr repeat insertion. Data from seven replicates (points) are shown. Significance was determined by Brunner–Munzel test (unpaired, two-sided).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) In vitro translation from firefly luciferase was conducted in the indicated materials. Data from three replicates (points) and the mean (bar) with SD (error bar) are shown. RRL, rabbit reticulocyte lysate. (B) The box plot for the relative ratio of SlopeFluc to SlopRluc for the reporters with and without Tyr repeat insertion. Data from three replicates for no insertion reporter and seven replicates for Tyr repeat-inserted reporter (points) are shown. Significance was determined by the Student’s t-test (unpaired, two-sided).
 
 To test the effect on Tyr codon elongation, we harnessed the fusion of Renilla and firefly luciferases; this system makes it possible to detect the delay/promotion of downstream firefly luciferase synthesis compared to upstream Renilla luciferase and thus to focus on the effect of the sequence inserted between the two luciferases on elongation (Kisly et al., 2021; Figure 5A). For better detection of the effects on Tyr codons, we used a repeat of the codon (×39; the number was due to cloning constraints). We note that the insertion of Tyr codon repeats reduced the elongation rate (or processivity), as we observed the reduced slope of the downstream Fluc synthesis (Figure 5—figure supplement 1B).
 
@@ -100,7 +347,7 @@ Then, we coupled the in vitro translation system and the reporter. We observed t
 
 These in cell and in vitro data together indicated that RPL3 methylation mediated a slowing of translation elongation on the Tyr codons.
 
-## RPL3 histidine methylation ensures the proper proteostasis
+### RPL3 histidine methylation ensures the proper proteostasis
 
 Ribosome traverse along the mRNA determines the quality of protein synthesized (Cassaignau et al., 2020; Collart and Weiss, 2019; Stein and Frydman, 2019). Slowdown of ribosome elongation is advantageous since it allows the duration of nascent protein folding before completion of protein synthesis. Therefore, we reasoned that translation elongation slowdown at Tyr codons by RPL3 methylation facilitates protein folding on ribosomes and maintains proper homeostasis of the proteome.
 
@@ -108,9 +355,17 @@ To test this possibility, we employed an aggregation-prone firefly luciferase (F
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig6-v1.jpg)
 
-**Figure 6.:** (A) Microscopic images of FlucWT-EGFP or FlucDM-EGFP in naïve and METTL18 knockout (KO) HEK293T cells. Arrowhead, protein aggregation; scale bar, 10 μm. (B) Quantification of cells with Fluc-EGFP aggregates. Data from three replicates (points) and the mean (bar) with SD (error bar) are shown. Significance was determined by Student’s t-test (unpaired, two-sided). (C) Western blot for FlucDM-EGFP (probed by anti-GFP antibody) expressed in naïve and METTL18 KO HEK293T cells treated with MG132 (0.25 μM for 24 hr). β-Actin was probed as a loading control.Figure 6—source data 1.Figure 6A.Figure 6—source data 2.Figure 6C.Figure 6—source data 3.Figure 6B.
+**Figure 6.:** (A) Microscopic images of FlucWT-EGFP or FlucDM-EGFP in naïve and METTL18 knockout (KO) HEK293T cells. Arrowhead, protein aggregation; scale bar, 10 μm. (B) Quantification of cells with Fluc-EGFP aggregates. Data from three replicates (points) and the mean (bar) with SD (error bar) are shown. Significance was determined by Student’s t-test (unpaired, two-sided). (C) Western blot for FlucDM-EGFP (probed by anti-GFP antibody) expressed in naïve and METTL18 KO HEK293T cells treated with MG132 (0.25 μM for 24 hr). β-Actin was probed as a loading control.
 
 Then, we explored the proteome, the quality of which was assisted by RPL3 histidine methylation. For this purpose, we surveyed the proteins aggregated in METTL18 KO cells by SILAC (Figure 7A). We observed that a subset of proteins were enriched in precipitates of METTL18 KO cell lysates (Figure 7B). This subgroup significantly accumulated Tyr-rich proteins (defined as proteins possessing 30 Tyr or more) (hypergeometric test, p=0.0068) (Figure 7B). The high probability of protein precipitates could not be explained by the increased net protein synthesis measured by ribosome profiling (Figure 7—figure supplement 1A). More generally, Tyr-rich proteins were more prone to precipitate upon the deletion of METTL18 (Figure 7—figure supplement 1B) than proteins rich in other amino acids (Figure 7C). Thus, proteomic analysis of cellular precipitates revealed that the modulation of Tyr-specific translation elongation by RPL3 methylation confers proteome integrity.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic representation of SILAC-MS for precipitated proteins. (B) Volcano plot for precipitated proteins in METTL18 knockout (KO) cells, assessed by SILAC-MS (n = 2). Tyr-rich proteins were defined as proteins with 30 or more Tyr residues. (C) Amino acids associated with protein precipitation in METTL18 KO cells. Precipitated proteins enriched with each amino acid were compared to the total precipitated proteome. The mean fold change and the significance (Mann–Whitney U-test) were plotted. (D) Metagene plot for aggregation percentage, calculated with TANGO (Fernandez-Escamilla et al., 2004), around Tyr codons of precipitated proteins in METTL18 KO cells (defined in B). (E) Distribution (at the A-site) of ribosome footprint occupancy (the mean of two independent experiments) along the MACROH2A1 gene in naïve (gray) and METTL18 KO (magenta) HEK293T cells, depicted with the aggregation percentage (light blue) calculated by TANGO (Fernandez-Escamilla et al., 2004). Tyr codon positions are highlighted with arrows.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Comparison of fold change in protein precipitates (n = 2) assessed by SILAC and that in ribosome profiling by METTL18 depletion. (B) Cumulative distribution of Tyr-rich proteins along the fold change in protein precipitates by METTL18 depletion. Significance was calculated by the Mann–Whitney U-test. (C, D) Distribution (at the A-site) of ribosome footprint occupancy (the mean of two independent experiments) along the MACROH2A1 gene in naïve (gray) and METTL18 KO (magenta) HEK293T cells, depicted with the aggregation percentage (light blue) calculated with TANGO (Fernandez-Escamilla et al., 2004). Tyr codon positions are highlighted with arrows. Data on the entire CDS (C) and the 30–60 amino acid region (D) are depicted.
 
 These data led us to further investigate the properties of the proteome associated with Tyr. Here, we surveyed the aggregation propensity of the precipitated proteins by TANGO, which is based on statistical mechanics (Fernandez-Escamilla et al., 2004). Strikingly, metagene analysis showed prominent enrichment of the TANGO-predicted aggregation propensity around the Tyr codons (Figure 7D). As exemplified in the MACROH2A1 protein, the subpart of the aggregation-prone region in this protein was found on Tyr with reduced ribosome occupancies in METTL18 KO cells (Figure 7E, Figure 7—figure supplement 1C and D).
 
@@ -121,6 +376,18 @@ Ultimately, the low-quality protein synthesized by RPL3-unmethylated ribosomes m
 **Figure 8.:** (A) Schematic representation of SILAC-MS for total proteins. (B, C) Cellular protein abundance changes in METTL18 knockout (KO) cells with the treatment of proteasome inhibitor MG132 and the control DMSO, assessed by SILAC-MS (n = 2). The relative abundance in METTL18 KO HEK293T cells compared to naïve HEK293T cells is calculated. Data with DMSO or MG132 treatment (B) and fold enrichment (MG132 compared to DMSO) (C) are shown ranked by the fold enrichment in (C). Proteins with 1.5 or higher enrichment by MG132 treatment are highlighted. Tyr-rich proteins are defined as proteins with 30 or more Tyr residues.
 
 The relationships among the aggregation-prone character of the protein, the cellular protein precipitates, increased proteasomal substrates, and reduced ribosome occupancy indicates that Tyr translation modulated by RPL3-methylated ribosomes is associated with the quality of the synthesized proteins, preventing unwanted protein aggregation (Figure 9).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig9-v1.jpg)
+
+**Figure 9.:** METTL18 adds a methyl moiety at the τ-N position of His245 in RPL3 in the form of an early 60S biogenesis intermediate. Methylated ribosomes slow elongation at Tyr codons and extend the duration of nascent peptide folding, ensuring proteostatic integrity. Without RPL3 methylation, the accumulation of unfolded and ultimately aggregated proteins in cells was induced.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A, B) Structures of early (state B, PDB 6EM4:) and late (state D, PDB: 6EM5) pre-60S (Kater et al., 2017). A possible region of the protein fragment containing His245 in RPL3 is highlighted in a dashed circle. RPL3, magenta; assembly factor, light blue; ribosomal proteins, light gray; rRNA, dark gray. (C, D) Metagene analysis of ribosome footprints around the stop codon. A-site potion of footprints is depicted. In (D), a zoomed-in view of the plot is shown. The mean of two independent experiments is shown.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/72780/elife-72780-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A, B) Sucrose density gradient for ribosomal complexes from naïve and METTL18 knockout (KO) (2-nt del.) HAP1 cells (A) and the quantification (B). 80S and polysomes were stabilized by Mg ion and cycloheximide. In (B), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. Significance was determined by Student’s t-test (unpaired, two-sided). (C, D) Sucrose density gradient for ribosomal complexes from naïve and METTL18 KO (2-nt del.) HAP1 cells (C) and the quantification (D). The lysate was prepared with a buffer containing EDTA to dissociate 80S into 40S and 60S. In (D), data from three replicates (points) and the mean (bar) with SD (error bar) are shown. (E) Quantification of ribosomal RNAs from naïve and METTL18 KO (2-nt del.) HAP1 cells by fragment analyzer. Data from three replicates (points) and the mean (bar) with SD (error bar) are shown.
 
 ## Discussion
 
@@ -140,63 +407,63 @@ Although ribosome traversal along the CDS is generally defined by the decoding r
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
-## PX330-B/B-gMETTL18
+#### PX330-B/B-gMETTL18
 
 To express two guide RNAs targeting upstream and downstream regions of exon 2 of the METTL18 gene, DNA fragments containing 5′-TCTCTTTAGCAGCTTATACA-3′ and 5′-GGTTGTGGATCAGGTTTACT-3′ were cloned into PX330-B/B (Yamazaki et al., 2018) via the BbsI and BsaI sites, respectively.
 
-## pL-CRISPR.EFS.tRFP-gSETD3
+#### pL-CRISPR.EFS.tRFP-gSETD3
 
 To express a guide RNA targeting exon 6 of the SETD3 gene, a DNA fragment containing 5′-AGCCATGGGAAACATCGCAC-3′ was cloned into pL-CRISPR.EFS.tRFP (Addgene#57819; http://n2t.net/addgene:57819; RRID:Addgene_57819) (Heckl et al., 2014).
 
-## pET19b-mMETTL18
+#### pET19b-mMETTL18
 
 To express N-terminally His-tagged full-length mouse METTL18, cDNA was PCR-amplified from a FANTOM clone (AK139786) and cloned into NdeI and XhoI sites of the pET19b vector (Novagen).
 
-## pCold-GST-mMETTL18
+#### pCold-GST-mMETTL18
 
 To express N-terminally His- and GST-tagged full-length mouse METTL18, the PCR-amplified fragment was cloned into the NdeI and XhoI sites of the pCold-GST vector (TaKaRa).
 
-## pcDNA3-hRPL3-FLAG (WT and His245Ala) and pcDNA3-mRPL3-FLAG (WT and His245Ala)
+#### pcDNA3-hRPL3-FLAG (WT and His245Ala) and pcDNA3-mRPL3-FLAG (WT and His245Ala)
 
 To express C-terminally FLAG-tagged mouse and human RPL3, each cDNA fragment was amplified from the mouse cDNA and HEK293T cDNA libraries and cloned into EcoRI and NotI sites of the pcDNA3 vector (Invitrogen) with a C-terminal FLAG-tag sequence. To generate His245Ala mutants, the QuikChange Site-Directed Mutagenesis Kit (Agilent Technologies) was used.
 
-## pQCXIP-hMETTL18-HA and hMETTL18-Asp193Lys-Gly195Arg-Gly197Arg-HA
+#### pQCXIP-hMETTL18-HA and hMETTL18-Asp193Lys-Gly195Arg-Gly197Arg-HA
 
 For retrovirus expression, cDNA fragment of human METTL18 with a C-terminal HA sequence was cloned into AgeI and EcoRI sites of the pQCXIP vector (Clontech). To generate hMETTL18-Asp193Lys-Gly195Arg-Gly197Arg-HA, the QuikChange Site-Directed Mutagenesis Kit (Agilent Technologies) was used.
 
-## psiCHECK2-Y0× and Y39×
+#### psiCHECK2-Y0× and Y39×
 
 To generate the psiCHECK2-Y0× reporter, the intergenic region between Rluc and Fluc was excluded by inverse PCR. The plasmid encodes the ORF for the Rluc-Fluc fusion. To generate the psiCHECK2-Y39× reporter, 39 repeats of the TAC sequence were inserted between Rluc and Fluc of psiCHECK2-Y0×.
 
-## Cell lines: HEK293T
+### Cell lines: HEK293T
 
 HEK293T KO cell lines were generated by the CRISPR-Cas9 system. All cell lines in the laboratory were routinely tested for Mycoplasma contamination with the MycoAlert Mycoplasma Detection Kit (LONZA) and confirmed negative.
 
-## METTL18 KO cells
+#### METTL18 KO cells
 
 PX330-B/B-gMETTL18, which expresses hCas9 and two guide RNAs designed to induce large deletions in exon 2, and pEGFP-C1 (Clontech) were cotransfected into HEK293T cells. After 2 days of incubation, individual GFP-positive cells were sorted into 96-well plates. The clonal cell lines were screened by genomic PCR with the primers 5′-GGACTTTATGTTTGTCCAGGTGG-3′ and 5′-TGGGTTGTAAATGGTTTCTGAGG-3′. e-Myco VALiD (LiliF) confirmed that the cells were negative for Mycoplasma.
 
-## METTL18 KO cells with stable METTL18 expression
+#### METTL18 KO cells with stable METTL18 expression
 
 Retrovirus packaging cells were transfected with pQCXIP-hMETTL18-HA, pQCXIP-hMETTL18-Asp193Lys-Gly195Arg-Gly197Arg-HA, or the pQCXIP empty vector (as a negative control) using PEI transfection reagent (Polysciences) and cultured for 24 hr. Then, METTL18 KO cells were inoculated with the virus-containing culture supernatant and 4 μg/ml of polybrene. At 24 hr post-infection, cells were selected with 1 μg/ml puromycin and cultured for additional 2 weeks. e-Myco VALiD (LiliF) confirmed that the cells were negative for Mycoplasma.
 
-## SETD3 KO and SETD3-METTL18 DKO cells
+#### SETD3 KO and SETD3-METTL18 DKO cells
 
 pL-CRISPR.EFS.tRFP-gSETD3, which expressed a guide RNA designed to induce small insertion or deletion (InDel), was transfected into HEK293T cells or METTL18 KO cells. After 2 days of incubation, individual RFP-positive cells were sorted into 96-well plates. The clonal cell lines were further screened by Western blot for SETD3 protein.
 
-## Cell lines: HAP1
+#### Cell lines: HAP1
 
 HAP1 cells, including naïve cells (C631) and METTL18 KO cells (1-nt del., HZGHC000541c009; 2-nt del., HZGHC000541c002; and 4-nt del., HZGHC000541c012), were purchased from Horizon Discovery. e-Myco VALiD (LiliF) confirmed that the cells were negative for Mycoplasma.
 
-## Recombinant protein purification
+### Recombinant protein purification
 
-## Salmonella MTAN, His-METTL18, and His-GST-METTL18
+#### Salmonella MTAN, His-METTL18, and His-GST-METTL18
 
 The BL21 (pLysS) strain transformed with Salmonella MTAN (a gift from Vern Schramm [Addgene plasmid #64041; http://n2t.net/addgene:64041; RRID:Addgene_64041]), pET19b-mMETTL18, or pCold-GST-mMETTL18 was cultured in 2× YT medium with 100 µg/ml ampicillin and 0.2 mM isopropyl β-d-1-thiogalactopyranoside (IPTG) for 18 hr at 16°C. The pelleted cells were lysed with 1× PBS with 0.5% NP-40 by sonication with a sonic homogenizer (Branson Ultrasonics, Sonifier S-250D) for 5 min on ice. After centrifugation at 15,000 × g for 10 min, the cleared cell extract was incubated with Ni-NTA Agarose (QIAGEN) or Glutathione Sepharose 4B (Cytiva) for 1 hr at 4°C with gentle agitation. The beads were washed five times with His wash buffer (50 mM Tris-HCl pH 7.4 and 25 mM imidazole) or GST wash buffer (1× phosphate-buffered saline [PBS]). Then, proteins were eluted with His elution buffer (50 mM Tris-HCl pH 7.4 and 250 mM imidazole) or GST elution buffer (50 mM Tris-HCl pH 8.0 and 50 mM glutathione). The purified proteins were dialyzed with dialysis buffer (50 mM Tris-HCl pH 8.0, 100 mM NaCl, 0.2 mM dithiothreitol [DTT], and 10% glycerol) using Slide-A-Lyzer Dialysis Cassettes (MWCO 10 kDa, Thermo Fisher Scientific) or Amicon Ultra (MWCO 10 kDa, Merck Millipore). The protein concentration was measured using the Bradford Protein Assay Kit (Bio-Rad).
 
-## Western blot
+### Western blot
 
 Anti-α-tubulin (Sigma-Aldrich, clone B-5-1-2, 1:1000), anti-METTL18 (Proteintech Group, 25553-1-AP), anti-SETD3 (Abcam, ab174662, 1:1000), anti-RPL3 (Proteintech Group, 66130-1-lg and 11005-1-AP, 1:1000), anti-PES1 (Abcam, ab252849, 1:1000), anti-NMD3 (Abcam, ab170898, 1:1000), anti-HA (Medical & Biological Laboratories [MBL], M180-3, 1:1000), anti-GFP (Abcam, ab6556, 1:1000), anti-RPL17 (Proteintech Group, 14121–1-AP, 1:1000), and anti-β-actin (MBL, M177-3, 1:1000) primary antibodies were used.
 
@@ -204,23 +471,23 @@ For Figures 1C and 2A, Figure 1—figure supplement 1D, anti-mouse IgG, HRP-Link
 
 To generate Figures 2B and 5C, Figure 3—figure supplement 1D, IRDye680- or IRDye800CW-conjugated secondary antibodies (LI-COR Biosciences, 925-68070/71 and 926-32210/11/19, respectively, 1:10,000) were used. Images were obtained with Odyssey CLx (LI-COR Biosciences).
 
-## Mass spectrometry
+### Mass spectrometry
 
-## Multiple reaction monitoring
+#### Multiple reaction monitoring
 
 Methylhistidine content analysis was performed essentially as previously described (Davydova et al., 2021). Proteins were precipitated with acetone and hydrolyzed to amino acids with 6 N HCl at 110°C for 24 hr. After dissolving in 25 µl of 5 mM ammonium formate/0.001% formic acid, the amino acids were applied to a LC system (Thermo Fisher Scientific, Vanquish UHPLC). The amino acids loaded on a C18 column (YMC, YMC-Triart C18, 2.0 × 100 mm length, 1.9 µm particle size) were separated at a flow rate of 0.3 ml/min by gradient elution of mobile phase ‘A’ (5 mM ammonium formate with 0.001% formic acid) and mobile phase ‘B’ (acetonitrile) as follows: 0/0 – 1.5/0 – 2/95 – 4/95 – 4.1/0 – 7/0 (min/%B). The effluent was then directed to an electrospray ion source (Thermo Fisher Scientific, HESI-II) connected to a triple quadrupole mass spectrometer (Thermo Fisher Scientific, TSQ Vantage EMR) in positive ion MRM mode. The electrospray was run with the following settings: spray voltage of 3000 V, vaporizer temperature of 450°C, sheath gas pressure of 50 arbitrary units, auxiliary gas pressure of 15 arbitrary units, and collision gas pressure of 1.0 mTorr. The transition of specific MH+→ fragment ions was monitored (His, m/z 156.1→83.3, 93.2, and 110.2; π-N-MeHis, m/z 170.1→95.3, 97.3, and 109.2; τ-N-MeHis, m/z 170.1→81.3, 83.3, and 124.2). Data were calibrated with 1–250 nM standards (His, π-N-MeHis, and τ-N-MeHis) at every run. The concentrations of His, π-N-MeHis, and τ-N-MeHis in the samples were calculated from the calibration curves obtained from the standards.
 
-## ProSeAM-SILAC-MS
+### ProSeAM-SILAC-MS
 
 ProSeAM was synthesized as previously described (Sohtome et al., 2018). ProSeAM substrate screening was carried out as reported (Shimazu et al., 2018) with some modifications. METTL18 KO cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) containing either light Arg/Lys or heavy isotope-labeled Arg (13C6 15N4 l-arginine)/Lys (13C6 15N2 l-lysine) (Thermo Fisher Scientific, respectively) at least six doubling times. The cells were lysed with 50 mM Tris-HCl pH 8.0, 50 mM KCl, 10% glycerol, and 1% n-dodecyl-β-d-maltoside. For the cells cultured with the heavy amino acids, the lysate containing 200 μg of proteins was incubated with 150 μM ProSeAM and 10 μg of His-METTL18 in 50 mM Tris-HCl pH 8.0 at 20°C for 2 hr. For the lysate with the light amino acids, His-METTL18 was omitted from the reaction. The reaction was stopped by the addition of four volumes of ice-cold acetone. The proteins were precipitated by centrifugation at 15,000 × g for 5 min, washed once with ice-cold acetone, and then dissolved in 58.5 µl of 1× PBS containing 0.2% sodium dodecyl sulfate (SDS). After the addition of 15 µl of 5× click reaction buffer (7.5 mM sodium ascorbate [Nacalai Tesque], 0.5 mM TBTA [AnaSpec], and 5 mM CuSO4) and 1.5 µl of 10 mM Azide-PEG4-Biotin (Click Chemistry Tools), the click reaction was conducted for 60 min at room temperature, stopped with four volumes of ice-cold acetone, and precipitated as described above. The protein in the pellet was resuspended in 75 µl of binding buffer (1× PBS, 0.1% Tween-20, 2% SDS, and 20 mM DTT) and sonicated for 10 s. The light and heavy isotope-labeled samples were pooled in 450 µl of IP buffer (Tris-buffered saline [TBS] and 0.1% Tween-20) containing 3 µg of Dynabeads M-280 Streptavidin (Thermo Fisher Scientific) and incubated for 30 min at room temperature (note that the final SDS concentration in the solution was 0.5%). The protein-bound beads were washed three times with bead wash buffer (1× PBS, 0.1% Tween-20, and 0.5% SDS) and twice with 100 mM ammonium bicarbonate (ABC) and then used for Western blotting and MS.
 
 For MS/MS analysis, the beads were incubated in 20 mM DTT and 100 mM ABC for 30 min at 56°C and then for 30 min at 37°C in the dark with supplementation with 30 mM iodoacetamide. Subsequently, proteins were digested with 1 µg trypsin (Promega) and subjected to LC (Thermo Fisher Scientific, EASY-nLC 1000) coupled to a Q Exactive Hybrid Quadrupole-Orbitrap Mass Spectrometer (Thermo Fisher Scientific) with a nanospray ion source in positive mode, as previously reported (Davydova et al., 2021). The peptides loaded on a NANO-HPLC C18 capillary column (0.075 mm inner diameter × 150 mm length, 3 µm particle size, Nikkyo Technos) were eluted at a flow rate of 300 nl/min with the two different slopes of mobile phase ‘A’ (water with 0.1% formic acid) and mobile phase ‘B’ (acetonitrile with 0.1% formic acid): 0–30% of phase B in 100 min and 30–65% of phase B in 20 min. Subsequently, the mass spectrometer in the top 10 data-dependent scan mode was run with the following parameters: spray voltage, 2.3 kV; capillary temperature, 275°C; mass-to-charge ratio, 350–1800; normalized collision energy, 28%. The MS and MS/MS data obtained with Xcalibur software (Thermo Fisher Scientific) were surveyed in the Swiss-Prot database with Proteome Discoverer (version 2.3, Thermo Fisher Scientific) and MASCOT search engine software (version 2.7, Matrix Science). Peptides with false discovery rates (FDRs) less than 1% were considered. Proteins with the following criteria were defined as METTL18-dependent labeled proteins: 1.5-fold or more increase in heavy amino acid sample compared to light amino acid sample; one, 10% or more coverage of the protein; and three or more peptides identified.
 
-## LC-MS/MS for methylated peptide
+### LC-MS/MS for methylated peptide
 
 The SDS-PAGE-separated and Coomassie staining-visualized proteins were excised and destained. The gel slices were reduced with 50 mM DTT and 4 M guanidine-HCl at 37°C for 2 hr, followed by alkylation with 100 mM acrylamide at 25°C for 30 min. The RPL3 proteins were digested with chymotrypsin. The MS and MS/MS spectra were acquired with a Q Exactive HFX (Thermo Fisher Scientific). The mass spectrometer was operated in positive mode. The MS/MS spectra were obtained using a data-dependent top 10 method. The acquired data were processed using Proteome Discoverer (version 2.3, Thermo Fisher Scientific). The processed data were used to search with MASCOT (version 2.7, Matrix Science) against the in-house database including the amino acid sequences of RPL3 using the following parameters: type of search, MS/MS ion search; enzyme, none; fixed modification, none; variable modifications, Gln->pyro-Glu (N-term Q), oxidation (M), oropionamide (C), and methyl (H); mass values, monoisotopic; peptide mass tolerance, ±15 ppm; fragment mass tolerance, ±30 mmu; peptide charge, 1+, 2+, and 3+; instrument type, ESI-TRAP.
 
-## SILAC-MS for METTL18 KO
+### SILAC-MS for METTL18 KO
 
 Isotopically heavy amino acids (0.1  mg/ml 13C615N2 l-lysine-HCl and 0.1  mg/ml 13C615N4 l-arginine-HCl [both FUJIFILM Wako Chemicals]) or regular amino acids (0.1  mg/ml l-lysine-HCl and 0.1  mg/ml l-arginine-HCl [both FUJIFILM Wako Chemicals]) were added to DMEM deficient in both l-lysine and l-arginine for SILAC (Thermo Fisher Scientific) supplemented with 10% dialyzed fetal bovine serum (FBS) (Sigma-Aldrich). Naïve HEK293T cells and METTL18 KO cells were cultured in media with heavy and light isotopes, respectively, for 2 weeks.
 
@@ -232,11 +499,11 @@ LC-MS/MS analysis was performed using EASY-nLC 1000 (Thermo Fisher Scientific) a
 
 For total proteome analysis, we treated cells with 0.25 μM MG132 (FUJIFILM Wako Chemicals) for 24 hr before cell harvest. Cell lysates were prepared as described above, and the supernatant obtained by centrifugation at 20,000 × g and 4°C for 15 min was used for the downstream analysis.
 
-## Methylation assay
+### Methylation assay
 
 FLAG-tagged RPL3 was transiently expressed in METTL18 KO cells and immunopurified with ANTI-FLAG M2 Affinity Gel (Sigma-Aldrich). The purified proteins were incubated in 1× reaction buffer (50 mM Tris-HCl pH 8.5 and 50 mM MgCl2) with 1 µg of His-GST-METTL18, 2 µM MTAN, and 0.01 µCi of 14C-labeled SAM (PerkinElmer) at 30°C for 2 hr. The reaction was stopped by the addition of Laemmli SDS-sample buffer. Proteins were separated on a 10% acrylamide SDS-PAGE gel. The dried gel was exposed to an imaging plate (FUJIFILM) for 48 hr. The autoradiograph was detected with a phosphor imaging scanner (Cytiva, Amersham Typhoon).
 
-## Cryo-EM
+### Cryo-EM
 
 The crude ribosomal pellet was suspended in buffer A (50 mM Tris-HCl pH 7.5, 150 mM KCl, 4 mM magnesium acetate, 1 mM DTT, 7% [w/v] sucrose, and 1 mM puromycin) by mixing with a magnetic stirrer for 4 hr on ice. After stirring, the suspension was centrifuged at 15,000 × g for 10 min at 4°C. The supernatant was loaded onto a HiPrep 16/60 Sephacryl S-500 column (Cytiva) equilibrated with buffer A without puromycin. The fraction was recovered and concentrated using Amicon Ultra (MWCO 50 kDa, Merck Millipore). The concentrated mixture was supplemented with 0.1 mM puromycin, 2 mM magnesium acetate, and 2 mM ATP and incubated for 30 min at 37°C. The reaction was loaded onto a 10–40% (w/v) sucrose gradient with buffer B (50 mM Tris-HCl pH 7.5, 500 mM KCl, 4 mM magnesium acetate, and 2 mM DTT) and centrifuged at 25,000 rpm in an SW28 rotor for 16 hr at 4°C. 2 ml fractions were successively fractionated from the top of the gradient. An aliquot of each fraction was analyzed by SDS-PAGE, and the gels were stained with Coomassie brilliant blue (CBB) to detect the 40S and 60S subunit proteins. The 40S- and 60S-subunit fractions were mixed and concentrated using Amicon Ultra filter units (MWCO 50 kDa, Merck Millipore). The concentrated mixture was loaded onto a 10–50% (w/v) sucrose gradient with buffer C (50 mM Tris-HCl pH 7.5, 150 mM KCl, 10 mM magnesium acetate, and 2 mM DTT) and centrifuged at 28,000 rpm in an SW41Ti rotor for 3 hr at 4°C. Gradient fractionation was carried out using a piston gradient fractionator equipped with a TRIAX flow cell detector (BioComp) by continuous monitoring of absorbance at a wavelength of 280 nm. The fractions containing 80S ribosomes were dialyzed against preparation buffer (10 mM HEPES-KOH pH 7.5, 30 mM potassium acetate, 10 mM magnesium acetate, and 1 mM DTT) and concentrated using Amicon Ultra filter units (MWCO 50 kDa, Merck Millipore). The concentrated sample was quantified by measuring absorbance at a wavelength of 260 nm and flash-cooled with liquid nitrogen.
 
@@ -248,7 +515,7 @@ Processing of cryo-EM data was performed with RELION-3.1 (Zivanov et al., 2020).
 
 For molecular modeling, the model of the 60S subunit from the human 80S ribosome structure at 2.9 Å resolution (PDB: 6QZP) (Natchiar et al., 2017) was used as a starting model and manually fitted into the map using UCSF Chimera (Pettersen et al., 2004). Map sharpening and model refinement were performed in PHENIX (Adams et al., 2010), and the model was further refined manually with Coot (Emsley et al., 2010). The modified nucleotides of ribosomal RNAs were introduced based on quantitative MS data (Taoka et al., 2018).
 
-## Sucrose density gradient
+### Sucrose density gradient
 
 For Figure 2B, cells were lysed with whole-cell lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 5 mM MgCl2, 1% NP-40, 1 mM DTT, and 100 µg/ml cycloheximide). The whole-cell lysates were passed through a 21-gauge needle and incubated at 4°C for 15 min. To obtain Figure 4—figure supplement 1A–D and Figure 9—figure supplement 2A and B, cells were lysed with lysis buffer (20 mM Tris-Cl pH 7.5, 150 mM KCl, 5 mM MgCl2, 1% Triton X-100, 1 mM DTT, and 100 µg/ml cycloheximide) and cleared by centrifugation at 20,000 × g and 4°C for 10 min. Cell lysate containing 40 µg of total RNA was loaded onto a 10–50% sucrose gradient and ultracentrifuged at 35,300 rpm and 4°C for 2.5 hr by a Himac CP80WX ultracentrifuge (Hitachi) with a P40ST rotor (Hitachi).
 
@@ -258,19 +525,19 @@ To knock down RPL17, HEK293T cells were seeded in complete growth medium in 10 c
 
 The gradients were fractionated with continuous measurement of the absorbance at 260 nm by a Triax Flow Cell (BioComp) and Micro collector (ATTO). For ribosomal complex quantification, the straight line connecting the valleys before and after peaks was defined as a background baseline. Then, the area enclosed by the baseline and the peak waveform was calculated. For Western blot (Figure 2B) or MS analysis (Figure 1—figure supplement 2B), fractions were concentrated using Amicon Ultra filter units (MWCO 10 kDa, Millipore).
 
-## Newly synthesized protein labeling by OP-puro
+### Newly synthesized protein labeling by OP-puro
 
 Metabolic labeling of nascent proteins with OP-puro was performed as previously described (Iwasaki et al., 2019). Cells were treated with 20 µM OP-puro and incubated at 37°C for 30 min in a CO2 incubator. After washing with PBS, cells were lysed with buffer containing 20 mM Tris-HCl pH 7.5, 150 mM NaCl, 5 mM MgCl2, and 1% Triton X-100. Nascent polypeptides were labeled with IRdye800CW Azide (LI-COR Biosciences) with a Click-iT Cell Reaction Buffer Kit (Thermo Fisher Scientific). After free dye was removed by a G-25 column (Cytiva), labeled polypeptides were separated by SDS-PAGE. The gel was imaged by Odyssey CLx (LI-COR Biosciences) for the detection of nascent peptides with infrared at 800 nm. Then, total proteins were stained with CBB (FUJIFILM Wako Chemicals) and imaged with an infrared 700 nm signal. The gel area ranging from 17 kDa to 280 kDa was quantified using Image Studio (version 5.2, LI-COR Biosciences), and the nascent peptide signal was normalized to the total protein signal.
 
-## Ribosome profiling
+### Ribosome profiling
 
-## Library preparation
+#### Library preparation
 
 Ribosome profiling was conducted as previously described (McGlincy and Ingolia, 2017; Mito et al., 2020). HEK293T cells were cultured in DMEM, high glucose, GlutaMAX Supplement (Thermo Fisher Scientific) supplemented with 10% FBS (Sigma-Aldrich). HAP1 cells were cultured in IMEM (Gibco) supplemented with 10% FBS (Sigma-Aldrich). Both cell lines were maintained at 37°C in a humidified atmosphere containing 5% CO2.
 
 Cell lysates were treated with RNase I, and 17–34-nt protected RNA fragments were gel-excised. After the RNA fragments were ligated with preadenylated linkers, ribosomal RNAs were removed by a Ribo-Zero Gold rRNA Removal Kit (Human/Mouse/Rat) (Illumina, RZG1224). Then, the ligated RNA fragments were reverse-transcribed. The cDNAs were circularized using CircLigaseII (Lucigen) and PCR-amplified. The libraries were sequenced on a HiSeq4000 (Illumina, single reads for 50 nt) for HEK293T cells and a HiSeqX Ten (Illumina, paired ends for 150 nt) for HAP1 cells.
 
-## Data analysis
+#### Data analysis
 
 After removal of the linker sequences, all reads were aligned to human noncoding RNAs (including rRNA, tRNA, snoRNA, snRNA, and microRNA) using STAR (version 2.7.0a) (Dobin et al., 2013). Then, the remaining reads were aligned to the human hg38 reference genome by STAR and assigned to canonical transcripts in the University of California, Santa Cruz (UCSC), known gene reference. For HAP1 cell data, the sequences of reads 1 were corrected by reads 2, before quality filtering and adapter sequence trimming.
 
@@ -278,31 +545,31 @@ The A-site offsets for each footprint length were empirically estimated: in the 
 
 To search for motifs associated with Tyr codon around A-site, ribosome occupancies on the seven amino acid motifs were averaged. Motifs with average ribosome occupancy scores greater than 0.3 were used for the downstream analysis. Then, the log2-fold changes in METTL18 KO cells over naïve cells were calculated. Motifs with log2-fold changes less than mean –2 SD were subjected to kpLogo (http://kplogo.wi.mit.edu) (Wu and Bartel, 2017).
 
-## Northern blot
+### Northern blot
 
 Total RNA was extracted from cells by TRIzol Reagent (Thermo Fisher Scientific) according to the manufacturer’s instructions. Purified RNAs were electrophoresed on Super Sep RNA gels (FUJIFILM Wako Chemicals), transferred onto nylon membranes (Biodyne, Thermo Fisher Scientific), and then UV-crosslinked. The membranes were incubated with UltraHyb-Oligo (Thermo Fisher Scientific) at 37°C for 1 hr. DNA oligonucleotide probes (see below for details) were radiolabeled with [γ−32P] ATP (PerkinElmer) by T4 PNK (New England Biolabs) and purified with a G-25 column (Cytiva). After prehybridization, membranes were incubated with a labeled DNA probe overnight at 37°C and washed three times with 2× saline-sodium citrate solution. The signal on the membranes was detected by an Amersham Typhoon (Cytiva) scanner. DNA oligonucleotide sequences used as probes are listed below:
 
 tRNATyrGUA: 5′-ACAGTCCTCCGCTCTACCAGCTGA-3′, tRNALeuHAG: 5′-CAGCGCCTTAGACCGCTCGGCCA-3′, and U6: 5′-CACGAATTTGCGTGTCATCCTT-3′.
 
-## Hybrid in vitro translation
+### Hybrid in vitro translation
 
 The hybrid translation assay was performed as described previously (Erales et al., 2017; Panthu et al., 2015) with optimization for the purpose of this study.
 
-## mRNA preparation
+### mRNA preparation
 
 For Fluc reporter, a PCR fragment was PCR-amplified from pGL3 basic (Promega) with the primers 5′-TGACTAATACGACTCACTATAGG-3′ and 5′-TGTATCTTATCATGTCTGCTCGAA-3′. For Rluc-Y0×-Fluc and Rluc-Y39×-Fluc reporters, DNA fragments were PCR-amplified by psiCHECK2-Y0× and Y39× with the primers 5′-TGACTAATACGACTCACTATAGG-3′ and 5′-TGTATCTTATCATGTCTGCTCGAA-3′.
 
 The DNA fragments were used for in vitro transcription by T7-Scribe Standard RNA IVT kit (CELLSCRIPT). Then, the RNAs were capped with the ScriptCap m7G Capping system (CELLSCRIPT) and polyadenylated with the A-Plus poly(A) polymerase Tailing Kit (CELLSCRIPT).
 
-## RRL supernatant
+### RRL supernatant
 
 1 ml of RRL (nuclease-treated, Promega) was ultracentrifuged at 240,000 × g for 2 hr 15 min at 4°C by an Optima MAX-TL ultracentrifuge (Beckman Coulter) with a TLA110 rotor (Beckman Coulter). Then, 900 μl of supernatant was collected, flash-frozen by liquid nitrogen, and stored at −80°C.
 
-## Ribosome preparation
+### Ribosome preparation
 
 After brief washing with PBS, cells were resuspended with PBS and centrifuged at 500 × g for 3 min. The pellet of cells was resuspended in the same volume of buffer R (10 mM HEPES pH 7.5, 10 mM KOAc, 1 mM MgOAc2, and 1 mM DTT) and incubated for 15 min on ice. Subsequently, the mixture was vortexed for 30 s and centrifuged at 16,000 × g for 10 min at 4°C. Then, 300 μl of the supernatant was ultracentrifuged through a 1 ml sucrose cushion (1 M sucrose in buffer R) at 240,000 × g for 2 hr 15 min at 4°C by an Optima MAX-TL ultracentrifuge (Beckman Coulter) with a TLA110 rotor (Beckman Coulter). The pellet was rinsed with buffer R2 (20 mM HEPES pH 7.5, 10 mM NaCl, 25 mM KCl, 1.1 mM MgCl2, and 7 mM 2-mercaptoethanol) and then resuspended in 30 μl of buffer R2 by stirring at 4°C for 15 min, flash-frozen by liquid nitrogen, and stored at −80°C. The ribosome concentration was determined by the absorbance at 260 nm using a NanoDrop (Thermo Fisher Scientific).
 
-## Translation reaction
+### Translation reaction
 
 In vitro translation was typically performed in a 10 μl reaction mixture containing 5 μl of RRL supernatant, 22.6 nM of purified ribosome, 1.1 nM of reporter mRNA, 75 mM KCl, 0.75 mM MgCl2, and 20 µM of amino acid mixture (Promega).
 
@@ -310,7 +577,7 @@ For the Fluc reporter, the reaction mixture was incubated at room temperature fo
 
 For Rluc-Y0×-Fluc and Rluc-Y39×-Fluc reporters, the reaction mixture above was scaled up to 120 μl and incubated at room temperature. 10 μl of the reaction mixture was taken as an aliquot every 5 min and mixed with 20 μl of 1× Passive Lysis Buffer (Promega) to stop the reaction. The Rluc and FLuc luminescence from 30 μl of the mixture was measured with the Dual-Luciferase Reporter Assay System (Promega). The luminescences at 20–30 min were used to calculate the slope of Rluc and Fluc synthesis.
 
-## Proteotoxic-stress reporter assay
+### Proteotoxic-stress reporter assay
 
 pCI-neo Fluc-EGFP (Addgene plasmid #90170; http://n2t.net/addgene:90170; RRID:Addgene_90170) or pCI-neo FlucDM-EGFP (Addgene plasmid #90172; http://n2t.net/addgene:90172; RRID:Addgene_90172) (kind gifts from Franz-Ulrich Hartl) was transfected into naïve cells or METTL18 KO HEK293T cells by TransIT-293 (Mirus) according to the manufacturer’s instructions. For immunofluorescence staining, cells were cultured on a Nunc Lab-Tek II-CC2 Chamber Slide system (Thermo Fisher Scientific) and fixed with 4% paraformaldehyde in PBS for 20 min at room temperature. After being washed twice with PBS containing 0.2% Triton X-100, the cells were incubated with Intercept (TBS) Blocking Buffer (LI-COR Biosciences) with 0.2% Triton X-100 for 1 hr at room temperature. After removal of the blocking buffer, the cells were incubated overnight at 4°C with anti-GFP antibody (Abcam, ab1218) diluted 1:1000 with Intercept (TBS) Blocking Buffer with 0.2% Triton X-100. Then, the cells were washed three times with PBS containing 0.2% Triton X-100 and incubated for 1 hr at room temperature with anti-mouse secondary antibody conjugated with Alexa 488 (Thermo Fisher Scientific, R37120) diluted 1:1000 with Intercept (TBS) Blocking Buffer (LI-COR Biosciences) with 0.2% Triton X-100. Then, the cells were washed three times with PBS containing 0.2% Triton X-100. Slide chambers were mounted with VECTASHIELD HardSet Antifade Mounting Medium (Vector Laboratories). Immunofluorescence images were acquired with a FLUOVIEW FV3000 (Olympus).
 
@@ -318,6 +585,6 @@ To count the aggregation foci, 2 × 105 cells were seeded in 35-mm glass-bottom 
 
 For MG132 treatment, cells were treated with 0.25 µM MG132 at 24 hr post transfection. After subsequent 24 hr culture, cells were harvested as described in the ‘Ribosome profiling’ section.
 
-## Assessment of expression levels of ribosomal RNAs
+### Assessment of expression levels of ribosomal RNAs
 
 300 ng of total RNA purified from cell lysates prepared as described in ‘Ribosome profiling’ section was analyzed with a microchip electrophoresis system (MultiNA, Shimadzu).

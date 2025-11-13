@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0420zvk78 Department of Psychology, Faculty of Arts and Sciences, Concordia University Montreal Canada
+1. Department of Psychology, Faculty of Arts and Sciences, Concordia University Montreal Canada ([ROR:0420zvk78](https://ror.org/0420zvk78))
 
 † Corresponding author
 

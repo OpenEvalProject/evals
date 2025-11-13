@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00dvg7y05 Program in Cellular and Molecular Medicine, Boston Children’s Hospital Boston United States
-2. https://ror.org/00jjeh629 Harvard-MIT Health Sciences and Technology, Harvard Medical School Boston United States
-3. https://ror.org/03vek6s52 Department of Pediatrics, Harvard Medical School Boston United States
+1. Program in Cellular and Molecular Medicine, Boston Children’s Hospital Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
+2. Harvard-MIT Health Sciences and Technology, Harvard Medical School Boston United States ([ROR:00jjeh629](https://ror.org/00jjeh629))
+3. Department of Pediatrics, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -32,9 +32,17 @@ In SLE, isotype-class switching and somatic hypermutations of autoreactive antib
 
 ## Results
 
-## Fate-mapped B cells are distributed into four main clusters
+### Fate-mapped B cells are distributed into four main clusters
 
 To track WT B cells as they develop in an autoimmune environment, we used a mixed bone marrow (BM) chimera model (Akama-Garren et al., 2021; Degn et al., 2017; van der Poel et al., 2019). Irradiated host mice received a combination of BM donor cells from WT and 564 Igi mice (Berland et al., 2006), which bear transgenic BCRs with anti-RNP specificities. In this model, WT donor B cells expand, are selected into spontaneous GCs, mature into ASCs, and contribute to the circulation of self-reactive antibodies. To track activated B cells and their derived populations, Aicda-CreERT2-EYFP fate-mapping reporter mice (Dogan et al., 2009) were used as donors for the WT B cell repertoire (Figure 1A). Fate-mapped WT B cells were purified, sorted, and processed for droplet-based single-cell RNA-seq. Moreover, we compared the response to that of foreign antigen WT chimeras immunized with a primary and secondary dose of haptenated protein.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental setup to produce the autoimmune and immunized chimeras and selection for single-cell sequencing. (B–H) Single-cell RNA-seq data from autoimmune (n = 5) and immunized (n = 3) chimeras. (B) Two-dimensional UMAP representation of single-cell transcriptomic data from all cells from autoimmune and immunized chimeras. (C) Gene expression of conventional markers was used to assign an identity to the clusters. Log normalized expression. (D) Proportion of cells belonging to the antibody-secreting cell (ASC), DZ, LZ, and memory B cell (MemB) clusters among all cells sequenced from each chimera. Each dot represents a mouse. (E) Phylogenetic tree of the most expanded clone in one of the autoimmune chimeras. Clonal members colored by assigned cluster. (F) Accumulated replacement mutations in each cluster by condition. Violin plot with embedded Tukey boxplot. (G) Isotype usage per cluster for each condition. (H) Clonal usage of selected V genes by condition. Each dot represents a mouse in a Tukey boxplot. IGHV 1–75 was only found in two immunized chimeras. (I) Z-score ranking of fluorescent detection for monoclonal pools Mab1 (left) and Mab2 (right) after HuProt microarray binding assay. The monoclonals originate from two autoimmune chimeras. Statistical values correspond to two-tailed Mann–Whitney test (F) and unpaired t-tests (H).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Relative gene expression heatmap for the top 25 defining genes from each of the main clusters. Selected genes for traditional markers are labeled. (B) Clonal proportion of the BCR repertoire per mouse. Each white box represents the proportion of a clone per mouse. (C) Clonal V gene usage in the autoimmune chimeras (n = 5). Top 10 most used V genes are shown. Each dot represents a mouse in a Tukey boxplot. (D) Clonal V gene usage in the immunized chimeras (n = 3). Top 10 most used V genes are shown. Each dot represents a mouse in a Tukey boxplot. (E) V gene frequency in naïve CD57B6 mice for the top 10 V genes from autoimmune and immunized chimeras. Data (n = 3) extracted from Rettig et al. (F) Phylogenetic tree of C57B6 V genes including the VDJ sequence for the transgenic BCR from 564Igi.
 
 A total of 12,839 cells (9535 from 5 autoimmune chimeras, 3304 from 3 immunized chimeras) were retained post quality control for further analysis. Expression of the EYFP reporter transcripts was confirmed. Using unsupervised clustering, the cells grouped into four clusters (Figure 1B), representing the major known B cell compartments: GC B cells (e.g. S1pr2), which are either dark zone (DZ, e.g. Mki67) or light zone (LZ, e.g. Cd83), ASCs (e.g. Xbp1), and MemBs (e.g. Sell) (Figure 1C, Figure 1—figure supplement 1A). All compartments, LZ, DZ, MemB, and ASC clusters were clearly represented in both conditions (Figure 1D).
 
@@ -46,9 +54,17 @@ To investigate the potential targets, we produced six monoclonal antibodies usin
 
 Thus, using single-cell RNA-seq, we confirmed that in the 564Igi mixed BM chimeric autoimmune model, B cells with a WT BCR repertoire break tolerance, expand in spontaneous GCs and develop into MemBs and ASCs in a seemingly unrestricted manner, much like they do in response to foreign antigens.
 
-## ASCs have alternative terminal states
+### ASCs have alternative terminal states
 
 As ASCs progress in development, they downregulate Cd19 and upregulate Sdc1 (Syndecan-1, CD138). Indeed, clear changes in the expression level of these markers were observed across the seven ASC subclusters (Figure 2A, B, left), and this information was used to define cluster ASC_Early_1, which bears the highest Cd19 and lowest Sdc1 expression, as the start of pseudotime analysis with Slingshot (Street et al., 2018). Two pseudotime lineages were observed (Figure 2B, right), concluding in two different clusters: ASC_Late_1 and ASC_Late_2. While the seven clusters displayed a similar overall transcriptional profile (Figure 2—figure supplement 1A), they could be characterized by the expression of marker genes, among them: Fcmr, Cd52, Il21r, Cd74, and Ms4a1 for ASC_early1; Vim, Mki67, Ccna2, Ccnb2, and Top2a for ASC_early_2; Ssr3, Selenof, Selenok, Lgals1, and Kdelr2 for ASC_Mid_1; Slpi, Kdelr1, Bst2, Eif5a, Ctsb, and Ubb for ASC_Mid_2; Cxcr4, Ccnd2, Lars2, Itgal, and Trp53inp1 for ASC_Mid_3; Ptprc, Atf6, Hspa5, Slamf7, and Itga4 for ASC_Late_1; Bcl2, Ly6e, Il2rg, Tnfrsf17, Tnfrsf13b, and Lamp1 for ASC_Late_2 (Figure 2—figure supplement 1B). All seven subclusters were observed both in autoimmune and immunized chimeras (Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig2-v2.jpg)
+
+**Figure 2.:** (A) Two-dimensional UMAP representation of ASCs and their assigned subcluster for all ASC cells from autoimmune and immunized chimeras. (B) Cluster normalized gene expression levels for Cd19 and Sdc1 (left) and Slingshot pseudotime-based trajectory of ASCs (right). Tukey boxplot for gene expression. (C) Normalized gene expression level of Xbp1, Atf6, and Hspa5 in ASC_Late_1 and ASC_Late_2. (D) Total counts of Ig transcripts for all ASC subclusters, including both autoimmune and immunized chimeras. (E) Normalized gene expression level of surface markers Ptprc, Itgb2, Itga4, and Cd28 in ASC_Late_1 and ASC_Late_2. (F) Single-cell level scoring for MYC and OXPHOS signature profiling of ASC subclusters with AUCell, split by condition. Statistical values correspond to one-way analysis of variance (ANOVA) with Tukey correction for multiple comparisons (F).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Relative gene expression heatmap for the top 25 marker genes from ASC subclusters. (B) Dotplot representation of relative gene expression and coverage of selected markers for each ASC subcluster. (C) Proportion of ASC subclusters per mouse in autoimmune and immunized chimeras. Each dot represents a mouse.
 
 The two terminal clusters differed in key aspects. Xbp1 (X-box binding protein 1), a key modulator of the endoplasmic reticulum (ER) stress response and the unfolded protein response and a major regulator of the transition from B cell to ASC, had slightly more expression in ASC_Late_2 than in ASC_Late_1, whereas ASC_Late_1 had Atf6 and Hspa5 as markers (Figure 2C). These two genes encode Activation transcription factor 6 and Heat Shock Protein Family A (HSP70) Member 5, which are also involved in the regulation of ER stress. These results indicate that terminally differentiated ASCs might use different mechanisms to handle ER stress. Moreover, ASC_Late_2 had more reads mapped to Ig genes than ASC_Late_1 (Figure 2D). Similar observations regarding differential usage of ER stress modulation pathways have been made using LPS-stimulated B cells (Scharer et al., 2020). However, we are not aware of other reports identifying in vivo genetic and repertoire differences of these terminally differentiated ASCs in spontaneous GCs. Although few surface markers were unique to the two subclusters, higher expression of Ptprc (CD45, B220), Itga4 (CD49d), and Itgb2 (CD18) were observed in ASC_Late_1 cells and Cd28 in ASC_Late_2 (Figure 2E).
 
@@ -58,13 +74,21 @@ We analyzed the antibody repertoire for the two terminal clusters, taking advant
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig3-v2.jpg)
 
-**Figure 3.:** (A) ASC subcluster isotype usage proportion by condition. (B) Replacement mutation accumulation in ASC_Late_1 and ASC_Late_2 by condition. Violin plot with Tukey boxplot overlay. (C) ASC subcluster clonal intersects in autoimmune (left) and immunized (right) chimeras, including all ASCs per condition. Connector ribbons’ width represents number of shared clones (see Supplementary file 1). (D) Clonal V-gene usage in ASC_Late_1 and ASC_Late_2 of autoimmune chimeras, per mouse. Only V genes used in two clones or more are displayed. Statistical values correspond to two-tailed Mann–Whitney test (B).Figure 3—source data 1.Figure 3B.
+**Figure 3.:** (A) ASC subcluster isotype usage proportion by condition. (B) Replacement mutation accumulation in ASC_Late_1 and ASC_Late_2 by condition. Violin plot with Tukey boxplot overlay. (C) ASC subcluster clonal intersects in autoimmune (left) and immunized (right) chimeras, including all ASCs per condition. Connector ribbons’ width represents number of shared clones (see Supplementary file 1). (D) Clonal V-gene usage in ASC_Late_1 and ASC_Late_2 of autoimmune chimeras, per mouse. Only V genes used in two clones or more are displayed. Statistical values correspond to two-tailed Mann–Whitney test (B).
 
 In summary, we identified multiple ASC clusters as they differentiated in both autoimmune and immunized environments, with pseudotime analysis suggesting two terminal states with divergent transcriptomic and VDJ maturation profiles, as well as potentially distinct capacities for antibody secretion but that nonetheless share or contain similar clonal members.
 
-## MemBs are composed of diverse clusters with differences in their transcriptome and repertoire
+### MemBs are composed of diverse clusters with differences in their transcriptome and repertoire
 
 An important factor in the pathology of autoimmune disease is the self-sustaining chronicity of autoreactive B cells, which suggests the presence of MemBs. However, it is unclear whether the MemB compartment is similar in autoimmune and immunized responses, and little is known about its internal complexity. To address this question, we reclustered B cells identified as MemBs (Figure 1B), identifying four subclusters (Figure 4A). Notably, all MemB subclusters were observed for both autoimmune and immunized mice (Figure 4B). Remarkably, clusters MemB_1 and MemB_3 accumulated more replacement mutations than clusters MemB_2 and MemB_4, though the latter two still contained cells with similar maximum mutations as MemB_1 and MemB_3 (Figure 4C). Examination of Ig isotype revealed that Cluster MemB_2 was mostly composed of IgM cells in both autoimmune and immunized chimeras. A hallmark of the inflammatory interferon-driven response common in lupus and viral infections is expression of IgG2c. While this isotype was nearly absent among the four subclusters of MemB in the immunized mice, all four subclusters of MemB in autoimmune chimeras included the inflammatory isotype (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig4-v2.jpg)
+
+**Figure 4.:** (A) UMAP distribution of all cells in the MemB compartment colored by subclusters. (B) Proportion of MemBs in each subcluster per mouse. Each dot represents a mouse. (C) Replacement mutation accumulation in each MemB subcluster by condition. Violin plots embedded with Tukey boxplots. (D) Proportion of isotype usage for each MemB subcluster by condition. (E) Normalized gene expression of markers that characterize each MemB subcluster. Combined expression from autoimmune and immunized chimeras. Statistical values correspond to two-tailed Mann–Whitney tests (C).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Relative gene expression heatmap for the top 25 marker genes for each MemB subcluster. (B) Relative gene expression and coverage dotplot for selected MemB subcluster markers. (C) Myc pathway single-cell signature analysis score with AUCell. (D) Single-cell gene signature score for genes downregulated in Pten KO with AUCell. Statistical values correspond to one-way analysis of variance (ANOVA) with Tukey correction for multiple comparisons (C, D).
 
 Overall, although distinct, the clusters displayed extensive overlap in gene expression (Figure 4—figure supplement 1A). Comparing the transcriptomic profiles of the four clusters revealed distinct markers for each cluster (Figure 4E, Figure 4—figure supplement 1B). MemB_1 cells had the highest expression of Cd83, a common B cell activation marker typically observed in LZ B cells, and of Il4i1, plus they had higher expression of Apex1, Eif5a, Eif4a1, Slc25a5, C1qbp, and Mif. MemB_2 cells had the highest expression of Fcrl5 and Cd72, similar to DN2 cells in humans (Jenks et al., 2018) and atypical memory B cells in mice and humans (Kim et al., 2019), along with higher expression of Zeb2, Apoe, Cd38, Cd81, Itgb1, and Syk, among others. Markers of MemB_3 were S100a10, Vim, Lgals1, Ass1, Itgb7, Sec61b, Anxa2, and Stk38. Interestingly, Vimentin (Vim) is a cytoskeleton component important for the filament reorganization following BCR stimulation (Tsui et al., 2018). Although unique markers for MemB_4 were scarce, Fcer2a (encoding for CD23) and Icosl showed the highest expression. Other MemB_4 markers include Cd55, Il2rg, Ets1, Ltb, Lmo2, and Zfp36.
 
@@ -78,9 +102,17 @@ To further understand the relationship between MemB subclusters, we investigated
 
 To evaluate the relationship between potential reservoir (memory) and active response (secretion), we looked for clonal intersection between ASCs and MemBs. We found that clones across all the MemB clusters can seed all the different ASC clusters, regardless of the autoimmune or immunized context (Figure 5C). Cluster MemB_4 showed higher clonal contribution in immunized chimeras than in autoimmune chimeras, and in both conditions, most clones were shared between MemB_3 and all the ASC subclusters.
 
-## Validation of the GC origin of the MemB compartment
+### Validation of the GC origin of the MemB compartment
 
 We generated a new set of autoimmune chimeras (n = 5, Figure 6A), which were maintained on a tamoxifen diet for a period of 8 weeks before removing tamoxifen for 4 weeks before analysis. Among the MemBs (AID-EYFP+ GL7− CD138−), we found that MemB_2 (FCRL5+) and MemB_4 (CD23+) cells were in similar proportions in all mice (Figure 6B, Figure 6—figure supplement 1A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental design to validate presence of fate-mapped FCRL5+ and CD23+ MemBs. (B) Identification of discrete populations of FCRL5+ and CD23+ MemB cells with Aicda-CreERT2-EYFP reporter mice by flow cytometry (n = 5 chimeras). (C) Experimental design for using S1pr2-CreERT2-tdTomato fate mapping in autoimmune chimeras. (D) Identification of discrete populations of FCRL5+ and CD23+ MemB cells with S1pr2-CreERT2-tdTomato fate mapping in autoimmune chimeras by flow cytometry (n = 3 chimeras). (E) Splenic localization of FCRL5+ S1PR2(Tomato)+ MemB cells by confocal microscopy. Overview of a spleen from autoimmune chimeras (Figure 3C), left, and selected area, center, delineates a bridging channel for a close-up examination of FCRL5+ S1pr2tomato+, right. Arrow points to FCRL5+ MemBs. Scale bars represent 100 µm (left), 50 µm (center), and 20 µm (right). Arrow heads point to FCRL5+ S1PR2(Tomato)+ cells. (F) Experimental design for in vivo marginal zone labeling. S1pr2-CreERT2-tdTomato:564Igi chimeras intravenously (i.v.) injected with 5 µg of anti-CD45-APC for 5 min before organ extraction. (G) Flow cytometry gate strategy to evaluate i.v. CD45 labeling between MemB FCRL5+ and MemB CD23+ cells. Statistical values correspond to one-tailed unpaired Student t-test (G).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81012/elife-81012-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) FCRL5 and CD23 FMO gating strategies for Figure 6B. (B) FCRL5 and CD23 FMO gating strategies for Figure 6D. (C) FCRL5 and CD23 FMO gating strategies for Figure 6G. (D) Validation of intravenously (i.v.) staining with CD45 by conventional gating for FoB and MZB cells for the same chimeras in Figure 6G.
 
 Recent studies show that Aicda (AID) expression can precede the commitment and formation of GC B cells at least in immunized mice (Roco et al., 2019). This could suggest that the observations with AID reporter mice could also include non-GC-derived MemBs. Indeed, formation of extrafollicular MemBs cannot be ruled out from the AID-based model (Lee et al., 2011; Toyama et al., 2002). As an alternative solution for GC fate mapping, we used S1pr2, which is an established fate marker for GC-derived B cells (Shinnakasu et al., 2016). To confirm the observations made with our single-cell dataset and Aicda-CreERT2-EYFP reporter chimeras, a new set of chimeras using the S1pr2-CreERT2-tdTomato reporter system in combination with 564Igi BM were constructed (n = 3, Figure 6C). The donor S1pr2 reporter mice were also crossed with Prdm1-EYFP reporter mice to distinguish GC-derived ASCs.
 
@@ -110,60 +142,301 @@ Overall, using a WT BCR repertoire mouse model that maps spontaneous GC-derived 
 
 ## Materials and methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>AicdaCreERT2</td>
+      <td>C-A Reynaud, J-C Weill. (Institut Necker)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>S1pr2CreERT2 BAC-transgenic</td>
+      <td>T. Kurosaki (RIKEN-Yokohama)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Tg(Prdm1-EYFP)1Mnz/J</td>
+      <td>Jackson Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.SJL</td>
+      <td>Jackson Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>564Igi</td>
+      <td>Theresa Imanishi-Kari (Tufts University)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>564Igi.1</td>
+      <td>This manuscript</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD45.2-APC (104) (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>109814</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD23-BV510 (B3B4) (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>101623</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-B220-PacBlue (RA3-6B2) (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>103227</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-B220-PerCP/Cy5.5 (RA3-6B2) (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>103234</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GL7-PacBlue (GL7)(rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>144614</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GL7-PerCP/Cy5.5 (GL7) (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>144610</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD138-Biotin (281-2) (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>142512</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD138-PE (281-2)(rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>142504</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD45.1-APC (A20)(mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>110714</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin</td>
+      <td>Biolegend</td>
+      <td>405206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FCRL5-Alexa488 (sheep polyclonal)</td>
+      <td>biotechne</td>
+      <td>FAB6757G</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FCRL5-APC (sheep polyclonal)</td>
+      <td>biotechne</td>
+      <td>FAB6757A</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Fixable Viability Dye eFluor 780</td>
+      <td>Thermo Fisher</td>
+      <td>65-0865-14</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Pan B Cell Isolation Kit II, mouse</td>
+      <td>Miltenyi</td>
+      <td>130-104-443</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP-OVA</td>
+      <td>Biosearch</td>
+      <td>N-5051-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5648-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imject Alum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>77161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundation</td>
+      <td></td>
+      <td>4.1.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger</td>
+      <td>10× Genomics</td>
+      <td></td>
+      <td>5.0.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GC tree</td>
+      <td>https://github.com/matsengrp/gctree (DeWitt et al., 2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>HuProt v4.0 array</td>
+      <td>CDI Labs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Single Cell Immune Profiling</td>
+      <td>10× Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Immcantation</td>
+      <td>https://immcantation.readthedocs.io/en/stable/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 The purpose of this study was to characterize the post-GC populations of antibody-secreting and MemBs in the context of autoimmunity. We used GC fate-mapping and single-cell transcriptomics coupled to BCR repertoire analysis. The BM chimeric mouse model we used allows to track WT B cells as they develop and exit from spontaneous GCs. We contrasted the autoimmune chimeras with NP-OVA immunized chimeras.
 
-## Mice
+### Mice
 
 C57BL/6J and B6.SJL (CD45.1), B6.Cg-Tg(Prdm1-EYFP)1Mnz/J (Blimp-EYFP) were obtained from Jackson Laboratories. Aicda-CreERT2 flox-stop-flox- EYFP mice (Dogan et al., 2009) were from Claude-Agnes Reynaud and Jean-Claude Weill (Institut Necker). S1pr2-CreERT2 BAC-transgenic mice (Shinnakasu et al., 2016) were generated and generously provided by T. Kurosaki (RIKEN-Yokohama). 564Igi mice (Berland et al., 2006) were originally provided by Theresa Imanishi-Kari (Tufts University) and were maintained in-house. 564.1 mice were generated by crossing 564Igi and B6.SJL (CD45.1) mice. 564Igi and 564.1Igi mice were genotyped by ddPCR using the primers: 564Igi_H_Fwd-cacagattcttagtttttcaa, 564Igi_H_Rev-tggagctatatcatcctcttt, 564Igi_K_Fwd-ccagtgcagattttcagcttc, 564Igi_K_Rev-cagcttggtcccagcaccgaa, mRPP30_Fwd-tgaccctatcagaggactgc, and mRPP30_Rev-ctctgcaatttgtggacacg. All mice were bred and maintained in the AAALAC-accredited facility at Harvard Medical School. Mice were specific pathogen-free and maintained under a 12-hr light/dark cycle with standard chow diet. Both male and female mice were used. All animal experiments were conducted in accordance with the guidelines of the Laboratory Animal Center of National Institutes of Health. The Institutional Animal Care and Use Committee of Harvard Medical School approved all animal protocols (protocol number IS111).
 
-## Immunization and antibody injection
+### Immunization and antibody injection
 
 For single-cell sequencing, non-autoimmune chimeric mice were i.p. immunized with 100 μg of 4-hydroxy-3-nitrophenylacetyl hapten conjugated to ovalbumin (NP-OVA, Biosearch) in 50 μl Hanks' Balanced Salt Solution (HBSS) precipitated in 50 μl of Imject Alum (Thermo Scientific) 6–8 weeks after irradiation and BM reconstitution. Four weeks after immunization, mice received an intraperitoneal booster immunization of 100  μg of NP-OVA in 100 μl HBSS. Mice were sacrificed 2 weeks after boost.
 
 For in vivo labeling of MZ proximal cells, 5 min prior to euthanasia each mouse was injected retro-orbitally with 5 µg of anti-CD45.2-APC (Biolegend) diluted in 200 µl of phosphate-buffered saline (PBS).
 
-## Tissue processing
+### Tissue processing
 
 Mice were euthanized by cervical dislocation under isoflurane induced anesthesia. Spleens were extracted, dissected, and processed for immunofluorescence microscopy or flow cytometry analysis and cell sorting.
 
-## BM chimeras
+### BM chimeras
 
 BM chimeras were prepared using marrow from 564Igi mice and BCR WT donor as previously described (Degn et al., 2017). Mice were lethally irradiated at 1100 rad and kept on antibiotics (sulfamethoxazole/trimethoprim) through drinking water for 7 days after irradiation. Femurs and tibia from donor mice were cleaned from muscle tissue and subsequently rinsed with cell transfer buffer (HBSS supplemented with 10 mM N-2-hydroxyethylpiperazine-N-2-ethane sulfonic acid (HEPES), 1 mM Ethylenediaminetetraacetic acid (EDTA), and 2% heat inactivated fetal bovine serum). Marrow was extracted from bones by crushing them using mortar and pestle and the detached cells were resuspended in cell transfer buffer and passed through a 70-mM sterile filter. Cells were counted by using an erythrocyte lysed aliquot. All autoimmune chimeras were prepared at 2:1 ratio for 564Igi:WT-reporter, with WT-reporter and irradiated hosts genotype as specified for each experiment. BM recipients received 15–20 × 106 cells i.v. in 100 ml cell transfer buffer by retroorbital i.v. injection approximately 8 hr post irradiation.
 
-## Fate-mapping tamoxifen induction
+### Fate-mapping tamoxifen induction
 
 Mice were exposed to tamoxifen in two different ways, as specified in each experimental design figure. Mice were gavaged with 10 mg of tamoxifen (Sigma) dissolved in Corn Oil at 50 mg/ml twice, at days 4 and 7 post primary immunization in the case of immunized chimeras and at the same time for autoimmune chimeras. For validation experiments, BM chimeric mice were maintained in a tamoxifen enriched diet for the specified timeframes (Envigo) (Song et al., 2022).
 
-## Flow cytometry
+### Flow cytometry
 
 Spleen fragments were harvested into ice-cold Magnetic-activated cell sorting (MACS) buffer (PBS pH 7.2, 0.5% bovine serum albumin (BSA), and 2 mM EDTA) and mechanically dissociated using pestles in 1.5 ml Eppendorf tubes. Samples spun down at 300 × g for 5 min and resuspended in RBC lysis buffer (155 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA). Samples were washed with MACS buffer and spun down at 300 × g for 5 min. Finally, samples were resuspended in MACS buffer and filtered through 70 µm cell strainers (Corning). Samples were added to 96-well round-bottom plates, spun down and resuspended in 50 µl staining mix and stained for 30 min on ice. Cells were washed with 150 µl of MACS buffer twice by spinning down at 300 × g for 5 min. Finally, cells were resuspended in 200 µl of MACS buffer and transferred to 5 ml fluorescence activated cell sorting (FACS) tubes. The following antibodies and proteins were used: anti-CD23-BV510 (B3B4), anti-B220-PacBlue (RA3-6B2), anti-B220-PerCP/Cy5.5 (RA3-6B2), anti-GL7-PacBlue (GL7), anti-GL7-PerCP/Cy5.5 (GL7), anti-CD138-Biotin (281-2), anti-CD138-PE (281-2), and PE/Cy7-Streptavidin from Biolegend, and anti-FCRL5-Alexa488 and anti-FCRL5-APC (Polyclonal) from biotechne. Viability was determined with Fixable live/dead stain Efluor780 from Thermo Fisher Scientific. A standard 3 lasers configuration (405, 488, and 633 nm) FASCSCanto2, with 8-color and 10 parameter analytical capabilities was used for acquisition. Data were analyzed with FlowJo 10.
 
-## Cell sorting for single-cell sequencing
+### Cell sorting for single-cell sequencing
 
 Spleens from autoimmune and immunized chimeras were processed following viability recommendations for droplet-based Chromium single-cell RNA-seq gene expression (10×). The full organs were dissociated in MACS buffer (PBS 1×, 0.5% BSA, 2 nM EDTA) using syringe plungers and 70 µm cell strainers, spun down at 1000 rpm for 5 min, resuspended in RBC lysis buffer and incubated on ice for 5 min. Samples were washed with MACS buffer and spun down 1000 rpm for min. Cells were enriched by negative selection with a Pan II B cell enrichment kit (Miltenyi) according to the provider specifications. During enrichment incubation cells were also stained for flow sorting. The antibodies used for staining were anti-GL7-PacBlue, ant-CD138-PE, anti-B220-PerCP/Cy5.5, anti-CD38-PECy7, and anti-CD45.1-APC from Biolegend. eFluor780 from Thermo Fisher was used for viability. After enrichment and antibody staining cells were resuspended in resuspension buffer (PBS 1×, 0.04% BSA). Reporter cells were sorted based on EYFP expression (Efluor 780- EYFP+ CD45.1+) at two-way purity sort with a FACSARIA II Special Order system (BD Biosciences) with 355, 405, 488, 640, and 592  nm lasers. Sorted cells were spun down and resuspended in resuspension buffer prior to single-cell encapsulation.
 
-## Droplet-based single-cell sequencing and data processing
+### Droplet-based single-cell sequencing and data processing
 
 The sorted cells were encapsulated with barcoded hydrogels using the Chromium system for Single Cell Immune Profiling, that allows coupling of transcriptomic and VDJ information per cell. cDNA libraries were prepared according to the manufacturer’s recommendations. Library quality control and sequencing (NextSeq 500, Illumina) were performed by the HMS Biopolymers Facility. Cellranger (5.0.1) was used to generate the count matrices for gene expression and the VDJ contigs per cell using the multi function for each mouse. Reads were aligned to a custom mm10 reference genome incorporating the transcript sequences for EYFP and Cre Recombinase. R (4.1.2) was used for further processing the Cellranger gene expression count matrix output using the OSCA workflow (https://bioconductor.org/books/release/OSCA/) as template and using the Single Cell Experiment (SCE) format. Scater and Scran were used for data QC. Cells were subset for less than 5% mitochondrial and 40% ribosomal content. Ig genes were excluded from clustering and posterior expression analysis. Correction was done with fastMNN function from batchelor. Clustering was performed using the Leiden algorithm. Markers for each cluster were identified using the scoreMarkers function from Scran. Pre-defined genesets were used for Oxidative Phosphorylation (GO:0006119), Myc upregulated (Wang et al., 2020; Chen et al., 2021) and PTEN_DN.V1_DN (GSEA) were used for signature analysis with AUCell. Data visualization was done with dittoSeq.
 
-## BCR repertoire analysis
+### BCR repertoire analysis
 
 The VDJ output from Cellranger multifunction was further processed following the Immcantation (https://immcantation.readthedocs.io/en/stable/) recommendations for 10× derived single-cell data. Genes were assigned using IgBlast and the IMGT reference sequence database. Clones were set using the DefineClones function from Change-O, with a 0.1691791 threshold defined using the findtThreshold function from Shazam. countClones (Alakazam) and observedMutations (Shazam) functions were used for quantification.
 
 Phylogenetic trees were generated with GCTree (DeWitt et al., 2018) using all VDJ sequences from a given clone and rooted in the germline obtained with CreateGermlines function from Change-O.
 
-## Antibody production and protein array profile
+### Antibody production and protein array profile
 
 VDJ sequences were synthesized (IDT) for sequences from mice M13 and M21 with barcodes: GGGACCTGTAGCTGCC_B06M13, GATGAGGCATCGGGTC_B10M21, TGTTCCGCAATGGACG_B10M21, CGTGTCTCAAACCCAT_B06M13, GCGCAACCAATCTACG_B06M13, and AAATGCCGTACACCGC_B06M13. Geneblocks were cloned into a modified pVRC8400 vector between a tissue plasminogen activation (TPA) signal sequence and the constant domains of the mouse IgG1 CH1-CH3 and CL (Kuraoka et al., 2016). Monoclonal IgG1,k antibodies were produced in suspension by transient transfection of 293F cells, using polyethylenimine (Polysciences). The supernatant was harvested 5 days after transfection. Antibody was recovered from culture supernatant after centrifugation at 4200 rpm for 20 min and clearing with 45 µm filters. IgGs were purified using Protein G agarose (Thermo) and dialyzed in PBS. Purified IgGs were concentrated and stored at 4°C.
 
 For target detection, the monoclonal antibodies were pooled in two different samples and processed for reactivity by CDI Labs with a HuProt v4.0 array, containing 21,000 human proteins. Monoclonal antibodies at 1 µg/ml were diluted in a final volume of 3 ml and were probed with the arrays for 2 hr at room temperature (RT). The arrays were washed according to the company protocol and were probed with the secondary antibody (Alexa-647-goat-anti-mouse IgG gamma-specific) under conditions optimized by CDI Labs for signal detection with GenePix software. Data were processed with CDI’s proprietary data analysis software (Z-score analysis).
 
-## Immunofluorescence and confocal microscopy
+### Immunofluorescence and confocal microscopy
 
 Following 4% Paraformaldehyde (PFA) fixation on ice for 3 hr, spleens were embedded in OCT (Fisher Healthcare), frozen in dry ice and stored at −80°C. Spleens were cut into 10 µm sections, blocked for 1 hr at RT with Blocking buffer (PBS, 0.01% Tween20, 2% BSA, and 5% Fetal Bovine Serum (FBS)) and stained O.N. at 4°C with antibodies diluted in Blocking buffer. Anti-CD169-BV510 (Biolegend) and anti-FCRL5-APC (biotechne) were used for staining. Slides were washed three times in PBS, 0.01% Tween20 and mounted with FluoroGel (Electron Microscopy Sciences) prior to image acquisition. Images were acquired with an OLYMPUS FV3000R resonant scanning confocal microscope equipped with four laser lines (405, 488, 514, and 633 nm), hybrid galvo and fast resonant scanning capabilities, ultra-sensitive GaAsP detectors with full spectral imaging and motorized XYZ stage for tiling. The images were processed in Fiji.
 
-## Statistical analysis
+### Statistical analysis
 
 Two-tailed Mann–Whitney, one-way analysis of variance with Tukey correction and one-tailed unpaired Student t-tests were performed with Prism 9 (GraphPad).

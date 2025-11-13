@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.26424.001 Probabilistic reward learning is characterised by individual differences that become acute in aging. This may be due to age-related dopamine (DA) decline affecting neural processing in striatum, prefrontal cortex, or both. We examined this by administering a probabilistic reward learning task to younger and older adults, and combining computational modelling of behaviour, fMRI and PET measurements of DA D1 availability. We found that anticipatory value signals in ventromedial prefrontal cortex (vmPFC) were attenuated in older adults. The strength of this signal predicted performance beyond age and was modulated by D1 availability in nucleus accumbens. These results uncover that a value-anticipation mechanism in vmPFC declines in aging, and that this mechanism is associated with DA D1 receptor availability.
+Probabilistic reward learning is characterised by individual differences that become acute in aging. This may be due to age-related dopamine (DA) decline affecting neural processing in striatum, prefrontal cortex, or both. We examined this by administering a probabilistic reward learning task to younger and older adults, and combining computational modelling of behaviour, fMRI and PET measurements of DA D1 availability. We found that anticipatory value signals in ventromedial prefrontal cortex (vmPFC) were attenuated in older adults. The strength of this signal predicted performance beyond age and was modulated by D1 availability in nucleus accumbens. These results uncover that a value-anticipation mechanism in vmPFC declines in aging, and that this mechanism is associated with DA D1 receptor availability.
 
 ## Introduction
 
@@ -37,11 +37,19 @@ Furthermore, there is little work comparing younger and older populations accord
 
 Our aim was to investigate the effect of age and DA availability on striatal and prefrontal mechanisms involved in probabilistic reward learning. We included samples of 30 older and 30 younger participants who performed a two-armed bandit task (TAB) previously used by Chowdhury et al. (2013) while fMRI data was acquired. All participants were healthy and cognitively high functioning (MMSE > 27). In brief, all participants performed 220 trials on the TAB (Figure 1a). On each trial, participants chose between one of two bandits, represented by fractal images. After a variable interval, the outcome was presented as a green arrow pointing up signalling a reward, or a yellow horizontal bar signalling no reward. Probabilities of obtaining a reward varied over time for both bandits, according to independent Gaussian random walks (Figure 1c, left). This required the participants to update the expected value for each bandit continuously. Participants received monetary earnings of 1 Swedish Krona (SEK, ~$0.11) per rewarded trial. Behaviour was quantified with a Bayesian observer model augmented to capture the influence of variance and confidence on switch behaviour. This model outperformed a Rescorla-Wagner (RW) model that tracked expected value using simple RPEs. To investigate the relationship between the ability to learn about probabilistic rewards and the DA system, we collected PET data using the radioligand [11C]SCH23390 to measure striatal and prefrontal DA D1 receptor binding potential (D1 BP), as a proxy for integrity of the dopaminergic system. The chosen radioligand allows for reliable measurement of BP in striatum and PFC simultaneously (Hall et al., 1994), as opposed to alternative markers of dopaminergic function.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/26424/elife-26424-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic representation of a trial in the TAB. Participants were presented with two fractal images on each trial and selected one of them through a button press. The maximum response time was 2000 ms, meaning the trial would count as a miss if the response time exceeded this limit and the next trial would start immediately after the next inter-trial interval. If one stimulus was selected, this option was highlighted with a red frame. After 1000 ms, participants were presented with the outcome: either a green arrow pointing upwards, indicating an obtained reward of 1SEK (≈$0.11), or a yellow horizontal bar, indicating no win. The position of the images on the screen varied randomly across the 2 × 110 trials of the experiment. Reward probabilities varied throughout the experiment. (b) Behavioural performance on the TAB, across age group. Younger participants earned more money on the TAB on average (top left, t(49) = 1.69, p(one-tailed)=0.048). Proportion of efficient choices differed significantly between the two groups (top right, Mann-Whitney U = 286.5, p(one-tailed)=0.029). Number of switches did not differ significantly between groups (p=0.19; bottom left), but the proportion of adaptive switches differed between age groups (bottom right, Mann-Whitney = 271.0; p(two-tailed)=0.033). Data are represented as mean ±SEM. (c) Left pane: Varying reward probabilities for obtaining a reward for each bandit on the 220 trials of the experiment. Center/right pane: Model predictions (black lines) and observed behaviour (coloured lines). Model fit did not significantly differ between participants (Mann-Whitney U = 353.0, p=0.406).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26424/elife-26424-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Average BP for young and old participants separately. All BPs significantly differed between groups (p<0.001).
+
 Based on previous work, we hypothesised that, in younger participants, BOLD signal in NAcc would reflect both components of the RPE signal, whereas older participants would show a reduced expected-value component. Additionally, we expected an attenuated expected-value signal during choice in the older compared to the younger sample in PFC. We reasoned that the strength of these expected-value representations in both PFC and NAcc would show a relationship to DA D1 BP in either subcortical or prefrontal regions.
 
 ## Results
 
-## Task performance
+### Task performance
 
 The goal of the analyses was to establish the neural mechanism underlying decreased probabilistic value learning in older participants. We did this by (1) assessing differences between age groups in the BOLD signal related to anticipatory expected value in the vmPFC, (2) assessing differences between age groups in the BOLD signal related to RPEs in the NAcc, and (3) investigating the relationship between these BOLD signals and DA D1 binding potentials (BP) in a set of predefined ROIs. To obtain the best estimate of expected value to use in our fMRI analysis, we fitted a range of computational models and used Bayesian model selection.
 
@@ -49,15 +57,173 @@ Younger adults outperformed older adults on the task (Figure 1b). There was a we
 
 We assessed the ability of a variety of members of two broad families of models to capture trial-by-trial behaviour (see Materials and methods, SI for details). The first family includes variations on standard reinforcement learning (RL) models in which action values are learned through RPEs and the RW updating rule. The second family of models comprises variations on a Bayesian observer in which the probability distribution of obtaining a reward is updated after each outcome observation. Model comparison statistics are displayed in Table 1.
 
+**Table 1.**
+ Model comparison statistics for the different models.The winning model, defined as the model with the lowest integrated BIC (iBIC), was the Bayesian observer model with five parameters. Parameters: β: inverse temperature parameter for softmax, α: learning rate for RW model, b: choice kernel, ϕ: forgetting rate for RW model, ω: learning rate for Bayesian model, λ: forgetting rate for Bayesian model, υ: variance weighting, κ: confidence weighting.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Family</th>
+      <th>Parameters</th>
+      <th># Param</th>
+      <th>Likelihood</th>
+      <th>Pseudo-R²</th>
+      <th>iBIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RW</td>
+      <td>β, α</td>
+      <td>2</td>
+      <td>−5636.8</td>
+      <td>0.336</td>
+      <td>11309</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, α, b</td>
+      <td>3</td>
+      <td>−5317.8</td>
+      <td>0.374</td>
+      <td>10692</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, α, b, ϕ</td>
+      <td>4</td>
+      <td>−5140.0</td>
+      <td>0.394</td>
+      <td>10355</td>
+    </tr>
+    <tr>
+      <td>Bayesian observer</td>
+      <td>β, ω</td>
+      <td>2</td>
+      <td>−5919.8</td>
+      <td>0.302</td>
+      <td>11877</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, ω, λ</td>
+      <td>3</td>
+      <td>−5719.2</td>
+      <td>0.326</td>
+      <td>11495</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, ω, λ, b</td>
+      <td>4</td>
+      <td>−5154.6</td>
+      <td>0.392</td>
+      <td>10385</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, ω, λ, υ(chosen)</td>
+      <td>4</td>
+      <td>−5161.7</td>
+      <td>0.392</td>
+      <td>10399</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, ω, λ, υ(unchosen)</td>
+      <td>4</td>
+      <td>−5130.0</td>
+      <td>0.395</td>
+      <td>10335</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, ω, λ, κ</td>
+      <td>4</td>
+      <td>−5675.3</td>
+      <td>0.331</td>
+      <td>11426</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β, ω, λ, υ(unchosen), κ</td>
+      <td>5</td>
+      <td>−5082.5</td>
+      <td>0.401</td>
+      <td>10259</td>
+    </tr>
+  </tbody>
+</table>
+
 The most parsimonious account came from a five parameter Bayesian observer model. This tracked the probability of obtaining a reward for each action as a beta distribution with parameters representing pseudo-counts of wins and win omissions. Pseudocounts for the bandit that was chosen were updated according to the outcome, based on a learning rate of ω. Pseudocounts for the bandit that was not chosen were relaxed towards neutral values based on a forgetting rate of λ. The beta distributions generated action propensities for the two bandits according to three weighted additive factors: one was the relative expected values (Q) of the bandits, calculated as the mean of the beta distributions (Figure 2 and Equation 7, Materials and methods). The other two depended on different forms of uncertainty and were associated with the choice between sticking with the previous choice or switch.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/26424/elife-26424-fig2-v2.jpg)
 
-**Figure 2.:** All components that are used to model choice at trial 21 are marked in orange. The sequence of choices for this participant was [1 1 1 2 1 1 1 2 2 1 2 2 1 1 1 2 2 2 2 1], and the payout for these choices was [1 1 0 0 1 1 0 1 0 0 0 0 1 1 0 0 1 1 0 1]. According to the participant’s individually fitted model parameters (ω = 0.72; λ = 0.28), and following this sequence of choices and outcomes, the beta distributions defining the subjective value of the bandits were  and  θ1~ β(θ1; 2.02, 1.08) (see  θ2~ β(θ2; 1.26, 1.74)Equations 9–11, Materials and methods) at choice of trial 21. The expected value for each bandit was defined as the mean of the beta distribution (Q1 = 0.65, Q2 = 0.42; see Equation 7, Materials and methods). The variance of the unchosen option was equal to the variance of bandit 2, which was not chosen on trial 20 (Vuc = 0.05, see Equation 8, Materials and methods). Variance is schematically represented as a dotted line (note that this is an approximation because the beta distributions are not symmetrical). The 2-d plot shows the joint distribution P(,θ1) where values of θ2 are along the x-axis and θ1along the y-axis. Confidence was calculated based on the values of the distributions at choice on the previous trial. Cθ21 was defined as the probability that a random sample drawn from  at the time of choice at trial 20 was greater than a sample drawn from θ1 (shaded area below the diagonal, as θ2 > θ1 there. Cθ21 = 0.56, Materials and methods Equation 15). C2 could be defined as 1-C1 (shaded area above the diagonal, C2 = 0.44, Equation 16, Materials and methods). Crel was equivalent to Cchosen – Cunchosen, in this case C1-C2 (Crel = 0.12, Equation 17). This relative confidence was scaled by  and then added to the action that was not chosen on the previous trial (in this case bandit 2).κ
+**Figure 2.:** All components that are used to model choice at trial 21 are marked in orange. The sequence of choices for this participant was [1 1 1 2 1 1 1 2 2 1 2 2 1 1 1 2 2 2 2 1], and the payout for these choices was [1 1 0 0 1 1 0 1 0 0 0 0 1 1 0 0 1 1 0 1]. According to the participant’s individually fitted model parameters (ω = 0.72; λ = 0.28), and following this sequence of choices and outcomes, the beta distributions defining the subjective value of the bandits were $\theta_{1}~\beta(\theta_{1};2.02,1.08)$ and $\theta_{2}~\beta(\theta_{2};1.26,1.74)$ (see Equations 9–11, Materials and methods) at choice of trial 21. The expected value for each bandit was defined as the mean of the beta distribution (Q1 = 0.65, Q2 = 0.42; see Equation 7, Materials and methods). The variance of the unchosen option was equal to the variance of bandit 2, which was not chosen on trial 20 (Vuc = 0.05, see Equation 8, Materials and methods). Variance is schematically represented as a dotted line (note that this is an approximation because the beta distributions are not symmetrical). The 2-d plot shows the joint distribution P($\theta_{1}$,$\theta_{2}$) where values of $\theta_{1}$ are along the x-axis and $\theta_{2}$along the y-axis. Confidence was calculated based on the values of the distributions at choice on the previous trial. C1 was defined as the probability that a random sample drawn from $\theta_{1}$ at the time of choice at trial 20 was greater than a sample drawn from $\theta_{2}$ (shaded area below the diagonal, as $\theta_{1}$ > $\theta_{2}$ there. C1 = 0.56, Materials and methods Equation 15). C2 could be defined as 1-C1 (shaded area above the diagonal, C2 = 0.44, Equation 16, Materials and methods). Crel was equivalent to Cchosen – Cunchosen, in this case C1-C2 (Crel = 0.12, Equation 17). This relative confidence was scaled by $κ$ and then added to the action that was not chosen on the previous trial (in this case bandit 2).
 
 The first determinant of switching was the current variance (V) of the option that was not chosen on the previous trial calculated from its approximate beta distribution (Figure 2; formula 8, Materials and methods). The variance was multiplied by a parameter υ and added to the propensity of this previously unchosen option. υ was negative in all but two participants (Table 2), reflecting the fact that increasing uncertainty about the unchosen option decreased its value, making it a less likely choice on the current trial. Hence, increased uncertainty about the previously unchosen option caused most subjects to stick to their current choice. This is the opposite of an exploration bonus. This model outperformed an account based on a more conventional choice kernel, according to which perseverating or switching was influenced only by previous choices themselves rather than something reflecting knowledge about those choices. This suggests that perseveration, which is commonly observed (Rutledge et al., 2009; Schönberg et al., 2007), may partly reflect uncertainty aversion.
 
-The second determinant of switching was a measure of the relative confidence in the choice that was made on the previous trial (see Materials and methods). We assumed that subjects used their approximate Bayesian posterior distributions over the values of the bandits to calculate this confidence, Crel, as their subjective probability that the option they chose was better (a calculation they made before observing the outcome on that trial). A term Crelκwas then added to value of the action that was not chosen on that previous trial (see Methods) where κwas fitted to each participant. Thus, if κwas positive, then a subject would be more likely to switch on trialt if she had been more confident on trialt-1.
+**Table 2.**
+ Summary statistics of the five parameters of the winning model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Minimum</th>
+      <th>25th percentile</th>
+      <th>Median</th>
+      <th>75th percentile</th>
+      <th>Maximum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>β</td>
+      <td>1.436</td>
+      <td>7.017</td>
+      <td>12.280</td>
+      <td>17.730</td>
+      <td>64.750</td>
+    </tr>
+    <tr>
+      <td>ω</td>
+      <td>0.042</td>
+      <td>0.238</td>
+      <td>0.408</td>
+      <td>0.558</td>
+      <td>0.851</td>
+    </tr>
+    <tr>
+      <td>λ</td>
+      <td>0.055</td>
+      <td>0.139</td>
+      <td>0.202</td>
+      <td>0.270</td>
+      <td>0.544</td>
+    </tr>
+    <tr>
+      <td>υ</td>
+      <td>−3.372</td>
+      <td>−1.845</td>
+      <td>−1.069</td>
+      <td>−0.678</td>
+      <td>0.234</td>
+    </tr>
+    <tr>
+      <td>κ</td>
+      <td>−0.202</td>
+      <td>0.152</td>
+      <td>0.260</td>
+      <td>0.359</td>
+      <td>0.896</td>
+    </tr>
+  </tbody>
+</table>
+
+The second determinant of switching was a measure of the relative confidence in the choice that was made on the previous trial (see Materials and methods). We assumed that subjects used their approximate Bayesian posterior distributions over the values of the bandits to calculate this confidence, $C^{rel}$, as their subjective probability that the option they chose was better (a calculation they made before observing the outcome on that trial). A term $C^{rel}κ$was then added to value of the action that was not chosen on that previous trial (see Methods) where $κ$was fitted to each participant. Thus, if $κ$was positive, then a subject would be more likely to switch on trial$t$ if she had been more confident on trial$t-1$.
 
 Note that relative confidence was calculated on the preceding trial because, at the time of the choice, the model has no information about the option that will be chosen on that trial. Perhaps surprisingly, κ was positive in 49 out of 57 participants (Table 2) – thus for the majority of subjects, the more sure they were that the chosen option was better, the more they sought to switch and try the alternative. It is important to acknowledge, however, that there are subtle interactions with the effects of the means and variances of the options with which relative confidence is partly correlated. Nevertheless, κ was negatively correlated with total monetary gains on the task (r(54) = 0.42, p=0.001, controlled for age; Supplementary file 1), with negative values of κ in those participants with the highest performance. This implies that κ has the expected effect on performance despite having an unexpected sign at the group level. The overall tendency for κ to be positive and υ to be negative does not stem from autocorrelation between the two as the sign of these parameter is largely the same when the model is specified with only one of these parameters (data not shown).
 
@@ -67,7 +233,7 @@ We found that variation in the number of switches was better accounted for by va
 
 Because measures of successful performance differed between groups but the number of switches did not, we used our winning model to investigate the nature of switches separately in each group. We used the expected values from the winning model to assess the proportion of adaptive switches (to subjectively better bandits) versus maladaptive switches (to subjectively worse bandits) and found that young participants had a higher proportion of adaptive switches compared with old participants (Mold = 57.4, SD = 23.4; Myoung = 68.3. SD = 18.2, Mann-Whitney test U = 271.5, p=0.033, Figure 1b, bottom right). The proportion of adaptive switches was positively associated with total monetary gains (r(54) = 0.49, p<0.001), suggesting that the age difference in performance partly resulted from differences in strategic switching.
 
-## Value anticipation in vmPFC
+### Value anticipation in vmPFC
 
 To investigate brain activity reflecting value anticipation, we estimated a GLM that included the chosen value Q on that trial as a regressor to be correlated with the BOLD signal at the time of choice (see Materials and methods, GLM 1). Clusters in vmPFC, bilateral hippocampus, visual cortex and bilateral precuneus showed a positive correlation between BOLD and Q at the time of choice at p(FWE-corrected)<0.05 (Supplementary file 3).
 
@@ -75,21 +241,29 @@ We next tested if the expected-value signal differed between age groups. We used
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/26424/elife-26424-fig3-v2.jpg)
 
-**Figure 3.:** (a) Cluster in vmPFC that shows expected value activity at the time of the choice. Peak voxel x,y,z −5,52,–6; p<0.05, FWE corrected. (b) Parameter estimates for younger and older participants extracted from the cluster in Figure 3a. Activity differs significantly between age groups (t(55) = 2.38; p=0.021). Error bars represent standard errors of the means. (c) Time-course visualisation of the expected value signal in vmPFC. Shaded areas indicate standard errors. The expected-value signal is significantly larger and prolonged in the younger compared to the older sample. (d) There is a positive relationship between expected-value signal magnitude and total monetary gains (r(53) = 0.37, p=0.006 when controlling for age and model fit). For display purposes, the correlations are shown with residuals after regressing out age and model fit. (e) DA D1 BP in NAcc is positively related to Q in vmPFC (r(53) = 0.28, p=0.038, when controlling for age). For display purposes the correlations are shown with residuals after regressing out age.10.7554/eLife.26424.011Figure 3—source data 1.Parameter estimates for all participants of Q in vmPFC at the time of choice. Timecourse data for young and old participants corresponding to Q in vmPFC. BPs in NAcc for all participants.
+**Figure 3.:** (a) Cluster in vmPFC that shows expected value activity at the time of the choice. Peak voxel x,y,z −5,52,–6; p<0.05, FWE corrected. (b) Parameter estimates for younger and older participants extracted from the cluster in Figure 3a. Activity differs significantly between age groups (t(55) = 2.38; p=0.021). Error bars represent standard errors of the means. (c) Time-course visualisation of the expected value signal in vmPFC. Shaded areas indicate standard errors. The expected-value signal is significantly larger and prolonged in the younger compared to the older sample. (d) There is a positive relationship between expected-value signal magnitude and total monetary gains (r(53) = 0.37, p=0.006 when controlling for age and model fit). For display purposes, the correlations are shown with residuals after regressing out age and model fit. (e) DA D1 BP in NAcc is positively related to Q in vmPFC (r(53) = 0.28, p=0.038, when controlling for age). For display purposes the correlations are shown with residuals after regressing out age.
 
 The parameter estimate for Q in vmPFC was positively related to total monetary gains (r(53)=0.37, p=0.006, controlling for age and model fit in a partial correlation). This correlation remained significant without controlling for age, model fit or both. Q in vmPFC was a significant predictor of all measures of performance (bivariate correlations: total monetary gains: r(55) = 0.47, p<0.001 adaptive switches: r(55) = 0.39, p=0.003; efficient choices: r(55) = 0.38, p=0.004). Age was also a significant predictor of all measures of performance (bivariate correlations: total monetary gains: r(55) = -0.32, p=0.050; adaptive switches: r(55) = -0.26 p=0.052; efficient choices: r(55) = -0.32 p=0.015). Age was also a significant predictor of Q in vmPFC (r(55) = -0.32 p=0.016). Age was no longer a significant predictor of performance after controlling for Q in vmPFC (beta age = −0.12,–0.23, and −0.15; p=0.328, 0.086 and 0.255, for monetary gains, efficient choices and adaptive switches, respectively), whereas Q in vmPFC remained a significant predictor of all measures of performance (beta Q in vmPFC = 0.43, 0.30, and 0.34; p=0.001, 0.023 and 0.012 for monetary gains, efficient choices and adaptive switches, respectively). This is consistent with a full mediation of age effects on performance by Q in vmPFC. Note, however, that it is difficult to make inferences on mediation effects of age in a cross-sectional dataset (Lindenberger et al., 2011).
 
 The results were not dependent on the use of the Bayesian model to estimate Q values (when using the RW model Q estimates; when including both age and Q, beta age = −0.20,–0.22, −0.21, p=0.111, 0.093, 0.104; beta Q in vmPFC = 0.33, 0.28, 0.26, p=0.010, p=0.030, p=0.047 for monetary gains, efficient choices and adaptive switches, respectively).
 
-## RPE signals in striatum
+### RPE signals in striatum
 
 RPEs are widely reported in NAcc (Behrens et al., 2008; Niv et al., 2012); but see also (Stenner et al., 2015; Wimmer et al., 2014). RPEs are thought to be a critical signal conveyed by dopaminergic neurons (Bayer and Glimcher, 2005; Hart et al., 2014) that guide action selection in probabilistic learning tasks (Pessiglione et al., 2006; Hart et al., 2014; Rolls et al., 2008) like the TAB. Although our winning computational model, a Bayesian observer model, does not use RPEs, we may expect the brain to, nonetheless, track RPEs as the discrepancy between outcomes observed and outcomes predicted by the model (Daw et al., 2011). When investigating RPE signals in fMRI data, a common approach is to identify regions in which activity is correlated with the RPE defined as a single regressor (R(t)–Qa(t)). However, because R and RPE are correlated (Behrens et al., 2008; Niv et al., 2012; Li et al., 2011), when using this approach the amount of variance attributed to RPE may be overestimated (Behrens et al., 2008; Guitart-Masip et al., 2012) and the identified signals can be seen as putative RPEs. For this reason, it has been suggested that the effects of R and Q need to be estimated separately and only regions showing both signals with opposite signs can be considered as conveying a canonical RPE signal (Behrens et al., 2008).
 
 Following this approach, we first defined an ROI for NAcc in each hemisphere in which BOLD was correlated with the full RPE regressor at the time of outcome (Materials and methods, GLM 2, Figure 4a, MNI peak voxel coordinates x,y,z = 14,12,–10; k = 72; z = 7.03 and x,y,z = -14,8,–10; k = 47; z = 6.74 with p(FWE-corrected)<0.05). From these regions, we extracted parameter estimates for reward and expected value separately as estimated in a separate GLM model (Materials and methods, GLM 3). We replicated previous findings in older adults (Chowdhury et al., 2013), as we saw a significant effect of R, but no significant negative effect of Q in both ROIs (Figure 4b). Contrary to our hypothesis, we did not observe a canonical prediction error in the young sample either. Again, we observed a positive effect of R, but no significantly negative effect of Q. Note that this is not inconsistent with the result reported by Chowdhury et al. (2013), where no fMRI data were collected for the young control group. No evidence for differences between the different age groups’ mean activation for R or Q were found (p>0.29). In addition, when performing a less stringent test and extracting parameter estimates from this ROI for the full RPE, defined as one regressor (R-Q), we did not observe any differences between the groups’ mean activation (p>0.45). These negative results were not dependent on using the Bayesian observer model to generate Q as they were consistent across models (Supporting figure to Figure 4). There was no indication that the lack of expected value signal in the NAcc at the group level was caused by some participants showing poor learning of expected value, as the correlation between Q in NAcc and the different measures of performance (monetary gains, effective choices, and adaptive switches) was not significant (p>0.25).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/26424/elife-26424-fig4-v2.jpg)
+
+**Figure 4.:** These were selected as candidate regions to test for canonical RPE showing both a positive effect of reward and a negative effect of Q as calculated by the Bayesian observer model. Extracted parameter estimates for R and Q as calculated by the Bayesian observer model from the regions shown in Figure 4a. Although we found a strong effect of reward bilaterally, no expected-value signal was observed for either age group (p>0.10).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26424/elife-26424-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Clusters in bilateral nucleus accumbens defined with a simple contrast of R-Q in first-level analysis using parameter values put forward by the Rescorla-Wagner model. These were selected as candidate regions conveying canonical reward prediction error (RPE) at the time of outcome. (b) Extracted parameter estimates from the regions shown in Figure 1—figure supplement 1a. Although the nucleus accumbens showed a strong effect of reward bilaterally, no clear expected value signal was observed in the region. Results were not significantly different from beta model parameter estimates.
+
 In order to assess how well the RW model and the Bayesian observer model generated predictions of the BOLD signal, we estimated two comparable GLMs including only R and Q as generated by each model as parametric modulators at the time of the outcome. We then compared the residuals of the respective GLMs on specific ROIs. The RW model generated better predictions of the BOLD signal in NAcc (paired t-test comparing residuals of the respective GLM models within functional ROIs; t(56) = 5.69, p<0.001). This is in line with the extent of the literature showing putative or canonical RPEs as being encoded in NAcc (Daw et al., 2011; McClure et al., 2003; O’'Doherty et al., 2003), because the RW model used RPEs to learn the value of actions. On the other hand, the Bayesian observer model generates better predictions of the BOLD signal in the vmPFC when Q as generated by each model was included as a parametric modulator at the time of choice (paired t-test comparing residuals of the respective GLM models across all voxels in the respective vmPFC ROIs; t(56) = 5.62, p<0.001).
 
-## Relationship to D1 DA BP
+### Relationship to D1 DA BP
 
 We also investigated the relationship among DA D1 BP, age, brain function and performance. We collected PET data using [11C]SCH23390 radiotracer that allows DA D1 BP to be measured across the whole brain. We calculated D1 BP in seven a priori ROIs. The selected ROIs were dlPFC, vlPFC, OFC, and vmPFC in cortex, and putamen, caudate and NAcc in striatum in each hemisphere. BP values were calculated and averaged across hemispheres. The selected regions were chosen based on their relevance to our task, as they have previously been reported to be important for various cognitive processes, ranging from value learning and reward sensitivity to working memory and cognitive flexibility (see SI for details). Younger participants had higher values for binding potentials in all ROIs considered (p<0.001 in all seven ROIs, Figure 1). BP in none of the ROIs was correlated with any measure of performance or any of the model parameters after controlling for multiple comparisons (p>0.02; adjusted threshold when controlling for 42 comparisons: p=0.001, Supplementary file 2a). D1 BP among ROIs was highly correlated after controlling for age (r(53) = 0.411–0.911, p<0.001, Supplementary file 2b).
 
@@ -101,7 +275,7 @@ We did not find any significant relationship between the representation of Q in 
 
 We used a probabilistic reward learning task along with computational modelling, PET measures of the D1 system and fMRI in healthy, cognitively high functioning younger and older participants to investigate the effects of age on value-based decision making and its modulation by DA. We showed that probabilistic reward learning was impaired in older compared to younger participants. We also showed that value anticipation in vmPFC predicted performance beyond age and was attenuated in older participants. Furthermore, the value signal in vmPFC was modulated by D1 BP in NAcc. Finally, our computational model showed that the tendency for choice perseveration can be described as aversion to the variance of the unchosen option and that, for most participants, greater subjective confidence in a previous choice promoted switches away from that choice.
 
-## Dopamine, aging and value signals
+### Dopamine, aging and value signals
 
 An age-related impairment in probabilistic reward learning has been widely reported (Mell et al., 2005; Eppinger et al., 2013; Chowdhury et al., 2013; Eppinger et al., 2015; Samanez-Larkin et al., 2012). The age-related deterioration of the dopaminergic system (Volkow et al., 1998) has been hypothesised to underlie age-related cognitive decline (Volkow et al., 1998; Bäckman et al., 2010). One mechanism through which DA deficits can affect probabilistic learning performance in aging is by attenuation of value signals in the brain (Halfmann et al., 2016). Anticipatory value signals are commonly reported in vmPFC (Rolls et al., 2008; Kim et al., 2011) as well as in striatum (Schönberg et al., 2007; Behrens et al., 2008) and are modulated by DA (Pessiglione et al., 2006; Chowdhury et al., 2013; Schlagenhauf et al., 2013). Additionally, RPEs detected in NAcc (Wimmer et al., 2014; Samanez-Larkin et al., 2012; Kim et al., 2011) are thought to reflect dopaminergic signals from midbrain (Bayer and Glimcher, 2005; Schultz et al., 1997), supporting optimal action selection in probabilistic reward learning (Frank et al., 2004).
 
@@ -117,7 +291,7 @@ The lack of canonical RPE signal in NAcc could stem from the fact that we used a
 
 The lack of canonical RPEs in older participants has already been observed using the same task (Chowdhury et al., 2013). In that study, canonical RPEs were detected in NAcc of older participants after boosting the dopaminergic system with levodopa. These findings were interpreted as evidence that older participants had deficient RPEs signals in NAcc due to DA decline, and that remediating this deficit could restore the RPE signal. However, no younger comparison group was scanned to confirm that the deficient expected value signal observed in the older participants on placebo was age-specific. Chowdhury et al. (2013), nevertheless, showed that the expected value signal in NAcc is sensitive to DA manipulations. Contrary to what one might expect from these data, the relationship between expected value (Q) as predicted by the winning model and NAcc BOLD signal was not modulated by D1 BP in any ROI considered. The reason for this negative result remains unknown. In striatum, D1 receptors have lower affinity to DA than D2 receptors and their stimulation is hypothesised to be dependent on phasic changes in DA (Maia and Frank, 2011). Because RPE in NAcc is thought to reflect phasic fluctuations of DA levels (Schultz et al., 1997), one would expect that D1 receptors would be sensitive to these fluctuations. Our results do not support this view. An alternative account is that the dopaminergic modulation of BOLD signal in NAcc observed by Chowdhury et al. (2013) after administration of levodopa is related to stimulation of D2 rather than D1 receptors. Supporting this view, recent evidence suggests that D2 receptors can encode both tonic and phasic DA signals in striatum (Marcott et al., 2014).
 
-## Computational mechanisms of switch behaviour
+### Computational mechanisms of switch behaviour
 
 Using computational modelling, we explored different possible influences on the trade-off between exploration and exploitation in the probabilistic reward-learning task. We considered two families of computational models, variations of a standard RL model using RPEs to learn the mean expected value of the bandits and variations in Bayesian ideal observer model that tracked the probability of obtaining a reward for each bandit as a beta distribution. In both model families, including a parameter that promoted forgetting of the unchosen bandit improved model fit. Similarly, including a perseveration parameter to account for the tendency to repeat choices regardless of expected value (Rutledge et al., 2009; Schönberg et al., 2007; Lau and Glimcher, 2005) improved model fit in both families. However, a Bayesian model that modulated the expected value of the unchosen option by the variance of that option outperformed any model with perseveration. Across participants, the variance of the unchosen option had a negative impact on the value of that option. This is opposite to an exploration bonus or uncertainty based exploration term that arises in various more or less normative accounts of exploration (Dayan and Sejnowski, 1996) and has been observed in some experiments (Badre et al., 2012; Wilson et al., 2014). However, many previous studies of decision-making have also shown that variance may be penalised as a form of risk sensitivity (Symmonds et al., 2011; Payzan-LeNestour et al., 2011; d'Acremont et al., 2013), and this is a cousin of the effect that we observed. Furthermore, our model comparison showed that uncertainty aversion is a better account of the perseveration typically observed in bandit tasks (Rutledge et al., 2009; Schönberg et al., 2007) than a choice kernel. This is a novel insight into the mechanism usually referred to as perseveration and suggests that aversion to the uncertainty about the option that was not chosen previously causes a tendency to stick to ones choices. Whether perseveration observed in other paradigms can be accounted for in the same way remains unknown.
 
@@ -125,89 +299,167 @@ Additionally, a Bayesian model that modulated the value of the most recent choic
 
 Despite the performance difference, we did not find age differences in any single model parameter, precluding any conclusions about which computational process is affected in old age. In fact, it is likely that the process underlying age differences in performance is not parametrised in the winning Bayesian model. This stands in contrast with the less accurate but simpler RW model, in which the effect of aging was consistently manifested in the learning rate (Supplementary file 1c).
 
-## Conclusions
+### Conclusions
 
 We measured brain activity in younger and older adults performing a probabilistic learning task and found that a signal in vmPFC at the time of choice reflecting expected value was correlated to successful performance. This activity was dependent on DA availability and age, providing support for age-related prefrontal and dopaminergic alterations as candidate mechanisms for impaired probabilistic reward learning and subsequent optimal action selection commonly reported in aging. These results provide insights into the neural and behavioural underpinnings of probabilistic learning and highlight the mechanisms by which age-related dopaminergic deterioration impacts decision making.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Thirty healthy older adults aged 66–75 and thirty younger adults aged 19–32 were recruited through local newspaper advertisements in Umeå, Sweden. Sample size and power were calculated based on previous studies. One was a study of DA D1 BP differences between age groups (Rieckmann et al., 2011). The authors found clear differences in DA D1 BP after testing 20 participants in each age group: Cohen’s d = 3.00 (pooled SD = 0.04) for frontal and parietal areas, Cohen’s d = 1.60 (pooled SD = 0.21) for striatal ROIs. Assuming this difference, in order to obtain 90% power on a two-tailed independent sample t-test, 10 participants were needed in each age group. Additionally, to estimate the appropriate sample size for the behavioural task, we used the previous study by Chowdhury et al. (2013), who found a behavioural difference on the same task between younger and older participants of similar age ranges: Cohen’s d = 0.57 (pooled SD = 0.99). Assuming this difference, in order to obtain 70% power on a one-tailed t-test of a behavioural difference between two samples, 30 participants were needed in each group. Higher power could not be reached, due to financial constraints posed by the cost of PET scans.
 
 The health of all potential participants was assessed before recruitment by a questionnaire administered by the research nurses. The questionnaire enquired about past and present neurologic or psychiatric conditions, head trauma, diabetes mellitus, arterial hypertension that required more than two medications, addiction to alcohol or other drugs, and bad eyesight. All participants were right-handed and provided written informed consent prior to commencing the study. Ethical approval was obtained from the Regional Ethical Review Board. Participants were paid 2000 SEK (~$225) for participation and earned up to 149 additional SEK (~$17) in the two-armed bandit task (TAB). Three older participants were excluded from the TAB analysis, one due to excessive head motion during fMRI scanning, one for only ever selecting one of the two stimuli in the task, and one due to a malfunctioning button box, resulting in no recorded responses. One additional older participant did not complete the full PET scan, but this participant's fMRI and task data are still included in the analysis where possible. This resulted in a total of 57 participants for fMRI and task analysis (27 old, 30 young) and 56 participants for PET analysis (26 old, 30 young).
 
-## Procedure
+### Procedure
 
 Participants completed a health questionnaire via telephone prior to recruitment. All participants performed the Mini Mental State Examination (MMSE). Scores ranged from 26 to 30 in the young sample (mean = 29.4, SD = 0.97) and from 27 to 30 in the older sample (mean = 29.4, SD = 0.77), with no difference between the two (p=0.89). PET and fMRI scanning were planned 2 days apart. However, due to a technical problem with the PET scanner, 12 participants were scanned at a longer delay apart (range 4–44 days apart). On the MRI scanning day, participants completed the TAB and another unrelated task inside the MRI scanner. Participants also completed a battery of tasks outside the scanner. Only results from the TAB will be discussed here.
 
-## Two-armed bandit task
+### Two-armed bandit task
 
 The TAB (10) was presented in Cogent 2000 (Wellcome Trust for Neuroimaging, London, UK). Figure 1a depicts a schematic representation of one TAB trial. Participants were instructed to choose the fractal stimulus they thought to be most rewarding at each trial and were informed of the changing probability of obtaining a reward for each stimulus. These probabilities varied independently from one another. Probabilities were generated using a random Gaussian walk (Daw et al., 2006). Before scanning, participants were presented with five practice trials. The same set of random Gaussian walks was used for all participants, but assignment of random walk to stimulus identity was counterbalanced across participants.
 
-## Computational modelling of behavioural data
+### Computational modelling of behavioural data
 
-We built a variety of different models which can be classified into two main families. The first includes variations on standard RL models whereby action values are learned through reward prediction errors (RPEs) using the RW updating rule. The second family of models include variations on a Bayesian ideal observer whereby the probability distribution of obtaining a reward is updated after each outcome observation. All models, regardless of family, use a softmax rule with an inverse temperature parameter β (with β > 0) to determine the probability that the participants chooses action a:(1)Pat=a=exp[βma(t)]expβm0(t)+expβm1(t)
+We built a variety of different models which can be classified into two main families. The first includes variations on standard RL models whereby action values are learned through reward prediction errors (RPEs) using the RW updating rule. The second family of models include variations on a Bayesian ideal observer whereby the probability distribution of obtaining a reward is updated after each outcome observation. All models, regardless of family, use a softmax rule with an inverse temperature parameter β (with β > 0) to determine the probability that the participants chooses action a:
 
-here, ma(t) is the propensity for selecting action a. The next section lays out howma(t) is defined in the models we explored.
+$$
+Pat=a=\frac{exp[\betam_{a}(t)]}{exp\betam_{0}(t)+exp\betam_{1}(t)}
+$$
+
+here, $m_{a}(t$) is the propensity for selecting action a. The next section lays out how$m_{a}(t$) is defined in the models we explored.
 
 Reinforcement learning models
 
-For RL models, expected values (Q) for trial t were calculated for each action a ∈{0,1} (corresponding to each bandit). Qa(t + 1) is calculated according to standard RW updating rule:(2)Qa(t)t+1= Qa(t)t+ αδ(t)(3)δ(t) =R(t)−Qa(t)(t)
+For RL models, expected values (Q) for trial t were calculated for each action a ∈{0,1} (corresponding to each bandit). Qa(t + 1) is calculated according to standard RW updating rule:
 
-Qa(t)(t) is the expected value of the option a(t) selected on trial t. Q for both actions was set to 0.5 at the start of the experiment. δ(t) is the difference between expected value and received reward (R) on trial t. R is a binary with the value of 1 on rewarded trials, and 0 on unrewarded trials. α is the learning rate, with 0 < α <1, indicating the weight given to the RPE on the current trial. A greater value for α results in faster updating of Q.
+$$
+Q_{a(t)}t+1=Q_{a(t)}t+\alpha\delta(t)
+$$
 
-In the simplest model, mat=Qa(t). We included an additional parameter in the definition of ma(t): a perseveration parameter b (with −∞<b<∞), reflecting the common observation that participants tend to either repeat their choices, or avoid repetition (Rutledge et al., 2009; Schönberg et al., 2007; Lau and Glimcher, 2005). This parameter raises or lowers the expected value of a stimulus if that stimulus was also chosen on the previous trial. Thus,(4)mat= Qat+bχa=a(t-1)
 
-where a positive value of b reflects a tendency to perseverate (repeat the same choice), and a negative value reflects avoiding perseveration.
 
-We considered another definition of ma(t), where in addition to the perseveration parameter b, we considered the possibility that the unchosen stimulus may decay in value each time it is not selected by the participant. This was instantiated by the inclusion of a ‘forget’ parameter φ (with 0<φ<1)(Barch et al., 2003), so that the Q value for the unchosen option relaxes towards 0.5. Thus,(5)Qat+1=Qat+φ(0.5-Qat)χa≠a(t1)
+$$
+\delta(t) =R(t)−Q_{a}(t)(t)
+$$
+
+Qa(t)(t) is the expected value of the option $a(t)$ selected on trial t. Q for both actions was set to 0.5 at the start of the experiment. δ(t) is the difference between expected value and received reward (R) on trial t. R is a binary with the value of 1 on rewarded trials, and 0 on unrewarded trials. α is the learning rate, with 0 < α <1, indicating the weight given to the RPE on the current trial. A greater value for α results in faster updating of Q.
+
+In the simplest model, $m_{a}t=Q_{a}(t$). We included an additional parameter in the definition of $m_{a}(t$): a perseveration parameter $b$ (with $−∞<b<∞$), reflecting the common observation that participants tend to either repeat their choices, or avoid repetition (Rutledge et al., 2009; Schönberg et al., 2007; Lau and Glimcher, 2005). This parameter raises or lowers the expected value of a stimulus if that stimulus was also chosen on the previous trial. Thus,
+
+$$
+m_{a}t=Q_{a}t+bχ_{a=a(t-1)}
+$$
+
+where a positive value of $b$ reflects a tendency to perseverate (repeat the same choice), and a negative value reflects avoiding perseveration.
+
+We considered another definition of $m_{a}(t)$, where in addition to the perseveration parameter $b$, we considered the possibility that the unchosen stimulus may decay in value each time it is not selected by the participant. This was instantiated by the inclusion of a ‘forget’ parameter $\phi$ (with $0<\phi<1$)(Barch et al., 2003), so that the $Q$ value for the unchosen option relaxes towards 0.5. Thus,
+
+$$
+Q_{a}t+1=Q_{a}t+\phi(0.5-Q_{a}t)χ_{a\neqa(t1)}
+$$
 
 In this model, the value of the chosen option is updated as described in Equation 2.
 
 Bayesian observer models
 
-Choice behaviour was modelled by representing the probability of obtaining a reward for each possible action a∈{0,1} (corresponding to each bandit) as a beta distribution(6)θa ~ β(θa; γa, εa)
+Choice behaviour was modelled by representing the probability of obtaining a reward for each possible action $a\in{0,1}$ (corresponding to each bandit) as a beta distribution
 
-that is updated upon observation of the outcome on each trial. On any given trial, these models generate expectations about the mean probability of obtaining a reward (which we will refer to as Qat, for consistency with the RL models) and its variance (Vat):(7)Qat=γaγa+εa(8)Vat=γaεaγa+εa2γa+εa+1
+$$
+\theta_{a}~\beta(\theta_{a};\gamma_{a},\epsilon_{a})
+$$
 
-The parameters of the beta distributions were initialised at 1 (γa= εa=1). This implies that Q01=Q11=0.5 and maximum variance V01=V11=0.143 reflecting an expectation of reward equal to chance for both bandits and a lack of knowledge about the underlying probability distributions. After getting a reward for choosing action a, γa is increased by 1 and both γa and εa are relaxed towards 1. Conversely, after reward omission, εa is increased by 1 and both γa and εa are relaxed towards 1. Hence,(9)γa(t)(t+1)=(1−ω)γa(t)(t)+ω+1;andεa(t)(t+1)=(1−ω)εa(t)(t)+ω;if R(t)=1(10)γa(t)(t+1)=(1−ω)γa(t)(t)+ω;andεa(t)(t+1)=(1−ω)εa(t)(t)+ω+1;if R(t)=0
+that is updated upon observation of the outcome on each trial. On any given trial, these models generate expectations about the mean probability of obtaining a reward (which we will refer to as $Q_{a}t$, for consistency with the RL models) and its variance ($V_{a}t$):
 
-For the unchosen bandit, both γa and εa are relaxed towards 1:(11)γ1−a(t)(t+1)=(1−λ)γ1−a(t)(t)+λ;andε1−a(t)(t+1)=(1−λ)ε1−a(t)(t)+λ;
+$$
+Q_{a}t=\frac{\gamma_{a}}{\gamma_{a}+\epsilon_{a}}
+$$
 
-﻿ω and λ are individual participants' freeparameters ﻿governing how fast reward probabilities are updated (ω, with 0<ω<1) and forgotten (λ, with 0<λ<1). In the simplest model we considered, ω=λ. We also considered the possibility that updating and forgetting mechanisms occurred at different speeds, hence allowing ω and λ to be different.
 
-As stated previously, mat reflects the propensity of selecting action a, where the simplest definition of mat is ma(t)=Qa(t) as defined in Equation 7, either calculated from a model with one single update parameter (ω=λ)or with two separate update parameters (ω≠λ).
 
-We then considered a variety of possible additions to mat which reflected various factors that might influence choice. We tested different combinations of nested models using methods of model comparison. First was choice perseveration bχa=a(t-1) just as in Equation 4.
+$$
+V_{a}t=\frac{\gamma_{a}\epsilon_{a}}{\gamma_{a}+\epsilon_{a}^{2}\gamma_{a}+\epsilon_{a}+1}
+$$
 
-The second potential addition concerned the variance Va(t) of the beta distributions for the individual bandits. In principle, since the subjects might have framed their decision as being between sticking and switching, there could be separate influences associated with the bandit that was or was not chosen on the previous trial. Thus, we considered two separate contributions:(12)υchosenVa(t)χa=a(t−1)and(13)υunchosenVa(t)χa=1−a(t−1).
+The parameters of the beta distributions were initialised at 1 ($\gamma_{a}=\epsilon_{a}=1$). This implies that $Q_{0}1=Q_{1}1=0.5$ and maximum variance $V_{0}1=V_{1}1=0.143$ reflecting an expectation of reward equal to chance for both bandits and a lack of knowledge about the underlying probability distributions. After getting a reward for choosing action $a$, $\gamma_{a}$ is increased by 1 and both $\gamma_{a}$ and $\epsilon_{a}$ are relaxed towards 1. Conversely, after reward omission, $\epsilon_{a}$ is increased by 1 and both $\gamma_{a}$ and $\epsilon_{a}$ are relaxed towards 1. Hence,
 
-If υchosenor υunchosen are positive, then there is a tendency to choose in favour of high variance – a form of uncertainty or exploration bonus.
+$$
+\gamma_{a(t)}(t+1)=(1−\omega)\gamma_{a(t)}(t)+\omega+1;and\epsilon_{a(t)}(t+1)=(1−\omega)\epsilon_{a(t)}(t)+\omega;if R(t)=1
+$$
 
-Finally, we considered the possibility that subjective confidence that participants can calculate about the correctness of their choices might modulate choice. Based on Sanders et al. (2016), confidence (C) can be defined as:(14)C=Pcorrectobservations,  choice
 
-Given that our Bayesian observer model tracks subjective estimates of the mean and the variance of the probability distribution of obtaining a reward for each bandit, the probability in Equation 14 can be approximated by:(15)C1(t)=P(θ1>θ0)=∫θ1=01dθ1β(θ1; γ1, ε1)∫θ0=0θ1dθ0β(θ0; γ0, ε0)(16)C0(t)=P(θ0>θ1)=1−C1(t)
 
-Given the simple relationship between these two confidences, there are various essentially equivalent ways of incorporating it into choice. We considered the relative confidence in the choice on a trial:(17)Crel(t)=P(θa(t)>θ1−a(t))−P(θ1−a(t)>θa(t))=2P(θa(t)>θ1−a(t))−1
+$$
+\gamma_{a(t)}(t+1)=(1−\omega)\gamma_{a(t)}(t)+\omega;and\epsilon_{a(t)}(t+1)=(1−\omega)\epsilon_{a(t)}(t)+\omega+1;if R(t)=0
+$$
 
-and assessed the extent to which the relative confidence on trial t-1 encouraged switching on trial t by adding a factor κCrelt-1χa=1-a(t-1) to the action that was not chosen on trial t-1. Here, positive values of κ make the subjects more likely to switch if they had been more confident.
+For the unchosen bandit, both $\gamma_{a}$ and $\epsilon_{a}$ are relaxed towards 1:
 
-## Model fitting and comparison
+$$
+\gamma_{1−a(t)}(t+1)=(1−\lambda)\gamma_{1−a(t)}(t)+\lambda;and\epsilon_{1−a(t)}(t+1)=(1−\lambda)\epsilon_{1−a(t)}(t)+\lambda;
+$$
+
+﻿$\omega$ and $\lambda$ are individual participants' freeparameters ﻿governing how fast reward probabilities are updated ($\omega$, with $0<\omega<1$) and forgotten ($\lambda$, with $0<\lambda<1$). In the simplest model we considered, $\omega=\lambda$. We also considered the possibility that updating and forgetting mechanisms occurred at different speeds, hence allowing $\omega$ and $\lambda$ to be different.
+
+As stated previously, $m_{a}t$ reflects the propensity of selecting action $a$, where the simplest definition of $m_{a}t$ is $m_{a}(t)=Q_{a}(t)$ as defined in Equation 7, either calculated from a model with one single update parameter $(\omega=\lambda)$or with two separate update parameters $(\omega\neq\lambda)$.
+
+We then considered a variety of possible additions to $m_{a}t$ which reflected various factors that might influence choice. We tested different combinations of nested models using methods of model comparison. First was choice perseveration $bχ_{a=a(t-1)}$ just as in Equation 4.
+
+The second potential addition concerned the variance $V_{a}(t)$ of the beta distributions for the individual bandits. In principle, since the subjects might have framed their decision as being between sticking and switching, there could be separate influences associated with the bandit that was or was not chosen on the previous trial. Thus, we considered two separate contributions:
+
+$$
+υ^{chosen}V_{a}(t)χ_{a=a(t−1)}and
+$$
+
+
+
+$$
+υ^{unchosen}V_{a}(t)χ_{a=1−a(t−1)}.
+$$
+
+If $υ^{chosen}$or $υ^{unchosen}$ are positive, then there is a tendency to choose in favour of high variance – a form of uncertainty or exploration bonus.
+
+Finally, we considered the possibility that subjective confidence that participants can calculate about the correctness of their choices might modulate choice. Based on Sanders et al. (2016), confidence (C) can be defined as:
+
+$$
+C=Pcorrectobservations,choice
+$$
+
+Given that our Bayesian observer model tracks subjective estimates of the mean and the variance of the probability distribution of obtaining a reward for each bandit, the probability in Equation 14 can be approximated by:
+
+$$
+C_{1}(t)=P(\theta_{1}>\theta_{0})=\int_{\theta_{1}=0}^{1}d\theta_{1}\beta(\theta_{1}; \gamma_{1}, \epsilon_{1})\int_{\theta_{0}=0}^{\theta_{1}}d\theta_{0}\beta(\theta_{0}; \gamma_{0}, \epsilon_{0})
+$$
+
+
+
+$$
+C_{0}(t)=P(\theta_{0}>\theta_{1})=1−C_{1}(t)
+$$
+
+Given the simple relationship between these two confidences, there are various essentially equivalent ways of incorporating it into choice. We considered the relative confidence in the choice on a trial:
+
+$$
+C^{rel}(t)=P(\theta_{a(t)}>\theta_{1−a(t)})−P(\theta_{1−a(t)}>\theta_{a(t)})=2P(\theta_{a(t)}>\theta_{1−a(t)})−1
+$$
+
+and assessed the extent to which the relative confidence on trial $t-1$ encouraged switching on trial $t$ by adding a factor $κC^{rel}t-1χ_{a=1-a(t-1)}$ to the action that was not chosen on trial $t-1$. Here, positive values of $κ$ make the subjects more likely to switch if they had been more confident.
+
+### Model fitting and comparison
 
 Model parameters were fitted using an expectation-maximisation approach (Guitart-Masip et al., 2012; Huys et al., 2011). We used a Laplacian approximation to obtain maximum a posteriori estimates for the parameters for each participant iteratively, starting with flat priors. After an iteration, the resulting group mean posterior and variance for each parameter were used as priors in the next iteration. This method was used to prevent the individuals’ parameters from taking on extreme values.
 
 Models were compared using the integrated Bayesian Information Criterion (iBIC) (Guitart-Masip et al., 2012; Huys et al., 2011), where small iBIC values indicate a model that fits the data better after penalizing for the number of parameters. Comparing iBIC values is akin to a likelihood ratio test.
 
-## Statistical analysis of behaviour and brain variables
+### Statistical analysis of behaviour and brain variables
 
 We calculated a number of behavioural measures: (1) the total monetary gains in Swedish Crowns (SEK), (2) percentage of efficient choices (the proportion of choices in which participants chose the option that was most likely to be rewarded according to the random Gaussian walks), (3) number of switches between bandits, and (4) percentage of adaptive switches, defined as switches to subjectively better bandits (according to the winning model) versus switches to subjectively worse bandits. We used independent sample one-tailed t-tests to assess group differences in task performance, based on previously reported observations of impaired probabilistic reward learning performance in old age (Eppinger et al., 2011; Mell et al., 2005). We hypothesised that the older group mean would be lower than the young group mean. Non-parametric independent two-tailed two sample Mann-Whitney tests were used to assess group differences in model parameters and other variables that were non-normally distributed. Regular two-tailed two-sample t-tests were used elsewhere. Pearson's correlations were used to analyse the data further, controlling for age and model fit, as defined by the participant’s log likelihood, where appropriate. Statistical analyses were performed in SPSS 22 and R3.3.0.
 
-## MRI acquisition
+### MRI acquisition
 
 Brain imaging data were acquired on a 3.0TE MR-scanner (GE Medical Systems). T1-weighted 3D-SPGR images were acquired using a single-echo sequence (voxel size: 0.5 × 0.5 × 1 mm, TE = 3.20, flip angle = 12 deg). Functional images were acquired using a T2*-sensitive gradient echo sequence (voxel size: 2 × 2 × 4 mm, TE = 30.0 mis, TR = 2000 ms, flip angle = 80 deg), and contained 37 slices of 3.4 mm thickness, with a 0.5 mm gap between slices. Volume acquisition occurred in an interleaved fashion. 330 volumes were obtained for each of the two functional runs. During acquisition of fMRI time series, heart rate and respiratory data were collected using a breathing belt and a pulse oximeter.
 
-## MR analysis
+### MR analysis
 
 fMRI analysis was performed using SPM8 (http://www.fil.ion.ucl.ac.uk/spm/software/spm8/). Preprocessing steps included (in this order): slice-time correction, realignment, coregistration to the T1-weighted image, movement correction using ArtRepair (see below), normalisation to MNI space using a diffeomorphic registration algorithm (DARTEL) as implemented in SPM (Ashburner, 2007) with spatial resolution after normalisation 2 × 2×2 mm. Data were smoothed with a final Gaussian kernel equivalent to a standard 8 mm. This kernel was achieved in two steps, including the ArtRepair motion correction (see below). The fMRI time series data were high-pass filtered with cut-off 128 s, and whitened with an AR(1) model. For each participant, the canonical hemodynamic response function was used to compute their statistical model.
 
@@ -221,15 +473,15 @@ GLM 2 (putative RPE): When investigating RPE signals, a common approach is to id
 
 GLM 3: To quantify the separate RPE components, we performed another first-level analysis in which R and Q were included as two independent parametric modulators at the time of the outcome in the design matrix. For each participant, we calculated a contrast image weighting these two independent parametric modulators by 1. Parameter estimates for R and Q were extracted from these contrast maps using the ROIs defined in the second-level analysis described in GLM 2 and were further analysed to look for a canonical RPE signal.
 
-## Time course extraction
+### Time course extraction
 
 The aim of this analysis was to visualise the effect of variables of interest on the BOLD signal, at the time of the choice and at the time of the outcome. Time courses of BOLD data from specified ROIs were extracted from the preprocessed, normalised EPI images. This BOLD signal was upsampled to one measurement every 200 ms. This time series resampled into chunks of 15 s, corresponding to individual trials. Stimulus onset occurred at 0 s, choice between 0 and 2 s, and outcome at 3 s. A general linear model including the regressors of interest was estimated at each time point in each trial for each participant. In these models, the regressors of interest were allowed to compete for variance. At each time point, group mean effect sizes and standard errors were calculated and plotted separately for young and old.
 
-## PET image acquisition
+### PET image acquisition
 
 PET images were acquired in 3D mode using a Discovery 690 PET/CT (General Electric, WI, US), at the Department of Nuclear Medicine, Norrland’s University Hospital. A low-dose helical CT scan (20 mA, 120 kV, 0.8 s/revolution), provided data for PET attenuation correction. Participants were injected with a bolus of 200 MBq [11C]SCH 23390. A 55-min dynamic acquisition commenced at time of injection (9 frames x 2 min, 3 frames x 3 min, 3 frames x 4,20 min, 3 frames x 5 min). Attenuation- and decay-corrected 256 × 256 pixel transaxial PET images were reconstructed to a 25 cm field-of-view employing the Sharp IR algorithm (6 iterations, 24 subsets, 3.0 mm Gaussian post filter). Sharp IR is an advanced version of the OSEM method for improving spatial resolution, in which detector system responses are included (Ross and Stearns, 2010). The Full- Width Half-Maximum (FWHM) resolution is below 3 mm. The protocol resulted in 47 tomographic slices per time frame, yielding 0.977 × 0.977 × 3.27 mm3 voxels. Images were decay-corrected to the start of the scan. Images were de-identified using dicom2usb (http://dicom-port.com/). To minimise head movement during the imaging session, the patient’s head was fixated with an individually fitted thermoplastic mask (Positocasts Thermoplastic; CIVCO medical solutions, IA, USA).
 
-## PET analysis
+### PET analysis
 
 PET data were analysed in a standard ROI-based protocol. This type of analysis requires a priori hypotheses about the regional specificity of dopaminergic modulation of observed behavioural or neuronal effects. All analyses were done with the use of in-house developed software (imlook4d version 3.5, https://dicom-port.com/product/imlook4d/).
 

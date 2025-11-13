@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03xez1567 Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies La Jolla United States
-2. https://ror.org/02n96ep67 Center for Motor Control and Disease, Key Laboratory of Brain Functional Genomics, East China Normal University Shanghai China
-3. https://ror.org/02vpsdb40 NYU–ECNU Institute of Brain and Cognitive Science, New York University Shanghai Shanghai China
+1. Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))
+2. Center for Motor Control and Disease, Key Laboratory of Brain Functional Genomics, East China Normal University Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))
+3. NYU–ECNU Institute of Brain and Cognitive Science, New York University Shanghai Shanghai China ([ROR:02vpsdb40](https://ror.org/02vpsdb40))
 
 † Corresponding author
 
@@ -27,29 +27,75 @@ Here, we trained mice to perform an operant action selection task where they wer
 
 ## Results
 
-## Opponent SNr activities underlie action selection
+### Opponent SNr activities underlie action selection
 
 To address the role of basal ganglia in action selection, we trained mice in a recently developed 2–8 s task in which they are required to choose the left versus right action based on self-monitored time intervals (Howard et al., 2017). Specifically, mice were put into an operant chamber with both left and right levers extended (Figure 1A, see Methods). For a given trial, both levers retract at trial initiation, and after either 2 s or 8 s (50% for each, randomly interleaved), both levers extend. The mouse has to judge the interval between lever retraction and extension as 2 s vs. 8 s and make a corresponding action choice by pressing the left vs. right lever, respectively (Figure 1A). The first lever press after lever extension was registered as the mouse’s choice. The correct choice leads to sucrose delivery (10 µl) as reward, and any lever presses beyond the first press after lever extension yield no outcome. The animal only has one chance to select the correct choice and gets rewarded in a given trial. If the animal’s very first press after levers extension is the wrong choice, then there’s no reward, and the chance to get rewarded in this particular trial vanishes, or the trial is functionally ‘terminated’ although both levers still available to press. The animal has no second chance to correct its wrong choice by pressing the correct lever after the wrong choice. During the 2 s vs. 8 s waiting period with lever retraction, the levers are not physically accessible to the animal. Even the animal is trying to approach to the lever during lever retraction, but no lever press will be generated (see Video 1). A new trial starts at lever retraction again after a random inter-trial-interval (ITI, 30 s on average; Figure 1A). Across 14 consecutive days of training, mice (n=10) significantly increased the correct rate of choice from chance level to more than 90% (Figure 1B). In addition, the animals gradually shortened the choice latency and demonstrated a strong preference toward the left lever due to its association with the shorter waiting time (Figure 1—figure supplement 1A, B). As a result, during the longer-waiting 8 s trials the mouse initially moved toward the left lever, then crossing the midpoint between left and right levers at around 4 s, and stayed around the right lever afterward (Howard et al., 2017; Figure 1C; Video 1). Note that, the mouse showed no stereotyped movement trajectories during the incorrect trials (Figure 1C). This emerged stereotyped movement trajectory in the 8 s trials thus provided us a unique opportunity for investigating the neural mechanisms underlying the internally driven, dynamic action selection process.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic diagram for the design of 2–8 s task. (B) Correct rate for wild-type mice across 14 days’ training (n=10 mice, one-way repeated-measures ANOVA, significant effect of training days, F13,117 = 32.54, p<0.0001). (C) Movement trajectory of an example mouse in correct (left panel) and incorrect (right panel) 8 s trials (gray line: trajectory of each trials; red/black line: the average trajectory). (D) Diagram of electrode array implanted into SNr. (E) Firing rate index (FRI) of neuronal activity for all task-related SNr neurons in correct 8 s trials. The magnitude of FRI is color coded and the SNr neurons are classified as four different types based on the activity dynamics. (F–I) Averaged FRI for Type 1 (F, green squares indicating activities related to left choice), Type 2 (G, green squares indicating activities related to left choice), Type 3 (H), Type 4 (I) of SNr neurons in correct (red) and incorrect 8 s trials (gray). (J) The proportion of four types of SNr neurons. Type 1 and Type 2 are major types and significantly more than Type 3 and Type 4 (Z-test, p<0.05). (K) SNr net output defined as the subtraction of averaged FRI between Type 1 and Type 2 SNr neurons. (L) Averaged psychometric curve (n=10 mice) of choice behavior. (M) The correlation between the Type 1 and Type 2 FRI subtraction and the behavioral choice (R=0.98, p<0.0005). Error bars denote s.e.m., same for below unless stated otherwise.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Lever press latency after lever extension for wild-type mice across 14 days’ training (n=10 mice, one-way repeated-measures ANOVA, effect of training days, F13,117=21.32, p<0.0001). (B) Lever press ratio for wild-type mice across 14 days training (n=10 mice, one-way repeated-measures ANOVA, effect of training days, F13,117=6.472, p<0.0001). (C) Example of recording array placement in SNr (left) and validation of array placement in a cohort of wild-type mice (right). Inset better demonstrates small tracts formed by the array implant. (D, E) Firing activities of an example SNr neuron in correct 2 s (D) and 8 s trials (E) after 14 days’ training. Top panels: Raster plot of spikes across trials aligned to lever retraction at time 0. Bottom panel: Peristimulus time histogram (PETH) plot. Red shaded areas highlight the initial 2 s period after the lever retraction in 2 s (D) and 8 s trials (E). (F) Averaged FRI for Type 1, Type 2, Type 3, and Type 4 of SNr neurons in correct (red) and incorrect 2 s trials (gray). (G) Firing rate index (FRI) of neuronal activity for all task-related SNr neurons in correct 8 s trials on day 1 of training. The magnitude of FRI is color coded and the SNr neurons are categorized as four subgroups based on the activity dynamics. (H–K) Averaged FRI of SNr neurons in correct (red) and incorrect 8 s trials (gray) on day 1 of training. (L) Averaged FRI for Type 1 and Type 2 of SNr neurons responding to rewarded and non-rewarded left/right lever presses.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Firing activities of example SNr neurons of Type 1 (A), Type 2 (B), Type 3 (C), and Type 4 (D) in correct 8 s trials after 14 days training. Top panels: Raster plot of spikes across trials aligned to lever retraction at time 0 (blue triangle: lever press; green triangle: reward; red cross: head entry). Bottom panel: Peristimulus time histogram (PETH) plot. (E–H) Firing activities of example striatal projection neurons of Type 1 (E), Type 2 (F), Type 3 (G), and Type 4 (H) in correct 8 s trials after 14 days’ training. Top panels: Raster plot of spikes across trials aligned to lever retraction at time 0 (blue triangle: lever press; green triangle: reward; red cross: head entry). Bottom panel: PETH plot.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Firing rate index (FRI) of neuronal activity for all task-related SNr neurons in correct 8 s trials recorded in the left hemisphere. The magnitude of FRI is color coded and the SNr neurons are classified as four different types based on the activity dynamics. (B–E) Averaged FRI for Type 1 (B), Type 2 (C), Type 3 (D), Type 4 (E) of SNr neurons in correct (red) and incorrect 8 s trials (gray). (F) The proportion of four types of SNr neurons. Type 1 (57/108, 52.8%), Type 2 (36/108, 33.3%), Type 3 (9/108, 8.3%), Type 4 (6/108, 5.6%). (G) FRI of neuronal activity for all task-related SNr neurons in correct 8 s trials recorded in the right hemisphere. The magnitude of FRI is color coded and the SNr neurons are classified as four different types based on the activity dynamics. (H–K) Averaged FRI for Type 1 (H), Type 2 (I), Type 3 (J), Type 4 (K) of SNr neurons in correct (red) and incorrect 8 s trials (gray). (L) The proportion of four types of SNr neurons. Type 1 (46/103, 44.7%), Type 2 (27/103, 26.2%), Type 3 (16/103, 15.5%), Type 4 (14/103, 13.6%).
+
+![Video 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-video1.mp4.jpg)
 
 The SNr is one of the major output nuclei of basal ganglia (Albin et al., 1989; DeLong, 1990; Hikosaka et al., 2000; Mink, 1996). To investigate how the basal ganglia contribute to the dynamic process of action selection, we began by recording the SNr neuronal activity in mice trained in the 2–8 s task (Figure 1D, Figure 1—figure supplement 1C, see Methods). It was found that a large proportion (211/261, 80.8%; recorded from n=9 mice) of SNr neurons changed firing rate significantly during the correct 8 s trials as mice dynamically shifted the internal action selection from the left to the right (Figure 1E). The Z-score of the task-related neuronal firing rate, reflecting the firing activity changes related to baseline, was defined as firing rate index (FRI, see Methods). We focus on the data analyses in the 8 s trials since the first 2 s of 8 s trials consists of the identical behavioral and neuronal profiles of the 2 s trials due to the task design (Figure 1C, Figure 1—figure supplement 1D–F). The task-related SNr neurons were categorized into four subtypes based on the dynamics of FRI in the correct 8 s trials: Type 1 - monotonic decrease (Figure 1E and F, 102/211, 48.3%), Type 2 - monotonic increase (Figure 1E and G, 56/211, 26.5%), Type 3 - transient phasic increase (Figure 1E and H, 25/211, 11.9%), and Type 4 - transient phasic decrease (Figure 1E,I, 28/211, 13.3%). These four types of neuronal dynamics in SNr only appeared in the correct but not the incorrect trials (Figure 1F–I), nor on the day 1 of task training (Figure 1—figure supplement 1G–K), suggesting a tight correlation between the SNr neuronal dynamics and the behavioral performance. Here, we show trial-by-trial firing activities of SNr example neurons in correct 8 s trials from well-trained animals as follows. Although the time of initial approach to the left side varies across trials, trial-by-trial analysis showed that the firing activities are consistent across trials and the averaged activities faithfully reflect the dynamics of each trial, evident for all four types of neurons (Figure 1—figure supplement 2A–D). Specifically, the Type 1 and Type 2, but not the Type 3 and Type 4 neurons, exhibit firing changes co-varying with the action selection and these two types together consist in around 80% of all task-related SNr neuron population (Figure 1J, Figure 1—figure supplement 2A–D). There is no dramatic difference in dynamic subtypes and proportion between SNr neurons recorded in left and right hemispheres (Figure 1—figure supplement 3). Notably, for Type 1 neurons, the firing activities are much higher as animals selected left side at the correct 8 s trials than the firing activities when animals selected left side at the incorrect 8 s trials (Figure 1F, green squares). The same for Type 2 neurons, their firing activities are dramatically different when animals selected left side in the correct and incorrect trials (Figure 1G, green squares). Therefore, Type 1 and Type 2 dynamics cannot be simply explained by sensory or position-related neural activity. Furthermore, we compare the SNr neuron responses at rewarded and non-rewarded lever presses. For Type 1 SNr neurons, the firing activity at the rewarded left lever presses (defined as the left lever press in correct 2 s trials) is much higher than the firing activity at the non-rewarded left lever presses (defined as left lever presses in incorrect 8 s trials and random left lever press during the ITI). The firing activity difference can also be observed between the rewarded and non-rewarded right lever presses in Type 1 SNr neuron (Figure 1—figure supplement 1L). For Type 2 SNr neurons, although there’s no difference between the rewarded and non-rewarded left lever presses, the firing activity at the rewarded right lever presses is higher than the firing activity at the non-rewarded right lever presses (Figure 1—figure supplement 1L). Again, given the same sensory inputs and spatial location for both rewarded and non-rewarded left presses, the difference between rewarded and non-rewarded lever presses indicates that the neural dynamics are action selection dependent, and not simply related to sensory or position information.
 
 It has been suggested that SNr suppresses movements through the inhibition of downstream motor nuclei and releases action via disinhibition (Hikosaka et al., 2000; Mink, 1996). We thus ask whether the opponent neuronal dynamics in Type 1 and Type 2 SNr subpopulations mediate the dynamic shift of choice, by suppressing the competing selection of right vs. left action, respectively. Indeed, the SNr net output by subtracting Type 2 and Type 1 SNr neuronal dynamics (Figure 1K) is highly reminiscent of the animal’s stereotyped movement trajectory during choice (Figure 1C). To further determine the relationship between the SNr net output and action selection, we tested the behavioral choice of the 2–8 s trained mice in a series of non-rewarded probe trials with novel intervals of 2.5 s, 3.2 s, 4 s, 5 s, and 6.3 s (see Methods). Consistent with what reported before (Howard et al., 2017), the probability of mice selecting the action associated with the long duration (8 s) gradually increases along with the time intervals of probe trials (Figure 1L). The resulting psychometric curve thus represents the animal’s real-time action selection process during the 8 s trials. Further comparison between the psychometric curve and the SNr net output revealed a strong linear correlation (Figure 1M), indicating that the SNr net output faithfully predicts momentary behavioral choice. Together, these results suggest that mice can learn to dynamically shift their choice based on internally monitored time, and the opponent neuronal activities in SNr correlate with the action selection.
 
-## SNr neuronal dynamics reflect action selection but not simply time or value
+### SNr neuronal dynamics reflect action selection but not simply time or value
 
 In the 2–8 s task, the passage of time and expectation of reward both change simultaneously with the animal’s internal choice. One may argue that the Type 1 and Type 2 neuronal dynamics observed in SNr during the 8 s trials might reflect the passage of time or value of expected reward rather than action selection. To differentiate these possibilities and specify the functional role of SNr activity, we presented mice previously trained in the 2–8 s task with random probe trials of 16 s interval (Figure 2A). In these 16 s probe trials which they have never experienced before during training, the animals sometimes wait on the right side and press the right lever, or shift back to the left side and press the left lever when the levers are extended at 16 s (Figure 2B and C). This arbitrary choice situation in the 16 s probe trials thus provides a special window to determine the functional relationship between SNr activity and behavioral choice. If the Type 1 and Type 2 SNr subpopulations encode information about time passage or expectation value, their neuronal activities would continue changing monotonically between 8 s and 16 s. In contrast, if the Type 1 and Type 2 SNr subpopulations encode action selection, their neuronal activities would predict the behavioral choice and differentiate between the right vs. left action selection. Indeed, it was found that when the firing activity of Type 1 SNr neurons maintained below baseline from 8 s to 16 s, the mice tended to select the right lever later (Figure 2D). However, when the firing activity reversed the decreasing tendency to increase, the mice chose the left lever instead (Figure 2D). A similar relationship between the neuronal activity and behavior choice was also evident in Type 2 SNr neurons, albeit with opposite dynamics (Figure 2E). This is especially evident in the subtraction of Type 2 and Type 1 SNr neuronal dynamics, in which the SNr net output is strongly correlated with and predictive of behavioral choice (Figure 2F). These results thus suggested that the neuronal activities in SNr likely encode the ongoing action selection but not simply reflect time passage or reward value.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig2-v1.jpg)
+
+**Figure 2.:** (A) Task diagram of 2–8 s control task with 10% 16 s probe trials. (B) Percentage of behavioral choice in 2 s, 8 s, and 16 s trials (blue: left choice; red: right choice) (n=9 mice, paired t-test, p<0.05). (C) Movement trajectory of an example mouse in 16 s trials (blue: left choice; red: right choice). (D) Averaged SNr Type 1 firing rate index (FRI) in 16 s trials (red: left choice; black: right choice). Firing rates from 8 s to 16 s (highlighted area) are compared between left and right choice (n=26 neurons, two-way repeated-measures ANOVA, significant difference between left and right choices, F1,25=6.646, p=0.016). (E) Averaged SNr Type 2 FRI in 16 s trials (red: left choice; black: right choice). Firing rates from 8 s to 16 s are compared between left and right choice (n=16 neurons, two-way repeated-measures ANOVA, significant difference between left and right choices, F1,15=5.785, p=0.029). (F) Subtraction of FRI for SNr Type 1 and Type 2 neurons in 16 s probe trials (red: left choice; black: right choice). (G) Task design of 2–8 s standard task. (H) Percentage of behavioral choice in 2 s and 8 s trials (blue: left choice; red: right choice) (n=6 mice, paired t-test, p<0.05). (I) Movement trajectory of an example mouse in 8 s trials (blue: left choice; red: right choice). (J) Task design of reversed 2–8 s task. (K) Percentage of behavioral choice in 2 s and 8 s trials in the reversed 2–8 s task (blue: left choice; red: right choice) (n=6 mice, paired t-test, p<0.05). (L) Movement trajectory of the same mouse as (I) in 8 s trials in the reversed 2–8 s task (blue: left choice; red: right choice). (M) Averaged FRI of the SNr Type 1 neurons in correct 8 s trials (n=14 neurons). (N) Averaged FRI of the SNr Type 2 neurons in correct 8 s trials (n=11 neurons). (O) SNr net output as the subtraction of FRI for SNr Type 1 (M) and Type 2 neurons (N) in the standard 2–8 s task. (P) Averaged FRI of the same neurons as (M) in correct 8 s trials of the reversed 2–8 s task. (Q) Averaged FRI of the same neurons as (N) in correct 8 s trials of the reversed 2–8 s task. (R) SNr net output as the subtraction of FRI for SNr Type 1 (P) and Type 2 neurons (Q) in the reversed 2–8 s task.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Correct rates of the same group of mice both in the standard and reversed 2–8 s tasks (n=6 mice, paired t-test, p=0.33). (B) Lever press ratios of the same group of mice both in the standard and reversed 2–8 s tasks (n=6 mice, paired t-test, p<0.05). (C) Averaged firing rate index (FRI) of the SNr Type 3 neurons in correct 8 s trials of the standard 2–8 s task. (D) Averaged FRI of the SNr Type 3 neurons in correct 8 s trials of the reversed 2–8 s task. (E) Averaged FRI of the SNr Type 4 neurons in correct 8 s trials of the standard 2–8 s task. (F) Averaged FRI of the SNr Type 4 neurons in correct 8 s trials of the reversed 2–8 s task.
+
 To further confirm this point, we recorded the firing activity from the same SNr neurons during both the 2–8 s control task (Figure 2G, 2 s-left and 8 s-right) and a modified version of 2–8 s task in which the contingency between action and interval is reversed (Figure 2J, 2 s-right and 8 s-left) on the same day (see Methods). It was found that the mice performed at around 80% correct in both tasks on the same day (Figure 2H and K, Figure 2—figure supplement 1A). Accordingly, the movement trajectories of the same mice in 8 s trials were reversed from left-then-right in the control task (Figure 2I) to right-then-left in the reversed task (Figure 2L). The left lever preference during the ITI in the control task was also switched to right lever preference in the reversed 2–8 s task (Figure 2—figure supplement 1B). Notably, the passage of time and expected value as well as other environmental factors are all identical in both versions of task, except that the animal’s choice is now reversed from right to left for the 8 s trials (Figure 2H, I vs. Figure 2K and L). If Type 1 or Type 2 SNr neurons encode time or value, either neuronal population will exhibit the same neuronal dynamics in 8 s trials for both versions of task. On the other hand, if Type 1 and Type 2 SNr neurons encode action selection, their neuronal dynamics will reverse in the reversed version of 2–8 s task compared to the standard version. In fact, the Type 1 SNr neurons which showed monotonic decreasing dynamics in the control 2–8 s task (Figure 2M) reversed their neuronal dynamics to a monotonic increase in the reversed 2–8 s task (Figure 2P), consistent with the behavioral choice. The same reversal of neuronal dynamics was also observed in Type 2 SNr neurons in the reversed version of standard task (Figure 2N and Q). The SNr net output by subtracting Type 2 and Type 1 SNr neuronal dynamics, which was tightly correlated with the action selection in the standard 2–8 s task (Figure 2O), is reversed and now predictive of the new behavioral choice in the reversed 2–8 s task (Figure 2R). Notably, Type 3 and Type 4 SNr neurons exhibiting transient change when mice switching between choices maintained the same neuronal dynamics in both tasks (Figure 2—figure supplement 1C–F). Together, these results therefore demonstrate that the output of basal ganglia reflects the dynamic action selection rather than simply time or value.
 
-## Distinct striatal direct vs. indirect pathway activity during action selection
+### Distinct striatal direct vs. indirect pathway activity during action selection
 
 The basal ganglia output is largely controlled by two major neural pathways, called ‘direct’ and ‘indirect’ pathway, originating from D1- vs. D2-SPNs in the striatum, respectively (Albin et al., 1989; DeLong, 1990; Hikosaka et al., 2000; Mink, 1996). We then decided to determine the neuronal dynamics in the striatum, specifically the neuronal activity in the direct and indirect pathways during action selection. We employed in vivo extracellular electrophysiology to record the neuronal activity in the dorsal striatum when mice perform the 2–8 s task, and classified putative SPNs based on the spike waveforms and firing properties (Geddes et al., 2018; Jin and Costa, 2010; Jin et al., 2014). Among all the SPNs recorded from the trained mice (n=19), 341 out of 409 SPNs (83.4%) were defined as task-related neurons for showing significant firing changes during the 2 s and 8 s lever retraction period (Figure 3A, Figure 1—figure supplement 2E–H, Figure 3—figure supplement 1A). Similar to the various types of neuronal dynamics observed in SNr, task-related SPNs showed Type 1 (Figure 3B, monotonic decrease, 159/341, 46.6%), Type 2 (Figure 3C, monotonic increase, 103/341, 30.2%), Type 3 (Figure 3D, transient phasic increase, 49/341, 14.4%), and Type 4 (Figure 3E, transient phasic decrease, 30/341, 8.8%) activity profiles during the correct 8 s trials (Figure 3A, Figure 1—figure supplement 2E–H, Figure 3—figure supplement 1A). These neural dynamics were largely absent in SPNs on day 1 of training (Figure 3—figure supplement 1B–F). Also, SPNs recorded from left and right hemispheres showed similar proportions (Figure 3—figure supplement 2). These results indicate that the striatum, as one of the major input nuclei of basal ganglia, demonstrates the four types of neuronal dynamics similar with SNr during the dynamic process of action selection.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig3-v1.jpg)
+
+**Figure 3.:** (A) Firing rate index (FRI) of neuronal activity for all task-related SPNs in correct 8 s trials. SPNs were classified as Types 1–4. (B–E) Averaged FRI for Type 1 (B), Type 2 (C), Type 3 (D), Type 4 (E) of SPNs in correct (red) and incorrect 8 s trials (gray). (F) Diagram of simultaneous neuronal recording and optogenetic identification of D1- vs. D2-SPNs in dorsal striatum. (G) Top panel: Raster plot for a representative D1-SPN response to 100 ms optogenetic stimulation. Each row represents one trial and each black dot represents a spike. Bottom panel: Peristimulus time histogram (PETH) aligned to light onset at time zero. (H) PETH for the same neuron as shown in (G) with a finer time scale. (I) Distribution of light response latencies for D1- and D2-SPNs. (J) Action potential waveforms of the same neuron in (G) for spontaneous (black) and light-evoked (orange) spikes (R=0.998, p<0.0001, Pearson’s correlation). (K) Principal component analysis (PCA) of action potential waveforms showing the overlapped clusters of spontaneous (black) and light-evoked (orange) spikes. (L) Proportion of D1-SPN subtypes. Type 1 neurons are significantly more than other three types of neurons in D1-SPNs (Z-test, p<0.05). (M) Averaged FRI for Type 1 (blue) and Type 2 (red) D1-SPNs in correct 8 s trials. (N) Proportion of D2-SPN subtypes. (O) Averaged FRI for Type 1 (blue) and Type 2 (red) D2-SPNs in correct 8 s trials.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Averaged FRI for Type 1, Type 2, Type 3, and Type 4 of spiny projection neurons (SPNs) in correct (red) and incorrect 2 s trials (gray). (B) Firing rate index (FRI) of neuronal activity for all task-related SPNs in correct 8 s trials on day 1 of training. The magnitude of FRI is color coded and the SPNs are categorized as four subgroups based on the activity dynamics. (C–F) Averaged FRI of SPNs in correct (red) and incorrect 8 s trials (gray). (G) Recording array affixed with a cannula implanted in D1-Ai32 or A2a-Ai32 mice. Light emitted by optic fiber placed through the attached cannula is in close proximity to the tips of the recording array. (H) Top-down view of the array implantation. (I) Example of array placement in dorsal striatum of a D1-Ai32 mouse (left) and validation of fiber placement in a cohort of D1-Ai32 mice (right). Inset better demonstrates the tract formed by the array implant. (J) Example of array placement in dorsal striatum of an A2a-Ai32 mouse (left) and validation of fiber placement in a cohort of A2a-Ai32 mice (right). Inset better demonstrates the tract formed by the array implant. (K) Example of fiber placement in dorsal striatum of a D1-cre mouse with AAV5-DIO-ChR2-mcherry injected (left) and validation of fiber placement in a cohort of D1-cre mice (right). Inset better demonstrates the tract formed by the fiber implant. (L) Example of fiber placement in dorsal striatum of a A2a-cre mouse with AAV5-DIO-ChR2-mcherry injected (left) and validation of fiber placement in a cohort of A2a-cre mice (right). Inset better demonstrates the tract formed by the fiber implant.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Firing rate index (FRI) of neuronal activity for all task-related spiny projection neurons (SPNs) in correct 8 s trials recorded in the left hemisphere. The magnitude of FRI is color coded and the SPNs are classified as four different types based on the activity dynamics. (B–E) Averaged FRI for Type 1 (B), Type 2 (C), Type 3 (D), Type 4 (E) of SPNs in correct (red) and incorrect 8 s trials (gray). (F) The proportion of four types of SPNs. Type 1 (92/177, 52.0%), Type 2 (48/177, 27.1%), Type 3 (24/177, 13.6%), Type 4 (13/177, 7.3%). (G) FRI of neuronal activity for all task-related SPNs in correct 8 s trials recorded in the right hemisphere. The magnitude of FRI is color coded and the SPNs are classified as four different types based on the activity dynamics. (H–K) Averaged FRI for Type 1 (H), Type 2 (I), Type 3 (J), Type 4 (K) of SPNs in correct (red) and incorrect 8 s trials (gray). (L) The proportion of four types of SPNs. Type 1 (67/164, 40.9%), Type 2 (55/164, 33.5%), Type 3 (25/164, 15.2%), Type 4 (17/164, 10.4%).
+
 To further determine the neuronal activity in the direct and indirect pathways during action selection, we utilized an optogenetics-aided photo-tagging method (Geddes et al., 2018; Howard et al., 2017; Jin and Costa, 2010; Jin et al., 2014; Lima et al., 2009) to record and identify striatal D1- vs. D2-SPNs in freely behaving mice. Channelrhodopsin-2 (ChR2) was selectively expressed in D1- or D2-SPNs by injecting AAV-FLEX-ChR2 in the dorsal striatum of D1- and A2a-Cre mice, respectively (Geddes et al., 2018; Jin et al., 2014). In the end of each behavioral session with recording, optogenetic stimulation via an optic fiber attached to the electrode array was delivered to identify D1- vs. D2-SPNs through photo-tagging (Figure 3F, Figure 3—figure supplement 1G–J; Geddes et al., 2018; Jin et al., 2014). Only those neurons exhibiting a very short latency (≤6 ms) to light stimulation (Figure 3G–I) and showing identical spike waveforms (R≥0.95, Pearson’s correlation coefficient) between behavior and light-evoked response (Figure 3J and K) were identified as Cre-positive thus D1- or D2-SPNs (Geddes et al., 2018; Jin et al., 2014). Within all positively identified D1-SPNs (n=92 from 6 mice) and D2-SPNs (n=95 from 6 mice), 74 out of 92 (80.4%) D1-SPNs and 79 out of 95 (83.1%) D2-SPNs showed a significant change in firing rate during the correct 8 s trials. In addition, all four types of neuronal dynamics during action selection were found in both D1-SPNs (Figure 3L and M) and D2-SPNs (Figure 3N and O), as observed in SNr. The Type 1 and Type 2 neuronal dynamics showing monotonic firing change (Figure 3M and O) were the predominant task-related subpopulations within either D1- (Figure 3L) or D2-SPNs (Figure 3N). Notably, the striatal D1-SPNs consist of significantly more Type 1 than Type 2 neurons (Figure 3L), while D2-SPNs show a similar proportion between the two types (Figure 3N). These data thus suggest while neurons in both the striatal direct and indirect pathways encode information related to behavioral choice, the two pathways might reflect and contribute to distinct aspects of action selection.
 
-## Ablation of striatal direct vs. indirect pathway differently impaired action selection
+### Ablation of striatal direct vs. indirect pathway differently impaired action selection
 
 Given the action selection-related neuronal dynamics observed in striatum, we next asked whether the neural activity in striatum is necessary for learning and execution of action selection, and furthermore, what is the functional difference between the direct and indirect pathways. It has been reported that the NMDA receptors on striatal SPNs are critical for sequence learning (Geddes et al., 2018; Jin and Costa, 2010) and action selection (Howard et al., 2017). To further identify the functional role of NMDA receptors on D1- vs. D2-SPNs for action selection, we employed a genetic strategy to specifically delete NMDA receptors from D1- vs. D2-SPNs by crossing mice carrying a floxed NMDAR1 (NR1) allele with a dorsal striatum-dominant D1-cre line (Gong et al., 2007) and A2a-cre line (Geddes et al., 2018; Jin et al., 2014), respectively (referred to as D1-NR1 KO and D2-NR1 KO mice, respectively; see Methods). Both the D1-NR1 KO and D2-NR1 KO mice are significantly impaired in learning the 2–8 s task compared to their littermate controls (Figure 4A and B), suggesting that NMDA receptors on either D1- or D2-SPNs are critical for learning of proper action selection. In the end of 2-week training, when given the probe trials with various intervals across 2–8 s, it was found that D1-NR1 KO mice showed a systematic bias toward the lever associated with short interval and made deficient behavioral choice only in long interval trials (Figure 4C). In contrast, D2-NR1 KO mice showed impaired action selection across various probe trials of both short and long intervals (Figure 4D). These data suggest that while NMDA receptors on both D1- and D2-SPNs are required for action learning, the deletion of NMDA receptors in direct and indirect pathways impairs action selection in a different manner.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig4-v1.jpg)
+
+**Figure 4.:** (A) Correct rate of control (n=11 mice) and D1-NR1 KO mice (n=16) in 2–8 s task during 14 days’ training (two-way repeated-measures ANOVA, significant difference between control and KO mice, F1,25=10.8, p=0.003). (B) Correct rate of control (n=17) and D2-NR1 KO mice (n=10) in 2–8 s task during 14 days’ training (two-way repeated-measures ANOVA, significant difference between control and KO mice, F1,25=8.728, p=0.007). (C) The psychometric curve for control (n=11) and D1-NR1 KO mice (n=16) (two-way repeated-measures ANOVA, significant difference between control and KO mice, F1,25=12.27, p=0.002). (D) The psychometric curve for control (n=17) and D2-NR1 KO mice (n=10) (two-way repeated-measures ANOVA, significant difference between control and KO mice, F1,25=9.64, p=0.005). (E) Schematic of muscimol infusion into the dorsal striatum in trained mice. (F) Correct rate for control (black: pre-muscimol, gray: post-muscimol) and mice with muscimol infusion (magenta) in dorsal striatum (n=9 mice, paired t-test, p<0.01). (G) The psychometric curve for control (n=9 mice, black: pre-muscimol, gray: post-muscimol control) and mice with muscimol infusion (n=9 mice, magenta) in dorsal striatum (two-way repeated-measures ANOVA, significant difference between control and muscimol infusion, F2,16=11.74, p=0.0007). (H) Timeline for selective diphtheria toxin (DT) ablation experiments. (I) Schematic of diphtheria toxin receptor (DTR) virus (AAV-FLEX-DTR-GFP) injection in dorsal striatum of D1-Cre mice. (J) Correct rate for control (n=9 mice) and mice with dorsal striatum D1-SPNs ablation (D1-DTR, n=8 mice) (two-sample t-test, p=0.0016). (K) The psychometric curve for control (n=9 mice) and D1-SPNs ablation mice (n=8 mice) (two-way repeated-measures ANOVA, main effect of ablation, F1,15=1.84, p=0.195; interaction between trial intervals and ablation, F6,90=4.14, p=0.001). (L) Movement trajectory of a control mouse in 8 s trials. (M) Movement trajectory of a D1-DTR mouse in 8 s trials. (N) Schematic of DTR virus (AAV-FLEX-DTR-GFP) injection in dorsal striatum of A2a-Cre mice. (O) Correct rate for control (n=8 mice) and mice with dorsal striatum D2-SPNs ablation (D2-DTR, n=8 mice) (two-sample t-test, p=0.005). (P) The psychometric curve for control (n=9 mice) and D2-SPNs ablation mice (n=8 mice) (two-way repeated-measures ANOVA, main effect of ablation, F1,15=0.477, p=0.5; interaction between trial intervals and ablation, F6,90=12.6, p<0.001). (Q) Movement trajectory of a control mouse in 8 s trials. (R) Movement trajectory of a D2-DTR mouse in 8 s trials. (S) Schematic of center-surround receptive field diagram for Go/No-Go (left) and Co-activation (right) models. ‘+’ indicates facilitating effect to selection. ‘-’ indicates inhibitory effect to selection.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Diagram of Go/No-Go model. (B) The psychometric curves of behavior outputs simulated by Go/No-Go model in control (black) and D1-expressing spiny projection neurons (D1-SPNs) ablation condition (blue). (C) The psychometric curves of behavior outputs simulated by Go/No-Go model in control (black) and D2-SPNs ablation condition (red). (D) Diagram of Co-activation model. (E) The psychometric curves of behavior outputs simulated by Co-activation model in control (black) and D1-SPNs ablation condition (blue). (F) The psychometric curves of behavior outputs simulated by Co-activation model in control (black) and D2-SPNs ablation condition (red). (G) Diagram of combination of Go/No-Go and Co-activation model. (H) The psychometric curves of behavior outputs simulated by combined model in control (black) and D1-SPNs ablation condition (blue). (I) The psychometric curves of behavior outputs simulated by combined model in control (black) and D2-SPNs ablation condition (red).
 
 We then asked whether that neural activity in dorsal striatum is necessary for the proper execution of action selection after learning. We first conduct striatal inactivation in trained wild-type mice by bilateral intra-striatal infusion of muscimol (Figure 4E, see Methods). Striatal muscimol infusion significantly reduced the animal’s overall performance in comparison with the pre- and post-saline injection controls (Figure 4F). When tested with probe trials, the psychometric curve indicated that the inactivation of striatum impairs action selection for the long trials (Figure 4G). These data thus suggested that the striatal neural activity is critical for appropriate execution of learned action selection.
 
@@ -57,17 +103,41 @@ To further elucidate the functional role of specific striatal pathways in action
 
 The classic ‘Go/No-go’ model of basal ganglia suggests the direct and indirect pathways work antagonistically to release and inhibit action, respectively (Albin et al., 1989; DeLong, 1990; Kravitz et al., 2010). On the other hand, more recent ‘Co-activation’ model of basal ganglia proposes that direct pathway initiates the selected action and at the same time, the indirect pathway inhibits the competing actions (Cui et al., 2013; Hikosaka et al., 2000; Mink, 1996). For visualization purpose, we diagram ‘Go/No-go’ and ‘Co-activation’ models as center-surround receptive field with D1-SPNs as the center and D2-SPNs as the surround (Figure 4S; Figure 4—figure supplement 1A, D). The ‘center-surround’ layout is derived from the receptive field of neurons in the early visual system, as an intuitive analogy in describing the functional interaction among striatal pathways (Mink, 2003). The area of each region does not represent the amount of cells but mainly qualitative functional role (Figure 4S). While the direct pathway plays the similar role in both models (Figure 4—figure supplement 1B, E), the function of indirect pathway differs dramatically (Figure 4S). Lesion of the indirect pathway thus leads to contrast predictions on action selection from the two models (Figure 4—figure supplement 1C, F). Specifically, ablation of D2-SPNs would facilitate the action being selected through removing inhibition according to the Go/No-go model (Figure 4—figure supplement 1C; Albin et al., 1989; DeLong, 1990; Kravitz et al., 2010), while blockage of indirect pathway would impair the action selection due to disinhibition of competing actions according to the Co-activation model (Figure 4—figure supplement 1F; Cui et al., 2013; Hikosaka et al., 2000; Mink, 1996). Although our D1-SPNs ablation experiment indicates that direct pathway is required for action selection as suggested in both models (Figure 4J and K), the D2-SPNs ablation result favorably supports the Co-activation model over the Go/No-go model (Figure 4O and P, Figure 4—figure supplement 1F). In fact, close inspection of the movement trajectories of D1-SPNs lesioned mice in the 8 s trials showed that compared to control mice (Figure 4L), they tend to stick on the left side more often with impaired right choice when lever extension at 8 s (Figure 4M). In contrast, D2-SPNs lesioned mice demonstrated overall rather random movement trajectories, and the stereotyped left-then-right movement sequences were largely disrupted in comparison with the controls (Figure 4Q and R). These observations are mostly consistent with the idea of indirect pathway inhibiting competing actions in the Co-activation model (Figure 4S) and lesion of indirect pathway disrupts action selection for both the short and long trials (Figure 4P–R). Together, these data suggest that ablation of direct and indirect pathways both impair choice behavior but in a distinct manner due to their different roles in action selection.
 
-## Optogenetic manipulation of D1- vs. D2-SPNs distinctly regulates action selection
+### Optogenetic manipulation of D1- vs. D2-SPNs distinctly regulates action selection
 
 To further determine the specific function of direct vs. indirect pathway in action selection, we employed optogenetics to alter the D1- and D2-SPNs activity in vivo with high temporal precision and investigated its effects on the ongoing action selection process. Both the classic ‘Go/No-go’ (Albin et al., 1989; DeLong, 1990; Kravitz et al., 2010) and more recent ‘Co-activation’ (Cui et al., 2013; Hikosaka et al., 2000; Mink, 1996) models predict that activation of the direct pathway enhances the action selection (Figure 5—figure supplement 1A, E, I, K, O, Q), while inhibition of direct pathway reduces the correct choice (Figure 5—figure supplement 1B, F, L, R). To experimentally validate the models’ predictions, AAV-FLEX-ChR2 was injected into the dorsal striatum of D1- or A2a-Cre mice and optic fibers were implanted bilaterally for in vivo optogenetic stimulation (Figure 5A, Figure 3—figure supplement 1K,L; see Methods) (Geddes et al., 2018; Jin et al., 2014). After mice learned the 2–8 s task, 1 s pulse of constant light (wave length 473 nm) was delivered right before lever extension in randomly chosen 50% of 2 s and 50% of 8 s trials (Figure 5B and C, see Methods). The correct rate of optogenetic stimulation trials is compared with the non-stimulation trials of the same animal as a within-subject design. We observed no significant change on the correct rate in 2 s trials, whereas the correct rate was significantly increased by optogenetic stimulation in 8 s trials (Figure 5D), indicating a facilitation effect on action selection by stimulating the D1-SPNs. We then sought to determine the effect of suppressing D1-SPN activity on action selection by viral expression of Halorhodopsin (AAV5-EF1a-DIO-eNpHR3.0-eYFP) in the dorsal striatum of D1-cre mice (Gradinaru et al., 2010). As expected, inhibiting D1-SPNs right before lever extension in trained mice reduced the correct rates in 8 s but not 2 s trials (Figure 5C and E), opposite to D1-SPN stimulation effects. These experimental data with bidirectional optogenetic manipulation suggest that the D1-SPN activity is positively correlated with the choice performance, consistent with the hypothesis of direct pathway facilitating the action selected in both the Go/No-go and Co-activation models (Figure 5—figure supplement 1K, L, Q, R).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of optic fiber implantation for experimentally optogenetic excitation or inhibition of D1- or D2-SPNs in the dorsal striatum. (B, C) Schematic for optogenetic excitation (B) and inhibition (C) of D1-/D2-SPNs for 1 s right before lever extension in 2–8 s task. (D) Change of correct rate for optogenetic excitation of D1-SPNs in 2 s and 8 s trials (n=11 mice, one-sample t-test, 2 s trials: p=0.248; 8 s trials: p<0.05). (E) Change of correct rate for optogenetic inhibition of D1-SPNs in 2 s and 8 s trials (n=6 mice, one-sample t-test, 2 s trials: p=0.557; 8 s trials: p<0.05). (F) Change of correct rate for optogenetic excitation of D2-SPNs in 2 s and 8 s trials (n=8 mice, one-sample t-test, 2 s trials: p<0.05; 8 s trials: p<0.05). (G) Change of correct rate for optogenetic inhibition of D2-SPNs in 2 s and 8 s trials (n=5 mice, one-sample t-test, 2 s trials: p<0.05; 8 s trials: p<0.05). (H) Schematic of center-surround receptive field diagram for Go/No-Go (left) and Co-activation (right) models. ‘+’ indicates facilitating effect to selection. ‘-’ indicates inhibitory effect to selection.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Simulating optogenetic activation (A) and inhibition (B) of D1-expressing spiny projection neurons (D1-SPNs) at 2 s. Blue bar above indicates optogenetic activation. Yellow bar above indicates optogenetic inhibition. (C, D) Simulating optogenetic activation (C) and inhibition (D) of D2-SPNs at 2 s. (E, F) Simulating optogenetic activation (E) and inhibition (F) of D1-SPNs at 8 s. (G, H) Simulating optogenetic activation (G) and inhibition (H) of D2-SPNs at 8 s. (I, J) Diagram of D1-SPN (I) and D2-SPN (J) manipulation in Go/No-Go model. (K, L) Change of correct rate in 2 s and 8 s trials when activating (K) and inhibiting (L) D1-SPNs in Go/No-Go model. (M, N) Change of correct rate in 2 s and 8 s trials when activating (M) and inhibiting (N) D2-SPNs in Go/No-Go model. (O, P) Diagram of D1-SPN (O) and D2-SPN (P) manipulation in Co-activation model. (Q, R) Change of correct rate in 2 s and 8 s trials when activating (Q) and inhibiting (R) D1-SPNs in Co-activation model. (S, T) Change of correct rate in 2 s and 8 s trials when activating (S) and inhibiting (T) D2-SPNs in Co-activation model. One-sample test for all the change of correct rate. *p<0.05.
+
 Nevertheless, the two models have distinct views on the function of indirect pathway. While the classic ‘Go/No-go’ model suggests that the indirect pathway inhibits the selected action (Albin et al., 1989; DeLong, 1990; Kravitz et al., 2010), the ‘Co-activation’ model hypothesizes that the indirect pathway inhibits the competing actions instead (Cui et al., 2013; Hikosaka et al., 2000; Mink, 1996). These models thus provide contrasting predictions about the effect of activation of the indirect pathway on action selection, being decreased correct rate based on the Go/No-go model (Figure 5—figure supplement 1M) and increased correct rate from the Co-activation model (Figure 5—figure supplement 1S), respectively. We thus decided to test the distinct predictions from the two models by optogenetic manipulation of indirect pathway during action selection in the 2–8 s task. ChR2 or Halorhodopsin (eNpHR3.0) was expressed in the dorsal striatum of A2a-cre mice for bilaterally optogenetic activation or inhibition during behavior (Figure 5A, Figure 3—figure supplement 1L; see Methods). Notably, optogenetic excitation of D2-SPNs for 1 s right before lever extension decreased the correct rate in both 2 s and 8 s trials (Figure 5F). In contrast, transient optogenetic inhibition of D2-SPNs before behavioral choice increased correct rates for both 2 s and 8 s trials (Figure 5G). These data suggest that opposite to the D1-SPN manipulation, optogenetic stimulation of D2-SPNs impairs action selection, while inhibition of D2-SPNs facilitates behavioral choice. These optogenetic results further unveil the distinct roles of direct vs. indirect pathway in action selection, and are in line with the predictions from the Go/No-go (Figure 5H, Figure 5—figure supplement 1M, N) but not the Co-activation model (Figure 5—figure supplement 1S, T).
 
-## A ‘Triple-control’ model of basal ganglia circuit for action selection
+### A ‘Triple-control’ model of basal ganglia circuit for action selection
 
 Our DT lesion experiments found that ablation of indirect pathway impairs action selection (Figure 4O and P), as predicted from the Co-activation but not Go/No-go model (Figure 4S), while the optogenetic results suggested that inhibition of D2-SPNs enhances behavioral choice (Figure 5G), a result in favor of the Go/No-go rather than Co-activation model (Figure 5H). We wonder whether these seemly discrepant effects are attributed to a more complex circuit mechanism involving in the indirect pathway different from either the Go/No-go or Co-activation model. To systematically investigate the cell type- and pathway-specific mechanisms underlying action selection, we first add Go/No-go and Co-activation models together to examine whether the resulted combination model could explain the experimental observations (Figure 4—figure supplement 1G). The lesion of D1-SPNs in the combination model indeed selectively impaired choice in long interval trials (Figure 4—figure supplement 1H). However, the effect of D2-SPNs ablation in the combination model was neutralized due to the opposing contributions from Go/No-go and Co-activation models, respectively (Figure 4—figure supplement 1I). Based on these simulation results, none of the Go/No-go, Co-activation, and combination models was able to fully capture the underlying mechanism of basal ganglia in action selection. Inspired by the data in current experiments, we decided to build a new computational model of the cortico-basal ganglia circuitry based on the realistic neuroanatomy (Aoki et al., 2019; Mailly et al., 2003; Schmidt and Berke, 2017; Taverna et al., 2008) and empirical neuronal physiology during action selection (1—3).
 
 Different from the dual control of action by direct vs. indirect pathway in either the Go/No-go or Co-activation model (Figure 4—figure supplement 1), our new model adds an additional layer of control derived from the indirect pathway, thus called ‘Triple-control’ model for action selection. The combination of Go/No-go or Co-activation models clearly failed to explain all the experimental results (Figure 4—figure supplement 1G–I), therefore in our model, the new layer of control is not a simple add-on but equipped with interaction with other layers. Specifically, the new model consists of one direct pathway and two indirect pathways defined as D2-SPN #1 and D2-SPN #2 two subpopulations, corresponding to the Co-activation and Go/No-go functional modules, respectively (Figure 6A and B). In addition, the indirect pathway D2-SPNs in the Co-activation module inhibits the indirect pathway D2-SPNs in the Go/No-go module through the well-known D2-SPN collaterals with the properties of short-term depression (STD) in the striatum (Burke et al., 2017; Gustafson et al., 2006; Schmidt and Berke, 2017; Taverna et al., 2008; Tecuapetla et al., 2007; Figure 6A; see Methods), providing asymmetric modulation to D2-SPN subgroups and promoting Co-activation module as the dominant functional module at rest. In this ‘Triple-control’ basal ganglia model, striatal D1- and D2-SPNs associated with left and right actions receive excitatory inputs from corresponding cortical inputs (Figure 6A) to generate Type 1 and Type 2 neuronal dynamics (Figure 6—figure supplement 1A–D; Lo and Wang, 2006). The D1- and D2-SPNs then regulate the SNr neuronal dynamics through the direct and indirect pathways, respectively (Figure 6—figure supplement 1; Albin et al., 1989; DeLong, 1990; Hikosaka et al., 2000; Mink, 1996). The net SNr output (Figure 6—figure supplement 1F, I), which controls the downstream brainstem and thalamic circuits necessary for action selection (Hikosaka, 2007; Lo and Wang, 2006; Redgrave et al., 1999), will determine the final behavioral choice (Figure 6—figure supplement 1G, J). The choice preference toward left lever over right lever was reflected in the direct pathway by the unevenly weighted connection strength from cortex to D1-SPN Left/Right, as well as the connection strength from D1-SPN Left/Right to SNr Left/Right neurons (see Methods). Our computational simulations showed that this ‘Triple-control’ network model could faithfully recapitulate the neuronal activity across the basal ganglia circuitry and predict the behavioral choice (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig6-v1.jpg)
+
+**Figure 6.:** (A) Network structure of the cortico-basal ganglia model based on realistic anatomy and synaptic connectivity. Dashed lines indicate multi-synaptic connections. (B) Schematic of center-surround-context receptive field diagram for ‘Triple-control’ model. ‘+’ indicates facilitating effect to selection. ‘-’ indicates inhibitory effect to selection. (C) The psychometric curves of behavioral output in control (black) and D1-expressing spiny projection neurons (D1-SPNs) ablation condition (blue) in ‘Triple-control’ model (n=10, two-way repeated-measures ANOVA, main effect of ablation, F1,18=98.72, p<0.0001; interaction between trial intervals and ablation, F6,108=7.799, p<0.0001). (D) The psychometric curves of behavioral output in control (black) and D2-SPNs ablation condition (red) in ‘Triple-control’ model (n=10, two-way repeated-measures ANOVA, main effect of ablation, F1,18=99.54, p<0.0001; interaction between trial intervals and ablation, F6,108=177.6, p<0.0001). (E) Change of correct rate for optogenetic excitation of D1-SPNs in 2 s and 8 s trials (n=10, one-sample t-test, 2 s trials: p=0.407; 8 s trials: p<0.05). (F) Change of correct rate for optogenetic excitation of D2-SPNs in 2 s and 8 s trials (n=10, one-sample t-test, 2 s trials: p<0.05; 8 s trials: p<0.05). (G) Change of correct rate for optogenetic inhibition of D1-SPNs in 2 s and 8 s trials (n=10, one-sample t-test, 2 s trials: p=0.28; 8 s trials: p<0.05). (H) Change of correct rate for optogenetic inhibition of D2-SPNs in 2 s and 8 s trials (n=10, one-sample t-test, 2 s trials: p<0.05; 8 s trials: p<0.05).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The simulated neuronal dynamics quantified as firing rate index (FRI) for the cortical neurons in 8 s trials. (B) The simulated neuronal dynamics quantified as FRI for the D1-expressing spiny projection neuron (D1-SPN) in 8 s trials. (C) The simulated neuronal dynamics quantified as FRI for the D2-SPN 1 in 8 s trials. (D) The simulated neuronal dynamics quantified as FRI for the D2-SPN 2 in 8 s trials. (E) Schematic of selective ablation of D1-SPNs in the ‘Triple-control’ model. (F) The model’s Type 1 and Type 2 substantia nigra pars reticulata (SNr) FRI in control condition (black) and under D1-SPNs ablation (blue). (G) The subtraction of FRI between Type 1 and Type 2 SNr neurons in control (black) and D1-SPNs ablation condition (blue). (H) Schematic of selective ablation of D2-SPNs in the ‘Triple-control’ model. (I) The model’s Type 1 and Type 2 SNr FRI in control condition (black) and under D2-SPNs ablation (red). (J) The subtraction of FRI between Type 1 and Type 2 SNr neurons in control (black) and D2-SPNs ablation condition (red).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) A computational motif of indirect pathway with collateral inhibitory synapse D2-SPN 1→ D2-SPN 2. The collateral synapse between D2-SPNs exhibits short-term depression. (B) Relationship between synaptic strength of D2-SPN 1→ D2-SPN 2 and the firing rate of D2-SPN 1. (C) The inhibition effect of the collateral synapse between D2-SPNs. (D) Activation of presynaptic D2-SPN 1 at 1 s. (E) Synaptic inhibition effect D2-SPN 1→ D2-SPN 2 synapse when activating D2-SPN 1 at 1 s. (F) Activation of D2-SPN 2 at 1 s. (G) Activation of presynaptic D2-SPN 1 at 7 s. (H) Synaptic inhibition effect D2-SPN 1→ D2-SPN 2 synapse when activating D2-SPN 1 at 7 s. (I) Activation of D2-SPN 2 at 7 s. (J) SNr neuron activities responding to activation of D2-SPNs at 1 s (blue) and 7 s (purple). (K) Comparison of firing rate index (FRI) changes in SNr caused by activation of D2-SPNs at 1 s and 7 s. (L) Schematic of simultaneous optogenetic excitation of D1- or D2-SPNs in the dorsal striatum and recording in SNr during action selection. (M) Averaged neuronal activities of an example SNr Type 1 neuron responding to optogenetic activation of D1-SPNs at 1 s during 8 s trials. (N) The percentage of SNr Type 1 (left) and Type 2 (right) neurons showing excitation (blue) and inhibition (red) when stimulating D1-SPNs. (O) The percentage of SNr Type 1 (left) and Type 2 (right) neurons showing excitation (blue) and inhibition (red) when stimulating D2-SPNs. (P) Averaged neuronal activities of an example SNr Type 2 neuron responding to optogenetic activation of D1-SPNs at 1 s (blue) and 8 s (purple) during 8 s trials. (Q, R) Averaged neuronal activities of SNr Type 1 (Q) and Type 2 (R) neuron responding to optogenetic activation of D2-SPNs at 1 s (blue) and 7 s (purple) during 8 s trials. (S) Comparison of FRI changes in SNr Type 1 (left) and Type 2 (right) neurons caused by optogenetic activation of D1-SPNs at 1 s and 7 s. (T) Comparison of FRI changes in SNr Type 1 (left) and Type 2 (right) neurons caused by optogenetic activation of D2-SPNs at 1 s and 7 s (paired t-test, p<0.05).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A, B) Schematic for optogenetic manipulation of D1-SPNs (A) and D2-SPNs (B) in the ‘Triple-control’ model. (C) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and activation (blue) of D1-SPNs at 2 s. (D) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and activation (red) of D2-SPNs at 2 s. (E) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and inhibition (blue) of D1-SPNs at 2 s. (F) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and inhibition (red) of D2-SPNs at 2 s. (G) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and activation (blue) of D1-SPNs at 8 s. (H) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and activation (red) of D2-SPNs at 8 s. (I) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and inhibition (blue) of D1-SPNs at 8 s. (J) Modeling of neuronal dynamics of SNr Type 1/Type 2 (left panel) and net output (right panel) under control (black) and inhibition (red) of D2-SPNs at 8 s.
 
 To dissect the functional role of direct vs. indirect pathway in action selection, we simulate the cell ablation experiments and examine the behavioral output in the ‘Triple-control’ basal ganglia model. Ablation of D1-SPNs in the network model (Figure 6—figure supplement 1E) modulates both Type 1 and Type 2 SNr dynamics but in different magnitude due to the biased striatal input to SNr left output and mutual inhibition between SNr left vs. right outputs (Figure 6—figure supplement 1F; see Methods). As a result, the lesion causes a downward shift in the net SNr output, especially evident at the late section of 8 s (Figure 6—figure supplement 1G). This change in net SNr output predicts a behavioral bias toward left choice as seen in the psychometric curve (Figure 6C), consistent with experimental results in mice with D1-SPNs ablation (Figure 4K). In contrast, ablation of D2-SPNs in the network model (Figure 6—figure supplement 1H), by removing the indirect pathways of both the Go/No-go and Co-activation modules, alters Type 1 and Type 2 SNr dynamics (Figure 6—figure supplement 1I) and change the net SNr output dramatically around 2 s as well as 8 s (Figure 6—figure supplement 1J). The model thus predicts behavioral choice deficits for both short and long trials during D2-SPNs ablation (Figure 6D), consistent with experimental observations (Figure 4P). Together, these data suggest that our new ‘Triple-control’ basal ganglia model, based on realistic neuroanatomy and empirical neuronal physiology, can perform action selection similar to the behavior of mice, and successfully replicate the pathway-specific lesion effects on choice.
 
@@ -79,9 +149,25 @@ We next sought to test the model’s predictions and experimentally investigate 
 
 Taken together, our new ‘Triple-control’ basal ganglia model, based on realistic neuroanatomy and empirical neurophysiology, successfully reproduces both the lesion and optogenetic data we collected during the animal experiments. It could thus potentially provide essential insights into the circuit mechanism of basal ganglia underlying action selection.
 
-## Linear and nonlinear control of action selection by direct vs. indirect pathway
+### Linear and nonlinear control of action selection by direct vs. indirect pathway
 
 To gain an overall picture of how basal ganglia control action selection, we run through the model with a wide continuous range of manipulation to mimic the effects from lesion to optogenetic inhibition and optogenetic activation (Figure 7A, B, E, and F). The simulations of cell ablation and bidirectional optogenetic manipulations of D1-SPNs activity in the model reveal no significant effects at 2 s trials (Figure 7C), but a linear relationship between the neuronal activity in direct pathway and the behavioral performance of choice in 8 s trials (Figure 7D), as observed in animal experiments. It thus further confirms that direct pathway selects action and facilitates ongoing choice, consistent with the predictions from both the classic Go/No-go and recent Co-activation models (Figure 7I, Figure 7—figure supplement 1A–D; Albin et al., 1989; DeLong, 1990; Hikosaka et al., 2000; Mink, 1996).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic for manipulation of D1-expressing spiny projection neurons (D1-SPNs) in ‘Triple-control’ model. (B) Schematic of manipulation of D1-SPNs in the center-surround-context receptive field diagram for ‘Triple-control’ model. ‘+’ indicates facilitating effect to selection. ‘-’ indicates inhibitory effect to selection. (C) Correct rate change in 2 s trials when manipulating D1-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, F36,324=1.171, p=0.238). (D) Correct rate change in 8 s trials when manipulating D1-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, F36,324=13.71, p<0.0001). (E) Schematic for optogenetic manipulation of D2-SPNs in ‘Triple-control’ model. (F) Schematic of manipulation of D2-SPNs in the center-surround-context receptive field diagram for ‘Triple-control’ model. ‘+’ indicates facilitating effect to selection. ‘-’ indicates inhibitory effect to selection. (G) Correct rate change in 2 s trials when manipulating D2-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, F36,324=59.13, p<0.0001). (H) Correct rate change in 8 s trials when manipulating D2-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, F36,324=40.75, p<0.0001). (I) Diagram of linear modulation of direct pathway. (J) Diagram of nonlinear modulation of indirect pathway.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Diagram of Go/No-Go model. (B) Diagram of Co-activation model. (C) Correct rate change in 2 s (left panel) and 8 s trials (right panel) when manipulating D1-expressing spiny projection neurons (D1-SPNs) in Go/No-Go model with different manipulation strengths. (D) Correct rate change in 2 s (left panel) and 8 s trials (right panel) trials when manipulating D1-SPNs in Co-activation model with different manipulation strengths. (E) Correct rate change in 2 s (left panel) and 8 s trials (right panel) when manipulating D2-SPNs in Go/No-Go model with different manipulation strengths. (F) Correct rate change in 2 s (left panel) and 8 s trials (right panel) trials when manipulating D2-SPNs in Co-activation model with different manipulation strengths.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Schematic for ‘Triple-control’ model with D1-D1 collateral connections. (B) Correct rate change in 2 s trials (upper panel) and 8 s trials (bottom panel) when manipulating D1-expressing spiny projection neurons (D1-SPNs) with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, 2 s trials: F40,369=1.328, p=0.0945; 8 s trials: F40,369=7.595, p<0.0001). Green lines: ‘Triple-control’ model with D1-D1 collateral connections. Gray lines: The same simulation results as shown in Figure 7C, G. (C) Correct rate change in 2 s trials (upper panel) and 8 s trials (bottom panel) when manipulating D2-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, 2 s trials: F40,369=38.22, p<0.0001; 8 s trials: F40,369=34.29, p<0.0001). Green lines: ‘Triple-control’ model with D1-D1 collateral connections. Gray lines: The same simulation results as shown in Figure 7D, H. (D) Schematic for ‘Triple-control’ model with D1-D2 collateral connections. (E) Correct rate change in 2 s trials (upper panel) and 8 s trials (bottom panel) when manipulating D1-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, 2 s trials: F40,369=0.9335, p=0.5893; 8 s trials: F40,369=8.778, p<0.0001). Purple lines: ‘Triple-control’ model with D1-D2 collateral connections. Gray lines: The same simulation results as shown in Figure 7C, G. (F) Correct rate change in 2 s trials (upper panel) and 8 s trials (bottom panel) when manipulating D2-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, 2 s trials: F40,369=40.94, p<0.0001; 8 s trials: F40,369=26.61, p<0.0001). Purple lines: ‘Triple-control’ model with D1-D2 collateral connections. Gray lines: The same simulation results as shown in Figure 7D, H. (G) Schematic for ‘Triple-control’ model with D2-D1 collateral connections. (H) Correct rate change in 2 s trials (upper panel) and 8 s trials (bottom panel) when manipulating D1-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, 2 s trials: F40,369=0.6827, p=0.9299; 8 s trials: F40,369=10.06, p<0.0001). Blue lines: ‘Triple-control’ model with D1-D2 collateral connections. Gray lines: The same simulation results as shown in Figure 7C, G. (I) Correct rate change in 2 s trials (upper panel) and 8 s trials (bottom panel) when manipulating D2-SPNs with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, 2 s trials: F40,369=153.3, p<0.0001; 8 s trials: F40,369=38.38, p<0.0001). Blue lines: ‘Triple-control’ model with D1-D2 collateral connections. Gray lines: The same simulation results as shown in Figure 7D, H.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/87644/elife-87644-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Diagram of Triple-control model with dopaminergic modulation on spiny projection neurons (SPNs). (B) Schematic of center-surround-context receptive field diagram with dopaminergic modulation added for ‘Triple-control’ model. ‘+’ indicates facilitating effect to selection. ‘-’ indicates inhibitory effect to selection. (C) Simulation of two types of dopamine dynamics (black: decreasing dopamine; blue: constant dopamine with no change) in 8 s trials. (D) Psychometric curves corresponding to each dopamine dynamics (n=10, two-way repeated-measures ANOVA, main effect of ablation, F1,18 = 0.8743, p=0.362; interaction between trial intervals and ablation, F6,108 = 8.261, p<0.0001). (E, F) Correct rate change in 2 s (E) and 8 s trials (F) trials when manipulating dopamine in ‘Triple-control’ model with different manipulation strengths (n=10, one-way repeated-measures ANOVA, effect of manipulation strength, 2 s trials: F36,324 = 3.868, p<0.0001; 8 s trials: F36,324 = 39.98, p<0.0001).
 
 In contrast, manipulations of D2-SPNs activity from cell ablation to optogenetic inhibition and then optogenetic stimulation in the model demonstrate an inverted-U-shaped nonlinear relationship between the neuronal activity in indirect pathway and action selection, for both 2 s and 8 s trials (Figure 7G and H). Detailed analyses reveal that D2-SPNs ablation removes both the Co-activation and Go/No-go module in the indirect pathway and leaves SNr activity dictated by D1-SPN inputs. However, due to the inhibition from Co-activation to Go/No-go module in the indirect pathway via D2-SPN collaterals and short-term plasticity of these synapses (Figure 6—figure supplement 2A–C; see Methods), optogenetic manipulation of D2-SPNs differentially affects the D2-SPN subpopulations groups and promotes Go/No-go module to dominate the basal ganglia network (Figure 6—figure supplement 2C–S). This dynamic switch of dominance between Co-activation and Go/No-go modules on the basal ganglia network gives rise to a nonlinear relationship between D2-SPNs manipulation and the behavioral outcome (Figure 7J).
 
@@ -107,21 +193,185 @@ Our findings also have important implications in many neurological and psychiatr
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV9-FLEX-DTR-GFP</td>
+      <td>Salk GT3 Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV5-EF1a-DIO-hChR2(H134R)-mCherry</td>
+      <td>University of North CarolinaVector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV9-EF1a-DIO-hChR2(H134R)-eYFP</td>
+      <td>University of PennsylvaniaVector Core</td>
+      <td>Cat# AV-9-20298P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV5-EF1a-DIO-eNpHR3.0-eYFP</td>
+      <td>University of North CarolinaVector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Muscimol, GABAA receptor agonist</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M1523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphtheria toxin</td>
+      <td>List Biological Labs</td>
+      <td>Part# 150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: C57BL/6</td>
+      <td>Envigo/Harlan</td>
+      <td>Code: 044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: NR1f/f (B6.129S4-Grin1tm2Stl/J)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock# 005246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: Ai32 (B6;129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock# 012569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: D1-cre (B6.FVB(Cg)-Tg(Drd1a-cre)EY217Gsat/Mmucd)</td>
+      <td>MMRRC</td>
+      <td>RRID: MMRRC_034258-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: A2a-cre (B6.FVB(Cg)-Tg(Adora2a-cre)KG139Gsat/Mmucd)</td>
+      <td>MMRRC</td>
+      <td>RRID: MMRRC_036158-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 7.03</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>R2013a</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Med-PC</td>
+      <td>Med Associates</td>
+      <td>Cat# SOF-735</td>
+      <td>https://med-associates.com/product/med-pc-v/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Offline Sorter</td>
+      <td>Plexon</td>
+      <td>Version 3.3.3</td>
+      <td>https://plexon.com/products/offline-sorter/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OmniPlex</td>
+      <td>Plexon</td>
+      <td>Version 1.4.5</td>
+      <td>https://plexon.com/products/omniplex-software/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EthoVision</td>
+      <td>Noldus</td>
+      <td>Version 8.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Med Associates operant chamber</td>
+      <td>Med Associates</td>
+      <td>Cat# MED-307W-D1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electrode Array</td>
+      <td>Innovative Neurophysiology</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>473 nm laser</td>
+      <td>LaserGlow Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>532 nm laser</td>
+      <td>LaserGlow Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments were approved by the Salk Institute Animal Care, and done in accordance with NIH guidelines for the Care and Use of Laboratory Animals. Experiments were performed on both male and female mice, at least 2 months of age, housed on a 12 hr light/dark cycle. C57BL/6J mice were purchased from the Jackson Laboratory at 8 weeks of age and used as wild-type mice. BAC transgenic mice expressing cre recombinase under the control of the dopamine D1 receptor (referred as D1-cre, GENSAT: EY217; minimal labeling in cortex; mostly dorsal labeling in striatum) or the A2a receptor (referred to as A2a-cre, GENSAT: KG139) promoter were obtained from MMRRC, and either crossed to C57BL/6 or Ai32 (012569) mice obtained from Jackson Laboratory (Cui et al., 2013; Geddes et al., 2018; Jin et al., 2014; Madisen et al., 2012; Tecuapetla et al., 2016). Striatal neuron-type-specific NMDAR1-knockout (referred to as NR1-KO) and littermate controls were generated by crossing D1-cre and A2a-cre mice with NMDAR1-loxP (also denoted as Grin1 flox/flox in the Jackson Laboratory database) mice. The behavioral experiments using NR1-KO mice were performed on 8- to 12-week-old D1/A2a-cre + / NMDAR1-loxP homozygous mice and their littermate controls, including D1/A2a-cre +, D1/A2a-cre + / NMDAR1-loxP heterozygous and NMDAR1-loxP homozygous mice. There was no difference between the three control groups, so the data were combined.
 
-## Behavior task
+### Behavior task
 
 Mice were trained on a temporal bisection task in the operant chamber (21.6 cm L × 17.8 cm W × 12.7 cm H), which was isolated within a sound attenuating box (Med-Associates, St. Albans, VT, USA). The food magazine was located in the middle of one wall, and two retractable levers were located to the left and right side of the magazine. A house light was (3 W, 24 V) mounted on the opposite wall of the magazine. Sucrose solution (10%) was delivered into a metal bowl in the magazine through a syringe pump. When a training session started, the house light was turned on and two levers were extended. After a random time interval (30 s on average), left and right levers were retracted and extended simultaneously. Mice were able to make a choice by pressing either left or right lever. Only the very first lever press after levers extension was registered as animals’ choice. If the interval between the levers retraction and extension was 2 s, then only the left lever press was active to trigger the sucrose reward; if the interval between the lever retraction and extension was 8 s, then only the right lever press was active to trigger the sucrose reward (Howard et al., 2017). There was no punishment when mice made an unrewarded choice. Two s-trial and 8 s-trial were randomized and interleaved by random ITI (30 s on average). The mice were also trained in the reversed 2–8 s task. In the reversed 2–8 s task, if the interval between the levers retraction and extension was 2 s, then only the right lever press was active to trigger the sucrose reward; if the interval between the lever retraction and extension was 8 s, then only the left lever press was active to trigger the sucrose reward. Representative behavioral tracks were captured by EthoVision (Noldus).
 
-## Behavior training
+### Behavior training
 
 Mice were placed on food restriction throughout the training, and fed daily after the training sessions with ~2.5 g of regular food to allow them to maintain a body weight of around 85% of their baseline weight. Training started with continuous reinforcement (CRF), in which animals obtained a reinforcer after each lever press. The session began with the illumination of the house light and extension of either left or right lever, and ended with the retraction of the lever and the offset of the house light. On the first day of CRF, mice received 5 reinforcers on left and right lever. On the second day of CRF, mice received 10 reinforcers on left and right lever. On the third day of CRF, mice received 15 reinforcers on left and right lever. The order of left lever CRF and right lever CRF on each day was randomized across all the CRF training days. After the training of CRF, animals started on the temporal bisection task (day 1). Mice were trained in the temporal bisection task for 14 consecutive days. On each day, there were 240 trials with 2 s-trial and 8 s-trial randomly intermixed at 50:50. After 14 days training, mice received an interval discrimination test, in which 20% of 2 s/8 s trials were replaced by probe trials. In probe trials, the levers retraction intervals were randomly selected from 2.3 s, 3.2 s, 4 s, 5 s, and 6.3 s. Neither choice in the probe trials was rewarded. Mice received 4 days of test, interleaved by training days without probes. The animals were trained daily without interruption and every day the training started approximately at same time (Howard et al., 2017). All timestamps of lever presses, magazine entries, and licks for each animal were recorded with 10 ms resolution. The training chambers and procedures for NR1-KO mice and their littermate controls were exactly the same for C57BL/6J mice.
 
 For the reversed task training, mice were trained in both the 2–8 s control task and reversed version of 2–8 s task on the same day for at least 14 days. During each day, mice were trained in the 2–8 s task first, and then mice were put back in the home cage for a 3–4 hr rest. After the rest period, the same mice were trained in the reversed 2–8 s task. The order of these two tasks is fixed throughout the 14 days’ training.
 
-## Surgery
+### Surgery
 
 For in vivo electrophysiological data recording, each mouse was chronically implanted with an electrode array which consists of an array of 2 rows × 8 columns platinum-coated tungsten microwire electrodes (35 μm diameter) with 150 μm spacing between microwires in a row, and 250 μm spacing between 2 rows. The craniotomies were made at the following coordinates: 0.5 mm rostral to bregma and 1.5 mm laterally for dorsal striatum; 3.4 mm caudal to bregma and 1.0 mm laterally for SNr (Jin and Costa, 2010; Jin et al., 2014). During surgeries, the electrode arrays were gently lowered ~2.2 mm from the surface of the brain for dorsal striatum and ~4.3 mm for SNr, while simultaneously monitoring neural activity. Final placement of the electrodes was monitored online during the surgery based on the neural activity, and then confirmed histologically at the end of the experiment after perfusion with 10% formalin, brain fixation in a solution of 30% sucrose and 10% formalin, followed by cryostat sectioning (coronal slices of 40–60 μm). For striatum recording, we implanted 11 mice in the left hemisphere and 8 mice in the right hemisphere. For the SNr recording, we implanted 5 mice in the left hemisphere and 4 mice in the right hemisphere.
 
@@ -133,94 +383,208 @@ For muscimol infusion in striatum, we bilaterally implanted cannulas (Plastics O
 
 For striatal neuron-type-specific ablation experiments, D1-cre and A2a-cre mice were stereotaxically injected with a cre-inducible AAV carrying the DTR (Azim et al., 2014; Geddes et al., 2018) (AAV9-FLEX-DTR-GFP; Salk GT3 Core, CA, USA). Virus was injected in eight different sites. We used two sets of AP/ML coordinates for each hemisphere followed by two DV depths at each AP/ML site. The coordinates were +0.9 mm AP, ±1.6 mm ML, –2.2 and –3.0 mm DV and 0.0 mm AP, ±2.1 mm ML, –2.2 and –3.0 mm DV. A Hamilton syringe was used to inject 1 µl at the four –3.0 mm DV sites and another 0.5 µl at the four –2.2 mm DV sites for a total of 3 µl injected per hemisphere. Following each injection, the needle was left in place for ~5 min and then raised over ~5 min. This same protocol was used for each injection site.
 
-## Muscimol infusion
+### Muscimol infusion
 
 We daily trained wild-type mice with guide cannulas (Plastics One, VA, USA) implanted until they achieved at least 80% correct rate for 3 consecutive days, we started muscimol infusion experiments. Muscimol was dissolved in saline before infusion (Sigma-Aldrich; 0.05 µg/µl). For the infusions, mice were briefly anesthetized with isoflurane and injection cannulas (Plastics One, VA, USA) were bilaterally inserted into the guide cannulas, with the injection cannulas projecting 0.1 mm beyond the implanted guide cannulas. Each injection cannula was attached to an infusion pump (BASi, IN, USA) via polyethylene tubing. Animals were bilaterally infused with 200 nl of liquid (saline or muscimol) followed by a 5-min waiting period before removal of the infusion cannulas. Mice were returned to their home cage and started in the behavioral task 30 min after infusion (Geddes et al., 2018). To estimate the effects of muscimol on choice, we repeated saline controls and muscimol infusions at least three times on a single mouse to gain enough probe trials for psychometric curve fitting.
 
-## DTR-mediated cell ablation
+### DTR-mediated cell ablation
 
 For striatal neuron-type-specific ablation experiments, D1-cre and A2a-cre were injected with AAV9-FLEX-DTR-GFP in striatum using the same coordinates described above. After 3-week recovery, mice were food-restricted and, following completion of CRF, underwent training in the 2–8 s task for 2 weeks. Immediately after day 14 of 2–8 s task training, mice were randomly divided into control and treatment groups. Treatment mice were administered mice 1 µg of DT dissolved in 300 µl of phosphate buffered saline (PBS) via intraperitoneal (IP) injection on 2 consecutive days (Azim et al., 2014; Geddes et al., 2018), whereas control mice received IP injections of PBS. To allow for neuronal ablation, animals were stopped in behavioral training and placed back on food. Animals resumed 2–8 s task training with probe trials 14 days after the first DT or PBS injection.
 
-## Neural recordings during the task
+### Neural recordings during the task
 
 The mice with electrode array implanted were trained with exactly the same procedure as described above. When mice performed the 2–8 s task with 80% correct rate for 3 consecutive days, we connected the array with recording cable and continued training until mice adapted to the mechanics of the recording cable and were able to maintain the correct rate greater than 80% (Howard et al., 2017).
 
 Neural activity was recorded using the MAP system (Plexon Inc, TX, USA). The spike activities were initially online sorted using a sorting algorithm (Plexon Inc, TX, USA). Only spikes with a clearly identified waveforms and relatively high signal-to-noise ratio were used for further analysis. After the recording session, the spike activities were further sorted to isolate single units by offline sorting software (Plexon Inc, TX, USA). Single units displayed a clear refractory period in the inter-spike interval histogram, with no spikes during the refractory period (larger than 1.3 ms) (Geddes et al., 2018; Howard et al., 2017; Jin and Costa, 2010; Jin et al., 2014). All the timestamps of animal’s behavioral events were recorded as TTL pulses which were generated by a Med-Associates interface board and sent to the MAP recording system through an A/D board (Texas Instrument Inc, TX, USA). The animal’s behavioral timestamps during the training session were synchronized and recorded together with the neural activity.
 
-## Neural dynamic analysis
+### Neural dynamic analysis
 
 The animal’s behavior taking place during the lever retraction time period was critical to the choice to be made, so we focused on the analysis of the neural activity from levers retraction to levers extension. Neuronal firings aligned to lever retraction were averaged across trials in 20 ms bins, and smoothed by a Gaussian filter (Gaussian filter window size = 10, standard deviation = 5) to construct the peristimulus time histogram (PETH). The neurons showing significant firing changes during the lever retraction period were defined as task-related neurons (ANOVA); those showing no significant changes were defined as non-task-related neurons, which were not included in the further dynamic analysis.
 
-During 2 s trials, mice behaved exactly the same as they did during the 0–2 s period in the rewarded 8 s trials, so we mainly analyzed firing activities in 8 s trials. To avoid confounding effect by the sensory responses triggered by the lever retraction, only neural activity from 1 s to 8 s following lever retraction were included (Howard et al., 2017). Then, we calculated FRI based on the PETH from 1 s to 8 s for each individual neuron as follows:FRI = PETH-mean(PETH)std(PETH)
+During 2 s trials, mice behaved exactly the same as they did during the 0–2 s period in the rewarded 8 s trials, so we mainly analyzed firing activities in 8 s trials. To avoid confounding effect by the sensory responses triggered by the lever retraction, only neural activity from 1 s to 8 s following lever retraction were included (Howard et al., 2017). Then, we calculated FRI based on the PETH from 1 s to 8 s for each individual neuron as follows:
+
+$$
+FRI = \frac{PETH-mean(PETH)}{std(PETH)}
+$$
 
 We then used principal component analysis and classification algorithm, a build-in toolbox in Matlab, to classify the task-related neurons based on types of dynamics. For striatum and SNr, we used the same algorithm to classify neurons, and we found the same types of dynamics in striatum and SNr: Type 1, monotonic decreasing; Type 2, monotonic increasing; Type 3, peak at around 4 s; Type 4, trough at around 4 s.
 
-## Cell-type classification
+### Cell-type classification
 
 In dorsal striatum, we classified neurons as putative SPNs if they showed waveform trough half-width between 100 μs and 250 μs and the baseline firing rate less than 10 Hz. In SNr, neurons with firing rate higher than 15 Hz were classified as putative SNr GABA neurons, which are most likely the SNr projection neurons, because the percentage of GABAergic interneurons in the SNr is rather small (Deniau et al., 2007; Jin and Costa, 2010).
 
 To further identify the D1 and D2 SPNs in striatum, we utilized cre-loxp technique to exclusively express ChR2 on D1-SPNs or D2-SPNs by injecting the AAV-DIO-ChR2-YFP/AAV-DIO-ChR2-mCherry virus into dorsal striatum or genetically express ChR2 by D1-Ai32 and A2a-Ai32. Optical stimulation on ChR2-expressed cells is able to directly evoke spiking activity with short latency (Geddes et al., 2018; Jin and Costa, 2010; Jin et al., 2014). Before the training session, we connected the recording cable to the electrode array for neuronal recording and inserted an optic fiber through the cannula attached to the array to conduct light into striatum for light stimulation. For better monitoring of the same cells stably during behavioral training and the later optogenetic identification, the optic fiber was well fixed to the array. After each training session, we delivered blue light stimulation through the optic fiber from a 473 nm laser (Laserglow Technologies) via a fiber-optic patch cord, and simultaneously recorded the neuronal responses, to testify the molecular identity of cells previously recorded during the behavioral training. The stimulation pattern was 100 ms pulse width with 4 s interval. The stimulation pattern was repeatedly delivered for 100 trials. We very carefully regulated the laser power to a relatively low level for each individual recording session which was strong enough to evoke reliable spikes in a small population of neurons recorded from certain electrodes, since high laser powers usually induced an electrical signal much larger and very different from the spike waveforms previously recorded in the same electrode, presumably resulting from synchronized activation of a large population of cells surrounding the electrode. For neuron identification in different sessions in the same mouse, substantial effort was made to optimize the position of optic fiber to identify those units recorded from different electrodes and that were not being able to be identified in the previous session. The final laser power used for reliable identification of D1/D2-SPNs was between 1.0 mW and 1.5 mW measured at the tip of the optical fiber (slightly varying for different mice and different sessions). Only those units showing very short (≤6 ms) response latency to light stimulation and exhibiting exactly the same spike waveforms (R≥0.95, Pearson’s correlation coefficient) during the behavioral performance and light response were considered as direct light-activated and cre recombinase positive neurons thus D1-SPNs or D2-SPNs (Geddes et al., 2018; Howard et al., 2017; Jin and Costa, 2010). Strict criteria were employed to minimize the possibility of false positives (with the risk of increasing false negatives, and hence having to perform more recordings/mice to achieve the same number of neurons).
 
-## Optical stimulation during the task
+### Optical stimulation during the task
 
 For optogenetic manipulation experiments, mice were injected with AAV carrying were pre-trained in 2–8 s task for 2 weeks and bilaterally implanted with optic fibers. After achieving a correct rate of 80%, stimulation trials began. D1-SPNs and D2-SPNs neurons were stimulated or inhibited bilaterally in 50% of trials using a single pulse of light (Laserglow, 473 nm, 5 mW, 1 s constant for ChR2 experiments; Laserglow, 532 nm 10 mW, 1 s constant for Halorhodopsin experiments). Rewards were delivered only at correct responses during 2 s and 8 s trials. Within 50% of any type of trials, mice were optogenetically stimulated (or inhibited) for 1 s before lever extension (Howard et al., 2017). Mice only received stimulation (or inhibition) once per trial. Sessions with correct rate below 75% for control trials were excluded from further analysis.
 
-## Computational model
+### Computational model
 
 We constructed a neuronal network model, including cortico-basal ganglia circuitry, to simulate the behavioral effects of ablation and optogenetic manipulation on SPNs. Specifically, cortical information corresponding to left or right choice is sent to D1- and D2-SPNs associated with these two action options (Lo and Wang, 2006; Wang, 2002). One-way collateral inhibition is added between D2 SPNs subgroups. Signals from D1- and D2-SPNs eventually converge to two separate SNr populations through distinct pathways (Hikosaka et al., 2000; Jin et al., 2014; Mink, 2003), and exert opposing effects on SNr activity (Smith et al., 1998). Behavioral output is then determined by the dominant activity between the mutually inhibiting left and right SNr populations (Mailly et al., 2003), which could control the final motor output either through brainstem circuits or motor cortices (Aoki et al., 2019; Hikosaka, 2007; Lo and Wang, 2006; Redgrave et al., 1999). Here for simplicity, other basal ganglia nuclei such as globus pallidus and subthalamic nucleus are not included in the model.
 
-Cortical neurons firing activities are defined as:fleftcortext=kleftcortexe-tm∙t+Inoiseleft(t)frightcortext=krightcortexe-tm∙t+Inoiseright(t)
+Cortical neurons firing activities are defined as:
 
-where kleftcortex=2, krightcortex=-2, tm=0.4 and Inoise(t) is defined as Gaussian white noise (mean(Inoiseleft)=1, mean(Inoiseright)=2, SD =0.01).
+$$
+f_{left}^{cortex}t=k_{left}^{cortex}e^{-t_{m}∙t}+I_{noise}^{left}(t)
+$$
 
-Dopamine neuron firing activities is defined as:fDAt=kDAe-tDA∙t+InoiseDA(t)
 
-where kDA=3, tDA=0.4, and InoiseDA(t) is defined as Gaussian white noise (mean (InoiseDA)=1, SD =0.01).
 
-Neuronal activities of D1-SPNs are defined as:τdfleftD1(t)dt=w0E-fleftD1(t)+w~D1_leftfleftcortex(t)+wD1fDA(t)+Inoise(t)τdfrightD1(t)dt=w0E-frightD1(t)+w~D1_rightfrightcortex(t)+wD1fDA(t)+Inoise(t)
+$$
+f_{right}^{cortex}t=k_{right}^{cortex}e^{-t_{m}∙t}+I_{noise}^{right}(t)
+$$
 
-where w0=1 , E=20, w~D1_left=3, w~D1_right=6, wD1=2, τ=0.1,Inoise(t) is defined as Gaussian white noise (mean (Inoise(t))=0, SD =0.5).
+where $k_{left}^{cortex}=2$, $k_{right}^{cortex}=-2$, $t_{m}=0.4$ and $I_{noise}(t)$ is defined as Gaussian white noise (mean($I_{noise}^{left}$)=1, mean($I_{noise}^{right}$)=2, SD =0.01).
 
-Neuronal activities of D2-SPNs in ‘Co-activation’ module (labeled as D2-SPN 1) are defined as:τdfleft1D2(t)dt=w0E-fleft1D2(t)+w~D2_leftfleftcortex(t)+wD2fDA(t)+Inoise(t)τdfright1D2(t)dt=w0E-fright1D2(t)+w~D2_rightfrightcortex(t)+wD2fDA(t)+Inoise(t)
+Dopamine neuron firing activities is defined as:
 
-where w0=1, E=21, w~D2_left=5, w~D2_right=5, wD2=-0.3, τ=0.1, Inoise(t) is defined as Gaussian white noise (mean (Inoise(t))=0, SD =0.5).
+$$
+f_{DA}t=k_{DA}e^{-t_{DA}∙t}+I_{noise}^{DA}(t)
+$$
 
-Neuronal activities of D2-SPNs in ‘Go/No-go’ module (labeled as D2-SPN 2) are defined as:τdfleft2D2(t)dt=w0E-fleft2D2(t)+w~D2_leftfleftcortext+wD2_leftSleft(t)fright1D2(t)+wD2fDA(t)+Inoise(t)τdfright2D2(t)dt=w0E-fright2D2(t)+w~D2_rightfrightcortext+wD2_rightSrighttfleft1D2t+wD2fDA(t)+Inoise(t)
+where $k_{DA}^{}=3$, $t_{DA}=0.4$, and $I_{noise}^{DA}(t)$ is defined as Gaussian white noise (mean ($I_{noise}^{DA}$)=1, SD =0.01).
 
-where w0=1 , E=21 , w~D2_left=5, w~D2_right=5, wD2_left= -0.7, wD2_right=-0.5, wD2=-0.3, τ=0.1,Inoise(t) is defined as Gaussian white noise (mean (Inoise(t))=0, SD =0.5). Sleft(t) and Sright(t) are short-term depression functions:Sleftt=3/(1+e0.3(fright1D2t-15))Srightt=3/(1+e0.3(fleft1D2t-15))
+Neuronal activities of D1-SPNs are defined as:
 
-SNr neurons receive striatal inputs as well as the local inhibitory inputs from other SNr neurons. The SNr activities are defined as:τSNrdfleftSNr(t)dt=w0(E−fleftSNr(t))+w1~SNr_leftfleftD1(t)+w2~SNrfright1D2(t)+w3~SNrfleft2D2(t)+wleftSNrfrightSNr(t)+Inoises(t)τSNrdfrightSNr(t)dt=w0(E−frightSNr(t))+w1~SNr_rightfrightD1(t)+w2~SNrfleft1D2(t)+w3~SNrfright2D2(t)+wrightSNrfleftSNr(t)+Inoises(t)
+$$
+\tau\frac{df_{left}^{D1}(t)}{dt}=w_{0}E-f_{left}^{D1}(t)+w~_{D1_left}f_{left}^{cortex}(t)+w_{D1}f_{DA}(t)+I_{noise}(t)
+$$
 
-where w0=1 , E=40 , w1~SNr_left=−0.1, w1~SNr_right=−0.105 , w2~SNr=0.15, w3~SNr=0.07, wleftSNr=-0.027, wrightSNr=-0.01, τSNr=0.2. Inoises(t) is defined as Gaussian white noise (mean (Inoises)=0, SD = 0.3).
 
-The time-dependent choice C(t) is then determined by SNr outputs fleftSNrt and frightSNrt as follows:C(t)={left choice (short−duration choice),  fleftSNr(t)−frightSNr(t)<0right choice (long−duration choice),  fleftSNr(t)−frightSNr(t)≥0
 
-For optogenetic manipulation of striatal neurons, the stimulation pattern is defined as:Factivation(t)={amp,  ts≤t≤ts+10,  t<ts or t>ts+1
+$$
+\tau\frac{df_{right}^{D1}(t)}{dt}=w_{0}E-f_{right}^{D1}(t)+w~_{D1_right}f_{right}^{cortex}(t)+w_{D1}f_{DA}(t)+I_{noise}(t)
+$$
 
-and for inhibition, the pattern is defined as:Finhibition(t)={−amp,  ts≤t≤ts+10,  t<ts or t>ts+1
+where $w_{0}=1$ , $E=20$, $w~_{D1_left}=3$, $w~_{D1_right}=6$, $w_{D1}=2$, $\tau=0.1,$$I_{noise}(t)$ is defined as Gaussian white noise (mean ($I_{noise}(t)$)=0, SD =0.5).
 
-where ts is the onset of stimulation/inhibition, which lasts for 1 s. amp is defined as the strength of the optogenetic manipulation within the range of [1, 25].
+Neuronal activities of D2-SPNs in ‘Co-activation’ module (labeled as D2-SPN 1) are defined as:
 
-To add D1-D1 collateral connections to the ‘Triple-control’ model, the neuronal activities of D1-SPNs are defined as:τdfleftD1(t)dt=w0E-fleftD1(t)+w~D1leftfleftcortext+wD1_rightfrightD1(t)+wD1fDA(t)+Inoise(t)τdfrightD1(t)dt=w0E-frightD1(t)+w~D1rightfrightcortext+wD1_leftfleftD1(t)+wD1fDA(t)+Inoise(t)
+$$
+\tau\frac{df_{left1}^{D2}(t)}{dt}=w_{0}E-f_{left1}^{D2}(t)+w~_{D2_left}f_{left}^{cortex}(t)+w_{D2}f_{DA}(t)+I_{noise}(t)
+$$
 
-where wD1_Left= −0.3,wD1_right= −0.3.
 
-To add D1-D2 collateral connections to the ‘Triple-control’ model, the neuronal activities of D2-SPNs in ‘Go/No-go’ module (labeled as D2-SPN 2) are defined as:τdfleft2D2(t)dt=w0E-fleft2D2(t)+w~D2_leftfleftcortext+wD2leftSlefttfright1D2t+wD1leftfleftD1t+wD2fDA(t)+Inoise(t)τdfright2D2(t)dt=w0E-fright2D2(t)+w~D2_rightfrightcortext+wD2_rightSrighttfleft1D2t+wD1_rightfrightD1t+wD2fDA(t)+Inoise(t)
 
-where wD1_left= −0.3,wD1_right= −0.3.
+$$
+\tau\frac{df_{right1}^{D2}(t)}{dt}=w_{0}E-f_{right1}^{D2}(t)+w~_{D2_right}f_{right}^{cortex}(t)+w_{D2}f_{DA}(t)+I_{noise}(t)
+$$
 
-To add D2-D1 collateral connections to the ‘Triple-control’ model, the neuronal activities of D1-SPNs are defined as:τdfleftD1(t)dt=w0E-fleftD1(t)+w~D1leftfleftcortext+wD2_leftfleft2D2(t)+wD1fDA(t)+Inoise(t)τdfrightD1(t)dt=w0E-frightD1(t)+w~D1rightfrightcortext+wD2_rightfright2D2(t)+wD1fDA(t)+Inoise(t)
+where $w_{0}=1$, $E=21$, $w~_{D2_left}=5$, $w~_{D2_right}=5$, $w_{D2}=-0.3$, $\tau=0.1$, $I_{noise}(t)$ is defined as Gaussian white noise (mean ($I_{noise}(t)$)=0, SD =0.5).
 
-where wD2_left= −0.3,wD2_right= −0.3.
+Neuronal activities of D2-SPNs in ‘Go/No-go’ module (labeled as D2-SPN 2) are defined as:
+
+$$
+\tau\frac{df_{left2}^{D2}(t)}{dt}=w_{0}E-f_{left2}^{D2}(t)+w~_{D2_left}f_{left}^{cortex}t+w_{D2_left}S_{left}(t)f_{right1}^{D2}(t)+w_{D2}f_{DA}(t)+I_{noise}(t)
+$$
+
+
+
+$$
+\tau\frac{df_{right2}^{D2}(t)}{dt}=w_{0}E-f_{right2}^{D2}(t)+w~_{D2_right}f_{right}^{cortex}t+w_{D2_right}S_{right}tf_{left1}^{D2}t+w_{D2}f_{DA}(t)+I_{noise}(t)
+$$
+
+where $w_{0}=1$ , $E=21$ , $w~_{D2_left}=5$, $w~_{D2_right}=5$, $w_{D2_left}= -0.7$, $w_{D2_right}=-0.5$, $w_{D2}=-0.3$, $\tau=0.1,$$I_{noise}(t)$ is defined as Gaussian white noise (mean ($I_{noise}(t)$)=0, SD =0.5). $S_{left}(t)$ and $S_{right}(t)$ are short-term depression functions:
+
+$$
+S_{left}t=3/(1+e^{0.3(f_{right1}^{D2}t-15)})
+$$
+
+
+
+$$
+S_{right}t=3/(1+e^{0.3(f_{left1}^{D2}t-15)})
+$$
+
+SNr neurons receive striatal inputs as well as the local inhibitory inputs from other SNr neurons. The SNr activities are defined as:
+
+$$
+\tau_{SNr}\frac{df_{left}^{SNr}(t)}{dt}=w_{0}(E−f_{left}^{SNr}(t))+w1~_{SNr_left}f_{left}^{D1}(t)+w2~_{SNr}f_{right1}^{D2}(t)+w3~_{SNr}f_{left2}^{D2}(t)+w_{left}^{SNr}f_{right}^{SNr}(t)+I_{noise}^{s}(t)
+$$
+
+
+
+$$
+\tau_{SNr}\frac{df_{right}^{SNr}(t)}{dt}=w_{0}(E−f_{right}^{SNr}(t))+w1~_{SNr_right}f_{right}^{D1}(t)+w2~_{SNr}f_{left1}^{D2}(t)+w3~_{SNr}f_{right2}^{D2}(t)+w_{right}^{SNr}f_{left}^{SNr}(t)+I_{noise}^{s}(t)
+$$
+
+where $w_{0}=1$ , $E=40$ , $w1~_{SNr_left}=−0.1$, $w1~_{SNr_right}=−0.105$ , $w2~_{SNr}=0.15$, $w3~_{SNr}=0.07$, $w_{left}^{SNr}=-0.027$, $w_{right}^{SNr}=-0.01$, $\tau_{SNr}=0.2$. $I_{noise}^{s}(t)$ is defined as Gaussian white noise (mean ($I_{noise}^{s}$)=0, SD = 0.3).
+
+The time-dependent choice $C(t)$ is then determined by SNr outputs $f_{left}^{SNr}t$ and $f_{right}^{SNr}t$ as follows:
+
+$$
+C(t)={left choice (short−duration choice),  f_{left}^{SNr}(t)−f_{right}^{SNr}(t)<0right choice (long−duration choice),  f_{left}^{SNr}(t)−f_{right}^{SNr}(t)\geq0
+$$
+
+For optogenetic manipulation of striatal neurons, the stimulation pattern is defined as:
+
+$$
+F_{activation}(t)={amp,  t_{s}\leqt\leqt_{s}+10,  t<t_{s} or t>t_{s}+1
+$$
+
+and for inhibition, the pattern is defined as:
+
+$$
+F_{inhibition}(t)={−amp,  t_{s}\leqt\leqt_{s}+10,  t<t_{s} or t>t_{s}+1
+$$
+
+where $t_{s}$ is the onset of stimulation/inhibition, which lasts for 1 s. amp is defined as the strength of the optogenetic manipulation within the range of [1, 25].
+
+To add D1-D1 collateral connections to the ‘Triple-control’ model, the neuronal activities of D1-SPNs are defined as:
+
+$$
+\tau\frac{df_{left}^{D1}(t)}{dt}=w_{0}E-f_{left}^{D1}(t)+w~_{D1_{left}}f_{left}^{cortex}t+w_{D1_right}f_{right}^{D1}(t)+w_{D1}f_{DA}(t)+I_{noise}(t)
+$$
+
+
+
+$$
+\tau\frac{df_{right}^{D1}(t)}{dt}=w_{0}E-f_{right}^{D1}(t)+w~_{D1_{right}}f_{right}^{cortex}t+w_{D1_left}f_{left}^{D1}(t)+w_{D1}f_{DA}(t)+I_{noise}(t)
+$$
+
+where $w_{D1_Left}= −0.3,w_{D1_right}= −0.3.$
+
+To add D1-D2 collateral connections to the ‘Triple-control’ model, the neuronal activities of D2-SPNs in ‘Go/No-go’ module (labeled as D2-SPN 2) are defined as:
+
+$$
+\tau\frac{df_{left2}^{D2}(t)}{dt}=w_{0}E-f_{left2}^{D2}(t)+w~_{D2_left}f_{left}^{cortex}t+w_{D2_{left}}S_{left}tf_{right1}^{D2}t+w_{D1_{left}}f_{left}^{D1}t+w_{D2}f_{DA}(t)+I_{noise}(t)
+$$
+
+
+
+$$
+\tau\frac{df_{right2}^{D2}(t)}{dt}=w_{0}E-f_{right2}^{D2}(t)+w~_{D2_right}f_{right}^{cortex}t+w_{D2_right}S_{right}tf_{left1}^{D2}t+w_{D1_right}f_{right}^{D1}t+w_{D2}f_{DA}(t)+I_{noise}(t)
+$$
+
+where $w_{D1_left}= −0.3,w_{D1_right}= −0.3.$
+
+To add D2-D1 collateral connections to the ‘Triple-control’ model, the neuronal activities of D1-SPNs are defined as:
+
+$$
+\tau\frac{df_{left}^{D1}(t)}{dt}=w_{0}E-f_{left}^{D1}(t)+w~_{D1_{left}}f_{left}^{cortex}t+w_{D2_left}f_{left2}^{D2}(t)+w_{D1}f_{DA}(t)+I_{noise}(t)
+$$
+
+
+
+$$
+\tau\frac{df_{right}^{D1}(t)}{dt}=w_{0}E-f_{right}^{D1}(t)+w~_{D1_{right}}f_{right}^{cortex}t+w_{D2_right}f_{right2}^{D2}(t)+w_{D1}f_{DA}(t)+I_{noise}(t)
+$$
+
+where $w_{D2_left}= −0.3,w_{D2_right}= −0.3.$
 
 All the modeling programs were coded in Matlab.
 
-## Psychometric curve fitting
+### Psychometric curve fitting
 
-Psychometric curves for behavioral data and for theoretical curves were fit using the following equation (Brunton et al., 2013; Howard et al., 2017):y=a+b1+ec-xd
+Psychometric curves for behavioral data and for theoretical curves were fit using the following equation (Brunton et al., 2013; Howard et al., 2017):
+
+$$
+y=a+\frac{b}{1+e^{\frac{c-x}{d}}}
+$$
 
 where a is the percentage of long-lever selection during short duration trials, b is the difference between a and the percentage of long-lever selection during long duration trials, c is the x-intercept where long-duration selection equals 0.5, and d is the rate of increase or decrease in the curve (slope). These can be interpreted as change in overall choice, long-duration choice, time, and sensitivity, respectively (Brunton et al., 2013).
 
-## Statistical procedures
+### Statistical procedures
 
 Statistics for the wild-type and KO mice learning data were performed on the basis of values for each mouse per day. One-way and two-way repeated-measures ANOVA were used to investigate general main effects; and paired or unpaired t-tests were used in all planned and post hoc comparisons. Z-test was used for the comparison of neuron proportions (Sheskin, 2003). Statistics for the optogenetic data were performed on the basis of control and stimulated values for each mouse per stimulation condition. Statistical analyses were conducted in Matlab using the statistics toolbox (The MathWorks Inc, MA USA) and GraphPad Prism 7 (GraphPad Software Inc, CA, USA). Results are presented as mean ± SEM for behavior readouts and the neuronal recording data. p<0.05 was considered significant. All statistical details are located within the figure legends. The number of animals used in each experiment and the number of neurons are specified in the text and figure legend.

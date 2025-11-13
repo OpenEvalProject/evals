@@ -13,13 +13,13 @@
 
 ### Affiliations
 
-1. https://ror.org/05vghhr25 Research Centre for Integrative Physiology and Pharmacology, Institute of Biomedicine, University of Turku Turku Finland
-2. https://ror.org/05vghhr25 Drug Research Doctoral Programme (DRDP), University of Turku Turku Finland
-3. https://ror.org/040af2s02 Institute for Molecular Medicine Finland (FIMM), HiLIFE Helsinki Institute of Life Science, University of Helsinki Helsinki Finland
-4. https://ror.org/05vghhr25 Faculty of Medicine, University of Turku Turku Finland
-5. https://ror.org/03m2x1q45 Department of Chemistry and Biochemistry, University of Arizona Tucson United States
-6. https://ror.org/05vghhr25 Turku Center for Disease Modeling, University of Turku Turku Finland
-7. https://ror.org/05dbzj528 Unit of Clinical Pharmacology, Turku University Hospital Turku Finland
+1. Research Centre for Integrative Physiology and Pharmacology, Institute of Biomedicine, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
+2. Drug Research Doctoral Programme (DRDP), University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
+3. Institute for Molecular Medicine Finland (FIMM), HiLIFE Helsinki Institute of Life Science, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+4. Faculty of Medicine, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
+5. Department of Chemistry and Biochemistry, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+6. Turku Center for Disease Modeling, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
+7. Unit of Clinical Pharmacology, Turku University Hospital Turku Finland ([ROR:05dbzj528](https://ror.org/05dbzj528))
 
 † Corresponding author
 
@@ -37,39 +37,103 @@ We have recently found that global deficiency of MC1-R signaling accelerates ath
 
 ## Results
 
-## Hepatocyte-specific MC1-R deficiency enhances cholesterol and lipid accumulation in the liver
+### Hepatocyte-specific MC1-R deficiency enhances cholesterol and lipid accumulation in the liver
 
 We first aimed to investigate whether MC1-R is expressed in the mouse liver. Immunohistochemical staining revealed a strong and uniform expression of MC1-R in the liver (Figure 1A). Immunofluorescence staining further revealed that MC1-R expression co-localizes with the hepatocyte marker serum albumin (Figure 1B) as well as with the cholangiocyte marker cytokeratin 19 and the monocyte and macrophage marker Mac-2 (Figure 1—figure supplement 1), while no clear colocalization was observed in CD31-positive endothelial cells (Figure 1—figure supplement 1). Furthermore, we sought to investigate whether the expression level of MC1-R in the liver is affected by feeding mice a cholesterol-rich Western diet. Remarkably, 12 weeks of Western diet feeding resulted in significant downregulation of the MC1-R mRNA level in the liver (Figure 1C). This result was further corroborated by Western blotting, which showed reduced protein expression of MC1-R in the liver of Western diet-fed mice (Figure 1D and Figure 1—source data 1). The specificity of the MC1-R signal was validated by pre-adsorption of the antibody with an MC1-R blocking peptide (Figure 1—figure supplement 2 and Figure 1—figure supplement 2—source data 1). Furthermore, using RNA sequencing data from human liver biopsies (Govaere et al., 2020), we found that hepatic MC1R expression was significantly downregulated (log2 fold change = −1.1) in patients with NAFLD or nonalcoholic steatohepatitis (NASH) compared to control cases (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig1-v1.jpg)
+
+**Figure 1.:** (A) Immunostaining of MC1-R staining in the liver of chow-fed C57Bl/6 J mouse. In the control section, anti-MC1-R antibody was replaced by purified normal rabbit IgG (isotype control). Scale bar, 50 µm. (B) Immunofluorescence staining of MC1-R (red) and the hepatocyte marker serum albumin (green) in the liver of chow-fed C57Bl/6 J mouse. Scale bar, 20 μm. (C) Quantitative real-time polymerase chain reaction (qPCR) analysis of Mc1r mRNA expression in the liver of chow- and Western diet-fed mice. (D) Representative Western blots of MC1-R and β-actin (loading control) and quantification of MC1-R protein level in the liver of chow- and Western diet-fed mice. *p<0.05 and **p<0.01 versus chow-fed mice by Student’s t-test. (E) MC1R gene expression in human liver biopsies from control cases (n=10) and patients with nonalcoholic fatty liver disease (NAFLD, n=51) or nonalcoholic steatohepatitis (NASH, n=155). Violin plots show normalized log2 RPKM values (reads per kilobase of exon per million reads mapped) and medians (dashed line) for each sample group. (F) Schematic presentation of the loxP-flanked (floxed) Mc1r allele and the positions of forward and reverse primers used for PCR genotyping. PCR analysis of genomic DNA extracted from the liver of Alb-Cre-negative and -positive mice that were homozygous for the Mc1r floxed allele (Mc1rfl/fl). The size of the recombined allele is ~217 bp. (G) qPCR analysis of Mc1r expression in the liver of chow-fed Mc1rfl/fl, Mc1rfl/+ AlbCre/+, and Mc1r LKO (Mc1rfl/fl AlbCre/+) mice at the age of 16 weeks. (H, I) Absolute liver weight and liver to body weight ratio (expressed as a percentage of body weight) in chow-fed Mc1rfl/fl, Mc1rfl/+ AlbCre/+, and Mc1r LKO mice at the age of 16 weeks. Values are mean ± SEM, n=5–10 mice per group in each graph. *p<0.05, **p<0.01, and ****p<0.0001 for the indicated comparisons by one-way ANOVA and Dunnet post hoc tests. Mc1r LKO, hepatocyte-specific MC1-R knock-out mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunofluorescence staining of MC1-R (red) and the cholangiocyte marker cytokeratin 19 (CK19, green) in the liver of a chow-fed C57Bl/6 J mouse. (B) Immunofluorescence staining of MC1-R (red) and the endothelial cell marker CD31 (green) in the liver of a chow-fed C57Bl/6 J mouse. (C) Immunofluorescence staining of MC1-R (red) and the macrophage marker Mac-2 (green) in the liver of a chow-fed C57Bl/6 J mouse. White arrows indicate co-localization of MC1-R and CK-19 or Mac-2. Scale bar, 20 μm in all images.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Western blot analysis of MC1-R protein expression in the mouse liver, HepG2, and mouse heart samples. The expression of β-actin is shown as a loading control. Lanes on the right (same samples as on the left) were incubated in an anti-MC1-R antibody solution that was premixed with a molar excess of a blocking MC1-R peptide.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative Western blots of MC1-R and vinculin (loading control) and (B) quantification of MC1-R protein level in the liver of chow-fed control (Mc1rfl/+ AlbCre/+) and Mc1r LKO mice. *p<0.05 versus control mice by Student’s t-test. (C) Body weight curves of chow-fed Mc1rfl/fl, Mc1rfl/+ AlbCre/+, and Mc1r LKO mice. (D and E) Total fat and lean mass of chow-fed Mc1rfl/fl, Mc1rfl/+ AlbCre/+, and Mc1r LKO mice at the start and end of the body weight monitoring period. The change in fat and lean mass between the start and end of the experiment is also presented in the graphs. Values are mean ± SEM, mice n=5–10 mice per group in each graph.
 
 To determine the regulatory role of MC1-R in the liver, we generated hepatocyte-specific MC1-R knock-out mice (Mc1rfl/fl AlbCre/+; denoted as Mc1r LKO) by crossing MC1-R floxed (Mc1rfl/fl) mice with transgenic mice expressing Cre recombinase under the control of the mouse albumin promoter (AlbCre/+) (Figure 1E). Genotyping of the liver samples verified efficient recombination of the loxP-flanked allele in Mc1r LKO mice (Figure 1E) that resulted in significant downregulation of hepatic Mc1r mRNA expression in these mice compared to control Mc1rfl/fl mice (Figure 1F). A gene dosage effect was also noted in this regard as AlbCre/+ mice that were heterozygous for the Mc1r floxed allele (Mc1rfl/+ AlbCre/+) showed only partial downregulation of Mc1r compared to Mc1r LKO mice (Figure 1F). Western blotting also showed significantly reduced MC1-R protein expression in the liver of Mc1r LKO mice (Figure 1—figure supplement 3 and Figure 1—figure supplement 3—source data 1). To evaluate the effect of hepatocyte-specific MC1-R deficiency on body weight development, Mc1rfl/fl, Mc1rfl/+ AlbCre/+, and Mc1r LKO mice were fed a normal chow diet and weighed weekly during a monitoring period from 8 to 16 weeks of age. However, no differences were observed in body weight between the genotypes (Figure 1—figure supplement 3). Body composition analysis by quantitative NMR scanning at the start and end of the monitoring period did not reveal any significant changes in total fat or lean mass of Mc1r LKO mice compared to control genotypes (Figure 1—figure supplement 3). Of note, Mc1r LKO mice displayed a significant increase in liver weight (Figure 1G), which became more evident when calculated as the percentage of body weight (Figure 1H). Since the relative liver weight was significantly increased in comparison with both control groups, we used Mc1rfl/+ AlbCre/+ mice as the control group in subsequent analyses to eliminate the possible confounding by Alb-Cre transgene expression.
 
 Histological examination by H&E and Oil Red O staining revealed an enhanced accumulation of intracellular lipid droplets in the liver of Mc1r LKO mice in comparison to the control (Mc1rfl/+ AlbCre/+) mice (Figure 2A). Supporting this finding, quantification of hepatic lipid content showed increased TG and total cholesterol levels in Mc1r LKO mice (Figure 2B and C). Likewise, plasma TG and TC levels were significantly higher in Mc1r LKO mice compared to control mice (Figure 2D and E). Mc1r LKO mice also demonstrated signs of increased liver fibrosis, as evidenced by Picrosirius Red staining and gene expression analysis of fibrotic genes (Figure 2—figure supplement 1). However, no change in the expression of pro-inflammatory genes was observed between the genotypes (Figure 2—figure supplement 1). In a separate experiment, mice were fed a Western diet for 12 weeks to investigate whether hepatocyte-specific MC1-R deficiency exacerbates diet-induced dyslipidemia. Western diet-fed Mc1r LKO mice did not differ from control mice in terms of body weight or composition, liver weight, or plasma lipid concentrations (Figure 2—figure supplement 2). However, in line with the phenotype observed in chow-fed mice, Mc1r LKO mice showed enhanced cholesterol and TG accumulation in the liver after Western diet feeding (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative hematoxylin and eosin (H&E) and Oil Red O-stained liver sections of chow-fed control (Mc1rfl/+ AlbCre/+) and Mc1r LKO mice. Scale bar, 50 µm. (B, C) Quantification of liver total cholesterol and triglyceride content in chow-fed control and Mc1r LKO mice. (D, E) Quantification of plasma total cholesterol and triglyceride concentrations in chow-fed control and Mc1r LKO mice. (F) Representative Western blots of SREBP2, HMGCR, DHCR7, and vinculin (loading control) expression in the liver of chow-fed control and Mc1r LKO mice. (G) Quantification of mature and precursor forms SREBP2 as well as their ratio (precursor-to-mature) in the liver of chow-fed control and Mc1r LKO mice. (H) Quantification of HMGCR and DHCR7 protein levels in the liver of chow-fed control and Mc1r LKO mice. Values are mean ± SEM, n=6–10 mice per group in each graph. *p<0.05 and **p<0.01 versus control mice by Student’s t-test. SREBP2, sterol regulatory element binding protein 2; HMGCR, 3-hydroxy-3-methylglutaryl-CoA reductase; DHCR7, 7-dehydrocholesterol reductase.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative Picrosirius Red-stained liver sections of chow-fed control (Mc1rfl/+ AlbCre/+) and Mc1r LKO mice. Scale bar, 100 µm. (B) Quantification of fibrotic area (as a percentage of total tissue area) in the liver of chow-fed control and Mc1r LKO mice. n=5 mice per group. Quantitative real-time polymerase chain reaction (qPCR) analysis of fibrotic (C) and pro-inflammatory (D) genes in the liver of chow-fed control and Mc1r LKO mice. Values are mean ± SEM, mice n=8–10 mice per group in each graph. *p<0.05 and **p<0.01 for the indicated comparisons by Student’s t-test. Col1a1, collagen, type I, alpha 1; Tgfb1, transforming growth factor beta 1; Mmp2, matrix metalloproteinase-2; Il1b, interleukin 1 beta; Il6, interleukin 6; Tnf, tumor necrosis factor; Ccl2, chemokine (C-C motif) ligand 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Body weight curves of Western diet-fed control (Mc1rfl/fl) and Mc1r LKO mice. (B and C) Absolute liver weight and liver to body weight ratio (expressed as a percentage of body weight) in Western diet-fed control and Mc1r LKO mice (D and E) Total fat and lean mass of HFD-fed control and Mc1r LKO mice at the start and end of the body weight monitoring period. The change in fat and lean mass between the start and end of the experiment is also presented in the graphs. (F and G) Quantification of plasma total cholesterol and triglyceride concentrations in Western diet-fed control and Mc1r LKO mice. (H and I) Quantification of liver total cholesterol and triglyceride concentrations in Western diet-fed control and Mc1r LKO mice. Values are mean ± SEM, mice n=15 (control) and 6 (Mc1r LKO) mice per group. *p<0.05 and **p<0.01 versus Mc1rfl/fl mice by Student’s t-test.
+
 We next quantified protein levels of genes involved in cholesterol synthesis by Western blotting. We found that the expression of the cleaved mature form (70 kDa) or the full-length precursor form (120 kDa) of sterol regulatory element binding protein 2 (SREBP2), which is the master transcriptional regulator of cholesterol homeostasis, was not significantly changed in the liver of chow-fed Mc1r LKO mice. However, the ratio between the mature and precursor forms of SREB2 was reduced in Mc1r LKO mice (Figure 2F and G and Figure 2—source data 1). Consequently, the protein levels of SREBP2 target 3-hydroxy-3-methylglutaryl-CoA reductase (HMGCR) and 7-dehydrocholesterol reductase (DHCR7), which are crucially involved in the biosynthesis of cholesterol (Prabhu et al., 2014; Shi et al., 2022), were also significantly reduced in Mc1r LKO mice (Figure 2F and H).
 
-## Hepatocyte-specific MC1-R deficiency disturbs bile acid metabolism
+### Hepatocyte-specific MC1-R deficiency disturbs bile acid metabolism
 
 Based on the previous finding of disturbed bile acid metabolism in global MC1-R deficient mice on Apoe-/- background (Rinne et al., 2018), we were curious to investigate whether the hepatocyte-specific MC1-R knockout model recapitulates this phenotype. To this end, we quantified total and individual bile acids (BA) in the liver, feces, and plasma of chow-fed Mc1r LKO mice by liquid chromatography-mass spectrometry. We found that the total amount of BAs was markedly reduced in the plasma and to some extent (p=0.06) also in the feces of Mc1r LKO mice (Figure 3B and C), while the size of hepatic BA pool remained unchanged (Figure 3A). These changes were largely attributable to the reduction in secondary BAs (Figure 3B and C). Quantification of primary BA species in the plasma revealed that the levels of taurine-conjugated cholic acid (CA) and ursodeoxycholic acid (UDCA) were lower in Mc1r LKO mice. In terms of secondary BAs, Mc1r LKO mice showed significantly reduced plasma levels of taurine-conjugated deoxycholic acid (DCA), hyodeoxycholic acid (HDCA), and ω-muricholic acid (ω-MCA) (Figure 3E and Figure 3—source data 1). The amount of DCA was also lower in the liver of Mc1r LKO mice (Figure 3—figure supplement 1 and Figure 3—figure supplement 1—source data 1), while in the feces, HDCA, litocholic acid (LCA) and 12-keto litocholic acid (12-oxo LCA), which is the primary metabolite of DCA, were significantly reduced by MC1-R deficiency (Figure 3—figure supplement 1 and Figure 3—figure supplement 1—source data 2). Furthermore, the relative proportions of primary BAs in the plasma indicate that hepatocyte-specific MC1-R deficiency reduced the amount of CA with an accompanying increase in CDCA and UDCA (Figure 3F). This BA profile is further reflected as a significant reduction in the plasma ratio of CA:CDCA (Figure 3G).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Quantification of total, primary, and secondary bile acids in the liver, plasma and feces of chow-fed control (Mc1rfl/+ AlbCre/+), and Mc1r LKO mice. (D) Quantification of individual primary bile acids in the plasma of chow-fed control and Mc1r LKO mice. (E) Quantification of individual secondary bile acids in the plasma of chow-fed control and Mc1r LKO mice. (F) Relative proportions of individual primary bile acids in the plasma of chow-fed control and Mc1r LKO mice. (G) The ratio of cholic acid (CA) to chenodeoxycholic acid (CDCA) in the plasma of chow-fed control and Mc1r LKO mice. Values are mean ± SEM, n=4–5 mice per group in each graph. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 versus control mice by Student’s t-test. CA indicates cholic acid; CDCA, chenodeoxycholic acid; UDCA, ursodeoxycholic acid; MCA, muricholic acid; DCA, deoxycholic acid; LCA, litocholic acid; HDCA, hyodeoxycholic acid (HDCA).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of individual primary bile acids in the liver of chow-fed control (Mc1rfl/+ AlbCre/+) and Mc1r LKO mice. (B) Quantification of individual secondary bile acids in the liver of chow-fed control and Mc1r LKO mice. (C) Quantification of individual primary bile acids in the feces of chow-fed control and Mc1r LKO mice. (D) Quantification of individual secondary bile acids in the feces of chow-fed control and Mc1r LKO mice. Values are mean ± SEM, mice n=4–5 mice per group in each graph. *p<0.05 for the indicated comparisons by Student’s t-test. CA indicates cholic acid; CDCA, chenodeoxycholic acid; UDCA, ursodeoxycholic acid; MCA, muricholic acid; DCA, deoxycholic acid; LCA, litocholic acid; HDCA, hyodeoxycholic acid.
 
 To address possible causes of disturbed BA metabolism in Mc1r LKO mice, we quantified the hepatic expression of genes encoding for BA synthetizing enzymes (Figure 4A). Although the expression of cholesterol 7 alpha-hydroxylase (encoded by Cyp7a1), which is the first and rate-liming enzyme in BA synthesis (Chiang, 2004), was unchanged, Mc1r LKO mice demonstrated significant upregulation of sterol 12α-hydroxylase (encoded by Cyp8b1) and sterol 27-hydroxylase (encoded by Cyp27a1) (Figure 4A). Furthermore, Mc1r LKO mice had reduced mRNA levels of steroidogenic acute regulatory protein 1 (Stard1), which facilitates the trafficking of cholesterol to mitochondria and thus feeds the alternative mitochondrial pathway of BA synthesis (Figure 4A; Pandak et al., 2002; Ren et al., 2004). Second, we quantified the hepatic mRNA levels of transporters responsible for the uptake of BAs and their excretion into bile and systemic circulation (Figure 4B). We found that the expression of sodium/bile acid cotransporter (encoded by Ntcp), which accounts for the majority (~90%) of BA uptake from the portal circulation (Dawson et al., 2009), was upregulated in the liver of Mc1r LKO mice, while bile salt export pump (Bsep) showed no change at the mRNA level (Figure 4B). An alternative basolateral export of BAs is mediated by the heterodimeric organic solute transporter OSTα/OSTβ and the multidrug resistance-associated proteins MRP3 and MRP4 (Dawson et al., 2009), the last of which was downregulated in Mc1r LKO mice (Figure 4B). Third, among different nuclear receptors that regulate the transcription of BA enzymes and transporters, farnesoid X receptor (Fxr) and hepatocyte nuclear factor 4α (Hnf4a) were significantly upregulated in the liver of Mc1r LKO mice (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig4-v1.jpg)
 
-**Figure 4.:** (A, B) Quantitative real-time polymerase chain reaction (qPCR) analysis of genes involved in the bile acid synthesis and transport in the liver of chow-fed control (Mc1r) and Mc1r LKO mice. (fl/+ AlbCre/+C) qPCR analysis of nuclear receptor genes that regulate the transcription of bile acid enzymes and transporters. (D, E) Representative Western blots and quantification of CYP8B1, StAR, and MRP4 protein levels in the liver of chow-fed control and Mc1r LKO mice. Values are mean ± SEM, n=7–10 mice per group in each graph. *p<0.05, **p<0.01, and ***p<0.001 versus control mice by Student’s t-test. Cyp7a1, cholesterol 7 alpha-hydroxylase; Cyp7b1, 25-hydroxycholesterol 7-alpha-hydroxylase; Cyp8b1, sterol 12-alpha-hydroxylase; Cyp27a1, sterol 27- hydroxylase; Stard1, steroidogenic acute regulatory protein; Fxr, farnesoid X receptor; Lrh1, liver receptor homologue 1; Bsep, bile-salt export pump; Ntcp, Na+-taurocholate cotransporting polypeptide; Hnf4a, hepatocyte nuclear factor 4 alpha.Figure 4—source data 1.Figure 4D.
+**Figure 4.:** (A, B) Quantitative real-time polymerase chain reaction (qPCR) analysis of genes involved in the bile acid synthesis and transport in the liver of chow-fed control (Mc1rfl/+ AlbCre/+) and Mc1r LKO mice. (C) qPCR analysis of nuclear receptor genes that regulate the transcription of bile acid enzymes and transporters. (D, E) Representative Western blots and quantification of CYP8B1, StAR, and MRP4 protein levels in the liver of chow-fed control and Mc1r LKO mice. Values are mean ± SEM, n=7–10 mice per group in each graph. *p<0.05, **p<0.01, and ***p<0.001 versus control mice by Student’s t-test. Cyp7a1, cholesterol 7 alpha-hydroxylase; Cyp7b1, 25-hydroxycholesterol 7-alpha-hydroxylase; Cyp8b1, sterol 12-alpha-hydroxylase; Cyp27a1, sterol 27- hydroxylase; Stard1, steroidogenic acute regulatory protein; Fxr, farnesoid X receptor; Lrh1, liver receptor homologue 1; Bsep, bile-salt export pump; Ntcp, Na+-taurocholate cotransporting polypeptide; Hnf4a, hepatocyte nuclear factor 4 alpha.
 
 Finally, we selected the genes, which were differently expressed in Mc1r LKO mice and could potentially explain the observed BA profile in these mice, and quantified the corresponding protein levels of these gene products in the liver by Western blotting. In good agreement with the mRNA level changes, Mc1r LKO mice showed higher CYP8B1 and lower MRP4 protein expression compared to control mice (Figure 4D and E and Figure 4—source data 1). However, StAR (encoded by Stard1) protein level was significantly increased in the liver of Mc1r LKO mice (Figure 4D and E), which contradicts the mRNA level finding.
 
-## The endogenous MC1-R agonist α-MSH reduces cellular cholesterol content and enhances LDL and HDL uptake in HepG2 cells
+### The endogenous MC1-R agonist α-MSH reduces cellular cholesterol content and enhances LDL and HDL uptake in HepG2 cells
 
 The finding of MC1-R expression in the mouse liver and the phenotype of enhanced cholesterol accumulation in Mc1r LKO mice led us to investigate the effects and underlying mechanisms of MC1-R activation in human HepG2 cells. First, we aimed to verify that human hepatocytes also express MC1-R. Indeed, HepG2 cells clearly express MC1-R protein (Figure 5A and Figure 5—source data 1). Consistent with the finding of reduced MC1-R expression in the liver of Western diet-fed mice, loading of HepG2 cells with palmitic acid (a saturated free fatty acid) caused a rapid decrease of MC1-R protein expression (Figure 5A and Figure 5—source data 1). However, exposure of HepG2 cells to excess LDL cholesterol (Figure 5B and Figure 5—source data 1) or treatment with the HMGCR inhibitor atorvastatin (Figure 5C and Figure 5—source data 1) to lower cellular cholesterol content did not change MC1-R protein level. Second, we studied how MC1-R activation affects cholesterol metabolism in HepG2 cells. For this purpose, HepG2 cells were stimulated with the endogenous MC1-R agonist α-MSH and the amount of cellular free cholesterol was quantified using Filipin staining. We observed that α-MSH (1 µM) significantly decreased the free cholesterol content in HepG2 cells with an effect appearing after 3 hr and plateauing towards the 24 hr time point (Figure 5D). In terms of concentration-responsiveness, cholesterol content was already reduced with a subnanomolar concentration (0.1 nM) of α-MSH, and the maximal response was achieved with 1 µM α-MSH (Figure 5E). The reduction in cellular cholesterol was accompanied by significant increases in LDL and HDL uptake (Figure 5F and G), as evaluated after 24 hr treatment with α-MSH using fluorescently labeled lipoprotein particles (Dil-LDL and Dil-HDL). In good agreement with these findings, gene expression analysis revealed that α-MSH upregulated LDL receptor (LDLR) and the HDL receptor SR-BI (SCARB1) mRNA levels in a concentration-dependent manner (Figure 5H,I). These effects were only apparent at a 3 hr time point, which probably reflects the short half-life of α-MSH (Redding et al., 1978; Rudman et al., 1983). Nevertheless, upregulated LDLR and SCARB1 mRNA levels translated into more sustained increases in the corresponding protein levels (LDLR and SR-BI) after α-MSH treatment (Figure 5I and J and Figure 5—source data 1). Protein level analyses further showed that α-MSH had no effect on the expression of the cholesterol biosynthetic enzymes HMGCR and DHCR7 (Figure 5J and K and Figure 5—source data 1). Intriguingly, we observed that LDLR expression at the cell surface, as quantified by flow cytometry, was markedly increased already after 1 hr of treatment with 1 µM α-MSH (Figure 5L). Finally, in terms of BA metabolism, it appeared that α-MSH increased CA concentration in the culture medium of HepG2 cells without any effect on CDCA concentration (Figure 5—figure supplement 1 and Figure 5—figure supplement 1—source data 1). Consequently, the ratio of CA to CDCA was significantly increased in response to α-MSH treatment (Figure 5—figure supplement 1). Supporting this finding, Western blotting analysis showed that α-MSH upregulated CYP8B1 (Figure 5—figure supplement 1 and ), which is the major determinant of CA:CDCA ratio (Pandak and Kakiyama, 2019).
 
-## Selective activation of MC1-R mimics the effects of α-MSH in HepG2 cells
+![Figure 5.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Representative Western blots and quantification of MC1-R protein level in HepG2 cells treated with palmitic acid (500 µM), LDL (200 µg/ml), or atorvastatin (10 µM) for 1, 3, 6, or 24 hr. (D) Quantification of free cholesterol content using filipin staining in HepG2 cells treated with α-MSH (1 µM) for 1, 3, 6, or 24 hr. (E) Quantification of free cholesterol content in HepG2 cells treated with different concentrations of α-MSH (0.1 nM, 10 nM, or 1 µM) for 24 hr. (F, G) Quantification of LDL and HDL uptake in HepG2 cells treated with different concentrations (0.1 nM, 10 nM, or 1 µM) of α-MSH for 24 hr. (H, I) Quantitative real-time polymerase chain reaction (qPCR) analysis of LDL receptor (LDLR) and SCARB1 expression in HepG2 cells treated with different concentrations of α-MSH for 3, 6, or 24 hr. (J, K) Representative Western blots and quantification of LDL-R and SR-BI proteins levels in HepG2 cells treated with 1 µM α-MSH for 1, 3, 6, or 24 hr. (L) Quantification of cell surface LDLR by flow cytometry in HepG2 cells treated with 1 µM α-MSH for 24 hr. Values are mean ± SEM, n=3–6 per group in each graph. *p<0.05 and **p<0.01 for the indicated comparisons by one-way ANOVA and Dunnet post hoc tests (A–K) or by Student’s t-test (L).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of cholic acid (CA) and chenodeoxycholic acid (CDCA) in the culture medium of HepG2 cells treated with 1 µM α-MSH for 24 hr. (B) The ratio of CA to CDCA in the culture medium of HepG2 cells treated with 1 µM α-MSH for 24 hr. n=3–4 per group in each graph. (C) Representative Western blots and quantification of CYP8B1 in HepG2 cells treated with 1 µM α-MSH for 1, 3, 6, or 24 hr. n=4–6 per group. Values are mean ± SEM, *p<0.05 for the indicated comparisons by Student’s t-test (A and B) or by one-way ANOVA and Dunnet post hoc tests (C).
+
+### Selective activation of MC1-R mimics the effects of α-MSH in HepG2 cells
 
 Since α-MSH can also bind and activate other MC-R subtypes, we aimed to verify that the effects induced by α-MSH were particularly derived from the activation of MC1-R. To this end, we repeated the key experiments using LD211, which is a highly potent and selective agonist for MC1-R with no detectable binding to other MC-R subtypes (Doedens et al., 2010). Closely mirroring the effect observed with α-MSH, selective activation of MC1-R with LD211 led to a concentration-dependent reduction in cellular cholesterol amount (Figure 6A). LD211 also significantly increased LDL and HDL uptake (Figure 6B and C), which was accompanied by upregulation of LDLR and SCARB1 mRNA expression (Figure 6D). In comparison with α-MSH (Figure 4G and H), LD211 caused more sustained changes in gene expression (Figure 6D), which could be explained by the cyclic and more stable structure of LD211 (Doedens et al., 2010). Despite the clear-cut effects observed at the mRNA level, LD211 did not significantly affect LDLR and SR-BI protein levels, as detected by Western blotting (Figure 6E and Figure 6—source data 1). However, the cell surface expression of LDLR, which is a major determinant of LDL uptake rate, was markedly increased in HepG2 cells after 3-, 6-, and 24 hr treatment with LD211 (Figure 6F). Finally, the subnanomolar concentration of LD211 also down-regulated the fibrosis-associated genes TGFB1, ACTA2, and COL1A1 in HepG2 cells (Figure 6—figure supplement 1). α-MSH appeared to also downregulate the expression of the fibrotic genes TGFB1 and COL1A1 (Figure 6—figure supplement 1), but these changes did not reach statistical significance (p=0.08 and 0.051, respectively). Taken together, these results demonstrate that the α-MSH-induced effects were largely reproducible by selective MC1-R activation with LD211.
 
-## MC1-R activation engages multiple signaling mechanisms to regulate cholesterol metabolism in HepG2 cells
+![Figure 6.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig6-v1.jpg)
+
+**Figure 6.:** (A) Quantification of free cholesterol content using filipin staining in HepG2 cells treated with different concentrations of the selective MC1-R agonist LD211 (0.1 nM, 10 nM, or 1 µM) for 24 hr. (B, C) Quantification of low-density lipoprotein (LDL) and high-density lipoprotein (HDL) uptake in HepG2 cells treated with different concentrations (0.1 nM, 10 nM, or 1 µM) of LD211 for 24 hr. (D) Quantitative real-time polymerase chain reaction (qPCR) analysis of LDL receptor (LDLR) and SCARB1 expression in HepG2 cells treated with 1 µM LD211 for 3, 6, or 24 hr. (E) Representative Western blots and quantification of LDL-R and SR-BI proteins levels in HepG2 cells treated with 1 µM LD211 for 1, 3, 6, or 24 hr. (F) Quantification of cell surface LDLR by flow cytometry in HepG2 cells treated with 1 µM LD211 for 24 hr. Values are mean ± SEM, n=3–6 per group in each graph. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 for the indicated comparisons by one-way ANOVA and Dunnet post hoc tests.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantitative real-time polymerase chain reaction (qPCR) analysis of TGFB1, ACTA1, ACTA2, COL1A1, TNF, and IL6 expression in HepG2 cells treated with different concentrations of α-MSH for 3 or 6 hr. (B) qPCR analysis of TGFB1, ACTA1, ACTA2, COL1A1, TNF, and IL6 expression in HepG2 cells treated with different concentrations of LD211 for 3 or 6 hr. n=4–5 per group in each graph. Values are mean ± SEM, *p<0.05 and **p<0.01 for the indicated comparisons by one-way ANOVA and Dunnet post hoc tests.
+
+### MC1-R activation engages multiple signaling mechanisms to regulate cholesterol metabolism in HepG2 cells
 
 We next aimed to investigate intracellular signaling cascades that might be activated in response to MC1-R stimulation. Since most MC-Rs are known to be coupled to Gs proteins, we first measured intracellular cAMP levels in α-MSH-treated HepG2 cells. However, α-MSH did not either increase or decrease cAMP levels, while the adenylyl cyclase activator forskolin, as a positive control, induced a robust increase in cAMP level (Figure 7A). We also screened other potential signaling pathways of MC1-R and found that mitogen-activated protein kinases, ERK (extracellular-signal-regulated kinase) and JNK (c-Jun N-terminal kinase), are affected by α-MSH treatment. The highest concentration of α-MSH (1 µM) reduced ERK phosphorylation (p-ERK1/2) at 5- and 15 min time points (Figure 7—figure supplement 1). Profiling of the concentration-response however revealed that the phosphorylation levels of ERK and JNK are most significantly reduced at the lowest tested concentration (0.1 nM) of α-MSH and the effects tend to fade away towards higher concentrations (Figure 7B and C). In addition, α-MSH induced a rapid phosphorylation (at 5 min) of AMP-activated protein kinase (AMPK) (Figure 7D and Figure 7—source data 1), and the maximal effect was observed with 1 µM concentration (Figure 7—figure supplement 1 and Figure 7—figure supplement 1—source data 1), indicating a more conventional concentration-response. Finally, we tested whether the α-MSH-induced reduction in cellular cholesterol content is mediated by AMPK phosphorylation. Interestingly, the AMPK inhibitor dorsomorphin increased cholesterol content and reversed the concentration-response to α-MSH (Figure 7E). In the presence of dorsomorphin, the lowest concentration of α-MSH showed the strongest response, while the effect of 1 µM α-MSH was completely blocked (Figure 7E).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig7-v1.jpg)
+
+**Figure 7.:** (A) Quantification of intracellular cAMP level in HepG2 cells treated with different concentrations of α-MSH (0.1 nM, 10 nM, or 1 µM) for 30 min. The adenylyl cyclase activator forskolin (10 µM) was used as a positive control. (B, C) Quantification of phosphorylated ERK1/2 and JNK by ELISA assays in HepG2 cells treated with different concentrations of α-MSH (0.1 nM, 10 nM, or 1 µM) for 10 min. (D) Representative Western blots and quantification of phosphorylated AMPK level (p-AMPK normalized against total AMPK) in HepG2 cells treated with 1 µM α-MSH for 5, 15, 30, or 60 min. (E) Quantification of free cholesterol content using filipin staining in HepG2 cells treated with different concentrations of α-MSH (0.1 nM, 10 nM, or 1 µM) for 24 hr in the presence or absence of the AMP-activated protein kinase (AMPK) inhibitor dorsomorphin (1 µM). Values are mean ± SEM, n=3–6 per group in each graph. *p<0.05, **p<0.01, and ****p<0.0001 for the indicated comparisons by one-way ANOVA and Dunnet post hoc tests.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Quantification of phosphorylated ERK1/2 by ELISA assay in HepG2 cells treated with 1 µM α-MSH for 5, 15, 30, or 60 min. **p<0.01 and ***p<0.001 versus Control (0 min). (C) Representative Western blots and quantification of phosphorylated AMPK level (normalized against total AMPK) in HepG2 cells treated with different concentrations of α-MSH (0.1 nM, 10 nM, or 1 µM) for 5 min. Values are mean ± SEM, *p<0.05 for the indicated comparisons by one-way ANOVA and Dunnet post hoc tests. n=4–6 per group in each graph.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/84782/elife-84782-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Quantification of intracellular cAMP level in HepG2 cells treated with different concentrations of LD211 (0.1 nM, 10 nM, or 1 µM) for 30 min. The adenylyl cyclase activator forskolin (10 µM) was used as a positive control. (B and C) Quantification of phosphorylated ERK1/2 and c-Jun N-terminal kinase (JNK) by ELISA assays in HepG2 cells treated with different concentrations of LD211 (0.1 nM, 10 nM, or 1 µM) for 10 min. (D) Representative Western blots and quantification of phosphorylated AMPK level (p-AMPK normalized against total AMP-activated protein kinase (AMPK)) in HepG2 cells treated with 1 µM LD211 for 5, 15, 30, or 60 min. (E) Quantification of free cholesterol content using filipin staining in HepG2 cells treated with different concentrations of LD211 (0.1 nM, 10 nM, or 1 µM) for 24 hr in the presence or absence of the AMPK inhibitor dorsomorphin (1 µM). Values are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 for the indicated comparisons by one-way ANOVA and Dunnet post hoc tests. n=4–6 per group in each graph.
 
 To verify the dependence of the observed effects on MC1-R activation, we repeated the signaling experiments using LD211 as a selective MC1-R agonist. LD211 had no effect on cAMP level (Figure 7—figure supplement 2) but reduced the phosphorylation level of ERK1/2 and JNK (Figure 7—figure supplement 2) and induced phosphorylation of AMPK (Figure 7—figure supplement 2 and Figure 7—figure supplement 2—source data 1), thus closely matching the phenotype of α-MSH-treated cells. Furthermore, we observed that AMPK inhibition with dorsomorphin completely abolished the cholesterol-lowering effect of LD211 (Figure 7—figure supplement 2). Collectively, the results demonstrate that α-MSH evokes multiple signaling pathways and that the effects of α-MSH on cholesterol metabolism are not reliant on one single pathway.
 
@@ -99,37 +163,207 @@ In conclusion, our study uncovers a novel role for MC1-R signaling in hepatic ch
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All experiments were performed on adult (3–6 months) female mice. Mice were housed in groups of littermates on a 12 hr light/dark cycle. The numbers of mice studied in each experiment are given in the figure legends. Sample sizes were empirically determined based on previous experience with the experimental models. Where possible, experiments were conducted and analyzed by blinded researchers. Mice were maintained on a regular chow diet (# 2916 C, Teklad Global diet, Envigo) for the entire experimental duration unless otherwise stated. In each experiment, mice were euthanized via CO2 asphyxiation, blood was withdrawn, and whole liver was excised and weighed. The experiments were approved by the local ethics committee (Animal Experiment Board in Finland, License Numbers: ESAVI/6280/04.10.07.2016 and ESAVI/1260/2020) and conducted in accordance with the institutional and national guidelines for the care and use of laboratory animals.
 
 Eight-week-old C57BI/6 J mice (Janvier Labs, France) were fed a regular chow diet or Western-type diet (RD Western Diet, D12079B, Research Diets Inc, NJ, USA) for 12 weeks and used for the quantification of Mc1r mRNA and protein levels in the liver. In addition, hepatocyte-specific MC1-R knock-out mice (Mc1r LKO) were generated by breeding mice homozygous for a floxed Mc1r allele (Mc1rfl/fl mice, the Jackson Laboratory, strain #029239) (Takeo et al., 2016) with transgenic AlbCre/+ mice (B6N.Cg-Speer6-ps1Tg(Alb-cre)21Mgn/J, the Jackson Laboratory, strain #018961) (Postic et al., 1999). Age-matched Mc1rfl/fl and Mc1rfl/+ AlbCre/+ mice were used as controls. Mice were weighed once a week during a monitoring period of 8 weeks (from 8 to 16 weeks of age). A separate cohort of 8-week-old Mc1rfl/fl and Mc1r LKO mice were put on a Western-type diet (RD Western Diet, D12079B) for 12 weeks. Body composition was determined at the start and end of the 8- or 12 week monitoring period by quantitative nuclear magnetic resonance (NMR) scanning (EchoMRI-700, Echo Medical Systems, Houston, TX, USA). At the end of the experiment, genomic DNA samples from the liver were genotyped for the recombined allele using the following primers: ACC ACT GCG TGC TAT CCT G (Mc1r 5’forward), ACC CCT TCC CTT GAG GAG T (Mc1r 5’ reverse), and GAA CTC TGA GGT CAC TAT TTT CTG GAG A (Mc1r 3’ reverse).
 
-## RNA sequencing data analysis
+### RNA sequencing data analysis
 
 RNA-sequencing data deposited in the Gene Expression Omnibus (GSE120064) was used to study MC1R expression in human liver biopsy samples from patients diagnosed with NAFLD (n=51) or NASH (n=155) and healthy obese control cases (n=10) without any biochemical or histological evidence or NAFLD (Govaere et al., 2020). Raw data were processed using FIMM-RNAseq data analysis workflow (version 2.0.7) (Kangas et al., 2022). Raw reads were preprocessed using Trim Galore (version 0.6.6). Preprocessed reads were aligned to the reference genome GRCh39 (release 93) from Ensembl. Gene count data was produced using Subreads (version 2.0.1) (Liao et al., 2013). Downstream data analysis was performed using R (version 4.2.0; https://www.r-project.org/) package edgeR (version 3.40.2) (Robinson et al., 2010). Low gene counts were removed using edgeR’s default parameters. Gene counts were normalized using the trimmed mean of M values (TMM) method and expressed as log2 RPKM (reads per kilobase of exon per million reads mapped) values.
 
-## Cell culture
+### Cell culture
 
 The HepG2 cell line was purchased from ATCC (American Type Culture Collection, Rockville, MD, USA; HB-8065; authenticated by STR profiling; mycoplasma contamination not detected) and maintained in DMEM (Dulbecco’s modified Eagle’s medium; Sigma-Aldrich) supplemented with 10% (v/v) heat-inactivated fetal bovine serum (FBS; Gibco), 100 U/ml penicillin (Gibco), 100 µg/ml streptomycin (Gibco) at 37 °C in a humid atmosphere with 5% CO2. To study the regulation of MC1-R expression, HepG2 cells were serum-deprived (0.5% FBS) for 16 h and thereafter treated with 200 µg/ml LDL (CliniSciences), 10 µM atorvastatin (Sigma-Aldrich) or 500 µM palmitic acid (Sigma-Aldrich) for 1, 3, 6, or 24 hr. To study the effects of melanocortin system activation, cells were seeded on 12- or 24-well plates and treated with the non-selective MC-R agonist α-MSH (abcam, # ab120189) or the selective MC1-R agonist LD211 (Doedens et al., 2010) (compound 28 in the original publication), as indicated in the figure legends.
 
-## Histology, immunohistochemistry, and immunofluorescence staining
+### Histology, immunohistochemistry, and immunofluorescence staining
 
 A transverse piece of the left lobe was fixed in 10% formalin overnight followed by embedding in paraffin. Four µm-thick serial sections were stained with hematoxylin and eosin (H&E), Picrosirius Red (abcam, # ab150681), or used for MC1-R immunohistochemistry as previously described (Rinne et al., 2017; Rinne et al., 2015). Briefly, sections were incubated in 10 mM sodium citrate buffer (pH 6) for 20 min in a pressure cooker for antigen retrieval. Thereafter, sections were quenched in 1% H2O2 for 10 min and blocked in 5% normal horse serum containing 1% BSA. After blocking, sections were incubated overnight with a primary antibody against MC1-R (Elabscience, Texas, USA, # E-AB-15765) followed by biotinylated horseradish peroxidase-conjugated secondary antibody incubation and detection with diaminobenzidine (ABC kit, Vector Labs, Burlingame, USA). For isotype control, a consecutive heart section was treated similarly except that the primary MC1-R antibody was replaced by purified normal rabbit IgG (Novus Biologicals, Littleton, CO, USA, # NB810-56910). For immunofluorescence, liver sections were incubated overnight with antibodies against MC1-R (Elabscience) and serum albumin (Bioss Antibodies, # BSM-0945M), cytokeratin 19 (CK-19, Novus Biologicals, # NBP2-44827), CD31 (R&D Systems, # AF3628), or Mac-2 (Cedarlane labs, # CL8942AP) followed by detection with fluorochrome-conjugated secondary antibodies (anti-rabbit Alexa Fluor 647 and anti-mouse, anti-rat or anti-goat Alexa Fluor 488, Invitrogen). To visualize hepatic lipid content, a transverse piece of the left liver lobe was embedded in O.C.T. compound (Tissue-Tek), cryosectioned and stained with Oil Red O. Sections were counterstained with hematoxylin (CarlRoth) or DAPI (Fluoroshield mounting medium, abcam), cover-slipped and then scanned with Pannoramic 250 or Pannoramic Midi digital slide scanner (3DHISTECH Kft, Budapest, Hungary).
 
-## RNA isolation, cDNA synthesis, and quantitative RT-PCR
+### RNA isolation, cDNA synthesis, and quantitative RT-PCR
 
 HepG2 cell samples were collected into QIAzol Lysis Reagent and total RNA was extracted using Direct-zol RNA Miniprep (Zymo Research, CA, USA). Liver samples were first homogenized in QIAzol Lysis Reagent (Qiagen) using the Qiagen TissueLyser LT Bead Mill (QIAGEN, Venlo, Netherlands). Total RNA from each sample was extracted and reverse-transcribed to cDNA with PrimeScript RT reagent kit (Takara Clontech) according to the manufacturer’s instructions. The RNA quality and concentration were evaluated by Nanodrop. Quantitative real-time polymerase chain reaction (RT-PCR) was performed using SYBR Green protocols (Kapa Biosystems, MA, USA) on a real-time PCR detection system (Applied Biosystems 7300 Real-Time PCR system). Each sample was run in duplicate. Target gene expression was normalized to the geometric mean of two housekeeping genes (β-actin and ribosomal protein S29 or GAPDH) using the delta-Ct method and results are presented as relative transcript levels (2-ΔΔCt). Primer sequences are presented in Tables 1 and 2.
 
-## Immunoblotting
+**Table 1.**
+ Quantitative RT-PCR primers for mouse genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene nameAccession number</th>
+      <th>5’–3’ primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ActbNM_007393.5</td>
+      <td>Forward: tccatcatgaagtgtgacgtReverse: gagcaatgatcttgatcttca</td>
+    </tr>
+    <tr>
+      <td>Akr1d1NM_145364.2</td>
+      <td>Forward: gaaaagatagcagaagggaaggtReverse: gggacatgctctgtattccataa</td>
+    </tr>
+    <tr>
+      <td>BsepNM_021022.3</td>
+      <td>Forward: aagctacatctgccttagacacagaaReverse: caatacaggtccgaccctctct</td>
+    </tr>
+    <tr>
+      <td>Ccl2NM_011333.3</td>
+      <td>Forward: aggtccctgtcatgcttctgReverse: aaggcatcacagtccgagtc</td>
+    </tr>
+    <tr>
+      <td>Col1a1NM_007742.4</td>
+      <td>Forward: gctcctcttaggggccactReverse: ccacgtctcaccattgggg</td>
+    </tr>
+    <tr>
+      <td>Cyp7a1NM_007824.2</td>
+      <td>Forward: gatcctctgggcatctcaagReverse: agaggctgctttcattgctt</td>
+    </tr>
+    <tr>
+      <td>Cyp7b1NM_007825.4</td>
+      <td>Forward: gaaaactcttcaaaggcaacatggReverse: actggaaagggttcagaacaaatg</td>
+    </tr>
+    <tr>
+      <td>Cyp8b1NM_010012.3</td>
+      <td>Forward: gccttcaagtatgatcggttcctReverse: gatcttcttgcccgacttgtaga</td>
+    </tr>
+    <tr>
+      <td>Cyp27a1NM_024264.5</td>
+      <td>Forward: gcctcacctatgggatcttcaReverse: tcaaagcctgacgcagatg</td>
+    </tr>
+    <tr>
+      <td>FxrNM_001163700.1</td>
+      <td>Forward: tccggacattcaaccatcacReverse: tcactgcacatcccagatctc</td>
+    </tr>
+    <tr>
+      <td>Hnf4aNM_008261.3</td>
+      <td>Forward: accaagaggtccatggtgtttReverse: gtgccgagggacgatgtag</td>
+    </tr>
+    <tr>
+      <td>Hsd3b7NM_133943.2</td>
+      <td>Forward: gggagctgcgtgtctttgaReverse: gtggatggtctttggactggc</td>
+    </tr>
+    <tr>
+      <td>Il1bNM_008361.4</td>
+      <td>Forward: tgtaatgaaagacggcacaccReverse: tcttctttgggtattgcttgg</td>
+    </tr>
+    <tr>
+      <td>Il6NM_031168.2</td>
+      <td>Forward: ggccttccctacttcacaagReverse: atttccacgatttcccagag</td>
+    </tr>
+    <tr>
+      <td>Lrh1NM_030676.3</td>
+      <td>Forward: tgggaaggaagggacaatcttReverse: cgagactcaggaggttgttgaa</td>
+    </tr>
+    <tr>
+      <td>Abcc3 (Mrp3)NM_029600.4</td>
+      <td>Forward: ctgggtcccctgcatctacReverse: gccgtcttgagcctggataac</td>
+    </tr>
+    <tr>
+      <td>Abcc4 (Mrp4)NM_001163676.1</td>
+      <td>Forward: ggcactccggttaagtaactcReverse: tgtcacttggtcgaatttgttca</td>
+    </tr>
+    <tr>
+      <td>NtcpNM_011387.2</td>
+      <td>Forward: gaagtccaaaaggccacactatgtReverse: acagccacagagagggagaaag</td>
+    </tr>
+    <tr>
+      <td>Gene nameAccession number</td>
+      <td>5’–3’ primer sequence</td>
+    </tr>
+    <tr>
+      <td>Slc51a (Osta)NM_145932.3</td>
+      <td>Forward: aggcaggactcatatcaaacttgReverse: tgagggctatgtccactggg</td>
+    </tr>
+    <tr>
+      <td>S29NM_009093.2</td>
+      <td>Forward: atgggtcaccagcagctctaReverse: agcctatgtccttcgcgtact</td>
+    </tr>
+    <tr>
+      <td>Nr0b2(Shp)NM_011850.3</td>
+      <td>Forward: tgggtcccaaggagtatgcReverse: gctccaagacttcacacagtg</td>
+    </tr>
+    <tr>
+      <td>Stard1NM_011485.5</td>
+      <td>Forward: atgttcctcgctacgttcaagReverse: cccagtgctctccagttgag</td>
+    </tr>
+    <tr>
+      <td>Tgfb1NM_011577.2</td>
+      <td>Forward: ccgcaacaacgccatctatgReverse: cccgaatgtctgacgtattgaag</td>
+    </tr>
+    <tr>
+      <td>TnfNM_013693.3</td>
+      <td>Forward: ctgaacttcggggtgatcggReverse: ggcttgtcactcgaattttgaga</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Quantitative RT-PCR primers for human genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene nameAccession number</th>
+      <th>5’–3’ primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACTA1NM_001100.4</td>
+      <td>Forward: aggtcatcaccatcggcaacgaReverse: gctgttgtaggtggtctcgtga</td>
+    </tr>
+    <tr>
+      <td>ACTA2NM_001613.4</td>
+      <td>Forward: ctatgcctctggacgcacaactReverse: cagatccagacgcatgatggca</td>
+    </tr>
+    <tr>
+      <td>ACTBNM_001101.5</td>
+      <td>Forward: caccattggcaatgagcggttcReverse: aggtctttgcggatgtccacgt</td>
+    </tr>
+    <tr>
+      <td>COL1A1NM_000088.4</td>
+      <td>Forward: gagggccaagacgaagacatcReverse: cagatcacgtcatcgcacaac</td>
+    </tr>
+    <tr>
+      <td>GAPDHNM_002046.7</td>
+      <td>Forward: tcaaggctgagaacgggaagReverse: cgccccacttgattttggag</td>
+    </tr>
+    <tr>
+      <td>IL6NM_00600.5</td>
+      <td>Forward: gatgagtacaaaagtcctgatccaReverse: ctgcagccactggttctgt</td>
+    </tr>
+    <tr>
+      <td>LDLRNM_000527.5</td>
+      <td>Forward: ccacggtggagatagtgacaReverse: ctcacgctactgggcttctt</td>
+    </tr>
+    <tr>
+      <td>SCARB1NM_005505.5</td>
+      <td>Forward: ctggcagaagcggtgactReverse: cagagcagttcatggggatt</td>
+    </tr>
+    <tr>
+      <td>TGFB1NM_000660.7</td>
+      <td>Forward: tacctgaacccgtgttgctctcReverse: gttgctgaggtatcgccaggaa</td>
+    </tr>
+    <tr>
+      <td>TNFNM_000594.4</td>
+      <td>Forward: cctctctctaatcagccctctgReverse: gaggacctgggagtagatgag</td>
+    </tr>
+  </tbody>
+</table>
+
+### Immunoblotting
 
 Liver and HepG2 samples were lysed in RIPA buffer (50 mM NaCl, 1% Triton X-100, 0.5% Sodium deoxycholate, 0.1% SDS, pH 8.0) supplemented with protease and phosphatase inhibitor cocktail (ThermoFisher, #A32961). Liver samples were additionally homogenized using the Qiagen TissueLyser LT Bead. Equal amounts (30 µg) of total protein were separated by 10% SDS-polyacrylamide gel electrophoresis (SDS-PAGE) and transferred onto nitrocellulose membranes (GE Healthcare). After blocking with Tris-Buffered Saline (Sigma-Aldrich) containing 0.1% Tween 20 detergent (Sigma-Aldrich) and 5% skimmed milk (Carl Roth) for 1 hr at room temperature (RT), membranes were incubated with specific primary antibodies for MC1-R (Alomone Labs, #AMR-025), LDLR (Novus Biologicals, Littleton, CO, USA, #NBP1-06709), SR-BI (NovusBio, #NB400-104), SREBP2 (Novus Biologicals, #NB100-74543), HMGCR (Novus Biologicals, #NBP2-66888), DHCR7 (abcam, #ab103296), MRP4 (Cell Signaling Tech, Frankfurt, DE, #12857), StAR (Cell Signaling Tech, #8449), CYP8B1 (St John’s Laboratory Ltd, #STJ92607), phospho-AMPKα (Cell Signaling Tech, #2535), and AMPKα (Cell Signaling Tech, #2532) over-night at +4 °C. Next day, membranes were washed and incubated with Horseradish peroxidase (HRP)-conjugated secondary antibodies (Cell Signaling Tech) for 1 hr at RT. Proteins were visualized using a chemiluminescence (ECL) kit (Millipore, MA, USA). Target protein expression was normalized to β-actin (Sigma-Aldrich, #2066) or vinculin (Bio-Rad, #MCA465GA) to correct for loading, and band densities were analyzed using ImageJ software (NIH, Bethesda, MD, USA).
 
-## Plasma and liver extract analyses
+### Plasma and liver extract analyses
 
 Plasma samples were obtained from EDTA-anticoagulated whole blood after centrifugation. Plasma total cholesterol and triglyceride concentrations were determined using enzymatic colorimetric assays (CHOD-PAP and GPO-PAP, mtiDiagnostics, Idstein, Germany) according to the manufacturer’s protocols. For the determination of hepatic lipid content, liver samples (~100 mg) were homogenized in 500 µl of PBS with 0.1% NP-40 (Abcam) using TissueLyser and then centrifuged to remove insoluble components (Nuutinen et al., 2018; Rinne et al., 2018). Cholesterol and triglycerides concentrations were quantified in the liver homogenates using CHOD-PAP and GPO-PAP reagents.
 
-## Bile acid measurements
+### Bile acid measurements
 
 Bile acids (BA) were measured in plasma, liver, and fecal samples. BAs were extracted and analyzed by an ultra-high-performance liquid chromatography tandem-mass spectrometry method (UHPLC-MS/MS) as previously described (Jäntti et al., 2014). The order of the samples was randomized before sample preparation. The BAs analysed were Litocholic acid (LCA), 12-oxo-litocholic acid (12-oxo-LCA), Chenodeoxycholic acid (CDCA), Deoxycholic acid (DCA), Hyodeoxycholic acid (HDCA), Ursodeoxycholic acid (UDCA), Dihydroxycholestanoic acid (DHCA), 7-oxo-deoxycholic acid (7-oxo-DCA), 7-oxo-hyocholic acid (7-oxo-HCA), Hyocholic acid(HCA), β-Muricholic acid (β-MCA), Cholic acid (CA), ω/α-Muricholic acid (ω/α-MCA), Glycolitocholic acid (GLCA), Glycochenodeoxycholic acid (GCDCA), Glycodeoxycholic acid (GDCA), Glycohyodeoxycholic acid (GHDCA), Glycoursodeoxycholic acid (GUDCA), Glycodehydrocholic acid (GDHCA), Glycocholic acid (GCA), Glycohyocholic acid (GHCA), Taurolitocholic acid (TLCA), Taurochenodeoxycholic acid (TCDCA), Taurodeoxycholic acid (TDCA), Taurohyodeoxycholic acid (THDCA), Tauroursodeoxycholic acid (TUDCA), Taurodehydrocholic acid (TDHCA), Tauro-α-muricholic acid (TαMCA), Tauro-β-muricholic acid (TβMCA), Taurocholic acid (TCA), Trihydroxycholestanoic acid (THCA), and Tauro-ω-muricholic acid (TωMCA).
 
@@ -143,26 +377,26 @@ The LC separation was performed on a Sciex Exion AD 30 (AB Sciex Inc, Framingham
 
 The mass spectrometer used for this method was a Sciex 5500 QTrap mass spectrometer operating in scheduled multiple reaction monitoring mode in negative mode. The ion source gas 1 and 2 were both 40 psi. The curtain gas was 25 psi, the CAD gas was 12 and the temperature was 650 °C. The spray voltage was 4500 V. Data processing was performed on Sciex MultiQuant.
 
-## Filipin staining of cellular free cholesterol
+### Filipin staining of cellular free cholesterol
 
 HepG2 cells were seeded (40,000 cells/well) on 96-well plates (PhenoPlate, PerkinElmer) and grown until the cells reached 70% confluency. Thereafter, cells were first serum-deprived (0.5% FBS) for 16 hr, and then treated with either α-MSH or LD211 for 24 hr. After the treatment, cells were washed with PBS and fixed with 4% paraformaldehyde (Sigma-Aldrich) for 15 min at room temperature. Cells were subsequently washed with PBS and incubated with 1.5 mg/ml glycine (Sigma-Aldrich, 10 min at RT) to quench unreacted paraformaldehyde followed by washing with PBS. Cells were stained with 50 ug/ml of Filipin (Sigma-Aldrich, #F9765) for 1 hr at 37 °C and washed with PBS. Fluorescence signal was measured with EnSight Multimode Plate Reader (PerkinElmer) with the 360 nm excitation and 480 emission wavelengths.
 
-## LDL and HDL uptake assay
+### LDL and HDL uptake assay
 
 HepG2 cells were seeded (40,000 cells/well) on 96-well plates (PhenoPlate, PerkinElmer), serum-deprived (0.5% FBS) for 16 hr and then treated with α-MSH or LD211 for 18 hr at 37 °C. After the treatment, cells were washed with PBS and incubated with fluorescently-labeled HDL (Dil-HDL, 20 µg/ml, CliniSciences) or LDL (Dil-LDL, 10 µg/ml, CliniSciences) for 4 hr at 37 °C. After the incubation, cells were again washed with PBS and the fluorescence signal was measured with EnSight Multimode Plate Reader (PerkinElmer) with the 549 nm excitation and 565 emission wavelengths and normalized against cell confluency.
 
-## Flow cytometric analysis of cell surface LDLR expression
+### Flow cytometric analysis of cell surface LDLR expression
 
 HepG2 cells were treated as indicated in the figure legends, washed with PBS, and detached using EDTA. To quantify the expression of LDLR on the cell surface, HepG2 cells were stained with PE-conjugated anti-human LDLR antibody (clone C7, BD Biosciences) and then analyzed with LSR Fortessa (BD Biosciences) and FlowJo software (FlowJo, LLC, Ashland, USA).
 
-## Cyclic AMP determination
+### Cyclic AMP determination
 
 To measure intracellular cAMP concentrations, HepG2 cells were pretreated with 3-isobutyl-1-methylxanthine (0.1 mM, IBMX, Sigma-Aldrich) for 30 min and then stimulated with α-MSH or the selective MC1-R agonist LD211 (0.1 nM, 10 nM or 1 µM) for 30 min. Cells were thereafter lysed with 0.1 M HCl and assayed for cAMP levels with a commercial kit (Cyclic AMP Select ELISA kit, Cayman Chemical, #501040) according to the manufacturer’s instructions. Results were normalized against total protein concentrations (Pierce BCA Protein Assay Kit, Thermo Fisher) and expressed as a percentage of control samples that were left untreated.
 
-## Enzyme-linked immunosorbent assays (ELISA) of phosphorylated ERK1/2 and JNK
+### Enzyme-linked immunosorbent assays (ELISA) of phosphorylated ERK1/2 and JNK
 
 HepG2 cells were stimulated with α-MSH or the selective MC1-R agonist LD211 as indicated in the figure legends. Cells were thereafter lysed with Lysis Buffer #6 (R&D Systems) and assayed for the expression levels of phospho-ERK1 (T202/Y204)/ERK2 (T185/Y187) and phospho-JNK (T183/Y185 for JNK1/2 and T221/Y223 for JNK3) with commercial kits (DuoSet IC ELISA, R&D Systems, # DYC1018B and # DYC1387B) according to manufacturer’s instructions. Results were normalized against total protein concentrations (Pierce BCA Protein Assay Kit, ThermoFisher).
 
-## Statistics
+### Statistics
 
 All experiments were performed at least three independent times. Statistical analyses were performed with GraphPad Prism 9 software (La Jolla, CA, USA). Statistical significance between the experimental groups was determined by two-tailed, unpaired Student’s t-test or one-way or two-way ANOVA followed by Dunnet post hoc tests. The D’Agostino and Pearson omnibus normality test method was utilized to check the normality of the data. Possible outliers in the data sets were identified using the regression and outlier removal (ROUT) method of Q-level of 1%. Data are expressed as mean ± standard error of the mean (SEM). Results were considered significant for p<0.05.

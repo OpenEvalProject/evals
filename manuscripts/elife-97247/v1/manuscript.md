@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/008s83205 Department of Pathology, Heersink School of Medicine, The University of Alabama at Birmingham Birmingham United States
-2. https://ror.org/008s83205 Division of Molecular and Cellular Pathology, Department of Pathology, The University of Alabama Birmingham United States
+1. Department of Pathology, Heersink School of Medicine, The University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+2. Division of Molecular and Cellular Pathology, Department of Pathology, The University of Alabama Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
 
 † Corresponding author
 

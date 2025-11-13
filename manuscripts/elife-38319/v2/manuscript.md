@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.38319.001 Calcium (Ca 2+ ) dysregulation is a hallmark of heart failure and is characterized by impaired Ca 2+ sequestration into the sarcoplasmic reticulum (SR) by the SR-Ca 2+ -ATPase (SERCA). We recently discovered a micropeptide named DWORF ( DW arf O pen R eading F rame) that enhances SERCA activity by displacing phospholamban (PLN), a potent SERCA inhibitor. Here we show that DWORF has a higher apparent binding affinity for SERCA than PLN and that DWORF overexpression mitigates the contractile dysfunction associated with PLN overexpression, substantiating its role as a potent activator of SERCA. Additionally, using a well-characterized mouse model of dilated cardiomyopathy (DCM) due to genetic deletion of the muscle-specific LIM domain protein (MLP), we show that DWORF overexpression restores cardiac function and prevents the pathological remodeling and Ca 2+ dysregulation classically exhibited by MLP knockout mice. Our results establish DWORF as a potent activator of SERCA within the heart and as an attractive candidate for a heart failure therapeutic.
+Calcium (Ca2+) dysregulation is a hallmark of heart failure and is characterized by impaired Ca2+ sequestration into the sarcoplasmic reticulum (SR) by the SR-Ca2+-ATPase (SERCA). We recently discovered a micropeptide named DWORF (DWarf Open Reading Frame) that enhances SERCA activity by displacing phospholamban (PLN), a potent SERCA inhibitor. Here we show that DWORF has a higher apparent binding affinity for SERCA than PLN and that DWORF overexpression mitigates the contractile dysfunction associated with PLN overexpression, substantiating its role as a potent activator of SERCA. Additionally, using a well-characterized mouse model of dilated cardiomyopathy (DCM) due to genetic deletion of the muscle-specific LIM domain protein (MLP), we show that DWORF overexpression restores cardiac function and prevents the pathological remodeling and Ca2+ dysregulation classically exhibited by MLP knockout mice. Our results establish DWORF as a potent activator of SERCA within the heart and as an attractive candidate for a heart failure therapeutic.
 
 ## Introduction
 
@@ -37,13 +37,21 @@ In this study, we investigate the molecular determinants of the DWORF-SERCA regu
 
 ## Results
 
-## SERCA has a higher apparent affinity for DWORF than for PLN and interacts with both proteins in a 1:1 stoichiometry
+### SERCA has a higher apparent affinity for DWORF than for PLN and interacts with both proteins in a 1:1 stoichiometry
 
 The interaction of PLN with SERCA has been extensively studied (Kranias and Hajjar, 2012; MacLennan and Kranias, 2003; Hou et al., 2008; Hou and Robia, 2010; Kelly et al., 2008; Kimura et al., 1998; Robia et al., 2007). In contrast, due to the very recent discovery of DWORF, very little is known about the SERCA/DWORF regulatory complex. To examine the apparent binding affinity and stoichiometry of SERCA in complex with DWORF in live cell membranes, we performed fluorescence resonance energy transfer (FRET) experiments using transfected AAV-293 cells. We sampled large populations of cells (~1000 cells per experiment) coexpressing mCerulean (Cer)-SERCA2a and either yellow fluorescent protein (YFP)-DWORF or –PLN and compared each cell’s FRET efficiency (Cer excitation, YFP emission) with its YFP-DWORF or –PLN fluorescence intensity, which is an index of protein expression (Hou et al., 2008; Kelly et al., 2008). For both DWORF and PLN, FRET efficiency increased with increasing protein expression, a relationship that can be approximated by a hyperbolic fit of the form y=(FRETmax)x/(Kd +x) (Hou et al., 2008) (Figure 1—figure supplement 1A). FRETmax is defined as the maximal FRET and represents the intrinsic FRET of the bound complex, while Kd represents the protein concentration at which half-maximal FRET is achieved [apparent dissociation constant; in arbitrary units (AU)]. Multiple independent experiments were performed and representative data are shown in Figure 1—figure supplement 1A. The mean PLN-SERCA2a FRETmax value was 29.9 ± 2.1%, which is similar to previous results (Hou et al., 2008; Hou and Robia, 2010; Kelly et al., 2008), while the FRETmax value for DWORF-SERCA2a was 16.3 ± 1.7% (Figure 1—figure supplement 1B). This difference in FRETmax values is consistent with an increased FRET distance for the DWORF-SERCA2a complex compared to PLN-SERCA2a due to the shorter cytoplasmic domain of DWORF (Bidwell, 2012). Importantly, SERCA2a exhibited a higher apparent affinity for DWORF than for PLN as evidenced by a reduction in Kd (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig1-v2.jpg)
+
+**Figure 1.:** (A) The apparent affinity of SERCA for PLN and DWORF was assessed by FRET from Cer-SERCA2a to YFP-PLN or YFP-DWORF (Cer excitation, YFP emission). Data are expressed as mean Kd values ± SD for n = 4 independent experiments with ~1000 cells analyzed per experiment. A lower Kd value indicates a higher apparent affinity for SERCA. Statistical comparisons between groups were evaluated by Student’s t-test. p-value ***p<0.005. AU, arbitrary units. (B) Progressive acceptor sensitive photobleaching of YFP-PLN (black) and YFP-DWORF (blue) results in a linear donor vs. acceptor relationship with Cer-SERCA indicating that the stoichiometry of the regulatory complex is 1:1 for both peptides. (C–E) Homo-oligomerization of DWORF with itself (C) or hetero-oligomerization with PLN (D) was not detected by acceptor photobleaching experiments, while PLN-PLN FRET (E) showed the expected high-order oligomerization that has been previously described. These data indicate that DWORF exists as a monomer. Progressive acceptor photobleaching experiments (B–E) are plotted as mean ± SE. F/F0, fluorescence intensity ratio.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative FRET data showing that FRET from Cer-SERCA2a to YFP-PLN (black) and YFP-DWORF (red) increases with protein concentration toward a maximum (Cer excitation, YFP emission). (B) Summary of FRETmax values for SERCA-PLN and SERCA-DWORF obtained by fitting hyperbolic curves to pooled data. Data are expressed as mean ±SD for n = 4 independent experiments with ~1000 cells analyzed per experiment. Statistical comparisons between groups were evaluated by Student’s t-test. p-value **p<0.01. (C, D) Progressive acceptor sensitive photobleaching of YFP-PLN (C) and YFP-DWORF (D) results in an increase in Cer-SERCA fluorescence indicating FRET. Photobleaching is initiated at the arrow. Data are plotted as mean ±SE.
+
 Additionally, we performed progressive acceptor photobleaching experiments to determine the stoichiometry of the SERCA regulatory complexes with PLN or DWORF. We observed a linear increase in donor fluorescence with decreasing acceptor fluorescence, consistent with a 1:1 stoichiometry of the PLN:SERCA and DWORF:SERCA complexes (Figure 1B and Figure 1—figure supplement 1C,D). PLN has been well described to exist as both a monomer, which is a potent inhibitor of SERCA, and a less inhibitory pentamer (Kimura et al., 1998). The modulation of the PLN monomer/pentamer ratio is an important determinant of SERCA activity and therefore cardiac contractility. We performed additional progressive acceptor photobleaching experiments to determine if DWORF is capable of homo-oligomerizing with itself or hetero-oligomerizing with PLN. These experiments did not detect DWORF-DWORF FRET (Figure 1C) or PLN-DWORF FRET (Figure 1D), suggesting that DWORF does not form homo- or hetero-oligomers at the concentrations achieved here, while PLN-PLN FRET experiments showed the expected high-order oligomerization that has been previously described (Figure 1E) (Kelly et al., 2008; Robia et al., 2007). These results suggest that DWORF exists as a monomer that is available for interaction with SERCA at all times.
 
-## DWORF overexpression prevents impaired Ca2+ cycling in PLN transgenic mice
+### DWORF overexpression prevents impaired Ca2+ cycling in PLN transgenic mice
 
 We previously generated DWORF transgenic (Tg) mice using the α-myosin heavy chain (αMHC) promoter to overexpress DWORF specifically in the heart (Nelson et al., 2016). Cardiomyocytes from DWORF Tg mice have a cellular phenotype that mimics that observed in PLN null mice, including an increase in peak Ca2+ transient amplitude, faster cytosolic Ca2+ decay rates, higher SR Ca2+ load and enhanced cardiomyocyte contractility (Nelson et al., 2016; Luo et al., 1994). Our previous work indicates that DWORF activates SERCA by displacing its negative regulator, PLN, and suggests that the profile of enhanced contractility in DWORF Tg animals is due to the ability of DWORF to compete PLN off of SERCA and relieve its inhibitory effects. To investigate this in vivo, we crossed our DWORF Tg mice with the well-characterized αMHC-PLN transgenic mice (PLN Tg) (Kadambi et al., 1996) to generate double transgenic (PLN/DWORF Tg) animals. Cardiomyocytes from PLN Tg animals exhibit a cellular phenotype opposite that of DWORF Tg mice, with reduced peak Ca2+ transient amplitude, slower transient decay rates, and reduced fractional shortening due to super-inhibition of SERCA (Kadambi et al., 1996). We hypothesized that overexpression of DWORF in PLN Tg mice would lead to displacement of the excess PLN from SERCA and relieve its inhibitory effects.
 
@@ -51,9 +59,25 @@ Baseline cardiac phenotyping of wild-type (WT), PLN Tg, DWORF Tg, or PLN/DWORF T
 
 To analyze the cellular phenotype of these animals, we isolated cardiomyocytes from WT, PLN Tg, DWORF Tg, and PLN/DWORF Tg mice and performed Ca2+ transient measurements while simultaneously monitoring sarcomere shortening. Consistent with previous findings (Nelson et al., 2016), we found that DWORF Tg animals had enhanced Ca2+ cycling with increased peak Ca2+ transient amplitude and faster transient decay rates (Figure 2A–C) accompanied by increased fractional shortening (Figure 2D,E). Measurements from PLN Tg cardiomyocytes also recapitulated previous findings and displayed the opposite phenotype characterized by diminished peak Ca2+ transient amplitude, slower decay rates and reduced fractional shortening, indicating a strong inhibition of SERCA activity translating into reduced cardiomyocyte contractility (Figure 2A–E) (Kadambi et al., 1996). Remarkably, cardiomyocytes isolated from PLN/DWORF Tg animals exhibited a complete prevention of impaired Ca2+ cycling associated with PLN overexpression (Figure 2A–E). PLN/DWORF Tg mice displayed a profile of enhanced Ca2+-handling almost identical to that of DWORF Tg animals, indicating that DWORF overexpression can relieve the super-inhibition of SERCA caused by overexpression of PLN.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative Ca2+ transients recorded in Fura-2 loaded cardiomyocytes from WT, PLN Tg, DWORF Tg, and PLN/DWORF Tg mice. (B) Mean peak amplitude of pacing-induced Ca2+ transients and transient decay rates (tau) (C) in Fura-2 loaded cardiomyocytes from WT, PLN Tg, DWORF Tg, and PLN/DWORF Tg mice. Transient decay rates were measured by fitting a single exponential to the decay phase of the Ca2+ transient. (D) Representative fractional shortening tracings as measured by sarcomere length during cardiomyocyte contraction. (E) Mean fractional shortening data from mice with the indicated genotypes. Data are represented as mean ±SD for n = 3 animals with 10–12 recordings per animal. Statistical comparisons between groups were evaluated by Student’s t-test. p-value *p<0.05, **p<0.01, ***p<0.005 or ****p<0.001 vs. WT and ###p<0.005 or ####p<0.001 vs. PLN Tg. (F, G) Ca2+-dependent Ca2+-uptake assays were performed using total homogenates from hearts of WT, PLN Tg, DWORF Tg, and PLN/DWORF Tg mice to directly measure SERCA affinity for Ca2+ (KCa) and SERCA activity. Representative tracings (F) and average KCa values (G) from n = 4 hearts of each genotype are represented as bar graphs (±SD). P-value *p<0.05, **p<0.01 or ***p<0.005 vs. WT and ##p<0.01 vs. PLN Tg.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Cardiac function was calculated from M-mode echocardiographic tracings of 12- to 16-week-old mice with the indicated genotypes and is represented as mean ejection fraction (A) and fractional shortening (B). M-mode images were also used to calculate cardiac dimensions and are represented as left ventricular (LV) internal diameter during maximal contraction (systole, s) (C) and relaxation (diastole, d) (D). Data are expressed as mean ±SD for n = 4–8 mice per genotype. (E) Heart weight (W) to tibia length (L) measurements from n = 4 mice per genotype. Data are represented as mean ±SD. (F) Representative hematoxylin and eosin (H and E) staining of four-chamber histological sections of 16-week-old mice with the indicated genotypes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) RNA levels of the indicated genes as quantified by qRT-PCR in 16-week-old heart tissue. Atp2a2, SERCA2a; Ryr2, ryanodine receptor 2; Cacna1c, α1C-subunit of the L-type Ca2+ channel; Casq2, calsequestrin 2. Data are normalized to 18S and presented as expression level relative to WT, mean ±SD for n = 10 mice per genotype. (B) Representative immunoblots of cardiac homogenates from mice with the indicated genotypes. PS16, phospho-serine 16 on PLN; PT17, phospho-threonine 17 on PLN; tPLN, total phospholamban; RyR2, ryanodine receptor 2; LTCC, L-type Ca2+ channel (α1C-subunit); Casq2, calsequestrin 2; GAPDH, glyceraldehyde 3-phosphate dehydrogenase. (C) Western blots for n = 9–10 mice of each genotype were quantified using ImageJ and data are normalized to GAPDH and expressed as mean ±SD relative to WT. (D) Quantification of total phospholamban and its phosphorylation status as assessed by western blot (B) and expressed as relative to WT. Western blots were quantified with ImageJ software. Phosphorylation blots (PS16 and PT17) were normalized to total PLN (tPLN). Total PLN was normalized to GAPDH. Data are expressed as mean ±SD for n = 9–10 mice per genotype. Statistical comparisons between groups were evaluated by Student’s t-test. p-value *p<0.05 or ***p<0.005 or vs. WT.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Immunoprecipitations of Myc-SERCA2a were performed on lysates of HEK293 cells co-transfected with equal amounts of HA-PLN and Myc-SERCA2a (1 µg) and increasing amounts of HA-DWORF. Western blots on input samples (bottom) and bound immunoprecipitated fractions (top) reveal that DWORF binding to SERCA2a competitively displaces PLN. (B, C) Ca2+-dependent Ca2+-uptake assays were performed using homogenates from HEK293 cells co-transfected with equal amounts of SERCA2a and PLN (1 µg) and increasing amounts of DWORF. Co-transfection of cells with PLN (dark grey line) results in a rightward shift of the Ca2+-affinity curve as compared to control cells (SERCA2a alone, black) (B). Co-transfection with increasing levels of DWORF relieves the inhibitory effect of PLN on SERCA2a in a dose-dependent manner as evidenced by a leftward shift of the affinity curve back toward control values. Cells expressing SERCA2a and DWORF in the absence of PLN do not exhibit enhanced SERCA activity (purple), indicating that DWORF exerts its’ stimulatory effect on SERCA through the displacement of PLN. (C) Mean KCa values from n = 4 separate experiments are represented as bar graphs (±SD). p-value *p<0.05, **p<0.01, ***p<0.005, or ****p<0.001 vs. Control and ##p<0.01, ###p<0.005, ####p<0.001 vs. PLN. Statistical comparisons between groups were evaluated by Student’s t test.
+
 To directly assess SERCA enzymatic activity in cardiac homogenates from WT, PLN Tg, DWORF Tg and PLN/DWORF Tg mice, we performed oxalate-supported Ca2+-dependent Ca2+-uptake measurements (Nelson et al., 2016; Bidwell and Kranias, 2016). Consistent with previously published reports, hearts over-expressing PLN showed a reduction in SERCA activity at lower concentrations of Ca2+ substrate quantified as a lower affinity of SERCA for Ca2+ (an increase in KCa) (Figure 2F,G) (Nelson et al., 2016; Kadambi et al., 1996), while DWORF Tg hearts exhibited the opposite phenotype with a significant increase in the affinity of SERCA for Ca2+ as indicated by a decrease in KCa (Figure 2F,G). SERCA activity assays performed in homogenates from PLN/DWORF Tg mice mirrored those of DWORF Tg mice, indicating that the super-inhibition of SERCA caused by PLN overexpression can be completely nullified in the presence of excess DWORF. Importantly, western blot analysis and quantitative RT-PCR performed on cardiac tissue from WT, PLN Tg, DWORF Tg, and PLN/DWORF Tg mice showed no significant differences in protein or RNA expression levels of any of the major Ca2+-handling proteins, indicating that the results observed were not due to compensatory responses (Figure 2—figure supplement 2A–D). We also analyzed the phosphorylation state of PLN to verify that our observations were not due to post-translational modifications of the protein that are known to strongly regulate its ability to inhibit SERCA and saw no significant changes amongst genotypes (Figure 2—figure supplement 2B and D) (Luo et al., 1998). Taken together, these results support previous data indicating that DWORF overexpression enhances cardiac Ca2+ cycling and contractility through displacement of PLN from SERCA, thereby relieving its inhibitory effects (Nelson et al., 2016). To further substantiate these findings, we analyzed the interaction of SERCA2a with PLN and DWORF in a heterologous expression system. HEK293 cells were co-transfected with equal amounts of Myc-tagged SERCA2a and HA-tagged PLN in the presence of increasing levels of HA-DWORF, and Myc-SERCA2a/HA-peptide interactions were assessed by Myc (SERCA2a) immunoprecipitation and western blot analysis. We observed a strong reduction in the interaction of HA-PLN with SERCA2a when co-expressed with HA-DWORF, and this occurred in a dose-dependent manner (Figure 2—figure supplement 3A). Consistent with previous findings (Nelson et al., 2016), using the same heterologous expression system we found that co-expression of DWORF with SERCA2a did not change the apparent affinity of SERCA for Ca2+, but it relieved the inhibition of PLN on SERCA in a dose-dependent manner (Figure 2—figure supplement 3B,C). These results substantiate the hypothesis that the overexpression of DWORF could be a powerful means of enhancing SERCA activity via the displacement of PLN and therefore may enhance cardiac contractility in the setting of heart failure and prevent the progression of the disease.
 
-## DWORF overexpression prevents cardiac dysfunction in MLP KO mice
+### DWORF overexpression prevents cardiac dysfunction in MLP KO mice
 
 To directly assess the potential of DWORF as a therapeutic for heart failure, we crossed our DWORF Tg mice with the well-characterized MLP KO mouse model of DCM. The MLP protein is expressed in cardiac and skeletal muscle and is predominantly localized adjacent to the Z-disc where it plays a structural role and also acts as a stress signaling molecule that transduces mechanical stress into biochemical signals (Arber et al., 1997; Arber et al., 1994; Heineke et al., 2005; Knöll et al., 2002). The adult-onset DCM phenotype exhibited by MLP KO mice mimics that of human DCM and is characterized by progressive dilation of all four cardiac chambers, ventricular wall thinning, a reduction in cardiac contractility and elongation of action potential duration (Arber et al., 1997; Hoshijima et al., 2006). Notably, defects in SR Ca2+ cycling have been shown to be important determinants of cardiac dysfunction and the transition to heart failure in MLP KO mice (Minamisawa et al., 1999). We have previously shown that DWORF mRNA and protein levels are dramatically reduced in human ischemic heart failure and in mouse models of cardiovascular disease, indicating that a decrease in DWORF expression may contribute to the Ca2+ dysregulation that drives cardiac decompensation (Nelson et al., 2016). We measured DWORF expression in cardiac tissue from WT and MLP KO mice and found a reduction in both protein and RNA levels in MLP KO hearts (Figure 3A,B), suggesting that loss of DWORF expression may contribute to the DCM phenotype.
 
@@ -65,9 +89,98 @@ To evaluate whether DWORF overexpression provides cardioprotection in MLP KO mic
 
 Diastolic dysfunction coexists in human patients with dilated cardiomyopathy, and it has previously been shown that the progression to heart failure in MLP KO mice may be anticipated by diastolic cardiac dysfunction (Lorenzen-Schmidt et al., 2005). We evaluated LV diastolic function in our mice by pulse-wave Doppler echocardiography of transmitral valve blood flow and by mitral annular tissue Doppler (Table 1). We found that the E/A ratio (ratio of the early [E] to late [A] ventricular filling velocities, Figure 3H) and E/E’ ratio (ratio of early filling [E] to early diastolic mitral annular velocity [E’], Figure 3I) of MLP KO and MLP/DWORF dKO were significantly greater than WT animals. In MLP KO/DWORF Tg mice, both the E/A ratio (Figure 3H) and E/E’ ratio (Figure 3I) were indistinguishable from those of WT mice, indicating that DWORF overexpression ameliorates the diastolic dysfunction observed in MLP KO mice (Figure 3H and I and Table 1). Collectively, these results indicate that the restoration of SERCA activity and enhancement of Ca2+ cycling in MLP KO mice via DWORF overexpression is sufficient to prevent the onset of DCM in MLP KO mice and their subsequent transition to heart failure.
 
-## DWORF overexpression prevents pathological remodeling in MLP KO mice
+**Table 1.**
+ Echo-Doppler assessment of left ventricular diastolic function in the different experimental groups of mice.Data are represented as mean ±SD for n = 3–5 mice per genotype. p-value *p<0.05, **p<0.01 or ***p<0.005 vs. WT and #p<0.05 vs. MLP KO. Statistical comparisons between groups were evaluated by Student’s t-test. Abbreviation used: E, peak Doppler blood inflow velocity across mitral valve during early diastole; A, peak Doppler blood inflow velocity across mitral valve during late diastole; E’, peak tissue Doppler of myocardial relaxation velocity at mitral valve annulus during early diastole; A’, peak tissue Doppler of myocardial relaxation velocity at mitral valve annulus during late diastole; HR, heart rate; bpm, beats per minute.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>E mm/s</th>
+      <th>A mm/s</th>
+      <th>E' mm/s</th>
+      <th>A' mm/s</th>
+      <th>E/A</th>
+      <th>E/E'</th>
+      <th>HR bpm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>569.7 ± 39.0</td>
+      <td>408.0 ± 39.2</td>
+      <td>25.6 ± 2.4</td>
+      <td>10.7 ± 1.8</td>
+      <td>1.4 ± 0.1</td>
+      <td>22.3 ± 0.8</td>
+      <td>465.7 ± 22.0</td>
+    </tr>
+    <tr>
+      <td>DWORF KO</td>
+      <td>591.5 ± 22.1</td>
+      <td>432.1 ± 61.8</td>
+      <td>25.2 ± 2.0</td>
+      <td>19.3 ± 1.4*</td>
+      <td>1.4 ± 0.2</td>
+      <td>23.5 ± 2.0</td>
+      <td>447.3 ± 8.3</td>
+    </tr>
+    <tr>
+      <td>DWORF Tg</td>
+      <td>624.2 ± 43.2</td>
+      <td>443.6 ± 81.8</td>
+      <td>26.6 ± 1.7</td>
+      <td>11.8 ± 1.3</td>
+      <td>1.4 ± 0.2</td>
+      <td>23.4 ± 0.4</td>
+      <td>445.7 ± 5.0</td>
+    </tr>
+    <tr>
+      <td>MLP KO</td>
+      <td>546.0 ± 38.7</td>
+      <td>236.9 ± 78.1*</td>
+      <td>15.1 ± 2.8**</td>
+      <td>14.7 ± 2.3*</td>
+      <td>2.4 ± 0.6*</td>
+      <td>37.1 ± 6.3**</td>
+      <td>438.6 ± 19.3</td>
+    </tr>
+    <tr>
+      <td>MLP/DWORF dKO</td>
+      <td>536.9 ± 60.2</td>
+      <td>251.2 ± 24.6**</td>
+      <td>10.6 ± 1.0***, #</td>
+      <td>13.6 ± 1.0</td>
+      <td>2.1 ± 0.3**</td>
+      <td>51.0 ± 7.0**</td>
+      <td>444.3 ± 21.7</td>
+    </tr>
+    <tr>
+      <td>MLP KO/DWORF Tg</td>
+      <td>606.4 ± 199.6</td>
+      <td>492 ± 182.7#</td>
+      <td>24.0 ± 4.1#</td>
+      <td>18.7 ± 3.1</td>
+      <td>1.2 ± 0.1#</td>
+      <td>25.2 ± 6.1*</td>
+      <td>467 ± 14.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### DWORF overexpression prevents pathological remodeling in MLP KO mice
 
 Histological analysis of 8-week-old MLP KO hearts showed characteristic morphological defects consistent with DCM including ventricular and atrial chamber dilation, wall thinning and cardiac enlargement, and these features were exacerbated in MLP/DWORF dKO mice (Figure 4A). In sharp contrast, overexpression of DWORF in MLP KO mice prevented the spectrum of morphological defects observed in MLP KO hearts (Figure 4A). Significant ventricular cardiomyocyte hypertrophy was observed in both MLP KO and MLP/DWORF dKO mice compared to WT animals as assessed by cross-sectional area analysis (Figure 4—figure supplement 1A,B) and isolated cardiomyocyte length and width measurements (Figure 4—figure supplement 1C–E). DWORF overexpression in MLP KO mice significantly blunted this hypertrophic response and cell size parameters were indistinguishable from WT mice in the MLP KO/DWORF Tg group (Figure 4—figure supplement 1A–E). Additionally, MLP KO/DWORF Tg hearts had heart weight to tibia length (Figure 4B) and lung weight to tibia length (Figure 4C) measurements comparable to those of WT mice, while MLP KO and MLP/DWORF dKO mice showed significant increases in these parameters, indicative of advanced heart failure. MLP/DWORF dKO mice also had a significantly higher liver weight to tibia length ratio compared to any of the other genotypes assessed, indicating that these animals were in a particularly aggravated state of congestive heart failure (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative hematoxylin and eosin (H and E) staining of four-chamber histological sections (top) or whole mount hearts (bottom) from 8-week-old mice with the indicated genotypes. (B) Heart weight (W) to tibia length (L), lung weight to tibia length (C), and liver weight to tibia length (D) measurements from n = 3–7 mice per genotype. Data are represented as mean ±SD. Statistical comparisons between groups were evaluated by Student’s t-test. p-value *p<0.05, **p<0.01 vs. WT.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative confocal images of heart sections from 8-week-old mice with the indicated genotypes. Immunostaining was performed for wheat germ agglutinin (WGA, green), cardiac troponin T (red) and nuclei were stained with DAPI (blue). All images were taken of the LV-free wall at mid-level. Scale bar is 20 µm. (B) Quantitative analysis of cardiomyocyte cross-sectional area from n = 5 mice of each genotype. Mean data are represented as bar graphs (±SD). p-value **p<0.01 or ***p<0.005 vs. WT and ##p<0.01 vs. MLP KO. (C) Bright field images of freshly isolated adult mouse ventricular cardiomyocytes from 8-week-old mice with the indicated genotypes. Scale bar is 20 µm. (D, E) Cardiomyocyte length (D) and width (E) were quantified using ImageJ software and mean values are shown for n = 4 mice of each genotype (±SD). p-value **p<0.01 or ***p<0.005 vs. WT and ##p<0.01 vs. MLP KO. Statistical comparisons between groups were evaluated by Student’s t-test.
 
 Quantification of cardiac fibrosis by Picrosirius Red staining revealed significant myocardial fibrosis in MLP KO mice that was mildly exacerbated in MLP/DWORF dKO mice and dramatically reduced in MLP KO/DWORF Tg mice at 8 weeks of age (Figure 5A,B). Quantitative RT-PCR revealed a robust induction of the cardiac fetal gene program in MLP KO mice, a molecular marker of pathological cardiac hypertrophy (Figure 5C). This response was significantly inhibited in MLP KO/DWORF Tg mice, which is consistent with the preservation of ventricular function in these animals (Figure 5C). Ultrastructural analysis of MLP KO mice by electron microscopy revealed a striking disruption of cardiac myofibrillar organization characteristic of the late phases of DCM in both mice and humans (Figure 5D). Overexpressing DWORF in MLP KO mice resulted in complete prevention of these ultrastructural defects, indicating a preservation of cardiac function and cardiomyocyte architecture (Figure 5D).
 
@@ -75,9 +188,17 @@ Quantification of cardiac fibrosis by Picrosirius Red staining revealed signific
 
 **Figure 5.:** (A) Representative Picrosirius red staining of heart sections from animals with the specified genotypes. The red color indicates fibrosis. Scale bar: 50 μm. (B) Quantification of Picrosirius red staining in n = 5–9 mice. Data are expressed as the mean fibrotic area relative to the total myocardium (±SD). Statistical comparisons between groups were evaluated by Student’s t-test. p-value **p<0.01 or ****p<0.001 vs. WT and #p<0.05 vs. MLP KO. (C) qRT-PCR of 8-week-old hearts from MLP KO mice and MLP KO/DWORF KO mice show a robust activation of the fetal gene program that is typical of the pathological hypertrophic response, which is diminished with DWORF overexpression. Nppa, atrial natriuretic peptide; Nppb, brain natriuretic peptide; Myh6,α-myosin heavy chain; Myh7, β-myosin heavy chain. Data are normalized to 18S values and are presented as expression level relative to WT, mean ±SD for n = 4–5 mice per genotype. p-value *p<0.05 or **p<0.01 vs. WT and #p<0.05 or ##p<0.01 vs. MLP KO. (D) Consistent with the characteristics of DCM, electron micrographs of heart sections from MLP KO mice exhibit pronounced myofibrillar disarray which is prevented with DWORF overexpression. Images shown are representative of n = 3 mice per genotype. Scale bar: 0.5 μm.
 
-## DWORF overexpression in MLP KO mice enhances Ca2+ cycling and myocyte contractility
+### DWORF overexpression in MLP KO mice enhances Ca2+ cycling and myocyte contractility
 
 To gain further insight into the mechanisms responsible for the dramatic improvement of cardiac function in MLP KO mice by DWORF overexpression, we isolated cardiomyocytes from our animals and performed intracellular Ca2+ transients and fractional shortening measurements. Compared to WT mice, MLP KO and MLP/DWORF dKO cardiomyocytes exhibited marked reductions in Ca2+ transient amplitude (Figure 6A), significant prolongation of the transient decay rate (Figure 6B), and decreased fractional shortening (Figure 6C), collectively indicating diminished SERCA activity and Ca2+ cycling. Additionally, sarcomere relaxation kinetics were significantly slowed in MLP KO and MLP/DWORF dKO cardiomyocytes (Figure 6D). Overexpression of DWORF in MLP KO mice resulted in an increase in cardiomyocyte Ca2+ transient amplitude (Figure 6A), faster transient decay rates (Figure 6B), enhanced fractional shortening (Figure 6C) and increased sarcomere relaxation kinetics (Figure 6D) to levels that prevented the phenotype observed in MLP KO mice and surpassed those of WT cardiomyocytes. Sarcomere shortening kinetics were similar across all genotypes analyzed (Figure 6E), indicating a specific alteration in cardiomyocyte relaxation kinetics in this animal model. We directly confirmed that SERCA enzymatic activity was enhanced in MLP KO/DWORF Tg animals by performing oxalate supported Ca2+-dependent Ca2+-uptake measurements in cardiac homogenates and observed a strong leftward shift of the SERCA activity curve (Figure 6F), indicating an increase in the affinity of SERCA for Ca2+ and quantified as a reduction in KCa value (Figure 6G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig6-v2.jpg)
+
+**Figure 6.:** (A) Average pacing-induced peak Ca2+ transient amplitude in isolated adult cardiomyocytes loaded with Fura-2 from 8-week-old animals with the indicated genotypes. (B) Mean Ca2+ transient decay rates (tau) were calculated by fitting a single exponential to the decay phase of the Ca2+ transient. (C) Average peak cardiomyocyte fractional shortening analysis as measured by sarcomere length during contraction from mice with the indicated genotypes. (D, E) Sarcomere relaxation (D) and contraction (E) kinetics were analyzed from sarcomere length measurements during pacing-induced contractions (SL, sarcomere length). Data are represented as mean ±SD for n = 4 animals with 6–12 recordings per animal. Statistical comparisons between groups were evaluated by Student’s t-test. p-value *p<0.05 or **p<0.01 vs. WT and ##p<0.01 or ###p<0.005 vs. MLP KO. (F, G) Oxalate supported Ca2+-dependent Ca2+-uptake assays were performed using total homogenates from hearts of mice with the indicated genotypes to directly measure SERCA affinity for Ca2+ (KCa) and SERCA activity. Representative tracings (F) and average KCa values (G) from n = 4 hearts of each genotype are presented as mean ±SD. p-value *p<0.05, **p<0.01 or ***p<0.005 vs. WT and ##p<0.01 vs. MLP KO.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38319/elife-38319-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunoblots of cardiac homogenates from mice with the indicated genotypes. (B) Immunoblots were quantified using ImageJ and normalized to GAPDH. LTCC, L-type Ca2+ channel (α1C-subunit); Casq2, calsequestrin 2; RyR2, ryanodine receptor 2; GAPDH, glyceraldehyde 3-phosphate dehydrogenase. (C) Quantification of the phosphorylation status and oligomerization of phospholamban as assessed by western blot (panel A) and expressed as relative to WT. Western blots were quantified with ImageJ software. Phosphorylation blots (PS16 and PT17) were normalized to total PLN (tPLN). Total PLN was normalized to GAPDH. tPLN, total phospholamban; PS16, phospho-serine 16 on PLN; PT17, phospho-threonine 17 on PLN. Data are expressed as mean ±SD for n = 4–6 mice per genotype. (D) RNA levels of the indicated genes as quantified by qRT-PCR in 8-week-old heart tissue. Atp2a2, SERCA2a; Cacna1c, α1C-subunit of the L-type Ca2+ channel; Casq2, calsequestrin 2; Pln, phosholamban; Ryr2, ryanodine receptor 2. Data are normalized to 18S values and presented as expression level relative to WT, mean ±SD for n = 4–5 mice per genotype.
 
 Consistent with previous reports (Minamisawa et al., 1999), western blotting and quantitative RT-PCR revealed that MLP gene deletion does not cause significant alterations in protein or RNA levels of any major Ca2+ handling genes in the heart, suggesting that the defects of Ca2+ cycling in MLP KO mice result from a functional impairment of excitation-contraction coupling rather than a decrease in the proteins mediating the cycling itself (Figure 6—figure supplement 1). We also analyzed the phosphorylation state and oligomerization of PLN to verify that our observations were not due to post-translational modifications of the protein that are known to strongly regulate its ability to inhibit SERCA and saw no significant changes amongst genotypes (Figure 6—figure supplement 1A and C). Taken together, these findings provide evidence that the reversal of the MLP KO phenotype by DWORF overexpression mechanistically lies in the ability of DWORF to displace PLN from SERCA and enhance its activity to restore Ca2+ cycling and maintain cardiac contractility.
 
@@ -95,47 +216,211 @@ In summary, through multiple independent assays, our results show that DWORF dis
 
 ## Materials and methods
 
-## Experimental design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-HA Tag Monoclonal Antibody (5B1D10)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #32–6700</td>
+      <td>WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-Myc Tag Monoclonal Antibody</td>
+      <td>Invitrogen</td>
+      <td>Cat. #R950-25</td>
+      <td>WB (1:2,000), IP (1 ug)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-Phospholamban Monoclonal Antibody (2D12)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #MA3-922</td>
+      <td>WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Phospholamban (PLN, PLB) (pSer16) pAb</td>
+      <td>Badrilla</td>
+      <td>Cat. #A010-12AP</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Phospholamban (PLN, PLB) (pThr17) pAb</td>
+      <td>Badrilla</td>
+      <td>Cat. #A010-13AP</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-Ryanodine Receptor Monoclonal Antibody (C3-33)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #MA3-916</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-SERCA2 ATPase Monoclonal Antibody (2A7-A1)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #MA3-919</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Calsequestrin Polyclonal Antibody</td>
+      <td>Invitrogen</td>
+      <td>Cat. #PA1-913</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-DWORF</td>
+      <td>New England Peptide</td>
+      <td>Custom made</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-GAPDH Loading Control Monoclonal Antibody (GA1R)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #MA5-15738</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Calcium Channel Antibody, Voltage Gated α1C, pAb</td>
+      <td>Millipore</td>
+      <td>Cat. #AB5156</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG (H + L) -HRP Conjugate</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #1706516</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit IgG (H + L) -HRP Conjugate</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #1706515</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 800 Sheep Anti-Rabbit IgG</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #STAR36D800GA</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>StarBright Blue 700 Goat Anti-Mouse IgG</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #12004159</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hFAB Rhodamine Anti-GAPDH Primary Antibody</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #12004168</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-Cardiac Troponin T Monoclonal Antibody [1C11]</td>
+      <td>Abcam</td>
+      <td>Cat. #ab8295</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>Cat. #A-21422</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Wheat Germ Agglutinin, Alexa Fluor 488 Conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat. #W11261</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VECTASHIELD Antifade Mounting Medium with DAPI</td>
+      <td>Vector Laboratories</td>
+      <td>Cat. #H-1200</td>
+      <td>IHC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G for Immunoprecipitation</td>
+      <td>Invitrogen</td>
+      <td>Cat. #10004D</td>
+      <td>IP</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design
 
 The objectives of the present study were to molecularly characterize the interaction of DWORF with SERCA and to directly test if DWORF overexpression could prevent the development of cardiomyopathy in a mouse model of DCM. Male mice were used for all experiments and all mice with the appropriate genotypes were used without any exclusions. With the exception of echocardiography measurements, we did not use blinding approaches. All echocardiography experiments were performed and analyzed by a single blinded operator. The sample sizes were based on previous experience and published reports. For each experiment, sample size is indicated in the figure legend and reflects the number of independent biological replicates. In general, sample size was chosen to use the least number of animals to achieve statistical significance, and no statistical methods were used to predetermine sample size.
 
-## FRET measurements
+### FRET measurements
 
 AAV-293 cells were cultured in DMEM cell culture medium supplemented with 10% fetal bovine serum (FBS) (ThermoScientific, Waltham, MA) and transiently transfected using MBS mammalian transfection kit (Agilent Technologies, Stratagene, La Jolla, CA), according to manufacturer instructions. The transfected cells were trypsinized (ThermoScientific) and replated onto poly D lysine-coated glass-bottom chambers and allowed to adhere for 1–2 hr prior to imaging. Acceptor sensitization FRET microscopy was performed as described previously (Hou et al., 2008; Hou and Robia, 2010). Cells were imaged with an inverted microscope (Nikon Eclipse Ti) equipped with an EM-CCD camera (iXon 887, Andor Technology, Belfast, Northern Ireland). Acquisition was performed with a 40 × 0.75 N.A. objective with 100 ms exposure for each channel: Cer, YFP, and ‘FRET’ (Cer excitation, YFP emission). Fluorescence intensity was quantified from ~1000 cells per sample using automatic multiwavelength cell scoring in MetaMorph (Molecular Devices, Sunnyvale, CA). FRET efficiency was calculated according to E = G/(G + 3.2 × FCer), where G = FFRET−a × FYFP−d × FCer (Himes et al., 2016), where FFRET, FYFP, and FCer are the matching fluorescence intensity from FRET, YFP, and Cer images, respectively, and G represents FRET intensity corrected for the bleed-through of the channels. The parameters a and d are bleed-through constants calculated as a = FFRET/FCer for a control sample transfected with only YFP-SERCA and d = FFRET/FCer for a control sample transfected with only Cer-SERCA. These values were determined to be G = 4.74 a = 0.075 and b = 0.88. Progressive acceptor photobleaching was performed as described previously (Kelly et al., 2008; Zak et al., 2017). Briefly, we collected images of Cer and YFP fluorescence at intervals to establish a baseline and then initiated progressive acceptor photobleaching (Zak et al., 2017), acquiring successive images of Cer and YFP in between 10 s of exposure to illumination through a 504/12 nm bandpass filter for selective photobleaching of YFP. The images were analyzed in FIJI (Schindelin et al., 2012), and FRET was calculated from the pre- and post-bleach donor fluorescence intensity using the equation FRET = 1-(FDA/FD) where FDA = the intensity of the donor before bleaching and FD = the intensity of the donor after bleaching. To distinguish between 1:1 and higher order stoichiometry, the fluorescence of the donor was plotted against the fluorescence of the acceptor at the same time point during progressive bleaching. A linear relationship was taken to indicate a 1:1 complex of Cer- and YFP-labeled proteins (Kelly et al., 2008; Zak et al., 2017).
 
-## Mice
+### Mice
 
 Animal work described in this manuscript has been approved and conducted under the oversight of the UT Southwestern Institutional Animal Care and Use Committee. Mice were housed in a barrier facility with a 12 hr light/dark cycle and maintained on standard chow (2916 Teklad Global, Houston, TX). All mouse lines used in this manuscript have been previously published (Arber et al., 1997; Nelson et al., 2016; Kadambi et al., 1996). All data presented were collected from male mice.
 
-## Transthoracic echocardiography (ECHO)
+### Transthoracic echocardiography (ECHO)
 
 Cardiac function and heart dimensions were determined by two-dimensional echocardiography using a Visual Sonics Vevo 2100 Ultrasound (Visual Sonics,Toronto, Canada) on conscious mice. M-mode tracings were used to measure anterior and posterior wall thicknesses at end diastole and end systole. Left ventricular (LV) internal diameter (LVID) was measured as the largest anteroposterior diameter in either diastole (LVID;d) or systole (LVID;s). A single observer blinded to mouse genotypes performed echocardiography and data analysis. Fractional shortening (FS) was calculated according to the following formula: FS(%) = [(LVID;d − LVID;s)/LVID;d]×100. Ejection fraction (EF%) was calculated by: EF(%)=([EDV − ESV]/EDV)×100. EDV, end diastolic volume; ESV, end systolic volume. Diastolic function was assessed in lightly anesthetized mice (1.5%–2% isoflurane) using pulsed wave Doppler recordings of the maximal early (E) and late (A) diastolic transmitral flow velocities and Doppler tissue imaging recordings of peak E’ velocity and peak A’ velocity in apical four-chamber view. Body temperature was maintained at 37°C throughout using a heating pad. Changes in transmitral flow pattern (E/A ratio) and mitral annulus velocities (E’, A’) were used to assess diastolic dysfunction.
 
-## Adult mouse cardiomyocyte isolation
+### Adult mouse cardiomyocyte isolation
 
 Adult mouse hearts were rapidly excised and the aorta was cannulated on a constant-flow Langendorff perfusion apparatus. Hearts were digested with perfused Tyrode’s solution (10 mM glucose, 5 mM HEPES, 5.4 mM KCl, 1.2 mM MgCl2, 150 mM NaCl, 2 mM sodium pyruvate, pH 7.4) containing Liberase (0.25 mg/ml), and the ventricles were minced, filtered, and equilibrated with Tyrode’s solution containing 1 mM CaCl2 and bovine serum albumin at room temperature (Nelson et al., 2016). Cardiomyocyte length and width measurements were assessed using ImageJ analysis on bright-field images taken of freshly isolated cardiomyocytes imaged with a 20X objective. Length/width measurements were taken at the longest/widest part of each cell.
 
-## Cardiomyocyte Ca2+ transients and contractility measurements
+### Cardiomyocyte Ca2+ transients and contractility measurements
 
 Adult cardiomyocytes were loaded with 0.5 μM Fura-2-AM (Molecular Probes, Eugene, OR) and placed in a heated chamber (37°C) on the stage of an inverted microscope. The chamber was perfused with Tyrode’s solution containing CaCl2 (1.8 mM) (pH 7.4). Cardiomyocytes were paced with an IonOptix Myocyte Calcium and Contractility System at 0.5 Hz using a MyoPacer field stimulator. Changes in intracellular Ca2+ levels were monitored using Fura-2 dual-excitation (340/380 nm), single emission (510 nm) ratiometric imaging. Tau, the decay rate of the average Ca2+ transient trace, was determined using IonWizard 6.0 analysis software (IonOptix, Westwood, MA). Cardiomyocyte contractility measurements were made using sarcomere length (SarcLen) parameters and data was processed with IonWizard 6.0 analysis software.
 
-## Oxalate-supported Ca2+ uptake measurements
+### Oxalate-supported Ca2+ uptake measurements
 
 Oxalate-supported Ca2+ uptake in cardiac homogenates and transfected HEK293 cells were measured as previously described in detail (Nelson et al., 2016; Bidwell and Kranias, 2016). Briefly, mouse hearts were isolated and rapidly snap frozen in liquid nitrogen and stored at −80°C until processed. Frozen tissue samples or cultured cells were homogenized in 50 mM phosphate buffer, pH 7.0 containing 10 mM NaF, 1 mM EDTA, 0.3 M sucrose, 0.3 mM PMSF and 0.5 mM DTT. Ca2+ uptake was measured in reaction solution containing 40 mM imidazole pH 7.0, 95 mM KCl, 5 mM NaN3, 5 mM MgCl2, 0.5 mM EGTA, 5 mM K+ oxalate, 1 μM ruthenium red and various concentrations of CaCl2 to yield 0.02 to 5 μM free Ca2+. The reaction was initiated by the addition of ATP (final concentration 5 mM). The data were analyzed by nonlinear regression with computer software (GraphPad Software), and the KCa values were calculated using an equation for a general cooperative model for substrate activation.
 
-## Co-immunoprecipitations (CoIPs)
+### Co-immunoprecipitations (CoIPs)
 
 CoIPs were performed as previously described (Nelson et al., 2016). Briefly, HEK293 cells were co-transfected with expression plasmids encoding Myc-SERCA2a and HA-PLN in the presence of increasing concentrations of HA-DWORF or control plasmid. Whole cell lysates were prepared in CoIP buffer (20 mM NaPO4, 150 mM NaCl, 2 mM MgCl2, 0.1% NP-40, 10% Glycerol, 10 mM sodium fluoride, 0.1 mM sodium orthovanadate, 10 mM sodium pyrophosphate, 1 mM DTT and Complete protease inhibitor [Roche, Basel, Switzerland]). Immunoprecipitations were carried out using 1 mg of mouse monoclonal anti-Myc antibody (Invitrogen, Carlsbad, CA) and collected with Dynabeads (Invitrogen, Carlsbad, CA). Tris/Tricine gel electrophoresis was performed using pre-cast 16.5% Mini-PROTEAN Tris-Tricine gels (Bio-Rad, Hercules, CA). Standard western blot procedures were performed on input and IP fractions using the following antibodies: HA (Invitrogen, Carlsbad, CA), Myc (Invitrogen, Carlsbad, CA) or GAPDH (Invitrogen, Carlsbad, CA). Specific catalogue numbers for the reagents used for these CoIP studies can be found in the Key Resource Table.
 
-## Histology and immunofluorescence
+### Histology and immunofluorescence
 
 Hearts were isolated and fixed in 4% (vol/vol) paraformaldehyde in PBS for 48 hr at 4°C with gentle shaking. Hearts were dehydrated, embedded in paraffin, and sectioned. Heart sections were stained with hematoxylin and eosin (H and E) and Picrosirius red using standard procedures. Fibrosis was quantified using Pircorsirius red staining and ImageJ software (NIH, Rockville, MD). For immunofluorescent staining, tissue sections were deparaffinized and subjected to antigen retrieval with Citra buffer (BioGenex, Fremont, CA). Tissue sections were incubated with 488-conjugated Wheat Germ Agglutinin (Invitrogen, Carlsbad, CA) to label the cell membranes and cardiomyocytes were immunostained using a primary antibody for cardiac troponin-T (Abcam, Cambridge, MA) and an Alexa Fluor 555 secondary antibody (Invitrogen, Carlsbad, CA). Coverslips were mounted using VECTASHIELD Antifade Mounting Media with DAPI (Vector Laboratories, Burlingame, CA) and confocal images were taken of the mid-LV free wall with a Zeiss LSM-800 using a 40X oil objective. Cardiomyocyte cross-sectional area was assessed using Fiji Software. Specific catalogue numbers for the reagents used for immunohistochemistry can be found in the Key Resource Table.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Eight-week-old mice were perfusion fixed by transcardial perfusion using 4% paraformaldehyde and 1% glutaraldehyde in 0.1 M sodium cacodylate buffer (pH 7.4). Heart tissue was collected and samples were processed by the University of Texas Southwestern Medical Center Electron Microscopy Core facility. Briefly, fixed tissues were post‐fixed, stained, dehydrated, and embedded in EMbed‐812 resin. Tissue sections were cut and post‐stained, and images were acquired on a FEI Tecnai G2 Spirit TEM.
 
-## Quantitative mRNA measurement
+### Quantitative mRNA measurement
 
 Total RNA was extracted from adult mouse tissues using Trizol and reverse transcribed using iScript Reverse Transcription Supermix (Bio-Rad, Hercules, CA) with random primers. Quantitative Polymerase Chain Reaction (qPCR) reactions were assembled using KAPA Probe Fast qPCR Master Mix (SIGMA, St. Louis, MO) and the following TaqMan probes from Applied Biosystems (Foster City, CA): Atp2a2 (Mm01201431_m1), Ryr2 (Mm00465877_m1), Cacna1c (Mm01188822_m1), Casq2 (Mm00486742_m1), Pln (Mm00452263_m1), Nppa (Mm01255747_g1), Nppb (Mm01255770_g1), Myh6 (Mm00440359_m1) and Myh7 (Mm01318999_g1). Assays were performed using a 7900HT Fast Real-Time PCR machine (Applied Biosystems). Expression was normalized to 18S mRNA using Kappa SYBR Fast qPCR Master Mix and was represented as fold change relative to wild-type. 18S and DWORF (currently annotated as Gm34302) oligonucleotides were ordered from Integrated DNA Technologies:
 
@@ -147,10 +432,10 @@ DWORF Forward: 5′- TTC TTC TCC TGG TTG GAT GG −3′
 
 DWORF Reverse: 5′- TCT TCT AAA TGG TGT CAG ATT GAA GT −3′
 
-## Tissue western blot analysis
+### Tissue western blot analysis
 
 Tissues were collected and snap frozen in liquid nitrogen. Frozen samples were pulverized and homogenized in RIPA buffer (SIGMA) with added cOmplete, EDTA-free protease inhibitor cocktail (Roche, Basel, Switzerland) and PhosSTOP phosphatase inhibitors (Roche) on ice. Protein concentration was determined using a Pierce BCA Protein Assay Kit (ThermoFisher Scientific, Waltham, MA). Samples were separated on Mini-PROTEAN TGX Precast Gels (Bio-Rad, Hercules, CA) or bis/acrylamide gels made by standard gel preparation. Gels were transferred to PVDF membrane (Millipore, Immobilon-P, Burlington, MA), blocked in 5% milk/TBST and then incubated in primary antibodies: total PLN (2D12, Invitrogen, Carlsbad, CA), pSer16-PLN and pThr17-PLN (Badrilla, Leeds, UK); SERCA2 (2A7-A1, Invitrogen, Carlsbad, CA); RyR2 (Invitrogen, Carlsbad, CA, C3-33); LTCC (α1C, Millipore, Burlington, MA); Calsequestrin (Invitrogen, Carlsbad, CA); DWORF (custom antibody, New England Peptide, Gardner, MA) (Nelson et al., 2016); GAPDH (Invitrogen, Carlsbad, CA). Western blots were washed in TBST, incubated with fluorescent or HRP-conjugated secondary antibodies (Bio-Rad, Hercules, CA), and then developed using a ChemiDoc MP Imagine System (Bio-Rad, Hercules, CA) or autoradiograph film. Westerns were quantified using ImageJ software (NIH) using an internal GAPDH loading control for each western blot analyzed. Specific catalogue numbers for the antibodies used for westerns can be found in the Key Resource Table.
 
-## Statistical information
+### Statistical information
 
 All statistical analyses were performed using Prism 6 (GraphPad, San Diego, CA). Information on the statistical analyses presented are included in each figure legend and are either mean ±SD or SEM. Two-tailed t-tests were performed to determine significance. p-Values were defined as follows: *, #p<0.05, **, ##p<0.01, ***, ###p<0.005 or ****, ####p<0.001. All samples were included.

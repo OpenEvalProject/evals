@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01a099706 Institute of Marine Sciences, Guangdong Provincial Key Laboratory of Marine Biotechnology, Shantou University Shantou China
-2. https://ror.org/01a099706 Department of Biology, College of Science, Shantou University Shantou China
+1. Institute of Marine Sciences, Guangdong Provincial Key Laboratory of Marine Biotechnology, Shantou University Shantou China ([ROR:01a099706](https://ror.org/01a099706))
+2. Department of Biology, College of Science, Shantou University Shantou China ([ROR:01a099706](https://ror.org/01a099706))
 3. Guangzhou Genedenovo Biotechnology Company Limited Guangzhou China
-4. https://ror.org/01a099706 Shantou University-Universiti Malaysia Terengganu Joint Shellfish Research Laboratory, Shantou University Shantou China
-5. https://ror.org/00y7mag53 Southern Marine Science and Engineering Guangdong Laboratory Guangzhou China
+4. Shantou University-Universiti Malaysia Terengganu Joint Shellfish Research Laboratory, Shantou University Shantou China ([ROR:01a099706](https://ror.org/01a099706))
+5. Southern Marine Science and Engineering Guangdong Laboratory Guangzhou China ([ROR:00y7mag53](https://ror.org/00y7mag53))
 
 † Corresponding author
 
 ## Abstract
 
-Despite the importance of innate immunity in invertebrates, the diversity and function of innate immune cells in invertebrates are largely unknown. Using single-cell RNA-seq, we identified prohemocytes, monocytic hemocytes, and granulocytes as the three major cell-types in the white shrimp hemolymph. Our results identified a novel macrophage-like subset called monocytic hemocytes 2 (MH2) defined by the expression of certain marker genes, including Nlrp3 and Casp1 . This subtype of shrimp hemocytes is phagocytic and expresses markers that indicate some conservation with mammalian macrophages. Combined, our work resolves the heterogenicity of hemocytes in a very economically important aquatic species and identifies a novel innate immune cell subset that is likely a critical player in the immune responses of shrimp to threatening infectious diseases affecting this industry.
+Despite the importance of innate immunity in invertebrates, the diversity and function of innate immune cells in invertebrates are largely unknown. Using single-cell RNA-seq, we identified prohemocytes, monocytic hemocytes, and granulocytes as the three major cell-types in the white shrimp hemolymph. Our results identified a novel macrophage-like subset called monocytic hemocytes 2 (MH2) defined by the expression of certain marker genes, including Nlrp3 and Casp1. This subtype of shrimp hemocytes is phagocytic and expresses markers that indicate some conservation with mammalian macrophages. Combined, our work resolves the heterogenicity of hemocytes in a very economically important aquatic species and identifies a novel innate immune cell subset that is likely a critical player in the immune responses of shrimp to threatening infectious diseases affecting this industry.
 
 ## Introduction
 
@@ -33,25 +33,45 @@ To explore these analogies, we used the marine invertebrate Penaeus vannamei to 
 
 ## Results
 
-## Major cell-types among the circulating hemocytes in shrimp
+### Major cell-types among the circulating hemocytes in shrimp
 
 Previously, we identified a lipopolysaccharide (LPS)-induced shrimp plasma protein CREG and noticed that recombinant CREG (rCREG) was more effective than recombinant EGFP (rEGFP) in activating the shrimp hemocytes (Huang, Yang, & Wang, 2021). Based on this observation, we performed scRNA-seq for rCREG-treated shrimp hemocytes to further explore their function. To maximize the collection of circulating hemocytes from shrimp, we applied iodixanol gradient centrifugation to concentrate the hemocytes for the Gel Bead-In-Emulsion (GEM) preparation (Tattikota et al., 2020; Figure 1A). A total of 34,693 cells including control (12544), rEGFP- (12640), and rCREG-treated (9509) cells were retained for further analyses, and these cells exhibited a median of 5656, 6837, and 7916 transcripts and 1089.5, 1245, and 1364 genes per cell, respectively (Figure 1—figure supplement 1). The rCREG-treated samples had the highest unique molecular identifiers (UMIs) and detected genes compared with that of the other two groups. This observation is consistent with our previous conclusion that CREG is a hemocyte activation factor (Huang et al., 2021).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig1-v2.jpg)
+
+**Figure 1.:** (A) A schematic workflow of sample preparation. The hemocytes were collected from non-treated, rEGFP-treated, and rCREG-treated shrimps (n=15 for each treatment) and subjected to iodixanol gradient centrifugation and single-cell RNA sequencing (ScRNA-seq) using 10 X Genomics. (B) A t-SNE plot showing five major cell types identified in scRNA-seq dataset (n=34,693 in total; Control, 12544; rEGFP treated, 12640; rCREG treated, 9509 cells). The count of each cell type is indicated in parentheses. (C) A heatmap showing five representative marker genes for each major cluster. The gene name and its NCBI GeneID is listed (left) and its expression level in each cell is shown with different colors (right). (D) Two-dimensional projections, and proportions of the cell types for each treatment. Proportions of prohemocytes (red), monocytic hemocytes (brown), and granulocytes (blue) are indicated (left). Proportions of all five major cell types in each treatment are indicated (right).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig1-figsupp2-v2.jpg)
 
 To further define the major cell types of circulating shrimp hemocytes, we combined all 34,693 cells from different treatments and applied canonical correlation analysis (Stuart et al., 2019) to perform batch correction. We then aggregated the cell clusters and identified five major groups of isolated hemocytes, including prohemocytes (PHs) (6838, 19.7%), granulocytes (GHs) (13871, 40%), monocytic hemocytes (MHs) (11112, 32%), transitional cells (TCs) (2090, 6%), and germ-like cells (GCs) (782, 2.3%), which were annotated according to their potential functions implied by the marker genes (Figure 1B). Granulocytes are characterized by their ProPO system (Sun et al., 2020). Here, we found that prophenoloxidase activating factors 1 and 2 (PPAF1 and PPAF2) were highly expressed in this population. In addition to ProPO system genes, secreted proteins, including crustin-like protein (CRUL), penaeidin 3 a.1 (PEN-3), and crustacean hematopoietic factor-like protein (CHF), were also highly expressed in this population (Figure 1C, Figure 1—figure supplement 2A). The MHs were named thus because they shared some critical genes with mammalian monocytes. For example, NOD-like receptor protein 3 (Nlrp3) is a key component of the inflammasome and is highly expressed in monocytes and macrophages for processing of IL-1ß (He et al., 2016). Lysosome (Lyz1), another canonical antibacterial enzyme, is a well-known macrophage-secreting hydrolase (Short et al., 1996). Vago5 encodes an IFN-like antiviral cytokine and plays a role in the anti-white spot syndrome virus (WSSV) resistance (C. Li, Yang, Hong, Zhao, & Wang, 2021) (Figure 1C, Figure 1—figure supplement 2B). Generally, these cells secrete antibacterial and antiviral effectors. In PHs, histone1 (h1f0) is the key component of heterochromatin assembly, and its high expression is associated with reduced gene expression and cell stemness properties (Pan and Fan, 2016). In a previous study, hemocyte transglutaminase (TGM1) was identified as an immature hemocyte marker (Koiwai et al., 2021). The gene Igfbp7 has been shown to promote hemocyte proliferation in the small abalone Haliotis diversicolor (Wang et al., 2015; Figure 1C, Figure 1—figure supplement 2C). TCs were difficult to characterize due to the lack of exclusively expressed genes. Hence, we identify the top five significantly upregulated genes and analyzed the distribution of the top three (Figure 1C, Figure 1—figure supplement 2D); we found that this group of cells had no significant marker genes, thus the name. We found some reproduction-related genes in the GC group. For example, lhx9 encodes a key transcription factor in gonadal development (Balasubramanian et al., 2014), and spir localization is critical for mouse oocyte asymmetric division (Jo et al., 2019; Figure 1C, Figure 1—figure supplement 2E). Hence, we annotated this group of cells as GCs.
 
 To further determine whether CREG is a differentiation factor for shrimp hemocytes, we examined the ratio of the five annotated major cell types in different treatments. Recombinant protein injection slightly increased the proportion of GHs and PHs and decreased the ratio of MHs (Figure 1D). However, there were no significant differences between the rEGFP and rCREG treatments, which suggests that CREG is probably an activation factor rather than a differentiation factor for shrimp hemocytes.
 
-## Subtyping of shrimp immune cell clusters and construction of their differentiation trajectory
+### Subtyping of shrimp immune cell clusters and construction of their differentiation trajectory
 
 While classifying the immune cells in shrimp hemolymph, the TC group that lacks gene markers and GC group that is not a typical immune cell are not further explored in this study (Supplementary file 1, Supplementary file 2). To further trace the immune cell lineages in shrimp hemolymph, we subtyped the remaining three major classes of cells—PHs, MHs, and GHs; each major class type was divided into two subtypes and labelled PH1 (1577, 4.5%) and PH2 (5261, 15.2%), MH1 (10463, 30.2%) and MH2 (649, 1.9%), and GH1 (10353, 29.8%) and GH2 (3518, 10.1%), respectively (Figure 2A). We identified some unique marker genes located at the edge of the t-SNE map for the subpopulations PH1, GH2, and MH2 (Figure 2A, Figure 2—figure supplement 1, Supplementary file 3, Supplementary file 4 and Supplementary file 5), but could not identify exclusive marker genes for the subpopulations PH2, GH1, and MH1, which constituted the main body of the t-SNE map. The marker genes for PH2, GH1, and MH1 were also highly expressed in PH1, GH2, and MH2, respectively (Figure 2B, Supplementary file 6, Supplementary file 7 and Supplementary file 8). Thus, these six subtypes of hemocytes might have lineage differentiation relationships. To explore this, we performed cell cycle analyses of the six subtypes of hemocytes. PH1 was characterized by high expression of all marker genes for the G1, G2, and M stages (Figure 2C). This observation was consistent with a previous report that approximately 2–5% of circulating hemocytes were proliferating hemocytes and could be labelled with BrdU (Sun et al., 2013). Thus, we set PH1 as the initiating cell and applied a Monocle to construct differentiation trajectories for PHs, GHs, and MHs. Two major branches—MH lineage and GH lineage—were identified to have differentiated from one common PH (Figure 2D–E). This is similar to the development of human myeloid cells, in which granulocyte–monocyte progenitor (GMP) differentiates into monocyte and granulocyte (Bassler et al., 2019). To further compare innate immune cell differentiation between shrimp and humans, we screened shrimp homologs of human myeloid differentiation-related transcription factors (TFs) because TFs are the key regulators of cell fate determination (Friedman, 2002). In total, 3790 differentially expressed genes among different branches were identified and are shown as a specific heatmap on which three shrimp homologs of human TFs were labeled (Figure 2F, Supplementary file 9). Fli1 is specifically expressed in the granulocyte lineage, which is consistent with previous observations that Fli1 deletion decreases granulocytic cell number in mice (Starck et al., 2010). MAF and c-Rel were highly expressed in the MH lineage (Figure 2G). c-Rel is a key TF in the NF-κB pathway and plays important roles in monocyte differentiation (Li et al., 2020). MAF is a bZip TF that could induce monocytic differentiation (Kelly et al., 2000). In general, our data suggest that some myeloid regulators may be conserved between shrimp and humans.
 
-## Identification of a macrophage-like phagocytic cell population in shrimp hemolymph
+![Figure 2.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig2-v2.jpg)
+
+**Figure 2.:** (A) Subclusters of hemocytes–prohemocytes (PH), monocytic hemocytes (MH), granulocytes (GH) are projected onto two-dimensional t-SNE plots. The numbers in the plots represent the subcluster number. (B) Dot plot showing corresponding expression of cluster marker genes. The color indicates mean expression and dot size represents the percentage of cells within the cluster expressing the marker. Last nine digits of each marker gene are the NCBI GeneID. (C) Expression of cell-cycle regulating genes in the six subtypes. Dot color indicates average expression levels and dot size displays the average percentage of cells with cell cycle controlling genes (Cdk1(ncbi_113818305), CycD(ncbi_113814652), and CycE(ncbi_113822658) for G1; stg(ncbi_113800052), CycA(ncbi_113821735), and CycB(ncbi_113803283) for G2; polo(ncbi_113805901), aurB(ncbi_113827838), and birc5(ncbi_113828653) for M) in each subcluster. (D) A differentiation trajectory of PH, GH, and MH subpopulation using Monocle2 (n=31821). (E) Differentiation trajectory reconstruction with 6 subclusters. PH lineage, GH lineage, and MH lineage were labelled with red, blue, and brown circles respectively. (F) A heatmap showing differentially expressed gene dynamics during hemocyte differentiation process. (G) Spline plots showing the expression dynamics of Fli1, c-Rel, and MAF. Imaginary line, monocytic hemocyte lineage; Full line, granulocyte lineage.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig2-figsupp1-v2.jpg)
+
+### Identification of a macrophage-like phagocytic cell population in shrimp hemolymph
 
 Next, we analyzed the similarities that MH2 might be sharing with terminally differentiated monocyte-like macrophages or dendritic cells. Recently, the Human Cell Atlas mapped the expression of most genes across major human cell types (Karlsson et al., 2021). We compared MH2 marker genes with that in the human database and found human homologs for nine MH2 marker genes including chitotriosidase (CHIT1), lysozyme (Lyz1), lipase (LIPF), legumain (LGMN), Nlrp3, alpha-N-acetylgalactosaminidase (NAGA), zinc finger E-box-binding homeobox 1(zfh1), caspase1 (Casp1), and NPC intracellular cholesterol transporter 2 (NPC2). These genes were specifically expressed in human macrophages, including in some tissue-specific macrophages such as Kupffer cells and Hofbauer cells (Figure 3A, Figure 3—figure supplement 1, Figure 1—figure supplement 2B; Karlsson et al., 2021). This suggests that MH2 might be the invertebrate homolog of human macrophages, and various tissue-specific macrophages could have evolved from a common primitive cell type.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig3-v2.jpg)
+
+**Figure 3.:** (A) Comparison between MH2 and human macrophage marker genes. (B) A representative contour plot of shrimp hemocytes against FITC-VP. Threshold intensity (FITC-A) was set to <103 representing control hemocytes (R2), and >2 × 103 representing phagocytic hemocytes (R1). R1 and R2 were sorted based on the forward scatter (FSC) and fluorescence intensity (FITC) two-dimensional space. (C) Confocal microscopy of sorted hemocytes (R1) with ingested FITC-labelled Vibrio Parahemolyticus. Green, ingested Vibrio Parahemolyticus; Blue, nuclei. Scale bar: 10 μM. (D) Efficiency of the phagocytosis inhibitor on the Vibrio Parahemolyticus uptake of shrimp hemocytes. The results are presented as mean ± SD of 6–8 replicates. Asterisks denote statistical significance (**p=0.007) between the control and different treatments. (E) Differential gene expression analysis (CHIT1 (**p=0.004), Lyz1 (*p=0.049), and NAGA (*p=0.032)) between R1 and R2 sorted using FACS and analyzed using qPCR. (F) Differential protein expression analysis (NAGA, LYZ1, and NLRP3) between R1 and R2 sorted using FACS. The immunoblot signals were quantified with ImageJ. The relative immunoblot signal intensities of NAGA (*p=0.011), LYZ1 (*p=0.022), and NLRP3 (**p=0.009) compared with that of ß-actin were recorded with bar chart. Both qPCR and immunoblot data were analyzed using the student t test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig3-figsupp1-v2.jpg)
+
 To further prove this hypothesis, we labeled phagocytes via injection of fluorescein isothiocyanate-conjugated Vibrio parahaemolyticus (FITC-VP). The hemocytes which engulfed FITC-VP were isolated using a cell sorter and labelled as phagocytic hemocytes (R1) (fluorescence intensity >2 × 103). The hemocytes with low fluorescence (<103) were labelled control hemocytes (R2) (Figure 3B). To characterize these phagocytes, we observed them using confocal microscopy. These cells had round nuclei with a highly vacuolated cytoplasm similar to that in vertebrate macrophages (Figure 3C). To further compare these cells with vertebrate macrophage, we performed a phagocytosis inhibition assay using an actin polymerization inhibitor—cytochalasin D (Kokhanyuk et al., 2021)—that effectively suppressed the shrimp hemocyte phagocytosis rate (Figure 3D). To characterize the R1 cells, we quantified CHIT1, Lyz1, and NAGA expression in R1 and R2 using qPCR. The results indicated that these three genes were expressed at higher levels in R1 than in R2 (Figure 3E). In addition, we examined LYZ1, NAGA, and NLRP3 using immunoblotting and found that these three proteins were expressed at significantly higher levels in R1 than in R2 (Figure 3F). Thus, our results indicated that phagocytic cells in shrimp hemolymph specifically expressed MH2 marker genes. Our data suggest that MH2 may be an invertebrate homolog of human macrophages.
 
-## Comparison between hyalinocytes, semi-granulocytes, and granulocytes and their classifications in this study
+### Comparison between hyalinocytes, semi-granulocytes, and granulocytes and their classifications in this study
 
 Next, we compared our classification with the traditional classification. Previously, shrimp hemocytes have been divided into three major types: hyalinocytes, semi-granulocytes, and granulocytes based on morphological criteria and functional properties (Söderhäll, 2016). Recently, these three major types were separated using cell sorting or Percoll density gradient centrifugation and their marker genes were identified and validated using qPCR (Sun et al., 2020; Yang et al., 2015). Here, we analyzed the distribution of previous published marker genes: for hyalinocytes—lysosome membrane protein2 (LIMP2, ncbi_113826216), tubulin beta chain (TUBB4B, ncbi_113826677), dipeptidyl peptidase 1 (CTSC, ncbi_113824311), transglutaminase 1 (TGM1, ncbi_113823934) (Figure 4A, Figure 1—figure supplement 2C); for semi-granulocytes—beta-arrestin-1 (ARRB1, ncbi_113804686), ADP-ribosylation factor 6 (ARF6, ncbi_113820333), lysozyme (Lyz1, ncbi_113802295), Penaeid-3a (PEN-3, ncbi_113808997) (Figure 4B, Figure 1—figure supplement 2A and B); and for granulocytes—clone ZAP 18 putative antimicrobial peptide (CRU, ncbi_113801825), phenoloxidase-activating factor 3 (PPAF3, ncbi_113800184), phenoloxidase 3-like (PPO3, ncbi_113827090), peroxinectin (Pxt, ncbi_113820150) (Figure 4C, Figure 2—figure supplement 1C). Hyalinocyte marker genes were highly expressed in PH1, PH2, MH1, and MH2 groups (Figure 4A and D). Semi-granulocyte marker genes were highly expressed in GH2 and MH2 groups (Figure 4B and D). These data are consistent with previous observations that hyalinocytes contain both proliferating progenitors and phagocytic cells (Söderhäll, 2016). It also explained the observation of phagocytic activities in semi-granulocytes in some studies (Sun et al., 2020). The granulocyte marker genes were consistent with our observations and were highly expressed in GH2 (Figure 4C–D), which indicates that granulocytes are indeed the largest cell-type with internal condensed granules (Söderhäll, 2016).
 
@@ -71,23 +91,205 @@ In this study, we selected Penaeus vannamei as a crustacean model and proposed a
 
 ## Materials and methods
 
-## Experimental organisms
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ß-ACTIN(Rabbit monoclonal)</td>
+      <td>Beyotime</td>
+      <td>Cat#AF5003</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NAGA (Rabbit polyclonal)</td>
+      <td>SinoBiological</td>
+      <td>Cat#13686-T24</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LYZ1 (Rabbit polyclonal)</td>
+      <td>Bioss Antibodies</td>
+      <td>Cat#bs-0816R</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NLRP3 (Rabbit polyclonal)</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>polypeptide (aa29-42）WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio parahaemolyticus)</td>
+      <td>FITC-VP</td>
+      <td>Shantou University</td>
+      <td></td>
+      <td>2×106 particles/g</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OptiPrep</td>
+      <td>Axis-shield</td>
+      <td>Cat# AS1114542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypan blue</td>
+      <td>Solarbio</td>
+      <td>Cat# C0040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FITC</td>
+      <td>Bioss</td>
+      <td>Cat# D-9801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342 stain</td>
+      <td>Beyotime</td>
+      <td>Cat# C1028</td>
+      <td>100×</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rEGFP</td>
+      <td>Huang et al., 2021 (https://doi.org/10.3389/fimmu.2021.707770)</td>
+      <td></td>
+      <td>recombinant plasmid, prokaryotic expression, purification</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rCREG</td>
+      <td>Huang et al., 2021 (https://doi.org/10.3389/fimmu.2021.707770)</td>
+      <td></td>
+      <td>recombinant plasmid, prokaryotic expression, purification</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Penaeus vannamei)</td>
+      <td>Haemolymph</td>
+      <td>Shantou local farms</td>
+      <td></td>
+      <td>Freshly isolated from Penaeus vannamei</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNAprep Pure Micro Kit</td>
+      <td>TIANGEN</td>
+      <td>Cat#DP420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>First Strand cDNA Synthesis Kit</td>
+      <td>Beyotime</td>
+      <td>Cat#D7168M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>3’Reagent Kits v3.1</td>
+      <td>10 X Genomics</td>
+      <td>1000268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHIT1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GTCGAAATTCCGGCCAAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHIT1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GGCCCGTTCTTGTTTGACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lyz1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CAAGAACTGGGAGTGCATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lyz1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TCTGGAAGATGCCGTAGTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NAGA _F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CTACGAGGACTACGGCAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NAGA _R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CGAACTCTGGGTAGCCTTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EF-1α_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GTATTGGAACAGTGCCCGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EF-1α_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>ACCAGGGACAGCCTCAGTAAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental organisms
 
 Shrimp was purchased from Shantou local farms. Upon delivery, the shrimp were cultured in water tanks filled with aerated seawater at 20 °C and acclimatized for 2–3 days before the experiments. All animal-related experiments were conducted in accordance with Shantou University guidelines.
 
-## Collection of shrimp hemocytes with different treatments
+### Collection of shrimp hemocytes with different treatments
 
 Recombinant EGFP and CREG were purified, as previously described (Huang et al., 2021). Sixty shrimp were divided equally into three groups. One group was left untreated and labelled as control. The other two groups were injected with rEGFP or rCREG (1 μg/g), respectively. The hemolymph was collected 8 hr post-injection from each group and mixed well. Hemolymph (1.5 mL) was loaded onto an OptiPrep (Axis-shield, NO) separation solution (1.09 g/mL) and centrifuged at 2000 rpm for 10 min at 4 °C. Circulating hemocytes were concentrated between the hemolymph and the separation solution and carefully collected with a pipettor. The collected hemocytes were stained with 0.4% trypan blue to estimate cell viability. Next, cells with >85% viability were subjected to further scRNA-seq experiments.
 
-## Library preparation and ScRNA sequencing
+### Library preparation and ScRNA sequencing
 
 The hemocyte suspensions were loaded onto a 10 X Genomics GemCode Single-cell instrument to generate single-cell GEMs. Libraries were generated using Chromium Next GEM Single Cell 3’Reagent Kits v3.1 (10X Genomics, USA). Upon dissolution of the GEM, primers containing (i) an Illumina R1 sequence (read 1 sequencing primer), (ii) a 16 nt 10 X Barcode, (iii) a 10 nt UMI, and (iv) a poly-dT primer sequence were released and mixed with the cell lysate and Master Mix. Barcoded full-length cDNAs were then reverse-transcribed from poly adenylated mRNA and amplified using PCR to generate sufficient mass for library construction. R1 (read 1 primer sequence) was added during the GEM incubation. P5, P7, a sample index, and R2 (read 2 primer sequence) were added during library construction via end repair, A-Tailing, adaptor ligation, and PCR. Reads 1 and 2 were standard Illumina sequencing primers used for paired-end sequencing. All raw sequencing data were stored in the genome sequence archive of the Beijing Institute of Genomics, Chinese Academy of Sciences, gsa.big.ac.cn (accession nos. PRJCA006297).
 
-## Bioinformatics analysis of single-cell RNA sequencing data
+### Bioinformatics analysis of single-cell RNA sequencing data
 
 Raw BCL files were converted into FASTQ files using 10 X Genomics Cell Ranger software (version 5.0). The reads were then mapped to the shrimp genome (taxid:6689), and the reads that uniquely intersected at least 50% of an exon were considered for UMI counting. Valid barcodes were identified using the EmptyDrops method (Lun et al., 2019). The hemocytes by gene matrices for control, rEGFP treatment and rCREG treatment were individually imported to Seurat version 3.1.1 for the following analyses (Butler et al., 2018).
 
-Cells with UMIs (≥17,000), mitochondrial genes (≥10%), ≤230 detected genes, or ≥2200 detected genes were excluded. The qualified cells were normalized via ‘LogNormalize’ method, which normalizes the gene expression for each cell by the total expression. The formula is as follows:Ageneexpressionlevel=log(1+UMIA/UMITotal×10000)
+Cells with UMIs (≥17,000), mitochondrial genes (≥10%), ≤230 detected genes, or ≥2200 detected genes were excluded. The qualified cells were normalized via ‘LogNormalize’ method, which normalizes the gene expression for each cell by the total expression. The formula is as follows:
+
+$$
+Ageneexpressionlevel=log(1+UMI_{A}/UMI_{Total}\times10000)
+$$
 
 The batch effect was corrected using a canonical correlation analysis (Stuart et al., 2019). The integrated expression matrix was then scaled and subjected to principal component analysis (PCA) for dimensional reduction. Subsequently, the significant principal components (PCs) were identified as those with a strong enrichment of low-p-value genes (Chung and Storey, 2015).
 
@@ -97,18 +299,18 @@ Differentially expressed gene (up-regulation) analysis: The median expression pa
 
 Cell trajectory analysis: Single-cell trajectories were analyzed using a matrix of cells and gene expression by Monocle (Version2.10.1) (Trapnell et al., 2014). Monocle reduced the space to one with two dimensions and ordered the cells (sigma = 0.001, lambda = NULL, param.gamma=10, tol = 0.001) (Qiu et al., 2017). Once the cells were ordered, we visualized the trajectory in reduced dimensional space. The trajectory had a tree-like structure, including tips and branches. Monocle was used to identify genes that were differentially expressed between the groups of cells. The key genes were identified as having a false discovery rate (FDR)<1e-5. Additionally, genes with similar trends in expression such as shared common biological functions and regulators were grouped. Finally, the Monocle developed BEAM to analyze branch-dependent gene expression by formulating the problem as a contrast between the two negative binomial GLMs.
 
-## Phagocytic cell labeling and sorting
+### Phagocytic cell labeling and sorting
 
 Shrimp phagocytic cells were labeled as previously described (Huang et al., 2021). In brief, FITC labeled Vibrio parahaemolyticus (VP) (2×106 particles/g) were injected into the shrimp. The hemocytes were collected from 30 to 40 shrimp 2 hr post-injection. Each sorting was performed on a FACSMelody cell sorter (BD Biosciences, USA). The fluorescence boundary was set based on the detection of shrimp hemocyte self-fluorescence without VP injection.
 
-## Morphological analysis of sorted hemocyte and phagocytosis inhibition assay
+### Morphological analysis of sorted hemocyte and phagocytosis inhibition assay
 
 Phagocytic hemocytes (R1) were collected, stained with Hoechst 33342 (Beyotime, Shanghai, China), and observed using an LSM800 confocal microscope (Zeiss, Germany). The phagocytosis inhibition assay was performed according to a previously described method with some modifications (Kokhanyuk et al., 2021). In brief, each shrimp was injected with either FITC-VP (2×106 particles/g) or FITC-VP (2×106 particles/g)+cytochalasin D (5 μM/g). The hemocytes were collected 2 hr post-injection and immediately analyzed with a BD Accuri C6 Plus Flow Cytometer (Becton Dickinson, USA). The phagocytic hemocytes were quantified based on fluorescence intensity, and the fluorescence boundary was set based on the detection of self-fluorescence of untreated hemocytes.
 
-## Collection of sorted hemocyte RNA and proteins for RT-qPCR and immunoblot analyses
+### Collection of sorted hemocyte RNA and proteins for RT-qPCR and immunoblot analyses
 
 For each experiment, 50–100 k events from phagocytic hemocytes (R1) and control hemocytes (R2) were collected. Total RNA from the collected samples was purified using the RNAprep Pure Micro Kit (TIANGEN, Beijing, China) and reverse-transcribed into cDNA using a First Strand cDNA Synthesis Kit (Beyotime, Shanghai, China). qPCR was performed as previously described (Luo et al., 2022; Supplementary file 10), and the gene expression level was recorded as relative expression to EF-1α. This experiment was repeated five times. Total proteins from sorted hemocytes were precipitated by adding 1/100 volume of 2% sodium deoxycholate (Macklin, Shanghai, China) and 1/10 volume of 100% trichloroacetic acid (Macklin), followed by vortexing and centrifugation at 15,000×g for 15 min at 4 °C. The pellet was collected for performing SDS-PAGE and immunoblotting, as described before (Luo et al., 2022). This experiment was repeated thrice. The following antibodies were used: β-actin (AF5003; Beyotime, Shanghai, China), anti-NAGA (13686-T24; SinoBiological, Beijing, China), and anti-LYZ1 (bs-0816R; Bioss Antibodies, MA, USA). The polypeptide antibody against shrimp NLRP3 (aa29-42) was prepared by GenScript (Nanjing, China).
 
-## Statistical Analyses
+### Statistical Analyses
 
 The data in this study are presented as the results of at least three independent experiments. Statistical analyses were performed using the GraphPad Prism 8.0. Two-tailed unpaired Student’s t-tests were used to calculate the significance at *p<0.05, **p<0.01, and ***p<0.001.

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-In systemic light chain amyloidosis, an overexpressed antibody light chain (LC) forms fibrils which deposit in organs and cause their failure. While it is well-established that mutations in the LC’s V L domain are important prerequisites, the mechanisms which render a patient LC amyloidogenic are ill-defined. In this study, we performed an in-depth analysis of the factors and mutations responsible for the pathogenic transformation of a patient-derived λ LC, by recombinantly expressing variants in E. coli . We show that proteolytic cleavage of the patient LC resulting in an isolated V L domain is essential for fibril formation. Out of 11 mutations in the patient V L , only one, a leucine to valine mutation, is responsible for fibril formation. It disrupts a hydrophobic network rendering the C-terminal segment of V L more dynamic and decreasing domain stability. Thus, the combination of proteolytic cleavage and the destabilizing mutation trigger conformational changes that turn the LC pathogenic.
+In systemic light chain amyloidosis, an overexpressed antibody light chain (LC) forms fibrils which deposit in organs and cause their failure. While it is well-established that mutations in the LC’s VL domain are important prerequisites, the mechanisms which render a patient LC amyloidogenic are ill-defined. In this study, we performed an in-depth analysis of the factors and mutations responsible for the pathogenic transformation of a patient-derived λ LC, by recombinantly expressing variants in E. coli. We show that proteolytic cleavage of the patient LC resulting in an isolated VL domain is essential for fibril formation. Out of 11 mutations in the patient VL, only one, a leucine to valine mutation, is responsible for fibril formation. It disrupts a hydrophobic network rendering the C-terminal segment of VL more dynamic and decreasing domain stability. Thus, the combination of proteolytic cleavage and the destabilizing mutation trigger conformational changes that turn the LC pathogenic.
 
 ## Introduction
 
@@ -35,53 +35,105 @@ In this study, we analyzed a patient-derived amyloidogenic LC truncation of the 
 
 ## Results
 
-## Origin and sequence of the patient-derived pathological LC
+### Origin and sequence of the patient-derived pathological LC
 
 The LC variant studied here was identified in a female patient who was diagnosed with a smoldering myeloma and AL amyloidosis at the age of 50 years at the Amyloidosis Center of the University of Heidelberg. The LC responsible for the disease was of λ subtype. The levels of the free λ LCs were highly elevated with 7572 mg/l in serum, compared to κ which was normal with 8 mg/l. The clonal plasma cell infiltration of the bone marrow was also high reaching 80%. Heart, kidney, lung, and soft tissue were positive for amyloid deposits and also clinically involved. More specifically, the cardiac stage was IV (Kumar et al., 2012) or III b (Wechalekar et al., 2013) and the renal stage was 3 (Palladini et al., 2015) indicating that the patient was suffering from advanced AL amyloidosis with poor prognosis. Indeed, 4 weeks after initiation of chemotherapy, the patient died of cardiac arrest.
 
 The primary structure of the pathogenic LC, named Pat-1, was deduced from the sequence of the complementary DNA (cDNA) of the plasma cell clone that caused AL amyloidosis. The corresponding germline LC sequence, named WT-1, was identified by database-assisted (abYsis, IgBLAST) primary structure alignments searching for the germline LC with the lowest number of residue changes with respect to the Pat-1 sequence (Figure 1A). The two sequences differ in 11 point mutations, all located in the VL domain. Five of these are located in the constant framework regions (FR) and six are in the hypervariable complementarity determining regions (CDR). We were interested in how frequently the mutant amino acids occur at the respective positions in the antibody repertoire. To this end, we used the Kabat classification system which provides quantitative information on the relative abundance of each amino acid at each position within antibodies (Johnson and Wu, 2000; Wu and Kabat, 1970). For 9 of the 11 positions, the mutated residues in the Pat-1 VL are less abundant than the ones present in the WT-1 sequence (Figure 1—figure supplement 1) indicating potential negative effects on antibody structure and stability. The two mutated residues that show higher general frequency (S26 and D53) are located in the hypervariable CDRs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sequence alignment of the patient-derived Pat-1 LC with the corresponding germline WT-1. The Pat-1 sequence was obtained cDNA sequencing of the disease-causing bone marrow plasma cells, the WT-1 sequence was obtained by sequence comparison in Ig BLAST and abYsis. The VL and CL domain is surrounded by a red and gray box, respectively. The VL’s FRs and, CDRs were defined by Ig BLAST. The 11 point mutations are depicted in blue boxes. (B) Fibril extraction from abdominal fat tissue of the patient revealed the predominant deposition of LC truncations containing mostly the VL domain in the patient’s fibrils. The black box indicates the band of the VL domain at ~11 kDa. The first three steps correspond to washing steps, the next five to extraction steps, the last lane named ‘W’ corresponds to an initial tissue wash. (C) ThT fluorescence of the LC and VL domains of Pat-1 and WT-1 monitored over time. An increase in fluorescence indicates fibril formation. The assay was performed in PBS buffer containing 0.5 mM SDS at 37°C and shaking. The continuous lines show the mean value of triplicates with SD as transparent coloured background.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Frequency of amino acids at the mutated positions of Pat-1 and WT-1. The frequency of the specific amino acid in the germline is shown in cyan, the corresponding residue in the patient mutant in purple. Calculation of frequencies was performed using the abYsis database. (B) Mass Spectrometry Analysis of fibril extraction from patient abdominal fat tissue. A mass of 11,740 Da was detected for the predominant species. Source data for the Kabat numbering can be found in Figure 1—figure supplement 1— source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Far UV spectra were obtained at protein concentrations of 10 µM at 37°C in PBS buffer with or without 0.5 mM SDS.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The presence (VL Pat-1) or absence (VL WT-1, LC Pat-1 and LC WT-1) of fibrils was monitored by negative stain TEM.
+
 In AL, either the LC, truncated LCs or the VL domain have been shown to form fibrils (Blancas-Mejía et al., 2015; Buxbaum, 1986; Enqvist et al., 2009; Hurle et al., 1994; Nokwe et al., 2014; Pepys, 2006; Simpson et al., 2009). To determine which form is present in the case of Pat-1, we analyzed patient-derived abdominal fat tissue containing amyloid. These deposits were previously shown to be identical to organ-specific fibrils (Annamalai et al., 2017). Extraction of the fibrils followed by SDS-PAGE, MALDI fingerprint analysis of the specific band (data not shown) and its mass revealed that in this patient predominantly the VL domain was deposited (Figure 1B, Figure 1—figure supplement 1. As the fibril load in organs correlates to the severity of the disease in AL patients, we studied fibril formation in vitro. To test whether proteolytic processing of the LC is a prerequisite for fibril formation, we produced the respective constructs recombinantly in E. coli and monitored amyloid formation of the purified proteins. Typically, fibril formation takes a long period of time. It involves unfolding, formation of partially folded intermediates and oligomers which then assemble into fibrils. It was shown earlier that small amounts of SDS presented during the incubation accelerate the process (Kihara et al., 2005; Nokwe et al., 2015; Yamamoto et al., 2004). In this study, we use SDS in concentrations that do not affect the native secondary structure (Figure 1—figure supplement 2). In these assays, monitored by thioflavin T (ThT) fluorescence, full length Pat-1 and WT-1 LCs did not form fibrils (Figure 1C). However, incubation of the VL domain of Pat-1 revealed the presence of fibrils after a lag phase, while the WT-1 VL stayed soluble. We thus conclude that the Pat-1 VL but not Pat-1 LC is the disease-relevant amyloidogenic species. Transmission electron microscopy (TEM) confirmed the presence of fibrils for Pat-1 VL samples, whereas no fibrils were detected in the WT-1 VL and both full length LCs samples (Figure 1—figure supplement 3). In line with these findings, all further experiments were performed only with the VL domains.
 
-## Structural analysis of the Pat-1 and the WT-1 VL domains
+### Structural analysis of the Pat-1 and the WT-1 VL domains
 
 To determine potential structural differences between the two VL variants Pat-1 and WT-1, the X-ray structure of both proteins were solved to 2.5 Å (Pat-1) and to 1.55 Å (WT-1) resolutions. Despite forming crystals of different space groups, both domains display highly similar structural properties (Figure 2—figure supplement 1). They exhibit the typical Ig fold consisting of nine β-sheets forming a greek-key β−barrel topology with the three hypervariable CDR loops in spatial proximity (Figure 2A). At first sight, none of the mutations is located at a position that could explain the difference in fibril formation tendency. Six out of the 11 variations are found in the CDRs (T26S, S28N, V30F, G32D, E53D and S55D). The five substitutions in the FRs are located in two regions. Two of them which flank the CDR3 loop are in close proximity to the VL-VH interface (Y90F and T105S), without disrupting the contact surface in comparison to WT-1. The remaining three mutations (P15L, L81V and Q82L) are opposite to the antigen-binding site, located close to the C-terminal part of the VL domain. Thus, judging from the positions of the mutations in the domain structure and the superposition of both crystal structures (Figure 2—figure supplement 1), no reasonable conclusions concerning their contributions to fibril formation could be drawn.
 
-## The VL domains differ in thermodynamic stability and fibril formation propensity
+![Figure 2.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig2-v1.jpg)
+
+**Figure 2.:** The pathogenic VL Pat-1 is highlighted in purple, the germline VL in cyan. (A) Crystal structure of the VLs (PDB IDs: 6SM1, 6SM2). The intramolecular disulfide bond is shown as yellow sticks. The nine point mutations are depicted as black sticks. (B) Analytical ultracentrifugation sedimentation velocity runs with Svedberg values of ~1.6 s for both VLs. The data were analyzed using the continuous c(S) distribution mode of SEDFIT. (C) Temperature-induced unfolding transitions of Pat-1 and WT-1. The dots show the raw data, the continuous line shows the theoretical curves derived by fitting the data to a Boltzmann function. (D) GdmCl-induced unfolding transitions of both Pat-1 and WT-1 monitored by tryptophan fluorescence at 349 nm. The measurements were performed three times and the continuous lines shows the mean data fit to a two-state unfolding mechanism with SD. The significance corresponds to a p value of p=0.000996. Source files of the crystallographic data collection and refinement statistics are available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Alignment of both protein crystals reveal structural differences. The structures of Pat-1 and WT-1 are depicted in purple and cyan, respectively.
+
+### The VL domains differ in thermodynamic stability and fibril formation propensity
 
 To gain further insight into the consequences of the mutations on the conformation of the VL domain, we analyzed whether the variants forms dimers in solution as reported for some LCs and their fragments (Brumshtein et al., 2014; Rennella et al., 2019). Analytical ultracentrifugation showed that the VLs studied are monomers in solution with sedimentation coefficients of approximately ~1.6 s (Figure 2B).
 
 To test whether the mutations affect the thermal stability of the Pat-1 and WT-1 VL, the loss of secondary structure upon heating was monitored by far-UV CD-spectroscopy (Figure 2C). The melting temperatures (Tm) at which 50% of the protein is unfolded were determined to be 48.9°C and 57.0°C for Pat-1 and WT-1, respectively. Furthermore, the stabilities against chemical unfolding were followed by changes in the tryptophan fluorescence intensity in the presence of increasing GdmCl concentrations. Both VL domains showed sigmoidal unfolding curves and the cm-value (the GdmCl concentrations at which 50% of the protein is unfolded) was found to be increased by 0.46 M GdmCl for WT-1 compared to Pat-1 (Figure 2D). These results revealed that the patient-derived variant is significantly less stable than the germline protein.
 
-## The mutation V81L strongly affects the stability and fibril formation propensity of Pat-1
+### The mutation V81L strongly affects the stability and fibril formation propensity of Pat-1
 
 To identify the mutation(s) decisive for stability and amyloidogenic properties of the Pat-1 VL domain, we substituted all mutations of Pat-1 individually with the respective residue present in the WT-1 VL. When we analyzed their thermal and chemical stabilities, we found that 10 out of the 11 Pat-1 VL point mutants either (i) only had minor effects on the stability (S26T, N28S and S105T), (ii) were even destabilizing the domain (L15P, F30V and D53E), (iii) showed a negative effect on thermal stability (D32G and D55S), or, iv) showed a slight increase in chemical stability (L82Q and F90Y) (Figure 3A,B). In contrast, the mutation V81L resulted in a substantial shift of the Pat-1 VL towards the thermal and chemical stability of WT-1 with a TM of 54.6°C and a cM of 1.36 M (WT-1: TM = 57.0°C, cM = 1.43 M) (Figure 3A,B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig3-v1.jpg)
+
+**Figure 3.:** (A) Comparison of Tm and (B) cM values of Pat-1, WT-1 and single point mutants of Pat-1. The Tm values were derived from fitting the thermal-induced unfolding transition data to a Boltzmann function. cM values were obtained by fitting the chemical unfolding data according to a two-state unfolding model. (C) Fibril formation assay of single-point mutants followed by ThT fluorescence. (D) Comparison of Tm and (E) cM values of Pat-1, WT-1 and the single point mutant L81V. The Tm values were derived from fitting the thermal-induced unfolding transition data to a Boltzmann function. cM values were obtained by fitting the chemical unfolding data according to a two-state unfolding model. (F) Fibril formation assay followed by ThT fluorescence. The assay was performed in PBS buffer containing 0.5 mM SDS at 37°C and shaking. The continuous lines show the mean value of triplicates with SD as transparent coloured areas.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Thermal stabilities were determined by heating the protein (10 µM) from 20–90°C and following the change in CD signal at 205 nm. The thermal unfolding data were fit to a Boltzmann fit. (B) Fibril formation was initiated by incubating the protein (15 µM) at 37°C under continuous orbital shaking and followed by ThT fluorescence.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** t1/2 and maximal ThT fluorescence values were obtained by fitting the regions of interest to a Boltzmann function.
 
 Remarkably, when we performed fibril formation assays, we found that all Pat-1 point mutants except V81L formed amyloids (Figure 3C), suggesting that valine at position 81 is the main cause for the pathogenicity of Pat-1. All fibril forming variants showed an even lower halftime (t1/2) of fibril formation than Pat-1. The maximal ThT intensity, which seems to correlate to the amount of fibrils present, was in most cases equal to Pat-1. The only exception is the F30V variant which showed an increased maximum ThT fluorescence (Figure 3—figure supplement 2).
 
 Valine and leucine are closely related amino acids; both exhibit hydrophobic characteristics and differ in only a methylene moiety. Since isoleucine is identical to leucine concerning the constituent atoms, we substituted V81 by isoleucine and analyzed this mutant regarding stability and amyloid formation propensity. Intriguingly, V81I did not exhibit a significant increase in thermal stability compared to Pat-1 (Figure 3—figure supplement 1A). Furthermore, we found that V81I, unlike V81L, readily forms fibrils (Figure 3—figure supplement 1B). Thus, we conclude that the protective effect observed for the V81L variant is highly specific to leucine. While the experiments so far suggest that the V81L mutation can rescue the Pat-1 VL from amyloid formation, it was an open question whether vice versa replacement of leucine by valine in the context of WT-1 would be sufficient to induce fibril formation. We therefore cloned WT-1 L81V and analyzed its properties. The thermal stability of WT-1 L81V decreased by 5.5°C compared to WT-1 (Figure 3D) and the cM value for chemical unfolding, is reduced by 0.42 M GdmCl (Figure 3E). Hence, the introduction of valine at position 81 shifts WT-1 toward the stability of Pat-1. In the same line, upon incubation the WT-1 L81V mutant showed an increase of ThT fluorescence indicating fibril formation (Figure 3F). Together, these results show that it is possible to reconstitute the properties of the AL patient mutant by exchanging only one amino acid in the wild-type protein.
 
-## Valine 81 is located in a surface-exposed hydrophobic spot crucial for stability and amyloidogenicity
+### Valine 81 is located in a surface-exposed hydrophobic spot crucial for stability and amyloidogenicity
 
 The crystal structure of Pat-1 showed that V81 is in close proximity to L15 and L82 opposite of the antigen-binding site (Figure 2A). Focusing on the surface properties in this region, we found that these three amino acids form a hydrophobic surface patch which is not present in the WT-1 protein (Figure 4A,B). To determine the combined effect of the mutations at position 15, 81 and 82 (L15P, V81L and L82Q), we designed additional double and triple mutants carrying all possible combinations of these substitutions in Pat-1 and determined their stabilities against thermal and chemical denaturation. The combination of the substitutions at position 81 and 82 enhanced the increase in stability slightly, whereas mutating leucine at position 15 to proline in combination with the other point mutations led to a decrease in stability (Figure 4C,D). Fibril formation kinetics monitored by ThT fluorescence showed that the stability changes of the analyzed VL variants correlate with the amyloid propensity. The anti-amyloidogenic effect of V81L could be preserved in combination with the L82Q mutation. The presence of L15P in the mutants increased fibril formation (Figure 4E, Figure 4—figure supplement 1). From these results, we conclude that the hydrophobic surface spot in Pat-1 plays a key role in pathogenesis. Minimizing the area by the back-mutation of the hydrophobic residue L82 to glutamine supports the anti-amyloidogenic effect of V81L. L15P alone and in all combinations tested had negative effects on stability and fibril formation.
 
-## Altered hydrophobic interactions lead to higher conformational dynamics of the patient VL domain
+![Figure 4.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig4-v1.jpg)
+
+**Figure 4.:** (A) Surface representation of the crystal structures of Pat-1 and WT-1. The surface amino acids are colored according to their hydrophobicity. (B) Sequences of Pat-1 and WT-1 with the amino acids located in the hydrophobic surface patch of the VL domains highlighted in red. (C) Thermal and (D) chemical stabilities of WT-1, Pat-1 and the single, double and triple point mutants varying the hydrophobic surface of Pat-1. Thermal stabilities were obtained by fitting the thermal unfolding data to a Boltzmann fit. Chemical stabilities were obtained by fitting GdmCl unfolding data according to a two-state unfolding model. The measurement was performed three times and the mean was taken. (E) Fibril formation was followed by ThT fluorescence. The assay was performed in PBS buffer containing 0.5 mM SDS at 37°C and shaking. The continuous lines show the mean value of triplicates with SD as transparent colored areas.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The presence or absence of fibrils of the hydrophobic surface altering VL variants was monitored by negative stain TEM.
+
+### Altered hydrophobic interactions lead to higher conformational dynamics of the patient VL domain
 
 To gain insight into conformational dynamics of the Pat-1 and WT-1 VL domains, we monitored the kinetics of hydrogen/deuterium exchange in the protein backbone by mass spectrometry (H/DX-MS) (Bai and Englander, 1996; Rand et al., 2014). We obtained complete sequence coverage in the H/DX-MS for both variants. Our analysis indicates that Pat-1 exhibits higher conformational dynamics as indicated by an overall higher HD/X rate (Figure 5A). The most affected segment was the C-terminal framework region 4 (FR4, residues 101–113). Additionally, the region from amino acid 11 to 20 (FR1), comprising the residue at position 15 which is part of the surface-exposed hydrophobic spot, is striking since the fractional uptake of deuterium in Pat-1 increases in this area. When the differences in fractional deuterium uptake between Pat-1 and WT-1 are mapped onto the X-ray structure of Pat-1, it becomes obvious that the Pat-1 VL shows a higher flexibility in most parts of the domain compared to WT-1 (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig5-v1.jpg)
 
-**Figure 5.:** (A) The magnitude of exchange of Pat-1 is shown in purple, for WT-1 in cyan. FRs are highlighted in light blue, CDRs in white. Pat-1 shows overall higher exchange rate. Strongly affected regions are highlighted in yellow. The Experiment was performed twice. (B) The relative change in fractional uptake is mapped on the Pat-1 crystal structure. Negative and positive relative change values in H/DX indicate more dynamic WT-1 and Pat-1 regions, respectively. Relative change of H/DX of Pat-1 segments with respect to WT-1 is color coded from blue (low) to red (high). Source files for the H/DX measurement sets are available in Figure 5—source datas 1–4.Figure 5—source data 1.Figure 5—source data 2.Figure 5—source data 3.Figure 5—source data 4.
+**Figure 5.:** (A) The magnitude of exchange of Pat-1 is shown in purple, for WT-1 in cyan. FRs are highlighted in light blue, CDRs in white. Pat-1 shows overall higher exchange rate. Strongly affected regions are highlighted in yellow. The Experiment was performed twice. (B) The relative change in fractional uptake is mapped on the Pat-1 crystal structure. Negative and positive relative change values in H/DX indicate more dynamic WT-1 and Pat-1 regions, respectively. Relative change of H/DX of Pat-1 segments with respect to WT-1 is color coded from blue (low) to red (high). Source files for the H/DX measurement sets are available in Figure 5—source datas 1–4.
 
 To determine the underlying molecular reasons for the differences in dynamics and stability, we analyzed side chain interactions in the structures of the VL domains using the BIOVA Discovery Studio software. We found that the mutations at position 15, 81 and 82 result in a change in hydrophobic interactions between Pat-1 and WT-1 (Figure 6). P15 is located in FR1, in a region that shows a conspicuous change in deuterium exchange. In WT-1, this proline is not involved in a hydrophobic interaction network. In contrast, in the patient mutant L15 interacts with three amino acids located in FR3, including the two other point mutations in the hydrophobic surface spot, and two residues in the C-terminal region (V111 and L112). Thus, the contact of L15 to the very dynamic C-terminal segment, as indicated by the HD/X rate, induces the enhanced conformational dynamics of the respective loop region in FR1. V81 in Pat-1 forms six hydrophobic interactions with residues in FR2 and FR3, two of them, the L15 and L82 point mutations, are located within this hydrophobic surface area. However, V81 contacts only one amino acid in the C-terminal segment (V111). The hydrophobic interaction pattern of the WT-1 L81 misses one interaction each in FR2 and in FR3 but two more interactions to the C-terminal region appear. Overall, this leads to three hydrophobic interactions of L81 to the C-terminal region (V109, V111 and L112). For the mutation at position 82, the biggest effect comes from the change of the nature of interaction from hydrophobic to hydrophilic and the resulting decrease of hydrophobic surface area. L82 can form five hydrophobic interactions with FR2-4. Q82 however forms hydrophilic interactions to four residues, all located in FR3: R64, E84, D85 and E86. We conclude that the network of interactions in the C-terminal region is markedly changed in Pat-1 by the mutations at position 15, 81 and 82 leading to a highly dynamic C-terminal region.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig6-v1.jpg)
 
-**Figure 6.:** A) 81 and (B) 15.The amino acids included in the hydrophobic network are shown in red stick representation. The area of the network is highlighted in light red. Source file of the hydrophobic interaction patterns is available in Figure 6—source data 1.Figure 6—source data 1.Lvariants Pat-1 and WT-1.
+**Figure 6.:** The amino acids included in the hydrophobic network are shown in red stick representation. The area of the network is highlighted in light red. Source file of the hydrophobic interaction patterns is available in Figure 6—source data 1.
 
-## Modified hydrophobic interaction pattern favors dissociation of the C-terminal region
+### Modified hydrophobic interaction pattern favors dissociation of the C-terminal region
 
 To further analyze the effect of the protective back mutation of V81L in Pat-1 and the destructive substitution of L15P on the C-terminal network, we performed molecular dynamics (MD) free energy simulations. By Umbrella Sampling (US) simulations, the dissociation of the C-terminal segment (residues beyond 102) was induced during MD-simulations for WT-1, Pat-1, Pat-1 V81L and the double mutant Pat-1 V81L L15P and the associated change in free energy was calculated. The free energy of dissociating this part of the structure from the otherwise folded protein can be taken as a relative estimate for the influence of the mutation on the stability of the protein fold. The calculated free energy profiles of the dissociation of the C-terminal region are shown in Figure 7, RMSD values are shown in Figure 7—figure supplement 1. The free energy simulations exhibit similar dissociation free energies for the WT-1 and the single back mutation V81L, which were higher (by ~1 kcal·mol−1) in comparison to Pat-1 and the double back mutation V81L L15P. This indicates an increased protein stability for WT-1 and the back mutation of Pat-1 V81L. The effect of the V81L mutation is mainly due to a small cavity that is present in the case of V81 and that is filled if V81 is replaced by a slightly larger residue (V81L) (Figure 7). However, a destabilizing effect due to the additional back mutation L15P could be observed. Here, the double back mutation exhibited an opposite effect compared to the single back mutation, by producing a significant reduction of the dissociation free energy (by ~1 kcal·mol−1) relative to the patient mutant. This effect can be explained by a change in the local protein backbone structure (due to the L15P) that changes the local packing geometry and offsets the effect of the V81L mutation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig7-v1.jpg)
+
+**Figure 7.:** The free energy along the reaction coordinate was calculated by means of umbrella sampling simulations (see Materials and methods section). The reaction coordinate corresponds to the distance between the center of mass of the α-carbons of the C-terminal (residues 103 to 109) and the α-carbons of the rest of the protein (residues 1 to 102). A distance of ~13 Å indicates the position of the C-terminal segment as observed in the native structure whereas distances >~17.5 Å indicate dissociation of the C-terminal segment. Representative snapshots in the folded and unfolded states of WT-1 and Pat-1 are represented above the corresponding section of the PMF. The 11 resides which vary from WT-1 to Pat-1 are represented in yellow. The licorice representation corresponds to residues 81 and 15. Source files for the MD analysis are available in Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52300/elife-52300-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The coordinate RMSD with respect to the time-averaged structure of the corresponding construct was calculated over a period of 1 µs of free MD simulations at 300 K. The high stability of the structures is reflected by a RMSD <2.5 Å for all conformations during the whole simulation period.
 
 ## Discussion
 
@@ -105,49 +157,178 @@ In summary, our study presents a general strategy how to investigate LCs associa
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>WT-1</td>
+      <td>Uniprot IGLV2-14</td>
+      <td>Uniprot: P01704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Pat-1</td>
+      <td>This paper</td>
+      <td>GenBank: MK962887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21-codon+ (DE3)-RIL</td>
+      <td>Stratagene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>XL1blue</td>
+      <td>Stratagene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>abdominal fat tissue</td>
+      <td>University hospital Heidelberg</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pet28b-WT-1</td>
+      <td>invitrogen</td>
+      <td></td>
+      <td>Point mutants obtained by site directed mutagenesis using NEBasechanger</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pet28b-Pat-1</td>
+      <td>invitrogen</td>
+      <td></td>
+      <td>Point mutants obtained by site directed mutagenesis using NEBasechanger</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Pat-1 LC, Pat-1 VL, WT-1 LC, WT-1 VL, Pat-1 VL and WT-1 VLpoint mutants</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression plasmids obtained from invitrogen (see: recombinant DNA reagent). Point mutant expression plasmids created using site directed mutagenesis (see: other). Protein purification according to Material and methods section</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Wizard Plus SV Mini-Prep DNA purification</td>
+      <td>Promega</td>
+      <td>A1460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 2018b</td>
+      <td>OriginLab Corporation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SedFit</td>
+      <td>Peter Schuck</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Discovery Studio</td>
+      <td>BIOVA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Schrödinger, DeLano Scientific LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PLGS and DynamX</td>
+      <td>Waters.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NEBaseChanger</td>
+      <td>NEB</td>
+      <td>https://nebasechanger.neb.com</td>
+      <td>Primer design for site directed mutagenesis</td>
+    </tr>
+  </tbody>
+</table>
+
 Oligonucleotides were obtained from MW Biotech (Ebersberg, Germany). All chemicals were from Merck (Darmstadt, Germany) or Sigma (St. Louis, USA). All measurements were carried out in PBS buffer (10 mM Na2HPO4 × 2 H2O; 1.8 mM KH2PO4; 2.7 mM KCl; 137 mM NaCl), pH 7.4 at 25°C, unless otherwise stated.
 
-## Cloning of full length LC
+### Cloning of full length LC
 
 The cDNA sequence of the light chain Pat-1 was obtained from CD138-enriched bone marrow plasma cells. The sequencing was performed as described elsewhere (Annamalai et al., 2016). The DNA sequence was deposited in the GenBank (https://www.ncbi.nlm.nih.gov/genbank/) under the accession number MK962887.
 
-## Fibril extraction from fat tissue
+### Fibril extraction from fat tissue
 
 To isolate fibrils from abdominal fat tissue, 25 mg patient tissue was diced with a scalpel and washed five times with 0.5 mL Tris calcium buffer (20 mM Tris, 138 mM NaCl, 2 mM CaCl2, 0.1% (wt/vol) NaN3, pH 8.0). Before each washing step, the sample was vortexed and centrifuged at 3,100 g for 1 min at 4°C. The supernatant was discarded. The pellet was dissolved in a solution of 5 mg/mL Clostridium histolyticum collagenase (Sigma) in Tris calcium buffer. The mixture was incubated overnight at 37°C and 750 rpm in a horizontal orbital shaker and thencentrifuged at 3100 g for 30 min at 4°C. The pellet was resuspended in 0.25 mL Tris ethylenediaminetetraacetic acid (EDTA) buffer (20 mM Tris, 140 mM NaCl, 10 mM EDTA, 0.1% (wt/vol) NaN3, pH 8.0) and homogenized using a Kontes pellet pestle. The homogenate was centrifuged for 5 min at 3100 g at 4°C. The supernatant was removed and the homogenization step was repeated twice resulting in washing fractions 1–3. The remaining pellet was again homogenized with the pestle in 0.1 mL of ice-cold water and centrifuged for 5 min at 3100 g at 4°C. The supernatant was stored as water extract one and the step was repeated four more times resulting in extracts 2–5.
 
-## Cloning, mutagenesis, expression and purification of LC/VL variants
+### Cloning, mutagenesis, expression and purification of LC/VL variants
 
 DNA synthesis for the LCs and VLs of Pat-1 and WT-1 was performed by Invitrogen (Carlsbad). Single mutations were introduced into the Pat-1 sequence by site-directed mutagenesis. Primers carrying the mutations were designed with NEBaseChanger and the PCR was performed according to the manufacturer’s protocol. All variants were expressed and purified as previously described (Nokwe et al., 2014; Simpson et al., 2009). In brief, the plasmids were transformed in E. coli BL21 (DE3)-star cells and protein expression took place at 37°C overnight. Cells were harvested and inclusion bodies were prepared as previously described (Thies and Pirkl, 2000). The pellet was solubilized and unfolded in 25 mM Tris-HCl (pH 8), 5 mM EDTA, 8 M urea and 2 mM β-mercaptoethanol at room temperature for a minimum of 2 hr. The solubilized protein was loaded onto a Q-Sepharose anion exchange column equilibrated in 25 mM Tris-HCl (pH 8.0), 5 mM EDTA and 5 M urea. The LCs and VLs were eluted in the flow-through fractions and refolded by dialysis against 250 mM Tris-HCl (pH 8.0), 100 mM L-Arg, 5 mM EDTA, 1 mM oxidized glutathione and 0.5 mM reduced glutathione at 4°C overnight. To remove aggregates and impurities, the refolded proteins were purified using a Superdex 75 16/60 gel-filtration column (GE Healthcare, Uppsala, Sweden) equilibrated in PBS buffer. Recovery and purity of intact proteins were analyzed by SDS-PAGE.
 
-## Crystallography
+### Crystallography
 
 Initial crystallization hits for both WT-1 and Pat-1 were obtained using the vapor diffusion method at 20°C. Equal amounts of protein sample (about 30 mg\mL, solved in 20 mM Tris-HCl, pH 7.5, 40 mM NaCl) and reservoir solution were mixed for setting up 0.4 µL sitting drops. WT-1 protein crystallized in presence of 0.2 M CaCl2, 0.1 M HEPES, pH 7.5, 28% PEG400. Requiring no further cryo-protection, crystals were directly vitrified in liquid nitrogen at 100 K. A high-resolution data set was measured at beam line ID30 at the European Synchrotron Radiation Facility (ESRF, Grenoble, France) using radiation of λ = 0.98 Å. For Pat-1, suitable crystals were grown in 2 µL hanging drops with reservoir solutions optimized around the initial crystallization condition of 0.5 M (NH4)2SO4, 0.1 M tri-sodium-citrate, pH 5.6, 1.0 M Li2SO4. For all crystals, mother liquor supplemented with 40% glycerin was used for cryo-protection. To obtain experimental phasing information, crystals were soaked for 4 hr in drops containing potassium tetrachloroaureate-(III)-hydrate dissolved in mother liquor. An anomalous data set was measured at the peak wavelength of the Au (L-III) edge (λ = 1.039 Å, f'=−17.0, f''=10) at beam line X06SA at the Paul Scherrer Institute, Swiss Light Source (Villingen, Switzerland). In addition, a native data set was recorded at beam line ID30 at the ESFR. For all data sets, initial analysis, data processing, scaling and reduction were performed using the XDS software package (Kabsch, 1993). Further structure determination made use of different programs, distributed together by the ccp4i program suite (Winn et al., 2011). The WT-1 structure was solved to 1.55 Å resolution by Patterson search calculation techniques using PHASER (McCoy et al., 2007) and the atomic coordinates of PDB entry 4NKI (Hao et al., 2015) as a starting model. Applying the experimental phase information provided by the Au-SAD data set measured from the Pat-1 crystal, the automated structure solution pipeline Crank2 (Skubák and Pannu, 2013) generated an initial model to 3.5 Å resolution. This, in turn, proved to be suitable for solving the native Pat-1 data set, thereby expanding the phase information to 2.5 Å. Iterative rounds of model building and refinement with Coot (Emsley et al., 2010) and Refmac5 (Vagin et al., 2004) followed by addition of water molecules with applying the ARP/wARP software package (Perrakis et al., 1997) further improved the structure models for both WT-1 and Pat-1. This resulted in final Rvalues of Rwork = 14.2% and Rfree = 16.5% or Rwork = 19.8% and Rfree = 24.5%, respectively. Besides, both models were found to have good stereochemistry as analyzed by Molprobity (Chen et al., 2010). Further details regarding data collection and refinement are listed in Figure 2—source data 1. Atomic coordinates and structure factors for WT-1 and Pat-1 have been deposited in the RCSB Protein Data Bank under the PDB IDs 6SM1 and 6SM2, respectively.
 
-## Far-UV circular dichroism (CD) measurements
+### Far-UV circular dichroism (CD) measurements
 
 Thermal transitions were recorded using a Jasco J-715 spectropolarimeter (Jasco, Grossumstadt, Germany) equipped with a Peltier element. Protein unfolding was followed by monitoring the signal change at 205 nm at a heating rate of 30°/h. All measurements were performed using a 10 µM protein solution in a quartz cuvette with 1 mm pathlength.
 
-## Fluorescence spectroscopy
+### Fluorescence spectroscopy
 
 Tryptophan fluorescence measurements were carried out in a 10 × 2 mm quartz cuvette using a FluoroMax-4 spectrofluorometer (Horiba Jobin Yvon, Bensheim, Germany). The measurements were performed with slit widths of 3 nm for excitation and 4 nm for emission, respectively. The protein concentration was 1 µM and the temperature 20°C. Unfolding transitions were carried out by denaturing the samples overnight in GdmCl concentrations from 0 to 4 M. The fluorescence intensity was measured at 349 nm every second for 50 s, and the average was taken. Analysis of the data was carried out assuming a two-state unfolding as described previously (Pace, 1986; Santoro and Bolen, 1988).
 
-## Analytical ultracentrifugation (AUC)
+### Analytical ultracentrifugation (AUC)
 
 AUC measurements were carried out using a ProteomLab XL-I (Beckman, Krefeld, Germany) equipped with absorbance optics. The protein concentration for the measurements was 20 µM in PBS buffer. A total of 350 µL per sample was loaded into assembled cells with quartz windows and 12-mm-path-length charcoal-filled epon double-sector centerpieces. The measurements took place at 42,000 rpm in an eight-hole Beckman-Coulter AN50-ti rotor at 20°C. Sedimentation was continuously scanned with a radial resolution of 30 µm and monitored at 280 nm. Data analysis was carried out with SEDFIT using the continuous c(S) distribution mode (Brown and Schuck, 2006; Schuck, 2000).
 
-## Thioflavin T (ThT) assay
+### Thioflavin T (ThT) assay
 
 ThT assays were performed in black 96 well microplates (#437112, Nunc, ThermoFisher Scientific, Roskilde, Denmark). The fibril formation kinetics were followed by measuring every plate well at 440 nm excitation and 480 nm emission wavelengths every 30 min with a Tecan Genios plate reader (Tecan Group Ltd., Männedorf, Switzerland) (Gade Malmos et al., 2017). To remove aggregates and oligomers and prevent seed formation during the assay, monomer isolation was performed prior to the experiment by ultracentrifugation in an Optima MAX-E ultracentrifuge, (Beckman, Krefeld, Germany). Assays were performed in a final volume of 250 µL per well with 20 µM protein 10 µM ThT in PBS buffer (pH 7.4) containing 0.5 mM SDS to support fibril formation (Kihara et al., 2005; Nokwe et al., 2015; Yamamoto et al., 2004) and 0.05% NaN3. Microplates were covered with a Crystal Clear PP sealing foil (HJ-Bioanalytik GmbH, Erkelenz, Germany) and kept in the plate reader at 37°C under continuous orbital shaking of 180 rpm.
 
-## Transmission Electron Microscopy (TEM)
+### Transmission Electron Microscopy (TEM)
 
 To obtain TEM micrographs, 10 µL samples were taken from the completed ThT-assay wells, applied onto a 200-mesh activated copper grid and incubated for 1 min. The samples were washed with 20 µL H2O and negatively stained with 8 µl of a 1.5% (w/v) uranyl acetate solution for 1 min. Excess solutions were removed using a filter paper. Micrographs were recorded on a JEOL JEM-1400 Plus transmission electron microscope (JEOL Germany GmbH, Freising, Germany) at 120 kV.
 
-## Hydrogen/deuterium exchange-mass spectrometry (H/DX-MS)
+### Hydrogen/deuterium exchange-mass spectrometry (H/DX-MS)
 
 H/DX-MS experiments were performed on a fully automated system equipped with a Leap robot (HTS PAL; Leap Technologies, NC), a Waters ACQUITY M-Class UPLC, a H/DX manager (Waters Corp., Milford, MA) and a Synapt G2-S mass spectrometer (Waters Corp., Milford, MA), as described elsewhere (Zhang et al., 2014). The protein samples were diluted in a ratio of 1:20 with deuterium oxide containing PBS buffer (pH 7.4) and incubated for 0 s, 10 s, 1 min, 10 min, 30 min or 2 hr. The exchange was stopped by diluting the labeled protein 1:1 in quenching buffer (200 mM Na2HPO4 × 2 H2O, 200 mM NaH2PO4 × 2H2O, 250 mM Tris (2-carboxyethyl)phosphine, 3 M GdmCl, pH 2.2) at 1°C. Digestion was performed on-line using an immobilized Waters Enzymate BEH Pepsin Column (2.1 × 30 mm) at 20°C. Peptides were trapped and separated at 0°C on a Waters AQUITY UPLC BEH C18 column (1.7 µm, 1.0 × 100 mm) by a H2O to acetonitrile gradient with both eluents containing 0.1% formic acid (v/v). Eluting peptides were subjected to the Synapt TOF mass spectrometer by electrospray ionization. Samples were pipetted by a LEAP autosampler (HTS PAL; Leap Technologies, NC). Data analysis was conducted with the Waters Protein Lynx Global Server PLGs (version 3.0.3) and DynamX (Version 3.0) software package.
 
-## Molecular Dynamics (MD) simulations
+### Molecular Dynamics (MD) simulations
 
 Molecular dynamics (MD) simulations were performed employing the Amber16 simulation package (Case et al., 2016). In order to analyse the stability of the VL domain under specific mutations, Umbrella sampling (US) simulations were carried out with the pmemd.cuda module of the Amber16 package. The simulated constructs were the wild type WT-1, the patient mutant Pat-1, the single back mutation of the patient mutant Pat-1 V81L and the double back mutation of the patient mutant Pat-1 V81L L15P. For this purpose, the Amber ff14SB force field and the TIP3P solvent model (Jorgensen et al., 1983) were used. Each construct was solvated in water in a periodic solvent octahedron box with a minimum distance of 10.0 Å between each atom of the protein and the edge of the periodic box. Apart from that, a neutralization of the solution was achieved by adding Na+ and Cl- ions. Relaxation of the structure was carried out with an energy minimization of maximum 1500 minimization cycles. Each system was then heated up in steps of 100K, for 10ps each, until a temperature of 300 K was reached, whereby the system was harmonically restraint to the start structure with a restraint force constant of 25.0 kcal/molÅ². Afterwards, the system was equilibrated by gradually reducing the restraint force, in five steps of 10ps each, to a restraint force constant of 0.5 kcal/molÅ². For the heating and equilibration, MD-steps of 2 ps were used. Subsequently, hydrogen mass repartitioning (HMR) was performed in order to enable an increment in the simulation time step from 2 ps to 4 ps for the production simulations (Hopkins et al., 2015).
 

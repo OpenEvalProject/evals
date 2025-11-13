@@ -21,7 +21,7 @@
 
 ## Abstract
 
-As climate-driven heat waves become more frequent and intense, there is increasing urgency to understand how thermally sensitive species are responding. Acute heating events lasting days to months may elicit acclimation responses to improve performance and survival. However, the coordination of acclimation responses remains largely unknown for most stenothermal species. We documented the chronology of 18 metabolic and cardiorespiratory changes that occur in the gills, blood, spleen, and muscles when tropical coral reef fishes are thermally stressed (+3.0°C above ambient). Using representative coral reef fishes ( Caesio cuning and Cheilodipterus quinquelineatus ) separated by >100 million years of evolution and with stark differences in major life-history characteristics (i.e. lifespan, habitat use, mobility, etc.), we show that exposure duration illicited coordinated responses in 13 tissue and organ systems over 5 weeks. The onset and duration of biomarker responses differed between species, with C. cuning – an active, mobile species – initiating acclimation responses to unavoidable thermal stress within the first week of heat exposure; conversely, C. quinquelineatus – a sessile, territorial species – exhibited comparatively reduced acclimation responses that were delayed through time. Seven biomarkers, including red muscle citrate synthase and lactate dehydrogenase activities, blood glucose and hemoglobin concentrations, spleen somatic index, and gill lamellar perimeter and width, proved critical in evaluating acclimation progression and completion, as these provided consistent evaluation of thermal responses across species.
+As climate-driven heat waves become more frequent and intense, there is increasing urgency to understand how thermally sensitive species are responding. Acute heating events lasting days to months may elicit acclimation responses to improve performance and survival. However, the coordination of acclimation responses remains largely unknown for most stenothermal species. We documented the chronology of 18 metabolic and cardiorespiratory changes that occur in the gills, blood, spleen, and muscles when tropical coral reef fishes are thermally stressed (+3.0°C above ambient). Using representative coral reef fishes (Caesio cuning and Cheilodipterus quinquelineatus) separated by >100 million years of evolution and with stark differences in major life-history characteristics (i.e. lifespan, habitat use, mobility, etc.), we show that exposure duration illicited coordinated responses in 13 tissue and organ systems over 5 weeks. The onset and duration of biomarker responses differed between species, with C. cuning – an active, mobile species – initiating acclimation responses to unavoidable thermal stress within the first week of heat exposure; conversely, C. quinquelineatus – a sessile, territorial species – exhibited comparatively reduced acclimation responses that were delayed through time. Seven biomarkers, including red muscle citrate synthase and lactate dehydrogenase activities, blood glucose and hemoglobin concentrations, spleen somatic index, and gill lamellar perimeter and width, proved critical in evaluating acclimation progression and completion, as these provided consistent evaluation of thermal responses across species.
 
 ## Introduction
 
@@ -39,9 +39,95 @@ Studies that focus on single physiological responses, single time points, or nat
 
 This study aimed to identify the key physiological compensatory responses and sequence of responses that occur when warm-adapted stenothermal fishes are exposed to elevated temperatures beyond those for which they have evolved. We focused on two representative stenothermal fishes found in tropical coral reef ecosystems (Lough, 2012; Tewksbury et al., 2008): the five-lined cardinalfish Cheilodipterus quinquelineatus (Apogonidae) and the redbelly yellowtail fusilier Caesio cuning (Caesionidae). These species evolved under highly stable thermal regimes, as seasonal water temperatures typically fluctuate less than 4°C across the majority of tropical reefs (Donner, 2011; Lough, 2012). These species are also separated by more than 100 million years of evolution (Near et al., 2013) and differ in most major life-history characteristics, including lifespan (<2 versus>8 years), habitat use (site-attached versus roaming), and mobility (sedentary versus mobile) for C. quinquelineatus and C. cuning, respectively (Randall et al., 1997). We hypothesized that these differences in life history characteristics may alter the physiological responses to unfavorable thermal conditions, with C. quinquelineatus resilient to short-term perturbations (due to its sedentary and site-attached life-history) as evidenced by a slower, less substantial acclimation response when compared to C. cuning (which could escape unfavorable conditions through its roaming, mobile life history). We compared fish accustomed to current-day maximum temperatures (summer average: 29°C) to fish exposed to conditions typical of acute heating events and in line with projected future climate change conditions (+3.0°C) (Garrabou et al., 2009; Hughes et al., 2017; IPCC, 2013; Pörtner et al., 2019). Thermal acclimation was assessed weekly over a 5-week period using a comprehensive set of 18 hematological and cardiorespiratory parameters. These parameters included biochemical pathways within tissues and blood, blood oxygen transport and gill morphology, as well as whole animal metabolism and body condition (see Table 1 for full list). Based on previous reports of the timing and duration of physiological responses of stenothermal fishes to elevated temperatures (e.g. Madeira et al., 2016; Sidell et al., 1973; Somero, 2015), we hypothesized that it would take a minimum of 3 weeks for the putative ‘slower acclimating species’ (C. quinquelineatus) to stabilize all hematological and cardiorespiratory parameters following elevated temperature exposure.
 
+**Table 1.**
+ Acclimation responses of 18 hematological and cardiorespiratory parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Parameter</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Muscle + Gill</td>
+      <td>Citrate synthase activity (CS)</td>
+      <td>An exclusive marker of the mitochondrial matrix and a marker of mitochondrial density in tissues</td>
+    </tr>
+    <tr>
+      <td>Lactate dehydrogenase (LDH)</td>
+      <td>An enzyme involved in anaerobic energy production</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spleen</td>
+      <td>Spleen somatic index (SSI)</td>
+      <td>The relative spleen to body mass, used to assess release of red blood cell stores into the blood stream</td>
+    </tr>
+    <tr>
+      <td>Spleen [Hb]</td>
+      <td>An indicator of red blood cell production within the spleen</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Blood</td>
+      <td>Mean corpuscular hemoglobin content (MCHC)</td>
+      <td>Hemoglobin concentration in red blood cells, indicative of blood oxygen carrying capacity</td>
+    </tr>
+    <tr>
+      <td>Hematocrit (Hct)</td>
+      <td>The ratio of red blood cells to the total volume of blood</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin (Hb)</td>
+      <td>The protein responsible for transporting oxygen in the blood</td>
+    </tr>
+    <tr>
+      <td>Whole blood lactate</td>
+      <td>Lactic acid appears in the blood as a result of anaerobic metabolism</td>
+    </tr>
+    <tr>
+      <td>Whole blood glucose</td>
+      <td>Used to support the metabolic pathways in the mitochondria and cytoplasm</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Gill</td>
+      <td>Lamellar perimeter</td>
+      <td>The perimeter of a cross-section of the lamellae measured histologically as a proxy for total diffusible surface area for O2 transport over the lamellae.</td>
+    </tr>
+    <tr>
+      <td>Lamellar width</td>
+      <td>The histological total diameter of the lamellae epithelium and capillary. Lamellar width is here used to indicate the epithelial thickness of the lamellae (i.e. diffusion distance for O2).</td>
+    </tr>
+    <tr>
+      <td>Epithelial thickness</td>
+      <td>A measure of the diameter of the epithelia on the lamellae</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Whole body metabolism</td>
+      <td>Standard metabolic rate (SMR)</td>
+      <td>Baseline oxygen consumption required to maintain bodily functions.</td>
+    </tr>
+    <tr>
+      <td>Maximum metabolic rate (MMR)</td>
+      <td>Maximal oxygen consumption</td>
+    </tr>
+    <tr>
+      <td>Aerobic scope (ASc)</td>
+      <td>The difference between MMR and SMR, indicating the maximal O2 available for activity.</td>
+    </tr>
+    <tr>
+      <td>Whole body condition</td>
+      <td>Fulton’s K condition factor</td>
+      <td>Length-mass relationship used to estimate health of an individual</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Weeks 0–1: initial thermal stress responses
+### Weeks 0–1: initial thermal stress responses
 
 Relative to controls, C. cuning showed changes in blood and muscle parameters within the first week of exposure to elevated temperatures. Blood glucose levels in C. cuning more than doubled from weeks 0 to 1, from 1.93 to 4.65 mM (pp.c.week1 = 0.003; Figure 1) (p.c.week1 denotes a planned comparison [p.] between control [c.] and week one individuals. See Materials and methods for details). In the pectoral muscle of C. cuning, the anaerobic metabolic enzyme, LDH, declined precipitously in week 0 compared to controls, from 1.36 to 0.61 mM (pp.c.week0 = 0.003; Figure 2). Conversely, muscle LDH in C. quinquelineatus was consistent with control levels from weeks 0 to 1 (pp.c.week0 > Pcutoff, pp.c.week1 > Pcutoff; Figure 2).
 
@@ -51,7 +137,7 @@ Relative to controls, C. cuning showed changes in blood and muscle parameters wi
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59162/elife-59162-fig2-v1.jpg)
 
-**Figure 2.:** Caesio cuning (A and B) and Cheilopterus quinquelineatus (C and D).The first blue column in each figure illustrates the control (29.0°C). Letters above columns indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
+**Figure 2.:** The first blue column in each figure illustrates the control (29.0°C). Letters above columns indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
 
 Both C. cuning and C. quinquelineatus exhibited changes in metabolic oxygen transport characteristics, demand, and/or aerobic capacity immediately following exposure to elevated temperature. Relative to controls, C. cuning exhibited greater lamellar width (pp.c.week1 = 0.002; Figures 3 and 4) and higher SMR (pp.c.week0 = 0.021; Figure 5) within 1 week of exposure to the elevated temperature treatment. However, only moderate, non-significant increases in MMR (pp.c.week0 > Pcutoff) and ASc (pp.c.week0 > Pcutoff; Figure 5) were found. Conversely, C. quinquelineatus showed no acute changes to gill structure (Figures 3 and 4) and only a moderate, non-significant increase in SMR (pp.c.week0 > Pcutoff; Figure 5). However, both MMR and ASc were significantly higher for C. quinquelineatus in the first week of temperature treatment, relative to controls (MMS: pp.c.week0 <0.001, pp.c.week1 <0.001; ASc: pp.c.week0 <0.001, pp.c.week1 <0.001; Figure 5). After 1 week of acclimation, SMR showed no significant difference from control levels in either species (Figure 5). Importantly, while no mortality was recorded for C. cuning in weeks 0 and 1, C. quinquelineatus showed a 79% and 20% mortality after exhaustive exercise in weeks 0 and 1, respectively (Appendix 1—figure 1).
 
@@ -61,29 +147,29 @@ Both C. cuning and C. quinquelineatus exhibited changes in metabolic oxygen tran
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59162/elife-59162-fig4-v1.jpg)
 
-**Figure 4.:** Caesio cuning (A and B) and Cheilopterus quinquelineatus (C and D).The first blue column in each figure illustrates the control (29.0°C). Letters above columns indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). The white bar denotes data excluded from analyses due to low n, but shown for clarity. ‘NS’ denotes that the model did not indicate any significant effects of temperature. Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
+**Figure 4.:** The first blue column in each figure illustrates the control (29.0°C). Letters above columns indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). The white bar denotes data excluded from analyses due to low n, but shown for clarity. ‘NS’ denotes that the model did not indicate any significant effects of temperature. Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59162/elife-59162-fig5-v1.jpg)
 
-**Figure 5.:** Caesio cuning (A and B) and Cheilopterus quinquelineatus (C and D).Estimates of standard (white circles) and maximum (black circles) metabolic rates (A and C) and aerobic scope (ASc = triangles, B and D) are illustrated. The first blue data point in panels B and D represent the control (29.0°C). Letters above data points indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
+**Figure 5.:** Estimates of standard (white circles) and maximum (black circles) metabolic rates (A and C) and aerobic scope (ASc = triangles, B and D) are illustrated. The first blue data point in panels B and D represent the control (29.0°C). Letters above data points indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
 
-## Weeks 2 –3: delayed acclimation responses
+### Weeks 2 –3: delayed acclimation responses
 
 A number of traits exhibited delayed acclimation responses 2–3 weeks after exposure to elevated temperature. In C. cuning, blood glucose levels remained elevated until week 2 following high-temperature treatment (pp.c.week2 = 0.029); however, levels did not vary significantly different from controls from week 3 onwards (Figure 1). In week 3, C. quinquelineatus showed a peak in LDH activity in the pectoral muscle (pp.c.week3 = 0.021; Figure 2), and spleens contracted by 56.2% (as measured through spleen somatic index, SSI; pp.c.week3 <0.001; Figure 6), when compared to controls.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/59162/elife-59162-fig6-v1.jpg)
 
-**Figure 6.:** Caesio cuning (A and B) and Cheilopterus quinquelineatus (C and D).The first blue column in each figure illustrates the control (29.0°C). Letters above columns indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). ‘NS’ denotes that the model did not indicate any significant effects of temperature. Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
+**Figure 6.:** The first blue column in each figure illustrates the control (29.0°C). Letters above columns indicate significant differences between treatment groups, determined through multiple comparisons post-hoc testing (based on linear mixed-effects model analysis). ‘NS’ denotes that the model did not indicate any significant effects of temperature. Error bars are s.e.m., and numbers in parentheses below each category on the x-axis denote sample size.
 
 Gill morphology in both species also shifted in weeks 2 and 3. Caesio cuning continued to show increased lamellar width through weeks 2 and 3 (pp.c.week2 <0.001; pp.c.week3 <0.001; Figure 4). This was augmented in week 3 by a significant increase in total diffusible lamellar perimeter (pp.c.week3 <0.001; Figure 3). For C. quinquelineatus, initial epithelial thickness and lamellar width were maintained (Figure 4), but showed a significant decrease in total lamellar perimeter in week 2 (pp.c.week2 <0.001; Figure 3).
 
 Metabolic rate also continued to change during this time period in both species. The acclimation responses initiated by C. cuning culminated in a peak in whole animal MMR and ASc after 3 weeks’ exposure to elevated temperatures when compared to controls (MMR, pp.c.week3 = 0.013; ASc, pp.c.week3 = 0.017; Figure 5). Conversely, MMR remained elevated through week 2 for C. quinquelineatus (pp.c.week2 = 0.002; Figure 5). This species’ ongoing morphological and biochemical adjustments came with a brief reduction in both SMR and MMR below control values in week 3 (SMR: pp.c.week3 = 0.002; MMR: pp.c.week3 = 0.015), leading ASc to return to control levels in this species (Figure 5). Again, C. quinquelineatus exhibited 56% and 38% mortality after exhaustive exercise during weeks 2 and 3, respectively (Appendix 1—figure 1), while no mortality was recorded for C. cuning throughout the study.
 
-## Weeks 3–5: stabilization of acclimation responses
+### Weeks 3–5: stabilization of acclimation responses
 
 The succession of physiological parameters began plateauing after 3–5 weeks of continuous exposure to elevated temperatures. In C. cuning, CS activity in the gill and pectoral muscle was one of the last parameters to respond to elevated temperatures, as both traits declined to a significant minimum in week 4 (Muscle: pp.c.week4 = 0.011; Gill: pp.c.week4 <0.001) before returning to control levels in week 5 (p p.c.week5 >0.5 for both; Figure 2, Appendix 1—figure 2). Caesio cuning also required 4 weeks for all morphological gill parameters to return to control values (pp.c.week4 > Pcutoff), following increased lamellar width in weeks 1–3 and increased lamellar perimeter in week 3 (Figures 3 and 4). Conversely, C. quinquelineatus showed no change in gill CS activity but exhibited a peak in CS activity in the pectoral muscle in week 4 (pp.c.week4 = 0.004; Figure 2) and declining muscle LDH activity from weeks 3 to 5 (pp.c.week5 = 0.016; Figure 2). In both species, MMR and ASc both returned to control values in week 4 (Figure 5). However, in C. quinquelineatus, this was accompanied by a 38.5% mortality rate after exhaustive exercise in weeks 3 and 4 (Appendix 1—figure 1).
 
-## Past week 5: ongoing acclimation
+### Past week 5: ongoing acclimation
 
 Several parameters had yet to stabilize in either species after 5 weeks’ exposure to elevated temperatures. For C. cuning, spleen [Hb] exhibited a non-significant trend (pp.c.week5 > Pcutoff) to increase over the entire 5-week period culminating in a significant peak in week 5 relative to week 0 (pp.week0.week5=0.007), indicative of ongoing compensatory mechanisms for blood oxygen transport (Figure 6). While C. quinquelineatus showed no significant change in spleen [Hb] over the 5-week exposure period, this species did exhibit a significant reduction in spleen somatic index (pp.c.week5 <0.001, Figure 6) from week 3 onwards, through the end of the 5-week exposure period. This sequence of physiological responses over 5 weeks (and ongoing acclimation) is summarized in Figure 7.
 
@@ -91,7 +177,7 @@ Several parameters had yet to stabilize in either species after 5 weeks’ expos
 
 **Figure 7.:** Summary of the timing and duration of the physiological responses of two stenothermal fishes (Caesio cuning, top, and Cheilodipterus quinquelineatus, bottom) to a 5-week acute heating event, including responses in mortality, whole organism demand (standard metabolic rate, SMR), whole organism supply (maximum metabolic rate, MMR, and aerobic scope, ASc), tissue demand (citrate synthase, CS, and lactate dehydrogenase, LDH, enzyme activity in the gill and muscle tissue), and tissue supply (lamellar width and perimeter, blood glucose, spleen [Hb], and spleen somatic index, SSI).
 
-## Non-responsive parameters
+### Non-responsive parameters
 
 Several parameters were unaltered by elevated temperature through time. Neither species exhibited significant plasticity in gill LDH activity over the 5-week exposure period (Appendix 1—figure 2). Additionally, although spleen [Hb] increased over the 5-week exposure to elevated temperatures in C. cuning (Figure 6), we found no indication of new RBCs being released into circulation over the first 5 weeks’ exposure, as there were no significant differences in hematocrit, whole blood [Hb], MCHC, or spleen somatic index between control and +3.0°C-exposed individuals (pp.c.week5 > pcutoff; Figure 6, Appendix 1—figure 2). Caesio cuning also showed no change in blood [lactate] from control levels at any time point (Figure 1), suggesting that this species was not relying heavily on anaerobic energy production to the point that lactate was detectable in the plasma. Individuals from both species and all treatments also maintained Fulton’s K condition factor (i.e. body condition, Appendix 1—figure 3), suggesting that the physiological changes detected in +3.0°C-exposed individuals were due to changing temperature conditions rather than waning health under laboratory confinement.
 
@@ -99,11 +185,11 @@ Several parameters were unaltered by elevated temperature through time. Neither 
 
 Understanding the impacts of global change on species fitness and resilience requires a comprehensive, integrative approach across multiple levels of biological organization and time points (Cossins et al., 1977; Sidell et al., 1973; Somero, 2015). Here, we provide the first comprehensive assessment of the key compensatory mechanistic responses and sequence of events that occur when warm-adapted stenothermal fishes are exposed to elevated temperatures above those for which they have evolved. Elevated temperature resulted in discrete responses in the gills, blood, spleen, and muscle across 13 separate hematological and cardiorespiratory parameters (see Table 1 for details). As hypothesized, the specific acclimation responses and duration of events differed among the study species, potentially due to divergent evolution and ecology. Caesio cuning exhibited rapid responses to thermal stress, with nearly immediate changes detected in gill morphology and blood parameters. Cheilodipterus quinquelineatus, conversely, largely exhibited a delayed response in all parameters measured, potentially contributing to the much higher (>50%) mortality seen across the 5-week heating event. Importantly, we identified seven conserved physiological parameters across both species that may be useful as biomarkers for evaluating the progression of acclimation in thermally sensitive teleosts, and which may greatly improve our understanding and projections of ongoing climate change threats and disturbances.
 
-## Initial stress responses
+### Initial stress responses
 
 For ectotherms, rising temperature causes an exponential increase in the energetic costs associated with maintaining bodily functions (i.e. Q10, Rao and Bullock, 1954). Accordingly, short-term exposure (≤1 week) to elevated temperatures elicited primary stress responses in the blood, gills, and whole animal metabolism, which is consistent with a rapid increase in total energy demand (e.g. Angilletta, 2009; Brett, 1971; Fry and Hart, 1948; Guderley and Blier, 1988). Caesio cuning appeared to increase energy delivery by increasing blood glucose levels, which allows enhanced energy production via aerobic oxidative phosphorylation and glycogenolysis in the liver (Jayasundara et al., 2013). In order to increase aerobic energy production, teleosts typically also require increased oxygen transport at the gills for delivery to tissues and organs (e.g. Jensen et al., 1993). Elevated temperatures will increase rates of diffusion across the gill epithelium, and our results suggest that C. cuning increased blood flow through the gills for increased oxygen transport (denoted by increased lamellar width). Accordingly, SMR rose immediately by 53.5% in C. cuning following exposure to elevated temperatures. Interestingly, C. quinquelineatus did not appear to similarly increase energy supply to the organs, as there was no immediate increase in lamellar width. This species also showed a staggering 79% mortality following exercise within the first week, suggesting that the limited acclimation response may have been associated with systemic organ failure in a high proportion of individuals.
 
-## Prolonged acclimation responses
+### Prolonged acclimation responses
 
 Secondary acclimation processes were initiated after 2–3 weeks of continuous exposure to elevated temperatures. The sequential responses in tissue enzyme activity, SSI, and gill morphology can be linked to increased RBC concentration, enhanced oxygen transport, and improved gill oxygen uptake (Jayasundara et al., 2013; Windisch et al., 2011). These concurrent adjustments likely contributed to the measured increase in MMR and ASc through at least the second week and thereby reduced trade-offs between energy production and demand within the tissues.
 
@@ -111,7 +197,7 @@ Although the observed adaptive remodeling in gill structure would allow for enha
 
 After 3–5 weeks of continuous exposure to elevated temperatures, multiple systemic morphological and biochemical parameters started stabilizing at levels that appeared to reduce trade-offs between competing biological functions. Indicators of anaerobic and aerobic energy metabolism within the blood and tissues peaked by week 4 (specifically LDH, MMR, ASc, lamellar perimeter and width, and muscle and gill CS). Most parameters subsequently returned to control values in weeks 4–5, consistent with a steady decreasing need for anaerobic metabolism and increasing aerobic energy production. These trends suggest that adjustments to sustain increased energy production required at least 4–5 weeks of continuous exposure to elevated temperatures to plateau (see Table 1 for duration of individual parameters). However, in both species, pathways relevant for RBC production and storage exhibited signs of on-going recovery beyond week 5, with SSI still depleted in C. quinquelineatus and rising spleen [Hb] in C. cuning.
 
-## Divergent acclimation pathways with same endpoints relates to species evolution and life history
+### Divergent acclimation pathways with same endpoints relates to species evolution and life history
 
 We found two divergent strategies for maintaining oxygen transport and energy production during prolonged exposure to elevated temperatures. Caesio cuning exhibited a more immediate and comprehensive series of responses to thermal stress, including increasing splenic hemoglobin concentrations (i.e. RBC production), progressive changes in gill structure, altered aerobic and anaerobic enzymatic activity, and elevated blood glucose. These physiological responses can be associated with increasing oxygen transport in response to rising metabolic maintenance costs at high temperature (Seebacher et al., 2015; Sollid and Nilsson, 2006). Importantly, the combined physiological adjustments within C. cuning appeared to allow this species to return maximal oxygen transport to control levels within 5 weeks, and allowed them to maintain a high survival rate despite thermal stress. In contrast, C. quinquelineatus appeared to have a very limited capacity for rapid acclimation, as thermal stress severely compromised survival. As hypothesized for this species, plasticity in physiological and morphological traits appeared to be delayed, with few changes observed until 2–3 weeks following exposure to elevated temperatures, at which point plasticity in enzyme activity, gill structure, and SSI were finally observed. These delays likely contributed to the notably high mortality rate observed in the first 2 weeks in the high-temperature treatment group for this species (Li et al., 2015), with 20–79% mortality rates following exercise during this time period.
 
@@ -119,37 +205,136 @@ These two contrasting acclimation responses (immediate vs. delayed) may be relat
 
 The devastating impacts of climate change on marine resources reinforces the urgent need for cross-disciplinary studies addressing the timescales, mechanisms, and limitations of thermal responses in ectothermal marine species (Audzijonyte et al., 2019; Jutfelt et al., 2018). The GOLT hypothesis asserts that fishes are unable to make necessary morphological adjustments to gill tissues to meet increased oxygen demands under elevated temperatures (Pauly, 2019) and has been proposed as a unifying explanation for an observed reduction in size and mass of fishes under climate change (Pauly and Cheung, 2018). Here, we found clear signs of adaptive remodeling of the gill perimeter and width in both of the species tested, resulting in increased lamellar surface area after 1–3 weeks of continuous exposure to elevated temperatures. As such, the responses reported here do not conform to the GOLT. Instead, these data provide further support to the counter argument in Lefevre et al., 2017, Lefevre et al., 2018, which states that gill surface area can increase to support metabolic needs and that temperature-driven changes in size and mass must be explained by other mechanisms (Lefevre et al., 2018). Our results do, however, support the idea that cardio-respiratory transport and tissue demand are primary determinants of an organism’s performance under ocean warming (see extended discussions in Ern, 2019; Portner, 2014; Sandblom et al., 2016), as an increase in total energy supply appeared to support C. cuning through the 5-week acclimation period. whereas a lack of aerobic energy availability was associated with mass mortality in C. quinquelineatus.
 
-## Useful biomarkers of thermal stress and ongoing acclimation
+### Useful biomarkers of thermal stress and ongoing acclimation
 
 Seven biomarkers stood out as useful, conserved indicators to assess the degree and progress of thermal acclimation. These include muscle CS activity, as an indication of changes in aerobic metabolism and mitochondrial density (Jayasundara et al., 2013; Windisch et al., 2011); blood glucose and muscle LDH activity, as indicators of anaerobic energy production (Jayasundara et al., 2013; Windisch et al., 2011); splenic RBC stores (SSI and Spleen [Hb]), denoting altered oxygen transport capacity (Ken-Ichi, 1988), and lamellar perimeter and width, illustrating changes to oxygen uptake capacity over the gills (Sollid and Nilsson, 2006). These seven parameters responded to short-term and prolonged exposure to elevated temperatures in one or both of our study species, and all subsequently returned to control values, except for splenic RBC stores. Although never previously examined in such detail, similar responses have been suggested in other non-warm adapted, thermally-sensitive species during prolonged exposure to elevated temperatures (Jayasundara et al., 2013; Windisch et al., 2011). The Antarctic notothenioid (Trematomus bernacchii) and eelpout (Pachycara brachycephalum), for example, both appear to increase CS and LDH activities in response to rising energetic needs (Jayasundara et al., 2013; Windisch et al., 2011). These responses were attributed to both a shift in the primary metabolic fuel from lipids to carbohydrates, as carbohydrates can sustain anaerobic metabolism (Jayasundara et al., 2013), and a decrease in ATP-generating capacity, either due to limitations in oxygen delivery or impaired oxidative phosphorylation due to mitochondrial failure (Jayasundara et al., 2013; Windisch et al., 2011). Our data provide new insight to support these findings for warm- and cold-adapted stenotherms alike. Similar responses in oxygen transport capacity and gill structure have also previously been recorded in some temperate marine and tropical freshwater fishes (Chapman et al., 2000; Sollid and Nilsson, 2006). Populations of African cichlids can increase lamellar surface area to facilitate greater oxygen transport (Chapman et al., 2000; Schaack and Chapman, 2003), highlighting that the acclimation responses identified here may, in fact, be useful biomarkers in a range of tropical species. Due to differences among species, however, our data highlight that it is critical to examine several biomarkers together to more accurately ascertain whether acclimation is still ongoing at a given time point.
 
-## Conclusions and recommendations
+### Conclusions and recommendations
 
 A mechanistic understanding of the rates, processes, and limitations of acclimation to global warming is critically important to understand species resilience into the future and to improve the accuracy of fisheries and ecosystem projections. Our study provides the first comprehensive, mechanistic investigation of the thermal acclimation processes of tropical stenothermal fishes and the rates at which they occur. Some parameters, such as SMR, may adjust within as little as 2 weeks. However, many other physiological parameters, including ASc and splenic RBC stores, appear to require significantly longer exposure periods to adjust. These results suggest that studies relying on shorter acclimation periods of less than 5 weeks may not capture the complete acclimation or performance capacity of a species following an acute heating event.
 
 ## Materials and methods
 
-## Study species and maintenance
+### Study species and maintenance
 
 Two species of tropical coral reef fishes were collected from locations in the northern Great Barrier Reef using barrier nets, hand nets, and a mild clove oil anaesthetic solution under Marine Parks Permit #G10/33239.1. The five-lined cardinalfish, C. quinquelineatus (n = 143 fish; 1.48 ± 0.08 g, body mass ± SE), was collected from Sudbury Reef (17.00°S, 146.08°E) in the Cairns region in March-April 2014. The redbelly yellowtail fusilier C. cuning, (n = 110 fish; 22.20 ± 1.03 g, body mass ± SE), was collected from the reefs surrounding Lizard Island (14.67°S, 145.46°E) in December 2013. In both instances, water temperature was within 1°C of control. Fishes were transported to the Marine and Aquaculture Research Facilities Unit (MARFU) at James Cook University in Townsville, Queensland, Australia.
 
 All fishes were maintained in aquaria for a minimum of 14 days before acclimation trials began. Fishes were maintained with a continuous supply of recirculated, filtered, aerated, and UV-sterilized sea water and fed to satiation daily with aquaculture pellets (NRD pellets, INVE Aquaculture, Salt Lake City, USA) and hatched Artemia spp. under a 12 hr:12 hr light:dark photoperiod. Individuals of each species were randomly assigned to the control or high-temperature (+3.0°C) treatment and either assessment of metabolic performance (using respirometry protocols) or tissue analyses (see Table 2 for sample sizes by treatment). To account for size differences between the two study-species, all experimental setups and holding tanks were optimized for body size (body mass, standard length, fish density, and total biomass). All C. cuning individuals (i.e. both those assigned to respirometry protocols and tissue analyses) were housed in 400 L round aquaria (diameter: 1.2 m, depth: 50 cm), at a density of approximately 1.4 g L−1 seawater. One week prior to experimentation, individual C. cuning that were assigned to respirometry trials were implanted with a unique visible implant elastomer (VIE) tag (Northwest Marine Technology, Inc, Shaw Island, USA) subcutaneously below the dorsal fin, which allowed for individual recognition through time with little to no deleterious impacts to the animal (Hoey and McCormick, 2006). For C. quinquelineatus, given cardinalfishes sensitivity to handling stress (Nilsson et al., 2010; Rummer et al., 2014), individuals assigned to respirometry trials were each placed in their own individual transparent 3 L aquaria adjacent to conspecifics, in order to allow for individual identification through time while minimizing risk of stress-induced mortality. Fish used for tissue analyses were housed in 9L aquaria (W:22.0 cm x H:22.5 cm x L:22.0 cm) at a density of approximately 1 g L−1 seawater. All animal care and experimental procedures complied with those framed by the James Cook University Animal Ethics Committee (Permit A2089, approved for this study).
 
-## Temperature acclimation
+**Table 2.**
+ Sample size of each parameter across species and exposure week.For histological samples, each Individual was used for both tissue and gill analyses. For respirometry (due to ethical requirements to minimize sample numbers), we used a mixed-staggered repeated measures design in which each individual was tested twice where possible, but with a 3-week separation between each trial (i.e. Week 0 and Week 3, Week 1 and Week 4, and Week 2 and Week 5).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Parameter</th>
+      <th>Ctrl Week 0</th>
+      <th>Crtl Week 5</th>
+      <th>Week 0</th>
+      <th>Week 1</th>
+      <th>Week 2</th>
+      <th>Week 3</th>
+      <th>Week 4</th>
+      <th>Week 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C. quinquelineatus</td>
+      <td>Tissue</td>
+      <td>8</td>
+      <td>8</td>
+      <td>7</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>C. quinquelineatus</td>
+      <td>Gill (thickness, perimeter, width)</td>
+      <td>5, 4, 4</td>
+      <td>6, 3, 3</td>
+      <td>5, 5, 5</td>
+      <td>5, 6, 6</td>
+      <td>7, 6, 6</td>
+      <td>2, 2, 2</td>
+      <td>7, 4, 4</td>
+      <td>6, 5, 5</td>
+    </tr>
+    <tr>
+      <td>C. quinquelineatus</td>
+      <td>Respirometry / mortality</td>
+      <td>8</td>
+      <td>8</td>
+      <td>14</td>
+      <td>10</td>
+      <td>9</td>
+      <td>13</td>
+      <td>13</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>C. cuning</td>
+      <td>Tissue / blood</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>C. cuning</td>
+      <td>Gill (thickness, perimeter, width)</td>
+      <td>7, 6, 6</td>
+      <td>5, 4, 4</td>
+      <td>8, 8, 8</td>
+      <td>7, 5, 5</td>
+      <td>5, 5, 5</td>
+      <td>8, 5, 5</td>
+      <td>7, 5, 7</td>
+      <td>6, 6, 6</td>
+    </tr>
+    <tr>
+      <td>C. cuning</td>
+      <td>Respirometry / mortality</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>7</td>
+      <td>8</td>
+      <td>8</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Temperature acclimation
 
 All fishes were either assigned to a control group (29.0 ± 0.5°C; target temperature treatment ± range) or a high-temperature group (32.0 ± 0.5°C). The control temperature replicated the average summer temperature experienced in the northern Great Barrier Reef (Hughes et al., 2017). The high-temperature treatment was chosen to simulate the estimated +3.0°C already experienced during acute heating events and also projected as the mean rise in summer temperature by 2100 (Collins et al., 2013; Garrabou et al., 2009; Hughes et al., 2017; IPCC, 2013; Pörtner et al., 2019). In order to reach the experimental temperature for this treatment, water temperature was increased at a rate of 1.0°C day−1 until the target temperature was reached. Water temperature was maintained using automated heaters (5000W, Control Distributions, Carlton, Australia). To estimate the time required for acclimation, +3.0°C exposed fishes were tested and sampled weekly for 4–5 consecutive weeks and compared to concurrent control samples taken in the beginning and end of the experimental period. To ensure a post-absorptive state, food was withheld from all fishes for 24 hr prior to experimentation or sampling (Niimi and Beamish, 1974).
 
-## Respirometry
+### Respirometry
 
-Oxygen uptake rates (M˙O2) were obtained using intermittent-flow respirometry and used as a proxy for whole-animal aerobic metabolic rate (Svendsen et al., 2016). Three estimates of metabolic rate were examined: (1) SMR (metabolic rate of a fasted and resting individual), (2) MMR (the maximum aerobic metabolic rate that an individual can achieve, Svendsen et al., 2016), and (3) ASc (the scope for activities beyond basic maintenance) calculated as the absolute difference between MMR and SMR (Chabot et al., 2016; Norin and Clark, 2016; Roche et al., 2013). To measure M˙O2, individual fish were placed into a 0.5 m (diameter) round aquarium containing well-aerated and temperature-controlled seawater (0.2 m deep), which was maintained at the same temperature as the fish’s acclimation temperature (5000W, Control Distributions, Carlton, Australia). Fish were first chased continuously by hand for 3 min and then scooped into a mesh net and maintained out of the water for either 1 min (C. cuning) or 30 s (C. quinquelineatus) (Clark et al., 2013; Killen et al., 2017; Roche et al., 2013; Rummer et al., 2016). Following air exposure, fish were immediately placed into an acrylic cylindrical, intermittent-flow respirometry chamber (110 mL for C. quinquelineatus and 370 mL for C. cuning following the design of Svendsen et al., 2016) and submerged in an 800 L temperature-controlled water bath (5000W heater, Control Distributions, Carlton, Australia). Within 10 s of placing the fish into the chamber, post-exercise M˙O2 was monitored continuously. This continued for a period of 7 min (C. cuning) or 9 min (C. quinquelineatus), after which time a submersible flush pump (Aquapro AP200LV, 200 L h−1) flushed each chamber with aerated, temperature-controlled seawater from the surrounding water bath (3 min for both species). Following this, fish remained in chambers (with intermittent flushing cycles) to recover from exercise and reach SMR for an additional 18–24 hr, a time period deemed more than sufficient in similar reef fish species in past studies (Chabot et al., 2016; Roche et al., 2013). Each chamber was mixed continuously throughout each trial using a recirculating pump connected to the chamber in a closed loop, in order to ensure a homogenous concentration of oxygen throughout the chamber (Svendsen et al., 2016). A total of eight respirometry chambers were run in parallel. The 7- and 9-min measuring periods were chosen to ensure that M˙O2 produced a linear decline in oxygen saturation within the chambers sufficient to calculate slope, but short enough to maintain oxygen saturation levels above 80% for each species (following Svendsen et al., 2016).
+Oxygen uptake rates ($M˙O_{2}$) were obtained using intermittent-flow respirometry and used as a proxy for whole-animal aerobic metabolic rate (Svendsen et al., 2016). Three estimates of metabolic rate were examined: (1) SMR (metabolic rate of a fasted and resting individual), (2) MMR (the maximum aerobic metabolic rate that an individual can achieve, Svendsen et al., 2016), and (3) ASc (the scope for activities beyond basic maintenance) calculated as the absolute difference between MMR and SMR (Chabot et al., 2016; Norin and Clark, 2016; Roche et al., 2013). To measure $M˙O_{2}$, individual fish were placed into a 0.5 m (diameter) round aquarium containing well-aerated and temperature-controlled seawater (0.2 m deep), which was maintained at the same temperature as the fish’s acclimation temperature (5000W, Control Distributions, Carlton, Australia). Fish were first chased continuously by hand for 3 min and then scooped into a mesh net and maintained out of the water for either 1 min (C. cuning) or 30 s (C. quinquelineatus) (Clark et al., 2013; Killen et al., 2017; Roche et al., 2013; Rummer et al., 2016). Following air exposure, fish were immediately placed into an acrylic cylindrical, intermittent-flow respirometry chamber (110 mL for C. quinquelineatus and 370 mL for C. cuning following the design of Svendsen et al., 2016) and submerged in an 800 L temperature-controlled water bath (5000W heater, Control Distributions, Carlton, Australia). Within 10 s of placing the fish into the chamber, post-exercise $M˙O_{2}$ was monitored continuously. This continued for a period of 7 min (C. cuning) or 9 min (C. quinquelineatus), after which time a submersible flush pump (Aquapro AP200LV, 200 L h−1) flushed each chamber with aerated, temperature-controlled seawater from the surrounding water bath (3 min for both species). Following this, fish remained in chambers (with intermittent flushing cycles) to recover from exercise and reach SMR for an additional 18–24 hr, a time period deemed more than sufficient in similar reef fish species in past studies (Chabot et al., 2016; Roche et al., 2013). Each chamber was mixed continuously throughout each trial using a recirculating pump connected to the chamber in a closed loop, in order to ensure a homogenous concentration of oxygen throughout the chamber (Svendsen et al., 2016). A total of eight respirometry chambers were run in parallel. The 7- and 9-min measuring periods were chosen to ensure that $M˙O_{2}$ produced a linear decline in oxygen saturation within the chambers sufficient to calculate slope, but short enough to maintain oxygen saturation levels above 80% for each species (following Svendsen et al., 2016).
 
 Throughout the entire respirometry trial, dissolved oxygen concentration (mg L−1) of the water in each chamber was measured continuously (frequency 0.5 Hz) using an oxygen-sensing optode mounted in the recirculation loop, to ensure that flow was sufficient for a rapid response time of the sensor (Svendsen et al., 2016). These optodes were linked to two 4-channel Firesting Optical Oxygen Meters (Pyro Science, Aachen, Germany), which were connected to a PC that logged all oxygen data.
 
-Raw text files were imported into LabChart v.6.1.3 (ADInstruments, Dunedin, New Zealand) and M˙O2 (mg O2 kg−1 h−1) was calculated from each slope (linear regression of oxygen concentration decline over time) throughout the trial using equations modified from Bushnell et al., 1994 and Schurmann and Steffensen, 1997, taking into consideration the volume of the respirometry chamber, mass of the fish, and water displacement of the fish. The maximal oxygen uptake rate was calculated during the first measurement period following exercise, defined as the steepest 1 min slope section with an r2 >0.99, and used to estimate MMR. The SMR was estimated from the average of the lowest 10% of M˙O2 values recorded during the 18–24 hr recovery period (Clark et al., 2013; Rummer et al., 2014; Rummer et al., 2013). Background M˙O2 (calculated as an exponential increase based on measures of oxygen depletion in the empty respirometer before and after each trial) was subtracted from all M˙O2 measurements. An exponential increase in background respiration was used to account for the typical growth rate of bacteria. To limit background respiration rates to less than 5% of a fish’s SMR, all water flowed through a 36W UV filter (Blagdon Pro, UVC 16200, China) during experiments. Additionally, between all experiments, chambers and pumps were rinsed with a 10% bleach solution and fresh water and allowed to dry before commencing further trials.
+Raw text files were imported into LabChart v.6.1.3 (ADInstruments, Dunedin, New Zealand) and $M˙O_{2}$ (mg O2 kg−1 h−1) was calculated from each slope (linear regression of oxygen concentration decline over time) throughout the trial using equations modified from Bushnell et al., 1994 and Schurmann and Steffensen, 1997, taking into consideration the volume of the respirometry chamber, mass of the fish, and water displacement of the fish. The maximal oxygen uptake rate was calculated during the first measurement period following exercise, defined as the steepest 1 min slope section with an r2 >0.99, and used to estimate MMR. The SMR was estimated from the average of the lowest 10% of $M˙O_{2}$ values recorded during the 18–24 hr recovery period (Clark et al., 2013; Rummer et al., 2014; Rummer et al., 2013). Background $M˙O_{2}$ (calculated as an exponential increase based on measures of oxygen depletion in the empty respirometer before and after each trial) was subtracted from all $M˙O_{2}$ measurements. An exponential increase in background respiration was used to account for the typical growth rate of bacteria. To limit background respiration rates to less than 5% of a fish’s SMR, all water flowed through a 36W UV filter (Blagdon Pro, UVC 16200, China) during experiments. Additionally, between all experiments, chambers and pumps were rinsed with a 10% bleach solution and fresh water and allowed to dry before commencing further trials.
 
-## Blood and tissue analyses
+### Blood and tissue analyses
 
-Fishes were captured from holding tanks and isolated in flow-through holding containers within their respective holding tanks for 4 hr prior to blood and tissue sampling, as this minimized capture stress immediately prior to sampling and allowed all fish to be sampled in the same state. Immediately prior to sampling, all fish were euthanized by cranial concussion. All animals were then weighed (Mb; body mass, in g) and measured (L; standard length, in mm), so that Fulton’s K Condition Factor could be calculated using the equation:K=100∗(Mb/L3).
+Fishes were captured from holding tanks and isolated in flow-through holding containers within their respective holding tanks for 4 hr prior to blood and tissue sampling, as this minimized capture stress immediately prior to sampling and allowed all fish to be sampled in the same state. Immediately prior to sampling, all fish were euthanized by cranial concussion. All animals were then weighed (Mb; body mass, in g) and measured (L; standard length, in mm), so that Fulton’s K Condition Factor could be calculated using the equation:
+
+$$
+K=100∗(M_{b}/L^{3}).
+$$
 
 For C. cuning only, blood was drawn from the caudal vein and collected in 1 mL heparinized syringes. Whole blood hemoglobin concentration was determined using a HemoCue (Hb 201 System, Australia Pty Ltd.) with 10 µL of whole blood (reported as grams per 100 mL using a calibration curve according to Clark et al., 2008 corrected for tropical reef species by Rummer et al., 2013). Whole blood glucose and lactate concentrations (mM) were measured using 15 µl of blood in an Accutrend Plus (Roche Diagnostics Australia Pty Ltd.). Hamatocrit (Hct) was determined by centrifuging 60 μl of whole blood in heparinized micro-capillary tubes for 3 min and calculated as the ratio of packed RBCs to total blood volume (%). Both whole blood hemoglobin and Hct were used to calculate the mean corpuscular hemoglobin content (MCHC). Plasma volume was generally insufficient for other analyses (e.g. Cl-, HCO3-, total CO2, and catecholamines). No blood analyses were conducted on C. quinquelineatus, as it was not possible to draw a sufficient volume of blood. However, some blood oxygen transport properties were assessed by analyzing the spleen (e.g. spleen somatic index and spleen hemoglobin concentration).
 
@@ -159,7 +344,7 @@ Frozen gill and red muscle tissues were homogenized in an enzyme extraction buff
 
 Gill samples for histology were processed, embedded in paraffin wax, and sectioned at 5 µm. Four sections for each individual were taken, stained with hematoxylin and eosin (H and E), and examined under a light microscope (Leitz Wetzler, Germany). Digital micrographs of one section for each individual were taken using a Leica DFC310 FX microscope camera connected to Leica Application Suite v4.0.0 software (Leica Microsystems Limited, Switzerland) and processed using ImageJ v1.48 (Wayne Rasband, National Institutes of Health, USA). For each image, the gill arch was divided into three areas: ventral (bottom), medial (middle), and apex (top). In each area, 3– 5 filaments were chosen, but only if the filaments displayed good lamellar and filamental orientation, by exhibiting equal length lamellae on either side of the filament to ensure adequate embedding of the tissue. At three designated locations along the filament length (25%-near the base of the filament next to the gill arch, 50%- middle, and 75%-top), five lamellae were randomly chosen and traced. Their lamellar width, lamellar perimeter, and epithelial thickness (in mm) were measured using the ImageJ software (illustrated in Figure 3; Bowden et al., 2014). Perimeter was used as the primary proxy for surface area. In one instance (week 3 for C. quinquelineatus), there were insufficient samples with appropriate lamellar and filamental orientation (n = 2), and data for this week were therefore excluded from statistical analyses.
 
-## Statistical analyses
+### Statistical analyses
 
 All data were analyzed using general linear mixed effects (LME) models fit by restricted maximum likelihood (REML) following Harrison et al., 2018. When significant relationships were found, post-hoc planned comparisons (p.c.) on covariate-adjusted means were conducted to determine the differences between fish maintained at current-day summer average temperatures (control) to those maintained at an elevated temperature (+3.0°C) for 0, 1, 2, 3, 4, or 5 weeks. All p-values were corrected for type I error using False Detection Rate pcutoff (Benjamini and Hochberg, 1995).
 

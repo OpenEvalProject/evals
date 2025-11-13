@@ -14,15 +14,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01kj4z117 Key Laboratory of Entomology and Pest Control Engineering, College of Plant Protection, Southwest University Chongqing China
-2. https://ror.org/01kj4z117 Key Laboratory of Agricultural Biosafety and Green Production of Upper Yangtze River (Ministry of Education), Academy of Agricultural Sciences, Southwest University Chongqing China
-3. https://ror.org/05p1j8758 Department of Entomology, Kansas State University Manhattan KS United States
+1. Key Laboratory of Entomology and Pest Control Engineering, College of Plant Protection, Southwest University Chongqing China ([ROR:01kj4z117](https://ror.org/01kj4z117))
+2. Key Laboratory of Agricultural Biosafety and Green Production of Upper Yangtze River (Ministry of Education), Academy of Agricultural Sciences, Southwest University Chongqing China ([ROR:01kj4z117](https://ror.org/01kj4z117))
+3. Department of Entomology, Kansas State University Manhattan KS United States ([ROR:05p1j8758](https://ror.org/05p1j8758))
 
 † Corresponding author
 
 ## Abstract
 
-Behavioral strategies for foraging and reproduction in the oriental fruit fly ( Bactrocera dorsalis ) are alternative options for resource allocation and are controlled by neuropeptides. Here, we show that the behavioral switch between foraging and reproduction is associated with changes in antennal sensitivity. Starved flies became more sensitive to food odors while suppressing their response to opposite-sex pheromones. The gene encoding sulfakinin receptor 1 ( SkR1 ) was significantly upregulated in the antennae of starved flies, so we tested the behavioral phenotypes of null mutants for the genes encoding the receptor ( skr1 –/– ) and its ligand sulfakinin ( sk –/– ). In both knockout lines, the antennal responses shifted to mating mode even when flies were starved. This suggests that sulfakinin signaling via SkR1 promotes foraging while suppressing mating. Further analysis of the mutant flies revealed that sets of odorant receptor (OR) genes were differentially expressed. Functional characterization of the differentially expressed ORs suggested that sulfakinin directly suppresses the expression of ORs that respond to opposite-sex hormones while enhancing the expression of ORs that detect food volatiles. We conclude that sulfakinin signaling via SkR1, modulating OR expressions and leading to altered antenna sensitivities, is an important component in starvation-dependent behavioral change.
+Behavioral strategies for foraging and reproduction in the oriental fruit fly (Bactrocera dorsalis) are alternative options for resource allocation and are controlled by neuropeptides. Here, we show that the behavioral switch between foraging and reproduction is associated with changes in antennal sensitivity. Starved flies became more sensitive to food odors while suppressing their response to opposite-sex pheromones. The gene encoding sulfakinin receptor 1 (SkR1) was significantly upregulated in the antennae of starved flies, so we tested the behavioral phenotypes of null mutants for the genes encoding the receptor (skr1–/–) and its ligand sulfakinin (sk–/–). In both knockout lines, the antennal responses shifted to mating mode even when flies were starved. This suggests that sulfakinin signaling via SkR1 promotes foraging while suppressing mating. Further analysis of the mutant flies revealed that sets of odorant receptor (OR) genes were differentially expressed. Functional characterization of the differentially expressed ORs suggested that sulfakinin directly suppresses the expression of ORs that respond to opposite-sex hormones while enhancing the expression of ORs that detect food volatiles. We conclude that sulfakinin signaling via SkR1, modulating OR expressions and leading to altered antenna sensitivities, is an important component in starvation-dependent behavioral change.
 
 ## Introduction
 
@@ -36,31 +36,75 @@ We hypothesized that neuropeptide Sk-SkR and other neuropeptidergic systems are 
 
 ## Results
 
-## Altered antennal sensitivity is associated with starvation-induced foraging and satiation-induced mating success
+### Altered antennal sensitivity is associated with starvation-induced foraging and satiation-induced mating success
 
 We developed an assay to investigate the behavioral switch between foraging and mating induced by the physiological state of B. dorsalis (Figure 1A and B). Foraging success increased with the duration of the starvation period (Figure 1D, Figure 1—figure supplement 1), whereas courtship and copulation rates decreased, also with the starvation length-dependent manner (Figure 1G and H). Starved flies tended to move directionally toward the food source located in the center of the arena (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the experimental design. (B) Schematic illustration of the mating behavior assay device. (C) Representative foraging trajectories in the 100 mm diameter arenas within a 15 min observation period of flies starved for different durations. (D) Cumulative successful foraging within a 15 min observation period of male flies starved for different durations. Data are means ± SEM, n=60 flies for each condition. Different letters above the error bars indicate significant differences (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05). (E, F) Electroantennogram (EAG) responses to artificial food in fed and starved male (E) and female (F) flies (unpaired t-test). (Top) Representative EAG recordings. (G) Cumulative courtship rate within a 15 min observation period of flies starved for different durations (n=78, 76, 78, 84, and 91, respectively, from fed to 12 h). (H) Cumulative copulation rate within a 15 min observation period of the flies starved for different durations (n=78, 76, 79, 83, and 93, respectively, from fed to 12 h). (G, H) Kruskal–Wallis and post hoc Mann–Whitney U tests were applied. (I, J) EAG responses to body extracts in fed and starved male (I) and female (J) flies. (Top) Representative EAG recordings. Data are means ± SEM, n=10–12 antennae per genotype (unpaired t-test; *p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Data are means ± SEM. n=60 flies for each condition. Different letters above the error bars indicate significant differences (p<0.05, one-way ANOVA followed by Tukey’s multiple comparisons test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Heatmap representation of median EAG response values. n=5–10 antennae for each condition. The EAG response of fed flies and starved flies were compared under the same concentration. Unpaired t-test, n.s. indicates no significant difference, *p<0.05, **p<0.01, ***p<0.001.
+
 We therefore tested antennal sensitivities toward artificial food and opposite-sex body extracts using an electroantennogram (EAG). Flies of both sexes starved for 12 h showed a greater EAG response to food odor (Figure 1E and F) but a weaker response to opposite-sex body extracts (Figure 1I and J). Furthermore, starved flies also showed greater EAG responses to food volatile components and weaker responses to sex pheromone components (Figure 1—figure supplement 2). This suggested antenna-mediated olfaction is associated with and required for successful foraging and mating.
 
-## Starvation-induced SkR1 mRNA in the antennae is required for the switch from mating to foraging behavior
+### Starvation-induced SkR1 mRNA in the antennae is required for the switch from mating to foraging behavior
 
 To identify signaling molecules responsible for the olfactory-dependent behavioral switch, we compared the expression profiles of neuropeptide signaling components in the antennae of fed and starved flies. We found that the components of three neuropeptide signaling systems were significantly upregulated in the antennae of starved flies, namely short neuropeptide F receptor (sNPFR), SIFamideR1, and SkR1, the latter showing the strongest induction (Figure 2A). Sk did not show the expression change in the antennae, but significantly increased in the head in comparison between those in starvation and after re-feeding, suggesting that the circulatory Sk released from the central nervous system could be the source for activation of SkR1 in the antennae (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig2-v1.jpg)
+
+**Figure 2.:** (A) Changes in the expression of neuropeptide system components in the antennae of starved flies. The relative expression values are the fold-changes compared to the control. Data are means ± SEM, n=3 (unpaired t-test; *p<0.05, **p<0.01). (B) Altered amino acid sequence and mature peptides in the null mutants sk–/– and skr1–/– compared to wild-type (WT) flies. (C) Mean velocity of flies representing each genotype during a 15 min observation period. Data are means ± SEM (Kruskal–Wallis test). (D) Knockout of sulfakinin and SkR1 increases food consumption in B. dorsalis at different times of day. Each experiment consisted of one fly, and at least 15 flies were contained for the assay. Different lowercase letters indicate significant differences between treatments (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Data are means ± SEM, n=4, unpaired t-test; **p<0.01.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of the Sk gene, showing the single guide RNA (sgRNA) target site. The Sk gene has only one exon, shown as an orange box. Among five independent mutants generated, the 7-bp-B deletion was chosen for generation of sk-/- flies for further experiments. The protospacer adjacent motif (PAM) is highlighted in green. (B) The screening strategy for Sk and SkR1 mutants. (C) Suppression of Sk expression in Sk mutants. The left panel represents a schematic diagram of the central nervous system of B. dorsalis. The middle and right panels show the Sk staining of wild-type and sk-/- mutant brains, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic of the SkR1 gene, showing the single guide RNA (sgRNA) target sites. The SkR1 gene has five exons, shown as orange boxes. (B) A 187 bp deletion and 2 bp substitution was chosen for generation of skr1-/- flies. The protospacer adjacent motif (PAM) is highlighted in green. (C) The predicted seven transmembrane domains of BdSkR1. Disruption of the first transmembrane domain by a frameshift is shown in purple. (D) Suppression of SkR1 expression in SkR1 mutants. The left panel represents a schematic diagram of the antenna sections. The middle and right panels show the SkR1 staining of wild-type and skr1-/- mutant brains, respectively. No SkR1 staining was detected in the skr1-/- mutant brain.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A, B) Sk-/- mutant flies have the same body length as the WT flies. The body length of females (A) and males (B) was measured separately. Data are means ± SEM. Unpaired t-test, n.s. indicates no significant difference.
 
 We introduced a 7 bp deletion into the sulfakinin gene (Sk) using the CRISPR/Cas9 system, causing a frameshift that abolished the sequence region encoding two predicted mature peptides: Sk-1 and Sk-2 (Figure 2B, Figure 2—figure supplement 2A and B). We confirmed the absence of an anti-sulfakinin immunoreactive signal in the central nervous system of the sk–/– flies (Figure 2—figure supplement 2C). Only SkR1 was upregulated in the starved flies among two predicted Sk receptor genes SkR1 and SkR2 (Figure 2A). We therefore generated a SkR1 null mutant (skr1–/–) by introducing a 187 bp deletion using CRISPR/Cas9, resulting in a frameshift that resulted in a premature stop codon (Figure 2B, Figure 2—figure supplement 3A–C). We confirmed the absence of the anti-SkR1 immunoreactive signal in the antennae of the skr1–/– flies (Figure 2—figure supplement 3D).
 
 Starved sk–/– and skr1–/– flies showed the same locomotor activity and body size as wild-type (WT) controls when we measured their velocity and body length (Figure 2C, Figure 2—figure supplement 4). However, both null mutants consumed more food than WT flies (Figure 2D), consistent with previous results in D. melanogaster (Guo et al., 2021). Interestingly, sk–/– and skr1–/– male flies consumed more food at all times compared to the WT. However, the corresponding mutant females consumed more food only at night. This may be due to the high basal feeding rate of females during the daytime, masking the increase in feeding in the knockout of Sk signaling. As shown in Figure 2D, WT females ate more food than males, and WT females consumed more food during the daytime. Another major difference between the null mutants and WT controls was that the mutant flies were less successful at foraging even after starvation, similar to the characteristics of satiated WT flies (Figure 3A and B). However, foraging was not completely abolished. In addition, starved mutant females (Figure 3C) and males (Figure 3D) showed high mating success rates, as same rates as fed WT flies. We tested the behavioral phenotypes of heterozygous mutant of Sk knockout flies. The results showed that foraging and mating behaviors of Sk heterozygous mutants were unaffected during starvation, suggesting the mutants are completely recessive (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Cumulative successful foraging within a 15 min observation period of fed and starved flies with different genotypes. The successful foraging of females (A) and males (B) was measured separately. Data are means ± SEM, n=60 flies for each condition. Different letters above the error bars indicate significant differences (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05). (C) Cumulative copulation rates within a 15 min observation period of fed and starved flies with different genotypes (n=92, 86, 88, 106, 80, and 76, respectively, from fed WT to starved skr1–/–). (D) Cumulative courtship rates within a 15 min observation period of fed and starved flies with different genotypes (n=91, 85, 86, 98, 80, and 77, respectively, from fed WT to starved skr1–/–). (C, D) Kruskal–Wallis and post hoc Mann–Whitney U tests were applied (*p<0.05, **p<0.01, ***p<0.001). (E, F) Electroantennogram (EAG) responses to artificial food in fed and starved flies of different genotypes. The EAG responses to artificial food in females (E) and males (F) were measured separately. (Top) Representative EAG recordings. (G, H) EAG responses to body extracts in fed and starved flies of different genotypes. The EAG responses to body extracts of females (G) and males (H) were measured separately. (Top) Representative EAG recordings. Data are means ± SEM, n=10–12 antennae for each condition. Different letters above the error bars indicate significant differences (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Cumulative successful foraging within a 15 min observation period of starved WT and Sk heterozygous flies. The successful foraging of females (A) and males (B) was measured separately. Data are means ± SEM, n=60 flies for each condition. Unpaired t-test, n.s. indicates no significant difference. (C) Cumulative copulation rates within a 15 min observation period of starved WT and Sk heterozygous flies (n=57 and 45, respectively). (D) Cumulative courtship rates within a 15 min observation period of starved WT and Sk heterozygous flies (n=55 and 44, respectively). (C, D) Kruskal–Wallis and post hoc Mann–Whitney U tests were applied, n.s. indicates no significant difference.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Heatmap representation of median EAG response values. n=5–10 antennae for each condition. The EAG response of fed flies and starved flies were compared under the same concentration. Unpaired t-test, n.s. indicates no significant difference, *p<0.05, **p<0.01, ***p<0.001.
+
 We next tested antennal sensitivity to food odors and body extracts by EAG in each genotype using both fed and starved flies in each case. The starved sk–/– and skr1–/– flies showed significantly weaker responses to food odors compared to the starved WT flies, although the response of sk–/– flies was slightly stronger than that of fed WT flies (Figure 3E and F, Figure 3—figure supplement 2), which was similar to the behavioral response for a successful foraging rate (Figure 3A and B). The antennae of starved sk–/– and skr1–/– flies showed the same EAG response to opposite-sex body extracts as fed WT flies (Figure 3G and H, Figure 3—figure supplement 2), which was significantly higher than that of starved WT flies.
 
-## Sets of ORs are differentially expressed when comparing satiated/starved WT and sk–/– flies
+### Sets of ORs are differentially expressed when comparing satiated/starved WT and sk–/– flies
 
 To gain insight into the molecular basis of alteration of olfactory sensitivities by the Sk-SkR1 system, we extracted RNA from the head epidermal tissues (including antennae) of fed and starved flies for sequencing (RNA-Seq). We compared starved WT and starved sk–/– flies with satiated WT flies, focusing on the differentially expressed OR genes (Figure 4A). We identified three OR genes (OR7a.4, OR7a.8, and OR10a) that were upregulated in the starved WT flies but unchanged in starved sk–/– flies compared to satiated WT controls, and two (OR49a and OR63a) that were downregulated in starved WT flies but unchanged in starved sk–/– flies (Figure 4B). OR67d.3 and OR74a mRNA levels were similar in the satiated and starved WT flies. The differentially expressed genes identified by RNA-Seq were further validated by real-time reverse-transcription PCR (qRT-PCR) (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig4-v1.jpg)
 
-**Figure 4.:** (A) Principal component analysis (PCA) using differentially expressed genes obtained from pairwise comparisons between different treatments. (B) The expression profiles of the candidate OR genes in wild-type (WT) and sk flies determined by qRT-PCR. The OR names with red fonts represent the set of ORs for food odor and blue fronts represent the set of ORs for sex pheromone. Data are mean relative expression levels ± SEM. R1−R3 represent biological replicates. Different lowercase letters indicate significant differences between treatments (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05). (–/–C) Quantification of calcium levels following the response of candidate ORs to sex pheromones and food odors at a concentration of 10–4 M (n=3‒6). Different lowercase letters indicate significant differences between treatments (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05). (D) Dose–response curves of candidate ORs to sex pheromone components such as ethyl laurate (EL), ethyl palmitate (EP), 2,3,5-trimethyl pyrazine (TMP), and 2,3,5,6-tetramethylpyrazine (TTMP). (E) Dose–response curves of candidate ORs to food odorants such as ethyl benzoate (EBE), ethyl butyrate (EBU), diethyl maleate (DM), and methyl eugenol (ME). In both cases, n=5. (F) Co-localization of Orco (red) and SkR1 (green) neurons in B. dorsalis antennae. Scale bars = 50 μm.Figure 4—source data 1.
+**Figure 4.:** (A) Principal component analysis (PCA) using differentially expressed genes obtained from pairwise comparisons between different treatments. (B) The expression profiles of the candidate OR genes in wild-type (WT) and sk–/– flies determined by qRT-PCR. The OR names with red fonts represent the set of ORs for food odor and blue fronts represent the set of ORs for sex pheromone. Data are mean relative expression levels ± SEM. R1−R3 represent biological replicates. Different lowercase letters indicate significant differences between treatments (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05). (C) Quantification of calcium levels following the response of candidate ORs to sex pheromones and food odors at a concentration of 10–4 M (n=3‒6). Different lowercase letters indicate significant differences between treatments (one-way ANOVA followed by Tukey’s multiple comparisons test; p<0.05). (D) Dose–response curves of candidate ORs to sex pheromone components such as ethyl laurate (EL), ethyl palmitate (EP), 2,3,5-trimethyl pyrazine (TMP), and 2,3,5,6-tetramethylpyrazine (TTMP). (E) Dose–response curves of candidate ORs to food odorants such as ethyl benzoate (EBE), ethyl butyrate (EBU), diethyl maleate (DM), and methyl eugenol (ME). In both cases, n=5. (F) Co-localization of Orco (red) and SkR1 (green) neurons in B. dorsalis antennae. Scale bars = 50 μm.
 
-## Sulfakinin regulates the expressions of starvation-induced ORs that detect food volatiles and starvation-suppressed ORs that detect pheromones
+### Sulfakinin regulates the expressions of starvation-induced ORs that detect food volatiles and starvation-suppressed ORs that detect pheromones
 
 The OR genes identified in the RNA-Seq experiments were expressed in Flp-In T-REx 293 cells followed by the evaluation of functional responses to odorants using calcium mobilization assays. Tests with single high doses of volatiles representing food or sex pheromones allowed the functional categorization of ORs based on odorant specificities (Figure 4C). OR10a was activated by ethyl benzoate (EBE), OR7a.8 was activated by ethyl butyrate (EBU) or diethyl maleate (DM), and OR7a.4 was activated by methyl eugenol (ME). The responses to these food odor volatiles were all dose-dependent, with OR10a showing the strongest response to EBE (Figure 4E). In contrast, OR63a and OR49a showed dose-dependent responses to sex pheromone components but not to food odor volatiles (Figure 4C and D). Therefore, the upregulated OR genes in starved WT flies, OR7a.4, OR7a.8, and OR10a, were activated by the food volatiles, while downregulated genes, OR49a and OR63a, were activated by pheromonal components. Finally, we determined whether SkR1 was expressed in OR neurons by testing the antennae for immunoreactivity to SkR1 and odorant receptor co-receptor (Orco) antisera. A subset of clustered OR neurons showed immunoreactivity to SkR1 (Figure 4F), indicating that sulfakinin acts directly on SkR1-positive OR neurons.
 
@@ -76,58 +120,145 @@ In summary, we found that the neuropeptide sulfakinin mediates the transition be
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/100870/elife-100870-fig5-v1.jpg)
 
-**Figure 5.:** B. dorsalis.Starvation increases the abundance of SkR1 in the OR neurons (red arrows) and SkR1 signaling induces the expression of genes encoding ORs that sense food odors, resulting in successful foraging. Satiation suppresses SkR1 expression and induces the expression of genes encoding ORs that sense opposite-sex pheromones, leading to successful mating (blue arrows). Dashed arrows represent the additional possible pathways that have not been tested in this study, but not excluded in the model. Please see the ‘Discussion’ for details of additional possible factors modulating odorant sensitivity relevant to satiety.
+**Figure 5.:** Starvation increases the abundance of SkR1 in the OR neurons (red arrows) and SkR1 signaling induces the expression of genes encoding ORs that sense food odors, resulting in successful foraging. Satiation suppresses SkR1 expression and induces the expression of genes encoding ORs that sense opposite-sex pheromones, leading to successful mating (blue arrows). Dashed arrows represent the additional possible pathways that have not been tested in this study, but not excluded in the model. Please see the ‘Discussion’ for details of additional possible factors modulating odorant sensitivity relevant to satiety.
 
 ## Materials and methods
 
-## Insects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Bactrocera dorsalis)</td>
+      <td>sk-/-</td>
+      <td>Wang Lab, Southwest University, this paper</td>
+      <td></td>
+      <td>See Material and methods/CRISPR/Cas9-mediated mutants</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (B. dorsalis)</td>
+      <td>skr1-/-</td>
+      <td>Wang Lab, Southwest University, this paper</td>
+      <td></td>
+      <td>See Material and methods/CRISPR/Cas9-mediated mutants</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Flip-In T-REx293 cell line</td>
+      <td>Park Lab, Kansas State University</td>
+      <td>Cat# R78007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DSK</td>
+      <td>Zhou Lab, Chinese Academy of Science</td>
+      <td></td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-BdSkR1</td>
+      <td>Wang Lab, Southwest University, this paper</td>
+      <td></td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-BdOrco</td>
+      <td>Wang Lab, Southwest University, this paper</td>
+      <td></td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit polyclonal, Alexa Fluor 488</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4412S</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse polyclonal, Alexa Fluor 647</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4410S</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes ofHealth</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>ImageJ</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/</td>
+      <td>ImageJ</td>
+    </tr>
+  </tbody>
+</table>
+
+### Insects
 
 The WT oriental fruit flies were originally collected from Hainan province, China, in 2008 and were reared in the laboratory (27.5 ± 0.5°C, 75 ± 5% relative humidity, 14 h photoperiod). Larvae and adults were fed with artificial food as previously described (Shen et al., 2013). Artificial food for adults, consisting of yeast powder, honey, sugar, ascorbic acid, and water, was also used as a food source for foraging behavior assays.
 
-## Behavioral assays
+### Behavioral assays
 
 Virgin females and males, 3-day-old, were placed each in groups of 25 flies and reared at 27.5°C and 60% humidity, and 9-day-old flies were subjected to behavioral assays. Food consumption rates of individual flies were measured by the amount Bromophenol Blue dye (BPB) in the fly after the food including 0.1% (BPB) was provided for 1 h for ad libitum feeding, which is long enough time to allow satiation to occur. BPB was measured from decapitated and homogenized bodies in 1 ml phosphate-buffered saline (PBS) buffer with 1% Triton X-100. Absorbance of the supernatant after centrifugation (13,000 rpm) for 3 min was measured at 614 nm on a xMarkerTM Microplate Spectrophotometer (Bio-Rad). Flies were starved for 12 h prior to the experiments with only water. Foraging behavior assay was performed according to previously published methods with modifications (Li et al., 2022). In brief, single flies were introduced into chambers (100 mm diameter × 10 mm height) and acclimatized for 20 min. The foraging behavior was recorded using a camera (Sony HDR CX405) for 15 min at 30 fps. Successful foraging was counted when the fly stayed 5 s or longer within the 5 mm radius of the center where 10 μl of artificial food was placed. The experiments consisted of the assays of three biological replications for each experimental condition. The behavior was analyzed by EasyFlyTracker (Qu et al., 2021) with the default parameters.
 
 Mating behavior assay was conducted in the courtship chambers (diameter: 3.5 cm; height: 1.5 cm per layer). The virgin females and males were cold anesthetized at ‒20°C for 1 min and introduced into the courtship chamber separated by a removable transparent film. After 1 h acclimation, the film was removed to allow the paired flies to get in contact, and mating behavior was recorded by a video camera for 15 min. We measured the level of courtship in mutant males and receptivity in mutant females respectively. For courtship assay, a mutant male (sk-/- or skr-/-) and a WT virgin female were introduced into the chambers. Courtship rate is the percentage of the mutant males performs attempted copulation, which was used to measure mutant courtship level. For female receptivity assay, a mutant female (sk-/- or skr-/-) and a WT virgin male were introduced into the chambers. Copulation rate is the percentage of the mutant females had engaged in copulation, which is used to measure the mutant female receptivity. The number of flies that had performed attempted copulation or engaged in copulation by the end of each 1 min interval were summed within 15 min and plotted as a percentage of total flies for each time point.
 
-## Electroantennograms
+### Electroantennograms
 
 EAGs were used to record the stimulus-dependent changes in the electrical potential summed over the whole antenna. To test volatiles were food odor or body extract of each sex on the flies conditioned for satiated and starved. Different genotypes of the flies were wild-type, Sk mutant, and SkR1 mutants. Female body extracts were tested by male antennae and male body extracts by female antennae (Supplementary file 1). Body extracts were prepared by washing 15 9-day-old virgin flies of each sex in 1 ml of hexane for 4 h (Chen et al., 2023; Dweck et al., 2015; Ebrahim et al., 2023) at room temperature (RT) with gentle shaking.
 
 For EAGs, similar to previous study (Li et al., 2022), the head (including the antennae) of fly was excised and a glass capillary filled with 0.9% NaCl was inserted into the cut end as the reference electrode. The tip of an antenna was placed into another glass capillary filled with 0.9% NaCl as the recording electrode. The reference electrode was connected to a grounding electrode, while the recording electrode was connected to a 10× high-impedance DC amplifier (Syntech, Hilversum, the Netherlands). The signal was then sent to an analog/digital converter (IDAC-4, USB, Syntech) and transferred to a computer. Finally, the data were analyzed and saved by using GC-EAD software (Syntech). A filter paper strip (3 × 0.75 cm), loaded with 10 μl of the odor solution or body extract, was placed into a pipette and delivered a stimulus into a constant, humidified airstream flowing at 100 ml/min by a stimulus controller (Syntech). Two stimuli were made for 0.5 s duration with a 30 s interval. Average EAG response, as shown by mV changes, was used for the calculation. EAG for sex pheromones and body surface extracts were measured from 21:00 to 23:00, and food odor was measured from 9:00 to 11:00.
 
-## Quantitative real-time reverse transcription PCR
+### Quantitative real-time reverse transcription PCR
 
 Antennal tissues from flies of different genotypes with different treatments were dissected and immediately stored at ‒80°C. Total RNA was extracted with Trizol Reagent (Invitrogen) following the manufacturer’s protocol. First-strand cDNA was synthesized using the PrimeScript 1st Strand cDNA Synthesis Kit (Takara, Dalian, China) and specific primers designed using the online software, Primer 3 (http://primer3.ut.ee/, Supplementary file 2). Quantitative real-time reverse transcription PCR (qRT-PCR) was performed using a CFX Connect Real-Time System (Bio-Rad, Hercules, CA) with NovoStart SYBR PCR SuperMix kit (Novoprotein, Shanghai, China). Two reference genes (Shen et al., 2010), α-tubulin (GenBank: GU269902) and RPS3 (GenBank: XM_011212815), were used selected to normalize the expression levels for the calculation in qBASE (Hellemans et al., 2007). Each experiment comprised three independent biological replicates and two technical replicates.
 
-## CRISPR/Cas9-mediated mutants
+### CRISPR/Cas9-mediated mutants
 
 In vitro synthesis of single-guide RNA (sgRNA) was performed as previously described (Li et al., 2022). In brief, the suitable target sites of Sk and SkR1 genes were searched by CasOT (Xiao et al., 2014), and the corresponding sgRNAs were synthesized in vitro and purified using the GeneArt Precision gRNA Synthesis Kit (Invitrogen, Thermo Fisher Scientific, Waltham, MA). We designed and synthesized one sgRNA for the Sk gene (Figure 2—figure supplement 2) and two sgRNAs for the SkR1 gene (Figure 2—figure supplement 3).
 
 The sgRNA and cas9 protein (Invitrogen) were gently pipetted and mixed in nuclease-free water to form a mixture of 400 ng/μl sgRNA and 300 ng/μl Cas9 protein. Eggs collected within 20 min of oviposition were injected within 2 h with the mixture of sgRNA and Cas9 protein using an IM300 Electric Microinjector (Narishige, Tokyo, Japan). The injected eggs were incubated at 27.5 ± 0.5°C and 75 ± 5% relative humidity for hatching.
 
-## Mutant screening and off-target analysis
+### Mutant screening and off-target analysis
 
 Heterozygous G1 offspring were obtained using 9-day-old virgin adults (G0) crossed to wild-type opposite sex. Suitable mutant G1 (sk+/- and skr1+/-) were backcrossed to WT flies for at least eight generations, then homozygous mutant flies (sk-/- and skr1-/-) were obtained by self-crossing. Genomic DNA was extracted from individual flies (G0) or a single hind leg (G1 and later generations) by incubating tissue samples in 30 μl InstaGene Matrix (Bio-Rad) at 56°C for 30 min and inactivating the enzyme at 100°C for 10 min. Fragments of 300–500 bp spanning the sgRNA target sites were amplified using the primers (Supplementary file 2). The fragments were genotyped using the QIAxcel Advanced System (QIAGEN, Hilden, Germany), and potential edited products were directly sequenced or cloned into vector pGEM-T Easy (Promega, Madison, WI) for Sanger sequencing to identify the mutation.
 
 To assess off-target effects, CasOT was used to search potential off-target sites for the Sk and SkR1 genes. All loci with one potential mismatch allowed in the seed region and up to three potential mismatches in the non-seed region were searched on the genome sequence (https://db.cngb.org/search/project/CNP0003192/). Two potential off-target sites were found for Sk gene and three for SkR1 gene. PCR amplification and sequencing of fragments including potential off-target sites were performed to check for mutations. In examination of the potential off-target sites with >4 bp mismatches to the sgRNA sequences, no mutations were found in the off-sites (Supplementary file 3).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Rabbit anti-BdSkR1 antibody was generated by immunization with the peptide N’-RQGLRKCRDQWP-C’. Mouse anti-BdOrco antibody was raised by immunization with two peptides, N’-GTNPNGLTRKQE-C’ and N’-HWYDGSEEAKTF-C’. Peptides were synthesized and conjugated with keyhole limpet hemocyanin through additional cysteine residues at their N termini by Zoonbio Biotechnology (Nanjing, China). Rabbit anti-BdSk antibody was a gift from Dr. Chuan Zhou (Wu et al., 2020). The antisera used to recognize Sk peptide were raised in New Zealand white rabbits using the synthetic peptide N’-GGDDQFDDYGHMRFG-C.
 
 Immunohistochemistry was performed as previously described (Li et al., 2022). In brief, whole brains of 9-day-old flies were dissected in PBS, fixed overnight in 4% paraformaldehyde (PFA) in PBS at 4°C, and washed (3 × 15 min) in PBST (0.5% Triton X-100 in PBS). The tissues were blocked in 5% normal goat serum for 20 min at RT, then incubated in primary antibody for 48 h at 4°C. After three washes in PBST (3 × 15 min), the tissues were then incubated in secondary antibody overnight at 4°C. After washing in PBST again, the tissues were mounted on a slide with 100% glycerol for imaging. Adult antennae were dissected and embedded in Tissue-Tek O.C.T. Compound (Sakura, Tokyo, Japan). Sections (18 μm) were prepared using a Thermo HM525 NX microtome at ‒22°C and then fixed in 4% PFA in PBS at RT for 2 h. The subsequent procedures were as described above for the brain tissues. Primary antibody used: rabbit anti-Sk (1:1000), rabbit anti-SkR1 (1:500) and mouse anti-Orco (1:200). Secondary antibodies used: goat anti-rabbit IgG conjugated to Alexa Fluor 488 (1:1000, Cell Signaling Technology) and goat anti-mouse IgG conjugated to Alex Fluor 647 (1:1000, Cell Signaling Technology). Samples were imaged using an LSM780 confocal microscope (Carl Zeiss, Jena, Germany) and processed with ImageJ software (Schneider et al., 2012).
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Total RNA was extracted from the head epidermal tissues, including the antennae, of fed WT flies, starved WT flies, and starved sk-/- flies, using TRIzol reagent (Invitrogen). Three replicates were performed. Library construction and sequencing was performed by Novogene with Illumina HiSeq2000 platform (Novogene Bioinformatics Technology Co. Ltd, Beijing, China). The raw data (PRJNA1243736) were analyzed after filtering the low-quality sequences by fastp with the default parameters (Chen et al., 2018). Sequences were aligned to the B. dorsalis genome (https://db.cngb.org/search/project/CNP0003192/) using Hisat2 (version 2.2.1; Kim et al., 2015; Yang et al., 2023). Samtools (version 1.7) was used to convert sam files to bam files in the process (Li et al., 2009). Finally, to calculate the count, we use featureCounts (version 2.0.1; Liao et al., 2014). The expression level of genes from the RNA sequencing was normalized by the FPKM method. Differential expression analysis was performed using the DESeq2 R package (1.16.1; Anders and Huber, 2010).
 
-## Functional heterologous expression of ORs and calcium imaging
+### Functional heterologous expression of ORs and calcium imaging
 
 Heterologous expressions of ORs were made in Flip-In T-REx293 cell line (Thermo Fisher), which were cultured in Dulbecco’s modified Eagle medium (11995065, Gibco, Thermo Fisher Scientific) containing 10% fetal bovine serum (10091148, Gibco) and 1% penicillin-streptomycin-Amphotericin B solution (C0224-100ml, Beyotime) with 5% CO2 at 37°C. Cells for transfection were seeded onto a 96-well black well plate (165305, Thermo Fisher Scientific). Approximately 50–70% confluent cells were transfected by 2 μg pcDNA3.1 plasmid containing respective olfactory receptors with BdOrco of B. dorsalis using TransIT-LT1 Transfection Reagent (MIR 2300, Mirusbio) for 24 h. The cell line from Thermo Fisher (Cat#R78007) was generously supplied by Dr. Yoonseong Park (Kansas State University), which is authenticated by STR profiling. Cells were tested and found not to be contaminated with mycoplasma.
 
 For calcium imaging experiment, the culture media were replaced with 100 μl of 2.5 μM Fluo-4 AM (F14201, Invitrogen) and incubated at 37°C with 5% CO2 for 1 h. Subsequently, after another 30 min of incubation at RT, the culture media containing Fluo-4 were removed, and the cells were washed three times with Hanks' balanced salt solution (HBSS; 14065056, Gibco, Thermo Fisher Scientific) in order to fully remove the Fluo-4 residue. Then, 99 ul of HBSS was added to each well and plate was placed in the dark at RT to be tested. Finally, 1 μl of test odor was added to each well and fluorescence immediately was measured for at least 80 s. Finally, images were captured using a Zeiss Observer 7 inverted microscope (Carl Zeiss, Jena, Germany). Test odors were dissolved in dimethylsulfoxide (DMSO, ST038-100ml, Beyotime) and prepared five final concentrations: 10−7, 10−6, 10−5, 10−4 M, and 10−3 M. the fluorescent ratio (ΔF/F) was calculated as peak intensity divided by basal intensity (intensity before ligand perfusion). For all experiments, the response to DMSO was used as a negative control.
 
-## Statistical analysis
+### Statistical analysis
 
 For qRT-PCR result analysis, relative expression levels were calculated using qBase (Hellemans et al., 2007) based on the expression of the reference genes. Statistical analysis was performed using GraphPad Prism and indicated in each figure legend. Data were first verified for normal distribution using the Shapiro–Wilk normality test. One-way ANOVA, followed by Tukey’s multiple comparisons (if normal distribution) and Kruskal–Wallis and post hoc Mann–Whitney U tests (if non-normal distribution), was used for comparisons among multiple groups. Values are reported as means ± SEM.

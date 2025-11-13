@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.31981.001 The yeast Target of Rapamycin Complex 1 (TORC1) plays a central role in controlling growth. How amino acids and other nutrients stimulate its activity via the Rag/Gtr GTPases remains poorly understood. We here report that the signal triggering Rag/Gtr-dependent TORC1 activation upon amino-acid uptake is the coupled H + influx catalyzed by amino-acid/H + symporters. H + -dependent uptake of other nutrients, ionophore-mediated H + diffusion, and inhibition of the vacuolar V-ATPase also activate TORC1. As the increase in cytosolic H + elicited by these processes stimulates the compensating H + -export activity of the plasma membrane H + -ATPase (Pma1), we have examined whether this major ATP-consuming enzyme might be involved in TORC1 control. We find that when the endogenous Pma1 is replaced with a plant H + -ATPase, H + influx or increase fails to activate TORC1. Our results show that H + influx coupled to nutrient uptake stimulates TORC1 activity and that Pma1 is a key actor in this mechanism.
+The yeast Target of Rapamycin Complex 1 (TORC1) plays a central role in controlling growth. How amino acids and other nutrients stimulate its activity via the Rag/Gtr GTPases remains poorly understood. We here report that the signal triggering Rag/Gtr-dependent TORC1 activation upon amino-acid uptake is the coupled H+ influx catalyzed by amino-acid/H+ symporters. H+-dependent uptake of other nutrients, ionophore-mediated H+ diffusion, and inhibition of the vacuolar V-ATPase also activate TORC1. As the increase in cytosolic H+ elicited by these processes stimulates the compensating H+-export activity of the plasma membrane H+-ATPase (Pma1), we have examined whether this major ATP-consuming enzyme might be involved in TORC1 control. We find that when the endogenous Pma1 is replaced with a plant H+-ATPase, H+ influx or increase fails to activate TORC1. Our results show that H+ influx coupled to nutrient uptake stimulates TORC1 activity and that Pma1 is a key actor in this mechanism.
 
 ## Introduction
 
@@ -34,11 +34,23 @@ The present study began with an unexpected observation regarding the uptake of �
 
 ## Results
 
-## Uptake of β-alanine via the Gap1 permease causes Rag/Gtr-dependent TORC1 activation without increasing internal pools of amino acids
+### Uptake of β-alanine via the Gap1 permease causes Rag/Gtr-dependent TORC1 activation without increasing internal pools of amino acids
 
 In cells growing under poor N supply conditions (e.g. in a medium containing proline as sole N source), the yeast general amino acid permease Gap1 is active and stable at the plasma membrane. Under these conditions, TORC1 is only moderately active (Schmidt et al., 1998). Activation of TORC1 upon NH4+ uptake and assimilation into amino acids triggers Gap1 ubiquitylation, followed by its endocytosis and degradation in the vacuole (Merhi and AndreAndré, 2012). Thanks to isolation of a Gap1 mutant insensitive to this TORC1-dependent ubiquitylation, we have shown that substrate transport by Gap1 can also trigger Ub-dependent endocytosis and degradation of this transporter (Ghaddar et al., 2014b). This type of control, shared with other transporters of fungal and non-fungal species, probably enables cells to avoid excess uptake of external compounds (Gournas et al., 2016). To further investigate, without interference from the TORC1-dependent pathway, the mechanism of transport-elicited Gap1 ubiquitylation we sought to identify a Gap1 amino acid substrate unable to activate TORC1. We focused on beta-alanine (β-ala) and confirmed its reported status as a Gap1 substrate (Stolz and Sauer, 1999) by comparing the uptake of [14C]-β-ala (0.5 mM) in proline-grown wild-type and gap1∆ mutant cells (Figure 1A). β-Ala, however, cannot sustain growth when used as sole N source, that is it cannot serve as a source of amino acids (Figure 1A). This contrasts with 4-aminobutyrate (GABA), an amino acid differing from β-ala by a single additional CH2 group (Figure 1A) and whose catabolism depends on a specific GABA transaminase (Andersen et al., 2007). We thus tested whether β-ala transport by Gap1 triggers ubiquitylation and downregulation of the transporter. This proved to be the case, as addition of β-ala (0.5 mM) caused the appearance, above the immunodetected Gap1 signal, of two slowly migrating bands that were not observed with the non-ubiquitylable Gap1(K9R,K16R) mutant (Figure 1B). Upon β-ala addition, furthermore, Gap1 initially present at the cell surface underwent endocytosis and targeting to the vacuole, whereas Gap1(K9R,K16R) remained stable at the plasma membrane (Figure 1C). An inactive Gap1 mutant (Gap1-126) (Ghaddar et al., 2014b) failed to be ubiquitylated and downregulated upon β-ala addition (Figure 1B and C). These results are those expected if β-ala elicits Gap1 ubiquitylation specifically via the transport-elicited pathway. Yet we sought to make sure that β-ala does not activate TORC1. To our surprise, addition of β-ala to proline-grown cells caused a typical manifestation of TORC1 activation: a Rap-sensitive reduction of the electrophoretic mobility of HA-tagged Npr1, indicative of increased phosphorylation via TORC1 (Merhi and AndreAndré, 2012; Schmidt et al., 1998) (Figure 1D). β-Ala similarly caused a Rap-sensitive increase in the phosphorylation of Sch9 kinase residue Thr737 (Figure 1E), a known TORC1 target (Urban et al., 2007). It thus seemed that activation of TORC1, largely impaired in the gap1∆ mutant (Figure 1D and E), could contribute to the observed β-ala-induced downregulation of Gap1. This assumption was confirmed in additional experiments (Figure 1—figure supplement 1). Gap1-mediated uptake of β-ala thus results in TORC1 activation. We therefore hypothesized that, although β-ala cannot be used as an N source, it might be converted to certain amino acids capable of stimulating TORC1. β-Ala uptake, however, was found not to increase the intracellular concentrations of individual amino acids, measured in cell extracts, apart from that of β-ala itself (Figure 1F). We next tested whether this β-ala-induced activation of TORC1 involves the Rag A/B and C/D GTPases, encoded by the GTR1 and GTR2 genes, respectively. Increased phosphorylation of Npr1 upon β-ala addition was indeed impaired in gtr1∆ gtr2∆ mutant cells (Figure 1G), and this effect was not due to reduced uptake of β-ala (Figure 1H). We conclude that Gap1-mediated uptake of β-ala elicits TORC1 activation via the Rag GTPases, and that this effect is not due to conversion of intracellular β-ala to other amino acids.
 
-## Uptake of β-ala via the endogenous Put4 or the heterologous HcGap1 permease also promotes TORC1 activation
+![Figure 1.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig1-v2.jpg)
+
+**Figure 1.:** (A) Top. Wild-type (w–t) and gap1Δ cells were grown on Gluc Pro medium and [14C]-β-ala (0.5 mM) was added to the medium before measurement of the incorporated radioactivity at various times. Bottom. w-t cells were grown for 4 days on solid minimal medium without any N source or with GABA (0.5 mM) or β-ala (0.5 mM) as sole N source. (B) gap1Δ cells expressing, from plasmids, a gene encoding GFP-fused Gap1, Gap1(K9R-K16R), or Gap1-126 were grown on Gal Pro medium. Glucose was added for 30 min to stop Gap1 neosynthesis prior to addition of β-ala (0.5 mM) for 4 min. Crude cell extracts were prepared and immunoblotted with anti-GFP and anti-Pma1 antibodies. (C) Fluorescence microscopy analysis of the cells in 1B. Cells were grown on Gal Pro medium. Glucose was added for 1.5 hr to stop Gap1 neosynthesis, and β-ala (0.5 mM) was added for 30 min or 1 hr. CMAC staining (blue) was used to highlight the vacuole. (D) Top. w-t and gap1Δ cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and at various times after addition of β-ala (0.5 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Bottom. Same as in the top panel, except that w-t cells were collected before and 4 min after addition of β-ala (0.5 mM). Rap was added to half of the culture for 30 min, before addition of β-ala (0.5 mM). (E) Top. w-t and gap1Δ cells were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of β-ala (0.5 mM). Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. Bottom. Same as in panel G, except that w-t cells were collected before and 4 min after addition of β-ala (0.5 mM). Half of the culture was pretreated with Rap for 30 min. (F) w-t cells were grown on Gluc Pro medium. Cell extracts were prepared before and 30 min after addition of β-ala (0.5 mM) and used to measure amino acid pools as described under Materials and methods. The presented data are means ±SD of two independent experiments. (G) w-t and gtr1Δ gtr2Δ cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of β-ala (0.5 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (H) Cells as in G were grown on Gluc Pro medium. [14C]-β-ala (0.5 mM) was added to the medium before measuring the incorporated radioactivity at various times.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) gap1Δ BUL2-HA cells expressing Gap1 from a plasmid were grown on Gluc Pro medium and NH4+ (20 mM) or β-ala (0.5 mM) was added to the culture for 4 min.Rap was added to half of the culture for 30 min before addition of NH4+ or β-ala. Crude cell extracts were immunoblotted with anti-HA and anti-Pgk antibodies. The results show that the Rap-sensitive change in Bul2-HA migration upon addition of NH4+, previously shown to reflect its dephosphorylation and monoubiquitylation (Merhi and AndreAndré, 2012), also occurs upon addition of β-ala. Addition of β-ala thus activates TORC1. (B) w-t, gap1Δ, npi1-1/rsp5, and bul1Δ bul2Δ cells expressing the inactive Gap1-126-GFP from a plasmid, and w-t cells expressing Gap1-126(K9R-K16R)-GFP also from a plasmid, were grown on Gal Pro medium. Glucose was added for 30 min to stop Gap1-126 or Gap1-126(K9R,K16R) neosynthesis prior to β-ala addition (0.5 mM) for 4 min. Crude cell extracts were prepared and immunoblotted with anti-GFP and anti-Pma1 antibodies. The results show that addition of β-ala induces the appearance of the typical two upper bands corresponding to ubiquitylated forms of Gap1. As expected, this ubiquitylation is impaired if the two Ub acceptor lysines (K9 and K16) of the permease are mutated. Ubiquitylation of Gap1-126 is impaired in the gap1Δ, bul1Δ bul2Δ and hypomorphic npi1/rsp5 mutants. Uptake of β-ala via the endogenous Gap1 permease thus promotes Ub-dependent downregulation of the inactive Gap1-126 protein (C) Left. w-t and gap1Δ cells expressing Gap1-126-GFP from a plasmid were grown on Gal Pro medium. Glucose was supplied for 30 min to stop Gap1 neosynthesis. [14C]-β-ala (0.5 mM) was added to the medium before measuring the incorporated radioactivity at various times. The result shows that [14C]-β-ala is incorporated into cells expressing the endogenous Gap1 permease. Right. Fluorescence microscopy analysis of cells in panel C. Cells were grown on Gal Pro medium. Glucose was added for 1.5 hr to stop Gap1 neosynthesis, and β-ala (0.5 mM) was added for 30 min or 1 hr before analysis by fluorescence microscopy. CMAC staining (blue) was used to highlight the vacuole. The result shows that uptake of β-ala by Gap1 elicits endocytosis of the inactive Gap1-126-GFP protein.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** w-t cells transformed with pFL38 (URA3) and  +Δ cells (JW00035) co-transformed with pCJ366 (TRP1-LEU2-HIS3) and pFL38 (URA3) were grown on Gluc Pro medium (for JW00035 cells, the growth medium was supplemented with adenine to compensate for the ade2 auxotrophy). Cells pre-incubated or not with Rap for 30 min were collected before and 10 and 30 min after addition of NH4+ (20 mM). Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. The immunoblot shows that the anti-(P) T737-Sch9 antibody recognized a band corresponding to a molecular mass of ~125 KDa, whose intensity increased after NH4+ addition. This band was not detected in Rap-treated w-t cells or in cells of the sch9Δ mutant strain. The same antibody also revealed a nonspecific band corresponding to a higher molecular mass, which can be used as a loading control. As expected, the anti-Sch9Total antibody recognized Sch9 even in Rap-treated cells.
+
+### Uptake of β-ala via the endogenous Put4 or the heterologous HcGap1 permease also promotes TORC1 activation
 
 Gap1 has been reported to be a ‘transceptor’, that is a protein combining the properties of transporters and receptors, capable of activating protein kinase A (PKA) in a cAMP-independent manner (Donaton et al., 2003). According to this model, conformational changes of Gap1, triggered by binding and/or transport of amino acids, would stimulate a PKA-targeting signaling pathway (Schothorst et al., 2013). We thus hypothesized that this transceptor function of Gap1 might also promote TORC1 activation in a Rag/Gtr-dependent manner. This hypothesis is potentially supported by a previous report that Gap1 interacts with Gtr2 (Gao and Kaiser, 2006). An alternative view is that β-ala entering cells through Gap1 might be detected by a cytosolic amino acid sensor capable of promoting TORC1 activation. To explore these possibilities, we tested whether β-ala uptake via another permease might also activate TORC1. Confirming a previous prediction (Gournas et al., 2015), we found the high-affinity proline permease Put4 also to catalyze β-ala transport. This contribution of Put4 was visible at least in proline-free media, such as a medium where the sole N source was urea (another poor N source). Under these conditions, the gap1∆ mutant displayed residual uptake of β-ala (2 mM), and this uptake was abolished in the gap1∆ put4∆ mutant (Figure 2A). Importantly, this Put4-dependent β-ala uptake was associated with a Rap-sensitive hyperphosphorylation of Npr1 (Figure 2B). We next expressed in the gap1∆ mutant a heterologous amino acid transporter known to be active in S. cerevisiae, namely the Gap1 permease of the fungus Hebeloma cylindrosporum (Wipf et al., 2002). HcGap1 shares ~ 30% sequence identity with Gap1 and Put4. In proline-grown gap1∆ cells, HcGap1 restored high β-ala uptake activity, roughly similar to that conferred by Put4 to urea-grown cells (Figure 2C). Remarkably, this uptake of β-ala was also associated with Rap-sensitive hyperphosphorylation of Npr1 (Figure 2D). In conclusion, transport of β-ala via endogenous Gap1 and/or Put4 or via the heterologous HcGap1 permease elicits TORC1 activation. Although these observations do not rule out the possibility that all three tested permeases might function as transceptors, they seem to favor the view that intracellular β-ala itself, or the process of its transport across the plasma membrane, stimulates TORC1 activity.
 
@@ -46,7 +58,7 @@ Gap1 has been reported to be a ‘transceptor’, that is a protein combining t
 
 **Figure 2.:** (A) w-t, gap1Δ, and gap1Δ put4Δ cells were grown on Gluc urea medium. [14C]-β-ala (0.1 or 2 mM) was added to the medium before measuring the incorporated radioactivity at various times. (B) Top. Cells as in A expressing HA-Npr1 from a plasmid were grown on Gluc urea medium. Cells were collected before and 4 and 10 min after addition of β-ala (0.1 or 2 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Bottom. Same as in panel B except that gap1Δ cells were also collected 30 min after Rap treatment. (C) w-t and gap1Δ cells expressing or not HcGap1 from a plasmid were grown on Gluc Pro medium. [14C]-β-ala (0.5 or 2 mM) was added to the medium before measuring the incorporated radioactivity at various times. (D) Top. w-t and gap1Δ cells expressing HA-Npr1 and gap1Δ cells co-expressing HcGap1 and HA-Npr1 from plasmids were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of β-ala (0.5 or 2 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Bottom. Same as in top panel except that cells were also treated for 30 min with Rap before β-ala addition.
 
-## Uptake of arginine via an endogenous or a heterologous permease stimulates TORC1 even if arginine catabolism is impaired
+### Uptake of arginine via an endogenous or a heterologous permease stimulates TORC1 even if arginine catabolism is impaired
 
 Uptake of arginine (Arg) by proline-grown cells is known to be mediated by Gap1 and the arginine-specific permease Can1 (Wiame et al., 1985). Consistently, we measured high Arg uptake activity in the wild type and in gap1∆ and can1∆ single mutants, but none in the gap1∆ can1∆ double mutant (Figure 3A). According to a previous report, Can1, in contrast to Gap1, does not stimulate PKA upon substrate transport (Donaton et al., 2003). This suggests that Can1 does not function as a transceptor. We thus sought to determine whether Arg transport via Gap1 or Can1 alone supports TORC1 activation. Arg uptake into wild-type cells was indeed found to induce Rap-sensitive Npr1 hyperphosphorylation (Figure 3A and B). This response was impaired in the gtr1∆ gtr2∆ mutant, an effect not due to decreased Arg uptake (Figure 3B). Arg-elicited TORC1 activation also resulted in Sch9 phosphorylation (Figure 3C), as previously reported (Stracka et al., 2014). Increased phosphorylation of Npr1 upon Arg addition was also detected in gap1∆ and can1∆ single mutants, but not in the gap1∆ can1∆ strain (Figure 3A). This shows that both permeases can promote Arg-induced TORC1 activation. We next expressed HcGap1 in the gap1∆ can1∆ strain and found it to restore high Arg uptake (Figure 3D) associated with Rap-sensitive Npr1 hyperphosphorylation (Figure 3E). Arginine catabolism requires arginase (Car1) (Wiame et al., 1985), so a car1 mutant fails to grow on Arg as sole N source (Figure 3F). Arg addition to the car1 mutant also resulted in Rap-sensitive Npr1 hyperphosphorylation (Figure 3G). In conclusion, TORC1 is activated upon Arg uptake via the endogenous Gap1 and/or Can1 or the heterologous HcGap1 permease. This activation of TORC1 involves the Rag GTPases and occurs even if Arg is not catabolized.
 
@@ -54,25 +66,33 @@ Uptake of arginine (Arg) by proline-grown cells is known to be mediated by Gap1 
 
 **Figure 3.:** (A) Left. w-t, gap1Δ, can1Δ, and gap1Δ can1Δ cells were grown on Gluc Pro medium. [14C]-L-Arg (0.5 mM) was added to the medium before measuring the incorporated radioactivity at various times. Right. Cells as in A expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium and collected before and 4 and 10 min after addition of Arg (0.5 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (B) Left top. w-t and gtr1Δ gtr2Δ cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of Arg (0.5 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Left bottom. Same as in panel left top except that half of the culture was treated for 30 min by Rap before addition of Arg. Right. Cells as in left panels although not expressing HA-Npr1 were grown on Gluc Pro medium. [14C]-L-Arg (0.5 mM) was added to the medium before measuring the incorporated radioactivity at various times. (C) w-t cells were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of Arg (0.5 mM). Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. (D) w-t and gap1Δ can1Δ cells expressing or not HcGap1 from a plasmid were grown on Gluc Pro medium. [14C]-L-Arg (0.5 or 1 mM) was added to the medium before measurement of the incorporated radioactivity at various times. (E) Top. w-t and gap1Δ can1Δ cells expressing HA-Npr1 from plasmid, and gap1Δ can1Δ cells co-expressing HcGap1 and HA-Npr1 from plasmids, were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of Arg (0.5 or 1 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Bottom. Same as in top panel except that half of the culture was treated for 30 min with Rap before addition of Arg. (F) Left. w-t and car1 mutant cells were grown on solid minimal medium with NH4+ or Arg at a concentration of 2 mM as sole N source. (G). car1 mutant cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of Arg (0.5 mM), and part of the culture was also treated for 30 min with Rap before Arg addition. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies.
 
-## H+ influx coupled to transport promotes rag/Gtr-dependent stimulation of TORC1
+### H+ influx coupled to transport promotes rag/Gtr-dependent stimulation of TORC1
 
 The simplest way to explain the above observations is that intracellular β-ala and Arg are detected by one or several internal amino acid sensors promoting Rag/Gtr-dependent TORC1 activation. These sensors could, for instance, act like the human Castor and Sestrin proteins, recently shown to function as arginine and leucine sensors, respectively, and to modulate upstream regulators of mTORC1 (Wolfson and Sabatini, 2017). These sensor proteins, however, do not seem to exist in yeast. Furthermore, one would not expect a cytosolic sensor capable of activating TORC1 in response to β-ala. Alternatively, a TORC1-activating signal might arise from a common feature of the permease-mediated Arg and β-ala transport reactions. In yeast, transport by secondary active plasma membrane transporters is coupled to H+ influx. This transport is thus driven by the plasma membrane H+ gradient established by the Pma1 H+-ATPase. We therefore hypothesized that an influx of H+ coupled to amino acid uptake might initiate a signal stimulating TORC1 activity. To evaluate this hypothesis, we first checked that the β-ala and Arg transporters tested above are H+-symporters. In support of this view, incubation of cells with the FCCP protonophore caused a strong reduction of β-ala uptake via Gap1, Put4, or HcGap1 and of Arg uptake via Gap1, Can1, or HcGap1 (Figure 4A and B). Furthermore, each permease was rapidly inhibited when the cells were shifted to glucose-free medium (Figure 4A and B), a condition known to cause rapid inhibition of the Pma1 H+-ATPase and thus collapse of the plasma membrane H+ gradient (Kane, 2016). Hence, as expected, all four permeases analyzed in our study, including HcGap1, behave as H+-symporters. We next examined whether active uptake of another metabolite, not present in the growth medium, also elicits Rag/Gtr-dependent TORC1 activation. We chose cytosine, whose uptake via the Fcy2 permease is known to be coupled to H+ influx (Pinson et al., 1997). Interestingly, addition of cytosine did cause rapid activation of TORC1, as judged by increased Npr1 and Sch9 phosphorylation (Figure 4C and D). Furthermore, this cytosine-elicited TORC1 activation was largely impaired in the gtr1∆ gtr2∆ mutant (Figure 4E). Cytosine can be used as sole N source, and thus as a source of amino acids. Yet in an fcy1 mutant lacking cytosine deaminase and thus unable to use cytosine as an N source, Npr1 was still phosphorylated upon cytosine addition, unless Rap was also present (Figure 4F). H+-coupled uptake of cytosine thus stimulates TORC1 in a Rag/Gtr-dependent manner, even when the nucleobase is not assimilated into amino acids. This observation is compatible with the proposed view that H+ influx is the signal initiating TORC1 stimulation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig4-v2.jpg)
 
-**Figure 4.:** +influx coupled to transport promotes Rag/Gtr-dependent stimulation of TORC1.(A) The β-ala uptake activities of Gap1 (in w-t cells grown on Gluc Pro medium), Put4 (in gap1Δ cells grown on Gluc urea medium), and HcGap1 (in gap1Δ cells expressing HcGap1 and grown on Gluc Pro medium), were determined by measuring the initial rate of [14C]-β-ala incorporation (0.5 mM for Gap1, 2 mM for Put4 and HcGap1) before and after glucose starvation for 5 min or with or without prior incubation with FCCP (20 µM) or its solvent (0.2% EtOH) for 5 min. The presented data are means ± SD of two independent experiments. (B) The Arg uptake activities of Gap1 and Can1 (in w-t cells), of Gap1 alone (in can1Δ cells), of Can1 alone (in gap1Δ cells), and of HcGap1 (in gap1Δ can1Δ cells expressing HcGap1 from a plasmid) were determined by measuring the initial rate of [14C]-L-Arg incorporation (0.5 mM for Gap1 and Can1, 1 mM for HcGap1) as in A. The presented data are means ± SD of two independent experiments. (C) w-t cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected 4 min after addition of cytosine (1 mM). Half of the culture was treated with Rap for 30 min before addition of cytosine. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (D) w-t cells were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of cytosine (1 mM). Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. (E) w-t and gtr1 gtr2Δ cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of cytosine (1 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (F) Left. w-t and fcy1 cells were grown on solid medium with NH4+ or cytosine (2 mM) as sole N source. Right. fcy1 cells expressing HA-Npr1 were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of cytosine (0.5 mM). Half of the culture was treated for 30 min with Rap before addition of cytosine. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (G) w-t (CEN.PK2-1c), hxtΔ (EBY.VW4000), and hxtΔ+FSY1 (I3) cells were grown on maltose NH4+ medium, shifted for 6 hr on EtOH Pro, and [14C]-D-fructose (2 mM) was added to the medium before measuring the incorporated radioactivity at various times. (H) Cells of the w-t and hxtΔ+FSY1 srains (as in G) were grown on maltose NH4+ medium. The initial rate of [14C]-D-fructose incorporation (2 mM), with or without prior incubation with FCCP (20 µM) for 5 min, was then measured. The data are means ±SD of two independent experiments. (I) Strains and growth conditions as in G. Cells were collected before and 2, 4 and 10 min after addition of fructose (2 mM). For the I3 strain, half of the culture was treated for 30 min with Rap before addition of fructose. Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies.
+**Figure 4.:** (A) The β-ala uptake activities of Gap1 (in w-t cells grown on Gluc Pro medium), Put4 (in gap1Δ cells grown on Gluc urea medium), and HcGap1 (in gap1Δ cells expressing HcGap1 and grown on Gluc Pro medium), were determined by measuring the initial rate of [14C]-β-ala incorporation (0.5 mM for Gap1, 2 mM for Put4 and HcGap1) before and after glucose starvation for 5 min or with or without prior incubation with FCCP (20 µM) or its solvent (0.2% EtOH) for 5 min. The presented data are means ± SD of two independent experiments. (B) The Arg uptake activities of Gap1 and Can1 (in w-t cells), of Gap1 alone (in can1Δ cells), of Can1 alone (in gap1Δ cells), and of HcGap1 (in gap1Δ can1Δ cells expressing HcGap1 from a plasmid) were determined by measuring the initial rate of [14C]-L-Arg incorporation (0.5 mM for Gap1 and Can1, 1 mM for HcGap1) as in A. The presented data are means ± SD of two independent experiments. (C) w-t cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected 4 min after addition of cytosine (1 mM). Half of the culture was treated with Rap for 30 min before addition of cytosine. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (D) w-t cells were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of cytosine (1 mM). Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. (E) w-t and gtr1 gtr2Δ cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of cytosine (1 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (F) Left. w-t and fcy1 cells were grown on solid medium with NH4+ or cytosine (2 mM) as sole N source. Right. fcy1 cells expressing HA-Npr1 were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of cytosine (0.5 mM). Half of the culture was treated for 30 min with Rap before addition of cytosine. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (G) w-t (CEN.PK2-1c), hxtΔ (EBY.VW4000), and hxtΔ+FSY1 (I3) cells were grown on maltose NH4+ medium, shifted for 6 hr on EtOH Pro, and [14C]-D-fructose (2 mM) was added to the medium before measuring the incorporated radioactivity at various times. (H) Cells of the w-t and hxtΔ+FSY1 srains (as in G) were grown on maltose NH4+ medium. The initial rate of [14C]-D-fructose incorporation (2 mM), with or without prior incubation with FCCP (20 µM) for 5 min, was then measured. The data are means ±SD of two independent experiments. (I) Strains and growth conditions as in G. Cells were collected before and 2, 4 and 10 min after addition of fructose (2 mM). For the I3 strain, half of the culture was treated for 30 min with Rap before addition of fructose. Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies.
 
 To further assess this model, we sought to analyze the activity of TORC1 upon equivalent uptake of the same external compound by either a facilitator or an H+-coupled symporter. Hexoses including fructose are known to enter cells via several Hxt transporters that function as facilitators (Wieczorke et al., 1999). Yet particular S. cerevisiae strains are reported to also express an H+-coupled specific fructose transporter called Fsy1 (Galeote et al., 2010; Rodrigues de Sousa et al., 2004). We thus used the hxt null strain, lacking the HXT1 to −17 and GAL2 genes and therefore unable to assimilate hexoses (Wieczorke et al., 1999), in which we expressed the FSY1 gene behind its own promoter, or none hexose transporter gene, and we analyzed in parallel the wild-type (from which the hxt null mutant derives) expressing the endogenous Hxt facilitators. The strains were initially grown on maltose as hxt null cells can utilize this disaccharide. They were then shifted for a few hours to ethanol because the FSY1 gene is more highly expressed on this carbon source (Rodrigues de Sousa et al., 2004). As in previous experiments, the N source was proline. Using these growth conditions, we measured equivalent 14C-fructose uptake in Hxt- and Fsy1-expressing cells (Figure 4G). None significant fructose uptake was detected in the hxt null mutant, as expected (Figure 4G). Furthermore, fructose uptake via Fsy1 was inhibited in the presence of FCCP, but uptake mediated by the Hxt facilitators was not (Figure 4H). We finally assayed TORC1 activity under these growth and fructose uptake conditions. We observed a Rap-sensitive increase of Sch9 phosphorylation upon fructose uptake by Fsy1-expressing cells. Such a TORC1 activation was observed neither in the wild-type incorporating fructose via the Hxt facilitators nor in the hxt null mutant expressing none fructose transporter (Figure 4I). TORC1 activation in response to fructose uptake thus occurred only when this transport was coupled to H+ influx. This result fully supports the view that the H+ influx is what generates the TORC1 activation signal.
 
-## H+ diffusion via a protonophore promotes Rag/Gtr-dependent stimulation of TORC1
+### H+ diffusion via a protonophore promotes Rag/Gtr-dependent stimulation of TORC1
 
 In all the above experiments, TORC1 thus seems activated in response to the H+-influx coupled to a nutrient transport reaction. We next determined whether the sole diffusion of H+ via a protonophore such as FCCP might also elicit TORC1 activation. Using a strain stably expressing pHluorin, we first observed that the ionophore caused the cytosolic pH to drop to about 6.1, the pH of the buffered growth medium (Figure 5A). Remarkably, this rapid acidification of the cytosol coincided with hyperphosphorylation of Npr1, and this response was inhibited by Rap (Figure 5B). Hence, H+ influx mediated by a protonophore also results in TORC1 stimulation. Yet this TORC1 activation, intriguingly, did not lead to increased phosphorylation of Sch9 (Figure 5C). A likely explanation is that an additional control elicited when the cytosol becomes too acidic (a stressful condition) impedes phosphorylation of Sch9 by activated TORC1. This is in keeping with a previous report that when the cytosolic pH drops to values around 6 (as occurs under glucose starvation or when expression of the Pma1 H+-ATPase is repressed), the action of TORC1 on Sch9 is inhibited, whereas nitrogen control of the Gat1 and Gln3 transcription factors via TORC1 remains unaltered (Dechant et al., 2014).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig5-v2.jpg)
+
+**Figure 5.:** (A) w-t cells expressing pHluorin (strain ES075) were grown on Gluc Pro medium. The cytosolic pH was monitored for 30 min at regular intervals. FCCP (20 µM) or its solvent (0.2% EtOH) was added at 1 min. (B) w-t cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and at various times after addition of FCCP (20 µM) or its solvent (0.2% EtOH). Part of the culture was treated for 30 min with Rap before addition of FCCP. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (C) w-t cells were grown on Gluc Pro medium. Cells were collected before and at various times after addition of FCCP (20 µM) or its solvent (0.2% EtOH). Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. (D–G) w-t and gtr1 gtr2Δ, seh1Δ, iml1Δ or pib2Δ cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and at various times after FCCP addition (20 µM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** w-t cells were incubated for 16 hr in Gluc medium (pH 6.1) devoid of any N source. FCCP (20 μM) or its solvent (0.2% EtOH, control) was added to the cells and trehalase activity was measured in cell samples collected at various times. Plotted values represent means ±SD of three independent experiments.
 
 TORC1 activation in response to an FCCP-mediated H+ influx, thus visible on immunoblots for HA-Npr1, was largely impaired in the gtr1∆ gtr2∆ strain (Figure 5D), indicating that it is Rag/Gtr-dependent. The multisubunit SEACIT complex antagonizes TORC1 by acting as a GAP on the Gtr1 GTPase, and its function is itself negatively controlled by the multisubunit SEACAT complex (Panchaud et al., 2013a, 2013b). To determine whether these GATOR-like upstream regulators of Gtr1 are involved in H+ influx-elicited TORC1 activation, FCCP was added to cells lacking Seh1, a component of the SEACAT complex, or Iml1, a component of the SEACIT complexe (Panchaud et al., 2013a, 2013b). TORC1 activation was largely impaired in the seh1∆ mutant (Figure 5E). In the iml1∆ mutant, a high basal phosphorylation of HA-Npr1 was detected, as expected, and FCCP did not significantly further increase this phosphorylation, at least during the first minutes after its addition (Figure 5F). These results indicate that the SEACIT/SEACAT upstream regulators of Gtr1 are involved in H+-influx-elicited stimulation of TORC1 activity. We also found the amount of HA-Npr1 to be much reduced in seh1∆ mutant cells, and a similar effect though less pronounced was observed in the gtr1∆ gtr2∆ strain (Figures 1G, 4E and 5D). This suggests that the abundance of HA-Npr1 is influenced by the activation state of TORC1. Furthermore, phosphorylation of HA-Npr1 in the above-analyzed mutants was found to increase after prolonged incubation with FCCP (Figure 5D, E and F). It thus seems that FCCP stimulates another mechanism of TORC1 activation that does not depend on the Rag/Gtr GTPases. For instance, prolonged incubation with FCCP might promote release of amino acids from the vacuole or mitochondria, and this could promote TORC1 activation independently of Gtr1/2. It has in fact been reported that the vacuole-associated Pib2 protein containing a FYVE domain acts in parallel with Gtr1 to promote TORC1 activation (Kim and Cunningham, 2015; Varlakhanova et al., 2017). Furthermore, in an in vitro TORC1 kinase assay using isolated vacuoles, the addition of glutamine was found to stimulate TORC1 activity in a manner dependent on Pib2 but not Gtr1 (Tanigawa and Maeda, 2017). We thus also analyzed the role of Pib2 and found that HA-Npr1 is normally hyperphosphorylated after FCCP addition to pib2∆ mutant cells (Figure 5G).
 
 In conclusion, the above experiments indicate that H+ influx mediated even by a protonophore elicits a cellular response resulting in Rag/Gtr-dependent, Pib2-independent, TORC1 activation. They further suggest that if the cytosol becomes too acidic, an additional control likely impedes Sch9 phosphorylation by activated TORC1.
 
-## Inhibition of the vacuolar V-ATPase activates TORC1
+### Inhibition of the vacuolar V-ATPase activates TORC1
 
 We observed that addition of amino acids, cytosine, or NH4+ to growing cells does not detectably change their cytosolic pH (data not shown). This was expected, given the high buffering capacity of the cytosol and the compensating H+ efflux activity of the Pma1 H+-ATPase, which is stimulated under acidic conditions as long as glucose is present (Eraso and Gancedo, 1987; Ullah et al., 2012). We then examined whether an increase of cytosolic H+, imposed without changing the composition of the external medium, might also lead to TORC1 activation. An H+ increase can in principle be caused by inhibition of the vacuolar V-ATPase, as this enzymatic complex catalyzes ATP-dependent uptake of H+ into the vacuole in order to acidify the organelle, to compensate for the constant H+ efflux mediated by H+-coupled vacuolar transporters, and to control the cytosolic pH (Kane, 2016). We thus tested the effects of two inhibitors of the V-ATPase, concanamycin A (CMA) and bafilomycin A (BAF) (Figure 6). Addition of CMA to proline-grown cells did not significantly change the cytosolic pH of the cells (Figure 6A). This suggests that Pma1-dependent efflux and the buffering capacity of the cytosol prevented the expected increase in cytosolic H+. BAF addition did cause a slight but significant drop in the cytosolic pH, suggesting that this treatment caused stronger inhibition of the V-ATPase (Figure 6E). Remarkably, both CMA and BAF treatment resulted in stimulation of TORC1 activity, as judged by Rap-sensitive hyperphosphorylation of Npr1 (Figure 6B and Figure 6F, respectively) and by a transient increase in Sch9 phosphorylation (Figure 6C and Figure 6G, respectively). No increase in Npr1 phosphorylation was detected in either CMA- or BAF-treated gtr1∆ gtr2∆ mutant cells (Figure 6D and H, respectively). We conclude that inhibition of the V-ATPase is associated with efficient Rag/Gtr-dependent stimulation of TORC1 activity, even when this inhibition is not sufficient to cause a detectable lowering of the cytosolic pH.
 
@@ -80,11 +100,23 @@ We observed that addition of amino acids, cytosine, or NH4+ to growing cells doe
 
 **Figure 6.:** (A) w-t cells expressing pHluorin (strain ES075) were grown on Gluc Pro medium. The cytosolic pH was monitored for 30 min at regular intervals. Concanamycin A (CMA) (1 µM) or its solvent (0.2% EtOH) was added at 1 min. (B) Left. w-t cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and at various times after addition of CMA (1 µM) or its solvent (0.2% EtOH). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Right. Same except that half of the culture was treated with Rap for 30 min before CMA addition. (C) Same as in B except that crude extracts from w-t cells were immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. (D) Same as in B except that w-t and gtr1Δ gtr2Δ cells were analyzed. (E, F, G, H) Same as in A, B, C and D, respectively, except that cells were treated with bafilomycin A (BAF) (1 µM). The data of Figure 6A and E and those of Figure 5A were obtained in the same experiments but are presented in separate graphs for clarity.
 
-## TORC1 activation in response to increased cytosolic H+ requires the Pma1 H+-ATPase
+### TORC1 activation in response to increased cytosolic H+ requires the Pma1 H+-ATPase
 
 Activation of TORC1 in the above-described situations (H+ influx, increased in cytosolic H+) might involve an uncharacterized sensor of intracellular H+, capable of transmitting this signal to TORC1. Alternatively, the Pma1 H+-ATPase might control TORC1 activity upon sensing H+ influx or increase in cytosol. For instance, Pma1 activity increases under acidic conditions, and this coincides with a reduction of its Km for ATP, possibly via allosteric control (Eraso and Gancedo, 1987; Ullah et al., 2012). We hypothesized that the particular state adopted by the H+-ATPase in response to increased H+ might stimulate certain factors controlling TORC1 activity. To test this possibility, we thought of expressing in yeast, instead of the endogenous Pma1, a heterologous H+-ATPase known to be catalytically active in yeast. We reasoned that if TORC1 activation depends on a signaling capability of Pma1, an H+-ATPase from a distant species should fail to activate TORC1 in response to an increase in cytosolic H+.
 
 According to previous reports, several plant H+-ATPases are active when expressed in yeast strains where the essential PMA1 gene and its non-essential paralog PMA2 (expressed to a much lower level) are deleted or repressed (Morsomme et al., 2000; Palmgren and Christensen, 1994). The wild-type forms of these plant H+-ATPases typically compensate only partially for the lack of Pma1. It is possible, however, to isolate mutant derivatives sustaining faster growth, particularly on low-pH media where cells need high H+-ATPase activity to maintain a neutral cytosolic pH (Morsomme et al., 2000). For instance, the H+-ATPase Pma4 of tobacco (Nicotiana plumbaginifolia) restores limited growth to a pma1∆ pma2∆ double-null mutant. A truncated Pma4 protein called Pma4882ochre, lacking the last 71 C-terminal amino acids as a result of an ochre nonsense mutation in codon 882 of the PMA4 gene, is able to support faster growth of yeast pma1∆ pma2∆ cells (Luo et al., 1999). We thus studied TORC1 activation in cells expressing either the endogenous PMA1 gene or the tobacco plant PMA4822ochre gene. As most the above experiments were carried out with strains having the ∑1278b background, we first isolated a GAL1-PMA1 pma2∆ derivative of this strain, where the PMA1 gene is placed under the control of the galactose-inducible, glucose-repressible GAL1 promoter. This strain can grow on galactose but not glucose, unless it contains a plasmid expressing the endogenous PMA1 gene or the tobacco PMA4822ochre gene under the control of the PMA1 promoter (Figure 7A). We cultured GAL-PMA1 pma2∆ cells expressing PMA1 or PMA4822ochre on glucose proline medium, as in the above-described experiments. We found cells expressing PMA4822ochre to grow more slowly (Figure 7B). This shows that the mutant plant H+-ATPase does not fully compensate for the lack of Pma1. Accordingly, compared to the cytosolic pH of PMA1-expressing cells, that of PMA4822ochre-expressing cells was slightly lower (Figure 7C). H+-coupled uptake of β-ala (1 mM) was also significantly lower in the latter cells (data not shown). We therefore lowered the concentration of β-ala provided to PMA1-expressing cells in order to reach an uptake rate equivalent to that measured in PMA4822ochre-expressing cells (Figure 7D and F). As expected, and whichever gene was expressed, [14C]-β-ala uptake was inhibited after a brief treatment of the cells with FCCP. This shows that in both cases, β-ala uptake is coupled to H+ influx (Figure 7D and F). Upon transfer of the cells to a glucose-free medium, uptake of β-ala into PMA1-expressing cells was also strongly reduced (Figure 7D and F). This was expected, since Pma1 is inhibited under these conditions. This reduction was much less pronounced in PMA4822ochre-expressing cells (Figure 7D and F). This result can be readily explained by the fact that inactivation of H+-ATPases upon glucose starvation, a regulation conserved between yeast and plant H+-ATPases, requires a C-terminal auto-inhibitory region which the truncated protein Pma4822ochre lacks (Morsomme et al., 2000; Portillo, 2000). Next, under conditions of equal H+-coupled β-ala uptake into PMA1- and PMA4822ochre-expressing cells, we analyzed TORC1 activity. Phosphorylation of Npr1 was found to increase moderately upon addition of β-ala at low concentration (0.1 mM) to PMA1-expressing cells, but this variation was significant, as judged by its sensitivity to Rap (Figure 7E). Remarkably, no increase in Npr1 phosphorylation was detected in PMA4822ochre-expressing cells (Figure 7E). Furthermore, basal phosphorylation of Npr1 in these cells did not increase, despite the lower pH of their cytosol (Figure 7E and C). Non-activation of TORC1 in PMA4822ochre-expressing cells was even clearer when Sch9 phosphorylation was used as readout (Figure 7G). Basal phosphorylation of Sch9 before β-ala addition was also reduced in PMA4822ochre-expressing cells (Figure 7G). Non-activation of TORC1 in PMA4822ochre-expressing cells upon β-ala uptake was also observed in the background of another strain deleted of both PMA1 and PMA2 (Figure 7—figure supplement 1). We next analyzed TORC1 activation after addition of glutamine, leucine, or arginine, each activation being deficient in the gtr1Δ gtr2Δ strain (Figure 7—figure supplement 2). As with β-ala, the external concentration of each amino acid was first adjusted to reach equivalent uptake in PMA1- and PMA4822ochre-expressing cells. Using these conditions, we observed a Rap-sensitive activation of TORC1 in the cells expressing PMA1 but not in those expressing PMA4822ochre (Figure 7—figure supplement 2). We also analyzed TORC1 activation upon FCCP addition. In both PMA1- and PMA4822ochre-expressing cells, as expected, the ionophore caused a rapid drop in the cytosolic pH, to a value close to the pH of the buffered external medium (Figure 7C). Also as expected, this induced strong hyperphosphorylation of Npr1 in control PMA1-expressing cells (Figure 7H). In contrast, FCCP addition did not increase Npr1 phosphorylation in PMA4822ochre-expressing cells (Figure 7H). Similar results were obtained after treatment with BAF: Npr1 phosphorylation was found to increase in PMA1-expressing but not in PMA4822ochre-expressing cells (Figure 7I). These results show that the endogenous Pma1 H+-ATPase plays an essential role in Rag/Gtr-dependent TORC1 activation in response to increased cytosolic H+. The importance of Pma1 in stimulating TORC1 activity was also illustrated by the ability of PMA1-expressing cells to resume growth following exposure to Rap, whereas PMA4822ochre-expressing cells failed to do so (Figure 7J).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig7-v2.jpg)
+
+**Figure 7.:** (A) GAL1p-PMA1 pma2Δ cells transformed with the YCp(Sc)PMA1, YEp(Np)PMA4882Ochre, or pFL36 (empty) plasmid (-) were grown for 3 days on solid medium with Pro as sole N source and Gal or Gluc as carbon source. (B) GAL1p-PMA1 pma2Δ cells expressing (Sc)Pma1 or (Np)Pma4882Ochre from a plasmid (as in A) were grown on Gluc Pro medium in a microplate reader for 40 hr. Data points represent averages of the OD at 660 nm of two biological replicates; error bars represent SD. (C) Strains and growth conditions as in B, except that the strains were also transformed with a plasmid (pHl-U) expressing pHluorin. The cytosolic pH was monitored during growth with or without addition, starting at 1 min, of FCCP (20 µM) for various times. (D) Left. Cells as in B but also expressing HA-Npr1 from a plasmid were grown on Gluc NH4+ medium. After a shift to Gluc Pro medium for 3 hr, [14C]-β-ala (0.1 or 1 mM) was added to the medium before measuring the incorporated radioactivity at various times. Right. Strains and growth conditions as in left. Uptake via Gap1 of [14C]-β-ala (provided at 0.1 mM to (Sc)PMA1-expressing cells and at 1 mM to (Np)PMA4882Ochre-expressing cells) was measured before and after glucose starvation for 5 min or after addition of FCCP (20 µM) or its solvent alone (0.2% EtOH) for 5 min. Plotted values represent percentages of initial Gap1 activity, and correspond to means ± SD of two independent experiments. (E) Top. Strains and growth conditions as in D, except that the cells were collected before and 4 and 10 min after addition of β-ala (0.1 or 1 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Bottom. Same as in top panel, except that only (Sc)PMA1-expressing cells were collected and half of the culture was treated for 30 min with Rap. (F) Experiments similar to those in D, except that the cells harbored an empty URA3 plasmid instead of the HA-Npr1 plasmid and were grown on Gluc Pro medium. (G) Top. Strains and growth conditions were as in F, and cells were treated as in E. Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. Bottom. Same as in top panel except that (Sc)PMA1-expressing cells were collected and half of the culture was treated for 30 min with Rap. (H–I) Strains, growth conditions, and immuno-detection as in E except that cells were collected before and at various times after addition of FCCP (20 µM) or BAF (1 µM). (J) Rapamycin recovery assay for GAL1p-PMA1 pma2Δ cells expressing (Sc)Pma1 or (Np)Pma4882Ochre from plasmids. Cells were treated or not with Rap (200 ng/ml) for 6 hr, washed twice, plotted in two-fold serial dilutions on solid Gluc Pro medium, and incubated for 4 days. (K) w-t and gtr1Δ gtr2Δ cells expressing HA-Npr1 from a plasmid and GAL1p-PMA1 pma2Δ cells co-expressing (Sc)Pma1 or (Np)Pma4882Ochre and HA-Npr1 from plasmids were grown on Gluc NH4+ medium. After a shift to Gluc Pro medium for 3 hr, cells were collected before and 30 min after addition of NH4+ (5 mM). Cells were also collected after addition of Rap for 30 min, followed by addition of NH4+ (5 mM) for 30 min. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Left. The pma1Δ pma2Δ strain co-transformed with the YCp(Sc)PMA1 or YEp(Np)PMA4882Ochre plasmid and a LEU2-HIS3-LYS2 (pCJ315) plasmid were grown on Gluc Pro medium (pH = 6.5) containing 0.00225% adenine to compensate for the ade2 auxotrophy. [14C]-β-ala was added (at 0.1 mM to (Sc)PMA1-expressing cells, at 1 mM to (Np)PMA4882Ochre-expressing cells) before measuring the incorporated radioactivity at various times. Right. Strains and growth conditions as in the left panel. Percentages of initial Gap1 activity were calculated after glucose starvation for 5 min, or after addition of FCCP (20 µM) or EtOH (0.2%) for 5 min. Plotted values represent means ±SD of two independent experiments. (B) Top. Strains and growth conditions as in A. Cells were collected before and 4 and 10 min after addition of β-ala (as in A). Crude extracts were prepared and immunoblotted with anti-(P) T737-Sch9 and anti-Sch9Total antibodies. Bottom. Same as in the previous experiment, except that (Sc)PMA1-expressing cells were treated or not with Rap for 30 min before addition of β-ala (0.1 mM).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/31981/elife-31981-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) GAL1p-PMA1 pma2Δ cells co-expressing (Sc)Pma1 or (Np)Pma4882Ochre and HA-Npr1 from plasmids were grown on Gluc NH4+ medium. After a shift to Gluc Pro medium for 3 hr, [14C]-L-Gln (0.012 mM to (Sc)PMA1-expressing cells, 0.4 mM to (Np)PMA4882Ochre cells) was added to the medium before measuring the incorporated radioactivity at various times. (B) Top left. Strains and growth conditions as in A, except that the cells were collected before and 4 and 10 min after addition of Gln. Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. Top right. Same as in top left, except that only (Sc)PMA1-expressing cells were collected and half of the culture was treated for 30 min with Rap. Bottom. w-t and gtr1Δ gtr2Δ cells expressing HA-Npr1 from a plasmid were grown on Gluc Pro medium. Cells were collected before and 4 and 10 min after addition of Gln (0.5 mM). Crude extracts were prepared and immunoblotted with anti-HA and anti-Pgk antibodies. (C and D) and (E and F) Same as in A and B except that Leu and Arg were added instead of Gln, respectively. The concentrations used for Leu and Arg are indicated in the figure. In the experiment comparing the w-t and gtr1Δ gtr2Δ strains, Leu and Arg were added at a final concentration of 0.5 mM.
 
 It has been reported that the Rag GTPases are not required for sustained activation of TORC1 in the presence of NH4+ (Stracka et al., 2014). In support of this view, NH4+ addition to proline-grown cells caused Rap-sensitive hyperphosphorylation of Npr1 in both wild-type and gtr1∆ gtr2∆ mutant cells (Figure 7K). Furthermore, sustained TORC1 activation after NH4+ addition is reported to depend on the enzymes converting NH4+ to glutamate (Fayyad-Kazan et al., 2016; Merhi and AndreAndré, 2012), the main N donor in amino acid biogenesis reactions. Interestingly, upon NH4+ addition to proline-grown cells, we found TORC1 to be properly activated by NH4+ regardless of the H+-ATPase produced (Pma1 or the plant Pma4822ochre) (Figure 7K). This result shows that TORC1 can be properly activated in PMA4822ochre-expressing cells. It also suggests that Pma1 is required for TORC1 activation in response to H+ influx but not to an increase in internal amino acids.
 
@@ -106,34 +138,452 @@ In conclusion, our results show that cytosolic H+ and Pma1 are major actors in T
 
 ## Materials and methods
 
-## Yeast strains, plasmids, and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th colspan="2">Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monoclonal)</td>
+      <td colspan="2">Roche (Belgium)</td>
+      <td>11814460001 ; RRID : AB_390913</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pma1 (rabbit polyclonal)</td>
+      <td colspan="2">(De Craene et al., 2001)</td>
+      <td>RRID : AB_2722567</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (12CA5) (mouse monoclonal)</td>
+      <td colspan="2">Roche (Belgium)</td>
+      <td>11583816001 ; RRID : AB_514506</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pgk (mouse monoclonal)</td>
+      <td colspan="2">Invitrogen/Life technologies (Belgium)</td>
+      <td>459250 ; RRID : AB_221541</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-(P)T737-Sch9 (rabbit purified polyclonal antibody)</td>
+      <td colspan="2">This paper</td>
+      <td>RRID : AB_2722566</td>
+      <td>GeneCust compagny; rabbit purified polyclonal antibody; against CKFAGF(pT)FVDESAIDE; (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sch9Total (rabbit polyclonal)</td>
+      <td colspan="2">(Prouteau et al., 2017)</td>
+      <td></td>
+      <td>(1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG (whole Ab), HRP conjugate (polyclonal)</td>
+      <td colspan="2">GE Healthcare/Fisher Scientific (Belgium)</td>
+      <td>NA931 ; RRID : AB_772210</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG (whole Ab), HRP conjugate (polyclonal)</td>
+      <td colspan="2">GE Healthcare/Fisher Scientific (Belgium)</td>
+      <td>NA934 ; RRID : AB_772206</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose Assay Kit</td>
+      <td colspan="2">Sigma-Aldrich (Germany)</td>
+      <td>GAGO20</td>
+      <td>Manufacture instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>R-5000 Rapamycin</td>
+      <td colspan="2">LC Laboratories (U.S.A.)</td>
+      <td>53123-88-9</td>
+      <td>200 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellTracker Blue CMAC Dye</td>
+      <td colspan="2">Life technologies (Belgium)</td>
+      <td>C2110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lumi-LightPlus Western blotting substrate</td>
+      <td colspan="2">Roche (Belgium)</td>
+      <td>12015196001</td>
+      <td>Manufacture instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td colspan="2">Sigma-Aldrich (Germany)</td>
+      <td>D141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbonyl cyanide 4-(trifluoromethoxy)phenylhydrazone (FCCP)</td>
+      <td colspan="2">Sigma-Aldrich (Germany)</td>
+      <td>C2920</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Concanamycin A (Folimycin)</td>
+      <td colspan="2">Abcam (U.K.)</td>
+      <td>ab144227</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td colspan="2">Cell Signaling Technology (France)</td>
+      <td>54645S</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alanine, β-[1–14C]</td>
+      <td colspan="2">Hartmann analytic (Germany)</td>
+      <td>ARC0183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Arginine, L-[14C(U)]</td>
+      <td colspan="2">Perkin-Elmer (Belgium)</td>
+      <td>NEC267E2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leucine, L-[14C(U)]</td>
+      <td colspan="2">Perkin-Elmer (Belgium)</td>
+      <td>NEC279E0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamine, L-[14C(U)]</td>
+      <td colspan="2">Perkin-Elmer (Belgium)</td>
+      <td>NEC4510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fructose, D-[14C(U)]</td>
+      <td colspan="2">Hartmann analytic (Germany)</td>
+      <td>ARC0116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 5</td>
+      <td colspan="2"></td>
+      <td>RRID:SCR_015807</td>
+      <td>Statistical analysis and graphs representation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains, plasmids, and growth conditions
 
 The yeast strains used in this study (Table 1) derive from the Σ1278b wild type, the only exceptions being YPS14-4 (W303), JW00035 (W303), CEN.PK2-1c (VW1A), EBY.VW 4000, and I3. Cells were grown at 29°C on a minimal medium buffered at pH 6.1 (Jacobs et al., 1980), with glucose (Gluc) (3% w/v), maltose (3% w/v), galactose (Gal) (3% w/v), or ethanol (EtOH) (1% v/v) as a carbon source. For cultures in Gal medium, a low concentration of Gluc (0.3% w/v) was also added to boost initiation of growth. The nitrogen (N) sources added to liquid growth media were NH4+ as (NH4)2SO4 (20 mM), proline (Pro) (10 mM), or urea (10 mM). For strain YPS14-4 and its derivative expressing PMA4882-ochre, cells were grown on the same buffered minimal medium adjusted to pH 6.5 to improve growth. In all experiments, cells were examined or collected during exponential growth, a significant and regular number of generations after seeding. Our experience is that these precautions and the use of a minimal medium that is buffered considerably improve the reproducibility of data between biological replicates (Wiame et al., 1985). When indicated, rapamycin (Rap) at 200 ng/ml concentration was added for 30 min. The ura3 mutation present in all strains was complemented by transformation with a plasmid, for example, pFL38. Comparative analyses of growth were performed by growing cells in a Greiner 24-well microplate incubator coupled to a SYNERGY multi-mode reader (BioTek Instruments). The plasmids used in this study are listed in Table 2.
 
-## Fluorescence microscopy
+**Table 1.**
+ Yeast strains used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Reference or source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>23344 c</td>
+      <td>ura3</td>
+      <td>Laboratory collection</td>
+    </tr>
+    <tr>
+      <td>EK008</td>
+      <td>gap1Δ ura3</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>ES032</td>
+      <td>can1Δ ura3</td>
+      <td>(Gournas et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>ES029</td>
+      <td>gap1Δ can1Δ ura3</td>
+      <td>(Gournas et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>MA032</td>
+      <td>gap1Δ BUL2-HA ura3</td>
+      <td>(Merhi and AndreAndré, 2012)</td>
+    </tr>
+    <tr>
+      <td>27038a</td>
+      <td>npi1-1rsp5 ura3</td>
+      <td>(Hein et al., 1995)</td>
+    </tr>
+    <tr>
+      <td>OS27-1</td>
+      <td>bul1Δ bul2Δ ura3</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>34210 c</td>
+      <td>gap1Δ put4Δ ura3</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>33007 c</td>
+      <td>gap1Δ ura3 leu2</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>30911b</td>
+      <td>car1 ura3</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>CG059</td>
+      <td>gap1Δ can1Δ ura3 leu2</td>
+      <td>(Gournas et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>OS26-1</td>
+      <td>gtr1Δ gtr2Δ ura3</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>CEN.PK2-1c</td>
+      <td>leu2-3,112 ura3-52 trp1-289 his3-Δ1 MAL2-8c SUC2 hxt17Δ</td>
+      <td>(Wieczorke et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>EBY.VW4000</td>
+      <td>hxt1-17Δ gal2Δ stl1Δ agt1Δ mph2Δ mph3Δ leu2-3,112 ura3-52 trp1-289 his3-Δ1 MAL2-8c SUC2</td>
+      <td>(Wieczorke et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>I3</td>
+      <td>EBY.VW4000 URA3::FSY1</td>
+      <td>(Rodrigues de Sousa et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>CG146</td>
+      <td>seh1Δ ura3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CG148</td>
+      <td>pib2Δ ura3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CG150</td>
+      <td>iml1Δ ura3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>35652d</td>
+      <td>fcy1 ura3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ES075</td>
+      <td>uga1::loxP-kanMX-loxP-GPD1p-pHluorin ura3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YPS14-4</td>
+      <td>ade 2–101, leu2Δ1, his3-Δ200, ura3–52, trp1Δ63, lys2–801 pma1Δ::HIS3, pma2Δ::TRP1 + YCp-(Sc)PMA1 (LEU2)</td>
+      <td>(Supply et al., 1993)</td>
+    </tr>
+    <tr>
+      <td>PMA4–882Oc hre</td>
+      <td>ade 2–101, leu2Δ1, his3-Δ200, ura3–52, trp1Δ63, lys2–801 pma1Δ::HIS3, pma2Δ::TRP1 + YEp-PMA1p-(Np)PMA4882ochre (LEU2)</td>
+      <td>(Luo et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>JW00035</td>
+      <td>leu2-3-112 ura3-1 trp1-1 his3-11-15 ade2-1 can1-100 sch9Δ::TRP1</td>
+      <td>(Wilms et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>JX023</td>
+      <td>GAL1p-PMA1 pma2Δ ura3 leu2</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Plasmids used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Description</th>
+      <th>Reference or source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pFL38</td>
+      <td>CEN-ARS (URA3)</td>
+      <td>(Bonneaud et al., 1991)</td>
+    </tr>
+    <tr>
+      <td>pFL36</td>
+      <td>CEN-ARS (LEU2)</td>
+      <td>(Bonneaud et al., 1991)</td>
+    </tr>
+    <tr>
+      <td>p416 GAL1</td>
+      <td>CEN-ARS GAL1p (URA3)</td>
+      <td>(Mumberg et al., 1994)</td>
+    </tr>
+    <tr>
+      <td>pJOD10</td>
+      <td>p416 GAL1p-GAP1-GFP (URA3)</td>
+      <td>(Nikko et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>pCJ038</td>
+      <td>p416 GAL1p -GAP1(K9R,K16R)-GFP (URA3)</td>
+      <td>(Lauwers and André, 2006)</td>
+    </tr>
+    <tr>
+      <td>pMA065</td>
+      <td>p416 GAL1p -GAP1-126-GFP (URA3)</td>
+      <td>(Merhi et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pMA091</td>
+      <td>p416 GAL1p -GAP1-126-K9R,K16R-GFP (URA3)</td>
+      <td>(Merhi et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pCH500</td>
+      <td>CEN-ARS-GAP1 (URA3)</td>
+      <td>(Hein and André, 1997)</td>
+    </tr>
+    <tr>
+      <td>pHcGAP1</td>
+      <td>YEp-HcGAP1 (URA3)</td>
+      <td>(Wipf et al., 2002)</td>
+    </tr>
+    <tr>
+      <td>pES103</td>
+      <td>YEp-HA-NPR1 (LEU2)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pAS103</td>
+      <td>YEp-HA-NPR1 (URA3)</td>
+      <td>(Schmidt et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>pCJ315</td>
+      <td>CEN-ARS (LEU2-HIS3-LYS2)</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>pMYC008</td>
+      <td>YCp-AGP1p-LACZ (HIS3 TRP1 LEU2)</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>pES154</td>
+      <td>YCp-AGP1p-LACZ (HIS3 TRP1)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pHl-U</td>
+      <td>YEp-ADH1p-pHluorin (URA3)</td>
+      <td>(Orij et al., 2009; Zimmermannova et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>pHl-I</td>
+      <td>YCp-loxP-kanMX-loxP-GPD1p-pHluorin (URA3)</td>
+      <td>(Orij et al., 2009; Zimmermannova et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>pCJ366</td>
+      <td>YEp (TRP1-LEU2-HIS3)</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>pPS15-P1</td>
+      <td>YCp-(Sc)PMA1 (LEU2)</td>
+      <td>(Supply et al., 1993)</td>
+    </tr>
+    <tr>
+      <td>pPMA4882ochre</td>
+      <td>YEp-PMA1p-(Np)PMA4882ochre (LEU2)</td>
+      <td>(Luo et al., 1999)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fluorescence microscopy
 
 Growing cells were laid on a thin layer of 1% agarose and viewed at room temperature with a fluorescence microscope (Eclipse E600; Nikon) equipped with a 100 differential interference contrast, numerical aperture (NA) 1.40 Plan-Apochromat objective (Nikon) and appropriate fluorescence light filter sets. Images were captured with a digital camera (DXM1200; Nikon) and ACT-1 acquisition software (Nikon) and processed with Photoshop CS (Adobe Systems). In each figure, we typically show only a few cells, representative of the whole population. Labeling of the vacuolar membrane with CMAC fluorescent dye was performed by adding 1 µl of the dye to 5 ml of culture at least 30 min prior to visualization.
 
-## Protein extracts and western blotting
+### Protein extracts and western blotting
 
 For western blot analysis, crude cell extracts were prepared as previously described (Hein et al., 1995). Proteins were transferred to a nitrocellulose membrane (Schleicher and Schuell; catalog number NBA085B) and probed with mouse anti-GFP (Roche; catalog number 11 814 460 001), anti-hemagglutinin (anti-HA) (12CA5; Roche), or anti-yeast 3-phosphoglycerate kinase (anti-PGK) (Invitrogen) or with rabbit anti-Pma1 (De Craene et al., 2001), anti-phospho-Thr737-Sch9, or anti-Sch9Total (see below). Primary antibodies were detected with horseradish-peroxidase-conjugated anti-mouse or anti-rabbit immunoglobulin G secondary antibodies (GE Healthcare), followed by enhanced chemiluminescence (Roche; catalog number 12 015 196 001). Each Western blot was carried two to four times, a representative experiment is presented.
 
-## Generation and validation of the anti-phospho-Thr737-Sch9 antibody
+### Generation and validation of the anti-phospho-Thr737-Sch9 antibody
 
 The antibody was produced by and purchased from the GeneCust company. The CKFAGF(pT)FVDESAID peptide containing phosphorylated Thr737 was injected into rabbit. The affinity of the antibody preparation was tested in an ELISA for the phosphorylated peptide. Antibody specificity was tested by western blot analysis of cell extracts isolated from proline-grown wild-type (w-t) and sch9∆ strains, before and after addition of NH4+, well known to stimulate Sch9 phosphorylation (Figure 1—figure supplement 2). The anti-Sch9Total antibody was a kind gift of Robbie Loewith.
 
-## Measurements of cytosolic pH
+### Measurements of cytosolic pH
 
 Yeast strains expressing a single pHluorin gene integrated into the genome or containing a multicopy plasmid expressing the pHluorin gene were grown at 29°C on Gluc proline buffered medium, pH 6.1, to OD660 ~0.2. Fluorescence intensities were recorded with a SYNERGY multi-mode microplate reader (BioTek Instruments) with emission filter 512/9 nm and excitation filters 395/9 and 475/9 nm, as previously reported (Orij et al., 2009; Zimmermannova et al., 2015). To eliminate the background fluorescence, pHluorin-nonproducing wild-type cells were grown in parallel, and the corresponding values at each excitation wavelength were subtracted from those of pHluorin-producing cells. The I395 nm to I475 nm emission intensity ratio was used to calculate the cytosolic pH. The fluorescence intensities of each strain were typically recorded in four separate cultures (1 ml culture per well) within one experiment (technical replicates), and the presented data are means ±SD of at least two independent experiments (biological replicates). The calibration curve was generated as described previously (Orij et al., 2009; Zimmermannova et al., 2015), with minor changes. The cell culture (100 ml, OD660 = 0.2) was filtered, washed, resuspended in 8 ml phosphate-buffered saline (Sigma) containing digitonin (175 μg/ml), and incubated for 15 min at RT. Digitonin was washed out and the cells were resuspended in 8 ml PBS (the OD of the cell suspension was about 2.5) and placed on ice. Then 40 µl aliquots were transferred to CELLSTAR black polystyrene clear-bottom 96-well microtiter plates (Greiner Bio-One) containing, per well, 160 μl citric acid/Na2HPO4 buffer at a pH ranging from 5.6 to 7.6 (in this volume, the OD was 0.5). Recording of pHluorin fluorescence emission and background subtraction were performed as described above. The I395 nm to I475 nm intensity ratio was calculated, plotted against the corresponding buffer pH, and fitted to a third-degree polynomial regression curve.
 
-## Uptake measurements of radiolabelled compounds
+### Uptake measurements of radiolabelled compounds
 
 The accumulation of [14C]-labeled amino acids or [14C]-labeled-fructose was measured at the time points indicated as previously described (Ghaddar et al., 2014a; Grenson et al., 1966). The radiolabeled compounds were purchased either from Perkin-Elmer or from Hartmann analytic. Data points represent averages of two biological replicates; error bars represent standard deviations (SD).
 
-## Measurement of total amino acid pools
+### Measurement of total amino acid pools
 
 Yeast cultures (50 ml) were collected by centrifugation (7000 g for 3 min) and washed twice with 10 ml Milli-Q water. The final pellet was resuspended in 2 ml Milli-Q water and boiled for 15 min. To remove cell debris, suspensions were centrifuged at 13,000 g for 1 min and filtered (Millipore 0.45 μm). The resulting soluble fractions were subjected to amino acid analysis after AccQ Tag pre-column derivatization (Waters). For this an AccQ Tag Ultra UPLC column (Waters) with UV detection at 260 nm was used according to the manufacturer’s recommendations (Fayyad-Kazan et al., 2016).
 
-## Assay of trehalase activity in N-deprived cells
+### Assay of trehalase activity in N-deprived cells
 
 Cells growing on Gluc NH4+ medium were collected by filtration, and after washing and resuspension in Gluc medium without any N source, they were incubated overnight at 29°C with shaking. Cells were filtered, washed, and transferred again to fresh N-free Gluc medium for 30 min before addition of FCCP (20 μM). Culture samples were collected at various times and trehalase activity was measured in permeabilized cells as previously described (De Virgilio et al., 1991). Glucose levels were measured using the ‘Glucose assay kit’ (Sigma-Aldrich, Belgium).

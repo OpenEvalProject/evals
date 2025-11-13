@@ -43,11 +43,9 @@ We would like to emphasize that the timing rules for reinforcement are likely to
 
 The significance mark on each bar indicates significant difference (*P < 0.05, **P < 0.01, ***P < 0.001) compared with the baseline (one-sample two-tailed Student’s t-test) or between the indicated two groups (paired two-tailed Student’s t-test). This has now been explicitly stated in each figure legend.
 
-4) It should be stated if any of the treatments (plasticity induction, DA/forskolin application, etc.) affected the amount of current necessary to hold the membrane potential at -70 mV, preferably with actual data.10.7554/eLife.09685.018Author response image 1.Example plot showing changes in the holding current over time for post-before-pre pairing protocol with Δt = −20 ms in control t-LTD (n = 9) and with DA added after pairing (n = 11). Error bars represent s.e.m.DOI: http://dx.doi.org/10.7554/eLife.09685.018
+4) It should be stated if any of the treatments (plasticity induction, DA/forskolin application, etc.) affected the amount of current necessary to hold the membrane potential at -70 mV, preferably with actual data.10.7554/eLife.09685.018Author response image 1.Example plot showing changes in the holding current over time for post-before-pre pairing protocol with Δt = −20 ms in control t-LTD (n = 9) and with DA added after pairing (n = 11). Error bars represent s.e.m.
 
 Example plot showing changes in the holding current over time for post-before-pre pairing protocol with Δt = −20 ms in control t-LTD (n = 9) and with DA added after pairing (n = 11). Error bars represent s.e.m.
-
-DOI: http://dx.doi.org/10.7554/eLife.09685.018
 
 While there was a small difference in holding current between Control t-LTD and DA condition, a similar difference was not seen with Forskolin, suggesting that the change in holding current is not likely to be related to the effect on synaptic efficacy. We believe that this figure does not contribute to explaining our finding and, if possible, we would prefer not to include it in the manuscript.
 

@@ -35,9 +35,121 @@ Here, we identify PHE1 as a key transcriptional regulator of imprinted genes, of
 
 ## Results
 
-## Identification of PHE1 target genes
+### Identification of PHE1 target genes
 
 To identify the genes that are regulated by PHE1, we performed a ChIP-seq experiment using siliques from a PHE1::PHE1–GFP line, which has been previously shown to express PHE1–GFP exclusively in the endosperm (Weinhofer et al., 2010). ChIP experiments were done using two biological replicates, and peaks were called independently in each replicate, using MACS2 (Zhang et al., 2008) (Table 1). Only peak regions that were common between the two replicates were considered for further analysis. These regions correspond to 2494 ChIP-seq peaks, which are henceforth referred to as PHE1 binding sites (Table 2). Annotation of these sites for genomic features revealed that the majority are located in promoter regions (Table 2), and that the highest density is detected 200–250 bp upstream of the transcriptional start site (TSS) (Figure 1a), similarly to what has been described for other Arabidopsis TFs (Yu et al., 2016). To avoid the identification of false-positives, only binding sites located up to 1.5 kb upstream and 0.5 kb downstream of the TSS were considered for the annotation of target genes. This corresponds to 83% of the PHE1 binding sites (Figure 1a), and allowed the identification of 1694 PHE1 target genes (Table 2, Figure 1—figure supplement 1 and Figure 1—source data 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig1-v2.jpg)
+
+**Figure 1.:** (a) Spatial distribution of PHE1 binding sites around transcription start sites (TSS). The dotted pink lines indicate the spatial interval used to define PHE1 target genes. (b–c) Expression of PHE1 (b), and its target genes (c), across different stages of seed development. Gene expression is represented as a Log2-fold change between expression in the endosperm at the stages indicated on the x axis vs. expression in the pre-globular stage. A k-means clustering analysis was performed to group PHE1 targets that show similar expression trends across seed development. Gene expression data were retrieved from Belmonte et al. (2013). (d) Overlap between PHE1 targets, genes that were found to be significantly upregulated in osd1 when compared to wild-type (wt) seeds, and genes that were found to be significantly downregulated in phe1 phe2 osd1 when compared to osd1 seeds. P-values were determined using hypergeometric tests. (e) Expression of PHE1 targets that are significantly upregulated in osd1 seeds when compared to wt seeds. Genes marked in green are also significantly downregulated in phe1 phe2 osd1 seeds when compared to osd1 seeds.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** For each target gene, the read coverage for Input (as control) and PHE1–GFP ChIP samples of each replicate is shown. Called peaks in each replicate are indicated by the grey boxes. PHE1 binding sites, identified from the overlapped peak regions for replicates 1 and 2, are represented by the green boxes. PHE1 DNA-binding motifs are those defined in Figure 3a, and are represented here by the purple (Motif A) and pink boxes (Motif B). Transposable elements in the vicinity of the target gene are indicated. Red boxes correspond to TEs of the RC/Helitron superfamily, whereas white boxes represent TEs of other superfamilies. For this analysis, three different PHE1 targets with distinct imprinting statuses were selected: (a) AGL62 – non-imprinted; (b) MEDEA – a maternally expressed gene; (c) YUCCA10 – a paternally expressed gene.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** CRISPR/Cas9 was used to generate a premature stop codon in PHE1, represented by the red asterisk. PHE1 mutagenesis was performed in the phe2 background because of the proximity and probable redundancy of the two PHE genes (see Materials and methods).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Paralogous genes were selected according to the phylogenetic analysis performed by Parenicová et al. (2003). All genes are significantly upregulated in osd1 vs. wt and in phe1 phe2 osd1 vs. wt.
+
+**Table 1.**
+ PHE1 ChIP-seq read mapping and peak calling information.Peak calling was done using the ChIP sample and its respective Input sample as control. The fraction of peaks present in both replicates was determined as the percentage of peaks for which spatial overlap between Replicate 1 and Replicate 2 peaks is observed (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>No. of sequenced reads</th>
+      <th>% of mapped reads</th>
+      <th>No. of called ChIP-seq peaks</th>
+      <th>% of ChIP-seq peaks present in both replicates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Replicate 1 PHE1::PHE1–GFP ChIP</td>
+      <td>17,037,975</td>
+      <td>65.3</td>
+      <td rowspan="2">2818</td>
+      <td rowspan="2">88.5</td>
+    </tr>
+    <tr>
+      <td>Replicate 1 PHE1::PHE1–GFP Input</td>
+      <td>24,276,095</td>
+      <td>71.1</td>
+    </tr>
+    <tr>
+      <td>Replicate 2 PHE1::PHE1–GFP ChIP</td>
+      <td>21,838,147</td>
+      <td>70.5</td>
+      <td rowspan="2">4521</td>
+      <td rowspan="2">55.2</td>
+    </tr>
+    <tr>
+      <td>Replicate 2 PHE1::PHE1–GFP Input</td>
+      <td>23,372,778</td>
+      <td>70.7</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Annotation of PHE1 ChIP-seq peaks within genomic features of interest.Annotation for each individual replicate, as well as for common peaks, is presented. For target gene analysis, only common peaks located 1.5 kb upstream to 0.5 kb downstream of the TSS were considered (3rd row).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Sample</th>
+      <th rowspan="2">Total no. of peaks</th>
+      <th rowspan="2">No. of peaks in −1.5 kb to +0.5 kb window around TSS</th>
+      <th rowspan="2">Average distance to nearest TSS (bp)</th>
+      <th colspan="3">Associated genomic feature (% of peaks)</th>
+      <th rowspan="2">No. of targeted genes</th>
+    </tr>
+    <tr>
+      <th>Promoter</th>
+      <th>Gene body</th>
+      <th>Intergenic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Replicate 1 peaks</td>
+      <td>2818</td>
+      <td>2182</td>
+      <td>445</td>
+      <td>88.6</td>
+      <td>4.7</td>
+      <td>6.6</td>
+      <td>1985</td>
+    </tr>
+    <tr>
+      <td>Replicate 2 peaks</td>
+      <td>4521</td>
+      <td>3508</td>
+      <td>600</td>
+      <td>86.6</td>
+      <td>3.5</td>
+      <td>9.9</td>
+      <td>2971</td>
+    </tr>
+    <tr>
+      <td>Common peaks (PHE1 binding sites)</td>
+      <td rowspan="2">2494</td>
+      <td rowspan="2">1995</td>
+      <td rowspan="2">430</td>
+      <td rowspan="2">89.6</td>
+      <td rowspan="2">4.6</td>
+      <td rowspan="2">5.8</td>
+      <td rowspan="2">1694</td>
+    </tr>
+  </tbody>
+</table>
 
 To further validate the target status of these genes, as well as to evaluate the impact of PHE1 in their transcriptional output, we assessed how their expression varies in response to changes in PHE1 expression. Because PHE1 is highly expressed in the endosperm of early seeds, and shows a decrease in expression as seed development progresses (Figure 1b), the influence of PHE1 activity on its targets can be assessed by monitoring their expression trend throughout seed growth. To achieve this, we sampled the endosperm expression level of all PHE1 targets from pre-globular to mature seed stages, using previously published transcriptome data for laser-capture microdissected endosperm (Belmonte et al., 2013) (Figure 1c). Using a k-means clustering analysis, we identified three different clusters of PHE1 targets, which showed distinct expression trends during seed development (Figure 1c, Figure 1—source data 1): genes in cluster 1 showed reduced expression as seed development progresses, mimicking the expression pattern observed for PHE1 (Figure 1b); genes in clusters 2 and 3 showed small expression changes, with cluster 2 consisting of mildly upregulated genes, and cluster 3 consisting of mildly downregulated genes (Figure 1c). The general trend in which the expression of PHE1 targets follows PHE1 expression (cluster 1), or continues during the later stages of seed development (when PHE1 expression ceases) (clusters 2 and 3), suggests that PHE1 probably acts as transcriptional activator.
 
@@ -45,7 +157,7 @@ It is well established that PHE1 and other type I MADS-box TF genes are highly 
 
 As expected, we observed that a significant proportion of PHE1 targets were upregulated in osd1 3x seeds, correlating with increased expression of PHE1. Conversely, a moderate, but significant, number of PHE1 targets were downregulated in phe1 phe2 osd1 when compared to osd1 seeds (Figure 1d). Among these genes, 81 (p=5.0e–4) were simultaneously upregulated in osd1 seeds and downregulated in phe1 phe2 osd1 seeds (Figure 1d–e). We hypothesized that the small number of PHE1 target genes that show expression changes in phe1 phe2 osd1 is probably a result of the redundant and compensatory activity of other type I MADS-box TFs in the endosperm of these seeds. Indeed, PHE1 paralogs show a dramatic upregulation in osd1 and phe1 phe2 osd1 seeds, supporting this hypothesis (Figure 1—figure supplement 3). Because of this compensatory mechanism, we did not use this transcriptomics dataset to refine the list of PHE1 target genes obtained through ChIP-seq, as doing so would probably prevent the identification of biologically relevant genes. Nevertheless, the observation that a considerable proportion of genes show an endosperm expression pattern that mimics PHE1 expression (Figure 1b–c), and also show upregulation upon PHE1 overexpression (Figure 1d–e), suggests that PHE1 acts as a transcriptional activator, and validates the binding sites obtained through ChIP-seq.
 
-## PHE1 targets known regulators of endosperm development and other type I MADS-box transcription factors
+### PHE1 targets known regulators of endosperm development and other type I MADS-box transcription factors
 
 To explore the functional role of PHE1 targets, we performed a Gene Ontology (GO) analysis (Figure 2a). This revealed several different enriched GO-terms associated with brassinosteroid signaling pathways, seed growth and development, and metabolic pathways including triglyceride biosynthesis and carbohydrate transport. Furthermore, we found an enrichment of a GO-term associated with the positive regulation of transcription. Indeed, many PHE1 targets are themselves transcriptional regulators (Figure 2b). More specifically, we detected that other type I MADS-box family genes are strongly over-represented among PHE1 targets (Figure 2b), pointing to a high degree of cross-regulation among members of this family. In addition, several PHE1 targets , such as AGL62, YUC10, IKU2, MINI3, and ZHOUPI, are known regulators of seed development (Table 3, Figure 1—figure supplement 1). These genes have been previously described to influence the proliferation, cellularization, and breakdown of the endosperm (Table 3), revealing an important role for PHE1 in regulating the development of this structure.
 
@@ -53,47 +165,260 @@ To explore the functional role of PHE1 targets, we performed a Gene Ontology (GO
 
 **Figure 2.:** (a) Enriched biological processes associated with PHE1 target genes. Numbers on bars indicate number of PHE1 target genes within each GO term. (b) Enrichment of transcription factor (TF) families among PHE1 target genes (see Materials and methods). Numbers indicate the total number of Arabidopsis genes belonging to a certain TF family, and the total number of genes in that family targeted by PHE1. *, p-values <0.05. P-values were determined using the hypergeometric test.
 
-## Transposable elements act as cis-regulatory elements by carrying PHE1 DNA-binding motifs
+**Table 3.**
+ PHE1 target genes previously implicated in endosperm development.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene ID</th>
+      <th>Imprinting status</th>
+      <th>Description of function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AGL62</td>
+      <td>Non-imprinted</td>
+      <td>Type I MADS-box TF involved in endosperm proliferation and seed coat development (Figueiredo et al., 2016; Figueiredo et al., 2015; Kang et al., 2008; Roszak and Köhler, 2011)</td>
+    </tr>
+    <tr>
+      <td>YUC10</td>
+      <td>PEG</td>
+      <td>Flavin monooxygenase that catalyzes the last step of the Trp-dependent auxin biosynthetic pathway (Zhao, 2012). Involved in endosperm proliferation and cellularization (Batista et al., 2019; Figueiredo et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>IKU2</td>
+      <td>Non-imprinted</td>
+      <td>Encodes a leucine-rich repeat receptor kinase protein that, together with MINI3, is part of the IKU pathway controlling seed size. iku2 mutants show reduced endosperm growth and early endosperm cellularization (Garcia et al., 2003; Luo et al., 2005).</td>
+    </tr>
+    <tr>
+      <td>MINI3</td>
+      <td>Non-imprinted</td>
+      <td>WRKY TF that, together with IKU2, is part of the IKU pathway controlling seed size. mini3 mutants show reduced endosperm growth and early endosperm cellularization (Luo et al., 2005).</td>
+    </tr>
+    <tr>
+      <td>ZHOUPI</td>
+      <td>Non-imprinted</td>
+      <td>Encodes a bHLH TF expressed in the embryo-surrounding region of the endosperm. It is essential for embryo cuticle formation and endosperm breakdown after its cellularization (Xing et al., 2013; Yang et al., 2008).</td>
+    </tr>
+    <tr>
+      <td>MEA</td>
+      <td>MEG</td>
+      <td>Subunit of the FIS–PRC2 complex, responsible for depositing H3K27me3 at target loci including PEGs (Moreno-Romero et al., 2016; Moreno-Romero et al., 2019). Loss of MEA and, consequently, paternally biased expression of PEGs lead to a 3x-seed-like phenotype (Grossniklaus et al., 1998; Kiyosue et al., 1999).</td>
+    </tr>
+    <tr>
+      <td>ADM</td>
+      <td>PEG</td>
+      <td>Interacts with SUVH9 and AHL10 to promote H3K9me2 deposition in TEs, influencing the expression of neighboring genes. Mutations in ADM lead to rescue of the 3x seed abortion phenotype (Jiang et al., 2017; Kradolfer et al., 2013; Wolff et al., 2015).</td>
+    </tr>
+    <tr>
+      <td>SUVH7</td>
+      <td>PEG</td>
+      <td>Encodes a putative histone-lysine N-methyltransferase. Mutations in SUVH7 lead to rescue of the 3x seed abortion phenotype (Wolff et al., 2015).</td>
+    </tr>
+    <tr>
+      <td>PEG2</td>
+      <td>PEG</td>
+      <td>Encodes an unknown protein, which is not translated in the endosperm. PEG2 transcripts act as a sponge for siRNA854, thus regulating UBP1 abundance (Wang et al., 2018). Mutations in PEG2 lead to rescue of the 3x seed abortion phenotype (Wang et al., 2018; Wolff et al., 2015).</td>
+    </tr>
+    <tr>
+      <td>NRPD1a</td>
+      <td>PEG</td>
+      <td>Encodes the largest subunit of RNA POLYMERASE IV, which is involved in the RNA-directed DNA methylation pathway. Mutations in NRPD1a lead to rescue of the 3x seed abortion phenotype (Erdmann et al., 2017; Martinez et al., 2018).</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transposable elements act as cis-regulatory elements by carrying PHE1 DNA-binding motifs
 
 To investigate the DNA-binding properties of PHE1, we screened PHE1 binding sites for enriched sequence motifs, using HOMER’s de novo motif analysis tool. This analysis revealed that PHE1 uses two distinct DNA-binding motifs: motif A was present in about 53% of PHE1 binding sites, and motif B could also be found in 43% of those sites (Figure 3a). In total, 68% of all of PHE1 binding sites are associated with at least one of these motifs, and the majority of these show co-occurrence of Motif A and B (Figure 3—figure supplement 1a). In addition, and as observed for type II MADS-box TFs (Aerts et al., 2018), the highest density of these motifs is detected at the center of PHE1 binding sites (Figure 3—figure supplement 1b). PHE1 DNA-binding motifs closely resemble CArG-boxes, the signature motif of binding sites for type II MADS-box TFs (de Folter and Angenent, 2006) (Figure 3a, Figure 3—figure supplement 1c). This is particularly visible in the case of Motif B, which is similar to the SEP3 DNA-binding motif, and shows the characteristics of a bona fide CArG-box -– CC(A/T)6GG (Figure 3—figure supplement 1c). Motif A, on the other hand, shows similarity to the SVP CArG-box, but lacks the terminal G nucleotides, thus resembling a partially degenerated CArG-box (Figure 3—figure supplement 1c). Nevertheless, the detected similarity between PHE1 DNA-binding motifs and previously characterized CArG-boxes suggests that the DNA-binding properties of type I and type II TFs might be conserved.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig3-v2.jpg)
+
+**Figure 3.:** (a) CArG-box like DNA-binding motifs identified from PHE1 ChIP-seq data. (b) Fraction of PHE1 binding sites (green) that overlap transposable elements (TEs). Overlap is expressed as the percentage of total binding sites for which spatial intersection with features on the y-axis is observed. A set of random binding sites is used as control (blue). This control set was obtained by randomly shuffling the identified PHE1 binding sites within random A. thaliana gene promoters (see Materials and methods). P-values were determined using Monte Carlo permutation tests (see Materials and methods). Bars represent ± s.d. (n = 2494, for PHE1 binding sites and random binding sites). (c) Density of PHE1 DNA-binding motifs in different genomic regions of interest. P-values were determined using χ2 tests. (d) Fold-change in the expression of genes flanked by RC/Helitron TEs. Fold-change was determined by comparing endosperm and embryo, or by comparing endosperm and seed coat. Genes were divided into four categories depending on their PHE1 target status, and the presence of RC/Helitrons with and without PHE1 DNA-binding motifs. Gene expression data were retrieved from Belmonte et al. (2013). Pre-globular seed stage was used in this analysis. P-values were determined using two-tailed Mann-Whitney tests (n = number represented below boxplots).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Occurrence of PHE1-binding motifs in PHE1 binding sites. (b) Density of PHE1-binding motifs across PHE1 binding sites. (c) Alignment between PHE1-binding motifs and known motif matches. Both motifs match with previously characterized type II MADS-box CArG-boxes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Fraction of PHE1 binding sites (green) overlapping with different RC/Helitron TE families. Overlap is expressed as the percentage of binding sites where spatial intersection with the families specified on the y-axis is observed. A set of random binding sites is used as control (blue). This control set was obtained by randomly shuffling the identified PHE1 binding sites within A. thaliana gene promoters (see Materials and methods). P-values were determined using Monte Carlo permutation tests (see Materials and methods). Bars represent ± s.d., (n = 2494, for PHE1 binding sites and random binding sites).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** PHE1-DNA binding motifs and their flanking sequences were paired on the basis of sequence homology. The pairwise homologous sequences were then merged into higher-order clusters, which were based on shared elements in the homologous pairs (see Materials and methods). Motifs are those identified in Figure 3a.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Density of perfect PHE1 DNA-binding motifs in the consensus sequences of different RC/Helitron families. Perfect motifs are those described in Figure 3a. As a reference, the density of perfect PHE1 DNA-binding motifs in the consensus sequences of all TE families is shown. (b) Density of nearly perfect PHE1 DNA-binding motifs in the consensus sequences of different RC/Helitron families. Nearly perfect motifs are those sequences where only one nucleotide substitution is required to generate a perfect PHE1 DNA-binding motif. As a reference, the density of nearly perfect PHE1 DNA-binding motifs in the consensus sequences of all TE families is shown. P-values were determined using χ2 tests.
 
 Strikingly, we observed that PHE1 binding sites significantly overlap with TEs, preferentially with those of the RC/Helitron superfamily (29% in PHE1 binding sites, versus 9% in random binding sites) (Figure 3b), and in particular with some RC/Helitron subfamilies (Figure 3—figure supplement 2). We thus addressed the question of whether RC/Helitrons contain sequence properties that promote PHE1 binding. Indeed, a screen of genomic regions for the presence of PHE1 DNA-binding motifs, revealed significantly higher motif densities within all RC/Helitrons, when compared to other TE superfamilies (Figure 3c). We found that most RC/Helitron sequences associated with PHE1 DNA-binding motifs share sequence homology, and that the majority of them could be grouped into one large cluster on the basis of sequence identity (Figure 3—figure supplement 3). Although the presence of additional smaller clusters points to a few instances of independent gains of PHE1 DNA-binding motifs through de novo mutation or sequence capture, the grouping of most sequences within one cluster suggests that a single ancestral RC/Helitron probably acquired a perfect or nearly perfect motif. Moreover, we could detect the presence of perfect or nearly perfect PHE1 DNA-binding motifs within the consensus sequences of several RC/Helitron families (Figure 3—figure supplement 4), suggesting that the radiation of RC/Helitrons occurred after the acquisition of the binding motif.
 
 Interestingly, even though motif densities were higher in RC/Helitrons that were overlapped by PHE1 binding sites than in non-overlapped RC/Helitrons, this difference was not significant (Figure 3c). As the enrichment of PHE1 DNA-binding motifs is a specific feature of RC/Helitrons, the domestication of these TEs as cis-regulatory regions might facilitate TF binding and the modulation of gene expression. In line with this, we detected that genes that are flanked by RC/Helitrons carrying bound PHE1 DNA-binding motifs were expressed to a greater level in the endosperm than in other seed tissues, and were expressed at levels similar to those of PHE1 targets without flanking RC/Helitrons (Figure 3d). This shows that for a subset of genes, TEs can be effectively used as sites for PHE1 binding, thus triggering the endosperm-specific expression of nearby genes.
 
-## Epigenetic status of imprinted gene promoters conditions PHE1 accessibility in a parent-of-origin- specific manner
+### Epigenetic status of imprinted gene promoters conditions PHE1 accessibility in a parent-of-origin- specific manner
 
 We detected a significant enrichment of imprinted genes among the PHE1 target genes, with 9% of all maternally expressed genes (MEGs) and 27% of all paternally expressed genes (PEGs) being targeted (Figure 4a, Figure 4—source data 1). Given the significant overrepresentation of imprinted genes among PHE1 targets, we assessed how the epigenetic landscape at those loci correlates with DNA-binding by PHE1. We surveyed levels of endosperm H3K27me3 within PHE1-binding sites and identified two distinct clusters (Figure 4b). Cluster 1 was characterized by an accumulation of H3K27me3 in regions flanking the center of the binding site, whereas the center itself was devoid of this mark. This pattern of distribution was maintained when taking into consideration the strand location of the gene associated with the binding site, revealing that binding of PHE1 at these sites occurs in an H3K27me3-depleted island (Figure 4—figure supplement 1). Cluster 2, on the other hand, contained binding sites that are largely devoid of H3K27me3. The distribution of H3K27me3 in cluster 1 was mostly attributed to the deposition of H3K27me3 on the maternal alleles, whereas the paternal alleles were devoid of this mark (Figure 4c) — a pattern usually associated with PEGs (Moreno-Romero et al., 2016). Consistently, genes that are associated with cluster 1 binding sites had more paternally biased expression in the endosperm when compared to genes associated with cluster 2 (Figure 4—figure supplement 2a). This is reflected by the association of more PEGs and putative PEGs with cluster 1 (Figure 4—figure supplement 2b). We also identified parental-specific differences in DNA methylation, specifically in the CG context: PHE1-binding sites that were associated with MEGs had significantly higher methylation levels in paternal alleles than in maternal alleles (Figure 4d).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig4-v2.jpg)
+
+**Figure 4.:** (a) Fraction of non-imprinted and published imprinted genes targeted by PHE1. P-values were determined using the hypergeometric test. The list of published imprinted genes used for this analysis is detailed in Figure 4—source data 1. (b) Heatmap of endosperm H3K27me3 distribution along PHE1-binding sites. Each horizontal line represents one binding site. Clusters were defined on the basis of the pattern of H3K27me3 distribution (see Materials and methods) (c) Metagene plot of average maternal (♀, pink), paternal (♂, blue) and total (grey) endosperm H3K27me3 marks along PHE1 binding sites. (d) CG methylation levels in maternal (♀, upper panel) and paternal (♂, lower panel) alleles of PHE1 binding sites associated with MEGs (yellow), PEGs (green) and non-imprinted (grey) PHE1 targets. P-values were determined using two-tailed Mann-Whitney tests. (e) Sanger sequencing of imprinted and non-imprinted gene promoters bound by PHE1. SNPs for maternal (Ler) and paternal (Col) alleles are shown (n = 1 biological replicate). Maternal:total read ratios for imprinted genes are as follows: AT1G55650 – 1.0; AT2G28890 – 0.97; AT3G18550 – 0.44; and AT2G20160 – 0.32.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Binding sites and their respective target genes can be present in the Watson (+) or Crick (–) strand of DNA. (b) Metagene plots of H3K27me3 distribution in PHE1binding sites associated with target genes located in the Watson (orange line) or Crick strands (blue lines). For this analysis, only H3K27me3 distributions in PHE1-binding sites associated with Cluster 1 were considered (Figure 4b). Total, maternal, and paternal H3K27me3 is represented in the top, middle, and bottom panels, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Parental gene expression ratio of PHE1 targets associated with Cluster 1 and Cluster 2 binding sites, and all endosperm expressed genes. P-values were determined using two-tailed Mann-Whitney tests. (b) Fraction of Cluster 1 and Cluster 2 binding sites that target PEGs (Figure 4—source data 1) and putative PEGs (Moreno-Romero et al., 2019). (a, b) H3K27me3 clusters are those defined in Figure 4b.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** qPCR of purified ChIP-DNA. Enrichment is shown as % of input DNA, in regions associated with MEGs (pink), PEGs (blue), and non-imprinted (grey) PHE1 target genes. Bars represent ± s.d. Data from one representative biological replicate are shown (n = 2 biological replicates).
+
 We hypothesized that the differential parental deposition of epigenetic marks in parental alleles of PHE1 binding sites can result in the differential accessibility of each allele. This might impact the binding of PHE1, and therefore also impact transcription in a parent-of-origin-specific manner. To test this, we performed ChIP using a Ler maternal plant and a Col PHE1::PHE1–GFP pollen donor, taking advantage of single nucleotide polymorphisms (SNPs) between these two accessions to discern parental preferences of PHE1 binding. Using Sanger sequencing, we determined the parental origin of enriched ChIP-DNA in MEG, non-imprinted, and PEG targets (Figure 4e, Figure 4—figure supplement 3). Although binding of PHE1 was biallelic in non-imprinted targets (Figure 4e), only maternal binding was detected in the tested MEG targets (Figure 4e), supporting the idea that CG hypermethylation of paternal alleles prevents their binding by PHE1. Interestingly, we observed biallelic binding in PEG targets (Figure 4e). Even though the maternal PHE1 binding sites in PEGs were flanked by H3K27me3 (Figure 4b–c), correlating with the transcriptional repression of maternal alleles, the absence of this mark within the binding site centers seems to be permissive for maternal PHE1 binding.
 
-## Insertion of transposable elements carrying PHE1 DNA-binding motifs correlates with gain of imprinting
+### Insertion of transposable elements carrying PHE1 DNA-binding motifs correlates with gain of imprinting
 
 Previous studies have shown that PEGs are often flanked by RC/Helitrons (Hatorangan et al., 2016; Pignatta et al., 2014; Wolff et al., 2011), a phenomenon that has been suggested to lead to the parental asymmetry of epigenetic marks in these genes (Moreno-Romero et al., 2016; Pignatta et al., 2014). Consistent with our finding that PHE1 binding sites overlapped with RC/Helitrons (Figure 3b), we found that PHE1 DNA-binding motifs were contained within these TEs significantly more frequently in PEGs than in non-imprinted genes (Figure 5—figure supplement 1). Furthermore, we detected the presence of homologous RC/Helitrons containing PHE1 binding motifs in the promoter regions of several PHE1-targeted PEG orthologs (Figure 5a–e, Figure 5—figure supplement 2), indicating ancestral insertion events. The presence of these RC/Helitrons correlated with paternally biased expression of the associated orthologs, providing further support to the hypothesis that these TEs contribute to the gain of imprinting, especially of PEGs.
 
-## PHE1 establishes triploid seed inviability of paternal excess crosses
+![Figure 5.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig5-v2.jpg)
+
+**Figure 5.:** (a–e) Phylogenetic analyses of PHE1-targeted PEGs and their homologs. Each panel represents a distinct target gene and its corresponding homologs in different species. The genes shown on a grey background have homologous RC/Helitron sequences in their promoter region. The arrow indicates the putative insertion of an ancestral RC/Helitron. The identity of the RC/Helitron identified in A. thaliana is indicated. These A. thaliana RC/Helitrons contain a PHE1 DNA-binding motif and are associated with a PHE1 binding site. The inset boxes represent the alignment between the A. thaliana PHE1 DNA-binding motif and similar DNA motifs contained in RC/Helitrons that are present in the promoter regions of orthologous genes. When available, the imprinting status of a given gene is indicated by the presence of ♂ (PEG) or ⚥ (non-imprinted), and reflects the original imprinting analyses done in the source publications (see Materials and methods). The maternal:total read ratio (M/T) for each gene is also indicated. §: potential contamination from maternal tissue. *: accession-biased expression. The scale bars represent the frequency of substitutions per site for the ML tree. The tree is unrooted. Gene identifier nomenclatures: AT, Arabidopsis thaliana; AL, Arabidopsis lyrata; Araha, Arabidopsis halleri; Bostr, Boechera stricta; Carubv, Capsella rubella; Cagra, Capsella grandiflora; Tp, Schrenkiella parvula; SI, Sisymbrium irio; Bol, Brassica oleracea; Brapa, Brassica rapa; Thhalv, Eutrema salsugineum; AA, Aethionema arabicum; THA, Tarenaya hassleriana; Cpa, Carica papaya; TCA, Theobroma cacao; Gorai, Gossypium raimondii; RCO, Ricinus communis; FVE, Fragaria vesca; and GSVIVG, Vitis vinifera.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Fraction of PHE1 binding sites targeting MEGs, PEGs, or non-imprinted genes where a spatial overlap between a RC/Helitron and a PHE1 DNA-binding motif is observed. P-values were determined using the hypergeometric test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Alignments between A. thaliana RC/Helitrons associated with PEGs (Figure 5a–e) and homologous sequences in other Brassicaceae, where the putative homologous PHE1 DNA-binding motifs are present across all six species. For each aligned fragment, the percent sequence identity is indicated. The distances between the binding motifs and the TSS of PEGs are labelled. *, the distance to the TSS, in cases where the annotation for the 5′-UTR of the gene is not available.
+
+### PHE1 establishes triploid seed inviability of paternal excess crosses
 
 Among the PEGs that were targeted by PHE1 were ADM, SUVH7, PEG2, and NRPD1a (Table 3). Mutants in all four PEGs suppress the abortion of 3x seeds generated by paternal excess interploidy crosses (Martinez et al., 2018; Satyaki and Gehring, 2019; Wolff et al., 2015). Furthermore, we found that between 40% and 50% of highly upregulated genes in 3x seeds are targeted by PHE1 (Figure 6a), suggesting that this TF might play a central role in mediating the strong gene deregulation observed in these seeds. If this is true, removal of PHE1 in paternal excess 3x seeds is expected to suppress their inviability. Indeed, although wt and phe2 maternal plants pollinated with osd1 pollen form 3x seeds that abort at high frequency (Kradolfer et al., 2013), phe1 phe2 osd1 pollen strongly suppresses 3x seed inviability (Figure 6b, Figure 6—figure supplement 1a). This is also reflected by the increased germination of 3x phe1 phe2 seeds (Figure 6c, Figure 6—figure supplement 1b), and this phenotype could be reverted by introducing the PHE1::PHE1–GFP transgene paternally (Figure 6b–c, Figure 6—figure supplement 1a–b). Notably, 3x seed rescue was mostly mediated by phe1, as the presence of a wt PHE2 allele in 3x seeds (wt x phe1 phe2 osd1) led to rescue levels that were comparable to those seen when no wt PHE2 allele was present (phe2 x phe1 phe2 osd1) (Figure 6b–c, Figure 6—figure supplement 1a–b). Importantly, phe1-mediated 3x seed rescue was accompanied by reestablishment of endosperm cellularization (Figure 6—figure supplement 1c–d).
 
-## Imprinted gene deregulation in triploid seeds is not accompanied by a breakdown of imprinting
+![Figure 6.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig6-v2.jpg)
+
+**Figure 6.:** (a) Target status of upregulated genes in paternal excess crosses. Highly upregulated genes in 3x seeds are more often targeted by PHE1 (p<2.2e–16, χ2 test). n = numbers on the left. (b, c) Seed inviability phenotype (b) of paternal excess crosses in wild-type (wt), phe1 phe2, and phe1 complementation lines, with their respective seed germination rates (c). The maternal parent is always indicated first. Remaining control crosses are shown in Figure 6—figure supplement 1a–b. n = numbers on top of bars (seeds). (d) Parental expression ratio of imprinted genes in the endosperm of 2x (white) and 3x seeds (grey). Solid lines indicate the ratio thresholds for the definition of MEGs and PEGs in 2x and 3x seeds. (e) Accumulation of H3K27me3 across maternal (♀) and paternal (♂) gene bodies of PEGs in the endosperm of 2x and 3x seeds (white and grey, respectively). H3K27me3 accumulation in MEGs and non-imprinted genes is shown in Figure 6—figure supplement 2. P-value was determined using a two-tailed Mann-Whitney test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a, b) Seed inviability phenotype of wild-type (wt) and paternal excess crosses in wt, phe1 phe2, and phe1 complementation lines (a), with respective seed germination rates (b). (c, d) Status of endosperm cellularization in wt and paternal excess seeds. (a, b, d) n = numbers on top of bars (seeds).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50541/elife-50541-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Accumulation of H3K27me3 in maternal (♀) and paternal (♂) gene bodies of MEGs and non-imprinted genes in the endosperm of 2x and 3x seeds (white and grey, respectively).
+
+### Imprinted gene deregulation in triploid seeds is not accompanied by a breakdown of imprinting
 
 Loss of FIS-PRC2 function causes a phenotype similar to that of paternal excess 3x seeds, correlating with largely overlapping sets of deregulated genes, notably PEGs (Erilova et al., 2009; Tiwari et al., 2010). As FIS-PRC2 is a major regulator of PEGs in the Arabidopsis endosperm (Moreno-Romero et al., 2016), we addressed the question of whether imprinting is disrupted in 3x seeds. To assess this, we analyzed the parental expression ratio of imprinted genes in the endosperm of 2x and 3x seeds. Surprisingly, imprinting was not disrupted in 3x seeds (Figure 6d). To confirm that maintenance of imprinting in 3x seeds is explained by maintenance of the underlying epigenetic marks, we generated parental-specific H3K27me3 profiles of 2x and 3x seed endosperm (Table 4). Consistent with the observed maintenance of imprinting, we detected similar H3K27me3 levels on the maternal alleles of PEGs in 2x and 3x seeds (Figure 6e, Figure 6—figure supplement 2). Collectively, these data show that the major upregulation of PEG expression in 3x seeds is due to increased transcription of the active allele, probably mediated by PHE1 and other MADS-box TFs, with maintenance of the imprinting status.
 
+**Table 4.**
+ H3K27me3 ChIP-seq read mapping and purity information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>No. trimmed reads</th>
+      <th>% of mapped reads</th>
+      <th>No. of Ler reads</th>
+      <th>No. of Col reads</th>
+      <th>Purity (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ler x Col 4x</td>
+      <td rowspan="2">30,337,933</td>
+      <td rowspan="2">68.3</td>
+      <td rowspan="2">1,844,412</td>
+      <td rowspan="2">1,563,394</td>
+      <td rowspan="2">95.7</td>
+    </tr>
+    <tr>
+      <td>Replicate 1 Input</td>
+    </tr>
+    <tr>
+      <td>Ler x Col 4x</td>
+      <td rowspan="2">22,644,505</td>
+      <td rowspan="2">73.3</td>
+      <td rowspan="2">1,439,255</td>
+      <td rowspan="2">1,211,446</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Replicate 1 H3 ChIP</td>
+    </tr>
+    <tr>
+      <td>Ler x Col 4x</td>
+      <td rowspan="2">27,448,642</td>
+      <td rowspan="2">61.5</td>
+      <td rowspan="2">1,214,486</td>
+      <td rowspan="2">681,823</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Replicate 1 H3K27me3 ChIP</td>
+    </tr>
+    <tr>
+      <td>Ler x Col 4x</td>
+      <td rowspan="2">40,500,367</td>
+      <td rowspan="2">66.4</td>
+      <td rowspan="2">2,720,117</td>
+      <td rowspan="2">2,483,912</td>
+      <td rowspan="2">97.7</td>
+    </tr>
+    <tr>
+      <td>Replicate 2 Input</td>
+    </tr>
+    <tr>
+      <td>Ler x Col 4x</td>
+      <td rowspan="2">32,322,049</td>
+      <td rowspan="2">71.9</td>
+      <td rowspan="2">2,304,635</td>
+      <td rowspan="2">2,068,612</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Replicate 2 H3 ChIP</td>
+    </tr>
+    <tr>
+      <td>Ler x Col 4x</td>
+      <td rowspan="2">34,978,215</td>
+      <td rowspan="2">63</td>
+      <td rowspan="2">2,681,981</td>
+      <td rowspan="2">1,636,717</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Replicate 2 H3K27me3 ChIP</td>
+    </tr>
+  </tbody>
+</table>
+
+_The purity of INTACT-extracted endosperm nuclei is indicated in the last column and was calculated as described in Moreno-Romero et al. (2017)._
+
 ## Discussion
 
-## Functional role of PHE1 during endosperm development
+### Functional role of PHE1 during endosperm development
 
 PHE1 is expressed during the early stages of seed development, immediately after fertilization, and until the onset of endosperm cellularization. The initial stages of endosperm development are characterised by a rapid proliferation that is accompanied by import of resources to this tissue (Hill et al., 2003; Mansfield and Briarty, 1990; Morley-Smith et al., 2008). Upon cellularization, these resources are hypothesized to be transferred to the embryo, correlating with rapid growth and the accumulation of storage products in this structure (Baud et al., 2008; Hehenberger et al., 2012; Hill et al., 2003). Remarkably, we found that genes that are required for endosperm proliferation and growth, such as YUC10 (Figueiredo et al., 2015), IKU2 (Garcia et al., 2003; Luo et al., 2005), and MINI3 (Luo et al., 2005) are under transcriptional control of PHE1. As PHE1 is imprinted and paternally expressed (Köhler et al., 2005), proliferation of the endosperm becomes dependent on the presence of the paternal genome, which allows the fertilization event to be coupled with the onset of endosperm growth. Besides being relevant for endosperm proliferation, PHE1 might also have an important role in resource accumulation in preparation for cellularization, because genes that are related to metabolic processes, such as carbohydrate transport and triglyceride biosynthesis, were found to be enriched among PHE1 targets.
 
 The control of both endosperm proliferation and resource accumulation by PHE1 suggests that type I MADS-box TFs might have a central role in establishing essential transcriptional networks that facilitate endosperm development. Besides PHE1, many other type I MADS-box TFs are expressed in the endosperm (Bemer et al., 2010), and probably act as heterodimers (de Folter et al., 2005). Similarly to the function of type II MADS-box TFs in the determination of flower morphology (Chen et al., 2018; Smaczniak et al., 2017; Theissen and Saedler, 2001), different type I MADS-box heterodimers could be able to control distinct sets of genes during endosperm development. Furthermore, different stages of endosperm development could be characterized by the activity of different heterodimers. Therefore, a deeper analysis of the expression and interaction dynamics of type I MADS-box TFs might reveal that this family has a role in endosperm development that is broader than that uncovered here for PHE1.
 
-## Deregulated expression of type I MADS-box transcription factors establishes hybridization barriers
+### Deregulated expression of type I MADS-box transcription factors establishes hybridization barriers
 
 Normal endosperm development is associated with decreased expression of a subset of type I MADS-box genes, including PHE, preceding the onset of cellularization (Erilova et al., 2009; Lu et al., 2012; Schatlowski and Köhler, 2012; Stoute et al., 2012; Tiwari et al., 2010; Walia et al., 2009). This has led to the suggestion that these TFs are negative regulators of endosperm cellularization, although the molecular mechanism behind these observations has remained elusive. Our observation that PHE1 controls the expression of a large fraction of deregulated genes in interploidy hybridization seeds, in which cellularization is disturbed, provides an explanation for why the onset of endosperm cellularization is correlated with the expression of PHE1. Because PHE1 expression is increased in the endosperm of paternal excess crosses, the expression of PHE targets is probably similarly affected. In the specific case of the target gene YUC10, this leads to prolonged auxin biosynthesis and to the overaccumulation of this hormone in the endosperm, which has been previously shown to prevent the onset of cellularization (Batista et al., 2019). Therefore, successful and adequately timed endosperm cellularization probably requires a specific pattern of expression of type I MADS-box genes, as well as a balanced stoichiometry between members of different MADS-box protein complexes.
 
 Interploidy and interspecies hybridizations can easily change the expression and stoichiometry of MADS-box TFs, for example by having distinct numbers of gene copies, or through differences in gene regulation between parents, such as variations in imprinting patterns (Dilkes and Comai, 2004). Therefore, it is possible that type I MADS-box TFs can function as sensors of parental compatibility in the endosperm: i) these TFs show expression differences upon interploidy/interspecies hybridization (Erilova et al., 2009; Lu et al., 2012; Schatlowski and Köhler, 2012; Stoute et al., 2012; Tiwari et al., 2010; Walia et al., 2009); and ii) as exemplified here by PHE1, they are able to engage pathways that enforce seed abortion when compatibility between parents is not present. Dissecting the factors governing expression of type I MADS-box TFs will be an important future step in better understanding the regulatory mechanisms triggering endosperm-based reproductive barriers.
 
-## PHE1 regulates imprinted genes
+### PHE1 regulates imprinted genes
 
 Here, we report that many imprinted genes are targets of PHE1. Interestingly, we observed that binding of PHE1 to maternal and paternal alleles of some of these genes is conditioned by the epigenetic status of the alleles. The accumulation of DNA methylation near the TSS region has been reported to have a negative effect on gene expression (Niederhuth et al., 2016). In line with this, DNA methylation was shown to impair the binding of a wide range of plant TFs (O'Malley et al., 2016). Our observation that CG methylation restricts the binding of PHE1 to the paternal alleles of the tested MEGs is similar to observations made on the mammalian Peg3 gene, where the TF YY1 shows methylation-dependent binding (Kim, 2003). Thus, our data reveal that in plants, as in animals, parental asymmetries of DNA methylation at cis-regulatory regions can lead to parent-of-origin-specific expression patterns (Figure 7).
 
@@ -103,7 +428,7 @@ Here, we report that many imprinted genes are targets of PHE1. Interestingly, we
 
 Surprisingly, for PEG targets, PHE1 binding was detected not only on the expressed paternal allele, but also on the transcriptionally inactive maternal alleles, probably enabled by an H3K27me3-depleted island in these alleles. We speculate that this island could be important for PHE1-mediated recruitment of PRC2 complexes in the endosperm and, consequently, for the maintenance of H3K27me3 levels during its proliferation (Figure 7). This hypothesis is supported by the findings that plant PRC2 can be recruited by different families of TFs (Xiao et al., 2017; Zhou et al., 2018), and that the presence of cis-regulatory features such as Polycomb response elements is essential for maintenance of H3K27me3 upon cell division (Coleman and Struhl, 2017; Laprell et al., 2017). The recruitment of this epigenetic mark at imprinted loci takes place in the central cell, and is faithfully inherited in the endosperm after fertilization (Gehring, 2013; Rodrigues and Zilberman, 2015). Given that MADS-box DNA-binding motifs can be shared between different MADS-box TFs (Aerts et al., 2018), it is tempting to speculate that the PHE1 binding sites that are present at PEG loci could be shared by a central cell-specific MADS-box TF, and used to initiate PRC2 recruitment to these regions; nevertheless, this hypothesis remains to be tested formally.
 
-## RC/Helitrons distribute PHE1 binding sites and generate novel transcriptional networks
+### RC/Helitrons distribute PHE1 binding sites and generate novel transcriptional networks
 
 Our work establishes a novel role for RC/Helitrons in the regulation of gene expression by showing that these TEs contain PHE1 binding sites. Our data favor a scenario in which these elements have been domesticated to function as providers of cis-regulatory sequences that facilitate transcription. Insertion of these elements can contribute to the generation of novel gene promoters that ensure the timely expression of nearby genes in the endosperm, controlled by PHE1 and possibly by other type I MADS-box TFs. We show that genes that are controlled by PHE1 are involved in key developmental pathways, such as endosperm proliferation and cellularization, with many of them being PEGs. Given our observation that RC/Helitrons carry PHE DNA-binding motifs, and that these TEs have been previously shown to be associated with PEGs (Hatorangan et al., 2016; Pignatta et al., 2014; Wolff et al., 2011), we propose a dual role for these elements in imprinting. Besides promoting the establishment of epigenetic modifications that are conducive to imprinting (Gehring, 2013; Rodrigues and Zilberman, 2015), they can also contribute to the transcriptional activation of these genes in the endosperm by carrying type I MADS-box TF binding sites. Future work will be required to validate this model and to evaluate the magnitude of its impact in the generation of imprinted expression across different plant species.
 
@@ -113,13 +438,13 @@ In summary, this work reveals that the type I MADS-box TF PHE1 is a major regula
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 Arabidopsis thaliana seeds were sterilized in a closed vessel containing chlorine gas for 3 hr. Chlorine gas was produced by mixing 3 mL HCl 37% and 100 mL of 100% commercial bleach. Sterile seeds were plated in ½ MS-medium (0.43% MS salts, 0.8% Bacto Agar, 0.19% MES hydrate) supplemented with 1% sucrose. When required, the medium was supplemented with appropriate antibiotics. Seeds were stratified for 48 hr, at 4°C, in darkness. Plates containing stratified seeds were transferred to a long-day growth chamber (16 hr light/8 hr dark; 110 μmol s−1m−2; 21°C; 70% humidity), where seedlings grew for 10 days. After this period, the seedlings were transferred to soil and placed in a long-day growth chamber.
 
 Several mutant lines used in this study have been previously described: osd1-1 (d'Erfurth et al., 2009), osd1-3 (Heyman et al., 2011) and pi-1 (Goto and Meyerowitz, 1994). The phe2 allele corresponds to a T-DNA insertion mutant (SALK_105945). Phenotypical analysis of this mutant revealed no deviant phenotype relative to Col wt plants (data not shown). Genotyping of phe2 was done using the following primers (PHE2 fw 5′-AAATGTCTGGTTTTATGCCCC-3′, PHE2 rv 5′-GTAGCGAGACAATCGATTTCG-3′, T-DNA 5′-ATTTTGCCGATTTCGGAAC-3′).
 
-## Generation of phe1 phe2
+### Generation of phe1 phe2
 
 The phe1 phe2 double mutant was generated using the CRISPR/Cas9 technique. A 20-nt sgRNA targeting PHE1 was designed using the CRISPR Design Tool (Ran et al., 2013). A single-stranded DNA oligonucleotide corresponding to the sequence of the sgRNA, as well as its complementary oligonucleotide, was synthesized. BsaI restriction sites were added at the 5′ and 3′ ends, as represented by the underlined sequences (sgRNA fw 5′- ATTGCTCCTGGATCGAGTTGTAC-3′; sgRNA rv 5′-AAACGTACAACTCGATCCAGGAG-3′). These two oligonucleotides were then annealed to produce a double-stranded DNA molecule.
 
@@ -127,11 +452,11 @@ The double-stranded oligonucleotide was ligated into the egg-cell specific pHEE4
 
 To screen for T1 mutant plants, we performed Sanger sequencing of PHE1 amplicons that were derived from these plants and obtained with the following primers (fw 5′-AGTGAGGAAAACAACATTCACCA-3′; rv 5′-GCATCCACAACAGTAGGAGC-3′). The selected mutant contained a homozygous 2-bp deletion that leads to a premature stop codon, and therefore to a truncated PHE11–50aa protein. In the T2 generation, the segregation of pHEE401E allowed the selection of plants that did not contain this vector and that were double homozygous phe1 phe2 mutants. Genotyping of the phe1 allele was done using primers fw 5′- AAGGAAGAAAGGGATGCTGA-3′ and rv 5′-TCTGTTTCTTTGGCGATCCT-3’′, followed by RsaI digestion.
 
-## Seed imaging
+### Seed imaging
 
 Analysis of endosperm cellularization status was carried out by following the Feulgen staining protocol described previously (Batista et al., 2019). Imaging of Feulgen-stained seeds was done using a Zeiss LSM780 NLO multiphoton microscope, with excitation wavelength of 800 nm and acquisition between 520 nm and 695 nm.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 To find targets of PHE1, we performed ChIP using a PHE1::PHE1–GFP reporter line, which contains the PHE1 promoter, its coding sequence and its 3′ regulatory sequence in the Col background (Weinhofer et al., 2010). Crosslinking of plant material was done by collecting 600 mg of 2 days after pollination (DAP) PHE1::PHE1-GFP siliques, and vacuum infiltrating them with a 1% formaldehyde solution in PBS. The vacuum infiltration was done for two periods of 15 min, with a vacuum release between each period. The crosslinking was then stopped by adding 0.125 mM glycine in PBS and performing a vacuum infiltration for a total of 15 min, with a vacuum release each 5 min. The material was then ground in liquid nitrogen, resuspended in 5 mL Honda buffer (Moreno-Romero et al., 2017), and incubated for 15 min with gentle rotation. This mixture was filtered twice through Miracloth and once through a CellTrics filter (30 µm), after which a centrifugation for 5 min, at 4°C and 1500 g was performed. The nuclei pellet was then resuspended in 100 µL of nuclei lysis buffer (Moreno-Romero et al., 2017), and the ChIP protocol was continued as described before (Moreno-Romero et al., 2017). ChIP DNA was isolated using the Pure Kit v2 (Diagenode), following the manufacturer’s instructions.
 
@@ -141,11 +466,11 @@ To assess parental-specific H3K27me3 profiles in 3x seeds, the INTACT system was
 
 The antibodies used for these ChIP experiments were as follows: GFP Tag Antibody (A-11120, Thermo Fisher Scientific), anti-H3 (Sigma, H9289), and anti-H3K27me3 (Millipore, cat. no. 07–449). All experiments were performed with two biological replicates.
 
-## RNA extraction
+### RNA extraction
 
 Seeds of 20 siliques of the crosses ♀ pi-1 x ♂ wt, ♀ pi-1 x ♂ osd1-3, and ♀ pi-1 x ♂ phe1 phe2 osd1-3 were harvested in RNAlater (Invitrogen) at 6 DAP. For each cross, two biological replicates were generated. Total RNA was extracted with the mirVana RNA isolation kit (Invitrogen), according to the manufacturer’s instructions.
 
-## Library preparation and sequencing
+### Library preparation and sequencing
 
 PHE1::PHE1–GFP ChIP libraries were prepared using the Ovation Ultralow v2 Library System (NuGEN), with a starting material of 1 ng, following the manufacturer’s instructions. These libraries were sequenced at the SciLife Laboratory (Uppsala, Sweden), on an Illumina HiSeq2500 platform, using 50-bp single-end reads.
 
@@ -153,13 +478,13 @@ Library preparation and sequencing of H3K27me3 ChIPs in 3x seeds was performed 
 
 All datasets were deposited at NCBI’s Gene Expression Omnibus database (https://www.ncbi.nlm.nih.gov/geo/), under the accession number GSE129744.
 
-## qPCR and Sanger sequencing of parental-specific PHE1 ChIP
+### qPCR and Sanger sequencing of parental-specific PHE1 ChIP
 
 Purified ChIP DNA and its respective input DNA obtained from the parental-specific PHE1 ChIP were used to perform qPCR. Positive and negative genomic regions for PHE1 binding were amplified using the following primers: AT1G55650 (fw 5′-CGAAGCGAAAAAGCACTCAC-3′; rv 5′-CCTTTTACATAATCCGCGTTAAA-3′), AT2G28890 (fw 5′-TTTGTGGTTGGAGGTTGTGA-3′; rv 5′-GTTGTTCGTGCCCATTTCTT-3′), AT5G04250 (fw 5′-AATTGACAAATGGTGTAATGGT-3′; rv 5′-CCAAAGAATTTGTTTTTCTATTCC-3′), AT1G72000 (fw 5′-AACAAATATGCACAAGAAGTGC-3′; rv 5′-ACCTAGCAAGCTGGCAAAAC-3′), AT3G18550 (fw 5′-TCCTTTTCCAAATAAAGGCATAA-3′; rv 5′-AAATGAAAGAAATAAAAGGTAATGAGA-3′), AT2G20160 (fw 5′-TCCTAAATAAGGGAAGAGAAAGCA-3′; rv 5′-TGTTAGGTGAAACTGAATCCAA-3′), negative region (fw 5′-TGGTTTTGCTGGTGATGATG-3′, rv 5′-CCATGACACCAGTGTGCCTA-3′). HOT FIREPol EvaGreen qPCR Mix Plus (ROX) (Solis Biodyne) was used as a master mix for qPCR amplification in a iQ5 qPCR system (Bio-Rad).
 
 For Sanger sequencing, positive genomic regions for PHE1 binding containing SNPs that allowed distinction between parents were amplified by PCR using the Phusion High-Fidelity DNA Polymerase (Thermo Fisher Scientific), in combination with the primers described above. Amplified DNA was purified using the GeneJET PCR Purification kit (Thermo Fisher Scientific) and used for Sanger sequencing. The chromatograms obtained from Sanger sequencing were then analyzed for the presence of SNPs. The maternal:total read ratios were retrieved from the publications where these genes were identified as imprinted.
 
-## Bioinformatic analysis of ChIP-seq data
+### Bioinformatic analysis of ChIP-seq data
 
 For the PHE1::PHE1–GFP ChIP, reads were aligned to the Arabidopsis (TAIR10) genome using Bowtie version 1.2.2 (Langmead, 2010), allowing two mismatches (-v 2). Only uniquely mapped reads were kept. ChIP-seq peaks were called using MACS2 version 2.1.1, with its default settings (--gsize 1.119e8, --bw 250) (Zhang et al., 2008). Input samples served as control for their corresponding GFP ChIP sample. Each biological replicate was handled individually using the same peak-calling settings, and only the peak regions that overlap between the two replicates were considered for further analysis. These regions are referred to throughout the text as PHE1 binding sites (Tables 1 and 2). Peak overlap was determined with BEDtools version 2.26.0 (Quinlan and Hall, 2010). Each PHE1 binding site was annotated to a genomic feature and matched with a target gene using the peak annotation feature (annotatePeaks.pl) provided in HOMER version 4.9 (Heinz et al., 2010) (Tables 1 and 2). Only binding sites located less than 1.5 kb upstream to 0.5 kb downstream of the nearest TSS were considered.
 
@@ -167,11 +492,11 @@ PHE1 DNA-binding motifs were identified from PHE1::PHE1–GFP ChIP-seq peak regi
 
 Read mapping, coverage analysis, purity calculations, normalization of data, and determination of parental origin of reads derived from H3K27me3 ChIPs in 3x seeds was performed following previously published methods (Moreno-Romero et al., 2016) (Table 4).
 
-## Bioinformatic analysis of RNA-seq data
+### Bioinformatic analysis of RNA-seq data
 
 For each replicate, 150-bp-long reads were mapped to the Arabidopsis (TAIR10) genome, masked for rRNA genes, using TopHat v2.1.0 (Trapnell et al., 2009) (parameters adjusted as –g 1 –a 10 –i 40 –I 5000 –F 0 –r 130). Gene expression was normalized to reads per kb per million mapped reads (RPKM) using GFOLD (Feng et al., 2012). Expression level for each condition was calculated using the mean of the expression values in both replicates. Genes that were regulated differentially across the two replicates were detected using the rank product method, as implemented in the Bioconductor RankProd Package (Hong et al., 2006). Gene deregulation was assessed in the following combinations: osd1 vs. wt (♀ pi-1 x ♂ osd1-3 vs. ♀ pi-1 x ♂ wt), phe1 phe2 osd1 vs. wt (♀ pi-1 x ♂ phe1 phe2 osd1-3 vs. ♀ pi-1 x ♂ wt), and phe1 phe2 osd1 vs. osd1 (♀ pi-1 x ♂ phe1 phe2 osd1-3 vs. ♀ pi-1 x ♂ osd1-3). Only genes with at least 10 reads in one of the conditions were considered, and a pseudocount value of 10e–5 was added to genes that had no expression. Genes showing a p-value <0.05, as determined by RankProd, were identified as deregulated.
 
-## Analysis of PHE1 target genes
+### Analysis of PHE1 target genes
 
 Significantly enriched Gene Ontology terms within target genes of PHE1 were identified using the PLAZA 4.0 workbench (Van Bel et al., 2018), and further summarized using REVIGO (Supek et al., 2011).
 
@@ -181,27 +506,27 @@ To determine which imprinted genes are targeted by PHE1, a custom list was used 
 
 To determine the proportion of genes overexpressed in paternal excess crosses that are targeted by PHE1, a previously published transcriptome dataset of 3x seeds was used (Schatlowski et al., 2014).
 
-## Spatial overlap of TEs and PHE1 binding sites
+### Spatial overlap of TEs and PHE1 binding sites
 
 Spatial overlap between PHE1 ChIP-seq peak regions (binding sites) and TEs was determined using the regioneR package version 1.8.1 (Gel et al., 2015), implemented in R version 3.4.1 (R Development Core Team, 2017). As a control, a mock set of binding sites was created, which we refer to as random binding sites. This random binding site set had the same total number of binding sites and the same size distribution as the PHE1 binding site set. Using regioneR, a Monte Carlo permutation test with 10,000 iterations was performed. In each iteration, the random binding sites were arbitrarily shuffled in the 3-kb promoter region of all A. thaliana genes. From this shuffling, the average overlap and standard deviation of the random binding site set was determined, as well as the statistical significance of the association between PHE1 binding sites and TE superfamilies/families.
 
 BedTools version 2.26.0 (Quinlan and Hall, 2010) was used to determine the fraction of PHE1 binding sites targeting MEGs, PEGs, or non-imprinted genes where a spatial overlap between binding sites, RC/Helitrons and PHE1 DNA-binding motifs is simultaneously observed. The hypergeometric test was used to assess the significance of the enrichment of PHE1 binding sites where this overlap is observed, across different target types.
 
-## Expression analysis of genes flanked by RC/Helitrons
+### Expression analysis of genes flanked by RC/Helitrons
 
 We investigated the expression level of genes containing RC/Helitrons in their promoter regions (defined as 3 kb upstream of the TSS) in the embryo, endosperm, and seed coat of pre-globular stage seeds. Affymetrix GeneChip ATH1 Arabidopsis Genome Array data were extracted from Belmonte et al. (2013). The expression values in micropylar endosperm, peripheral endosperm, and chalazal endosperm were averaged to represent the endosperm expression level. The endosperm expression levels of a given gene were then compared to the expression levels in the embryo and seed coat.
 
 RC/Helitron-associated genes were classified into three groups: (i) genes with RC/Helitrons and PHE1 DNA-binding motifs within the 3 kb promoter, thus representing genes with domesticated RC/Helitrons; (ii) genes having RC/Helitrons and PHE1 DNA-binding motifs within the 3 kb promoter, but not bound by PHE1; and (iii) genes having RC/Helitrons located within the 3 kb promoter, and no PHE1 DNA-binding motifs. A two-tailed Mann-Whitney test with continuity correction was used to assess the statistical significance of differences in expression levels between gene groups.
 
-## Calculation of PHE1 DNA-binding motif densities
+### Calculation of PHE1 DNA-binding motif densities
 
 To measure the density of PHE1 DNA-binding motifs within different genomic regions of interest, the fasta sequences of these regions were first obtained using BEDtools. HOMER’s scanMotifGenomeWide.pl function was then used to screen these sequences for the presence of PHE1 DNA-binding motifs, and to count the number of occurrences of each motif. Motif density was then calculated as the number of occurrences of each motif, normalized to the size of the genomic region of interest. Motif densities in RC/Helitron consensus sequences were calculated as above. Perfect PHE1 DNA-binding motif sequences were defined as those represented in Figure 3a. Nearly perfect motif sequences were defined as sequences in which only one nucleotide substitution could give rise to a perfect PHE1 DNA-binding motif. Consensus sequences were obtained from Repbase (Bao et al., 2015). Chi-square tests of independence were used to test whether there were any associations between specific genomic regions and PHE1 DNA-binding motifs. This was done by comparing the proportion of DNA bases corresponding to PHE1 DNA-binding motifs in each genomic region.
 
-## Identification of homologous PHE1 DNA-binding motifs carried by RC/Helitrons
+### Identification of homologous PHE1 DNA-binding motifs carried by RC/Helitrons
 
 To assess the homology of PHE1 DNA-binding motifs and associated RC/Helitron sequences, pairwise comparisons were made among all sequences, using the BLASTN program. The following parameters were followed: word size = 7, match/mismatch scores = 2/–3, gap penalties, existence = 5, extension = 2. The RC/Helitron sequences were considered to be homologous if the alignment covered at least 9 bp out of the 10-bp PHE1 DNA-binding motif sites, extended longer than 30 bp, and had more than 70% identity. Because the mean length of intragenomic conserved non-coding sequences is around 30 bp in A. thaliana (Thomas et al., 2007), we considered this as the minimal length of alignments needed to define a pair of related motif-carrying TE sequences. The pairwise homologous sequences were then merged into higher-order clusters, on the basis of shared elements in the homologous pairs.
 
-## Phylogenetic analyses of PHE1-targeted PEG orthologs in the Brassicaceae
+### Phylogenetic analyses of PHE1-targeted PEG orthologs in the Brassicaceae
 
 Amino-acid sequences and nucleotide sequences of PHE1-targeted PEGs were obtained from TAIR10. The sequences of homologous genes in the Brassicaceae and several other rosids were obtained in PLAZA 4.0 (https://bioinformatics.psb.ugent.be/plaza/) (Van Bel et al., 2018), BRAD database (http://brassicadb.org/brad/) (Wang et al., 2015a), and Phytozome v.12 (https://phytozome.jgi.doe.gov/) (Goodstein et al., 2012).
 
@@ -211,32 +536,32 @@ We selected PEGs that had well-supported gene family phylogeny with no lineage-s
 
 Homology between A. thaliana RC/Helitron sequences and Brassicaceae sequences was detected by aligning the A. thaliana sequence to the promoter region of the orthologous PEG, using the BLASTN program, with the following parameters: word size = 11, match/mismatch scores = 2/–3, gap penalties, existence = 5, extension = 2. Aligned sequences are considered homologous if they spanned more than 100 nt of the A, thaliana RC/Helitron with over 60% identity.
 
-## Epigenetic profiling of PHE1 binding sites
+### Epigenetic profiling of PHE1 binding sites
 
 Parental-specific H3K27me3 profiles (Moreno-Romero et al., 2016) and DNA methylation profiles (Schatlowski et al., 2014) generated from endosperm of 2x seeds were used for this analysis. Levels of H3K27me3 and CG DNA methylation were quantified in each 50-bp bin across the 2-kb region surrounding PHE1 binding site centers using deepTools version 2.0 (Ramírez et al., 2016). These values were then used to generate H3K27me3 heatmaps and metagene plots, as well as boxplots of CG methylation in PHE1binding sites. Clustering analysis of H3K27me3 distribution in PHE1-binding sites was done following the k-means algorithm as implemented by deepTools. A two-tailed Mann-Whitney test with continuity correction was used to assess statistical significance of differences in CG methylation levels.
 
-## Parental gene expression ratios in 2x and 3x seeds
+### Parental gene expression ratios in 2x and 3x seeds
 
 To determine parental gene expression ratios in 2x and 3x seeds, we used previously generated endosperm gene expression data (Martinez et al., 2018). In this dataset, Ler plants were used as maternal plants pollinated with wt Col or osd1 Col plants, allowing determination of the parental origin of sequenced reads following the method described before (Moreno-Romero et al., 2019).
 
 Parental gene expression ratios were calculated as the number of maternally derived reads divided by the sum of maternally and paternally derived reads available for any given gene. Ratios were calculated separately for the two biological replicates of each cross (Ler x wt Col and Ler x osd1 Col), and the average of both replicates was considered for further analysis. The MEG and PEG ratio thresholds for 2x and 3x seeds indicated in Figure 6d were defined as a four-fold deviation of the expected read ratios, towards more maternal or paternal read accumulation, respectively. The expected read ratio for a biallelically expressed gene in 2x seeds is two maternal reads:three total reads, whereas for 3x paternal excess seeds this ratio is two maternal reads:four total reads. Deviations from these expected ratios were used to classify the expression of published imprinted genes (Figure 4—source data 1) as maternally or paternally biased in 3x seeds, according to the direction of the deviation. As a control, the parental bias of these imprinted genes was also assessed in 2x seeds.
 
-## Parental expression ratios of genes associated with H3K27me3 clusters
+### Parental expression ratios of genes associated with H3K27me3 clusters
 
 Previously published endosperm gene expression data, generated with the INTACT system, were used for this analysis (Del Toro-De León and Köhler, 2019). Parental gene expression ratios were determined as the mean between ratios observed in the Ler x Col cross and its reciprocal cross. As a reference, the parental gene expression ratio for all endosperm expressed genes was also determined. A two-tailed Mann-Whitney test with continuity correction was used to assess statistical significance of differences between parental gene expression ratios.
 
-## H3K27me3 accumulation in imprinted genes
+### H3K27me3 accumulation in imprinted genes
 
 Parental-specific accumulation of H3K27me3 across imprinted gene bodies in the endosperm of 2x (Moreno-Romero et al., 2016) and 3x seeds (this study) was estimated by calculating the mean values of the H3K27me3 z-score across the gene length. Imprinted genes were considered as those genes previously identified in different studies (Gehring et al., 2011; Hsieh et al., 2011; Pignatta et al., 2014; Schon and Nodine, 2017; Wolff et al., 2011). A two-tailed Mann-Whitney test with continuity correction was used to assess statistical significance of differences in H3K27me3 z-score levels.
 
-## Statistics
+### Statistics
 
 Sample size, statistical tests used, and respective p-values are indicated in each figure or figure legend, and further specified in the corresponding Methods sub-section.
 
-## Data availability
+### Data availability
 
 ChIP-seq and RNA-seq data generated in this study are available at NCBI’s Gene Expression Omnibus database (https://www.ncbi.nlm.nih.gov/geo/), under the accession number GSE129744. Additional data used to support the findings of this study are available at NCBI’s Gene Expression Omnibus, under the following accession numbers: H3K27me3 ChIP-seq data from 2x endosperm (Moreno-Romero et al., 2016) – GSE66585; gene expression data in 2x and 3x endosperm (Martinez et al., 2018) – GSE84122; gene expression data in 2x and 3x seeds and parental-specific DNA methylation from 2x endosperm (Schatlowski et al., 2014) – GSE53642; parental-specific gene expression data of 2x INTACT-isolated endosperm nuclei (Del Toro-De León and Köhler, 2019) – GSE119915. Gene expression profile of different seed compartments (Belmonte et al., 2013) – GSE12404.
 
-## Materials and correspondence
+### Materials and correspondence
 
 The materials generated in this study are available upon request to CK (claudia.kohler@slu.se).

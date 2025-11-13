@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/017zqws13 University of Minnesota Genomics Center, Minneapolis Minneapolis United States
-2. https://ror.org/017zqws13 Department of Genetics, Cell Biology, and Development, University of Minnesota Minneapolis United States
+1. University of Minnesota Genomics Center, Minneapolis Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+2. Department of Genetics, Cell Biology, and Development, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 
 † Corresponding author
 
 ## Abstract
 
-Advances in single-cell sequencing technologies have provided novel insights into the dynamics of gene expression and cellular heterogeneity within tissues and have enabled the construction of transcriptomic cell atlases. However, linking anatomical information to transcriptomic data and positively identifying the cell types that correspond to gene expression clusters in single-cell sequencing data sets remains a challenge. We describe a straightforward genetic barcoding approach that takes advantage of the powerful genetic tools in Drosophila to allow in vivo tagging of defined cell populations. This method, called Ta rgeted G enetically- E ncoded M ultiplexing (TaG-EM), involves inserting a DNA barcode just upstream of the polyadenylation site in a Gal4-inducible UAS-GFP construct so that the barcode sequence can be read out during single-cell sequencing, labeling a cell population of interest. By creating many such independently barcoded fly strains, TaG-EM enables positive identification of cell types in cell atlas projects, identification of multiplet droplets, and barcoding of experimental timepoints, conditions, and replicates. Furthermore, we demonstrate that TaG-EM barcodes can be read out using next-generation sequencing to facilitate population-scale behavioral measurements. Thus, TaG-EM has the potential to enable large-scale behavioral screens in addition to improving the ability to multiplex and reliably annotate single-cell transcriptomic experiments.
+Advances in single-cell sequencing technologies have provided novel insights into the dynamics of gene expression and cellular heterogeneity within tissues and have enabled the construction of transcriptomic cell atlases. However, linking anatomical information to transcriptomic data and positively identifying the cell types that correspond to gene expression clusters in single-cell sequencing data sets remains a challenge. We describe a straightforward genetic barcoding approach that takes advantage of the powerful genetic tools in Drosophila to allow in vivo tagging of defined cell populations. This method, called Targeted Genetically-Encoded Multiplexing (TaG-EM), involves inserting a DNA barcode just upstream of the polyadenylation site in a Gal4-inducible UAS-GFP construct so that the barcode sequence can be read out during single-cell sequencing, labeling a cell population of interest. By creating many such independently barcoded fly strains, TaG-EM enables positive identification of cell types in cell atlas projects, identification of multiplet droplets, and barcoding of experimental timepoints, conditions, and replicates. Furthermore, we demonstrate that TaG-EM barcodes can be read out using next-generation sequencing to facilitate population-scale behavioral measurements. Thus, TaG-EM has the potential to enable large-scale behavioral screens in addition to improving the ability to multiplex and reliably annotate single-cell transcriptomic experiments.
 
 ## Introduction
 
@@ -36,39 +36,99 @@ Genetically barcoded fly lines can also be used to enable highly multiplexed beh
 
 ## Results
 
-## TaG-EM: A novel genetic barcoding strategy for multiplexed behavioral and single-cell transcriptomics
+### TaG-EM: A novel genetic barcoding strategy for multiplexed behavioral and single-cell transcriptomics
 
 We cloned a fragment containing a PCR handle sequence and a diverse 14 bp barcode sequence into the SV40 3’ untranslated region (UTR) sequence just upstream of the polyadenylation sites in the 10xUAS-myr::GFP (pJFRC12, Pfeiffer et al., 2010) backbone (Figure 1A). A pool containing 29 unique barcode-containing plasmids was injected into Drosophila embryos for PhiC31-mediated integration into the attP2 landing site (Groth et al., 2004) and transgenic lines were isolated and confirmed by Sanger sequencing (Figure 1B, Figure 1—figure supplement 1). We recovered 20 distinctly barcoded Drosophila lines, with some barcodes recovered from multiple crosses (Figure 1—figure supplement 1). Such barcoded fly lines have the potential to enable population behavioral measurements, where different exposures, experimental timepoints, and genetic or neural perturbations can be multiplexed and analyzed by measuring barcode abundance in sequencing data (Figure 1C). In addition, the barcodes, which reside on a Gal4-inducible UAS-GFP construct, can be expressed tissue-specifically and read out during droplet-based single-cell sequencing, labeling a cell population and/or an experimental condition of interest (Figure 1D).
 
-## Testing the accuracy and reproducibility of TaG-EM behavioral measurements using structured pools
+![Figure 1.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig1-v1.jpg)
+
+**Figure 1.:** (A) Detailed view of the 3’ UTR of the TaG-EM constructs showing the position of the 14 bp barcode sequence (green highlight) relative to the polyadenylation signal sequences (underlined) and poly-A cleavage sites (purple highlights). The pJFRC12 backbone schematic is modified with permission from an unpublished schematic made by Barret Pfeiffer. (B) Schematic illustrating the design of the TaG-EM constructs, where a barcode sequence is inserted in the 3’ UTR of a UAS-GFP construct and inserted in a specific genomic locus using PhiC31 integrase. (C) Use of TaG-EM barcodes for sequencing-based population behavioral assays. (D) Use of TaG-EM barcodes expressed with tissue-specific Gal4 drivers to label cell populations in vivo upstream of cell isolation and single-cell sequencing.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Summary of barcode pool injections. Barcode sequence and transgenic vial identifier in which the barcode was identified are shown. (B) Sanger sequencing-based confirmation of the barcode sequence and PCR handle in TaG-EM transgenic lines. Because the TaG-EM barcode constructs were injected as a pool of 29 purified plasmids, some of the transgenic lines had inserts of the same construct. In total 20 unique lines were recovered from this round of injection.
+
+### Testing the accuracy and reproducibility of TaG-EM behavioral measurements using structured pools
 
 We conducted initial experiments to optimize amplification of the genetic barcodes using primers targeting the PCR handle inserted just upstream of the 14 bp barcode sequence and PCR primers downstream of the TaG-EM barcode in the SV40 3’ UTR sequence (Figure 2—figure supplement 1). To test the accuracy and reproducibility of sequencing-based measurements of TaG-EM barcodes, we constructed structured pools containing defined numbers of flies pooled either evenly with each of the 20 barcode constructs comprising 5% of the pool, or in a staggered manner with sets of barcodes differing in abundance in 2-fold increments (Figure 2A). To examine the impact of technical steps such as DNA extraction and PCR amplification on TaG-EM barcode measurements, even pools were made and extracted in triplicate and amplicon sequencing libraries were made in triplicate for each independently extracted DNA sample for both the even and staggered pools. The resulting data indicated that TaG-EM measurements are highly accurate and reproducible. Technical replicates (indicated by error bars in Figure 2B–E) showed minimal variability. Likewise, the three independently extracted replicates of the even pools produced consistent data with all 20 barcodes detected at levels close to the expected 5% abundance (Figure 2B–C). Barcode abundance values for the staggered structured pools was generally consistent with the input values and in most cases, the twofold differences between the different groups of barcodes could be distinguished (Figure 2D–E). The coefficients of variation were largely consistent for groups of TaG-EM barcodes pooled evenly or at different levels within the staggered pools (Figure 2—figure supplement 2). For the staggered pools, abundances correlated well with the expected values, particularly when multiple barcodes for an input level were averaged, in which case R2 values were >0.99 (Figure 2D–E, inset plots). This indicates that a high level of quantitative accuracy can be attained using sequencing-based analysis of TaG-EM barcode abundance, particularly when averaging data for three to four independent barcodes for an experimental condition.
 
-## TaG-EM measurement of phototaxis behavior correlate well with video-based measurements
+![Figure 2.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig2-v1.jpg)
+
+**Figure 2.:** (A) Overview of the construction of the structured pools for assessing the quantitative accuracy of TaG-EM barcode measurements. Male and female even pools were constructed and extracted in triplicate. The table shows the number of flies that were pooled for each experimental condition. (B) Barcode abundance data for three independent replicates of the female even pool. (C) Barcode abundance data for three independent replicates of the male even pool. (D) Barcode abundance data for the female staggered pool. Inset plot shows the average observed barcode abundance among lines pooled at each level compared to the expected abundance. (E) Barcode abundance data for the male staggered pool. Inset plot shows the average observed barcode abundance among lines pooled at each level compared to the expected abundance. For all plots, bars indicate the mean barcode abundance for three technical replicates of each pool, error bars are +/-S.E.M.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gels showing bands produced when amplifying TaG-EM flies or a wild type control with the indicated polymerase, annealing temperature, and primer pair (short = B2_3'F1_Nextera/ SV40_pre_R_Nextera; long = B2_3'F1_Nextera/ SV40_post_R_Nextera). The leftmost lanes correspond to the 1 kb Plus DNA ladder (Invitrogen). (B–E) Mean error (R.M.S.D. root mean squared deviation from expected value) for even pool amplified with the indicated primer set, input amount, and cycle number using KAPA HiFi polymerase (n=3, error bars are +/-S.E.M.). (F–G) Mean error (R.M.S.D. root mean squared deviation from expected value) for staggered pool amplified with the indicated primer set, input amount, and cycle number using KAPA HiFi polymerase (n=3 technical replicates, error bars are +/-S.E.M.).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Plot showing coefficient of variation for different groups of TaG-EM barcodes in the structured pools. Dashed line indicates the mean coefficient of variation across all conditions.
+
+### TaG-EM measurement of phototaxis behavior correlate well with video-based measurements
 
 Next, we tested whether TaG-EM could be used to measure a phototaxis behavior. A mixture of barcoded wild type or blind norpA mutant flies were run together through a phototaxis assay. At the end of a period of light exposure, test tubes facing toward or away from the light were capped, DNA was isolated, and barcodes were amplified and sequenced for each tube. Raw read counts were scaled in proportion to the number of flies per tube and a preference index was calculated for each barcode (Figure 3A). In parallel, individual preference indices were calculated based on manual scoring of videos recorded for each line (Figure 3B). Preference indices calculated for the pooled, NGS-based TaG-EM measurements were nearly identical to conventional behavioral measurements for both wild type and norpA mutants (Figure 3A–B).
 
-## TaG-EM measurement of oviposition behavior and age-dependent fecundity
+![Figure 3.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig3-v1.jpg)
+
+**Figure 3.:** (A) TaG-EM barcode lines in either a wild-type or norpA background were pooled and tested in a phototaxis assay. After 30 s of light exposure, flies in tubes facing the light or dark side of the chamber were collected, DNA was extracted, and TaG-EM barcodes were amplified and sequenced. Barcode abundance values were scaled to the number of flies in each tube and used to calculate a preference index (P.I.). Average P.I. values for four different TaG-EM barcode lines in both the wild-type and norpA backgrounds are shown (n=3 biological replicates, error bars are +/-S.E.M.). (B) The same eight lines used for the sequencing-based TaG-EM barcode measurements were independently tested in the phototaxis assay and manually scored videos were used to calculate a P.I. for each genotype. Average P.I. values for each line are shown (n=3 biological replicates, error bars are +/-S.E.M.) for TaG-EM-based quantification (top) and manual video-based quantification (bottom). (C) Flies carrying different TaG-EM barcodes were collected and aged for 1 to 4 weeks and then eggs were collected, and egg number and viability was manually scored for each line. In parallel, the barcoded flies from each timepoint were pooled, and eggs were collected, aged, and DNA was extracted, followed by TaG-EM barcode amplification and sequencing. Average number of viable eggs per female (manual counts) and average barcode abundance are shown both as a bar plot and scatter plot (n=3 biological replicates for 3 barcodes per condition, error bars are +/-S.E.M.).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Plots showing mean TaG-EM barcode abundance for adult females used in oviposition experiments (top) and eggs collected from these females (bottom). Data from two independent trials is shown (n=3 biological replicates for each trial, error bars are +/-S.E.M.). Dashed lines indicate the expected abundance values.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Manually collected data for mean number of viable eggs per female, barcode abundance data, and barcode abundance data normalized to adult fly barcode data for each of the TaG-EM barcode lines used in the age-dependent fecundity experiment. Scatterplots show correlations between manually collected data and barcode sequencing results. Data from two independent trials is shown (n=3 biological replicates for each trial, error bars are +/-S.E.M.).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Average number of viable eggs per female (manual counts) and average barcode abundance are shown both as a bar plot and scatter plot (n=3 biological replicates for 3 barcodes per condition, error bars are +/-S.E.M.). Data from Trial 2 is shown in Figure 3C.
+
+### TaG-EM measurement of oviposition behavior and age-dependent fecundity
 
 We next tested whether NGS-based pooled measurements of egg laying could be made. Fertilized females from each of the 20 barcode lines were placed together in egg laying cups, embryos were collected, aged for 12 hr to enable cell numbers to stabilize in the developing eggs, and then DNA was extracted from both the pooled adult flies and the embryos. In general, TaG-EM measurements of oviposition correlated with fly numbers, with the exception of barcode 14 which had reduced barcode abundance across multiple trials (Figure 3—figure supplement 1). This suggests that despite the fact that the genetic barcode constructs are inserted in a common landing site, differences with respect to specific behaviors may exist among the lines, and thus one should test to make sure given lines are appropriate to use in specific behavioral assays.
 
 To determine whether TaG-EM could be used to measure age-dependent fecundity, we collected flies from twelve different TaG-EM barcode lines at four time points separated by 1 week (three barcode lines per timepoint). We collected eggs from these fly lines individually and scored the number of viable eggs per female. Next, we pooled the barcoded flies from all timepoints and collected eggs from the pooled flies. These eggs were aged, DNA was extracted, and the TaG-EM barcodes were amplified and sequenced. While measurements from individual barcode lines were noisy, both for manual counts and sequencing based measurements, there was a general trend toward declining fecundity over time (Figure 3—figure supplement 2), consistent with published reports (David et al., 1975). Manually scored viable egg numbers and TaG-EM barcode abundances were well correlated across two independent experimental trials (R2 values of 0.52–0.61 for Trial 1 and 0.74–0.84 for Trial 2). When barcodes from each individual timepoint were averaged, R2 values for the correlation between manual and sequencing-based measurements were 0.95 for Trial 1 and 0.99 for Trial 2 (Figure 3C, Figure 3—figure supplement 3).
 
-## Quantifying food transit time in the larval gut using TaG-EM
+### Quantifying food transit time in the larval gut using TaG-EM
 
 Gut motility defects underlie a number of functional gastrointestinal disorders in humans (Keller et al., 2018). To study gut motility in Drosophila, we have developed an assay based on the time it takes a food bolus to transit the larval gut (Figure 4A), similar to approaches that have been employed for studying the role of the microbiome in human gut motility (Asnicar et al., 2021). Third instar larvae were starved for 90 min and then fed food containing a blue dye. After 60 min, larvae in which a blue bolus of food was visible were transferred to plates containing non-dyed food, and food transit (indicated by loss of the blue food bolus) was scored every 30 min for 5 hr (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig4-v1.jpg)
+
+**Figure 4.:** Schematics depicting (A) manual and (B) TaG-EM-based assays for quantifying food transit time in Drosophila larvae. (C) Transit time of a food bolus in the presence and absence of caffeine measured using the manual assay (p=0.0340). (D) Transit time of a food bolus in the presence and absence of caffeine measured using the TaG-EM assay (p=0.0488). n=3 biological replicates for each condition. A modified Chi-squared method was used for statistical testing (Hristova and Wimley, 2023).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Images of larvae fed with blue-dyed yeast agar. (B) Effect of dye concentration on food transit time. (C) Effect of starvation time on feeding and uptake of the dyed food bolus (n=3 biological replicates for each trial, error bars are +/-S.E.M.). (D) Effect of liquid versus solid diet on food transit time. (E) Aversive effect of caffeine on food bolus uptake (n=2 biological replicates for each trial, error bars are +/-S.E.M.).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cost per data point as a function of the number of data points generated and the number of experimental conditions screened. (B) Overall experiment cost and (C) labor effort as a function of the number of data points generated and the number of experimental conditions screened.
+
 Because this assay is highly labor-intensive and requires hands-on effort for the entire 5-hr observation period, there is a limit on how many conditions or replicates can be scored in one session (~8 plates maximum). Thus, we decided to test whether food transit could be quantified in a more streamlined and scalable fashion by using TaG-EM (Figure 4B). Using the manual assay, we observed that while caffeine-containing food is aversive to larvae, the presence of caffeine reduces transit time through the gut (Figure 4C, Figure 4—figure supplement 1). This is consistent with previous observations in adult flies that bitter compounds (including caffeine) activate enteric neurons via serotonin-mediated signaling and promote gut motility (Yao and Scott, 2022). We tested whether TaG-EM could be used to measure the effect of caffeine on food transit time in larvae. As with prior behavioral tests, the TaG-EM data recapitulated the results seen in the manual assay (Figure 4D). Conducting the transit assay via TaG-EM enables several labor-saving steps. First, rather than counting the number of larvae with and without a food bolus at each time point, one simply needs to transfer non-bolus-containing larvae to a collection tube. Second, because the TaG-EM lines are genetically barcoded, all the conditions can be tested at once on a single plate, removing the need to separately count each replicate of each experimental condition. This reduces the hands-on time for the assay to just a few minutes per hour. A summary of the anticipated cost and labor savings for the TaG-EM-based food transit assay is shown in Figure 4—figure supplement 2.
 
-## Tissue-specific expression of TaG-EM GFP constructs
+### Tissue-specific expression of TaG-EM GFP constructs
 
 To facilitate representation of the TaG-EM barcodes in single-cell sequencing data, genetic barcodes were placed just upstream of the polyadenylation signal sequences and poly-A cleavage sites (Figure 1A). To verify that the inserted sequences did not interfere with Gal4-driven GFP expression, we crossed each of the barcoded TaG-EM lines to decapentaplegic-Gal4 (dpp-Gal4). We observed GFP expression in the expected characteristic central stripe (Teleman and Cohen, 2000) in the wing imaginal disc for 19/20 lines at similar expression levels to the base pJFRC12 UAS-myr::GFP construct inserted in the same landing site (Figure 5A, Figure 5—figure supplement 1). No GFP expression was visible for TaG-EM barcode number 8, which upon molecular characterization had an 853 bp deletion within the GFP coding region (data not shown). We generated and tested GFP expression of an additional 156 TaG-EM barcode lines (Alegria et al., 2024), by crossing them to Mhc-Gal4 and observing expression in the adult thorax. All 156 additional TaG-EM lines had robust GFP expression (data not shown). Gal4-driven expression levels of TaG-EM barcoded GFP constructs were also similar to that of the pJFRC12 base construct for multiple driver lines (Figure 5—figure supplement 2) indicating that the presence of the barcode does not generally impair expression of GFP.
 
-## Boosting the GFP signal of TaG-EM constructs to enable robust cell sorting
+![Figure 5.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig5-v1.jpg)
+
+**Figure 5.:** (A) Comparison of endogenous GFP expression and GFP antibody staining in the wing imaginal disc for the original pJFRC12 construct inserted in the attP2 landing site or for a TaG-EM barcode line driven by dpp-Gal4. Wing discs are counterstained with DAPI. (B) Endogenous expression of GFP from either a TaG-EM barcode construct (left column), a hexameric GFP construct (middle column), or a line carrying both a TaG-EM barcode construct and a hexameric GFP construct (right column) driven by the indicated gut driver line (PMG-Gal4: Pan-midgut driver; EC-Gal4: Enterocyte driver; EE-Gal4: Enteroendocrine driver; EB-Gal4: Enteroblast driver).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** GFP antibody staining in the wing imaginal disc for the indicated TaG-EM barcode line driven by dpp-Gal4. Wing discs are counterstained with DAPI.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Comparison of endogenous GFP expression in larvae for the original pJFRC12 construct inserted in the attP2 landing site (left) or for a TaG-EM barcode line (right) expressed under the control of the indicated driver line. (B) GFP expression of the PC-Gal (Precursor-Gal4) driver line together with either UAS-2xGFP or a combination of UAS-2xGFP and a TaG-EM barcode line.
+
+### Boosting the GFP signal of TaG-EM constructs to enable robust cell sorting
 
 While with some driver lines, expression of the myr::GFP from the TaG-EM construct may be too weak to allow robust enrichment of the tagged cells, adding an additional hexameric GFP construct (Shearin et al., 2014) could boost expression of weak driver lines to levels that are sufficient for robust detection of labeled flies or larvae (Figure 5B) and for labeling of dissociated cells for flow cytometry (Figure 6—figure supplement 1). Stocks with an additional UAS hexameric GFP construct recombined onto the same chromosome as the TaG-EM construct have been established for 20 TaG-EM barcode lines.
 
-## Correlation between expression of TaG-EM barcodes and intestinal cell marker genes in single-cell sequencing data
+### Correlation between expression of TaG-EM barcodes and intestinal cell marker genes in single-cell sequencing data
 
 To test whether we could detect TaG-EM barcodes in single-cell sequencing data, we crossed three TaG-EM barcode lines to two different gut Gal4 driver lines (Ariyapala et al., 2020), one expressing in the enterocytes (EC-Gal4: TaG-EM barcodes 1, 2, and 3) and the other in intestinal precursor cells (PC-Gal4: TaG-EM barcodes 7, 8, and 9), which includes stem cells and enteroblasts (EBs). Due to weak GFP expression with the EC-Gal4 driver, we did not see visible GFP positive cells for this driver line. The PC-Gal4 driver line contained an additional UAS-Stinger (2xGFP) construct and expressed GFP at a level sufficient for flow sorting when crossed to the TaG-EM line (Figure 6—figure supplement 2). Larval guts were dissected, dissociated, stained with propidium iodide (PI) to label dead cells, and flow sorted to recover PI-negative and GFP-positive cells. Approximately 10,000 cells were loaded into a 10x Genomics droplet generator and a single-cell library was prepared and sequenced. Two clusters were observed in the resulting sequencing data, one of which had high read counts from mitochondrial genes suggesting that this cluster consisted of mitochondria, debris, or dead and dying cells. After filtering the cells with high mitochondrial reads, a single cluster remained (Figure 6—figure supplement 3). This cluster expressed known intestinal precursor cell markers such as escargot (esg), klumpfuss (klu), and Notch pathway genes like E(spl)mbeta-HLH (Figure 6—figure supplement 3). Expression of all three PC-Gal4-driven TaG-EM barcodes was observed in this cluster (Figure 6—figure supplement 3) indicating that TaG-EM barcodes can be detected in single-cell sequencing data. Interestingly, TaG-EM barcode 8, for which no GFP expression was observed, was represented in the single-cell sequencing data indicating that the lesion in the GFP coding region does not prevent mRNA expression for this line.
 
@@ -77,6 +137,54 @@ A previous study used droplet-based single-cell sequencing to characterize the c
 An advantage of cell barcoding both for cell hashing (Stoeckius et al., 2018) and for TaG-EM in vivo barcoding is that such labeling facilitates the identification and removal of multiplets, which are an artifact of droplet-based single-cell sequencing approaches. After filtering and removing cells with a high percentage of mitochondrial or ribosomal reads, we used DoubletFinder (McGinnis et al., 2019) to computationally identify multiplet droplets. In parallel, we searched for cells that co-expressed multiple TaG-EM barcodes. DoubletFinder identified 2019 multiplet droplets, while TaG-EM barcodes identified 298 such droplets, 198 of which (66.4%) overlapped with those identified by DoubletFinder (Figure 6—figure supplement 5). Thus, TaG-EM help identify an additional 100 doublets that would have otherwise been overlooked using computational doublet identification methods.
 
 After doublet removal, the remaining cells were clustered (Figure 6A, Figure 6—figure supplement 6) and analyzed using Seurat (Satija et al., 2015). Analysis of differentially expressed genes identified clusters expressing marker genes previously reported for adult gut cell types (Hung et al., 2020). These included genes associated with precursor cells (Notch pathway genes), enterocytes (trypsins, serine proteases, amalyse, mannosidases), and enteroendocrine cells neuropeptides and neuropeptide receptors; (Figure 6—figure supplement 7, data not shown). TaG-EM barcodes derived from the eight multiplexed genotypes were observed in approximately one-quarter of the cells (Figure 6—figure supplement 7).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-v1.jpg)
+
+**Figure 6.:** (A) UMAP plot of Drosophila larval gut cell types. (B) Annotation of cells associated with a TaG-EM barcode across all 8 multiplexed experimental conditions using data from the gene expression library and an enriched TaG-EM barcode library. (C) Annotated enteroblast cells. (D) Presence of TaG-EM barcode (BC6) driven by the EB-Gal4 line using data from the gene expression library and an enriched TaG-EM barcode library. Gene expression levels of enteroblast marker genes (E) esg, (F) klu. (G) Annotated enterocyte cells. (H) Presence of TaG-EM barcode (BC4) driven by the EC-Gal4 line using data from the gene expression library and an enriched TaG-EM barcode library. Gene expression levels of enterocyte marker genes (I) betaTry, (J) Jon99Ciii. (K) Annotated enteroendocrine cells. (L) Presence of TaG-EM barcode (BC9) driven by the EE-Gal4 line using data from the gene expression library and an enriched TaG-EM barcode library. Gene expression levels of enteroendocrine cell marker genes (M) Dh31, (N) IA-2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) GFP expression visualized in dissociated cells from gut driver lines crossed to hexameric GFP and TaG-EM line. (B) Proportion of live (left) and dead (right) cells post-isolation and flow sorting as assessed by GFP expression and propidium iodide staining.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) GFP gating created by analyzing a pool of GFP positive and negative cells. (B) Flow gating for Drosophila gut cells with TaG-EM GFP expression driven in intestinal precursor cells (PC-Gal4) and enterocytes (EC-Gal4).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** UMAP plots showing gene expression levels of (A) enteroblast/ISC marker genes esg, klu, and E(spl)mbeta-HLH; and (B) the TaG-EM barcodes 7, 8, and 9 driven by the PC-Gal4 line.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Dead cell gating created by staining sample with propidium iodine (PI). (B) Flow gating for Drosophila gut cells with TaG-EM and hexameric GFP expression driven by the pan-midgut, enteroblast, enterocyte, enteroendocrine, and precursor cell drivers.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** UMAP plots pre-doublet removal showing (A) doublets uniquely identified by DoubletFinder, (B) all doublets identified by DoubletFinder, (C) doublets uniquely identified by TaG-EM barcodes, (D) all doublets identified by TaG-EM barcodes, (E) doublets mutually found by TaG-EM and DoubletFinder, (F) Venn diagram of overlap between doublets identified by TaG-EM and DoubletFinder.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** (A) UMAP plots clustered at different resolutions. (B) Clustree analysis of the effect of clustering resolution. (C) Automated cell type annotation using data from the Fly Cell Atlas.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp7-v1.jpg)
+
+**Figure 6—figure supplement 7.:** (A) UMAP plot of Drosophila larval gut cell types. (B) Annotation of cells associated with a TaG-EM barcode across all eight multiplexed experimental conditions using data from the gene expression library only. (C) Annotated enteroblast cells. (D) Expression level of TaG-EM barcode (BC6) driven by the EB-Gal4 line using data from the gene expression library only. Gene expression levels of enteroblast marker genes (E) esg, (F) klu. (G) Annotated enterocyte cells. (H) Expression level of TaG-EM barcode (BC4) driven by the EC-Gal4 line using data from the gene expression library only. Gene expression levels of enterocyte marker genes (I) betaTry, (J) Jon99Ciii. (K) Annotated enteroendocrine cells. (L) Expression level of TaG-EM barcode (BC9) driven by the EE-Gal4 line using data from the gene expression library only. Gene expression levels of enteroendocrine cell marker genes (M) Dh31, (N) IA-2.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp8-v1.jpg)
+
+**Figure 6—figure supplement 8.:** (A) Workflow for single-cell capture; cDNA amplification with added spike-in primer for TaG-EM library followed by a SPRI size-selection clean-up, then PCR(s) to create library for sequencing. (B) Spike-in primers and amplification primers used to enrich TaG-EM barcodes. Table summarizes different protocols tested to amplify the TaG-EM barcodes and create an enriched sequencing library. (C) Percent of on-target reads for each enriched TaG-EM barcode library.
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp9-v1.jpg)
+
+**Figure 6—figure supplement 9.:** (A) Proportion of cells with at least one barcode read assigned as a function of read depth for the enriched TaG-EM barcode library. Dashed line indicated percentage of cells with TaG-EM barcodes detected in the gene expression library (B) Number of unique UMIs observed as a function of read depth. (C) Correlation between barcodes detected in the gene expression (GEX) library and the enriched TaG-EM barcode library as a function of the purity of TaG-EM barcode assignment to the corresponding cell barcode. Dashed line indicates the threshold used for TaG-EM barcode calling in the enriched TaG-EM barcode library.
+
+![Figure 6—figure supplement 10.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp10-v1.jpg)
+
+**Figure 6—figure supplement 10.:** UMAP plots showing expression of the four PMG-Gal4 driven TaG-EM barcodes (BC1, BC2, BC3, and BC7) either (A) in aggregate or (B) individually.
+
+![Figure 6—figure supplement 11.](https://cdn.elifesciences.org/articles/88334/elife-88334-fig6-figsupp11-v1.jpg)
+
+**Figure 6—figure supplement 11.:** (A) Confocal images of third instar midguts showing Gal4-driven fluorophore expression (GFP or mCherry) and comparison with immunostainings of the gut cell markers Prospero (enteroendocrine), Pdm1 (enterocyte) and Esg-GFP (progenitor cell). For each image, Z projections of the stacks recorded along the length of the midgut were manually stitched together. (B) Representative single frames confocal images of a small region of the midgut showing immunostainings of the different gut cell markers and the Gal4-driven fluorophores. Quantification of overlapping and non-overlapping expression between the Gal4-driver fluorophore expression and the cell type marker in the anterior (A), middle (M), and posterior (P) regions for (C) enteroendocrine cells (EC-Gal4), (D) enterocytes (EC-Gal4), (E) precursor cells (PC-Gal4). Five specimens for each Gal4 line were examined. In the case of the enterocyte-specific driver, only anterior and middle regions were analyzed since the driver is largely inactive in the posterior part of the midgut.
 
 In antibody-conjugated oligo cell hashing approaches, sparsity of barcode representation is overcome by spiking in an additional primer at the cDNA amplification step and amplifying the hashtag oligo by PCR. We employed a similar approach to attempt to enrich for TaG-EM barcodes in an additional library sequenced separately from the 10x Genomics gene expression library. Our initial attempts at barcode enrichment using spike-in and enrichment primers corresponding to the TaG-EM PCR handle were unsuccessful (Figure 6—figure supplement 8). However, we subsequently optimized the TaG-EM barcode enrichment by (1) using a longer spike-in primer that more closely matches the annealing temperature used during the 10x Genomics cDNA creation step, and (2) using a nested PCR approach to amplify the cell-barcode and unique molecular identifier (UMI)-labeled TaG-EM barcodes (Figure 6—figure supplement 8).
 
@@ -104,21 +212,745 @@ In summary, combined with the large collections of Gal4 and split-Gal4 lines tha
 
 ## Methods
 
-## Drosophila stocks and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>IsoD1</td>
+      <td>Clandinin Lab, Stanford University, Silies et al., 2013</td>
+      <td>Wild type</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w-;+;+ (IsoD1)</td>
+      <td>Clandinin Lab, Stanford University, Silies et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>atttP2 line</td>
+      <td>Transgenic RNAi Project</td>
+      <td>RRID:BDSC_25710</td>
+      <td>P{y[+t7.7]=nanos-phiC31\int.NLS}X, y (Alegria et al., 2024) sc (Alegria et al., 2024) v (Alegria et al., 2024) sev (Ingham, 1988); P{y[+t7.7]=CaryP}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>norpA</td>
+      <td>William Pak, Purdue University, West Lafayette</td>
+      <td>RRID:BDSC_9048</td>
+      <td>w[*] norpA[P24]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myr::GFP(pJFRC12)</td>
+      <td>Gerald M. Rubin &amp; Barret Pfeiffer, Howard Hughes Medical Institute, Janelia Research Campus</td>
+      <td>RRID:BDSC_32197</td>
+      <td>w[*]; P{y[+t7.7] w[+mC]=10XUAS-IVS-myr::GFP}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Hexameric GFP lines</td>
+      <td>Nicholas Sokol, Indiana University, Bloomington</td>
+      <td>RRID:BDSC_91402, RRID:BDSC_91403</td>
+      <td>w[*]; P{y[+t7.7] w[+mC]=R57 F07-p65.AD.A}attP40; P{y[+t7.7] w[+mC]=UAS-DSCP-6XEGFP}attP2w[*]; PBac{y[+mDint2] w[+mC]=UAS-DSCP-6XEGFP}VK00018; P{y[+t7.7] w[+mC]=R57 F07-GAL4.DBD.A}attP2/TM6C, Sb (Alegria et al., 2024) Tb (Alegria et al., 2024)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-6XmCherry-HA</td>
+      <td>Steve Stowers, Montana State University</td>
+      <td>RRID:BDSC_52268</td>
+      <td>y (Alegria et al., 2024) w[*]; wg[Sp-1]/CyO, P{Wee-P.ph0}Bacc[Wee-P20]; P{y[+t7.7] w[+mC]=20XUAS-6XmCherry-HA}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP.nls</td>
+      <td>Bruce Edgar, Fred Hutchinson Cancer Center</td>
+      <td>RRID:BDSC_4776</td>
+      <td>w[1118]; P{w[+mC]=UAS GFP.nls}8</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>esg-GFP.FPTB</td>
+      <td>modERN Project</td>
+      <td>RRID:BDSC_83386</td>
+      <td>y (Alegria et al., 2024) w[*]; PBac{y[+mDint2] w[+mC]=esg GFP.FPTB}VK00031</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dpp-Gal4 driver</td>
+      <td>Karen Staehling-Hampton, University of Wisconsin, Madison</td>
+      <td>RRID:BDSC_1553</td>
+      <td>w[*]; wg[Sp-1]/CyO; P{w[+mW.hs]=GAL4 dpp.blk1}40 C.6/TM6B, Tb (Alegria et al., 2024)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Act-Gal4 driver</td>
+      <td>Yash Hiromi, National Institute of Genetics</td>
+      <td>RRID:BDSC_4414</td>
+      <td>y (Alegria et al., 2024) w[*]; P{w[+mC]=Act5 C-GAL4}25FO1/CyO, y[+]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tub-Gal4 driver</td>
+      <td>Liqun Luo, Stanford University</td>
+      <td>RRID:BDSC_5138</td>
+      <td>y (Alegria et al., 2024) w[*]; P{w[+mC]=tubP-GAL4}LL7/TM3, Sb (Alegria et al., 2024) Ser (Alegria et al., 2024)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mhc-Gal4 driver</td>
+      <td>Frank Schnorrer, Max Planck Institute of Biochemistry</td>
+      <td>RRID:BDSC_55132</td>
+      <td>P{w[+mC]=Mhc-GAL4.K}1, w[*]/FM7c</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PC-Gal4 driver lines</td>
+      <td>Barry Dickson, Howard Hughes Medical Institute, Janelia Research Campus</td>
+      <td>RRID:BDSC_73356RRID:BDSC_75528</td>
+      <td>w[1118]; P{y[+t7.7] w[+mC]=VT004241 p65.AD}attP40w[1118]; P{y[+t7.7] w[+mC]=VT024642 GAL4.DBD}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PC-Gal4 driver (with UAS-Stinger) lines</td>
+      <td>Nicholas Sokol, Indiana University, Bloomington</td>
+      <td>RRID:BDSC_91400RRID:BDSC_91401</td>
+      <td>w[*]; P{y[+t7.7] w[+mC]=VT004241 p65.AD}attP40, P{w[+mC]=UAS-Stinger}2/CyO; l(3)*[*]/TM3, Sb (Alegria et al., 2024) Ser (Alegria et al., 2024)w[*]; P{y[+t7.7] w[+mC]=VT024642 GAL4.DBD}attP2, P{w[+mC]=UAS-Stinger}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>EC-Gal4 driver</td>
+      <td>Nicholas Sokol, Indiana University, Bloomington</td>
+      <td>RRID:BDSC_91406</td>
+      <td>w[*]; P{y[+t7.7] w[+mC]=CG10116 GAL4.DBD}su(Hw)attP6, P{y[+t7.7] w[+mC]=VT004958 p65.AD}attP40/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>EB-Gal4 driver lines</td>
+      <td>Nicholas Sokol, Indiana University, Bloomington</td>
+      <td>RRID:BDSC_91398RRID:BDSC_91404</td>
+      <td>w[*]; P{y[+t7.7] w[+mC]=CG10116 p65.AD}attP40w[*]; P{y[+t7.7] w[+mC]=Su(H)GBE-GAL4.DBD}attP2/TM6B, Tb[+]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>EE-Gal4 driver lines</td>
+      <td>Nicholas Sokol, Indiana University, Bloomington</td>
+      <td>RRID:BDSC_91402RRID:BDSC_91403</td>
+      <td>w[*]; P{y[+t7.7] w[+mC]=R57 F07-p65.AD.A}attP40; P{y[+t7.7] w[+mC]=UAS-DSCP-6XEGFP}attP2w[*]; PBac{y[+mDint2] w[+mC]=UAS-DSCP-6XEGFP}VK00018; P{y[+t7.7] w[+mC]=R57 F07-GAL4.DBD.A}attP2/TM6C, Sb (Alegria et al., 2024) Tb (Alegria et al., 2024)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PMG-Gal4 driver lines</td>
+      <td>Nicholas Sokol, Indiana University, Bloomington</td>
+      <td>RRID:BDSC_91398RRID:BDSC_91399</td>
+      <td>w[*]; P{y[+t7.7] w[+mC]=CG10116 p65.AD}attP40w[*]; P{y[+t7.7] w[+mC]=CG10116 GAL4.DBD}su(Hw)attP6</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TaG-EM lines</td>
+      <td>This study, Alegria et al., 2024</td>
+      <td></td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TaG-EM lines +6 xGFP (x20)</td>
+      <td>This study</td>
+      <td>RRID:BDSC_99608 RRID:BDSC_99609 RRID:BDSC_99610 RRID:BDSC_99611 RRID:BDSC_99612 RRID:BDSC_99613 RRID:BDSC_99614 RRID:BDSC_99615 RRID:BDSC_99616 RRID:BDSC_99617 RRID:BDSC_99618 RRID:BDSC_99619 RRID:BDSC_99620 RRID:BDSC_99621 RRID:BDSC_99622 RRID:BDSC_99623 RRID:BDSC_99624 RRID:BDSC_99625 RRID:BDSC_99626 RRID:BDSC_99627</td>
+      <td>These lines are available from the Bloomington Drosophila Stock Center (stock numbers 99608–99627)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(rabbit polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A-6455RRID:AB_221570</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>3A11RRID:AB_2617430</td>
+      <td>1:20 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Prospero (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>MR1ARRID:AB_528440</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pdm1 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Nub2D4RRID:AB_2722119</td>
+      <td>1:30 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Goat Anti-mouse conjugated antibody (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A-21236RRID:AB_2535805</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Goat Anti-rabbit IgG conjugated antibody (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A-11008RRID:AB_143165</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC12-10XUAS-IVS-myr::GFP plasmid</td>
+      <td>Gerald Rubin Lab</td>
+      <td>RRID:Addgene_26222</td>
+      <td>Addgene Plasmid #26222</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TaG-Me construct gBlock</td>
+      <td>Integrated DNA Technologies (IDT)</td>
+      <td></td>
+      <td>caaaggaaaaagctgcactgctataca agaaaattatggaaaaatatttgatgtat agtgccttgactagagatcataatcagc cataccacatttgtagaggttttacttgcttt aaaaaacctcccacacctccccctgaac ctgaaacataaaatgaatgcaattgttgtt gttaacttgtttattgcagcttataaCTTCCAACAACCGGAAGTGANNNNNNNNNNNNNNtggttaca aataaagcaatagcatcacaaatttcaca aataaagcatttttttcactgcattctagtt gtggtttgtccaaactcatcaatgt atcttatcatgtctggatcgatctggccgg ccgtttaaacgaattcttgaagacgaaag ggcctcgtgatacgcctatttttataggttaa tgtcatgataataatg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SV40_post_R</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GCCAGATCGATCCAGACATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SV40_5 F</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CTCCCCCTGAACCTGAAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B2_3’F1_Nextera</td>
+      <td>IDT</td>
+      <td></td>
+      <td>TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCTTCCAACAACCGGAAG*TGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B2_3’F1_Nextera_2</td>
+      <td>IDT</td>
+      <td></td>
+      <td>TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGAGCTTCCAACAACCGGAAG*TGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B2_3’F1_Nextera_4</td>
+      <td>IDT</td>
+      <td></td>
+      <td>TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGTCGACTTCCAACAACCGGAAG*TGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B2_3’F1_Nextera_6</td>
+      <td>IDT</td>
+      <td></td>
+      <td>TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGGAAGAGCTTCCAACAACCGGAAG*TGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SV40_pre_R_Nextera</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGATTTGTGAAATTTGTGATGCTATTGC*T TT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SV40_post_R_Nextera</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGCCAGATCGATCCAGACA*TGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward indexing primer</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACACXXXXXXXXTCGTCGGCAGCGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse indexing primer</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGATXXXXXXXXGTCTCGTGGGCTCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UMGC_IL_TaGEM_SpikeIn_v1</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTCTTCCAACAACCGGAAGT*G*A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UMGC_IL_TaGEM_SpikeIn_v2</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTGCAGCTTATAACTTCCAACAACCGGAAGT*G*A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UMGC_IL_TaGEM_SpikeIn_v3</td>
+      <td>IDT</td>
+      <td></td>
+      <td>TGTGCTCTTCCGATCTGCAGCTTATAACTTCCAACAACCGGAAGT*G*A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>D701_TaGEM</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGATCGAGTAATGTGACTGGAGTTCAGACGTGTGCTCTTC CGATCTGCAGC*T*T</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SI PCR Primer</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGC*T*C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UMGC_IL_DoubleNest</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTGCAGCTTATAACTTCCAACAACCGG*A* A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P5</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>D701</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GATCGGAAGAGCACACGTCTGAACTCCAGTCACATTACTCGATCTCGTATGCCGTCTTCTG CTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>D702</td>
+      <td>IDT</td>
+      <td></td>
+      <td>GATCGGAAGAGCACACGTCTGAACTCCAGTCACTCCGGAGAATCTCGTATGCCGTCTTCT GCTTG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Spin MiniPrep kit</td>
+      <td>Qiagen</td>
+      <td>27104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ApaLI restriction enzyme</td>
+      <td>New England BioLabs (NEB)</td>
+      <td>R0507S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PsiI restriction enzyme</td>
+      <td>NEB</td>
+      <td>R0657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EcoRI restriction enzyme</td>
+      <td>NEB</td>
+      <td>R0101S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cutsmart Buffer</td>
+      <td>NEB</td>
+      <td>B6004S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Calf Intestinal Phosphatase (CIP)</td>
+      <td>NEB</td>
+      <td>M0290S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 DNA ligase</td>
+      <td>NEB</td>
+      <td>M0202S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TOP10 competent cells</td>
+      <td>Invitrogen</td>
+      <td>C404010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick Gel Purification Kit</td>
+      <td>Qiagen</td>
+      <td>28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-iT PicoGreen dsDNA assay</td>
+      <td>ThermoFisher</td>
+      <td>P11496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneJET genomic DNA purification Kit</td>
+      <td>ThermoFisher</td>
+      <td>K0701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taq DNA Polymerase</td>
+      <td>Qiagen</td>
+      <td>201203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Exo-CIP Rapid PCR Cleanup Kit</td>
+      <td>NEB</td>
+      <td>E1050S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 High-Fidelity DNA Polymerase</td>
+      <td>NEB</td>
+      <td>M0491S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HiFi HotStart ReadyMix</td>
+      <td>Roche</td>
+      <td>KK2601</td>
+      <td>Material Number: 07958927001</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SequalPrep Normalization Plate Kit, 96-well</td>
+      <td>ThermoFisher</td>
+      <td>A1051001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA high sensitivity assay</td>
+      <td>ThermoFisher</td>
+      <td>Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Next GEM Single Cell 3ʹ Kit v3.1, 4 rxns</td>
+      <td>10x Genomics</td>
+      <td>PN-1000269</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Next GEM Chip G Single Cell Kit, 16 rxns</td>
+      <td>10x Genomics</td>
+      <td>PN-1000127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual Index Kit TT Set A, 96 rxns</td>
+      <td>10x Genomics</td>
+      <td>PN-1000215</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Sigma</td>
+      <td>A9518-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMPure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(+)-Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>G7021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine</td>
+      <td>Sigma-Aldrich</td>
+      <td>W222402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Goat Serum</td>
+      <td>Abcam</td>
+      <td>ab7481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1xPBS</td>
+      <td>Corning</td>
+      <td>21040CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>15714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>X100-5ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI solution</td>
+      <td>ThermoFisher</td>
+      <td>62248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Elastase</td>
+      <td>Sigma-Aldrich</td>
+      <td>E7885-20MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SPRIselect</td>
+      <td>Beckman Coulter</td>
+      <td>B23318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photo Booth</td>
+      <td>Apple</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>http://fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python Programming Language</td>
+      <td>RRID:SCR_008394</td>
+      <td>http://www.python.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioPython</td>
+      <td>Cock et al., 2009</td>
+      <td>RRID:SCR_007173</td>
+      <td>http://biopython.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger</td>
+      <td>10x Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt</td>
+      <td>Martin, 2011</td>
+      <td>RRID:SCR_011841</td>
+      <td>https://cutadapt.readthedocs.io/en/stable/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>Satija et al., 2015</td>
+      <td>RRID:SCR_016341</td>
+      <td>https://satijalab.org/seurat/get_started.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DecontX</td>
+      <td>Yang et al., 2020</td>
+      <td></td>
+      <td>https://github.com/campbio/celda</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoubletFinder</td>
+      <td>McGinnis et al., 2019</td>
+      <td>RRID:SCR_018771</td>
+      <td>https://github.com/chris-mcginnis-ucsf/DoubletFinder</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustree</td>
+      <td>Zappia and Oshlack, 2018</td>
+      <td>RRID:SCR_016293</td>
+      <td>https://CRAN.R-project.org/package=clustree</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SingleR</td>
+      <td>Aran et al., 2019</td>
+      <td>RRID:SCR_023120</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/SingleR.html</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LED Strip Light Diffusers</td>
+      <td>Muzata</td>
+      <td>HSL-0055</td>
+      <td>U1SW WW 1 M, LU1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LED Strip Light, White</td>
+      <td>LEDJUMP</td>
+      <td>LJSP-111</td>
+      <td>Size 2835, 6000 Kelvin color temperature</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Arduino Uno Rev 3</td>
+      <td>Vilros</td>
+      <td>ARD_A000066</td>
+      <td>See ‘Phototaxis experiments’ in Methods section.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acoustic Foam Panels</td>
+      <td>ALPOWL</td>
+      <td></td>
+      <td>1”x12”x12”. See ‘Phototaxis experiments’ in Methods section.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1080 P Day/Night Vision USB Camera, 2MP Infrared Webcam with Automatic IR-Cut Switching and IR LEDs</td>
+      <td>Arducam</td>
+      <td>B0506</td>
+      <td>See ‘Phototaxis experiments’ in Methods section.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AX R confocal microscope</td>
+      <td>Nikon</td>
+      <td></td>
+      <td>See ‘Dissection and immunostaining’ in Methods section.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FlowMi 40 µM tip filter</td>
+      <td>Bel-Art</td>
+      <td>H13680-0040</td>
+      <td>See ‘Cell dissociation and isolation’ in Methods section.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LUNA-FL Dual Fluorescence Cell Counter</td>
+      <td>Logos Biosystems</td>
+      <td>L20001</td>
+      <td>See ‘Cell dissociation and isolation’ in Methods section.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AO/PI dye</td>
+      <td>Logos Biosystems</td>
+      <td>F23001</td>
+      <td>See ‘Cell dissociation and isolation’ in Methods section.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FACSAria II Cell Sorter</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td>See ‘Cell dissociation and isolation’ in Methods section.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks and maintenance
 
 Drosophila stocks were grown at 22 °C on cornmeal agar unless otherwise indicated. The stocks used in this study are described in the Key Resources Table.
 
-## Design and cloning of TaG-EM constructs
+### Design and cloning of TaG-EM constructs
 
 A gBlock with the following sequence containing a part of the SV40 3’ UTR with a PCR handle (uppercase, below) and a 14 bp randomer sequence just upstream of the SV40 polyadenylation site (bold and underlined, below) was synthesized (Integrated DNA Technologies, IDT): caaaggaaaaagctgcactgctatacaagaaaattatggaaaaatatttgatgtatagtgccttgactagagatcataatcagccataccacatttgtagaggttttacttgctttaaaaaacctcccacacctccccctgaacctgaaacataaaatgaatgcaattgttgttgttaacttgtttattgcagcttataaCTTCCAACAACCGGAAGTGANNNNNNNNNNNNNNtggttacaaataaagcaatagcatcacaaatttcacaaataaagcatttttttcactgcattctagttgtggtttgtccaaactcatcaatgtatcttatcatgtctggatcgatctggccggccgtttaaacgaattcttgaagacgaaagggcctcgtgatacgcctatttttataggttaatgtcatgataataatg.
 
 The gBlock was resuspended in 20 µl EB, incubated at 50 °C for 20 min and then cut with PsiI and EcoRI (New England Biolabs, NEB) using the following reaction conditions: 4 µl gBlock DNA (35 ng), 2 µl 10 x CutSmart buffer (NEB), 1 µl EcoRI enzyme (NEB), 1 µl PsiI enzyme (NEB), and 12 µl nuclease-free water were mixed and incubated at 37 °C for 1 hr followed by 65 °C for 20 min to heat inactivate the restriction enzymes. pJFRC12-10XUAS-IVS-myr::GFP plasmid (Addgene, Plasmid #26222; Pfeiffer et al., 2010) was digested with the following reaction conditions: 5 µl pJFRC12-10XUAS-IVS-myr::GFP plasmid DNA (~3 µg), 5 µl 10 x CutSmart buffer (NEB), 1 µl PsiI enzyme (NEB), 1 µl EcoRI enzyme (NEB), and 38 µl nuclease-free water, were mixed and incubated at 37 °C for 1 hr, followed by addition of 1 µl of CIP and incubation for an additional 30 min. The digested vector backbone was gel purified using the QiaQuick Gel Purification Kit (QIAGEN). The digested gBlock was ligated into the digested pJFRC12-10XUAS-IVS-myr::GFP backbone using the following reactions conditions: 4 µl T4 ligase buffer (10 x; NEB), 20 µl plasmid backbone DNA (0.005 pmol), 5 µl gBlock digest DNA (0.03 pmol), 2 µl of T4 DNA ligase (NEB), and 9 µl nuclease-free water were mixed and incubated at 22 °C for 2 hr. 2 µl of the ligation reaction was transformed into 50 µl of TOP10 competent cells (Invitrogen), and the cells were incubated on ice for 30 min, then heat shocked at 42 °C for 30 s, and incubated on ice for 5 min. 250 µl SOC was added and the cells were plated on LB +ampicillin plates and incubated overnight at 37 °C. DNA was isolated from 36 pJFRC12-gBlock colonies using a QIAprep Spin MiniPrep kit (QIAGEN). Expected construct size was verified by diagnostic digest with EcoRI and ApaLI. DNA concentration was determined using a Quant-iT PicoGreen dsDNA assay (Thermo Fisher Scientific) and the randomer barcode for each of the constructs was determined by Sanger sequencing using the following primers:
 
-## Generation of TaG-EM transgenic lines
+### Generation of TaG-EM transgenic lines
 
 29 sequence verified constructs were normalized, pooled evenly, and injected as a pool into embryos (Rubin and Spradling, 1982) expressing PhiC31 integrase and the carrying the attP2 landing site (BDSC #25710). Injected flies were outcrossed to w- flies, and up to three white +progeny per cross were identified, and the transgenic lines were homozygosed. DNA was extracted (GeneJET genomic DNA purification Kit, Thermo Scientific) and the region containing the DNA barcode was amplified with the following PCR reaction: 2.5 µl 1:10 diluted template DNA, 2 µl 10 x Reaction Buffer (QIAGEN), 0.2 µl dNTP mix (10 µM), 1 µl 10 µM SV40_5 F primer (10 µM), 1 µl SV40_post_R primer (10 µM), 0.8 µl MgCl2 (3 mM), 0.1 µl Taq polymerase (QIAGEN), 12.4 µl nuclease-free water. Reactions were amplified using the following cycling conditions: 95 °C for 5 min, followed by 30 cycles of 94 °C for 30 s, 55 °C for 30 s, 72 °C for 30 s, followed by 72 °C for 5 min. PCR products were treated with Exo-CIP using the following reaction conditions: 5 µl PCR product, 1 µl Exo-CIP Tube A (NEB), 1 µl Exo-CIP Tube B (NEB) were mixed and incubated at 37 °C for 4 min, followed by 80 °C for 1 min. The barcode sequence for each of the independent transgenic lines was determined by Sanger sequencing using the SV40_5 F and SV40_PostR primers. Transgenic lines containing 20 distinct DNA barcodes were recovered (Figure 1—figure supplement 1). An additional 156 TaG-EM barcode lines were isolated and sequence verified as described in a separate publication (Alegria et al., 2024).
 
-## Optimizing amplification of TaG-EM barcodes for next-generation sequencing
+### Optimizing amplification of TaG-EM barcodes for next-generation sequencing
 
 The following primers were evaluated to amplify the TaG-EM barcodes upstream of NGS:
 
@@ -130,15 +962,15 @@ An initial test was performed with three different polymerases (NEB Q5, KAPA HiF
 
 Set up the following PCR reactions:
 
-## Q5 polymerase
+#### Q5 polymerase
 
 2.5 µl template DNA, 1 µl 10 µM Forward primer (10 µM), 1 µl Reverse primer (10 µM), 10 µl 2 x Q5 Master Mix (NEB), 5.5 µl nuclease-free water. Reactions were amplified using the following cycling conditions: 98 °C for 30 s, followed by 30 cycles of 98 °C for 20 s, 55 °C or 60 °C for 15 s, 72 °C for 30 s, followed by 72 °C for 5 min.
 
-## KAPA HiFi polymerase
+#### KAPA HiFi polymerase
 
 2.5 µl template DNA, 1 µl 10 µM Forward primer (10 µM), 1 µl Reverse primer (10 µM), 10 µl 2 x KAPA HiFi ReadyMix (Roche), 5.5 µl nuclease-free water. Reactions were amplified using the following cycling conditions: 95 °C for 5 min, followed by 30 cycles of 98 °C for 20 s, 55 °C or 60 °C for 15 s, 72 °C for 30 s, followed by 72 °C for 5 min.
 
-## Taq polymerase
+#### Taq polymerase
 
 2.5 µl template DNA, 2 µl 10 x Reaction Buffer (QIAGEN), 0.2 µl dNTP mix (10 µM), 1 µl 10 µM Forward primer (10 µM), 1 µl Reverse primer (10 µM), 0.8 µl MgCl2 (3 mM), 0.1 µl Taq polymerase (QIAGEN), 12.4 µl nuclease-free water. Reactions were amplified using the following cycling conditions: 95 °C for 5 min, followed by 30 cycles of 94 °C for 30 s, 55 °C or 60 °C for 30 s, 72 °C for 30 s, followed by 72 °C for 5 min.
 
@@ -152,57 +984,57 @@ Reverse indexing primer:
 
 Reactions were amplified using the following cycling conditions: 98 °C for 30 s, followed by 10 cycles of 98 °C for 20 s, 55 °C for 15 s, 72 °C for 1 min, followed by 72 °C for 5 min. Amplicons were then purified and normalized using a SequalPrep normalization plate (Thermo Fisher Scientific), followed by elution in 20 µl of elution buffer. An even volume of the normalized libraries was pooled and concentrated using 1.8 x AMPure XP beads (Beckman Coulter). Pooled libraries were quantified using a Qubit dsDNA high sensitivity assay (Thermo Fisher Scientific) and libraries were normalized to 2 nM for sequencing on the Illumina MiSeq (see below).
 
-## Structured fly pool experiments
+### Structured fly pool experiments
 
 Male or female flies from TaG-EM barcode lines were pooled in either an even or staggered manner (Figure 2A). For the even pools, three independently pooled samples were constructed in order to assess sample-to-sample variability. DNA was extracted from these structured pools using a protocol adapted from Huang et al., 2009 (Huang et al., 2009), using homemade SPRI beads (DeAngelis et al., 1995) in the last purification step and amplified in triplicate using 2.5 µl template DNA (50 ng), 1 µl 10 µM B2_Nextera_F 0–6 primers (10 µM), 1 µl SV40_pre_R_Nextera (10 µM), 10 µl 2 x KAPA HiFi ReadyMix (Roche), 5.5 µl nuclease-free water. Reactions were amplified using the following cycling conditions: 98 °C for 5 min, followed by 30 cycles of 98 °C for 20 s, 60 °C for 15 s, 72 °C for 30 s, followed by 72 °C for 5 min. Amplicons were indexed, normalized, quantified, and prepared for sequencing as described above.
 
-## Phototaxis experiments
+### Phototaxis experiments
 
-## Video-based measurements
+#### Video-based measurements
 
 A pair of white LED strip lights with Muzata LED Strip Light Diffusers (U1SW WW 1 M, LU1) were mounted withing a light-tight box and controlled using an Vilros Uno Rev 3 microcontroller. Test tubes containing flies were held in place with Acoustic Foam Panels (1”x12”x12”, ALPOWL). Videos and images were acquired using an Arducam 1080 P Day & Night Vision USB Camera with an IR filter and using Photo Booth software (Apple). Wild type and norpA flies carrying one of four different TaG-EM barcodes were tested in three independent experimental replicates. 20 male flies of each genotype were transferred into 25 mm x 150 mm glass test tubes, incubated at 34 °C for 10 min and then run in the phototaxis assay, where a light at one end of the chamber was turned on for 30 s. Videos of all tests were recorded through the end of the 30 s light pulse. Videos were independently scored by two observers to determine the number of flies in the light-facing or dark-facing tubes and the results were averaged. A preference index (P.I.) was calculated using the following formula: [(number of flies in light tube) - (number of flies in dark tube)]/(total number of flies).
 
-## TaG-EM measurements
+#### TaG-EM measurements
 
 For TaG-EM barcode-based phototaxis measurements, the following genotypes were consolidated into a single test tube:
 
-## Pool A
+#### Pool A
 
-## Pool B
+#### Pool B
 
 These pools were individually incubated at 34 °C for 10 min and then run in the phototaxis assay. Videos of all tests were recorded and at the end of a 30 s light pulse the two test tubes were quickly separated and capped. Flies in each of these tubes were counted, then DNA was extracted from the flies from the light-facing or dark-facing tubes and amplified using 2.5 µl template DNA (50 ng), 1 µl 10 µM B2_Nextera_F 0–6 primers (10 µM), 1 µl SV40_pre_R_Nextera (10 µM), 10 µl 2 x KAPA HiFi ReadyMix (Roche), 5.5 µl nuclease-free water. Reactions were amplified using the following cycling conditions: 95 °C for 5 min, followed by 30 cycles of 98 °C for 20 s, 60 °C for 15 s, 72 °C for 30 s, followed by 72 °C for 5 min. Amplicons were indexed, normalized, quantified, and prepared for sequencing as described above.
 
-## Oviposition experiments
+### Oviposition experiments
 
 Newly hatched flies (males and females) from three barcode lines were collected at 1-week intervals during 4 consecutive weeks (12 barcode lines in total). Fresh fly food was provided every 3–4 days. Ten days after the last collection, 10 females from each barcode line were taken and pooled together in a collection cage (10 females x 12 barcode lines = 120 females). The remaining females from each barcode line were separated from the males and put in individual collection cages. Two days later, the experiment started and was run for 3 consecutive days. Each day a 1–1.5 hr pre-collection was followed by a 6 hr collection, both at 25 °C. 100 embryos from each individual collection plate were transferred to new plates and incubated for 2 days at 18 °C. The number of hatched larvae were counted and used to calculate the egg survival rate. The pooled collection plate was also incubated at 18 °C and the next day the embryos were dechorionated and frozen. The 12 individual collection plates were kept at 4 °C and the number of embryos counted in the following days. For the barcode measurements, DNA was extracted from the embryos, and amplified using 2.5 µl template DNA (50 ng), 1 µl 10 µM B2_Nextera_F 0–6 primers (10 µM), 1 µl SV40_pre_R_Nextera (10 µM), 10 µl 2 x KAPA HiFi ReadyMix (Roche), 5.5 µl nuclease-free water. Reactions were amplified using the following cycling conditions: 95 °C for 5 min, followed by 30 cycles of 98 °C for 20 s, 60 °C for 15 s, 72 °C for 30 s, followed by 72 °C for 5 min. Amplicons were indexed, normalized, quantified, and prepared for sequencing as described above.
 
-## Larval gut motility experiments
+### Larval gut motility experiments
 
-## Preparing yeast food plates
+#### Preparing yeast food plates
 
 Yeast agar plates were prepared by making a solution containing 20% Red Star Active Dry Yeast 32oz (Red Star Yeast) and 2.4% Agar Powder/Flakes (Thermo Fisher) and a separate solution containing 20% Glucose (Sigma-Aldrich). Both mixtures were autoclaved with a 45 min liquid cycle and then transferred to a water bath at 55 °C. After cooling to 55 °C, the solutions were combined and mixed, and approximately 5 mL of the combined solution was transferred into 100x15 mm petri dishes (VWR) in a PCR hood or contamination-free area. For blue-dyed yeast food plates, 0.4% Blue Food Color (McCormick) was added to the yeast solution. For the caffeine assays, 300 µL of a solution of 100 mM 99% pure caffeine (Sigma-Aldrich) was pipetted onto the blue-dyed yeast plate and allowed to absorb into the food during the 90 min starvation period.
 
-## Manual gut motility assay
+#### Manual gut motility assay
 
 Third instar Drosophila larvae were transferred to empty conical tubes that had been misted with water to prevent the larvae from drying out. After a 90-min starvation period, the larvae were moved from the conical to a blue-dyed yeast plate with or without caffeine and allowed to feed for 60 min. Following the feeding period, the larvae were transferred to an undyed yeast plate. Larvae were scored for the presence or absence of a food bolus every 30 min over a 5 hr period. Up to eight experimental replicates/conditions were scored simultaneously.
 
-## TaG-EM gut motility assay
+#### TaG-EM gut motility assay
 
 Third instar larvae were starved and fed blue dye-containing food with or without caffeine as described above. An equal number of larvae from each experimental condition/replicate were transferred to an undyed yeast plate. During the 5 hr observation period, larvae were examined every 30 min and larvae lacking a food bolus were transferred to a microcentrifuge tube labeled for the timepoint. Any larvae that died during the experiment were placed in a separate microcentrifuge tube and any larvae that failed to pass the food bolus were transferred to a microcentrifuge tube at the end of the experiment. DNA was extracted from the larvae in each tube and TaG-EM barcode libraries were prepared and sequenced as described above.
 
-## Dissection and immunostaining
+### Dissection and immunostaining
 
 Midguts from third instar larvae of driver lines crossed to UAS-GFP.nls or UAS-mCherry were dissected in 1xPBS and fixed with 4% paraformaldehyde (PFA) overnight at 4 °C. Fixed samples were washed with 0.1% PBTx (1 x PBS +0.1% Triton X-100) three times for 10 min each and blocked in PBTxGS (0.1% PBTx +3% Normal Goat Serum) for 2–4 hr at RT. After blocking, midguts were incubated in primary antibody solution overnight at 4 °C. The next day samples were washed with 0.1% PBTx three times for 20 min each and were incubated in secondary antibody solution for 2–3 hr at RT (protected from light) followed by three washes with 0.1% PBTx for 20 min each. One µg/ml DAPI solution prepared in 0.1% PBTx was added to the sample and incubated for 10 min followed by washing with 0.1% PBTx three times for 10 min each. Finally, samples were mounted on a slide glass with 70% glycerol and imaged using a Nikon AX R confocal microscope. Confocal images were processed using Fiji software.
 
 The primary antibodies used were rabbit anti-GFP (A6455,1:1000 Invitrogen), mouse anti-mCherry (3A11, 1:20 DSHB), mouse anti-Prospero (MR1A, 1:50 DSHB) and mouse anti-Pdm1 (Nub 2D4, 1:30 DSHB). The secondary antibodies used were goat anti-mouse and goat anti-rabbit IgG conjugated to Alexa 647 and Alexa 488 (1:200; Invitrogen), respectively. Five larval gut specimens per Gal4 line were dissected and examined.
 
-## Cell dissociation and isolation
+### Cell dissociation and isolation
 
 Midguts from 3rd instar larvae were dissected in phosphate-buffered saline (PBS) and transferred to microcentrifuge tubes on ice containing PBS +30% normal goat serum (NGS). After dissection, 150 µL of 2.7 mg/mL elastase was added to each sample tube. The tubes were then incubated at 27 °C for 1 hr. During incubation, samples were mixed by pipetting ~30 times every 15 min to improve elastase dissociation of the cells. Samples were then filtered through a 40 µM FlowMi tip filter (Bel-Art) to reduce debris. Afterwards, the samples were quantified on the LUNA-FL Dual Fluorescence Cell Counter (Logos Biosystems) using 9 µL of sample to 1 µL AO/PI dye to ensure there were enough viable cells for flow sorting.
 
 Once quantified, the samples were brought up to a volume of ~1.1 mL with the PBS +30% NGS solution to facilitate flow sorting. The samples were then fluorescently sorted on a FACSAria II Cell Sorter (BD Biosciences) to isolate GFP + cells. Following sorting, samples were centrifuged at 300 x g for 10 min to concentrate the cells. The supernatant was aspirated off until 50 µL cell concentrate remained in each sample. Then, the samples were carefully resuspended using wide bore pipette tips before being combined into one sample tube. This sample was quantified on the LUNA-FL Dual Fluorescence Cell Counter (Logos Biosystems) as described above. If necessary, cells were centrifuged, concentrated, and re-counted.
 
-## Preparation of single-cell sequencing libraries
+### Preparation of single-cell sequencing libraries
 
 The resulting pool was prepared for sequencing following the 10x Genomics Single Cell 3’ protocol (version CG000315 Rev C), At step 2.2 of the protocol, cDNA amplification, 1 µl of TaG-EM spike-in primer (10 µM) was added to the reaction to amplify cDNA with the TaG-EM barcode. Gene expression cDNA and TaG-EM cDNA were separated using a double-sided SPRIselect (Beckman Coulter) bead clean up following 10x Genomics Single Cell 3’ Feature Barcode protocol, step 2.3 (version CG000317 Rev E). The gene expression cDNA was created into a library following the CG000315 Rev C protocol starting at section 3. Custom nested primers were used for enrichment of TaG-EM barcodes after cDNA creation using PCR.
 
@@ -210,16 +1042,16 @@ The following primers were tested (see Figure 6—figure supplement 8):
 
 After multiple optimization trials, the following steps yielded ~96% on-target reads for the TaG-EM library (Figure 6—figure supplement 8, note that for the enriched barcode data shown in Figure 6, Figure 6—figure supplement 9, a similar amplification protocol was used TaG-EM barcodes were amplified from the gene expression library cDNA and not the SPRI-selected barcode pool). TaG-EM cDNA was amplified with the following PCR reaction: 5 µl purified TaG-EM cDNA, 50 µl 2 x KAPA HiFi ReadyMix (Roche), 2.5 µl UMGC_IL_DoubleNest primer (10 µM), 2.5 µl SI_PCR primer (10 µM), and 40 µl nuclease-free water. The reaction was amplified using the following cycling conditions: 98 °C for 2 min, followed by 15 cycles of 98 °C for 20 s, 63 °C for 30 s, 72 °C for 20 s, followed by 72 °C for 5 min. After the first PCR, the amplified cDNA was purified with a 1.2 x SPRIselect (Beckman Coulter) bead cleanup with 80% ethanol washes and eluted into 40 µL of nuclease-water. A second round of PCR was run with following reaction: 5 µl purified TaG-EM cDNA, 50 µl 2 x KAPA HiFi ReadyMix (Roche), 2.5 µl D702 primer (10 µM), 2.5 µl p5 Primer (10 µM), and 40 µl nuclease-free water. The reaction was amplified using the following cycling conditions: 98 °C for 2 min, followed by 10 cycles of 98 °C for 20 s, 63 °C for 30 s, 72 °C for 20 s, followed by 72 °C for 5 min. After the second PCR, the amplified cDNA was purified with a 1.2 x SPRIselect (Beckman Coulter) bead cleanup with 80% ethanol washes and eluted into 40 µL of nuclease-water. The resulting 3’ gene expression library and TaG-EM enrichment library were sequenced together following Scenario 1 of the BioLegend ‘Total-Seq-A Antibodies and Cell Hashing with 10x Single Cell 3’ Reagents Kit v3 or v3.1’ protocol. Additional sequencing of the enriched TaG-EM library also done following Scenario 2 from the same protocol.
 
-## Sequencing
+### Sequencing
 
 Libraries for TaG-EM barcode analysis from structured pools or from phototaxis or oviposition experiments were denatured with NaOH and prepared for sequencing according to the protocols described in the Illumina MiSeq Denature and Dilute Libraries Guides. Single-cell libraries were sequenced on the Illumina NextSeq 2000 or Illumina NovaSeq 6000. One of the single-cell enriched TaG-EM barcode libraries was sequenced on an Element Aviti sequencer following the manufacturers loading instructions.
 
-## Data analysis
+### Data analysis
 
-## Behavioral experiments
+#### Behavioral experiments
 
 Demultiplexed fastq files were generated using bcl2fastq or bcl-convert. TaG-EM barcode data was analyzed using custom R and Python scripts and BioPython (Cock et al., 2009). Leading primer sequences were trimmed using cutadapt (Martin, 2011) and the first 14 bp of the remaining trimmed read were compared to a barcode reference file, with a maximum of 2 mismatches allowed, using a custom script (TaG-EM_barcode_analysis.py) which is available via Github: https://github.com/darylgohl/TaG-EM (copy archived at Gohl, 2024).
 
-## Single-cell experiments
+#### Single-cell experiments
 
 Data sets were first mapped and analyzed using the Cell Ranger analysis pipeline (10x Genomics). A custom Drosophila genome reference was made by combining the BDGP.28 reference genome assembly and Ensembl gene annotations. Custom gene definitions for each of the TaG-EM barcodes were added to the fasta genome file and .gtf gene annotation file. A Cell Ranger reference package was generated with the Cell Ranger mkref command. Subsequent single-cell data analysis was performed using the R package Seurat (Satija et al., 2015). Cells expressing less than 200 genes and genes expressed in fewer than three cells were filtered from the expression matrix. Next, percent mitochondrial reads, percent ribosomal reads, cell counts, and cell features were graphed to determine optimal filtering parameters. DecontX (Yang et al., 2020) was used to identify empty droplets, to evaluate ambient RNA contamination, and to remove empty cells and cells with high ambient RNA expression. DoubletFinder (McGinnis et al., 2019) to identify droplet multiplets and remove cells classified as multiplets. Clustree (Zappia and Oshlack, 2018) was used to visualize different clustering resolutions and to determine the optimal clustering resolution for downstream analysis. Finally, SingleR (Aran et al., 2019) was used for automated cell annotation with a gut single-cell reference from the Fly Cell Atlas (Li et al., 2022). The data set was manually annotated using the expression patterns of marker genes known to be associated with cell types of interest. To correlate TaG-EM barcodes with cell IDs in the enriched TaG-EM barcode library, a custom Python script was used (TaG-EM_barcode_Cell_barcode_correlation.py), which is available via Github: https://github.com/darylgohl/TaG-EM (copy archived at Gohl, 2024).

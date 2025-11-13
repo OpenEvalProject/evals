@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.29146.001 The recycling of neurotransmitters is essential for sustained synaptic transmission. In Drosophila, histamine recycling is required for visual synaptic transmission. Synaptic histamine is rapidly taken up by laminar glia, and is converted to carcinine. After delivered back to photoreceptors, carcinine is hydrolyzed to release histamine and β-alanine. This histamine is repackaged into synaptic vesicles, but it is unclear how the β-alanine is returned to the laminar glial cells. Here, we identified a new β-alanine transporter, which we named BalaT ( B eta- ala nine T ransporter). Null balat mutants exhibited lower levels of β-alanine, as well as less β-alanine accumulation in the retina. Moreover, BalaT is expressed and required in retinal pigment cells for maintaining visual synaptic transmission and phototaxis behavior. These results provide the first genetic evidence that retinal pigment cells play a critical role in visual neurotransmission, and suggest that a BalaT-dependent β-alanine trafficking pathway is required for histamine homeostasis and visual neurotransmission. DOI: http://dx.doi.org/10.7554/eLife.29146.001
+The recycling of neurotransmitters is essential for sustained synaptic transmission. In Drosophila, histamine recycling is required for visual synaptic transmission. Synaptic histamine is rapidly taken up by laminar glia, and is converted to carcinine. After delivered back to photoreceptors, carcinine is hydrolyzed to release histamine and β-alanine. This histamine is repackaged into synaptic vesicles, but it is unclear how the β-alanine is returned to the laminar glial cells. Here, we identified a new β-alanine transporter, which we named BalaT (Beta-alanine Transporter). Null balat mutants exhibited lower levels of β-alanine, as well as less β-alanine accumulation in the retina. Moreover, BalaT is expressed and required in retinal pigment cells for maintaining visual synaptic transmission and phototaxis behavior. These results provide the first genetic evidence that retinal pigment cells play a critical role in visual neurotransmission, and suggest that a BalaT-dependent β-alanine trafficking pathway is required for histamine homeostasis and visual neurotransmission.
 
 ## Introduction
 
@@ -33,85 +33,201 @@ Here, we identified BalaT, which is a plasma membrane transporter capable to tra
 
 ## Results
 
-## CG3790 transports β-alanine in vitro
+### CG3790 transports β-alanine in vitro
 
-In
+In Drosophila photoreceptors, carcinine is hydrolyzed to form histamine and β-alanine (True et al., 2005; Wagner et al., 2007). Histamine is then released as a neurotransmitter, taken up by laminar glial cells, and then conjugated with β-alanine to form carcinine. Although it is known that CarT transports carcinine into photoreceptors, it is unclear how β-alanine is delivered to laminar glia. To begin to understand this process, we sought to identify a β-alanine transporter in the fly visual system. We speculated that a transporter responsible for β-alanine uptake would likely be enriched in fly heads, so we examined previous RNA-seq data comparing mRNAs isolated from the head with mRNAs isolated from the body (Xu and Wang, 2016). Among ~600 putative transmembrane transporters encoded by the Drosophila genome, we identified 20 head-enriched genes (Table 1) that represented potential β-alanine transporters (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig1-v1.jpg)
 
-**Figure 1.:** (A) Screening for a β-alanine transporter. HEK293T cells transiently expressing one of ~20 head-enriched potential transporters were exposed to [3H]-β-alanine, which was added to the ECF buffer (final concentration 3.7 × 104 Bq). RFP (red fluorescent protein) was expressed as a negative control. (B) CG3790 transported β-alanine into S2 cells. Mouse GAT3 and RFP were used as positive and negative control, respectively. The results given are the mean values ± S.D. of four experiments. (C–D) CG3790 was expressed at high levels in the compound eye. (C) Relative RNA transcript levels (RT-PCR experiments) show that CG3790 expression is enriched in wild-type (w) heads compared with wild-type bodies or 1118GMR-hid heads. (D) Relative CG3790 transcript levels from wild-type (wt) bodies, wt heads, and GMR-hid heads (gpdh served as an internal control). RNA levels were normalized to levels in wt bodies, which were set to 1. Error bars indicate standard deviations (SDs) from three replicate experiments. Significant differences between candidates and control were determined using unpaired t-tests (**p<0.01; ns, not significant). (E) S2 cells were transiently transfected with 3xFlag-tagged CG3790, and then labeled with Flag antibody (green) and DAPI (blue). Scale bar, 2 μm.DOI: http://dx.doi.org/10.7554/eLife.29146.00310.7554/eLife.29146.004Figure 1—source data 1.Figure 1A and B.[3H]-β-alanine uptake data for screening for β-alanine transporter in HEK 293 T cells and S2 cells (.xlsx file).DOI: http://dx.doi.org/10.7554/eLife.29146.00410.7554/eLife.29146.005Figure 1—source data 2.Figure 1D.Relative CG3790 transcript levels from wild-type (wt) bodies, wt heads, and GMR-hid heads. RNA levels were normalized to levels in wt bodies, which were set to 1 (.xlsx file).DOI: http://dx.doi.org/10.7554/eLife.29146.005
+**Figure 1.:** (A) Screening for a β-alanine transporter. HEK293T cells transiently expressing one of ~20 head-enriched potential transporters were exposed to [3H]-β-alanine, which was added to the ECF buffer (final concentration 3.7 × 104 Bq). RFP (red fluorescent protein) was expressed as a negative control. (B) CG3790 transported β-alanine into S2 cells. Mouse GAT3 and RFP were used as positive and negative control, respectively. The results given are the mean values ± S.D. of four experiments. (C–D) CG3790 was expressed at high levels in the compound eye. (C) Relative RNA transcript levels (RT-PCR experiments) show that CG3790 expression is enriched in wild-type (w1118) heads compared with wild-type bodies or GMR-hid heads. (D) Relative CG3790 transcript levels from wild-type (wt) bodies, wt heads, and GMR-hid heads (gpdh served as an internal control). RNA levels were normalized to levels in wt bodies, which were set to 1. Error bars indicate standard deviations (SDs) from three replicate experiments. Significant differences between candidates and control were determined using unpaired t-tests (**p<0.01; ns, not significant). (E) S2 cells were transiently transfected with 3xFlag-tagged CG3790, and then labeled with Flag antibody (green) and DAPI (blue). Scale bar, 2 μm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Alignment of the Drosophila CG3790 amino acid sequence with mouse OCT3 (mOCT3) and human OCT3 (hOCT3). Identical residues, found in at least two proteins, are enclosed in green boxes. CG3790 is 29% identical to mOCT3% and 30% identical to hOCT3. The transmembrane domains are indicated by solid lines above the sequences. The running tally of amino acids is indicated to the right.DOI: http://dx.doi.org/10.7554/eLife.29146.006
+**Figure 1—figure supplement 1.:** Alignment of the Drosophila CG3790 amino acid sequence with mouse OCT3 (mOCT3) and human OCT3 (hOCT3). Identical residues, found in at least two proteins, are enclosed in green boxes. CG3790 is 29% identical to mOCT3% and 30% identical to hOCT3. The transmembrane domains are indicated by solid lines above the sequences. The running tally of amino acids is indicated to the right.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** (A) CG3790 did not transport GABA into S2 cells. Mouse GAT3 was used as a positive control, and RFP was used as a negative control. (B) CG3790 did not exhibit histamine transporting activity in S2 cells. Human OCT2 and RFP were used as positive and negative control, respectively. [3H]-GABA or [3H]-histamine was added to the ECF buffer (final concentration 3.7 × 104 Bq). The results given are the mean values ± S.D. of three experiments. Significant differences were determined using unpaired t-tests (***p<0.001; ns, not significant).DOI: http://dx.doi.org/10.7554/eLife.29146.00710.7554/eLife.29146.008Figure 1—figure supplement 2—source data 1.Figure 1—figure supplement 2A and B.[3H]-histamine uptake data in S2 cells transfected mock and RFP negative control or mGAT3. [3H]-GABA uptake data in S2 cells transfected mock and RFP negative control or hOCT2 (.xlsx file).DOI: http://dx.doi.org/10.7554/eLife.29146.008
+**Figure 1—figure supplement 2.:** (A) CG3790 did not transport GABA into S2 cells. Mouse GAT3 was used as a positive control, and RFP was used as a negative control. (B) CG3790 did not exhibit histamine transporting activity in S2 cells. Human OCT2 and RFP were used as positive and negative control, respectively. [3H]-GABA or [3H]-histamine was added to the ECF buffer (final concentration 3.7 × 104 Bq). The results given are the mean values ± S.D. of three experiments. Significant differences were determined using unpaired t-tests (***p<0.001; ns, not significant).
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** GMR-hid abolished expression of ninaE and pdh.(A–B) Wild-type heads contain more transcripts for (A) ninaE and (B) pdh than wild-type bodies and GMR-hid heads (gpdh served as an internal control, and mRNA levels were normalized to wild-type body). Data is processed by logarithmic 2 and averaged from three replicate experiments. Error bars indicate SDs. Significant differences between candidates and control were determined using unpaired t-tests (***p<0.001).DOI: http://dx.doi.org/10.7554/eLife.29146.00910.7554/eLife.29146.010Figure 1—figure supplement 3—source data 1.Figure 1—figure supplement 3A and B.Relative ninaE and pdh transcript levels from wild-type (wt) bodies, wt heads, and GMR-hid heads. RNA levels were normalized to levels in wt bodies. Data is processed by logarithmic 2 (.xlsx file).DOI: http://dx.doi.org/10.7554/eLife.29146.010
+**Figure 1—figure supplement 3.:** (A–B) Wild-type heads contain more transcripts for (A) ninaE and (B) pdh than wild-type bodies and GMR-hid heads (gpdh served as an internal control, and mRNA levels were normalized to wild-type body). Data is processed by logarithmic 2 and averaged from three replicate experiments. Error bars indicate SDs. Significant differences between candidates and control were determined using unpaired t-tests (***p<0.001).
+
+**Table 1.**
+ Description of 20 head-enriched genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CG number</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CG3790</td>
+      <td></td>
+      <td>Organic anion transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG18660</td>
+      <td>Nckx30C</td>
+      <td>Sodium/potassium/calcium exchanger</td>
+    </tr>
+    <tr>
+      <td>CG2893</td>
+      <td>zydeco</td>
+      <td>Potassium-dependent sodium/calcium exchanger</td>
+    </tr>
+    <tr>
+      <td>CG7342</td>
+      <td></td>
+      <td>Organic anion transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG13610</td>
+      <td>Orct2</td>
+      <td>Organic cation transporter</td>
+    </tr>
+    <tr>
+      <td>CG6331</td>
+      <td>Orct</td>
+      <td>Organic anion transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG6126</td>
+      <td></td>
+      <td>Organic anion transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG4360</td>
+      <td></td>
+      <td>Nucleic acid binding</td>
+    </tr>
+    <tr>
+      <td>CG3159</td>
+      <td>Eaat2</td>
+      <td>L-aspartate transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG6723</td>
+      <td></td>
+      <td>Sodium/solute symporter</td>
+    </tr>
+    <tr>
+      <td>CG11010</td>
+      <td>Ent3</td>
+      <td>Nucleoside transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG13743</td>
+      <td></td>
+      <td>Amino acid transporter</td>
+    </tr>
+    <tr>
+      <td>CG10804</td>
+      <td></td>
+      <td>Neurotransmitter transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG4545</td>
+      <td>SerT</td>
+      <td>Monoamine transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG5281</td>
+      <td></td>
+      <td>EamA domain</td>
+    </tr>
+    <tr>
+      <td>CG43066</td>
+      <td></td>
+      <td>Neurotransmitter transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG7442</td>
+      <td>SLC22A</td>
+      <td>Choline transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>CG7708</td>
+      <td></td>
+      <td>Sodium/solute symporter</td>
+    </tr>
+    <tr>
+      <td>CG13248</td>
+      <td></td>
+      <td>Amino acid/polyamine transporter I</td>
+    </tr>
+    <tr>
+      <td>CG42322</td>
+      <td></td>
+      <td>Solute carrier family 35 member F3/F4</td>
+    </tr>
+  </tbody>
+</table>
 
 To determine if any of these candidate transporters could transport β-alanine, we used HEK293T cells to perform uptake assays. Each candidate was transiently expressed in HEK293T cell, and their ability to uptake [3H]-β-alanine was assessed. Only one candidate transporters, CG3790, exhibited β-alanine uptake activity (Figure 1A). The β-alanine content of CG3790-transfected cells was approximately 119 Bq/mg, which was 2.7-fold greater than measured for mock- or RFP-transfected controls (55 and 53 Bq/mg, respectively). CG3790 shares significant amino acid identity with the mammalian solute carrier family 22 (SLC22), which includes both mouse and human OCT3 (Figure 1—figure supplement 1). The β-alanine transporting activity of CG3790 was further confirmed in S2 cells (Figure 1B). Mouse GAT3 (GABA transporter type 3), which is known to efficiently take up β-alanine, exhibited levels of β-alanine transporting activity that were similar to CG3790, suggesting that CG3790 is a bona fide β-alanine transporter (Christiansen et al., 2007) (Figure 1B). We next sought to determine whether CG3790 is a specific β-alanine transporter in Drosophila. Because a histamine transporter has not yet been identified, we first asked whether CG3790 is able to transport histamine. Histamine uptake assays revealed that CG3790 does not exhibit histamine uptake activity. As a control, the human Organic Cation Transporter (OCT2), which is known to take up histamine, exhibited high levels of histamine transport activity when expressed in S2 cells (Figure 1—figure supplement 2A). Since mGAT3 is also a GABA transporter, we asked whether CG3790 is able to transport GABA. While mGAT3 efficiently transported GABA, CG3790 did not exhibit GABA transporting activity when expressed in S2 cells (Figure 1—figure supplement 2B). Moreover, when we expressed Flag-tagged CG3790 in S2 cells the Flag signal localized exclusively to the plasma membrane (Figure 1E). These data suggest that CG3790 encodes a plasma membrane β-alanine transporter.
 
 To further confirm that the CG3790 transporter functions in the fly head, we performed quantitative PCR comparing mRNAs isolated from wild-type heads, wild-type bodies, or heads from GMR-hid flies, which are devoid of eyes. As is seen with other eye-specific genes including ninaE (neither inactivation nor afterpotential E), which is expressed exclusively in photoreceptor cells (O'Tousa et al., 1985), and pdh (pigment-cell-enriched dehydrogenase), which is expressed exclusively in retinal pigment cells) (Wang et al., 2010), CG3790 mRNA transcripts were absent from fly bodies (Figure 1C–D and Figure 1—figure supplement 3A–B). Ectopic expression of the pre-apoptotic gene hid via the glass multiple reporter (GMR) promoter results in eye ablation (Grether et al., 1995; Hay et al., 1994). As such, ninaE and pdh expression is greatly reduced in the heads of GMR-hid flies. Similarly, CG3790 transcript levels were also greatly reduced in the heads of GMR-hid flies, suggesting that CG3790 is primarily expressed in the fly compound eye (Figure 1C–D and Figure 1—figure supplement 2A–B). These findings indicate that CG3790 encodes a retina-enriched plasma membrane β-alanine transporter. We therefore named this gene balat (beta-alanine transporter).
 
-## BalaT is required for visual synaptic transmission
+### BalaT is required for visual synaptic transmission
 
-To study the function of BalaT in visual perception, we generated two null mutations in the
+To study the function of BalaT in visual perception, we generated two null mutations in the balat gene by deleting ~900 bp and ~660 bp genomic fragments using the CRISPR-associated single-guide RNA system (Cas9) (Figure 2A). PCR amplification of the balat locus from genomic DNA isolated from wild-type, balat1, and balat2 flies revealed a truncated balat locus in the mutant samples. Thus, the balat locus is disrupted in balat1 and balat2 flies (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig2-v1.jpg)
 
-**Figure 2.:** balat disrupt photoreceptor cell synaptic transmission and visual behavior.(A) Schematic for balat knock-out by sgRNA targeting. The organization of the balat locus and the expected structures of balta and 1balat alleles are shown. Boxes represent exons with the coding region between ATG and TAG. The sgRNA1 and sgRNA2 primer pair was used to generate the 2balat allele; the sgRNA2 and sgRNA3 primer pair was used to generate the 1balat allele. Arrows indicate the primers used for genomic PCR. (2B) PCR products obtained from balat and 1balat mutants show successful gene deletions. (2C) ERG recordings from: wild-type (w), 1118balat, 1balat, 2balat, 1;GMR-balaTbalat and 1;pdh-balaT, balat2;ninaE-balaTw flies. Young flies (<3 days after eclosion) were dark adapted for 1 min and subsequently exposed to a 5 s pulse of orange light. ON and OFF transients are indicated by arrows. All flies contained the +; balat1w mutation except for the 1118w flies. (+; balat1D) Quantitative analysis of the amplitudes of ERG OFF transients shown in C. (E) Phototaxis behaviors of wt, balat, 1 balat1;GMR-balaTbalat and 1;pdh-balaTbalat flies. Significant differences between mutant and wild-type flies were determined using unpaired t-tests (***p<0.001; ns, not significant).2;ninaE-balaTDOI: http://dx.doi.org/10.7554/eLife.29146.01210.7554/eLife.29146.013Figure 2—source data 1.Figure 2D and E.Quantitative analysis of the amplitudes of ERG OFF transients about wild-type (w), 1118balat, 1balat, 2balat, 1;GMR-balaTbalat and 1;pdh-balaT, balat2;ninaE-balaTw flies. Quantitative of phototaxis behaviors of wt, balat1 balat1;GMR-balaT, balat1;pdh-balaT and balat2;ninaE-balaT flies (.xlsx file).+; balat1DOI: http://dx.doi.org/10.7554/eLife.29146.013
+**Figure 2.:** (A) Schematic for balat knock-out by sgRNA targeting. The organization of the balat locus and the expected structures of balta1 and balat2 alleles are shown. Boxes represent exons with the coding region between ATG and TAG. The sgRNA1 and sgRNA2 primer pair was used to generate the balat1 allele; the sgRNA2 and sgRNA3 primer pair was used to generate the balat2 allele. Arrows indicate the primers used for genomic PCR. (B) PCR products obtained from balat1 and balat2 mutants show successful gene deletions. (C) ERG recordings from: wild-type (w1118), balat1, balat2, balat1;GMR-balaT, balat1;pdh-balaT, balat2;ninaE-balaT and w+; balat1 flies. Young flies (<3 days after eclosion) were dark adapted for 1 min and subsequently exposed to a 5 s pulse of orange light. ON and OFF transients are indicated by arrows. All flies contained the w1118 mutation except for the w+; balat1 flies. (D) Quantitative analysis of the amplitudes of ERG OFF transients shown in C. (E) Phototaxis behaviors of wt, balat1 balat1;GMR-balaT, balat1;pdh-balaT and balat2;ninaE-balaT flies. Significant differences between mutant and wild-type flies were determined using unpaired t-tests (***p<0.001; ns, not significant).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Percentage of flies of indicated genotypes that have ON transients were quantified. The ERG profiles from at least 7 flies of each genotype were scored.DOI: http://dx.doi.org/10.7554/eLife.29146.014
+**Figure 2—figure supplement 1.:** Percentage of flies of indicated genotypes that have ON transients were quantified. The ERG profiles from at least 7 flies of each genotype were scored.
 
 These balat mutations did not cause lethality or other visible phenotypes, so we performed electroretinogram (ERG) recordings to determine whether BalaT functions in phototransduction. Exposing wild-type flies to light results in two primary components in the ERG recording, including a sustained corneal negative response resulting from photoreceptor depolarization, and ‘on’ and ‘off’ transients resulting from postsynaptic neuronal activity in the optic lamina (downstream of the photoreceptors) (Wang and Montell, 2007) (Figure 2C). Mutations in genes that disrupt histamine recycling exhibit reduced ‘on’ and ‘off’ transients, reflecting defective synaptic transmission of photoreceptors (Xu et al., 2015). Similarly, both balat1 and balat2 mutant flies lacked ERG ‘on’ and ‘off’ transients, indicating that BalaT is required for visual synaptic transmission (Figure 2C and D, and Figure 2—figure supplement 1). To confirm that the loss of ERG transients resulted from mutation of the balat locus, we generated a GMR-balat transgenic fly, which expresses BalaT in the compound eyes under control of the GMR promoter. The GMR-balat transgene completely rescued the ‘on’ and ‘off’ transients when crossed into the balat1 mutant flies (Figure 2C). Mutations in the white gene, which encodes an ATP-binding cassette (ABC) transporter, has been reported to affect histamine levels (Borycz et al., 2008). To make sure that the white mutation was not affecting ERG phenotypes exhibited by balat mutants, we crossed the balat mutation into a wild-type white (w+) background and found that ‘on’ and ‘off’ transients were still absent in this w+; balat1 fly (Figure 2C and D).
 
 Disrupting visual transmission results in blindness, which is reflected in the loss of phototaxis behavior (Behnia and Desplan, 2015). We next used this behavioral assay to assess the ability of balat mutant flies to see. Consistent with the loss of ‘on’ and ‘off’ transients, balat mutant flies exhibited impaired phototaxis, which was fully restored by the GMR-balat transgene (Figure 2E). These results strongly support the conclusion that BalaT is involved in visual transmission and that the loss of BalaT severely disrupts vision.
 
-## BalaT localizes to pigment cells
+### BalaT localizes to pigment cells
 
 It is not currently known how β-alanine is transported out of the photoreceptor cells once generated (along with histamine) by the Tan hydrolase. Having established that BalaT functions as a β-alanine transporter in the retina, we next sought to determine which cells express balat, with the goal of determining the site of β-alanine transport during phototransduction. As we were unable to generate a high affinity antibody against BalaT, we used CRISPR/Cas9-based genome editing to introduce mCherry into the balat locus, downstream of the native balat promoter (balat-mcherry) (Figure 3—figure supplement 1A). We identified balat-mcherry flies though PCR and RFP immunofluorescence (Figure 3—figure supplement 1B–C). Importantly, homozygous balat-mcherry flies displayed the loss of ‘on’ and ‘off’ transients, as expected, indicating the insertion of mcherry into the balat locus (Figure 3—figure supplement 1D).
 
-Photoreceptor cells and retinal pigment cells are the two major cell types in the compound eye. Staining with phalloidin and PDH labels the rhabdomere regions of photoreceptor cells and the retinal pigment cells, respectively. The mCherry signals in the
+Photoreceptor cells and retinal pigment cells are the two major cell types in the compound eye. Staining with phalloidin and PDH labels the rhabdomere regions of photoreceptor cells and the retinal pigment cells, respectively. The mCherry signals in the balat-mcherry retina were predominantly detected in retinal pigment cells, as it overlapped with the PDH signal (Figure 3A and B). No mCherry signaling was detected in wild-type flies (Figure 3C and D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig3-v1.jpg)
 
-**Figure 3.:** (A–B) Compound eyes from balat-mcherry flies that express mCherry (red) driven by the endogenous balat promoter were labeled for PDH (green), mCherry (red), and phalloidin (blue). High-magnification images are shown in (B). (C–D) mCherry signals were not detected in wild-type (wt) retinas. Scale bars represent 20 µm.DOI: http://dx.doi.org/10.7554/eLife.29146.015
+**Figure 3.:** (A–B) Compound eyes from balat-mcherry flies that express mCherry (red) driven by the endogenous balat promoter were labeled for PDH (green), mCherry (red), and phalloidin (blue). High-magnification images are shown in (B). (C–D) mCherry signals were not detected in wild-type (wt) retinas. Scale bars represent 20 µm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** balat-mcherry flies.(A) Schematics for generating balat-mcherry flies. The mcherry fluorescent protein, driven by an eye-specific 3XP3 promoter, was inserted into the balat genomic locus using CRISPR/Cas9-mediated homologous recombination. The 3XP3 promoter region was subsequently removed by Cre recombinase. PCR primers (arrows, pF and pR) were used to verify the balat-mcherry knock-in flies. (B) Images show flies with the 3XP3-mcherry reporter inserted into the balat locus (balat-3XP3-mcherry), and the balat-mcherry knock-in flies after Cre/LoxP-mediated recombination. Scale bar represents 150 µm. (C) Genomic PCR products from wild-type (w), attP2, 1118balat-3XP3-mcherry, and balat-mcherry flies show successful gene targeting. (D) ERG recordings from wild-type (w), 1118attP2, balat-3XP3-mcherry, and balat-mcherry flies. The mcherry insertion caused the loss of ‘on’ and ‘off’ transients.DOI: http://dx.doi.org/10.7554/eLife.29146.016
+**Figure 3—figure supplement 1.:** (A) Schematics for generating balat-mcherry flies. The mcherry fluorescent protein, driven by an eye-specific 3XP3 promoter, was inserted into the balat genomic locus using CRISPR/Cas9-mediated homologous recombination. The 3XP3 promoter region was subsequently removed by Cre recombinase. PCR primers (arrows, pF and pR) were used to verify the balat-mcherry knock-in flies. (B) Images show flies with the 3XP3-mcherry reporter inserted into the balat locus (balat-3XP3-mcherry), and the balat-mcherry knock-in flies after Cre/LoxP-mediated recombination. Scale bar represents 150 µm. (C) Genomic PCR products from wild-type (w1118), attP2, balat-3XP3-mcherry, and balat-mcherry flies show successful gene targeting. (D) ERG recordings from wild-type (w1118), attP2, balat-3XP3-mcherry, and balat-mcherry flies. The mcherry insertion caused the loss of ‘on’ and ‘off’ transients.
 
 Since BalaT localized to retinal pigment cells, we next asked whether BalaT is required in pigment cells by performing tissue-specific rescue experiments. We expressed BalaT specifically in photoreceptor cells using the ninaE promoter (ninaE-balat) or in retinal pigment cells using the pdh promoter (pdh-balat). The pdh-balat transgene fully restored ‘on’ and ‘off’ transients and phototaxic behaviors when crossed into balat1 mutant flies, whereas expressing BalaT in photoreceptor cells failed to rescue these phenotypes (Figure 2C–E, and Figure 2—figure supplement 1). These results indicate that BalaT functions in pigment cells, and that pigment cells may play an important role in transporting β-alanine from photoreceptors to epithelia glial cells in the optic lamina.
 
-## Inx1 and Inx3 are required for visual synaptic transmission
+### Inx1 and Inx3 are required for visual synaptic transmission
 
-If β-alanine is transported into pigment cell by BalaT, it must then be transported from the pigment cells to the laminar glial cells, where it can be conjugated with histamine to form carcinine. It has recently been reported that a multicellular network involving laminar glia and pigment cells mediates long-distance recycling of histamine metabolites (
+If β-alanine is transported into pigment cell by BalaT, it must then be transported from the pigment cells to the laminar glial cells, where it can be conjugated with histamine to form carcinine. It has recently been reported that a multicellular network involving laminar glia and pigment cells mediates long-distance recycling of histamine metabolites (Chaturvedi et al., 2014). Since this transport relies on the gap junction protein Innexin 2 (Inx2) in glia, it is possible that gap junctions between pigment cells and laminar glial cells are important for β-alanine recycling, and thus for maintaining visual synaptic transmission. We first asked whether disruption of Inx2 in the retina affects fly visual transmission. Knocking down Inx2 in the retina (inx2RNAi: GMR-gal4/UAS-inx2RNAi) did not affect ERG transients (Figure 4A and C). However, there are seven Innexins, and Inx1, Inx2, and Inx3 are all expressed in the adult head. Knockdown of Inx1 or Inx3 in the compound eye also did not disrupt the ERG ‘on’ and ‘off’ transients (Figure 4B and D). Because these Innexins may have redundant functions, we knocked down combinations of two retinal Innexins and measured the effect on fly visual transmission. Knockdown of Inx1/Inx2 or Inx2/Inx3 did not affect ERG transients, but ‘on’ and ‘off’ transients were largely reduce by Inx1/Inx3 double knockdown (Figure 4E–4G). These results indicated that the gap junction proteins Inx1 and Inx3 are required in compound eyes for visual transmission.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig4-v1.jpg)
 
-**Figure 4.:** ERG recordings of (A) control (GMR-gal4), (B) inx1 (RNAiGMR-gal4/ UAS-inx1), (RNAiC) inx2 (RNAiGMR-gal4/UAS-inx2), (RNAiD) inx3 (RNAiGMR-gal4/ UAS-inx3), (RNAiE) inx1 + RNAiinx2 (RNAiGMR-gal4/UAS-inx1), (RNAi UAS-inx1RNAiF) inx2 + RNAiinx3 (RNAiGMR-gal4/UAS-inx2), and (RNAi UAS-inx3RNAiG) inx1 + RNAiinx3 (RNAiGMR-gal4/UAS-inx1) are shown. Arrows indicate ON and OFF transients in (RNAi UAS-inx3RNAiA). Flies (~1 day after eclosion) were dark adapted for 1 min and subsequently exposed to a 5 s pulse of orange light. (H–I) β-alanine was immunolabeled in horizontal sections of heads from (H) control: CG2198 (RNAiGMR-gal4/UAS- CG2198) and (RNAiI) inx1 + RNAiinx3 (RNAiGMR-gal4/UAS-inx1) flies. Re, retina; La, lamina; Me, medulla; Lo, lobula. (RNAi UAS-inx3RNAiJ) Fluorescence intensity ratios of β-alanine signals between retina and lobula. Quantifications of all genotypes are averages of six replicate experiments. Significant differences between inx1 + RNAiinx3 and controls (RNAiCG2198 and RNAiCG9962) were determined using unpaired t-tests (***p<0.001; ns: not significant).RNAiDOI: http://dx.doi.org/10.7554/eLife.29146.01710.7554/eLife.29146.018Figure 4—source data 1.Figure 4J.Quantitative of fluorescence intensity ratios of β-alanine signals between retina and lobula of inx1 + RNAiinx3 and controls (RNAiCG2198 and RNAiCG9962) (.xlsx file).RNAiDOI: http://dx.doi.org/10.7554/eLife.29146.018
+**Figure 4.:** ERG recordings of (A) control (GMR-gal4), (B) inx1RNAi (GMR-gal4/ UAS-inx1RNAi), (C) inx2RNAi (GMR-gal4/UAS-inx2RNAi), (D) inx3RNAi (GMR-gal4/ UAS-inx3RNAi), (E) inx1RNAi + inx2RNAi (GMR-gal4/UAS-inx1RNAi UAS-inx1RNAi), (F) inx2RNAi + inx3RNAi (GMR-gal4/UAS-inx2RNAi UAS-inx3RNAi), and (G) inx1RNAi + inx3RNAi (GMR-gal4/UAS-inx1RNAi UAS-inx3RNAi) are shown. Arrows indicate ON and OFF transients in (A). Flies (~1 day after eclosion) were dark adapted for 1 min and subsequently exposed to a 5 s pulse of orange light. (H–I) β-alanine was immunolabeled in horizontal sections of heads from (H) control: CG2198RNAi (GMR-gal4/UAS- CG2198RNAi) and (I) inx1RNAi + inx3RNAi (GMR-gal4/UAS-inx1RNAi UAS-inx3RNAi) flies. Re, retina; La, lamina; Me, medulla; Lo, lobula. (J) Fluorescence intensity ratios of β-alanine signals between retina and lobula. Quantifications of all genotypes are averages of six replicate experiments. Significant differences between inx1RNAi + inx3RNAi and controls (CG2198RNAi and CG9962RNAi) were determined using unpaired t-tests (***p<0.001; ns: not significant).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Inx1 and Inx3 double RNAi flies.Levels of β-alanine in heads of control and inx1 + RNAiinx3 (RNAiGMR-gal4/UAS-inx1) flies. Error bars indicate SDs, and significant differences between mutant and wt flies were determined using unpaired t-tests (***p<0.001).RNAi UAS-inx3RNAiDOI: http://dx.doi.org/10.7554/eLife.29146.01910.7554/eLife.29146.020Figure 4—figure supplement 1—source data 1.Figure 4—figure supplement 1.Quantitative of levels of β-alanine in heads of control and inx1 + RNAiinx3 (RNAiGMR-gal4/UAS-inx1) flies (.xlsx file).RNAi UAS-inx3RNAiDOI: http://dx.doi.org/10.7554/eLife.29146.020
+**Figure 4—figure supplement 1.:** Levels of β-alanine in heads of control and inx1RNAi + inx3RNAi (GMR-gal4/UAS-inx1RNAi UAS-inx3RNAi) flies. Error bars indicate SDs, and significant differences between mutant and wt flies were determined using unpaired t-tests (***p<0.001).
 
-## β-alanine levels and distributions are altered in balat mutant flies
+### β-alanine levels and distributions are altered in balat mutant flies
 
-We next examined the in vivo levels of β-alanine, histamine, and carcinine in the heads of
+We next examined the in vivo levels of β-alanine, histamine, and carcinine in the heads of balat mutant flies via liquid chromatography-mass spectrometry (LC-MS). For cart1 mutant flies, which cannot transport carcinine into photoreceptor cells, levels of histamine and β-alanine were significantly reduced (Figure 5A and B), as has been reported (Xu et al., 2015). Similarly, levels of β-alanine and histamine were significantly reduced in balat1 mutant flies (Figure 5A and B). Reduction of histamine in balat1 mutant flies indicates defective histamine recycling and explains the disruption of photoreceptor synaptic transmission in balat1 mutants. Reductions in β-alanine may result from inadequate β-alanine storage and/or transport into pigment cells (Borycz et al., 2012). These results therefore support the hypothesis that BalaT transports β-alanine into retinal pigment cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig5-v1.jpg)
 
-**Figure 5.:** (A–B) Levels of (A) β-alanine and (B) histamine in heads of wild-type (wt, w), 1118cart, and 1balat flies are shown. Error bars indicate SDs, and significant differences between mutant and wt flies were determined using unpaired t-tests (*p<0.05; **p<0.01). (1C–E) β-alanine was immunolabeled in horizontal sections of heads from (C) wild-type (w), (1118D) balat, and (1E) balat flies. Re, retina; La, lamina; Me, medulla; Lo, lobula. (1;GMR-balatF) Fluorescence intensity ratios of β-alanine labeling between retina and lobula. Significant differences between mutant and wild-type flies were determined using unpaired t-tests (**p<0.01; ns: not significant).DOI: http://dx.doi.org/10.7554/eLife.29146.02110.7554/eLife.29146.022Figure 5—source data 1.Figure 5A and B.Quantitative of levels of β-alanine and histamine in heads of wild-type, cart, and 1balat flies (.xlsx file).1DOI: http://dx.doi.org/10.7554/eLife.29146.022
+**Figure 5.:** (A–B) Levels of (A) β-alanine and (B) histamine in heads of wild-type (wt, w1118), cart1, and balat1 flies are shown. Error bars indicate SDs, and significant differences between mutant and wt flies were determined using unpaired t-tests (*p<0.05; **p<0.01). (C–E) β-alanine was immunolabeled in horizontal sections of heads from (C) wild-type (w1118), (D) balat1, and (E) balat1;GMR-balat flies. Re, retina; La, lamina; Me, medulla; Lo, lobula. (F) Fluorescence intensity ratios of β-alanine labeling between retina and lobula. Significant differences between mutant and wild-type flies were determined using unpaired t-tests (**p<0.01; ns: not significant).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** pyd1 and balck double mutant flies.β-alanine was immunolabeled in horizontal sections of heads from (A) wild type (w) and (1118B) pyd1;b flies. Re, retina; La, lamina; Me, medulla; Lo, lobula. (1C) Fluorescence intensity ratios of β-alanine signals between retina and lobula. Quantifications of both genotypes are averages of six replicate experiments. Significant difference between wild type and pyd1;b was determined using unpaired t-tests (ns: not significant).1DOI: http://dx.doi.org/10.7554/eLife.29146.023
+**Figure 5—figure supplement 1.:** β-alanine was immunolabeled in horizontal sections of heads from (A) wild type (w1118) and (B) pyd1;b1 flies. Re, retina; La, lamina; Me, medulla; Lo, lobula. (C) Fluorescence intensity ratios of β-alanine signals between retina and lobula. Quantifications of both genotypes are averages of six replicate experiments. Significant difference between wild type and pyd1;b1 was determined using unpaired t-tests (ns: not significant).
 
 If flies are not able to transport β-alanine into pigment cells for storage, β-alanine should be specifically decreased in the retina. To test this idea, we sectioned fly heads and labeled them with an antibody against β-alanine. In wild-type flies, levels of β-alanine were highest in the retina, consistent with previous analyses (Borycz et al., 2012; Chaturvedi et al., 2014) (Figure 5C and F). In contrast, levels of β-alanine were lower in balat1 sections (for comparison, retinal signals were normalized to the β-alanine signal in the lobula) (Figure 5D and F). GMR-balat restored retinal β-alanine levels in balat1 mutants (Figure 5E and F), and rescued photoreceptor synaptic transmission. Reduced levels of β-alanine in retina lacking BalaT support the hypothesis that BalaT transports β-alanine into retinal pigment cells. We next checked if reductions in β-alanine change its distribution. In pyd1 and black double mutants (pyd1;b1), two independent metabolic pathways for de novo β-alanine biosynthesis are blocked and thus β-alanine levels are largely reduced (Borycz et al., 2012). However, in pyd1;b1 flies the pattern of β-alanine distribution is the same as seen in wild type, although immune intensity is reduced, as is the case with balat1 mutant flies (Figure 5—figure supplement 1). Therefore, pigment cells may serve as a reservoir of storedβ-alanine through a BalaT-dependent mechanism. Since Inx1/Inx3 double knockdown flies showed significant reductions in ‘on’ and ‘off’ transients, we asked whether Inx1/Inx3 is required for β-alanine trafficking. Of importance, β-alanine primarily accumulated in the retinal layer of Inx1/Inx3 double knock-down flies compared with control flies with either CG2198 or CG9962 RNAi (Figure 4H–J). Meanwhile in vivo levels of β-alanine in heads of Inx1/Inx3 double knockdown flies are significantly higher than in control flies (Figure 4—figure supplement 1). These results further support our hypothesis that Inx1/Inx3 functions to transport β-alanine back into glia cell. Taken together, we have identified a previously uncharacterized β-alanine transporter, which we have named BalaT, and shown that BalaT is responsible for β-alanine transportation and storage in pigment cells.
 
@@ -129,43 +245,43 @@ It has been suggested that the transportation of histamine metabolites within th
 
 BalaT belongs to the SLC22 family of transporters, which mediate sodium-independent transport of neurotransmitters, amino acids, and energy metabolites (Koepsell, 2013). We provide evidence that BalaT functions specifically in pigment cells as a β-alanine transporter, as BalaT mediated β-alanine transport in vitro, and is expressed predominately in retinal pigment cells. The reduced levels and altered distribution of β-alanine in the heads of balat null mutant flies supports this hypothesis. β-alanine is one of the two constituents of the naturally occurring dipeptides, carnosine and carcinine, and is considered rate-limiting for their synthesis. Both carnosine and carcinine are found in the retina where they exert protective effects. This is because they function as antioxidants, scavenging toxic activated oxygen species (Marchette et al., 2012; Pfister et al., 2011). There is evidence that several members of the SLC family of proteins that can transportβ-alanine are present in the retina, including taurine transporter (Slc6a6/TauT) (Liu et al., 1993). This suggests a conserved function for β-alanine trafficking in mammals and Drosophila.
 
-Our current work, together with previous reports, provides evidence for the formulation of a more complete histamine recycling pathway, which is critical for sustaining photoreceptor synaptic transmission (
+Our current work, together with previous reports, provides evidence for the formulation of a more complete histamine recycling pathway, which is critical for sustaining photoreceptor synaptic transmission (Figure 6). In this pathway, carcinine is synthesized in epithelial glial cells within the optic lamina, and is transported back to photoreceptor cells via the synaptic cleft. Once in the photoreceptor cells it is hydrolyzed into histamine and β-alanine by Tan, and histamine is used as neurotransmitter. Meanwhile, β-alanine is released via an unknown mechanism, and is subsequently delivered to and stored within pigment cells by BalaT. Finally, β-alanine is transported back to epithelial glia through the network of retinal pigment cells and laminar glia for histamine inactivation and carcinine synthesis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/29146/elife-29146-fig6-v1.jpg)
 
-**Figure 6.:** Histamine is initially synthesized by histidine decarboxylase (Hdc) in photoreceptor cells (PR). Upon light stimulation, PRs release histamine into the synaptic cleft. Released histamine is quickly taken up by an unknown histamine transporter into epithelial glial cells that express Ebony. In these glia, histamine is conjugated to β-alanine, which inactivates histamine and generates carcinine. Carcinine is released into the synaptic cleft and subsequently internalized, via CarT, by the PRs. After carcinine is hydrolyzed to histamine and β-alanine by Tan hydrolase in the PR, histamine is re-packaged into synaptic vesicles, whereas β-alanine is delivered to and subsequently internalized, via the BalaT transporter, by retinal pigment cells (PCs). PCs can store β-alanine or deliver β-alanine to the laminar glia cells through a gap junction network involving Inx1 and Inx3, which are expressed in PCs. In glial cells, β-alanine is conjugated to histamine, and the cycle repeats. Moreover, β-alanine can be synthesized by Black, which is an aspartate decarboxylase that is expressed together with Ebony in optic lobe glia.DOI: http://dx.doi.org/10.7554/eLife.29146.024
+**Figure 6.:** Histamine is initially synthesized by histidine decarboxylase (Hdc) in photoreceptor cells (PR). Upon light stimulation, PRs release histamine into the synaptic cleft. Released histamine is quickly taken up by an unknown histamine transporter into epithelial glial cells that express Ebony. In these glia, histamine is conjugated to β-alanine, which inactivates histamine and generates carcinine. Carcinine is released into the synaptic cleft and subsequently internalized, via CarT, by the PRs. After carcinine is hydrolyzed to histamine and β-alanine by Tan hydrolase in the PR, histamine is re-packaged into synaptic vesicles, whereas β-alanine is delivered to and subsequently internalized, via the BalaT transporter, by retinal pigment cells (PCs). PCs can store β-alanine or deliver β-alanine to the laminar glia cells through a gap junction network involving Inx1 and Inx3, which are expressed in PCs. In glial cells, β-alanine is conjugated to histamine, and the cycle repeats. Moreover, β-alanine can be synthesized by Black, which is an aspartate decarboxylase that is expressed together with Ebony in optic lobe glia.
 
 ## Materials and methods
 
-## Fly stocks
+### Fly stocks
 
 The pyd1; b1 (su(r) rC; b1), UAS-inx1RNAi, UAS-inx2RNAi, and UAS-inx3RNAi flies were provided by the Bloomington Drosophila Stock Center. The nos-Cas9 flies were obtained from Dr. J. Ni at Tsinghua University, Beijing, China. The cart1 mutant flies were maintained in the lab of Dr. T. Wang (Xu et al., 2015).
 
-## Generation of balat mutant and knock-in flies
+### Generation of balat mutant and knock-in flies
 
 The balat1 and balat2 mutations were generated using the Cas9/sgRNA system (Xu et al., 2015). Briefly, two pairs of guide RNAs targeting the balat locus were designed (sgRNA1: ATATAGTGCGCTATCTTGAG, sgRNA2: GTGTCTACGTGGGACTGAGT, sgRNA3: GAGGCCGGAACACCGGTTTT) and cloned into the U6b-sgRNA-short vector. The sgRNA1 and sgRNA2 plasmids were used to generate the balat1 mutant flies, whereas sgRNA2 and sgRNA3 were used to generate the balat2 mutant flies. The plasmids were injected into the embryos of nos-Cas9 flies, and deletions were identified by PCR using the following primers: forward primer 5’-CGCCACCAGTTCCTGGAC-3’ and reverse primer 5’-CCAGATGTAAGAGACGCAGTG-3’. The balat-mcherry knock-in flies were generated as shown in Figure S3. Briefly, sgDNA sequence was designed and cloned into the U6b-sgRNA-short vector. Two fragments from the balat locus (−1327 to −38 and +380 to+1660, where + 1 represents the transcription start site) were subcloned into a pDM19-mcherry vector such that they were separated by the 3XP3-mcherry marker. The two plasmids were co-injected into the embryos of nos-Cas9 flies, and mCherry-positive progeny were identified. By crossing these flies with hs-Cre flies, the 3XP3 promoter region was deleted. The balat-mcherry flies were finally confirmed by PCR using the following primers: forward primer 5’-AATTAATTAATGCGCACGAGAGGCC-3’ and reverse primer 5’-TTCCACGATGGTGTAGTCCTCGTTG-3’.
 
-## Generation of plasmid constructs and transgenic flies
+### Generation of plasmid constructs and transgenic flies
 
 20 head-enriched potential transporters and the balat cDNA sequences were amplified from cDNA clones obtained from DGRC (Drosophila Genomics Resource Center, Bloomington, IN, USA). The mouse GAT3 cDNA sequences were amplified from mouse liver cDNA obtained from mRNA. Their entire CDS sequences were subcloned into the pCDNA3 vector (Invitrogen, Carlsbad, USA) for expression in HEK293T cells and PIB vector (Invitrogen, Carlsbad, USA) for expression in S2 cells. To construct PninaE-balat, Ppdh-balat, and PGMR-balat, the entire coding region of balat was amplified from cDNA clones and subcloned into the pninaE-attB, ppdh-attB and pGMR-attB vectors (Xu et al., 2015). These constructs were injected into M(vas-int.Dm) ZH-2A;M(3xP3-RFP.attP) ZH-86Fb embryos, and transformants were identified on the basis of eye color. The 3xP3-RFP.attP locus was removed by crossing with P(Crey) flies. HEK 293 T cells was obtained from ATCC (RRID:CVCL_0063) and S2 cells was obtained from Drosophila Genomics Resource Center (RRID:CVCL_Z232), which have been tested for contamination of bacteria, yeast, mycoplasma and virus and has been characterized by isozyme and karyotype analysis.
 
-## Electroretinogram recordings
+### Electroretinogram recordings
 
 ERGs were recorded as described (Xu et al., 2015). Briefly, two glass microelectrodes were filled with Ringer’s solution and placed on the surfaces of the compound eye and thorax (one each surface). The source light intensity was ~2000 lux, and the light color was orange (source light was filtered using a FSR-OG550 filter). ERG signals were amplified with a Warner electrometer IE-210, and recorded with a MacLab/4 s A/D converter and the clampelx 10.2 program (Warner Instruments, Hamden, USA).
 
-## β-alanine, histamine, and GABA uptake assay
+### β-alanine, histamine, and GABA uptake assay
 
 Alanine, β-[3-3H (N)] (30–60 Ci/mM, American radiolabeled chemicals, Saint Louis, USA) uptake was measured as described (Tomi et al., 2008). Briefly, pcDNA3/RFP/BalaT or mock-transfected HEK293T cells were cultured in 12-well plates (BD-Falcon) and washed with 1 mL extracellular fluid (ECF) buffer consisting of 120 mM NaCl, 25 mM NaHCO3, 3 mM KCl,1.4 mM CaCl2,1.2 mM MgSO4, 0.4 mM K2HPO4,10 mM D-glucose, and 10 mM Hepes (pH 7.4) at 37°C. Uptake was initiated by applying 200 μL ECF buffer containing 7400 Bq [3H] β-alanine at 37°C. After 10 min, uptake was terminated by removing the solution, and cells were washed with 1 mL ice-cold ECF buffer. The cells were then solubilized in 1 N NaOH and subsequently neutralized. An aliquot was taken to measure radioactivity and protein content using a liquid scintillation counter and a DC protein assay kit (Bio-rad, USA), respectively, with bovine serum albumin as a standard. Histamine, histamine [ring, Methylenes-3H(N)] dihydrochloride, (10–40 Ci/mM, American radiolabeled chemicals, Saint Louis, USA), and GABA, 4-amino-n-[2, 3-3H]butyric acid ([3H]GABA, 30–60 Ci/mmol, PerkinElmer, Waltham, Massachusetts, USA) uptake assays were initiated by applying 200 μL ECF buffer containing 7400 Bq radiolabeled histamine or radiolabeled GABA. The mixture was incubated for 30 min. The continuous procedures are similar to the β-alanine transport assay.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Fly head sections (10 μm thick) were prepared from adults that were frozen in OCT medium (Tissue-Tek, Torrance, USA). Immunolabeling was performed on cryosections sections with rabbit anti-β-alanine (1:200, Abcam, USA; RRID:AB_305476), rat anti-RFP (1:200, Chromotek, Germany; RRID:AB_2336064), rabbit anti-PDH (1:200; RRID:AB_2570065) (Wang et al., 2010) as primary antibodies. Cells transfected with BalaT-3XFLAG were incubated with mouse monoclonal anti-Flag M2 antibody (1:200, Sigma-Aldrich, USA; RRID:AB_439685) and. Goat anti-rabbit lgG conjugated to Alexa 488 (1:500, Invitrogen, USA; RRID:AB_143165), goat anti-rat lgG conjugated to Alexa 568 (1:500, Invitrogen, USA; RRID:AB_2534121), and goat anti-mouse lgG conjugated to Alexa 647 (1:500, Jackson ImmunoResearch, USA; RRID:AB_2535805) were used as secondary antibodies. Phalloidin conjugated to Alexa 650 (1:500, Thermo scientific, Germany; RRID:AB_2532159) and DAPI (1:1000, Life Technologies, USA; RRID:AB_2307445) was used to indicate photoreceptor cells and nucleus respectively. The images were recorded with a Nikon A1-R confocal microscope.
 
-## The phototaxis assay
+### The phototaxis assay
 
 Flies were dark adapted for 15 min before phototaxis assay, as described (Xu et al., 2015). Phototaxis index was calculated by dividing the total number of flies by the number of flies that walked above the mark. At least three groups of flies were collected for each genotype and three repeats were made for each group. Each group contained ≥20 flies. Results were expressed as the mean of the mean values for the three groups.
 
-## RNA extraction and qPCR
+### RNA extraction and qPCR
 
 Total RNA was prepared from the heads of 3-day-old flies using Trizol reagent (Invitrogen, Carlsbad, USA), followed by TURBO DNA-free DNase treatment (Ambion, Austin, USA). Total cDNA was synthesized using an iScript cDNA synthesis kit (Bio-Rad Laboratories, USA). iQ SYBR green supermix was used for real-time PCR (Bio-Rad Laboratories, USA). Three different samples were collected from each genotype. The primers used for qPCR were as follows:
 
@@ -185,6 +301,6 @@ balat-fwd, 5’- AGACATCACACTGCTGCTCTAC -3’
 
 balat-rev, 5’- CCTCCTCCAAAGTCTGTGGAAG -3’
 
-## Liquid chromatography–mass spectrometry (LC-MS)
+### Liquid chromatography–mass spectrometry (LC-MS)
 
 The Dionex Ultimate 3000 UPLC system was coupled to a TSQ Quantiva Ultra triple-quadrupole mass spectrometer (Thermo Fisher, CA), equipped with a heated electrospray ionization (HESI) probe in negative ion mode. Extracts were separated by a Fusion-RP C18 column (2 × 100 mm, 2.5 μm, phenomenex). Data acquired in selected reaction monitoring (SRM) for histamine, carcinine, and β-alanine with transitions of 112/95.2, 183/95, and 90/72, respectively. Both precursor and fragment ions were collected with resolution of 0.7 FWHM. The source parameters are as follows: spray voltage: 3000 V; ion transfer tube temperature: 350°C; vaporizer temperature: 300°C; sheath gas flow rate: 40 Arb; auxiliary gas flow rate: 20 Arb; CID gas: 2.0 mTorr. Data analysis and quantification were performed using the software Xcalibur 3.0.63 (Thermo Fisher, CA). Each sample contained 50 Drosophila heads, and the mean values from five samples were calculated.

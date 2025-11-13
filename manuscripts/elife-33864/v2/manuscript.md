@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.33864.001 Microtubules control different aspects of cell polarization. In cells with a radial microtubule system, a pivotal role in setting up asymmetry is attributed to the relative positioning of the centrosome and the nucleus. Here, we show that centrosome loss had no effect on the ability of endothelial cells to polarize and move in 2D and 3D environments. In contrast, non-centrosomal microtubules stabilized by the microtubule minus-end-binding protein CAMSAP2 were required for directional migration on 2D substrates and for the establishment of polarized cell morphology in soft 3D matrices. CAMSAP2 was also important for persistent endothelial cell sprouting during in vivo zebrafish vessel development. In the absence of CAMSAP2, cell polarization in 3D could be partly rescued by centrosome depletion, indicating that in these conditions the centrosome inhibited cell polarity. We propose that CAMSAP2-protected non-centrosomal microtubules are needed for establishing cell asymmetry by enabling microtubule enrichment in a single-cell protrusion.
+Microtubules control different aspects of cell polarization. In cells with a radial microtubule system, a pivotal role in setting up asymmetry is attributed to the relative positioning of the centrosome and the nucleus. Here, we show that centrosome loss had no effect on the ability of endothelial cells to polarize and move in 2D and 3D environments. In contrast, non-centrosomal microtubules stabilized by the microtubule minus-end-binding protein CAMSAP2 were required for directional migration on 2D substrates and for the establishment of polarized cell morphology in soft 3D matrices. CAMSAP2 was also important for persistent endothelial cell sprouting during in vivo zebrafish vessel development. In the absence of CAMSAP2, cell polarization in 3D could be partly rescued by centrosome depletion, indicating that in these conditions the centrosome inhibited cell polarity. We propose that CAMSAP2-protected non-centrosomal microtubules are needed for establishing cell asymmetry by enabling microtubule enrichment in a single-cell protrusion.
 
 ## Introduction
 
@@ -34,21 +34,53 @@ Here, we used a combination of 2D and 3D endothelial models to investigate the r
 
 ## Results
 
-## The centrosome is not essential for endothelial migration and sprouting
+### The centrosome is not essential for endothelial migration and sprouting
 
 Using 2D monolayer wound healing assay, we confirmed the anterior position of the centrosome and the Golgi apparatus in migrating ECs and also extended this observation to tip ECs sprouting from a spheroid in 3D (Figure 1—figure supplement 1A). To assess the impact of centrosome removal on these processes, we took advantage of the Plk4 inhibitor centrinone, which prevents centriole duplication and leads to centrosome depletion (Wong et al., 2015). Efficient centrosome elimination was confirmed by staining with different markers of centrioles or pericentriolar material (PCM) (Figure 1—figure supplement 1B). Loss of centrosomes as focal points of MT organization was also visible by super-resolution imaging of the MT networks in fixed cells and by tracing growing EB3-GFP-positive MTs in live cells (Figure 1A,B). Importantly, the centrosomal arrangement of MTs in control cells was more obvious in EB3-GFP tracings than in MT images (Figure 1A,B), suggesting that the centrosome plays a more important role in nucleating new MTs than in anchoring their minus ends, and that even in control cells, a significant MT population is non-centrosomal. The perinuclear MT density was partly associated with the Golgi apparatus, which was mildly enlarged and less compact in centrinone-treated cells (Figure 1—figure supplement 1C). Nocodazole washout assays showed that the centrosome was the major nucleation site during MT reassembly in control cells, while this function was taken over by the Golgi membranes in centrinone-treated cells (Figure 1—figure supplement 1D). In spite of these differences, MT density, the density of growing, EB3-positive MT plus ends, parameters of MT plus end growth and the levels of different tubulin post-translational modifications were not affected (Figure 1A,B,C, Figure 1—figure supplement 2A,B), and in contrast to a centrosome excess (Godinho et al., 2014), the distribution and intensity of cell-cell adhesion markers was unchanged (Figure 1—figure supplement 2D ) (). The abundance of MT minus-end stabilizing protein CAMSAP2 was mildly but not significantly increased, and the area occupied by CAMSAP2 stretches was enlarged (Figure 1—figure supplement 2A,C). This is consistent with the enlarged Golgi, to which many CAMSAP2 stretches attach (Wu et al., 2016), and possibly with an increased stabilization of non-centrosomal MTs that compensate for the loss of the centrosomal ones.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig1-v2.jpg)
+
+**Figure 1.:** (A) Imaging of control or centrinone-treated HUVECs stained for MT (α-tubulin, cyan hot) using STED microscopy. Arrow points toward the centrosome and the plot shows the average fluorescence intensity of α-tubulin, n = 25 cells for each condition. (B,C) Analysis of MT plus ends in control or centrinone-treated HUVECs illustrated by maximum intensity projections and kymographs of EB3-GFP live fluorescence imaging (B) and EB3 staining (C). Plots show MT growth rate and catastrophe frequency, n = 96 tracks in 8 cells per condition (B), and the density of EB3 comets, n = 19 and 20 cells (C). Arrow points toward the centrosome. (D,F) Controlorcentrinone-treated HUVECs during a 2D monolayer wound healing assay (D) or during sprouting from a 3D spheroid (F) in the presence of thymidine, stained for the centriolar marker CEP135 (green), Golgi marker GM130 (red), F-actin (phalloidin, white) and DNA (DAPI, blue). Arrows point toward the wound in (D), and the dashed line indicates the position of the spheroid body in (F). Z-maximum projections of confocal images are shown on the left; the plot shows the proportion of cells with oriented Golgi, defined as being contained in the 90˚ sector facing the wound, n = 3 experiments including 158 and 132 cells in total, and quantification of the percentage of wound closure after 8 hr, n = 8 fields in two independent experiments for each condition (D) or the proportion of cellular sprouts devoid of centrosome, n = 10 spheroids representing 60 and 47 sprouts (F). (E,H) Spheroid sprouting assay with control, centrinone- (E) or CPAP siRNA-treated HUVECs (H) in the presence of thymidine. Representative micrographs are shown on the left; the plot shows quantification of the cumulative length of all sprouts per spheroid, n = 59 and 61 spheroids in four independent experiments (E) and n = 62 spheroids per condition in three independent experiments (H). (G) Staining of HUVECs transfected with control or CPAP siRNA for γ-tubulin (green), CPAP (red, left), MT (α-tubulin, red, right) and DNA (DAPI, blue). Data are shown using box plots; ns, no significant difference using Mann-Whitney U test (A,B,C, right plot in D) E or Student’s unpaired two-tailed t-test (left plot in D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Staining of HUVECs during wound healing assay (2D, wide-field fluorescence image) and spheroid sprouting (3D, Z-maximum projection of confocal fluorescence images) for the centriolar marker CEP135 (green), Golgi marker GM130 (red), F-actin (phalloidin, white) and DNA (DAPI, blue). Arrows represent the direction of migration or sprouting and the dashed line underlines the position of the wound or the spheroid body, the plot shows the proportion of cells with oriented centrosome or Golgi, defined as being contained in the 90˚ sector facing the wound in 2D and as having their centrosome positioned further away than the half of the nucleus or their Golgi jutting out more than 50% of their surface area in front of the nucleus in 3D. n = 4 and 6 experiments including 43 and 248 cells in total for 2D, and n = 13 and 19 spheroids including 70 and 112 sprouts for 3D. The data for the centrosome in control 2D cells are the same as in Figure 5—figure supplement 1A, and the Golgi in control 2D cells are pooled control data represented in Figure 1D and Figure 6—figure supplement 1D. (B) Staining for centriolar and PCM proteins (white) and DNA (DAPI, blue) in control or centrinone-treated HUVECs. Co-staining for Golgi (GM130, red) is additionally shown for CDK5RAP2. The proportion of centrosome-containing HUVECs based on each staining is indicated, n = 4 independent experiments including 156 and 134 cells (γ-tubulin), and three experiments including 94 and 77 cells (CEP135), 80 and 89 cells (NEDD1), 91 and 87 cells (Pericentrin), 92 and 93 cells (PCM1) and 84 and 90 cells (CDK5RAP2). (C) Staining of control or centrinone-treated HUVECs for α-tubulin (white) and GM130 (red). Z-maximum projections of confocal images and quantification of Golgi area (proportion of Golgi-occupied cell area) and dispersion (the standard deviation of GM130 signal normalized to the square root of the average signal) are shown, n = 35 and 33 cells in two independent experiments. (D) Staining of control or centrinone-treated HUVECs for EB1 or EB3 (green), centrosome or Golgi (γ-tubulin or GM130, red) and DNA (DAPI, blue) 1.5 min after nocodazole washout. Z-maximum projections of confocal images and quantification of the proportion of cells with visible EB1 and EB3 signal, n = 89 and 85 cells in three independent experiments, and the fold enrichment (ratio between the average EB3 intensity around Golgi mini-stacks and the average EB3 intensity in the cytoplasm) of EB3 at the Golgi are shown, n = 20 cells for each condition. Arrows point the centrosome. Data are shown using box plots and mean ±SD for B; Mann-Whitney U test (C,D-right plot), Student’s unpaired two-tailed t-test (B, D-left plot, E): ***p<0.001, *p<0.05, ns, no significant difference.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Western blots of total extract from HUVECs treated or not treated with centrinone were used to quantify the levels of α-tubulin and CAMSAP2 protein expression as well as of tubulin post-translational modifications (acetylated, detyrosinated and polyglutamylated tubulin); Ku80 antibody was used as loading control, n = 3 independent experiments and n = 4 for CAMSAP2. (B,C) Staining of control or centrinone-treated HUVECs for acetylated MT (B) or CAMSAP2 (C). Z-maximum projections of STED (B) or thresholded (C) confocal images and quantification of the average fluorescence intensity of acetylated tubulin (B), n = 25 cells for each condition, and of the proportion of CAMSAP2-occupied cell area (C), n = 20 cells for each condition, are shown. (D) VE-Cadherin and ZO-1 stainings were used for analyzing cell-cell junctions in control or centrinone-treated HUVECs. Fluorescence intensity profiles across cell-cell junctions (dashed line) were plotted (one example is shown in the top right for VE-Cadherin in grey and ZO-1 in yellow) and used to quantify the average maximum signal intensity and peak area, n = 307 and 326 junctions (VE-Cadherin) and 222 and 159 junctions (ZO-1) in five different fields. (E) Cell tracking analysis was performed on phase-contrast live images to quantify the velocity and the directionality of cell movement during wound healing assay with control or centrinone-treated HUVECs, n = 20 cells in two independent experiments for each condition. (F) The proportion of centrosome-containing HUVECs was calculated in cells transfected with control or CPAP siRNA (as in Figure 1G) based on CPAP or γ-tubulin staining in 89 and 84 cells (CPAP) and 593 and 485 cells (γ-tubulin) in three independent experiments. (G) Control or CPAP siRNA-treated HUVECs during sprouting from a 3D spheroid in the presence of thymidine stained for the centriolar marker CEP135 (green), Golgi marker GM130 (red), F-actin (phalloidin, white) and DNA (DAPI, blue). Z-maximum projections of confocal images are shown on the left, the dashed line indicates the position of the spheroid body; the plot shows the proportion of cellular sprouts devoid of centrosomes, n = 9 and 15 spheroids representing 53 and 64 sprouts. Data are shown using box plots; Mann-Whitney U test (B,C,D,E), Student’s unpaired two-tailed t-test (A, F): ***p<0.001, *p<0.05, ns, no significant difference.
+
 2D migration was not perturbed in centrinone-treated ECs (Figure 1D, Figure 1—figure supplement 2E). ECs in the migrating front still showed proper polarized organization with their Golgi positioned toward the direction of migration (Figure 1D). In a more physiological 3D context, centrosome removal did not affect the emergence of EC sprouts out of spheroids grown in collagen matrix (Figure 1E). The few remaining centrosome-containing ECs were not enriched in the sprouts, and the Golgi apparatus was properly polarized in sprouting tip ECs devoid of centrosomes (Figure 1F). To confirm these results, we depleted centrosomes by knocking down CPAP, a factor essential for centriole duplication (Kohlmaier et al., 2009; Schmidt et al., 2009; Tang et al., 2009). Also using this approach, we could efficiently remove centrosomes in the majority of cells without affecting EC polarization in 3D and sprouting from spheroids (Figure 1G,H, Figure 1—figure supplement 2F,G). These results indicate that centrosome is dispensable for endothelial polarization and movement.
 
-## CAMSAP2 is required for maintaining non-centrosomal MTs and cell migration in ECs
+### CAMSAP2 is required for maintaining non-centrosomal MTs and cell migration in ECs
 
 If the centrosomal MTs are dispensable for cell motility in ECs, their function must be taken over by non-centrosomal MTs, which in mesenchymal cells are stabilized by CAMSAP2 (Jiang et al., 2014). Interestingly, CAMSAP2 expression was transiently enhanced upon treatment with the angiogenic factor VEGF, and the length and number of CAMSAP2-decorated MT stretches was increased (Figure 2A,B, Figure 2—figure supplement 1A), suggesting that non-centrosomal MTs might play a role in angiogenesis. To test this idea, we silenced CAMSAP2 (Figure 2—figure supplement 1B), thereby generating a mostly centrosome-anchored, radial MT array (Figure 2C,D, Figure 2—figure supplement 1D). This treatment had no effect on the MT density or parameters of MT plus end dynamics (Figure 2D, Figure 2—figure supplement 1C). The abundance of post-translationally modified forms of tubulin was also unchanged (Figure 2—figure supplement 1E), showing that ECs are in this respect different from U2OS cells, where loss of detyrosinated MTs was seen upon CAMSAP2 depletion (Jiang et al., 2014). MT nucleation from the centrosome was unaffected, in line with fact that CAMSAP2 shows no colocalization with the centrosome (Figure 2—figure supplement 1F,G). Since MT properties were largely unaltered, the motility of the motor protein kinesin-3 KIF13B, which is known to play an important role in transporting VEGF receptor in ECs (Yamada et al., 2014), was also unchanged (Figure 2—figure supplement 1H).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig2-v2.jpg)
+
+**Figure 2.:** (A) Staining of CAMSAP2 (white) and α-tubulin (red) in serum-starved HUVECs before or after a 2 hr treatment with VEGF. Wide-field fluorescence images are shown. (B) Western blots of total extracts of HUVECs during a VEGF stimulation experiment using antibodies against CAMSAP2 and Ku80 as loading control. (C) Imaging of control or CAMSAP2 siRNA-transfected HUVECs stained for MTs (α-tubulin, cyan hot) using STED microscopy. Arrows point toward the centrosome. (D) Analysis of MT dynamics in control or CAMSAP2 siRNA transfected HUVECs illustrated by maximum intensity projections and kymographs of EB3-GFP live fluorescence images. Plots show MT growth rate and catastrophe frequency, n = 132 tracks in 11 cells for each condition. Arrow points toward the centrosome. (E) Overlay of end-point phase-contrast images with the result of cell tracking after 12 hr of migration in a wound healing assay in control and CAMSAP2-depleted HUVECs. The arrows point the direction of migration into the wound. Plots show quantification of wound closure area after 8 hr of migration, n = 12 fields in three independent experiments. (F,G) Spheroids of HUVECs transfected with control or two independent siRNAs against CAMSAP2 were subjected to a sprouting assay for 24 hr. Bright-field micrographs (F) were used to quantify cumulative length of all sprouts per spheroid, their number and length (G); n = 65, 57 and 38 spheroids in three independent experiments. (H,I) HUVECs were co-transfected with control or CAMSAP2 siRNAs together with a GFP-tagged siRNA-insensitive mutant of CAMSAP2 or GFP alone. Quantification of sprouting was performed using bright-field micrographs (H), n = 39, 32 and 33 spheroids in two independent experiments. Live GFP imaging using confocal microscopy (bottom, Z-maximum projection) and phalloidin staining (top, Z-maximum projection) were performed 12 hr after spheroid sprouting (I). Data are shown using box plots; Mann-Whitney U test: ***p<0.001, **p<0.01, *p<0.05, ns, no significant difference.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Plots showing the number per cell and length of CAMSAP2 stretches in HUVECs treated and stained as in Figure 2A, n = 30 cells per condition. (B) Western blots of total extracts of HUVECs 48 hr after transfection with control or two independent siRNAs against CAMSAP2 using antibodies against CAMSAP2 and Ku80 as loading control. (C) Quantification of the average fluorescence intensity of α-tubulin, n = 25 cells per condition, and of the density of EB3 comets, n = 19 and 21 cells, based on staining in control and CAMSAP2-silenced HUVECs. Data for control condition are the same as in Figure 1A and C. (D) Staining for α-tubulin (white/red) and centrosome (γ-tubulin, green) in HUVECs after transfection with control or CAMSAP2 siRNAs. Overlays for the boxed regions are shown. Heat maps corresponding to the radial and non-radial MT network were built as described in the Methods based on the orientation of the MTs in relation to the centrosome. (E) Western blots of extracts of HUVECs treated as in (D) were used to quantify the levels of α-tubulin and CAMSAP2 expression and the levels of tubulin post-translational modifications (acetylated, detyrosinated and polyglutamylated tubulin); Ku80 antibody was used as loading control, n = 3 independent experiments. (F) Staining of HUVECs treated as in (D) for EB1 or EB3 (green), centrosome or Golgi (γ-tubulin or GM130, red) and DNA (DAPI, blue) 1.5 min after nocodazole washout. Z-maximum projections of confocal images and quantification of the proportion of cells with visible EB1 and EB3 signal, n = 194 and 229 cells in three independent experiments, and the fold enrichment (ratio between the average EB1 intensity around the centrosome or EB3 intensity around Golgi mini-stacks and the average EB1 and EB3 intensity in the cytoplasm, respectively) of EB1 at the centrosome or EB3 at the Golgi are shown, n = 20 cells per condition. (G) Staining for CAMSAP2 (white/green), γ-tubulin (red) and DNA (DAPI, blue) in HUVECs. (H) KIF13B trafficking parameters after CAMSAP2 silencing. Automatic tracking of KIF13B-GFP-positive particles was used to quantify the number, speed and length of KIF13B movements, n = 20 cells in two independent experiments for each condition. Tracks resulting from automatic processing are shown. (I) Plots showing quantification of cell velocity in a wound healing assay in control and CAMSAP2-depleted HUVECs (as in Figure 2E) based on cell tracking analysis, n = 60 cells in two independent experiments. Data are shown using box plots; Mann-Whitney U test (A,C, right plot in F,H,I), Student’s unpaired two-tailed t-test (E, left plot in F): ***p<0.001, *p<0.05, ns, no significant difference.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Quantification of mitotic index, based on a phalloidin/DAPI staining, and of doubling time, based on manual counting with trypan blue, 48 hr after transfection with the indicated siRNAs in three independent experiments. (B) Spheroid sprouting assay after CAMSAP2 silencing in the presence of thymidine. Representative micrographs and quantification of sprouting from spheroids of HUVECs transfected with control or CAMSAP2 siRNAs in the presence or absence of thymidine, n = 20 spheroids for each condition. (C,D) Sprouting assays with spheroids of HUVECs transfected with control, CAMSAP2 and CAMSAP3 siRNAs, alone or in combination. Bright-field micrographs (C) were used for quantification of the sprouting in the different conditions (D), n = 74, 78, 67 and 43 spheroids in four independent experiments. (E) Western blot of total HUVEC extracts 40 hr after transfection as in panel C, using antibodies against CAMSAP3 and Ku80 as loading control. Data are shown using box plots; Mann-Whitney U test: ***p<0.001, ns, no significant difference.
+
 CAMSAP2 depletion caused a moderate but significant decrease in cell migration in 2D (Figure 2E, Figure 2—figure supplement 1I). Strikingly, the defect was much more pronounced during 3D sprouting: ECs depleted of CAMSAP2 were able to form only shorts sprouts and form long protruding structures (Figure 2F,G). This strong impairment was not related to cell viability or cell cycle progression defects (Figure 2—figure supplement 2A), and CAMSAP2 depletion in non-cycling ECs still severely affected formation of long sprouts (Figure 2—figure supplement 2B). Rescue experiments using expression of a siRNA-insensitive CAMSAP2 construct confirmed the specificity of the phenotype (Figure 2H), with ECs positive for the rescue construct populating growing sprouts in a CAMSAP2 knockdown background (Figure 2I). We also analyzed the potential involvement of CAMSAP3 and found that it was only weakly expressed in ECs and its depletion did not aggravate the phenotype of CAMSAP2 knockdown (Figure 2—figure supplement 2C–E). These data point to an important and specific role of CAMSAP2 in EC morphology in 3D.
 
-## CAMSAP2 is required for stabilization of one major cell protrusion
+### CAMSAP2 is required for stabilization of one major cell protrusion
 
 To understand the poor ability of CAMSAP2-depleted cells to form long sprouts in 3D, we set out to characterize this process in more detail. We found that early stages of sprout formation were not affected much by CAMSAP2 depletion; however, the differences gradually increased over time, as, in contrast to the control situation, spheroids silenced for CAMSAP2 were unable to increase the number and especially the length of the sprouts (Figure 3—figure supplement 1A). In the absence of CAMSAP2, endothelial spheroids are thus capable of initiating protrusions but are unable to mature them into larger and more stable, MT-populated structures (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig3-v2.jpg)
+
+**Figure 3.:** (A) Staining for F-actin (phalloidin, green), α-tubulin (red) and DNA (DAPI, blue) in control or CAMSAP2-depleted sprouting spheroids. Z-maximum projections of confocal images are shown. (B,C) Staining for F-actin (phalloidin, green) and DNA (DAPI, blue) in 3D cultured control or CAMSAP2-depleted HUVECs. Z-maximum projections of confocal fluorescence images (left) were used to create binary cell masks using ImageJ (right) that were analyzed with ImageJ; plots show the inverse of circularity (representing the ratio between cell area and perimeter) (B), the total number of protrusions per cell and the length of the longest protrusion (C) in both conditions, n = 23 and 21 cells in three independent experiments. (D) Spatial distribution of protrusions in control and CAMSAP2-silenced 3D-cultured HUVECs. Polarity index was calculated as described in Materials ans methods to measure protrusion alignment with the major cellular axis: the index is close to one when the protrusions are polarized and align with the axis of the longest protrusion (small angle) and close to 0 when protrusions are dispersed (angle close to 90˚), n = 23 and 21 cells in three independent experiments. (E) Live phase-contrast images of 3D protrusion dynamics in control and CAMSAP2-depleted HUVECs. Time is indicated in hr:min. (F) Radial resliced representation of the time-lapse described in (E). Signals indicate positions of protrusions at specific time points at specific radial positions. Plot shows quantification of the persistence of 3D protrusions formed by control or CAMSAP2-depleted HUVECs per 20 min interval. Data are mean from 12 cells in both conditions. (G) Staining for α-tubulin in 3D cultured control or CAMSAP2-depleted HUVECs. Z-maximum projections of confocal fluorescence images are shown using a color look-up table (LUT) and were used to calculate the average α-tubulin intensity ratio between the longest protrusion and the other ones, n = 18 cells for each condition. Data are shown using box plots; Mann-Whitney U test: ***p<0.001, ns, no significant difference.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Bright-field micrographs of a time-course sprouting experiment from spheroids of control or CAMSAP2-depleted HUVECs and quantification of the number and length of the sprouts, n = 20 spheroids per condition. (B) Staining of 3D single-cell HUVEC dense seeding experiment after CAMSAP2 depletion. Wide-field fluorescence images show the tubular network (phalloidin, green); NucRed live probe (red) labels nucleus. (C) Quantification of HUVEC 3D morphology after transfection with control or CAMSAP2 siRNAs. Binary cell masks were made as shown in Figure 3B and used for quantification of the cumulative length of all protrusions per cell and their average length, n = 23 and 21 cells in three independent experiments. (D) Staining for α-tubulin in 3D-seeded HUVECs transfected with control or CAMSAP2 siRNAs. Z-maximum projections of confocal images are shown after Huygens deconvolution. (E) Angular distribution of protrusions in control and CAMSAP2-silenced 3D-cultured HUVECs in relation to their length. Each protrusion was normalized to the longest protrusion for their length and angle. Polar plot shows the average relative protrusion length (represented as the radius) associated with a given direction (within a 20˚ angular sector) in control and CAMSAP2-depleted 3D-cultured HUVECs. The longest protrusions were omitted from the plot. (F) Dependence of the protrusion polarity index, described in Figure 3D and in Materials and methods, on the relative protrusion length (normalized to the longest protrusion) in control and CAMSAP2-depleted 3D-cultured HUVECs. (G) Quantification of the number of 3D protrusions formed by control or CAMSAP2-depleted HUVECs per 20 min interval as described in Figure 3F. Data are mean from 12 cells in both conditions. Data are shown using box plots; Mann-Whitney U test: ns, no significant difference.
 
 In line with this idea, when individual isolated ECs were cultured in a collagen matrix, where they extended protrusions in different directions and fused into a tubulogenic network, CAMSAP2 depletion did not prevent the establishment of a vascular plexus (Figure 3—figure supplement 1B). Protrusive activity of isolated ECs measured by their elongation (inverse of circularity) and the total and average protrusion length was not affected by CAMSAP2 knockdown (Figure 3B, Figure 3—figure supplement 1C). However, such CAMSAP2-depleted ECs bearing a centrosome-centered MT array (Figure 3—figure supplement 1D) had a different organization of protrusions. Whereas control ECs had a restricted number of protrusions, with a single predominant one, CAMSAP2-depleted ECs displayed multiple short protrusions (Figure 3B,C). In contrast to control ECs that had most of their protrusions, and especially the longest ones, aligned in one direction, CAMSAP2-depleted cells displayed protrusions that were more radially dispersed, irrespective of their length (Figure 3D, Figure 3—figure supplement 1E,F).
 
@@ -56,39 +88,111 @@ To understand the origin of this phenotype, we performed live recording of protr
 
 We hypothesized that in CAMSAP2-depleted cells with a radial MT array, MTs cannot become enriched in one protrusion, and found that this indeed was the case (Figure 3G), strongly suggesting that non-centrosomal MTs stabilize polarized elongated cell morphology by enabling MT enrichment in a single protrusion.
 
-## CAMSAP2 depletion phenotypes cannot be explained by changes in the actin cytoskeleton and cell contractility
+### CAMSAP2 depletion phenotypes cannot be explained by changes in the actin cytoskeleton and cell contractility
 
 The reduced protrusion persistence prompted us to examine the organization of acto-myosin cytoskeleton after CAMSAP2 silencing. In 2D-cultured CAMSAP2-depleted cells, we observed a modest increase in the density of F-actin cytoskeleton (Figure 4A), due to the presence of more stress fibers (Figure 4—figure supplement 1A). Beside this small difference, cells established normal polarized front-rear morphologies, as revealed by the presence of actin-enriched lamellipodia and myosin IIb-positive retracting cell edges, and the distribution patterns of active Rho and Rac1, as well as cell adhesion markers were normal (Figure 4A,B, Figure 4—figure supplement 1A,B,C). Importantly, actin cytoskeleton was unchanged in 3D environment in the absence of CAMSAP2, displaying intense peripheral cortical accumulation as in control situation (Figure 4C, Figure 4—figure supplement 1D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig4-v2.jpg)
+
+**Figure 4.:** (A) Imaging of control or CAMSAP2 siRNA-treated HUVECs during 2D wound healing assay stained for F-actin (phalloidin, cyan hot) using STED microscopy. The plot shows the average fluorescence intensity of phalloidin, n = 30 cells in two independent experiments for each condition. (B) HUVECs during 2D wound healing assay stained for Myosin IIb (MYOIIb, retracting edge marker, green), F-actin (phalloidin, red) and DNA (DAPI, blue). Z-maximum projections of confocal images are shown; the arrow points toward the wound and asterisks show disoriented HUVECs. (C) Staining for F-actin (phalloidin, white) in 3D cultured control or CAMSAP2-depleted HUVECs. Z-maximum projections of confocal fluorescence images are shown and fluorescence intensity profiles across protrusions were used to quantify the maximum intensity of phalloidin in protrusion (plot) as described in the Materials and methods, n = 40 cells in three independent experiments per condition. (D) Spatial distribution of protrusions in control and CAMSAP2-silenced 3D-cultured HUVECs treated or not treated with the contractility inhibitors Y-27632 or blebbistatin. Polarity index was calculated as described in Materials and methods to measure protrusion alignment with the major cellular axis, n = 26 cells in two independent experiments, except for blebbistatin treatment, where n = 20 cells. (E) Radial resliced representation of 3D protrusion dynamics in control and CAMSAP2-depleted HUVECs treated or not with Y-27632. Signals indicate positions of protrusions at specific time points at specific radial positions. Plot shows quantification of the persistence of the 3D protrusions. Data are mean from 12 cells in two independent experiments in both conditions. (F) Spheroids of HUVECs treated as in (D) were subjected to a sprouting assay for 24 hr. Bright-field micrographs are shown and were used to quantify cumulative length of all sprouts per spheroid; n = 43, 45, 47, 54, 51 and 54 spheroids in two independent experiments. Data are shown using box plots; Mann-Whitney U test: ***p<0.001, *p<0.05, ns, no significant difference.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Phalloidin stainings of control or CAMSAP2 siRNA-treated HUVECs shown in Figure 4A were used to quantify the width of the lamellipodia, the percentage of the leading edge covered with lamellipodia ; the cumulative length of stress fibers per cell area and their width was measured using an ImageJ plugin for automatic line traces as described in the Materials and methods, n = 30 cells in two independent experiments for each condition. (B) Ratiometric representation of RhoA and Rac1 biosensor activation from FRET imaging of control or CAMSAP2 siRNA-transfected migrating HUVECs; the average FRET ratio is indicated, n = 25 (RhoA) and 24 cells (Rac1) per condition. (C) VE-Cadherin and ZO-1 stainings were used for analyzing cell-cell junctions in control or CAMSAP2 siRNA-transfected HUVECs. Fluorescence intensity profiles across cell-cell junctions (dashed line) were plotted (one example is shown for VE-Cadherin in grey and ZO-1 in yellow) and used to quantify the average maximum signal intensity and peak area, n = 272 and 325 junctions (VE-Cadherin) and 110 and 112 junctions (ZO-1) in five different fields. (D) Phalloidin stainings of control or CAMSAP2 siRNA-treated HUVECs in 3D shown in Figure 4C were used to plot fluorescence intensity profiles across protrusions to quantify the peak area as described in the Materials and methods, n = 40 cells in three independent experiments per condition. Data are shown using box plots; Mann-Whitney U test: *p<0.05, ns, no significant difference.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–E) Staining for F-actin in 3D cultured control or CAMSAP2-inactivated HUVECs treated or not treated with Y-27632 or blebbistatin (as in Figure 4D) were used to create binary cell masks using ImageJ (A) that were analyzed with ImageJ; plots show the cumulative length of all protrusions per cell (B), the length of the longest protrusion (C), the average length of protrusion (D) and total number of protrusions per cell (E) in each condition, n = 26 cells in two independent experiments, except for blebbistatin treatment, where n = 20 cells. (F) Quantification of the number and length of the sprouts formed by spheroids of HUVECs treated as in Figure 4F; n = 43, 45, 47, 54, 51 and 54 spheroids in two independent experiments. Data are shown using box plots; Mann-Whitney U test: ***p<0.001, **p>0.01, *p<0.05, ns, no significant difference.
+
 Myosin II-dependent cell contractility has been shown to inhibit protrusion formation in ECs (Fischer et al., 2009). In agreement with these observations, inhibition of myosin II either directly, with blebbistatin, or indirectly, with the inhibitor of the kinase ROCK (Y-27632), led to longer 3D protrusions in each condition (Figure 4—figure supplement 2A–D). However, in the absence of CAMSAP2, these treatments did not rescue the polarized elongated morphology typical of control ECs (Figure 4D, Figure 4—figure supplement 2A,C,E). Moreover, although decreased contractility facilitated protrusion persistence, CAMSAP2 depletion still severely reduced protrusion stability in the presence of the ROCK inhibitor (Figure 4E). Similarly, treatment of spheroids with the ROCK inhibitor or blebbistatin induced more and longer sprouts but failed to rescue sprouting impairment in CAMSAP2-depleted cells (Figure 4F, Figure 4—figure supplement 2F). Altogether, these data demonstrate that changes in acto-myosin cytoskeleton or contractility cannot explain the defects associated with CAMSAP2 silencing.
 
-## CAMSAP2 participates in Golgi polarization during 2D migration and 3D sprouting
+### CAMSAP2 participates in Golgi polarization during 2D migration and 3D sprouting
 
 While displaying normal front-rear morphologies, CAMSAP2-depleted cells were often unable to orient their lamellae in the direction of migration, suggesting polarity defects (Figure 4B, asterisks). Accordingly, CAMSAP2 inactivation resulted in a substantial drop in the directionality of cell movement (Figure 5A), which was associated with Golgi and centrosome mispositioning respective to the wound (Figure 5B, Figure 5—figure supplement 1A). This explained the global impairment of cell migration in spite of only a minor decrease in movement velocity (Figure 2—figure supplement 1I). Furthermore, the correlation between the positions of the Golgi and the centrosome, which always colocalized (Figure 5—figure supplement 1A), and the lamellipodia was strongly diminished after CAMSAP2 silencing, with some ECs having their leading edge in front of the Golgi and some not (Figure 5B). Forward-targeted post-Golgi vesicle trafficking, which is often considered as a key regulator of cell polarity during migration, was perturbed in the absence of CAMSAP2. Whereas in control ECs the majority of exocytotic vesicles labeled with the small GTPase Rab6 moved towards the leading edge, Rab6 trajectories were distributed more symmetrically in CAMSAP2-depleted ECs, while the other trafficking parameters were not affected (Figure 5C, Figure 5—figure supplement 1B). This likely reflected a more radial, symmetric MT array in these cells (Figure 2C, Figure 2—figure supplement 1D). Together, our 2D results argue in favor of a model where Golgi positioning does not directly dictate the orientation of the extending lamellae but is needed to stabilize directional persistence by controlling polarized trafficking.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig5-v2.jpg)
+
+**Figure 5.:** (A) Directionality of cell movement (distance between the start and end point of migration divided by the total distance travelled) during a phase-contrast time-lapse recording of a wound healing assay after CAMSAP2 knockdown, n = 60 cells in two independent experiments per condition. (B) HUVECs during 2D wound healing assay stained for CAMSAP2 (green), Golgi (GM130, red), F-actin (phalloidin, white) and DNA (DAPI, blue). Z-maximum projections of confocal images are shown; the arrow points toward the wound. Colored arrowheads show distinct cell behaviors quantified in the plot on the right, n = 70 and 79 cells in two independent experiments. Orange arrowhead, lamellipodia and the Golgi face the wound, green arrowhead, lamellipodia do not face the wound but align with the Golgi, grey arrowhead, lamellipodia and Golgi not aligned. (C) Rab6 vesicle tracks in HUVECs transfected with control or CAMSAP2 siRNA. Fluorescence time-lapse TIRF images of GFP-Rab6A at the front cell row in a wound healing assay were tracked automatically. Maximum intensity projections of the acquired signal (black, top) and tracks resulting from automatic processing (multicolor, bottom) are shown. The front of the cell was defined according to the front-rear cell morphology (the orange area in the scheme and the dashed orange line in the bottom images), and the proportion of tracks in this area was quantified, n = 12 cells per condition. (D) Staining for Golgi (GM130, red) and DNA (DAPI, blue) in control or CAMSAP2-depleted HUVEC spheroids 8 hr after 3D spheroid embedding. Upper images display additional CAMSAP2 (green) and F-actin (phalloidin, white) staining. Z-maximum projections of confocal images are shown; in the zoomed images, arrows point to the Golgi positioned in the direction of sprouting in control cells and behind the nuclei in CAMSAP2-depleted cells. Plot shows the proportion of cells at the spheroid periphery with polarized Golgi (defined as having their Golgi jutting out more than 50% of their surface area in front of the nucleus); the green and orange arrowheads point to cells containing polarized or non-polarized Golgi, respectively; n = 10 spheroids per condition. (E) Kymographs illustrating transport of exocytotic vesicles labeled with GFP-Rab6A in the major (longest) and the other (minor) protrusions in control or CAMSAP2-depleted HUVECs. The number of anterograde and retrograde tracks in the major and minor protrusion(s) was quantified for each condition and normalized by the anterograde track number in the major protrusion (plot), n = 20 and 17 cells in two independent experiments. Data are shown using box plots; Mann-Whitney U test (: ***p<0.001, **p<0.01, *p<0,05, ns, no significant difference.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Staining for γ-tubulin (green), Golgi (GM130, red) and DNA (DAPI, blue) in HUVECs transfected with control or CAMSAP2 siRNAs during a 2D wound healing assay. Z-maximum projections of confocal images are shown. The arrows point the direction of migration, the wound edge is indicated by the dashed line. The proportion of cells with oriented centrosome, defined as being contained in the 90˚ sector facing the wound, was calculated (plot), n = 4 experiments including 43 and 51 cells in total. (B) Rab6 trafficking parameters after CAMSAP2 silencing. Automatic tracking of GFP-Rab6A-labeled vesicles was used to quantify the speed, duration and length of vesicle movements (see also Figure 5C), n = 12 cells for each condition. (C) Staining for CAMSAP2 (white/green), Golgi (GM130, red), F-actin (phalloidin, white) and DNA (DAPI, blue) in HUVEC spheroid sprouting 14 hr after 3D spheroid embedding. Z-maximum projections of confocal images are shown; arrows show polarized Golgi co-localizing with CAMSAP2 stretches and the dashed line indicates the position of the spheroid body. Data are shown using box plots; Student’s unpaired two-tailed t-test (A), Mann-Whitney U test (B): *p<0.05, ns, no significant difference.
+
 Forward positioning of the Golgi, which strongly co-localized with CAMSAP2 stretches, was even more striking in 3D (Figure 5—figure supplement 1C). In this 3D setting, CAMSAP2 proved to be essential for Golgi polarization in the direction of sprouting (Figure 5D). In line with our 2D observations, while control cells displayed highly asymmetric trafficking of MT-dependent Rab6 positive exocytotic vesicles, little asymmetry in trafficking was observed between protrusions of CAMSAP2-depleted cells (Figure 5E). Consistent with the inability of centrosome-anchored MTs to redistribute to a single protrusion (Figure 3G), the failure in polarization of the secretory trafficking, which is likely necessary to generate a stable leading cell edge (Schmoranzer et al., 2003; Stehbens et al., 2014; Yadav et al., 2009) could explain the inability of CAMSAP2 depleted ECs to form mature sprouts in 3D.
 
-## Loss of non-centrosomal MTs has a more severe impact than their detachment from the Golgi in 3D but not in 2D
+### Loss of non-centrosomal MTs has a more severe impact than their detachment from the Golgi in 3D but not in 2D
 
 The above results suggest that by protecting Golgi-tethered MTs, CAMSAP2 regulates proper Golgi positioning important for EC polarization. To test this idea, we made use of our recent findings showing that two proteins, AKAP450 and myomegalin (MMG), are needed for anchoring CAMSAP2-decorated MT minus-ends to Golgi membranes (Wu et al., 2016). As expected, depletion of AKAP450 or MMG (Figure 6—figure supplement 1A) displaced CAMSAP2 stretches from the Golgi (Figure 6A, Figure 6—figure supplement 1B). This redistribution had remarkably similar consequences for 2D migration compared to CAMSAP2 silencing: ECs that had lost their Golgi-attached CAMSAP2 were unable to maintain directionality and to orient their Golgi, resulting in migration deficiency (Figure 6B, Figure 6—figure supplement 1C,D). Interestingly, the situation differed when ECs were placed in a 3D context: whereas displacing non-centrosomal CAMSAP2-bound MT ends from Golgi by depleting AKAP450 or MMG had a negative impact on endothelial sprouting abilities, its effect was significantly milder than that of CAMSAP2 depletion, when most MTs were attached to the centrosome (Figure 6C). This suggests that in 3D sprouting, non-centrosomal MTs might have a role independent of their direct Golgi association.
 
-## Centrosome removal promotes cell polarization in the absence of CAMSAP2
+![Figure 6.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig6-v2.jpg)
+
+**Figure 6.:** (A) Staining for CAMSAP2 (white, green) and Golgi (GM130, red) in HUVECs transfected with the indicated siRNA. The plot shows CAMSAP2 enrichment at the Golgi (ratio between the average CAMSAP2 intensity on top of Golgi and in the cytoplasm), n = 20 cells per condition. (B) Quantification of migratory parameters during wound healing assay in HUVECs transfected with the indicated siRNA. Bright-field micrographs were taken before and 8 hr after wounding to calculate the percentage of wound closure, n = 16 fields in two independent experiments per condition. Cell tracking analysis was performed on phase-contrast live imaging to quantify the directionality of cell movement, n = 30 cells per condition. (C) Spheroid sprouting assay in HUVECs transfected with the indicated siRNAs. Plots of the cumulative length of all sprouts per spheroid are on the right, n = 58, 62, 63 and 58 spheroids in three independent experiments. Data are shown using box plots; Mann-Whitney U test: ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Western blots of HUVEC extracts 72 hr after transfection with control, AKAP450 or MMG siRNAs using antibodies against AKAP450 or MMG, and Ku80 as loading control. (B) Normalized fluorescence intensity distribution of CAMSAP2 (green) and GM130 (red) along the cell radius originating from the Golgi center in HUVECs prepared as in (A), n = 20 cells per condition; data are mean ±SEM. (C) Overlay of end-point phase-contrast images with the results of cell tracking after 12 hr of migration in a wound healing assay in HUVECs transfected with the indicated siRNAs. Cell velocity based on cell-tracking analysis is shown in the plot, n = 30 cells for each condition. (D) Staining for CAMSAP2 (green), Golgi (GM130, red) and DNA (DAPI) in HUVECs transfected with the indicated siRNA during a 2D wound-healing assay. Z-maximum projections of confocal images are shown. The dashed line indicates the wound edge. The proportion of cells with oriented Golgi, defined as being contained in the 90˚ sector facing the wound was calculated, n = 3 independent experiments including 90 cells in total. Data are shown using box plots except in (B), where the mean ±SEM is represented; Mann-Whitney U test (C), Student’s unpaired two-tailed t-test (D): ***p<0.001, **p<0.01, *p<0.05.
+
+### Centrosome removal promotes cell polarization in the absence of CAMSAP2
 
 We reasoned that non-centrosomal MTs, which are not anchored to a single point, might redistribute more easily to create asymmetry, and therefore, centrosome removal in CAMSAP2-depleted ECs might improve their polarization potential by restoring a pool of non-centrosomal MTs. To test this idea, we silenced AKAP450, MMG and CAMSAP2 in ECs in combination with centrinone-induced centrosome depletion. Such ECs were viable and efficiently lost their centrosome, displaying a characteristic enlarged shape filled with a dense non-centrosomal MT array, even in the absence of CAMSAP2 (Figure 7A). The density of MTs and growing, EB3-positive MT ends was similar in all conditions (Figure 7B, Figure 7—figure supplement 1A). As we described in our previous study (Wu et al., 2016), acentrosomal cells showed enhanced recruitment of γ-tubulin to the Golgi, an effect that was abolished by depleting AKAP450 (Figure 7C,D). In line with these results, we observed abundant MT nucleation from the Golgi membranes after nocodazole washout in control, MMG- and CAMSAP2-depleted acentrosomal cells, while in AKAP450-depleted acentrosomal cells, MTs were nucleated from the cytoplasmic sites distinct from the Golgi membranes (Figure 7—figure supplement 1B). Such distribution of MT nucleation sites correlated with the recruitment of the pericentriolar material (PCM) marker Pericentrin to the Golgi in control, MMG- and CAMSAP2-depleted centrinone-treated cells, and its dispersion in the cytoplasm in AKAP450-depleted cells (Figure 7—figure supplement 1C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig7-v2.jpg)
+
+**Figure 7.:** (A,B) Staining for Golgi (GM130, red) and α-tubulin (white) in control and centrinone-treated HUVECs transfected with the indicated siRNAs. Z-maximum projections of confocal images (A) and average fluorescence intensity of α-tubulin (B) are shown; n = 25 cells in each condition. Histogram bars for non-treated/control siRNA, non-treated/CAMSAP2 siRNA and centrinone treated/control siRNA are the same as in Figure 1A and Figure 2—figure supplement 1C. (C) Staining for centrosome (γ-tubulin, green/white), Golgi (GM130, red) and DNA (DAPI, blue) in control and centrinone-treated HUVECs transfected with the indicated siRNAs. Z-maximum projections of confocal images are shown. (D) Enrichment index (difference between the average intensity at the Golgi and in the rest of the cell, divided by the intensity in the cytoplasm expressed in percent) was quantified as schematized at the bottom and as described in Materials and methods for γ-tubulin and α-tubulin at the Golgi in HUVECs treated and stained as in (A) and (C), n = 16, 12, 13, 14, 33, 20, 14 and 15 cells (γ-tubulin) and n = 15, 14, 13, 14, 14, 16, 14 and 15 cells (α-tubulin). (E) Spheroid sprouting assay of HUVECs in the indicated conditions in presence of thymidine. Plot shows quantification of the cumulative length of all sprouts per spheroid, n = 61, 59, 33, 35, 42, 39, 53 and 65 spheroids in three independent experiments. Data are shown using box plots; Mann-Whitney U test: **p<0.01, ***p<0.001, ns, no significant difference.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) EB3 staining in control and centrinone-treated HUVECs transfected with the indicated siRNAs was used to quantify the density of EB comets, n = 19, 20, 20, 21, 20, 20, 20, 21 cells, histogram bars for non-treated/control siRNA, non-treated/CAMSAP2 siRNA and centrinone treated/control siRNA are the same as in Figure 1C and Figure 2 – figure supplement C. (B) Staining of HUVECs treated with centrinone and transfected with the indicated siRNA for EB3 (green), Golgi (GM130, red) and DNA (DAPI, blue) 1.5 min after nocodazole washout. Z-maximum projections of confocal images and quantification of the fold enrichment (ratio between the average EB3 intensity around Golgi mini-stacks and the average EB3 intensity in the cytoplasm) of EB3 at the Golgi are shown, n = 18 cells per condition. (C) Staining for Pericentrin (white/green), GM130 (red) and DNA (DAPI, blue) in HUVECs transfected with the indicated the siRNA and treated or not treated with centrinone. Data are shown using box plots; Mann-Whitney U test: *p<0.05, ns, no significant difference.
 
 In agreement with our previous work in RPE1 cells (Wu et al., 2016), MT density was detached from the Golgi region after AKAP450 and MMG knockdown, because these proteins constitute a part of an essential link between MTs and the Golgi membranes (Figure 7A,D). In CAMSAP2-depleted ECs, centrinone treatment caused some disorganization of the Golgi, and MTs were not concentrated in the Golgi area either (Figure 7A,D).
 
 The absence of the centrosome caused no additional reduction in the sprouting ability of AKAP450 or MMG-depleted ECs organized in spheroids (Figure 7E), indicating that CAMSAP2-stabilized non-centrosomal MTs are sufficient to support formation of elongated sprouts from spheroids to some extent even when they are not attached to the Golgi. Strikingly, the removal of centrosome in the absence of CAMSAP2 significantly rescued the sprouting potential of ECs (Figure 7E). These data support the idea that non-centrosomal MTs contribute positively to EC sprouting, while the centrosome is not only dispensable, but can also play an inhibitory role when CAMSAP2 is absent.
 
-## Non-centrosomal MTs are required to create protrusion asymmetry
+### Non-centrosomal MTs are required to create protrusion asymmetry
 
 Among all the situations analyzed, CAMSAP2-depleted cells which had centrosomes were the only ones which had a symmetric, strongly radial MT system, while this property was lost when these cells were treated with centrinone (Figure 7A, Figure 8A). As described above, CAMSAP2-depleted cells with centrosomes had symmetric radial protrusions in 3D (Figure 3B–D), but, remarkably, centrosome depletion restored their ability to generate one long dominant protrusion (Figure 8B, Figure 8—figure supplement 1). MMG-depleted cells, in which non-centrosomal MTs are present but not anchored at the Golgi performed in these assays just as well as control cells irrespective of their centrosome content (Figure 8B), and we found that although CAMSAP2-decorated minus ends were not enriched at the Golgi anymore after MMG depletion, they were still concentrated in the major protrusion (Figure 8C). Therefore, Golgi attachment is not a requirement for concentrating non-centrosomal MTs in one cell protrusion in 3D. This observation likely explains why centrosome removal rescues sprouting in CAMSAP2-delpeted cells: non-centrosomal MTs can concentrate in one protrusion (Figure 8D) even though they are not linked to Golgi membranes. Taken together, our data demonstrate that the presence of non-centrosomal MTs is essential for generating cell asymmetry required for the emergence of long EC sprouts, while attachment of these MTs to the Golgi, and the likely more efficient secretion associated with such an arrangement is beneficial but not essential.
 
-## CAMSAP2 plays a role in sprouting angiogenesis in vivo
+![Figure 8.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig8-v2.jpg)
+
+**Figure 8.:** (A) Imaging of control and centrinone-treated HUVECs transfected with the indicated siRNAs and stained for MTs (α-tubulin, cyan hot) using STED microscopy. MT images were split into a radial and non-radial component based on MT orientation in relation to the centrosome or the brightest point as described in the Materials and methods. The resulting heat maps (shown using a color look-up table (LUT)) were used to quantify the proportion of the non-radial part of the MT network in a circular section around the reference point (see Materials and methods for details), n = 12 cells per condition. (B) Staining for F-actin (phalloidin, green), α-tubulin (red) and DNA (DAPI, blue) in 3D cultured HUVECs treated as in (A). Z-maximum projections of confocal fluorescence images were used to calculate polarity index as described in Materials and methods and the legend to Figure 3D, n = 44, 36, 35, 38, 36 and 39 cells. (C) Staining for CAMSAP2 (green, white), Golgi (GM130,red), F-actin (phalloidin, white) and DNA (DAPI, blue) in 3D cultured HUVECs treated with centrinone and transfected with control or MMG siRNA. Z-maximum projections of confocal fluorescence images are shown and were used to calculate CAMSAP2 signal intensity enrichment at the Golgi (ratio between the average signal in the Golgi area and in the cytoplasm) and in the longest protrusion (ratio between the average signal in the longest protrusion (box 1) and in the other protrusions), n = 16 and 18 cells. (D) Staining for α-tubulin in 3D cultured HUVECs treated as in (A). Z-maximum projections of confocal fluorescence images are shown using a grey (left) or a color look-up table (LUT) (right) and were used to calculate the average α-tubulin intensity ratio between the longest protrusion and the other ones, n = 36 cells for each conditions. Data are shown using box plots; Mann-Whitney U test: ***p<0.001, ns, no significant difference.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Quantification of 3D morphology of HUVECs treated as indicated, using ImageJ; plots show the total number of protrusions per cell and the length of the longest protrusion, n = 44, 36, 35, 38, 36 and 39 cells. See also Figure 8B. Data are shown using box plots; Mann-Whitney U test: ***p<0.001, ns, no significant difference.
+
+### CAMSAP2 plays a role in sprouting angiogenesis in vivo
 
 Finally, we addressed the role of CAMSAP2 in vivo using zebrafish as a model. Two CAMSAP2-encoding gene orthologues are present in zebrafish, camsap2a (ENSDARG00000062173) and camsap2b (ENSDARG00000059965). To analyze the role of CAMSAP2 in zebrafish vascular development, we designed splice-blocking antisense morpholinos (Figure 9—figure supplement 1A) to generate CAMSAP2-silenced embryos in the endothelial reporter line Tg(fli1a:eGFP). Embryos inactivated for CAMSAP2a or CAMSAP2b were viable, had no obvious morphological defects and normal somite development. We next focused on CAMSAP2b, because among CAMSAP2 orthologs, it showed the highest expression in the zebrafish endothelium and was associated with more severe vascular defects. In zebrafish, two waves of dorsal sprouting angiogenesis take place successively during vascular development (Ellertsdóttir et al., 2010; Isogai et al., 2003). The first one occurs at around 22 hr post fertilization (hpf) from the dorsal aorta and forms arterial intersegmental vessels. Another one takes place between 32 and 48 hpf from the cardinal vein and gives rise to venous intersegmental vessels and to parachordal lymphangioblasts, precursors of lymphangiogenic vessels (Figure 9A). After CAMSAP2b inactivation (Figure 9—figure supplement 1B), arterial intersegmental vessel formation was hardly altered, but the secondary EC sprouting was perturbed, giving rise to abnormal tortuous venous intersegmental vessels (Figure 9—figure supplement 1C). In CAMSAP2b morphants, we observed fewer secondary sprouts emerging from the cardinal vein at 34 hpf (Figure 9—figure supplement 1D). In addition, the fraction of venous sprouts that had fused with the neighboring arterial intersegmental vessel at 41 hpf was strongly reduced (Figure 9—figure supplement 1D), suggesting a defect in directional migration. Venous intersegmental vessels form after cardinal vein-derived secondary sprouts connect to primary arterial intersegmental vessels. Because secondary sprouts had difficulties to fuse with primary intersegmental vessels, we also found that the proportion of venous intersegmental vessels at 48hpf was reduced in CAMSAP2b morphants: whereas control embryos displayed a typical 50–50 arterial/venous intersegmental vessel ratio, fewer intersegmental vessels were connected to the cardinal veinand scored as venous intersegmental vessels in CAMSAP2b morphant embryos (Figure 9A,B). In addition, the alternative outcome of venous sprouting, that is parachordal lymphangioblasts formation, was alsoimpaired in the absence of CAMSAP2b, with less or aberrant parachordal lymphangioblasts in the morphants (Figure 9A, Figure 9—figure supplement 1E, asterisks). Importantly, injection of mRNA coding for human CAMSAP2 restored normal phenotypes in the majority of the morphants (Figure 9B, Figure 9—figure supplement 1F).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig9-v2.jpg)
+
+**Figure 9.:** (A) Live confocal images (Z-maximum projections) of 48 hpf Tg(Fli1ep:Lifeact-EGFP) embryos injected with control or CAMSAP2b morpholinos. Arterial and venous intersegmental vessels are indicated by red and blue arrows and highlighted with red and blue lines on the bottom pictures, respectively. Asterisks show parachordal lymphangioblast in control embryo and an abnormal venous sprout in CAMSAP2b morphant embryo. (B) Quantification of the percentage of venous intersegmental vessels in the same 10 somite-region in the trunk of embryos injected with control or CAMSAP2b morpholinos, or co-injected with CAMSAP2b morpholinos and RNA coding for a morpholino-insensitive mutant of human CAMSAP2, n = 90, 80 and 45 embryos in six, six and three independent experiments. (C) Frames (Z-maximum projections) from time-lapse confocal imaging of venous sprouting in control and CAMSAP2b-depleted embryos. Time is hr:min post-fertilization. Arrowheads point to the growing venous sprout. See also Videos 1–5. (D) Graphs representing venous sprout length over time measured during their growing period from the time-lapse imaging described in (C) in control and CAMSAP2b morphant embryos. Grey curves represent individual growing events, black dots indicate the average length at each time point ±SEM and the result of curve fitting (exponential - one phase association) in control embryos is drawn in red. (E) Graphs representing length (blue lines, ΔL in the scheme) and angle (orange lines, Δα in the scheme) variations of growing venous sprouts between each successive time point (t1 and t2 in the scheme) from the time-lapse imaging described in (C). One representative plot (out of 19 and 18) is shown for each condition. (F) Quantification of the average growth and directional persistence per growing event calculated from data described in (E) and as explained in the Materials and methods: the growth persistence was obtained by averaging the length variations (Δ Length) between two consecutive time frames per growing event whereas directional persistence was calculated as the inverse of the sinus of the angle variation (its absolute value) for each frame and then averaged per growth event, n = 19 and 18 sprouts in three independent experiments. (G) Model of the impact of MT array organization on endothelial polarization and movement in 2D and 3D. Control ECs contain three distinct populations of MT, the centrosomal MTs (grey), the non-centrosomal, Golgi-anchored MTs (burgundy) and the non-centrosomal non-Golgi-anchored MTs (dark green). The two non-centrosomal MT populations are stabilized by the presence of CAMSAP2 stretches at their minus-ends (light green rectangle). During 2D migration, the presence of Golgi-originating MTs, which are lost after CAMSAP2, MMG or AKAP450 depletion, ensures proper Golgi polarization and directional migration. In the context of 3D sprouting, both non-centrosomal populations are enriched in a single protrusion, which becomes larger and more stable than the rest. Centrosomal MTs are dispensable for both processes. Data are shown using box plots except in (D): mean ±SEM; Chi square test with Yates correction (B), Mann-Whitney U test (F): ***p<0.001, *p<0.05, ns, no significant difference.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) RT-PCR analysis of Tg(fli1a:eGFP) embryos injected with a splice-blocking morpholino targeting the exon2/intron2 boundary in Camsap2b (black box), a control or no morpholino (-) with primers (arrows) allowing amplification of distinct spliced species. A shorter amplicon is expected if exon2 is skipped or partially deleted. The same amplification was done with no cDNA (H2O) or with samples that were not treated with reverse transcriptase (NoRT). (B) qPCR analysis of CAMSAP2b exon2 mRNA expression in embryos injected with control or CAMSAP2b morpholinos; results are expressed relative to the control after normalization to ELFA housekeeping gene, n = 3 different primer pairs used in triplicate. (C) Live images of 48 hpf Tg(fli1a:eGFP) embryos injected with control or CAMSAP2b morpholinos showing the trunk vasculature; arrows point to abnormal venous sprouts. (D) Quantification of the number of secondary sprouts in control or CAMSAP2b-inactivated embryos at 34 hpf, n = 64 and 56 embryos in three independent experiments. and at 41 hpf, n = 42 and 41 embryos in two independent experiments. At 41 hpf, the secondary sprouts that have fused with the neighboring primary intersegmental vessel were distinguished among the total secondary sprouts. (E) Live confocal images (Z-maximum projections) of 48 hpf Tg(Fli1ep:Lifeact-EGFP) embryos injected with control or CAMSAP2b morpholinos; asterisks show venous sprouts forming parachordal lymphangioblast in control and CAMSAP2b morphant embryo. (F) Quantification of the number of secondary sprouts at 36 hpf in embryos injected with control or CAMSAP2b morpholinos, or co-injected with CAMSAP2b morpholinos and RNA coding for a morpholino-insensitive mutant of human CAMSAP2, n = 42, 42 and 30 embryos in two independent experiments. (G) Live confocal images (Z-maximum projections) of 48 hpf Tg(Fli1ep:Lifeact-EGFP) embryos injected with control or CAMSAP2 morpholinos showing caudal vein plexus morphology. The plot shows the number of avascular loops in the caudal vein plexus in both conditions, n = 35 and 41 embryos in three independent experiments. Data are shown using box plots; Student’s paired two-tailed t-test (B), Mann-Whitney U test (D,F,G): ***p<0.001, **p<0.01, *p<0.05.
+
 To confirm these results, we performed live imaging of venous sprouting in Tg(Fli1ep:Lifeact-EGFP), a zebrafish line with F-actin labeled in the endothelium (Phng et al., 2013). In control conditions, venous ECs migrated in a highly directed manner to either fuse to the neighboring arterial intersegmental vessel or start assembling horizontal parachordal lymphangioblasts (Supplemental Videos 1 and 2, Figure 9C). In contrast, in CAMSAP2b morphants venous sprouts were very unstable and showed less directional persistence (Supplemental Videos 3 and 4, Figure 9C), sometimes resulting in the atypical fusion of two distinct sprouts with the same arterial intersegmental vessel (Supplemental Video 5). These observations were quantitatively validated by tracking the length and orientation of venous sprouts over time. In contrast to their regular extension in control animals, venous sprouts depleted of CAMSAP2b displayed a more erratic and less efficient growth (Figure 9D). This aberrant behavior is also illustrated in Figure 9E, where CAMSAP2b silencing is shown to be associated with a lot of shortening episodes (negative change in length) and a more variable sprout orientation (higher change in angle), resulting in a significantly lower growth and directional persistence (Figure 9F). Supporting a role for CAMSAP2 in venous angiogenesis, formation of the caudal vein plexus, a honeycomb-like structure arising from active ventral migration of venous ECs from the cardinal vein in the caudal region, was also perturbed in the morphants (Figure 9—figure supplement 1G). Altogether, these observations suggest a defect in guided migration during venous sprouting in CAMSAP2b-silenced zebrafish embryos, in agreement with our in vitro findings and supporting the idea that CAMSAP2 is involved in directional angiogenic sprouting in vivo.
+
+![Video 1.](https://cdn.elifesciences.org/articles/33864/elife-33864-video1.mp4.jpg)
+
+**Video 1.:** Time is hr: min post-fertilization. Z-series images in the region centered on the yolk extension end using a 2-µm-step confocal based scan covering 70 µm depth were taken every 10 min. This video shows the highly directional migration of two venous sprouts toward the adjacent arterial intersegmental vessel.
+
+![Video 2.](https://cdn.elifesciences.org/articles/33864/elife-33864-video2.mp4.jpg)
+
+**Video 2.:** Time is hr: min post-fertilization. This video was acquired as described in Video 1 and illustrates the two different outcomes of venous sprouting: arterial intersegmental vessel fusion or parachordal lymphangioblast assembly, both being directional processes.
+
+![Video 3.](https://cdn.elifesciences.org/articles/33864/elife-33864-video3.mp4.jpg)
+
+**Video 3.:** Time is hr: min post-fertilization. This video was acquired as described in Video 1 and shows two highly unstable venous sprouts.
+
+![Video 4.](https://cdn.elifesciences.org/articles/33864/elife-33864-video4.mp4.jpg)
+
+**Video 4.:** Time is hr: min post-fertilization. This video was acquired as described in Video 1 and illustrates the instability and lack of directional persistence of venous sprouting.
+
+![Video 5.](https://cdn.elifesciences.org/articles/33864/elife-33864-video5.mp4.jpg)
+
+**Video 5.:** Time is hr: min post-fertilization. This video was acquired as described in Video 1. The rightmost arterial intersegmental vessel exhibits atypical fusion with two distinct venous sprouts.
 
 ## Discussion
 
@@ -110,7 +214,374 @@ One of the most surprising findings of this study is the lack of importance of t
 
 ## Materials and methods
 
-## Antibodies, reagents and constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Dario rerio)</td>
+      <td>Tg(fli1a:eGFP)y1</td>
+      <td>Zebrafish facility GIGA institute, Liege University</td>
+      <td>ID_Zfin:ZDB-TGCONSTRCT-070117–94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(Fli1ep:Lifeact-EGFP)</td>
+      <td>Zebrafish facility GIGA institute, Liege University;Phng et al. (2013); PMID: 24046319</td>
+      <td>ID_Zfin:ZDB-TGCONSTRCT-140610–8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HUVECs</td>
+      <td>Lonza</td>
+      <td>Lonza:C2519AS</td>
+      <td>Primary endothelial cells cultured as recommended by Lonza</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CAMSAP2 (rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>Novus:NBP1-21402; RRID:AB_1659977</td>
+      <td>(1:200) for IF; (1:1000) for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CEP135 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:SAB4503685; RRID:AB_10746232</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-acetylated tubulin (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T7451; RRID:AB_609894</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-polyglutamylated tubulin (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T9822; RRID:AB_477598</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- detyrosinated tubulin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab48389; RRID:AB_869990</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-γtubulin (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T3559, RRID:AB_477575</td>
+      <td>(1:300) for IF; (1:1000) for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CDK5RAP2 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Bethyl Laboratories:A300-554A</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EB3 (rabbit polyclonal)</td>
+      <td>Stepanova et al., 2003; PMID: 12684451</td>
+      <td></td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MMG8 (rabbit polyclonal)</td>
+      <td>Wang et al. (2014); PMID: 25217626</td>
+      <td></td>
+      <td>(1:300) for IF; (1:1000) for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MYOSIN IIb (goat polyclonal)</td>
+      <td>Santa-Cruz biotechnology</td>
+      <td>Santa-Cruz biotechnology:sc-47205; RRID:AB_2297998</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PCM1 (goat polyclonal)</td>
+      <td>Santa-Cruz biotechnology</td>
+      <td>Santa-Cruz biotechnology:sc-50164; RRID:AB_2160195</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GM130 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences:610823; RRID:AB_398142</td>
+      <td>(1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pericentrin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences:611815; RRID:AB_399295</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EB1 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences:610535; RRID:AB_397892</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VE-Cadherin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences:610252; RRID:AB_2276073</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZO-1 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences:610966; RRID:AB_398279</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AKAP450 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences:611518; RRID:AB_398978</td>
+      <td>(1:300) for IF; (1:500) for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KU80 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences:611360; RRID:AB_398882</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CAMSAP3 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:SAB4200415</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-αtubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T5168; RRID:AB_477579</td>
+      <td>(1:400) for IF; (1:2000) for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-γtubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: T6557; RRID:AB_477584</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NEDD1 (mouse monoclonal)</td>
+      <td>Abnova</td>
+      <td>Abnova:H00121441-M05; RRID:AB_534956</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-αtubulin YL1/2 (rat monoclonal)</td>
+      <td>Pierce</td>
+      <td>Pierce: MA1-80017; RRID:AB_2210201</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CPAP (rabbit polyclonal)</td>
+      <td>Kohlmaier et al. (2009); PMID: 19481460</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-, 594- and 647- secondaries</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-,and 594- phalloidin</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Abberior STAR 635P- anti-mouse</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:2-0002-007-5</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Atto 647N Phalloidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:65906</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>VEGF-165</td>
+      <td>Peprotech</td>
+      <td>Peprotech:100–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA against CAMSAP2#1</td>
+      <td>Jiang et al. (2014); PMID: 24486153</td>
+      <td></td>
+      <td>5’- GAATACTTCTTGACGAGTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA against CAMSAP2#2</td>
+      <td>Jiang et al. (2014); PMID: 24486153</td>
+      <td></td>
+      <td>5’- GTACTGGATAAATAAGGTA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA against CAMSAP3</td>
+      <td>Noordstra et al. (2016); PMID: 27802168</td>
+      <td></td>
+      <td>5’-GCATTCTGGAGGAAATTGA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA against AKAP450</td>
+      <td>Hurtado et al. (2011); PMID: 21606206</td>
+      <td></td>
+      <td>5’-AUAUGAACACAGCUUAUGA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA against MMG</td>
+      <td>Roubin et al. (2013); PMID: 23430395</td>
+      <td></td>
+      <td>5’-AGAGCGAGATCATGACTTA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA against CPAP</td>
+      <td>Tang et al. (2009); PMID: 19503075</td>
+      <td></td>
+      <td>5’- AGAAUUAGCUCGAAUAGAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>morpholino against CAMSAP2b (Danio rerio)</td>
+      <td>Genetools</td>
+      <td></td>
+      <td>ATACAGATGgcaagtcttttacatc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primers for CAMSAP2b (Danio rerio) amplification</td>
+      <td>This paper</td>
+      <td></td>
+      <td>see sequences in the zebrafish experiment section</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AMAXA huvecs nucleofector kit</td>
+      <td>Lonza</td>
+      <td>Lonza:VPB-1002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti-RhoA2G</td>
+      <td>Addgene</td>
+      <td>Addgene:40179</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVIN-Rac1-bs Rac1</td>
+      <td>Bouchet et al. (2016); PMID: 27939686</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rat tail collagen I</td>
+      <td>Corning</td>
+      <td>Corning:734–1085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Centrinone</td>
+      <td>Wong et al. (2015); PMID: 25931445</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y27632</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:Y0503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Enzo Life Science</td>
+      <td>Enzo Life Science:BML-EI315-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ SOS plugin</td>
+      <td>Yao et al., 2017; PMID: 28324611</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ radiality plugin</td>
+      <td>https://github.com/ekatrukha/radialitymap</td>
+      <td></td>
+      <td>Katrukha, 2017. radialitymap. Github. https://github.com/ekatrukha/radialitymap cf1e78f</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>imageJ curve tracing plugin</td>
+      <td>https://github.com/jalmar/CurveTracing</td>
+      <td></td>
+      <td>Teeuw and Katrukha, 2015. CurveTracing. Github. https://github.com/jalmar/CurveTracing 960852 f</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies, reagents and constructs
 
 We used rabbit polyclonal antibodies against CAMSAP2 (Novus, Littleton, CO, NBP1-21402), CEP135, acetylated tubulin, polyglutamylated tubulin and γ-tubulin (Sigma-Aldrich, St Louis, MO, SAB4503685, T7451, T9822 and T3559), CDK5RAP2 (BethylLaboratories, Montgomery, TX, A300-554A), detyrosinated tubulin (Abcam, UK, ab48389), EB3 (Stepanova et al., 2003) and myomegalin isoform 8 (MMG8) (Wang et al., 2014), goat polyclonal antibodies against MYOSIN IIb and PCM1 (Santa-Cruz biotechnology, Dallas, TX, SC-47205 and SC-50164), mouse monoclonal antibodies against GM130, Pericentrin, EB1, VE-Cadherin, ZO-1, AKAP450 and KU80 (BD Biosciences, San Jose, CA, 610823, 611815, 610535, 610252, 610966, 611518 and 611360), CAMSAP3, α-tubulin and γ-tubulin (Sigma-Aldrich, SAB4200415, T5168 and T6557), NEDD1 (Abnova, Taiwan, H00121441-M05) and rat monoclonal antibodies against α-tubulin YL1/2 (Pierce, Waltham, MA, MA1-80017). Rabbit polyclonal antibody against CPAP was a kind gift of Dr. P.Gönczy (Swiss Institute for Experimental Cancer Research, EPFL, Lausanne, Switzerland).
 
@@ -126,11 +597,11 @@ The constructs coding for Rab6A and EB3 in peGFP-C2 were described elsewhere (Ma
 
 The Rho biosensor coding plasmid pLenti-RhoA2G (Addgene plasmid # 40179) is a gift of Dr.O. Pertz, (University of Basel, Switzerland) and the pLVIN-Rac1-bs Rac1 biosensor plasmid was described elsewhere (Bouchet et al., 2016).
 
-## siRNAs
+### siRNAs
 
 We used the following siRNAs purchased from Sigma siRNA CAMSAP2 #1, 5’- GAATACTTCTTGACGAGTT-3’ (Jiang et al., 2014) siRNA CAMSAP2 #2, 5’- GTACTGGATAAATAAGGTA-3’ (Jiang et al., 2014) siRNA CAMSAP3, 5’-GCATTCTGGAGGAAATTGA-3’ (Noordstra et al., 2016) siRNA AKAP450, 5’-AUAUGAACACAGCUUAUGA-3’ (Hurtado et al., 2011) siRNA MMG, 5’-AGAGCGAGATCATGACTTA-3’ (Roubin et al., 2013) siRNA CPAP, 5’- AGAAUUAGCUCGAAUAGAA-3’ (Tang et al., 2009) siRNA Luciferase control, 5’-CGTACGCGGAATACTTCGA-3’
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 Human Umbilical Vein Endothelial Cells (HUVECs) were obtained from Lonza and grown in endothelial basal medium (EGM-2) supplemented with growth supplements (SingleQuots, Lonza, Switzerland): 2% Fetal Bovine Serum (FBS), human Epidermal Growth Factor (hEGF), Vascular Endothelial Growth Factor (VEGF), R3-Insulin-like Growth Factor-1 (R3-IGF-1), Ascorbic Acid, Hydrocortisone human Fibroblast Growth Factor-Beta (hFGF-β), Heparin, Gentamicin/Amphotericin-B (GA).
 
@@ -148,29 +619,29 @@ Nocodazole-induced MT complete disassembly was performed by treating HUVECs with
 
 Y-27632 and blebbistatin were used at 10 µM and 50 µM, respectively.
 
-## Cell proliferation assays
+### Cell proliferation assays
 
 HUVECs were trypsinized 48 hr after transfection and counted by trypan blue staining for quantification of the doubling time. Alternatively, HUVECs were stained with phalloidin together with DAPI to identify mitotic cells and their percentage was calculated to determine the mitotic index.
 
-## Western blotting
+### Western blotting
 
 HUVECs total extracts were prepared in RIPA buffer (10 mM Tris-HCl pH 8, 140 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton X-100, 0,1% SDS, protease inhibitor cocktail (Complete - Sigma)).
 
 SDS-PAGE and Western blot analysis were performed according to standard procedures and developed with the Odyssey technology (Li-Cor Biosciences). Densitometric analysis was done using the ‘gel analysis’ plug-in of ImageJ.
 
-## Monolayer wound healing assay
+### Monolayer wound healing assay
 
 A confluent HUVEC monolayer was scratched using a sterile P200 tip to create a cell-free zone. Fields were photographed just after injury and 8 hr later. Quantification of cell migration was made by measuring the percentage of area recovery using ImageJ software. Alternatively, phase-contrast live imaging was performed.
 
-## 3D individual seeding assay
+### 3D individual seeding assay
 
 Single HUVECs were seeded into 2.5 mg/ml collagen pH buffered gels overlaid with complete medium supplemented with 50 ng/ml FGF, VEGF and PMA. For global vascular network assessment, 2 × 106 cells/ml were embedded for 48 hr and wide-field fluorescence imaging was done on EVOS cell imaging system (ThermoFisher Scientific, Waltham, MA). For cell morphology analyses, 0.5 × 106 cells/ml embedding experiments were submitted to phase-contrast live imaging or processed for immunostaining after 24 hours.
 
-## 3D spheroid sprouting assay
+### 3D spheroid sprouting assay
 
 The spheroid sprouting assay was performed as previously described (Martin et al., 2013): HUVEC spheroids were generated overnight by culturing endothelial cells in complete medium containing 20% methylcellulose in non-adherent 96 well plates. Harvested spheroids were then embedded into 2 mg/ml collagen pH buffered gels overlaid with complete medium supplemented with 40 ng/ml FGF and 50 ng/ml PMA. Angiogenic activity was quantified by measuring the cumulative length of the sprouts that had grown out of each spheroid, their mean number and length, 24 hr after embedding using ImageJ software on bright field images. The sprouts that were originating from secondary branching and the ones that were not in focus in the pictures were omitted from the analysis.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 For 2D (/3D) staining, HUVECs were fixed with −20°C methanol for 10 min or with 4% PFA for 12 (/20) minutes at RT, permeabilized with 0.15% Triton X-100 in phosphate buffered saline (PBS) (/PBS-glycine 0.1M) for 2 (/45) minutes, sequentially incubated 1 hr in blocking buffer 2% BSA, 0.05% Tween-20 in PBS (/2% BSA, 0.05% Tween-20, 0.2% Triton X-100, 0.05% NaN3 in PBS), 1 (/4) hr in primary antibody in blocking buffer, 1 (/1.5) hour in secondary antibody, Alexa-conjugated phalloidin and DAPI in blocking buffer. After several washes, slides (/dismounted 3D gel plugs) were air-dried and mounted in Vectashield mounting medium (Vector laboratories, Burlingame, CA).
 
@@ -178,7 +649,7 @@ For immunostaining of HUVECs submitted to wound-healing assay, samples were fixe
 
 For STED imaging, HUVECs were pre-extracted 45 s in extraction buffer (PEM80, 0.3% Triton-X100, 0.15% gluteraldehyde) at 37˚C, fixed with 4% PFA for 12 min at 37˚C, permeabilized with 0.2% Triton X-100 for 10 min at RT and then submitted to the same 2D protocol as above except the removal of Tween-20 in the buffers.
 
-## Image acquisition
+### Image acquisition
 
 Bright-field images were collected on an EVOS cell imaging system (ThermoFisher Scientific) and phase-contrast live cell imaging was performed on a Nikon Ti equipped with a perfect focus system Nikon), a super high pressure mercury lamp (C-SHG1, Nikon, Japan), a Plan Fluor DLL 10x NA 0.3 (Ph1), a CoolSNAP HQ2 CCD camera (Photometrics, Tucson, AZ), a motorized stage MS-2000-XYZ with Piezo Top Plate (ASI, Eugene, OR) and a stage top incubator (Tokai Hit, Japan) for 37°C/5% CO2 incubation. The microscope setup was controlled by Micro-manager software.
 
@@ -192,13 +663,13 @@ Live-cell TIRF imaging was performed on a Nikon Eclipse Ti-E inverted microscope
 
 Gated STED imaging was performed with Leica TCS SP8 STED 3X microscope driven by LAS X controlling software and using HC PL APO 100x/1.4 oil STED WHITE objective, 633 nm white laser for excitation and 775 nm pulsed lased for depletion. Images were acquired in 2D STED mode with vortex phase mask. Depletion laser power was equal to 90% of maximum power and an internal Leica GaAsP HyD hybrid detector with a time gate of 1 ≤ tg ≤ 8 ns was used.
 
-## FRET analysis of RhoA and Rac1 biosensors
+### FRET analysis of RhoA and Rac1 biosensors
 
-The activities of RhoA and Rac1 were measured using previously described Rho single chain biosensor (Fritz et al., 2013) and Rac1 single chain biosensor (Moshfegh et al., 2014) using ratiometric FRET between mTFP1/mCerulean and mVenus. Live FRET imaging was performed on Leica TCS SP8 microscope equipped with spectral detection using HC PL APO 100x/1.4 oil STED WHITE objective. 440 nm pulsed laser (40MHz) was used for the excitation. Two channels were acquired simultaneously using hybrid detectors in the spectral ranges of donor 450–500 nm and acceptor 515–550 nm. Images were acquired with a scanning velocity of 100 Hz and eight line average scans, a pixel size of 0,416 μm and dimensions of 256 × 256 pixels. Donor and acceptor images were convolved with a Gaussian of 1 pixel, background subtracted and FRET-index image was calculated using ImageJ macro according to the formula: FRET=IAIA+ID ,
+The activities of RhoA and Rac1 were measured using previously described Rho single chain biosensor (Fritz et al., 2013) and Rac1 single chain biosensor (Moshfegh et al., 2014) using ratiometric FRET between mTFP1/mCerulean and mVenus. Live FRET imaging was performed on Leica TCS SP8 microscope equipped with spectral detection using HC PL APO 100x/1.4 oil STED WHITE objective. 440 nm pulsed laser (40MHz) was used for the excitation. Two channels were acquired simultaneously using hybrid detectors in the spectral ranges of donor 450–500 nm and acceptor 515–550 nm. Images were acquired with a scanning velocity of 100 Hz and eight line average scans, a pixel size of 0,416 μm and dimensions of 256 × 256 pixels. Donor and acceptor images were convolved with a Gaussian of 1 pixel, background subtracted and FRET-index image was calculated using ImageJ macro according to the formula: $FRET=\frac{I_{A}}{I_{A}+I_{D}}$ ,
 
 where IA and ID correspond to the pixel intensity values of acceptor and donor images. Cell outlines were determined from the thresholded acceptor image and the average FRET-index value was calculated per cell.
 
-## Image preparation and analysis
+### Image preparation and analysis
 
 For image preparation, we used ImageJ for adjustments of levels and contrast, maximum intensity projections, stitching (with pairwise stitching plugin) and thresholding to create binary mask used for circularity measurements and particle detection.
 
@@ -208,13 +679,13 @@ EB3 comets and CAMSAP2 stretches were automatically detected on thresholded pict
 
 EB3 enrichment at the Golgi (/centrosome) was calculated as the ratio between the average EB3 intensity in a 2 µm diameter-circle drawn around Golgi mini-stacks (/centrosome) and the average EB3 intensity in the cytoplasm.
 
-Golgi dispersion was calculated as SDii in which SDi is the standard deviation of intensity and i the mean intensity.
+Golgi dispersion was calculated as $\frac{SDi}{\sqrt{i}}$ in which SDi is the standard deviation of intensity and i the mean intensity.
 
 For cell-cell junctions analysis (VE-Cadherin and ZO-1), ImageJ was used to plot intensity profiles along a manually drawn line across junctions. These profiles were then analyzed using the ‘area under curve’ function of GraphPad prism five and the maximum value of, as well as the area under the peaks were averaged.
 
 F-actin staining in 3D was analyzed similarly by plotting intensity profiles along a 10 µm long rectangle drawn 5 µm away from the cell body using ImageJ and measuring the maximum intensity and the peak area using GraphPad prism 5. For stress fiber analysis, a customized ImageJ macro was used to trace the stress fibers and measure their length and width (Teeuw and Katrukha, 2015) (available at https://github.com/jalmar/CurveTracing).
 
-All cell protrusions were manually traced with ImageJ software to quantify their number, length and spatial distribution. Polarity index was calculated as ∑1-sin⁡αi.  Li∑Li in which αi is the angle between the protrusioni and the longest protrusion and Li is the length of the protrusion. Cell masks were analyzed using the Particle Analysis plugin of ImageJ software to measure cell circularity, calculated as 4πAP2 in which A and P are the area and the perimeter of the cell mask, respectively.
+All cell protrusions were manually traced with ImageJ software to quantify their number, length and spatial distribution. Polarity index was calculated as $\frac{\sum1-sin⁡\alpha_{i}.L_{i}}{\sumL_{i}}$ in which αi is the angle between the protrusioni and the longest protrusion and Li is the length of the protrusion. Cell masks were analyzed using the Particle Analysis plugin of ImageJ software to measure cell circularity, calculated as $\frac{4\piA}{P^{2}}$ in which A and P are the area and the perimeter of the cell mask, respectively.
 
 Time-lapse imaging of monolayer wound healing assays was analyzed using Manual Tracking and Chemotaxis Tool plugin of ImageJ software to measure the velocity and directionality (the ratio between the Euclidian and accumulated distance) of cell movement.
 
@@ -222,13 +693,13 @@ Time-lapse imaging of Rab6 and KIF13B was analyzed using ImageJ software with a 
 
 Radial representations of time-lapse images of protrusion formation in 3D were made using successively the Radial Reslice, Reslice and Minimum Intensity projection functions of ImageJ software.
 
-ImageJ Radial Profile plugin was used to measure the distribution of CAMSAP2 and GM130 signal intensity along the radius in a 20 µm radius-circle originating from the Golgi center and each profile was normalized as x i-MAXxiMAXxi-MINxi.
+ImageJ Radial Profile plugin was used to measure the distribution of CAMSAP2 and GM130 signal intensity along the radius in a 20 µm radius-circle originating from the Golgi center and each profile was normalized as $\frac{xi-MAXxi}{MAXxi-MINxi}$.
 
 For Golgi enrichment index of α- or γ-tubulin, z-maximum projection of α-, γ-tubulin or GM130 channel was thresholded using ImageJ to create a binary mask to delineate the cell or the Golgi area. The difference between the average intensity within the Golgi area and in the area outside the Golgi was divided by the intensity outside the Golgi and expressed in percent.
 
 α-tubulin or CAMSAP2 enrichment in the longest protrusion was calculated as the ratio between the fluorescence intensity in a 0.75 µm diameter-circle drawn 8 µm away from the cell body or in the manually drawn area in the longest protrusion and in the other protrusions, within z-maximum projections and averaged per cell.
 
-Time-lapse imaging of zebrafish venous sprouting was analyzed by manually drawing the vector corresponding to a sprout for each time point and measuring sprout length and angle using the measure function of ImageJ software. When needed, 3D color-coded stacks were used to more easily isolate the venous sprout. When the geometry of a sprout did not fit a straight line, a segmented line was used for length measurement and the straight line between sprout extremities for the angle determination. Growth persistence of a sprout elongation event corresponds to the mean value of length variations (Δ Length) between two consecutive time frames (every 10 min), whereas directional persistence was calculated for each frame as 1sin⁡∆α, where Δα represents the angle variation between two consecutive time frames, and then averaged per growing event.
+Time-lapse imaging of zebrafish venous sprouting was analyzed by manually drawing the vector corresponding to a sprout for each time point and measuring sprout length and angle using the measure function of ImageJ software. When needed, 3D color-coded stacks were used to more easily isolate the venous sprout. When the geometry of a sprout did not fit a straight line, a segmented line was used for length measurement and the straight line between sprout extremities for the angle determination. Growth persistence of a sprout elongation event corresponds to the mean value of length variations (Δ Length) between two consecutive time frames (every 10 min), whereas directional persistence was calculated for each frame as $\frac{1}{sin⁡\Delta\alpha}$, where Δα represents the angle variation between two consecutive time frames, and then averaged per growing event.
 
 To analyze MT radiality, images of fluorescently labeled MTs were separated into radial and non-radial components using customized ImageJ macro (Katrukha, 2017). (available at https://github.com/ekatrukha/radialitymap; copy archived at https://github.com/elifesciences-publications/radialitymap). First, local orientation angle map was calculated for each pixel using OrientationJ plugin (Püspöki et al., 2016). We used ‘cubic spline gradient’ method and tensor sigma parameter of 6 pixels (0.4 µm). The new origin of coordinates was specified by selecting the centrosome position in a corresponding channel, or the brightest spot in case of centrinone treatment. Radial local orientation angle was calculated as a difference between the local orientation angle and the angle of vector drawn from the new origin of coordinates to the current pixel position. A radial map image was calculated then as an absolute value of the cosine of the radial local orientation angle at each pixel providing values between zero and one. A non-radial map image was calculated as one minus radial map. Both maps were multiplied with the original image to account for different signal intensities; the two maps illustrate separated radial and non-radial image components.
 
@@ -236,7 +707,7 @@ The radial profile of the signal in the non-radial map image (normalized to the 
 
 All mentioned ImageJ plugins have source code available and are licensed under open-source GNU GPL v3 license.
 
-## Zebrafish experiments
+### Zebrafish experiments
 
 The Tg(fli1a:eGFP)y1 and Tg(Fli1ep:Lifeact-EGFP) (Phng et al., 2013) lines were raised according to EU regulations on laboratory animals. All animal experiments were approved by the animal welfare committee of the University of Liege (protocol number 14–1556, laboratory agreement number LA 1610002). Knockdown experiments were performed by injecting embryos at the one- to two-cell stage with 6 ng of Camsap2b morpholino. The following Camsap2b-splice blocking morpholino sequence was used: ATACAGATGgcaagtcttttacatc.
 
@@ -262,6 +733,6 @@ R_ELFA, CCGCTAGCATTACCCTCC
 
 For analyses of vascular structure formation, screening was performed under a fluorescence stereomicroscope whereas confocal pictures and movies were performed on artificially dechorionated embryos between 30 and 48hpf embedded in low melting point agarose (0.8%).
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed using GraphPad Prism five or Excel and significance was assessed using Mann-Whitney U-, Chi square with Yates correction- and Student’s t- two-tailed paired and unpaired tests. The statistical test used as well as the sample size is indicated in the figure legends. All data are shown using box plots where rectangles represent the second and third quartiles, contain a line corresponding to the median value and are extended with whiskers showing the minimum and maximum, except in Figure 6—figure supplement 1B and Figure 9D, which depict mean ± SEM. In Figure 1—figure supplement 1B and Figure 4—figure supplement 1B, the mean value ± SEM is indicated within the pictures. No explicit power analysis was used to determine sample size and no masking was used for analysis.

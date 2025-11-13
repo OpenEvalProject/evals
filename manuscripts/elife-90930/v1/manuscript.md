@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/022fs9h90 Department of Psychology, Division of Cognitive Biopsychology and Methods, University of Fribourg Fribourg Switzerland
-2. https://ror.org/02k7v4d05 Department of Anesthesiology & Pain Medicine, Inselspital, Bern University Hospital, University of Bern Bern Switzerland
+1. Department of Psychology, Division of Cognitive Biopsychology and Methods, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))
+2. Department of Anesthesiology & Pain Medicine, Inselspital, Bern University Hospital, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))
 
 † Corresponding author
 
@@ -32,7 +32,7 @@ To address this issue, we designed artificial words with varying difficulty leve
 
 ## Results
 
-## Experimental design
+### Experimental design
 
 To study the impact of difficulty in word learning on TMR, we developed a novel learning paradigm. We formed four sets of artificial words (40 words per set; see Supplementary files 1 and 2) consisting of different sequences of two vowels and two consonants. Here, we subdivided the alphabet into two groups of consonants (C1: b, c, d, f, g, h, j, k, l, m; C2: n, p, q, r, s, t, v, w, x, z) and vowels (V1: a, e, I; V2: o, u, y). Four-letter-words were created by selecting letters from the vowel and consonant groups according to four different sequences (G1:C1, V1, V2, C2; G2: C1, V1, C2, V2; G3: V1, C1, C2, V2; G4: V1, C1, V2, C2; Figure 1a; see methods for further details). Comparison analyses between the sets revealed significant differences in phonotactic probability (PP; Figure 1b; unpaired t-tests: G1 /G2>G3/G4, p<0.005, values of Cohen’s d>0.71). PP quantifies the frequency of a single phoneme (phoneme probabilities) or a sequence of phonemes (e.g. biphone probabilities) within a language and thus serves as a measurement of the similarity between the artificial words and the pre-existing real word knowledge. According to distinct levels of PP, we paired the four sets to the high- (G1 and G2) and low-PP (G3 and G4) condition, respectively.
 
@@ -46,7 +46,7 @@ To obtain a measurement of discrimination memory with respect to the potential i
 
 After encoding and before sleep, we tested the pre-sleep memory performance (Figure 1e). Subjects slept one night in the sleep laboratory and during the NREM sleep stages 2 and 3 we conducted auditory TMR of the low-PP words in one group of subjects and TMR of the high-PP words in the other group (between subject design). At the following morning, we tested the post-sleep memory performance.
 
-## Manipulation check based on encoding analyses
+### Manipulation check based on encoding analyses
 
 To validate our novel paradigm, we examined the influence of PP on encoding performance. Based on the signal detection theory (Green and Swets, 1966), we calculated d'-values to measure subject’s abilities to differentiate and categorize rewarded and unrewarded words of the two PP conditions over the three presentations of the encoding task (Figure 2a). A repeated-measure ANOVA on d' with PP (high vs. low) and presentations (1–3) as within-subjects factors revealed significant main effects of PP (F(1,32) = 5.13, p=0.03, η2=0.14), and presentations (F(2,64) = 95.67, p<0.001, η2=0.75). Additional pairwise comparisons between PP conditions showed significant differences after the first presentation (paired t-tests of the three presentations in order: (1) t(32) = 0.73, p=0.47; (2) t(32) = 2.35, p=0.03, Cohen’s d=0.41; (3) t(32) = 2.17, p=0.04, Cohen’s d=0.38). These results indicate superior learning performance for words with high- compared to words with low-PP.
 
@@ -58,9 +58,17 @@ To examine the oscillatory correlates of encoding performance, we conducted time
 
 Regarding distinct levels of encoding performance between high- and low-PP, we compared next changes in alpha desynchronization between these conditions. We obtained the changes in power values by subtracting the first from the second and third presentation for the high- and low-PP condition, respectively. Here, the first word presentation of naive stimulus processing served us with a more representative baseline condition covering the time-window of interest of 0.7–1.9 s after the stimulus onset to examine relevant changes of encoding. Cluster-based statistics of the third presentation revealed a significant cluster over the left posterior electrodes with a stronger alpha power decrease for the high- in contrast to the low-PP condition (time window: 0.7–1.9 s; frequency range 8–13 Hz; averaged t-value over the five cluster electrodes = –2.69, p=0.01, Cohen’s d=–0.48; Figure 2d). A post-hoc repeated-measure ANOVA on alpha power changes (merged over Pz and Cz electrodes) with PP (high vs. low) and presentations (2–3) as within-subjects factors revealed a main effect of PP (F(1,32) = 5.42, p=0.03, η2=0.15), and a significant interaction (F(1,32) = 7.38, p=0.01, η2=0.19; Figure 2e). Additional post-hoc pairwise comparison between PP conditions showed significant difference of the third presentation (paired t-tests of presentations in order: (2) t(32) = –0.36, p=0.72; (3) t(32) = –3.55, p=0.001, Cohen’s d=–0.62) and a t-test against 0 revealed significantly decreased activity in high-PP of the third presentation (t(32) = –2.92, p=0.006, Cohen’s d=–0.51). In addition to the behavior results, these EEG results indicate differences between PP conditions in desynchronization of alpha oscillations, as an assumed neural correlate of encoding depth (Hanslmayr et al., 2009; Griffiths et al., 2021). To summarize, as a manipulation check based on encoding analyses, we confirmed that the conditions of high- and low-PP correspond to distinct levels in learning difficulty.
 
-## TMR affects memory consolidation of the easy to learn words
+### TMR affects memory consolidation of the easy to learn words
 
 To examine whether TMR during sleep impacts memory consolidation of discrimination learning with respect to learning difficulty, we calculated the overnight changes by subtracting the pre- from the post-sleep memory performance based on d'-values of the reactivated sequences (cued) and non-reactivated sequences (uncued). In group 1, the high-PP sequence was cued, and the low-PP sequence was uncued. In group 2, the low-PP sequence was cued, and the high PP sequence was uncued (see Figure 3—figure supplement 1 for pre- and post-sleep memory test data of the different conditions). Conducting t-tests against 0 revealed a significant increase in the TMR/cueing condition of group 1 (high-PP cued: 0.24±0.1, t(10) = 2.44, p=0.035, Cohen’s d=0.74), while the memory performance remained unchanged in all the other conditions (low-PP cued: –0.09±0.08, t(10) = –1.16, p=0.27; high-PP uncued: 0±0.08, t(10) = –0.04, p=0.97; low-PP uncued: 0.03±0.1, t(10) = 0.31, p=0.76; Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90930/elife-90930-fig3-v1.jpg)
+
+**Figure 3.:** Bar charts show mean overnight changes of d' (a) and c-criterion (b) values of high (H) - and low (L) - PP and cued (green) vs. uncued (gray) conditions. Note, statistical analyses revealed significant overnight increases only in the high-PP cued condition. Gray lines represent individual data points. Error bars reflect SEM (n=11); *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90930/elife-90930-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Pre (black) and post (blue) sleep mean group memory test data of d' (left panel) and c-criterion (right panel) divided into the conditions of high- and low-PP and cued and uncued. Gray lines represent individual data points. Error bars reflect SEM (n=11).
 
 An additional two-way mixed design ANOVA on the same values with the factor cueing (cued vs. uncued) as a within-subject factor and group as a between-subject factor revealed trends of significance (p<0.1) for the interaction (cueing ×group: F(1,20) = 3.47, p=0.08) and the main effect of group (F(1,20) = 3.28, p=0.09). The main effect of cueing was not significant (F(1,20) = 0.58, p=0.46). Post-hoc pairwise comparisons revealed a significant difference between the conditions of high-PP-cued and low-PP-cued (t(20) = 2.63, p=0.02, Cohen’s d=1.12), a trend of significance between high-PP-cued and high-PP-uncued (t(20) = 1.91, p=0.07) and no significant difference between high-PP-cued and low-PP-uncued (t(10) = 1.55, p=0.15). In additional control analyses, pre-sleep memory performance and vigilance shortly before the post-sleep memory task did not significantly (p-values ≥0.08) differ between both cueing groups (see Supplementary file 3).
 
@@ -68,9 +76,21 @@ We examined next as an exploratory analysis whether TMR conditions influence bia
 
 Taken together, these results suggest that the effectiveness of TMR depends on the level of difficulty in word learning, while auditory cueing during sleep increases the memory performance of the easy to learn words.
 
-## Increased spindle power nested during slow wave up-states in TMR of the easy to learn words
+### Increased spindle power nested during slow wave up-states in TMR of the easy to learn words
 
 After analyzing TMR’s effectiveness on behavior, we investigated the corresponding neural activities by EEG. By visual inspection of the signals, auditory word presentations during NREM sleep led to broad high-amplitude oscillations, called slow waves (SW; 0.5–3 Hz), whereas sleep spindle activity (9–16 Hz) with various amplitude occurred preferentially nested during the SW’s up-state phase (see for example traces Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90930/elife-90930-fig4-v1.jpg)
+
+**Figure 4.:** (a) Top and bottom panel, two example EEG traces of auditory cueing during sleep (–2 until 6 s to stimulus onset). Top rows, in blue, signal filtered in the SW range (0.5–3 Hz) superimposed upon the broadband (0.5–35 Hz) signal in black. Vertical black lines with speaker symbols on top mark onsets of auditory presentations. Black arrows point to spindle activity during SW up-states. Bottom rows, in red, the same signal, but filtered in the spindle range (9–16 Hz). Note, elevated SW following cueing presentations with various spindle band activity nested during SW up-states. (b) Grand average baseline corrected curve of increased SW density after TMR in percentage. Shaded gray areas mark time windows (0–0.5 s, 0.5–1 s and 1.5–2 s) of significant increased SW density. Error bars reflect SEM (n=22). (c) Grand average time-frequency plots time-locked to the troughs of SW with averaged signals plotted as black lines. Two different panels (left and right) according to high- vs. low-PP cueing conditions. The rectangle within the left panel borders time (0.3 until 0.6 s to SW troughs) and frequency range of up-state fast spindle band activity (12–16 Hz). Corresponding topographic map at right shows elevated fast spindle power over mid-parietal electrodes. (d) Time-frequency representation of t-values time-locked to SW shows significant greater spindle band power during SW up-states for high- vs. low-PP (merged over Pz, P3, and P4 electrodes). Right, topographic map of t-values shows corresponding significant cluster of electrodes (0.3–0.8 s; 11–14 Hz), *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90930/elife-90930-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Grand average curve of slow wave density time-locked to stimulus onset in number per trial with a bin size of 0.5 s from –0.5–6 s. Note, slow wave density peaks during the time window of 0–2 s and lower density values from 3 to 6 s after stimulus onset. Error bars reflect SEM (n=22).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90930/elife-90930-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Grand average curves of sleep spindle density time-locked to stimulus onset in number per trial with a bin size of 0.5 s from –0.5–6 s of the cueing condition of high (black) - and low (gray) - PP, respectively. Note, sleep spindle density peaks during the time window of 1–1.5 s after stimulus onset with no significant (n.s., p>0.05) difference between conditions. (b) Grand average signal filtered (12–16 Hz) of the Pz electrode time-locked to the sleep spindle amplitude peak of the high (blue) - and low (gray) - PP cueing conditions; shaded areas represent SEM (n=11). Two different panels according to sleep spindles coupled (top) and uncoupled (bottom) with detected slow waves during the time window of 0–6 s after stimulus onset. Note, significant higher amplitude sleep spindles coupled with slow waves in the cueing condition of high- compared to low-PP and no significant difference between the cueing conditions of the uncoupled sleep spindles. Error bars reflect SEM (n=11); *p<0.05.
 
 To statistically analyze whether TMR increases the SW density, we conducted a detection algorithm. To control for individual differences, we included 30% of SW with the highest amplitude per subject (see methods) in subsequent analyses. Testing changes of SW density in time windows of 0.5 s, revealed significant increases after stimulus onset in comparison to baseline (Figure 4b; baseline period of –1.5–0 s before stimulus onset; t-tests against 0; 0–0.5 s: 49.73 ± 14.32%, t(21) = 3.47, p=0.002, Cohen’s d=0.74; 0.5–1 s: 83.44 ± 14.97%, t(21) = 5.57, p<0.001, Cohen’s d=1.19; 1.5–2 s: 40.33 ± 10.67%, t(21) = 3.78, p=0.001, Cohen’s d=0.84; see Supplementary file 4 for all statistical comparisons of time-bins from –0.5–3 s and Figure 4—figure supplement 1 for SW distribution from –0.5–6 s time-locked to stimulus onset). Additional comparisons between the TMR conditions of high- and low-PP showed no significant differences in SW density, SW amplitude, number of TMR presentations and other sleep parameters, but a trend of significance for REM sleep parameters (see Supplementary file 5). In sum, these results indicate an increase of SW in response to auditory word stimulation independent of difficulty in word learning.
 
@@ -104,71 +124,71 @@ To conclude, our present study demonstrates that difficulty in word learning as 
 
 ## Methods
 
-## Subjects
+### Subjects
 
 The study included 39 subjects (29 females) with an age range of 19–28 years (M=22.28 years, SD = 2.04). Participants were recruited from the University of Fribourg community by E-Mail or through advertisements at the campus of the University. Before participation, subjects had to give written informed consent as approved by the Ethical Commission of the Department of Psychology of the University of Fribourg. All participants were German speakers, and no subject had a history of neurological or psychiatric illness. The participants were instructed to keep a normal sleep schedule, to get up in the morning before 8 a.m. and not to consume alcohol and caffeine on experimental days. For participation, subjects either received credit for an undergraduate class and/or monetary compensation.
 
 Data were excluded from subjects who did not reach the minimal learning performance of d'>1.05 during the pre-sleep memory test in at least one of the two PP conditions, whereas this threshold value corresponds to accuracy rates of 70% (n=5). In addition, we excluded one subject who showed a negative d' in one PP condition of the pre-sleep memory test (n=1).
 
-## Pre-learning
+### Pre-learning
 
 Participants arrived at the sleep laboratory at 19:30 hr. Electrodes for standard polysomnography (32 EEG electrodes, EMG and ECG electrodes) were mounted with two EEG mastoid electrodes. One electrode under the right eye was attached to record eye movements.
 
-## Encoding task
+### Encoding task
 
 The encoding task started around 21:00 hr. Subjects learned to discriminate rewarded and unrewarded artificial words by right- and left-hand button presses. As a two alternative forced-choice task, we assigned left- and right-hand button presses to the rewarded and the unrewarded word category, counterbalanced across subjects. We instructed the participants to respond to each word by left- or right-hand button presses, whereas one button means the word is rewarded (gain of money points) and the other button means the word is unrewarded (avoid the loss of money points). During each trial, an initial fixation cross was displayed between 1.7 and 2.3 s. Subsequently, concurrent with the onset of a blank screen the sound of an artificial word was played for 0.7–1 s. After a waiting period (blank screen 2 s), a question mark appeared to signal the onset of the response time window (maximal duration 4 s). Following the key press response, a feedback screen with the money points of the trial and the current task score appeared for 2 s. The learning task contained 480 trials in randomized order according to 160 artificial words with three presentations each.
 
-## Pre-sleep memory task
+### Pre-sleep memory task
 
 After finishing the encoding task, following a 10 min break, subjects performed the pre-sleep memory task. The memory task had the same trial structure as the encoding task without the last feedback screen. Participants received again money points for correct responses. However, the received amount was only shown at the end of the task. The memory task contains 160 trials according to the 160 artificial words.
 
-## Auditory target memory reactivation during sleep
+### Auditory target memory reactivation during sleep
 
 Following an additional impedance check and re-adjustment of the EEG electrodes, subjects went to bed in a noise and electric shielded cabin of the sleep laboratory. All night sleep periods started with light off between 23:00 and 24:00 hr. Based on online monitoring of N2 and N3 sleep, artificial words were presented aurally via loudspeakers (sound pressure level 55 dB) with a randomized inter-stimulus interval of 8±2 s. One group of subjects were exposed to artificial words with low phonotactic probability during sleep, whereas we presented to the other group the high phonotactic probability words (see Supplementary file 5 for number of reactivations). We interrupted word presentations when we observed online an arousal or patterns of REM sleep.
 
-## Post-sleep memory task
+### Post-sleep memory task
 
 After sleep and re-adjustment of the EEG, subjects performed the post-sleep memory task (see above the description of the pre-sleep memory task).
 
-## Experimental tasks
+### Experimental tasks
 
 All experimental tasks, including sleep reactivation, were conducted by using the E-Prime software (Psychology Software Tools, Sharpsburg, USA). By presentation of practice trials at the beginning, the subject’s understanding of the task was approved. Across all tasks, stimuli were presented in randomized order.
 
-## Stimuli
+### Stimuli
 
 To create artificial words, we subdivided the alphabet in two groups of consonants (C1: b, c, d, f, g, h, j, k, l, m; C2: n, p, q, r, s, t, v, w, x, z) and vowels (V1: a, e, I; V2: o, u, y). Four-letter-words were created by selecting letters from the vowel and consonant groups according to four different sequences (G1:C1, V1, V2, C2; G2: C1, V1, C2, V2; G3: V1, C1, C2, V2; G4: V1, C1, V2, C2). Artificial words were converted automatically from text to speech files (wav format) by using MATLAB functions (tts.m, audiowrite.m) with the setting of a female computer voice with American English pronunciation. From this pool of 900 stimuli for each rule, we selected 40 artificial words per rule category (4×40 words) according to the inclusion criteria: fluent and understandable pronunciation; no meaning; no names; aurally discriminable to other selected words (see Supplementary files 1 and 2 for lists of the used words).
 
 Phonotactic probability values were computed for each word by using an online computation platform (Aljasser and Vitevitch, 2018) (https://calculator.ku.edu/phonotactic/English/words) according to an American English lexicon. Between rule category comparison analyses revealed significant differences in phonotactic probabilities between two rules in contrast to the other two rules (see Figure 1b).
 
-## Psychomotor vigilance task
+### Psychomotor vigilance task
 
 With respect to vigilance after sleep before the post-sleep memory task, a reaction time measurement was conducted by the Psychomotor Vigilance Task (PVT) (Dinges and Powell, 1985). Each trial began with a fixation cross of a randomized duration between 2 and 10 s. Participants were instructed to press the spacebar button with the forefinger of the non-dominant hand as quickly as possible after numbers started to count in milliseconds on the screen. The reaction time was displayed for 1 s after the key press. The PVT had a duration of 10 min (see for results Supplementary file 3).
 
-## Behavior analyses
+### Behavior analyses
 
 As a measurement of discrimination learning and memory performance, we calculated d'-values (d'=z(hits)-z(false alarms)) according to the signal detection theory (Green and Swets, 1966). Here, we considered correct trials with gaining of money points as hits and incorrect trials with a loss of money points as false alarms (see Figure 1d). In addition, we assessed measurements of the response bias (c=−0.5*(z(false alarms)+z(hits))). According to the convention (Macmillan and Kaplan, 1985), rates of 0 and 1 were replaced with 0.5 /n and with (n-0.5)/n respectively, whereas n corresponds to the number of trials (n=40). Values of d' and response bias were calculated separately for the low- and high-PP condition.
 
-## EEG recordings
+### EEG recordings
 
 We made EEG recordings by using customized 32-Ag/AgCl electrodes at 10–10 locations caps (EASYCAP, Woerthsee-Etterschlag, Germany) and 32 channel amplifiers (Brain Products, Gilching, Germany). Impedances were kept below 10  kΩ. The EEG was recorded with a sampling rate of 500 Hz using Brain Vision Recorder software (Brain Products, Gilching, Germany). Signals were referenced to electrodes at the mastoids. The ocular activity was measured via one EOG channel mounted ~2  cm below the right eye. Muscle tone was monitored by EMG recordings made under the chin. The following EEG electrodes were used for subsequent wake and sleep analyses: Fp1, Fp2, F3, F4, C3, C4, P3, P4, O1, O2, F7, F8, T7, T8, P7, P8, Fz, Cz, and Pz.
 
-## Sleep scoring
+### Sleep scoring
 
 The sleep stages of NREM 1–3 (N1 to N3), wake, and REM sleep were scored offline and manually according to the criteria of the American Academy of Sleep Medicine (AASM) by visual inspection of the signals of the frontal, central, and occipital electrodes over 30 s epochs (Iber et al., 2007). Based on offline scoring, we confirmed TMR exposure during N2 and N3 and no significant differences (p-values >0.05) of sleep parameters between the cueing groups (see Supplementary file 5).
 
-## Preprocessing wake EEG
+### Preprocessing wake EEG
 
 Wake EEG were preprocessed using the Fieldtrip toolbox (http://fieldtriptoolbox.org; Donders Institute for Brain, Cognition and Behaviour, Radboud University, Netherlands) (Maris and Oostenveld, 2007). First, raw data signals were re-referenced to averaged mastoid electrodes and filtered (high- and low-pass, 0.5 and 45 Hz). For each trial, data were segmented into epochs (−2–4 s) time-locked to stimulus onset. After demean and detrend processing steps, noisy trials were identified by visual inspection and discarded from further analyses. We then conducted an independent component analysis (ICA) to identify and reject ICA components impacted by eye blinks and eye movements.
 
-## Preprocessing sleep EEG
+### Preprocessing sleep EEG
 
 EEG signals during sleep were re-referenced to averaged mastoid electrodes and filtered (high- and low-pass, 0.5 and 35 Hz). To analyze EEG activities of TMR, data were segmented into epochs (−2–8 s) around the onset of stimuli presentations. After demean and detrend processing, trials with signals distorted by noise and movement artefacts were identified by visual inspection and removed from further analyses.
 
-## Time-frequency analysis wake data
+### Time-frequency analysis wake data
 
 We conducted the time-frequency analyses by using Morlet wavelet analyses implemented in the Fieldtrip toolbox. The number of wavelet cycles was adjusted to seven cycles. We extracted oscillatory power in the frequency range of 1–45 Hz with frequency steps of 0.2 Hz and time steps of 10ms. All the power values were baseline corrected and transformed to absolute changed values by subtracting the corresponding averaged values of the baseline interval of –1 to –0.1 s before stimulus onset.
 
-## Slow wave-spindle power analyses
+### Slow wave-spindle power analyses
 
 To reduce influence of potential confounders on TMR like low prior learning performance and number of reactivations, we included only subjects with a pre-sleep memory performance d'>0.75 in both PP conditions and who did receive a minimal number of 160 reactivations (each word was represented at least two times during sleep). Thus, we excluded 5 and 6 subjects, respectively. The final sample for sleep analyses consisted of n=22 with 11 subjects in each cueing condition.
 
@@ -176,11 +196,11 @@ To detect slow waves, we first localized all negative and positive peaks of the 
 
 We then extracted the corresponding spectral power (1–30 Hz) in a time window around this negative slow wave peak (±2 s) using Morlet wavelet (7 cycles) analysis implemented in the Fieldtrip toolbox, with a time window and step size of 10ms and frequency steps of 0.2 Hz. Extracted power data over frequency and time was averaged of the slow waves and baseline corrected by subtracting the averaged values of the baseline interval of –2 to –1.5 s prior to the negative slow wave peak. Finally, the transformed absolute changed values were plotted for the frequency and time range of interest and different conditions (see Figure 4c).
 
-## Slow wave density analyses
+### Slow wave density analyses
 
 To analyze the number of slow waves around memory reactivations during sleep, we divided the time course of reactivation trials in equally sized bins with a duration of 0.5 s from –1.5–3 s according to stimulus onset. Based on negative peaks of detected slow waves, we counted the occurring of slow waves for each bin over trials. Subsequently, we computed density values for each bin by division of the number of trials. Finally, we calculated the relative increase in slow wave density in percent by division of the averaged baseline values (bins: –1.5–0 s; see Figure 4b). In an additional histogram, we show the grand average slow wave density distribution in number per trial without baseline correction and with a bin size of 0.5 s from –0.5 to 6 s time-locked to stimulus onset (see Figure 4—figure supplement 1).
 
-## Sleep spindle analyses
+### Sleep spindle analyses
 
 We detected fast sleep spindles by band-pass filtering (12–16 Hz) the signal of the Pz electrode during the auditory cueing trials in the time windows of –2–8 s according to stimulus onsets. The amplitude threshold was calculated individually for each subject as 1.25 standard deviations (SDs) from the mean. The beginning and end times of the sleep spindles were then defined as the points at which the amplitude fell below 0.75 SDs before and after the detected sleep spindle. Only sleep spindles with a duration of 0.5–3 s were included in subsequent analyses.
 
@@ -190,7 +210,7 @@ Based on the detected slow waves and sleep spindles, we defined coupling events 
 
 We computed the averaged amplitude size of each detected sleep spindle by calculating the mean of the absolute amplitude values of all negative and positive peaks within a detected sleep spindle (see Figure 4—figure supplement 2b).
 
-## Statistical analysis
+### Statistical analysis
 
 To test for differences between conditions of wake behavioral data, repeated-measure ANOVAs and paired sample t-tests were used. To analyze overnight changes of sleep behavioral data within TMR conditions, we conducted at first dependent sample t-tests against 0 of Δ-values (post-sleep test minus pre-sleep test) of d' and c-criterion (see Figure 3). Two-way mixed design ANOVAs were computed to compare Δ-values between TMR conditions. After confirming at least a trend of significance (p<0.1) for the interaction effect, we conducted post-hoc pairwise comparisons by independent and dependent sample t-tests. For all behavior statistical analyses, the p-value was set at p<0.05 for two-tailed testing. A p-value <0.1 and>0.05 was reported as a trend of significance.
 

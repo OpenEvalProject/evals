@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02495e989 Institute for Information and Communication Technologies, Electronics and Applied Mathematics (ICTEAM), Université Catholique de Louvain Louvain-la-Neuve Belgium
-2. https://ror.org/02495e989 Institute of Neuroscience (IoNS), Université Catholique de Louvain Brussels Belgium
+1. Institute for Information and Communication Technologies, Electronics and Applied Mathematics (ICTEAM), Université Catholique de Louvain Louvain-la-Neuve Belgium ([ROR:02495e989](https://ror.org/02495e989))
+2. Institute of Neuroscience (IoNS), Université Catholique de Louvain Brussels Belgium ([ROR:02495e989](https://ror.org/02495e989))
 3. WEL Research Institute Wavre Belgium
 
 † Corresponding author
@@ -39,15 +39,43 @@ Here, we studied these predictions of OFC in a two-reach sequence task. Simulati
 
 The results section is organized as follows: we first introduce the computational model and describe the results of the simulations showing that separate or coarticulated sequence production can result from flexible feedback control without implying a different structure in the controller (Figure 1A–B). Second, we present the two behavioral experiments in which participants were instructed to perform a sequence of two reaching movements with an intermediate goal (Figure 1C–F). Our key manipulation guided by the model simulations was to give them different instructions regarding the pause at the first target, which produced the modulation of sequence production predicted in theory.
 
-## Simulations of sequence execution
+### Simulations of sequence execution
 
-The model considers a task-dependent state-feedback controller derived from the framework of stochastic optimal control (Kalidindi and Crevecoeur, 2023). The controller was optimized to produce a translation of a point mass on a horizontal plane. A given estimate of a state vector x^ (position, velocity, target location and external load) can influence the motor output u through multiplicative functions called ‘feedback control gains,’ represented by k(t). Typically, the motor output at any time (t) is a result of a state feedback control law:u(t)=k(t)x^(t).
+The model considers a task-dependent state-feedback controller derived from the framework of stochastic optimal control (Kalidindi and Crevecoeur, 2023). The controller was optimized to produce a translation of a point mass on a horizontal plane. A given estimate of a state vector $x^$ (position, velocity, target location and external load) can influence the motor output $u$ through multiplicative functions called ‘feedback control gains,’ represented by $k(t)$. Typically, the motor output at any time $(t)$ is a result of a state feedback control law:
 
-Note that the control law is dependent on the state estimate (x^), which is computed by integrating delayed and noisy sensory feedback (x) with internal prediction of the state. Importantly, feedback gains are tuned to task demands (Liu and Todorov, 2007; Nashed et al., 2012), and vary within a movement (Dimitriou et al., 2013). This task dependency gives rise to instances where all state variables (x^) are simultaneously available to the feedback controller, but some of them may not influence the motor output if deviations of the state vector in the corresponding dimension do not impact the performance.
+$$
+u(t)=k(t)x^(t).
+$$
 
-We applied this control formalism to a task composed of a two-target sequence of reaching movements, such that two different sequences shared the first target, after which they diverged towards the second target (T1 and T2, Figure 1C). In the model, the estimated positions of the targets (T1^, T2^) are in the state estimate x^, hence the control law can be decomposed and expressed in the following equation (also see Figure 2A):u(t)=k1(t)T1^+k2(t)T2^+kx(t)x^(t)
+Note that the control law is dependent on the state estimate ($x^$), which is computed by integrating delayed and noisy sensory feedback ($x$) with internal prediction of the state. Importantly, feedback gains are tuned to task demands (Liu and Todorov, 2007; Nashed et al., 2012), and vary within a movement (Dimitriou et al., 2013). This task dependency gives rise to instances where all state variables ($x^$) are simultaneously available to the feedback controller, but some of them may not influence the motor output if deviations of the state vector in the corresponding dimension do not impact the performance.
 
-where (k1, k2) are the feedback gains that determine how much and when each target (T1^, T2^) influences the motor output (Figure 2A). This formulation highlights that, even when both targets are simultaneously available to the feedback controller, the overlap between control gains (k1 and k2) will determine if and when the second target influences the first reach (Figure 2B). In the simulations, the control gains and the overlap between the two components of the sequence were not hardcoded but were found as an optimal control solution that improves the efficiency of the sequence as a whole (i.e. as a solution to holistic sequence planning in the sense that all targets are specified to the controller at once). For holistic sequence planning, we formulated the efficiency in terms of a cost function on the terminal movement errors and speed of reaching at both targets (T1 and T2), and total motor output across movement duration (see a model with terminal costs in Methods).
+We applied this control formalism to a task composed of a two-target sequence of reaching movements, such that two different sequences shared the first target, after which they diverged towards the second target (T1 and T2, Figure 1C). In the model, the estimated positions of the targets ($T1^$, $T2^$) are in the state estimate $x^$, hence the control law can be decomposed and expressed in the following equation (also see Figure 2A):
+
+$$
+u(t)=k_{1}(t)T1^+k_{2}(t)T2^+k_{x}(t)x^(t)
+$$
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96854/elife-96854-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic illustration of the feedback control policy. Targets influence motor output through control gains, which are themselves derived by minimizing movement costs. (B) Illustration of how overlap of control gains can explain coarticulated reaches (top panel), and late influence of second target on first reach (middle). (C) Hand speed (left), control gains corresponding to the two targets (middle), and hand path (middle) when dwell velocity at target 1 was not constrained. (D) Same as (C) except the dwell velocity was penalized.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96854/elife-96854-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Hand speed (left), control gains corresponding to the two targets (middle), and hand path (middle) when dwell velocity at target 1 was not constrained. (B) Same as (A) except the dwell velocity was penalized.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96854/elife-96854-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Control gains corresponding to the position errors relative to T1 (left column), control gains corresponding to T2 (middle column), and the perturbed hand path, when a sudden load (+4 N) was applied in the rightward direction (right column) simulated using terminal costs. (B) Same as (A) where simulations used buildup costs, leading to a straighter hand path in the beginning of the movement. Each curve in the hand path represents a single trial.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/96854/elife-96854-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) control gains corresponding to the position errors relative to T1 (left column), control gains corresponding to T2 (middle column), and the perturbed hand path when a sudden load (+4 N) was applied in the rightward direction (right column) simulated using terminal costs. (B) Same as (A) where simulations used buildup costs, leading to a straighter hand path in the beginning of the movement. Each curve in the hand path represents a single trial.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/96854/elife-96854-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Control gain across time and change in the intermediate velocity cost. (B) Simulated hand velocity (left panel) and hand path (right panel) when the same intermediate velocity costs were considered for both final targets (T3 up and T3 down). (C) Simulated hand velocity and path when the intermediate velocity cost was changed between two sequences. Blue curves had the lowest cost on the intermediate velocity of $w_{2}$ = $w_{3}$ = 0.0, followed by orange curves with $w_{2}$ = $w_{3}$ = 0.8.
+
+where ($k_{1}$, $k_{2}$) are the feedback gains that determine how much and when each target ($T1^$, $T2^$) influences the motor output (Figure 2A). This formulation highlights that, even when both targets are simultaneously available to the feedback controller, the overlap between control gains ($k_{1}$ and $k_{2}$) will determine if and when the second target influences the first reach (Figure 2B). In the simulations, the control gains and the overlap between the two components of the sequence were not hardcoded but were found as an optimal control solution that improves the efficiency of the sequence as a whole (i.e. as a solution to holistic sequence planning in the sense that all targets are specified to the controller at once). For holistic sequence planning, we formulated the efficiency in terms of a cost function on the terminal movement errors and speed of reaching at both targets (T1 and T2), and total motor output across movement duration (see a model with terminal costs in Methods).
 
 The model simulations revealed that, even though the sequence was planned as a whole, the necessity to slow-down at the first target, which was induced by an intermediate cost on speed at the corresponding time, influenced when the first reach became sensitive to the second target (Figure 2C and D), i.e., when the two reaches in the sequence coarticulate. When there was no constraint on speed at the first target, the simulated hand reached the first target with a high velocity (Figure 2C, left panel), and subsequently continued towards the second target at a high initial speed of >0.2 m/s. In this rapid transfer scenario, the control gains showed a cross-over effect where the control gain associated with the second target (k2) was non-zero, albeit small, during the first reach, showing an early overlap with the feedback gain (k1) (Figure 2C, middle panel). As a result, the location of the second target influenced the lateral hand deviation of the first reach (Figure 2C, right panel). The first reach was thus different depending on the location of the second target. Notably, the first reach was similarly influenced by the second target even in a different model where temporal buildup costs were considered instead of terminal costs (see temporal buildup cost model in Methods), to penalize the hand deviation from the targets across the duration of the sequence (Figure 2—figure supplement 1A).
 
@@ -55,15 +83,23 @@ Because the control gains also determine the response to external perturbations,
 
 On the contrary, the requirement to slow down at the first target, captured by an increased cost on speed, reduced the velocity at the end of the first reach and altered the shape of the trajectories (Figure 2D, left panel) compared to the rapid transfer scenario (Figure 2C, left panel). The control gain corresponding to the second target became non-zero at a later time, at the end of the first reach (Figure 2D, middle panel). Due to the later increase in this gain value, the influence of the second target on the motor output during the first reach was much reduced, hence generating a similar hand path to reach the first target across the two sequences (Figure 2D, right panel). Similarly, feedback responses to lateral perturbations that were applied early-on in the first reach were not dependent on the location of the second target (Figure 2—figure supplement 3A). The amount of lateral deviation when an unexpected perturbation was applied did not vary as a function of the direction of the second target. Qualitatively similar influence of the need to slow down at the first target on the trajectory of first reach was observed when temporal buildup costs were included instead of terminal errors (Figure 2—figure supplement 1B and Figure 2—figure supplement 3B).
 
-It is worth noting that the OFC model can be generalized to longer sequences (Kashefi et al., 2024) through the incorporation of additional cost terms (in Equation 10 of Methods) and targets, enabling simultaneous planning for more than two targets. Simulations of a sample three-reach sequence (Figure 2—figure supplement 4) revealed that, varying the cost of dwell velocity at intermediate targets (w2 and w3 parameters in Methods) caused a variation in control gains. Different amounts of change in control gains can be expected for intermediate versus late targets (Figure 2—figure supplement 4A). Notably, even when we used the same dwell velocity cost (w2 = w3 = 0), the observed velocity profiles were different between the two sequences towards different final targets (T3 up and T3 down) (Figure 2—figure supplement 4B). We tested a condition in which both sequence reaches were forced to have similar dwell velocity profiles by increasing the dwell velocity costs in the sequence towards one of the targets (T3 down), while leaving this parameter unchanged for the other target (T3 up). In this scenario, T3 up sequence had the parameters (w2, w3) = (0, 0), while T3 down sequence had the parameters (0.8, 0.8). In this case, the curvature of the first reach was different, and predominantly occurred due to differences in K2 between the two sequence reaches (Figure 2—figure supplement 4C). These simulations highlight that, planning for a longer horizon sequence can indirectly influence the curvature of early reaches, due to the interaction between intermediate dwell constraints, spatial arrangement of targets, and sequence horizon in a task-dependent manner.
+It is worth noting that the OFC model can be generalized to longer sequences (Kashefi et al., 2024) through the incorporation of additional cost terms (in Equation 10 of Methods) and targets, enabling simultaneous planning for more than two targets. Simulations of a sample three-reach sequence (Figure 2—figure supplement 4) revealed that, varying the cost of dwell velocity at intermediate targets ($w_{2}$ and $w_{3}$ parameters in Methods) caused a variation in control gains. Different amounts of change in control gains can be expected for intermediate versus late targets (Figure 2—figure supplement 4A). Notably, even when we used the same dwell velocity cost ($w_{2}$ = $w_{3}$ = 0), the observed velocity profiles were different between the two sequences towards different final targets (T3 up and T3 down) (Figure 2—figure supplement 4B). We tested a condition in which both sequence reaches were forced to have similar dwell velocity profiles by increasing the dwell velocity costs in the sequence towards one of the targets (T3 down), while leaving this parameter unchanged for the other target (T3 up). In this scenario, T3 up sequence had the parameters ($w_{2}$, $w_{3}$) = (0, 0), while T3 down sequence had the parameters (0.8, 0.8). In this case, the curvature of the first reach was different, and predominantly occurred due to differences in $K_{2}$ between the two sequence reaches (Figure 2—figure supplement 4C). These simulations highlight that, planning for a longer horizon sequence can indirectly influence the curvature of early reaches, due to the interaction between intermediate dwell constraints, spatial arrangement of targets, and sequence horizon in a task-dependent manner.
 
 Overall, the model predicted that even if a feedback control policy was computed by optimizing the whole sequence over a long time-horizon, the requirements associated with intermediate goals determine how early in the sequence the second (future) target can influence the feedback controller (compare Figure 2C and Figure 2D; Figure 2—figure supplement 1A and Figure 2—figure supplement 1B; Figure 2—figure supplement 2 and Figure 2—figure supplement 3).
 
-## Correspondence between human behavior and model predictions
+### Correspondence between human behavior and model predictions
 
 The experiments were designed to verify whether task requirements at the intermediate goals influenced hand trajectories and feedback control in a way that was expected from the model simulations. The first experiments tested the scenario in which there was no penalty on velocity during the stop-over at the first target, referred to as the GO task. We instructed 15 human participants to perform a two-target sequence of reaching movements (Figure 1C–F). Both targets in a given sequence were displayed from the beginning of the trial, allowing for the preparation of both reaches. After receiving a GO cue (500–1000 ms after target display), participants were required to reach the first target within a prescribed time (500–650 ms), and then to proceed to the second target. There was no instruction to stop at the first target. To encourage fast transfer between the two reaches, the participants were allowed to remain in the first target for a maximum of 150 ms after a successful reach, before initiating the second reach, otherwise the second target disappeared. To determine if the feedback controller was tuned to the location of the second target, mechanical loads (spanning 200ms width) in randomized direction (rightward or leftward) were applied randomly in 20% of the trials soon after the hand left the starting location (4.5 cm) in forward direction from the starting location (this occurred typically at ~200 ms after the movement onset).
 
 The model prediction about the influence of the second target during the first reach was clearly borne out of the experimental results. Figure 3A illustrates the average hand speed across baseline trials in the rapid transfer scenario. It is clear that the hand did not come to rest at the end of the first reach, but continued towards the second target at a relatively high transfer speed of ~0.2 m/s. The hand speed at the first target was slightly different between the 2 s target conditions (Figure 3A, inset; paired t-test: t(14) = –3.8, p=0.002). In line with model predictions, in the rapid transfer scenario, the location of the second target influenced the hand path during the first reach (Figure 3B). Statistically, across trials and participants, lateral hand deviation during the first reach was significantly different between the two sequences (Figure 3B, inset; paired t-test: t(14) = –5.9, p<10–4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96854/elife-96854-fig3-v1.jpg)
+
+**Figure 3.:** (A) Hand speed and (B) hand path in unperturbed baseline trials. (C, E) Same as (A) but for perturbation trials. (D, F) Same as (B) but for perturbation trials. (G) Baseline EMG response of pectorialis major (PEC) and posterior deltoid (PD) muscles. (H) Perturbation response (baseline subtracted) of PEC and PD muscle during rightward and (I) leftward perturbations. Light curves in the hand path panels are the average paths of individual participants. Shaded area around the average curves represent the standard error (±sem) across participants around the mean. Gray colored box indicates the average duration of the first reach. Red and blue colors correspond to reaches made towards left and right second targets, respectively. t=0 ms represents the time of perturbation onset. *p<0.05, **p<0.005, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96854/elife-96854-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Red color represents leftward sequence condition and blue color represents rightward sequence condition. Error bars represent ±1 SEM. ***p< 0.0005, **p< 0.005, n.s for p>0.05 after correcting for multiple comparisons using Holm-Bonferroni method.
 
 Note that the experiments involve a block design where a sequence direction was maintained for 10 trials (with two randomly interleaved rightward and leftward perturbation trials), while the blocks themselves were randomly interleaved (Figure 1E). To test whether the influence of the second target on hand deviation was due to trials occurring late within a block, we computed the hand path in the first and last trials and averaged across all blocks for each participant. Group data in Figure 3—figure supplement 1 illustrate that the hand deviation was significantly different between the leftward and rightward sequence conditions from the very first trial within a block (paired t-test: t(14) = 5.7, p<10–3). Similarly, the hand deviation was significantly different between leftward and rightward sequences in the last trial within a block (paired t-test: t(14) = 5.9, p<10–3). Additionally, a temporal effect was observed in the leftward sequence condition, where the last trial incurred a higher hand deviation compared to the first trial within blocks (paired t-test: t(14) = 3.9, p=0.003). Note that the above results include correcting for multiple comparisons using the Holm-Bonferroni method. Overall, the block design of the experiment may lead to small differences between the first and last trials within a block, but the effect of the second target on the lateral hand deviation was present from the very first trial within a block, suggesting that qualitatively similar results can be expected in experiments without a block design.
 
@@ -71,7 +107,7 @@ During perturbation trials, hand trajectories during the first reach were influe
 
 We identified a pair of muscles in the upper-arm shoulder joint (Pectoralis Major, PEC, and Posterior Deltoid, PD) that were strongly recruited by the lateral perturbation (see earlier studies with a similar experimental setup De Comite et al., 2022; Crevecoeur et al., 2019). These muscles also steer the hand toward the first and second targets in unperturbed conditions. PEC muscle displayed agonist burst coinciding with the acceleration of the hand towards the first target, while the PD muscle provided the antagonist burst to decelerate the hand near the first target. Notably, both muscles displayed a clear difference in baseline EMG activity during the first reach, depending on whether the following reach involved right or left second targets (Figure 3G). Following the perturbation (left or right), the stretch responses were visibly larger in both PEC and PD muscles compared to the baseline response (Figure 3H, I). The perturbation response in the stretched muscle – PEC for the rightward load (Figure 3H, left panel) and PD muscle for the leftward load (Figure 3I, right panel) – was visibly larger if the second reach involved movement reversal compared to the first reach where the perturbation was in the direction of the second target. Interestingly, even the unloading response (below baseline) in the unstretched (shortened) muscle – PD for the rightward load (Figure 3H, right panel) and PEC for the leftward load (Figure 3I, left panel) – was larger if the second reach involved direction reversal. Overall, the perturbation responses – both stretch and shortening muscle responses – indicated vigorous feedback corrections against the load when the second target induced movement reversal at the first target, explaining the smaller lateral deviation of the hand when the perturbation was in the direction of the second target.
 
-## Sequence-dependent long-latency feedback responses
+### Sequence-dependent long-latency feedback responses
 
 We assessed when the muscle stretch and shortening responses showed dependency on the second target. If the two targets were simultaneously used to form an efficient feedback controller for the whole sequence, one would expect that the sensitivity of the response to the second target to become visible in the long-latency epoch, considering responses in this epoch as a proxy of flexible, state-feedback controller in the primate nervous system (Kalidindi and Crevecoeur, 2023; Scott, 2016). Overall, the EMG responses indicated a significant influence of the second target on the long latency responses in both stretched and shortened muscles (Figure 4). When perturbed in the rightward direction, the PEC muscle (agonist) response increased in both sequence conditions, which counters the perturbation by increasing the leftward pull. Given the lower hand deviation in the rightward sequence (Figure 3D), we asked if the reduced deviation was due to a larger leftward pull from the PEC muscle. Indeed the PEC stretch response was significantly larger in the rightward sequence than the leftward sequence in the long-latency epoch, in both R2 (one tail paired t-test: t(14) = 3.5, P<0.002) and R3 (one tail paired t-test: t(14) = 2.25, P=0.02). On the other hand, the PD muscle shortening response was significantly larger (below baseline) in the rightward sequence than the leftward sequence in both R2 (one-tailed paired t-test: t(14) = –3.2, P=0.003) and R3 epochs (one-tailed paired t-test: t(14) = –3.5, P=0.002).
 
@@ -85,7 +121,7 @@ Next, we verified that the differences reported above did not follow from mere d
 
 Overall, the results indicate, the when required to perform movement sequences rapidly, the sensorimotor circuits that mediate long latency feedback responses showed modulation that was dependent on the secondary target. The specificity of the controller to the second target was evident when perturbations were applied early-on during the first reach. These observations agree with the predictions of the feedback control model that, with low or absent penalty on the velocity at the first target, the second target influences the hand path and feedback responses to perturbations prior to the first target.
 
-## Separation of Sequence Elements
+### Separation of Sequence Elements
 
 Another clear prediction of the model is that when there is a cost on velocity at the first target, the first reach should be less dependent on the second target. To test this prediction experimentally, we performed a STOP task where 14 subjects were asked to perform the same two-target reaching movements with a different speed constraint (Figure 1F). They were required to bring the hand to a near-complete halt (speed <0.5 cm/s) before starting the second reach.
 
@@ -119,7 +155,7 @@ Besides the implication of our computational model of co-articulation, it has be
 
 ## Materials and methods
 
-## Experiment design
+### Experiment design
 
 A total of 29 volunteers (11 men, 18 women, aged between 20 and 35 years) participated in two experiments (n=15 with 9 women in Experiment 1; and n=14 with 9 women in Experiment 2). All participants were neurologically healthy, and right-handed and gave their informed consent according to a protocol approved by the ethics board at UCLouvain. Experiments did not exceed 2 hr, and participants were compensated for their time.
 
@@ -127,92 +163,190 @@ The experiments used a robotic device (endpoint KINARM, BKIN Technologies), perm
 
 Participants were instructed to grasp a robotic handle and move the hand-aligned cursor to the home target (radius 0.6 cm). The home target was initially filled with red color but turned green when the participant’s cursor entered the home target. Two targets (open circles with white edges) appeared simultaneously once the participants entered the home location. The first target was situated 18 cm in the forward direction on the midline, while the second target was either situated to the left or right from the midline, displaced laterally from the first target by 8 cm (Figure 1C). Hence, at each trial, the participant could simultaneously view the first and second targets, T1 and T2, respectively. After holding the hand within the home location for 500–1000 ms (‘preparatory period’ uniformly distributed), the two targets were filled with red color from open circles, acting as a GO cue, indicating the participant to start executing the sequence. As the experiment involved many movements, in order to reduce the possibility that participants missed a GO cue, a 50 ms beep sound was presented simultaneously as an additional, auditory cue.
 
-## Experiment 1
+### Experiment 1
 
 Participants (n=15) were instructed to initiate the sequence as soon as they received the GO cues. For the first reach towards T1, participants were asked to move as straight and as quickly as possible. The first reach was deemed successful if T1 was reached between 500–650 ms after receiving the GO cue. Upon successful first reach, the circle corresponding to the first target turned green. As soon as the first target was successfully reached, a counter of 150 ms was initiated (unknown to the participant), leading to the disappearance of the second target if the hand did not leave the first target quickly. The second target remained in red color, if the hand left the first target within 150 ms, and subsequently turned green once the hand reached T2. If participants successfully completed the sequence by acquiring T1 and T2, and remained in T2 for at least 1 s, then they received two points. If they successfully acquired T1 but failed to quickly leave T1 (<150ms after reaching) or to reach T2, then they received one point. The score was projected on the screen and was updated only after the end of the trial and not during any reaching or preparatory period. The short latency of dwelling (at most 150 ms) in the first target encouraged the participants to swiftly move towards T2 soon after T1 was acquired. If the hand reached T1 in <500 ms after the GO signals, then both T1 and T2 disappeared indicating that movement was too fast, leading to failure of this trial. If the hand reached T1 in >650 ms after the GO signals, then the T1 circle never turned red, indicating that the trial was too long. In both cases where T1 is not acquired properly, the participants did not receive any points even if they reach T2. These cases of failed trials due to movements that were too fast or too slow were included to encourage low variation in movement durations, but all trials were used for analysis. Participants were asked to try to complete the sequence by reaching T2, even if they feel that T1 was not reached within the prescribed time.
 
-In a subset of random trials (20% of the total number of trials), a mechanical load, of ±7 N in magnitude with a 10ms linear rise time and a 200 ms width, was applied randomly in the lateral direction (x-axis in Figure 1), once the hand reached 1/4th of the forward distance between the home location and the first target (T1). Notably, in perturbation trials, the successful reaching time to T1 was set to be between 500–800 ms, in contrast to 500–650 ms used in unperturbed trials. This additional time, not informed to the participant, was necessary to account for the increased path length induced by the perturbation. This ensured a good proportion of perturbation trials with complete sequence execution, instead of the participants’ not attempting the reach towards T2 due to failure of reaching T1 properly.
+In a subset of random trials (20% of the total number of trials), a mechanical load, of ±7 N in magnitude with a 10ms linear rise time and a 200 ms width, was applied randomly in the lateral direction ($x$-axis in Figure 1), once the hand reached 1/4th of the forward distance between the home location and the first target (T1). Notably, in perturbation trials, the successful reaching time to T1 was set to be between 500–800 ms, in contrast to 500–650 ms used in unperturbed trials. This additional time, not informed to the participant, was necessary to account for the increased path length induced by the perturbation. This ensured a good proportion of perturbation trials with complete sequence execution, instead of the participants’ not attempting the reach towards T2 due to failure of reaching T1 properly.
 
 Participants were given the following instructions verbally: ‘Wait in the starting circle until you receive a GO signal, where the target circles turn red and you will simultaneously hear a beep sound. When the circles turn red, react quickly, move as soon, and as straight as possible to target 1 and then move to target 2. You will get two points at the end of the trial if you reach T1 in the prescribed time window and then move to T2, and in all other cases, you will not receive any points. Importantly, once you reach T1 you should try to come out of it quickly. If you stay in T1 for more than 150ms then T2 will disappear and you will receive only one point. Additionally, in some trials, a force will perturb your hand towards the right or left direction randomly while moving towards T1. The instructions remain the same in the presence of perturbations. Try to score as many points as you can’.
 
-## Experiment 2
+### Experiment 2
 
 Participants (n=14) performed two-target reaching sequences similar to Experiment 1 except that they were required to slow-down while reaching the first target (T1). Similar to Experiment 1, two targets were simultaneously displayed (as open circles) once the hand enters home location. At the GO signals, only the first target turned red, while T2 remained as an open circle. Participants were asked to reach T1 as straight and quickly as possible, between 500–650 ms, but importantly to slow-down at T1 before continuing towards T2. In this experiment, the condition for the target T2 to turn red, indicating the participant to move towards it, was that the hand velocity had to fall below a threshold of 0.5 cm/s. The scores were incremented in the same way as in Experiment 1.
 
-## Block design (randomized within a set)
+### Block design (randomized within a set)
 
 The experiments consisted of nine sets, where each set was composed of 10 blocks equally divided between rightward and leftward sequences (i.e. five blocks with rightward and five blocks with leftward second target location relative to T1) (see Figure 1). Notably, the rightward and leftward blocks within any given set appeared in a pseudo-random order. Each block is composed of 10 two-reach sequence trials. Hence, a total of 900 trials were performed across nine sets (9 sets ×10 blocks/set × 10 trials/block = 900 trials). After each set, participants were given a 30 s to 1 min break depending on their willingness to continue to the next set. Across the 10 trials within a block, the location of the second target (T2) remained constant (either to the right or to the left of T1). Within each block of 10 trials, two random trials involved perturbations (one rightward and one leftward perturbation), while the remaining eight trials were unperturbed. Hence, each perturbed direction included an equal number of rightward and leftward sequences, allowing us to examine the influence of the location of the second target on the perturbation responses in each direction of perturbation.
 
-## Pre-experiment training
+### Pre-experiment training
 
 The participants were first trained to execute single reaches to reach and stop at T1, without presenting T2, for 50 practice trials. Then they performed a maximum of one set of two-reach sequences (10 blocks × 10 trials/block = 100 trials), without any perturbation trials. This allowed them to learn the task without the complexities associated with reacting to external perturbations. Finally, they performed one more set, including 10 blocks where each block is composed of eight unperturbed trials and two perturbation (rightward and leftward) trials. We added this pre-training before the main experiments to familiarize the participants with the sequence task. We observed that the scores of most participants improved by the end of this small pre-experiment training set in both experiments.
 
-## Muscle recordings
+### Muscle recordings
 
 We recorded the activity of mono-articular shoulder muscles using Delsys Bagnoli surface EMG setup: pectorialis major (PEC) and posterior deltoid (PD), involved in the production of lateral forces and known to be largely recruited following similar perturbations with the same setup (Crevecoeur et al., 2020a; Mathew et al., 2020; De Comite et al., 2022). The electrodes were attached to the skin above the muscle belly after slight abrasion with alcohol. The signals were amplified (gain: 104), and digitally bandpass filtered with a dual-pass, fourth-order Butterworth filter (20–400 Hz bandpass). EMG data were then normalized to the average activity across 1 s recorded when the participants maintained postural control at the home target against a background load of 12 N applied three times in each direction. This calibration was performed at the beginning of the first and fifth blocks.
 
-## Statistical analysis
+### Statistical analysis
 
-## Behavior and kinematics
+#### Behavior and kinematics
 
 We extracted the hand deviation, and dwell velocity at the first target, as defined below.
 
-## Lateral hand deviation
+##### Lateral hand deviation
 
 The average lateral hand deviation (in meters) from an imaginary straight-line connecting the home location (H) to the first target location (T1), during the first reach. This is a signed quantity where a positive/negative sign indicates hand deviation to the right/left laterally.
 
-## Dwell velocity
+##### Dwell velocity
 
 The minimum root-mean-square velocity (of x and y dimension) in the duration in which the hand dwells near the first target – below 0.5 cm distance from the edge of T1.
 
 Kinematic variables of each participant were aligned to the time of perturbation onset (t=0), and then averaged across trials for group data analysis. We performed paired t-tests (one-sampled and two-sampled), unless explicitly stated otherwise, to determine significant differences in the extracted kinematic variables.
 
-## Perturbation-related muscle activity (ΔEMG)
+### Perturbation-related muscle activity (ΔEMG)
 
 Our primary interest was to compare different epochs of muscle activity to gain further insights into the sensitivity of feedback responses to the location of the second target, when the hand was perturbed early-on in the reaching towards the first target. The epochs of perturbation-related muscle activity of most interest were based on previous reports (Kurtzer et al., 2008; Pruszynski et al., 2009; Pruszynski et al., 2011) and were categorized temporally: baseline = –100–0 ms, R0=0–20 ms, R1=20–45 ms, R2=45–75 ms, R3=75–105 ms, and voluntary (Vol)=120–180 ms. Note that all EMG signals for each participant were aligned to the perturbation onset.
 
 We were most interested in comparing how the feedback responses are influenced by the location of the second target, even though the perturbations were applied in the beginning of the first reach. Accordingly, we calculated the average EMG response of each participant in the perturbed trials and subtracted this from the average EMG responses across unperturbed trials for each block within a set. We refer to this quantity as perturbation-related muscle activity (ΔEMG). Paired t-tests were performed using group averages to determine if the location of the second target had any statistical effect on the perturbation-related muscle activity. It should be noted that corrections for multiple comparisons do not apply here for two reasons: first, the samples at each epoch are involved in only one comparison; second, consecutive samples are not statistically independent. If there is a significant difference at a given epoch, it is very likely that there will be a significant difference in the next epoch because signals do not vary instantaneously. Hence, the risk of false-positive must not be controlled.
 
-## Model
+### Model
 
 The model describes the translation of a point-mass similar to the mass of an arm (m=2.5 kg) in the horizontal plane. The coordinates corresponded to the experiments, such that the first target was directly in the forward-reaching direction (along the y-dimension), and the second targets were at the same y-coordinate but displaced in the x-dimension by 8 cm to the right or to the left of the first target.
 
-## Dynamics of the effector
+#### Dynamics of the effector
 
-The state-space representation of the point-mass (from Crevecoeur et al., 2019; Crevecoeur et al., 2020b), with mass ‘m,’ was as follows:(1)mx¨=−gx˙+fx+fLOAD(2)my¨=−gy˙+fy(3)τfx˙=ux−fx(4)τfy˙=uy−fy
+The state-space representation of the point-mass (from Crevecoeur et al., 2019; Crevecoeur et al., 2020b), with mass ‘m,’ was as follows:
 
-Dot(s) correspond to time derivatives. The variables fx and fy are the forces applied by the controlled actuator to the mass, and these forces are a first-order response to the actual control vector denoted by variables ux and uy. The parameter g is a dissipative constant (0.1 Nsm–1), Equations 3, 4 capture the first-order muscle dynamics with a time constant set to 0.1 s, and fLOAD represents the external load applied to perturb the point-mass (if any).
+$$
+mx¨=−gx˙+f_{x}+f_{LOAD}
+$$
 
-Defining the state vector as z=[x,y,x˙,y˙,fx,fy], and the control vector u=[ux,uy], we have z˙=Az+Bu, with:(5)A= 00100000010000-g/m01/m0000-g/m01/m0000-1/τ000000-1/τ
 
-and(6)B=000000001/τ001/τ
 
-The system was discretized by using a first-order Taylor series expansion over one time-step of δt:Ad=I+δtA, and Bd=δtB (I is the identity matrix). We used a discretization step of δt=0.01s.
+$$
+my¨=−gy˙+f_{y}
+$$
 
-Importantly, the state space representation of body dynamics was augmented with the x and y-coordinates of the two targets T1 and T2 (denoted by xT1∗,yT1∗,xT2∗,yT2∗), and the system was re-written in discrete-time equations as follows:(7)z(t+1)=Adzt+Bdut+εt
 
-The subscript t is the time-step, and εt is a Gaussian disturbance with zero-mean and covariance ∑ε=σBBT, where σ=0.2 is the scaling coefficient.
 
-## Control policy
+$$
+\tauf_{x}˙=u_{x}−f_{x}
+$$
 
-The control policy (Π) produces motor commands (ut) as a function of the estimated state of the point-mass (z^t). The state-estimate is computed using Kalman filtering as a weighted sum of internal model prediction, and the sensory feedback represents the delayed state information (z(t-Δ)). The sensorimotor delays were set at Δ=50ms in the simulations. The details of the Kalman filtering can be found in the previous paper (Crevecoeur et al., 2011). Overall, motor commands are computed by a linear control policy:(8)ut=Π(z^t)=Ktz^t
 
-The control gains (Kt) determine how much each state variable can influence the motor command, and are computed to minimize a quadratic cost on the behavior (J), using standard dynamic programming procedures (Riccatti equations) described in previous literature (Crevecoeur et al., 2020b; Crevecoeur et al., 2011). So, the control policy can be formalized as finding the trajectory of the control gains ‘Kt’ that minimize the expected costs on the entire sequence (i.e. a holistic plan):(9)Π∗=argminKt∈[0,N]J(z^,u)
+
+$$
+\tauf_{y}˙=u_{y}−f_{y}
+$$
+
+Dot(s) correspond to time derivatives. The variables $f_{x}$ and $f_{y}$ are the forces applied by the controlled actuator to the mass, and these forces are a first-order response to the actual control vector denoted by variables $u_{x}$ and $u_{y}$. The parameter $g$ is a dissipative constant (0.1 Nsm–1), Equations 3, 4 capture the first-order muscle dynamics with a time constant set to 0.1 s, and $f_{LOAD}$ represents the external load applied to perturb the point-mass (if any).
+
+Defining the state vector as $z=[x,y,x˙,y˙,f_{x},f_{y}]$, and the control vector $u=[u_{x},u_{y}]$, we have $z˙=Az+Bu$, with:
+
+$$
+A= 00100000010000-g/m01/m0000-g/m01/m0000-1/\tau000000-1/\tau
+$$
+
+and
+
+$$
+B=000000001/\tau001/\tau
+$$
+
+The system was discretized by using a first-order Taylor series expansion over one time-step of $\deltat:A_{d}=I+\deltatA$, and $B_{d}=\deltatB$ ($I$ is the identity matrix). We used a discretization step of $\deltat=0.01s$.
+
+Importantly, the state space representation of body dynamics was augmented with the x and y-coordinates of the two targets T1 and T2 (denoted by $x_{T1}^{∗},y_{T1}^{∗},x_{T2}^{∗},y_{T2}^{∗}$), and the system was re-written in discrete-time equations as follows:
+
+$$
+z_{(t+1)}=A_{d}z_{t}+B_{d}u_{t}+\epsilon_{t}
+$$
+
+The subscript $t$ is the time-step, and $\epsilon_{t}$ is a Gaussian disturbance with zero-mean and covariance $\sum_{\epsilon}=\sigmaBB^{T}$, where $\sigma=0.2$ is the scaling coefficient.
+
+#### Control policy
+
+The control policy ($Π$) produces motor commands ($u_{t}$) as a function of the estimated state of the point-mass ($z^_{t}$). The state-estimate is computed using Kalman filtering as a weighted sum of internal model prediction, and the sensory feedback represents the delayed state information ($z_{(t-Δ)}$). The sensorimotor delays were set at $Δ=50ms$ in the simulations. The details of the Kalman filtering can be found in the previous paper (Crevecoeur et al., 2011). Overall, motor commands are computed by a linear control policy:
+
+$$
+u_{t}=Π(z^_{t})=K_{t}z^_{t}
+$$
+
+The control gains ($K_{t}$) determine how much each state variable can influence the motor command, and are computed to minimize a quadratic cost on the behavior ($J$), using standard dynamic programming procedures (Riccatti equations) described in previous literature (Crevecoeur et al., 2020b; Crevecoeur et al., 2011). So, the control policy can be formalized as finding the trajectory of the control gains ‘$K_{t}$’ that minimize the expected costs on the entire sequence (i.e. a holistic plan):
+
+$$
+Π^{∗}=argminK_{t\in[0,N]}J(z^,u)
+$$
 
 Importantly, the control policy from Equation 9, receives information about both targets within a sequence as state feedback information, in addition to the continuous but delayed position, velocity, and forces on the end-effector.
 
-## Cost function
+#### Cost function
 
-As described above, the controller design minimizes a quadratic cost function that captures the intended behavior (in this case a two-reach sequence task). The cost function (J) was defined as a function of the state-estimate (z^), and the motor commands (u) used to control the point-mass. In a linear quadratic regulator (LQG), the control problem is to find a control sequence u* which minimizes the expected value of the sum of J(z^, u).
+As described above, the controller design minimizes a quadratic cost function that captures the intended behavior (in this case a two-reach sequence task). The cost function ($J$) was defined as a function of the state-estimate ($z^$), and the motor commands ($u$) used to control the point-mass. In a linear quadratic regulator (LQG), the control problem is to find a control sequence $u^{*}$ which minimizes the expected value of the sum of J($z^$, u).
 
-## Model with terminal costs
+##### Model with terminal costs
 
-Typically, in the case of single reaches, the cost function penalizes the distance between the target and the actual position of the end-effector (terminal or trajectory errors), speed, and motor costs. But an efficient reaching movement in the context of a single reach does not ensure the efficiency of the sequence as a whole. Hence, we consider a composite cost function, that penalizes terminal errors between the end-effector and both targets, to optimize the sequence elements as a whole. Additionally, we can encourage swift or slower transfer between sequence elements by applying a cost on the velocity at the moment when the system approaches the first target (i.e. the intermediate goal). Let the duration of the sequence (N) be divided into two elements, where the first target (T1) should be reached at time-step ‘N1’, and the second target (T2) at time-step ‘N2.’ The holistic cost can be formulated as follows:(10)J(z,u)=JT1error+JT2error+JT1velocity+JT2velocity+Jmotorcost(11)JT1error=w1x(N1)-xT1*2+y(N1)-yT1*2(12)JT2error=w1x(N2)-xT2*2+y(N2)-yT2*2(13)JT1velocity=w2x˙(N1)2+y˙(N1)2(14)JT2velocity=w3x˙(N2)2+y˙(N2)2(15)Jmotorcost=w4∑t=1N2ut2
+Typically, in the case of single reaches, the cost function penalizes the distance between the target and the actual position of the end-effector (terminal or trajectory errors), speed, and motor costs. But an efficient reaching movement in the context of a single reach does not ensure the efficiency of the sequence as a whole. Hence, we consider a composite cost function, that penalizes terminal errors between the end-effector and both targets, to optimize the sequence elements as a whole. Additionally, we can encourage swift or slower transfer between sequence elements by applying a cost on the velocity at the moment when the system approaches the first target (i.e. the intermediate goal). Let the duration of the sequence (N) be divided into two elements, where the first target (T1) should be reached at time-step ‘N1’, and the second target (T2) at time-step ‘N2.’ The holistic cost can be formulated as follows:
 
-Equations 11 and 12 penalize the terminal cost on the positional error relative to T1 and T2 at time-steps N1 and N2, respectively. An equal weight (w1=500) was used for both terminal error terms. Equations 13 and 14 penalize the squared velocity at each target, and the last Equation 15 penalizes high motor output. A rapid transfer between two reaches in a sequence can be simulated by removing the penalty on the velocity at the first target. Hence, in this case, w2=0.1, whereas a slower sequence involves slowing down significantly at the first target, which corresponds to a parameter set to w2=1 in the simulations. In all cases, we set w4= 10–4 as the coefficient on the motor costs term (ut2). Qualitatively similar results can be obtained with a broad range of parameter values (w1,w2,w3,w4).
+$$
+J(z,u)=J_{T1_{error}}+J_{T2_{error}}+J_{T1_{velocity}}+J_{T2_{velocity}}+J_{motorcost}
+$$
 
-## Model with temporal buildup costs
 
-The terminal costs, described above, are sufficient to produce accurate movements with low endpoint errors, while neglecting the trajectory errors before the endpoint. Another possibility is to penalize deviations in the trajectory from the desired endpoint targets throughout the movement duration. Notably, by using temporal buildup of costs, the endpoint errors incur a higher costs, while incurring lower but non-zero cost in the movement duration before the endpoints. Such formulation has been recently applied to emulate human reaching control under uncertain environmental dynamics, in the context of elementary reaching movements (Crevecoeur et al., 2019; Crevecoeur et al., 2020b). To implement the temporal buildup costs model, the position and velocity terms in Equations 11–14 were modified as follows:(16)JT1error=∑t=1N1w1(t/N1)b1[(x(t)−xT1∗)2+(y(t)−yT1∗)2](17)JT2error=∑t=N1N2w1(t−N1N2−N1)b2[(x(t)−xT2∗)2+(y(t)−yT2∗)2](18)JT1velocity=∑t=1N1w2(t/N1)b1[x˙(t)2+y˙(t)2](19)JT1velocity=∑t=1N1w2(t/N1)b1x˙(t)2+y˙(t)2
 
-Where the terms (t/N1)b1 and (t−N1N2−N1)b2 assign a higher cost for the errors that occur when t=N1 and t=N2, respectively, otherwise allowing for non-zero but time-increasing costs. The parameters b1=20 and b2=4 determine the steepness of increase in the cost for a given state from starting time to the terminal times N1 and N2, respectively. Intuitively, these temporal buildup costs can encourage relatively straight point-to-point reaching as the deviations from the targets (T1 and T2) are compensated throughout the movement duration.
+$$
+J_{T1_{error}}=w_{1}x_{(N1)}-x_{T1}^{*}^{2}+y_{(N1)}-y_{T1}^{*}^{2}
+$$
+
+
+
+$$
+J_{T2_{error}}=w_{1}x_{(N2)}-x_{T2}^{*}^{2}+y_{(N2)}-y_{T2}^{*}^{2}
+$$
+
+
+
+$$
+J_{T1_{velocity}}=w_{2}x˙_{(N1)}^{2}+y˙_{(N1)}^{2}
+$$
+
+
+
+$$
+J_{T2_{velocity}}=w_{3}x˙_{(N2)}^{2}+y˙_{(N2)}^{2}
+$$
+
+
+
+$$
+J_{motorcost}=w_{4}\sum_{t=1}^{N2}u_{t}^{2}
+$$
+
+Equations 11 and 12 penalize the terminal cost on the positional error relative to T1 and T2 at time-steps N1 and N2, respectively. An equal weight ($w_{1}=500$) was used for both terminal error terms. Equations 13 and 14 penalize the squared velocity at each target, and the last Equation 15 penalizes high motor output. A rapid transfer between two reaches in a sequence can be simulated by removing the penalty on the velocity at the first target. Hence, in this case, $w_{2}=0.1$, whereas a slower sequence involves slowing down significantly at the first target, which corresponds to a parameter set to $w_{2}=1$ in the simulations. In all cases, we set $w_{4}=$ 10–4 as the coefficient on the motor costs term ($u_{t}^{2})$. Qualitatively similar results can be obtained with a broad range of parameter values ($w_{1},w_{2},w_{3},w_{4}$).
+
+##### Model with temporal buildup costs
+
+The terminal costs, described above, are sufficient to produce accurate movements with low endpoint errors, while neglecting the trajectory errors before the endpoint. Another possibility is to penalize deviations in the trajectory from the desired endpoint targets throughout the movement duration. Notably, by using temporal buildup of costs, the endpoint errors incur a higher costs, while incurring lower but non-zero cost in the movement duration before the endpoints. Such formulation has been recently applied to emulate human reaching control under uncertain environmental dynamics, in the context of elementary reaching movements (Crevecoeur et al., 2019; Crevecoeur et al., 2020b). To implement the temporal buildup costs model, the position and velocity terms in Equations 11–14 were modified as follows:
+
+$$
+J_{T1_{error}}=\sumt=1N1w_{1}(t/N1)^{b1}[(x_{(t)}−x_{T1}^{∗})^{2}+(y_{(t)}−y_{T1}^{∗})^{2}]
+$$
+
+
+
+$$
+J_{T2_{error}}=\sumt=N1N2w_{1}(\frac{t−N1}{N2−N1})^{b2}[(x_{(t)}−x_{T2}^{∗})^{2}+(y_{(t)}−y_{T2}^{∗})^{2}]
+$$
+
+
+
+$$
+J_{T1_{velocity}}=\sumt=1N1w_{2}(t/N1)^{b1}[x˙_{(t)}^{2}+y˙_{(t)}^{2}]
+$$
+
+
+
+$$
+J_{T1_{velocity}}=\sum_{t=1}^{N1}w_{2}(t/N1)^{b1}x˙_{(t)}^{2}+y˙_{(t)}^{2}
+$$
+
+Where the terms $(t/N1)^{b1}$ and $(\frac{t−N1}{N2−N1})^{b2}$ assign a higher cost for the errors that occur when t=N1 and t=N2, respectively, otherwise allowing for non-zero but time-increasing costs. The parameters $b1=20$ and $b2=4$ determine the steepness of increase in the cost for a given state from starting time to the terminal times $N1$ and $N2$, respectively. Intuitively, these temporal buildup costs can encourage relatively straight point-to-point reaching as the deviations from the targets (T1 and T2) are compensated throughout the movement duration.

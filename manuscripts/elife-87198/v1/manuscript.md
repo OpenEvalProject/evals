@@ -21,15 +21,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01y0j0j86 School of Ecology and Environment, Northwestern Polytechnical University Xi'an China
-2. https://ror.org/034t30j35 Institute of Deep-Sea Science and Engineering, Chinese Academy of Sciences Sanya China
-3. https://ror.org/00b4mx203 Key Laboratory of Aquatic Biodiversity and Conservation, Institute of Hydrobiology, Chinese Academy of Sciences Wuhan China
+1. School of Ecology and Environment, Northwestern Polytechnical University Xi'an China ([ROR:01y0j0j86](https://ror.org/01y0j0j86))
+2. Institute of Deep-Sea Science and Engineering, Chinese Academy of Sciences Sanya China ([ROR:034t30j35](https://ror.org/034t30j35))
+3. Key Laboratory of Aquatic Biodiversity and Conservation, Institute of Hydrobiology, Chinese Academy of Sciences Wuhan China ([ROR:00b4mx203](https://ror.org/00b4mx203))
 
 † Corresponding author
 
 ## Abstract
 
-As the deepest vertebrate in the ocean, the hadal snailfish ( Pseudoliparis swirei ), which lives at a depth of 6,000–8,000 m, is a representative case for studying adaptation to extreme environments. Despite some preliminary studies on this species in recent years, including their loss of pigmentation, visual and skeletal calcification genes, and the role of trimethylamine N-oxide in adaptation to high-hydrostatic pressure, it is still unknown how they evolved and why they are among the few vertebrate species that have successfully adapted to the deep-sea environment. Using genomic data from different trenches, we found that the hadal snailfish may have entered and fully adapted to such extreme environments only in the last few million years. Meanwhile, phylogenetic relationships show that they spread into different trenches in the Pacific Ocean within a million years. Comparative genomic analysis has also revealed that the genes associated with perception, circadian rhythms, and metabolism have been extensively modified in the hadal snailfish to adapt to its unique environment. More importantly, the tandem duplication of a gene encoding ferritin significantly increased their tolerance to reactive oxygen species, which may be one of the important factors in their adaptation to high-hydrostatic pressure.
+As the deepest vertebrate in the ocean, the hadal snailfish (Pseudoliparis swirei), which lives at a depth of 6,000–8,000 m, is a representative case for studying adaptation to extreme environments. Despite some preliminary studies on this species in recent years, including their loss of pigmentation, visual and skeletal calcification genes, and the role of trimethylamine N-oxide in adaptation to high-hydrostatic pressure, it is still unknown how they evolved and why they are among the few vertebrate species that have successfully adapted to the deep-sea environment. Using genomic data from different trenches, we found that the hadal snailfish may have entered and fully adapted to such extreme environments only in the last few million years. Meanwhile, phylogenetic relationships show that they spread into different trenches in the Pacific Ocean within a million years. Comparative genomic analysis has also revealed that the genes associated with perception, circadian rhythms, and metabolism have been extensively modified in the hadal snailfish to adapt to its unique environment. More importantly, the tandem duplication of a gene encoding ferritin significantly increased their tolerance to reactive oxygen species, which may be one of the important factors in their adaptation to high-hydrostatic pressure.
 
 ## Introduction
 
@@ -41,53 +41,155 @@ Unfortunately, these questions have not been well resolved because it is difficu
 
 ## Results
 
-## Improved genome assembly for Mariana hadal snailfish
+### Improved genome assembly for Mariana hadal snailfish
 
 A total of four hadal snailfish (P. swirei) and four Tanaka’s snailfish (Liparis tanakae) individuals were collected for this study (Supplementary file 1). Using a combination of Oxford Nanopore Technologies (ONT) long reads, Beijing Genomics Institute (BGI) short reads, and Hi-C sequencing technologies, we generated a chromosome-level genome assembly for hadal snailfish (Supplementary file 2). The genome assembly comprised 1,173 contigs (total length = 626.44 Mb, contig N50 = 4.22 Mb), organized into 24 chromosomes with an anchoring rate of 98.24%. The new assembly filled 1.26 Mb of gaps that were present in our previous assembly and have a much higher level of genome continuity and completeness (with complete BUSCOs of 96.0% [Actinopterygii_odb10 database]) than the two previous assemblies (Figure 1—figure supplements 1 and 2; Supplementary file 3 and 4; Mu et al., 2021; Wang et al., 2019). Moreover, the genome redundancy caused by mis-assembly is also largely reduced in the new assembly (Figure 1—figure supplement 3), which ensures the reliability of the subsequent analysis. Meanwhile, we generated a high-quality chromosomal-level genome assembly for Tanaka’s snailfish for a comparative evolutionary study. We noticed that there is no major chromosomal rearrangement between hadal snailfish and Tanaka’s snailfish, and chromosome numbers are consistent with the previously reported MTZ-ancestor (the last common ancestor of medaka, Tetraodon, and zebrafish) (Kasahara et al., 2007), while the stickleback had undergone several independent chromosomal fusion events (Figure 1—figure supplement 4).
 
 Based on the new genome assemblies, we re-examined the genetic changes that occurred in the common ancestor of hadal snailfish in combination with the new resequencing and transcriptome data. After a thorough scan and careful inspection, we identified 51 absent genes, 20 unitary pseudogenes, 21 lineage-specific expanded genes, 33 genes with insertions and deletions (with a length ≥3 amino acids) in coding regions, and 33 de novo-originated new genes (Supplementary file 8-12). Most of them have not been previously reported and we discuss them in the following sections.
 
-## Cross-trench distribution and high level of genetic diversity
+### Cross-trench distribution and high level of genetic diversity
 
 Combining the eight new sequenced individuals (four hadal snailfish and four Tanaka’s snailfish) with five previously reported individuals (four hadal snailfish and one Tanaka’s snailfish), we have been able to form an initial perspective of the hadal snailfish at the population level. The principal component analysis (PCA), neighbor-joining tree, and genetic clustering analysis show that the eight hadal snailfish individuals can be divided into two populations, the first with seven individuals and the second with one individual (Figure 1A–C; Supplementary file 1). Interestingly, the first population includes samples from both the Mariana and Yap trenches. Using the mitochondrial data, we found that the divergence time of these individuals from different trenches appears to be only about 44,000 years (Figure 1—figure supplement 5). Combined with additional publicly available mitochondrial data, we noticed that the sample from the Kermadec Trench (Gerringer et al., 2017b), about 6400 km away from the Mariana Trench, is also clustered with individuals from the first population, and the divergence time was estimated to be 1.0 Mya (Figure 1D, Figure 1—figure supplement 6). These results suggest that hadal snailfish have successfully spread to multiple trenches in the Pacific Ocean over the course of a million years. And this dispersal may have been caused by population expansion or deep circulation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-v1.jpg)
+
+**Figure 1.:** (A) Principal component analysis (PCA) of eight hadal snailfish and five Tanaka’s snailfish. PC, principal component; MHS, Mariana hadal snailfish; YHS, Yap hadal snailfish; TS, Tanaka’s snailfish. (B) Neighbor-joining tree analysis of eight hadal snailfish and five Tanaka’s snailfish using SNPs detected in whole-genome resequencing data. (C) Ancestry results from Admixture under the k = 5 model. (D) Maximum likelihood trees constructed with 13 genes encoding mitochondria in these species, where KHS01-KHS03 were constructed using two mitochondrial genes (co1 and cytb) and manually merged with other species. Divergence times are shown in each node, and the color of each branch represents the survival depth of the species. KHS, Notoliparis kermadecensis. (E) Sampling information of hadal snailfish and Tanaka’s snailfish. Blue represents the ocean, the darker the color, the deeper the depth, depth data from GEBCO Compilation Group (2020) GEBCO 2020 Grid (doi:10.5285/a29c5465-b138-234d-e053-6c86abc040b9).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Genome size was estimated by: Genome Size = knum/kdepth. The estimated genome size 633.2 Mb for hadal snailfish and 539.9 Mb for Tanaka’s snailfish, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Comparison of assembly contiguity in hadal snailfish. The x-axis is the number of scaffolds, and the y-axis is the length of the scaffold as a percentage of the total genome length. HS: the hadal snailfish genome assembled in this work, MHS2019: https://figshare.com/articles/dataset/Genome_assembly_of_Mariana_hadal_snailfish/9782414?file=17520179, YHS: GCA_004335475.1. (B) Length of the gaps and BUSCO genome assessment in each genome assembly. (C) Assessment of heterozygous sequences in different versions of hadal snailfish genome. These sequences largely resulted from assembly redundancy. The horizontal coordinate refers to the read depth, and the vertical coordinate refers to the read occurrence frequency.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Each line represents a syntenic block of 10 or more zones from the results of LAST with a similarity of 75% or more and length >1000 bp.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Phylogenetic tree constructed using the coding sequences of 13 mitochondrial genes (atp6, atp8, co1, co2, co3, cytb, nd1, nd2, nd3, nd4, nd4l, nd5, nd6), in which the divergence time between YHS and MHS was 0.044 million years ago.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Phylogenetic tree constructed using RAxML with the selected parameter ‘-N 100’ based on the coding sequences of co1 and cytb, where the support of Notoliparis kermadecensis (KHS) and Mariana hadal snailfish (MHS) divergence nodes was 95. (B) Phylogenetic tree constructed with the coding sequences of two mitochondrial genes (co1 and cytb), where the divergence between KHS and MHS was 1.0067 million years ago.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Heterozygosity ratio per 500 kb in different individuals of hadal snailfish and Tanaka’s snailfish. Distribution of Π of 10 kb windows (B) and FST of 10 kb windows with 1 kb steps (C).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** The mutation ratio among nine teleosts and the demographic history for hadal snailfish and Tanaka’s snailfish. (A) The mutation ratio is inferred by the fourfold degenerate synonymous site (4D). (B) Demographic history for five hadal snailfish individuals and two Tanaka’s snailfish individuals inferred by pairwise sequential Markovian coalescent (PSMC). The generation time is 1 y for Tanaka snailfish and 3 y for hadal snailfish.
+
 Genetic diversity of hadal snailfish is about 3.48 times higher than Tanaka’s snailfish. The FST between the two species is close to 0.91, indicating a large genetic divergence (Figure 1—figure supplement 7). That most polymorphisms are unique to each species, and that they share only 6% of their SNPs, is consistent with this observation. In addition, we also estimated the demographic history of hadal snailfish at the population level and observed a significant expansion in the last 60,000 years (Figure 1—figure supplement 8).
 
-## Preserved rh1 gene suggests rapid adaptation to hadal zone
+### Preserved rh1 gene suggests rapid adaptation to hadal zone
 
 Based on the mitochondrial data, the closest known species related to the hadal snailfish were found to be from the genera Careproctus, Crystallias, Rhodichthys, and Paraliparis, which contain many species living at approximately 1,000 m depth (Figure 1D; Supplementary file 13). The divergence time between hadal snailfish and these species was estimated to be about 9.9 Mya, close to the formation time (8 Mya) of the deepest trough of the Mariana Trench (Oakley et al., 2009). We might therefore speculate that the ancestor of hadal snailfish adapted to the deep-sea environment around 1,000 m at about 9.9 Mya, and subsequently gradually adapted to greater depths in the formed or forming trench. The upper and lower limits of the time for hadal snailfish to enter the hadal zone were estimated to be 9.9 Mya (divergence time between hadal snailfish and its closest relatives) and 1.0 Mya (divergence time between different hadal snailfish individuals), respectively. Interestingly, the vision-related genes also confirm a rapid adaptation to hadal zone.
 
 Fish that inhabit different depths of the sea rely on different vision-related genes (Musilova et al., 2019). Since light with longer wavelengths is absorbed more quickly than those with shorter wavelengths (except for the shortest UV wavelengths), high-energy light with shorter wavelengths, such as blue, is able to penetrate to greater depths (Figure 2A). The genes responsible for absorbing these shorter wavelengths (sws2 and rh2) are therefore much more important to deep-sea species in the photic zone (above 200 m) than those that absorb longer wavelengths (lws). Similarly, the genes providing monochromatic vision in very dim light (rh1 and gnat1) have been proven to be important for deep-sea species of the disphotic zone (from 200 m to 1,000 m) (Musilova et al., 2019). We noticed that the lws gene (long wavelength) has been completely lost in both hadal snailfish and Tanaka’s snailfish; rh2 (central wavelength) has been specifically lost in hadal snailfish (Figure 2B and C); sws2 (short wavelength) has undergone pseudogenization in hadal snailfish (Figure 2—figure supplement 1); while rh1 and gnat1 (perception of very dim light) is both still present and expressed in the eyes of hadal snailfish (Figure 2D). A previous study has also proven the existence of rhodopsin protein in the eyes of hadal snailfish using proteome data (Yan et al., 2021). The preservation and expression of genes for the perception of very dim light suggest that they are still subject to natural selection, at least in the recent past.
 
-## Highly expressed auditory genes
+![Figure 2.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig2-v1.jpg)
+
+**Figure 2.:** (A) Different colors of light penetrate the depth of the open ocean. Longer wavelengths (such as red) are absorbed at shallower depths, while shorter wavelengths (such as blue) can penetrate to deeper depths. (B) Genetic alterations in the genes encoding the four major proteins involved in activating the photoresponse of vertebrate photoreceptors in the cone cell and rod cell of hadal snailfish. Opsion: rhodopsin, or its cone equivalent. G-protein: heterotrimeric G-protein, transducin. (C) Gene loss of pde6c and opn1mw4 in hadal snailfish. (D) Log10-transformation normalized counts for DESeq2 (COUNTDESEQ2) of vision-related genes in the eyes of hadal snailfish and Tanaka’s snailfish. * represents genes significantly downregulated in hadal snailfish (corrected p<0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The deletion changed the protein’s sequence, causing its premature termination.
+
+### Highly expressed auditory genes
 
 Do hadal snailfish compensate for the lack of vision when perceiving the external environment? The genes associated with the olfactory and auditory systems were investigated using both comparative genomic and transcriptomic methods. While the number of olfactory receptors was largely reduced (Figure 3—figure supplement 1), we found that the majority of the auditory genes were well preserved in hadal snailfish. Many of the auditory genes also tended to be significantly more upregulated in the brain of hadal snailfish than in Tanaka’s snailfish (Figure 3A; Supplementary file 14). The upregulated genes involve many aspects of the auditory system, including the development and tethering of otoliths (Kang et al., 2008; Stooke-Vaughan et al., 2015), the development (Iyer and Groves, 2021; Kozlowski et al., 2005; Riley, 2021; Wang et al., 2008), maturation and maintenance of inner ear hair cells, the development and mechanosensitivity of stereocilia (Cirilo et al., 2021; Kitajiri et al., 2010), and other factors (Giffen et al., 2019; Verdoodt et al., 2021; Figure 3A). Of these, the most significant upregulated gene is tmc1, which encodes transmembrane channel-like protein 1, involved in the mechanotransduction process in sensory hair cells of the inner ear that facilitates the conversion of mechanical stimuli into electrical signals used for hearing and homeostasis (Maeda et al., 2014), and some mutations in this gene have been found to be associated with hearing loss (Kitajiri et al., 2007; Riahi et al., 2014). Interestingly, tmc1 is also found to be the gene with the longest deletion specific to hadal snailfish (11 amino acids) in the regions that are generally highly conserved across vertebrate’s genomes (Figure 3—figure supplement 2); the functional implications of this alteration need further verification.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig3-v1.jpg)
+
+**Figure 3.:** (A) Upregulation of auditory-related genes in hadal snailfish brain. Red represents upregulated genes in hadal snailfish. (B) Increased copy number of cldnj in hadal snailfish. The relative positions of genes on chromosomes are indicated by arrows, with arrows to the right representing the forward strand and arrows to the left representing the reverse strand. (C) Nanopore sequencing read depth for all cldnj in hadal snailfish.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** ‘Air’ (yellow circles) and ‘water’ (blue circles) refer to the detection of airborne and water-soluble odorants, respectively. The size of the circles indicates the number of intact OR genes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Sequence alignment revealed that the amino acid sequence of tmc1 was specifically deletion in hadal snailfish. The gray bar with blue stripes shows the exon–intron structure of tmc1. (B) Structural modeling by AlphaFold2 suggests that amino acid deletions specific to the tmc1 sequence in hadal snailfish have resulted in structural alterations.
+
 Moreover, the gene involved in lifelong otolith mineralization, cldnj, has three copies in hadal snailfish, but only one copy in other teleost species, encoding a claudin protein that has a role in tight junctions through calcium-independent cell-adhesion activity (Figure 3B and C; Hardison et al., 2005). This may be important for hadal snailfish because calcium carbonate, the inorganic component in otoliths, is thought not to accumulate efficiently below the carbonate compensation depth (CCD; >4,000–5,000 m) (Jamieson, 2015). It should be noted that the hadal snailfish survive at depths far beyond the limits of CCD, but their otoliths still maintain densities similar to those of sea-surface species (Gerringer et al., 2021a). In our investigation, we found that the expression of cldnj was not significantly upregulated in the brain of the hadal snailfish than in Tanaka’s snailfish, which may be related to the fact that cldnj is mainly expressed in the otocyst, while the expression in the brain is lower. However, due to the immense challenge in obtaining samples of hadal snailfish, the expression of cldnj in the otocyst deserves more in-depth study in the future. Expansion of cldnj was observed in all resequenced individuals of the hadal snailfish (Supplementary file 10), which provides an explanation for the hadal snailfish breaks the depth limitation on calcium carbonate deposition and becomes one of the few species of teleost in hadal zone.
 
-## Circadian rhythm decoupled from sunlight and dark adaptation
+### Circadian rhythm decoupled from sunlight and dark adaptation
 
 There is growing evidence that persistent darkness challenges the physiology and behavior of animals, leading to disrupted circadian rhythms, neurological damage, and depressive-behavioral phenotypes (Fisk et al., 2018). Consistent with previous research in cavefish (Policarpo et al., 2021), we noticed that many of the circadian rhythm genes (per2a, cry1a, cry3, cry5, and gpr19) are lost or have undergone pseudogenization in the hadal snailfish (Figure 4A and B, Figure 4—figure supplement 1). Despite that, we noticed that the essential clock control genes are present and expressed in the hadal snailfish, indicating that the rhythm cycle is retained, although it is likely to have been largely uncoupled from sunlight. Moreover, gpr19 deficiency has been reported to prolong the cycle of circadian locomotor activity rhythms (Yamaguchi et al., 2021), so hadal snailfish may have an extended rhythm cycle like cavefish (Cavallari et al., 2011; Yamaguchi et al., 2021).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig4-v1.jpg)
+
+**Figure 4.:** (A) Genetic changes involved in light-mediated regulation of the molecular clock in hadal snailfish suprachiasmatic nucleus (SCN) neurons. (B) Pseudogenization of gpr19 (gray) in hadal snailfish. Gene structure (top), alignment of nucleotide and amino acid sequences (middle), and sequencing read depth (bottom; the numbers along the x-axis represent the position of the base at the scaffold) for the gpr19 gene. The premature termination (colored red) of gpr19 is due to 82 nucleotide variants and 22 nucleotide deletions (blue). (C) The deletion of one copy of grpr and another copy of downregulated expression in hadal snailfish. The relative positions of genes on chromosomes are indicated by arrows, with arrows to the right representing the forward strand and arrows to the left representing the reverse strand. The heatmap presented is the average of the normalized counts for DESeq2 (COUNTDESEQ2) in all replicate samples from each tissue. * represents tissue in which the grpr-1 was significantly downregulated in hadal snailfish (corrected p<0.05). (D) Gene loss of tmem263 in hadal snailfish.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Genetic changes involved in light-mediated regulation of the molecular clock in hadal snailfish suprachiasmatic nucleus (SCN) neurons using Tanaka’s snailfish (this work) as references. (B) Expression of the grpr in a 24 hr light/dark cycle in the mouse SCN. Data source at http://www.wgpembroke.com/shiny/SCNseq.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Differences in gene expression between species for each organ. Box plots of Spearman’s rank correlation coefficients for each organ of hadal snailfish and Tanaka’s snailfish based on 1000 bootstrap replicates. (B) Expression of new genes in hadal snailfish in various tissues.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Multiple genes associated with fatty acid entry into mitochondria were upregulated in hadal snailfish compared to Tanaka’s snailfish (red). (B) The insertion changed the protein’s sequence, causing its premature termination. The numbers above the alignment represent sequence positions including gaps.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The heatmap presented is the average of the normalized counts for DESeq2 (COUNTDESEQ2) in all replicate samples from each tissue.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Short reads from seven hadal snailfish individuals (MHS01–MHS07) and five Tanaka’s snailfish individuals (TS01–TS05) were mapped with stickleback’s genome sequence, in which tmem251 and tmem263 genes were lost in hadal snailfish. (B) Site-specific amino acid site alterations of sox6. Amino acids unique to hadal snailfish are highlighted in red; positions within each sequence are given above.
 
 In addition, in the teleosts closely related to hadal snailfish, there are usually two copies of grpr encoding the gastrin-releasing peptide receptor; we noticed that in hadal snailfish one of them is absent and the other is barely expressed in brain (Figure 4C), whereas a previous study found that the grpr gene in the mouse suprachiasmatic nucleus (SCN) did not fluctuate significantly during a 24 hr light/dark cycle and had a relatively stable expression (Pembroke et al., 2015; Figure 4—figure supplement 1). It has been reported that grpr-deficient mice, while exhibiting normal circadian rhythms, show significantly increased locomotor activity in dark conditions (Wada et al., 1997; Zhao et al., 2023). We might therefore speculate that the absence of that gene might in some way benefit the activity of hadal snailfish under complete darkness.
 
 It should be noted that the abovementioned missing genes are not sufficient to exhibit the full range of changes that occur in the nervous system of hadal snailfish. Previous studies suggest that HHP suppressed the compound action potential in nerve trunks of fishes from shallow areas but not from deep areas, and can perturb the function of G protein-coupled receptors (Siebenaller and Murray, 1995). From our transcriptome data, we also observed that the brain is one of the most divergent organs regarding expression levels between hadal snailfish and Tanaka’s snailfish (Figure 4—figure supplement 2). Specifically, there are 3,587 upregulated genes and 3,433 downregulated genes in the brain of hadal snailfish compared to Tanaka snailfish, and Gene Ontology (GO) functional enrichment analyses revealed that upregulated genes in the hadal snailfish are associated with cilium, DNA repair, and microtubule-based movement, while downregulated genes are enriched in membranes, GTP-binding, proton transmembrane transport, and synaptic vesicles (Supplementary file 15). In line with this observation, one of our previous studies showed that zebrafish brains have the highest number of differentially expressed genes than the other investigated organs when exposed to HHP (Hu et al., 2022). We also identified 15 de novo new genes in hadal snailfish that are highly expressed in the brain (Figure 4—figure supplement 2). The adaptation of the nervous system to HHP deserves more in-depth study in the future.
 
-## Possible survival strategy of storing energy
+### Possible survival strategy of storing energy
 
 In a previous study, it was noticed that the individual hadal snailfish we investigated retained a large amount of intact food in its stomach and had larger eggs than might otherwise be expected (Gerringer et al., 2017b; Wang et al., 2019). It appears that the hadal snailfish have a survival strategy of storing energy, which is often found in species that need to cope with occasional starvation. Here we find another clue that hints at the existence of this possibility: the pseudogenization of the gene gpr27 in hadal snailfish (Figure 4—figure supplement 3). Gpr27 is a G protein-coupled receptor, belonging to the family of cell surface receptors, involved in various physiological processes and expressed in multiple tissues including the brain, heart, kidney, and immune system. It has been reported that the knockout of gpr27 increases the expression of key enzymes in the carnitine shuttle complex (Nath et al., 2020), especially cpt1, which is essential for the β-oxidation of lipid metabolism. The transcriptome data further confirm that the gene cpt1 is significantly upregulated in the liver of hadal snailfish. As lipid mobilization is thought to be a common metabolic response to short-term starvation in fish (Liao et al., 2017), the inactivation of gpr27 could help hadal snailfish to better survive periods of food deficiency. Although previous surveys have shown that various types of organisms live in the hadal zone, and that the hadal snailfish can survive by eating amphipods and occasionally polychaetes and decapod shrimp (Yan et al., 2021), short-term starvation is still possible because although energy sources are limited by complete darkness, but organisms usually tend to ‘over-reproduce.
 
-## Reduced bone mineralization
+### Reduced bone mineralization
 
 Vitamin D synthesis is dependent on UV light, with phytoplankton being the origin of vitamin D in food (Björn and Wang, 2000). Whether and how vitamin D reaches the hadal zone through various pathways, for instance, as particulate organic matter, is still unknown. By investigating the genes associated with vitamin D metabolic pathways, we found that these genes are well conserved in the genome of hadal snailfish and are similarly expressed in both hadal snailfish and Tanaka’s snailfish (Figure 4—figure supplement 4), suggesting that vitamin D may not be a limiting factor for hadal zone vertebrates.
 
 Nonetheless, micro-CT scans have revealed shorter bones and reduced bone density in hadal snailfish, from which it has been inferred that this species has reduced bone mineralization (Gerringer et al., 2021a); this may be a result of lowering density by reducing bone mineralization, allowing to maintain neutral buoyancy without expending too much energy, or it may be a result of making its skeleton more flexible and malleable, which is able to better withstand the effects of HHP. The gene bglap, which encodes a highly abundant bone protein secreted by osteoblasts that binds calcium and hydroxyapatite and regulates bone remodeling and energy metabolism, had been found to be a pseudogene in hadal fish (Wang et al., 2019), which may contribute to this phenotype. Here, we found two more lost genes specific to hadal snailfish, tmem251 and tmem263, that contribute to reduced bone mineralization (Figure 4D, Figure 4—figure supplement 5). These two genes encode transmembrane proteins, and loss-of-function mutations have now been found that may affect bone mineral deposition and thus bone development and body growth (Ain et al., 2021; Wu et al., 2018). Furthermore, many genes that determine chondrocyte differentiation and bone mineralization were found to be differentially expressed in the bones of hadal snailfish and Tanaka’s snailfish. However, it should be noted that this result derives from a single bone sample of a hadal snailfish and needs further verification.
 
-## HHP adaptation at cellular levels
+### HHP adaptation at cellular levels
 
 HHP exerts broad effects upon cells, including cell membrane fluidity (Casadei et al., 2002; Chong et al., 1983; Kato et al., 2002), protein structure stability (Abe, 2021; Gross and Jaenicke, 1994), and oxidative stress (Aertsen et al., 2005; Moserova et al., 2017). In regard to the effect of cell membrane fluidity, relevant genetic alterations had been identified in previous studies, that is, the amplification of acaa1 (encoding acetyl-CoA acetyltransferase 1, a key regulator of fatty acid β-oxidation in the peroxisome, which plays a controlling role in fatty acid elongation and degradation) may increase the ability to synthesize unsaturated fatty acids (Fang et al., 2000; Wang et al., 2019). As for the stability of the protein structure, previous studies have suggested that the high level of TMAO content could help the marine fishes in resistance to the inhibitory effects of high pressure on numerous proteins (Ma et al., 2014; Yancey et al., 2002; Yancey et al., 2014). We also observed another gene duplication event associated with protein stability. The gene vbp1 (Figure 5—figure supplement 1; Vainberg et al., 1998), encoding prefoldin subunit 3 that promotes protein folding, has two copies in hadal snailfish but one copy in other teleost fishes. But unfortunately, although it is widely known that high pressure leads to the accumulation of reactive oxygen species (ROS) (Abe, 2021; Aertsen et al., 2004; Le et al., 2020), it is still unknown how deep-sea fish cope with this challenge.
 
 We further examined the known ROS-related genes in hadal snailfish, but found that they were not significantly altered in sequence or expression (Figure 5—figure supplement 1). Next, we identified 34 genes that are significantly more highly expressed in all organs of hadal snailfish in comparison to Tanaka’s snailfish and zebrafish, while only 7 genes were found to be significantly more highly expressed in Tanaka’s snailfish using the same criterion (Figure 5—figure supplement 1). The 34 genes are enriched in only one GO category, GO:0000077: DNA damage checkpoint (adjusted p-value: 0.0177). Moreover, 5 of the 34 genes are associated with DNA repair. Interestingly, however, when we analyzed the genes that were both expanded and highly expressed in most tissues, we identified only one gene, fthl27 (encoding a ferritin heavy chain-like protein), which has 14 copies (most of which are tandem duplicates) in hadal snailfish as opposed to 3 copies in Tanaka snailfish (Figure 5A, Figure 5—figure supplement 2). It has also been suggested that ferritin helps control ROS (Orino et al., 2001; Salatino et al., 2019). The expansion of fthl27 was validated in all the eight resequencing individuals by reads mapping (Figure 5—figure supplement 3), indicating that the tandem duplication event occurred at least before the differentiation of these individuals. To test whether the fthl27 can resist oxidative stress, we cultured 293T cells with or without fthl27-overexpression plasmid in cell culture medium supplemented with H2O2 or ferric ammonium citrate (FAC) for 4 hr, and subsequently measured intracellular ROS levels as well as cell viability. The results showed that the intracellular ROS levels of fthl27-overexpression cells were significantly lower than that of the control group (Figure 5B, Figure 5—figure supplement 4). Meanwhile, the fthl27-overexpression cells were also found to had significantly higher cell viability (Figure 5C). Therefore, we hypothesize that the expansion and high expression of this gene may be an important mechanism of resistance to HHP induced ROS in hadal snailfish.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig5-v1.jpg)
+
+**Figure 5.:** (A) The position of the gene copies of fthl27 in Tanaka’s snailfish and hadal snailfish, and the expression of each gene copy in each tissue. The gene expression presented is the average of transcripts per million (TPM) in all replicate samples from each tissue. (B) Reactive oxygen species (ROS) levels were confirmed by redox-sensitive fluorescent probe using DCFH-DA molecular probe in 293T cell culture medium with or without fthl27-overexpression plasmid added with H2O2 or ferric ammonium citrate (FAC) for 4 hr. Images are merged from bright-field images with fluorescent images using ImageJ, while the mean fluorescence intensity (MFI) is also calculated using ImageJ. Green, cellular ROS. Scale bars = 100 μm. (C) Fluorescence intensities of AlamarBlue for 293T cells with or without the fthl27-overexpression plasmid in cell culture medium supplemented with H2O2 or FAC for 4 hr (n=5). Vertical coordinates are relative fluorescence units, and higher relative fluorescence units indicate stronger cell viability. Significantly higher AlamarBlue fluorescence for treated cells compared to control cells (p<0.001) is indicated by an asterisk (***).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Increased gene copy number of vpb1. The relative positions of genes on chromosomes are indicated by arrows, with arrows to the right representing the forward strand and arrows to the left representing the reverse strand. (B) Expression of the reactive oxygen species (ROS)-related genes in different tissues of hadal snailfish and Tanaka’s snailfish. The heatmap presented is the average of the normalized counts for DESeq2 (COUNTDESEQ2) in all replicate samples from each tissue. (C) Genes were significantly more highly expressed in all tissues of the hadal snailfish compared to Tanaka’s snailfish, and five genes (purple) were associated with DNA repair.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The gene expression presented is the average of ferric ammonium citrate (TPM) in all replicate samples from each tissue.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Short reads from eight hadal snailfish individuals (MHS01–MHS07, YHS01) were mapped with hadal snailfish’s genome sequence.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Immunofluorescence analysis of ROS levels in 293T cells with or without the fthl27-overexpression plasmid in cell culture medium supplemented with H2O2 or ferric ammonium citrate (FAC) for 4 hr using the DCFH-DA molecular probes. Images were created by merging bright-field images with fluorescent images using ImageJ. Green, cellular ROS. Scale bars = 100 μm. (B) Reads depth of fthl27 gene in fthl27-transfected HEK293T cells and two untreated HEK293T cells (SRR24835259 and SRR24835265) transcriptome data. (C) Expression of each gene in the transcriptome data of fthl27-transfected HEK293T cells and two untreated HEK293T cells (SRR24835259 and SRR24835265), where the genes shown are the four most highly expressed genes in each sample.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/87198/elife-87198-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Partial alignment of the fmo3a and fmo3d amino acid sequences from various representative teleosts, spotted gar and elephant shark. Amino acids unique to hadal snailfish are highlighted in gray; positions within each sequence are given above.
 
 ## Discussion
 
@@ -103,21 +205,21 @@ In summary, we provide chromosome-level genomes of hadal snailfish and Tanaka’
 
 ## Materials and methods
 
-## Sample collection and identification
+### Sample collection and identification
 
 All the experiments in this study were conducted in accordance with the preapproved guidelines of the Ethics Committee of the Institute of Deep-Sea Science and Engineering, Chinese Academy of Sciences (Sanya, China). The hadal snailfish samples were collected form one site in the Mariana Trench (142°26′E, 11°07′N) at depth of 7,254 m using the deep-sea lander Tianya with a surfacing time of 3 hr (Supplementary file 1). These specimens were identified as conspecific with P. swirei by morphological observations. Tanaka’s snailfish specimens were collected in the southern Yellow Sea in 2018 and identified as L. tanakae on the basis of morphological observations.
 
-## Genome sequencing and assembly
+### Genome sequencing and assembly
 
 Genomic DNA was extracted from the muscle of four hadal snailfish collected from the Mariana Trench and four Tanaka’s snailfish collected from the southern Yellow Sea. We generated a total of 47.8 gigabases (Gb) of Nanopore reads, 148.6 Gb of BGI short reads, and 123.3 Gb of Hi-C reads for hadal snailfish; and 39.0 Gb of Nanopore reads, 130.3 Gb of BGI short reads, and 99.5 Gb of Hi-C reads for Tanaka’s snailfish.
 
 The genome sizes of hadal snailfish and Tanaka’s snailfish were estimated by k-mer distribution analysis (K = 27) of SOApec v2 (Luo et al., 2012) to be 633.2 Mb and 539.9 Mb, respectively. We then assembled the hadal snailfish and Tanaka’s snailfish genomes based on the filtered Nanopore sequencing data using wtdbg2 v2.4.1 (Ruan and Li, 2020) based on default parameters, followed by two rounds of error correction using NextPolish v1.0 (Hu et al., 2020) based on the filtered BGI sequencing data, and finally assembled them into chromosomal versions using 3D-DNA v180114 (Dudchenko et al., 2017) based on Hi-C data. Finally, BUSCO v 4.1.2 (Manni et al., 2021) was used with the library ‘actinopterygii_odb10’ to analyze and evaluate the completeness of the gene set in our draft genome.
 
-## Transcriptome sequencing
+### Transcriptome sequencing
 
 A total of 11 transcriptomes from 6 tissues (eye, stomach, heart, liver, muscle, skin) were extracted from three hadal snailfish, while a total of 26 transcriptomes from 10 tissues (brain, spinal cord, eye, bone, cholecyst, stomach, heart, liver, muscle, skin) were extracted from three Tanaka’s snailfish. RNA was subsequently extracted using TRIzol (Invitrogen) and purified using the RNeasy Mini Kit (QIAGEN). Transcriptome reads were obtained from the Illumina HiSeq 2000 sequencing platform. The RNA sequences were filtered using Fastp v0.20 (Chen et al., 2018) and assembled without reference using SPAdes (Bushmanova et al., 2019) with default parameters. Subsequently, TransDecoder(RRID:SCR_017647) v5.5.0 was used to identify coding regions of the transcripts.
 
-## Genome annotation
+### Genome annotation
 
 Both de novo and homology-based predictions were used to identify repetitive elements in hadal snailfish and Tanaka’s snailfish. First, we constructed a de novo transposable element library using RepeatModeler v1.0.11 (Saha et al., 2008), and then used RepeatMasker v4.0.7 (Chen, 2004) to detect repeats. For homologous annotations, the genome sequences were compared with data from Repbase using RepeatMasker v4.0.7 and RepeatProteinMask v1.36 to predict transposable elements. For tandem repeat sequences, we used Tandem Repeats Finder v4.07 (Benson, 1999) to make predictions.
 
@@ -125,29 +227,29 @@ The repeat masked genome was used for the gene annotation. We used a combination
 
 The integrated gene set was translated into amino acid sequences using InterProScan v5 (Jones et al., 2014) to annotate motifs and domains in protein sequences by searching publicly available databases (including Pfam, PRINTS, PANTHER, ProDom, and SMART), and the genes were further annotated using the KEGG databases.
 
-## Variant calling using resequencing data
+### Variant calling using resequencing data
 
 Short reads of seven Mariana hadal snailfish, one Yap hadal snailfish, and five Tanaka’s snailfish (Supplementary file 1) were mapped to the hadal snailfish genome assembled in this study with BWA v0.7.12-r1039 (Li, 2013); then SAMtools v1.4 (Li et al., 2009) was used to sort and obtain BAM files. To analyze population genetics, we focused on SNPs and small indels (1–10  bp) (Zhang et al., 2021). The SNPs were called using FreeBayes v0.9.10-3-g47a713e (Garrison and Marth, 2012) with parameters ‘--gvcf --min-coverage 5 --limit-coverage 200’ and filtered by following three thresholds: (1) SNPs with missing rate ≤30%; (2) the highest sequencing depth of SNP position <200×; and (3) the lowest sequencing depth for each allele ≥5. Subsequently, we calculated the distribution of heterozygosity in genomewide regions with 500 kb nonoverlapping sliding windows.
 
-## Inference of phylogeny history
+### Inference of phylogeny history
 
-## SNP tree, PCA, and diversity statistics
+#### SNP tree, PCA, and diversity statistics
 
 PLINK v1.90b6.6 (Chen et al., 2019) was used to perform PCA and other population divergency statistics, including nucleotide diversity and genetic differentiation (FST). A neighbor-joining tree was constructed with PHYLIP v3.697 (Felsenstein, 1993) for paired genetic distance matrices.
 
-## Admixture analysis
+#### Admixture analysis
 
 Different K values (from 1 to 5) were tested using Admixture v1.3.0 (Alexander et al., 2009) to infer ancestral populations in all hadal snailfish and Tanaka’s snailfish individuals accessions.
 
-## Demographic analysis
+#### Demographic analysis
 
 The demographic history of hadal snailfish and Tanaka’s snailfish was inferred with pairwise sequential Markovian coalescent (PSMC) (Li and Durbin, 2011) analysis, based on a substitution rate of 1.9174e-09 per generation for hadal snailfish and 5.6790e-09 per generation for Tanaka’s snailfish. The analysis was performed using the following parameters: −N25 −t15 −r5 −p ‘4+25 × 2+4 + 6’. These mutation rates were estimated using r8s v1.81. The generation time is 1 y for Tanaka snailfish and 3 y for hadal snailfish.
 
-## Mitochondrial genome phylogenetic reconstruction and divergence time estimation
+#### Mitochondrial genome phylogenetic reconstruction and divergence time estimation
 
 The mitochondria of eight hadal snailfish and five Tanaka’s snailfish were assembled using NOVOPlasty v4.3.1 (Dierckxsens et al., 2017) with default parameters and annotated using MITOS (http://mitos2.bioinf.uni-leipzig.de/index.py). Subsequently, mitochondrial data from currently published species of the Liparidae were combined, and nucleic acid sequences of 13 coding genes on mitochondria were aligned with MUSCLE v3.8.425 (Edgar, 2021) using default parameters, and alignments of the coding sequences were generated with pal2nal v14 using default parameters. The maximum likelihood (ML) tree was constructed with RAxML-8.2.12 (Stamatakis, 2014) using the following parameters: -f a -m GTRGAMMA -p 15256 -x 271828 -N 100. Finally, divergence times were estimated using MCMCtree v4.9j (Yang, 2007) with one soft-bound calibration timepoint (snailfish-stickleback: ~32–73 Ma) based on previous studies. For Notoliparis kermadecensis, we combined all the above mitochondrial data and performed the same above analysis based on co1 and cytb gene sequences to obtain the ML tree and divergence times.
 
-## Gene loss and duplication
+### Gene loss and duplication
 
 Here, we applied an improved read mapping-based method to identify gene loss and duplication, which is effective in reducing false positives and false negatives caused by genome assembly and annotation errors as well as multispecies sequence alignments. The custom scripts have been deposited in GitHub (https://github.com/wenjie-xu-nwpu/hadal_snailfish copy archived at Xu, 2023). Although this method may have limitations for identifying gene loss and duplication in species with long divergence times, the divergence times of hadal snailfish and Tanaka’s snailfish are about 20 million years (Wang et al., 2019), and at least 88% of the reads in all hadal snailfish individuals can be well compared to Tanaka’s snailfish genome, indicating that this method is applicable to this study.
 
@@ -155,30 +257,30 @@ For gene loss, the following methods were used for identification. (1) Short rea
 
 For gene duplication, the following methods were used for identification. (1) Short reads of eight hadal snailfish and five Tanaka’s snailfish were compared to the stickleback and Tanaka’s snailfish genome using BWA v0.7.12-r1039 (Li, 2013) and subsequently sorted using SAMtools v1.4 (Li et al., 2009) to obtain the BAM files. (2) The homologous sites whose average value of reads depth of all hadal snailfish individuals were greater than 1.5 the average value of the Tanaka’s snailfish individuals were retained and defined as hadal snailfish specific high-copy sites (HCSs). Then, the genes with HCSs accounting for at least 50% of the coding sequence length were selected as the candidate high-copy genes. (3) We searched for the location of this gene on the hadal snailfish genome using BLAT v. 35 (Kent, 2002) and predicted the gene structure using GeneWise v2.4.1 (Birney et al., 2004) to determine its copy number. (4) Finally, the expansion of this gene was determined by constructing a gene tree of the protein sequences of this gene family from nine species: hadal snailfish, Tanaka’s snailfish, medaka, Atlantic cod, flatfish, stickleback, zebrafish, turbot, and fugu.
 
-## Identification of unitary pseudogenes
+### Identification of unitary pseudogenes
 
 Unitary pseudogenes are nonfunctional genes that decay at their original location (Tutar, 2012), and we suggest that some missing homologs will exist in hadal snailfish genome as unitary pseudogenes during their adaptation to the special environment of the hadal zone.
 
 We obtained pseudogenes in hadal snailfish by following five steps. (1) Using the stickleback genome sequence as a reference, we performed synteny alignment for three species (hadal snailfish, Tanaka’s snailfish, and stickleback) with Last v956 (Kiełbasa et al., 2011) using the parameters ‘-E 0.05', generating a total of 382  Mb (of which 290 Mb was informative for all species) of one-to-one alignment sequences with Multiz v1 (Blanchette et al., 2004) using the default parameters. (2) Genes with at least 70% of the coding sequences of stickleback or Tanaka’s snailfish present in the MAF and not present in the corresponding regions of hadal snailfish were selected as alternative unitary pseudogene datasets. (3) We used BLAST v2.9.0 (Altschul et al., 1990) to determine if this gene was present in other regions of the hadal snailfish genome. (4) The hadal snailfish corresponding region was extended left and right by 10 kb, and the genes of stickleback and Tanaka’s snailfish were used as references for predict the gene structure using GeneWise v2.4.1 (Birney et al., 2004). (5) Screening for pseudogenes that were consistent in all hadal snailfish individuals.
 
-## De novo-originated new genes
+### De novo-originated new genes
 
 First, the short reads of eight hadal snailfish and five Tanaka’s snailfish were compared to the hadal snailfish genome using BWA v0.7.12-r1039 (Li, 2013) and subsequently sorted using SAMtools v1.4 (Li et al., 2009) to obtain the BAM files. In the second step, we defined a single-sequenced sample with reads depths <10 at a single locus as a deletion locus. Based on the annotation file of hadal snailfish, we screened all Tanaka’s snailfish individuals for genes with deletions >50%. Next, for the genes specifically present in hadal snailfish selected in the previous step, we used BLAST v2.9.0 (Altschul et al., 1990) to align them with the genomes of eight other fishes (Tanaka’s snailfish, medaka, Atlantic cod, flatfish, stickleback, zebrafish, turbot, and fugu) and screened for genes with a matching region <0.4. Genes with transcripts per million (TPM) maxima less than 1 in each tissue of hadal snailfish were filtered out. The fully annotated genes (presence of start and stop codons) in the results were defined as novel genes of hadal snailfish.
 
-## Lineage-specific changes in amino acid sequences
+### Lineage-specific changes in amino acid sequences
 
 For 17 species – Tanaka’s snailfish, stickleback, pacific bluefin tuna, medaka, platy fish, Atlantic cod, flatfish, zebrafish, turbot, fugu, spotted gar, coelacanth, chicken, mouse, human, brownbanded bamboo shark, and elephant shark (Supplementary file 6) – we identified one-to-one orthologs for each species and hadal snailfish by the Reciprocal Best-Hits (RBH) method, and subsequently selected genes present in 15 species, including hadal snailfish, as conserved gene sets. Next, the protein sequences of the selected genes were aligned using MAFFT v7.471 (Katoh and Standley, 2013), and a custom script was used to select regions that were consistent in other species and had contiguous specificity at sites greater than 3 bp in hadal snailfish, and that had at least 90% sequence identity for each 5 bp region before and after this variant region (Wu et al., 2021). Finally, genes with consistent variants in all hadal snailfish individuals were selected.
 
 We performed protein structure simulation using AlphaFold2 (Cramer, 2021) for the amino acid sequences of target genes in hadal snailfish and Tanaka’s snailfish. Finally, the highest scoring prediction was selected as the best structure and visualized using UCSF Chimera (Pettersen et al., 2004).
 
-## Comparative transcriptome analysis
+### Comparative transcriptome analysis
 
 For the RNA sequences of hadal snailfish and Tanaka’s snailfish, we used Fastp v0.20.0 (Chen et al., 2018) to filter out low-quality and contaminated reads, and then used Hisat2 v 2.1.0 (Kim et al., 2019) to align them to the respective reference genomes. StringTie v1.3.6 (Pertea et al., 2016) was then used to count the number of reads paired for each gene with the help of gene annotation information of the species, and then TPM values were calculated for each gene in both species. Next, we identified 17,281 one-to-one orthologs of hadal snailfish and Tanaka’s snailfish using the RBH method. Subsequently, we identified the genes that were differentially expressed (DEGs) between the same tissues of two species using the R package DESeq2 with |log2 (foldchange)| ≥ 1 and corrected p<0.05. For genes that are upregulated or downregulated in multiple tissues, we first found by stochastic simulation that a gene is differentially expressed between two species in one organ does not affect the probability that this gene is differentially expressed in any other organ. Subsequently, we counted the genes that were upregulated or downregulated in each tissue to obtain a list of genes that were co-altered in multiple tissues.
 
-## Cell lines
+### Cell lines
 
 We selected human embryonic kidney (HEK) 293T cells as an in vitro model. HEK293T cells were provided by Fourth Military Medical University (Xi'an, China). The cell line was validated by short tandem repeat analysis and validated as negative for mycoplasma. The cells were maintained in DMEM (Gibco, USA) supplemented with 10% FBS (Gibco) and 1% antibiotic antifungal (Gibco) at 37°C, 5% CO2.
 
-## Cell culture, transfection, and ROS detection
+### Cell culture, transfection, and ROS detection
 
 HEK293T cells were inoculated in 6-well plates at a density of 4.0 × 105 cells/well. After a day when the cell density reached 50–60%, pcDNA3.1 and pcDNA3.1-fthl27 were transfected into cells with polyethylenimine (PEI), respectively. After 24 hr of transfection, 6-well plates (2 ml total volume of medium per well) were treated with 200 μl of 0.3 mM H2O2 or 0.4 mM FAC, both for 4 hr. Subsequently, the ROS Reactive Oxygen Species Kit (Aladdin R272916-1000T) was used to measure ROS. ROS levels were measured using a DCFH-DA molecular probe, and fluorescence was observed through a fluorescence microscope with an optional FITC filter, with the background removed to observe changes in fluorescence. Bright-field photos and fluorescent photos were merged using ImageJ (RRID:SCR_003070) v1.53t. Subsequently, we added AlamarBlue reagent to the cells in complete medium, incubated them for 2 hr, and then assayed them with a fluorescence zymograph with excitation light wavelength between 530 and 560 nm and emission light wavelength of 590 nm, and recorded the relative fluorescence units.

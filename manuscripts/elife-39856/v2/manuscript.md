@@ -176,7 +176,7 @@
 
 ## Abstract
 
-10.7554/eLife.39856.001 We use a genome-wide association of 1 million parental lifespans of genotyped subjects and data on mortality risk factors to validate previously unreplicated findings near CDKN2B-AS1 , ATXN2/BRAP , FURIN/FES , ZW10 , PSORS1C3 , and 13q21.31, and identify and replicate novel findings near ABO , ZC3HC1 , and IGF2R . We also validate previous findings near 5q33.3/ EBF1 and FOXO3 , whilst finding contradictory evidence at other loci. Gene set and cell-specific analyses show that expression in foetal brain cells and adult dorsolateral prefrontal cortex is enriched for lifespan variation, as are gene pathways involving lipid proteins and homeostasis, vesicle-mediated transport, and synaptic function. Individual genetic variants that increase dementia, cardiovascular disease, and lung cancer – but not other cancers – explain the most variance. Resulting polygenic scores show a mean lifespan difference of around five years of life across the deciles. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+We use a genome-wide association of 1 million parental lifespans of genotyped subjects and data on mortality risk factors to validate previously unreplicated findings near CDKN2B-AS1, ATXN2/BRAP, FURIN/FES, ZW10, PSORS1C3, and 13q21.31, and identify and replicate novel findings near ABO, ZC3HC1, and IGF2R. We also validate previous findings near 5q33.3/EBF1 and FOXO3, whilst finding contradictory evidence at other loci. Gene set and cell-specific analyses show that expression in foetal brain cells and adult dorsolateral prefrontal cortex is enriched for lifespan variation, as are gene pathways involving lipid proteins and homeostasis, vesicle-mediated transport, and synaptic function. Individual genetic variants that increase dementia, cardiovascular disease, and lung cancer – but not other cancers – explain the most variance. Resulting polygenic scores show a mean lifespan difference of around five years of life across the deciles.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -194,9 +194,189 @@ We also examine the diseases associated with lifespan-altering variants and the 
 
 ## Results
 
-## Genome-wide association analysis
+### Genome-wide association analysis
 
 We carried out GWAS of survival in a sample of 1,012,240 parents (60% deceased) of European ancestry from UK Biobank and a previously published meta-analysis of 26 additional population cohorts (LifeGen [Joshi et al., 2017]; Table 1—source data 1). We performed a sex-stratified analysis and then combined the allelic effects in fathers and mothers into a single parental survival association in two ways. First, we assumed genetic variants with common effect sizes (CES) for both parents, maximising power if the effect is indeed the same. Second, we allowed for sex-specific effect sizes (SSE), maximising power to detect sexually dimorphic variants, including those only affecting one sex. The latter encompasses a conventional sex-stratified analysis, but uses only one statistical test for the much more general alternative hypothesis that there is an effect in at least one sex.
+
+**Table 1.**
+ Twelve genome-wide significant associations with lifespan using UK Biobank and LifeGen.Parental phenotypes from UK Biobank and LifeGen meta-analysis, described in Table 1—source data 1, were tested for association with subject genotype. See Table 1—source data 2 for LD Score regression intercept of each cohort separately and combined. Displayed here are loci associating with lifespan at genome-wide significance (p < 2.5 × 10−8). At or near – Gene, set of genes, or cytogenetic band nearest to the index SNP; rsID – The index SNP with the lowest P value in the standard or sex-specific effect (SSE) analysis. Chr – Chromosome; Position – Base-pair position on chromosome (GRCh37); A1 – the effect allele, increasing lifespan; Freq1 – Frequency of the A1 allele; Years1 – Years of life gained for carrying one copy of the A1 allele; SE – Standard Error; P – the P value for the Wald test of association between imputed dosage and cox model residual; Disease – Category of disease for known associations with SNP or close proxies (r2 > 0.6), see Table 1—source data 3 for details and references. Despite the well-known function of the HTT gene in Huntington’s disease, SNPs within the identified locus near this gene have not been associated with the disease at genome-wide significance.Table 1—source data 1.Descriptive statistics of the cohorts and lives analysed.Summary statistics for the 1,012,240 parental lifespans passing phenotypic QC (most notably, parent age > 40). In practice, fewer lives than these were analysed for some SNPs, as a SNP may not have passed QC in all cohorts (in particular LifeGen MAF > 1%). Ancestries in UK Biobank are self-declared, except in the case of Gen. British. Gen. British – Participants identified as genomically British by UK Biobank, based on their genomic profile. LifeGen – A consortium of 26 population cohorts of European Ancestry, with UK Biobank lives removed.Table 1—source data 2.LD-score regression intercepts for GWAS results.Regression intercepts (standard error) of the GWAS summary statistics as calculated by LD-score regression, using LD scores from on average 457,407 SNPs from the UK Biobank array. CES – Results under the assumption of common effect sizes across sexes, SSE – Results allowing for sex-specific effects.Table 1—source data 3.Known associations with genome-wide significant lifespan loci.Genome-wide significant associations from the GWAS catalog and PhenoScanner are reported for the lead SNP and proxies (r2 > 0.6). Similar associations have been grouped, keeping the most significant association and the shortest trait name (Trait). At or near – Gene or cluster of genes in close proximity to lead SNP; A1 – the effect allele, increasing lifespan; A0 – the reference allele. Freq1- Frequency of the A1 allele in the original study, or if missing, averaged from all associations; Beta1 – the reported effect on the trait for carrying one copy of the A1 allele; SE – Standard Error; P – P value; Disease – the type of lifespan-shortening diseases linked to the trait, or ‘other’ if the link is unclear or multiple disease links exist.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>At or near</th>
+      <th>rsID</th>
+      <th>Chr</th>
+      <th>Position</th>
+      <th>A1</th>
+      <th>Freq1</th>
+      <th>Years1</th>
+      <th>SE</th>
+      <th>P</th>
+      <th>SSE P</th>
+      <th>Disease</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MAGI3</td>
+      <td>rs1230666</td>
+      <td>1</td>
+      <td>114173410</td>
+      <td>G</td>
+      <td>0.85</td>
+      <td>0.3224</td>
+      <td>0.0555</td>
+      <td>6.4E-09</td>
+      <td>6.1E-08</td>
+      <td>Autoimmune</td>
+    </tr>
+    <tr>
+      <td>KCNK3</td>
+      <td>rs1275922</td>
+      <td>2</td>
+      <td>26932887</td>
+      <td>G</td>
+      <td>0.74</td>
+      <td>0.2579</td>
+      <td>0.0443</td>
+      <td>6.0E-09</td>
+      <td>2.7E-07</td>
+      <td>Cardiometabolic</td>
+    </tr>
+    <tr>
+      <td>HTT</td>
+      <td>rs61348208</td>
+      <td>4</td>
+      <td>3089564</td>
+      <td>T</td>
+      <td>0.39</td>
+      <td>0.2299</td>
+      <td>0.0395</td>
+      <td>5.8E-09</td>
+      <td>1.2E-07</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HLA-DQA1</td>
+      <td>rs34967069</td>
+      <td>6</td>
+      <td>32591248</td>
+      <td>T</td>
+      <td>0.07</td>
+      <td>0.5613</td>
+      <td>0.0956</td>
+      <td>4.3E-09</td>
+      <td>3.6E-09</td>
+      <td>Autoimmune</td>
+    </tr>
+    <tr>
+      <td>LPA</td>
+      <td>rs10455872</td>
+      <td>6</td>
+      <td>161010118</td>
+      <td>A</td>
+      <td>0.92</td>
+      <td>0.7639</td>
+      <td>0.0743</td>
+      <td>8.5E-25</td>
+      <td>3.1E-24</td>
+      <td>Cardiometabolic</td>
+    </tr>
+    <tr>
+      <td>CDKN2B-AS1</td>
+      <td>rs1556516</td>
+      <td>9</td>
+      <td>22100176</td>
+      <td>G</td>
+      <td>0.50</td>
+      <td>0.2510</td>
+      <td>0.0386</td>
+      <td>7.5E-11</td>
+      <td>6.4E-12</td>
+      <td>Cardiometabolic</td>
+    </tr>
+    <tr>
+      <td>ATXN2/BRAP</td>
+      <td>rs11065979</td>
+      <td>12</td>
+      <td>112059557</td>
+      <td>C</td>
+      <td>0.56</td>
+      <td>0.2798</td>
+      <td>0.0393</td>
+      <td>1.0E-12</td>
+      <td>6.2E-13</td>
+      <td>Autoimmune/ Cardiometabolic</td>
+    </tr>
+    <tr>
+      <td>CHRNA3/5</td>
+      <td>rs8042849</td>
+      <td>15</td>
+      <td>78817929</td>
+      <td>T</td>
+      <td>0.65</td>
+      <td>0.4368</td>
+      <td>0.0410</td>
+      <td>1.6E-26</td>
+      <td>1.9E-30</td>
+      <td>Smoking-related</td>
+    </tr>
+    <tr>
+      <td>FURIN/FES</td>
+      <td>rs6224</td>
+      <td>15</td>
+      <td>91423543</td>
+      <td>G</td>
+      <td>0.52</td>
+      <td>0.2507</td>
+      <td>0.0390</td>
+      <td>1.3E-10</td>
+      <td>1.8E-09</td>
+      <td>Cardiometabolic</td>
+    </tr>
+    <tr>
+      <td>HP</td>
+      <td>rs12924886</td>
+      <td>16</td>
+      <td>72075593</td>
+      <td>A</td>
+      <td>0.80</td>
+      <td>0.2798</td>
+      <td>0.0493</td>
+      <td>1.4E-08</td>
+      <td>9.1E-08</td>
+      <td>Cardiometabolic</td>
+    </tr>
+    <tr>
+      <td>LDLR</td>
+      <td>rs142158911</td>
+      <td>19</td>
+      <td>11190534</td>
+      <td>A</td>
+      <td>0.12</td>
+      <td>0.3550</td>
+      <td>0.0616</td>
+      <td>8.1E-09</td>
+      <td>3.3E-08</td>
+      <td>Cardiometabolic</td>
+    </tr>
+    <tr>
+      <td>APOE</td>
+      <td>rs429358</td>
+      <td>19</td>
+      <td>45411941</td>
+      <td>T</td>
+      <td>0.85</td>
+      <td>1.0561</td>
+      <td>0.0546</td>
+      <td>3.1E-83</td>
+      <td>1.8E-85</td>
+      <td>Cardiometabolic/ Neuropsychiatric</td>
+    </tr>
+  </tbody>
+</table>
 
 We find 12 genomic regions with SNPs passing genome-wide significance for one or both analyses (p < 2.5 × 10–8, accounting for the two tests CES/SSE) (Figure 1; Table 1). Among these are five loci discovered here for the first time, at or near MAGI3, KCNK3, HTT, HP, and LDLR. Carrying one copy of a life-extending allele is associated with an increase in lifespan between 0.23 and 1.07 years (around 3 to 13 months). Despite our sample size exceeding 1 million phenotypes, a variant had to have a minor allele frequency exceeding 5% and an effect size of 0.35 years of life or more per allele for our study to detect it with 80% power.
 
@@ -206,15 +386,146 @@ We find 12 genomic regions with SNPs passing genome-wide significance for one or
 
 We also attempted to validate novel lifespan SNPs discovered by Pilling et al. (2017) in UK Biobank at an individual level by using the LifeGen meta-analysis as independent replication sample. Testing 20 candidate SNPs for which we had data available, we find directionally consistent, nominally significant associations for six loci (p < 0.05, one-sided test), of which three have sex-specific effects. We also provide evidence against three putative loci but lack statistical power to assess the remaining 11 (Figure 2, Figure 2—source data 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig2-v2.jpg)
+
+**Figure 2.:** Discovery – Candidate SNPs or proxies (r2 > 0.95) associated with lifespan (top panels, stratified by sex) and longevity (bottom panel) by previous studies (Zeng et al., 2016; Pilling et al., 2017; Deelen et al., 2014; Flachsbart et al., 2009; Sebastiani et al., 2017; Ben-Avraham et al., 2017). Effect sizes have been rescaled to years of life to make direct comparisons between studies (see Materials and methods and Figure 2—figure supplement 1). Replication – Independent samples, either the LifeGen meta-analysis to replicate Pilling et al. (2017), or the full dataset including UK Biobank. Gene names are as reported by discovery and have been coloured based on overlap between confidence intervals (CIs) of effect estimates. Dark blue – Nominal replication (p < 0.05, one-sided test). Light blue – CIs overlap (Phet > 0.05) and cover zero, but replication estimate is closer to discovery than zero. Yellow – CIs overlap (Phet > 0.05) and cover zero, and replication estimate is closer to zero than discovery. Red – CIs do not overlap (Phet < 0.05) and replication estimate covers zero. Black – no replication data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Effect estimates from Pilling et al. (2017) were converted to loge(protection ratio) based solely on the proportion dead in individual parental samples, or (for combined parents results) based on an empirical conversion factor from APOE (see Materials and methods). By definition, the inferred effect estimate for APOE in combined parents is identical between the studies; all other estimates provide a measure of concordance between inferred and calculated effects for each locus. Gene names are as reported by discovery. Note, rs161091095 near USP2–AS1 is a proxy (r2 = 1.00) for rs139137459, the SNP reported by Pilling et al. No proxies could be found for 13:31871514_T_G. Gene – Nearby gene(s) as reported by discovery. SNP – rsID of SNP or proxy. A1 – Longevity allele. Beta - the estimated loge(protection ratio) for one copy of the effect allele. CI – Confidence Interval.
+
 We then used our full sample to test six candidate SNPs previously associated with longevity (Zeng et al., 2016; Deelen et al., 2014; Flachsbart et al., 2009; Sebastiani et al., 2017) for association with lifespan, and find directionally consistent evidence for SNPs near FOXO3 and EBF1. The remaining SNPs did not associate with lifespan despite apparently adequate power to detect any effect similar to that originally reported (Figure 2, Figure 2—source data 1).
 
 Finally, we tested a deletion, d3-GHR, reported to affect male lifespan by 10 years when homozygous (Ben-Avraham et al., 2017) by converting its effect size to one we expect to observe when fitting an additive model. We used a SNP tagging the deletion and estimated the expected effect size in a linear regression for the (postulated) recessive effect across the three genotypes, given their frequency (see Materials and methods). While this additive model reduces power relative to the correct model, our large sample size is more than able to offset the loss of power, and we find evidence d3-GHR does not associate with lifespan with any (recessive or additive) effect similar to that originally reported (Figure 2, Figure 2—source data 1).
 
-## Mortality risk factor-informed GWAS (iGWAS)
+### Mortality risk factor-informed GWAS (iGWAS)
 
 We integrated 58 publicly available GWAS on mortality risk factors with our CES lifespan GWAS, creating Bayesian priors for each SNP effect based on causal effect estimates of 16 independent risk factors on lifespan. These included body mass index, blood biochemistry, CVD, type 2 diabetes, schizophrenia, multiple sclerosis, education levels, and smoking traits.
 
 The integrated analysis reveals an additional seven genome-wide significant associations with lifespan (Bayes Factor permutation p < 2.5 × 10–8), of which SNPs near TMEM18, GBX2/ASB18, IGF2R, POM12C, ZC3HC1, and ABO are reported at genome-wide significance for the first time (Figure 3; Table 2). A total of 82 independent SNPs associate with lifespan when allowing for a 1% false discovery rate (FDR) (Table 2—source data 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig3-v2.jpg)
+
+**Figure 3.:** Bayesian iGWAS was performed using observed associations from the lifespan GWAS and priors based on 16 traits selected by an AIC-based stepwise model. As the P values were assigned empirically using a permutation approach, the minimum P value is limited by the number of permutations; SNPs reaching this limit are represented by triangles. Annotated are the gene, cluster of genes, or cytogenetic band in close proximity to the top SNP. The red line represents the genome-wide significance threshold (p = 2.5 × 10−8). The blue line represents the 1% FDR threshold. Figure 3—figure supplement 1 shows the associations of each genome-wide significant SNP with the 16 risk factors.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** We looked up the effects of lifespan protecting alleles identified by iGWAS in the consortium GWAMA for all risk factors significantly associated with lifespan in univariate analysis (for studies tested see Materials and methods). We kept all traits univariately associated with lifespan to allow for the presence of potentially correlated traits, not significant in the multivariate analysis. In the iGWAS analysis, Z-scores (estimated effect divided by standard error) are used, but for comparison purposes, standardised betas (Z-score divided by square root of the sample size) were calculated for each risk factor at every SNP and represented in this figure. Both SNPs and traits were clustered for similarity. For example, we can see that almost all iGWAS alleles identified as protective for lifespan are exhibiting negative standardized betas in the coronary artery disease (CAD) association study, confirming the hypothesis that CAD is negatively affecting lifespan. We can also notice that some SNPs are strongly associated with some risk factors (APOE and LDR with lipids traits or CDKN2B-AS1 with CAD) and likely influence lifespan through their effect on these traits. However, some other SNPs (KCNK3 and HTT for example) are showing moderate effects on several risk factors and are probably affecting lifespan through pleiotropic effects.
+
+**Table 2.**
+ Bayesian GWAS using mortality risk factors reveals seven additional genome-wide significant variants.At or near – Gene or set of genes nearest to the index SNP; rsID – The index SNP with the lowest P value in the risk factor-informed analysis. Chr – Chromosome; Position – Base-pair position on chromosome (GRCh37); A1 – the effect allele, increasing lifespan; Freq1 – Frequency of the A1 allele; Years1 – Years of life gained for carrying one copy of the A1 allele; SE – Standard Error; CES P – the P value for the Wald test of association between imputed dosage and cox model residual, under the assumption of common effects between sexes. Risk – mortality risk factors associated with the variant (p < 3.81 × 10−5, accounting for 82 independent SNPs and 16 independent factors). BF P – Empirical P value derived from permutating Bayes Factors. See Table 2—source data 1 for the causal estimate of each risk factor. See Table 2—source data 2 for all SNPs significant at FDR < 1%.Table 2—source data 1.Bayesian GWAS - Multivariate effect estimates for the 16 traits chosen by the AIC based stepwise model selection.The multivariate MR identified 16 traits (58 tested, see McDaid et al., 2017 for an exhaustive list) with significant causal effect on lifespan and used the effect estimates to create the prior assumption of the expected effect size of each variant on lifespan, in the (Bayesian) iGWAS. Effect Estimate – the estimated effect of standardized trait on standardized lifespan, in multivariate model. SE – the standard error of the estimated effect, in multivariate model. P – the P value (two sided) from MR, for testing association between standardized trait and standardized lifespan, in multivariate model.Table 2—source data 2.82 SNPs significantly associated with lifespan at 1% FDR and the SNP’s associations with risk factors.Bayesian iGWAS was performed using observed association results from CES GWAS and priors from 16 risk factors selected by AIC based stepwise model selection. Bayes Factors were calculated to compare effect estimates observed in the conventional GWAS to the prior effect computed. Empirical P values were assigned using a permutation approach and further corrected for multiple testing using Benjamini-Hochberg correction. Chr – Chromosome, Position – Base-pair position on chromosome (GRCh37), A1 – Effect Allele, Freq1 – Frequency of the A1 allele (from conventional GWAS), Beta1 (from conventional GWAS), SE – Standard Error of Beta1, Years – Years of lifespan gained for carrying one copy of the A1 allele (from conventional GWAS), P – P value (from conventional GWAS), PriorEffect – Prior effect estimate calculated from the summary statistics data for the 16 risk factors identified, PriorSE – Standard Error of the prior effect estimate, LogBF – Log of the observed Bayes Factor, P_BF – Empirical P value from a permutation approach for the log Bayes Factor. Final columns show the P value of each SNP in the studies used to calculate the prior, if the P value is significant after Bonferroni multiple testing correction (p < 3.81 × 10−5, 82*16 tests) the cell is shaded green. Counts of these significant associations by SNP/trait are shown in the final column/row.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>At or near</th>
+      <th>rsID</th>
+      <th>Chr</th>
+      <th>Position</th>
+      <th>A1</th>
+      <th>Freq1</th>
+      <th>Years1</th>
+      <th>SE</th>
+      <th>CES P</th>
+      <th>Risk</th>
+      <th>BF P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CELSR2/PSRC1</td>
+      <td>rs4970836</td>
+      <td>1</td>
+      <td>109821797</td>
+      <td>G</td>
+      <td>0.23</td>
+      <td>0.2234</td>
+      <td>0.0463</td>
+      <td>1.4E-06</td>
+      <td>LDL HDL CAD</td>
+      <td>1.6E-09</td>
+    </tr>
+    <tr>
+      <td>TMEM18</td>
+      <td>rs6744653</td>
+      <td>2</td>
+      <td>628524</td>
+      <td>A</td>
+      <td>0.17</td>
+      <td>0.2772</td>
+      <td>0.0511</td>
+      <td>5.8E-08</td>
+      <td>BMI</td>
+      <td>7.0E-10</td>
+    </tr>
+    <tr>
+      <td>GBX2/ASB18</td>
+      <td>rs10211471</td>
+      <td>2</td>
+      <td>237081854</td>
+      <td>C</td>
+      <td>0.80</td>
+      <td>0.2401</td>
+      <td>0.0493</td>
+      <td>1.1E-06</td>
+      <td>Education</td>
+      <td>2.3E-08</td>
+    </tr>
+    <tr>
+      <td>IGF2R</td>
+      <td>rs111333005</td>
+      <td>6</td>
+      <td>160487196</td>
+      <td>G</td>
+      <td>0.98</td>
+      <td>0.8665</td>
+      <td>0.1577</td>
+      <td>3.9E-08</td>
+      <td>LDL CAD</td>
+      <td>6.6E-09</td>
+    </tr>
+    <tr>
+      <td>POM121C</td>
+      <td>rs113160991</td>
+      <td>7</td>
+      <td>75094329</td>
+      <td>G</td>
+      <td>0.78</td>
+      <td>0.2541</td>
+      <td>0.0495</td>
+      <td>2.8E-07</td>
+      <td>BMI Insulin</td>
+      <td>7.5E-09</td>
+    </tr>
+    <tr>
+      <td>ZC3HC1</td>
+      <td>rs56179563</td>
+      <td>7</td>
+      <td>129685597</td>
+      <td>A</td>
+      <td>0.39</td>
+      <td>0.2107</td>
+      <td>0.0406</td>
+      <td>2.1E-07</td>
+      <td>CAD</td>
+      <td>5.6E-09</td>
+    </tr>
+    <tr>
+      <td>ABO</td>
+      <td>rs2519093</td>
+      <td>9</td>
+      <td>136141870</td>
+      <td>C</td>
+      <td>0.81</td>
+      <td>0.2244</td>
+      <td>0.0497</td>
+      <td>6.3E-06</td>
+      <td>LDL CAD</td>
+      <td>1.9E-08</td>
+    </tr>
+  </tbody>
+</table>
 
 As has become increasingly common (Pilling et al., 2017), we attempted to replicate our genome-wide significant findings collectively, rather than individually. This is usually done by constructing polygenic risk scores from genotypic information in an independent cohort and testing for association with the trait of interest subject-by-subject. We used publicly available summary statistics on extreme longevity as an independent replication dataset (Broer et al., 2015; Deelen et al., 2014), but lacking individual data from such studies, we calculated the collective effect of lifespan SNPs on longevity using the same method as inverse-variance meta-analysis two-sample Mendelian randomisation (MR) using summary statistics (Hemani et al., 2018), which gives equivalent results. Prior to doing this, all effects observed in the external longevity studies were converted to hazard ratios using the APOE variant effect size as an empirical conversion factor, to allow the longevity studies to be meta-analysed despite their different study designs (and to be adjusted for sample overlap; see Materials and methods).
 
@@ -222,9 +533,9 @@ Although the focus is on collective replication, our method has the advantage of
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig4-v2.jpg)
 
-**Figure 4.:** Forest plot of effect size ratios between genome-wide significant lifespan variants from our study and external longevity studies (Broer et al., 2015; Deelen et al., 2014), having converted longevity effect sizes to our scale using APOE as benchmark (see Materials and methods and Figure 4—source data 1). Alpha – ratio of replication to discovery effect sizes on the common scale and 95% CI (reflecting uncertainty in the numerator and denominator; P values are for one-sided test). A true (rather than estimated) ratio of 1 indicates the relationship between SNP effect on lifetime hazard and extreme longevity is the same as that of APOE, while a ratio of zero suggests no effect on longevity. A true ratio between 0 and 1 suggests a stronger effect on lifetime hazard than longevity relative to APOE. SNPs overlapping both 0 and 1 are individually underpowered. The inverse variance meta-analysis of alpha over all SNPs, excluding APOE, is 0.42 (95% 0.23 to 0.61; p = 1.35 × 10–5) for H0 alpha = 0.10.7554/eLife.39856.017Figure 4—source data 1.At or near – gene, cluster of genes, or cytogenetic band near lead SNP; Proxy – the rsID of the nearest (r2) SNP reported by Deelen et al.; Chr – Chromosome; Position – Base-pair position (GRCh37); A1 – the effect allele, A0 – the reference allele, Freq1 – the frequency of A1 allele; Beta1 – the log hazard ratio (in self) for a carrier of 1 copy of A1; SE – standard error; P – P value for test of association between proxy and lifespan (for IVM replication this is one sided); Discovery – the combined GWAS of UKBB genomically British, UKBB other and LifeGen; Replication – the GWAMAs of Deelen et al. (2014) and Broer et al. (2015), recalibrated (using APOE) to log hazard ratios, combined using inverse-variance meta-analysis, and adjusted for sample overlap; Alpha – the ratio of effect size in replication to discovery (note as this was calibrated on APOE, that result was necessarily 1).
+**Figure 4.:** Forest plot of effect size ratios between genome-wide significant lifespan variants from our study and external longevity studies (Broer et al., 2015; Deelen et al., 2014), having converted longevity effect sizes to our scale using APOE as benchmark (see Materials and methods and Figure 4—source data 1). Alpha – ratio of replication to discovery effect sizes on the common scale and 95% CI (reflecting uncertainty in the numerator and denominator; P values are for one-sided test). A true (rather than estimated) ratio of 1 indicates the relationship between SNP effect on lifetime hazard and extreme longevity is the same as that of APOE, while a ratio of zero suggests no effect on longevity. A true ratio between 0 and 1 suggests a stronger effect on lifetime hazard than longevity relative to APOE. SNPs overlapping both 0 and 1 are individually underpowered. The inverse variance meta-analysis of alpha over all SNPs, excluding APOE, is 0.42 (95% 0.23 to 0.61; p = 1.35 × 10–5) for H0 alpha = 0.
 
-## Sex- and age-specific effects
+### Sex- and age-specific effects
 
 We stratified our UK Biobank sample (for which we had individual level data) by sex and age bands to identify sex- and age-specific effects for survival SNPs discovered and/or replicated in this study. Although power was limited, as we sought contrasts in small effect sizes, we find 5 SNPs with differential effects on lifespan when stratified (FDR 5% across the 24 variants considered).
 
@@ -232,17 +543,17 @@ The effect of the APOE variant increases with age: the ε4 log hazard ratio on i
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig5-v2.jpg)
 
-**Figure 5.:** (A) Variants showing age-specific effects; (B) Variants showing sex-specific effects. Panel titles show the gene, cluster of genes, or cytogenetic band in close proximity to the index lifespan variant, with this variant and lifespan-increasing allele in parentheses. Beta – loge(protection ratio) for 1 copy of effect allele in self in the age band (i.e. 2 x observed due to 50% kinship). Note the varying scale of y-axis across panels. Age range: the range of ages over which beta was estimated. Sex p – nominal P value for association of effect size with sex. Age p – nominal P value for association of effect size with age.10.7554/eLife.39856.019Figure 5—source data 1.At or near – Gene, cluster of genes, or cytogenetic band in close proximity to lead variant. Variant – rsID, longevity allele. Parent – Parent. Age range – Lower limit to upper limit of age in analysis. N – Number of lives used for the analysis (e.g. a parent aged 55 contributed to analysis of 40–50 and 50–60, but not 60–70). Deaths – Number of deaths within the age range. Beta – loge(protection ratio) for 1 copy of effect allele in self in the age band (i.e. 2 x observed due to kin cohort method). SE – Standard error. Z – Test statistic for test of H0. P – P value of two sided test of association.10.7554/eLife.39856.020Figure 5—source data 2.At or near – Gene, cluster of genes, or cytogenetic band in close proximity to lead variant. Variant – rsID, longevity allele. Beta – Moderator effect estimate of sex (categorical variable, being male) or age (ordinal variable, mean age in age band) on lead SNP effect on lifespan. SE – Standard error. P – P value for association of SNP lifespan effect size with age or sex. Q – Benjamini-Hochberg FDR-corrected P value. Bolded lines contain sex or age-specific effects passing a 5% FDR threshold.
+**Figure 5.:** (A) Variants showing age-specific effects; (B) Variants showing sex-specific effects. Panel titles show the gene, cluster of genes, or cytogenetic band in close proximity to the index lifespan variant, with this variant and lifespan-increasing allele in parentheses. Beta – loge(protection ratio) for 1 copy of effect allele in self in the age band (i.e. 2 x observed due to 50% kinship). Note the varying scale of y-axis across panels. Age range: the range of ages over which beta was estimated. Sex p – nominal P value for association of effect size with sex. Age p – nominal P value for association of effect size with age.
 
 Independent of age, lead variants near APOE and PSORS1C3 also show an effect (lnHR) of 0.036; 0.038 greater in women (95% CI 0.013–0.059; 0.019–0.056, respectively), compared to men (Figure 5B). Notably, the SNP near ZW10, which was identified by Pilling et al. (2017) in fathers, and which replicated in LifeGen fathers, may affect men and women equally (95% CI years gained per effect allele, men 0.17–0.42, women 0.04–0.31), as measured in our meta-analysis of UK Biobank and LifeGen.
 
-## Causal genes and methylation sites
+### Causal genes and methylation sites
 
 We used SMR-HEIDI to look for causal effects of gene expression or changes in methylation on lifespan within the 24 loci discovered or replicated in our study. Using blood eQTL summary statistics from two studies (Westra et al., 2013; Lloyd-Jones et al., 2017), we suggest causal roles for expression of PSRC1, SESN1, SH2B3, PSMA4, FURIN, FES, and KANK2 at 5% FDR (Supplementary file 1). GTEx tissue-wide expression data suggests further roles for 16 genes across 24 tissues, especially FES (nine tissues), PMS2P3 (six tissues) and PSORS1C1 (four tissues). Methylation data reveals roles for 44 CpG sites near nine loci, especially near the PSORS1C3 locus (21 sites), APOE locus (nine sites), and HLA-DQA1 locus (four sites) (Supplementary file 2).
 
 We next used SOJO to perform conditional analysis on the same loci to find additional independent variants associated with lifespan. We find substantial allelic heterogeneity in several association intervals and identify an additional 335 variants, which increase out-of-sample explained variance from 0.095% to 0.169% (78% increase). CELSR2/PSRC1, KCNK3, HLA-DQA1, LPA, ZW10, FURIN/FES, and APOE are amongst the most heterogeneous loci with at least 25 variants per locus showing independent effects (Supplementary file 3).
 
-## Disease and lifespan
+### Disease and lifespan
 
 We next sought to understand the link between our lifespan variants and disease. We looked up known associations with our top hits and proxies (r2 > 0.6) in the GWAS catalog (MacArthur et al., 2017) and PhenoScanner (Staley et al., 2016), excluding loci identified in iGWAS as these used disease associations to build the effect priors. We also excluded trait associations discovered solely in UK Biobank, as the overlap with our sample could result in spurious association due to correlations between morbidity and mortality. Under these restrictions, we find alleles which increase lifespan associate with a reduction in cardiometabolic, autoimmune, smoking-related, and neuropsychiatric disease and their disease risk factors (Table 1, Table 1—source data 3). None of the loci show any association with cancer other than lung cancer.
 
@@ -260,11 +571,11 @@ Strikingly, two of the three largest LVE loci for non-lung cancers (at or near A
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig7-v2.jpg)
 
-**Figure 7.:** Genome-wide significant disease SNPs from the GWAS catalog are plotted against the amount of lifespan variance explained (LVE), with disease-protective alleles signed positively when increasing lifespan and signed negatively when decreasing lifespan. SNPs with limited evidence of an effect on lifespan are greyed out: an FDR cut-off of 1.55% is applied simultaneously across all diseases, allowing for one false positive among all significant SNPs. Secondary pleiotropic SNPs (i.e. those associating more strongly with another one of the diseases, as assessed by PheWAS in UK Biobank) are coloured to indicate the main effect on increased lifespan seems to arise elsewhere. Of these, turquoise SNPs show one or more alternative disease associations in the same direction and at least twice as strong (double Z statistic – see Detailed Materials and methods) as the principal disease, while brown SNPs show one or more significant associations with alternative disease in the opposite direction that explains the negative association of the disease-protective SNP with lifespan. The variance explained by all SNPs in black is summed (∑LVE) by disease. Annotated are the gene, cluster of genes, or cytogenetic band near the lead SNPs. The Y axis has been capped to aid legibility of SNPs with smaller LVE: SNPs near APOE pass this cap and are represented by triangles. See Figure 7—source data 1 for the full list of disease SNP associations.10.7554/eLife.39856.023Figure 7—source data 1.Genome-wide significant disease SNPs from the GWAS catalog are listed with the amount of lifespan variance explained (LVE), with disease-protective alleles signed positively when increasing lifespan and signed negatively when decreasing lifespan. SNPs with limited evidence of an effect on lifespan are greyed out: an FDR cut-off of 1.55% is applied simultaneously across all diseases, allowing for one false positive among all significant SNPs. Secondary pleiotropic SNPs (i.e. those associating strongly with another one of the diseases, as assessed by PheWAS in UK Biobank) are coloured, as less relevant to the disease in question. Of these, turquoise SNPs show one or more alternative disease associations in the same direction and at least twice as strong (double Z statistic) as the principal disease, while brown SNPs show one or more significant associations with alternative disease in the opposite direction that explains the negative association of the disease-protective SNP with lifespan. Of specific interest is the SNP near MAGI3, which is reported as a breast cancer SNP but associates more strongly with CVD in UK Biobank and shows no evidence of sex-specific effects on lifespan. However, we do not classify it as a CVD SNP as its main effect on lifespan is likely due to protection from autoimmune disease by a nearby missense variant (rs6679677_C, r2 > 0.6, 95% CI log OR type one diabetes –0.74 to –0.46 (Cooper et al., 2008); rheumatoid arthritis −0.66 to −0.50 (Raychaudhuri et al., 2008), and carrying these diseases can reduce life expectancy up to 13 years (Myllykangas-Luosujärvi et al., 1995; Livingstone et al., 2015). Similarly, the HLA-DQA1 locus also associates most strongly with autoimmune disease and is therefore absent from the analysis. At or near – Gene, cluster of genes, or cytogenetic band in close proximity to lead variant. Chr – Chromosome. Position – Base-pair position on chromosome (build GRCh37). A1 – Allele protecting from disease or disease risk factors. Freq1 – Frequency of the disease-protective allele in the discovery + replication sample. Years – Years of lifespan gained for carrying one copy of the A1 allele. P – P value for association with lifespan under CES assumption (left), P value for genome-wide significant association with disease as reported in the GWAS catalog (right). Q – Benjamini-Hochberg FDR-corrected P value for association with lifespan. LVE – Lifespan variance explained, signed positively when A1 increases lifespan and negative when A1 decreases lifespan. Pleiotropic – SNP shows evidence of pleiotropy, see definition above. Trait – Disease trait reported in GWAS catalog. Beta1 – log OR for having the reported disease, or unit increase in risk factors associated with disease, per copy of A1 allele. PMID – PubMed identification number of the study reporting the disease association. Z estimates – Z statistic for association with disease in unrelated, Gen. British UK Biobank samples. Missing statistics indicate the SNP is not present in the CES meta-analysis summary statistics and its LVE has been imputed from the closest proxy (min. r2 > 0.9) or proxies if equally close.
+**Figure 7.:** Genome-wide significant disease SNPs from the GWAS catalog are plotted against the amount of lifespan variance explained (LVE), with disease-protective alleles signed positively when increasing lifespan and signed negatively when decreasing lifespan. SNPs with limited evidence of an effect on lifespan are greyed out: an FDR cut-off of 1.55% is applied simultaneously across all diseases, allowing for one false positive among all significant SNPs. Secondary pleiotropic SNPs (i.e. those associating more strongly with another one of the diseases, as assessed by PheWAS in UK Biobank) are coloured to indicate the main effect on increased lifespan seems to arise elsewhere. Of these, turquoise SNPs show one or more alternative disease associations in the same direction and at least twice as strong (double Z statistic – see Detailed Materials and methods) as the principal disease, while brown SNPs show one or more significant associations with alternative disease in the opposite direction that explains the negative association of the disease-protective SNP with lifespan. The variance explained by all SNPs in black is summed (∑LVE) by disease. Annotated are the gene, cluster of genes, or cytogenetic band near the lead SNPs. The Y axis has been capped to aid legibility of SNPs with smaller LVE: SNPs near APOE pass this cap and are represented by triangles. See Figure 7—source data 1 for the full list of disease SNP associations.
 
 Together, the disease loci included in our study with significant effects on lifespan explain 0.95 years2, or less than 1% of the phenotypic variance of lifespan of European parents in UK Biobank (123 years2), and around 5% of the heritability.
 
-## Cell type and pathway enrichment
+### Cell type and pathway enrichment
 
 We used stratified LD-score regression to assess whether cell type-specific regions of the genome are enriched for lifespan variants. As this method derives its power from SNP heritability, we limited the analysis to genomically British individuals in UK Biobank, which showed the lowest heterogeneity and the highest SNP heritability. At an FDR < 5%, we find enrichment in SNP heritability in five categories: two histone and two chromatin marks linked to male and female foetal brain cells, and one histone mark linked to the dorsolateral prefrontal cortex (DLPC) of the brain. Despite testing other cell types, such as heart, liver, and immune cells, no other categories are statistically significant after multiple testing correction (Supplementary file 4).
 
@@ -272,17 +583,146 @@ We also determined which biological pathways could explain the associations betw
 
 Finally, we performed an analysis to assess whether genes that have been shown to change their expression with age (Peters et al., 2015) are likely to have a causal effect on lifespan itself. Starting with a set of independent SNPs affecting gene expression (eQTLs), we created categories based on whether gene expression was age-dependent and whether the SNP was associated with lifespan in our study (at varying levels of significance). We find eQTLs associated with lifespan are 1.69 to 3.39 times more likely to have age-dependent gene expression, depending on the P value threshold used to define the set of lifespan SNPs (Supplementary file 6).
 
-## Out-of-sample lifespan PRS associations
+### Out-of-sample lifespan PRS associations
 
 We calculated polygenic risk scores (PRS) for lifespan for two subsamples of UK Biobank (Scottish individuals and a random selection of English/Welsh individuals), and one sample from the Estonian Biobank. The PRS were based on (recalculated) lifespan GWAS summary statistics that excluded these samples to ensure independence between training and testing datasets.
 
 When including all independent markers, we find an increase of one standard deviation in PRS increases lifespan by 0.8 to 1.1 years, after doubling observed parent effect sizes to compensate for the imputation of their genotypes (see Table 3—source data 1 for a comparison of performance of different PRS thresholds).
 
+**Table 3.**
+ Polygenic scores for lifespan associate with out-of-sample parent and subject lifespans.A polygenic risk score (PRS) was made for each subject using GWAS results that did not include the subject sets under consideration. Subject or parent survival information (age entry, age exit, age of death, if applicable) was used to test the association between polygenic risk score and survival as (a) a continuous score and (b) by dichotomising the top and bottom decile scores. Population – Population sample of test dataset, where E and W is England and Wales; Kin – Individuals tested for association with polygenic score; N – Number of lives used for analysis; Deaths – Number of deaths; Beta – Effect size per PRS standard deviation, in loge(protection ratio), doubled in parents to reflect the expected effect in cohort subjects. SE – Standard error, doubled in parents to reflect the expected error in cohort subjects; Years – Estimated years of life gained per PRS standard deviation; P – P value of two-sided test of association; Contrast age at death – difference between the median lifespan of individuals in the top and bottom deciles of the score in year of life (observed parent contrast is again doubled to account for imputation of their genotypes).Table 3—source data 1.Polygenic survival scores in independent samples are most associated when including all markers.A polygenic risk score was made for each subject using GWAS results that did not include the subject sets under consideration. Parent survival information (age and alive/dead status) was used to test the association between survival and several polygenic risk scores with different P value thresholds. Sample – Out-of-sample subsets of UK Biobank individuals used for PGRS association. N – Number of reported parental lifespans by sample individuals. Deaths – Number of reported parental deaths by sample individuals. Threshold – Criteria for SNPs to be included in the polygenic score. Beta – Loge(protection ratio) per standard deviation of polygenic score, doubled to reflect the effect of the score on offspring survival. SE – standard error of the effect estimate. Mean Years – Mean years of life gained per standard deviation in PGRS. P – P value of the effect of the polygenic score on lifespan.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Sample descriptives</th>
+      <th colspan="4">Effect of polygenic score</th>
+      <th colspan="2">Contrast age at death</th>
+    </tr>
+    <tr>
+      <th>Population</th>
+      <th>Kin</th>
+      <th>N</th>
+      <th>Deaths</th>
+      <th>Beta</th>
+      <th>SE</th>
+      <th>Years</th>
+      <th>P</th>
+      <th>Men</th>
+      <th>Women</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scotland</td>
+      <td>Parents</td>
+      <td>46,936</td>
+      <td>33,196</td>
+      <td>0.107</td>
+      <td>0.011</td>
+      <td>1.07</td>
+      <td>4.2E-22</td>
+      <td>5.6</td>
+      <td>5.6</td>
+    </tr>
+    <tr>
+      <td>Scotland</td>
+      <td>Subjects</td>
+      <td>24,059</td>
+      <td>941</td>
+      <td>0.085</td>
+      <td>0.033</td>
+      <td>0.85</td>
+      <td>1.0E-02</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>E and W</td>
+      <td>Parents</td>
+      <td>58,070</td>
+      <td>39,347</td>
+      <td>0.133</td>
+      <td>0.010</td>
+      <td>1.33</td>
+      <td>7.3E-39</td>
+      <td>6.4</td>
+      <td>4.8</td>
+    </tr>
+    <tr>
+      <td>E and W</td>
+      <td>Subjects</td>
+      <td>29,815</td>
+      <td>760</td>
+      <td>0.098</td>
+      <td>0.037</td>
+      <td>0.98</td>
+      <td>7.1E-03</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Estonia</td>
+      <td>Parents</td>
+      <td>61,728</td>
+      <td>29,660</td>
+      <td>0.099</td>
+      <td>0.012</td>
+      <td>0.99</td>
+      <td>2.5E-17</td>
+      <td>3.0</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <td>Estonia</td>
+      <td>Subjects</td>
+      <td>24,800</td>
+      <td>2894</td>
+      <td>0.087</td>
+      <td>0.019</td>
+      <td>0.87</td>
+      <td>2.6E-06</td>
+      <td>3.5</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td colspan="4">Per standard deviation</td>
+      <td colspan="2">Top vs. bottom 10%</td>
+    </tr>
+  </tbody>
+</table>
+
 Correspondingly – again after doubling for parental imputation – we find a difference in median survival for the top and bottom deciles of PRS of 5.6/5.6 years for Scottish fathers/mothers, 6.4/4.8 for English and Welsh fathers/mothers and 3.0/2.8 for Estonian fathers/mothers. In the Estonian Biobank, where data is available for a wider range of subject ages (i.e. beyond median survival age) we find a contrast of 3.5/2.7 years in survival for male/female subjects, across the PRS tenth to first deciles (Table 3, Figure 8).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig8-v2.jpg)
+
+**Figure 8.:** A polygenic risk score was made for each subject using GWAS results that did not include the subject sets under consideration. Subject or parent survival information (age entry, age exit, age of death (if applicable) was used to create Kaplan-Meier curves for the top and bottom deciles of score. In this figure (only) no adjustment has been made for the dilution of observed effects due to parent imputation from cohort subjects. Effect sizes in parent, if parent genotypes had been used, are expected to be twice that shown. E and W – England and Wales; PRS – polygenic risk score.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** A polygenic risk score was made for each subject using GWAS results that did not include the subject sets under consideration. Subject survival information (age entry, age exit, age of death (if applicable) was used to create Kaplan-Meier curves for the top and bottom deciles of score. The narrow range of ages and short time since inception means that UK Biobank subject curves are subject to greater uncertainty, particularly at each end, and only cover a shorter interval. E and W – England and Wales; PRS – polygenic risk score.
 
 Finally, as we did for individual variants, we looked at the age- and sex-specific nature of the PRS on parental lifespan and then tested for associations with (self-reported) age-related diseases in subjects and their kin. We find a high PRS has a larger protective effect on lifespan for mothers than fathers in UK Biobank subsamples (p = 0.0071), and has a larger protective effect on lifespan in younger age bands (p = 0.0001) (Figure 9), although in both cases, it should be borne in mind that women and younger people have a lower baseline hazard, so a greater improvement in hazard ratio does not necessarily mean a larger absolute protection.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig9-v2.jpg)
+
+**Figure 9.:** The effect of out-of-sample PRS on parental lifespan stratified by sex and age was estimated for Scottish and English/Welsh subsamples individually (see Figure 9—figure supplement 1) and subsequently meta-analysed. The estimate for the PRS on father lifespan in the highest age range has very wide confidence intervals (CI) due to the limited number of fathers surviving past 90 years of age. The beta 95% CI for this estimate is –0.15 to 0.57. Beta – loge(protection ratio) for one standard deviation of PRS for increased lifespan in self in the age band (i.e. 2 x observed due to 50% kinship), bounds shown are 95% CI; Age range – the range of ages over which beta was estimated; sex p – P value for association of effect size with sex; age p – P value for association of effect size with age.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Out of sample Scottish subset of UK Biobank; (B) Out of sample English and Welsh subset of UK Biobank; Estimates for the PRS on father lifespan in the highest age range have very wide confidence intervals (CI) due to the limited number of fathers surviving past 90 years of age. The beta 95% CI for these estimates are 0.15 to 2.20 for Scottish subsamples and –1.34 to –0.16 for English and Welsh subsamples. Beta – loge(protection ratio) for one standard deviation of PRS for increased lifespan in self in the age band (i.e. 2 x observed due to 50% kinship), bounds shown are 95% CI; Age range – the range of ages over which beta was estimated; sex p – P value for association of effect size with sex; age p – P value for association of effect size with age.
+
 We find that overall, higher PRS scores (i.e. genetically longer life) are associated with less heart disease, diabetes, hypertension, respiratory disease and lung cancer, but increased prevalence of Alzheimer’s disease, Parkinson’s disease, prostate cancer and breast cancer, the last three primarily in parents. We find no association between the score and prevalence of cancer in subjects. (Figure 10).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig10-v2.jpg)
+
+**Figure 10.:** Logistic regression was performed on standardised polygenic survival score (all variants) and 21 disease traits reported by 24,059 Scottish and 29,815 English/Welsh out-of-sample individuals about themselves and their kin. For grouping of UK Biobank disease codes, see Figure 10—source data 1. Displayed here are inverse-variance meta-analysed estimates of the diseases for which multiple sources of data were available (i.e. parents and/or siblings; see Figure 10—figure supplement 1 for all associations). ‘Cancer’ is only in subjects, whilst the specific subtypes are analysed for kin. The left panel shows disease estimates for each kin separately; the right panel shows the combined estimate, with standard errors adjusted for correlation between family members. Diseases have been ordered by magnitude of effect size (combined estimate). Beta – log odds reduction ratio of disease per standard deviation of polygenic survival score, where a negative beta indicates a deleterious effect of score on disease prevalence (lifetime so far), and positive beta indicates a protective effect on disease. Effect sizes for first degree relatives have been doubled. Cancer – Binary cancer phenotype (any cancer, yes/no).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/39856/elife-39856-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Logistic regression was performed on standardised polygenic survival score (all variants) and 21 traits reported by 24,059 Scottish and 29,815 English/Welsh out-of-sample individuals about themselves and their kin. Diseases have been ordered by magnitude of effect size (meta-analysed between cohorts and kin). Beta – log odds reduction ratio of disease per standard deviation of polygenic survival score, where a negative beta indicates a deleterious effect of score on disease prevalence (lifetime so far), and positive beta indicates a protective effect on disease. Effect sizes for first degree relative have been doubled. Cancer – Binary cancer phenotype (yes/no), FRP – Female Reproductive Problems, MS – Multiple Sclerosis, PAD – Peripheral Artery Disease.
 
 ## Discussion
 
@@ -320,9 +760,9 @@ In conclusion, recent genomic susceptibility to death in the normal age range se
 
 ## Materials and methods
 
-## Summary
+### Summary
 
-## GWAS
+#### GWAS
 
 For genetically British ancestry (as identified by UK Biobank using genomic PCA) and each self-reported European ethnicity in UK Biobank (including self-declared British but not genetically British ancestry), independent association analyses were performed between unrelated subjects’ genotypes (MAF > 0.005; HRC imputed SNPs only; ~9 million markers) and parent survival using age and alive/dead status in residualised Cox models, as described in Joshi et al. (2017). To account for parental genotype imputation, effect sizes were doubled, yielding log hazard ratios for the allele in carriers themselves. These values were negated to obtain a measure of log protection ratio, where higher values indicate longer life. While methods exist to account for related individuals using linear mixed models, such as BOLT-LMM (Loh et al., 2015), these are not accurate when trying to account for relatedness between parents (See Detailed Materials and methods).
 
@@ -330,43 +770,43 @@ Mother and father survival information was combined in two separate ways, essent
 
 For LifeGen, where individual-level data was not available, parent survival summary statistics were combined using conventional fixed-effects meta-analysis, adjusted to account for the correlation between survival traits (estimated from summary-level data). For SSE, the same procedure was followed as for the UK Biobank samples, with correlation between traits again estimated from summary-level data. The GWAS statistics showed acceptable inflation, as measured by their LD-score regression intercept (<1.06, Table 1—source data 2).
 
-## Candidate SNP replication
+#### Candidate SNP replication
 
 Effect sizes from longevity studies were converted to our scale using an empirical conversion factor, based on the observed relationships between longevity and hazard ratio at the most significant variant at or near APOE, observed in the candidate SNPs study and our data (Joshi et al., 2017). These studies were then meta-analysed using inverse variance weighting and standard errors were inflated to account for sample overlap (see Detailed Methods)
 
 Estimates reported in Pilling et al. (2017) were based on rank-normalized Martingale residuals, unadjusted for the proportion dead, which – for individual parents – could be converted to our scale by multiplying by sqrt(c)/c, where c is the proportion dead in the original study (see Detailed Methods for derivation). Combined parent estimates were converted using the same method as the one used for longevity studies.
 
-The deletion reported by Ben-Avraham et al. (2017) is perfectly tagged by a SNP that we used to assess replication. Assuming a recessive effect and parental imputation, we derived the expected additive effect to be β^C=β^CCq2q2+2pq, where β^C is the effect we expect to observe under our additive model, β^CC is the homozygous effect reported in the original study, q is the C allele frequency, and p is 1-q (see Detailed Materials and methods for derivation).
+The deletion reported by Ben-Avraham et al. (2017) is perfectly tagged by a SNP that we used to assess replication. Assuming a recessive effect and parental imputation, we derived the expected additive effect to be $\beta^_{C}=\beta^_{CC}\frac{q^{2}}{q^{2}+2pq}$, where $\beta^_{C}$ is the effect we expect to observe under our additive model, $\beta^_{CC}$ is the homozygous effect reported in the original study, $q$ is the C allele frequency, and $p$ is $1-q$ (see Detailed Materials and methods for derivation).
 
-## iGWAS
+#### iGWAS
 
 58 GWAS on mortality risk factors were used to create Bayesian priors for the SNP effects observed in the CES study, as described in McDaid et al. (2017). Mendelian randomisation was used to estimate causal effects of independent risk factors on lifespan, and these estimates were combined with the risk factor GWAS to calculate priors for each SNP. Priors were multiplied with observed Z statistics and used to generate Bayes factors. Observed Z statistics were then permuted, leading to 7.2 billion null Bayes factors (using the same priors), which were used to assess significance.
 
-## Sex and age stratified analysis
+#### Sex and age stratified analysis
 
 Cox survival models, adjusting for the same covariates as the standard GWAS, were used to test SNP dosage against survival of UK Biobank genomically British fathers and mothers, separately. The analysis was split into age bands, where any parent who died at an age younger than the age band was excluded and any parent who died beyond the age band was treated as alive. Using the R package ‘metafor’, moderator effects of sex and age on hazard ratio could be estimated while taking into account the estimate uncertainty (see Detailed Materials and methods for formula).
 
-## Causal genes and methylation sites
+#### Causal genes and methylation sites
 
 SMR-HEIDI (Zhu et al., 2016) tests were performed on CES statistics to implicate causal genes and methylation sites. Summary-level data from two studies on gene expression in blood (Westra et al., 2013; Lloyd-Jones et al., 2017) and data on gene expression in 48 tissues from the GTEx consortium (Battle et al., 2017) were tested to find causal links between gene expression and lifespan. Similarly, data from a genome-wide methylation study (McRae et al., 2017) was used to find causal links between CpG sites and lifespan. All results from the SMR test passing a 5% FDR threshold where the HEIDI test p>0.05 were reported.
 
-## Conditional analysis
+#### Conditional analysis
 
 SOJO (Ning et al., 2017) was used to fine-map the genetic signals in 1 Mb regions around lead SNPs reaching genome-wide significance and candidate SNPs reaching nominal significance in our study. The analysis was based on CES statistics from UK Biobank genomically British individuals, using the LifeGen meta-analysis results to optimise the LASSO regression tuning parameters. For each parameter, a polygenic score was built and the proportion of predictable variance from the regional polygenic score in the validation sample was calculated.
 
-## Disease association analysis
+#### Disease association analysis
 
 The GWAS catalog (MacArthur et al., 2017) and PhenoScanner (Staley et al., 2016) were checked for known genome-wide significant associations with our GWAS hits and proxies (r2 >0.6) in European samples. Associations discovered in UK Biobank by Churchhouse and Neale, 2018 were omitted from the PhenoScanner database as the findings have not been replicated, and the large sample overlap with our own study could result in false positive associations, due to phenotypic correlations between morbidity and mortality. Triallelic SNPs and associations without effect sizes were excluded before near-identical traits were grouped together, discarding all but the strongest association and keeping the shortest trait name. For example, ‘Lung cancer’, ‘Familial lung cancer’, and ‘Small cell lung cancer’ were grouped and renamed to ‘Lung cancer’. The remaining associations were classified into disease categories based on keywords and subsequent manual curation.
 
-## Lifespan variance explained by disease SNPs
+#### Lifespan variance explained by disease SNPs
 
 The GWAS catalog (MacArthur et al., 2017) was checked for disease associations discovered in European ancestry studies, which were grouped into broad disease categories based on keywords and manual curation (see Figure 7—source data 1 and Detailed Methods). Associations were pruned by distance (500 kb) and LD (r2 <0.1), keeping the SNP most strongly associated with lifespan in the CES GWAS. Where possible this SNP was tested against diseases in UK Biobank subjects and their family to test for pleiotropy (see Detailed Matrials and methods). Significance of associations with lifespan was determined by setting an FDR threshold that allowed for one false positive among all independent SNPs tested (q ≤ 0.022). Lifespan variance explained (LVE) was calculated as 2pqa2, where p and q are the frequencies of the effect and reference alleles in our lifespan GWAS, and a is the SNP effect size in years of life (Falconer et al., 1996).
 
-## Cell type enrichment
+#### Cell type enrichment
 
 Stratified LD-score regression (Finucane et al., 2015) was used to test for cell type-specific enrichment in lifespan heritability. As the power of this method depends on SNP heritability, standard LD-score regression (Finucane et al., 2015) was first used to check which of our samples (UK Biobank, LifeGen, or the combined cohort) had the highest SNP heritability. Lifespan summary statistics from UK Biobank genomically British individuals were then analysed using the procedure described in Finucane et al., 2015, and P values were adjusted for multiple testing using the Benjamin-Hochberg procedure.
 
-## Pathway enrichment
+#### Pathway enrichment
 
 VEGAS2 v2.01.17 (Mishra and Macgregor, 2015) was used to calculate gene scores using SNPs genotyped in UK Biobank, based on summary statistics from the full CES cohort and the default software settings. VEGAS2Pathway was then used to check for pathway enrichment using those gene scores and the default list of gene sets (Mishra and MacGregor, 2017).
 
@@ -376,11 +816,11 @@ PASCAL (Lamparter et al., 2016) was used with the same summary statistics and ge
 
 For each software independently, pathway enrichment was adjusted for multiple testing using the Benjamin-Hochberg procedure.
 
-## Age-related eQTL enrichment
+#### Age-related eQTL enrichment
 
 Combined cohort CES lifespan statistics were matched to eQTLs associated with the expression of at least one gene (p < 10–3) in a dataset from the eQTLGen Consortium (31,684 individuals) (Võsa et al., 2018). Data on age-related expression (Peters et al., 2015) allowed eQTLs to be divided into four categories based on association with age and/or lifespan. Fisher's exact test was used check if age-related eQTLs were enriched for associations with lifespan.
 
-## Polygenic score analysis
+#### Polygenic score analysis
 
 Polygenic risk scores (PRS) for lifespan were calculated for two subsamples of UK Biobank (24,059 Scottish individuals and a random 29,815 English/Welsh individuals), and 36,499 individuals from the Estonian Biobank, using combined cohort CES lifespan summary statistics that excluded these samples. PRSice 2.0.14.beta (Euesden et al., 2015) was used to construct the scores from genotyped SNPs in UK Biobank and imputed data from the Estonian Biobank, pruned by LD (r2 = 0.1) and distance (250 kb). Polygenic scores were Z standardised.
 
@@ -388,31 +828,35 @@ Cox proportional hazard models were used to fit parental survival against polyge
 
 Logistic regression models were used to fit polygenic score against the same self-reported UK Biobank disease categories used for individual SNPs. Effect estimates of first-degree relatives were doubled to account for imputation of genotypes and then meta-analysed using inverse variance weighting, adjusting for trait correlations between family members.
 
-## Postulation of equivalent sample size in height GWAS
+#### Postulation of equivalent sample size in height GWAS
 
 The use of parent imputation, low trait heritability, and incomplete proportion dead all reduce the power to detect effect sizes. The equivalent sample size in a hypothetical, completely heritable trait with otherwise identical genetic architecture would be the original sample size, diluted (i.e. multiplied) by the heritability (0.122) (Kaplanis et al., 2018), the r2 of offspring genotype on parent genotype (0.250) and the proportion dead (0.602). This gives an equivalent sample size of 18,579 from the 1,012,240 parent lifespans. We then calculated sample size for height that would have the same properties, accounting for the heritability of height (0.8) (Wood et al., 2014): 23,224 (i.e. 18,579/0.8). We next calculated the P value that would have been reported by Wood et al's 250,000 sample size height GWAMA (Wood et al., 2014) for a SNP that was just significant in a hypothetical 23,224 sample height GWAMA: p < 1.8 × 10−72. Six distinct loci passed this significance threshold in Wood et al's results.
 
 With 17,893 nonagenarians, Deelen et al. (2014) attained a P value of 2.33 × 10−26 at rs4420638. With 1.012 m parents we attained a P value of 1.75 × 10−64. Other things being equal a nonagenarian sample size of 44,500 thus appears to be equally powered to one million parents.
 
-## Sensitivity of annuity prices to age
+#### Sensitivity of annuity prices to age
 
 Market annuity rates for life annuities in January 2018 written to 55, 60, 65, and 70 year olds were obtained from the sharing pensions website http://www.sharingpensions.com/annuity_rates.htm (accessed 22 January 2018) and were £4158, £4680, £5476, £6075, £7105 respectively per year for a £100,000 purchase price. The arithmetic average increase from one quinquennial age to the next is 14 percent.
 
-## Data availability
+### Data availability
 
 Individual phenotypic and genetic data is available from UK Biobank upon application: https://www.ukbiobank.ac.uk/register-apply/. Phenotypes used in this work include subject age, sex, ethnicity, relatedness, genotyping batch, array, and principal components, as well as parental age and alive/dead status. Also included are self-reported diseases of subjects and their families. A full description of our application can be found at https://www.ukbiobank.ac.uk/2015/02/dr-james-wilson-university-of-edinburgh-centre-for-population-sciences/. The results that support our findings, in particular, the GWAS summary statistics we generated for >1 million parental lifespans in this study are available at http://dx.doi.org/10.7488/ds/2463. Gene expression data used in the age-related gene analysis is being made available by the eQTLGen Consortium, see http://www.eqtlgen.org/ and Võsa et al., 2018. Single tissue gene expression data used in the SMR-Heidi analysis can be found on the GTEx website https://gtexportal.org/home/datasets, under GTEx_Analysis_v7_eQTL.tar.gz.
 
-## Details
+### Details
 
-## Data sources
+#### Data sources
 
 Our UK Biobank dataset consisted of 409,700 British individuals (determined by genomic PCA) and 48,656 European individuals of self-reported (but not genetic) British, Irish, and other White European descent. Details on genotyping marker and sample QC are described in Bycroft et al., 2017. Subjects completed a questionnaire which included questions on adoption status, parental age, and parental deaths. For our analysis, we excluded individuals who were adopted or otherwise unclear about their adoption status (N = 7,279), individuals who did not report their parental ages (N = 2,995), and individuals both of whose parents died before the age of 40 and which were therefore more likely due to accident or injury (N = 4,472). We further excluded one of each pair from related individuals (third degree or closer; N = 88,354) from every relative pair reported by UK Biobank, leaving 443,610 individuals for the final analysis. Although exclusion of relatives reduces sample size, we were concerned that linear mixed modelling to account for relatedness might not be fully appropriate under the kin-cohort model. Consider the parental phenotypic correlation for two full sibling subjects (r2 = 1) or the maternal genetic covariance amongst two subjects who are the offspring of two brothers (r2 = 0): the heritability/GRM implied covariance is incorrect for both cases (although in the sibling case, it may be correct on average). Individuals passing QC reported a total of 339,732 paternal and 351,889 maternal lifespans, ranging from 40 to 107 years of life, that is 691,621 lives in total (Table 1—source data 1).
 
 Our second dataset was the publicly available summary statistics from LifeGen, a consortium of 26 population cohorts investigating genomic effects on parental lifespans (Joshi et al., 2017). LifeGen had included results from UK Biobank, but the UK Biobank GWAS data were removed here, giving GWAS summary statistics for 160,461 father and 160,158 mother lifespans in the form of log hazard ratios. Combined, our datasets had 1,012,240 lives.
 
-## UK Biobank Genome-Wide association study
+#### UK Biobank Genome-Wide association study
 
-In each separate UK Biobank ethnicity, we carried out association analysis between genotype (MAF > 0.005; HRC imputed SNPs only; ~9 million markers) and parent age and alive/dead status, effectively analysing the effect of genotype in offspring on parent survival, given survival to at least age 40, using Cox Proportional Hazards models. The following model was assumed to hold:(1)hx=h0xeβX+γ1Z1+…γkZk
+In each separate UK Biobank ethnicity, we carried out association analysis between genotype (MAF > 0.005; HRC imputed SNPs only; ~9 million markers) and parent age and alive/dead status, effectively analysing the effect of genotype in offspring on parent survival, given survival to at least age 40, using Cox Proportional Hazards models. The following model was assumed to hold:
+
+$$
+hx=h_{0}xe^{\betaX+\gamma1Z1+…\gammakZk}
+$$
 
 Where x is (parent) age, h0 the baseline hazard and X the offspring genotype (coded 0,1,2), beta the loge(hazard ratio) associated with X and Z1-Zk the covariates, with corresponding effect sizes y1-yk. The covariates were genotyping batch and array, the first forty principal components of relatedness, as provided by UK Biobank, and subject sex (but not age, as we were analysing parent age).
 
@@ -420,61 +864,87 @@ To facilitate practical runtimes, the Martingale residuals of the Cox model were
 
 Analysis of association between genotype and survival across both parents was made under two contrasting assumptions and associated models, which had to adjust for the covariance amongst parent traits, preventing conventional unadjusted inverse-variance meta-analysis. Firstly, we assumed that the hazard ratio was the same for both sexes, that is a common effect size across sexes (CES). If there were no correlation amongst parents’ traits, this could have been done by straightforward inverse variance meta-analysis of the single parent results. However, to account for the covariance amongst father and mother lifespans, we calculated a total parent residual, the sum of individual parent residuals, for each subject (i.e. offspring). Under the common effect assumption, the combined trait’s effect size is twice that in the single parent, and the variance of the combined trait, automatically and appropriately reflects the parents’ covariance, amongst the two parents, giving a residual trait suitable for GWAS, with an effect size equal to that in a carrier of the variant, and correct standard error. Secondly, we assumed that, there might be sex-specific effect sizes (SSE) in fathers and mothers. Under the SSE assumption, individual parental GWAS were carried out, and the summary statistics results were meta-analysed using MANOVA, accounting for the correlation amongst the parent traits and the sample overlap (broadly complete), but agnostic as to whether the effect size was similar or different in each parent, giving a P value against the null hypothesis that both effect sizes are zero, but, naturally, no estimate of a single common beta. This procedure was carried out using the R package MultiABEL and summary-level data (Shen et al., 2015). The procedure requires an estimate of the correlation amongst the traits (in this case parent residuals), which was measured directly (r = 0.1). The procedure automatically estimates the variance of the traits from summary level data (Mother residuals σ2 = 6.74; Father residuals σ2 = 5.25)
 
-For the LifeGen results, the SSE procedure to combine results was identical to UK Biobank (Mother residuals σ2 = 14.12; Father residuals σ2 = 18.75), except the trait correlation was derived from summary level data instead of measured directly (r = 0.1). This was done by taking the correlations in effect estimates from independent SNPs from the summary statistics of the individual parents, which equals the trait correlation, assuming full sample overlap (which is slightly conservative). Similarly, since we did not have access to individual level (residual) data, it was not possible to carry out a single total parent residual GWAS under the CES assumption. Instead we meta-analysed the single parent effect sizes using inverse variance meta-analysis, but adjusted the standard errors to reflect the correlation amongst the traits (r) as follows:SE(β^)=SE0(β^)1+r
+For the LifeGen results, the SSE procedure to combine results was identical to UK Biobank (Mother residuals σ2 = 14.12; Father residuals σ2 = 18.75), except the trait correlation was derived from summary level data instead of measured directly (r = 0.1). This was done by taking the correlations in effect estimates from independent SNPs from the summary statistics of the individual parents, which equals the trait correlation, assuming full sample overlap (which is slightly conservative). Similarly, since we did not have access to individual level (residual) data, it was not possible to carry out a single total parent residual GWAS under the CES assumption. Instead we meta-analysed the single parent effect sizes using inverse variance meta-analysis, but adjusted the standard errors to reflect the correlation amongst the traits (r) as follows:
 
-Where SE0(β^) is the usual (uncorrected) inverse-variance weighted meta-analysis standard error, ignoring the correlation amongst the estimates and SE(β^) is the corrected estimate used.
+$$
+SE(\beta^)=SE_{0}(\beta^)\sqrt{1+r}
+$$
 
-This is slightly conservative as(2)Variance(β^)=Variance0(β^)(1+2rs1s2s12+s22) <= Variance0(β^)(1+r)which follows straight forwardly from β^=P1β^1+P2β^2 P1+P2.
+Where $SE_{0}(\beta^)$ is the usual (uncorrected) inverse-variance weighted meta-analysis standard error, ignoring the correlation amongst the estimates and $SE(\beta^)$ is the corrected estimate used.
 
-Where s1 and s2 are the standard error of the individual estimates and P1, P2 their associated precisions (i.e. reciprocal of the variance). Equation (2) is always conservative, but exact if s1=s2. In practice s1 and s2 were similar, as the sample sizes, allele frequencies and variance in the traits for the two parents were very similar.
+This is slightly conservative as
+
+$$
+Variance(\beta^)=Variance_{0}(\beta^)(1+\frac{2rs_{1}s_{2}}{s_{1}^{2}+s_{2}^{2}}) <= Variance_{0}(\beta^)(1+r)
+$$
+
+which follows straight forwardly from $\beta^=\frac{P_{1}\beta^_{1}+P_{2}\beta^_{2} }{P_{1}+P_{2}}$.
+
+Where $s_{1}$ and $s_{2}$ are the standard error of the individual estimates and $P_{1}$, $P_{2}$ their associated precisions (i.e. reciprocal of the variance). Equation (2) is always conservative, but exact if $s_{1}=s_{2}$. In practice $s_{1}$ and $s_{2}$ were similar, as the sample sizes, allele frequencies and variance in the traits for the two parents were very similar.
 
 As we were using unrelated populations and fitting forty principal components to control for population structure, material inflation of test statistics due to structure or relatedness was not to be expected. This was confirmed using the intercept of LD-score regression (Bulik-Sullivan et al., 2015) for the summary statistics as shown in Table 1—source data 2. We have tried to use a consistent approach to the direction of lifespan altering effects: positive implies longer life, consistent with previous studies of long-livedness (Deelen et al., 2014). Our base measure was thus a protection ratio, directly mirroring the cox hazard ratio. Effect sizes (betas) are typically –loge(cox hazard ratio), which we denote the loge(protection ratio). Years of life gained were estimated as 10 * log protection ratio, in accordance with a long-standing actuarial rule of thumb and recently verified (Joshi et al., 2017).
 
-## Candidate SNP replication
+#### Candidate SNP replication
 
 We sought to reproduce and replicate genome-wide significant associations reported by Pilling et al. (2017), who recently published a GWAS on the same UK Biobank data, but using a slightly different method. Rather than excluding relatives, Pilling et al. used BOLT-LMM and the genomic relationship matrix in subjects, to approximately account for covariance amongst parental phenotype. Pilling et al. also analysed parents separately as well as jointly, using a last survivor phenotype. Despite these factors, reproduction (obtaining the same result from almost the same data) was straightforward and consistent, once effect sizes were placed on the same scale (see below and Figure 2—figure supplement 1), confirming our re-scaling was correct. To try to independently replicate their results, we used the consortium, LifeGen, excluding individuals from UK Biobank.
 
-Pilling et al. (2017) performed multiple parental survival GWAS in UK Biobank, identifying 14 loci using combined parent lifespan and 11 loci using individual parent lifespan. Their study design involved rank-normalising Martingale residuals before regressing against genotype, which does not give an estimate of the loge(hazard ratio) (lnHR), nor, we believe, another naturally interpretable scale of effects, as the scale is now dependent on the proportion dead. Simulations (not shown) suggested sd≈c for some Martingale residual distributions, where sd is the standard deviation of the distribution and c is the proportion dead. As multiplying the untransformed Martingale residual distribution by 1/c gives an estimate of the hazard ratio (Joshi et al., 2017; Therneau et al., 1990), for individual parents, we could convert Pilling et al.’s effect sizes by multiplying them by sqrt(c) to return them to the Martingale residual scale (which still depends on the study structure) and then by 1/c to place them on the lnHR scale, using the proportion dead from Pilling et al.’s study descriptives. Further multiplication by 2 allows conversion from a subject-parent effect to an effect in self. The cumulative scale conversion allowing for all three of these effects was to multiply Pilling et al.’s effect sizes by 2.5863/2.2869 in mothers/fathers, respectively, placing them on a lnHR scale for effects in male/female subjects. The joint life parent phenotype does not appear to have a straightforward conversion to lnHR in self. Instead, we used an empirical estimate derived from effect sizes comparison of the APOE allele between Pilling et al.’s discovery sample and our own UK Biobank Gen. British sample (both parents combined), which were largely overlapping: to get from Pilling et al.’s effect size to loge HR, we had to multiply their effect sizes by 1.9699 for APOE and used this ratio for other alleles, which should be completely valid under the proportional hazard assumption. Whilst this scheme may appear a little ad hoc (the use of simulation and APOE), it was confirmed empirically: visual inspection indeed showed hazard ratios from our own UK Biobank Gen. British sample calculations and inferred hazard ratios from Pilling were highly concordant (noting the concordance for joint life at APOE, which was pre-defined to be perfectly concordant by our procedure, is not, of itself, evidence) (Figure 2—figure supplement 1).
+Pilling et al. (2017) performed multiple parental survival GWAS in UK Biobank, identifying 14 loci using combined parent lifespan and 11 loci using individual parent lifespan. Their study design involved rank-normalising Martingale residuals before regressing against genotype, which does not give an estimate of the loge(hazard ratio) (lnHR), nor, we believe, another naturally interpretable scale of effects, as the scale is now dependent on the proportion dead. Simulations (not shown) suggested $sd≈\sqrt{c}$ for some Martingale residual distributions, where sd is the standard deviation of the distribution and c is the proportion dead. As multiplying the untransformed Martingale residual distribution by 1/c gives an estimate of the hazard ratio (Joshi et al., 2017; Therneau et al., 1990), for individual parents, we could convert Pilling et al.’s effect sizes by multiplying them by sqrt(c) to return them to the Martingale residual scale (which still depends on the study structure) and then by 1/c to place them on the lnHR scale, using the proportion dead from Pilling et al.’s study descriptives. Further multiplication by 2 allows conversion from a subject-parent effect to an effect in self. The cumulative scale conversion allowing for all three of these effects was to multiply Pilling et al.’s effect sizes by 2.5863/2.2869 in mothers/fathers, respectively, placing them on a lnHR scale for effects in male/female subjects. The joint life parent phenotype does not appear to have a straightforward conversion to lnHR in self. Instead, we used an empirical estimate derived from effect sizes comparison of the APOE allele between Pilling et al.’s discovery sample and our own UK Biobank Gen. British sample (both parents combined), which were largely overlapping: to get from Pilling et al.’s effect size to loge HR, we had to multiply their effect sizes by 1.9699 for APOE and used this ratio for other alleles, which should be completely valid under the proportional hazard assumption. Whilst this scheme may appear a little ad hoc (the use of simulation and APOE), it was confirmed empirically: visual inspection indeed showed hazard ratios from our own UK Biobank Gen. British sample calculations and inferred hazard ratios from Pilling were highly concordant (noting the concordance for joint life at APOE, which was pre-defined to be perfectly concordant by our procedure, is not, of itself, evidence) (Figure 2—figure supplement 1).
 
 Flachsbart et al. (2009), Deelen et al. (2014), and Broer et al. (2015) tested extreme longevity cases (95–110 years, ≥85 years, ≥90 years, respectively) against controls (60–75 years, 65 years, deceased at 55–80 years, respectively), identifying SNPs at or near FOXO3 and 5q33.3/EBF1. As done previously (Joshi et al., 2017), we estimated the relationship between study-specific longevity log odds ratio and log hazard ratio empirically using the most powered APOE variant overlapping with our own study, assuming increased odds of surviving to extreme age is due to a reduction in lifetime mortality risk. For Flachsbart et al. and Deelen et al., we used rs4420638_G (reported log OR –0.33 (Deelen et al., 2014), our lnHR 0.086). Inverting the sign to give loge(protection ratio) estimates, the conversion estimate used was 3.82. For Broer et al., we used rs6857_T (reported log OR –0.20 (Broer et al., 2015), our lnHR 0.087), with a conversion estimate of 0.43, again yielding a loge(protection ratio).
 
-Ben-Avraham et al. (2017) reported a deletion in Growth Hormone Receptor exon 3 (d3-GHR) associated with an increase of 10 years in male lifespan when homozygous. This deletion is tagged by rs6873545_C (McKay et al., 2007), which is present in the UK Biobank and LifeGen population sample at a frequency of 26.9% (q). Considering the association is recessive and we are imputing father genotypes, we converted the reported effect size into expected years of life per allele as follows:
+Ben-Avraham et al. (2017) reported a deletion in Growth Hormone Receptor exon 3 (d3-GHR) associated with an increase of 10 years in male lifespan when homozygous. This deletion is tagged by rs6873545_C (McKay et al., 2007), which is present in the UK Biobank and LifeGen population sample at a frequency of 26.9% ($q$). Considering the association is recessive and we are imputing father genotypes, we converted the reported effect size into expected years of life per allele as follows:
 
-If the subject genotype is CT, the parent contributing the C allele has 50% chance of being the father and q2q2+2pq chance of being homozygous. If the subject genotype is CC, the father has 100% chance of contributing the C allele and again has q2q2+2pq chance of being homozygous. We therefore expect the relationship to be β^C=12β^CCq2q2+2pq, where β^C is the observed effect per subject allele on father lifespan and β^CC is the reported effect of the homozygous deletion in the father. As before, doubling the allele effect gives an estimate of the effect of the allele on subject lifespan, which finally yielded a converted estimate of 0.155. That is, under Ben-Avrahim et al.’s assumptions on inheritance patterns, if their estimate of effect size in minor homozygotes is correct, we should see under the additive model an effect size of 0.155 years, or a loge(hazard ratio) of –0.015, and correspondingly scaled standard errors (note we are assuming that the effect is actually recessive, and estimating how that effect should appear if an additive model were fitted).
+If the subject genotype is CT, the parent contributing the C allele has 50% chance of being the father and $\frac{q^{2}}{q^{2}+2pq}$ chance of being homozygous. If the subject genotype is CC, the father has 100% chance of contributing the C allele and again has $\frac{q^{2}}{q^{2}+2pq}$ chance of being homozygous. We therefore expect the relationship to be $\beta^_{C}=\frac{1}{2}\beta^_{CC}\frac{q^{2}}{q^{2}+2pq}$, where $\beta^_{C}$ is the observed effect per subject allele on father lifespan and $\beta^_{CC}$ is the reported effect of the homozygous deletion in the father. As before, doubling the allele effect gives an estimate of the effect of the allele on subject lifespan, which finally yielded a converted estimate of 0.155. That is, under Ben-Avrahim et al.’s assumptions on inheritance patterns, if their estimate of effect size in minor homozygotes is correct, we should see under the additive model an effect size of 0.155 years, or a loge(hazard ratio) of –0.015, and correspondingly scaled standard errors (note we are assuming that the effect is actually recessive, and estimating how that effect should appear if an additive model were fitted).
 
 Standard errors were calculated from inferred betas and reported P values, assuming a two-sided test with a normally-distributed estimator. Confidence interval overlap was then assessed using a two-sided test on the estimate difference (Pdiff), using a Z statistic from the difference divided by the standard error of the difference.
 
-## iGWAS
+#### iGWAS
 
-We performed a Bayesian Genome-Wide Association Study using the CES GWAS results and summary statistics on 58 risk factor GWASs (imputed, leading to 7.2 million SNPs in common between all the studies), as described by McDaid et al. (2017). To calculate our prior for SNPs on a given chromosome, first we used a multivariate Mendelian Randomization (masking the focal chromosome) to identify the risk factors significantly influencing lifespan and estimate their causal effect. This identified 16 risk factors independently causally contributing to lifespan (see Table 2—source data 1 for the causal effect estimates). Next, assuming that a SNP affects lifespan through its effects on the 16 risk factors, prior effects estimates were estimated as the sum of the products of the causal effect estimates of the 16 significant risk factors on lifespan and the effect of the SNP on each risk factor. We added one to the prior effect variance formula described in McDaid et al. (2017) to account for the fact that prior effects are estimated using observed Z-scores, and not true Z-scores, with Zobs∼ 𝒩(Ztrue, 1).
+We performed a Bayesian Genome-Wide Association Study using the CES GWAS results and summary statistics on 58 risk factor GWASs (imputed, leading to 7.2 million SNPs in common between all the studies), as described by McDaid et al. (2017). To calculate our prior for SNPs on a given chromosome, first we used a multivariate Mendelian Randomization (masking the focal chromosome) to identify the risk factors significantly influencing lifespan and estimate their causal effect. This identified 16 risk factors independently causally contributing to lifespan (see Table 2—source data 1 for the causal effect estimates). Next, assuming that a SNP affects lifespan through its effects on the 16 risk factors, prior effects estimates were estimated as the sum of the products of the causal effect estimates of the 16 significant risk factors on lifespan and the effect of the SNP on each risk factor. We added one to the prior effect variance formula described in McDaid et al. (2017) to account for the fact that prior effects are estimated using observed Z-scores, and not true Z-scores, with $Z_{obs}∼ 𝒩(Z_{true}, 1)$.
 
 We computed Bayes factors by combining the prior effects and the observed association Z statistics. The significance of the Bayes factors was assessed using a permutation approach to calculate P values, by comparing observed Bayes factors to 7.2 billion null Bayes factors. These null Bayes factors were estimated using 1000 null sets of Z statistics combined with the same priors. These empirical P values were then adjusted for multiple testing using the Benjamini-Hochberg procedure.
 
-## Replication in extreme long-livedness
+#### Replication in extreme long-livedness
 
 To replicate our novel lifespan findings, we inverse-variance meta-analysed summary statistics from Deelen et al. (2014) and Broer et al. (2015), having converted their effect sizes to a common scale (see Candidate SNP replication). These effect sizes were given or could be estimated from P value, effect direction and N, as well as the SNPs MAF.
 
-Both longevity studies and the LifeGen consortium contain individuals from the Rotterdam Study, but due to differences in trait definitions, we could not inflate standard errors directly based on sample overlap. Instead, we calculated the covariance in null SNPs (Z < 1) between each study (r ~ 0.01) and then adjusted the standard errors based on equation 5 from Lin and Sullivan (2009):Variance(β^)=Variance0(β^)+2∗ ∑n=1N−1∑m=n+1Nwnwm\ Cov(β^n,β^m)
+Both longevity studies and the LifeGen consortium contain individuals from the Rotterdam Study, but due to differences in trait definitions, we could not inflate standard errors directly based on sample overlap. Instead, we calculated the covariance in null SNPs (Z < 1) between each study (r ~ 0.01) and then adjusted the standard errors based on equation 5 from Lin and Sullivan (2009):
 
-Where Variance0 is the unadjusted variance of the SNP effect β^ after meta-analysis, w is the inverse variance weight of the SNP, N is the number of studies, and Cov (β^n,β^m) is the null SNP covariance between each study.
+$$
+Variance(\beta^)=Variance_{0}(\beta^)+2∗ \sumn=1N−1\summ=n+1Nw_{n}w_{m}\ Cov(\beta^_{n},\beta^_{m})
+$$
 
-Test of the hypothesis that the effect was zero, was one sided, with alternate hypothesis that the effect had the same sign as in discovery. Effect sizes in discovery and replication were then compared by calculating the ratio (alpha) of replication effect sizes to discovery effect sizes:α=βrepβdiscand its standard error using the following formula, reflecting the Taylor series expansion of the denominator for SE:SEα=SErep2βdisc2+βrep2 SEdisc2(βdisc2)2where rep and disc are replication and discovery, respectively. Alpha was then inverse-variance meta-analysed across all SNPs to test for collective evidence that the discovery SNPs influence longevity.
+Where Variance0 is the unadjusted variance of the SNP effect $\beta^$ after meta-analysis, w is the inverse variance weight of the SNP, N is the number of studies, and Cov $(\beta^_{n},\beta^_{m})$ is the null SNP covariance between each study.
 
-## Age and sex-stratified effects
+Test of the hypothesis that the effect was zero, was one sided, with alternate hypothesis that the effect had the same sign as in discovery. Effect sizes in discovery and replication were then compared by calculating the ratio (alpha) of replication effect sizes to discovery effect sizes:
+
+$$
+\alpha=\frac{\beta_{rep}}{\beta_{disc}}
+$$
+
+and its standard error using the following formula, reflecting the Taylor series expansion of the denominator for SE:
+
+$$
+SE_{\alpha}=\sqrt{\frac{SE_{rep}^{2}}{\beta_{disc}^{2}}+\frac{\beta_{rep}^{2} SE_{disc}^{2}}{(\beta_{disc}^{2})^{2}}}
+$$
+
+where rep and disc are replication and discovery, respectively. Alpha was then inverse-variance meta-analysed across all SNPs to test for collective evidence that the discovery SNPs influence longevity.
+
+#### Age and sex-stratified effects
 
 Calculation of age and sex stratified effect sizes was done using the full Cox model (Equation 1), imputed dosages and the package ‘Survival’ in R. We split the full analysis into age decades from 40 to 90 and a wider band, 90–120, beyond that, excluding any parent who died at an age younger than the age band and treating any parent who died beyond the age band as alive at the end of the age band. We thus had, across independent periods of life, estimates of the hazard ratio by decade of age and parent sex, along with standard errors. This gave estimates of the hazard ratio beta(age band, sex) in each age band and sex.
 
 We tested the effect of age and sex, by fitting the linear model beta(age band, sex) = intercept + beta1 x ageband + beta2 x sex + e, where e is independent, but with known variance (the square of the SE in the age/sex stratified model fit) and using the rma function from the R package ‘metafor’ which uses known variances of dependent variables. The process is more easily understood by examining the age and sex related effect size graphs, and recognising we are fitting age and sex as explanatory variables, considering the standard error of each point shown.
 
-## Causal gene prediction
+#### Causal gene prediction
 
 In order to more accurately implicate causal genes and methylation sites from the detected loci associated with human lifespan, Summary-level Mendelian Randomisation (SMR) and HEterogeneity In InDependent Instruments (HEIDI) tests (Zhu et al., 2016) were performed on our CES GWAS statistics. Three separate analyses were performed. First, cis-eQTL scan results from peripheral blood tissue from two previous studies, the Westra data (Westra et al., 2013) and CAGE data (Lloyd-Jones et al., 2017), were used to prioritize causal genes. Second, cis-eQTL signals (SNPs with FDR < 0.05) for 48 tissues from the GTEx consortium (Battle et al., 2017) were used to prioritize causal genes in multiple tissues. Third, genome-wide methylation QTL (mQTL) scan signals in blood tissue from the Brisbane Systems Genetics Study and Lothian Birth Cohort (McRae et al., 2017) were used to predict causal CpG sites associated with human lifespan loci. All results from SMR test passing a 5% FDR threshold where the HEIDI test p > 0.05 were reported.
 
-## Fine-mapping using LASSO regression
+#### Fine-mapping using LASSO regression
 
 Selection Operator for JOint multi-SNP analysis (SOJO) (Ning et al., 2017) was used to perform conditional fine-mapping analysis of the lifespan loci. The SOJO procedure implements LASSO regression for each locus, which outperforms standard stepwise selection procedure (e.g. GCTA-COJO), based on summary association statistics and the European-ancestry 1000 Genomes samples for LD reference. We based the SOJO analysis on our CES summary association statistics from UK Biobank and used the LifeGen summary statistics as validation sample to optimise the LASSO tuning parameters for each locus. Loci were defined prior to analysis as 1 Mb windows centred at each top variant from the GWAS. For each locus, based on UK Biobank data, we recorded the first 30 variants entering the model and the tuning parameters for these entering points along the LASSO path, as well as the LASSO results at the tuning parameters. For each recorded tuning parameter, we then built a polygenic score and computed the proportion of predictable variance from the regional polygenic score in the validation sample. The best out-of-sample R squared is reported, together with the selected variants per locus.
 
-## Lifespan variance explained
+#### Lifespan variance explained
 
 We sought an independent set of disease-associated SNPs to assess which diseases had the greatest effect on lifespan. A large number of SNPs per disease category, especially other cancers, were used to ensure that diseases were not under-represented when testing for association with lifespan. The latest, genome-wide significant disease SNPs from European ancestry studies were retrieved from the GWAS catalog (14 March 2018), based on string matching within reported trait names. For Alzheimer’s/Parkinson’s disease, these were ‘alzh’ and ‘parkin’; for CVD, these were ‘myocard’, ‘cvd’, ‘cardiovascular’, ‘coronary’, and ‘artery disease’; for Type 2 diabetes this was ‘type 2 diabetes’; for cancers, this was ‘cancer’, ‘noma’, ‘ioma’, ‘tumo[u]r’, and ‘leukemia’. Cancers were then divided in Lung cancer and Other cancers based on the presence or absence of the keyword ‘lung’. The Smoking/Lung cancer category was created by adding traits containing the keywords ‘smoking’ and ‘chronic obstructive’ to the lung cancers. Each category was manually checked to include only associations with the diseases themselves or biomarkers of the diseases. Although some throat cancers are often caused by smoking and alcohol consumption, we did not treat these as smoking loci; in practice, this choice had no effect as the only significant throat cancer locus (oesophageal cancer near CFTR) was discounted as secondary pleiotropic – see below.
 
@@ -482,7 +952,7 @@ SNPs missing from the CES summary statistics were imputed from the closest proxy
 
 Our final dataset consisted of 555 disease SNPs (81 neurological, 72 cardiovascular, 65 diabetes, 22 smoking/lung cancer, and 315 other cancers). Lifespan variance explained (LVE) was calculated as 2pqa2, where p and q are the frequencies of the effect and reference alleles in our lifespan GWAS, and a is the SNP effect size in years of life (Falconer et al., 1996). To assess pleiotropy, SNPs were tested against other disease categories, and where possible, the relative strengths of standardised associations between disease categories were compared. SNPs associating more strongly with another disease, as defined by a Z statistic more than double that of the original disease, were marked as pleiotropic and secondary. Whilst strength of association would not normally be perceived as appropriately measured in this way (odds ratio being more conventional and independent of prevalence), here we are interested in the excess number of disease cases in the population due to the variant, so any locus with a moderate OR for a highly prevalent disease is judged more causative of that disease than a locus with a (somewhat) higher OR for a very rare disease, as the number of attributable cases will be lower. The Z statistic captures this – given that p and q are obviously the same (same SNP, same population). Correspondingly, for diseases only present in one sex, the other sex was treated as all controls. Whilst this halves the apparent effect size, the required measure is the amount of disease caused across the whole population. A SNP conferring similar attributable counts of CVD and breast cancer in women, but also CVD in men, is causing CVD more than cancer across the population. Correspondingly, selection pressure on the breast cancer effect is half that for a matching effect in both sexes. SNPs conferring both an increase in disease and an increase in lifespan were marked as antagonistically pleiotropic. Unsurprisingly, in practice, there were one or more other diseases reduced by the SNP and therefore the reported disease-increasing association was considered secondary. Total LVE per disease category was calculated by summing SNPs not marked as secondary and with significant effects on lifespan, where significance was determined by setting an FDR threshold that allowed for one false positive among all SNPs tested (q ≤ 0.016, 60 SNPs). To compare the cumulative LVE of the top LVE loci, all non-secondary association SNPs from the disease categories were pooled and again subdivided into independent loci (r2 < 0.1) 500 kb apart. Applying an FDR threshold with the same criteria (q ≤ 0.022), a total of 45 (1 neurological, 23 cardiovascular, four diabetes, six smoking/lung cancer, and 11 other cancer) independent loci remained and their LVE was summed by disease category.
 
-## Cell type and pathway enrichment
+#### Cell type and pathway enrichment
 
 Stratified LD-score regression (Finucane et al., 2015) partitions SNP heritability into regions linked to specific tissues and cell types, such as super-enhancers and histone marks, and then assesses whether the SNPs in these regions contribute disproportionately to the total SNP heritability. Standard LD-score regression (Bulik-Sullivan et al., 2015) indicated that between the different samples (UK Biobank and/or LifeGen) and analyses (CES or SSE), the CES results from UK Biobank genomically British ancestry individuals had the highest SNP heritability, plausibly due to its uniformity of population sample. These statistics were analysed using the procedure described by Finucane et al., 2015, which included limiting the regressions to HapMap3 SNPs with MAF > 0.05 to reduce statistical noise. Results from all cell types were merged and then adjusted for multiple testing using Benjamini–Hochberg (FDR 5%).
 
@@ -492,11 +962,11 @@ DEPICT was also used to create a list of genes; however, this method uses indepe
 
 PASCAL was used with the same summary statistics and gene sets as DEPICT, except the gene probabilities within the sets were dichotomized (Z > 3) (Marouli et al., 2017), leading to the analysis of the same 14,461 pathways. PASCAL transformed SNP P values into gene-based P values (with default method ‘--genescoring=sum’) for 21,516 genes (Lamparter et al., 2016). When testing the pathways for overrepresentation of high gene scores, the P values are estimated under the competitive null hypothesis (Maciejewski, 2014). These pathway empirical P values were further adjusted for multiple testing using Benjamini-Hochberg procedure.
 
-## Age-related eQTLs enrichment
+#### Age-related eQTLs enrichment
 
 We identified SNPs in our CES GWAS that were eQTLs that is associated with the expression of at least one gene with p < 10–4 in a dataset by the eQTLGen Consortium (n = 31,684 individuals) (Võsa et al., 2018). A total of 3577 eQTLs after distance pruning (500 kb) were present, of which 755 were associated with genes differentially expressed with age (Peters et al., 2015). We used Fisher's exact test to determine, amongst the set of eQTLs, if SNPs which were associated with lifespan (at varying thresholds of statistical significance) were enriched for SNPs associated with genes whose expression is age-related.
 
-## Polygenic lifespan score associations
+#### Polygenic lifespan score associations
 
 We used the CES GWAS, excluding (one at a time) all Scottish populations (whether from Scottish UK Biobank assessment centres or Scottish LifeGen cohorts), Estonian populations and a random 10% of UK Biobank English and Welsh subjects to create polygenic risk scores using PRSice (Euesden et al., 2015), where the test subjects had not been part of the training data. As we find polygenic risk scores developed using all (p ≤ 1) independent (r2 < 0.1) SNPs (PRSP1), rather than those passing a tighter significance threshold are most associated (highest standardised effect size; see Table 3—source data 1 for comparison between thresholds), these were used in the analysis.
 
@@ -506,9 +976,9 @@ A third independent validation set was constructed by excluding the EGCUT cohort
 
 Polygenic survival scores were constructed using PRSice 2.0.14.beta (Euesden et al., 2015) in a two-step process. First, lifespan SNPs were LD-clumped based on an r2threshold of 0.1 and a window size of 250 kb. To facilitate practical run times of PRSice clumping, only directly genotyped SNPs were used in the Scottish and English/Welsh subsets. The Estonian sample was genotyped on four different arrays with limited overlap, so here imputed data (with imputation measure R2 > 0.9) was used and clumped with PLINK directly (r2 = 0.1; window = 1000 kb). The clumped SNPs (85,539 in UK Biobank, 68,234 in Estonia) were then further pruned based on several different P value thresholds, to find the most informative subset. For all individuals, a polygenic score was calculated as the sum of SNP dosages (of SNPs passing the P value threshold) multiplied by their estimated allele effect. These scores were then standardised to allow for associations to be expressed in standard deviations in polygenic scores.
 
-Polygenic scores of test cohorts were regressed against lifespan and alive/dead status using a cox proportional hazards model, adjusted for sex, assessment centre, batch, array, and 10 principal components. Where parental lifespan was used, hazard ratios were doubled to gain an estimate of the polygenic score on own mortality. Scores were also regressed against self-reported diseases in UK Biobank subjects, their siblings, and each parent separately, using a logistic regression adjusted for the same covariates as in the lifespan analysis plus subject age. As with previous disease associations, estimates were transformed so positive associations indicate a protective or life-extending effect, and effect estimates of first degree relatives were doubled. Meta-analysis of estimates between cohorts was done using inverse variance weighting. Where estimates between kin were meta-analysed, standard errors were adjusted for correlation between family members. This involved multiplying standard errors by 1+r for each correlation (r) with the reference kin (Equation 2), which appears slightly conservative. As correlations between family member diseases were very low (range 0.0005 to 0.1048), in practice, this adjustment had no effect.
+Polygenic scores of test cohorts were regressed against lifespan and alive/dead status using a cox proportional hazards model, adjusted for sex, assessment centre, batch, array, and 10 principal components. Where parental lifespan was used, hazard ratios were doubled to gain an estimate of the polygenic score on own mortality. Scores were also regressed against self-reported diseases in UK Biobank subjects, their siblings, and each parent separately, using a logistic regression adjusted for the same covariates as in the lifespan analysis plus subject age. As with previous disease associations, estimates were transformed so positive associations indicate a protective or life-extending effect, and effect estimates of first degree relatives were doubled. Meta-analysis of estimates between cohorts was done using inverse variance weighting. Where estimates between kin were meta-analysed, standard errors were adjusted for correlation between family members. This involved multiplying standard errors by $\sqrt{1+r}$ for each correlation (r) with the reference kin (Equation 2), which appears slightly conservative. As correlations between family member diseases were very low (range 0.0005 to 0.1048), in practice, this adjustment had no effect.
 
-## URLs
+### URLs
 
 MultiABEL: https://github.com/xiashen/MultiABEL/
 

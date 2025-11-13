@@ -73,13 +73,33 @@ Documented outbreaks in a closed population with extensive testing of individual
 
 ## Results
 
-## Model calibration
+### Model calibration
 
 The model reflected the data well (Figure 1), including the differently timed peaks for confirmed symptomatic cases for crew (Figure 1A) and passengers (Figure 1B). In addition, the model matched the expected impact of quarantine of passengers on transmission from February 4th as illustrated by the drop in reproductive number (Figure 1E), followed by a later drop in transmission after February 10th, which was driven by a change in contact pattern in crew. See Figure 1—figure supplements 1–2 for full calibration outputs.
 
-## Asymptomatic infections
+![Figure 1.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig1-v2.jpg)
+
+**Figure 1.:** Figure shows data from the Diamond Princess (points (A-D) and bars (F)) and results from model calibration. Red lines = median, shading = 95% posterior plus observational interval (A-C) and 95% posterior interval only (D-E). Two vertical lines show the date of the first confirmed diagnosis (left) and the start of quarantine measures (right). (A-B) show confirmed symptomatic cases among crew (A) and passengers (B) with a reported date of onset; (C) shows confirmed pre- or asymptomatic individuals by test date; (D) shows the prevalence of pre/asymptomatic individuals by test date. Points and error bars show point estimates and 95% confidence intervals; (E) shows the basic reproduction number over time for the ship as a whole, reflecting the drop in contact rates (F) shows the number of tests administered irrespective of symptoms, by test date.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Parameter correlation plot containing parameter values from 10,000 samples of the joint posterior distribution found during MCMC model calibration. See Table 2 for parameter definitions and descriptions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Parameter trace plot showing all 1.5 million samples from the MCMC model calibration sequentially. See Table 2 for parameter definitions and descriptions.
+
+### Asymptomatic infections
 
 We estimated that 74% of infections proceeded asymptomatically (70–78%, 95% Posterior Interval (PI)) (see Figure 2A). The strong identifiability of this parameter is driven by the relative proportions of individuals testing positive with and without symptoms, combined with the time-delay between symptom-based and symptom-agnostic testing. As a result, our model estimated that in total 1304 (1,198–1,416) individuals were infected, representing 35% (32–38%) of the initial total population on the Diamond Princess. Over half of these infections had not been detected at disembarkation on February 21 st (53%, 51–56%) consisting of infected individuals who had recovered and became test negative before they were tested (37%, 34–40%), were yet to be tested (15%, 13–16%), or had recently been exposed and were not yet detectable at that point (1%, 1–3%). Nearly two-thirds of pre- and asymptomatic infections (67%, 66–68%) and 8% (6–9%) of symptomatic infections went undetected up until disembarkation (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig2-v2.jpg)
+
+**Figure 2.:** (A) Prior (blue) and posterior (red) probability distribution for the proportion progressing to asymptomatic infections. (B) Prior (blue) and posterior (red) probability distribution for the relative infectiousness of asymptomatic infections. (C) Number of pre- and asymptomatic infections and symptomatic cases detected (dark red) and not detected (light red) during the outbreak. Error bars indicate 95% posterior intervals. (D) Posterior probability distribution for proportion of transmission that is from asymptomatic individuals. Dashed and dotted lines show median and interquartile range, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Correlation between the proportion of transmission from asymptomatics and their relative infectiousness, using 100,000 model runs sampled from the joint posterior distribution. The relationship is non-linear, such that a modest relative infectiousness can still lead to a significant contribution to transmission.
 
 In contrast to the strong identifiability of the proportion of infections that were asymptomatic, the model was unable to identify the relative infectiousness of asymptomatic infections from the data, that is, a uniform prior was effectively returned (see Figure 2B). This is because the relative infectiousness of asymptomatic infections was degenerate with the overall contact rate, meaning the data were consistent with either relatively frequent contact with less infectious individuals or relatively infrequent contact with more infectious individuals (see Figure 1—figure supplement 1). Despite this, the estimated proportion of transmission due to asymptomatic infections is 69%, with a wide confidence interval (20–85%) and an interquartile range of 56–76% (Figure 2D). The reason this estimate is not effectively 0–100%, as might be expected by the unidentifiable relative infectiousness, is the combination of the strongly identified, relatively high proportion of infections that are asymptomatic and the non-linear relationship between the relative infectiousness of asymptomatics and their contribution to transmission, which quickly saturates to its maximal value (see Figure 2—figure supplement 1). The result is that only a modest relative infectiousness is required to produce a non-trivial contribution to transmission. The relative infectiousness of presymptomatics was also unidentifiable, however, in all scenarios the remaining transmission was equally distributed between the presymptomatic (14%, 1–44%) and symptomatic (17%, 11–42%) individuals. Figure 3 shows the instantaneous proportion of transmission from symptomatic (A), presymptomatic (B) and asymptomatic (C) individuals over the course of the epidemic.
 
@@ -89,7 +109,65 @@ In contrast to the strong identifiability of the proportion of infections that w
 
 Because of the non-identifiability of the relative infectiousness of asymptomatic infections we investigated marginal posterior estimates (Table 1). We find that low relative infectiousness of asymptomatic infections (0–25% compared to symptomatic individuals) would need to be compensated by a net reproduction number for individuals during their presymptomatic and symptomatic phase of 15.5–29.1.
 
-## Sensitivity analyses
+**Table 1.**
+ Model outputs by relative infectiousness of asymptomatic individuals.Relative infectiousness expressed as proportion compared to symptomatic individuals. All values are 95% posterior ranges from model scenarios. Net reproduction number represents the typical number of infections generated by a single infected individual during their presymptomatic and symptomatic stages.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Range of relative infectiousness of asymptomatic individual</th>
+      <th colspan="3">Model output</th>
+    </tr>
+    <tr>
+      <th>Transmission from asymptomatic individuals (%)</th>
+      <th>Net reproduction number for presymptomatic passengers</th>
+      <th>Basic reproduction number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0–1%</td>
+      <td>0–3</td>
+      <td>22.7–29.1</td>
+      <td>6.7–7.6</td>
+    </tr>
+    <tr>
+      <td>1–25%</td>
+      <td>7–58</td>
+      <td>15.5–25.5</td>
+      <td>7.0–8.8</td>
+    </tr>
+    <tr>
+      <td>25–50%</td>
+      <td>44–75</td>
+      <td>11.1–17.6</td>
+      <td>8.0–9.6</td>
+    </tr>
+    <tr>
+      <td>50–75%</td>
+      <td>60–82</td>
+      <td>8.7–13.6</td>
+      <td>8.7–10.2</td>
+    </tr>
+    <tr>
+      <td>75–99%</td>
+      <td>68–86</td>
+      <td>7.2–11.4</td>
+      <td>9.3–10.8</td>
+    </tr>
+    <tr>
+      <td>99–100%</td>
+      <td>72–87</td>
+      <td>6.7–10.2</td>
+      <td>9.5–10.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_Relative infectiousness expressed as proportion compared to symptomatic individuals. All values are 95% posterior ranges from model scenarios. Net reproduction number represents the typical number of infections generated by a single infected individual during their presymptomatic and symptomatic stages._
+
+### Sensitivity analyses
 
 Without an asymptomatic state the model was unable to reconstruct the dynamics of the outbreak (Appendix 2—figures 1–3, Deviance Information Criterion (DIC) = 974 vs 329 for the primary analysis). Moreover, adjusting the relative value for mixing between crew and passengers did not have a qualitative effect on the results (Appendix 2—figures 4–11).
 
@@ -101,11 +179,11 @@ A longer latent period provided a poorer fit to the data (DIC = 361) (Appendix 2
 
 ## Discussion
 
-## Summary
+### Summary
 
 We find that in this well-documented outbreak in a closed population, 74% (70–78%) of infections proceeded asymptomatically, equaling a 1:3.8 (1:3.3-1:4.4) case-to-infection ratio. The majority of asymptomatic infections remained undetected, but may have contributed substantially to ongoing transmission. While the relative infectiousness of asymptomatic infections could not be identified, low infectiousness (e.g. 0–25% compared to symptomatic individuals) would have required a very high net reproduction number for individuals during their presymptomatic and symptomatic stages of (15.5–29.1).
 
-## Interpretation
+### Interpretation
 
 Our results are strongly informed by data, which show that when extensive symptom-agnostic testing was ramped up, substantial numbers of pre- or asymptomatic infections were identified. Given the clear suppression of transmission through quarantining, as indicated by the drop in incident symptomatic disease, this finding is most likely explained by a large proportion of undetected asymptomatic individuals.
 
@@ -113,7 +191,7 @@ The model and data were unable to identify a value for the relative infectiousne
 
 It is important to note that our conclusion that asymptomatic infections may have contributed substantially to ongoing transmission is critically dependent on the setting. In this case symptomatic infections were quickly identified and removed from the ship before symptom-agnostic testing began, thereby leaving asymptomatic infections to dominate transmission. Such dominance should therefore not be interpreted as a constant of nature, but instead an important consideration in settings where prompt isolation of symptomatic infections is already in place but with little to no consideration for asymptomatic infections.
 
-## Comparison to other studies
+### Comparison to other studies
 
 Our estimated proportion of asymptomatic infections in this outbreak is higher than previous studies, which relied on diagnosed cases only (Mizumoto et al., 2020). As we have shown, a substantial number of infections were not detected, which would explain some of the difference. Other empirical studies have found usually lower values, while some found similar ranges. While underestimation in other estimates due to low (Fontanet et al., 2020) and imbalanced participation from individuals with and without symptoms (Gudbjartsson et al., 2020) will be part of the explanation, there remains scope for unexplained variation from more complete samples (Lavezzo et al., 2020). In addition, it is possible that PCR-based testing has a lower sensitivity for asymptomatic individuals, which would further increase the proportion of infections that were asymptomatic (Chau et al., 2020).
 
@@ -123,7 +201,7 @@ Our estimated substantial contribution to transmission from asymptomatic infecti
 
 Our finding of similar contribution to transmission from presymptomatic and symptomatic individuals also matches findings by others (Ganyani et al., 2020; Liu et al., 2020a; He et al., 2020). In line with this, it is clear that having symptoms, or at least being aware of them, is not required in the transmission of SARS-CoV-2 (Ganyani et al., 2020; Liu et al., 2020a; He et al., 2020; Kimball et al., 2020; Wei et al., 2020). Although cough is often considered essential for transmission of respiratory infections (Patterson and Wood, 2019), work in tuberculosis, influenza and other coronaviruses has shown that while a cough may increase spread, it is not a requirement. Transmission from breathing, talking and sneezing is also possible, as well as transmission from contaminated surfaces (van Doremalen et al., 2020; Leung et al., 2020; Asadi et al., 2019; Williams et al., 2020).
 
-## Limitations
+### Limitations
 
 Additional data, in particular on the distribution of asymptomatic infections across crew and passengers, by age and shared quarantine environments would have benefited the model and potentially enabled us to estimate a range for the relative infectiousness of asymptomatic infections. A serological survey of the population, and the date and testing history of individuals who developed symptoms post-disembarkation, would also have likely informed more precise model estimates. In addition, better evidence on performance of the test used, and the associated likelihood of false-negative or false-positive results would help refine estimates. As more data become available, future model analyses of SARS-CoV-2 dynamics in closed populations should further inform the key questions we have looked to address here.
 
@@ -133,13 +211,13 @@ Our model also assumed that the infectiousness of all transmissible states was c
 
 A similar simplification was made by assuming that the probability of an individual progressing to either a presymptomatic or asymptomatic infection was independent of who infected whom. It is possible, however, that transmission from a symptomatic infection may be more likely to ultimately result in another symptomatic infection, owing to a higher infecting dose for example.
 
-## Conclusion
+### Conclusion
 
 Asymptomatic SARS-CoV-2 infections may contribute substantially to transmission. This is essential to consider for countries when assessing the potential effectiveness of ongoing control measures to contain COVID-19.
 
 ## Materials and methods
 
-## Data
+### Data
 
 Data from the Diamond Princess outbreak have been widely reported. (Mizumoto et al., 2020; Nishiura, 2020; NIID, 2020) On January 20th, the Diamond Princess cruise ship departed from Yokohama on a tour of Southeast Asia. A passenger that disembarked on January 25th in Hong Kong subsequently tested positive for SARS-CoV-2 on February 1st, reporting the date of symptom onset as January 23rd.
 
@@ -149,9 +227,158 @@ Testing capacity was limited until February 11th and before then the majority of
 
 We extracted the following data from Mizumoto et al., 2020; Nishiura, 2020; NIID, 2020 (see Figure 1). Firstly, the number of symptomatic cases per day (i.e. those testing positive having reported symptoms) by date of symptom onset, separately for passengers and crew. The date of symptom onset was not available for 115 cases, which we accounted for in our model structure by assuming they were distributed over time proportional to those cases with a reported date of symptom onset (see Appendix 1—table 1). Secondly, we extracted the number of pre- or asymptomatic infections identified per day (i.e. individuals testing positive having not reported symptoms) by date of test. The test date was not available for 35 pre- or asymptomatic individuals between the February 6-14th, which we assumed were distributed over time proportional to the daily number of tests performed amongst individuals not reporting symptoms. No data were available on how many individuals that tested positive in the absence of symptoms became symptomatic after disembarkation. Finally, we extracted the number of tests performed per day amongst individuals not reporting symptoms (see Appendix 1—table 2).
 
-## Model
+### Model
 
 We built a deterministic, compartmental model to capture transmission, disease development and the effect of interventions on board the Diamond Princess. Following exposure, after which an individual is assumed to test negative for SARS-CoV-2 for the duration of the latent phase (see Table 2), a proportion of individuals proceed asymptomatically with the remainder becoming presymptomatic. This proportion equates to a universal probability of becoming either presymptomatic or asymptomatic, independent of who infected whom. Individuals in the presymptomatic, asymptomatic or symptomatic state are assumed to test positive and have independent infectiousness, expressed relative to those with symptomatic disease.
+
+**Table 2.**
+ Model parameters and priors/values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Prior/value</th>
+      <th>Source/Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>β¯</td>
+      <td>Overall contact rate (1/days)</td>
+      <td>Estimated: Uniform(0,100)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>c(cc)</td>
+      <td>Relative initial contact rate between crew/crew</td>
+      <td>Fixed: 1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>c(pp)</td>
+      <td>Relative initial contact rate between passengers/passengers</td>
+      <td>Estimated: Uniform(0,100)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>c(pc)</td>
+      <td>Relative initial contact rate between passengers/crew</td>
+      <td>Fixed relative to c(pp)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>Ratio: c(pc)c(pp)</td>
+      <td>Fixed: 0.1</td>
+      <td>Assumed. Varied in sensitivity analyses</td>
+    </tr>
+    <tr>
+      <td>b1</td>
+      <td>Percentage reduction in all initial contact rates (%)</td>
+      <td>Estimated: Uniform(0,100)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>b2</td>
+      <td>Rate of change of all contact rates (1/days)</td>
+      <td>Fixed: 10</td>
+      <td>Assumed. Transitions completed over approximately one day</td>
+    </tr>
+    <tr>
+      <td>τ(pp),τ(pc)</td>
+      <td>Time of transition for contacts between passengers/passengers and passengers/crew (days)</td>
+      <td>Estimated: Uniform(0,32)</td>
+      <td>Assumed to be equal to each other</td>
+    </tr>
+    <tr>
+      <td>τ(cc)</td>
+      <td>Time of transition for contacts between crew/crew (days)</td>
+      <td>Estimated: Uniform(0,32)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>θp</td>
+      <td>Relative infectiousness of presymptomatic state</td>
+      <td>Estimated: Uniform(0,1)</td>
+      <td>Relative to symptomatic state</td>
+    </tr>
+    <tr>
+      <td>θa</td>
+      <td>Relative infectiousness of asymptomatic state</td>
+      <td>Estimated: Uniform(0,1)</td>
+      <td>Relative to symptomatic state</td>
+    </tr>
+    <tr>
+      <td>χ</td>
+      <td>Proportion of infections that proceed to asymptomatic state</td>
+      <td>Estimated: Uniform(0,1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1v</td>
+      <td>Latent period (days)</td>
+      <td>Fixed: 4.3</td>
+      <td>Derived from Backer et al., 2020</td>
+    </tr>
+    <tr>
+      <td>1γa</td>
+      <td>Mean duration in asymptomatic state (days)</td>
+      <td>Fixed: 5.0</td>
+      <td>Assumed. Sum of mean durations in presymptomatic and symptomatic states. Varied in sensitivity analyses.</td>
+    </tr>
+    <tr>
+      <td>1γp</td>
+      <td>Mean duration in presymptomatic state (days)</td>
+      <td>Fixed: 2.1</td>
+      <td>Derived from Backer et al., 2020</td>
+    </tr>
+    <tr>
+      <td>1γs</td>
+      <td>Mean duration in infectious symptomatic state (days).</td>
+      <td>Fixed: 2.9</td>
+      <td>From Liu et al., 2020b Applicable only until quarantine starts on 5th Feb</td>
+    </tr>
+    <tr>
+      <td>1μ</td>
+      <td>Mean delay between onset of symptomatic disease and symptom-based testing and removal (days).</td>
+      <td>Fixed: 1</td>
+      <td>Assumed. Applicable only after quarantine starts on 5th Feb.</td>
+    </tr>
+    <tr>
+      <td>1η</td>
+      <td>Mean duration of test positivity following recovery (days)</td>
+      <td>Fixed: 7</td>
+      <td>From Woelfel et al., 2020</td>
+    </tr>
+    <tr>
+      <td>ϕ</td>
+      <td>Proportion of symptomatic cases with a reported onset date</td>
+      <td>Fixed: 0.661 (199/314)</td>
+      <td>From Mizumoto et al., 2020; Nishiura, 2020</td>
+    </tr>
+    <tr>
+      <td>f(t)</td>
+      <td>Rate of symptom-agnostic testing and removal (1/days)</td>
+      <td>Fixed: Calculated</td>
+      <td>From Mizumoto et al., 2020 Calculated using the number of tests administered per day amongst individuals not reporting symptoms (see Appendix 1)</td>
+    </tr>
+    <tr>
+      <td>N(p)</td>
+      <td>Total number of passengers on the ship as at start of quarantine on 5th Feb</td>
+      <td>Fixed: 2666</td>
+      <td>From NIID, 2020</td>
+    </tr>
+    <tr>
+      <td>N(c)</td>
+      <td>Total number of crew on the ship as at start of quarantine on 5th Feb</td>
+      <td>Fixed: 1045</td>
+      <td>From NIID, 2020</td>
+    </tr>
+  </tbody>
+</table>
 
 Individuals with presymptomatic infection are either detected through symptom-agnostic testing before being removed from the ship, or develop symptomatic disease. Once symptomatic disease starts, individuals can either recover undetected on the ship or, following the start of quarantine on February 5th, be detected through symptom-based testing and removed from the ship with an average delay of one day following symptom onset. We allowed for individuals to test positive after their infectious period for an average of seven days (Woelfel et al., 2020). After this, we assume they would test negative.
 
@@ -161,24 +388,24 @@ Symptom-agnostic testing was assumed to have been random amongst those not repor
 
 Crew and passengers were modelled separately, using stratified data on the number of confirmed symptomatic cases (Figure 1A–B). We estimated the within-crew and within-passenger contact rates through calibration to the data, but assumed that the between-group contact rate was a fixed factor of 1/10th of the within-passenger rate, and explored the impact of this assumption in sensitivity analyses. We enabled the model to capture potential changes in contact behaviour between individuals by representing contact rates as sigmoid functions over time, reflecting any reductions in contact. The dates and extent of the changes were determined solely through model calibration to the data.
 
-## Model parameterisation
+### Model parameterisation
 
 We used data from the literature to inform the natural history of COVID-19, in particular for the duration of presymptomatic and symptomatic phases (see Table 2).
 
-## Model calibration
+### Model calibration
 
 The model was calibrated in a Bayesian framework. We fitted to the daily incidence of confirmed symptomatic cases with a known onset date, separately for passengers and crew, assuming a Poisson distribution in the likelihood. We simultaneously fitted to the daily number of confirmed pre- and asymptomatic infections for passengers and crew combined by using the number of tests administered per day and the prevalence of presymptomatic, asymptomatic and post-infection test-positive individuals, assuming a binomial distribution in the likelihood. We used uniform priors for the parameters to be estimated (see Table 2) and sampled the posterior of the model parameters using sequential Markov Chain Monte-Carlo (MCMC). A burn in phase during which the proposal distributions were adapted in both scale and shape to provide optimal sampling efficiency was discarded, leaving chains with 1.5 million iterations. The resultant MCMC chains were visually inspected for convergence.
 
-## Model outputs
+### Model outputs
 
 Model outputs were calculated by randomly sampling 100,000 parameter values from the posterior distribution. Model trajectories were generated and compared to the data in Figure 1A–C to inspect model fit. The basic reproduction number was also calculated over time using the next-generation matrix (Diekmann et al., 2010), as a measure of ongoing transmission. We estimated the proportion of infections that become asymptomatic and the relative infectiousness of asymptomatic infections using their respective marginal posterior parameter values. Finally, the contribution of asymptomatic infections to overall transmission, as well as the net reproduction number for presymptomatic passengers at the beginning of the outbreak (i.e. the typical number of infections generated by a single presymptomatic individual) were estimated, both overall and by specific ranges of relative infectiousness. We report the median and 95% equal-tailed posterior intervals throughout.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 We recalibrated the model for a number of alternative scenarios to assess model sensitivity. Firstly, we assessed the impact of removing the asymptomatic phase (i.e. 100% of infections progressed to symptomatic disease). Secondly, we explored the impact of assuming different values for the relative mixing between crew and passengers as well as shorter and longer durations of asymptomatic infection. Thirdly, we considered the impact of biased symptom-agnostic testing. Specifically, we first assumed that those that would test positive were 50% more likely to be tested, before then assuming that those that would test negative were 50% more likely to be tested, both compared to purely random testing as per the primary analysis. We also explored the impact of assuming a different proportion of asymptomatic infections for crew and passengers based on their distinct median ages (36 years for crew, 69 years for passengers), using a fixed ratio for the two proportions taken from the results of a model fitted to epidemic data in six countries by Davies et al., 2020. In addition, we explored a longer latent period given the relatively high age in our population (Jiang et al., 2020). Finally, we recalibrated the model assuming the 35 confirmed pre/asymptomatic cases where a test date was not available were allocated to the last feasible day (13th Feb) instead of proportionate to the overall number of tests over the period February 6-14th(see Appendix 2 for further details).
 
 All analyses were conducted using R version 3.5.0 (R Development Core Team, 2014). Bayesian calibration was performed in LibBi (Murray, 2013) using RBi (Funk, 2019) as an interface. Replication data and analyses scripts are available on GitHub at https://github.com/thimotei/covid19_asymptomatic_trans (Emery et al., 2020; copy archived at https://github.com/elifesciences-publications/covid19_asymptomatic_trans).
 
-## Role of funding source
+### Role of funding source
 
 The funder of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report. The corresponding author had full access to all the data in the study and had final responsibility for the decision to submit for publication.

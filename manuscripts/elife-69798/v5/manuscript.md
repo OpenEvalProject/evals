@@ -30,20 +30,20 @@
 ### Affiliations
 
 1. GSK Global Health, Tres Cantos Madrid Spain
-2. https://ror.org/05rehad94 The Hospital for Tropical Diseases, Wellcome Trust Major Overseas Programme, Oxford University Clinical Research Unit Ho Chi Minh City Viet Nam
+2. The Hospital for Tropical Diseases, Wellcome Trust Major Overseas Programme, Oxford University Clinical Research Unit Ho Chi Minh City Viet Nam ([ROR:05rehad94](https://ror.org/05rehad94))
 3. GSK R&D Stevenage United Kingdom
-4. https://ror.org/00cvxb145 Division of Allergy and Infectious Disease, Center for Emerging and Re-emerging Infectious Diseases University of Washington School of Medicine Seattle United States
-5. https://ror.org/05wvpxv85 Department of Infectious Disease and Global Health, Tufts University Cummings School of Veterinary Medicine North Grafton United States
-6. https://ror.org/04r1cxt79 Kenya Medical Research Institute Nairobi Kenya
-7. https://ror.org/00cvxb145 Department of Global Health, University of Washington Seattle United States
-8. https://ror.org/013meh722 University of Cambridge School of Clinical Medicine, Cambridge Biomedical Campus Cambridge United Kingdom
-9. https://ror.org/013meh722 Department of Medicine, University of Cambridge School of Clinical Medicine, Cambridge Biomedical Campus Cambridge United Kingdom
+4. Division of Allergy and Infectious Disease, Center for Emerging and Re-emerging Infectious Diseases University of Washington School of Medicine Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+5. Department of Infectious Disease and Global Health, Tufts University Cummings School of Veterinary Medicine North Grafton United States ([ROR:05wvpxv85](https://ror.org/05wvpxv85))
+6. Kenya Medical Research Institute Nairobi Kenya ([ROR:04r1cxt79](https://ror.org/04r1cxt79))
+7. Department of Global Health, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+8. University of Cambridge School of Clinical Medicine, Cambridge Biomedical Campus Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+9. Department of Medicine, University of Cambridge School of Clinical Medicine, Cambridge Biomedical Campus Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
 ## Abstract
 
-Diarrhoea remains one of the leading causes of childhood mortality globally. Recent epidemiological studies conducted in low-middle income countries (LMICs) identified Shigella spp. as the first and second most predominant agent of dysentery and moderate diarrhoea, respectively. Antimicrobial therapy is often necessary for Shigella infections; however, we are reaching a crisis point with efficacious antimicrobials. The rapid emergence of resistance against existing antimicrobials in Shigella spp. poses a serious global health problem. Aiming to identify alternative antimicrobial chemicals with activity against antimicrobial resistant Shigella , we initiated a collaborative academia-industry drug discovery project, applying high-throughput phenotypic screening across broad chemical diversity and followed a lead compound through in vitro and in vivo characterisation. We identified several known antimicrobial compound classes with antibacterial activity against Shigella . These compounds included the oral carbapenem Tebipenem, which was found to be highly potent against broadly susceptible Shigella and contemporary MDR variants for which we perform detailed pre-clinical testing. Additional in vitro screening demonstrated that Tebipenem had activity against a wide range of other non- Shigella enteric bacteria. Cognisant of the risk for the development of resistance against monotherapy, we identified synergistic behaviour of two different drug combinations incorporating Tebipenem. We found the orally bioavailable prodrug (Tebipenem pivoxil) had ideal pharmacokinetic properties for treating enteric pathogens and was effective in clearing the gut of infecting organisms when administered to Shigella -infected mice and gnotobiotic piglets. Our data highlight the emerging antimicrobial resistance crisis and shows that Tebipenem pivoxil (licenced for paediatric respiratory tract infections in Japan) should be accelerated into human trials and could be repurposed as an effective treatment for severe diarrhoea caused by MDR Shigella and other enteric pathogens in LMICs. Tres Cantos Open Lab Foundation (projects TC239 and TC246), the Bill and Melinda Gates Foundation (grant OPP1172483) and Wellcome (215515/Z/19/Z).
+Background:Diarrhoea remains one of the leading causes of childhood mortality globally. Recent epidemiological studies conducted in low-middle income countries (LMICs) identified Shigella spp. as the first and second most predominant agent of dysentery and moderate diarrhoea, respectively. Antimicrobial therapy is often necessary for Shigella infections; however, we are reaching a crisis point with efficacious antimicrobials. The rapid emergence of resistance against existing antimicrobials in Shigella spp. poses a serious global health problem.Methods:Aiming to identify alternative antimicrobial chemicals with activity against antimicrobial resistant Shigella, we initiated a collaborative academia-industry drug discovery project, applying high-throughput phenotypic screening across broad chemical diversity and followed a lead compound through in vitro and in vivo characterisation.Results:We identified several known antimicrobial compound classes with antibacterial activity against Shigella. These compounds included the oral carbapenem Tebipenem, which was found to be highly potent against broadly susceptible Shigella and contemporary MDR variants for which we perform detailed pre-clinical testing. Additional in vitro screening demonstrated that Tebipenem had activity against a wide range of other non-Shigella enteric bacteria. Cognisant of the risk for the development of resistance against monotherapy, we identified synergistic behaviour of two different drug combinations incorporating Tebipenem. We found the orally bioavailable prodrug (Tebipenem pivoxil) had ideal pharmacokinetic properties for treating enteric pathogens and was effective in clearing the gut of infecting organisms when administered to Shigella-infected mice and gnotobiotic piglets.Conclusions:Our data highlight the emerging antimicrobial resistance crisis and shows that Tebipenem pivoxil (licenced for paediatric respiratory tract infections in Japan) should be accelerated into human trials and could be repurposed as an effective treatment for severe diarrhoea caused by MDR Shigella and other enteric pathogens in LMICs.Funding:Tres Cantos Open Lab Foundation (projects TC239 and TC246), the Bill and Melinda Gates Foundation (grant OPP1172483) and Wellcome (215515/Z/19/Z).
 
 ## Introduction
 
@@ -57,7 +57,7 @@ After the genomics revolution of the 1990s, the research community embarked on a
 
 ## Materials and methods
 
-## High-throughput screening of compound collections
+### High-throughput screening of compound collections
 
 We developed a high-throughput screening (HTS) method to identify compounds that could inhibit the growth of Shigella flexneri 2457T in Müller Hinton medium (Sigma Aldrich, UK). We adapted a resazurin reduction protocol from Franzblau et al. as surrogate readout for bacterial viability because it provided a stable signal, a low interference level, and was cost effective (Franzblau et al., 1998). Prior to the day of experimentation, one colony was used to inoculate 50 mL Mueller Hinton medium, and the culture was incubated overnight at 37 °C. The next day, 500 μL of the bacterial culture were inoculated into 50 mL fresh Mueller Hinton medium and bacterial growth was measured periodically at 600 nm. When the culture reached OD = 0.4–0.6, the inoculum was diluted to 1 × 106 CFU/mL; this bacterial suspension was added to compound pre-dispensed plates for screening.
 
@@ -69,7 +69,7 @@ After the initial screen, we generated fresh samples of the primary compound hit
 
 Three GSK control compound sets were used to validate our HTS approach (Coma et al., 2009). Firstly, a 10,000-compound validation set was used to fine tune Z´and S/B ratio values in HTS conditions. The 0.65% hit rate obtained in this test was aligned with the rate expected for whole cell screenings. Secondly, we used a 1000-compound nuisance set containing compounds selected for their high Inhibition frequency index (IFI; defined as the % of HTS campaigns in which a compound has shown >50% inhibition at 10 μM) to identify assays with high susceptibility to nuisance mechanisms, which can lead to identification of a high rate of false positive compounds. We obtained a hit rate of 0.39 with this set, corresponding to a low false positive rate. Lastly, an antibacterial tool compound set contained an ad hoc set of marketed antimicrobials with different modes of action. This set was evaluated using the two prioritised readout systems (resazurin and XTT) and was used to mitigate the risk of biasing the hit identification by the mechanism of action as both readouts displayed similar IC50 values in all compound families.
 
-## Antimicrobial susceptibility testing and time kill curves performed in clinical isolates
+### Antimicrobial susceptibility testing and time kill curves performed in clinical isolates
 
 Selected compounds, including Tebipenem, were profiled against a panel of 338 clinical isolates of enteric pathogens comprised of Shigella (Vietnam and Kenya; n = 135), non-typhoidal Salmonella (Vietnam; n = 117), Campylobacter (Vietnam; n = 75), and various pathogenic E. coli species (Vietnam; n = 7) (Butcher et al., 2014). The antimicrobial susceptibility profile of these organisms is described in Supplementary file 1.
 
@@ -79,21 +79,21 @@ MICs were evaluated using the micro dilution assay in Müller Hinton broth using
 
 Time-kill curve assays were performed in 20 mL volume in 50 mL tubes by culturing 5 × 105 CFU/mL Shigella spp. in Müller Hinton broth in the presence of four antimicrobial concentrations in doubling dilutions ranging from 0.5xMIC to 4xMIC. Bacteria were grown with agitation at 200 rpm at 37 °C and monitored over a time-course of 24 hr (0, 2, 4, 6, 8, and 24 hr). For each concentration and time point, 100 μL of bacterial culture were diluted and used to inoculate Luria-Bertani agar plates that were incubated at 37 °C overnight. Next, bacterial colonies were enumerated.
 
-## Spontaneous resistant mutants
+### Spontaneous resistant mutants
 
 The frequency of spontaneous resistant mutants (FoR) was determined for Tebipenem, Moxifloxacin, ciprofloxacin, ampicillin, mecillinam, ceftriaxone, and rifampicin. Bacterial inoculum without drug was used as positive control. The bacteria inoculum (1 × 105 CFU/mL) for the assay was prepared by diluting a log phase incubated at 37 °C for 3–4 hr. Mueller Hinton agar plates were prepared containing 4xMIC and 10xMIC and inoculated with different concentrations of bacteria (1 × 109, 1 × 108, and 1 × 107 CFU/mL). Plates were prepared in duplicate and incubated overnight at 37 °C. The frequency of spontaneous resistant mutants was calculated by using the formula: FoR = resistant CFUs/inoculum CFUs. The mean of the two plates was reported.
 
-## Synergistic assays
+### Synergistic assays
 
 Before initiating drug combination assays, the MIC values for both compounds were determined against Shigella (Sf2457T), Salmonella (St14028), and E. coli (EcDH5a) isolates. Standard checkerboard titration method using isobolograms was used to study the in vitro interaction between Tebipenem and azithromycin, ciprofloxacin, ceftriaxone, mecillinam and an LpxC inhibitor. 20 μM moxifloxacin was used as negative control (100% bacterial growth inhibition) in one column and DMSO as positive control (100% bacterial growth). A total of 25 µl of 1 × 106 CFU/mL bacterial culture was added to each well of a 384-well plate (μClear; Greiner Bio‐One). Plates were incubated overnight at 37 °C. Next, 10 µl of resazurin were added and plates were incubated at room temperature for 3 hr. Bacterial growth inhibition was measured by fluorescence in a Envision plate reader (PerkinElmer). All assays were performed in duplicate. Combination studies with clinical isolates were performed in 96-well plates (Greiner) adding 200 μl of 1 × 106 CFU/mL bacterial culture and following the same checkboard titration method as described above. The range of final working concentrations of each antimicrobial was adjusted based on the MIC of each selected organism.
 
 MICs were determined for drug A and drug B alone and in combination. The MIC of both drugs in combination were expressed as fractions of the MIC of the drug alone normalised to 1, which represented the Fractional Inhibitory Concentration (FIC). The sum of FIC was expressed using the following equation: FIC = (MIC of drug A in combination / MIC of drug A alone) + (MIC of drug B in combination / MIC of drug B alone) (Le Minh et al., 2015; Petersen et al., 2006; Hall et al., 1983; European Committee for Antimicrobial Susceptibility Testing (EUCAST) of the European Society of Clinical Microbiology and Infectious Dieases (ESCMID), 2000).
 
-## Extrapolation of orapenem doses approved in paediatric population to other animal species
+### Extrapolation of orapenem doses approved in paediatric population to other animal species
 
 Pharmacokinetic parameters of Orapenem in paediatric population at the approved doses (4–6 mg/kg, bid) were obtained from Sato et al. and pharmacokinetic parameters in rats were generated in house (Sato et al., 2008). Information regarding Orapenem oral bioavailability was extracted from Kijima et al. (Sato et al., 2008). For the calculation of Tebipenem pharmacokinetic behaviour in different animal species (i.e. mouse and piglet) conserved intrinsic clearance (CLint) and distribution volume (Vss) across the different animal species were assumed. A mono-compartmental pharmacokinetic (PK) model was used for PK simulation using matlab simbiology software (Hosseini et al., 2018). The equivalent doses in the different animal species were calculated using Tebipenem free drug t/MIC as comparable parameter.
 
-## In vivo pharmacokinetic analysis in mice
+### In vivo pharmacokinetic analysis in mice
 
 All mice experiments were performed in female C57 mice obtained from Charles River Laboratories, (Wilmington, MA) and housed in cages in groups of three animals with water and food ad libitum. Animals were acclimated for 7 days prior to infection. At the beginning of the experiment the mice weighed between 20 and 30 g. Tebipenem was dissolved in 20% Encapsine (Sigma Aldrich), 5% DMSO (Sigma Aldrich) in saline solution (Sigma Aldrich) at 0.5 mg/ml for intravenous administration and in 1% Methylcellulose (Sigma Aldrich) in water at 5 mg/ml for oral administration. Tebipenem pivoxil was dissolved in 1% (w/v) Methylcellulose (Sigma Aldrich) in water at 5 mg/ml for oral administration.
 
@@ -101,11 +101,11 @@ For blood PK analysis, two 15 µl of tail blood were collected per time and per 
 
 An acquity ultra-performance liquid chromatography (UPLC) system (Waters Corp., Milford, MA, USA) coupled to a triple quadrupole mass spectrometer (API 4000, AB Sciex, Foster City, CA, USA) was used for the detection of Tebipenem free base. The chromatography separation was performed at 0.4 mL/min in a Acquity UPLC BEH C18 column (50 × 2.1 mm i.d., 1.7 mm; Waters Corp.) at 40 °C with Acetonitrile (Sigma Aldrich) and 0.1% formic acid as eluents. Calibration curves were included to quantify blood samples, with a lower limit of quantification (LLOQ) of 2.5 ng/mL and a high limit of quantification of 50,000 ng/mL. Along the analytical sequence, several quality control (QC) samples were included (low, medium, and high concentrations); in all cases the deviation of QC was lower than 20%. Samples under LLOQ were excluded from the pharmacokinetic analysis. Pharmacokinetics parameters were calculated using Phoenix WinNonlin (Certara NY, US).
 
-## In vivo pharmacokinetic analysis in piglets
+### In vivo pharmacokinetic analysis in piglets
 
 Blood samples for analysis of orally administered Tebipenem pivoxil pharmacokinetics in gnotobiotic piglets were taken from the same animals involved in the therapeutic efficacy study described below. Tebipenem pivoxil was dissolved in 1% (w/v) Methylcellulose (Sigma Aldrich) in water at 5 mg/ml for oral administration. Four whole blood samples and were taken from the Tebipenem pivoxil treated gnotobiotic piglets. Blood was collected from the jugular veins while manually restraining the piglets. Blood was collected at 0.5, 1, 2, and 4 hr after administration of the first dose of Tebipenem pivoxil. Blood samples were centrifuged at 2,200 x g for 10 min at 4 °C. Plasma was extracted and stored at –80 °C. Pharmacokinetic analysis was performed as above described.
 
-## Orapenem intestinal distribution studies
+### Orapenem intestinal distribution studies
 
 To determine the distribution of Tebipenem pivoxil and free base in the different parts of the intestine, Tebipenem pivoxil was orally administrated at 50 mg/kg to four C57 mice (5 mg/ml in 1% (w/v) Methylcellulose). One animal was euthanised at 0.25, 0.5, 1, and 4 hr respectively and 2.5–3 cm sections of the intestine (duodenum, jejunum, ileum, caecum, and colon) were collected and frozen at –80 °C. For quantitative LCMS analysis of intestine homogenate, samples were thawed at ambient temperature, mixed with water (1:1) and homogenised by turrax (10 sec). Subsequently, 20 µL of homogenate were mixed with 200 µl of ACN: MeOH (80:20) and filtered using 0.2 µm filter plate (Whatman). LCMS analysis was performed as described in previous section. For MALDI imaging, 50 mm of the central part of each intestinal section were cut and mounted in a sample disc on dry ice with a solution of 1% methylcellulose (Sigma Aldrich, UK). Next, tissue sections of 12 µm (sagital sections) were obtained using a cryostat (Leica CM3600; Leica Microsystems Inc, Wetzlar, Germany) at –20 °C and collected in conductive-coated slides for MALDI Imaging (Bruker Daltonic). After the ‘MALDI’ section was obtained a consecutive section for histology was taken. Prior to matrix coating, samples for MALDI were optical scanned in a PathScanner. The matrix deposition was conducted in a sprayer ImagePrep System (Bruker Daltonic) which uses vibrational vaporisation technology. As matrix solution α-CHCA (α-Cyano-4-hydroxycinnamic acid (Sigma Aldrich) dissolved in 70:30 methanol/water (v/v) containing 0.2% TFA at 7 mg/mL was used. MALDI MSI data were obtained using a Bruker UltrafleXtream MALDI TOF/TOF (Bruker Daltonic, Germany)).
 
@@ -113,31 +113,31 @@ Standard solution of Tebipenem and Tebipenem Pivoxil at 0.1 mg/ml were spiked in
 
 MALDI Imaging is not a quantitative technique, therefore, the colour scale of images is relative to the maximum intensity (100 corresponds with the maximal signa in each slide). For histology analysis, consecutive MALDI sections were collected and stained with Hematoxilin-Eosin staining (Sigma Aldrich) following manufacturer’s protocol and scanned in a Path Scanner IV.
 
-## In vivo mouse efficacy studies
+### In vivo mouse efficacy studies
 
 The in vivo efficacy of Tebipenem pivoxil, Tebipenem free-base and Ciprofloxacin was evaluated using a previously published mouse model of shigellosis using S. flexneri lux1 (McCloskey et al., 2019). S. flexneri lux1 expresses a bacterial luciferase reporter as previously described and was created from S. flexneri M90T Sm (ATCC BAA-2402) purchased from the American Type Culture Collection (ATCC, Manassas, VA). Broth cultures of S. flexneri lux1 were grown at 37 °C in Trypticase soy broth (TSB) with agitation at 220 rpm.
 
 For infections, an overnight S. flexneri lux1 broth culture containing 30 µg/mL streptomycin (selection of lux1) and 0.1% sodium deoxycholate (for expression of Shigella invasion proteins [McCloskey et al., 2019]) was diluted 1:100 and grown to log-phase (3–4 hr). Log-phase bacteria (OD600 ~ 0.4) were centrifuged, and the resulting pellet was washed in DPBS without calcium and magnesium (Thermo Fisher Scientific). Bacteria were centrifuged again, and pellet was resuspended in DPBS to the target concentration of 5 × 107 S. flexneri/200 µL (10 mL/kg). Each dose of bacteria was confirmed with luminescence using an EnVision Plate Reader (Perkin Elmer) for S. flexneri lux1. Female B6 mice (Jackson Laboratories) aged 9–10 weeks were weighed and infected IP with 5 × 107 CFU/mouse (total n = 10 per group). Antimicrobials were suspended in oral vehicle (1% carboxymethyl cellulose), and mice were administered antimicrobials or vehicle control PO at 2- and 16 hr post infection (p.i.). Ciprofloxacin was used as positive control and administered at 40 mg/kg of body weight. Mice were euthanised 24 hr post infection and the small intestine and cecum/large intestine were collected. Gastrointestinal tissue was weighed, resuspended in 1 g/mL DPBS, homogenised, and plated on trypticase soy agar plates with 30 µg/mL streptomycin to quantify S. flexneri CFUs. Experiments were performed in biological duplicates. Data was analysed independently for the small and large intestines using an analysis of variance after a log transformation, comparing active groups back to control with a Dunnett’s post hoc test. CFUs at the limit of quantification of 80 or below were imputed at 80 units after a stability analysis which showed that taking smaller values did not affect the overall conclusion. The data from the ciprofloxacin treatment, which were all <80 CFU was not analysed.
 
-## In vivo gnotobiotic piglet studies
+### In vivo gnotobiotic piglet studies
 
 The primary parameter of drug efficacy was determined by a decrease in symptoms in drug-treated animals compared with infection-control animals and ciprofloxacin-treated animals. Additional parameters of efficacy were the evolution of bacterial counts in faeces and histopathology results (quantification of bacterial intestine colonisation and mucosal lesions at the end of the experiment; day 6 after infection). For infection, S. flexneri 2457T was grown overnight on blood agar plate from which a single colony was further grown in tryptic soy broth overnight. Bacterial OD600 was measured and adjusted to 109 CFU/ml. The bacterial suspension was washed, centrifuged, and resuspended in sterile PBS. The bacterial concentration was confirmed by OD and plating dilutions on agar plates. Limit of detection was 100 CFU/g.
 
 Animals were derived via caesarean section, maintained in sterile microbiological isolators, and fed three times daily with human infant milk replacer. Twelve piglets aged 24 hr were orally inoculated with 1 × 109 CFU/ml S. flexneri. Eighteen hours after the infection, gnotobiotic piglets received oral administration of Tebipenem pivoxil, ciprofloxacin (control for effective treatment), or no treatment (infection control). Four gnotobiotic piglets were infected and treated with Tebipenem pivoxil at 50 mg/kg, two piglets were infected and received ciprofloxacin at 30 mg/kg, two piglets were not infected and received Tebipenem pivoxil treatment (control for drug effect) and four piglets were infected and received formulation vehicle (1% methyl cellulose, control for infection). Treatments were given twice a day for 5 days. Clinical manifestations such as diarrhoea, depression, loss of appetite and dehydration were monitored and recorded daily. Diarrhoea was determined based on faecal consistency and recorded three times daily: 0 no diarrhoea, 1-soft/pasty, 2-semi-liquid/mucoid, 3-watery and 4, water yellow white. Body weight was taken daily except on day 1 post infection. Faecal samples were collected from the animals once on day 0 and twice on days 1–5 post infection. Piglets were euthanised on day 6 after infection. At euthanasia, animals were heavily sedated by intramuscular injection of ketamine/xylazine (100 mg/5 mg) followed by intracardiac administration of SomnaSol (100 mg/kg). Necropsy was performed 2 hr after the last drug dose. At necropsy, gastrointestinal tissues were harvested for histological examination and quantification of intracellular bacterial load. Gut content was also collected for bacterial burden enumeration. For the determination of bacterial burden in faeces, 100 µl or 100 µg of faeces was mixed with 900 µL PBS. For gut sections (caecum and colon), the tissue was weighted, placed in a sterile 15 ml conical tube, and washed three times with sterile PBS. A 1:9 ratio of tissue and sterile PBS was transferred to GentleMACS M tube then homogenised using the GentleMACS machine. The suspension was serially diluted to 1/10, and 20 µL of each dilution were plated in triplicate and incubated overnight at 37 °C. The following equation was used to calculate CFU/ml from the original aliquot / sample: CFU per ml = Average number of colonies for a dilution x 50 x dilution factor.
 
-## Histopathology of guts sections from infected gnotobiotic piglets
+### Histopathology of guts sections from infected gnotobiotic piglets
 
 Sections of the large intestine were taken from tebipenem treated and untreated animals and fixed in paraffin blocks. Sections were sliced in a microtome and subjected to deparafinisation and rehydration by 10 min in Xylene (x2), 5 min in 100% ethanol, 3 min in 95% ethanol, 3 min in 80% ethanol, 3 min in 70% ethanol, 3 min in deionised water. Sections were blocked for 5 min in hydrogen peroxide followed by 5 min in deionised water. Tissue slides were steamed for 20 min of 200 ml of 1 x iCitra solution, before cooling to ambient temperature for 20–30 min prior to three washes for 5 min in deionised water and 5 min in TBS. Sections were blocked with 1 x Blocking solution in deionised water (Biogenex, HK085) and incubated at ambient temperature for 8 min before rinsing in 1 x TBST. Sections were incubated with 100 μl of primary antibody mix (Rabbit anti-Shigella at 1:250 dilution in TBS) and incubated in humid chamber at ambient temperature for 1.5 hr prior to draining and washing twice for 5 min in TBST. Sections were blocked with 3% hydrogen peroxide for 5 min and washed twice for 5 min in TBST before the addition of 100 μl of secondary antibody (Goat-anti-rabbit HRP) at 1:1000 dilution. Sections were incubated in a humid chamber at ambient temperature for 40 min. Sections were drained and washed twice for 5 min in TBST and once for 5 min in TBS. For counterstaining the sections were incubated in hematoxylin at ambient temperature for 5 min, rinsed in tap water for 3 min, before dipping in bluing solution (0.1% Sodium Bicarbonate) for 1 min, and rinsing deionised water for 3 min. Tissue was dehydrated twice for 3 min in 95% ethanol, twice for 3 min in 100% ethanol, and twice dipped in Xylene. A few drops of Ecomount mounting media were added to the section prior to the addition of a coverslip. Sections were left to dry overnight prior to imaging and photographs on a light microscope.
 
 ## Results
 
-## High-throughput screening of compound collections
+### High-throughput screening of compound collections
 
 We conducted a large antibacterial screening campaign, incorporating both GSK proprietary and non-proprietary compounds, to identify new chemical entities (NCE), repurposing and repositioning opportunities that may provide an alternative for treating infections caused by MDR/XDR Shigella. The chemical diversity included the GSK screening collection (~1.7 million compounds of unbiased chemical diversity), 4000 compounds with known antibacterial pedigree (MIC <1 µM against E. coli) including chemicals from antibacterial programs at GSK and existing commercially available antimicrobials. A flowchart of the entire screening procedure is shown in Figure 1A.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69798/elife-69798-fig1-v5.jpg)
 
-**Figure 1.:** Shigella spp.(A) Flowchart outlining the screening process in six key stages: (1) identification of compounds with antibacterial activity against S. flexneri 2457T from an initial set of ~1.7 million chemicals at a concentration of 10 µM. (2) Confirmation of original hits with activity against S. flexneri 2457T at 10 µM with application of additional described filters. (3) Dose response against S. flexneri 2457T selecting compounds with IC50 of <1 µM. (4) Testing compounds with antibacterial activity against S. flexneri EG478 and S. sonnei 02–1181 (clinical isolates from Vietnam) at a concentration of 10 µM (leading to 2,269 compounds in seven classes). (5) Dose response against S. flexneri EG478 and S. sonnei 02–1181 selecting compounds with IC50 of <1 µM against both organisms. (6) Identification of the final 297 compounds in three classes. (B) Bar charts showing the activity profile (proportion of chemicals with antibacterial activity) of BTIs and LpxC inhibitors against the S. flexneri 2457T laboratory isolate (black) and both clinical isolates (S. flexneri EG478 and S. sonnei 02–1181; grey).
+**Figure 1.:** (A) Flowchart outlining the screening process in six key stages: (1) identification of compounds with antibacterial activity against S. flexneri 2457T from an initial set of ~1.7 million chemicals at a concentration of 10 µM. (2) Confirmation of original hits with activity against S. flexneri 2457T at 10 µM with application of additional described filters. (3) Dose response against S. flexneri 2457T selecting compounds with IC50 of <1 µM. (4) Testing compounds with antibacterial activity against S. flexneri EG478 and S. sonnei 02–1181 (clinical isolates from Vietnam) at a concentration of 10 µM (leading to 2,269 compounds in seven classes). (5) Dose response against S. flexneri EG478 and S. sonnei 02–1181 selecting compounds with IC50 of <1 µM against both organisms. (6) Identification of the final 297 compounds in three classes. (B) Bar charts showing the activity profile (proportion of chemicals with antibacterial activity) of BTIs and LpxC inhibitors against the S. flexneri 2457T laboratory isolate (black) and both clinical isolates (S. flexneri EG478 and S. sonnei 02–1181; grey).
 
 Compounds were tested in 1,536-well plates at a concentration of 10 µM for their ability to inhibit the growth of S. flexneri 2457T in liquid medium using resazurin reduction as a surrogate of bacterial viability. A mean OD with three standard deviations cut-off was used and a robust Z’ mean value of 0.7 and a signal/noise ratio of 12 were obtained from the screening. At an average statistical activity cut-off of 25.48%, 6970 primary hits were identified, representing an overall hit rate of 0.41%, which is lower than the typical hit rates for phenotypic high throughput screens (~1%). In the confirmation step, primary hits were tested in duplicate against Shigella flexneri 2457T at a final concentration of 10 μM; compounds inhibiting <30% bacterial growth, displaying undesirable structural features (such as electrophiles, peroxides, Michael acceptors) or low developable physicochemical properties ( < 5 aromatic rings and PFI <8-) were removed (Leeson and Young, 2015). Compounds fulfilling confirmation criteria (n = 4006) were progressed to dose response inhibition curves against Shigella 2457T, which were performed in duplicate. Ultimately, 2269 compounds in seven classes (bacterial topoisomerase inhibitors (BTIs), inhibitors of UDP-3-O-(R-3-hydroxymyristoyl)-N-acetylglucosamine deacetylase (LpxCs), microcin PDI, Met-tRNA inhibitors, β-lactams, fluoroquinolones, and pleuromutilins) were identified that inhibited the growth of Shigella flexneri 2457T with an IC50 ≤1 µM (Figure 1A).
 
@@ -145,9 +145,46 @@ The 2269 filtered active compounds were progressed to evaluation against two cli
 
 Given the general availability and acceptability of carbapenems globally, efforts to determine their potential to be progressed as treatment against shigellosis were prioritised. Meropenem, Tebipenem, and Ertapenem were identified via the screening and exhibited the greatest bactericidal activity against the two MDR Shigella clinical isolates (Supplementary file 2). Consequently, these compounds were prioritised for evaluation. Notably, Tebipenem pivoxil is administered orally, while Meropenem and Ertapenem are administered parenterally or intramuscularly. Therefore, Tebipenem was of specific interest as the pivoxil prodrug has good oral bioavailability and is commercially available in Japan (Jain et al., 2018).
 
-## Tebipenem as broad-spectrum antimicrobial for treating Shigella infections
+### Tebipenem as broad-spectrum antimicrobial for treating Shigella infections
 
 We considered that an oral drug with potential for accumulation in the gastrointestinal tract would be a suitable profile for treating invasive enteric pathogens; therefore, we reasoned that Tebipenem may be the most appropriate identified compound that could be accelerated into further investigations for treating MDR/XDR Shigella infections. Using in vitro assays, we found that Tebipenem inhibited the growth of S. flexneri 2457T with a potency comparable to current first line antimicrobials in broadly susceptible organisms, including both ciprofloxacin and ceftriaxone (Table 1).
+
+**Table 1.**
+ MIC values of different antimicrobials against Shigella flexneri ATCC 700930.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antimicrobial</th>
+      <th>IC90 (µg/ml) *</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ciprofloxacin</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>Mecillinam</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>Azithromycin</td>
+      <td>7.49</td>
+    </tr>
+    <tr>
+      <td>Ceftriaxone</td>
+      <td>0.067</td>
+    </tr>
+    <tr>
+      <td>Tebipenem</td>
+      <td>0.010</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data shown are the mean of triplicates._
 
 Given the propensity of Shigella spp. to horizontally acquire AMR genes (Thanh Duy et al., 2020), we additionally assessed the activity of Tebipenem against a collection of 82 contemporary clinical Shigella isolates (sonnei and flexneri) from Vietnam and 53 (multiple species) from Kenya. The compound exhibited consistent in vitro activity against all clinical isolates of Shigella, with MIC values ranging from 0.04 to 0.3 µM (Figure 2A). Particularly, Tebipenem generated substantially lower MICs than ciprofloxacin in isolates from Vietnam and had good in vitro activity against all MDR and XDR S. sonnei (Figure 2A). Severe diarrhoea can also be caused by a range of other bacterial pathogens; therefore, we additionally performed in vitro MIC testing against a collection of 117 Salmonella, 75 Campylobacter jejuni, and seven E. coli from diarrhoeal cases in Vietnam (Duong et al., 2018). Tebipenem retained good bactericidal activity against all three genera with a median MIC of <0.1 µM against all organisms (Figure 2A).
 
@@ -159,7 +196,7 @@ We additionally evaluated the frequency of spontaneous Tebipenem resistance muta
 
 We next conducted time kill assays of Tebipenem against three clinical isolates of Shigella (two S. flexneri and one S. sonnei) from Vietnam. These assays were performed in triplicate at four increasing concentrations (0.5x to 4x MIC) over 24 hr. The time kill experiments further demonstrated that Tebipenem had protracted antibacterial activity against Shigella at higher concentrations (2–4 x MIC). Population rebounds occurred at lower concentrations (0.5–1 x MIC) after 6 hr exposure in all three isolates (Figure 2B, C and D). Taken together, these in vitro data indicate that Tebipenem administered as a prodrug may be a practical alternative for oral treatment of severe Shigella associated diarrhoea (and potentially other enteric pathogens) in locations with a high burden of MDR and fluoroquinolone resistant organisms.
 
-## Synergistic combinations of Tebipenem pivoxil
+### Synergistic combinations of Tebipenem pivoxil
 
 Given the potential issues associated with widespread usage of an oral carbapenem, we performed preliminary experiments to explore the possibility of synergistic combinations between Tebipenem and the current WHO approved drugs for shigellosis; azithromycin, ciprofloxacin, ceftriaxone, and mecillinam. We additionally progressed one of our previous observations by combining Tebipenem with the commercially available LpxC inhibitor, PF-5081090 (García-Quintanilla et al., 2016). Initially, these five combinations were tested against laboratory isolates of Shigella, Salmonella, and E. coli (Sf2457T, St14028, and EcDH5a, respectively). Tebipenem exhibited partial synergy in combination with the LpxC inhibitor, reducing the MIC against Tebipenem > 10 fold in all three organisms (Figure 3A). Similarly, Tebipenem demonstrated partial synergy with azithromycin against S. flexneri and S. Typhimurium, but this combination appeared to show indifference or antagonism against E. coli. In combination with ciprofloxacin, ceftriaxone, and mecillinam, Tebipenem exhibited indifference or partial synergy against all three organisms (Figure 3A).
 
@@ -169,7 +206,7 @@ Given the potential issues associated with widespread usage of an oral carbapene
 
 We further assessed the potential for synergism between Tebipenem with PF-5081090 and azithromycin against a panel of alternative Gram-negative MDR clinical isolates. The combination of Tebipenem/LpxC inhibitor exhibited indifference or partial synergy in vitro against all tested enteric pathogens (Salmonella spp., Shigella spp., K. pneumoniae, and E. coli). Notably, the combination of Tebipenem with azithromycin was particularly synergistic in vitro against a range of invasive and non-invasive Salmonella isolates, with FIC scores of ~0.5 (Figure 3B).
 
-## Tebipenem efficacy and pharmacokinetic properties in animal models of Shigella infection
+### Tebipenem efficacy and pharmacokinetic properties in animal models of Shigella infection
 
 Tebipenem pivoxil, under the brand name Orapenem, is currently approved in Japan for the treatment of respiratory tract infections. Aiming to confirm the potential of repurposing Tebipenem pivoxil for the treatment of enteric infections through in vivo experimentation, we progressed the drug for pharmacokinetic and efficacy studies in animal models. The doses for pharmacokinetics and efficacy studies were extrapolated from the approved doses in children (4 and 6 mg/kg bid) and we calculated equivalent doses in terms of systemic exposure in the animal species used for the efficacy and pharmacokinetic studies (described in Materials and methods).
 
@@ -178,6 +215,62 @@ We assessed the pharmacokinetics in mice of intravenous, subcutaneous, and oral 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69798/elife-69798-fig4-v5.jpg)
 
 **Figure 4.:** (A) The blood pharmacokinetics of Tebipenem in mice (n = 3 per treatment) over 6 hr after the administration of 5 mg/kg intravenous Tebipenem (red), 39 mg/kg subcutaneous Tebipenem (pink), 39 mg/kg oral Tebipenem, and 50 mg/kg oral Tebipenem pivoxil. Data points represent mean ± the standard deviation. Notably, the drug concentration in all preparations remained above the estimated MIC of S. flexneri 2457T (0.39 µM) over the course of the experiment. (B) The pharmacodynamics of Tebipenem in piglets over 6 hr after the administration of 50 mg/kg oral Tebipenem pivoxil in Shigella infected (blue) (n = 4) and uninfected (red) (n = 2) animals. The lower limit of quantitation (LLOQ) and the estimated MIC are shown. (C) Plots showing the concentration (ng/ml) of Tebipenem in the blood (black), duodenum (blue), and jejunum (red), of mice up to 240 min after oral administration of 50 mg/kg Tebipenem pivoxil. (D) Plots showing the concentration (ng/ml) of Tebipenem in the blood (black), ileum (green), caecum (purple), and colon (orange) of mice up to 240 min after oral administration of 50 mg/kg Tebipenem pivoxil. (E) MALDI imaging data showing the localisation of active Tebipenem in different sections of the gastrointestinal tract (duodenum to colon) of mice after oral administration of Tebipenem and Tebipenem pivoxil 15 min (left) and 60 min (right) after administration. Drug intensity scale (0–60%) and size scale are shown. A histology section of each compartment of the gastrointestinal tract is shown to highlight the localisation of active drug in the tissue or in the lumen.
+
+**Table 2.**
+ The pharmacokinetics of Tebipenem and Tebipenem pivoxil.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Value</th>
+      <th colspan="3">Mice</th>
+      <th>Piglets</th>
+      <th>Paediatric population (Sato et al., 2008)</th>
+    </tr>
+    <tr>
+      <th>Tebipenem SQ (n = 3)</th>
+      <th>Tebipenem PO(n = 3)</th>
+      <th>Tebipenem-Pivoxil PO(n = 3)</th>
+      <th>Tebipenem-Pivoxil PO(n = 2)</th>
+      <th>Tebipenem-Pivoxil PO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cmax (µg/ml)</td>
+      <td>71.0 ± 15.3</td>
+      <td>3.7 ± 0.9</td>
+      <td>61.6 ± 3.9</td>
+      <td>9.0 ± 0.8</td>
+      <td>7.5 ± 3.9</td>
+    </tr>
+    <tr>
+      <td>Tmax [Range] (hr)</td>
+      <td>[0.25 0.25]</td>
+      <td>[0.5 1]</td>
+      <td>[0.25 0.5]</td>
+      <td>[2 2]</td>
+      <td>0.7 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>AUC0-tlast (hr*µg/mL)</td>
+      <td>80.4 ± 7.7</td>
+      <td>7.5 ± 1.5</td>
+      <td>93.8 ± 2.7</td>
+      <td>32.6 ± 3.9</td>
+      <td>16.1 ± 3.3</td>
+    </tr>
+    <tr>
+      <td>Bioavailability (%)</td>
+      <td>44 ± 4</td>
+      <td>4 ± 1</td>
+      <td>52 ± 1</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
 
 We additionally measured the Cmax and AUC of Tebipenem in gnotobiotic piglets. Two hours after an oral administration of 50 mg/kg of Tebipenem the Cmax reached a mean of 8 µg/ml in the piglets (Figure 4B and Table 2), which was equivalent to 7.5 µg/ml reported in a paediatric population (Sato et al., 2008). Longitudinally (over 6 hr), the concentration of Tebipenem declined to 1 µg/ml in the blood (Figure 4B). The AUC0-last determined in piglets was higher than AUC0-last reported in paediatric populations (32 vs 16 hr*µg/ml, Table 2) but was within a comparable range (Sato et al., 2008).
 
@@ -189,7 +282,7 @@ To determine if an increased systemic concentration of active drug by orally dos
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69798/elife-69798-fig5-v5.jpg)
 
-**Figure 5.:** Shigella in animal infections models.(A) Measuring the efficacy of 50 mg/kg oral Tebipenem pivoxil and 39 mg/kg oral Tebipenem by measuring CFU of S. flexneri 2457T in the small intestine (left) and large intestine (right) 24 hr after infection with a x107 intraperitoneal dose of S. flexneri 2457T in comparison to no drug and 40 mg/kg ciprofloxacin (10 animals per group). Data shown represent mean ± the standard deviation and were determined to be normally distributed and analysed using t-tests. (B) Plot showing the diarrhoea score of treated (green) and untreated (red) piglets over the 6-day infection. Individual animal profiles are shown by the individual fine lines with heavy lines used to show the corresponding daily group means. The two groups differ statistically (p < 0.001) by AUC. (C) Plot showing the change in weight of the treated (green) and untreated (red) piglets over the six-day infection. The thin lines show individual pigs whilst the thick lines the corresponding averages. There was no significant different in weight loss between the two groups over the course of the experiment. (D) The efficacy of 50 mg/kg oral Tebipenem pivoxil (n = 4 animals, green) given daily for 5 days in reducing the CFU/g of faeces (every 24 hr) after infection with a 1 × 109 oral dose of S. flexneri 2457T compared to no drug (n=4 animals, black) over 6 days. Data shown represents mean ± standard deviation. (E) Sections of the large intestine taken on day six post infection in a gnotobiotic piglet treated with (top) or without (lower) 50 mg/kg oral Tebipenem pivoxil after infection with S. flexneri 2457T observed by Immunohistochemical (IHC) staining (scale shown).
+**Figure 5.:** (A) Measuring the efficacy of 50 mg/kg oral Tebipenem pivoxil and 39 mg/kg oral Tebipenem by measuring CFU of S. flexneri 2457T in the small intestine (left) and large intestine (right) 24 hr after infection with a x107 intraperitoneal dose of S. flexneri 2457T in comparison to no drug and 40 mg/kg ciprofloxacin (10 animals per group). Data shown represent mean ± the standard deviation and were determined to be normally distributed and analysed using t-tests. (B) Plot showing the diarrhoea score of treated (green) and untreated (red) piglets over the 6-day infection. Individual animal profiles are shown by the individual fine lines with heavy lines used to show the corresponding daily group means. The two groups differ statistically (p < 0.001) by AUC. (C) Plot showing the change in weight of the treated (green) and untreated (red) piglets over the six-day infection. The thin lines show individual pigs whilst the thick lines the corresponding averages. There was no significant different in weight loss between the two groups over the course of the experiment. (D) The efficacy of 50 mg/kg oral Tebipenem pivoxil (n = 4 animals, green) given daily for 5 days in reducing the CFU/g of faeces (every 24 hr) after infection with a 1 × 109 oral dose of S. flexneri 2457T compared to no drug (n=4 animals, black) over 6 days. Data shown represents mean ± standard deviation. (E) Sections of the large intestine taken on day six post infection in a gnotobiotic piglet treated with (top) or without (lower) 50 mg/kg oral Tebipenem pivoxil after infection with S. flexneri 2457T observed by Immunohistochemical (IHC) staining (scale shown).
 
 Aiming to exploit a more physiological infection model of Shigella we measured the efficacy of Tebipenem pivoxil in gnotobiotic piglets using an oral 50 mg/kg dose of Tebipenem pivoxil (equivalent to the licenced 6 mg/kg dose in Japan). We infected 10 gnotobiotic piglets orally with 1 × 109 CFU/ml S. flexneri 2457T; two control animals were uninfected and treated with Tebipenem pivoxil. Treatment was started 24 hr after infection; four animals were treated with oral Tebipenem pivoxil (50 mg/kg), two animals were treated with oral ciprofloxacin (30 mg/kg), and four received the formulation vehicle (1% methyl cellulose). Tebipenem pivoxil significantly reduced the severity of diarrhoea and frequency of diarrheal stools in infected gnotobiotic piglets compared to control animals (p < 0.001 for AUC of score plots; Figure 5B). Over the course of the 6-day experiment, Tebipenem-treated piglet generally gained more weight than control vehicle-treated piglets, but this difference was not statistically significant (Figure 5C). A single dose of Tebipenem pivoxil given 24 hr after infection reduced the CFU/g Shigella in stool from 1 × 107 to zero within 24 hr, whilst untreated animals maintained a high concentration of Shigella in their stool for the duration of the experiment (Figure 5D). Necropsy and histopathology of the large intestine in Tebipenem pivoxil- and placebo-treated piglets was performed to compare intestinal lesions, inflammation, and the presence of intracellular Shigella. The histopathology showed a marked reduction in intestinal lesions and inflammation between the placebo-treated group and the group who received Tebipenem pivoxil; with the sections showing an obvious reduction in both inflammatory cells and infecting organisms (Figure 5E).
 

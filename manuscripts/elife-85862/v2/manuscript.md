@@ -16,16 +16,16 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Surgery, The University of Chicago Chicago United States
+1. Department of Surgery, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 2. Cinkate Pharmaceutical Corp, ZhangJiang District Shanghai China
-3. https://ror.org/024mw5h28 Department of Pathology, The University of Chicago Chicago United States
-4. https://ror.org/01kg8sb98 Department of Pediatrics, Indiana University Indianapolis United States
+3. Department of Pathology, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+4. Department of Pediatrics, Indiana University Indianapolis United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
 
 † Corresponding author
 
 ## Abstract
 
-Pancreatic cancer is the seventh leading cause of cancer-related death worldwide, and despite advancements in disease management, the 5 -year survival rate stands at only 12%. Triptolides have potent anti-tumor activity against different types of cancers, including pancreatic cancer, however poor solubility and toxicity limit their translation into clinical use. We synthesized a novel pro-drug of triptolide, ( E )–19-[(1’-benzoyloxy-1’-phenyl)-methylidene]-Triptolide (CK21), which was formulated into an emulsion for in vitro and in vivo testing in rats and mice, and used human pancreatic cancer cell lines and patient-derived pancreatic tumor organoids. A time-course transcriptomic profiling of tumor organoids treated with CK21 in vitro was conducted to define its mechanism of action, as well as transcriptomic profiling at a single time point post-CK21 administration in vivo. Intravenous administration of emulsified CK21 resulted in the stable release of triptolide, and potent anti-proliferative effects on human pancreatic cancer cell lines and patient-derived pancreatic tumor organoids in vitro, and with minimal toxicity in vivo. Time course transcriptomic profiling of tumor organoids treated with CK21 in vitro revealed <10 differentially expressed genes (DEGs) at 3 hr and ~8,000 DEGs at 12 hr. Overall inhibition of general RNA transcription was observed, and Ingenuity pathway analysis together with functional cellular assays confirmed inhibition of the NF-κB pathway, increased oxidative phosphorylation and mitochondrial dysfunction, leading ultimately to increased reactive oxygen species (ROS) production, reduced B-cell-lymphoma protein 2 (BCL2) expression, and mitochondrial-mediated tumor cell apoptosis. Thus, CK21 is a novel pro-drug of triptolide that exerts potent anti-proliferative effects on human pancreatic tumors by inhibiting the NF-κB pathway, leading ultimately to mitochondrial-mediated tumor cell apoptosis.
+Pancreatic cancer is the seventh leading cause of cancer-related death worldwide, and despite advancements in disease management, the 5 -year survival rate stands at only 12%. Triptolides have potent anti-tumor activity against different types of cancers, including pancreatic cancer, however poor solubility and toxicity limit their translation into clinical use. We synthesized a novel pro-drug of triptolide, (E)–19-[(1’-benzoyloxy-1’-phenyl)-methylidene]-Triptolide (CK21), which was formulated into an emulsion for in vitro and in vivo testing in rats and mice, and used human pancreatic cancer cell lines and patient-derived pancreatic tumor organoids. A time-course transcriptomic profiling of tumor organoids treated with CK21 in vitro was conducted to define its mechanism of action, as well as transcriptomic profiling at a single time point post-CK21 administration in vivo. Intravenous administration of emulsified CK21 resulted in the stable release of triptolide, and potent anti-proliferative effects on human pancreatic cancer cell lines and patient-derived pancreatic tumor organoids in vitro, and with minimal toxicity in vivo. Time course transcriptomic profiling of tumor organoids treated with CK21 in vitro revealed <10 differentially expressed genes (DEGs) at 3 hr and ~8,000 DEGs at 12 hr. Overall inhibition of general RNA transcription was observed, and Ingenuity pathway analysis together with functional cellular assays confirmed inhibition of the NF-κB pathway, increased oxidative phosphorylation and mitochondrial dysfunction, leading ultimately to increased reactive oxygen species (ROS) production, reduced B-cell-lymphoma protein 2 (BCL2) expression, and mitochondrial-mediated tumor cell apoptosis. Thus, CK21 is a novel pro-drug of triptolide that exerts potent anti-proliferative effects on human pancreatic tumors by inhibiting the NF-κB pathway, leading ultimately to mitochondrial-mediated tumor cell apoptosis.
 
 ## Introduction
 
@@ -39,23 +39,45 @@ In this study, we synthesized a novel pro-drug of triptolide, CK21, by decoratin
 
 ## Results
 
-## Novel modified triptolide, CK21, show improved pharmacokinetics
+### Novel modified triptolide, CK21, show improved pharmacokinetics
 
 We designed a new modification strategy to triptolide to generate CK21, by decorating the C-19 with a C-C double bond to generate (E)–19-[(1’-benzoyloxy-1’-phenyl)-methylidene]-Triptolide (Figure 1a). Briefly, a mixture of triptolide (1.8 g, 5 mmol) with anhydrous tetrahydrofuran (250 mL) was kept at –25 °C~–20 °C under nitrogen protection. Benzoyl chloride (1.05 mL, 7.5 mmol) and Lithium 2,2,6,6-tetramethylpiperidine in tetrahydrofuran/toluene (7.5 mL, 2.0 M, 15 mmol) were then added dropwise to produce an intermediate compound, IM464. After 1 hr, addition of benzoyl chloride and lithium 2,2,6,6-tetramethylpiperidine was repeated, and the reaction was quenched by adding aqueous sodium carbonate (6%). Following concentration under reduced pressure, the crude product was separated and purified by silica gel chromatography, and the target product collected and further recrystallized in methylene chloride/hexane to obtain CK21 that was used in the in vitro studies. Using 1H NMR, 13C NMR and mass spectrometry, we confirmed the structure of CK21, and the absolute configuration of CK21 was established by single crystal X-ray diffraction (Figure 1b). We then formulated CK21 with medium chain triglycerides, phospholipids, glycerol, and DSPE-MPEG2000 (Figure 1c) to produce a CK21 emulsion (Figure 1d) that was used in the in vivo studies.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig1-v2.jpg)
+
+**Figure 1.:** (a) Synthesis of compound CK21 as white solid after recrystallization in a mixed organic solvent. Compound structure was characterized by H-NMR, C-NMR, and HR-MS. (b) Thermal ellipsoid model illustrating the crystal structure of CK21; carbon atoms were shown in gray, and oxygen atoms in red. Hydrogen atoms were omitted for clarity (c) Composition and putative function in the CK21 fat emulsion. (d) Macroscopic image of the final emulsion product of CK21. (e) In vivo administration of CK21 into SD rats (3 rats per group) converted into triptolide. CK21 was injected intravenously into female (1.5 mg/kg) and male (3 mg/kg) rats, and the concentration of CK21 and triptolide in the plasma was quantified. For samples ≥4 hours, no CK21 or triptolide was detected. (f) CK21 inhibited the proliferation of human pancreatic cancer cell lines. Data presented in all the graphs are mean ± standard error. Statistical analysis: Two-way ANOVA (repeated measures) with post-hoc comparison of the means was conducted for (f).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig1-figsupp1-v2.jpg)
 
 To examine the conversion of CK21 into triptolide in vivo, and to establish pharmacokinetics and to avoid toxicity, we intravenously administrated 3 mg/kg or 1.5 mg/kg CK21 into Sprague Dawley male or female rats, and the concentration of CK21 and triptolide in the plasma quantified. CK21 had a T1/2 of 1.3 hr and 0.225 hr for male and female rats respectively. Released triptolide reached Tmax at 0.25 and 0.75 hr with a Cmax of 78.3 and 81.9 nM respectively for male and female rats. A stable release of triptolide 30 nM to 80 nM was observed for up to 2 hours and was undetectable after 4 hours (Figure 1e), which we hypothesize may mitigate the toxicity observed with other triptolide derivatives, which exhibit a spike release (Kitzen et al., 2009). The maximum tolerated dose (MTD) of CK21 was 3 mg/kg/dose for female rats and 6 mg/kg/dose for male rats (Figure 1—source data 1). Finally, we observed that in vitro incubation of the human pancreatic cancer cell lines, AsPC-1 and Panc-1, with CK21 at 5–100 nM for 24, 48, and 72 hr resulted in a dose-and time-dependent inhibition of cell proliferation (Figure 1f). When co-cultured with primary human fibroblast for 72 hr, CK21 exhibited significant toxicity only at 500 nM or higher (Figure 1—figure supplement 1).
 
 A comparison of CK21 and triptolide (TP) revealed that they had similar IC50 (nM) when tested in vitro using a cell viability assay with different cancer cell lines (Figure 1—source data 2). However, the in vivo toxicity of TP in mice was significantly higher than CK21 in vivo (Figure 2—figure supplement 1).
 
-## CK21 inhibits AsPC-1 and Panc-1 proliferation in vitro and tumor growth in vivo
+### CK21 inhibits AsPC-1 and Panc-1 proliferation in vitro and tumor growth in vivo
 
 To evaluate the efficacy of CK21 pro-drug in vivo, we developed a xenograft model where AsPC-1 tumors were subcutaneously implanted into female nude mice (Figure 2a). Daily treatment with CK21 at all doses tested (1.25, 2.5, 3 and 5 mg/kg) significantly inhibited AsPC-1 tumor growth (Figure 2c). Higher dosages of CK21 at 3 mg/kg or 5 mg/kg daily eliminated the tumor after 28 days of treatment (Figure 2b). After 28 days of CK21 treatment, no mice from 3 mg/kg or 5 mg/kg groups demonstrated tumor relapse during the subsequent 6 -month follow-up observation (Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig2-v2.jpg)
+
+**Figure 2.:** (a) Scheme of in vivo efficacy studies. Human pancreatic cancer cell line, AsPc-1, was implanted into nude mice and CK21 treatment was initiated ~14 days later and administered daily for 4 weeks. (b) Macroscopic images of tumor-bearing nude mice after receiving CK21 or blank emulsion after 4 weeks treatment. (c) AsPC-1 tumor volume after subcutaneous implantation and CK21 or gemcitabine treatment. (d) Weight change of nude mice bearing AsPC-1 and receiving CK21. (e) H&E staining of mice organ tissues after CK21 treatment. (f) TUNEL staining of tumor tissue and (g) percentage of apoptotic cells in AsPC-1 tumor after 2 weeks CK21. (h) Bioluminescence images of nude mice bearing intra-pancreatic AsPC-1 and receiving CK21. Color scheme represents the intensity of luminescence reflecting tumor size in each mouse. Mice with higher initial tumor burden was placed into CK21 group, and those with lower initial tumor burden into control group. (i) Fold change of the luminescence intensity of the nude mice bearing intra-pancreatic AsPC-1. (j) Survival curve of mice with orthotopic AsPC-1 tumors receiving CK21 treatment. In all the figures, post-implant days are days after tumor implantation and post-Rx days are days after receiving CK21 treatment (doses indicated as mg/kg). Data presented in all the graphs are mean ± standard error (some error bars are too small to be visible). Statistical analysis: Two-way ANOVA (not repeated measures) with post-hoc comparison of the means of each data set was conducted for all the line graphs except (i); For survival curve, Log-rank (Mantel-Cox) test was applied. (* P<0.05, ** P<0.01, *** P<0.001, **** P<0.0001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Tumor growth with CK21 treatment at 3 mg/kg daily for 28 days. (b) Weight change of mice during Ck21 treatment.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Subcutaneous AsPC-1 tumor in male mice after CK21 treatment at 1.5 mg/kg. (b) Male mice weight during CK21 treatment. (N=5 for each experimental group).
 
 No significant weight loss was detected when female mice were treated with ≤3 mg/kg CK21, compared to the control (no treatment) group (Figure 2d). In contrast, mice exhibited severe weight loss with 5 mg/kg CK21. To further confirm the lack of toxicity of CK21 (3 mg/kg), we performed H&E staining on the kidney, liver, and pancreas of mice after 28 days treatment. We did not observe any evidence of toxicity, as the kidney, liver, and pancreas tissues appeared normal after 28 days of CK21 treatment (Figure 2e); in contrast, after 14 days of CK21 treatment, AsPC-1 tumors showed a 5-fivefold increase of TUNEL-positive staining compared to the no Rx group (Figure 2f, g). Thus, we concluded that CK21 given at 3 mg/kg daily exhibited high efficacy and minimal toxicity, and this dose was employed for the remaining of study. In a second subcutaneous xenograft model with the Panc-1 tumor cell line, 3 mg/kg daily of CK21 also resulted in significant inhibition of tumor growth (Figure 2—figure supplement 3).
 
 Orthotopic tumor mouse models are generally preferred over heterotopic subcutaneously located pancreatic tumors because they offer tissue site-specific pathology, allow studies of metastasis, and are deemed more clinically relevant (Qiu and Su, 2013). while the development of pancreatic tumors expressing luciferase/fluorescent proteins has facilitated the longitudinal monitoring of orthotopically located pancreatic tumors (Shannon et al., 2015). We next evaluated the efficacy of CK21 in an orthotropic xenograft model, using luciferase-transfected AsPC-1 implanted into the pancreas of nude mice and allowing the tumor to develop for 1–2 weeks before initiating CK21 treatment. The presence and size of the tumor were monitored weekly by quantifying the bioluminescence intensity (Figure 2h), and overall, a 10–15-fold reduction in bioluminescence intensity was observed in mice that received CK21 compared to untreated controls (Figure 2i). In addition, no mice died in the CK21 treatment group, whereas 5 out of 11 animals were sacrificed in the no Rx group due to the large tumor size (Figure 2j). Finally, we noted that while most of the untreated mice develop metastatic disease by the end of the experiment (Figure 2h), the CK21 treated mice did not. After 4 weeks of treatment, mice were monitored up to 3 months. All mice relapsed eventually in contrast to subcutaneous AsPC-1 tumors.
 
-## Delayed CK21 therapy inhibits growth of tumors that escaped earlier therapies
+### Delayed CK21 therapy inhibits growth of tumors that escaped earlier therapies
 
 The mortality of pancreatic tumors is often due to late detection when the tumor is at an advanced stage. To evaluate the efficacy of CK21 against late-stage tumors, CK21 treatment was initiated only after subcutaneous AsPC-1 tumors reached a large size of ~900 mm2 (Figure 3a). Despite this delay in the initiation of treatment, CK21 was able to completely reduce the size of AsPC-1 tumors after 28 days of treatment, with all mice showing a significant response (Figure 3b).
 
@@ -65,27 +87,67 @@ The mortality of pancreatic tumors is often due to late detection when the tumor
 
 Gemcitabine is a standard of care medication for pancreatic cancer in the clinic (Kamisawa et al., 2016), therefore we next tested whether gemcitabine in combination with CK21 might offer improved efficacy. We treated mice for 4 weeks with suboptimal doses of CK21 (3 mg/kg, 3 days/wk) and gemcitabine (25 mg/kg, 3 days/wk), with each drug given on alternate days to avoid toxicity (Figure 3c). The combination therapy did not show improved inhibition of AsPC-1 growth compared to CK21 monotherapy (Figure 3d) and failed to induce complete regression of AsPC-1 tumors. In mice where tumors were detectable after 28 days treatment with CK21 or gemcitabine monotherapy, or combination therapy, we tested whether switching to CK21 (3 mg/kg) daily treatment (Figure 3e) was able to induce tumor regression. We observed that irrespective of whether mice failed CK21 (3 x/wk) or gemcitabine monotherapy, or combination therapy, switching to daily CK21 monotherapy for 28 days induced significant tumor regression (Figure 3e).
 
-## Transcriptome analysis of patient-derived organoids revealed early down-regulation of DDIT4 and XBP1 by CK21
+### Transcriptome analysis of patient-derived organoids revealed early down-regulation of DDIT4 and XBP1 by CK21
 
 It is now recognized that 3-D patient-derived organoids offer a better recapitulation of the heterogeneous, architectural, morphologic and genetic features of patient pancreatic tumor, compared to long-term established 2-D monolayer cell lines (Weeber et al., 2017; Huang et al., 2015; Seino et al., 2018; Boj et al., 2015). We therefore investigated four organoids derived from different pancreatic cancer patients (Romero-Calvo et al., 2019), UC12-0118-8, U049MAI, U123SOK, and U123M15-T, and tested the susceptibility to CK21 in vitro and in vivo. Details of the origin, mutations of these organoids were described in Figure 4—source data 1. We observed that 72 hours of in vitro incubation with CK21 (25 nM) significantly inhibited UC12-0118-8, U049MAI, and U123SOK growth, and CK21 (50 nM) significantly inhibited proliferation of all four organoids (Figure 4a). In addition, we were able to propagate U049MAI as a slow-growing subcutaneous tumor in nude mice. Treatment with CK21 (3 mg/kg, daily) for 28 days, also significantly reduced U049MAI tumor growth compared to the untreated control group (Figure 4b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig4-v2.jpg)
+
+**Figure 4.:** (a) In vitro culture of different organoids with escalating concentrations of CK21 for 72 hours. Gemcitabine was included as a positive control. (b) U049MAI tumor size in nude mice during CK21 treatment. (c) Co-expression Venn diagram of differentially expressed genes that were significantly different with CK21 treatment. Size of the circles reflect the total number of differentiate expressed genes (transformed using log2(n+1)). (d) Genes of interest showing consistent up or down regulation as treatment time increased. Fold change is color coded where red is upregulation, blue is down regulation. Circle presents the genes had an adjusted P-value <0.05, and triangle presents the genes had an adjusted pP-value >0.05. Size of the circle represents the adjusted p values. (e) RT-qPCR analysis of gene expression in tumor organoids after CK21 treatment for 24 hours. (f) Scheme of RNA seq using in vivo orthotropic AsPC-1 model. (g) Heatmaps of top statistically significant differentially expressed genes in AsPC-1 tumors after treatment with CK21 for three days. Statistical analysis: Two-way ANOVA (not repeated measures) with post-hoc comparison of the means of each drug dose was compared to No Rx controls for (a). Line indicates the doses that resulted in significant reduction in viability by CK21 or gemcitabine. Two-way ANOVA with post-hoc comparison of the means of each time point was conducted for (b), Multiple t tests were conducted for (e) (** P<0.01, *** P<0.001, **** P<0.0001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) CK21 (50 mM) reduced the expression of DDIT4 in AsPC-1, Panc-1, U049MAI, and U123M15-T after 24 hoursr of culture. (b) Baseline expression of DDIT4 in different tumor cells (without CK21 treatment).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) knockdown of DDIT4 in Panc-1 did not alter response to CK21 (50 nM). (b) AsPC-1 overexpression of DDIT4 did not alter response to CK21 (50 nM).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** CK21 given at 4 mg/kg/day for KC-6141 and 3 mg/kg/day for KPC-961 resulted in modest inhibition of tumor growth.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig4-figsupp5-v2.jpg)
 
 Because pancreatic tumor organoids better preserve the genetic signatures than pancreatic tumor cell lines, we performed a time-course RNA-seq of U049MAI and U123M15-T treated with CK21 for 3, 6, 9, and 12 hoursr. We hypothesized that these early time points might reveal the initiating mechanism of action that result ultimately in the control of tumor growth; indeed, the number of differentially expressed genes (DEGs) significantly increased with prolonged CK21 treatment, from less than 10 DEGs at 3 hr up to 8,000 DEGs at 12 hr (Figure 4c and Figure 4—figure supplement 1). We identified the genes that were differentially expressed at early time points and continuously upregulated or downregulated at later time points (Figure 4d). We confirmed with qPCR, of a significant downregulation of DDIT4, MYC, XBP1 and XIAP, as well as a significant upregulation of POLR2A, GADD45 and VAMP1 (Figure 4e). We also performed transcriptome analysis on the AsPC-1 tumor, orthotopically implanted in the pancreas for 7 days and then treated by CK21 for three days. Notably, CK21 induced similar DEG expression profiles as in vitro treated organoids, with downregulated DDIT4 and XBP1, as well as upregulated POLR2A (Figure 4g).
 
 DDIT4 was one of the genes consistently and strongly downregulated by CK21 in both organoids and AsPC-1, with significant effects observed as early as 3 hoursr of CK21 treatment in vitro and at day 3 in vivo. At the protein level, we also observed a significant decrease of DDIT4 expression after CK21 treatment of 24 hoursr (Figure 4—figure supplement 2). Interestingly, DDIT4 has been identified as a prognosis marker and highly expressed in pancreatic tumors (Pinto et al., 2017), thus prompting the investigation into whether DDIT4 inhibition might be the triggering mechanism of action and thus serve as a predictive biomarker for CK21 sensitivity. However, knock-down of DDIT4 in Panc-1 only induced very modest in vitro susceptibility to CK21, and the overexpression of DDIT4 in AsPC-1 didn’t result a difference to CK21 response (Figure 4—figure supplement 3). Furthermore, in two mouse pancreatic tumor cell lines derived from genetically modified KC or KPC mice that were only modestly sensitive to CK21 treatment (Figure 4—figure supplement 4), DDIT4 as well as other early responder genes showed strong alterations in expression profiles comparable to tumors that were more sensitive to CK21 (Figure 4—figure supplement 5). Therefore, these early responder genes are not likely to be essential mediators leading to tumor susceptibility to CK21.
 
-## Ingenuity pathway analysis of patient-derived organoids reveal down-regulation of the NF-κB signaling pathway by CK21
+### Ingenuity pathway analysis of patient-derived organoids reveal down-regulation of the NF-κB signaling pathway by CK21
 
 At the later timepoint of 12 hr after CK21 treatment, both U049MAI and U123M15-T had over 8,000 DEGs compared to the no Rx group (Figure 5a, b). We then used Ingenuity pathway analysis (IPA, Qiagen) on the DEGs to identify the major molecular and cellular functions that were significantly affected by CK21 treatment (Figure 5c). First, CK21 treatment was predicted to inhibit RNA and DNA transcription, expression of RNA, and transactivation of RNA transcription in both organoids; this observation corroborates a previous report on the ability of triptolide to inhibit RNA transcription (Titov et al., 2011). In addition, DEGs induced by CK21 were enriched for inhibition of cell proliferation and cell survival, and for inducing apoptosis and tumor cell necrosis. These observations collectively are consistent with TUNEL-positive staining of ASPC-1 with CK21 treatment in vivo, and support the conclusion that induction of cell apoptosis is the likely mechanism for the anti-tumor activity of CK21.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig5-v2.jpg)
+
+**Figure 5.:** (a) Volcano plots of differentially expressed genes in (a) U049MAI and (b) U123M15-T after 12 hours CK21 treatment (50 nM). Significance cutoff was s P<0.05. Upregulation was colored as red, and downregulation was colored as blue. (c) Enrichment of molecular and cellular functions in U049MAI and U123M15-T after CK21 treatment. Size represents gene numbers. Color and shape represent functional groups. Z-score represents the confidence of the prediction, where positive value means upregulation and negative value means downregulation. Canonical pathway enrichment in (d) U049MAI and (e) U123M15-T after treatment with CK21 at 50 nM. Color represent Z-score where red means upregulation and blue means downregulation. Statistical analysis: Unpaired t-test was conducted for (c); Data presented in all the bar graphs are mean ± standard error.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Top pathways for (a) U049MAI and (b) U123M15-T.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig5-figsupp2-v2.jpg)
+
 We used IPA pathway enrichment analysis to further identify the canonical signaling/metabolic pathways regulated by CK21 that might lead to tumor cell apoptosis (Figure 5d, e). Interestingly, in both organoids, EIF2 signaling, oxidative phosphorylation and mitochondrial dysfunction were the major pathways highly upregulated by CK21, whereas the NF-κB, TGF-ß and telomerase signaling pathways were significantly downregulated at the 12 hr treatment timepoint. In addition, at 9 hour timepoint, NF-κB was already significantly downregulated and oxidative phosphorylation as well as EIF2 signaling pathway were significantly upregulated (Figure 5—figure supplement 1). In vivo, Aspc-1 orthotopic tumors showed upregulation of DNA damage checkpoint regulation (Figure 5—figure supplement 2), which also is an indicator of tumor apoptosis. Collectively, these observations suggest that CK21 may be inhibiting NF-κB activity and inducing mitochondrial-mediated tumor cell apoptosis.
 
-## CK21 inhibits expression of NF-κB p65 and translocation to nuclei
+### CK21 inhibits expression of NF-κB p65 and translocation to nuclei
 
 NF-κB plays a major role in the regulation of immune, inflammatory response and cell proliferation (Park and Hong, 2016). In normal cells, NF-κB is activated by appropriate stimuli and then returns to its inactive state. In tumor cells, particularly in pancreatic cancer cells, NF-κB becomes constitutively activated and has an anti-apoptotic function (Liptay et al., 2003; Dolcet et al., 2005). After 12 hr treatment with CK21, the genes (CHUK, IKBKB and RELA) encoding the key regulators of the NF-κB pathway, IKKα, IKKβ and p65, were significantly downregulated in both organoids (Figure 6a).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig6-v2.jpg)
+
+**Figure 6.:** (a) Heatmap of the relative expression of genes in the NF-κB pathway in U049MAI and U123M15-T after CK21 treatment. Genes are color coded where red means upregulated, and blue means downregulated. Only statistically significant genes are listed. (b) Representative p65 translocation images of AsPC-1 and Panc-1 after treated with CK21 at 50 nM. Nuclei stained as purple, p65 stained as yellow. (c) Relative p65 MFI of AsPC-1 and Panc-1 after CK21 (50 nM) treatment. (d) Density plots and (e) similarity scores of p65 for AsPC-1 and Panc-1. (f) Heatmaps of genes involved in oxidative phosphorylation of U049MAI and U123M15-T after CK21 treatment. (g) Reactive oxygen species generated after CK21 treatment (8 and 24 hoursr). Representative blotting images and quantification of (h) BCL2 expression and (i) cleaved caspase-3 at 24 hours after CK21 treatment. Statistical analysis: One-way ANOVA with post-hoc Tukey comparison of the means of each data set was conducted for (c), (e); Unpaired T test was conducted at different time points for (g), (h), (i). (* P<0.05, ** P<0.01, *** P<0.001, **** P<0.0001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Green represents downregulation and red represent upregulation by IPA analysis.
+
 To confirm the transcriptional findings that CK21 downregulates the NF-κB pathway, we stained the nuclei and p65 of AsPC-1 and Panc-1 with different fluorophores to visually determine their cellular location; similarity in the spatial localization between p65 and nuclei represents the translocation of NF-κB to nuclei (Figure 6b). In the no Rx group, p65 staining had a high similarity with nuclei staining, corresponding with constitutive nuclear localization of NF-κB in pancreatic cancer cells. After treatment with CK21 for 24 or 48 hours, both cell lines exhibited significantly lower expression of p65, consistent with RNA-seq analysis (Figure 6c). In addition, we observed reduced similarity of p65 and nuclei, indicating significantly reduced translocation of NF-κB to the nuclei in the presence of CK21 (Figure 6d, e). Taken together, the data demonstrate that CK21 inhibits NF-κB expression and translocation, which we hypothesize results in increased susceptibility tumor cell apoptosis.
 
-## CK21 induces reactive oxidative species and mitochondrial mediated apoptosis
+### CK21 induces reactive oxidative species and mitochondrial mediated apoptosis
 
 The expression of genes encoding five mitochondrial respiratory chain complexes were significantly increased in pancreatic tumor organoids treated with CK21 (Figure 6f), consistent with dysregulated mitochondrial function and increased susceptibility to mitochondrial-mediated apoptosis (Márquez-Jurado et al., 2018). Because mitochondrial -mediated apoptosis is often stimulated by oxidative stress, we first tested whether CK21 induced reactive oxidative species (ROS) in AsPC-1 and Panc-1 pancreatic tumor cell lines. In both cell lines, a trend towards an increase in ROS was observed as early as 8 hours after CK21 treatment, and a significant increase in ROS generation after 24 hours of culture with CK21 (Figure 6g). These observations raise the possibility that increased ROS production may trigger mitochondrial outer membrane permeabilization and release of pro-apoptotic mitochondrial proteins into the cytoplasm (Márquez-Jurado et al., 2018).
 
@@ -93,9 +155,17 @@ The B-cell-lymphoma protein 2 (BCL2) family of proteins also play critical roles
 
 Because most apoptotic pathways lead to the activation of cysteine-dependent aspartate-specific proteases, and ultimately to cleaved effector caspases such as caspases-3,–6 and –7 Redza-Dutordoir and Averill-Bates, 2016, we probed for cleaved caspase-3 in pancreatic tumors incubated with CK21. For Panc-1 and both pancreatic tumor organoids, cleaved caspase-3 was detected after 24 hours of culture with CK21 (Figure 6i) by Western blotting. We also confirmed increased caspase-3/7 in Panc-1 by flow cytometry (Figure 6—figure supplement 1). Interesting, cleaved caspase-3/7 was not detected in AsPC-1 after CK21 treatment, suggesting that apoptosis of these tumor cells may be explained by the involvement of other effector caspases or proteases. Collectively, these data point to CK21 downregulating the NF-kB pathway, promoting ROS production and mitochondrial-mediated tumor cell apoptosis.
 
-## CK21 showed minimal immunosuppression in a spontaneous tumor rejection model
+### CK21 showed minimal immunosuppression in a spontaneous tumor rejection model
 
 A number of studies have reported on the immunosuppressive activity of triptolide (Chen, 2001), thus raising the potential concern that CK21 may also inhibit the development of anti-tumor immune responses and prevent long-term tumor control. Indeed, although the analyses were conducted on CK21 treated tumor cells, IPA analysis indicated that CK21 inhibited lymphopoiesis, leukopoiesis and T cell development, consistent with potential immunosuppressive activity. To address this concern, we utilized a mouse KPC-960 pancreatic ductal-like tumor model derived from pancreatic tumors that spontaneously arose in KPC (KrasG12D/+Trp53R172H/+Pdx1-Cre) B6.129 mice (Torres et al., 2013; Figure 7a). Upon subcutaneous implantation into B6.129 immunocompetent hosts, KPC-960 grew to a maximum tumor size by day 7 and then approximately 70% KPC-960 tumors were spontaneously rejected by day 14–17 post-implantation (Figure 7b). This contrasted with tumor formation in similar B6.129 host in Torres et al., 2013; we speculate that rejection of the KPC-960 tumor may be driven increased number of passages that resulted in the accumulation of mutations resulting in antigenic drift. To test whether CK21 could prevent the spontaneous regression of KPC-960, CK21 (3 mg/kg daily) therapy was initiated on day 5 or 7 post-implantation. We observed no statistically significant inhibition of tumor regression when CK21 treatment was started on day 5 or 7 post-implantation (Figure 7c, d) suggesting that the immunosuppressive activity of CK21 on established primary immune responses is minimal. We also implanted KPC-960 subcutaneously into nude mice but observed limited efficacy by CK21 when provided at 3 mg/kg/day (Figure 7—figure supplement 1). These observations suggest that host immunity is primary responsible for the rejection of KPC-960 tumors. The reason for KPC-960 resistance to CK21 is not known and is the subject of future investigations.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig7-v2.jpg)
+
+**Figure 7.:** (a) Scheme of a subcutaneous model of mouse pancreatic tumor, KPC-960, with CK21 treatment. CK21 was provided at 3 mg/kg daily starting on day 5 or day 7. During secondary challenge, CK21 was provided at 3 mg/kg daily from day 3 post-tumor implantation. Tumor size of mice receiving first challenge (b) without any CK21, (c) with CK21 starting on day 5, (d) or day 7. Tumor size of mice receiving a second challenge (e) without any CK21, or (f) with CK21 treatment starting on day 3. (g) Mice that cleared KPC-960 tumor in (c) and (d) received a second tumor challenge without any CK21; tumor size were quantified weekly (h) Flow plots of CTL assay, another mouse pancreatic tumor, KC-6141, was used as a non-specific target. Quantification of the recovered KPC-960 compared to KC-6141, as a quantification of specific cytotoxic T cell (CTL) killing. (i) Specific CTL killing of KPC-960 cells with splenocytes from (e), (f), (g). Splenocytes from naïve mice was included as a negative control. Data presented in all the graphs are mean ± standard error. Statistical analysis: Two-way ANOVA with post-hoc comparison of the means of each time point was conducted for (b) and (e), (* P<0.05, ** P<0.01, *** P<0.001).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/85862/elife-85862-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** CK21 given at 3 mg/kg/day resulted in limited efficacy on tumor growth. Each line represents an animal.
 
 We next tested the possibility that CK21 may have inhibited the development of memory and recall anti-tumor responses that mediate the spontaneous rejection of secondary KPC-960 tumors. Mice that cleared these tumors were rested for 2 weeks without treatment and then challenged with a second KPC-960 tumor (Figure 7a); a more rapid tumor clearance was observed (Figure 7e). When CK21 treatment was initiated on day 3 of second tumor implantation, no significant change in the kinetics of tumor regression was observed compared to untreated controls (Figure 7f). In addition, mice that rejected the first KPC-960 tumors while receiving CK21 were rested and re-challenged with a second KPC-960 tumor. All the mice were able to reject the tumor comparably to those that did not receive CK21, (Figure 7g). These observations further demonstrate CK21 did not inhibit the development of memory or recall anti-tumor responses.
 
@@ -115,21 +185,514 @@ Taken together, our study describes the development of a novel modified triptoli
 
 ## Methods
 
-## Study design overview
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CK21</td>
+      <td>In house</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gemcitabine</td>
+      <td>Actavis</td>
+      <td>45963-619-59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>AsPC-1</td>
+      <td>ATCC</td>
+      <td>CRL-1682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Luciferase transfected AsPC-1</td>
+      <td>Indiana University</td>
+      <td>N/A</td>
+      <td>Luciferase transfected</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Panc-1</td>
+      <td>ATCC</td>
+      <td>CRL-1469</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus)</td>
+      <td>KC-6141</td>
+      <td>University of Nebraska</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus)</td>
+      <td>KPC-960</td>
+      <td>University of Nebraska</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus)</td>
+      <td>KPC-961</td>
+      <td>University of Nebraska</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus)</td>
+      <td>B6129SF1/J</td>
+      <td>Jackson Laboratory</td>
+      <td>101043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Laboratory</td>
+      <td>000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus)</td>
+      <td>Athymic Nude-Foxn1nu</td>
+      <td>Envigo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DMEM</td>
+      <td>ATCC</td>
+      <td>30–2002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RPMI</td>
+      <td>Quality Biological</td>
+      <td>112-024-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fetal bovine serum</td>
+      <td>Atlanta Biologicals</td>
+      <td>S115OH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Penicillin streptomycin</td>
+      <td>Gibco</td>
+      <td>15140–122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>L-Glutamine</td>
+      <td>Gibco</td>
+      <td>25030–081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DMSO</td>
+      <td>Sigma</td>
+      <td>276855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trypsin-EDTA</td>
+      <td>Stemcell</td>
+      <td>07901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TrypLE express</td>
+      <td>Gibco</td>
+      <td>12605–010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Sodium pyruvate</td>
+      <td>Gibco</td>
+      <td>11360–070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEM nonessential amino acids</td>
+      <td>Cellgro</td>
+      <td>25–025 CL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>2-Mercaptoethanol</td>
+      <td>Gibco</td>
+      <td>21985–023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IntestiCult organoid growth medium</td>
+      <td>Stemcell</td>
+      <td>6005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>A83-01</td>
+      <td>Sigma</td>
+      <td>SML0788</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FGF-10</td>
+      <td>Sigma</td>
+      <td>SRP3262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gastrin I</td>
+      <td>Sigma</td>
+      <td>G9145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>N-acetylcysteine</td>
+      <td>Sigma</td>
+      <td>A9165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nicotinamide</td>
+      <td>Sigma</td>
+      <td>N0636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>B27 supplement</td>
+      <td>Gibco</td>
+      <td>17504–044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Primocine</td>
+      <td>Invivogen</td>
+      <td>ant-pm-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Y-27632</td>
+      <td>Tocris</td>
+      <td>1254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>356231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TrypLE</td>
+      <td>Gibco</td>
+      <td>12605–010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter 96 AQueous one solution</td>
+      <td>Promega</td>
+      <td>G3580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Caspase-3/7 green detection</td>
+      <td>Thermo Fisher</td>
+      <td>C10427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYTOX dead cell stain</td>
+      <td>Thermo Fisher</td>
+      <td>C10427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CFSE cell proliferation kit</td>
+      <td>Thermo Fisher</td>
+      <td>C34554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ACK lysing buffer</td>
+      <td>Quality Biological</td>
+      <td>118-156-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ROS-Glo H2O2 assay</td>
+      <td>Promega</td>
+      <td>G8820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE 10% Bis-Tris gel</td>
+      <td>Invitrogen</td>
+      <td>NP0301BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE MES SDS running buffer</td>
+      <td>Novex</td>
+      <td>NP002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE MOPS SDS running buffer</td>
+      <td>Novex</td>
+      <td>NP001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE transfer buffer</td>
+      <td>Novex</td>
+      <td>NP0006-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE LDS sample reducing agent</td>
+      <td>Invitrogen</td>
+      <td>NP0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE sample buffer</td>
+      <td>Invitrogen</td>
+      <td>NP0009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE antioxidant</td>
+      <td>Invitrogen</td>
+      <td>NP0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TBS Tween-20 buffer</td>
+      <td>Thermo Scientific</td>
+      <td>28360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Invitrolon PVDF filter paper</td>
+      <td>Novex</td>
+      <td>LC2005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PageRuler prestained protein ladder</td>
+      <td>Thermo Scientific</td>
+      <td>26616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Methanol</td>
+      <td>Fisher Scientific</td>
+      <td>A452-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce protease&amp;phosphatase inhibitor</td>
+      <td>Thermo Scientific</td>
+      <td>A32959</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bovine serum albumin</td>
+      <td>Sigma</td>
+      <td>A7906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal west pico PLUS</td>
+      <td>Thermo Scientific</td>
+      <td>34579</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce bradford assay kit</td>
+      <td>Thermo Scientific</td>
+      <td>23246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta actin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab8227</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant anti-REDD-1/DDIT4 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab191871</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Caspase-3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab13847</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant anti- BCL2 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab182858</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG H&amp;L (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab205718</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-NFkB p65, PE, eBioscience(Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>12986342</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>4',6-Diamidino-2-Phenylindole, Dilactate</td>
+      <td>Biolegend</td>
+      <td>422801</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp SYBR green master mix</td>
+      <td>Applied Biosystem</td>
+      <td>A25742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High capacity cDNA reverse transcription</td>
+      <td>Applied Biosystem</td>
+      <td>4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>D-Luciferin potassium salt</td>
+      <td>Perkin Elmer</td>
+      <td>122799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PBS</td>
+      <td>GenClone</td>
+      <td>25–508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell recovery solution</td>
+      <td>Corning</td>
+      <td>354253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiangen</td>
+      <td>74124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNase I recombinant</td>
+      <td>Roche</td>
+      <td>04536282001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design overview
 
 We synthesized a novel pro-drug of triptolide, CK21, and formulated it into an emulsion. We tested the efficacy of CK21 in vitro using cell proliferation assays and multiple pancreatic cancer cell lines, and in vivo in heterotopic and orthotopic xenograft mouse models. We also tested the efficacy of CK21 against multiple patient-derived pancreatic tumor organoids in vitro and in vivo. We performed transcriptome analysis on the pancreatic organoid response to CK21 in vitro, and on the in vivo response of pancreatic tumors to CK21. This analysis identified the ability of CK21 to reduce overall transcription, inhibit the NF-κB pathway, induce mitochondria dysfunction, and ultimately, mitochondrial-mediated apoptosis. We confirmed inhibition of NF-κB expression and translocation in pancreatic cell lines using imaging flow cytometry, Western blotting and RT-PCR.
 
-## Reagents
+### Reagents
 
 Human pancreatic tumor cell lines were obtained from commercial sources. Human tumor organoids were obtained from patients with pancreatic ductal adenocarcinoma, confirmed to be tumor based on pathologic assessment, and developed into organoid culture according to established protocols (Romero-Calvo et al., 2019). Luciferase-transfected AsPC-1 tumors (Shannon et al., 2015), and mouse tumors from genetically KPC mice that spontaneously develop pancreatic cancer (Torres et al., 2013) have been previously described. CK21 was synthesized as described below. All other reagents listed in the Key Resources Table were validated by the manufacturer.
 
-## Synthesis and formulation of CK21
+### Synthesis and formulation of CK21
 
 Under nitrogen protection, a mixture of triptolide (1.8 g, 5 mmol) and anhydrous tetrahydrofuran (250 mL) was cooled to –20 °C, and lithium 2,2,6,6-tetramethylpiperidine in tetrahydrofuran/toluene (7.5 mL, 2.0 M, 15 mmol) was added dropwise. After stirring for 30 min, benzoyl chloride (1.05 mL, 7.5 mmol) was added dropwise and reacted for 1 hr, followed again with benzoyl chloride (7.5 mmol) and reacted for another 2 hr. The reaction was quenched by adding aqueous sodium carbonate (10%), and the mixture was extracted with ethyl acetate (250 mL ×3). The organic phases were combined, dried over anhydrous sodium sulfate, and concentrated under reduced pressure. The crude product was separated and purified by silica gel chromatography (dichloromethane: ethyl acetate = 2:1), and the target product (white solid, 2.55 g, yield 90%) was collected and further recrystallized in a mixed organic solvent (dichloromethane/hexane) to obtain a final product (2.13 g, yield 85%, purity >99% by UPLC).
 
 CK21 was dissolved in medium chain triglycerides (MCT) at 90 °C under nitrogen. PC-98T, DSPE-MPEG2000 and glycerol were dissolved in water to form the water phase. The oil phase was dispersed at room temperature in the water phase with high-speed shear mixing (FAS90-22, FLUKO) at 2,800 rpm for 30 min. The pH was adjusted to 4–7, and volume was made up to 100% with water. The final emulsion was obtained by high-pressure homogenization using microfluidizer (M-7125–20 K, MFIC) at 10,000 psi for one cycle and at 18,000 psi for two cycles. Finally, the emulsion was sealed in vials (5 mL: 1.5 mg) after flushing with nitrogen gas and autoclaved at 121 °C for 15 min.
 
-## Characterization of CK21 compound
+### Characterization of CK21 compound
 
 1 H NMR (Bruker, 400MHz, CDCl3): δ 8.25 (dd, J=1.6 Hz, 8.0 Hz, 2 H), 7.76 (dd, J=1.6 Hz, 8.4 Hz, 2 H), 7.67 (m, 1 H), 7.58 (t, J=7.2 Hz, 2 H), 7.43~7.38 (m, 3 H), 3.80 (d, J=3.2 Hz, 1 H), 3.39 (d, J=2.8 Hz, 1 H), 2.98 (d, J=10 Hz, 1 H), 2.75~2.69 (m, 1 H), 2.63~2.58 (m, 1 H), 2.56 (d, J=6.4 Hz, 1 H), 2.53 (d, J=10 Hz, 1 H), 2.40~2.32 (m, 2 H), 2.21~2.14 (m, 1 H), 1.88 (dd, J=14.0 Hz, 13.2 Hz, 1 H), 1.55~1.52 (m, 1 H), 1.18~1.11 (m, 1 H), 1.15 (s, 3 H), 0.92 (d, J=7.2 Hz, 3 H), 0.82 (d, J=6.8 Hz, 3 H); 13 C NMR (Bruker, 100 MHz, CDCl3): δ168.1, 164.5, 150.3, 142.2, 134.4, 133.5, 131.9, 130.5, 129.9,129.2, 128.9, 128.6, 128.1, 128.0, 72.8, 65.8, 65.3, 60.7, 60.0, 56.5, 53.7, 40.7, 36.7, 29.3, 27.9, 24.6, 17.8, 17.6, 16.7, 15.0.
 
@@ -137,66 +700,66 @@ Mass Spectrometry (AGILENT, ESI+): Calculated for C34H32O8[M]: 568.62, found 569
 
 CK21 crystals were obtained by careful evaporation of a mixture of CK21 in combined solvent of dichloromethane and hexane at room temperature. A crystal with size of 0.10×0.03 × 0.02 mm was chosen to be scanned at X-ray diffraction. Data collection was carried out using a Bruker D8 Venture diffractometer with graphite mono-chromated Ga Kα radiation (λ=1.34139 Å) at 296 K. Structures were solved by direct methods using the SHELXS program and refined with the SHELXL program (Bruker).
 
-## Pharmacokinetic study of CK21
+### Pharmacokinetic study of CK21
 
 CK21 emulsion (0.3 mg/mL) was injected intravenously into fasted SD rats at a dose of 3 mg/kg for males and 1.5 mg/kg for females. At designed timepoints, 60 µL blood samples were collected, protein precipitated and centrifuged at 13,000 rpm for 10 min, 4 °C. 5 µL of the supernatant was injected for LC-MS/MS (Q-Trap 6500) analysis. The PK data were calculated using Phoenix WinNonlin 6.3.
 
-## Human pancreatic cancer cell lines and organoids
+### Human pancreatic cancer cell lines and organoids
 
 Human pancreatic cancer cell line, AsPC-1, was cultured in RPMI with 10% fetal bovine serum (FBS), 1% L- Glutamine, and 1% penicillin streptomycin(P/S). Panc-1 was cultured in DMEM with 10% FBS and 1% P/S. Both AsPC-1 and Panc-1 were purchased from ATCC.
 
 Pancreatic tumors from patients with pancreatic ductal adenocarcinoma were collected under IRB12-1108 and IRB13-1149, confirmed to be tumor based on pathologic assessment, and developed into organoid culture according to established protocols (Romero-Calvo et al., 2019). Four different organoids, U0118-8, U049MAI, U114SOK, and U123M15-T, were investigated. For the optimal culture, derived organoids were embedded in growth factor reduced Matrigel and cultured in Intesticult complete media, supplemented with A83-01, fibroblast growth factor 10, gastrin I, N-acetyl-L-cysteine, nicotinamide, and B27 supplement, primocin. Tocris Y-27632 dihydrochloride, a selective p160 ROCK inhibitor, was added when thawing the organoids (Romero-Calvo et al., 2019).
 
-## In vitro proliferation assay
+### In vitro proliferation assay
 
 AsPC-1, Panc-1 and tumor organoids were seeded in 96-well plates and cultured with the indicated concentrations of CK21, or Gemcitabine. CK21 was prepared by dissolving in DMSO and diluting with PBS. At selected times, 20 μL of CellTiter 96 AQueous One solution was added into the 96-well plate, and then incubated at 37 °C for 2 hoursr. The absorbance was read at 490 nm using Spectra Max i3X (Molecular Devices).
 
-## Mice and xenograft
+### Mice and xenograft
 
 All mouse work that described in this study were approved by the Institutional Animal Care and Use Committee (ACUP72467, ACUP72527). Female or male athymic nude-Foxn1nu mice age from 6 to 8 weeks were purchased from Envigo. AsPC-1 or Panc-1 cells were subcutaneously implanted in the scruff of a nude mice at 5×106 cells/mice. Mice were treated with different dosages of CK21 daily by intraperitoneal injection. Blank emulsion was provided to the no treatment group. Gemcitabine was also provided to mice at 75 mg/kg once a week as a positive control. The effect of CK21 with another human pancreatic tumor cell line, Panc-1, was also evaluated in the subcutaneous model. The U049MAI organoid was used to test the efficacy of CK21 in the same way.
 
 Tumor size was recorded weekly and calculated by 1/2×L × W (Kamisawa et al., 2016). L was the length of the tumor; W was the width of the tumor. Weight of mice were monitored once a week. At the end of the experiment, mice were sacrificed by cervical dislocation. Liver, kidney, pancreas, as well as tumor tissue were harvested and fixed in 10% formalin. Haemotoxylin and Eosin (H&E), terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) staining were performed on respective tissues. All the slides were scanned using ScanScope XT slide scanner and analyzed using Aperio eSlideManager.
 
-## Orthotopic Ttumor Mmodel with Ttransfected AsPC-1
+### Orthotopic Ttumor Mmodel with Ttransfected AsPC-1
 
 Luciferase-transfected AsPC-1 (Shannon et al., 2015) (1×106 / mouse) was injected into the tail of the pancreas, and one week of tumor implantation, CK21 was provided at 3 mg/kg daily for the treatment group. In the no treatment group, blank emulsion was provided. During the four weeks of treatment, mice were administrated with D-luciferin (Perkin Elmer) and subjected to Xenogen bioluminescence imaging weekly.
 
-## Immunomodulation of CK21 at a spontaneous rejection mice model
+### Immunomodulation of CK21 at a spontaneous rejection mice model
 
 Murine pancreatic cancer cell lines were derived from KPC (KrasG12D;Trp53R172H;Pdx1-Cre) mice or KC (KrasG12D;Pdx1-Cre) m[i]ice, which spontaneously develop pancreatic cancer (Torres et al., 2013). KPC-960 were developed from KPC mice with a mixed background of B6 ×129, and were subcutaneously implanted into female, naïve B6 ×129 mice at 5×106 cells/mice. After spontaneous rejection, mice were rested for 2 weeks and then challenged with KPC-960 cells at 5×106 cells/mice. A dosage of 3 mg/kg of CK21 was provided daily starting at day 5 or day 7. For evaluation of CK21 on memory response, mice that rejected the tumors without any CK21 treatment were rested for 2 weeks and then received a second tumor challenge and 3 mg/kg of CK21 daily, starting at day 3.
 
 Mice that rejected the KPC-960 tumor were sacrificed, splenocytes were collected and ex-vivo specific cytotoxic assay performed. Specifically, target cells KPC-960 and negative control KC-6141 were labeled at 10:1 concentration of carboxyfluorescein succinimidyl ester (CFSE) respectively. Two cell lines were then mix at 1:1 ratio and cultured with harvested splenocytes at 1:1, 1:5, 1:10, 1:20, and 1:50 ratios. After overnight co-culture, cells were subjected to flow cytometry (BD LSR II) to quantify relative cytotoxicity.
 
-## Transcriptome analysis of CK21 treated patient-derived organoids
+### Transcriptome analysis of CK21 treated patient-derived organoids
 
 Two organoids, U049MAI, U123M15-T, were cultured with CK21 at 50 nM for 3 hoursr, 6 hoursr, 9 hoursr, and 12 hoursr. Total RNA was extracted using a RNeasy Plus Mini Kit (Qiagen), and total RNA quantified using the 2100 Bioanalyzer (Agilent). Samples with a RIN >8 was outsourced to Novogene for library construction and sequencing (Illumina Platform (PE150)) with 20 M raw reads/sample. The reads were mapped to the Homosapien genome (GRCh38) using STAR software with ≥95% mapping rate. Differential expression analysis was performed using DESeq2 package in R (Anders and Huber, 2010). Molecular and cellular function analysis and pathway enrichment was analyzed using Ingenuine Pathway Analysis software (Qiagen). Duplicate samples were prepared for each condition.
 
 In vivo RNA seq was also performed on orthotropic, luciferase-transfected AsPC-1 tumors. Specifically, luciferase transfected AsPC-1 was implanted into pancreas, and after one week, mice were treated with CK21 at 3 mg/kg for 3 days. Tumor tissues were then resected and RNA seq was performed. Quadruplicate samples were prepared for each condition.
 
-## Imaging Flow cytometry
+### Imaging Flow cytometry
 
 AsPC-1, Panc-1 were cultured with 50 nM CK21 for 24 hoursr and 48 hoursr. Cells were fixed with 4% paraformaldehyde, and incubated overnight in cocktail of antibody (DPAI, anti-p65) containing 0.1% Triton X-100. Stained cells were subjected to imaging flow cytometry (Amnis ImageStreamXMk II) and images analyzed using IDEASR software. Specifically, the ‘Similarity’ feature in IDEASR indicates the spatial relationship between the p65 and nuclei. Low similarity scores exhibit a predominant cytoplasmic distribution of p65, whereas high similarity scores indicate a predominant nuclear distribution of p65.
 
-## Western blotting
+### Western blotting
 
 AsPC-1, Panc-1, U049MAI, or U123M15-T were cultured with 50 nM CK21 for 24 hoursr. Cells then were collected, washed, and lysate for 10 min on ice. Protein concentration of each sample was detected following the protocol of Pierce Detergent Compatible Bradford Assay. Total of 20 µg denatured protein was then loaded into each lane of NuPAGE Bis-Tris Gel and run using Mini Gel Tank (Invitrogen). Gels were transferred to 0.45 µm Invitrolon PVDF membrane using Mini Blot Module (Invitrogen). Membranes were blocked in 5% BSA overnight at 4 °C. Membranes were then incubated overnight at 4 °C with primary antibodies, including anti-DDIT4, anti-BCL2, anti-Caspase3, or anti-ß-actin. Secondary goat anti-rabbit H&L IgG (HRP) was then incubated for one hour at room temperature. Finally, the chemiluminescent signal was enhanced by with SuperSignal West Pico PLUS Chemiluminescent Substrate, and protein expression was detected using Azure Biosystems 600.
 
-## RT-qPCR
+### RT-qPCR
 
 Predesigned primers were purchased from Integrated DNA Technologies, which included XBP1 (Hs.PT.58.1903847), GADD45B (Hs.PT.58.19897476.gs), MYC (Hs.PT.58.26770695), GUSB (Hs.PT.58v.27737538), VAMP1 (Hs.PT.58.26743095), POLR2A (Hs.PT.58.14390640), XIAP (Hs.PT.56a.23056448), DDIT4 (Hs.PT.58.38843854.g), ACTB (Hs.PT.56a.19461448.g) for human tumor organoid samples. DDIT4 (Mm.PT.58.43159110.g), GUSB (Mm.PT.39a.22214848), MYC (Mm.PT.58.13590978), GADD45B (Mm.PT.58.10699383.g), ACTB (Mm.PT.39a.22214843.g), XIAP (Mm.PT.56a.5536843), XBP1 (Mm.PT.58.30961962) for mouse pancreatic tumor cell line samples.
 
 U049MAI or U123M15-T were cultured with 50 nM CK21 for 24 hoursr, total RNA was extracted with an RNeasy Plus Mini Kit (Qiagen) and quantified using Nanodrop 1000 spectrophotometer (Thermo Fisher). RNA of each sample was reverse transcribed into cDNA using High capacity cDNA reverse transcription kit (Applied Biosystems). RT-qPCR were run on QuantStudio 3 (Applied Biosystems) using PowerUp SYBR green master mix with specific primers. RT-qPCR of murine pancreatic cancer cell lines, KC-6141 and KPC-961, were prepared in the same way.
 
-## Cell line authentication
+### Cell line authentication
 
 KPC mice cell lines were submitted to ATCC and authenticated using Short Tandem Repeat (STR) analysis as described in the National Institute of Standards and Technology granted U.S. patent (No. 9,556,482). The submitted sample profile is mouse, however a matching reference profile has not previously been established in the ATCC mouse STR database.
 
 Human PDAC cell lines and patient derived organoids were also submitted to ATCC and authenticated using STR analysis as described in ASN-0002-2022. The submitted organoids are confirmed human, but not a match for any profile in the ATCC STR database.The submitted PDAC cell lines are similar to ATCC human cell line: CRL-1682.
 
-## Cell line authentication
+### Cell line authentication
 
 U049MAI or U123M15-T were cultured with 50 nM CK21 for 24 hoursr, total RNA was extracted with an RNeasy Plus Mini Kit (Qiagen) and quantified using Nanodrop 1000 spectrophotometer (Thermo Fisher). RNA of each sample was reverse transcribed into cDNA using High capacity cDNA reverse transcription kit (Applied Biosystems). RT-qPCR were run on QuantStudio 3 (Applied Biosystems) using PowerUp SYBR green master mix with specific primers. RT-qPCR of murine pancreatic cancer cell lines, KC-6141 and KPC-961, were prepared in the same way.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as means ± standard error (SEM). Statistical analyses were performed using GraphPad Prism software. Differences between groups were analyzed using unpaired t-tests, one-way or two-way ANOVA with post-hoc tests, as indicated in the figure legends.

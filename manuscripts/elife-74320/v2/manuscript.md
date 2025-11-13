@@ -21,26 +21,26 @@
 
 ### Affiliations
 
-1. https://ror.org/030qtrs05 Medical Research Council Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom
-2. https://ror.org/0524sp257 Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Oakfield Grove Bristol United Kingdom
-3. https://ror.org/01xtthb56 PROMENTA Research Centre, Department of Psychology, University of Oslo Oslo Norway
-4. https://ror.org/015rzvz05 Nic Waals Institute, Lovisenberg Diaconal Hospital Oslo Norway
-5. https://ror.org/046nvst19 Department of Mental Disorders, Norwegian Institute of Public Health Oslo Norway
-6. https://ror.org/00j9c2840 Norwegian Centre for Mental Disorders Research (NORMENT), Division of Mental Health and Addiction, Oslo University Hospital Oslo Norway
-7. https://ror.org/00j9c2840 Institute of Clinical Medicine, University of Oslo Oslo Norway
-8. https://ror.org/046nvst19 Centre for Fertility and Health, Norwegian Institute of Public Health Oslo Norway
-9. https://ror.org/03zga2b32 Center for Diabetes Research, Department of Clinical Science, University of Bergen Bergen Norway
-10. https://ror.org/03zga2b32 Department of Clinical Science, University of Bergen Bergen Norway
-11. https://ror.org/03np4e098 Department of Medical Genetics, Haukeland University Hospital Bergen Norway
-12. https://ror.org/03zga2b32 Mohn Center for Diabetes Precision Medicine, Department of Clinical Science, University of Bergen Bergen Norway
-13. https://ror.org/03np4e098 Children and Youth Clinic, Haukeland University Hospital Bergen Norway
-14. https://ror.org/05xg72x27 K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Høgskoleringen Norway
+1. Medical Research Council Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom ([ROR:030qtrs05](https://ror.org/030qtrs05))
+2. Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Oakfield Grove Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+3. PROMENTA Research Centre, Department of Psychology, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+4. Nic Waals Institute, Lovisenberg Diaconal Hospital Oslo Norway ([ROR:015rzvz05](https://ror.org/015rzvz05))
+5. Department of Mental Disorders, Norwegian Institute of Public Health Oslo Norway ([ROR:046nvst19](https://ror.org/046nvst19))
+6. Norwegian Centre for Mental Disorders Research (NORMENT), Division of Mental Health and Addiction, Oslo University Hospital Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
+7. Institute of Clinical Medicine, University of Oslo Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
+8. Centre for Fertility and Health, Norwegian Institute of Public Health Oslo Norway ([ROR:046nvst19](https://ror.org/046nvst19))
+9. Center for Diabetes Research, Department of Clinical Science, University of Bergen Bergen Norway ([ROR:03zga2b32](https://ror.org/03zga2b32))
+10. Department of Clinical Science, University of Bergen Bergen Norway ([ROR:03zga2b32](https://ror.org/03zga2b32))
+11. Department of Medical Genetics, Haukeland University Hospital Bergen Norway ([ROR:03np4e098](https://ror.org/03np4e098))
+12. Mohn Center for Diabetes Precision Medicine, Department of Clinical Science, University of Bergen Bergen Norway ([ROR:03zga2b32](https://ror.org/03zga2b32))
+13. Children and Youth Clinic, Haukeland University Hospital Bergen Norway ([ROR:03np4e098](https://ror.org/03np4e098))
+14. K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Høgskoleringen Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))
 
 † Corresponding author
 
 ## Abstract
 
-Higher BMI in childhood is associated with emotional and behavioural problems, but these associations may not be causal. Results of previous genetic studies imply causal effects but may reflect influence of demography and the family environment. This study used data on 40,949 8-year-old children and their parents from the Norwegian Mother, Father and Child Cohort Study (MoBa) and Medical Birth Registry of Norway (MBRN). We investigated the impact of BMI on symptoms of depression, anxiety, and attention-deficit hyperactivity disorder (ADHD) at age 8. We applied within-family Mendelian randomization, which accounts for familial effects by controlling for parental genotype. Within-family Mendelian randomization estimates using genetic variants associated with BMI in adults suggested that a child’s own BMI increased their depressive symptoms (per 5 kg/m 2 increase in BMI, beta = 0.26 S.D., CI = −0.01,0.52, p=0.06) and ADHD symptoms (beta = 0.38 S.D., CI = 0.09,0.63, p=0.009). These estimates also suggested maternal BMI, or related factors, may independently affect a child’s depressive symptoms (per 5 kg/m 2 increase in maternal BMI, beta = 0.11 S.D., CI:0.02,0.09, p=0.01). However, within-family Mendelian randomization using genetic variants associated with retrospectively-reported childhood body size did not support an impact of BMI on these outcomes. There was little evidence from any estimate that the parents’ BMI affected the child’s ADHD symptoms, or that the child’s or parents’ BMI affected the child’s anxiety symptoms. We found inconsistent evidence that a child’s BMI affected their depressive and ADHD symptoms, and little evidence that a child’s BMI affected their anxiety symptoms. There was limited evidence of an influence of parents’ BMI. Genetic studies in samples of unrelated individuals, or using genetic variants associated with adult BMI, may have overestimated the causal effects of a child’s own BMI. This research was funded by the Health Foundation. It is part of the HARVEST collaboration, supported by the Research Council of Norway. Individual co-author funding: the European Research Council, the South-Eastern Norway Regional Health Authority, the Research Council of Norway, Helse Vest, the Novo Nordisk Foundation, the University of Bergen, the South-Eastern Norway Regional Health Authority, the Trond Mohn Foundation, the Western Norway Regional Health Authority, the Norwegian Diabetes Association, the UK Medical Research Council. The Medical Research Council (MRC) and the University of Bristol support the MRC Integrative Epidemiology Unit.
+Background:Higher BMI in childhood is associated with emotional and behavioural problems, but these associations may not be causal. Results of previous genetic studies imply causal effects but may reflect influence of demography and the family environment.Methods:This study used data on 40,949 8-year-old children and their parents from the Norwegian Mother, Father and Child Cohort Study (MoBa) and Medical Birth Registry of Norway (MBRN). We investigated the impact of BMI on symptoms of depression, anxiety, and attention-deficit hyperactivity disorder (ADHD) at age 8. We applied within-family Mendelian randomization, which accounts for familial effects by controlling for parental genotype.Results:Within-family Mendelian randomization estimates using genetic variants associated with BMI in adults suggested that a child’s own BMI increased their depressive symptoms (per 5 kg/m2 increase in BMI, beta = 0.26 S.D., CI = −0.01,0.52, p=0.06) and ADHD symptoms (beta = 0.38 S.D., CI = 0.09,0.63, p=0.009). These estimates also suggested maternal BMI, or related factors, may independently affect a child’s depressive symptoms (per 5 kg/m2 increase in maternal BMI, beta = 0.11 S.D., CI:0.02,0.09, p=0.01). However, within-family Mendelian randomization using genetic variants associated with retrospectively-reported childhood body size did not support an impact of BMI on these outcomes. There was little evidence from any estimate that the parents’ BMI affected the child’s ADHD symptoms, or that the child’s or parents’ BMI affected the child’s anxiety symptoms.Conclusions:We found inconsistent evidence that a child’s BMI affected their depressive and ADHD symptoms, and little evidence that a child’s BMI affected their anxiety symptoms. There was limited evidence of an influence of parents’ BMI. Genetic studies in samples of unrelated individuals, or using genetic variants associated with adult BMI, may have overestimated the causal effects of a child’s own BMI.Funding:This research was funded by the Health Foundation. It is part of the HARVEST collaboration, supported by the Research Council of Norway. Individual co-author funding: the European Research Council, the South-Eastern Norway Regional Health Authority, the Research Council of Norway, Helse Vest, the Novo Nordisk Foundation, the University of Bergen, the South-Eastern Norway Regional Health Authority, the Trond Mohn Foundation, the Western Norway Regional Health Authority, the Norwegian Diabetes Association, the UK Medical Research Council. The Medical Research Council (MRC) and the University of Bristol support the MRC Integrative Epidemiology Unit.
 
 ## Introduction
 
@@ -52,13 +52,13 @@ However, although MR studies avoid classical confounding and reverse causation, 
 
 ## Methods
 
-## Study population
+### Study population
 
 The Norwegian Mother, Father and Child Cohort Study (MoBa) is a population-based pregnancy cohort study over 114,500 children, 95,200 mothers, and 75,200 fathers conducted by the Norwegian Institute of Public Health (Magnus et al., 2016). Participants were recruited from all over Norway from 1999 to 2008, with 41% of all pregnant women invited consenting to participate. The first child was born in October 1999 and the last in July 2009. The cohort now includes over 114,500 children, 95,200 mothers, and 75,200 fathers (for more details see Appendix 1: MoBa study details). As of May 2022, genotype data which had passed quality control filters was available for 76,577 children, 53,358 fathers, and 77,634 mothers. This analysis was restricted to 40,949 mother-father-child ‘trios’ for whom genetic data were available for all three individuals, and at least one questionnaire had been completed.
 
 The numbers of participants excluded are shown in a STROBE flow chart in Appendix 1—figure 1. From all records in MoBa (N=114,030 after removing consent withdrawals), participants were excluded if the parents had not completed any of the MoBa questionnaires used in imputation models. Of the 104,915 records remaining, there were 40,949 births for which genetic data were available and had passed QC filters for mother, father, and child (for details see Appendix 1: Genotyping and imputation, and Appendix 1: Genetic quality control). Missing values in phenotypic information for these participants were estimated using multiple imputation (details in Appendix 1: Multiple imputation). Related participants were retained, but all models were clustered by genetic family ID derived using KING software (Manichaikul et al., 2010). This genetic family ID groups first, second, and third-degree relatives (i.e. siblings in the parental generation and their children as well as nuclear families), in this way accounting for non-independence of observations.
 
-## Measures
+### Measures
 
 Children’s BMI was calculated from height and weight values reported by mothers when the children were 8 years old. Maternal pre-pregnancy BMI was calculated from height and weight reported at ~17 weeks gestation. Father’s BMI was calculated from self-reported height and weight at ~17 weeks gestation. This information was missing from around 60% of fathers, and in these cases the mother’s report of the father’s height and weight was used instead (observed values of BMI from the two sources were correlated at 0.98). Values of height and weight more than 4 standard-deviations from the mean were treated as outliers and coded to missing.
 
@@ -66,11 +66,11 @@ Depressive, anxiety, and ADHD symptoms were reported by the mother when the chil
 
 Blood samples were obtained from both parents during pregnancy and from mothers and children (umbilical cord) at birth. Details of genotyping and genetic quality control are described in Appendix 1: Genotyping and imputation and Appendix 1: Genetic quality control. Polygenic scores (PGS) for BMI were calculated using SNPs previously associated in GWAS with BMI at p<5.0 × 10–8 and weighted using the individual SNP-coefficients from the GWAS. We first constructed a PGS based on the largest existing GWAS of BMI in adults (Yengo et al., 2018). Since genetic influences on BMI in childhood and adulthood differ (Silventoinen et al., 2016) we also constructed a PGS based on a GWAS of body size in childhood as recalled by adult participants of UK Biobank (Richardson et al., 2020). These SNPs have been shown in external validation samples to predict BMI in childhood better than SNPs associated with adult BMI (Richardson et al., 2020; Brandkvist et al., 2021). From the full GWAS results, we excluded SNPs not available in MoBa, then used the TwoSampleMR package (Hemani et al., 2018b) to identify SNPs independently associated with BMI (with a clumping threshold of r=0.01, LD = 10,000 kb) at p<5.0 × 10–8. This left 954 SNPs associated with adult BMI, and 321 associated with childhood body size. Full details of SNPs included in both PGSs are provided in Supplementary file 1a and b. Equivalent PGSs were derived for depression and ADHD based on SNPs previously associated with these conditions at p<5.0 × 10–8 in GWAS (Wray et al., 2018; Demontis et al., 2019). This was not possible for anxiety, due to few known SNPs associated with these traits at p<0.05 × 10–8. Details of the SNPs in the depression and ADHD PGSs are provided in Supplementary file 1c and d.
 
-## Statistical analysis
+### Statistical analysis
 
 Among trios with genetic data, multiple imputation by chained equations was performed in STATAv16 to estimate missing phenotypic information (details in Appendix 1: Multiple imputation of phenotypes). We used non-genetic linear regression, classic MR, and within-family MR to estimate the effects of the child’s BMI on the following outcomes: depressive, anxiety, and ADHD symptoms, and subdimensions of ADHD (inattention and hyperactivity). Non-genetic regression models were adjusted for child’s sex, year of birth, mother’s and father’s BMI, and likely confounders of observational associations: mother’s and father’s educational qualifications, mother’s and father’s depressive/anxiety symptoms (using selected items from the 25-item Hopkins Checklist Hesbacher et al., 1980) and ADHD symptoms (from the 6-item adult ADHD self-report scale Kessler et al., 2005), mother’s and father’s smoking status during pregnancy, and maternal parity at the child’s birth. For comparability, these models also included all covariates included in genetic models: genotyping centre, genotyping chip, and 20 principal components of ancestry for the child, mother, and father (for detailed information on principal components see Appendix 1: Genetic quality control). All MR models were conducted with two-stage least squares instrumental-variable regression using Stata’s ivregress, with F-statistics and R2 values obtained using ivreg2. Classic MR models, which do not account for parental genotype, used the child’s own PGS but not those of the parents to instrument the child’s BMI. Within-family MR models were multivariable MR models, in which we used PGSs for all members of a child-mother-child trio to instrument the BMI of all three individuals (model equations are provided in Appendix 1: Model equations). Classic and within-family MR models were adjusted for the child’s sex and year of birth, and the genotyping centre, genotyping chip, and the first 20 principal components of ancestry for the child, mother, and father. Given skew in outcomes variables, all models used robust standard errors (Stata’s vce option) and thus made no assumptions about the distribution of outcomes. We report two sets of results, in which either the adult BMI GWAS, or the childhood body size GWAS, was used to create the BMI PGS for the child, mother, and father. Z tests of difference were used to formally compare the classic MR and within-family MR estimates. To assess the extent of assortative mating in the parental generation based on phenotype data, we ran linear regression models of standardized paternal BMI, depressive symptoms, and ADHD symptoms on standardized maternal BMI, depressive symptoms, and ADHD symptoms. We then regressed paternal polygenic scores for BMI, depression, and ADHD on maternal polygenic scores for BMI, depression, and ADHD. All models investigating assortative mating adjusted for both parents’ principal ancestry components and genotyping covariates. We did not examine correlations with polygenic scores for anxiety, due to few known SNPs associated with these traits at p<0.05 × 10–8. All statistical tests were two-tailed.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 To check sensitivity of results to outliers, all analyses were repeated using log-transformed versions of outcome measures (as all symptoms scales began at 0, we added 1 to scores before log-transforming). Genetic studies designed to assess causation can be biased by horizontal pleiotropy (Davies et al., 2018). This is when genetic variants in a polygenic score influence the outcome via pathways which do not involve the exposure. Pleiotropic effects can inflate estimated associations, or bias estimates towards the null. Methods have been developed to test for the presence of horizontal pleiotropy by comparing SNP-specific associations of exposures and outcomes, although these tests themselves rest on assumptions (Hemani et al., 2018a). We therefore performed additional robustness checks based on associations of individual SNPs included in the polygenic scores with BMI in the GWAS, and associations of the same SNPs with each outcome in MoBa. It was not computationally feasible to include individual SNPs in the imputation models, so SNP-outcome associations in MoBa were calculated using unimputed SNP data with imputed outcome data. For robustness checks of classic MR models, SNP-outcome associations were adjusted for the child’s sex and birth year, and the genotyping centre, genotyping chip, and ancestry principal components of the child, mother, and father. For robustness checks of within-family MR models, SNP-outcome associations were adjusted for the child’s sex and birth year, mother’s and father’s genotype, and the genotyping centre, genotyping chip, and principal components of the child, mother, and father. We conducted inverse-variance weighted, MR-Median, MR-Mode, and MR-Egger regression in STATAv16 with the MRRobust package (Spiller et al., 2019). A non-zero intercept from an MR-Egger model indicates presence of horizontal pleiotropy. We repeated main analyses without using imputed data in the sample of participants who had full genetic, exposure, outcome, and covariate data. To explore nonlinearities in associations of BMI with depression, anxiety, and ADHD symptoms, we ran non-genetic models with the child’s BMI divided into quintiles. Finally, MR models were run with additional adjustment for parental education. Attenuation of classic MR estimates in these models would be consistent with confounding by aspects of the family environment linked to parental education.
 
@@ -80,9 +80,208 @@ This analysis was restricted to 40,949 mother-father-child ‘trios’ for whom 
 
 Descriptive statistics of the analytic sample after multiple imputation is presented in Table 1. The mean BMI for children was 16.3 (SD = 2.0), for mothers 24.0 (SD = 4.1), and for fathers 25.9 (SD = 3.2). Corresponding descriptive characteristics from unimputed data are included in Appendix 1—table 2. Both polygenic scores used to instrument BMI were strong instruments, even when used in within-family models. For the adult BMI PGS, conditional first-stage F-statistics for children, mothers, and fathers were 718.7, 1338.2, and 1272.5. The conditional R2 showed that the score explained 1.7%, 3.2%, and 3.0% of the variation in BMI for children, mothers, and fathers respectively. For the childhood body size PGS, conditional first-stage F-statistics were 919.8, 1071.8, and 960.2 for children, mothers, and fathers, with the scores explaining 2.2%, 2.6% and 2.3% of the variation in BMI. The correlation of the polygenic scores for adult BMI and for childhood body size was 0.38 for children, 0.36 for mothers and 0.37 for fathers.
 
-## Associations of BMI with depressive, anxiety, and ADHD symptoms at age 8
+**Table 1.**
+ Descriptive characteristics of analytic sample (N=40,949)*.
 
-## Depressive symptoms (SMFQ)
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Continuous variables</th>
+      <th>mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Maternal age at child’s birth (years)</td>
+      <td>30.2</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Paternal age at birth (years)</td>
+      <td>32.6</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Maternal depressive/anxiety symptoms, Hopkins Symptoms Checklist-25 (SCL-25)†</td>
+      <td>1.2</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td colspan="2">Paternal depressive/anxiety symptoms, Hopkins Symptoms Checklist-25 (SCL-25) ‡</td>
+      <td>1.1</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Maternal ADHD symptoms: adult ADHD self-report scale §</td>
+      <td>6.7</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Paternal ADHD symptoms: adult ADHD self-report scale ¶</td>
+      <td>8.3</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Maternal pre-pregnancy BMI (kg/m2)</td>
+      <td>24.0</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Paternal BMI (kg/m2)</td>
+      <td>25.9</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Child’s BMI at age 8 (kg/m2)</td>
+      <td>16.3</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Child depressive symptoms age 8: Short Mood and Feelings Questionnaire (SMFQ)**</td>
+      <td>1.9</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Child anxiety symptoms age 8: Screen for Child Anxiety Related Disorders (SCARED)††</td>
+      <td>1.0</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Child ADHD symptoms age 8: Parent/Teacher Rating Scale for Disruptive Behaviour Disorders (RS-DBD) ‡ ‡</td>
+      <td>8.6</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Child ADHD symptoms (inattention) age 8: Parent/Teacher Rating Scale for Disruptive Behaviour Disorders (RS-DBD) § §</td>
+      <td>5.0</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Child ADHD symptoms (hyperactivity) age 8: Parent/Teacher Rating Scale for Disruptive Behaviour Disorders (RS-DBD)§ §</td>
+      <td>3.6</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <td>Categorical variables</td>
+      <td colspan="2">Category</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Child’s sex</td>
+      <td colspan="2">Male</td>
+      <td>51.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Female</td>
+      <td>48.9</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Maternal educational qualifications</td>
+      <td colspan="2">9 year elementary education</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Up to 2 years further education</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Further education: vocational</td>
+      <td>12.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Further education: general studies, sixth form</td>
+      <td>14.9</td>
+    </tr>
+    <tr>
+      <td colspan="2">Higher education: college/university, up to 4 years</td>
+      <td>42.8</td>
+    </tr>
+    <tr>
+      <td colspan="2">Higher education: college/university, over 4 years</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Paternal educational qualifications</td>
+      <td colspan="2">9 year elementary education</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Up to 2 years further education</td>
+      <td>5.6</td>
+    </tr>
+    <tr>
+      <td colspan="2">Further education: vocational</td>
+      <td>25.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Further education: general studies, sixth form</td>
+      <td>12.9</td>
+    </tr>
+    <tr>
+      <td colspan="2">Higher education: college/university, up to 4 years</td>
+      <td>28.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Higher education: college/university, over 4 years</td>
+      <td>24.4</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Maternal parity at child’s birth</td>
+      <td colspan="2">0</td>
+      <td>46.8</td>
+    </tr>
+    <tr>
+      <td colspan="2">1</td>
+      <td>35.7</td>
+    </tr>
+    <tr>
+      <td colspan="2">2</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">3+</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td colspan="2">4+</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mother’s marital status at birth</td>
+      <td colspan="2">Married/registered partner</td>
+      <td>97.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">single</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Mother’s smoking status during pregnancy</td>
+      <td colspan="2">never</td>
+      <td>51.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Stopped before week 17</td>
+      <td>42.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Currently, sometimes</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Currently, daily</td>
+      <td>4.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The reasons for exclusions and numbers in each case are shown in Appendix 1—figure 1. Missing data in BMI, outcomes and covariates was imputed using multiple imputation by chained equations. Descriptive statistics for the unimputed data are shown in Appendix 1.†Based on 5 items. Possible range: 0–15.‡Based on 8 items. Possible range: 0–24.§Possible range: 0–24.¶Possible range: 0–24.**Possible range: 0-26.††Possible range: 0–10.‡ ‡Possible range: 0–54.§ §Possible range: 0–27._
+
+### Associations of BMI with depressive, anxiety, and ADHD symptoms at age 8
+
+#### Depressive symptoms (SMFQ)
 
 In adjusted non-genetic regression models (Figure 2, Appendix 1—table 3), children’s higher BMI at age 8 was associated with slightly higher depressive symptoms. Per 5 kg/m2 increase in BMI, SMFQ score was 0.05 standard deviations (SD) higher (95% CI: 0.01,0.09, p=0.02). Classic MR using the adult BMI PGS suggested that for each 5 kg/m2 increase in the child’s BMI, the child’s SMFQ score increased by 0.45 SD (95% CI: 0.26,0.64, p<0.001). Within-family MR using the adult BMI PGS also provided some evidence for an effect (beta: 0.26 SD, 95% CI: –0.01,0.52, p=0.06), but the within-family MR estimate was less precise (70% as precise as the classic MR estimate, and 15% as precise as the OLS estimates, from the ratio of standard errors). A z test for the difference (p=0.26) indicated that the within-family MR estimate was consistent with the classic MR estimate. Using the childhood body size PGS (Figure 3, Appendix 1—table 4) there was little evidence that a child’s own BMI affected their depressive symptoms from either classic MR (beta: 0.08 (95% CI: –0.07,0.22, p=0.29) or within-family MR (beta: 0.02 (95%CI: –0.20,0.23, p=0.88). In summary, evidence for an effect of childhood BMI on depressive symptoms was strongest using the genetic variants for adult BMI.
 
@@ -98,15 +297,15 @@ In adjusted non-genetic regression models (Figure 2, Appendix 1—table 3), chil
 
 **Figure 3.:** Coefficients represent standard-deviation change in outcomes per 5 kg/m2 increase in BMI, shown with 95% confidence intervals.
 
-## Anxiety symptoms (SCARED)
+#### Anxiety symptoms (SCARED)
 
 In non-genetic models (Figure 2, Appendix 1—table 3), each 5 kg/m2 increase in BMI was associated with a 0.07 SD lower (95% CI: −0.11,–0.03, p=0.001) SCARED score. Using the adult BMI PGS, there was little evidence for an effect from classic MR (beta: –0.06, 95% CI: –0.25,0.12, p=0.51), or within-family MR models (beta: 0.01, 95% CI: –0.25,0.29, p=0.96). Again, the within-family MR estimate was less precise than the classic MR estimate (68% as precise), or the OLS estimate (15% as precise), and the classic and within-family MR estimates were consistent (p=0.54). Using the childhood body size PGS (Figure 3, Appendix 1—table 4), MR estimates were similar (classic MR beta: –0.04, 95%: –0.18,0.11, P=0.62, within-family MR beta: 0.02, 95% CI: –0.18,0.22, P=0.83). In summary, there was little evidence from any genetic model that childhood BMI affects anxiety symptoms.
 
-## ADHD symptoms (RS-DBD)
+#### ADHD symptoms (RS-DBD)
 
 In non-genetic models (Figure 2, Appendix 1—table 3) children’s BMI was negatively associated with ADHD symptoms after adjusting for confounders. Per 5 kg/m2 increase in BMI, ADHD symptoms from the RS-DBD were 0.07 SD lower (95% CI: −0.11,–0.03, p=0.001), with similar associations observed for the inattention or hyperactivity subscales (Figure 2, Appendix 1—table 3). Using the adult BMI PGS there was evidence from both classic and within-family MR models of a positive association of BMI and ADHD. In the classic MR model ADHD symptoms were 0.35 SD higher (95% CI: 0.17,0.53, p<0.001) per 5 kg/m2 increase in BMI; the within-family MR estimate, at 0.36 SD (CI: 0.09,0.63, p=0.009) was almost identical (p for difference = 0.95). A similar pattern was seen with the inattention and hyperactivity subscales (Figure 2, Appendix 1—table 3). The within-family MR estimate was again the least precise (65% as precise as the classic MR estimate, 14% as precise as the non-genetic estimate). Using the childhood body size PGS (Figure 3, Appendix 1—table 4) there was little evidence of an association from either classic MR (beta: –0.07, 95% CI: –0.21,0.07, p=0.35) or within-family MR models (beta: –0.03, 95% CI: –0.22,0.17, p=0.80). Thus, as for depressive symptoms, evidence for an effect of childhood BMI on ADHD symptoms was inconsistent and only detected using the adult BMI polygenic score.
 
-## Association of mother’s and father’s BMI with child’s symptoms
+### Association of mother’s and father’s BMI with child’s symptoms
 
 In non-genetic models which adjusted for the child’s BMI as well as covariates, the mother’s BMI was associated with slightly more depressive symptoms in the child (the child’s SMFQ score was 0.05 SD higher (95% CI: 0.03,0.07, p<0.001), per 5 kg/m2 increase in maternal BMI). Maternal BMI was also associated with more ADHD symptoms in the child: the child’s RS-DBD score was 0.04 S.D. higher (95% CI: 0.02,0.06, p<0.001) per 5 kg/m2 increase in maternal BMI, with similar associations for inattention and hyperactivity subscales. No such associations were seen with paternal BMI.
 
@@ -114,7 +313,7 @@ Within-family MR models also provide estimates for the effect of factors linked 
 
 In the parents’ generation, phenotypes were associated within parental pairs, consistent with assortative mating on these traits (Appendix 1—table 5). Adjusted for ancestry and other genetic covariates, maternal and paternal BMI were positively associated (beta: 0.23, 95% CI: 0.22,0.25, p<0.001), as were maternal and paternal depressive symptoms (beta: 0.18, 95% CI: 0.16,0.20, p<0.001), and maternal and paternal ADHD symptoms (beta: 0.11, 95% CI: 0.09,0.13, p<0.001). Consistent with cross-trait assortative mating, there was an association of mother’s BMI with father’s ADHD symptoms (beta: 0.03, 95% CI: 0.02,0.05, p<0.001) and mother’s ADHD symptoms with father’s depressive symptoms (beta: 0.05,95% CI: 0.05,0.06, p<0.001). Phenotypic associations can reflect the influence of one partner on another as well as selection into partnerships, but regression models of paternal polygenic scores on maternal polygenic scores also pointed to a degree of assortative mating. Adjusted for ancestry and genotyping covariates, there were small associations between parents’ BMI polygenic scores (beta: 0.01, 95% CI: 0.00,0.02, p=0.02 for the adult BMI PGS, and beta: 0.01, 95% CI: 0.00,0.02, p=0.008 for the childhood body size PGS), and of the mother’s childhood body size PGS with the father’s ADHD PGS (beta: 0.01, 95% CI: 0.00,0.02, p=0.03). We did not detect associations with pairs of other polygenic scores, which may be due to insufficient statistical power.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 Analyses using log-transformed versions of the outcomes (Appendix 1—Tables 6 and 7) were consistent with main results. Robustness checks based on comparing associations of individual SNPs with BMI in the GWAS and with children’s outcomes in MoBa (Appendix 1—Tables 8 and 9) were consistent with the main results. MR-Egger models found little evidence of horizontal pleiotropy, although MR-Egger estimates were imprecise (Appendix 1—Tables 8 and 9). Results of analyses using the complete-case sample were qualitatively similar to results using imputed data (Appendix 1—Tables 10 and 11). In non-genetic models where the child’s BMI was divided into quintiles (Appendix 1—table 12), there was little evidence of nonlinear associations. With additional adjustment for parental education, point estimates for depressive and ADHD symptoms in classic MR models were closer to the null, but confidence intervals substantially overlapped (Appendix 1—Tables 13 and 14).
 
@@ -130,6 +329,6 @@ Several sources of genetic familial bias may have influenced classic MR estimate
 
 Despite a high participation rate, MoBa is not perfectly representative, and selection biases linked to participation could have affected our results. The current analyses were restricted to families with complete genetic data and at least some relevant questionnaire data. These families were found to have slightly more years of education than the wider MoBa sample, and the children to score slightly lower for depressive, anxiety, and ADHD symptoms. Reflecting the requirement of genetic data for fathers, single mothers were under-represented. Analyses were restricted to individuals of European ancestry, with polygenic scores based on results of GWAS which were also restricted to individuals of European ancestry. Consequently, our results may not be generalisable to other populations. Outcomes were based on mother-reported symptoms of depression, anxiety disorders and ADHD, and estimates based on diagnoses may have differed. However, a child’s sociodemographic characteristics can influence their likelihood of diagnosis independently of symptoms (Thompson et al., 2021), indicating that such an approach is not always preferable. BMI measurements were based on reported height and weight, so reporting bias may have influenced relationships. In many families, fathers’ BMI was based on height and weight reported by the mothers. However, these measures were very highly correlated with father’s self-reports, so additional measurement error is unlikely to have greatly affected our results for father’s BMI. Due to attrition, a substantial proportion of values for the child’s BMI and outcomes were imputed, and we cannot be sure that observations were missing at random conditional on variables included in imputation models. Effects of parental BMI may be time-varying, for example a parent’s own BMI during childhood could influence their child independent of the parent’s later BMI. We could not explore these effects because information on parent’s childhood BMI was not available. Within-family MR may still be affected by horizontal pleiotropy, and recent genetic work points to genetic overlap between BMI and psychiatric disorders including major depression (Bahrami et al., 2020). While robustness checks found little evidence of pleiotropy, these methods rely on assumptions. Moreover, MR-Egger is known to give imprecise estimates (Burgess and Thompson, 2017), and confidence intervals from MR-Egger models were wide. Thus, pleiotropy cannot be ruled out. The Mendelian randomization methods employed here assume any causal impact of BMI is linear – that a kg/m2 increase in BMI will have the same impact regardless of the child’s initial BMI. There is substantial evidence for a ‘J-shaped’ phenotypic association of BMI with common mental disorders, consistent with an impact of both high and low BMI on risk of depression or anxiety (McCrea et al., 2012; Gaysina et al., 2011; Geoffroy et al., 2014). Genetic methods exist for exposures with nonlinear effects but require much larger samples (Sun et al., 2019). If there exist nonlinear effects of BMI on mental health, rather than vice versa, our results may underestimate the effects of high BMI. Finally, the effects of BMI on emotional and behavioural functioning likely differ by age, and relationships may be substantially different for older children or adolescents. In particular, depressive symptoms do not tend to occur until the teenage years (Kwong et al., 2019) and observational associations of BMI and ADHD become clearer with age (Nigg et al., 2016). Work in larger samples of related individuals will be needed to precisely estimate the influence of a child’s BMI on their emotional and behavioural outcomes. In response to a reviewer’s request, we conducted post-hoc power calculations to estimate the minimum effect on the outcomes of the child’s BMI which could be detected with 80% power in a dataset of this size (40,949 trios). Simulations indicated that, using the adult BMI PGS, an effect on each outcome of 0.15 S.D. per 5 kg/m2 could be detected using classic MR, and an effect on each outcome of 0.22 S.D. per 5 kg/m2 using within-family MR. Using the childhood body size PGS, equivalent detectable effects were 0.12 S.D. and 0.16 S.D. per 5 kg/m2. MoBa is currently the largest individual study in which this approach can be applied, but new data are becoming available which will allow analyses of this kind within and across studies, such as through the Within Family Consortium https://www.withinfamilyconsortium.com/home/. Meanwhile, studies with extensive intergenerational information will be needed to fully explore mechanisms linking child outcomes to maternal BMI.
 
-## Conclusion
+### Conclusion
 
 Our results suggest that genetic variation associated with BMI in adulthood affects a child’s depressive and ADHD symptoms, but genetic variation associated with recalled childhood body size does not substantially affect these outcomes. There was little evidence that BMI affects anxiety. However, our estimates were imprecise, and these differences may be due to estimation error. There was little evidence that parental BMI affects a child’s ADHD or anxiety symptoms, but factors associated with maternal BMI may independently influence a child’s depressive symptoms. Genetic studies using unrelated individuals, or polygenic scores for adult BMI, may have overestimated the causal effects of a child’s own BMI.

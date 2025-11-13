@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.10747.001 A common strategy by which bacterial pathogens reside in humans is by shifting from a virulent lifestyle, (systemic infection), to a dormant carrier state. Two major serovars of Salmonella enterica , Typhi and Typhimurium, have evolved a two-component regulatory system to exist inside Salmonella -containing vacuoles in the macrophage, as well as to persist as asymptomatic biofilms in the gallbladder. Here we present evidence that SsrB, a transcriptional regulator encoded on the SPI-2 pathogenicity-island, determines the switch between these two lifestyles by controlling ancestral and horizontally-acquired genes. In the acidic macrophage vacuole, the kinase SsrA phosphorylates SsrB, and SsrB~P relieves silencing of virulence genes and activates their transcription. In the absence of SsrA, unphosphorylated SsrB directs transcription of factors required for biofilm formation specifically by activating csgD ( agfD ), the master biofilm regulator by disrupting the silenced, H-NS-bound promoter. Anti-silencing mechanisms thus control the switch between opposing lifestyles. DOI: http://dx.doi.org/10.7554/eLife.10747.001
+A common strategy by which bacterial pathogens reside in humans is by shifting from a virulent lifestyle, (systemic infection), to a dormant carrier state. Two major serovars of Salmonella enterica, Typhi and Typhimurium, have evolved a two-component regulatory system to exist inside Salmonella-containing vacuoles in the macrophage, as well as to persist as asymptomatic biofilms in the gallbladder. Here we present evidence that SsrB, a transcriptional regulator encoded on the SPI-2 pathogenicity-island, determines the switch between these two lifestyles by controlling ancestral and horizontally-acquired genes. In the acidic macrophage vacuole, the kinase SsrA phosphorylates SsrB, and SsrB~P relieves silencing of virulence genes and activates their transcription. In the absence of SsrA, unphosphorylated SsrB directs transcription of factors required for biofilm formation specifically by activating csgD (agfD), the master biofilm regulator by disrupting the silenced, H-NS-bound promoter. Anti-silencing mechanisms thus control the switch between opposing lifestyles.
 
 ## Introduction
 
@@ -43,27 +43,27 @@ As a result of these studies, we propose that SsrB, a pathogenicity island-2-enc
 
 ## Results
 
-## SsrB supports biofilm formation in the absence of its kinase SsrA
+### SsrB supports biofilm formation in the absence of its kinase SsrA
 
 The SsrA/B TCRS is activated by environmental stimuli such as pH and osmolality, stimulating the expression of virulence genes essential for intra-cellular growth and survival of Salmonella (Feng et al., 2003; 2004). Thus, it was surprising that SsrA/B and SPI-2 were implicated in the multi-cellular lifestyle of Salmonella (Hamilton et al., 2009). Furthermore, the SsrA kinase was required, but SPI-2 genes were down-regulated. At SPI-2, SsrB~P de-represses H-NS and also activates transcription (Walthers et al., 2007; 2011). We therefore wanted to explore this seeming paradox during biofilm regulation.
 
-In order to quantify the defect in biofilm-forming ability resulting from the absence of
+In order to quantify the defect in biofilm-forming ability resulting from the absence of ssrB, the wild type strain 14028s, an ssrA null strain and an ssrB null strain were grown in 96-well polystyrene microtiter plates for 2 days. The surface-attached cells in 14028s, ssrA and ssrB strains were stained by crystal-violet and quantified. As shown in the figure, biofilm levels in the ssrB mutant strain decreased by around 60% compared to the wild type or an ssrA null strain (Figure 1A), and it could be complemented by over-expressing SsrBc in trans. Thus, we establish a new role for SsrB, but not the SsrA kinase in positively regulating biofilm formation. The ssrB strain was not compromised for planktonic growth, as measured by total viable counts of the wild type, ssrA and ssrB cultures (Figure 1—figure supplement 1 and Supplementary methods).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig1-v1.jpg)
 
-**Figure 1.:** ssrB but not ssrA decreases Salmonella Typhimuirum biofilms.(A) The defect in formation of biofilms in the ssrB null was complemented by the overexpression of SsrBc from plasmid pKF104 in trans as measured by crystal violet staining. (B) The typical rdar morphotype of the wild type strain was lost in the ssrB strain as shown on congo red plates. (C) A two day old macrocolony of the ssrB strain is not fluorescent under UV light with Fluorescent Brightener 28. (D) The wild type strain forms thick solid-surface biofilms, while the ssrB strain remains poor for biofilms as monitored for six days by SYTO-9 staining of flow cell biofilms; scale bar = 1 mm. (E) SEM images showing extensive mesh-like network of wild type biofilms and sparse extracellular matrix of the ssrB biofilms; scale bar = 1 µm. (F) The amount of biofilms formed by the wild type strain (solid black bars) increases after 24 hr but the ssrB null (hatched black bars) remains defective up to 84 hr. n = 2, Mean ± SD, p < 0.0001 between wild type and ssrB strains from 36 hr till 84 hr. (G) The amount of cholesterol-attached biofilms formed by the ssrB strain were significantly less than that produced by the wild type. n = 3, Mean ± SD, p < 0.0001. Source data file: Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.10747.00310.7554/eLife.10747.004Figure 1—source data 1.Figure 1A,F and G.DOI: http://dx.doi.org/10.7554/eLife.10747.004
+**Figure 1.:** (A) The defect in formation of biofilms in the ssrB null was complemented by the overexpression of SsrBc from plasmid pKF104 in trans as measured by crystal violet staining. (B) The typical rdar morphotype of the wild type strain was lost in the ssrB strain as shown on congo red plates. (C) A two day old macrocolony of the ssrB strain is not fluorescent under UV light with Fluorescent Brightener 28. (D) The wild type strain forms thick solid-surface biofilms, while the ssrB strain remains poor for biofilms as monitored for six days by SYTO-9 staining of flow cell biofilms; scale bar = 1 mm. (E) SEM images showing extensive mesh-like network of wild type biofilms and sparse extracellular matrix of the ssrB biofilms; scale bar = 1 µm. (F) The amount of biofilms formed by the wild type strain (solid black bars) increases after 24 hr but the ssrB null (hatched black bars) remains defective up to 84 hr. n = 2, Mean ± SD, p < 0.0001 between wild type and ssrB strains from 36 hr till 84 hr. (G) The amount of cholesterol-attached biofilms formed by the ssrB strain were significantly less than that produced by the wild type. n = 3, Mean ± SD, p < 0.0001. Source data file: Figure 1—source data 1.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** ssrB mutant is not defective in growth compared to the wild type strain.Number of colonies formed by the wild type, ssrA, ssrB and D56A strains were the same order of magnitude across all the time points tested. Source data file: Figure 1—figure supplement 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.10747.00510.7554/eLife.10747.006Figure 1—figure supplement 1—source data 1.ssrA, ssrB and D56A strains.DOI: http://dx.doi.org/10.7554/eLife.10747.006
+**Figure 1—figure supplement 1.:** Number of colonies formed by the wild type, ssrA, ssrB and D56A strains were the same order of magnitude across all the time points tested. Source data file: Figure 1—figure supplement 1—source data 1.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** ssrB strain was higher by two orders of magnitude compared to the wild type, ssrA and D56A strains at 2 days.n = 2, Mean ± SD, p < 0.05. Source data file: Figure 1—figure supplement 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.10747.00710.7554/eLife.10747.008Figure 1—figure supplement 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.10747.008
+**Figure 1—figure supplement 2.:** n = 2, Mean ± SD, p < 0.05. Source data file: Figure 1—figure supplement 2—source data 1.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** ssrB strain compared to the wild type, ssrA and D56A strains at 2 days.n = 2, Mean ± SD, p < 0.05 for the ssrB strain versus ssrA/D56A strains and p = 0.08 for the ssrB strain versus wild type. Source data file: Figure 1—figure supplement 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.10747.00910.7554/eLife.10747.010Figure 1—figure supplement 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.10747.010
+**Figure 1—figure supplement 3.:** n = 2, Mean ± SD, p < 0.05 for the ssrB strain versus ssrA/D56A strains and p = 0.08 for the ssrB strain versus wild type. Source data file: Figure 1—figure supplement 3—source data 1.
 
 The ability to form biofilms was analysed for three strains, wild type 14028s, an ssrA null strain and an ssrB null strain, by observing appearance of the rough dry and red (rdar) morphotype on Congo Red plates. After seven days, each of the 14028s and ssrA mutant plates showed the appearance of rough, dry and red macrocolonies. However, the ssrB null strain exhibited a smooth, wet and pale brown morphotype which showed a poor ability to exhibit a multicellular phenotype (Figure 1B). The absence of Congo Red staining in the ssrB strain also indicated that there were greatly reduced levels of extracellular curli fibers in the macrocolony. These fibers form one of the key components of the extra-cellular matrix of a Salmonella biofilm. To examine the levels of cellulose, the other main component of the extra-cellular matrix, the three strains were grown on Calcofluor plates. The macrocolonies formed by 14028s and ssrA appeared white under UV, as cellulose binds the Calcofluor fluorescent dye (Figure 1C). The dull and non-white macrocolony produced by the ssrB null strain was starkly different, indicating again a poor extracellular matrix.
 
@@ -77,15 +77,15 @@ We next investigated the ability of Salmonella to form biofilms, on cholesterol-
 
 Taken together, our results modify the initial hypothesis that SsrA was involved in the formation of biofilms. SsrB, but not its cognate kinase SsrA, is involved in the switch from planktonic growth to a multi-cellular lifestyle, in addition to its role in regulating genes required for pathogenesis.
 
-## Phosporylation of SsrB is not required for biofilm formation
+### Phosporylation of SsrB is not required for biofilm formation
 
 Phospho-relay between the sensor kinase, SsrA, and the response regulator, SsrB, was crucial for activation of SPI-2 virulence genes (Feng et al., 2003). SsrA is a tripartite sensor kinase that is presumably autophosphorylated by ATP at His405, followed by intra-molecular phosphorylation reactions at Asp739 and His867, based on homology to other tripartite kinases. His867 would then participate in the transfer reaction of the phosphoryl group to Asp56 in the N-terminus of SsrB. To confirm that SsrA-dependent phosphorylation was not required for SsrB-mediated regulation of biofilms (Figure 1A–G), we examined biofilm formation of Salmonella strains possessing H405Q, D739A and H867Q mutations in ssrA (Walthers and Kenney unpublished) and compared them to the wild type, ssrA and ssrB null mutants. Figure 3A indicates that the extent of biofilms formed by the three kinase point mutants was comparable to that of the wild type and the ssrA null mutant. A complete loss of ssrB was the only genetic change which adversely affected biofilm formation.
 
-In the absence of SsrA kinase activity, small inorganic phosphate donors such as acetyl phosphate can phosphorylate SsrB, albeit with a lower efficiency (
+In the absence of SsrA kinase activity, small inorganic phosphate donors such as acetyl phosphate can phosphorylate SsrB, albeit with a lower efficiency (Feng et al., 2004). We therefore constructed strains that were deficient in both SsrA kinase activity as well as in the production of acetyl phosphate and assayed their biofilm capabilities. Strains H405Q ack pta, D739A ack pta and H867Q ack pta, were all capable of biofilm formation (Figure 2A), demonstrating that none of the known phosphate donors for SsrB were required for regulating biofilms. In contrast, SPI-2 activation required ssrA, as measurement of β-galactosidase activity of a sifA-lacZ transcriptional fusion confirmed that activation of sifA required SsrA/B phosphorylation (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig2-v1.jpg)
 
-**Figure 2.:** Amount of biofilms formed as measured by crystal violet staining for (A) Strains ssrAH1, ssrAD, ssrAH2, ssrAH1AcP, ssrADAcP, ssrAH2AcP and (B) D56A SsrB shows similar levels to that of the wild type, and higher than the ssrB mutant. Source data file: Figure 2—source data 1. (C) Beta-galactosidase activity of a sifA-lacZ chromosomal fusion was significantly lower in the ssrB null and the D56A SsrB mutant compared to the wild type. n = 3, Mean ± SD, p < 0.0001. Source data file: Figure 2—source data 2.DOI: http://dx.doi.org/10.7554/eLife.10747.01110.7554/eLife.10747.012Figure 2—source data 1.Figure 2A and B.DOI: http://dx.doi.org/10.7554/eLife.10747.01210.7554/eLife.10747.013Figure 2—source data 2.Figure 2C.DOI: http://dx.doi.org/10.7554/eLife.10747.013
+**Figure 2.:** Amount of biofilms formed as measured by crystal violet staining for (A) Strains ssrAH1, ssrAD, ssrAH2, ssrAH1AcP, ssrADAcP, ssrAH2AcP and (B) D56A SsrB shows similar levels to that of the wild type, and higher than the ssrB mutant. Source data file: Figure 2—source data 1. (C) Beta-galactosidase activity of a sifA-lacZ chromosomal fusion was significantly lower in the ssrB null and the D56A SsrB mutant compared to the wild type. n = 3, Mean ± SD, p < 0.0001. Source data file: Figure 2—source data 2.
 
 SsrB is in the NarL subfamily of response regulators. NarL requires phosphorylation to relieve inhibition of C-terminal DNA binding by the N-terminus (Baikalov et al., 1996). Therefore, we substituted the conserved Asp56 residue with Ala (D56A), and determined its ability to form biofilms (Figure 2B). The D56A strain was as competent as the wild type, ssrA null and ssrA kinase mutants in biofilm formation. The ability of unphosphorylated SsrB to regulate biofilm formation was unique, as it was unable to activate sifA-lacZ levels. The beta-galactosidase activity was significantly lower in the ssrB null and D56A strains (8.7% and 14.9%, respectively) compared to the wild type (Figure 2C). The D56A mutant was also able to form rdar macrocolonies on Congo Red plates. In addition, SEM imaging of D56A biofilms revealed that they maintained their intricate architecture and wild type structure (data not shown).
 
@@ -93,93 +93,89 @@ When cultures of the wild type, ssrA, ssrB and D56A strains were separated as a 
 
 Taken together, these results indicate that SsrB can activate biofilm formation in the absence of any phosphorylation signals. This is the first evidence for a role of unphosphorylated SsrB in gene regulation. These results also strongly advocate for a larger contribution of SsrB in Salmonella pathogenesis owing to its dual regulation of intracellular (i.e., the SCV) as well as mutli-cellular lifestyles (the carrier state).
 
-## SsrB-dependent biofilm formation does not require SPI-2
+### SsrB-dependent biofilm formation does not require SPI-2
 
-SsrB is encoded on SPI-2 and regulates SPI-2 genes involved in assembly and function of the type three secretion system encoded by SPI-2, as well as effectors that are encoded on SPI-2 and outside of SPI-2 (
+SsrB is encoded on SPI-2 and regulates SPI-2 genes involved in assembly and function of the type three secretion system encoded by SPI-2, as well as effectors that are encoded on SPI-2 and outside of SPI-2 (Feng et al., 2004; Walthers et al., 2007). To determine whether the SsrB target of biofilm regulation was dependent on the SPI-2 injectisome or any of its secreted SPI-2 effectors, we examined ssaC and ssaJ null strains for their ability to form biofilms (Figure 3A). SsaC is an outer ring component of the injectisome and SsaJ forms the inner ring of the SPI-2 needles. Both of these strains formed biofilms to an extent similar to the wild type and hence, we ruled out any involvement of the SPI-2 secretory apparatus or its related secreted proteins in the SsrB-dependent regulation of Salmonella biofilms.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig3-v1.jpg)
 
-**Figure 3.:** (A) The SPI-2 needle, ssaC and ssaJ mutant strains were not affected in biofilm formation. (B) Over-expression of csgD from a plasmid (pBR328::csgD) in trans rescued biofilm formation in the ssrB mutant, as measured by crystal violet staining, n = 3. Source data file: Figure 3—source data 1. An estimate of csgD expression by (C) Real-time qRT-PCR showed a significant decrease in csgD transcription in the ssrB null, but not in the D56A SsrB and ssrA mutants. rrsA transcript levels were used as control; n = 2, Mean ± SD, p < 0.0001. Source data file: Figure 3—source data 2 and (D) Immunoblot analysis showing the absence of CsgD in the ssrB null strain in two day old biofilms, using GroEL as a loading control.DOI: http://dx.doi.org/10.7554/eLife.10747.01410.7554/eLife.10747.015Figure 3—source data 1.Figure 3A and B.DOI: http://dx.doi.org/10.7554/eLife.10747.01510.7554/eLife.10747.016Figure 3—source data 2.Figure 3C.DOI: http://dx.doi.org/10.7554/eLife.10747.016
+**Figure 3.:** (A) The SPI-2 needle, ssaC and ssaJ mutant strains were not affected in biofilm formation. (B) Over-expression of csgD from a plasmid (pBR328::csgD) in trans rescued biofilm formation in the ssrB mutant, as measured by crystal violet staining, n = 3. Source data file: Figure 3—source data 1. An estimate of csgD expression by (C) Real-time qRT-PCR showed a significant decrease in csgD transcription in the ssrB null, but not in the D56A SsrB and ssrA mutants. rrsA transcript levels were used as control; n = 2, Mean ± SD, p < 0.0001. Source data file: Figure 3—source data 2 and (D) Immunoblot analysis showing the absence of CsgD in the ssrB null strain in two day old biofilms, using GroEL as a loading control.
 
-## Unphosphorylated SsrB activates csgD expression
+### Unphosphorylated SsrB activates csgD expression
 
 Biofilm formation in Escherichia coli and Salmonella Typhimurium is governed by the master regulator, CsgD, that acts as a transcriptional activator of genes involved in curli biogenesis and cellulose synthesis. Some of the environmental conditions that favor the formation of biofilms in Salmonella such as low salt and acidic pH also up-regulate levels of SsrB in the cell (Feng et al., 2003). An obvious null hypothesis was therefore to test whether SsrB (in its unphosphorylated state), activated the expression of csgD. We first over-expressed csgD from a plasmid in the ssrB null mutant and determined whether it could rescue the defect in biofilm formation. The presence of csgD in trans restored the biofilm capability to wild type levels as measured by crystal-violet staining of 2 day old biofilms (Figure 3B).
 
 We next examined the levels of csgD transcripts in 2 day macrocolonies formed by the wild type, ssrA null, ssrB null and D56A strains by quantitative real time RT-PCR (qRT-PCR). As shown in Figure 3C, there was around a 60-fold decrease in csgD transcripts when ssrB was deleted (Figure 3C). We also corroborated our previous findings (Figure 1A and 2B), as csgD transcripts in the ssrA null and D56A strains were maintained at levels similar to the wild type. Furthermore, we probed the whole-cell lysates obtained from such macrocolonies with a monoclonal anti-CsgD antibody in order to measure the CsgD protein levels by western blotting. CsgD levels were undetected in the ssrB null compared to the wild type, ssrA null or D56A strains (Figure 3D). Hence, unphoshorylated SsrB was able to up-regulate the expression of csgD and positively influence the shift to a sessile lifestyle.
 
-## SsrB and H-NS differentially regulate csgD expression
+### SsrB and H-NS differentially regulate csgD expression
 
 Both in E. coli and S. Typhimurium, the expression of csgD is sensitive to various environmental stimuli such as starvation, temperature, pH and osmolality due to the action of upstream global regulators at the intergenic region of the csgDEFG and csgBAC operons. We noted that the SsrA/B system also responded to similar environmental conditions such as acidic pH and low osmolality. Furthermore, H-NS, a known repressor of SPI-2 genes (Walthers et al., 2007), was also known to regulate the expression of csgD in E. coli and S. Typhimurium (Ogasawara et al., 2010; Gerstel et al., 2003). In regulating SPI-2 genes, SsrBc and H-NS work in an opposing fashion (Walthers et al., 2011). SsrBc antagonises the repressive action of H-NS at regulatory regions upstream of the promoters, while also acting as a direct transcriptional activator. We therefore examined whether or not this paradigm for SsrB-mediated transcriptional activation was applicable to csgD regulation.
 
-In order to test this, we completely deleted
+In order to test this, we completely deleted hns from the ssrB null strain and determined if its deletion rescued biofilm formation. Crystal-violet staining of static biofilms formed by the wild type, ssrB and ssrB hns strains was performed; the amount of biofilms formed by ssrB hns was the same as the wild type. In contrast, the ssrB null strain remained at around 35% of these levels (Figure 4A). Macrocolonies formed by the ssrB hns strain also displayed a rugose morphology, reminiscent of the wild type strain after 2 days (Figure 4B). In addition, SEM images of 2 day-old biofilms formed by the ssrB hns strain showed a typical ‘biofilm’ architecture, i.e., densely packed communites of cells surrounded by biofilm matrix (Figure 4C). This result indicated that H-NS was functioning to repress csgD (see Discussion). Thus, we strengthened our prediction of a role for SsrB in the activation of csgD expression by acting as an anti-H-NS molecule.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig4-v1.jpg)
 
-**Figure 4.:** hns deletion rescues biofilm formation in the ssrB mutant as shown by Crystal violet staining.(A) The amount of biofilms formed is higher in the wild type, hns and ssrB hns strains compared to the ssrB null, n = 3, Mean ± SD, p < 0.0001. Source data file: Figure 4—source data 1. Macrocolony phenotype (B) ssrB hns forms a highly rugose and dry macrocolony, while the ssrB macrocolony was smooth and mucoidy. SEM imaging (C) ssrB hns biofilms were covered by a thick extra-cellular matrix; scale bar = 2 µm. (D) qRT-PCR: csgD levels were restored in the ssrB hns strain and were higher than the wild type (p < 0.03) and the ssrB mutant (p < 0.003) against rrsA transcripts as a control. Note that the normalized csgD levels in the ssrB null were 0.0009, too low for the scale. n = 2, Mean ± SD. Source data file: Source data file: Figure 4—source data 2.DOI: http://dx.doi.org/10.7554/eLife.10747.01710.7554/eLife.10747.018Figure 4—source data 1.Figure 4A.DOI: http://dx.doi.org/10.7554/eLife.10747.01810.7554/eLife.10747.019Figure 4—source data 2.Figure 4D.DOI: http://dx.doi.org/10.7554/eLife.10747.019
+**Figure 4.:** (A) The amount of biofilms formed is higher in the wild type, hns and ssrB hns strains compared to the ssrB null, n = 3, Mean ± SD, p < 0.0001. Source data file: Figure 4—source data 1. Macrocolony phenotype (B) ssrB hns forms a highly rugose and dry macrocolony, while the ssrB macrocolony was smooth and mucoidy. SEM imaging (C) ssrB hns biofilms were covered by a thick extra-cellular matrix; scale bar = 2 µm. (D) qRT-PCR: csgD levels were restored in the ssrB hns strain and were higher than the wild type (p < 0.03) and the ssrB mutant (p < 0.003) against rrsA transcripts as a control. Note that the normalized csgD levels in the ssrB null were 0.0009, too low for the scale. n = 2, Mean ± SD. Source data file: Source data file: Figure 4—source data 2.
 
 We next examined the levels of csgD transcripts in mature biofilms formed by the wild type, ssrB null, hns null and ssrB hns null strains by qRT-PCR (Figure 4D). Normalized levels of csgD transcripts were highly up-regulated in the ssrB hns double mutant compared to the ssrB null strain, indicating that the loss of H-NS repression rescued the defect in csgD expression in the absence of SsrB. Expression of csgD was slightly higher than the wild type levels in the hns single mutant and the ssrB hns double mutant, which also correlated with their biofilm capabilities (Figure 4A). Since the levels of csgD transcripts were equal in the hns and ssrB hns null strains, it seemed likely that SsrB influenced csgD expression by silencing H-NS-mediated repression and not by direct activation of transcription, which requires phosphorylation for a productive interaction with RNA polymerase (Walthers et al., 2011).
 
 Taken together, these results identified a regulatory role for unphosphorylated SsrB by orchestrating anti-silencing at the H-NS-repressed csgD locus. This work clearly shows that, as observed in E. coli, H-NS represses expression of csgD in Salmonella (see Discussion).
 
-## Unphosphorylated SsrB binds to the csgD regulatory region
+### Unphosphorylated SsrB binds to the csgD regulatory region
 
-SsrB is a NarL family member and X-ray crystallography suggested that phosphorylation was required for DNA binding (
+SsrB is a NarL family member and X-ray crystallography suggested that phosphorylation was required for DNA binding (Baikalov et al., 1996). Thus, it was of interest to determine how SsrB relieved H-NS silencing at csgD. We used atomic force microscopy (AFM) to visualize the csgDEFG-csgBAC intergenic region and examined the effect of addition of full-length SsrB, D56A SsrB and SsrBc (DNA binding domain alone). Surprisingly, we observed binding of SsrB, D56A SsrB and SsrBc to distinct regions of the csgD regulatory region (Figure 5B and Figure 5—figure supplement 1A and B). Binding occured at low protein concentrations, suggesting high affinity interactions and showed that unphosphorylated SsrB was capable of binding csgD. An SsrB mutant, K179A, that was incapable of binding DNA (Carroll et al., 2009) did not bind csgD even at 300 nM, indicting that binding was specific (Figure 5E and F). Closer examination revealed a sharp curvature at the regions where SsrB was bound to csgD (Figure 5B, arrows). This result indicates that, like its NarL homologue (Maris et al., 2002), SsrB bends DNA upon binding, as predicted (Carroll et al., 2009). We estimate that on average, binding of SsrB to the csgDEFG-csgBAC intergenic sequence occurred with a bending angle of around 82° (Figure 5D and Figure 5—figure supplement 2 for naked DNA). The observation that SsrB bending was more severe than NarL (82° compared to the 42° of NarLc at its cognate palindrome) (Maris et al., 2002), likely contributes to its ability to promote anti-silencing.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig5-v1.jpg)
 
-**Figure 5.:** csgD.(A) AFM images of the 755 bp csgD regulatory region (csgD). (755B) At 120 nM SsrB, distinct areas of SsrB binding were visualized as sharp bends (yellow arrows). (C) At 300 nM SsrB, areas of condensation (pink arrows) were observed. (D) Binding of SsrB bends the DNA by an average angle of 82º (for the naked DNA angle, refer to Figure 5—figure supplement 2 and for analysis refer to Supplementary method), Scale bar = 200 nm as in (A). (E) and (F) The SsrB mutant, K179A SsrB, which is defective in DNA binding, was unable to bind csgD both at 30 nM or 300 nM; Scale bar = 200 nm.755DOI: http://dx.doi.org/10.7554/eLife.10747.020
+**Figure 5.:** (A) AFM images of the 755 bp csgD regulatory region (csgD755). (B) At 120 nM SsrB, distinct areas of SsrB binding were visualized as sharp bends (yellow arrows). (C) At 300 nM SsrB, areas of condensation (pink arrows) were observed. (D) Binding of SsrB bends the DNA by an average angle of 82º (for the naked DNA angle, refer to Figure 5—figure supplement 2 and for analysis refer to Supplementary method), Scale bar = 200 nm as in (A). (E) and (F) The SsrB mutant, K179A SsrB, which is defective in DNA binding, was unable to bind csgD755 both at 30 nM or 300 nM; Scale bar = 200 nm.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** csgD regulatory region (csgD) (755A) with 120 nM D56ASsrB and (B) SsrBc.Distinct areas of binding were visualized as sharp bends (yellow arrows) and as areas of condensation (pink arrows) at 300 nM D56A SsrB (C) and SsrBc (D); Scale bar = 200 nm as in Figure 5A.DOI: http://dx.doi.org/10.7554/eLife.10747.021
+**Figure 5—figure supplement 1.:** Distinct areas of binding were visualized as sharp bends (yellow arrows) and as areas of condensation (pink arrows) at 300 nM D56A SsrB (C) and SsrBc (D); Scale bar = 200 nm as in Figure 5A.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** csgD fragment.755DOI: http://dx.doi.org/10.7554/eLife.10747.022
-
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** csgD regulatory region, csgD, showing a DNA-protein complex in the presence of SsrB.122The K179A SsrB mutant did not bind to csgD. Addition of competitor unlabelled 122csgD fragment decreased the SsrB-DNA complex as apparent by an increase in free, labelled 122csgD.122DOI: http://dx.doi.org/10.7554/eLife.10747.023
+**Figure 5—figure supplement 3.:** The K179A SsrB mutant did not bind to csgD122. Addition of competitor unlabelled csgD122 fragment decreased the SsrB-DNA complex as apparent by an increase in free, labelled csgD122.
 
 When the SsrB concentration was increased to 300 nM, we detected large-scale condensation of the DNA-protein complexes by AFM (Figure 5C). Condensation at the csgD regulatory region was similar when incubated with 300 nM D56A SsrB or SsrBc, indicating that protein binding led to DNA structural changes, irrespective of whether SsrB was phosphorylated (Figure 5—figure supplement 1C and D). Biochemical analysis of the protein-DNA complexes by an electrophoretic mobility shift assay using a shorter fagment of the csgD regulatory region (Figure 6—figure supplement 4), also indicated the presence of an SsrB-DNA complex. This complex was dissociated when an unlablelled csgD fragment was added as a competitor. In contrast, K179A SsrB failed to form a complex with DNA (Figure 5—figure supplement 3). The DNA bending ability of SsrB is important for SsrB relief of H-NS-mediated transcriptional silencing at csgD (see below and [Winardhi et al., 2015]). The DNA binding behavior of SsrB was recapitulated in solution AFM imaging experiments, indicating that binding and condensation were not an artifact of drying the samples (Figure 6—figure supplement 1C).
 
-## SsrB binds an H-NS stiffened nucleoprotein filament at csgD
+### SsrB binds an H-NS stiffened nucleoprotein filament at csgD
 
 Our previous work established that H-NS silenced genes by forming a rigid filament on DNA (Liu et al., 2010; Walthers et al., 2011; Lim et al., 2012). We purified H-NS, incubated it with the csgD regulatory region, and immobilised it on a glass coverslip. Subsequent AFM imaging indicated the presence of a straight and rigid nucleoprotein filament (Figure 6A(i)), which was distinct from the random conformation adopted by naked DNA (Figure 5A). Thus, we reaffirmed our earlier observations that H-NS repressed expression of csgD by filament formation, leading to transcriptional silencing (Figure 4D).
 
-When we pre-formed stiffened filaments by addition of H-NS and then added SsrB, evidence of SsrB condensation was immediately apparent (
+When we pre-formed stiffened filaments by addition of H-NS and then added SsrB, evidence of SsrB condensation was immediately apparent (Figure 6A(ii)). For example, areas of SsrB binding to DNA led to the formation of condensed nucleoprotein complexes and abolished the prior structural rigidity introduced by H-NS binding (see arrows, Figure 6A(ii)). Interestingly, Figure 6A(ii) also indicates that H-NS continued to form straight nucleoprotein complexes in regions devoid of SsrB (yellow line), i.e. H-NS was still bound to some regions of DNA when SsrB was also bound. Similar binding behavior with D56A SsrB and SsrBc at the H-NS-bound csgD regulatory region was also observed (Figure 6—figure supplement 2A and B), and similar binding patterns were observed in solution AFM (Figure 6—figure supplement 1B–D). This combined nucleoprotein complex was also detected as a supershift by electrophoretic mobility shift assay using a shorter fragment of the csgD regulatory region and specific concenterations of H-NS, SsrB and anti-SsrBc serum (Figure 6—figure supplement 3). This csgD regulatory element harbored the H-NS binding region (Gerstel et al., 2003) as well as an SsrB binding motif (Feng et al., 2004; refer Figure 6—figure supplement 4). Thus, unphosphorylated SsrB can bind to the csgD regulatory region when it has been coated with the repressor H-NS. Anti-silencing results from SsrB-induced local topological changes in the DNA, in part as a result of its bending ability (Figure 6B). This likely provides enough free DNA to enable access to the promoter for RNA polymerase to activate transcription.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig6-v1.jpg)
 
-**Figure 6.:** csgD DNA.(A) (i) AFM imaging in the presence of 600 nM H-NS shows a straight and rigid filament on csgD (ii) Addition of 600 nM SsrB to the H-NS bound 755.csgD DNA resulted in areas of condensation (pink arrows; an ‘SsrB signature’) along with a few areas where the straight H-NS bound conformation persisted (yellow line; an ‘H-NS signature’); Scale bar = 200 nm as in Figure 5A. (B) A model for the mechanism of anti-silencing by SsrB at csgD wherein SsrB likely displaces H-NS from the ends of a stiffened nucleoprotein filament and relieves the blockade on the promoter for RNA polymerase to activate transcription. For details refer to (Winardhi et al., 2015).DOI: http://dx.doi.org/10.7554/eLife.10747.024
+**Figure 6.:** (A) (i) AFM imaging in the presence of 600 nM H-NS shows a straight and rigid filament on csgD755. (ii) Addition of 600 nM SsrB to the H-NS bound csgD DNA resulted in areas of condensation (pink arrows; an ‘SsrB signature’) along with a few areas where the straight H-NS bound conformation persisted (yellow line; an ‘H-NS signature’); Scale bar = 200 nm as in Figure 5A. (B) A model for the mechanism of anti-silencing by SsrB at csgD wherein SsrB likely displaces H-NS from the ends of a stiffened nucleoprotein filament and relieves the blockade on the promoter for RNA polymerase to activate transcription. For details refer to (Winardhi et al., 2015).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** A) the 755 bp csgD regulatory region.(B) In the presence of 600 nM H-NS, a straight and rigid filament was observed (yellow line). (C) In the presence of 300 nM SsrB, areas of condensation were evident (pink arrow). (D) Addition of 600 nM SsrB to the H-NS bound csgD DNA resulted in areas of condensation (pink arrows; an ‘SsrB signature’) along with a few areas where the straight H-NS bound conformation persisted (yellow line; an ‘H-NS signature’); Scale bar = 200 nm.DOI: http://dx.doi.org/10.7554/eLife.10747.025
+**Figure 6—figure supplement 1.:** (B) In the presence of 600 nM H-NS, a straight and rigid filament was observed (yellow line). (C) In the presence of 300 nM SsrB, areas of condensation were evident (pink arrow). (D) Addition of 600 nM SsrB to the H-NS bound csgD DNA resulted in areas of condensation (pink arrows; an ‘SsrB signature’) along with a few areas where the straight H-NS bound conformation persisted (yellow line; an ‘H-NS signature’); Scale bar = 200 nm.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** csgD DNA.AFM imaging in the presence of H-NS shows areas of condensation upon addition of (A) 600 nM D56ASsrB and (B) 600 nM SsrBc; Scale bar = 200 nm as in Figure 5A.DOI: http://dx.doi.org/10.7554/eLife.10747.026
+**Figure 6—figure supplement 2.:** AFM imaging in the presence of H-NS shows areas of condensation upon addition of (A) 600 nM D56ASsrB and (B) 600 nM SsrBc; Scale bar = 200 nm as in Figure 5A.
 
 ![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig6-figsupp3-v1.jpg)
 
-**Figure 6—figure supplement 3.:** csgD.Electrophoretic mobility shift assay with the 122 bp csgD regulatory region, csgD (left to right); in the presence of SsrB and H-NS, the DNA-protein complex (*) is super-shifted in the presence of anti-SsrBc serum (**). A DNA-protein complex is also observed when SsrB and H-NS were present alone. Note the absence of any complex in a control reaction with 122csgD and anti-SsrBc, while anti-SsrBc recognizes the SsrB-122csgD complex.122DOI: http://dx.doi.org/10.7554/eLife.10747.027
+**Figure 6—figure supplement 3.:** Electrophoretic mobility shift assay with the 122 bp csgD regulatory region, csgD122 (left to right); in the presence of SsrB and H-NS, the DNA-protein complex (*) is super-shifted in the presence of anti-SsrBc serum (**). A DNA-protein complex is also observed when SsrB and H-NS were present alone. Note the absence of any complex in a control reaction with csgD122 and anti-SsrBc, while anti-SsrBc recognizes the SsrB-csgD122 complex.
 
 ![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig6-figsupp4-v1.jpg)
-
-**Figure 6—figure supplement 4.:** csgD regulatory region indicating the H-NS binding region according to Gerstel et al. (2003); and the SsrB binding motif as found by Feng et al. (2004).DOI: http://dx.doi.org/10.7554/eLife.10747.028
 
 ## Discussion
 
 Pathogenic microbes constantly evolve novel means to counter the multitude of challenges posed by complex eukaryotic hosts. Successful acquisition and integeration of laterally acquired genes into the native genome of pathogens leads to novel capabilities enabling their survival in a wide range of environmental stresses. The present work demonstrates how the presence or absence of the horizontally acquired SsrA kinase controls post-translational modification of the transcription factor SsrB (i.e. phosphorylation at aspartate-56). This event controls the fate of Salmonella Typhimurium, resulting in either acute or chronic, but asymptomatic infection. A variation on two-component signaling in a similar lifestyle fate in Pseudomonas aeruginosa involved the presence or absence of the hybrid kinase RetS (Goodman et al., 2004).
 
-## SsrB sits at a pivotal decision point that determines Salmonella lifestyles
+### SsrB sits at a pivotal decision point that determines Salmonella lifestyles
 
 When the SsrA kinase is present and activated by acid stress, SsrB is phosphorylated and SsrB~P de-represses H-NS and activates transcription at SPI-2 and SPI-2 co-regulated genes, including: sifA (Walthers et al., 2011), ssaB, ssaM, sseA and ssaG (Walthers et al., 2007). In the absence of the SsrA kinase, SsrB is not phosphorylated, but it can counter H-NS silencing at csgD (Figure 4A–D and Figure 6A). SsrB binding and bending at the csgD promoter causes a sufficient change in the DNA secondary structure (Figure 5B,C) that likely enables access for RNA polymerase, stimulating csgD transcription. It is interesting to note that SsrB is located on the SPI-2 pathogenicity island, and thus was acquired as Salmonella enterica diverged from Salmonella bongori. However, the capability to form biofilms is an ancestral trait, as phylogeny studies have shown that most of the natural or clinical isolates of Salmonella belonging to all the five sub-groups form rdar colonies (White and Surette, 2006). The SsrB response regulator can control two distinct lifestyle choices: the ability to assemble a type three secretory system and survive in the macrophage vacuole or the ability to form biofilms on gallstones in the gall bladder to establish the carrier state.
 
 What then controls the presence or activation of the kinase SsrA? Our early experiments indicated that SsrA and SsrB were uncoupled from one another (i.e., SsrB was present in the absence of SsrA) and ssrA transcription was completely dependent on OmpR (Feng et al., 2004). The EnvZ/OmpR system is stimulated by a decrease in cytoplasmic pH when Salmonella enters the macrophage vacuole (Chakraborty et al., 2015). This may also be the stimulus for activating SsrA, since the Salmonella cytoplasm acidifies to pH 5.6 during infection and the cytoplasmic domain of EnvZ (EnvZc) was sufficient for signal transduction (Wang et al., 2012; Chakraborty et al., 2015). Previous reports also identified a role for PhoP in ssrA translation (Bijlsma and Groisman, 2005), which would further add to fluctuating SsrA levels. The present work describes a novel role for the unphosphorylated response regulator SsrB in de-repressing H-NS (Figure 6B). We show that under biofilm-inducing conditions, unphosphorylated SsrB is sufficient to activate the expression of csgD. There are only a few such examples of unphosphorylated response regulators playing a role in transcription such as DegU (Dahl et al., 1992) in Bacillus subtilis and RcsB (Latasa et al., 2012) in S. Typhimurium.
 
-## The importance of anti-silencing in gene regulation
+### The importance of anti-silencing in gene regulation
 
 In recent years, it has become apparent that H-NS silences pathogenicity island genes in Salmonella (Lucchini et al., 2006; Navarre et al., 2006; Walthers et al., 2007; 2011). Understanding how H-NS silences genes and how this silencing is relieved is an active area of research (Will et al., 2015; Winardhi et al., 2015). Because the anti-silencing style of gene regulation is indirect and does not rely on specific DNA interactions, searching for SsrB binding sites has not been informative in uncovering this type of regulation (Tomljenovic-Berube et al., 2010; Worley et al., 2000; Shea et al., 1996). Even a recent report in which the proteomes of wild type, hilA null (a transcriptional regulator of SPI-1 genes) and ssrB null were analyzed by SILAC and compared with an existing CHIP dataset failed to identify csgD as an SsrB-regulated locus (Brown et al., 2014), as sequence gazing alone does not help in identifying mechanisms of transcriptional regulation.
 
@@ -187,7 +183,7 @@ SsrB is well suited to this style of regulation, because it does not recognize a
 
 SsrB binds and bends DNA, resulting in highly curved DNA conformations. This DNA binding property of SsrB is distinct from H-NS, which forms rigid nucleoprotein filaments and thus straight DNA conformations (Figure 6A(i)). Bent DNA is therefore an energetically unfavorable substrate for H-NS binding, and a likely mechanism of SsrB-mediated anti-silencing of H-NS repressed genes. SsrB-dependent displacement of H-NS is more energetically favored to occur predominantly at the ends of H-NS-bound filaments, which requires disruption of fewer H-NS protein-protein interactions (Winardhi et al., 2015 and Figure 6B). In an equal mixture of H-NS and SsrB (Figure 6A(ii)), we do not see evidence of sharply bent filaments. This is expected because H-NS dissociation is likely restricted to the filament ends. Such events occur due to the cooperative nature of H-NS binding that results in a chain of linked H-NS proteins. Hence, H-NS displacement by SsrB likely occurs progressively from the filament end. This behavior has been observed in our single-molecule stretching experiments with H-NS filaments in the presence of SsrB. This ability of H-NS to re-orient on the DNA without being released would also promote its re-binding and silencing when SsrB or other anti-silencers are released (Figure 6B).
 
-## Structural homology does not indicate functional homology
+### Structural homology does not indicate functional homology
 
 Response regulators are grouped into subfamilies on the basis of the structures of their DNA binding domains. SsrB is in the NarL/FixJ subfamily, which possess a helix-turn-helix (HTH) motif in the C-terminus (Baikalov et al., 1996). NarL was the first full-length structure of a response regulator and it showed that the N-terminal phosphorylation domain physically blocked the recognition helix in the HTH motif (Maris et al., 2002). Thus, phosphorylation is required to relieve the inhibition of the N-terminus. In the results presented herein, it is apparent that SsrB has adapted to relieving H-NS-silencing and that phosphorylation is not required for this behavior, nor is it required for DNA binding (Figure 5B).
 
@@ -195,82 +191,302 @@ In summary, we showed that the response regulator SsrB is required for biofilm f
 
 ## Materials and methods
 
-## Bacterial growth and media
+### Bacterial growth and media
 
-The bacterial strains and plasmids used in this study are listed in Table 1. Salmonella enterica serovar Typhimurium strains were grown in LB medium with shaking at 37°C in the presence of 100 μg/ml ampicillin, 12.5 μg/ml Tetracycline (Tet) or 50 μg/ml Kanamycin (Km) when necessary. For observing the rdar morphotype, plates of LB medium (without salt) containing 1% Tryptone and 0.5% Yeast Extract supplemented with congo red (40 μg/ml) (Sigma-Aldrich, Singapore) were prepared and kept at 30°C after inoculation. To detect cellulose production, LB without salt medium plates were supplemented with Fluorescent Brightener 28 (200 μg/ml) (Sigma-Aldrich), stored under darkness and observed under UV light after incubating at 30°C. For the SsrBc complementation test using the plasmid pKF104, 0.2% arabinose was added to the medium.10.7554/eLife.10747.029Table 1.List of Bacterial strains and plasmids.DOI: http://dx.doi.org/10.7554/eLife.10747.029StrainDescription/NomenclatureReferencewild typeSalmonella enterica serovar Typhimurium strain 14028sLab strain collectionssrAssrA::TetRA derivative of 14028sThis workssrBDW85Don Walthers (originally from Stephen Libby)ssaCssaC::TetRA derivative of 14028sChakraborty et al. (2015)ssaJssaJ::TetRA derivative of 14028sHideaki Mizusaki unpublishedD56AD56A SsrB derivative of 14028sThis workssrAH1DW748Don Walthers unpublishedssrADDW749Don Walthers unpublishedssrAH2DW750This workssrAH1 sifA-LacZMade by transducing sifA-lacZ from DW636 to DW748This workssrAD sifA-lacZMade by transducing sifA-lacZ from DW636 to DW749This workssrAH2 sifA-lacZMade by transducing sifA-lacZ from DW636 to DW750Don Walthers; Lab strain collectionDW636sifA-lacZ at attP site in 14028sDon Walthers; Lab strain collectionDW637ssrB::Km derivative of DW636This work/Don Walthers (lab strain collection)ssrAH1 AcPackA-pta::Km (from DW142) transduced in DW748This work/Don Walthers (lab strain collection)ssrAD AcPackA-pta::Km (from DW142) transduced in DW749This work/Don Walthers (lab strain collection)ssrAH2 AcPackA-pta::Km (from DW142) transduced in DW750This work/Don Walthers (lab strain collection)hnshns::TetRA derivative of DW636This work/Don Walthers (lab strain collection)hns ssrBhns::TetRA derivative of DW637This work/Don Walthers (lab strain collection)Plasmid pKF46D56A His-SsrB pMpM-A5Ω constructFeng et al. (2004)Plasmid pKF43His-SsrB pMpM-A5Ω constructFeng et al. (2004)Transformant DW160DH5α harboring His-HNS (S. typhimurium) in pMpM-A5ΩWalthers et al. (2011)Plasmid pKF104His-SsrBc pMpM-A5Ω constructFeng et al. (2004)pBR328::csgDcsgD constructProf Iñigo Lasa’s groupPlasmid pRC24K179A His-SsrB pMpM-A5Ω constructCarroll et al. (2009)
+The bacterial strains and plasmids used in this study are listed in Table 1. Salmonella enterica serovar Typhimurium strains were grown in LB medium with shaking at 37°C in the presence of 100 μg/ml ampicillin, 12.5 μg/ml Tetracycline (Tet) or 50 μg/ml Kanamycin (Km) when necessary. For observing the rdar morphotype, plates of LB medium (without salt) containing 1% Tryptone and 0.5% Yeast Extract supplemented with congo red (40 μg/ml) (Sigma-Aldrich, Singapore) were prepared and kept at 30°C after inoculation. To detect cellulose production, LB without salt medium plates were supplemented with Fluorescent Brightener 28 (200 μg/ml) (Sigma-Aldrich), stored under darkness and observed under UV light after incubating at 30°C. For the SsrBc complementation test using the plasmid pKF104, 0.2% arabinose was added to the medium.
 
-## Molecular biology techniques
+**Table 1.**
+ List of Bacterial strains and plasmids.
 
-All DNA manipulation procedures were carried out according to (Sambrook, 1989) using reagents procured from Qiagen, Invitrogen or Fermentas, Singapore. Transformation in S. Typhimurium strains was performed by standard electroporation protocols (Sambrook, 1989). Polymerase chain reaction (PCR) was carried out using oligonucleotides as listed in the Table 2 following standard protocols (Sambrook, 1989).10.7554/eLife.10747.030Table 2.List of oligonucleotides.DOI: http://dx.doi.org/10.7554/eLife.10747.030Purpose/nameSequence (5’-3’)Digf (forward 755bp csgD regulatory region)tgatgaaactccactttttttaDigr (reverse 755bp csgD regulatory region)tgctgtcaccctggacctggtcssrA knockout (forward)atgaatttgctcaatctcaagaatacgctgcaaacatctt ttaagacccactttcacattssrA knockout (reverse)agccgatacggcattttcaatatcagccagcaagaggtcc ctaagcacttgtctcctgcsg1 (forward csgD internal)ggaagatatctcggccggttgccsg2 (reverse csgD internal)tcagcctagggataatcgtcagrrsA1 (forward rrsA internal)gcaccggctaactccgtgccrrsA2 (reverse rrsA internal)gcagttcccaggttgagcccgPSsrBF (forward for pKF46)atgaaagaatataagatcttatPSsrBTR (hybrid reverse for pKF46)ttaatactctaattaacctcattcttcgggcacagttaagtctaagcacttgtctcctgTSsrBF (forward TetRA-ssrB)acttaactgtgcccgaagaatgaggttaatagagtattaattaagacccactttcacattTSsrBR (reverse TetRA- after ssrB stop)catcaaaatatgaccaatgcttaataccatcggacgcccctggctaagcacttgtctcctgDigb (Forward for EMSA)Biotin- tgatgaaactccactttttttaCsgDigRS (Reverse for EMSA)aatatttttctctttctggatahns knockout (forward)gctcaacaaaccaccccaatataagtttggattactacattaagacccactttcacatthns knockout (reverse)atcccgccagcggcgggattttaagcatccaggaagtaaactaagcacttgtctcctg
 
-## Strain construction
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Description/Nomenclature</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wild type</td>
+      <td>Salmonella enterica serovar Typhimurium strain 14028s</td>
+      <td>Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>ssrA</td>
+      <td>ssrA::TetRA derivative of 14028s</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>ssrB</td>
+      <td>DW85</td>
+      <td>Don Walthers (originally from Stephen Libby)</td>
+    </tr>
+    <tr>
+      <td>ssaC</td>
+      <td>ssaC::TetRA derivative of 14028s</td>
+      <td>Chakraborty et al. (2015)</td>
+    </tr>
+    <tr>
+      <td>ssaJ</td>
+      <td>ssaJ::TetRA derivative of 14028s</td>
+      <td>Hideaki Mizusaki unpublished</td>
+    </tr>
+    <tr>
+      <td>D56A</td>
+      <td>D56A SsrB derivative of 14028s</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>ssrAH1</td>
+      <td>DW748</td>
+      <td>Don Walthers unpublished</td>
+    </tr>
+    <tr>
+      <td>ssrAD</td>
+      <td>DW749</td>
+      <td>Don Walthers unpublished</td>
+    </tr>
+    <tr>
+      <td>ssrAH2</td>
+      <td>DW750</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>ssrAH1 sifA-LacZ</td>
+      <td>Made by transducing sifA-lacZ from DW636 to DW748</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>ssrAD sifA-lacZ</td>
+      <td>Made by transducing sifA-lacZ from DW636 to DW749</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>ssrAH2 sifA-lacZ</td>
+      <td>Made by transducing sifA-lacZ from DW636 to DW750</td>
+      <td>Don Walthers; Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>DW636</td>
+      <td>sifA-lacZ at attP site in 14028s</td>
+      <td>Don Walthers; Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>DW637</td>
+      <td>ssrB::Km derivative of DW636</td>
+      <td>This work/Don Walthers (lab strain collection)</td>
+    </tr>
+    <tr>
+      <td>ssrAH1 AcP</td>
+      <td>ackA-pta::Km (from DW142) transduced in DW748</td>
+      <td>This work/Don Walthers (lab strain collection)</td>
+    </tr>
+    <tr>
+      <td>ssrAD AcP</td>
+      <td>ackA-pta::Km (from DW142) transduced in DW749</td>
+      <td>This work/Don Walthers (lab strain collection)</td>
+    </tr>
+    <tr>
+      <td>ssrAH2 AcP</td>
+      <td>ackA-pta::Km (from DW142) transduced in DW750</td>
+      <td>This work/Don Walthers (lab strain collection)</td>
+    </tr>
+    <tr>
+      <td>hns</td>
+      <td>hns::TetRA derivative of DW636</td>
+      <td>This work/Don Walthers (lab strain collection)</td>
+    </tr>
+    <tr>
+      <td>hns ssrB</td>
+      <td>hns::TetRA derivative of DW637</td>
+      <td>This work/Don Walthers (lab strain collection)</td>
+    </tr>
+    <tr>
+      <td>Plasmid pKF46</td>
+      <td>D56A His-SsrB pMpM-A5Ω construct</td>
+      <td>Feng et al. (2004)</td>
+    </tr>
+    <tr>
+      <td>Plasmid pKF43</td>
+      <td>His-SsrB pMpM-A5Ω construct</td>
+      <td>Feng et al. (2004)</td>
+    </tr>
+    <tr>
+      <td>Transformant DW160</td>
+      <td>DH5α harboring His-HNS (S. typhimurium) in pMpM-A5Ω</td>
+      <td>Walthers et al. (2011)</td>
+    </tr>
+    <tr>
+      <td>Plasmid pKF104</td>
+      <td>His-SsrBc pMpM-A5Ω construct</td>
+      <td>Feng et al. (2004)</td>
+    </tr>
+    <tr>
+      <td>pBR328::csgD</td>
+      <td>csgD construct</td>
+      <td>Prof Iñigo Lasa’s group</td>
+    </tr>
+    <tr>
+      <td>Plasmid pRC24</td>
+      <td>K179A His-SsrB pMpM-A5Ω construct</td>
+      <td>Carroll et al. (2009)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular biology techniques
+
+All DNA manipulation procedures were carried out according to (Sambrook, 1989) using reagents procured from Qiagen, Invitrogen or Fermentas, Singapore. Transformation in S. Typhimurium strains was performed by standard electroporation protocols (Sambrook, 1989). Polymerase chain reaction (PCR) was carried out using oligonucleotides as listed in the Table 2 following standard protocols (Sambrook, 1989).
+
+**Table 2.**
+ List of oligonucleotides.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Purpose/name</th>
+      <th>Sequence (5’-3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Digf (forward 755bp csgD regulatory region)</td>
+      <td>tgatgaaactccacttttttta</td>
+    </tr>
+    <tr>
+      <td>Digr (reverse 755bp csgD regulatory region)</td>
+      <td>tgctgtcaccctggacctggtc</td>
+    </tr>
+    <tr>
+      <td>ssrA knockout (forward)</td>
+      <td>atgaatttgctcaatctcaagaatacgctgcaaacatctt ttaagacccactttcacatt</td>
+    </tr>
+    <tr>
+      <td>ssrA knockout (reverse)</td>
+      <td>agccgatacggcattttcaatatcagccagcaagaggtcc ctaagcacttgtctcctg</td>
+    </tr>
+    <tr>
+      <td>csg1 (forward csgD internal)</td>
+      <td>ggaagatatctcggccggttgc</td>
+    </tr>
+    <tr>
+      <td>csg2 (reverse csgD internal)</td>
+      <td>tcagcctagggataatcgtcag</td>
+    </tr>
+    <tr>
+      <td>rrsA1 (forward rrsA internal)</td>
+      <td>gcaccggctaactccgtgcc</td>
+    </tr>
+    <tr>
+      <td>rrsA2 (reverse rrsA internal)</td>
+      <td>gcagttcccaggttgagcccg</td>
+    </tr>
+    <tr>
+      <td>PSsrBF (forward for pKF46)</td>
+      <td>atgaaagaatataagatcttat</td>
+    </tr>
+    <tr>
+      <td>PSsrBTR (hybrid reverse for pKF46)</td>
+      <td>ttaatactctaattaacctcattcttcgggcacagttaagtctaagcacttgtctcctg</td>
+    </tr>
+    <tr>
+      <td>TSsrBF (forward TetRA-ssrB)</td>
+      <td>acttaactgtgcccgaagaatgaggttaatagagtattaattaagacccactttcacatt</td>
+    </tr>
+    <tr>
+      <td>TSsrBR (reverse TetRA- after ssrB stop)</td>
+      <td>catcaaaatatgaccaatgcttaataccatcggacgcccctggctaagcacttgtctcctg</td>
+    </tr>
+    <tr>
+      <td>Digb (Forward for EMSA)</td>
+      <td>Biotin- tgatgaaactccacttttttta</td>
+    </tr>
+    <tr>
+      <td>CsgDigRS (Reverse for EMSA)</td>
+      <td>aatatttttctctttctggata</td>
+    </tr>
+    <tr>
+      <td>hns knockout (forward)</td>
+      <td>gctcaacaaaccaccccaatataagtttggattactacattaagacccactttcacatt</td>
+    </tr>
+    <tr>
+      <td>hns knockout (reverse)</td>
+      <td>atcccgccagcggcgggattttaagcatccaggaagtaaactaagcacttgtctcctg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain construction
 
 The S. Typhimurium strain harboring a D56A mutation in SsrB was generated by the homologous recombination technique as decribed in (Karlinsey, 2007). Plasmid pKF46 (Feng et al., 2004) was used to construct the necessary linear DNA fragment by a two-step overlapping PCR (Sambrook, 1989). Homologous recombination was also used to construct the hns and ssrA deletion mutants in the respective strain backgrounds. The sifA-lacZ marker was transduced into the lambda attP site of strains DW748 (ssrAH1), DW749 (ssrAD) and DW750 (ssrAH2) using standard P22 transduction protocols (Davis, 1980).
 
-## Fluorescence confocal imaging of flow cell biofilms
+### Fluorescence confocal imaging of flow cell biofilms
 
 Biofilms were grown in three-channel glass-bottomed flow cells (individual cell dimensions 1 × 4 × 40 mm3) with an individual-channel flow rate of 8 ml/h of 0.5X M9 glucose minimal medium. Each channel was inoculated with M9 minimal medium cultures adjusted to an OD600 of 0.04. Flow was started after allowing initial attachment for 1 hr. After specific time points, each channel of the flow cell was stained with 200 μl SYTO-9 green (Invitrogen, Singapore) as per the manufacturer’s protocol. Subsequently, for each flow cell channel image acquisition was performed using a LSM 780 Carl Zeiss confocal fluorescence microscope at 480/500 nm (20X magnification). Five image stacks were acquired starting from the center of the channel to a distance of 5–10 mm from the inlet, approximately 5 mm apart. This experiment was repeated twice in duplicates for the wild type and ssrB mutant strains. All images were processed using the Image J software.
 
-## Scanning electron microscopy (SEM)
+### Scanning electron microscopy (SEM)
 
 Static biofilms were grown by inoculating the bacterial strains on APTES-coated coverslips in 24-well Nunclon polystyrene plates in 500 μl LB without salt medium and kept shaking at 30°C, 100 rpm. After two days, the growth medium was removed; wells were washed with PBS and incubated with 200 μl of the fixative solution (4% para-formaldehyde+0.2% glutaraldehyde in filter-sterilized PBS) for 1 hr at room temperature. After washing twice with sterile water, 35%, 50%, 75%, 90%, 95% and 100% ethanol were added sequentially and kept for 10 min at room temperature. Dehydrated samples were stored in absolute ethanol and kept at 4°C until subjected to critical point drying. Images were obtained using a Carl Zeiss Merlin field emission scanning electron microscope by detecting secondary electrons (SE2) under low electron beam acceleration voltage (1 kV) and low probe current (76 pA).
 
-## Crystal violet staining
+### Crystal violet staining
 
 To estimate the amount of biofilms typically a single colony was inoculated in LB broth medium and incubated at 37°C/250 rpm. 2 μl of this culture was added to 198 μl LB without salt medium in a 96-well polystyrene plate and kept at 30°C with gentle shaking of 100 rpm. After two days, the growth medium was removed and each well was washed twice with 200 μl of Phosphate-buffered Saline (PBS). The attached bacterial communities or biofilms in each well were then stained with 200 μl crystal-violet solution (0.1%) for a minimum of 1 min. This was followed by washing twice with PBS and addition of 200 μl absolute ethanol. Appropriate dilutions were measured for absorbance at 580 nm using a Tecan Infinite M200 plate reader. Each experiment was performed at least thrice in triplicates. For the time course experiment, the above procedure was performed twice at 12, 24, 36, 47, 60, 72 and 84 hr respectively in triplicates.
 
-## Tube biofilm assay (TBA)
+### Tube biofilm assay (TBA)
 
 To study the capability of the Salmonella strains to form biofilms on cholesterol-attached surfaces, a tube biofilm assay was performed as described in (Crawford et al., 2008), but without the use of bile salts in the growth medium. LB without salt medium was used for growth at all steps. All experiments were performed at least thrice in triplicates for 7 days on a nutator shaker at room temperature. Biofilms formed at the end of seven days were estimated using the above described crystal violet staining protocol with appropriate controls.
 
-## Beta-galactosidase assay
+### Beta-galactosidase assay
 
 Each of the bacterial strains were grown overnight in LB, washed twice and resuspended in 50 μl of PBS buffer. These were then transferred into 1 ml of fresh MgM medium, pH 5.7, as in (Feng et al., 2003) and kept shaking at 37°C for around 6–7 h, until growth reached OD600 between 0.6–0.8. At this stage, 50 μl of the culture was removed in a 96-well microtiter plate and 145 μl of lysis buffer was added (0.01% SDS, 50 mM Beta Mercaptoethanol in Z-buffer) as performed previously (Feng et al., 2003). The β-galactosidase activity was represented in Miller Units and calculated as 1000 x [(OD420-1.75 x OD550)]/ t (min) x volume (ml) x OD600). Measurements were made in a Tecan Infinite M200 plate reader and repeated thrice in triplicates.
 
-## RNA isolation
+### RNA isolation
 
 Total RNA was isolated from two-day old macrocolonies using the Qiagen RNeasy kit (Qiagen, Singapore) as per the manufacturer’s protocol with some modifications. Briefly, the macrocolonies were selected and re-suspended in 1 ml Qiagen RNAprotect reagent followed by immediate total RNA isolation or storage at -80°C. Appropriate volume of lysis buffer, 15 mg/ml lysozyme in TE buffer, was used. After dissolving the RNA in 20 μl RNase-free water, samples were assessed by gel electrophoresis and quantified using the Nanodrop system (THERMO Scientific, Singapore). All RNA samples were treated with TURBO DNase as per the manufacturer’s protocol (Life Technologies, Singapore). PCR analysis using rrsA specific primers was performed to ensure the absence of genomic DNA in the RNA preparations.
 
-## Reverse transcription and quantitative real-time PCR
+### Reverse transcription and quantitative real-time PCR
 
 Reverse transcription reaction was carried out using the iScript reverse transcription supermix for RT-qPCR (BIO-RAD, Singapore) according to the recommended protocol. This was followed by amplifying 5–10 ng cDNA by real-time qPCR using SsoFast EvaGreen Supermix (BIO-RAD) and csgD-specific primers. Similar reactions were set up using rrsA-specific primers for their use as normalization controls. All experiments were performed in triplicate with two independent RNA preparations. Relative transcript abundance was determined using the △CT method using a reference gene as per the manufacturer’s guide.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Two-day old macrocolonies were resuspended in 400 μl Laemmli buffer (Sambrook, 1989) and total protein was separated by 10% SDS-PAGE. This was followed by electro-transfer to a PVDF membrane as described before (Feng et al., 2004). The membrane was incubated with anti-CsgD (1:10,000) or anti-GroEL (1:5000) antibodies in PBS buffer containing 0.05% Tween-20 and 3% BSA. Anti-rabbit secondary antibody (Santa Cruz Biotechnology Inc., Dallas, TX) was used for detection as described previously (Feng et al., 2004).
 
-## Overexpression and purification of proteins
+### Overexpression and purification of proteins
 
 The E. coli BL21 (DE3) strain was used as a host for the overproduction of proteins His-SsrBc, His-SsrB, D56A His-SsrB, K179A His-SsrB and His-H-NS. The respective plasmids harboring the constructs have been listed in Supplementary Table 2. Detailed procedures for the purification of His-SsrBc, His-SsrB, D56A His-SsrB and K179A His-SsrB have been described before (Feng et al., 2004; Walthers et al., 2007; Carroll et al., 2009). The DW160 plasmid harboring His-tagged H-NS from Salmonella Typhimurium was used to overexpress and purify His-H-NS following the procedure described in (Walthers et al., 2011).
 
-## Atomic force microscopy (AFM)
+### Atomic force microscopy (AFM)
 
 Glutaraldehyde-modified mica surface was prepared as decribed previously in (Liu et al., 2010) and references therein. A 755 bp sequence upstream to the +1 start site (Gerstel et al., 2003) of csgD was amplified and gel purified. This fragment also harbored a SsrB-specific site (Feng et al., 2004; Walthers et al., 2007), TTATAAT sequence (Figure 6—figure supplement 4). A typical 50 μl reaction contained 10 ng of this DNA (755 bp of the csgD regulatory region) mixed with an appropriate amount of SsrB, SsrBc or D56A SsrB and incubated for 15 min at room temperature. This mixture was then deposited on glutaraldehyde-modified mica for 15 min. Images were acquired on a Bruker Dimension FastScan AFM system using the tapping mode with a silicon nitride cantilever (FastScan C, Bruker). Raw AFM images were processed using Gwyddion software (http://gwyddion.net/). The bending angle was analysed using a home-written Matlab code as described in the Supplementary methods.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 6 version 6.00, GraphPad Software, La Jolla California, www.graphpad.com was used to make all the graphs and do statistical analysis by Student’s t-test wherever required.
 
-## Suplementary methods
+### Suplementary methods
 
-## Growth curves (Total viable count)
+#### Growth curves (Total viable count)
 
 Salmonella enterica serovar Typhimurium strains were grown in LB medium overnight from single colonies at 37°C/250 rpm. 1% of starting cultures were added to LB (without salt) medium containing 1% Tryptone and 0.5% Yeast Extract and incubated shaking at 37°C/100 rpm in 14 ml tubes. At every 2 hr, an aliquot from the culture was removed, diluted appropriately and plated on LB agar plates. The number of colonies formed after incubation at 37°C were counted and growth curves were plotted.
 
-## Estimation of adherent and non-adherent sub-populations
+#### Estimation of adherent and non-adherent sub-populations
 
 Salmonella enterica serovar Typhimurium strains were grown in 50 ml 1% Tryptone medium in 250 ml flasks and kept shaking at 28°C/200 rpm (MacKenzie et al., 2015). After 2 days, the entire 50 ml culture was transferred in 50 ml falcon tubes, including the aggregates that have attached to the wall of the flask, and was centrifuged at 210 rpm/2 min. Appropriate dilutions from the supernatant or the non-adherent (free-swimming) fraction were plated on LB agar plates for enumeration. Total wet weight of the pellet or the adherent (multicellular) fraction was determined after a brief centrifugation at 10,000 rpm for 1 min.
 
-## Electrophoretic mobility super shift assay
+#### Electrophoretic mobility super shift assay
 
 Electrophoretic mobility assay using the LightShift Chemiluminescent EMSA kit (THERMO Scientific) was modified to detect complexes formed by the binding of SsrB and/or H-NS to the csgD regulatory region. A 5’-biotinylated csgD DNA fragment was prepared by amplifying the upstream regulatory region of csgD (122bp) using respective primers from the wild type strain 14028s. 5 fmol of this probe was then incubated with 1.08 μM SsrB/K179A SsrB or 15 μM H-NS in a binding buffer containing 10 mM Tris, pH 7.5; 50 mM KCl, 2.5% glycerol; 0.05% Nonidet P-40 and 1 μg poly (dI-dC), for 20 min at RT. In case where competitor DNA was added, a 200-fold excess of an unlablelled csgD122 was first incubated with 1.08 μM SsrB for 20 min, followed by the addition of 5 fmol labelled probe to the reaction buffer and subsequent incubation for 20 min. For detecting a supershift, 1.08 μM SsrB and 15 μM H-NS were incubated with 0.5 μl anti-SsrBc serum in the binding buffer for 1 hr at RT. 5 fmol of the probe was then added and incubated for additional 20 min at RT. The reactions were subsequently subjected to electrophoresis, electro-blotting, cross-linking and detection as described previously (Carroll et al., 2009).
 
-## Measurement of the bending angle (Figure 7).
+#### Measurement of the bending angle (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/10747/elife-10747-fig7-v1.jpg)
 
-**Figure 7.:** () The original AFM image as processed with the Gwyddion software. (A) A Matlab code was used to trace the DNA in the AFM images. The digitized binary line represents the DNA backbone (red line), with the two end points marked by green dots. (B) For the bending angle measurement, a point along the red line was manually selected as the binding location of SsrB on DNA (green asterisk). The red asterisks indicate two points that are 15 nm upstream and downstream from this protein-binding site. Linear interpolation of points scattered along the green and red asterisk was used to plot a straight line between these points (yellow line). The angle between the yellow lines (α) is determined as the bending angle of SsrB; 81 such measurements were made. The same procedure was followed for the control AFM images of CcsgD, 327 such measurements were made.755DOI: http://dx.doi.org/10.7554/eLife.10747.031
+**Figure 7.:** (A) The original AFM image as processed with the Gwyddion software. (B) A Matlab code was used to trace the DNA in the AFM images. The digitized binary line represents the DNA backbone (red line), with the two end points marked by green dots. (C) For the bending angle measurement, a point along the red line was manually selected as the binding location of SsrB on DNA (green asterisk). The red asterisks indicate two points that are 15 nm upstream and downstream from this protein-binding site. Linear interpolation of points scattered along the green and red asterisk was used to plot a straight line between these points (yellow line). The angle between the yellow lines (α) is determined as the bending angle of SsrB; 81 such measurements were made. The same procedure was followed for the control AFM images of csgD755, 327 such measurements were made.
 
-## Liquid atomic force microscopy (AFM)
+#### Liquid atomic force microscopy (AFM)
 
 Glutaraldehyde-modified mica surface was prepared as decribed previously in (Liu et al., 2010) and references therein. A 755 bp sequence upstream to the +1 start site (Gerstel et al., 2003) of csgD was amplified and gel purified. This fragment also harbored a SsrB-specific site (Feng et al., 2004; Walthers et al., 2007), TTATAAT sequence (Figure 6—figure supplement 4). A typical 50 μl reaction contained 10 ng of this DNA (755 bp of the csgD regulatory region) mixed with an appropriate amount of SsrB or H-NS and incubated for 15 min at room temperature. This mixture was then deposited on glutaraldehyde-modified mica for 15 min. Images were acquired on a Bruker Dimension FastScan AFM system using the tapping mode with a silicon nitride cantilever (FastScan C, Bruker). Raw AFM images were processed using Gwyddion software.

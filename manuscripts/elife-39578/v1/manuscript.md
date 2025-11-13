@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.39578.001 Stress granules (SGs) are non-membrane-bound RNA-protein granules that assemble through phase separation in response to cellular stress. Disturbances in SG dynamics have been implicated as a primary driver of neurodegenerative diseases, including amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD), suggesting the hypothesis that these diseases reflect an underlying disturbance in the dynamics and material properties of SGs. However, this concept has remained largely untestable in available models of SG assembly, which require the confounding variable of exogenous stressors. Here we introduce a light-inducible SG system, termed OptoGranules, based on optogenetic multimerization of G3BP1, which is an essential scaffold protein for SG assembly. In this system, which permits experimental control of SGs in living cells in the absence of exogenous stressors, we demonstrate that persistent or repetitive assembly of SGs is cytotoxic and is accompanied by the evolution of SGs to cytoplasmic inclusions that recapitulate the pathology of ALS-FTD. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Stress granules (SGs) are non-membrane-bound RNA-protein granules that assemble through phase separation in response to cellular stress. Disturbances in SG dynamics have been implicated as a primary driver of neurodegenerative diseases, including amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD), suggesting the hypothesis that these diseases reflect an underlying disturbance in the dynamics and material properties of SGs. However, this concept has remained largely untestable in available models of SG assembly, which require the confounding variable of exogenous stressors. Here we introduce a light-inducible SG system, termed OptoGranules, based on optogenetic multimerization of G3BP1, which is an essential scaffold protein for SG assembly. In this system, which permits experimental control of SGs in living cells in the absence of exogenous stressors, we demonstrate that persistent or repetitive assembly of SGs is cytotoxic and is accompanied by the evolution of SGs to cytoplasmic inclusions that recapitulate the pathology of ALS-FTD.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -37,9 +37,41 @@ Herein we report that light-based activation of Opto-G3BP1, a chimeric protein a
 
 To test whether optogenetically induced LLPS of a stress granule scaffold protein could faithfully reconstitute the assembly of a bona fide stress granule, we first investigated G3BP1 as a potential scaffold protein. G3BP1 (and its close paralog G3BP2) has been suggested to be an essential nucleator of stress granule assembly (Kedersha et al., 2016), and a genome-wide screen recently identified G3BP1/2 as a uniquely essential protein for stress granule assembly (Yang, Mathieu et al., unpublished). G3BP1 has an N-terminal 142-amino acid dimerization domain, termed the NTF2L domain, that is essential for nucleation of stress granule assembly. Remarkably, the NTF2L domain can be replaced by generic dimerization domains, and the resulting chimeric proteins are able to fully nucleate stress granule assembly in living cells (Yang, Mathieu et al., unpublished). Thus, the domain architecture of G3BP1 is ideal for engineering light-inducible stress granule assembly by replacing the NTF2L domain of G3BP1 with the blue light-dependent dimerization domain CRY2PHR in frame with the fluorescent proteins mCherry or mRuby. We named this construct ‘Opto-G3BP1’ and also created an ‘Opto-Control’ construct referring to CRY2PHR-mCherry (or mRuby) alone (Figure 1a).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig1-v1.jpg)
+
+**Figure 1.:** (a) Design of Opto-G3BP1 and Opto-Control constructs. (b) U2OS cells stably expressing Opto-Control or Opto-G3BP1 were stimulated with a single 5-msec pulse of 488 nm blue light (power density ~2.5 MW/cm2) in a defined ROI. Representative images are shown from n = 3 independent experiments. (c) Quantification of data in cells treated as in (b). Five cells with similar expression levels were counted. Granule numbers are shown relative to the granule number at the peak of OptoGranule assembly. Error bars represent s.e.m. (d-f) U2OS cells were stably transfected with Opto-Control or Opto-G3BP1, or stable Opto-G3BP1 cells were transiently transfected with G3BP1-GFP, and stimulated with a blue-light laser (power density ~4.5 W/cm2) for 3 mins. Regions marked with yellow circles were photobleached and monitored for fluorescence recovery. Data are shown as representative images (d), relative fluorescence intensity of photobleached region over time (e), and relative mobile fraction derived from (e) (f). For (e, f) n = 15 cells for Opto-Control; n = 12 for Opto-G3BP1; n = 14 for G3BP1-GFP. Data are representative of n = 3 independent experiments. Data shown as mean + s.d. ns, not significant by one-way ANOVA with Dunnett’s test. (g) U2OS cells transiently transfected with Opto-G3BP1 and the stress granule marker GFP-TIA1 were stimulated with a blue-light laser (power density ~2.5 MW/cm2) for 5 msec. Cells were sequentially imaged by 561 nm and 488 nm channels; we note that the 488 nm channel used for imaging also activates Opto-G3BP1 (power density 2.2 W/cm2). Representative images are shown from n = 3 independent experiments. (h-j) U2OS cells stably expressing Opto-Control or Opto-G3BP1 constructs were stimulated for 6 hr without or with continuous blue light (~2 mW/cm2) using custom-made LED arrays for global activation. Cells were immunostained with PABP antibody (h), TDP-43 antibody (i), or RNA fluorescence in situ hybridization using FAM-labelled oligo (dT)20 as a probe (j). Scale bars, 10 µm in all micrographs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Top: Immunoblot showing expression levels of mCherry (red) and G3BP1 (green) in U2OS cells stably expressing Opto-Control or Opto-G3BP1 with or without blue light stimulation. Bottom: Quantification of top immunoblot. Representative blot is shown from n = 3 independent experiments. Data shown as mean + s.e.m. ns, not significant by t-test. (b) U2OS stably expressing Opto-G3BP1 were transiently transfected with HA-FUS-R521C, FLAG-TDP-43-ΔNLS or GFP-TIA1-A381T. Representative images are shown from n = 3 independent experiments. c, U2OS cells were transiently transfected with Opto-Control (olig) and the stress granule marker GFP-TIA1 and stimulated with blue light for 5 msec (power density ~2.5 MW/cm2). Cells were sequentially imaged by 561 nm and 488 nm channels; we note that the 488 nm channel used for imaging also activates Opto-G3BP1 (power density 2.2 W/cm2). Representative images are shown from n = 3 independent experiments. (d) U2OS cells transiently transfected with Opto-Control (olig) were stimulated with a single 5-msec pulse of 488 nm blue light (power density ~2.5 MW/cm2) in a defined ROI. Representative images are shown from n = 3 independent experiments. (e-f) U2OS cells were transiently transfected with Opto-Control (olig) and stimulated with a 488 nm laser (power density ~4.5 W/cm2) for 3 mins. Regions marked with yellow circles were photobleached and monitored for fluorescence recovery. Data are shown as representative images and relative fluorescence intensity of photobleached region over time (e), and relative mobile fraction derived from n = 10 cells (f). Data are representative of n = 3 independent experiments. Data shown as mean +s.d. Scale bars, 10 μm in all micrographs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a-g) U2OS cells stably expressing Opto-G3BP1 with or without continuous blue light (~2 mW/cm2) using custom-made LED arrays for 5 hr were immunostained with antibodies against TIA1 (a), TIAR (b), eIF4G (c), eIF3η (d), ataxin 2 (e), GLE1 (f), or FUS (g). Representative images are shown from n = 3 independent experiments. Scale bars, 10 μm in all micrographs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a-h,) (a) WT U2OS cells (top) and G3BP1/2 double KO U2OS cells (bottom) with or without sodium arsenite (0.5 mM NaAsO2, 45 min) treatment were immunostained for G3BP1 as well as stress granule markers TIA1, PABP, TIAR, and TDP-43. Representative images are shown from n = 3 independent experiments. (b) G3BP1/2 double KO cells transiently transfected with Opto-Control (left), Opto-G3BP1 (middle), or Opto-G3BP2 (right) constructs exposed to 6 hr continuous blue light (~2 mW/cm2) using custom-made LED arrays and immunostained for the stress granule marker PABP. Representative images are shown from n = 3 independent experiments. (c) Quantification of PABP-positive stress granules in (b). Data are representative of n = 3 independent experiments.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Schematic diagram of Opto-FUS (left) and Opto-TDP-43 (right) constructs. (b) U2OS cells were transiently co-transfected with stress granule marker G3BP1-GFP together with either Opto-FUS-IDR or Opto-TDP-43-IDR. Cells were stimulated with a blue light laser (power density ~2.5 MW/cm2) for 5 msec and imaged by 561 nm and 488 nm channels. Representative images are shown from n = 3 independent experiments. (c) U2OS cells were transiently transfected with Opto-FUS-IDR or Opto-TDP-43-IDR and imaged before and after continuous blue light (~2 mW/cm2) stimulation for 2 hr using custom-made LED arrays by immunostaining with antibodies against PABP. (d,e) U2OS cells were transiently transfected with Opto-FUS-IDR (d) or Opto-TDP-43-IDR (e) and imaged before and after continuous blue light (~2 mW/cm2) stimulation for 5 hr using custom-made LED arrays by immunostaining with antibodies against SQSTM1 (top), VCP (middle), or OPTN (bottom). (f,g) U2OS cells were transiently transfected with Opto-FUS (1–371 aa) or Opto-FUS (full-length) (f) or Opto-TDP-43 (106–414 aa) or Opto-TDP-43 (full-length) (g) and imaged before and after continuous blue light (~2 mW/cm2) stimulation for 2 hr using custom-made LED arrays by immunostaining with stress granule marker PABP. (h) Schematic diagram of Opto-TIA1 constructs. (i) U2OS cells were transiently co-transfected with Opto-TIA1 (full-length) or Opto-TIA1 (1–267 aa) and stress granule marker G3BP1-GFP, stimulated with a blue light laser (power density ~2.5 MW/cm2) for 5 msec, and imaged by 561 nm and 488 nm channels. (j) U2OS cells were transiently transfected with Opto-TIA1 (1–267 aa) and imaged before and after continuous blue light (~2 mW/cm2) stimulation for 5 hr using custom-made LED arrays by immunostaining with antibodies against SQSTM1 (top), VCP (middle), or OPTN (bottom). Representative images are shown from n = 3 independent experiments. Scale bars, 10 μm in all micrographs.
+
 We next generated U2OS cell lines stably expressing Opto-Control or Opto-G3BP1 constructs with comparable expression levels of Opto-G3BP1 and endogenous G3BP1 (Figure 1—figure supplement 1a). Within seconds of blue light activation, Opto-G3BP1 in U2OS cells assembled into numerous, spherical cytoplasmic granules that exhibited liquid behaviors (Figure 1b and Videos 1 and 2). A 5-millisecond pulse of blue light using a 488 nm vector laser (~2.5 MW/cm2) was sufficient to initiate robust induction of these cytoplasmic granules, and these granules spontaneously disassembled over a period of approximately 5 min (Figure 1b,c). These granules were highly dynamic, exhibiting liquid behaviors such as fusion to form larger granules and relaxation to a spherical shape (Video 2). In contrast, under the same conditions, Opto-Control expression remained diffuse, with a modest amount of nuclear and cytoplasmic clusters (Figure 1b and Video 1). To confirm the dynamic nature of the optically induced granules, we performed fluorescence recovery after photobleaching (FRAP) to monitor recovery rates and mobile fractions of individual granules (Figure 1d–f), finding that these properties were very similar between Opto-G3BP1 and the conventional stress granule marker G3BP1-GFP. Furthermore, Opto-G3BP1 localized to spontaneous stress granules induced by expression of ALS mutant proteins (FUS R521C, TDP-43 ΔNLS, TIA1 A381T) even in the absence of blue light activation, demonstrating that the Opto-G3BP1 protein behaves similarly to endogenous G3BP1 (Figure 1—figure supplement 1b).
 
+![Video 1.](https://cdn.elifesciences.org/articles/39578/elife-39578-video1.mp4.jpg)
+
+**Video 1.:** U2OS cells stably expressing Opto-Control were stimulated with a single 5-msec pulse of 488 nm blue light (power density ~2.5 MW/cm2) in a defined ROI. See Video 2 for corresponding Opto-G3BP1 condition.
+
+![Video 2.](https://cdn.elifesciences.org/articles/39578/elife-39578-video2.mp4.jpg)
+
+**Video 2.:** U2OS cells stably expressing Opto-G3BP1 were stimulated with a single 5-msec pulse of 488 nm blue light (power density ~2.5 MW/cm2) in a defined ROI. Opto-G3BP1 assembles highly dynamic, liquid-like cytoplasmic granules, and these granules spontaneously disassemble over a period of approximately 5 min. See Video 1 for corresponding Opto-Control condition.
+
 To further define the relationship between light-induced Opto-G3BP1 granules and stress-induced stress granules, we next examined their composition. Employing live cell imaging, we documented the dynamic recruitment of the stress granule marker GFP-TIA1 into optically induced granules following light-induced assembly (Figure 1g and Video 3). In contrast, clusters of Opto-Control (olig), a modified form of the Opto-Control construct designed to produce abundant aggregates, did not recruit GFP-TIA1 (Figure 1—figure supplement 1c), nor did they show dynamic behavior by FRAP (Figure 1—figure supplement 1d–f).
+
+![Video 3.](https://cdn.elifesciences.org/articles/39578/elife-39578-video3.mp4.jpg)
+
+**Video 3.:** U2OS cells transiently transfected with Opto-G3BP1 and the stress granule marker GFP-TIA1 were stimulated with a blue-light laser (power density ~2.5 MW/cm2) for 5 msec. Cells were sequentially imaged by 561 nm and 488 nm channels; we note that the 488 nm channel used for imaging (power density 2.2 W/cm2) also activates Opto-G3BP1.
 
 We further examined the composition of optically induced Opto-G3BP1 granules by staining activated cells for additional stress granule components. In these experiments, we employed a blue-light LED array that permitted global activation of a larger number of cells. This LED array has a much lower energy density (~2 mW/cm2) than the laser used for dynamic imaging, drives less oligomerization of CRY2PHR, and therefore offers slower kinetics to facilitate monitoring of the recruitment of granule components over time. In cells expressing Opto-G3BP1, but not Opto-Control, all stress granule components that we examined, including PABP, TDP-43, TIA1, TIAR, eIF4G, eIF3η, ataxin 2, GLE1, and FUS, were recruited to optically induced granules (Figure 1h–i and Figure 1—figure supplement 2a–g). Since stress granules represent assemblies of mRNA as well as protein (Panas et al., 2016; Kedersha et al., 1999), we used fluorescent in situ hybridization (FISH) with fluorescently conjugated oligo(dT) probes to examine whether polyadenylated mRNAs were present in these optically induced granules as in canonical stress granules. We found that polyadenylated mRNAs were recruited into optically induced granules that assembled after blue light stimulation but showed no relocalization in cells expressing Opto-Control (Figure 1j). These findings indicate that optically induced Opto-G3BP1 granules are stress granules composed of mRNAs and RNA-binding proteins, including ALS-associated proteins such as TDP-43, ataxin 2, GLE1, FUS, and TIA1.
 
@@ -49,9 +81,25 @@ The initiation of stress granule assembly in response to enforced LLPS of G3BP1 
 
 Phase transitions are highly dependent on protein concentration, and we therefore hypothesized that the induction of OptoGranule assembly would be dependent on the local concentration of activated G3BP1, similar to the concentration-dependent formation of light-activated OptoDroplets (Shin et al., 2017). To test this prediction, we controlled the local G3BP1 molecular concentration by modulating either the intensity of the activating blue light or the expression level of the Opto-G3BP1 construct. As predicted, we observed a strong positive correlation between blue light intensity and induction of OptoGranules (Figure 2a,b) and, independently, a strong positive correlation between Opto-G3BP1 expression level and induction of OptoGranules (Figure 2c,d). Thus, the OptoGranule system is highly tunable, a useful feature for a variety of studies.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig2-v1.jpg)
+
+**Figure 2.:** (a) U2OS cells stably expressing Opto-G3BP1 were intermittently exposed to a blue-light laser (488 nm) for activation followed by image acquisition with a 561 nm channel. Blue light intensity was sequentially increased from top to bottom (488 nm power density measurement from top to bottom: 1%, 0.02 W/cm2; 5%, 0.04 W/cm2; 25%, 0.95 W/cm2; 75%, 5.5 W/cm2). Representative images are shown from n = 3 independent experiments. (b) Quantification of data in cells treated as in (a). Error bars represent s.d. (c) U2OS cells with different expression levels of Opto-G3BP1 were intermittently exposed to a 488 nm blue-light laser (90% laser power, power density 6.3 W/cm2) followed by image acquisition with a 561 nm channel. Relative expression levels from top to bottom: 0.19, 0.32, 0.78 and 1 a.u. Representative images are shown from n = 3 independent experiments. (d) Quantification of data in cells treated as in (c). (e) U2OS cells stably expressing Opto-G3BP1 were pre-treated with cycloheximide (CHX) or ISRIB for 30 min and then exposed to 45 min of sodium arsenite (0.5 mM NaAsO2) or 6 hr of continuous blue light (~2 mW/cm2) using custom-made LED arrays for global activation, and immunostained with PABP antibody. (f) Quantification of granule-positive cells from (e). Data are shown as mean ± s.e.m. from n = 3 independent experiments. ****p<0.0001; ns, not significant by one-way ANOVA with Tukey’s post-test. (g) Immunoblot showing phosphorylated eIF2α (P-eIF2α), eIF2α, and actin levels in cells treated with sodium arsenite (0.5 mM NaAsO2) for 45 min, exposed to 42°C heat shock for 1 hr, or activated with blue light for 6 hr. See also Figure 2—figure supplement 1 for sequential probe images. Scale bars, 10 μm in all micrographs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Immunoblot showing phosphorylated eIF2α and actin levels in cells treated with sodium arsenite (0.5 mM NaAsO2) for 45 min, exposed to 42°C heat shock for 1 hr, or exposed to continuous blue light (~2 mW/cm2) stimulation for 6 hr using custom-made LED arrays. The first round of primary antibodies were anti-actin (goat) and anti-phospho-eIF2α (rabbit), which were developed using corresponding fluorescent secondary antibodies (actin: IRDye 800CW [green] donkey anti-goat; phospho-eIF2α: IRDye 680RD [red] donkey anti-rabbit). After an overnight wash, the membrane was reblotted with anti-eIF2α (mouse) primary antibody and IRDye 800CW (green) donkey anti-mouse secondary antibody.
+
 We next examined the role of upstream events in OptoGranule formation and compared these to the cellular triggers associated with conventional stress granule assembly. Given that conventional stress granule formation is typically linked to the disassembly of translating polysomes (Panas et al., 2016), we tested whether polysome disassembly is required for OptoGranule formation. We determined that treatment with cycloheximide, which traps translating mRNAs within polysomes, strongly mitigated the formation of arsenite-induced stress granules and the formation of light-induced OptoGranules (Figure 2e,f), indicating that OptoGranule formation is dependent on polysome disassembly and further illustrating commonality with conventional stress granules. We next tested the role of eIF2α phosphorylation, which integrates stress granule formation downstream of a variety of stressors, such as arsenite and heat shock (Panas et al., 2016). We used the small molecule ISRIB, which binds eIF2B and interrupts eIF2α-mediated translational control (Sidrauski et al., 2015). We found that formation of arsenite-induced stress granules was blocked by ISRIB, as previously documented (Sidrauski et al., 2015), whereas the formation of light-induced OptoGranules was unaffected by ISRIB treatment (Figure 2e,f). Consistent with this finding, Western blotting also showed minimal phosphorylated eIF2α accompanying OptoGranule assembly (Figure 2g, Figure 2—figure supplement 1). Thus, OptoGranule formation depends upon the recruitment of mRNPs from polysomes, but this assembly occurs downstream and independent of the evolutionarily conserved integrated stress response regulated by eIF2α. This observation is consistent with the notion that OptoGranule formation is not driven by the classic signaling pathway for stress granule formation, which increases the concentration of free, uncoated RNA in the cytoplasm, but rather by oligomerization of G3BP1, which increases the valency for RNA binding.
 
 Given the accumulating evidence that disturbance of membrane-less organelles such as stress granules may contribute to the initiation or progression of disease, we hypothesized that discrete disturbance in the dynamics or material properties of stress granules should be sufficient to cause cytotoxicity and recapitulate the pathognomonic features of specific diseases. To test this prediction, we examined the consequences of chronic OptoGranule assembly. First, we examined the consequences of continuous blue light activation in cells expressing Opto-G3BP1 or Opto-Control. We found that continuous induction of OptoGranules using a blue-light LED array resulted in progressive loss of cell viability reflected by progressive loss of crystal violet staining and depletion of ATP levels (Figure 3a,b). However, we also noted that chronic exposure to blue light resulted in a moderate amount of cytotoxicity in cells expressing Opto-Control or parental U2OS cells (Figure 3b). Although cells expressing Opto-G3BP1 exhibited significantly greater loss of viability upon exposure to blue light than cells expressing Opto-Control or parental U2OS cells, we sought to eliminate this potentially confounding background toxicity.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig3-v1.jpg)
+
+**Figure 3.:** (a,b) U2OS cells stably expressing Opto-Control or Opto-G3BP1 were stimulated with continuous blue light (~2 mW/cm2) for indicated times using custom-made LED arrays and viability was assessed by crystal violet staining (a) or CellTiter-Glo 2.0 luminescence (b). Whiskers represent minimum to maximum from n = 9 biological replicates. ****p<0.0001.; ns, not significant by two-way ANOVA with Tukey’s post-test. (c,d) U2OS cells stably expressing Opto-Control or Opto-G3BP1 were exposed to chronic persistent (c) or chronic intermittent (d) blue light (445 nm) stimulation with live-cell imaging (power density ~0.12 W/cm2) as illustrated in the schematic (left) and assessed for cell survival by counting living cells (right). Blue boxes in schematic indicate the timing of light induction; red line is an idealized graph of the cellular response. Chronic persistent paradigm: n = 26 for Opto-Control and n = 28 for Opto-G3BP1. Chronic intermittent paradigm: n = 7 for Opto-Control and n = 10 for Opto-G3BP1. Data are shown from n = 3 independent experiments. ****p<0.0001 by log-rank (Mantel-Cox) test. (e) Timeline of protein accumulation in OptoGranules in U2OS cells. (f-h) U2OS cells stably expressing Opto-G3BP1 were stimulated with continuous blue light (~2 mW/cm2) for indicated times using custom-made LED arrays and co-immunostained with p-TDP-43 and A11 antibodies (f), SQSTM1 and ubiquitin antibodies (g), or VCP and TDP-43 antibodies (h). (i) quantification of data from (f-h). Error bars represent s.e.m. Images in f-h are representative of n = 3 independent experiments. ***p=0.0002 (2 hr), ***p=0.0001 (3 hr) for TDP-43, **p=0.0048 (2 hr), ***p=0.0002 (3 hr) for A11, **p=0.0051 (5 hr) for ubiquitin, ****p<0.0001 for SQSTM1, ***p=0.0003 for pTDP-43, and ****p<0.0001 for VCP by one-way ANOVA with Dunnett’s test. Scale bars, 10 μm in all micrographs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) U2OS cells stably expressing Opto-G3BP1 were exposed to chronic persistent blue light stimulation (same data as shown in Figure 3c) or chronic intermittent blue light stimulation (same data as shown in Figure 3d). ns, not significant by log-rank (Mantel-Cox) test. (b) U2OS cells stably expressing Opto-Control were stimulated with continuous blue light (~2 mW/cm2) for 4 hr using custom-made LED arrays and then immunostained for A11. Representative images are shown from n = 3 independent experiments. (c-d) U2OS cells stably expressing Opto-G3BP1 were exposed to chronic persistent blue light stimulation with live cell imaging as shown in Figure 3c for 1–2 hr (early stage) or 17 hr (late stage). At indicated time points, the relative mobile fraction (c) and half recovery time (d) of Opto-G3BP1 were measured using FRAP. Error bars represent s.d. **p<0.01, ***p<0.001 by t-test. (e) U2OS cells stably expressing Opto-G3BP1 were stimulated with continuous blue light (~2 mW/cm2) for 4 hr using custom-made LED arrays and then immunostained for p-TDP-43 (P01). Representative images are shown from n = 2 independent experiments. (f) U2OS cells stably expressing Opto-G3BP1 were stimulated with continuous blue light (~2 mW/cm2) using custom-made LED arrays for indicated times and then co-immunostained for TDP-43 and p-TDP-43 (M01). Representative images are shown from n = 3 independent experiments. Scale bars, 10 μm in all micrographs.
 
 We therefore used live, confocal-based imaging to monitor cell viability in real time during 488 nm vector laser-induced OptoGranule induction. We first used a paradigm consisting of 2 s blue light pulses alternating with 12 s of rest, which drove robust OptoGranule assembly but left insufficient time for granules to disassemble prior to the next light pulse, resulting in persistent OptoGranule assembly (Figure 3c). Interestingly, persistent OptoGranule assembly under these conditions (2 s on, 12 s off) resulted in significant loss of viability in cells expressing Opto-G3BP1, with comparatively greatly reduced toxicity in cells expressing Opto-Control (Figure 3c). We next established a paradigm that further minimized blue light exposure, using a 10 s blue light pulse followed by 10 min of rest, which was sufficient to initiate robust assembly of OptoGranules that were able to fully disassemble prior to the next light pulse (Figure 3d). This paradigm of chronic, intermittent OptoGranule assembly, which may more closely reflect physiological, chronic, intermittent stress, greatly mitigated background toxicity due to blue light exposure and revealed significant toxicity in cells expressing Opto-G3BP1 compared to cells expressing Opto-Control (Figure 3d). The cell death associated with chronic intermittent OptoGranule assembly progressed more slowly than the cell death caused by chronic persistent OptoGranule assembly, although this difference did not reach statistical significance (Figure 3—figure supplement 1a). Taken together, these results demonstrate that chronic persistent or chronic intermittent stress granule assembly is intrinsically cytotoxic, independent of exogenous stressors.
 
@@ -60,6 +108,26 @@ Disease pathology in tissue from patients with ALS and FTD is marked by deposits
 Remarkably, the characteristics of OptoGranules changed during chronic assembly. First, OptoGranules showed time-dependent reduction in dynamics as assessed by FRAP (Figure 3—figure supplement 1c,d). Moreover, we observed that immunopositivity for TDP-43, A11, and ubiquitin gradually increased over time, and after approximately two hours of OptoGranule assembly, these granules showed immunopositivity using two distinct anti-phospho-TDP-43 antibodies (Figure 3f–i, Figure 3—figure supplement 1e,f). The anti-phospho-TDP-43 antibodies specifically recognize phosphorylation of TDP-43 at residues Ser409/410, a pathological signature specific to a spectrum of sporadic and familial forms of TDP-43 proteinopathies, including ALS-FTD (Neumann et al., 2009). Moreover, after approximately five hours of chronic OptoGranule assembly, we observed a significant increase in immunopositivity using antibodies to phospho-TDP-43 and the ubiquitin-binding proteins SQSTM1 and VCP, illustrating further evolution of these structures (Figure 3g–i).Thus, not only does chronic OptoGranule assembly cause a loss of cell viability, but cell death is preceded by the evolution of OptoGranules into cytoplasmic inclusions that recapitulate features that are pathognomonic for ALS-FTD.
 
 We next examined the consequence of protracted stress granule assembly in a more disease-relevant, neuronal context by generating human induced pluripotent stem cell (iPSC)-derived neurons, which we verified had a cortical molecular identity (Figure 4—figure supplement 1a,b). In response to arsenite or heat shock stresses, these iPSC-derived neurons assembled conventional stress granules that were positive for TIA1 and TDP-43, indicating that they were suitable for examining the consequences of chronic stress granules (Figure 4—figure supplement 1c). Next, we introduced mRuby-tagged Opto-G3BP1 into differentiated neurons (Figure 4a). In mRuby-Opto-G3BP1-expressing neurons, blue light activation induced the assembly of OptoGranules indistinguishable from those observed in U2OS cells (Figure 4b, Figure 4—figure supplement 1d and Videos 4 and 5). Chronic induction of OptoGranules following transient introduction of mRuby-Opto-G3BP1 resulted in progressive loss of neuronal viability (Figure 4c) and the formation of neuronal cytoplasmic inclusions that were immunopositive for TDP-43, A11, and ubiquitin, with time-dependent immunopositivity for phosphorylated TDP-43 and SQSTM1 (Figure 4d–i, Figure 4—figure supplement 1e). We also generated iPSCs stably expressing inducible Opto-G3BP1 (doxycycline-inducible mCherry-tagged Opto-G3BP1), in which Opto-G3BP1 expression was induced simultaneously with neuronal differentiation by the addition of doxycycline (Figure 4—figure supplement 2a). In these cells, Opto-G3BP1 remained diffuse until activation with blue light, whereupon these neurons assembled dynamic OptoGranules (Figure 4—figure supplement 2b). With continuous stimulation, these OptoGranules further evolved into neuronal cytoplasmic inclusions that were positive for phospho-TDP-43, A11, ubiquitin, and SQSTM1 (Figure 4—figure supplement 2c–f). Thus, chronic OptoGranule induction recapitulates the evolution of ALS-FTD pathology and neurotoxicity in human iPSC-derived neurons.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig4-v1.jpg)
+
+**Figure 4.:** (a) Schematic illustrating generation of iPSC-derived neurons stably expressing Opto-G3BP1. (b) iPSC-derived neurons expressing Opto-Control (mRuby) or Opto-G3BP1 (mRuby) were intermittently exposed to a 488 nm blue-light laser (90% laser power, power density 6.3 W/cm2) followed by image acquisition with a 561 nm channel. Representative images are shown from n = 3 independent experiments. (c) iPSC-derived neurons expressing Opto-Control or Opto-G3BP1 were exposed to chronic persistent stimulation as in Figure 3c and survival was assessed by counting living cells. n = 35 cells for Opto-Control and n = 34 cells for Opto-G3BP1. Data are representative of n = 3 independent experiments. ****p<0.0001 by log-rank (Mantel-Cox) test. (d) Timeline of pathological protein accumulation in OptoGranules in iPSC-derived neurons. (e-h) iPSC-derived neurons expressing Opto-G3BP1 were stimulated with continuous blue light (~2 mW/cm2) for indicated times using custom-made LED arrays and co-immunostained with MAP2 and TDP-43 antibodies (e), MAP2 and A11 antibodies (f), MAP2 and p-TDP-43 (P01) antibodies (g), or ubiquitin and SQSTM1 antibodies (h). See also Figure 4—figure supplement 1e for line scans of images shown in (h).(i) quantification of data from e-h. Error bars represent s.e.m. Images in e-h are representative of n = 3 independent experiments. *p=0.0489 (2 hr), ***p=0.0001 (5 hr) for SQSTM1 and ****p<0.0001 for pTDP-43 by one-way ANOVA with Dunnett’s test. Scale bars, 10 μm in all micrographs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (ab) Quantification of mRNA levels in iPSC-derived neurons before or after 1 and 2 weeks of Ngn2 lentiviral infection. Levels are normalized for RPP30 mRNA levels as an internal control. Panel b is shown on a logarithmic scale. (c) iPSC-derived neurons were treated with 0.25 mM sodium arsenite for 30 min or 42°C heat shock for 1 hr and then immunostained for MAP2 along with stress granule markers TIA1 and TDP-43. (d) U2OS cells stably expressing Opto-Control (mRuby) or Opto-G3BP1 (mRuby) were stimulated with continuous blue light (~2 mW/cm2) for 2 hr using custom-made LED arrays and then immunostained for PABP. (e) Top: Enlarged images from Figure 4h. Bottom: Line scans indicate the degree of colocalization between Opto-G3BP1 (red), ubiquitin (violet), and SQSTM1 (green) in lines drawn within the magnified images. Images are representative of n = 3 independent experiments. Scale bars, 10 μm in all micrographs.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39578/elife-39578-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Schematic illustrating generation of iPSC-derived neurons in which doxycycline induces both differentiation and Opto-G3BP1(mCherry) expression. (b) iPSC-derived neurons expressing doxycycline-inducible Opto-Control (mCherry) or Opto-G3BP1 (mCherry) were stimulated with one 5-msec pulse of a blue light laser (power density ~2.5 MW/cm2). Representative images are shown from n = 3 independent experiments. (c-f) iPSC-derived neurons expressing doxycycline-inducible Opto-G3BP1 (mCherry) were stimulated with continuous blue light (~2 mW/cm2) for indicated times using custom-made LED arrays and co-immunostained with MAP2 and TDP-43 antibodies (c), MAP2 and A11 antibodies (d), ubiquitin and SQSTM1 antibodies (e), or p-TDP-43 (P01) antibodies (f). Images in c-f are representative of n = 3 independent experiments. Scale bars, 10 μm in all micrographs.
+
+![Video 4.](https://cdn.elifesciences.org/articles/39578/elife-39578-video4.mp4.jpg)
+
+**Video 4.:** iPSC-derived neurons expressing Opto-Control (mRuby) were intermittently exposed to a 488 nm blue-light laser (95% laser power, power density 6.5 W/cm2) followed by image acquisition with a 561 nm channel. See Video 5 for corresponding Opto-G3BP1 condition.
+
+![Video 5.](https://cdn.elifesciences.org/articles/39578/elife-39578-video5.mp4.jpg)
+
+**Video 5.:** iPSC-derived neurons expressing Opto-G3BP1 (mRuby) were intermittently exposed to a 488 nm blue-light laser (95% laser power, power density 6.5 W/cm2) followed by image acquisition with a 561 nm channel. See Video 4 for corresponding Opto-Control condition.
 
 ## Discussion
 
@@ -73,27 +141,394 @@ Extending this hypothesis, we speculate that disease may reflect simultaneous pa
 
 ## Materials and methods
 
-## Cell culture and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>U-2 OS</td>
+      <td>ATCC</td>
+      <td>HTB-96; RRID:CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>Lenti-X 293T(293LE)</td>
+      <td>Clontech</td>
+      <td>632180; RRID: CVCL_4401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>iPSCs</td>
+      <td>Building a Kidney</td>
+      <td>BJFF6; RRID: CVCL_VU02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCRY2PHR-mCherryN1</td>
+      <td>Addgene</td>
+      <td>26866; RRID:Addgene_26866</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-CRY2-mCherry</td>
+      <td>Addgene</td>
+      <td>58368; RRID:Addgene_58368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>phND2-N174</td>
+      <td>Addgene</td>
+      <td>31822; RRID:Addgene_31822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKanCMV-mClover3-mRuby3</td>
+      <td>Addgene</td>
+      <td>74252; RRID:Addgene_74252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTight-hND2-N106</td>
+      <td>Addgene</td>
+      <td>31875; RRID:Addgene_31875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>12260; RRID:Addgene_12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CRY2olig-mCherry</td>
+      <td>Addgene</td>
+      <td>60032; RRID:Addgene_60032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>12259; RRID:Addgene_12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>linear hygromycin marker</td>
+      <td>Clontech</td>
+      <td>631625; RRID:Addgene_60032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-β-actin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-1616; RRID: AB_630836</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-eIF2α</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-133132; RRID: AB_1562699</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-β-actin</td>
+      <td>Cell Signaling</td>
+      <td>3597S; RRID: AB_390740</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-mCherry</td>
+      <td>Abcam</td>
+      <td>167453; RRID: AB_2571870</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-G3BP1</td>
+      <td>BD Biosciences</td>
+      <td>611126; RRID: AB_398437</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-PABP</td>
+      <td>Abcam</td>
+      <td>ab21060; RRID: AB_777008</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-eIF4G</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-11373; RRID: AB_2095750</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-TDP-43</td>
+      <td>Proteintech</td>
+      <td>12892–1-AP; RRID: AB_2200505</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-phospho-TDP-43 (M01)</td>
+      <td>Cosmo Bio CO</td>
+      <td>TIP-PTD-MO1; RRID: AB_1961900</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-phospho-TDP-43 (P01)</td>
+      <td>Cosmo Bio CO</td>
+      <td>TIP-PTD-PO1; RRID: AB_1961899</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-VCP</td>
+      <td>BD Biosciences</td>
+      <td>612183; RRID: AB_399554</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-amyloid-oligomer A11</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AHB0052; RRID: AB_2536236</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Ubiquitin</td>
+      <td>Dako</td>
+      <td>Z0458; RRID: AB_2315524</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-p62</td>
+      <td>Abcam</td>
+      <td>ab56416; RRID: AB_945626</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-MAP2</td>
+      <td>Sigma</td>
+      <td>M9942; RRID: AB_477256</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-TIA1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-1751; RRID: AB_2201433</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-TIAR</td>
+      <td>BD Biosciences</td>
+      <td>610352; RRID: AB_397742</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-ataxin 2</td>
+      <td>Proteintech</td>
+      <td>21776–1-AP; RRID: AB_10858483</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-eIF3η</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-16377; RRID: AB_671941</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti- GLE1</td>
+      <td>Abcam</td>
+      <td>ab96007; RRID: AB_10678755</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti- FUS</td>
+      <td>Bethyl Laboratories</td>
+      <td>A300-302A; RRID: AB_309445</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti- OPTN</td>
+      <td>Proteintech</td>
+      <td>10837–1-AP; RRID: AB_2156665</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FuGENE 6</td>
+      <td>Promega</td>
+      <td>E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA Assembly Master Mix kit</td>
+      <td>NEB</td>
+      <td>E2621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 site-directed mutagenesis</td>
+      <td>NEB</td>
+      <td>E0054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA 3′ End Biotinylation Kit</td>
+      <td>Pierce</td>
+      <td>20160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter-Glo 2.0 assay kit</td>
+      <td>Promega</td>
+      <td>G9242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ISRIB</td>
+      <td>Sigma</td>
+      <td>SML0843</td>
+      <td>200 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cycloheximide</td>
+      <td>Sigma</td>
+      <td>C4859</td>
+      <td>100 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sodium arsenite</td>
+      <td>Sigma</td>
+      <td>35000–1 L-R</td>
+      <td>0.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>hygromycin B</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10687010</td>
+      <td>200 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>doxycycline hyclate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9891</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>puromycin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A1113803</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/, RRID:SCR_003073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software Inc</td>
+      <td>http://www.graphpad.com/ scientific-software/prism/ RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SlideBook 6</td>
+      <td>Intelligent Imaging Innovations</td>
+      <td>https://www.intelligent-imaging.com/slidebook.php RRID:SCR_014300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>LI-COR</td>
+      <td>https://www.licor.com/bio/products/software/image_studio_lite/?utm_source=BIO+Blog&amp;utm_medium=28Aug13post&amp;utm_content=ISLite1&amp;utm_campaign=ISLite, RRID: SCR_014211 RRID:SCR_015795</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LAS X Software</td>
+      <td>Leica</td>
+      <td>https://www.leica-microsystems.com/products/confocal-microscopes/p/leica-tcs-sp8/ RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and transfection
 
 U2OS cells were purchased from ATCC (HTB-96) and periodically authenticated by short tandem repeat (STR) profiling. U2OS cells were cultured in Dulbecco’s modified Eagle’s medium (HyClone) supplemented with 10% fetal bovine serum (HyClone SH30071.03 and SH30396.03), 1X GlutaMAX (Thermo Fisher Scientific 35050061), 50 U/ml penicillin, and 50 μg/ml streptomycin (Gibco 15140–122), and maintained at 37°C in a humidified incubator with 5% CO2. FuGENE 6 (Promega E2691) was used for transient transfections per the manufacturer’s instructions. G3BP1/2 KO cells have been previously described (Zhang et al., 2018). U2OS cells stably expressing G3BP1-GFP have been previously described (Figley et al., 2014). Cells were checked for mycoplasma with MycoAlert Mycoplasma Detection Kit (Lonza LT07-318) and then regularly checked for mycoplasma by DAPI staining.
 
-## Plasmids
+### Plasmids
 
 DNA fragments encoding human G3BP1 and TIA1 were PCR-amplified from G3BP1 (DNASU HsCD00042033) and pEGFP-TIA1 (Mackenzie et al., 2017), respectively. FUS and TDP-43 were PCR-amplified from cDNA. The pCRY2PHR-mCherry backbone was PCR-amplified from pCRY2PHR-mCherryN1 (Opto-Control; Addgene 26866). DNA fragments encoding G3BP1, TIA1, TDP-43, or FUS were inserted into pCRY2PHR-mCherryN1 backbone using NEBuilder HiFi DNA Assembly Master Mix kit (NEB E2621). To create Opto-G3BP2, DNA fragments encoding G3BP2 were amplified from cDNA and inserted into pCMV-CRY2-mCherry (Addgene 58368) at XhoI and BamHI using NEBuilder HiFi DNA Assembly Master Mix. Mammalian codon-optimized pCRY2PHR-mCherry was PCR-amplified from pCMV-CRY2-mCherry. mRuby3 was PCR-amplified from pKanCMV-mClover3-mRuby3 (Addgene 74252). Opto-G3BP1 (mRuby) was assembled from codon-optimized pCRY2PHR-mCherry, mRuby3, and G3BP1 DNA using NEBuilder HiFi DNA Assembly Master Mix kit. Opto-G3BP1 (mRuby) lentiviral plasmids were constructed by inserting PCR-amplified CMV-promoted CRY2-mRuby-G3BP1 (ΔNTF2L) into PspXI and EcoRI linearized cloning backbone phND2-N174 (Addgene 31822) using NEBuilder HiFi DNA Assembly Master Mix kit. Dox-Opto-G3BP1 (mCherry) lentiviral plasmids were constructed by inserting PCR-amplified Opto-Control and Opto-G3BP1 into EcoRI-digested cloning backbone pTight-hND2-N106 (Addgene 31875) using NEBuilder HiFi DNA Assembly Master Mix kit. Truncations were introduced using Q5 site-directed mutagenesis (NEB E0054). G3BP1-GFP constructs have been previously described (Lee et al., 2016). All constructs were confirmed by sequencing.
 
-## Drugs and heat shock treatments
+### Drugs and heat shock treatments
 
 ISRIB (200 nM; Sigma SML0843) and cycloheximide (100 µg/ml; Sigma C4859) treatment was performed for 30 min before adding sodium arsenite (0.5 mM; Sigma 35000–1 L-R) or blue light. For sodium arsenite treatment, medium was changed to medium containing 0.25 mM or 0.5 mM sodium arsenite for 30 or 45 min as indicated in figure legends. For heat shock treatment, cells were transferred to a 42°C humidified incubator with 5% CO2 for 1 hr.
 
-## Lentivirus production
+### Lentivirus production
 
 Lenti-X 293 T cells (293LE; Clontech 632180) were transfected at 80–90% confluency with viral vectors containing genes of interest and viral packaging plasmids psPAX2 (Addgene 12260) and pMD2.G (Addgene 12259) using polyethylenimine (Polysciences 24765–2). The medium was changed 24 hr after transfection. Viral supernatants were harvested 48 hr after transfection, filtered with 0.45 µM filters, and centrifuged at 100,000 x g at 4°C for 1.5 hr. Ultracentrifugation was carried out through a 20% (w/v in PBS) sucrose cushion at 100,000 x g at 4°C for 1.5 hr. Pellets were resuspended in 100 µl DMEM +10% FBS and stored at −80°C.
 
-## Stable cell lines
+### Stable cell lines
 
 Opto-Control (mCherry) or Opto-G3BP1 (mCherry) constructs were co-transfected with linear hygromycin marker (Clontech 631625) into U2OS cells using FuGENE 6 (Promega). 48 hr after transfection, 200 μg/ml hygromycin B (Thermo Fisher Scientific 10687010) was added to culture media for selection. mCherry-positive cells were selected using cell sorting to produce Opto-Control (mCherry) or Opto-G3BP1 (mCherry) stable cell lines. For efficient photoactivation, cells with high expression (top 10%) were selected using cell sorting. Filtered Opto-Control (mRuby) or Opto-G3BP1 (mRuby) viral supernatants and 8 μg/ml polybrene (Sigma H9268) were added to U2OS cells at ~50% confluency in 10 cm plates. mRuby-positive cells were selected using cell sorting to produce Opto-Control (mRuby) or Opto-G3BP1 (mRuby) stable cell lines.
 
-## iPSC neuron differentiation
+### iPSC neuron differentiation
 
 iPSC neurons were generated as described previously (Zhang et al., 2013) with modifications. iPSCs ((Re)Building a Kidney BJFF6) were dissociated with Gentle Cell Dissociation Reagent (Stemcell Technologies 07174) and 300,000 iPSCs were seeded into one Matrigel (Corning 354277)-coated well of a six-well plate in mTeSR medium (Stemcell Technologies 85850) containing 10 µM ROCK inhibitor (Stemcell Technologies 72302). The next day, the medium was changed to mTeSR medium.
 
@@ -101,50 +536,50 @@ To generate neurons expressing mRuby-tagged Opto-G3BP1 or Opto-Control, lentivir
 
 To generate doxycycline-inducible iPSC-derived neurons with inducible expression of mCherry-tagged Opto-Control or Opto-G3BP1, lentiviruses encoding Ngn2, rTTA, and Dox-Opto-Control or Dox-Opto-G3BP1 were added to the medium at ~MOI = 4, respectively, in the presence of hexadimethrine bromide (4 µg/ml), and the medium was changed 24 hr after transduction. iPSCs were dissociated with Gentle Cell Dissociation Reagent and 150,000 cells were seeded into coverslips in one well of a 24-well plate or 4-well Nunc Lab-Tek chambered coverglass coated with Matrigel/Poly-L-ornithine/laminin/fibronectin and cultured in BrainPhys neuronal medium for 7 days. iPSC neuron cultures were maintained in BrainPhys neuronal medium and half-changed every other day until the assay was performed.
 
-## Blue-light LED treatment
+### Blue-light LED treatment
 
 Cells (30–60% confluency) were transferred into blue light illumination at ~2 mW/cm2 using custom-made LED arrays in a humidified incubator with 5% CO2 with blue-light LED array for continuous blue light stimulation. Custom-made LED arrays were arranged with a flexible LED strip light (Ustellar). The light intensity of LED arrays was measured by a power meter (ThorLabs S170C).
 
-## Live-cell imaging
+### Live-cell imaging
 
 All live-cell imaging experiments were performed using a Marianas 2 spinning disk confocal imaging system except overnight images of cell viability assays (described below). Images were acquired using a 63×/1.4 Plan Apochromat objective. Cells were plated in 4-well Nunc Lab-Tek chambered coverglass (Thermo Fisher Scientific 155382). Before imaging, the medium was changed to FluoroBrite DMEM medium (Thermo Fisher Scientific A1896701) with 10% fetal bovine serum and 1X GlutaMAX. During imaging, cells were maintained at 37°C with an environmental control chamber. Definite focus was used during the live-cell imaging. For one-time photoactivation, indicated cells were initially photoactivated by a 5 ms pulse of 488 nm laser illumination at 55% of maximum laser power, then imaged every 1 s thereafter with a 561 nm laser. For intermittent activation, cells were intermittently exposed to a 488 nm blue light (100 ms, 90% laser power, power density 6.3 W/cm2) followed by image acquisition with a 561 nm channel. Images were analyzed with SlideBook 6 software. Laser power intensity was measured by a power meter (ThorLabs S170C).
 
-## Western blotting
+### Western blotting
 
 Cells were collected using PBS and lysed for 10 min on ice using RIPA buffer (25 mM Tris-HCl (pH 7.6), 150 mM NaCl, 1% NP-40, 1% sodium deoxycholate, 0.1% SDS; Pierce, 89901) supplemented with proteinase inhibitor cocktail (Roche 1186153001) and PhosSTOP (Roche 04906845001). Samples were centrifuged for 20 min at 4°C at 14,000 rpm. 4X NuPAGE LDS sample buffer (Thermo Fisher Scientific NP0008) was added to the supernatant and samples were boiled for 5 min. Samples were run in 4–12% NuPAGE Bis-Tris gels (Invitrogen) and transferred to nitrocellulose membranes using an iBlot 2 transfer device (Thermo Fisher Scientific). Membranes were blocked with Odyssey blocking buffer (LI-COR) and then incubated with primary antibodies. Following incubation with dye-labeled secondary antibodies, signals were visualized using an Odyssey Fc imaging system (LI-COR). Primary western blot antibodies were anti-β-actin (Santa Cruz Biotechnology sc-1616), anti-eIF2α (Santa Cruz Biotechnology sc-133132), anti-phospho-eIF2α (Cell Signaling 3597S), anti-mCherry (Abcam 167453), and anti-G3BP1 (BD biosciences 6111126). Secondary western blot antibodies were IRDye 800CW/680RD (LI-COR) used at a dilution of 1:15,000.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were grown in 8-well chamber slides (Millipore). Following the indicated stimulation, cells were fixed with 4% paraformaldehyde (Electron Microscopy Science) in PBS for 10 min at room temperature, permeabilized with 0.2% Triton X-100 in PBS for 10 min at room temperature, and then blocked with 10% normal goat serum (Life Technologies 50062) or 5% BSA for 1 hr at room temperature. Samples were incubated with primary antibodies in blocking buffer overnight at 4°C. Samples were then washed three times with PBS and incubated with secondary antibody for 1 hr at room temperature. Primary antibodies were anti-PABP (Abcam ab21060), anti-G3BP1 (BD Biosciences 611126), anti-eIF4G (Santa Cruz Biotechnology sc-11373), anti-TDP-43 (Proteintech 12892–1-AP), anti-phospho-TDP-43 (M01) (Cosmo Bio CO TIP-PTD-MO1), anti-phospho-TDP-43 (P01) (Cosmo Bio CO TIP-PTD-PO1), anti-VCP (BD Biosciences 612183), anti-amyloid-oligomer A11 (Thermo Fisher Scientific AHB0052), anti-ubiquitin (Dako, Z0458), anti-SQSTM1 (Abcam ab56416), anti-MAP2 (Sigma M9942), anti-TIA1 (Santa Cruz Biotechnology sc-1751), anti-TIAR (BD Biosciences 610352), anti-eIF3η (Santa Cruz Biotechnology sc-16377), anti-ataxin 2 (Proteintech 21776–1-AP), anti-FUS (Bethyl Laboratories A300-302A), anti-OPTN (Proteintech 10837–1-AP), and anti-GLE1 (Abcam ab96007). Secondary antibodies were Alexa Fluor 488/555/647 (Life Technologies). For microscopic imaging, slides were mounted with ProLong Gold Antifade Mountant with DAPI (Invitrogen). Images were captured using a Leica TCS SP8 3X confocal microscope with a 63x oil objective.
 
-## Fluorescence recovery after photobleaching
+### Fluorescence recovery after photobleaching
 
 Cells were first stimulated with a blue-light laser (power density ~4.5 W/cm2) for 3 mins to initiate granule formation. Regions of interest expressing Opto-Control, Opto-Control (olig), Opto-G3BP1, or G3BP1-GFP were then photobleached and mCherry or GFP signal intensity was measured before and after photobleaching.
 
-## Fluorescence in situ hybridization
+### Fluorescence in situ hybridization
 
 Cells were fixed with 4% paraformaldehyde at room temperature for 10 min and then washed twice with PBS. 70% (v/v) EtOH was then added and cells were stored at 4°C overnight. Cells were then washed twice with wash buffer (2x SSC with 10% formamide in RNase-free water). Following aspiration of the wash buffer, cells were incubated with hybridization buffer (2x SSC, 10% v/v deionized formamide, 10% (w/v) dextran sulfate, 2 mM vanadyl ribonucleoside complex, 1 mg/ml yeast tRNA (Ambion AM7119), 0.005% BSA (Ambion AM2616) with 1 ng/μl 5′ labeled FAM-oligo(dT20) probes (Genelink 26-4620-02) at 37°C overnight. Cells were then washed 3 times with pre-warmed wash buffer at 37°C.
 
-## Crystal violet assay
+### Crystal violet assay
 
 Cells were seeded at ~20% confluency in 6-well plates and grown for 24 hr before exposure to LED blue light. At the indicated treatment time, media was aspirated and replaced with staining solution (0.05% (w/v) crystal violet, 1% formaldehyde, 1% methanol in 1X PBS) for 20 min at room temperature followed by three washes with water.
 
-## CellTiter-Glo 2.0 cell viability assay
+### CellTiter-Glo 2.0 cell viability assay
 
 This assay determines the number of viable cells by measuring ATP, which indicates the presence of metabolically active cells. Cells were seeded at 4–5 × 103 cells/well in 96-well plates one day before exposure to blue-light LED. Following blue light exposure, cells were measured using the CellTiter-Glo 2.0 assay kit (Promega G9242) per the manufacturer’s instructions.
 
-## Neuron viability imaging
+### Neuron viability imaging
 
 Opto-Control and Opto-G3BP1 mRuby neurons were imaged on a DMI8 Widefield Microscope (Leica) with a 20x Plan Apo 0.80NA air objective using LAS X 3.4.2.18368 software (Leica). By saving the stage positions, a tilescan capture was taken in the same location every 2 hr using the 561 nm filter at 600 ms exposure. Between imaging, neurons were placed in the blue-light LED incubator until the next time point. Stitching was performed in LAS X, with each merged image totaling an area of ~37.82 mm2.
 
-## Overnight live-cell imaging
+### Overnight live-cell imaging
 
 Overnight live-cell imaging experiments were performed with an Opterra II Swept Field confocal microscope (Bruker) using Prairie View 5.4 Software. Opto-Control and Opto-G3BP1 cells were plated in the middle two wells of a 4-well Lab-Tek chambered coverglass (Nunc) at ~20% confluency the day prior to imaging. Immediately before imaging, the medium was changed to FluoroBrite DMEM medium supplemented with 10% fetal bovine serum and 1X GlutaMAX. During imaging, cells were maintained at 37°C and supplied with 5% CO2 using a Bold Line Cage Incubator (Okolabs) and an objective heater (Bioptechs). Imaging was performed using a 60x Plan Apo 1.40NA oil objective and Perfect Focus (Nikon) was engaged for the duration of the capture. Continuous activation data was acquired with a script made in Prairie View. The script was set to image the 561 nm channel with 100 ms exposure at 80 power in a multipoint capture once, followed by imaging the 445 nm channel with 2000 ms exposure at 200 power in a multipoint capture five times. This script was repeated continually for the duration of the experiment. Three fields of Opto-Control and Opto-G3BP1 cells, each with similar expression levels, were chosen per experiment. Analysis was performed using ImageJ.
 
-## Droplet digital PCR
+### Droplet digital PCR
 
 The QX200 droplet digital PCR (ddPCR) system (Bio-Rad) was used to measure gene expression levels in iPSCs and iPSC-derived neurons. The reaction was carried out in 20 μl emulsion PCR reactions that contain 20,000 droplets. Total RNAs were extracted by RNeasy Mini kit (Qiagen, 74104) and genomic DNA was removed by column by RNase-Free DNase (Qiagen, 79254). The ddPCR assay consisted of the following components: 1 × One-Step RT-ddPCR mix for probes (Bio-Rad, 1864021), forward primer (900 nM), reverse primer (900 nM), probe (FAM or HEX, 250 nM), nuclease-free water, and 5 ng RNA. All primers and probes were purchased from Thermo Fisher Scientific (MAP2, Hs00258900; OCT4, Hs04260367; BRN2, Hs00271595; FOXG1, Hs01850784; SYN1, Hs00199577) or Bio-Rad (RPP30, 10031228). Droplets were generated in a droplet generator (Bio-Rad) and PCR was performed in a C1000 Touch thermal cycler (Bio-Rad) according to the manufacturer's recommendation. After PCR, readout of positive versus negative droplets was performed using a QX200 droplet reader (Bio-Rad) and calculated by QuantaSoft software version 1.7.4.0917 (Bio-Rad).
 
-## Statistical analysis
+### Statistical analysis
 
 p>0.05 was considered not significant. *p≤0.05, **p<0.01, ***p<0.001, and ****p<0.0001 by two-tailed Student’s t test, one-way ANOVA or two-way ANOVA with post-test as indicated in figure legends, or Log-rank (Mantel-Cox) test as appropriate. Statistical analyses were performed in GraphPad Prism or Excel.

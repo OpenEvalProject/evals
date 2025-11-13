@@ -30,11 +30,11 @@ In this paper, we will first briefly explain the key design principles behind Ar
 
 ## Results
 
-## Implementation
+### Implementation
 
 Artistoo is a JavaScript library implemented as an ECMAScript 6 module, which can be loaded into an HTML page or accessed from within a Node.js command line application. Artistoo is an open-source library released under the MIT license and is freely available on GitHub at https://github.com/ingewortel/artistoo (copy archived at swh:1:rev:551ee76c3a972e86ac72ed7e977356a75d091763; Wortel and Textor, 2020).
 
-## Design philosophy
+#### Design philosophy
 
 Computational modelling research involves two important, but distinct categories of researchers that tend to have different types of expertise. On the one hand, there are the model builders, the scientists designing the models and performing the research; these are typically computational biologists with at least some basic programming skills. On the other hand, there are the model viewers, members of the broader research community who should be able to access and understand these models once they are built; this group may also include biologists and students without programming expertise.
 
@@ -46,37 +46,45 @@ The implementation in JavaScript allows Artistoo to resolve this problem by pres
 
 Model builders create these web applications using the Artistoo framework. They can do this at different levels of complexity: Artistoo users build models via simple changes to configuration objects (requiring very little knowledge of Artistoo or programming), or by incorporating the many available methods in a few simple lines of code; this requires no in-depth knowledge of the framework ‘under the hood’ architecture while still providing high flexibility. Finally, Artistoo developers have the ultimate freedom to add custom plugins to the existing framework where needed. Only this group requires in-depth knowledge of the framework and slightly more advanced JavaScript skills. The online documentation at https://artistoo.net/ helps both these groups to get started with the framework.
 
-## Approachability
+#### Approachability
 
 The methods currently implemented in the framework allow users to simulate, visualise, and analyse a wide range of CPM models (Figure 2A). Our Github repository contains example code for models of various biological processes (e.g. simulations of tissues, cell migration, and cell interactions). First-time users can download these HTML pages and modify parameters without needing to learn the implementation details of the framework, or to have programmed in JavaScript before. Alternatively, the Simulation class provides default methods for setting up and visualising simulations, allowing users to get started with the library without having to set up this ‘boilerplate’ code themselves. Advanced users can instead build simulations from scratch and customise them using the many available options and methods. Once they become accustomed with the framework, they can also develop and plug in their own code modules (see ‘Modularity and flexibility’ below). An example interactive HTML simulation (Figure 2B) is included in Appendix 1, Interactive Simulation 2. Full documentation and a user manual with step-by-step tutorials are available at https://artistoo.net/.
 
-## Modularity and flexibility
+![Figure 2.](https://cdn.elifesciences.org/articles/61288/elife-61288-fig2-v2.jpg)
+
+**Figure 2.:** (A) Artistoo supports simulation of diverse biological processes; (B) users can interact with browser-based simulations via sliders, in real time. (C) Artistoo performance is comparable to that of the Morpheus framework. Data show wall times (mean ± SD of five runs) for four CPM models implemented in both frameworks (see Materials and methods for implementation details). (D) Scalability of the cell sorting simulation; simulation speed in Monte Carlo Steps per second (MCS/s) for different grid sizes (mean ± SD of five runs). Red line indicates 20 frames per second, a minimum speed required for a ‘real-time’ simulation for the human visual system. See also Appendix 1 for interactive versions of the simulations shown in (B)–(D). Artistoo Node.js scripts for the simulations in (C) and (D) are available on GitHub (Wortel and Textor, 2020).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61288/elife-61288-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Different plot of the data from Figure 2D showing wall time (s) for the entire simulation of 2500 MCS at different domain sizes (mean ± SD of five runs); simulation duration scales linearly with the number of pixels on the grid.
+
+#### Modularity and flexibility
 
 A typical CPM simulation consists of different types of components: the grid on which cells are simulated, the energy rules governing cell behaviour in the model, separate processes such as cell proliferation or diffusion, and the visualisation and quantification methods used to produce outputs. A key strength of the CPM is that it can be easily extended with custom terms to model specific processes. To facilitate such customisation, we have set up the code in a highly modular fashion. These modules can be combined freely to build a custom simulation. In addition, developers can supply their own custom modules – containing any of the aforementioned simulation components – to integrate with the framework and to share with other users.
 
-## Performance and scalability
+#### Performance and scalability
 
 Although maximal performance is not a design goal of our framework per se, Artistoo should not be much slower than comparable frameworks either: running explorable simulations in real-time is only feasible if computations are reasonably efficient. Indeed, we implemented various simulations both in Artistoo and in Morpheus and found that both frameworks had similar performance (Figure 2C). In fact, Artistoo was slightly faster in all but one of these examples, although differences tended to be small; even in the case where Artistoo was slower (cell division), the difference in performance was not so large that real-time browser simulations became infeasible. Simulation speed scales linearly with the total number of pixels on the grid and does decrease for very large systems, but real-time simulations remain feasible for a reasonable range of grid sizes (Figure 2—figure supplement 1, Figure 2D). This would allow sharing of at least a reasonable prototype of larger-scale models.
 
-## Portability
+#### Portability
 
 To make Artistoo more accessible for users familiar with other frameworks, we have built a prototype for an online tool that converts Morpheus model files into Artistoo code (https://artistoo.net/converter.html). In some cases, models may not (yet) be fully portable due to differences in the types of models supported; in that case, the tool returns the closest possible analogue and logs any changes it had to make, providing suggestions to help users further. This tool offers a starting point for any users who wish to build Artistoo web applications from their existing models. A similar tool converts Artistoo models to Morpheus XML, allowing users to continue in another framework (e.g. for upscaling models, multiscale models, etc).
 
-## Applications
+### Applications
 
 We here highlight a number of settings where Artistoo might complement other available modelling frameworks, focusing on the unique feature of Artistoo: it allows users to build and share explorable simulations in a zero-install setting. We discuss how this opens up novel opportunities of sharing CPM-based research and provide examples from our own work.
 
-## Teaching
+#### Teaching
 
 When organising practical computer work in the context of classroom teaching, getting software to work on every student’s computer can consume a substantial amount of time and effort. Especially when teaching large classes in limited time, installing an entirely new modelling framework for a single-course assignment may not be appropriate. The zero-install feature of Artistoo might therefore be attractive for use of CPM modelling in the classroom. We frequently use the framework in teaching and found it feasible to let students run and understand CPM models in a workshop of just a few hours – even when students had no programming experience and were given just a single lecture on the CPM in advance. We provide an introductory assignment on the CPM in Application 1 in Appendix 2, which readers may use and adapt freely for their own courses, and refer to Interactive Simulation 1 in Appendix 1 for an interactive tutorial on the CPM.
 
-## Communication and open science
+#### Communication and open science
 
 While the move towards open science has prompted many to share their code with publications, understanding and using this code often remains challenging for readers who do not use similar models themselves. We envision that by sharing interactive Artistoo simulations via a simple URL, computational biologists can make their modelling research more accessible for the readers and reviewers of their papers; if readers can interact with model parameters themselves without the barrier of having to install special software, this may greatly improve the transparency of CPM research. This would allow others to evaluate these models more critically, as well as foster the exchange of ideas between scientists from different disciplines.
 
 In addition, interactive simulations can help communicate CPM-based science at conferences or in classrooms. We frequently use the framework reveal.js (Hattab and Contributors, 2020) to build slideshows in HTML, in which live, interactive Artistoo demonstrations help explain how models work. Similarly, interactive simulations can be shared on a conference poster via a QR code, which other attendees can explore on their mobile phone. We provide examples of both in the Supplementary Materials (Application 2, Application 3 in Appendix 2).
 
-## Research and collaboration
+#### Research and collaboration
 
 Although the CPM is extremely flexible in the types of behaviours it can model, it can be difficult to find the parameter ranges where these behaviours occur. We found that an interactive web page with instantaneous feedback, where the effect of changing parameters is visible in real time (Figure 2 and Interactive Simulation 7 in Appendix 1), can substantially speed up parameter selection. This visual approach also picks up on unpredicted behaviours and artefacts (e.g. cell breaking) that are difficult to detect from numerical outputs alone. Moreover, we note that sharing these interactive pages allows us to tune parameters in collaboration with experimental biologists, helping us improve our models at an early stage. Thus, building a web-based prototype of a simulation can speed up parameter tuning and help obtain higher quality models.
 
@@ -96,30 +104,61 @@ In summary, to the best of our knowledge, Artistoo is the first CPM simulation f
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morpheus</td>
+      <td>Publication Starruß et al., 2014</td>
+      <td>RRID:SCR_014975</td>
+      <td>version 2.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Artistoo</td>
+      <td>This paper, see also https://artistoo.net</td>
+      <td>RRID:SCR_020983</td>
+      <td>version 1.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
 This section contains implementation details of the simulations used to assess Artistoo (v1.0.0) performance. All simulations were run in the console mode (using Node.js, which contains the same JavaScript engine as the Chrome web browser). All Artistoo code is available in the repository https://github.com/ingewortel/artistoo-supplements/, as are interactive HTML versions of each simulation. Please visit https://ingewortel.github.io/artistoo-supplements/ for a web interface to access interactive simulations online. We refer to the provided code for details of the implementation, but summarise the most important settings here.
 
-## Framework comparisons
+### Framework comparisons
 
 To compare performance of Artistoo versus that of Morpheus (v2.1.0), we performed four different simulations in both frameworks. For this, we used the default examples provided with Morpheus and rebuilt similar simulations in Artistoo.
 
-## Game of life
+#### Game of life
 
 This is an implementation of the Game of Life, a Cellular Automaton (CA) of John Conway (see also Interactive Simulation 3 in Appendix 1). The simulation was run on a 50 × 50 pixel grid with random initial conditions. The simulation was run for 500 steps, storing a PNG image every 20 steps. This simulation is the Morpheus example Miscellaneous/GameOfLife.xml (version 4).
 
-## Protrusion model
+### Protrusion model
 
 This model of a migrating cell implements an actin-inspired migration model (Niculescu et al., 2015) (see also Interactive Simulation 4 in Appendix 1). A single cell was seeded in the middle of a 200 × 200 pixel grid. Two obstacles of radius 10 were placed at a distance of 50 pixels to the left and right of the cell, respectively. Simulations were run for 15,000 MCS, logging the cell’s centroid every 10 MCS and saving a PNG every 250 MCS. This simulation is the Morpheus example CPM/Protrusion_2D.xml (version 4).
 
-## Cell sorting
+### Cell sorting
 
 This simulation implements the classical CPM model published by Graner and Glazier, 1992 (see also Interactive Simulation 5 in Appendix 1). Fifty cells each of two cell types were seeded on a 200 × 200 pixel grid within a circle of radius 67 from the grid midpoint. Simulations were run for 2000 MCS, logging statistics every 10 MCS and saving a PNG every 100 MCS. This simulation is the Morpheus example CPM/CellSorting_2D.xml (version 4), where the StopTime field was changed from 2.5e4 to 2000.
 
-## Cell division
+### Cell division
 
 A CPM linked to cell division (see also Interactive Simulation 6 in Appendix 1) was simulated on a 500 × 500 pixel grid. The grid was initialised with 20 cells in a circle of radius 35 surrounding the grid midpoint. Simulations were run for 40,000 MCS, logging the number of cells every 100 MCS and saving a PNG every 1000 MCS. This simulation is the Morpheus example CPM/Proliferation_2D.xml (version 4).
 
-## Scalability of cell sorting
+### Scalability of cell sorting
 
 For the scalability simulations, simulations were run without outputting images. This allowed us to investigate the simulation speed separately from the time it takes to draw the entire grid. Note that if the drawing step becomes a limiting factor for running the simulation, it is always possible to speed up the process by drawing only once every few steps, or by choosing a more efficient drawing method (e.g. drawing only cell borders rather than entire cells).
 
-Simulations contained 1, 5, 10, 50, 100, 500, or 1000 cells per cell type. The grid dimensions were adaptively scaled such that x=y=1.5⁢Ptot, with Ptot the total number of pixels of all the cells. Cells were seeded within a radius 0.8⁢Ptot/π from the grid midpoint. Other settings were the same as in the cell sorting simulation described under Framework comparisons.
+Simulations contained 1, 5, 10, 50, 100, 500, or 1000 cells per cell type. The grid dimensions were adaptively scaled such that $x=y=\sqrt{1.5⁢P_{tot}}$, with $P_{tot}$ the total number of pixels of all the cells. Cells were seeded within a radius $0.8⁢\sqrt{P_{tot}/\pi}$ from the grid midpoint. Other settings were the same as in the cell sorting simulation described under Framework comparisons.

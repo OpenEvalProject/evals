@@ -25,21 +25,21 @@
 
 ### Affiliations
 
-1. https://ror.org/04twxam07 Department of Infectious Diseases, Infection Control and Employee Health, The University of Texas MD Anderson Cancer Center Houston United States
-2. https://ror.org/04twxam07 Integrative Medicine Program, The University of Texas MD Anderson Cancer Center Houston United States
-3. https://ror.org/04twxam07 Hospital Medicine, The University of Texas MD Anderson Cancer Center Houston United States
-4. https://ror.org/04twxam07 Pharmacy Clinical Programs, The University of Texas MD Anderson Cancer Center Houston United States
-5. https://ror.org/04twxam07 Emergency Medicine-Research, The University of Texas MD Anderson Cancer Center Houston United States
-6. https://ror.org/04twxam07 Gastroenterology Research, The University of Texas MD Anderson Cancer Center Houston United States
-7. https://ror.org/04twxam07 Breast Surgical Oncology, The University of Texas MD Anderson Cancer Center Houston United States
-8. https://ror.org/04twxam07 Cancer Therapeutics, The University of Texas MD Anderson Cancer Center Houston United States
-9. https://ror.org/04twxam07 Department of Emergency Medicine, The University of Texas MD Anderson Cancer Center Houston United States
+1. Department of Infectious Diseases, Infection Control and Employee Health, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+2. Integrative Medicine Program, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+3. Hospital Medicine, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+4. Pharmacy Clinical Programs, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+5. Emergency Medicine-Research, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+6. Gastroenterology Research, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+7. Breast Surgical Oncology, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+8. Cancer Therapeutics, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+9. Department of Emergency Medicine, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
 
 † Corresponding author
 
 ## Abstract
 
-An increasing number of observational studies have reported the persistence of symptoms following recovery from acute COVID-19 disease in non-cancer patients. The long-term consequences of COVID-19 are not fully understood particularly in the cancer patient population. The purpose of this study is to assess post-acute sequelae of SARS-CoV-2 infection (PASC) in cancer patients following acute COVID-19 recovery. We identified cancer patients at MD Anderson Cancer Center who were diagnosed with COVID-19 disease between March 1, 2020, and September 1, 2020, and followed them till May 2021. To assess PASC, we collected patients reported outcomes through questionnaires that were sent to patients daily for 14 days after COVID-19 diagnosis then weekly for 3 months, and then monthly thereafter. We also reviewed patients’ electronic medical records to capture the persistence or emergence of new COVID19-related symptoms reported during any clinic or hospital encounter beyond 30 days of the acute illness and up to 14 months. We included 312 cancer patients with a median age of 57 years (18–86). The majority of patients had solid tumors (75%). Of the 312 patients, 188 (60%) reported long COVID-19 symptoms with a median duration of 7 months and up to 14 months after COVID-19 diagnosis. The most common symptoms reported included fatigue (82%), sleep disturbances (78%), myalgias (67%), and gastrointestinal symptoms (61%), followed by headache, altered smell or taste, dyspnea (47%), and cough (46%). A higher number of females reported a persistence of symptoms compared to males (63% vs. 37%; p=0.036). Cancer type, neutropenia, lymphocytopenia, and hospital admission during acute COVID-19 disease were comparable in both groups. Among the 188 patients with PASC, only 16 (8.5%) were re-admitted for COVID-related reasons. More than one out of two cancer patients, and more likely females, report PASC that may persist beyond 6 months and even 1 year. The most common symptoms are non-respiratory and consist of fatigue, sleep disturbance, myalgia, and gastrointestinal symptoms. Most of the cancer patients with PASC were managed on outpatient basis with only 8.5% requiring a COVID-19-related re-admission. This research is supported by the National Institutes of Health/National Cancer Institute under award number P30CA016672, which supports the MD Anderson Cancer Center Clinical Trials Office. The funders had no role in study design, data collection, and interpretation, or the decision to submit the work for publication.
+Background:An increasing number of observational studies have reported the persistence of symptoms following recovery from acute COVID-19 disease in non-cancer patients. The long-term consequences of COVID-19 are not fully understood particularly in the cancer patient population. The purpose of this study is to assess post-acute sequelae of SARS-CoV-2 infection (PASC) in cancer patients following acute COVID-19 recovery.Methods:We identified cancer patients at MD Anderson Cancer Center who were diagnosed with COVID-19 disease between March 1, 2020, and September 1, 2020, and followed them till May 2021. To assess PASC, we collected patients reported outcomes through questionnaires that were sent to patients daily for 14 days after COVID-19 diagnosis then weekly for 3 months, and then monthly thereafter. We also reviewed patients’ electronic medical records to capture the persistence or emergence of new COVID19-related symptoms reported during any clinic or hospital encounter beyond 30 days of the acute illness and up to 14 months.Results:We included 312 cancer patients with a median age of 57 years (18–86). The majority of patients had solid tumors (75%). Of the 312 patients, 188 (60%) reported long COVID-19 symptoms with a median duration of 7 months and up to 14 months after COVID-19 diagnosis. The most common symptoms reported included fatigue (82%), sleep disturbances (78%), myalgias (67%), and gastrointestinal symptoms (61%), followed by headache, altered smell or taste, dyspnea (47%), and cough (46%). A higher number of females reported a persistence of symptoms compared to males (63% vs. 37%; p=0.036). Cancer type, neutropenia, lymphocytopenia, and hospital admission during acute COVID-19 disease were comparable in both groups. Among the 188 patients with PASC, only 16 (8.5%) were re-admitted for COVID-related reasons.Conclusions:More than one out of two cancer patients, and more likely females, report PASC that may persist beyond 6 months and even 1 year. The most common symptoms are non-respiratory and consist of fatigue, sleep disturbance, myalgia, and gastrointestinal symptoms. Most of the cancer patients with PASC were managed on outpatient basis with only 8.5% requiring a COVID-19-related re-admission.Funding:This research is supported by the National Institutes of Health/National Cancer Institute under award number P30CA016672, which supports the MD Anderson Cancer Center Clinical Trials Office. The funders had no role in study design, data collection, and interpretation, or the decision to submit the work for publication.
 
 ## Introduction
 
@@ -55,13 +55,350 @@ Several studies suggest the persistence of symptoms past 30 days in patients wit
 
 We identified patients with cancer receiving care at the University of Texas MD Anderson Cancer Center who were also diagnosed with COVID-19 disease between March 1, 2020, and September 1, 2020. None of the patients were vaccinated during the period of initial COVID diagnosis. We followed these patients as longitudinal cohort through patient-reported outcomes (PRO)-based remote symptom monitoring along with usual care with clinician visits. Patients were followed from March 2020 until May 31, 2021. Patient questionnaires were sent out remotely daily for 14 days after COVID-19 diagnosis then weekly for 3 months, and then monthly thereafter. Chart reviews were conducted for each patient’s encounter that included visits to our acute cancer care center, hospital re-admission, or clinic visit. Re-admissions were classified as either related or non-related to COVID-19 based on the reason for hospitalization as well as the reported signs and symptoms. PASC or long COVID-19 was defined as the persistence of COVID-19-related symptoms beyond 30 days of diagnosis or the emergence of new COVID19-related symptoms reported during a hospital or clinic encounter throughout the follow-up period that extended up to 14 months. COVID-19-related symptoms included, among others, fatigue, cough, chest tightness, dyspnea, headache, fever, altered smell or taste, myalgias, gastrointestinal symptoms (such as nausea, vomiting, or diarrhea), sleep disturbance, and limitations with activities of daily living. This study was approved by the institutional review board at MD Anderson. A waiver of informed consent was obtained since this study posed no risk to the patients given that no clinical or laboratory interventions were done.
 
-## Statistical analysis
+### Statistical analysis
 
 Categorical variables were compared using chi-square or Fisher’s exact test, as appropriate. Continuous variables were compared using Wilcoxon rank sum test. All the tests were two-sided with a significance level of 0.05. The statistical analyses were performed using SAS version 9.4 (SAS Institute Inc, Cary, NC, USA).
 
 ## Results
 
 Among the 602 patients who were diagnosed with COVID-19 during the study period, longitudinal data was collected on 312 patients that included 188 patients who developed PASC having reported symptoms that persisted at least 30 days after COVID-19 diagnosis and 124 who did not. The remaining patients (290) could not be followed or assessed beyond 30 days. The female gender rate was significantly higher in the PASC group compared to the non-PASC group (63% vs. 51%; p=0.036). The age and race were similar in both groups. The median age was 57, and 27% of both groups were above 65 years of age. While the rate of hypertension was higher in the non-PASC group (56% vs. 37%; p<0.001), the rate of other comorbidities such as COPD and congestive heart failures were similar in both groups. Furthermore, the type of underlying cancer was similar in both groups with the majority of patients having solid tumors. The type of underlying malignancy (hematological vs. solid tumor) as well as those with metastatic diseases were similar in both PASC and non-PASC groups. However, patients with PASC were significantly less likely to have refractory or relapse diseases (19% vs. 29%) In addition, the rate of neutropenia, lymphocytopenia, lower respiratory tract infections, hypoxia, oxygen requirement, inflammatory biomarkers, COVID-19-related hospital admissions, multiorgan failure as well as medical management of COVID-19 were similar in both groups (Table 1). Despite that, the rates of delay in cancer treatment after COVID were similar in both PASC and non-PASC patients (43% vs. 38%; p=0.44). Patients without PASC were more likely to have more acute severe COVID at diagnosis than patients who developed PASC (26% vs. 14%; p=0.009) and had a higher mortality beyond 30 days of initial COVID diagnosis (27% vs. 10%; p<0.0001). The 312 patients who were assessed beyond 30 days were followed for a median duration of 7 months and up to 14 months.
+
+**Table 1.**
+ Comparing COVID-19 cancer patients with and without long-term symptoms (at least 30 days after their COVID-19 diagnosis).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>Having long-term symptoms</th>
+      <th></th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>No</td>
+      <td>Yes</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(n=124)</td>
+      <td>(n=188)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>N (%)</td>
+      <td>N (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (years), median (range)</td>
+      <td>57 (18–85)</td>
+      <td>57 (21–86)</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>Age ≥65</td>
+      <td>33 (27)</td>
+      <td>50 (27)</td>
+      <td>&gt;0.99</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>61 (49)</td>
+      <td>70 (37)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>63 (51)</td>
+      <td>118 (63)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Race</td>
+      <td></td>
+      <td></td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>Caucasian</td>
+      <td>66 (53)</td>
+      <td>102 (54)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>24 (19)</td>
+      <td>26 (14)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hispanic</td>
+      <td>28 (23)</td>
+      <td>52 (28)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>5 (4)</td>
+      <td>8 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1 (1)</td>
+      <td>0 (0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prior COPD/bronchiolitis obliterans</td>
+      <td>4 (3)</td>
+      <td>7 (4)</td>
+      <td>&gt;0.99</td>
+    </tr>
+    <tr>
+      <td>History of hypertension</td>
+      <td>70 (56)</td>
+      <td>69/187 (37)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>History of heart failure</td>
+      <td>3 (2)</td>
+      <td>5/186 (3)</td>
+      <td>&gt;0.99</td>
+    </tr>
+    <tr>
+      <td>Type of cancer</td>
+      <td></td>
+      <td></td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Hematological malignancy</td>
+      <td>31 (25)</td>
+      <td>48 (26)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Solid tumor</td>
+      <td>93 (75)</td>
+      <td>140 (74)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Metastasis</td>
+      <td>42/93 (45)</td>
+      <td>74/140 (53)</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Status of cancer</td>
+      <td></td>
+      <td></td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>Being treated initially</td>
+      <td>65/123 (53)</td>
+      <td>96 (51)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Remission</td>
+      <td>22/123 (18)</td>
+      <td>56 (30)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refractory or relapse</td>
+      <td>36/123 (29)</td>
+      <td>36 (19)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemotherapy within 1 year prior to COVID-19</td>
+      <td>74 (60)</td>
+      <td>94 (50)</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Immunotherapy within 6 months prior to COVID-19</td>
+      <td>7/123 (6)</td>
+      <td>9/186 (5)</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>Radiation therapy within 6 months prior to COVID-19</td>
+      <td>12 (10)</td>
+      <td>20 (11)</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>Severe COVID-19 at diagnosis</td>
+      <td>32 (26)</td>
+      <td>25 (14)</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Cancer treatment delayed</td>
+      <td>46/108 (43)</td>
+      <td>66/174 (38)</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>Mortality*</td>
+      <td>33 (27)</td>
+      <td>18 (10)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Hypoxia at diagnosis</td>
+      <td>25 (20)</td>
+      <td>23/180 (13)</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Oxygen flow at diagnosis</td>
+      <td></td>
+      <td></td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>High flow</td>
+      <td>6/30 (20)</td>
+      <td>6/43 (14)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low flow</td>
+      <td>15/30 (50)</td>
+      <td>15/43 (35)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>9/30 (30)</td>
+      <td>22/43 (51)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-invasive ventilation at diagnosis</td>
+      <td>16 (13)</td>
+      <td>13/179 (7)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Lab values at COVID-19 diagnosis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALC &lt;1 K/µL</td>
+      <td>44/74 (59)</td>
+      <td>57/94 (61)</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td>ANC &lt;0.5 K/µL</td>
+      <td>5/75 (7)</td>
+      <td>5/89 (6)</td>
+      <td>&gt;0.99</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin &lt;10 g/dL</td>
+      <td>23/65 (35)</td>
+      <td>16/78 (21)</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>LDH ≥250 U/L</td>
+      <td>29/58 (50)</td>
+      <td>41/67 (61)</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>D-dimer ≥1 mcg/mL</td>
+      <td>28/54 (52)</td>
+      <td>27/61 (44)</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Ferritin ≥500 ng/mL</td>
+      <td>30/54 (56)</td>
+      <td>36/59 (61)</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>CRP ≥40 mg/L</td>
+      <td>32/56 (57)</td>
+      <td>43/63 (68)</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>IL-6 ≥25 pg/mL</td>
+      <td>18/41 (44)</td>
+      <td>20/48 (42)</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>LRTI at diagnosis or progression to LRTI</td>
+      <td>29 (23)</td>
+      <td>35/182 (19)</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Hospital admission</td>
+      <td>52 (42)</td>
+      <td>65 (35)</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Remdesivir treatment</td>
+      <td>17 (14)</td>
+      <td>18 (10)</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>IL-6 pathway inhibitors – tocilizumab</td>
+      <td>8 (6)</td>
+      <td>5 (3)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Convalescent plasma</td>
+      <td>8 (6)</td>
+      <td>15 (8)</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Steroids</td>
+      <td>18 (15)</td>
+      <td>19 (10)</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Multiorgan failure</td>
+      <td>6/121 (5)</td>
+      <td>8/180 (4)</td>
+      <td>0.84</td>
+    </tr>
+  </tbody>
+</table>
+
+_*1. Patients who died within 30 days after COVID-19 diagnosis were excluded from this study. 2. Mortality status was determined within 14 months after COVID-19 diagnosis._
 
 The most commonly reported symptoms among the 188 patients who developed PASC consisted of fatigue (82%), sleep disturbance (78%), myalgias (67%), gastrointestinal symptoms (62%), headache (47%), altered smell and taste (47%), dyspnea (47%), and cough (46%) (Figure 1).
 

@@ -54,7 +54,7 @@
 
 ## Abstract
 
-10.7554/eLife.40070.001 The glymphatic system is a brain-wide clearance pathway; its impairment contributes to the accumulation of amyloid-β. Influx of cerebrospinal fluid (CSF) depends upon the expression and perivascular localization of the astroglial water channel aquaporin-4 (AQP4). Prompted by a recent failure to find an effect of Aqp4 knock-out (KO) on CSF and interstitial fluid (ISF) tracer transport, five groups re-examined the importance of AQP4 in glymphatic transport. We concur that CSF influx is higher in wild-type mice than in four different Aqp4 KO lines and in one line that lacks perivascular AQP4 ( Snta1 KO). Meta-analysis of all studies demonstrated a significant decrease in tracer transport in KO mice and rats compared to controls. Meta-regression indicated that anesthesia, age, and tracer delivery explain the opposing results. We also report that intrastriatal injections suppress glymphatic function. This validates the role of AQP4 and shows that glymphatic studies must avoid the use of invasive procedures.
+The glymphatic system is a brain-wide clearance pathway; its impairment contributes to the accumulation of amyloid-β. Influx of cerebrospinal fluid (CSF) depends upon the expression and perivascular localization of the astroglial water channel aquaporin-4 (AQP4). Prompted by a recent failure to find an effect of Aqp4 knock-out (KO) on CSF and interstitial fluid (ISF) tracer transport, five groups re-examined the importance of AQP4 in glymphatic transport. We concur that CSF influx is higher in wild-type mice than in four different Aqp4 KO lines and in one line that lacks perivascular AQP4 (Snta1 KO). Meta-analysis of all studies demonstrated a significant decrease in tracer transport in KO mice and rats compared to controls. Meta-regression indicated that anesthesia, age, and tracer delivery explain the opposing results. We also report that intrastriatal injections suppress glymphatic function. This validates the role of AQP4 and shows that glymphatic studies must avoid the use of invasive procedures.
 
 ## Introduction
 
@@ -76,53 +76,53 @@ The study included data from five laboratories using four independently generate
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/40070/elife-40070-fig2-v3.jpg)
 
-**Figure 2.:** Aqp4 gene deletion reduced the penetration of intracisternally injected tracer into the brain parenchyma.Texas Red-conjugated dextran (TRd3, 3kD) was injected intracisternally into WT and Aqp4 KO mice. Thirty minutes after injection, the anesthetized animals were perfusion fixed, and the fluorescence was evaluated ex vivo. (a) Representative near infrared (NIR) fluorescence images of the dorsal and ventral whole-brains of four mice per genotype. (b-c) Quantification of the mean integrated optical density (MIOD) of TRd3 on the dorsal (b) and ventral (c) brain surface of WT (grey) and Aqp4 KO (purple) mice from 4.0 mm anterior to 8.0 mm posterior to bregma. (d) Representative images of coronal brain sections at +0.5 mm from bregma from five pairs of WT and Aqp4 KO mice showing TRd3 distribution within the brain. (e) High magnification micrographs of the hypothalamus (lined area in d) showing the fluorescence intensity of TRd3 within the perivascular space (star) and adjacent brain parenchyma (dotted line) of WT mice and Aqp4 KO mice, respectively. (f) Quantification of the percentage area of whole-slice fluorescence of the both genotypes for 6–8 forebrain sections (+1.7 to −0.7 mm from bregma) of each mouse. (g) Diagram showing the subregional analysis of brain sections at the level of 0.5 mm anterior to bregma. (h) Quantification of the mean fluorescence intensity (AU, arbitrary units) of TRd3 of the dorsal, ventral and lateral brain regions, respectively. (i-j) Quantification of the mean fluorescence intensity of TRd3 along the perivascular space and the interstitium adjacent to the vessels under the ventral surface of the hypothalamus of the both genotypes. Shades and error bars represent standard deviation. Data in Figure 2b and c were analyzed by repeated-measures ANOVA, N = 4 per group. Data in Figure 2f,h,i and j were analyzed by Student’s t-test. p-Values shown are comparisons between WT and Aqp4. ns: not significant (-/-Figure 2—source data 1).10.7554/eLife.40070.004Figure 2—source data 1.Figure 2.
+**Figure 2.:** Texas Red-conjugated dextran (TRd3, 3kD) was injected intracisternally into WT and Aqp4 KO mice. Thirty minutes after injection, the anesthetized animals were perfusion fixed, and the fluorescence was evaluated ex vivo. (a) Representative near infrared (NIR) fluorescence images of the dorsal and ventral whole-brains of four mice per genotype. (b-c) Quantification of the mean integrated optical density (MIOD) of TRd3 on the dorsal (b) and ventral (c) brain surface of WT (grey) and Aqp4 KO (purple) mice from 4.0 mm anterior to 8.0 mm posterior to bregma. (d) Representative images of coronal brain sections at +0.5 mm from bregma from five pairs of WT and Aqp4 KO mice showing TRd3 distribution within the brain. (e) High magnification micrographs of the hypothalamus (lined area in d) showing the fluorescence intensity of TRd3 within the perivascular space (star) and adjacent brain parenchyma (dotted line) of WT mice and Aqp4 KO mice, respectively. (f) Quantification of the percentage area of whole-slice fluorescence of the both genotypes for 6–8 forebrain sections (+1.7 to −0.7 mm from bregma) of each mouse. (g) Diagram showing the subregional analysis of brain sections at the level of 0.5 mm anterior to bregma. (h) Quantification of the mean fluorescence intensity (AU, arbitrary units) of TRd3 of the dorsal, ventral and lateral brain regions, respectively. (i-j) Quantification of the mean fluorescence intensity of TRd3 along the perivascular space and the interstitium adjacent to the vessels under the ventral surface of the hypothalamus of the both genotypes. Shades and error bars represent standard deviation. Data in Figure 2b and c were analyzed by repeated-measures ANOVA, N = 4 per group. Data in Figure 2f,h,i and j were analyzed by Student’s t-test. p-Values shown are comparisons between WT and Aqp4-/-. ns: not significant (Figure 2—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40070/elife-40070-fig3-v3.jpg)
 
-**Figure 3.:** Aqp4  mice display compromised CSF tracer infiltration under ketamine-xylazine anesthesia.-/-(a) Schematic diagram for CM injection of BDA tracer (left) and experiment schedule (right). (b) Examples of SA-enhanced BDA distribution 30 min after CM injection. Slices at an anterior-posterior position of bregma are presented for WT (upper) and Aqp4 (lower) mice. Depth profile is calculated for the cortical position 3 mm lateral to the midline. (-/-c) Mean depth profiles of SA-enhanced BDA signals for WT (black, N = 4) and Aqp4 (green, N = 9) mice. (-/-d) Mean SA-enhanced BDA signal intensities (3 mm lateral to the midline, depths 0–800 µm) along anterior-posterior positions for WT (black) and Aqp4 (green) mice. Shades and error bars represent SEM. *p < 0.05, **p < 0.01, t-test (-/-Figure 3—source data 1).10.7554/eLife.40070.006Figure 3—source data 1.Figure 3.
+**Figure 3.:** (a) Schematic diagram for CM injection of BDA tracer (left) and experiment schedule (right). (b) Examples of SA-enhanced BDA distribution 30 min after CM injection. Slices at an anterior-posterior position of bregma are presented for WT (upper) and Aqp4-/- (lower) mice. Depth profile is calculated for the cortical position 3 mm lateral to the midline. (c) Mean depth profiles of SA-enhanced BDA signals for WT (black, N = 4) and Aqp4-/- (green, N = 9) mice. (d) Mean SA-enhanced BDA signal intensities (3 mm lateral to the midline, depths 0–800 µm) along anterior-posterior positions for WT (black) and Aqp4-/- (green) mice. Shades and error bars represent SEM. *p < 0.05, **p < 0.01, t-test (Figure 3—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40070/elife-40070-fig4-v3.jpg)
 
-**Figure 4.:** Aqp4 KO mice.(a) Coronal sections from a C57BL/6 wild-type mouse (WT), CD1 background strain control (Aqp4), and +/+Aqp4 KO mice (Aqp4) showing a fluorescent CSF tracer, BSA-647 and co-labeling with DAPI. Scale bar: 1 mm (-/-b) Mean pixel intensity in arbitrary units (A.U.) for six brain sections of each mouse for all three groups. n = 3 (WT), 7 (Aqp4), 6 (+/+Aqp4). One-way ANOVA Tukey’s multiple comparisons test, Interaction term: p = 0.0110, F = 6.512, ns: not significant. (-/-c) Diagram showing the anterior-posterior range of the quantified coronal sections relative to bregma from (b). (d) Quantification of the slices shown in (c) + 1.2 to −1.8 mm from bregma. Repeated measures two-way ANOVA with Tukey’s multiple comparisons test, Interaction term: p = 0.038, F = 2.085, p values shown are comparisons of WT and Aqp4 vs. +/+Aqp4. (-/-e) Diagram depicting the ROIs included in the regional analysis of brain slices at +0.6 mm from bregma. CPu: caudoputamen; HT: hypothalamus; BF: basal forebrain; DC: dorsal cortex; LC: lateral cortex; VC: ventral cortex. (f) Mean pixel intensity of brain regions shown in (e) for coronal sections + 0.6 mm from bregma. Repeated measures two-way ANOVA Tukey’s multiple comparisons test, Interaction term: p < 0.0001, F = 8.109. Data is presented as mean ±SEM (Figure 4—source data 1).10.7554/eLife.40070.008Figure 4—source data 1.Figure 4.
+**Figure 4.:** (a) Coronal sections from a C57BL/6 wild-type mouse (WT), CD1 background strain control (Aqp4+/+), and Aqp4 KO mice (Aqp4-/-) showing a fluorescent CSF tracer, BSA-647 and co-labeling with DAPI. Scale bar: 1 mm (b) Mean pixel intensity in arbitrary units (A.U.) for six brain sections of each mouse for all three groups. n = 3 (WT), 7 (Aqp4+/+), 6 (Aqp4-/-). One-way ANOVA Tukey’s multiple comparisons test, Interaction term: p = 0.0110, F = 6.512, ns: not significant. (c) Diagram showing the anterior-posterior range of the quantified coronal sections relative to bregma from (b). (d) Quantification of the slices shown in (c) + 1.2 to −1.8 mm from bregma. Repeated measures two-way ANOVA with Tukey’s multiple comparisons test, Interaction term: p = 0.038, F = 2.085, p values shown are comparisons of WT and Aqp4+/+ vs. Aqp4-/-. (e) Diagram depicting the ROIs included in the regional analysis of brain slices at +0.6 mm from bregma. CPu: caudoputamen; HT: hypothalamus; BF: basal forebrain; DC: dorsal cortex; LC: lateral cortex; VC: ventral cortex. (f) Mean pixel intensity of brain regions shown in (e) for coronal sections + 0.6 mm from bregma. Repeated measures two-way ANOVA Tukey’s multiple comparisons test, Interaction term: p < 0.0001, F = 8.109. Data is presented as mean ±SEM (Figure 4—source data 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40070/elife-40070-fig5-v3.jpg)
 
-**Figure 5.:** (a) Representative images from an in vivo transcranial optical imaging experiment of a WT control mice (Aqp4) and +/+Aqp4 KO (Aqp4 mice starting at 15 min after intracisternal delivery of 10 µl (2 µl/min) of a 66 kDa fluorescent tracer, BSA-647. Scale bar: 2 mm. (-/-)b) Mean pixel intensity (MPI) of BSA-647 over a 30 min experiment, imaging was started at the beginning of the injection. Two-way repeated measures ANOVA with Sidak’s multiple comparisons test, overall model *p = 0.0329, multiple comparisons *p < 0.05; n = 6–7/group. (c) Coronal sections collected 30 min after intracisternal injection of two varying molecular size tracers, 3 kDa Texas Red dextran and BSA-647. Mean pixel intensity for a (d) 3 kDa dextran and (e) BSA from six coronal sections between +1.2 and −1.8 mm from bregma for each animal. Two-tailed unpaired t-test, **p = 0.0097, ****p < 0.0001; n = 6–8/group. (f) Coronal section from an Aqp4 mouse stained and imaged for AQP4 (magenta) and BSA-647 tracer (cyan). (+/+g) Mean pixel intensity from a replicate experiment quantified the same as (e). Two-tailed unpaired t-test, *p = 0.0335, n = 4–6/group. (h) Mean tracer penetration depth profiles normalized to the fluorescence at the pial surface of a coronal section at bregma from the set of experiments displayed in (g). The line was placed orthogonal to the cortical surface at the most dorsal position where tracer could be found at the pial surface (f). Tracer depth in the WT mice was measured at the same position as the KO mouse. Two-way repeated measures ANOVA with Sidak’s multiple comparisons test, overall model ****p < 0.0001, multiple comparisons ****p < 0.0001, n = 4–6/group. (i) Cortical depth at which the fluorescence at the surface decreases by half for the profiles in (h). Two-tailed unpaired t-test, *p = 0.0161, n = 4–6/group. (j) Relative copy numbers (RCN) of the Aqp4 gene locus and the excision sequence (k) showing successful deletion of Aqp4 exon 1–3. RCN was quantified by qPCR for mice used in the experiment in (g). Data expressed as mean ±SEM (Figure 5—source data 1).10.7554/eLife.40070.010Figure 5—source data 1.Figure 5.
+**Figure 5.:** (a) Representative images from an in vivo transcranial optical imaging experiment of a WT control mice (Aqp4+/+) and Aqp4 KO (Aqp4-/-) mice starting at 15 min after intracisternal delivery of 10 µl (2 µl/min) of a 66 kDa fluorescent tracer, BSA-647. Scale bar: 2 mm. (b) Mean pixel intensity (MPI) of BSA-647 over a 30 min experiment, imaging was started at the beginning of the injection. Two-way repeated measures ANOVA with Sidak’s multiple comparisons test, overall model *p = 0.0329, multiple comparisons *p < 0.05; n = 6–7/group. (c) Coronal sections collected 30 min after intracisternal injection of two varying molecular size tracers, 3 kDa Texas Red dextran and BSA-647. Mean pixel intensity for a (d) 3 kDa dextran and (e) BSA from six coronal sections between +1.2 and −1.8 mm from bregma for each animal. Two-tailed unpaired t-test, **p = 0.0097, ****p < 0.0001; n = 6–8/group. (f) Coronal section from an Aqp4+/+ mouse stained and imaged for AQP4 (magenta) and BSA-647 tracer (cyan). (g) Mean pixel intensity from a replicate experiment quantified the same as (e). Two-tailed unpaired t-test, *p = 0.0335, n = 4–6/group. (h) Mean tracer penetration depth profiles normalized to the fluorescence at the pial surface of a coronal section at bregma from the set of experiments displayed in (g). The line was placed orthogonal to the cortical surface at the most dorsal position where tracer could be found at the pial surface (f). Tracer depth in the WT mice was measured at the same position as the KO mouse. Two-way repeated measures ANOVA with Sidak’s multiple comparisons test, overall model ****p < 0.0001, multiple comparisons ****p < 0.0001, n = 4–6/group. (i) Cortical depth at which the fluorescence at the surface decreases by half for the profiles in (h). Two-tailed unpaired t-test, *p = 0.0161, n = 4–6/group. (j) Relative copy numbers (RCN) of the Aqp4 gene locus and the excision sequence (k) showing successful deletion of Aqp4 exon 1–3. RCN was quantified by qPCR for mice used in the experiment in (g). Data expressed as mean ±SEM (Figure 5—source data 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/40070/elife-40070-fig6-v3.jpg)
 
-**Figure 6.:** Dynamic contrast enhanced magnetic resonance imaging (DCE-MRI) was acquired on a 11.75 preclinical MRI scanner, and was used to characterize the effect of α-syntrophin deletion on gaditeridol influx into the brain. Representative images of AQP4 perivascular localization in wild-type mice (a), and the loss of perivascular localization of AQP4 seen in the Snta1 mice (-/-b). Scale bar: 50 µm, inset scale bar: 10 µm. (c-h) Coronal slice of T1-weighted images acquired by DCE-MRI demonstrate the reduced influx of gaditeridol contrast agent into the parenchyma in Snta1 mice relative to wild-type mice at 30 and 60 min. Scale bar: 1 mm. (-/-i-n) Quantification of T1 weighted signal in various brain subregions normalized to baseline at each time point. Traces for each individual animal are presented (lines) along with the summary statistics (mean ±SEM, two-way ANOVA). WT n = 5, ASYNKO n = 7. CTx = cortex (p = 0.0035) Hip = hippocampus (p = 0.0003) Subcortical = subcortical regions (p = 0.0185) 3V = 3rd Ventricle (p = 0.0284) Total (p = 0.0085) (Figure 6—source data 1).10.7554/eLife.40070.012Figure 6—source data 1.Figure 6.
+**Figure 6.:** Dynamic contrast enhanced magnetic resonance imaging (DCE-MRI) was acquired on a 11.75 preclinical MRI scanner, and was used to characterize the effect of α-syntrophin deletion on gaditeridol influx into the brain. Representative images of AQP4 perivascular localization in wild-type mice (a), and the loss of perivascular localization of AQP4 seen in the Snta1-/- mice (b). Scale bar: 50 µm, inset scale bar: 10 µm. (c-h) Coronal slice of T1-weighted images acquired by DCE-MRI demonstrate the reduced influx of gaditeridol contrast agent into the parenchyma in Snta1-/- mice relative to wild-type mice at 30 and 60 min. Scale bar: 1 mm. (i-n) Quantification of T1 weighted signal in various brain subregions normalized to baseline at each time point. Traces for each individual animal are presented (lines) along with the summary statistics (mean ±SEM, two-way ANOVA). WT n = 5, ASYNKO n = 7. CTx = cortex (p = 0.0035) Hip = hippocampus (p = 0.0003) Subcortical = subcortical regions (p = 0.0185) 3V = 3rd Ventricle (p = 0.0284) Total (p = 0.0085) (Figure 6—source data 1).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/40070/elife-40070-fig7-v3.jpg)
 
-**Figure 7.:** (a) KX-anesthesized mice received an injection into striatum. After injection, the glass capillary was slowly removed and the skull sealed with silicone elastomer. One hour later, mice received an intracisternal injection of a 66 kDa BSA-647 tracer and brains were removed and drop fixed 60 min later. (b) Control mice only received the intracisternal injection but not the intrastriatal injection. Mice that received an intrastriatal injection were injected with either HiLyte 488-amyloid-β1-40 or an aCSF sham. (c) Global glymphatic tracer influx was quantified from a total of six coronal sections between +1.2 and −1.8 mm from bregma for each animal. Ordinary one-way ANOVA posthoc Tukey’s multiple comparisons test, Control vs. Aβ-injected: ***p = 0.0006; Control vs. Sham: ***p = 0.0001; n = 6–8/group (Figure 7—source data 1).10.7554/eLife.40070.014Figure 7—source data 1.Figure 7.
+**Figure 7.:** (a) KX-anesthesized mice received an injection into striatum. After injection, the glass capillary was slowly removed and the skull sealed with silicone elastomer. One hour later, mice received an intracisternal injection of a 66 kDa BSA-647 tracer and brains were removed and drop fixed 60 min later. (b) Control mice only received the intracisternal injection but not the intrastriatal injection. Mice that received an intrastriatal injection were injected with either HiLyte 488-amyloid-β1-40 or an aCSF sham. (c) Global glymphatic tracer influx was quantified from a total of six coronal sections between +1.2 and −1.8 mm from bregma for each animal. Ordinary one-way ANOVA posthoc Tukey’s multiple comparisons test, Control vs. Aβ-injected: ***p = 0.0006; Control vs. Sham: ***p = 0.0001; n = 6–8/group (Figure 7—source data 1).
 
-## NMU: reduced influx of a fluorescent CSF tracer in Aqp4 KO mice
+### NMU: reduced influx of a fluorescent CSF tracer in Aqp4 KO mice
 
 We injected the fluorescent tracer Texas Red-dextran (3 kD, TRd3) intracisternally, as previously described (Iliff et al., 2012). We first compared overall penetration of TRd3 into the dorsal and ventral surfaces of the whole-brain between WT and Aqp4 KO (Aqp4-/-) mice using ex vivo near infrared fluorescence imaging. Quantification of the mean integrated optical density (MIOD) of TRd3 on the dorsal and ventral brain surface along anterior-posterior position of bregma showed a significant reduction in Aqp4 KO mice compared with WT mice (Figure 2a–c). Interestingly, CSF tracer entry into the ventral brain was higher than into the dorsal brain. We also compared penetration of TRd3 into the brain on the serial coronal forebrain slides (+1.7 to −0.7 mm from bregma) between the two genotypes. The percentage area of whole-slice fluorescence was significantly reduced in Aqp4 KO mice compared to WT controls (Figure 2d,f). Subregional quantification on the coronal section at the level of 0.5 mm anterior to the bregma showed that penetration of CSF tracer was high in the ventral and lateral brain surface of WT mice, but was comparable in the dorsal surface of the brain with Aqp4 KO mice (Figure 2g–h), further supporting difference in brain regions of CSF tracer influx. Specifically, Aqp4 KO markedly impaired the influx of TR-d3 into both the perivascular space and the brain parenchyma in the hypothalamus, one of the brain regions with the highest expression of AQP4 (Fan et al., 2005; Nielsen et al., 1997) (Figure 2e). Quantification of the intensity of TR-d3 as a function of the distance from the brain surface showed rapid decay of tracer with increasing distance from the ventral surface of the hypothalamus in Aqp4 KO mice. The tracer was almost undetectable at 500 µm below the brain surface in both the perivascular space and in the brain parenchyma in Aqp4 KO mice. By contrast, the TR-d3 fluorescence intensity remained at 90% of the pial surface intensity to a depth of 500 µm in the perivascular space as well as in the adjacent parenchyma in WT mice (Figure 2i–j). Taken together, these results replicate the previous finding that AQP4 facilitates the transfer of intracisternally injected TR-d3 from the CSF into the parenchyma (Iliff et al., 2012).
 
-## RIKEN: histological enhancement of CSF tracer reveals compromised parenchymal tracer infiltration in Aqp4 KO mice
+### RIKEN: histological enhancement of CSF tracer reveals compromised parenchymal tracer infiltration in Aqp4 KO mice
 
 The RIKEN and Keio group used another strain of Aqp4 KO mice, in which the exon 1 of Aqp4 is replaced with eGFP. In this experiment, biotinylated dextran amine (BDA, 0.5%, 70 kDa) was injected under deep ketamine-xylazine (KX) anesthesia (Figure 3a). Because Aqp4 KO mice express eGFP, we used Alexa 594-conjugated streptavidin (SA) to visualize BDA. This approach has an advantage that BDA signals are amplified by the histological processing and clearly distinguished from intrinsic fluorescence (i.e. before histological processing). As a result, BDA distribution appeared less extensive in the cortex of Aqp4 KO mice (Figure 3b). Quantification of SA-enhanced BDA signals in the cortical parenchyma showed depth-dependent profiles that decayed with cortical depth after the initial peak for both wild type and Aqp4 KO mice. Notably, BDA signals in the cortex of Aqp4 KO mice are of lower intensity and penetrated less into the parenchyma at an anterior-posterior position of bregma (Figure 3c). Next, we examined if the compromised BDA penetration in Aqp4 KO mice is generally observed across the anterior-posterior extent of the cortex. Indeed, Figure 3d shows that BDA distribution in Aqp4 KO cortex is broadly compromised.
 
-## UNC: CSF tracer influx is decreased in Aqp4 KO mice compared to background strain controls and wild-type mice
+### UNC: CSF tracer influx is decreased in Aqp4 KO mice compared to background strain controls and wild-type mice
 
 We assessed the reproducibility of the experiments performed in Smith et al. (2017) by using the same Aqp4 KO mouse line but employing the original methodology reported by Iliff et al. (2012). In order to determine if the background strains of the different Aqp4 KO lines have an effect on CSF inflow, we included both CD1 and C57BL/6 controls. We compared the intraparenchymal entry of Alexa Fluor 647-conjugated bovine serum albumin (66 kDa, BSA-647) delivered into cisterna magna of ketamine/xylazine-anesthetized mice. Thirty minutes after the injection, the brains were harvested, and tracer distribution evaluated in coronal sections as described previously (Iliff et al., 2012). Parenchymal distribution of tracer showed a significant reduction in Aqp4 KO mice compared with both CD1 mice (Aqp4+/+) and wild-type C57BL/6 (WT) mice (Figure 4a–b). No significant difference in global tracer influx was seen between the two control groups. To evaluate if CSF influx was globally decreased or only limited to a particular brain region, we analyzed sections at different anterior-posterior coordinates as analyzed in Smith et al. (2017) (Figure 4c). Differences in CSF influx between Aqp4 KO and controls was most notable in coronal sections anterior to bregma (Figure 4d), perhaps reflecting that these sections include the cortical segment of the middle cerebral artery, a main site of CSF influx. Regional quantification showed that this difference was the result of decreased tracer penetration in the hypothalamus and areas of the basal forebrain (Figure 4e–f). Interestingly, CSF tracer entry along the ventral and lateral cortex was highest in the WT compared to the Aqp4+/+ control (Figure 4f) suggesting possible strain-dependent differences. We conclude that it is possible to replicate the original findings presented in Iliff et al. in the mouse line reported by Smith et al. when using similar methodology.
 
-## URMC: cerebrospinal fluid entry to brain occurs along the glymphatic pathway and is facilitated by the presence of AQP4 water channels
+### URMC: cerebrospinal fluid entry to brain occurs along the glymphatic pathway and is facilitated by the presence of AQP4 water channels
 
 To evaluate the entry pathways of CSF to the brain we infused Alexa 647-conjugated bovine serum albumin (BSA) and a Texas Red 3 kDa dextran into the cisterna magna of anesthetized WT and Aqp4 KO mice. In vivo transcranial optical imaging (Plog et al., 2018) of the far-red BSA-647 showed more CSF influx in the WT compared to the KO (Figure 5a and b). Tracer evidently entered the brain parenchyma through a network of perivascular spaces of the large cerebral arteries on the pial surface. More tracer could be found on the dorsal cortical surface of WT mice compared to Aqp4 KO mice. After 30 min, brains were extracted and immersion-fixed. The tracer distribution was quantified in coronal sections of both WT and Aqp4 null mice. The KO mice had less influx for both the 3 kDa dextran and the 66 kDa BSA compared to the WT (~32.7% and ~47.06%, respectively), despite the 22x difference in molecular weight (Figure 5c–e). In a replicate experiment where the injection volume and injection rate was half of the previous, Aqp4 deletion also reduced CSF entry through the glymphatic pathway by ~42.4% (Figure 5f and g). The relative suppression of CSF tracer influx observed is comparable across previously reported findings, despite use of different tracer molecules and injection paradigms (Iliff et al., 2012). The depth of tracer penetration from the cortical surface was quantified using a similar approach to that reported in Smith et al. (2017) (Figure 5f and h). Tracer penetration into brain was found to be ~2 fold higher in the WT than in the KO mice (Figure 5i). To ensure that the mice were in fact knockouts, mice were genotyped using qPCR for both the Aqp4 locus (Figure 5j) and the excision sequence (Figure 5k). The results confirmed that all mice were either homozygous for the Aqp4 locus (Aqp4+/+) or were homozygous knockouts (Aqp4-/-) possessing no copies of exon 1–3 of the Aqp4 gene.
 
-## OHSU: reduced glymphatic CSF influx in Snta1 KO mice with loss of polarized expression of AQP4 in vascular endfeet of astrocytes
+### OHSU: reduced glymphatic CSF influx in Snta1 KO mice with loss of polarized expression of AQP4 in vascular endfeet of astrocytes
 
 To assess the role of perivascular astrocytic localization of AQP4 in mediating CSF flux into the brain parenchyma, we utilized the Snta1 KO mouse line. These mice lack expression of the adaptor protein α-syntrophin, which links AQP4 to the dystrophin associated complex and is critical for maintenance of the perivascular localization of AQP4 (Jessen et al., 2015). Immunolabeling of AQP4 illustrates the loss of AQP4 perivascular localization in the Snta1 KO mice (Figure 6a–b). Higher magnification imaging reveals that, while perivascular localization is lost, widespread AQP4 expression is still detectable by immunofluorescence, consistent with a previous characterization of the mouse line (Figure 6a–b insets (Neely et al., 2001)). We next sought to determine if parenchymal CSF influx kinetics are altered when perivascular AQP4 localization is lost. Here, we used dynamic contrast-enhanced magnetic resonance imaging (DCE-MRI) to measure the influx of the contrast agent gadoteridol (Gad) into brain parenchyma after intracisternal injection. We performed serial T1-weighted imaging at 10 min intervals following administration of the contrast agent (Figure 6c–h). At 30 min after the start of the injection, elevated levels of Gad were detected in both WT mice and Snta1 KO mice, particularly along the ventral surface of the brain (Figure 6e–f), but by 60 min Gad signal within the parenchyma of Snta1 KO mice was significantly reduced compared to wild type mice (Figure 6g,h,n). Regional assessment revealed decreased signal in Snta1 KO mice across brain regions, which was most pronounced in cortex and hippocampus compared to subcortical brain regions and within the ventricles (Figure 6j–m). Taken together, these data illustrate a role for α-syntrophin in facilitating CSF-ISF exchange and, by extension, support the reported role of AQP4 in this process. Furthermore, these results suggest that the perivascular localization of AQP4 contributes to the kinetics of CSF influx into the brain parenchyma.
 
-## Insertion of an injection pipette in striatum is linked to a global suppression of CSF influx
+### Insertion of an injection pipette in striatum is linked to a global suppression of CSF influx
 
 Smith et al. (2017) questioned the existence of bulk flow within the brain parenchyma based on imaging tracer dispersion following local injections in cortex or striatum. The tracers were delivered by glass pipettes inserted through a cranial burr hole. The surgical procedure associated with insertion of glass pipettes is obviously traumatic. Since acute and chronic traumatic injury markedly suppress CSF influx (Iliff et al., 2014), we questioned the validity of studying interstitial tracer dispersion using an invasive approach. To this end, we compared CSF tracer (BSA-647, 66 kDa) influx in three groups of mice anesthetized with KX: (i) controls with no surgery beyond CM injection, (ii) insertion of a glass pipette (12 µm diameter tip) and injection of 20 nl (4 nl/min) HiLyte 488-amyloid-β1-40 in aCSF, or (iii) same as group two but HiLyte 488-amyloid-β1-40 was not added to the 20 nl aCSF (Figure 1f). One hour later, the BSA-647 tracer was injected into cisterna magna and allowed to circulate for 1 hr before the brain was harvested, immersion-fixed, and the distribution of BSA-647 analyzed in coronal brain sections (Figure 7a–b). The analysis showed that the two groups exposed to invasive surgery exhibited markedly suppressed CSF tracer influx compared with the control group (Figure 7c). The suppression of CSF tracer influx in animals with insertion of the glass pipettes was symmetric with no difference in tracer influx between the ipsilateral and the contralateral hemisphere (p > 0.05, 3–5 slices per animal, n = 7, Wilcoxon rank-sum test). These observations show that invasive procedures acutely suppresses brain-wide CSF influx and that tracer injection should not be used in the study of the glymphatic system.​
 
-## Meta-analysis
+### Meta-analysis
 
 A potential cause of conflicting results could be due to varying methodology used in each study. We used meta-analysis to evaluate this heterogeneity and better understand the relationship between AQP4 and CSF-ISF transport using all of the available literature that evaluated tracer injections in global Aqp4 KO and wild-type mice. Studies were largely divided into two types: 1) intracisternal and 2) intracerebral tracer injections (Figure 8a–b), a separate meta-analysis was conducted for each of these two main experimental approaches.
 
@@ -130,11 +130,11 @@ A potential cause of conflicting results could be due to varying methodology use
 
 **Figure 8.:** (a) Meta-analysis from experiments that delivered either fluorescence- or radio-labeled tracers into the cisterna magna of both Aqp4 KO and wild-type rodents. (b) Meta-analysis from studies that delivered intracerebral tracers to evaluate clearance or transport of tracers out of the brain. p-Value is from the overall random effects model. Data in forest plots presented as standardized mean difference (SMD) with a 95% confidence interval (CI). Th: thalamus; Cn: caudate nucleus.
 
-## CSF influx
+#### CSF influx
 
 The search for studies that delivered tracers into the cisterna magna to evaluate CSF entry yielded a total of 13 eligible independent datasets from six different laboratories (Supplementary file 1). Experiments were done in a total of 144 mice (92.4%) and rats (7.6%) from five different Aqp4 KO lines (UIO: 50.7%; UCSF mouse: 25.7%; RIKEN: 9.03%, UCSF rat: 7.64%, and NMU: 6.94%) with a wide age range (6–24 weeks), the age of the rat line was not reported. Results were obtained using three different anesthetic protocols (ketamine/xylazine: 68.8%; tribromoethanol: 24.3%; chloral hydrate: 6.94%) and it was not possible to determine sex due to variable reporting. Experiments consisted of the delivery of fluorescently- (86.1%) and radioisotope-labeled (13.9%) tracers that ranged in size (4.5–70 kDa) and concentration. Tracer delivery varied in total volume (5–10 µl) and the injection rate (1–2 µl/min) while experiment duration ranged from 15 to 30 min. Standardized mean differences (SMD) were used in the meta-analysis to account for different outcome measures (e.g. fluorescence intensity, thresholded area, % injected radiation), and demonstrated a significant overall decrease in tracer entry in Aqp4 KO mice compared to controls (SMD with 95% confidence interval: −1.70 [−2.49; −0.90]; p<0.0001) with a high degree of interstudy heterogeneity (I2 = 73.1%; p<0.0001; Figure 8a). Leave-one-out and meta-regression sensitivity analyses were used to explore the sources of heterogeneity. As expected based on the direction and magnitude of the effect estimates reported in the studies, the high degree of heterogeneity was primarily caused by three datasets extracted from Smith et al. We could not confidently determine from the text of these studies whether these experimental figures were based on separate, independent experiments, or whether they were data collected in the same set of mice. Due to this uncertainty, we conducted leave-one-out analyses that would recapitulate all possible scenarios. The analysis showed that when these data sets were excluded, there was a reduction in heterogeneity (I2 = 65.7%, 70.3%, and 71.4%; p = 0.0007, p = 0.0001 and p < 0.0001). When all three data sets from this publication were excluded, the heterogeneity becomes non-significant (I2 = 0.0%, p = 0.4622). Due to the relevance of this study, we included all data sets in the final results reported (Supplementary file 1). Using meta-regression to further explore sources of heterogeneity, we tested whether the: KO line, age, anesthesia type, tracer properties, injection paradigm, experiment duration, and detection method were significant covariates (Supplementary file 1). The KO line used (p = 0.0001, Test of Moderators), the age of the mice (p = 0.0006), the anesthetic protocol (p < 0.0001), and the injection rate (p < 0.0001) explained a significant proportion of the observed variance between the datasets. The variables that explained the largest proportion of heterogeneity were anesthesia type and injection rate. The three data sets that reported null results used tribromoethanol (Avertin), an anesthetic that was not used in any other studies (all of which found a significant association). The same three data sets were also the only ones to report variable injection rates (10 µl delivered over 5–7 min) in comparison with the remaining studies that used exact injection rates. Thus, it is possible that the choice of anesthesia type and injection rate could explain the heterogeneity. Animal age was also a significant source of heterogeneity, accounting for 85.28% of the variance between studies. This may be in part explained by the fact that two out of the three data sets that demonstrated no association were completed in mice that were older than the mice used in the majority of other studies and reported the largest age range (12–24 weeks). Although it is not possible to determine the exact role that these covariates played in the observed results, both anesthesia and aging have been shown to modify the degree of intracisternal tracer entry, providing another potential explanation for the observed heterogeneity (Benveniste et al., 2017; Kress et al., 2014). Similarly, the heterogeneity stemming from the KO line may also be explained by the fact that the majority of UCSF KO mice (72.9%) were in the null studies. Interestingly, the fourth study (UNC, this report) that utilized the UCSF KO mouse line, but an alternate anesthetic (ketamine/xylazine) observed a significant effect. Unfortunately, due to low study number we were unable to include two covariates (e.g. anesthesia type and KO line) in the meta-regression to test this interaction. Additional covariates including tracer properties, the injection paradigm, and the detection method were not significant sources of heterogeneity suggesting that multiple experimental methodologies should be able to observe an effect between KO and control.
 
-## ISF efflux
+#### ISF efflux
 
 There were nine eligible studies produced by four independent research groups that injected tracers or contrast agents into the brain of Aqp4 KO or wild-type rodents in order to evaluate brain clearance or ISF efflux (Supplementary file 2). These experiments were conducted in a total of 87 rodents from both mouse (72.4%) and rat (27.6%) KO lines. There were two murine lines (UIO: 57.5%; UCSF: 14.9%) and one rat line (Beijing: 27.6%) generated by three separate groups. Age of the mouse lines ranged broadly (0–24 weeks), while the age of the rat line could not be confirmed but a weight range of 250–300 g was reported. Four anesthetic protocols were used for these experiments (ketamine/xylazine: 57.5%; hypothermia: 6.9%; tribromoethanol: 8.0%; sodium pentobarbital: 27.6%). Fluorescence-conjugated tracers (14.9%), radio-labeled (57.5%) tracers, and gadolinium-based contrast agents (27.6%) that ranged in size (0.18–45 kDa), concentration, and where they were delivered within the brain (striatum: 40.2%; cortex: 39.1%; thalamus: 13.8%; lateral ventricle: 6.9%). Tracer delivery varied in total volume (0.02–3 µl) and injection rate (0.017–3 µl/min), differing based on the injection site or whether the experiment was done in mice or rats. Experiment durations ranged between 45 and 240 min and one of the studies (Smith et al.) did not report this. Results from the overall meta-analysis showed a significant decrease in the transport of the injected substance in Aqp4 KO mice relative to controls (−1.88 [-2.88; −0.87]; p = 0.0003) with high heterogeneity (I2 = 70.0%, p = 0.0008; Figure 8b). Similar to the previous model, leave-one-out analysis of the two null datasets reduced the heterogeneity (I2 = 60.1%; p = 0.0143 and I2 = 65.3%; p = 0.0053, respectively) and removing both datasets made the heterogeneity non-significant (I2 = 17.2%; p = 0.299). The same covariates used in the first model were used for meta-regression analysis, in addition to an injection site variable. Meta-regression was unable to identify significant sources of heterogeneity; most likely because of two datasets from Teng et al. that found a difference in thalamus, but not in striatum, in the same rat line using identical methodology (Teng et al., 2018). Despite the potential biological significance of this, the study was the only one to use rats, MRI as the detection method, and had an experiment duration that was 4-fold longer than the other studies. Therefore, we decided to run a reduced model on all available mouse experiments using fluorescence or radioactivity detection methods. The meta-analysis was still highly significant and showed decreased clearance in the Aqp4 KO mouse lines (−1.92 [-3.02; −0.82]; p = 0.0006) with a lower degree of heterogeneity (I2 = 64.1%, p = 0.0103). The KO line used (p = 0.0205), age (p = 0.0075), the anesthetic protocol (p = 0.0075), the injection rate (p = 0.0056), the experiment duration (p = 0.0075), and the detection method (p = 0.0205) explained a significant proportion of the observed variance between the datasets. Similar to previous results, tribromoethanol again seemed to function as a proxy for the null study from Smith et al. since none of the others used this anesthetic. The mouse KO line from UCSF explained a significant proportion of heterogeneity compared to the other lines, likely because the null dataset accounted for half of the studies that used this line. Age of the experimental animals was also a significant source of heterogeneity and can be explained by the wide age range (0–24 weeks) found between the studies but the lack of specific age reporting could also potentially explain this. Injection rate accounted for the largest proportion of heterogeneity in this analysis. The injection rate used by Smith et al. (5 × 100 ms pulses at 1 Hz and 10 psi), was highly significant in the meta-regression model compared to the reference injection rate (0.017 µl/min, p = 0.0007), whereas all other injection paradigms were not significantly different. The Smith paradigm was therefore the driver of the explanatory value of the injection rate covariate in the meta-regression model. Similar to anesthesia type, this variable also functioned as a proxy for the null study since all other datasets reported an exact volumetric injection rate. The reported injection protocol was used for experiments performed in both mice and rats despite different injection volumes (~20 nl vs. 30,000 nl) suggesting that the rate varied significantly between experiments. The time the tracer was allowed to circulate after the injection (experiment duration) was also a highly significant source of variation between studies. The experiment duration that accounted for all the heterogeneity was the unreported time from the null study. Only one separate study evaluated a time point that did not report a significant difference between KO and control (30 min; Iliff et al., 2012). However, this study did report a difference at 60 min after injection, so it is possible that if Smith et al. used shorter experimental durations this could account for the observed heterogeneity (Supplementary file 2) (Iliff et al., 2012). The detection method (i.e. fluorescence and radioactivity) used was also found to be a significant source of heterogeneity. The largest contributor to heterogeneity were fluorescent detection methods, mostly likely due to the fact that the study that obtained a null result used this approach despite most studies using radiolabeled tracers. The remaining covariates: tracer properties, the injection volume, and the injection site were not significant sources of heterogeneity in this analysis.
 
@@ -154,104 +154,338 @@ The claim by Smith and Verkman (2018) that solute transport in the parenchyma is
 
 ## Materials and methods
 
-## Generation of transgenic mouse lines
+**Key resources table**
 
-## NMU
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Aqp4</td>
+      <td></td>
+      <td>MGI:107387</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Snta1</td>
+      <td></td>
+      <td>NCBI_gene: 20648, MGI:101772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Aqp4 null/eGFP knock-in mice</td>
+      <td>RIKEN BRC</td>
+      <td>RBRC06500; SJL.Cg-Aqp4&lt;tm1.1(GFP) Mysi&gt;/MysiRbrc; CDB0758K-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Aqp4 knockout mice</td>
+      <td>PNAS 108, 846–851 (2011). PMID: 21187412</td>
+      <td>OIU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6N</td>
+      <td>Beijing Vital River Laboratory Animal Technology Co., Ltd.</td>
+      <td>213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57Bl/6J)</td>
+      <td>male wild type (WT)</td>
+      <td>Jackson Laboratories, 000664</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6NCrl)</td>
+      <td>male wild type (WT)</td>
+      <td>Charles River, 027</td>
+      <td>RRID:IMSR_CRL:27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57Bl/6J)</td>
+      <td>male Snta1-/-</td>
+      <td>Jackson Laboratories, 012940, PMID:10995443</td>
+      <td>RRID:MGI:2181419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>E14K ES</td>
+      <td>J Neurosci Res. 2005 Nov 15;82 (4): 458–64. PMID: 16237719</td>
+      <td>129P2/OlaHsd</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>AQP4 replacement targeting vector</td>
+      <td>J Neurosci Res. 2005 Nov 15;82(4): 458–64. PMID: 16237719</td>
+      <td></td>
+      <td>Constructed using the positive– negative selection cassettes derived from the vectors pPolII long neo bpA and pXhoMC1TK, containing the neoR and HSVtk genes, respectively.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>CD1 blastocysts</td>
+      <td>Beijing Vital River Laboratory Animal Technology Co., Ltd.</td>
+      <td>201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Aqp4 (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>A5971, RRID:AB_258270</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>biotinylated- conjugated goat anti-rabbit IgG (polyclonal)</td>
+      <td>Vector Laboratories</td>
+      <td>BA-1000, RRID:AB_2313606</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AQP4 (rabbit primary Ab) (polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB3594, RRID:AB_91530</td>
+      <td>(1:400–500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 (donkey anti-rabbit secondary Ab) (polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A21207, RRID:AB_141637</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated donkey anti-rabbit (polyclonal)</td>
+      <td>Jackson Immuno Research</td>
+      <td>711-165-152, RRID:AB_2307443</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>oligonucleotide primers of Aqp4 and excision sequence</td>
+      <td>Transnetyx</td>
+      <td>Probe ID: Aqp4-2 WT and Aqp4-2 KO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>oligonucleotide primers of Aqp4 and Neo</td>
+      <td>J Neurosci Res. 2005 Nov 15;82 (4) :458–64. PMID: 16237719</td>
+      <td></td>
+      <td>AQP4 forward primer, ACC ATA AAC TGG GGT GGC TCA G; WT AQP4 reverse primer, TAG AGG ATG CCG GCT CCA ATG A; and Neo, CAC CGC TGA ATA TGC ATA AGG CA.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Beta - Amyloid (1 - 40), HiLyte  Fluor 488 - labeled, Human</td>
+      <td>Anaspec</td>
+      <td>AS-60491–01</td>
+      <td>0.5% in aCSF</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kwik-Cast</td>
+      <td>World Precision Instruments</td>
+      <td>KWIK-CAST</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Elite ABC Kit</td>
+      <td>Vector Laboratories</td>
+      <td>PK-7200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BDA</td>
+      <td>Molecular Probes/Thermo Fisher</td>
+      <td>D1957; BDA-70,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa-594-conjugated streptavidin (SA)</td>
+      <td>Molecular Probes/Thermo Fisher</td>
+      <td>S11227</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647 conjugated bovine serum albumin</td>
+      <td>Molecular Probes/Thermo Fisher</td>
+      <td>A34785</td>
+      <td>0.5–1% in aCSF</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Texas Red conjugated dextran, 3000 MW, paraformaldehyde, chloral hydrate</td>
+      <td>Invitrogen, Sigma-Aldrich, Sigma-Aldrich</td>
+      <td>D3328, 158127, 47335 U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>https://imagej.nih.gov/ij/index.html</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td></td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph Basic</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cellSens</td>
+      <td>Olympus</td>
+      <td>RRID:SCR_016238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>artificial CSF</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>All componets in ACSF (concentrations in mM): 126.0 NaCl, 3 KCl, 2 MgSO4, 10.0 dextrose, 26.0 NaHCO3, 1.25 NaH2PO4, 2 CaCl2 are purchased from Sigma- Aldrich</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of transgenic mouse lines
+
+#### NMU
 
 Aqp4 KO mice were generated by Dr. Fan Yan by targeted gene disruption as described previously (Fan et al., 2005). In brief, an AQP4 replacement targeting vector was constructed using the positive-negative selection cassettes derived from the vectors pPolII long neo bpA and pXhoMC1TK, containing the neoR and HSVtk genes, respectively. The targeting construct was linearized with NotI and introduced into E14K ES cells by electroporation. ES cell clones that were G418/gancyclovir-resistant were isolated, amplified, and screened for targeting fidelity using Southern blot analysis. Cells from two targeted clones were microinjected into CD1 blastocysts and implanted into pseudopregnant recipients (Fan et al., 2005). Five-month old Aqp4 KO and WT mice were used in the present study.
 
-## RIKEN
+#### RIKEN
 
 Aqp4 null/eGFP knock-in mice (SJL.Cg-Aqp4<tm1.1(GFP)Mysi>/MysiRbrc) were generated as described previously (Ikeshima-Kataoka et al., 2013). Briefly, knockout of AQP4 was accomplished by replacing the 250 nucleotides in exon 1 (corresponding to the region from Ser 18 to Thr 101) with eGFP cDNA and a PGK-neomycin cassette flanked by flippase recombination target sequences. The targeting vector was electroporated into TT2 ES cells derived from a C57BL/6 female and a CBA male. The PGK-neomycin cassette was removed by crossing with B6-Tg (CAG-FLPe) 37 (Kanki et al., 2006). The resultant mice were backcrossed with the SJL/J strain (Charles River, Japan) for more than 12 times (RIKEN CDB accession no. CDB0758K-1; http://www.clst.riken.jp/arg/mutant%20mice%20list.html). Both B6-Tg (CAG-FLPe) 37 and SJL.Cg-Aqp4<tm1.1(GFP)Mysi>/MysiRbrc >mice are provided by the RIKEN BRC through the National Bio-Resource Project of MEXT, Japan (accession no. RBRC01835 and RBRC06500, respectively).
 
-## UNC
+#### UNC
 
 The constitutive Aqp4 KO mouse model was generated by Dr. Alan Verkman (Ma et al., 1997). In brief, Aqp4 KO mice were generated on a CD1 background, following the construction of a targeting vector for homologous recombination of a 7 kb SacI AQP4 genomic fragment, in which part of the exon one coding sequence was deleted. All animal experiments reported in this study were conducted on Aqp4 KO mice (B6/129), B6/129 controls, and wild-type C57BL/6 mice.
 
-## URMC
+#### URMC
 
 Aqp4 KO mice were generated by Dr. Ole Petter Ottersen using GenOway technique, as described previously (Thrane et al., 2011). Their strategy involved cloning and sequencing of a targeted region of the murine Aqp4 gene in a 129/Sv genetic background. Identification of a targeted locus of the Aqp4 gene permitted the delete exons 1–3 to avoid any expression of putative splice variants. Hence, a flippase recognition target (FRT)-neomycin-FRT-LoxP–validated cassette was inserted downstream of exon 3, and a LoxP site was inserted upstream of exon 1 (Thrane et al., 2011). The mice were backcrossed for 20 + generations with C57BL/6N mice prior to experimentation.
 
-## OHSU
+#### OHSU
 
 The Snta1 KO mouse line was generated by Dr. Stanley Froehner (Adams et al., 2000), and was purchased through The Jackson Laboratory (Snta1tm1Scf/J, #012940). In brief, exon 1 of the mouse Snta1 gene was replaced with a neomycin resistance cassette. The resulting construct was electroporated into 129P2/OlaHsd-derived E14 embryonic, and these cells were then injected into C57BL/6J blastocysts. The resulting mice were bred with C57BL/6J mice for at least 11 generations before the colony was established. Adult male and female mice (WT 15.4 ± 1.6 weeks, Snta1 KO 14.7 ± 1.6 weeks) were used in these studies.
 
-## Injection, imaging and analysis of CSF tracers or contrast agents
+### Injection, imaging and analysis of CSF tracers or contrast agents
 
-## NMU
+#### NMU
 
-## Intracisternal tracer injections
+##### Intracisternal tracer injections
 
 Intracisternal injections of Texas Red conjugated dextran (TRd3; 3 kDa, Invitrogen) were adapted from a previous report (Iliff et al., 2012). In brief, the mice were anesthetized by a 4% chloral hydrate solution. A ten-microliter volume of 0.5% TRd3 dissolved in artificial CSF was infused into the cisterna magna through a 50 μL syringe mounted with a 27-gauge needle (Hamilton, Reno, NV, USA), connected to a constant current syringe pump (TJ-2A/L07-2A, Suzhou Wen Hao Chip Technology Co. Ltd., Jiangsu, China). The intracisternal injection was carried out at a rate of 2 µL/min. Thirty min after the start of injection, the still deeply anesthetized animals were perfused trans-cardially with 4% paraformaldehyde (PFA), and the brains removed and post-fixed in the same fixative for 24 hr.
 
-## Tissue processing and image analysis of fluorescent tracer
+##### Tissue processing and image analysis of fluorescent tracer
 
 A subset of WT and Aqp4 KO brains (N = 4 per genotype) were scanned by an ex vivo near infrared (NIR) fluorescence imaging system (Azure biosystems c600, CA, USA). Briefly, the ventral and dorsal brains were imaged (excitation length 660 nm, exposure time: 50 ms), as well as the corresponding bright-field images (Supplementary file 3). The fluorescence and bright-field images were superimposed using Adobe Photoshop 8.0. Based on the Mouse Brain Atlas, fluorescence was measured along anterior-posterior axis based on the localization of bregma using NIH Image J software (Figure 2a). The mean integrated optical density (MIOD) of TRd3 at a total of 80 sites were sequentially measured from 4 mm anterior to 8 mm posterior to the bregma. In addition, the telencephalon from five mice per genotype was cut into 100 µm coronal sections using a vibratome (Leica, Wetzlar, Germany). Sections were mounted on gelatin-coated slides, washed, and cover-slipped with the slices coated in PBS/glycerol. Images of 6–8 coronal sections collected sequentially from 1.7 mm anterior to 0.7 mm posterior of the bregma were imaged by a Leica DM4000B digital microscope (Leica Microsystems, Wetzlar, Germany) under a 1.25x objective, with uniform exposure time, offset, and gain. The distribution of the tracer (TRd3) was quantified using NIH Image J software as described previously (Iliff et al., 2012). In brief, the fluorescent tracer coverage within the whole section was detected using the same threshold and constant settings for minimum and maximum intensities. Subregional analysis of CSF tracer distribution was analyzed in coronal section at the level of 0.5 mm anterior to the bregma. Tracer penetration along perivascular spaces and into brain parenchyma was quantified on high-magnification images of the hypothalamus, which were captured with 10x objective. The fluorescence intensity within the perivascular space was measured along large vessels (diameter >20 µm) extending 500 µm below the brain surface. Two or three separate vessels from each image were analyzed and the data averaged. The fluorescence intensity in the brain parenchyma was also determined along a corresponding linear region adjacent to the vessels (Figure 2e). The imaging and subsequent analysis was performed by an investigator who was blind to animal genotype.
 
-## RIKEN
+#### RIKEN
 
 Adult mice (postnatal 10 to 23 weeks old, mixed gender) were anesthetized by a ketamine-xylazine cocktail (70 mg/kg of ketamine and 10 mg/kg of xylazine) and fixed to a stereotaxic frame. The membrane of the cisterna magna was exposed by surgical procedures. A glass micropipette (tip diameter ~50 µm, preloaded with 0.5% biotinylated dextran amine in saline (BDA, 70 kDa, D1957, Molecular Probes), was carefully pierced through the cisterna magna membrane using a manipulator. A total of 10 µL of the BDA containing solution was infused at a rate of 1 µL/min using a syringe driver (KDS Legato Series, KD Scientific). Thereafter, two supplementary ketamine-xylazine administrations were made (30 min apart, 50% of the initial dose). Five minutes after the second supplementary anesthesia, Mice were transcardially perfused with fixative containing 4% paraformaldehyde in 0.1 M phosphate buffer. After one day of post-fixation in the same fixative, 60 µm slices were incubated in 0.1% triton-X TBS containing Alexa-594-conjugated SA (1:1000) for one hour. Images of SA-processed brain sections were acquired using a standard fluorescent microscope (Olympus BX51 equipped with a DP74 digital camera, Supplementary file 3). An offset, defined as the median of the top 1% of pixel intensities of an unprocessed brain section, is subtracted from the raw image of the SA-processed brain section. For depth profiles were calculated from the pial position of 3 mm from the midline using ImageJ.
 
-## UNC
+#### UNC
 
-## Intracisternal tracer injections
+##### Intracisternal tracer injections
 
 The experiments were performed as described previously (Iliff et al., 2012). In brief, mice (15–18 weeks old) were anesthetized with ketamine/xylazine (100/10 mg/kg) and then a cannula was surgically implanted into the cisterna magna (Xavier et al., 2018). Afterwards, an Alexa Fluor 647-conjugated bovine serum albumin tracer was infused into the cistern (0.5% in aCSF; 10 µl at 1 µl/min for 10 min) and allowed to circulate for 30 min. Body temperature was maintained throughout the experiment. Perfusion-fixation is expected to alter intracranial pulsatility, a process that has been shown to drive CSF flow (Iliff et al., 2013b); therefore, 30 min post-injection the mice were decapitated, and the brain drop fixed in 4% PFA.
 
-## Tissue processing and microscopy
+##### Tissue processing and microscopy
 
 The mouse brains were post-fixed prior to sectioning. In brief, 100 μm thick coronal plane vibratome sections were obtained using a Leica VT 1200S apparatus (Leica Biosystems, IL). Free-floating mouse brain sections were mounted with ProLongTM Gold Antifade Mounting Media with DAPI (Life Technologies, CA). We used an epifluorescent macroscope for imaging mouse brain sections (Olympus, Supplementary file 3). The images were pseudocolored and analyzed on FIJI software. The sections were analyzed following methodology from both Iliff et al. (2012) and Smith et al. (2017). Mean pixel intensity was calculated for six coronal sections covering +1.2 to −1.8 mm from anterior to posterior relative to bregma. Subregional analysis of the coronal section at position +0.6 mm was conducted to identify which regions accounted for the differences in CSF influx (Kress et al., 2014).
 
-## URMC
+#### URMC
 
-## Intracisternal tracer injections
+##### Intracisternal tracer injections
 
 Mice (8- to 10-week-old males) were anesthetized with ketamine/xylazine (100/10 mg/kg) and fixed in a stereotaxic frame whereupon the posterior atlanto-occipital membrane overlying the cisterna magna was surgically exposed. For all CSF tracer experiments, Alexa 647-conjugated bovine serum albumin (BSA-647; 66 kDa; 0.5%) was injected into the subarachnoid CSF via cisterna magna puncture, at a rate of 1 or 2 µL/min for a period of five min (5 µL or 10 µL total volume) through a 30-gauge syringe pump (Harvard Apparatus). To visualize penetration of fluorescent CSF tracers into the brain parenchyma ex vivo, anesthetized animals were decapitated at 30 min after the start of the injection, a time point previously identified to correspond to robust tracer penetration of similar molecular weight compounds in young male C57BL/6 mice (Iliff et al., 2012). Brains were then removed and post-fixed in 4% PFA for 24 hr before being sliced with a vibratome into 100 µm coronal sections which were slide-mounted using PROLONG anti-fade gold with DAPI (Invitrogen).
 
-## In vivo transcranial optical imaging
+##### In vivo transcranial optical imaging
 
 Transcranial optical imaging was performed in KX-anesthetized mice as recently described (Plog et al., 2018). To prepare the mouse, the skin overlying the dorsal convexity was reflected and afterwards the cisterna magna was cannulated as described above. Fluorescent CSF tracers Texas Red 3 kDa dextran and BSA-647 (10 µl at 2 µl/ min, 0.5% in aCSF) were injected into the cisterna magna and imaged using a fluorescent macroscope (MVX10, Olympus) using a PRIOR Lumen 1600-LED light source and ORCA Flash 4.0 digital camera (Hamamatsu). The mouse’s head was stabilized with ear bars using a customized stereotaxic frame and placed under the microscope stage. Imaging was done at a 20x magnification and acquired in the far-red emission channel (647 nm). Due to high scattering at the excitation/emission wavelength of the Texas Red 3 kDa dextran through the intact skull this channel was not acquired. Images were collected every minute for 30 min following the start of the injection. MetaMorph Basic imaging software was used for image acquisition (Molecular Devices). The same exposure time (100 ms) was used throughout the experiment and between the WT and KO groups. After 30 min, the brain was extracted and fixed as described below.
 
-## Intrastriatal tracer injections
+##### Intrastriatal tracer injections
 
 KX-anesthetized mice were placed in a stereotaxic apparatus and the skin was opened to expose the skull. Carefully, periosteum was removed and bregma was identified with a surgical microscope. A burr hole was done with a hand-held drill on the coordinates AP:+0.5 DV:+3.0 LM:+2.0 mm from bregma, using a 27G needle to break the meningeal layer. A pulled glass capillary (TW100-3, World Precision Instruments) with a 12 µm tip diameter was introduced in the brain parenchyma. Once in place, 20 nL of 0.5% Amyloid-β1-40 in aCSF (as a sham) was delivered in a perfusion rate of 4 nL/second by a micropump (UMP3 UltraMicroPump with Micro4 controller, World Precision Instruments) as done by Smith et al. Control mice did not receive an injection. The micropipette remained in place for 5 min and then was very slowly withdrew, to avoid any possible backflow. If backflow was observed, the animal was excluded from the experiment. Immediately after the capillary was removed, a small amount of Kwik-Cast Sealant (KWIK-CAST, World Precision Instruments) was applied to seal the site of injection. After 60 min, mice received an injection in cisterna magna with BSA-647 (1% in aCSF) as descried above to evaluate glymphatic function. ​
 
-## Ex-vivo imaging of fluorescent CSF tracers
+##### Ex-vivo imaging of fluorescent CSF tracers
 
 BSA-647 and TxRd 3 kDa dextran circulation along perivascular pathways and penetration into the brain parenchyma was visualized by conventional fluorescence microscopy of 100 µm vibratome coronal brain sections, as described previously (Iliff et al., 2012). For coronal section quantification, six brain sections (per animal were imaged and analyzed by a blinded investigator using an Olympus fluorescence macroscope (MVX10) under 20x magnification to generate whole-slice images (using the MetaMorph software, Molecular Devices, Supp. File 3). High-magnification montage images of coronal sections were acquired using an Olympus BX51 fluorescent microscope at 4x objective magnification using cellSens software (Olympus). Tracer penetration was quantified using NIH Image J software as described previously (Iliff et al., 2012). The first slice was collected at the beginning at the anterior aspect of the corpus callosum, one section was collected every 500 µm apart until a total of six sections had been collected for each animal. Fluorescence of the CSF tracer BSA-647 was measured in each slice as mean pixel intensity (MPI). The MPI from the six brain slices from each animal were averaged to define CSF penetration within a single biological replicate. For the ipsilateral to contralateral comparison, 3 to 5 slices from the injection site where selected from each mouse, and their tracer penetration was quantified, averaged and analyzed by Wilcoxon rank-sum test using different ROIs for each hemisphere. A subset of brain slices were immunostained for AQP4 as previously described (Kress et al., 2014). Tracer penetration depth was evaluated using Fiji and Matlab. A coronal section obtained from bregma from each mouse was used for the analysis. In the KO mice, a 500 µm line was placed orthogonal to the cortical surface at the most dorsal position where tracer could be found at the pial surface (Figure 5f). Tracer depth in the WT mice was measured at the same position as the KO mouse despite there being more tracer spread over the dorsal convexity. The line profile was normalized to the maximum fluorescence at the cortical surface (ΔF/Fmax). Tracer penetration depth was quantified as the distance at which Fmax was reduced by half (d1/2) similar to Smith et al. (2017).
 
-## OHSU
+#### OHSU
 
-## Dynamic contrast enhanced magnetic resonance imaging (DCE-MRI) of glymphatic transport
+##### Dynamic contrast enhanced magnetic resonance imaging (DCE-MRI) of glymphatic transport
 
 Three- to 6-month-old mice were anesthetized with isoflurane, with induction at 3–5%. The posterior atlanto-occipital membrane was exposed surgically. To enable the contrast injection during MRI scanning, we used a pulled glass micropipette with trimmed end (external diameter of approximately. 016 mm) to perform the injection. The micropipette was fixed in place for the duration of the imaging session with superglue. Gadoteridol (68 mM, osmotically adjusted), a contrast medium was infused by syringe pump (Harvard Apparatus) at a rate of 500 nl/min for 20 min (10 µl total volume), with a 2 µl chase of saline.
 
-## MR imaging
+##### MR imaging
 
 CSF circulation was quantified by dynamic contrast-enhanced magnetic resonance imaging (DCE-MRI). All imaging was performed using a Bruker-Biospec 11.75 T preclinical scanner equipped with a 20 mm I.D. quadrature RF volume-coil with a specially designed head holder (Supplementary file 3). Heart rate, oxygen saturation and respiratory rate were monitored, and core temperature was maintained at 37°C using a warm air temperature control system (SA Instruments). Upon placement of the glass micropipette, isoflurane anesthesia was switched to ketamine-xylazine (100–10 mg/kg) for the duration of the experiment. Consecutive T1 weighted 3D FLASH images were obtained at 10 min intervals (TR/TE 16/2.8 ms, flip angle 15°, matrix 256 × 192×192, 100 × 100×100 μm resolution), for a total of 90 min. Injection was initiated after acquiring the first image. If no elevation in signal was detectable in the cortical or subcortical brain regions or the basal cistern within the first 30 min, the imaging session was aborted, and the animal was excluded from further analysis.
 
-## MR data analysis
+##### MR data analysis
 
 Due to frequent occurrence of motion artifact during the last 30 min of acquisition (70–90 min), these three time points were excluded from analysis, and those animals showing movement artifacts during the first 60 min of acquisition were also excluded. Linear rigid body registration was used to spatially align the image series to the baseline image (FSL). Regions of interest (ROIs) were drawn on a coronal image slice best matching that depicted in Figure 6I, and mean intensity values were determined with FIJI software. Repeated measures two-way ANOVA with Sidak multiple comparisons correction was used to analyze the data. Multiple comparisons were used to determine the significance of genotype differences at each time point.
 
-## Meta-analysis
+### Meta-analysis
 
-## Literature search
+#### Literature search
 
 A review of the literature on PubMed and Google Scholar was conducted for all studies published to date (November 2018) on global Aqp4 KO models in rodents.
 
-## Inclusion criteria:
+#### Inclusion criteria:
 
 Out of 6527 studies that were retrieved from the online search, only tracer studies that evaluated fluid flow in the brain in Aqp4 KO versus wild-type controls were included.
 
-## Exclusion criteria
+#### Exclusion criteria
 
 Studies were excluded if either mean, standard deviation, or sample size could not be extracted. Studies that evaluated tracer transport in a disease model were also eliminated. Non-English studies were not excluded. Only one study Binder et al. 2004 was excluded due to the inability to estimate sample size (Binder et al., 2004). After exclusion, a total of 11 studies satisfied the selection criteria. Five data sets from the present study (NMU, RIKEN, UNC, URMC) were also included.
 
-## Data extraction
+#### Data extraction
 
 Means, standard deviations, and sample sizes for each experiment were extracted from the text where possible. If exact numbers were not reported, we used graphical extraction using FIJI. When standard error of the mean was reported, standard deviation was calculated using the square root of the sample size. In cases where sample size was reported as a range, the lowest number was chosen for analysis. In one study, it was impossible to determine if two separate analyses were derived from the same group of mice. In order to avoid inadvertently excluding data (e.g. If the study was in fact conducted in two separate sets of mice) we included both experimental data sets in the meta-analysis (Smith et al., 2017).
 
-## Data analysis
+#### Data analysis
 
 Studies addressed mainly two parts of intracranial fluid flow: (1) CSF influx to brain after delivery of tracers to the cisterna magna and (2) tracer transport after being injected into the interstitial fluid in the brain parenchyma. To address these two types of experiments, we decided to run two separate models using the inverse variance method for meta-analysis. Since these were evaluated using different outcome measures between fluorescence (fluorescence intensity and thresholding approaches), radioisotope, and MRI experiments we opted for a standardized mean difference (SMD) using the Cohen’s D method for the final analysis. After data was extracted, analysis was done in R (R-Project). Due to high heterogeneity (I2 >70%), a random effects model was selected after attempting to reduce heterogeneity by implementing alternate standardized mean difference formulas (e.g. Glass’s delta, Hedge’s G); however, these attempts did not eliminate heterogeneity. Sources of heterogeneity were then explored using mixed-effects model meta-regression. Candidate predictors of heterogeneity included: anesthesia type, species, strain, age, tracer properties, injection properties, injection location, and experimental method. Inclusion of more than one covariate in the meta-regression resulted in model non-convergence due to the relatively small number of studies and the distribution of these factors across studies so covariates were included one at a time. Data in forest plots is shown as SMD with 95% confidence intervals (CI) and p values less than 0.05 were considered significant.

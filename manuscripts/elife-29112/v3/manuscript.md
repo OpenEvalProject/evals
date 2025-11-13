@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.29112.001 Most vertebrate and plant RNA and small DNA viruses suppress genomic CpG and UpA dinucleotide frequencies, apparently mimicking host mRNA composition. Artificially increasing CpG/UpA dinucleotides attenuates viruses through an entirely unknown mechanism. Using the echovirus 7 (E7) model in several cell types, we show that the restriction in E7 replication in mutants with increased CpG/UpA dinucleotides occurred immediately after viral entry, with incoming virions failing to form replication complexes. Sequences of CpG/UpA-high virus stocks showed no evidence of increased mutational errors that would render them replication defective, these viral RNAs were not differentially sequestered in cytoplasmic stress granules nor did they induce a systemic antiviral state. Importantly, restriction was not mediated through effects on translation efficiency since replicons with high CpG/UpA sequences inserted into a non-coding region were similarly replication defective. Host-cells thus possess intrinsic defence pathways that prevent replication of viruses with increased CpG/UpA frequencies independently of codon usage.
+Most vertebrate and plant RNA and small DNA viruses suppress genomic CpG and UpA dinucleotide frequencies, apparently mimicking host mRNA composition. Artificially increasing CpG/UpA dinucleotides attenuates viruses through an entirely unknown mechanism. Using the echovirus 7 (E7) model in several cell types, we show that the restriction in E7 replication in mutants with increased CpG/UpA dinucleotides occurred immediately after viral entry, with incoming virions failing to form replication complexes. Sequences of CpG/UpA-high virus stocks showed no evidence of increased mutational errors that would render them replication defective, these viral RNAs were not differentially sequestered in cytoplasmic stress granules nor did they induce a systemic antiviral state. Importantly, restriction was not mediated through effects on translation efficiency since replicons with high CpG/UpA sequences inserted into a non-coding region were similarly replication defective. Host-cells thus possess intrinsic defence pathways that prevent replication of viruses with increased CpG/UpA frequencies independently of codon usage.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ The replication cycle of E7, a typical enterovirus, is relatively well understoo
 
 ## Results
 
-## Viral attenuation by CpG and UpA dinucleotides in different cell lines
+### Viral attenuation by CpG and UpA dinucleotides in different cell lines
 
 We previously demonstrated the marked inhibition in replication of E7 mutants in which CpG and UpA frequencies were artificially increased in one or two regions of the genome (R1, R2, Figure 1A). These regions were selected for the absence of secondary RNA structures or specific RNA sequences important for enterovirus replication. This was supported by a high synonymous site variability and low mean folding energies (Atkinson et al., 2014). In these experiments a permutated mutant of E7, with the native sequences of R1 or R2 scrambled but retaining coding and native dinucleotide frequencies, showed WT levels of replication, indicative that these genome region can be safely modified without consequences for viral replication (Atkinson et al., 2014; Tulloch et al., 2014). Attenuation of viruses containing UpA-high and CpG-high sequences was evident in RD and A549 cell lines, but whether the restriction in replication extended to cell lines of different tissue origins was not determined, nor whether the restriction was related to host-cell susceptibility to E7 infection. To investigate this, we infected a range of different cells at low multiplicity of infection (MOI) with wild type (WT) E7 and mutants with modified R2 sequences with elevated CpG (C) or UpA (U) frequencies (Figure 1B and Table 1). R2 mutants were used in preference to the R1/R2 double mutants to ensure that replication kinetics for increasingly attenuated mutants could still be measured to an acceptable accuracy in some of the less permissive cell lines.
 
@@ -42,15 +42,224 @@ We previously demonstrated the marked inhibition in replication of E7 mutants in
 
 **Figure 1.:** (A) Genome organisation of E7 virus with the two regions (R1 and R2) that have been mutated for this study. Numbers indicate nucleotides that border R1 and R2. (B) Viral titres (TCID50/ml) of E7 viruses with R2 variants, UpA high (U, green) or CpG high (C, red) in a variety of cell types after twenty-four hours of infection with a multiplicity of infection of 0.01. Bars represent the average of three biological replicates normalised to E7 with wild type R2 sequence (WT, blue). (C) WT E7 titre from B in relation to the relative restriction caused by mutation of R2 with either increased UpA or CpG dinucleotides in each cell type. Cell types are indicated and relative replication rates of viruses with R2_U and R2_C connected by a dashed line. Error bars represent one standard error of the mean from three biological replicates.
 
+**Table 1.**
+ UpA and CpG dinucleotide composition of mutated regions used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Sequence composition</th>
+      <th>Abbreviation</th>
+      <th>G + C content</th>
+      <th>Total CpG (Change)*</th>
+      <th>Total UpA (Change)*</th>
+      <th>Ratio† CpG</th>
+      <th>Ratio† UpA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full length</td>
+      <td>Native</td>
+      <td>E7</td>
+      <td>0.48</td>
+      <td>252</td>
+      <td>390</td>
+      <td>0.59</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>Native</td>
+      <td>WT</td>
+      <td>0.48</td>
+      <td>51 (-)</td>
+      <td>62 (-)</td>
+      <td>0.73</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>Permutated</td>
+      <td>P</td>
+      <td>0.48</td>
+      <td>51 (0)</td>
+      <td>62 (0)</td>
+      <td>0.73</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>CpG and UpA - low</td>
+      <td>cu</td>
+      <td>0.47</td>
+      <td>0 (-51)</td>
+      <td>29 (-43)</td>
+      <td>0.00</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>UpA - high</td>
+      <td>U</td>
+      <td>0.41</td>
+      <td>39 (-12)</td>
+      <td>171 (+109)</td>
+      <td>0.76</td>
+      <td>1.59</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>CpG - high</td>
+      <td>C</td>
+      <td>0.57</td>
+      <td>180 (+129)</td>
+      <td>52 (-10)</td>
+      <td>1.83</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>Adenine CpG motif</td>
+      <td>AACGAA</td>
+      <td>0.48</td>
+      <td>51 (0)</td>
+      <td>62 (0)</td>
+      <td>0.73</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>Uracil CpG motif</td>
+      <td>UUCGUU</td>
+      <td>0.48</td>
+      <td>51 (0)</td>
+      <td>62 (0)</td>
+      <td>0.73</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>Native</td>
+      <td>WT</td>
+      <td>0.47</td>
+      <td>18 (-)</td>
+      <td>48 (-)</td>
+      <td>0.32</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>Permutated</td>
+      <td>P</td>
+      <td>0.47</td>
+      <td>18 (0)</td>
+      <td>48 (0)</td>
+      <td>0.32</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>CpG and UpA - low</td>
+      <td>cu</td>
+      <td>0.48</td>
+      <td>0 (-18)</td>
+      <td>14 (-34)</td>
+      <td>0.00</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>UpA - high</td>
+      <td>U</td>
+      <td>0.39</td>
+      <td>15 (-3)</td>
+      <td>151 (+103)</td>
+      <td>0.39</td>
+      <td>1.63</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>CpG - high</td>
+      <td>C</td>
+      <td>0.56</td>
+      <td>135 (+117)</td>
+      <td>38 (-10)</td>
+      <td>1.67</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>ncS</td>
+      <td>Normalised</td>
+      <td>Norm</td>
+      <td>0.47</td>
+      <td>28 (-)</td>
+      <td>42 (-)</td>
+      <td>0.63</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>ncS</td>
+      <td>CpG - UpA low</td>
+      <td>cu</td>
+      <td>0.47</td>
+      <td>5 (-23)</td>
+      <td>2 (-40)</td>
+      <td>0.11</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>ncS</td>
+      <td>UpA - high</td>
+      <td>U</td>
+      <td>0.47</td>
+      <td>28 (0)</td>
+      <td>118 (+76)</td>
+      <td>0.63</td>
+      <td>2.02</td>
+    </tr>
+    <tr>
+      <td>ncS</td>
+      <td>CpG - high</td>
+      <td>C</td>
+      <td>0.47</td>
+      <td>90 (+62)</td>
+      <td>42 (0)</td>
+      <td>2.03</td>
+      <td>0.72</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Change from respective Native or Normalised sequence (in bold) with WT dinucleotide frequencies† Ratio is observed over expected frequency of the respective dinucleotide corrected for G + C content_
+
 Twenty-four hours post infection with the E7 R2 mutant viruses, infectious progeny virus was measured with an end point dilution assay (EPDA). Across the different cell types, the viral titres of E7 with R2_U or R2_C were consistently lower compared to WT E7 (Figure 1B, one-way ANOVA, p<0.01,). The relative replication rates (RRRs; ratio of TCID50s of mutant/WT virus) of E7 mutants differed between cell types. In RD cells (human muscle) and A549 cells (human lung epithelium) R2_U E7 displayed an RRR of 0.1 and 0.4 respectively. The RRR of R2_C was further suppressed to 0.01 in these cells. Cells that originated from the kidney displayed a more moderate E7 R2_C RRR of approximately 0.09 (Figure 1B). The viral titres of WT E7 at 24 hr post infection varied strongly between cell types and may potentially be the cause of the differing RRR of UpA and CpG-high viruses. However, there was no relationship between RRR (Figure 1C, x-axis) and virus titre of WT virus at 24 hr (Figure 1C, y-axis, representing cell susceptibility; Pearson correlation coefficient CpG −0.57 and UpA −0.63).
 
 Relative replication rates were similarly determined in cells with impaired innate responses to RNA virus infections. These included A549 cells expressing the bovine viral diarrhoea virus (BVDV, genus Pestivirus) N-terminal protease fragment (NPro), which blocks the activity of interferon regulatory factor 3 (IRF-3)(Hilton et al., 2006) and IRF7 (Fiebach et al., 2011) or the hepatitis C virus (HCV, genus Hepacivirus) protein NS3/4A that inhibits cytokine gene expression by cleavage of IPS-1/MAVS/VISA/Cardif (Kaukinen et al., 2006). Both cell lines showed similar or greater restriction in replication for both CpG- and UpA-high mutants compared to the parental cell line. The monkey kidney fibroblast cell line, Vero, which has intact IFN signalling pathways but cannot produce type 1 IFNs (Desmyter et al., 1968), restricted mutated E7 viruses comparable to that of other cultured kidney cells tested in this study with a more moderate attenuation between of the CpG high virus (Figure 1BC).
 
 Together this indicates that reduced replication of E7 with increased UpA and CpG dinucleotide frequencies occurs in all the tested cell types and restriction cannot be lifted by inhibiting some of the most potent antiviral signalling cascades. There was additionally some intrinsic variability between kidney and other cell lines in the extent to which replication inhibition occurred.
 
-## Restriction of viral RNA replication with increased CpG and UpA dinucleotide frequencies is independent of coding sequence
+### Restriction of viral RNA replication with increased CpG and UpA dinucleotide frequencies is independent of coding sequence
 
 It has been hypothesised that the observed attenuation of CpG- and UpA-high mutants arises through the effects of dinucleotide choice on translation efficiency, either through selection of disfavoured codon usage or codon pairs that are translated less efficiently than native sequences (Mueller et al., 2010; Coleman et al., 2008; Burns et al., 2006). To investigate this possibility directly, we compared the attenuating effects of CpG and UpA dinucleotides added to either the coding (in R2) or non-coding region of the E7 replicon. To achieve the latter, the E7 replicon was modified by insertion of region 1 (R1, Figure 1A and Table 1) compositional variants as additional non-coding regions (ncR1) after the stop codon (nt 7325), but before replication structures in the viral 3’-untranslated region (UTR) (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig2-v3.jpg)
+
+**Figure 2.:** (A) Schematic representation of E7 replicon with coding R2 and non-coding R1 (ncR1) indicated. (B) Replication efficiency of the E7 replicon RNA as measured by firefly luciferase expression. Non-coding region 1 (ncR1) or coding region 2 (R2) of wild type (WT), permutated (P), CpG and UpA low (cu), UpA high (U) and CpG high (C) composition were cloned into the E7luc_cu replicon system and luciferase expression was measured at indicated hours post transfection (hpt). Data points represent the average of three biological replicates normalised to one hpt. Error bars represent one standard error of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Replication efficiency of the E7 replicon RNA as measured by firefly luciferase expression. Firefly luciferase was either of WT sequence (high in CpG dinucleotides, luc_WT, black) or with CpG and UpA dinucleotides removed (luc_cu, gray). In the latter replicon R1 regions of WT (ncR1_WT, dark blue) and permutated (ncR1_P, light blue) were inserted as 3’-non-coding region. Data points represent the average of three biological replicates normalised to one hpt. Error bars represent one standard error of the mean.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Replication efficiency of the E7 replicon RNA as measured by firefly luciferase expression. Non-coding region 1 (ncR1) or coding region 2 (R2) of wild type (WT), permutated (P), CpG and UpA low (cu), UpA high (U) and CpG high (C) composition were cloned into the E7luc replicon system and luciferase expression was measured at indicated hours post transfection (hpt). Data points represent the average of three biological replicates normalised to one hpt. Error bars represent one standard error of the mean.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** RD cells were pre-treated with C16 (2 μM), or left untreated (NT) for one hour prior to E7 replicon transfection (A) or E7 virus infections (B) in appropriate NT or C16 treated media. (A) E7 replicon RNA with ncR1 extensions of either wild type (WT), UpA high (U) or CpG high (C) composition were transfected into RD cells. Firefly luciferase was measured at six hpt. Bars represent the mean of three biological replicates normalized to E7 with ncR1_WT and relative the not treated sample. (B) E7 virus infections (MOI 5) with coding R2 of indicated composition. After 24 hr viral titres were measured in cell culture supernatant in an EPDA. Bars represent the mean of three biological replicates normalized to WT E7 and relative, to the respective NT sample. Error bars represent one standard error of the mean and asterisks indicate significant difference between treatments, p-value *<0.1, **<0.05, T-test.
 
 Cells were transfected with in vitro transcribed RNA of the E7 replicon with ncR1 variants and assayed for firefly luciferase expression at indicated times post transfection. Being of insect origin, the wild type firefly luciferase gene (luc_WT) contains a relatively high ratio of CpG dinucleotides (CpG 1.210 and UpA 0.695 observed/expected). Synonymous removal of all possible CpG and UpA dinucleotides from firefly luciferase (luc_cu, ratio CpG 0.013 and UpA 0.154 O/E) strongly increased the replication rate of the E7luc replicon (Figure 2—figure supplement 1). To reliably measure potential reductions in E7 replicon RNA replication the E7luc_cu replicon was used in the remainder of this study.
 
@@ -70,9 +279,17 @@ To further disentangle the effects of CpG and UpA dinucleotide frequencies on vi
 
 RD cells were transfected with E7 replicon RNA and either treated with GuHCl or left untreated (Figure 4A and B). In a parallel experiment cells were transfected with the mutated replication-defective replicons (Figure 4C). GuHCl treatment or mutation of the viral polymerase similarly reduced luciferase readings throughout the time-course experiment, with no sign of replicon RNA replication. Importantly, E7 replicons with CpG or UpA high ncR1 showed comparable luciferase expression as replicons with WT ncR1 sequences when replication was inhibited by either GuHCl or mutation of the viral polymerase (Figure 4B and C). Untreated, replication competent replicons displayed the typical attenuation of luciferase expression in CpG and UpA mutants (Figure 4A). There was a modest, approximate 5-fold reduction in luciferase expression over the 24 hr course of the experiment observed in non-replicating replicons that may reflect partial degradation of the transfected RNA. Reductions in luciferase expression were comparable between WT and CpG/UpA modified replicons (Figure 4A–C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig4-v3.jpg)
+
+**Figure 4.:** (A–C) E7 replicon RNA with ncR1 extensions of either wild type (WT), UpA high (U) or CpG high (C) composition were transfected into RD cells. Cells were either not treated (A) or treated with guanidine hydrochloride (GuHCl) (B) to inhibit E7 RNA replication. Similarly, RD cells were transfected with RNA of replication-defective E7 replicons with ncR1 of either WT or C composition (C). Firefly luciferase was measured at the indicated times post transfection (hpt). (D) Indicated cell types were transfected with E7 replicon RNA with either the WT or CpG-high ncR1 sequence. RD1 shows the six hour time point from panel A and B, while RD2 is a second independent experiment in RD cells. Cells were either treated with GuHCl or left untreated. At six hpt luciferase expression was measured. Bars show the fold change in luciferase expression of the E7 replicon with the CpG-high ncR1 relative from that of their respective not treated or GuHCl treated WT. (A–D) Data points represent the mean of three biological replicates. Error bars represent one standard error of the mean.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Indicated cell types were transfected with E7 replicon RNA with either the WT or UpA-high ncR1 sequence. RD1 shows the six hour time point from panel A and B, while RD2 is a second independent experiment in RD cells. Cells were either treated with GuHCl or left untreated. At six hpt luciferase expression was measured. Bars show the fold change in luciferase expression of the E7 replicon with the UpA-high ncR1 relative from that of their respective not treated or GuHCl treated WT. (B) Raw luciferase values from Figure 4D and Figure 4—figure supplement 1A. Bars represent the mean of three biological replicates. Error bars represent one standard error of the mean.
+
 In an additional experiment, translation rates of replicating and non-replicating E7 variants were compared between different cell types (Figure 4D). At six hours post transfection, replicating E7 replicon RNA with a CpG-high ncR1 displayed an approximate 10-fold reduction in luciferase expression when compared to WT (Figure 4D, gray bars). In contrast, when replication was inhibited by GuHCl, translation from the CpG-high replicon RNA was comparable to that of the WT in all tested cell types (Figure 4D, black bars). Replicons with UpA-modified ncR1 also expressed similar levels of luciferase compared to WT in a non-replicating context with ratios ranging from 0.5 to 2.9 (Figure 4—figure supplement 1). Combined, these results demonstrate that the observed attenuation of UpA or CpG high replicon mutants is not dependent on differences in translation rates or instability of the coding region RNA sequences in the cell.
 
-## Unfavourable dinucleotides have a cumulative effect on E7 replicon RNA replication
+### Unfavourable dinucleotides have a cumulative effect on E7 replicon RNA replication
 
 To investigate whether increasing the absolute number of unfavourable dinucleotides strengthens the observed restricted phenotype of UpA and CpG-high mutants of E7, different lengths of nucleotide sequence were inserted in the 3’-non-coding region of the E7 luciferase replicon system, either as single (800 nt) or double (1600 nt) blocks. The initial sequence was normalised to WT E7 nucleotide composition, but with a completely random and non-coding sequence order (Norm). Subsequently, this sequence was altered to contain either increased UpA or CpG dinucleotides or to contain no unfavourable dinucleotides at all (U, C and cu respectively). These blocks were cloned in the non-coding region and referred to as single or double non-coding synthetic sequences (ncS, Figure 5A and Table 1). Transfection of these replicon RNAs with various compositions in their ncS regions into RD cells resulted in significantly reduced E7 RNA replication for the single CpG-high ncS (ncS_C) but not the single UpA-high ncS_U (Figure 5B). However replicons with the double ncS of both U and C composition showed significantly reduced replication compared to their respective single ncS replicons (Figure 5B). Indeed, luciferase expression of the CpG-high double region mutant was little different from that of the non-replicative guanidine treated control (Figure 5B; dotted red line), indicating that this longer insertion almost entirely abrogated replication of this construct.
 
@@ -82,9 +299,17 @@ To investigate whether increasing the absolute number of unfavourable dinucleoti
 
 Together the observations that cumulative CpG, and to a lesser extent UpA dinucleotides in non-coding regions of E7 replicons have restricted RRRs, but translate equally efficiently in a non-replicating setting indicates that codon bias, codon pair bias or other direct effects on translational efficiency are not at the heart of the observed restriction. Rather it implies a cell-mediated restriction of viral RNA replication and/or an alternative fate of the compositionally altered (viral) RNA.
 
-## Restriction of viral replication of mutants with unfavourable dinucleotide frequencies occurs immediately post entry
+### Restriction of viral replication of mutants with unfavourable dinucleotide frequencies occurs immediately post entry
 
 Making use of both infectious virus and replicon systems, we investigated the cellular basis of the observed restriction during the E7 infection cycle. To investigate when in the replication cycle, the restriction of CpG- and UpA-high mutants of E7 occurred, RD cells were infected with equal RNA copy numbers (1000 RNA copies/cell) or equal infectivity (MOI 0.01) of E7 with various R2 compositions and replication monitored at early time points post-infection. Infection with equal RNA resulted in reduced infectivity of E7 R2_C virus as early as two hours post infection and a prolonged delay in the production of progeny virus and RNA levels (Figure 6). In this experiment there was no difference in initial receptor binding/viral entry between the E7 variant R2_C and other mutants as the genomic RNA copies detected after washing off the inoculum were identical to the mean of all samples at 1 hr post infection (mean 1.00, R2_C 1.00, R2_U 1.03 SD 0.04). Interestingly, after the initial delay in RNA replication, E7 with increased CpG dinucleotide frequencies replicated at a rate similar to that of other E7 variants (Figure 6B). In comparison, infections with equal infectivity resulted in the suppression of progeny E7 viruses with increased CpG and UpA dinucleotide frequencies after the first round of replication (Figure 6—figure supplement 1A). The restriction of R2_C viral RNA replication became more apparent during subsequent replication cycles (Figure 6—figure supplement 1B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig6-v3.jpg)
+
+**Figure 6.:** RD cells were infected with 1000 E7 RNA copies/cell with coding region 2 (R2) either of wild type (WT), permutated (P), CpG and UpA low (cu), UpA high (U) or CpG high (C) composition. Infectivity of progeny virus was determined in EPDA (A) RNA copies were determined by quantitative RT-PCR on total RNA and are presented relative to WT E7 at one hpi (B) Data points represent the mean of three independent experiments and error bars one standard error of the mean.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** RD cells were infected with E7 at equal infectivity (MOI 0.01). In these viruses, coding region 2 (R2) was either of wild type (WT), permutated (P), CpG and UpA low (cu), UpA high (U) or CpG high (C) composition. Infectivity of progeny virus was determined in EPDA (A). RNA copies were determined by quantitative RT-PCR on total RNA and are presented relative to WT E7 at one hpi (B). Data points represent the mean of three independent experiments and error bars one standard error of the mean.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig7-v3.jpg)
 
@@ -94,29 +319,285 @@ To further investigate the fate of viral RNA post-entry, the intracellular local
 
 The striking observation that dinucleotide frequency changes influenced the frequency of infected cells, but not necessarily their subsequent replication ability was verified by flow cytometry of a further set of E7 replicon constructs in which the luciferase gene was replaced by enhanced green fluorescent protein (EGFP). A series of mutants were created with altered nucleotide compositions in their coding R2 region and/or ncR1 tails. In vitro transcribed RNA was subsequently transfected into either RD or BHK cells and scored for fluorescent intensity. Similar to the above RNA FISH experiments, FACS analysis showed that the percentage of EGFP expressing cells at 6 hpt differed dramatically between WT and CpG-high mutant replicons while the mean fluorescent intensities of the cells that were fluorescent was comparable (Figure 8AB, Figure 8—figure supplement 1 and Table 2). Attenuation was enhanced for CpG- and UpA-high mutants when both coding R2 and ncR1 were modified (Figure 8 and Table 2). Similar to E7 replicons that expressed luciferase, transfection of replicons with either R2 or ncR1 of UpA and CpG high composition into BHK cells resulted in EGFP expression more similar to WT replicons, though replicons with both regions mutated did show a marked reduction in EGFP expression (Figure 8CD, Figure 8—figure supplement 2 and Table 2).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig8-v3.jpg)
+
+**Figure 8.:** EGFP expressing E7 replicon RNA with coding (R2) and non-coding region (ncR1) of either wild type (WT), permutated (P), CpG and UpA low (cu), UpA high (U) or CpG high (C) dinucleotide compositions as indicated was transfected in RD (A, B) or BHK (C, D) cells. FACS analysis quantified the number of EGFP positive cells (A, C) and their mean fluorescent intensities (B, D). Bars are depicted relative to the respective WT values and represent the mean of three biological replicates. Error bars represent one standard error of the mean and asterisks significant difference from native sequence with ncR1_WT (p<0.05, One-way ANOVA with Dunett’s multiple comparison post hoc test).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** FACS analysis quantified the number of EFP expressing RD cells after transfection of EGFP expressing E7 replicon RNA containing (a) R2_WT and ncR1 _WT, (b) R2_WT and ncR1_P, (c) R2_WT and ncR1_cu, (d) R2_WT and ncR1_U, (e) R2_WT and ncR1_C, (f) R2_C and ncR1_WT, (g) R2_C and ncR1_C, (h) R2_U and ncR1_U and (i) mock transfected sequences. Plots are representatives of three biological replicates.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** FACS analysis quantified the number of EFP expressing BHK cells after transfection of EGFP expressing E7 replicon RNA containing (a) R2_WT and ncR1 _WT, (b) R2_WT and ncR1_P, (c) R2_WT and ncR1_cu, (d) R2_WT and ncR1_U, (e) R2_WT and ncR1_C, (f) R2_C and ncR1_WT, (g) R2_C and ncR1_C, (h) R2_U and ncR1_U and (i) mock transfected sequences. Plots are representatives of three biological replicates.
+
+**Table 2.**
+ CpG and UpA dinucleotides inhibit initiation of E7 replicon RNA replication
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">RD cells</th>
+    </tr>
+    <tr>
+      <th colspan="2">Mutated regions</th>
+      <th colspan="2">EGFP positive (%)</th>
+      <th colspan="2">Relative EGFP positive cells</th>
+      <th colspan="2">Relative mean fluorescence intensity</th>
+    </tr>
+    <tr>
+      <th>Coding R2</th>
+      <th>ncR1</th>
+      <th>Average</th>
+      <th>SE</th>
+      <th>Average</th>
+      <th>SE</th>
+      <th>Average</th>
+      <th>SE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>WT</td>
+      <td>14.47</td>
+      <td>2.67</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>P</td>
+      <td>12.84</td>
+      <td>3.23</td>
+      <td>0.89</td>
+      <td>0.11</td>
+      <td>1.09</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>cu</td>
+      <td>10.33</td>
+      <td>1.70</td>
+      <td>0.72</td>
+      <td>0.03</td>
+      <td>1.02</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>U</td>
+      <td>12.69</td>
+      <td>1.87</td>
+      <td>0.89</td>
+      <td>0.05</td>
+      <td>1.07</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>C</td>
+      <td>6.62</td>
+      <td>1.47</td>
+      <td>0.49</td>
+      <td>0.15</td>
+      <td>0.97</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>WT</td>
+      <td>2.25</td>
+      <td>0.68</td>
+      <td>0.16</td>
+      <td>0.04</td>
+      <td>0.69</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>C</td>
+      <td>1.08</td>
+      <td>0.20</td>
+      <td>0.08</td>
+      <td>0.02</td>
+      <td>0.61</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>U</td>
+      <td>2.00</td>
+      <td>0.66</td>
+      <td>0.14</td>
+      <td>0.04</td>
+      <td>0.94</td>
+      <td>0.06</td>
+    </tr>
+  </tbody>
+</table>
+
 Together, this indicates that while entry of E7 WT, UpA- and CpG-high mutants was unaffected, replication of these mutants was profoundly restricted at early time points during the replication cycle. However, in a small number of cells, E7 CpG-high and UpA-high mutants were able to overcome restriction, suggesting that increasing CpG and UpA dinucleotides renders a large proportion of E7 RNA replication defective or E7 replication is able to counteract or saturate supposed intracellular restriction factors.
 
-## Sequence integrity
+### Sequence integrity
 
 The inability of the majority of CpG-high E7 virions and a measurable proportion of those with high UpA sequences to initiate replication post-entry may originate from mutational defects in their genome sequences which is possibly mediated through ADAR-2 or APOBEC activity in cells that produced them. To investigate this possibility, frequencies of defective viral genome sequences were determined by extensive sequencing of virus stocks of E7 with R2s of WT, P, cu, U and C composition in amplicons derived from the variable R2 region and in a non-mutated region (positions 2312–3083 in the E7 genome). Multiple clones from each PCR product were sequenced and differences from the cloned mutated region recorded (Table 3). For each, RNA from three biological replicates of WT and all four mutant virus stocks showed comparable misincorporation frequencies in the R2 variant viruses. The average mutation rate of approximately 10−4mutations/nucleotide closely resembled that of previously published mutation frequency for poliovirus (9−5[Sanjuán et al., 2010]).
 
+**Table 3.**
+ Sequence integrity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Transversions</th>
+      <th colspan="4">Transitions</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Sequence</th>
+      <th>Sequenced nucleotides</th>
+      <th>Mutations</th>
+      <th>Mutations/nt</th>
+      <th>A &gt; T</th>
+      <th>A &gt; C</th>
+      <th>T &gt; A</th>
+      <th>A &gt; G</th>
+      <th>T &gt; C</th>
+      <th>C &gt; T</th>
+      <th>G &gt; A</th>
+      <th>AA change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R1_WT</td>
+      <td>49719</td>
+      <td>8</td>
+      <td>1.61E-04</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>R1_C</td>
+      <td>49684</td>
+      <td>9</td>
+      <td>1.81E-04</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>5</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>R1_CDLR</td>
+      <td>18414</td>
+      <td>2</td>
+      <td>1.09E-04</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>R1_U</td>
+      <td>14649</td>
+      <td>1</td>
+      <td>6.83E-05</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>R2_WT</td>
+      <td>35517</td>
+      <td>0</td>
+      <td>0.00E + 00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>R2_C</td>
+      <td>27814</td>
+      <td>3</td>
+      <td>1.08E-04</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 These results indicate that these viral RNAs are not intrinsically replication defective. The observation that fitness defects in both UpA and CpG-high mutant viruses and replicons can be reversed by kinase inhibitor C16 (Figure 2—figure supplement 3) provides further evidence that the nature of the replication defect is not caused by increased mutation rates. Together, this suggests that the inhibition in replication of incoming RNA with increased UpA or CpG dinucleotide frequencies is the result of host-cell restriction factors.
 
-## Antiviral responses
+### Antiviral responses
 
 An alternative explanation for the failure of CpG- and UpA-high mutants to initiate replication as effectively as WT virus is that their compositional differences may lead to differential sequestration of incoming viral RNA sequences into cytoplasmic stress granules (SGs) and/or induce a greater stress response that prevents initial translation of the genomic RNA. SGs are cytoplasmic foci containing RNA binding proteins, RNAs and translation initiation factors. SGs are rapidly formed in response to translation attenuation and environmental stress including that induced by viral infections (Buchan and Parker, 2009; Kedersha and Anderson, 2002). This intrinsic response pathway contributes to the cellular antiviral response (Reineke and Lloyd, 2015) and multiple diverse viruses have shown to inhibit SG function (Fros et al., 2012; Emara and Brinton, 2007; Borghese and Michiels, 2011). However, picornaviruses have been shown to inhibit the formation of SGs by expressing a viral protease that cleaves Ras-GAP SH3 domain-binding protein (G3BP), which plays a central role in the formation of SGs (Fung et al., 2013; White et al., 2007).
 
 To investigate whether E7 mutants with increased CpG or UpA dinucleotide frequencies are differentially sequestered into SGs and therefore prevented from replication initiation (Figures 6–8), RD cells were infected with 1000 RNA copies/cell and after 4–6 hours cells were fixed and stained for viral RNA and G3BP1. Regardless of the nucleotide composition of the incoming viruses (WT, C, U), no typical G3BP positive cytoplasmic granules corresponding to those found in uninfected sodium arsenite treated samples were observed during infection with E7, nor did G3BP localize with E7 genomic RNA (Figure 9). Further evidence that such cytoplasmic response pathways are not involved directly in the control of E7 replication was provided by measurement of phosphorylation on serine 51 of the eukaryotic translation initiation factor eIF2α. This is a central mediator of cellular responses to environmental stress including that induced by virus infection, that acts to inhibit general translation (Holcik and Sonenberg, 2005) and phosphorylation is generally associated with SG formation. Infection with the E7 UpA and CpG high variants at either equal infectivity or equal RNA did not result in a considerable increase ineIF2α phosphorylation compared to infection with WT E7 or the permutated control (Figure 9—figure supplement 1A).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig9-v3.jpg)
+
+**Figure 9.:** RD cells were infected with E7 variants with R2 of wild type (WT), UpA high (U) or CpG high (C) composition at 1000 RNA copies/cell. Fixed at six hpi and stained with Stellaris probes against an unchanged region of the E7 genomic RNA (red/magenta) and G3BP (green), the nucleus was stained with Hoechst 33342 (Blue).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** (A) RD cells, infected for six hours with equal MOI or equal RNA copies of E7 viruses with indicated R2 variants were immunostained for total eukaryotic initiation factor 2α (eIF2α) or the phosphorylated protein (P- eIF2α). (B) RD cells were pre-treated for two hours with an inhibitor of RNA interference; acriflavine (ACF) or DMSO as a control. Cells were transfected with E7luc replicon RNA containing ncR1 variants in the presence of ACF or DMSO respectively. Bars represent the average luciferase measurements at six hpt relative to WT of three independent experiments and error bars one standard error of the mean. (C) RD cells, infected with E7 viruses with the indicated nucleotide composition of R2 at a MOI of 0.01 were assayed for caspase 3/7 activity at 24 hpi. Bars represent the mean of three independent experiments, normalised for not infected cells. Error bars represent one standard error of the mean.
+
 Next we investigated whether RNA silencing through the RNA-induced silencing complex (RISC) may differentially affect replication of the E7 mutants. Loading of small molecules to the RISC complex is effectively inhibited by acriflavine (ACF) (Madsen et al., 2014). However, treatment of cells with ACF did not change the RRR of E7luc replicons with ncR1 variants from their respective DMSO treated controls (Figure 9—figure supplement 1B).
 
 Finally, we investigated whether mutants with higher frequencies of CpG or UpA dinucleotides were more potent inducers of apoptosis. Caspase 3/7 activity of cells infected with WT, P, cu, C, or U R2 mutants of E7 at equal MOI was determined at 24 hr post infection. Levels correlated with viral replication rates rather than with CpG or UpA dinucleotide frequencies, providing strong evidence that the reduced replication of viruses with increased genomic UpA or CpG dinucleotide frequencies was not caused by an increased induction of programmed cell death (Figure 9—figure supplement 1C). Together, this suggests that viruses with increased CpG or UpA dinucleotide frequencies do not differentially induce stress, interferon-coupled or apoptosis-associated antiviral pathways and that none of these can be plausibly attributed as mediations of their restricted replication phenotypes.
 
-## Restriction of viral RNA replication cannot be induced in trans by RNA with increased UpA and CpG dinucleotide frequencies
+### Restriction of viral RNA replication cannot be induced in trans by RNA with increased UpA and CpG dinucleotide frequencies
 
 While conventional antiviral pathways or effects of siRNA induction could not be implicated in the observed restriction of replication of CpG- or UpA-high mutants of E7, it is possible that their attenuation was mediated through alternative pathways that induced an antiviral state within the infected cells. To investigate this, we determined whether the replication of WT E7 could be suppressed in trans through the effects of co-transfection or expression of RNA sequences in the cell with elevated CpG or UpA dinucleotide frequencies.
 
 In the first experiment, high CpG/UpA and permutated control R2 region RNA were transiently expressed from a plasmid vector transfected into HEK293 cells off a CMV promoter. After 24 hr, during peak expression of the transcripts, cells were infected with WT E7 at a MOI of 0.01 for 48 hr and effects of the RNA transcripts monitored by measurement of viral titres in an EPDA (Figure 10A). The expression levels of the R2 mRNA transcripts were comparable between mutant R2 sequences (data not shown). However, titres of the superinfecting WT virus were similar between all samples and therefore entirely unaffected by the nucleotide composition of the R2 RNA co-expressed in these cells (Figure 10A).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig10-v3.jpg)
+
+**Figure 10.:** (A) 293 cells were transfected with plasmids expressing R2 regions of either wild type (WT), permutated (P), CpG and UpA low (cu), UpA high (U) or CpG high (C) dinucleotide compositions from a CMV promoter or mock transfected (Con), 24 hr prior to infection with wild type E7. Cells were infected with a MOI of 0.01 and at 48 hpi the supernatant was titrated on RD cells. (B) The 800 nt long ncS regions of indicated composition were in vitro transcribed from a T7 promoter outside the context of the E7 replicon. Equal molar amounts of E7luc with ncR1 of WT composition and the individual ncS RNAs were co-transfected into RD cells and luciferase expression of E7luc was measured at six hpt. (C) E7luc with a 3’ WT ncR1 was co-transfected with E7 replicons containing EGFP of the indicated nucleotide composition instead of firefly luciferase. Bars depict the means of at least three independent experiments and have been normalised to their respective P (A), Norm (B) and WT (C) controls. Error bars display one standard error of the mean.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/29112/elife-29112-fig10-figsupp1-v3.jpg)
+
+**Figure 10—figure supplement 1.:** RD cells transfected with E7_EGFP replicons with 3’ ncR1 variants together with E7luc replicon containing a 3’ ncR1 tail of WT composition. EGFP replication was imaged at 6 hpt with identical exposure times.
 
 In an alternative experimental format, the above described non-coding synthetic sequences (ncS, Table 1), 800 bases in length, with variable dinucleotide frequencies (Norm, cu, U, and C) were transcribed in vitro and RNA co-transfected into RD cells with the E7 luciferase replicon extended by an ncR1 of WT composition (Figure 10B). At six hpt, cells were lysed and luciferase expression was measured. Luciferase expression of the E7 replicon was not affected by co-transfected ncS RNAs, regardless of their dinucleotide frequencies (Figure 10B).
 
@@ -124,7 +605,7 @@ In these experiments, the high CpG/UpA RNA sequences were expressed in cells in 
 
 Together, these findings indicate that neither replicating viral RNA nor non-replicating RNA sequences in the cytoplasm with elevated CpG or UpA dinucleotide frequencies had any detectable trans effect on E7 replication. The strict restriction on replication in cis demonstrates that expression of RNAs with elevated CpG or UpA frequencies mediates a quite different form of replication inhibition than the antiviral state induced by stress pathways or IFN-β induction through activation of conventional PRRs.
 
-## Context of CpG dinucleotides
+### Context of CpG dinucleotides
 
 Most genomic sequences of ssRNA viruses show marked suppression of UpA and CpG dinucleotides (Karlin et al., 1994; Rima and McFerran, 1997; Simmonds et al., 2013). However, the suppression of CpG dinucleotides is composition dependent. Higher G + C content generally allows for a higher frequency of CpG dinucleotides in naturally occurring sequences (Fryxell and Moon, 2005; Simmonds et al., 2013), including isolates of the enterovirus genus (Figure 11A). To investigate whether this striking correlation is the result of functional constraints that also shapes the direct context surrounding a CpG dinucleotide, synthetic sequences were designed to have an identical G + C content and equal amounts of CpG and UpA dinucleotides as WT R1 (Table 1), but with variable positioning of A and U bases that may create more potent motifs restricting replication than CpG alone. Specifically, sequences were generated in which A and U bases were positioned in either AACGAA or UUCGUU contexts. These novel sequences were cloned into the non-coding region of the E7 luciferase replicon system creating E7 ncR1_AACGAA and ncR1_UUCGUU. Despite these mutants possessing the WT number of CpG dinucleotides, their replication was profoundly impaired (Figure 11B); the ncR1_AACGAA showed an RRR comparable to that of the CpG-high sequence (containing 181 CpG dinucleotides). Remarkably, the replication of the ncR1_UUCGUU was further impaired with an RRR 30-fold lower than the WT control of identical CpG content. The context of the bases surrounding the CpG dinucleotide has a potent effect on replication attenuation. A further range of sequences require to be tested in this experimental paradigm to better characterise the minimal motif associated with CpG recognition.
 
@@ -136,13 +617,13 @@ Most genomic sequences of ssRNA viruses show marked suppression of UpA and CpG d
 
 CpG and UpA dinucleotides are under-represented in the genomes of most RNA viruses infecting vertebrates and plants (Karlin et al., 1994; Rima and McFerran, 1997; Simmonds et al., 2013) but the host factors or mutational mechanisms that impose this suppression in viral genomic nucleotide compositions are still unknown. Here we characterise mechanistically how the viral replication cycle is affected by increased genomic CpG and UpA dinucleotide frequencies in viral genomes and narrow down the possible cellular processes involved. Importantly we show that the functional constraints act directly on RNA with increased CpG and UpA dinucleotides to inhibit viral RNA replication. This occurs independent of whether these nucleotides are in coding or non-coding RNA and without induction of a systemic, cell-wide antiviral state.
 
-## Relative replication rates, dinucleotide frequencies, codon usage and translational efficiency
+### Relative replication rates, dinucleotide frequencies, codon usage and translational efficiency
 
 The RRRs of both viruses and replicons with increased CpG and UpA dinucleotides were lower than WT E7 in all cell types tested. The similarity in pattern of RRR observed in different cell lines between E7 virus and replicons, and their shared responsiveness to C16 corroborates the use of this replicon system with non-coding sequence variants. For both replication systems, cells originating from the kidney and especially BHK cells displayed a smaller restrictive phenotype to CpG-high E7 (Figures 1–3 and 10), although increasing CpG or UpA dinucleotides in multiple regions further reduced the RRR in BHK cells, indicating that these cells do share the ability to inhibit E7 replication (Figure 8). These findings are consistent with the reduced attenuation in BHK cells of dengue virus mutants with an increased frequency of unfavoured codon pairs (Shen et al., 2015), a process that increases frequencies of CpG and UpA dinucleotides in the sequence (Simmonds et al., 2015; Tulloch et al., 2014). More broadly, the numerous studies that used codon pair bias to attenuate viruses (Coleman et al., 2008; Mueller et al., 2010; Ni et al., 2014; Martrus et al., 2013; Le Nouën et al., 2014) consistently report the same type of restricted replication phenotypes that we have observed in high CpG and UpA mutants of E7. We and others have proposed on bioinformatic and experimental grounds that attenuation associated with unfavoured codon pairs originates from unintentional increase in CpG and UpA dinucleotides (Tulloch et al., 2014; Kunec and Osterrieder, 2016).
 
 The data reported in the current study reinforces this conclusion, at least for the echovirus seven model we used, by demonstrating that replication rates were similarly affected by addition of CpG and UpA dinucleotides in the 3’ non-coding region as they were in the coding part of the genome (Figures 2, 5 and 8). CpG- and UpA-induced attenuation therefore must be mainly mediated in a manner that is independent of codon usage or codon pair bias. Furthermore, transfection of non-replicating RNAs showed no influence of CpG or UpA addition on translation of luciferase or RNA stability (Figure 4). These observations were however restricted to the echovirus model, and while they may also underlie the observed attenuation of other viruses with codon or codon pair de-optimised coding regions, translation efficiency is very clearly a potential additional factor that may influence virus replication rates, and does not exclude the existence of additional mechanisms that may attenuate viruses based on codon or codon pair choice, particularly for viruses that have different replication mechanisms to E7. For example, the expression of viral proteins from conventionally processed mRNAs by most DNA viruses, nuclear replicating RNA viruses such as influenza A virus and retroviruses clearly places their replication kinetics at the mercy of how effectively these are translated and how well this is coordinated for virus assembly and release. These factors are less relevant for positive sense RNA viruses, such as E7 that replicate in the cytoplasm. The findings do suggest, however, that the apparent necessity for under-representation of UpA and CpG dinucleotides in viral RNA is one element that has contributed to biases in nucleotide composition and as a result the choice of codons and codon pairs in native viral sequences. The importance of the current study is that we can at least for the E7 model, entirely disentangle the effects of dinucleotide frequency modification from translation efficiency and produce experimental findings that complement conclusions reached previously using other viruses and other experimental approaches (Burns et al., 2006; Burns et al., 2009; Tulloch et al., 2014; Kunec and Osterrieder, 2016).
 
-## Biology
+### Biology
 
 Since the attenuation of replication of E7 with elevated CpG and UpA frequencies cannot be the result of changes in translation efficiency, we investigated the cellular basis of the observed restriction by following the outcome of infection of cells with E7. Shortly after entry, mutants with increased CpG dinucleotide frequencies showed a substantial delay and reduced formation of replication complexes. However, this difference was not the result of reduced infectivity of CpG-high virions, as equal RNA copies were detected by PCR and RNA-FISH revealed similar frequencies of RNA genomes post-entry (Figures 6 and 7). The marked phenotypic effect arose because the initial replication entities of CpG-high viruses failed to progress to form the larger replication complexes observed in WT and also most UpA-high infected cells (Figure 7). Once formed, replication complexes from CpG-high viruses showed comparable levels of viral RNA by RNA-FISH. Infection outcomes with a parallel set of replicons in which the luc reporter gene was replaced by EGFP conformed these observations; FACS analysis provided quantitative evidence for a reduced frequency but equivalent fluorescent intensity of productively infected cells by the CpG-high mutant (Figure 8).
 
@@ -150,7 +631,7 @@ This reduction in replication competent particles could be the result of post-tr
 
 Viral replication may be directly inhibited in some other way by increased UpA and CpG dinucleotides. UpA and CpG dinucleotides are self-complementary and may increase the likelihood of intramolecular base pairing, which could impact the efficiency of the viral RNA dependent RNA polymerase (Lai, 2005). However, the reversal of the restricted replication phenotypes of CpG- and UpA-high mutants by the kinase inhibitor C16 (Figure 2—figure supplement 3) and the reduction in their attenuation in BHK and other kidney cells lines (Figures 1–3 and 8) argues strongly against the existence of an intrinsic replication defect in the mutant viruses. This conclusion is reinforced by the observation that CpG- or UpA- elevation in a non-functional genome region (the 3’ ncR1 or ncS) led to a similar attenuation as observed in coding region mutants (Figures 2, 3 and 5).
 
-## Antiviral responses
+### Antiviral responses
 
 As there was no evidence that CpG- and UpA-high viruses were translationally or otherwise compromised in their replication abilities, we therefore sought evidence that their attenuation provoked a qualitatively or quantitatively different innate cellular response. Perhaps it was their greater visibility to cell defences or susceptibility to antiviral pathways that limited their replication. It is known that the structure and configuration of viral genomic RNA may serve as PAMPs for interferon pathway-coupled PRRs (Yoneyama et al., 2016; Oshiumi et al., 2016). UpA and UpU dinucleotides in viral RNAs can be cleaved by RNase L (Cooper et al., 2015, 2014) and produce 5’ phosphorylated RNA termini that activate RIG-I mediated IFN-β expression (Malathi et al., 2007; Malathi et al., 2010). This may potentially account for the suppression of UpA dinucleotide frequencies in viral RNA sequences. However, this does not explain why viruses have not evolved to under-represent UpU dinucleotides as well as UpA - for E7 the UpU O/E ratio is 1.04.
 
@@ -172,11 +653,11 @@ In summary, the recognition and restriction mechanisms that attenuate the replic
 
 ## Materials and methods
 
-## Cells and viruses
+### Cells and viruses
 
 Design, construction and recovery of E7 viruses with various nucleotide compositions in R2 were described previously (Atkinson et al., 2014). Viral titres were verified by end point dilution assay (EPDA) on RD cells and RNA copy numbers were determined by quantitative RT-PCR using primer pair E7 5’UTR (Supplementary file 1A), with a PCR amplicon as standard curve. Cells from a variety of tissues: RD (ATCC: CCL-136, RRID:CVCL_1649, Homo sapiens, muscle rhabdomyosarcoma), A549 (ATCC: CRM-CCL-185, RRID:CVCL_0023, Homo sapiens, lung epithelial), HEK-293 and HEK-293T (ATCC: CRL-1576, RRID:CVCL_6342 and ATCC: CRL-3216, RRID:CVCL_0063, Homo sapiens, embryonic Kidney), Nb324K (RRID:CVCL_U409, Homo sapiens, kidney), Vero E6 (ATCC: CRL-1586, RRID:CVCL_0574, Cercopithecus aethiops, Kidney), BHK-21 (ATCC: CCL-10, RRID:CVCL_1915, Mesocricetus auratus, kidney), MEF (Mouse embryonic fibroblasts and knock outs thereof provided by Prof. Jan Rehwinkel and generated as described [Glück et al., 2017]), NIH/3T3 (ATCC: CRL-1658, RRID:CVCL_0594, Mus musculus, embryonic fibroblasts), A9 (ATCC: CRL-1811, RRID:CVCL_9094, Mus musculus, B lymphocyte), differentiated Neuro-2a (dN2a, ATCC CCL-131, RRID:CVCL_0470, Mus musculus, neuroblast) and BV2 (RRID:CVCL_0182, Mus musculus, Microglia brain cells)] were cultured in Dulbecco modified Eagle medium (DMEM) with 10% foetal calf serum (FCS), penicillin (100 U/ml) and streptomycin (100 μg/ml) and maintained at 37°C with 5% CO2. The cell lines used in this study are not listed in the ICLA Database of Cross-Contaminated or Misidentified Cell Lines. All cell lines were derived from accredited sources in the Roslin Institute, University of Edinburgh. Initial cultures of each cell line was aliquoted and frozen after minimum passaging and cells used from experiments described in the study were derived from these. All cell lines are screened on a regular 6 month schedule for mycoplasma contamination with the PCR-based protocol as described in (Young et al., 2010). No contamination was detected in any of the cell lines used over the period the study described in the manuscript.
 
-## Construction of E7 replicons and R2 expression plasmids
+### Construction of E7 replicons and R2 expression plasmids
 
 The plasmid pRiboE7luc contains the E7 genome in which the structural genes of E7 have been replaced by a firefly luciferase gene. The original firefly luciferase gene (Observed/Expected ratio (O/E) CpG 1.242 and UpA 0.699) was replaced by a synthetic version of the luciferase gene with its CpG and UpA dinucleotides removed (O/E ratio CpG 0.013 and UpA 0.145) while maintaining its coding sequence, referred to as E7. To introduce dinucleotide variations in the non-coding region of E7 amplicons were created by amplification of pRiboE7luc with PCR_7146 s and PCR_7358as and PCR_7315 s and PCR_749 as primers. Both amplicons were fused together with a second PCR reaction using PCR_7146 s and PCR_749as primers (Supplementary file 1A) (Phusion high-fidelity DNA polymerase, New England Biolabs, M0530S). The linker sequence was inserted with the existing PmlI and NotI restriction sites. The result was an E7 replicon with unchanged coding sequence, but SalI, SbfI and HpaI restriction sites immediately after the stop codon (nt 7325) and before the original E7 3'UTR. Previously, two regions (R1, nts 1878–3119 and R2, nts 5403–6462) of the full length E7 cDNA clone pT7:E7, were synonymously altered creating viruses with variations in the nucleotide composition of their coding region (Table 1). In short; both R1 and R2 sequences included a wild type (WT), permutated control (P), CpG and UpA low (cu), UpA high (U) and CpG high (C) variant. Using the restriction sites SalI and HpaI for R1 and EcoRI and BglII for R2 the various R1 sequences were introduced into the 3’ non-coding region of E7, creating E7 with 3’-ncR1 variants and the R2 sequences into the original coding sequence of E7 with 3’-ncR1_WT.
 
@@ -188,40 +669,40 @@ The E7 EGFP replicon was constructed by replacing the firefly luciferase from th
 
 R2 sequences of various nucleotide compositions were amplified by PCR while adding 5’ -EcoRI and 3’-ApaI restriction sites and additional nucleotides that enabled transcription of the R2 sequences but prevented their translation (R2_EcoRI Fwd and R2_ApaI Rev primers for each R2 mutant sequence, Supplementary file 1A). The same restriction sites were used to clone the sequences into a previously published pcDNA/DEST40 backbone downstream of the CMV promoter (Fros et al., 2012).
 
-## Virus replication
+### Virus replication
 
 RD cells were seeded at 1 × 10∧5 cells per well in 24-well plates and subsequently infected with the wild-type (WT) E7 or E7 R2 mutants at a multiplicity of infection (MOI) of 0.01 or 1000 E7 RNA copies per cell. One hour post infection the inoculum was removed and cells were washed with phosphate buffered saline (PBS) before adding 500 μl cell culture medium. At the indicated times post infection the cell culture medium was aspirated and stored at −80°C. Where applicable, cells were lysed in 300 μl RLT lysis buffer and stored at −80°C before RNA isolation with the RNease kit (Qiagen). Viral titres were determined in an end point dilution assay (EPDA) by determining the tissue culture infectious dose 50% (TCID50) in RD cells.
 
 Total RNA was harvested according to the manufacturer’s protocol (RNeasy, Qiagen). In a one-step reaction Quantifast Sybr green (Qiagen) total RNA was reverse transcribed with gene specific primers amplifying either E7 (primer pair E7 5’-UTR) or the internal control GAPDH (Supplementary file 1A) using the Stepone plus cycler (Applied Biosystems).
 
-## RNA fluorescent in situ hybridization (FISH)
+### RNA fluorescent in situ hybridization (FISH)
 
 Custom Stellaris FISH Probes were designed against an unaltered WT portion of the E7 genomic RNA (nt 3200–4200) by utilizing the Stellaris RNA FISH Probe Designer (Biosearch Technologies, Inc., Petaluma, CA) available online at www.biosearchtech.com/stellarisdesigner. The resulting 32 E7 genomic RNA probes (Supplementary file 1B) were hybridized with CAL Fluor 590 red. RD cells were infected with 1000 RNA copies/cell of either WT, R2_U or R2_C viruses. At the end of infection cells were washed with PBS and fixed with 3.7% paraformaldehyde in PBS for 10 min. Cells were permealized by 70% ethanol for 2 hr at 4°C. Samples were stained for E7 RNA using the RNA FISH probe set, following the manufacturer's instructions, using the protocol for adherent cells or in case of co-staining with cellular proteins the sequential IF protocol, both available online at www.biosearchtech.com/stellarisprotocols. The primary G3BP1 antibody (G6046; Sigma, RRID:AB_1840864) was diluted 1:500 in PBS containing 3% FCS. Cells were stained at room temperature for one hours, washed three times with PBS and stained with the secondary antibody Alexa Fluor 488 (RRID:AB_2633280, 1:2000) for one hour. Nuclei were stained with Hoechst 33342. Samples were analysed using a Zippy API Deltavision core inverted microscope and Z-stacks were deconvolved with SoftWorx Deltavision software.
 
-## Replicon RNA luciferase assay
+### Replicon RNA luciferase assay
 
 Replicon plasmid DNA was linearized using NotI and isolated from agarose gel. Uncapped RNA transcripts were synthesized in vitro using T7 RNA polymerase (MEGAscript T7, Invitrogen, Carlsbad, CA) for 3–6 hr. RNA integrity was confirmed on agarose gel and the concentration determined with Qubit Fluorometric Quantitation (ThermoFisher Scientific). In a 96-well format, cells were transfected with 10 ng of RNA/well using 0.4 μl of lipofectamine 2000 (ThermoFisher Scientific), according to the manufacturers protocol. At the indicated time post transfection cells were lysed in 60 μl passive lysis buffer (Promega) for 20 min. In a white F-bottom plate 50 μl cell lysate and 50 μl of firefly luciferase substrate (Promega) were mixed and measured in a GloMax 96-microplate luminometer (Promega).
 
-## Western blot analysis of eIF2α phosphorylation
+### Western blot analysis of eIF2α phosphorylation
 
 RD cells either infected with E7 R2 variants or uninfected cells were washed once with ice cold PBS and lysed in laemmli buffer containing 2-mercaptoethanol. Lysate was heated to 100°C for five minutes and clarified by centrifugation at 13,000 rpm for one minute in an Eppendorf table top centrifuge. Protein samples were separated on a 4–12% SDS gel (Biorad) and transferred to an Immobilon membrane (Millipore) for analysis by Western blotting. Membranes were blocked in PBS with 0.05% Tween 60 (PBST) containing 3% skimmed milk in for 1 hr at room temperature. Membranes were washed three times for 5 min each with PBST and incubated for one hour at room temperature with anti-P-eIF2α (diluted 1: 500; Abcam, RRID:AB_732117) or anti-HPRT (diluted 1: 4000; Abcam, RRID:AB_297217) in PBST. Membranes were washed and treated with HRP-conjugated goat anti-rabbit IgG mAb, diluted 1: 3000 in PBST, for 45 min at room temperature. Membranes were washed three times with PBST. Proteins were detected by chemiluminescence using ECL prime Western blotting detection reagent (GE Healthcare).
 
-## ACF treatment
+### ACF treatment
 
 RD cells were seeded at 1.5 × 10∧4 cells per well in 96-well plates and the next day cells were pre-treated for two hours with 2.5 μM acriflavine (ACF) or DMSO. Cells were transfected with 10 ng / well of E7luc replicon RNA containing ncR1 variants in the presence of ACF or DMSO respectively. Six hpt cells were lysed and luciferase measured.
 
-## Caspase assay
+### Caspase assay
 
 RD cells were seeded at 1.5 × 10∧4 cells per well in 96-well plates and subsequently infected with the wild-type (WT) or R2 mutants at a MOI of 0.01. One hour post infection the inoculum was removed and cells were washed with PBS before adding 100 μl cell culture medium. At 24 hr post-infection caspase activity was measured using the Caspase Glo 3/7 Assay kit (Promega) according to manufacturer’s instructions.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 RD cells or BHK cells were seeded at 2 × 10∧5 cells per well in 12-well plates and left to adhere overnight. Cells were transfected with EGFP expressing E7 replicon RNA with various ncR1 and coding R2 mutants at 594 ng RNA/well and 4.75 µl lipofectamine 2000 (ThermoFisher Scientific). Six hpt the cell culture media was removed, cells were washed in PBS, trypsinized and pelleted at 1,500 rpm for 5 min. Pellets were washed once in PBS and cells were fixed in 4% paraformaldehyde/PBS for 10 min. Cells were pelleted and resuspended in 100 µl PBS. EGFP expression was quantified on a MACSQuant Flow Cytometer. Data was analyzed using FlowJo software (LCC).
 
-## Interference assays
+### Interference assays
 
 Interference assays were performed using three different methods. (i) 293 cells were seeded at 1 × 10∧5 cells per well in 24-well plates and left to adhere overnight. Cells were transfected with 250 ng of R2_pcDNA/DEST40 vectors/well using 2 µl lipofectamine 2000 (ThermoFisher Scientific). 24 hpt cells were infected with E7 WT virus at MOI 0.01 for 48 hr. Virus-containing supernatants were titrated by EPDA on RD cells. (ii) RD cells were seeded at 1.5 × 10∧4 cells / well in 96-well plates and left to adhere overnight. Cells were co-transfected with 6.3 ng ncS variant RNA and 50 ng E7 luc replicon with ncR1_WT per well using 0.4 µl lipofectamine 2000 (ThermoFisher Scientific). Six hpt luciferase activity was quantified as described above. (iii) RD cells were seeded at 1.5 × 10∧4 cells/well in 96-well plates and left to adhere overnight. Cells were co-transfected with 42 ng EGFP expressing E7 replicon with the indicated R2 and ncR1 variants and 50 ng of luciferase expressing E7 with ncR1 of WT composition using 0.4 µl lipofectamine 2000 (ThermoFisher Scientific). Six hpt luciferase activity was quantified as described above.
 
-## Statistical analyses
+### Statistical analyses
 
 Biological replicates are defined as repeats of the same experiment. Each experimental replicate used cells from separate batches and virus dilutions, RNA transfections and possible additional treatments were separate suspensions. Significance for the described analyses was calculated using either the Microsoft Excel 2016 or GraphPad Prism five software packages.

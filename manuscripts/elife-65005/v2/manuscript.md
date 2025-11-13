@@ -39,37 +39,371 @@ Here, we set out to understand the conformational transitions of the gp41 membra
 
 ## Results
 
-## Gp41FP-TM interaction with 2H10
+### Gp41FP-TM interaction with 2H10
 
 Two gp41 constructs, one containing residues 512 to 594 comprising FP, FPPR, and HR1 (N-terminal chain, chain N) and one coding for resides 629 to 716 including HR2, MPER and TM (C-terminal chain, chain C) (Figure 1A) were expressed separately, purified and assembled into the monodisperse trimeric complex gp41FP-TM (Figure 1—figure supplement 1A). Gp41FP-TM reveals a thermostability of ~93°C as measured by circular dichroism (Figure 1—figure supplement 2A) indicating that the presence of FP and TMR increases the thermostability by ~7°C compared to gp41 lacking FP and TM (Buzon et al., 2010). In order to facilitate crystallization, gp41FP-TM was complexed with the llama nanobody 2H10 (Lutje Hulsik et al., 2013) in β-OG buffer and purified by size exclusion chromatography (SEC) (Figure 1—figure supplement 1B). To determine the stoichiometry of binding, we performed isothermal titration calorimetry (ITC), which indicated that gp41FP-TM and 2H10 form a 3:1 complex with a KD of 2.1 ± 0.9 µM (Figure 1—figure supplement 2B). Interaction of gp41FP-TM with 2H10 was further confirmed by biolayer interferometry (BLI) analysis (Figure 1—figure supplement 2C).
 
-## Crystal structure of gp41 in complex with 2H10
+![Figure 1.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic drawing of gp41 and expression constructs of gp41 chains N and C. Sequence numbering is based on the HIV-1-HBX2 envelope gp160 sequence. Color coding is as follows: FP, fusion peptide, red; FPPR, fusion peptide proximal region, orange; HR1, heptad repeat region 1, yellow; HR2, heptad repeat region 2, blue; MPER, membrane proximal external region, violet; TM, transmembrane region, beige; CC, cys loop region, light blue and cyt, cytoplasmic domain brown. Expression tags used are TrxA, thioredoxin fusion protein, His, His-tag, TEV, TEV protease cleavage sequence, Tag, chain N contains a Flag-tag (DYKDDDDK sequence) and chain C an N-terminal enterokinase cleavage site (DDDDK). (B) Ribbon presentation of gp41TM-FP in complex with 2H10. Color-coding of the different segments is as indicated in the gp41 scheme (A), the 2H10 nanobody is colored in green. (C) Ribbon presentation of gp41TM-FP including the core six-helical bundle trimer axis (black line) revealing the different orientations of FP and TM. (D) Close-up of the interaction of gp41FP-TM with 2H10. Residues in close enough contact to make polar interactions are shown as sticks. (E, F, G) Ribbon diagram of the individual protomers named chain A, B, and C. Residues within the FPPR and MPER hinge regions are indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Size exclusion chromatography of the gp41FP-TM complex composed of chains N and C and SDS-PAGE showing the two bands corresponding to gp41 chains N and C. (B) SEC of gp41FP-TM in complex with the llama nanobody 2H10 and corresponding SDS PAGE showing the three bands corresponding to gp41 chains N and C and 2H10.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Circular dichroism of gp41FP-TM shows that FP and TM increase the melting temperature of gp41. Temperature-dependent unfolding of gp41FP-TM monitored by circular dichroism spectroscopy recorded at 222 nm in a buffer containing 1% β-OG. Gp41FP-TM has an estimated Tm of ~93°C. (B) Gp41FP-TM complex formation with 2H10. ITC data were recorded on successive injections of 2H10 at a concentration of 267 µM into the cell containing gp41FP-TM at a concentration of 19,5 µM. Three experiments were performed, with an average stoichiometry N = 1.1 +/- 0.2, which suggests that on average only one 2H10 binds to trimeric gp41FP-TM under these conditions. The calculated KD is 2.1 µM ± 0.9. (C) Gp41FP-TM complex formation with 2H10. Bio-layer interferometry (BLI) binding of gp41FP-TM to 2H10. GP41FP-TM concentrations analyzed are dilutions between 156 and 2500 nM. The estimated KD based on the steady state binding model is 170 ± 17 nM. Note that the calculated Kds of the ITC and BLI experiments are only estimates since 2H10 needs to optimally stabilize the gp41FP-TM-binding conformation. Therefore only a fraction of gp41FP-TM may adopt the required conformation during the injection time used to record binding.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** 2Fo-Fc composite omit maps contoured at 1 σ of a central 6HB core region (A and B) of the kinked MPER conformation of protomer C.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Ribbon presentation of gp41-MPER (pdb 3k9a), gp41FPPR-MPER (pdb 2x7r) and gp41FP-TM (numbering is shown for chain B). Cα super positioning of all three structures onto chains N-B (residues 546–574) and C-B (residues 628–662) of gp41FP-TM, revealing an r.m.s.d of 0.55 Å between pdb 3k9a and gp41FP-TM and an r.m.s.d. of 0.29 Å between pdb 2x7r and gp41FP-TM for the straight helices of chain B.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Model of gp41FP-TM-2H10 before simulation and (B) after 1 µs simulation, which repositions the 2H10 CDR3 in the membrane and reveals movement of FP of chain C. The orange spheres represent the phosphate atoms of the phospholipids and mark the membrane boundaries. Residues 512–517 and 701–707 have been modeled in a helical conformation to provide complete models of FP and TM. (C) Close-up of the proposed membrane interaction of the 2H10 interface. CDR3 W100 and S100d mutated to F could as well insert into the membrane. Furthermore, basic residues at positions S30K, S27R, and S74R (shown as sticks) are positioned to make polar interactions with lipid head groups.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Crystal packing of protein 2-D layers arranged in the c direction of the crystal unit cell do not show defined crystal contacts. The inset shows the distances between the protein layers indicating that the defined C-terminus of chain C is close (14 Å) to the N-terminus of an HR1 helix (yellow). Thus crystal lattice stabilization is likely unregular and poorly defined at the resolution of the crystal diffraction data. We hypothesize that weak crystal contacts are formed by the C-terminal extensions of TM, which may be able to adopt different orientations and are therefore not present in the structure.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Membrane interaction of nanobodies 2H10, 2H10-RKRF, and bnAb 10E8 was tested using liposomes containing the lipid composition of the HIV-1 envelope. Nanobodies 2H10 and 2H10-RKRF as well as bnAb10E8 were incubated alone and with lipos﻿﻿﻿omes and subsequently separated in a sucrose gradient flotation assay. Samples of each fraction of the gradient were analyzed by SDS-PAGE, which demonstrates that 2H10 and 2H10-RKRF do not float with liposomes in this assay indicating no or very low non-specific membrane interaction as reported previously for 2H10 (Lutje Hulsik et al., 2013) and some weak interaction (*) for 10E8 as reported previously (Chen et al., 2014). The figure supplement is also related to data presented in Table 2.
+
+### Crystal structure of gp41 in complex with 2H10
 
 The structure of gp41FP-TM in complex with 2H10 was solved by molecular replacement to a resolution of 3.8 Å (Figure 1—figure supplement 3; Table 1). The asymmetric unit contained trimeric gp41FP-TM bound to one 2H10 nanobody as indicated by ITC (Figure 1—figure supplement 2B). The six-helix bundle structure composed of three N-terminal and three C-terminal chains is conserved from HR1 residue A541 to HR2 residue L661 in all three protomers, and identical to previous structures (Chan et al., 1997; Weissenhorn et al., 1997). However, TMR and FP do not follow the three-fold symmetry and their chains point into different directions (Figure 1B and C). 2H10 interacts with chain C-A (Figure 1B and D) and stabilizes a partially extended MPER conformation, including a kink at L669 that positions the rest of MPER and TM (N674 to V693) at a 45° angle with respect to the six-helix threefold symmetry axis. The corresponding N-terminal chain A (chain N-A) has its FP disordered and FPPR from G527 to A533 is flexible, while the remaining FPPR and HR1 form a continuous helix (Figure 1E). The protomer A chain C 2H10 epitope spans from residues Q658 to N671, which is involved in a series of polar contacts with 2H10 covering a total buried surface of 712.2 Å2. These include interactions of gp41FP-TM E662 to 2H10 Y37, S668 and the carbonyl of D664 to R56, K665 to E95, N671 and the carbonyl of A667 to R54, K655 to R97 and R93 contacts E95 to position it for interaction with K665 (Figure 1D). Notably, mutations of R56, R93, E95, and R97 have been shown to affect interaction with gp41 (Lutje Hulsik et al., 2013). Chain N-B of the second protomer forms a long continuous helix comprising FP, FPPR and HR1 from residues L518 to D589 with the first six residues of FP being disordered. Likewise, chain C-B folds into a continuous helix from M629 to A700 comprising HR2, MPER and TM (Figure 1F). Cα superimposition of chain C-B with MPER containing gp41 structures (Buzon et al., 2010; Shi et al., 2010) yields root mean-square deviations of 0.55 Å and 0.29 Å (Figure 1—figure supplement 4), indicating that the straight helical conformation is the preferred conformation in threefold symmetrical gp41. In the third protomer, chain N-C has a helical FP linked by flexible residues G531 to A533 to a short helix of FPPR that bends at A541 with respect to helical HR1. Its corresponding chain C-C contains helical HR2 and a flexible region from N671 to N674, which stabilizes a ~ 45° rotation of the remaining MPER-TM helix that extends to residue R707 (Figure 1G and Figure 1—figure supplement 3B). Thus, the structure reveals flexible regions within FPPR and MPER. FPPR flexibility is supported by strictly conserved G528 and G531, while MPER has no conserved glycine residues. However, the same kink within L661 to F673 has been observed in the MPER peptide structure (Sun et al., 2008), and in complex with bnAb 10E8 (Huang et al., 2012). The N-terminal FP residues 512 to 517 are disordered within the detergent micelle. Flexibility of this region in the absence of membrane is consistent with NMR peptide structures that propose a flexible coil structure of the N-terminal part of FP in solution followed by a helical region starting at L518 (Serrano et al., 2017) as observed here. Based on the flexible linkage of FP and TMR, we propose that both FPPR and MPER act as hinges during gp41 refolding leading to membrane fusion.
 
-## MD simulation of gp41FP-TM in a lipid bilayer
+**Table 1.**
+ Crystallographic data collection and refinement statistics.Table 1—source data 1.Env pseudoviruses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>Gp41FP-TM*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>C 2 2 21</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>96.75, 101.41, 234.42</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.38–3.8 (3.94–3.8) *</td>
+    </tr>
+    <tr>
+      <td>Unique reflexions</td>
+      <td>11179 (631)*</td>
+    </tr>
+    <tr>
+      <td>Rmerge†</td>
+      <td>0.23 (1.508)*</td>
+    </tr>
+    <tr>
+      <td>Rp.i.m ‡</td>
+      <td>0.081 (0.548)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>4.75 (1.74) *</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>78.01 (54.69) *</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>9.1 (9.6) *</td>
+    </tr>
+    <tr>
+      <td>CC (1/2)</td>
+      <td>0.992 (0.628) *</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.38–3.8 (3.936–3.8)*</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>9154 (630)*</td>
+    </tr>
+    <tr>
+      <td>Reflections used for Rfree§</td>
+      <td>550 (51)*</td>
+    </tr>
+    <tr>
+      <td>Rwork§ / Rfree**</td>
+      <td>0.265/0.308</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>4440</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wilson B (Å2)</td>
+      <td>75.8</td>
+    </tr>
+    <tr>
+      <td>Average B-factors (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Overall</td>
+      <td>91.76</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>91.76</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>96.65</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>7AEJ</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data collected from two crystals were used for structure determination.The statistics are for data that were truncated by STARANISO to remove poorly measured reflections affected by anisotropy. Rmerge, Rp.i.m and multiplicity are calculated on unmerged data prior to STARANISO truncation. For comparison, after STARANISO truncation, Rmerge in the resolution shell 3.97 Å - 3.85 Å is 0.787.† Parentheses refer to outer shell statistics.‡ Rmerge = Σhkl Σi | Ihkl,i- < Ihkl > | / Σhkl ΣiIhkl,i, where Ihkl,i is the scaled intensity of the ith measurement of reflection h, k, l, and <Ihkl > is the average intensity for that reflection.§ R p.i.m. = Σhkl √1/(n-1) Σi | Ihkl,i- < Ihkl > | / Σhkl ΣiIhkl,i,.¶ Rwork = Σhkl | Fo - Fc | / Σhkl | Fo | x 100, where Fo and Fc are the observed and calculated structures factors.** Rfree was calculated as for Rwork, but on a test set of 5% of the data excluded from refinement._
+
+### MD simulation of gp41FP-TM in a lipid bilayer
 
 In order to test whether the structure is influenced by the presence of the detergent, we probed its stability by MD simulation in a bilayer having the lipid composition of the HIV-1 envelope. This confirmed that the structure is stable in a membrane environment during a 1 µs simulation as only the flexibly linked FP of chain N-C moves within the bilayer during the simulation (Figure 1—figure supplement 5A). The tip of the 2H10 CDR3 dips into the bilayer (Figure 1—figure supplement 5B), hence confirming the membrane-anchoring role of W100 for neutralization (Lutje Hulsik et al., 2013).
 
-## Neutralization activity of 2H10 depends on membrane interaction
+### Neutralization activity of 2H10 depends on membrane interaction
 
 The structure suggests that 2H10 stabilized asymmetry within the membrane anchors. Crystal packing effects on the conformation of the membrane anchors can be excluded since the orientation of the membrane anchors is likely not influenced by interprotomer contacts (Figure 1—figure supplement 6). In order to test whether stabilizing the asymmetric conformation is a feature of neutralizing MPER Abs, we further evaluated 2H10 as a neutralizing nanobody. Previously, 2H10 showed only modest neutralization as a bi-head (bi-2H10), whereas neutralization depended on W100 located at the tip of CDR3 (Lutje Hulsik et al., 2013), a hall mark of MPER-specific bnAbs (Cerutti et al., 2017). In order to engineer breadth and potency of monovalent 2H10, we increased its potential membrane interaction capacity by changing CDR3 S100d to F (2H10-F) alone and in combination with additional basic residues S27R, S30K, and S74R (2H10-RKRF) within the putative 2H10 membrane-binding interface suggested by MD simulation (Figure 1—figure supplement 5C). Wild type 2H10 did not show significant neutralization against a panel of 10 clade B pseudo-viruses as reported previously (Lutje Hulsik et al., 2013), with the exception of some weak neutralization of NL4-3 and SF163P3. However, both 2H10-F and 2H10-RKRF show improved potency and breadth neutralizing six and eight pseudo-viruses, respectively, albeit with less potency than wild-type bi-2H10 and bnAb 2F5, the latter recognizing an overlapping epitope (Table 2). Notably, enhancing the membrane interaction surface did not increase the detection of non-specific membrane binding in vitro (Figure 1—figure supplement 7). This result confirms monovalent 2H10 as a modest anti-MPER Ab that neutralizes by engaging MPER and the membrane.
 
-## 2H10 blocks fusion before the stage of lipid mixing
+**Table 2.**
+ Pseudovirus neutralization by 2H10, 2H10-F, 2H10-RKRF, and bi-2H10 in comparison to 2F5 and VRC01.IC50s are indicated in µg/ml.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Tier</th>
+      <th>2H10 wt</th>
+      <th>2H10-F</th>
+      <th>2H10-RKRF</th>
+      <th>Bi-2H10</th>
+      <th>2F5</th>
+      <th>VRC01</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NL4-3</td>
+      <td>1</td>
+      <td>25.20</td>
+      <td>18.68</td>
+      <td>9.15</td>
+      <td>1.84</td>
+      <td>0.16</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>MN-3</td>
+      <td>1</td>
+      <td>&gt;50.00</td>
+      <td>30.38</td>
+      <td>9.36</td>
+      <td>1.39</td>
+      <td>0.03</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>BaL.26</td>
+      <td>1</td>
+      <td>&gt;50.00</td>
+      <td>19.38</td>
+      <td>9.63</td>
+      <td>6.05</td>
+      <td>1.21</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>SF162</td>
+      <td>1a</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>25.19</td>
+      <td>6.14</td>
+      <td>1.22</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>SF162P3</td>
+      <td>2</td>
+      <td>22.04</td>
+      <td>13.14</td>
+      <td>6.76</td>
+      <td>1.32</td>
+      <td>1.96</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>SC422661.8</td>
+      <td>2</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>27.93</td>
+      <td>3.79</td>
+      <td>1.00</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>JR-FL</td>
+      <td>2</td>
+      <td>44.65</td>
+      <td>16.93</td>
+      <td>6.95</td>
+      <td>1.49</td>
+      <td>0.97</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>JR-CSF</td>
+      <td>2</td>
+      <td>&gt;50.00</td>
+      <td>21.66</td>
+      <td>10.85</td>
+      <td>2.85</td>
+      <td>1.24</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>QH0692.42</td>
+      <td>2</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>1.20</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <td>THRO4156.18</td>
+      <td>2</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>&gt;50.00</td>
+      <td>3.84</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2H10 blocks fusion before the stage of lipid mixing
 
 The efficacy of bi-2H10 and 2H10-RKRF for blocking membrane merging was further assessed in peptide-induced lipid-mixing assays (Figure 2). In the experimental setting (Apellániz et al., 2014b), a vesicle population is primed for fusion by addition of the N-MPER peptide containing the 2H10 epitope, which produces a fluorescence intensity spark at time 20 s (Figure 2A). Under these experimental conditions, incorporation of the peptide into the vesicles takes less than 10 s. After 120 s, the mixture is supplemented with target vesicles fluorescently labeled with N-NBD-PE/N-Rh-PE (indicated by the arrow in Figure 2A). The increase in NBD intensity as a function of time follows the mixing of the target vesicle lipids with those of the unlabeled vesicles (kinetic trace labeled ‘+N-MPER’), a process not observed when labeled target vesicles are injected in a cuvette containing unlabeled vesicles not primed with peptide (‘no peptide’ trace).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig2-v2.jpg)
+
+**Figure 2.:** (A) Time course of the lipid-mixing assay using fusion-committed vesicles. At time 30 s (‘+N-MPER’), peptide (4 µM) was added to a stirring solution of unlabeled vesicles (90 µM lipid), and, after 120 s (indicated by the arrow), the mixture was supplemented with N-NBD-PE/N-Rh-PE-labeled vesicles (10 µM lipid). The increase in NBD fluorescence over time follows the dilution of the probes upon mixing of lipids of target and primed vesicles (+N MPER trace). NBD increase was substantially diminished in samples incubated with bi-2H10 (2 µg/ml) prior to the addition of the target vesicles (+bi-2H10, dotted trace), and totally absent if unlabeled vesicles were devoid of peptide (‘no peptide’ trace). (B) Kinetic traces of N-MPER-induced lipid-mixing comparing the blocking effects of 2H10-RKRF, bi-2H10, Fab 2F5 and Fab 10E8. (C) Absence of effects on lipid-mixing of 2H10-RKRF, bi-2H10 and Fab 2F5 when vesicles were primed for fusion with the C-MPER peptide, devoid of 2H10 and 2F5 epitope sequences. The positive control Fab 10E8 efficiently blocked the process. Antibody concentrations were 20 µg/ml in these assays. (D) Dose-response plots comparing the inhibitory capacities of 2H10-RKRF and bi-2H10 (purple and green traces, respectively). Levels of lipid-mixing 20 or 300 s after target vesicle injection were measured (initial rates D and final extents, E) and percentages of inhibition calculated as a function of the Ab concentration. The dotted line and empty symbols correspond to the effect of bi-2H10 when the concentration of the component 2H10 was plotted. The slashed vertical lines mark the 2H10-to-peptide ratios of 1:6 and 1:3. Plotted values are means ± SD of three independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Time course of the lipid-mixing assay using fusion-committed vesicles. At time 30 s (‘+C-MPER’), peptide (4 µM) was added to a stirring solution of unlabeled vesicles (90 µM lipid), and, after 120 s (indicated by the arrow), the mixture was supplemented with N-NBD-PE/N-Rh-PE-labeled vesicles (10 µM lipid). The increase in NBD fluorescence over time follows the dilution of the probes upon mixing of lipids of target and primed vesicles (+N MPER trace). NBD increase was substantially reduced by 10E8 Fabs in a concentration-dependent manner. (B) Close-up of models of 10E8 Fab membrane interaction. Left panel, the 10E8 light chain S65W mutation increases membrane binding; middle panel, wild-type 10E8 showing the hCDR3 W100b and right panel, reduced membrane binding by the hCDR3 W100bD mutant. (C) Lipid mixing inhibition by the membrane interacting 10E8 Fab mutants demonstrates that lipid mixing inhibition correlates with membrane binding.
+
 MPER antibodies have been shown to interact directly with membrane-bound peptide epitopes, thereby changing their insertion state (depth and oligomerization levels) and inhibiting their capacity to induce fusion (Lorizate et al., 2006; Sun et al., 2008). Accordingly, lipid mixing was strongly attenuated when the vesicles primed for fusion with N-MPER were incubated with bi-2H10 before addition of the target vesicles (Figure 2A,+N-MPER/+bi-2H10, dotted trace). Thus, the N-MPER-induced membrane perturbations, which can induce fusion with target membranes, were inhibited by incubation with bi-2H10. Comparison of the kinetics of the lipid-mixing blocking effect of 2H10-RKRF, bi-2H10 and Fabs 2F5 and 10E8 showed that the four antibodies inhibited both the initial rates and final extents of lipid mixing induced by N-MPER (Figure 2B). Using a control MPER peptide lacking the 2H10 and 2F5 epitopes for vesicle priming no inhibition of lipid mixing by 2H10-RKRF, bi-2H10 and 2F5 Fab was observed while 10E8 still blocked lipid mixing, (Figure 2C) corroborating that the inhibitory effects depend on epitope recognition. The use of the 10E8 Fab as an additional control further supports the blocking effect mediated by epitope recognition. Notably, Fab 10E8 inhibits lipid mixing in a concentration-dependent manner (Figure 2—figure supplement 1A). Furthermore, inhibition of lipid mixing depends on direct membrane interaction since increasing hydrophobicity within the 10E8 Fab-membrane interface increases the inhibitory effect and decreasing 10E8 hCDR3 hydrophobicity abrogates lipid mixing (Figure 2—figure supplement 1B and C), which is in agreement with neutralization determinants of 10E8 (Chen et al., 2014; Rujas et al., 2018). The complete 10E8 epitope encompasses C-terminal MPER residues plus N-terminal TM residues, the latter not included in the sequence covered by the N-MPER peptide. Consistent with this recognition pattern, 10E8 blocked C-MPER-induced fusion more efficiently than N-MPER-induced fusion, but was effective against both peptides. The capacity for blocking the lipid-mixing process also correlates with the neutralization potency of MPER bnAbs (Apellániz et al., 2014b). Following this trend, fusion inhibition levels estimated as a function of the antibody concentration confirmed the apparent higher potency exhibited by the bi-2H10 (Figure 2D). Lower concentrations of bi-2H10 compared to 2H10-RKRF were required to attain full blocking of the lipid-mixing process when measured 20 s (initial rates) or 300 s (final extents) after target-vesicle injection (Figure 2D and E). The higher inhibitory potency of bi-2H10 indicates an avidity effect, which was also evident when the concentration of the epitope-binding fragments was plotted (Figure 2D and E, empty squares and dotted line). Moreover, bi-2H10 appeared to block the process efficiently even at 2H10:N-MPER ratios below 1:3 (mol:mol), consistent with the involvement of peptide oligomers in the promotion of membrane fusion. Based on these data, we suggest that both 2H10-RKRF and bi-2H10 neutralize HIV-1 at the stage of lipid mixing.
 
-## GP41FP-TM interaction with MPER bnAbs
+### GP41FP-TM interaction with MPER bnAbs
 
 Although the 2H10 epitope overlaps with the 2F5 MPER epitope (Ofek et al., 2004), the 2F5-bound peptide structure (Ofek et al., 2004), cannot be superimposed without major clashes with adjacent gp41 protomers. In contrast, Cα superposition of the structures of 10E8 and LN01 in complex with MPER peptides demonstrated possible binding to gp41FP-TM chain C-C (Figure 3A and B). Furthermore, HCDR3 of both 10E8 and LN01 could make additional hydrophobic contacts with adjacent FP in this binding mode. To confirm 10E8 and LN01 interaction, we performed immunoprecipitation of gp41FP-TM with both bnAbs, which confirmed their interaction in vitro (Figure 3—figure supplement 1). We next validated binding by bio-layer interferometry (BLI) using gp41FP-TM as analyte. This revealed KDs of 0,2 nM for 10E8 and 34 nM for LN01 (Figure 3C and D). We conclude that bnAbs 10E8 and LN01 interact with gp41FP-TM with high affinity which may also stabilize an asymmetric gp41 conformation similar to the one observed in complex with 2H10 as suggested by the structural modeling (Figure 3A and B).
 
-## Building a post-fusion conformation by MD simulation
+![Figure 3.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cα superposition of the MPER peptide structure in complex with LN01 (pdb 6snd) onto chain C-C of the gp41FP-TM-2H10 structure. The lower panel shows a close-up of the interaction oriented with respect to gp41 F673. (B) Cα superposition of the MPER peptide structure in complex with 10E8 (pdb 5iq7) onto the corresponding chain C-C of gp41FP-TM. The lower panel shows a close-up of the interaction in the same orientation as in A. (C) Bio-layer interferometry (BLI) binding of gp41FP-TM to 10E8 and (D) to LN01. 10E8 binding was fit to 1:1 model and for LN01 a steady state model was employed for fitting the data. For 10E8 binding, gp41FP-TM was used at concentrations from 0.2 to 25.6 nM and for LN01 binding gp41FP-TM concentrations ranged from 39 to 625 nM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Immunoprecipitation of gp41FP-TM by bNAbs 10E8 and LN01. Input and eluted fractions were analyzed on SDS-gel and stained with Coomassie brilliant blue. Input fractions correspond to gp41FP-TM alone (lane 1), with 10E8 (lane 2) and with LN01 (lane 3) before incubation with protein A sepharose resin. In absence of antibody, gp41FP-TM is not retained by protein A sepharose (lane 4) but complexes of gp41FP-TM-10E8 and gp41FP-TM-LN01 are eluted from protein A sepharose (lanes 5 and 6, respectively). Bands corresponding to the heavy (hc) and light (lc) chains of 10E8 chains are indicated by ▲ and those of LN01 by *. The N- and C-terminal chains of gp41FP-TM are indicated. Molecular weight markers are in kDa.
+
+### Building a post-fusion conformation by MD simulation
 
 In order to follow the final refolding of the membrane anchors, we modeled the post fusion conformation employing MD simulation. Assuming that the final post-fusion conformation shows a straight symmetric rod-like structure we constructed a model of gp41 from the protomer composed of the straight helical chains N-B and C-B (Figure 4—figure supplement 1A and B). This conformation is also present in the symmetric six-helix bundle structures containing either MPER (Shi et al., 2010) or FPPR and MPER (Buzon et al., 2010; Figure 1—figure supplement 3). In this model, FP and TM do not interact tightly (Figure 4—figure supplement 1B), which, however, does not explain the increased thermostability in the presence of FP and TM (Figure 1—figure supplement 2A). One-µs MD simulation of this model (Figure 4—figure supplement 1B) in solution, rearranges the membrane anchors such that they adopt a compact structure with trimeric FP interacting with adjacent TMs. Furthermore, the TMs kink at the conserved Gly positions 690 and 691, as observed previously (Pinto et al., 2019; Figure 4—figure supplement 1C). In order to recapitulate the stability of the model in the membrane, we performed an additional 1-µs MD simulation of the model (Figure 4—figure supplement 1C) in a bilayer resembling the HIV-1 lipid composition, which relaxed the TM to its straight conformation (Figure 4A). The final structural model reveals tight packing of trimeric FP flexibly linked to HR1 by FPPR G525 to G527 (Figure 4B). HR2-MPER and TMR form continuous helices with the TMRs packing against trimeric FP (Figure 4A and C), which spans one monolayer (Figure 4A). As conserved tryptophan residues within MPER have been previously implicated in fusion (Bellamy-McIntyre et al., 2007; Salzwedel et al., 1999), we analyzed their structural role in the post fusion model. This reveals that the indole ring of W666 is sandwiched between Leu669 and T536 and packs against L537. W670 makes a coiled-coil interaction with S534, while W672 is partially exposed and packs against L669 and T676. W678 binds into a hydrophobic pocket defined by I675, L679, I682 and adjacent FP/FPPR residues F522 and A526. W680 is partially exposed, but reaches into a pocket created by the flexible FPPR coil (Figure 4—figure supplement 2). We therefore propose that most of the tryptophan residues have structural roles in the post-fusion conformation, hence providing an explanation for their functional role in fusion (Salzwedel et al., 1999). The MPER epitopes recognized by 10E8 and LN01 are exposed in the post-fusion model, but antibody docking to this conformation produced major clashes, consistent with no expected binding to the final post fusion conformation.
 
-## Structural transitions of gp41
+![Figure 4.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig4-v2.jpg)
+
+**Figure 4.:** (A) Model of gp41FP-TM (Figure 1—figure supplement 7C) after 1µs MD simulation in a bilayer. Phosphate groups of the phospholipids are shown as orange spheres to delineate the membrane boundaries. (B) Close-up on the MPER and FPPR flexible regions. (C) Close-up of the interaction of FP (residues 514–524) and TM (residues 681–692) viewed along the three-fold axis from the N-terminus indicating an intricate network of hydrophobic interactions (left panel) and from the side (right panel). Interacting side chains are labeled and shown as sticks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Ribbon of the crystal structure of gp41FP-TM. Numbering of chain B is as shown in Figure 1F. (B) Ribbon of the symmetric trimer model built from chains N-B and C-B of the gp41FP-TM structure. Residues 512–517 and 701–707 have been modeled in a helical conformation to provide complete models of FP and TM. (C) 1 µs MD simulation of the model shown in B, which refolds FPPR-FP and MPER-TM. The kinks in the TM at conserved Gly positions have been observed before (Pinto et al., 2019).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65005/elife-65005-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Tryptophan residues W666, W670, W672, W678, and W680 and their close-by potential contacts are shown as spheres.
+
+### Structural transitions of gp41
 
 A number of Env SOSIP structures revealed the native conformation of gp41 (Figure 5A, B and C; Kumar et al., 2019; Pancera et al., 2014; Yuan et al., 2019). The gp41FP-TM crystal structure and the model of its post-fusion conformation provide further insight into the path of conformational changes that native gp41 must undergo to adopt its final lowest energy state conformation. The first major conformational changes in gp41 that take place upon receptor binding are extension of HR1 and FPPR into a triple stranded coiled coil with flexible linkers connecting FPPR to FP that may initially interact laterally with the external leaflet of the bilayer thereby projecting FP ~115 Å away from its starting position (Figure 5D). Notably, such an early intermediate fusion conformation structure has been reported for influenza hemagglutinin (HA) (Benton et al., 2020). This is likely followed by an extension and rearrangement of HR2 and MPER producing 11–15 nm long intermediates that connect the viral and cellular membranes (Ladinsky et al., 2020; Lai et al., 2014). Gp41 refolding into the six-helix bundle structure then produces flexibly linked asymmetric conformations of FPPR-FP and MPER-TM anchored in the cellular and viral membranes, respectively, as indicated by the gp41FP-TM structure. This intermediate conformation may bring viral and cellular membranes into close proximity (Figure 5E) or may act at the subsequent stage of hemifusion (Figure 5F). Further refolding and interaction of FP-FPPR and MPER-TM may generate the stable post fusion conformation (Figure 5G), a process that completes membrane fusion. Notably, in this model based on the crystal structure, FP spans only one leaflet of the lipid bilayer facilitating local lipid head group interactions with the N-terminus of FP.
 
@@ -93,59 +427,426 @@ Our data indicate that MPER antibodies can act all along the gp41 refolding path
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Chain N pETM20 (plasmid)</td>
+      <td>This study</td>
+      <td>pETM20, PEPcore facility-EMBL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Chain C pETM11 (plasmid)</td>
+      <td>This study</td>
+      <td>pETM11, PEPcore facility-EMBL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>2H10 pAX51 (plasmid)</td>
+      <td>Lutje Hulsik et al., 2013</td>
+      <td>PMID:23505368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>2H10-F pAX51 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>S100d to F mutation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>2H10-RKRF pAX51 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>S27R, S30K, S74R and S100d to F mutations</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# EC0114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>C41(DE3)</td>
+      <td>Lucigen</td>
+      <td>Cat#60442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TZM-bl</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>Cat#ARP-8129 RRID:CVCL_B478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATTC</td>
+      <td>Cat# CRL-11268 RRID:CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody (human monoclonal)</td>
+      <td>α-gp41, LN01</td>
+      <td>Pinto et al., 2019</td>
+      <td>PMID:31653484</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody (human monoclonal)</td>
+      <td>α-gp41, 10E8</td>
+      <td>Huang et al., 2012</td>
+      <td>PMID:23151583 RRID:AB_2491067</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody (human monoclonal)</td>
+      <td>α-gp41, 2F5</td>
+      <td>Muster et al., 1993</td>
+      <td>PMID:7692082</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody (human monoclonal)</td>
+      <td>α-gp140, VRC01</td>
+      <td>Zhou et al., 2010</td>
+      <td>PMID:20616231 RRID:AB_2491019</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody (llama nanobody)</td>
+      <td>α-gp41, 2H10</td>
+      <td>Lutje Hulsik et al., 2013</td>
+      <td>PMID:23505368</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody (llama nanobody)</td>
+      <td>α-gp41, bi-2H10</td>
+      <td>Lutje Hulsik et al., 2013</td>
+      <td>PMID:23505368</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody (llama nanobody)</td>
+      <td>α-gp41, 2H10-F</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody (llama nanobody)</td>
+      <td>α-gp41, 2H10-RKRF</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chelating sepharose FF</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 17057501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q sepharose FF</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 17051010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q sepharose FF</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 17051010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Octyl-β-D-glucosid n-Octyl-β-D-Glucopyranoside</td>
+      <td>Anatrace</td>
+      <td>Cat#O311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHAPS (3-[(3-cholamidopropyl) diméthylammonio]−1-propanesulfonate)</td>
+      <td>Euromedex</td>
+      <td>Cat#1083E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoylphosphatidylcholine (POPC)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#850457P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#850757P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L -serine (POPS)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#840034C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sphingomyelin</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#860062C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cholesterol</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#700000P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-(7-nitro-benz-2-oxa-1,3-diazol-4-yl)phosphatidylethanolamine (N-NBD-PE)</td>
+      <td>Molecular Probes</td>
+      <td>Cat#N360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-(lissamine Rhodamine B sulfonyl) phosphatidylethanolamine (N-Rh-PE)</td>
+      <td>Molecular Probes</td>
+      <td>Cat#L1392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biscinchoninic Acid microassay</td>
+      <td>Pierce</td>
+      <td>Cat# 23235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bio-Rad Protein Assay Dye Reagent Concentrate</td>
+      <td>Biorad</td>
+      <td>Cat# 5000006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>Kabsch, 2010</td>
+      <td>PMID:20124693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser</td>
+      <td>McCoy et al., 2007</td>
+      <td>PMID:19461840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>PMID:20383002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td>PMID:20124702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBGrid</td>
+      <td>Morin et al., 2013</td>
+      <td>https://sbgrid.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Warren DeLano</td>
+      <td>http://www.pymol.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Aimless</td>
+      <td>Evans and Murshudov, 2013</td>
+      <td>PMID:23793146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STARANISO</td>
+      <td>Tickle et al., 2018</td>
+      <td>http://staraniso.globalphasing.org/cgi-bin/staraniso.cgi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM-GUI</td>
+      <td>Jo et al., 2008</td>
+      <td>http://www.charmm-gui.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NAMD (Version 2.13)</td>
+      <td>Phillips et al., 2005</td>
+      <td>https://www.ks.uiuc.edu/Research/namd/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ForteBio analysis software version 11.1.0.25</td>
+      <td>ForteBio</td>
+      <td>https://www.fortebio.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicroCal Origin software (origin 7)</td>
+      <td>Malvern Panalytical (MicroCal)</td>
+      <td>https://www.malvernpanalytical.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NEQELLELDKWASLW NWFNITNWLWYIK (N-MPER)</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KKK-NWFDITNWLWYIKLFIMIVGGLV-KK (C-MPER),</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Biscinchoninic Acid microassay</td>
+      <td>Pierce</td>
+      <td>Cat# A53225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bright-Glo Luciferase Assay System Streptavidin (SA) biosensors</td>
+      <td>Promega</td>
+      <td>Cat# E2610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Streptavidin (SA) biosensors</td>
+      <td>ForteBio</td>
+      <td>Cat#18–5019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-LinkNHS-PEG4-Biotinylation Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat#21455</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HEK 293 T cells were obtained from the American Type Culture Collection (ATCC CRL-11268).
 
 TZM-bl cells were obtained through the NIH HIV Reagent Program, Division of AIDS, NIAID, NIH: TZM-bl Cells, ARP-8129, contributed by Dr. John C. Kappes and Dr. Xiaoyun Wu. HEK 293T and TZM-bl cells were maintained in Dulbecco’s modified Eagle’s medium supplemented with 10% heat-inactivated fetal bovine serum, 100 units/ml of Penicillin and 0.1 mg/ml of Streptomycin (all medium components from Gibco, Thermo Fisher Scientific) at 37°C, 5% CO2, and 80% relative humidity. Both cell lines are regularly checked for absence of Mycoplasma (Mycoplasmacheck test by Eurofins Genomics (formerly GATC), Germany). No specific cell line authentication was performed.
 
-## HIV-1 primary viruses
+### HIV-1 primary viruses
 
 Env-pseudotyped viruses were prepared by co-transfection of HEK 293 T cells with plasmids encoding the respective env genes and the luciferase reporter HIV vector pNLluc-AM as described (Rusert et al., 2009). A full list of Env pseudotyped viruses generated with corresponding gene bank entry, subtype and Tier information is provided in Table 1—source data 1.
 
-## GP41 expression and purification
+### GP41 expression and purification
 
 DNA fragments encoding HIV-1 Env glycoprotein amino acids 512–594 (N-terminal chain, chain N) and residues 629 to 716 (C-terminal chain, chain C) were cloned into vectors pETM20 and pETM11 (PEPcore facility-EMBL), respectively. Chain N contains an N-terminal Flag-tag (DYKDDDDK sequence) and chain C an N-terminal enterokinase cleavage site (DDDDK) and two C-terminal arginine residues (Figure 1A). The sequence of chain N is GAMDYKDDDDK-512-AVGIGALLLGFLGAAGSTMGAASMTLTVQARQLLSGIVQQQNNLLRAIEAQQHLLQLTVWGIKQLQARILAVERYLKDQQLLG-594 and of chain C is GAMDDDDK-629-MEWDREINNYTSLIHSLIEESQNQQEKNEQELLELDKWASLWNWFNITNWLWYIKLFIMIVGGLVGLRIVFAVLSVVNRVRQGYSPLS-716-RR after TEV protease cleavage of the constructs. The N-MPER peptide region used in the fusion assay is underlined and the C-MPER peptide region is shown in bold.
 
 Proteins were expressed separately in E. coli strain C41(DE3)(Lucigen). Bacteria were grown at 37°C to an OD600nm of 0,9. Cultures were induced with 1 mM IPTG at 37°C for 3 hr for gp41 chain N and at 25°C for 20 hr for gp41 chain C. Cells were lysed separately by sonication in buffer A containing 20 mM Tris pH 8, 100 mM NaCl and 1% CHAPS (3-[(3-cholamidopropyl) diméthylammonio]−1-propanesulfonate (Euromedex)). The supernatant was cleared by centrifugation at 53,000 g for 30 min. Gp41 chain N supernatant was loaded on a Ni2+-sepharose column, washed successively with buffer A containing 1M NaCl and 1M KCl, then buffer A containing 50 mM imidazole. Gp41 chain N was eluted in buffer A containing 500 mM imidazole and further purified on a Mono Q column in buffer A and eluted with buffer B (buffer A with 0.5 M NaCl). Gp41 chain C was purified employing the same protocol as for gp41 chain N. Gp41 chain C was subsequently cleaved with TEV (Tobacco Etch Virus) protease for 2 hr at 20°C and then overnight at 4°C at a gp41 chain C:TEV ratio of 5:1 (w:w). After buffer exchange with a mono Q column using buffer A and elution in buffer B, uncleaved gp41 chain C was removed by a second Ni2+-sepharose column in buffer A. TEV-cleaved gp41 chain C and un-cleaved gp41 chain N were then mixed in a molar ratio 4:1 and incubated overnight. To remove the excess of gp41 chain C, the gp41 complex was further purified on a 3rd Ni2+-sepharose column in buffer A, washed with buffer A containing 50 mM imidazole and eluted with buffer A containing 500 mM imidazole. Subsequently the gp41 chain N TrxA-His-tag was removed by TEV digestion for 2 hr at 20°C and overnight at 4°C at a gp41:TEV ratio of 5:1 (w:w). Followed by another buffer exchange with a mono Q column (buffers A and B), uncleaved complex and the TrxA-His-tag fusion were removed by a 4th Ni2+-sepharose column. The final gp41FP-TM complex was concentrated and loaded onto a Superdex 200 size exclusion column (SEC) in buffer C containing 20 mM Tris pH 8.0, 100 mM NaCl and 1% n-octyl β-D-glucopyranoside (Anatrace).
 
-## Nanobody 2H10 expression
+### Nanobody 2H10 expression
 
 2H10 encoding DNA was cloned into the vector pAX51 (Lutje Hulsik et al., 2013) and expressed in the E. coli BL21(DE3) strain (ThermoFisher). Bacteria were grown at 37°C to an OD600nm of 0.7 and induced with 1 mM IPTG at 20°C for 20 hr. After harvesting by centrifugation, bacteria were resuspended in lysis buffer containing 20 mM Hepes pH 7.5 and 100 mM NaCl. Bacteria were lysed by sonication and centrifuged at 48,000 g for 30 min. Cleared supernatant was loaded onto a Protein A sepharose column, washed with lysis buffer and eluted with 0.1 M glycine pH 2.9. Eluted fractions were immediately mixed with 1/5 vol of 1M Tris pH 9.0. 2H10 was then further purified by SEC on a superdex 75 column in PBS buffer. Genes corresponding to mutants of 2H10, 2H10-F (S100d) and 2H10-RKRF (S27R, S30K, S74R, and S100d) were synthesized (Biomatik) and the expressed mutant proteins were purified as described for the wild type. The 2H10 bi-head was purified as described (Lutje Hulsik et al., 2013).
 
-## Circular dichroism
+### Circular dichroism
 
 CD measurements were performed using a JASCO Spectropolarimeter equipped with a thermoelectric temperature controller. Spectra of gp41-TM were recorded at 20°C in 1 nm steps from 190 to 260 nm in a buffer containing PBS supplemented with 1% n-octyl β-D-glucopyranoside. For thermal denaturation experiments, the ellipticity was recorded at 222 nm with 1°C steps from 20° to 95°C with an increment of 80°C h−1, and an averaging time of 30 s/step. For data analysis, raw ellipticity values recorded at 222 nm were converted to mean residue ellipticity.
 
-## Isothermal titration calorimetry (ITC)
+### Isothermal titration calorimetry (ITC)
 
 The stoichiometry and binding constants of 2H10 binding to gp41 FP-TM was measured by ITC200 (MicroCal Inc). All samples used in the ITC experiments were purified by SEC in a buffer containing 20 mM Tris pH 8.0, 100 mM NaCl and 1% n-octyl β-D glucopyranoside and used without further concentration. Samples and were equilibrated at 25°C before the start of the experiment. The ITC measurements were performed at 25°C by making 20 2 μl injections of 267 µM 2H10 to 0.2 ml of 19.5 µM gp41FP-TM. Curve fitting was performed with MicroCal Origin software. Three experiments were performed, with an average stoichiometry N = 1.1 +/- 0.2. 2H10 binds to gp41FP-TM with a KD of 2.1 µM ± 0.9.
 
-## Bio-layer interferometry binding analysis
+### Bio-layer interferometry binding analysis
 
 Binding measurements between antibodies (10E8 IgG, LN01 IgG, and 2H10) were carried out on an Octet Red instrument (ForteBio). For the determination of the binding between antibodies and gp41FP-TM, 10E8 IgG or LN01 IgG or 2H10 were labeled with biotin (EZ-Link NHS-PEG4-Biotin) and bound to Streptavidin (SA) biosensors (ForteBio). The biosensors loaded with the antibodies were equilibrated in the kinetic buffer (20 mM Tris pH 8.0, 100 mM NaCl and 1% n-octyl β-D glucopyranoside) for 200–500 s prior to measuring association with different concentrations of gp41FP-TM for 100–200 s at 25°C. Data were analyzed using the ForteBio analysis software version 11.1.0.25 (ForteBio). For 10E8, the kinetic parameters were calculated using a global fit 1:1 model and 2:1 model. For the determination of the binding of LN01 IgG and 2H10, KDs were estimated by steady state analysis. All bio-layer interferometry experiments were conducted at least three times.
 
-## Immunoprecipitation of gp41FP-TM by bnAbs 10E8 and LN01
+### Immunoprecipitation of gp41FP-TM by bnAbs 10E8 and LN01
 
 A total of 220 µg of Gp41FP-TM were incubated alone or with 50 µg of 10E8 or LN01 antibodies for 10 hr at 20°C in buffer C. The complex was loaded on Protein A sepharose affinity resin and incubated for 1 hr. The resin was subsequently washed three times with buffer C and eluted with SDS gel loading buffer and boiling at 95°C for 5 min. Samples were separated on a 15% SDS-PAGE and stained with Coomassie brilliant blue.
 
-## Neutralization assay
+### Neutralization assay
 
 The neutralization activity of the 2H10 variants and mAbs (IgG) 2F5 (Muster et al., 1993) and VRC01 (Zhou et al., 2010) was evaluated using TZM-bl cells and Env pseudotyped viruses as described (Rusert et al., 2009). Briefly, serial dilutions of inhibitor were prepared in cell culture medium (DMEM with 10% heat-inactivated FBS, 100 U/ml penicillin and 100 μg/ml streptomycin (all from Gibco)) and added at a 1:1 vol ratio to pseudovirus suspension in 384 well plates (aiming for 500,000–5,000,000 relative light units (RLU) per well in the absence of inhibitors). After one-hour incubation at 37°C, 30 µl of virus-inhibitor mixture was transferred to TZM-bl cells in 384 well plates (6000 cells/well in 30 µl cell culture medium supplemented with 20 µg/ml DEAE-Dextran seeded the previous day). The plates were further incubated for 48 hr at 37°C before readout of luciferase reporter gene expression on a Perkin Elmer EnVision Multilabel Reader using the Bright-Glo Luciferase Assay System (Promega).
 
 The inhibitor concentration (referring to the mix with cells, virus, and inhibitor) causing 50% reduction in luciferase signal with respect to a reference well without inhibitor (inhibitory concentration IC50) was calculated by fitting a non-linear regression curve (variable slope) to data from two independent experiments using Prism (GraphPad Software). If 50% inhibition was not achieved at the highest inhibitor concentration tested, a greater than value was recorded. To control for unspecific effects, all inhibitors were tested for activity against MuLV envelope pseudotyped virus.
 
-## 2H10 membrane interaction
+### 2H10 membrane interaction
 
 Lipids, 1-palmitoyl-2-oleoylphosphatidylcholine (POPC), 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE), 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine (POPS), Sphingomyelin, and cholesterol (Avanti Polar Lipids) were dissolved in chloroform and mixed in a 1.2∶2.6∶1.0∶2.4∶5.5 ratio (w/w) as reported previously (Chen et al., 2014) and close to the HIV-1 envelope lipid composition (Brügger et al., 2006). After solvent evaporation, the lipid film was further dried under vacuum, and resuspended in PBS at a final concentration of 1 mg/ml. The liposome suspension was extruded through a 0.2 µm polycarbonate filter membrane. Fifty µg of 2H10, 50 µg of 2H10-RKRF and 100 µg 10E8 were incubated at room temperature without and with 50 µl of liposomes for 1.5 hr. The total volume of proteoliposome mixtures of 75 µl was then mixed with 150 µl of 70% sucrose generating the bottom fraction of the gradient, which was successively overlaid by 100 µl of 25% sucrose, 10% sucrose, and 5% sucrose PBS solutions. After centrifugation at 40,000 rpm in a Beckman Optima TL Ultracentrifuge using a SW55TI rotor for 3.5 hr at 10°C, four 75 µl fractions and the bottom input fraction (225 µl) were collected, separated by SDS-PAGE and protein bands were detected by Instant Blue staining.
 
-## Fusion assay
+### Fusion assay
 
 The peptides used in the fusion inhibition experiments, NEQELLELDKWASLW NWFNITNWLWYIK (N-MPER) and KKK-NWFDITNWLWYIKLFIMIVGGLV-KK (C-MPER), were synthesized in C-terminal carboxamide form by solid-phase methods using Fmoc chemistry, purified by reverse phase HPLC, and characterized by matrix-assisted time-of-flight (MALDI-TOF) mass spectrometry (purity >95%). Peptides were routinely dissolved in dimethylsulfoxide (DMSO, spectroscopy grade) and their concentration determined by the Bicinchoninic Acid microassay (Pierce, Rockford, IL, USA).
 
 Large unilamellar vesicles (LUV) were prepared following the extrusion method of Hope et al., 1985. 1-palmitoyl-2-oleoylphosphatidylcholine (POPC) and cholesterol (Chol) (Avanti Polar Lipids, Birmingham, AL, USA) were mixed in chloroform at a 2:1 mol:mol ratio and dried under a N2 stream. Traces of organic solvent were removed by vacuum pumping. Subsequently, the dried lipid films were dispersed in 5 mM Hepes and 100 mM NaCl (pH 7.4) buffer, and subjected to 10 freeze-thaw cycles prior to extrusion 10 times through two stacked polycarbonate membranes (Nuclepore, Inc, Pleasanton, CA, USA). Lipid mixing with fusion-committed vesicles was monitored based on the resonance energy transfer assay described by Struck et al., 1981, with the modifications introduced by Apellániz et al., 2014b. The assay is based on the dilution of co-mixed N-(7-nitro-benz-2-oxa-1,3-diazol-4-yl)phosphatidylethanolamine (N-NBD-PE) and N-(lissamine Rhodamine B sulfonyl) phosphatidylethanolamine (N-Rh-PE) (Molecular Probes, Eugene, OR, USA), whereby dilution due to membrane mixing results in increased N-NBD-PE fluorescence. Vesicles containing 0.6 mol % of each probe (target vesicles) were added at 1:9 ratio to unlabeled vesicles (MPER peptide-primed vesicles). The final lipid concentration in the mixture was 100 µM. The increase in NBD emission upon mixing of target-labeled and primed-unlabeled lipid bilayers was monitored at 530 nm with the excitation wavelength set at 465 nm. A cutoff filter at 515 nm was used between the sample and the emission monochromator to avoid scattering interferences. The fluorescence scale was calibrated such that the zero level corresponded to the initial residual fluorescence of the labeled vesicles and the 100% value to complete mixing of all the lipids in the system (i.e. the fluorescence intensity of vesicles containing 0.06 mol % of each probe). Fusion inhibition was performed with bi-2H10, 2H10-RKRF and 2F5 Fabs at concentrations of 10 µg/ml and 20 µg/ml as indicated. Fabs 2F5 and 10E8 were used as positive controls in experiments of Ab-induced lipid-mixing inhibition. Potencies of bi-2H10 and 2H10-RKRF Abs were compared in dose-response assays performed at concentrations in the 0–20 µg/ml range.
 
-## Crystallization, data collection, and structure determination
+### Crystallization, data collection, and structure determination
 
 For crystallization, 1 mg of gp41FP-TM was mixed with 1.5 mg of 2H10. The complex was purified by SEC on a Superdex 200 column in a buffer containing 100 mM NaCl, 20 mM Tris pH 8,0 and 1% n-octyl β-D-glucopyranoside and concentrated to 7–10 mg/ml. Crystal screening was performed at the EMBL High-Throughput Crystallization Laboratory (HTX lab, Grenoble) in 96-well sitting drop vapor diffusion plates (Greiner). Following manual refinement of crystallization conditions, crystals of gp41FP-TM in complex with 2H10 were grown by mixing 1 µl of protein with 1 µl of reservoir buffer containing 0.1 M sodium citrate pH 6.0, 0.2 M ammonium sulfate, 20% polyethylene glycol 2000 and 0.1 M NaCl at 20°C (293 K) in hanging drop vapor diffusion plates. Before data collection, crystals were flash frozen at 100K in reservoir solution supplemented with 1% n-octyl β-D-glucopyranoside and 25% ethylene glycol for cryo-protection.
 
@@ -153,19 +854,19 @@ Data were collected on the ESRF beamline ID30b at a wavelength of 0.9730 Å. Dat
 
 One copy of gp41FP-TM in complex with 2H10 are present in the asymmetric unit. Numbering of the nanobody 2H10 was performed according to Kabat. The gp41FP-TM-2H10 complex was refined to 3.8 Å data with an R/Rfree of 26.6/30.8%. 99.6% of the residues are within the most favored and allowed regions of a Ramachandran plot (Evans and Murshudov, 2013). Some of the crystallographic software used were compiled by SBGrid (Morin et al., 2013). Atomic coordinates and structure factors of the reported crystal structures have been deposited in the Protein Data Bank (https://www.rcsb.org; PDB: 7AEJ).
 
-## Figure generation
+### Figure generation
 
 Molecular graphics figures were generated with PyMOL (W. Delano; The PyMOL Molecular Graphics System, Version 1.8 Schrödinger, LLC, http://www.pymol.org). The symmetry axis shown in Figure 1C was calculated with the program Galaxy/SymD using the core of gp41 HR1 residues Ala541 to Leu587 (Tai et al., 2014).
 
-## Molecular dynamics (MD) simulation
+### Molecular dynamics (MD) simulation
 
-## Molecular assays
+#### Molecular assays
 
 Starting from the crystal structure determined herein, we built two molecular assays. The first is based on the crystal structure of gp41FP-TMin complex with 2H10. The disordered FP and TM residues were modeled as helices (chain A FP 512–526 and TM 694–707, chain B FP 512–517 and TM 701–707, chain C FP 512–517). The second assay is based on a symmetric gp41 model which was generated from protomer B by applying a three-fold symmetry operation. Missing FP residues 512–517 and TM residues 701–709 were modeled as helices (Figure 4—figure supplement 1B), and TM residues were modeled based on Env gp41 TM structures (pdb entry 6SNE and 6B3U). All residues were taken in their standard protonation state.
 
 The first assay included a fully hydrated membrane composed of 190 cholesterol, 40 1-palmitoyl-2-oleoyl-glycero-3-phosphocholine (POPC), 88 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-ethanolamine (POPE), 36 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine (POPS) and 56 N-stearoyl sphingomyelin, present in the HIV-1 lipid envelope (Brügger et al., 2006), using the CHARMM-GUI interface (Jo et al., 2008; Wu et al., 2014). The resulting molecular assembly consisted of about 178,000 atoms in a rhomboidal cell of 106 × 106×169 Å³. The second computational assay featured a water bath of 91 × 91×114 Å³, representing a total of 95,700 atoms. Both assays were electrically neutral, with a NaCl concentration set to 150 mM.
 
-## Molecular dynamics
+#### Molecular dynamics
 
 All simulations were performed using the NAMD 2.14 program (Phillips et al., 2005). Proteins, cholesterol, lipids and ions were described using the CHARMM force field (Best et al., 2012; Klauda et al., 2010; MacKerell et al., 1998) and the TIP3P model (Jorgensen et al., 1983) was used for water. MD trajectories were generated in the isobaric-isothermal ensemble at a temperature of 300 K and a pressure of 1 atm. Pressure and temperature were kept constant using the Langevin thermostat and the Langevin piston method (Feller et al., 1995), respectively. Long-range electrostatic interactions were evaluated by the particle-mesh Ewald (PME) algorithm (Darden et al., 1993). Hydrogen mass repartitioning (Hopkins et al., 2015) was employed for all simulations, allowing for using a time step of 4 fs. Integration was performed with a time step of 8 and 4 fs for long- and short-range interactions, respectively, employing the r-RESPA multiple time-stepping algorithm (Tuckerman et al., 1992). The SHAKE/RATTLE (Andersen, 1983; Ryckaert et al., 1977) was used to constrain covalent bonds involving hydrogen atoms to their experimental lengths, and the SETTLE algorithm (Miyamoto and Kollman, 1992) was utilized for water.
 

@@ -18,24 +18,24 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-2. https://ror.org/01an7q238 Graduate Group in Microbiology, University of California, Berkeley Berkeley United States
-3. https://ror.org/008zs3103 Department of Biosciences, Rice University Houston United States
-4. https://ror.org/02jbv0t02 The Molecular Foundry, Lawrence Berkeley National Laboratory Berkeley United States
-5. https://ror.org/05dq2gs74 Department of Pathology, Microbiology and Immunology, Vanderbilt University Medical Center Nashville United States
-6. https://ror.org/05dq2gs74 Vanderbilt Institute for Infection, Immunology, and Inflammation, Vanderbilt University Medical Center Nashville United States
-7. https://ror.org/01y2jtd41 Department of Medical Microbiology and Immunology, University of Wisconsin-Madison Madison United States
-8. https://ror.org/01an7q238 Department of Nutritional Sciences and Toxicology, University of California, Berkeley Berkeley United States
-9. https://ror.org/01an7q238 Center for Computational Biology, University of California, Berkeley Berkeley United States
-10. https://ror.org/01an7q238 Department of Plant and Microbial Biology, University of California, Berkeley Berkeley United States
-11. https://ror.org/024mw5h28 Department of Microbiology, University of Chicago Chicago United States
-12. https://ror.org/024mw5h28 Duchossois Family Institute, University of Chicago Chicago United States
+1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Graduate Group in Microbiology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Department of Biosciences, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))
+4. The Molecular Foundry, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
+5. Department of Pathology, Microbiology and Immunology, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+6. Vanderbilt Institute for Infection, Immunology, and Inflammation, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+7. Department of Medical Microbiology and Immunology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+8. Department of Nutritional Sciences and Toxicology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+9. Center for Computational Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+10. Department of Plant and Microbial Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+11. Department of Microbiology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+12. Duchossois Family Institute, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
 ## Abstract
 
-Cellular respiration is essential for multiple bacterial pathogens and a validated antibiotic target. In addition to driving oxidative phosphorylation, bacterial respiration has a variety of ancillary functions that obscure its contribution to pathogenesis. We find here that the intracellular pathogen Listeria monocytogenes encodes two respiratory pathways which are partially functionally redundant and indispensable for pathogenesis. Loss of respiration decreased NAD + regeneration, but this could be specifically reversed by heterologous expression of a water-forming NADH oxidase (NOX). NOX expression fully rescued intracellular growth defects and increased L. monocytogenes loads >1000-fold in a mouse infection model. Consistent with NAD + regeneration maintaining L. monocytogenes viability and enabling immune evasion, a respiration-deficient strain exhibited elevated bacteriolysis within the host cytosol and NOX expression rescued this phenotype. These studies show that NAD + regeneration represents a major role of L. monocytogenes respiration and highlight the nuanced relationship between bacterial metabolism, physiology, and pathogenesis.
+Cellular respiration is essential for multiple bacterial pathogens and a validated antibiotic target. In addition to driving oxidative phosphorylation, bacterial respiration has a variety of ancillary functions that obscure its contribution to pathogenesis. We find here that the intracellular pathogen Listeria monocytogenes encodes two respiratory pathways which are partially functionally redundant and indispensable for pathogenesis. Loss of respiration decreased NAD+ regeneration, but this could be specifically reversed by heterologous expression of a water-forming NADH oxidase (NOX). NOX expression fully rescued intracellular growth defects and increased L. monocytogenes loads >1000-fold in a mouse infection model. Consistent with NAD+ regeneration maintaining L. monocytogenes viability and enabling immune evasion, a respiration-deficient strain exhibited elevated bacteriolysis within the host cytosol and NOX expression rescued this phenotype. These studies show that NAD+ regeneration represents a major role of L. monocytogenes respiration and highlight the nuanced relationship between bacterial metabolism, physiology, and pathogenesis.
 
 ## Introduction
 
@@ -49,13 +49,21 @@ Bacterial pathogens reside within a host where they must employ fermentative or 
 
 Listeria monocytogenes is a human pathogen that, after being ingested on contaminated food, can gain access to the host cell cytosol and use actin-based motility to spread from cell to cell (Freitag et al., 2009). L. monocytogenes has two respiratory-like electron transport chains. One electron transport chain is dedicated to aerobic respiration and uses a menaquinone intermediate and QoxAB (aa3) or CydAB (bd) cytochrome oxidases for terminal electron transfer to O2 (Figure 1A; Corbett et al., 2017). We recently identified a second flavin-based electron transport chain that transfers electrons to extracytosolic acceptors (including ferric iron and fumarate) via a putative demethylmenaquinone intermediate and can promote growth in anaerobic conditions (Figure 1A; Light et al., 2018; Light et al., 2019; Zeng et al., 2021). Final electron transfer steps in this flavin-based electron transport mechanism are catalyzed by PplA and FrdA, which are post-translationally linked to an essential cofactor by the flavin mononucleotide transferase (FmnB) (Light et al., 2018; Méheust et al., 2021).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig1-v2.jpg)
+
+**Figure 1.:** (A) Proposed respiratory electron transport chains in L. monocytogenes. Different NADH dehydrogenases likely transfer electrons to distinct but presently unidentified quinones (Qa and Qb). FmnB catalyzes assembly of essential components of the electron transport chain, PplA and FrdA, that can transfer electrons to ferric iron and fumarate, respectively. Other proteins involved in the terminal electron transfer steps are noted. (B) Optical density of L. monocytogenes strains aerobically grown in nutrient-rich media, with the anaerobically grown wildtype strain provided for context. The means and standard deviations from three independent experiments are shown. (C) Fermentation products of L. monocytogenes strains grown to stationary phase in nutrient-rich media under aerobic and anaerobic conditions. Error bars show standard deviations. Results from three independent experiments are shown. (D) Proposed pathways for L. monocytogenes sugar metabolism. The predicted number of NADH generated (+) or consumed (−) in each step is indicated. PplA, peptide pheromone-encoding lipoprotein A; FrdA, fumarate reductase; ΔQC, ΔqoxA/ΔcydAB; ΔQC/fmnB, ΔqoxA/ΔcydAB/fmnB::tn; GLC, glucose; Ack, acetate kinase; Pdh, pyruvate dehydrogenase; Pfl, pyruvate formate-lyase; DMK, demethylmenaquinone.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Optical density of L. monocytogenes strains grown anaerobically in nutrient-rich media. The data represent the means and standard deviations from three independent experiments. (B) Optical density of anaerobically grown strains in nutrient-rich media supplemented with the alternative electron acceptors ferric iron (Fe3+) or fumarate (fum), as indicated. The means and standard deviations from three independent experiments are shown.
+
 L. monocytogenes resembles fermentative microbes in lacking a functional TCA cycle (Trivett and Meyer, 1971). Despite thus being unable to completely oxidize sugar substrates, previous studies have shown that aerobic respiration is important for the systemic spread of L. monocytogenes (Chen et al., 2017; Corbett et al., 2017; Stritzker et al., 2004). Microbes that similarly contain a respiratory electron transport chain but lack a TCA cycle are considered to employ a respiro-fermentative metabolism (Pedersen et al., 2012). Respiro-fermentative metabolisms tune the cell’s fermentative output and often manifest with the respiratory regeneration of NAD+ enabling a shift from the production of reduced (e.g. lactic acid and ethanol) to oxidized (e.g. acetic acid) fermentation products. In respiro-fermentative lactic acid bacteria closely related to L. monocytogenes, cellular respiration results in a modest growth enhancement, but is generally dispensable (Duwat et al., 2001; Pedersen et al., 2012).
 
 The studies presented here sought to address the role of respiration in L. monocytogenes pathogenesis. Our results confirm that L. monocytogenes exhibits a respiro-fermentative metabolism and show that its two respiratory systems are partially functionally redundant under aerobic conditions. We find that the respiration-deficient L. monocytogenes strains exhibit severely attenuated virulence and lyse within the cytosol of infected cells. Finally, we selectively abrogate the effect of diminished NAD+ regeneration in respiration-deficient L. monocytogenes strains by heterologous expression of a water-forming NADH oxidase (NOX) and find that this restores virulence. These results thus elucidate the basis of L. monocytogenes cellular respiration and demonstrate that NAD+ regeneration represents a key function of this activity in L. monocytogenes pathogenesis.
 
 ## Results
 
-## L. monocytogenes’ electron transport chains have distinct roles in aerobic and anaerobic growth
+### L. monocytogenes’ electron transport chains have distinct roles in aerobic and anaerobic growth
 
 We selected previously characterized ΔqoxA/ΔcydAB (ΔQC) and ΔfmnB L. monocytogenes strains to study the role of aerobic respiration and extracellular electron transfer, respectively (Chen et al., 2017; Light et al., 2018). In addition, we generated a ΔqoxA/ΔcydAB/fmnB::tn (ΔQC/fmnB) L. monocytogenes strain to test for functional redundancies of aerobic respiration and extracellular electron transfer. Initial studies measured the growth of these strains on nutritionally rich brain heart infusion (BHI) media in the presence/absence of electron acceptors.
 
@@ -63,43 +71,51 @@ Compared to anaerobic conditions that lacked an electron acceptor, we found that
 
 The ΔQC/fmnB strain exhibited the most striking growth pattern. This strain lacked a phenotype under anaerobic conditions but had impaired aerobic growth, even relative to the ΔQC strain (Figure 1B). Notably, ΔQC/fmnB was the sole strain tested with a substantially reduced growth rate in the presence of oxygen (Figure 1B). These observations suggest that aerobic extracellular electron transfer activity can partially compensate for the loss of aerobic respiration and that oxygen inhibits L. monocytogenes growth in the absence of both electron transport chains.
 
-## Respiration alters L. monocytogenes’ fermentative output
+### Respiration alters L. monocytogenes’ fermentative output
 
 Respiration is classically defined by the complete oxidation of an electron donor (e.g. glucose) to carbon dioxide in the TCA cycle. However, L. monocytogenes lacks a TCA cycle and instead converts sugars into multiple fermentation products (Romick et al., 1996). We thus asked how respiration impacts L. monocytogenes’ fermentative output. Under anaerobic conditions that lacked an alternative electron acceptor, L. monocytogenes exhibited a pattern of mixed acid fermentation, with lactic acid being most abundant and ethanol, formic acid, and acetic acid being produced at lower levels (Figure 1C). By contrast, under aerobic conditions L. monocytogenes almost exclusively produced acetic acid (Figure 1C). Consistent with respiration being partially responsible for the distinct aerobic vs. anaerobic responses, ΔQC and ΔQC/fmnB strains failed to undergo drastic shifts in fermentative output when grown in aerobic conditions. The ΔQC strain mainly produced lactic acid in the presence of oxygen, and this trend was even more pronounced in the ΔQC/fmnB strain, which almost exclusively produced lactic acid (Figure 1C). These results show that aerobic respiration induces a shift to acetic acid production and support the conclusion that L. monocytogenes’ two electron transport chains are partially functionally redundant in aerobic conditions.
 
 A comparison of fermentative outputs across the experimental conditions also clarifies the basis of central energy metabolism in L. monocytogenes. A classical glycolytic metabolism in L. monocytogenes likely generates ATP and NADH. In the absence of oxygen or an alternative electron acceptor, NAD+ is regenerated by coupling NADH oxidation to the reduction of pyruvate to lactate or ethanol. In the presence of oxygen, NADH oxidation is coupled to the reduction of oxygen, and pyruvate is converted to acetate. Moreover, the pattern of anaerobic formate production is consistent with aerobic acetyl-CoA production through pyruvate dehydrogenase and anaerobic production through pyruvate formate-lyase (Figure 1D). Collectively, these observations suggest that L. monocytogenes prioritizes balancing NAD+/NADH levels in the absence of an electron acceptor and maximizing ATP production in the presence of oxygen. In the absence of oxygen, NAD+/NADH redox homeostasis is achieved by minimizing NADH produced in acetyl-CoA biosynthesis and by consuming NADH in lactate/ethanol fermentation (Figure 1D). In the presence of oxygen, ATP yields are maximized through respiration and increased substrate-level phosphorylation by acetate kinase activity (Figure 1D).
 
-## Respiratory capabilities are essential for L. monocytogenes pathogenesis
+### Respiratory capabilities are essential for L. monocytogenes pathogenesis
 
 We next asked about the role of cellular respiration in intracellular L. monocytogenes growth and pathogenesis. The ΔfmnB mutant deficient for extracellular electron transfer was previously shown to resemble the wildtype L. monocytogenes strain in a murine model of infection (Light et al., 2018). We found that this mutant also did not differ from wildtype L. monocytogenes in growth in bone marrow-derived macrophages (BMMs) and a plaque assay that monitors bacterial growth and cell-to-cell spread (Figure 2A and B). Consistent with previous reports, the ΔQC strain deficient for aerobic respiration was attenuated in the plaque assay and murine model of infection, but resembled wildtype L. monocytogenes in macrophage growth (Figure 2A–C; Chen et al., 2017; Corbett et al., 2017). Combining mutations that resulted in the loss of both extracellular electron transfer and aerobic respiration produced even more pronounced phenotypes. The ΔQC/fmnB strain did not grow intracellularly in macrophages and fell below the limit of detection in the plaque assay and murine infection model (Figure 2A–C). Consistent with this phenotype reflecting a loss of respiratory activity, we observed that a mutant that targeted the two respiratory NADH dehydrogenases resulted in a similar phenotype in the plaque assay (Figure 2A). These results thus demonstrate that respiratory activities are essential for L. monocytogenes virulence, and that the organism’s two respiratory pathways are partially functionally redundant within a mammalian host.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig2-v2.jpg)
 
-**Figure 2.:** L. monocytogenes virulence.(A) Plaque formation by cell-to-cell spread of L. monocytogenes strains in monolayers of mouse L2 fibroblast cells. The mean plaque size of each strain is shown as a percentage relative to the wildtype plaque size. Error bars represent standard deviations of the mean plaque size from two independent experiments. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-test comparing wildtype to all the other strains. ****, p<0.0001; ns, no significant difference (p>0.05). (B) Intracellular growth of L. monocytogenes strains in murine bone marrow-derived macrophages (BMMs). At 1-hour post-infection, infected BMMs were treated with 50 μg/mL of gentamicin to kill extracellular bacteria. Colony-forming units (CFU) were enumerated at the indicated times. Results are representative of two independent experiments. (C) Bacterial burdens in murine spleens and livers 48 hours post-intravenous infection with indicated L. monocytogenes strains. The median values of the CFUs are denoted by black bars. The dashed lines represent the limit of detection. Data were combined from two independent experiments, n = 10 mice per strain. Statistical significance was evaluated using one-way ANOVA and Dunnett’s post-test using wildtype as the control. ****, p<0.0001. ΔQC, ΔqoxA/ΔcydAB; ΔQC/fmnB, ΔqoxA/ΔcydAB/fmnB::tn; Δndh1/ndh2, Δndh1/ndh2::tn.Figure 2—source data 1.Figure 2A.Figure 2—source data 2.Figure 2B.Figure 2—source data 3.Figure 2C.
+**Figure 2.:** (A) Plaque formation by cell-to-cell spread of L. monocytogenes strains in monolayers of mouse L2 fibroblast cells. The mean plaque size of each strain is shown as a percentage relative to the wildtype plaque size. Error bars represent standard deviations of the mean plaque size from two independent experiments. Statistical analysis was performed using one-way ANOVA and Dunnett’s post-test comparing wildtype to all the other strains. ****, p<0.0001; ns, no significant difference (p>0.05). (B) Intracellular growth of L. monocytogenes strains in murine bone marrow-derived macrophages (BMMs). At 1-hour post-infection, infected BMMs were treated with 50 μg/mL of gentamicin to kill extracellular bacteria. Colony-forming units (CFU) were enumerated at the indicated times. Results are representative of two independent experiments. (C) Bacterial burdens in murine spleens and livers 48 hours post-intravenous infection with indicated L. monocytogenes strains. The median values of the CFUs are denoted by black bars. The dashed lines represent the limit of detection. Data were combined from two independent experiments, n = 10 mice per strain. Statistical significance was evaluated using one-way ANOVA and Dunnett’s post-test using wildtype as the control. ****, p<0.0001. ΔQC, ΔqoxA/ΔcydAB; ΔQC/fmnB, ΔqoxA/ΔcydAB/fmnB::tn; Δndh1/ndh2, Δndh1/ndh2::tn.
 
-## Expression of NOX restores NAD+ levels in L. monocytogenes respiration mutants
+### Expression of NOX restores NAD+ levels in L. monocytogenes respiration mutants
 
 Cellular respiration both regenerates NAD+ and establishes a proton motive force that is important for various aspects of bacterial physiology. The involvement of respiration in these two distinct processes can confound the analysis of respiration-impaired phenotypes. However, the heterologous expression of water-forming NADH oxidase (NOX) has been used to decouple these functionalities in mammalian cells (Figure 3A; Titov et al., 2016). Because NOX regenerates NAD+ without pumping protons across the membrane, its introduction to a respiration-deficient cell can correct the NAD+/NADH imbalance, thereby isolating the role of the proton motive force in the phenotype (Lopez de Felipe et al., 1998; Titov et al., 2016).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig3-v2.jpg)
+
+**Figure 3.:** (A) Reaction catalyzed by the Lactococcus lactis water-forming NOX, which is the same as aerobic respiration without the generation of a proton motive force. (B) NAD+/NADH ratios of parent and NOX-complemented L. monocytogenes strains grown aerobically in nutrient-rich media to mid-logarithmic phase. Results from three independent experiments are presented as means and standard deviations. Statistical significance was calculated using one-way ANOVA and Dunnett’s post-test using the wildtype parent strain as the control. ****, p<0.0001; ***, p<0.001; **, p<0.01; ns, not statistically significant (p>0.05). (C) Fermentation products of L. monocytogenes strains grown in nutrient-rich media under aerobic conditions. Error bars show standard deviations. Results from three independent experiments are shown. ΔQC, ΔqoxA/ΔcydAB; ΔQC/fmnB, ΔqoxA/ΔcydAB/fmnB::tn; + NOX, strains complemented with L. lactis nox.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The swarming motility of parent and NOX-complemented Listeria monocytogenes strains is shown as a percentage relative to the wildtype swarming diameter following 48 hours incubation at 30°C. Error bars represent standard deviations of the mean swarming diameters from three independent experiments. Statistical significance between the wildtype and mutant strains was calculated using one-way ANOVA and unpaired two-tailed t test was utilized to determine significance between parent and NOX-complemented strains. ****, p<0.0001; ***, p<0.001; **, p<0.01; *, p<0.05; ns, no significant difference (p>0.05).
 
 To address which aspect of cellular respiration was important for L. monocytogenes pathogenesis, we introduced the previously characterized Lactococcus lactis water-forming NOX to the genome of respiration-deficient L. monocytogenes strains (Heux et al., 2006; Neves et al., 2002a; Neves et al., 2002b). We confirmed that the ΔQC and ΔQC/fmnB strains exhibited decreased NAD+/NADH levels and that constitutive expression of NOX rescued this phenotype (Figure 3B). Consistent with the altered fermentative output of the ΔQC/fmnB strain resulting from impaired NAD+ regeneration, we observed that NOX expression restored the predominance of acetic acid production to the aerobically grown cells (Figure 3C).
 
 To confirm that NOX expression specifically impacts NAD+/NADH-dependent phenotypes, we tested the effect of NOX expression on bacterial motility. Consistent with respiration impacting flagellar function through the proton motive force, we found that ΔQC/fmnB exhibited impaired bacterial motility and that this phenotype was resilient to NOX expression (Manson et al., 1977; Figure 3—figure supplement 1). These experiments thus provide evidence that NOX expression provides a tool to specifically manipulate the NAD+/NADH ratio in L. monocytogenes.
 
-## Respiration is critical for regenerating NAD+ during L. monocytogenes pathogenesis
+### Respiration is critical for regenerating NAD+ during L. monocytogenes pathogenesis
 
 We next sought to dissect the relative importance of respiration in generating a proton motive force versus maintaining redox homeostasis for L. monocytogenes virulence. We tested NOX-expressing ΔQC and ΔQC/fmnB strains for macrophage growth, plaque formation, and in the murine infection model. Expression of NOX almost fully rescued the plaque and macrophage growth phenotypes of the ΔQC and ΔQC/fmnB strains (Figure 4A and B). NOX expression also partially rescued L. monocytogenes virulence in the murine infection model (Figure 4C). Notably, NOX expression had a greater impact on the L. monocytogenes load in the spleen than the liver, suggesting distinct functions of respiration for L. monocytogenes colonization of these two organs (Figure 4C). These results thus suggest that NAD+ regeneration represents the primary role of respiration in L. monocytogenes pathogenesis to an organ-specific extent.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig4-v2.jpg)
 
-**Figure 4.:** L. monocytogenes strains.(A) Plaque formation by cell-to-cell spread of L. monocytogenes strains in monolayers of mouse L2 fibroblast cells. The mean plaque size of each strain is shown as a percentage relative to the wildtype plaque size. Error bars represent standard deviations of the mean plaque size from two independent experiments. Statistical analysis was performed using the unpaired two-tailed t test. ****, p<0.0001; ns, no significant difference (p>0.05). (B) Intracellular growth of L. monocytogenes strains in murine bone marrow-derived macrophages (BMMs). At 1-hour post-infection, infected BMMs were treated with 50 μg/mL of gentamicin to kill extracellular bacteria. Colony-forming units (CFU) were enumerated at the indicated times. Results are representative of three independent experiments. (C) Bacterial burdens in murine spleens and livers 48 hours post-intravenous infection with indicated L. monocytogenes strains. The median values of the CFUs are denoted by black bars. The dashed lines represent the limit of detection. Data were combined from two independent experiments, n = 10 mice per strain, but for the wildtype +NOX strain (n = 9 mice). Statistical significance was evaluated using one-way ANOVA and Dunnett’s post-test using the wildtype control strain to compare with the NOX-complemented strains. Significance between the parental and the NOX-complemented strains was determined using the unpaired two-tailed t test. ****, p<0.0001; **, p<0.01; ns, no significant difference (p>0.05). ΔQC, ΔqoxA/ΔcydAB; ΔQC/fmnB, ΔqoxA/ΔcydAB/fmnB::tn; Δndh1/ndh2, Δndh1/ndh2::tn; + NOX, strains complemented with Lactococcus lactis nox.Figure 4—source data 1.Figure 4A.Figure 4—source data 2.Figure 4B.Figure 4—source data 3.Figure 4C.
+**Figure 4.:** (A) Plaque formation by cell-to-cell spread of L. monocytogenes strains in monolayers of mouse L2 fibroblast cells. The mean plaque size of each strain is shown as a percentage relative to the wildtype plaque size. Error bars represent standard deviations of the mean plaque size from two independent experiments. Statistical analysis was performed using the unpaired two-tailed t test. ****, p<0.0001; ns, no significant difference (p>0.05). (B) Intracellular growth of L. monocytogenes strains in murine bone marrow-derived macrophages (BMMs). At 1-hour post-infection, infected BMMs were treated with 50 μg/mL of gentamicin to kill extracellular bacteria. Colony-forming units (CFU) were enumerated at the indicated times. Results are representative of three independent experiments. (C) Bacterial burdens in murine spleens and livers 48 hours post-intravenous infection with indicated L. monocytogenes strains. The median values of the CFUs are denoted by black bars. The dashed lines represent the limit of detection. Data were combined from two independent experiments, n = 10 mice per strain, but for the wildtype +NOX strain (n = 9 mice). Statistical significance was evaluated using one-way ANOVA and Dunnett’s post-test using the wildtype control strain to compare with the NOX-complemented strains. Significance between the parental and the NOX-complemented strains was determined using the unpaired two-tailed t test. ****, p<0.0001; **, p<0.01; ns, no significant difference (p>0.05). ΔQC, ΔqoxA/ΔcydAB; ΔQC/fmnB, ΔqoxA/ΔcydAB/fmnB::tn; Δndh1/ndh2, Δndh1/ndh2::tn; + NOX, strains complemented with Lactococcus lactis nox.
 
-## Impaired redox homeostasis is associated with increased cytosolic L. monocytogenes lysis
+### Impaired redox homeostasis is associated with increased cytosolic L. monocytogenes lysis
 
 We next asked why respiration-mediated redox homeostasis was critical for L. monocytogenes pathogenesis. We reasoned that previous descriptions of L. monocytogenes quinone biosynthesis mutants might provide a clue. Quinones are a family of redox-active cofactors that have essential functions in respiratory electron transport chains (Collins and Jones, 1981). Our previous studies suggested that distinct quinones function in flavin-based electron transfer and aerobic respiration (Light et al., 2018). A separate set of studies found that L. monocytogenes quinone biosynthesis mutants exhibited divergent phenotypes. L. monocytogenes strains defective in upstream steps of the quinone biosynthesis pathway (menB, menC, menD, menE, and menF) exhibited increased bacteriolysis in the cytosol of host cells and were severely attenuated for virulence (Figure 5A). By contrast, L. monocytogenes strains defective in downstream steps of the quinone biosynthesis pathway (menA and menG) did not exhibit increased cytosolic bacteriolysis and had less severe virulence phenotypes (Chen et al., 2019, Chen et al., 2017; Smith et al., 2021; Figure 5A). These divergent phenotypic responses resemble the loss of aerobic respiration versus the loss of aerobic respiration plus flavin-based electron transfer observed in our studies. The distinct virulence phenotype of quinone biosynthesis mutants could thus be explained by the upstream portion of the quinone biosynthesis pathway being required for both aerobic respiration and flavin-based electron transfer, with the downstream portion of the pathway only being required for aerobic respiration (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig5-v2.jpg)
 
-**Figure 5.:** L. monocytogenes strain in the cytosol of infected cells.(A) Proposed L. monocytogenes quinone biosynthesis pathway. Arrows indicate the number of enzymes that catalyze each reaction. An unidentified demethylmenaquinone (DMK) is proposed to be required for the flavin-based electron transfer pathway and MK7 required for aerobic respiration. Loss of the upstream portion of the pathway is anticipated to impact both electron transport chains. (B) Plaque formation by cell-to-cell spread of L. monocytogenes strains in monolayers of mouse L2 fibroblast cells. The mean plaque size of each strain is shown as a percentage relative to the wildtype plaque size. Error bars represent standard deviations of the mean plaque size from two independent experiments. Statistical analysis was performed using the unpaired two-tailed t test. ****, p<0.0001. (C) Bacterial burdens in murine spleens and livers 48 hours post-intravenous infection with indicated L. monocytogenes strains. The median values of the CFUs are denoted by black bars. The dashed lines represent the limit of detection. Data were combined from two independent experiments, n = 10 mice per strain. Statistical significance was evaluated using one-way ANOVA and Dunnett’s post-test using the wildtype strain as the control to compare with the NOX-complemented strain. Significance between the parental and the NOX-complemented strain was determined using the unpaired two-tailed t test. ****, p<0.0001. (D) Bacteriolysis of L. monocytogenes strains in bone marrow-derived macrophages. The data are normalized to wildtype bacteriolysis levels and presented as means and standard deviations from three independent experiments. Statistical significance was calculated using one-way ANOVA and Dunnett’s post-test using the wildtype parent strain as the control. ****, p<0.0001; ns, no significant difference (p>0.05).Figure 5—source data 1.Figure 5B.Figure 5—source data 2.Figure 5C.Figure 5—source data 3.Figure 5D.
+**Figure 5.:** (A) Proposed L. monocytogenes quinone biosynthesis pathway. Arrows indicate the number of enzymes that catalyze each reaction. An unidentified demethylmenaquinone (DMK) is proposed to be required for the flavin-based electron transfer pathway and MK7 required for aerobic respiration. Loss of the upstream portion of the pathway is anticipated to impact both electron transport chains. (B) Plaque formation by cell-to-cell spread of L. monocytogenes strains in monolayers of mouse L2 fibroblast cells. The mean plaque size of each strain is shown as a percentage relative to the wildtype plaque size. Error bars represent standard deviations of the mean plaque size from two independent experiments. Statistical analysis was performed using the unpaired two-tailed t test. ****, p<0.0001. (C) Bacterial burdens in murine spleens and livers 48 hours post-intravenous infection with indicated L. monocytogenes strains. The median values of the CFUs are denoted by black bars. The dashed lines represent the limit of detection. Data were combined from two independent experiments, n = 10 mice per strain. Statistical significance was evaluated using one-way ANOVA and Dunnett’s post-test using the wildtype strain as the control to compare with the NOX-complemented strain. Significance between the parental and the NOX-complemented strain was determined using the unpaired two-tailed t test. ****, p<0.0001. (D) Bacteriolysis of L. monocytogenes strains in bone marrow-derived macrophages. The data are normalized to wildtype bacteriolysis levels and presented as means and standard deviations from three independent experiments. Statistical significance was calculated using one-way ANOVA and Dunnett’s post-test using the wildtype parent strain as the control. ****, p<0.0001; ns, no significant difference (p>0.05).
 
 Based on the proposed roles of quinones in respiration, we hypothesized that the severe phenotypes previously described for the upstream quinone biosynthesis mutants were due to an imbalance in the NAD+/NADH ratio. To address this hypothesis, we first confirmed that the ΔmenB strain, which is defective in upstream quinone biosynthesis, exhibited a phenotype similar to the ΔQC/fmnB strain for plaque formation and in the murine infection model (Figure 5B and C). We next tested the effect of NOX expression on virulence phenotypes for the ΔmenB strain. NOX expression rescued ΔmenB phenotypes for plaque formation and in the murine infection model to a strikingly similar extent as the ΔQC/fmnB strain (Figure 5B and C). These results thus provide evidence that quinone biosynthesis is essential for respiration and that the severity of the ΔmenB phenotype is largely due to the role of respiration in regenerating NAD+.
 
@@ -109,7 +125,7 @@ Using a previously described luciferase-based assay to quantify cytosolic plasmi
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75424/elife-75424-fig6-v2.jpg)
 
-**Figure 6.:** L. monocytogenes pathogenesis.On the left, an intracellular bacterium with the ability to oxidize NADH and transfer electrons through the aerobic and extracellular electron transfer electron transport chains can regenerate and maintain high NAD+ levels allowing the bacterium to grow and be virulent. On the right, an intracellular bacterium unable to regenerate NAD+, by lacking the electron transport chains, is avirulent because it lyses in the cytosol of infected cells.
+**Figure 6.:** On the left, an intracellular bacterium with the ability to oxidize NADH and transfer electrons through the aerobic and extracellular electron transfer electron transport chains can regenerate and maintain high NAD+ levels allowing the bacterium to grow and be virulent. On the right, an intracellular bacterium unable to regenerate NAD+, by lacking the electron transport chains, is avirulent because it lyses in the cytosol of infected cells.
 
 ## Discussion
 
@@ -125,36 +141,152 @@ While our studies provide evidence that NAD+ regeneration is critical for preven
 
 ## Materials and methods
 
-## Bacterial culture and strains
+### Bacterial culture and strains
 
 All strains of L. monocytogenes used in this study were derived from the wildtype 10403S (streptomycin-resistant) strain (see Table 1 for references and additional details). The L. lactis water-forming nox (NCBI accession WP_010905313.1) was cloned into the pPL2 vector downstream of the constitutive Phyper promoter and integrated into the L. monocytogenes genome via conjugation, as previously described (Lauer et al., 2002; Shen and Higgins, 2005). The ΔQC/fmnB strain was generated from ΔQC and fmnB::tn strains using generalized transduction protocols with phage U153, as previously described (Hodgson, 2000; Reniere et al., 2016).
 
+**Table 1.**
+ Bacterial strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strains</th>
+      <th>Strain number</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Listeria monocytogenes (wildtype)</td>
+      <td>10403S</td>
+      <td>Bécavin et al., 2014</td>
+    </tr>
+    <tr>
+      <td>ΔcydAB/ΔqoxA</td>
+      <td>DP-L6624</td>
+      <td>Chen et al., 2017</td>
+    </tr>
+    <tr>
+      <td>ΔcydAB/ΔqoxA/fmnB::tn</td>
+      <td>DP-L7190</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔfmnB</td>
+      <td>DP-L7195</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Wildtype + pPL2 NOX</td>
+      <td>DP-L7188</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔcydAB/ΔqoxA + pPL2 NOX</td>
+      <td>DP-L7189</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔcydAB/ΔqoxA/fmnB::tn + pPL2 NOX</td>
+      <td>DP-L7191</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔflaA</td>
+      <td>DP-L5986</td>
+      <td>Nguyen et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Δndh1/ndh2::tn</td>
+      <td>DP-L6626</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Δndh1/ndh2::tn + pPL2 NOX</td>
+      <td>DP-L7253</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Wildtype + pBHE573</td>
+      <td>JDS18</td>
+      <td>Sauer et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Wildtype + pPL2 NOX + pBHE573</td>
+      <td>JDS2328</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔmenB + pBHE573</td>
+      <td>JDS1191</td>
+      <td>Chen et al., 2017</td>
+    </tr>
+    <tr>
+      <td>ΔmenB + pPL2 NOX + pBHE573</td>
+      <td>JDS2333</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Δhly + pBHE573</td>
+      <td>JDS19</td>
+      <td>Sauer et al., 2010</td>
+    </tr>
+    <tr>
+      <td>ΔglmR + pBHE573</td>
+      <td>JDS21</td>
+      <td>Sauer et al., 2010</td>
+    </tr>
+    <tr>
+      <td>ΔglmR + pPL2 NOX + pBHE573</td>
+      <td>JDS2329</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli</td>
+      <td>SM10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pPL2-NOX</td>
+      <td>DP-E7206</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pBHE573</td>
+      <td>JDS17</td>
+      <td>Sauer et al., 2010</td>
+    </tr>
+  </tbody>
+</table>
+
 L. monocytogenes cells were grown at 37°C in filter-sterilized BHI media. Growth curves were spectrophotometrically measured by optical density at a wavelength of 600 nm (OD600). An anaerobic chamber (Coy Laboratory Products) with an environment of 2% H2 balanced in N2 was used for anaerobic experiments. Media was supplemented with 50 mM ferric ammonium citrate or 50 mM fumarate for experiments that addressed the effect of electron acceptors on L. monocytogenes growth.
 
-## Plaque assays
+### Plaque assays
 
 L. monocytogenes strains were grown overnight slanted at 30°C and were diluted in sterile phosphate-buffered saline (PBS). Six-well plates containing 1.2 × 106 mouse L2 fibroblast cells per well were infected with the L. monocytogenes strains at a multiplicity of infection (MOI) of approximately 0.1. At 1-hour post-infection, the L2 cells were washed with PBS and overlaid with Dulbecco’s Modified Eagle Medium (DMEM) containing 0.7% agarose and gentamicin (10 µg/mL) to kill extracellular bacteria, and then plates were incubated at 37°C with 5% CO2. At 72-hour post-infection, L2 cells were overlaid with a staining mixture containing DMEM, 0.7% agarose, neutral red (Sigma), and gentamicin (10 µg/mL), and plaques were scanned and analyzed using ImageJ, as previously described (Reniere et al., 2016; Sun et al., 1990).
 
-## Intracellular macrophage growth curves
+### Intracellular macrophage growth curves
 
 L. monocytogenes strains were grown overnight slanted at 30°C and were diluted in sterile PBS. A total of 3 × 106 BMMs from C57BL/6 mice were seeded in 60 mm non-TC treated dishes containing 14 12 mm glass coverslips in each dish and infected at an MOI of 0.25 as previously described (Portnoy et al., 1988; Reniere et al., 2016).
 
-## Mouse virulence experiments
+### Mouse virulence experiments
 
 L. monocytogenes strains were grown at 37°C with shaking at 200 r.p.m. to mid-logarithmic phase. Bacteria were collected and washed in PBS and resuspended at a concentration of 5 × 105 colony-forming units (CFU) per 200 μL of sterile PBS. The 8-week-old female CD-1 mice (Charles River) were then injected with 1 × 105 CFU via the tail vein. At 48 hours post-infection, spleens and livers were collected, homogenized, and plated to determine the number of CFU per organ.
 
-## NAD+/NADH assay
+### NAD+/NADH assay
 
 L. monocytogenes strains were grown at 37°C with shaking at 200 r.p.m. to mid-logarithmic phase. Cultures were centrifuged and then resuspended in PBS. Resuspended bacteria were then lysed by vortexing with 0.1-mm-diameter zirconia–silica beads for 10 min. Lysates were used to measure NAD+ and NADH levels using the NAD/NADH-Glo assay (Promega, G9071) by following the manufacturer’s protocol.
 
-## Fermentation product measurements
+### Fermentation product measurements
 
 Organic acids and ethanol were measured by high-performance liquid chromatography (Agilent, 1260 Infinity), using a standard analytical system (Shimadzu, Kyoto, Japan) equipped with an Aminex Organic Acid Analysis column (Bio-Rad, HPX-87H 300 × 7.8 mm) heated at 60°C. The eluent was 5 mM of sulfuric acid, used at a flow rate of 0.6 mL/min. We used a refractive index detector 1260 Infinity II RID and a 1260 Infinity II variable wavelength detector. A five-point calibration curve based on peak area was generated and used to calculate concentrations in the unknown samples.
 
-## Motility assay
+### Motility assay
 
 L. monocytogenes strains were grown overnight slanted at 30°C and were diluted in sterile PBS. Cultures were normalized to an OD600 of 1.0 and 1 μL of cultures were inoculated on semisolid BHI 0.3% agar. Mutant swarming diameters relative to wildtype were quantified following 48 hours incubation at 30°C.
 
-## Intracellular bacteriolysis assay
+### Intracellular bacteriolysis assay
 
 Bacteriolysis assays were performed as previously described (Chen et al., 2017). Briefly, immortalized Ifnar-/- macrophages were plated at a concentration of 5 × 105 cells per well in a 24-well plate. Cultures of L. monocytogenes strains were grown overnight slanted at 30°C and diluted to a final concentration of 5 × 108 CFU per mL. Diluted cultures were then used to infect macrophages at an MOI of 10. At 1-hour post-infection, wells were aspirated, and the media was replaced with media containing 50 μg/mL gentamicin. At 6 hours post-infection, media was aspirated, and macrophages were lysed using TNT lysis buffer (20  mM Tris, 200  mM NaCl, 1% Triton [pH 8.0]). Lysate was then transferred to 96-well plates and assayed for luciferase activity by luminometry (Synergy HT; BioTek, Winooski, VT).

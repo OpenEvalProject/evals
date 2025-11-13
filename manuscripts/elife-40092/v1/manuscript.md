@@ -38,7 +38,7 @@
 
 ## Abstract
 
-10.7554/eLife.40092.001 Induced pluripotent stem cell (iPSC)-derived neurons are increasingly used to model Autism Spectrum Disorder (ASD), which is clinically and genetically heterogeneous. To study the complex relationship of penetrant and weaker polygenic risk variants to ASD, ‘isogenic’ iPSC-derived neurons are critical. We developed a set of procedures to control for heterogeneity in reprogramming and differentiation, and generated 53 different iPSC-derived glutamatergic neuronal lines from 25 participants from 12 unrelated families with ASD. Heterozygous de novo and rare-inherited presumed-damaging variants were characterized in ASD risk genes/loci. Combinations of putative etiologic variants ( GLI3/KIF21A or EHMT2/UBE2I ) in separate families were modeled. We used a multi-electrode array, with patch-clamp recordings, to determine a reproducible synaptic phenotype in 25% of the individuals with ASD (other relevant data on the remaining lines was collected). Our most compelling new results revealed a consistent spontaneous network hyperactivity in neurons deficient for CNTN5 or EHMT2. The biobank of iPSC-derived neurons and accompanying genomic data are available to accelerate ASD research. Editorial note: This article has been through an editorial process in which authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Induced pluripotent stem cell (iPSC)-derived neurons are increasingly used to model Autism Spectrum Disorder (ASD), which is clinically and genetically heterogeneous. To study the complex relationship of penetrant and weaker polygenic risk variants to ASD, ‘isogenic’ iPSC-derived neurons are critical. We developed a set of procedures to control for heterogeneity in reprogramming and differentiation, and generated 53 different iPSC-derived glutamatergic neuronal lines from 25 participants from 12 unrelated families with ASD. Heterozygous de novo and rare-inherited presumed-damaging variants were characterized in ASD risk genes/loci. Combinations of putative etiologic variants (GLI3/KIF21A or EHMT2/UBE2I) in separate families were modeled. We used a multi-electrode array, with patch-clamp recordings, to determine a reproducible synaptic phenotype in 25% of the individuals with ASD (other relevant data on the remaining lines was collected). Our most compelling new results revealed a consistent spontaneous network hyperactivity in neurons deficient for CNTN5 or EHMT2. The biobank of iPSC-derived neurons and accompanying genomic data are available to accelerate ASD research.Editorial note: This article has been through an editorial process in which authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -54,7 +54,7 @@ Here, we develop a resource of 53 different iPSC lines derived from 25 individua
 
 ## Results
 
-## Selection and collection of tissue samples for reprogramming
+### Selection and collection of tissue samples for reprogramming
 
 Participants were enrolled in the Autism Speaks MSSNG whole-genome sequencing (WGS) project (C Yuen et al., 2017). All ASD and related control-participants were initially consented for WGS and upon return of genetic results, then consented for the iPSC study, using approved protocols through the Research Ethics Board at the Hospital for Sick Children (see Materials and methods section for details) (Hoang et al., 2018b). Some families were also examined by whole exome sequencing. The study took place over a 5 year period and used incrementally developing ASD gene lists from the following papers (Jiang et al., 2013; Marshall et al., 2008; Tammimies et al., 2015; Yuen et al., 2015) (Table 1). These primarily considered data from the Autism Speaks MSSNG project, the Autism Sequencing Consortium (De Rubeis et al., 2014), and the Simons Foundation Autism Research Initiative (SFARI) gene list (discussion below). A diversity of different ASD-risk variants was targeted ranging in size from single nucleotide variants (SNV) to an 823 kb CNV (Figure 1 and Table 1; corresponding genomic coordinates in Supplementary file 1). Typically, one ASD-affected and one sex-matched unaffected member (control) per family were included (Figure 1). In total, 14 ASD-affected and 11 controls participated, of which 21 were males and four were females (Figure 1 and Table 1). Cells from either skin fibroblasts or CD34 +blood cells were collected for reprogramming into iPSCs (Figure 2A and Table 1).
 
@@ -62,53 +62,422 @@ Participants were enrolled in the Autism Speaks MSSNG whole-genome sequencing (W
 
 **Figure 1.:** One ASD-affected (black arrow) and one sex-matched unaffected (black star) members were typically selected for iPSC reprogramming. ASD-affected children are represented with a black box; note that line 1-0019-002 (19-2) in A) was used as a control and was described previously (Deneault et al., 2018).
 
-## Derivation of iPSC lines
+![Figure 2.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the experimental procedure to find specific electrophysiological signatures associated with genetic variants of clinical significance to autism spectrum disorder (ASD). Fibroblasts or blood cells were reprogrammed into iPSCs from a cohort of 25 probands and unaffected family members. Differentiation of iPSCs into glutamatergic neurons was achieved with NGN2 7 day transient overexpression, and electrophysiological properties were monitored using a multi-electrode array (MEA) device. (B) Flow cytometry and (C) Immunohistochemistry revealing expression of the pluripotency markers NANOG, SSEA4, OCT4 and TRA-1–60 in a representative iPSC line. (D) Representative normal male karyotype in iPSC; 20 cells were examined.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative trace of the amplitude of an action potential during time, detected by one electrode from one well populated with line 37E. (B) MEA recordings of the MFR and number of network bursts of different iPSC-derived neuronal lines upon treatments with different receptor inhibitors. Values were acquired in four consecutive readings, that is, before (read 1) and after addition of GABA receptor inhibitor PTX (read 2), after addition of AMPA receptor inhibitor CNQX (read 3), and after addition of sodium channel blocker TTX (read 4). At least 60 min recovery was allowed after each reading, which were performed 5–10 min after treatment with neurotoxins. 6–8 wells were recorded for each group at week 8 PNI. Values are presented as mean ± SD from a single experiment; *p<0.05 between n/t and CNQX for all samples; PTX, Picrotoxin; CNQX, 6-Cyano-7-nitroquinoxaline-2,3-dione; TTX, Tetrodotoxin; n/t, not treated; μV, microvolt; Hz, hertz; ctrl, control; mut, mutant.
+
+**Table 1.**
+ List of participants with ASD or unaffected controls, with the genetic variant(s) involved, and the different iPSC lines derived.*The 1 bp deletion in EHMT2 would result in a frameshift 47 codons before the end of the protein and disruption of the stop-codon, potentially leading to the inclusion of a total of 221 incorrect amino acids; more information corresponding to the different genetic variants are presented in Supplementary file 1; MZ, monozygotic; Retro, retrovirus; N/A, not available
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Family ID</th>
+      <th>MSSNG Id</th>
+      <th>Status</th>
+      <th>Primary genetic variant(s)</th>
+      <th>Sex</th>
+      <th>Age at reprogramming (year)</th>
+      <th>Cell of origin</th>
+      <th>Reprogramming method</th>
+      <th>iPSC ID</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="10">ASD Candidate Gene - CNVs</td>
+    </tr>
+    <tr>
+      <td rowspan="2">A</td>
+      <td>1-0019-002</td>
+      <td>Unaffected father</td>
+      <td>Family and study control</td>
+      <td>M</td>
+      <td>44</td>
+      <td>Skin</td>
+      <td>Retro</td>
+      <td>19–2</td>
+      <td>Deneault et al., 2018</td>
+    </tr>
+    <tr>
+      <td>1-0019-004</td>
+      <td>ASD-affected</td>
+      <td>16p11.2 deletion/+</td>
+      <td>M</td>
+      <td>15</td>
+      <td>Skin</td>
+      <td>Retro</td>
+      <td>19-4</td>
+      <td>Marshall et al., 2008</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>3-0368-000</td>
+      <td>ASD-affected</td>
+      <td>NRXN1 430 kb deletion/+</td>
+      <td>M</td>
+      <td>8</td>
+      <td>Skin</td>
+      <td>Retro</td>
+      <td>NR3</td>
+      <td>Tammimies et al., 2015</td>
+    </tr>
+    <tr>
+      <td rowspan="3">C</td>
+      <td>1-0262-002</td>
+      <td>Unaffected father</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>49</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>16K, 16N</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>1-0262-003</td>
+      <td>ASD-affected</td>
+      <td>DLGAP2 791 kb duplication/+</td>
+      <td>M</td>
+      <td>10</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>15E, 15G</td>
+      <td>Marshall et al., 2008</td>
+    </tr>
+    <tr>
+      <td>1-0262-004</td>
+      <td>Affected brother</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>14</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>17E, 17G</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td rowspan="2">D</td>
+      <td>1-0582-002</td>
+      <td>Unaffected father</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>37</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>26E, 26J</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>1-0582-003</td>
+      <td>ASD-affected</td>
+      <td>CNTN5 676 kb deletion</td>
+      <td>M</td>
+      <td>9</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>27H, 27N</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>7-0058-003</td>
+      <td>ASD-affected</td>
+      <td>AGBL4 323 kb deletion/+</td>
+      <td>M</td>
+      <td>4</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>36O, 36P</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="10">ASD Candidate Gene – SNVs</td>
+    </tr>
+    <tr>
+      <td rowspan="2">F</td>
+      <td>2-1305-005</td>
+      <td>Unaffected brother</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>7</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>21H, 21P</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>2-1305-003</td>
+      <td>ASD-affected</td>
+      <td>CAPRIN1 p.Q399X/+</td>
+      <td>M</td>
+      <td>12</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>20C, 20E, 75G, 75H</td>
+      <td>Jiang et al., 2013</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G</td>
+      <td>2-1186-002</td>
+      <td>Unaffected father</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>43</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>54E, 54G</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>2-1186-003</td>
+      <td>ASD-affected</td>
+      <td>VIP p.Y73X/+</td>
+      <td>M</td>
+      <td>12</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>53G, 53H</td>
+      <td>Jiang et al., 2013</td>
+    </tr>
+    <tr>
+      <td rowspan="3">H</td>
+      <td>2-1303-004</td>
+      <td>Unaffected brother</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>13</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>19A</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>2-1303-003</td>
+      <td>ASD-affected</td>
+      <td>ANOS1 p.R423X</td>
+      <td>M</td>
+      <td>19</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>18C, 18E</td>
+      <td>Jiang et al., 2013</td>
+    </tr>
+    <tr>
+      <td>2-1303-003</td>
+      <td>Corrected ASD-affected</td>
+      <td>CRISPR-corrected ANOS1 p.X423R</td>
+      <td>M</td>
+      <td>19</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>18CW</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td rowspan="2">I</td>
+      <td>1-0273-002</td>
+      <td>Unaffected father</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>45</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>51C, 51E</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>1-0273-003</td>
+      <td>ASD-affected</td>
+      <td>THRA p.R384C/+</td>
+      <td>M</td>
+      <td>14</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>52A, 52C</td>
+      <td>Yuen et al., 2015</td>
+    </tr>
+    <tr>
+      <td colspan="10">Functional ASD Candidate Genes - SNVs</td>
+    </tr>
+    <tr>
+      <td rowspan="3">J</td>
+      <td>1-0494-005</td>
+      <td>Unaffected brother</td>
+      <td>Family control</td>
+      <td>M</td>
+      <td>12</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>50A, 50B, 50H</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>1-0494-003</td>
+      <td>ASD-affected MZ twin</td>
+      <td>SET c.112 + 1G&gt;C/+</td>
+      <td>M</td>
+      <td>9</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>48K, 48N</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>1-0494-004</td>
+      <td>ASD-affected MZ twin</td>
+      <td>SET c.112 + 1G&gt;C/+</td>
+      <td>M</td>
+      <td>9</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>49H, 49G</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="4">K</td>
+      <td>7-0254-001</td>
+      <td>Unaffected mother</td>
+      <td>GLI3 p.G727R/+</td>
+      <td>F</td>
+      <td>37</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>64N, 64Q</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>7-0254-002</td>
+      <td>Unaffected father</td>
+      <td>GLI3 p.G465R/+</td>
+      <td>M</td>
+      <td>41</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>63Q, 63T</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>7-0254-003</td>
+      <td>ASD-affected</td>
+      <td>GLI3 p.G727R/+, mat GLI3 pG465R/+, pat KIF21A p.R1156G/+ (mosaic 23%)</td>
+      <td>F</td>
+      <td>7</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>62M, 62X</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>7-0254-004</td>
+      <td>Affected brother</td>
+      <td>GLI3 p.G727R/+ GLI3 pG465R/+</td>
+      <td>M</td>
+      <td>9</td>
+      <td>Blood</td>
+      <td>Sendai</td>
+      <td>61I, 61K</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">L</td>
+      <td>6-0393-001</td>
+      <td>Unaffected mother</td>
+      <td>Family control</td>
+      <td>F</td>
+      <td>54</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>37E</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>6-0393-003</td>
+      <td>ASD-affected</td>
+      <td>*EHMT2 p.K1164Nfs/+ UBE2I p.E78K/+</td>
+      <td>F</td>
+      <td>18</td>
+      <td>Skin</td>
+      <td>Sendai</td>
+      <td>38B, 38E</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Derivation of iPSC lines
 
 Two different viral approaches were used for cell reprogramming. For historical reasons, the first three cell lines in Table 1, namely iPSC IDs 19–2, 19-4 and NR3, were reprogrammed using retroviruses expressing OCT4/POU5F1, SOX2, KLF4 and MYC, and a lentiviral vector that encoded the pluripotency reporter EOS-GFP/PuroR (Hotta et al., 2009). Then, we moved to non-integrative Sendai virus for all the other tested lines (Table 1). Emerging iPSC colonies were selected for activated endogenous human pluripotency markers, differentiation potential into three germ layer cells after embryoid body formation in vitro, and normal karyotype (Figure 2B–D and Supplementary file 2). Two separate pluripotent and karyotypically normal iPSC lines were typically selected per participant for neuronal differentiation and phenotyping experiments (Table 1).
 
-## Transient induction of neuronal differentiation
+### Transient induction of neuronal differentiation
 
 We induced differentiation of newly generated iPSCs into glutamatergic neurons to test their electrophysiological properties (Figure 2A). We used the NGN2 ectopic expression approach since highly-enriched populations of glutamatergic neurons can be obtained within a week, and they exhibit robust synaptic activity when co-cultured with glial cells (Zhang et al., 2013). Importantly, we determined that this strategy offers highly uniform differentiation levels between cell lines derived from different participants (Deneault et al., 2018). This consistency was necessary to perform suitable phenotyping assays such as network electrophysiology recordings of several different lines in the same experimental batch. The resulting glutamatergic neurons were all subjected to electrophysiological phenotyping.
 
-## Multi-Electrode array analysis of iPSC-derived neurons
+### Multi-Electrode array analysis of iPSC-derived neurons
 
 MEA phenotyping was predominantly used in order to monitor the excitability of several independent cultured neuron populations in parallel, and in an unbiased manner, as we previously adapted with different NGN2-neuron lines (Deneault et al., 2018). We sought to determine if any selected ASD-risk variants would interfere with spontaneous spiking and synchronized bursting activity in a whole network of interconnected glutamatergic neurons. We ensured that the duration and amplitude of detected spikes were similar to typical mammalian neurons, that is, action potential widths of around 1–2 milliseconds (ms) and peak amplitudes of approximately 20–150 µV (Figure 2—figure supplement 1A). We measured the glutamatergic/GABAergic nature of our cultured neurons produced using NGN2 ectopic expression, which is known to repress GABAergic differentiation at the advantage of glutamatergic (Roybon et al., 2010). Mean firing rate (MFR) and network bursting activity were measured upon treatment with different receptor inhibitors. No substantial change was observed after addition of the GABA receptor inhibitor PTX (Figure 2—figure supplement 1B), indicating that GABAergic neurons are not appreciably present in our cultures. However, the MFR was significantly reduced in the presence of the AMPA receptor inhibitor CNQX while unchanged in untreated cells, with a comparable profile across each selected line (Figure 2—figure supplement 1B). This further suggests that most of the cultures were composed of glutamatergic neurons, and that our induction protocol was consistent across different cultures. All activity was abolished after addition of the sodium channel blocker TTX (Figure 2—figure supplement 1B), indicating that our human neurons were expressing functional sodium channels.
 
 The weighted MFR (wMFR), which represents the MFR per active electrode, was used as a primary read-out for all tested iPSC-derived neurons, at one-week intervals from week 4 to 8 post-NGN2-induction (PNI) (Figure 3). To identify a preferred timepoint for this screen, we first pooled the data of all the independent control lines. Since the highest wMFR value for this pool of ‘all controls’ (~1.8 Hz) was detected at week 6 (Figure 3A), we initially used that timepoint to compare the activity of ASD variant and control lines for each family. In two different families, that is, CNTN5 and EHMT2, a significant higher wMFR was recorded in ASD variant neurons at week 6 compared with their corresponding familial control neurons (Figure 3B). EHMT2 had a strikingly increased wMFR at all timepoints, whereas CNTN5 at other timepoints was equivalent to its controls. We therefore ranked these two genes as high priorities for further study. In contrast, no significant differences were observed for DLGAP2, CAPRIN1, SET or GLI3 (Figure 3C), suggesting that these variants do not differ from control neuronal activity in our MEA assays, and therefore were not studied further. Different dynamics of altered wMFR were observed for ANOS1 and VIP at week 4 (Figure 3D), and the ANOS1 nonsense variant was ranked as an example of a candidate for further study. Conversely, a significant lower wMFR was recorded at weeks 7 and 8 for THRA (Figure 3D). No unaffected family members were available as controls for the single NR3 line (NRXN1) nor for 36O-36P (AGBL4), thus they were not chosen for further study. When we compared their values to the pooled values recorded from all the different familial controls available, no difference was found for NRXN1 and a significantly lower wMFR was observed at weeks 5 and 7 for AGBL4 (Figure 3E).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig3-v1.jpg)
+
+**Figure 3.:** (A–E) Weighted mean firing rate (wMFR) of pooled cell lines from control and KO neurons for each family from week 4 to 8 PNI. (F) Dot plots showing wMFR of each cell line from week 4 to 8 PNI; each dot represents the wMFR of one well, and the color reflects independent experiments. Values are presented as mean ± SEM of several technical and biological replicates, as presented in Supplementary file 3; ‘all controls’ represents the pool of 311 different control wells from 17 independent experiments; *p<0.05 from multiple t test comparison with Holm-Sidak correction (B), and without correction (C–E), and one-way ANOVA Tukey test pointing to intra- or inter-individual variability per family (F).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pooled cell lines from control and KO neurons for each family, from weeks 4 to 8 PNI. (B) Dot plots of each cell line recorded from weeks 4 to 8 PNI; each dot represents the MFR of one well, and the color reflects independent experiments. Values are presented as mean ± SEM of several technical and biological replicates, as presented in Supplementary file 3; *p<0.05 from multiple t test comparison without correction (A), and one-way ANOVA Tukey test pointing to intra- or inter-individual variability per family (B).
+
 To explore intra-individual (different lines from the same individual) and inter-individual (different individuals with the same mutation) variability, we plotted all the values obtained from each single well, independent experiment, cell line and individual, at each of the five reading timepoints (Figure 3F). Most lines from an individual were not significantly different from each other, and reassuringly low inter-individual variability was observed with different siblings bearing the same mutation(s), for example 48K and 48N versus 49G and 49H (SET), or 61I and 61K versus 62M and 62X (GLI3), at different timepoints (Figure 3F). A few lines showed a significant intra-individual variability, for example lines 52A and 52C (THRA) at week 4, or lines 75G and 75H (CAPRIN1) at week 8 (Figure 3F). We also noted some inter-independent experiment variability for a given line, for example line 38E (EHMT2) at weeks 4 and 5 (dots with different colours do not overlap in Figure 3F). Note that similar profiles were monitored in terms of MFR (Figure 3—figure supplement 1), indicating that these differences were not due to having more or less active electrodes in different lines. While consistent activity across lines was generally observed, the presence of variability prompted us to interrogate independent variants created by genome editing of CNTN5, ANOS1 and EHMT2.
 
-## CNTN5 isogenic pair to control for genetic background contribution
+### CNTN5 isogenic pair to control for genetic background contribution
 
 To further characterize the heterozygous CNTN5-mutant neuron lines 27H and 27N, we first showed a significantly higher network burst frequency at weeks 5, 6 and 8 (Figure 4A), indicating a more synchronized neuronal activity across each well. Importantly, CNTN5 protein levels overall were reduced by at least 33% in CNTN5-/+ neurons (Figure 4A, right panel), suggesting that the 676 kb heterozygous loss in CNTN5 interferes with the production of CNTN5 protein, but also that the non-deleted allele may be more active transcriptionally than in controls.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig4-v1.jpg)
 
-**Figure 4.:** (A) The network burst frequency was recorded from the CNTN5 family from weeks 4–8 PNI, with corresponding protein levels by western blot on the right panel; *p<0.05 from multiple t test comparison with Holm-Sidak correction at weeks 6 and 8. (B) Both wMFR and network burst frequency were recorded from the 19–2-CNTN5 isogenic pair from weeks 4–11 PNI, with protein levels. The iPSC IDs and genotypes are indicated above each graph; values are presented as mean ± SEM of different lines per participant, and of several technical and biological replicates, as presented in Supplementary file 3; actin beta (ACTB) was used as a loading control for the western blots and the relative intensity of each band is indicated below the blots; *p<0.05 from multiple t test comparison with Holm-Sidak correction.10.7554/eLife.40092.011Figure 4—source data 1.10.7554/eLife.40092.012Figure 4—source data 2.
+**Figure 4.:** (A) The network burst frequency was recorded from the CNTN5 family from weeks 4–8 PNI, with corresponding protein levels by western blot on the right panel; *p<0.05 from multiple t test comparison with Holm-Sidak correction at weeks 6 and 8. (B) Both wMFR and network burst frequency were recorded from the 19–2-CNTN5 isogenic pair from weeks 4–11 PNI, with protein levels. The iPSC IDs and genotypes are indicated above each graph; values are presented as mean ± SEM of different lines per participant, and of several technical and biological replicates, as presented in Supplementary file 3; actin beta (ACTB) was used as a loading control for the western blots and the relative intensity of each band is indicated below the blots; *p<0.05 from multiple t test comparison with Holm-Sidak correction.
 
 Unaffected sex-matched family members are genetically similar to their related probands, but still present substantial genetic differences that can contribute to a given phenotype. Isogenic cell pairs represent better control of the genetic background contribution (Hoffman et al., 2019). CRISPR editing provides the possibility to engineer such isogenic controls (Miyaoka et al., 2014; Powell et al., 2017). Since editing large CNVs, such as the 676 kb deletion in CNTN5, is currently difficult using existing technology, we elected to introduce a set of nonsense mutations, previously described as ‘StopTag’ (Deneault et al., 2018), to knock out (KO) the expression of this gene in an unrelated iPSC line that was previously generated from a non-ASD and non-carrier individual. This parental line ‘19–2’ was also exploited in similar isogenic KO approaches (Woodbury-Smith et al., 2017) (Ross et al., in revision; Zaslavsky et al., in press), allowing assessment in a different and unrelated genetic background. For technical reasons, we targeted exon 5 of the transcript ENST00000524871.5 of CNTN5 in order to disrupt its expression. A heterozygous iPSC line was isolated to better mimic the heterozygous status of the CNTN5 deletion in the proband lines 27H and 27N. Intriguingly, the new isogenic iPSC-derived neuron line 19–2-CNTN5StopTag/+ did not show significant differences in terms of wMFR or network burst frequency at week 6 (Figure 4B). However, the wMFR of line 19–2 increased up to nearly 3 Hz at week 8 (Figure 4B) while the CNTN5 family controls stayed around 0.5 Hz (Figure 3B). In this context of a more active cell line, we extended the recordings until week 11, and the hyperactive wMFR of 19–2-CNTN5StopTag/+ was only evident from week 10 (Figure 4B). Moreover, CNTN5 protein levels were clearly decreased in this isogenic mutant line (Figure 4B, right panel), implying that StopTag insertion efficiently disrupted gene expression. These results indicate that loss of CNTN5 function is responsible for increased neuronal activity in vitro.
 
-## Repair of ANOS1 rescues defective membrane currents
+### Repair of ANOS1 rescues defective membrane currents
 
 In a complementary approach to minimize the confounding effect of genetic background from familial and unrelated controls, and its impact on phenotype, we sought to edit our proband-specific variants using CRISPR in order to create matching isogenic controls. We prioritized the nonsense variant R423X found in ANOS1 in participant 2-1303-003 and successfully corrected the corresponding iPSC line 18C (Figure 5A–C). Indeed, after detecting 7% edited cells using droplet digital PCR (ddPCR) in well G08 in the primary 96-well culture plate post-nucleofection, two subsequent limiting-dilution enrichment steps were necessary to isolate a 100% corrected iPSC line (Figure 5B). Sanger sequencing confirmed the properly corrected genomic DNA sequence (Figure 5C). This newly corrected line was named ‘18CW’ (see iPSC line ID ‘18CW’ in Table 1 and Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig5-v1.jpg)
 
-**Figure 5.:** (A) Design of gRNAs, ssODNs and ddPCR probes for correction of R423X in ANOS1; one sgRNA for each genomic DNA strand, that is, gRNA- in blue and gRNA +in yellow, was devised in close proximity for the double-nicking system using Cas9D10A; the non-sense mutations in ANOS1 is depicted in bold red; a silent mutation was introduced in ssODN (in blue) for ddPCR probe (underlined) specificity and to prevent nicking. (B) ddPCR absolute quantification coupled with two consecutive limiting-dilution enrichment steps were necessary to isolate a 100% corrected line, that is, 100% VIC signal. (C) Sanger sequencing confirmed proper correction of non-sense mutation R423X in line 18C back to wt; this newly corrected line was named 18CW. (D) Outward and inward membrane current detected by patch-clamp recordings; total number of recorded neurons was 15 for both 18C and 18CW; values are presented as mean ± SEM of three independent differentiation experiments, recorded at day 21–25 PNI. *p<0.05 from multiple t test comparison with Holm-Sidak correction.10.7554/eLife.40092.014Figure 5—source data 1.
+**Figure 5.:** (A) Design of gRNAs, ssODNs and ddPCR probes for correction of R423X in ANOS1; one sgRNA for each genomic DNA strand, that is, gRNA- in blue and gRNA +in yellow, was devised in close proximity for the double-nicking system using Cas9D10A; the non-sense mutations in ANOS1 is depicted in bold red; a silent mutation was introduced in ssODN (in blue) for ddPCR probe (underlined) specificity and to prevent nicking. (B) ddPCR absolute quantification coupled with two consecutive limiting-dilution enrichment steps were necessary to isolate a 100% corrected line, that is, 100% VIC signal. (C) Sanger sequencing confirmed proper correction of non-sense mutation R423X in line 18C back to wt; this newly corrected line was named 18CW. (D) Outward and inward membrane current detected by patch-clamp recordings; total number of recorded neurons was 15 for both 18C and 18CW; values are presented as mean ± SEM of three independent differentiation experiments, recorded at day 21–25 PNI. *p<0.05 from multiple t test comparison with Holm-Sidak correction.
 
 The CRISPR-corrected line 18CW exhibited a significant difference in wMFR compared with its isogenic counterpart 18C at 4 week, and no difference from the familial control line 19A (Figure 3D). Moreover, the availability of such isogenic set prompted us to explore more detailed electrophysiological properties using patch-clamp recordings of single neurons in order to reveal any phenotype not detected using MEA. While the advantage of MEA experiments is that continuous live monitoring of neural activity can be measured over multiple weeks, we used patch-clamp electrophysiology on NGN2 neurons between days 21–25 PNI, which provides robust recordings to detect phenotypes, as shown in previous studies (Yi et al., 2016). Furthermore, the increased density of neuronal processes appearing beyond 4 weeks PNI can preclude consistent clean patch-clamp recordings, but this is not an issue with MEA. Using this protocol, we detected significantly lower outward membrane current at 40 mV in the mutant line 18C compared to its isogenic control 18CW (Figure 5D). A significantly higher inward current was also observed in mutant neurons between −40 and 0 mV (Figure 5D). No overt off-target mutations were detectable using our previously-described WGS strategy (Deneault et al., 2018). These results indicate that ANOS1-null iPSC-derived glutamatergic neurons present abnormal sodium and potassium membrane currents that might contribute to ASD development. Notably, these observations underline that some specific electrophysiological phenotypes at the single cell level, for example membrane currents, may not be captured when using MEA monitoring at the cell population level.
 
-## Neuronal hyperactivity in EHMT2/UBE2I Complex-Variant neurons
+### Neuronal hyperactivity in EHMT2/UBE2I Complex-Variant neurons
 
 Lines 38B and 38E from participant 6-0393-003 carry two ASD-relevant variants; a de novo missense E78K in UBE2I and a de novo frameshift variant K1164Nfs in EHMT2 (Figure 1L and Table 1). MEA recordings showed a significantly higher wMFR (Figure 3B) and network burst frequency (Figure 6A) from week 4 to 8 PNI compared to their related control line 37E. Interestingly, the profile of the wMFR curve (Figure 3B) was similar to that of the MFR curve (Figure 3—figure supplement 1A), indicating that cell survival or expansion is not a major contributor to the difference observed in neuronal activity. To ensure that this hyperactivity was synaptic and not only intrinsic to the neurons, we performed patch-clamp recordings, at day 21–25 PNI to avoid the increased density of neuronal processes that impacts the ability to obtain clean recordings, as stated previously. Intrinsic properties, for example capacitance and resistance, did not vary significantly (Figure 6B), indicating comparable maturity levels between lines 37E and 38E. While spontaneous excitatory post-synaptic current (sEPSC) amplitude was unchanged, sEPSC frequency was significantly higher in mutant neurons compared to controls (Figure 6B). These observations suggest that a potential loss-of-function of UBE2I and/or EHMT2 is involved in ASD-related neuronal dysfunction.
 
-## Evidence of functional impact of EHMT2, but not UBE2l variants
+![Figure 6.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig6-v1.jpg)
+
+**Figure 6.:** (A) Network burst frequency was recorded using MEA from the EHMT2/UBE2I family from weeks 4–8 PNI; values are presented as mean ± SEM of several technical and biological replicates, as presented in Supplementary file 3; *p<0.05 from multiple t test comparison with Holm-Sidak correction. (B) Patch-clamp recordings of two selected lines, that is, 37E (control) and 38E (mutant); values are presented as mean ± SEM of 14 different neurons from two independent differentiation experiments; *p<0.05 from from unpaired t test two-tailed. (C) Western blot showing a decrease in EHMT2 protein levels in mutant neurons (38B and 38E) compared to their respective control neurons (37E). (D) MEA recordings of the isogenic pair 19–2 and 19–2-EHMT2StopTag/+ iPSC-derived neurons from weeks 4–11 PNI; values are presented as mean ± SEM of eight different wells for each three independent differentiation experiments; †note that the same data for control 19–2 was used in Figure 4B since it was generated within the same experiments, that is, plates 26, 33 and 37 (see Supplementary file 3); *p<0.05 from multiple t test comparison with Holm-Sidak correction at week 11 (weighted mean firing rate) and weeks 9–11 (network burst frequency). (E) Western blot showing a decrease in EHMT2 protein levels in mutant neurons 19–2-EHMT2StopTag/+ compared to their respective control (ctrl) neurons 19–2; actin-beta (ACTB) was used as a loading control and the relative intensity of each band is indicated below the blots; pF, picofarad; MΩ, megaohm; Hz, hertz; pA, picoampere.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (i) Disruption of a yeast gene gives rise to a yeast phenotype (e.g., decreased fitness). (ii) The yeast phenotype is rescued by wild-type human alleles. (iii) Functional effects of human variants are evaluated based on their ability to rescue the phenotype relative to the wild type allele. A human variant may be deemed pathogenic if it cannot rescue the phenotype as well as wild type. Right panel shows growth assays on solid media for UBE2I[E78K] variant. The yeast cells were temperature-sensitive mutants of the yeast UBC9 gene, expressing either wild type or E78K allele of the UBE2I gene, or the GFP gene as a control. Five-fold serial dilutions of yeast cells were spotted onto plates and incubated at 24°C and 36°C for 2 days.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40092/elife-40092-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Representative raster plots of the first 120 sec of a 300 sec total MEA recording of the control 19–2 and the 19–2-EHMT2 heterozygous knockout lines, at week 11 PNI; a network burst (pink box or line) was identified as a minimum of 10 spikes, with a maximum inter-spike interval of 100 ms, detected by at least four different electrodes; sec, second; ms, millisecond. (B) Patch-clamp recordings of the isogenic pair 19–2 and 19–2-EHMT2StopTag/+ iPSC-derived neurons at day 21–25 PNI; values are presented as mean ± SEM of 21 different neurons from three independent differentiation experiments. pF, picofarad; MΩ, megaohm; Hz, hertz; pA, picoampere; *p<0.05 from from unpaired t test two-tailed.
+
+### Evidence of functional impact of EHMT2, but not UBE2l variants
 
 Since our attempts to edit the variants E78K in UBE2I and K1164Nfs in EHMT2 had not been successful, we sought to determine the potential contribution of E78K in UBE2I to the observed synaptic hyperactivity. To estimate the damaging potential of this missense variant on the function of UBE2I protein, we utilized a Saccharomyces cerevisiae complementation assay that was previously developed as a validated surrogate genetic system to predict the pathogenicity of diverse human variants (Sun et al., 2016). In this assay, lethality of a temperature-sensitive allele of the yeast UBC9 gene (ortholog of human UBE2I) is rescued by expressing a functional version of human UBE2I. Several missense variants in UBE2I have been accurately predicted as deleterious at conserved positions, or benign at other positions (Zhang et al., 2017). Therefore, we used this complementation assay to test the consequence of our variant E78K, and found no effect of this variant on the function of human UBE2I (Figure 6—figure supplement 1). Because these results disfavor involvement of the UBE2I variant E78K in the neuronal hyperactivity observed in Figures 3B,F and and 6A–B, we excluded UBE2I from subsequent experiments and further explored a potential causal link between EHMT2 and synaptic activity.
 
 Interestingly, evaluation of EHMT2 protein abundance revealed a clear decrease in the mutant lines 38B and 38E, as compared to the control 37E (Figure 6C). This suggests that a reduced expression of EHMT2 increases spontaneous spiking activity and sEPSC frequency of glutamatergic neurons.
 
-## EHMT2-/+ CRISPR-isogenic pair confirms neuronal hyperactivity
+### EHMT2-/+ CRISPR-isogenic pair confirms neuronal hyperactivity
 
 Since the prediction of damage extent of the frameshift variant K1164Nfs on the function of EHMT2 may not be accurate, we used our StopTag insertion strategy in iPSC line 19–2, and targeted exon 20 of the transcript ENST00000375537.8 of EHMT2 in order to disrupt its expression. In this new isogenic line, wMFR and network burst frequency were also increased in iPSC-derived 19–2-EHMT2StopTag/+ neurons compared to control 19–2, around week 10 PNI and beyond (Figure 6D and Figure 6—figure supplement 2A). This increased activity in mutant neurons occurred later than that observed in the familial lines 38B/E, possibly due to the more active 19–2 line. Accordingly, EHMT2 protein levels were reduced by half in mutant cells (Figure 6E). We also performed patch-clamp recordings on these neurons at day 21–25 PNI, as above. We did not detect any significant change in sEPSC frequency and amplitude at this earlier timepoint, similar to the MEA experiment. However, intrinsic properties showed a significant increase in capacitance and decrease in input resistance in mutant cells (Figure 6—figure supplement 2B). These observations suggest that the mutant neurons at 3–4 weeks PNI potentially have a faster maturation rate, however, this phenotype is most pronounced in the hyperactivity recorded by MEAs later at 9–11 weeks PNI. These results support the conclusion that the inactivation of one allele of EHMT2 significantly increases spontaneous network activity of excitatory neurons, with possible effects on the neuronal maturation process.
 
@@ -134,64 +503,64 @@ Overall, this study highlights a way to improve the scalability of testing multi
 
 ## Materials and methods
 
-## Ethics for human experiments
+### Ethics for human experiments
 
 Under the approval of the Canadian Institutes of Health Research Stem Cell Oversight Committee and the Research Ethics Board (REB) at the Hospital for Sick Children, Toronto, Canada, iPSCs were generated from dermal fibroblasts or CD34 +blood cells. Three different informed consent forms for iPSC derivation and publication were obtained: i) Research Consent Form for Parent/Legal Guardians (of an individual with a neurologic condition); ii) Research Consent Form for Unaffected Individuals; iii) Assent form (for individuals with a neurologic condition). These consent forms describe in details the purpose of the research, the description of the research, the potential harms, the potential benefits, confidentiality, storage of the research samples, participation, reimbursement, sponsorship, and declaration of conflict of interest; REB approval file 1000012015.
 
-## Skin fibroblasts culture
+### Skin fibroblasts culture
 
 Skin-punch biopsies were obtained from the upper back area by a clinician at The Hospital for Sick Children. Samples were immersed in 14 ml of ice-cold Alpha-MEM (Wisent Bioproducts) supplemented with penicillin 100 Units/ml and streptomycin 100 μg/ml (ThermoFisher), and transferred immediately to the laboratory at The Centre for Applied Genomics (TCAG). Each biopsy was cut into ~1 mm3 pieces with disposable scalpel in a 60 mm dish. 5 ml of collagenase 1 mg/ml (Sigma, Canada) was added and the dish was placed in 37°C incubator for 1:45 hr. Skin pieces and collagenase were then transferred to a 15 ml tube, and centrifuged at 300 g for 10 min. Supernatant was removed, 5 ml of trypsin 0.05%/EDTA 0.53 mM (Wisent Bioproducts) was added, and the mix was pipetted up and down several times to break up tissue and placed in 37°C incubator for 30 min. After incubation, the mix was centrifuged at 300 g for 10 min, and supernatant was removed leaving 1 ml. The pellet was pipetted up and down vigorously to break to the pieces without creating bubbles. The mix was transferred in a T-12.5 flask along with 5 ml of Alpha-MEM, 15% Fetal Bovine Serum (FBS; Wisent Bioproducts), penicillin 100 Units/ml and streptomycin 100 μg/ml (ThermoFisher), and placed in 37°C incubator for about a week until 100% confluence. Cultured cells were fed every 5–7 days if not confluent. Once confluent, cells were passed into three 100 mm dishes to expand, and frozen in liquid nitrogen.
 
-## Reprogramming fibroblasts using integrative virus
+### Reprogramming fibroblasts using integrative virus
 
 Reprogramming of skin fibroblasts was performed using retroviral and lentiviral vectors. Retroviral vectors encoding POU5F1, SOX2, KLF4, MYC, and lentiviral vectors encoding the pluripotency reporter EOS-GFP/PuroR were used and obtained as described (Hotta et al., 2009).
 
-## Reprogramming fibroblasts using non-integrative Sendai virus
+### Reprogramming fibroblasts using non-integrative Sendai virus
 
 Reprogramming of fibroblasts via Sendai virus was performed at the Centre for Commercialization of Regenerative Medicine (CCRM) using CytoTune-iPS 2.0 Sendai Reprogramming Kit (ThermoFisher). Fibroblasts were cultured in fibroblast expansion media (Advanced DMEM; 10% FBS; 1X L-Glutamine; 1X pen/strep – Thermo Fisher). The desired number of wells for reprogramming from a 24-well plate was coated with 0.1% gelatin. Fibroblasts were dissociated using Trypsin (ThermoFisher) and allowed to settle overnight. Virus multiplicity of infection (MOI) was calculated and viruses combined according to number of cells available for reprogramming and manufacturer’s protocol. 24 hr after transduction, media was changed to wash away viruses. Media was additionally changed on day 3 and 5 after transduction. 6 days after transduction, 6-well plates were coated with Matrigel(Corning). Cells were removed from the 24-well plate using Accutase (ThermoFisher) and plated on Matrigel in expansion media. 24 hr later, media was replaced with E7 media (StemCellTechnologies). Cells were monitored and fed daily with E7. Once colonies were of an adequate size and morphology to pick, individual colonies were picked and plated into E8 media (StemCellTechnologies). Clones growing well were further expanded and characterized using standard assays for pluripotency, karyotyping, genotyping and mycoplasma testing. Directed differentiation was performed using kits for definitive endoderm, neural and cardiac lineages (all ThermoFisher).
 
-## Peripheral blood mononuclear sells (PBMCs) isolation from peripheral blood and enrichment of CD34 +cells
+### Peripheral blood mononuclear sells (PBMCs) isolation from peripheral blood and enrichment of CD34 +cells
 
 Whole peripheral blood was processed at CCRM using Lymphoprep (StemCellTechnologies) in a SepMate tube (StemCellTechnologies) according to manufacturer’s instructions. The sample was centrifuged (10 min at 1200 g). The top layer containing PBMCs was collected and mixed with 10 mL of the PBS/FBS mixture and centrifuged (8 min at 300 g). The PBMC’s collected at the bottom of the tube were washed, counted and resuspended in PBS/FBS mixture. CD34 +cells were then isolated using the Human Whole Blood/Buffy Coat CD34 +Selection kit according to manufacturer’s instructions (StemCellTechnologies). Isolated cells were expanded in StemSpan SFEM II media (StemCellTechnologies) and StemSpan CD34 +Expansion Supplements (StemCellTechnologies) prior to reprogramming.
 
-## Reprogramming PBMC using non-Integrative Sendai virus
+### Reprogramming PBMC using non-Integrative Sendai virus
 
 Reprogramming of CD34 +PBMCs was performed at CCRM using CytoTune-iPS 2.0 Sendai Reprogramming Kit. Expanded cells were spun down and resuspended in StemSpan SFEM II media and StemSpan CD34 +Expansion Supplements, and placed in a single well of a 24-well dish. Virus MOI was calculated and viruses combined according to number of cells available for reprogramming and manufacturer’s protocol. The virus mixture was added to cells, and washed off 24 hr after infection. 48 hr after viral delivery, cells were plated in 6-well plates in SFII and transitioned to ReproTESR for the duration of reprogramming. Once colonies were of an adequate size and morphology to pick, individual colonies were picked and plated into E8. Clones growing well were further expanded and characterized as explained above.
 
-## iPSC maintenance
+### iPSC maintenance
 
 All iPSC lines were maintained on matrigel (Corning) coating, with complete media change every day in mTeSR (StemCellTechnologies). ReLeSR (StemCellTechnologies) was used for passaging. Accutase (InnovativeCellTechnologies) and 10 μM Rho-associated kinase (ROCK) inhibitor (Y-27632; StemCellTechnologies) were used for single-cell dissociation purposes.
 
-## Gene editing
+### Gene editing
 
 For point mutation correction in 18C line, we used the type II CRISPR/Cas9 double-nicking (Cas9D10A) system with two guide RNA (gRNAs) to reduce off-target activity. We devised the gRNA sequences using tools available at http://crispr.mit.edu/. We designed a HDR-based method using a synthesized single-stranded oligonucleotide (ssODN) template to replace the point mutation with the reference nucleotide. To prevent damage to the correct sequence, a silent mutation was introduced in the ssODN close to the proto-adjacent motif (PAM) of the reverse gRNA (gRNA-), which commands Cas9D10A to nick the plus strand, given that ssODN was synthesized as plus strand. All the CRISPR machinery was introduced into iPSC by nucleofection. Screening for correction of the appropriate base pair was based on absolute quantification of allele frequency using droplet digital PCR (ddPCR). Enrichment of corrected cells was obtained through sib-selection step cultures in 96-well plate format, as adapted from (Miyaoka et al., 2014), until a well containing 100% of corrected alleles was identified. For insertion of premature stop codon in 19–2 cells, ribonucleoprotein (RNP) complex was used as a vector to deliver the CRISPR machinery, along with one sgRNA and Cas9 nuclease, for each target gene. Design of sgRNA and ssODN for HDR, nucleofection and isolation of edited lines were described (Deneault et al., 2018).
 
-## Lentivirus production
+### Lentivirus production
 
 7.5 × 106 HEK293T cells were seeded in a T-75 flask, grown in 10% fetal bovine serum in DMEM (Gibco). The next day, cells were transfected using Lipofectamine 2000 with plasmids for gag-pol (10 μg), rev (10 μg), VSV-G (5 μg), and the target constructs FUW-TetO-Ng2-P2A-EGFP-T2A-puromycin or FUW-rtTA (15 μg; gift from T.C. Südhof laboratory) (Zhang et al., 2013). Next day, the media was changed. The day after that, the media was spun down in a high-speed centrifuge at 30,000 g at 4°C for 2 hr. The supernatant was discarded and 50 μl PBS was added to the pellet and left overnight at 4°C. The next day, the solution was triturated, aliquoted and frozen at −80°C.
 
-## Differentiation into glutamatergic neurons
+### Differentiation into glutamatergic neurons
 
 5 × 105 iPSCs/well were seeded in a matrigel-coated 6-well plate in 2 ml of mTeSR supplemented with 10 μM Y-27632. Next day, media in each well was replaced with 2 ml fresh media plus 10 μM Y-27632, 0.8 μg/ml polybrene (Sigma), and the minimal amount of NGN2 and rtTA lentiviruses necessary to generate 100% GFP +cells upon doxycycline induction, depending on prior titration of a given virus batch. The day after, virus-containing media were replaced with fresh mTeSR, and cells were expanded until near-confluency. Newly generated ‘NGN2-iPSCs’ were detached using accutase, and seeded in a new matrigel-coated 6-well plate at a density of 5 × 105 cells per well in 2 ml of mTeSR supplemented with 10 μM Y-27632 (day 0 of differentiation). Next day (day 1), media in each well was changed for 2 ml of CM1 [DMEM-F12 (Gibco), 1x N2 (Gibco), 1x NEAA (Gibco), 1x pen/strep (Gibco), laminin (1 μg/ml; Sigma), BDNF (10 ng/μl; Peprotech) and GDNF (10 ng/μl; Peprotech) supplemented with fresh doxycycline hyclate (2 μg/ml; Sigma) and 10 μM Y-27632. The day after (day 2), media was replaced with 2 ml of CM2 [Neurobasal media (Gibco), 1x B27 (Gibco), 1x glutamax (Gibco), 1x pen/strep, laminin (1 μg/ml), BDNF (10 ng/μl) and GDNF (10 ng/μl)] supplemented with fresh doxycycline hyclate (2 μg/ml) and puromycin (5 μg/ml for 19–2-derived cells, and 2 μg/ml for 50B-derived cells; Sigma). Media was replaced with CM2 supplemented with fresh doxycycline hyclate (2 μg/ml). The same media change was repeated at day 4. At day 6, media was replaced with CM2 supplemented with fresh doxycycline hyclate (2 μg/ml) and araC (10 μM; Sigma). Two days later, these day eight post-NGN2-induction (PNI) neurons were detached using accutase and ready to seed for subsequent experiments, as described below.
 
-## Multi-electrode array (MEA)
+### Multi-electrode array (MEA)
 
 48-well opaque-bottom MEA plates (Axion Biosystems, M768-KAP-48), 16 electrodes per well, were coated with filter-sterilized 0.1% polyethyleneimine solution in borate buffer pH 8.4 for 1 hr at room temperature, washed four times with water, and dried overnight. 120,000 ‘day8-dox’ neurons/well were seeded in a 5 ul drop of CM2 media at the centre of each well, then covered with 250 μl CM2 media after one hour in the incubator. The day after, 5,000 mouse astrocytes/well were seeded on top of neurons in 50 μl/well CM2 media. Astrocytes were prepared from postnatal day 1 CD-1 mice as described (Kim and Magrané, 2011). Media was half-changed once a week with CM2 media. Every week post-seeding, the electrical activity of the MEA plates was recorded using the Axion Maestro MEA reader (Axion Biosystems). The heater control was set to warm up the reader at 37°C. Each plate was first incubated for 5 min on the pre-warmed reader, then real-time spontaneous neural activity was recorded for 5 min using AxIS 2.0 software (Axion Biosystems). A bandpass filter from 200 Hz to 3 kHz was applied. Spikes were detected using a threshold of 6 times the standard deviation of noise signal on electrodes.
 
 Offline advanced metrics were re-recorded and analysed using Axion Biosystems Neural Metric Tool. An electrode was considered active if at least five spikes were detected per minute. Single electrode bursts were identified as a minimum of five spikes with a maximum interspike interval (ISI) of 100 milliseconds. Network bursts were identified as a minimum of 10 spikes with a maximum ISI of 100 milliseconds covered by at least 25% of electrodes in each well. No non-active well was excluded in the analysis. After the last reading, each well was treated with three synaptic antagonists: GABAA receptor antagonist picrotoxin (PTX; Sigma) at 100 μM, AMPA receptor antagonist 6-cyano-7-nitroquinoxaline-2,3-dion (CNQX; Sigma) at 60 μM, and sodium ion channel antagonist tetrodotoxin (TTX; Alomone labs) at 1 μM. The plates were recorded consecutively, 5–10 min after addition of the antagonists. A 60 min recovery period was allowed in the incubator at 37°C between each antagonist treatment and plate recording.
 
-## Patch-clamp recordings
+### Patch-clamp recordings
 
 Day 3 PNI neurons were replated at a density of 100,000/well of a poly-ornithin/laminin coated coverslips in a 24-well plate with CM2 media. On day 4, 50,000 mouse astrocytes were added to the plates and cultured until day 21–28 PNI for recording. At day 10, CM2 was supplemented with 2.5% FBS in accordance with (Zhang et al., 2013). Whole-cell recordings (BX51WI; Olympus) were performed at room temperature using an Axoclamp 700B amplifier (Molecular Devices) from borosilicate patch electrodes (P-97 puller; Sutter Instruments) containing a potassium-based intracellular solution (in mM): 123 K-gluconate, 10 KCL, 10 HEPES; 1 EGTA, 2 MgCl2, 0.1 CaCl2, 1 Mg-ATP, and 0.2 Na4GTP (pH 7.2). 0.06% sulpharhodamine dye was added to select neurons for visual confirmation of multipolar neurons. Composition of extracellular solution was (in mM): 140 NaCl, 2.5 KCl, 1 1.25 NaH2PO4, 1 MgCl2, 10 glucose, and 2 CaCl2 (pH 7.4). Whole cell recordings were clamped at −70 mV using Clampex 10.6 (Molecular Devices), corrected for a calculated −10 mV junction potential and analyzed using the Template Search function from Clampfit 10.6 (Molecular Devices). Following initial breakthrough and current stabilization in voltage clamp, the cell was switched to current clamp to monitor initial spiking activity and record the membrane potential (cc = 0,~1 min post-breakthrough). Bias current was applied to bring the cell to ~70 mV whereby increasing 5 pA current steps were applied (starting at −20 pA) to generate the whole cell resistance and to elicit action potentials. Data were digitized at 10 kHz and low-pass filtered at 2 kHz. Inward and outward currents were recorded in whole-cell voltage clamp in response to consecutive 10 mV steps from −90 mV to +40 mV.
 
-## Yeast complementation assay
+### Yeast complementation assay
 
 The method for the yeast complementation assay was described previously (Sun et al., 2016).
 
-## Antibodies and western blotting
+### Antibodies and western blotting
 
 Cells were washed in ice-cold PBS and total protein was extracted in RIPA supplemented with proteinase inhibitor cocktail, and homogenized. Equivalent protein mass was loaded on gradient SDS-PAGE (4–12%) and transferred to Nitrocellulose membrane Hybond ECL (GE HealthCare). Primary antibodies used were rabbit anti-CNTN5 (Novus, NBP1-83243) and rabbit anti-EHMT2/G9A (Abcam, ab185050). HRP-conjugated secondary antibodies (Invitrogen) were used and the membranes were developed with SuperSignal West Pico Chemiluminescent Substrate (Pierce). Images acquired using ChemiDoc MP (BioRad) and quantified using software Imagelab v4.1 (BioRad). Western Blots were repeated at least twice for each biological replicate.
 
-## Mycoplasma testing
+### Mycoplasma testing
 
 All cell lines were regularly tested for presence of mycoplasma using a standard method (Otto et al., 1996).

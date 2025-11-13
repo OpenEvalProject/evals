@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.43627.001 Metastasis-initiating cells dynamically adapt to the distinct microenvironments of different organs, but these early adaptations are poorly understood due to the limited sensitivity of in situ transcriptomics. We developed fluorouracil-labeled RNA sequencing (Flura-seq) for in situ analysis with high sensitivity. Flura-seq utilizes cytosine deaminase (CD) to convert fluorocytosine to fluorouracil, metabolically labeling nascent RNA in rare cell populations in situ for purification and sequencing. Flura-seq revealed hundreds of unique, dynamic organ-specific gene signatures depending on the microenvironment in mouse xenograft breast cancer micrometastases. Specifically, the mitochondrial electron transport Complex I, oxidative stress and counteracting antioxidant programs were induced in pulmonary micrometastases, compared to mammary tumors or brain micrometastases. We confirmed lung metastasis-specific increase in oxidative stress and upregulation of antioxidants in clinical samples, thus validating Flura-seq’s utility in identifying clinically actionable microenvironmental adaptations in early metastasis. The sensitivity, robustness and economy of Flura-seq are broadly applicable beyond cancer research.
+Metastasis-initiating cells dynamically adapt to the distinct microenvironments of different organs, but these early adaptations are poorly understood due to the limited sensitivity of in situ transcriptomics. We developed fluorouracil-labeled RNA sequencing (Flura-seq) for in situ analysis with high sensitivity. Flura-seq utilizes cytosine deaminase (CD) to convert fluorocytosine to fluorouracil, metabolically labeling nascent RNA in rare cell populations in situ for purification and sequencing. Flura-seq revealed hundreds of unique, dynamic organ-specific gene signatures depending on the microenvironment in mouse xenograft breast cancer micrometastases. Specifically, the mitochondrial electron transport Complex I, oxidative stress and counteracting antioxidant programs were induced in pulmonary micrometastases, compared to mammary tumors or brain micrometastases. We confirmed lung metastasis-specific increase in oxidative stress and upregulation of antioxidants in clinical samples, thus validating Flura-seq’s utility in identifying clinically actionable microenvironmental adaptations in early metastasis. The sensitivity, robustness and economy of Flura-seq are broadly applicable beyond cancer research.
 
 ## Introduction
 
@@ -38,13 +38,21 @@ Here, we describe the development of a CD-based method for in situ transcriptomi
 
 ## Results
 
-## 5-FU tagging allows isolation and quantitation of variable abundance transcripts
+### 5-FU tagging allows isolation and quantitation of variable abundance transcripts
 
 Cytosine deaminase (CD) is a key enzyme of the pyrimidine salvage pathway in fungi and prokaryotes, but is absent in mammalian cells, which instead use cytidine deaminase for the same purpose (Mullen et al., 1992). In addition to converting cytosine to uracil, CD can also convert 5-fluorocytosine (5-FC), a non-natural pyrimidine, to 5-fluorouracil (5-FU). 5-FU is endogenously converted to fluorouridine triphosphate (F-UTP), which is incorporated into RNA (Figure 1A,B). An antibody-based purification step that specifically captures the 5-FU-tagged RNA would yield a sample suitable for sequencing. Although 5-FU or the combination of CD expression and 5-FC treatment are cytotoxic in some cells (Austin and Huber, 1993; Kievit et al., 1999; Longley et al., 2003), such toxicity requires more than 7 days of treatment (Hamstra et al., 2004; Kaliberov et al., 2006). We hypothesized that short-term 5-FC treatment in CD-expressing cells may avert such toxic effects and minimize transcriptional distortion, thus allowing in situ transcriptomic profiling of rare cell populations.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram showing RNA labeling and isolation using CD and 5-FC; (B) Chemical reactions steps involved in the labeling of RNA using CD and 5-FC; (C) Enrichment of mRNAs immunopurified by anti-BrdU antibody in cells expressing CD relative to WT cells and normalized to their corresponding inputs after 5-FC treatment for the indicated times, as measured by qRT-PCR for the representative genes (n = 3,±S.E.); (D) Schematic diagram of the constructs used for inducible expression of UPRT and/or CD, and the experimental design of Flura-tagging; (E) MDA231 cells expressing RFP-IRES-CD or UPRT-T2A-RFP-IRES-CD were co-cultured with unmodified control cells, treated with 5-FC, and Flura-tagging was assessed by BrdU immunostaining (n = 3, Scale bar, 20 μM). Arrow indicates cells lacking CD expression but stained with BrdU antibody; (F) 100, 500 or 1000 human MDA231 cells expressing CD/UPRT were co-cultured with 106 mouse 4T1 cells, treated with 5-FC for 12 hr, and 5-FU-tagged RNAs were immunoprecipitated. The fold enrichment of the indicated representative human genes over mouse housekeeping genes (mHPRT1) was measured by qRT-PCR (n = 3 ± S.E.). p-Values were calculated by unpaired two-tailed student’s t test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Anti-BrdU antibody detects CD-based 5-fluorouracil (5-FU) derivatives but not 5-fluorocytosine (5-FC) derivatives. CD-expressing or control 293 T cells were treated with either 5-FC or 5-FU for 24 hr, followed by immunofluorescent staining with anti-BrdU antibody (n = 3, Scale bar, 20 μM); (B) Expression of UPRT bypasses the gradient-dependent export of intracellular 5-FU from cells expressing CD and treated with 5-FC. Schematic diagram of the steps involved in labeling RNAs using 5-FU tagging. Molecules that can diffuse across the cell membranes along a concentration gradient are labeled in green, membrane non-permeable molecules are labeled in red. Uridine phosphorylase (UP) and Uridine kinase (UK) are enzymes expressed in mammalian cells (labeled in blue) that act on 5-FU or its derivative in the indicated reaction steps.
+
 We expressed S. cerevisiae CD in human embryonic kidney 293 T cells (293 T-CD cells), and treated the cells with 5-FC to yield intracellular 5-FU, which is incorporated into newly synthesized RNA. Antibodies against bromodeoxyuridine (BrdU) crossreact with other halogenated uridines incorporated into nucleic acids (Aten et al., 1992). Accordingly, untransfected control cells incubated with 5-FU showed positive anti-BrdU immunofluorescence, whereas cells incubated with 5-FC did not (Figure 1—figure supplement 1A). The anti-BrdU antibody also stained 293 T-CD cells when treated with 5-FC, demonstrating that the antibody binds to exogenous or CD-generated 5-FU derivatives but not 5-FC derivatives (Figure 1—figure supplement 1A). To test the specificity and efficiency of RNA isolation, we immunoprecipitated messenger RNA (mRNA) from 5-FU-labeled cells with the anti-BrdU antibody and determined the mRNA levels of representative high expression genes (glyceraldehyde 3-phosphate dehydrogenase, GAPDH; tubulin beta chain, TUBB) and low expression genes (chemokine CX3C motif ligand 1, CXC3L1) by reverse transcriptase-polymerase chain reaction (RT-PCR). In 293 T-CD cells, these mRNAs were detectable after 2 hr of treatment with 5-FC, and the levels continued to increase for up to 24 hr (Figure 1C). The relative enrichment of the RNAs was two to three orders of magnitude higher in 293 T-CD cells compared to control 293 T cells (Figure 1C). These results demonstrate that 5-FU tagging allows specific labeling and purification of newly synthesized transcripts.
 
-## Cell specificity of RNA Flura-tagging
+### Cell specificity of RNA Flura-tagging
 
 5-FU can be transported across cell membranes based on its concentration gradient (Ojugo et al., 1998; Wohlhueter et al., 1980). Therefore, we determined whether 5-FU labeling of RNAs using this method would be restricted to CD-expressing cells or collaterally affect neighboring cells. We generated CD-expressing derivatives of MDA-MB-231 (MDA231) cells, a cell line derived from the pleural fluid of a patient with highly metastatic, triple hormone receptor-negative breast cancer (Cailleau et al., 1974). The CD-expressing derivative cells, MDA231-CD, were co-cultured with unmodified MDA231 cells (Figure 1D), incubated with 5-FC, and the 5-FU labeling of individual cells was determined based on anti-BrdU immunofluorescence. The co-cultures showed 5-FU-labeling not only in MDA231-CD cells but also in unmodified MDA231 cells (Figure 1E).
 
@@ -54,7 +62,7 @@ Next, we determined whether this 5-FU-tagging method, ‘Flura-tagging’, could
 
 To identify potential transcriptional alterations caused by Flura-tagging, we compared the transcriptome of MDA231-CD/UPRT cells treated with two different concentrations of 5-FC (50 μM and 250 μM), with that of untreated cells that do not express CD/UPRT, using global RNA sequencing analysis (RNA-seq). Over 99% of ~20,000 analyzed genes showed statistically similar expression with 50 µM or 250 µM 5-FC (Supplementary file 1) indicating that Flura-tagging introduces minimal alteration in the basal transcriptomes of cells in our experimental conditions.
 
-## Flura-tagging system effectively captures signal dependent change in gene expression
+### Flura-tagging system effectively captures signal dependent change in gene expression
 
 To determine whether Flura-tagging could be used to analyze the transcriptional response to extrinsic regulatory signals, we examined the transcriptional response to TGF-β, a pleiotropic cytokine that regulates the expression of many genes involved in diverse cellular processes (David and Massagué, 2018). We used the TGF-β response of MDA231 cells (Padua et al., 2008) as an indicator of the sensitivity and fidelity of our method. MDA231-CD/UPRT cells were treated with 5-FC and either TGF-β or the TGF-β receptor kinase inhibitor SB-505124 (SB). We subjected total RNA from MDA231 cells and immunoprecipitated 5-FU-tagged RNA from MDA231-CD/UPRT cells to RNA-seq analysis. In MDA231 cells, 176 genes showed either an increase or decrease of more than two-fold in transcript levels upon TGF-β treatment (Supplementary file 2). RNA-Seq analysis of Flura-tagged RNA samples (‘Flura-seq’) captured the TGF-β transcriptional response of MDA231 cells with high accuracy and fidelity, compared to the RNA-seq control (Figure 2A,B; Supplementary file 2). It is also noteworthy that Flura-seq showed an enhancement in the fold change of the majority of TGF-β induced genes compared to the control (Figure 2B–D). This is possibly because Flura-seq only detects newly synthesized transcripts, whereas RNA-seq accounts for the total transcripts and thus dilutes the transcriptional response to an acute TGF-β stimulus. On the other hand, Flura-seq identified 575 genes differentially expressed upon TGF-β treatment (Supplementary file 2). Comparison of the genes uniquely identified by Flura-seq (2.5 hr post TGF-β treatment) to the differential gene expression data sets in MDA231 cells 6 hr post TGF-β treatment (Tufegdzic Vidakovic et al., 2015) showed that 83 of the genes identified only by Flura-seq were induced by TGF-β as detected by RNA-seq at later time points, suggesting that Flura-seq captures early signal-induced gene expression that is missed by RNA-seq due to dilution by the preexisting basal mRNA pool. Collectively, these results show that Flura-seq can accurately capture global changes in gene expression in response to stimuli.
 
@@ -62,9 +70,17 @@ To determine whether Flura-tagging could be used to analyze the transcriptional 
 
 **Figure 2.:** (A–D) MDA231 cells expressing CD/UPRT were treated with 5-FC for 30 min prior to TGF-β or SB-505124 (SB, a TGF-β receptor inhibitor) treatment for 150 min. (A) Change in gene expression in TGF-β-treated cells relative to SB-treated cells as determined by RNA-seq of total RNA from control cells or 5-FU-tagged RNA from Flura-tagged cells. The heat map includes all the genes whose expression changed by more than 2-fold (p<0.01) in response to TGF-β in control cells; (B) Cartesian plot of the data in Figure 2B. Each dot represents a gene; typical TGF-β-responsive genes are highlighted (n = 3); (C) Violin plot of the genes induced by TGF-β as identified by RNA-seq and Flura-seq, and Flura-seq only; (D) Expression of the indicated representative TGF-β-induced genes was determined by qRT-PCR in total RNA and in anti-BrdU immunoprecipitate (n = 3,±S.E.). p-Values were calculated by unpaired two-tailed student’s t test.
 
-## Flura-seq analysis of rare metastatic cells in situ
+### Flura-seq analysis of rare metastatic cells in situ
 
 Next, we determined whether Flura-seq could be used to characterize transcriptomics in situ from a small number of cancer cells disseminated in an intact organ that would be challenging to achieve using existing technologies. MDA231 cells expressing a GFP-luciferase fusion protein for imaging and bioluminescence analysis and Dox-inducible CD/UPRT for Flura-seq analysis, were inoculated into the tail vein of Foxn1nu immunodeficient mice to allow colonization of the pulmonary parenchyma (Figure 3A). A small proportion of the injected cells survive in the lungs and initiate metastatic outgrowth (Minn et al., 2005). At day 31 after inoculation, the cancer cell population was present as micrometastatic colonies throughout the pulmonary parenchyma (Figure 3—figure supplement 1A,B). In tissue sections, the size distribution of these colonies ranged from 112 to 877 cells per cluster, with a mean value of 333 cells (Figure 3—figure supplement 1C). CD/UPRT expression was induced by doxycycline treatment on day 28, and mice were administered 5-FC (250 mg/kg) and thymine (125 mg/kg) on day 31 for 4 hr to 12 hr before harvesting the lungs for immunoprecipitation of 5-FU-tagged RNAs (Figure 3A). The 5-FC dose was selected based on the non-toxic dose of the structurally related thiouracil in mice (250 mg/kg) that has been used for RNA tagging with thiouracil (Gay et al., 2014).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic diagram of lung colonization xenograft assay used for evaluation of Flura-tagging in vivo. Athymic mice were injected through the tail vein with 50,000 MDA231 cells expressing CD/UPRT and GFP-luciferase. After 4 weeks, mice were treated with doxycycline (3 days) to induce CD/UPRT expression in the disseminated cancer cells, and injected with 5-FC. Lungs were harvested 4 hr to 12 hr later, and subjected to immunopurification of 5-FU-tagged RNA for RNA-seq analysis (Flura-seq); (B) Comparison of relative fold enrichment of Flura-tagging and TU-tagging in vivo after immunoprecipitation. Mice with CD/UPRT expressing MDA231 lung metastases were injected with either 5-FC or TU for 12 hr, lungs were harvested. Flura-tagged RNA was purified by immunoprecipitation, and TU-tagged RNA was biotinylated and purified by streptavidin beads. The relative fold enrichment of representative human housekeeping genes relative to representative murine housekeeping genes (mHPRT1, mLDH1, mPGK1 and mGAPDH), normalized to their corresponding inputs, were determined by qRT-PCR (n = 5,±S.E.); (C) Flura-seq specifically enriches for 5-FU-tagged human transcripts from lung micrometastases. 5-FU-tagged RNA from mouse lungs bearing CD/UPRT-expressing MDA231 cells and treated with 5-FC for 4 hr or 12 hr were immunopurified and sequenced. RNA reads were aligned to a hybrid genome containing the human and mouse genomes. The percentage of aligned reads mapped to human genome for the Flura-seq samples and the corresponding unprecipitated input is shown (n = 2,±S.E.); (D) Number of human and mouse genes identified by Flura-seq (samples with 4 hr of 5-FC treatment) at different fold enrichment cutoffs relative to the corresponding unprecipitated inputs (n = 2); (E) Comparison of the workflow, limitations and sensitivity of Flura-seq versus other methods for transcriptomic analysis of rare cell populations in tissues. p-Values were calculated by unpaired two-tailed student’s t test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative H and E stained sections of mouse lungs harboring micrometastases (arrows) used in Flura-tagging experiments. Inset shows higher magnification. Scale bar, 2 mm (top), 100 μM (bottom); (B) Representative lung micrometastases. MDA231 cells were stained with anti-GFP antibody, endothelial cells with anti-CD31 antibody and nuclei (DNA) with Hoechst 33258. Scale bar, 50 μM; (C) Quantification of the number of cells per micrometastasis in tissue section of engrafted lungs of mice used in the Flura-tagging experiments. The number of nuclei in individual micrometastases in lung sections from 16 mice were counted; (D) One-half portion of some of the mouse lungs used for Flura-tagging in Figure 3B was dissociated into single cells, and the percentage of RFP+ cells was analyzed using flow cytometry; (E) Quantification of the number of human cells in the mouse lungs used for Flura-tagging in the samples of Figure 3—figure supplement 1D. The total number of MDA231 cells per lung was estimated based on an assumption of 1.5 × 108 cells per mouse lung (Perrone et al., 2010).
 
 We determined the relative fold enrichment of 5-FU tagging in vivo by measuring the relative capture of representative housekeeping human and mouse transcripts. The human mRNAs were enriched more than a 10,000-fold compared to the corresponding mouse mRNAs (Figure 3B), indicating that 5-FU tagging occurs primarily in the human cells of interest and that tagged RNAs can be purified efficiently from intact mouse lung tissue. We also compared the relative fold enrichment of 5-FU tagging with TU tagging, an analogous covalent RNA labeling technique (Gay et al., 2013; Miller et al., 2009). To this end, mice harboring lung micrometastases were treated in parallel with TU for 12 hr according to previous studies (Miller et al., 2009). Analysis of tested human mRNAs relative to the mouse mRNAs showed approximately 10-fold enrichment with TU tagging compared to over 10,000-fold enrichment with 5-FU tagging (Figure 3B). In parallel, we determined the percentage of human cells present in the mouse lungs in these experiments. Approximately 0.003% to 0.08% of the total cell population comprised of human cells, as determined by RFP expression from the polycistronic UPRT/CD/RFP vector (Figure 3—figure supplement 1D). Since one mouse lung contains approximately 150 million cells (Perrone et al., 2010), we estimate that RNA from as few as approximately 5000 human cancer cells per mouse lung could be analyzed by 5-FU tagging (Figure 3—figure supplement 1E).
 
@@ -72,21 +88,41 @@ To determine whether 5-FU tagged mRNA from micrometastatic lesions could be used
 
 To further distinguish transcripts derived from the cells of interest (human cells) versus other cells (mouse cells), we focused on transcripts that were enriched more than 2-fold relative to input. After applying this enrichment cut-off, the reads were aligned to 7487 human genes and 231 mouse genes (Figure 3D). When the cutoffs were increased to 4, 8 and 16-fold, the number of human genes identified remained the same, whereas the mouse genes were completely eliminated (Figure 3D). These results demonstrate the sensitivity and specificity of Flura-seq in identifying in situ transcriptomes of cells of interest in vivo (Figure 3E).
 
-## Flura-seq identifies organ-specific in situ transcriptomes in micrometastases
+### Flura-seq identifies organ-specific in situ transcriptomes in micrometastases
 
 Next, we applied Flura-seq to define the in situ transcriptomes of breast cancer cells during early stages of metastatic colonization in distinct microenvironments of the brain and lungs. MDA231-CD/UPRT cells were injected intracardially into the arterial circulation of female mice to allow infiltration of multiple organs (Figure 4A). In the lungs and brain, the cells developed micrometastases within 31 days of injection (Figure 4—figure supplement 1A). The cancer cells were also injected into the mammary fat pad (MFP) to generate orthotopic mammary tumors (Figure 4A). To identify the genes that are expressed in response to the organ-specific microenvironment, we harvested the brain, lungs, and mammary tumors, and subjected samples to Flura-seq analysis. In parallel, an aliquot of these tissue samples was dissociated into single cells and cultured in selective media to isolate the labeled MDA231 cells as previously described (Minn et al., 2005). Following selection and in vitro expansion for 1–2 weeks (passage 2), these cultures were subjected to RNA-seq analysis (Figure 4A). Principal component analysis (PCA) revealed that the in situ transcriptomes of MDA231 cells in different tissues were highly divergent from one other (Figure 4B). In contrast, in vitro culture of the mammary tumor and metastasis-derived cells diminished their transcriptomic differences (Figure 4B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic diagram of experimental design used to obtain tissue specific transcriptomes of MDA231 cells in mice; (B) Principal component analysis of genes expressed by MDA231 cells in the indicated organs, as determined by Flura-seq of fresh tissue, or by RNA-seq of in vitro cultured cells derived from these tissues; (C) Comparison of differentially expressed genes in metastatic MDA231 cells in different organs as determined by Flura-seq of fresh tissue versus RNA-seq of tissue-derived MDA231 cell cultures. The number of differentially expressed genes and their corresponding fold-change in the indicated organ pairs were plotted for both methods; (D) Heatmap representation of differentially expressed genes identified by Flura-seq in MDA231 cells residing in the indicated pairs of organs, compared to the expression of these genes in the third organ.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative H and E stained sections of mouse lungs (left) and brain (right) harboring micrometastases (arrows) used in Flura-seq experiments. Inset shows higher magnification. Scale bar, 1 mm (top), 100 μM (bottom).
+
 Flura-seq identified several thousand genes that were differentially expressed in different tissues whereas the same cells showed differential expression of only a few hundred genes when cultured in vitro (Figure 4C, Supplementary file 3). The majority of organ-specific gene expression changes were not preserved when the cells were isolated from the host tissues and expanded in culture. These results suggested that micrometastases have considerable transcriptional plasticity and dynamically regulate gene expression in response to microenvironmental cues. In situ transcriptomic analysis is therefore critical to capture the phenotypic state of micrometastatic cells in the biologically relevant intact tissue context.
 
-## Mitochondrial complex I expression and oxidative stress in lung micrometastatic cells
+### Mitochondrial complex I expression and oxidative stress in lung micrometastatic cells
 
 Analysis of in situ organ-specific transcriptomes unexpectedly revealed that lung micrometastases had the highest content of unique transcriptional activity relative to brain micrometastases and mammary tumors, suggesting that distinct requirements exist for successful metastasis initiation in the lung microenvironment (Figure 4D, Figure 5—figure supplement 1A). Gene Ontology (GO) analysis of the differentially expressed cancer cell genes in the different tissues revealed that genes encoding components of the mitochondrial electron transport chain, particularly genes encoding Complex I subunits, were significantly upregulated in lung metastases relative to both brain metastases and orthotopic mammary tumors (Figure 5A). Gene set enrichment analysis (GSEA) further confirmed the upregulation of Complex I-encoding genes in lung micrometastases (Figure 5B). The enrichment of these genes was not observed when the cancer cells were isolated from each organ and cultured in vitro under similar conditions (Figure 5—figure supplement 1B), suggesting that the lung microenvironment drives Complex I expression in metastatic cells. In fact, Complex I genes were underexpressed in lung metastasis-derived cells in culture relative to cells derived from brain metastases or mammary tumors, possibly due to re-adaptation of the cells when removed from the lung microenvironment.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig5-v2.jpg)
+
+**Figure 5.:** (A) Gene Ontology (GO) analysis of biological processes (BP) of genes that were upregulated in MDA231 lung micrometastases compared to brain micrometastases or mammary tumors. The top functional groups and their corresponding pvalues are shown (n = 3); (B) Gene Set Enrichment Analysis (GSEA) analysis of nuclear Complex I genes was performed for the genes identified by Flura-seq in the indicated pairs of MDA231 lung and brain micrometastases and mammary tumors. p-Values were calculated by random permutations; (C) Oxidative stress in lung and brain tissue sections containing micrometastases were examined by IHC using anti-4-HNE antibody. Scale bars, 100 μm (top) and 20 μm (bottom); (D) Heatmap representation of the expression of genes encoding known antioxidant factors in MDA231 tumors from the indicated organs. The highlighted genes were also upregulated in clinical samples of lung metastasis from breast cancer patients (Figure 6D); (E) IHC analysis of GPX1, an antioxidant gene product identified by Flura-seq to be selectively upregulated in lung micrometastases. Scale bars, 100 μm (top) and 20 μm (bottom); (F) IHC analysis of NRF2 in lung and brain micrometastases. Scale bars, 100 μm (top) and 20 μm (bottom); (G) GSEA analysis of the NRF2 response gene signature applied to Flura-seq data from the indicated pairs of MDA231 lung and brain micrometastases and mammary tumors (n = 3). p-Values were calculated by random permutations.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Genes differentially expressed in lung and brain micrometastases relative to mammary fat pad tumors were identified by Flura-seq, and the overlap of the upregulated genes (left) and downregulated genes (right) in the organs are shown. (B, C) Upregulation of Complex I genes and antioxidant response in lung micrometastases is dependent on the tissue microenvironment. MDA231 cells from lung and brain micrometastases, and from mammary tumors were isolated and cultured in vitro under identical conditions, and the expression of Complex I genes (B) and the NRF2 gene signature (C) were subjected to GSEA for the indicated tissue pairs. p-Values were calculated by random permutations.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/43627/elife-43627-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) Oxidative stress (A), antioxidant GPX1 (B) and NRF2 (C) in lung and brain tissue sections containing HCC1954 micrometastases were examined by IHC using anti-4-HNE, anti-GPX1 and anti-NRF2 antibodies respectively. Scale bars, 100 μm (top) and 20 μm (bottom) (n = 3). Shown IHCs are from serial sections of organs derived from the same mouse.
 
 Complex I activity is a source of reactive oxygen species (ROS) (Balaban et al., 2005; Murphy, 2009), which at high concentrations cause oxidative stress owing to chemical alteration of proteins and nucleic acids in the cell (Liou and Storz, 2010; Liou and Storz, 2015). 4-Hydroxynonenal (4-HNE), a product derived from lipid peroxidation in cells, is a marker of oxidative stress (Liou and Storz, 2015). A higher level of 4-HNE was present in lung micrometastases compared to the brain micrometastases, as determined by anti-4-HNE immunohistochemistry (Figure 5C), indicating higher oxidative stress in the lung micrometastases. Cells counteract the cytotoxic effect of oxidative stress by upregulating genes that have antioxidant activity (Espinosa-Diez et al., 2015). Indeed, analysis of the expression of 63 genes that include all the antioxidant enzymes and the proteins that directly detoxify ROS (Gelain, 2009) revealed that a set of antioxidant genes were specifically upregulated in the lung micrometastases (Figure 5D). To confirm that the transcriptional changes identified reflect changes in protein levels, we performed immunohistochemistry for one of these gene products, glutathione peroxidase 1 (GPX1), which functions in the detoxification of hydrogen peroxide. Anti-GPX1 immunohistochemistry analysis confirmed high expression GXP1 in lung micrometastases compared to brain micrometastases (Figure 5E). We also tested whether the organ-specific oxidative stress and antioxidant programs are specific to triple negative breast cancer by analyzing lung and brain micrometastases formed by HCC1954 cell line, a HER2+ human breast cancer cell line. The higher oxidative stress and increased expression of antioxidants were also detected in lung micrometastases relative to brain micrometastases in HCC1954 xenograft model (Figure 5—figure supplement 2A–C), indicating that higher oxidative stress and elevated antioxidant program are more general phenomena of early stage lung metastasis in breast cancer.
 
 During oxidative stress, the transcription factor nuclear factor erythroid 2-related factor 2 (NRF2) is stabilized, enabling transcription of an antioxidant transcriptional program (Ma, 2013). Lung micrometastases contained high levels of NRF2 compared to brain micrometastases, based on anti-NRF2 immunohistochemistry (Figure 5F). To determine whether NRF2 transcriptional activity is increased in lung micrometastases, we created a list of 24 NRF2 target genes based on NRF2 chromatin immunoprecipitation-sequencing data curated by Cistrome database (ENCODE Project Consortium, 2012) (Supplementary File 4), and performed GSEA analysis on our cancer cell transcriptomes. Indeed, the NRF2 signature was enriched in lung micrometastases compared to brain micrometastases and mammary tumors (Figure 5G). Like the Complex I genes, the NRF2 responsive genes were underexpressed in lung metastasis-derived cells placed in culture (Figure 5—figure supplement 1C). Collectively, these results show a specific upregulation of Complex I associated with oxidative stress and a strong NRF2 response in breast cancer cells that survive as lung micrometastases.
 
-## Organ-specific oxidative stress in human breast cancer lung metastases
+### Organ-specific oxidative stress in human breast cancer lung metastases
 
 We investigated Complex I gene expression, and the associated oxidative stress and antioxidant responses in breast cancer patients with metastasis. We analyzed RNA-seq data from breast primary tumors and matched lung metastases from 11 patients (Siegel et al., 2018). The lung metastases showed significantly higher expression of Complex I genes compared to mammary tumors (Figure 6A). Matched pair comparison showed that 73% (8/11) patients had higher expression of Complex I genes in lung metastases than in their matched primary tumors (Figure 6B). 100% (8/8) of the patients with higher Complex I genes had higher expression of lung-specific antioxidant genes identified by Flura-seq (Figure 6B), and 88% (7/8) of the patients had higher NRF2 gene signature expression (Figure 6B).
 
@@ -102,7 +138,7 @@ To test if the NRF2 signature genes overexpression in breast cancer tumors corre
 
 ## Discussion
 
-## Organ-specific metabolic adaptation of metastasis-initiating cells
+### Organ-specific metabolic adaptation of metastasis-initiating cells
 
 Previous studies have identified stable, organ-specific transcriptomic programs in cancer cells that were selected on the basis of their ability to form macrometastases and then isolated from these lesions by FACS or in vitro culture prior to transcriptomic analysis (Roe et al., 2017; Kang et al., 2003; Minn et al., 2005; Bos et al., 2009; Boire et al., 2017; Chen and Massagué, 2012; Malladi et al., 2016; Bruns et al., 1999; Ikeda et al., 1990; Ambrogio et al., 2014). Although these methods successfully identify heritable transcriptional alterations of clinical relevance, these approaches overlook the dynamic transcriptional states that are dependent on tissue-specific microenvironmental cues. Flura-seq now enables the highly sensitive capture of these dynamic transcriptional states, thus shedding light on crucial adaptive processes underway in micrometastases that could not previously be identified.
 
@@ -110,13 +146,13 @@ In this study, we applied Flura-seq to identify the in situ transcriptomic progr
 
 These results demonstrate that metastatic tumor cells arising from a single source adopt unique transcriptional profiles depending on their site of colonization. Despite increasing appreciation that metastatic outgrowths frequently exhibit altered metabolic gene expression compared to their primary tumor counterparts (LeBleu et al., 2014; Dupuy et al., 2015; Chen et al., 2007), whether these metabolic transitions result from the outgrowth of a selected subpopulation predisposed to thrive in a particular location or from the dynamic adaptation of cancer cells to a changing microenvironment remains an open question. Our results support a model wherein tumor cells dynamically adapt to local conditions and suggest that a major determinant of the metabolism of metastatic cells is the site of colonization. These metabolic rearrangements are likely an early event in the establishment of metastatic seeding and may represent a targetable bottleneck against the growth of metastatic lesions.
 
-## Oxidative stress with clinical implications in metastasis
+### Oxidative stress with clinical implications in metastasis
 
 Oxidative stress has been implicated in metastasis, however, the precise role of the stress in metastasis has remained controversial. On one hand, oxidative stress has been observed in cancer cells soon after detachment from epithelia (Schafer et al., 2009), and it persists during circulation (LeBleu et al., 2014) and upon colonization of metastatic sites in model systems (Piskounova et al., 2015; Gill et al., 2016). The lung has been proposed to have pro-oxidant environment due to high oxygen and toxins exposure (Schild et al., 2018), and anti-oxidative mediators such as NRF2 (Wang et al., 2016; DeNicola et al., 2015; Menegon et al., 2016), peroxiredoxin 2 (Stresing et al., 2013) and thioredoxin-like 2 (Qu et al., 2011) stimulate the progression of lung cancer and lung metastasis. On the other hand, ROS has also been reported to promote metastasis, and antioxidants have been shown to inhibit metastasis (Ferraro et al., 2006; Ishikawa et al., 2008; Porporato et al., 2014). The oxidative state and the role of oxidative stress soon after the metastatic cancer cells seed the distant organs before they form macrometastases remain unknown. Our findings demonstrate high oxidative stress in the lung micrometastases of breast cancer, supporting the idea that antioxidant programs promote the progression of lung metastasis and highlighting a critical role for antioxidant mediators in the transition of micrometastases to overt metastases.
 
 Surprisingly, however, our data suggest that elevated antioxidant defenses are not a universal hallmark of metastatic lesions. We found that breast cancer brain metastases experience a low level of oxidative stress and antioxidative response. Given that metastatic cells can exhibit reversible metabolic alterations (Piskounova et al., 2015), these results raise the possibility that tumor cells undergo multiple metabolic transitions in order to adapt to the changing microenvironments encountered during the metastatic cascade. Indeed, recent evidence suggests that cancer cells from disparate origins may converge to adopt metabolic phenotypes in a given organ (Schild et al., 2018; Mashimo et al., 2014). Techniques such as Flura-seq that enable in situ interrogation of tumor cell phenotypes can reveal to what extent these various metabolic transitions are driven by adaptation to the specific microenvironment versus selection of cancer cells with preexisting traits. Given increasing evidence that cell lineage is a critical determinant of cancer cell metabolism (Mayers et al., 2016; Yuneva et al., 2012) it will be interesting for future studies to determine whether lineage-specific metabolic predispositions contribute to the metastatic organ tropisms of different tumor types. More broadly, these studies will help to shed light on the precise factors in the tissue microenvironment that contribute to organ-specific metabolic profiles.
 
-## Flura-seq as an in situ transcriptomic technique with broad biological applications
+### Flura-seq as an in situ transcriptomic technique with broad biological applications
 
 Preservation of the intact tissue microenvironment is critical to accurately elucidate the transcriptional state of a cell in vivo. Flura-seq can define in situ transcriptomes from a very rare cell population representing a small fraction (>0.003%) of an organ. The superior sensitivity of Flura-seq compared to related TU-tagging and EC-tagging may be due to the elimination of a biotinylation step and RNA purification system that distinguishes between cytosine derivatives and uracil derivatives. Flura-seq can be easily applied to any cell type that constitutes a rare subpopulation within the host tissue, such as stem cells and specific subtypes of immune and neuronal cells, in addition to residual cancer cells populations during early stages of metastasis or following the shrinking of a tumor with current therapies.
 
@@ -126,42 +162,325 @@ Flura-seq involves the expression of exogenous enzymes, CD and UPRT, and treatme
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU; BrdU antibody (Rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab6326</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD31; CD31 antibody (Rat monoclonal)</td>
+      <td>Dianova</td>
+      <td>Cat#DIA-310</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP; GFP antibody (Chicken monoclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat#GFP-1020</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-4-Hydroxynonenal; 4-HNE antibodyl (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab46545</td>
+      <td>(1:75)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NRF2; NRF2 antibody (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab137550</td>
+      <td>(1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Glutathione Peroxidase 1; GPX1 antibody (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab22604</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-chicken</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A-11039</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rat</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A-11006</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse</td>
+      <td>Abcam</td>
+      <td>Cat#ab150117</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Human)</td>
+      <td>Human breast cancer lung metastases tissue microarray (TMA)</td>
+      <td>This paper (Section of lung tissue containing cancer cells was surgically removed from breast cancer patients, preserved in paraflim and a small portion of the preserved tumor was used to make the TMA)</td>
+      <td>N/A</td>
+      <td>Tissue microarray Available from Edi Brogi</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigmal-Aldrich</td>
+      <td>Cat#D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluorocytosine; 5-FC</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F7129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluorouracil; 5-FU</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F6627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB-505124</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S4696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thymine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#T0376</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Thiouracil; TU</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#440736</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oligo (dT)25 magnetic beads</td>
+      <td>New England Biolabs</td>
+      <td>Cat#S1419S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Dynabeads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#10004D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tissue digestion C-tube</td>
+      <td>Miltenyi</td>
+      <td>Cat#130-096-334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Tumor Dissociation Kit</td>
+      <td>Miltenyi</td>
+      <td>Cat#130-096-730</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq RNA Library Prep Kit v2</td>
+      <td>Illumina</td>
+      <td>RS-122–2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMARTer PCR cDNA synthesis kit</td>
+      <td>Clontech</td>
+      <td>Cat#634926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>FC-131–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy MinElute Cleanup kit</td>
+      <td>Qiagen</td>
+      <td>Cat#74204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cDNA kit-First Strand Transcriptor</td>
+      <td>Roche</td>
+      <td>Cat#043790–12001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>MDA231</td>
+      <td>Laboratory of Joan Massague</td>
+      <td>PMID: 19421193</td>
+      <td>Expresses TGL</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>MDA231-CD</td>
+      <td>This paper (MDA231 cells were transduced with rtTA3 and TRE-CD-IRES-RFP)</td>
+      <td>N/A</td>
+      <td>Available from Massague lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>MDA231-CD/UPRT</td>
+      <td>This paper (MDA231 cells were transduced with rtTA3 and TRE-UPRT-T2A-RFP-IRES-CD)</td>
+      <td>N/A</td>
+      <td>Available from Massague lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>293T</td>
+      <td>Laboratory of Joan Massague</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus  musculus)</td>
+      <td>Hsd:Athymic Nude- Foxn1nu</td>
+      <td>Envigo</td>
+      <td>Cat#069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Oligonucleotides</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Oligonucleotide sequences are provided in Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV Tight RFP-IRES-CD</td>
+      <td>This paper (RFP-IRES-CD was subcloned into CMV Tight EGFP Puro (Addgene: Plasmid #26431) vector by removing EGFP).</td>
+      <td>N/A</td>
+      <td>Available from Massague lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV Tight UPRT- T2A-RFP-IRES-CD</td>
+      <td>This paper (UPRT-T2A-RFP-IRES-CD was subcloned into CMV Tight EGFP Puro (Addgene: Plasmid #26431) vector by removing EGFP).</td>
+      <td>N/A</td>
+      <td>Available from Massague lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rtTA3</td>
+      <td>Addgene</td>
+      <td>Plasmid #26730</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>STAR2.5.2b</td>
+      <td>PMID: 23104886</td>
+      <td>https://github.com/alexdobin/STAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>HTSeq v0.6.1p1</td>
+      <td>PMID: 20979621</td>
+      <td>https://htseq.readthedocs.io/en/release_0.10.0/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>DESeq2 v3.4</td>
+      <td>PMID: 25516281</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>GSVA v3.4</td>
+      <td>PMID: 23323831</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/GSVA.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human embryonic kidney cells transformed with T-cell antigen (293T) and human breast cancer MDA-MB-231 (MDA231) cells were cultured in DMEM High Glucose medium (Wheaton) supplemented with 10% fetal bovine serum and 2 mM L-glutamine. All cell lines have been regularly tested for mycoplasma contamination, and the identity of the cell lines have been authenticated by STR profiling. For the induction of CD or CD/UPRT, cells were treated with 1 μg/ml doxycycline for 24 hr. For 5-FU tagging, cells were treated with 250 μM 5-FC or 5-FU unless indicated. Where indicated, 125 μM thymine was added together with 5-FC. For the induction of TGF-β target genes, cells were treated with 200 pM TGF-β or 2.5 μM SB-505124 for 150 min. For 5-FU-tagging during TGF-β treatment, cells were treated with 5-FC and thymine for 30 min before adding TGF-β or SB-505124.
 
-## Animal experiments
+### Animal experiments
 
 Mouse experiments were performed following the protocols approved by the MSKCC Institutional Animal Care and Use Committee (IACUC). Five- to six-week-old female mice (Mus musculus) Hsd:Athymic-Foxn1nu were used in all the experiments. For lung colonization experiments, 50,000 MDA231 cells suspended in 100 μl PBS were injected into the tail vein. For organ-specific metastasis experiments, 50,000 MDA231 cells or 100,000 HCC1954 cells suspended in 100 μl PBS were injected intracardially. For mammary fat pad injection, 50,000 MDA231 cells in 50 μl PBS were mixed with 50 μl matrigel and the mixture was injected in the fat pad of mammary gland #4. Proliferation of injected cancer cells was quantified using bioluminescence imaging following retro-orbital injection of D-luciferin (Gold Biotechnology). CD/UPRT expression was induced by feeding mice doxycycline diet for 2–3 days. For Flura-tagging, mice were injected with 250 mg/kg (500 μl) 5-FC intraperitoneally together with 125 mg/kg (500 μl) thymine subcutaneously. For thiouracil-tagging, mice were injected intraperitoneally with 250 mg/kg (500 μl) of 4-thiouracil. The mice were euthanized 4–12 hr post injection, lungs and brain were harvested and processed for downstream experiments. For RNA analysis, lungs were dissociated using the PRO 200 grinder from PRO Scientific Inc. in RNA extraction lysis buffer. The lung lysates were either used immediately for mRNA extraction or stored at −80°C for later use.
 
-## Immunofluorescence (IF) and Immunohistochemistry (IHC)
+### Immunofluorescence (IF) and Immunohistochemistry (IHC)
 
 For IF, cells were fixed with 4% paraformaldehyde for 10 min, permeabilized with 0.2% TritonX-100 for 10 min, blocked with 5% BSA for 1 hr at room temperature, prior to incubation with primary antibodies at 4°C overnight, and secondary antibodies incubated for 1 hr at room temperature. Mouse lung and brain were fixed in 4% paraformaldehyde 24–48 hr at 4°C, embedded in paraffin and sectioned at 5 μm. Paraffin-embedded sections or tissue microarrays were rehydrated using Histo-Clear (National Diagnostics) followed by 100-95–70% ethanol and water. Antigen retrieval was performed in a steamer for 30 min in citrate antigen retrieval solution. Tissue sections were blocked with 5% normal goat serum for 1 hr, and incubated with primary antibodies overnight. Secondary antibodies conjugated with fluorophores were used for detection. IHC were performed on BOND RX (Leica Biosystems) using standard Epitope Retrieval Solution 2 (Leica Biosystems) for 30 min followed by primary antibody incubation for 30 min and BOND polymer refine detection kit-DAB. Automated image analysis was performed using the FIJI software package. Human histopathological sections were obtained under a biospecimen protocol approved by the MSK Institutional Review Board. All human pathology analyses were performed under the supervision of an experienced breast pathologist (E.B.).
 
-## Flura-tagged and TU-tagged mRNA extraction
+### Flura-tagged and TU-tagged mRNA extraction
 
 Cells or tissues were lysed in lysis buffer (20 mM Tris-HCl pH 7.5, 500 mM LiCl, 1% LiDS, 1 mM EDTA, 5 mM DTT), and mRNAs were extracted using Oligo (dT)25 magnetic beads following the manufacturer’s protocol. The isolated mRNAs were immunoprecipitated using anti-BrdU antibody (1–5 μg/sample) conjugated with Protein G Dynabeads by overnight incubation at 4°C. The mRNAs were incubated with the antibody bead complex in 0.8X Binding buffer (0.5X Sodium Chloride-Sodium Phosphate-EDTA (SSPE) with 0.025% Tween 20) at room temperature for 1–2 hr in a rotator. Subsequently, beads were washed twice with Binding buffer, twice with Wash buffer B (1X SSPE with 0.05% Tween 20), once with Wash buffer C (TE with 0.05% Tween 20), and once with TE buffer. The bound mRNAs were eluted in 200 μl of 100 μg/mL BrdU for 45 min in a shaker at room temperature. The eluted RNAs were purified using the RNeasy MinElute Cleanup kit following the manufacturer’s protocol. The RNA was eluted in 100 μl RNAase free water. The Flura-tagged RNA elute were re-precipitated as described above, and eluted in 12.5 μl final volume. The RNA was either reverse-transcribed using cDNA kit-First Strand Transcriptor following the manufacturer’s protocol, or used for Flura-Seq. TU-tagged mRNAs were purified as described in Miller et al. (2009).
 
-## Isolation of organ-derived cancer cells
+### Isolation of organ-derived cancer cells
 
 Brain, lung or mammary tumors were cut into small fragments (around 1 mm3) and transferred to a tissue digestion C-tube. The tumor pieces were incubated with mouse Tumor Dissociation Kit and further dissociated mechanically on a gentleMACS Dissociator as per manufacturer’s protocol. The digestion reaction was stopped with albumin-rich buffer (RPMI-1640 medium containing 0.5% bovine serum albumin (BSA)). A single-cell suspension was obtained by filtering through a 70 μm cell strainer. The cells were then cultured in DMEM High Glucose media containing 10% FBS, 2 mM L-Glutamine, 200 μg/mL Hygromycin and 8 μg/mL Blasticidin to select MDA231 cells.
 
-## Flow cytometry
+### Flow cytometry
 
 Harvested lungs were chopped into small pieces (around 1 mm3), which were then incubated at 37°C in 30 mL digestion buffer (5% Fetal Bovine Serum (FBS) 1 mM L-glutamine 0.35 mg/mL Worthington Type III collagenase, 6.25 × 10−3 U/mL dispase, 100 U/mL penicillin, 100 μg/mL streptomycin, 6.25 ng/mL amphotericin B) containing 10 mL trypsin and 30 μl DNAse for 1 hr. The cells were filtered through a 70 μM filter, and were collected by centrifugation. The cell pellets were then resuspended in PBS containing 0.1% FBS and 100 μg/ml DAPI, and analyzed using a BD FACS Aria IIU Flow cytometer. CD or CD/UPRT expressing stable cell lines were treated with 1 μg/mL doxycycline for 24 hr, trypsinized, filtered and sorted for RFP positive cells using a BD LSRFortessa Flow cytometer.
 
-## RNA sequencing
+### RNA sequencing
 
 RNA-seq library preparation. Total RNA was purified using Qiagen RNeasy Mini Kit. Quality and quantity of the RNA were checked using an Agilent BioAnalyzer 2000. 10 ng of RNA per sample was used for library construction with Sample Prep Kit v2 according to manufacturer’s instructions. Libraries were multiplexed on a Hiseq2500 platform, and more than 25 million raw paired-end reads were generated for each sample.
 
 Flura-seq library preparation. RNA was amplified by SMARTer PCR kit with the number of PCR cycles determined empirically based on the amount of purified 5-FU-tagged RNA. The Nextera XT kit was used to prepare sequencing libraries following the manufacturer’s protocol. In our in vivo experiments, 20–24 cycles of PCR were used.
 
-## Statistics and data analysis
+### Statistics and data analysis
 
 In all relevant experiments, mice were randomized prior to different treatments. Comparisons between samples were done in the gene expression analysis, and each group had 2–3 biological replicates that are indicated in the figure legends for each experiment. In the in vitro experiments, biological replicates are samples derived from cells that were plated and processed separately. In the in vivo experiments, the biological replicates represent individual mouse. N described in the Figure legends represents independent biological replicates. The technical replicates are originated from the same sample but divided into different groups. Sample size for each experiment was determined empirically.
 
 Reads were quality checked using FastQC v0.11.5 and mapped to a human (hg19) or hybrid human-mouse (hg19-mm10) genome with STAR2.5.2b (Dobin et al., 2013) using standard settings for paired reads. Uniquely mapped reads were assigned to annotated genes with HTSeq v0.6.1p1 (Anders and Huber, 2010) with default settings. Read counts were normalized by library size, and differential gene expression analysis based on a negative binomial distribution was performed using DESeq2 v3.4 (Love et al., 2014). In general, thresholds for differential expression were set as follows: adjusted p value<0.05, fold change >2.0 or<0.5, and average normalized read count >10. Genes were considered detectable in the immunoprecipitation samples with a normalized read count >100. Gene set enrichment analysis was performed using GSVA v3.4 (Hänzelmann et al., 2013) and previously curated gene sets (Subramanian et al., 2005). GSEA mountain plots were generated by ‘liger’ R package (V0.1).
 
-## Plasmids generation
+### Plasmids generation
 
 Primers used for cloning the constructs described in the manuscript are described in Supplementary file 6. CD (Addgene 35102), and UPRT (Addgene 47110) were used as template for PCR for subcloning. RFP and IRES were amplified using pTRIPZ (Dharmacon) as template. The PCR products were either ligated using DNA Ligase after restriction enzyme digestion and/or by Gibson Assembly.

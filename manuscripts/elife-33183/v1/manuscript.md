@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.33183.001 Mutations in the polycystin genes, PKD1 or PKD2, results in Autosomal Dominant Polycystic Kidney Disease (ADPKD). Although a genetic basis of ADPKD is established, we lack a clear understanding of polycystin proteins’ functions as ion channels. This question remains unsolved largely because polycystins localize to the primary cilium – a tiny, antenna-like organelle. Using a new ADPKD mouse model, we observe primary cilia that are abnormally long in cells associated with cysts after conditional ablation of Pkd1 or Pkd2 . Using primary cultures of collecting duct cells, we show that polycystin-2, but not polycystin-1, is a required subunit for the ion channel in the primary cilium. The polycystin-2 channel preferentially conducts K + and Na + ; intraciliary Ca 2+ , enhances its open probability. We introduce a novel method for measuring heterologous polycystin-2 channels in cilia, which will have utility in characterizing PKD2 variants that cause ADPKD.
+Mutations in the polycystin genes, PKD1 or PKD2, results in Autosomal Dominant Polycystic Kidney Disease (ADPKD). Although a genetic basis of ADPKD is established, we lack a clear understanding of polycystin proteins’ functions as ion channels. This question remains unsolved largely because polycystins localize to the primary cilium – a tiny, antenna-like organelle. Using a new ADPKD mouse model, we observe primary cilia that are abnormally long in cells associated with cysts after conditional ablation of Pkd1 or Pkd2. Using primary cultures of collecting duct cells, we show that polycystin-2, but not polycystin-1, is a required subunit for the ion channel in the primary cilium. The polycystin-2 channel preferentially conducts K+ and Na+; intraciliary Ca2+, enhances its open probability. We introduce a novel method for measuring heterologous polycystin-2 channels in cilia, which will have utility in characterizing PKD2 variants that cause ADPKD.
 
 ## Introduction
 
@@ -36,63 +36,271 @@ Surprisingly, polycystin-2 forms a functional ion channel in primary cilia witho
 
 ## Results
 
-## Progressive cyst formation in a new mouse model
+### Progressive cyst formation in a new mouse model
 
 Previous work demonstrated that the human ADPKD kidney cyst phenotype can be reproduced in mice 14 weeks after conditional ablation of nephron-localized Pkd1 or Pkd2 (Ma et al., 2013). To understand the putative ciliary ion channel function of polycystin-1 and/or polycystin-2, and to determine the effects of kidney cyst formation on cilia morphology, we crossed our Arl13b-EGFPtg strain (DeCaen et al., 2013) with cPkd1 or cPkd2 mice (provided by S. Somlo Yale Univ.). We then induced either Pkd1 or Pkd2 gene inactivation in adult animals (~P28) by introducing doxycycline (2 mg/ml or 3.9 mM) into the drinking water for two weeks. After this treatment period, doxycycline was removed and kidney histology was performed from 2 and 4 month post-treatment animals (Figure 1A, Figure 1—figure supplement 1, Figure 1—figure supplement 2A,B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig1-v1.jpg)
+
+**Figure 1.:** (A) Study design to assess cyst formation after genetic ablation of either Pkd1 or Pkd2. One protocol is shown that assesses polycystin-1 or polycystin-2 at P28 in the conditional knockout mouse. (B) Loss of polycystin-1 and polycystin-2 protein expression as assessed by immunoblot, 2 weeks and 2 months after doxycycline removal. Whole cell lysates were prepared from pIMCD cells and subjected to western blot analysis (three independent experiments). A trace amount of polycystin-2 (first row, faint band at 2 weeks after doxycycline removal) is similar to that previously reported (Ma et al., 2013). The band at the left edge (cPkd1, 2 weeks + Doxycycline, first row), appears to be nonspecific, although we cannot rule out polycystin-1 contamination from non-tubule cells. (C) Kidney weight/body was increased in Arl13b-EGFPtg:cPkd2 mice with doxycycline treatment compared to control littermates without doxycycline treatment. (D) Cystic index (Materials and methods) shows that cysts increased in Arl13b-EGFPtg:cPkd2 mice. (E) Kidney weight/body was increased in Arl13b-EGFPtg:cPkd1 with doxycycline treatment (2 months after doxycycline removal) compared to control littermates without doxycycline treatment. (F) Cystic index shows increased size and number of cysts in Arl13b-EGFPtg:cPkd1 mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative images of H and E staining of kidneys from Arl13b-EGFPtg:cPkd2 mice. Sagittal sections of kidneys (left, scale bar, 0.5 cm) and higher magnification (middle and right, scale bar, 50 μm) are shown at the indicated times; three independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic diagram of conditional inactivation of Pkd1 in Arl13b-EGFPtg:cPkd1 mice.. (B) Representative images of H and E staining of kidneys from Arl13b-EGFPtg:cPkd1 mice (2 months after doxycycline removal); three independent experiments. Sagittal sections of kidneys (left, scale bar, 0.5 cm) and higher magnification (middle and right, scale bar = 100 μm) are shown at the indicated times. (C) Representative kidney sections from Arl13b-EGFPtg:cPkd1 mice (2 months after doxycycline removal) were immuno-labeled with antibodies against EGFP and acetylated tubulin; three independent experiments. Scale bar, 5 μm. (D) Cilia length increased with the progression of cyst formation from kidney sections of Arl13b-EGFPtg:cPkd1 mice (2 months after doxycycline removal). (E) Genomic PCR for pIMCD cells isolated from Arl13b-EGFPtg:cPkd1 mice (2 weeks after doxycycline removal); three independent experiments. The PCR product for the floxed allele,~400 bp; for wt,~200 bp; for the Deletion alleles (exons 2–4 of Pkd1 deleted) of Del,~650 bp; for non-Del,~1650 bp. The weak band at ~1650 bp in the far right lane is the residual amount of intact Pkd1, which may be due to the contamination of non-tubule cells or tubule cells from S3 straight segment. The bands larger than 200 bp, both before and after doxycycline treatment, are non-specific bands (absent at shorter PCR extension times).
+
 Immunoblots were performed from pIMCD cell lysates from 2 week and 2 month doxycycline-ablated Arl13b-EGFPtg:cPkd2 or 2 week post-treatment of Arl13b-EGFPtg:cPkd1 mice, indicating that the recombinase substantially reduced polycystin-2 or polycystin-1 protein expression (Figure 1B). Polycystin-2 expression from Arl13b-EGFPtg:cPkd1 animals was unaffected by polycystin-1 ablation (Figure 1B). Consistent with previous reports from the cPkd2 and cPkd1 strain, we observed kidney cyst formation in Arl13b-EGFPtg:cPkd2 and Arl13b-EGFPtg:cPkd1 mice (Figure 1—figure supplement 1, Figure 1—figure supplement 2B). The extent of cyst formation in these mice was quantified as the kidney-to-body weight ratio and cystic index (Figure 1C–F). Based on these measures, the cystic phenotype was progressive, as seen by comparing the post 2 month and 4 month treatment groups (Figure 1C–F, Figure 1—figure supplement 1, Figure 1—figure supplement 2B).
 
-## Abnormal cilia in Pkd1- or Pkd2-ablated mice
+### Abnormal cilia in Pkd1- or Pkd2-ablated mice
 
 Using confocal microscopy, we compared cilia morphology from kidneys of Arl13b-EGFPtg:cPkd2 and Arl13b-EGFPtg:cPkd1 mice treated with or without doxycycline (Figure 2A–C, Figure 1—figure supplement 2C–E). Here, we observed an ~3.2 fold increase in cilia length with the progression of ADPKD (5.7 ± 0.4 μm for 2 months and 18.4 ± 1.2 μm for 4 months post-treatment) with Arl13b-EGFPtg:cPkd2 mice, whereas cilia length from control littermates did not differ substantially over the same time course (3.8 ± 0.16 μm and 4.5 ± 0.2 μm, respectively). Also, we found that cilia length from tubule cells lining cysts were ~4 times longer than from unaffected tubules from the same animals (Figure 2C) (12 ± 1.1 μm and 3.1 ± 0.2 μm, respectively). As for Arl13b-EGFPtg:cPkd1 mice, we observed an ~2.4 fold increase in cilia length with the progression of ADPKD (4.1 ± 0.1 μm for control littermates and 9.9 ± 0.5 μm for 2 months post-treatment)(Figure 1—figure supplement 2D). These results demonstrate the neither polycystin-1 nor polycystin-2 expression is required for primary ciliogenesis from the tubule epithelium, but implies that polycystin-1 or polycystin-2 expression is somehow related to cilia length. Since aberrant cilia morphology was mostly found in cystic tissue epithelia compared to non-cystic tubules, ciliary polycystin-1 or polycystin-2 may regulate continuing renal tubular cell differentiation. However, it is unclear if irregular cilia morphology is a consequence or cause of cyst formation, and what function overexpression of Arl13b-EGFP in combination with polycystin-1 or polycystin-2 ablation may have in maintaining normal cilia length.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig2-v1.jpg)
 
-**Figure 2.:** Pkd2.(A) Representative kidney sections from Arl13b-EGFP mice were immunolabeled with antibodies against EGFP and acetylated tubulin. Three independent experiments were performed. Scale bars, 5 μm. (tg:cPkd2B) Cilia length was measured with the progression of cyst formation from kidney of Arl13b-EGFP mice. (tg:cPkd2C) Cilia length was measured in cystic and non-cystic areas from the Arl13b-EGFP mice after 2 months of doxycycline removal.tg:cPkd2
+**Figure 2.:** (A) Representative kidney sections from Arl13b-EGFPtg:cPkd2 mice were immunolabeled with antibodies against EGFP and acetylated tubulin. Three independent experiments were performed. Scale bars, 5 μm. (B) Cilia length was measured with the progression of cyst formation from kidney of Arl13b-EGFPtg:cPkd2 mice. (C) Cilia length was measured in cystic and non-cystic areas from the Arl13b-EGFPtg:cPkd2 mice after 2 months of doxycycline removal.
 
-## Ciliary trafficking and ion channel activity of polycystin-2 are independent of polycystin-1
+### Ciliary trafficking and ion channel activity of polycystin-2 are independent of polycystin-1
 
 Using animals from the same study design, we harvested pIMCD cells from 2-month-old Arl13b-EGFPtg mice, before cyst development. The cell membrane of the dissociated cells retained anti-aquaporin 2 antibody reactivity and Arl13B was found in the primary cilia of intact distal collecting ducts (Figure 3A–C). Using the validated antibody described in Figure 1, we confirmed the lack of ciliary polycystin-2 from cultured pIMCD cells from post-doxycycline-treated Arl13b-EGFPtg:cPkd2 mice (Figure 3D). Importantly, the pIMCD cells isolated from post-doxycycline-treated Arl13b-EGFPtg:cPkd1 animals retained their ciliary polycystin-2, suggesting that ciliary polycystin-2 trafficking does not require polycystin-1 (Figure 3E, Figure 1—figure supplement 2E).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig3-v1.jpg)
 
-**Figure 3.:** Arl13b-EGFP pIMCD cells.tg(A) Confocal images from a 100 μm-thick fixed kidney slice: DIC image in grey; aquaporin 2 (kidney collecting duct epithelial cell epitope) labeled with Alexa-569 (red); Cilia Arl13b-EGFP (green). Three independent experiments were performed. Scale bar = 30 μm, inset image scale bar = 5 μm. (tgB) Sagittal section of 3-month-old mouse kidney with the inner medulla removed (bottom inset). Three independent experiments were performed. Scale bar = 1 mm. (C) Confocal images of fixed primary collecting duct epithelial cells after two days in culture, immunostained with anti-aquaporin 2 antibody in A). Three independent experiments were performed. Scale bar = 5 μm. (D) Immunofluorescence using anti-GFP (green) and anti-polycystin-2 (red) showing the loss of polycystin-2 in pIMCD cells isolated from kidney papillae of Arl13b-EGFP mice (2 weeks after doxycycline removal; three independent experiments; 5 mice were used for each group). Arrowheads point to primary cilia. Scale bar = 5 μM, inset image scale bar = 1 μm. (tg:cPkd2E) Immunofluorescence with anti-GFP (green) and anti-polycystin-2 (red), showing ciliary polycystin-2 in pIMCD cells isolated from kidney papillae of Arl13b-EGFP mice. Three independent experiments; 5 mice for each group. Arrowheads point to primary cilia. Scale bar = 5 μM, inset image scale bar = 1 μm.tg:cPkd1
+**Figure 3.:** (A) Confocal images from a 100 μm-thick fixed kidney slice: DIC image in grey; aquaporin 2 (kidney collecting duct epithelial cell epitope) labeled with Alexa-569 (red); Cilia Arl13b-EGFPtg (green). Three independent experiments were performed. Scale bar = 30 μm, inset image scale bar = 5 μm. (B) Sagittal section of 3-month-old mouse kidney with the inner medulla removed (bottom inset). Three independent experiments were performed. Scale bar = 1 mm. (C) Confocal images of fixed primary collecting duct epithelial cells after two days in culture, immunostained with anti-aquaporin 2 antibody in A). Three independent experiments were performed. Scale bar = 5 μm. (D) Immunofluorescence using anti-GFP (green) and anti-polycystin-2 (red) showing the loss of polycystin-2 in pIMCD cells isolated from kidney papillae of Arl13b-EGFPtg:cPkd2 mice (2 weeks after doxycycline removal; three independent experiments; 5 mice were used for each group). Arrowheads point to primary cilia. Scale bar = 5 μM, inset image scale bar = 1 μm. (E) Immunofluorescence with anti-GFP (green) and anti-polycystin-2 (red), showing ciliary polycystin-2 in pIMCD cells isolated from kidney papillae of Arl13b-EGFPtg:cPkd1 mice. Three independent experiments; 5 mice for each group. Arrowheads point to primary cilia. Scale bar = 5 μM, inset image scale bar = 1 μm.
 
 Next, we patch clamped pIMCD cells, in which the primary cilia could be visualized and expression of either polycystin-1 or polycystin-2 subunits of the putative ciliary ion channel complex could be conditionally controlled. Previously, we used the cilium patch method to identify the heteromeric polycystin 1-L1/polycystin 2-L1 channel in primary cilium of Arl13b-EGFPtg retinal pigmented epithelial cells (RPE) and mouse embryonic fibroblasts (MEF) (DeCaen et al., 2013). Also, we described, but did not identify, a large outward conductance channel (outward γ = 98 ± 2 pS) from the cilia of an immortalized IMCD-3 cell line, which has been characterized (outward γ = 96 pS) and subsequently identified as polycystin-2 by the Kleene group (Kleene and Kleene, 2017). Thus, we extended our cilia electrophysiology methods to test ciliary ion currents from pIMCD cells and determine if polycystin-1 and/or polycystin-2 are subunits of the ion channel. After establishing high resistance seals (>16 GΩ) at the tip of the cilia membrane (Video 1), we ruptured the cilium’s membrane and established ‘whole-cilium’ patch recording to observe an outwardly rectifying current (Figure 4A, Figure 4—source data 1-ciliary current amplitudes: siRNA screen of TRP proteins in cilia).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig4-v1.jpg)
 
-**Figure 4.:** (A) siRNA screen of potential Icilia candidates. Top, light microscope image of a patched cilium. Left, example ciliary currents measured from cells treated with either scrambled siRNA or one targeted to polycystin-2. Right, box (mean ± S.E.M.) and whisker (mean ± S.D.) plots of cilia total outward current (+100 mV) measured 48–72 hr after double-siRNA treatment. Pkd1, Pkd1-L1, Pkd2, and Pkd2-L1 mRNAs were targeted by two siRNAs specific for two different regions (A, B) of the target transcript (listed in Table 1). Averages are indicated by the red lines. Student’s t-test P values comparing treatment groups to scrambled siRNA. See Figure 4—source data 1-ciliary current amplitudes: siRNA screen of TRP proteins in cilia. (B) Conditional knockout of the whole-cilia current. Left, exemplar cilia currents from pIMCD epithelial cells isolated from conditional Pkd2 knockout (Arl13b-EGFP) transgenic mice. tg:cPkd2Right, box and whisker plots comparing the total outward cilia current (+100 mV) from control littermates and doxycycline-treated animals (Arl13b-EGFP and tg:cPkd1Arl13b-EGFP). Number of cilia; italic numeral in parentheses for each group genotype and treatment group. Student’s tg:cPkd2t-test P values compare the outward cilia current from the untreated and doxycycline-treated animals. See Figure 4—source data 2- whole ciliary current amplitudes in Pkd1 or Pkd2-knockout primary cells.10.7554/eLife.33183.008Figure 4—source data 1.Ciliary outward currents (pA) were measured at 100mV after knockdown of Pkd1, Pkd1-L1, Pkd2, Pkd2-L1 and Trpv4.Except for Trpv4, the mRNAs the genes tested were targeted by two siRNAs specific for two different regions, as labeled A and B.10.7554/eLife.33183.009Figure 4—source data 2.Pkd1 or Pkd2-knockout primary cells.Ciliary outward currents (pA) were measured at 100 mV from pIMCD epithelial cells isolated from doxycycline-treated and -untreated mice. Cells were tested 2 weeks and 2 months after removal of treatment (or controls) using Arl13b-EGFP transgenic micetg:cPkd1 and Arl13b-EGFPtg:cPkd2
+**Figure 4.:** (A) siRNA screen of potential Icilia candidates. Top, light microscope image of a patched cilium. Left, example ciliary currents measured from cells treated with either scrambled siRNA or one targeted to polycystin-2. Right, box (mean ± S.E.M.) and whisker (mean ± S.D.) plots of cilia total outward current (+100 mV) measured 48–72 hr after double-siRNA treatment. Pkd1, Pkd1-L1, Pkd2, and Pkd2-L1 mRNAs were targeted by two siRNAs specific for two different regions (A, B) of the target transcript (listed in Table 1). Averages are indicated by the red lines. Student’s t-test P values comparing treatment groups to scrambled siRNA. See Figure 4—source data 1-ciliary current amplitudes: siRNA screen of TRP proteins in cilia. (B) Conditional knockout of the whole-cilia current. Left, exemplar cilia currents from pIMCD epithelial cells isolated from conditional Pkd2 knockout (Arl13b-EGFPtg:cPkd2) transgenic mice. Right, box and whisker plots comparing the total outward cilia current (+100 mV) from control littermates and doxycycline-treated animals (Arl13b-EGFPtg:cPkd1 and Arl13b-EGFPtg:cPkd2). Number of cilia; italic numeral in parentheses for each group genotype and treatment group. Student’s t-test P values compare the outward cilia current from the untreated and doxycycline-treated animals. See Figure 4—source data 2- whole ciliary current amplitudes in Pkd1 or Pkd2-knockout primary cells.
+
+![Video 1.](https://cdn.elifesciences.org/articles/33183/elife-33183-video1.mp4.jpg)
+
+**Video 1.:** The glass pipette patch electrode (right) is sealed onto a primary cilium above the pIMCD cell. The focal plane was moved along the z-axis (~9 µm) to visualize the cell and cilium. The electrode is moved along the y-axis while adjusting the focal plane to demonstrate that the patch electrode is sealed on the tip of the cilia membrane, not the cell membrane. The light source(s) are indicated in the lower left corner of the image: white light and 488 nm light to illuminate the specimen. Differential interference contrast (DIC) or fluorescent images were captured using a Hamamatsu Orca Flash CCD camera on an Olympus IX73 inverted microscope; 60x objective, 2x photomultiplier. Scale bar = 5 μm.
 
 To determine the identity of this current, we treated cells with siRNA specific for members of the polycystin family and other localized putative ciliary ion channel subunits (Kleene and Kleene, 2017; Köttgen et al., 2008; Yoder et al., 2002). We observed 53% and 61% attenuation of whole-cilium current from cells treated with two independent siRNAs targeted to polycystin-2 (Figure 4A, Table 1, Figure 4—source data 1-ciliary current amplitudes: siRNA screen of TRP proteins in cilia). Importantly, we did not find any difference in currents when cells were treated with siRNAs targeting Pkd1, Pkd1-1L1, Pkd2-L1, and Trpv4, suggesting that none of these targets are essential subunits of the pIMCD ciliary current. To confirm these results, we measured ciliary current of pIMCD cells from Arl13b-EGFPtg:cPkd2 mice at 2 weeks and 2 months after withdrawal of doxycycline treatment. As expected, the ciliary outwardly rectifying currents from the Arl13b-EGFPtg:cPkd2 mice were reduced by 84% and 81% from 2 week and 2 month post-treatment groups compared to littermates not exposed to doxycycline (Figure 4B, Figure 4—source data 2-whole ciliary current amplitudes in Pkd1 or Pkd2-knockout primary cells). These results demonstrate that doxycycline-induced TetO-cre ablation of Pkd2 substantially reduces the pIMCD ciliary current. In contrast, cilia currents recorded from pIMCD cells isolated from doxycycline-treated Arl13b-EGFPtg:cPkd1 mice do not have reduced current compared to cells from untreated animals from 2 week and 2 month post-treatment groups (Figure 4B, Figure 4—source data 2-whole ciliary current amplitudes in Pkd1 or Pkd2-knockout primary cells). From this data, we conclude that polycystin-2 is a subunit of a major ion current in renal tubule epithelial cilia and that the absence of polycystin-1 expression does not substantially alter the net polycystin-2 current in the cilium.
 
-## Ciliary polycystin-2 preferentially conducts K+ and Na+ over Ca2+ ions
+**Table 1 .**
+ siRNAs used to screen for ciliary ion channel genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>siRNA gene target M, Mus musculus; h, human</th>
+      <th>ThermoFisher Silencer ID</th>
+      <th>siRNA location</th>
+      <th>% Knockdown efficiency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mPkd1 (a)</td>
+      <td>151949</td>
+      <td>999</td>
+      <td>75 ± 3</td>
+    </tr>
+    <tr>
+      <td>mPkd1 (b)</td>
+      <td>151951</td>
+      <td>7303</td>
+      <td>73 ± 3</td>
+    </tr>
+    <tr>
+      <td>mPkd1-L1 (a)</td>
+      <td>n398242</td>
+      <td>1075</td>
+      <td>76 ± 2</td>
+    </tr>
+    <tr>
+      <td>mPkd1-L1 (b)</td>
+      <td>n398244</td>
+      <td>806</td>
+      <td>72 ± 3</td>
+    </tr>
+    <tr>
+      <td>mPkd2 (a)</td>
+      <td>150154</td>
+      <td>1089</td>
+      <td>83 ± 2</td>
+    </tr>
+    <tr>
+      <td>mPkd2 (b)</td>
+      <td>63551</td>
+      <td>488</td>
+      <td>81 ± 2</td>
+    </tr>
+    <tr>
+      <td>mPkd2-L1 (a)</td>
+      <td>101318</td>
+      <td>350</td>
+      <td>84 ± 2</td>
+    </tr>
+    <tr>
+      <td>mPkd2-L1 (b)</td>
+      <td>101422</td>
+      <td>830</td>
+      <td>82 ± 2</td>
+    </tr>
+    <tr>
+      <td>mTrpv4</td>
+      <td>182203</td>
+      <td>778</td>
+      <td>80 ± 2</td>
+    </tr>
+    <tr>
+      <td>hPKD2 (a)</td>
+      <td>104317</td>
+      <td>1100</td>
+      <td>74 ± 2</td>
+    </tr>
+    <tr>
+      <td>hPKD2 (b)</td>
+      <td>143288</td>
+      <td>3069</td>
+      <td>71 ± 3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ciliary polycystin-2 preferentially conducts K+ and Na+ over Ca2+ ions
 
 As discussed in the introduction, it is widely reported that calcium is a major charge carrier for polycystin-2 under physiological conditions. However, we find that the collecting duct epithelial cilia membrane is ~2.5 times more selective for potassium than sodium ions (relative permeability PK/PNa = 2.4, Figure 5—figure supplement 1A). Here, the relative permeability was estimated by the measured change in reversal potential when sodium was replaced by each test cation (Table 2). To test calcium permeability, the 110 mM NaCl extracellular solution was replaced with equimolar CaCl2 (keeping 110 mM internal Na+) which negatively shifted the reversal potential (ΔErev = −57 mV, Table 2), indicating that permeation by calcium (PCa/PNa = 0.06) is barely different than presumably impermeant NMDG (PNMDG/PNa = 0.04). We also tested the permeability of chloride (PCl-) by substituting external Cl- with the larger methane sulfonate while keeping [Na+] constant (110 mM NaCl vs. NaMES). Here, there was no difference in reversal potential when NaCl was exchanged for NaMES (ΔErev = −2 ± 3 mV, Table 2), demonstrating that PCl- is negligible in the pIMCD cilium membrane. These data also demonstrate that polycystin-2’s selectivity is strictly cationic and distinct from that previously reported for polycystin 1-L1/2-L1 recorded in the cilia of RPE and MEF cells, which was ~6 x more selective for Ca2+ over Na+ and K+ (DeCaen et al., 2013).
 
+**Table 2.**
+ Transmembrane reversal potentials (Erev) measured from pIMCD and HEK-293 PKD2-GFP cilia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">External solution</th>
+      <th colspan="2">pIMCD, whole-cilium</th>
+      <th colspan="2">HEK-293 PKD2-GFP, whole-cilium</th>
+    </tr>
+    <tr>
+      <th>ΔErev (mean ± S.D.)</th>
+      <th>Px/PNa (mean ± S.D.)</th>
+      <th>ΔErev (mean ± S.D.)</th>
+      <th>Px/PNa (mean ± S.D.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaCl</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>NaMES</td>
+      <td>−2 ± 3 mV</td>
+      <td>0.96</td>
+      <td>Not tested</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>KCl</td>
+      <td>26 ± 3 mV</td>
+      <td>2.4 ± 0.3</td>
+      <td>23 ± 4 mV</td>
+      <td>2.4 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>CaCl2</td>
+      <td>−49 ± 4 mV</td>
+      <td>0.06 ± 0.04</td>
+      <td>−48 ± 3 mV</td>
+      <td>0.09 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>NMDG</td>
+      <td>−57 ± 4 mV</td>
+      <td>0.04 ± 0.02</td>
+      <td>−58 ± 4 mV</td>
+      <td>0.04 ± 0.02</td>
+    </tr>
+  </tbody>
+</table>
+
 We tested the effect of changing external calcium ([Ca2+] ex) while maintaining a constant level of Na+ (100 mM) on the magnitude on the inward ciliary current (Figure 5—figure supplement 1B). Here we observed that the inward current, presumably carried by Na+, was antagonized by [Ca2+] ex (IC50 = 17 mM). This appears to be a consistent feature of polycystin-2 and mutated forms of the polycystin-2 channels when recorded from oocytes and reconstitution preparations (Arif Pavel et al., 2016; Cai et al., 2004; Koulen et al., 2002; Vassilev et al., 2001). To validate our findings of ciliary relative permeability, we also compared the single channel conductance of inward Na+, K+, and Ca2+ when they were exclusively present in the pipette (cilium-attached configuration). Of the three ions tested, K+ conducted through ciliary polycystin-2 channels with the greatest inward conductance (γK = 144 ± 6 pS), followed by sodium (γNa = 89 ± 4 pS) and calcium (γCa = 4 ± 2 pS) (Figure 5). The inward Ca2+ single channel currents were only observed under high electrical driving forces – when the ciliary membrane was hyperpolarized more negative than −140 mV (Figure 5B,C). Note that the outward conductance for all three conditions ranged between 90–117 pS, suggesting that the outward conductance is likely a mixture of Na+ and K+ exiting the cilium. The inward single channel open events were brief, usually lasting less than 0.5 ms (INa open time 0.4 ± 0.2 ms at −100 mV), whereas those measured at positive potentials opened for 190 times longer (INa open time 76 ± 29 ms at 100 mV). Importantly, the inward and outward conductance were absent from pIMCD cilia patches measured from doxycycline-treated Arl13b-EGFPtg:cPkd2 animals when Ca2+ was used in the pipette (Figure 5—figure supplement 2A–C), demonstrating that the conductance (both inward and outward) is dependent on Pkd2 expression. When we compare the extrapolated ΔErev (−61 mV) from single channel Ca2+ and monovalent currents, we observe that PCa/Pmono = 0.04 when we assume that [Cacilia] is high (580 nM) (Delling et al., 2013) and the cumulative ciliary monovalent concentration (155 mM) is similar to the cytosol (Figure 5—figure supplement 2D). Thus, the relative permeability of ion conductance dependent on polycystin-2 expression agrees with the relative permeability measured from the cilia membrane and the polycystin-2 single channels currents. We conclude that the major polycystin-2 conductance is monovalent, with relatively little inward Ca2+ flux.
 
-## Ciliary polycystin-2 is sensitized by intraciliary free calcium
+![Figure 5.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig5-v1.jpg)
+
+**Figure 5.:** (A) Image of a cilia patched without breaking into the cilioplasm (‘on-cilium’ configuration). (B) Exemplar currents recorded with the indicated cation (110 mM) in the patch electrode. Expanded time scales in the grey boxes show that inward single channel currents are brief, often opening (O) and closing (C) within 1 ms. (C) Average single channel current amplitudes. Conductance (γ) estimated by fitting the average single channel currents to a linear equation. Note that the inward single channel events are small (~0.8 pA at −200 mV) when Ca2+ is used as the charge carrier in the pipette (inset, patch diagram); note outward currents are much larger. Outward conductances of 90 pS, 99 pS and 117 pS, and inward conductances of 4 pS, 89 pS, and 144 pS were measured when the pipette contained Ca2+, Na+ and K+, respectively. Inset, a cartoon of the ‘on-cilium’ patch configuration where cations within the patch electrode ([X+]) are exclusively capable of conducting inward currents.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Selectivity of the ciliary polycystin-2 current. Left, Example cilia current traces measured under different external cationic bi-ionic conditions. Middle, Time course of the magnitudes of inward (−100 mV, black circles) and outward (100 mV, white circles) currents with changes in the external solution. Right, Relative permeability of cations to Na+ through the polycystin-2 channel. (B) Attenuation of inward polycystin-2 sodium current in response to external calcium ([Ca]ex). Left, the effect of external calcium on the outwardly rectifying polycystin-2 cilia current measured in symmetrical sodium. Middle, corresponding time course of the magnitudes of inward (−100 mV, black circles) and outward (100 mV, white circles) currents upon changes in the extracellular solution. Right, relationship between external calcium concentration and percent block of the inward sodium current (Iinward) fit to the Hill equation. Number of cilia tested are indicated by the italicized number in parentheses.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Outward and B) inward single channel ciliary currents recorded from pIMCD cells harvested from doxycycline treated (red traces) and untreated (black traces) Arl13b- EGFPtg:cPkd2 transgenic mice. Pipette electrodes contained 100 mM CaCl2 and the ciliary membrane potentials were held at 100 and −100 mV for up to 60 s (exemplars of 10 s of recording are shown) to record the number of simultaneous open events (grey, (O1–O4). Expanded time scales are shown in the blue boxes. (C) Box and whisker plots comparing the maximum number of simultaneous open channels observed from the two treatment groups. Six cilia were tested for each treatment group. (D) Derived from Figure 5, the reversal potential for average single channel calcium currents. The change in reversal potential ΔErev (−61 mV) was calculated by subtracting the ECa (- 59 mV) from the monovalent (Emono; 2 mV) reversal potentials, shown in grey.
+
+### Ciliary polycystin-2 is sensitized by intraciliary free calcium
 
 Since intracellular calcium has been reported to sensitize polycystin-2 from the ER and cilia of cell lines (Cai et al., 2004; Kleene and Kleene, 2017) and the polycystin-like channel (also called polycystin -L or polycystin 2-L1) (DeCaen et al., 2016), we examined this property in pIMCD ciliary polycystin-2 channels. Inside-out cilia membrane single channel activity can be compared to varying levels of intraciliary free calcium ([free Ca2+]in) (Figure 6A). Most commonly, inside-out ciliary patches exhibited at least 3–4 active polycystin-2 channels, but some had only one polycystin-2 channel present (Figure 6B). We used these rare patches to determine that 3 μM [free Ca2+]in enhanced the open probability of the polycystin-2 current ~10 times (increasing Po from 0.034 ± 0.02 to 0.36 ± 0.07) and the mean open time ~6 times (increasing from 37 ± 26 ms to 215 ± 40 ms) compared to standard cytoplasmic concentrations of 90 nM [free Ca2+]in (Figure 6B–D). The half maximal enhancement of IMCD polycystin-2 open time was 1.3 μM. Previously, internal ciliary calcium was shown to negatively shift the voltage dependence of polycystin-2 channel activation in IMCD-3 cell lines (Kleene and Kleene, 2017). To determine internal calcium’s effect of on polycystin-2 inward current at the cilia’s resting membrane (RMPcilia = −18 mV) (Delling et al., 2013), we compared polycystin-2 single channels as we increased [free Ca2+]in. First, we measured single currents activated by voltage ramps (−100 to 100 mV) and subtracted the remaining ohmic current after channel inactivation (Figure 6—figure supplement 1A). At 600 nM [free Ca2+]in, the polycystin-2 channel typically remains closed at negative potentials (Figure 6—figure supplement 1B). However, when [free Ca2+]in was increased to 30 μM, the open events were more frequent, which increased in the total inward current ~10 fold (summing the single channel events; −13 pA to −122 pA at RMPcilia, Figure 6—figure supplement 1B,C). Similar to the observations made from the cilia current recorded from IMCD-3 cilia, increasing [free Ca2+]in 50-fold substantially shifts the voltage dependence of activation; Figure 6—figure supplement 1D). We also observed a ~ 10 x increase in the normalized conductance at RMPcilia(0.05 to 0.49), which was also observed at more negative potentials. In summary, ciliary calcium enhances both the inward and outward current, as is evident in the G/Gmax vs. voltage relation.
 
-## Polycystin-2 functions as a channel in primary cilia, but not in the plasma membrane
+![Figure 6.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig6-v1.jpg)
+
+**Figure 6.:** (A) Images recorded while establishing an inside-out cilium patch. Left, a high-resistance seal is formed on the cilium; Middle, the electrode is then lifted, ripping the cilium from the cell body (see Materials and methods); Right, cartoon depicting the inside of the cilium exposed to bath saline (blue) in which [Ca2+] can be adjusted. (B) pIMCD polycystin-2 single channel events recorded in the inside-out configuration. The membrane potential was held at +100 mV in symmetrical [Na+] while the internal [Ca2+] was altered for 40–60 s intervals. (C) The average open time duration relative to internal [Ca2+] (mean ± S.D.). (D) Average open probability as a function of internal [Ca2+], fit to the Hill equation (described in Materials and methods, mean ± S.D.). (E) Left, exemplar inside-out cilium patch records from pIMCD cilia and HEK-293 cilia with heterologously expressed polycystin-2 channels. Right, current histograms capturing multiple open channel events under high internal [Ca2+] conditions. Currents were normalized to the closed (0 pA) state amplitude for each internal [Ca2+].
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Inside-out cilia current traces captured before (left) and after leak subtraction (right). After 1–2 min in 30 μM internal calcium, the polycystin-2 currents inactivate, leaving only the leak current remaining. We averaged the leak current from five ramps (black) and subtracted it from the total current (grey), yielding the leak subtracted single channel currents (purple). (B) Six exemplar leak-subtracted single channel currents measured in 600 nM (left) and 30 μM (middle) internal calcium. For reference, the red line at −18 mV indicates the average expected cilia resting membrane potential. (C) Ensemble average of single channel currents recorded from 40 ramps. (D) Polycystin-2 conductance normalized to the maximum conductance measured in 30 μM internal calcium (top trace, purple). Conductance-voltage relationships were fit to a Boltzmann equation. Grey bar indicates where V-Erev approaches 0 mV. The V1/2 in 600 nM and 30 μM internal calcium were 158 mV and 15 mV, respectively.
+
+### Polycystin-2 functions as a channel in primary cilia, but not in the plasma membrane
 
 The above results confirm the location of functional ciliary polycystin-2 channels. Since the single channel recordings are made from the tips of cilia, polycystin-2 is present on the cilia membrane itself, not just the cilium/plasma membrane junction. However, native polycystin-2 channel are reportedly constitutively active in the plasma membrane of immortalized cell lines derived from kidney epithelial cells (mIMCD-3 and Madin-Darby canine kidney, MDCK, cells) (Luo et al., 2003). To test this possibility, we voltage clamped the plasma membrane of pIMCD cells harvested from Arl13b-EGFPtg:cPkd2 mice (Figure 7A; Video 2). Here, we typically observed an outwardly-rectifying Na+-permeant current, an inwardly-rectifying K+ current, and an apparent voltage-gated Ca2+ current (Figure 7B). However, when polycystin-2 was conditionally reduced, there was no difference in plasma membrane currents densities (Figure 7C). Polycystin-2 function has been implicated in calcium transients originating in the endoplasmic reticulum (ER), plasma membrane, and cilium (Ma et al., 2005; Nauli et al., 2003; Qian et al., 2003). However, the plasma membrane current-voltage relationship, inactivation kinetics and pharmacology are typical of L-type calcium currents and did not change when polycystin-2 was reduced in these cells (Figure 7D,E). Thus, our findings suggest that polycystin-2 does not constitute a significant portion of the plasma membrane current found in primary collecting duct epithelial cells and does not alter the native voltage-dependent calcium current.
 
-## Polycystin-2 is a ciliary channel but is not constitutively active on the plasma membrane in HEK-293 cells
+![Figure 7.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig7-v1.jpg)
+
+**Figure 7.:** (A) Images of a ciliated pIMCD epithelial cell patch-clamped on the plasma membrane (whole-cell mode). Scale bar = 5 μM. (B) Example plasma membrane ionic currents activated by a voltage ramp (grey line) while changing the extracellular saline conditions. (C) Average plasma membrane current density of Arl13b-EGFPtg:cPkd2, where animals treated with doxycycline was compared to untreated animals. Note that the average magnitudes of the plasma membrane currents were not significantly altered (mean ± S.E.M.). (A). (D) Pharmacological blockade of the voltage-gated calcium channel in the plasma membrane; three independent experiments. Top, exemplar calcium currents blocked by nifedipine. Bottom, time course of block and recovery of CaV currents. (E) Conditional polycystin-2 knockout does not alter the steady state voltage-gated calcium currents measured from the plasma membrane. Top, voltage protocol used to activate the calcium currents. Middle, exemplar leak-subtracted voltage-gated calcium currents from doxycycline-treated (red) and –untreated (black) Arl13b-EGFPtg:cPkd2 animals. Resulting plasma membrane average CaV densities compared from doxycycline-treated and control littermates.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Image of a voltage-clamped HEK-293 cell stably expressing polycystin-2-GFP. Note that the GFP signal is present in the primary cilium (arrow) and that the patch electrode is sealed onto the plasma membrane. Scale bar = 5 μM. (B) Top, resulting currents activated by a voltage ramp (grey line) under the indicated cationic conditions (in mM). Bottom, average current density for HEK-293 cells and those stably overexpressing polycystin-2-GFP. The current densities do not differ between the two cell types. (C) Pharmacological blockade of the voltage-gated potassium current (Kv) in the HEK-293 plasma membrane; three independent experiments. Top, Example Kv currents recorded before and after 4-aminopyridine (4-AP) exposure. Bottom, time course of block and recovery of Kv currents. (D) Overexpressed polycystin-2 does not increase Kv current. Steady-state Kv currents measured from the plasma membrane. Top, voltage protocol used to activate Kv currents. Middle, exemplar leak-subtracted Kv currents from HEK-293 and those stably expressing polycystin-2-GFP. Bottom, Kv current density of HEK-293 and HEK-293 polycystin-2-GFP cells. Note that Kv current measured from HEK-293 cells is not different in HEK-293 cells overexpressing polycystin-2-GFP.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Stably expressing GFP-polycystin-2 HEK-293 cells were fixed, immunolabeled with rabbit anti-Arl13B primary antibody, and detected by a secondary conjugated anti-rabbit Alexa 569 antibody (red). Nuclei were stained with Hoechst 33342; three independent experiments. Scale bars = 10 μm. (B) Stably-expressing polycystin-2-GFP HEK-293 cells were fixed, immunolabeled with rabbit anti-Arl13B primary antibody, and detected by a secondary conjugated anti-rabbit Alexa 569 antibody (red). Nuclei were stained with Hoechst 33342; three independent experiments. Note that the Arl13B and polycystin-2-GFP signal colocalized to the cilium. (C) Live-cell image of an HEK-293 polycystin-2-GFP-labelled cilium patched in the on-cilium configuration. Note: the cilium’s tip is engulfed in the lumen of the electrode. Scale bars = 10 μM. (D) Exemplar single-channel currents recorded with a 100 mM NaCl-containing patch electrode. (E) Resulting outward and inward conductances (γ) estimated by fitting the single-channel currents to a linear equation.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/33183/elife-33183-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Image of a voltage-clamped cilium from HEK-293 cells stably expressing polycystin-2-GFP. Note that the GFP signal and/or cilia is not always present on HEK-293 cells. Scale bar = 10 μM. (B) The selectivity of the ciliary current measured from HEK-293 polycystin-2-GFP cells. Left, Example ciliary current traces measured under different extracellular cationic bi-ionic conditions. Right, relative permeability of cations to Na+ through the polycystin-2 channel. (C) The majority of the ciliary current is conducted through the ciliary membrane. Right, Average current traces from five voltage ramps acquired before and after the cilia is disconnected from the cell membrane. Left, time course of peak current amplitudes before (white circles) and after (red circles) the cilia is separated from the cell. (D) Left, average current traces from cells treated with scrambled or polycystin-2-mRNA-targeted siRNAs. Right, Box (mean ± S.E.M.) and whisker (mean ± S.D.) plots of ciliary total outward (+100 mV) current amplitude. Averages are indicated by the red lines. See Figure 7—figure supplement 3—source data 1- ciliary current amplitudes of cells treated with PKD2-mRNA-targeted siRNAs . The GFP signal was noticeably reduced in antisense-treated polycystin-2 cells. Few cilia had as similarly intense fluorescence as the patched cilia (data not shown).
+
+![Video 2.](https://cdn.elifesciences.org/articles/33183/elife-33183-video2.mp4.jpg)
+
+**Video 2.:** Same method as Video 1. The cell membrane is being sealed by the patch electrode (right) and the primary cilium (left) is not in contact with the electrode. Scale bar = 10 µm.
+
+### Polycystin-2 is a ciliary channel but is not constitutively active on the plasma membrane in HEK-293 cells
 
 Previously, our attempts to record heterologously-expressed polycystin-2 currents from the plasma membrane using transient transfection from multiple cell lines were unsuccessful. Thus, we generated two HEK-293 stable cell lines which overexpressed either human PKD2 with the C-terminus (PKD2-GFP) or N-terminus tagged with GFP (GFP-PKD2). In fixed preparations and live cells viewed with confocal and standard fluorescence microscopy, GFP-polycystin-2 was intracellular, while polycystin-2-GFP also localized to primary cilia (Figure 7—figure supplement 1A; Figure 7—figure supplement 2A,B; Video 3). The ciliary localization of polycystin-2-GFP in HEK-293 cells was confirmed in super-resolution images in which GFP co-localized with the known ciliary proteins, acetylated tubulin, and adenylyl cyclase (AC3) (Video 4; Video 5, respectively). However, we could not rule out polycystin-2 functioning in the plasma membrane of PKD2-GFP cells by fluorescence alone. To address this, we voltage clamped the HEK-293 PKD2-GFP whole-cell ion currents and found no difference when compared to parental HEK-293 cells (Figure 7—figure supplement 1D, surface area of cilia <2% of total plasma membrane). Since native ciliary pIMCD polycystin-2 channels preferentially conduct K+, we compared the plasma membrane potassium current using steady-state voltage protocols. The resulting current-voltage relationship and block by 4-AP (4-aminopyridine, a K+ channel antagonist) suggests that the HEK-293 K+ current is conducted by native voltage-gated potassium channels (Figure 7—figure supplement 1C), commonly reported in these cells (Foley and Boccuzzi, 2010; Sands and Layton, 2014; Spandidos et al., 2008; Wilkes et al., 2017). Importantly, the kinetics and magnitude of the plasma membrane potassium current was not altered when PKD2-GFP was stably overexpressed (Figure 7—figure supplement 1D). Thus, overexpressed PKD2-GFP by itself does not appear to form a constitutively active or voltage-gated channel in the nonciliary plasma membrane.
+
+![Video 3.](https://cdn.elifesciences.org/articles/33183/elife-33183-video3.mp4.jpg)
+
+**Video 3.:** Here the whole-cell configuration is formed by the patch electrode (left) on the cell body and the primary cilium (lower left) is not in contact with the electrode. The electrode is moved along the y-axis while adjusting the focal plane to demonstrate that the cell membrane is sealed on the patch electrode, not the cilia membrane. Scale bar = 5 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/33183/elife-33183-video4.mp4.jpg)
+
+**Video 4.:** Paraformaldehyde-fixed HEK-293 cells stably expressing polycystin-2-GFP (green) were immunolabeled with anti-acetylated tubulin antibody (red). The images were captured using Structured Illumination Microscopy (SIM; Nikon N-SIM scope) and 3D images rendered using Imaris software (Oxford Instruments). Scale bar = 3 μm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/33183/elife-33183-video5.mp4.jpg)
+
+**Video 5.:** Paraformaldehyde-fixed HEK-293 cells stably expressing polycystin-2-GFP (green) were immunolabeled with anti-adenylyl cyclase three antibody (red). The images were recorded using a Nikon N-SIM scope and 3D images rendered using Imaris software (Oxford Instruments). Scale bar = 3 μm.
 
 In contrast to the whole-cell recordings above, when we patch clamped the ciliary membrane of the PKD2-GFP HEK-293 cells, a large outwardly rectifying single channel conductance (γ = 105 ± 4 pS) was observed (Figure 7—figure supplement 2C–E). The PKD2-GFP HEK-293 ciliary inward conductance (γ = 90 ± 3 pS) was similar to the native polycystin-2 channels found in pIMCD cells (γ = 89 ± 4 pS) when sodium was used as a charge carrier. In the whole-cilium configuration, the cilia membrane primarily conducted K+ and Na+ with little permeation by Ca2+ (Figure 7—figure supplement 3A,B). To determine the identity of the outward rectifying current, we tested two siRNAs targeted to the overexpressed human PKD2 and observed a 29% and 32% decrease in outward current compared to scrambled controls (Figure 7—figure supplement 3D, Figure 7—figure supplement 3D—source data 1-ciliary current amplitudes of cells treated with PKD2-mRNA-targeted siRNAs). Endogenous human polycystin-2 channels may be present in the cilia of HEK-293 cells and may contribute to some of the measured current. Future work genetically removing endogenous PKD2 expression in HEK-293 cells will be necessary to study polycystin-2 channels in isolation and the impact of ADPKD-causing variants without the possibility of contaminating endogenous channels. To determine the localization of the channels mediating this current, we removed the cilia from the cell body by obtaining excised whole-cilium configuration recordings (Figure 7—figure supplement 3C). Excised patches from PKD2-GFP overexpressing HEK-293 cells retained an average of 44 ± 21% of the whole-cilium current. This percentage is highly variable since the amount of membrane preserved after excision varies between patches. Thus, it is unclear if the missing 56% of the ciliary current originated from the disconnected cilia membrane or near the cilia-plasma membrane junction. As found for the polycystin-2 channels in the pIMCD cilia, increasing internal calcium stimulated multiple open polycystin-2 channels in the inside-out patch configuration of HEK-293 cilia (Figure 6E). Thus, ciliary polycystin-2 currents on PKD2-GFP overexpressing HEK-293 cells reproduces the ion selectivity and internal calcium sensitization as found in the native polycystin-2 channels of pIMCD cilia.
 
 ## Discussion
 
-## Arl13b-EGFPtg:cPkd1 and Arl13b-EGFPtg:cPkd2 as new mouse models for cilia visualization during ADPKD progression
+### Arl13b-EGFPtg:cPkd1 and Arl13b-EGFPtg:cPkd2 as new mouse models for cilia visualization during ADPKD progression
 
 We confirmed cyst progression upon reduction of Pkd1 or Pkd2 in adult renal collecting duct epithelia. Because the mice also expressed the Arl13b-EGFPtg transgene, we could compare the effects of reduced polycystins on cilia formation. Conditional ablation of either gene did not block the formation of cilia in adult collecting ducts, consistent with findings in the embryonic node, where constitutive global repression of polycystin-2 had no effect on cilia number (Field et al., 2011). Unexpectedly, we observed elongated and twisted cilia, a feature that became more pronounced as the cystic phenotype progressed. These data support the hypothesis that ciliary polycystin-1 and polycystin-2 are essential to the maintenance of normal renal tubular cell differentiation. It is important to point out that the observed altered ciliary morphology and cyst formation are not necessarily causally related. Currently, we do not understand how loss of polycystins affect cilia morphology, but hypothesize that they alter ciliary transport or modification of proteins shuttling through or sequestered within cilia.
 
-## Polycystin-2 is primarily a monovalent channel in the cilium
+### Polycystin-2 is primarily a monovalent channel in the cilium
 
 A commonly held hypothesis is that polycystin-1 and polycystin-2 form a calcium-permeant channel directly involved in aberrant cytoplasmic calcium signaling (Pei, 2001). Previous work measuring reconstituted polycystin-2 channels from heterologous and native sources report conflicting voltage sensitivity and ion selectivity (Pablo et al., 2017). Here, by directly measuring channels in primary cilia, we have shown that polycystin-2 is an essential subunit for the outwardly rectifying current. In primary cilia of native kidney tubular epithelial cells, polycystin-2 current is relatively selective for monovalent cations (Px/PNa = 2.4 and 1, for K+ and Na+, respectively), with comparatively little calcium permeation (Ca2+ ~ NMDG).
 
@@ -104,23 +312,23 @@ The relative permeabilities of Na+ and K+ are relatively consistent between Klee
 
 It is important to note that neither we nor the Kleene group found inward calcium-mediated single channel events from potentials ranging from 0 mV to −100 mV (personal communication with Steven Kleene, Univ. of Cincinnati). However, we were able to resolve unitary single channel events under non-physiological conditions in which the external calcium was high (110 mM) and the cilium’s membrane potential was very hyperpolarized (more negative than −120 mV). Thus, there would be little calcium influx into cilia under physiological conditions since the resting cilia membrane potential is only −18 mV (Delling et al., 2013). Nonetheless, aberrant calcium signaling has been observed from cells expressing mutant polycystin-2 channels and interpreted as due to polycystin-2 function as an ER calcium-release channel (Cai et al., 2004; Ćelić et al., 2012), a function we have not investigated. Since Ca2+ changes in the cytoplasm propagate into cilium (Delling et al., 2016), we cannot rule out the possibility that polycystin-2 in the ER alters [Ca2+]cilium. Also, although polycystin-2’s Ca2+ conductance is small, the cilium is a < 1 fL restricted space in which localized proteins might be influenced directly by occasional ciliary polycystin-2 channel Ca2+ flux. However, it should not be overlooked that the major consequence of polycystin-2’s selectivity is to depolarize the cilium and raise [Na+]cilium. If Na+/Ca2+ exchangers or Na+ -dependent kinases are found in cilia, polycystin-2 activity could underlie a slow, cumulative signal via calcium changes and/or kinase activity.
 
-## Potential polycystin-2-specific function in kidney
+### Potential polycystin-2-specific function in kidney
 
 Renal epithelial cilia are exposed to urine, which contains varying ion concentrations as a function of position in the nephron. Human and murine distal collecting duct epithelial cells are exposed to high external concentrations of potassium (90–260 mM) and sodium (53–176 mM) ions, which contributes to the hyperosmolarity of urine (390–650 mOsm being considered normal, but can vary beyond this range depending on hydration state) (Callís et al., 1999; Sands and Layton, 2014). Ciliary influx through polycystin-2, driven by these extreme extracellular concentrations of Na+ and K+ ions, may depolarize the plasma membrane sufficiently to activate voltage-gated calcium channels present in the plasma membrane. A recent computational study finds that opening of single ciliary polycystin 2-L1 channel (~150 pS) is sufficient to trigger action potentials in the soma of cerebrospinal fluid-contacting neurons at standard concentrations in blood plasma (Orts-Del'Immagine et al., 2016). Future electrophysiological studies using current clamp will determine whether the activation of ion channels in the ciliary membrane is sufficient to depolarize the plasma membrane of pIMCD cells, if there is any polycystin-1-dependent polycystin-2 function that has different ion selectivity or permeability compared to polycystin-1-independent function, or if there are more direct consequences of polycystin-2 expression for other ciliary compartment proteins.
 
-## Ciliary polycystin-2 channels are activated by internal calcium – relevance to kidney
+### Ciliary polycystin-2 channels are activated by internal calcium – relevance to kidney
 
 We have demonstrated that extraciliary Ca2+ can block monovalent conductance through polycystin-2, a common phenomenon in selective and non-selective cation channels, and responsible for the anomalous mole fraction effect (Eisenman et al., 1986; Friel and Tsien, 1989; Sauer et al., 2013). This effect is likely due to a relatively higher affinity for Ca2+ ions in the pore (IC50 = 17 mM), thus blocking the channel to the inward passage of Na+ and K+ ions. Recently, polycystin-2 structures were captured in the ‘single’ and ‘multi-ion mode' states; 20 mM Ca2+ and 150 mM Na+ were present during protein purification. Ca2+ bound at the entrance of the selectivity filter suggests either a low Ca2+ conducting state or a blocked state, in which Ca2+ ions prevent Na+ ion permeation in the multi-ion mode (Grieben et al., 2017; Wilkes et al., 2017). These studies provide a structural context for the anomalous mole fraction effects we observe in polycystin-2 currents from the pIMCD cilia and those reported by other groups measuring polycystin-2 channels from other preparations (Arif Pavel et al., 2016; Cai et al., 2004; Koulen et al., 2002; Vassilev et al., 2001). What, if any, effect might anomalous mole fraction effects have on the ciliary polycystin-2 channel? In contrast to the physiological, typically tightly-controlled interstitial [Ca2+] (~1.8 mM), urinary [Ca2+] in humans and mice is highly variable (5–20 mM) during normal diurnal activity (Foley and Boccuzzi, 2010). Urinary Ca2+ may have physiologically-relevant effects in dynamically limiting the polycystin-2 monovalent current through the cilium. When calcium-wasting occurs (~15 mM tubular [Ca2+]), more than half of Na+ and K+ influx through polycystin-2 would be antagonized (see Figure 5—figure supplement 1). Thus, ciliary polycystin-2 would be most active during low [Ca2+] in the tubule urine. On the other side of the cilia membrane, shifting the internal [Ca2+] from resting levels (600 nM) to 30 μM activates the polycystin-2 current by increasing the open probability and the total inward conductance ~10 fold. Internal Ca2+-dependent potentiation has been reported in polycystin-2 channels reconstituted from the ER into bilayers, but these channels inactivate at [free-Ca2+]in concentrations > 1 μM unless mutated at C-terminal phosphorylation sites (Cai et al., 2004). Previous measurements of resting [free-Ca2+]in from RPE cilia (580 nM) (Delling et al., 2013) and from mouse embryonic node cilia (305 nM) (Delling et al., 2016) are 3–6 times higher than in the cell body. Primary cilia [free-Ca2+]in increases to levels greater than 1 μM when mIMCD-3 cells (and other cell types) are exposed to flow or shear stress (Delling et al., 2013; Su et al., 2013). Recent work has demonstrated that primary cilia are not Ca2+-responsive mechanosensors themselves; rather, mechanically-induced calcium waves are initiated from other locations to raise ciliary [Ca2+] (Delling et al., 2016). Thus, increasing cytoplasmic [free-Ca2+] by mechanical or other stimuli, may increase cilioplasmic calcium and potentiate ciliary polycystin-2 channel activity. Consistent with the cilia channel recordings made by Kleene and Kleene (Kleene and Kleene, 2017), a 50x increase in the cilioplasmic calcium reduces the voltage threshold required to activate polycystin-2 from our pIMCD cilia. If the cilia membrane potential of collecting duct cells is as depolarized as the cilia of RPE cells (−18 mV), then we can expect an ~10 x increasing polycystin-2 opening when cytoplasmic calcium waves reach the cilioplasm.
 
-## Polycystin-2 and polycystin 2-L1, independently form ion channels in primary cilia in disparate tissues
+### Polycystin-2 and polycystin 2-L1, independently form ion channels in primary cilia in disparate tissues
 
 Previously we characterized the ciliary current from retina pigmented epithelial cells (RPE) and mouse embryonic fibroblasts (MEF) and demonstrated that they require the polycystin family proteins, polycystin 1-L1 and polycystin 2-L1, based on attenuation of the cilia current by siRNA and genetic ablation of these two genes (DeCaen et al., 2013). Using similar methodology, including cilia electrophysiology from primary collecting duct cells, we have determined that polycystin-2 is at least a component of Icilia from these cells. Thus, polycystin-2 and polycystin 2-L1 may be ciliary ion channels inhabiting distinct cellular tissues. Although the single channel conductance and sensitization of the RPE and MEF Pkd1-L1/2-L1-encoded cilia channel (Inward γNa = 80 ± 3 pS) (DeCaen et al., 2013) is similar to the pIMCD cilia polycystin-2 channel (Inward γNa = 89 ± 4 pS), their Ca2+ selectivity is distinct. Also, we showed here that the ciliary pIMCD polycystin-2 channel is blocked by external Ca2+ but is sensitized by high (EC50 = 1.2 μM) internal Ca2+,~10 times the typical resting cytoplasmic concentration. Heterologous polycystin 2-L1 channels are also sensitized by increases in [Ca2+]in (although the sensitivity range has not been determined) based on cytoplasmic Ca2+ uncaging studies and expected Ca2+ accumulation in whole cell experiments (DeCaen et al., 2016). However, a key difference between pIMCD (polycystin-2) and RPE (polycystin 2-L1) ciliary channels are that polycystin 2-L1 channels preferentially conduct Ca2+ (PCa/Na = 6–19) (DeCaen et al., 2013; DeCaen et al., 2016) over monovalent ions. Mutagenesis studies of heterologous polycystin 2-L1 channels has demonstrated that Ca2+ permeation is at least partly due to an additional glutamate residue (D525) on the external side of the selectivity filter, not present in polycystin-2 (DeCaen et al., 2016). The physiological implications for the differential cilia expression of polycystins and attendant differences in ion selectivity is not known.
 
-## Polycystin-2 structural considerations
+### Polycystin-2 structural considerations
 
 Soon after these studies, polycystin-2 core structures were solved using single-particle electron cryo-microscopy in which the polycystin-2 channels formed a homotetrameric structure (Grieben et al., 2017; Shen et al., 2016), independent of coiled-coil domains (originally posited to form an interaction motif with polycystin-1 subunits [Qian et al., 1997]). As reported (Shen et al., 2016), replacement of the polycystin 2-L1 filter with that of polycystin-2 conferred monovalent selectivity to the otherwise Ca2+-permeant polycystin 2-L1 channel. However, it is important to note that the native ciliary polycystin-2 channel’s ion selectivity, as described here, is not completely recapitulated in the polycystin-2 filter chimera, where single channel Ca2+ conductance was~27 fold smaller than K+ (γCa = 8 ± 2 pS, twice as large as the native cilia polycystin-2 channels, γCa = 4 ± 1 pS). Nonetheless, the native polycystin-2 cilia channel and the polycystin-2 filter chimera share similar ion selectivity, where K+ is favored over Na+ and Ca2+ as reflected in the magnitudes of single channel conductance (pIMCD cilia γK = 144 ± 6 pS, γNa = 89 ± 4 pS; polycystin-2 chimera γK = 218 ± 3 pS, γNa = 139 ± 3 pS) and relative permeability (Px/PNa pIMCD cilia = 2.4: 1: 0.06 and polycystin-2 chimera = 2.2: 1: 0.5 for K+, Na+ and Ca2+ respectively).
 
-## Loss of polycystin-1 does not alter polycystin-2 ciliary trafficking or polycystin-2 mediated ciliary currents
+### Loss of polycystin-1 does not alter polycystin-2 ciliary trafficking or polycystin-2 mediated ciliary currents
 
 Based on the two-hit hypothesis of ADPKD, inherited haploinsufficiency of either polycystin-1 and polycystin-2 and a second acquired somatic mutation is required for disease progression. It was reported that interaction between polycystin-1 and polycystin-2 is required for cell plasma membrane trafficking of the complex (Chapin et al., 2010; Gainullin et al., 2015; Hanaoka et al., 2000), but their interdependence for ciliary localization is controversial. In some studies, polycystin-2 is absent from primary cilia without polycystin-1 or vice versa (Gainullin et al., 2015; Kim et al., 2014), while others showed polycystin-2 traffic to cilia is independent of polycystin-1 (Cai et al., 2014; Geng et al., 2006; Hoffmeister et al., 2011). Our data support the view that polycystin-2 can traffic to primary cilia of pIMCD cells in the absence of polycystin-1. The differences with some of the previous reports may due to the different experimental systems. We employed isolated pIMCD cells with few or no passages, while others used cell lines (mIMCD3, HEK-293, LLC-PK1, or Renal Cortical Tubule Epithelial; RCTE) or cells overexpressing proteins. Another difference is that our mice express the cilia marker Arl13b-EGFP, which might affect ciliary trafficking. There are no other studies reporting this mouse model to date.
 
@@ -130,52 +338,120 @@ Our genomic PCR data (Figure 1—figure supplement 2A and E) cannot rule out the
 
 As a final caveat, our results cannot exclude the possibility that polycystin-1 may associate with polycystin-2 in the cilium or perhaps in the membrane of the endoplasmic reticulum or Golgi. It is also possible that polycystin-1 may still modulate ciliary currents, perhaps indirectly as a receptor for extracellular ligands, or through direct association. However, our findings demonstrate that polycystin-1 is not essential for basal activity of polycystin-2 in primary cilia of pIMCD cells. Further work will likely refine the mechanism of the two-hit model of ADPKD progression.
 
-## Polycystin-2 is not a constitutively active ion channel in the plasma membrane
+### Polycystin-2 is not a constitutively active ion channel in the plasma membrane
 
 In previous work, we established that polycystin 2-L1 can form a constitutively active ion channel in the plasma membrane and in primary cilia (DeCaen et al., 2013, DeCaen et al., 2016). We also reported that polycystin-2 did not appear to function on the plasma membrane, where HEK-293 and CHO cells transiently overexpressing polycystin-2, with or without polycystin-1, have the same level of plasma membrane cation currents observed in untransfected cells (DeCaen et al., 2013; Shen et al., 2016). In this manuscript, we present several lines of evidence suggesting that polycystin-2, unlike polycystin 2-L1, does not constitutively function in the plasma membrane in kidney epithelial cells. First, conditional knockout of polycystin-2 does not alter the major cation currents found in the plasma membrane of primary collecting duct epithelial cells. Second, we did not observe differences in plasma membrane current measured from HEK-293 cells stably-expressing PKD2-GFP in parental cells. While it is possible that polycystin-2 in the plasma membrane could be stimulated by a ligand such as Wnt3a, Wnt9b, and triptolide, we have not been able to reproduce activation of heterologous polycystin-2 with these reagents (Kim et al., 2016; Leuenroth et al., 2007; Ma et al., 2005). Functional polycystin-2, heterologously expressed in the plasma membrane of Xenopus laevis oocytes, required an F604P mutation near its intracellular gate (Arif Pavel et al., 2016), similar to mutations required for TRPML plasma membrane function (Grimm et al., 2012; Xu et al., 2007b). The polycystin-2 F604P current was selective for potassium and sodium, but blocked by extracellular calcium and magnesium. Our attempts to record overexpressed polycystin-2 F604P membrane currents in mammalian cells have been unsuccessful (Shen et al., 2016), but such expression in Xenopus oocytes has been reproduced (unpublished data, courtesy of Michael Sanguinetti, Univ. Utah). What is clear is that wt polycystin-2 has no measurable constitutive activity in the plasma membrane in either mammalian or Xenopus expression systems.
 
-## Polycystin-2-GFP cilia recording for detection of heterologous expression
+### Polycystin-2-GFP cilia recording for detection of heterologous expression
 
 Other groups have observed epitope-labeled polycystin-1 and polycystin-2 in HEK-293 cell primary cilia (Gerdes et al., 2007; Lauth et al., 2007). C-terminal GFP-tagged polycystin-2 enriches in primary cilium when stably expressed in HEK-293 cells. We observed that N-terminal GFP-tagged polycystin-2 fails to localize to the cilium, suggesting that the sensor in this position interferes with trafficking. It is possible that the N-terminal GFP tag may interfere with the amino-terminal cilia-localization sequence (R6VXP)(Geng et al., 2006) and likewise, the C-terminal GFP tag may interfere with the ER retention sequence found in the C-terminus (Cai et al., 1999). However, since we have demonstrated that native (untagged) polycystin-2 is functionally expressed in cilia of collecting duct epithelia, the C-terminally-tagged polycystin-2 over-expressed in HEK-293 cilia appears to properly localize. Like many overexpressed ion channels, we observed a high amount of GFP fluorescence from N- and C-terminally-tagged polycystin 2-L1 within intracellular compartments. Polycystin-2 in the ER has been shown to be sensitized by cytoplasmic calcium, triggering Ca2+-induced Ca2+ release, possibly through direct interaction with the IP3R channel (Koulen et al., 2002; Vassilev et al., 2001). However, we did not examine polycystin-2 function in the ER or how cilia polycystin-2 may alter intracellular store calcium release. Future work should determine if polycystin-2 channels function in ER membranes of native tissue and if differential localization confers unique channel properties. These findings present new avenues to study mutant forms of polycystin-2 that cause ADPKD. This method could be used to determine which ADPKD forms of polycystin-2 are gain-of-function or loss-of-function, and perhaps alter channel trafficking to cilia. Ultimately, outcomes from these studies could form a rational basis for polycystin-2 dysregulation in ADPKD and enhance our basic understanding of ciliary ion channel function in cell biology.
 
 ## Materials and methods
 
-## Electrophysiology
+### Electrophysiology
 
-All electrophysiology reagents used were manufactured by either Sigma Aldrich (St. Louis, MO) or Life Technologies (Carlsbad, CA). . Ciliary ion currents were recorded using borosilicate glass electrodes polished to resistances of 14–18 MΩ using the cilium patch method previously described (DeCaen et al., 2013). Holding potentials were −60 mV unless otherwise stated. The pipette standard internal solution (SIS) contained (in mM): 90 NaMES, 10 NaCl, 10 HEPES, 10 Na4-BAPTA (Glycine, N, N'-[1,2-ethanediylbis(oxy-2,1-phenylene)]bis[N-(carboxymethyl)]-,tetrasodium); pH was adjusted to 7.3 using NaOH. Free [Ca2+] was estimated using Maxchelator (Bers et al., 1994) and adjusted to 100 nM by adding CaCl2. Standard bath solution (SBS) contained 140 NaCl, 10 HEPES, 1.8 CaCl2; pH 7.4. Unless otherwise stated, ‘whole cilia’ ionic currents were recorded in symmetrical [Na+]. All solutions were osmotically balanced to 295 (±6) mOsm with mannitol. Data were collected using an Axopatch 200B patch clamp amplifier, Digidata 1440A, and pClamp 10 software. Whole-cilium and excised patch currents were digitized at 25 kHz and low-pass filtered at 10 kHz. To accurately measure membrane reversal potential, five current pulses from voltage ramps were averaged. Extra-membrane conditions were changed using a Warner Perfusion Fast-Step (SF-77B) system in which the patched cilia and electrode were held in the perfusate stream. Data were analyzed by Igor Pro 7.00 (Wavemetrics, Lake Oswego, OR). The reversal potential, Erev was used to determine the relative permeability of K+, Na+ and NMDG (PX/PNa) using the following equation:PXPNa=αNaeαXe[exp(ΔErevRT/F)]where Erev, α, R, T and F are the reversal potential, effective activity coefficients for the cations (i, internal and e, external), the universal gas constant, absolute temperature, and the Faraday constant, respectively. The effective activities (αx) were calculated using the following equations:αx=γx[X]where γx is the activity coefficient and [X] is the concentration of the ion. For calculations of membrane permeability, activity coefficients (γ) were calculated using the Debye-Hückel equation: 0.79, 0.72, 0.30 and 0.24 correspond to Na+, K+, Ca2+ and NMDG+, respectively (γ for NMDG+ from (Ng and Barry, 1995). To determine the relative permeability of Ca2+ to Na+, the following equation was used:PCaPNa={αNai[exp(ErevFRT)][exp(ErevFRT)+1]}4αCae
+All electrophysiology reagents used were manufactured by either Sigma Aldrich (St. Louis, MO) or Life Technologies (Carlsbad, CA). . Ciliary ion currents were recorded using borosilicate glass electrodes polished to resistances of 14–18 MΩ using the cilium patch method previously described (DeCaen et al., 2013). Holding potentials were −60 mV unless otherwise stated. The pipette standard internal solution (SIS) contained (in mM): 90 NaMES, 10 NaCl, 10 HEPES, 10 Na4-BAPTA (Glycine, N, N'-[1,2-ethanediylbis(oxy-2,1-phenylene)]bis[N-(carboxymethyl)]-,tetrasodium); pH was adjusted to 7.3 using NaOH. Free [Ca2+] was estimated using Maxchelator (Bers et al., 1994) and adjusted to 100 nM by adding CaCl2. Standard bath solution (SBS) contained 140 NaCl, 10 HEPES, 1.8 CaCl2; pH 7.4. Unless otherwise stated, ‘whole cilia’ ionic currents were recorded in symmetrical [Na+]. All solutions were osmotically balanced to 295 (±6) mOsm with mannitol. Data were collected using an Axopatch 200B patch clamp amplifier, Digidata 1440A, and pClamp 10 software. Whole-cilium and excised patch currents were digitized at 25 kHz and low-pass filtered at 10 kHz. To accurately measure membrane reversal potential, five current pulses from voltage ramps were averaged. Extra-membrane conditions were changed using a Warner Perfusion Fast-Step (SF-77B) system in which the patched cilia and electrode were held in the perfusate stream. Data were analyzed by Igor Pro 7.00 (Wavemetrics, Lake Oswego, OR). The reversal potential, Erev was used to determine the relative permeability of K+, Na+ and NMDG (PX/PNa) using the following equation:
+
+$$
+\frac{P_{X}}{P_{Na}}=\frac{\alpha_{Nae}}{\alpha_{Xe}}[exp(\frac{ΔE_{rev}}{RT/F})]
+$$
+
+where Erev, α, R, T and F are the reversal potential, effective activity coefficients for the cations (i, internal and e, external), the universal gas constant, absolute temperature, and the Faraday constant, respectively. The effective activities (αx) were calculated using the following equations:
+
+$$
+\alpha_{x}=\gamma_{x}[X]
+$$
+
+where γx is the activity coefficient and [X] is the concentration of the ion. For calculations of membrane permeability, activity coefficients (γ) were calculated using the Debye-Hückel equation: 0.79, 0.72, 0.30 and 0.24 correspond to Na+, K+, Ca2+ and NMDG+, respectively (γ for NMDG+ from (Ng and Barry, 1995). To determine the relative permeability of Ca2+ to Na+, the following equation was used:
+
+$$
+\frac{P_{Ca}}{P_{Na}}=\frac{{\alpha_{Nai}[exp(\frac{E_{rev}F}{RT})][exp(\frac{E_{rev}F}{RT})+1]}}{4\alpha_{Cae}}
+$$
 
 Erev for each condition was corrected to the measured liquid junction potentials (−4.4 to 3.4 mV).
 
-For the experiments shown in Figure 7 and Figure 5—figure supplement 1A, the internal pipette saline contained 90 mM NaCl, 10 HEPES and 5 Na4-BAPTA and pH was adjusted with NaOH. The extracellular bath solution contained 110 mM X-Cl, 10 HEPES and pH was adjusted with X-OH, where X corresponds to the cation tested (Na+, K+, Ca2+, NMDG+). Monovalent-based extracellular solutions contained 0.1 mM EGTA to remove residual divalent cations. The NaMES-based extracellular solution contained: 110 NaMES (sodium methanesulfonate); 10 HEPES; 0.1 EGTA and pH was adjusted with Tris base (tris(hydroxymethyl)aminomethane). For ‘on-cilia’ single channel recording, the resting membrane potential was neutralized with a high K+ bath solution that contained: 110 KCl, 20 NaCl, 10 HEPES, 1.8 CaCl2, and adjusted to pH 7.4 using KOH. To test the inward single channel conductance, the intracellular pipette solution was replaced with one of the above extracellular solutions. For ‘inside-out’ cilia recordings, the pipette (extra-ciliary) solution contained SBS and the bath (intraciliary) solution contained 150 NaCl, 10 HEPES, 5 EGTA and free [Ca2+] adjusted by adding CaCl2. When a cilium was excised from the cell, the severed end of the cilium commonly re-seals itself, which isolates the intraciliary membrane from the bath and limits the effect of bath applied exchange on the inside of the cilium. To avoid this, excised cilia patches were briefly pressed against the surface of a bead made of Sylgard 184 (Dow Corning) to rupture the cilia at the opposing end. In Figure 6—figure supplement 1D, the conductance measurement was made by dividing the concatenated single channel currents against the holding potential. In Figure 5—figure supplement 1B, we correct for rundown of the cilia current (Icorrected) by fitting the control (nominally calcium-free period) inward current to a linear equation (y = mx + b). The difference between ICa (measured with calcium present) and Icorrected was then normalized: [(ICa − Icorrected)/Icorrected]×100. The potency of inward sodium current block was determined by fitting the percent inward current block and calcium concentration relationship to the Hill equation:y=Iminimum+(Imaximum−Iminimum)1+[IC50Cae]K
+For the experiments shown in Figure 7 and Figure 5—figure supplement 1A, the internal pipette saline contained 90 mM NaCl, 10 HEPES and 5 Na4-BAPTA and pH was adjusted with NaOH. The extracellular bath solution contained 110 mM X-Cl, 10 HEPES and pH was adjusted with X-OH, where X corresponds to the cation tested (Na+, K+, Ca2+, NMDG+). Monovalent-based extracellular solutions contained 0.1 mM EGTA to remove residual divalent cations. The NaMES-based extracellular solution contained: 110 NaMES (sodium methanesulfonate); 10 HEPES; 0.1 EGTA and pH was adjusted with Tris base (tris(hydroxymethyl)aminomethane). For ‘on-cilia’ single channel recording, the resting membrane potential was neutralized with a high K+ bath solution that contained: 110 KCl, 20 NaCl, 10 HEPES, 1.8 CaCl2, and adjusted to pH 7.4 using KOH. To test the inward single channel conductance, the intracellular pipette solution was replaced with one of the above extracellular solutions. For ‘inside-out’ cilia recordings, the pipette (extra-ciliary) solution contained SBS and the bath (intraciliary) solution contained 150 NaCl, 10 HEPES, 5 EGTA and free [Ca2+] adjusted by adding CaCl2. When a cilium was excised from the cell, the severed end of the cilium commonly re-seals itself, which isolates the intraciliary membrane from the bath and limits the effect of bath applied exchange on the inside of the cilium. To avoid this, excised cilia patches were briefly pressed against the surface of a bead made of Sylgard 184 (Dow Corning) to rupture the cilia at the opposing end. In Figure 6—figure supplement 1D, the conductance measurement was made by dividing the concatenated single channel currents against the holding potential. In Figure 5—figure supplement 1B, we correct for rundown of the cilia current (Icorrected) by fitting the control (nominally calcium-free period) inward current to a linear equation (y = mx + b). The difference between ICa (measured with calcium present) and Icorrected was then normalized: [(ICa − Icorrected)/Icorrected]×100. The potency of inward sodium current block was determined by fitting the percent inward current block and calcium concentration relationship to the Hill equation:
+
+$$
+y=I_{minimum}+\frac{(I_{maximum}−I_{minimum})}{1+[\frac{IC_{50}}{Ca_{e}}]^{K}}
+$$
 
 Where Iminimum and Imaximum are the minimum and maximum response, IC50 is the half-maximum inhibition, and K is the slope factor.
 
-## Antibodies, reagents and mice
+### Antibodies, reagents and mice
 
 Mouse monoclonal antibody against GAPDH was from Proteintech. Rabbit polyclonal antibodies against acetylated tubulin (Lys40) was purchased from Cell Signaling Technology (Danvers, MA). Chicken polyclonal antibody against GFP was from Aves Labs (Tigard, OR). Doxycycline and Fluoshield with 1,4-Diazabicyclo [2.2.2] octane were from Sigma-Aldrich; Hoechst 33342 was from Life Technologies. Rabbit polyclonal anti-mouse polycystin 2 (OSP00017W) and rabbit polyclonal anti-mAQP2 (PA5-3800) were from Thermo Fisher (Waltham, MA).
 
 The Pax8rtTA; TetO-cre; Pkd1fl/fl; Pax8rtTA; TetO-cre; Pkd2fl/fl and Arl13b-EGFPtg mice have been previously described(Ma et al., 2013),41. Pax8rtTA; TetO-cre and Pkd1fl/fl; Pax8rtTA; TetO-cre; Pkd2fl/fl mice were obtained from the Somlo lab (Yale University). Arl13b-EGFPtg:cPkd1 or Arl13b-EGFPtg:cPkd2 mice were generated by breeding Pax8rtTA; TetO-cre; Pkd1fl/fl or Pax8rtTA; TetO-cre; Pkd2fl/fl with Arl13b-EGFPtg mice. The genotype was determined by PCR with the following primers. Pax8rtTA with PCR product ~600 bp: IMR7385-CCATGTCTAGACTGGACAAGA; IMR7386 –CTCCAGGCCACATATGATTAG. TetO-Cre with PCR product ~800 bp: TetO-CMV-5'- GCAGAGCTCGTTTAGTGAAC; Cre-R-TCGACCAGTTTAGTTACCC. Pkd1fl/fl with PCR product ~500 bp (wild type ~300 bp): ND1 Lox 5'-CACAACCACTTCCTGCTTGGTG; ND1 Lox 3'-CCAGCATTCTCGACCCACAAG. Pkd2fl/fl with PCR product ~450 bp (wild type ~300 bp): D2loxF1- GGGTGCTGAAGAGATGGTTC; D2loxR1- TCCACAAAAGCTGCAATGAA. Arl13b-EGFPtg with PCR product ~700 bp (wild type ~400 bp): 83940- TGCAACTCTATATTCAGACTACAG; 84608-GTGGACATAATGGTCCCATTAAGC; Transgene 2562-CATAGAAAAGCCTTGACTTGAGGTTAG. Mice were bred and housed in pathogen-free conditions with access to food and water in the Animal Care Facility. All experimental procedures were approved by the Boston Children’s Hospital Animal Care and Use Committee (IUACUC).
 
-## Cell culture
+### Cell culture
 
 Primary epithelial cells were cultured from dissected kidney collecting ducts of transgenic mice(Delling et al., 2016). Inner medullae were removed from the kidney and disassociated using a Dulbecco’s phosphate buffered solution (DPBS) containing 2 mg/ml collagenase A and 1 mg/ml hyaluronidase. After mechanical disassociation on ice, medullary cells were cultured in Dulbecco’s modified essential medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 100 units/ml penicillin/100 μg/ml streptomycin. Cilia were patched from cells within 6 days after isolation and within one passage. siRNA knockdown efficiency was monitored for each experiment with a ‘scrambled’ silencer negative control 1 siRNA (Life Technologies). For generation of PKD2-GFP and GFP-PKD2 stable cell lines, C-terminal or N-terminal GFP-tagged polycystin-2 was generated by subcloning PKD2 cDNA into a modified pWPXLd vector. Puromycin (2 μg/ml) was used to screen stable cell lines, and these cells were tested for mycoplasma contamination. The PKD2 (NM_000297) human cDNA ORF Clone was purchased from Origene (Rockville, MD).
 
-## Genomic PCR for pIMCD cells isolated from Arl13b-EGFPtg:cPkd1 mice
+### Genomic PCR for pIMCD cells isolated from Arl13b-EGFPtg:cPkd1 mice
 
 Genomic DNA was extracted from the pIMCD cells isolated from Arl13b-EGFPtg:cPkd1 mice (with and without doxycycline treatment). To genotype the Pkd1 alleles, primer 1 (P1), 5′-CCGCTGTGTCTCAGTGCCTG −3′, and P2, 5′-CAAGAGGGCTTTTCTTGCTG −3′, were used to detect the floxed allele (~400 bp) and the wt allele (~200 bp); while P1, 5′-CCGCTGTGTCTCAGTGCCTG −3′, and P3, 5- ATTGATTCTGCTCCGAGAGG −3′, were used to detect the Deletion alleles (Deletion of exons 2–4 of Pkd1) of Del (~650 bp) and the non-Del (~1.65 kb).
 
-## Immunocytochemistry, confocal microscopy and structured illumination microscopy (SIM)
+### Immunocytochemistry, confocal microscopy and structured illumination microscopy (SIM)
 
 Cells were fixed with 4% PFA, permeabilized with 0.2% Triton X-100, and blocked by 10% bovine serum albumin in PBS. Cells were labeled with the indicated antibody and secondary fluorescently-labeled IgG (Life Technologies) and Hoechst 33342. Confocal images were obtained using an inverted Olympus FV1000 with a 60x silicon oil immersion, 1.3 N.A. objective. Super resolution images using the SIM method where captured under 100x magnification using the Nikon Structured Illumination Super-Resolution Microscope (N-SIM) with piezo stepping. Confocal and SIM images were further processed with FIJI ImageJ (NIH).
 
-## Immunohistochemistry and cyst parameters
+### Immunohistochemistry and cyst parameters
 
 Arl13b-EGFPtg:Pax8rtTA;TetO-cre;Pkd1fl/fl and Arl13b-EGFPtg:Pax8rtTA;TetO-cre;Pkd2fl/fl mice were induced with 2 mg/ml doxycycline in drinking water supplemented with 3% sucrose for 2 weeks from P28 to P42. Mice were anesthetized and perfused with 4% (wt/vol) paraformaldehyde at 8 weeks and 16 weeks after removal of doxycycline water. Kidneys were harvested and fixed with 4% paraformaldehyde at 4°C overnight, and embedded in paraffin. Sagittal kidney sections were stained with hematoxylin and eosin (H and E) and examined by light microscopy. All kidneys were photographed under the same magnification. ImageJ analysis software was used to calculate the cyst index (equal to the cumulative area of cysts within the total area of the kidney). For immunofluorescence of acetylated tubulin, a Leica VT1000S vibrating blade microtome was used for sectioning, kidney sections permeabilized with 0.5% TX100/PBS pH 7.4 overnight, and blocked with BlockAidTM solution for 5–8 hr. Sections were washed X3 in PBS, primary antibodies diluted in blocking solution, and sections incubated overnight at 4°C. After slides were washed X3 with PBS, goat anti-chicken/anti-rabbit fluorescent-labeled secondary antibodies were applied at room temperature overnight. Hoechst 33342 nuclear dye was incubated with sections for 1 hr. Sections were washed X3 with PBS, mounted in FluoshieldTM with 1,4-Diazabicyclo [2.2.2] octane and imaged with an inverted Olympus FV1000; silicon oil immersion 60x, 1.3 N.A. objective. Images were further processed and cilia length was measured using Fiji ImageJ (NIH).
 
-## Inhibition and detection of transcripts
+### Inhibition and detection of transcripts
 
 Approximately 200,000 primary cells were transfected with 100 pM of siRNAs (ThermoFisher) and 10 μl Lipofectamine RNAiMAX (Life Technologies) in a 9.5 cm2 dish. A list of the siRNAs is described in Table 1. At least 48 hr after transfection, half the cells were placed onto glass coverslips for electrophysiology, while the other half were lysed in TRIzol reagent (Ambion) for RNA extraction according to the manufacturer’s instructions. RNA was reverse transcribed using the SuperScript reverse transcription kit (ThermoFisher Scientific). Gene-specific primers were designed using Primerbank (http://pga.mgh.harvard.edu/primerbank/)(Spandidos et al., 2008). Transcripts were amplified by PCR and expression was visualized by agarose gel electrophoresis. Sequences for gene-specific primers are listed in Table 3.
 
-## Statistical analysis
+**Table 3.**
+ Primers used to detect gene expression using qPCR*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene, m, Mus musculus; H, human</th>
+      <th>Forward primer 5’−3’</th>
+      <th>Reverse primer 5’−3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mPkd1</td>
+      <td>CTGGGTGATATTTTGGGACGTAA</td>
+      <td>GCGTGGCAGTAGTTATCTGCT</td>
+    </tr>
+    <tr>
+      <td>mPkd1-L1</td>
+      <td>ATGCCACTCTTGAAGTGAGCA</td>
+      <td>CCAGGCAGTGTATCTTCTTCCA</td>
+    </tr>
+    <tr>
+      <td>mPkd2</td>
+      <td>TACAGCGACCCTCCTTCCC</td>
+      <td>CCTCTGATGCTCCGACAGATATG</td>
+    </tr>
+    <tr>
+      <td>mPkd2-L1</td>
+      <td>CGTGGACATACCATTCCCAGA</td>
+      <td>ACGGAGAAGTCGATAAAGACCA</td>
+    </tr>
+    <tr>
+      <td>mTrpv4</td>
+      <td>ATGGCAGATCCTGGTGATGG</td>
+      <td>GGAACTTCATACGCAGGTTTGG</td>
+    </tr>
+    <tr>
+      <td>hPKD2</td>
+      <td>CGTGCCCCAGCCCAGTC</td>
+      <td>TTCCAGTACAGCCCATCCAATAAG</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Athanasia Spandidos, Xiaowei Wang, Huajun Wang, Stefan Dragnev, Tara Thurber and Brian Seed: A comprehensive collection of experimentally validated primers for Polymerase Chain Reaction quantitation of murine transcript abundance. BMC Genomics 2008, 9:633._
+
+### Statistical analysis
 
 Statistical comparisons were made using two-tailed Student's t-tests using OriginPro software (OriginLab, Northampton MA). Experimental values are reported as the mean ± S.E.M. unless otherwise stated. Differences in mean values were considered significant at p<0.05.

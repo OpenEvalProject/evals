@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.07909.001 The poles of the mitotic spindle contain one old and one young centrosome. In asymmetric stem cell divisions, the age of centrosomes affects their behaviour and their probability to remain in the stem cell. In contrast, in symmetric divisions, old and young centrosomes are thought to behave equally. This hypothesis is, however, untested. In this study, we show in symmetrically dividing human cells that kinetochore–microtubules associated to old centrosomes are more stable than those associated to young centrosomes, and that this difference favours the accumulation of premature end-on attachments that delay the alignment of polar chromosomes at old centrosomes. This differential microtubule stability depends on cenexin, a protein enriched on old centrosomes. It persists throughout mitosis, biasing chromosome segregation in anaphase by causing daughter cells with old centrosomes to retain non-disjoint chromosomes 85% of the time. We conclude that centrosome age imposes via cenexin a functional asymmetry on all mitotic spindles. DOI: http://dx.doi.org/10.7554/eLife.07909.001
+The poles of the mitotic spindle contain one old and one young centrosome. In asymmetric stem cell divisions, the age of centrosomes affects their behaviour and their probability to remain in the stem cell. In contrast, in symmetric divisions, old and young centrosomes are thought to behave equally. This hypothesis is, however, untested. In this study, we show in symmetrically dividing human cells that kinetochore–microtubules associated to old centrosomes are more stable than those associated to young centrosomes, and that this difference favours the accumulation of premature end-on attachments that delay the alignment of polar chromosomes at old centrosomes. This differential microtubule stability depends on cenexin, a protein enriched on old centrosomes. It persists throughout mitosis, biasing chromosome segregation in anaphase by causing daughter cells with old centrosomes to retain non-disjoint chromosomes 85% of the time. We conclude that centrosome age imposes via cenexin a functional asymmetry on all mitotic spindles.
 
 ## Introduction
 
@@ -23,59 +23,263 @@ The bipolar spindle has a symmetric appearance; nevertheless it contains two cen
 
 ## Results
 
-The first key task of the mitotic spindle is to bind to chromosomes via kinetochores and align them onto the metaphase plate (
+The first key task of the mitotic spindle is to bind to chromosomes via kinetochores and align them onto the metaphase plate (Kops et al., 2010). To distinguish between old and young centrosomes, we used untransformed hTert-RPE1 and transformed HeLa cell lines expressing eGFP-centrin1, a centriolar protein whose abundance correlates with centriole age, or an anti-cenexin antibody, a marker for old centrosomes (Figure 1A,B, Kuo et al., 2011; Lange and Gull, 1995). In the vast majority of the cases both markers were enriched at the same centriole pair, indicating a robust recognition of the old centrosomes (data not shown). To investigate whether half-spindles associated with old or new centrosomes align chromosomes with the same efficiency, we analyzed late prometaphase cells that contained few unaligned chromosomes. We found that 61.23% of the unaligned chromosomes were in the vicinity of old centrosomes in Hela-eGFP-centrin1 cells as opposed to 50% expected for an unbiased distribution, suggesting a difference in the efficiency of chromosome alignment (Figure 1C,D, statistical tests for the chromosome alignment assays throughout the study are shown in Table 1). As such unaligned chromosomes were rare, we also treated cells with 10 ng/ml nocodazole, a condition that moderately stabilizes microtubules (Vasquez et al., 1997), and that delays chromosome alignment, leading to 3–6 unaligned chromosomes per cell (Figure 1C). Unaligned chromosomes were again preferentially found in the vicinity of the old centrosomes in HeLa eGFP-centrin1 (63.9%) and hTert-RPE1-eGFP-centrin1 cells (71.8%), confirming the bias in chromosome alignment (Figure 1E). We found the same bias (67.8%) in wild-type nocodazole-treated hTert-RPE1 cells stained with cenexin, excluding any effect due to eGFP-centrin1 expression (Figure 1E). We conclude that the half-spindles associated to the old centrosomes accumulate more unaligned chromosomes or that unaligned chromosomes align less efficiently when bound to microtubules emanating from the old centrosomes.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig1-v2.jpg)
 
-**Figure 1.:** (A) HeLa-eGFP-centrin1 (green) cell stained for cenexin (red, old centrosome marker) and DAPI (blue, DNA). One spindle pole contains the old centriole (brightest centrin1 signal and cenexin positive) and an accompanying daughter centriole (dim signal), which together form the old centrosome. The other spindle pole contains the young centriole (intermediate centrin1 signal), which is also accompanied by a daughter centriole and which together form the young centrosome. Scale bar in all panels = 5 μm. (B) Amounts of eGFP-centrin1 on the old, young and daughter centrioles in HeLa-eGFP-centrin1 cells determined from 3 independent experiments in 140 cells. (C) Untreated HeLa-eGFP-centrin1 cell (upper panel) and hTert RPE-eGFP-centrin1 cell treated with 10 ng/ml nocodazole (lower panel) stained for CENP-A (kinetochore marker) and DAPI. Yellow arrowheads indicate unaligned chromosomes; white arrowheads old centrosomes. (D and E) Proportion of unaligned chromosomes at old centrosomes in HeLa-eGFP-centrin1 cells (D), and in RPE1 cells stained for cenexin, RPE1-eGFP-centrin1 cells and HeLa-eGFP-centrin1 cells treated with 10 ng/ml nocodazole (E). For experiment and cell numbers, and p-values see Table 1. For results of individual experiments see Figure 1—source data 1. Error bars indicate s.e.m. * indicates p ≤ 0.05 in Binomial test compared to random distribution, *** indicates p ≤ 0.01 in Binomial test compared to random distribution.DOI: http://dx.doi.org/10.7554/eLife.07909.00310.7554/eLife.07909.004Figure 1—source data 1.Figure 1.DOI: http://dx.doi.org/10.7554/eLife.07909.004
+**Figure 1.:** (A) HeLa-eGFP-centrin1 (green) cell stained for cenexin (red, old centrosome marker) and DAPI (blue, DNA). One spindle pole contains the old centriole (brightest centrin1 signal and cenexin positive) and an accompanying daughter centriole (dim signal), which together form the old centrosome. The other spindle pole contains the young centriole (intermediate centrin1 signal), which is also accompanied by a daughter centriole and which together form the young centrosome. Scale bar in all panels = 5 μm. (B) Amounts of eGFP-centrin1 on the old, young and daughter centrioles in HeLa-eGFP-centrin1 cells determined from 3 independent experiments in 140 cells. (C) Untreated HeLa-eGFP-centrin1 cell (upper panel) and hTert RPE-eGFP-centrin1 cell treated with 10 ng/ml nocodazole (lower panel) stained for CENP-A (kinetochore marker) and DAPI. Yellow arrowheads indicate unaligned chromosomes; white arrowheads old centrosomes. (D and E) Proportion of unaligned chromosomes at old centrosomes in HeLa-eGFP-centrin1 cells (D), and in RPE1 cells stained for cenexin, RPE1-eGFP-centrin1 cells and HeLa-eGFP-centrin1 cells treated with 10 ng/ml nocodazole (E). For experiment and cell numbers, and p-values see Table 1. For results of individual experiments see Figure 1—source data 1. Error bars indicate s.e.m. * indicates p ≤ 0.05 in Binomial test compared to random distribution, *** indicates p ≤ 0.01 in Binomial test compared to random distribution.
 
-The bias in unaligned chromosomes could reflect faster kinetics in the initial capture of sister-kinetochore pairs by old centrosomes, for example, because they are closer to kinetochores at nuclear envelope breakdown or because they mature—that is, acquire a high, mitotic microtubule-nucleating capacity—earlier. Alternatively, the bias could reflect a permanent difference between the two centrosomes to capture or to align chromosomes. To test whether at mitotic onset old centrosomes capture kinetochores faster because they are closer, we compared the distances between kinetochores and old and young centrosomes at mitotic onset, but found no difference (
+**Table 1.**
+ Percentage of unaligned chromosomes at old centrosomes
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>N0 of repeats</th>
+      <th>N0 of cells</th>
+      <th>N0 of chromosomes</th>
+      <th>% Chromosomes at old centrosomes</th>
+      <th>2-tailed Binomial test p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HeLa-eGFP-centrin1 DMSO</td>
+      <td>3</td>
+      <td>33</td>
+      <td>93</td>
+      <td>61.23</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1 10 ng/ml nocodazole</td>
+      <td>3</td>
+      <td>161</td>
+      <td>227</td>
+      <td>67.80</td>
+      <td>8.08e-8</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1-eGFP-centrin1 10 ng/ml nocodazole</td>
+      <td>7</td>
+      <td>127</td>
+      <td>295</td>
+      <td>71.81</td>
+      <td>1.0e-12</td>
+    </tr>
+    <tr>
+      <td>HeLa-eGFP-centrin1 10 ng/ml nocodazole</td>
+      <td>3</td>
+      <td>57</td>
+      <td>532</td>
+      <td>63.91</td>
+      <td>1.42e-10</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1 Eg5 inhibition recovery</td>
+      <td>3</td>
+      <td>53</td>
+      <td>156</td>
+      <td>74.36</td>
+      <td>8.9e-10</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1 nocodazole recovery</td>
+      <td>3</td>
+      <td>59</td>
+      <td>164</td>
+      <td>61.58</td>
+      <td>0.00373</td>
+    </tr>
+    <tr>
+      <td>HeLa-eGFP-CENP-A/eGFP-centrin1 10 ng/ml nocodazole</td>
+      <td>3</td>
+      <td>142</td>
+      <td>946</td>
+      <td>58.03</td>
+      <td>8.68e-07</td>
+    </tr>
+    <tr>
+      <td>HeLa-eGFP-CENP-A/eGFP-centrin1 Eg5 inhibition recovery</td>
+      <td>5</td>
+      <td>68</td>
+      <td>306</td>
+      <td>61.11</td>
+      <td>0.000121</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1-eGFP-centrin1 siCtrl 10 ng/ml nocodazole</td>
+      <td>3</td>
+      <td>92</td>
+      <td>206</td>
+      <td>68.45</td>
+      <td>1.26e-07</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1-eGFP-centrin1 siNinein 10 ng/ml nocodazole</td>
+      <td>4</td>
+      <td>77</td>
+      <td>169</td>
+      <td>66.86</td>
+      <td>0.0000138</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1-eGFP-centrin1 CENP-E inhibitor</td>
+      <td>3</td>
+      <td>65</td>
+      <td>393</td>
+      <td>49.87</td>
+      <td>n.s*</td>
+    </tr>
+    <tr>
+      <td>hTert-RPE1-eGFP-centrin1 CENP-E inhibitor 10 ng/ml nocodazole</td>
+      <td>3</td>
+      <td>59</td>
+      <td>459</td>
+      <td>52.29</td>
+      <td>n.s*</td>
+    </tr>
+    <tr>
+      <td>hTert RPE-eGFP-centrin1 5 nM Taxol</td>
+      <td>3</td>
+      <td>50</td>
+      <td>105</td>
+      <td>43.81</td>
+      <td>n.s*</td>
+    </tr>
+    <tr>
+      <td>hTert RPE-eGFP-centrin1 siDsn1 10 ng/ml nocodazole</td>
+      <td>3</td>
+      <td>42</td>
+      <td>162</td>
+      <td>43.82</td>
+      <td>n.s*</td>
+    </tr>
+    <tr>
+      <td>hTert RPE-eGFP-centrin1 siNnf1 10 ng/ml nocodazole</td>
+      <td>5</td>
+      <td>21</td>
+      <td>46</td>
+      <td>52.17</td>
+      <td>n.s*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Non-significant._
+
+The bias in unaligned chromosomes could reflect faster kinetics in the initial capture of sister-kinetochore pairs by old centrosomes, for example, because they are closer to kinetochores at nuclear envelope breakdown or because they mature—that is, acquire a high, mitotic microtubule-nucleating capacity—earlier. Alternatively, the bias could reflect a permanent difference between the two centrosomes to capture or to align chromosomes. To test whether at mitotic onset old centrosomes capture kinetochores faster because they are closer, we compared the distances between kinetochores and old and young centrosomes at mitotic onset, but found no difference (Figure 2A). We next forced hTert-RPE1 or HeLa cells to enter mitosis with monopolar spindles by treating them with monastrol, a reversible inhibitor of Eg5, the kinesin that separates centrosomes (Mayer et al., 1999). A monastrol washout led to bipolar spindles with few unaligned chromosomes, 74.4% of which were adjacent to old centrosomes, indicating that the bias is independent of the initial centrosome position (Figure 2B,C; and Figure 2—figure supplement 1). To test whether old centrosomes capture more kinetochores because they mature earlier, we treated cells with high doses of nocodazole (1 μg/ml), allowing them to enter mitosis without microtubules and to fully mature the two centrosomes (Khodjakov and Rieder, 1999), before washing out nocodazole for 1 hr: 62.6% of the unaligned chromosomes were adjacent to old centrosomes, indicating that the alignment bias reflects a permanent difference between the centrosomes that is independent of the initial conditions at mitotic onset (Figure 2B,C). The two washout experiments also confirmed that this bias does not require low nocodazole concentrations, since in both cases, cells were released in nocodazole-free medium.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig2-v2.jpg)
 
-**Figure 2.:** (A) An illustrative example of a HeLa-eGFP-centrin1/mCherry-CENP-A cell where the distances from centrosomes to kinetochores were measured 30 s before nuclear envelope breakdown (left top), assay to calculate the distances between kinetochores and centrosomes (left bottom), and distribution (right) of the measured distances. Values are determined from 24 cells and 1434 kinetochores in 6 independent experiments. White arrowheads indicate old centrosomes in all panels. Scale bars in all panels = 5 μm. (B) Proportion of unaligned chromosomes at the old centrosomes in hTert-RPE1-eGFP-centrin1 cells after indicated treatments. Error bars indicate s.e.m. *** indicates p ≤ 0.01 in Binomial test. (C) hTert-RPE1-eGFP-centrin1 cells stained for CENP-A and DAPI after indicated treatments. (D) Differences in the intensity of the microtubule asters in a re-nucleation assay at old and young centrosomes as shown in E, calculated in 32–49 cells in 3 independent experiments. Columns indicate the median, errors bars the 99% CI. Precise methodology is shown in Figure 2—figure supplement 2. (E) HeLa-eGFP-centrin1 or hTert-RPE1-eGFP-centrin1 cells stained for α-tubulin after a microtubule re-nucleation assay. (F) hTert-RPE1-eGFP-centrin1 cells treated with 10 ng/ml nocodazole and/or CENP-E inhibitor, and stained for CENP-A. Yellow arrowheads indicate unaligned kinetochores in the proximity of the young centrosome (G) Proportion of unaligned chromosomes at old centrosomes in hTert-RPE1-eGFP-centrin1 cells treated with 10 ng/ml nocodazole and/or CENP-E inhibitor. Error bars indicate s.e.m. *** indicates p ≤ 0.01 in Binomial test. For results of all individual experiments see Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.07909.00610.7554/eLife.07909.007Figure 2—source data 1.Figure 2.DOI: http://dx.doi.org/10.7554/eLife.07909.007
+**Figure 2.:** (A) An illustrative example of a HeLa-eGFP-centrin1/mCherry-CENP-A cell where the distances from centrosomes to kinetochores were measured 30 s before nuclear envelope breakdown (left top), assay to calculate the distances between kinetochores and centrosomes (left bottom), and distribution (right) of the measured distances. Values are determined from 24 cells and 1434 kinetochores in 6 independent experiments. White arrowheads indicate old centrosomes in all panels. Scale bars in all panels = 5 μm. (B) Proportion of unaligned chromosomes at the old centrosomes in hTert-RPE1-eGFP-centrin1 cells after indicated treatments. Error bars indicate s.e.m. *** indicates p ≤ 0.01 in Binomial test. (C) hTert-RPE1-eGFP-centrin1 cells stained for CENP-A and DAPI after indicated treatments. (D) Differences in the intensity of the microtubule asters in a re-nucleation assay at old and young centrosomes as shown in E, calculated in 32–49 cells in 3 independent experiments. Columns indicate the median, errors bars the 99% CI. Precise methodology is shown in Figure 2—figure supplement 2. (E) HeLa-eGFP-centrin1 or hTert-RPE1-eGFP-centrin1 cells stained for α-tubulin after a microtubule re-nucleation assay. (F) hTert-RPE1-eGFP-centrin1 cells treated with 10 ng/ml nocodazole and/or CENP-E inhibitor, and stained for CENP-A. Yellow arrowheads indicate unaligned kinetochores in the proximity of the young centrosome (G) Proportion of unaligned chromosomes at old centrosomes in hTert-RPE1-eGFP-centrin1 cells treated with 10 ng/ml nocodazole and/or CENP-E inhibitor. Error bars indicate s.e.m. *** indicates p ≤ 0.01 in Binomial test. For results of all individual experiments see Figure 2—source data 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Proportion of unaligned chromosomes at the old centrosome in HeLa-eGFP-centrin1 cells after monastrol washout. Errors bars indicate s.e.m. *** indicates p ≤ 0.01 in Binomial test.DOI: http://dx.doi.org/10.7554/eLife.07909.008
+**Figure 2—figure supplement 1.:** Proportion of unaligned chromosomes at the old centrosome in HeLa-eGFP-centrin1 cells after monastrol washout. Errors bars indicate s.e.m. *** indicates p ≤ 0.01 in Binomial test.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** To calculate in hTert-RPE1-eGFP-centrin1 cells the relative differences in microtubule nucleation, cells were stained after a release from an ice-cold treatment with a-tubulin antibodies (microtubules) and DAPI (chromosomes). The intensity of the centrosomal aster (minus the background) at old and young centrosomes was measured and the relative differences calculated with the indicated formula. Scale bar = 5 μm.DOI: http://dx.doi.org/10.7554/eLife.07909.009
+**Figure 2—figure supplement 2.:** To calculate in hTert-RPE1-eGFP-centrin1 cells the relative differences in microtubule nucleation, cells were stained after a release from an ice-cold treatment with a-tubulin antibodies (microtubules) and DAPI (chromosomes). The intensity of the centrosomal aster (minus the background) at old and young centrosomes was measured and the relative differences calculated with the indicated formula. Scale bar = 5 μm.
 
 In asymmetric cell divisions the old and young centrosomes have different capacities to nucleate microtubules, providing a key clue for centrosome positioning and inheritance (Wang et al., 2009; Januschke et al., 2013; Lerit and Rusan, 2013). If microtubule nucleation from the two centrosomes also differed in symmetric cell division, this might allow one centrosome to capture more kinetochores. However, a microtubule re-nucleation assay revealed no difference in microtubule nucleation capacity between the two centrosomes in HeLa and RPE1 cells (Figure 2D,E), suggesting that the centrosomal microtubule nucleation capacity did not cause the biased distribution of unaligned chromosomes. To study if chromosome alignment process per se is asymmetric, we inhibited the Centromere-associated Protein E (CENP-E), the kinetochore-bound kinesin that aligns polar chromosomes by transporting them along existing spindle microtubules (Wood et al., 1997; Kapoor et al., 2006; Barisic et al., 2014). Partial CENP-E inhibition, yielding few polar chromosomes, abolished the bias in the distribution of unaligned chromosomes in the absence or presence of 10 ng/ml nocodazole, (Figure 2F,G, 49.87% and 52.29% respectively), indicating that the bias depends on CENP-E, and that chromosome alignment itself is biased by centrosome age.
 
-The CENP-E-dependent alignment bias could be due to an asymmetric abundance of CENP-E; however, the levels of CENP-E on unaligned chromosomes associated to old or young centrosomes were equal (
+The CENP-E-dependent alignment bias could be due to an asymmetric abundance of CENP-E; however, the levels of CENP-E on unaligned chromosomes associated to old or young centrosomes were equal (Figure 3A,B and Figure 3—figure supplement 1A). Alternatively, since CENP-E favours lateral kinetochore–microtubule attachments to transport unaligned chromosomes towards the metaphase plate (Kapoor et al., 2006), we reasoned that a difference in the types of kinetochore–microtubule attachments might bias the alignment of unaligned chromosomes: specifically end-on attachments might delay CENP-E driven chromosome alignment, by creating a poleward drag. Indeed, chromosomes that are not captured by microtubules emanating from both poles, bind laterally to microtubules from the closest pole, and are first driven to this pole in a dynein-dependent manner, before CENP-E aligns them on the metaphase plate (Barisic et al., 2014). During these movements, kinetochores can in some cases form end-on monotelic or syntelic attachments. These non-bipolar end-on attachments are normally destabilized in an Aurora-B-dependent manner (Hauf et al., 2003), favouring the formation of lateral kinetochore–microtubule attachments. However, if end-on attachments were to be more stable at one centrosome, they would delay this conversion and create a drag on the CENP-E driven alignment. To test this hypothesis, we visualized by 3D-high-resolution microscopy kinetochore–microtubule attachments of individual, single kinetochores on unaligned chromosomes in cells treated with 10 ng/ml nocodazole and fixed with glutaraldehyde. At old centrosomes nearly three times more individual kinetochores had end-on attachments (13.0% vs 4.7% at the young centrosome, p = 0.003 in paired t-test) and fewer lateral attachments (83.6% vs 89.1% at the young centrosomes; p = 0.0007 in paired t-test; overall p = 0.0024 in 2way-ANOVA-test; Figure 3C,D and Figure 3—figure supplement 2); the number of unattached kinetochores was higher at young centrosomes, even tough this difference was statistically not significant (p = 0.06 in paired t-test; Figure 3—figure supplement 2). This implied an overall higher stability of kinetochore–microtubules at old centrosomes. To confirm this result, we quantified the levels of tubulin acetylation on individual kinetochore–fibres of sister-kinetochore pairs aligned on the metaphase plate, as tubulin acetylation preferentially accumulates on stable microtubules (Webster and Borisy, 1989). This analysis revealed higher level of acetylation on kinetochore–microtubules associated with old centrosomes (median difference of 22% in tubulin acetylation at the plus ends of microtubules attached to sister-kinetochores vs 2% in CREST levels between sister-kinetochores, p < 0.0001 in Wilcoxon Signed Rank Test; Figure 3E,F and Figure 3—figure supplement 1C). In contrast, when we measured the levels of detyrosinated tubulin, a modification that has been linked to preferential CENP-E motor activity (Barisic et al., 2015), we found no difference (median difference of 0.3%; Figure 3F and Figure 3—figure supplement 1D). To also functionally confirm the difference in microtubule stability, metaphase cells were treated for 10 min with 0.5 mM Ca2+, a condition that gradually destabilizes microtubules, before fixing them with glutaraldehyde and staining for kinetochores and microtubules. While such a treatment did not reveal strong overall differences in the two half-spindles (Figure 3G), a detailed analysis of kinetochore–microtubule attachments of aligned sister-kinetochores revealed that kinetochores oriented towards young centrosomes were significantly more likely to have lost their attachment, than those oriented towards the old centrosome (56.8% vs 43.2%; p = 0.014 in paired t-test; Figure 3G,H). Together, these data indicated that the kinetochore–microtubules emanating from old centrosomes are more stable.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig3-v2.jpg)
 
-**Figure 3.:** (A) hTert-RPE1-eGFP-centrin1 cells treated with 10 ng/ml nocodazole and stained for CENP-E and DAPI. White arrowheads indicate old centrosomes in all panels. Scale bars in all panels = 5 μm. (B) Differences in the abundance of CENP-E and CREST (kinetochore marker) at kinetochores bound to old and young centrosomes, calculated from 27 cells in 3 independent experiments. Columns indicate the median; error bars the 99% CI. (C) Immunofluorescence image of a HeLa-eGFP-centrin1/eGFP-CENP-A (green) cells treated with 10 ng/ml nocodazole, fixed with glutaraldehyde, and stained for α-tubulin (red) and DAPI (blue). Single kinetochores in every unaligned sister-kinetochore pair were classified as end-on attached, laterally attached or unattached. Inset 1 on the left shows an illustrative example of a kinetochore pair with one unattached and one end-on attached kinetochore; inset 2 on the right shows an illustrative example with 2 laterally attached kinetochores. (D) Quantification of individual end-on attached kinetochores at old and young centrosomes in HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with 10 ng/ml nocodazole, 5 nM taxol and the indicated siRNAs and 10 ng/ml nocodazole. Percentages are based on 3 independent experiments with 29–50 cells. Error bars indicate s.e.m; *** indicates p ≤ 0.01 in paired t-test. (E) hTertRPE1-eGFP-centrin1 cells stained with anti-acetylated tubulin (red) and CREST (green) antibodies. Shown are total projections (upper panels) or maximum-intensity projections of 5–10 planes around the focal plane of interest (lower panels). White arrowheads indicate kinetochore–microtubules with stronger acetylation, yellow with weaker acetylation. Note that the white arrows are on the side of the old centrosome. (F) Differences in the abundance of acetylated tubulin on k-fibres of sister-kinetochores, and detyrosinated tubulin on the two spindle halves in hTertRPE1-eGFP-centrin1 cells, based on 3 independent experiments and 32–33 cells. Methodology is explained in Figure 3—figure supplement 2. Columns indicate the meadian, error bars the 99% CI. (G) HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with 0.5 mM Ca2+ for 10 min stained for α-tubulin (red) and DAPI (blue). Shown are total projections (upper panels) or maximum-intensity projections of 5–10 planes around the focal plane of interest (lower panels). White arrowheads in zoom-ins indicate end-on attached kinetochores and yellow arrow the unattached kinetochore. (H) Percentage of unattached kinetochores oriented towards old or young poles based on 3 independent experiments and 33 cells. (I) hTert-RPE1-eGFP-centrin1 cells stained with CENP-A antibodies (red) and DAPI (blue) after treatment with 5 nM taxol or the indicated siRNAs and 10 ng/ml nocodazole. White arrowheads indicate old centrosome. (J) Proportion of unaligned chromosomes at old centrosome in hTert-RPE1-eGFP-centrin1 cells treated with 5 nM taxol or with 10 ng/ml nocodazole after the indicated siRNA treatment. Error bars indicate s.e.m; *** indicates p ≤ 0.01 in Binomial test. (K) Differences in the abundance of cenexin, phospho-Aurora-A, and Plk1 at old and young centrosomes in HeLa and hTert-RPE1-eGFP-centrin1 cells, based on 3 independent experiments and 41–113 cells. Methodology is explained in Figure 3—figure supplement 2. Columns indicate the median, error bars the 99% CI. (L) Proportion of unaligned chromosomes at old centrosome in HeLa-eGFP-centrin1 cells treated with Aurora-A or Plk1 inhibitors. Error bars indicate s.e.m; *** indicates p ≤ 0.01 in Binomial test. For results of all individual experiments see Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.07909.01010.7554/eLife.07909.011Figure 3—source data 1.Figure 3.DOI: http://dx.doi.org/10.7554/eLife.07909.011
+**Figure 3.:** (A) hTert-RPE1-eGFP-centrin1 cells treated with 10 ng/ml nocodazole and stained for CENP-E and DAPI. White arrowheads indicate old centrosomes in all panels. Scale bars in all panels = 5 μm. (B) Differences in the abundance of CENP-E and CREST (kinetochore marker) at kinetochores bound to old and young centrosomes, calculated from 27 cells in 3 independent experiments. Columns indicate the median; error bars the 99% CI. (C) Immunofluorescence image of a HeLa-eGFP-centrin1/eGFP-CENP-A (green) cells treated with 10 ng/ml nocodazole, fixed with glutaraldehyde, and stained for α-tubulin (red) and DAPI (blue). Single kinetochores in every unaligned sister-kinetochore pair were classified as end-on attached, laterally attached or unattached. Inset 1 on the left shows an illustrative example of a kinetochore pair with one unattached and one end-on attached kinetochore; inset 2 on the right shows an illustrative example with 2 laterally attached kinetochores. (D) Quantification of individual end-on attached kinetochores at old and young centrosomes in HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with 10 ng/ml nocodazole, 5 nM taxol and the indicated siRNAs and 10 ng/ml nocodazole. Percentages are based on 3 independent experiments with 29–50 cells. Error bars indicate s.e.m; *** indicates p ≤ 0.01 in paired t-test. (E) hTertRPE1-eGFP-centrin1 cells stained with anti-acetylated tubulin (red) and CREST (green) antibodies. Shown are total projections (upper panels) or maximum-intensity projections of 5–10 planes around the focal plane of interest (lower panels). White arrowheads indicate kinetochore–microtubules with stronger acetylation, yellow with weaker acetylation. Note that the white arrows are on the side of the old centrosome. (F) Differences in the abundance of acetylated tubulin on k-fibres of sister-kinetochores, and detyrosinated tubulin on the two spindle halves in hTertRPE1-eGFP-centrin1 cells, based on 3 independent experiments and 32–33 cells. Methodology is explained in Figure 3—figure supplement 2. Columns indicate the meadian, error bars the 99% CI. (G) HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with 0.5 mM Ca2+ for 10 min stained for α-tubulin (red) and DAPI (blue). Shown are total projections (upper panels) or maximum-intensity projections of 5–10 planes around the focal plane of interest (lower panels). White arrowheads in zoom-ins indicate end-on attached kinetochores and yellow arrow the unattached kinetochore. (H) Percentage of unattached kinetochores oriented towards old or young poles based on 3 independent experiments and 33 cells. (I) hTert-RPE1-eGFP-centrin1 cells stained with CENP-A antibodies (red) and DAPI (blue) after treatment with 5 nM taxol or the indicated siRNAs and 10 ng/ml nocodazole. White arrowheads indicate old centrosome. (J) Proportion of unaligned chromosomes at old centrosome in hTert-RPE1-eGFP-centrin1 cells treated with 5 nM taxol or with 10 ng/ml nocodazole after the indicated siRNA treatment. Error bars indicate s.e.m; *** indicates p ≤ 0.01 in Binomial test. (K) Differences in the abundance of cenexin, phospho-Aurora-A, and Plk1 at old and young centrosomes in HeLa and hTert-RPE1-eGFP-centrin1 cells, based on 3 independent experiments and 41–113 cells. Methodology is explained in Figure 3—figure supplement 2. Columns indicate the median, error bars the 99% CI. (L) Proportion of unaligned chromosomes at old centrosome in HeLa-eGFP-centrin1 cells treated with Aurora-A or Plk1 inhibitors. Error bars indicate s.e.m; *** indicates p ≤ 0.01 in Binomial test. For results of all individual experiments see Figure 3—source data 1.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) To calculate in hTert-RPE1-eGFP-centrin1 cells the relative differences in the abundance of CENP-E on unaligned kinetochores, cells were stained with CENP-E antibodies and DAPI (chromosomes). The intensity of CENP-E on unaligned kinetochores (minus the background) at old and young centrosomes was measured and the relative differences calculated with the indicated formula. Scale bars in all panels = 5 μm. (B) Methodology to calculate the relative differences in phospho-Aurora-A, Plk1, or cenexin in hTert-RPE1-eGFP-centrin1 cells as displayed in Figure 3K. In this example, cells were stained with phospho-Aurora-A antibodies, before determining its abundance on old and young centrosomes. The relative difference was calculated with the indicated formula. (C) Methodology to calculate the relative differences in acetylated tubulin (ac-tubulin) in hTert-RPE1-eGFP-centrin1 cells as displayed in Figure 3E,F. In this example cells were stained with acetylated tubulin antibodies, before determining its abundance on the kinetochore–microtubules associated with old and young centrosomes. The relative difference was calculated with the indicated formula. (D) Methodology to calculate the relative differences in detyrosinated tubulin (dt-tubulin) in hTert-RPE1-eGFP-centrin1 cells as displayed in Figure 3F. Cells were stained with detyrosinated tubulin antibodies, before determining its abundance on the half-spindles associated with old and young centrosomes. Same area around the old and the young centrosome, containing centrioles, was excluded from the measurement (green rectangles). The relative difference was calculated with the indicated formula.DOI: http://dx.doi.org/10.7554/eLife.07909.012
+**Figure 3—figure supplement 1.:** (A) To calculate in hTert-RPE1-eGFP-centrin1 cells the relative differences in the abundance of CENP-E on unaligned kinetochores, cells were stained with CENP-E antibodies and DAPI (chromosomes). The intensity of CENP-E on unaligned kinetochores (minus the background) at old and young centrosomes was measured and the relative differences calculated with the indicated formula. Scale bars in all panels = 5 μm. (B) Methodology to calculate the relative differences in phospho-Aurora-A, Plk1, or cenexin in hTert-RPE1-eGFP-centrin1 cells as displayed in Figure 3K. In this example, cells were stained with phospho-Aurora-A antibodies, before determining its abundance on old and young centrosomes. The relative difference was calculated with the indicated formula. (C) Methodology to calculate the relative differences in acetylated tubulin (ac-tubulin) in hTert-RPE1-eGFP-centrin1 cells as displayed in Figure 3E,F. In this example cells were stained with acetylated tubulin antibodies, before determining its abundance on the kinetochore–microtubules associated with old and young centrosomes. The relative difference was calculated with the indicated formula. (D) Methodology to calculate the relative differences in detyrosinated tubulin (dt-tubulin) in hTert-RPE1-eGFP-centrin1 cells as displayed in Figure 3F. Cells were stained with detyrosinated tubulin antibodies, before determining its abundance on the half-spindles associated with old and young centrosomes. Same area around the old and the young centrosome, containing centrioles, was excluded from the measurement (green rectangles). The relative difference was calculated with the indicated formula.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Proportion of laterally attached (left) or unattached kinetochores (right) at old and young centrosomes in HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with 10 ng/ml nocodazole, as determined in immunofluorescence pictures shown in Figure 3C.DOI: http://dx.doi.org/10.7554/eLife.07909.013
+**Figure 3—figure supplement 2.:** Proportion of laterally attached (left) or unattached kinetochores (right) at old and young centrosomes in HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with 10 ng/ml nocodazole, as determined in immunofluorescence pictures shown in Figure 3C.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** The bar graph indicates the percentage of HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with the indicated siRNAs or taxol displaying intact kinetochore–microtubules(Category 1), destabilized kinetochore–microtubules (Category 2) or no kinetochore–microtubules (Category 3), after 20 min of cold treatment on ice. Values are based on measurements in 50–60 cells in 3 independent experiments. Scale bar = 5 µm.DOI: http://dx.doi.org/10.7554/eLife.07909.014
+**Figure 3—figure supplement 3.:** The bar graph indicates the percentage of HeLa-eGFP-centrin1/eGFP-CENP-A cells treated with the indicated siRNAs or taxol displaying intact kinetochore–microtubules(Category 1), destabilized kinetochore–microtubules (Category 2) or no kinetochore–microtubules (Category 3), after 20 min of cold treatment on ice. Values are based on measurements in 50–60 cells in 3 independent experiments. Scale bar = 5 µm.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** (A–E) hTert-RPE1-eGFP-centrin1 cells treated with Dsn1 (A), Nnf1 (B), MCAK (C), Ninein (D) or Cenexin (E) siRNA and stained with indicated antibodies. Note that ninein levels were quantified in interphase, as ninein is barely visible at centrosomes in mitotic cells. Scale bar in all panels = 5 μm. Errors bars indicate s.e.m. * indicates p ≤ 0.05 in paired t-test.DOI: http://dx.doi.org/10.7554/eLife.07909.015
+**Figure 3—figure supplement 4.:** (A–E) hTert-RPE1-eGFP-centrin1 cells treated with Dsn1 (A), Nnf1 (B), MCAK (C), Ninein (D) or Cenexin (E) siRNA and stained with indicated antibodies. Note that ninein levels were quantified in interphase, as ninein is barely visible at centrosomes in mitotic cells. Scale bar in all panels = 5 μm. Errors bars indicate s.e.m. * indicates p ≤ 0.05 in paired t-test.
 
 To test if the difference in kinetochore–microtubule stability is at the origin of the alignment bias, we depleted the kinetochore proteins Dsn1 or Nnf1 (both Mis12 complex), or treated the cells with a low dose of taxol (5 nM). These conditions strongly destabilize kinetochore–microtubules (Dsn1 and Nnf1 depletion; (Kline et al., 2006), or hyperstabilize kinetochore–microtubules (taxol; Figure 3—figure supplement 3). Either treatment abolished the bias in alignment and equalized the number of end-on attached unaligned kinetochores (Figure 3D,I,J). In contrast, knock-down of the Mitotic Centromere-Associated Kinesin (MCAK), a microtubule depolymerase that is required for destabilization of erroneous kinetochore–microtubule attachments (Knowlton et al., 2006), whose depletion leads to mild microtubule stabilization in metaphase, but not in prometaphase ((Bakhoum et al., 2009) and Figure 3—figure supplement 3), did not change the bias in chromosome alignment (Figure 3I,J). This suggested that a massive stabilization or destabilization of all kinetochore–microtubules equilibrates the difference in kinetochore–microtubule stability and chromosome alignment, but that a mild stabilization does not change this bias. We conclude that the difference in kinetochore–microtubule stability biases chromosome alignment.
 
 Which factors at centrosomes could generate an age-dependent difference in kinetochore–microtubule stability causing a bias in chromosome alignment? We first considered two centrosomal kinases, Aurora-A and Plk1, which can both affect kinetochore–microtubule stability (Liu et al., 2012; Bakhoum et al., 2014). We compared by quantitative immunofluorescence the levels of Plk1 or the activity of Aurora-A (with an antibody that is specific for active Aurora-A) at old and new centrosomes, to reveal a potential asymmetry in kinase levels/activity. While Plk1 was symmetrically distributed, we found a modest increase of active Aurora-A on old centrosomes in HeLa cells (Figure 3K and Figure 3—figure supplement 1B). This difference was, however, not present in RPE1 cells (Figure 3K); moreover inhibition of Aurora-A or Plk1 did not abolish the bias in chromosome alignment, indicating that it does not depend on these two kinases (Figure 3L). In a second step, we investigated the possible involvement of ninein, as it is essential for cell fate determination in asymmetric cell divisions of neuronal progenitors and preferentially localizes to old centrosomes in asymmetric cell division (Wang et al., 2009), and of cenexin itself, the classical marker for old centrosomes (Figure 3K—note that ninein levels could not be compared on old and young mitotic centrosomes, as it is only present at very low levels (Logarinho et al., 2012)). While ninein depletion had no effect on chromosome alignment, cenexin depletion randomized the distribution of unaligned chromosomes (Figure 3I,J). Furthermore, it also equalized the percentage of end-on attached kinetochores at unaligned chromosomes, indicating that cenexin affects kinetochore–microtubule stability (Figure 3D). We conclude that old centrosomes stabilize kinetochore–microtubules in a cenexin-dependent manner.
 
-The ultimate function of the mitotic spindle is to accurately segregate sister chromatids. If kinetochore–microtubules bound to the old centrosomes were more stable, we predicted that this should affect the fate of chromosomes that fail to fully disjoin in anaphase; chromosome non-disjunction is a frequent cause of chromosome mis-segregation in cancer cells, that can be caused by various defects, such as stretches of unreplicated DNA, telomere fusions, or chromosome entanglements (
+The ultimate function of the mitotic spindle is to accurately segregate sister chromatids. If kinetochore–microtubules bound to the old centrosomes were more stable, we predicted that this should affect the fate of chromosomes that fail to fully disjoin in anaphase; chromosome non-disjunction is a frequent cause of chromosome mis-segregation in cancer cells, that can be caused by various defects, such as stretches of unreplicated DNA, telomere fusions, or chromosome entanglements (Aguilera and García-Muse, 2013). To monitor the fate of such chromosome non-disjunction, we monitored by live-cell imaging HeLa-eGFP-centrin1/mCherry-CENP-A cells released for synchronization purpose from a monastrol arrest. As previously reported, this procedure produced a number of single lagging, most likely merotelic, kinetochores, whose exact fate could not be tracked. However, in addition in roughly 2–5% of anaphases, we observed the presence of two lagging kinetochores that moved in synchrony between the two daughter DNA masses, but were separated by several microns, suggesting a sister-kinetochore pair on a non-disjoint chromosome (Figure 4A and Video 1). This assumption was confirmed by high-resolution immunofluorescence imaging, as such kinetochore pairs were invariably connected by a DNA thread (see representative images in Figure 4B). In those instances where both sister-kinetochores segregated to the same daughter cell, we found a strong bias in chromosome mis-segregation as 18 out of the 21 analyzed kinetochore pairs co-segregated with the old centrosome (Figure 4C; Video 1; number of experiments, cells and statistical tests for all chromosome mis-segregation events are in Table 2). This suggested that non-disjoint chromosomes are preferentially pulled towards the old centrosomes, possibly due to a higher stability of the kinetochore–microtubules emanating from the old centrosomes, which in a tug-of-war would favour a destabilization and release of the kinetochore–microtubules bound to the young pole. To test this hypothesis, we treated cells with Nnf1 and Cenexin siRNAs, which had abolished the bias in chromosome alignment and the asymmetry in the percentage of end-on attached kinetochores. In both cases, the bias in chromosome mis-segregation was abolished (Figure 4C; Video 2 and 3); in contrast when we depleted MCAK, which did not abolish the bias in chromosome alignment, chromosome mis-segregation was still biased (Figure 4C). We conclude that the difference in the stability of kinetochore–microtubules bound to the old or the young centrosome persists in anaphase, and that this difference causes non-disjoint chromosomes to co-segregate with old centrosomes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07909/elife-07909-fig4-v2.jpg)
 
-**Figure 4.:** (A) Time lapse images of a HeLa-eGFP-centrin1/mCherry-CENP-A cell with a non-disjoined sister-kinetochore pair in anaphase. White arrowhead indicates the old centrosome, yellow arrowheads the non-disjoined sister-kinetochore pair. Scale bar = 10 μm. (B) Illustrative example of a HeLa-eGFP-centrin1/eGFP-CENP-A cell in anaphase stained for α-tubulin with a non-disjoined chromosome. Insets highlight the non-disjoined chromosomes. Scale bar = 5 μm. (C) Proportion of non-disjoined chromosomes that co-segregate with the old centrosomes in HeLa-eGFP-centrin1/mCherry-CENP-A cells treated with the indicated siRNAs. For statistics and number of experiments, see Table 2. (D) Proposed model of how old and new centrosomes differentially affect chromosome alignment and chromosome segregation via kinetochore–microtubule stability.DOI: http://dx.doi.org/10.7554/eLife.07909.016
+**Figure 4.:** (A) Time lapse images of a HeLa-eGFP-centrin1/mCherry-CENP-A cell with a non-disjoined sister-kinetochore pair in anaphase. White arrowhead indicates the old centrosome, yellow arrowheads the non-disjoined sister-kinetochore pair. Scale bar = 10 μm. (B) Illustrative example of a HeLa-eGFP-centrin1/eGFP-CENP-A cell in anaphase stained for α-tubulin with a non-disjoined chromosome. Insets highlight the non-disjoined chromosomes. Scale bar = 5 μm. (C) Proportion of non-disjoined chromosomes that co-segregate with the old centrosomes in HeLa-eGFP-centrin1/mCherry-CENP-A cells treated with the indicated siRNAs. For statistics and number of experiments, see Table 2. (D) Proposed model of how old and new centrosomes differentially affect chromosome alignment and chromosome segregation via kinetochore–microtubule stability.
+
+![Video 1.](https://cdn.elifesciences.org/articles/07909/elife-07909-media1.avi.jpg)
+
+**Video 1.:** Note that the mis-segregating chromosome moves towards the brighter, old centrosome.
+
+**Table 2.**
+ Percentage of mis-segregating chromosomes that co-segregate with the old centrosomes
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>N0 of repeats</th>
+      <th>No of cells</th>
+      <th>No of chromosomes</th>
+      <th>No of chromosomes to the old centrosome</th>
+      <th>2-tailed binomial test p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HeLa-eGFP-centrin1/ mCherry-CENP-A</td>
+      <td>11</td>
+      <td>21</td>
+      <td>21</td>
+      <td>18</td>
+      <td>0.0015</td>
+    </tr>
+    <tr>
+      <td>HeLa-eGFP-centrin1/ mCherry-CENP-A siMCAK</td>
+      <td>3</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>0.0078</td>
+    </tr>
+    <tr>
+      <td>HeLa-eGFP-centrin1/ mCherry-CENP-A siNnf1</td>
+      <td>6</td>
+      <td>30</td>
+      <td>30</td>
+      <td>10</td>
+      <td>0.0990</td>
+    </tr>
+    <tr>
+      <td>HeLa-eGFP-centrin1/ mCherry-CENP-A siCenexin</td>
+      <td>6</td>
+      <td>16</td>
+      <td>16</td>
+      <td>10</td>
+      <td>0.4545</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 2.](https://cdn.elifesciences.org/articles/07909/elife-07909-media2.avi.jpg)
+
+**Video 2.:** Note that the mis-segregating chromosome moves towards the dimmer, young centrosome.
+
+![Video 3.](https://cdn.elifesciences.org/articles/07909/elife-07909-media3.avi.jpg)
+
+**Video 3.:** Note that the mis-segregating chromosome moves towards the dimmer, young centrosome.
 
 ## Discussion
 
@@ -85,18 +289,18 @@ The asymmetry in kinetochore–microtubule stability persists throughout mitosis
 
 ## Materials and methods
 
-## Cell culture, drug, and siRNA treatments
+### Cell culture, drug, and siRNA treatments
 
 HeLa, hTert-RPE1, and hTert-RPE1-eGFP-centrin1 cells (kind gift of A. Khodjakov) were grown in Dulbecco's modified medium (DMEM) supplemented with 10% FCS, 100 U/ml penicillin, 100 mg/ml streptomycin, at 37°C with CO2 in a humidified incubator. HeLa-eGFP-centrin1 cells (kind gift of S. Doxsey) were further maintained in 500 μg/ml G418. HeLa-eGFP-centrin1/mCherry-CENP-A cells were generated by stably transfecting eGFP-centrin1 in HeLa-mCherry-CENP-A cells (kind gift of A. McAinsh, U. of Warwick); as HeLa-eGFP-centrin1/CENP-A-GFP, they were further supplemented with 500 μg/ml puromycin and 500 μg/ml G418. Live-cell imaging experiments were performed at 37°C in Lab-Tek II (Thermofisher, Switzerland) and Ibidi IV (Ibidi, Switzerland) chambers in L-15 medium supplemented with 10% FCS. To enrich for unaligned chromosomes, mitotic cells were removed by shake-off and the remaining cells treated with 10 ng/ml nocodazole for 2 hr. For nocodazole and monastrol washout experiments, cells were treated with either 1 μg/ml nocodazole or 100 nM monastrol for 4 hr (Sigma, Switzerland), washed twice with fresh medium and left to recover for 1 hr. Aurora-A was inhibited for 2 hr with 100 nM MLN8237 (Selleckchem.com, Switzerland), Plk1 for 2 hr with 100 nM BI2536 (Axon Lab AG, Switzerland), and CENP-E for 2 hr with 5 nM GSK-923295 (Chem Express, Switzerland). To stabilize microtubules, cells were treated with 5 nM Taxol (Sigma, Switzerland) for 2hr. To monitor anaphase cells, cells were released from a monastrol arrest and followed by live cell imaging. The following SiRNA oligonucleotides (Invitrogen and Thermofisher, Switzerland) were used: siControl (scrambled) (Mchedlishvili et al., 2012), siNinein (Logarinho et al., 2012), siDsn1 (Kline et al., 2006), siNnf1 (McAinsh et al., 2006), siMCAK (Ganem and Compton, 2004), siCenexin (OnTarget smart pool, L-017319-01-0005, Thermofisher); they were transfected using RNAi Max Lipofectamine (Invitrogen) and validated by immunofluorescence microscopy (Figure 3—figure supplement 4).
 
-## Quantitative immunofluorescence
+### Quantitative immunofluorescence
 
 Cells were fixed with methanol at −20°C for 6 min, or with 20 nM Pipes (pH 6.8), 10 mM EGTA, 1 mM MgCl2, 0.2% Triton X-100, 4% formaldehyde for 7 min at room temperature. For the microtubule nucleation assay, cells were incubated on ice for 1 hr before release in 37°C medium for 15 s for RPE-eGFP-centrin1 and 30 s for HeLa-eGFP-centrin1 cells. To image the attachment state of unaligned kinetochores, cells were rinsed with cytoskeleton buffer (10 mM MES, 150 mM NaCl, 5 mM MgCl2, 5 mM glucose) prior and after fixation with 3% formaldehyde, 0.1% Triton X-100, and 0.05% glutaraldehyde for 10 min at room temperature. To analyze tubulin acetylation and detyrosination, cells were fixed with 20 nM Pipes (pH 6.8), 10 mM EGTA, 1 mM MgCl2, 0.2% Triton X-100, 4% formaldehyde for 7 min at room temperature. To image the Calcium stability of kinetochore–microtubules, cells were treated with 0.5 nM CaCl2 dissolved in warm DMEM for 10 min at room temperature, rinsed with cytoskeleton buffer (10 mM MES, 150 mM NaCl, 5 mM MgCl2, 5 mM glucose) prior and after fixation with 3% formaldehyde, 0.1% Triton X-100 and 0.05% glutaraldehyde for 10 min at room temperature. Three-dimensional image stacks of mitotic cells were acquired in 0.1- or 0.2-μm steps using 100x and 60x NA 1.4 objectives on an Olympus DeltaVision microscope (GE Healthcare, Switzerland) equipped with DAPI/FITC/TRITC/CY5 filter set (Chroma, Bellow Falls, VT) and a CoolSNAP HQ camera (Roper Scientific, Tuscon USA). 3D image stacks were deconvolved with SoftWorx (GE Healthcare) and analyzed with SoftWorx, Imaris (Bitplane, Switzerland) or ImageJ. For the nucleation assay, deconvolved total projections were analyzed as shown in Figure 1B. For the attachment status of unaligned kinetochores, single kinetochores were analyzed in 3D reconstruction of several z-stacks, and classified as shown in Figure 3C. To analyze Calcium stability, individual kinetochores were displayed in single z-planes and classified as shown in Figure 3E. The difference in microtubule nucleation capacity at old and young centrosomes was calculated as shown in Figure 2—figure supplement 2. The differences in protein levels at centrosomes or unaligned kinetochores at old and young centrosomes were calculated as shown in Figure 3—figure supplement 1. Images were mounted as figures using Adobe Illustrator. Primary antibodies used were mouse anti-CENP-A (1:2000, Abcam, United Kingdom), mouse anti-α-tubulin (1:10′000, Sigma), mouse anti-acetylated tubulin (1:1000; Sigma), rabbit anti-detyrosinated tubulin (1:1000, Merck-Millipore, Switzerland), rabbit anti-α-tubulin (1:500, Abcam), human CREST (1:400, Antibodies Inc, Davis USA), rabbit anti-phosphoT288-Aurora-A (1:1000, Cell Signalling, Danvers USA), rabbit anti-Plk1 (1:1000, Abcam), rabbit anti-Cenexin (1:1000, Abcam), rabbit anti-Ninein (1:500, Abcam), rabbit anti-Nnf1 (1:1000, McAinsh et al., 2006), rabbit anti-Dsn1 (1:2000, kind gift of Iain Cheeseman Kline et al., 2006), rabbit anti-MCAK (1:1000, Amaro et al., 2010), and rabbit anti-CENP-E (1:1000, Meraldi et al., 2004). Cross-adsorbed secondary antibodies were used (Invitrogen).
 
-## Live imaging
+### Live imaging
 
 To visually monitor the fate of non-disjoint chromosomes, Hela-eGFP-centrin1/mCherry-CENP-A cells were recorded every 2 or 4 min in 26 × 0.7-μm steps using a 60 × 1.4 NA objective on an Olympus DeltaVision microscope equipped with a GFP/mRFP filter set (Chroma) and a CoolSNAP HQ camera. To distinguish eGFP-centrin1 intensities in both experiments, reference images were taken at the end of the experiment, as three-dimensional stacks of 40 × 0.3-μm steps and a high-exposure times using the same objective and camera. Time-lapse movies were visualized in Imaris (Bitplane). To calculate distances, three-dimensional positions of the old and the young centriole and of all the kinetochores were detected using Imaris (Bitplane) and distances calculated with a custom MatLab function (see source code 1).
 
-## Statistical methods
+### Statistical methods
 
 To check for biased distribution of polar chromosomes, Binomial probability test with expected probability success on a single trial of 0.5 was used. To calculate 2-ANOVAs, medians and median confidence intervals, and run t-tests PRISM (GraphPad, La Jolla, CA) were used. Graphs were plotted in Excel (Microsoft, Redmond, WA) and PRISM and mounted in Adobe Illustrator (Adobe, Mountain View, CA).

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.03398.001 An organised spindle is crucial to the fidelity of chromosome segregation, but the relationship between spindle structure and function is not well understood in any cell type. The anaphase B spindle in fission yeast has a slender morphology and must elongate against compressive forces. This ‘pushing’ mode of chromosome transport renders the spindle susceptible to breakage, as observed in cells with a variety of defects. Here we perform electron tomographic analyses of the spindle, which suggest that it organises a limited supply of structural components to increase its compressive strength. Structural integrity is maintained throughout the spindle's fourfold elongation by organising microtubules into a rigid transverse array, preserving correct microtubule number and dynamically rescaling microtubule length. DOI: http://dx.doi.org/10.7554/eLife.03398.001
+An organised spindle is crucial to the fidelity of chromosome segregation, but the relationship between spindle structure and function is not well understood in any cell type. The anaphase B spindle in fission yeast has a slender morphology and must elongate against compressive forces. This ‘pushing’ mode of chromosome transport renders the spindle susceptible to breakage, as observed in cells with a variety of defects. Here we perform electron tomographic analyses of the spindle, which suggest that it organises a limited supply of structural components to increase its compressive strength. Structural integrity is maintained throughout the spindle's fourfold elongation by organising microtubules into a rigid transverse array, preserving correct microtubule number and dynamically rescaling microtubule length.
 
 ## Introduction
 
@@ -33,17 +33,37 @@ In this study, we reconstruct the architecture of wild-type fission yeast spindl
 
 ## Results
 
-## Electron tomographic reconstructions of wild-type Fission Yeast Spindles
+### Electron tomographic reconstructions of wild-type Fission Yeast Spindles
 
-We began by using the very uniform mitotic progression of cells containing GFP-labelled tubulin (
+We began by using the very uniform mitotic progression of cells containing GFP-labelled tubulin (Figure 1A; Video 1, 2) to assign ET reconstructions to a specific time during mitosis. Our ET reconstructions confirmed that the spindle is composed of two opposing arrays of pole-nucleated microtubules that interdigitate at the spindle midzone (Figure 1B; Videos 3–5). A similar gross spindle organisation was observed in previous serial-section reconstructions of cdc25.22 fission yeast cells (Ding et al., 1993) and the related budding yeast spindle (Winey et al., 1995).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig1-v2.jpg)
 
-**Figure 1.:** (A) Fission yeast cell expressing GFP-labelled tubulin. The dashed red line shows cell outline at mitotic entry. Interval between frames = 1 min, scale bar = 0.5 μm. (B) ET reconstructions of three anaphase B spindles. Microtubules are coloured according to the pole from which they originate. Dashes represent the approximate locations of the cross-sections shown in C. (C) Longitudinal and transverse spindle architecture. Diagrams on the left show the contour length and number of microtubules within each spindle. Black arrowheads mark the three anaphase B spindles depicted in B. Circle-and-stick diagrams on the right represent cross-sections near to the poles and midzone of each spindle. Microtubule radii are drawn to scale. Black lines are drawn between neighbouring anti-parallel microtubules. (D) Raw electron tomographic images of second-longest anaphase B spindle shown in C. Microtubules are marked by yellow arrows. Scale bar = 25 nm. (E) Histograms of nearest-neighbour microtubule distances and packing angles for the three spindles shown in panel B. Blue lines represent histograms for the polar regions of the spindle and red lines the midzone. Coloured arrows mark the median of each distribution. The midzone is defined as the region of microtubule overlap that contains at least two microtubules from each pole. Kolmogorov–Smirnov tests were used to determine the probability that distributions for the polar and midzone regions were drawn from the same parent. All of the comparisons, shown here, have a p-value <10−4. (F) Schematic representation of microtubule angle and distance distributions at the poles and midzone of the spindle. (G) Number of spindle microtubules with respect to pole-to-pole spindle length Ls. The blue error bars summarise results for spindles divided into metaphase (Ls < 2.5 μm), early anaphase B (2.5 < Ls < 4 μm), and late anaphase B (Ls > 4 μm) stages. (H) Estimates of the ratio of fluorescent tubulin incorporated into the spindle for twenty mitotic cells (grey curves) with mean and standard deviations shown in blue. The red crosses indicate the total length of microtubules polymerised within each ET spindle. (I) Elongation profile for twenty wild-type spindles obtained from automatic tracking of SPBs. The traces are aligned temporally by defining time-zero as the frame at which spindles first reach a length of 3 μm.DOI: http://dx.doi.org/10.7554/eLife.03398.003
+**Figure 1.:** (A) Fission yeast cell expressing GFP-labelled tubulin. The dashed red line shows cell outline at mitotic entry. Interval between frames = 1 min, scale bar = 0.5 μm. (B) ET reconstructions of three anaphase B spindles. Microtubules are coloured according to the pole from which they originate. Dashes represent the approximate locations of the cross-sections shown in C. (C) Longitudinal and transverse spindle architecture. Diagrams on the left show the contour length and number of microtubules within each spindle. Black arrowheads mark the three anaphase B spindles depicted in B. Circle-and-stick diagrams on the right represent cross-sections near to the poles and midzone of each spindle. Microtubule radii are drawn to scale. Black lines are drawn between neighbouring anti-parallel microtubules. (D) Raw electron tomographic images of second-longest anaphase B spindle shown in C. Microtubules are marked by yellow arrows. Scale bar = 25 nm. (E) Histograms of nearest-neighbour microtubule distances and packing angles for the three spindles shown in panel B. Blue lines represent histograms for the polar regions of the spindle and red lines the midzone. Coloured arrows mark the median of each distribution. The midzone is defined as the region of microtubule overlap that contains at least two microtubules from each pole. Kolmogorov–Smirnov tests were used to determine the probability that distributions for the polar and midzone regions were drawn from the same parent. All of the comparisons, shown here, have a p-value <10−4. (F) Schematic representation of microtubule angle and distance distributions at the poles and midzone of the spindle. (G) Number of spindle microtubules with respect to pole-to-pole spindle length Ls. The blue error bars summarise results for spindles divided into metaphase (Ls < 2.5 μm), early anaphase B (2.5 < Ls < 4 μm), and late anaphase B (Ls > 4 μm) stages. (H) Estimates of the ratio of fluorescent tubulin incorporated into the spindle for twenty mitotic cells (grey curves) with mean and standard deviations shown in blue. The red crosses indicate the total length of microtubules polymerised within each ET spindle. (I) Elongation profile for twenty wild-type spindles obtained from automatic tracking of SPBs. The traces are aligned temporally by defining time-zero as the frame at which spindles first reach a length of 3 μm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Linear calibration curve for relating polymer mass to spindle intensity. Coefficient of determination R2 = 0.40.DOI: http://dx.doi.org/10.7554/eLife.03398.004
+**Figure 1—figure supplement 1.:** Linear calibration curve for relating polymer mass to spindle intensity. Coefficient of determination R2 = 0.40.
+
+![Video 1.](https://cdn.elifesciences.org/articles/03398/elife-03398-media1.mov.jpg)
+
+**Video 1.:** Frames are shown at intervals of 1 min. The green channel shows maximum intensity projections of cells expressing GFP-tubulin (SV40:GFP-Atb2), with the magenta channel showing SPBs labelled with Cut12-tdTomato. The cut12-tdTomato images were processed using a deconvolution algorithm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/03398/elife-03398-media2.mov.jpg)
+
+**Video 2.:** The cell outline is shown in magenta. The magenta circles represent tracking of the SPBs from the cut12-tdTomato channel (not shown). These are used to define the green box, which is used to compute spindle intensity. Tracking of the spindle intensity is ceased after the spindle elongates beyond 9 μm. At later stages of elongation more pronounced buckling of the spindle is observed, and microtubules begin to be nucleated in the vicinity of the cytokinetic ring.
+
+![Video 3.](https://cdn.elifesciences.org/articles/03398/elife-03398-media3.mov.jpg)
+
+**Video 3.:** from Figure 1B, top. Scale bar = 0.5 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/03398/elife-03398-media4.mov.jpg)
+
+**Video 4.:** from Figure 1B, middle. Scale bar = 0.5 μm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/03398/elife-03398-media5.mov.jpg)
+
+**Video 5.:** from Figure 1B, bottom. Scale bar = 0.5 μm.
 
 In order to obtain estimates of the spindle's cross-sectional (or transverse) organisation that are independent of any spindle distortions (Figure 1B; see subsequent discussion), we developed a new algorithm, termed Isotropic Fibre Tracking Analysis (IFTA). This procedure enabled us to determine the spindles' contour length and to investigate the transverse organisation of microtubules (‘Materials and methods’). A visualisation of the IFTA results (Figure 1C) reveals that microtubules at the spindle midzone form arrays with a degree of square-packed order from late metaphase onwards. We frequently observe square arrays containing a 3 × 3 ‘checkerboard’ arrangement of microtubules at the midzone of spindles from the end of metaphase and early in anaphase B, whilst all of the later spindles contain at least four microtubules arranged as the vertices of a square. The polar regions of the spindle are loosely packed in metaphase but become more tightly packed in anaphase B, where we observe three microtubules arranged in an equilateral triangle motif in all of the reconstructed spindles.
 
@@ -53,7 +73,77 @@ Statistical analyses of IFTA results from anaphase B spindles (Figure 1E) confir
 
 A prominent feature of the ET reconstructions is the relatively small number of constituent microtubules. The ET shows that the spindle contains around thirty microtubules during metaphase, and that this number is reduced dramatically by kinetochore-fibre depolymerisation in anaphase A (Figure 1G). Upon entry into anaphase B, the spindle is constructed from only ten microtubules, which are then lost progressively from the spindle until only six remain prior to its disassembly. Concomitant with the changes in microtubule number, the total microtubule length polymerised within the spindle peaks at around 30 μm at the end of metaphase, but then remains roughly constant in anaphase B as the spindle length increases by a factor of four (Figure 1H). This result was confirmed by live-cell imaging, which indicated that the intensity of the GFP-labelled tubulin incorporated into the spindle also plateaus shortly after the metaphase-to-anaphase transition (Figure 1H; Figure 1—figure supplement 1; Videos 1 and 2). This analysis also affirmed the highly stereotypic spindle elongation profile in fission yeast cells (Figure 1I).
 
-The close agreement between the live-cell imaging and static ET enabled us to estimate the critical and total concentration of tubulin subunits in fission yeast cells by calibrating the fluorescent intensity measurements to the total tubulin polymerised in ET reconstructions of the spindle (Table 1). This technique yields an estimate for the tubulin concentration (4.3 ± 0.8 μM) that is a factor of five lower than in metazoan cells (Gard and Kirschner, 1987), and is in good agreement with mass spectrometry estimates of the abundance of tubulin isoforms (Marguerat et al., 2012). Since all microtubule dynamics occur at the plus-tips of spindle microtubules during anaphase B (Mallavarapu et al., 1999), the conservation of polymer mass suggests that microtubule depolymerisation and recycling of tubulin subunits into the free pool (Walker et al., 1988) may be required for growth of the surviving interpolar microtubules, as suggested by previous EM reconstructions of fission yeast cells containing the cdc25.22 mutation (Ding et al., 1993). Interestingly, cells from the cdc25.22 genetic background are enlarged upon entry into mitosis (West et al., 2001), and can be compared with the wild-type spindle to provide insight into how the spindle's architecture is altered by increases in cytoplasmic volume.10.7554/eLife.03398.010Table 1.Measurements for calculation of critical and absolute tubulin concentration in fission yeastDOI: http://dx.doi.org/10.7554/eLife.03398.010Cell dimensionsRadiusRc = 1.6 ± 0.1 μmMaximal cell diameter/2 (Foethke et al., 2009)LengthLc = 14.3 ± 0.9 μmDistance between cell tips at mitotic entry (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009)VolumeVc = 2πRc3.(Lc/2Rc−1/3) Vc = 106.4 ± 13.4 μm3Assumes cell is sphero-cylindricalSpindle propertiesSteady-state polymer27.1 ± 4.2 μmSum of all the microtubule's length. This studyα/β-tubulin heterodimers(4.4 ± 0.6) × 104 dimersEach MT has 13-protofilaments with a length of 8 nm (Howard, 2001)Relative intensity0.16 ± 0.02Mean fluorescent intensity ratio of spindles longer than 4 μmTubulin dimer concentrationAbundance(20.0 ± 4.0) × 104Number of dimers in the cellFree pool3.61 ± 0.68 μMCorresponds to the critical concentration of MT assemblyPolymerized pool0.68 ± 0.13 μMTotal concentration4.30 ± 0.81 μM
+The close agreement between the live-cell imaging and static ET enabled us to estimate the critical and total concentration of tubulin subunits in fission yeast cells by calibrating the fluorescent intensity measurements to the total tubulin polymerised in ET reconstructions of the spindle (Table 1). This technique yields an estimate for the tubulin concentration (4.3 ± 0.8 μM) that is a factor of five lower than in metazoan cells (Gard and Kirschner, 1987), and is in good agreement with mass spectrometry estimates of the abundance of tubulin isoforms (Marguerat et al., 2012). Since all microtubule dynamics occur at the plus-tips of spindle microtubules during anaphase B (Mallavarapu et al., 1999), the conservation of polymer mass suggests that microtubule depolymerisation and recycling of tubulin subunits into the free pool (Walker et al., 1988) may be required for growth of the surviving interpolar microtubules, as suggested by previous EM reconstructions of fission yeast cells containing the cdc25.22 mutation (Ding et al., 1993). Interestingly, cells from the cdc25.22 genetic background are enlarged upon entry into mitosis (West et al., 2001), and can be compared with the wild-type spindle to provide insight into how the spindle's architecture is altered by increases in cytoplasmic volume.
+
+**Table 1.**
+ Measurements for calculation of critical and absolute tubulin concentration in fission yeast
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Cell dimensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Radius</td>
+      <td>Rc = 1.6 ± 0.1 μm</td>
+      <td>Maximal cell diameter/2 (Foethke et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>Length</td>
+      <td>Lc = 14.3 ± 0.9 μm</td>
+      <td>Distance between cell tips at mitotic entry (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>Volume</td>
+      <td>Vc = 2πRc3.(Lc/2Rc−1/3) Vc = 106.4 ± 13.4 μm3</td>
+      <td>Assumes cell is sphero-cylindrical</td>
+    </tr>
+    <tr>
+      <td colspan="3">Spindle properties</td>
+    </tr>
+    <tr>
+      <td>Steady-state polymer</td>
+      <td>27.1 ± 4.2 μm</td>
+      <td>Sum of all the microtubule's length. This study</td>
+    </tr>
+    <tr>
+      <td>α/β-tubulin heterodimers</td>
+      <td>(4.4 ± 0.6) × 104 dimers</td>
+      <td>Each MT has 13-protofilaments with a length of 8 nm (Howard, 2001)</td>
+    </tr>
+    <tr>
+      <td>Relative intensity</td>
+      <td>0.16 ± 0.02</td>
+      <td>Mean fluorescent intensity ratio of spindles longer than 4 μm</td>
+    </tr>
+    <tr>
+      <td colspan="3">Tubulin dimer concentration</td>
+    </tr>
+    <tr>
+      <td>Abundance</td>
+      <td>(20.0 ± 4.0) × 104</td>
+      <td>Number of dimers in the cell</td>
+    </tr>
+    <tr>
+      <td>Free pool</td>
+      <td>3.61 ± 0.68 μM</td>
+      <td>Corresponds to the critical concentration of MT assembly</td>
+    </tr>
+    <tr>
+      <td>Polymerized pool</td>
+      <td>0.68 ± 0.13 μM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total concentration</td>
+      <td>4.30 ± 0.81 μM</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 The earlier spindle reconstructions of spindles in cdc25.22 cells were performed using serial-section electron microscopy (Ding et al., 1993), which involves sectioning fixed cells in a particular orientation, imaging each section using transmission electron microscopy and then recording the transverse microtubule positions (Soto et al., 1994). These two-dimensional slices are then registered and used to approximate the full three-dimensional object. The main disadvantage of this technique is that movements of the microtubules perpendicular to the imaging plane cannot be fully accounted for, which can cause straightening of microtubules during the registration step. The technique provides accurate estimates of microtubule length and transverse organisation in linear microtubule bundles, but it may be impossible to track strongly curved microtubules, which, by definition, have an orientation that varies along their length. These difficulties are largely overcome by electron tomography where the sample is imaged at numerous orientations (i.e. a tilt series) with respect to the imaging plane (Soto et al., 1994).
 
@@ -63,25 +153,25 @@ The organisation of the spindle in wild-type cells resembles the serial-section 
 
 Other differences between the wild-type and cdc25.22 spindles are associated with the transverse organisation of microtubules. In particular, we have observed that, in wild-type cells, the square-packed organisation with a regular 40 nm centre-to-centre microtubule separation is established during metaphase whereas spindles from the same stage in the cdc25.22 mutants appear to have a less ordered midzone architecture (Ding et al., 1993). Square packing is present at the midzone of anaphase B spindles in both genetic backgrounds, but the tight hexagonal packing nearer the poles of anaphase B spindles was not observed in cdc25.22 mutant cells, where a more variable transverse architecture was present. These two differences could be explained by the spindle morphology being perturbed by the increased microtubule polymer in cdc25.22 fission yeast cells or the technical differences in the electron microscopy.
 
-## Effects of spindle architecture on its response to compressive forces
+### Effects of spindle architecture on its response to compressive forces
 
-The ordered wild-type spindle architecture, the well-defined forces to which it is subjected (
+The ordered wild-type spindle architecture, the well-defined forces to which it is subjected (Tolić-Nørrelykke, Sacconi, et al., 2004b; Khodjakov et al., 2004) and the limited quantity of tubulin subunits that appear to be available for its assembly prompted us to investigate the mechanical properties of the complex assembly of microtubules that form the spindle. The mechanical response of slender elastic beams under compression can be described using the Euler-Bernoulli beam theory (Landau and Lifshitz, 1986), which states that a beam will remain straight if subjected to forces below a certain threshold but will buckle if the critical force is exceeded. The critical force depends on the length of the beam, the elastic properties of the constituent material (specifically, its Young's modulus, E) and the beam's cross-section (Figure 2). The Young's modulus is a measure of the stiffness of a particular material. Intuitively, it can be thought of as the constant that relates the degree of contraction (or strain) in a block of material to the pressure (or stress) exerted on its ends.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig2-v2.jpg)
 
-**Figure 2.:** (A) The Ι-beam is a structural element that is commonly used in civil engineering. If the beam is clamped in a horizontal position at the end furthest from view (grey rectangle), and a transverse force is applied at the other end (in this case upwards), then the beam's resistance is defined by the scalar transverse stiffness, EIxx, which is the product of the Young's modulus, E, and the area moment of inertia, Ixx. The area moment of inertia can be computed by dividing the cross-section into area elements, dA, and multiplying each area by the square of their distance, y, from the neutral axis (dotted line). A sum or integration of this quantity can then be used to compute the area moment of inertia, Ixx. The neutral axis is perpendicular to the applied force and passes through the centre-of-mass of the beam's cross-section. Intuitively, an increased stiffness can be achieved by placing the beam's material as far from the neutral axis as possible. This property is the rationale behind the design of the I-beam, which typically bears loads in the direction given by Ixx. (B) A similar calculation to A can be used to calculate the beam's stiffness in an orthogonal direction. It is usually the case that Ixx > Iyy for Ι-beam designs. (C) The generalised response of a beam to forces in an arbitrary direction, denoted by the unit vector n, can be represented by the area moment of inertia tensor, J, with entries Ixx, Iyy, Ixy. The tensor, J, is a matrix quantity that relates the direction of the applied force to the beam's deflection (Landau et al., 1986). For a general tensor matrix, there exist two orthogonal vectors (known as eigenvectors) that represent the directions of the beam's maximal and minimal stiffness. (D) The eigenvectors or principal axes of the Ι-beam point along the x and y-axes. (E) Under purely compressive forces a prismatic beam with length, L, will buckle in the direction of the most compliant principal axis, which defines the critical force, Fc, for beams of this type. (F) Beams with a mechanically isotropic transverse organisation, such as microtubules, have a scalar stiffness tensor (Imin = Imax) and degenerate principal axes. The ratio Imax/Imin ≥ 1 can be used to quantify the beam's degree of anisotropy. The ratio is one for mechanically isotropic structures such as a single microtubule or a bundle of 4 microtubules arranged in a 2 × 2 square motif.DOI: http://dx.doi.org/10.7554/eLife.03398.011
+**Figure 2.:** (A) The Ι-beam is a structural element that is commonly used in civil engineering. If the beam is clamped in a horizontal position at the end furthest from view (grey rectangle), and a transverse force is applied at the other end (in this case upwards), then the beam's resistance is defined by the scalar transverse stiffness, EIxx, which is the product of the Young's modulus, E, and the area moment of inertia, Ixx. The area moment of inertia can be computed by dividing the cross-section into area elements, dA, and multiplying each area by the square of their distance, y, from the neutral axis (dotted line). A sum or integration of this quantity can then be used to compute the area moment of inertia, Ixx. The neutral axis is perpendicular to the applied force and passes through the centre-of-mass of the beam's cross-section. Intuitively, an increased stiffness can be achieved by placing the beam's material as far from the neutral axis as possible. This property is the rationale behind the design of the I-beam, which typically bears loads in the direction given by Ixx. (B) A similar calculation to A can be used to calculate the beam's stiffness in an orthogonal direction. It is usually the case that Ixx > Iyy for Ι-beam designs. (C) The generalised response of a beam to forces in an arbitrary direction, denoted by the unit vector n, can be represented by the area moment of inertia tensor, J, with entries Ixx, Iyy, Ixy. The tensor, J, is a matrix quantity that relates the direction of the applied force to the beam's deflection (Landau et al., 1986). For a general tensor matrix, there exist two orthogonal vectors (known as eigenvectors) that represent the directions of the beam's maximal and minimal stiffness. (D) The eigenvectors or principal axes of the Ι-beam point along the x and y-axes. (E) Under purely compressive forces a prismatic beam with length, L, will buckle in the direction of the most compliant principal axis, which defines the critical force, Fc, for beams of this type. (F) Beams with a mechanically isotropic transverse organisation, such as microtubules, have a scalar stiffness tensor (Imin = Imax) and degenerate principal axes. The ratio Imax/Imin ≥ 1 can be used to quantify the beam's degree of anisotropy. The ratio is one for mechanically isotropic structures such as a single microtubule or a bundle of 4 microtubules arranged in a 2 × 2 square motif.
 
 The influence of the cross-section on the beam's response to simple loads can be summarised by two orthogonal vectors associated with the scalar values Imin and Imax (Figure 2A–D). These principal axes define the direction of the beam's maximal and minimal resistance to bending forces. In civil engineering, anisotropic structures such as the I-beam are typically used as horizontal supports with the stiffer axis oriented in the same direction as the major load to which the beam is subjected (Gere and Goodno, 2012). However, under purely compressive forces beams with a constant cross-section will typically buckle in the direction of the most compliant principal axis (Figure 2E), and thus the minimal transverse stiffness, Imin, determines the critical force for beams of this type. It is for these reasons that the columns used as vertical supports in buildings, and perhaps also microtubules themselves, have rotational symmetry and an isotropic bending resistance (Howard, 2001; Gere and Goodno, 2012).
 
-We first considered how the transverse stiffness increases with microtubule number for idealised hexagonal and square arrays (
+We first considered how the transverse stiffness increases with microtubule number for idealised hexagonal and square arrays (Figure 2F and Figure 3A,B). In these models, we assume that microtubules are hollow, elastic cylinders, and that cross-linkers form fixed attachments to the microtubule surface (Figure 3A). We initially assume that the cross-linkers contribute a negligible density to the area moment of inertia tensor (w = 0 in Figure 3A) (Claessens et al., 2006). All stiffness estimates are normalised to the flexural rigidity of a single, 13-protofilament microtubule.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic representation of a pair of bundled microtubules. Microtubules are modelled as hollow cylinders that are linked by rectangular support elements with identical material properties. In all moment of inertia calculations we used r1 = 7.5 nm and r2 = 12.5 nm. (B) Transverse organisation of idealised hexagonal and square-packed arrays of microtubules as additional fibres are added. (C, D) Eigenvalues of the stiffness tensor for idealised hexagonal and square-packed microtubule arrays. Results are shown for centre-to-centre separations (equal to h+2 r2) that match those obtained from ET reconstructions. These are 30 nm and 40 nm for hexagonal (polar) and square (midzone) arrays, respectively. The blue and red curves show the small and large eigenvalues of the stiffness tensor. Black arrows represent microtubule organisations with degenerate eigenvalues and isotropic stiffness. The solid black curves show the mean of the large and small eigenvalues, and the dashed black curves a quadratic fit to the mean stiffness. The y-axis (labelled as MT units) shows the stiffness of the bundle divided by the stiffness of one microtubule. (E) Minimal transverse stiffness, EImin, for three anaphase B spindles with identical units to C, D. (F) Stiffness anisotropy ratio, Imax/Imin, color-coded over the ET spindle reconstructions. Arrows mark the positions of the regions shown in G and H. (G) An apparent loss of cross-linker integrity at the pole of the spindle is a cause of stiffness anisotropy. Microtubules are drawn to scale, and are numbered consistently between slices. Arrows show the approximate extent of the bundle in two orthogonal directions. The two sections are separated by a distance of 240 nm along the spindle axis. (H) Transverse sections showing stiffness anisotropy at the transition from the square-packed crystalline phase to hexagonal phase. Each slice is separated by an axial distance of 200 nm.DOI: http://dx.doi.org/10.7554/eLife.03398.012
+**Figure 3.:** (A) Schematic representation of a pair of bundled microtubules. Microtubules are modelled as hollow cylinders that are linked by rectangular support elements with identical material properties. In all moment of inertia calculations we used r1 = 7.5 nm and r2 = 12.5 nm. (B) Transverse organisation of idealised hexagonal and square-packed arrays of microtubules as additional fibres are added. (C, D) Eigenvalues of the stiffness tensor for idealised hexagonal and square-packed microtubule arrays. Results are shown for centre-to-centre separations (equal to h+2 r2) that match those obtained from ET reconstructions. These are 30 nm and 40 nm for hexagonal (polar) and square (midzone) arrays, respectively. The blue and red curves show the small and large eigenvalues of the stiffness tensor. Black arrows represent microtubule organisations with degenerate eigenvalues and isotropic stiffness. The solid black curves show the mean of the large and small eigenvalues, and the dashed black curves a quadratic fit to the mean stiffness. The y-axis (labelled as MT units) shows the stiffness of the bundle divided by the stiffness of one microtubule. (E) Minimal transverse stiffness, EImin, for three anaphase B spindles with identical units to C, D. (F) Stiffness anisotropy ratio, Imax/Imin, color-coded over the ET spindle reconstructions. Arrows mark the positions of the regions shown in G and H. (G) An apparent loss of cross-linker integrity at the pole of the spindle is a cause of stiffness anisotropy. Microtubules are drawn to scale, and are numbered consistently between slices. Arrows show the approximate extent of the bundle in two orthogonal directions. The two sections are separated by a distance of 240 nm along the spindle axis. (H) Transverse sections showing stiffness anisotropy at the transition from the square-packed crystalline phase to hexagonal phase. Each slice is separated by an axial distance of 200 nm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Minimal transverse stiffness of a cross-linked hexagonal array of microtubules. Curves reflect the small eigenvalue of the stiffness tensor for cross-linkers of increasing width. Other constants are identical to those described in panel D from the main text. Arrows mark the position of hexagonal structural motifs. (B) Minimal transverse stiffness of square-packed bundles of microtubules with variable cross-link width.DOI: http://dx.doi.org/10.7554/eLife.03398.013
+**Figure 3—figure supplement 1.:** (A) Minimal transverse stiffness of a cross-linked hexagonal array of microtubules. Curves reflect the small eigenvalue of the stiffness tensor for cross-linkers of increasing width. Other constants are identical to those described in panel D from the main text. Arrows mark the position of hexagonal structural motifs. (B) Minimal transverse stiffness of square-packed bundles of microtubules with variable cross-link width.
 
 This analysis shows that the beam's minimal transverse stiffness contains peaks corresponding to specific microtubule numbers and organisations (Figure 3C,D). These structural motifs have far higher minimal transverse stiffness than arrays containing one fewer microtubule, and almost identical minimal stiffness to arrays that contain an additional microtubule. For example, removing a single microtubule from the 2 × 2 square motif in Figure 3D reduces the minimal transverse stiffness by ∼1100% while the addition of a further microtubule only gives rise to an increase of ∼3%. These large increases in the minimal stiffness correspond to mechanically isotropic organisations, where Imin = Imax.
 
@@ -95,37 +185,144 @@ The estimates of the spindle's transverse anisotropy ratio reveal that all of th
 
 Remarkably, inspection of anaphase B spindles from cdc25.22 mutant fission yeast cells (Ding et al., 1993) and budding yeast (Winey et al., 1995) indicate that they also contain similar structural microtubule motifs. The enlarged cytoplasmic volumes and greater polymer mass in cdc25.22 cells (Ding et al., 1993) leads to spindles that retain the nine microtubules at the spindle midzone in a 3 × 3 configuration late into anaphase B. Conversely, late anaphase B spindles in budding yeast contain around 20 μm of polymer, and are often arranged with two long microtubules emanating from each pole (Winey et al., 1995), and a 2 × 2 square-packed array in the central spindle. This suggests that the mechanisms of spindle assembly that give rise to mechanically isotropic arrangements are conserved in other yeast species, and are adaptable to the increased abundance of tubulin in enlarged fission yeast cells.
 
-## Estimating the Effective Stiffness of the spindle and its resistance to primary-mode buckling
+### Estimating the Effective Stiffness of the spindle and its resistance to primary-mode buckling
 
-As the spindle's cross-sections have striking geometric properties that appear to enhance its mechanical properties, an open question concerns whether the length and number of spindle microtubules also increase the critical force that the structure can tolerate before buckling. Since the Euler-Bernoulli beam theory only applies to prismatic beams with a constant transverse organisation, it is also unclear whether the local design rules for microtubule packing endow the non-prismatic spindles with high critical forces (Landau et al., 1986; Gere and Goodno, 2012). To address these questions, we constructed a simplified computational model of each anaphase B spindle using the Cytosim simulation software (Nedelec and Foethke, 2007). The model spindles were then subjected to increasing compressive loads to induce buckling, which then enabled us to calculate the effective stiffness EIeff of the structure, using the relation EIeff = Fc(Ls/π)2, where Ls is the spindle length. In each simulation, the computational model incorporates the microtubule lengths determined by electron microscopy and many of S. pombe spindle's known biophysical properties (Table 2).10.7554/eLife.03398.014Table 2.Physical and numerical constants for simulations of spindle stiffnessDOI: http://dx.doi.org/10.7554/eLife.03398.014DescriptionValueNotesGlobalkBT0.0042 pN.μmThermal energy at T = 27°CViscosity1 pN pN.s.μm−2Viscosity of fission yeast cytoplasm (Tolić-Nørrelykke, Munteanu, et al., 2004a)Time step0.001 sSimulations with smaller time-steps produce similar resultsMicrotubulesSegmentation0.1 μmFlexural rigidity20 pN.μm2This is EIMT (Gittes et al., 1993)Steric radius30 nmMicrotubule outer radius + Debye lengthSteric stiffness200 pN.μm−1per microtubule segmentMidzone width2.5 μm(Loïodice et al., 2005; Yamashita et al., 2005)Spindle Pole BodiesRadius60 nmObserved from ETDepth100 nmObserved from ETStiffness 11000 pN.μm−1Appropriate for (Khodjakov et al., 2004) (Tolić-Nørrelykke, Sacconi, et al., 2004b) (Toya et al., 2007)Stiffness 220 pN.μm−1Appropriate for (Kalinina et al., 2013)Cross-linkersNumber300Less than abundance of ase1p (∼900 dimers/cell) and klp9p (∼1300 dimers/cell) (Marguerat et al., 2012). Larger numbers do not alter simulation resultsBridging length50 nmApproximate centre-to-centre distance of microtubules bundled by Map65 proteins (Subramanian et al., 2010).Link stiffness1000 pN.μm−1Force is Hookean with a non-zero resting length (Howard, 2001)
+As the spindle's cross-sections have striking geometric properties that appear to enhance its mechanical properties, an open question concerns whether the length and number of spindle microtubules also increase the critical force that the structure can tolerate before buckling. Since the Euler-Bernoulli beam theory only applies to prismatic beams with a constant transverse organisation, it is also unclear whether the local design rules for microtubule packing endow the non-prismatic spindles with high critical forces (Landau et al., 1986; Gere and Goodno, 2012). To address these questions, we constructed a simplified computational model of each anaphase B spindle using the Cytosim simulation software (Nedelec and Foethke, 2007). The model spindles were then subjected to increasing compressive loads to induce buckling, which then enabled us to calculate the effective stiffness EIeff of the structure, using the relation EIeff = Fc(Ls/π)2, where Ls is the spindle length. In each simulation, the computational model incorporates the microtubule lengths determined by electron microscopy and many of S. pombe spindle's known biophysical properties (Table 2).
+
+**Table 2.**
+ Physical and numerical constants for simulations of spindle stiffness
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Value</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <th colspan="3">Global</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>kBT</td>
+      <td>0.0042 pN.μm</td>
+      <td>Thermal energy at T = 27°C</td>
+    </tr>
+    <tr>
+      <td>Viscosity</td>
+      <td>1 pN pN.s.μm−2</td>
+      <td>Viscosity of fission yeast cytoplasm (Tolić-Nørrelykke, Munteanu, et al., 2004a)</td>
+    </tr>
+    <tr>
+      <td>Time step</td>
+      <td>0.001 s</td>
+      <td>Simulations with smaller time-steps produce similar results</td>
+    </tr>
+    <tr>
+      <td colspan="3">Microtubules</td>
+    </tr>
+    <tr>
+      <td>Segmentation</td>
+      <td>0.1 μm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flexural rigidity</td>
+      <td>20 pN.μm2</td>
+      <td>This is EIMT (Gittes et al., 1993)</td>
+    </tr>
+    <tr>
+      <td>Steric radius</td>
+      <td>30 nm</td>
+      <td>Microtubule outer radius + Debye length</td>
+    </tr>
+    <tr>
+      <td>Steric stiffness</td>
+      <td>200 pN.μm−1</td>
+      <td>per microtubule segment</td>
+    </tr>
+    <tr>
+      <td>Midzone width</td>
+      <td>2.5 μm</td>
+      <td>(Loïodice et al., 2005; Yamashita et al., 2005)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Spindle Pole Bodies</td>
+    </tr>
+    <tr>
+      <td>Radius</td>
+      <td>60 nm</td>
+      <td>Observed from ET</td>
+    </tr>
+    <tr>
+      <td>Depth</td>
+      <td>100 nm</td>
+      <td>Observed from ET</td>
+    </tr>
+    <tr>
+      <td>Stiffness 1</td>
+      <td>1000 pN.μm−1</td>
+      <td>Appropriate for (Khodjakov et al., 2004) (Tolić-Nørrelykke, Sacconi, et al., 2004b) (Toya et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>Stiffness 2</td>
+      <td>20 pN.μm−1</td>
+      <td>Appropriate for (Kalinina et al., 2013)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Cross-linkers</td>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td>300</td>
+      <td>Less than abundance of ase1p (∼900 dimers/cell) and klp9p (∼1300 dimers/cell) (Marguerat et al., 2012). Larger numbers do not alter simulation results</td>
+    </tr>
+    <tr>
+      <td>Bridging length</td>
+      <td>50 nm</td>
+      <td>Approximate centre-to-centre distance of microtubules bundled by Map65 proteins (Subramanian et al., 2010).</td>
+    </tr>
+    <tr>
+      <td>Link stiffness</td>
+      <td>1000 pN.μm−1</td>
+      <td>Force is Hookean with a non-zero resting length (Howard, 2001)</td>
+    </tr>
+  </tbody>
+</table>
 
 In most eukaryotes, the anaphase midzone is defined by the localisation of the anti-parallel bundling protein, ase1p (Glotzer, 2009), which binds strongly to the spindle at anaphase onset and occupies a region at the spindle's centre. In fission yeast, the midzone has a width that is approximately constant throughout anaphase B (Loïodice et al., 2005; Yamashita et al., 2005; Janson et al., 2007), which was reproduced in the simulations of each spindle by confining cross-linkers with specificity for anti-parallel microtubules to a cylindrical region at the spindle centre with the same constant width, Lm = 2.5 μm. For simplicity, the model does not include binding of cross-linkers to regions flanking the midzone.
 
-After initialising a bipolar spindle with the correct gross organisation (
+After initialising a bipolar spindle with the correct gross organisation (Figure 4A,B; Video 6), the rate with which cross-linkers detach from the microtubule lattice was set to zero to approximate the slow turnover of midzone proteins (Schuyler et al., 2003; Loïodice et al., 2005; Fu et al., 2009). The poles were then subjected to a linearly increasing force to probe the spindle's elastic response. Simulation results for the longest fission yeast spindle, after subjecting it to forces that increase at different rates, are shown in Figure 4C. These numerical experiments indicate that the simulated spindle withstands the increasing force until a threshold is reached and buckling occurs. All of the stochastic simulations were initialised in the same state and behaved identically until a force is applied. However, there are substantial differences in the peak force that can be sustained before the spindle buckles. This transient effect is a known signature of the buckling instability, and becomes more pronounced as spindles are compressed more rapidly. It is for this reason that the estimates of the critical force of the spindle architectures were determined by averaging the force in the final 50 s of the simulation when the system is in equilibrium. The responses from computational models of wild-type spindles, compressed at the same rate (Figure 4D), shows that the critical force decreases with spindle length.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig4-v2.jpg)
 
-**Figure 4.:** (A) Computational reconstruction of an early anaphase B spindle before and after the critical force is exceeded. The spindles are subjected to compression by attaching a spring between the spindle poles. The elastic constant is then increased to probe the spindle's response to force. (B) Stochastic initialisation conditions can reproduce the 3 × 3 organisation at the midzone of a spindle in early anaphase B. Microtubules are depicted with a diameter of 25 nm. (C) Model response of the longest fission yeast spindle to forces that increase at different rates. The SPBs are held at the spindles' contour separation for the first 50 s of the simulation, when cross-linkers are allowed to form attachments between the two halves of the bipolar spindle. At t = 50 s, the elastic constant of the spring connecting the two SPBs is then set to zero and its resting length reduced to Δ = 1 μm less than the SPB's resting separation. The elastic constant is then increased linearly over the subsequent 150 s of the simulation to exert progressively larger force on the spindle. Each colour, represented in the legend, denotes a different force increase in units of pNs−1. The spindles bear the increasing compressive loads until a threshold is reached and the force decays before plateauing at the equilibrium (critical) force, Fc. In the final 50 s of the simulation (marked quantification), the spring constant of the elastic element connecting the SPBs is maintained at its maximal value, and the critical force quantified by averaging the force-response profile. (D) Response of fission yeast spindle models to compressive forces. The contour length of each spindle is noted in the right-hand column. Curves show the median critical force from N = 100 stochastic simulations. (E) Dependence of critical force on spindle length for models of w.t. S. pombe, cdc25.22 S. pombe and Saccharomyces cerevisiae anaphase B spindles. Each point indicates the median critical force calculated from N = 100 simulations. Curves show Fc = ALs−4 fits to the simulation results, where the only fit parameter is the pre-factor, A. Inset shows normalised force Fc/A = Ls−4 for all spindle types. This rescaling highlights the universality of the relationship between spindle length and critical force. (F) Comparison of the critical force of fission yeast spindles (grey histograms, N = 100) with a null statistical model (blue histograms, N = 103). p-values refer to the probability that a random spindle has a critical force greater than the median wild-type spindle.DOI: http://dx.doi.org/10.7554/eLife.03398.015
+**Figure 4.:** (A) Computational reconstruction of an early anaphase B spindle before and after the critical force is exceeded. The spindles are subjected to compression by attaching a spring between the spindle poles. The elastic constant is then increased to probe the spindle's response to force. (B) Stochastic initialisation conditions can reproduce the 3 × 3 organisation at the midzone of a spindle in early anaphase B. Microtubules are depicted with a diameter of 25 nm. (C) Model response of the longest fission yeast spindle to forces that increase at different rates. The SPBs are held at the spindles' contour separation for the first 50 s of the simulation, when cross-linkers are allowed to form attachments between the two halves of the bipolar spindle. At t = 50 s, the elastic constant of the spring connecting the two SPBs is then set to zero and its resting length reduced to Δ = 1 μm less than the SPB's resting separation. The elastic constant is then increased linearly over the subsequent 150 s of the simulation to exert progressively larger force on the spindle. Each colour, represented in the legend, denotes a different force increase in units of pNs−1. The spindles bear the increasing compressive loads until a threshold is reached and the force decays before plateauing at the equilibrium (critical) force, Fc. In the final 50 s of the simulation (marked quantification), the spring constant of the elastic element connecting the SPBs is maintained at its maximal value, and the critical force quantified by averaging the force-response profile. (D) Response of fission yeast spindle models to compressive forces. The contour length of each spindle is noted in the right-hand column. Curves show the median critical force from N = 100 stochastic simulations. (E) Dependence of critical force on spindle length for models of w.t. S. pombe, cdc25.22 S. pombe and Saccharomyces cerevisiae anaphase B spindles. Each point indicates the median critical force calculated from N = 100 simulations. Curves show Fc = ALs−4 fits to the simulation results, where the only fit parameter is the pre-factor, A. Inset shows normalised force Fc/A = Ls−4 for all spindle types. This rescaling highlights the universality of the relationship between spindle length and critical force. (F) Comparison of the critical force of fission yeast spindles (grey histograms, N = 100) with a null statistical model (blue histograms, N = 103). p-values refer to the probability that a random spindle has a critical force greater than the median wild-type spindle.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A, B) Response of budding yeast and cdc25.22 spindle models to compressive forces. The pole-to-pole length of each spindle is noted in column to the right of each plot. (C–E) Comparisons of the critical force of anaphase B spindles in wild-type fission yeast, budding yeast and cdc25.22 fission yeast cells with a null model of each spindle architecture. The spindle length is shown in the top-left corner of each plot. The blue histograms show the critical force of 1000 realisations of the null model, in which the lengths and number of microtubules are sampled randomly. The grey histograms show the critical force estimated from N = 200 simulations of the wild-type spindle architecture with the medians represented by black arrows. p-values refer to the probability that a random spindle has a critical force greater than that of the median wild-type spindle.DOI: http://dx.doi.org/10.7554/eLife.03398.016
+**Figure 4—figure supplement 1.:** (A, B) Response of budding yeast and cdc25.22 spindle models to compressive forces. The pole-to-pole length of each spindle is noted in column to the right of each plot. (C–E) Comparisons of the critical force of anaphase B spindles in wild-type fission yeast, budding yeast and cdc25.22 fission yeast cells with a null model of each spindle architecture. The spindle length is shown in the top-left corner of each plot. The blue histograms show the critical force of 1000 realisations of the null model, in which the lengths and number of microtubules are sampled randomly. The grey histograms show the critical force estimated from N = 200 simulations of the wild-type spindle architecture with the medians represented by black arrows. p-values refer to the probability that a random spindle has a critical force greater than that of the median wild-type spindle.
+
+![Video 6.](https://cdn.elifesciences.org/articles/03398/elife-03398-media6.mov.jpg)
+
+**Video 6.:** In the first 50 s of the simulation, the force exerted on the poles of the spindle is zero, and cross-linkers are allowed to bind and unbind from the microtubule lattice to form attachments between the two halves of the bipolar spindle. After 50 s the force on the spindle increases linearly until buckling is induced (Figure 4C,D).
 
 A comparison of the critical forces for all of the simulations of ET-reconstructed spindles shows that it scales as Fc ∝ Ls−4 with spindle length (Figure 4E). This fourth-order dependence has a contribution from the beam theory, Fc ∝ EIeffLs−2, and another contribution from the conserved polymer mass (Figure 1H). The polymer mass conservation gives rise to a quadratic decay in the spindles' effective transverse stiffness (EIeff ∝ Ls−2, see ‘Materials and Methods’). This adverse scaling law suggests that the combination of a pushing mode of force generation with recycling of tubulin subunits and telescopic extension acts to severely limit the forces that can be generated by a spindle architecture of this type.
 
 We next considered whether the number and length of microtubules within each spindle maximise the spindles' critical force. This was addressed by constructing a model to sample alternative spindle architectures with the same polymer mass as wild-type spindles. In this model, the number of microtubules nucleated at each pole is sampled from a stochastic process and the total polymer is distributed randomly between the nucleated microtubules. This comparison reveals that the wild-type fission yeast spindles are substantially stronger than the random model (Figure 4F); a property that also applies to the cdc25.22 and the majority of budding yeast spindles (Figure 4—figure supplement 1). This analysis also indicates that alternative spindle architectures with a larger critical force occur infrequently under this null model, and suggests that the lengths of wild-type microtubules are regulated to increase the spindle's effective stiffness.
 
-## The number of interpolar microtubules is regulated precisely in the anaphase B spindle
+### The number of interpolar microtubules is regulated precisely in the anaphase B spindle
 
-To gain insight into the origin of the high critical force of wild-type spindles, we investigated alternative architectures that are expected to have the highest resistance to compressive forces. In spindles where anti-parallel cross-linkers are confined to a region at the spindle centre, microtubules that are too short to reach the midzone cannot form associations with a partner from the opposing SPB (
+To gain insight into the origin of the high critical force of wild-type spindles, we investigated alternative architectures that are expected to have the highest resistance to compressive forces. In spindles where anti-parallel cross-linkers are confined to a region at the spindle centre, microtubules that are too short to reach the midzone cannot form associations with a partner from the opposing SPB (Figure 5A). These microtubules make only a small contribution to the stiffness of the structure, and represent an inefficient use of the fixed length of polymerised tubulin, LT, that is available for building the spindle. The span of a microtubule that projects beyond the midzone region also makes an inefficient contribution to the spindle's stiffness. Maximally efficient overlap at the spindle midzone can thus be achieved by ensuring that all microtubules terminate at the furthest edge of the midzone, and have a uniform length, LMT = (Ls + Lm)/2, where Ls is the spindle length, and Lm the length of the overlap (Figure 5B). The conservation of polymer mass then gives the following equation for the number of microtubules, NMMO, that are present in these maximal midzone-overlap (MMO) spindle architecturesNMMO=2LTLs+Lm
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic representation of a fission yeast spindle of length Ls. Green lines represent microtubules and magenta lines anti-parallel cross-linkers, which bind to the midzone region of width Lm. Blue shaded ellipses represent the spindle pole bodies (SPBs). (B) Maximal anti-parallel bundling of microtubules at the spindle midzone is achieved if microtubules have a monodisperse length LMT = (Ls + Lm)/2. (C) Number of interpolar microtubules in wild-type and cdc25.22 mutant fission yeast cells with respect to spindle length (blue and red diamonds, respectively). Trend lines show theoretical calculation of microtubule number in MMO spindle architecture based on the spindle length, Ls, and average total polymer, LT. For wild-type cells LT = 27.1 S.D. 4.2 μm (blue curve with standard deviation represented by grey shaded area) whilst for cdc25.22 cells LT = 61.2 S.D. 7.8 μm (red curve). (D) Comparison of interpolar microtubule number with predictions of the MMO model. The black line shows trend for exact agreement with grey bars representing 1 microtubule deviation.DOI: http://dx.doi.org/10.7554/eLife.03398.018
+**Figure 5.:** (A) Schematic representation of a fission yeast spindle of length Ls. Green lines represent microtubules and magenta lines anti-parallel cross-linkers, which bind to the midzone region of width Lm. Blue shaded ellipses represent the spindle pole bodies (SPBs). (B) Maximal anti-parallel bundling of microtubules at the spindle midzone is achieved if microtubules have a monodisperse length LMT = (Ls + Lm)/2. (C) Number of interpolar microtubules in wild-type and cdc25.22 mutant fission yeast cells with respect to spindle length (blue and red diamonds, respectively). Trend lines show theoretical calculation of microtubule number in MMO spindle architecture based on the spindle length, Ls, and average total polymer, LT. For wild-type cells LT = 27.1 S.D. 4.2 μm (blue curve with standard deviation represented by grey shaded area) whilst for cdc25.22 cells LT = 61.2 S.D. 7.8 μm (red curve). (D) Comparison of interpolar microtubule number with predictions of the MMO model. The black line shows trend for exact agreement with grey bars representing 1 microtubule deviation.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Critical force for simulations of wild-type spindles compared with MMO spindles with the same quantity of polymer mass. Points reflect the median from 200 stochastic simulations of each condition. (B) Ratio of median critical force of wild-type spindle architectures compared with the distribution of critical forces for MMO spindles. Error bars represent a single standard deviation.DOI: http://dx.doi.org/10.7554/eLife.03398.019
+**Figure 5—figure supplement 1.:** (A) Critical force for simulations of wild-type spindles compared with MMO spindles with the same quantity of polymer mass. Points reflect the median from 200 stochastic simulations of each condition. (B) Ratio of median critical force of wild-type spindle architectures compared with the distribution of critical forces for MMO spindles. Error bars represent a single standard deviation.
 
 Simulations probing the force-response of MMO spindles reveal critical forces that are, on average, only 8% higher than those measured for reconstructed wild-type and cdc25.22 spindles (Figure 5—figure supplement 1). This suggests that fission yeast cells exert precise global control on microtubule number and length.
 
@@ -133,35 +330,57 @@ A comparison of the observed number of interpolar microtubules in wild-type spin
 
 Remarkably, the theoretical curve for microtubule number in cdc25.22 spindles containing around twice the mass of polymerised tubulin (Figure 5C, red curve), is also in very close agreement with observed number of interpolar microtubules. A direct comparison between Nobs and NMMO for wild-type and cdc25.22 spindles (Figure 5D) reveals that all but four of the fourteen spindles deviate from the theoretical model by less than a single microtubule, thus indicating precise scaling of microtubule number to changes in spindle length and the availability of polymerised tubulin.
 
-## Elastic reinforcement may increase the forces that the spindle can sustain
+### Elastic reinforcement may increase the forces that the spindle can sustain
 
 Whilst microtubule number and length appear to be regulated precisely in the fission yeast spindle, the critical force of the longer spindles, at around 10 pN (Figure 4E,F), is relatively small compared with other intracellular forces. For example, whilst this force exceeds the viscous drag on daughter nuclei in wild-type cells (see ‘Materials and methods’) it is comparable to the force generated by two kinesin motors (Gittes et al., 1996; Visscher et al., 1999). The late anaphase B spindle would therefore appear to have an inefficient architecture for generating forces to segregate lagging or concatenated chromosomes (Pidoux et al., 2000; Courtheoux et al., 2009; Petrova et al., 2013). We therefore investigated whether external reinforcement (Brangwynne et al., 2006) of the spindle might lead to an increase in the forces that the interpolar microtubules can support under these conditions.
 
-In simulations of the spindle, exceeding the critical forces leads to the spindle being buckled into a shape with a single maximum, which we refer to as primary-mode buckling (Figure 4A). Whilst this behaviour is predicted by the Euler-Bernoulli beam theory (Landau et al., 1986), the theory also predicts that the beam can buckle with shorter wavelengths. However, since these higher-order modes (i.e. with two or more maxima) occur at higher critical forces (and energy) than buckling in the primary mode, they are expected to relax into the primary mode over longer time scales. It has, however, been shown, using experiments on cells and macroscopic analogues (Brangwynne et al., 2006), that laterally reinforcing microtubules with a dense elastic meshwork can lead to stable buckling over much shorter wavelengths. For microtubules subjected to an elastic confinement, the critical force that can be supported is (Brangwynne et al., 2006)fc=8π2EIλ2which is similar in form to the classical Euler-Bernoulli formula but, in this case, the critical force depends on the buckling wavelength, λ, rather than the length of the beam. The buckling wavelength is determined by the transverse stiffness of the fibre and a parameter, α, which measures the strength of the elastic confinementλ=2π(EIα)1/4
+In simulations of the spindle, exceeding the critical forces leads to the spindle being buckled into a shape with a single maximum, which we refer to as primary-mode buckling (Figure 4A). Whilst this behaviour is predicted by the Euler-Bernoulli beam theory (Landau et al., 1986), the theory also predicts that the beam can buckle with shorter wavelengths. However, since these higher-order modes (i.e. with two or more maxima) occur at higher critical forces (and energy) than buckling in the primary mode, they are expected to relax into the primary mode over longer time scales. It has, however, been shown, using experiments on cells and macroscopic analogues (Brangwynne et al., 2006), that laterally reinforcing microtubules with a dense elastic meshwork can lead to stable buckling over much shorter wavelengths. For microtubules subjected to an elastic confinement, the critical force that can be supported is (Brangwynne et al., 2006)
 
-We investigated this effect by imposing an elastic confinement on the spindles from early, intermediate and late stages of elongation (
+$$
+f_{c}=8\pi^{2}\frac{EI}{\lambda^{2}}
+$$
+
+which is similar in form to the classical Euler-Bernoulli formula but, in this case, the critical force depends on the buckling wavelength, λ, rather than the length of the beam. The buckling wavelength is determined by the transverse stiffness of the fibre and a parameter, α, which measures the strength of the elastic confinement
+
+$$
+\lambda=2\pi(\frac{EI}{\alpha})^{1/4}
+$$
+
+We investigated this effect by imposing an elastic confinement on the spindles from early, intermediate and late stages of elongation (Figure 6A–C; Videos 7–9). As before, the spindles were subjected to increasing compressive loads until they underwent buckling. A visualisation of the shape adopted by the shortest anaphase B (Figure 6A) reveals that its profile transitions from buckling in the primary mode when unreinforced (α = 0) to second-order buckling for an elastic confinement α = 40 Pa, with intermediate configurations containing both components (α = 20 Pa). A similar transition occurs for longer spindles (Figure 6B,C) but with lower elastic confinement.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig6-v2.jpg)
 
-**Figure 6.:** (A–C) Equilibrium shapes adopted by exemplary anaphase B spindles after the critical force is exceeded. The degree of lateral reinforcement, α, is shown alongside each simulation. Scale bars = 1 μm. (D) Force-response of reconstructed anaphase B spindles (median critical force calculated from the results of 50 stochastic simulations). (E) Relationship between the critical force of laterally reinforced spindles and their length. Lines reflect power law fits Fc = ALp, with exponent, p, shown to the right of each curve.DOI: http://dx.doi.org/10.7554/eLife.03398.020
+**Figure 6.:** (A–C) Equilibrium shapes adopted by exemplary anaphase B spindles after the critical force is exceeded. The degree of lateral reinforcement, α, is shown alongside each simulation. Scale bars = 1 μm. (D) Force-response of reconstructed anaphase B spindles (median critical force calculated from the results of 50 stochastic simulations). (E) Relationship between the critical force of laterally reinforced spindles and their length. Lines reflect power law fits Fc = ALp, with exponent, p, shown to the right of each curve.
 
-A comparison of the force-response curves for all of the simulated wild-type spindle architectures (Figure 6D) shows that the critical force that can be withstood increases with greater elastic confinement. This effect is most dramatic for the longest anaphase B spindles where large elastic confinements can increase the critical forces by around two orders of magnitude. This effect is caused by the critical force of laterally reinforced spindles decreasing much more slowly with increasing spindle length (Figure 6E). These results are in good agreement with the theory for reinforced elastic rods (Brangwynne et al., 2006), which predicts a critical force, Fc∝EI. In the case of the spindle, this leads to a Fc ∝ Ls−1 dependence, which is caused by the reduction in the effective transverse stiffness (EIeff ∝ Ls−2) that occurs as a consequence of spindle elongation. These results suggest that a small degree of lateral reinforcement, compared with the ∼1 kPa found in interphase mammalian cells (Brangwynne et al., 2006), could greatly increase the forces that the anaphase B spindle can sustain. The scaling law relating the critical force to the length of a reinforced spindle could also facilitate its elongation in enlarged fission yeast cells.
+![Video 7.](https://cdn.elifesciences.org/articles/03398/elife-03398-media7.mov.jpg)
+
+**Video 7.:** Scale is set by the size of the enclosing cell, which measures 11 μm in length between the opposite cell tips. From the image at the top downwards, the spindles are subjected to increasing confinement with α = 0, 20, 40, 200 Pa, respectively for the short and intermediate length spindles. For the longest spindle, α = 0, 5, 40, 200 Pa.
+
+![Video 8.](https://cdn.elifesciences.org/articles/03398/elife-03398-media8.mov.jpg)
+
+**Video 8.:** Scale is set by the size of the enclosing cell, which measures 11 μm in length between the opposite cell tips. From the image at the top downwards, the spindles are subjected to increasing confinement with α = 0, 20, 40, 200 Pa, respectively for the short and intermediate length spindles. For the longest spindle, α = 0, 5, 40, 200 Pa.
+
+![Video 9.](https://cdn.elifesciences.org/articles/03398/elife-03398-media9.mov.jpg)
+
+**Video 9.:** Scale is set by the size of the enclosing cell, which measures 11 μm in length between the opposite cell tips. From the image at the top downwards, the spindles are subjected to increasing confinement with α = 0, 20, 40, 200 Pa, respectively for the short and intermediate length spindles. For the longest spindle, α = 0, 5, 40, 200 Pa.
+
+A comparison of the force-response curves for all of the simulated wild-type spindle architectures (Figure 6D) shows that the critical force that can be withstood increases with greater elastic confinement. This effect is most dramatic for the longest anaphase B spindles where large elastic confinements can increase the critical forces by around two orders of magnitude. This effect is caused by the critical force of laterally reinforced spindles decreasing much more slowly with increasing spindle length (Figure 6E). These results are in good agreement with the theory for reinforced elastic rods (Brangwynne et al., 2006), which predicts a critical force, $F_{c}∝\sqrt{EI}$. In the case of the spindle, this leads to a Fc ∝ Ls−1 dependence, which is caused by the reduction in the effective transverse stiffness (EIeff ∝ Ls−2) that occurs as a consequence of spindle elongation. These results suggest that a small degree of lateral reinforcement, compared with the ∼1 kPa found in interphase mammalian cells (Brangwynne et al., 2006), could greatly increase the forces that the anaphase B spindle can sustain. The scaling law relating the critical force to the length of a reinforced spindle could also facilitate its elongation in enlarged fission yeast cells.
 
 ## Discussion
 
 The design of structures that maximise strength given certain material constraints is a class of problem that appears commonly in mechanical engineering. This study has shown that yeast cells have evolved a spindle architecture that incorporates similar design principles to those used in man-made machines. These features may have evolved to overcome constraints on the abundance and material properties of proteins that form the spindle.
 
-## Material properties of the spindle
+### Material properties of the spindle
 
 In the case of the yeast spindle, the relatively high abundance of midzone proteins (Fu et al., 2009; Marguerat et al., 2012) and the force-resistant, non-slip binding of kinesin molecules to the microtubule lattice (Gittes et al., 1996; Visscher et al., 1999) suggest that the spindle is densely cross-linked at the midzone. Furthermore, the dramatic remodelling of the spindle's transverse architecture at the boundary between the midzone and flanking regions of the spindle (Figure 3G,H) further suggests that the cross-linkers that bind to the polar regions also form rigid bridges between pairs of microtubules. Finally, the slow but uniform rate of spindle elongation (Figure 1I) suggests that the midzone-bound motors operate in a regime that is far from their stall force. In simulations of the anaphase B spindle, introducing a sufficient number of crosslinkers leads to reduced movement of the filaments at the overlap zone, and causes this part of the spindle to behave elastically (Claessens et al., 2006).
 
 An important distinction between the spindle and macroscopic machines is that it must self-organise from local interactions between protein components that are many orders of magnitude smaller in size. This necessitates the use of chemical and physical properties of these proteins to generate a particular microtubule organisation. The key feature that endows the yeast spindle with rigidity is the crystalline microtubule architecture that is present throughout its extent, and which takes the form of hexagonal packing in the polar regions of the spindle and square-packing at the spindle midzone.
 
-The advantage of crystals over more disordered microtubule packing arrangements is that the number of interactions between a microtubule and its neighbours is increased (
+The advantage of crystals over more disordered microtubule packing arrangements is that the number of interactions between a microtubule and its neighbours is increased (Figure 7A). This increased connectivity enhances the spindle's stiffness by ensuring that transverse rearrangements of microtubules that lead to bundle warping are prevented, and that the structural integrity of the bundle is thus maintained. Arranging the crystalline units in each cross-section with rotational symmetry enhances the minimal transverse stiffness still further. This combination produces stiff microtubule arrays with isotropic responses to force; similarly to the designs for load-bearing columns used in civil engineering since antiquity (Thompson, 1942; Gere and Goodno, 2012).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/03398/elife-03398-fig7-v2.jpg)
 
-**Figure 7.:** (A) Applying compressive force to a sparsely connected microtubule bundle leads to warping. This increases bundle anisotropy and leads to a reduction in the critical force. In a crystalline microtubule array, microtubules can associate with a larger number of neighbouring microtubules. This constrains microtubule movement and increases the transverse stiffness. Arranging the crystal unit cells with rotational symmetry leads to architectures with an isotropic resistance to bending forces and an increased minimal transverse stiffness. (B) In late anaphase B, the forces driving spindle elongation are balanced by the viscoelastic response of the cytoplasm and an elastic force. After ablation of the spindle midzone, this elastic force is opposed by the viscous drag.DOI: http://dx.doi.org/10.7554/eLife.03398.024
+**Figure 7.:** (A) Applying compressive force to a sparsely connected microtubule bundle leads to warping. This increases bundle anisotropy and leads to a reduction in the critical force. In a crystalline microtubule array, microtubules can associate with a larger number of neighbouring microtubules. This constrains microtubule movement and increases the transverse stiffness. Arranging the crystal unit cells with rotational symmetry leads to architectures with an isotropic resistance to bending forces and an increased minimal transverse stiffness. (B) In late anaphase B, the forces driving spindle elongation are balanced by the viscoelastic response of the cytoplasm and an elastic force. After ablation of the spindle midzone, this elastic force is opposed by the viscous drag.
 
 Similar bundle design principles have also been observed in horseshoe sperm acrosomes, which are long, finger-like actin projections that enable the sperm cell to penetrate the 30 μm thick jelly coat that surrounds the egg (Schmid et al., 2004; Shin et al., 2004). These dense, highly cross-linked, crystalline actin bundles are likely to have been selected for resistance to compressive forces (Schmid et al., 2004), and the composite structure has a Young's modulus that is similar to that of the constituent actin filaments (Shin et al., 2004). The convergent evolution of a crystalline architecture in cytoskeletal bundles that resist compressive forces may be one factor that has led to the distinct transverse arrangements that are observed in different populations of spindle microtubules (McDonald et al., 1979, 1992; Mastronarde et al., 1993) and may reflect the relative contributions of tensile and compressive forces in each system (Wühr et al., 2009; Goshima and Scholey, 2010).
 
@@ -169,7 +388,7 @@ Two additional features of yeast spindles that also make contributions to their 
 
 A surprising feature of the spindle is that the regulation of its architecture is maintained in enlarged cdc25.22 cells. This suggests that the mechanisms of spindle assembly can adapt its morphology to changes in cell size. This adaptive control may be required to enable the fully elongated spindle to reach the cell poles in fission yeast cells of variable size (Hagan et al., 1990). This is a property that fission yeast shares with metazoan embryos, which contain spindles that are observed to scale in size with cytoplasmic volume during early development (Good et al., 2013; Hazel et al., 2013). However, the evolutionary pressure that has led to this property being selected in unicellular yeast cells is less obvious. One possible explanation is that the spindle has evolved to be robust to natural variations in the size of the cell at mitotic entry (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009) or noise in the abundance of different spindle assembly factors (Kaern et al., 2005). Another possibility is that spindle scaling has been selected to respond to differentiation of yeast cells into the alternate forms that occur during mating or hyphal growth (Niki, 2014).
 
-## Spindle design principles and the generation of force
+### Spindle design principles and the generation of force
 
 A vital consideration in the design of engineered systems is tolerance, which specifies the range of performance that is required from a component or device. In studies of spermatocyte spindles and related systems (Nicklas, 1988), it was found that the maximal force that can be exerted on chromosomes is typically several orders of magnitude larger than that required to overcome viscous drag from the surrounding cytoplasm. The forces that are applied to chromosomes are likely to vary according to the phase of mitosis and the state of the attachments between kinetochores and the spindle. However, direct measurements of these forces have only been possible in a small number of cell types (Nicklas, 1983).
 
@@ -179,7 +398,84 @@ Fission yeast spindles have complex centromeres, which more closely resemble tho
 
 The forces that are exerted on the anaphase B spindle have a well-defined directionality (Tolić-Nørrelykke, Sacconi, et al., 2004b; Khodjakov et al., 2004), but their magnitude at the critical early stages of elongation is unknown due to the complex organisation of chromatin around the spindle (Stephens et al., 2013) and the need for re-modelling of the nuclear envelope (Yam et al., 2011). However, in later anaphase B, after the nuclear envelope splits into a ‘dumb-bell’ morphology, the major external loads opposing spindle elongation are likely to arise from cytoplasmic resistance to the movement of daughter nuclei (Lim et al., 2007). A rough estimate for the compressive forces acting on the spindle at this stage of mitosis can thus be estimated by treating the cytoplasm as a viscoelastic fluid.
 
-The viscous drag exerted on the poles of the spindle can be calculated using various properties of the fission yeast cell (Foethke et al., 2009)(Table 3), whilst the relaxation of nuclei in ablated spindles (Khodjakov et al., 2004) can be used to determine the relative magnitude of the viscous and elastic forces (Figure 7B). The final estimate for the total resistive force acting on the poles of the elongating spindle is subject to a large degree of uncertainty, but is of the same order of magnitude (∼1–10 pN) as the critical force of longer anaphase B spindles. This suggests that the wild-type spindle can support the drag forces that resist its elongation under normal conditions. However, the spindle may be subjected to larger forces if chromosomes are concatenated or are not properly bi-oriented in metaphase (Pidoux et al., 2000; Courtheoux et al., 2009; Petrova et al., 2013).10.7554/eLife.03398.025Table 3.Estimates of forces resisting spindle elongationDOI: http://dx.doi.org/10.7554/eLife.03398.025DescriptionVariableValueNotesCell radiusrcell1.6 μm(Foethke et al., 2009)Daughter nuclei radiusrnucleus0.8–1.0 μmThis study (ET estimate)−21/3 × radius of interphase nucleus (Foethke et al., 2009)Cytoplasmic viscosityηcell1 pN.s.μm−2(Tolić-Nørrelykke, Munteanu, et al., 2004a)Spindle pole separation speedvs0.9 μm.min−1This studyDrag coefficientγ25-110 pN.μm−1.sSee ‘Materials and methods’Relaxation timeτ = γ/k9.7 sExponential fit to collapse of long spindle (Khodjakov et al., 2004), Figure 7BEquilibrium positionx01.4 μmSecond fit parameterDrag forceFv = γ.vs/20.2–0.8 pNElastic forceFe = x0.γ/ τ3–16 pNThis force is dramatically decreased after the nucleus adopts a dumbbell configurationTotal forceFe + Fv4–17 pN
+The viscous drag exerted on the poles of the spindle can be calculated using various properties of the fission yeast cell (Foethke et al., 2009)(Table 3), whilst the relaxation of nuclei in ablated spindles (Khodjakov et al., 2004) can be used to determine the relative magnitude of the viscous and elastic forces (Figure 7B). The final estimate for the total resistive force acting on the poles of the elongating spindle is subject to a large degree of uncertainty, but is of the same order of magnitude (∼1–10 pN) as the critical force of longer anaphase B spindles. This suggests that the wild-type spindle can support the drag forces that resist its elongation under normal conditions. However, the spindle may be subjected to larger forces if chromosomes are concatenated or are not properly bi-oriented in metaphase (Pidoux et al., 2000; Courtheoux et al., 2009; Petrova et al., 2013).
+
+**Table 3.**
+ Estimates of forces resisting spindle elongation
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Variable</th>
+      <th>Value</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell radius</td>
+      <td>rcell</td>
+      <td>1.6 μm</td>
+      <td>(Foethke et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>Daughter nuclei radius</td>
+      <td>rnucleus</td>
+      <td>0.8–1.0 μm</td>
+      <td>This study (ET estimate)−21/3 × radius of interphase nucleus (Foethke et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>Cytoplasmic viscosity</td>
+      <td>ηcell</td>
+      <td>1 pN.s.μm−2</td>
+      <td>(Tolić-Nørrelykke, Munteanu, et al., 2004a)</td>
+    </tr>
+    <tr>
+      <td>Spindle pole separation speed</td>
+      <td>vs</td>
+      <td>0.9 μm.min−1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Drag coefficient</td>
+      <td>γ</td>
+      <td>25-110 pN.μm−1.s</td>
+      <td>See ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Relaxation time</td>
+      <td>τ = γ/k</td>
+      <td>9.7 s</td>
+      <td>Exponential fit to collapse of long spindle (Khodjakov et al., 2004), Figure 7B</td>
+    </tr>
+    <tr>
+      <td>Equilibrium position</td>
+      <td>x0</td>
+      <td>1.4 μm</td>
+      <td>Second fit parameter</td>
+    </tr>
+    <tr>
+      <td>Drag force</td>
+      <td>Fv = γ.vs/2</td>
+      <td>0.2–0.8 pN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Elastic force</td>
+      <td>Fe = x0.γ/ τ</td>
+      <td>3–16 pN</td>
+      <td>This force is dramatically decreased after the nucleus adopts a dumbbell configuration</td>
+    </tr>
+    <tr>
+      <td>Total force</td>
+      <td>Fe + Fv</td>
+      <td>4–17 pN</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Under increased loads, the klp9p motors that bind to the spindle midzone (Visscher et al., 1999; Fu et al., 2009; Marguerat et al., 2012) could theoretically generate up to ∼103 pN, while each depolymerising microtubule, of which there are around nine in fission yeast cells during anaphase A (Ding et al., 1993), can produce a maximal force of ∼40 pN (Grishchuk et al., 2005). A possible mechanism to ensure tolerance of the anaphase B spindle against chromosome segregation errors would be to externally reinforce the spindle with an elastic material (Mitchison et al., 2005; Brangwynne et al., 2006). It remains to be determined whether the anaphase B spindle is reinforced, but candidates for providing this mechanical support have been identified and include actin, which is required for accurate chromosome segregation in fission yeast (Gachet et al., 2001; Meadows and Millar, 2008), the nuclear envelope (Lim et al., 2007; Yam et al., 2011) and mitotic chromosomes themselves, which surround the interpolar microtubule axis of yeast spindles (Stephens et al., 2013).
 
@@ -189,13 +485,13 @@ The mitotic spindle displays a diversity of sizes and shapes across different ce
 
 ## Materials and methods
 
-## Microscope and yeast culture
+### Microscope and yeast culture
 
 Standard S pombe genetic and molecular biology techniques, including media, were used as described in the ‘Nurse Lab Manual’ (Roque et al., 2010). Cells were grown and imaged in minimal medium EMM2 supplemented with amino acids where necessary (final concentration of 250 mg/l). For image acquisition, cells were collected and placed in a 35 mm glass-bottom culture dish (MatTek Corp., Ashland, MA, USA) coated with lectin (from Bandeiraea simplicifolia, Sigma L2380). Cells were further immobilised with a 2% agarose/EMM2-coated coverslip, which was attached to the glass-bottom dish using VALAP. The partially sealed coverslip was submerged in liquid EMM2 media to prevent drying and deoxygenation of the growth media.
 
 Confocal images were obtained with a Carl Zeiss Axiovert 200 M microscope equipped with a PerkinElmer RS Dual spinning disc system. The Argon Krypton line laser was used at wavelength of 488 nm for GFP signal detection. Images were collected using a 63× oil immersion objective (Plan-Apochromat, NA 1.4) coupled to a Hamamatsu C9100-50 EMCCD camera (Hamamatsu, Japan) with a pixel size of 8 μm. The microscope was controlled with the Ultraview acquisition software (Perkin Elmer, Foster City, CA US). All experiments were performed inside a climate control box (EMBL, Heidelberg, Germany) at a constant temperature of 28°C. Live-cell imaging of fission yeast spindles was carried out using spinning disk confocal microscopy from 15 focal planes separated by a distance of 0.5 μm, a set-up similar to that used to quantify the cellular abundance of proteins localised to the cytokinetic ring in fission yeast (Wu and Pollard, 2005).
 
-## Segmentation and tracking of live-cell images
+### Segmentation and tracking of live-cell images
 
 A maximum likelihood image deconvolution algorithm was applied to the images to improve the signal-to-noise ratio of both the tubulin fluorescent marker (Bratman and Chang, 2007) and the spindle pole body (SPB) marked with cut12-tdTomato (Samejima et al., 2010). After deconvolution, maximum-intensity projections of the SPB marker and summed-projections of the GFP-tubulin marker were used to track the poles of the spindle and to segment the cytoplasmic volume, respectively, but were not used to quantify the intensity of either the spindle or cytoplasm. The segmentation of the cells was performed using a three-dimensional region-growing algorithm (Gonzalez, 2010). A seed-point in the cellular background was selected and propagated to the entire image stack, using a threshold of 30% of the mean region intensity as the voxel inclusion criterion. Erosion and dilation operations were then used to remove isolated bright pixels and smooth the cellular outlines. Apart from deconvolution, all analyses of images were carried out using Matlab (The MathWorks inc.). Scripts for performing image analysis are provided in Source Code 1.
 
@@ -207,41 +503,65 @@ In order to calibrate the spindle intensities to the tubulin polymerised in micr
 
 The correspondence between fluorescent tubulin intensity and the mass of tubulin polymerised in the spindle can also be used to calculate the abundance and critical concentration of tubulin subunits within the fission yeast cell (Table 1). This calculation uses the well-defined structure of microtubules (Howard, 2001) to estimate the total number of tubulin subunits within the spindle. The intensity ratio between GFP-labelled tubulin in the spindle and cytoplasm can then be used to extrapolate this quantity to the abundance of tubulin subunits in the cytoplasm. Finally, the regular spherocylindrical shape of fission yeast cells, with a uniform radius and a well-defined length upon entry into mitosis, enables accurate estimates of the intracellular volume and thus concentration to be obtained. The estimates of tubulin abundance are in good agreement with mass-spectrometry studies (Marguerat et al., 2012), and yield an estimate for the critical tubulin concentration in fission yeast that is around 25% lower than the 4.9 ± 1.6 μM measured from in vitro tubulin polymerisation experiments (Walker et al., 1988; Janson and Dogterom, 2004).
 
-## Sample preparation for electron tomography, acquisition and Processing
+### Sample preparation for electron tomography, acquisition and Processing
 
 Yeast samples were prepared as in (Roque et al., 2010). Briefly, log yeast cultures were high pressure frozen using an EMPATC 2 (Leica Microsystems, Wetzlar, Germany) and fixed by freeze substitution with 0.1% dehydrated glutaraldehyde, 0.25% uranyl acetate and 0.01% osmium tretraoxide in dry-acetone. Freeze substitution was performed at −90°C for 56 hr after which the temperature was raised to −45°C in steps of 5°C/hr. Several washes of 15 m in dry-acetone were followed by lowicryl resin infiltration at −45°C in graded steps of 3:1, 1:1, 1:3 acetone:HM20 resin (EMS, cat. 14,340) for 1 hr each followed by 3 steps of 2 hr in 100% HM20 resin. After 100% HM20 over-night, fresh resin was added and polymerisation by UV light initiated while the samples were at −45°C and carried on while the samples were raised to 20°C in steps of 5°C/hr. The samples were then kept for 24 hr more at 20°C under UV light. Tilt-series of relevant areas were acquired from ±60° at 1° intervals in a Tecnai F30/F20/T12 (FEI, Oregon USA) at the magnification of 15,500×/14,500×/11,000×, respectively using the SerialEM software. Tilt-series were reconstructed, joined in the cases where spindles spanned several adjacent subsections, and tracked manually using the software package IMOD (Kremer et al., 1996).
 
 In the electron tomograms, microtubules appear as cylindrical tubes with a diameter of around 18 nm compared with the 25 nm expected for 13-protofilament microtubules. The microtubule shrinkage is caused by the freeze-substitution methods used to fix the cells, but other aspects of the microtubule structure appeared unperturbed. All measurements were thus scaled uniformly by γ = 25/18 to obtain more accurate estimates of the spindles' physical properties.
 
-## Geometric analysis of electron tomograms
+### Geometric analysis of electron tomograms
 
 The granularity of the isotropic fibre tracking analysis (IFTA) solution is controlled by a single parameter, Rs, which specifies the separation of neighbouring coordinates that define the axis of the spindle in three-dimensions. This parameter is set to 200 nm for tracking anaphase B spindles in fission yeast and at 100 nm for computing the histograms of nearest-neighbour distances and microtubule packing angles. The IFTA algorithm proceeds by first detecting the pole with largest number of microtubule minus-ends that lie within the threshold distance, Rs. The centre-of-mass of these ends is used as the first point defining the spindle. A sphere with a radius, Rs, is then centred at the pole, and used to detect the positions where microtubules intersect the ball's surface. A constrained optimisation calculation is then used to determine the point lying on the sphere's surface that minimises the mean-squared distance from the microtubule crossings. This point is selected as the second position in the three-dimensional interpolation of the spindle axis whilst microtubule coordinates that lie within the sphere are masked. This procedure is repeated until the spindle coordinates reach the opposite spindle pole. The transverse organisation of the spindle is then determined by detecting the positions where microtubules intersect a plane halfway between and perpendicular to the points that define the spindle axis.
 
-## Quantifying Microtubule organisation and the Transverse Stiffness of spindle
+### Quantifying Microtubule organisation and the Transverse Stiffness of spindle
 
 The calculation of the transverse stiffness is made by assuming that microtubules are uniform, hollow cylinders and that the cross-linkers are rectangular support elements with identical material properties. The parameters are taken from the known dimensions of microtubules and the microtubule numbers and organisation determined in this study. For a slender, elastic beam with length, L, constructed from a material with Young's modulus E, the compressive force that can be sustained before buckling is given by F = π2EI/L2, provided that the two ends of the beam are allowed to pivot freely (Landau et al., 1986), as is likely to be the case for the fission yeast spindle (Tolić-Nørrelykke, Sacconi, et al., 2004b; Kalinina et al., 2013). Alternative boundary conditions lead the critical force to be altered by a multiplicative constant. The third property of the beam that determines the critical force is the area moment of inertia (Figure 2).
 
-The contribution that a single microtubule with its centre a distance, y, from the neutral axis makes to the bundle's area moment of inertia in the y-direction, Ixx, is given by the following equation(2)Ixx=∫ area(y+rsinθ)2dA=∫r1r2[y2+r2sin2θ+2yrsinθ]rdrdθ=πy2(r22−r12)+π4(r24−r14)=y2AMT+IMTwhere r is a radial coordinate representing distance from the microtubule axis, and r2 and r1 are the outer and inner radii of the cylindrical microtubule. The term AMT is the microtubule cross-sectional area and IMT is the (isotropic) moment of inertia of a single microtubule about its axis. A symmetric expression exists for the moment of inertia in the x-direction, and the product moment of inertia Ixy, is given by(3)Ixy=−∫ area(y+rsinθ)(x+rcosθ)dA=−πxy(r22−r12)=−xyAMT
+The contribution that a single microtubule with its centre a distance, y, from the neutral axis makes to the bundle's area moment of inertia in the y-direction, Ixx, is given by the following equation
 
-The components of the moment of inertia tensor can be obtained by summing the contributions of individual microtubules. The position of the neutral axis about which the bundle of microtubules will undergo bending is given by the centre of mass of the microtubule centres, which gives the following expression for a bundle containing N microtubules with centres at (xi, yi) with a mean positions (x¯, y¯) in the plane perpendicular to the bundle(4)Ixx=NIMT+AMT∑i=1N(yi−y¯)2Ixy=−AMT∑i=1N(yi−y¯)(xi−x¯)
+$$
+I_{xx}=\int area(y+rsin\theta)^{2}dA=∫r_{1}r_{2}[y^{2}+r^{2}sin^{2}\theta+2yrsin\theta]rdrd\theta=\piy^{2}(r_{2}^{2}−r_{1}^{2})+\frac{\pi}{4}(r_{2}^{4}−r_{1}^{4})=y^{2}A_{MT}+I_{MT}
+$$
 
-The formula for the area moment of inertia tensor, J, can thus be written compactly in matrix notation as(5)J=(IxxIxyIxyIyy)=N[IMTI2+AMT(tr(Σ)I2−Σ)]where Ι2 is the 2 × 2 identity matrix, tr(.) refers to the matrix trace operator and Σ is the covariance matrix of the microtubule centres in the xy-plane.
+where r is a radial coordinate representing distance from the microtubule axis, and r2 and r1 are the outer and inner radii of the cylindrical microtubule. The term AMT is the microtubule cross-sectional area and IMT is the (isotropic) moment of inertia of a single microtubule about its axis. A symmetric expression exists for the moment of inertia in the x-direction, and the product moment of inertia Ixy, is given by
 
-A similar expression can be obtained for a composite beam containing microtubules and cross-linkers, if it is assumed that the cross-linkers are rectangular support elements (with a width, w, and a height, h) and the same material properties as microtubules. However, since the rectangular cross-linkers, themselves, have an anisotropic area moment of inertia, the first term in equation must also take into account the orientation, θ, of each cross-linker, which we define with respect to the y-axis as(6)Jlinker(θ)=(wh12)(h2cos2θ+w2sin2θ(w2−h2)sinθcosθ(w2−h2)sinθcosθh2sin2θ+w2cos2θ)
+$$
+I_{xy}=−\int area(y+rsin\theta)(x+rcos\theta)dA=−\pixy(r_{2}^{2}−r_{1}^{2})=−xyA_{MT}
+$$
 
-## Effect of polymer mass conservation on the Spindle's Transverse Stiffness
+The components of the moment of inertia tensor can be obtained by summing the contributions of individual microtubules. The position of the neutral axis about which the bundle of microtubules will undergo bending is given by the centre of mass of the microtubule centres, which gives the following expression for a bundle containing N microtubules with centres at (xi, yi) with a mean positions ($x¯$, $y¯$) in the plane perpendicular to the bundle
 
-The effect that polymer mass conservation has on the spindle's stiffness can be investigated by treating the spindle as a solid, homogeneous cylinder. If the volume of the cylinder, V, is held constant, to model the conservation of polymer mass, then the cylindrical beam becomes thinner as it elongates. The relationship between cylinder radius, rc, and its length, Ls, (rc=V/πLs) and the fourth-order scaling of transverse stiffness with beam radius, EI ∝ rc4 (Landau et al., 1986) then lead to the EI ∝ Ls−2 scaling of transverse stiffness with length.
+$$
+I_{xx}=NI_{MT}+A_{MT}\sumi=1N(y_{i}−y¯)^{2}I_{xy}=−A_{MT}\sumi=1N(y_{i}−y¯)(x_{i}−x¯)
+$$
+
+The formula for the area moment of inertia tensor, J, can thus be written compactly in matrix notation as
+
+$$
+J=(I_{xx}I_{xy}I_{xy}I_{yy})=N[I_{MT}I_{2}+A_{MT}(tr(Σ)I_{2}−Σ)]
+$$
+
+where Ι2 is the 2 × 2 identity matrix, tr(.) refers to the matrix trace operator and Σ is the covariance matrix of the microtubule centres in the xy-plane.
+
+A similar expression can be obtained for a composite beam containing microtubules and cross-linkers, if it is assumed that the cross-linkers are rectangular support elements (with a width, w, and a height, h) and the same material properties as microtubules. However, since the rectangular cross-linkers, themselves, have an anisotropic area moment of inertia, the first term in equation must also take into account the orientation, θ, of each cross-linker, which we define with respect to the y-axis as
+
+$$
+J^{linker}(\theta)=(\frac{wh}{12})(h^{2}cos^{2}\theta+w^{2}sin^{2}\theta(w^{2}−h^{2})sin\thetacos\theta(w^{2}−h^{2})sin\thetacos\thetah^{2}sin^{2}\theta+w^{2}cos^{2}\theta)
+$$
+
+### Effect of polymer mass conservation on the Spindle's Transverse Stiffness
+
+The effect that polymer mass conservation has on the spindle's stiffness can be investigated by treating the spindle as a solid, homogeneous cylinder. If the volume of the cylinder, V, is held constant, to model the conservation of polymer mass, then the cylindrical beam becomes thinner as it elongates. The relationship between cylinder radius, rc, and its length, Ls, ($r_{c}=\sqrt{V/\piL_{s}}$) and the fourth-order scaling of transverse stiffness with beam radius, EI ∝ rc4 (Landau et al., 1986) then lead to the EI ∝ Ls−2 scaling of transverse stiffness with length.
 
 This scaling relation is consistent with the MMO model (Figure 5), which posits that the number of microtubules in a cross-section should be approximately LT/(Ls + Lm), because the transverse stiffness, EI, depends quadratically on the number of microtubules in a cross-section (Figure 3C,D).
 
-## Computational models of yeast spindles
+### Computational models of yeast spindles
 
 The response of the spindle to compressive forces was investigated using the cytoskeletal modelling software Cytosim, which solves the over-damped Langevin equations of cytoskeletal filaments using an implicit numerical integration scheme (Nedelec and Foethke, 2007). The code was compiled and run on the EMBL High Performance Computing cluster, with jobs submitted to the Platform LSF scheduler using custom Python scripts. Simulation results were analysed using Matlab (The MathWorks inc.).
 
 The simulations were designed to reproduce the morphology and biophysical characteristics of each spindle sufficiently closely to estimate the spindle's critical force. The SPBs were modelled as cylindrical elastic solids, associated with a scalar drag coefficient. Each microtubule was connected to the SPB by a pair of Hookean springs. The first of these was coupled to the minus-end of the microtubule, and was given a large elastic constant to model the high resistance of wild-type SPBs to pushing forces (Toya et al., 2007). The steric exclusion between microtubules was implemented using a one-sided quadratic potential with a minimum at the steric radius of 30 nm (Loughlin et al., 2010).
 
-## Estimating the critical force of ET-reconstructed spindle architectures
+### Estimating the critical force of ET-reconstructed spindle architectures
 
 The number and length of microtubules in the models of spindles from wild-type fission yeast cells were determined directly from ET reconstructions, whilst the SPB separation (or spindle length) was set to the IFTA-derived contour length between the poles of the ET spindle. The lengths of microtubules in budding yeast and cdc25.22 fission yeast cells were measured from the line representations of each spindle in the respective publications (Ding et al., 1993; Winey et al., 1995). The budding yeast spindles contain short microtubules (with lengths less than 0.5 μm) that are likely to represent kinetochore fibres that were not fully depolymerised during anaphase A. These fibres are unlikely to contribute to the structural integrity of the spindle, and account for a small proportion (7.8 ± 4.7%, (S. D.)) of the total polymerised tubulin. These microtubules were therefore neglected in the spindle models. Two of the budding yeast spindles also contain pole-to-pole microtubules that cannot be unambiguously assigned to a specific spindle pole. In the first spindle (numbered 12 in Winey et al.) the two pole-to-pole microtubules are assigned symmetrically to each SPB. The second spindle (numbered 14 in Winey et al.) contains a single pole-to-pole microtubule that is assigned to the SPB with the lowest number of long nucleated microtubules.
 
@@ -251,12 +571,24 @@ The simulation of microtubule organisation at the spindle midzone was performed 
 
 Throughout the initialisation of spindle architecture, the SPBs were connected to each other by a stiff spring with the same resting length as the spindle to prevent the SPB separation being altered by diffusion. After simulating the spindle for fifty seconds, almost all of the cross-linkers are bound to the midzone and the two halves of the spindle are strongly connected. Under these conditions, the cross-linkers are capable of forming the idealised square-packed arrays observed in yeast spindles, albeit with lower efficiency than we observe in electron tomogram reconstructions of wild-type spindles (data not shown). Upon completion of the initialisation step, the rate with which cross-linkers detach from the microtubule lattice was set to zero in order to probe the spindles' elastic response to increasing forces. This was effected by decreasing instantaneously the resting length of the spring connecting the two SPBs by 1 μm, and then linearly increasing the spring constant from a starting value of zero to a maximum of 240 pNμm−1 over the remaining 150 s of the simulation. The stiffness of the elastic element was maintained at the maximal value for a further 50 s, during which time the critical force on the spindle was determined. This was carried out by averaging the forces borne by the elastic element connecting the pair of SPBs. In simulations of spindles with elastic reinforcement, each microtubule model point was confined by an elastic potential with a given degree of stiffness (Figure 6A–D). The stiffness of the spring compressing the spindle poles was also increased to a maximum value of 1500 pNμm−1 to ensure that the critical force was exceeded, but all other simulation parameters were identical. Simulation parameters are provided in Table 2.
 
-## Sampling Microtubule number and length using null statistical models
+### Sampling Microtubule number and length using null statistical models
 
 The simulations of the null models of spindle architecture were identical to those used to determine the critical force of wild-type spindles, except that microtubule length and number were sampled from probability distributions. The objective of this procedure was to sample a large number of alternative spindle morphologies to investigate the degree to which wild-type spindles are mechanically optimal. In constructing the null statistical models, the number of microtubules emanating from each SPB was sampled from a Poisson distribution with a mean equal to that observed in the wild-type spindle with the same length. The lengths of the microtubules in each random model were determined by randomly partitioning the total polymer present in the wild-type spindle between the NMT microtubules. In cases where the length of a sampled microtubule exceeded the spindle length, the microtubule was truncated to the length of the spindle with the remaining polymer used to set the length of one or more additional microtubules that were assigned to one of the two SPBs at random. This procedure increased slightly the average number of microtubules in the random spindles but ensured that the overall polymer mass was conserved. At SPBs that contained in excess of six microtubules, the radius of the circular face of the SPB was increased so that its area increased linearly with microtubule number, and that the density of microtubules on the surface of the SPB was constant.
 
-## Estimating the forces on the anaphase B spindle
+### Estimating the forces on the anaphase B spindle
 
-The viscous drag on the fission yeast nucleus is substantially larger than is predicted by Stokes' law due to the narrow separation between the nuclear envelope and the enclosing cell wall (Foethke et al., 2009). The equation for translational motility of the nucleus in the cell geometry can be approximated asγ=9π22ηcellrnucleus4ϵ5/2where ε=(rcell−rnucleus )/rnucleus is the cell clearance. A description of the other variables is shown in Table 3.
+The viscous drag on the fission yeast nucleus is substantially larger than is predicted by Stokes' law due to the narrow separation between the nuclear envelope and the enclosing cell wall (Foethke et al., 2009). The equation for translational motility of the nucleus in the cell geometry can be approximated as
 
-After ablation of the spindle midzone, the forces acting on the daughter nuclei areFviscous=−Felastic−γdxdt=kxwhich has a solution, x(t) = x0 . e(−t/τ), where τ = γ/k represents the characteristic time for the spindle to reach equilibrium, and x0 is the initial displacement. An exponential fit to the relaxation data provides values for these variables, which can then also be combined to give a rough estimate of the total force resisting spindle elongation (Table 3).
+$$
+\gamma=\frac{9\pi^{2}\sqrt{2}η_{cell}r_{nucleus}}{4ϵ^{5/2}}
+$$
+
+where ε=(rcell−rnucleus )/rnucleus is the cell clearance. A description of the other variables is shown in Table 3.
+
+After ablation of the spindle midzone, the forces acting on the daughter nuclei are
+
+$$
+F_{viscous}=−F_{elastic}−\gamma\frac{dx}{dt}=kx
+$$
+
+which has a solution, x(t) = x0 . e(−t/τ), where τ = γ/k represents the characteristic time for the spindle to reach equilibrium, and x0 is the initial displacement. An exponential fit to the relaxation data provides values for these variables, which can then also be combined to give a rough estimate of the total force resisting spindle elongation (Table 3).

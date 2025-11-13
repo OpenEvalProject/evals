@@ -24,10 +24,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0170z8493 Institute of Brain and Behavioural Sciences, College of Life Sciences, Shaanxi Normal University Xi'an China
-2. https://ror.org/038kr2d80 Department of Psychiatry and Behavioral Sciences, Silvio O. Conte Center for Oxytocin and Social Cognition, Center for Translational Social Neuroscience, Emory National Primate Research Center, Emory University Atlanta United States
-3. https://ror.org/02956yf07 Center for Social Neural Networks, University of Tsukuba Tsukuba Japan
-4. https://ror.org/01fmc2233 Research Center for Prevention and Treatment of Respiratory Disease, School of Clinical Medicine, Xi'an Medical University Xi'an China
+1. Institute of Brain and Behavioural Sciences, College of Life Sciences, Shaanxi Normal University Xi'an China ([ROR:0170z8493](https://ror.org/0170z8493))
+2. Department of Psychiatry and Behavioral Sciences, Silvio O. Conte Center for Oxytocin and Social Cognition, Center for Translational Social Neuroscience, Emory National Primate Research Center, Emory University Atlanta United States ([ROR:038kr2d80](https://ror.org/038kr2d80))
+3. Center for Social Neural Networks, University of Tsukuba Tsukuba Japan ([ROR:02956yf07](https://ror.org/02956yf07))
+4. Research Center for Prevention and Treatment of Respiratory Disease, School of Clinical Medicine, Xi'an Medical University Xi'an China ([ROR:01fmc2233](https://ror.org/01fmc2233))
 
 † Corresponding author
 
@@ -49,35 +49,175 @@ Mandarin voles (Microtus mandarinus) are socially monogamous rodents that are wi
 
 ## Results
 
-## DA release in the NAc shell was higher upon sniffing their partner than sniffing a stranger after pair bonding
+### DA release in the NAc shell was higher upon sniffing their partner than sniffing a stranger after pair bonding
 
 After 7 days of cohabitation with females, male mandarin voles showed significant preference for their partners in a partner preference test, displaying reliable pair bonding (Figure 1—figure supplement 1). To explore alterations in neural activities induced by the formation of this pair bond, neural activities were measured before (at 3 days of cohabitation) and after (at 7 days of cohabitation) the formation of the pair bond. To determine the changes in DA release after pair bonding, extracellular DA was monitored by unilateral injection of rAAV-dLight 1.1, which encoded a fluorescent DA sensor into the NAc shell (Figure 1A–C). The sites of virus expression and optical fiber layout are shown in Figure 1B. The Control group was injected with AAV coding enhanced green fluorescent protein (EGFP). Histological method confirmed that both DA sensor and EGFP were expressed in the NAc shell (Figure 1B, Figure 1—figure supplement 2B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-v1.jpg)
+
+**Figure 1.:** (A) Timeline of experiments. (B) Schematic diagrams depicting virus injection and recording sites and histology showing the expression of DA sensor within the NAc shell. Scale bar: 1 mm. (C) Schematic of the procedure used to record extracellular DA concentration in the NAc shell using fiber photometry. (D) Heat map illustrating the extracellular DA concentrations (ΔF/F, %) of the NAc shell when sniffing their partner, an unknown female, and an unrelated object. (E) Mean fluorescence signal changes of DA sensor during sniffing their partner (red line), an unknown female (blue line), or an object (gray line) after 3 days of cohabitation. The shaded areas along the differently colored lines represent the margin of error. (F) Quantification (One-Way Repeated Measures ANOVA) of changes in DA signals during sniffing of their partner, an unknown female, and an object after 3 days of cohabitation. (G) Heat map illustrating the extracellular DA concentration (ΔF/F, %) of the NAc shell when sniffing their partner, an unknown female, and an object. (H) Mean fluorescence signal changes of the DA sensor when sniffing their partner (red line), an unknown female (blue line), or an object (gray line) after 7 days of cohabitation. (I) Quantification (One-Way Repeated Measures ANOVA) of changes in extracellular DA concentration when sniffing their partner, an unknown female, and an object after 7 days of cohabitation. Error bars = SEM * represents p<0.05, ** represents p<0.01, and *** represents p<0.001. See Figure 1—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Timeline of experiments. (B) Quantification of side-by-side time in the partner preference test after cohabitation for 3 days (n=9 voles, Paired t test: t (8)=0.623, p=0.551). (C) Quantification of side-by-side time in the partner preference test after 7 days of cohabitation (n=9 voles, Paired t test: t (8)=5.294, p=0.0007). Error bars  = SEM. *** represent p<0.001. See Figure 1—figure supplement 1—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Timeline of experiments. (B) Schematic diagrams depicting histology showing the expression of EGFP within the NAc shell. Scale bar: 1 mm. (C) The schematic of the fiber photometry. (D, F) Mean fluorescence signal changes of EGFP fluorescence signals during sniffing partner (red line), an unknown female (blue line), or an object (yellow line) after cohabitation for 3 days (D) and 7 days (F). (E, G) Quantification (Repeated One-way ANOVA) of changes in EGFP fluorescence signals during sniffing partner, an unknown female, or an object after cohabitation for 3 days (E) (n=5 voles) and 7 days (G) (n=5 voles). (H, J) Mean fluorescence signal changes of EGFP fluorescence signals during sniffing cagemate (red line), an unknown male (blue line), or an object (yellow line) after cohabitation for 3 days (H) and 7 days (J). (I, K) Quantification (Repeated One-way ANOVA) of changes in EGFP fluorescence signals during sniffing cagemate, an unknown male, or an object after cohabitation for 3 days (I) (n=5 voles) and 7 days (K) (n=5 voles). All error bars = SEM. See Figure 1—figure supplement 2—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Timeline of experiments. (B) Schematic diagrams depicting virus injection and recording sites and histology showing the expression of DA sensor within the NAc shell. Scale bar: 1 mm. (C) Schematic of the procedure used to record extracellular DA concentration in the NAc shell using fiber photometry. (D) Heat map illustrating the extracellular DA concentrations (ΔF/F, %) of the NAc shell when sniffing their partner, an unknown female, and an unrelated object. (E) Mean fluorescence signal changes of DA sensor during sniffing their partner (red line), an unknown female (blue line), or an object (gray line) after 1 hr of cohabitation. The shaded area along the differently colored lines represents the margin of error. (F) Quantification (Repeated One-way ANOVA) of changes in DA signals during sniffing of their partner, an unknown female, and an object after 1 hr of cohabitation. (G) Heat map illustrating the extracellular DA concentration (ΔF/F, %) of the NAc shell when sniffing their partner, an unknown female, and an object. (H) Mean fluorescence signal changes of the DA sensor when sniffing their partner (red line), an unknown female (blue line), or an object (gray line) after 3 days of cohabitation. (I) Quantification (Repeated One-way ANOVA) of changes in extracellular DA concentration when sniffing their partner, an unknown female, and an object after 3 days of cohabitation. (J) Quantification (Two-Way Repeated Measures ANOVA) of changes in sniffing their partner, an unknown female, and an object after cohabitation for 1 hr and 3 days (n=7 voles). Error bars = SEM. * represents p<0.05, ** represents p<0.01, and *** represents p<0.001. See Figure 1—figure supplement 3—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Timeline of experiments. (B) Schematic diagrams depicting virus injection and recording sites and histology showing the expression of DA sensor within the NAc shell. Scale bar: 1 mm. (C) Schematic of the procedure used to record extracellular DA concentration in the NAc shell using fiber photometry. (D) Heat map illustrating the extracellular DA concentrations (ΔF/F, %) of the NAc shell when sniffing their cagemate, an unknown male, or an object. (E) Mean fluorescence signal changes of DA sensor during sniffing their cagemate (red line), an unknown male (blue line), or an object (gray line) after 3 days of cohabitation. The shaded area along the differently colored lines represents the margin of error. (F) Quantification (repeated one-way ANOVA) of changes in DA signals during sniffing of their cagemate, an unknown male, or an object after 3 days of cohabitation. (G) Heat map illustrating the extracellular DA concentration (ΔF/F, %) of the NAc shell when sniffing their cagemate, an unknown male, or an object. (H) Mean fluorescence signal changes of the DA sensor when sniffing their cagemate (red line), an unknown male (blue line), or an object (gray line) after 7 days of cohabitation. (I) Quantification (repeated one-way ANOVA) of changes in extracellular DA concentration when sniffing their cagemate, an unknown male, or an object after 7 days of cohabitation. Error bars = SEM. * represents p<0.05, ** represents p<0.01. See Figure 1—figure supplement 4—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Quantification (Paired t test) of change during sniffing partner (left), female stranger (middle), or object (right) after cohabitation for 3 days (n=7 voles). (B) Quantification (Paired t test) of changes during sniffing partner (left), an unknown female (middle), or an object (right) after cohabitation for 7 days (n=7 voles). Error bars = SEM * represents p<0.05, ** represents p<0.01. See Figure 1—figure supplement 5—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Quantification (Paired t test) of changes during sniffing cagemate (left), an unknown male (middle), or an object (right) after cohabitation for 3 days (n=6 voles). (B) Quantification (Paired t test) of changes during sniffing cagemate (left), an unknown male (middle), or an object (right) after cohabitation for 7 days (n=6 voles). Error bars = SEM. * represent p<0.05. See Figure 1—figure supplement 6—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Timeline of experiments. (B) Heat map illustrating the extracellular DA concentration (ΔF/F, %) of NAc shell upon eating carrot after cohabitation for 3 days and 7 days. (C) Mean fluorescence signal changes of DA sensor upon eating carrot after cohabitation for 3 (red line) and 7 days (blue line). The shaded area along the different colored lines represents error margins. (D) Quantification (Two-Way Repeated Measures ANOVA) of changes in DA signals upon eating carrot after cohabitation for 3 and 7 days. All error bars = SEM. * represent p<0.05, ** represent p<0.01, *** represent p<0.001. See Figure 1—figure supplement 7—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** (A) Mean fluorescence signals changes (middle) and quantification (unpaired t test) (right) of DA sensor during side-by-side contact with partner (n=5 voles) or an unknown female (n=3 voles) after 3 days of cohabitation. Left: Heat map illustrating the extracellular DA concentration (ΔF/F, %) of NAc shell during side-by-side contact after cohabitation for 3 days. (B) Mean fluorescence signal changes (middle) and quantification (unpaired t test) (right) of DA sensor during side-by-side contact with partner (n=7 voles) or an unknown female (n=4 voles) after 7 days of cohabitation. Left: Heat map illustrating the extracellular DA concentration (ΔF/F, %) of NAc shell during side-by-side contact after cohabitation for 7 days. Not all animals engaged in side-by-side contact. The number of data points was different from the number of subjects because some animals did not show side-by-side contact, thus we could not detect the changes in fluorescence signals upon the occurrence of this behavior. All error bars = SEM. * represent p<0.05. See Figure 1—figure supplement 8—source data 1 for detailed statistics.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** (A) DA sensor: Mean fluorescence signal changes of DA concentration during freezing (red line), exploring (blue line), grooming (yellow line), and rearing (green line) after 3 days (left) and 7 days (middle) of cohabitation. Right: Quantification (Two-Way Repeated Measures ANOVA) of changes during non-social behavioral bout after cohabitation with partner for 3 and 7 days (n=7 voles). (B) Quantification (Two-Way Repeated Measures ANOVA) of changes during sniffing partner, an unknown female, or an object after cohabitation for 3 and 7 days (n=7 voles). (C) Quantification (Two-Way Repeated Measures ANOVA) of changes during sniffing cagemate, male stranger, or object after cohabitation for 3 and 7 days (n=6 voles). Error bars = SEM. * represent p<0.05, ** represent p<0.01. See Figure 1—figure supplement 9—source data 1 for detailed statistics.
+
 Next, the dynamics of endogenous DA were measured in male mandarin voles when they sniffed their partner or a female stranger. Fluorescence signals were found to have increased in the NAc shell relative to baseline after cohabitation for 3 days when male voles sniffed either their partner or an unknown female (Figure 1—figure supplement 5A; Paired t test: partner, t (6)=3.290, p=0.0166; stranger, t (6)=4.884, p=0.0028; object, t (6)=1.745, p=0.1315). Signal intensities showed no difference between sniffing their partner or an unknown female after three days cohabitation (Figure 1D–F; One-Way Repeated Measures ANOVA: F (2.000, 12.00)=8.702, p=0.0001; partner vs. object, p=0.0060; stranger vs. object, p=0.0239). In addition, the fluorescence signals of the DA release in the NAc shell did not show differences between sniffing partners or strangers after 1 hr or 3 days of cohabitation (Figure 1—figure supplement 3; Figure 1—figure supplement 3F, One-Way Repeated Measures ANOVA: F (2.000, 12.00)=19.59, p=0.0002; partner vs. object, p=0.0004, stranger vs. object, p=0.0006. Figure 1—figure supplement 3I, One-Way Repeated Measures ANOVA: F (2.000, 12.00)=10.85, p=0.0087; partner vs. object, p=0.0056, stranger vs. object, p=0.0044. Figure 1—figure supplement 3J, Two-Way Repeated Measures ANOVA: group ×treatment: F (2, 12)=0.5558, p=0.5877; group: F (2, 12)=20.53, p=0.0001; treatment: F (1, 6)=0.1467, p=0.7149). However, after cohabitation for 7 days, although the extracellular DA concentration increased relative to baseline upon sniffing their partner or an unknown female (Figure 1—figure supplement 5B; Paired t test: partner, t (6)=6.020, p=0.0009; stranger, t (6)=2.611, p=0.0401; object, t (6)=2.209, p=0.0692), the extracellular DA concentration was significantly higher upon sniffing their partner than a stranger (Figure 1G–I; One-Way Repeated Measures ANOVA: F (2.000, 12.00) = 21.41, p=0.0002; partner vs. stranger, p=0.0097; partner vs. object, p<0.0001, stranger vs. object, p=0.0422). DA release did not change upon sniffing an object. In addition, changes in DA release upon sniffing same-sex cagemates and unknown males after cohabitation for 3 and 7 days were also measured. DA release in the NAc shell increased relative to baseline after cohabitation for 3 and 7 days when male voles sniffed an unknown male vole (Figure 1—figure supplement 6A and B; A, Paired t test: partner, t (5)=1.464, p=0.2030; stranger, t (5)=3.327, p=0.0209; object, t (5)=1.249, p=0.2669. B, Paired t test: partner, t (5)=1.998, p=0.1021; stranger, t (5)=2.602, p=0.0481; object, t (5)=0.1254, p=0.9051), but no difference was found in signal intensities between sniffing same-sex cagemates and unknown males (Figure 1—figure supplement 4D–I; One-Way Repeated Measures ANOVA: F (2.000, 10.00)=4.864, p=0.0335; stranger vs. object, p=0.0396). Carrots are voles' daily food. We found that when voles eat carrots, DA release increases in the NAc shell. The fluorescence signal of DA concentration was examined when voles ate carrot after cohabitation for 3 and 7 days, to rule out that the difference in fluorescence signals was caused by the difference in virus expression at different time points. The results showed that the fluorescence signal in the NAc shell increased upon eating carrot (Figure 1—figure supplement 7B–D; Two-Way Repeated Measures ANOVA: group ×treatment: F (1, 7)=0.0274, p=0.8732; group: F (1, 7)=0.0557, p=0.8201; treatment: F (1, 7)=32.79, p=0.0007), but no significant difference in fluorescence signal was found while eating carrot between voles that had cohabitated for 3 and 7 days. In control animals expressing EGFP in the NAc shell, changes in fluorescence intensities showed no difference between male voles sniffing their partner and an unknown female (Figure 1—figure supplement 2; E, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=4.092, p=0.0597. G, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=0.6107, p=0.5665. I, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=0.0800, p=0.9238. K, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=2.786, p=0.1207). Furthermore, no significant differences were found between the fluorescence signals of DA release upon side-by-side contact with their partner and a stranger after 3 days of cohabitation (Figure 1—figure supplement 8A; Two-tailed unpaired t-test: t (6)=0.08005, p=0.9388). However, the fluorescence signals of DA release upon side-by-side contact with their partner were higher than that during the same behavior with a stranger after 7 days of cohabitation (Figure 1—figure supplement 8B; Two-tailed unpaired t-test: t (9)=2.733, p=0.0231).
 
-## D2 MSNs activity in the NAc shell decreased while D1 MSNs activity increased upon sniffing their partner after pair bonding
+### D2 MSNs activity in the NAc shell decreased while D1 MSNs activity increased upon sniffing their partner after pair bonding
 
 The above results provide evidence that DA released within the NAc shell may play an important role in the formation of the pair bond among mandarin voles. Whether MSNs display different activities in vivo after the formation of partner preference was examined next. Fourteen days prior to cohabitation, rAAV-D1/D2-GCaMP6m, a D1/D2 genetically encoded fluorescent calcium sensor, was injected into the NAc shell. Dynamics of real-time calcium signals in the NAc shell in freely moving voles were recorded via a fiber photometry system in pair-bonded or non-bonded mandarin voles (Figures 2A, B, 3A and B). Immunofluorescence images showed that 84.42% of D1-GCaMP6m cells and 85.96% of D2-GCaMP6m cells were D1R-mRNA and D2R-mRNA positive (Figures 2C and 3C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-v1.jpg)
+
+**Figure 2.:** (A) Left: Timeline of experiments; right: Schematic diagrams depicting virus injection and recording sites as well as histology showing the expression of D2-GCaMP6m within the NAc shell. Scale bar: 1 mm. (B) Overlaps of D2-GCaMP6m (green), D2R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (C) Statistical chart showing that D2-GCaMP6m was relatively restricted to D2R-mRNA positive neurons (n=6 voles). (D) Heat map illustrating the calcium response (ΔF/F, %) of the NAc shell when sniffing a partner, an unknown female, or an object after cohabitation for 3 days. (E, H) Mean fluorescence signal changes of the calcium response during sniffing their partner (red line), an unknown female (blue line), or an object (gray line) after cohabitation for 3 days (E) and 7 days (H). The shaded areas along the different colors of lines show the margins of error. (F, I) Quantification (One-Way Repeated Measures ANOVA) of changes in calcium signals when sniffing their partner, an unknown female, or an object after cohabitation for 3 days (F) (n=7 voles) and 7 days (I) (n=7 voles). (G) Heat map illustrating calcium signals (ΔF/F, %) of the NAc shell when sniffing their partner, an unknown female, or an object after cohabitation for 7 days. All error bars = SEM. * represents p<0.05. See Figure 2—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Timeline of experiments. (B) Statistical chart showed that EGFP was relatively restricted to D2R-mRNA positive neurons (n=6 voles). (C) Overlap of EGFP (green), D2R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (D, F) Mean fluorescence signal changes of calcium response during sniffing partner (red line), an unknown female (blue line), or an object (yellow line) after cohabitation for 3 days (D) and 7 days (F). (E, G) Quantification (Repeated One-way ANOVA) of changes in calcium signals during sniffing partner, an unknown female, or an object after cohabitation for 3 days (E) (n=5 voles) and 7 days (G) (n=5 voles). (H, J) Mean fluorescence signal changes of calcium response during sniffing cagemate (red line), an unknown male (blue line), or an object (yellow line) after cohabitation for 3 days (H) and 7 days (J). (I, K) Quantification (Repeated One-way ANOVA) of changes in calcium signals during sniffing cagemate, an unknown male, or an object after cohabitation for 3 days (I) (n=5 voles) and 7 days (K) (n=5 voles). All error bars = SEM. See Figure 2—figure supplement 1—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Timeline of experiments. (B) Overlap of D2-GCaMP6m (green), D2R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (C) Statistical chart showed that D2-GCaMP6m was relatively restricted to D2R-mRNA positive neurons (n=6 voles). (D) Heat map illustrating the calcium signals (ΔF/F, %) of NAc shell during sniffing cagemate, an unknown male, or an object. (E) Mean fluorescence signal changes of D2 MSNs during sniffing cagemate (red line), an unknown male (blue line), or an object (gray line) after 3 days of cohabitation. (F) Quantification (Repeated One-way ANOVA) of changes in fluorescence signals during sniffing cagemate, an unknown male, or an object after 3 days of cohabitation (n=6 voles). (G) Heat map illustrating the calcium signals (ΔF/F, %) of NAc shell during sniffing cagemate, an unknown male, or an object. (H) Mean fluorescence signal changes of D2 MSNs during sniffing cagemate (red line), an unknown male (blue line), or an object (gray line) after 7 days of cohabitation. (I) Quantification (Repeated One-way ANOVA) of changes in fluorescence signals during sniffing cagemate, an unknown male, or an object after 7 days of cohabitation (n=6 voles). All error bars = SEM. * represents p<0.05. See 1Figure 2—figure supplement 2—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Quantification (Paired t test) of changes in calcium signals during sniffing partner (left), an unknown female (middle), or an object (right) after cohabitation for 3 days (n=7 voles). (B) Quantification (Paired t test) of changes in calcium signals during sniffing partner (left), an unknown female (middle), or an object (right) after cohabitation for 7 days (n=7 voles). Error bars = SEM * represents p<0.05, ** represents p<0.01. See Figure 2—figure supplement 3—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Quantification (Paired t test) of changes in calcium signals during sniffing cagemate (left), an unknown male (middle), or an object (right) after cohabitation for 3 days (n=6 voles). (B) Quantification (Paired t test) of changes in calcium signals during sniffing cagemate (left), an unknown male (middle), or an object (right) after cohabitation for 7 days (n=6 voles). Error bars = SEM. * represent p<0.05. See Figure 2—figure supplement 4—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Timeline of experiments. (B) Heat map illustrating the extracellular D2 MSNs (ΔF/F, %) of NAc shell upon eating carrot after cohabitation for 3 and 7 days. (C) Mean fluorescence signal changes of D2 MSNs upon eating carrot after cohabitation for 3 (red line) and 7 days (blue line). The shaded area along the different colored lines represents error margins. (D) Quantification (Two-Way Repeated Measures ANOVA) of changes in D2 MSNs signals upon eating carrot after cohabitation for 3 and 7 days. All error bars = SEM. * represent p<0.05, ** represent p<0.01, *** represent p<0.001. See Figure 2—figure supplement 5—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Mean fluorescence signal changes (middle) and quantification (paired t test) (right) of D2 MSNs during side-by-side contact with partner (n=7 voles) or an unknown female (n=7 voles) after 3 days of cohabitation. Left: Heat map illustrating the fluorescence signals of NAc shell D2 MSNs during side-by-side contact after cohabitation for 3 days. (B) Mean fluorescence signal changes (middle) and quantification (unpaired t test) (right) of D2 MSNs during side-by-side contact with partner (n=7 voles) or an unknown female (n=5 voles) after 7 days of cohabitation. Left: Heat map illustrating the fluorescence signals of NAc shell D2 MSNs during side-by-side contact after cohabitation for 7 days. Not all animals engaged in side-by-side contact. The number of data points was different from the number of subjects because some animals did not show side-by-side contact, thus we could not detect the changes in fluorescence signals upon the occurrence of this behavior. All error bars = SEM. * represent p<0.05. See Figure 2—figure supplement 6—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Mean fluorescence signal changes of D2-MSNs during freezing (red line), exploring (blue line), grooming (yellow line), and rearing (green line) after 3 days (left) and 7 days (middle) of cohabitation. Right: Quantification (Two-Way Repeated Measures ANOVA) of changes during non-social behavioral bout after cohabitation with partner for 3 and 7 days (n=7 voles). (B) Quantification (Two-Way Repeated Measures ANOVA) of changes during sniffing partner, an unknown female, or an object after cohabitation for 3 and 7 days (n=7 voles). (C) Quantification (Two-Way Repeated Measures ANOVA) of changes during sniffing cagemate, male stranger, or object after cohabitation for 3 and 7 days (n=6 voles). Error bars = SEM. * represent p<0.05, ** represent p<0.01. See Figure 2—figure supplement 7—source data 1 for detailed statistics.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Overlap of D2-GCaMP6m (green), D1R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (B–C) Statistical chart showed that D2-GCaMP6m was relatively restricted to D1R-mRNA positive neurons (n=5 voles).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-v1.jpg)
+
+**Figure 3.:** (A) Left: Timeline of experiments; right: Schematic diagrams depicting the virus injection and recording sites as well as histology showing the expression of D1-GCaMP6m within the NAc shell. Scale bar: 1 mm. (B) Overlap of D1-GCaMP6m (green), D1R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (C) Statistical chart showing that D1-GCaMP6m was relatively restricted to D1R-mRNA positive neurons (n=6 voles). (D) Heat map illustrating the calcium signals (ΔF/F, %) of the NAc shell when sniffing their partner, an unknown female, or an object after cohabitation for 3 days. (E, H) Mean fluorescence changes of calcium signals when sniffing their partner (red line), an unknown female (blue line), or an object (gray line) after cohabitation for 3 days (E) and 7 days (H). The shaded area along the different colored lines represents error margins. (F, I) Quantification (One-Way Repeated Measures ANOVA) of changes in calcium signals when sniffing their partner, an unknown female, or an object after cohabitation for 3 days (F) (n=7 voles) and 7 days (I) (n=7 voles). (G) Heat map illustrating the calcium signals (ΔF/F, %) of NAc shell when sniffing their partner, an unknown female, or an object after cohabitation for 7 days. All error bars = SEM. * represents p<0.05. See Figure 3—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Timeline of experiments. (B) Statistical chart showed that EGFP was relatively restricted to D1R-mRNA positive neurons (n=6 voles). (C) Overlap of EGFP (green), D1R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (D, F) Mean fluorescence signal changes of calcium response during sniffing partner (red line), an unknown female (blue line) or an object (yellow line) after cohabitation for 3 days (D) and 7 days (F). (E, G) Quantification (Repeated One-way ANOVA) of changes in calcium signals during sniffing partner, an unknown female or an object after cohabitation for 3 days (E) (n=5 voles) and 7 days (G) (n=5 voles). (H, J) Mean fluorescence signal changes of calcium response during sniffing cagemate (red line), an unknown male (blue line), or an object (yellow line) after cohabitation for 3 days (H) and 7 days (J). (I, K) Quantification (Repeated One-way ANOVA) of changes in calcium signals during sniffing cagemate, an unknown male, or an object after cohabitation for 3 days (I) (n=5 voles) and 7 days (K) (n=5 voles). All error bars = SEM. See Figure 3—figure supplement 1—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Timeline of experiments. (B) Overlap of D1-GCaMP6m (green), D1R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (C) Statistical chart showed that D1-GCaMP6m was relatively restricted to D1R-mRNA positive neurons (n=6 voles). (D) Heat map illustrating the calcium signals (ΔF/F, %) of NAc shell during sniffing cagemate, an unknown male, or an object. (E) Mean fluorescence signal changes of D1 MSNs during sniffing cagemate (red line), an unknown male (blue line), or an object (gray line) after 3 days of cohabitation. (F) Quantification (Repeated One-way ANOVA) of changes in fluorescence signal during sniffing cagemate, an unknown male, or an object after 3 days of cohabitation (n=6 voles). (G) Heat map illustrating the calcium signals (ΔF/F, %) of NAc shell during sniffing cagemate, an unknown male, or an object. (H) Mean fluorescence signal changes of D1 MSNs during sniffing cagemate (red line), an unknown male (blue line), or an object (gray line) after 7 days of cohabitation. (I) Quantification (Repeated One-way ANOVA) of change in fluorescence signal during sniffing cagemate, an unknown male, or an object after 7 days of cohabitation (n=6 voles). All error bars = SEM. See Figure 3—figure supplement 2—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Quantification (Paired t test) of changes in calcium signals during sniffing partner (left), an unknown female (middle), or an object (right) after cohabitation for 3 days (n=7 voles). (B) Quantification (Paired t test) of changes in calcium signals during sniffing partner (left), an unknown female (middle) or an object (right) after cohabitation for 7 days (n=7 voles). Error bars = SEM * represents p<0.05, ** represents p<0.01. See Figure 3—figure supplement 3—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Quantification (Paired t test) of change in calcium signals during sniffing cagemate (left), an unknown male (middle), or an object (right) after cohabitation for 3 days (n=6 voles). (B) Quantification (Paired t test) of changes in calcium signals during sniffing cagemate (left), an unknown male (middle), or an object (right) after cohabitation for 7 days (n=6 voles). Error bars = SEM. * represent p<0.05. See Figure 3—figure supplement 4—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Timeline of experiments. (B) Heat map illustrating the extracellular D1 MSNs (ΔF/F, %) of NAc shell upon eating carrot after cohabitation for 3 and 7 days. (C) Mean fluorescence signal changes of D1 MSNs upon eating carrot after cohabitation for 3 (red line) and 7 days (blue line). The shaded area along the different colored lines represents error margins. (D) Quantification (Two-Way Repeated Measures ANOVA) of changes in D1 MSNs upon eating carrot after cohabitation for 3 and 7 days. All error bars = SEM. * represent p<0.05, ** represent p<0.01, *** represent p<0.001. See Figure 3—figure supplement 5—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Mean fluorescence signal changes (middle) and quantification (unpaired t test) (right) of D1 MSNs during side-by-side contact with partner (n=4 voles) or an unknown female (n=4 voles) after 3 days of cohabitation. Left: Heat map illustrating the fluorescence signals of NAc shell D1 MSNs during side-by-side contact after cohabitation for 3 days. (B) Mean fluorescence signal changes (middle) and quantification (unpaired t test) (right) of D1 MSNs during side-by-side contact with partner (n=6 voles) or an unknown female (n=3 voles) after 7 days of cohabitation. Left: Heat map illustrating the fluorescence signals of NAc shell D1 MSNs during side-by-side contact after cohabitation for 7 days. Not all animals engaged in side-by-side contact. The number of data points was different from the number of subjects because some animals did not show side-by-side contact, thus we could not detect the changes in fluorescence signals upon the occurrence of this behavior. All error bars = SEM. * represent p<0.05. See Figure 3—figure supplement 6—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (A) Mean fluorescence signal changes of D1-MSNs during freezing (red line), exploring (blue line), grooming (yellow line), and rearing (green line) after 3 days (left) and 7 days (middle) of cohabitation. Right: Quantification (Two-Way Repeated Measures ANOVA) of changes during non-social behavioral bout after cohabitation with a partner for 3 and 7 days (n=7 voles). (B) Quantification (Two-Way Repeated Measures ANOVA) of changes during sniffing partner, an unknown female, or an object after cohabitation for 3 and 7 days (n=7 voles). (C) Quantification (Two-Way Repeated Measures ANOVA) of changes during sniffing a cagemate, a male stranger, or an object after cohabitation for 3 and 7 days (n=6 voles). Error bars = SEM. * represent p<0.05, ** represent p<0.01. See Figure 3—figure supplement 7—source data 1 for detailed statistics.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig3-figsupp8-v1.jpg)
+
+**Figure 3—figure supplement 8.:** (A) Overlap of D1-GCaMP6m (green), D2R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (B–C) Statistical chart showed that D1-GCaMP6m was relatively restricted to D2R-mRNA-positive neurons (n=5 voles).
+
 The results showed that the fluorescence signal of D1/D2 MSNs in the NAc shell was significantly increased relative to baseline when eating carrot after cohabitation for 3 and 7 days; voles who had experienced cohabitation for 3 and 7 days displayed no significant difference in fluorescence signals upon eating carrot (Figure 2—figure supplement 5, Figure 3—figure supplement 5) (Figure 2—figure supplement 5: Two-Way Repeated Measures ANOVA: group ×treatment: F (1, 5)=0.7013, p=0.4405; group: F (1, 5)=0.6822, p=0.4464; treatment: F (1, 5)=42.67, p=0.0013. Figure 3—figure supplement 5: Two-Way Repeated Measures ANOVA: group ×treatment: F (1, 7)=1.1413, p=0.2733; group: F (1, 7)=1.428, p=0.2711; treatment: F (1, 7)=8.499, p=0.0225.). D2 MSNs activity was significantly reduced relative to baseline when sniffing either their partner or an unknown female after 3 and 7 days of cohabitation (Figure 2—figure supplement 3A and B) (C, Paired t test: partner, t (6)=2.936, p=0.0261; stranger, t (6)=2.499, p=0.0466; object, t (6)=0.8186, p=0.4443. D, Paired t test: partner, t (6)=3.792, p=0.0091; stranger, t (6)=3.935, p=0.0077; object, t (6)=0.1841, p=0.8600). In contrast, after 7 days of cohabitation, the activity when sniffing their partner was significantly lower than when sniffing a stranger (Figure 2G–I; One-Way Repeated Measures ANOVA: F (1.212, 7.274)=15.89, p=0.0039; partner vs. stranger, p=0.0366; partner vs. object, p=0.0140, stranger vs. object, p=0.0434). After 3 days of cohabitation, D2 MSNs activity significantly decreased relative to baseline when sniffing an unknown male (Figure 2—figure supplement 4A; Paired t test: partner, t (5)=2.479, p=0.00559; stranger, t (5)=2.654, p=0.0452; object, t (5)=0.5164, p=0.6276). After 7 days of cohabitation, D2 MSNs activity significantly decreased relative to baseline when sniffing a same-sex cagemate or an unknown male (Figure 2—figure supplement 4B; Paired t test: partner, t (5)=3.267, p=0.0223; stranger, t (5)=2.789, p=0.0385; object, t (5)=1.035, p=0.3479). However, no significant difference in fluorescence signals was found when sniffing a same-sex cagemate or an unknown male (Figure 2—figure supplement 2G–I; One-Way Repeated Measures ANOVA: F (2.000, 10.00)=4.940, p=0.0322; stranger vs. object, p=0.0426). However, D1 MSNs activity was significantly increased relative to baseline when sniffing their partner or an unknown female after 3 days of cohabitation (Figure 3—figure supplement 3A and B; A, Paired t test: partner, t (6)=2.700, p=0.0356; stranger, t (6)=2.492, p=0.0470; object, t (6)=0.5216, p=0.6207. B, Paired t test: partner, t (6)=3.591, p=0.0115; stranger, t (6)=2.381, p=0.0547; object, t (6)=1.590, p=0.1630). After 7 days of cohabitation, D1 MSNs activity significantly increased relative to baseline when sniffing their partner and was significantly higher when sniffing their partner than when sniffing an unknown female (Figure 3G–I; One-Way Repeated Measures ANOVA: F (1.242, 7.451)=11.11, p=0.0093; partner vs. stranger, p=0.0278, partner vs. object, p=0.0326). After cohabitation for 3 or 7 days, D1 MSNs activity significantly increased relative to baseline when sniffing an unknown male (Figure 3—figure supplement 4A and B; A, Paired t test: partner, t (5)=1.788, p=0.1338; stranger, t (5)=2.613, p=0.0475; object, t (5)=0.4349, p=0.6818. B, Paired t test: partner, t (5)=2.009, p=0.1008; stranger, t (5)=2.983, p=0.0307; object, t (5)=1.049, p=0.3420). No significant difference in fluorescence signals was found upon sniffing a same-sex cagemate or an unknown male (Figure 3—figure supplement 2G–I; One-Way Repeated Measures ANOVA: F (2.000, 10.00)=5.533, p=0.0241; stranger vs. object, p=0.0278). D2 and D1 MSNs activity did not change upon sniffing an object. In addition, no significant changes were detected in the fluorescence signal upon sniffing their partner or a stranger in D1/D2 MSNs of voles injected with control virus (EGFP) without GCaMP6m sequence in the construct (Figure 2—figure supplements 1) (Figure 2—figure supplement 1E, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=0.7086, p=0.5208. Figure 2—figure supplement 1G, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=1.450, p=0.2901. Figure 2—figure supplement 1I, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=0.7471, p=0.5041. Figure 2—figure supplement 1K, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=1.344, p=0.3140. Figure 3—figure supplement 1E, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=4.162, p=0.0577. Figure 3—figure supplement 1G, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=0.6909, p=0.5287. Figure 3—figure supplement 1I, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=0.5571, p=0.5936. Figure 3—figure supplement 1K, One-Way Repeated Measures ANOVA: F (2.000, 8.00)=2.178, p=0.1757). Similarly, the fluorescence signals of D2 MSNs and D1 MSNs upon side-by-side contact with their partner or an unknown female after 3 days of cohabitation did not differ. However, the fluorescence signals of D2 MSNs and D1 MSNs upon side-by-side contact with their partner were higher than that upon the same behavior toward an unknown female after 7 days of cohabitation (Figure 2—figure supplement 6, Figure 3—figure supplement 6; Figure 2—figure supplement 6A: Two-tailed paired t-test, t (6)=0.6936, p=0.5139; Figure 2—figure supplement 6B: Two-tailed unpaired t-test, t (10)=2.813, p=0.0184; Figure 3—figure supplement 6A: Two-tailed unpaired t-test, t (6)=1.943, p=0.1000; Figure 3—figure supplement 6B: Two-tailed unpaired t-test, t (7)=2.392, p=0.0481).
 
-## Cohabitation with a partner alters the electrophysiological properties and synaptic transmission of D2/D1 MSNs in the NAc shell
+### Cohabitation with a partner alters the electrophysiological properties and synaptic transmission of D2/D1 MSNs in the NAc shell
 
 DA binding with its target receptor (D2R) in the NAc is necessary for the formation of a pair bond. D2 MSNs were identified by infection of the NAc shell with rAAV-D2-mCherry virus, and changes in synaptic transmission in D2 MSNs were recorded using whole-cell patch-clamp (Figure 4A). The frequency and amplitude of D2 MSNs spontaneous excitatory postsynaptic current (sEPSC) were found to be significantly higher in paired males than in naive males (Figure 4B and C; Two-tailed unpaired t-test: frequency: t (20)=–3.634, p=0.002; amplitude: t (20)=–2.619, p=0.016). In addition, the frequency, but not the amplitude, of D2 MSNs spontaneous inhibitory postsynaptic currents (sIPSCs) was significantly increased in paired males compared to naive males (Figure 4B and D) (Two-tailed unpaired t-test: frequency: t (26)=–2.096, p=0.046; amplitude: t (26)=–0.528, p=0.602). Synapse-driven homeostatic plasticity of intrinsic excitability—long-term changes in synaptic activity that modify intrinsic excitability—has been found in the NAc shell. However, this study failed to detect a significant change in intrinsic excitability in D2 MSNs in both naive males and paired males (Figure 4E–H) (4 F: Two-Way Repeated Measures ANOVA, group ×treatment: F (8, 198)=0.070, p=0.999; group: F (1, 198)=0.0003, p=0.986; treatment: F (8, 198)=16.767, p<0.0001; 4 G, Two-Way Repeated Measures ANOVA, group ×treatment: F (8, 198)=0.103, p=0.999; group: F (1, 198)=0.078, p=0.780; treatment: F (8, 198)=10.095, p<0.0001; 4 H, Two-tailed unpaired t-test, t (22)=0.100, p=0.921). To further examine the changes in excitatory and inhibitory synaptic transmission of D2 MSNs, evoked excitatory and inhibitory postsynaptic currents (PSCs) were recorded from the same cells. An increased E/I ratio of PSCs was found in D2 MSNs of paired males (Figure 4J) (Two-tailed unpaired t-test: t (10)=–3.499, p=0.012). Finally, whether the sEPSC of D2 MSNs could be evoked by bath-applied DA (5 µM) in naive and paired males was also tested. The results showed a significant decrease in both the frequency and amplitude of D2 sEPSC in naive (Figure 4K and L; Two-Way Repeated Measures ANOVA: frequencies: group ×treatment: F (1, 14)=0.0177, p=0.896; group: F (1, 14)=8.105, p=0.0129; treatment: F (1, 14)=7.189, p=0.0179, Control_ Baseline vs Control DA, p=0.0050, Cohabitation _ Baseline vs Cohabitation DA, p=0.2296, Control_ Baseline vs Cohabitation Baseline, p=0.0277, Control _DA vs Cohabitation DA, p=0.0376; amplitude: group ×treatment: F (1, 14)=0.7937, p=0.4042; group: F (1, 14)=5.911, p=0.0291; treatment: F (1, 14)=14.78, p=0.0018, Control_ Baseline vs Control DA, p=0.007, Cohabitation Baseline vs Cohabitation _DA, p=0.098, Control Baseline vs Cohabitation Baseline, p=0.0472, Control DA vs Cohabitation DA, p=0.0241), but not in paired mandarin voles (Figure 4L).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig4-v1.jpg)
 
-**Figure 4.:** (A) Timeline of experiments (left), schematic diagrams depicting virus injection and recording sites (middle), and a D2-positive neuron with a micropipette (right). (B) Representative spontaneous excitatory postsynaptic current (sEPSC) and spontaneous inhibitory postsynaptic currents (sIPSC) traces from paired and naive voles. (C) NAc shell D2 MSNs in paired voles exhibited sEPSCs with higher frequencies (Cohabitation: n=11 cells from four voles; Control: n=11 cells from four voles) and peak amplitudes (Cohabitation: n=11 cells from four voles; Control: n=11 cells from four voles) than those observed in naive voles. (D) NAc shell D2 MSNs in paired voles exhibited sIPSCs with higher frequencies (Cohabitation: n=14 cells from four voles; Control: n=14 cells from four voles) than those observed in naive voles. (Amplitude: Cohabitation: n=14 cells from four voles; Control: n=14 cells from four voles) (E–H) The neuronal excitability of D2 MSNs in the NAc shell of paired voles was similar to that of naive voles. (Cohabitation: n=11 cells from four voles; Control: n=13 cells from six voles). (I and J) The excitation-inhibition ratio was higher in paired voles than in naive voles. (Cohabitation: n=7 cells from four voles; Control: n=5 cells from four voles). (K and L) D2-sEPSCs are evoked over a background of bath-applied DA in naive voles and cohabitated (7 days) voles. (Cohabitation: n=8 cells from four voles; Control: n=8 cells from three voles). Error bars = SEM. * represents p<0.05, ** represents p<0.01, and *** represents p<0.001. See Figure 4—source data 1 for detailed statistics.Figure 4—source data 1.
+**Figure 4.:** (A) Timeline of experiments (left), schematic diagrams depicting virus injection and recording sites (middle), and a D2-positive neuron with a micropipette (right). (B) Representative spontaneous excitatory postsynaptic current (sEPSC) and spontaneous inhibitory postsynaptic currents (sIPSC) traces from paired and naive voles. (C) NAc shell D2 MSNs in paired voles exhibited sEPSCs with higher frequencies (Cohabitation: n=11 cells from four voles; Control: n=11 cells from four voles) and peak amplitudes (Cohabitation: n=11 cells from four voles; Control: n=11 cells from four voles) than those observed in naive voles. (D) NAc shell D2 MSNs in paired voles exhibited sIPSCs with higher frequencies (Cohabitation: n=14 cells from four voles; Control: n=14 cells from four voles) than those observed in naive voles. (Amplitude: Cohabitation: n=14 cells from four voles; Control: n=14 cells from four voles) (E–H) The neuronal excitability of D2 MSNs in the NAc shell of paired voles was similar to that of naive voles. (Cohabitation: n=11 cells from four voles; Control: n=13 cells from six voles). (I and J) The excitation-inhibition ratio was higher in paired voles than in naive voles. (Cohabitation: n=7 cells from four voles; Control: n=5 cells from four voles). (K and L) D2-sEPSCs are evoked over a background of bath-applied DA in naive voles and cohabitated (7 days) voles. (Cohabitation: n=8 cells from four voles; Control: n=8 cells from three voles). Error bars = SEM. * represents p<0.05, ** represents p<0.01, and *** represents p<0.001. See Figure 4—source data 1 for detailed statistics.
 
 Pharmacological assessment showed that D1R is involved in the maintenance of the pair bond; therefore, whole-cell patch-clamp recording was performed to determine whether D1 MSNs synaptic transmission in the NAc shell was altered by cohabitation. D1 MSNs showed reduced frequency and amplitude of sEPSC after cohabitation Figure 5B and C; (Two-tailed unpaired t-test: frequency: t (33)=2.816, p=0.008; amplitude: t (33)=3.322, p=0.002). In addition, in sIPSC in D1 MSNs, the frequency decreased drastically, but not the amplitude (Figure 5B and D; Two-tailed unpaired t-test: frequency: t (24)=2.324, p=0.024; amplitude: t (24)=0.100, p=0.921). Next, the intrinsic excitability was examined between naive and paired males, and a significant increase in intrinsic excitability of D1 MSNs was found (Figure 5E–H; 5 F: Two-Way Repeated Measures ANOVA, group ×treatment: F (8, 126)=0.778, p=0.623; group: F (1, 126)=7.757, p=0.006; treatment: F (8, 126)=29.810, p<0.0001; 5 G, Two-Way Repeated Measures ANOVA, group ×treatment: F (8, 126)=0.845, p=0.565; group: F (1, 126)=5.440, p=0.021; treatment: F (8, 126)=15.757, p<0.0001; 5 H, Two-tailed unpaired t-test, t (14)=2.744, p=0.016); differences in the E/I ratio of D1 MSNs were not found (Figure 5J; Two-tailed unpaired t-test: t (12)=–1.429, p=0.179). Then, it was tested whether the sEPSC of D1 MSNs can be evoked by bath-applied DA in naive and paired males. The results showed a significant increase in the frequency of D1 sEPSC in naïve males (Figure 5K and L; Two-Way Repeated Measures ANOVA: frequencies: group ×treatment: F (1, 18)=4.784, p=0.0422; group: F (1, 18)=9.954, p=0.0055; treatment: F (1, 18)=5.164, p=0.0356, Control_ Baseline vs Control DA, p=0.006, Cohabitation _ Baseline vs Cohabitation DA, p=0.953, Control Baseline vs Cohabitation _ Baseline, p=0.015, Control DA vs Cohabitation DA, p=0.006; amplitude: group ×treatment: F (1, 18)=0.007, p=0.9343; group: F (1, 18)=5.842, p=0.0265; treatment: F (1, 18)=0.6498, p=0.4307, Control_ Baseline vs Control DA, p=0.5285, Cohabitation Baseline vs Cohabitation DA, p=0.63468, Control Baseline vs Cohabitation Baseline, p=0.0282, Control DA vs Cohabitation DA, p=0.029), but not in paired males (Figure 5L).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig5-v1.jpg)
 
-**Figure 5.:** (A) Timeline of experiments (left), schematic diagrams depicting virus injection and recording sites (middle), and a D1-positive neuron with a micropipette (right). (B) Representative sEPSC and sIPSC traces from paired and naive voles. (C) NAc shell D1 MSNs in paired voles exhibited sEPSCs with lower frequencies (Cohabitation: n=19 cells from five voles; Control: n=16 cells from four voles) and peak amplitudes (Cohabitation: n=19 cells from five voles; Control: n=16 cells from four voles) than those observed in naive voles. (D) NAc shell D1 MSNs in paired voles exhibited sIPSCs with lower frequencies (Cohabitation: n=16 cells from four voles; Control: n=10 cells from three voles) than those observed in naive voles (amplitude: Cohabitation: n=16 cells from four voles; Control: n=10 cells from three voles). (E–H) Neuronal excitability of D1 MSNs in the NAc shell of paired voles was higher than those observed in naive voles (Cohabitation: n=8 cells from three voles; Control: n=8 cells from four voles). (I, J) Excitation-inhibition ratio of paired voles was similar to naive voles. (Cohabitation: n=9 cells from four voles; Control: n=5 cells from three voles). (K, L) D1-sEPSCs are evoked over a background of bath-applied DA in naive voles and cohabitated (7 days) voles. (Cohabitation: n=10 cells from five voles; Control: n=10 cells from four voles). Error bars = SEM. * represents p<0.05, and ** represents p<0.01. See Figure 5—source data 1 for detailed statistics.Figure 5—source data 1.
+**Figure 5.:** (A) Timeline of experiments (left), schematic diagrams depicting virus injection and recording sites (middle), and a D1-positive neuron with a micropipette (right). (B) Representative sEPSC and sIPSC traces from paired and naive voles. (C) NAc shell D1 MSNs in paired voles exhibited sEPSCs with lower frequencies (Cohabitation: n=19 cells from five voles; Control: n=16 cells from four voles) and peak amplitudes (Cohabitation: n=19 cells from five voles; Control: n=16 cells from four voles) than those observed in naive voles. (D) NAc shell D1 MSNs in paired voles exhibited sIPSCs with lower frequencies (Cohabitation: n=16 cells from four voles; Control: n=10 cells from three voles) than those observed in naive voles (amplitude: Cohabitation: n=16 cells from four voles; Control: n=10 cells from three voles). (E–H) Neuronal excitability of D1 MSNs in the NAc shell of paired voles was higher than those observed in naive voles (Cohabitation: n=8 cells from three voles; Control: n=8 cells from four voles). (I, J) Excitation-inhibition ratio of paired voles was similar to naive voles. (Cohabitation: n=9 cells from four voles; Control: n=5 cells from three voles). (K, L) D1-sEPSCs are evoked over a background of bath-applied DA in naive voles and cohabitated (7 days) voles. (Cohabitation: n=10 cells from five voles; Control: n=10 cells from four voles). Error bars = SEM. * represents p<0.05, and ** represents p<0.01. See Figure 5—source data 1 for detailed statistics.
 
-## Effects of chemogenetic activation or inhibition of D2/D1 MSNs in the NAc shell projecting to the VP upon the formation of partner preference
+### Effects of chemogenetic activation or inhibition of D2/D1 MSNs in the NAc shell projecting to the VP upon the formation of partner preference
 
 MSNs in the NAc shell project extensively to the VP. To activate or inhibit these projections using a chemogenetic approach, rAAV-DIO-hM3Dq-mCherry or rAAV-DIO-hM4Di-mCherry were injected into the NAc shell and rAAV (Retro)-D2-Cre was injected into the VP to selectively express ‘Gq-DREADD’ or ‘Gi-DREADD’ in NAc shell VP-projecting D2 MSNs (Figure 6A). Immunohistochemical staining showed that 90.11% of mCherry cells co-expressed D2R (Figure 6B, C, Figure 6—figure supplement 1). To determine whether the ligand clozapine N-oxide (CNO) could activate or inhibit VP-projecting D2 MSNs, whole cell patch-clamp recordings were performed. The results showed that the addition of 10 μM CNO remarkably increased the number of action potentials in the Gq-DREADD-transfected neurons (Figures 6D and 7D). In contrast, CNO caused a significant decrease in membrane potentials in Gi-DREADD-transfected neurons (Figures 6D and 7D). These results signal the specificity and validation of this virus strategy.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of the chemogenetic viral strategy and injection sites as well as histology showing the expression of D2-hM3Dq-mcherry within the NAc shell. Scale bar: 1 mm. (B) Timeline of experiments. (C) Immunohistology image showing co-localization of hM3Dq-mCherry-anti expression (green), D2R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. Statistical chart showing that D2-mRNA cells were relatively restricted to D2-hM3Dq-mCherry cells (n=3 voles). (D) Representative traces from a Gq-DREADD (left) neuron and Gi-DREADD (right) neuron after CNO bath. (E) Representative heatmaps of the partner preference test after 3 days of cohabitation. Left: Gq group. Middle: Gi group. Right: mcherry group. (F–H) Quantification of side-by-side times in partner preference tests after cohabitation for 3 days. (I) Representative heatmaps of the partner preference test after cohabitation for 7 days. Left: Gq group. Middle: Gi group. Right: mcherry group. (J–L) Quantification of side-by-side times in the partner preference test after cohabitation for 7 days. (D2-hM3Dq: CNO: n=7, saline: n=9; D2-hM4Di: CNO: n=9, saline: n=8; D2-mCherry: CNO: n=7, saline: n=6). Error bars = SEM. * represents p<0.05, ** represents p<0.01, and *** represents p<0.001. See Figure 6—source data 1 for detailed statistics.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, C, E) Immunohistochemistry image showing co-localization of hM3Dq-mCherry-anti (A), hM4Di-mCherry-anti (C) and mCherry-anti (E) expression (green), D2R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (B, D, F) Statistical chart showed that hM3Dq (B), hM4Di (D) and mCherry (F) was relatively restricted to D2-positive cells (hM3Dq n=3 voles, hM4Di n=3 voles, and mCherry n=3 voles). (G) Immunohistochemistry image showing viral injection in the VP of hM3Dq (left), hM4Di (middle), and mCherry (right) group. Scale bar: 200 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Overlap of D2- mCherry (green), D1R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (B–C) Statistical chart showed that D2-mCherry was relatively restricted to D1R-mRNA-positive neurons (n=3 voles).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic of chemogenetic viral strategy and injection sites as well as histology showing the expression of D1-hM4Di-mcherry within the NAc shell. Scale bar: 1 mm. (B) Timeline of experiments. (C) Immunohistology image showing co-localization of hM4Di-mCherry-anti expression (green), D1R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. Statistical chart showing that D1-mRNA cells were relatively restricted to D1-hM4Di-mCherry cells (n=3 voles). (D) Representative traces of a Gq-DREADD (left) neuron and Gi-DREADD (right) neuron after CNO bath. (E) Representative heatmaps of the partner preference test after 3 days of cohabitation. Left: Gq group. Middle: Gi group. Right: mcherry group. (F–H) Quantification of side-by-side times in the partner preference test after 3 days of cohabitation. (I) Representative heatmaps of the partner preference test after 7 days of cohabitation. Left: Gq group. Middle: Gi group. Right: mcherry group. (J–L) Quantification of side-by-side times in the partner preference test after 7 days of cohabitation. (D1-hM3Dq: CNO: n=8, saline: n=7; D1-hM4Di: CNO: n=7, saline: n=6; D1-mCherry: CNO: n=8, saline: n=7). Error bars = SEM. * represents p<0.05, ** represents p<0.01, and *** represents p<0.001. See Figure 7—source data 1 for detailed statistics.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A, C, E) Immunohistochemistry image showing co-localization of hM3Dq-mCherry-anti (A), hM4Di-mCherry-anti (C) and mCherry-anti (E) expression (green), D1R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (B, D, F) Statistical chart showed that hM3Dq (B), hM4Di (D) and mCherry (F) was relatively restricted to D1-positive cells (hM3Dq n=3 voles, hM4Di n=3 voles, and mCherry n=3 voles). (G) Immunohistochemistry image showing viral injections in the VP of hM3Dq (left), hM4Di (middle), and mCherry (right) group. Scale bar: 200 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Overlap of D1- mCherry (green), D2R-mRNA (red), and DAPI (blue) in the NAc shell. Scale bar: 100 μm. (B–C) Statistical chart showed that D1-mCherry was relatively restricted to D2R-mRNA positive neurons (n=3 voles).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/100292/elife-100292-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Possible neural model within NAc, where the co-action of DA on D2R and oxytocin on oxytocin receptors depresses the output of MSNs to VP; then, the VP mediates the attraction of partners during the formation of the pair bond. BLA: basolateral amygdala; MeA: medial amygdala; VTA: ventral tegmental area; PVN: paraventricular nucleus.
 
 During cohabitation, CNO (1 mg/kg) or saline was intraperitoneally injected daily (Figure 6A). The partner preference test was conducted on days 3 and 7 of cohabitation. Subsequent behavioral studies showed that CNO-treated mandarin voles with D2 MSNs Gi-DREADD virus infection showed increased side-by-side alignment with their partners compared with strangers in a partner preference test (Figure 6E and G; 6E, Two-way ANOVA: group ×treatment: F (2, 40)=4.942, p=0.012; group: F (2, 40)=4.265, p=0.021; treatment: F (1, 40)=4.967, p=0.032; Gi_Saline vs Gi_CNO, p<0.001; Gq_Saline vs Gq_CNO, p=0.380; mCherry_Saline vs mCherry_CNO, p=0.052. 6 G, Kruskal-Wallis: H=15.198, p=0.002, CNO_Partner vs CNO_Stranger, p<0.0001; saline_Partner vs saline_Stranger, p=0.328); this shows that inhibition of VP-projecting D2 MSNs prompted the formation of partner preferences. Nevertheless, CNO-treated voles with VP-projecting D2 MSNs Gq-DREADD virus infection spent less time with their partners than with unknown females in the partner preference test; moreover, such activation of VP-projecting D2 MSNs also blocked partner preference after 7 days of cohabitation (Figure 6I and J; 6I, Two-way ANOVA: group ×treatment: F (2, 40)=3.798, p=0.031; group: F (2, 40)=6.797, p=0.003; treatment: F (1, 40)=3.375, p=0.074; Gi_Saline vs Gi_CNO, p=0.861; Gq_Saline vs Gq_CNO, p=0.002; mCherry_Saline vs mCherry_CNO, p=0.805. 6 J, Kruskal-Wallis: H=8.083, p=0.044; CNO_Partner vs CNO_Stranger, p=0.384; saline_Partner vs saline_Stranger, p=0.033). In control virus subjects, CNO had no detectable effects on the behavioral performance in tests (Figure 6L); (Two-Way Repeated Measures ANOVA: group ×treatment: F (1, 11)=0.043, p=0.839; group: F (1, 11)=0.306, p=0.591; treatment: F (1, 11)=25.166, p=0.0004; CNO_Partner vs CNO_Stranger, p=0.009; saline_Partner vs saline_Stranger, p=0.009).
 
@@ -113,11 +253,217 @@ However, certain limitations of the present study should not be ignored. Firstly
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-CAG-dLight1.1-WPRE-hGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-1138</td>
+      <td>Serotype titer 2/9, 5.00×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D1-GCaMp6m-WPRE-hGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-2749</td>
+      <td>Serotype titer 2/9, 2.55×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D2-GCaMp6m-WPRE-hGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-2750</td>
+      <td>Serotype titer 2/9, 2.69×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D1-EGFP-WPRE-bGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-0214</td>
+      <td>Serotype titer 2/9, 2.78×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D2-EGFP-WPRE-hGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-3245</td>
+      <td>Serotype titer 2/9, 2.26×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D1-mCherry-WPRE-bGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-0757</td>
+      <td>Serotype titer 2/9, 3.66×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D2-mCherry-WPRE-bGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-0367</td>
+      <td>Serotype titer 2/9, 2.44×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D1-CRE-WPRE-hGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-1217</td>
+      <td>Serotype titer 2 /R, 4.72×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-D2-CRE-WPRE-bGH_polyA</td>
+      <td>BrainVTA</td>
+      <td>PT-0571</td>
+      <td>Serotype titer 2 /R, 5.00×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-CAG-EGFP</td>
+      <td>BrainVTA</td>
+      <td>PT-0305</td>
+      <td>Serotype titer 2/9, 5.28×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-EF1α-DIO-hM3D(Gq)-mCherry</td>
+      <td>BrainVTA</td>
+      <td>PT-0042</td>
+      <td>Serotype titer 2/9, 2.70×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV-EF1α-DIO-hM4D(Gi)-mCherry</td>
+      <td>BrainVTA</td>
+      <td>PT-0043</td>
+      <td>Serotype titer 2/9, 5.53×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV- EF1α-DIO-mCherry</td>
+      <td>BrainVTA</td>
+      <td>PT-0013</td>
+      <td>Serotype titer 2/9, 5.19×1012 vg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry</td>
+      <td>abcam</td>
+      <td>ab183628</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit goat conjugated with Alexa Fluor 488</td>
+      <td>JacksonImmuno</td>
+      <td>111-545-003</td>
+      <td>1: 500</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RNAscope Probe-Mo-Drd1-C3</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#588161-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RNAscope Probe-Mo-Drd2-C2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#534471-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAscope Multiplex Fluorescent Reagent Kit v2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N-oxide dihydrochloride</td>
+      <td>BrainVTA</td>
+      <td>CNO-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>17-β-Estradiol-3-Benzoate</td>
+      <td>Sigma</td>
+      <td>E8875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine</td>
+      <td>Sigma</td>
+      <td>H8502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>picrotoxinin</td>
+      <td>Sigma</td>
+      <td>P8390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>Sigma</td>
+      <td>504914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Sigma</td>
+      <td>165304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JWatcher</td>
+      <td>http://www.jwatcher.ucla.edu/</td>
+      <td>RRID:SCR_017595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Subjects used in the present study were the F2 generation of mandarin voles bred in the laboratory. The voles were weaned 21 days after birth and lived in same-sex colonies in different polycarbonate cages (44×22 × 16 cm) and were housed in a 22–24 °C, 12 hr light/dark cycle with food and water ad libitum. The voles used in the experiment were ~70–90 days old. All laboratory procedures were conducted in accordance with the Guidelines for the Care and Use of Laboratory Animals in China and the regulations of the Animal Care and Use Committee of Shaanxi Normal University. This study protocol was reviewed and approved by the Academic Committee of Shaanxi Normal University, Special Committee of Scientific Ethics, Approval No. 202112005.
 
-## Stereotaxic surgery and virus infusions
+### Stereotaxic surgery and virus infusions
 
 Male mandarin voles were anesthetized with 1.5–3.0% isoflurane inhalant gas (R5-22-10, RWD, China) and placed in stereotaxic instruments (68045, RWD, China). The brain coordinates of virus injection were as follows: NAc shell: AP:+1.5, ML:±0.99, DV: −4.2; VP: AP:+0.8, ML:±1.2, DV: −4.9. Next, a 10 µL Hamilton microsyringe (7635–01, HAMILTON) was used to inject the virus using a microsyringe pump (KDS legato 130, RWD, China) at a rate of 80 nl/min. After the injection, the needle was left in place for 10 min and was then slowly removed to prevent virus leakage. For fiber photometry recording, voles were mounted on a stereotaxic apparatus and a fiber optical cannula (diameter 2.5 mm, NA 0.37, depth 6 mm, RWD, China) was implanted into the site ~0.15 mm above the NAc shell 10 days after virus injection. Only voles with the correct locations of virus expression and optical fibers were used for further analyses.
 
@@ -129,7 +475,7 @@ Finally, a chemogenetic approach was used to activate or inhibit D1/D2 MSNs proj
 
 All female voles were ovariectomized and primed through subcutaneous administration of estradiol benzoate (17-β-Estradiol-3-Benzoate, Sigma, 2 μg dissolved in sesame oil starting 3 days prior to the experiments; Borie et al., 2022).
 
-## Fiber photometry
+### Fiber photometry
 
 The fiber photometry system (ThinkerTech, Nanjing, China) was used as previously described (Li et al., 2021). Briefly, the emission light from modulated blue 480 LED (50 mW) was reflected with a dichroic mirror and then delivered to the brain by an optical objective lens coupled with an optical commutator, which excited the D1/D2-GCaMP6m or the DA sensor located in the NAc shell. The excitation light was passed through another band pass filter, into a CMOS detector (Thorlabs, Inc; DCC3240M), and finally recorded by LabVIEW software (TDMSViewer; ThinkerTech, Nanjing, China). Fourteen days after virus injection, male voles were cohabited with females. Previous results confirmed that male mandarin voles show significant preference to co-housed partners after 5–7 days of cohabitation (Feng et al., 2021); therefore, the real-time release of DA and the activity of D1/D2 MSNs in the NAc shell were observed on days 3 and 7 days of cohabitation (partner: DA sensor: day 3, n=7; day 7, n=7. D2-GCaMP6m: day 3, n=7; day 7, n=7. D1-GCaMP6m: day 3, n=7; day 7, n=7; same sex cagemate: DA sensor: day 3, n=6; day 7, n=6. D2-GCaMP6m: day 3, n=6; day 7, n=6. D1-GCaMP6m: day 3, n=6; day 7, n=6).
 
@@ -137,7 +483,7 @@ After 3 and 7 days of cohabitation, subjects were anesthetized with isoflurane a
 
 All data were analyzed in MatLab 2019a; the ΔF/F values represent the release of DA and activity of D1/D2 MSNs during sniffing and side-by-side contact. The baseline (F0) for all events and behaviors was the averaged fluorescence signal of –10–0 s prior to exposure to the stimulated voles. The fluorescence signals after the start of sniffing and side-by-side contact are recorded as F. These fluorescence signals during the entire 30-min session were recorded and analyzed. The fluorescence change (ΔF/F) values were calculated as (F – F0) / F0. Then, the time window was determined based on the duration of a behavioral bout. To estimate the calcium response, the average (ΔF/F) was calculated during the 4 s time window following the beginning of sniffing and side-by-side contact. Otherwise, the data points where the sniffing bout occurred within 4 s of a prior sniffing bout were excluded from data analysis. The sniffing and side-by-side contact that occurred in a fiber photometry experiment were examined using jwatcher, a behavior event scoring software (https://www.jwatcher.ucla.edu/, Dan Blumstein’s Lab & the late Christopher Evans’ lab, Sydney).
 
-## Slice preparation and whole-cell patch clamp recording
+### Slice preparation and whole-cell patch clamp recording
 
 Four weeks after virus injection, voles were anesthetized with 1.5–3.0% isoflurane inhalant gas and the brains were harvested into oxygenated artificial cerebrospinal fluid (ACSF) containing 125 mM sodium chloride (NaCl), 2.5 mM potassium chloride (KCl), 25 mM glucose, 25 mM sodium hydrogen carbonate (NaHCO3), 1.25 mM monosodium phosphate (NaH2PO4), 2 mM calcium chloride (CaCl2), and 1 mM magnesium chloride (MgCl2), gassed with 5% CO2 /95%O2. Sagittal NAc slices (300 μm) were cut on a vibratome (VT 1200 S, Leica, Germany) with oxygenated ACSF (32–34 °C), incubated at 32 °C for 30 min, followed by 1 h of incubation at room temperature before recording. Voltage- and current-clamp whole-cell recordings were performed using standard techniques at room temperature. Electrodes were pulled from 1.5 mm borosilicate-glass pipettes on a P-97 puller (Sutter Instruments).
 
@@ -145,20 +491,20 @@ Whole-cell patch-clamp recordings were obtained with a Multiclamp 700B amplifier
 
 To assess the neuronal action potential, MSNs were stimulated with step-current pulses (1000ms, ranging from 0 to 250 pA) by adding PTX (100  µM, Sigma), CNQX (20  µM, Sigma), and D-AP5 (50  µM, Sigma). (D2 MSNs: Cohabitation, n=11 cells from four voles; Control, n=13 cells from six voles) (D1 MSNs: Cohabitation, n=8 cells from three voles; Control, n=8 cells from four voles). To determine the activation and inhibition effect of CNO (BrainVTA, CNO-02) in Gi or Gq virus-infected neurons, spontaneous firing of action potentials in the cell was recorded in the current-clamp mode. After 3 min of baseline recording, NAc slices from mice with injection of Gq and Gi viruses were perfused with 10 μM CNO for 7 min. The total recording time for each cell was 10 min. Electrode resistance was ~5–7 MΩ when filled with internal solution consisting of: 130 mM K-Gluconate, 5 mM NaCl, 10 mM HEPES, 0.5 mM EGTA, 2 mM Mg-ATP, and 0.3 mM Na-GTP (pH 7.3, 280 mOsm).
 
-## Chemogenetics
+### Chemogenetics
 
 Three weeks after virus injection, male mandarin voles were cohabited with females. For the D1-mCherry-hM3Dq/hM4Di group (hM3Dq: CNO, n=8; saline, n=7. hM4Di: CNO, n=7; saline, n=6) or the D2-mCherry-hM3Dq/hM4Di group (hM3Dq: CNO, n=7; saline, n=9. hM4Di: CNO, n=9; saline, n=8), male voles were injected with CNO (1 mg/kg, i.p. injection) or saline once per day during the 7 days cohabitation period. On days 3 and 7 of cohabitation, a partner preference test (3 h) was conducted 3 h after CNO injection. For the D1-mCherry group (CNO: n=8; saline: n=7) or the D2-mCherry group (CNO: n=7; saline: n=6), the same test procedure was used.
 
-## Partner preference test
+### Partner preference test
 
 Partner preference formation is a reliable indicator of pair bonding and is characterized by selective contact and mating with partners rather than with strangers. The three-chamber partner preference test was first developed in Dr Sue Carter’s lab and has since been adopted by many other laboratories (Young et al., 2011). The apparatus consists of a three-chamber (60×40 × 20 cm) arena where the middle chamber is connected to two identical chambers. Partner and unfamiliar voles of the opposite sex were placed into the two chambers on opposite sides. Before testing, subjects were adapted to the test arena for 30 min, and partner and opposite sex voles were also habituated for 10 min. During the 3 hr of partner preference test, two stimulus animals were firstly confined to their own chambers; then, the subjects were placed into the middle chamber and allowed to move freely. Real-time side-by-side contact behaviors were videotaped and quantified by smart 3.0. A longer duration of side-by-side contact spent with partners (but not unfamiliar opposite-sex female voles) indicates successful formation of partner preferences. The social preference ratio was calculated as follows: (time spent on partner side - time spent on stranger side) / (time spent on partner side +time spent on stranger side).
 
-## Fluorescence in situ hybridization
+### Fluorescence in situ hybridization
 
 Fluorescence in situ hybridization (FISH) was conducted using RNAscope Multiplex Fluorescent Reagent Kit v2 (Advanced Cell Diagnostics 323100) following the manufacturer’s protocol. Voles were perfused transcardially with 0.1 M PBS (pH 7.4) followed by 4% paraformaldehyde in 0.1 M PBS. Then, brains were collected and postfixed for 24 hr in 4% paraformaldehyde at 4 °C followed by 24 hr in 20% sucrose and 24 hr in 30% sucrose, and were cut into 12 μm (6 series/brain) coronal sections using a cryostat (Leica Biosystems, Germany). Sections were mounted on slides and stored at –80 °C. Probes used in this study were RNAscope Prob-Mo-Ppib (#533491), RNAscope Negative Control Prob-DapB (#310043), RNAscope Probe-Mo-Drd1-C3 (#588161-C3), and RNAscope Probe-Mo-Drd2-C2 (#534471-C2). To verify the specificity and effectiveness of the rAAV-GCaMP6m virus, MSNs (co-labeled by D1R/D2R mRNA and D1-GCaMP6m/D2-GCaMP6m virus) were quantified. ×20 images including the NAc shell were acquired, and boxed areas (300×300 μm2) were selected. Three representative sections were chosen per brain. The NAc D1/D2 mRNA (AF594) positive cells and co-labeled cells were then manually marked and counted using the ‘multi-point’ function of Image J (V1.8.0, National Institutes of Health, USA). The specificity ratio (%) was calculated as follows: (co-labeled cells of D1R or D2R mRNA and D1-GCaMP6m or D2-GCaMP6m) / (D1-GCaMP6m or D2-GCaMP6m positive cells). The effectiveness ratio (%) was calculated as follows: (co-labeled cells of D1R or D2R mRNA and D1-GCaMP6m or D2-GCaMP6m) / (D1R or D2R mRNA positive cells).
 
 To validate D1R-mCherry or D2R-mCherry antibodies, FISH was conducted using the RNA-Protein Co-Detection Ancillary Kit (Advanced Cell Diagnostics 323180) following the manufacturer’s protocol. Briefly, after pretreatment with the RNA-Protein Co-Detection Ancillary Kit, brain slices were incubated in primary antibody (1:300, ab183628, abcam, USA) at 4 °C overnight. Sections were then incubated with secondary antibody (anti-rabbit goat conjugated with Alexa Fluor 488, JacksonImmuno, USA, 111-545-003, 1: 500) after hybridization with amplifiers. Sections were counterstained with DAPI (RNAscope Multiplex Fluorescent Reagent Kit v2, Advanced Cell Diagnostics 323100) for 30 s at room temperature. Glass slides were fixed with antifade solution, and coverslipped images were acquired under an Olympus microscope (OLYMPUS BX-43, OLYMPUS, Japan). To verify the specificity of the rAAV-mCherry virus, the MSNs co-labeled by D1R/D2R mRNA and D1-mCherry/D2-mCherry virus were quantified. ×20 images including the NAc shell were acquired, and boxed areas (300×300 μm2) were selected. Then, the D1-mCherry/D2-mCherry positive cells, NAc D1/D2 mRNA (AF594) positive cells, and co-labeled cells were manually marked. These positive or merged cells were counted using the ‘multi-point’ function of Image J. The numbers from three representative sections per brain were averaged as the value of each brain. The specificity ratio (%) was calculated as follows: (co-labeled cells of D1R or D2R mRNA and D1-mCherry or D2-mCherry positive cells) / (D1-mCherry or D2-mCherry positive cells).
 
-## Statistical analysis
+### Statistical analysis
 
 All data are represented as means ± SEMs. All data were assessed for normality using a one-sample Kolmogorov-Smirnov test, and the Levene’s test was used to confirm homogeneity of variance. Comparisons between two groups were performed either by unpaired or paired t-tests. One-way analyses of variance (ANOVAs), two-way ANOVAs, or two-way repeated-measures ANOVAs were used to compare multiple groups under multiple testing conditions as appropriate. Post-hoc comparisons were conducted using Sidak. Kruskal-Wallis analyses were used to compare data when multiple groups of data did not meet the normality and homogeneity of variance requirements. Statistical procedures were performed using SPSS 20.0. All statistical graphs/charts were plotted via GraphPad Prism 6.0. All experiments and statistical analyses used the double-blind method. Significant levels were set at p<0.05.

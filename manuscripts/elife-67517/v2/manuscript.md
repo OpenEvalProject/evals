@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00g30e956 Department of Cognitive Psychology, Universität Hamburg Hamburg Germany
-2. https://ror.org/052gg0110 Department of Experimental Psychology, and Oxford Centre for Human Brain Activity, Wellcome Centre for Integrative Neuroimaging, Department of Psychiatry, University of Oxford Oxford United Kingdom
+1. Department of Cognitive Psychology, Universität Hamburg Hamburg Germany ([ROR:00g30e956](https://ror.org/00g30e956))
+2. Department of Experimental Psychology, and Oxford Centre for Human Brain Activity, Wellcome Centre for Integrative Neuroimaging, Department of Psychiatry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -47,11 +47,93 @@ In order to adequately assess whether increased responding to devalued actions i
 
 To further address the important question of whether response and outcome representations reflect signatures of distinct control systems, we additionally analysed the correlations between both neural representations. For this purpose, we used Bayesian correlational analyses. Depending on the magnitude of the Bayes factor (reflecting the likelihood ratio of the data under the alternative hypothesis and the data under the null hypothesis), the Bayesian approach can provide evidence in favour of the alternative hypothesis or evidence in favour of the null (Hoijtink, 2012; Kass and Raftery, 1995; Nuzzo, 2017). Thus, we utilized Bayesian analyses to provide clear evidence for or against the null hypothesis. To further assess the association between the behavioural data (i.e. classification accuracy) and the strength of the neural representation (i.e. classification accuracies), we computed Spearman correlations. In order to also analyse previously proposed ‘attentional habits’ (Luque et al., 2017), we analysed event-related potentials (ERPs).
 
-## Successful stress manipulation
+### Successful stress manipulation
 
 Significant subjective and physiological changes in response to the TSST confirmed that stress was successfully induced. Compared to participants in the control group, participants exposed to the TSST experienced the treatment as significantly more stressful, difficult, and unpleasant than those in the control condition (all t56 >5.82, all p<0.001, all d>1.530, and all 95% CI=1.456–2.112; Table 1). At the physiological level, exposure to the TSST elicited significant increases in pulse and systolic and diastolic blood pressure (time point of measurement × group interaction, all F[4, 224]>13.55, all p<0.001, all ƞp²>0.195, and all 95% CI=0.100–0.425; Figure 2). As shown in Figure 2A–C, although both groups had comparable blood pressure and pulse before and after the TSST (all t56 <2.28, all pcorr>0.081, all d<0.600, and all 95% CI=0.069–0.702), participants in the stress group had significantly higher blood pressure and pulse during the experimental manipulation than those in the control group (all t56 >4.21, all pcorr<0.001, all d>1.107, and all 95% CI=0.549–2.098). Finally, salivary cortisol concentrations increased in response to the TSST but not after the control manipulation (time point of measurement × group interaction: F[3, 168]=6.69, p<0.001, ƞp²=0.107, and 95% CI=0.026–0.188). As shown in Figure 2D, participants in the stress and control groups had comparable cortisol concentrations at baseline (t56=1.16, pcorr=1, d=0.304, and 95% CI=−0.216–0.821). However, about 20 min after the treatment, when the reinforcement learning task started, cortisol levels were significantly higher in the stress group than in the control group (t56=2.74, pcorr = 0.032, d=0.720, and 95% CI=0.185–1.249). As expected, cortisol levels returned to the level of the control group by the end of the task (60 min: t56=0.50, pcorr = 1, d=0.130, and 95% CI=−0.386–0.645; 105 min: t56=0.42, pcorr=1, d=0.111, and 95% CI=−0.405–0.625).
 
-## Stress renders behaviour less sensitive to outcome devaluation
+**Table 1.**
+ Subjective responses to the Trier Social Stress Test (TSST) or control manipulation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Control</th>
+      <th colspan="2">Stress</th>
+    </tr>
+    <tr>
+      <th>M</th>
+      <th>SEM</th>
+      <th>M</th>
+      <th>SEM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Subjective assessments</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stressfulness</td>
+      <td>16.79</td>
+      <td>3.45</td>
+      <td>62.33*</td>
+      <td>4.44</td>
+    </tr>
+    <tr>
+      <td>Unpleasantness</td>
+      <td>15.36</td>
+      <td>3.51</td>
+      <td>57.00*</td>
+      <td>5.90</td>
+    </tr>
+    <tr>
+      <td>Difficulty</td>
+      <td>14.29</td>
+      <td>3.35</td>
+      <td>51.33*</td>
+      <td>5.29</td>
+    </tr>
+  </tbody>
+</table>
+
+_Subjective assessments were rated on a scale from 0 (‘not at all’) to 100 (‘very much’). *p<0.001, Bonferroni-corrected, significant group difference._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig2-v2.jpg)
+
+**Figure 2.:** The exposure to the TSST, but not to the control manipulation, resulted in a significant increase in pulse (A), diastolic blood pressure (B), systolic blood pressure (C), and salivary cortisol (D). The grey bars denote the timing and duration of the treatment (TSST vs. control condition) and the respective reinforcement learning task. (E) Proportion of responses for devalued outcomes across the reinforcement learning task during Dev Ohigh blocks. As training proceeded, stressed participants increasingly selected actions that led to a devalued outcome. In addition, stressed participants responded significantly more often to the devalued action than non-stressed controls in the third devaluation block at the end of the task. Individual data points are shown in Figure 3. The data for Dev Olow and NoDev blocks is presented in Figure 3—figure supplement 1 and Figure 3—figure supplement 2, respectively. (F and G) Outcome representation during stimulus presentation and response choice. As training proceeded, the outcome representations decreased in the stress group, while there were no changes in the control group (blocks 1–4 vs. blocks 19–24). At the end of the learning task, outcome representations were significantly lower in stressed participants than in controls. (H) Response representations during stimulus presentation. Stressed participants showed significantly stronger response representations after extended training compared to the control group. Data represents means and error bars represent the SE of the mean. *** p<0.001, ** p<0.01, and * p<0.05, Bonferroni-corrected (group differences, corrected for all time points and blocks, respectively). ### p<0.001, ## p<0.01, Bonferroni-corrected (block differences, corrected for the number of blocks).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mean centroparietal activity for devalued and valued stimuli during Dev Ohigh for control and stressed participants (baseline-corrected). The late component tended to be sensitive to the outcome devaluation in the control group but not in the stress group. The light-coloured background bar refers to the time range showing marginally significant group differences. (B) Mean occipital activity for devalued and valued stimuli during Dev Ohigh for control and stressed participants (baseline-corrected). The stimulus-locked P1 component was insensitive to outcome devaluation in both groups. Data represents means ± SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Mean centroparietal activity for devalued and valued stimuli during Dev Olow for control and stressed participants (baseline-corrected). (B) Mean occipital activity for devalued and valued stimuli during Dev Olow for control and stressed participants (baseline-corrected). Data represents means ± SEM.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Mean centroparietal activity for Shigh and Slow during NoDev for control and stressed participants (baseline-corrected). (B) Mean occipital activity for Shigh and Slow during NoDev for control and stressed participants (baseline-corrected). Data represents means ± SEM.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Searchlight analysis of differences in object vs. scene (A) and blue vs. red symbol (B) processing during the delayed-matching-to-sample (DMS) task (chance performance was 52.85 and 53.90%, respectively), calculated using Wald intervals (Agresti and Caffo, 2000).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig3-v2.jpg)
+
+**Figure 3.:** As training proceeded, stressed participants increasingly selected those actions that led to a devalued outcome (block 2 vs. block 3). In addition, stressed participants responded significantly more often to the devalued action than non-stressed controls in the third devaluation block at the end of the task (stress vs. control). Dots represent mean performance of individual participants. The data for Dev Olow and NoDev blocks is presented in Figure 3—figure supplement 1 and Figure 3—figure supplement 2. * p<0.001, Bonferroni-corrected (stress vs. control). # p<0.001, Bonferroni-corrected (vs. the respective other block).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Violin plots illustrate the proportion of correct responses in Ohigh trials during NoDev blocks after low (block 1), moderate (block 12), and high (block 24) training intensity (upper part). The line graph illustrates the proportion of correct responses in Ohigh trials during NoDev from block 1 to block 24. (B) Violin plots illustrate the proportion of correct responses in Olow trials during NoDev blocks after low (block1), moderate (block 12), and high (block 24) training intensity. The line graph illustrates the proportion of correct responses in Olow trials during NoDev from block 1 to block 24. In both violin, dots represent mean performance of individual participants. In both line graphs, error bars represent the SEM.
+
+### Stress renders behaviour less sensitive to outcome devaluation
 
 Participants’ choice accuracy increased significantly throughout the task (F[2, 114] = 10.08, p<0.001, ƞp²=0.150, and 95% CI=0.042–0.261) and reached an average performance of 99% correct responses in blocks without devaluation (NoDev), indicating that participants learned the task very well. Both groups reached a performance plateau relatively quickly and at about the same time (Figure 3—figure supplement 2). Performance in NoDev blocks did further not differ between the control and stress groups, and the time course of learning was comparable in the two groups (time × group interaction: F[2, 112] = 2.44, p=0.092, ƞp²=0.042, and 95% CI=0–0.123; main effect group: F[1, 56] = 0.30, p=0.585, ƞp²=0.005, and 95% CI=0–0.096), suggesting that stress did not affect instrumental learning as such. Furthermore, during NoDev blocks, participants had a higher response accuracy for Shigh than Slow trials (t57=3.29, p=0.002, d=0.432, and 95% CI=0.161–0.699), suggesting that learning was modulated by the value of the outcome. In the control group, instrumental behaviour did not differ across the different devaluation blocks (F[2, 54] = 1.466, p=0.240, ƞp²=0.052, and 95% CI=0.013–0.049), indicating that the repeated devaluation phases as such did not result in increased sensitivity to the devaluation procedure.
 
@@ -67,7 +149,7 @@ Mean reaction times were significantly faster for high-valued stimuli than for l
 
 Although our analyses of the neural data focussed mainly on the decoding of outcome and response representations, there is recent evidence suggesting that habitual and goal-directed processes might also be reflected in ERPs (Luque et al., 2017). The extent to which a reward related ERP is sensitive to an outcome devaluation is assumed to indicate the degree of habitual or goal-directed processing. Thus, we additionally analysed stress effects on related ERPs depending on outcome devaluation. Our data shows that the occipital stimulus-locked P1 component was insensitive to outcome devaluation (outcome devaluation × stimulus value interaction: F[2, 102]=0.63, p=0.536, ƞp²=0.012, and 95% CI=0–0.069; Figure 2—figure supplements 1–3), which might suggest the formation of an ‘attentional habit’ (Luque et al., 2017). However, the P1 was not modulated by reward value (F[1, 51] = 0.25, p=0.619, ƞp²=0.005, and 95% CI=0.002–0.009), which makes the interpretation of the insensitivity to the outcome devaluation difficult. The P1 component was also not modulated by stress (stimulus value × group: F[1, 51] = 0.13, p=0.723, ƞp²=0.002, and 95% CI=0–0.086; outcome devaluation × stimulus value × group: F[2, 102] = 0.11, p=0.900, ƞp²=0.002, and 95% CI=0–0.028). Moreover, we identified a late component that showed a non-significant trend towards sensitivity to the outcome devaluation during Dev Ohigh blocks in control participants (devalued vs. valued: t24=1.91, p=0.068, d=0.382, and 95% CI=−0.028–0.785) but not in stressed participants (devalued vs. valued: t27=1.57, p=0.127, d=0.297, and 95% CI=−0.084–0.673; outcome devaluation × stimulus value × group interaction: F[2, 102] = 5.20, pcorr=0.042, ƞp²=0.093, and 95% CI=0.008–0.199; stimulus value × group interaction: F[1, 51] = 6.05, p=0.017, ƞp²=0.106, and 95% CI=0.003–0.273; no such effect in NoDev and Dev Olow blocks: stimulus value × group interaction: both F[1, 51] < 1.44, both p>0.236, both ƞp²<0.027, and both 95% CI=0–0.159). This pattern of results suggests that stress interferes with a late ERP component that has been linked to goal-directed processing as it was particularly sensitive to the value of an outcome. However, similar to the behavioural response to a devalued action, the stress-induced decrease in the ‘outcome-sensitive’ ERP component leaves the question open as to whether this stress effect is due to changes in outcome or response processing.
 
-## Stress reduces outcome representations at the end of training
+### Stress reduces outcome representations at the end of training
 
 Thus far, our behavioural data showed that stress rendered behaviour less sensitive to a change in outcome value, which can be interpreted as decreased goal-directed or increased habitual behaviour. In addition, stress reduced electrophysiological late latency potentials that appeared to be sensitive to the value of an outcome (Luque et al., 2017).
 
@@ -77,17 +159,17 @@ We first analysed outcome representations during the presentation of the fractal
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67517/elife-67517-fig4-v2.jpg)
 
-**Figure 4.:** high blocks.(A) Decrease of outcome representation during stimulus presentation was significantly correlated with the reduced behavioural sensitivity to the outcome devaluation during Dev Ohigh blocks. (B) Increase in response representation was significantly correlated with an increase in response for devalued outcomes during Dev Ohigh blocks. Higher difference scores indicate higher decreases in outcome and response representation over time. Regression lines are added for visualization purpose, and the light-coloured background areas indicate its 95% CI.
+**Figure 4.:** (A) Decrease of outcome representation during stimulus presentation was significantly correlated with the reduced behavioural sensitivity to the outcome devaluation during Dev Ohigh blocks. (B) Increase in response representation was significantly correlated with an increase in response for devalued outcomes during Dev Ohigh blocks. Higher difference scores indicate higher decreases in outcome and response representation over time. Regression lines are added for visualization purpose, and the light-coloured background areas indicate its 95% CI.
 
 Analysing the outcome representations at the time of choice between the two aliens revealed a very similar pattern; at the end of the task, participants in the stress group showed a decreased outcome representation at the time point of the choice (t22=2.94, pcorr=0.016, d=0.613, and 95% CI=0.161–1.054), whereas there was no such effect in the control group (t17=0.59, pcorr=1, d=0.138, and 95% CI=−0.328–0.600). In addition, stressed participants had reduced outcome representations relative to controls, reflected in a significantly reduced classification accuracy, during the response choice at the end of the reinforcement learning task (block × group interaction: F[3, 117] = 2.99, p=0.034, ƞp²=0.071, and 95% CI=0–0.156; stress vs. control, high training intensity: t39=2.75, pcorr=0.036, d=0.865, and 95% CI=0.214–1.506; lower training intensities: all t39<2.30, all pcorr>0.108, all d<0.725, and all 95% CI=−0.500–1.358; Figure 2G). Together, these results show that at the end of training, acute stress reduced the representation of action outcomes that are considered to be a hallmark of goal-directed control.
 
-## Stress boosts response representations at the end of training
+### Stress boosts response representations at the end of training
 
 While it is assumed that the outcome representation that is crucial for goal-directed S-R-O learning is reduced with increasing habitual behaviour control, response (R) representations at the time of stimulus (S) presentation may be involved in both goal-directed S-R-O and habitual S-R processing. Therefore, we trained another classifier to discriminate between categories that were used as response options during the reinforcement learning task (red vs. blue alien). This classifier was used to examine changes in response representation during the stimulus presentation (S) throughout the reinforcement learning task. For these response representations, a block × group ANOVA revealed a significant interaction effect (F[3, 147] = 5.82, p<0.001, ƞp²=0.106, and 95% CI=0.021–0.192). As shown in Figure 2H, participants in the stress group showed a stronger response representation that was reflected in higher classification accuracy for the response categories with increasing training intensity (first half vs. last half: t25=2.51, pcorr=0.038, d=0.491, and 95% CI=0.079–0.894), whereas there was even a decrease in the control group (first half vs. last half: t24=3.50, pcorr=0.004, d=0.701, and 95% CI=0.256–1.134). In the last six blocks of the reinforcement learning task, stressed participants had significantly higher response representations than participants in the control group (t49=2.75, pcorr=0.032, d=0.770, and 95% CI=0.197–1.336; lower training intensities: all t49<1.92, all pcorr>0.244, all d<0.537, and all 95% CI=0.025–1.094). Interestingly, this increase in response representations was significantly correlated with an increase in responses for devalued outcomes during Dev Ohigh blocks (Spearman’s ρ=0.320, 95% CI=0.049–0.547, and p=0.022; Figure 4). Thus, our MVPA results indicate that stress leads to an increased response representation at the time of stimulus presentation.
 
 Importantly, when we grouped the classification data not in four blocks consisting of 144 trials in total (averaged over six successive blocks containing 24 reinforcement learning trials each) but in 2, 3, 6, or 12 blocks, the pattern of results for the neural outcome and response representations was largely comparable (Supplementary file 1A).
 
-## Outcome and response representations are uncorrelated
+### Outcome and response representations are uncorrelated
 
 To test whether the observed opposing changes in outcome and response representations after stress reflected independent or linked neural representations, we analysed Bayesian correlation between the classification accuracies in order to explicitly test the evidence in favour of the null and alternative hypothesis, respectively. These analyses revealed moderate evidence for the null hypothesis that outcome representations, both at stimulus presentation and response selection, were uncorrelated with response representation at choice time (both Pearson’s |r|<0.165, both 95% CI=0.154–0.442, and both BF01 >3.092; Figure 5), suggesting that outcome representations and response representations may be independent of each other.
 
@@ -95,7 +177,7 @@ To test whether the observed opposing changes in outcome and response representa
 
 **Figure 5.:** (A) Outcome representation during stimulus presentation was not correlated with response representation during response selection. As visualized in the pie chart, the corresponding Bayes factor suggests that the observed data are 3.092 times more likely under the null hypothesis (H0) than under the alternative hypothesis (H1). (B) Outcome representation during response selection was not correlated with response representation during stimulus presentation. As visualized in the pie chart, the corresponding Bayes factor suggests that the observed data are 4.642 times more likely under the H0 than under the H1. Higher difference scores indicate larger decreases in outcome and response representation, respectively, over time. Regression lines are added for visualization purpose, and the light-coloured background areas indicate its 95% CI.
 
-## Control variables and performance in the DMS task
+### Control variables and performance in the DMS task
 
 At the beginning of the experiment, stress and control groups did not differ in subjective mood (all t56<1.20, all p>0.235, all d<0.316, and all 95% CI=−0.326–0.833), subjective chronic stress (all t54<1.07, all p>0.290, all d<0.285, and all 95% CI=−0.677–0.811), depressive mood (t56=1.07, p=0.289, d=0.281, and 95% CI=−0.238–0.797), state, or trait anxiety (both t56<0.44, all p>0.663, both d<0.115, and both 95% CI=0.401–0.630; Supplementary file 1C). Behavioural performance in the DMS task, used to train the classifier, was, as expected, very high (average performance: 97.5% correct, SD = 0.054) and comparable between groups (t56=0.23, p=0.818, d=0.061, and 95% CI=−0.455–0.576). The average classification accuracy of the classifier was 72% (SD = 0.068) for the response categories (blue rectangular vs. red oval symbol) and 66% (SD = 0.046) for the outcome categories (object vs. scene image) and did not differ between the stress and control groups (both t51<0.89, both p>0.376, both d<0.246, and both 95% CI=−0.669–0.786).
 
@@ -131,17 +213,17 @@ Goal-directed action and habits are commonly considered to be two sides of the s
 
 ## Materials and methods
 
-## Participants and design
+### Participants and design
 
 Sixty-two healthy volunteers participated in this experiment. This sample size was based on earlier studies on stress and mnemonic control in our lab (Schwabe and Wolf, 2012) and a priori power calculation using G*POWER 3 suggesting that this sample size would be sufficient to reveal a medium-sized effect in a mixed-design ANOVA with a power of 0.80. Exclusion criteria were checked in a standardized interview before participation and identified any current or chronic mental or physical disorders, medication intake, or drug abuse. Furthermore, smokers and women taking hormonal contraceptives were excluded from participation because previous studies revealed that smoking and hormonal contraceptive intake may alter the cortisol response to stress. In addition, participants were asked to refrain from food intake, caffeine, and physical activity for 2 hr before testing. Four participants had to be excluded from analysis due to medication intake shortly before participation - leaving a final sample of 58 participants (32 men, 26 women; age: M=29.53 years, SEM = 2.57 years). Participants received a monetary compensation of 30 € for participation, plus a performance-dependent compensation (2–5 €). All participants gave written informed consent before entering the study, which was approved by the local ethics committee. In a between-subjects design, participants were randomly assigned to the stress (15 men and 15 women) or control group (17 men and 11 women).
 
-## Stress and control manipulation
+### Stress and control manipulation
 
 Participants in the stress condition underwent the TSST (Kirschbaum et al., 1993), a standardized stress protocol known to reliably elicit both subjective and physiological stress responses (Allen et al., 2014; Kirschbaum et al., 1993). Briefly, the TSST consisted of a mock job interview during which participants were asked to give a 5 min free speech about why they are the ideal candidate for a job tailored to their interests and a 5 min mental arithmetic task (counting backwards in steps of 17 from 2043 as fast and accurate as possible; upon a mistake they had to stop and start again from 2023). Both the free speech and the mental arithmetic task were performed in front of a cold and non-reinforcing panel of two experimenters (1 man and 1 woman) who were dressed in white coats and introduced as experts in ‘behavioural analysis’. Furthermore, participants were videotaped throughout the TSST and could see themselves on a large screen placed next to the panel. In the control condition, participants gave a 5 min speech about a topic of their choice (e.g. their last holiday) and performed a simple mental arithmetic task (counting in steps of two) for 5 min while being alone in the experimental room - no video recordings were taken. During the control condition, the experimenter waited in front of the door outside the room where he/she was able to hear whether the participants had complied with the instructions.
 
 To assess the effectiveness of the stress manipulation, subjective and physiological measurements were taken at several time points across the experiment. More specifically, participants rated the stressfulness, difficulty, and unpleasantness of the previous experience immediately after the TSST or control manipulation on a scale from 0 (‘not at all’) to 100 (‘very much’). In addition, blood pressure and pulse were measured using an OMRON M400 device (OMRON, Inc, MI) before, during, and immediately after the TSST/control manipulation as well as 20, 60, and 105 min after the TSST/control manipulation. To quantify cortisol concentrations and elevations during the experiment, saliva samples were collected from participants using Salivette collection devices (Sarstedt, Germany) before, during, as well as 20, 60, and 105 min after the TSST/control manipulation. Saliva samples were stored at –20°C until the end of testing. At the end of data collection, we determined the free fraction of cortisol from the saliva samples using a commercially available luminescence assay (IBL, Germany).
 
-## Reinforcement learning task
+### Reinforcement learning task
 
 In order to investigate goal-directed and habitual contributions to behaviour, we used a modification of a recently introduced reinforcement learning task (Luque et al., 2017). In this reinforcement learning task, participants played the role of space traders on a mission to trade fractal stimuli (either a pink or a green fractal) for playing cards (either scene or object playing cards) with aliens from two tribes (‘red alien tribe’ and a ‘blue alien tribe’). Each tribe traded only one type of playing card (i.e. either scene or object playing cards). One type of card (the high-value outcome, Ohigh, worth 100 points) was more valuable than the other one (the low-value outcome, Olow, worth 20 points). In addition, one tribe of aliens exchanged a playing card only for a specific fractal (e.g. the red alien tribe only traded scene playing cards and only for a pink fractal but not for a green fractal). If a fractal was given to the alien tribe, the exchange was rejected by the alien (e.g. if the participant wanted to trade the green fractal with the red alien). In that case, participants did not receive a playing card and hence did not gain any points. Importantly, participants had to pay 5 points for every successful exchange (response costs). If a playing card was given to the incorrect alien and the exchange was denied, there were no response costs. Participants were encouraged to earn as many points as possible. At the end of the experiment, participants received a monetary reward dependent on the number of points earned throughout the reinforcement task.
 
@@ -159,49 +241,49 @@ At the end of each block, participants saw how many cards they had gained in the
 
 Performance during the devalued trials revealed the degree to which instrumental behaviour was goal-directed or habitual. Goal-directed action is indicated by the formation of S-R-O associations. Thus, if participants used a goal-directed system, they should adapt their responses to the actual outcome value following outcome devaluation. During devalued trials, participants did not earn any points if they chose the response associated with the devalued outcome. Importantly, however, they had to pay response costs leading to a subtraction of points. Thus, goal-directed participants should choose the response option associated with a trade rejection. Under such circumstances, participants did not have to pay any response costs (Figure 1). In contrast, habitual behaviour is reflected in simpler S-R associations rendering instrumental behaviour insensitive to changes in outcome value. Hence, choosing the action associated with the devalued outcome (where no points could be earned and response costs had to be paid) indicated less goal-directed and more habitual behaviour.
 
-## DMS task
+### DMS task
 
 In order to analyse the neural representations of response options and action outcomes, we trained an EEG-based classifier (see below) on a DMS task. This task was presented before and after participants had completed the reinforcement learning task in order to avoid any time-dependent biases in the trained classifier. In each DMS task, participants completed 128 trials. Participants were presented four different target types: object cards, scene cards, blue, and red symbols. In addition to colour, symbols also differed in shape, line orientation, and line position (blue rectangles with left-oriented lines in the upper area vs. red ovals with right-oriented lines in the lower area). Pictures used as targets were selected randomly from a pool of 256 pictures (90×object cards, 90×scene cards, 48×blue symbols, and 48×red symbols) with the restriction that successive trials did not belong to the same category more than three consecutive times. The remaining pictures were used as targets during the second DMS task. On each trial, the target was shown for 2 s on the centre of a computer screen. Participants were asked to hold it in mind during a subsequent delay phase of 2 s during which they saw a blank screen. Then, a probe stimulus was presented (the target and a distractor belonging to the same category), and the participants had to indicate via button press which picture they saw before. The position of the target during the response choice (right vs. left) was randomized. Different stimuli were used in the second DMS task compared to the first one.
 
-## Eye-tracking
+### Eye-tracking
 
 We used a desktop mounted eye-tracker (EyeLink 1000; SR-Research Ltd., Mississauga, Ontario, Canada) to record monocular eye movements from the left eye at a sampling rate of 500 Hz. We used custom scripts implemented in MATLAB (The Mathworks, Natick, MA) to extract the mean saccades and blink information depending on the stimulus value, outcome devaluation, and time (0–2000 ms around the stimulus onset). Data for two participants was missing due to failed use of the eye-tracker.
 
-## Control variables
+### Control variables
 
 In order to control for potential group differences in depressive mood, chronic stress, and anxiety, participants completed the Beck Depression Inventory (Beck et al., 1996), the Trier Inventory for the Assessment of Chronic Stress (Schulz and Schlotz, 1999), and State-Trait Anxiety Inventory (Spielberger, 1983) at the end of the experiment. In addition, participants completed a German mood questionnaire (MDBF; Steyer et al., 1994) that measures subjective feeling on three dimensions (elevated vs. depressed mood, wakefulness vs. sleepiness, and calmness vs. restlessness) at the beginning of the experiment.
 
-## Procedure
+### Procedure
 
 All testing took place in the afternoon and early evening between 1 pm and 8 pm. Participants were instructed to refrain from excessive exercise and food or caffeine intake for the 2 hr before testing. After participants’ arrival at the laboratory, EEG was prepared, blood pressure measurements were taken, and a first saliva sample was collected. Participants also completed the mood scale (Steyer et al., 1994). Then, participants performed the first DMS task. After completing this task, participants received written instructions about the reinforcement learning task. In order to further familiarize participants with the structure of this task, participants completed a 5 min short tutorial afterwards. Next, participants underwent either the TSST or the control manipulation. Immediately thereafter, subjective assessments of this manipulation and another saliva sample were collected, and blood pressure was measured once again. Next, participants were briefly reminded of the instructions for the reinforcement learning task they had received before. Twenty minutes after the TSST/control manipulation, when cortisol was expected to have reached peak levels (Kirschbaum et al., 1993), participants collected another saliva sample before the reinforcement learning task commenced. After the 15th block of the reinforcement task and after finishing the task, further saliva samples were collected, and blood pressure was measured again (~60 min and ~105 min after stress onset). Finally, participants performed the second DMS task.
 
-## Statistical analysis
+### Statistical analysis
 
 Subjective and physiological stress responses were analysed by mixed-design ANOVAs with the within-subject factor time point of measurement and the between-subjects factor group (stress vs. control). Participants’ responses in the reinforcement learning task were subjected to mixed-design ANOVAs with the within-subject factor; stimulus type (Shigh and Slow), outcome devaluation (NoDev: 1st, 12th, and 28th block; Dev Ohigh: 2nd, 16th, and 29th block; Dev Olow: 3rd, 17th, and 30th block), time point (1st, 2nd, and 3rd), and the between-subject factor group. Significant interaction effects were followed by appropriate post hoc tests. All reported p values are two-tailed and were Bonferroni corrected (pcorr) when indicated. Statistical analyses were calculated using SPSS 25 (IBM SPSS Statistics) and JASP version 0.13.0.0 software (https://jasp-stats.org/).
 
 For one participant, we obtained only invalid trials during the last Dev Olow block. Thus, this participant could not be included in analyses of Dev Olow. Furthermore, two participants did not complete the Trier Inventory for the Assessment of Chronic Stress (Schulz and Schlotz, 1999). Data of 5 participants had to be excluded from the EEG analysis because of technical failure during the EEG, leaving a sample of 53 participants (control: n=25; stress: n=28) for EEG analyses.
 
-## EEG recordings
+### EEG recordings
 
 During the DMS and reinforcement learning task, participants were seated approximately 80 cm from the computer screen in an electrically shielded and sound proof cabin. EEG was recorded using a 128-channel BioSemi ActiveTwo system (BioSemi, Amsterdam, The Netherlands) organized according to the 10–5 system digitized at 2024 Hz. Additional electrodes were placed at the left and right mastoids, approximately 1 cm above and below the orbital ridge of each eye and at the outer canthi of the eyes. The EEG data was online referenced to the BioSemi CMS-DRL (common mode sense-driven right leg) reference. Electrode impedances were kept below 30 kΩ. EEG was ampliﬁed with a low cut-off frequency of 0.53 Hz (=0.3 s time constant).
 
-## EEG analysis
+### EEG analysis
 
-## Preprocessing
+#### Preprocessing
 
 Preprocessing was performed ofﬂine using FieldTrip (Oostenveld et al., 2011) and EEGLAB (Delorme and Makeig, 2004) as well as custom scripts implemented and processed in MATLAB (The Mathworks, Natick, MA). The PREP pipeline procedure (Bigdely-Shamlo et al., 2015) was utilized to transform the channel EEG data using a robust average reference. In addition, bad channels were interpolated using the spherical option of EEGLAB eeg_interp function. Then, data was filtered with a high pass filter of 0.1 Hz and a low pass filter of 100 Hz and downsampled to 250 Hz. For MVPA, epochs from the DMS task (2000 ms relative to the delay onset) and from the reinforcement learning task (2000 ms relative to the onset of stimulus and response option presentation) were extracted. For ERP analysis, EEG data was segmented into epochs from –200 to 2000 ms around the stimulus onset and baseline-corrected by subtracting the average 200 ms prestimulus interval. In addition, blinks and eye movements were corrected by independent component analysis (infomax ICA, Noh et al., 2014). Using the automated procedure ADJUST (Mognon et al., 2011), ocular artefact-related components in EEG recordings were identified and subsequently removed. The ADJUST algorithm combines stereotypical artefact-specific spatial and temporal features to detect and differentiate artefact ICA components (Chaumon et al., 2015). For example, ADJUST computes the kurtosis of the event-related time course for frontal channels, since, for example, eye blinks are accompanied by abrupt amplitude jumps in frontal regions areas (stereotypical artefact-specific temporal feature). Additionally, ADJUST determines the spatial topography of the IC weights to compare the magnitude of the amplitudes between frontal and posterior areas (stereotypical artefact-specific spatial feature). Using the ADJUST procedure, on average 1.65 (SEM = 0.13) components per participant were detected and removed. Previous data shows that the automatic detection of artefact components using ADJUST leads to a comparable classification of artefact components that are afforded by manual classification by experiments (Mognon et al., 2011).
 
-## ERP analysis
+#### ERP analysis
 
 Based on previous studies (Hickey et al., 2010; MacLean and Giesbrecht, 2015), we expected to find an effect of stimulus value (i.e. the difference between activity elicited by Shigh and Slow) in the occipital P1 component peaking within the time window from 75 to 200 ms relative to stimulus onset. Because all stimuli were presented centrally, P1 activity was analysed in the midline occipital electrode Oz. The P1 peak was defined as the largest positive peak between 75 and 200 ms after the stimulus onset at Oz (averaging across all conditions). In line with previous research, a time window of 70 ms around that peak was then selected for analysis (Luque et al., 2017). Because the P1 maximum amplitude was at 115 ms from stimulus onset across participants, the P1 magnitude for each condition was defined as the mean EEG signal across the 80–150 ms time window.
 
 Based on previous research on the neural underpinnings of goal-directed action (Luque et al., 2017), we further assessed the effects of stress on brain activity over centroparietal regions at a later time window. To this end, ERP data from 400 to 700 ms was subdivided into six consecutive, non-overlapping time bins - with a duration of 50 ms each. The later ERP data were analysed using mixed-design ANOVAs with the within-subject factors; outcome devaluation (NoDev, Dev Ohigh, and Dev Olow) and stimulus value (Shigh and Slow) and the between-subject factor group. Significant outcome devaluation × stimulus value × group interaction effects were appropriately corrected for multiple comparisons.
 
-## MVPA training
+#### MVPA training
 
 The multivariate decoding analyses were implemented using the MVPA-Light toolbox (Treder, 2020). The classifier was trained within-subject, using a linear SVM on the preprocessed data of the DMS task (delay phase). All EEG channels were used as features. To improve the signal to noise ratio for MVPA, trials were averaged to pseudo trials (Isik et al., 2014). Each pseudo trial was an average of two trials. We performed two separate analyses corresponding to the following classes: object vs. scene (SVMobject/scene) and blue symbol vs. red symbol (SVMblue/red). To identify the optimal time window for decoding per participant, we implemented a sliding window averaging 100 ms with a step size of 10 ms. The SVMobject/scene and SVMblue/red with the highest performance were used to decode the neural outcome and response representation. Generalization of the classifier was evaluated using a leave-one-out procedure. If the classiﬁer’s performance remains signiﬁcantly above chance, it indicates that the EEG patterns contain class-speciﬁc information and that the class can be reliably decoded from the EEG data (Murphy et al., 2011). The chance level in a simple two-class paradigm is not exactly 50% but 50% with a CI at a certain alpha level. Therefore, we calculated this interval utilizing the Wald interval with adjustments for a small sample size (Agresti and Caffo, 2000; Müller-Putz et al., 2008). The threshold for chance performance was 63.59% for the classification of blue vs. red symbols and 60.11% for object vs. scene images. Participants with classification accuracy below chance in the DMS task were not included in subsequent analyses. During the classification of blue vs. red symbols, the highest performance of two participants did not exceed the threshold for chance performance. During the classification of blue vs. red scenes, classification accuracy of 13 participants was not significant. Hence, the sample for analysis of the outcome representation (based on SVMobject/scene) and response representation (based on SVMred/blue) reported in the main text was 41 (control: n=18; stress: n=23) and 51 (control: n=25; stress: n=26) participants. Importantly, we computed all analyses again including all participants regardless of significant classification scores. This additional analysis left our findings largely unchanged (Supplementary file 1B). Furthermore, the classification accuracy of the first and the second DMS task did not differ (blue/red symbol classification: F[1, 51] = 0.66, p=0.798, ƞp²=0.013, and 95% CI=0–0.127; DMS session × group interaction: F[1, 51] = 0.03, p=0.863, ƞp²=0.001, and 95% CI=0–0.024; object/scene classification: F[1, 51] = 2.87, p=0.096, ƞp²=0.053, and 95% CI=0–0.203; DMS session × group: F[1, 51] = 0.03, p=0.860, ƞp²=0.006, and 95% CI=0.003–0.011). Thus, we pooled the data from both DMS task sessions and trained an overall classifier to ensure that the classifier was not affected by any time-related biases, and that there is a sufficient number of trials to train a reliable classifier.
 
-## MVPA decoding
+#### MVPA decoding
 
 The SVMobject/scene and SVMblue/red trained on the independent DMS dataset were used to assess the respective outcome (object card vs. scene card) and response representation (blue alien vs. red alien) in the trial-by-trial reinforcement learning task during the NoDev blocks. Both classifiers were applied to the respective test data (with an epoch size of 2000 ms relative to stimulus onset) using an overlapping sliding window, with a time average of 100 ms and a step size of 10 ms. The maximum classification accuracy indicated the strength of outcome and response representation.
 
@@ -209,6 +291,6 @@ Goal-directed behaviour is characterized by an action-outcome (S-R-O) associatio
 
 Maximal accuracy values were then averaged over six blocks to get a reliable indicator of classification accuracy. Statistical analyses of the EEG decoding data were performed at the group level averaging across individual decoding accuracies. Decoding accuracies were analysed using mixed-design ANOVAs with the within-subject factor block (1–6, 7–12, 13–18, and 19–24 blocks) and the between-subject factor group. In addition, we computed Spearman correlations between ∆ classification scores (averaged classification accuracy during the first six blocks minus the classification accuracy during the last six blocks) and ∆ responses for devalued outcomes for Dev Ohigh blocks (responses for devalued outcomes during the 1st devaluation block, i.e. the 2nd overall block, minus responses for devalued outcomes during the last devaluation block, i.e. the 29th overall block). Bayesian correlation analyses were conducted using JASP version 0.13 software (https://jasp-stats.org/) and the default Cauchy prior 0.707.
 
-## Searchlight approach
+#### Searchlight approach
 
 To provide more insight into which electrophysiological information contributed most to differentiating between the respective categories (red vs. blue and objects vs. scenes, respectively), we also performed searchlight analyses. These allowed us to determine those topographic features that discriminated most between the two sets of categories. We first pooled the segmented ERP data (0–2 s relative to stimulus onset) from all participants. Then, we averaged the time range of ±100 ms relative to the respective maximum decodability. For each searchlight analysis, a cluster was constituted by a centre electrode and all neighbouring electrodes within a radius of 4 cm. The average cluster size was 10.61 electrodes (SEM = 0.31). We used an SVM as classifier and calculated the Wald interval with adjustments for a small sample size to evaluate the accuracy values (Agresti and Caffo, 2000; Müller-Putz et al., 2008).

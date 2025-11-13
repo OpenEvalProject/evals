@@ -16,4 +16,4 @@
 
 ## Abstract
 
-An enzyme produced by a bacteriophage can enter human cells and kill intracellular Streptococcus pyogenes .
+An enzyme produced by a bacteriophage can enter human cells and kill intracellular Streptococcus pyogenes.

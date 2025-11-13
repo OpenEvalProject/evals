@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05cf8a891 Departments of Neuroscience, Psychiatry, and Medicine, Albert Einstein College of Medicine New York City United States
+1. Departments of Neuroscience, Psychiatry, and Medicine, Albert Einstein College of Medicine New York City United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
 
 † Corresponding author
 
@@ -22,7 +22,7 @@ We believe this is primarily due to two factors that tenure letter writers can i
 
 Here we put forth a set of recommendations for writing inclusive, anti-racist, tenure letters that allow letter-writers to counteract these two factors by adopting an expansive view of how scholars contribute to academia, and by promoting the academic culture we all want to support. Throughout, we will refer specifically to Black faculty, as we are writing from a US-centric vantage point on academia, where anti-Black racism imposes myriad, interacting harms on Black scholars (Bell et al., 2021). However, the issues we discuss and recommendations we make apply to indigenous scholars, scholars of Color, LGBTQ+ scholars, scholars with disabilities, first-generation scholars, scholars from low-income backgrounds, and, in most academic fields, also women. We emphasize that our recommendations by no means ‘lower the bar’ of tenure standards in academia. To the contrary, recognizing the full ways that historically excluded scholars excel and help create an excellent academic culture can help raise the standards across academia.
 
-## Academia and ‘white supremacy culture’
+### Academia and ‘white supremacy culture’
 
 The academic profession was developed to have strict boundaries about who is allowed to be a part of the profession and what work is valued. Certain values and qualities (such as objectivity, linearity, generalizability, and detachment) have long been the standard for evaluating academic rigor and granting membership into this highly selective profession (Gonzales, 2018). Thus, Black scholars engaging in community-focused research and racial justice work are often evaluated negatively because their work is viewed as not being objective and their advocacy is viewed as problematic (Gonzales, 2018). Indeed, Black scholars are overrepresented in topics related to racial discrimination and African studies, but often cited less than scholars from other groups (Kozlowski et al., 2022). Therefore, in evaluation processes, like tenure and promotion, their research is often undervalued by evaluators embedded in what Dr. Tema Okun describes as ‘white supremacy culture’ (Okun, 1999; Okun, 2021).
 
@@ -30,7 +30,7 @@ According to Okun, “White supremacy culture is the widespread ideology baked i
 
 These values are not a necessity in academia. Most of us, having been trained in this culture for years, may not even recognize these invisible but ever-present ‘rules of the game’ despite the fact that these rules limit creativity and inclusion. Naming these values as ones we have adopted makes clear that they are not axioms of academic culture. There are alternatives. Those of us committed to disrupting this implicit and harmful culture have a right and obligation to actively promote an academic community that recognizes and benefits from the expertise of all people who participate in academia. One way to accomplish this on an individual level is to reconsider how we write letters of assessment, including tenure and promotion letters, so that they embody the cultural shift we'd like to see.
 
-## What are anti-racist tenure and promotion letters?
+### What are anti-racist tenure and promotion letters?
 
 Anti-racist tenure and promotion letters provide an avenue of intervention and advocacy to challenge the exclusionary and harmful aspects of academia. In evaluating scholarship that does not necessarily conform to ‘white supremacy culture’ values, we must recognize that our personal biases influence both our scientific practice and our tendency to uphold these values of scientific pursuit. If we are to move beyond these exclusionary practices, we must recognize these biases in all of our academic practices and value other knowledge systems beyond that of the ‘traditional’ epistemology of science.
 
@@ -56,7 +56,7 @@ Itchuaqiyaq and Walton, 2021 rightly point out that the “act of being called t
 
 The list of recommendations incorporates feedback and reflects substantial contributions from other attendees and leaders of the 2021 Academics for Black Survival and Wellness training and from a diverse group of scholars in our professional networks. We emphasize that these recommendations for critical awareness and intentionality are important even when requested only to evaluate a candidate’s scholarship, and are especially important the more marginalized intersecting identities the candidate holds.
 
-## Before writing the letter
+### Before writing the letter
 
 First, we encourage you to reflect on your various identities and background, including gender, race, class, sexual orientation, able-bodiedness, culture, ethnicity, religion and nationality. Reflect on both your privileged and marginalized statuses, and use this reflection both to set clear intentions for your letter and to gain a more holistic view on how your identities may impact your letter and your ability to evaluate different aspects of the candidate’s dossier. If you are a white scholar writing a letter for a Black scholar, consider your own racial identity development (see Helms, 2020) and engage with scaffolded anti-racist resources as needed (Stamborski et al., 2020). In what ways does your identity align with the letter readers? In what way does your identity align with the subject of your letter? Why were you asked to write the letter? Clarify your positionality for yourself – what lens do you bring to this evaluation and how do your own identities and backgrounds shape your evaluative process? (See also: Itchuaqiyaq and Walton, 2021; Clemons, 2019; UCLA Library, 2021a; UCLA Library, 2021b; Taylor Institute, 2022; Derry, 2017; Darwin Holmes, 2020 Lacy, 2017).
 
@@ -68,7 +68,7 @@ Second, in order to gather relevant information and to encourage reflection on t
 
 As a final preparatory step (Figure 1 top, box 3), research the candidate’s CV, professional website, and public-facing social media to learn more about their influential work inside and outside of academia (e.g., DEI work, collaborative work, leadership). Consider the multiple ways that a research area has been impacted by the presence and contributions of the scholar and how to communicate the importance of work that is not traditionally valued by academia. It may be helpful to familiarize yourself with the embedded values of academia, through reading Okun, 2021 or the work of Dr. Leslie Gonzales (e.g., Gonzales and Waugaman, 2016; Gonzales and Núñez, 2014), in order to recognize the limitations of traditional scholarship as the only currency of contribution to academia. This critical awareness will enable you to write a letter that speaks to those values while challenging tenure and promotion committees to expand their review beyond those values. It may be useful to follow discussions and groups on social media that are outside your immediate community, especially those that include scholars with identities other than your own. This can help to expand your understanding of what is valuable in academia and the hurdles Black scholars may face, and provide you with ideas on how to communicate this new knowledge to others.
 
-## When writing the letter
+### When writing the letter
 
 Like we did in this paper, we suggest you include a positionality statement (see Clemons, 2019; UCLA Library, 2021a; UCLA Library, 2021b; Taylor Institute, 2022; Derry, 2017; Darwin Holmes, 2020; Lacy, 2017) or other description of your own backgrounds and experiences and how they shape how you are evaluating the candidate (Figure 1 middle, box 1). It is typical to include a description of one’s academic credentials, but we suggest you also be explicit in sharing the values you hold, as well as other identity factors that may influence your evaluation. Throughout, we recommend you use “I” statements that clarify the subjectivity of your assessments. While all assessment is subjective, an ‘objective’ meritocracy is a tantalizing illusion that is pervasive in academia.
 
@@ -88,7 +88,7 @@ We recommend you avoid (and ignore requests for) reductive comparisons to an arb
 
 Finally, check-in with yourself about your goals in taking an anti-racist approach to letter-writing, and ensure that you reflected them well in your letter (Figure 1 middle, box 8). This approach is not about diluting the quality of tenured faculty or lowering the bar for promotion, but rather critiquing the devaluation of many types of scholarly contributions and recognizing the importance of such work both to the scholar’s institution and to their field of study.
 
-## After writing the letter
+### After writing the letter
 
 You can still do more. First, now that you are familiar with the work of this scholar in your field, make sure to cite them in your own work wherever appropriate (Figure 1 bottom, box 1). Racial disparities in whose work is cited persist across a variety of disciplines (Ray, 2018; Shirani, 2021). As you might do for junior scholars you already know well, you can also reach out to the candidate to convey your appreciation of their scholarly work and offer specific support or mentorship, such as inviting them to give a talk at your department (Figure 1 bottom, box 2). Do be attentive and respect their preferences if they decline your offer. If the junior scholar holds a marginalized identity and does take you up on the offer, educate yourself on how to mentor them in a way that supports and respects their goals and values rather than suggest they adopt yours (a great starting point is Fryberg and Gerken, 2012; Fryberg and Martínez, 2014; Martinez-Cola, 2020).
 

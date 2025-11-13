@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.45040.001 The Src kinase Fyn plays critical roles in memory formation and Alzheimer’s disease. Its targeting to neuronal dendrites is regulated by Tau via an unknown mechanism. As nanoclustering is essential for efficient signaling, we used single-molecule tracking to characterize the nanoscale distribution of Fyn in mouse hippocampal neurons, and manipulated the expression of Tau to test whether it controls Fyn nanoscale organization. We found that dendritic Fyn exhibits at least three distinct motion states, two of them associated with nanodomains. Fyn mobility decreases in dendrites during neuronal maturation, suggesting a dynamic synaptic reorganization. Removing Tau increases Fyn mobility in dendritic shafts, an effect that is rescued by re-expressing wildtype Tau. By contrast, expression of frontotemporal dementia P301L mutant Tau immobilizes Fyn in dendritic spines, affecting its motion state distribution and nanoclustering. Tau therefore controls the nanoscale organization of Fyn in dendrites, with the pathological Tau P301L mutation potentially contributing to synaptic dysfunction by promoting aberrant Fyn nanoclustering in spines.
+The Src kinase Fyn plays critical roles in memory formation and Alzheimer’s disease. Its targeting to neuronal dendrites is regulated by Tau via an unknown mechanism. As nanoclustering is essential for efficient signaling, we used single-molecule tracking to characterize the nanoscale distribution of Fyn in mouse hippocampal neurons, and manipulated the expression of Tau to test whether it controls Fyn nanoscale organization. We found that dendritic Fyn exhibits at least three distinct motion states, two of them associated with nanodomains. Fyn mobility decreases in dendrites during neuronal maturation, suggesting a dynamic synaptic reorganization. Removing Tau increases Fyn mobility in dendritic shafts, an effect that is rescued by re-expressing wildtype Tau. By contrast, expression of frontotemporal dementia P301L mutant Tau immobilizes Fyn in dendritic spines, affecting its motion state distribution and nanoclustering. Tau therefore controls the nanoscale organization of Fyn in dendrites, with the pathological Tau P301L mutation potentially contributing to synaptic dysfunction by promoting aberrant Fyn nanoclustering in spines.
 
 ## Introduction
 
@@ -32,15 +32,31 @@ The advent of super-resolution microscopy has paved the way for investigations 
 
 ## Results
 
-## sptPALM reveals changes in the dendritic nanoscale organization of Fyn as neurons mature
+### sptPALM reveals changes in the dendritic nanoscale organization of Fyn as neurons mature
 
 To investigate the spatial distribution and mobility pattern of the kinase Fyn in live neurons, we fused Fyn with the photoconvertible fluorescent protein mEos2 (Fyn-mEos2), and expressed this fusion protein in hippocampal neurons obtained from WT mice. We then performed sptPALM, using mCardinal as a cytoplasmic marker (Figure 1a,b). We used an oblique illumination configuration to image the dendrites of neurons at a stage when they predominantly exhibited filopodia (11–15 days in vitro (DIV)) and when they had developed mature spines (DIV19-20) (Figure 1a–d). By applying a weak intensity 405 nm laser, Fyn-mEos2 molecules were randomly photoconverted from a green- to a red-emitting state at a low spatial density, such that individual Fyn-mEos2 molecules could be correctly localized and tracked. The photoconverted molecules were then detected in the red-emitting channel at 561 nm excitation at 50 Hz for a duration of 320 s (16,000 frames), allowing for the characterization of Fyn distribution in live neurons at a high spatiotemporal resolution.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45040/elife-45040-fig1-v1.jpg)
+
+**Figure 1.:** The analysis was performed at days in vitro (DIV)11–15 and DIV19–20. (a–d) Representative epifluorescence images of DIV12 (a, c) and DIV20 (b, d) neurons co-expressing mCardinal (a, b) and Fyn-mEos2 (c, d), acquired before photoconversion of mEos2 molecules. Insets are shown at a higher magnification. Scale bars, 1 μm. (e–j) sptPALM imaging was performed at 50 Hz for 320 s (16,000 frames) to construct the maps of the localization intensities (e, f), diffusion coefficients (g, h) and trajectories (i, j) of Fyn-mEos2 molecules. The cooler colors represent higher localization intensities (e, f) and larger diffusion coefficients (g, h), and each trajectory is coded with a different color (i, j). (k–n) Comparison of Fyn mobility parameters with development. (k) Average mean square displacement (MSD) as a function of time. (l) The corresponding area under the MSD curves (AUC). (m) Distribution of diffusion coefficients (D) shown in a semi-log plot. The threshold to distinguish the immobile (Log10[D]≤−1.6) and the mobile (Log10[D]>−1.6) fraction of molecules is indicated with a dashed line. (n) The corresponding immobile fraction. Error bars are standard errors of the mean (SEM). Mean ± SEM values were obtained from n = 31 neurons (DIV11–15) and n = 14 neurons (DIV19–20). Statistical comparisons were performed using the Mann-Whitney U test (l) and Student’s t-test (n).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45040/elife-45040-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative examples of spines in which the diffusion coefficients of Fyn-mEos2 molecules varied more than 100-fold. Trajectories are color-coded with their respective diffusion coefficients. Scale bar, 1 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45040/elife-45040-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Voronoï diagram of Fyn-mEos2 detections. (b) Neuronal contour (red outline) and Fyn nanodomains (blue outline) identified using the Voronoï-tessellation-based spatial clustering algorithm. Scale bar, 1 μm. (c, d) The distributions of the diameter (c) and the area (d) of Fyn nanodomains (n = 502 nanodomains, 14 neurons).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/45040/elife-45040-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a, b) Representative DIV20 neuron with Fyn-mEos2 trajectories having Log10[D]≤−1.6 (color-coded in red in (a)) and Log10[D]>−1.6 (color-coded in blue in (b)). Scale bar, 1 μm. (c) Average mean square displacement as a function of time for trajectories with Log10[D]≤−1.6 and Log10[D]>−1.6 (n = 14 neurons).
 
 The low-resolution epifluorescence image of Fyn-mEos2 suggested a relatively uniform distribution of Fyn in the dendrites, whereas the sptPALM localization density map, which was generated by binning all the localizations acquired over the 16,000 frames, revealed a very heterogeneous spatial distribution of localization densities in dendrites and even within individual spines (Figure 1e,f). Regions with high localization density tended to have a higher local concentration of Fyn molecules than regions with low localization density (Cisse et al., 2013), suggesting the presence of Fyn-enriched nanodomains in dendrites. Nanodomains generally stem from the lateral trapping of molecules in discrete areas of the plasma membrane. We therefore computed the trajectories of Fyn-mEos2 molecules lasting for at least eight frames and generated a spatial map of diffusion coefficients, with Fyn mobility values being directly proportional to the diffusion coefficients (Figure 1g,h). We found that Fyn mobility was spatially heterogeneous and that the diffusion coefficients of Fyn-mEos2 molecules varied more than 100-fold in individual neurons and even within individual spines (Figure 1—figure supplement 1). Using a Voronoï-tessellation-based spatial clustering algorithm (Levet et al., 2015), we identified potential Fyn nanodomains (or nanoclusters) within spines and estimated the diameter of these nanodomains to be ~168.3 ± 4.2 nm (mean ± SEM; n = 502 nanodomains; Figure 1—figure supplement 2). This is comparable to the size of PSD-95 nanodomains in spines measured using sptPALM (Nair et al., 2013) and is around three times smaller than the size of a spine head (Izeddin et al., 2012). These results establish the existence of discrete Fyn nanodomains in the somatodendritic compartment, and highlight the capability of sptPALM in examining single-molecule and population-level dynamics of Fyn molecules in individual cells at high resolution.
 
 Given that Fyn has a critical role in integrating signaling pathways in the dendritic compartment (Li and Götz, 2017), we next investigated whether the mobility of Fyn changes during maturation by analyzing filopodia-forming DIV11-15 neurons and spine-forming DIV19-20 neurons. First, we computed the mean square displacement (MSD) of individual trajectories lasting for at least eight frames, and then calculated the average of the MSDs of all trajectories from each analyzed cell (Figure 1k). We used the area under the average MSD curve (AUC) of each cell for statistical comparisons (Figure 1l). We then estimated the diffusion coefficients from the MSDs of each trajectory and generated a frequency distribution of the diffusion coefficients of all trajectories from each analyzed neuron (Figure 1m). The distributions of the diffusion coefficients were then grouped into two fractions, immobile and mobile, on the basis of a threshold value of the diffusion coefficient, as described previously (Constals et al., 2015) (Figure 1—figure supplement 3), with the immobile fraction being used for statistical comparisons (Figure 1n). We detected Fyn-mEos2 molecules in both the spines and shaft regions at both time points of maturation (Figure 1e–j), and noted a frequent exchange of Fyn-mEos2 molecules between these two compartments. Interestingly, we found that the average MSD and AUC decreased and the immobile fraction increased significantly with dendritic maturation, and that the frequency distribution of diffusion coefficients shifted to the left with dendritic maturation, demonstrating that Fyn mobility decreased as dendrites matured. These observations suggest that the extent of lateral trapping of Fyn in dendrites increases with neuronal development and spine maturation, possibly reflecting the dynamic changes in the composition of Fyn-binding partners in dendrites.
 
-## Fyn mobility is lower in spines than in dendritic shafts
+### Fyn mobility is lower in spines than in dendritic shafts
 
 Fyn has multiple substrates in the dendritic compartment, including Tau (Ittner et al., 2010), PSD-95 (Won et al., 2016), and Pyk2 (Li and Götz, 2018). These proteins are also binding partners of Fyn, with their abundance and composition likely to be spatially regulated in the shafts and spines. For instance, it has been reported that PSD-95 is enriched in spines, whereas Tau levels in this compartment are low unless the protein either carries a pathological mutation found in familial cases of FTD or is hyperphosphorylated (Hoover et al., 2010). To investigate whether Fyn mobility differs between the dendritic shafts and spines of hippocampal neurons (DIV20-22), we co-expressed Fyn-mEos2 and enhanced green fluorescence protein (EGFP) as a volume marker to identify each compartment, and compared the mobility of Fyn-mEos2 in dendritic shafts and spines. We first acquired image stacks of the epifluorescence GFP signal, which allowed us to create a three-dimensional (3D) reconstruction of the dendritic structure (Figure 2a–c). We then performed sptPALM of Fyn-mEos2. Only spines protruding from the sides of the dendrite branch were considered in our analysis (Figure 2a–c), with trajectories being extracted from these spines (color-coded in blue in Figure 2d). We next identified trajectories from the dendritic shaft region (color-coded in red in Figure 2d) by excluding the shaft segments containing spines projecting away from the imaging plane (white arrows in Figure 2b,c and black arrows in Figure 2d). This procedure allowed us to compare Fyn mobility in the dendritic shafts and spines for every analyzed cell. Remarkably, we found that the mobility of Fyn-mEos2 was significantly lower in the spines than in the shafts, as assessed by changes in the average MSD (Figure 2e), the AUC (Figure 2f), the distribution of diffusion coefficients (Figure 2g) and the immobile fraction (Figure 2h). These results suggest a higher abundance of binding partners or sites for Fyn in spines than in dendritic shafts.
 
@@ -48,7 +64,7 @@ Fyn has multiple substrates in the dendritic compartment, including Tau (Ittner 
 
 **Figure 2.:** (a) An EGFP image stack of a representative hippocampal neuron co-expressing Fyn-mEos2 and EGFP is shown as a two-dimensional (2D) maximum intensity projection along the z-direction. (b) 3D reconstruction of the same neuron using Neurolucida. (c) The image shown in (b) rotated 180° along the y-axis. (d) Trajectories belonging to spines that were nearly parallel to the sptPALM imaging plane (blue) and the dendritic shaft region (red) of the same neuron shown in (a). Dendritic segments containing spines projecting away from the sptPALM imaging plane were discarded (white arrows in (b) and (c), and black arrows in (d)). (e–h) Comparison of Fyn mobility parameters in dendritic shafts and spines. (e) Average mean square displacement (MSD) as a function of time. (f) The corresponding area under the MSD curves (AUC). (g) The distribution of diffusion coefficients (D) shown in a semi-log plot. The threshold used to distinguish the immobile (Log10[D]≤−1.6) and mobile (Log10[D]>−1.6) fractions of molecules is indicated with a dashed line. (h) The corresponding immobile fractions. Error bars are SEM. Mean ± SEM values were obtained from n = 12 neurons. Statistical comparisons were performed using a paired Student’s t-test (f, h).
 
-## Fyn exhibits multiple kinetic subpopulations within shafts and spines
+### Fyn exhibits multiple kinetic subpopulations within shafts and spines
 
 To further characterize Fyn mobility patterns in dendritic shafts and spines, we first performed a moment scaling spectrum (MSS) analysis of Fyn trajectories that lasted for at least 20 frames (0.4 s) and estimated the slope of the MSS (SMSS). The MSS analysis revealed that Fyn-mEos2 molecules exhibit at least three different motion types in spines and shafts: immobile, confined and free diffusive states (Figure 3a). Trajectories with an SMSS close to 0 represent immobile molecules, those with an SMSS between 0 and 0.5 represent confined molecules, and those with an SMSS close to 0.5 represent apparently free molecules. We next analyzed the cumulative distribution of displacements of Fyn-mEos2 molecules at 20 ms intervals by applying a three-diffusive state model, with each state being differentiated by its diffusion coefficient. This model provided an excellent fit to the data (Figure 3b) and yielded estimates of apparent diffusion coefficients and state occupancies for each state, with the latter representing the fraction of Fyn molecules in each state (Figure 3c, d). We found that the apparent diffusion coefficients of the three diffusive states were similar in shafts and spines (Figure 3c), suggesting that similar molecular mechanisms could give rise to different mobility states of Fyn in both compartments. We associated the state with the lowest diffusion coefficient (S1) to immobilized Fyn molecules, and the state with the intermediate diffusion coefficient (S2) to confined Fyn molecules, both states constituting Fyn molecules within nanodomains. The state with the largest diffusion coefficient (S3) represents freely moving Fyn molecules that are found outside nanodomains. Interestingly, the occupancies of the immobile and confined states were significantly higher and the occupancy of the free state significantly lower in the spines compared to shafts (Figure 3d), suggesting that the exchange between and the retention in different subpopulations of Fyn are differentially regulated in spines and shafts.
 
@@ -56,7 +72,7 @@ To further characterize Fyn mobility patterns in dendritic shafts and spines, we
 
 **Figure 3.:** (a) Distribution of the slope of the moment scaling spectrum (SMSS) of trajectories lasting for at least 20 frames. (b) Representative fit (solid black line) of a three-diffusive-state model (Equation (1)) of the cumulative distribution of displacements at 20 ms intervals from Fyn-mEos2 molecules located inside the spines and shafts of neurons. The contribution of each diffusive state is shown individually. (c) A three-state model in which the estimated apparent diffusion coefficients and state occupancies are represented (state S1, immobile; state S2, confined; state S3, apparently free), with the circle area being proportional to the state occupancy. (d) Comparison of the estimated state occupancies of Fyn-mEos2 molecules in spines (blue) and shafts (red). Statistical comparisons were performed using paired Student’s t-tests .
 
-## Tau controls the nanoscale organization of Fyn in hippocampal dendrites
+### Tau controls the nanoscale organization of Fyn in hippocampal dendrites
 
 Given that Tau binds directly to Fyn (Lee et al., 1998; Bhaskar et al., 2005), controls the dendritic targeting of Fyn (Ittner et al., 2010) and facilitates the recruitment of Fyn to the PSD-95 complex in spines (Ittner et al., 2010), we next investigated whether Tau also controls the nanoscale organization of Fyn in dendrites. Under physiological conditions, Tau is predominantly located in axons, with a smaller fraction of Tau being found in dendritic shafts, and an even smaller fraction in spines. We first confirmed our previous, biochemical finding (Ittner et al., 2010) that the dendritic targeting of Fyn is significantly reduced in Tau knock-out (Tau KO) compared to wildtype hippocampal neurons using confocal microscopy. Although the Fyn localization intensity was significantly decreased in the dendrites of Tau KO neurons compared to those of WT neurons, we were still able to observe Fyn localization in both the dendritic shafts and spines of Tau KO neurons, albeit at much lower levels (Figure 4a–c).
 
@@ -66,11 +82,19 @@ Given that Tau binds directly to Fyn (Lee et al., 1998; Bhaskar et al., 2005), c
 
 We next performed sptPALM on WT and Tau KO neurons co-expressing Fyn-mEos2 and mCardinal at DIV19–22 and examined the effect of endogenous Tau expression on Fyn mobility (Figure 5). We detected Fyn-mEos2 molecules in both dendritic shafts and spines, and found that Fyn-mEos2 mobility was spatially heterogeneous in the dendrites of both WT and Tau KO neurons (Figure 5a–d). Although the mobility of Fyn-mEos2 appeared to be higher in the dendrites of Tau KO neurons compared to those of WT neurons, this difference was not statistically significant when the average MSD (Figure 5e), the AUC (Figure 5f), the frequency distribution of diffusion coefficients (Figure 5g) and the immobile fraction (Figure 5h) were determined. We then focused explicitly on Fyn in spines and determined whether its mobility was altered in Tau KO compared to WT neurons. This analysis revealed that the average MSD (Figure 5i) and the frequency distribution of diffusion coefficients (Figure 5k) were again remarkably similar and that the corresponding AUC (Figure 5j) and immobile fraction (Figure 5l) were not significantly different, indicating that the absence of Tau did not affect the nanoscale organization of Fyn in the spines. In other words, although Tau has a role in targeting Fyn to the dendritic compartment (Ittner et al., 2010), the nanoscale organization of the fraction of Fyn that entered this compartment was not affected by Tau knockout.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/45040/elife-45040-fig5-v1.jpg)
+
+**Figure 5.:** (a–d) Representative epifluorescence images of WT (a) and Tau KO (c) neurons co-expressing mCardinal and Fyn-mEos2. sptPALM trajectory maps of Fyn-mEos2 molecules in WT (b) and Tau KO (d) neurons. Regions marked in (a) and (c) are shown at higher magnification in (b) and (d), respectively. Scale bar, 1 μm. (e–l) Comparison of Fyn mobility in dendrites (e–h) and in spines (i–l) of WT (blue) or Tau KO (red) neurons. Mean ± SEM values were obtained from n = 14 WT neurons and n = 9 Tau KO neurons. (e, i) The average mean square displacement (MSD) as a function of time. (f, j) The corresponding area under the MSD curves (AUC). (g, k) The distribution of diffusion coefficients (D) shown in a semi-log plot. The dashed line distinguishes the immobile and mobile fractions. (h, l) The corresponding immobile fraction. (m) Examples of trajectories of Fyn-mEos2 molecules in an individual spine (blue) and the immediately adjacent shaft region (red) of WT (left), Tau KO (middle) and Tau KO expressing TauWT-GFP neurons. Scale bar, 1 μm. (n) Effective diffusion coefficients (Deff) of the trajectories belonging to individual spines of WT, Tau KO and Tau KO + TauWT neurons. (o) Deff of the trajectories belonging to individual shaft regions of WT, Tau KO and Tau KO + TauWT neurons. In (n) and (o), spines or shaft segments that contained at least 50 trajectories were used to compute Deff. Statistical comparisons were performed using Student’s t-test (f, h, j, l) or Kruskal-Wallis test with Dunn’s post hoc multiple comparisons test (n, o) . The adjusted p-values accounting for multiple comparisons are reported in (n) and (o).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45040/elife-45040-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) An example of trajectories of Fyn-mEos2 molecules in an individual spine (blue) and immediately adjacent shaft segment (red) of a WT neuron (same as in Figure 5m). Scale bar, 1 μm. (b) The first four points of the average MSD of trajectories from the spine (blue circles) and shaft segment (red circles) were fitted by the equation MSD(t)=a + 4 Defft, where Deff is the effective diffusion coefficient, a is the y-intercept and t is the time.
+
 We then asked whether the absence of Tau affected Fyn mobility in the dendritic shafts. To investigate this, we identified shaft segments that were immediately adjacent to the spines and computed the effective diffusion coefficient (Deff) of Fyn trajectories belonging to each spine and the corresponding shaft segment (Figure 5m–o and Figure 5—figure supplement 1). The Deff values for individual spines in WT and Tau KO neurons were similar (Figure 5n), whereas the Deff values for the shaft segments of Tau KO neurons were significantly higher than those of WT neurons (Figure 5o), suggesting that dendritic Tau regulates the nanoscale organization of Fyn in the shafts from which spines protrude. To determine whether the expression of Tau in Tau KO neurons can rescue this effect on Fyn mobility, we performed sptPALM of Tau KO neurons co-expressing Fyn-mEos2, mCardinal and TauWT-GFP (Figure 5m–o). As expected, the Deff values of Fyn in the shaft segments of Tau KO neurons expressing TauWT-GFP were not significantly different from those of WT neurons (Figure 5o).
 
 Together, these results demonstrate that Tau regulates the mobility of Fyn in dendritic shafts, but not in spines, under physiological conditions. The increased trapping of Fyn in the shaft may contribute to the Tau-mediated dendritic targeting of Fyn.
 
-## FTD-linked P301L mutant Tau traps Fyn in dendrites
+### FTD-linked P301L mutant Tau traps Fyn in dendrites
 
 Under disease conditions such as AD, Tau accumulates in spines. This has also been shown for Tau carrying the P301L mutation found in familial cases of FTD, which mislocalizes to dendritic spines (Xia et al., 2015; Hoover et al., 2010) and has an increased affinity towards Fyn in vitro (Bhaskar et al., 2005). Caspase-2 cleavage of Tau at asparagine 314 (Asp314) and the consequent formation of the truncation product ΔTau314 contributes to the mislocalization of pathological forms of Tau to dendritic spines (Zhao et al., 2016). However, the physiological significance of Tau mutant mislocalization and its effect on Fyn nanoclustering is currently not known. We therefore investigated whether the P301L mutant Tau affects the nanoscale organization of Fyn in dendrites, compared to that of WT Tau, by carrying out sptPALM on Tau KO neurons co-expressing Fyn-mEos2, mCardinal and either TauWT-GFP (Figure 6a) or TauP301L-GFP (Figure 6b). We found that Fyn mobility dramatically decreased in the dendrites of Tau KO neurons expressing TauP301L-GFP compared to those expressing TauWT-GFP, as evidenced by the changes in the average MSD (Figure 6c), the AUC (Figure 6d), the frequency distribution of diffusion coefficients (Figure 6e), and the immobile fraction (Figure 6f). We then identified trajectories from spines and determined whether P301L mutant Tau altered the mobility and nanoscale organization of Fyn in these regions. We found that the mobility of Fyn decreased significantly in the spines of Tau KO neurons expressing TauP301L-GFP compared to those expressing TauWT-GFP, as assessed by the changes in the average MSD (Figure 6g), the AUC (Figure 6h), the frequency distribution of diffusion coefficients (Figure 6i), and the immobile fraction (Figure 6j). These results demonstrate a strong effect of P301L mutant Tau expression on Fyn mobility, and suggest for the first time that the complex interaction dynamics between Tau and Fyn underpin the nanoscale organization of Fyn in the dendritic shaft under physiological conditions and in spines under pathological conditions.
 
@@ -78,7 +102,7 @@ Under disease conditions such as AD, Tau accumulates in spines. This has also be
 
 **Figure 6.:** (a, b) Representative low-resolution and super-resolution images of Tau KO neurons expressing mCardinal, Fyn-mEos2 and TauWT-GFP or TauP301L-GFP, obtained using sptPALM. sptPALM imaging was performed at 50 Hz for 320 s (16,000 frames) to construct the maps of localization intensities, diffusion coefficients, and trajectories of Fyn-mEos2 molecules. The cooler colors represent higher localization intensities and larger diffusion coefficients, and each trajectory is coded with a different color. (c–j) Comparison of Fyn mobility in the dendrites (c–f) and spines (g–j) of Tau KO neurons expressing TauWT-GFP (blue) or TauP301L-GFP. (c, g) The average mean square displacement (MSD) as a function of time. (d, h) The corresponding area under the MSD curves (AUC). (e, i) The distribution of diffusion coefficients (D) shown in a semi-log plot. The threshold used to distinguish the immobile (Log10[D] ≤ −1.6) and mobile (Log10[D] > −1.6) fractions of molecules is indicated with a dashed line. (f, j) The corresponding immobile fraction. Mean ± SEM values were obtained from n = 11 Tau KO neurons expressing TauWT-GFP and n = 9 Tau KO neurons expressing TauP301L-GFP. Statistical comparisons were performed using Student’s t-tests (d, f, h, and j).
 
-## FTD-linked P301L mutant Tau immobilizes Fyn in spines
+### FTD-linked P301L mutant Tau immobilizes Fyn in spines
 
 P301L mutant Tau mislocalizes to dendritic spines and impairs spine function (Hoover et al., 2010). In order to further dissect the effect of P301L mutant Tau on the organization of Fyn within individual spines, we computed the average MSD and Deff value of trajectories belonging to individual spines of Tau KO neurons expressing either TauWT-GFP or TauP301L-GFP. This analysis revealed that the average MSD and Deff value were significantly lower in individual spines of Tau KO neurons expressing TauP301L-GFP than in those expressing TauWT-GFP (Figure 7a,b), further supporting our earlier findings (Figure 6g–6j). We then performed an MSS analysis of Fyn trajectories (see Figure 3). The SMSS computed from the spine trajectories of Tau KO neurons expressing TauP301L-GFP (mean SMSS = 0.1) was found to be significantly lower than that of Tau KO neurons expressing TauWT-GFP (mean SMSS = 0.13), indicating that Fyn molecules are more confined in the spines of Tau KO neurons expressing P301L mutant Tau (Figure 7c). We also analyzed the cumulative distribution of displacements of Fyn-mEos2 molecules at 20 ms intervals by applying the three-diffusive-state model (Figure 7d–e). We found that, although the apparent diffusion coefficients of each state were similar (Figure 7d), the state occupancy of the immobile state was not significantly different, the state occupancy of the confined state increased and that of the free state significantly decreased in spines of Tau KO neurons expressing TauP301L-GFP when compared to those expressing TauWT-GFP (Figure 7e). Finally, using a Voronoï-tessellation-based spatial clustering algorithm (Levet et al., 2015), we computed the nanodomain diameter and area, as well as the number of nanodomains per spine. The nanodomain diameter and area were not significantly different between the two conditions, but the number of nanodomains per spine increased in Tau KO neurons expressing TauP301L-GFP when compared to those expressing TauWT-GFP (Figure 7f–h). To test whether the effect of P301L mutant Tau depends on the increased translocation of Tau into dendritic spines, we performed sptPALM of Fyn on Tau KO neurons expressing Fyn-mEos2, GFP and either TauWT-GFP or Tau lacking the microtubule-binding domain (ΔTau-GFP) that is known to access spines (Ittner et al., 2010; Cummins et al., 2019). We found that ΔTau-GFP mislocalized to dendritic spines (Figure 8a) but did not alter Fyn mobility in dendrites (Figure 8b–e) or spines (Figure 8f–m). Taken together, these results provide strong evidence that P301L mutant Tau confines Fyn and alters its nanoscale organization within individual spines, demonstrating that Tau acts as a key regulator of Fyn in both physiological and pathological situations.
 
@@ -114,48 +138,216 @@ In summary, our study demonstrates that Fyn is organized into specific nanodomai
 
 ## Materials and methods
 
-## Animal ethics and mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57B1/6</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat. #000664</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tau KO (Mapt–/–)</td>
+      <td>Jackson Laboratory (Dawson et al., 2001)</td>
+      <td>Cat. #007251</td>
+      <td>Prof. Michael Vitek (Duke University Medical Center)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Fyn</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Cat. #4023</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PSD-95</td>
+      <td>Merck Millipore</td>
+      <td>Cat. #MABN68</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti MAP2</td>
+      <td>Merck Millipore</td>
+      <td>Cat. #AB15452</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCardinal-N1</td>
+      <td>Addgene</td>
+      <td>Cat. #54590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N1</td>
+      <td>Clontech/NovoPro</td>
+      <td>Cat. #V12021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fyn-mEos2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tau-GFP</td>
+      <td>PMID: 27378256</td>
+      <td></td>
+      <td>Prof. Jürgen Götz (Queensland Brain Institute, University of Queensland)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tau-P301L-GFP</td>
+      <td>PMID: 27378256</td>
+      <td></td>
+      <td>Prof. Jürgen Götz (Queensland Brain Institute, University of Queensland)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ΔTau-GFP</td>
+      <td>Cummins et al., 2019</td>
+      <td></td>
+      <td>Prof. Jürgen Götz (Queensland Brain Institute, University of Queensland)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phalloidin-Alexa Fluor 647</td>
+      <td>NEB</td>
+      <td>Cat. #8940S</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji-ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 2.0.0-rc-68/1.52e</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida</td>
+      <td>MBF Bioscience</td>
+      <td>RRID:SCR_001775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens software</td>
+      <td>Scientific Volume Imaging</td>
+      <td>RRID:SCR_014237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph software</td>
+      <td>Molecular Devices (https://www.moleculardevices.com)</td>
+      <td>RRID:SCR_002368</td>
+      <td>Version 7.7.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PALMTracer</td>
+      <td>http://www.iins.u-bordeaux.fr/team-sibarita-PALMTracer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SR-Tesseler</td>
+      <td>Levet et al., 2015 (http://www.iins.u-bordeaux.fr/team-sibarita-SR-Tesseler)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SharpViSu</td>
+      <td>Andronov et al., 2016 (https://github.com/andronovl/SharpViSu)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DC-MSS</td>
+      <td>Vega et al., 2018 (https://github.com/kjaqaman/DC-MSS)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 7.0d</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal ethics and mouse strains
 
 All experimental procedures were conducted under the guidelines of the Australian Code of Practice for the Care and Use of Animals for Scientific purposes and were approved by the University of Queensland Animal Ethics Committee (QBI/412/14/NHMRC; QBI/027/12/NHMRC; QBI/254/16/NHMRC). Mice were maintained in a 12-hr light/dark cycle and housed in a PC2 facility with ad libitum access to food and water. Wildtype mice (C57Bl/6 strain) and Tau KO (Mapt–/–) mice on a C57Bl/6 background (Dawson et al., 2001) were used throughout the study. Tau KO has a loss of function of the Mapt gene.
 
-## Primary hippocampal cultures
+### Primary hippocampal cultures
 
 Embryonic day (E)16 hippocampal neurons were obtained from wildtype and Tau KO mice (Dawson et al., 2001) and prepared as described previously (Joensuu et al., 2017). Briefly, for live-cell super-resolution microscopy, 100,000 neurons were plated onto poly-L-lysine-coated 35 mm glass-bottom dishes (In Vitro Scientific). For immunocytochemistry, 80,000 cells/well were plated onto poly-L-lysine-coated 10 mm diameter coverslips (ProSciTech) in a 12-well plate (Fath et al., 2009). The neurons were cultured in Neurobasal medium (Gibco) supplemented with 5% fetal bovine serum (Hyclone), 2 mM Glutamax (Gibco) and 50 U/mL penicillin/streptomycin (Invitrogen). The medium was changed to serum-free Neurobasal medium supplemented with 2% B27 (Gibco) 4 hr post-seeding, and half the medium was changed every week.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Primary hippocampal neurons were fixed with 4% paraformaldehyde/4% sucrose for 15 min at room temperature, permeabilized with 0.2% Triton X-100 for 10 min, then blocked for 1 hr in 5% goat serum, followed by primary antibody incubation overnight at 4°C and secondary antibody incubation for 1 hr at room temperature. The following primary antibodies were used: Fyn (Cell Signalling Technologies #4023; rabbit polyclonal, 1:500), PSD-95 (Millipore, monoclonal, 1:500), MAP2 (Millipore, chicken polyclonal, 1:500), and phalloidin-Alexa Fluor 647 (NEB, 1:100), which was used to detect actin. As secondary antibodies, we used Alexa-Fluor-488-labeled goat-anti-rabbit antibody, Alexa-Fluor-555-labeled goat anti-mouse antibody and Alexa-Fluor-647-labeled goat anti-chicken antibody (all from LifeTechnologies, Thermo Fisher, 1:500). Fluorescence images were captured with a 20X or a 60X objective on a Zeiss LSM710 confocal microscope and analyzed with Fiji-ImageJ software (Schindelin et al., 2012).
 
-## Cloning
+### Cloning
 
 Fyn-mEos2 (human Fyn with carboxy-terminal mEos2 tag) was subcloned from a Fyn-pGEM-T Easy plasmid (human full-length Fyn, isoform 1) by ApaI/SalI double digestion and ligated into the pEGFP-N1 (Clontech) and mEos2-N1 (Addgene #54662) vector.
 
-## Super-resolution microscopy with oblique illumination
+### Super-resolution microscopy with oblique illumination
 
 Primary neurons were transfected using Lipo2000 and used for super-resolution microscopy 5–7 days post-transfection. The following constructs were used for transfection: Fyn-mEos2, mCardinal-N1 (Addgene #54590), Tau-EGFP (human Tau with carboxy-terminal EGFP tag) (Xia et al., 2015), ΔTau-EGFP (human Tau lacking the last 186 amino acids, with a carboxy-terminal EGFP tag) and Tau-P301L-EGFP (human mutated Tau-P301L with a carboxy-terminal EGFP tag) (Xia et al., 2015). For live-cell super-resolution microscopy with oblique illumination, Fyn-mEos2-transfected neurons were bathed in imaging buffer (145 mM NaCl, 5.6 mM KCl, 2.2 mM CaCl2, 0.5 mM MgCl2, 5.6 mM D-glucose, 0.5 mM ascorbic acid, 0.1% BSA, 15 mM HEPES, pH 7.4). Neurons were visualized at 37°C on a Roper Scientific TIRF microscope equipped with an ILas2 double laser illuminator (Roper Scientific), a Nikon CFI Apo TIRF 100×/1.49 N.A. objective (Nikon Instrument), an Evolve512 delta EMCCD camera (Photometrics) and a perfect focus system, allowing acquisitions in oblique illumination. Image acquisition was performed using Metamorph software (version 7.7.8, Molecular Devices).
 
-## 3D analysis of sptPALM trajectories
+### 3D analysis of sptPALM trajectories
 
 The multi-dimensional acquisition Z-series App from Metamorph software was used to obtain a z-stack acquisition (each frame every 0.1 μm) of the epifluorescence signal corresponding to the pEGFP fluorophore of hippocampal neurons (DIV20-22) expressing Fyn-mEos2 and pEGFP. sptPALM imaging of the same neuronal segment was performed immediately after the stack acquisition. Z-stack images were deconvolved using Huygens software (Scientific Volume Imaging). 2D maximum intensity projection was performed using Fiji-ImageJ software (Schindelin et al., 2012). 3D analysis of the dendritic architecture was performed using Neurolucida software (MBF Bioscience). Only spines protruding from the sides of the dendrite branch were considered in this analysis. The shaft region was selected by excluding shaft segments containing spines projecting away from the imaging plane. sptPALM trajectories from spines or shafts were selected for further analysis.
 
-## Single-particle tracking photoactivated localization microscopy (sptPALM)
+### Single-particle tracking photoactivated localization microscopy (sptPALM)
 
 Time-lapse movies were acquired at 50 Hz (16,000 frames) at 37°C. For sptPALM, a 405-nm laser was used to photo-activate the cells expressing Fyn-mEos2 and a 561-nm laser was used simultaneously for excitation of the resulting photo-converted single molecules. To isolate the mEos2 signal from auto-fluorescence and background signals, a double-beam splitter (LF488/561-A-000, Semrock) and a double-band emitter (FF01-523/610-25, Semrock) were used. To spatially distinguish and temporally separate the stochastically activated molecules during acquisition, the respective power of the lasers was adjusted. The 405-nm laser was used between 1.5% and 3% of the initial laser power (100 mW Vortran Laser Technology), and the 561-nm laser was used at 70% of the initial laser power (150 mW Cobolt Jive).
 
-## Single-particle trajectory analysis
+### Single-particle trajectory analysis
 
-The localization and tracking of single molecules were performed as previously described (Nair et al., 2013). Briefly, single-molecule localizations were detected using a wavelet-based segmentation, and trajectories were computed using a simulated annealing-based tracking algorithm (Izeddin et al., 2012) with PALM-Tracer, software that operates with Metamorph (Molecular Devices) (Nair et al., 2013; Kechkar et al., 2013). Trajectories that lasted at least eight frames were reconstructed and the mean square displacement (MSD) was computed for each trajectory. Cells with at least 1000 trajectories were considered for further analysis. The MSD was fitted by the equation MSD(t)=a+ 4Dt, where D is the diffusion coefficient, a is the y-intercept and t is the time. We considered trajectories with Log10[D]≤−1.6 as immobile (Bademosi et al., 2017; Constals et al., 2015; Kasula et al., 2016) and computed the immobile fraction from the distribution of the diffusion coefficient histograms for statistical comparisons. The moment scaling spectrum (MSS) analysis was applied to Fyn trajectories that lasted for at least 20 frames, as described previously (Vega et al., 2018).
+The localization and tracking of single molecules were performed as previously described (Nair et al., 2013). Briefly, single-molecule localizations were detected using a wavelet-based segmentation, and trajectories were computed using a simulated annealing-based tracking algorithm (Izeddin et al., 2012) with PALM-Tracer, software that operates with Metamorph (Molecular Devices) (Nair et al., 2013; Kechkar et al., 2013). Trajectories that lasted at least eight frames were reconstructed and the mean square displacement (MSD) was computed for each trajectory. Cells with at least 1000 trajectories were considered for further analysis. The MSD was fitted by the equation $MSD(t)=a+ 4Dt,$ where D is the diffusion coefficient, a is the y-intercept and t is the time. We considered trajectories with Log10[D]≤−1.6 as immobile (Bademosi et al., 2017; Constals et al., 2015; Kasula et al., 2016) and computed the immobile fraction from the distribution of the diffusion coefficient histograms for statistical comparisons. The moment scaling spectrum (MSS) analysis was applied to Fyn trajectories that lasted for at least 20 frames, as described previously (Vega et al., 2018).
 
-## SR-Tesseler analysis
+### SR-Tesseler analysis
 
 Fyn nanodomains were quantified from sptPALM data using SR-Tesseler analysis (Levet et al., 2015). Briefly, the coordinates of single-molecule localizations were used to construct a Voronoï diagram, which segmented the sptPALM data into polygons centered on individual localizations. Object segmentation then provided the neuronal contour. We then identified potential Fyn nanodomains as regions within the neuronal contour that contained at least 50 detections and had a local density at least two-fold greater than the average density of the identified object. The nanodomain diameter was calculated using principal component analysis and the area was determined from the segmented cluster outline, as described previously (Levet et al., 2015). A cross-correlation-based drift correction of the sptPALM data was performed using the SharpViSu tool (Andronov et al., 2016) before performing SR-Tesseler analysis.
 
-## Step-length analysis
+### Step-length analysis
 
-We estimated the diffusion coefficients and the occupancies of multiple kinetic states by analyzing the cumulative distribution function (CDF) of displacements of Fyn-mEos2 molecules at 20 ms intervals. To avoid bias resulting from long trajectories (Chen et al., 2015), we computed the CDF of each cell by including only the first seven displacements of each trajectory, which is the minimum trajectory length considered in all our of analyses. The CDF was then fitted with a three-state model given by:(1)Cr,∆t=1-f1exp-r24D1∆t-f2exp-r24D2∆t-f3exp-r24D3∆t
+We estimated the diffusion coefficients and the occupancies of multiple kinetic states by analyzing the cumulative distribution function (CDF) of displacements of Fyn-mEos2 molecules at 20 ms intervals. To avoid bias resulting from long trajectories (Chen et al., 2015), we computed the CDF of each cell by including only the first seven displacements of each trajectory, which is the minimum trajectory length considered in all our of analyses. The CDF was then fitted with a three-state model given by:
+
+$$
+Cr,\Deltat=1-f_{1}exp\frac{-r^{2}}{4D_{1}\Deltat}-f_{2}exp\frac{-r^{2}}{4D_{2}\Deltat}-f_{3}exp\frac{-r^{2}}{4D_{3}\Deltat}
+$$
 
 Here, r is the displacement, Δt is the time interval (20 ms), D1, D2 and D3 are the diffusion coefficients of the three states, and f1, f2 and f3 are the state occupancies. We computed the empirical CDF using the tool ECDF and fit the model predictions to the data using the non-linear regression tool NLINFIT in Matlab to estimate the model parameters. We performed global fitting for each condition by keeping the diffusion coefficients of each state constant across cells and allowing the state occupancies to vary across cells. This was necessary to estimate the parameters reliably.
 
-## Statistics
+### Statistics
 
 The D’Agostino and Pearson test was used to test for normality. The Student’s t-test was used when the data were normally distributed, and the non-parametric Mann Whitney U test was used when the data were not normally distributed. For data sets that compared more than two groups, an ANOVA was used with corrections for multiple comparisons. Statistical comparisons were performed on a per-cell basis, with neurons collected from at least three independent transfection experiments. Unless otherwise stated, values are represented as the mean ± SEM. The tests used are indicated in the respective figure legends. Data were considered significant at p<0.05. Statistical tests were performed and figures were made using GraphPad Prism 7. A summary of statistical analyses is provided in Supplementary file 1.

@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01sfm2718 Department of Pharmacology, School of Pharmacy, China Pharmaceutical University Nanjing China
+1. Department of Pharmacology, School of Pharmacy, China Pharmaceutical University Nanjing China ([ROR:01sfm2718](https://ror.org/01sfm2718))
 
 † Corresponding author
 
@@ -35,17 +35,25 @@ The aims of the study were: (1) to establish and characterize an in vitro triple
 
 ## Results
 
-## Establishment and characterization of the in vitro triple co-culture BBB model
+### Establishment and characterization of the in vitro triple co-culture BBB model
 
 Four types of BBB in vitro models were established to compare the contributions of U251 and SH-SY5Y cells to hCMEC/D3 cells (Figure 1A). TEER values were measured during the co-culture (Figure 1B). TEER values of the four in vitro BBB models gradually increased until day 6. On day 7, the TEER values showed a decreasing trend. Thus, 6-day co-culture period was used for subsequent experiments. The highest TEER values were observed in the triple co-culture BBB model, followed by double co-culture with U251 cells and double co-culture with SH-SY5Y cells BBB models, hCMEC/D3 cells mono-culture BBB model showed the lowest TEER values. We also measured the TEER values of U251 monolayer cells, and the results showed that U251 cells themselves also contributed to the physical barrier of the model (Figure 1C). The apparent permeability coefficient (Papp) values of fluorescein and FITC-Dex were measured to characterize the integrity of four BBB models (Figure 1D, E). Consistent with the TEER values, the triple co-culture BBB model showed the lowest permeability of fluorescein and FITC-Dex, followed by double co-culture with U251 cells and double co-culture with SH-SY5Y cells BBB models. It was noticed that monolayer of U251 cells itself also worked as a barrier, preventing the leakage of permeability markers, which may explain why the permeability of FITC-Dex in double co-culture model with U251 cells is lower than that in double co-culture model with SH-SY5Y cells (Figure 1F). Co-culture with SH-SY5Y, U251, and U251 + SH-SY5Y cells also enhanced the proliferation of hCMEC/D3 cells. Moreover, the promoting effect of SH-SY5Y cells was stronger than that of U251 cells (Figure 1G–I). Furthermore, hCMEC/D3 cells were incubated with basic fibroblast growth factor (bFGF), which promotes cell proliferation without affecting both claudin-5 and VE-cadherin expression (Figure 2F). The results showed that incubation with bFGF increased cell proliferation and reduced permeabilities of fluorescein and FITC-Dex across hCMEC/D3 cell monolayer. However, the permeability reduction was less than that by double co-culture with U251 cells or triple co-culture. These results inferred that contribution of cell proliferation to the barrier function of hCMEC/D3 was minor (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig1-v1.jpg)
+
+**Figure 1.:** (A) Four different types of BBB models were prepared from hCMEC/D3 cells (h), SH-SY5Y cells (S), and U251 cells (U). (B) The transendothelial electrical resistance (TEER) of four models, and the TEER values in day 6 were compared. Blank: no cells. Four biological replicates per group. (C) The TEER of hCMEC/D3 and U251 cells monolayer. Four biological replicates per group. (D, E) The apparent permeability coefficient (Papp, ×10−6 cm/s) of fluorescein (NaF) and FITC-Dextran 3–5 kDa (FITC-Dex) of four BBB models. Four biological replicates per group. (F) The Papp (×10−6 cm/s) of NaF and FITC-Dex across the blank inserts, and hCMEC/D3 or U251 mono-culture models. Four biological replicates per group. The cell density (G), EdU incorporation (H) of hCMEC/D3 cells after mono/co-culturing. Three biological replicates per group. (I) Cell viability of hCMEC/D3 cells after mono/co-culturing. Four biological replicates per group. (J, K) The mRNA levels of tight junction proteins, adherent junction proteins, and transporters. Four biological replicates per group. The protein expression levels of claudin-5 (CLDN-5), ZO-1, occluding (L, M), VE-cadherin (VE-Cad), β-catenin, and BCRP (N, O) in hCMEC/D3 cells. Four biological replicates per group. The correlations between the Papp (×10−5 cm/s) of NaF and claudin-5 expression (P), or VE-cadherin expression (Q). The correlation between Papp (×10−5 cm/s) of FITC-Dex and claudin-5 expression (R), or VE-cadherin expression (S). The above data are shown as the mean ± SEM. For J and K, two technical replicates per biological replicate. One technical replicate per biological replicate for the rest. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test, Welch’s ANOVA test, or Kruskal–Wallis test. The simple linear regression analysis was used to examine the presence of a linear relationship between two variables.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** EdU incorporation (A), cell viability (B), and apparent permeability coefficient (Papp, ×10−6 cm/s) of fluorescein (C) or FITC-Dextran 3–5 kDa (D) of hCMEC/D3 cells treated with bFGF (6, 20, and 60 ng/ml) for 6 days. The above data are shown as the mean ± SEM. Four biological replicates per group. One technical replicate for each biological replicate. Statistical significance was determined using one-way ANOVA test followed by Fisher’s LSD test or Welch’s ANOVA test.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig2-v1.jpg)
 
-**Figure 2.:** (A) Effects of conditioned medium (CM) on claudin-5 and VE-cadherin expression. Con: the normal medium; S-CM: the CM from SH-SY5Y cells; U-CM: the CM from U251 cells; US-CM: the CM from SH-SY5Y cells co-culture with U251 cells. (B) The mRNA expression levels of neurotrophic factors in hCMEC/D3, U251, and SH-SY5Y cells. (C) Concentrations of GDNF, basic fibroblast growth factor (bFGF), insulin-like growth factor-1 (IGF-1), and transforming growth factor-β (TGF-β) in the CMs. H-CM: the CM from hCMEC/D3 cells. Effects of GDNF (D), IGF-1 (E), bFGF (F), and TGF-β (G) on the expression of claudin-5 and VE-cadherin. The dosages have been marked in the figure. Effects of anti-GDNF antibody on the upregulation of claudin-5 and VE-cadherin expression induced by US-CM (H) or 200 pg/ml GDNF (I). (J) Effects of 200 pg/ml GDNF and US-CM on claudin-5 and VE-cadherin expression in primary rat brain microvascular endothelial cells. Effects of 3 μM RET tyrosine kinase inhibitor SSP-86 (SPP), and 5 μM Src family kinases inhibitor PP2 on the upregulation of claudin-5 and VE-cadherin induced by 200 pg/mL GDNF (K) and US-CM (L). Effects of SPP on the transendothelial electrical resistance (TEER) on day 6 (M), the permeability of NaF, and FITC-Dex (N) of the hCMEC/D3 mono-culture blood–brain barrier (BBB) model treating 200 pg/ml GDNF. Effects of PP2 on the TEER on day 6 (O), the permeability of NaF, and FITC-Dex (P) of the hCMEC/D3 mono-culture BBB model treating 200 pg/ml GDNF. Effects of SPP on the TEER on day 6 (Q), the permeability of NaF, and FITC-Dex (R) of the triple co-culture BBB model. Effects of PP2 on the TEER on day 6 (S), the permeability of NaF, and FITC-Dex (T) of the triple co-culture BBB model. The above data are shown as the mean ± SEM. Four biological replicates per group. For B and C, two technical replicates per biological replicate. One technical replicate per biological replicate for the rest. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test, Welch’s ANOVA test, or Kruskal–Wallis test.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.Figure 2—source data 3.Figure 2.
+**Figure 2.:** (A) Effects of conditioned medium (CM) on claudin-5 and VE-cadherin expression. Con: the normal medium; S-CM: the CM from SH-SY5Y cells; U-CM: the CM from U251 cells; US-CM: the CM from SH-SY5Y cells co-culture with U251 cells. (B) The mRNA expression levels of neurotrophic factors in hCMEC/D3, U251, and SH-SY5Y cells. (C) Concentrations of GDNF, basic fibroblast growth factor (bFGF), insulin-like growth factor-1 (IGF-1), and transforming growth factor-β (TGF-β) in the CMs. H-CM: the CM from hCMEC/D3 cells. Effects of GDNF (D), IGF-1 (E), bFGF (F), and TGF-β (G) on the expression of claudin-5 and VE-cadherin. The dosages have been marked in the figure. Effects of anti-GDNF antibody on the upregulation of claudin-5 and VE-cadherin expression induced by US-CM (H) or 200 pg/ml GDNF (I). (J) Effects of 200 pg/ml GDNF and US-CM on claudin-5 and VE-cadherin expression in primary rat brain microvascular endothelial cells. Effects of 3 μM RET tyrosine kinase inhibitor SSP-86 (SPP), and 5 μM Src family kinases inhibitor PP2 on the upregulation of claudin-5 and VE-cadherin induced by 200 pg/mL GDNF (K) and US-CM (L). Effects of SPP on the transendothelial electrical resistance (TEER) on day 6 (M), the permeability of NaF, and FITC-Dex (N) of the hCMEC/D3 mono-culture blood–brain barrier (BBB) model treating 200 pg/ml GDNF. Effects of PP2 on the TEER on day 6 (O), the permeability of NaF, and FITC-Dex (P) of the hCMEC/D3 mono-culture BBB model treating 200 pg/ml GDNF. Effects of SPP on the TEER on day 6 (Q), the permeability of NaF, and FITC-Dex (R) of the triple co-culture BBB model. Effects of PP2 on the TEER on day 6 (S), the permeability of NaF, and FITC-Dex (T) of the triple co-culture BBB model. The above data are shown as the mean ± SEM. Four biological replicates per group. For B and C, two technical replicates per biological replicate. One technical replicate per biological replicate for the rest. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test, Welch’s ANOVA test, or Kruskal–Wallis test.
 
 The paracellular barrier of BBB is also associated with TJs, AJs, and transporters (Abbott, 2013). The mRNA levels of TJs (claudin-5, ZO-1, and occludin), AJs (VE-cadherin and β-catenin), and transporters (P-gp, BCRP, OCT-1, OCT-2, OAT-3, and OATP1A1) in hCMEC/D3 cells from the four BBB models were analyzed using quantitative real-time PCR (qPCR) (Figure 1J, K). Compared with hCMEC/D3 cell mono-culture model, double co-culture with SH-SY5Y, double co-culture with U251, and triple co-culture BBB models showed markedly increases in claudin-5, VE-cadherin, β-catenin, and BCRP mRNA expression. Expression of corresponding proteins was measured using western blot (Figure 1L–O). Notably increased claudin-5 expression was detected in double co-culture with SH-SY5Y cells and triple co-culture BBB models, while VE-cadherin expression was markedly increased in double co-culture with U251 cells and triple co-culture BBB models. Expression levels of other TJ proteins (ZO-1 and occludin) and AJ protein (β-catenin) were unaltered. The expression of BCRP was slightly affected by co-cultivation with U251 cells. Significant negative correlations were found between Papp values of fluorescein and the expression of claudin-5 or VE-cadherin. Papp values of FITC-Dex were also negatively correlated to the expression levels of claudin-5 or VE-cadherin (Figure 1P–S). These results indicate that the decreased permeability of fluorescein and FITC-Dex mainly results from the upregulated expression of both claudin-5 and VE-cadherin.
 
-## Neurons and astrocytes upregulated the expression of claudin-5 and VE-cadherin by glial cell line-derived neurotrophic factor secretion
+### Neurons and astrocytes upregulated the expression of claudin-5 and VE-cadherin by glial cell line-derived neurotrophic factor secretion
 
 The hCMEC/D3 cells did not direct contact with U251 or SH-SY5Y cells in the double co-culture and triple co-culture BBB models, indicating that cell–cell interaction between U251, SH-SY5Y, and hCMEC/D3 cells relied on secreted active factors. To test this hypothesis, the effects of CM from SH-SY5Y cells (S-CM), U251 cells (U-CM), and co-culture of SH-SY5Y and U251 cells (US-CM) on the expression of claudin-5 and VE-cadherin in hCMEC/D3 cells were analyzed (Figure 2A). Both S-CM, U-CM, and US-CM markedly increased the expression of claudin-5 and VE-cadherin. US-CM showed the strongest induction effects on claudin-5 and VE-cadherin.
 
@@ -59,45 +67,237 @@ GDNF forms a heterohexameric complex with two GFRα1 molecules and two RET recep
 
 The contributions of GDNF-induced claudin-5 and VE-cadherin expression to TEER and permeability were investigated using hCMEC/D3 cells mono-culture BBB model. GDNF significantly increased TEER values (Figure 2M, O) and decreased the permeability of fluorescein and FITC-Dex (Figure 2N, P), which were almost abolished by SPP-86 or PP2. Furthermore, treatment with SPP-86 or PP2 completely reversed the increased TEER values (Figure 2Q, S) and decreased permeability of fluorescein and FITC-Dex (Figure 2R, T) in the triple co-culture BBB model. These results indicate that neurons but also astrocytes upregulate claudin-5 and VE-cadherin expression in hCMEC/D3 cells by secreting GDNF. Subsequently, GDNF induces claudin-5 and VE-cadherin expression by activating GDNF–GFRα1–RET signaling.
 
-## GDNF-induced claudin-5 and VE-cadherin expression of hCMEC/D3 by activating the PI3K/AKT and MAPK/ERK pathways
+### GDNF-induced claudin-5 and VE-cadherin expression of hCMEC/D3 by activating the PI3K/AKT and MAPK/ERK pathways
 
 GDNF exerts its biological activities by activating several signaling pathways, including the phosphatidylinositol-3-kinase (PI3K)/protein kinase B (AKT), mitogen-activated protein kinase (MAPK)/extracellular regulated kinase (ERK), MAPK/c-Jun N-terminal kinase (JNK), and MAPK/ p38 pathways (Fielder et al., 2018). The effects of the PI3K/AKT, MAPK/ERK, MAPK/JNK, and MAPK/p38 pathway inhibitors LY294002 (Figure 3A), U0126 (Figure 3B), SP600125 (Figure 3C), and SB203580 (Figure 3D), respectively, on GDNF-induced claudin-5 and VE-cadherin expression in hCMEC/D3 cells were investigated. GDNF increased claudin-5 and VE-cadherin expression, accompanied by the phosphorylation of AKT (p-AKT) and ERK (p-ERK). However, it did not stimulate the phosphorylation of JNK and p38. SPP-86, LY29002, and U0126 significantly suppressed GDNF-induced claudin-5 and VE-cadherin expression, while SP600125 and SB203580 had almost no effect on GDNF-induced claudin-5 and VE-cadherin expression. GDNF-induced phosphorylation of AKT and ERK was also markedly attenuated by the anti-GDNF antibody (Figure 3E). Similarly, US-CM remarkably upregulated the expression of claudin-5, VE-cadherin, p-AKT, and p-ERK, which were also markedly reversed by SPP-86, LY29002, U0126, or anti-GDNF antibody (Figure 3F–J). These findings indicate that GDNF induces the expression of claudin-5 and VE-cadherin in hCMEC/D3 cells by activating both the PI3K/AKT and MAPK/ERK pathways.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig3-v1.jpg)
 
-**Figure 3.:** (A) Effects of 3 μM LY294002 (LY) on the levels of claudin-5, VE-cadherin, and p-AKT/AKT in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (B) Effects of 2 μM U0126 (U0) on the levels of claudin-5, VE-cadherin, and p-ERK/ERK in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (C) Effects of 5 μM SP600125 (SP) on the levels of claudin-5, VE-cadherin, and p-JNK/JNK in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (D) Effects of 2 μM SB203580 (SB) on the levels of claudin-5, VE-cadherin, and p-p38/p38 in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (E) Effects of anti-GDNF antibody on the GDNF-induced p-AKT/AKT and p-ERK/ERK ratios. (F) Effects of 3 μM LY on the levels of claudin-5, VE-cadherin, and p-AKT/AKT in hCMEC/D3 cells stimulated by US-CM. (G) Effects of 2 μM U0 on the levels of claudin-5, VE-cadherin, and p-ERK/ERK in hCMEC/D3 cells stimulated by US-CM. (H) Effects of 5 μM SP on the levels of claudin-5, VE-cadherin, and p-JNK/JNK in hCMEC/D3 cells stimulated by US-CM. (I) Effects of 2 μM SB on the levels of claudin-5, VE-cadherin, and p-p38/p38 in hCMEC/D3 cells stimulated by US-CM. (J) Effects of anti-GDNF antibody on the US-CM-induced p-AKT/AKT and p-ERK/ERK ratios. The above data are shown as the mean ± SEM. Four biological replicates per group. One technical replicate for each biological replicate. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test or Welch’s ANOVA test.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.Figure 3—source data 3.Figure 3.
+**Figure 3.:** (A) Effects of 3 μM LY294002 (LY) on the levels of claudin-5, VE-cadherin, and p-AKT/AKT in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (B) Effects of 2 μM U0126 (U0) on the levels of claudin-5, VE-cadherin, and p-ERK/ERK in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (C) Effects of 5 μM SP600125 (SP) on the levels of claudin-5, VE-cadherin, and p-JNK/JNK in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (D) Effects of 2 μM SB203580 (SB) on the levels of claudin-5, VE-cadherin, and p-p38/p38 in hCMEC/D3 cells stimulated by 200 pg/ml GDNF. (E) Effects of anti-GDNF antibody on the GDNF-induced p-AKT/AKT and p-ERK/ERK ratios. (F) Effects of 3 μM LY on the levels of claudin-5, VE-cadherin, and p-AKT/AKT in hCMEC/D3 cells stimulated by US-CM. (G) Effects of 2 μM U0 on the levels of claudin-5, VE-cadherin, and p-ERK/ERK in hCMEC/D3 cells stimulated by US-CM. (H) Effects of 5 μM SP on the levels of claudin-5, VE-cadherin, and p-JNK/JNK in hCMEC/D3 cells stimulated by US-CM. (I) Effects of 2 μM SB on the levels of claudin-5, VE-cadherin, and p-p38/p38 in hCMEC/D3 cells stimulated by US-CM. (J) Effects of anti-GDNF antibody on the US-CM-induced p-AKT/AKT and p-ERK/ERK ratios. The above data are shown as the mean ± SEM. Four biological replicates per group. One technical replicate for each biological replicate. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test or Welch’s ANOVA test.
 
-## GDNF upregulated the claudin-5 expression in hCMEC/D3 cells by activating the PI3K/AKT/FOXO1 pathway
+### GDNF upregulated the claudin-5 expression in hCMEC/D3 cells by activating the PI3K/AKT/FOXO1 pathway
 
 Claudin-5 is negatively regulated by the transcriptional repressor forkhead box O1 (FOXO1) (Beard et al., 2020). FOXO1 is also an important target of PI3K/AKT signaling. FOXO1 phosphorylation results in FOXO1 accumulation in the cytoplasm (Zhang et al., 2011) and lowers its level in the nucleus. Here, we investigated whether GDNF-induced claudin-5 expression is involved in FOXO1 nuclear exclusion. As shown in Figure 4A, both GDNF and US-CM significantly enhanced FOXO1 phosphorylation (p-FOXO1). Similarly, GDNF and US-CM increased the levels of phosphorylated and unphosphorylated FOXO1 in the cytoplasm and decreased the levels of nuclear FOXO1 (Figure 4B). Whether FOXO1 was involved in the GDNF-induced regulation of claudin-5 and VE-cadherin expression was investigated in hCMEC/D3 cells transfected with FOXO1 small interfering RNA (siRNA). Silencing FOXO1 significantly decreased FOXO1 levels in both whole-cell lysates and nucleus of hCMEC/D3 cells (Figure 4C), demonstrating FOXO1 silencing efficacy. Consistent with our expectation, silencing FOXO1 upregulated the expression of claudin-5 rather than VE-cadherin expression (Figure 4D). In contrast, high levels of FOXO1 were observed in both whole-cell lysates and nucleus of hCMEC/D3 cells that were transfected with plasmids containing FOXO1. Meanwhile, FOXO1 overexpression resulted in a decrease in both basal and GDNF-induced claudin-5 expression (Figure 4E), consistent with the known role of FOXO1 on claudin-5 expression.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig4-v1.jpg)
+
+**Figure 4.:** Effects of US-CM and GDNF on the phosphorylated FOXO1 (p-FOXO1)/FOXO1 ratio, total FOXO1 expression (A), cytoplasmic p-FOXO1, cytoplasmic FOXO1, and nuclear FOXO1 expression (B). The expression levels of total and nuclear FOXO1 (C), claudin-5, and VE-cadherin (D) in hCMEC/D3 cells transfected with FOXO1 siRNA (siFOXO1). NC: negative control. (E) Effects of FOXO1 overexpression (FOXO1-OE) and GDNF on the expression levels of claudin-5, total FOXO1, and nuclear FOXO1. FOXO1-NC: negative control plasmids. (F) Effects of LY and U0 on GDNF-induced alterations of total p-FOXO1/FOXO1 ratio, cytoplasmic p-FOXO1, cytoplasmic FOXO1, and nuclear FOXO1 expression. (G) Effects of LY on the claudin-5 expression upregulated by siFOXO1. The above data are shown as the mean± SEM. Four biological replicates per group. One technical replicate for each biological replicate. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test, Welch’s ANOVA test, or Kruskal–Wallis test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Effects of the VE-cadherin siRNA (siVE-Cad) on mRNA expression of VE-cadherin (A) and claudin-5 (B). Effects of siVE-Cad and GDNF on claudin-5 and VE-cadherin protein expression (C). NC: negative control plasmids. The above data are shown as the mean ± SEM. Four biological replicates per group. Two technical replicates for A and B and one technical replicate for C. Statistical significance was determined using unpaired t-test or one-way ANOVA test followed by Fisher’s LSD test.
 
 Several reports have demonstrated that nuclear localization of FOXO1 is modulated by multiple pathways, including the PI3K/AKT (Tang et al., 1999) and MAPK/ERK (Asada et al., 2007) pathways. The effects of LY294002 and U0126 on GDNF-induced FOXO1 phosphorylation were measured in hCMEC/D3 cells. LY294002, but not U0126, significantly reversed the GDNF-induced alterations in total p-FOXO1, cytoplasmic p-FOXO1, cytoplasmic FOXO1, and nuclear FOXO1 (Figure 4F). Furthermore, LY294002 reversed the upregulation of claudin-5 expression induced by FOXO1 siRNA and GDNF (Figure 4G).
 
 It was reported that VE-cadherin also upregulates claudin-5 via inhibiting FOXO1 activities (Taddei et al., 2008). Effect of VE-cadherin on claudin-5 was studied in hCMEC/D3 cells silencing VE-cadherin. It was not consistent with Taddei et al. that silencing VE-cadherin only slightly decreased the mRNA level of claudin-5 without significant difference. Furthermore, basal and GDNF-induced claudin-5 protein levels were unaltered by silencing VE-cadherin (Figure 4—figure supplement 1). Thus, the roles of VE-cadherin in regulation of claudin-5 in BBB should be further investigated.
 
-## GDNF upregulated VE-cadherin expression in hCMEC/D3 cells by activating the PI3K/AKT/ETS1 and MAPK/ERK/ETS1 signaling pathways
+### GDNF upregulated VE-cadherin expression in hCMEC/D3 cells by activating the PI3K/AKT/ETS1 and MAPK/ERK/ETS1 signaling pathways
 
 E26 oncogene homolog 1 (ETS1) is a transcription factor that binds to the ETS-binding site located in the proximal region of the VE-cadherin promoter, hence regulating the expression of VE-cadherin (Lelièvre et al., 2000; Luo et al., 2022). Activation of the PI3K/AKT (He et al., 2023; Hui et al., 2018) and MAPK/ERK (Watanabe et al., 2004) pathways was reported to upregulate the expression of ETS1. The previous results showed that GDNF-induced VE-cadherin and claudin-5 expression in hCMEC/D3 cells by activating the PI3K/AKT and MAPK/ERK pathways. Therefore, we hypothesized that GDNF modulated ETS1 levels to promote VE-cadherin and claudin-5 expression through PI3K/AKT and MAPK/ERK signaling pathways. Both US-CM and GDNF significantly increased total (Figure 5A) and nuclear ETS1 expression (Figure 5B). LY294002 and U0126 markedly attenuated GDNF-induced total (Figure 5C) and nuclear ETS1 expression (Figure 5D). To further confirm the involvement of the PI3K/AKT/ETS1 and MAPK/ERK/ETS1 pathways in GDNF-induced VE-cadherin expression, ETS1 in hCMEC/D3 cells was knocked down using ETS1 siRNA. ETS1 silencing saliently declined the expression levels of total (Figure 5E) and nuclear (Figure 5F) ETS1 in hCMEC/D3 cells, demonstrating silencing efficacy. In ETS1 silencing hCMEC/D3 cells, GDNF no longer induced the expression of total (Figure 5E) and nuclear (Figure 5F) ETS1. Moreover, ETS1 silencing substantially downregulated VE-cadherin expression and attenuated GDNF-induced VE-cadherin expression, while having minimal impact on both basal and GDNF-induced claudin-5 expression (Figure 5G).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig5-v1.jpg)
 
-**Figure 5.:** Effects of US-CM and GDNF on total (A) and nuclear (B) ETS1 expression. Effects of LY and U0 on 200 pg/ml GDNF-induced total (C) and nuclear (D) ETS1 expression. Expression levels of total (E) and the nuclear ETS1 (F) in hCMEC/D3 cells after knocking down ETS1 with siRNA (siETS1). (G) Effects of GDNF and siETS1 on the expression of VE-cadherin and claudin-5. The above data are shown as the mean ± SEM. Four biological replicates per group. One technical replicate for each biological replicate. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test.Figure 5—source data 1.Figure 5.Figure 5—source data 2.Figure 5.Figure 5—source data 3.Figure 5.
+**Figure 5.:** Effects of US-CM and GDNF on total (A) and nuclear (B) ETS1 expression. Effects of LY and U0 on 200 pg/ml GDNF-induced total (C) and nuclear (D) ETS1 expression. Expression levels of total (E) and the nuclear ETS1 (F) in hCMEC/D3 cells after knocking down ETS1 with siRNA (siETS1). (G) Effects of GDNF and siETS1 on the expression of VE-cadherin and claudin-5. The above data are shown as the mean ± SEM. Four biological replicates per group. One technical replicate for each biological replicate. *p < 0.05; **p < 0.01 by one-way ANOVA test followed by Fisher’s LSD test.
 
-## Brain GDNF deficiency increased BBB permeability partly due to the impairment of claudin-5 and VE-cadherin expression
+### Brain GDNF deficiency increased BBB permeability partly due to the impairment of claudin-5 and VE-cadherin expression
 
 To further demonstrate the positive effects of GDNF on BBB maintenance, GDNF in mice brains was knocked down via intracerebroventricular (i.c.v) injection of AAV-PHP.eB packaged with Gdnf short hairpin RNA (shRNA) (Figure 6A). Knockdown efficiency was confirmed through western blotting (Figure 6B). Consistent with in vitro results, GDNF knockdown greatly downregulated claudin-5 and VE-cadherin expression in the mice brains (Figure 6B). The integrity of BBB was assessed by examining the brain distributions of fluorescein and FITC-Dex. The results showed that specifically knocking down brain GDNF little affected plasma levels of fluorescein (Figure 6C) and FITC-Dex (Figure 6F), but significantly elevated the concentrations of fluorescein (Figure 6D) and FITC-Dex (Figure 6G) in the brains, leading to notable increases in the brain-to-plasma concentration ratios of two probes (Figure 6E, H). These alterations were consistent with the decline in claudin-5 and VE-cadherin expression. In addition, significant reductions in the levels of p-AKT (Figure 6I), p-ERK (Figure 6J), p-FOXO1 (Figure 6K), and ETS1 expression (Figure 6L) were observed in the brains of Gdnf knockdown mice.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig6-v1.jpg)
 
-**Figure 6.:** (A) Experimental configuration of AAV-GFP (shNC) or AAV-shGdnf (shGdnf) intracerebroventricular injection. (B) Effects of brain-specific Gdnf silencing on the expression levels of GDNF, claudin-5, and VE-cadherin in the brains. Effects of brain-specific Gdnf silencing on NaF levels in plasma (C), brain (D), and the ratio of brain to plasma (E). Effects of brain-specific Gdnf silencing on FITC-Dex levels in plasma (F), brain (G), and the ratio of brain to plasma (H). The expression ratios of p-AKT/AKT (I), p-ERK/ERK (J), and p-FOXO1/FOXO1 (K) in the brains of Gdnf silencing mice. (L) The expression level of ETS1 in the brains of Gdnf silencing mice. The above data are shown as the mean ± SEM. Six biological replicates per group. One technical replicate for each biological replicate. *p < 0.05; **p < 0.01 by unpaired t-test, unpaired t-test with Welch’s correction, or Mann–Whitney test.Figure 6—source data 1.Figure 6.Figure 6—source data 2.Figure 6.Figure 6—source data 3.Figure 6.
+**Figure 6.:** (A) Experimental configuration of AAV-GFP (shNC) or AAV-shGdnf (shGdnf) intracerebroventricular injection. (B) Effects of brain-specific Gdnf silencing on the expression levels of GDNF, claudin-5, and VE-cadherin in the brains. Effects of brain-specific Gdnf silencing on NaF levels in plasma (C), brain (D), and the ratio of brain to plasma (E). Effects of brain-specific Gdnf silencing on FITC-Dex levels in plasma (F), brain (G), and the ratio of brain to plasma (H). The expression ratios of p-AKT/AKT (I), p-ERK/ERK (J), and p-FOXO1/FOXO1 (K) in the brains of Gdnf silencing mice. (L) The expression level of ETS1 in the brains of Gdnf silencing mice. The above data are shown as the mean ± SEM. Six biological replicates per group. One technical replicate for each biological replicate. *p < 0.05; **p < 0.01 by unpaired t-test, unpaired t-test with Welch’s correction, or Mann–Whitney test.
 
-## The triple co-culture BBB model better predicted the permeabilities of drugs across BBB
+### The triple co-culture BBB model better predicted the permeabilities of drugs across BBB
 
 In this study, 18 drugs were utilized to further investigate the superiority of the triple co-culture BBB model over the hCMEC/D3 mono-culture BBB model. The Papp of 18 drugs from the apical to the basolateral side based on the hCMEC/D3 mono-culture (Papp, Mono) and triple co-culture (Papp, Triple) BBB models are measured and listed in Table 1. The results showed that Papp, Triple values of all tested drugs were lower than the Papp, Mono values. Significant differences were observed in 14 out of 18 drugs. The predicted permeability coefficient-surface area product values (PS) of the tested drugs were, respectively, calculated based on their Papp, Mono values (PSPre, Mono) and Papp, Triple values (PSPre, Triple). The predicted PS values were further compared to their corresponding observations (PSobs). The results showed that the predictive accuracy of PSPre, Triple was superior to PSPre, Mono. Except for verapamil, amitriptyline, fluoxetine, and clozapine, the predicted PSPre, Triple values of the other 14 drugs in the triple co-culture BBB models were within the 0.5- to 2-folds of PSobs (Figure 7B). However, in the hCMEC/D3 mono-culture BBB model, only seven predicted PSPre, Mono values were within the 0.5- to 2-folds range of their observations (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig7-v1.jpg)
 
-**Figure 7.:** In vitro/in vivo correlation assay of blood–brain barrier (BBB) permeability.(A) The comparison of the estimated permeability coefficient-surface area product (PS) recalculated from Pre, MonoP with the observed app, Monoin vivo PS values (PS). (ObsB) The comparison of the estimated permeability coefficient-surface area product (PS Pre,) recalculated from TripleP with the observed app, Triplein vivo PS values (PS). The solid line represents a perfect prediction, and the dashed lines represent the 0.5- to 2-folds of their observations. The ObsPS values were determined by Obsin situ brain perfusion in rodents, which were collected from the literature.
+**Figure 7.:** (A) The comparison of the estimated permeability coefficient-surface area product (PSPre, Mono) recalculated from Papp, Mono with the observed in vivo PS values (PSObs). (B) The comparison of the estimated permeability coefficient-surface area product (PSPre, Triple) recalculated from Papp, Triple with the observed in vivo PS values (PSObs). The solid line represents a perfect prediction, and the dashed lines represent the 0.5- to 2-folds of their observations. The PSObs values were determined by in situ brain perfusion in rodents, which were collected from the literature.
+
+**Table 1.**
+ The unbound fraction in brain (fu, brain), the observed PSObs, and the predicted PS (PSPre), Papp across the hCMEC/D3 mono-culture model (Papp, Mono) and triple co-culture model (Papp, Triple) of the tested drugs.Table 1—source data 1.The apparent permeability coefficients of 18 tested drugs from mono- or triple- culture blood–brain barrier (BBB) model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compounds</th>
+      <th>fu, brain</th>
+      <th>PSObsμl/min/g</th>
+      <th>Papp, Mono cm/s × 10−6</th>
+      <th>PSPre, Monoμl/min/g</th>
+      <th>Papp, Triple cm/s × 10−6</th>
+      <th>PSPre, Tripleμl/min/g</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amantadine</td>
+      <td>0.1985*</td>
+      <td>116.10†</td>
+      <td>6.84 ± 0.95</td>
+      <td>310.22</td>
+      <td>3.64 ± 0.26</td>
+      <td>165.23</td>
+    </tr>
+    <tr>
+      <td>Amitriptyline</td>
+      <td>0.01‡</td>
+      <td>4608.00***</td>
+      <td>15.24 ± 0.64</td>
+      <td>13,716.00</td>
+      <td>14.61 ± 0.27</td>
+      <td>13,149.00</td>
+    </tr>
+    <tr>
+      <td>Bupropion</td>
+      <td>0.12§</td>
+      <td>1519.20†</td>
+      <td>15.19 ± 0.20</td>
+      <td>1139.58</td>
+      <td>11.34 ± 0.44</td>
+      <td>850.58</td>
+    </tr>
+    <tr>
+      <td>Carbamazepine</td>
+      <td>0.116¶</td>
+      <td>959.40†</td>
+      <td>34.37 ± 1.26</td>
+      <td>2666.89</td>
+      <td>11.71 ± 0.15</td>
+      <td>908.69</td>
+    </tr>
+    <tr>
+      <td>Clozapine</td>
+      <td>0.014**</td>
+      <td>2260.80†</td>
+      <td>38.97 ± 0.54</td>
+      <td>25,052.57</td>
+      <td>12.87 ± 2.06</td>
+      <td>8272.72</td>
+    </tr>
+    <tr>
+      <td>Donepezil</td>
+      <td>0.07††</td>
+      <td>1581.30†</td>
+      <td>20.91 ± 0.75</td>
+      <td>2688.43</td>
+      <td>14.47 ± 0.84</td>
+      <td>1860.43</td>
+    </tr>
+    <tr>
+      <td>Doxepin</td>
+      <td>0.025†</td>
+      <td>2192.40†</td>
+      <td>16.88 ± 1.08</td>
+      <td>6076.80</td>
+      <td>10.66 ± 0.92</td>
+      <td>3837.60</td>
+    </tr>
+    <tr>
+      <td>Fluoxetine</td>
+      <td>0.004†</td>
+      <td>2698.20†</td>
+      <td>11.48 ± 0.85</td>
+      <td>25,830.00</td>
+      <td>9.97 ± 1.03</td>
+      <td>22,430.25</td>
+    </tr>
+    <tr>
+      <td>Gabapentin</td>
+      <td>0.782†</td>
+      <td>162.90†</td>
+      <td>16.75 ± 1.62</td>
+      <td>192.77</td>
+      <td>8.78 ± 0.23</td>
+      <td>101.05</td>
+    </tr>
+    <tr>
+      <td>Lamotrigine</td>
+      <td>0.273†</td>
+      <td>126.00†</td>
+      <td>14.26 ± 0.37</td>
+      <td>470.11</td>
+      <td>5.97 ± 0.11</td>
+      <td>196.88</td>
+    </tr>
+    <tr>
+      <td>Metoclopramide</td>
+      <td>0.365†</td>
+      <td>125.10†</td>
+      <td>14.14 ± 1.44</td>
+      <td>348.66</td>
+      <td>6.63 ± 0.42</td>
+      <td>163.41</td>
+    </tr>
+    <tr>
+      <td>Midazolam</td>
+      <td>0.045‡ ‡</td>
+      <td>2727.00†</td>
+      <td>25.30 ± 1.00</td>
+      <td>5060.00</td>
+      <td>19.09 ± 0.24</td>
+      <td>3818.00</td>
+    </tr>
+    <tr>
+      <td>Mirtazapine</td>
+      <td>0.08†</td>
+      <td>1912.50†</td>
+      <td>23.44 ± 0.44</td>
+      <td>2637.00</td>
+      <td>17.86 ± 0.21</td>
+      <td>2009.25</td>
+    </tr>
+    <tr>
+      <td>Olanzapine</td>
+      <td>0.034†</td>
+      <td>2279.70†</td>
+      <td>22.91 ± 3.80</td>
+      <td>6064.41</td>
+      <td>12.49 ± 0.53</td>
+      <td>3306.18</td>
+    </tr>
+    <tr>
+      <td>Prazosin</td>
+      <td>0.09§ §</td>
+      <td>169.20¶ ¶</td>
+      <td>5.61 ± 0.38</td>
+      <td>560.93</td>
+      <td>2.81 ± 0.52</td>
+      <td>280.99</td>
+    </tr>
+    <tr>
+      <td>Risperidone</td>
+      <td>0.099†</td>
+      <td>849.60†</td>
+      <td>16.10 ± 2.87</td>
+      <td>1463.64</td>
+      <td>11.70 ± 0.25</td>
+      <td>1063.64</td>
+    </tr>
+    <tr>
+      <td>Venlafaxine</td>
+      <td>0.205*</td>
+      <td>584.10†</td>
+      <td>9.58 ± 0.28</td>
+      <td>420.60</td>
+      <td>8.25 ± 0.36</td>
+      <td>362.02</td>
+    </tr>
+    <tr>
+      <td>Verapamil</td>
+      <td>0.033 ‡</td>
+      <td>335.70 ‡</td>
+      <td>7.21 ± 0.41</td>
+      <td>1965.24</td>
+      <td>5.56 ± 0.06</td>
+      <td>1517.67</td>
+    </tr>
+  </tbody>
+</table>
+
+_One technical replicate of four biological replicates per group.*(Esaki et al., 2019).†(Summerfield et al., 2007).‡(Fridén et al., 2011).§(Bhattacharya et al., 2021).¶(Maurer et al., 2005).**(Cremers et al., 2012).††(Di et al., 2011).‡ ‡(Kodaira et al., 2011).§ §(Zhou et al., 2009).¶ ¶(Di Marco et al., 2019).***(Avdeef and Sun, 2011)._
 
 ## Discussion
 
@@ -131,11 +331,343 @@ However, the study also has some limitations. In addition to neurons and astrocy
 
 ## Materials and methods
 
-## Cell culture and viability assay
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin(mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>66009RRID:AB_2883475</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH(mouse monoclonal)</td>
+      <td>Absin</td>
+      <td>Abs830030ssRRID:AB_2811228</td>
+      <td>1:50,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Tubulin(mouse monoclonal)</td>
+      <td>Fdbio Science</td>
+      <td>FD0064RRID:AB_3076327</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Lamin B(mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>66095RRID:AB_2721256</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Claudin-5(rabbit polyclonal)</td>
+      <td>Wanleibio</td>
+      <td>WL03731RRID:AB_3076320</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Occludin(rabbit polyclonal)</td>
+      <td>Wanleibio</td>
+      <td>WL01996RRID:AB_3076325</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ZO-1(mouse polyclonal)</td>
+      <td>Proteintech</td>
+      <td>21773-1-APRRID:AB_10733242</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VE-cadherin(rabbit polyclonal)</td>
+      <td>Wanleibio</td>
+      <td>WL02033RRID:AB_3076321</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Catenin(rabbit polyclonal)</td>
+      <td>Wanleibio</td>
+      <td>WL0962aRRID:AB_3076323</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BCPR(rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>4477SRRID:AB_10544928</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-gp(rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>13978SRRID:AB_2798357</td>
+      <td>1:1500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-AKT(mouse monoclonal)</td>
+      <td>Huaan Biotechnology</td>
+      <td>ET1607RRID:AB_2940863</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AKT(mouse monoclonal)</td>
+      <td>Huaan Biotechnology</td>
+      <td>ET1609RRID:AB_3069857</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-ERK(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>28733-1-APRRID:AB_2881202</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ERK(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>11257-1-APRRID:AB_2139822</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-p38(rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>4511SRRID:AB_10890701</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p38(rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>8690SRRID:AB_10999090</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-JNK(rabbit polyclonal)</td>
+      <td>Wanleibio</td>
+      <td>WL01813RRID:AB_2910628</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>JNK(rabbit polyclonal)</td>
+      <td>Wanleibio</td>
+      <td>WL01295RRID:AB_3064853</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FOXO1(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>18592RRID:AB_2934932</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-FOXO1(rabbit polyclonal)</td>
+      <td>Wanleibio</td>
+      <td>WL03634RRID: AB_3076326</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ETS1(mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-55581RRID:AB_831289</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ETS1(mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>66598RRID:AB_2881958</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hCMEC/D3 cells</td>
+      <td>JENNIOBiological Technology, Guangzhou, China</td>
+      <td>Cat#JNO-H0520RRID:CVCL_U985</td>
+      <td>Authenticated(STR profiling)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U251 cells</td>
+      <td>Cellcook Biological Technology, Guangzhou, China</td>
+      <td>Cat#CC1701RRID:CVCL_0021</td>
+      <td>Authenticated(STR profiling)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SH-SY5Y cells</td>
+      <td>Cellcook Biological Technology, Guangzhou, China</td>
+      <td>Cat#CC2101RRID:CVCL_0019</td>
+      <td>Authenticated(STR profiling)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Version 8.0.2</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioTek Cytation 5 Cell Imaging Multi-Mode Reader</td>
+      <td>BioTek Cytation 5</td>
+      <td>RRID:SCR_019732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantStudio 3 Real Time PCR System</td>
+      <td>QuantStudio 3</td>
+      <td>RRID:SCR_018712</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACS Celesta Flow Cytometer</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_019597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo software</td>
+      <td>Version 10.4</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GDNF-Elisa kit</td>
+      <td>R&amp;D systemRRID:SCR_006140</td>
+      <td>Cat#212-GD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>bFGF-Elisa kit</td>
+      <td>ElabscienceRRID:SCR_025982</td>
+      <td>Cat#E-EL-H6042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IGF-1-Elisa kit</td>
+      <td>ElabscienceRRID:SCR_025982</td>
+      <td>Cat#E-EL-H0086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TGF-β-Elisa kit</td>
+      <td>ElabscienceRRID:SCR_025982</td>
+      <td>Cat#E-EL-0162</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GDNF</td>
+      <td>R&amp;D systemRRID:SCR_006140</td>
+      <td>Cat#212-GD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>bFGF</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#HY-P7331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IGF-1</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#HY-P70783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TGF-β</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#HY-P70543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SPP-86</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#HY-110193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PP2</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#HY-13805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LY294002</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#HY-10108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U0126</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#S1102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SP600125</td>
+      <td>SelleckRRID:SCR_003823</td>
+      <td>Cat#HY-12041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB203580</td>
+      <td>MedChemExpressRRID:SCR_025062</td>
+      <td>Cat#HY-10256</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and viability assay
 
 Rat BMECs were isolated from Sprague-Dawley rats (male, 7–10 days old, Sino-British Sippr/BKLaboratory Animal Ltd, Shanghai, China) as the described method (Ji et al., 2013; Li et al., 2013) and cultured in Dulbecco’s Modified Eagle Media (DMEM)/F12 (#12500-039, Gibco, Carlsbad, CA, USA) containing 10% fetal bovine serum (FBS) (#10100147C, Gibco, Carlsbad, CA, USA) and 62.5 µg/ml penicillin and 100 µg/ml streptomycin (SunShine Biotechnology Co., Ltd, Nanjing, China). Then, hCMEC/D3, U251, and SH-SY5Y cells were cultured in DMEM/F12 containing 10% FBS, 62.5 µg/ml penicillin and 100 µg/ml streptomycin. Cell viability was assessed using a CCK-8 kit (Beyotime Biotechnology, Shanghai, China), and the results were expressed as the fold of control.
 
-## Establishment of the triple co-culture model
+### Establishment of the triple co-culture model
 
 Although hCMEC/D3 cells have poor barrier properties and low TEER compared to human physiological BBB, the use of human BMECs may be restricted by the acquisition of materials and ethical approval. Isolation and purification of primary BMECs are time-consuming and laborious. Moreover, culture conditions can alter transcriptional activity (Qi et al., 2023). All limit the establishment of BBB models based on primary human BMECs for high-throughput screening. Here, hCMEC/D3 cells were selected to establish an in vitro BBB model.
 
@@ -143,70 +675,364 @@ The establishment process of the triple co-culture model is illustrated in Figur
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/96161/elife-96161-fig9-v1.jpg)
 
-## EdU incorporation assay
+### EdU incorporation assay
 
 The cells were incubated with medium containing 10 μM Edu for 2 hr. Then cells were washed by phosphate-buffered saline (PBS) and harvested by 0.25% trypsin–ethylenediaminetetraacetic acid (#25200072, Gibco, Carlsbad, CA, USA). The EdU incorporation assay was measured using the BeyoClick EdU Cell Proliferation Kit (Beyotime Biotechnology, Shanghai, China) according to the manufacturer’s instructions. The samples were determined on the FACSCelesta flow cytometer (Becton, Dickins on and Company, USA), and data were analyzed by Flowjo 10.4 software.
 
-## In vitro BBB permeability study
+### In vitro BBB permeability study
 
 On day 7, the TEER values of BBB models showed a decreasing trend. Therefore, the subsequent experiments were all completed on day 6. The culture medium was removed from the apical and basolateral sides of the inserts and washed twice with preheated Hank’s balanced salt solution (HBSS). Fresh HBSS was then added to both the apical and basolateral chambers. After 15 min of preincubation, HBSS in the apical and basolateral chambers was replaced with HBSS containing FITC-dextran 3–5 kDa (FITC-Dex) (Sigma-Aldrich, St. Louis, MO, USA), fluorescein sodium (Sigma-Aldrich, St. Louis, MO, USA), or other tested agents and blank HBSS, respectively. Next, 200 μl aliquots were collected from the basolateral chamber after 30 min of incubation at 37°C. The concentrations of the tested agents in the basolateral chamber were measured.
 
-The apparent permeability coefficient (Papp, cm/s) values of the tested agents across the in vitro BBB model were calculated using the equation (Tavelin et al., 2002):(1)Papp=(Q/1800)/(S×C0)
+The apparent permeability coefficient (Papp, cm/s) values of the tested agents across the in vitro BBB model were calculated using the equation (Tavelin et al., 2002):
+
+$$
+P_{app}=(Q/1800)/(S\timesC_{0})
+$$
 
 where S is the surface area of the insert membrane (0.33 cm2 for 6.5 mm inserts, 4.46 cm2 for 24 mm inserts), Q is the transported amount of the tested agents transported from the donor chamber to the receiver chamber for 30 min (1800 s), and C0 is the initial concentration of the tested agents in the donor chamber.
 
-## The quantification methods of prazosin, verapamil, lamotrigine
+### The quantification methods of prazosin, verapamil, lamotrigine
 
 Prazosin, verapamil, and lamotrigine (Aladdin, Shanghai, China) were analyzed by high-performance liquid chromatography (Shimadzu, Kyoto, Japan) with YMC-Triart C18 column (5 μm, 150 × 4.6 mm, YMC America Inc, Allentown, PA, USA). Prazosin and verapamil were detected using the RF-20A fluorescence detector. Lamotrigine was detected using the SPD-20A ultraviolet detector. Samples were centrifugated at 12,000 rpm for 10 min, then 150 μl supernatant was taken and used for analysis. The run temperature was set at 40°C, the injection volume was 20 μl and the flow rate was 1 ml/min. Initial concentrations in donor chamber and other chromatographic conditions of drugs are summarized in Table 2.
 
-## The quantification methods of clozapine, venlafaxine, bupropion, amantadine, carbamazepine, fluoxetine, amitriptyline, gabapentin, midazolam, risperidone, olanzapine, mirtazapine, metoclopramide, doxepin, donepezil
+**Table 2.**
+ Initial concentrations in donor chamber and chromatographic conditions of prazosin, verapamil, and lamotrigine.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>Concentration (μM)</th>
+      <th>Wavelength (nm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Prazosin</td>
+      <td rowspan="2">5</td>
+      <td>Ex: 250</td>
+    </tr>
+    <tr>
+      <td>Em: 390</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Verapamil</td>
+      <td rowspan="2">5</td>
+      <td>Ex: 280</td>
+    </tr>
+    <tr>
+      <td>Em: 310</td>
+    </tr>
+    <tr>
+      <td>Lamotrigine</td>
+      <td>6</td>
+      <td>220</td>
+    </tr>
+  </tbody>
+</table>
+
+### The quantification methods of clozapine, venlafaxine, bupropion, amantadine, carbamazepine, fluoxetine, amitriptyline, gabapentin, midazolam, risperidone, olanzapine, mirtazapine, metoclopramide, doxepin, donepezil
 
 All compounds were purchased from Aladdin (Shanghai, China). Except for prazosin, verapamil, and lamotrigine, the other compounds were analyzed by using liquid chromatography–mass spectrometry (Shimadzu, Kyoto, Japan) with YMC-Triart C18 column (5 μm, 150 × 2.0 mm, YMC America Inc, Allentown, PA, USA). Each sample was mixed with 10 µl internal standard. Then 1 ml extraction was added to each sample. The samples were vortex vibrated on the oscillator for 10 min, and then centrifuged at 4°C and 12,000 rpm for 10 min. The supernatant solvent was evaporated with nitrogen flow, then redissolved with 100 µl 40% (vol/vol) acetonitrile, and centrifuged at 4°C and 15,000 rpm for 10 min. The supernatants were injected into LC–MS for analysis. The injection volume of each sample was 5 µl. The mass charge ratio, extraction, and initial concentrations in donor chamber of drugs are summarized in Table 3.
 
-## Cell density analysis
+**Table 3.**
+ The summary of mass charge ratio, extraction, initial concentrations in donor chamber.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>Concentration (μM)</th>
+      <th>Mass charge ratio[M+H]+</th>
+      <th>Extraction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amantadine</td>
+      <td>3</td>
+      <td>181</td>
+      <td>Water-saturated N-butanol</td>
+    </tr>
+    <tr>
+      <td>Amitriptyline</td>
+      <td>1.5</td>
+      <td>278</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Bupropion</td>
+      <td>3</td>
+      <td>240</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Carbamazepine</td>
+      <td>3</td>
+      <td>237</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Clozapine</td>
+      <td>4</td>
+      <td>327</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Donepezil</td>
+      <td>3</td>
+      <td>380</td>
+      <td>Methyl tert-butyl ether</td>
+    </tr>
+    <tr>
+      <td>Doxepin</td>
+      <td>4</td>
+      <td>317</td>
+      <td>Methyl tert-butyl ether</td>
+    </tr>
+    <tr>
+      <td>Fluoxetine</td>
+      <td>3</td>
+      <td>310</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Gabapentin</td>
+      <td>10</td>
+      <td>172</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Metoclopramide</td>
+      <td>4</td>
+      <td>301</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Midazolam</td>
+      <td>3</td>
+      <td>327</td>
+      <td>Ethyl acetate</td>
+    </tr>
+    <tr>
+      <td>Mirtazapine</td>
+      <td>3</td>
+      <td>266</td>
+      <td>Methyl tert-butyl ether</td>
+    </tr>
+    <tr>
+      <td>Olanzapine</td>
+      <td>3</td>
+      <td>313</td>
+      <td>Methyl tert-butyl ether</td>
+    </tr>
+    <tr>
+      <td>Risperidone</td>
+      <td>4</td>
+      <td>427</td>
+      <td>Methyl tert-butyl ether</td>
+    </tr>
+    <tr>
+      <td>Venlafaxine</td>
+      <td>10</td>
+      <td>278</td>
+      <td>Ethyl acetate</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell density analysis
 
 On day 6 of co-culture, hCMEC/D3 cells were fixed with 4% paraformaldehyde for 15 min and washed with PBS for three times. Next, the fixed cells were blocked with 5% goat serum for 2 hr and washed with PBS for four times. The blocked cells were incubated with 4’,6-diamidino-2-phenylindole (DAPI) (Invitrogen, Carlsbad, CA, USA) and washed with PBS for four times. Cell numbers were counted using Cytation5 (BioTek, Winooski, VT, USA).
 
-## Reverse transcription and qPCR
+### Reverse transcription and qPCR
 
 Total RNA of cells was extracted using RNAiso Plus reagent (Takara Bio Inc, Otsu, Shiga, Japan) and reverse transcribed using HiScript III RT SuperMix (Vazyme, Shanghai, China) as the described method (Yang et al., 2023). Paired primers were synthesized by Tsingke Biotech Co., Ltd (Beijing, China), and their sequences are listed in Table 4. The SYBR Master Mix was purchased from Yeasen (Shanghai, China). Then, qPCR was performed on the Applied Biosystems QuantStudio 3 real-time PCR system (Thermo Fisher Scientific, Waltham, MA, USA). The mRNA levels of related genes were normalized to ACTB or GAPDH using the comparative cycle threshold method.
 
-## Western blotting analysis
+**Table 4.**
+ Primer sequences for quantitative real-time PCR (qPCR) for indicted genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene (protein)</th>
+      <th>Forwards primer, 5′→3′</th>
+      <th>Reverse primer, 3′→5′</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACTB (β-actin)</td>
+      <td>GGACTTCGAGCAAGAGATGG</td>
+      <td>AGCACTGTGTTGGCGTACAG</td>
+    </tr>
+    <tr>
+      <td>GAPDH (GAPDH)</td>
+      <td>TGTGGGCATCAATGGATTTGG</td>
+      <td>ACACCATGTATTCCGGGTCAAT</td>
+    </tr>
+    <tr>
+      <td>CLDN5 (claudin-5)</td>
+      <td>CTCTGCTGGTTCGCCAACAT</td>
+      <td>CAGCTCGTACTTCTGCGACA</td>
+    </tr>
+    <tr>
+      <td>OCLN (occludin)</td>
+      <td>ACAAGCGGTTTTATCCAGAGTC</td>
+      <td>GTCATCCACAGGCGAAGTTAAT</td>
+    </tr>
+    <tr>
+      <td>TJP1 (ZO-1)</td>
+      <td>ACCAGTAAGTCGTCCTGATCC</td>
+      <td>TCGGCCAAATCTTCTCACTCC</td>
+    </tr>
+    <tr>
+      <td>CDH5 (VE-cadherin)</td>
+      <td>AAGCGTGAGTCGCAAGAATG</td>
+      <td>TCTCCAGGTTTTCGCCAGTG</td>
+    </tr>
+    <tr>
+      <td>ABCB1 (P-gp)</td>
+      <td>TTGCTGCTTACATTCAGGTTTCA</td>
+      <td>AGCCTATCTCCTGTCGCATTA</td>
+    </tr>
+    <tr>
+      <td>ABCG2 (BCRP)</td>
+      <td>ACGAACGGATTAACAGGGTCA</td>
+      <td>CTCCAGACACACCACGGAT</td>
+    </tr>
+    <tr>
+      <td>SLC22A1 (OCT1)</td>
+      <td>ACGGTGGCGATCATGTACC</td>
+      <td>CCCATTCTTTTGAGCGATGTGG</td>
+    </tr>
+    <tr>
+      <td>SLC22A2 (OCT2)</td>
+      <td>CATCGTCACCGAGTTTAACCTG</td>
+      <td>AGCCGATACTCATAGAGCCAAT</td>
+    </tr>
+    <tr>
+      <td>SLC22A8 (OAT3)</td>
+      <td>ATGGCCCAGTCTATCTTCATGG</td>
+      <td>GACGGTGCTCAGGGTAATGC</td>
+    </tr>
+    <tr>
+      <td>SLCO1A1 (OATP1A1)</td>
+      <td>TAATGTGGGTGTACGTCCTAGT</td>
+      <td>GCTCCTGTTTCTACAAGCCCAA</td>
+    </tr>
+    <tr>
+      <td>GDNF (GDNF)</td>
+      <td>GCAGACCCATCGCCTTTGAT</td>
+      <td>CCACACCTTTTAGCGGAATGC</td>
+    </tr>
+    <tr>
+      <td>BDNF (BDNF)</td>
+      <td>CTACGAGACCAAGTGCAATCC</td>
+      <td>AATCGCCAGCCAATTCTCTTT</td>
+    </tr>
+    <tr>
+      <td>NGF (NGF)</td>
+      <td>TGTGGGTTGGGGATAAGACCA</td>
+      <td>GCTGTCAACGGGATTTGGGT</td>
+    </tr>
+    <tr>
+      <td>IGF1 (IGF-1)</td>
+      <td>GCTCTTCAGTTCGTGTGTGGA</td>
+      <td>GGTCATGGATGGACCTTACTGT</td>
+    </tr>
+    <tr>
+      <td>VEGFA (VEGF)</td>
+      <td>CCCACTGAGGAGTCCAACAT</td>
+      <td>AAATGCTTTCTCCGCTCTGA</td>
+    </tr>
+    <tr>
+      <td>FGF2 (bFGF)</td>
+      <td>AGAAGAGCGACCCTCACATCA</td>
+      <td>CGGTTAGCACACACTCCTTTG</td>
+    </tr>
+    <tr>
+      <td>TGFB1 (TGF-β)</td>
+      <td>GGCCAGATCCTGTCCAAGC</td>
+      <td>GTGGGTTTCCACCATTAGCAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blotting analysis
 
 Whole-cell and tissue lysates, nucleoprotein, and cytoplasmic protein were prepared using RIPA Lysis Buffer (Beyotime, Shanghai, China) as the described method (Wu et al., 2021). Proteins were separated through sodium dodecyl sulfate–polyacrylamide gel electrophoresis and transferred onto nitrocellulose or polyvinylidene difluoride membranes. The membranes were blocked with 5% skim milk and incubated with corresponding primary antibodies at 4°C overnight. After being washed with Tris-buffered saline Tween buffer, the membranes were incubated with secondary antibodies (Cell Signaling Technology, MA, USA) at 1:3000 dilution: Anti-mouse IgG, HRP-linked Antibody (#7076), Anti-rabbit IgG, HRP-linked Antibody (#7074). Protein levels were visualized using a highly sensitive ECL western blotting substrate and a gel imaging system (Tanon Science & Technology, Shanghai, China).
 
-## Preparation of CM
+### Preparation of CM
 
 CM of U251 cells (U-CM), SH-SY5Y cells (S-CM), or co-culture of U251 and SH-SY5Y cells (US-CM) was prepared. U251 cells were seeded at the top of the insert membrane and suspended on 6-well plates seeded with differentiated SH-SY5Y cells to co-culture U251 cells with SH-SY5Y cells. The medium was collected every 24 hr. The CMs were subsequently used for hCMEC/D3 cell culture after filtrating with 0.2 μm filters for 144 hr. The levels of GDNF, bFGF, IGF-1, and TGF-β in CMs were measured using corresponding ELISA kits according to the manufacturers’ instructions.
 
-## Neutralization of GDNF with anti-GDNF antibody
+### Neutralization of GDNF with anti-GDNF antibody
 
 Exogenous and endogenous GDNF in the medium was neutralized with anti-GDNF antibody (#AF-212-NA, R&D system, Minneapolis, MN, USA). 0.25, 0.5, and 1.0 μg/ml anti-GDNF antibody was added into the US-CM or medium containing 200 pg/ml GDNF, and then the medium was preincubated at 4°C for 1 hr. The hCMEC/D3 cells were incubated with 200 pg/ml GDNF or US-CM containing anti-GDNF antibody or not for 6 days, and then cell lysate was collected for western blot. The medium was replaced every 24 hr.
 
-## Transfection of hCMEC/D3
+### Transfection of hCMEC/D3
 
 Here, hCMEC/D3 cells were plated in the plates or culture dishes at 6 × 104 cells/cm2 and transfected with 10 nM of negative control or human FOXO1, ETS1, and CDH5 siRNA (Tsingke Biotechnology, Beijing, China) for 12 hr using Lipofectamine 3000 (Invitrogen, Carlsbad, CA, USA) reagent according to the manufacturer’s instructions. Cells were then incubated with a medium containing GDNF for 72 hr. The siRNA sequences of human FOXO1, ETS1, and CDH5 are summarized in Table 5.
 
-## FOXO1 overexpression by plasmids
+**Table 5.**
+ The target sequences for small interfering RNA (siRNA) or short hairpin RNA (shRNA).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Target sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ETS1</td>
+      <td>CGCTATACCTCGGATTACT</td>
+    </tr>
+    <tr>
+      <td>FOXO1</td>
+      <td>AATCTCCTAGGAGAAGAGCTG</td>
+    </tr>
+    <tr>
+      <td>Gdnf</td>
+      <td>GCCAGTGTTTATCTGATAC</td>
+    </tr>
+    <tr>
+      <td>CDH5</td>
+      <td>GCCTCTGTCATGTACCAAA</td>
+    </tr>
+  </tbody>
+</table>
+
+### FOXO1 overexpression by plasmids
 
 The plasmids encoding FOXO1 (EX-Z7404-M02) were constructed by GeneCopoeia (Rockville, MD, USA). The hCMEC/D3 cells were plated in plates or dishes at 6 × 104 cells/cm2. They were subsequently transfected with 1 µg of negative control or plasmids encoding FOXO1 6 hr using Lipofectamine 3000 reagent according to the manufacturer’s instructions. Transfected cells were then incubated with the medium containing GDNF for 72 hr.
 
-## Animals
+### Animals
 
 C57BL/6J mice (male, 4–5 weeks old, 16–18 g, 12 mice) were obtained from Sino-British Sippr/BKLaboratory Animal Ltd (Shanghai, China). Mice were maintained in groups under standard conditions with free access to food and water. Animal studies were performed in accordance with the Guide for the Care and Use of Laboratory Animals (National Institutes of Health) and approved by the Animal Ethics Committee of China Pharmaceutical University (Approval Number: 202307003).
 
-## Brain-specific Gdnf knockdown and evaluation of BBB permeability
+### Brain-specific Gdnf knockdown and evaluation of BBB permeability
 
 Mice were randomly divided into control (shNC) and Gdnf silencing (shGdnf) groups (6 mice each group). The shRNA sequence of mice Gdnf is listed in Table 5. The 2 × 109 viral genome each of pAAV-U6-shRNA (NC2)-CMV-EGFP or pAAV-U6-shRNA (Gdnf)-CMV-EGFP (OBio Technology, Beijing, China) was injected into the bilateral lateral ventricle area (relative to the bregma: anterior–posterior −0.3 mm; medial–lateral ±1.0 mm; dorsal–ventral –3.0 mm) through i.c.v infusion. Three weeks following i.c.v injection, BBB permeability and expression of corresponding targeted proteins were measured in the mice.
 
 A mixture of FITC-Dex (50 mg/kg) and fluorescein sodium (10 mg/kg) was intravenously administered to experimental mice. Thirty minutes after the injection, the mice were euthanized under isoflurane anesthesia, and brain tissue and plasma samples were obtained quickly. The concentrations of FITC-Dex and fluorescein in the plasma and brain were measured as previously described (Li et al., 2022b; Zhou et al., 2019). No blinding was performed in animal studies.
 
-## The prediction of drug permeability across BBB using the developed in vitro BBB model
+### The prediction of drug permeability across BBB using the developed in vitro BBB model
 
-The Papp values of 18 drugs – prazosin, verapamil, lamotrigine, clozapine, venlafaxine, bupropion, amantadine, carbamazepine, fluoxetine, amitriptyline, gabapentin, midazolam, risperidone, olanzapine, mirtazapine, metoclopramide, doxepin, and donepezil – across the hCMEC/D3 cells mono-culture and triple co-culture models were measured. The predicted in vivo permeability-surface area product (PSPre, μl/min/g brain) values across BBB were calculated using the following equation:(2)PSPre=Papp×60×VSA×1000fu,brain
+The Papp values of 18 drugs – prazosin, verapamil, lamotrigine, clozapine, venlafaxine, bupropion, amantadine, carbamazepine, fluoxetine, amitriptyline, gabapentin, midazolam, risperidone, olanzapine, mirtazapine, metoclopramide, doxepin, and donepezil – across the hCMEC/D3 cells mono-culture and triple co-culture models were measured. The predicted in vivo permeability-surface area product (PSPre, μl/min/g brain) values across BBB were calculated using the following equation:
+
+$$
+PS_{Pre}=\frac{P_{app}\times60\timesVSA\times1000}{f_{u,brain}}
+$$
 
 where VSA is the luminal area of the vascular space of brain, which was set to 150 cm2/g (Fenstermacher et al., 1988), and fu, brain is the unbound fraction of brain. The published in vivo brain permeability values were unified to observed PS (PSObs) by multiplying by VSA equal to 150 cm2/g. If PSPre values were within 0.5- to 2.0-folds of observations, the prediction was considered successful.
 
-## Statistical analyses
+### Statistical analyses
 
 All results are presented as mean ± SEM. The average of technical replicates generated a single independent value that contributes to the n value used for comparative statistical analysis. The data were assessed for Gaussian distributions using Shapiro–Wilk test. Brown–Forsythe test was employed to evaluate the homogeneity of variance between groups. For comparisons between two groups, statistical significance was determined by unpaired two-tailed t-test. The acquired data with significant variation were tested using unpaired t-test with Welch’s correction, and non-Gaussian distributed data were tested using Mann–Whitney test. For multiple group comparisons, one-way ANOVA followed by Fisher’s LSD test was used to determine statistical significance. The acquired data with significant variation were tested using Welch’s ANOVA test, and non-Gaussian distributed data were tested using Kruskal–Wallis test. p < 0.05 was considered statistically significant. The simple linear regression analysis was used to examine the presence of a linear relationship between two variables. Data were analyzed using GraphPad Prism software version 8.0.2 (GraphPad Software, La Jolla, CA, USA).

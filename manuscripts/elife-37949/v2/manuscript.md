@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.37949.001 Germ granules are non-membranous ribonucleoprotein granules deemed the hubs for post-transcriptional gene regulation and functionally linked to germ cell fate across species. Little is known about the physical properties of germ granules and how these relate to germ cell function. Here we study two types of germ granules in the Drosophila embryo: cytoplasmic germ granules that instruct primordial germ cells (PGCs) formation and nuclear germ granules within early PGCs with unknown function. We show that cytoplasmic and nuclear germ granules are phase transitioned condensates nucleated by Oskar protein that display liquid as well as hydrogel-like properties. Focusing on nuclear granules, we find that Oskar drives their formation in heterologous cell systems. Multiple, independent Oskar protein domains synergize to promote granule phase separation. Deletion of Oskar’s nuclear localization sequence specifically ablates nuclear granules in cell systems. In the embryo, nuclear germ granules promote germ cell divisions thereby increasing PGC number for the next generation.
+Germ granules are non-membranous ribonucleoprotein granules deemed the hubs for post-transcriptional gene regulation and functionally linked to germ cell fate across species. Little is known about the physical properties of germ granules and how these relate to germ cell function. Here we study two types of germ granules in the Drosophila embryo: cytoplasmic germ granules that instruct primordial germ cells (PGCs) formation and nuclear germ granules within early PGCs with unknown function. We show that cytoplasmic and nuclear germ granules are phase transitioned condensates nucleated by Oskar protein that display liquid as well as hydrogel-like properties. Focusing on nuclear granules, we find that Oskar drives their formation in heterologous cell systems. Multiple, independent Oskar protein domains synergize to promote granule phase separation. Deletion of Oskar’s nuclear localization sequence specifically ablates nuclear granules in cell systems. In the embryo, nuclear germ granules promote germ cell divisions thereby increasing PGC number for the next generation.
 
 ## Introduction
 
@@ -38,15 +38,31 @@ Here we analyze the biophysical properties of Drosophila germ granules in the em
 
 ## Results
 
-## Cytoplasmic germ granules display properties of phase transitioned condensates
+### Cytoplasmic germ granules display properties of phase transitioned condensates
 
 The germ granules of the early Drosophila embryo morphologically and compositionally resemble other RNP organelles: they are round and membraneless (Arkov et al., 2006; Mahowald, 1962; Mahowald et al., 1976; Trcek et al., 2015) and composed of RNA-binding proteins and RNAs(Hurd et al., 2016; Lécuyer et al., 2007; Rangan et al., 2009; Thomson et al., 2008; Voronina et al., 2011). We analyzed the biophysical properties of germ granules in vivo to probe whether they behave like liquid droplets, where components within the granule are ‘liquid-like’ and freely exchange with the environment, or phase transitioned granules, which form more stable structures that exchange less readily with their environment. We quantified the biophysical properties of the germ granules during the early nuclear cycles (NC) one to five when germ plasm is organized into cytoplasmic germ granules at the embryo’s posterior and the nuclei have not yet reached the poles (Figure 1Ai–Aiii). To visualize granules, we used flies that expressed a GFP-tagged Oskar (Osk:GFP) (Jambor et al., 2015) and a Kusabira Orange-tagged Vasa (Vasa:KuOr) (Cinalli and Lehmann, 2013). Both transgenes spatially and temporally behave like their untagged counterparts (Trcek et al., 2015) indicating that they are appropriate germ granule markers. During this stage the two transgenes co-localized within the same granule while they were largely absent from the somatic regions of the embryo (Figure 1Ai–Aiii, Figure 1—figure supplement 1A), as demonstrated previously (Trcek et al., 2015; Vanzo and Ephrussi, 2002). Indeed, the concentration of Osk:GFP and Vasa:KuOr was 15 to 21 higher, respectively in granules compared to the surrounding intergranular space or the surrounding somatic cytoplasm (Figure 1B, Figure 1—figure supplement 1B). Thus, during NC one to five, the bulk of germ plasm activity appears concentrated within granules rather than in the intergranular space.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig1-v2.jpg)
+
+**Figure 1.:** (Ai-iii) Drosophila embryos stained with an antibody against Oskar (Ai) (green) and counter-stained for DNA with DAPI (white) or expressing Osk:GFP (green) and Vasa:KuOr (magenta) (ii, iii) at NC five. (B) Levels of Osk:GFP and Vasa:KuOr fluorescence in cytoplasmic germ granules (pink bar), the intergranular space (blue bar) and the somatic cytoplasm (grey bar). 21X and 15X fold enrichment of Osk:GFP and Vasa:KuOr fluorescence relative to the intergranular space is marked, respectively. For each bar, mean fluorescent levels per area unit ±SEM of 23 granules, 20 ROIs in the intergranular space and 20 ROIs in somatic cytoplasm are shown (Figure 1—figure supplement 1B). (C) FRAP of PGL-1:GFP (one cell zygote in C. elegans, black circles) and Osk:GFP located in the cytoplasmic germ granules (green circles). Mean ±SEM of three Osk:GFP ROIs (green) and five P granules (black) is shown. Black lines show fit to the experimental data. Below the graph, the percent mobile fraction and half time to full recovery (t1/2) derived from C are shown. (Di,ii). FLIP of Osk:GFP in the early embryo. Region A was continuously bleached for four minutes and an image of the embryo acquired every second. Images in i are pseudo-colored to demonstrate fluorescence intensity levels. ii Fluctuation of Osk:GFP fluorescence in regions A,B,C,D (shown in i) and plotted as percent relative to time 0. Normalized mean fluorescence levels ± STDEV of 2 (region A) and 4 (region B-D) ROIs of equal size are shown. Scale bar in Aiii is 10 μm, Ai is 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Vasa:GFP (green) and DAPI (blue) stained embryos. White arrowheads point at somatic nuclei. (B) Quantification of the fold enrichment of Osk:GFP and Vasa:KuOr fluorescence in cytoplasmic germ granules relative to the intergranular space and somatic cytoplasm. (C) FRAP of Vasa:GFP in cytoplasmic germ granules. Mean ±STDEV of five Vasa:GFP ROIs is shown. Black line shows fit to the experimental data. % mobile fraction and t1/2 derived from C are shown below the graph. (D-F) In the early embryos expressing Osk:GFP or Vasa:KuOr, region A was continuously bleached for four minutes in the germ plasm (E) or outside of the embryo (D,F) and an image of the embryo acquired every second. Images in all panels are pseudo-colored to demonstrate fluorescence intensity levels. Fluctuation of Osk:GFP or Vasa:KuOr fluorescence was monitored over time in regions A,B,C,D (as shown in Dii) and plotted as a percent relative to time 0 (i). Normalized mean fluorescence levels ± STDEV of 2 (region A) and 4 (region B-D) ROIs of equal size for each condition are shown. Scale bar in A,B is 10 μm.
+
 To assay how granule proteins exchange with the granule environment, we used fluorescent recovery after photobleaching (FRAP). We photobleached Osk:GFP granules and recorded that 43.6 ± 0.7 percent of Osk:GFP rapidly exchanged with the granule environment with a half time to complete fluorescent recovery (t1/2) of 10.5 ± 0.9 s, while the rest of Oskar protein remained associated within the granule (Figure 1C, green circles, Figure 1—video 1). We recorded a similar FRAP recovery for Vasa:GFP (Figure 1—figure supplement 1C). Because the intergranular space was largely devoid of Osk and Vasa (Figure 1B), these results suggested that the proteins that re-populated the granules arrived from neighboring granules. To address this question, we used fluorescence loss in photobleaching (FLIP) assay. We continuously bleached a small germ plasm region (region A) (Figure 1Di, Figure 1—video 2) and recorded the fluctuation of Osk:GFP fluorescence within the bleached region as well as in neighboring, non-bleached regions B, C and D over time (Figure 1Di,ii). We detected a significant depletion of fluorescence in region B in immediate proximity to region A (Figure 1Di,ii). This depletion of fluorescence was 20 to 30 percent greater than that observed in the distant regions C and D, respectively (Figure 1Di, ii), as well as 30 percent greater than would be anticipated if the depletion of fluorescence was due to unintentional photobleaching during imaging (Figure 1—figure supplement 1Di,ii, Figure 1—video 3). We detected a similar behavior for Vasa:GFP (Figure 1—figure supplement 1Ei,ii, Fi,ii, Figure 1—video 4 and 5). Importantly, the fraction of mobile Osk:GFP and Vasa:GFP recorded by FRAP (43.6% and 46.0%, respectively) was similar to that recorded by FLIP (~30%) suggesting that the same mobile fraction was captured by both assays. The redistribution of fluorescence was not due to the movement of granules among regions as these movements appeared corralled rather than directional (Figure 1—video 1 and 3), are infrequent and occur over a much longer time period (Sinsimer et al., 2013). Rather, Osk:GFP and Vasa:GFP dynamically exchanged among neighboring granules. However, despite displaying liquid-like properties, we and others have not observed fusion of cytoplasmic germ granules (Sinsimer et al., 2013), as had been described for P granules in C. elegans (Brangwynne et al., 2009). To probe this question further, we compared the mobility of Osk:GFP and Vasa:GFP with the mobility of PGL-1, a core constituent of P granules found in a one-cell zygote of C. elegans (Kawasaki et al., 1998). We photobleached PGL-1:GFP and recorded diffusion kinetics similar to published reports (86.3 ± 10.0 percent mobile fraction with t1/2 of 4.3 ± 0.2 s; Figure 1C, black circles, Figure 1—video 6, Figure 4—figure supplement 1C) (Brangwynne et al., 2009). Thus, unlike highly mobile P granules in C. elegans that form during LLPS (Brangwynne et al., 2009), cytoplasmic germ granules in Drosophila appear comprised of liquid and more hydrogel-like states and are thus best described as phase transitioned condensates.
 
-## Core germ granule proteins Oskar and Vasa form phase transitioned nuclear germ granules in primordial germ cells
+### Core germ granule proteins Oskar and Vasa form phase transitioned nuclear germ granules in primordial germ cells
 
 In the wild-type embryos, PGC form at nuclear cycle 10, after the syncytial nuclei reach the cortex and form actin filled membrane protrusions. In the germ plasm region, each such protrusion, called pole bud, generates two PGCs through the coordinated action of two orthogonally placed constrictions: one constriction is the consequence of mitotic anaphase, the other is the result of an unusual, microtubule-independent cleavage (Campos-Ortega and Hartenstein, 1985; Cinalli and Lehmann, 2013; Pae et al., 2017). During every division of the newly formed PGCs the cytoplasmic germ granules were associated with the pericentriolar region (Figure 2Ai–Aiii) (Lerit and Gavis, 2011) but retained similar size and morphology to the cytoplasmic germ granules present earlier (Figure 1Ai–Aiii). As soon as PGCs formed, we started to observe nuclear granules, which grew in size and number, and became hallmarks of PGCs at the cellular blastoderm stage (NC14), when not only the PGCs but also the somatic cells have formed (Figure 2Ai–Aiii;Bi-Biii, 2D). Vasa:KuOr co-localized with Osk:GFP in 95.1% of nuclear germ granules (Figure 2—figure supplement 1A) and, as we have shown previously, in 90.3% of cytoplasmic germ granules (Trcek et al., 2015). Importantly, we did not observe Vasa:KuOr nuclear granules without Osk:GFP (Figure 2—figure supplement 1A), indicating that Vasa can populate nuclear germ granules only in the presence of Oskar protein. This observation was consistent with how these proteins behave in cytoplasmic germ granules; only Oskar nucleates cytoplasmic germ granules (Ephrussi and Lehmann, 1992; Markussen et al., 1995) and recruits Vasa to granules where the two also physically interact (Breitwieser et al., 1996; Lehmann, 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig2-v2.jpg)
+
+**Figure 2.:** (A-B) Drosophila embryos stained with an antibody against Oskar (Ai,Bi) (green) and counter-stained for DNA with DAPI (white) or expressing Osk:GFP (green) and Vasa:KuOr (magenta) (Aii,Aiii, Bii,Biii) and counter stained with DAPI (white) at NC nine and 14. White arrows point at hollow nuclear germ granules. (C) Close-up of nuclear germ granules marked by Osk:GFP (i, green) and Vasa:KuOr (ii, magenta) at NC 14. (D) Appearance of nuclear granules in PGCs at NC nine (0 min), NC 10,11 (22 min) and NC 14 (125 min). The number of PGCs with nuclear germ granules was counted at each NC. Three embryos per NC were analyzed and an average percent of granule-containing nuclei per embryo per NC calculated (pink circles). Mean ±STDEV is shown. (E) Nuclear germ granules are larger than cytoplasmic germ granules (91797 nm2 = 606.0 nm diameter vs. 44533 nm2 = 422.1 nm diameter, respectively; unpaired t-test, p<0.0001). Mean ±STDEV is shown. (F) Number of nuclear granules per PGC through early embryogenesis. PGCs of two Vasa:GFP expressing embryos per NC were analyzed and mean ±STDEV of total (black bars), small (grey), medium (blue) and hollow (pink) number of nuclear germ granules per PGC per NC determined. Gi,ii Small, medium and hollow nuclear granules differ in their size (i) and amount of protein (ii) (statistical significance: two-tailed t-test). Mean ±STDEV of 20 to 31 granules is shown. (H) Levels of Osk:GFP and Vasa:KuOr fluorescence in nuclear germ granules (pink bar), in the PGC nucleoplasm (blue bar) and in the somatic cell nucleoplasm (grey bar). 11X and 14X fold enrichment of Osk:GFP and Vasa:KuOr fluorescence relative to the PGC nucleoplasm, respectively, is shown. For each bar, mean fluorescent levels ± SEM of nine granules, 12 ROIs in the PGC nucleoplasm and 15 ROIs in somatic cell nucleoplasm are shown (see Figure 1—figure supplement 1B). (I) FRAP of nuclear Osk:GFP germ granules in PGCs. Mean ±SEM of eight hollow nuclear germ granules is shown. Black line shows the fit to the experimental data. Below the graph, the % mobile fraction and t1/2 derived from I is shown. Images in the graph show fluorescence recovery before and after photobleaching. White arrow points at the bleached granule. (J) i,ii smFISH reveals that germ plasm mRNA nos (red) is enriched in cytoplasmic, but not in nuclear germ granules (green). DNA stained with DAPI is shown in blue. ii close-up of Ji. Arrows point at nuclear germ granules lacking nos smFISH signal. Scale bar in Cii is 1 μm and in Aiii, Biii, Ji is 10 μm and in Ai, Bi is 50 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Majority of nuclear germ granules are populated by Oskar and Vasa proteins. 143 granules were analyzed. (B,C) Cytoplasmic and nuclear germ granules at NC 9 (Bi), NC 11 (Bii) and NC 14 (Biii) marked with Vasa:GFP (magenta). DNA was stained with DAPI (white). Ci and ii are close-ups of nuclei shown in Bii and Biii. (D) Quantification of total non-granular Osk:GFP and Vasa:GFP dispersed in the nucleoplasm (nucleoplasmic content) in PGCs. Eight PGC nuclei were quantified for each protein and mean ±SEM plotted. (E) FRAP of Vasa:GFP in nuclear germ granules. Mean ± STDEV of four Vasa:GFP granules is shown. Black line shows fit to the experimental data. % mobile fraction and t1/2 are shown below the graph. (F) smFISH of pgc (Fi-iii) and gcl (Fiv-vi) mRNAs (red). Granules (green) are labeled with Vasa:GFP and nuclei (blue) are labeled with DAPI. Scale bar in Ci,Cii is 5 μm and in Bi-iii, Fi is 10 μm.
 
 On average, the nuclear granules were two-times bigger than the cytoplasmic granules (Figure 2E). Initially, mostly small granules with a diameter of 0.7 ± 0.1 µm were present and were similar in size to cytoplasmic germ granules (Figure 2E,F,Gi; Figure 1—figure supplement 1Bi). Over time, they became more numerous, grew in size and accumulated more protein (Figure 2F–Gii; Figure 2—figure supplement 1B–C). Toward the end of the NC 14, characteristic hollow granules with a diameter of 1.7 ± 0.3 µm appeared (Figure 2F,Gi). As with cytoplasmic germ granules, we could not detect fusion of nuclear germ granules. Nuclear granules did not result from over-expression of Osk:GFP or Vasa:KuOr since they have been previously observed in wild-type flies using EM and immunofluorescence (Jones and Macdonald, 2007; Mahowald, 1962; Mahowald et al., 1976). Because nuclear granules formed only in PGCs (Figure 2—figure supplement 1B) and were populated by Oskar and Vasa (Figure 2Ci–ii), we termed these condensates ‘nuclear germ granules’.
 
@@ -56,9 +72,17 @@ Finally, we asked if nuclear germ granules accumulated mRNAs similar to those fo
 
 In summary, nuclear germ granules are round and membraneless structures, populated by Oskar and Vasa (Jones and Macdonald, 2007; Mahowald, 1962; Mahowald et al., 1976) and behave like phase transitioned condensates. Importantly, morphologically, biophysically and at least in part by composition they resemble cytoplasmic germ granules indicating that the mechanism that drives their formation might be shared.
 
-## Expression of short Oskar in cell lines reconstitutes nuclear germ granules
+### Expression of short Oskar in cell lines reconstitutes nuclear germ granules
 
 Depletion of germ granule components such as Oskar and Vasa prevents the assembly of germ granules during oogenesis. As a result, embryos laid by osk or vas mutant mothers fail to form PGCs (Lehmann and Nüsslein-Volhard, 1986; Thomson and Lasko, 2004; Thomson et al., 2008), precluding the observation of nuclear germ granules. To study the properties and functions of nuclear germ granules free of these complications and given the role of Oskar as the nucleator of germ plasm (Ephrussi and Lehmann, 1992; Lehmann, 2016; Markussen et al., 1995), we asked whether Oskar could assemble granules in Drosophila S2R+ cells. These widely used cultured cells were derived from embryonic soma and do not express core germ plasm proteins (modENCODE Consortium et al., 2010). Translation of osk mRNA produces two isoforms, long and short (Long Osk, Short Osk, respectively) that differ in the first 138 N-terminal aa (Markussen et al., 1995). Only Short, but not Long Osk is necessary and sufficient to instruct the formation of cytoplasmic germ granules (Breitwieser et al., 1996; Markussen et al., 1995; Vanzo and Ephrussi, 2002). Consistently, when transiently expressed in S2R+ cells, Short Osk tagged at its N-terminus with mCherry (Short mCherry:Osk) organized round, membraneless and often hollow nuclear germ granules, while Long Osk did not (Figure 3A–C Figure 3—figure supplement 1Ai,Aii) (also reported by [Jeske et al., 2017]). This approach allowed for a highly controlled introduction of germline proteins into cell lines via transient transfection allowing identification of minimal components required for nuclear germ granule formation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig3-v2.jpg)
+
+**Figure 3.:** (A) Short mCherry:Osk forms hollow nuclear granules when transfected into cultured Drosophila S2R+ cells. (B) Transmission electron micrograph of a Drosophila cell transfected with Oskar shows the cross-section of a granule (arrow) with an electron-lucid core located within the nucleus (N) and separate from the nucleolus (nu). (C) Long Oskar does not form granules in S2R+ cells. (D-F) Three types of Short mCherry:Osk nuclear germ granules can be observed in S2R+ cells (small, hollow and big and non-hollow) that differ in the amount of protein (E) and in their size (F). In E and F, mean ± STDEV of 10 (small, hollow) and five (big, non-hollow) granules is shown (statistical significance: two-tailed t-test). (G) Short Osk:mCherry forms nuclear granules when transfected into human HEK293 cells. (H) S2R+ cell transiently transfected with a plasmid expressing Vasa:GFP (green) or, (I), co-transfected with Short mCherry:Osk (red) and Vasa:GFP (green) and counter-stained with an antibody for nuclear lamin (white). (J) S2R+ cells co-transfected with Short mCherry:Osk (red) and Aub:GFP, CG5726:GFP, DCP1:GFP, Khc:GFP, Piwi:GFP or Vasa:GFP (green). Scale bar in all is 2 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Transmission electron micrograph of a cultured S2R + cell expressing Short mCherry:Osk nuclear germ granules(i). (ii) Serial sections of a single nuclear germ granule (arrows) taken 70 nm apart indicate that an electron dense sphere encapsulates a less electron-dense core. (N) and (nu) label the nucleus and nucleolus, respectively. (B-D) Maximally projected images of S2R+ cells transfected with short-Osk N-terminally tagged with mCherry (B), eGFP (D) or C-terminally-tagged with eGFP (D). (E) GO term analysis of the Short Oskar interactors evaluated against the Drosophila proteome using DAVID. (F) Majority of nuclear germ granules in S2R+ cells are populated by both Oskar and Vasa. 166 granules were analyzed. (G) The nuclear localization signal (NLS) mapper (see Materials and methods) failed to identify an NLS in DCP1 and Khc proteins, while in Aub, CG5726, Piwi and Vasa it identified a weak NLS predicted to distribute Aub, CG5726, Piwi and Vasa equally between the nucleus and the cytoplasm. Consistent with this finding, transfected Aub:GFP, CG5726:GFP, Khc:GFP, Piwi:GFP, or Vasa:GFP alone into S2R+ cells failed to accumulate in the nuclei and induce nuclear granule formation. (H) Piwi:GFP (magenta) is found in the nucleus (left panel) in PGCs while Aub:GFP and Tud:GFP (magenta) are cytoplasmic as previously described. DNA is stained with DAPI (white). (I) GFP-tagged DCP1 (turquoise) forms spherical granules in S2R+ cells reminiscent of those formed by nuclear Oskar (red) in the embryo and in cell lines. DNA is stained with DAPI (blue). Scale bar in Aii is 200 nm, in Ai is 1 μm, in B-D,G,I is 2 μm and in H is 10 μm.
 
 Three types of Short mCherry:Osk granules were observed that differed in size, protein abundance and morphology: small, hollow, and big and non-hollow (Figure 3D–F). The former two resembled nuclear germ granules described in PGCs (Figure 2B,Ci) (Jones and Macdonald, 2007; Mahowald, 1962; Mahowald et al., 1976), while the latter were observed only in S2R+ cells. Importantly, the formation of these granules depended on Short Osk and not on the mCherry fluorophore or the orientation of the fluorescent tag, as N- and C-terminally-tagged Short Osk formed the same granules (Figure 3—figure supplement 1B–D). Furthermore, the ability of Short Osk to organize into nuclear germ granules was not limited to Drosophila cells; when driven by the EF-1α promoter, Short Osk:mCherry formed nuclear granules in HEK293 cells, a human embryonic kidney cell line devoid of Drosophila proteins (Figure 3G). We conclude that Short Oskar is able to assemble into nuclear granules in heterologous cell systems independent of other germ plasm proteins.
 
@@ -72,29 +96,61 @@ Finally, while unable to form nuclear granules alone or when co-expressed with S
 
 Our results reveal that Short Osk forms nuclear granules in S2R + and HEK293 cells. Cell line-expressed Short Osk recapitulated properties of nuclear granules observed in the embryos such as granule morphology and the ability to organize other germ granule components. Together, these results suggest that this system may provide an excellent model to study the molecular and biophysical properties of nuclear germ granules. This is particularly important as Short Osk is insoluble during purification (Yang et al., 2015), which would preclude studying the ability of this protein to phase separate in a test tube (Li et al., 2012).
 
-## Nuclear germ granules in S2R+ cells are phase transitioned condensates
+### Nuclear germ granules in S2R+ cells are phase transitioned condensates
 
 To determine whether the cell culture system indeed recapitulated other essential features of nuclear germ granules we characterized their biophysical properties in S2R+ cells. Similar to the measurements obtained on nuclear germ granules formed in PGCs (Figure 2H), we found that the majority of the Short mCherry:Osk fluorescence was located in granules rather than in the nucleoplasm (Figure 4A, Figure 4—figure supplement 1A). As the levels of nuclear Short mCherry:Osk increased (Figure 4B), the total number and the number of small nuclear germ granules decreased and the number of hollow and big and non-hollow granules increased (Figure 4C), indicating that Short mCherry:Osk granules may fuse. Indeed, rapid live cell imaging of transfected S2R+ cells revealed that nuclear germ granules did fuse (Figure 4D, Figure 4—video 1) albeit slower and less frequently than P granules in C. elegans (Figure 4—video 2) (Brangwynne et al., 2009).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig4-v2.jpg)
+
+**Figure 4.:** (A) Levels of Short mCherry:Osk fluorescence in nuclear germ granules (pink bar), in the nucleoplasm of transfected (blue bar) and of untransfected (grey bar) cells. 25 fold enrichment of granular vs. nucleoplasmic Short mCherry:Osk fluorescence is shown. For each bar, mean fluorescence levels ± STDEV are shown where 18 granules and 20 ROIs located in the nucleoplasm of transfected and untransfected cells each are shown (statistical significance: two-tailed t-test). (B) Total fluorescence intensity of nuclear Short mCherry:Osk in cells that accumulate small, hollow and big, non-hollow nuclear germ granules (statistical significance: two-tailed t-test). Mean ± STDEV of five (small, hollow) and four (big, non-hollow) nuclei per granule type is shown. (C) Number of nuclear germ granules in S2R+ cells over time. Mean ±STDEV number of the total (black), small (grey), hollow (pink) and big,non-hollow (red) granules per nucleus per time point is shown. Per time point, 20 cells were analyzed. (D) Fusion of Short mCherry:Osk nuclear granules (arrow heads) in S2R+ cells. Pseudo-colored images demonstrate fluctuations of fluorescence intensity. (E,F) FRAP of nuclear Short mCherry:Osk in S2R+ cells (red circles). Mean ±SEM of eight hollow nuclear germ granules is shown. Black line shows the fit to the experimental data. Images in the graph show FRAP recovery of a nuclear granule in S2R+ cell before and after photobleaching. Also shown are FRAP of Osk:GFP located in cytoplasmic germ granules (green circles, Figure 1C) and in nuclear germ granules (pink circles, Figure 2I) with accompanying % mobile fraction and t1/2. (G) Photoconversion of three Short Dendra2:Osk granules (white arrowheads) at t = 5 s demonstrates that Short Osk dynamically exchanges among neighboring nuclear germ granules (red arrowheads) in S2R+ cells. (H) Photoconversion of isolated Short Dendra2:Osk granules one hour after their purification. Raw and pseudo-colored images of a hollow granule are shown before (0 s) and after (4 s-234s) photoconversion. I Fluorescence intensity (mean ± SEM) of three isolated Short Dendra2:Osk granules before (0 s) and after (4 s-234s) photoconversion. Scale bar in all is 2 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of total non-granular mCherry:Osk dispersed in the nucleoplasm (nucleoplasmic content) in S2R+ cells. Eight nuclei were quantified and mean ± SEM plotted. (B) Fluorescence recovery of a partially bleached nuclear germ granule formed by mCherry:Osk in S2R+ cells. Pseudo-colored images show fluorescence intensity levels. White arrowhead points at a partially bleached granule. The graph shows recovery of six partially bleached granules (mean ± STDEV). Black line shows fit to the experimental data. Below the images, the % mobile fraction and t1/2 derived from B are shown. Note, the percent mobile fraction is 28.6% higher than recorded when the entire granule is bleached indicating that the granule protein rearranges within the granule as well as with the granule environment. The kinetics of recovery (t1/2), which reports the average rate of protein exchange, is also much slower (86.6 s vs. 10.2 s) suggesting that this recovery is likely comprised of two rates, the rate of internal rearrangement which is likely a very slow process and the rate of exchange of the protein with the granule environment which is a fast process (Figure 4E,F). (C) FRAP kinetics of Oskar and Vasa and proteins condensed in P granules of the one cell zygote in C. elegans (Brangwynne et al., 2009), perinuclear P granules in adult C. elegans (Sheth et al., 2010), mammalian P bodies (Aizer et al., 2008; Andrei et al., 2005), mammalian stress granules(Kedersha et al., 2000) and Balbiani body of Xenopus oocyte (Boke et al., 2016). (D) Cells expressing Short Osk tagged with Dendra2 were exposed to 4% or 15% of an aliphatic alcohol and imaged 20 min later. For comparison, liquid droplets were dissolved at low (4%) concentrations of 1,6 Hexanediol or 1,5-Pentandiol, while high (15%) concentrations of 1,6 Hexanediol or 1,5-Pentandiol were shown to melt hydrogel-like FUS granules (Lin et al., 2016; Xiang et al., 2015). 2,5-Hexandiol and 1,4-Butandiol do not dissolve either of the granules (Kroschwald et al., 2015; Lin et al., 2016; Patel et al., 2007). Scale bar in B and D is 2 μm.
 
 FRAP experiments revealed that in S2R+ cells 46.8% of nuclear Short mCherry:Osk readily exchanged with the granule environment (Figure 4E,F, Figure 4—video 3). The kinetics of recovery after photobleaching were similar to those recorded for Osk:GFP in nuclear and cytoplasmic germ granules in the embryos (Figure 4E,F) and comparable to those recorded for P granule proteins (Brangwynne et al., 2009; Sheth et al., 2010), stress granule proteins (Kedersha et al., 2000), P body proteins (Aizer et al., 2008; Andrei et al., 2005) and Balbiani body proteins (Boke et al., 2016) (Figure 4—figure supplement 1C). When granules were only partially bleached, 75.4% of mCherry:Osk fluorescence exchanged during FRAP (Figure 4—figure supplement 1B), suggesting that the recovery of Oskar protein resulted from internal rearrangement of mCherry:Osk as well as its exchange with the granule environment. Indeed, photoconversion of Dendra2-tagged Short Osk (Figure 4G, white arrows, Figure 4—video 4) revealed that a fraction of Short Dendra2:Osk readily exchanged among neighboring granules (Figure 4G, red arrows, Figure 4—video 4). Together these results indicate that in S2R+ cells a fraction of nuclear Short Osk actively condensed into granules and dissolved, a behavior similar to cytoplasmic germ granules in the embryo (Figure 1C–D) and to P granules in C. elegans (Brangwynne et al., 2009; Sheth et al., 2010). Despite the ability to exchange, less than 50 percent of Oskar was mobile in the three types of granules analyzed (cytoplasmic and nuclear germ granules in the embryo and nuclear germ granules in S2R+ cells) (Figure 4E,F), suggesting that Drosophila cytoplasmic and nuclear germ granules appear more stable than other phase separated granules (Figure 4—figure supplement 1C). Indeed, Short Dendra2:Osk granules isolated from S2R+ cells could still be observed one hour after purification and once photoconverted they maintained their fluorescence levels (Figure 4H,I). Furthermore, aliphatic alcohols 1,6 hexanediol and 1,5-pentanediol that disrupt weak hydrophobic interactions (Kroschwald et al., 2015; Lin et al., 2016; Patel et al., 2007) and cause rapid disassembly of liquid droplets but not of hydrogels (Kroschwald et al., 2015; Lin et al., 2016; Wheeler et al., 2016) did not dissolve nuclear germ granules formed in S2R+ cells even at high concentrations (Figure 4—figure supplement 1D). Thus, a fraction of the nuclear germ granule formed in S2R+ cells likely assumed a more stable, hydrogel-like conformation.
 
 Our experiments show that S2R+ cells recapitulated the essential features of the nuclear germ granules formed in PGCs (their morphology, composition, biophysical properties and cellular localization) making this a useful system to study the assembly and function of nuclear germ granules outside of Drosophila. Our biophysical studies revealed that like in the embryo, nuclear germ granules in S2R+ cells are phase transitioned condensates. While a portion of the granule protein adopted liquid-like behavior, a fraction also exhibited hydrogel-like immobility, suggesting a more structured organization of these granules. To gain better understanding of this process, we next sought to determine the functional domain(s) of Short Oskar that can promote its condensation and localization to the nucleus.
 
-## Multiple independent Oskar domains synergize to promote granule formation
+### Multiple independent Oskar domains synergize to promote granule formation
 
 A proposed signature of proteins that condense are LC sequences or IDRs, as these domains are thought to facilitate non-specific protein-protein interactions (Banani et al., 2016; Courchaine et al., 2016; Lin et al., 2015; Protter et al., 2018). In test tube assays, proteins that phase separate often contain RNA binding domains and require these for optimal aggregation, and may also harbor other more specific protein-protein interaction domains that can promote oligomerization (Banani et al., 2016). Short Osk is composed of two known structured domains located at the N- and C-terminal ends of the protein, called LOTUS and SGNH, respectively (Figure 5A) (Jeske et al., 2015; Yang et al., 2015). The LOTUS domain is responsible for Oskar’s ability to homodimerize and to specifically associate with Vasa (Jeske et al., 2017). The first 47 aa of the LOTUS domain also harbor a predicted LC sequence and were not characterized in the recent crystal structure of the Oskar dimer in association with Vasa (Figure 5B, orange box) (Jeske et al., 2017). The SGNH region, which is structurally related to hydrolases, forms a novel RNA-binding domain (Jeske et al., 2015; Yang et al., 2015). LOTUS and SGNH are connected by a 160 aa linker that is predicted to form an IDR (Figure 5B, green box) but was also shown to bind LASP, an actin binding protein and Valois, a component of the PRMT5 methyltransferase complex (Ahuja and Extavour, 2014; Anne and Mechler, 2005). Based on the predicted binding sites for these two proteins, we divided the linker region into region L1 and L2, respectively (Figure 6A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of Long and Short Osk. (B) Position of a predicted LC (orange) and IDR (green) in Oskar protein. The start aa of Short Osk is demarcated in red. (C-G) Expression of Short Osk:mCherry truncations (red) in S2R+ cells stained with DAPI for DNA (white) and phalloidin for F-actin (green). (H) Quantification of granule size in S2R+ cells transfected with Oskar or its truncations. Mean ± STDEV is plotted for each genotype. The mean diameter of ∆SGNH granules (2.33 μm) is larger (One-way ANOVA, p<0.05) than the diameter of granules formed by full length short Osk (1.19 μm), ∆LOTUS (0.93 μm), ∆L1 (0.62 μm) or ∆L2 (0.93 μm). (I) Condensation of full length Short mCherry:Osk and its truncations over time. Per time point, between 21 and 48 transfected cells per genotype were imaged and afterwards scored for the following phenotype: protein mostly present in a diffused form (green bar) or condensed into small (grey), hollow (pink), non-hollow (orange) and big, non-hollow (red) granules. Scale bar in C is 2 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Types of granules observed when S2R+ cells were transfected with different Short mCherry:Osk truncations (red). DNA is stained with DAPI (blue). (B) Co-localization of Vasa:GFP (green) with Oskar truncations (red) in S2R+ cells. DAPI stained DNA is shown in blue. (C) Western blot demonstrating protein expression of mCherry-tagged FL Short Osk (full length) and its truncations in S2R+ cells. Cells were co-transfected with GFP-tagged Aub to normalize Osk protein levels, as demonstrated in the graph. Mean ± STDEV of three biological replicates is shown for all but for ΔL2:mCherry, where mean ± STDEV of two biological replicates is shown. Bar above the graph shows statistical significance (two-tailed t-test). Differences in expression levels of all other Short Osk truncations relative to the FL Short Osk are not statistically significant. Scale bar in A,B is 2 μm.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig6-v2.jpg)
+
+**Figure 6.:** (A) Cellular location of granules formed by transfection of full length short Osk or its truncations (n = 30 cells per genotype). (B) Schematic of NLS1 within L1. (C) Transfection of Oskar∆NLS:mCherry in S2R+ cells (red) co-stained with DAPI (DNA, white) and phalloidin (green). (D) Percent of S2R+ cells with nuclear granules expressing full length mCherry:Osk or Oskar∆NLS:mCherry (n = 30 cells per genotype). (E) Co-transfection of Oskar∆NLS:mCherry (red) with Vasa:GFP (green) and co-stained with nuclear lamin (white). Scale bar in all images is 2 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic showing the positions of the two putative NLSs within Oskar’s L1 and L2 regions. (B,C) Accumulation of nuclear germ granules (red) by Short Osk lacking NLS within L1 (NLS1) (B) or NLS1 and NLS within L2 (NLS2) (C). F-actin is stained by phalloidin (green) and DNA (white) with DAPI. Scale bar in B,C is 2 μm.
 
 To determine, whether any single region of Short Osk was required for condensation into granules, we individually deleted each of the four domains and transiently expressed them as mCherry-tagged truncation constructs in S2R+ cells. We found that none of the four regions was required for granule formation per se (Figure 5C–G). Consistent with the known biological function of the LOTUS domain in Vasa binding, Osk-ΔLOTUS failed to localize Vasa to nuclei and instead Vasa took on a diffuse and non-granular distribution in S2R+ cells that resembled its distribution in the absence of Oskar (Figure 5—figure supplement 1B) (Jeske et al., 2017). Osk-ΔL1 protein did not localize to the nucleus, but instead accumulated in cytoplasmic granules and Osk-ΔL2 granules were found in the cytoplasm and the nucleus. Surprisingly, deletion of L2 prevented accumulation and co-localization of Vasa:GFP with Osk-ΔL2 protein specifically in the nucleus, while it remained co-localized, albeit faintly, with Osk-ΔL2 in cytoplasmic foci (Figure 5—figure supplement 1B). The size of nuclear granules formed by Osk-ΔLOTUS, Osk-ΔL1 and Osk-ΔL2 mutants was similar to those formed by full length Short Osk, while deletion of the SGNH domain lead to the formation of much larger nuclear granules, which lacked the appearance of a hollow core (Figure 5H, Figure 5—figure supplement 1A).
 
 Together our results suggest that the ability of Short Osk to homo-dimerize, interact with Vasa, Valois and LASP or bind RNA is dispensable for nuclear granule formation, nor were the LC sequence or the IDR necessary (Figure 5C–H, Figure 5—figure supplement 1A). Thus, the four Oskar regions tested must act redundantly. In support, each domain appeared to affect the efficiency of granule formation (Figure 5I). Despite expressing similar amounts of protein (Figure 5—figure supplement 1C), cells with truncated versions contained significantly more diffusely distributed Short Osk (Figure 5I), which phase separated into larger and hollow granules later than full-length Short Osk (Figure 5I). Thus, multiple independent Osk protein domains synergize to promote efficient phase separation of Short Osk in S2R+ cells.
 
-## An NLS in short Oskar controls its import into S2R + cell nuclei
+### An NLS in short Oskar controls its import into S2R + cell nuclei
 
 Our structure-function experiments revealed that a signal responsible for the nuclear localization of Short Osk in S2R+ cells resided predominantly in Oskar’s L1 region and to lesser extent in the L2 region (Figure 5C–G; Figure 6A, Figure 5—figure supplement 1A,B). Scanning the full-length aa sequence of Short Osk for nuclear localization sequences (NLS) identified two putative 10 aa long NLS motifs (Figure 6—figure supplement 1A), which fell within L1 (termed NLS1) and within L2 (termed NLS2) (Figure 6B, Figure 6—figure supplement 1A). To test the role of these predicted NLS sequences, we transfected S2R+ cells with constructs that carried a deletion of NLS1 (OskarΔNLS1) as well as a deletion of NLS1 and 2 (OskarΔNLS1 +2). OskarΔNLS1and OskarΔNLS1 +2 are unable to form nuclear granules but cytoplasmic granules formed, instead (Figure 6C,D, Figure 6—figure supplement 1B,C). Since OskarΔNLS1 completely prevented formation of nuclear germ granules (Figure 6C,D) and was able to partially support nuclear localization in the absence of NLS2 (Figure 5I, Figure 6A, Figure 5—figure supplement 1A,B), we conclude that in S2R+ cells NLS1 is the major contributor to the nuclear localization of Oskar granules. Importantly, deletion of NLS1 did not affect the ability of Short Osk to co-localize with Vasa in cytoplasmic granules (Figure 6E), indicating that the removal of NLS1 likely did not affect Oskar protein confirmation and left important aspects of its biological functions intact.
 
-## Ablation of nuclear germ granules reduces cell divisions in PGCs
+### Ablation of nuclear germ granules reduces cell divisions in PGCs
 
 To address the function of nuclear germ granules in Drosophila germ line development, we deleted the NLS1 sequence from the endogenous oskar locus using CRISPR/Cas9. Using two guide RNAs targeting the NLS1 we recovered several in-frame deletions (Figure 7—figure supplement 1A) and selected alleles from separate injection experiments, termed CRISPR alleles A and B. To avoid phenotypic consequences due to off-target mutations, we tested the two deletion alleles in trans. We immunostained embryos derived from OskΔNLS/+ and OskΔNLS-A/OskΔNLS-B mothers for Oskar protein. In the control, OskΔNLS/+ embryos, nuclear germ granules were clearly visible both as small and hollow spheres within PGC nuclei (Figure 7A, white arrows, Figure 7C,D) while the OskΔNLS embryos failed to form such granules (Figure 7B–D). Small speckles visible inside PGC nuclei of the OskΔNLS embryos were most likely due to non-specific binding of Oskar antibody since we observed a similar signal in the neighboring somatic nuclei, which lack Oskar expression, (Figure 7—figure supplement 1B,C) and in the nuclei of Osk protein deficient embryos (Figure 7—figure supplement 1D) (Vanzo and Ephrussi, 2002).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig7-v2.jpg)
+
+**Figure 7.:** (A,B) Oskar∆NLS/+ PGCs (A) form nuclear germ granules (white arrows) while Oskar∆NLS PGCs do not (B). Granules were immunostained against Osk (red). DAPI-stained DNA is shown in blue and nuclear lamin is shown in white. (C,D) Number of embryos with small (C) and hollow (D) nuclear germ granules stained with α-Osk in Oskar∆NLS and Oskar∆NLS/+ PGCs. In both the total number of embryos counted is written above the graph bars. (E,F) Cross-section of the posterior pole of an embryo with Oskar∆NLS/+ (A) and Oskar∆NLS (B) maternal genotype immunostained against Vasa (green) and DAPI (white). G Number of PGCs in 41 Oskar∆NLS/+ and 42 Oskar∆NLS embryos. Mean ± STDEV is plotted (statistical significance: unpaired t-test, p<0.001). (H) PGC buds in 15 Oskar∆NLS/+ and 14 Oskar∆NLS embryos. Mean ± STDEV is plotted (statistical significance: unpaired t-test). (I,J) Quantification of PGC divisions in live Oskar∆NLS/+ (I) and Oskar∆NLS (J) embryos. The emergence of the first PGC bud represented time 0 and the cellularization of somatic nuclei at NC 14 represented the end of the experiment. The number of Vasa:GFP associated HiS2Av:mRFP-stained nuclei was counted in three dimensions at every time point (red, green, orange and violet circles). Lines represent an estimated progression among successive cell divisions. Percent of dividing Vasa:GFP +nuclei is marked on each graph (Figure 7—video 1 and 2). Note, that in live observation, the total number of PGCs was higher than in fixed embryos (compare G with I and J). We attribute this to the fact that we counted all nuclei with even a small amount of Vasa:GFP associated, which may not have cellularized and become PGCs and thus would not have been counted as PGCs in fixed tissue. (K) Western blot of Oskar protein in Oskar∆NLS and Oskar∆NLS/+ embryos. α-tubulin was used for normalization control. L Total amount of Vasa germ plasm fluorescence in Oskar∆NLS and Oskar∆NLS/+ embryos marked with an antibody against Vasa. Mean total fluorescent levels ± STDEV of eight (Oskar∆NLS/+) and 13 (Oskar∆NLS) embryos per genotype are shown (statistical significance: two-tailed t-test). (M,N) Early embryos (M) and late embryos (N) hybridized with nos (red) and CycB (green) smFISH probes. DAPI-stained nuclei are shown in blue. O Quantification of localized mRNA levels hybridized with CycB, nos and gcl smFISH probes. Mean total fluorescent levels ± STDEV of four CycB and nos-stained embryos per genotype are shown and mean total fluorescent levels ± STDEV of four (Oskar∆NLS/+) and five (Oskar∆NLS) gcl-stained embryos are shown (statistical significance: two-tailed t-test). Scale bar in A,B is 2 μm and in E,F,M,N is 10 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37949/elife-37949-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Alleles containing deletions of the Osk NLS1 created by separate CRISPR/Cas9. (B-D) Antibody against Oskar (red) non-specifically stains background in Drosophila embryos. Somatic nuclei of embryos laid by homozygous Osk∆NLS mothers (B), their heterozygous siblings (C) or laid by mothers that do not express Oskar (∆Osk: osk54/Df(3R)Pxt103), D) all contain small red speckles when stained with anti-Oskar antibody, which most likely respond to unspecific binding of the polyclonal Osk antibody used. Nuclear lamin is shown in white, F-actin in green and DAPI in blue. (E, F) Oskar∆NLS PGCs do not form Vasa:GFP-labeled nuclear germ granules (E) while Oskar∆NLS/+PGCs do (white arrows) (F). (G) Early (i) and late (ii) Oskar∆NLS/+ and Oskar∆NLS embryos hybridized with gcl (red) smFISH probes and stained with DAPI (blue) to label the nuclei. (H) Embryo hatch rate. Numbers above the bars represent an average number of eggs counted per plate ± STDEV (n = 3). I Nuclei of the Oskar∆NLS and Oskar∆NLS/+ PGCs are transcriptionally silent, while their surrounding somatic nuclei are not. Transcriptionally active RNA polymerase II is detected with an antibody that detects phosphorylated Ser2 residue in the C-terminal Repeat Domain (CTD) of PolII (red), Vasa antibody (green) marked PGCs and DAPI (blue) stained the nuclei. J Oskar∆NLS embryos over-expressing gcl mRNA (P(EP)/mat-α gal4; Oskar∆NLS) do not accumulate WT (P(EP)/mat-α gal4; Oskar∆NLS/+) levels of PGCs. Mean ± STDEV of the number of PGCs per embryo are shown where eight embryos per genotype were quantified (statistical significance: two-tailed t-test). Note that over-expression of gcl increases the number of PGCs in both genotypes relative to WT embryos (Figure 7G), as anticipated(Jongens et al., 1994), yet Oskar∆NLS mutant embryos still produce 29% fewer PGCs compared to Oskar∆NLS/+ siblings. (K-M) S2R+ cells transfected with Short mCherry:Osk divide like untransfected S2R+ cells. Transfected and DAPI-stained cells were sorted as mCherry+ (6.32% of total cells) and mCherry- cells (92.2% of total cells) (K). Binning of cells into G1, S and G2/M cell cycle phases revealed that mCherry- (L) and mCherry+ (M) cells cycled with similar rates. Scale bar in B-D is 5 μm and in E-G,I is 10 μm.
 
 We next addressed the biological role of nuclear germ granules. During embryogenesis, we observed nuclear germ granules as soon as syncytial nuclei reached the germ plasm. As PGCs formed, nuclear germ granules continued to increase in size and number (Figure 2D,F,G) such that within 22 min, the majority of PGCs contained nuclear germ granules (Figure 2D). Given their localization, we reasoned that nuclear germ granules likely play a role during or upon PGC formation but would not affect earlier stages of germ plasm assembly or function (see also below) (Campos-Ortega and Hartenstein, 1985; Cinalli and Lehmann, 2013; Pae et al., 2017; Su et al., 1998). Nuclear germ granules could facilitate PGC formation, PGC division or subsequent aspects of PGC development such as PGC survival, migration and maturation of PGCs into germline stem cells and gametes. We therefore counted the number of PGCs in fixed embryos laid by OskΔNLS mothers (‘OskΔNLS embryos’) and control OskΔNLS/+ mothers (‘OskΔNLS/+ embryos’) at NC 14 when PGC divisions have ceased(Su et al., 1998). We found that OskΔNLS/+ embryos had an average of 36.9 ± 1.1 (n = 41) PGCs (Figure 7E,G) while OskΔNLS embryos only had 22.4 ± 1.2 (n = 42) (Figure 7F,G), a statistically significant 39.3% decrease (p<0.001) (Figure 7G). This reduction was not due to fewer nuclei migrating into the posterior pole as the number of PGC buds between the two genotypes was the same (Figure 7H). Rather, this result indicated that the reduction in PGC number occurred at a later step and was likely due to the reduced capability of OskΔNLS PGCs to cellularize, to divide or to be maintained.
 
@@ -108,7 +164,7 @@ Lastly, we asked whether the failure of mutant PGCs to divide was specifically d
 
 First observed by EM over 50 years ago (Mahowald, 1962), we still know little about the biophysical and organizational properties of germ granules in any organism. Here we have used imaging methods and reconstitution experiments to analyze two types of embryonic germ granules in Drosophila: cytoplasmic germ granules and nuclear granules. While the function of cytoplasmic granules in germ cell formation and specification is well established, our study reveals a role for nuclear granules in the regulation of early PGC division. Quantitative fluorescent microscopy demonstrates that both granule types have biophysical properties of liquid condensates, where components rapidly diffuse between granules, as well as properties consistent with a hydrogel-like state, where proteins are stably associated within granules and do not exchange freely with their environment. Consistent with previous studies, our data show that short Oskar protein coordinates the assembly of both granule types but nuclear and cytoplasmic granules differ in their protein and RNA composition. Finally, we find that multiple domains contribute, apparently redundantly, to Oskar’s ability to assemble germ granules and that an NLS within the Oskar protein coordinates granule assembly in the nucleus. Surprisingly, expression of Oskar in tissue culture cells reconstitutes aspects of nuclear granule assembly, thereby providing a system to study germ granules in a heterologous, non-germ line cellular system.
 
-## Nuclear Oskar controls PGC division
+### Nuclear Oskar controls PGC division
 
 Our studies identify a new function for Oskar, as a coordinator of PGC’s cell division in the early Drosophila embryo. This function requires nuclear localization of the short isoform of Oskar. Nuclear germ granules are typically bigger, often appear hollow and fail to accumulate core germ granule constituents such as Aubergine and Tudor proteins and nos, pgc and gcl mRNAs consistent with these granules regulating different aspects of PGC development. PGC form four nuclear divisions prior to the cellularization of the somatic cells and thus become separated from the highly synchronized cell cycle control of the syncytial embryo. It is therefore attractive to hypothesize a role for nuclear granules in sequestering factors required for the coordinated division of early PGCs independently of the synchronous divisions of somatic nuclei. One model is that nuclear germ granules would increase the PGC number by sequestering negative regulators that would otherwise precociously inhibit PGC division. Such a role would not be unprecedented. In response to viral infections, cells form stress granules that sequester translational regulators to counteract the increased translational demands of a virus thereby suppressing its multiplication (Reineke and Lloyd, 2013). This regulator would be specific to germ cells and may explain why PGCs arrest at NC 14, while somatic cells continue to divide (Su et al., 1998). Furthermore, in support of a germ cell-specific regulator of cell division, cell divisions of somatic nuclei were unaffected by the NLS mutation and Short Oskar nuclear germ granules did not affect the division of S2R+ cells devoid of core germ plasm constituents.
 
@@ -116,7 +172,7 @@ Alternatively, nuclear germ granules could enrich proteins that promote cell div
 
 Lastly, it is also possible that diffuse nucleoplasmic Oskar itself directly regulates PGC division as a cell cycle regulator. In this scenario, the granules would act as a source of Oskar protein in the nucleus. Future work is needed to clarify the role of nuclear Oskar and nuclear germ granules in PGCs.
 
-## Germ granules with similar organizational properties but distinct biological functions
+### Germ granules with similar organizational properties but distinct biological functions
 
 Oskar nucleates both, cytoplasmic and nuclear germ granules and it is possible that Oskar and possibly Vasa proteins shuttle from the cytoplasm to the nucleus as PGCs form. FRAP, FLIP, photoconversion and experiments with aliphatic alcohols revealed that these two types of granules may use the same biophysical principles to achieve their distinct functions. For instance, their liquid properties could enhance biochemical reactions occurring within granules or provide a constant supply of diffusible protein to perform functions outside of granules. Conversely, the more stable conformation could ensure that their regulatory properties persisted throughout early embryonic development. Indeed, cytoplasmic germ granules begin forming and become functional in a transplantation assay during late oogenesis (Illmensee et al., 1976) and are maintained through early embryogenesis, a process that can last from 5 hr to many hours when fertilization is delayed (Spradling, 1993; Su et al., 1998). As a result, the enrichment of localized transcripts also persists, ensuring adequate levels of effector molecules to instruct germ cell fate. This could be achieved in part by making more stable, hydrogel-like organelles.
 
@@ -124,7 +180,7 @@ We found that multiple independent Short Oskar domains synergize to promote gran
 
 Despite years of research, it is largely unclear how the distinct functions of Oskar protein are accomplished with such high spatial and temporal precision. Our ability to understand the mechanisms by which Oskar realizes these roles has been limited, because the majority of osk mutations prevent germ plasm assembly already during oogenesis and as a result preclude PGC formation and phase separation of nuclear germ granules. Several features of cytoplasmic and nuclear germ granules are recapitulated in nuclear germ granules formed in S2R+ cells including their cellular localization, morphology, composition and their biophysical properties. Thus, reconstitution of germ granules in S2R+ cells now provides an experimentally controllable system to study the distinct properties and functions of Oskar and its granules.
 
-## Miscellaneous phase separated condensates - distinct or the same?
+### Miscellaneous phase separated condensates - distinct or the same?
 
 Germ granules are characteristic to germ cells of all species (Eddy, 1975) and many components, such as Vasa, Tud, Aub and granule mRNAs are conserved (Voronina et al., 2011), including in P granules of C. elegans. Despite morphologically, compositionally and functionally resembling P granules, our biophysical studies suggest that Drosophila germ granules behave more like aged yeast and mammalian stress granules by displaying both liquid-like and hydrogel-like properties (Jain et al., 2016; Wheeler et al., 2016). P granules have been proposed to largely behave as liquid droplets that form by liquid-liquid de-mixing (Brangwynne, 2013; Brangwynne et al., 2009). Interestingly, the more labile P granules are dispensable for germ line specification in C. elegans (Gallo et al., 2010), while germ granules in Drosophila have so far been inseparably associated with germ cell specification and early germ cell development. How these structural differences between Drosophila and C. elegans germ granules are realized in their function is unknown. Recent work on mammalian and yeast stress granules revealed that RNAs, the mini-chromosome maintenance (MCM) and RuvB-like (RVB) DNA helicase complexes stabilize these granules and promote their maturation from liquid droplets into hydrogels (Burke et al., 2015; Jain et al., 2016; Zhang et al., 2015). Some of these proteins including Mcm5, Mcm3, Dpa (MCM helicases) and pontin (RuvB-like helicase 1) associate with Short Osk by immunoprecipitation (Hurd et al., 2016) suggesting that they populate Drosophila germ granules, which could promote hydrogel-like conformation and provide rigidity to Drosophila germ granules.
 
@@ -142,7 +198,500 @@ Despite intense research, many of the characteristics of phase separated condens
 
 ## Materials and methods
 
-## Drosophila melanogaster and Caenorhabditis elegans
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Poly(mono)clonal α-Oskar</td>
+      <td>A. Ephrussi</td>
+      <td>N/A</td>
+      <td>1:1000 or 1:2500 (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal α-Vasa</td>
+      <td>R. Lehmann</td>
+      <td>N/A</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal α-Lamin</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>ADL84.12</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Phalloidin</td>
+      <td>Molecular Probes</td>
+      <td>A12379</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal α-mCherry</td>
+      <td>Abcam</td>
+      <td>Ab167453</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat α-rabbit HRP</td>
+      <td>Abcam</td>
+      <td>Ab6721</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat α-rabbit horse HRP</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>111-035-003</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse α -mouse HRP</td>
+      <td>Rockland</td>
+      <td>18-8817-31</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal α-alpha tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9026-2ML</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit α-Aubergine</td>
+      <td>R. Lehmann</td>
+      <td>N/A</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit α-Ser2</td>
+      <td>Abcam</td>
+      <td>Ab5095</td>
+      <td>1:750</td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Vectashield Antifade Mounting medium</td>
+      <td>Vector Labs</td>
+      <td>Cat# H-1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Prolong Diamond Mounting medium</td>
+      <td>Molecular Probes</td>
+      <td>Cat# P36961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Deionized formamide</td>
+      <td>Life Technologies</td>
+      <td>Cat# 4311320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>10% Fetal Bovine Serum</td>
+      <td>Invitrogen</td>
+      <td>Cat#10082-139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Fisher</td>
+      <td>Cat# 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Poly-L-lysine solution</td>
+      <td>Sigma</td>
+      <td>Cat# P4707-50ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>20% Paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#15713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>BSA</td>
+      <td>Sigma</td>
+      <td>Cat#A4503-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Restore Western Blot Stripping Buffer</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# PI21059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T8787-250ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>1,6 Hexanediol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#240117-50G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>NuPAGE Novex 4-12% Bis-Tris Gel 1.0mm, 10 well</td>
+      <td>Invitrogen</td>
+      <td>Cat# NP0321BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Immun-Blot PVDF Membrane</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 162-0174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Imaging membranes</td>
+      <td>YSI</td>
+      <td>Standard</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Effectine Transfection reagent</td>
+      <td>Qiagen</td>
+      <td>Cat# 301427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England BioLabs</td>
+      <td>Cat#E2611L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Nunc Lab-Tek II Chambered Coverglass</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 155409PK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>D. melanogaster S2R+</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>FlyBase: FBtc0000150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Human:HEK293T</td>
+      <td>ATCC</td>
+      <td>293T (ATCCCRL3216TM)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>Wild-type:w-1118</td>
+      <td>Bloomington (BDSC)</td>
+      <td>Stock #3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>y,w; P[E GFP-vas w+]cyIII</td>
+      <td>(Trcek et al., 2015)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>UAS–vasa–ko</td>
+      <td>(Cinalli and Lehmann, 2013; Trcek et al., 2015 )</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>pFlyFos-Osk/CyO</td>
+      <td>(Jambor et al., 2015; Trcek et al., 2015)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>UASp-GFP-Aub</td>
+      <td>(Webster et al., 2015)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>GFP-Piwi</td>
+      <td>(Le Thomas et al., 2013)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>GFP-Tud</td>
+      <td>R. Lehmann</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>;;P{GAL4::VP16-nos.UTR}/Tm3Ser</td>
+      <td>R. Lehmann</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>w[*]; P{w[+mC]=His2Av-mRFP1}II.2</td>
+      <td>Bloomington (BDSC)</td>
+      <td>Stock #23651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>w;;OskΔNLS-alleleA/TM3</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>w;;OskΔNLS-alleleB/TM3</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>w;His2AAv-mRFP/cyo;OskΔNLS-alleleA,Vasa:GFP/TM3</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>w; matα-gal4;PrDr/TM3</td>
+      <td>(Pae et al., 2017)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>Df(3R)Pxt103/TM3 Ser Sb</td>
+      <td>(Lehmann and Nüsslein-Volhard, 1991)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>osk54 st ry ss/TM3Ser</td>
+      <td>(Lehmann and Nüsslein-Volhard, 1991)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>w; P(EPgy2)gclEY09611/Cyo; nosGal4VP16 (w+)/TM3</td>
+      <td>(Cinalli and Lehmann, 2013)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms/Strains</td>
+      <td>FT553: zuIs247 [nmy-2::PGL-1-GFP line O05-2]; unc-119(ed3) III; ltIs44 V [pie-1p-mCherry::PH(PLC1delta1)]</td>
+      <td>J. Nance</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>Osk nls gRNA-A</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>Osk nls gRNA-B</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>ssODN for gcl-NLS-A</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>ssODN for gcl-NLS-B</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>Calca Fluor 590-conjugated nanos smFISH probes</td>
+      <td>(Trcek et al., 2015)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>Quasar 670-conjugated gcl smFISH probes</td>
+      <td>(Trcek et al., 2017)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>Quasar 670-conjugated cycB smFISH probes (5′→3′): cgttttgttgttgcctccat, tatgccgcgattctgcaaat,tctttctgtgccgcatcctt, tctgtgagcttgagatcctt, tccacccgagctttggcatt, agtggctgtttcttccagtg, ttgccattgccattggtgct,aattcgaacgcaaaaacgcc, tacagtggtcttggtcggaa,tgactgtaactttagtgggt, ttcacgttctcggaagaact,ttgctgtcctcgcgctttaa, agtttggtcagcgacttctt,attcctgaaactcccatcac, aaacagctactggttcccgt,ttcttggtctctgcctcttt, cttcttggtttctggcagtt,cctttttcacttccagtgag, tgcactgttgcccctaataa, atcgtagatgtggtcgtagt,ttgctggaaagggacatggt, atcaatgtcctcgattccag,accaggttctccttgtcatt, cgtttacatattcggagacc, cctgatacaagtagtcgtag, atccttgtgaatgggctgct,atcttgtgggacacctcctt, ttgatccaatcgatcagcac,atggaactgcaggtggactt, tagcgatcaatgatagccac, tttggtgtccttgaccacct, actcccaccaattgcaagta,acttggtggctatgaagagt, aagacgaaatctccgattgc,agtgtaggtgtcgtccgtga, agatttgcagctccatctgt,agattacagtcgatggcctt, tagcgtcgaaggaagtgaat,ttggacatcgtatggtgctc, ggaagctaactcgatgaagt,taagtggccatttcgtagtc, aacagtgaggcagctgcaat,tttccattgagcaagtgcag, acggtcgttgaatcctgtac,atcgcgagtagaaggtcaga, ttcgcgatcagccgggtaat,ttgtagatggccttcagctt, atcttctggaacttgctgcc</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pActin5C</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>Cat#1112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pVERMILION22</td>
+      <td>(Ni et al., 2011)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pEF1/V5-His A</td>
+      <td>ThermoFisher Scientific</td>
+      <td>V92020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pDendra2</td>
+      <td>Addgene</td>
+      <td>Cat#75283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>NLS finder</td>
+      <td>cNLS Mapper</td>
+      <td>http://nls-mapper.iab.keio.ac.jp/cgi-bin/NLS_Mapper_form.cgi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>IDR and LC prediction</td>
+      <td>SEG IUPRED JPRED</td>
+      <td>http://mendel.imp.ac.at/METHODS/seg.server.html http://iupred.enzim.hu/ http://www.compbio.dundee.ac.uk/jpred/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>EasyFRAP</td>
+      <td>(Rapsomaniki et al., 2012)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Huygens deconvolution software</td>
+      <td>Scientific Volume Imaging</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Prism 7</td>
+      <td>Graphpad</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>SigmaPlot</td>
+      <td>SigmaPlot (Systat Software, Inc)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>CRISPR design for guide RNAs</td>
+      <td>MIT</td>
+      <td>http://crispr.mit.edu/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>CRISPR design for guide RNAs</td>
+      <td>ZiFit</td>
+      <td>http://zifit.partners.org/ZiFiT/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>DAVID GO term analysis</td>
+      <td>The Database for Annotation, Visualization andIntegrated Discovery (DAVID) version 6.7.</td>
+      <td>https://david.ncifcrf.gov/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila melanogaster and Caenorhabditis elegans
 
 Flies were maintained on cornmeal molasses/yeast medium at 25°C using standard procedures. The following fly lines were used: Wild-type:w−1118(Bloomington (BDSC); Stock #3605), y,w; P[E GFP-vas w+]cyIII (Trcek et al., 2015), UAS–vasa–KO (Cinalli and Lehmann, 2013; Trcek et al., 2015), pFlyFos-Osk (Jambor et al., 2015; Trcek et al., 2015), UASp-GFP-Aub (Webster et al., 2015), GFP-Piwi (Le Thomas et al., 2013), GFP-Tud (Zheng et al., 2016), ;;P{GAL4::VP16-nos.UTR}/TM3Ser (Pae et al., 2017), w[*]; P{w[+mC]=His2Av-mRFP1}II.2 (Bloomington (BDSC); Stock #23651), w; matα-gal4;PrDr/TM3 (Pae et al., 2017), w; P(EPgy2)gclEY09611/CyO; nosGal4VP16 (w+)/TM3 (Cinalli and Lehmann, 2013), Df(3R)Pxt103/TM3 Ser Sb and osk54 st ry ss/TM3Ser (Lehmann and Nüsslein-Volhard, 1991).
 
@@ -150,53 +699,53 @@ To generate OskarΔNLS using CRISPR/Cas9, two separate injections were performed
 
 Worms (FT553: zuIs247 [nmy-2::PGL-1-GFP line O05-2]; unc-119(ed3) III; ltIs44 V [pie-1p-mCherry::PH(PLC1delta1)]; gift from J. Nance, NYU) were maintained on nematode growth medium seeded with OP50 E.coli strain at room temperature (RT) using standard procedures.
 
-## Tissue culture
+### Tissue culture
 
 Drosophila S2R+ cells (DGRC; FBtc0000150) were maintained at 25°C and 5% CO2 in Schneider’s medium (Gibco) containing 10% Fetal Bovine Serum and 1% Penicillin-streptomycin. Effectene was used to transfect 200 ng of each plasmid (unless specified otherwise). Transfected cells were incubated for at least 24 before use. Human HEK293 cells (293T (ATCC CRL3216TM) were purchased from ATCC in 2006 and low passage number vials were cryopreserved. The cells are mycoplasma negative. ATCC authenticated cells by isoenzymology tests to confirm species and morphology. Once thawed, cells were maintained at 37°C in Dulbecco’s modified Eagle’s medium supplement L-Glu and containing 10% Fetal Bovine Serum and 1% Penicillin-streptomycin. Effectene was used to transfect 200 ng of plasmid. Transfected cells were incubated for at least 24 hr before use.
 
-## Preparing embryos and S2R+ cells for live imaging
+### Preparing embryos and S2R+ cells for live imaging
 
 Embryos were dechorionated as previously described (Trcek et al., 2017) and afterwards affixed onto the heptane glue-coated coverslip, covered with halocarbon oil and placed into an imaging chamber with a central hole covered with imaging membrane to allow gas exchange.
 
 24 hr after transfection, S2R+ cells, resuspended in growth medium, were affixed onto the Poly-L-lysine-coated Lab-Tek dishes. All videos were recorded at RT with a laser scanning microscope.
 
-## Immunostaining embryos
+### Immunostaining embryos
 
 Dechorionated embryos (Trcek et al., 2017) were fixed for 45 min at RT, devitellinized by hand and stained overnight at 4°C with rabbit α-Oskar (kind gift of Dr. Anne Ephrussi; 1:1000), mouse monoclonal α-lamin (Developmental Studies Hybridoma Bank; ADL84.12;1:1000), rabbit polyclonal α-Vasa ([Trcek et al., 2015]; 1:1000), Alexa Fluor488 phalloidin (Molecular Probes; A12379; 1:500) or Rabbit α-Ser2 (Abcam; Ab5095; 1:750) 1°antibodies.
 
-## Immunostaining S2R+ cells
+### Immunostaining S2R+ cells
 
 Transfected cells were attached to Poly-L-lysine coated coverslips and fixed with 4% paraformaldehyde in 1XPBS for 10 min. Afterwards, they were permeabilized in 1X PBS containing 0.1% Triton X-100 for 15 min and stained overnight at 4°C with mouse monoclonal α-lamin (1:1000) or Alexa Fluor488 phalloidin (1:500) 1°antibodies.
 
-## Immunoblotting embryo extracts
+### Immunoblotting embryo extracts
 
 Protein was extracted from 0 to 40 min old embryos, run on a SDS-polyacrylamide gradient gel and then transferred to a PVDF membrane. The membrane was probed with α-Oskar (1:2500) diluted in PBST +2% skim milk powder and then with goat α-rabbit horse HRP (Jackson ImmunoResearch; 111-035-003;1:5000). Protein bands were detected using chemiluminescence. The membrane was then stripped using Restore Western Blot Stripping Buffer and re-probed with mouse monoclonal α-alpha tubulin (Sigma-Aldrich; T9026-2ML; 1:10000) and α mouse α -mouse HRP (Rockland; 18-8817-31; 1:5000) and detected by chemiluminescence.
 
-## Immunoblotting S2R + cell extracts
+### Immunoblotting S2R + cell extracts
 
 S2R+ cells were co-transfected with 140 ng Short Osk:mCherry or its truncations and 140 ng Aub:GFP plasmids. After 72 hr, cells were washed and resuspended in 1XPBS. Cell suspension was mixed with equal amount of Laemmli sample buffer, boiled at 95°C for 5 min and run on a SDS-polyacrylamide gradient gel and then transferred to a PVDF membrane. The membrane was blotted with rabbit polyclonal α-mCherry (Abcam; Ab167453; 1:1000 dilution) and then goat α-rabbit HRP (Abcam, Ab6721; 1: 2000 dilution). Membrane was imaged with chemiluminescence. The membrane was then stripped with Restore Western Blot Stripping Buffer and re-probed with rabbit α-Aubergine ([Trcek et al., 2015]; 1:1000 dilution) and goat α-rabbit HRP (1: 2000 dilution) and imaged with chemiluminescence. Integrated intensities of protein bands were quantified with ImageJ. Intensity of each Oskar protein band was then normalized by the intensity of the corresponding Aub:GFP band to determine its expression level.
 
-## smRNA FISH
+### smRNA FISH
 
 NC 1–14 embryos were fixed and afterwards commercially available Stellaris RNA smFISH probes were used to label nos and gcl as described previously (Trcek et al., 2015; Trcek et al., 2017). To detect CycB, the following Quasar670-conjugated Stellaris smFISH probes were used: cgttttgttgttgcctccat, tatgccgcgattctgcaaat, tctttctgtgccgcatcctt, tctgtgagcttgagatcctt, tccacccgagctttggcatt, agtggctgtttcttccagtg, ttgccattgccattggtgct, aattcgaacgcaaaaacgcc, tacagtggtcttggtcggaa, tgactgtaactttagtgggt, ttcacgttctcggaagaact, ttgctgtcctcgcgctttaa, agtttggtcagcgacttctt, attcctgaaactcccatcac, aaacagctactggttcccgt, ttcttggtctctgcctcttt, cttcttggtttctggcagtt, cctttttcacttccagtgag, tgcactgttgcccctaataa, atcgtagatgtggtcgtagt, ttgctggaaagggacatggt, atcaatgtcctcgattccag, accaggttctccttgtcatt, cgtttacatattcggagacc, cctgatacaagtagtcgtag, atccttgtgaatgggctgct, atcttgtgggacacctcctt, ttgatccaatcgatcagcac, atggaactgcaggtggactt, tagcgatcaatgatagccac, tttggtgtccttgaccacct, actcccaccaattgcaagta, acttggtggctatgaagagt, aagacgaaatctccgattgc, agtgtaggtgtcgtccgtga, agatttgcagctccatctgt, agattacagtcgatggcctt, tagcgtcgaaggaagtgaat, ttggacatcgtatggtgctc, ggaagctaactcgatgaagt, taagtggccatttcgtagtc, aacagtgaggcagctgcaat, tttccattgagcaagtgcag, acggtcgttgaatcctgtac, atcgcgagtagaaggtcaga, ttcgcgatcagccgggtaat, ttgtagatggccttcagctt, atcttctggaacttgctgcc.
 
-## Microscopy
+### Microscopy
 
 Majority of samples were imaged with a Zeiss LSM780, AxioOberver inverted laser scanning confocal microscope, equipped with an argon, an HeNe 633 laser and a DPSS 561–10 laser, a Plan-Apo40X/1.4 Oil DIC and EC Plan-Neofluar 10X/0.30 objectives. To quantify Vasa levels in the embryos immunostained with α-Vasa and to record the dynamics of granule formation by full length Oskar or its truncations, a Zeiss AxioObserver.Z1 Widefield Epifluorescence microscope equipped with the Plan-Apochromat 63x/1.40 Oil DIC M27 objective, the FL Filter Set 49 DAPI, FL Filter Set 38 HE GFP, FL Filter Set 43 HE Cy3 filter sets and the Cond LD 0.55 hr/DIC/Ph 6x Mot light source and the Axiocam 503 Mono camera was used. Images were acquired in 3D and afterwards deconvolved using Huygens deconvolution software (Scientific Volume Imaging). To record PGC divisions in live embryos, a Zeiss Lightsheet Z.1 microscope equipped with water immersion Plan-Apochromat 20x/1.0 UV-VIS (Serial No. 4909000088) detection objective, 488 nm and 561 nm lasers, and band pass 505 nm-545nm and long pass 585 nm filters were used. The ZEN 2014 SP1 (black edition) version 9,2 software was used to process the images.
 
-## Correlative light and electron microscopy
+### Correlative light and electron microscopy
 
 Transfected S2R+ cells were prepared for electron microscopy by the NYULH DART Microcopy Core Laboratory. Cells were cultured on a 35 mm No. 1.5 gridded glass bottom dish (MatTek Corporation). After cells were imaged under the Zeiss Axio Observer epifluorescence and crossed polarization microscope to obtain the fluorescence and phase images, they were then fixed in 2.5% glutaraldehyde and 2% paraformaldehyde in 0.1M Hepes buffer (pH 7.2) at room temperature for one hour, and afterwards continued to be fixed at 4°C overnight. The cells were then post-fixed with 1% osmium tetroxide for 1 hr and stained with 1% uranyl acetate in ddH2O at 4°C overnight. Dehydration was carried out at room temperature using serial ethanol solutions. The cells were en face embedded with Araldite 502 (Electron Microscopy Sciences, Hatfield, PA), and polymerized at 60°C for 48 hr. The sample block was removed by immersing the whole dish in liquid nitrogen, and area of interest then trimmed under stereomicroscope. The grid pattern imprinted in the resin served as the landmark to correlate optical and fluorescence image. 70nm serial ultrathin sections were cut using Leica UC6 ultramicrotome (Leica Microsystems Inc.), collected on formvar coated slot copper grids and stained with uranyl acetate and lead citrate by standard methods. The surface 1–2 sections were cut at 100 nm containing marker grid pattern and afterwards recognized under transmission electron microscope (Philips CM-12, Thermo Fisher, Eindhoven, The Netherlands), and serial sections were captured with a Gatan (4k × 2.7 k) digital camera (Gatan, Inc., Pleasanton, CA).
 
-## Quantification of granule protein enrichment
+### Quantification of granule protein enrichment
 
 Two different measures were used to quantify the fold enrichment of proteins within granules relative to granule surroundings; by concentration fold enrichment (Figures 1B, 2H and 4A) and by quantifying the percent of non-granular nucleoplasmic protein in PGC and S2R + cell nuclei (Figure 2—figure supplement 1D, Figure 4—figure supplement 1A). To quantify the concentration fold enrichment of Osk:GFP in cytoplasmic germ granules, embryos expressing the Osk:GFP transgene were first imaged in 3D with a laser scanning confocal microscope. Afterwards, 23 granules were segmented in ImageJ and total fluorescence intensity normalized by the granule area. Only the equatorial plane (where the granule is most in focus) was analyzed. The same analysis was then preformed using ROIs within the intergranular space and the somatic cytoplasm (Figure 1—figure supplement 1B). Means were compared to determine the fold difference in the fluorescent intensity of Osk:GFP located in the granules versus the intergranular space (Figure 1B). The same approach was employed to quantify the fold enrichment of granular Osk and Vasa in Figure 2H, and Figure 4A. To quantify the total amount of non-granular nucleoplasmic protein in PGCs and S2R+ cells, fixed embryos and S2R+ cells were imaged as described above. Afterwards, individual PGC or S2R + cell nuclei were segmented using the DAPI stain and total Oskar or Vasa nuclear fluorescence intensity determined using the 3D object counter plugin in ImageJ (Bolte and Cordelières, 2006). Using the same plugin, individual nuclear granules were segmented and their total fluorescence intensity determined. After subtraction, the percent of non-granular nucleoplasmic Oskar or Vasa protein was determined (% nucleoplasmic content).
 
-## Quantification of granule sizes and protein abundance
+### Quantification of granule sizes and protein abundance
 
 Using ImageJ, lines were drawn through several granules imaged in their equatorial plane and their linear fluorescent profiles extracted using a Plot Profile plugin. Pixels in these profiles where the fluorescence intensity started to increase relative to background represented the edges of the granule (i.e. size in nm), while the summed fluorescence intensity contained within these pixels represented the total fluorescence intensity (i.e. protein abundance) of an individual granule.
 
-## Fluorescence Recovery after Photobleaching (FRAP)
+### Fluorescence Recovery after Photobleaching (FRAP)
 
 Live embryos and S2R+ cells expressing Osk:GFP, Vasa:GFP and Short mCherry:Osk transgenes were prepared as described above. To FRAP Osk:GFP or Vasa:GFP in the germ plasm, an ROI (x = y three µm) located in the middle of germ plasm was bleached using a single strong pulse of 488 laser illumination and afterwards an image of the germ plasm acquired every second to record fluorescence recovery. Initial five images were acquired to establish the levels of pre-bleach fluorescence. To FRAP Osk:GFP or Vasa:GFP in nuclear germ granules in PGCs, a single nuclear granule was bleached per embryo and imaging carried out as described above. To FRAP Short Osk:mCherry in nuclear germ granules in S2R+ cells, a single nuclear granule was bleached per cell. In this case, a single strong pulse of 561 laser illumination was used for bleaching. Imaging was performed using 561 laser illumination as described above.
 
@@ -204,50 +753,50 @@ Fluorescence fluctuations in the bleached ROIs were extracted in ImageJ. Afterwa
 
 To record fluorescence recovery of a partially bleached nuclear mCherry:Osk granule in S2R+ cells, approximately half of the granule was bleached and afterwards imaged as described above. The fluorescence recovery was recorded, recovery curves normalized and analyzed as described above.
 
-## Fluorescence Loss in Photobleaching (FLIP)
+### Fluorescence Loss in Photobleaching (FLIP)
 
 Live NC 1–5 embryos expressing transgenic Osk:GFP or Vasa:GFP were prepared as described above. To record FLIP, a single ROI (x = y three µm, region A) located in the middle of the germ plasm was continuously bleached using a single strong pulse of 488 laser illumination while concurrently acquiring an image of germ plasm every second for the duration of four minutes. Initial five images were acquired to establish the pre-bleach fluorescence levels. Fluorescence loss in the bleached region A as well as in the neighboring regions B, C, D (x = y three µm) was extracted in ImageJ. These values were then normalized to the initial value (time 0 s) and expressed as a percent (% fluorescence remaining). To determine the rates of fluorescence loss due to unintended photobleaching, an ROI (x = y three µm) located outside of the embryo was continuously bleached and % fluorescence remaining for regions A, B, C and D located in the germ plasm determined as described above. No additional normalization steps as described for FRAP experiments were performed. For both transgenes, unintentional bleaching reduced the level of fluorescence by five to 24% (Figure 1—figure supplement 1Di,Fi), intentional bleaching within region A by 95% (Figure 1Dii, Figure 1—figure supplement 1Ei), and redistribution of Oskar and Vasa from ROI B into neighboring ROIs by 45% to 59%, respectively (Figure 1Dii, Figure 1—figure supplement 1Ei). Thus, compared to unintentional bleaching, redistribution of granule protein into neighboring ROIs accounted for redistribution of minimally 20% to 30% of the protein.
 
-## Quantifying granule numbers and phenotypes in S2R+ cells
+### Quantifying granule numbers and phenotypes in S2R+ cells
 
 Cells expressing Short mCherry:Osk or its truncations were fixed 24, 48 and 72 hr after transfection. At each time point, expressing cells were binned into categories depending on the size and appearance of the granules they formed (small, hollow, non-hollow, big and non-hollow). If cells expressed predominantly diffused protein and formed only a few small granules, then the cells were categorized as belonging to a ‘diffused’ category.
 
-## Live imaging of granules in S2R+ cells
+### Live imaging of granules in S2R+ cells
 
 To detect granule fusion, transfected cells were rapidly imaged in a single plane or in 3D every minute. To detect granule dissolution, 4% or 15% of 1,6 Hexanediol, 2,5-Hexandiol, 1,5-Pentandiol or 1,4-Butandiol (Kroschwald et al., 2015; Lin et al., 2016; Patel et al., 2007) resuspended in S2R+ cells growth medium was added to the cells mounted in Lab-Tek dishes. Cells were imaged 20 min later. To detect exchange of Short Dendra2:Osk among granules, green fluorescence of three granules within the same nucleus was photoconverted to red fluorescence using a strong pulse of the 488 laser illumination. Images before and after photoconversion were acquired every second using a 561 laser illumination. All videos were recorded with a laser scanning confocal microscope
 
-## Isolation of short Osk:Dendra2 granules
+### Isolation of short Osk:Dendra2 granules
 
 24 hr after transfection, S2R+ cells expressing Short Osk:Dendra2 were harvested with centrifugation at 1000 g for 2 min. Cells were then washed once with phosphate-buffered saline (PBS) and lysed in hypotonic buffer (10 mM Tris-HCl pH7.5, 10 mM KCl, 1.5 mM MgCl2) supplemented with 0.2% IGEPAL CA-630 (Sigma-Aldrich) for 5 min. Lysate was centrifuged at 220 g for 5 min. Pelleted nuclei were resuspended in hypotonic buffer and sonicated for 6 × 10 s bursts (with 10 s intervals between each burst) with Bioruptor 300 sonication system in high power output. Sonicated sample was layered over sucrose buffer (0.88M sucrose, 0.5 mM MgCl2) and centrifuged at 3000 g for 10 min. Pellet containing nuclear granules was resuspended in hypotonic buffer for further experiments.
 
-## Predicting LC and IDR domains
+### Predicting LC and IDR domains
 
 Sequence analyses to predict LC and IDR regions of Oskar were carried out with a combination of SEG (http://mendel.imp.ac.at/METHODS/seg.server.html), IUPRED (http://iupred.enzim.hu/) and JPRED (http://www.compbio.dundee.ac.uk/jpred/). Standard values (pre-assigned in the programs) were used as the search parameters.
 
-## Counting PGCs and PGC buds
+### Counting PGCs and PGC buds
 
 Fixed NC nine embryos (to count PGC buds) and NC 14 embryos (to count PGCs) were immunostained with α-Vasa. Afterwards, embryo’s posterior was cut with a razor blade, mounted on a plane parallel to the slide (PGCs facing up) (Slaidina and Lehmann, 2017) and imaged in 3D.
 
-## Quantification of Vasa in germ plasm
+### Quantification of Vasa in germ plasm
 
 Early embryos (NC 1 to 8) were fixed and immunostained using α-Vasa. Posterior ends of embryos were then imaged in 3D and total Vasa fluorescence intensity using a 3D object counter plugin in ImageJ (Bolte and Cordelières, 2006).
 
-## Quantifying smFISH-hybridized embryos
+### Quantifying smFISH-hybridized embryos
 
 Early embryos (NC 1 to 5) were fixed and hybridized with smFISH probes targeting CycB, nos or gcl mRNAs as described previously (Trcek et al., 2017). Posterior ends of embryos were imaged using a laser scanning microscope in 3D and total fluorescence intensity of smFISH-hybridized mRNAs quantified using a 3D object counter plugin in ImageJ (Bolte and Cordelières, 2006).
 
-## NLS prediction
+### NLS prediction
 
 Oskar NLSs were predicted using cNLS Mapper (http://nls-mapper.iab.keio.ac.jp/cgi-bin/NLS_Mapper_form.cgi).
 
-## Cell sorting and cell cycle analysis
+### Cell sorting and cell cycle analysis
 
 Live transfected S2R+ cells were washed once in 1XPBS and resuspended in 1XPBS to the concentration of 10–20 million cells/ml. Afterwards, they were sorted into mCherry positive and mCherry negative cells using the MoFlo cell sorter (Beckman Coulter). Each cell population was then fixed with 80% ethanol on ice and DAPI stained to label the DNA. Using the LSRII cell cycle analyzer (BD), DAPI intensity of single cells was determined while excluding cell clumps and aggregates. The distribution of DAPI intensities (Figure 7—figure supplement 1L,M, black line) was fitted using ModFit (Verity Software House) (Figure 7—figure supplement 1L,M, purple line) to extract individual cell cycle components and determine the percent of cells belonging to G1, S and G2/M phases of the cell cycle.
 
-## Egg laying and egg hatching rates
+### Egg laying and egg hatching rates
 
 For each genotype, seven up to two-day old virgin females were mated with four WT males for four days and afterwards placed in an egg collection cage covered with a three-cm round apple juice plate containing a dollop of fresh yeast paste (Trcek et al., 2017). Cages were then placed into a 25°C humidity-controlled incubator for 24 hr. Flies were allowed to lay eggs on fresh plates for 2 hr, plates removed and laid eggs counted. Plates were then returned into the incubator and the number of hatched eggs counted 48 hr later.
 
-## Statistical analysis, statistical reporting and sample size estimation
+### Statistical analysis, statistical reporting and sample size estimation
 
 Statistical analysis, information about the sample size and technical replicates for each experiment are provided in the figure legends. No explicit power analysis was used to estimate the sample size used for each experiment.

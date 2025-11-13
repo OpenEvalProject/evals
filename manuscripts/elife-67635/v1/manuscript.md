@@ -77,7 +77,7 @@
 
 ## Abstract
 
-Vaccination is one of the most effective public health interventions. We investigate the impact of vaccination activities for Haemophilus influenzae type b, hepatitis B, human papillomavirus, Japanese encephalitis, measles, Neisseria meningitidis serogroup A, rotavirus, rubella, Streptococcus pneumoniae , and yellow fever over the years 2000–2030 across 112 countries. Twenty-one mathematical models estimated disease burden using standardised demographic and immunisation data. Impact was attributed to the year of vaccination through vaccine-activity-stratified impact ratios. We estimate 97 (95%CrI[80, 120]) million deaths would be averted due to vaccination activities over 2000–2030, with 50 (95%CrI[41, 62]) million deaths averted by activities between 2000 and 2019. For children under-5 born between 2000 and 2030, we estimate 52 (95%CrI[41, 69]) million more deaths would occur over their lifetimes without vaccination against these diseases. This study represents the largest assessment of vaccine impact before COVID-19-related disruptions and provides motivation for sustaining and improving global vaccination coverage in the future. VIMC is jointly funded by Gavi, the Vaccine Alliance, and the Bill and Melinda Gates Foundation (BMGF) (BMGF grant number: OPP1157270 / INV-009125). Funding from Gavi is channelled via VIMC to the Consortium’s modelling groups (VIMC-funded institutions represented in this paper: Imperial College London, London School of Hygiene and Tropical Medicine, Oxford University Clinical Research Unit, Public Health England, Johns Hopkins University, The Pennsylvania State University, Center for Disease Analysis Foundation, Kaiser Permanente Washington, University of Cambridge, University of Notre Dame, Harvard University, Conservatoire National des Arts et Métiers, Emory University, National University of Singapore). Funding from BMGF was used for salaries of the Consortium secretariat (authors represented here: TBH, MJ, XL, SE-L, JT, KW, NMF, KAMG); and channelled via VIMC for travel and subsistence costs of all Consortium members (all authors). We also acknowledge funding from the UK Medical Research Council and Department for International Development, which supported aspects of VIMC's work (MRC grant number: MR/R015600/1). JHH acknowledges funding from National Science Foundation Graduate Research Fellowship; Richard and Peggy Notebaert Premier Fellowship from the University of Notre Dame. BAL acknowledges funding from NIH/NIGMS (grant number R01 GM124280) and NIH/NIAID (grant number R01 AI112970). The Lives Saved Tool (LiST) receives funding support from the Bill and Melinda Gates Foundation. This paper was compiled by all coauthors, including two coauthors from Gavi. Other funders had no role in study design, data collection, data analysis, data interpretation, or writing of the report. All authors had full access to all the data in the study and had final responsibility for the decision to submit for publication.
+Background:Vaccination is one of the most effective public health interventions. We investigate the impact of vaccination activities for Haemophilus influenzae type b, hepatitis B, human papillomavirus, Japanese encephalitis, measles, Neisseria meningitidis serogroup A, rotavirus, rubella, Streptococcus pneumoniae, and yellow fever over the years 2000–2030 across 112 countries.Methods:Twenty-one mathematical models estimated disease burden using standardised demographic and immunisation data. Impact was attributed to the year of vaccination through vaccine-activity-stratified impact ratios.Results:We estimate 97 (95%CrI[80, 120]) million deaths would be averted due to vaccination activities over 2000–2030, with 50 (95%CrI[41, 62]) million deaths averted by activities between 2000 and 2019. For children under-5 born between 2000 and 2030, we estimate 52 (95%CrI[41, 69]) million more deaths would occur over their lifetimes without vaccination against these diseases.Conclusions:This study represents the largest assessment of vaccine impact before COVID-19-related disruptions and provides motivation for sustaining and improving global vaccination coverage in the future.Funding:VIMC is jointly funded by Gavi, the Vaccine Alliance, and the Bill and Melinda Gates Foundation (BMGF) (BMGF grant number: OPP1157270 / INV-009125). Funding from Gavi is channelled via VIMC to the Consortium’s modelling groups (VIMC-funded institutions represented in this paper: Imperial College London, London School of Hygiene and Tropical Medicine, Oxford University Clinical Research Unit, Public Health England, Johns Hopkins University, The Pennsylvania State University, Center for Disease Analysis Foundation, Kaiser Permanente Washington, University of Cambridge, University of Notre Dame, Harvard University, Conservatoire National des Arts et Métiers, Emory University, National University of Singapore). Funding from BMGF was used for salaries of the Consortium secretariat (authors represented here: TBH, MJ, XL, SE-L, JT, KW, NMF, KAMG); and channelled via VIMC for travel and subsistence costs of all Consortium members (all authors). We also acknowledge funding from the UK Medical Research Council and Department for International Development, which supported aspects of VIMC's work (MRC grant number: MR/R015600/1).JHH acknowledges funding from National Science Foundation Graduate Research Fellowship; Richard and Peggy Notebaert Premier Fellowship from the University of Notre Dame. BAL acknowledges funding from NIH/NIGMS (grant number R01 GM124280) and NIH/NIAID (grant number R01 AI112970). The Lives Saved Tool (LiST) receives funding support from the Bill and Melinda Gates Foundation.This paper was compiled by all coauthors, including two coauthors from Gavi. Other funders had no role in study design, data collection, data analysis, data interpretation, or writing of the report. All authors had full access to all the data in the study and had final responsibility for the decision to submit for publication.
 
 ## Introduction
 
@@ -95,15 +95,103 @@ In this paper, we estimate the impact of immunisation by year of vaccination for
 
 ## Materials and methods
 
-## Models
+### Models
 
 The VIMC consists of multiple modelling groups. These provide disease-specific vaccine impact projections to a central Secretariat based at Imperial College London who then synthesise these estimates. Twenty-one mathematical models were used to inform the estimates with two models per pathogen (except HepB which has three models) thereby increasing robustness and capturing structural uncertainty within the analyses. There is substantial variation in modelling approach due to both the differences in pathogen dynamics and inherent uncertainties in modelling disease risk. The model characteristics vary in their type, from static cohort to transmission-dynamic models; their complexity, for example in their representation of age effects; and their calibration and validation methods. A brief overview of pathogens is provided in Table 1 with detailed model descriptions provided in Appendix 2.2 (HepB [Nayagam et al., 2016], HPV [Goldie et al., 2008; Abbas et al., 2020b], Hib [Clark et al., 2019a; Walker et al., 2013a], JE [Quan et al., 2020], Measles [Chen et al., 2012], MenA [Karachaliou et al., 2015; Tartof et al., 2013], PCV [Walker et al., 2013a; Clark et al., 2019a], Rota [Pitzer et al., 2012; Clark et al., 2019a], Rubella [Boulianne et al., 1995; Vynnycky et al., 2019], YF [Gaythorpe et al., 2021a]).
+
+**Table 1.**
+ Vaccine Impact Modelling Consortium (VIMC) pathogen-specific details.RI denotes routine immunisations and NRI denotes non-routine immunisations. RI schedule details the number of doses given and the ages (in years, y) targeted. Vaccination over 2000 - 2030 shows whether vaccination has been occurring over the years 2000 to 2030; years are shown where the vaccines have been introduced in later years. Countries included shows the maximum number of VIMC countries that had coverage in specific year(s) (coverage information in supplementary spreadsheet and countries listed in Appendix 6.1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pathogen</th>
+      <th>Countries included</th>
+      <th>Activity type</th>
+      <th>RI schedule</th>
+      <th>Vaccination over 2000 - 2030</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hepatitis B (HepB)</td>
+      <td>112</td>
+      <td>RI</td>
+      <td>Birth dose + Infant 3 doses (&lt;1y)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Human papillomavirus (HPV)</td>
+      <td>112</td>
+      <td>RI + NRI</td>
+      <td>Adolescent girls 2 doses (9-14 y)</td>
+      <td>2014–2030</td>
+    </tr>
+    <tr>
+      <td>Haemophilus influenzae type B (Hib)</td>
+      <td>112</td>
+      <td>RI</td>
+      <td>Infant 3 doses (&lt;1y)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Japanese encephalitis (JE)</td>
+      <td>17</td>
+      <td>RI + NRI</td>
+      <td>Infant dose (&lt;1y)</td>
+      <td>2005–2030</td>
+    </tr>
+    <tr>
+      <td>Measles</td>
+      <td>112</td>
+      <td>RI + NRI</td>
+      <td>1st dose (&lt;=1 y) + 2nd dose (&lt;2 y)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Neisseria meningitidis serogroup A (MenA)</td>
+      <td>26</td>
+      <td>RI + NRI</td>
+      <td>Infant dose (&lt; 1 y)</td>
+      <td>2010–2030</td>
+    </tr>
+    <tr>
+      <td>Streptococcus pneumoniae (PCV)</td>
+      <td>112</td>
+      <td>RI</td>
+      <td>Infant 3 doses (&lt;1y)</td>
+      <td>2009–2030</td>
+    </tr>
+    <tr>
+      <td>Rotavirus (Rota)</td>
+      <td>112</td>
+      <td>RI</td>
+      <td>Infant 2 doses (&lt;1y)</td>
+      <td>2006–2030</td>
+    </tr>
+    <tr>
+      <td>Rubella</td>
+      <td>112</td>
+      <td>RI + NRI</td>
+      <td>1st dose (&lt; 1 y) + 2nd dose (&lt; 2 y)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yellow fever (YF)</td>
+      <td>36</td>
+      <td>RI + NRI</td>
+      <td>Infant dose (&lt; 1 y)</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 Each modelling group provided estimates of age-stratified disease burden at national level for three scenarios: no vaccination, only routine vaccination (routine immunisations; RI) and, where appropriate, both RI and non-routine vaccination (non-routine immunisations; NRI, such as multi-age cohort vaccinations for HPV, and catch-up campaigns for measles). Disease burden was quantified in terms of deaths and DALYs. DALYs measure the years of healthy life lost due to premature death and disability from the disease, and are the sum of years of life lost (YLLs) through premature mortality and years lived with disability (YLDs). No discounting or weighting was applied in the calculation of DALYs. For rubella, only disease burden from congenital rubella syndrome (CRS) was included and the models differed in the inclusion of deaths due to stillbirths.
 
 For every pathogen, the modelling teams were asked to provide 200 samples of their burden estimates for each year, vaccination scenario, and country constructed from the probabilistic ranges of their model parameters. The same randomly sampled sets of parameters were used for the no vaccination and with vaccination model runs allowing the direct comparison of the estimates. In order to calculate the mean and credible interval (CrI) for each pathogen, the full probabilistic distributions of impact are combined from all models for a pathogen, then the mean and 95% CrI are calculated from the full distribution. Similarly, when calculating the aggregated impact across pathogens, bootstrap sampling was used. In these bootstraps, a sample of interest was taken from the individual model; this was then averaged across models of the same pathogen and then summed across all pathogens; finally, the mean and 95% CrIs were calculated from 1000 bootstrap samples.
 
-## Data and vaccination scenarios
+### Data and vaccination scenarios
 
 Standardised, national-level, age-stratified demographic data was provided to all modellers from the 2019 United Nations World Population Prospects (UNWPP) for years 2000 to 2100 (World Population Prospects, 2019). The 112 countries considered here include 73 currently and formerly Gavi supported countries and 39 other countries that are of interest due to high burden and/or potential vaccine introduction. These 112 countries represent 99% of the total mortality attributed to measles for children under-5 using the WHO child causes of death 2000–2017 estimate (World Health Organization, 2020) and 96% of the total deaths attributed to measles, HepB, Hib, MenA, PCV, and YF of all ages using the Institute for Health Metrics and Evaluation (IHME) Global Burden of Disease Study (GBD) 2017 estimates (GHDx, 2019). Therefore, there has been a greater focus on supporting vaccine introduction and implementation in these countries, mainly through Gavi. Pathogens endemic only in certain regions such as JE, MenA, and YF have estimates for 17, 26, and 36 countries, respectively (Table 1).
 
@@ -111,13 +199,13 @@ For the vaccination scenarios, standardised vaccine coverage data were provided 
 
 In the no vaccination (counterfactual) scenario, zero coverage is assumed for all years from 1980 to 2100 except for YF which has historical reactive campaigns for outbreaks.
 
-## Impact by year of vaccination
+### Impact by year of vaccination
 
 We calculate deaths and DALYs averted by year of vaccination using impact ratios stratified by vaccine activity type (Echeverria-Londono et al., 2021). In this way, we attribute the deaths averted due to vaccination to the year in which the vaccination activity took place. We stratify the impact ratios by activity type in order to account for the different effects of RI compared to NRI which has been found to better capture model projections (Echeverria-Londono et al., 2021). Hence, this method assumes vaccine impact varies between RI and NRI but does not vary across birth cohorts. This method averages the effects of any temporal changes in disease incidence or population health over the time period modelled. We present results using ‘fully vaccinated persons (FVPs)’ which refer to the total number of doses provided by a vaccination activity. Where separate coverage figures are provided, one vaccine dose results in one FVP. However, for diseases such as HepB, coverage figures are based on the completed courses of multi-dose vaccinations. More specifically, we also show deaths and DALYs averted per 1000 FVPs. Notably, for some of the pathogens, the different models assume varying levels of dose dependency. For example, the measles dynaMICE model assumes that NRI doses are weakly dependent on RI doses whereas the measles Pennsylvania State University model assumes that NRI doses are independent from prior RI doses and that the second dose (MCV2) is only given to those who received the first dose (MCV1) (further model details in Appendix 2.2). When assuming NRI doses are distributed randomly and thus may re-vaccinate some individuals, the relative benefit of NRI compared to RI, which will always vaccinate a naive individual, is affected.
 
 As we model disease-specific mortality under different vaccination scenarios, when aggregating estimates of deaths averted across all 10 pathogens per calendar year or birth cohort, double counting can arise whereby an individuals’ death is accounted for more than once. Under the year of vaccination method, we do not adjust death estimates for double counting.
 
-## Impact by birth year for children under five
+### Impact by birth year for children under five
 
 To investigate the impact of vaccination in children under-5, we calculate deaths and DALYs averted by birth cohort. Here, we aggregate the impact over the first 5 years of life of birth cohorts born within the years of interest and then calculate the difference in the no vaccination and with vaccination scenarios. Furthermore, in Appendix 5—figure 1 and Appendix 5—figure 2, we present vaccine impact by calendar year and by birth cohort in line with Li et al., 2019 which shows the impact in a particular year or the total impact over an individuals’ lifetime, respectively. These methods are directly calculated through comparison of the focal scenario with vaccination (both RI and NRI where appropriate) to the counterfactual scenario without vaccination.
 
@@ -125,7 +213,7 @@ Within the birth cohort method when investigating the impact of vaccination in c
 
 ## Results
 
-## Estimated burden
+### Estimated burden
 
 The modelling groups produced estimates of deaths attributable to the pathogens for years 2000–2100 for the given vaccination scenarios. In the focal scenario with vaccination, coverage has improved over time leading to more FVPs (Figure 2 and Appendix 5—figure 3). We find that given these improvements in coverage over time, there is a general decline in the mean number of predicted deaths due to the 10 VIMC pathogens in each of the 112 countries. The decline in deaths averted due to vaccination varies by country, largely due to variations in vaccination coverage over time as well as variation in the epidemiology, treatment assumptions, health access, case fatality ratio (CFR), pathogen-specific mortality and demographic parameters (e.g. life expectancy) of some pathogens by country. Without vaccination, there is still some reduction in deaths over time in some countries due to these latter factors (Figure 1). Notably, the total burden caused by these diseases disproportionately lies within the WHO African region where the greatest decline in burden is predicted (Figure 1 and Appendix 5—figure 4).
 
@@ -135,17 +223,144 @@ The modelling groups produced estimates of deaths attributable to the pathogens 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67635/elife-67635-fig2-v1.jpg)
 
-**Figure 2.:** Haemophilus influenzae type b (Hib), human papillomavirus (HPV), Japanese encephalitis (JE), measles, Neisseria meningitidis serogroup A (MenA), Streptococcus pneumoniae (PCV), rotavirus (Rota), rubella, and yellow fever (YF).The bars show the number of deaths averted (in millions) in each vaccination year. Error bars indicate 95% CI. The line shows the number of fully vaccinated persons (FVPs; in millions) achieved in each year’s vaccination activities.
+**Figure 2.:** The bars show the number of deaths averted (in millions) in each vaccination year. Error bars indicate 95% CI. The line shows the number of fully vaccinated persons (FVPs; in millions) achieved in each year’s vaccination activities.
+
+**Table 2.**
+ Deaths and disability-adjusted life years (DALYs) averted (in millions), and deaths and DALYs averted per 1000 fully vaccinated people (FVPs) due to vaccination activities in each time period. Numbers within brackets correspond to 95% credible intervals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time period</th>
+      <th>Deaths averted (in millions)</th>
+      <th>Deaths averted per 1000 FVPs</th>
+      <th>DALYs averted (in millions)</th>
+      <th>DALYs averted per 1000 FVPs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2000–2019</td>
+      <td>50 [41, 62]</td>
+      <td>4.8 [3.9, 5.9]</td>
+      <td>2700 [2200, 3500]</td>
+      <td>260 [210, 330]</td>
+    </tr>
+    <tr>
+      <td>2020–2030</td>
+      <td>47 [39, 56]</td>
+      <td>3.7 [3.1, 4.4]</td>
+      <td>2300 [1900, 2900]</td>
+      <td>180 [150, 230]</td>
+    </tr>
+    <tr>
+      <td>2000–2030</td>
+      <td>97 [80, 120]</td>
+      <td>4.2 [3.5, 5]</td>
+      <td>5100 [4100, 6300]</td>
+      <td>220 [180, 270]</td>
+    </tr>
+  </tbody>
+</table>
 
 The ages at which the greatest mortality risks are faced varies across the pathogens with mortality related to Hib, measles, Rota, rubella, and PCV mostly focused in children under-5 (Appendix 5—figure 5 shows a corresponding decline in deaths in the under-5s when vaccination occurs). Mortality attributable to HepB and HPV is focused in those over 40, and for YF, MenA and JE this is focused in those under 30 (due to natural immunity acquired with age in older adults).
 
-## Impact by year of vaccination
+### Impact by year of vaccination
 
 Due to vaccination activities over the years 2000–2030 for all 10 VIMC pathogens, 97 (95%CrI[80, 120]) million future deaths and 5100 (95%CrI[4100, 6300]) million DALYs are estimated to be averted. Focusing on the years prior to the COVID-19 pandemic, i.e. 2000 to 2019, 50 (95%CrI[41, 62]) million deaths and 2700 (95%CrI[2200, 3500]) million DALYs are estimated to have been averted. The remaining numbers averted arise from the years 2020 to 2030, which may be affected by COVID-19 and other changes to future vaccine introductions and coverage as well as changes in access to health care (Table 2). Note: although the first human case of COVID-19 was reported in December 2019, any effects of this on vaccination activities in 2019 would be negligible.
 
 The Global Vaccine Action Plan (GVAP) target for 2011–2020 is to avert between 24 and 26 million future deaths with vaccination for the 10 pathogens over 94 countries (World Health Organization, 2013). Over 2011–2019, we estimate that 23 (95%CrI [19, 27]) million deaths will be averted, with this increasing to 26 (95%CrI [21, 31]) million deaths averted over 2011–2020 (without COVID-19-related disruptions in 2020). Hence, the achievement of the GVAP target will depend on how the year 2020 is impacted by COVID-19.
 
 The years in which vaccination activities occur, the types of activities carried out, the coverage and the number of FVPs achieved varies by pathogen. Measles and HepB have activities occurring over the entire time period of interest from 2000 to 2030 and achieve higher coverage and FVPs than the other pathogens (Figure 2 and Appendix 5—figure 3). Overall, from 2000 to 2030, measles vaccination activities have the largest impact with 47 (95%CrI[42, 60]) million deaths and 3100 (95%CrI[2700, 3900]) million DALYs averted, followed by 29 (95%CrI[17, 43]) million deaths and 1000 (95%CrI[560, 1800]) million DALYs averted due to HepB vaccination activities (Figure 2 and Table 3). Most of the mortality reduction from measles is attributable to routine MCV1, for which procurement is not directly funded by Gavi. As we attribute impact to the year of vaccination, we capture the impact for pathogens where the mortality occurs later in life, such as HepB, whereas, when comparing impact by calendar year (see Appendix 5—figure 1), we miss these long-term benefits. As measles-related mortality is focused in children under-5, a large number of DALYs are averted when immunising against this disease. In comparison, as HepB-attributable deaths are primarily focused in those over 40 years of age, there are fewer YLLs but morbidity contributes to higher numbers of YLDs.
+
+**Table 3.**
+ Deaths and disability-adjusted life years (DALYs) averted (in millions), and deaths and DALYs averted per 1000 fully vaccinated people (FVPs) per disease from vaccination activities occurring from 2000 to 2030.Disease abbreviations: hepatitis B (HepB), human papillomavirus (HPV), yellow fever (YF), Haemophilus influenzae type b (Hib), Streptococcus pneumoniae (PCV), rotavirus (Rota), Neisseria meningitidis serogroup A (MenA), and Japanese encephalitis (JE). Numbers within brackets correspond to 95% credible intervals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease</th>
+      <th>Deaths averted (in millions)</th>
+      <th>Deaths averted per 1000 FVPs</th>
+      <th>DALYs averted (in millions)</th>
+      <th>DALYs averted per 1000 FVPs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Measles</td>
+      <td>47 [42, 60]</td>
+      <td>6.5 [5.9, 8.2]</td>
+      <td>3100 [2700, 3900]</td>
+      <td>420 [380, 540]</td>
+    </tr>
+    <tr>
+      <td>HepB</td>
+      <td>29 [17, 43]</td>
+      <td>7.7 [4.7, 12]</td>
+      <td>1000 [560, 1800]</td>
+      <td>270 [140, 460]</td>
+    </tr>
+    <tr>
+      <td>HPV</td>
+      <td>6.6 [6.1, 7.1]</td>
+      <td>12 [11, 13]</td>
+      <td>140 [130, 150]</td>
+      <td>250 [230, 270]</td>
+    </tr>
+    <tr>
+      <td>YF</td>
+      <td>5.6 [2.9, 13]</td>
+      <td>2.1 [1.1, 4.6]</td>
+      <td>210 [110, 510]</td>
+      <td>81 [43, 200]</td>
+    </tr>
+    <tr>
+      <td>Hib</td>
+      <td>4.1 [1.9, 7.9]</td>
+      <td>2.4 [1.1, 4.5]</td>
+      <td>280 [120, 540]</td>
+      <td>160 [74, 310]</td>
+    </tr>
+    <tr>
+      <td>PCV</td>
+      <td>2.8 [1.4, 4.4]</td>
+      <td>2.3 [1.1, 3.7]</td>
+      <td>190 [94, 300]</td>
+      <td>160 [79, 260]</td>
+    </tr>
+    <tr>
+      <td>Rubella</td>
+      <td>1.2 [0.47, 2.1]</td>
+      <td>0.3 [0.1, 0.5]</td>
+      <td>86 [56, 170]</td>
+      <td>22 [14, 44]</td>
+    </tr>
+    <tr>
+      <td>Rota</td>
+      <td>0.84 [0.56, 1.1]</td>
+      <td>0.8 [0.5, 1]</td>
+      <td>46 [36, 56]</td>
+      <td>44 [35, 54]</td>
+    </tr>
+    <tr>
+      <td>MenA</td>
+      <td>0.62 [0.47, 0.86]</td>
+      <td>1 [0.8, 1.4]</td>
+      <td>36 [24, 45]</td>
+      <td>59 [39, 73]</td>
+    </tr>
+    <tr>
+      <td>JE</td>
+      <td>0.23 [0.03, 0.52]</td>
+      <td>0.4 [0, 0.8]</td>
+      <td>24 [2.6, 46]</td>
+      <td>40 [4.2, 76]</td>
+    </tr>
+  </tbody>
+</table>
 
 Rubella and YF have RI and NRI occurring over the entire time period from 2000 to 2030. With disease burden from CRS modelled for rubella, an estimated 1.2 (95%CrI[0.47, 2.1]) million deaths and 86 (95%CrI[56, 170]) million DALYs are averted. Over the relatively fewer (36) countries endemic for YF, 5.6 (95%CrI[2.9, 13]) million deaths and 210 (95%CrI[110, 510]) million DALYs are estimated to be averted (Figure 2 and Table 3).
 
@@ -157,17 +372,129 @@ When examining deaths averted per 1000 FVPs, HPV vaccination activities are esti
 
 Generally, for each of the pathogens, as the number of FVPs (or number of vaccine doses distributed) increase over time, the number of deaths averted increases (Figure 2). For the pathogens with RI-only (HepB, Hib, PCV, and Rota), there is an increasing trend of FVPs from 2000 to 2030 leading to a steady increase in deaths averted over this time period. When NRI also occur (HPV, JE, measles, MenA, rubella, and YF), more variation is seen as the FVPs and in turn the deaths averted rise in years for which both activities occur. For example, we expect to see the largest impact due to vaccination activities occurring in the year 2023 for HPV and rubella which project a sharp increase in the number of FVPs arising from NRI in addition to RI in that year (Figure 2).
 
-## Impact in children under five
+### Impact in children under five
 
 Several of the pathogens, namely Hib, measles, Rota, rubella and PCV, have mortality heavily focused in children under-5. To determine the impact of vaccination for these ages, we aggregate by birth cohort rather than by year of vaccination as this allows us to calculate the disease burden across the first 5 years of life for each yearly birth cohort (born between 2000 and 2030) (Echeverria-Londono et al., 2021). We also account for the double counting of mortality when we aggregate mortality across all diseases.
 
 For the 2000–2030 birth cohorts, we estimate that 52 (95%CrI[41, 69]) million deaths and 3400 (95%CrI[2700, 4600]) million DALYs are averted in children under-5. Of these, 33 (95%CrI [27, 43]) million deaths and 2100 (95%CrI[1700, 2800]) million DALYs are estimated to be averted over the years 2000–2019 prior to COVID-19 (Table 4). The proportional change due to the removal of double counting is relatively small at 2.36% (95% CI[2.00%, 2.83%]) for all cohorts born between 2000 and 2030 and this reduces to 1.07% (95% CI[0.90%, 1.32%]) for children under-5.
 
-## Impact in comparison to other studies
+**Table 4.**
+ Deaths and disability-adjusted life years (DALYs) averted (in millions), and deaths and DALYs averted per 1000 fully vaccinated people (FVPs) in children under-5 for birth cohorts born between each time period.These are adjusted for double counting. Numbers within brackets correspond to 95% credible intervals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time period</th>
+      <th>Deaths averted (in millions)</th>
+      <th>Deaths averted per 1000 FVPs</th>
+      <th>DALYs averted (in millions)</th>
+      <th>DALYs averted per 1000 FVPs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2000–2019</td>
+      <td>33 [27, 43]</td>
+      <td>3.9 [3.2, 5]</td>
+      <td>2100 [1700, 2800]</td>
+      <td>250 [200, 330]</td>
+    </tr>
+    <tr>
+      <td>2020–2030</td>
+      <td>20 [14, 26]</td>
+      <td>1.9 [1.3, 2.5]</td>
+      <td>1300 [960, 1800]</td>
+      <td>130 [95, 180]</td>
+    </tr>
+    <tr>
+      <td>2000–2030</td>
+      <td>52 [41, 69]</td>
+      <td>2.8 [2.2, 3.7]</td>
+      <td>3400 [2700, 4600]</td>
+      <td>190 [140, 250]</td>
+    </tr>
+  </tbody>
+</table>
+
+### Impact in comparison to other studies
 
 Our results have focused on the impact by year of vaccination. However, as in the previous VIMC-wide study Li et al., 2019, we also investigated the impact of vaccination (deaths and DALYs averted) by calendar year and by birth cohort (Echeverria-Londono et al., 2021; Appendix 5—figure 1 and Appendix 5—figure 2). There are differences when comparing the impact estimates, largely driven by changes in coverage/FVPs (Appendix 5—figure 3) and/or further developments of model structures, particularly for HepB, HPV, measles and YF. Additional models have also been added, namely, the Emory University Rota model and the University of Notre Dame YF model. Furthermore since the previous study, the uncertainty ranges/confidence intervals for many of the pathogens have narrowed (Appendix 5—figure 1 and Appendix 5—figure 2).
 
 Mortality estimates from our results were compared to the IHME GBD 2019 (Institute for Health Metrics and Evaluation, 2019) on a global level and for four high burden countries (Pakistan, India, Nigeria and Ethiopia) for HepB, measles and YF. Note, estimates for GBD 2019 are global and for VIMC are for 112 countries. The GBD 2019 did not estimate deaths averted. Comparison between the mortality estimates from VIMC and GBD 2019 show significant overlap in the overall values between 2000 and 2019 for HepB and measles (Table 5). Globally, measles mortality estimates from VIMC tend to be higher than those from GBD 2019 between 2000 and 2010 with an increasing overlap in recent years (Appendix 5—figure 8). For HepB, the trend is reversed with overlapping estimates between 2000 and 2010 and divergent estimates in recent years (Appendix 5—figure 6). For measles, VIMC has greater variability in the mortality estimates in countries with a high burden such as Pakistan, India, Nigeria, and Ethiopia compared to GBD 2019 estimates (Appendix 5—figure 9). For HepB, we see considerable agreement between the VIMC and GBD 2019 mortality in Pakistan, India and Nigeria (Appendix 5—figure 7). Unlike measles and HepB, the global mortality estimates for YF from VIMC do not show any overlap with those from GBD 2019, with significantly higher VIMC estimates (Table 5 and Appendix 5—figure 10). Nevertheless, when looking at the mortality estimates for a high burden country such as Ethiopia, we do see overlap between the estimates but with great uncertainty (Appendix 5—figure 11). The differences between VIMC and GBD 2019 estimates are generally due to differences in treatment assumptions and parameter values, such as the CFR estimates for YF.
+
+**Table 5.**
+ Global mortality estimates (in thousands) from the Vaccine Impact Modelling Consortium (VIMC) and the Global Burden of Disease Study (GBD) 2019 from the Institute for Health Metrics and Evaluation (IHME) attributed to Hepatitis B (HepB), measles and yellow fever (YF) for all ages and for children under-5 over the years 2000–2019.Estimates for GBD 2019 are global and for VIMC are for 112 countries. 95% CI shown for VIMC estimates (see Appendix 5—figures 6–11).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease</th>
+      <th>Time period</th>
+      <th colspan="2">All ages</th>
+      <th colspan="2">Under-5</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>VIMC 2019</th>
+      <th>GBD 2019</th>
+      <th>VIMC 2019</th>
+      <th>GBD 2019</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HepB</td>
+      <td>2000–2010</td>
+      <td>7200 [5100, 10000]</td>
+      <td>5200</td>
+      <td>100 [21, 360]</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2011–2019</td>
+      <td>7200 [5300, 9800]</td>
+      <td>4200</td>
+      <td>33 [5.4, 110]</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Measles</td>
+      <td>2000–2010</td>
+      <td>5600 [4100, 9500]</td>
+      <td>4200</td>
+      <td>5300 [3800, 9400]</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2011–2019</td>
+      <td>920 [620, 1700]</td>
+      <td>1200</td>
+      <td>870 [560, 1700]</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <td>YF</td>
+      <td>2000–2010</td>
+      <td>600 [320, 1500]</td>
+      <td>84</td>
+      <td>100 [54, 250]</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2011–2019</td>
+      <td>450 [240, 1100]</td>
+      <td>47</td>
+      <td>63 [32, 150]</td>
+      <td>5.7</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -193,6 +520,6 @@ Although we do not account for the current COVID-19 pandemic, our analyses provi
 
 Overall, our results provide a thorough assessment of the impact of vaccination activities prior to COVID-19, from 2000 to 2019, and from 2020 thereafter. These results are subject to change as our understanding of the transmission and epidemiology of these pathogens continues to grow. Additionally, future coverage, particularly during and following the pandemic, is uncertain. This study paints a picture of the immense progress to date and the tremendous health impacts that could be obtained over the next decade due to vaccination activities.
 
-## Conclusion
+### Conclusion
 
 Our largest VIMC-wide study for 10 pathogens across 112 countries showcases the immense impact of vaccination activities over 2000–2030 with 97 (95%CrI[80, 120]) million lives estimated to be saved in a pre-COVID-19 world. Though the wide-spread COVID-19 pandemic has caused disruption to vaccination activities, currently it is difficult to assess the impact. Nonetheless, our study shows the substantial progress to date and as we look to the future, it continues to show the benefits of vaccination and motivates efforts to sustain and improve coverage of vaccination globally.

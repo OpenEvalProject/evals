@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012a77v79 Division of Infection Medicine, Department of Clinical Sciences, Faculty of Medicine, Lund University Lund Sweden
-2. https://ror.org/012a77v79 Division of Solid State Physics, Department of Physics, Lund University Lund Sweden
+1. Division of Infection Medicine, Department of Clinical Sciences, Faculty of Medicine, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
+2. Division of Solid State Physics, Department of Physics, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ In the present work, we have developed an imaging-based method for localization 
 
 ## Results
 
-## Principles of site localization method
+### Principles of site localization method
 
 Binding site localization is based on resolving the axial distance between bound ligands and a reference surface. This is done by implementing an averaging method on high-resolution images. With this method, nanometer-scale precision is achieved by dimension reduction of surface data within an image plane.
 
@@ -41,21 +41,61 @@ A site localization measurement on antibody-coated bacteria is exemplified in Fi
 
 A strength of the method is that it can be used for particles with a non-spherical topology and uneven staining. It is evident that the signal precision is improved as the distortion of an ovoid bacterium is accounted for through axial normalization in polar coordinates (Figure 1c).
 
-## Site localization measurements on simulated images with various cell morphologies
+### Site localization measurements on simulated images with various cell morphologies
 
 To assess the performance of the site localization method, we generated simulated fluorescence images with variable surface staining and morphology. The images consisted of two channels created by sampling a fixed number of ‘photons’ from a spatial distribution. In the reference channel, the distribution was designed to emulate the spatial distribution of photons in a microscope for a cellular surface. In the target channel, a distribution based on the set of points in the reference channel at a chosen perpendicular distance was used. The perpendicular distance between the reference channel distribution and the target channel distribution was chosen to be 2 px corresponding to 41 nm using the pixel length of our N-SIM microscopy setup. In order to mimic the experimental process of acquiring repeated frames of each data point in a time series, for each chosen shape 100 time series were created with 10 frames each. The results, shown in Figure 2, indicate that a high accuracy can be achieved for various cell surface patterns. However, for certain shapes, the method yields a slightly larger distance than the true value (Figure 2b). The reported accuracy for site localization measurements on the simulations in relation to number of cells is assessed and presented in Figure 2c. To explore sources of uncertainty in site localization measurements, additional images were simulated to represent different types of labelling (Figure 2—figure supplement 1). As expected, the uncertainty is larger with secondary antibody labelling than with direct labelling. The site localization uncertainty also increases when the SNR is decreased. These results demonstrate the robustness of the site localization method for varying surface expression and morphology.
 
-## Validation of site localization method by measurement of DNA probes on cellular surfaces
+![Figure 2.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig2-v1.jpg)
+
+**Figure 2.:** (a) Examples of simulated images. The different shapes that the method was tested on are shown. From each of the 12 morphologies, 100 time series with 10 frames each were generated. Each frame consists of a set number of photons sampled from the shape’s spatial distribution. Before creating a time series, a random translation and rotation were applied to the distribution. The chosen shapes emulate various eccentricities and degrees of surface protein patchiness found, for example, in bacteria as well as the surface irregularity of larger cells. The 1 µm scale bar assumes a pixel length of 20.5 nm corresponding to that of the structured illumination microscopy (SIM) images, with this pixel length the simulated distance between the reference channel and the target channel is 41 nm. (b) Site localization results expressed as deviation from simulated distances. The deviations of the measured values from the simulated distances are shown in a violin plot grouped by shape. The mean distance deviations are in order from left to right [mean ± SD, median (IQR)]: 0.2 ± 0.5 nm, 0.1 (0.7) nm; 0.2 (1.0) nm; 0.3 ± 0.6 nm, 0.3 (0.8) nm; 1.1 ± 0.5 nm, 1.0 (0.7) nm; 1.0 ± 0.8 nm, 1.0 (1.1) nm; 1.2 ± 0.8 nm, 1.3 (1.1) nm; 3.0 ± 0.7 nm, 3.1 (0.9) nm; 5.1 ± 1.1 nm, 5.2 (1.3) nm; 2.9 ± 1.0 nm, 2.8 (1.2) nm; 1.0 ± 0.6 nm, 1.0 (0.7) nm; 1.2 ± 0.6 nm, 1.2 (0.8) nm; 1.5 ± 0.8 nm, 1.6 (1.1) nm. (c) Bootstrap of measured mean distances as a function of the number of time series used. The plots show an estimate of the 95% confidence interval of the mean of a number of measurements computed by percentile bootstrap with 50,000 resamples. As the number of measurements used in the calculation of the mean increases, the confidence interval narrows.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The deviations of the measured values from the simulated distance are shown in violin plots grouped by shape. For each shape, the result is shown for parameters corresponding to direct labelling of the binding site, parameters corresponding to labelling with a secondary antibody, and parameters corresponding to labelling with a secondary antibody and low exposure. The median distance deviations are in order from left to right in each subplot [median (IQR)]: 1: 0.1 (0.7) nm, –0.8 (1.3) nm, 0.4 (1.8) nm. 2: 1.0 (0.7) nm, 0.5 (1.3) nm, 0.1 (2.0) nm. 3: 0.3 (0.8) nm, –0.9 (1.1) nm, –0.2 (1.7) nm. 4: 1.3 (1.1) nm, 1.1 (1.2) nm, 0.2 (1.9) nm.
+
+### Validation of site localization method by measurement of DNA probes on cellular surfaces
 
 In order to test the method in vitro, we performed site localization measurements on surface-tethered dsDNA probes of known lengths. Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of varying length (Figure 3b). Images were acquired using an N-SIM microscope. To begin with, swelled spherical erythrocytes were analysed with the site localization method as well as with an existing method for determining molecular heights on spherical particles (Figure 3—figure supplement 1). The results show good agreement. Site localization was thereafter performed on non-spherical erythrocytes and show results equivalent to that of spherical cells (Figure 3c). We further tested the method’s capabilities by measuring the height of dsDNA with varying lengths on the surface of non-spherical red blood cells (Figure 3e). The measured heights are approximately half of the full length of the DNA strands. The measurements agree well with the predicted worm-like chain (WLC) model height for DNA strands, with a persistence length of 50 nm (Baumann et al., 1997), tethered to a surface and able to freely rotate. Altogether, we show that our method can accurately estimate molecular heights on spherical and non-spherical cellular surfaces.
 
-## Site localization measurement of binding sites on bacterial surface protein
+![Figure 3.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig3-v1.jpg)
+
+**Figure 3.:** (a) A schematic illustrating the binding of DNA probe to red blood cells. Human red blood cells were coated with Alexa Fluor 647-conjugated dsDNA of varying lengths and a cholesterol anchor. (b) Representative structured illumination microscopy (SIM) images of spherical and non-spherical erythrocytes. Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of length 48 bp. Scale bar is 2 µm. (c) Site localization method performs well for both spherical and non-spherical particles. The measured distances for 48 bp dsDNA probes on erythrocytes are shown in a violin plot. The resolved distance is [median (IQR), mean ± SD] 11.5 (11.6) nm, 11.4 ± 9.3 nm (n = 31) for DNA on the spherical cells and 9.2 (10.7) nm, 9.8 ± 8.1 nm (n = 33) for the non-spherical erythrocytes. Error bars indicate interquartile range. Additionally, the result for spherical cells was confirmed using an existing method for site localization on spherical objects (Figure 3—figure supplement 1). (d) Representative SIM images of DNA-coated erythrocytes. Human erythrocytes were stained with membrane dye CellBrite Fix 488 and Alexa Fluor 647-conjugated dsDNA of length 18 bp, 48 bp, and 63 bp. Scale bar is 2 µm. (e) Site localization measurements of DNA probes show good agreement with predicted worm-like chain (WLC) heights The measured heights of the DNA probes are plotted as a function of the fully extended length of the DNA strands. The measured height is [median (IQR), mean ± SD] 3.7 (8.8) nm, 5.1 ± 8.3 nm (n = 25) for 18 bp DNA, 9.2 (10.7) nm, 9.8 ± 8.1 nm (n = 33) for 48 bp DNA, and 12.5 (8.2)nm, 10.3 ± 10.5 nm (n = 30) for 63 bp DNA. Error bars indicate interquartile range. The dashed line represents predicted height based on modelling the DNA strand as a WLC with a persistence length of 50 nm free to move in a hemisphere above the surface.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The resolved distance between the two channels is [median (IQR), mean ± SD] 11.5 (11.6) nm, 11.4 ± 9.3 nm (n = 31) with the site localization method and 14.8 (13.5) nm, 14.6 ± 13.6 nm (n = 10) with CSOP. Error bars indicate interquartile range.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Representative images are shown at the top. S. pyogenes strain SF370 has been fixed and stained with Alexa Fluor 488- and Alexa Fluor 647-conjugated wheat germ agglutinin (WGA). Scale bar is 500 nm. The violin plots show the resolved distance between the two cell wall signals. The median resolved distance between the two channels is [median (IQR)] –24.8 (19.0) nm with Alexa Fluor 488 as reference and 22.8 (22.8) nm with Alexa Fluor 647 as reference. A mirroring of the results is expected as the reference and target channels are flipped, and this is evident from the shape of the violin plots. The measured offset is mainly due to chromatic aberration at the imaging plane and provides a correction constant for subsequent site localization measurements on structured illumination microscopy (SIM images).
+
+### Site localization measurement of binding sites on bacterial surface protein
 
 Site localization measurements that were performed for ligands on bacterial M protein agree well with previously reported data. The antibody Fc binding site on M protein is located at the S region (Akesson et al., 1994), and a non-specific monoclonal IgG antibody (Xolair) is used for site localization of this binding. Additionally, a measurement is carried out for an M protein-specific mAb, Ab49 (Bahnan et al., 2021), with an epitope located in the B3-S region, that is, slightly further along the IgGFc binding region. For determining binding to the far end of M protein, we used fibrinogen that has two binding sites at the B1 and B2 region (Hauri et al., 2019). We thus expect the binding sites to be arranged in accordance with the schematic shown in Figure 4—figure supplement 1c. S. pyogenes strain SF370 was stained with Alexa Fluor 488-conjugated WGA and coated with Alexa Fluor 647-conjugated Xolair, Ab49, or fibrinogen (Figure 4a). Images of single bacteria were acquired using an N-SIM microscope. The median resolved distance is [median (IQR)] 5.6 (29.7) nm for the Xolair Fc binding site, 6.2 (29.8) nm for Ab49 Fab binding site, and 18.0 (49.3) nm for the two fibrinogen binding sites. The reported accuracy for site localization measurements on S. pyogenes in relation to number of biological replicates is assessed and presented in Figure 4—figure supplement 1. To further explore sources of uncertainty in site localization measurements, the antibody binding sites were measured with secondary antibody labelling and compared to direct labelling (Figure 4—figure supplement 2). The presented results are consistent with the arrangement of the binding sites as reported in the literature (Akesson et al., 1994; Bahnan et al., 2021; Hauri et al., 2019).
 
-## Site localization measurements using widefield and deconvolved images
+![Figure 4.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig4-v1.jpg)
+
+**Figure 4.:** (a) Representative structured illumination microscopy (SIM) images of ligand coated bacteria. S. pyogenes strain SF370 has been fixed, stained with Alexa Fluor 488-conjugated wheat germ agglutinin (WGA), and coated with Alexa Fluor 647-conjugated Xolair (top), Ab49 (middle), or fibrinogen. Scale bar is 500 nm. (b) Binding site measurements of antibodies and fibrinogen on bacterial M protein The measured distances are shown in a violin plot. The resolved distance between the two channels is [median (IQR), mean ± SD] 5.6 (29.7) nm, 2.5 ± 26.7 nm (n = 41) for the Xolair Fc binding site, 6.2 (29.8) nm, 6.5 ± 16.8 nm (n = 28) for Ab49 Fab binding site, and 18.0 (49.3) nm, 26.2 ± 41.6 nm (n = 33) for the two fibrinogen binding sites. Error bars indicate the interquartile range. An intensity profile from a single bacterium is shown for each of the ligands below the violin plot. (c) A schematic illustrating the determined binding sites on M protein.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The left part of the plot shows the data points for the distance from the Alexa Fluor 488-conjugated wheat germ agglutinin (WGA) (reference) channel to the Alexa Fluor 647-conjugated WGA channel as resolved by the site localization method. The ribbon plot to the right shows an estimate of the 95% confidence interval of the mean of a number of measurements computed by percentile bootstrap with 50,000 resamples for each chosen number of replicates.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** SF370 wild type was stained with Alexa Fluor 488-conjugated wheat germ agglutinin (WGA). For secondary antibody labelling, bacteria were incubated with IdeS-cleaved Xolair or Ab49. The antibody samples were stained with fluorescently labelled IgGFab (Ab49) or IgGFc (Xolair)-specific F(ab’)2 fragments (Alexa Fluor 647-conjugated anti-human IgGFc or IgGFab). For direct labelling, Alexa Fluor 647-conjugated Xolair or Ab49 was used. The median measurements are in order from left to right: [median (IQR), mean ± SD] 9.5 (55.5) nm, –0.1 ± 63.8 nm (n = 48), 5.6 (29.7) nm, 2.5 ± 26.7 nm (n = 41), 27.4 (113.7) nm, 6.1 ± 88.6 nm (n = 33), 6.2 (29.8) nm, 6.5 ± 16.8 nm (n = 28). It is evident from these results that site localization precision is increased when using directly conjugated antibodies.
+
+### Site localization measurements using widefield and deconvolved images
 
 By performing site localization measurements on widefield images, we show that our method can yield viable results even with conventional microscopy data. Moreover, deconvolution of the widefield images may yield an increase in precision. Widefield images were acquired with the same optical system (see SIM in previous section), with the exception of the light source used being LED-based instead of laser-based. Comparison of site localization measurements using SIM and widefield was performed on two sets of samples; fibrinogen- and Xolair-coated S. pyogenes. Widefield and SIM images were acquired on separate datasets. For the fibrinogen samples (Figure 5b), the median resolved distance between the two channels is [median (IQR)] 18.0 (49.3) nm with SIM data, 38.5 (71.0) nm with widefield data, and 40.1 (42.0) nm with deconvolved widefield data. For the Xolair samples (Figure 5d), the median resolved distance for the Xolair Fc binding site is 5.6 (29.7) nm with SIM data, 12.3 (76.5) nm with widefield data, and 14.2 (34.5) nm with deconvolved widefield data. This indicates that the site localization method performs well with widefield images and that the precision can be increased through deconvolution.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig5-v1.jpg)
+
+**Figure 5.:** (a) Representative images of Xolair-coated bacteriaare shown at the top. Scale bar is 500 nm. S. pyogenes strain SF370 has been fixed, stained with Alexa Fluor 488-conjugated wheat germ agglutinin (WGA), and coated with Alexa Fluor 647-conjugated Xolair antibodies. (b) Site localization measurement of Fc binding site yields similar results with the widefield dataset. The resolved distance between the two channels is [median (IQR), mean ± SD] 5.6 (29.7) nm, 2.5 ± 26.7 nm (n = 41) with SIM data, 12.3 (76.5) nm, 8.7 ± 36.6 nm (n = 32) with widefield data, and 14.2 (34.5) nm, 17.0 ± 25.4 nm (n = 31) with deconvolved widefield data. Error bars indicate the interquartile range. (c) Representative images of fibrinogen-coated bacteria are shown at the top. S. pyogenes strain SF370 has been fixed, stained with Alexa Fluor 488-conjugated WGA, and coated with antibody Alexa Fluor 647-conjugated fibrinogen. Scale bar is 500 nm. (d) Site localization measurement of fibrinogen binding sites yields similar results with the widefield dataset. The resolved distance between the two channels is [median (IQR), mean ± SD] 18.0 (49.3) nm, 26.2 ± 41.6 nm (n = 33) with SIM data, 38.5 (71.0) nm, 35.9 ± 53.3 nm (n = 37) with widefield data, and 40.1 (42.0) nm, 41.1 ± 40.1 nm (n = 29) with deconvolved widefield data. Error bars indicate the interquartile range.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64709/elife-64709-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative images are shown at the top. S. pyogenes strain SF370 has been fixed and stained with Alexa Fluor 488- and Alexa Fluor 647-conjugated wheat germ agglutinin (WGA). Scale bar is 500 nm. The violin plots show the resolved distance between the two cell wall signals. The median resolved distance between the two channels is [median (IQR)] 0.6 (27.4) nm with Alexa Fluor 488 as reference and –0.4 (12.6) nm with Alexa Fluor 647 as reference. A mirroring of the results is expected as the reference and target channels are flipped, and this is evident from the shape of the violin plots. The measured offset is mainly due to chromatic aberration at the imaging plane and provides a correction constant for subsequent site localization measurements for widefield images.
 
 ## Discussion
 
@@ -67,50 +107,230 @@ To assess the performance of the site localization method, we analysed simulated
 
 ## Materials and methods
 
-## Bacterial culturing conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Streptococcus pyogenes)</td>
+      <td>SF370</td>
+      <td>ATCC</td>
+      <td>Cat# 700294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Venous blood (normal, adult)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly taken from Homo sapiens</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Xolair (humanized from mouse monoclonal)</td>
+      <td>Novartis</td>
+      <td>Cat# 028268; RRID#:AB_2459636</td>
+      <td>(500 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-streptococcal M protein; Ab49 (human monoclonal)</td>
+      <td>Bahnan et al., 2021</td>
+      <td></td>
+      <td>(10–μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 AffiniPure F(ab’)2 fragment goat anti-human IgG (Fab specific) (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat# 109-606-097; RRID:AB_2337898</td>
+      <td>(3 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 AffiniPure F(ab’)2 fragment goat anti-human IgG (Fc specific) (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat# 109-606-170; RRID:AB_2337902</td>
+      <td>(3 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 647 (Invitrogen)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 820006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellBrite Fix Membrane stain 488</td>
+      <td></td>
+      <td>Cat# 30090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Conjugated DNA_F 18 base pair</td>
+      <td>This paper, Son et al., 2020</td>
+      <td>Oligonucleotide</td>
+      <td>5′-Alexa647-N-AGCTGCGGTCAGATC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Conjugated DNA_R 18 base pair</td>
+      <td>This paper, Son et al., 2020</td>
+      <td>Oligonucleotide</td>
+      <td>5′-Cholesterol-TEG-TCGACGCCAGTCTAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Conjugated DNA_F 48 base pair</td>
+      <td>This paper, Son et al., 2020</td>
+      <td>Oligonucleotide</td>
+      <td>5′-Alexa647-N-GATCTGACCGCAGCTATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Conjugated DNA_R 48 base pair</td>
+      <td>This paper, Son et al., 2020</td>
+      <td>Oligonucleotide</td>
+      <td>5′-Cholesterol-TEG-CTAGACTGGCGTCGATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Conjugated DNA_F 63 base pair</td>
+      <td>This paper, Son et al., 2020</td>
+      <td>Oligonucleotide</td>
+      <td>GACGTACTGCTATTGCTA GCGATTCCAT-</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Conjugated DNA_R 63 base pair</td>
+      <td>This paper, Son et al., 2020</td>
+      <td>Oligonucleotide</td>
+      <td>5′-Cholesterol-TEG-ATGGAATCGCTAGC AATAGCAGTACGTCTACA TGAAGTCGTTGATTCGAC GCCAGTCTAGTAG-3′</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fibrinogen from human plasma, Alexa Fluor 647</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# F35200</td>
+      <td>(20 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Wheat germ agglutinin, Alexa Fluor 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# W11261</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Wheat germ agglutinin, Alexa Fluor 647</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# W32466</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IdeS</td>
+      <td>Hansa Biopharma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FluoroDist</td>
+      <td>This paper, GitHub</td>
+      <td>https://github.com/nordenfeltLab/FluoroDist.jl (Kumra Ahnlide, 2022; copy archived at swh:1:rev:053e516413277cf488ef9db1a24ce576e24d18f9)</td>
+      <td>Simulated fluorescence images with accurate surface distances</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RegisterQD</td>
+      <td>GitHub, Greer, 2019</td>
+      <td>https://github.com/Holylab/RegisterQD.jl</td>
+      <td>Image registration with the QuadDIRECT optimization algorithm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Site Localization</td>
+      <td>This paper, GitHub</td>
+      <td>https://github.com/nordenfeltLab/SiteLocalization</td>
+      <td>Binding site localization on non-homogeneous cell surfaces using topological image averaging</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial culturing conditions
 
 S. pyogenes strain SF370 wildtype was cultured overnight in THY medium (Todd Hewitt Broth; Bacto; BD, complemented with 0.2% [w/v] yeast) at 37°C in an atmosphere supplemented with 5% CO2. Strain SF370 expresses M1 protein on its surface and is available through the American Type Culture Collection (ATCC 700294) (Ferretti et al., 2001). The bacteria were harvested at early log phase and washed twice with PBS.
 
-## Opsonization of bacteria
+### Opsonization of bacteria
 
 Xolair (omalizumab, Novartis) is a humanized monoclonal IgG that is IgE-specific, and thus only binds to M protein via Fc. Ab49 is an M protein-specific antibody (Bahnan et al., 2021). For secondary antibody labelling, both antibodies were treated with IdeS (Hansa Biopharma) (von Pawel-Rammingen et al., 2002), an enzyme that cleaves IgG at the hinge region, separating the F(ab’)2 from the Fc. The fibrinogen used here was isolated from human plasma and conjugated with Alexa Fluor 647 (Invitrogen).
 
-## Antibody conjugation
+### Antibody conjugation
 
 Direct conjugation of antibodies was done using the fluorescent dye Alexa Fluor 647 (Invitrogen). The desiccated dye was dissolved in DMSO at a concentration of 10 mg/ml. The antibodies were concentrated to a concentration of 2 mg/ml, and 1/10th of the final volume of sodium bicarbonate (1 M, pH 8.3) was added. The dye was added at a final concentration of 75 µg/mg of antibody. The antibodies were then incubated with the dye at room temperature (RT) for an hour. To remove any unbound dye, the antibodies were transferred to 50 kDa Amicon ultra filter columns (Merck Millipore). The antibodies were washed by adding PBS and centrifuging (12,000 × g). This was done three times to ensure all unbound dye had been removed. Conjugated antibody concentration and degree of labelling were assessed by using a DeNovix DS-11 FX spectrometer.
 
-## Fixation and staining of bacteria
+### Fixation and staining of bacteria
 
 Bacteria were sonicated (VialTweeter; Hielscher) for 0.5 min to separate any aggregates and incubated fixed in 4% paraformaldehyde for 5 min on ice. The bacteria were thereafter washed with PBS twice (10,000 × g, 2 min). SF370 wildtype was stained with Alexa Fluor 488-conjugated WGA. Bacteria were incubated with IdeS-cleaved Xolair, Ab49, or Alexa Fluor 647-conjugated Fibrinogen (Invitrogen). The antibody samples were stained with fluorescently labelled IgGFab- or IgGFc-specific F(ab’)2 fragments (Alexa Fluor 647-conjugated anti-human IgGFc or IgGFab; Jackson ImmunoResearch Laboratories). Samples were set on glass slides using ProLong Gold Antifade Mountant with No. 1.5 coverslips.
 
-## Red blood cell measurements
+### Red blood cell measurements
 
 DNA height probes were synthesized by Integrated DNA Technologies and purified with HPLC and resuspended in Tris buffer with 1 mM EDTA. The two strands are composed of a forward oligonucleotide and a reverse oligonucleotide. The sequences can be found in Key resources table. Venous blood was taken from a human donor and washed with PBS three times (750 × g, 5 min). The red blood cell pellet was treated with TrypLE at 37°C for 15 min and thereafter washed once (750 × g, 5 min). The red blood cells were then resuspended in CellBrite Fix 488 membrane staining solution (1:200 of stock solution 1000X) and incubated for 15 min at RT. For swelling of cells, the staining was in a 70% isotonic solution. The cells were fixed in a solution of 4% paraformaldehyde and 0.2% glutaraldehyde at RT for 20 min. The cells were then washed twice (500 × g, 5 min) and resuspended in 500 µl PBS. 1 µl of DNA height probe was added to 3 µl of fixed red blood cells in 50 µl PBS. Samples were set on glass slides using ProLong Gold Antifade Mountant with No. 1.5 coverslips.
 
-## DNA height prediction
+### DNA height prediction
 
-The DNA height prediction was performed by using a previously derived analytical expression for the probability distribution (p⁢(r,t)) of the end-to-end distance in the WLC model (Murphy et al., 2004):p(r,t)=4πA(t)r2(1−r2)9/2exp⁡(−3t4(1−r2))
+The DNA height prediction was performed by using a previously derived analytical expression for the probability distribution ($p⁢(r,t)$) of the end-to-end distance in the WLC model (Murphy et al., 2004):
 
-where A is a normalization constant defined asA(t)=4(3t4)3/2exp⁡(3t4)π3/2(4+123t/4+15(3t/4)2)
+$$
+p(r,t)=\frac{4\piA(t)r^{2}}{(1−r^{2})^{9/2}}exp⁡(\frac{−3t}{4(1−r^{2})})
+$$
 
-and r and t are defined asr=LLp,t=RL
+where A is a normalization constant defined as
 
-where L is the contour length, Lp is the persistence length, and R is the end-to-end distance. The expected end-to-end length given a persistence length of 50 nm was calculated for each DNA strand length. The height was then obtained by finding the centre of mass of a rod with the calculated length tethered to a surface with one end allowed to rotate freely in a hemisphere (Son et al., 2020).
+$$
+A(t)=\frac{4(\frac{3t}{4})^{3/2}exp⁡(\frac{3t}{4})}{\pi^{3/2}(4+\frac{12}{3t/4}+\frac{15}{(3t/4)^{2}})}
+$$
 
-## Simulation of fluorescence images
+and $r$ and $t$ are defined as
+
+$$
+r=\frac{L}{L_{p}},t=\frac{R}{L}
+$$
+
+where $L$ is the contour length, $L_{p}$ is the persistence length, and $R$ is the end-to-end distance. The expected end-to-end length given a persistence length of 50 nm was calculated for each DNA strand length. The height was then obtained by finding the centre of mass of a rod with the calculated length tethered to a surface with one end allowed to rotate freely in a hemisphere (Son et al., 2020).
+
+### Simulation of fluorescence images
 
 To generate the fluorescence images, plane curves with a parameterization were chosen. The curves that were not ellipses were chosen to be quadratic B-splines since this yields a continuous derivative and makes the necessary computations simple. To get closer to an arc-length parameterization, the curve was discretized by walking around the curve and at each point taking steps inversely proportional to the analytically determined magnitude of the gradient at that point. The photons for the reference channel were generated by sampling values from this discrete parameterization. To simulate the membrane width, an offset perpendicular to the gradient was sampled from a uniform distribution of the desired width. Another random offset was sampled from a two-dimensional normal distribution to simulate the effect of the point spread function. The target channel was simulated in the same way but with an additional offset in the direction normal to the gradient at the sampled point of the curve. When antibody labelling was simulated, a 15 nm offset was added in a random three-dimensional direction for each antibody. For all included simulations, an offset of 2 px was chosen, corresponding to a distance of 41 nm for a pixel length of 20.5 nm. The code was implemented in Julia and is available on GitHub (nordenfeltLab/FluoroDist.jl).
 
-## SIM image acquisition
+### SIM image acquisition
 
 Images of single bacteria were acquired using a Nikon N-SIM microscope with LU-NV laser unit, CFI SR HP Apochromat TIRF ×100 Oil objective (N.A. 1.49) and an additional ×1.5 magnification. The camera used was ORCA-Flash 4.0 sCMOS camera (Hamamatsu Photonics K.K.), and the images were reconstructed with Nikon’s SIM software on NIS-Elements Ar (NIS-A 6D and N-SIM Analysis). Fluorescent beads (100 nm) were imaged to measure and correct for chromatic aberration, as well as for the N-SIM grating alignment. Single cells were manually identified and imaged with 488 and 640 nm lasers in time series with 15–20 frames, depending on initial sample signal. For CSOP (Son et al., 2020) analysis, images of singles cells were acquired in 15 slices with step sizes of 50 nm.
 
-## Microscope calibrations
+### Microscope calibrations
 
 TetraSpeck 0.1 µm fluorescent microspheres are mounted on No. 1.5 coverslips using ProLong Gold Antifade Mountant in the same manner as the bacterial samples. These beads are used for the objective collar correction, SIM grating alignment, and measurement of SIM and widefield PSF. Images of the beads were acquired and chromatic aberration was corrected for by performing image registration (Holylab/RegisterQD.jl) and applying the found transform to all images.
 
-## Site localization analysis
+### Site localization analysis
 
-A Circle Hough Transform (Illingworth and Kittler, 1987) and Canny Edge Detection (Canny, 1986) were used for circle fitting and edge detection, respectively. Images were filtered by SNR (approximately > 3) as calculated using10log10⁡(maximagemedianimage)
+A Circle Hough Transform (Illingworth and Kittler, 1987) and Canny Edge Detection (Canny, 1986) were used for circle fitting and edge detection, respectively. Images were filtered by SNR (approximately > 3) as calculated using
+
+$$
+10log_{10}⁡(\frac{maximage}{median_{image}})
+$$
 
 as an SNR estimate. The time series were cut as the SNR relative to the first time frame fell below a given percentage (typically 30%), which is set as an input to the code. A polar transformation of the found circle was performed on a bicubic interpolation of the image. The alignment of the peak intensity was performed by identifying a peak maximum using a sliding average. Labelling of the cell wall with two different fluorescent dyes should give a distance estimation of zero. The measured offset, shown in Figure 3—figure supplement 2 and Figure 5—figure supplement 1, is likely due to chromatic aberration at the imaging plane. This offset is used to correct for chromatic aberration in subsequent site localization measurements by correcting the position of the reference region prior to calculating distance to the ligand signal. To avoid attaining out-of-focus peaks in the ligand channel, peak identification was performed beyond the reference region. The number of bacteria, together with median (IQR) and mean ± SD, is given in the figure captions. The widefield images were deconvolved using the Richardson–Lucy algorithm (Richardson, 1972; Lucy, 1974) in 10 iterations. The analysis pipeline, written in Julia, is provided on GitHub (nordenfeltLab/SiteLocalization).

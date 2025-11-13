@@ -23,18 +23,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 University of Wisconsin-Madison Madison United States
-2. https://ror.org/01y2jtd41 Department of Statistics, University of Wisconsin-Madison Madison United States
-3. https://ror.org/01y2jtd41 Department of Population Health Sciences, University of Wisconsin-Madison Madison United States
-4. https://ror.org/00cvxb145 Division of General Internal Medicine, Department of Medicine, University of Washington Seattle United States
-5. https://ror.org/02dgjyy92 University of Miami Miller School of Medicine Miami United States
-6. https://ror.org/05dq2gs74 Vanderbilt Memory and Alzheimer’s Center, Vanderbilt University Medical Center, Vanderbilt University School of Medicine Nashville United States
-7. https://ror.org/00b30xv10 School of Medicine, University of Pennsylvania Philadelphia United States
-8. https://ror.org/01y2jtd41 Wisconsin Alzheimer’s Institute, University of Wisconsin School of Medicine and Public Health Madison United States
-9. https://ror.org/01nh3sx96 Geriatric Research Education and Clinical Center, Wm. S. Middleton Memorial VA Hospital Madison United States
-10. https://ror.org/01y2jtd41 Alzheimer’s Disease Research Center, University of Wisconsin School of Medicine and Public Health Madison United States
-11. https://ror.org/01yc7t268 Department of Psychiatry, Washington University in St. Louis St. Louis United States
-12. https://ror.org/01y2jtd41 Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison Madison United States
+1. University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Department of Statistics, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+3. Department of Population Health Sciences, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+4. Division of General Internal Medicine, Department of Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+5. University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+6. Vanderbilt Memory and Alzheimer’s Center, Vanderbilt University Medical Center, Vanderbilt University School of Medicine Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+7. School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+8. Wisconsin Alzheimer’s Institute, University of Wisconsin School of Medicine and Public Health Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+9. Geriatric Research Education and Clinical Center, Wm. S. Middleton Memorial VA Hospital Madison United States ([ROR:01nh3sx96](https://ror.org/01nh3sx96))
+10. Alzheimer’s Disease Research Center, University of Wisconsin School of Medicine and Public Health Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+11. Department of Psychiatry, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+12. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
@@ -52,43 +52,117 @@ Here, we introduce BADGERS (Biobank-wide Association Discovery using GEnetic Ris
 
 ## Results
 
-## Method overview
+### Method overview
 
-Here, we briefly introduce the BADGERS model. The workflow of BADGERS is shown in Figure 1. A brief flowchart including all the analyses we contained in the manuscript was shown in the supplementary material (Figure 1—figure supplement 1). Complete statistical details are discussed in the Methods section. BADGERS is a two-stage method to test associations between traits. First, polygenic risk scores (PRS) are trained to impute complex traits using genetic data. Next, we test the association between a disease or trait of interest and various genetically-imputed traits. Given a PRS model, the imputed trait can be denoted asT^=XW
+Here, we briefly introduce the BADGERS model. The workflow of BADGERS is shown in Figure 1. A brief flowchart including all the analyses we contained in the manuscript was shown in the supplementary material (Figure 1—figure supplement 1). Complete statistical details are discussed in the Methods section. BADGERS is a two-stage method to test associations between traits. First, polygenic risk scores (PRS) are trained to impute complex traits using genetic data. Next, we test the association between a disease or trait of interest and various genetically-imputed traits. Given a PRS model, the imputed trait can be denoted as
 
-where XN×M is the genotype matrix for N individuals in a GWAS, and WM×1 is the Mx1 matrix denotes pre-calculated weight values on SNPs in the PRS model. Then, we test the association between measured trait Y and imputed trait T^ via a univariate linear model.Y=α+T^γ+δ
+$$
+T^=XW
+$$
 
-The test statistic for γ can be expressed as:Z=γ^se(γ^)≈WTΓZ∼
+![Figure 1.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig1-v1.jpg)
 
-where Z~ is the vector of SNP-level association z-scores for trait Y, and Γ is a diagonal matrix with the jth diagonal element being the ratio between the standard deviation of the jth SNP and that of T^ .
+**Figure 1.:** BADGERS takes (a) Alzheimer’s disease genome-wide association studies (GWAS), (b) linkage disequilibrium (LD) reference panel, and (c) Human traits GWAS from the UK biobank as input. The generated result will be the (d) Association between Alzheimer’s disease and human traits. In graph (d), each triangle represents one human trait, and different colors represent different trait categories.
 
-This model can be further generalized to perform multivariate analysis. If K imputed traits are included in the analysis, we use a similar notation as in univariate analysis:T^∗=XW∗
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig1-figsupp1-v1.jpg)
 
-Here, WM×K* is a matrix and each column of W* is the pre-calculated weight values on SNPs for each imputed trait. Then, the associations between Y and K imputed traits T^i(1≤i≤K) are tested via a multivariate linear model.Y=α∗+T^∗γ∗+δ∗
+where $X_{N\timesM}$ is the genotype matrix for $N$ individuals in a GWAS, and $W_{M\times1}$ is the Mx1 matrix denotes pre-calculated weight values on SNPs in the PRS model. Then, we test the association between measured trait $Y$ and imputed trait $T^$ via a univariate linear model.
 
-where γ*=(γ1,…,γK)T is the vector of regression coefficients. The z-score for γi(1≤i≤K) can be denoted as:Zi=γ^ise(γ^i)≈1UiiIiTU(W∗)TΘZ∼
+$$
+Y=\alpha+T^\gamma+\delta
+$$
 
-where U is the inverse variance-covariance matrix of T^∗ ; Ii is the K×1 vector with the ith element being 1 and all other elements equal to 0; is a M×M diagonal matrix with the ith diagonal element being varXi ; and Z~ is defined the same as the univariate case as the vector of SNP-level association z-scores for trait Y.
+The test statistic for $\gamma$ can be expressed as:
 
-## Simulations
+$$
+Z=\frac{\gamma^}{se(\gamma^)}≈W^{T}ΓZ∼
+$$
 
-We used real genotype data from the Genetic Epidemiology Research on Adult Health and Aging (GERA) to conduct simulation analyses (Methods). First, we evaluated the performance of our method on data simulated under the null hypothesis. We tested the associations between randomly simulated traits and 1738 PRS from the UK biobank and did not observe inflation in type-I error (Supplementary file 1). Similar results were also observed when we simulated traits that are heritable but not directly associated with any PRS. Since BADGERS only uses summary association statistics and externally estimated linkage disequilibrium (LD) as input, we also compared effect estimates in BADGERS with those of traditional regression analysis based on individual-level data. Regression coefficient estimates and association p-values from these two methods were highly consistent in both simulation settings (Figure 2A and Figure 2—figure supplements 1–3), showing minimal information loss in summary statistics compared to individual-level data indicating highly consistent performance compared to methods based on individual-level data. To evaluate the statistical power of BADGERS, we simulated traits by combining effects from randomly selected PRS and a polygenic background (Methods). We set the effect size of PRS to be 0.02, 0.015, 0.01, 0.008, and 0.005. BADGERS showed comparable statistical power to the regression analysis based on individual-level genotype and phenotype data (Figure 2B, Supplementary file 1). Overall, our results suggest that using summary association statistics and externally estimated LD as a proxy for individual-level genotype and phenotype data does not inflate type-I error rate or decrease power. The performance of BADGERS is comparable to regression analysis based on individual-level data. We also studied if more sophisticated polygenic risk prediction methods could potentially lead to higher statistical power in downstream association tests. We compared the performance of PRS based on marginal effect sizes with that of LDpred, a more sophisticated PRS model that jointly estimates SNP effects via a Bayesian framework (Vilhjálmsson et al., 2015). Imputation models based on multivariate analysis indeed improved the results. When using marginal PRS to impute traits, the correlation between γ^i and γi was 0.79. This correlation improved to 0.91 when using LDpred PRS (Figure 2—figure supplement 4). However, such improvement did not substantially affect the statistical power in association testing. Using marginal PRS, our analysis achieved a statistical power of 86% to identify associations at a type-I error rate of 0.05, and the power was 88% when using multivariate effect estimates to calculate PRS. These results suggest that while more sophisticated PRS methods can improve the results in BADGERS, simple PRS based on marginal effects also shows reasonably good performance.
+where $Z~$ is the vector of SNP-level association z-scores for trait $Y$, and $Γ$ is a diagonal matrix with the jth diagonal element being the ratio between the standard deviation of the jth SNP and that of $T^$ .
 
-## Identify risk factors for late-onset AD among 1738 heritable traits in the UK biobank
+This model can be further generalized to perform multivariate analysis. If $K$ imputed traits are included in the analysis, we use a similar notation as in univariate analysis:
+
+$$
+T^^{∗}=XW^{∗}
+$$
+
+Here, $W_{M\timesK}^{*}$ is a matrix and each column of $W^{*}$ is the pre-calculated weight values on SNPs for each imputed trait. Then, the associations between $Y$ and $K$ imputed traits $T^_{i}(1\leqi\leqK)$ are tested via a multivariate linear model.
+
+$$
+Y=\alpha^{∗}+T^^{∗}\gamma^{∗}+\delta^{∗}
+$$
+
+where $\gamma^{*}=(\gamma_{1},…,\gamma_{K})^{T}$ is the vector of regression coefficients. The z-score for $\gamma_{i}(1\leqi\leqK)$ can be denoted as:
+
+$$
+Z_{i}=\frac{\gamma^_{i}}{se(\gamma^_{i})}≈\frac{1}{\sqrt{U_{ii}}}I_{i}^{T}U(W^{∗})^{T}ΘZ∼
+$$
+
+where $U$ is the inverse variance-covariance matrix of $T^^{∗}$ ; $I_{i}$ is the $K\times1$ vector with the ith element being 1 and all other elements equal to 0; is a $M\timesM$ diagonal matrix with the ith diagonal element being $\sqrt{varX_{i}}$ ; and $Z~$ is defined the same as the univariate case as the vector of SNP-level association z-scores for trait $Y$.
+
+### Simulations
+
+We used real genotype data from the Genetic Epidemiology Research on Adult Health and Aging (GERA) to conduct simulation analyses (Methods). First, we evaluated the performance of our method on data simulated under the null hypothesis. We tested the associations between randomly simulated traits and 1738 PRS from the UK biobank and did not observe inflation in type-I error (Supplementary file 1). Similar results were also observed when we simulated traits that are heritable but not directly associated with any PRS. Since BADGERS only uses summary association statistics and externally estimated linkage disequilibrium (LD) as input, we also compared effect estimates in BADGERS with those of traditional regression analysis based on individual-level data. Regression coefficient estimates and association p-values from these two methods were highly consistent in both simulation settings (Figure 2A and Figure 2—figure supplements 1–3), showing minimal information loss in summary statistics compared to individual-level data indicating highly consistent performance compared to methods based on individual-level data. To evaluate the statistical power of BADGERS, we simulated traits by combining effects from randomly selected PRS and a polygenic background (Methods). We set the effect size of PRS to be 0.02, 0.015, 0.01, 0.008, and 0.005. BADGERS showed comparable statistical power to the regression analysis based on individual-level genotype and phenotype data (Figure 2B, Supplementary file 1). Overall, our results suggest that using summary association statistics and externally estimated LD as a proxy for individual-level genotype and phenotype data does not inflate type-I error rate or decrease power. The performance of BADGERS is comparable to regression analysis based on individual-level data. We also studied if more sophisticated polygenic risk prediction methods could potentially lead to higher statistical power in downstream association tests. We compared the performance of PRS based on marginal effect sizes with that of LDpred, a more sophisticated PRS model that jointly estimates SNP effects via a Bayesian framework (Vilhjálmsson et al., 2015). Imputation models based on multivariate analysis indeed improved the results. When using marginal PRS to impute traits, the correlation between $\gamma^_{i}$ and $\gamma_{i}$ was 0.79. This correlation improved to 0.91 when using LDpred PRS (Figure 2—figure supplement 4). However, such improvement did not substantially affect the statistical power in association testing. Using marginal PRS, our analysis achieved a statistical power of 86% to identify associations at a type-I error rate of 0.05, and the power was 88% when using multivariate effect estimates to calculate PRS. These results suggest that while more sophisticated PRS methods can improve the results in BADGERS, simple PRS based on marginal effects also shows reasonably good performance.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig2-v1.jpg)
+
+**Figure 2.:** Biobank-wide Association Discovery using GEnetic Risk Scores (BADGERS) and regression analysis based on individual-level data showed (A) highly consistent effect size estimates for 1738 polygenic risk scores (PRS) in simulation and (B) comparable statistical power (setting 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** BADGERS and regression analysis showed highly consistent effect size estimates for 1738 polygenic risk scores (PRS) in simulation setting 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** BADGERS and regression analysis provided highly consistent p-value results for 1738 polygenic risk scores (PRS) in simulation (A) setting 1 and (B) setting 2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The effect size between two algorithms is highly consistent.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Both methods showed consistent effect size estimates with true effect size in simulation.
+
+### Identify risk factors for late-onset AD among 1738 heritable traits in the UK biobank
 
 We applied BADGERS to conduct a biobank-wide association scan (BWAS) for AD risk factors from 1738 heritable traits (p<0.05; Methods) in the UK biobank. We repeated the analysis on two independent GWAS datasets for AD and further combined the statistical evidence via meta-analysis (Figure 3—figure supplement 1). We used stage-I association statistics from the International Genomics of Alzheimer’s Project (IGAP; n=54,162) as the discovery phase, then replicated the findings using 7050 independent samples from the Alzheimer’s Disease Genetics Consortium (ADGC). We identified 50 significant trait-AD associations in the discovery phase after correcting for multiple testing, among which 14 had p<0.05 in the replication analysis. Despite the considerably smaller sample size in the replication phase, top traits identified in the discovery stage showed strong enrichment for p<0.05 in the replication analysis (enrichment = 2.5, p=2.2e-5; hypergeometric test). In the meta-analysis, a total of 48 traits reached Bonferroni-corrected statistical significance and showed consistent effect directions in the discovery and replication analyses (Figure 3 and Supplementary file 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig3-v1.jpg)
+
+**Figure 3.:** Meta-analysis p-values for 1738 heritable traits in the UK biobank are shown in the figure. p-values are truncated at 1e-15 for visualization purposes. The horizontal line marks the Bonferroni-corrected significance threshold (i.e. p=0.05/1738). Positive associations point upward, and negative associations point downward.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Error bars denote the standard error of effect estimates.
+
 Unsurprisingly, many identified associations were related to dementia and cognition. Family history of AD and dementia showed the most significant associations with AD (p=3.7e-77 and 5.2e-28 for illnesses of mother and father, respectively). Having any dementia diagnosis is also strongly and positively associated (p=8.5e-11). In addition, we observed consistent and negative associations between better performance in cognition test and AD risk. These traits include fluid intelligence score (p=2.4e-14), time to complete round in cognition test (p=2.8e-9), correct final attempt (p=9.1e-11), and many others. Consistently, education attainment showed strong associations with AD. Age completed full time education (p=2.5e-7) was associated with lower AD risk. Four out of seven traits based on a survey about education and qualifications were significantly associated with AD (Figure 3—figure supplement 2). Higher education such as having a university degree (p=4.4e-12), A levels/AS levels or equivalent (p=6.9e-9), and professional qualifications (p=7.1e-6) were associated with lower AD risk. In contrast, choosing ‘none of the above’ in this survey was associated with a higher risk (p=1.6e-11). Other notable strong associations include high cholesterol (p=2.5e-15; positive), lifestyle traits such as cheese intake (p=2.5e-10; negative), occupation traits such as job involving heavy physical work (p=2.7e-10; positive), anthropometric traits including height (p=5.3e-7; negative), and traits related to pulmonary function, e.g., forced expiratory volume in 1 s (FEV1; p=1.9e-6; negative). Detailed information on all associations is summarized in Supplementary file 2.
 
-## Multivariate conditional analysis identifies independently associated risk factors
+### Multivariate conditional analysis identifies independently associated risk factors
 
 Of note, associations identified in the marginal analysis are not guaranteed to be independent. We observed clear correlational structures among the identified traits (Figure 4). For example, PRS of various intelligence and cognition-related traits are strongly correlated, and consumption of cholesterol-lowering medication is correlated with self-reported high cholesterol. To account for the correlations among traits and identify risk factors that are independently associated with AD, we performed multivariate conditional analysis using GWAS summary statistics (Methods). First, we applied hierarchical clustering to the 48 traits we identified in marginal association analysis and divided these traits into 15 representative clusters. The traits showing the most significant marginal association in each cluster were included in the multivariate analysis (Figure 4—figure supplement 1). Similar to the marginal analysis, we analyzed IGAP and ADGC data separately and combined the results using meta-analysis (Supplementary file 2). All 15 representative traits remained nominally significant (p<0.05) and showed consistent effect directions between marginal and conditional analyses (Supplementary file 1). However, several traits showed substantially reduced effect estimates and inflated p-values in multivariate analysis, including fluid intelligence score, mother still alive, unable to work because of sickness or disability, duration of moderate activity, and intake of cholesterol-lowering spread. Interestingly, major trait categories that showed the strongest marginal associations with AD (i.e. family history, high cholesterol, and education/cognition) were independent from each other. Paternal and maternal family history also showed independent associations with AD, consistent with the low correlation between their genetic risk scores (correlation = 0.052).
 
-## Influence of the APOE region on identified associations
+![Figure 4.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig4-v1.jpg)
+
+**Figure 4.:** Trait categories and association directions with Alzheimer’s disease (AD) are annotated. The dendrogram indicates the results of hierarchical clustering. We used 1000 genome samples with European ancestry to calculate PRS and evaluate their correlations. Label ‘irnt’ means that trait values were standardized using rank-based inverse normal transformation in the genome-wide association study (GWAS) analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig4-figsupp1-v1.jpg)
+
+### Influence of the APOE region on identified associations
 
 Furthermore, we evaluated the impact of APOE on identified associations. We removed the extended APOE region (chr19: 45,147,340–45,594,595; hg19) from summary statistics of the 48 traits showing significant marginal associations with AD and repeated the analysis. We observed a substantial drop in the significance level of many traits, especially family history of AD, dementia diagnosis, and high cholesterol (Figure 5, Figure 5—figure supplement 1, and Supplementary file 2). 38 out of 48 traits remained significant under stringent Bonferroni correction after APOE removal. Interestingly, the associations between AD and almost all cognition/intelligence traits were virtually unchanged, suggesting a limited role of APOE in these associations.
 
-## Causal inference via Mendelian randomization
+![Figure 5.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig5-v1.jpg)
+
+**Figure 5.:** The horizontal and vertical axes denote association p-values before and after removal of the APOE region, respectively. Original p-values (i.e. the x-axis) were truncated at 1e-20 for visualization purposes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** A region of more than 2 Mb was removed from genome-wide association study (GWAS) summary statistics for this analysis (chr19: 44,409,039–46,412,650). The horizontal and vertical axes denote association p-values before and after removal of the extended APOE region, respectively. Original p-values (i.e. the x-axis) were truncated at 1e-20 for visualization purposes.
+
+### Causal inference via Mendelian randomization
 
 Next, we investigated the evidence for causality among identified associations. We performed Mendelian randomization (MR-IVW; Methods) in IGAP and ADGC datasets separately and meta-analyzed the results on the complete set of 1738 heritable traits from the UK biobank. A total of 48 traits reached Bonferroni-corrected statistical significance and showed consistent effect directions in the discovery and replication analyses using BADGERS. In contrast, MR-IVW only identified nine traits with Bonferroni-corrected statistical significance. Among these nine traits, seven were also identified by BADGERS (Supplementary file 1). The signs of all significant causal effects identified by MR-IVW were consistent with results from BADGERS. The most significant effect was family history (p=1.1e-233 and 1.7e-69 for maternal and paternal history, respectively). Dementia diagnosis (p=9.1e-7), high cholesterol (p=4.1e-6), A levels/AS levels education (p=1.7e-4), and time spent watching television (p=2.4e-4) were also among the top significant effects. Of note, the fluid intelligence score, one of the most significant associations identified by BADGERS, did not reach statistical significance in MR (p=0.06), which may be explained by its polygenic genetic architecture. It is also worth noting that if we scan all 1738 traits using BADGERS and then apply MR-IVW on the 48 Bonferroni-corrected significant traits, 23 could reach nominal significance (p<0.05) in MR, and seven could reach significance under Bonferroni correction (p<0.05/48; Supplementary file 1).
 
@@ -96,15 +170,27 @@ We also compared BADGERS with another more recent method GSMR (Zhu et al., 2018)
 
 Additionally, we included GSMR analysis results after removing APOE region from the 48 identified traits. Only maternal family history reached Bonferroni-corrected statistical significance, further demonstrating the lack of statistical power in MR when performing biobank-wide scans (Supplementary file 1).
 
-## Associations with AD subgroups, biomarkers, and pathologies
+### Associations with AD subgroups, biomarkers, and pathologies
 
 To further investigate the mechanistic pathways for the identified risk factors, we applied BADGERS to a variety of AD subgroups, biomarkers, and neuropathologic features (Supplementary file 1). Overall, 29 significant associations were identified under a false discovery rate (FDR) cutoff of 0.05, and these endophenotypes showed distinct association patterns with AD risk factors (Figure 6; Figure 6—figure supplement 1). First, we tested the associations between the 48 AD-associated traits and five AD subgroups defined in the Executive Prominent Alzheimer’s Disease (EPAD) study, i.e., memory, language, visuospatial, none, and mix (Methods) (Mukherjee et al., 2018; Crane et al., 2017). Maternal family history of AD and dementia was strongly and consistently associated with all five EPAD subgroups (Supplementary file 2), with memory subgroup showing the strongest association (p=3.3e-16), which is consistent with the higher frequency of APOE ε4 in this subgroup (Mukherjee et al., 2018). Paternal family history was not strongly associated with any subgroups, but the effect directions were consistent. Interestingly, intelligence and cognition-related traits such as correct final attempt in cognitive test (p=2.7e-5) and fluid intelligence score (p=6.8e-5) were specifically associated with the ‘none’ subgroup – AD samples without relative impairment in any of the four cognitive domains. High cholesterol and related traits were associated with language, memory, and mix (i.e. AD samples with relative impairment in two or more domains) subgroups but showed weaker associations with the visuospatial and none subgroups.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig6-v1.jpg)
+
+**Figure 6.:** Asterisks denote significant associations based on an false discovery rate (FDR) cutoff of 0.05. p-values are truncated at 1e-5 for visualization purposes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Z-scores are truncated at 5 and –5 for visualization purposes.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/91360/elife-91360-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Association p-values; (B) Association z-scores. p-values are truncated at 1e-5 and z-scores are truncated at 5 and –5 for visualization purposes.
 
 Next, we extended our analysis to three biomarkers of AD in cerebrospinal fluid (CSF): amyloid beta (Aβ42), tau, and phosphorylated tau (ptau181) (Deming et al., 2017). Somewhat surprisingly, AD risk factors did not show strong associations with Aβ42 and tau (Supplementary file 2). Maternal family history of AD and dementia was associated with ptau181 (p=4.2e-4), but associations were absent for Aβ42 and tau. It has been recently suggested that CSF biomarkers have a sex-specific genetic architecture (Deming et al., 2018). However, no association passed an FDR cutoff of 0.05 in our sex-stratified analyses (Supplementary file 2).
 
 Furthermore, we applied BADGERS to a variety of neuropathologic features of AD and related dementias (Methods), including neuritic plaques (NPs), neurofibrillary tangles (NFTs), cerebral amyloid angiopathy (CAA), lewy body disease (LBD), hippocampal sclerosis (HS), and vascular brain injury (VBI) (Beecham et al., 2014). Family history of AD/dementia (p=3.8e-8, maternal; p=1.4e-5, paternal) and high cholesterol (p=2.1e-5) were strongly associated with NFT Braak stages (Supplementary file 2). NP also showed very similar association patterns with these traits (p=2.7e-19, maternal family history; p=2.6e-7, paternal family history; p=0.001, high cholesterol). The other neuropathologic features did not show strong associations. Of note, despite not being statistically significant, family history of AD/dementia was negatively associated with VBI, and multiple intelligence traits were positively associated with LBD, showing distinct patterns with other pathologies (Figure 6—figure supplement 2). We also note that various versions of the same pathologies all showed consistent associations in our analyses (Figure 6—figure supplement 2). The complete association results for all the endophenotypes and all the traits are summarized in Supplementary file 2. We further identified the influence of the APOE region in these results. The association results for all the endophenotypes with APOE Region being removed are summarized in Supplementary file 2.
 
-## Associations with cognitive traits in a pre-clinical cohort
+### Associations with cognitive traits in a pre-clinical cohort
 
 Finally, we studied the associations between AD risk factors and pre-clinical cognitive phenotypes using 1198 samples from the Wisconsin Registry for Alzheimer’s Prevention (WRAP), a longitudinal study of initially dementia-free middle-aged adults (Johnson et al., 2018). Assessed phenotypes include mild cognitive impairment (MCI) status and three cognitive composite scores for executive function, delayed recall, and learning (Methods). A total of 12 significant associations reached an FDR cutoff of 0.05 (Supplementary file 2). Somewhat surprisingly, parental history and high cholesterol, the risk factors that showed the strongest associations with various AD endophenotypes, were not associated with MCI or cognitive composite scores in WRAP. Instead, education and intelligence-related traits strongly predicted pre-clinical cognition (Figure 7). A-levels education and no education both showed highly significant associations with delayed recall (p=4.0e-5 and 7.7e-7) and learning (p=7.6e-6 and 5.0e-8). No education was also associated with higher risk of MCI (p=2.5e-4). Additionally, fluid intelligence score was positively associated with the learning composite score (p=7.5e-4), and time to complete round in cognition test was negatively associated with the executive function (p=1.1e-5).
 
@@ -128,89 +214,177 @@ In conclusion, BADGERS is a statistically powerful method to identify associated
 
 ## Methods
 
-## BADGERS framework
+### BADGERS framework
 
-The goal of this method is to study the association between Y, a measured trait in the study, and T^ , a trait imputed from genetic data via a linear prediction model:T^=XW
+The goal of this method is to study the association between $Y$, a measured trait in the study, and $T^$ , a trait imputed from genetic data via a linear prediction model:
 
-Here, XN×M is the genotype matrix for N individuals in a study of trait Y. WM×1 is the pre-calculated weight values on SNPs in the imputation model. M denotes the number of SNPs. We use Y, a N×1 vector, to denote the trait values measured on the same group of individuals. We test the association between Y and T^ via a linear model.Y=α+T^γ+δ
+$$
+T^=XW
+$$
 
-where α is the intercept, δ is the term for random noise, and regression coefficient γ is the parameter of interest. The ordinary least squares (OLS) estimator for γ can be denoted as,γ^=cov(T^,Y)var(T^)=cov(XW,Y)var(T^)=1var(T^)WT(cov(X1,Y)⋮cov(XM,Y))
+Here, $X_{N\timesM}$ is the genotype matrix for $N$ individuals in a study of trait $Y$. $W_{M\times1}$ is the pre-calculated weight values on SNPs in the imputation model. $M$ denotes the number of SNPs. We use $Y$, a $N\times1$ vector, to denote the trait values measured on the same group of individuals. We test the association between $Y$ and $T^$ via a linear model.
 
-Here, Xj is the jth column of X. Additionally, we derive the formula for the standard error of γ^ :se(γ^)=var(δ)N×var(T^)≈var(Y)N×var(T^)
+$$
+Y=\alpha+T^\gamma+\delta
+$$
 
-The approximation in this formula is based on the assumption that trait Y has complex etiology and imputed trait T^ only explains a small proportion of its phenotypic variance. When an accurate estimate of var(δ) is difficult to obtain, this approximation approach provides conservative results and controls type-I error in the analysis.
+where $\alpha$ is the intercept, $\delta$ is the term for random noise, and regression coefficient $\gamma$ is the parameter of interest. The ordinary least squares (OLS) estimator for $\gamma$ can be denoted as,
 
-In practice, individual-level genotype (i.e. X) and phenotype data (i.e. Y) may not be accessible due to policy and privacy concerns. Therefore, it is of practical interest to perform the aforementioned association analysis using summary association statistics. Standard genetic association analysis tests the association between trait Y and each SNP via the following linear model:Y=μj+Xjβj+εj(1≤j≤M)
+$$
+\gamma^=\frac{cov(T^,Y)}{var(T^)}=\frac{cov(XW,Y)}{var(T^)}=\frac{1}{var(T^)}W^{T}(cov(X_{1},Y)⋮cov(X_{M},Y))
+$$
 
-The OLS estimator for βj and its standard error have the following forms.β^j=cov(Xj,Y)var(Xj)se(β^j)=var(εj)N×var(Xj)≈var(Y)N×var(Xj)
+Here, $X_{j}$ is the jth column of $X$. Additionally, we derive the formula for the standard error of $\gamma^$ :
 
-Again, the approximation is based on the empirical observation in complex trait genetics – each SNP explains little variability of Y (Manolio et al., 2009).
+$$
+se(\gamma^)=\sqrt{\frac{var(\delta)}{N\timesvar(T^)}}≈\sqrt{\frac{var(Y)}{N\timesvar(T^)}}
+$$
 
-Next, we derive the test statistic (i.e. z-score) for γ:Z=γ^se(γ^)≈Nvar(Y)×var(T^)WT(cov(X1,Y)⋮cov(XM,Y))≈1var(T^)WT(var(X1)β1^se(β1^)⋮var(XM)βM^se(βM^))=WTΓZ∼
+The approximation in this formula is based on the assumption that trait $Y$ has complex etiology and imputed trait $T^$ only explains a small proportion of its phenotypic variance. When an accurate estimate of $var(\delta)$ is difficult to obtain, this approximation approach provides conservative results and controls type-I error in the analysis.
 
-where Γ is a diagonal matrix with the jth diagonal element beingΓjj=var(Xj)var(T^)
+In practice, individual-level genotype (i.e. $X$) and phenotype data (i.e. $Y$) may not be accessible due to policy and privacy concerns. Therefore, it is of practical interest to perform the aforementioned association analysis using summary association statistics. Standard genetic association analysis tests the association between trait $Y$ and each SNP via the following linear model:
 
-and Z∼ is the vector of SNP-level z-scores obtained from the GWAS of trait Y, i.e.,Z∼j=β^jse(β^j)
+$$
+Y=\mu_{j}+X_{j}\beta_{j}+\epsilon_{j}(1\leqj\leqM)
+$$
 
-Without access to individual-level genotype data, var(Xj) and var(T^) need to be estimated using an external panel with a similar ancestry background. We use X~ to denote the genotype matrix from an external cohort, then var(Xj) can be approximated using the sample variance of X~j . Variance of T^ can be approximated as followsvar(T^)≈WTD∼W
+The OLS estimator for $\beta_{j}$ and its standard error have the following forms.
 
-where D~ is the variance-covariance matrix of all SNPs estimated using X~ . However, when the number of SNPs is large in the imputation model for trait T, calculation of D~ is computationally intractable. Instead, we use an equivalent but computationally more efficient approach. We first impute trait T in the external panel using the same imputation modelT∼=X∼W
+$$
+\beta^_{j}=\frac{cov(X_{j},Y)}{var(X_{j})}
+$$
 
-Then, var(T^) can be approximated by sample variance var(T∼) .
 
-Thus, we can test the association between Y and T^ without having access to individual-level genotype and phenotype data from the GWAS. The required input variables for BADGERS include a linear imputation model for trait T, SNP-level summary statistics from a GWAS of trait Y, and an external panel of genotype data. With these, the association test can be performed.
 
-## Multivariate analysis in BADGERS
+$$
+se(\beta^_{j})=\sqrt{\frac{var(\epsilon_{j})}{N\timesvar(X_{j})}}≈\sqrt{\frac{var(Y)}{N\timesvar(X_{j})}}
+$$
 
-To adjust for potential confounding effects, it may be of interest to include multiple imputed traits in the same BADGERS model. We still use Y to denote the measured trait of interest. The goal is to perform a multiple regression analysis using K imputed traits (i.e. T^1 ,..., T^K) as predictor variables:Y=T^∗γ∗+δ∗
+Again, the approximation is based on the empirical observation in complex trait genetics – each SNP explains little variability of $Y$ (Manolio et al., 2009).
 
-Here, we use T^∗=(T^1,…,T^K) to denote a N×K matrix for K imputed traits. Regression coefficients γ*=(γ1,…,γK)T are the parameters of interest. To simplify algebra, we also assume trait Y and all SNPs in the genotype matrix X are centered so there is no intercept term in the model, but the conclusions apply to the general setting. Similar to univariate analysis, traits T^1,…,T^K are imputed from genetic data via linear prediction models:T^∗=XW∗
+Next, we derive the test statistic (i.e. z-score) for $\gamma$:
 
-where WM×K* are imputation weights assigned to SNPs. The ith column of W denotes the imputation model for trait Ti . Then, the OLS estimator γ^∗ and its variance-covariance matrix can be denoted as follows:γ^∗=((T^∗)TT^∗)−1(T^∗)TYcov(γ^∗)≈var(Y)((T^∗)TT^∗)−1
+$$
+Z=\frac{\gamma^}{se(\gamma^)}≈\sqrt{\frac{N}{var(Y)\timesvar(T^)}W^{T}}(cov(X_{1},Y)⋮cov(X_{M},Y))≈\sqrt{\frac{1}{var(T^)}W^{T}}(\frac{\sqrt{var(X_{1})}\beta_{1}^}{se(\beta_{1}^)}⋮\frac{\sqrt{var(X_{M})}\beta_{M}^}{se(\beta_{M}^)})=W^{T}ΓZ∼
+$$
 
-The approximation is based on the assumption that imputed traits T^1,…,T^K collectively explain little variance in Y, which is reasonable in complex trait genetics if K is not too large. We further denote:U:=N((T^∗)TT^∗)−1=(var(T^1)⋯cov(T^1,T^K)⋮⋱⋮cov(T^K,T^1)⋯var(T^K))−1
+where $Γ$ is a diagonal matrix with the jth diagonal element being
 
-All elements in matrix U can be approximated using a reference panel X~ (Dudbridge, 2013):cov(T^i,T^j)≈cov(T∼i,T∼j)
+$$
+Γ_{jj}=\sqrt{\frac{var(X_{j})}{var(T^)}}
+$$
 
-Therefore, the z-score for γk(1≤k≤K) isZk=γk^se(γk^)=IkTU(W∗)TXTYNUkkvar(Y)=1UkkIkTU(W∗)TΘZ∼
+and $Z∼$ is the vector of SNP-level z-scores obtained from the GWAS of trait $Y$, i.e.,
 
-where Ik is the K×1 vector with the kth element being 1 and all other elements equal to 0, is a M×M diagonal matrix with the ith diagonal element being var(Xi) , and similar to the notation in univariate analysis, Z~ is the vector of SNP-level z-scores from the GWAS of trait Y. Given imputation models for K traits (i.e. W*), GWAS summary statistics for trait Y (i.e. Z~), and an external genetic dataset to estimate U and , multivariate association analysis can be performed without genotype and phenotype data from the GWAS.
+$$
+Z∼_{j}=\frac{\beta^_{j}}{se(\beta^_{j})}
+$$
 
-## Genetic prediction
+Without access to individual-level genotype data, $var(X_{j})$ and $var(T^)$ need to be estimated using an external panel with a similar ancestry background. We use $X~$ to denote the genotype matrix from an external cohort, then $var(X_{j})$ can be approximated using the sample variance of $X~_{j}$ . Variance of $T^$ can be approximated as follows
 
-Any linear prediction model can be used in the BADGERS framework. With access to individual-level genotype and phenotype data, the users can train their preferred statistical learning models, e.g., penalized regression or linear mixed model. When only GWAS summary statistics are available for risk factors (i.e. T), PRS can be used for imputation. We used PRS to impute complex traits in all analyses throughout the paper. Of note, more advanced PRS methods that explicitly model LD (Vilhjálmsson et al., 2015) and functional annotations (Hu et al., 2017) to improve prediction accuracy have been developed. However, additional independent datasets may be needed if there are tuning parameters in PRS. In general, higher imputation accuracy will improve statistical power in association testing (Hu et al., 2018). The BADGERS software allows users to choose their preferred imputation model.
+$$
+var(T^)≈W^{T}D∼W
+$$
 
-## Simulation settings
+where $D~$ is the variance-covariance matrix of all SNPs estimated using $X~$ . However, when the number of SNPs is large in the imputation model for trait $T$, calculation of $D~$ is computationally intractable. Instead, we use an equivalent but computationally more efficient approach. We first impute trait $T$ in the external panel using the same imputation model
+
+$$
+T∼=X∼W
+$$
+
+Then, $var(T^)$ can be approximated by sample variance $var(T∼)$ .
+
+Thus, we can test the association between $Y$ and $T^$ without having access to individual-level genotype and phenotype data from the GWAS. The required input variables for BADGERS include a linear imputation model for trait $T$, SNP-level summary statistics from a GWAS of trait $Y$, and an external panel of genotype data. With these, the association test can be performed.
+
+### Multivariate analysis in BADGERS
+
+To adjust for potential confounding effects, it may be of interest to include multiple imputed traits in the same BADGERS model. We still use $Y$ to denote the measured trait of interest. The goal is to perform a multiple regression analysis using $K$ imputed traits (i.e. $T^_{1}$ ,..., $T^_{K}$) as predictor variables:
+
+$$
+Y=T^^{∗}\gamma^{∗}+\delta^{∗}
+$$
+
+Here, we use $T^^{∗}=(T^_{1},…,T^_{K})$ to denote a $N\timesK$ matrix for $K$ imputed traits. Regression coefficients $\gamma^{*}=(\gamma_{1},…,\gamma_{K})^{T}$ are the parameters of interest. To simplify algebra, we also assume trait $Y$ and all SNPs in the genotype matrix $X$ are centered so there is no intercept term in the model, but the conclusions apply to the general setting. Similar to univariate analysis, traits $T^_{1},…,T^_{K}$ are imputed from genetic data via linear prediction models:
+
+$$
+T^^{∗}=XW^{∗}
+$$
+
+where $W_{M\timesK}^{*}$ are imputation weights assigned to SNPs. The ith column of $W$ denotes the imputation model for trait $T_{i}$ . Then, the OLS estimator $\gamma^^{∗}$ and its variance-covariance matrix can be denoted as follows:
+
+$$
+\gamma^^{∗}=((T^^{∗})^{T}T^^{∗})^{−1}(T^^{∗})^{T}Y
+$$
+
+
+
+$$
+cov(\gamma^^{∗})≈var(Y)((T^^{∗})^{T}T^^{∗})^{−1}
+$$
+
+The approximation is based on the assumption that imputed traits $T^_{1},…,T^_{K}$ collectively explain little variance in $Y$, which is reasonable in complex trait genetics if $K$ is not too large. We further denote:
+
+$$
+U:=N((T^^{∗})^{T}T^^{∗})^{−1}=(var(T^_{1})⋯cov(T^_{1},T^_{K})⋮⋱⋮cov(T^_{K},T^_{1})⋯var(T^_{K}))^{−1}
+$$
+
+All elements in matrix $U$ can be approximated using a reference panel $X~$ (Dudbridge, 2013):
+
+$$
+cov(T^_{i},T^_{j})≈cov(T∼_{i},T∼_{j})
+$$
+
+Therefore, the z-score for $\gamma_{k}(1\leqk\leqK)$ is
+
+$$
+Z_{k}=\frac{\gamma_{k}^}{se(\gamma_{k}^)}=\frac{I_{k}^{T}U(W^{∗})^{T}X^{T}Y}{\sqrt{NU_{kk}var(Y)}}=\frac{1}{\sqrt{U_{kk}}}I_{k}^{T}U(W^{∗})^{T}ΘZ∼
+$$
+
+where $I_{k}$ is the $K\times1$ vector with the kth element being 1 and all other elements equal to 0, is a $M\timesM$ diagonal matrix with the ith diagonal element being $\sqrt{var(X_{i})}$ , and similar to the notation in univariate analysis, $Z~$ is the vector of SNP-level z-scores from the GWAS of trait $Y$. Given imputation models for $K$ traits (i.e. $W^{*}$), GWAS summary statistics for trait $Y$ (i.e. $Z~$), and an external genetic dataset to estimate $U$ and , multivariate association analysis can be performed without genotype and phenotype data from the GWAS.
+
+### Genetic prediction
+
+Any linear prediction model can be used in the BADGERS framework. With access to individual-level genotype and phenotype data, the users can train their preferred statistical learning models, e.g., penalized regression or linear mixed model. When only GWAS summary statistics are available for risk factors (i.e. $T$), PRS can be used for imputation. We used PRS to impute complex traits in all analyses throughout the paper. Of note, more advanced PRS methods that explicitly model LD (Vilhjálmsson et al., 2015) and functional annotations (Hu et al., 2017) to improve prediction accuracy have been developed. However, additional independent datasets may be needed if there are tuning parameters in PRS. In general, higher imputation accuracy will improve statistical power in association testing (Hu et al., 2018). The BADGERS software allows users to choose their preferred imputation model.
+
+### Simulation settings
 
 We simulated quantitative traits using genotype data of 62,313 individuals from the GERA cohort (dbGap accession: phs000674). Summary association statistics were generated using PLINK (Purcell et al., 2007). We ran BADGERS on summary statistics based on the simulated traits and PRS of 1738 traits in the UK biobank. To compare BADGERS with the traditional approach that uses individual-level data as input, we also directly regressed simulated traits on the PRS of UK biobank traits to estimate association effects.
 
-## Setting 1
+#### Setting 1
 
 We simulated quantitative trait values as i.i.d. samples from normal distribution with mean 0 and variance 1. In this setting, simulated trait values were independent from genotype data.
 
-## Setting 2
+#### Setting 2
 
 We simulated quantitative trait values based on an additive random effect model commonly used in heritability estimation (Yang et al., 2015). We fixed heritability to be 0.1. In this setting, the simulated trait is associated with SNPs, but is not directly related to PRS of UK biobank traits.
 
-## Setting 3
+#### Setting 3
 
-We selected 100 traits from 1738 UK-Biobank traits to calculate PRS on GERA data. For each of these 100 PRS, we simulated a quantitative trait by summing up the effect of PRS, a polygenic genetic background, and a noise term.Y=Xβ+ρP+ε
+We selected 100 traits from 1738 UK-Biobank traits to calculate PRS on GERA data. For each of these 100 PRS, we simulated a quantitative trait by summing up the effect of PRS, a polygenic genetic background, and a noise term.
 
-Here, X denotes the genotype of samples; β is the effect size of each variant; P is the PRS of one of the selected traits; ρ is the effect size of PRS; and ε is the error term following a standard normal distribution. The polygenic background and random noise (i.e. Xβ+ε) were simulated using the same model described in setting 2. This term and the PRS were normalized separately. The standardized effect size (i.e. ρ) was set as 0.02, 0.015, 0.01, 0.008, and 0.005 in our simulations. In this setting, simulated traits are directly associated with SNPs and PRS. For each value of ρ, statistical power was calculated as the proportion of significant results (p<0.05) out of 100 traits.
+$$
+Y=X\beta+ρP+\epsilon
+$$
 
-## Setting 4
+Here, $X$ denotes the genotype of samples; $\beta$ is the effect size of each variant; $P$ is the PRS of one of the selected traits; $ρ$ is the effect size of PRS; and $\epsilon$ is the error term following a standard normal distribution. The polygenic background and random noise (i.e. $X\beta+\epsilon$) were simulated using the same model described in setting 2. This term and the PRS were normalized separately. The standardized effect size (i.e. $ρ$) was set as 0.02, 0.015, 0.01, 0.008, and 0.005 in our simulations. In this setting, simulated traits are directly associated with SNPs and PRS. For each value of $ρ$, statistical power was calculated as the proportion of significant results (p<0.05) out of 100 traits.
 
-We simulated 100 quantitative traits T1,…,T100 based on an additive random effect model commonly used with heritability fixed as 0.1. And the response traits Y1,…,Y100 were simulated by adding a noise term to T.Yi=γiTi+εi
+#### Setting 4
 
-Where γi∼N(0,2) , and εi∼N(0,Var(Ti)). The dataset was split into two subsets, one with 31,162 (subset 1) and another with 31,163 samples (subset 2). Marginal summary statistics correspond to Ti ’s and Yi ’s were derived using subset 1 and subset 2, respectively. We applied LDpred to jointly estimate all SNPs’ effects using marginal summary statistics from subset 1. Then, we ran BADGERS to identify associations between 100 pairs of Yi and Ti using two methods to impute Ti ’s (i.e. marginal PRS and LDpred).
+We simulated 100 quantitative traits $T_{1},…,T_{100}$ based on an additive random effect model commonly used with heritability fixed as 0.1. And the response traits $Y_{1},…,Y_{100}$ were simulated by adding a noise term to $T.$
 
-## GWAS datasets
+$$
+Y_{i}=\gamma_{i}T_{i}+\epsilon_{i}
+$$
+
+Where $\gamma_{i}∼N(0,2)$ , and $\epsilon_{i}∼N(0,Var(T_{i})).$ The dataset was split into two subsets, one with 31,162 (subset 1) and another with 31,163 samples (subset 2). Marginal summary statistics correspond to $T_{i}$ ’s and $Y_{i}$ ’s were derived using subset 1 and subset 2, respectively. We applied LDpred to jointly estimate all SNPs’ effects using marginal summary statistics from subset 1. Then, we ran BADGERS to identify associations between 100 pairs of $Y_{i}$ and $T_{i}$ using two methods to impute $T_{i}$ ’s (i.e. marginal PRS and LDpred).
+
+### GWAS datasets
 
 Summary statistics for 4357 UK biobank traits were generated by Dr. Benjamin Neale’s group and were downloaded from (http://www.nealelab.is/uk-biobank). AD summary statistics from the IGAP stage-I analysis were downloaded from the IGAP website (http://web.pasteur-lille.fr/en/recherche/u744/igap/igap_download.php). ADGC phase 2 summary statistics were generated by first analyzing individual datasets using logistic regression adjusting for age, sex, and the first three principal components in the program SNPTest v2 (Marchini et al., 2007). Meta-analysis of the individual dataset results was then performed using the inverse-variance weighted approach (Willer et al., 2010).
 
 GWAS summary statistics for neuropathologic features of AD and related dementias were obtained from the ADGC. Details on these data have been previously reported (Beecham et al., 2014). We analyzed a total of 13 neuropathologic features, including four NP traits, two traits for NFT Braak stages, three traits for LBD, CAA, HS, and two VBI traits. Among different versions of the same pathology, we picked one dataset for each pathologic feature to show in our primary analyses. Six AD subgroups were defined in the recent EPAD paper (Mukherjee et al., 2018) on the basis of relative performance in memory, executive functioning, visuospatial functioning, and language at the time of Alzheimer’s diagnosis. Four subgroups include AD samples with an isolated substantial relative impairment in one of four domains; the ‘none’ subgroup includes samples without substantial relative impairment; the ‘mix’ subgroup includes samples with relative impairment in multiple domains. Each domain was compared with healthy controls in case-control association analyses. We did not include the executive functioning subgroup in our analysis due to its small sample size in cases. Detailed information about the design of CSF biomarker GWAS and the recent sex-stratified analysis has been described previously (Deming et al., 2017; Deming et al., 2018). Details on the association statistics for AD subgroups, CSF biomarkers, and neuropathological features are summarized in Supplementary file 2.
 
-## Analysis of GWAS summary statistics
+### Analysis of GWAS summary statistics
 
 We applied LD score regression implemented in the LDSC software (Bulik-Sullivan et al., 2015) to estimate the heritability of each trait. Among 4357 traits, we selected 1738 with nominally significant heritability (p<0.05) to include in our analyses. We removed SNPs with association p-values greater than 0.01 from each of the 1738 summary statistics files, clumped the remaining SNPs using a LD cutoff of 0.1 and a radius of 1 Mb in PLINK (Purcell et al., 2007), and built PRS for each trait using the effect size estimates of remaining SNPs.
 
@@ -218,7 +392,7 @@ Throughout the paper, we used samples of European ancestry in the 1000 Genomes P
 
 We used MR-IVW approach (Burgess et al., 2013) implemented in the Mendelian Randomization R package (Yavorska and Burgess, 2017) to study the causal effects of 48 risk factors identified by BADGERS. For each trait, we selected instrumental SNP variables as the top 30 most significant SNPs after clumping all SNPs using a LD cutoff of 0.1.
 
-## Analysis of WRAP data
+### Analysis of WRAP data
 
 WRAP is a longitudinal study of initially dementia-free middle-aged adults that allows for the enrollment of siblings and is enriched for a parental history of AD. Details of the study design and methods used have been previously described (Johnson et al., 2018; Sager et al., 2005). After quality control, a total of 1198 participants whose genetic ancestry was primarily of European descent were included in our analysis. On average, participants were 53.7 years of age (SD = 6.6) at baseline and had a bachelor’s degree, and 69.8% (n=836) were female. Participants had two to six longitudinal study visits, with an average of 4.3 visits, leading to a total of 5184 observations available for analysis.
 
@@ -228,6 +402,6 @@ Composite scores were calculated for executive function, delayed recall, and lea
 
 The 48 PRSs were developed within the WRAP cohort using PLINK v1.9 (Chang et al., 2015) and tested for associations with the three composite scores (i.e. executive function, delayed recall, and learning) and cognitive impairment statuses. MCI status was tested using logistic regression models in R, while all other associations, which utilized multiple study visits, were tested using linear mixed regression models implemented in the lme4 package in R (Bates et al., 2015). All models included fixed effects for age and sex, and cognitive composite scores additionally included a fixed effect for practice effect (using visit number). Mixed models included random intercepts for within-subject correlations due to repeated measures and within-family correlations due to the enrollment of siblings.
 
-## Software availability
+### Software availability
 
 The BADGERS software is freely available at https://github.com/qlu-lab/BADGERS, copy archived at qlu-lab, 2024.

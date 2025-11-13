@@ -63,7 +63,7 @@
 
 ## Abstract
 
-The emergence of mutant K13-mediated artemisinin (ART) resistance in Plasmodium falciparum malaria parasites has led to widespread treatment failures across Southeast Asia. In Africa, K13- propeller genotyping confirms the emergence of the R561H mutation in Rwanda and highlights the continuing dominance of wild-type K13 elsewhere. Using gene editing, we show that R561H, along with C580Y and M579I, confer elevated in vitro ART resistance in some African strains, contrasting with minimal changes in ART susceptibility in others. C580Y and M579I cause substantial fitness costs, which may slow their dissemination in high-transmission settings, in contrast with R561H that in African 3D7 parasites is fitness neutral. In Cambodia, K13 genotyping highlights the increasing spatio-temporal dominance of C580Y. Editing multiple K13 mutations into a panel of Southeast Asian strains reveals that only the R561H variant yields ART resistance comparable to C580Y. In Asian Dd2 parasites C580Y shows no fitness cost, in contrast with most other K13 mutations tested, including R561H. Editing of point mutations in ferredoxin or mdr2 , earlier associated with resistance, has no impact on ART susceptibility or parasite fitness. These data underline the complex interplay between K13 mutations, parasite survival, growth and genetic background in contributing to the spread of ART resistance.
+The emergence of mutant K13-mediated artemisinin (ART) resistance in Plasmodium falciparum malaria parasites has led to widespread treatment failures across Southeast Asia. In Africa, K13-propeller genotyping confirms the emergence of the R561H mutation in Rwanda and highlights the continuing dominance of wild-type K13 elsewhere. Using gene editing, we show that R561H, along with C580Y and M579I, confer elevated in vitro ART resistance in some African strains, contrasting with minimal changes in ART susceptibility in others. C580Y and M579I cause substantial fitness costs, which may slow their dissemination in high-transmission settings, in contrast with R561H that in African 3D7 parasites is fitness neutral. In Cambodia, K13 genotyping highlights the increasing spatio-temporal dominance of C580Y. Editing multiple K13 mutations into a panel of Southeast Asian strains reveals that only the R561H variant yields ART resistance comparable to C580Y. In Asian Dd2 parasites C580Y shows no fitness cost, in contrast with most other K13 mutations tested, including R561H. Editing of point mutations in ferredoxin or mdr2, earlier associated with resistance, has no impact on ART susceptibility or parasite fitness. These data underline the complex interplay between K13 mutations, parasite survival, growth and genetic background in contributing to the spread of ART resistance.
 
 ## Introduction
 
@@ -79,7 +79,7 @@ Here, we define the role of a panel of K13 mutations identified in patient isola
 
 ## Results
 
-## Non-synonymous K13 mutations are present at low frequencies in Africa
+### Non-synonymous K13 mutations are present at low frequencies in Africa
 
 To examine the status of K13 mutations across Africa, we analyzed K13 beta-propeller domain sequences in 3257 isolates from eleven malaria-endemic African countries, including The Gambia, Sierra Leone, and Burkina Faso in West Africa; Chad, Central African Republic, Republic of the Congo, and Equatorial Guinea in Central Africa; and Burundi, Tanzania, Rwanda, and Somalia in East Africa. Samples were collected between 2011 and 2019, with most countries sampled across multiple years. A total of 1038 (32%) samples originated from The Gambia, Republic of the Congo, or Burundi, and have not been previously reported, whereas the remaining samples, including those from Rwanda, have been published (Figure 1—source data 1; Supplementary file 1).
 
@@ -87,21 +87,154 @@ Of all samples, 98% (3179) were K13 wild-type, that is, they matched the 3D7 (A
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig1-v3.jpg)
 
-**Figure 1.:** K13 alleles in eleven African countries.Map of Africa with pie charts representing the proportions of sequenced samples per country that harbor the K13 wild-type sequence (3D7 reference), the R561H variant (the most commonly identified mutation, unique to Rwanda; see inset), or another less frequent non-synonymous K13 mutation. Sample sizes and years of sample collection are indicated. Mutations and numbers of African samples sequenced per country, and prior citations as appropriate, are listed in Figure 1—source data 1.  Figure 1—source data 1.K13 alleles over time in African countries (2011–2019).
+**Figure 1.:** Map of Africa with pie charts representing the proportions of sequenced samples per country that harbor the K13 wild-type sequence (3D7 reference), the R561H variant (the most commonly identified mutation, unique to Rwanda; see inset), or another less frequent non-synonymous K13 mutation. Sample sizes and years of sample collection are indicated. Mutations and numbers of African samples sequenced per country, and prior citations as appropriate, are listed in Figure 1—source data 1.
 
 Of the 35 non-synonymous mutations, only two were present in ≥ten samples: R561H (n=20, found only in Rwanda, sampled from 2012 to 2015; Uwimana et al., 2020), and A578S (n=10; observed in four African countries across multiple years). Previously, A578S was shown not to confer in vitro resistance in Dd2 (Ménard et al., 2016). In the set of 927 genotyped Rwandan isolates, R561H accounted for 44% of mutant samples and 2% of all samples (Figure 1 inset).
 
-## K13 R561H, M579I, and C580Y mutations can confer in vitro artemisinin resistance in African parasites
+### K13 R561H, M579I, and C580Y mutations can confer in vitro artemisinin resistance in African parasites
 
 To test whether the K13 R561H mutation could mediate ART resistance in African strains, we developed a CRISPR/Cas9-mediated K13 editing strategy (Supplementary file 2) to introduce this mutation into 3D7 and F32 parasites. On the basis of whole-genome sequence analysis of African isolates, 3D7 was recently shown to segregate phylogenetically with parasites from Rwanda (Uwimana et al., 2020). F32 was derived from an isolate from Tanzania (Witkowski et al., 2010). We also tested the C580Y mutation that predominates in SE Asia, as well as the M579I mutation earlier identified in a P. falciparum-infected migrant worker in Equatorial Guinea who displayed delayed parasite clearance following ACT treatment (Lu et al., 2017). The positions of these residues are highlighted in the K13 beta-propeller domain structure shown in Supplementary file 3. For 3D7, F32 and other lines used for this study, geographic origins and genotypes at drug resistance loci are described in Table 1 and Supplementary file 4. All parental lines were cloned by limiting dilution prior to transfection. Edited parasites were identified by PCR and Sanger sequencing, and cloned. These and other edited parasite lines used herein are described in Supplementary file 5.
 
+**Table 1.**
+ Plasmodium falciparum lines employed herein.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parasite</th>
+      <th>Origin</th>
+      <th>Year</th>
+      <th>K13</th>
+      <th>Resistance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3D7WT</td>
+      <td>Africa</td>
+      <td>1981</td>
+      <td>WT</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>F32WT</td>
+      <td>Tanzania</td>
+      <td>1982</td>
+      <td>WT</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>UG659WT</td>
+      <td>Uganda</td>
+      <td>2007</td>
+      <td>WT</td>
+      <td>CQ, SP</td>
+    </tr>
+    <tr>
+      <td>UG815WT</td>
+      <td>Uganda</td>
+      <td>2008</td>
+      <td>WT</td>
+      <td>CQ, SP</td>
+    </tr>
+    <tr>
+      <td>Dd2WT</td>
+      <td>Indochina</td>
+      <td>1980</td>
+      <td>WT</td>
+      <td>CQ, MFQ, SP</td>
+    </tr>
+    <tr>
+      <td>Cam3.IIWT</td>
+      <td>Cambodia</td>
+      <td>2010</td>
+      <td>WT</td>
+      <td>CQ, SP</td>
+    </tr>
+    <tr>
+      <td>CamWTC580Y</td>
+      <td>Cambodia</td>
+      <td>2010</td>
+      <td>C580Y</td>
+      <td>ART, CQ, SP</td>
+    </tr>
+    <tr>
+      <td>RF7C580Y</td>
+      <td>Cambodia</td>
+      <td>2012</td>
+      <td>C580Y</td>
+      <td>ART, CQ, PPQ, SP</td>
+    </tr>
+    <tr>
+      <td>Thai1WT</td>
+      <td>Thailand</td>
+      <td>2003</td>
+      <td>WT</td>
+      <td>CQ, SP</td>
+    </tr>
+    <tr>
+      <td>Thai2WT</td>
+      <td>Thailand</td>
+      <td>2004</td>
+      <td>WT</td>
+      <td>CQ, MFQ, SP</td>
+    </tr>
+    <tr>
+      <td>Thai3WT</td>
+      <td>Thailand</td>
+      <td>2003</td>
+      <td>WT</td>
+      <td>CQ, SP</td>
+    </tr>
+    <tr>
+      <td>Thai4WT</td>
+      <td>Thailand</td>
+      <td>2003</td>
+      <td>WT</td>
+      <td>CQ, SP</td>
+    </tr>
+    <tr>
+      <td>Thai5WT</td>
+      <td>Thailand</td>
+      <td>2011</td>
+      <td>WT</td>
+      <td>CQ, SP</td>
+    </tr>
+    <tr>
+      <td>Thai6E252Q</td>
+      <td>Thailand</td>
+      <td>2008</td>
+      <td>E252Q</td>
+      <td>ART (low), CQ, MFQ, SP</td>
+    </tr>
+    <tr>
+      <td>Thai7E252Q</td>
+      <td>Thailand</td>
+      <td>2010</td>
+      <td>E252Q</td>
+      <td>ART (low), CQ, MFQ, SP</td>
+    </tr>
+  </tbody>
+</table>
+
+_Parasite superscripts refer to the K13 sequence.ART, artemisinin; CQ, chloroquine; MFQ, mefloquine; PPQ, piperaquine; SP, sulfadoxine/pyrimethamine; WT, wild type._
+
 RSAs, used to measure in vitro ART susceptibility, revealed a wide range of mean survival values for K13 mutant lines. For 3D7 parasites, the highest RSA survival rates were observed with 3D7R561H parasites, which averaged 6.6% RSA survival. For the 3D7M579I and 3D7C580Y lines, mean RSA survival rates were both 4.8%, a three- to fourfold increase relative to the 3D7WT line. No elevated RSA survival was seen in a 3D7 control line (3D7ctrl) that expresses only the silent shield mutations used at the guide RNA (gRNA) cut site (Figure 2A; Figure 2—source data 1). Western blots performed on tightly synchronized ring-stage parasites revealed an ~30% reduction in K13 protein expression levels in these three K13 mutant lines relative to the parental 3D7WT line (Figure 2—figure supplement 1; Figure 2—figure supplement 1—source data 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig2-v3.jpg)
+
+**Figure 2.:** (A–D) RSA survival rates for (A) 3D7 (Africa), (B) F32 (Tanzania), (C) UG659 (Uganda), or (D) UG815 (Uganda) K13 wild-type parental lines and CRISPR/Cas9-edited K13 R561H, M579I, or C580Y mutant clones. Unedited parental lines are described in Table 1 and Supplementary file 4. For 3D7, we also included a K13 wild-type control (ctrl) line harboring silent shield mutations at the K13 gRNA cut site. Results show the percentage of early ring-stage parasites (0–3 hr post invasion) that survived a 6 hr pulse of 700 nM DHA, relative to DMSO-treated parasites assayed in parallel. Percent survival values are shown as means ± SEM (detailed in Figure 2—source data 1). Results were obtained from three to eight independent experiments, each performed in duplicate. p Values were determined by unpaired t tests and were calculated for K13 mutant lines relative to their isogenic wild-type lines. ** p<0.01; *** p<0.001; **** p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative Western blot of parasite extracts probed with an anti-K13 monoclonal antibody (clone E9) that recognizes full-length K13 (~85 kDa) and lower molecular weight bands, presumably N-terminal degradation products, as previously reported (Gnädig et al., 2020). Tightly synchronized K13 wild-type, R561H, M579I, or C580Y 3D7 parasites were harvested as 0–6 hr ring stages. ERD2 was used as a loading control. Experiments were performed on three independent occasions. (B) Quantification of K13 mutant protein levels versus K13 wild-type protein levels across independent replicates, performed using ImageJ, with all protein levels normalized to the ERD2 loading control. Western blots reveal reduced levels of K13 protein in the three mutant lines relative to wild-type 3D7 parasites. Results are shown as means ± SEM. WT, wild-type.
 
 Interestingly, for F32 parasites, the introduction of K13 mutations yielded no significant increases in RSA survival, with survival rates in the range of 0.3% to 0.5% for lines expressing R561H, M579I, C580Y, or wild-type K13. (Figure 2B). Previously we reported that introduction of M476I into F32 parasites resulted in a modest gain of resistance (mean survival of 1.7%), while this same mutation conferred RSA survival levels of ~10% in edited Dd2 parasites (Straimer et al., 2015). These data suggest that while K13 mutations differ substantially in their impact on ART susceptibility, there is an equally notable contribution of the parasite genetic background.
 
 We next introduced M579I and C580Y into the cloned Ugandan isolates UG659 and UG815. Editing of both mutations into UG659 yielded moderate RSA survival rates (means of 6.3% and 4.7% for UG659M579I or UG659C580Y respectively, vs 1.0% for UG659WT; Figure 2C). These values resembled our results for 3D7. Strikingly, introducing K13 M579I or C580Y into UG815 yielded the highest rates of in vitro resistance, with mean survival levels reaching ~12% in both UG815M579I and UG815C580Y. These results were confirmed in a second independent clone of UG815M579I (Figure 2D). M579I and C580Y also conferred equivalent levels of resistance in edited Dd2 parasites (RSA survival rates of 4.0% and 4.7%, respectively; Figure 2—source data 1). These data show that mutant K13-mediated ART resistance in African parasites can be achieved in some strains at levels comparable to or above those seen in SE Asian parasites.
 
-## K13 C580Y, M579I, and R561H mutations are associated with variable in vitro fitness costs in African parasites
+### K13 C580Y, M579I, and R561H mutations are associated with variable in vitro fitness costs in African parasites
 
 To examine the relationship between resistance and fitness in African parasites harboring K13 mutations, we developed an in vitro fitness assay that uses quantitative real-time PCR (qPCR) for allelic discrimination. Assays were conducted by pairing K13 wild-type lines (3D7, F32, UG659, and UG815) with their isogenic K13 edited R561H, M579I, or C580Y counterparts.
 
@@ -111,17 +244,25 @@ Results showed that the K13 M579I and C580Y mutations each conferred significant
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig3-v3.jpg)
 
-**Figure 3.:** (A–D) Percentages of mutant alleles relative to the wild-type allele over time in (A) 3D7, (B) F32, (C) UG659, and (D) UG815 parasite cultures in which K13 mutant clones were co-cultured at 1:1 starting ratios with isogenic K13 wild-type controls over a period of 36 days. Results, shown as means ± SEM, were obtained from two to five independent experiments, each performed in duplicate. Values are provided in Figure 3—source data 1. (E) The percent reduction in growth rate per 48 hr generation, termed the fitness cost, is presented as mean ± SEM for each mutant line relative to its isogenic wild-type comparator. (F) Fitness costs for mutant lines and isogenic wild-type comparators plotted relative to RSA survival values for the same lines.  Figure 3—source data 1.K13 edited African parasite lines and controls.
+**Figure 3.:** (A–D) Percentages of mutant alleles relative to the wild-type allele over time in (A) 3D7, (B) F32, (C) UG659, and (D) UG815 parasite cultures in which K13 mutant clones were co-cultured at 1:1 starting ratios with isogenic K13 wild-type controls over a period of 36 days. Results, shown as means ± SEM, were obtained from two to five independent experiments, each performed in duplicate. Values are provided in Figure 3—source data 1. (E) The percent reduction in growth rate per 48 hr generation, termed the fitness cost, is presented as mean ± SEM for each mutant line relative to its isogenic wild-type comparator. (F) Fitness costs for mutant lines and isogenic wild-type comparators plotted relative to RSA survival values for the same lines.
 
-## The K13 C580Y mutation has swept rapidly across Cambodia, displacing other K13 variants
+### The K13 C580Y mutation has swept rapidly across Cambodia, displacing other K13 variants
 
 We next examined the spatio-temporal distribution of K13 alleles in Cambodia, the epicenter of ART resistance in SE Asia. In total, we analyzed K13 propeller domain sequences from 3327 parasite isolates collected from fourteen Cambodian provinces in the western, northern, eastern, and southern regions (Figure 4—figure supplement 1). Samples were collected between 2001 and 2017, except for the southern region where sample collection was initiated in 2010. A total of 1412 samples (42%) were obtained and sequenced during the period from 2015–2017 and have not previously been published. Earlier samples were reported in Ariey et al., 2014; Ménard et al., 2016. In sum, 19 nonsynonymous polymorphisms in K13 were identified across all regions and years. Of these, only three were present in >10 samples: Y493H (n=83), R539T (n=87), and C580Y (n=1915). Each of these mutations was previously shown to confer ART resistance in vitro (Straimer et al., 2015). Rarer mutations included A418V, I543T, P553L, R561H, P574L, and D584V (Figure 4; Figure 4—source data 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig4-v3.jpg)
+
+**Figure 4.:** (A–D) Stacked bar charts representing the percentages of sequenced samples expressing the K13 wild-type allele or individual variants, calculated based on the total number of samples (listed in parentheses) for a given period. Sample collection was segregated into four regions in Cambodia (detailed in Figure 4—figure supplement 1). All K13 mutant samples harbored a single non-synonymous nucleotide polymorphism. Mutations and numbers of Cambodian samples sequenced per region/year, including prior citations as appropriate, are listed in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Map depicting the fourteen provinces and four regions of Cambodia (western, northern, eastern, and southern) in which samples were collected between 2001 and 2017 for K13 genotyping. Genotyping data are presented in Figure 4.
 
 This analysis revealed a significant proportion of K13 wild-type parasites in the early 2000s, particularly in northern and eastern Cambodia, where 96% of isolates in 2001–2002 were wild type (Figure 4). In western Cambodia, where ART resistance first emerged (Dondorp et al., 2009; Noedl et al., 2009), the wild-type allele percentage in 2001–2002 had already fallen to 56%. This is striking given that delayed parasite clearance following ACT or artesunate treatment was first documented in 2008–2009 (Noedl et al., 2008; Noedl et al., 2009).
 
 In all four regions, the frequency of the wild-type allele declined substantially over time and the diversity of mutant alleles contracted, with nearly all wild-type and non-K13 C580Y mutant parasites being replaced by parasites harboring the C580Y mutation (Figure 4). This effect was particularly pronounced in the western and the southern regions, where the prevalence of C580Y in 2016–2017 effectively attained 100%, increasing from 22% and 58% in the initial sample sets, respectively (Figure 4A,D). In northern and eastern Cambodia, C580Y also outcompeted all other mutant alleles; however, 19–25% of parasites remained K13 wild type in 2016–2017 (Figure 4B,C). These data show rapid dissemination of K13 C580Y across Cambodia.
 
-## SE Asian K13 mutations associated with delayed parasite clearance differ substantially in their ability to confer artemisinin resistance in vitro
+### SE Asian K13 mutations associated with delayed parasite clearance differ substantially in their ability to confer artemisinin resistance in vitro
 
 Given that most K13 polymorphisms present in the field have not previously been characterized in vitro, we selected a set of mutations to test by gene editing, namely E252Q, F446I, P553L, R561H, and P574L. The positions of these residues are highlighted in Supplementary file 3. F446I is the predominant mutation in Myanmar (Imwong et al., 2020). P553L, R561H, and P574L have each been shown to have multiple independent origins throughout SE Asia (Ménard et al., 2016) and were identified at low frequencies in our sequencing study in Cambodia (Figure 4). Lastly, the E252Q mutation was formerly prevalent on the Thai-Myanmar border, and, despite its location upstream of the beta-propeller domain, has been associated with delayed parasite clearance in vivo (Anderson et al., 2017; Cerqueira et al., 2017; WWARN K13 Genotype-Phenotype Study Group, 2019).
 
@@ -129,25 +270,41 @@ Zinc-finger nuclease- or CRISPR/Cas9-based gene-edited lines expressing K13 E252
 
 Both the P553L and R561H mutations yielded mean RSA survival rates comparable to C580Y (4.6% or 4.3% RSA survival for Dd2P553L or Dd2R561H, respectively, vs 4.7% for Dd2C580Y; Figure 5A; Figure 5—source data 1). F446I and P574L showed only modest increases in survival relative to the wild-type parental line (2.0% and 2.1% for Dd2F446I and Dd2P574L, respectively, vs 0.6% for Dd2WT). No change in RSA survival relative to Dd2WT was observed for the Dd2E252Q line. The resistant benchmark Dd2R539T showed a mean RSA survival level of 20.0%, consistent with earlier reports of this mutation conferring high-grade ART resistance in vitro (Straimer et al., 2015; Straimer et al., 2017).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig5-v3.jpg)
+
+**Figure 5.:** (A, B) RSA survival rates for Dd2 (Indochina) and Cam3.II (Cambodia) P. falciparum parasites expressing wild-type or mutant K13. Gene-edited parasites were generated using CRISPR/Cas9 or zinc-finger nucleases. Control (ctrl) lines express silent shield mutations at the K13 gRNA cut site. Parental lines are described in Table 1 and Supplementary file 4. Results show the percentages of early ring-stage parasites (0–3 hr post invasion) that survived a 6 hr pulse of 700 nM DHA, relative to DMSO-treated parasites processed in parallel. Percent survival values are shown as means ± SEM (detailed in Figure 5—source data 1). Results were obtained from three to thirteen independent experiments, each performed in duplicate. p Values were determined by unpaired t tests and were calculated for mutant lines relative to the isogenic line expressing wild-type K13. *** p<0.001; **** p<0.0001. (C) Percent reductions in growth rate per 48 hr generation, expressed as fitness costs, for Dd2 mutant lines relative to the Dd2WT line. Fitness costs were determined by co-culturing the Dd2eGFP reporter line with either the Dd2 K13 wild-type parental line (Dd2WT) or gene-edited K13 mutant lines. Co-cultures were maintained for 20 days and percentages of eGFP+ parasites were determined by flow cytometry (see Figure 5—source data 2 and Figure 5—figure supplement 1). Fitness costs were initially calculated relative to the Dd2eGFP reporter line (Figure 5—figure supplement 1) and then normalized to the Dd2WT line. Mean ± SEM values were obtained from three independent experiments, each performed in triplicate. (D) Fitness costs for K13 mutant lines relative to the Dd2WT line plotted against their corresponding RSA survival values.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Percentages of eGFP+ parasites over time in parasite cultures in which the eGFP-expressing Dd2 line was co-cultured in 1:1 mixtures with either the Dd2 K13 WT parental line (Dd2WT) or individual Dd2 gene-edited K13 mutant lines. Co-cultures were maintained over a period of 20 days, and the percentage of eGFP+ parasites in each mixture was determined by flow cytometry. Data are shown as means ± SEM. Results were obtained from three independent experiments, each performed in triplicate. (B) Percent reductions in growth rate per 48 hr generation, denoted as fitness costs, for Dd2WT and K13 edited mutant lines relative to the Dd2eGFP line. Results are shown as means ± SEM.
+
 In contrast to Dd2, editing of the F446I, P553L, and P574L mutations into Cambodian Cam3.IIWT parasites did not result in statistically significant increases in survival rates relative to the K13 wild-type line, in part because the background survival rate of Cam3.IIWT was higher than for Dd2WT. All survival rates were <3%, contrasting with the Cam3.IIR539T parental strain that expresses the R539T mutation (20.4% mean survival; Figure 5B; Figure 5—source data 1). The E252Q mutation did not result in elevated RSA survival in the Cam3.II background, a result also observed with Dd2. Nonetheless, ART resistance was apparent upon introduction of the R561H mutation into Cam3.IIWT parasites, with mean survival rates for Cam3.IIR561H exceeding those for the Cam3.IIC580Y line (13.2% vs 10.0%, respectively). No elevated survival was seen in the Cam3.IIctrl line expressing only the silent shield mutations used at the gRNA cut site.
 
-## SE Asian K13 mutations do not impart a significant fitness impact on Dd2 parasites
+### SE Asian K13 mutations do not impart a significant fitness impact on Dd2 parasites
 
 Prior studies with isogenic gene-edited SE Asian lines have shown that certain K13 mutations can exert fitness costs, as demonstrated by reduced intra-erythrocytic asexual blood stage parasite growth (Straimer et al., 2017; Nair et al., 2018). To determine the fitness impact of the K13 mutations described above, we used an eGFP-based parasite competitive growth assay (Ross et al., 2018). For these experiments, Dd2E252Q, Dd2F446I, Dd2P553L, Dd2R561H, or Dd2P574L parasites were co-cultured with a K13 wild-type eGFP-positive (eGFP+) Dd2 reporter line at starting ratios of 1:1. Proportions of eGFP+ parasites were then assessed every two days by flow cytometry. As controls, we also included the Dd2WT, Dd2bsm, and Dd2C580Y lines. These data provided evidence of a minimal growth impact with the F446I, P553L, and C580Y mutations. In contrast, E252Q, R561H, and P574L resulted in greater fitness costs when compared to Dd2WT parasites (Figure 5C; Figure 5—figure supplement 1; Figure 5—source data 2). Both the C580Y and P553L mutations yielded elevated RSA survival and minimal fitness costs in the Dd2 strain, providing optimal traits for dissemination (Figure 5D). We note that all fitness costs in K13 edited Dd2 parasites were considerably lower than those observed in the majority of the K13 edited African lines described above (Figure 3).
 
-## Strain-dependent genetic background differences significantly impact RSA survival rates in culture-adapted Thai isolates
+### Strain-dependent genetic background differences significantly impact RSA survival rates in culture-adapted Thai isolates
 
 Given the earlier abundance of the R561H and E252Q alleles in border regions of Thailand and Myanmar, we next tested the impact of introducing these mutations into five K13 wild-type Thai isolates (Thai1-5). For comparison, we also edited C580Y into several of these same isolates. These studies revealed a major contribution of the parasite genetic background in dictating the level of mutant K13-mediated ART resistance, as exemplified by the C580Y mutation, which yielded mean survival rates ranging from 2.1% to 15.4% in edited parasites. Trends observed for individual mutations were maintained across strains, with the R561H mutation consistently yielding moderate to high in vitro resistance, at or above the level of C580Y. Consistent with our Dd2 results, E252Q edited parasites did not display significant increases in survival rates relative to isogenic K13 wild-type lines (Figure 6A–E; Figure 6—source data 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig6-v3.jpg)
 
-**Figure 6.:** RSA survival rates for (A–E) K13 edited Thai isolates and (F) K13 E252Q unedited Thai lines, shown as means ± SEM (detailed in Figure 6—source data 1). Results were obtained from three to seven independent experiments, each performed in duplicate. p Values were determined by unpaired t tests and were calculated for mutant lines relative to the isogenic line expressing wild-type K13. * p<0.05; ** p<0.01; *** p<0.001.  Figure 6—source data 1.K13 edited Thai parasites and controls.
+**Figure 6.:** RSA survival rates for (A–E) K13 edited Thai isolates and (F) K13 E252Q unedited Thai lines, shown as means ± SEM (detailed in Figure 6—source data 1). Results were obtained from three to seven independent experiments, each performed in duplicate. p Values were determined by unpaired t tests and were calculated for mutant lines relative to the isogenic line expressing wild-type K13. * p<0.05; ** p<0.01; *** p<0.001.
 
 We also profiled two unedited culture-adapted Thai isolates (Thai6E252Q and Thai7E252Q), which express the K13 E252Q mutation that occurs upstream of the propeller domain. Notably, both lines exhibited mean RSA survival rates above the 1% threshold for ART sensitivity (2.7% for Thai6E252Q and 5.1% for Thai7E252Q; Figure 6F). These data suggest that additional genetic factors present in these two Thai isolates are required for E252Q to manifest ART resistance.
 
-## Mutations in P. falciparum multidrug resistance protein 2 and ferredoxin do not modulate resistance to artemisinin or parasite fitness in vitro
+### Mutations in P. falciparum multidrug resistance protein 2 and ferredoxin do not modulate resistance to artemisinin or parasite fitness in vitro
 
 In a prior genome-wide association study of SE Asian parasites, K13-mediated ART resistance was associated with the D193Y and T484I mutations in the ferredoxin (fd) and multidrug resistance protein 2 (mdr2) genes, respectively (Miotto et al., 2015). To directly test the impact of these mutations in parasite resistance and fitness, we applied CRISPR/Cas9 editing (Supplementary file 6) to revert the fd D193Y and mdr2 T484I mutations to their wild-type sequences. These experiments were performed in the Cambodian K13 C580Y strains RF7C580Y and Cam3.IIC580Y. Isogenic RF7C580Y parasites expressing either the mutant or wild-type fd residue at position 193 showed no difference in RSA survival rates, either at 700 nM (averaging ~27%), or across a range of DHA concentrations down to 1.4 nM (Figure 7A,C; Figure 7—figure supplement 1; Figure 7—source data 1). Editing fd D193Y into the recombinant CamWTC580Y line that expresses K13 C580Y (Straimer et al., 2015) also had no impact on RSA survival (mean RSA survival rate of 11% vs 12.5%). Likewise, Cam3.IIC580Y parasites maintained the same rates of in vitro RSA survival (means ~19–22%) irrespective of their mdr2 allele. Silent shield mutations had no impact on RSA survival rates for either fd or mdr2. eGFP-based fitness assays initiated at different starting ratios of the Dd2 eGFP+ reporter line and fd or mdr2 edited RF7C580Y or Cam3.IIC580Y lines revealed no changes in growth rates for mutant lines compared with their wild-type controls (Figure 7B,D; Figure 7—figure supplement 1; Figure 7—source data 2 and 3). These data suggest that the fd D193Y and mdr2 T484I mutations may be markers of ART-resistant founder populations, but themselves do not contribute directly to ART resistance or augment parasite fitness.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig7-v3.jpg)
+
+**Figure 7.:** RSA survival rates for (A) RF7C580Y parasite lines expressing the fd variant D193Y (parent), this variant plus silent shield mutations (edited control), or fd D193 (edited revertant), and (C) Cam3.IIC580Y parasite lines expressing the mdr2 variant T484I (parent), this variant plus silent shield mutations (edited control), or mdr2 T484 (edited revertant). Parental lines are described in Table 1 and Supplementary file 4. Mean ± SEM survival rates were generated from three independent experiments, each performed in duplicate. (B, D) In vitro eGFP-based fitness assays performed with (B) fd and (D) mdr2 RF7C580Y or Cam3.IIC580Y edited lines, respectively. Competitive growth assays were seeded with individual lines plus the Dd2eGFP+ reporter line at starting ratios of 10:1. Results show percentages of eGFP+ parasites over time. Co-cultures were maintained over a period of 24 days (fd edited lines) or 30 days (mdr2 edited lines), and percentages of eGFP+ parasites were determined by flow cytometry. Results were obtained from two to three independent experiments, each performed in triplicate, and are shown as means ± SEM. All values are provided in Figure 7—source data 1, 2, 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66277/elife-66277-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B) Ring-stage survival assays (RSAs) performed on fd and mdr2 edited lines and parental controls (RF7C580Y and Cam3.IIC580Y, respectively). Results show RSA survival rates across a range of DHA concentrations. Survival rates were calculated relative to DMSO-treated parasites processed in parallel. Results were obtained from three independent experiments, each performed in duplicate. Data are shown as means ± SEM. (C, D) In vitro eGFP-based fitness assays performed with (C) fd and (D) mdr2 RF7C580Y or Cam3.IIC580Y edited lines, respectively. Competitive growth assays were seeded with individual lines plus the Dd2eGFP+ reporter line at starting ratios of 100:1. Results show percentages of eGFP+ parasites over time. Co-cultures were maintained over a period of 24 days (fd edited lines) or 30 days (mdr2 edited lines) and percentages of eGFP+ parasites were determined by flow cytometry. Results were obtained from two to three independent experiments, each performed in triplicate, and are shown as means ± SEM.
 
 ## Discussion
 
@@ -169,31 +326,293 @@ Another impediment to the dissemination of ART resistance in Africa is the conti
 
 ## Materials and methods
 
-## Sample collection and K13 genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Plasmodium falciparum 3D7 strain)</td>
+      <td>Kelch13 (K13)</td>
+      <td>PlasmoDB</td>
+      <td>PF3D7_1343700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Plasmodium falciparum 3D7 strain)</td>
+      <td>Ferredoxin (fd)</td>
+      <td>PlasmoDB</td>
+      <td>PF3D7_1318100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Plasmodium falciparum 3D7 strain)</td>
+      <td>Multidrug resistance protein 2 (mdr2)</td>
+      <td>PlasmoDB</td>
+      <td>PF3D7_1447900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>3D7 clone A10 (3D7WT)</td>
+      <td>D. Goldberg, Washington University School of Medicine, St. Louis, MO, USA</td>
+      <td></td>
+      <td>see Table 1 and Supplementary file 4 for additional details on all P. falciparum strains employed herein</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>F32-TEM (F32WT)</td>
+      <td>F. Benoit-Vical, Université de Toulouse, Toulouse, France Ariey et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>UG659 (UG659WT)</td>
+      <td>P. Rosenthal, University of California, San Francisco, CA, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>UG815 (UG815WT)</td>
+      <td>P. Rosenthal, University of California, San Francisco, CA, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Dd2 (Dd2WT)</td>
+      <td>The Malaria Research and Reference Reagent Resource Center (MR4), BEI Resources</td>
+      <td>MRA-156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Cam3.II (Cam3.IIR539T)</td>
+      <td>R. Fairhurst, NIAID, NIH, Bethesda, MD, USA Straimer et al., 2015</td>
+      <td>PH0306-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>CamWT</td>
+      <td>R. Fairhurst, NIAID, NIH, Bethesda, MD, USA Straimer et al., 2015</td>
+      <td>PH0164-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>RF7 (RF7C580Y)</td>
+      <td>R. Fairhurst, NIAID, NIH, Bethesda, MD, USA Ross et al., 2018</td>
+      <td>PH1008-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Thai1WT</td>
+      <td>T. Anderson, Texas Biomedical Research Institute, San Antonio, TX, USA</td>
+      <td>TA32A2A4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Thai2WT</td>
+      <td>T. Anderson, Texas Biomedical Research Institute, San Antonio, TX, USA</td>
+      <td>TA50A2B2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Thai3WT</td>
+      <td>T. Anderson, Texas Biomedical Research Institute, San Antonio, TX, USA</td>
+      <td>TA85R1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Thai4WT</td>
+      <td>T. Anderson, Texas Biomedical Research Institute, San Antonio, TX, USA</td>
+      <td>TA86A3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Thai5WT</td>
+      <td>T. Anderson, Texas Biomedical Research Institute, San Antonio, TX, USA</td>
+      <td>NHP-01334-6B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Thai6E252Q</td>
+      <td>T. Anderson, Texas Biomedical Research Institute, San Antonio, TX, USA</td>
+      <td>NHP4076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>Thai7E252Q</td>
+      <td>T. Anderson, Texas Biomedical Research Institute, San Antonio, TX, USA</td>
+      <td>NHP4673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>HST08</td>
+      <td>Takara</td>
+      <td>Cat. #636766</td>
+      <td>Stellar Competent Cells</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Plasmodium falciparum)</td>
+      <td>Transgenic parasite lines</td>
+      <td>This study and Straimer et al., 2015</td>
+      <td>See Supplementary file 5</td>
+      <td>Available from D. Fidock upon request</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning Plus kit</td>
+      <td>Takara</td>
+      <td>Cat. #638909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiFast Multiplex PCR Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #204654</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Oligonucleotides</td>
+      <td>This study</td>
+      <td>See Supplementary file 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagents</td>
+      <td>Plasmids</td>
+      <td>This study</td>
+      <td>See Supplementary file 8</td>
+      <td>Available from D. Fidock upon request</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>qPCR primers and probes</td>
+      <td>This study</td>
+      <td>See Supplementary file 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-K13 (P. falciparum) (Mouse monoclonal)</td>
+      <td>I. Trakht, Columbia University Medical Center, New York, NY, USA Gnädig et al., 2020</td>
+      <td></td>
+      <td>Antibody clone E9 WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERD2 (P. falciparum) (Rabbit polyclonal)</td>
+      <td>MR4, BEI Resources</td>
+      <td>MRA-1</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>StarBright Blue 700 goat anti-mouse</td>
+      <td>Bio-Rad</td>
+      <td>12004158</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>StarBright Blue 520 goat anti-rabbit</td>
+      <td>Bio-Rad</td>
+      <td>12005869</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4–20% Criterion TGX Precast Protein Gel</td>
+      <td>Bio-Rad</td>
+      <td>5671093</td>
+      <td>Used with recommended buffers, also purchased from Bio-Rad</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbenicillin disodium salt</td>
+      <td>Sigma</td>
+      <td>C1389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WR99210</td>
+      <td>Jacobus Pharmaceuticals</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydroartemisinin (DHA)</td>
+      <td>Sigma</td>
+      <td>D7439</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism Version 9</td>
+      <td>GraphPad Software, San Diego, CA, USA</td>
+      <td></td>
+      <td>graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>NIH, Bethesda, MD, USA</td>
+      <td></td>
+      <td>imagej.nih.gov</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample collection and K13 genotyping
 
 Samples were obtained as blood-spot filter papers from patients seeking treatment at sites involved in national surveys of antimalarial drug resistance, or patients enrolled in therapeutic efficacy studies, or asymptomatic participants enrolled in surveillance programs. Collection details for African and Cambodian samples are provided in Figure 1—source data 1 and Figure 4—source data 1, respectively. Samples were processed at the Pasteur Institute in Paris or the Pasteur Institute in Cambodia, as detailed in Supplementary file 1. These investigators vouch for the accuracy and completeness of the molecular data. DNA was extracted from dried blood spots using QIAmp Mini kits, as described previously (Ménard et al., 2016). A nested PCR was performed on each sample to amplify the K13 propeller domain sequence, corresponding to codons 440–680. PCR products were sequenced using internal primers and electropherograms were analyzed on both strands using the Pf3D7_1343700 3D7 sequence as the wild-type reference. Quality controls included adding six blinded quality-control samples to each 96-well sequencing plate prepared from samples from each in-country partner, and independently retesting randomly selected blood samples. Isolates with mixed alleles were considered to be mutant for the purposes of estimating mutation frequencies.
 
-## P. falciparum parasite in vitro culture
+### P. falciparum parasite in vitro culture
 
 P. falciparum asexual blood-stage parasites were cultured in human erythrocytes at 3% hematocrit in RPMI-1640 medium supplemented with 2 mM L-glutamine, 50 mg/L hypoxanthine, 25 mM HEPES, 0.21% NaHCO3, 10 mg/L gentamycin, and 0.5% w/v Albumax II (Invitrogen). Parasites were maintained at 37°C in 5% O2, 5% CO2, and 90% N2. The geographic origins and years of culture adaptation for lines employed herein are described in Supplementary file 4. Parasite lines were authenticated by genotyping resistance genes and were screened by PCR for Mycoplasma every 3–6 months.
 
-## Whole-genome sequencing of parental lines
+### Whole-genome sequencing of parental lines
 
 To define the genome sequences of P. falciparum lines used for transfection, we lysed parasites in 0.05% saponin, washed them with 1×PBS, and purified genomic DNA (gDNA) using the QIAamp DNA Blood Midi Kit (Qiagen). DNA concentrations were quantified by NanoDrop (Thermo Scientific) and Qubit (Invitrogen) prior to sequencing. 200 ng of gDNA was used to prepare sequencing libraries using the Illumina Nextera DNA Flex library prep kit with dual indices. Samples were multiplexed and sequenced on an Illumina MiSeq to obtain 300 bp paired-end reads at an average of 50× depth of coverage. Sequence reads were aligned to the P. falciparum 3D7 reference genome (PlasmoDB version 36) using Burrow-Wheeler Alignment. PCR duplicates and unmapped reads were filtered out using Samtools and Picard. Reads were realigned around indels using GATK RealignerTargetCreator, and base quality scores were recalibrated using GATK BaseRecalibrator. GATK HaplotypeCaller (version 3.8) was used to identify all single nucleotide polymorphisms (SNPs). SNPs were filtered based on quality scores (variant quality as function of depth QD >1.5, mapping quality >40, min base quality score >18) and read depth (>5) to obtain high-quality SNPs, which were annotated using snpEFF. Integrated Genome Viewer was used to visually verify the presence of SNPs. BIC-Seq was used to check for copy number variations using the Bayesian statistical model (Xi et al., 2011). Copy number variations in highly polymorphic surface antigens and multi-gene families were removed as these are prone to stochastic changes during in vitro culture.
 
 Whole-genome sequencing data were used to determine the genotypes of the antimalarial drug resistance loci pfcrt, mdr1, dhfr, and dhps (Haldar et al., 2018). We also genotyped fd, arps10, mdr2, ubp1, and ap-2μ, which were previously associated with ART resistance (Henriques et al., 2014; Miotto et al., 2015; Cerqueira et al., 2017; Adams et al., 2018). These results are described in Supplementary file 4.
 
-## Cloning of K13, fd, and mdr2 plasmids
+### Cloning of K13, fd, and mdr2 plasmids
 
 Zinc-finger nuclease-meditated editing of select mutations in the K13 locus was performed as previously described (Straimer et al., 2015). CRISPR/Cas9 editing of K13 mutations was achieved using the pDC2-cam-coSpCas9-U6-gRNA-hdhfr all-in-one plasmid that contains a P. falciparum codon-optimized Cas9 sequence, a human dihydrofolate reductase (hdhfr) gene expression cassette (conferring resistance to WR99210) and restriction enzyme insertion sites for the guide RNA (gRNA) and donor template (White et al., 2019). A K13 propeller domain-specific gRNA was introduced into this vector at the BbsI restriction sites using the primer pair p1+p2 (Supplementary file 7) using T4 DNA ligase (New England BioLabs). Oligos were phosphorylated and annealed prior to cloning. A donor template consisting of a 1.5 kb region of the K13 coding region including the entire propeller domain was amplified using the primer pair p3+p4 and cloned into the pGEM T-easy vector system (Promega). This donor sequence was subjected to site-directed mutagenesis in the pGEM vector to introduce silent shield mutations at the Cas9 cleavage site using the primer pair p5+p6, and to introduce allele-specific mutations using primer pairs (p7 to p20). K13 donor sequences were amplified from the pGEM vector using the primer pair p21+p22 and sub-cloned into the pDC2-cam-coSpCas9-U6-gRNA-hdhfr plasmid at the EcoRI and AatII restriction sites by In-Fusion Cloning (Takara). Final plasmids (see Supplementary file 8) were sequenced using primers p23 to p25. A schematic showing the method of K13 plasmid construction can be found in Supplementary file 2. Both our customized zinc-finger nuclease and CRISPR/Cas9 approaches generated the desired amino acid substitutions without the genomic integration of any plasmid sequences or any additional amino acid changes in the K13 locus, and thus provide fully comparable data.
 
 CRISPR/Cas9 editing of fd and mdr2 was performed using a separate all-in-one plasmid, pDC2-cam-Cas9-U6-gRNA-hdhfr, generated prior to the development of the codon-optimized version used above for K13 (Lim et al., 2016). Cloning was performed as for K13, except for gRNA cloning that was performed using In-Fusion cloning (Takara) rather than T4 ligase. Cloning of gRNAs was performed using primer pair p29+p30 for fd and p42+p43 for mdr2. Donor templates were amplified and cloned into the final vector using the primer pairs p31+p32 for fd and p44+p45 for mdr2. Site-directed mutagenesis was performed using the allele-specific primer pairs p33+p34 or p35+p36 for fd, and p46+p47 or p48+p49 for mdr2. All final plasmids (for both fd and mdr2, see Supplementary file 8) were sequenced using the primer pair p37+p38 (Supplementary file 7). Schematic representations of final plasmids are shown in Supplementary file 6.
 
-## Generation of K13, fd, and mdr2 gene-edited parasite lines
+### Generation of K13, fd, and mdr2 gene-edited parasite lines
 
 Gene-edited lines were generated by electroporating ring-stage parasites at 5–10% parasitemia with 50 μg of purified circular plasmid DNA resuspended in Cytomix. Transfected parasites were selected by culturing in the presence of WR99210 (Jacobus Pharmaceuticals) for six days post electroporation. Parental lines harboring 2–3 mutations in the P. falciparum dhfr gene were exposed to 2.5 nM WR99210, while parasites harboring four dhfr mutations were selected under 10 nM WR99210 (see Supplementary file 4 for dhfr genotypes of transfected lines). Parasite cultures were monitored for recrudescence by microscopy for up six weeks post electroporation. To test for successful editing, the K13 locus was amplified directly from parasitized whole blood using the primer pair p26+p27 (Supplementary file 7) and the MyTaq Blood-PCR Kit (Bioline). Primer pairs p39+p40 and p50+p51 were used to amplify fd and mdr2, respectively. PCR products were submitted for Sanger sequencing using the PCR primers as well as primer p28 in the case of K13, p41 (fd) or p52 (mdr2). Bulk-transfected cultures showing evidence of editing by Sanger sequencing were cloned by limiting dilution. All gene-edited transgenic lines generated herein are described in Supplementary file 5.
 
-## Parasite synchronization, ring-stage survival assays (RSAs), and flow cytometry
+### Parasite synchronization, ring-stage survival assays (RSAs), and flow cytometry
 
 Synchronized parasite cultures were obtained by exposing predominantly ring-stage cultures to 5% D-Sorbitol (Sigma) for 15 min at 37°C to remove mature parasites. After 36 hr of subsequent culture, multinucleated schizonts were purified over a density gradient consisting of 75% Percoll (Sigma). Purified schizonts were incubated with fresh RBCs for 3 hr, and early rings (0–3 hr post invasion; hpi) were treated with 5% D-Sorbitol to remove remaining schizonts.
 
@@ -201,11 +620,11 @@ In vitro RSAs were conducted as previously described, with minor adaptations (St
 
 Flow cytometry was performed on an BD Accuri C6 Plus cytometer with a HyperCyt plate sampling attachment (IntelliCyt), or on an iQue Screener Plus cytometer (Sartorius). Cells were stained with 1×SYBR Green (ThermoFisher) and 100 nM MitoTracker DeepRed (ThermoFisher) for 30 min and diluted in 1×PBS prior to sampling. Percent parasitemia was determined as the percentage of MitoTracker-positive and SYBR Green-positive cells.
 
-## Western blot analysis of K13 expression levels in edited lines
+### Western blot analysis of K13 expression levels in edited lines
 
 Western blots were performed with lysates from tightly synchronized rings harvested 0–6 hr post invasion. Parasite cultures were washed twice in ice-cold 1× phosphate-buffered saline (PBS), and parasites were isolated by treatment with 0.05% saponin in PBS. Released parasites were lysed in 4% SDS, 0.5% Triton X-100 and 0.5% PBS supplemented with 1× protease inhibitors (Halt Protease Inhibitors Cocktail, ThermoFisher). Samples were centrifuged at 14,000 rpm for 10 min to pellet cellular debris. Supernatants were collected and protein concentrations were determined using the DC protein assay kit (Bio-Rad). Laemmli Sample Buffer (Bio-Rad) was added to lysates and samples were denatured at 90°C for 10 min. Proteins were electrophoresed on precast 4–20% Tris-Glycine gels (Bio-Rad) and transferred onto nitrocellulose membranes. Western blots were probed with a 1:1000 dilution of primary antibodies to K13 (Gnädig et al., 2020) or the loading control ERD2 (BEI Resources), followed by a 1:200 dilution of fluorescent StarBright secondary antibodies (Bio-Rad). Western blots were imaged on a ChemiDoc system (Bio-Rad) and band intensities quantified using ImageJ.
 
-## TaqMan allelic discrimination real-time (quantitative) PCR-based fitness assays
+### TaqMan allelic discrimination real-time (quantitative) PCR-based fitness assays
 
 Fitness assays with African K13 edited parasite lines were performed by co-culturing isogenic wild-type unedited and mutant edited parasites in 1:1 ratios. Assays were initiated with tightly synchronized trophozoites. Final culture volumes were 3 mL. Cultures were maintained in 12-well plates and monitored every four days over a period of 36 days (18 generations) by harvesting at each time point a fraction of each co-culture for saponin lysis. gDNA was then extracted using the QIAamp DNA Blood Mini Kit (Qiagen). The percentage of the wild-type or mutant allele in each sample was determined in TaqMan allelic discrimination real-time PCR assays. TaqMan primers (forward and reverse) and TaqMan fluorescence-labeled minor groove binder probes (FAM or HEX, Eurofins) are described in Supplementary file 9. Probes were designed to specifically detect the K13 R561H, M579I, or C580Y propeller mutations. The efficiency and sensitivity of the TaqMan primers was assessed using standard curves comprising 10-fold serially diluted templates ranging from 10 ng to 0.001 ng. Robustness was demonstrated by high efficiency (88–95%) and R2 values (0.98–1.00). The quantitative accuracy in genotype calling was assessed by performing multiplex qPCR assays using mixtures of wild-type and mutant plasmids in fixed ratios (0:100, 20:80, 40:60, 50:50, 60:40, 80:20, 100:0). Triplicate data points clustered tightly, indicating high reproducibility in the data across the fitted curve (R2 = 0.89–0.91).
 
@@ -213,10 +632,16 @@ Purified gDNA from fitness co-cultures was subsequently amplified and labeled us
 
 To determine the wild-type or mutant allele frequency in each sample, we first confirmed the presence of the allele by only retaining values where the threshold cycle (Ct) of the sample was less than the no-template control by at least three cycles. Next, we subtracted the ΔRn of the samples from the background ΔRn of the no-template negative control. We subsequently normalized the fluorescence to 100% using the positive control plasmids to obtain the percentage of the wild-type and mutant alleles for each sample. The final percentage of the mutant allele was defined as the average of these two values: the normalized percentage of the mutant allele, and 100% minus the normalized percentage of the wild-type allele.
 
-## eGFP-based fitness assays
+### eGFP-based fitness assays
 
 Fitness assays with Dd2, RF7C580Y, and Cam3.IIC580Y K13, fd, or mdr2 edited parasite lines were performed using mixed culture competition assays with an eGFP+ Dd2 reporter line (Ross et al., 2018). This reporter line uses a calmodulin (cam) promoter sequence to express high levels of GFP and includes hdhfr and blasticidin S-deaminase expression cassettes. This line was earlier reported to have a reduced growth rate relative to parental non-recombinant Dd2, presumably at least in part because of its high levels of GFP expression (Ross et al., 2018; Dhingra et al., 2019). With our Dd2 parasites, K13 edited lines were co-cultured in 1:1 ratios with the reporter line. This ratio was adjusted to 10:1 or 100:1 for fd edited RF7C580Y and mdr2 edited Cam3.IIC580Y parasites relative to the eGFP line, given the slower rate of growth with RF7 and Cam3.II parasites. Fitness assays were initiated with tightly synchronized trophozoites in 96-well plates with 200 μL culture volumes. Percentages of eGFP+ parasites were monitored by flow cytometry every two days over a period of 20 days (10 generations). Flow cytometry was performed as written above, except that only 100 nM MitoTracker DeepRed staining was used to detect total parasitemias, since SYBR Green and eGFP fluoresce in the same channel.
 
-## Fitness costs
+### Fitness costs
 
-The fitness cost associated with a line expressing a given K13 mutation was calculated relative to its isogenic wild-type counterpart using the following equation:P'=P((1-x)n)where P’ is equal to the parasitemia at the assay endpoint, P is equal to the parasitemia on day 0, n is equal to the number of generations from the assay start to finish, and x is equal to the fitness cost. This equation assumes 100% growth for the wild-type comparator line. For qPCR and GFP-based fitness assays, days 36 and 20 were set as the assay endpoints, resulting in the number of parasite generations (n) being set to 18 and 10, respectively.
+The fitness cost associated with a line expressing a given K13 mutation was calculated relative to its isogenic wild-type counterpart using the following equation:
+
+$$
+P'=P((1-x)^{n})
+$$
+
+where P’ is equal to the parasitemia at the assay endpoint, P is equal to the parasitemia on day 0, n is equal to the number of generations from the assay start to finish, and x is equal to the fitness cost. This equation assumes 100% growth for the wild-type comparator line. For qPCR and GFP-based fitness assays, days 36 and 20 were set as the assay endpoints, resulting in the number of parasite generations (n) being set to 18 and 10, respectively.

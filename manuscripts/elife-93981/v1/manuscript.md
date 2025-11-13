@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05abbep66 Neuroscience Program, Brandeis University Waltham United States
-2. https://ror.org/05abbep66 Volen National Center for Complex Systems, Brandeis University Waltham United States
-3. https://ror.org/05abbep66 Department of Psychology , Brandeis University Waltham United States
-4. https://ror.org/05abbep66 Department of Biology, Brandeis University Waltham United States
+1. Neuroscience Program, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+2. Volen National Center for Complex Systems, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+3. Department of Psychology , Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+4. Department of Biology, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
 
 † Corresponding author
 
@@ -45,17 +45,25 @@ In our implementation of this model, we find that spontaneous sequences of spike
 
 ## Results
 
-## The model
+### The model
 
 We propose a model of preplay and immediate replay based on randomly clustered recurrent connections (Figure 1). In prior models of preplay and replay, a preexisting map of the environment is typically assumed to be contained within the recurrent connections of CA3 cells, such that cells with nearby place fields are more strongly connected (Figure 1a). While this type of model successfully produces replay (Haga and Fukai, 2018; Pang and Fairhall, 2019), such a map would only be expected to exist in a familiar environment, after experience-dependent synaptic plasticity has had time to shape the network (Theodoni et al., 2018). It remains unclear how, in the absence of such a preexisting map of the environment, the hippocampus can generate both preplay and immediate replay of a novel environment.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic diagram of prior replay models that rely on preexisting environment-specific structure, wherein each cell receives uniquely tuned Gaussian-shaped feed-forward inputs to define the place fields, and cells with nearby place fields are recurrently connected. Pairs of cells with closest place fields are connected most strongly (thicker arrows). (b) Schematic diagram of our model, where neurons are randomly placed into clusters and all neurons receive the same spatial and contextual information but with random, cluster-dependent input strengths. (c) Example representation of the network (8 clusters, mean cluster participation per cell of 1.5). Excitatory cells (each symbol) are recurrently connected with each other and with inhibitory cells (‘Feedback inhibition’, individual inhibitory cells not shown) and receive feed forward input (‘Sensory input’). Symbol color indicates neurons’ membership in clusters 1 and 2, with ~meaning not in the cluster. Symbol size scales with the number of clusters a neuron is in. Lines show connections between neurons that are in cluster 2. Symbol positions are plotted based on a t-distributed stochastic neighbor embedding (t-SNE) of the connection matrix, which reveals the randomly overlapping clusters. (d-f) Histograms based on the network in (c) of: (d) the distribution of input strengths; (e) the number of clusters that each neuron is a member of; and (f) the fraction of the excitatory cells to which each excitatory cell connects. (g) The Small-World Index (SWI) of the excitatory connections varies with the number of clusters and the mean number of clusters of which each neuron is a member (“cluster participation”). The median value of the SWI from 10 networks at each parameter point is plotted. The red dashed line shows a contour line where SWI = 0.4. Regions in white are not possible due to either cluster participation exceeding the number of clusters (lower right) or cells not being able to connect to enough other cells to reach the target global connectivity $p_{c}$ (upper left).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) A small ring-lattice network. (b) Example small-world networks. Top, a Watts-Strogatz network with re-wiring parameter $\beta=0.2$. Bottom, a randomly clustered network with two clusters and a cluster participation of 1.25. (c) Example randomly connected network.
+
 Our proposed alternative model is based on a randomly clustered recurrent network with random feed-forward inputs (Figure 1b). In our model, all excitatory neurons are randomly assigned to overlapping clusters that constrain the recurrent connectivity, and they all receive the same linear spatial and contextual input cues which are scaled by randomly drawn, cluster-dependent connection weights (see Methods). This bias causes cells that share cluster memberships to have more similar place fields during the simulated run period, but, crucially, this bias is not present during sleep simulations so that there is no environment-specific information present when the network generates preplay.
 
-An example network with 8 clusters and cluster participation of 1.5 (the mean number of clusters to which an excitatory neuron belongs) is depicted in Figure 1c. Excitatory neurons are recurrently connected to each other and to inhibitory neurons. Inhibitory cells have cluster-independent connectivity, such that all E-to-I and I-to-E connections exist with a probability of 0.25. Feed-forward inputs are independent Poisson spikes with random connection strength for each neuron (Figure 1d). Excitatory cells are randomly, independently assigned membership to each of the clusters in the network. All neurons are first assigned to one cluster, and then randomly assigned additional clusters to reach the target cluster participation (Figure 1e). Given the number of clusters and the cluster participation, the within-cluster connection probability is calculated such that the global connection probability matches the parameter pc=0.08 (Figure 1f). The left peak in the distribution shown in Figure 1f is from cells in a single cluster and the right peak is from cells in two clusters, with the long tail corresponding to cells in more than two clusters.
+An example network with 8 clusters and cluster participation of 1.5 (the mean number of clusters to which an excitatory neuron belongs) is depicted in Figure 1c. Excitatory neurons are recurrently connected to each other and to inhibitory neurons. Inhibitory cells have cluster-independent connectivity, such that all E-to-I and I-to-E connections exist with a probability of 0.25. Feed-forward inputs are independent Poisson spikes with random connection strength for each neuron (Figure 1d). Excitatory cells are randomly, independently assigned membership to each of the clusters in the network. All neurons are first assigned to one cluster, and then randomly assigned additional clusters to reach the target cluster participation (Figure 1e). Given the number of clusters and the cluster participation, the within-cluster connection probability is calculated such that the global connection probability matches the parameter $p_{c}=0.08$ (Figure 1f). The left peak in the distribution shown in Figure 1f is from cells in a single cluster and the right peak is from cells in two clusters, with the long tail corresponding to cells in more than two clusters.
 
-For a given pc, excitatory connectivity is parameterized by the number of clusters in the network and the mean cluster participation. The small-world index (SWI; Neal, 2015; Neal, 2017) systematically varies across this 2-D parameterization (Figure 1g). A high SWI indicates a network with both clustered connectivity and short path lengths (Watts and Strogatz, 1998). A ring lattice network (Figure 1—figure supplement 1a) exhibits high clustering but long path lengths between nodes on opposite sides of the ring. In contrast, a randomly connected network (Figure 1—figure supplement 1c) has short path lengths but lacks local clustered structure. A network with small world structure, such as a Watts-Strogatz network (Watts and Strogatz, 1998) or our randomly clustered model (Figure 1—figure supplement 1b), combines both clustered connectivity and short path lengths. In our clustered networks, for a fixed connection probability, SWI increases with more clusters and lower cluster participation, so long as cluster participation is greater than one to ensure sparse overlap of (and hence connections between) clusters. Networks in the top left corner of Figure 1g are not possible, since in that region all within-cluster connections are not sufficient to match the target global connectivity probability, pc. Networks in the bottom right are not possible because otherwise mean cluster participation would exceed the number of clusters. The dashed red line shows an example contour line where SWI=0.4.
+For a given $p_{c}$, excitatory connectivity is parameterized by the number of clusters in the network and the mean cluster participation. The small-world index (SWI; Neal, 2015; Neal, 2017) systematically varies across this 2-D parameterization (Figure 1g). A high SWI indicates a network with both clustered connectivity and short path lengths (Watts and Strogatz, 1998). A ring lattice network (Figure 1—figure supplement 1a) exhibits high clustering but long path lengths between nodes on opposite sides of the ring. In contrast, a randomly connected network (Figure 1—figure supplement 1c) has short path lengths but lacks local clustered structure. A network with small world structure, such as a Watts-Strogatz network (Watts and Strogatz, 1998) or our randomly clustered model (Figure 1—figure supplement 1b), combines both clustered connectivity and short path lengths. In our clustered networks, for a fixed connection probability, SWI increases with more clusters and lower cluster participation, so long as cluster participation is greater than one to ensure sparse overlap of (and hence connections between) clusters. Networks in the top left corner of Figure 1g are not possible, since in that region all within-cluster connections are not sufficient to match the target global connectivity probability, $p_{c}$. Networks in the bottom right are not possible because otherwise mean cluster participation would exceed the number of clusters. The dashed red line shows an example contour line where $SWI=0.4$.
 
-## Example activity
+### Example activity
 
 Our randomly clustered model produces both place fields and preplay with no environment-specific plasticity or preexisting map of the environment (Figure 2). Example place cell activity shows spatial specificity during linear track traversal (Figure 2a–c). Although the spatial tuning is noisy, this is consistent with the experimental finding that the place fields that are immediately expressed in a novel environment require experience in the environment to stabilize and improve decoding accuracy (Tang and Jadhav, 2022; Shin et al., 2019; Hwaun and Colgin, 2019). Raster plots of network spiking activity (Figure 2a) and example cell membrane potential traces (Figure 2b) demonstrate selective firing in specific track locations. Place fields from multiple networks generated from the same parameters, but with different input and recurrent connections, show spatial tuning across the track (Figure 2c).
 
@@ -67,17 +75,45 @@ To test the ability of the model to produce preplay, we simulated sleep sessions
 
 Together, these results demonstrate that the model can reproduce key dynamics of hippocampal place cells, including spatial tuning and preplay, without relying on environment-specific recurrent connections.
 
-## Place fields
+### Place fields
 
 To compare the place fields generated by the model to those from hippocampal place cells of rats, we calculated several place-field statistics for both simulated and experimentally recorded place fields (Figure 3). Because our model assumes no previous environment-specific plasticity, we analyzed data from place cells in rats on their first exposure to a W-track (Shin et al., 2019). Equivalent statistics of place-field peak rate, sparsity, and spatial information are shown for experimental data (Figure 3a) and simulations (Figure 3b). We found that the model produces qualitatively similar (but not quantitatively identical) distributions for the fiducial parameter set.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig3-v1.jpg)
+
+**Figure 3.:** (a) Place field statistics for hippocampal place fields recorded in rats upon their first exposure to a W-track (Shin et al., 2019).Left, place-field peak rate (Hz). Center, place-field specificity (fraction of track). Right, place-field spatial information (bits/spike). (b) Same as (a) but for place fields from a set of 10 simulated networks at one parameter point (15 clusters and mean cluster participation of 1.25). (c) Network parameter dependence of place-field statistics. For each parameter point, the color indicates the mean over all place fields from all networks. Top row: mean statistics corresponding to the same measures of place fields used in panels (a, b). Bottom left: mean firing rate of the inhibitory cells. Bottom center: the KL-divergence of the distribution of place-field peaks relative to a uniform spatial distribution. Bottom right: fraction of place-field peaks peaked in the central third of the track.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Place fields (left) and time fields (right) for an example cell calculated from simulated trajectories that took 2 s (solid line) or 4 s (dotted line) to traverse the track. (b) CDFs of the information content of the place fields (‘Place’) and time fields (‘Time’) of all cells. The spatial information is significantly greater than the temporal information (KS-test, p=6.4e-23). (c) Scatter plot of the data in (b), with the median values marked in red.
 
 These place-field properties depend on the network parameters (Figure 3c). With fewer clusters and lower cluster overlap (lower cluster participation), place fields have higher peak rates, sparsity, and spatial information (Figure 3c, top row and bottom left). However, lower overlap reduces the uniformity of place-field locations, measured by KL-divergence (Figure 3c bottom middle) and the fraction of place fields in the central third of the track (Figure 3c bottom right).
 
 To verify that our simulated place cells were more strongly coding for spatial location than for elapsed time, we performed simulations with additional track traversals at different speeds and compared the resulting place fields and time fields in the same cells. We find that there is significantly greater place information than time information (Figure 3—figure supplement 1).
 
-## Preplay
+### Preplay
 
 Having found that the model produces realistic place-field representations with neither place-field like inputs nor environment-specific spatial representation in the internal network connectivity (Figure 3), we next examined whether the same networks could generate spontaneous preplay of novel environments. To test this, for the same set of networks characterized by place-field properties in Figure 3, we simulated sleep activity by removing any location-dependent input cues and analyzed the resulting spike patterns for significant sequential structure resembling preplay trajectories (Figure 4). We find significant preplay in both our reference experimental data set (Shin et al., 2019; Figure 4a and b; see Figure 4—figure supplement 1 for example events) and our model (Figure 4c and d) when analyzed by the same methods as Farooq et al., 2019, wherein the significance of preplay is determined relative to time-bin shuffled events (see Methods). The distribution of absolute weighted correlations of actual events was significantly greater than the distribution of absolute weighted correlations of shuffled events for both the experimental data (Figure 4a, KS-test, p=2 × 10–12, KS-statistic=0.078) and the simulated data (Figure 4c, KS-test, p=3 × 10–16, KS-statistic=0.29). Additionally, we found that this result is robust to random subsampling of cells in our simulated data (Figure 4—figure supplement 2). Our analyses of the hippocampal data produce similar results when analyzing each trajectory independently (Figure 4—figure supplement 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig4-v1.jpg)
+
+**Figure 4.:** (a, c) The cumulative distribution function (CDF) of the absolute weighted correlations for actual events (blue line) versus shuffled events (red dashed line) of experimental data from Shin et al., 2019 (a; KS-test, p=2 × 10–12, KS-statistic=0.078) and simulated data (c; KS-test, p=3 × 10–16, KS-statistic=0.29) reveal results similar to those in Figure 1h of Farooq et al., 2019. *** p<0.001. (b, d) p-value grids (p-value indicated logarithmically by color) showing that the actual decoded events are higher quality sequences than shuffles across a wide range of quality thresholds for both experimental data from Shin et al., 2019 (b) and simulated data (d). For each point on the grid, the fraction of events that exceed the absolute weighted correlation threshold (y-axis) and don’t exceed the maximum jump distance (x-axis) is calculated, and the significance of this fraction is determined by comparison against a distribution of corresponding fractions from shuffled events. Black squares indicate criteria that were not met by any events (either shuffled or actual). The panel is equivalent to Figure 1e of Farooq et al., 2019. (e) Network parameter dependence of several statistics quantifying the population-burst events. Top left, fraction of excitatory cells firing per event. Top right, mean excitatory cell firing rate (Hz). Bottom left, mean event duration (s). Bottom right, mean event frequency (Hz). Each point is the mean of data combined across all population-burst events of all networks at each parameter point. Data from the same simulations as Figure 3. (f) Network parameter dependence of several statistics quantifying the Bayesian decoding. Top left, p-value of the absolute weighted correlations (from a KS-test as calculated in (c)). Top right, the shift in the median absolute weighted correlation of actual events relative to shuffle events. Bottom left, the fraction of events with significant absolute weighted correlations relative to the distribution of absolute weighted correlations from time bin shuffles of the event. Bottom right, the mean entropy of the position probability of all time bins in decoded trajectories.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Example preplay events. Same as Figure 2f but for events from the hipopcampal data from Shin et al., 2019. The height of each plot spans the length of the trajectory used for decoding, divided into 2 cm spatial bins. The width of each plot spans the duration of the detected event, divided into 10 ms time bins. Probability is show in color.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a–c) Results from performing the same Bayesian decoding on the same simulated population burst events (PBEs) in Figure 4c but using only random subsets of the excitatory cells for performing the decoding analysis. Each circle is the result of an analysis performed on one random subset of the cells. 25 random subsets were analyzed for each analyzed cell count. The subset sizes are logarithmically spaced. Black lines show the median value. The variability at N=375 is due to the variation in the randomness of the time-bin shuffles. (a) Number of events meeting the inclusion criterion for decoding analysis. (b) p-value of the KS-test comparing actual vs shuffled event absolute weighted correlations. A majority of the random subsets of 50 cells (17 out of 25) produce preplay p-values below 0.05. (c) Shift in the median absolute weighted correlation of actual events relative to shuffled events.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Same as Figure 4a but separated by results from decoding by each of the 4 trajectories of the W-track individually (trajectory 1, center arm to right arm; trajectory 2, right arm to center arm; trajectory 3, center arm to left arm; trajectory 4, left arm to center arm). KS-test for each trajectory: trajectory 1, p=0.0030; trajectory 2, p=0.0028; trajectory 3, p=0.0027; trajectory 4, p=5.461 × 10–5. ** p<0.01, *** p<0.001. (b) Same as Figure 4b but separated by results from decoding by each of the four trajectories individually.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Each row corresponds to a different parameter grid simulation, with statistics calculated as in the corresponding panel from Figure 4. (a) Preplay statistics are similar to the main simulation results when a third linearly varying spatial cue is included in the inputs to the network (CDF KS-test, p=3.9e-13, KS-statistic=0.26). (b) Preplay statistics are similar to the main simulation results when a stepped input is used (CDF KS-test, p=2.5e-08, KS-statistic=0.20). The stepped input is less spatially informative since stretches of adjacent locations on the track have identical spatial input. (c) Same as (b), but with three step increments (CDF KS-test, p=6.2e-13, KS-statistic=0.26). (d) Same as (c), but with a single step increment (CDF KS-test, p=4.9e-13, KS-statistic=0.26). With this input the fiducial parameter set still shows significant preplay (right two columns), but most of the parameter grid loses significant preplay. (e) When the bias in cluster spatial input location is removed preplay is no longer significant (CDF KS-test, p=0.34, KS-statistic=0.063). (f) A parameter grid that shows greater values of cluster participation do not have significant preplay. Values along the diagonal where clusters equals cluster participation are equivalent to a random cluster-less network. Example parameter point is at clusters = 5 and cluster participation = 5 (CDF KS-test, p=0.99, KS-statistic=0.02).
 
 For each event, we also calculated the maximum spatial jump of the peak probability of decoded position between any two adjacent time bins as a measure of the continuity of the decoded trajectory. The absolute weighted correlation (high is better) and maximum jump (low is better) were then two different measures of the quality of a decoded trajectory. We performed a bootstrap test that took both of these measures into account by setting thresholds for a minimum absolute weighted correlation and a maximum jump distance and then calculating the fraction of events meeting both criteria of quality. The significance of the fraction of events meeting both criteria was then determined by comparing it against a distribution of such fractions generated by sets of the time-bin shuffled events. We systematically varied both thresholds and found that the actual events are of significantly higher quality than chance for a wide range of thresholds in both the hippocampal (Figure 4b) and simulated (Figure 4d) data. The upper right corner of these grids cannot be significant since 100% of all possible events would be included in any shuffle or actual set. Points in the left-most column are not all significant because the strictness of the maximum jump distance means that very few events in either the actual or shuffled data sets meet the criterion, and therefore the analysis is underpowered. This pattern is similar to that seen in Farooq et al., 2019 (as shown in their Figure 1e).
 
@@ -85,15 +121,23 @@ Both PBEs and preplay are significantly affected by the two network parameters (
 
 To test the robustness of our results to variations in input types, we simulated alternative forms of spatially modulated feedforward inputs. We found that with no parameter tuning or further modifications to the network, the model generates robust preplay with variations on the spatial inputs, including inputs of three linearly varying cues (Figure 4—figure supplement 4a) and two stepped cues (Figure 4—figure supplement 4b–c). The network is impaired in its ability to produce preplay with binary step location cues (Figure 4—figure supplement 4d), when there is no cluster bias (Figure 4—figure supplement 4e), and at greater values of cluster participation (Figure 4—figure supplement 4f).
 
-## Preplay is due to successive activations of individual clusters
+### Preplay is due to successive activations of individual clusters
 
 Figure 4f indicates that PBEs are best decoded as preplay when cluster participation is only slightly above one, indicating a small, but non-zero, degree of cluster overlap. We hypothesized that this can be explained as balancing two counteracting requirements: (1) Sufficient cluster overlap is necessary for a transient increase in activity in one cluster to induce activity in another cluster, so as to extend any initiated trajectory; and (2) Sufficient cluster isolation is necessary so that, early in a transient, spikes from an excited cluster preferentially add excitement to the same cluster. A network with too much cluster overlap will fail to coherently excite individual clusters—rendering decoded positions to be spread randomly throughout the track—while a network with too little cluster overlap will fail to excite secondary clusters—rendering decoded positions to remain relatively localized.
 
 We find that the dependence of preplay on cluster overlap can indeed be explained by the manner in which clusters participate in PBEs (Figure 5). An example PBE (Figure 5a) shows transient recruitment of distinct clusters, with only one cluster prominently active at a time. We define a cluster as ‘active’ if its firing rate exceeds twice the rate of any other cluster. We calculated the number of active clusters per event (Figure 5b) and the duration of each active cluster period (Figure 5d). We find that these statistics vary systematically with the network parameters (Figure 5c and e), in a manner consistent with the dependence of preplay on cluster overlap (Figure 4f). When there is modest overlap of an intermediate number of clusters, events involve sequential activation of multiple clusters that are each active sufficiently long to correspond to at least one of the time bins used for decoding (10 ms). Figures 4 and 5 together indicate that high-quality preplay arises via a succession of individually active clusters. Such succession requires a moderate degree of cluster overlap, but this must be combined with sufficient cluster isolation to promote independent activation of just one cell assembly for the duration of each time-bin used for decoding.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig5-v1.jpg)
+
+**Figure 5.:** (a) Example event. Top, spike rates averaged across neurons of individual clusters: Each firing rate curve is the smoothed mean firing rate across the population of cells belonging to each cluster. We defined clusters as ‘active’ if at any point their rates exceed twice that of any other cluster. Three clusters meet the criterion of being active (green, then red, then blue). Bottom, raster plots: Cells belonging to each of the active clusters are plotted separately in the respective colors. Cells in multiple clusters contribute to multiple population curves, and cells in multiple active clusters appear in multiple rows of the raster plot. Cells that participate but are not in any active clusters are labeled ‘Other cells’ and plotted in black. Only active cells are plotted. (b) For the fiducial parameter set (15 clusters, mean cluster participation of 1.25), the distribution over events of the number of active clusters per event. (c) The mean number of active clusters per event as a function of the network parameters. Same data as that used for the parameter grids in earlier figures. (d) For the fiducial parameter set (15 clusters, mean cluster participation of 1.25), the distribution of durations of active clusters for all active cluster periods across all events. The active duration was defined as the duration for which an active cluster remained the most-active cluster. (e) The mean active cluster duration as a function of the network parameters.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Out of all events from the fiducial parameter set simulations where three unique clusters were active, the fraction of those events with sequences that match the order of cluster biases on the track (red line) is consistent with the values expected by randomly sampling clusters (blue). (b) Z-scored absolute weighted preplay correlation is negatively correlated with the number of active clusters (Spearman’s rank correlation).
+
 The results of Figure 5 suggest that cluster-wise activation may be crucial to preplay. One possibility is that the random overlap of clusters in the network spontaneously produces biases in sequences of cluster activation which can be mapped onto any given environment. To test this, we looked at the pattern of cluster activations within events. We found that sequences of three active clusters were not more likely to match the track sequence than chance (Figure 5—figure supplement 1a). This suggests that preplay is not dependent on a particular biased pattern in the sequence of cluster activation. We then asked if the number of clusters that were active influenced preplay quality. We split the preplay events by the number of clusters that were active during each event and found that the median preplay shift relative to shuffled events with the same number of active clusters decreased with the number of active clusters (Spearman’s rank correlation, p=0.0019, ρ=−0.13; Figure 5—figure supplement 1b).
 
-## Cluster identity is sufficient for preplay
+### Cluster identity is sufficient for preplay
 
 The pattern of preplay significance across the parameter grid in Figure 4f shows that preplay only occurs with modest cluster overlap, and the results of Figure 5 show that this corresponds to the parameter region that supports transient, isolated cluster-activation. This raises the question of whether cluster-identity is sufficient to explain preplay. To test this, we took the sleep simulation population burst events from the fiducial parameter set and performed decoding after shuffling cell identity in three different ways. We found that when the identity of all cells within a network are randomly permuted the resulting median preplay correlation shift is centered about zero (t-test 95% confidence interval, –0.2018–0.0012) and preplay is not significant (distribution of p-values is consistent with a uniform distribution over 0–1, chi-square goodness-of-fit test p=0.4436, chi-square statistic = 2.68; Figure 6a). However, performing decoding after randomly shuffling cell identity between cells that share membership in a cluster does result in statistically significant preplay for all shuffle replicates, although the magnitude of the median correlation shift is reduced for all shuffle replicates (Figure 6b). The shuffle in Figure 6b does not fully preserve cell’s cluster identity because a cell that is in multiple clusters may be shuffled with a cell in either a single cluster or with a cell in multiple clusters that are not identical. Performing decoding after doing within-cluster shuffling of only cells that are in a single cluster results in preplay statistics that are not statistically different from the unshuffled statistics (t-test relative to median shift of un-shuffled decoding, p=0.1724, 95% confidence interval of –0.0028–0.0150 relative to the reference value; Figure 6c). Together these results demonstrate that cluster-identity is sufficient to produce preplay.
 
@@ -101,7 +145,7 @@ The pattern of preplay significance across the parameter grid in Figure 4f shows
 
 **Figure 6.:** We decoded the population burst events from the fiducial parameter set simulations after randomly shuffling cell identities in three different manners (a-c, 25 replicates for each condition) and compared the resulting preplay statistics to the unshuffled result (red line). (a) Randomly shuffling cell identities results in median preplay correlation shifts near zero (top, 100th percentile of shuffles), with p-values distributed approximately uniformly (bottom, 0th percentile of shuffles). (b) Randomly shuffling cell identities within clusters reduces the magnitude of the median preplay correlation shifts (top, 100th percentile of shuffles) but preserves the statistical significance of preplay (bottom, 0th percentile of shuffles). (c) Randomly shuffling cell identities within clusters for only cells that belong to a single cluster results in median preplay correlation shifts that are similar to the unshuffled result (top, 36th percentile of shuffles) and are all statistically significant (bottom, 12th percentile of shuffles).
 
-## Mean relative spike rank correlates with place field location
+### Mean relative spike rank correlates with place field location
 
 While cluster-identity is sufficient to produce preplay (Figure 6b), the shuffle of Figure 6c is incomplete in that cells belonging to more than one cluster are not shuffled. Together, these two shuffles leave room for the possibility that individual cell-identity may contribute to the production of preplay. It might be the case that some cells fire earlier than others, both on the track and within events. To test the contribution of individual cells to preplay, we calculated for all cells in all networks of the fiducial parameter point their mean relative spike rank and tested if this is correlated with the location of their mean place field density on the track (Figure 7). We find that there is no relationship between a cell’s mean relative within-event spike rank and its mean place field density on the track (Figure 7a). This is the case when the relative rank is calculated over the entire network (Figure 7, ‘Within-network’) and when the relative rank is calculated only with respect to cells with the same cluster membership (Figure 7, ‘Within-cluster’). However, because preplay events can proceed in either track direction, averaging over all events would average out the sequence order of these two opposite directions. We performed the same correlation but after reversing the spike order for events with a negative slope in the decoded trajectory (Figure 7b). To test the significance of this correlation, we performed a bootstrap significance test by comparing the slope of the linear regression to the slope that results when performing the same analysis after shuffling cell identities in the same manner as in Figure 6. We found that the linear regression slope is greater than expected relative to all three shuffling methods for both the within-network mean relative rank correlation (Figure 6c) and the within-cluster mean relative rank correlation (Figure 6d).
 
@@ -109,19 +153,19 @@ While cluster-identity is sufficient to produce preplay (Figure 6b), the shuffle
 
 **Figure 7.:** (a) Mean within-event relative spike rank of all place cells as a function of the location of their mean place field density on the track for networks at the fiducial parameter set. Left, mean relative rank with respect to all cells in each network. Right, mean relative rank with respect to only cells that share cluster membership. (b) Same as (a), but after accounting for the direction of each events’ decoded trajectory. If the decoded slope for a given event was negative, then the order of spiking in that event was reversed. (c, d) Comparison of the regression slopes from (b) to the distribution of slopes that results from applying the same analysis after shuffling cell identities as in Figure 6. (c) The within-network regression slope is significant relative to all three methods of shuffling cell identity. (d) Same as (c), but for the within-cluster regression slope.
 
-## Small-world index correlates with preplay
+### Small-world index correlates with preplay
 
-We noticed that that the highest quality of decoded trajectories (Figure 4f) seemed to arise in networks with the highest small-world index (SWI; Figure 1g). In order to test this, we simulated different sets of networks with both increased and decreased global E-to-E connection probability, pc. Changing pc, in addition to varying the number of clusters and the mean cluster participation, impacted the SWI of the networks (Figure 8, left column).
+We noticed that that the highest quality of decoded trajectories (Figure 4f) seemed to arise in networks with the highest small-world index (SWI; Figure 1g). In order to test this, we simulated different sets of networks with both increased and decreased global E-to-E connection probability, $p_{c}$. Changing $p_{c}$, in addition to varying the number of clusters and the mean cluster participation, impacted the SWI of the networks (Figure 8, left column).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/93981/elife-93981-fig8-v1.jpg)
 
-**Figure 8.:** (a–c) Left column, the Small-World Index (SWI; plotted as color) is affected by the global E-to-E connection probability, . Red dotted line indicates a contour line of SWI = 0.4. This boundary shifts downward as pc increases. Center column, across parameter points in the network parameter grid, SWI correlates with an increase in the median absolute weighted correlation of decoded trajectories relative to shuffles (e.g. this corresponds in pcFigure 4c to the rightward shift of the CDF of measured absolute weighted correlations relative to the shuffle events). Each point is produced by analysis of all events across 10 networks from one parameter point in the grid on the left. Right column, same as the center column but each point is data from each of the 10 individual networks per parameter set. p-value and correlation, , are calculated from Spearman’s rank-order correlation test. Dashed line is the least-squares fit. (ρa) Data from a parameter grid where the E-to-E connection probability was decreased by 50% and the E-to-E connection strength was doubled from their fiducial values used in prior figures. (b) Data from the same parameter grid as Figures 3—5. (c) Data from a parameter grid where the E-to-E connection probability was increased by 50% and the E-to-E connection strength scaled by two-thirds from their fiducial values.
+**Figure 8.:** (a–c) Left column, the Small-World Index (SWI; plotted as color) is affected by the global E-to-E connection probability, $p_{c}$. Red dotted line indicates a contour line of SWI = 0.4. This boundary shifts downward as $p_{c}$ increases. Center column, across parameter points in the network parameter grid, SWI correlates with an increase in the median absolute weighted correlation of decoded trajectories relative to shuffles (e.g. this corresponds in Figure 4c to the rightward shift of the CDF of measured absolute weighted correlations relative to the shuffle events). Each point is produced by analysis of all events across 10 networks from one parameter point in the grid on the left. Right column, same as the center column but each point is data from each of the 10 individual networks per parameter set. p-value and correlation, $ρ$, are calculated from Spearman’s rank-order correlation test. Dashed line is the least-squares fit. (a) Data from a parameter grid where the E-to-E connection probability was decreased by 50% and the E-to-E connection strength was doubled from their fiducial values used in prior figures. (b) Data from the same parameter grid as Figures 3—5. (c) Data from a parameter grid where the E-to-E connection probability was increased by 50% and the E-to-E connection strength scaled by two-thirds from their fiducial values.
 
-We hypothesized that independent of pc, a higher SWI would correlate with improved preplay quality. To test this, we simulated networks across a range of parameters for three pc values: a decrease of pc by 50% – 0.04, the fiducial value of 0.08, and an increase by 50% – 0.12 (Figure 8a–c, respectively). For the decreased and increased pc cases, the E-to-E connection strength was respectively doubled or reduced to 2/3 of the fiducial strength to keep total E-to-E input constant. For each parameter combination, we quantified preplay quality as the rightward shift in median absolute weighted correlation of decoded preplay events versus shuffled events (as in Figure 4f, top right). We then asked if there was a correlation between that quantification of preplay quality and SWI.
+We hypothesized that independent of $p_{c}$, a higher SWI would correlate with improved preplay quality. To test this, we simulated networks across a range of parameters for three $p_{c}$ values: a decrease of $p_{c}$ by 50% – 0.04, the fiducial value of 0.08, and an increase by 50% – 0.12 (Figure 8a–c, respectively). For the decreased and increased $p_{c}$ cases, the E-to-E connection strength was respectively doubled or reduced to 2/3 of the fiducial strength to keep total E-to-E input constant. For each parameter combination, we quantified preplay quality as the rightward shift in median absolute weighted correlation of decoded preplay events versus shuffled events (as in Figure 4f, top right). We then asked if there was a correlation between that quantification of preplay quality and SWI.
 
-Across all three pc values, SWI significantly correlated with improved preplay both across parameter sets (Figure 8, center column) and across individual networks (Figure 8, right column). These results support our prediction that higher small-world characteristics correspond to higher-quality preplay dynamics regardless of average connectivity.
+Across all three $p_{c}$ values, SWI significantly correlated with improved preplay both across parameter sets (Figure 8, center column) and across individual networks (Figure 8, right column). These results support our prediction that higher small-world characteristics correspond to higher-quality preplay dynamics regardless of average connectivity.
 
-## Preplay significantly decodes to linear trajectories in arbitrary environments
+### Preplay significantly decodes to linear trajectories in arbitrary environments
 
 Information about each environment enters the network via the feed-forward input connection strengths, which contain cluster-dependent biases. A new environment is simulated by re-ordering those input biases. We first wished to test that a new environment simulated in such a manner produced a distinct set of place fields. We therefore simulated place maps for leftward and rightward trajectories on linear tracks in two distinct environments (Figure 9a). The two maps with different directions of motion showed very high correlations when in the same environment (Figure 9b, blue) while the comparisons of trajectories across environments show very low correlations (Figure 9b, red). Cells that share membership in a cluster will have some amount of correlation in their remapping due to the cluster-dependent cue bias, which is consistent with experimental results (Hampson et al., 1996; Pavlides et al., 2019), but the combinatorial nature of cluster membership renders the overall place field map correlations low (Figure 9b). We also performed simulations with extra laps of running and calculated the correlations between paired sets of place fields produced by random, independent splits of trials of the same trajectory. The distribution of these correlations was similar to the distribution of within-environment correlations (comparing opposite trajectories with the same spatial input), showing no significant de novo place-field directionality. This is consistent with hippocampal data in which place-field directionality is initially low in novel environments and increases with experience (Frank et al., 2004; Navratilova et al., 2012; Shin et al., 2019).
 
@@ -153,95 +197,319 @@ Future modeling work should explore how experience-dependent plasticity may leve
 
 To investigate what network properties could support preplay, we simulated recurrently connected networks of spiking neurons and analyzed their dynamics using standard hippocampal place cell analyses.
 
-## Neuron model
+### Neuron model
 
-We simulate networks of Leaky Integrate-and-Fire (LIF) neurons, which have leak conductance, gL, excitatory synaptic conductance, gE, inhibitory synaptic conductance, gI, spike-rate adaptation (SRA) conductance, gSRA, and external feed-forward input synaptic conductance, gext. The membrane potential, V, follows the dynamicsτmdVdt=-gL(V-EL)-gE(V-EE)-gI(V-EI)-gSRA(V-ESRA)-gext(V-EE)
+We simulate networks of Leaky Integrate-and-Fire (LIF) neurons, which have leak conductance, $g_{L}$, excitatory synaptic conductance, $g_{E}$, inhibitory synaptic conductance, $g_{I}$, spike-rate adaptation (SRA) conductance, $g_{SRA}$, and external feed-forward input synaptic conductance, $g_{ext}$. The membrane potential, $V$, follows the dynamics
 
-where τm is the membrane time constant, EL is the leak reversal potential, EE is the excitatory synapse reversal potential, EI is the inhibitory synapse reversal potential, ESRA is the SRA reversal potential, and Eext is the external input reversal potential. When the membrane potential reaches the threshold Vth, a spike is emitted and the membrane potential is reset to Vreset.
+$$
+\tau_{m}\frac{dV}{dt}=-g_{L}(V-E_{L})-g_{E}(V-E_{E})-g_{I}(V-E_{I})-g_{SRA}(V-E_{SRA})-g_{ext}(V-E_{E})
+$$
 
-The changes in SRA conductance and all synaptic conductances followτidgidt=-gi
+where $\tau_{m}$ is the membrane time constant, $E_{L}$ is the leak reversal potential, $E_{E}$ is the excitatory synapse reversal potential, $E_{I}$ is the inhibitory synapse reversal potential, $E_{SRA}$ is the SRA reversal potential, and $E_{ext}$ is the external input reversal potential. When the membrane potential reaches the threshold $V_{th}$, a spike is emitted and the membrane potential is reset to $V_{reset}$.
 
-to produce exponential decay between spikes for any conductance i. A step increase in conductance occurs at the time of each spike by an amount corresponding to the connection strength for each synapse (WE-E for E-to-E connections, WE-I for E-to-I connections, and WI-E for I-to-E connections), or by δSRA for gSRA. Initial feed-forward input conductances were set to values approximating their steady-state values by randomly selecting values from a Gaussian with a mean of WinrGτE and a standard deviation of Win2rGτE. Initial values of the recurrent conductances and the SRA conductance were set to zero.
+The changes in SRA conductance and all synaptic conductances follow
 
-## Network structure
+$$
+\tau_{i}\frac{dg_{i}}{dt}=-g_{i}
+$$
 
-We simulated networks of n=500 neurons, of which 75% were excitatory. Excitatory neurons were randomly, independently assigned membership to each of nc clusters in the network. First, each neuron was randomly assigned membership to one of the clusters. Then, each cluster was assigned a number—nE(μc-1)/nc rounded to the nearest integer—of additional randomly selected neurons such that each cluster had identical numbers of neurons, nE,clust=nE(μc/nc),and mean cluster participation, μc, reached its goal value.
+to produce exponential decay between spikes for any conductance $i$. A step increase in conductance occurs at the time of each spike by an amount corresponding to the connection strength for each synapse ($W_{E-E}$ for E-to-E connections, $W_{E-I}$ for E-to-I connections, and $W_{I-E}$ for I-to-E connections), or by $\delta_{SRA}$ for $g_{SRA}$. Initial feed-forward input conductances were set to values approximating their steady-state values by randomly selecting values from a Gaussian with a mean of $W_{in}r_{G}\tau_{E}$ and a standard deviation of $\sqrt{W_{in}^{2}r_{G}\tau_{E}}$. Initial values of the recurrent conductances and the SRA conductance were set to zero.
 
-E-to-E recurrent connections were randomly assigned on a cluster-wise basis, where only neurons that shared membership in a cluster could be connected. The within-cluster connection probability was configured such that the network exhibited a desired global E-to-E connection probability pc. Given the total number of possible connections between excitatory neurons is Ctot=nE(nE-1) and the total number of possible connections between excitatory neurons within all clusters is Cclust=nE,clust(nE,clust−1)nc, we calculated the within-cluster connection probability as pc(Ctot/Cclust). That is, given the absence of connections between clusters (clusters were coupled by the overlap of cells) the within-cluster connection probability was greater than pc so as to generate the desired total number of connections equal to pcCtot.
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Fiducial value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τm</td>
+      <td>40 ms</td>
+      <td>Membrane time constant</td>
+    </tr>
+    <tr>
+      <td>Cm</td>
+      <td>0.4 nF</td>
+      <td>Membrane capacitance</td>
+    </tr>
+    <tr>
+      <td>dt</td>
+      <td>0.1 ms</td>
+      <td>Simulation time step</td>
+    </tr>
+    <tr>
+      <td>gL</td>
+      <td>10 nS</td>
+      <td>Leak conductance</td>
+    </tr>
+    <tr>
+      <td>EL</td>
+      <td>-70 mV</td>
+      <td>Leak reversal potential</td>
+    </tr>
+    <tr>
+      <td>EE</td>
+      <td>0 mV</td>
+      <td>Excitatory synaptic reversal potential</td>
+    </tr>
+    <tr>
+      <td>EI</td>
+      <td>-70 mV</td>
+      <td>Inhibitory synaptic reversal potential</td>
+    </tr>
+    <tr>
+      <td>ESRA</td>
+      <td>-80 mV</td>
+      <td>SRA reversal potential</td>
+    </tr>
+    <tr>
+      <td>Vth</td>
+      <td>-50 mV</td>
+      <td>Spike threshold</td>
+    </tr>
+    <tr>
+      <td>Vreset</td>
+      <td>-70 mV</td>
+      <td>Reset potential</td>
+    </tr>
+    <tr>
+      <td>τE</td>
+      <td>10 ms</td>
+      <td>Excitatory time constant</td>
+    </tr>
+    <tr>
+      <td>τI</td>
+      <td>3 ms</td>
+      <td>Inhibitory time constant</td>
+    </tr>
+    <tr>
+      <td>τSRA</td>
+      <td>30 ms</td>
+      <td>Spike-rate adaptation time constant</td>
+    </tr>
+    <tr>
+      <td>δSRA</td>
+      <td>3 pS</td>
+      <td>Spike-rate adaptation strength</td>
+    </tr>
+  </tbody>
+</table>
 
-All E-to-I and I-to-E connections were independent of cluster membership and existed with a probability pcI. There were no I-to-I connections. pc, nc, and μc were varied for some simulations. Except where specified otherwise, all parameters took the fiducial value shown in the table below.
+### Network structure
+
+We simulated networks of $n=500$ neurons, of which 75% were excitatory. Excitatory neurons were randomly, independently assigned membership to each of $n_{c}$ clusters in the network. First, each neuron was randomly assigned membership to one of the clusters. Then, each cluster was assigned a number—$n_{E}(\mu_{c}-1)/n_{c}$ rounded to the nearest integer—of additional randomly selected neurons such that each cluster had identical numbers of neurons, $n_{E,clust}=n_{E}(\mu_{c}/n_{c})$,and mean cluster participation, $\mu_{c}$, reached its goal value.
+
+E-to-E recurrent connections were randomly assigned on a cluster-wise basis, where only neurons that shared membership in a cluster could be connected. The within-cluster connection probability was configured such that the network exhibited a desired global E-to-E connection probability $p_{c}$. Given the total number of possible connections between excitatory neurons is $C_{tot}=n_{E}(n_{E}-1)$ and the total number of possible connections between excitatory neurons within all clusters is $C_{clust}=n_{E,clust}(n_{E,clust}−1)n_{c}$, we calculated the within-cluster connection probability as $p_{c}(C_{tot}/C_{clust})$. That is, given the absence of connections between clusters (clusters were coupled by the overlap of cells) the within-cluster connection probability was greater than $p_{c}$ so as to generate the desired total number of connections equal to $p_{c}C_{tot}$.
+
+All E-to-I and I-to-E connections were independent of cluster membership and existed with a probability $p_{c_{I}}$. There were no I-to-I connections. $p_{c}$, $n_{c}$, and $\mu_{c}$ were varied for some simulations. Except where specified otherwise, all parameters took the fiducial value shown in the table below.
 
 The network visualization in Figure 1c was plotted based on the first two dimensions of a t-distributed stochastic neighbor embedding of the connectivity between excitatory cells using the MATLAB function tsne. The feature vector for each excitatory cell was the binary vector indicating the presence of both input and output connections.
 
-## Network inputs
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Fiducial value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>500</td>
+      <td>Number of neurons</td>
+    </tr>
+    <tr>
+      <td>nE</td>
+      <td>375</td>
+      <td>Number of excitatory neurons</td>
+    </tr>
+    <tr>
+      <td>nc or ‘cluster’</td>
+      <td>15</td>
+      <td>Number of clusters</td>
+    </tr>
+    <tr>
+      <td>μc or ‘cluster participation’</td>
+      <td>1.25</td>
+      <td>Mean cluster membership per neuron</td>
+    </tr>
+    <tr>
+      <td>pc</td>
+      <td>0.08</td>
+      <td>E-to-E connection probability</td>
+    </tr>
+    <tr>
+      <td>pcI</td>
+      <td>0.25</td>
+      <td>E-to-I and I-to-E connection probability</td>
+    </tr>
+    <tr>
+      <td>WE-E</td>
+      <td>220 pS</td>
+      <td>E-to-E synaptic conductance step increase</td>
+    </tr>
+    <tr>
+      <td>WE-I</td>
+      <td>400 pS</td>
+      <td>E-to-I synaptic conductance step increase</td>
+    </tr>
+    <tr>
+      <td>WI-E</td>
+      <td>400 pS</td>
+      <td>I-to-E synaptic conductance step increase</td>
+    </tr>
+  </tbody>
+</table>
+
+### Network inputs
 
 All excitatory neurons in the network received three different feed-forward inputs (Figure 1b). Two inputs were spatially modulated, with rates that peaked at either end of the track and linearly varied across the track to reach zero at the opposite end. One input was a context cue that was position independent. All excitatory cells received unique Poisson spike trains from each of the three inputs at their position-dependent rates. Inhibitory cells received only the context input.
 
 The connection strength of each feed-forward input to each neuron was determined by an independent and a cluster-specific factor.
 
-First, strengths were randomly drawn from a log-normal distribution eμ+σN, where N is a zero-mean, unit variance Normal distribution, μ=lnWin2σin+Win2 and σ=lnσinWin2+1 for mean strength Win and standard deviation σin for the location cues, with σin replaced by σcontext for the context cue. Each environment and the sleep session had unique context cue input weights. For model simplicity, the mean input strength Win for all inputs was kept the same for both E and I cells in both the awake and sleep conditions, but the strength of the resulting context input was then scaled by some factor fx for each of the four cases to accommodate for the presence, or lack thereof, of the additional current input from the location cues. These scaling factors were set at a level that generated appropriate levels of population activity. During simulation of linear track traversal, the context cue to excitatory cells was scaled down by fE-awake to compensate for the added excitatory drive of the location cue inputs, and the context cue input to I cells was not changed (fI-awake=1). During sleep simulation, the context cue input to E cells was not scaled (fE-awake=1) but the context cue input to I cells was scaled down by fI-sleep.
+First, strengths were randomly drawn from a log-normal distribution $e^{\mu+\sigmaN}$, where $N$ is a zero-mean, unit variance Normal distribution, $\mu=ln\frac{W_{in}^{2}}{\sqrt{\sigma_{in}+W_{in}^{2}}}$ and $\sigma=\sqrt{ln\frac{\sigma_{in}}{W_{in}^{2}+1}}$ for mean strength $W_{in}$ and standard deviation $\sigma_{in}$ for the location cues, with $\sigma_{in}$ replaced by $\sigma_{context}$ for the context cue. Each environment and the sleep session had unique context cue input weights. For model simplicity, the mean input strength $W_{in}$ for all inputs was kept the same for both E and I cells in both the awake and sleep conditions, but the strength of the resulting context input was then scaled by some factor $f_{x}$ for each of the four cases to accommodate for the presence, or lack thereof, of the additional current input from the location cues. These scaling factors were set at a level that generated appropriate levels of population activity. During simulation of linear track traversal, the context cue to excitatory cells was scaled down by $f_{E-awake}$ to compensate for the added excitatory drive of the location cue inputs, and the context cue input to I cells was not changed ($f_{I-awake}=1$). During sleep simulation, the context cue input to E cells was not scaled ($f_{E-awake}=1$) but the context cue input to I cells was scaled down by $f_{I-sleep}$.
 
-Second, to incorporate cluster-dependent correlations in place fields, a small (≤4%) location cue bias was added to the randomly drawn feed-forward weights based on each neuron’s cluster membership. For each environment, the clusters were randomly shuffled and assigned a normalized rank bias value, such that the first cluster had a bias of –1 (corresponding to a rightward cue preference) and the last cluster had a bias of +1 (leftward cue preference). A neuron’s individual bias was calculated as the mean bias of all clusters it belonged to, multiplied by the scaling factor σbias. The left cue weight for each neuron was then scaled by 1 plus its bias, and the right cue weight was scaled by 1 minus its bias. In this way, the feed-forward input tuning was biased based on the mean rank of a neuron’s cluster affiliations for each environment. The addition of this bias produced correlations in cells’ spatial tunings based on cluster membership, but, importantly, this bias was not present during the sleep simulations, and it did not lead to high correlations of place-field maps between environments (Figure 9b).
+Second, to incorporate cluster-dependent correlations in place fields, a small ($\leq4%$) location cue bias was added to the randomly drawn feed-forward weights based on each neuron’s cluster membership. For each environment, the clusters were randomly shuffled and assigned a normalized rank bias value, such that the first cluster had a bias of –1 (corresponding to a rightward cue preference) and the last cluster had a bias of +1 (leftward cue preference). A neuron’s individual bias was calculated as the mean bias of all clusters it belonged to, multiplied by the scaling factor $\sigma_{bias}$. The left cue weight for each neuron was then scaled by 1 plus its bias, and the right cue weight was scaled by 1 minus its bias. In this way, the feed-forward input tuning was biased based on the mean rank of a neuron’s cluster affiliations for each environment. The addition of this bias produced correlations in cells’ spatial tunings based on cluster membership, but, importantly, this bias was not present during the sleep simulations, and it did not lead to high correlations of place-field maps between environments (Figure 9b).
 
-## Simulation
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rG</td>
+      <td>5000 Hz</td>
+      <td>Peak Poisson input rate</td>
+    </tr>
+    <tr>
+      <td>Win</td>
+      <td>72 pS</td>
+      <td>Mean strength of the input synapses</td>
+    </tr>
+    <tr>
+      <td>σin</td>
+      <td>5 pS</td>
+      <td>Standard deviation of the location cue input synapses</td>
+    </tr>
+    <tr>
+      <td>σcontext</td>
+      <td>1.25 pS</td>
+      <td>Standard deviation of the context cue input synapses</td>
+    </tr>
+    <tr>
+      <td>σbias</td>
+      <td>0.04</td>
+      <td>Location bias scale</td>
+    </tr>
+    <tr>
+      <td>fE-awake</td>
+      <td>0.1</td>
+      <td>E-cell context cue input scaling during awake simulation</td>
+    </tr>
+    <tr>
+      <td>fE-sleep</td>
+      <td>1</td>
+      <td>E-cell context cue input scaling during sleep simulation</td>
+    </tr>
+    <tr>
+      <td>fI-awake</td>
+      <td>1</td>
+      <td>I-cell context cue input scaling during awake simulation</td>
+    </tr>
+    <tr>
+      <td>fI-sleep</td>
+      <td>0.75</td>
+      <td>I-cell context cue input scaling during sleep simulation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Simulation
 
 For a given parameter set, we generated 10 random networks. We simulated each network for one sleep session of 120 s and for five 2 s long traversals of each of the two linear trajectories on each track. For the parameter grids in Figures 3 and 4, we simulated 20 networks with 300 s long sleep sessions in order to get more precise empirical estimates of the simulation statistics. For analysis comparing place-field reliability, we simulated 10 traversals of each trajectory.
 
 To compare coding for place vs time, we performed repeated simulations for the same networks at the fiducial parameter point with 1.0 x and 2.0 x of the original track traversal speed. We then combined all trials for both speed conditions to calculate both place fields and time fields for each cell from the same linear track traversal simulations. The place fields were calculated as described below (average firing rate within each of the fifty 2 cm long spatial bins across the track) and the time fields were similarly calculated but for fifty 40 ms time bins across the initial two seconds of all track traversals.
 
-## Place field analysis
+### Place field analysis
 
-## Place-field rate maps
+#### Place-field rate maps
 
 We followed the methods of Shin et al., 2019 to generate place fields from the spike trains. We calculated for each excitatory cell its trial-averaged occupancy-discounted firing rate in each 2 cm spatial bin of the 1 m long linear track. Note that the occupancy-discounting term is uniform across bins, so it has no impact in our model, because we simulated uniform movement speed. We then smoothed this with a Gaussian kernel with a 4 cm standard deviation. For statistics quantifying place-field properties and for Bayesian decoding, we considered only excitatory cells with place-field peaks exceeding 3 Hz as in Shin et al., 2019.
 
-## Place-field specificity
+#### Place-field specificity
 
 Place-field specificity was defined as 1 minus the fraction of the spatial bins in which the place field’s rate exceeded 25% of its maximum rate (Shin et al., 2019).
 
-## Place-field spatial information
+#### Place-field spatial information
 
-The spatial information of each cells’ place field was calculated asSpatial Information=∑ipirir¯log2rir¯
+The spatial information of each cells’ place field was calculated as
 
-where pi is the probability of being in spatial bin i, ri is the place field’s rate in spatial bin i, and r¯ is the mean rate of the place field (Sheintuch et al., 2023). Given the division of the track into 50 spatial bins, spatial information could vary between 0 for equal firing in all bins and log250≅5.6 for firing in only a single bin. Spatial information of 1 is equivalent, for example, to equal firing in exactly one half of the bins and no firing elsewhere.
+$$
+Spatial Information=\sumip_{i}\frac{r_{i}}{r¯}log_{2}\frac{r_{i}}{r¯}
+$$
 
-## Distribution of peaks
+where $p_{i}$ is the probability of being in spatial bin $i$, $r_{i}$ is the place field’s rate in spatial bin $i$, and $r¯$ is the mean rate of the place field (Sheintuch et al., 2023). Given the division of the track into 50 spatial bins, spatial information could vary between 0 for equal firing in all bins and $log_{2}50≅5.6$ for firing in only a single bin. Spatial information of 1 is equivalent, for example, to equal firing in exactly one half of the bins and no firing elsewhere.
 
-We used two measures to quantify the extent to which place-field peaks were uniformly distributed across the track. In our first measure, we calculated the Kullback-Leibler divergence of the distribution of peaks from a uniform distribution, asDKL=-∑ipidatalog2piuniformpidata
+#### Distribution of peaks
 
-where pidata is the fraction of cells with peak firing rates in the ith spatial bin and piuniform is 1/50, that is the fraction expected from a uniform distribution (Sheintuch et al., 2023). Similarly, the range for spatial information, DKL is bounded between zero for a perfectly uniform distribution of peaks and log250≅5.6 if all peaks were in a single bin. DKL of 1 is equivalent, for example, to all peaks being uniformly spread over one half of the bins in the track.
+We used two measures to quantify the extent to which place-field peaks were uniformly distributed across the track. In our first measure, we calculated the Kullback-Leibler divergence of the distribution of peaks from a uniform distribution, as
+
+$$
+D_{KL}=-\sumip_{i}^{data}log_{2}\frac{p_{i}^{uniform}}{p_{i}^{data}}
+$$
+
+where $p_{i}^{data}$ is the fraction of cells with peak firing rates in the $i^{th}$ spatial bin and $p_{i}^{uniform}$ is 1/50, that is the fraction expected from a uniform distribution (Sheintuch et al., 2023). Similarly, the range for spatial information, $D_{KL}$ is bounded between zero for a perfectly uniform distribution of peaks and $log_{2}50≅5.6$ if all peaks were in a single bin. $D_{KL}$ of 1 is equivalent, for example, to all peaks being uniformly spread over one half of the bins in the track.
 
 For our second measure, we calculated the fraction of place cells whose peak firing rate was in the central third of the track. Since inputs providing spatial information only peaked at the boundaries of the track, the central third was ubiquitously the most depleted of high firing rates.
 
-## Place-field map correlations
+#### Place-field map correlations
 
 To compare the similarity of place fields across different trajectories, we calculated the correlation between the place-field rate maps of each pair of trajectories. For each spatial bin, we calculated the Pearson correlation coefficient between the vector of the population place-field rates of the two trajectories. We then averaged the correlation coefficients across all spatial bins to get the correlation between the two trajectories.
 
-## PBE detection
+### PBE detection
 
 We detected candidate preplay events in the simulated data by identifying population-burst events (PBEs). During the simulated sleep period, we calculated the mean rate of the population of excitatory cells, which defines the population rate, smoothed with a Gaussian kernel (15 ms standard deviation). We then detected PBEs as periods of time when the population rate exceeded 1 standard deviation above the mean population rate for at least 30 ms. We also required the peak population rate to exceed 0.5 Hz (corresponding to 5–6 spikes per 30 ms among excitatory cells) in order for the rate fluctuation to qualify as a PBE. We then combined PBEs into a single event if their start and end times were separated by less than 10 ms.
 
-## Sharp-wave ripple detection
+### Sharp-wave ripple detection
 
 Because of the reduced number of recorded cells relative to the simulated data, we detected candidate events in the Shin et al., 2019 data with a method that incorporated the ripple band oscillation power in the local field potential (LFP) in addition to the population spiking activity. We first calculated the smoothed firing rate for each excitatory neuron by convolving its spikes with a Gaussian kernel (100 ms standard deviation) and capping at 1 to prevent bursting dominance. We then computed the z-scored population firing rate from the capped, smoothed single-neuron rates. Additionally, we calculated the z-scored, ripple-filtered envelope of the tetrode-averaged LFP. We then summed these two z-scores and detected peaks that exceeded 6 for at least 10 ms and exceeded the neighboring regions by at least 6 (MinPeakHeight, MinPeakWidth, and MinPeakProminence of the MATLAB function findpeaks, respectively). Candidate events were defined as periods around detected peaks, spanning from when the z-score sum first dipped below 0 for at least 5 ms before the peak to after the peak when it again dipped below 0 for at least 5 ms. We additionally required that the animal be immobile during the event.
 
-## Bayesian decoding
+### Bayesian decoding
 
 We performed Bayesian decoding of candidate preplay events following the methods of Shin et al., 2019. We performed decoding on all candidate events that had at least 5 active cells and exceeded at least 50 ms in duration. Spikes in the event were binned into 10 ms time bins. We decoded using the place fields for each trajectory independently. The description provided below is for the decoding using the place fields of one particular trajectory.
 
-For each time bin of each event, we calculated the location on the track represented by the neural spikes based on the place fields of the active cells using a memoryless Bayesian decoderP(x|s)=P(s|x)P(x)P(s)
+For each time bin of each event, we calculated the location on the track represented by the neural spikes based on the place fields of the active cells using a memoryless Bayesian decoder
 
-where P(x|s) is the probability of the animal being in spatial bin x given the set of spikes s that occurred in the time bin, P(s|x) is the probability of the spikes s given the animal is in spatial bin x (as given by the place fields), P(x) is the prior probability of the animal being in spatial bin x, and P(s) is the probability of the spikes s.
+$$
+P(x|s)=\frac{P(s|x)P(x)}{P(s)}
+$$
 
-We assumed a uniform prior probability of position, P(x). We assumed that the N cells firing during the event acted as independent Poisson processes in order to calculateP(s|x)=∏iN(τri(x))sie-τri(x)si!
+where $P(x|s)$ is the probability of the animal being in spatial bin $x$ given the set of spikes $s$ that occurred in the time bin, $P(s|x)$ is the probability of the spikes $s$ given the animal is in spatial bin $x$ (as given by the place fields), $P(x)$ is the prior probability of the animal being in spatial bin $x$, and $P(s)$ is the probability of the spikes $s$.
 
-where τ is the time bin window duration (10 ms), ri(x) is the place-field rate of cell i in spatial bin x and si is the number of spikes from cell i in the time bin.
+We assumed a uniform prior probability of position, $P(x)$. We assumed that the $N$ cells firing during the event acted as independent Poisson processes in order to calculate
 
-This allows us to calculate the posterior probability of position for each time bin asP(x|s)=C∏iNri(x)sie-τ∑iNri(x)
+$$
+P(s|x)=\prodiN\frac{(\taur_{i}(x))^{s_{i}}e^{-\taur_{i}(x)}}{s_{i}!}
+$$
 
-where C is a normalization constant, which accounts for the position-independent term, Ps.
+where $\tau$ is the time bin window duration (10 ms), $r_{i}(x)$ is the place-field rate of cell $i$ in spatial bin $x$ and $s_{i}$ is the number of spikes from cell $i$ in the time bin.
 
-## Bayesian decoding statistical analyses
+This allows us to calculate the posterior probability of position for each time bin as
+
+$$
+P(x|s)=C\prodiNr_{i}(x)^{s_{i}}e^{-\tau\sumiNr_{i}(x)}
+$$
+
+where $C$ is a normalization constant, which accounts for the position-independent term, $Ps$.
+
+### Bayesian decoding statistical analyses
 
 We analyzed the significance of preplay using the methods of Farooq et al., 2019 (see also Silva et al., 2015). We computed two measures of the sequence quality of each decoded event: the event’s absolute weighted correlation and its jump distance. The absolute weighted correlation is the absolute weighted Pearson’s correlation of decoded position across the event’s time bins. For each decoded event, we calculate the weighted correlation between space and time with MATLAB’s fitlm function using the decoded probability in each space-time bin (10 ms by 2 cm) as the weight for the corresponding location in the correlation. The absolute value of the weighted correlation is used in order to account for both forward and reverse preplay. The jump distance is the maximum of the distance between the positions of peak probability for any two adjacent 10 ms time bins in the event, quantified as fraction of the track length.
 
@@ -253,35 +521,43 @@ Second, we used a bootstrap test to compare the fraction of high-quality events�
 
 To test the significance of each event’s absolute weighted correlation individually, we calculated the event’s p-value as the fraction of the event’s own shuffles that had a higher absolute weighted correlation than the un-shuffled event (Figure 4f, bottom left).
 
-The spatial entropy H of a decoded event was calculated as the mean over its time bins of the entropy of the decoded position probability in each time bin, using the equationH=−∑ipilog2(pi)
+The spatial entropy $H$ of a decoded event was calculated as the mean over its time bins of the entropy of the decoded position probability in each time bin, using the equation
 
-for each time bin, where pi is the decoded position probability for spatial bin i.
+$$
+H=−\sumip_{i}log_{2}(p_{i})
+$$
 
-## Cell identity shuffled decoding
+for each time bin, where $p_{i}$ is the decoded position probability for spatial bin $i$.
+
+### Cell identity shuffled decoding
 
 We performed Bayesian decoding on the fiducial parameter set after shuffling cell identities in three different manners (Figures 6 and 7). To shuffle cells in a cluster-independent manner (‘Across-network shuffle’), we randomly shuffled the identity of cells during the sleep simulations. To shuffle cells within clusters (‘Within-cluster shuffle’), we randomly shuffled cell identity only between cells that shared membership in at least one cluster. To shuffle cells within only single clusters (‘Within-single-cluster shuffle’), we shuffled cells in the same manner as the within-cluster shuffle but excluded any cells from the shuffle that were in multiple clusters.
 
 To test for a correlation between spike rank during sleep PBEs and the order of place fields on the track (Figure 7), we calculated for each excitatory cell in each network of the fiducial parameter set its mean relative spike rank and correlated that with the location of its mean place field density on the track (Figure 7a). To account for event directionality, we calculated the mean relative rank after inverting the rank within events that had a negatively sloped decoded trajectory (Figure 7b). We calculated mean relative rank for each cell relative to all cells in the network (‘Within-network mean relative rank’) and relative to only cells that shared cluster membership with the cell (‘Within-cluster mean relative rank’). We then compared the slope of the linear regression between mean relative rank and place field location against the slope that results when applying the same analysis to each of the three methods of cell identify shuffles for both the within-network regression (Figure 7c) and the within-cluster regression (Figure 7d).
 
-## Small-world index
+### Small-world index
 
-The small-world index (SWI) was calculated following the method of Neal, 2015 (see also Neal, 2017). It was defined asSWI=(L-Ll)(Lr-Ll)×(C-Cr)(Cl-Cr)
+The small-world index (SWI) was calculated following the method of Neal, 2015 (see also Neal, 2017). It was defined as
 
-where L is the mean path distance and C is the clustering coefficient of the network. We calculate L as the mean over all ordered pairs of excitatory cells of the shortest directed path length from the first to the second cell. We calculate C as the ratio of the number of all triplets of excitatory cells that are connected in either direction over the number of all triplets that could form, following the methods of Fagiolo, 2007 for directed graphs. Ll and Cl are the expected values for a one-dimensional ring lattice network with the same size and connection probability (in which connections are local such that there are no connections between cells with a greater separation on the ring than that of any pairs without a connection). And Lr and Cr are the expected values for a random network of the same size and connection probability. A network with a high SWI index is therefore a network with both a high clustering coefficient, similar to a ring lattice network, and small mean path length, similar to a random network.
+$$
+SWI=\frac{(L-L_{l})}{(L_{r}-L_{l})}\times\frac{(C-C_{r})}{(C_{l}-C_{r})}
+$$
 
-For directed graphs of size n, average degree k, and global connection probability p:
+where $L$ is the mean path distance and $C$ is the clustering coefficient of the network. We calculate $L$ as the mean over all ordered pairs of excitatory cells of the shortest directed path length from the first to the second cell. We calculate $C$ as the ratio of the number of all triplets of excitatory cells that are connected in either direction over the number of all triplets that could form, following the methods of Fagiolo, 2007 for directed graphs. $L_{l}$ and $C_{l}$ are the expected values for a one-dimensional ring lattice network with the same size and connection probability (in which connections are local such that there are no connections between cells with a greater separation on the ring than that of any pairs without a connection). And $L_{r}$ and $C_{r}$ are the expected values for a random network of the same size and connection probability. A network with a high SWI index is therefore a network with both a high clustering coefficient, similar to a ring lattice network, and small mean path length, similar to a random network.
 
-Cr=p (Fagiolo, 2007),
+For directed graphs of size $n$, average degree $k$, and global connection probability $p$:
 
-Lr=ln(n)-γln(k)+0.5 (Fronczak et al., 2004),
+$C_{r}=p$ (Fagiolo, 2007),
 
-Cl=3(k−2)4(k−1) (Neal, 2015)
+$L_{r}=\frac{ln(n)-\gamma}{ln(k)}+0.5$ (Fronczak et al., 2004),
 
-Ll=n2k+0.5 (Neal, 2015; Fronczak et al., 2004)
+$C_{l}=\frac{3(k−2)}{4(k−1)}$ (Neal, 2015)
 
-where γ is the Euler-Mascheroni constant.
+$L_{l}=\frac{n}{2k}+0.5$ (Neal, 2015; Fronczak et al., 2004)
 
-## Active cluster analysis
+where $\gamma$ is the Euler-Mascheroni constant.
+
+### Active cluster analysis
 
 To quantify cluster activation (Figure 5), we calculated the population rate for each cluster individually as the mean firing rate of all excitatory cells belonging to the cluster smoothed with a Gaussian kernel (15 ms standard deviation). A cluster was defined as ‘active’ if at any point its population rate exceeded twice that of any other cluster during a PBE. The active clusters’ duration of activation was defined as the duration for which it was the most active cluster.
 
@@ -289,10 +565,10 @@ To test whether the sequence of activation in events with three active clusters 
 
 To determine if there was a relationship between the number of active clusters within an event and it’s preplay quality, we performed a Spearman’s rank correlation between the number of active clusters and the normalized absolute weighted correlation across all events at the fiducial parameter set. The absolute weighted correlations were z-scored based on the absolute weighted correlations of the time-bin shuffled events that had the same number of active clusters.
 
-## Experimental data
+### Experimental data
 
 Electrophysiological data was reanalyzed from the hippocampal CA1 recordings first published in Shin et al., 2019. All place-field data (Figure 3a) came from the six rats’ first experience on the W-track spatial alternation task. All preplay data (Figure 4a and b) came from the six rats’ first sleep-box session, which lasted 20–30 min and occurred immediately before their first experience on the W-track.
 
-## Code
+### Code
 
 Simulations and analysis were performed in MATLAB with custom code. Code available at https://github.com/primon23/Preplay_paper, copy archived at Miller, 2024.

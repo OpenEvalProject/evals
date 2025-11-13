@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.26724.001 A leading theory holds that neurodevelopmental brain disorders arise from imbalances in excitatory and inhibitory (E/I) brain circuitry. However, it is unclear whether this one-dimensional model is rich enough to capture the multiple neural circuit alterations underlying brain disorders. Here, we combined computational simulations with analysis of in vivo two-photon Ca 2+ imaging data from somatosensory cortex of Fmr1 knock-out (KO) mice, a model of Fragile-X Syndrome, to test the E/I imbalance theory. We found that: (1) The E/I imbalance model cannot account for joint alterations in the observed neural firing rates and correlations; (2) Neural circuit function is vastly more sensitive to changes in some cellular components over others; (3) The direction of circuit alterations in Fmr1 KO mice changes across development. These findings suggest that the basic E/I imbalance model should be updated to higher dimensional models that can better capture the multidimensional computational functions of neural circuits.
+A leading theory holds that neurodevelopmental brain disorders arise from imbalances in excitatory and inhibitory (E/I) brain circuitry. However, it is unclear whether this one-dimensional model is rich enough to capture the multiple neural circuit alterations underlying brain disorders. Here, we combined computational simulations with analysis of in vivo two-photon Ca2+ imaging data from somatosensory cortex of Fmr1 knock-out (KO) mice, a model of Fragile-X Syndrome, to test the E/I imbalance theory. We found that: (1) The E/I imbalance model cannot account for joint alterations in the observed neural firing rates and correlations; (2) Neural circuit function is vastly more sensitive to changes in some cellular components over others; (3) The direction of circuit alterations in Fmr1 KO mice changes across development. These findings suggest that the basic E/I imbalance model should be updated to higher dimensional models that can better capture the multidimensional computational functions of neural circuits.
 
 ## Introduction
 
@@ -74,7 +74,7 @@ To synthesize the findings from all simulations, for each altered parameter we p
 
 In summary, these simulations indicate that the L2/3 somatosensory cortex circuit has extremely varied sensitivities to changes in its cellular components and that the eventual circuit-level consequences cannot be predicted from knowledge of the class of the perturbed neurotransmitter alone. Since the E/I imbalance model groups all excitatory and inhibitory components as respective equals, it cannot account for these results.
 
-## Firing rates and correlations from the logistic model
+### Firing rates and correlations from the logistic model
 
 In the above analysis, we investigated how low-level circuit components affect a high-level circuit input-output function, as parameterized by the slope and threshold of fitted logistic functions. But how is this logistic input-output function related to more common measures of neural population activity, such as firing rates and pairwise correlations between neurons? To investigate this, we considered the following reduced statistical model of cortical activity. We assumed for simplicity that the magnitude of the total input to the L2/3 circuit can be described by a Gaussian distributed random variable, with zero mean and unit standard deviation (Figure 4A lower left). Then we described each L2/3 neuron’s input-output as a logistic function as before (Figure 4A upper left), with threshold and slope defined relative to the Gaussian input’s mean and standard deviation, respectively. Given this model, we can numerically calculate the probability distribution over a neuron’s firing probability, which in general is skewed and non-Gaussian (Figure 4A upper right). From this function, we compute (Materials and methods) both the neuron’s mean firing probability and the pairwise correlation of two identical neurons following this profile (Figure 4A lower right). Example samples from the model are illustrated in Figure 4B.
 
@@ -86,6 +86,18 @@ Neural firing rates and correlations had qualitatively different dependencies on
 
 Previous studies have found evidence for an E/I imbalance in ASD (Lee et al., 2017; Nelson and Valakh, 2015). Fragile-X syndrome is the leading inherited cause of ASD, and also carries alterations in excitability (Contractor et al., 2015). We aimed to interpret our Fmr1 KO Ca2+ imaging data (Figure 1C) via the 2D logistic model. Since our earlier analysis found substantial within-animal heterogeneity in neural activity levels in both genotypes (Figure 1C), we extended the 2D logistic model for single neurons to a 5D neural population version that captured cell-to-cell heterogeneity. The three extra parameters represented the standard deviations and correlation in slope and threshold parameters across the neural population (see Materials and methods for details). We fit the parameters of the logistic model to reproduce the same neural population Ca2+ imaging data presented in Figure 1C. Given the three summary statistics from each animal (firing rate mean and s.d., and mean pairwise correlation), we used a gradient descent algorithm to find the five parameters of the population-level version of the logistic model that best matched the activity statistics (see Materials and methods). The output statistics of the fitted models matched well those of the target data (Figure 5–figure supplement 1). Example neural population activity patterns drawn from the mean model fits for each group are shown in Figure 5A, along with the fitted slope-threshold functions (Figure 5A insets), to be compared with the Ca2+ imaging rasters in Figure 1C. We also plot the full 5D parameter fits for all animals in Figure 5–figure supplement 2. For the rest of the analysis, we focus on the mean slope and mean threshold parameters, which showed the most prominent changes. In Figure 5B, we plot the mean slope and mean threshold fits on top of the previously calculated (Figure 4C) 2D slope-threshold maps of firing rate and correlation. We found that in young animals, P9–11, most points were scattered at high values of both slope and threshold (Figure 5B left). With age, the parameter fits for both genotypes moved south-west toward the low slope and low threshold region of parameter space (Figure 5B center and right). The mean location of the cloud of points at each developmental age differed between WT and KO. We plot the direction of shift in group mean from WT to KO in Figure 5C. In young animals, P9–11 and P14–16, the KO group had both higher slope and higher threshold than WT, whereas in adult animals, P30–40, the KO group had a lower slope and lower threshold than WT. These results demonstrate an opposite direction of circuit parameter change in young Fragile-X mice compared to adults, which was not be uncovered by measures of neural firing rates and correlations (Figure 1C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/26724/elife-26724-fig5-v3.jpg)
+
+**Figure 5.:** (A) Example samples from the fitted logistic models, corresponding to the six groups shown in panel A. Inset shows group mean fitted logistic function, dashed vertical line represents zero. (B) Fitted logistic mean slope and mean threshold values for data from each WT (black circles) and Fmr1 KO (red circles) animal. Values overlaid on same firing rate (top) and correlation (bottom) maps from Figure 4C. (C) Shift in mean logistic slope and threshold values from WT to KO for P9–11 (orange), P14–16 (red) and P30–40 (brown). Grey ellipses represent 95% confidence intervals (Materials and methods).
+
+![Figure 5–figure supplement 1.](https://cdn.elifesciences.org/articles/26724/elife-26724-fig5-figsupp1-v3.jpg)
+
+**Figure 5–figure supplement 1.:** Black circles are WT, red are Fmr1 KO. Each data point corresponds to a recording from a single animal. Each plot shows model prediction versus raw data target value. Plots in each row correspond to data from a different age group (P9–11, P14–16, and P30–40), and each column corresponds to one of the three target activity statistics (mean firing rate, s.d. in firing rate, and mean pairwise correlation). Blue line is identity.
+
+![Figure 5–figure supplement 2.](https://cdn.elifesciences.org/articles/26724/elife-26724-fig5-figsupp2-v3.jpg)
+
+**Figure 5–figure supplement 2.:** Black symbols are WT, red are Fmr1 KO. Each data point corresponds to a recording from a single animal, bars correspond to group means. In all cases, horizontal bar with asterisk indicates a significant difference in group means (p<0.05 via bootstrapping). (A) Logistic threshold parameter mean (left) and s.d. (right). (B) Logistic slope parameter mean (left) and s.d. (right). (C) Slope-threshold correlation parameter.
+
 Earlier we asked how sensitive the logistic model slope and threshold parameters were to alterations in the many underlying neural circuit components (Figure 3). In a similar way, we can also ask how sensitive the neural firing rates and correlations are to alterations in the logistic slope and threshold parameters. This is important since inspection of the two-dimensional maps in Figure 3C shows that these sensitivities will differ depending on starting location within the slope-threshold space. To quantify this effect, we calculated the sensitivity of both the firing rate and correlations to small changes in the slope and threshold (Figure 6A–B, see Materials and methods), quantified as the partial derivatives local to the fitted logistic parameter values for each animal (black and red circles in Figure 5B). In general, increasing the slope or decreasing the threshold always increased both firing rates and correlations, as can be predicted from Figure 5B. However, the magnitude of sensitivities varied across animals. We found only minor differences in sensitivities between genotypes (Figure 6C–D), and as a result we pooled the sensitivity measurements across genotypes to test for statistical differences in sensitivity with developmental age. In young animals, P9–11, changes in the logistic threshold (solid bars in Figure 6) had substantial effects on both firing rates and correlation. This sensitivity decreased with age (p≤0.013 for firing rates, p<0.01 for correlations from P9–11 to P14–16), so that in adult animals, P30-40, changes in threshold had relatively little effect on neural activity statistics. A different picture emerged for the logistic slope parameter (striped bars in Figure 6). There, the firing rate sensitivity increased from P9–11 to P14–16 (p<1e-6) (Figure 6C), while correlation sensitivity stayed approximately constant (p≥0.18) (Figure 6D). These results show that the quantitative relationships between neural activity statistics and the parameters of the logistic model, and perhaps also the underlying circuit components, are not fixed across development.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/26724/elife-26724-fig6-v3.jpg)
@@ -93,6 +105,14 @@ Earlier we asked how sensitive the logistic model slope and threshold parameters
 **Figure 6.:** (A–B) Sensitivity to a parameter is calculated about a given point in parameter space. In this hypothetical example, we plot a slope-threshold parameter fit at the red circle on the firing rate contour map (A). The firing rate varies non-linearly if the threshold is varied away from this point (B). Sensitivity is calculated as the local derivative, or slope of the tangent, about the target point. (C–D) Sensitivity of firing probability (C) and pairwise correlations (D) to change in threshold (solid bars) and slope (striped bars) parameters of logistic model, about the fitted parameter values for each animal (circles) displayed in Figure 5B. Bars represent group means. Each statistical test compares the mean values between adjacent pairs of age groups, where the data were pooled between genotypes.
 
 What are the functional implications of these alterations in firing rates and correlations in Fragile-X mice across development? To address this, we calculated the entropy of the neural population activity for the data from each animal. Entropy is a quantity from information theory, measured in bits, that puts a hard upper bound on the amount of information that can be represented by any coding system (Cover and Thomas, 2006). Intuitively, the entropy measures how uniform the neural population activity pattern distribution is: it is large if the circuit exhibits many different activity patterns over time, and small if only a few activity patterns dominate. Entropy is an appealing measure for the present problem because it is sensitive both to neural firing rates and to correlations at all orders. It is typically highest when firing rates are high and correlations are low. Although entropy is notoriously difficult to calculate for large neural populations because most estimation methods require impractically long data recordings (Quian Quiroga and Panzeri, 2009), we recently developed a new statistical method for this purpose, called the population tracking model, that scales well to large numbers of neurons, even for limited data (O'Donnell, 2017b). This model matches both the synchrony distribution for the number of neurons simultaneously active, and the variations in individual cell-to-cell firing rates. We fit this population tracking model to the same Ca2+ imaging data as analyzed above (Figure 7). An intermediate step in estimating the neural entropy involves calculating a low-parameter approximation of the entire probability distribution over all 2N neural population activity patterns, where N is the number of neurons. The cumulatives of these probability distributions calculated for 50-neuron subsets of the recordings are shown in Figure 7A. In young animals P9–11, a small number of activity patterns accounts for a large fraction of the probability mass (Figure 7A left). For example, based on these curves, 50% of the time we would expect to see the same 1000–10,000 patterns out of a possible total 250 ≈ 1015 patterns. In contrast, in older animals P14–16 and P30–40 the cumulative distributions shift rightwards so that more patterns are typically observed (Figure 7A center, right). In these cases, around 1,000,000 patterns are needed to account for 50% probability mass.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/26724/elife-26724-fig7-v3.jpg)
+
+**Figure 7.:** (A) Cumulative probability mass as a function of the number of patterns. Patterns ordered from most probable to least probable. Thin lines are mean across many randomly-chosen 50-neuron subsets from a given animal, and thick lines represent means across all animals of a given genotype. (B) Entropy per neuron as a function of the number of neurons analyzed. Thin lines are mean across many randomly chosen subsets for a given animal, thick lines are group mean of double exponential fits to the data (see Materials and methods). Age groups (left to right) are as in panel A. (C) Estimated entropy/neuron for 100 neuron populations. Circles represent individual animals, bars are group means.
+
+![Figure 7–figure supplement 1.](https://cdn.elifesciences.org/articles/26724/elife-26724-fig7-figsupp1-v3.jpg)
+
+**Figure 7–figure supplement 1.:** Black symbols are WT, red are Fmr1 KO. Crosses are P9–11, circles P14–16, triangles P30–40. Blue line is identity. The R2 value of the identity line is reported in the inset, which represents the fraction of the variance of the logistic model entropies explained by this line.
 
 Instead of attempting to quantify these shifts by asking how many patterns are needed to cross an arbitrary threshold of probability mass, we instead calculated the entropy, which takes into account the shape of the entire probability distribution. The entropy depends on the number of neurons analyzed, so we normalized all estimates to calculate the entropy per neuron (Figure 7B–C). Since we are treating neurons as binary, the entropy/neuron was bounded between 0 and 1 bits. For all age groups, and for both WT and Fmr1 KO animals, entropy/neuron progressively decreased with the number of neurons analyzed (Figure 7B). Because each imaging session captured a different number of neurons (range 40–198, median 97), we fit the entropy/neuron versus number of neurons data with a double exponential function (see Materials and methods) and use the fit to provide a standardized estimate of the entropy/neuron for 100-neuron populations (Figure 7C). In WT animals, entropy/neuron showed a non-monotonic trajectory across development (O'Donnell, 2017b). At P9–11 it was low, 0.38 bits (95% c.i. [0.35:0.41]), before increasing at P14–16 (p<0.001) to 0.50 bits (95% c.i. [0.48:0.52]), before decreasing again at P30–40 (p=0.028) to 0.45 bits (95% c.i. [0.42:0.48]). We found a different entropy trajectory in Fmr1 KO animals. There, although entropy/neuron also began low at 0.34 bits (95% c.i. [0.30:0.39]), not different from WT (p=0.19), when it increased at P14–16 (p<0.001) to 0.465 bits (95% c.i. [0.45:0.48]) it remained lower than for WT (p=0.048). Finally, instead of decreasing as in the WT case, entropy continued to increase in P30–40 Fmr1 KO animals (p=0.033) to 0.51 bits (95% c.i. [0.47:0.55]), higher than WT (p=0.034). These entropy values estimated directly from Ca2+ imaging data agreed well with entropy estimates for synthetic data sampled from the previously fit logistic models (Figure 7–figure supplement 1). In summary, unlike WT animals, Fmr1 KO mice showed a monotonically increasing entropy/neuron from P9–11 to P30–40. Furthermore, the direction of change in entropy between P14–16 and P30–40 was opposite for WT and Fmr1 KO animals, decreasing in the former and increasing in the latter.
 
@@ -120,23 +140,604 @@ One potential use of simple parametric circuit models such as the ones we employ
 
 ## Materials and methods
 
-## Mouse in vivo calcium imaging recording
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (mus musculus)</td>
+      <td>c57bl/6J strain of wild type mice</td>
+      <td>Jackson Labs</td>
+      <td>IMSR_JAX:000664</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (mus musculus)</td>
+      <td>Fmr1 knockout mouse on a c57 background</td>
+      <td>William Greenough (originally from Dutch-Belgian Fragile X Consortium)</td>
+      <td>RRID:MGI:2665400</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>OGB1 AM (Oregon Green BAPTA-1 AM)</td>
+      <td>Molecular Probes (ThermoFisher Scientific)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>BRIAN Simulator</td>
+      <td>http://briansimulator.org</td>
+      <td>RRID:SCR_002998</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MATLAB</td>
+      <td>http://www.mathworks.com/products/matlab</td>
+      <td>RRID:SCR_001622</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse in vivo calcium imaging recording
 
 All Ca2+ imaging data were published previously (Gonçalves et al., 2013). Briefly, data were collected from male and female C57Bl/6 wild-type and Fmr1 KO mice at P9–40. For each group the animal numbers were: P9-11, n = 13 WT and n = 9 Fmr1 KO; P14-16, n = 8 WT and n = 10 Fmr1 KO; P30-40, n = 7 WT and n = 6 Fmr1 KO. There were variations in the number of cells recorded from each animal. The range of cell numbers for each group were: P9-11, 49–198 cells in WT and 84–144 cells in Fmr1 KO; P14-16, 65–119 cells in WT and 40–149 cells in Fmr1 KO; P30-40, 60–114 cells in WT and 69–105 cells in Fmr1 KO. Mice were anesthetized with isoflurane, and a cranial window was fitted over primary somatosensory cortex by stereotaxic coordinates. Mice were then transferred to a two-photon microscope and headfixed to the stage while still under isoflurane anesthesia. 2–4 injections of the Ca2+ sensitive Oregon-Green BAPTA-1 (OGB) dye and sulforhodamine-101 (to visualize astrocytes) were injected 200 um below the dura. Calcium imaging was performed using a Ti-Sapphire Chameleon Ultra II laser (Coherent) tuned to 800 nm. Imaging in unanesthetized mice began within 30–60 min of stopping the flow of isoflurane after the last OGB injection. Images were acquired using ScanImage software (Pologruto et al., 2004) written in MATLAB (MathWorks; RRID:SCR_001622). Whole-field images were collected using a 20 × 0.95 NA objective (Olympus) at an acquisition speed of 3.9 Hz (512 × 128 pixels). Several 3 min movies were concatenated and brief segments of motion artifacts were removed (always <10 s total). Data were corrected for x–y drift. Cell contours were automatically detected and the average ΔF/F signal of each cell body was calculated at each time point. The baseline F for each cell was calculated as the mean ROI fluorescence across the entire 3 min timeseries. Neuronal and neuropil signals were analyzed separately and astrocytic signals were excluded from analysis. Each ΔF/F trace was low-pass filtered using a Butterworth filter (coefficient of 0.16) and deconvolved with a 2 s single-exponential kernel (Yaksi and Friedrich, 2006). To remove baseline noise, the standard deviation of all points below zero in each deconvolved trace was calculated, multiplied by two, and set as the positive threshold level below which all points in the deconvolved trace were set to zero. Estimated firing rates of the neurons, ri(t), were then obtained by multiplying the deconvolved trace by a factor of 78.4, previously derived empirically from cell-attached recordings in vivo (Golshani et al., 2009).
 
-## Computational methods
+### Computational methods
 
 Data analysis and logistic model calculations were done using MATLAB (Mathworks; RRID:SCR_001622). All simulation codes are available online at https://github.com/cianodonnell/ODonnelletal_2017_imbalances (copy archived at https://github.com/elifesciences-publications/ODonnelletal_2017_imbalances), and the population tracking model code (O'Donnell et al., 2017) is available at https://github.com/cianodonnell/PopulationTracking. (copy archived at https://github.com/elifesciences-publications/PopulationTracking)
 
-## Detailed layer 2/3 model simulations
+### Detailed layer 2/3 model simulations
 
-Layer 2/3 model simulations (Figures 1 and 2) were implemented with the Python-based simulator Brian 2 (http://briansimulator.org; RRID:SCR_002998) (Goodman and Brette, 2009), and results analyzed with MATLAB (Mathworks; RRID:SCR_001622). The model consisted of four populations of reciprocally connected leaky integrate-and-fire neurons representing a L2/3 somatosensory barrel circuit: 1700 excitatory neurons, 70 PV inhibitory neurons, 115 5HT3AR inhibitory neurons, and 45 SOM inhibitory neurons, driven by a separate population of 1500 excitatory spike sources representing input from L4. Cell numbers were estimated by combining layer-specific excitatory and inhibitory cell count information from (Lefort et al., 2009) with the approximate percentages of the three inhibitory cell groups given by (Petersen and Crochet, 2013). The voltage V of each neuron evolved asdVdt = ( Rin( ge(Erev,e - V) + gi(Erev,i - V) ) - (V-Vrest) )/τm
+Layer 2/3 model simulations (Figures 1 and 2) were implemented with the Python-based simulator Brian 2 (http://briansimulator.org; RRID:SCR_002998) (Goodman and Brette, 2009), and results analyzed with MATLAB (Mathworks; RRID:SCR_001622). The model consisted of four populations of reciprocally connected leaky integrate-and-fire neurons representing a L2/3 somatosensory barrel circuit: 1700 excitatory neurons, 70 PV inhibitory neurons, 115 5HT3AR inhibitory neurons, and 45 SOM inhibitory neurons, driven by a separate population of 1500 excitatory spike sources representing input from L4. Cell numbers were estimated by combining layer-specific excitatory and inhibitory cell count information from (Lefort et al., 2009) with the approximate percentages of the three inhibitory cell groups given by (Petersen and Crochet, 2013). The voltage V of each neuron evolved as
 
-where Rin is the input resistance, Erev,eandErev,i are the excitatory and inhibitory synaptic reversal potentials respectively, τm is the membrane time constant, and geandgi are the summed excitatory and inhibitory synaptic input conductances, respectively. Between input events the total excitatory synaptic condunctance ge evolved in time according to the equationdgedt=-ge/τsyn,e
+$$
+\frac{dV}{dt}=(R_{in}(g_{e}(E_{rev,e}-V)+g_{i}(E_{rev,i}-V))-(V-V_{rest}))/\tau_{m}
+$$
 
-where τsyn,e is the excitatory synaptic time constant. Similar equations governed the inhibitory conductances. When a spike arrived at a synapse, a Bernoulli random number was drawn with release probability set according to the particular synaptic connection type. If this number was equal to one, then the total synaptic conductance for that neuron was instantaneously incremented by the specific amplitude of the chosen conductance for that individual synapse, indexed j: ge→ge+g-j.
+where $R_{in}$ is the input resistance, $E_{rev,e}andE_{rev,i}$ are the excitatory and inhibitory synaptic reversal potentials respectively, $\tau_{m}$ is the membrane time constant, and $g_{e}andg_{i}$ are the summed excitatory and inhibitory synaptic input conductances, respectively. Between input events the total excitatory synaptic condunctance $g_{e}$ evolved in time according to the equation
 
-All synaptic connections were formed probabilistically by drawing independent random Bernoulli variables with connection type-specific probabilities. Synaptic PSP amplitudes were drawn independently for each synapse from a log-normal distribution constrained by the experimentally reported mean and median values for each particular connection type. The maximum post-synaptic potential amplitude was set to 8 mV. Synapses in the model were conductance-based, but since synaptic strengths reported in the literature were typically in terms of EPSP/IPSP amplitude, in accordance with how the experiments were performed (Avermann et al., 2012), we set each maximal synaptic conductance as the value needed to generate a PSP of the desired amplitude when the target neuron started at resting potential in the case of EPSPs or −55 mV in the case of IPSPs, which we computed analytically. Refractory periods were calculated as the inter-spike-interval corresponding to the maximal experimentally reported firing rate. Release probability and synaptic strength values for unconnected neurons are excluded from Table 1. Excitatory synaptic time constants were set at 2 ms, which is typical for the fast component of AMPA receptor responses, but could not be estimated from the PSP statistics in (Avermann et al., 2012) because of masking by the slower membrane time constant. The mathematical form of our model meant that inhibitory synaptic time constants needed to be equal for all incoming inhibitory synapses to a neuron. We set these to 40 ms for E, 5HT3AR and SOM neurons and 16 ms for PV neurons, which were the typical values of the IPSP decay time constants in the (Avermann et al., 2012) dataset. Due to lack of direct data for this circuit, connection probabilities for synapses from L4 E neurons to E, PV and SOM L2/3 neurons was set to a reasonable cortical value of 0.15, while 5HT3AR neurons did not receive any input from L4 (Gentet et al., 2012). Similarly due to a lack of direct data, we set synaptic release probabilities for connections from L4 to L2/3 neurons to a typical cortical value of 0.25, while mean and median L4 excitatory PSP amplitudes onto L2/3 PV and SOM were set to 0.8 and 0.48 mV, respectively, to match reported data for L4 EPSP amplitudes onto L2/3 E neurons (Lefort et al., 2009). The differential equations were solved using the forward Euler method with an integration timestep of 0.01 ms. Each simulation run was 50 ms long, during which we recorded whether or not each neuron responded. In the rare cases where a neuron spiked more than once, we disregarded the extra spikes. L4 neuron dynamics were not explicitly simulated, but instead modeled only as a set of output spike trains. After selecting the subset of active L4 neurons, spike times were drawn randomly from a Gaussian distribution with standard deviation of 2 ms. We repeated the simulations 10 times for this identical input pattern to average over the noise due to probabilistic vesicle release. We repeated this procedure further 10 times for different random allocations of the ‘ON’ inputs. Then, a neuron’s ON probability was defined as the fraction of these 10×10=100 simulations for which it responded with one or more spikes. Finally, we repeated the entire procedure for varying levels of L4 input sparsity.
+$$
+\frac{dg_{e}}{dt}=-g_{e}/\tau_{syn,e}
+$$
+
+where τsyn,e is the excitatory synaptic time constant. Similar equations governed the inhibitory conductances. When a spike arrived at a synapse, a Bernoulli random number was drawn with release probability set according to the particular synaptic connection type. If this number was equal to one, then the total synaptic conductance for that neuron was instantaneously incremented by the specific amplitude of the chosen conductance for that individual synapse, indexed j: $g_{e}→g_{e}+g-_{j}$.
+
+All synaptic connections were formed probabilistically by drawing independent random Bernoulli variables with connection type-specific probabilities. Synaptic PSP amplitudes were drawn independently for each synapse from a log-normal distribution constrained by the experimentally reported mean and median values for each particular connection type. The maximum post-synaptic potential amplitude was set to 8 mV. Synapses in the model were conductance-based, but since synaptic strengths reported in the literature were typically in terms of EPSP/IPSP amplitude, in accordance with how the experiments were performed (Avermann et al., 2012), we set each maximal synaptic conductance as the value needed to generate a PSP of the desired amplitude when the target neuron started at resting potential in the case of EPSPs or −55 mV in the case of IPSPs, which we computed analytically. Refractory periods were calculated as the inter-spike-interval corresponding to the maximal experimentally reported firing rate. Release probability and synaptic strength values for unconnected neurons are excluded from Table 1. Excitatory synaptic time constants were set at 2 ms, which is typical for the fast component of AMPA receptor responses, but could not be estimated from the PSP statistics in (Avermann et al., 2012) because of masking by the slower membrane time constant. The mathematical form of our model meant that inhibitory synaptic time constants needed to be equal for all incoming inhibitory synapses to a neuron. We set these to 40 ms for E, 5HT3AR and SOM neurons and 16 ms for PV neurons, which were the typical values of the IPSP decay time constants in the (Avermann et al., 2012) dataset. Due to lack of direct data for this circuit, connection probabilities for synapses from L4 E neurons to E, PV and SOM L2/3 neurons was set to a reasonable cortical value of 0.15, while 5HT3AR neurons did not receive any input from L4 (Gentet et al., 2012). Similarly due to a lack of direct data, we set synaptic release probabilities for connections from L4 to L2/3 neurons to a typical cortical value of 0.25, while mean and median L4 excitatory PSP amplitudes onto L2/3 PV and SOM were set to 0.8 and 0.48 mV, respectively, to match reported data for L4 EPSP amplitudes onto L2/3 E neurons (Lefort et al., 2009). The differential equations were solved using the forward Euler method with an integration timestep of 0.01 ms. Each simulation run was 50 ms long, during which we recorded whether or not each neuron responded. In the rare cases where a neuron spiked more than once, we disregarded the extra spikes. L4 neuron dynamics were not explicitly simulated, but instead modeled only as a set of output spike trains. After selecting the subset of active L4 neurons, spike times were drawn randomly from a Gaussian distribution with standard deviation of 2 ms. We repeated the simulations 10 times for this identical input pattern to average over the noise due to probabilistic vesicle release. We repeated this procedure further 10 times for different random allocations of the ‘ON’ inputs. Then, a neuron’s ON probability was defined as the fraction of these $10\times10=100$ simulations for which it responded with one or more spikes. Finally, we repeated the entire procedure for varying levels of L4 input sparsity.
+
+**Table 1.**
+ L2/3 computational circuit model parameters and mean slope and threshold shifts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Source</th>
+      <th>+20% effect on slope, thresh</th>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Source</th>
+      <th>+20% effect on slope, thresh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NE</td>
+      <td>1700</td>
+      <td>[1]</td>
+      <td>slope: 6.4 × 10−3 thresh: 5.16</td>
+      <td>pconI5htE</td>
+      <td>0.465</td>
+      <td>[2]</td>
+      <td>slope: −3.25 × 10−3 thresh: −0.103</td>
+    </tr>
+    <tr>
+      <td>NIpv</td>
+      <td>70</td>
+      <td>[1]</td>
+      <td>slope: 4.3 × 10−3 thresh: −1.51</td>
+      <td>pconI5htIpv</td>
+      <td>0.38</td>
+      <td>[2]</td>
+      <td>slope: −7.13 × 10−3 thresh: −0.298</td>
+    </tr>
+    <tr>
+      <td>NI5ht</td>
+      <td>115</td>
+      <td>[1]</td>
+      <td>slope: −0.0104 thresh: −0.58</td>
+      <td>pconI5htI5ht</td>
+      <td>0.38</td>
+      <td>[2]</td>
+      <td>slope: 6.07 × 10−4 thresh: 0.175</td>
+    </tr>
+    <tr>
+      <td>NIsom</td>
+      <td>45</td>
+      <td>[1]</td>
+      <td>slope: −0.001 thresh: −0.83</td>
+      <td>pconI5htIsom</td>
+      <td>0</td>
+      <td>No data</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>NEL4</td>
+      <td>1500</td>
+      <td>[1]</td>
+      <td>slope: −0.106 thresh: 3.43</td>
+      <td>pconIsomE</td>
+      <td>0.5</td>
+      <td>[5]</td>
+      <td>slope: −6.29 × 10−3 thresh: −0.8919</td>
+    </tr>
+    <tr>
+      <td>VrestE</td>
+      <td>−68 mV</td>
+      <td>[2]</td>
+      <td>slope: 0.049 thresh: −6.09</td>
+      <td>pconIsomIpv</td>
+      <td>0</td>
+      <td>No data</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>VrestIpv</td>
+      <td>−68 mV</td>
+      <td>[2]</td>
+      <td>slope: −0.016 thresh: −0.963</td>
+      <td>pconIsomI5ht</td>
+      <td>0</td>
+      <td>No data</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>VrestI5ht</td>
+      <td>−62 mV</td>
+      <td>[2]</td>
+      <td>slope: −9.48 × 10−4 thresh: 0.205</td>
+      <td>pconIsomIsom</td>
+      <td>0</td>
+      <td>No data</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>VrestIsom</td>
+      <td>−57 mV</td>
+      <td>[3]</td>
+      <td>slope: 3.58 × 10−3 thresh: 0.034</td>
+      <td>prelEL4E</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −0.112 thresh: 4.21</td>
+    </tr>
+    <tr>
+      <td>VthE</td>
+      <td>−38 mV</td>
+      <td>[2]</td>
+      <td>slope: −3.76 × 10−3 thresh: −0.381</td>
+      <td>prelEL4Ipv</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: 0.0103 thresh: 0.682</td>
+    </tr>
+    <tr>
+      <td>VthIpv</td>
+      <td>−37.4 mV</td>
+      <td>[2]</td>
+      <td>slope: 3.87 × 10−3 thresh: 0.221</td>
+      <td>prelEL4Isom</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −2.06 × 10−3 thresh: −0.537</td>
+    </tr>
+    <tr>
+      <td>VthI5ht</td>
+      <td>−36 mV</td>
+      <td>[2]</td>
+      <td>slope: −1.12 × 10−3 thresh: 0.013</td>
+      <td>prelEE</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: 4.99 × 10−3 thresh: 6.074</td>
+    </tr>
+    <tr>
+      <td>VthIsom</td>
+      <td>−40 mV</td>
+      <td>[3]</td>
+      <td>slope: −3.26 × 10−3 thresh: −0.083</td>
+      <td>prelEIpv</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −4.04 × 10−4 thresh: 0.163</td>
+    </tr>
+    <tr>
+      <td>RinE</td>
+      <td>160 MΩ</td>
+      <td>[2]</td>
+      <td>slope: 1.95 × 10−3 thresh: −0.283</td>
+      <td>prelEI5ht</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −9.32 × 10−3 thresh: −0.532</td>
+    </tr>
+    <tr>
+      <td>RinIpv</td>
+      <td>100 MΩ</td>
+      <td>[2]</td>
+      <td>slope: −8.38 × 10−3 thresh: −0.283</td>
+      <td>prelEIsom</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −7.32 × 10−3 thresh: −0.3847</td>
+    </tr>
+    <tr>
+      <td>RinI5ht</td>
+      <td>200 MΩ</td>
+      <td>[2]</td>
+      <td>slope: −3.87 × 10−3 thresh: −0.653</td>
+      <td>prelIpvE</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: 1.03 × 10−2 thresh: −0.941</td>
+    </tr>
+    <tr>
+      <td>RinIsom</td>
+      <td>250 MΩ</td>
+      <td>[4]</td>
+      <td>slope: 7.55 × 10−3 thresh: 0.465</td>
+      <td>prelIpvIpv</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: 1.21 × 10−3 thresh: −0.061</td>
+    </tr>
+    <tr>
+      <td>τmE</td>
+      <td>28 ms</td>
+      <td>[2]</td>
+      <td>slope: −9.59 × 10−3 thresh: 0.268</td>
+      <td>prelIpvI5ht</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −4.73 × 10−3 thresh: 0.011</td>
+    </tr>
+    <tr>
+      <td>τmIpv</td>
+      <td>21 ms</td>
+      <td>[2]</td>
+      <td>slope: 4.82 × 10−3 thresh: 0.027</td>
+      <td>prelI5htE</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −1.63 × 10−3 thresh: −0.379</td>
+    </tr>
+    <tr>
+      <td>τmI5ht</td>
+      <td>10 ms</td>
+      <td>[2]</td>
+      <td>slope: −5.09 × 10−3 thresh: −0.302</td>
+      <td>prelI5htIpv</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −3.41 × 10−3 thresh: −0.262</td>
+    </tr>
+    <tr>
+      <td>τmIsom</td>
+      <td>30 ms</td>
+      <td>[4]</td>
+      <td>slope: −2.89 × 10−3 thresh: −0.159</td>
+      <td>prelI5htI5ht</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: 3.05 × 10−3 thresh: 0.123</td>
+    </tr>
+    <tr>
+      <td>trefE</td>
+      <td>55.5 ms</td>
+      <td>[2]</td>
+      <td>Not tested</td>
+      <td>prel,IsomE</td>
+      <td>0.25</td>
+      <td>No data</td>
+      <td>slope: −2.13 × 10−4 thresh: −0.65</td>
+    </tr>
+    <tr>
+      <td>trefIpv</td>
+      <td>5.4 ms</td>
+      <td>[2]</td>
+      <td>Not tested</td>
+      <td>wEL4E,mean</td>
+      <td>0.8 mV</td>
+      <td>[1]</td>
+      <td>slope: −0.142 thresh: 0.342</td>
+    </tr>
+    <tr>
+      <td>trefI5ht</td>
+      <td>21.3 ms</td>
+      <td>[2]</td>
+      <td>Not tested</td>
+      <td>wEL4E,median</td>
+      <td>0.48 mV</td>
+      <td>[1]</td>
+      <td>slope: −0.142 thresh: 0.342</td>
+    </tr>
+    <tr>
+      <td>trefIsom</td>
+      <td>20 ms</td>
+      <td>[3]</td>
+      <td>Not tested</td>
+      <td>wEL4Ipv,mean</td>
+      <td>0.8 mV</td>
+      <td>=wELEL4E</td>
+      <td>slope: 3.61 × 10−3 thresh: 6.54 × 10−3</td>
+    </tr>
+    <tr>
+      <td>τsynE,e</td>
+      <td>2 ms</td>
+      <td>Typical</td>
+      <td>slope: 1.37 × 10−2 thresh: −1.79</td>
+      <td>wEL4Ipv,median</td>
+      <td>0.48 mV</td>
+      <td>=wELEL4E</td>
+      <td>slope: 3.61 × 10−3 thresh: 6.54 × 10−3</td>
+    </tr>
+    <tr>
+      <td>τsynE,i</td>
+      <td>40 ms</td>
+      <td>[2]</td>
+      <td>slope: −7.29 × 10−3 thresh: 0.48</td>
+      <td>wEL4Isom,mean</td>
+      <td>0.8 mV</td>
+      <td>=wELEL4E</td>
+      <td>slope: 5.05 × 10−3 thresh: −0.329</td>
+    </tr>
+    <tr>
+      <td>τsynIpv,e</td>
+      <td>2 ms</td>
+      <td>Typical</td>
+      <td>slope: −9.79 × 10−3 thresh: −0.477</td>
+      <td>wEL4Isom,median</td>
+      <td>0.48 mV</td>
+      <td>=wELEL4E</td>
+      <td>slope: 5.05 × 10−3 thresh: −0.329</td>
+    </tr>
+    <tr>
+      <td>τsynIpv,i</td>
+      <td>16 ms</td>
+      <td>[2]</td>
+      <td>slope: 1.56 × 10−3 thresh: −0.097</td>
+      <td>wEE,mean</td>
+      <td>0.37 mV</td>
+      <td>[2]</td>
+      <td>slope: 7.44 × 10−3 thresh: 5.34</td>
+    </tr>
+    <tr>
+      <td>τsynI5ht,e</td>
+      <td>2 ms</td>
+      <td>Typical</td>
+      <td>slope: 4.52 × 10−3 thresh: −0.047</td>
+      <td>wEE,median</td>
+      <td>0.2 mV</td>
+      <td>[2]</td>
+      <td>slope: 7.44 × 10−3 thresh: 5.34</td>
+    </tr>
+    <tr>
+      <td>τsynI5ht,i</td>
+      <td>40 ms</td>
+      <td>[2]</td>
+      <td>slope: −3.82 × 10−3 thresh: −0.387</td>
+      <td>wEIpv,mean</td>
+      <td>0.82 mV</td>
+      <td>[2]</td>
+      <td>slope: −3.77 × 10−4 thresh: −0.297</td>
+    </tr>
+    <tr>
+      <td>τsynIsom,e</td>
+      <td>2 ms</td>
+      <td>Typical</td>
+      <td>slope: −0.0126 thresh: −8.82 × 10−3</td>
+      <td>wEIpv,median</td>
+      <td>0.68 mV</td>
+      <td>[2]</td>
+      <td>slope: −3.77 × 10−4 thresh: −0.297</td>
+    </tr>
+    <tr>
+      <td>τsynIsom,i</td>
+      <td>40 ms</td>
+      <td>[2]</td>
+      <td>slope: −4.88 × 10−3 thresh: −0.301</td>
+      <td>wEI5ht,mean</td>
+      <td>0.39 mV</td>
+      <td>[2]</td>
+      <td>slope: −6.81 × 10−3 thresh: −0.46</td>
+    </tr>
+    <tr>
+      <td>Ereve</td>
+      <td>0 mV</td>
+      <td>Typical</td>
+      <td>slope: −0.056 thresh: 1.53</td>
+      <td>wEI5ht,median</td>
+      <td>0.19 mV</td>
+      <td>[2]</td>
+      <td>slope: −6.81 × 10−3 thresh: −0.46</td>
+    </tr>
+    <tr>
+      <td>ErevEi</td>
+      <td>−68 mV</td>
+      <td>=VrestE</td>
+      <td>slope: 3.2 × 10−3 thresh: −3.77</td>
+      <td>wEIsom,mean</td>
+      <td>0.5 mV</td>
+      <td>No data</td>
+      <td>slope: −3.61 × 10−3 thresh: −0.359</td>
+    </tr>
+    <tr>
+      <td>ErevIpvi</td>
+      <td>−68 mV</td>
+      <td>=VrestIpv</td>
+      <td>slope: −0.010 thresh: −0.617</td>
+      <td>wEIsom,median</td>
+      <td>0.4 mV</td>
+      <td>No data</td>
+      <td>slope: −3.61 × 10−3 thresh: −0.359</td>
+    </tr>
+    <tr>
+      <td>ErevI5hti</td>
+      <td>−62 mV</td>
+      <td>=VrestII5ht</td>
+      <td>slope: 3.8 × 10−3 thresh: 0.132</td>
+      <td>wIpvE,mean</td>
+      <td>0.52 mV</td>
+      <td>[2]</td>
+      <td>slope: 6.41 × 10−3 thresh: −1.47</td>
+    </tr>
+    <tr>
+      <td>ErevIsomi</td>
+      <td>−57 mV</td>
+      <td>=VrestIsom</td>
+      <td>slope: −4.2 × 10−3 thresh: −0.088</td>
+      <td>wIpvE,median</td>
+      <td>−0.29 mV</td>
+      <td>[2]</td>
+      <td>slope: 6.41 × 10−3 thresh: −1.47</td>
+    </tr>
+    <tr>
+      <td>pconEL4E</td>
+      <td>0.15</td>
+      <td>No data</td>
+      <td>slope: −0.121 thresh: 2.99</td>
+      <td>wIpvIpv,mean</td>
+      <td>−0.56 mV</td>
+      <td>[2]</td>
+      <td>slope: −2.52 × 10−3 thresh: −0.345</td>
+    </tr>
+    <tr>
+      <td>pconEL4Ipv</td>
+      <td>0.15</td>
+      <td>No data</td>
+      <td>slope: 1.38 × 10−3 thresh: 0.029</td>
+      <td>wIpvIpv,median</td>
+      <td>−0.44 mV</td>
+      <td>[2]</td>
+      <td>slope: −2.52 × 10−3 thresh: −0.345</td>
+    </tr>
+    <tr>
+      <td>pconEL4I5ht</td>
+      <td>0</td>
+      <td>No data</td>
+      <td>Not tested</td>
+      <td>wIpvI5ht,mean</td>
+      <td>−0.83 mV</td>
+      <td>[2]</td>
+      <td>slope: −4.24 × 10−3 thresh: −0.266</td>
+    </tr>
+    <tr>
+      <td>pconEL4Isom</td>
+      <td>0.15</td>
+      <td>No data</td>
+      <td>slope: 7.62 × 10−3 thresh: −0.245</td>
+      <td>wIpvI5ht,median</td>
+      <td>−0.6 mV</td>
+      <td>[2]</td>
+      <td>slope: −4.24 × 10−3 thresh: −0.266</td>
+    </tr>
+    <tr>
+      <td>pconEE</td>
+      <td>0.17</td>
+      <td>[2]</td>
+      <td>slope: 5.86 × 10−3 thresh: 6.084</td>
+      <td>wI5htE,mean</td>
+      <td>−0.49 mV</td>
+      <td>[2]</td>
+      <td>slope: −3.61 × 10−4 thresh: −0.018</td>
+    </tr>
+    <tr>
+      <td>pconEIpv</td>
+      <td>0.575</td>
+      <td>[2]</td>
+      <td>slope: −1.17 × 10−3 thresh: −0.099</td>
+      <td>wI5htE,median</td>
+      <td>−0.3 mV</td>
+      <td>[2]</td>
+      <td>slope: −3.61 × 10−4 thresh: −0.018</td>
+    </tr>
+    <tr>
+      <td>pconEI5ht</td>
+      <td>0.24</td>
+      <td>[2]</td>
+      <td>slope: −6.44 × 10−3 thresh: −0.541</td>
+      <td>wI5htIpv,mean</td>
+      <td>−0.49 mV</td>
+      <td>[2]</td>
+      <td>slope: −1.77 × 10−3 thresh: −0.187</td>
+    </tr>
+    <tr>
+      <td>pconEIsom</td>
+      <td>0.5</td>
+      <td>[5]</td>
+      <td>slope: −4.37 × 10−3 thresh: −0.27</td>
+      <td>wI5htIpv,median</td>
+      <td>−0.15 mV</td>
+      <td>[2]</td>
+      <td>slope: −1.77 × 10−3 thresh: −0.187</td>
+    </tr>
+    <tr>
+      <td>pconIpvE</td>
+      <td>0.6</td>
+      <td>[2]</td>
+      <td>slope: 7.16 × 10−3 thresh: −1.049</td>
+      <td>wI5htI5ht,mean</td>
+      <td>−0.37 mV</td>
+      <td>[2]</td>
+      <td>slope: −4.12 × 10−3 thresh: −0.416</td>
+    </tr>
+    <tr>
+      <td>pconIpvIpv</td>
+      <td>0.55</td>
+      <td>[2]</td>
+      <td>slope: −2.61 × 10−3 thresh: −0.0456</td>
+      <td>wI5htI5ht,median</td>
+      <td>−0.23 mV</td>
+      <td>[2]</td>
+      <td>slope: −4.12 × 10−3 thresh: −0.416</td>
+    </tr>
+    <tr>
+      <td>pconIpvI5ht</td>
+      <td>0.24</td>
+      <td>[2]</td>
+      <td>slope: −2.81 × 10−3 thresh: −0.458</td>
+      <td>wIsomE,mean</td>
+      <td>−0.5 mV</td>
+      <td>No data</td>
+      <td>slope: −0.013 thresh: −0.984</td>
+    </tr>
+    <tr>
+      <td>pconIpvIsom</td>
+      <td>0</td>
+      <td>No data</td>
+      <td>Not tested</td>
+      <td>wIsomE,median</td>
+      <td>−0.4 mV</td>
+      <td>No data</td>
+      <td>slope: −0.013 thresh: −0.984</td>
+    </tr>
+  </tbody>
+</table>
 
 For the simulations presented in Figure 3 we varied only 76 model parameters, which is 24 less than the total number of 100 model parameters listed in Table 1. We excluded the four neuronal refractory periods (because in almost all simulations each neuron spiked a maximum of once, making the refractory period irrelevant), and the six connection probabilities that were fixed at zero. Finally, we grouped together the mean and median PSP amplitudes for each of the fourteen non-zero synaptic connections, so that both parameters were increased or decreased by the same fraction in tandem. Together these choices reduced the number of test parameters from 100 to 76.
 
@@ -146,37 +747,57 @@ Source [1] is (Lefort et al., 2009), [2] is (Avermann et al., 2012), [3] is (Fan
 
 An important caveat is that although this model may be considered detailed by some measures, it also simplifies many aspects of L2/3 circuit. For example, we assumed that all 5HT3AR cells were homogeneous, even though they likely separate into different subclasses with type-specific connectivity (Gentet, 2012; Petersen and Crochet, 2013). Layer 2 and layer 3 may also consist of distinct cell populations (Petersen and Crochet, 2013). Not all likely connections were included in the model (Dalezios et al., 2002; Pfeffer et al., 2013), and connectivity was assumed to be random, even though it is likely non-random (Tomm et al., 2014). Although these choices will likely not affect the conclusions of the current study, they may be important to consider for future work that seeks to understand the biological function of the L2/3 somatosensory microcircuit.
 
-## Logistic model
+### Logistic model
 
-From the L2/3 circuit model simulations, we numerically estimated the probability q that each neuron in the model fires a spike as a function of the fraction of L4 inputs that were active, f. We then used the generalized linear model regression tool ‘glmfit’ in MATLAB to find the best fit of the two logistic model parameters for each neuron:q(f)=11+exp⁡(-β(f-f1/2 ))
+From the L2/3 circuit model simulations, we numerically estimated the probability q that each neuron in the model fires a spike as a function of the fraction of L4 inputs that were active, f. We then used the generalized linear model regression tool ‘glmfit’ in MATLAB to find the best fit of the two logistic model parameters for each neuron:
 
-where the parameter β represents the slope, and the parameter f1/2 represents the fraction of active L4 neurons at which the response probability q=0.5. For clarity of presentation, in the main text we converted this f1/2 parameter to what we termed the ‘threshold’, fthresh, which we defined as the fraction of L4 neurons needed to reach a specified spike probability, qthresh. Throughout the study, we fixed qthresh=0.01. The threshold is related to qthresh via the inverse of the logistic functionfthresh=f1/2+log⁡qthresh1-qthresh/β
+$$
+q(f)=\frac{1}{1+exp⁡(-\beta(f-f_{1/2}))}
+$$
 
-We computed firing rates and pairwise correlations from the logistic model (Figures 4–5) in the following way. First, we assumed that the fraction of active L4 neurons is described by a normally distributed random variable with zero mean and unit variance:pf=exp⁡(-f2/2)2π=𝒩(0,1)
+where the parameter β represents the slope, and the parameter $f_{1/2}$ represents the fraction of active L4 neurons at which the response probability $q=0.5$. For clarity of presentation, in the main text we converted this $f_{1/2}$ parameter to what we termed the ‘threshold’, $f_{thresh}$, which we defined as the fraction of L4 neurons needed to reach a specified spike probability, $q_{thresh}$. Throughout the study, we fixed $q_{thresh}=0.01$. The threshold is related to qthresh via the inverse of the logistic function
 
-We defined the β and f1/2  parameters relative to the mean and standard deviation of the input distribution. Since q is a monotonically increasing function of f, the probability distribution for q ispq=p(fq)dfdq
+$$
+f_{thresh}=f_{1/2}+log⁡\frac{q_{thresh}}{1-q_{thresh}}/\beta
+$$
 
-where f(q) is the inverse of the logistic function q(f) and
+We computed firing rates and pairwise correlations from the logistic model (Figures 4–5) in the following way. First, we assumed that the fraction of active L4 neurons is described by a normally distributed random variable with zero mean and unit variance:
 
-dfdq=exp⁡-βf-f1/2+12βexp⁡(-β(f-f1/2)). We calculate a neuron’s mean firing rate μ as the expectation of q,μ=E[q]=∫0 1[q×p(q)]dq=∫0 1[q×p(f(q))|dfdq|]dq
+$$
+pf=\frac{exp⁡(-f^{2}/2)}{\sqrt{2\pi}}=𝒩(0,1)
+$$
+
+We defined the $\beta$ and $f_{1/2}$ parameters relative to the mean and standard deviation of the input distribution. Since $q$ is a monotonically increasing function of $f$, the probability distribution for $q$ is
+
+$$
+pq=p(fq)\frac{df}{dq}
+$$
+
+where $f(q)$ is the inverse of the logistic function $q(f)$ and
+
+$\frac{df}{dq}=\frac{exp⁡-\betaf-f_{1/2}+1^{2}}{\betaexp⁡(-\beta(f-f_{1/2}))}$. We calculate a neuron’s mean firing rate $\mu$ as the expectation of q,
+
+$$
+\mu=E[q]=\int_{0 }^{1}[q\timesp(q)]dq=\int_{0 }^{1}[q\timesp(f(q))|\frac{df}{dq}|]dq
+$$
 
 We calculate the pairwise covariance of two homogeneous neurons driven by a common input f as
 
-cov=E[q2]−(E[q])2=E[q2]−μ2=∫0 1[q2×p(f(q))|dfdq|]dq−μ2, then find the pairwise correlation by normalizing the covariance by the neurons’ shared variance, var=μ(1-μ).
+$cov=E[q^{2}]−(E[q])^{2}=E[q^{2}]−\mu^{2}=\int_{0 }^{1}[q^{2}\timesp(f(q))|\frac{df}{dq}|]dq−\mu^{2}$, then find the pairwise correlation by normalizing the covariance by the neurons’ shared variance,$var=\mu(1-\mu)$.
 
 For fitting the logistic model to the recorded neural firing rates and correlations (Figure 5), we considered a population model where the joint probability distribution across threshold and slope was specified by a 2D Gaussian, which has five parameters: threshold mean and s.d., slope mean and s.d., and slope-threshold correlation. The three constraint statistics we considered from the neural population data were the mean neural ON probability, the s.d. of neural ON probabilities, and the mean pairwise correlations. We found the best-fit model parameters for each dataset using stochastic gradient descent (code available at https://github.com/cianodonnell/ODonnelletal_2017_imbalances). Briefly, the fitting procedure followed: (1) initialize the parameters at a starting guess points, (2) compute the predicted three output firing statistics via numerical integration over the model’s probability distributions, (3) compute the fitting error as the summed squared difference between the model output predictions and the target values, (4) generate a new set of parameter values by adding a small perturbation of a zero-mean Gaussian random number to each parameter, (5) compute the new output statistics, (5) recompute the fitting error, (6) if the new error is smaller than the old error, accept the updated parameter values, otherwise reject them and revert to the old parameters, (7) return to step 4 unless the error is lower than the desired tolerance. We checked for fit convergence by sampling a large number of logistic model parameters from the fitted 2D Gaussian, drawing binary samples from these logistic model neurons and computing the ON probability mean and s.d., and mean pairwise correlation from the synthetic binary samples, and comparing the computed statistical values to the original data statistics (Figure 5 – figure supplement 1). For the sensitivity analysis presented in Figure 6, we numerically computed the partial derivative in mean firing rate and pairwise correlation with respect to the mean slope and mean threshold parameters in the population logistical model, using standard finite difference methods.
 
-## Statistical tests
+### Statistical tests
 
-To avoid parametric assumptions, all statistical tests were done using standard bootstrapping methods with custom-written MATLAB scripts. For example, when assessing the observed difference between two group means Δμobs we performed the following procedure to calculate a p-value. First, we pool the data points from the two groups to create a null set Snull. We then construct two hypothetical groups of samples S1 and S2 from this by randomly drawing n1 and n2 samples with replacement from Snull, where n1 and n2 are the number of data points in the original groups 1 and 2 respectively. We take the mean of both hypothetical sets Δμ1 and Δμ2 and calculate their difference Δμnull=Δμ1−Δμ2. We then repeat the entire procedure 107 times to build up a histogram of Δμnull. This distribution is always centered at zero. After normalizing, this can be interpreted as the probability distribution f(Δμnull) for observing a group mean difference of Δμnull purely by chance if the data were actually sampled from the same null distribution. Then the final p-value for the probability of finding a group difference of at least Δμobs in either direction is given by p=∫-∞-ΔμobsfΔμnulldΔμnull+∫Δμobs∞fΔμnulldΔμnull.
+To avoid parametric assumptions, all statistical tests were done using standard bootstrapping methods with custom-written MATLAB scripts. For example, when assessing the observed difference between two group means $Δ\mu_{obs}$ we performed the following procedure to calculate a p-value. First, we pool the data points from the two groups to create a null set $S_{null}$. We then construct two hypothetical groups of samples S1 and S2 from this by randomly drawing n1 and n2 samples with replacement from $S_{null}$, where n1 and n2 are the number of data points in the original groups 1 and 2 respectively. We take the mean of both hypothetical sets $Δ\mu_{1}$ and $Δ\mu_{2}$ and calculate their difference $Δ\mu_{null}=Δ\mu_{1}−Δ\mu_{2}$. We then repeat the entire procedure 107 times to build up a histogram of $Δ\mu_{null}$. This distribution is always centered at zero. After normalizing, this can be interpreted as the probability distribution $f(Δ\mu_{null})$ for observing a group mean difference of $Δ\mu_{null}$ purely by chance if the data were actually sampled from the same null distribution. Then the final p-value for the probability of finding a group difference of at least $Δ\mu_{obs}$ in either direction is given by $p=\int_{-∞}^{-Δ\mu_{obs}}fΔ\mu_{null}dΔ\mu_{null}+\int_{Δ\mu_{obs}}^{∞}fΔ\mu_{null}dΔ\mu_{null}$.
 
 For Figure 5C, we estimated two-dimensional 95% confidence ellipses for the shift in mean slope-threshold parameters between Fmr1 KO and WT by computing the sample error variances and covariance through bootstrapping. Then, the 95% confidence ellipse can be computed using the Chi-squared distribution. We plotted the confidence interval ellipse using the MATLAB function error_ellipse.m, downloaded from https://www.mathworks.com/matlabcentral/fileexchange/4705-error-ellipse.
 
-## Conversion from firing rate to ON/OFF probabilities for Ca2+ imaging data
+### Conversion from firing rate to ON/OFF probabilities for Ca2+ imaging data
 
 For the Ca2+ imaging data, we began with estimated firing rate time series ri(t) for each neuron i recorded as part of a population of N neurons. For later parts of the analysis we needed to convert these firing rates to binary ON/OFF values. This conversion involves a choice. One option would be to simply threshold the data, but this would throw away information about the magnitude of the firing rate. We instead take a probabilistic approach where rather than deciding definitively whether a given neuron was ON or OFF in a given time bin, we calculate the probability that the neuron was ON or OFF by assuming that neurons fire action potentials according to an inhomogeneous Poisson process with rate ri(t). The mean number of spikes λi(t) expected in a time bin of width Δt is λi(t)=ri(t)Δt. We choose Δt = 1 s. Under the Poisson model the actual number of spikes m in a particular time bin is a random variable that follows the Poisson distribution P(m = k) = λk exp(-λ)/k!. We considered a neuron active (ON) if it is firing one or more spikes in a given time bin. Hence, the probability that a neuron is ON is pon(t) = 1- P(m=0) = 1-exp(λ). This approach has two advantages over thresholding: (1) it preserves some information about the magnitude of firing rates and (2) it acts to regularize the probability distribution for the number of neurons active by essentially smoothing nearby values together.
 
-## Entropy estimation for large numbers of neurons
+### Entropy estimation for large numbers of neurons
 
 Entropy was estimated by fitting a statistical model we recently developed, called the population tracking model (O'Donnell, 2017a), to the binarized Ca2+ imaging data. Briefly, the population tracking model fits two aspects of the data: the probability distribution for the number of neurons synchronously active in the population, and also the conditional firing probability that each individual neuron is active given the population count. Hence, the model captures both some aggregate statistics of the population activity, and some aspects of the heterogeneity across neurons. See O'Donnell, 2017b) for complete details and validation of the method. Code for fitting the model to data is available at https://github.com/cianodonnell/PopulationTracking.
 

@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 MRC Centre for Global Infectious Disease Analysis, School of Public Health, Imperial College London London United Kingdom
-2. https://ror.org/052gg0110 Department of Computer Science, University of Oxford Oxford United Kingdom
-3. https://ror.org/052gg0110 Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-4. https://ror.org/00vbvha87 Immunization Department, Public Health England London United Kingdom
-5. https://ror.org/02jx3x895 Infection and Immunity, University College of London London United Kingdom
+1. MRC Centre for Global Infectious Disease Analysis, School of Public Health, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Department of Computer Science, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. Immunization Department, Public Health England London United Kingdom ([ROR:00vbvha87](https://ror.org/00vbvha87))
+5. Infection and Immunity, University College of London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -42,11 +42,37 @@ Individuals are assigned an antibody titre as the highest antibody dilution (1:4
 
 Seroprevalence frequencies in different age groups from the three serosurveys of samples collected in 2006, 2011, and 2017 are shown in Figure 1. At each time point, irrespective of the cut-off antibody titre chosen to define seropositivity, seroprevalence slightly decreases from the 0 years-old (yo) to the 1–4 yo age classes, and then increases sharply with age until the 20–29 yo, when it reaches a plateau (Figure 1A, B). As for many other viruses, higher values in the 0-yo age class are likely the result of the presence of transplacentally acquired maternal antibodies that subsequently decline. For a seropositivity cut-off of 1:16, the proportion seropositive at ages 1–4 yo ranged between 0.65 (95% confidence interval [CI] 0.54–0.75) in 2006 and 0.92 (95% CI 0.84–0.97) in 2017. For a more stringent cut-off of 1:64, the proportion seropositive in this age group decreased to 0.29 (95% CI 0.19–0.40) in 2006 and 0.51 (95% CI 0.40–0.62) in 2017. Age-stratified seroprevalence was generally lower in 2006 compared to 2011 and 2017, which suggests individuals acquired their first infection at a lower age through the study period, leading to a decrease in the mean age of exposure. This could potentially be consistent with increased transmission (e.g. through increased viral fitness or the accumulation of susceptible) or other mechanisms (such as a change in the virus to have a higher tendency to infect children).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-v1.jpg)
+
+**Figure 1.:** Seroprevalence by age class in years for the three serosurveys and for two different cut-offs of neutralising antibody titre used to define positivity: (A) 1:16 and (B) 1:64. Seroprevalence by month during the first year of life for children across the three serosurveys combined and two seropositivity cut-offs: (C) 1:16 and (D) 1:64. Bars are 95% binomial confidence intervals. Note that in (A) and (B) individuals in the [0–1) age class from the 2017 serosurvey were in fact sampled in 2016 and as such, are shown with a different colour.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The data were extracted from three sources: for the years 2004–2011, from Kadambari et al., 2014; for 2012–2013, from a risk assessment report published by Public Health England, 2018; and for 2014–2020, we digitised data from Figure 2 in this website (Public Health England, 2023).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) For each cross-sectional serosurvey. (B) For all three surveys combined.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-figsupp3-v1.jpg)
+
 We also explored seroprevalence during the first year of life using data for all children <1 yo across the three serosurveys combined (Figure 1C, D). For both cut-offs, seroprevalence in these children starts very high (92% and 70% for the 1:16 and 1:64 cut-offs, respectively, for children <1 month of age) and declines with age, with a quicker decline during the first 3 months of life then followed by a plateau or slower decline. However, the small number of children per age class resulted in large 95% CIs around the mean. Seroprevalence reaches a minimum at 8 and 4 months of age for the 1:16 and 1:64 cut-offs, respectively. However, the minimum seroprevalence remains high at 50% for the 1:16 cut-off, compared to only 11% for the 1:64.
 
 To address the question of whether transmission had increased before the first reported big outbreaks of EV-D68 in 2014, we compared the performance of two catalytic models that differed on the assumptions of how the FOI changed over time (Materials and methods). Both models assumed that a proportion of individuals are born with maternal antibodies that will subsequently decline at a constant rate, and assumed the risk of infection (becoming seropositive) was independent of age. Model 1 assumed that the FOI was constant over time, and Model 2 allowed it to vary following a random walk. The proportion of individuals born with maternal antibodies was fixed to 1.0 and 0.9 for the seropositivity cut-offs of 1:16 and 1:64, respectively, based on the proportion of adults 25–40 years old that were seropositive in the three serosurveys (Supplementary file 1a).
 
 For both seropositivity cut-offs, Model 2 was the best model according to the leave-one-out (LOO) information criterion (see Materials and methods), which accounts for over-parameterisation (Supplementary file 1b). Model 2 also provided a better fit to the data (Figure 2) than Model 1, which did not capture the observed general increase in seroprevalence between 2006 and 2011 (Figure 2—figure supplement 1). All parameter estimates are presented in Supplementary file 1c.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-v1.jpg)
+
+**Figure 2.:** Observed (gray) and estimated (blue and red) seroprevalence by age for the three cross-sectional serosurveys (2006, 2011, and 2017). Model fit is shown for the random walk model (Model 2) using the two seropositivity cut-offs, (A) 1:16 and (B) 1:64. Gray intervals indicate the 95% binomial confidence intervals around the observed proportion of seropositivity. The line and ribbons correspond to the median and 95% credible intervals of the posterior estimates of seroprevalence. Note that the age axis is log-transformed to better show the data in the younger age classes. The same plot with the age axis on a natural scale is shown in Figure 2—figure supplement 2. Note also that the data for <1 yo shown for 2017 were actually collected in 2016.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Observed (gray) and estimated (blue and red) seroprevalence by age for the three cross-sectional serosurveys (2006, 2011, and 2017). Model fit is shown for the constant model (Model 1) using the two seropositivity cut-offs, (A) 1:16 and (B) 1:64. Gray intervals indicate the 95% binomial confidence intervals around the observed proportion of seropositivity. The line and ribbons correspond to the median and 95% credible intervals of the posterior estimates of seroprevalence. Note that the age axis is log-transformed to better show the data in the younger age classes. The same plot with the age axis on a natural scale is shown in Figure 2—figure supplement 3. Note also that the data for <1 yo shown for 2017 were actually collected in 2016.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-figsupp3-v1.jpg)
 
 The best model (Model 2) estimated an increase in transmission over time during the study period (2006–2017) for both seropositivity cut-offs, as shown by the estimated FOI in Figure 3A. For the cut-off of 1:16, the FOI continued to increase until the end of the study period, in 2017. However, for the more stringent cut-off of 1:64, the FOI plateaued from around 2011. These differences reflect the differences in seroprevalence observed in the young age classes (1–20 yo) between 2011 and 2017 for the two cut-offs (Figure 1).
 
@@ -90,31 +116,81 @@ This work shows the value of modelling age-stratified seroprevalence data from c
 
 ## Materials and methods
 
-## Serological data
+### Serological data
 
 We use data from three retrospective cross-sectional studies analysing serum samples representative of England’s population in 2006 (n = 516), 2011 (n = 504), and 2017 (n = 566) and available through the National Seroepidemiology Programme at Public Health England (Osborne et al., 2000). The neutralisation assay method and results from serological testing of the 2006 and 2017 sample sets have been previously described in Kamau et al., 2019. Neutralisation assays measured neutralising antibody titres against a B3 strain (Kamau et al., 2019; Hadfield et al., 2018), but Kamau et al. showed similar neutralisation effects across three different EV-D68 strains (Kamau et al., 2019).
 
-## Statistical analysis
+### Statistical analysis
 
 The FOI is the rate at which seronegative (susceptible) individuals become seropositive (infected). Cross-sectional age-stratified seroprevalence data can be used to estimate the FOI through so-called catalytic models (Hens et al., 2010). Catalytic models avoid modelling the dynamics of infected individuals directly; rather, they assume an unspecified mechanism that results in a seronegative individual becoming seropositive, its magnitude defining the FOI. For seroprevalence data, these models rely on the idea that the age and serostatus of an individual provide information on the probability of infection for the years between birth and the serosurvey.
 
-We consider a serocatalytic model with maternal antibodies and no seroreversion (Dighe, 2022). Individuals enter the model at birth either seropositive due to the presence of maternal antibodies (m), or seronegative (n), with maternal antibodies declining at a constant rate ω. Seronegative individuals become seropositive (p) at a rate λ, the FOI. We assume that after seroconversion, individuals cannot become seronegative again; this seems reasonable since seroprevalence does not show a decline through age (Figure 1). This model is described by the following system of differential equations:dmda=−ωmdnda=ωm−λndpda=λn
+We consider a serocatalytic model with maternal antibodies and no seroreversion (Dighe, 2022). Individuals enter the model at birth either seropositive due to the presence of maternal antibodies (m), or seronegative (n), with maternal antibodies declining at a constant rate $\omega$. Seronegative individuals become seropositive (p) at a rate $\lambda$, the FOI. We assume that after seroconversion, individuals cannot become seronegative again; this seems reasonable since seroprevalence does not show a decline through age (Figure 1). This model is described by the following system of differential equations:
 
-which has the following analytical solution (Dighe, 2022):ma=m0e-ωan(a)=m0(ωλ−ω(e−ωa−e−λa))+(1−m0)e−λapa=1-ma-na
+$$
+\frac{dm}{da}=−\omegam
+$$
 
-where m0 is the proportion of individuals born with maternal antibodies, that we consider fixed and constant over time.
 
-We are interested in estimating the rate of waning of maternal antibodies, ω, and the FOI, λ. To link the catalytic model to the data from the serosurveys, we assume that the count of seropositive individuals within a serosurvey in year t follows a binomial distribution:zτ(t|c) ∼binomial(nτ(t),mτ(t)+pτ(t)),
 
-where nτt indicates the sample size in year t for individuals born in year τ, t≥τ, as collected during the serosurvey, and zτ(t|c) is the count of those who are seropositive for a given cut-off c . The sum mτt+pτt is the modelled proportion seropositive at year t among those who were born in year τ. Note that we further assume that testing uncovers seropositivity with 100% accuracy.
+$$
+\frac{dn}{da}=\omegam−\lambdan
+$$
 
-We test two different models representing different hypotheses about how the FOI changes over time t. Model 1 assumes a constant FOI over time,λt=λ,∀t.
 
-And Model 2 allows the FOI to change over time following a random walk of order one:λt=t1 ∼normal(0,0.5)λt>t1 ∼normal(λt−1,σ)
+
+$$
+\frac{dp}{da}=\lambdan
+$$
+
+which has the following analytical solution (Dighe, 2022):
+
+$$
+ma=m_{0}e^{-\omegaa}
+$$
+
+
+
+$$
+n(a)=m_{0}(\frac{\omega}{\lambda−\omega}(e^{−\omegaa}−e^{−\lambdaa}))+(1−m_{0})e^{−\lambdaa}
+$$
+
+
+
+$$
+pa=1-ma-na
+$$
+
+where $m_{0}$ is the proportion of individuals born with maternal antibodies, that we consider fixed and constant over time.
+
+We are interested in estimating the rate of waning of maternal antibodies, $\omega$, and the FOI, $\lambda$. To link the catalytic model to the data from the serosurveys, we assume that the count of seropositive individuals within a serosurvey in year t follows a binomial distribution:
+
+$$
+z^{\tau}(t|c) ∼binomial(n^{\tau}(t),m^{\tau}(t)+p^{\tau}(t)),
+$$
+
+where $n^{\tau}t$ indicates the sample size in year $t$ for individuals born in year $\tau$, $t\geq\tau,$ as collected during the serosurvey, and $z^{\tau}(t|c)$ is the count of those who are seropositive for a given cut-off $c$ . The sum $m^{\tau}t+p^{\tau}t$ is the modelled proportion seropositive at year $t$ among those who were born in year $\tau$. Note that we further assume that testing uncovers seropositivity with 100% accuracy.
+
+We test two different models representing different hypotheses about how the FOI changes over time t. Model 1 assumes a constant FOI over time,
+
+$$
+\lambdat=\lambda,∀t.
+$$
+
+And Model 2 allows the FOI to change over time following a random walk of order one:
+
+$$
+\lambda_{t=t_{1}} ∼normal(0,0.5)
+$$
+
+
+
+$$
+\lambda_{t>t_{1}} ∼normal(\lambda_{t−1},\sigma)
+$$
 
 Both models assume a constant FOI through age.
 
-The annual probability of infection, which is the proportion of the susceptible population that will become seropositive in a given year t, can be derived from the FOI: p(t)=1−exp⁡(−λ(t)) .
+The annual probability of infection, which is the proportion of the susceptible population that will become seropositive in a given year t, can be derived from the FOI: $p(t)=1−exp⁡(−\lambda(t))$ .
 
 Because seroprevalence in adults reaches almost 100% from about the 20-yo age class for a seropositivity cut-off of 1:16, and from the 30-yo for a more stringent cut-off of 1:64 (Figure 1), we fit the models to the data for age up to 40 yo.
 
@@ -122,7 +198,7 @@ The models were implemented in Stan Development Team, 2020 and fitted to the dat
 
 We use the LOO metrics (Vehtari et al., 2017), implemented in the ‘loo’ R package (Vehtari et al., 2023), for model comparison. The LOO metrics aim to gauge how well a model generalises to an out-of-sample dataset and are an approximation to the explicit LOO cross-validation log-likelihood. In the explicit approach, the model is fitted to n − 1 datapoints and tested on a single hold-out datapoint and the log-likelihood on the test datapoint recorded. This approach is repeated for each of n datapoints. The LOO is then effectively the average log-likelihood across all held-out datapoints. The ‘loo’ package uses Pareto-smoothed importance sampling to avoid explicitly refitting the model to the data n times.
 
-## Annual overall seroprevalence and reconstructed number of infections in each age class
+### Annual overall seroprevalence and reconstructed number of infections in each age class
 
 Using the estimates of the FOI from the catalytic models above and data on population structure, we can estimate the overall (age-weighted) seroprevalence in the population each year t. We used data on the population structure in England for the years 1998, 2008, and 2018 from Office for National Statistics, 2020. The size of each age class for the years in between was obtained by linear interpolation.
 

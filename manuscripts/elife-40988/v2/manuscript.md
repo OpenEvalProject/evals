@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.40988.001 Monoubiquitination of histone H2B (H2B-Ub) plays a role in transcription and DNA replication, and is required for normal localization of the histone chaperone, FACT. In yeast, H2B-Ub is deubiquitinated by Ubp8, a subunit of SAGA, and Ubp10. Although they target the same substrate, loss of Ubp8 and Ubp10 cause different phenotypes and alter the transcription of different genes. We show that Ubp10 has poor activity on yeast nucleosomes, but that the addition of FACT stimulates Ubp10 activity on nucleosomes and not on other substrates. Consistent with a role for FACT in deubiquitinating H2B in vivo, a FACT mutant strain shows elevated levels of H2B-Ub. Combination of FACT mutants with deletion of Ubp10, but not Ubp8, confers increased sensitivity to hydroxyurea and activates a cryptic transcription reporter, suggesting that FACT and Ubp10 may coordinate nucleosome assembly during DNA replication and transcription. Our findings reveal unexpected interplay between H2B deubiquitination and nucleosome dynamics.
+Monoubiquitination of histone H2B (H2B-Ub) plays a role in transcription and DNA replication, and is required for normal localization of the histone chaperone, FACT. In yeast, H2B-Ub is deubiquitinated by Ubp8, a subunit of SAGA, and Ubp10. Although they target the same substrate, loss of Ubp8 and Ubp10 cause different phenotypes and alter the transcription of different genes. We show that Ubp10 has poor activity on yeast nucleosomes, but that the addition of FACT stimulates Ubp10 activity on nucleosomes and not on other substrates. Consistent with a role for FACT in deubiquitinating H2B in vivo, a FACT mutant strain shows elevated levels of H2B-Ub. Combination of FACT mutants with deletion of Ubp10, but not Ubp8, confers increased sensitivity to hydroxyurea and activates a cryptic transcription reporter, suggesting that FACT and Ubp10 may coordinate nucleosome assembly during DNA replication and transcription. Our findings reveal unexpected interplay between H2B deubiquitination and nucleosome dynamics.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Despite their shared substrate specificity, Ubp8 and Ubp10 appear to play distin
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig1-v2.jpg)
 
-**Figure 1.:** UBP8 and UBP10 genes have different effects on transcription programs.Analysis of transcription data from Gardner et al., 2005. Scatter plots of the log2 fold change in transcript level relative to WT (log2FC) are shown for (top panel) a catalytically dead allele (ubp10-C371S) vs a deletion (ubp10∆) to demonstrate reproducibility of the array, and (bottom panel) a ubp8∆ strain compared with ubp10∆. The two null mutants give a strong correlation (Pearson correlation coefficient r = 0.86, linear regression R2 = 0.74, m = 0.99), validating the reproducibility of the arrays. Deleting UBP8 affected the transcription of different genes, resulting in poor correlation with ubp10∆ (r = 0.055, R2 = 0.0031, m = 0.039).
+**Figure 1.:** Analysis of transcription data from Gardner et al., 2005. Scatter plots of the log2 fold change in transcript level relative to WT (log2FC) are shown for (top panel) a catalytically dead allele (ubp10-C371S) vs a deletion (ubp10∆) to demonstrate reproducibility of the array, and (bottom panel) a ubp8∆ strain compared with ubp10∆. The two null mutants give a strong correlation (Pearson correlation coefficient r = 0.86, linear regression R2 = 0.74, m = 0.99), validating the reproducibility of the arrays. Deleting UBP8 affected the transcription of different genes, resulting in poor correlation with ubp10∆ (r = 0.055, R2 = 0.0031, m = 0.039).
 
 Ubiquitination of histone H2B has been reported to assist recruitment of the histone chaperone, FACT (Facilitates Chromatin Transcription) to active chromatin (Fleming et al., 2008). The yeast FACT complex is composed of a heterodimer of Spt16 and Pob3 that is assisted in vitro and in vivo by the DNA binding protein, Nhp6 (Brewster et al., 1998; Ruone et al., 2003; Schlesinger and Formosa, 2000; Wittmeyer and Formosa, 1995; Wittmeyer et al., 1999). FACT is reported to evict H2A/H2B heterodimers in front of the transcription machinery (Reinberg and Sims, 2006) and reassemble the heterodimers in the wake of RNA polymerase II to prevent cryptic transcription initiation (Fleming et al., 2008; Martin et al., 2018; Mason and Struhl, 2003; Pavri et al., 2006). The disruption of the H2B ubiquitination cycle or a mutation in the FACT subunit, Spt16, causes a defect in Pol II elongation (Fleming et al., 2008). In addition to roles in transcription, FACT and H2B-Ub are each also implicated in DNA replication (Formosa, 2012; Kurat et al., 2017; Trujillo and Osley, 2012). H2B-Ub at replication origins is thought to stabilize the parental nucleosomes after the passage of DNA polymerase (Trujillo and Osley, 2012). FACT and H2B-Ub play an important role in the progression of DNA replication, likely by maintaining chromatin stability and orchestrating nucleosome assembly on newly-synthesized DNA (Lin et al., 2014; Trujillo and Osley, 2012). It is clear that both FACT and H2B-Ub play a pivotal role in stabilizing and assembling nucleosomes in the wake of polymerases during replication and transcription. However, it is not known how FACT and H2B-Ub status affect one another to perform these functions.
 
@@ -42,13 +42,33 @@ We report here a novel role for the histone chaperone, FACT, in stimulating the 
 
 ## Results
 
-## Ubp10 preferentially deubiquitinates free yeast H2A/H2B-Ub relative to nucleosomes
+### Ubp10 preferentially deubiquitinates free yeast H2A/H2B-Ub relative to nucleosomes
 
 During transcription, nucleosomes are at least partially disassembled in order to enable RNA polymerase to access the DNA template and are then reassembled in the wake of the transcribing polymerase. It is not known when during this process ubiquitin is conjugated to histone H2B and when it is removed by either Ubp8/SAGA or Ubp10. Since histone H2A/H2B heterodimers can be ejected and re-inserted during the dynamic nucleosome disassembly and reassembly that accompanies passage of RNA polymerase, it is formally possible that H2B is deubiquitinated when it is in an intact nucleosome, after ejection to the free H2A/H2B-Ub dimer form, or when the nucleosome is in an intermediate state of disassembly or assembly. We previously reported that the Ubp8/SAGA DUB module deubiquitinates H2B in the context of both the nucleosome and the free H2A/H2B-Ub heterodimers, with a modest preference for nucleosomes (Morgan et al., 2016). Those results suggested that Ubp8/SAGA could deubiquitinate H2B at any point during transcription.
 
 Since Ubp10 has been reported to associate with RNA polymerase II (Mao et al., 2014) and to deubiquitinate H2B in gene bodies (Schulze et al., 2011), we asked whether this monomeric DUB discriminates between H2B-ubiquitinated nucleosomes and ubiquitinated H2A/H2B-Ub heterodimers. Using an intein-based semisynthetic approach, we generated ubiquitinated yeast histone H2B in which the C-terminus of ubiquitin was linked to H2B-K123 via a native isopeptide linkage (Jbara et al., 2018; Maity et al., 2016). This H2B-Ub was used to reconstitute nucleosomes and H2A/H2B-Ub heterodimers. Remarkably, Ubp10 cleaved ubiquitin from H2A/H2B-Ub heterodimers at least 100-fold faster than from nucleosomes containing H2B-Ub (Figure 2A). Under the conditions tested, the majority of H2A/H2B-Ub was consumed in less than 5 min while almost all of the NCP-Ub remains uncleaved after 60 min. Similar behavior was recently observed in experiments using human histones containing a cleavable analogue of a native isopeptide linkage and a GST-Ubp10 fusion (Zukowski et al., 2018). Taken together, our results indicate that Ubp10 discriminates between freestanding histone heterodimers and those in nucleosomes (Figure 2A) whereas Ubp8/SAGA does not (Morgan et al., 2016).
 
-## FACT stimulates Ubp10 DUB activity on nucleosomes
+![Figure 2.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Comparison of Ubp10 activity on H2A/H2B-Ub and NCP-Ub in the absence (A) and presence of FACT (B). In panel A, 1 µM NCP-Ub and 2 µM H2A/H2B-Ub were incubated with 5 nM Ubp10 and time points were taken by quenching with SDS sample buffer. (B) FACT stimulates Ubp10 activity on NCP-Ub. Ubp10 activity was measured as in A, but in the presence of FACT subunits, 2 µM Spt16/Pob3-WT and 2 µM Nhp6. (C) The fraction of total substrate consumed over time from assays performed in A-B is shown. The plot was generated by averaging the relative intensity of H2B-Ub bands as compared with uncleaved H2B-Ub at t = 0 from three independent experiments (mean normalized band intensity and standard deviation shown). (D) Increasing the concentration of FACT increases the activity of Ubp10. Enzyme activity was monitored by mixing 1 µM NCP-Ub, 2 µM Nhp6, and the indicated concentrations of Spt16/Pob3 in the presence of 5 nM Ubp10. Each reaction was quenched at 60 min.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Coomassie-stained gel of a control experiment demonstrating that purified Spt16/Pob3 and Nhp6 do not contain contaminants that deubiquitinate H2B-Ub. Proteins indicated in each lane were incubated for 3 hr after which the reactions were quenched.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** A deubiquitination assay was performed as in Figure 2D, except with variable concentrations of Nhp6. Spt16/Pob3 enhanced the deubiquitinase activity but adding Nhp6 did not enhance this effect noticeably.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Ubp10 activity on H2A/H2B-Ub with and without 601 DNA. For reaction with 601 DNA, 2 µM of 146 bp Widom 601 DNA was incubated with 2 µM H2A/H2B-Ub for 1 hr at 4° C. Then the reaction was transferred to a 30°C water bath and DUB activity was monitored as in Figure 2.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Deubiqutination was measured as in Figure 2A–B; following incubation at 30°C, the reactions were transferred to ice. Mobility was monitored on a native 6% polyacrylamide gel after diluting samples 6-fold. Note that Spt16/Pob3 stimulates the activity of Ubp10 even in the absence of Nhp6, and that adding Nhp6 does not affect the integrity of the nucleosomal products as judged by their rate of migration through this native gel. The concentration of Nhp6 after dilution is sufficient to bind the free DNA species, and to make transient complexes with nucleosomes, causing loss of the free DNA form and formation of additional bands above the labeled yNCP species, but the yNCP species migrate in the same positions, suggesting that they have the same composition.
+
+### FACT stimulates Ubp10 DUB activity on nucleosomes
 
 In cells, core histones that are not incorporated into nucleosomes are usually bound by histone chaperones, which bind to H2A/H2B heterodimers or H3/H4 heterodimers or heterotetramers (Elsässer and D'Arcy, 2012). The histone chaperone, FACT, binds to H2A/H2B heterodimers and facilitates heterodimer eviction and exchange, as well as nucleosome reassembly (Fleming et al., 2008; Mason and Struhl, 2003; Orphanides et al., 1998; Orphanides et al., 1999; Saunders et al., 2003). In light of the reported functional interaction between H2B-Ub and FACT (Fleming et al., 2008; Pavri et al., 2006) and the role of FACT in binding both H2A/H2B heterodimers and intact nucleosomes, we asked whether Ubp10 can remove ubiquitin from ubiquitinated yeast H2A/H2B heterodimers or nucleosomes when they are bound to FACT. We unexpectedly found that FACT dramatically increases the rate at which Ubp10 cleaves H2B-Ub in nucleosomes (Figure 2B–C). Essentially all of the H2B-Ub in the nucleosomal sample was cleaved in under 60 min in the presence of FACT (Figure 2B–C), whereas less than 10% was consumed during the same time period in the absence of FACT (Figure 2A–C). By contrast, the addition of FACT had no effect on the rate at which Ubp10 deubiquitinated H2B in H2A/H2B-Ub heterodimers (Figure 2A–B). We verified that purified FACT on its own has no DUB activity against the ubiquitinated nucleosome (Figure 2—figure supplement 1). To further confirm the dependence of Ubp10 DUB activity on the presence of FACT, we assayed Ubp10 deubiquitination activity on nucleosomes at a fixed time point in the presence of increasing concentrations of FACT. As shown in Figure 2D, the amount of nucleosomal H2B-Ub cleaved increases as a function of increasing FACT concentration. Notably, the dose response for FACT in this assay closely matches the affinity of FACT for nucleosomes (Ruone et al., 2003; Winkler et al., 2011). Interestingly, the ability of FACT to stimulate of H2B deubiquitination does not require Nhp6, as Spt16/Pob3 alone efficiently stimulates the activity of Ubp10 (Figure 2—figure supplement 2). These results show that FACT stimulates Ubp10 DUB activity, and that this stimulatory effect is specific to nucleosomal H2B-Ub substrates.
 
@@ -56,13 +76,33 @@ A possible explanation for the observed stimulatory effect of FACT is that it al
 
 The finding that FACT stimulates Ubp10 to deubiquitinate nucleosomes stands in stark contrast to the Ubp8/SAGA DUB module. We previously found (Morgan et al., 2016) that the abillity of the Ubp8/DUB module to deubiquitinate nucleosomes is not affected by the addition of FACT. SAGA/Ubp8 can therefore access H2B-K123Ub in the context of the nucleosome, but Ubp10 deubiquitinates nucleosomal H2B-Ub poorly without the assistance of FACT.
 
-## FACT stimulation does not correlate with Ubp10 nucleosome-binding activity
+### FACT stimulation does not correlate with Ubp10 nucleosome-binding activity
 
 Ubp10 contains an unstructured region rich in Asp/Glu that is N-terminal to the catalytic USP domain (residues 362–733) (Reed et al., 2015) (Figure 3A). The N-terminal unstructured region contains residues that interact with the Sir3/Sir4 silencing proteins and recruit Ubp10 to subtelomeric regions (Emre et al., 2005; Gardner et al., 2005; Zukowski et al., 2018). However, it is not known how Ubp10 is recruited to ubiquitinated nucleosomes elsewhere in the genome. We therefore asked whether Ubp10 alone can bind to nucleosomes in which ubiquitin is linked to H2B-K123 via a non-hydrolyzable linker (Morgan et al., 2016). We detected binding of Ubp10 to ubiquitinated nucleosomes in an electrophoretic mobility shift assay (EMSA), with half-maximal binding observed at approximately 0.4 µM Ubp10 (Figure 3B). Ubp10 bound with similar apparent affinity to unmodified nucleosomes (Figure 3—figure supplement 1), indicating that interactions between the ubiquitin and the Ubp10 catalytic domain do not play a significant role in the observed binding. Deletion of the N-terminal 156 residues had little effect on the affinity of Ubp10 for ubiquitinated nucleosomes (Figure 3B). However, a further deletion of the N-terminal 199 residues, Ubp10-(200-792), reduced binding substantially, and no binding was detected with Ubp10 residues 250–792 (Figure 3B). The Sir3/Sir4 interaction domain has been mapped to Ubp10 residues 109–133 (Reed et al., 2015) so these results show that the Asp/Glu rich region (residues 157–250) of Ubp10 is important for the observed binding to nucleosomes but the Sir3/Sir4 binding site is not.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of Ubp10 and its truncations with the locations of the catalytic domain (USP) and an N-terminal region rich in aspartic acid and glutamic acid repeats shown. (B) Native gel showing complexes formed between Ubp10 constructs and ubiquitinated nucleosomes (purified proteins used in this experiment are shown in Figure 3—figure supplement 4). (C) Ubp10 activity was measured as in Figure 2; time points were taken after incubating 2 µM H2A/H2B-Ub dimers with 5 nM Ubp10 fragments. (D) NCP-Ub cleavage activity monitored in the presence and absence of FACT and several Ubp10 constructs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Reaction conditions are the same as in Figure 3B.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Electrophoretic mobility shift assay (EMSA) of Ubp10 binding to ubiquitinated nucleosomes in the presence and absence of FACT. (A) Ubp10/NCP-Ub binding monitored by incubating 100 nM NCP-Ub in EMSA buffer in the absence (left) or presence (right) of FACT (2 µM Nhp6 and 2 µM Spt16/Pob3-WT) and with increasing concentrations of Ubp10. Samples were incubated for 1 hr on ice and electrophoresed on a 4% native polyacrylamide gel. At high concentrations of FACT, the binding of FACT to nucleosomes blocks the formation of stable Ubp10-nucleosome complexes. (B) Reactions in the presence of 2 µM Nhp6 and 10 nM Spt16/Pob3 (left) or 20 nM Spt16/Pob3 (right). (C) Reactions with equimolar concentrations of FACT subunits at the apparent KD (left) and below the KD of the binding of Ubp10 to NCP-Ub. Samples in B and C were analyzed on a 6% polyacrylamide TBE gels (Life Technologies).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Increasing amounts of DubM were incubated for 1 hr with 100 nM yeast ubiquitinated nucleosomes (DUB resistant yNCP-DCA-Ub, see methods). Following native gel electrophoresis, the gel was stained with SYBR Gold. The mobility of nucleosomes remained unchanged with increasing concentrations of the DUB module.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** SDS-PAGE gel stained with Coomassie Brilliant Blue showing each of the purified Ubp10 truncations used in Figure 3.
+
 To determine whether Ubp10 domains that are required for nucleosome binding are also required for DUB activity as well as for stimulation by FACT, we tested the DUB activity of the Ubp10 N-terminal truncations. All three N-terminal truncation mutants were active on H2A/H2B-Ub heterodimers, although the Δ200 and Δ250 truncations had slightly lower activity than intact Ubp10 (Figure 3C). Similar to the full length protein, all three truncations displayed weak activity on a nucleosomal substrate in the absence of FACT and enhanced DUB activity on nucleosomes in the presence of FACT (Figures 3D and 2A). Therefore, the truncations that decreased Ubp10 affinity for nucleosomes (Ubp10 200–792 and Ubp10 250–792) were still stimulated by FACT. We also tested the hypothesis that the presence of FACT might enhance binding of Ubp10 to nucleosomes, which could provide a mechanism by which FACT enhances cleavage of nucleosomal H2B-Ub. Gel mobility shift assays for binding to ubiquitinated nucleosomes, however, did not show enhanced affinity of Ubp10 for ubiquitinated nucleosomes in the presence of FACT (Figure 3—figure supplement 2). These results suggest that the ability of FACT to stimulate Ubp10 is not coupled to the intrinsic ability of Ubp10 to bind nucleosomes. We speculate that Ubp10 binds to nucleosomes primarily through the histone dimers but remains poised for deubiquitination until FACT acts on the nucleosomes.
 
-## A FACT mutant strain has elevated levels of H2B-Ub
+### A FACT mutant strain has elevated levels of H2B-Ub
 
 Our in vitro assays show that the ability of Ubp10 to deubiquitinate nucleosomes is greatly enhanced in the presence of the histone chaperone FACT (Figure 2). If FACT activity also stimulates Ubp10 activity in vivo, a defect in FACT activity should phenocopy the effects of a Ubp10 deletion. To test this, we compared the relative ratio of monoubiquitinated H2B to unmodified H2B in a yeast strain with the pob3-L78R mutation, which destabilizes the Pob3 subunit of FACT and reduces its level by about 10-fold under permissive growth conditions (Schlesinger and Formosa, 2000; VanDemark et al., 2008). This causes defects in both transcription and DNA replication (Schlesinger and Formosa, 2000). As shown in Figure 4, the pob3-L78R strain had an elevated level of H2B-Ub (1.9-fold increased) that is comparable to that in a ubp10 deletion strain (1.4-fold increased) when normalized for total H2B. This increase in H2B-Ub in a FACT mutant is consistent with a role for FACT in deubiquinating H2B-Ub in vivo. A strain lacking Ubp10 and also carrying the FACT defect had roughly the same increased ratio of H2B-Ub as the pob3-L78R mutant (2.0-fold increased, Figure 4B), consistent with the interpretation that FACT and Ubp10 cooperate to deubiquitinate H2B in the same pathway. Together, these results show that FACT activity can contribute to H2B deubiquitination in vivo, supporting the physiological relevance of the in vitro data showing that FACT is stimulates Ubp10 activity on nucleosomes (Figure 2D).
 
@@ -70,9 +110,170 @@ Our in vitro assays show that the ability of Ubp10 to deubiquitinate nucleosomes
 
 **Figure 4.:** (A) Representative western blot analysis of TCA extracts from WT, ubp10Δ, and ubp10Δ pob3-L78R strains probed with antibodies against H2B-Ub and re-probed with antibodies against H2B. (B) Relative steady-state levels of H2B-Ub for WT, pob3-L78R, ubp10Δ, and ubp10Δ/pob3-L78R strains (Table 1). The average and standard deviation from multiple biological replicates is shown. The numbers at the bottom indicate the relative H2B-Ub increase normalized to the paired unmodified H2B value (H2B-Ub/H2B) within each individual gel. Total H2B is decreased in the mutant because the slow growth of the strain leads to a larger average cell size and therefore a lower contribution of nuclear proteins to the total protein level that was used to normalize loading.
 
+**Table 1.**
+ Yeast Strains used All strains are congenic with the A364a background and are MATa.Standard methods were used to introduce the mutations shown into diploid strains, then haploids were derived and crossed to obtain the combinations listed, ensuring that all strains with the same genotype displayed the phenotypes observed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Figure 4 Western blots</th>
+    </tr>
+    <tr>
+      <th>Strain</th>
+      <th>Label</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8127-7-4</td>
+      <td>WT</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂</td>
+    </tr>
+    <tr>
+      <td>10018-1-4</td>
+      <td>ubp10∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ ubp10-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>9204</td>
+      <td>pob3-L78R</td>
+      <td>ura3 leu2 trp1 his3 lys2-128∂ pob3-L78R(+34, LEU2)</td>
+    </tr>
+    <tr>
+      <td>10025-2-4</td>
+      <td>pob3-L78R ubp10∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ ubp10-∆(::HphMX) pob3-L78R(+34, LEU2)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Figure 5A (top panel), Figure 6A (1-4)</td>
+    </tr>
+    <tr>
+      <td>8127-7-4</td>
+      <td>WT</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂</td>
+    </tr>
+    <tr>
+      <td>10018-1-4</td>
+      <td>ubp10∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ ubp10-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>9204</td>
+      <td>pob3-L78R</td>
+      <td>ura3 leu2 trp1 his3 lys2-128∂ pob3-L78R(+34, LEU2)</td>
+    </tr>
+    <tr>
+      <td>10025-2-4</td>
+      <td>pob3-L78R ubp10∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ ubp10-∆(::HphMX) pob3-L78R(+34, LEU2)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Figure 5C (middle panel), Figure 6A (5-8)</td>
+    </tr>
+    <tr>
+      <td>8127-7-4</td>
+      <td>WT</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂</td>
+    </tr>
+    <tr>
+      <td>8540-1-1</td>
+      <td>ubp8∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ ubp8-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>9204</td>
+      <td>pob3-L78R</td>
+      <td>ura3 leu2 trp1 his3 lys2-128∂ pob3-L78R(+34, LEU2)</td>
+    </tr>
+    <tr>
+      <td>10032-4-3</td>
+      <td>pob3-L78R ubp8∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ pob3-L78R(+34, LEU2) ubp8-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Figure 5B (bottom panel), Figure 6B</td>
+    </tr>
+    <tr>
+      <td>8127-7-4</td>
+      <td>WT</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂</td>
+    </tr>
+    <tr>
+      <td>10018-1-4</td>
+      <td>ubp10∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ ubp10-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>9273H</td>
+      <td>pob3-Q308K</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ pob3-Q308K(+34, HphMX)</td>
+    </tr>
+    <tr>
+      <td>10019-2-3</td>
+      <td>pob3-Q308K ubp10∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ pob3-Q308K(+34, HphMX) ubp10-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>9495 H-2-3</td>
+      <td>spt16-11</td>
+      <td>ura3 leu2 trp1 his3 lys2-128∂ spt16-11(+124, HphMX)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Figure 6C</td>
+    </tr>
+    <tr>
+      <td>9880-2-2</td>
+      <td>WT</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX)</td>
+    </tr>
+    <tr>
+      <td>10040-3-2</td>
+      <td>ubp8∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) ubp8-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>10024-3-1</td>
+      <td>ubp10∆</td>
+      <td>ura3 leu2-∆0 trp1 his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) ubp10-∆(::HphMX)</td>
+    </tr>
+    <tr>
+      <td>10040-1-3</td>
+      <td>pob3-L78R</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) pob3-L78R(+34, LEU2)</td>
+    </tr>
+    <tr>
+      <td>10040-5-1</td>
+      <td>pob3-L78R ubp8∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) pob3-L78R(+34, LEU2) ubp8-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>10039-1-4</td>
+      <td>pob3-L78R ubp10∆</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) pob3-L78R(+34, LEU2) ubp10-∆(::HphMX)</td>
+    </tr>
+    <tr>
+      <td>9949-3-1</td>
+      <td>spt16-11</td>
+      <td>ura3 leu2 trp1 his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) spt16-11(+124, KanMX)</td>
+    </tr>
+    <tr>
+      <td>10044-4-2</td>
+      <td>ubp8∆ spt16-11</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) spt16-11 ubp8-∆(::KanMX)</td>
+    </tr>
+    <tr>
+      <td>10043-7-3</td>
+      <td>ubp10∆ spt16-11</td>
+      <td>ura3-∆0 leu2-∆0 trp1-∆two his3 lys2-128∂ GAL1pr-flo8-HIS3(NatMX) spt16-11(+124, HphMX) ubp10-∆(::KanMX)</td>
+    </tr>
+  </tbody>
+</table>
+
 Our results differ from a previous study (Fleming et al., 2008) that found that cells with a temperature-sensitive SPT16 allele (spt16-197) showed a decrease in FLAG-H2B-Ub levels when shifted to a restrictive temperature. In that experiment, cells initially experienced normal levels of FACT, followed by an acute reduction of the essential FACT complex to a level that does not support viability (Malone et al., 1991). By contrast, the pob3-L78R mutant used in this study experiences chronically low levels of FACT but is viable under the conditions tested (Schlesinger and Formosa, 2000). The use of an allele that destabilizes a different subunit of FACT under conditions of chronic rather than acute exposure to FACT depletion may explain the different outcomes, and may suggest clues regarding the mechanism through which FACT affects Ubp10 activity in vivo.
 
-## FACT and Ubp10 cooperate during DNA replication
+### FACT and Ubp10 cooperate during DNA replication
 
 In addition to their roles in transcription (Batta et al., 2011; Fleming et al., 2008; Pavri et al., 2006; Reinberg and Sims, 2006; Weake and Workman, 2008), both FACT and H2B monoubiquitination have been implicated in assembling and stabilizing nucleosomes during DNA replication (Jasencakova and Groth, 2010; Lin et al., 2014; Trujillo and Osley, 2012). FACT has been proposed to play an important role in DNA replication by assisting in initiation, DNA unwinding, histone eviction, and chromatin reassembly (Lin et al., 2014; Ransom et al., 2010; Schlesinger and Formosa, 2000; Trujillo and Osley, 2012). H2B monoubiquitination near origins of replication supports replisome stability, fork progression and checkpoint pathways (Lin et al., 2014; Trujillo and Osley, 2012). Insights into the role of H2B-Ub in DNA replication come from studying the effects of deleting the H2B E3 ligase, Bre1 (Lin et al., 2014; Trujillo and Osley, 2012), or mutants expressing H2B with a K123R substitution, which cannot be ubiquitinated (Lin et al., 2014; Trujillo and Osley, 2012). The role of H2B deubiquitinating enzymes in DNA replication, however, has not been explored.
 
@@ -80,13 +281,21 @@ In light of our finding that FACT stimulates Ubp10 activity on nucleosomes in vi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig5-v2.jpg)
 
-**Figure 5.:** ubp10∆ and FACT alleles causes sensitivity to HU.(A–C) Strains indicated (Table 1) were grown to saturation, then 10-fold serial dilutions were spotted on rich medium (YPAD) with and without the indicated concentrations of hydroxyurea (HU, mM). Plates were incubated at the temperature indicated for the time shown (days). Combining pob3-L78R with ubp10∆ caused HU sensitivity (A), but combining it with ubp8∆ did not (C). Combining ubp10∆ with other alleles of FACT also caused synthetic defects on HU (B).
+**Figure 5.:** (A–C) Strains indicated (Table 1) were grown to saturation, then 10-fold serial dilutions were spotted on rich medium (YPAD) with and without the indicated concentrations of hydroxyurea (HU, mM). Plates were incubated at the temperature indicated for the time shown (days). Combining pob3-L78R with ubp10∆ caused HU sensitivity (A), but combining it with ubp8∆ did not (C). Combining ubp10∆ with other alleles of FACT also caused synthetic defects on HU (B).
 
 Ubp8/SAGA, in contrast to Ubp10, does not depend upon FACT to deubiquitinate nucleosomes in vitro (Morgan et al., 2016). We therefore predicted that ubp8 and FACT should not have the same genetic interaction as ubp10 and FACT. Indeed, a ubp8∆/pob3-L78R double mutant did not show any synthetic growth defects in the presence of hydroxyurea, even at concentrations as high as 150 mM (Figure 5C). These observations point to a specific cooperative function of Ubp10 and FACT in DNA replication that cannot be performed by Ubp8.
 
-## FACT and Ubp10 cooperate to suppress cryptic transcription
+### FACT and Ubp10 cooperate to suppress cryptic transcription
 
 Both FACT and H2B ubiquitination are needed to maintain wild type levels of nucleosome occupancy (Feng et al., 2016; Fleming et al., 2008; Jamai et al., 2009). Defects in nucleosome occupancy can give rise to altered transcription patterns and activation of cryptic transcription initiation in gene coding regions (Fleming et al., 2008; Kaplan et al., 2003). Mutations in FACT cause expression of the lys2-128∂ Spt– phenotype reporter (Suppression of Ty1 insertion) (Brewster et al., 1998; Malone et al., 1991; Schlesinger and Formosa, 2000; Simchen et al., 1984), which reveals failure to establish normal chromatin-mediated repression of this promoter (Cheung et al., 2008; Kaplan et al., 2003). Wild type strains with this reporter have normal chromatin and do not grow on medium lacking lysine, but all three FACT mutants tested here express the reporter and grow (called the Spt– phenotype; Figure 6). This readout of transcription initiation resulting from poor quality chromatin was not affected by the loss of Ubp10 (Figure 6A,B; the growth defects caused by combining ubp10∆ with FACT mutations were similar on -lys and complete media so they are not due to changes in the Spt– phenotype) or loss of Ubp8 (Figure 6A and not shown). We then tested the effect of ubp10Δ on expression of a cryptic promoter reporter, which supports growth in the absence of histidine if galactose-induced transcription of the reporter activates a cryptic promoter within the FLO8 gene (Cheung et al., 2008) (Figure 6D). While neither a ubp10∆ nor an spt16-11 mutant activated the reporter gene, the double ubp10∆/spt16-11 mutant displayed significant levels of cryptic promoter activation (compare Gal Complete and Gal -his in Figure 6C) whereas the double ubp8∆/spt16-11 mutant did not. We were not able to see an effect of combining a ubp10Δ with the pob3-L78R allele because the pob3-L78R mutation on its own robustly activates the cryptic transcription reporter and enables near wild-type levels of growth (Figure 6C), again highlighting the different effects of different FACT alleles. Taken together, these results indicate that Ubp10, but not Ubp8, acts in combination with FACT to maintain normal chromatin organization in the wake of RNA polymerase II transcription.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig6-v2.jpg)
+
+**Figure 6.:** (A,B) ubp10∆ did not affect the Spt– phenotype of FACT mutants. Dilutions of the same strains shown in Figure 5 were plated on synthetic medium with (C, complete) or without lysine (-lys). These strains with the lys2-128∂ allele are auxotrophic for lysine, but defects in chromatin integrity allow expression of the gene, which is revealed as growth on -lys (the Spt– phenotype; see Simchen et al., 1984). FACT mutants displayed this phenotype, but this was not affected by ubp8∆ or ubp10∆ (A, B, and not shown). (C) Activation of a cryptic transcription reporter in a ubp10∆/spt16-11 mutant strain reveals a defect in restoring chromatin in the wake of RNA Pol II passage. Strains with an out-of-frame fusion of HIS3 to a site downstream of a cryptic promoter in the FLO8 gene (panel D, adapted from Cheung et al., 2008) are auxotrophic for histidine when the GAL1 promoter driving transcription of this reporter is repressed on glucose (not shown) but can grow without histidine on synthetic medium containing galactose (Gal -his). Strains with the pob3-L78R mutation have this phenotype, indicating activation of the cryptic promoter, masking any potential effects of ubp8∆ or ubp10∆. The spt16-11 allele alone did not activate this reporter but did when combined with ubp10∆.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40988/elife-40988-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Strains indicated (Table 1) were grown to saturation, then 10-fold serial dilutions were spotted on rich medium (YPAD) with and without the indicated concentrations of hydroxyurea (HU, mM). Plates were incubated at the temperature indicated for the time shown (days). Combining pob3-L78R with ubp10(109-133)∆ does not cause the synthetic growth defects seen in the full ubp10 deletion. (B) Genetic analysis as in Figure 6A–B, but with the ubp10 internal deletion lacking the SIR-complex interaction domain. ubp10(109-133)∆ does not cause the growth defect observed with ubp10∆, and neither affect the Spt- phenotype (the weaker growth of the pob3-L78R/ubp10∆ strain on -lys parallels its weaker growth on rich media; see Figure 6A). Together, these results show that the phenotypes we observe in the pob3-L78R/ubp10∆ strain (Figures 5–6) are not caused by failure of Ubp10's role in silencing.
 
 ## Discussion
 
@@ -110,25 +319,25 @@ The coupling of Ubp10 and FACT activity provides a missing link between cycles o
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
-## Purification of Ubp10-WT and Ubp10 truncations
+#### Purification of Ubp10-WT and Ubp10 truncations
 
 To make the full-length wild-type Ubp10 expression plasmid (pMN2), the protein coding sequences were amplified from Saccharomyces cerevisiae genomic DNA by PCR using KOD polymerase (EMD Millipore). The amplified product containing an N-terminal His6-tag and TEV (tobacco etch virus) cleavage site was inserted into a vector that contains thioredoxin protein, pET32a, using IN-fusion cloning kit (Clontech). Ubp10 N-terminal deletions containing residues 157–792 (pMN3), 200–792 (pMN4), and 250–792 (pMN5), were similarly amplified from the original Ubp10-WT expression plasmid, pMN2, and inserted into pET32a. Ubp10-containing plasmids were expressed in Rosetta (DE3) cells. Briefly, a starter culture was grown to an OD of 0.6, then transferred to 1 L M9ZB medium and allowed to grow at 37°C. When the OD reached ~1.5–2, the medium was supplemented with 1 mM isopropyl-β-D-thiogalactoside (ITPG) and the temperature was shifted to 20°C for an overnight induction. Pelleted cells were lysed in lysis buffer, 25 mM HEPES pH 7.5, 20 mM imidazole pH 7.5, 600 mM NaCl, 10 mM 2-mercaptoethanol, and 1 mM phenylmethylsulfonyl fluoride (PMSF). The lysate was recovered by centrifugation and the supernatant was loaded onto 5 ml HisTrap HP column (GE Healthcare) using buffer A (25 mM HEPES pH 7.5, 20 mM imidazole pH 7.5, 600 mM NaCl, 10 mM 2-mercaptoethanol). Bound protein was eluted with buffer B (25 mM HEPES pH 7.5, 300 mM imidazole pH 7.5, 600 mM NaCl, 10 mM 2-mercaptoethanol). To cleave the purification tags, 1 mg of TEV protease (per mg of protein) was added to the combined fractions and dialyzed overnight against buffer A. The dialyzed sample was then reloaded onto a HisTrap column to remove the cleaved purification tag. The protein was then diluted with ion exchange binding buffer (25 mM HEPES pH 7.5, 50 mM NaCl, 10 mM 2-mercaptoethanol, loaded onto 5 ml Hitrap SP HP column (GE healthcare), and eluted with elution buffer (25 mM HEPES pH 7.5, 1 M NaCl, 10 mM 2-mercaptoethanol). Final purification was carried out using preparative grade HiLoad Superdex 200 26/600 (GE healthcare) with a buffer containing 25 mM HEPES pH 7.5, 250 mM NaCl, and 10 mM 2-mercaptoethanol. All Ubp10 constructs were purified using this protocol. Small aliquots were flash frozen using liquid nitrogen. Although the enzyme is very robust, we avoided freeze thawing for re-use.
 
-## Purification of wild-type histones
+#### Purification of wild-type histones
 
 Saccharomyces cerevisiae histones H2A, H2B, H3, and H4 were expressed in E.coli and purified by standard methods (Dyer et al., 2004) with modifications as described previously (Morgan et al., 2016). All wild-type histone expression plasmids were generous gifts from the laboratory of Greg Bowman.
 
-## Preparation of non-hydrolyzable monoubiquitinated H2B
+#### Preparation of non-hydrolyzable monoubiquitinated H2B
 
 DUB-resistant monoubiquitinated yH2B containing a dichloroacetone linkage between ubiquitin and H2B-K123 (yH2B-DCA-Ub) was prepared using the approach previously described for Xenopus H2B-DCA-Ub (Morgan et al., 2016).
 
-## Purification of yeast FACT
+#### Purification of yeast FACT
 
 All Saccharomyces cerevisiae FACT subunits, Nhp6 and the heterodimer of Spt16 and Pob3 were purified from yeast as previously described (Paull and Johnson, 1995; Xin et al., 2009).
 
-## Preparation of cleavable monoubiquitinated histone H2B
+### Preparation of cleavable monoubiquitinated histone H2B
 
 Ubiquitinated yeast H2B was generated semi-synthetically according to protocols previously reported for Xenopus H2B-Ub (Morgan et al., 2016). In brief, ubiquitin (aa1-76, pMN43) and yH2B (aa1-119, pMN161) were cloned into pTXB1 (Evans et al., 1998; Southworth et al., 1999) by making C-terminal fusions with Mxe GyrA intein for thiol-induced cleavage and a chitin binding domain (CBD) for affinity purification using chitin resin (NEB catalog #S6651L). By using this method, both the ubiquitin and H2B carrying a C-terminal reactive thioester are generated, which can then be used in subsequent ligation reactions. We made minor modifications to the previously used purification steps (Morgan et al., 2016). To purify ubiquitin, pMN43 (ubiquitin) was expressed in BL-21 RIL (DE3) cells. A 10-milliliter starter culture was transferred to 1 L 2xYT medium, incubated at 37°C until the OD reached 0.8, and induction was initiated with 0.5 mM IPTG at 16°C overnight. Pelleted cells were lysed in a buffer containing 100 mM NaOAc, 50 mM HEPES pH 6.5, 0.2 mM PMSF and 1 mM TCEP (Tris(2-carboxymethyl)phosphine hydrochloride). The lysate was spun down and the supernatant was loaded on to chitin resin, incubated for two hours to allow binding, and washed with lysis buffer. MES derivatization was initiated by adding cleavage buffer (100 mM NaOAc, 50 mM HEPES pH 6.5, 0.1 mM PMSF and 0.25 mM TCEP, and 250 mM MESNa (Sodium 2-Mercaptoethanesulfonate) and allowed to proceed at 37°C overnight. Cleavage was carried out over 5–6 rounds, each time collecting the derivatized ubiquitin by passing it through the chitin resin. The sample was then purified (twice) on an SP column (GE Healthcare), using binding buffer A (50 mM ammonium acetate pH 4.5, 0.5 mM TCEP) and eluted with 10% buffer B (50 mM ammonium acetate pH 4.5, 1 M NaCl, 0.5 mM TCEP). The final sample was thoroughly dialyzed against 0.5% TFA (Trifluoroacetic acid) and lyophilized. Derivatization was verified by MALDI-TOF mass spectrometry.
 
@@ -136,28 +345,28 @@ To purify histone H2B, pMN161 was expressed in BL-21 RIL (DE3) cells. A 10 ml st
 
 Synthesis of the C-terminal H2B peptide and ligation of the peptide with H2B and Ub was performed as previously described (Morgan et al., 2016) with the following modifications. Briefly, synthetic peptide Cys-H2B(121-130) and purified thioester peptide H2B-(1-119)-MES were ligated using native chemical ligation, followed by unmasking the protected thiolysine with MgCl2 and [Pd(Allyl)Cl]2 (Jbara et al., 2016). The ligated product was then treated with DTT, purified via HPLC, and immediately lyophilized. Finally, H2B-(1-130) intermediate was ligated with Ub-MES prepared via intein method and the ligation product was subjected to a desulfurization step, which yielded the desired native H2B-Ub.
 
-## Nucleosome reconstitution
+### Nucleosome reconstitution
 
-## H2B-Ub containing nucleosomes
+#### H2B-Ub containing nucleosomes
 
 Histone octamers and a 146 bp DNA fragment containing the Widom 601 nucleosome positioning sequence were purified and reconstituted into nucleosomes using standard methods (Dyer et al., 2004). Nucleosomes containing H2B-DCA-Ub (non-hydrolyzable linkage) and H2B-Ub with the native isopeptide linkage were also reconstituted using the same method and purified using DEAE-5PW column (Tosoh Bioscience). Reconstituted nucleosomes were stored at 4°C and used as needed.
 
-## Flag-tagged yeast nucleosomes
+#### Flag-tagged yeast nucleosomes
 
 Flag-tagged histone octamers were purified from E.Coli using a polycistronic expression vector containing all four yeast histones (a generous gift from Alwin Köhler) and a purification tag on H2B as previously described (Turco et al., 2015). Nucleosomes were reconstituted and purified using standard methods.
 
-## Electrophoretic mobility shift assays (EMSAs)
+### Electrophoretic mobility shift assays (EMSAs)
 
 Ubiquitinated or wild-type nucleosomes (100 nM) and Ubp10 concentrations ranging from 0 to 1600 nM were incubated on ice for 1 hr in the presence of 20 mM HEPES pH 7.6, 50 mM NaCl, 5% sucrose, 1 mM DTT, and 2.5 mM MgCl2 and 0.1 mg/ml bovine serum albumin (BSA). Once the reaction was completed, the samples were immediately loaded on to a pre-run 6% Novex TBE gels (Life Technologies) and electrophoresed for 75–100 min using 0.25x TBE running buffer at 4°C. Gels were stained with SYBR gold (Life Technologies) for 20 min and imaged using Chemidoc Touch (Bio-Rad). Apparent dissociation constants were estimated from half-maximal Ubp10-nucleosome complexes on native gel.
 
-## Ubp10 deubiquitination activity assays
+### Ubp10 deubiquitination activity assays
 
 Deubiquitination activity assays were performed according to a previously described protocol (Morgan et al., 2016). Briefly, 1 µM yNCP-Ub and 2 µM yH2A/H2B-Ub were preincubated in a 30°C water bath for 30 min in DUB assay buffer (50 mM HEPES pH 7.6, 150 mM NaCl, and 5 mM DTT). Isopeptidase activity was initiated by adding 5 nM pre-warmed (5 min) Ubp10. Similar concentrations were used for the experiments involving Ubp10 truncations. For experiments involving FACT, 2 µM Nhp6 and 2 µM Spt16/Pob3 were pre-incubated with the substrates. Time-courses were monitored by removing samples at the indicated times and quenching the reactions with 1x-LDS (Bio-Rad). Samples were analyzed on commercial SDS-PAGE gels (NuPAGE and Criterion) stained with SYPRO Ruby and imaged with Chemidoc Touch (Bio-Rad). All experiments were carried out in siliconized low retention tubes (Fisher Scientific Cat. No.02-681-320).
 
-## Yeast growth assays
+### Yeast growth assays
 
 Yeast strains with the genotypes shown in Table 1 were grown to saturation in rich medium then 10-fold serial dilutions were spotted to agarose plates with the composition described in Figure 5.
 
-## Western blots
+### Western blots
 
 Western blots were performed as in McCullough et al. (2018) using the TCA method of protein extraction. Each gel contained a dilution series of the WT strain extract to establish linearity of response and to determine the concentration of the target protein.

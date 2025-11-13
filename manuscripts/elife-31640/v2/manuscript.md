@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.31640.001 The occipital cortex of early blind individuals (EB) activates during speech processing, challenging the notion of a hard-wired neurobiology of language. But, at what stage of speech processing do occipital regions participate in EB? Here we demonstrate that parieto-occipital regions in EB enhance their synchronization to acoustic fluctuations in human speech in the theta-range (corresponding to syllabic rate), irrespective of speech intelligibility. Crucially, enhanced synchronization to the intelligibility of speech was selectively observed in primary visual cortex in EB, suggesting that this region is at the interface between speech perception and comprehension. Moreover, EB showed overall enhanced functional connectivity between temporal and occipital cortices that are sensitive to speech intelligibility and altered directionality when compared to the sighted group. These findings suggest that the occipital cortex of the blind adopts an architecture that allows the tracking of speech material, and therefore does not fully abstract from the reorganized sensory inputs it receives.
+The occipital cortex of early blind individuals (EB) activates during speech processing, challenging the notion of a hard-wired neurobiology of language. But, at what stage of speech processing do occipital regions participate in EB? Here we demonstrate that parieto-occipital regions in EB enhance their synchronization to acoustic fluctuations in human speech in the theta-range (corresponding to syllabic rate), irrespective of speech intelligibility. Crucially, enhanced synchronization to the intelligibility of speech was selectively observed in primary visual cortex in EB, suggesting that this region is at the interface between speech perception and comprehension. Moreover, EB showed overall enhanced functional connectivity between temporal and occipital cortices that are sensitive to speech intelligibility and altered directionality when compared to the sighted group. These findings suggest that the occipital cortex of the blind adopts an architecture that allows the tracking of speech material, and therefore does not fully abstract from the reorganized sensory inputs it receives.
 
 ## Introduction
 
@@ -30,15 +30,63 @@ Does the occipital cortex of EB people synchronize to speech rhythm? Is this put
 
 ## Results
 
-## Story comprehension
+### Story comprehension
 
 Participants listened to either natural speech segments (nat-condition) or to altered vocoded versions of these segments (see Materials and methods for details). In the 8-channel vocoded condition, the voice of the speaker is highly distorted but the intelligibility is unperturbed. By contrast, in the 1-channel vocoded condition, the speech is entirely unintelligible. After listening to each speech segment, participants were provided with a short statement about the segment, and asked to indicate whether the statement was true or false. Behavioural performance on these comprehension statements was analysed using linear mixed-effects models with maximum likelihood estimation. This method is a linear regression that takes into account dependencies in the data, as present in repeated measures designs. Blindness and intelligibility were included as fixed effects, while subject was modelled as a random effect. Intelligibility was nested in subjects. Intelligibility had a significant effect on story comprehension (χ(2)=110.7, p<0.001). The effect of blindness and the interaction between intelligibility and blindness were non-significant (χ(1)=1.14, p=0.286 and χ(2)=0.24, p=0.889). Orthogonal contrasts demonstrated that speech comprehension was stronger in the nat and 8-channel condition versus the 1-channel condition (b = 0.78, t(62)=14.43, p<0.001, r = 0.88). There was no difference between the nat and the 8-channel condition (b = 0.02, t(62)=1.39, p=0.17). Thus, speech intelligibility was reduced in the 1-channel, but not the 8-channel vocoded condition (Figure 1D). The lack of effect for the factor blindness suggests that there is no evidence for a potential difference in comprehension, attention or motivation between groups. Descriptive statistics of the group, and condition means are depicted in Table 1.
+
+**Table 1.**
+ Proportion of correct responses for the story comprehension questions.Depicted are the number of subjects (N) in the early blind (EB) and sighted individuals (SI) groups, the mean (M), and the standard error of the mean (SE) for each of the three conditions (Natural, 8-channel, 1-channel).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Natural</th>
+      <th colspan="2">8-channel</th>
+      <th colspan="2">1-channel</th>
+    </tr>
+    <tr>
+      <th>Group</th>
+      <th>N</th>
+      <th>M</th>
+      <th>SE</th>
+      <th>M</th>
+      <th>SE</th>
+      <th>M</th>
+      <th>SE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EB</td>
+      <td>17</td>
+      <td>0.899</td>
+      <td>0.019</td>
+      <td>0.853</td>
+      <td>0.031</td>
+      <td>0.559</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>SI</td>
+      <td>15</td>
+      <td>0.914</td>
+      <td>0.020</td>
+      <td>0.890</td>
+      <td>0.025</td>
+      <td>0.576</td>
+      <td>0.034</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/31640/elife-31640-fig1-v2.jpg)
 
 **Figure 1.:** (A) Segments from each condition (nat, 8-channel, and 1-channel) in the time domain (see also Video 1). Overlaid is the amplitude envelope of each condition. (B) Spectrogram of the speech samples from (A). The effect of spectral vocoding on the fine spectral detail in all three conditions. (C) The superimposed amplitude envelopes of the samples for each condition are highly similar, despite distortions in the fine spectral detail. (D) Behavioural performance on the comprehension statements reveals that comprehension is unperturbed in the nat and 8-channel conditions, whereas the 1-channel condition elicits chance performance. (E) Coherence spectrogram extracted from bilateral temporal sensors reveals a peak in cerebro-acoustic coherence at 7 Hz, across groups and conditions. The shaded area depicts the frequency range of interest in the current study. The topography shows the spatial extent of coherence values in the range 4–9 Hz. Enhanced coherence is observed selectively in bilateral temporal sensors. (F) Source reconstruction of the raw coherence confirms that cerebro-acoustic coherence is strongest in the vicinity of auditory cortex, bilaterally, extending into superior and middle temporal gyrus. (G) Statistically thresholded maps for the contrast between natural and 1-channel vocoded speech show an effect of intelligibility (p<0.05, FWE-corrected) in right STG. (H) Enhanced envelope tracking is observed for EB versus SI in a bilateral parieto-occipital network along the medial wall centred on Precuneus (p<0.05, FWE-corrected). (I) The statistical map shows the interaction effect between blindness and intelligibility: Early blind (EB) individuals show enhanced synchronization during intelligible (nat) versus non-intelligible speech (1-channel) as compared to SI in right calcarine sulcus (CS) (p<0.005, uncorrected). (J) Boxplots for three regions identified in the whole-brain analysis (top panel, STG; middle panel, parieto-occipital cortex; bottom panel, calcarine sulcus).
 
-## Tracking intelligible speech in blind and sighted temporal cortex
+### Tracking intelligible speech in blind and sighted temporal cortex
 
 The overall coherence spectrum, which highlights the relationship between the amplitude envelope of speech and the signal recorded from the brain, was maximal over temporal sensors between 6 Hz and 7 Hz (Figure 1E). This first analysis was performed on the combined dataset, and hence is not prone to bias or circularity for subsequent analyses, targeting group differences. The peak in the current study is slightly higher than those reported in previous studies (Gross et al., 2013). A likely explanation for this shift is the difference in syllabic rate between English (~6.2 Hz), used in previous studies, and Italian (~7 Hz) (Pellegrino et al., 2011). The syllabic rate is the main carrier of amplitude fluctuations in speech, and thus is most prone to reset oscillatory activity.
 
@@ -46,9 +94,77 @@ To capture the temporal scale of cerebro-acoustic coherence effects (6–7 Hz) 
 
 To test whether envelope tracking in the current study is modulated by intelligibility, we compared the coherence maps for the intelligible (nat) versus non-intelligible (1-channel) condition, in all groups combined (i.e., EB and SI), with dependent-samples permutation t-tests in SPM. The resulting statistical map (Figure 1G, p<0.05, FWE-corrected) revealed a cluster in right superior and middle temporal cortex (STG, MTG), where synchronization to the envelope of speech was stronger when participants had access to the content of the story. In other words, the effect of intelligibility on the sensory response (coherence with the speech envelope) suggests an interface between acoustic speech processing and comprehension in STG that is present in both groups.
 
-## Speech tracking in blind parieto-occipital cortex
+### Speech tracking in blind parieto-occipital cortex
 
 Whether EB individuals recruit additional neural substrate for tracking the envelope of speech was tested using independent-samples permutation t-tests in SPM, contrasting coherence maps between EB and SI for all three conditions combined. The statistical maps (Figure 1H, p<0.05, FWE-corrected) revealed enhanced coherence in EB versus SI in parieto-occipital cortex along the medial wall, centered on bilateral Precuneus, branching more extensively into the right hemisphere (see Table 2). This main effect of group highlights that neuronal populations in blind parieto-occipital cortex show enhanced synchronization to the acoustic speech signal. That is, blind participants show a stronger sensitivity to the sensory properties of the external speech stimulus at this level.
+
+**Table 2.**
+ MNI (Montreal Neurological Institute) coordinates and p-values for the three contrasts tested with threshold-free cluster enhancement (TFCE).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">MNI-coordinates (mm)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>p-value (FWE-cor)</th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Intelligibility</td>
+    </tr>
+    <tr>
+      <td>Superior temporal gyrus</td>
+      <td>0.027</td>
+      <td>64</td>
+      <td>−16</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="5">Blindness</td>
+    </tr>
+    <tr>
+      <td>Posterior cingulate</td>
+      <td>0.030</td>
+      <td>8</td>
+      <td>−40</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Postcentral sulcus</td>
+      <td>0.033</td>
+      <td>16</td>
+      <td>−32</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>Precuneus</td>
+      <td>0.033</td>
+      <td>-8</td>
+      <td>−64</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td colspan="5">Blindness x intelligibility</td>
+    </tr>
+    <tr>
+      <td>Calcarine sulcus</td>
+      <td>0.007</td>
+      <td>16</td>
+      <td>−88</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 Finally, to investigate whether and where envelope tracking is sensitive to top-down predictions during intelligible speech comprehension, we subtracted the unintelligible (1-channel) from the intelligible (nat) condition, and computed independent-samples t-tests between groups. As highlighted in the introduction, we were particularly interested in the role played by the Calcarine sulcus (V1) in processing semantic attributes of speech (Burton et al., 2002; Röder et al., 2002; Amedi et al., 2003), and therefore we restricted the statistical analysis to the area around the primary visual cortex. The search volume was constructed from four 10 mm spheres around coordinates in bilateral Calcarine sulcus ([−7,–81, −3]; [−6,–85, 4]; [12, -87, 0; 10, –84, 6]). The coordinates were extracted from a previous study on speech comprehension in EB (Burton et al., 2002). The resulting mask also include regions highlighted in similar studies by other groups (Röder et al., 2002; Bedny et al., 2011).
 
@@ -56,7 +172,7 @@ A significant effect of the interaction between blindness and intelligibility [(
 
 A group difference between EB and SI across conditions was not observed in the calcarine region (t[30] = 1.1, p=0.28). The lack of an overall group effect in calcarine sulcus suggests that there is not a simple enhanced sensory response to speech in the blind. This was different to the response we observed in parietal cortex, in which synchronization was stronger in the blind than in the sighted. Rather, the response in calcarine sulcus only differed between the two groups when speech was intelligible. While overall coherence with the speech envelope was equally high in EB and SI, the blind population showed significantly higher coherence in the intelligible speech condition than did the sighted, who showed higher cerebro-acoustic coherence in the unintelligible condition (1-Chan). The latter is reminiscent of the fact that the more adverse the listening condition (low signal-to-noise-ratio or audio-visual incongruence), the more the visual cortex is entrained to the visual speech signal of actual acoustic speech when presented together with varying levels of acoustic noise (Park et al., 2016; Giordano et al., 2017). Moreover, Giordano et al. (2017) showed an increase of directed connectivity between superior frontal regions and visual cortex under the most challenging (acoustic noise and uninformative visual cues) conditions, again suggesting a link between the reorganization observed in the occipital cortex of blind individuals and typical multisensory pathways involving the occipital cortex in audio-visual speech processing (Kayser et al., 2008). Visual deprivation since birth, however, triggers a functional reorganization of the calcarine region that can then dynamically interact with the intelligibility of the speech signal. For illustration purposes, cerebro-acoustic coherence from functional peak locations for intelligibility (across groups) in STG, blindness in the parieto-occipital cortex (Figure 1G; POC), and the interaction are represented as boxplots in Figure 1J.
 
-## Changes in occipito-temporal connectivity in the EB
+### Changes in occipito-temporal connectivity in the EB
 
 To further investigate whether cerebro-acoustic peaks in CS and STG which are sensitive to intelligible speech in EB are indicative of a more general re-organization of the network, we conducted functional connectivity analysis. Statistical analysis of the connectivity estimates was performed on the mean phase-locking value in the theta (4–8 Hz) range.
 
@@ -74,7 +190,7 @@ To test whether neuronal populations in the early blind’s occipital cortex syn
 
 In order to isolate the brain regions that are modulated by speech comprehension, we identified regions showing a greater response to amplitude modulations that convey speech information as compared to amplitude modulations that do not. In addition to the right STG observed in both groups (Figure 1H), the blind showed enhanced cerebro-acoustic coherence during intelligible speech in the vicinity of calcarine sulcus (V1; Figure 1I). This pattern of local encoding was accompanied by enhanced occipito-temporal connectivity during speech comprehension in EB as compared to SI. SI show the expected feed-forward projections from occipital to temporal regions (Lamme et al., 1998), whereas EB show a more balanced connectivity profile, trending towards the reverse temporal to occipital direction (see Figure 2). These findings support the idea of a reverse hierarchical model (Büchel, 2003) of the occipital cortex in EB, where the regions typically coding for ‘low-level’ visual features in the sighted (e.g. visual contrast or orientation) participate in higher-level function (e.g. speech intelligibility). Indeed, previous studies have found increased activity in the primary ‘visual’ cortex of EB people during Braille reading (Sadato et al., 1996; Burton et al., 2002, 2012), verbal memory and verb generation tasks (Amedi et al., 2003), and during auditory language-related processing (Bedny et al., 2011). In line with our results, activity in primary occipital regions in EB people is stronger in a semantic versus a phonologic task (Burton et al., 2003), and vary as a function of syntactic and semantic complexity (Röder et al., 2002; Bedny et al., 2011; Lane et al., 2015). Moreover, repetitive transcranial magnetic stimulation (rTMS) over the occipital pole induces more semantic errors than phonologic errors in a verb-generation task in EB people (Amedi et al., 2003). As we show that occipital regions entrain to the envelope of speech and are enhanced by its intelligibility, our results clearly suggest that the involvement of the occipital pole for language is not fully abstracted from sensory inputs as previously suggested (Bedny, 2017). The role of the occipital cortex in tracking the flow of speech in EB people may constitute an adaptive strategy to boost perceptual sensitivity at informational peaks in language.
 
-## Mechanistic origins of envelope tracking in occipital cortex
+### Mechanistic origins of envelope tracking in occipital cortex
 
 Although language is not the only cognitive process that selectively activates the occipital cortex of EB people, it is arguably one of the most puzzling. The reason is that reorganization of other processes, such as auditory motion perception and tactile object recognition, appears to follow the topography of the functionally equivalent visual processes in the sighted brain (Ricciardi et al., 2007a; Amedi et al., 2010; Dormal et al., 2016). For example, the hMT+/V5 complex, which is typically involved in visual motion in the sighted, selectively processes auditory (Poirier et al., 2006; Dormal et al., 2016; Jiang et al., 2016) or tactile (Ricciardi et al., 2007b) motion in blind people. However, in the case of language, such recruitment is striking in light of the cognitive and evolutionary differences between vision and language (Bedny et al., 2011). This led to the proposal that, at birth, human cortical areas are cognitively pluripotent: capable of assuming a broad range of unrelated cognitive functions (Bedny, 2017). However, this argument resides on the presupposition that language has no computational relation with vision. But does this proposition tally with what we know about the relationship between the visual system and the classical language network? Rhythmic information in speech has a well-known language-related surrogate in the visual domain: lip movements (Lewkowicz and Hansen-Tift, 2012; Park et al., 2016). Indeed, both acoustic and visual speech signals exhibit rhythmic temporal patterns at prosodic and syllabic rates (Chandrasekaran et al., 2009; Schwartz and Savariaux, 2014; Giordano et al., 2017). The perception of lip kinematics that are naturally linked to amplitude fluctuations in speech serves as an important vehicle for the everyday use of language (Kuhl and Meltzoff, 1982; Weikum et al., 2007; Lewkowicz and Hansen-Tift, 2012) and helps language understanding, particularly in noisy conditions (Ross et al., 2007). Indeed, reading lips in the absence of any sound activates both primary and association auditory regions overlapping with regions that are active during the actual perception of spoken words (Calvert et al., 1997). The synchronicity between auditory and visual speech entrains rhythmic activity in the observer’s primary auditory and visual regions, and facilitates perception by aligning neural excitability with acoustic or visual speech features (Schroeder et al., 2008; Schroeder and Lakatos, 2009; Giraud and Poeppel, 2012; Mesgarani and Chang, 2012; Peelle and Davis, 2012; van Wassenhove, 2013; Zion Golumbic et al., 2013b; Park et al., 2016; Giordano et al., 2017). These results strongly suggest that both the auditory and the visual components of speech are processed together at the earliest level possible in neural circuitry, based on the shared slow temporal modulations (around 2–7 Hz range) present across modalities (Chandrasekaran et al., 2009). Corroborating this idea, it has been demonstrated that neuronal populations in visual cortex follow the temporal dynamics of lip movements in sighted individuals, similar to the way in which temporal regions follow the acoustic and visual fluctuations of speech (Luo et al., 2010; Zion Golumbic et al., 2013a; Park et al., 2016). Similar to temporal cortex, occipital cortex in the sighted also shows enhanced lip tracking when attention is directed to speech content. This result highlights the fact that a basic oscillatory architecture for tracking the dynamic aspects of (visual-) speech in occipital cortex exists even in sighted individuals.
 
@@ -88,7 +204,7 @@ Functional dependencies between sensory systems exist between the earliest stage
 
 A number of recent studies have suggested that visual deprivation reinforces the functional connections between the occipital cortex and auditory regions typically classified as the language network (Hasson et al., 2016; Schepers et al., 2012). Previous studies using dynamic causal modelling support the idea that auditory information reaches the reorganized occipital cortex of the blind through direct temporo-occipital connection, rather than using subcortical (Klinge et al., 2010) or top-down pathways (Collignon et al., 2013). In support of these studies, we observed that the overall magnitude of functional connectivity between occipital and temporal cortex is higher in blind people than in sighted people during natural speech comprehension. Moreover, directional connectivity analysis revealed that the interaction between the two cortices is also qualitatively different: sighted individuals show a strong feed-forward drive towards temporal cortex, whereas blind individuals show a more balanced information flow, and a trend in the reverse direction. These results highlight one possible pathway by which the speech signal is enhanced in the occipital cortex of EB individuals. However, this does not mean that the changes in connectivity between blind and sighted individuals are limited to this specific network (e.g. see Kayser et al., 2015; Park et al., 2015).
 
-## Speech comprehension in the right hemisphere
+### Speech comprehension in the right hemisphere
 
 We observed that neuronal populations in right superior temporal cortex synchronize to the temporal dynamics of intelligible, but not non-intelligible, speech in both EB and SI groups. Why does speech intelligibility modulate temporal regions of the right, but not the left, hemisphere? According to an influential model of speech comprehension – the asymmetric sampling in time model (AST; Giraud and Poeppel, 2012; Hickok and Poeppel, 2007; Poeppel, 2003) – there is a division of labour between the left- and right auditory cortices (Poeppel, 2003; Boemio et al., 2005; Hickok and Poeppel, 2007), with the left auditory cortex being more sensitive to high-frequency information (+20 Hz), whereas the right temporal cortex is more sensitive to low-frequency information (~6 Hz) such as syllable sampling and prosody (Belin et al., 1998; Poeppel, 2003; Boemio et al., 2005; Obleser et al., 2008; Giraud and Poeppel, 2012). Several studies have shown that the right hemisphere is specifically involved in the representation of connected speech (Bourguignon et al., 2013; Fonteneau et al., 2015; Horowitz-Kraus et al., 2015; Alexandrou et al., 2017), whereas other studies have directly demonstrated the prevalence of speech-to-brain entrainment while listening to sentences or stories in delta and theta bands in the right hemisphere more than in the left hemisphere (Luo and Poeppel, 2007; Abrams et al., 2008; Gross et al., 2013; Giordano et al., 2017). The present study therefore replicates these results by showing enhanced phase coupling between the right hemisphere and the speech envelope at the syllabic rate (low-frequency phase of speech envelope), consistent with the AST model. An interesting observation in the current study is that right hemispheric sensitivity to intelligible speech in temporal areas coincides with the enhanced right hemispheric sensitivity to intelligible speech in the occipital cortex of blind individuals.
 
@@ -96,17 +212,19 @@ Having more cortical tissue devoted to sentence processing and understanding cou
 
 However, it is important to note that linking brain activity and behavior is not a trivial issue. Many studies have not found a direct link between crossmodal reorganization and non-visual processing. More generally, as a behavioral outcome is the end product of a complex interactive process between several brain regions, linking the role of one region in isolation (e.g. the reorganized region in the occipital cortex of blind people) to behavior (e.g. performance) in a multifaced task is not straightforward. An absence of a direct relation between behavior (e.g. speech processing) and crossmodal plasticity could be explained by the fact that this complex process is supported by additional networks other than the reorganized ones. Interestingly, recent studies have shown that early visual deprivation triggers a game of ‘balance’ between the brain systems typically dedicated to a specific process and the reorganized occipital cortex (Dormal et al., 2016). It has indeed been proposed that early visual deprivation triggers a redeployment mechanism that would reallocate part of the processing typically implemented in the preserved networks (i.e. the temporal or frontal cortices for speech processing) to the occipital cortex deprived of its most salient input (vision). Two recent studies using multivoxel pattern analysis (MVPA) showed that the ability to decode the different auditory motion stimuli was enhanced in hMT+ (a region typically involved in visual motion in sighted individuals) of early blind individuals, whereas an enhanced decoding accuracy was observed in the planum temporale in the sighted group (Jiang et al., 2016; Dormal et al., 2016). Moreover, Bedny et al. (2015) reported an enhanced activation of occipital cortex and a simultaneous deactivation of prefrontal regions during a linguistic task in blind children. The authors suggested that the increased involvement of the occipital cortex might decrease the pressure on the prefrontal areas to specialize in language processing. Interestingly, a transcranial magnetic stimulation (TMS) study reported a reduced disruptive effect of TMS applied over the left inferior prefrontal cortex during linguistic tasks for both blind and sighted individuals, whereas TMS applied over the occipital cortex caused more disruption in early blind as compared to sighted people (Amedi et al., 2004). Such studies support the idea that brain regions that are typically recruited for specific tasks in sighted individuals may become less essential in EB people if they concomitantly recruit occipital regions for the same task. An important open question for future research therefore concerns the relative behavioral contribution of occipital and perisylvian cortex to speech understanding.
 
-## Conclusions
+### Conclusions
 
 We demonstrate that the primary ‘visual’ cortex synchronizes to the temporal dynamics of intelligible speech at the rate of syllable transitions in language (~6–7 Hz). Our results demonstrate that this neural population is involved in processing the sensory signal of speech, and therefore contrasts with the proposition that occipital involvement in speech processing is abstracted from its sensory input and purely reflects higher-level operations similar to those observed in prefrontal regions (Bedny, 2017). Blindness, due to the absence of organizing visual input, leaves the door open for sensory and functional colonization of occipital regions. This colonization might however not be stochastic, but could be constrained by modes of information processing that are natively anchored in specific brain regions and networks. Even if the exact processing mode is still to be unveiled by future research, we hypothesise that the mapping of language onto occipital cortex builds upon pre-existing oscillatory architecture typically linking auditory and visual speech rhythm (Chandrasekaran et al., 2009). Our study therefore supports the view that the development of functional specialisation in the human cortex is the product of a dynamic interplay between genetic and environmental factors during development, rather than being predetermined at birth (Elman et al., 1996).
 
+![Video 1.](https://cdn.elifesciences.org/articles/31640/elife-31640-video1.mp4.jpg)
+
 ## Materials and methods
 
-## Participants
+### Participants
 
 Seventeen early blind (11 female; mean ± SD, 32.9 ± 10.19 years; range, 20–67 years) and sixteen sighted individuals (10 female; mean ± SD, 32.2 ± 9.92 years; range, 20–53 years) participated in the current study. There was no age difference between the blind and the sighted group (t[30] = 0.19, p=0.85). All blind participants were either totally blind or severely visually impaired from birth; however, two participants reported residual visual perception before the age of 3 and one before the age of 4, as well as one participant who lost their sight completely at age 10. Causes of vision loss were damage or detached retina (10), damage to the optic nerve (3), infection of the eyes (1), microphtalmia (2), and hypoxia (1). Although some participants reported residual light perception, none were able to use vision functionally. All participants were proficient braille readers and native speakers of Italian. None of them suffered from a known neurological or peripheral auditory disease. The data from one sighted individual were not included because of the discovery of a brain structural abnormality that was unknown to the experimenters at the time of the experiment. The project was approved by the local ethical committee at the University of Trento. In agreement with the Declaration of Helsinki, all participants provided written informed consent before participating in the study.
 
-## Experimental design
+### Experimental design
 
 Auditory stimuli were delivered into the magnetically shielded MEG room via stereo loudspeakers using a Panphonics Sound Shower two amplifier at a comfortable sound level, which was the same for all participants. Stimulus presentation was controlled via the Matlab (RRID:SCR_001622) Psychophysics Toolbox 3 (http://psychtoolbox.org; RRID:SCR_002881) running on a Dell Alienware Aurora PC under Windows 7 (64 bit). Both sighted and blind participants were blindfolded during the experiment, and the room was dimly lit to allow for visual monitoring of the participant via a video feed from the MEG room. Instructions were provided throughout the experiment using previous recordings from one of the experimenters (FB).
 
@@ -114,7 +232,7 @@ The stimuli consisted of 14 short segments (~1 min) from popular audiobooks (e.g
 
 To verify story comprehension, each speech segment was followed by a single-sentence statement about the story. Participants were instructed to listen to the story carefully, and to judge whether the statement at the end was true or false, using a nonmagnetic button box. Responses were provided with the index and middle finger of the right hand.
 
-## MEG data acquisition and preprocessing
+### MEG data acquisition and preprocessing
 
 MEG was recorded continuously from a 306 triple sensor (204 planar gradiometers; 102 magnetometers) whole-head system (Elekta Neuromag, Helsinki, Finland) using a sampling rate of 1 kHz and an online band-bass filter between 0.1 and 300 Hz. The headshape of each individual participant was measured using a Polhemus FASTRAK 3D digitizer. Head position of the subject was recorded continuously using five localization coils (forehead, mastoids).
 
@@ -122,17 +240,17 @@ Data pre-processing was performed using the open-source Matlab toolbox Fieldtrip
 
 Rejection of trials containing artefacts and bad channels was performed using a semi-automatic procedure. First, outliers were rejected using a pre-screening based on the variance and range in each trial/channel. Then, algorithmically guided visual inspection of the raw data was performed to remove any remaining sources of noise.
 
-## Extraction of the speech amplitude envelope
+### Extraction of the speech amplitude envelope
 
 Amplitude envelopes of the stories were computed using the Chimera toolbox (Chandrasekaran et al., 2009) and custom code, following the procedure described by Gross and colleagues (Gross et al., 2013). First, the sound files were band-pass filtered between 100 and 1000 Hz into nine frequency-bands, using a fourth order Butterworth filter. The filter was applied in forward and backward direction to avoid any phase shifts with respect to the original signal, and frequency-bands were spaced with equal width along the human basilar membrane. Subsequently, the analytic amplitude for each filtered segment was computed as the absolute of the Hilbert transform. Finally, the amplitude envelopes of all nine bands were summed and scaled to a maximum value of 1. The resulting envelope was combined with the MEG data, and processed identically henceforth.
 
-## Analysis of cerebro-acoustic coherence
+### Analysis of cerebro-acoustic coherence
 
 To determine where, and at what temporal scale, neuronal populations follow the temporal dynamics of speech, we computed spectral coherence between the speech envelope and the MEG signal. Coherence is a statistic that quantifies the phase relationship between two signals, and can be used to relate oscillatory activity in the brain with a peripheral measure such as a speech signal (Peelle et al., 2013). The first analysis was conducted in sensor space, across conditions and participants, to determine the temporal scale at which coherence between the speech envelope and the MEG signal is strongest. To this end, a Hanning taper was applied to the 1 s data segments, and Fourier transformation was used to compute the cross-spectral density between 1 and 30 Hz, with a step size of 1 Hz. To render the coherence values more normally distributed, a Fisher z-transform was applied by computing the inverse hyperbolic tangent (atanh).
 
 Source-space analysis was centred on the coherence frequency-band of interest (FOI) identified in the sensor space analysis. Source reconstruction was performed using a frequency domain beamformer called Dynamic Imaging of Coherent Sources (DICS) (Gross et al., 2001; Liljeström et al., 2005). DICS was used to localize spectral coherence, observed at the sensors, on a three-dimensional grid (8 × 8 × 8 mm). The forward model was based on a realistic single-shell headmodel (Nolte, 2003) for each individual. As structural scans could not be acquired for all participants, we approximated individual anatomy by warping a structural MNI template brain (MNI, Montreal, Quebec, Canada; www.bic.mni.mcgill.ca/brainweb) into individual headspace using the information from each participant’s headshape.
 
-## Source connectivity analysis
+### Source connectivity analysis
 
 Functional connectivity between occipital and temporal cortex was computed by extracting virtual sensor time-series at the locations of interest in CS and STG using time-domain beamforming. These virtual sensor time series were used to compute non-directional and directional connectivity metrics. The rationale behind focusing our analyses on STG and CS is to limit our hypothesis space by the results as they unfolded in our analytic steps. Indeed, we found that the right STG was the only region modulated by the intelligibility of speech in both groups, confirming previous results using similar methods (Luo and Poeppel, 2007; Abrams et al., 2008; Gross et al., 2013; Giordano et al., 2017). In addition to STG, we found enhanced cerebro-acoustic coherence for intelligible speech in CS of EB individuals. We therefore decided to focus our connectivity analyses on these two ROIs since they were functionally defined from our first analytical step (modulation of cerebro-acoustic coherence by speech intelligibility). The advantage of following this procedure is that connectivity analyses are based on nodes that we can functionally interpret and for which we have clear predictions. We successfully used the same hierarchical analytic structure in previous studies (Collignon et al., 2013, 2015; Benetti et al., 2017), following guidelines on how to investigate directional connectivity in brain networks (Stephan et al., 2010).
 
@@ -142,6 +260,6 @@ Functional connectivity between the two regions was computed at peak locations u
 
 PLV is a symmetric proxy for connectivity and does not allow for inferences regarding the direction of information flow between two regions of interest. To test whether differences in functional connectivity between EB and SI are accompanied by changes in the directionality of the flow of information between the regions of interest, we computed the phase slope index (PSI) (Nolte et al., 2008). The PSI deduces net directionality from the time delay between two time series (x1 and x2). Time series x1 is said to precede, and hence drive, time series x2 in a given frequency band if the phase difference between x1 and x2 increases with higher frequencies. Consequently, a negative phase slope reflects a net information flux in the reverse direction, that is, from x2 to x1. Here, we computed the PSI using a bandwidth of ±5 Hz around the frequencies of interest. Following the recommendation by Nolte and colleagues (Nolte et al., 2008), PSI estimates were normalized with the standard error, which was computed using the jackknife method.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical testing of the behavioural comprehension scores, as well as the connectivity estimates, was performed using linear mixed-effects models in R. Differences between conditions and groups in source space were evaluated using Statistical Parametric Mapping (SPM12; RRID:SCR_007037), and the Threshold-Free Cluster Enhancement (TFCE) toolboxes in Matlab. TFCE (Smith and Nichols, 2009) computes new values for each voxel in a statistical map as a function of the original voxel value and the values of the surrounding voxels. By enhancing the statistical values in voxels with a high T-value that are also part of a local cluster, TFCE optimally combines the benefits of voxel-wise and cluster-based methods. TFCE was applied to the whole-brain contrasts. Final correction for multiple comparisons was applied using a maximum statistic based on 1000 permutations of group membership (independent testing) or conditions (dependent testing). Here, we applied a variance smoothing of 15 mm FWHM to reduce the effects of high spatial frequency noise in the statistical maps. The smoothing kernel used in the current study is higher than that in comparable fMRI studies because of the inherent smoothness of the source-reconstructed MEG data.

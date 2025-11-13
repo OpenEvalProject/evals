@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03dbr7087 Dalla Lana School of Public Health, Epidemiology Division, University of Toronto Toronto Canada
-2. https://ror.org/03dbr7087 Centre for Global Health, Dalla Lana School of Public Health, University of Toronto Toronto Canada
+1. Dalla Lana School of Public Health, Epidemiology Division, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+2. Centre for Global Health, Dalla Lana School of Public Health, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 

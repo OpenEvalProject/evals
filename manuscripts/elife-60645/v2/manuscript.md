@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Trans -acting DNA variants may specifically affect mRNA or protein levels of genes located throughout the genome. However, prior work compared trans -acting loci mapped in separate studies, many of which had limited statistical power. Here, we developed a CRISPR-based system for simultaneous quantification of mRNA and protein of a given gene via dual fluorescent reporters in single, live cells of the yeast Saccharomyces cerevisiae . In large populations of recombinant cells from a cross between two genetically divergent strains, we mapped 86 trans -acting loci affecting the expression of ten genes. Less than 20% of these loci had concordant effects on mRNA and protein of the same gene. Most loci influenced protein but not mRNA of a given gene. One locus harbored a premature stop variant in the YAK1 kinase gene that had specific effects on protein or mRNA of dozens of genes. These results demonstrate complex, post-transcriptional genetic effects on gene expression.
+Trans-acting DNA variants may specifically affect mRNA or protein levels of genes located throughout the genome. However, prior work compared trans-acting loci mapped in separate studies, many of which had limited statistical power. Here, we developed a CRISPR-based system for simultaneous quantification of mRNA and protein of a given gene via dual fluorescent reporters in single, live cells of the yeast Saccharomyces cerevisiae. In large populations of recombinant cells from a cross between two genetically divergent strains, we mapped 86 trans-acting loci affecting the expression of ten genes. Less than 20% of these loci had concordant effects on mRNA and protein of the same gene. Most loci influenced protein but not mRNA of a given gene. One locus harbored a premature stop variant in the YAK1 kinase gene that had specific effects on protein or mRNA of dozens of genes. These results demonstrate complex, post-transcriptional genetic effects on gene expression.
 
 ## Introduction
 
@@ -36,27 +36,75 @@ Here, we addressed this challenge by developing a system for quantifying mRNA an
 
 ## Results
 
-## A reporter system for quantifying mRNA and protein in single, live cells
+### A reporter system for quantifying mRNA and protein in single, live cells
 
 We designed a dual reporter system for the simultaneous quantification of mRNA production and protein abundance of a given gene in single, live cells. In this system, protein abundance is measured via a fluorescent green fluorescent protein (GFP) tag fused to the C-terminus of the given protein of interest (Huh et al., 2003). To measure mRNA, we reasoned that a clustered regularly interspaced short palindromic repeats (CRISPR) guide RNA (gRNA) (Doudna and Charpentier, 2014) produced in equal molarity with the mRNA of interest would be able to drive proportional expression of a reporter gene via CRISPR activation (Gilbert et al., 2014; Konermann et al., 2015). To implement this idea, we created a gRNA tag located in the 3’UTR of the gene, downstream of the sequence encoding GFP (Figure 1A). After transcription of the mRNA along with this tag, the gRNA is released from the mRNA by two flanking self-cleaving ribozymes (Hammerhead, Hh; and Hepatitis Delta Virus, HDV) (Gao and Zhao, 2014). Because gRNA cleavage separates the mRNA from its poly-adenylated (polyA) tail, we added a synthetic polyA tail between the GFP tag and the Hh ribozyme (Gao and Zhao, 2014). Once released, the gRNA directs a catalytically deactivated CRISPR associated enzyme (dCas9) fused to a VP64 activation domain (dCas9-VP64) to drive the expression of a red fluorescent mCherry gene integrated in the genome (Farzadfard et al., 2013). After gRNA release, stability and half-life of the mRNA no longer affects gRNA abundance, such that mCherry expression primarily reports on mRNA production.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the dual quantification reporter. Hh: Hammerhead ribozyme, HDV: Hepatitis Delta Virus ribozyme, tCYC1: terminator sequence from the CYC1 gene, VP64: four consecutive sequences encoding viral protein transcription activators VP16, pACT1: promoter sequence from the ACT1 gene, pCYC1m: modified promoter sequence from the CYC1 gene without baseline transcriptional activity. Plasmids implementing the reporter are shown in Figure 1—figure supplement 1. (B) Time courses of cell density and fluorescence measurements for three tagged strains during 20 hr of growth on a plate reader. Filled symbols correspond to five measurements at the end of the exponential growth phase that were used for calculating fluorescence ratios for strain comparisons in the same physiological context as shown in panel C. (C) Fluorescence ratios (fluorescence / OD600) for the three strains shown in panel B. The points show the fluorescence ratios for the five measurements shown as filled circles in panel B. (D) RNA quantification of the individual components of the tag, for TDH3-GFP and TDH3-GFP-gRNA by RT-qPCR. The two bars per strain show biological replicates. Normalized qPCR quantifications were calculated separately for each primer pair based on calibration with known template DNA amounts (Figure 1—figure supplement 2). For these pilot experiments, cells were grown in YNB glutamate medium. For experiments in B – D, the CRISPR reporter was inserted at NPR2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** For each plasmid, the figure shows the plasmid map, the linear segment used in transformation, and integration sites in the genome used in this paper. The GFP-gRNA tag was added either directly after an untagged gene of interest using gene specific primers (Supplementary file 3, tagged genes: CYC1, OLE1, TPO1, CTS1, and RPS10A), or added to a gene already tagged with GFP from the GFP collection (primers OFA0046 and OFA0363 in Supplementary file 3, tagged genes: ARO8, BMH2, GPD1, MTD1, UGP1, and TDH3). These plasmids are available on AddGene under IDs #157656, #157658, and #157659.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The linear regression coefficients (shown as solid lines) were used to estimate RNA abundance during RT-qPCR for Figures 1, 2 and 6. Efficiency (‘eff’) was calculated as (2^(−1/slope)−1)*100.
 
 The reporter system is implemented as two cassettes (Figure 1A). The ‘GFP-gRNA tag’ cassette is added at the 3’ end of the gene of interest. A second cassette, which we call the ‘CRISPR reporter’, comprises the remaining components: dCAS9-VP64 and the mCherry gene under the control of an inactive CYC1 promoter fragment. This promoter contains one recognition sequence that, when targeted by the gRNA and dCas9-VP64, drives mCherry expression (Farzadfard et al., 2013). The two cassettes are stored on two plasmids that can be used to easily construct strains for quantification of mRNA and protein of any gene of interest (Figure 1—figure supplement 1).
 
 We tested the reporter system in diploid BY strains tagged at two genes with different expression levels: the highly expressed TDH3, and GPD1, which has an average expression level compared to other genes in the genome. Both genes gave green and red fluorescent signals in a plate-reader (Figure 1B). A strain carrying the CRISPR reporter and TDH3 tagged with GFP but no gRNA produced no mCherry fluorescence, demonstrating that the gRNA is required for driving mCherry expression (Figure 1B & C). Quantitative real-time reverse-transcription PCR (qPCR) confirmed expression of the gRNA and the mRNA (Figure 1D). Absence of qPCR signal from primers that spanned the ribozyme cut sites in cDNA confirmed that the ribozymes cleaved the mRNA (Figure 1D and Figure 1—figure supplement 2).
 
-## mCherry fluorescence provides a quantitative readout of mRNA production
+### mCherry fluorescence provides a quantitative readout of mRNA production
 
 To characterize the quantitative response of our reporter system to a range of gene expression levels, we used the synthetic Z3EV system, which allows quantitative regulation of transcription via the concentration of estradiol in the culture medium (McIsaac et al., 2013). We cloned the Z3EV promoter upstream of a GFP-gRNA sequence (Figure 2A) in a strain that also contained the CRISPR reporter and grew this strain in a range of estradiol concentrations. Along with the expected increase in green fluorescence (McIsaac et al., 2013), red fluorescence increased as a monotonic function of estradiol concentration (Figure 2B). Similar results were observed in the RM11-1a strain, which has a different genetic background than BY (Figure 2—figure supplement 1). Thus, mCherry provides a quantitative readout of the expression of the tagged gene.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the Z3EV system used in this experiment. (B) Fluorescence as a function of increasing estradiol concentrations. (C) Comparison of gRNA abundance (qPCR) and mCherry fluorescence in increasing estradiol concentrations. qPCR quantifications were normalized across samples using ACT1 cDNA as a reference. log2FC: log2 of fold-change (D) Comparison of mRNA abundance (qPCR) and mCherry fluorescence in increasing estradiol concentrations. (E) Comparison of mRNA abundance to gRNA abundance in increasing estradiol concentrations. The numbers in C to E show the concentration of estradiol in mM, with 7 to 8 biological replicates per concentration. Solid lines represent linear regressions calculated on measurements taken at up to 2 mM estradiol. Dashed vertical lines correspond to the mRNA abundance threshold, below which we deemed the reporter to be quantitative. Cells were grown in SC medium. See also Figure 2—figure supplement 1, Figure 2—figure supplement 2, Figure 2—figure supplement 3, Figure 2—figure supplement 4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Increasing concentrations of estradiol drove higher expression of the tagged gene. Values correspond to the fluorescence ratio at the end of the exponential growth phase. Cells were grown in SC medium.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Additional copies of the dCAS9-Vp64 gene using a low-copy number (CEN) or a high-copy number (2µ) plasmid affected neither GFP nor mCherry expression. Two replicates per condition are shown as stacked columns of points, each with five points that show the values at the time points at which measurements were taken. (B) Additional copies of mCYC1p-mCherry increased red fluorescence in all concentrations of estradiol, but did not extend the linear range of mCherry expression. Three replicates per condition. Cells were grown in SC medium.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The two plasmids on the top increase the copy number of gRNA binding sites (pCYC1m) and of the mCherry gene. The two plasmids on the bottom increase the copy number of dCAS9-VP64.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** On the x-axis, 5546 genes were ordered using two measures of expression. First, genes were ordered on the basis of published GFP fluorescence values (Newman et al., 2006) (green vertical lines). About half of the genes in the genome had available quantifications. Top panel: GFP measures in YEPD medium, bottom: SD medium. Second, genes were ordered on the basis of mRNA abundance in YNB medium as determined by RNA sequencing (red dots, data are averaged across 1,012 BY/RM segregants reported in Albert et al., 2018). Genes examined in the present study are indicated in blue. The red horizontal line indicates the estimated threshold below which mRNA abundance of a gene can be quantified by the CRISPR reporter.
 
 While green fluorescence continued to increase throughout the tested estradiol range, red fluorescence ceased to increase at concentrations of more than 4 nM estradiol (Figure 2B). qPCR quantification of the gRNA showed that mCherry fluorescence followed gRNA abundance (Figure 2C), confirming that the mCherry reporter gene is quantitatively regulated by gRNA abundance. gRNA abundance was linearly related to GFP mRNA and GFP fluorescence at lower doses of estradiol but stopped increasing at higher doses (Figure 2D & E). This suggests that mCherry production is limited by gRNA availability at high expression levels. Increasing the concentration of dCas9 proteins or binding sites for the gRNA had no effect on the mCherry expression plateau (Figure 2—figure supplement 2 and Figure 2—figure supplement 3).
 
 The linear relationship between mCherry fluorescence and mRNA abundance of the tagged gene was present up to an expression level that corresponded to half of the abundance of ACT1 mRNA, which we had used as a reference gene in qPCR (Figure 2D). In previous RNA-seq data (Albert et al., 2018), 95% of S. cerevisiae genes fall below this threshold (Figure 2—figure supplement 4, Supplementary file 1). While differences in growth media (SC here and YNB in the RNA-seq data), as well as different qPCR efficiencies for ACT1 compared to GFP RNA (Figure 1—figure supplement 2), make this comparison imperfect, it suggests that the majority of genes can be quantified by our mRNA reporter. For lowly expressed genes, the GFP tag does not provide a strong enough signal to enable protein quantification (Huh et al., 2003; Newman et al., 2006, Figure 2—figure supplement 4). Based on these results, we concluded that our dual reporter system can be used to simultaneously measure mRNA and protein of more than half of the genes in the S. cerevisiae genome.
 
-## Simultaneous mapping of genetic variation affecting mRNA and protein levels
+### Simultaneous mapping of genetic variation affecting mRNA and protein levels
 
 Our reporter system quantifies mRNA production and protein abundance at the same time, in the same live cells, exposed to the same environment. These features enable mapping of the genetic basis for variation in mRNA and protein levels, free from environmental or experimental confounders. We selected ten genes for genetic mapping (Figure 5—source data 1), based on several criteria. Five genes (ARO8, BMH2, GPD1, MTD1, UGP1) had previously been reported to have multiple differences between their respective eQTLs (Albert et al., 2018) and pQTLs (Albert et al., 2014b). Three genes (CYC1, OLE1, TPO1) had shown high agreement between their eQTLs and pQTLs. The remaining two genes (CTS1 and RPS10A) had low protein abundance based on GFP-tag quantification (Huh et al., 2003) compared to their mRNA levels (Albert et al., 2018).
 
 To identify genetic loci affecting mRNA production and protein abundance, we used the strains BY4741 (BY), a reference strain frequently used in laboratory experiments, and RM11-1a (RM), a vineyard isolate closely related to European strains used in wine-making. These two strains differ at 47,754 variants in the yeast genome. We engineered RM to carry the CRISPR reporter inserted at the NPR2 gene and a synthetic genetic array (SGA) marker for selection of MATa haploid strains (Tong and Boone, 2007) at the neighboring CAN1 gene. We engineered a series of BY strains, each carrying one gene tagged with the GFP-gRNA tag (Figure 3). We crossed these BY strains to the RM strain and obtained populations of recombinant haploid progeny carrying both the tagged gene and the CRISPR reporter. Flow cytometry detected a range of GFP and mCherry signals from single cells (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig3-v2.jpg)
+
+**Figure 3.:** The SGA marker allows for the selection of haploid MATa strains after sporulation (Methods). The flow cytometry plot shows data transformed using the natural log. See also Figure 3—figure supplement 1, Figure 3—figure supplement 2 & Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Following overnight growth after sorting, segregant populations were analysed by flow cytometry. We calculated mRNA and protein abundance correlations (Pearson’s r) with and without correction for cell size (see Figure 3—figure supplement 2). (B) Genes with higher reported discrepancies between mRNA-QTLs and protein-QTLs tended to show lower correlation between mRNA (mCherry) and protein (GFP) abundance than genes with more similar prior QTL results. We used two controls. First, in a segregant population with no gene tagged and with mCherry under the control of a constitutive ACT1 promoter (see Figure 4—figure supplement 2), we expected no mCherry/GFP correlation. Second, a segregant population expressing a protein fusion of mCherry and GFP under control of the ACT1 promoter provided an upper bound for the possible mCherry/GFP correlation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** As an example, the figure shows data from GPD1-GFP-gRNA.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Flow cytometry measures of high and low populations after overnight growth. The difference of fluorescence means (Δ means) between the high and low populations that is retained after multiple generations of growth reflects how much of the variation among single cells is due to genetic variation. When measuring the same fluorophore used to collect extreme cells, Δ means reflects the heritability of that fluorophore. When measuring the other fluorophore than that used in sorting (e.g., measuring GFP in a pair of populations that had been sorted based on different mCherry levels), Δ means reflects the genetic correlation between mRNA and protein. (B) Significant heritability was observed for all fluorescent measures across genes, except for GFP in CTS1. Genes with higher reported discrepancies between mRNA-QTLs and protein-QTLs tended to have lower genetic correlations between mRNA and protein than genes with more concordant prior QTL results. Bar plots of Δ means are square root transformed to visually emphasize smaller values. Empty dots correspond to non-significant differences. Filled dots indicate significant differences at a t-test p-value threshold of 10−5.
 
 To study the relationship between mRNA and protein among single cells, we examined the cell-to-cell correlation between mCherry and GFP fluorescence in our genetically heterogeneous populations during exponential growth (Figure 3—figure supplement 1A). After correcting for cell size (Figure 3—figure supplement 2), mCherry and GFP were positively correlated for all tested genes (Figure 3—figure supplement 1B). The strength of the correlation varied from gene to gene. Lower correlations between mCherry and GFP were observed for the genes with many differences between published eQTLs and pQTLs compared to those with more concordant eQTLs and pQTLs. Thus, different genes are influenced by mRNA-specific or protein-specific variation to different degrees.
 
@@ -66,15 +114,35 @@ To gauge the heritability of gene expression among single cells, we measured flu
 
 To map QTLs, we performed pooled whole-genome sequencing of all collected populations, computed the allele frequency of each DNA variant in each population, and calculated the difference in allele frequency (∆AF) between high and low populations along the genome. A significant ∆AF at a locus indicated the presence of one or more genetic variants affecting protein abundance (GFP) or mRNA production (mCherry, Figure 4—source data 1). We call loci mapped in this paper ‘mRNA-QTLs’ and ‘protein-QTLs’, to distinguish them from published ‘eQTLs’ and ‘pQTLs’. QTL mapping was performed in two to six biological replicates for all but one gene (RPS10A). Because any allele frequency differences among replicate populations sorted on the same parameters (e.g. two high GFP populations for the same gene) represent false positives, we used the replicate data to estimate false discovery rates. We chose a significance threshold (logarithms of the odds; ‘LOD’=4.5) corresponding to a false discovery rate of 7% (Figure 4—figure supplement 1). Between replicates, 76% of the protein-QTLs and 78% of the mRNA-QTLs were reproducible at genome-wide significance (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig4-v2.jpg)
+
+**Figure 4.:** (A) Allele frequency difference along the genome between the high and low population for each of the ten tagged genes, with 1–6 replicates per gene. Red and green curves correspond to the populations sorted to map mRNA and protein levels, respectively. The colored plot borders indicate the reason for which the gene was chosen for study. Pink: high discrepancy between reported eQTLs and pQTLs, yellow: high similarity between reported eQTLs and pQTLs, blue: high mRNA level and low GFP fluorescence. Purple vertical lines indicate the position of the tagged gene in the genome. Points indicate the location of significant QTLs, color coded based on protein or mRNA specificity (black: shared effect in same direction, green: protein-specific, red: mRNA-specific, blue: discordant). (B) Comparison between the effect size (ΔAF) of protein-QTLs identified in this study and pQTLs from previous work. (C) Same as (B) but comparing mRNA-QTLs identified in this study (ΔAF) to trans-eQTLs from previous work (eQTL effect sizes from Albert et al., 2018 are shown as a Pearson correlation coefficient between mRNA abundance and genotype at the QTL marker). Filled circles correspond to QTLs significant in both datasets. Empty circles correspond to QTLs significant in only one dataset. Gray circles correspond to QTLs located on chromosome XIV between 350 and 550 kb, which were excluded from analysis. Circle size is proportional to the LOD score of the QTL. The Venn diagrams show the total number and overlap of QTLs detected across the 10 genes between studies. See also Figure 4—figure supplement 1 & Figure 4—figure supplement 2. Source data files: Figure 4—source data 1, Figure 4—source data 2, Figure 4—source data 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Allele frequencies were compared between replicate populations collected using the same sort gates. The example shown here is based on data from the GPD1 gene. Any QTLs between these populations were considered to be false discoveries. Increasing the LOD threshold reduced both the number of observed QTLs (from the high vs low population comparisons) and false QTLs (from the comparison of the same population type across replicates). FDR was calculated as a function of the LOD threshold (thr): FDRthr = (NrepQTLthr/Nrep) / (NfluoQTLthr/Nfluo), where NrepQTLthr is the number of QTLs that exceeded a LOD threshold of thr (false discoveries), Nrep is the number of inter-replicate comparisons (Nrep = 80), NfluoQTLthr is the number of significant fluorescence QTLs (GFP or mCherry) at a LOD threshold of thr, and Nfluo is the number of high-low fluorescence comparisons (Nfluo = 48; excluding the control experiment in which no gene was tagged; Figure 4—figure supplement 2). The threshold of LOD = 4.5, which corresponded to an FDR of 7.3%, is indicated in the figure.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The highlighted mCherry QTL on chromosome XIV, which overlaps the MKT1 locus, was also present in all experiments with tagged genes (Figure 4), where it always had the same direction of effect as in this control experiment. While the highly pleiotropic MKT1 locus (Albert et al., 2018) could truly influence all ten genes we studied, we cannot rule out that this locus may affect mCherry fluorescence independently of the gRNA. We therefore excluded QTLs from tagged genes in this region from our analysis. We did not exclude the remaining mCherry QTLs visible in the figure because these loci were not uniformly present for tagged genes. These loci could represent trans-acting influences on the ACT1 promoter sequence that drives mCherry expression in this control experiment, but not in experiments with tagged genes under the control of their native promoters. The control experiment also identified three loci that affected GFP background fluorescence, likely by altering cellular abundance of autofluorescent compounds such as NAD, aromatic amino acids, or flavins. The intensity of this autofluorescence was much lower than the GFP signal for the genes we studied (see for example Figure 3—figure supplement 2 and Figure 4—figure supplement 1), such that in those experiments, the signal from the GFP gene tags dominates over background fluorescence.
+
 Across the ten genes, we detected 78 protein-QTLs and 44 mRNA-QTLs (Figure 4—source data 2 and Figure 4—source data 3). By design, all detected loci were trans-acting, and most were located on a different chromosome than the tagged gene. One locus located at ~450 kb on chromosome XIV affected mCherry levels in the same direction in all ten genes. This region was also observed in a control experiment, in which mCherry was expressed constitutively using an ACT1 promoter, and without a gRNA present (Figure 4—figure supplement 2). This region harbors the MKT1 gene, which carries a variant affecting a variety of traits (Deutschbauer and Davis, 2005; Fay, 2013). While the highly pleiotropic MKT1 locus may truly affect all ten genes we tested, it could also affect mCherry fluorescence via mCherry maturation or degradation, independently of any tagged gene. We excluded this region from further analyses.
 
 The number of protein-QTLs per gene identified here (median = 7) agrees well with results from a previous study using the same mapping strategy (median = 8 for the same genes; Albert et al., 2014b), confirming that individual proteins are influenced by multiple trans-acting loci. The effects of individual protein-QTLs and pQTLs showed a positive correlation across studies (Pearson r = 0.73, p-value<10−15, Figure 4B). The number of mRNA-QTLs per gene in our study (median = 3 after removing the MKT1 locus) was lower than th from a previous study using RNA sequencing in 1012 segregants (median = 8 for the same genes; Albert et al., 2018). This difference could be due to using our reporter in single cells with high stochastic variation compared to RNA-seq in individually grown segregant cultures in the earlier study (see Discussion). However, while the mRNA-QTLs detected by our reporter primarily reflect influences on mRNA production, the RNA-seq-based eQTLs may reflect effects on transcription as well as mRNA degradation, which our system was not designed to capture. The effects of mRNA-QTLs were significantly correlated between studies (r = 0.44, p-value=5 × 10−6, Figure 4C). Some of the QTLs we detected harbored variants known to affect gene expression. For example, a region at ~650 kb on chromosome XII that contains the gene HAP1 affected protein abundance and/or mRNA production of GPD1, CYC1, OLE1, and TPO1 (Figure 4A). In the BY strain, the HAP1 coding sequence is interrupted by a transposon insertion, which alters the expression of thousands of mRNAs in trans (Albert et al., 2018; Brem et al., 2002). Overall, these agreements with previous analyses confirmed the reliability of our new reporter as a means for mapping the genetic basis of gene expression variation.
 
 We detected several QTLs that were not shared with prior work and vice versa (Figure 4B-C). Most of these QTLs tended to have small-effect sizes, suggesting that they could have been missed due to incomplete power in either study. Alternatively, these QTLs may reflect experimental differences between studies, such as different growth media. For example, we observed a new, strong protein-QTL affecting Aro8 on chromosome XIV. The regulation of Aro8 expression by amino acid levels (Iraqui et al., 1998) suggests that this QTL could be due to the synthetic complete medium used here vs. YNB medium in earlier work.
 
-## Differences between mRNA-QTLs and protein-QTLs
+### Differences between mRNA-QTLs and protein-QTLs
 
 Genetic mapping using our reporter enabled us to compare mRNA-QTLs and protein-QTLs, free from environmental or experimental confounders. We classified 86 loci based on the presence and effect direction of their respective mRNA-QTLs and/or protein-QTLs (Figure 5A and Figure 5—figure supplement 1, Figure 5—source data 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig5-v2.jpg)
+
+**Figure 5.:** (A) Number of QTLs for each tagged gene, color coded according to type of effect on RNA and/or protein. (B) Comparison of QTL effect sizes between mRNA-QTLs and protein-QTLs. Gray circles correspond to QTLs located on chromosome XIV 350–550 kb, which were excluded from analysis. Circle size is proportional to the LOD score of the QTL. See also Figure 5—figure supplement 1. Source data files: Figure 5—source data 1, Figure 5—source data 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Differences in allele frequency (ΔAF) are illustrations rather than observed data. Examples of possible underlying mechanisms for each scenario are shown.
 
 Of these 86 loci, 16 affected mRNA and protein of a given gene in the same direction. Such loci are expected for variants that alter a gene’s mRNA production such that, in the absence of other effects, they also result in a concordant effect on protein abundance. A majority of the loci corresponded to protein-QTLs that did not overlap an mRNA-QTL. These 52 protein-specific QTLs may arise from variants that affect translation or protein degradation, without an effect on mRNA production.
 
@@ -86,15 +154,35 @@ While more than 73% of loci were specific for mRNA or protein, this difference m
 
 Several loci were shared across the ten genes. Even these shared loci differed in the specificity of their effects on mRNA or protein. For example, the locus containing the HAP1 gene had strong, concordant effects on both mRNA and protein for CYC1 and OLE1, but affected only the protein abundance of UGP1, and had significant but discordant effects on mRNA and protein for GPD1. Overall, these results revealed complex trans-acting influences on gene expression, in which genes were affected by different sets of multiple loci, with different degrees of mRNA or protein specificity.
 
-## A premature stop mutation in YAK1 affects gene expression post-transcriptionally
+### A premature stop mutation in YAK1 affects gene expression post-transcriptionally
 
 The causal variants in most trans-acting loci are unknown, limiting our understanding of the underlying mechanisms. In particular, very few causal variants with specific trans effects on protein abundance are known (Chick et al., 2016; Hause et al., 2014). We noticed a region at ~155 kb on chromosome X that affected the protein abundance but not mRNA production of ARO8, BMH2, and especially GPD1 (Figure 4A). This region spanned about 20 kb and contained 15 genes and 99 sequence variants. To identify the causal variant, we systematically divided this region into four tiles, swapped alleles in each tile using double-cut CRISPR-swap, an efficient scarless genome editing strategy (Lutz et al., 2019), and quantified the effect of these swaps on Gpd1-GFP fluorescence (Figure 6A-D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of the investigated region and the strategy for generating tiled allele swaps across the region. Gray dots on the RM genome (yellow) indicate the positions of known BY/RM variants. (B) Boxplots comparing Gpd1-GFP fluorescence between allele swaps (6–8 replicates per swap). While none of the swaps resulted in a difference in fluorescence between BY and RM alleles, replacement with both backgrounds in tile A generated a significant increase in green fluorescence. Based on this result, we suspected that the BY GPD1-GFP strain carried a new mutation that was absent from the RM as well as BY genomic DNA used for the replacement. (C) Schematic of using BY GPD1-GFP DNA as a repair template for the allelic swap of tile A. (D) Boxplots comparing Gpd1-GFP fluorescence between the three swaps of tile A. The DNA repair template from the BY GPD1-GFP strain resulted in low Gpd1-GFP fluorescence, suggesting a new mutation in the BY GPD1-GFP strain. (E) Identification of the YAK1Q578* mutation using sequencing data from the segregant population, and location of YAK1Q578* in the Yak1 kinase protein sequence. Selected known protein phosphorylation targets of Yak1 and downstream processes are indicated. (F) Effect of YAK1Q578* and YAK1 knockout on Gpd1-GFP expression. Top: fluorescence, bottom: RNA quantified by qPCR. Numbers atop the boxplots correspond to log2(fold-change). log2FC: log2 of fold-change. Stars indicate the significance of a t-test: ns: not significant (p>0.05); *: 0.005 < p < 0.05; **: 0.0005 < p < 0.005; ***: p<0.0005. Cells were grown in SC medium. See also Figure 6—figure supplement 1 & Figure 6—figure supplement 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** For each sequenced population, a line traces the allele frequency of neighboring variants along the genome. Known BY/RM variants are indicated by solid gray vertical lines. The new A/G single nucleotide variant at 148,659 bp is indicated by an arrow. This mutation was detected as a heterozygous site in the majority of cell populations constructed from GFP collection strains (72 out of 75 populations). The mutation was detected in no populations constructed from strains that did not directly originate from the GFP collection (0 out of 50 populations). The apparent allele frequency inversion at this variant compared to nearby variants is due to the fact that the alternative ‘G’ allele at this variant is carried by a derivative of the reference BY strain.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Maximal growth rate of strains with different YAK1 alleles in SC medium with increasing concentrations of sodium chloride. The maximal growth rate was calculated as the maximal slope of log-transformed OD600 values during 24 hr of growth. (B) Effect of YAK1 deletion on GPD1-GFP protein abundance in increasing concentrations of sodium chloride. At the highest salt doses (indicated by ‘N.A'.), growth was too slow to reliably apply our GFP and mCherry quantification procedure. (C) Effect of YAK1 deletion on GPD1-GFP mRNA abundance (as measured as mCherry fluorescence by our reporter) in increasing concentrations of sodium chloride. YAK1Q578* and YAK1 deletion both alleviated slower growth normally triggered by chronic osmotic stress. The effect of YAK1 deletion on GPD1 expression was not modified by osmotic stress. While GPD1 protein expression increased at higher salt concentrations, Gpd1-GFP was always lower in the presence of the YAK1 deletion compared to wild type YAK1. mRNA abundance (as measured by our reporter) also rose as a function of salt concentration, but was not affected by YAK1 deletion.
 
 This strategy, followed by analysis of our segregant population sequencing data, pinpointed a single G→A variant at 148,659 bp in the YAK1 gene as the causal variant. While this variant is present in neither the BY nor RM reference genomes (Figure 6E and Figure 6—figure supplement 1), our sequence data showed it to be present in all BY derivatives we used from the GFP collection (specifically, strains tagged at ARO8, BMH2, GPD1, MTD1, and UGP1; Figure 6—figure supplement 1; Huh et al., 2003). We observed this variant in two additional strains we genotyped from the GFP collection (FAA4 and YMR315W) and all four strains we genotyped from the tandem affinity purification (TAP)-tagged collection (PGM1, NOT5, EMI2, and TUB1) (Ghaemmaghami et al., 2003). This variant was not present in a BY4741 strain that we obtained from the ATCC stock center (#201388), suggesting that the YAK1 variant arose very recently in the specific BY4741 strain used to construct both the GFP and TAP-tagged collections. YAK1 encodes a protein kinase involved in signal transduction in response to starvation and stress, indirectly regulating the transcription of genes involved in various pathways (Figure 6E). The causal variant changes the 578th codon (glutamine) to a premature stop codon that is predicted to disrupt translation of the Yak1 kinase domain (Figure 6E).
 
 The YAK1Q578* variant led to a diminution of Gpd1-GFP fluorescence, suggesting a decrease of Gpd1-GFP protein abundance (Figure 6D). While YAK1 may control transcription of genes in the glycerol biosynthesis pathway (Lee et al., 2008; Rep et al., 2000), which includes GPD1, our QTL results suggested no link between the variant and GPD1-GFP mRNA level. Consistent with a protein-specific trans-effect on GPD1, deletion of YAK1 in a strain in which GPD1 was tagged with GFP-gRNA caused a reduction of green fluorescence but had no detectable effect on mCherry fluorescence (Figure 6F). Further, qPCR indicated no difference in the level of GPD1-GFP mRNA in YAK1Q578* or yak1Δ compared to matched YAK1wt (Figure 6F).
 
 We explored the genome-wide effects of the YAK1 variant by comparing mRNA and protein abundance between strains carrying the YAK1Q578* and the BY YAK1 wildtype allele using RNA-seq and mass spectrometry (Figure 7A, Figure 7—source data 1, Figure 7—source data 2 and Figure 7—source data 3). Among 5755 quantified mRNA transcripts, 262 were up-regulated and 310 down-regulated in the presence of YAK1Q578* (Benjamini-Hochberg (BH) adjusted p-value<0.05) (Benjamini and Hochberg, 1995). The variant reduced the abundance of 82 of 2590 quantified proteins, and increased another 82 proteins (BH adjusted p-value<0.05). By comparing mass spectrometry and RNA-seq results, we classified genes as affected only at the mRNA level (58 genes up, and 118 genes down-regulated), only at the protein level (60 genes up, and 50 genes down-regulated), or at both mRNA and protein (15 genes up, and 27 genes down-regulated). There was a strong enrichment for genes involved in cytoplasmic translation (q-value <10−10) among the genes with reduced mRNA abundance, which is consistent with the role of Yak1 as a regulator of transcription of ribosomal genes through Crf1 phosphorylation (Martin et al., 2004; Figure 7—figure supplement 1, Figure 7—source data 2). Genes up-regulated at the mRNA level showed an enrichment in amino acid biosynthesis (q-value = 0.001). The most differentially expressed genes included known targets of the YAK1 pathway (Figure 7A–B). Gpd1 protein was strongly reduced (BH adjusted p-value<0.004), with a non-significant effect on GPD1 mRNA (adjusted p-value=0.10) (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig7-v2.jpg)
+
+**Figure 7.:** (A) Effect on mRNA levels and protein levels quantified by RNA sequencing and mass spectrometry, respectively. Genes are colored according to their function as indicated in (B). GPD1 is highlighted in blue. (B) Examples of differentially expressed genes related to processes downstream of Yak1 phosphorylation regulation. The two numbers following gene names correspond to the log2 of fold-change (log2FC) of differential expression for mRNA and protein abundance, respectively. Stars indicate the significance of differential expression (Benjamini-Hochberg adjusted p-values). ns: not significant, p>0.05; *: 0.005 < p < 0.05; **: 0.0005 < p < 0.005; ***: p<0.0005. Cells were grown in SC medium. See also Figure 7—figure supplement 1. Source data files: Figure 7—source data 1, Figure 7—source data 3, Figure 7—source data 4, Figure 7—source data 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60645/elife-60645-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Each point corresponds to a gene for which mRNA levels (x-axis) and protein levels (y-axis) were quantified by RNA sequencing and mass spectrometry, respectively. Genes with lower mRNA abundance were significantly enriched in cytoplasmic translation: 32 genes annotated to this functional category were significant (dark red; Benjamini-Hochberg adjusted p-value,<0.05), compared to 81 that were not significant (light red): hypergeometric test p-value=2.2 × 10−14. log2FC: log2 of fold-change.
 
 Finally, we investigated if the YAK1Q578* mutation affects other phenotypes. As YAK1 and GPD1 are involved in osmotic stress resistance (Lee et al., 2008), we grew strains carrying YAK1wt, YAK1Q578*, and yak1Δ, in a range of sodium chloride concentrations (Figure 6—figure supplement 2A). While this osmotic stress reduced growth, strains with YAK1Q578* and yak1Δ had a higher growth rate than wild-type, consistent with the role of Yak1 in triggering cell cycle arrest in response to stress. Gpd1-GFP abundance increased with stronger osmotic stress in YAK1wt and yak1Δ, with consistently lower expression of Gpd1-GFP in yak1Δ (Figure 6—figure supplement 2B–C).
 
@@ -122,61 +210,442 @@ Our reporter system for quantifying mRNA and protein of a given gene in the same
 
 ## Materials and methods
 
-## Yeast strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>NPR2</td>
+      <td>SGD</td>
+      <td>YEL062W</td>
+      <td>insertion site for CRISPR reporter</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>TDH3</td>
+      <td>SGD</td>
+      <td>YGR192C</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ARO8</td>
+      <td>SGD</td>
+      <td>YGL202W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>BMH2</td>
+      <td>SGD</td>
+      <td>YDR099W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>GPD1</td>
+      <td>SGD</td>
+      <td>YDL022W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>MTD1</td>
+      <td>SGD</td>
+      <td>YKR080W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UGP1</td>
+      <td>SGD</td>
+      <td>YKL035W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>CYC1</td>
+      <td>SGD</td>
+      <td>YJR048W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>OLE1</td>
+      <td>SGD</td>
+      <td>YGL055W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>TPO1</td>
+      <td>SGD</td>
+      <td>YLL028W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>CTS1</td>
+      <td>SGD</td>
+      <td>YLR286C</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>RPS10A</td>
+      <td>SGD</td>
+      <td>YOR293W</td>
+      <td>tagged gene</td>
+    </tr>
+    <tr>
+      <td>Gene (N.A)</td>
+      <td>dCAS9</td>
+      <td>Addgene 49013, Farzadfard et al., 2013 (doi:10.1021/sb400081r)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N.A)</td>
+      <td>mCherry</td>
+      <td>Addgene 25444</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N.A)</td>
+      <td>GFP</td>
+      <td>Huh et al., 2003 (doi:10.1038/nature02026)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N.A)</td>
+      <td>Z3EV</td>
+      <td>McIsaac et al., 2013 (doi:10.1093/nar/gks1313)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (S. cerevisiae)</td>
+      <td>BY4741</td>
+      <td>Albert et al., 2018 (doi:10.7554/eLife.35471)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (S. cerevisiae)</td>
+      <td>RM11.1a</td>
+      <td>Albert et al., 2018 (doi:10.7554/eLife.35471)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strains (S. cerevisiae)</td>
+      <td>167 S. cerevisiae strains</td>
+      <td>this paper</td>
+      <td>YFA-</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>21 Plasmids (Stored in E. coli)</td>
+      <td>Addgene/this paper</td>
+      <td>BFA-</td>
+      <td>Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>143 Primers</td>
+      <td>this paper (IDT)</td>
+      <td>PFA-</td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion Hot Start Flex</td>
+      <td>NEB</td>
+      <td>M0535L</td>
+      <td>Cloning and genome editing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monarch DNA Gel Extraction Kit</td>
+      <td>NEB</td>
+      <td>T1020L</td>
+      <td>Cloning and genome editing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taq DNA Polymerase</td>
+      <td>NEB</td>
+      <td>M0267L</td>
+      <td>Cloning and genome editing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA Assembly Cloning Kit</td>
+      <td>NEB</td>
+      <td>E5520S</td>
+      <td>Cloning</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ZR Quick-RNA Kit</td>
+      <td>Zymo Research</td>
+      <td>R1054</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GoScript RT kit</td>
+      <td>Promega</td>
+      <td>A5000</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GoTaq qPCR kit</td>
+      <td>Promega</td>
+      <td>A6001</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E-Z-96 Tissue DNA kit</td>
+      <td>Omega</td>
+      <td>D1196-01</td>
+      <td>WGS</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Library Prep kit</td>
+      <td>Illumina</td>
+      <td>FC-121–1030</td>
+      <td>WGS</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ZR Fungal/Bacterial RNA mini-prep kit</td>
+      <td>Zymo Research</td>
+      <td>R2014</td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Poly(A) mRNA Magnetic Isolation Module</td>
+      <td>NEB</td>
+      <td>E7490L</td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EB Ultra II Directional RNA library kit for Illumina</td>
+      <td>NEB</td>
+      <td>E7760</td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Multiplex Oligos for Illumina</td>
+      <td>NEB</td>
+      <td>E7600S</td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>YNB media</td>
+      <td>VWR</td>
+      <td>97064–162</td>
+      <td>growth media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SC complement</td>
+      <td>Sunrise science</td>
+      <td>1342–030</td>
+      <td>growth media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Estradiol</td>
+      <td>Sigma-Aldrich</td>
+      <td>E1024-1G</td>
+      <td>Media complement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 3.5.1</td>
+      <td>https://www.r-project.org</td>
+      <td></td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA</td>
+      <td>Li and Durbin, 2009 (doi:10.1093/bioinformatics/btp324)</td>
+      <td></td>
+      <td>WGS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samtools</td>
+      <td>Li and Durbin, 2009 (doi:10.1093/bioinformatics/btp352)</td>
+      <td></td>
+      <td>WGS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MULTIPOOL</td>
+      <td>Edwards and Gifford, 2012 (doi:10.1186/1471-2105-13-S6-S8)</td>
+      <td></td>
+      <td>QTL analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>trimmomatic</td>
+      <td>Bolger et al., 2014 (doi:10.1093/bioinformatics/btu170)</td>
+      <td></td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto</td>
+      <td>Bray et al., 2016 (doi:10.1038/nbt.3519)</td>
+      <td></td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scaffold 4.9</td>
+      <td>http://www.proteomesoftware.com/products/scaffold/</td>
+      <td></td>
+      <td>Mass-Spectrometry</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gorilla</td>
+      <td>Eden et al., 2009 (doi:10.1186/1471-2105-10-48)</td>
+      <td></td>
+      <td>GO term enrichment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BioTek Synergy H1 plate-reader</td>
+      <td>BioTek Instruments</td>
+      <td></td>
+      <td>Instrument: Plate-reader</td>
+    </tr>
+    <tr>
+      <td>Oher</td>
+      <td>C1000Touch plate reader</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td>Instrument: qPCR device</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD FACSAria II P0287 (BSL2)</td>
+      <td>BD</td>
+      <td></td>
+      <td>Instrument: Cell sorting</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD Fortessa X-30 H0081</td>
+      <td>BD</td>
+      <td></td>
+      <td>Instrument: Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Illumina HiSeq 2500</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>Instrument: Sequencer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Illumina NextSeq 550</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>Instrument: Sequencer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Orbitrap Fusion Tribrid MS-MS instrument</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td>Instrument: Mass-Spectrometry</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains
 
 We used 160 yeast strains, 12 of which were obtained from other laboratories, including six from the GFP collection, and 148 that were built for this study (complete list in Supplementary file 2). All strains are based on two distinct genetic backgrounds: BY4741 (BY), which is closely related to the commonly used laboratory strain S288c, and RM11-1a (RM), a haploid offspring of a wild isolate from a vineyard, which is closely related to European strains used in wine-making. Both strains carried auxotrophic markers, and RM had been engineered earlier to facilitate laboratory usage (BY: his3∆one leu2∆0 met15∆0 ura3∆0; RM: can1Δ::STE2pr-URA3 leu2Δ0 HIS3(S288C allele) ura3Δ ho::HYG AMN1(BY allele); Supplementary file 2). Most strains were built using conventional yeast transformation (Gietz and Schiestl, 2007) and DNA integration based on homologous recombination. Integrated DNA fragments were produced by PCR (Phusion Hot Start Flex NEB M0535L, following manufacturer protocol, annealing temperature: 57°C, 36 cycles, final volume: 50 µl) and gel purified (Monarch DNA Gel Extraction Kit, NEB T1020L), with primers carrying 40 to 60 bp overhanging homologous sequence as required. All primers are available in Supplementary file 3. For transformation, fresh cells from colonies on agar plates were grown in YPD media (10 g/l yeast extract, 20 g/l peptone, 20 g/l glucose) overnight at 30°C. The next day, 1 ml of the culture was inoculated in an Erlenmeyer flask containing 50 ml of YPD and grown under shaking at 30°C for 3 hr to reach the late log phase. Cells were harvested by centrifugation and washed once with pure sterile water and twice with transformation buffer 1 (10 mM TrisHCl at pH8, 1 mM EDTA, 0.1 M lithium acetate). We resuspended the cells in 100 µl of transformation buffer 1, added 50 µg of denatured salmon sperm carrier DNA (Sigma #D7656) and 1 µg of the DNA fragment to be integrated, and incubated for 30 min at 30°C. Alternatively, when transforming a replicative plasmid, we used 0.1 µg of plasmid DNA and skipped this first incubation. We added 700 µl of transformation buffer 2 (10 mM TrisHCl at pH8, 1 mM EDTA, 0.1 M lithium acetate, 40% PEG 3350) and performed a second incubation for 30 min at 30°C. A heat shock was induced by incubating the cells at 42°C for 15 min. The transformed cells were then washed twice with sterile water. If the selective marker for the transformation was an antibiotic resistance gene, the cells were resuspended in 1 ml of YPD, allowed to recover for 2 hr at 30°C, and spread on a YPD plate (2% agar) containing the antibiotic (200 ng/l G418, 100 ng/l nourseothricin sulfate/CloNAT, or 300 ng/l hygromycin B). Alternatively, if the transformation was based on complementation of an auxotrophy, the cells were resuspended in 1 ml of sterile water and spread on a plate containing minimal media lacking the corresponding amino acid or nucleotide (YNB or Synthetic Complete (SC): 6.7 g/l yeast nitrogen base (VWR 97064–162), 20 g/l glucose, with or without 1.56 g/l SC -arginine -histidine -uracil -leucine (Sunrise science 1342–030), complemented as needed with amino acids: 50 mg/l histidine, 100 mg/l leucine, 200 mg/l uracil, 80 mg/l tryptophan). After two to three days of incubation at 30°C, colonies were streaked on a fresh plate containing the same selection media to purify clones arising from single, transformed cells. DNA integration in the correct location was confirmed by PCR (Taq DNA Polymerase NEB M0267L, following manufacturer protocol, annealing temperature: 50°C, 35 cycles, final volume: 25 µl, primers in Supplementary file 3). To store the constructed strains, we regrew the validated colony on a new selection media plate overnight at 30°C, scraped multiple colonies, resuspended the cells in 1.4 ml of YPD containing 20% glycerol in a 2 ml screw cap cryotube and froze them at −80°C.
 
-## Plasmids
+### Plasmids
 
 We constructed seven plasmids: three plasmids that do not replicate in yeast and that carry the GFP-gRNA tag, the CRISPR reporter, and Z3EV system, respectively (Figure 1—figure supplement 1), and four yeast-replicating plasmids to investigate the quantitative properties of our reporter (Figure 2—figure supplement 3). These plasmids were constructed through multiple rounds of cloning using DNA fragments from yeast DNA or plasmids acquired from Addgene (kind gifts from John McCusker: Addgene #35121–22, from Michael Nick Boddy: Addgene #41030, from Benjamin Glick: Addgene #25444, from Timothy Lu: Addgene #64381, #64389, #49013; complete list of plasmids in Supplementary file 4). Plasmids were assembled using Gibson assembly (NEBuilder HiFi DNA Assembly Cloning Kit, NEB E5520S). Fragments were either PCR amplified with a least 15 bp overlap at each end (Phusion Hot Start Flex NEB M0535L, manufacturer protocol, annealing temperature: 57°C, 36 cycles, final volume: 50 µl, primers in Supplementary file 3) or obtained by restriction digestion of already existing plasmids (also shown in Supplementary file 3).
 
 The fragment encoding the gRNA tag, containing the two ribozymes and the gRNA sequence itself, was purchased as a 212 bp double-stranded DNA oligo from IDT (we used the ‘C3’ gRNA from Farzadfard et al., 2013, as it was reported to provide the highest reporter gene expression). The synthetic polyA tail following the GFP sequence (Figure 1A) was introduced by using a PCR primer containing 45 thymines in its overhang sequence (primer OFA0038 in Supplementary file 3). Fragments for assembly were purified using agarose electrophoresis and gel extraction (Monarch DNA Gel Extraction Kit, NEB T1020L). For assembly, the given fragments were mixed at equi-molar amounts of 0.2–0.5 pM in 10 µl. Assembly was done by addition of 10 µl of NEBuilder HiFi DNA Assembly Master Mix and incubation at 50°C for 60 min. From this reaction, 2 µl of the final products were transformed into E. coli competent cells (10-beta Competent E.coli, NEB C3019I) through an incubation of 30 min on ice and a heat shock of 30 s at 42°C. Transformed cells were spread on LB plates (10 g/l peptone, 5 g/l yeast extract, 10 g/l sodium chloride, 2% agar) containing 100 mg/l ampicillin and grown overnight at 37°C. After cloning, the final plasmids were extracted (Plasmid Miniprep Kit, Zymo Research D4036) and verified by restriction enzyme digestion or PCR (Taq DNA Polymerase NEB M0267L, 30 cycles, 25 µl final volume, primers in Supplementary file 3). We also verified by Sanger sequencing that the gRNA tag in the plasmid had no mutation. To store the plasmids, the host bacteria were grown in LB with ampicillin overnight at 37°C and 1 ml of the culture was mixed with 0.4 ml of a sterile solution containing 60% water and 40% glycerol. The cells were stored at −80°C. The three plasmids containing the different parts of the reporter are available on Addgene (ID #157656, #157658, and #157659) along with their full DNA sequence.
 
-## Plate reader-based fluorescence measurements
+### Plate reader-based fluorescence measurements
 
 Yeast fluorescence was measured in 24 hr time courses during overnight growth in a BioTek Synergy H1 plate-reader (BioTek Instruments). Fresh cells from agar plates were inoculated in 100 µl of minimal YNB media (Figure 1) or SC media (all other figures) containing any complements necessary for growth of auxotrophic strains, at an initial optical density at wavelength 600 nm (OD600) of 0.05 in a 96-well flat bottom plate (Costar #3370). We conducted the experiments in Figure 1 in the presence of G418 (which requires the use of YNB + glutamate) because, at the time, we were concerned about potential loss of the reporter construct from the genome due to recombination between its flanking sequences. This concern later turned out to be unfounded. The plates were sealed with a Breathe Easy membrane (Diversified Biotech). Cells were grown in the plate reader at 30°C and with circular agitation in between fluorescence acquisition. During each acquisition, performed every 15 min, we recorded OD600, GFP fluorescence (read from bottom, excitation 488 nm, emission 520 nm, 10 consecutive reads averaged, gain set to ‘extended’) and mCherry fluorescence (read from bottom, excitation 502 nm, emission 532 nm, 50 consecutive reads averaged, gain set to a value of 150). We took 97 measurements during 24 hr of growth, unless individual runs were manually terminated early.
 
 Raw measurements of OD600 and fluorescence were processed using R version 3.5.1 (https://www.r-project.org/, scripts and raw data available at the github repository at Brion, 2020; https://github.com/BrionChristian/Simultaneous_RNA_protein_QTLs; copy archived at swh:1:rev:74628305678f30d5b126745e5c6cd6cec4091c12). ‘Blank’ values from wells with no cells were subtracted from OD600 and fluorescence measurements of wells that had been inoculated with cells. OD600 was log-transformed and manually inspected to identify the late log phase, i.e. a time point about 3/4 into the exponential growth phase. This stage was identified separately for each well, and usually corresponded to an OD600 of 0.1–0.3. We extracted the OD600 and fluorescence measurements at the five time points centered on our selected time point. The mCherry and GFP fluorescence ratios were calculated as the ratio between the fluorescence and the OD600 at these five time points (example in Figure 1B–CB), allowing us to estimate fluorescence while correcting for culture density. Focusing on the late log phase allowed measurements at higher cell density to provide more robust fluorescence reads. Growth rates were estimated as the slope of a linear fit of the log of OD600 over time.
 
-## RNA quantification by qPCR
+### RNA quantification by qPCR
 
-## Cell harvest
+#### Cell harvest
 
 We quantified mRNA and gRNA abundance by quantitative real-time reverse-transcription PCR of RNA extracted from exponentially growing cells. Cells were grown in either 50 ml of medium (YNB with auxotrophic complements, results shown in Figure 1D) in shaking Erlenmeyer flasks or in 1.2 ml of media (SC with auxotrophic complements and estradiol (Sigma, E1024-1G), Figure 2C–EC and Figure 6F) in a shaking 2 ml 96-deep-well plate. The OD600 was monitored to identify the second half of the exponential growth phase (corresponding to an OD600 of 0.35–0.45 OD600 in flasks, and 0.20–0.30 in the deep-well plates). At this point, GFP and mCherry fluorescence ratios were recorded in a BioTek Synergy H1 plate reader (BioTek Instruments). Cells were then harvested immediately. Cells were washed with sterile water through either short centrifugation using 5 ml of culture from flasks, or vacuum-filtration through a 96-well filter plate (Analytical Sales 96110–10) using the entire remaining 1 ml of culture from the deep-well plate. Cells were then immediately flash-frozen in either isopropanol at −80°C (pellet from flask) or liquid nitrogen (filter plate) and stored at −80°C until RNA extraction.
 
-## RNA extraction from flasks
+#### RNA extraction from flasks
 
 To extract the RNA from cells grown in flasks, we used the ZR Quick-RNA Kit (Zymo Research R1054). Frozen cell pellets were resuspended in 800 μl RNA Lysis Buffer one from the kit and transferred to a ZR BashingBead Lysis Tube. The cells were shaken in a mini-bead beater (BioSpec Products) for ten cycles of one minute in the beater, one minute on ice. Cell debris and beads were centrifuged for one minute at full speed and 400 µl of supernatants were transferred into Zymo-Spin IIIC Columns. The columns were centrifuged for one minute, and 400 µl 100% ethanol was added to the flow-through. After mixing, the flow-throughs were transferred into Zymo-Spin IIC Columns and centrifuged for 1 min to bind the RNA and DNA to the columns. The columns were washed with 400 μl RNA Wash Buffer from the kit. DNA was digested in columns by adding a mixture of 5 μl DNase I and 75 μl DNA Digestion Buffer from DNase I Set kit (Zymo Research E1010) followed by a 15 min incubation at room temperature. The columns were then washed three times with 400 μl RNA Prep Buffer, 700 μl RNA Wash Buffer, and 400 μl RNA Wash Buffer. RNA was eluted in 50 µl DNase/RNase-free water, quantified using Qubit RNA BR or HS Assay Kit (Thermo Fisher Scientific Q10210 or Q52852), and stored at −20°C.
 
-## RNA extraction from 96-well plates
+#### RNA extraction from 96-well plates
 
 To extract the RNA from cells grown in 96-well plates, we used the ZR RNA in-plate extraction kit (ZR-96 Quick-RNA Kit, Zymo Research R1052), which followed the same protocol as the flask RNA extraction above, with a few minor differences. Bead-beating was done in an Axygen 1.1 ml plate (P-DW-11-C-S) with 250 µl of acid washed 425–600 µm beads (Sigma G8722) per well, sealed with an Axymat rubber plate seal (AM-2ML-RD-S). RNA purified from 200 µl of the resulting supernatant. DNA digestion and washing steps were done on Silicon-A 96-well plates from the kit. The RNA was eluted in 30 µl of DNase/RNase-free water, quantified, and stored at −20°C.
 
-## Reverse-transcription and qPCR
+#### Reverse-transcription and qPCR
 
 RNA was reverse-transcribed using the GoScript RT kit (Promega A5000) following the kit protocol. We performed negative controls, no-enzyme and no-primer, which generated no qPCR signals. Quantitative PCRs were done in a 96-well plate (Bio-Rad HSP9645) using GoTaq qPCR kit (Promega A6001). Plates were sealed using a microseal 'B' Adhesive Seal (Bio-Rad MSB1001) and the reaction progress was recorded during 40 cycles using a C1000Touch plate reader (Bio-Rad). We quantified four different parts of the tag cDNA (GFP, Hh ribozyme cleavage, gRNA, and HDV ribozyme cleavage, Figure 1D), as well as ACT1 cDNA as a reference gene. Primer sequences are in Supplementary file 3. The primers were tested and calibrated by running qPCR measurements on nuclear DNA extracts at a range of known input concentrations (Figure 1—figure supplement 2).
 
-## Segregant populations
+### Segregant populations
 
 BY strains (BY4741 background) carrying a given GFP-gRNA-tag and RM (YFA0198) carrying the CRISPR reporter and the SGA marker were mixed for crossing on a plate with medium that allows only hybrids to grow (SC agar -leucine -histidine). Growing cells were streaked on the same medium, and a single hybrid colony was kept for storage and for generating the segregant population. For sporulation, hybrid strains were incubated in sporulation medium (2.5 g/l yeast extract, 2.5 g/l glucose, 15 g/l potassium acetate, 200 mg/l uracil, 100 mg/l methionine) at room temperature under vertical rotation in a glass tube for seven days. After verifying sporulation under a light microscope, 1 ml of medium containing the tetrads was pelleted (13,000 rpm for 5 min) and resuspended in 300 µl of sterile water containing about 15 µg of zymolyase. The resulting ascii were digested at 30°C for 30 min with agitation. Spores were separated by vortexing for about 15 s, and 700 µl of pure sterile water was added to the tube. We spread 250 µl of this spore suspension on a plate containing segregant selection media (SC agar, 50 mg/l canavanine, -uracil -leucine) allowing growth of haploid segregants carrying the following three alleles: (1) cells with mating type MATa, selected via the SGA marker with URA3 under control of the STE2 promoter, which resulted in a ura+ phenotype only in MATa cells, (2) the SGA marker integrated at the CAN1 gene (whose deletion conferred canavanine resistance), which also selected for the CRISPR reporter that we had integrated at NPR2, the gene next to CAN1, (3) the given gene of interest tagged with the GFP-gRNA tag and LEU2 selectable marker. We used SC because this medium complemented a growth defect of strains with an NPR2 deletion in YNB medium. After three days of incubation at 30°C, segregants were harvested by scraping the entire plate in 10 ml of sterile water. Cells were centrifuged, resuspended in 3 ml of segregant selection media, and incubated at 30°C for 1.5 hr. To store these genetically diverse segregant populations, 1 ml of the culture was mixed with 0.4 ml of a sterile solution containing 60% water and 40% glycerol in a 2 ml screw cap cryo tube and frozen at −80°C.
 
-## Cell sorting for QTL mapping
+### Cell sorting for QTL mapping
 
 One day before cell sorting, the segregant population was thawed from the −80°C stock, mixed well, and 8 µl of culture were used to inoculate 5 ml of segregant selection media. The cells were reactivated with an overnight growth at 30°C under shaking. The next day, 1 ml of the growing culture was transferred to a new tube containing 4 ml of segregant selection medium (see above) and grown for an additional two hours before cell sorting, roughly corresponding to the middle of the exponential growth phase.
 
 Cell sorting was performed on a BD FACSAria II P0287 (BSL2) instrument at the University of Minnesota Flow Cytometry Resource (UFCR), without compensation. Cells were gated to exclude doublet and cellular fragments. To focus on cells in approximately the same stage of the cell cycle, an additional gate selected cells in a narrow range of cell size as gauged by the area of the forward scatter signal (FSC). From the cells within this gate, we sorted five populations per experiment, each comprising 10,000 cells: (1) a control population from the entire gate without fluorescence selection, (2) the 3% of cells with the lowest GFP fluorescence, (3) the 3% of cells with the highest GFP fluorescence, (4) the 3% of cells with the lowest mCherry fluorescence, and (5) the 3% of cells with the highest mCherry fluorescence. Each population was collected into 1 ml of segregant selection medium. After overnight growth at 30°C, 0.9 ml of culture was mixed with 0.4 ml of a sterile solution containing 60% water and 40% glycerol, and frozen at −80°C until sequencing. The remaining 0.1 ml were inoculated into 0.9 ml of segregant selection medium and grown for 3 hr before analyzing the population using flow cytometry (see below). In total, we obtained 125 sorted populations from 25 experiments across the ten tagged genes, with 1 to 6 biological replicates per gene, as well as the untagged population (Figure 5—source data 1). Sorting was done in four batches on different dates. Biological replicates were performed as independent sporulations of the stored diploid hybrids, and thus represent independent populations sorted in separate experiments.
 
-## Flow cytometry
+### Flow cytometry
 
 Single-cell fluorescence analysis was performed using cultures in the late log growth phase. We used a BD Fortessa X-30 H0081 flow cytometer at UFCR equipped with blue and yellow lasers and 505LP and 595LP filters to measure green (GFP) and red (mCherry) fluorescence, respectively. We did not use compensation. Forward scatter (FSC), side scatter (SSC), GFP, and mCherry fluorescence were recorded for 50,000 cells, excluding doublets and cellular debris. The voltaic gains were set as follows: 490 for FSC, 280 for SSC, 500 for GFP, and 600 for mCherry. We monitored for possible cross-contamination from cells retained in the instrument using strains expressing either only GFP or mCherry, and observed no cross-contamination. Recorded data on. fsc files were analysed using R and the flowCore package (Hahne et al., 2009). Raw data and scripts are accessible on github (https://github.com/BrionChristian/Simultaneous_RNA_protein_QTLs). The data were filtered to discard outlier cells based on unusual FSC and SSC signals. We used the fluorescence data from the sorted populations to determine correlations between red and green fluorescence, as well as heritability (Figure 3—figure supplement 1 & Figure 3—figure supplement 2). For these analyses, fluorescence values were corrected for cell size (FSC) by calculating the residuals of a loess regression of fluorescence on FSC. Loess regression avoided the need to assume a specific mathematical relationship between the two parameters (Figure 3—figure supplement 3).
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 DNA extraction for whole-genome sequencing was performed in 96-well plate format using E-Z-96 Tissue DNA kits (Omega D1196-01). The stored, sorted populations were thawed, mixed, and 450 µl transferred into a 2 ml 96-deep-well plate containing 1 ml of segregant selection medium for an overnight growth at 30°C. The plate was centrifuged for 5 min at 3700 rpm, and the supernatant was removed by quick inversion of the plate. Then, 800 µl of Buffer Y1 (182 g/l sorbitol, 0.5 M EDTA, pH 8, 14.3 mM β-mercaptoethanol, 50 mg/l zymolyase 100T) were added to the pellets, and the cells were resuspended and incubated for 2 hr at 37°C. The spheroplasts were centrifuged and the supernatant discarded. The pellets were resuspended in 200 µl of TL buffer and 25 µl of OB Protease Solution from the kit and incubated overnight at 56°C. The next day, RNA was denatured by addition of 5 µl of RNAse A (20 mg/ml) and incubated at room temperature for 5 min. After addition of 450 µl of BL Buffer from the kit, the mixture was transferred onto a E-Z 96 column DNA plate and centrifuged at 3700 rpm for 3 min. The columns were washed once with 500 µl of HBC Buffer and three times with 600 µl of DNA Wash Buffer from the kit. After an additional centrifugation to dry the column, the DNA was eluted in 100 µl of pure sterile water, quantified using Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific Q32854) and stored at 4°C for library preparation the next day.
 
 Library preparation for Illumina sequencing was performed using Nextera DNA Library Prep kit (Illumina) with modifications. The tagmentation was done on 5 ng of DNA using 4 µl of Tagment DNA buffer (‘TD’ in the kit) and 0.25 µl of Tagment DNA enzyme (corresponding to a 20-fold dilution of ‘TDE1’ from the kit) and incubating for 10 min at 55°C. Fragments were amplified with index primers (8 Nextera primers i5 and 12 Nextera primers i7, for up to 96 possible multiplex combinations) on 10 µl tagmented DNA by adding 1 µl of each primer solution (10 µM), 5 µl of 10X ExTaq buffer and 0.375 µl of ExTaq polymerase (Takara) and water to a final volume of 50 µl. The amplification was run for 17 PCR cycles (95°C denaturation, 62°C annealing, 72°C elongation). 10 µl of each reaction were pooled for multiplexing and run on a 2% agarose gel. DNA that migrated between the 400 and 600 bp was extracted using Monarch DNA Gel Extraction Kit (NEB T1020L). The pooled library DNA concentration was determined using Qubit dsDNA BR Assay Kit (Thermo Fisher Scientific Q32853), and submitted for sequencing. Sequencing was performed at the University of Minnesota Genomics Core (UMGC). Our 125 populations were processed in four batches extracted and sequenced at different times. Two were sequenced using an Illumina HiSeq 2500 (high-output mode; 50 bp paired-end) and two were sequenced using an Illumina NextSeq 500 (mid-output mode, 75 bp paired-end). Read coverage ranged from 5-fold to 24-fold coverage of the genome (median: 13-fold). The reads are available on NCBI SRA via BioProject PRJNA644804.
 
-## QTL mapping
+### QTL mapping
 
 For each sorted and sequenced population, reads were filtered (MAPQ ≥30) and aligned to the S. cerevisiae reference genome (version sacCer3, corresponding to BY strain) using BWA (Li and Durbin, 2009, command: mem -t). We used samtools (Li et al., 2009, command: view -q 30) to generate bam files and collapse PCR duplicates using the rmdup command. We used 18,871 variants previously identified as polymorphic and reliable between RM and BY (Bloom et al., 2013; Ehrenreich et al., 2010) (list available on github: https://github.com/BrionChristian/Simultaneous_RNA_protein_QTLs, samtools: mpileup -vu -t INFO/AD -l), generating vcf files with coverage and allelic read counts at each position for each population.
 
@@ -186,13 +655,17 @@ To estimate FDR, we applied the multipool QTL detection algorithm to pairs of po
 
 To call significant QTLs across replicates, we first scanned each replicate for QTLs at a permissive threshold of LOD > 3.0. Second, at each resulting QTL peak position, we averaged ΔAF and LOD scores across all available replicates without applying a LOD filter to each replicate. Third, we collapsed groups of overlapping QTLs, which we defined as QTLs whose peaks were within 75,000 bp of each other in the different replicates. For each group of these overlapping QTLs, we averaged the LOD scores, the ΔAFs, the peak positions, and the location confidence intervals to form one merged QTL. Of the resulting merged QTLs, we retained those that exceeded our stringent significance threshold of LOD ≥ 4.5.
 
-To gauge reproducibility of these significant QTLs, we counted the number of replicates in which a given QTL had been detected at the permissive LOD >3.0, using the same definition of positional overlap as above. The majority (74%) of significant QTLs were shared across all the corresponding replicates. Two tagged genes had more than two replicates (GPD1 and UGP1). For these genes, requiring all replicates to be significant is conservative. Therefore, we also estimated the average reproducibility of all mRNA-QTLs or all protein-QTLs by calculating the average fraction of replicates that had a QTL at a given merged QTL:fraction_overlap=mean[(NshareQTLij−1)/(Nrepj−1)]
+To gauge reproducibility of these significant QTLs, we counted the number of replicates in which a given QTL had been detected at the permissive LOD >3.0, using the same definition of positional overlap as above. The majority (74%) of significant QTLs were shared across all the corresponding replicates. Two tagged genes had more than two replicates (GPD1 and UGP1). For these genes, requiring all replicates to be significant is conservative. Therefore, we also estimated the average reproducibility of all mRNA-QTLs or all protein-QTLs by calculating the average fraction of replicates that had a QTL at a given merged QTL:
+
+$$
+fraction_overlap=mean[(NshareQTL_{ij}−1)/(Nrep_{j}−1)]
+$$
 
 Here, NshareQTLij is the number of replicates for which the QTL i is detected for the tagged gene j at LOD > 3, and Nrepj is the number of replicates performed for the tagged gene j. Note that if only a single replicate has a QTL at a given merged QTL, this fraction takes on a value of zero because in such a case, there is no overlap among replicates at this QTL. The observed fraction_overlap was 0.76 for the protein-QTLs and 0.78 for the mRNA-QTLs.
 
 As a measure of effect size for a QTL, we used ΔAF. Briefly, in the presence of a QTL, there are two subpopulations of segregants that carry the two QTL alleles. The effect of the QTL is given by the difference in mean between these two subpopulations, assuming identical standard deviations for the two alleles. During FACS of the combined population with both alleles, cells that exceed the threshold for inclusion in the high population are enriched for the allele that increases expression, and vice versa for the low population. The ratio of cells that carry the two alleles in each extreme population determines the allele frequency at the locus in that population, and subtracting these allele frequencies for the two populations gives the ΔAF metric. For QTLs with larger effect sizes, the two subpopulations are further apart in phenotype. This increases the degree of genotype enrichment in the two extreme populations, as reflected in a larger ΔAF.
 
-## Comparison of mRNA-QTLs and protein-QTLs
+### Comparison of mRNA-QTLs and protein-QTLs
 
 To compare mRNA-QTLs and protein-QTLs of the same gene, we first considered all merged QTLs that exceeded a permissive threshold of LOD > 3.0 (after merging replicates as described above). We considered an mRNA-QTL and a protein-QTL for the same gene with overlapping confidence intervals as a QTL pair across mRNA and protein. We manually curated the result of this overlap analysis for six cases; after curation, QTLs on chromosomes XV (ARO8), VIII (MTD1), XIII (CYC1) and XIII (RPS10A) were considered to be pairs, and QTLs on chromosome V (GPD1) and XIV (MTD1) were considered to be mRNA-specific.
 
@@ -202,34 +675,34 @@ We distinguished four types of QTLs (Figure 5A and Figure 5—figure supplement 
 
 Finally, we conducted an analysis of mRNA or protein QTL effect sizes and directions that avoided having to define potentially paired QTLs as significant or not. For each mRNA-QTL (or protein-QTL), we extracted the ΔAF from the protein-QTL (or mRNA-QTL) data at the same exact position, irrespective of significance in the other data. We used these values to compute correlations of effects and to examine shared directionality of effects between mRNA-QTLs and protein-QTLs (Figure 5B, Figure 5—source data 2).
 
-## Allelic engineering for YAK1 fine-mapping
+### Allelic engineering for YAK1 fine-mapping
 
 To obtain strains with scarless allelic swaps in haploids, we used a strategy based on double-cut CRISPR-swap (Lutz et al., 2019). We flanked each of the four tiles to be switched by two resistance markers (hphMX and KanMX) using our regular yeast transformation protocol (see above). The yeast were then transformed with 100 ng of CRISPR-Swap plasmid (pFA0055-gCASS5a, Addgene plasmid # 131774) and 1 µg of DNA repair template amplified either from BY, BY GPD1-GFP, or RM. The transformed cells were spread on SC -leucine plates, selecting for the presence of the plasmid expressing CAS9 and a gRNA targeting and cleaving a sequence present in both of the two resistance cassettes. We used strains in which GPD1 was tagged with GFP but not the gRNA tag, as the gRNA in our tag would likely have directed CAS9 to cleave the mCherry promoter. Cleavage of both cassettes resulted in the region in between the resistance cassettes to be replaced by the repair template. Transformed clones were screened for the double loss of antibiotic resistance to identify those with successful editing.
 
 We introduced the 148,659 G→A variant, which we had detected through sequence analysis (see below), in YAK1 by single-cut CRISPR-swap (Lutz et al., 2019). We replaced the YAK1 sequence with a hphMX resistance cassette insertion to create yak1Δ::hphMX. We then delivered the CRISPR-Swap plasmid along with a repair template DNA produced by fusion PCR to carry either the G or A allele at the variant position (primers OFA0874 to OFA0881 in Supplementary file 3). Five clones of each allele, (YAK1wt and YAK1Q578*) were confirmed by Sanger sequencing (primers OFA0883 and OFA0882 in Supplementary file 3).
 
-## Sequence analyses to identify the YAK1 and other new DNA variants
+### Sequence analyses to identify the YAK1 and other new DNA variants
 
 To search for new variants in our populations that were not known to be present in the BY and RM strains, we used the sequencing reads from each selected segregant population. In each of 125 populations, we analyzed bam files after collapsing PCR duplicates. We applied samtools mpileup (--min-BQ 0) and bcftools call (-vc), either locally in the region affecting Gpd1-GFP (-r chrX:146000–150000) or on the whole genome to generate vcf files containing variant information. The vcf files were merged in R to generate matrices of polymorphic positions along with their allele frequency and coverage. The allele frequencies of the YAK1 polymorphisms were plotted along the genome for each population (Figure 6—figure supplement 1). We excluded all 47,754 previously known BY/RM variants from the whole-genome polymorphism matrices, and also removed variants with a bcftools quality score below 30. Among the 7624 remaining variants sites, 5822 were identified in only one or two populations and were deemed to be sequencing errors. Only one variant was shared across most (71 out of 75) of the populations created from strains from the GFP collection (strains tagged at ARO8, BMH2, GPD1, MTD1, and UGP1; Figure 5—source data 1) and absent in all other populations. This variant was the 148,659 G-to-A SNV in YAK1.
 
-## YAK1 genotyping
+### YAK1 genotyping
 
 The region containing the YAK1Q578* variant was PCR-amplified from genomic DNA isolated from strains carrying FAA4-GFP and YMR315W-GFP (GFP collection), PGM1-TAP, NOT5-TAP, EMI2-TAP, TUB1-TAP (TAP-tag collection), BY4741 (ATCC 201388), YLK1879 (a BY strain from the Kruglyak lab) and YLK1950 (an RM strain from the Kruglyak lab) using primers OFA0883 and OFA0882 (Supplementary file 3). The resulting PCR product was Sanger sequenced using OFA0883 to genotype the YAK1 variant. The YAK1Q578* variant was observed only in the strains obtained from the GFP and TAP-tag collections (Ghaemmaghami et al., 2003; Huh et al., 2003).
 
-## Differential expression analysis by RNA-seq and mass spectrometry
+### Differential expression analysis by RNA-seq and mass spectrometry
 
-## Cell harvest
+#### Cell harvest
 
 We quantified RNA and protein from five biological replicates (different clones obtained after CRISPR-Swap) of YAK1wt and YAK1Q578*. For each of these 10 strains, fresh colonies were used to inoculate 5 ml of SC medium (completed with uracil, arginine, histidine, and leucine) and the culture was grown overnight at 30°C. The next day, 50 ml of SC media in an Erlenmeyer flask was inoculated with the overnight culture to an initial OD600 of 0.05 and were grown under shaking at 30°C. When the OD600 reached 0.35–0.45 (late log phase), four aliquots of 7 ml of the culture was transferred to a falcon tube, centrifuged, and washed with 1 ml of sterile PBS buffer at 30°C (Phosphate Buffered Saline, pH 7.5). The pellets were immediately frozen in liquid nitrogen. For each strain, one cell pellet was used for RNA-seq and another for protein mass spectrometry.
 
-## RNA extraction and sequencing
+#### RNA extraction and sequencing
 
 RNA extraction and library preparation were conducted as described in Lutz et al., 2019. Briefly, RNA extraction was done in two batches that each contained equal numbers of clones from the two groups (first batch: clones 1 and 2 of BY YAK1wt and clones 1 and 2 of BY YAK1Q578*, second batch: clones 3, 4, and 5 of BY YAK1wt and clones 3, 4, and 5 of BY YAK1Q578*). We used ZR Fungal/Bacterial RNA mini-prep kit with DNase I digestion (Zymo Research R2014), following the kit manual. RNA was eluted in 50 µl of RNase/DNase free water, quantified, and checked for integrity on an Agilent 2200 TapeStation. All RNA Integrity Numbers were higher than 9.5 and all concentrations were above 120 ng/µl. The RNA samples were stored at −20°C until use. Poly-A RNA selection was done using 550 ng of total RNA using NEBNext Poly(A) mRNA Magnetic Isolation Module (NEB E7490L), processing all samples in one batch. We prepared the library using NEB Ultra II Directional RNA library kit for Illumina (NEB E7760) used dual index primers (from NEBNext Multiplex Oligos for Illumina, NEB E7600S) for multiplexing, and amplified the library for ten cycles. The libraries were quantified using Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific Q32854) and pooled at equal mass for sequencing using 75 bp single-end reads on Illumina NextSeq 550 at UMGC. The sequencing reads are available on NCBI GEO via BioProject PRJNA644804. Using the trimmomatic software (Bolger et al., 2014), reads were trimmed of adapters and low quality bases and filtered to be at least 36 bp long. Reads were then pseudo-aligned to the S. cerevisiae transcriptome (Ensembl build 93) and counted using kallisto (Bray et al., 2016). We used RSeQC to calculate Transcript Integrity Numbers (TIN) which provided an estimation of alignment quality for each gene of each sample. We excluded any gene with at least one read count of zero or at least one TIN of zero across the ten samples. After filtering, 5755 genes remained for analysis. Differential expression analysis was performed using the DESeq2 R package (Love et al., 2014), using the extraction batch information as covariate. DESeq2 provided, for each gene, the log2-fold-change (YAK1Q578* vs. YAK1wt) and the p-value adjusted for multiple-testing using the Benjamini-Hochberg method (Benjamini and Hochberg, 1995; Figure 7—source data 1).
 
-## Protein extraction and mass spectrometry
+#### Protein extraction and mass spectrometry
 
 Protein extraction and quantification using mass spectrometry was performed by the Center for Mass Spectrometry and Proteomics at the University of Minnesota. Briefly, cells from the pellets were lysed by sonication (30%, 7 s in Branson Digital Sonifier 250) in protein extraction buffer (7 M urea, 2 M thiourea, 0.4 M triethylammonium bicarbonate pH 8.5, 20% acetonitrile and 4 mM tris(2-carboxyethyl)phosphine). The proteins were extracted using pressure cycling (Barocycler Pressure Biosciences NEP2320, 60 cycles of 20 s at 20 kpsi and 10 s at 0 kpsi), purified by centrifugation in 8 mM iodoacetamide (10 min at 12000 rpm), and quantify by Bradford assay. For each sample, 40 µg of extracted proteins were fragmented by trypsin digestion (Promega Sequencing Grade Modified Trypsin V5111), and labeled by tandem mass tag isotopes (TMT10plex Isobaric Label Reagent Set, Thermo Scientific 90110). All the tagged samples were pooled. Peptides were separated first based on hydrophobicity through two consecutive liquid chromatographies, followed by separation based on mass per charge after ionization in the first mass spectrometry step. The second mass spectrometry step after high-energy collision-induced dissociation allowed for the identification of the peptide and the quantification of the TMTs. MS-MS analysis was conducted on an Orbitrap Fusion Tribrid instrument (Thermo Scientific). Database searches were performed using Proteome Discoverer software, and post-processing and differential expression analysis was done using Scaffold 4.9. Differential expression statistics per protein were computed on mean peptide abundances after inter-sample normalization. Normalized abundances for each of the 2590 detected proteins are provided in Figure 7—source data 3. We adjusted p-values provided by Scaffold using the Benjamini-Hochberg method.
 
-## Protein and mRNA data comparison
+#### Protein and mRNA data comparison
 
 To compare the effect of the YAK1 variant on mRNA and protein abundance, we examined the log2 fold-change of the mRNA abundance (from DESeq2) and protein abundance (from Scaffold) for the 2577 genes present in both datasets. We considered genes that were differentially expressed in mRNA or protein (adjusted p-value<0.05) and that showed no evidence of difference in the other quantity (raw p-value>0.05), to be specifically affected at the mRNA or protein level (Figure 7A, Figure 7—source data 4). In various categories of differentially expressed genes, we looked for gene ontology enrichment using GOrilla (Eden et al., 2009) with the list of 2577 genes detected in both mass spectrometry and RNA-seq as the background set (Figure 7—source data 2).

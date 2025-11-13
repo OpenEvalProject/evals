@@ -29,7 +29,7 @@
 
 ## Abstract
 
-Ornithischian dinosaurs were ecologically prominent herbivores of the Mesozoic Era that achieved a global distribution by the onset of the Cretaceous. The ornithischian body plan is aberrant relative to other ornithodiran clades, and crucial details of their early evolution remain obscure. We present a new, fully articulated skeleton of the early branching ornithischian Heterodontosaurus tucki . Phase-contrast enhanced synchrotron data of this new specimen reveal a suite of novel postcranial features unknown in any other ornithischian, with implications for the early evolution of the group. These features include a large, anteriorly projecting sternum; bizarre, paddle-shaped sternal ribs; and a full gastral basket – the first recovered in Ornithischia. These unusual anatomical traits provide key information on the evolution of the ornithischian body plan and suggest functional shifts in the ventilatory apparatus occurred close to the base of the clade. We complement these anatomical data with a quantitative analysis of ornithischian pelvic architecture, which allows us to make a specific, stepwise hypothesis for their ventilatory evolution.
+Ornithischian dinosaurs were ecologically prominent herbivores of the Mesozoic Era that achieved a global distribution by the onset of the Cretaceous. The ornithischian body plan is aberrant relative to other ornithodiran clades, and crucial details of their early evolution remain obscure. We present a new, fully articulated skeleton of the early branching ornithischian Heterodontosaurus tucki. Phase-contrast enhanced synchrotron data of this new specimen reveal a suite of novel postcranial features unknown in any other ornithischian, with implications for the early evolution of the group. These features include a large, anteriorly projecting sternum; bizarre, paddle-shaped sternal ribs; and a full gastral basket – the first recovered in Ornithischia. These unusual anatomical traits provide key information on the evolution of the ornithischian body plan and suggest functional shifts in the ventilatory apparatus occurred close to the base of the clade. We complement these anatomical data with a quantitative analysis of ornithischian pelvic architecture, which allows us to make a specific, stepwise hypothesis for their ventilatory evolution.
 
 ## Introduction
 
@@ -43,13 +43,13 @@ Some previous studies have proposed that ornithischians evolved novel ventilatio
 
 Since its discovery in 1962 (Crompton and Charig, 1962), Heterodontosaurus tucki has long been recognized as a taxon crucial for resolving early ornithischian phylogenetic relationships. Most studies seeking to understand ornithischian origins have examined a single articulated skeleton, SAM-PK-K1332, which was fully prepared from its matrix nearly 50 years ago (Sereno, 1984; Sereno, 1986; Cooper, 1985; Maryanska and Osmólska, 1985; Butler et al., 2008; Boyd, 2015). Here, we present a new exquisitely preserved articulated skeleton, AM 4766 (age, stratigraphic provenance, and sedimentological context in Appendix 1). Cautious manual preparation and synchrotron radiation X-ray micro-computed tomography (SRμCT) using an innovative imaging protocol reveal new and unexpected elements of this taxon’s anatomy that are not preserved in any other specimens. Much of this new anatomical information has significant bearing on interpretations of the macroevolution of ornithischian respiratory biology. To further our understanding of ornithischian ventilation, we also quantitatively investigated size and shape changes in the evolution of the ornithischian pelvic girdle, paying special attention to the APP. Using a broad sample of ornithischian taxa, we use these data to investigate hypotheses that have implicated the APP in lung ventilation (Brett-Surman, 1989; Carrier and Farmer, 2000).
 
-## Institutional abbreviations
+### Institutional abbreviations
 
 AM, Albany Museum, Makanda, Eastern Cape, South Africa; NCSM, North Carolina Museum of Natural Sciences, Raleigh, North Carolina; SAM, Iziko South African Museum, Cape Town, South Africa.
 
 ## Results
 
-## New anatomy
+### New anatomy
 
 The osteology of H. tucki has been described elsewhere (Crompton and Charig, 1962; Santa Luca et al., 1976; Sereno, 2012; Galton, 2014); we focus instead on novel anatomical features preserved in AM 4766 (Figure 1A). Visualization of these features was made possible by a high-resolution, phase-contrast enhanced SRμCT with a bespoke reconstruction algorithm developed for this particular specimen (elaborated further in Appendix 1) that has recently been used elsewhere (Cau et al., 2017).
 
@@ -57,21 +57,21 @@ The osteology of H. tucki has been described elsewhere (Crompton and Charig, 196
 
 **Figure 1.:** (A) Specimen AM 4766 Heterodontosaurus tucki on left, with virtual anatomy reconstructed on the right. (B) Close-up of gastralia. (C) Stereopairs of anterior half of gastralial series. g: gastralia; f: femur (left); t: tibia (left); p: pubis; sr: sternal ribs. Arrows on figure labels point anteriorly.
 
-## Gastralia
+### Gastralia
 
 Approximately 18 gastralia are present in total and would have produced two longitudinal rows with each containing 9 gastralia. The gastralia follow the ventral abdominal midline, from the posterior margin of the sternal plates to the level of the distal ends of the pubes (Figure 1B). The first two pairs of gastralia have slightly thickened medial facets that are absent from all subsequent pairs (Figure 1C), with the overall thickness of gastralia diminishing posteriorly. The gastralia are autapomorphic among non-avian dinosaurs in lacking a lateral segment (Claessens, 2004; Fechner and Gößling, 2014; Barrett et al., 2019), which is retained in even the diminished gastral basket of early branching avialans (O’Connor et al., 2015).
 
 Fragments associated with the H. tucki specimen SAM-PK-K1332 are of comparable dimensions to the gastralia in AM 4766; however, they have been removed from context and could potentially represent displaced ossified tendons or posteriormost dorsal ribs. We tentatively identify the long, narrow bone fragments on either side of the proximal femur in the holotype specimen of Tianyulong confuciusi STMN 26-3 (Zheng et al., 2009; Appendix 1—figure 3) as gastralia based on their similarity with AM 4766.
 
-## Sternal plates
+### Sternal plates
 
 Two separate sternal plates are present, although only the left one is complete. The sternal plates are sub-rectangular, their long axes are oriented anteroposteriorly, and they are dorsoventrally thickest on their lateral margin and progressively thin medially (Figure 2). The fenestra that perforates the centre of the sternal plate preserved in SAM-PK-K1332, identified by Sereno, 2012, is also present in AM 4766. The left sternal plate of AM 4766 bears an autapomorphic, anteromedially projecting, tongue-shaped process that projects abruptly from the anterolateral portion of the sternal plate (Figure 2B–E). The proximal portion of this process is partially visible in SAM-PK-K1332, but most of it is still obscured by matrix. The exact nature and function of the tongue-shaped process is currently unknown, but, when paired, they likely buttressed the region between coracoids. The posterolateral corner of the sternal plate of SAM-PK-K1332 has a small but distinct protuberance, identified as an articulation for the sternal ribs (Sereno, 2012), herein referred to as a costal process (Figure 2C, D). While this structure appears to be missing from AM 4766, its absence cannot be confidently confirmed as the resolution in this region of the SRμCT data is diminished by metallic inclusions obscuring boundaries between bones and matrix.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66036/elife-66036-fig2-v1.jpg)
 
-**Figure 2.:** H. tucki.(A) Location of sternal plates in AM 4766, (B) segmented left sternal plate of AM 4766, and (C) sternal plates in SAM-PK-K1332. (D) Line drawing of sternal plates in SAM-PK-K1336. (E) Composite line drawing of H. tucki sternal plate anatomy informed by both specimens. ampr: anteromedial process; cpr: costal process; fen: fenestra; sp: sternal plate. Arrows on figure labels point anteriorly.
+**Figure 2.:** (A) Location of sternal plates in AM 4766, (B) segmented left sternal plate of AM 4766, and (C) sternal plates in SAM-PK-K1332. (D) Line drawing of sternal plates in SAM-PK-K1336. (E) Composite line drawing of H. tucki sternal plate anatomy informed by both specimens. ampr: anteromedial process; cpr: costal process; fen: fenestra; sp: sternal plate. Arrows on figure labels point anteriorly.
 
-## Sternal ribs
+### Sternal ribs
 
 Three pairs of sternal ribs are preserved in AM 4766, each similar in size and morphology (Figures 3 and 4). The sternal ribs have a spatulate morphology, with an elongate and semi-cylindrical anterior half, and an abruptly dorsoventrally expanded posterior half that thins to a mediolaterally compressed, sheet-like structure, similar to the avialan Jeholornis prima (Zheng et al., 2020; Figure 4G). A thickened nub on the posterior apex of this sheet-like portion forms a monocondylar sternocostal articulation with the distal end of the corresponding dorsal rib. A similar articular relationship is present between the sternal, intermediate, and dorsal ribs of extant crocodilians (Claessens, 2009; Brocklehurst et al., 2017). Although the gross morphology of their sternal ribs differs, the sternal and dorsal ribs of pterosaurs (e.g., Rhamphorhynchus muensteri, Figure 4F) also bear monocondylar sternocostal joints that are strikingly similar to those of H. tucki (Claessens et al., 2009). The sternal ribs of AM 4766 contrast markedly with the few other ornithischian examples: for example, in Thescelosaurus neglectus (NCSM 15728) (Figure 4E) and Nanosaurus agilis (BYU 163) (identified as ‘costal cartilage’ in Carpenter and Galton, 2018), the sternal ribs are comparatively shorter, subrectangular, and bearing broad butt joints rather than condylar articulations at their distal and proximal ends.
 
@@ -83,19 +83,19 @@ Three pairs of sternal ribs are preserved in AM 4766, each similar in size and m
 
 **Figure 4.:** (A) Stereopairs of AM 4766 in (left) dorsal and (right) anteroventrolateral views. (B, C) Idealized version of sternal ribs present in AM 4766. (D, E) Photo and line drawing of sternal complex in Thescelosaurus neglectus (NCSM 15728). (F) Schematic sternal complex of Rhamphorhynchus, modified from Claessens et al., 2009. (G) Schematic sternal complex of Jeholornis, modified from Zheng et al., 2020. Arrows and asterisks point to sternal and dorsal rib articulation points, respectively. dr: dorsal ribs; g: gastralia; L/R 1/2/3: left/right first, second, and third sternal ribs (anterior to posterior) of AM 4766; sr: sternal ribs; st: sternal plates. Arrows on figure labels point anteriorly.
 
-## Clavicles
+### Clavicles
 
 The paired clavicles (Figure 5A, B) are preserved in life position anterior to the scapulocoracoid and are proportionally long, thin, and bowed posteriorly. The proximal end of the left clavicle is marginally thicker than the rest of this element and gently tapers laterally. Among ornithischians, clavicles are mostly known in basal ceratopsians and neoceratopsians from the Cretaceous, for example, Psittacosaurus mongoliensis (Fairfield, 1924; Sereno, 1990), Psittacosaurus sibiricus (Averianov et al., 2006), Auroraceratops rugosus (Morschhauser et al., 2018a), Leptoceratops gracilis (Sternberg, 1951), Montanoceratops cerorhynchos (Chinnery and Weishampel, 1998), and Protoceratops andrewsi (Brown and Schlaikjer, 1940) but are also present in the basal thyreophoran Scelidosaurus harrisonii (Norman, 2020) as well as a new, undescribed taxon that is purported to be at the base of Ornithopoda (Spencer et al., 2020). The clavicles of H. tucki are similar to those of ceratopsians in contouring the anterior margin of the scapulocoracoid, with no apparent contact present between the clavicles along their length. The clavicles of AM 4766 differ from those of ceratopsians in overall size. AM 4766 has clavicles that are ~60% the length of the anterior margin of the body of the scapulocoracoid (i.e., excluding the scapular blade), where the clavicles of ceratopsians are approximately 40% of the length of the anterior margin of the scapulocoracoid.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66036/elife-66036-fig5-v1.jpg)
 
-**Figure 5.:** H. tucki.(A, B) Clavicles and suprascapula of AM 4766 (B is segmentation of μCT data); (C) suprascapula in SAM-PK-K1332. cl (L/R): left/right clavicle; h: humerus; sc: scapula; ss: suprascapula. Arrows on figure labels point anteriorly.
+**Figure 5.:** (A, B) Clavicles and suprascapula of AM 4766 (B is segmentation of μCT data); (C) suprascapula in SAM-PK-K1332. cl (L/R): left/right clavicle; h: humerus; sc: scapula; ss: suprascapula. Arrows on figure labels point anteriorly.
 
-## Suprascapula
+### Suprascapula
 
 The suprascapula (Figure 5) is sub-trapezoidal in shape, being broader distally than it is proximally. The distal margin of the suprascapula is concave and articulates with the proximal, convex margin of the scapular blade. A suprascapula is also present in SAM-PK-K1332 and was originally described by Santa Luca et al., 1976 as a ‘cartilaginous extension’ that capped the dorsal margin of the scapula. At present, we are unable to eliminate the possibility that this structure is indeed cartilaginous, but it is undistorted and has clearly defined margins that allow us to tentatively consider the suprascapula as an ossification (rather than a chondrification). An ossified suprascapula has only been described in one other dinosaurian taxon, the Cretaceous neornithischian Parksosaurus warreni (Sternberg, 1936).
 
-## Internal thoracic ceiling and vertebral structure
+### Internal thoracic ceiling and vertebral structure
 
 Synchrotron scanning of AM 4766 permitted the reconstruction of vertebral morphology previously obscured in specimen SAM-PK-K1332. Notably, the parapophyses migrate anterodorsally as the vertebral series progresses posteriorly (Figure 6): on the first, second, and third dorsal vertebrae, the parapophyses are located immediately ventral to the diapophyses; the fourth and fifth dorsal vertebrae mark the transition where the parapophyses migrate dorsally from the centrum and onto the neural arch; and from the sixth dorsal vertebrae and in all more posterior dorsals, the parapophyses are anterior to the diapophyses and on the same horizontal level. Our reconstruction based on SRμCT data shows that the entire internal structure of the cervical, dorsal, sacral, and proximal caudal vertebral column lacks pneumatic chambers or fossae, including those areas often implicated in the early evolution and development of PSP (Wedel, 2006; Butler et al., 2009; Benson et al., 2012), conclusively showing that early ornithischians lacked PSP.
 
@@ -103,7 +103,7 @@ Synchrotron scanning of AM 4766 permitted the reconstruction of vertebral morpho
 
 **Figure 6.:** (A) Virtual reconstruction of cervicothoracic, thoracic, and sacral vertebrae of AM 4766; (B) Line drawing of (A) with diapophyses and parapophyses colour-coded in cyan and magenta respectively. Dashed lines indicate shifting position of parapophyses relative to the accompanying diapophyses. Arrows on figure labels point anteriorly.
 
-## Quantitative analysis of ventral pelvic architecture
+### Quantitative analysis of ventral pelvic architecture
 
 Our measured variables show strong (log10 pubic rod length; r2 = 0.858) to very strong (log10 APP length, ischial length; r2 > 0.96) correlations with body size (represented in our analysis by log10 femur length, see Materials and methods, and Appendix 1—figures 4 and 5). We therefore corrected for phylogenetic and allometric effects by using the residuals of phylogenetically corrected generalized least squares (pGLS) regressions of each variable against log10 femoral length. The residuals from our pGLS regression of each of our three variables showed poor correlation with log10 femoral length. This indicates that changes in pubic and ischial dimensions are largely dissociated from the allometric effects of body size (see Appendix 1—figure 5A–F).
 
@@ -117,21 +117,68 @@ Early branching ornithischians have long pubic rods, which subsequently shorten 
 
 We used each set of residuals as continuous characters for an evolutionary model testing analysis using phylogenetic comparative methods (see Materials and methods). Among these, ‘Early Burst’ is strongly preferred for the evolution of APP length and performs better than other competing models (Akaike Information Criterion [AICc] weight: 99.99%, likelihood ratio test p<0.01; see Table 1). The ‘Early Burst’ model posits declining evolutionary rates over time, that is, expected variance is higher between earlier-branching taxa (Harmon et al., 2010), matching our qualitative observations from mapping residuals on the tree (Figure 7). Pubic rod length is best modelled by a ‘Drift’ model (AICc weight: 82.34%, p=0.01), and ‘Stasis’ is more strongly, but non-significantly preferred for ischial length (AICc weight: 59.37%; p=1).
 
+**Table 1.**
+ Akaike Information Criterion weights and likelihood ratio test (p) statistics for the evolutionary models analysed here (see Materials and methods).Bold values indicate preferred explanatory model for each measured pelvic variable. Likelihood ratio tests are between the preferred model and the next most preferred model. BroMo: Brownian Motion; OU: Ornstein–Uhlenbeck.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>BroMo (%)</th>
+      <th>OU (%)</th>
+      <th>Early-burst (%)</th>
+      <th>Drift (%)</th>
+      <th>Stasis (%)</th>
+      <th>p =</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>APP length</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>99.99</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>1.33−07</td>
+    </tr>
+    <tr>
+      <td>Pubis length</td>
+      <td>11.06</td>
+      <td>3.56</td>
+      <td>2.97</td>
+      <td>82.34</td>
+      <td>0.00</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Ischium length</td>
+      <td>5.21</td>
+      <td>25.24</td>
+      <td>8.73</td>
+      <td>1.45</td>
+      <td>59.37</td>
+      <td>1.00</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
-## Gastralia and their implications
+### Gastralia and their implications
 
 The nearly sequentially complete gastral basket of AM 4766 is the first known in ornithischian dinosaurs, and the tentative identification of gastralia in the holotype of the Chinese taxon T. confuciusi suggests that gastralia may have been present in all heterodontosaurids. With gastralia being plesiomorphically ubiquitous across a range of tetrapod clades, discovering gastralia in Heterodontosauridae is not surprising as this clade is consistently recovered as the earliest branching lineage of ornithischian dinosaurs (Butler et al., 2008; Boyd, 2015). It is more surprising, however, that these gastralia are retained in H. tucki despite its typical ornithischian retroverted pubis. Three-dimensional reconstruction of our SRμCT data clearly demonstrate gastralia in close association with the distalmost point of the pubes, indicating that their complete retroversion (opisthopuby) was achieved with the gastralia still intimately coupled. Together, these observations contest previous hypotheses that reasoned that a divorce of the gastral basket from the pubis was a necessary prerequisite for ornithischian pubic retroversion (Rasskin-Gutman and Buscalioni, 2001). Furthermore, the association of the gastralia with the distal end of the pubic rod indicates that the latter structure is homologous to the pubic shaft/apron of other archosaurs (Galton, 1970, contra references therein), and that the APP is a de novo feature.
 
-## Sternal ribs and their function
+### Sternal ribs and their function
 
 The presence of sternal ribs in H. tucki extends the occurrence of these bones from late diverging taxa like T. neglectus and other relatively late-branching, small-bodied Late Jurassic and Cretaceous neornithischians (Carpenter and Galton, 2018; Butler and Galton, 2008) to the basalmost members of Ornithischia. This broader distribution strongly implies that the presence of sternal ribs may optimize as an ornithischian plesiomorphy. However, the sternal ribs we describe in H. tucki are autapomorphic in morphology, differing markedly from those of other ornithischians, and showing clear evidence of being mobile about their dorsal rib and sternal plate joints (Figure 4A–C). The dorsoventrally expanded dorsal and ventral margins of these ribs were likely attachment sites for intercostal musculature and in this way perhaps analogous to similar projections (sternocostapophyses) on the sternal ribs of pterosaurs (Claessens et al., 2009), the uncinate processes of maniraptorans (Tickle et al., 2012; Codd et al., 2008), and the remarkably similar sternal ribs of the ornithothoracine J. prima (Zheng et al., 2020) – all of which are adaptations hypothesized to increase lever-arm potential and facilitate efficient deformation of the body wall to drive ventilation.
 
-## Sternum
+### Sternum
 
 The complex sternal plates of AM 4766 are distinct from the comparatively simple ‘hatchet-shaped’ sternal plates of iguanodontians and the ‘kidney-shaped’ (reniform) sterna of other neornithischians but are not unique among Dinosauria. Instead, the complex sternal plates of AM 4766 bear similarities with early- and late-diverging theropods such as Tawa hallae (Bradley et al., 2019) and various avialans (Zheng et al., 2012; O'Connor et al., 2015), respectively. Features like the tongue-shaped process of AM 4766 and the coracoid facet of T. hallae are strikingly similar in their dimensions, location, and abrupt change in orientation relative to the posterior half of their respective sternal plates. Further similarities include the single knob-like costal process of AM 4766 exhibiting a similar morphology to the series of costal processes of T. hallae, and the analogous position of the lateral tubercula of enantiornithines (Zheng et al., 2012). It is unclear whether these sternal similarities are homologous, but they are likely functionally analogous.
 
-## Quantitative analysis of pelvic evolution
+### Quantitative analysis of pelvic evolution
 
 The nature of change in the relative length of the APP is conspicuous from both qualitative and quantitative analyses of pelvic evolution. Innovation in APP length occurred early in ornithischian evolution, before the diversification of genasaurians, and after this significant early burst (see Figure 7, Table 1), modifications of the APP were generally restricted to gross shape differences that do not affect the relative length: derived ornithopods evolved a large, lobate APP with derived neoceratopsians evolving an APP that fanned-out anteriorly. We interpret these results as rapid switching of optimal phenotypes for APP size; from the plesiomorphically small condition in H. tucki to a proportionally long APP that is then maintained across all later-branching ornithischian lineages.
 
@@ -143,11 +190,11 @@ This pattern of pubic evolution is best explained by a ‘Drift’ evolutionary 
 
 Ischial residuals are harder to interpret, and despite being best explained by a ‘Stasis’ model, there is no statistical significance between this explanatory model or any other evolutionary models we tested. Qualitatively, most ornithischian dinosaurs have similar-length ischia relative to their body size. The most conspicuous departures from this are in late-branching ornithopods, where the ischium is elongated (i.e., strong positive residuals), and in stegosaurs where the ischium is shortened (i.e., strong negative residuals). That the pubic rods of stegosaurs remained elongate and the ischia short and robust almost certainly indicates that some other selective pressure such as tail-driven defence (Mallison, 2011; Carpenter et al., 2005) was imposed on the ischium that prevented it from supplanting the role of the pubis in anchoring abdominal musculature. Nevertheless, both ischial modifications occur temporally and phylogenetically well after the increase in relative APP length and the loss of gastralia.
 
-## A new model of lung ventilation in ornithischian dinosaurs
+### A new model of lung ventilation in ornithischian dinosaurs
 
 The anatomical features presented here provide consilient evidence that H. tucki preserves morphologies that reflect early steps in the evolution of a novel means of lung ventilation in ornithischian dinosaurs. Below, we review this evidence and propose a potential model for the ornithischian ventilation system.
 
-## Gastralial modification
+### Gastralial modification
 
 Gastralia are widespread among Palaeozoic and Mesozoic tetrapods but have never before been unambiguously reported in Ornithischia. Among other dinosaurian lineages, theropods retain their gastral basket until the evolution of neornithine birds, and sauropodomorphs lose their gastralia relatively late in their evolutionary history at the base of Eusauropoda – potentially retaining gastralia even during the emergence of Neosauropoda (Tschopp and Mateus, 2013).
 
@@ -155,13 +202,13 @@ The reduction or loss of the gastralia independently occurs in other major tetra
 
 The specialized facets on the medial gastralial elements of non-avian theropods have led multiple authors (Carrier and Farmer, 2000; Claessens, 2004; Fechner and Gößling, 2014; Codd et al., 2008; Lambe, 1917) to hypothesize that gastralia played an important role in ventilating the lungs, a mechanism Carrier and Farmer, 2000 termed ‘cuirassal breathing’ that was inherited from a common non-dinosaurian archosaurian ancestor. These hypotheses posit the gastralia would have facilitated expansion and contraction of the body wall to facilitate volumetric changes in the thoracoabdominal cavity (Carrier and Farmer, 2000; Claessens, 2004; Codd et al., 2008; Lambe, 1917). Although in extant crocodilians the gastralia themselves only contribute a relatively small amount to such volumetric changes in isolation (Claessens, 2009), the gastral basket is integral in bridging the sternocostal complex and mobile pubis, serving as an attachment site for muscles fundamental to body wall deformation and function of the ‘hepatic piston’.
 
-## The archosaurian pelvis as a respiratory locus
+### The archosaurian pelvis as a respiratory locus
 
 In archosaurian ventilation models, the involvement of the pelvis is ubiquitous, ranging from pelvic rocking in birds (Baumel et al., 1990), to the hepatic piston in crocodilians (Farmer and Carrier, 2000), to the prepubis of pterosaurs (Claessens et al., 2009). Anterior bony projections of the pubic region are key components of these models, including the mobile pubis of crocodilians, and the prepubis and puboiliac complex in pterosaurs. Carrier and Farmer, 2000 highlighted the APP as the integral locus for interpreting ornithischian lung ventilation, focusing their hypothesis on the major genasaurian clades Neoceratopsia, Ornithopoda, and Stegosauria. Macaluso and Tschopp, 2018 hypothesized that pubic retroversion in dinosaurs is linked to the evolution of an innovative ventilatory mechanism, arguing that the plesiomorphic cuirassal breathing proposed by Carrier and Farmer, 2000 constrains the pubis into the propubic condition, and that evolution of mesopubic and opisthopubic conditions indicates a relaxing of those constraints as a new mechanism evolves.
 
 The role of the APP in ventilation has been contentious, however, with other authors assigning it a locomotory function (as the origin of the ambiens [Maidment and Barrett, 2011] or pubotibialis [Galton, 1969] muscles). Although the locomotory and ventilatory explanations are not mutually exclusive, the evidence gathered here makes us consider the locomotory role to be a poor explanation for APP changes for the following reasons. First, our evolutionary analysis clearly shows that the major changes in the APP residuals are phylogenetically and temporally divorced from the independent acquisitions of quadrupedality and major postural changes (Maidment and Barrett, 2011; Maidment and Barrett, 2012a; Maidment and Barrett, 2012b; Barrett and Maidment, 2017). Second, although there is little available data from extant taxa, the ambiens muscle appears to have weak negative allometry in Dromaius novaehollandiae (Lamas et al., 2014), suggesting that body size increases in ornithischian lineages would not drive a trend of disproportional APP increase (additionally, our analysis of pubic measurements using residuals precludes this). Third, the APP is subparallel to the vertebral column and medial to the ribcage, thus precluding it from being a major driver of hindlimb extension or retraction when body wall musculature is reconstructed (principally M. obliquus abdominus externus; Fechner and Gößling, 2014; Fechner and Schwarz‐Wings, 2013). These lines of evidence together indicate that the factors driving the evolution of APP length and shape are distinct from locomotory influences.
 
-## The pelvic bellows
+### The pelvic bellows
 
 In total, our observations here show that H. tucki has reduced gastralia, an apomorphically elaborate sternum, well-developed and mobile sternal ribs, an incipient APP, and completely lacks PSP. We propose a single explanatory model for these observations: that H. tucki is a transitional animal preserving the early steps in the evolution of a unique ventilation mechanism in ornithischian dinosaurs. We name this model the ‘pelvic bellows’ and elaborate on it below. This model does not require us to make ad hoc assumptions about airflow direction (i.e., unidirectional versus tidal), but phylogenetic bracketing predicts intrapulmonary unidirectional airflow in Ornithischia and is fully compatible with our model (Schachner et al., 2014; Cieri et al., 2014; Farmer and Sanders, 2010; O'Connor and Claessens, 2005).
 
@@ -179,7 +226,7 @@ Finally, in deeply nested ornithischians (Figure 8D), the gastralia remain absen
 
 The changing vertebrocostal orientations along the axial column of H. tucki observed here (Figure 6) support the bipartite and dorsally immobile lung previously reconstructed in ornithischians and silesaurids (Schachner et al., 2011; Brocklehurst et al., 2018). Considering that a dorsally immobilized, anatomically and functionally heterogeneous lung has been reconstructed for all of Ornithischia (Schachner et al., 2011; Brocklehurst et al., 2018), and that the M. diaphragmaticus of extant crocodilians is coupled with a flexible lung and shifting viscera, the proposed ventilatory mechanism for Ornithischia was likely functionally distinct from the hepatic piston model present in crocodilians, although the two may have been anatomically convergent. The crocodilian M. diaphragmaticus originates on both the pelvis anterior to the acetabulum and the gastralia (or pubic apron, depending upon the taxon) (Gans and Clark, 1976). It then fans out anteriorly, encapsulates all of the abdominal viscera (dorsally, laterally, and ventrally), and inserts on the liver, with fibres occasionally extending to the pericardium (Gans and Clark, 1976). The proposed puboperitoneal muscle in ornithischians originating on the APP (Figure 8B–D) is reconstructed here as travelling anteriorly, and inserting on any potential number of anatomical structures, including the dorsal surface of the liver, pulmonary septa, posteriorly positioned air sacs (or non-invasive pulmonary diverticula emerging from the lung), or even the posterior aspect of the lung itself if no pulmonary diverticula existed. This putative mechanism would be distinctly different from that of extant crocodilians, particularly in the larger, later-branching ornithischian taxa in that there would be no ventral attachment due to a loss of gastralia and the shortened pubis (Figure 8D). Without bundling the abdominal viscera into a fusiform tube, there would be no anterior-posterior translation of the entire visceral mass within the thoracocoelomic cavity. Additionally, ventilation of the anteriorly immobilized respiratory parenchyma by a posterior/ventral flexible region (whether air sacs, or just a flexible sac-like expansion) would not theoretically cause the same shifts in centre of mass that the crocodilian hepatic-piston mechanism does (see, e.g., Uriona and Farmer, 2008), and may be more functionally analogous to the complementary integration of pelvic musculature as observed in birds (e.g., Columba livia; Baumel et al., 1990). This hypothesis posits that only the flexible regions of the lung linked to the pelvic bellows would be stretching with contraction of the muscle, while the anterior and dorsal regions of the lung containing the respiratory parenchyma could remain fixed and immobilized to the adjacent skeletal tissues. This type of pulmonary heterogeneity is well documented in other sauropsids outside of birds (e.g., varanids [Schachner et al., 2014], chameleons [Klaver, 1973], snakes [Wallach, 1998]), where there is an extreme separation of the respiratory parenchyma and more flexible sac-like structures in the posterior region of the lung, and thus supports the possibility of these characters independently evolving in this lineage if this ventilatory mode is truly divergent from other dinosaurs.
 
-## Lung ventilation in dinosaurs is probably more complicated
+### Lung ventilation in dinosaurs is probably more complicated
 
 Investigation into dinosaur respiration has focused on PSP, using its presence or absence as a sole proxy for avian-like ventilation and physiology (O'Connor and Claessens, 2005; O'Connor, 2006; Butler et al., 2012; Wedel, 2003). Recent studies showing the remarkable multiplicity of respiratory systems employed by living reptiles (Owerkowicz et al., 1999; Cieri et al., 2018; Claessens, 2009; Brocklehurst et al., 2017; Baumel et al., 1990; Farmer and Carrier, 2000; Lyson et al., 2014) show that PSP is only one component of a complex suite of features that coevolve to enable lung ventilation across a swathe of tetrapod lineages. This recent research shows that some presumed ‘bird-like’ respiratory features, such as unidirectional air flow, are actually plesiomorphies characterizing much larger groups (Schachner et al., 2014; Farmer and Sanders, 2010) and highlights the diversity of ways in which multiple anatomical systems interlink to effectively ventilate the lungs. New work on the pulmonary anatomy of the ostrich (Struthio camelus) has demonstrated that PSP relationships with the respiratory system in extant birds may not be as straightforward as previously thought (Schachner et al., 2021), and reconstructions of dinosaur lungs that directly follow a standardized avian bauplan may need to be reconsidered. Additionally, primitive features like gastralia, simple sterna, and ‘propubic’ pelves impede attempts at completely superimposing the highly derived physiology of birds onto comparatively less-specialized clades like non-avian theropods and sauropods.
 
@@ -191,20 +238,20 @@ The success of ornithischians is remarkable, and the reason for the marked diffe
 
 ## Materials and methods
 
-## Statistical analysis
+### Statistical analysis
 
 To quantify pelvic evolution in Ornithischia, we measured femoral length, APP (from the anterior margin of the acetabulum), pubic rod (from in line with the anterior margin of the acetabulum to the distalmost tip), and ischial (the contour of the posterior surface that initiates on the iliac peduncle and terminates at the middle of the distalmost point) lengths for a phylogenetically broad sample of ornithischian taxa (Appendix 1—table 1) through direct measurements of specimens, high-resolution photos, and published sources. We measured specimens either by hand, using digital callipers and measuring tapes, digitally from 3D SRμCT data, or from high-resolution photos of specimens where scale bars were available and accurate. To normalize scale, we log10-transformed all measurements. We selected pubic and ischial measurements because of their hypothesized relationship with lung ventilation (in particular, plesiomorphic models like cuirassal breathing; Carrier and Farmer, 2000). We chose femoral length as a proxy for body mass, even though it has lower correlation coefficients than femoral circumference for body mass estimation (Campione and Evans, 2012; Anderson et al., 1985). We used it here because circumference measurements were unavailable for most of our specimens and because femoral length is frequently used in the literature and therefore practical to collect (e.g., Christiansen and Fariña †, 2004). Although it is unlikely that this choice greatly affects the results we present here, stegosaurs appear to have apomorphically long femora that are likely to affect body mass corrections for these taxa specifically; we accept this localized trade-off in error for the benefit of standardized measurements across our sampling of Ornithischia. We analysed these data using scripts written in the R statistical software language (R Development Core Team, 2013) and its associated packages ‘ape’ (Paradis et al., 2004), ‘ggplot2’ (Wickham, 2016), ‘phytools’ (Revell, 2012), ‘strap’ (Bell and Lloyd, 2015), ‘geiger’ (Harmon et al., 2008), and ‘nlme’ (Pinheiro et al., 2012).
 
 To investigate evolutionary patterns in the APP, pubic rod, and ischium, we used pGLS regressions of these pelvic measurements against femoral length and calculated residuals from these regressions. This is a common means of assessing phylogenetic and size-corrected variance in morphological datasets and can be used together with comparative phylogenetic methods (Revell, 2009; Hunt and Carrano, 2010). We used the residuals as continuous characters to both qualitatively map on the ornithischian tree and to assess the fit of a variety of macroevolutionary models implemented in the R package Geiger (Harmon et al., 2008). We used the corrected AICc and computed likelihood ratio tests to assess whether the preferred model is significantly better than the next-best model. ‘Source code 1’ is R code to reproduce statistical analysis; ‘Source code 2 and 3’ are phylogenetic tree files in .phy and .nex formats, respectively; and ‘Source code 4’ is ‘First Appearance Date’ and ‘Last Appearance Date’ data of taxa analysed, obtained from the Paleobiology Database (paleobiodb.org).
 
-## Geological context
+### Geological context
 
 AM 4766 was recovered from the upper Elliot Formation (uEF) in strata that correlate with the Massospondylus Assemblage Zone (Viglietti et al., 2020) and is likely Sinemurian in age (Bordy et al., 2020). The specimen was recovered from a light red, clast-rich, very fine-grained sandstone that is consistent with palaeo-environmental reconstructions of the uEF as a seasonally wet, fluvio-lacustrine system (Bordy et al., 2004a). Further details of the geological context are elaborated in Appendix 1 and figured in Appendix 1—figures 1 and 2.
 
-## Digital specimen reconstruction
+### Digital specimen reconstruction
 
 Volume files of AM 4766 were reconstructed using a combination of manual and semi-automated tools (i.e., pen tool, interpolate function) in Avizo Lite version 9.0 (FEI Visualization Sciences Group, Merignac, France), with various segmented regions stitched together in VGStudio Max version 3.2 (Volume Graphics, Heidelberg Germany). Detailed synchrotron scanning and data processing protocols are outlined in Appendix 1.
 
-## Conclusion
+### Conclusion
 
 An exceptionally preserved specimen of the ornithischian dinosaur H. tucki reveals novel features of the anatomy of this taxon. Some of these features were previously unknown in Ornithischia, including a complete gastral basket with thin, single-element gastralia; bizarre, paddle-like sternal ribs with prominent condylar articular surfaces; and an apomorphic pair of well-developed sternal plates. Other features present in the specimen have a sporadic distribution in Ornithischia, including an ossified suprascapula and clavicles. These findings support the basal position of H. tucki and further support its importance as a transitional taxon showing the early evolution of iconic ornithischian anatomical features. Using SRμCT scans of the specimen, we were also able to observe in H. tucki the lack of PSP in the vertebral column, a smooth posterior thoracic ceiling, and a relatively small APP. We conducted a quantitative analysis of relative sizes of pelvic girdle elements and showed that the APP alone evolved in a manner consistent with the predictions of an ‘Early-Burst’ model, increasing markedly in proportional size early in the diversification of Ornithischia, and then remaining relatively large in all ornithischian lineages, with lower rates of change. These results are explained by a model for the evolution of the ornithischian ventilatory apparatus, in which the lineage undergoes a shift from a hypaxial-dominated system of volumetric change to a system where the lungs are ventilated by a novel pelvic muscle attached to the APP – a muscle functionally analogous to the dorsal component of M. diaphragmaticus of extant crocodilians. H. tucki preserves evidence for a critical transition in dinosaurs, demonstrating how key innovations evolve, showing how they can have pervasive effects on multiple anatomical systems, and providing a possible explanation for the success and longevity of a major lineage of dinosaurian herbivores.

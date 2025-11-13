@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.35832.001 Fundamental gaps remain in our understanding of how immunity to malaria develops. We used detailed clinical and entomological data from parallel cohort studies conducted across the malaria transmission spectrum in Uganda to quantify the development of immunity against symptomatic P. falciparum as a function of age and transmission intensity. We focus on: anti-parasite immunity (i.e. ability to control parasite densities) and anti-disease immunity (i.e. ability to tolerate higher parasite densities without fever). Our findings suggest a strong effect of age on both types of immunity, not explained by cumulative-exposure. They also show an independent effect of exposure, where children living in moderate/high transmission settings develop immunity faster as transmission increases. Surprisingly, children in the lowest transmission setting appear to develop immunity more efficiently than those living in moderate transmission settings. Anti-parasite and anti-disease immunity develop in parallel, reducing the probability of experiencing symptomatic malaria upon each subsequent P. falciparum infection.
+Fundamental gaps remain in our understanding of how immunity to malaria develops. We used detailed clinical and entomological data from parallel cohort studies conducted across the malaria transmission spectrum in Uganda to quantify the development of immunity against symptomatic P. falciparum as a function of age and transmission intensity. We focus on: anti-parasite immunity (i.e. ability to control parasite densities) and anti-disease immunity (i.e. ability to tolerate higher parasite densities without fever). Our findings suggest a strong effect of age on both types of immunity, not explained by cumulative-exposure. They also show an independent effect of exposure, where children living in moderate/high transmission settings develop immunity faster as transmission increases. Surprisingly, children in the lowest transmission setting appear to develop immunity more efficiently than those living in moderate transmission settings. Anti-parasite and anti-disease immunity develop in parallel, reducing the probability of experiencing symptomatic malaria upon each subsequent P. falciparum infection.
 
 ## Introduction
 
@@ -44,13 +44,120 @@ Here, we use data from three parallel cohort studies conducted across the spectr
 
 The three cohorts enrolled a total of 1021 children aged 6 months to 10 years from 331 randomly chosen households across the three study sites. This analysis was limited to data from 773 children who experienced at least one patent P. falciparum infection between August 2011 and November 2014. Table 1 summarizes the general characteristics of the participants included in this analysis.
 
+**Table 1.**
+ Characteristics of the study participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Nagongera</th>
+      <th>Kihihi</th>
+      <th>Walukuba</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of households</td>
+      <td>106</td>
+      <td>100</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>Number of children</td>
+      <td>329</td>
+      <td>305</td>
+      <td>139</td>
+    </tr>
+    <tr>
+      <td>Female, n (%)</td>
+      <td>151(46)</td>
+      <td>150 (49)</td>
+      <td>66 (47)</td>
+    </tr>
+    <tr>
+      <td>Mean age at enrollment, years (sd)</td>
+      <td>4.4 (2.7)</td>
+      <td>4.6 (2.6)</td>
+      <td>4.3 (2.6)</td>
+    </tr>
+    <tr>
+      <td>Mean follow up time, months (range)</td>
+      <td>23.5 (0, 38.8)</td>
+      <td>24.4 (0.8, 38.8)</td>
+      <td>22.1 (2.3, 3.9)</td>
+    </tr>
+    <tr>
+      <td>Symptomatic malaria</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Symptomatic Malaria episodes, n</td>
+      <td>2447</td>
+      <td>1555</td>
+      <td>207</td>
+    </tr>
+    <tr>
+      <td>Median number of symptomatic malaria episodes/child, n (range)</td>
+      <td>6 (0, 29)</td>
+      <td>4 (0, 30)</td>
+      <td>1 (0. 12)</td>
+    </tr>
+    <tr>
+      <td>Median incidence of symptomatic malaria episodes ppy (range)</td>
+      <td>2.6 (0, 10)</td>
+      <td>1.6 (0, 15.2)</td>
+      <td>0.6 (0, 5.1)</td>
+    </tr>
+    <tr>
+      <td>Asymptomatic parasitemia</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asymptomatic parasitemia episodes, n</td>
+      <td>955</td>
+      <td>331</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>Median number of asymptomatic parasitemia episode/child, n (range)</td>
+      <td>2 (0, 12)</td>
+      <td>0 (0, 11)</td>
+      <td>1 (0, 10)</td>
+    </tr>
+    <tr>
+      <td>Median prevalence of asymptomatic parasitemia (range)</td>
+      <td>0.12 (0.07–0.17)</td>
+      <td>0.05 (0.02–0.10)</td>
+      <td>0.07 (0.03–0.11)</td>
+    </tr>
+    <tr>
+      <td>Household malaria exposure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Household aEIR, median (range)</td>
+      <td>51 (10–582)</td>
+      <td>7.7 (3.6–47)</td>
+      <td>2.1 (1.5–8.1)</td>
+    </tr>
+  </tbody>
+</table>
+
 Participants living in Nagongera experienced the highest incidences of symptomatic malaria (median 2.6 episodes per person year), followed by those living in Kihihi (median 1.6 episodes per person year) and Walukuba (median 0.6 episodes per person year) (Table 1 and Figure 1). These incidences were consistent with results from monthly entomological surveys conducted in all cohort households, with significantly higher annual entomological inoculation rates (aEIR) recorded in Nagongera (median 51 infectious bites per year, range 10–582) as compared to Kihihi (median 8 infectious bites per year, range 4–47) and Walukuba (median 2 infectious bites per year, range 1–8). Interestingly, prevalence of asymptomatic parasitemia did not follow this same relationship; the prevalence of asymptomatic parasitemia was highest in Nagongera, and prevalences in the lower transmission sites were similar.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig1-v2.jpg)
 
 **Figure 1.:** (a) and prevalence of asymptomatic parasitemia (b) in the three study sites as a function of age, modeled using generalized additive models (GAMS). Shaded areas represent 95% confidence bounds.
 
-## aEIR as a metric of individual exposure
+### aEIR as a metric of individual exposure
 
 To assess whether entomological metrics were a good indicator of individual exposure to P. falciparum, we correlated the measured annual EIRs (aEIR) for each household (Figure 2a) with estimates of the average individual hazard of infection (Figure 2b). Individual hazards were estimated by fitting time-to-event models to the incidence data from each site. We found a significant correlation between these two independent metrics of exposure across sites (R2 = 0.47, p<0.001). aEIR explained less of the variance between individuals within each site: Nagongera (R2 = 0.03, p=0.004); Kihihi (R2 = 0.12, p<0.001); Walukuba (0.01, p=0.05).
 
@@ -58,7 +165,7 @@ To assess whether entomological metrics were a good indicator of individual expo
 
 **Figure 2.:** (a) Distribution of the average annual entomological inoculation rate (aEIR) experienced by the study households in the three study sites. (b) Correlation between the measured aEIRs and the estimated individual hazards of infection.
 
-## Anti-parasite immunity
+### Anti-parasite immunity
 
 Parasite densities developed upon infection decreased with increasing age in all settings and for both symptomatic (passive detection) and asymptomatic (detected during routine visits) infections. Despite the large variability in parasite densities recorded within and between individuals, this trend is evident in the raw data (Figure 3a). A trend toward lower parasite densities was also observed among individuals living in settings with higher aEIRs (Nagongera), as compared to settings with lower aEIR (Kihihi and Walukuba).
 
@@ -70,39 +177,180 @@ We considered multiple candidate models to describe the association between para
 
 In moderate and high transmission settings (households with aEIR >5), increasing age and increasing exposure were independently and linearly associated with decreases in the parasite densities (Table 2). On average, parasite densities decreased by a factor of 0.76 (95%CI 0.75–0.77) for each additional year of age and by a factor of 0.73 (95%CI 0.70–0.76) for each two-fold increase in the aEIR. The relationship was less evident for the lower transmission households (aEIR <5). In these settings, there continued to be a decreasing (although smaller) association with age, but the expected parasite densities at any given age were equal or lower to those observed in the higher exposure (aEIR >10) settings.
 
+**Table 2.**
+ Results of linear models quantifying the association between age, aEIR and immunity outcomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All data</th>
+      <th>aEIR ≥ 5 (n = 5047)</th>
+      <th>aEIR &lt; 5 (n = 593)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-parasite immunity</td>
+      <td colspan="3">Fold change in parasite density (95% CI)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>0.78 (0.77, 0.79)</td>
+      <td>0.76 (0.75, 0.77)</td>
+      <td>0.87 (0.83, 0.90)</td>
+    </tr>
+    <tr>
+      <td>Log2 aEIR</td>
+      <td>0.82 (0.79, 0.84)</td>
+      <td>0.73 (0.69, 0.77)</td>
+      <td>1.92 (1.69, 2.15)</td>
+    </tr>
+    <tr>
+      <td>Anti-disease immunity*</td>
+      <td colspan="3">Change in objective temperature C (95% CI)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>−0.07 (–0.06, –0.08)</td>
+      <td>−0.08 (–0.07, –0.1)</td>
+      <td>−0.04 (–0.07, –0.01)</td>
+    </tr>
+    <tr>
+      <td>Log2 aEIR</td>
+      <td>−0.02 (–0.04, 0.0)</td>
+      <td>−0.07 (–0.05, –0.1)</td>
+      <td>0.27 (0.11, 0.44)</td>
+    </tr>
+    <tr>
+      <td>Overall immunity against symptomatic malaria</td>
+      <td colspan="3">Odds ratio of symptomatic disease (95% CI)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>0.78 (0.75, 0.82)</td>
+      <td>0.77 (0.74, 0.80)</td>
+      <td>0.90 (0.83, 0.99)</td>
+    </tr>
+    <tr>
+      <td>Log2 aEIR</td>
+      <td>0.91 (0.74, 1.13)</td>
+      <td>0.62 (0.48, 0.80)</td>
+      <td>3.83 (1.39, 10.6)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Model adjusted as well for Log parasite density._
+
 Figures 4a and 5a present the predicted parasite densities, as a function of age and aEIR, according to the best fitting model. While an individual aged 1 year exposed to an aEIR of 10 is expected to develop a parasite density of 14,610 parasites/μL (95% CI 5924–36,031 parasites/μL) upon infection, the expected parasite density goes down to 3237 parasites/μL (95% CI 1381–7586 parasites/μL) by age 10 years. In contrast, the expected parasite density in an individual living in a setting with aEIR of 150 will be similar at age 1 year (13,071 parasites/μL (95% CI 5256–32,503 parasites/μL)), but significantly lower by age 10 years (999 parasites/μL (95% CI 398–2508 parasites/μL)).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig4-v2.jpg)
 
 **Figure 4.:** (a), anti-disease immunity (b) and overall immunity against symptomatic malaria (c). Each plot shows, for specific ages and aEIRs, the expected parasite density (/μL) (a), objective temperature given a density of 40,000 parasites/μL (b) and the probability of developing symptomatic malaria upon infection (c), estimated using the best fitting model. 95% confidence intervals of the estimates are also shown.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-v2.jpg)
+
+**Figure 5.:** (a) and anti-disease immunity (b). These results are similar to those presented in Figure 4, but for the full range of ages and aEIRs included in the data. Panel (a) shows expected parasite densities (parasites/μL, log 10) upon infection for different ages and levels of exposure (aEIR). Panel (b) shows the ‘fever threshold’ or ‘pyrogenic density’, the minimum parasite densities (parasites/μL, log 10) associated with fever (temperature 38°C or greater), again as a function of age and exposure.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Left panel (a) is equivalent to Figure 5a, and shows the expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Panel (b) shows the lower and upper 95% confidence bounds. Panel (c) shows the width of the confidence intervals (2*1.96*standard error) for different levels of age and exposure.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** To further explore the independent contribution of age on the development of anti-parasite and anti-disease immunity, we fit models where, instead of adjusting for aEIR, we explicitly adjusted for the cumulative aEIR (cumEIR) as a metric of cumulative exposure. Cumulative aEIR was calculated as the product of age and aEIR. We fit the following models. Anti-parasite immunity. $ Log_{10}(Parasite density)_{ijk}$ $= f(age_{ijk}, Log_{2}cumEIR_{ijk})+u_{i}+\gamma_{j}$. Anti-disease immunity. $Temperature_{ijk}=f(age_{ijk}, Log_{2}cumEIR_{ijk},$ $Log_{10}Parasite density_{ijk})+u_{i}+\gamma_{j}$. Figure shows the results of these models. These results are similar to those presented in Figure 5, but adjusted for cumulative aEIR rather than for EIR. Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of cumulative exposure. Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** quantifying anti-parasite (left) and anti-disease immunity (right). These results are similar to those presented in Figure 5, but adjusted for the number of P. falciparum positive visits in the last 3 months. Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). Appendix 2 shows the estimated coefficients for these and additional models exploring the impact of recent exposure.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Since it is known that the probability of developing fever (not due to malaria) decreases with age, we performed sensitivity analyses where we adjusted for the probability of non-malaria fevers. Using data from instances when participants consulted for fever and/or were objectively febrile but were found to be smear negative, we fit a model to estimate the monthly probability of non-malaria fever as a function of age. This model was specified as: $LogOddsnonmalariafever_{ij}=f(age_{ij})$ where i is an index for individuals and j is an index for month. The model also included a random effect to account for clustering within individuals. Figure shows the distribution of estimated probabilities of non-malaria for the different age-groups in the dataset. We then used this model to predict the probability of non-malaria fever for each individual at each time point, and re-estimated our anti-parasite and anti-disease models adjusting for this probability (on the logit scale). See Figure 5—figure supplement 5.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Results of models quantifying anti-parasite (left) and anti-disease immunity (right). Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). These results are similar to those presented in Figure 5, but adjusting for the probability of non-malaria fever experienced by the different age-groups. See Figure 5—figure supplement 4.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Since the study design only included 'routine' samples collections every 3 months, it is likely that we missed several events of asymptomatic infection, particularly in the moderate and high transmission settings. Moreover, since infections were detected using microscopy, we lack knowledge about the complexity of each infection. To account for the lower probability of observing asymptomatic, as compared to symptomatic infections, we conducted sensitivity analyses where we up-weighted asymptomatic observations to account for potentially missed infections. Weights were calculated as the expected number of infections experienced by the participant during the period of time comprised between the last visit (where the participant was tested for parasites) and the current visit. The expected number of infections (M) were derived using estimates of the average daily individual hazard of infection $(\lambda)$ as. $M=D(1-exp⁡-\lambda)$ where D is the number of days between the last visit when the participant was tested and $(1-exp⁡-\lambda)$ is the daily probability of infection. Figure shows results of models quantifying anti-parasite (left) and anti-disease immunity (right). Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). These results are similar to those presented in Figure 5, but weighted for the probability of observation of asymptomatic infections.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** Since we don’t have data on the genotypes of parasites, it is also possible that consecutive asymptomatic infections represent persistent, rather than new infections. To assess the potential impact of including these persistent infections in the analyses, we conducted sensitivity analyses where we limited the dataset to ‘incident’ infections. We considered the following samples as belonging to ‘Incident’ infections. All instances of symptomatic malaria infection not preceded by an asymptomatic infection within 10 days. All instances of asymptomatic infection when. The previous blood smear (from routine or active surveillance) was negative. The previous blood smear (from routine surveillance) was positive, but the participant received malaria treatment between that visit and the current one. Limiting the analyses to incident infections implied excluding 700/1431 instances of asymptomatic parasitemia. Figure shows results of models quantifying anti-parasite (left) and anti-disease immunity (right). Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). These results are similar to those presented in Figure 5, but limiting the dataset to ‘incident’ infections.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp8-v2.jpg)
+
+**Figure 5—figure supplement 8.:** This analysis only included data from 618/773 individuals without the sickle hemoglobin mutation (β globin E6V). Figure shows results of models quantifying anti-parasite (left) and anti-disease immunity (right). Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). These results are similar to those presented in Figure 5, but limited to children without the sickle hemoglobin mutation (β globin E6V).
+
+![Figure 5—figure supplement 9.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp9-v2.jpg)
+
+**Figure 5—figure supplement 9.:** This analysis only included data from 634/773 individuals living in Tororo (Nagongera) and Kanungu (Kihihi). Figure shows results of models quantifying anti-parasite (left) and anti-disease immunity (right). Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). These results are similar to those presented in Figure 5, but limited to children living in Tororo (Nagongera) and Kanungu (Kihihi).
+
+![Figure 5—figure supplement 10.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp10-v2.jpg)
+
+**Figure 5—figure supplement 10.:** This analysis only included data from 554/773 individuals living in households with aEIR >5. Figure shows results of models quantifying anti-parasite (left) and anti-disease immunity (right). Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). These results are similar to those presented in Figure 5, but limited to children living in households with aEIR ≥5.
+
+![Figure 5—figure supplement 11.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp11-v2.jpg)
+
+**Figure 5—figure supplement 11.:** In our main analysis, the metric of exposure used was the mean aEIR over the whole study period, as a proxy of the mean exposure that each participant has experienced over their life-time. We performed a sensitivity analysis where instead, aEIR is calculated as the mean aEIR up to each point in time. This analysis only excluded data from 344/5640 observations where we did not have prior exposure information. Figure shows results of models quantifying anti-parasite (left) and anti-disease immunity (right). Left panel shows expected parasite densities (log 10, parasites/μL) after infection at different ages and levels of exposure (aEIR). Right panel shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). These results are similar to those presented in Figure 5, but with an alternative metric of aEIR as described above.
+
+![Figure 5—figure supplement 12.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp12-v2.jpg)
+
+**Figure 5—figure supplement 12.:** Figure showing predicted individual trajectories in the development of anti-parasite (a) and anti-disease (b) for a sample of study participants from each study site. (a) shows expected parasite densities (parasites/μL, log 10) after infection at different ages and levels of exposure (aEIR). (b) shows the expected fever thresholds (parasite densities required to develop a temperature 38°C or greater). Each line represents the predicted trajectory, but the solid portion represents the period of time when the individual contributed to the dataset.
+
+![Figure 5—figure supplement 13.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig5-figsupp13-v2.jpg)
+
+**Figure 5—figure supplement 13.:** Residual plots and response vs. fitted plots for the best fitting models (Models AP4 and AD4).
+
 To test whether the observed associations with age could be explained by the cumulative exposure over a life time, we also fit models where, instead of adjusting for the aEIR, we adjusted for the cumulative number of infectious bites (i.e. the product of age and aEIR) (Figure 5—figure supplement 2). Results from these models are consistent with a smaller, yet independent effect of age on the development of anti-parasite immunity; for any given level of cumulative exposure, each additional year of life was associated with decreases in parasite densities by a factor of 0.82 (95%CI 0.81–0.85).
 
-## Anti-disease immunity
+### Anti-disease immunity
 
 We define anti-disease immunity as the ability to tolerate a given parasite density without developing objective fever. Thus, we were interested in modeling temperatures recorded at specific parasite densities, as a function of age and aEIR. Consistent with models characterizing anti-parasite immunity, models including smooth effects and interactions fitted the data significantly better than simpler models.
 
 As expected, we found a strong association between parasite densities and objective temperature (Figure 6—figure supplement 1). Increases in parasite densities above 1000 parasites/μL were associated with higher expected temperatures across ages and transmission settings. In addition, we found a negative association between objective temperature at a given parasite density and age (Figures 3b, 4b and 6). In moderate and high transmission settings (aEIR >5), the objective temperature at a given parasite density decreased on average by 0.08°C (95% CI 0.07–0.10°C) for each additional year of life (Table 2). Thus, while the expected temperature for a child aged 1 year living in a setting with aEIR of 10 with a parasite density of 40,000 would be 38.8°C (95% CI 38.5–39.2°C), the expected temperature would decrease to 37.6°C (95% CI 37.3–38.0°C) if the same child experienced the infection at age 10 years (Figures 4b and 6). This association was similar even when adjusting for cumulative exposure and for the differences in incidence of non-malarial fever across age-groups (Figure 5—figure supplement 5).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig6-v2.jpg)
+
+**Figure 6.:** Each panel shows how the expected objective temperature (°C) varies as a function of age and parasite density, for different transmission settings. (a) aEIR = 2; (b) aEIR = 10; (c) aEIR = 50; (d) aEIR = 200. Contours indicating the fever threshold (38°C) are also shown. Confidence bounds for these plots are presented in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Left panel (a) is equivalent to Figure 6c, and shows how the expected objective temperature (°C) varies as a function of age and parasite density, in a setting with aEIR of 50. Panel (b) shows the lower and upper 95% confidence bounds. Panel (c) shows the width of the confidence intervals (2*1.96*standard error) for different levels of age and exposure.
+
 Similar to the anti-parasite immunity results described above, the observed association between exposure level and anti-disease immunity was less evident than the association with age (Figures 3b, 4b and 6). For moderate and high transmission settings (aEIR 5 to 300), there was a linear negative association between objective temperature at a given parasite density and aEIR. The objective temperature decreased by 0.07°C (95% CI 0.05–0.10°C) for each two-fold increase in aEIR. However, the relationship did not follow this trend for lower transmission settings (Table 2). Children living in the lowest transmission settings (aEIR 1 to 5) appeared to tolerate higher parasite densities than children living in moderate transmission settings (aEIR 5 to 10).
 
 As an alternative way to characterize anti-disease immunity, we used our best fitting model to predict the fever threshold, defined as the minimum parasite density associated with objective fever (temperature >38°C), across levels of age and aEIR (Figure 5b). This quantity is often referred to as the ‘pyrogenic density’. Results from this analysis show that, for settings with moderate and high transmission (aEIR >5), the fever threshold increases both with age and increasing exposure. Thus, while a 1-year-old child living in a setting with aEIR of 10 presenting with a parasite density as low as 3747 parasites/μL (95% CI 777–11,129 parasites/μL) will be expected to be febrile, children older than 6 years of age exposed to very high transmission (aEIR 150) might be afebrile even with parasite densities higher than 60,000 parasites/μL.
 
-## Overall immunity against symptomatic malaria
+### Overall immunity against symptomatic malaria
 
 Finally, to characterize the association between age and aEIR on the overall risk of developing symptomatic malaria upon infection (i.e. the combined effect of anti-parasite and anti-disease immunity), we fit a series of models where the outcome of each independent microscopically detectable infection (i.e. symptomatic malaria or asymptomatic parasitemia) was modeled as a function of age and aEIR. Models allowing smooth relationships, with or without two-way interactions, fit the data equally well.
 
 Results from this analysis are consistent with results from the anti-parasite and anti-disease models (Figure 7). While young children living in low transmission settings (aEIR = 5) develop symptomatic malaria in most their infections, the probability that an infection results in symptomatic malaria decreases as a function of age and exposure. The expected probability of symptomatic disease for a child aged 1 year living in a setting with aEIR of 50 is 0.92 (95% CI 0.79–0.97), but it decreases to 0.51 (95% CI 0.29–0.73) by age 10 years.
 
-## Impact of recent infection on immunity
+![Figure 7.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig7-v2.jpg)
+
+**Figure 7.:** Colors represent the expected probability of developing symptomatic malaria upon infection. Confidence bounds for these plots are presented in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35832/elife-35832-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Left panel (a) is equivalent to Figure 7. Colors represent the expected probability of developing symptomatic malaria upon infection, as a function of age and exposure. Panel (b) shows the lower and upper 95% confidence bounds. Panel (c) shows the width of the confidence intervals (2*1.96*standard error), on the logit scale, for different levels of age and exposure.
+
+### Impact of recent infection on immunity
 
 To assess whether recent P. falciparum infection was associated with different levels of anti-parasite and anti-disease immunity, we used data on the recent malaria history of each individual to fit models adjusted for number of P.falciparum positive visits in the past 3 and 6 months. We found no association between the number of recent malaria infections and our outcomes of interest (Appendix 2, figure 5—figure supplement 3).
 
-## Development of anti-parasite and anti-disease immunity at the individual level
+### Development of anti-parasite and anti-disease immunity at the individual level
 
 Models that included random effects at the individual and household levels outperformed models that assumed independence of observations, consistent with large heterogeneity between individuals in the development of anti-parasite, anti-disease and overall immunity against symptomatic malaria. To illustrate this heterogeneity, we used the best fitting model to predict the trajectories of a subset of individuals with respect to anti-parasite and anti-disease immunity, as a function of age and aEIR (Figure 5—figure supplement 12).
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 Our main analyses include data from all visits regardless of their type (routine vs passive case detection). Thus, the expected values modeled here may be biased by the frequency of active vs passive episodes detected. In particular, it is possible that we have under-sampled the instances of asymptomatic infection, and thus, our estimates of the expected parasite densities may be an over-estimate of those present in the population. Similarly, it is also possible that consecutive asymptomatic infections represent persistent, rather than new infections. To address these limitations, we performed sensitivity analyses where we (a) up-weighted the episodes of asymptomatic parasitemia, to account for potentially unobserved asymptomatic infections and (b) included only ‘incident’ asymptomatic infections, under the assumption that subsequent asymptomatic samples represented persistent (rather than new) infections. Results from these analyses were qualitatively identical to the main analysis reported here and are presented in the supplementary material (Figure 5—figure supplements 6 and 7).
 
@@ -122,11 +370,11 @@ Prior studies have tried to model the processes driving acquisition of clinical 
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 The study protocol was reviewed and approved by the Makerere University School of Medicine Research and Ethics Committee (Identification numbers 2011–149 and 2011–167, the London School of Hygiene and Tropical Medicine Ethics Committee (Identification numbers 5943 and 5944), the Durham University School of Biological and Biomedical Sciences Ethics Committee (PRISM Entomology Uganda), the University of California, San Francisco, Committee on Human Research (Identification numbers 11–05539 and 11–05995) and the Uganda National Council for Science and Technology (Identification numbers HS-978 and HS-1019). All parents/guardians were asked to provide written informed consent at the time of enrollment.
 
-## Data
+### Data
 
 We used data from three parallel cohort studies conducted in Uganda in sub-counties chosen to represent varied malaria transmission (Kamya et al., 2015). Walukuba, in Jinja district, is a peri-urban area near Lake Victoria that has the lowest transmission among the three (annual entomological inoculation rate (aEIR) estimated to be 2.8 [Kamya et al., 2015]). Kihihi, in Kanungu district, is a rural area in southwestern Uganda characterized by moderate transmission (aEIR = 32). Nagongera, Tororo district, is a rural area in southeastern Uganda with the highest transmission (aEIR = 310) (Kamya et al., 2015; Kilama et al., 2014). Details on how the study households and participants were selected has been described elsewhere (Kamya et al., 2015). Briefly, all households were enumerated, and then approximately 100 households were selected at random from each site. Between August and September 2011, all children from these households aged between 6 months and 10 years who met eligibility criteria were invited to participate. As the cohorts were dynamic, additional children from participating households were invited to participate if they became eligible while the study was ongoing. Unless participants were withdrawn from the study either voluntarily or because they failed to comply with study visits, they were followed-up until they reached 11 years of age. Children from 31 randomly selected additional households were enrolled between August and October 2013 to replace households in which all study participants had been withdrawn. For this analysis, we used data collected from visits between August 2011 and November 2014.
 
@@ -136,7 +384,7 @@ If the smear was positive, the patient was diagnosed with symptomatic malaria an
 
 Entomological surveys were also conducted every month at all study households. During these surveys, mosquitoes were collected using miniature CDC light traps (Model 512; John W. Hock Company). Established taxonomic keys were used to identify female Anopheles mosquitoes. Individual mosquitoes were tested for sporozoites using an ELISA technique (Kilama et al., 2014). All female Anopheles mosquitoes captured in Walukuba and Kihihi were tested; in Nagongera testing was limited to 50 randomly selected female Anopheles mosquitoes per household per night due to the large numbers collected. Therefore, for each household and/or site it was possible to calculate multiple entomological metrics, including the average human biting rate (average number of female Anopheles mosquitoes caught in a household per day), the average sporozoite rate (the average proportion of mosquitos that tested positive for Plasmodium falciparum) and the entomological inoculation rate (EIR, the product of the household human biting rate and the site sporozoite rate).
 
-## Statistical analyses
+### Statistical analyses
 
 The purpose of these analyses was to model and quantify the development of immunity against symptomatic malaria, as a function of age and exposure, measured by the household EIR.
 
@@ -144,15 +392,29 @@ We modeled two specific types of immunity that have been previously described as
 
 In order to model the association between the outcomes and covariates of interest we used generalized additive models (gams). Gams provide a good framework, as they allow for smooth non-linear relationships. Details on the specific models explored are provided in the supplementary material (Appendix 1). In summary, the models followed the following form.
 
-(1) Anti-parasite immunityLog10(Parasite density)ijk=f(ageijk, Log2aEIRj)+ui+γj
+(1) Anti-parasite immunity
 
-(2) Anti-disease immunityTemperatureijk=f(ageijk, Log2aEIRj, Log10Parasite densityijk)+ui+γj
+$$
+Log_{10}(Parasite density)_{ijk}=f(age_{ijk}, Log_{2}aEIR_{j})+u_{i}+\gamma_{j}
+$$
 
-(3) Overall immunity against symptomatic malariaP(symptomatic malaria upon infection)ijk=f(ageijk, Log2aEIRj)+ui+γjwhere i is an index for individuals, j for households and k for specific visits. Thus, ageijk represents the age of child i from household j during visit k, and aEIRj represents the average annual EIR recorded for household j. We included the EIR as an average (time-invariant) covariate, as we were interested in modeling the impact of the average exposure to malaria over time on the development of clinical immunity. Therefore, our model implicitly assumes that malaria transmission has been relatively stable at these three sites. To account for lack of independence, all models included random effects at the individual (ui) and household (γi) levels.
+(2) Anti-disease immunity
+
+$$
+Temperature_{ijk}=f(age_{ijk}, Log_{2}aEIR_{j,} Log_{10}Parasite density_{ijk})+u_{i}+\gamma_{j}
+$$
+
+(3) Overall immunity against symptomatic malaria
+
+$$
+P(symptomatic malaria upon infection)_{ijk}=f(age_{ijk}, Log_{2}aEIR_{j})+u_{i}+\gamma_{j}
+$$
+
+where i is an index for individuals, j for households and k for specific visits. Thus, $age_{ijk}$ represents the age of child i from household j during visit k, and $aEIR_{j}$ represents the average annual EIR recorded for household j. We included the EIR as an average (time-invariant) covariate, as we were interested in modeling the impact of the average exposure to malaria over time on the development of clinical immunity. Therefore, our model implicitly assumes that malaria transmission has been relatively stable at these three sites. To account for lack of independence, all models included random effects at the individual (ui) and household (γi) levels.
 
 All our primary analyses included the full dataset. However, since results were consistent with a non-monotonic relationship between aEIR and the outcomes of interest, we also fit models stratified by aEIR (aEIR ≥5 vs. aEIR <5). All models were fitted in the R statistical framework using package mgcv (R Core Team, 2016). Best fitting models were selected based on Akaike’s Informaiton Criterion, but changes in the percent deviance explained are also presented.
 
-## Code and data availability
+### Code and data availability
 
 All the data used for these analyses as well as the R code used to reproduce the main study findings are available at https://github.com/isabelrodbar/immunity (Rodriguez-Barraquer, 2018; (copy archived at https://github.com/elifesciences-publications/immunity). Complete data from the 3 cohort studies are available in the ClinEpiDB website (https://clinepidb.org/ce/app).
 

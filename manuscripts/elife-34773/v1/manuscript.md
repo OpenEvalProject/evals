@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.34773.001 Borophagine canids have long been hypothesized to be North American ecological ‘avatars’ of living hyenas in Africa and Asia, but direct fossil evidence of hyena-like bone consumption is hitherto unknown. We report rare coprolites (fossilized feces) of Borophagus parvus from the late Miocene of California and, for the first time, describe unambiguous evidence that these predatory canids ingested large amounts of bone. Surface morphology, micro-CT analyses, and contextual information reveal (1) droppings in concentrations signifying scent-marking behavior, similar to latrines used by living social carnivorans; (2) routine consumption of skeletons; (3) undissolved bones inside coprolites indicating gastrointestinal similarity to modern striped and brown hyenas; (4) B. parvus body weight of ~24 kg, reaching sizes of obligatory large-prey hunters; and (5) prey size ranging ~35–100 kg. This combination of traits suggests that bone-crushing Borophagus potentially hunted in collaborative social groups and occupied a niche no longer present in North American ecosystems.
+Borophagine canids have long been hypothesized to be North American ecological ‘avatars’ of living hyenas in Africa and Asia, but direct fossil evidence of hyena-like bone consumption is hitherto unknown. We report rare coprolites (fossilized feces) of Borophagus parvus from the late Miocene of California and, for the first time, describe unambiguous evidence that these predatory canids ingested large amounts of bone. Surface morphology, micro-CT analyses, and contextual information reveal (1) droppings in concentrations signifying scent-marking behavior, similar to latrines used by living social carnivorans; (2) routine consumption of skeletons; (3) undissolved bones inside coprolites indicating gastrointestinal similarity to modern striped and brown hyenas; (4) B. parvus body weight of ~24 kg, reaching sizes of obligatory large-prey hunters; and (5) prey size ranging ~35–100 kg. This combination of traits suggests that bone-crushing Borophagus potentially hunted in collaborative social groups and occupied a niche no longer present in North American ecosystems.
 
 ## Introduction
 
@@ -32,13 +32,13 @@ Several lineages of dogs (family Canidae) and hyenas (family Hyaenidae) have ind
 
 We analyzed a new sample of coprolites recently discovered from the Mehrten Formation (latest Miocene, 5.3–6.4 Ma) in Stanislaus County, California. Numerous bone fragments on the external surface and inside the coprolites strongly suggest that they were produced by Borophagus, which is amply represented by body fossils at the same fossil-producing area, thereby affording a rare opportunity to directly examine the diet of an extinct bone-crushing top predator. Despite improvements in our understanding of the biomechanics of the functional convergence of craniodental adaptations between Eurasian-African hyaenids and North American borophagine canids (Werdelin, 1989; Tseng and Wang, 2010; Tseng and Wang, 2011), dietary inferences were previously made only from the fossilized bones of these predators. The discovery of coprolites thus offers the first glimpse into the food ingested and excreted by these ‘hyaenoid dogs’ (Simpson, 1945), as well as several traits related to their territorial behavior, social hunting, and bone digestion that were previously unapproachable. This study examines 14 coprolites recovered from two localities in the Turlock Lake area, as well as their presumed producer, Borophagus parvus. Our findings provide new insights into the paleoecology of this group of top predators and refine their position in the food web at the end of the Miocene Epoch in North America.
 
-## Institutional abbreviations
+### Institutional abbreviations
 
 F:AM Frick Collection of the American Museum of Natural History, New York, New York; FMNH, Field Museum of Natural History, Chicago, Illinois; LACM, Natural History Museum of Los Angeles County, Los Angeles, California; UCMP, Museum of Paleontology at University of California, Berkeley, California.
 
 ## Results and discussion
 
-## Producer of Mehrten coprolites
+### Producer of Mehrten coprolites
 
 The large number of bones inside most Mehrten coprolites rules out herbivores as their producers. The size of the coprolites further indicates large carnivorans as their original makers. For medium to large carnivorans from the Mehrten Formation, Wagner (1976, 1981) listed a bone-crushing dog Borophagus secundus (=Osteoborus cyonoides), a small coyote-sized Eucyon davisi, an ancestral badger Pliotaxidea garberi, an early wolverine Plesiogulo marshalli, and an ancestral cat Pseudaelurus near P. hibbardi. Most recently, Balisi et al. (2018) added a fox, Vulpes stenognathus, to the list. Of the above, Vulpes, Eucyon, Pliotaxidea, and Plesiogulo can be ruled out as being too small to produce scats of the size of the Mehrten coprolites, whereas the true nature of Mehrten felids is poorly known.
 
@@ -46,7 +46,7 @@ Of the large Mehrten canids, Balisi et al. (2018) recognized two bone-crushing c
 
 The Mehrten coprolites are comparable in size (Table 1) to scats from extant wolves and are generally larger than those from living coyotes, despite significant overlap between scat diameters of the wolves (average 27 mm, range 13–47 mm) and the coyotes (average 21 mm, range 7–34 mm) (Weaver and Fritts, 1979; Reid, 2015). In extant African carnivores, Harrison (2011) documented scat diameters of 20–35 mm from African hunting dogs, Lycaon pictus, and striped hyena, Hyaena hyaena. Therefore, with a maximum diameter of 31.2 mm, the Mehrten coprolites are more likely produced by a wolf-sized Borophagus than a coyote- to fox-sized Eucyon. Of the two species of Mehrten Borophagus, B. parvus was the more likely producers of Mehrten coprolites based on their body size and far better representation of body fossils, although the possibility of B. secundus cannot be excluded.
 
-## Coprolite morphology
+### Coprolite morphology
 
 We adopt a modified scheme for characterizing hyaenid coprolite aggregate pellets introduced by Diedrich (2012), but we use different terminologies for orientations (Figure 1A). Although scat morphology of extant wolves and hyenas may be somewhat different—depending on length of retention in digestive tract, fiber and water content of feces, and hardness of ground on which scats were dropped—our Mehrten coprolites (Figures 2 and 3) appear to share substantial similarities to those of living hyenas (Figure 1B). Of the 14 individually catalogued coprolites, five probably are a first dropping due to their bluntly constricted terminal on at least one of their ends and their relatively greater diameter (LACM 158707, 158708, 158709, 158711, and 158712). However, only one, LACM 158709, has the typical shape of a conical pellet (Figure 1A), although LACM 158707 represents a variation of the conical-disk pellet combination that failed to separate after dropping. LACM 158708 has tapering on both ends, suggesting that the modern hyena pellet terminology by Diedrich (2012) does not completely apply to the Mehrten canids. The rest of the nine pieces are all incomplete pellets, and their exact position within the scat string is difficult to determine.
 
@@ -74,15 +74,845 @@ If the above assessment is correct, the Mehrten coprolite sample probably consis
 
 Mehrten coprolites maintain nearly perfectly rounded cross sections, showing no sign of post-defecation settling or flattening, nor is there any sign of deformation during the initial impact of dropping. This suggests that the original feces were able to maintain their integrity either because of a relatively hard, moisture-free matrix, and/or because the bones inside plus the high-calcareous contents of the matrix resulted in relatively rigid feces at defecation. Nor do the coprolites show major signs of post-defecation alteration, suggesting fast burial after dropping. Bones are abundant in all coprolites, consisting of 5% of total volume of all coprolites (range 2–25%; see Table 1 for individual volume estimates). As examples, we describe two complete coprolites below.
 
-## LACM 158707 (Figure 2, Video 1)
+**Table 1.**
+ Measurements of coprolites and their included bones.Maximum diameter and length of coprolites are measured by digital calipers, and the rest are calculated by Avizo software. ‘*' in coprolite diameter and length indicates incomplete dimensions due to damage.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Coprolite dimensions</th>
+      <th colspan="8">Bone dimensions</th>
+    </tr>
+    <tr>
+      <th>LACM catalogue number</th>
+      <th>Maximum diameter × length (mm)</th>
+      <th>Coprolite volume (mm3)</th>
+      <th>Matrix volume (mm3)</th>
+      <th>Matrix fraction</th>
+      <th>Bone fragments contained</th>
+      <th>Bone max length (mm)</th>
+      <th>Bone max width (mm)</th>
+      <th>Bone orientation (degrees)</th>
+      <th>Bone volume (mm3)</th>
+      <th>Bone fraction/coprolite</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>158706</td>
+      <td>24.6* × 31.9*</td>
+      <td>5871</td>
+      <td>5871</td>
+      <td>100%</td>
+      <td>None</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>158707</td>
+      <td>31.2 × 47.2</td>
+      <td>18508</td>
+      <td>17823</td>
+      <td>96%</td>
+      <td>Bone_1</td>
+      <td>8.1</td>
+      <td>6.6</td>
+      <td>70</td>
+      <td>155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_2</td>
+      <td>16.5</td>
+      <td>5.1</td>
+      <td>24</td>
+      <td>56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_3</td>
+      <td>10.6</td>
+      <td>7.8</td>
+      <td>8</td>
+      <td>207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_4</td>
+      <td>6.1</td>
+      <td>5.1</td>
+      <td>70</td>
+      <td>23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_5</td>
+      <td>4.6</td>
+      <td>4.6</td>
+      <td>63</td>
+      <td>26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_6</td>
+      <td>7.9</td>
+      <td>7.2</td>
+      <td>10</td>
+      <td>43</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_7</td>
+      <td>3.6</td>
+      <td>2.4</td>
+      <td>32</td>
+      <td>11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_8</td>
+      <td>11.4</td>
+      <td>4.7</td>
+      <td>12</td>
+      <td>45</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_9</td>
+      <td>5.5</td>
+      <td>1.7</td>
+      <td>85</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_10</td>
+      <td>4.7</td>
+      <td>2.8</td>
+      <td>40</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_11</td>
+      <td>11.0</td>
+      <td>2.2</td>
+      <td>68</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_12</td>
+      <td>8.5</td>
+      <td>4.8</td>
+      <td>43</td>
+      <td>78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_13</td>
+      <td>5.0</td>
+      <td>3.9</td>
+      <td>58</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_14</td>
+      <td>6.1</td>
+      <td>3.6</td>
+      <td>37</td>
+      <td>14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>685</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>158708</td>
+      <td>24.9 × 44.6</td>
+      <td>10184</td>
+      <td>8814</td>
+      <td>87%</td>
+      <td>Bone_1</td>
+      <td>3.0</td>
+      <td>2.1</td>
+      <td>21</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_2</td>
+      <td>11.1</td>
+      <td>4.4</td>
+      <td>15</td>
+      <td>25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_3</td>
+      <td>16.1</td>
+      <td>10.0</td>
+      <td>14</td>
+      <td>344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_4</td>
+      <td>5.6</td>
+      <td>3.4</td>
+      <td>39</td>
+      <td>11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_5 Cortex</td>
+      <td>8.3</td>
+      <td>7.7</td>
+      <td>61</td>
+      <td>14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_5 Marrow</td>
+      <td>9.7</td>
+      <td>6.8</td>
+      <td>61</td>
+      <td>104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_6</td>
+      <td>5.1</td>
+      <td>3.4</td>
+      <td>49</td>
+      <td>11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_7</td>
+      <td>4.3</td>
+      <td>2.1</td>
+      <td>70</td>
+      <td>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_8 Rib long</td>
+      <td>31.0</td>
+      <td>7.0</td>
+      <td>46</td>
+      <td>156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_8 Rib Marrow</td>
+      <td>30.1</td>
+      <td>8.2</td>
+      <td>46</td>
+      <td>574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_8 Rib short</td>
+      <td>29.4</td>
+      <td>8.7</td>
+      <td>46</td>
+      <td>122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1370</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>158709</td>
+      <td>27.1 × 23.4</td>
+      <td>6556</td>
+      <td>6341</td>
+      <td>97%</td>
+      <td>Bone_1</td>
+      <td>12.5</td>
+      <td>2.3</td>
+      <td>65</td>
+      <td>21</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_2</td>
+      <td>7.9</td>
+      <td>4.5</td>
+      <td>80</td>
+      <td>45</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_3</td>
+      <td>12.6</td>
+      <td>4.4</td>
+      <td>24</td>
+      <td>53</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_4</td>
+      <td>6.6</td>
+      <td>2.3</td>
+      <td>45</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_5</td>
+      <td>5.0</td>
+      <td>2.2</td>
+      <td>54</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_6</td>
+      <td>3.6</td>
+      <td>1.9</td>
+      <td>72</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_7</td>
+      <td>6.1</td>
+      <td>4.5</td>
+      <td>11</td>
+      <td>28</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_8</td>
+      <td>10.6</td>
+      <td>4.9</td>
+      <td>81</td>
+      <td>42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>214</td>
+      <td>3%</td>
+    </tr>
+    <tr>
+      <td>158710</td>
+      <td>21.3 × 26.6</td>
+      <td>4066</td>
+      <td>4066</td>
+      <td>100%</td>
+      <td>None</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>158711</td>
+      <td>29.1* × 31.2*</td>
+      <td>11741</td>
+      <td>11251</td>
+      <td>96%</td>
+      <td>Bone_1</td>
+      <td>16.9</td>
+      <td>7.1</td>
+      <td></td>
+      <td>197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_2</td>
+      <td>18.7</td>
+      <td>6.3</td>
+      <td></td>
+      <td>93</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_3</td>
+      <td>6.8</td>
+      <td>3.0</td>
+      <td></td>
+      <td>13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_4</td>
+      <td>13.1</td>
+      <td>7.1</td>
+      <td></td>
+      <td>169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_5</td>
+      <td>6.5</td>
+      <td>3.7</td>
+      <td></td>
+      <td>18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>490</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>158712</td>
+      <td>29.4 × 27.5*</td>
+      <td>8284</td>
+      <td>8012</td>
+      <td>97%</td>
+      <td>Bone_1</td>
+      <td>21.3</td>
+      <td>12.3</td>
+      <td>37</td>
+      <td>234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_2</td>
+      <td>13.2</td>
+      <td>3.1</td>
+      <td>67</td>
+      <td>18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_3</td>
+      <td>7.1</td>
+      <td>2.5</td>
+      <td>2</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_4</td>
+      <td>3.4</td>
+      <td>1.9</td>
+      <td>18</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_5</td>
+      <td>8.6</td>
+      <td>2.8</td>
+      <td>75</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>272</td>
+      <td>3%</td>
+    </tr>
+    <tr>
+      <td>158713</td>
+      <td>27.5 × 25.6*</td>
+      <td>8694</td>
+      <td>8454</td>
+      <td>97%</td>
+      <td>Bone_1</td>
+      <td>15.2</td>
+      <td>6.5</td>
+      <td>26</td>
+      <td>107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_2</td>
+      <td>10.4</td>
+      <td>8.7</td>
+      <td>44</td>
+      <td>114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_3</td>
+      <td>4.7</td>
+      <td>1.9</td>
+      <td>66</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Bone_4</td>
+      <td>4.9</td>
+      <td>2.7</td>
+      <td>72</td>
+      <td>14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total bone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>240</td>
+      <td>3%</td>
+    </tr>
+    <tr>
+      <td>158714</td>
+      <td>17.7* × 20.9*</td>
+      <td>1570</td>
+      <td>1508</td>
+      <td>96%</td>
+      <td>Bone_1</td>
+      <td>8.2</td>
+      <td>5.2</td>
+      <td>29</td>
+      <td>62</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>158715</td>
+      <td>18.0* × 24.0*</td>
+      <td>2481</td>
+      <td>2443</td>
+      <td>98%</td>
+      <td>Bone_1</td>
+      <td></td>
+      <td></td>
+      <td>71</td>
+      <td>39</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>158716</td>
+      <td>20.5* × 14.9*</td>
+      <td>1245</td>
+      <td>1197</td>
+      <td>96%</td>
+      <td>Bone_1</td>
+      <td>10.2</td>
+      <td>9.0</td>
+      <td>70</td>
+      <td>48</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>158717</td>
+      <td>18.7* × 19.6*</td>
+      <td>1424</td>
+      <td>1071</td>
+      <td>75%</td>
+      <td>Bone 1</td>
+      <td>18.9</td>
+      <td>12.7</td>
+      <td>14</td>
+      <td>353</td>
+      <td>25%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>76851</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>3773</td>
+      <td>5%</td>
+    </tr>
+  </tbody>
+</table>
+
+#### LACM 158707 (Figure 2, Video 1)
+
+![Video 1.](https://cdn.elifesciences.org/articles/34773/elife-34773-video1.mp4.jpg)
+
+**Video 1.:** Video in Avizo Lite 9.2 by Stuart C. White.
 
 This is a nearly perfectly preserved coprolite and also one of the largest, measuring 31.2 mm in maximum diameter. The bluntly tapered end suggests a terminal pellet (first dropping, Figure 1A). This coprolite is composed of two unseparated pellets, as delineated by a visible groove. The proximal (last dropping) end has a flat surface, representing a clean separation from the next pellet. A single bone is visible on the external surface, with at least 14 bone fragments recognizable in CT image (Figure 2D), although all are unidentifiable small pieces.
 
-## LACM 158708 (Figure 3, Video 2 )
+#### LACM 158708 (Figure 3, Video 2 )
+
+![Video 2.](https://cdn.elifesciences.org/articles/34773/elife-34773-video2.mp4.jpg)
+
+**Video 2.:** Video in Avizo Lite 9.2 by Stuart C. White.
 
 This is another of the most complete coprolite pellets. The cross-section is nearly perfectly rounded, although there is a distinct flattening on one side, indicating dropping on hard ground during defecation. This coprolite also contains the largest piece of bone, a fragment of a rib shaft measuring 29 mm long × 9.2 mm wide × 5.1 mm thick, that nearly spans the length of the pellet (Figure 3C,D). The terminal end of this rib also protrudes outside the coprolite on the tapered end, leaving a sharp tip, 3 mm long, projecting at an angle into the lateral wall of the intestine and showing modest polishing on its surface (red arrows in Figure 3). Another piece of bone (enclosed by red dashed line in Figure 3) has a rounded external surface with a thin cortex filled entirely by cancellous bone, suggesting an articular joint. The size of this bone is consistent with a rib head for the shaft, although we cannot positively identify this as such without physical preparation. Two other smaller pieces of bones are also identified from microCT-scanned images. Total bone volume is 13% of coprolite matrix for LACM 158708, among the highest of all coprolites (Table 1).
 
-## Bones inside coprolites
+### Bones inside coprolites
 
 The majority of bones inside the coprolites, even when fully exposed, are too small and too fragmentary to be identified to a particular element or to a particular taxon beyond mammals or even vertebrates. Such difficulty can also be compounded by digitally segmented microCT reconstructions. These digitally separated bones are often an inexact replication of the actual shapes, mostly due to high similarity in X-ray opacity between bones and surrounding matrix. With the exception of a single rib fragment in LACM 158708, all other virtually segmented bones lack sufficient morphological detail to be unambiguously identified.
 
@@ -92,39 +922,140 @@ Surface modifications on bones include rounding of corners, polishing of surface
 
 About 5% of bones recovered from living wolf scat can be identified to their prey species (Fosse et al., 2012). Four bone fragments from Mehrten coprolites, consisting of 8% of the total number of bone fragments (Table 1), preserve enough original morphology to be narrowed to more specific taxa or anatomic structure. They are described below.
 
-## Bird limb bone in LACM 158711 (c2 in Figure 5C)
+#### Bird limb bone in LACM 158711 (c2 in Figure 5C)
 
 A large piece of bone, measuring at least 6.0 × 3.6 mm in cross-sectional area, has thin walls and hollow internal structure likely belonging to a bird limb bone. The thickness of the wall is 0.8 mm, and it has many thin struts on its internal surfaces. The extreme hollowness of this bone is in sharp contrast to an adjacent limb bone fragment (c1 in Figure 5C) that has a cortical thickness of 4.6 mm. The only fossil bird so far reported from the Modesto Reservoir Member is a goose, Branta (Wagner, 1981).
 
-## Ascending ramus of the dentary of a beaver in LACM 158712 (d1 in Figure 5D)
+#### Ascending ramus of the dentary of a beaver in LACM 158712 (d1 in Figure 5D)
 
 A very large flat bone, resembling the ascending ramus of a beaver, spans the width of the coprolite. The anterior and dorsal rims are intact. The posterior rim is very thin-walled, and we cannot be certain if its true border is completely intact. Part of the latter is smooth enough to be possibly intact; if so, we tentatively identify this bone as a beaver ascending ramus. Two beavers, Castor californicus and Dipoides vallicula, are both known in the Mehrten Formation (Wagner, 1981) and belong to the semiaquatic beaver clade (Rybczynski, 2007). All of them possess a highly diagnostic backwardly hooked ascending ramus (coronoid process; see comparison with that of Eucastor tortus in Figure 5G, an extant species adjacent to Dipoides in the beaver phylogeny) that is possibly related to woodcutting behavior. However, because of the poorly preserved posterior border, we cannot rule out the possibility of this bone being the distal portion of a scapula. (If a scapula, it probably belongs to a medium dog-sized mammal).
 
-## Basicranium of a medium-sized mammal in LACM 157716 (f1 in Figure 5F and digital reconstruction in Figure 5H)
+#### Basicranium of a medium-sized mammal in LACM 157716 (f1 in Figure 5F and digital reconstruction in Figure 5H)
 
 An incomplete, deep foramen measuring 3.0 mm in maximum length and 2.1 mm in minimal width is rimmed by an incomplete shelf on one side and a beam-like structure on the other. There is a small nutrient foramen, less than 1 mm across, on the wall of the broader side of the larger foramen. Such a configuration is most frequently seen in the basicranial region, such as the foramen ovale anterior to the tympanic bulla in living Odocoileus, which also has a nutrient foramen on the medial wall of the foramen ovale. However, the size of this foramen on LACM 158716 and its detailed anatomy do not match exactly with Odocoileus. Given the poor preservation, this bone is not easily identified beyond its anatomic position.
 
-## Rib of a large mammal in LACM 158708 (Figure 3)
+#### Rib of a large mammal in LACM 158708 (Figure 3)
 
 A gentle curvature and elongated shape with four relatively straight walls make this bone easily identified as the proximal segment of a rib. Modern wolves typically feed on the internal organs first—such as the heart, lungs, and liver (Stahler et al., 2006)—and the ribcage is the main obstacle to reaching the organs. Experimental data also suggest that mammalian ribs are a highly desirable part of modern wolf diet, with about 99% of ribs being consumed (i.e. 1% left uneaten) and the ribs being the most frequently (25%) identified bone fragments recovered from scat ([Klippel et al., 1987]:Tables 1 and 2). The large size of this bone (>30 mm in length) is unusual, typically comprising a small percentage of carnivore scats ([Kolska Horwitz, 1990]:Table 1). With the large size of this bone, we can estimate the minimum body size range of prey (see Figures 10–12).
 
-## Comparison to modern wolf scats
+**Table 2.**
+ Postcranial specimens used to approximate prey body size based on dimensions of the coprolite rib fragment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Family</th>
+      <th>Genus</th>
+      <th>Species</th>
+      <th>Specimen number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antilocapridae</td>
+      <td>Antilocapra</td>
+      <td>americana</td>
+      <td>LACM 30482</td>
+    </tr>
+    <tr>
+      <td>Tayassuidae</td>
+      <td>Tayassu</td>
+      <td>pecari</td>
+      <td>LACM 86904</td>
+    </tr>
+    <tr>
+      <td>Camelidae</td>
+      <td>Lama</td>
+      <td>guanacoe</td>
+      <td>LACM 31328</td>
+    </tr>
+    <tr>
+      <td>Camelidae</td>
+      <td>Vicugna</td>
+      <td>vicugna</td>
+      <td>LACM 54706</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Cervus</td>
+      <td>axis</td>
+      <td>LACM 529</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Cervus</td>
+      <td>dama</td>
+      <td>LACM 30452</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Cervus</td>
+      <td>dama</td>
+      <td>LACM 30876</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Cervus</td>
+      <td>eldi</td>
+      <td>LACM 86095</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Cervus</td>
+      <td>nippon</td>
+      <td>LACM 31069</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Cervus</td>
+      <td>porcinus</td>
+      <td>LACM 85966</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Cervus</td>
+      <td>timorensis</td>
+      <td>LACM 86012</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Odocoileus</td>
+      <td>hemionus</td>
+      <td>LACM 307</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Odocoileus</td>
+      <td>hemionus</td>
+      <td>LACM 30903</td>
+    </tr>
+    <tr>
+      <td>Cervidae</td>
+      <td>Odocoileus</td>
+      <td>virginianus</td>
+      <td>LACM 52442</td>
+    </tr>
+  </tbody>
+</table>
+
+### Comparison to modern wolf scats
 
 Experimental data on modern gray wolf diet and their scat permit a certain measure of quantifying scat contents and identifying prey items. However, most of these methods are based on sorting soft matter in wolf feces (e.g. [Floyd et al., 1978; Weaver, 1993]), which are typically not preserved in coprolites. A study on bone fragments preserved in extant Iberian wolf (Canis lupus signatus) scat provides a valuable basis for comparison (Esteban-Nadal et al., 2010). In the Spanish samples, the numbers of skeletal fragments per scat vary from one to 96 ([Esteban-Nadal et al., 2010]:Table 2), the upper limit being substantially more than those in our fossil samples. These higher numbers of bones can probably be explained by two factors. First, although Esteban-Nadal et al. did not specifically state it, their count of a scat almost certainly includes the entire ejected feces in a single dropping event, in contrast to our own treatment of a single individual piece of coprolite. (our disarticulated pieces of coprolites correspond to individual pellets of a long series of scat described in [Diedrich, 2012]:Figure 4) (Figure 1). Second, bones from extant wolf scat are exhaustively sampled (picked through dry samples and/or screened after chemical treatments) in contrast to our visual inspections in microCT-scanned images. Small bones that have similar radio-opacity as the surrounding matrix can potentially be missed in the counts (Table 1). If we discount the above two factors, fossil coprolites from the Mehrten possibly contain numbers of bone fragments comparable to those in extant Iberian wolf scat.
 
 More than 80% of bone fragments in Iberian wolf scat are not identifiable to a particular bone or taxon. A study of Polish wolves had a 95% rate of unidentified bones (Fosse et al., 2012). The same is true for Mehrten canid coprolites: four relatively large bones are identified among 48 in total (i.e. 92% unidentified bones). Finally, sizes of individual bone fragments in scat of extant wolves are also roughly comparable to those in our fossils. The digested bones have a rather uniform size range of 1–2 cm to a few mm in diameter.
 
-## Bone crushing adaptations in Borophagus
+### Bone crushing adaptations in Borophagus
 
 Borophagus and bone-cracking hyaenids such as Crocuta share several craniodental features that have been interpreted as adaptations for a durophagous diet. These include robust cheek teeth often exhibiting heavy cusp wear (the lower p4 and m1 in Borophagus and lower p3 and p4 in Crocuta; Figure 6A). Upper and lower dentitions of both taxa also exhibit specialized enamel microstructure (Hunter-Schreger Bands) of the cheek teeth interpreted to represent evolutionary responses to resisting increasingly hard and abrasive foods (Rensberger and Wang, 2005; Tseng, 2011). In both dental morphology and enamel microstructure, Borophagus and Crocuta share more similarities to each other than to Canis (Figure 6A,C). However, macrowear analyses of the lower carnassial tooth (m1) in population samples of the three carnivorans demonstrate that the extant bone-cracking Crocuta exhibits much more extreme cusp wear on average than either Canis or Borophagus (DeSantis et al., 2017) (Figure 6B). In terms of cranial shape, Crocuta is intermediate between Borophagus and Canis in having a moderately elongate rostrum and a moderately smooth forehead, whereas Borophagus has the combination of a relatively short rostrum with a more 'stepped' appearance of the forehead (Figure 6D–E). Nevertheless, within the phylogenetic context of their respective lineages, Borophagus and Crocuta represent similar extremes along an evolutionary morphological continuum, with Canis located beyond the morphospace occupied by either borophagine canids or hyaenids (Tseng and Wang, 2011; Balisi et al., 2018) (Figure 6E). Lastly, comparisons of overall stress distributions during unilateral carnassial (P4) bite simulations using finite element analysis indicate that the crania of Crocuta and Borophagus are more similar to each other in exhibiting lower and more dissipated stress patterns than Canis (Tseng, 2011) (Figure 6F). These functional morphological characteristics (except for the macrowear data of Borophagus, newly presented here) have been used to justify classifications of both Borophagus and Crocuta as specialized bone-cracking ecomorphs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34773/elife-34773-fig6-v1.jpg)
 
-**Figure 6.:** Canis, Borophagus, and  Crocuta.(A) Lower dentition homology and positions of functionally analogous bone-cracking teeth. Jaws are scaled to the same length. (B) Macrowear data from lower first molar samples of Crocuta crocuta (Sub-Saharan Africa) (data from [DeSantis et al., 2017]), Borophagus parvus (new data based on AMNH specimens from (1) Quibiris Formation, Arizona and (2) Big Sandy Formation, Arizona), and Canis lupus (new data based on AMNH specimens from Alberta, Canada). (C) Hunter-Schreger Band (HSB) enamel microstructure patterns in the upper and lower dentitions of the three carnivorans; darker shades indicate higher degree of zig-zag HSB specialization (modified from Figure 2 from [Tseng, 2011]). (D) Morphospace of relative warp (RW) axes from a geometric morphometric analysis of fossil (shaded symbols) and extant (black symbols) canid and hyaenid cranial shape, and (E) Phylogenetic relationships of borophagine canids (top) and hyaenids (bottom) plotted onto morphometric data, with Canis indicated by black triangle. Both (D) and (E) are modified from Figure 5 from Tseng and Wang (2011). (F) von Mises stress distributions in the crania during right fourth premolar bite simulations using 3-D finite element analysis, with warmer colors indicating higher stress. Crania are scaled to the same length (modified from Figure 7 from [Tseng, 2013]).
+**Figure 6.:** (A) Lower dentition homology and positions of functionally analogous bone-cracking teeth. Jaws are scaled to the same length. (B) Macrowear data from lower first molar samples of Crocuta crocuta (Sub-Saharan Africa) (data from [DeSantis et al., 2017]), Borophagus parvus (new data based on AMNH specimens from (1) Quibiris Formation, Arizona and (2) Big Sandy Formation, Arizona), and Canis lupus (new data based on AMNH specimens from Alberta, Canada). (C) Hunter-Schreger Band (HSB) enamel microstructure patterns in the upper and lower dentitions of the three carnivorans; darker shades indicate higher degree of zig-zag HSB specialization (modified from Figure 2 from [Tseng, 2011]). (D) Morphospace of relative warp (RW) axes from a geometric morphometric analysis of fossil (shaded symbols) and extant (black symbols) canid and hyaenid cranial shape, and (E) Phylogenetic relationships of borophagine canids (top) and hyaenids (bottom) plotted onto morphometric data, with Canis indicated by black triangle. Both (D) and (E) are modified from Figure 5 from Tseng and Wang (2011). (F) von Mises stress distributions in the crania during right fourth premolar bite simulations using 3-D finite element analysis, with warmer colors indicating higher stress. Crania are scaled to the same length (modified from Figure 7 from [Tseng, 2013]).
 
-## Reconstructing the potential ecological role of Borophagus
+### Reconstructing the potential ecological role of Borophagus
 
-## Bone consumption
+#### Bone consumption
 
 Bones as a supplementary food source must be a net gain if the cost of processing bones (both ingestion and digestion) can be managed. The average compact bone consists of about 30% organic matrix (Eastoe and Eastoe, 1954; Guyton and Hall, 2006), mostly collagen fibers. The organic component (nutritional value) is even higher if marrow in the cancellous bone is also considered. Living spotted hyenas in Africa possess morphological and physiological adaptations that permit efficient utilization of bones and are known to consume the entire carcass (freshly killed or scavenged), leaving no bones behind. Bones from hyena kills are left uneaten only during calving seasons of wildebeest, when food (calves) is superabundant, but even those unconsumed bones are eventually eaten after the calving season (Kruuk, 1972). Striped and brown hyenas, on the other hand, appear to process bone to a lesser extent based on bone accumulation assemblages (Wagner, 2006), and this is reflected in their dental microwear texture (DeSantis et al., 2017).
 
@@ -132,29 +1063,29 @@ Although carrion feeding and bone consumption are possibly closely associated as
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/34773/elife-34773-fig7-v1.jpg)
 
-**Figure 7.:** Borophagus secundus (F:AM 61640 from Edson Quarry, Marshall Ranch, Sherman County, Kansas, late Hemphillian).A suite of features is commonly associated with bone-crushing adaptations, such as a highly vaulted forehead, shortened rostrum and associated imbrication of premolars, thickened lower jaws, broadened palate, laterally flared lower cheek teeth, differentially enlarged P4 relative to P3 and p4 relative to p3, and anterior premolars (P1-3 and p1-3) reduced to small pegs that are no longer functioning in occlusion. (A) right lateral view of skull and mandible; (B) occlusal view of upper teeth; and (C) occlusal view of lower teeth.
+**Figure 7.:** A suite of features is commonly associated with bone-crushing adaptations, such as a highly vaulted forehead, shortened rostrum and associated imbrication of premolars, thickened lower jaws, broadened palate, laterally flared lower cheek teeth, differentially enlarged P4 relative to P3 and p4 relative to p3, and anterior premolars (P1-3 and p1-3) reduced to small pegs that are no longer functioning in occlusion. (A) right lateral view of skull and mandible; (B) occlusal view of upper teeth; and (C) occlusal view of lower teeth.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/34773/elife-34773-fig8-v1.jpg)
 
-**Figure 8.:** Borophagus secundus, sister taxon of Borophagus parvus, by Mauricio Antón.Competitive group feeding does not permit leisurely picking and choosing of meat for quiet consumption and may have been a driving force for complete utilization of carcasses. Adapted from Wang et al., 2008: figure 5.4 and with permission for reproduction by Mauricio Antón.
+**Figure 8.:** Competitive group feeding does not permit leisurely picking and choosing of meat for quiet consumption and may have been a driving force for complete utilization of carcasses. Adapted from Wang et al., 2008: figure 5.4 and with permission for reproduction by Mauricio Antón.
 
 As the oldest living family of carnivorans, canids arose in the late Eocene more than 36 million years ago (Wang, 1994; Wang et al., 2008). The divergence time between canids and hyaenids should be even earlier than that, tracing back to the initial split of caniforms and feliforms (Spaulding and Flynn, 2012). Borophagine canids evolved rather early in canid history in the early Oligocene, about 32 Ma. Hyaenids, by contrast, originated quite late, probably in the early Miocene of Europe, about 21–22 Ma (Werdelin and Solounias, 1991; Ginsburg, 1999). Despite this late start, hyaenids have evolved the most advanced dentition for crushing bones, seemingly related to their basic feliform dental plan of highly reducing the grinding part of the dentition (M1 and m1 talonid-m2), allowing room for enlargement of their premolars. Canids, on the other hand, are constrained by their less specialized dental plan of retaining a substantial grinding upper and lower molar battery, with less room for premolar enlargement. Therefore, despite a much earlier start, bone-crushing in canids has never advanced to the level of specialization as hyaenids.
 
 Among the living hyaenids, the spotted hyenas have been observed to be the most capable bone-eaters compared to striped hyenas and probably brown hyenas (Leakey et al., 1999). However, beyond studies showing differential bone modification at the den sites of different species of hyena, there is not a significant body of research on how striped and brown hyenas hunt differently and how behavioral differences influence their dietary preference as understood from scats (Watts and Holekamp, 2007). Given the Borophagus coprolite sample and bone-cracking functional morphology (Figure 6), the preponderance of evidence points to the striped or brown hyenas as suitable analogs to Borophagus in the masticatory and gastrointestinal systems processing bone less thoroughly relative to spotted hyenas. The following discussion regarding the possible ecological role of Borophagus should be considered with this difference in mind.
 
-## Bone digestion
+### Bone digestion
 
 The gastrointestinal system of hyenas has apparently evolved to handle large quantities of bones. Hyaenid feces, particularly those of the spotted hyena (Crocuta crocuta), are known to contain highly digested calcium phosphates in the form of white powders and bone residues (Figure 1B) (Estes, 1991). To a lesser extent, the scat of striped hyena (Hyaena hyaena) is also white or light gray (Macdonald, 1978; Hulsman et al., 2010). These white powders consist of calcium and phosphate salts, Ca3(PO4)2·1.5Ca(OH)2, similar to hydroxyapatite, the main inorganic component in bones (Kruuk, 1972). Assuming that the common ancestor of Crocuta and Hyaena acquired the bone-dissolving gastrointestinal system, such a trait must have existed more than 8.6 Ma if the molecular divergence time of these two genera is considered (Koepfli et al., 2006).
 
 However, despite inferences that the spotted hyena has a highly acidic environment within its gastrointestinal tract, no published measurement is available (Beasley et al., 2015). Extant spotted hyenas are also known to regurgitate indigestible contents, such as skin and hair (Kruuk, 1972; Silvestre et al., 2000). Living domestic dogs have a gastric pH of 1.08–2.07 (Sagawa et al., 2009); this is comparable to scavengers with highly acidic stomachs for protection against foreign microbes, such as the turkey vulture (an obligate scavenger; 1.3 ± 0.08) and red-tailed hawk (a facultative scavenger; 1.8 ± 0.27) (Beasley et al., 2015). Thus, this hyperacidity in dogs is mainly attributed to scavenging. It is not clear if a linear relationship exists between stomach pH value and the amount of bone residual in scats. Without detailed studies of the digestive process in extant hyenas, it is unknown whether a combination of chemical and mechanical differences in the digestive system is responsible for differences in bone residual size observed between Borophagus and living wolves, on one hand, and spotted hyenas on the other. However, examination of the stomach contents of striped hyenas indicates that they can digest some bones to similar degrees as spotted hyenas (Kingdon, 1977).
 
-## Coprolite records
+### Coprolite records
 
 Despite the high concentration of carbonates, modern spotted hyena scat is easily softened and dissolved in the rainy season (Kruuk, 1972), and it is not surprising that hyaenid coprolites are rarely preserved in the fossil record. When they are, those from cave hyenas (Crocuta crocuta spelaea) are the most common (Diedrich, 2012; Fourvel et al., 2015; Sanz et al., 2016). Highly concentrated and trampled feces can result in ‘white phosphatic beds’, such as in Pleistocene caves in Europe with known cave hyena activities (Diedrich, 2012).
 
 In North America, records for canid coprolites are similarly scarce. At the Pipestone Springs Main Pocket site (late Eocene Renova Formation, Jefferson County, Montana), small coprolites have been attributed to Hesperocyon (Lofgren et al., 2015). Bone fragments inside the coprolites belong mostly to small vertebrates, including marsupials, lizards, lagomorphs, and squirrel-sized rodents, suggesting a diet of mostly small prey. Teeth of Hesperocyon have also been reported to occur in some Oligocene coprolites in the Brule Formation from the Big Badlands of South Dakota (Parris and Holman, 1978).
 
-## Social hunting
+### Social hunting
 
 Modern spotted hyenas and wolves are social hunters, and meals are shared by the clans and packs, respectively. Spotted hyenas consume the entire skeleton, bones included, usually in one feeding session (Kruuk, 1972). In contrast, wolves are often unable to crack large limb bones, such as those of European bison, and leave substantial parts of the skeleton intact; however, skeletons of smaller prey, such as red deer, suffer far more damage and fewer bones are left uneaten (Fosse et al., 2012). In this regard, the bone-processing abilities of wolves are closer to those of brown and striped hyenas than either group is to spotted hyenas. Brown and striped hyenas are solitary foragers and hunters in most observations, although they do have social structures associated with bone accumulations at dens (Watts and Holekamp, 2007). Bone-cracking borophagines, such as Borophagus, are equipped with far more robust teeth and sturdy jaws than those of extant grey wolves (Balisi et al., 2018), although as a clade they did not reach the degree of morphological specialization observed in hyaenids (Van Valkenburgh et al., 2003). It is thus reasonable to assume that Borophagus is capable of cracking larger bones than living wolves do, possibly comparable to hyaenids. Whether or not Borophagus would systematically consume an entire skeleton is still a matter of speculation, but this is likely to depend on the competitiveness of their group feeding.
 
@@ -162,7 +1093,7 @@ Van Valkenburgh et al., 2003 considered large borophagine canids—such as Epicy
 
 Due to some dental and postcranial parallels between borophagines and modern hyenas, the ‘hyaenoid dogs,’ as borophagines were earlier known (VanderHoof and Gregory, 1940; Simpson, 1945), were frequently dismissed as mere scavengers (Munthe, 1989) and as such were not presumed to have been able to directly drive the evolution of their prey. Such misconceptions, however, are as much a popular myth about hyenas as a reflection of the fossil dogs. Up to 80% of food consumed by the modern spotted hyena is obtained by their own hunting efforts (Kruuk, 1972), in contrast to brown and striped hyenas that are primarily omnivorous scavengers of large prey with less than 5% of food consumed from fresh kills (Macdonald, 1978; Rieger, 1981; Mills, 1982). As active hunters not dependent on the availability of carrion, spotted hyenas typically have a far greater population density and wider distribution than their scavenging relatives. Some large borophagines, such as Borophagus secundus, have a continent-wide distribution and abundant fossil record that strongly suggest that they, too, were hunters (Wang et al., 1999; Wang et al., 2008). In contrast, brown and striped hyenas maintain both smaller species geographic ranges and lower population densities, both of which are likely associated with their solitary hunting of prey smaller than the preferred prey of spotted hyenas (Wagner, 2006). From the new coprolite evidence alone, it is unclear whether B. parvus from the Mehrten crossed the size threshold and became an obligate predator of large prey. Our rough body size estimates based on the largest rib fragment inside one of the coprolites (LACM 158708) suggest that the Turlock Lake Borophagus probably preyed on ungulates equivalent in size to a modern mule deer Odocoileus hemionus (45 to 150 kg), vicuña Vicugna vicugna (35 to 65 kg), and guanaco Lama guanicoe (90 to 140 kg): animals substantially larger than their own size (see Materials and methods). However, remains of similarly large prey are known from spotted, striped, and brown hyena scats and could represent either scavenged (more likely for striped and brown hyenas) or actively hunted (more likely for spotted hyena) sources (Kruuk, 1972; Wagner, 2006). Combined with other evidence presented in the preceding paragraphs, the presence of large prey is consistent with—although does not exclusively support—Borophagus as social hunters of large mammalian prey.
 
-## Consideration of the ecological role of Borophagus
+### Consideration of the ecological role of Borophagus
 
 Morphologically hyena-like borophagine canids evolved in and were restricted to North America during their entire fossil record. Around the time of Borophagus' extinction towards the end of the Pliocene, and marking the end of hyena-like canid species in North America, a single lineage of hyaenids dispersed to North America (Berta, 1981; Tseng et al., 2013). One (potentially two) species of the hyaenid Chasmaporthetes, like spotted hyenas in their craniodental biomechanical capability (Tseng et al., 2011) but with much more cursorially adapted postcranial skeletons (Berta, 1981), left a widespread but rare fossil record. Rare fossils of Chasmaporthetes from Arizona, Florida, and the Pacific coast of Mexico from otherwise productive localities suggest that either preservational environments were significantly different between Borophagus and Chasmaporthetes localities, or Chasmaporthetes were much less abundant in population density at those localities. Regardless of the reasons for the apparent rarity of the North American hyaenids compared to Borophagus, the bone-cracking ecomorphology went extinct in North America no later than the end-Pleistocene megafaunal extinctions. Although there is evidence that another canid, the dire wolf Canis dirus, had some degrees of morphological adaptation for consuming hard foods such as bone (Figueirido et al., 2015), the selective pressure for such dietary habits may have been short-lived and sensitive to local environmental conditions rather than a long-term macroevolutionary trend (Van Valkenburgh and Koepfli, 1993; DeSantis et al., 2015).
 
@@ -172,7 +1103,7 @@ The above morphological and behavioral comparisons suggest that, regardless of w
 
 Given these findings, an important future research direction is to examine whether the pre-Ice Age extinction of the hyena-like, bone-eating scavenger represented by Borophagus had a fundamental effect on the evolution of food web dynamics (via energy flow modification) during the Ice Age. Borophagus was not replaced with a similar ecological morphology on the temporal cusp of the establishment of modern day North American ecosystems. Understanding the impact of such permanent exclusion of a predator/decomposer would be important to understanding sympatric modern food webs.
 
-## Conclusion
+### Conclusion
 
 Contents from a new sample of coprolites attributed to Borophagus parvus from end-Miocene (5.3–6.4 Ma) sediments in northern California provide firsthand insight into the diet of this North American group of bone-cracking top predators. The broad range of bone fragment sizes discovered inside the coprolites suggests that these predators consumed small vertebrate prey as well as deer-sized mammals. Incomplete digestion of prey bones in the coprolites also suggests that, despite a comparable degree of craniodental adaptation for durophagy, canid bone-crackers still possessed a digestive process different from spotted hyenas—which are able to completely break down bone into powder—and were more similar to striped hyenas in this regard. These findings suggest that these bone-cracking canids were potentially social hunters with a unique mixture of typical canid features and hyena-like characteristics. The ecological niche occupied by the common and widespread Borophagus was not replaced by other carnivorans or other mammals after their Pliocene extinction, potentially indicating a fundamental change in food web dynamics in North America as the Ice Age began.
 
@@ -182,7 +1113,7 @@ All fossil coprolites and associated vertebrate fossils studied from the Mehrten
 
 Twelve fossil coprolites were scanned in a Skyscan1172 microCT scanner at a pixel resolution of 26.98 micrometers. The resulting basis images were reconstructed and the resulting dataset imported into Fiji (v. 2.0). In Fiji, the image brightness and contrast were optimized, the images were converted from 16 to 8 bits, and the pixels were binned by a factor of two in all planes. This processed image dataset was then imported into Avizo Lite 9.0.1 for analysis. To aid in detecting bone fragments within the coprolite matrix, each image dataset separately was smoothed by applying a 3D median filter to the images using neighborhood values of 6, 18 and 26 pixels. Cross-sectional images were examined using each of the smoothing levels, as well as the original unsmoothed images. Structures identified as bone were marked using the brush tool with the limited range option to most accurately define the bone/matrix edges. Where there were multiple bone fragments in a coprolite, each was marked separately. Each segmented bone fragment included both the cortical and cancellous portions where present (except in the case of a large rib fragment). The Avizo Materials Statistics module was used to determine the volume of each bone fragment and the surrounding matrix. Avizo measurement tools were used to determine the maximum length and width of each bone fragment as well as the orientation of each fragment’s long axis with respect to the long axis of the coprolite.
 
-## Fauna, flora, age relationship, depositional setting, and paleoclimate
+### Fauna, flora, age relationship, depositional setting, and paleoclimate
 
 VanderHoof (1933) was first to report a fossil horse, Pliohippus tantalus, from near Oakdale in Stanislaus County, California. Although the Oakdale locality has produced only a few fossils since then, it signaled the potential for discovery of vertebrate fossils in the Mehrten Formation, as well as associated plants (VanderHoof, 1933; Axelrod, 1944). A partial skull of Megalonyx mathisi was described subsequently from Black Rascal Creek in ‘Upper Mehrten Formation’ (Hirschfeld and Webb, 1968). Systematic collecting of fossils in the Turlock Lake area, mostly by one of us (DG), was carried out in as early as the 1950 s. In an unpublished Ph.D. dissertation, Wagner (1981) reviewed the geologic setting and laid out a biostratigraphic framework of the Mehrten Formation as related to the vertebrate fossils. More recently, Sankey et al. (2015) reinvestigated the Turlock Lake fossil sites and began a process of integrating the Mehrten fossils in a modern geologic context (stratigraphic information archived in LACM and UCMP) (see also [Sankey and Biewer, 2017]).
 
@@ -198,7 +1129,7 @@ The majority of the coprolites complete enough to be assigned a Dennis Garber fi
 
 **Figure 9.:** (A) satellite image of Turlock Lake area (37°36–37'N 120°34–36'W) from Google Earth Pro, image date March 31, 2015 (Google Earth Pro (Version 7.1.5.1557), [Google Inc, 2015]); red star is approximate position of LACM locality 3937 (=Dennis Garber T-34 locality) and of LACM locality 3935 (=Dennis Garber T-32 locality). (B) LACM locality 3937, looking to the south; black ovals are approximate positions of fossil-producing horizons and that to the left is the location for coprolites; photograph by Jacob Biewer on September 5, 2015.
 
-## Estimation of predator body size
+### Estimation of predator body size
 
 Several regression equations relate skeletal or dental measurements to body mass in extant canids and other carnivorans (Van Valkenburgh, 1990; Anyonge, 1993; Anyonge and Roman, 2006), enabling prediction of the body mass of extinct canids based on measurements of isolated elements. Body mass proxies and their reliability differ slightly, with measures of cross-sectional area of proximal weight-bearing limb bones generating more accurate estimates than dental predictors do. Dental predictors are still useful, however, because teeth tend to be more abundantly preserved than postcrania.
 
@@ -208,13 +1139,13 @@ Based on lengths of lower first molars, B. parvus has a median body mass of 18.9
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/34773/elife-34773-fig10-v1.jpg)
 
-**Figure 10.:** B. parvus body mass estimated from lengths of the lower first molar (carnassial) using the equation from Van Valkenburgh (1990).The Arizona population tends to be larger in body size than the California population, which largely comprises Turlock Lake individuals.
+**Figure 10.:** The Arizona population tends to be larger in body size than the California population, which largely comprises Turlock Lake individuals.
 
 Equations using measurements of the humerus and femur, all specimens from the Arizona population, generated higher estimates than dental estimates of both Arizona and California populations. For F:AM 75903-B, a distal humerus, we calculated body mass using an approximation of the circumference (22.8 kg), cortical area (25.829 kg), second moment of area in the anteroposterior plane (20.898 kg), and second moment of area in the mediolateral plane (29.33 kg); these four estimates produced a median measurement of 24.315 ± 3.656 kg. For F:AM 67955, a complete humerus, we obtained a body-size estimate of 32.4 kg using an approximation of the circumference. For F:AM 63008-A, a proximal femur, we estimated 20.2 kg.
 
 These dental and postcranial estimates of body mass place B. parvus in the same size class as the dingo Canis lupus dingo (20 kg), maned wolf Chrysocyon brachyurus (23 kg), African wild dog Lycaon pictus (24 kg), red wolf Canis rufus (30 kg), and striped hyena Hyaena hyaena (35 kg) (Nowak, 1999; Macdonald, 2006). These extant species (except the omnivorous Chrysocyon) are carnivorous to hypercarnivorous.
 
-## Estimation of prey body size
+### Estimation of prey body size
 
 Several species of fossil ungulates have been recorded at Turlock Lake (Wagner, 1981), providing a pool of potential prey taxa and a starting point for our analysis. We assembled a comparative rib collection of 14 ungulate individuals belonging to 12 extant species at the LACM, spanning as much as possible the familial diversity preserved at Turlock Lake (Table 2). Each specimen comprised a full complement of ribs on at least one side of the body. We attempted to sample the ungulate families recorded by Wagner (1981) or, if extinct, the most closely related extant family (e.g. extant Cervidae as proxy for Palaeomerycidae). Extant perissodactyls were not sampled because the perissodactyls at Turlock Lake tend to be either prehistoric equids smaller than modern equids, for which smaller extant artiodactyls could serve as a proxy, or the rhinocerotid Teleoceras, which is likely too large to generate the rib fragment preserved in the coprolite.
 
@@ -222,7 +1153,7 @@ The coprolite rib fragment has an anteroposterior width of 9.1 mm and mediolater
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/34773/elife-34773-fig11-v1.jpg)
 
-**Figure 11.:** Cervus eldi).Anterior ribs are to the right; posterior, to the left. For this set of measurements, the colored tags mark where each rib measures 9.1 mm in anteroposterior width. The corresponding mediolateral thickness at the marked points were then recorded. Ribs without a colored tag were either wider or narrower for much of its length than the two fixed measurements of coprolite width and thickness.
+**Figure 11.:** Anterior ribs are to the right; posterior, to the left. For this set of measurements, the colored tags mark where each rib measures 9.1 mm in anteroposterior width. The corresponding mediolateral thickness at the marked points were then recorded. Ribs without a colored tag were either wider or narrower for much of its length than the two fixed measurements of coprolite width and thickness.
 
 Figure 12 tracks the anteroposterior width or mediolateral thickness of each rib among the extant taxa in comparison to the corresponding measurements in the coprolite rib fragment. Gaps in the data indicate ribs that were either wider or narrower for much of their length than the two fixed measurements, and so were not measured.
 

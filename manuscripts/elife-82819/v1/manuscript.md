@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05kb8h459 Department of Computing Science, Umeå University Umeå Sweden
-2. https://ror.org/02yy8x990 Umeå Plant Science Centre (UPSC), Department of Forest Genetics and Plant Physiology, Swedish University of Agricultural Sciences Umeå Sweden
-3. https://ror.org/02yy8x990 Department of Forest Ecology and Management, Swedish University of Agricultural Sciences Umeå Sweden
+1. Department of Computing Science, Umeå University Umeå Sweden ([ROR:05kb8h459](https://ror.org/05kb8h459))
+2. Umeå Plant Science Centre (UPSC), Department of Forest Genetics and Plant Physiology, Swedish University of Agricultural Sciences Umeå Sweden ([ROR:02yy8x990](https://ror.org/02yy8x990))
+3. Department of Forest Ecology and Management, Swedish University of Agricultural Sciences Umeå Sweden ([ROR:02yy8x990](https://ror.org/02yy8x990))
 
 † Corresponding author
 
@@ -103,19 +103,19 @@ The results obtained using Transformer models on such tasks have been quite prom
 
 In the following, we summarize typical problems from different fields of the life sciences, for which Transformer models have been used to aid in the prediction of protein properties. Most of these works employ pre-trained Transformer models to generate protein representations that can be used in downstream tasks for predictions.
 
-## Structure prediction
+### Structure prediction
 
 A fundamental task that has been pursued for decades is to predict a protein’s structure. The structure is encoded in a protein’s amino acid composition, and both the composition and the structure can determine a protein’s function (Jumper et al., 2021). The protein structure prediction task can be broken down into two categories: secondary structure (α-helix, β-sheet, or coil) and tertiary structure (3D shape). These major tasks can further be broken down into other prediction tasks. For instance, predictions can be carried out to find 2D contacts, which can then be employed successively for 3D structure prediction since two residues in a sequence can be spatially close to each other in the 3D configuration (Du et al., 2021). Protein contact prediction can be formulated as either a binary classification problem (whether two residues have a close distance between their central carbon atoms), a multiclass classification problem (encapsulating real distance predictions by dividing the distance measurements into discrete bins), or as a regression problem (predicting real-valued distances). The tasks of secondary structure prediction (Elnaggar et al., 2020a; Rives et al., 2021; Brandes et al., 2021; Rao et al., 2021; Rao et al., 2019; Elnaggar et al., 2020b; Sturmfels et al., 2020) and contact prediction Rives et al., 2021; Rao et al., 2021; He et al., 2021; Sturmfels et al., 2020 have been undertaken using multiple different Transformer models, and they show great promise. For example, Rives et al., 2021 predicted secondary structure and contact by training a neural network classifier using sequence profile features combined with the representation from their ESM-1b Transformer model. They evaluated the feature combination on the Critical Assessment of protein Structure Prediction (CASP) test set (Kryshtafovych et al., 2019), and the results show an improved performance compared with other models. Other works on contact predictions include utilizing the feature combination of one-hot encoding, SPOT-1D-Single (Singh et al., 2021), and the representation from ESM-1b (Rives et al., 2021) to train a neural network classifier. This showed improvements over evolutionary-profile-based methods and over using ESM-1b representation alone (Singh et al., 2022). Moreover, a novel Transformer was pre-trained and utilized the CASP14 benchmark (Kryshtafovych et al., 2019) for contact prediction that outperformed the winner group of CASP14 contact prediction challenge (Zhang et al., 2021).
 
-## Homology prediction
+### Homology prediction
 
 In homology prediction, a non-annotated protein with unknown biological function is characterized by finding evolutionary related sequences with known function (Gromiha et al., 2019). In microbiology and medicine, detection of remote homologs is of great interest, for instance, to detect emerging antibiotic-resistant genes (Tavares et al., 2013). The conventional approach for homology prediction has been to use MSAs, where computational tools such as MMseqs2 (Steinegger and Söding, 2017), Pfam profile (ElGebali et al., 2019), and PSI-BLAST (Altschul et al., 1997) align evolutionary related protein positions by deducing conserved sequence patterns based on evolutionary constraints that maintain the sequence’s structure and function. A major issue with these tools is that they fail to determine sequences that are distantly related (remote homology) (Wilburn and Eddy, 2020). A new method was introduced by Zare-Mirakabad et al., 2021 that utilizes a pre-trained Transformer called ProtAlbert (Elnaggar et al., 2020b) to predict a protein’s profile. To predict the profile for a protein, the protein sequence with masked tokens was fed to the model and predicted the most likely amino acids in those masked positions. The predicted profiles were compared with the sequence profiles in the HSSP dataset (Dodge et al., 1998). They concluded that the high similarity between the two profiles (predicted and HSSP database) indicates the usefulness of their approach, and that it can assist researchers in obtaining prediction profiles for new sequences. Contrastive learning, which involves finding an embedding space where similar samples are brought together while dissimilar ones pushed apart, was investigated by Heinzinger et al., 2022. The work utilized embeddings from the ProtT5 (Elnaggar et al., 2020a) pre-trained Transformer model that were mapped using a feed-forward neural network to a new embedding space. The similarity between pairs, using Euclidean distance in the embedding space, was used to find homologous sequences, as well as to identify more distant relations. They observed that this approach required significantly less protein pre-processing time compared to MSA profiles from tools such as HMMER (Finn et al., 2011). Their results not only showed similar performance to HMMER (Finn et al., 2011) profiles but outperformed it for distant relations. Their work also found that the contrastive learning approach captured structural hierarchies that provide structural similarities between proteins. Protein profile prediction without sequence alignment was undertaken by Behjati et al., 2022, who proposed a method for single protein profile prediction using the ProtAlbert (Elnaggar et al., 2020b) Transformer. Their work found that attention heads of the pre-trained Transformer captured hidden protein characteristics in the sequence, such as amino acid neighbour interaction, biochemical and biophysical amino acid properties, protein secondary structure, etc. Homology prediction has also been part of many other works to demonstrate the benefits of newly developed Transformer models (Rives et al., 2021; Brandes et al., 2021; Rao et al., 2019; Sturmfels et al., 2020).
 
-## Mutation prediction
+### Mutation prediction
 
 Mutations in proteins is another important prediction task. Mutations are a vital part in evolution and introduce diversity to protein sequences. They can either be advantageous in evolution or cause illnesses, for example, a change in a protein’s stability may cause a disease. Predicting the impact of mutations is a step towards understanding protein function and stability. The approach of pre-training and fine-tuning a Transformer network was undertaken by Yamaguchi and Saito, 2021 for mutation prediction after fine-tuning of the evolutionary information which showed better accuracy compared to using an LSTM-based approach, and by Jiang et al., 2021 to predict the pathogenic missense mutations after pre-training a Transformer and fine-tuning on paired protein sequences which outperformed a variety of existing tools. Mutation prediction was also among one of the tasks in Rives et al., 2021 and Rao et al., 2019 to verify the potential of their new pre-trained Transformer models.
 
-## Interaction prediction
+### Interaction prediction
 
 Proteins interact with other molecules, and this interaction plays an important part in cellular processes as well as in disease pathogenesis. To gain insights regarding the function of a protein in its cellular context or to develop therapeutic procedures, it is crucial to identify potential interacting molecules (McDowall et al., 2009; Dick and Green, 2018). For instance, virus proteins infect the human body through interaction with human proteins. The impact of identifying PPIs can therefore encompass vaccine design. Similarly, identifying DTI is an essential task that is critical in drug discovery. DTI prediction can contribute by narrowing the search space and prune pairs that are unlikely to bind. The field has expanded to encompass new drug discovery, repurpose drugs already in existence, and identify novel proteins that might be interaction partners for approved drugs (Öztürk et al., 2018). The existing methods of PPI and DTI are formulated as either a binary classification (interacting or non-interacting pairs), type of interaction (multiclass problem), or the strength of the interaction (regression task). Recent work in PPI has also predicted not only the interacting pairs, but also their quaternary structure (structure encompassing proteins that are closely packed together). Traditionally, PPI prediction was achieved by template-based modelling and free docking. The template-based approach involves matching sequences to related complexes for which the structure has been experimentally solved (Guerler et al., 2013) while the docking methods incorporate energy functions, and a protein’s conformation and orientation in conjunction with correlation functions from the field of pattern recognition, for instance, (Katchalski-Katzir et al., 1992) to determine the structure (Vakser, 2014). After the success of the AlphaFold (Jumper et al., 2021) model, approaches are now developed that utilize trained AlphaFold models for complex structure prediction. This is done by linking the chains of proteins and predicting the structure as if it was a single sequence (Mirdita et al., 2022; Ko and Lee, 2021). Recent works with Transformer-based models are starting to show promise in predicting interactions (Nambiar et al., 2020).
 
@@ -123,7 +123,7 @@ PPI was one of the tasks considered by Nambiar et al., 2020, where a Transformer
 
 For the DTI prediction, Cai et al., 2021 proposed a new protein embedding through Transformer pre-training that incorporated evolutionary information and used the model’s embeddings with a multilayer perceptron trained on several datasets (Gaulton et al., 2012; Chen et al., 2002; Chan et al., 2015; Wishart et al., 2006) to predict chemical-protein binding. The method outperformed the state of the art, which was also based on a Transformer model. A method was proposed by wang et al., 2021 to predict drug-target affinity using a regression approach by pre-training a Transformer model and using a CNN to extract features from the learned representation. They utilized multiple datasets (Tang et al., 2014; Davis et al., 2011; Liu et al., 2007) to evaluate their method. The approach proved to be more accurate than the state-of-the-art DL methods, which included a CNN model based on amino acid features and an RNN model based on protein structural features.
 
-## Post-translational modification prediction
+### Post-translational modification prediction
 
 PTM is a process of covalent and enzymatic modification of proteins after they are synthesized (Chou, 2020). PTMs provide structural and functional diversity to proteins; however, they are also associated with major diseases like cancer. Identification of PTM sites is therefore vital for understanding it and to develop drugs for the many diseases it causes. A PTM is usually approached as a binary classification problem to identify whether a site along a protein sequence is modified or not. Prediction of lysine crotonylation, a PTM known to cause diseases like colon cancer and acute kidney injury, was undertaken by Qiao et al., 2022, where a BiLSTM network was trained on BERT (Devlin et al., 2018) embeddings of the amino acids in the protein sequences. The method outperformed the state-of-the-art model based on a CNN that utilised sequence, physicochemical properties, and Word2Vec (Mikolov et al., 2013b) features. Zhao et al., 2021 attempted to predict S-nitrosylation, a PTM that causes disorders of the cardiovascular, musculoskeletal, and nervous systems. They used representations from a pre-trained BiLSTM model and the representation from a BERT model (Devlin et al., 2018) to encode amino acids. Their approach surpassed the performance of several state-of-the-art methods, including a DL approach that had used position-specific scoring matrices (Jones, 1999) (features from MSA).
 
@@ -155,7 +155,7 @@ In Figure 6B, the number of publications per year is illustrated for scientific 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/82819/elife-82819-fig7-v1.jpg)
 
-**Figure 7.:** Vaswani et al., 2017.The search was based on the query 'Life Science' and included all scientific research papers from 2017 to 2022 (cut-off on 2022-06-23).
+**Figure 7.:** The search was based on the query 'Life Science' and included all scientific research papers from 2017 to 2022 (cut-off on 2022-06-23).
 
 ## A proof-of-principle example
 
@@ -168,6 +168,175 @@ After obtaining the representation of the protein sequences from the Transformer
 We used and compared five classifiers: logistic regression with ridge regularization (denoted LR), a support vector machine with a polynomial kernel (denoted SVM (poly)), a support vector machine with a radial basis function kernel (denoted SVM (RBF)), random forest (denoted RF), and finally a light gradient-boosting machine (denoted LightGBM). We set aside 51 samples for final test of each model (maintaining the same ratio between the positive and negative labels, i.e., 1:1.5) and performed fivefold cross-validation on the remaining 202 samples to select the models’ hyper-parameters with standard scaling of the data, based on the training set in each cross-validation round. The hyper-parameters were tuned using Hyperopt (Bergstra et al., 2013) with 15 evaluations.
 
 We thus had five datasets (Phy + Bio, BigramPGK, T5, ESM1b-avg, and ESM1b-concate) and five classification models (LR, SVM (poly), SVM (RBF), RF, and LightGBM). We evaluated each model on all datasets using accuracy (ACC) and the area under the receiver operating characteristic curve (AUC), reporting both the fivefold cross-validation (CV) scores (those used to select the hyper-parameters) and the score obtained on the held-out test set (the 51 set-aside samples mentioned above). The results are presented in Table 1.
+
+**Table 1.**
+ The performance on five datasets, i.e. the five feature sets (Phy + Bio, BigramPGK, T5, ESM1b-avg, and ESM1b-concate) by five classification models (LR, SVM (poly), SVM (RBF), RF, and LightGBM) evaluated using accuracy (ACC) and the area under the receiver operating characteristic curve (AUC).The reported cross-validation results are the mean over the five CV rounds. Standard errors for both CV and test are in the parenthesis. The highest scores are highlighted in bold. CV: five-fold cross-validation; Test: held-out test set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">LR</th>
+      <th colspan="2">SVM (poly)</th>
+      <th colspan="2">SVM (RBF)</th>
+      <th colspan="2">RF</th>
+      <th colspan="2">LightGBM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ACC</td>
+      <td>AUC</td>
+      <td>ACC</td>
+      <td>AUC</td>
+      <td>ACC</td>
+      <td>AUC</td>
+      <td>ACC</td>
+      <td>AUC</td>
+      <td>ACC</td>
+      <td>AUC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Phy +Bio</td>
+      <td>CV</td>
+      <td>0.550 (0.032)</td>
+      <td>0.546(0.012)</td>
+      <td>0.614 (0.017)</td>
+      <td>0.550 (0.027)</td>
+      <td>0.545 (0.035)</td>
+      <td>0.552 (0.013)</td>
+      <td>0.609 (0.010)</td>
+      <td>0.564 (0.034)</td>
+      <td>0.525 (0.027)</td>
+      <td>0.498 (0.029)</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>0.471 (0.071)</td>
+      <td>0.395 (0.083)</td>
+      <td>0.588 (0.070)</td>
+      <td>0.552 (0.083)</td>
+      <td>0.471 (0.071)</td>
+      <td>0.371 (0.082)</td>
+      <td>0.628 (0.068)</td>
+      <td>0.489 (0.084)</td>
+      <td>0.529 (0.071)</td>
+      <td>0.503 (0.084)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">BigramPGK</td>
+      <td>CV</td>
+      <td>0.678 (0.026)</td>
+      <td>0.686 (0.019)</td>
+      <td>0.590 (0.025)</td>
+      <td>0.723 (0.025)</td>
+      <td>0.599 (0.004)</td>
+      <td>0.711 (0.030)</td>
+      <td>0.698 (0.008)</td>
+      <td>0.707 (0.025)</td>
+      <td>0.629 (0.024)</td>
+      <td>0.627 (0.028)</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>0.628 (0.068)</td>
+      <td>0.686 (0.074)</td>
+      <td>0.647 (0.068)</td>
+      <td>0.666 (0.076)</td>
+      <td>0.608 (0.069)</td>
+      <td>0.668 (0.076)</td>
+      <td>0.686 (0.066)</td>
+      <td>0.742 (0.069)</td>
+      <td>0.706 (0.064)</td>
+      <td>0.742 (0.069)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">T5</td>
+      <td>CV</td>
+      <td>0.704 (0.038)</td>
+      <td>0.742 (0.039)</td>
+      <td>0.713 (0.035)</td>
+      <td>0.744 (0.038)</td>
+      <td>0.713 (0.034)</td>
+      <td>0.737 (0.041)</td>
+      <td>0.634 (0.021)</td>
+      <td>0.747 (0.041)</td>
+      <td>0.668 (0.022)</td>
+      <td>0.756 (0.018)</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>0.647 (0.068)</td>
+      <td>0.726 (0.070)</td>
+      <td>0.628 (0.068)</td>
+      <td>0.726 (0.070)</td>
+      <td>0.628 (0.068)</td>
+      <td>0.737 (0.069)</td>
+      <td>0.647 (0.068)</td>
+      <td>0.736 (0.070)</td>
+      <td>0.471 (0.071)</td>
+      <td>0.592 (0.081)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ESM-1b-avg</td>
+      <td>CV</td>
+      <td>0.768 (0.025)</td>
+      <td>0.830 (0.025)</td>
+      <td>0.748 (0.022)</td>
+      <td>0.826 (0.028)</td>
+      <td>0.599 (0.004)</td>
+      <td>0.785 (0.055)</td>
+      <td>0.639 (0.015)</td>
+      <td>0.745 (0.058)</td>
+      <td>0.708 (0.020)</td>
+      <td>0.741 (0.044)</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>0.726 (0.063)</td>
+      <td>0.803 (0.061)</td>
+      <td>0.667 (0.067)</td>
+      <td>0.813 (0.059)</td>
+      <td>0.608 (0.069)</td>
+      <td>0.811 (0.060)</td>
+      <td>0.628 (0.068)</td>
+      <td>0.719 (0.071)</td>
+      <td>0.647 (0.068)</td>
+      <td>0.748 (0.068)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ESM-1b-concate</td>
+      <td>CV</td>
+      <td>0.782 (0.012)</td>
+      <td>0.852 (0.015)</td>
+      <td>0.792 (0.014)</td>
+      <td>0.853 (0.015)</td>
+      <td>0.773 (0.015)</td>
+      <td>0.844 (0.023)</td>
+      <td>0.609 (0.017)</td>
+      <td>0.742 (0.048)</td>
+      <td>0.718 (0.017)</td>
+      <td>0.755 (0.039)</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>0.745 (0.062)</td>
+      <td>0.797 (0.062)</td>
+      <td>0.745 (0.062)</td>
+      <td>0.824 (0.057)</td>
+      <td>0.726 (0.063)</td>
+      <td>0.798 (0.061)</td>
+      <td>0.628 (0.068)</td>
+      <td>0.850 (0.053)</td>
+      <td>0.667 (0.067)</td>
+      <td>0.726 (0.070)</td>
+    </tr>
+  </tbody>
+</table>
 
 The Transformer models perform better in general than the BigramPGK protein features (based on MSAs) and the Phy + Bio features on the accuracy and AUC metrics across all the classifiers, except for the RF classifier where BigramPGK attained the highest accuracy on the fivefold cross-validation. Out of the five features, Phy + Bio had the lowest performance. We see that the concatenated features from the ESM-1b Transformer model generally perform better than all of the other feature sets, including the Transformer features (averaged features from ESM-1b, and the T5 features). While the differences are not always significant, it is clear that the trend is that the Transformer features perform better.
 
@@ -189,7 +358,7 @@ The recent improvements to the Transformer model architectures indicate that thi
 
 A trend in the development of large Transformer models in NLP has been to build larger and larger models. 'Standard' models in NLP today have hundreds of billions of model parameters, such as Openai’s GPT-3 model with 175 billion model parameters (Brown et al., 2020) or Microsoft and Nvidia’s Megatron-Turing NLG model with 530 billion model parameters (Smith et al., 2022), but the very latest models have over a trillion model parameters (Fedus et al., 2021; Narayanan et al., 2021). This trend with ever larger models is unlikely to be sustainable since they require enormous amounts of memory and compute resources, and therefore severely limit who can build and train such models. But the trend is nevertheless clear that larger and larger models are built and are more successful. These models are also trained on ever larger sets of data. We can expect both trends to follow into computational biology and bioinformatics, with larger models trained on larger sets of data. Such a trend might limit future protein research to resource rich research institutes and companies and prevent such research to be performed at universities with limited resources.
 
-## Conclusions
+### Conclusions
 
 This work has reviewed the potential of the Transformer models for protein prediction tasks. It has analysed some of the issues faced by the existing deep learning models and described how the latest language models, based on the Transformer, are proving to be promising models for protein prediction tasks. Transformer-based models are producing state-of-the-art results on many diverse tasks. This indicates that they are very capable models able to find relevant, important, and general features in and relationships between amino acid residues in a protein sequence. Transformer models can be analysed through their attention weights and an interpretation of the model internals can give more insight into the prediction task, and even lead to new knowledge about the underlying biology. As for all ML models, there are shortcomings also with the Transformer model, such as the quadratic growth in the memory requirement and the computational complexity of the attention layers as functions of the sequence length, the fact that the attention mechanisms process fixed length input sequences, the extensive pre-training which leads to longer training time for larger models, inadequacies in the MLM pre-training procedure, etc. Despite these shortcomings, the performance of Transformer models has been attracting a much interest and efforts from the ML community to improve the models as much as possible in the respective fields. While the Transformer model has been the go-to model in NLP tasks since 2017, their capabilities are just beginning to be explored when it comes to modelling proteins for different prediction tasks. Furthermore, it could be that Transformer models alone may not be the best approach for all the protein prediction tasks and that other or traditional methods would be required, perhaps in combination with components from Transformers, to obtain results past the current state-of-the-art methods. It is also important to be aware of other differences between Transformers and other methods, and that, for instance, differences in the training procedures, or other aspects of the whole analysis pipeline, could at least in part be the reason for some of the recent improvements. For example, the MLM pre-training and finetuning procedure has also been used with CNN models, and has shown promising results (Yang et al., 2022). The AlphaFold model uses attention mechanism from Transformers to extract information in MSAs that shows Transformer model component with traditional features work quite well. Moreover, the breakthrough performance of the Transformer models has inspired other deep learning models to incorporate similar architectural enhancements. It will be interesting to follow the developments in Transformer-based models and other deep learning models as a whole and its application to understanding proteins and its properties.
 

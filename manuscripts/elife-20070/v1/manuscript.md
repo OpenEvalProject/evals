@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.20070.001 mRNA is cotranscrptionally processed and packaged into messenger ribonucleoprotein particles (mRNPs) in the nucleus. Prior to export through the nuclear pore, mRNPs undergo several obligatory remodeling reactions. In yeast, one of these reactions involves loading of the mRNA-binding protein Yra1 by the DEAD-box ATPase Sub2 as assisted by the hetero-pentameric THO complex. To obtain molecular insights into reaction mechanisms, we determined crystal structures of two relevant complexes: a THO hetero-pentamer bound to Sub2 at 6.0 Å resolution; and Sub2 associated with an ATP analogue, RNA, and a C-terminal fragment of Yra1 (Yra1-C) at 2.6 Å resolution. We found that the 25 nm long THO clamps Sub2 in a half-open configuration; in contrast, when bound to the ATP analogue, RNA and Yra1-C, Sub2 assumes a closed conformation. Both THO and Yra1-C stimulated Sub2’s intrinsic ATPase activity. We propose that THO surveys common landmarks in each nuclear mRNP to localize Sub2 for targeted loading of Yra1. DOI: http://dx.doi.org/10.7554/eLife.20070.001
+mRNA is cotranscrptionally processed and packaged into messenger ribonucleoprotein particles (mRNPs) in the nucleus. Prior to export through the nuclear pore, mRNPs undergo several obligatory remodeling reactions. In yeast, one of these reactions involves loading of the mRNA-binding protein Yra1 by the DEAD-box ATPase Sub2 as assisted by the hetero-pentameric THO complex. To obtain molecular insights into reaction mechanisms, we determined crystal structures of two relevant complexes: a THO hetero-pentamer bound to Sub2 at 6.0 Å resolution; and Sub2 associated with an ATP analogue, RNA, and a C-terminal fragment of Yra1 (Yra1-C) at 2.6 Å resolution. We found that the 25 nm long THO clamps Sub2 in a half-open configuration; in contrast, when bound to the ATP analogue, RNA and Yra1-C, Sub2 assumes a closed conformation. Both THO and Yra1-C stimulated Sub2’s intrinsic ATPase activity. We propose that THO surveys common landmarks in each nuclear mRNP to localize Sub2 for targeted loading of Yra1.
 
 ## Introduction
 
@@ -28,49 +28,326 @@ Here, we report crystal structures of two relevant assemblies to provide insight
 
 ## Results
 
-## Structural determination of a THO•Sub2 complex
+### Structural determination of a THO•Sub2 complex
 
-THO is required for the recruitment of Sub2 onto actively transcribed genes (
+THO is required for the recruitment of Sub2 onto actively transcribed genes (Zenklusen et al., 2002). However, the molecular role of their interaction in mRNP remodeling is not clear. To characterize the THO-Sub2 interaction, we set out to assemble the yeast THO complex using an insect cell expression system. Previous studies showed that THO exists as a robust structural and functional unit in vivo, and knockdown of individual subunits causes down-regulation of the other subunits (Huertas et al., 2006). Consistent with this, we could only obtain THO by means of co-expression. Because of the low yield of full-length THO, we removed potentially disordered regions based on secondary structure prediction, and replaced the Saccharomyces cerevesiae Tex1 subunit with Saccharomyces bayanus Tex1, to assemble a stable core module of THO (denoted by THO*). The purified THO* showed stoichiometric amounts of each subunit (Figure 1A,B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic representation of THO and Sub2. Recombinant protein fragments that were used for crystallization are indicated by bars. The THO core complex (THO*) contains S. cerevisiae Tho2, Hpr1, Mft1, and Thp2, as well as S. bayanus Tex1 (81% sequence identity with S. cerevisiae Tex1). The DEAD-box ATPase Sub2 contains two recombinase A (RecA)-like domains labeled as Sub2-N and Sub2-C. (B) Coomassie-stained SDS-polyacrylamide gel electrophoresis (PAGE) of purified THO* complex and full-length Sub2. (C) Three views of the THO*•Sub2 complex with THO* in a cartoon representation and Sub2 in a surface representation. (D) Experimental electron density map of Sub2 after density modification, contoured at 1.0σ level corresponding to the view of the upper left panel in C.DOI: http://dx.doi.org/10.7554/eLife.20070.002
+**Figure 1.:** (A) Schematic representation of THO and Sub2. Recombinant protein fragments that were used for crystallization are indicated by bars. The THO core complex (THO*) contains S. cerevisiae Tho2, Hpr1, Mft1, and Thp2, as well as S. bayanus Tex1 (81% sequence identity with S. cerevisiae Tex1). The DEAD-box ATPase Sub2 contains two recombinase A (RecA)-like domains labeled as Sub2-N and Sub2-C. (B) Coomassie-stained SDS-polyacrylamide gel electrophoresis (PAGE) of purified THO* complex and full-length Sub2. (C) Three views of the THO*•Sub2 complex with THO* in a cartoon representation and Sub2 in a surface representation. (D) Experimental electron density map of Sub2 after density modification, contoured at 1.0σ level corresponding to the view of the upper left panel in C.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Silver-stained SDS-PAGE analysis of washed crystals of the THO*•Sub2 complex, indicating the presence of stoichiometric amounts of each subunit. (B) Omit 2Fo-Fc electron density map of the THO*•Sub2 complex calculated by rigid body refinement of the model omitting two helices of THO*. Only density in the vicinity of the omitted helices is shown. The map is contoured at 1.0σ. The region of the omit map is indicated by the box on the right side overall view.DOI: http://dx.doi.org/10.7554/eLife.20070.003
+**Figure 1—figure supplement 1.:** (A) Silver-stained SDS-PAGE analysis of washed crystals of the THO*•Sub2 complex, indicating the presence of stoichiometric amounts of each subunit. (B) Omit 2Fo-Fc electron density map of the THO*•Sub2 complex calculated by rigid body refinement of the model omitting two helices of THO*. Only density in the vicinity of the omitted helices is shown. The map is contoured at 1.0σ. The region of the omit map is indicated by the box on the right side overall view.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Negative stain EM localization of THO subunits using N-terminal or C-terminal MBP tags. Four representative class averages are shown for each MBP tagged complex; one class average of the untagged THO* in the same orientation is shown as a control. The tag position is indicated by an arrowhead in each class average. Each box is approximately 44 × 44 nm. (B) Subunit localization indicated in the low-pass filtered THO* structure at 40 Å (Tang et al., 2007), according to A.DOI: http://dx.doi.org/10.7554/eLife.20070.004
+**Figure 1—figure supplement 2.:** (A) Negative stain EM localization of THO subunits using N-terminal or C-terminal MBP tags. Four representative class averages are shown for each MBP tagged complex; one class average of the untagged THO* in the same orientation is shown as a control. The tag position is indicated by an arrowhead in each class average. Each box is approximately 44 × 44 nm. (B) Subunit localization indicated in the low-pass filtered THO* structure at 40 Å (Tang et al., 2007), according to A.
 
-THO* was crystallized in complex with separately expressed full-length Sub2. We determined a THO*•Sub2 structure at 6.0 Å resolution using single-wavelength anomalous diffraction (SAD) from crystals soaked with phosphotungstate or tantalum bromide clusters (Figure 1C, Table 1, and Figure 1—figure supplement 1). Although the resolution is not high enough to trace individual residues, it allows us to characterize secondary structures. In this structure, two RecA domains of Sub2, Sub2-N and Sub2-C, are modeled separately using the Sub2 structure reported in this study; a polyalanine model of Tex1 is derived from WDR5, which shares 41% sequence homology with Tex1 for the residue range 50–344; and the remainder of THO is built with polyalanine α-helices. The THO*•Sub2 model presented here reveals the overall architecture of THO and, more importantly, the interaction between THO and Sub2.10.7554/eLife.20070.005Table 1.Data collection and refinement statistics for the structure of the THO*•Sub2 complex.DOI: http://dx.doi.org/10.7554/eLife.20070.005W-IW-IIW-IIITa-ITa-IIData collection Space groupP21P21P21P21P21Cell dimensions a, b, c (Å)152.9,323.0,176.8153.3,319.5,176.4152.7,322.2,175.6153.3,327.3,175.2153.3,328.1,174.4 β (°)101.3101.0101.1101.9101.9Wavelength (Å)1.21231.21411.21411.25241.2553Resolution (Å)50–6.0 50–6.8 50–7.2 50–7.6 50–7.5 (6.1–6.0)*(6.92–6.80)*(7.32–7.20)*(7.73–7.60)*(7.63–7.50)*Rmerge (%)14.0 (75.1) 18.2 (112.7) 17.7 (87.6) 11.5 (85.2) 11.2 (90.5) <I / σI> 13.3 (2.1) 14.4 (2.7) 11.5 (2.5) 17.3 (2.2) 17.6 (2.1) Completeness (%)98.8 (94.8) 89.8 (78.3) 99.8 (100.0) 100.0 (100.0) 100.0 (100.0) CC1/299.3 (68.5) 99.5 (70.2) 99.1 (72.8) 99.7 (77.4) 99.7 (79.8) Redundancy6.5 (4.8) 9.8 (9.7) 7.1 (7.2) 6.8 (6.8) 6.8 (6.8) SAD phasing Resolution50–8.5 50–7.5 50–8.0 50–8.0 50–8.0 Number of sites1119191818Figure of Merit0.410.450.460.450.45Refinement Resolution (Å)50–6.0 No. reflections total41038 test set2078Rwork / Rfree (%)43.6/43.4No. atoms Protein30205 Ligand/ion583B-factors200Ramachandran plot (%)Favored/Allowed/Disallowed99.4/0.6/0.0R.m.s deviations Bond lengths (Å)0.010 Bond angles (°)1.408*Highest-resolution shell is shown in parentheses.
+THO* was crystallized in complex with separately expressed full-length Sub2. We determined a THO*•Sub2 structure at 6.0 Å resolution using single-wavelength anomalous diffraction (SAD) from crystals soaked with phosphotungstate or tantalum bromide clusters (Figure 1C, Table 1, and Figure 1—figure supplement 1). Although the resolution is not high enough to trace individual residues, it allows us to characterize secondary structures. In this structure, two RecA domains of Sub2, Sub2-N and Sub2-C, are modeled separately using the Sub2 structure reported in this study; a polyalanine model of Tex1 is derived from WDR5, which shares 41% sequence homology with Tex1 for the residue range 50–344; and the remainder of THO is built with polyalanine α-helices. The THO*•Sub2 model presented here reveals the overall architecture of THO and, more importantly, the interaction between THO and Sub2.
 
-## Architecture of THO
+**Table 1.**
+ Data collection and refinement statistics for the structure of the THO*•Sub2 complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>W-I</th>
+      <th>W-II</th>
+      <th>W-III</th>
+      <th>Ta-I</th>
+      <th>Ta-II</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P21</td>
+      <td>P21</td>
+      <td>P21</td>
+      <td>P21</td>
+      <td>P21</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>152.9,323.0,176.8</td>
+      <td>153.3,319.5,176.4</td>
+      <td>152.7,322.2,175.6</td>
+      <td>153.3,327.3,175.2</td>
+      <td>153.3,328.1,174.4</td>
+    </tr>
+    <tr>
+      <td>β (°)</td>
+      <td>101.3</td>
+      <td>101.0</td>
+      <td>101.1</td>
+      <td>101.9</td>
+      <td>101.9</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.2123</td>
+      <td>1.2141</td>
+      <td>1.2141</td>
+      <td>1.2524</td>
+      <td>1.2553</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–6.0</td>
+      <td>50–6.8</td>
+      <td>50–7.2</td>
+      <td>50–7.6</td>
+      <td>50–7.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(6.1–6.0)*</td>
+      <td>(6.92–6.80)*</td>
+      <td>(7.32–7.20)*</td>
+      <td>(7.73–7.60)*</td>
+      <td>(7.63–7.50)*</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)</td>
+      <td>14.0 (75.1)</td>
+      <td>18.2 (112.7)</td>
+      <td>17.7 (87.6)</td>
+      <td>11.5 (85.2)</td>
+      <td>11.2 (90.5)</td>
+    </tr>
+    <tr>
+      <td>&lt;I / σI&gt;</td>
+      <td>13.3 (2.1)</td>
+      <td>14.4 (2.7)</td>
+      <td>11.5 (2.5)</td>
+      <td>17.3 (2.2)</td>
+      <td>17.6 (2.1)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.8 (94.8)</td>
+      <td>89.8 (78.3)</td>
+      <td>99.8 (100.0)</td>
+      <td>100.0 (100.0)</td>
+      <td>100.0 (100.0)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>99.3 (68.5)</td>
+      <td>99.5 (70.2)</td>
+      <td>99.1 (72.8)</td>
+      <td>99.7 (77.4)</td>
+      <td>99.7 (79.8)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.5 (4.8)</td>
+      <td>9.8 (9.7)</td>
+      <td>7.1 (7.2)</td>
+      <td>6.8 (6.8)</td>
+      <td>6.8 (6.8)</td>
+    </tr>
+    <tr>
+      <td>SAD phasing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution</td>
+      <td>50–8.5</td>
+      <td>50–7.5</td>
+      <td>50–8.0</td>
+      <td>50–8.0</td>
+      <td>50–8.0</td>
+    </tr>
+    <tr>
+      <td>Number of sites</td>
+      <td>11</td>
+      <td>19</td>
+      <td>19</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Figure of Merit</td>
+      <td>0.41</td>
+      <td>0.45</td>
+      <td>0.46</td>
+      <td>0.45</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–6.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>total</td>
+      <td>41038</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>test set</td>
+      <td>2078</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree (%)</td>
+      <td>43.6/43.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>30205</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>583</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td>200</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored/Allowed/Disallowed</td>
+      <td>99.4/0.6/0.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.408</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest-resolution shell is shown in parentheses._
+
+### Architecture of THO
 
 The 360 kDa THO*•Sub2 complex reveals an elongated THO*, ~25 nm from ‘head’ to ‘tail’ (Figure 1C). Its dimensions are close to those reported previously for full-length THO isolated from yeast and analyzed by negative stain EM (Peña et al., 2012). Two elements project from the elongated base, an extended one close to the head and a short one that represents the Tex1 subunit. Tex1 folds into a seven-bladed β-propeller with its smaller top surface facing toward the head. It is clamped to the base via contacts on two opposite sides of the propeller.
 
 To further explore the subunit architecture of THO, we mapped the locations of its individual subunits by negative stain EM through N- or C-terminal maltose-binding protein (MBP) labeling (Figure 1—figure supplement 2). We found that the N-termini of Tho2 and Hpr1 were localized close to the head, while their C-termini were localized at the tail. These data indicate that the Tho2 and Hpr1 subunits span the longest dimension of THO*. In addition, the N-termini of Mft1 and Thp2 were assigned to the head, while their C-termini could not be positioned reliably.
 
-## THO stimulates the ATPase activity of Sub2
+### THO stimulates the ATPase activity of Sub2
 
-The THO*•Sub2 complex features a bi-lobed structure for Sub2 (
+The THO*•Sub2 complex features a bi-lobed structure for Sub2 (Figure 1C and Figure 2A). Interestingly, the middle region of THO* makes contact with both the Sub2-N and Sub2-C lobes and induces a semi-open conformation. DEAD box ATPases like Sub2 exhibit distinct conformations during the ATP hydrolysis cycle. In the absence of nucleotide and RNA, the two RecA domains are separated, representing an ‘open’ conformation (Caruthers et al., 2000; Shi et al., 2004). ATP and RNA binding induces a ‘closed’ form that is productive for ATP hydrolysis (Sengoku et al., 2006; von Moeller et al., 2009). The semi-open conformation of Sub2 in the THO*•Sub2 complex is close to its ATP/RNA-bound active state (Figure 2A and Figure 2—figure supplement 1). This observation prompted us to examine whether THO regulates the Sub2 ATPase activity. Indeed, we found that THO* accelerated the ATPase activity of Sub2 by ~3.5-fold (Figure 2B). The Sub2 stimulating activity of THO* is similar to that of full-length THO, indicating that THO* maintains the full stimulatory effect of THO (Figure 2—figure supplement 2). Collectively, our results demonstrate that THO is a previously uncharacterized regulator of the Sub2 ATPase.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig2-v1.jpg)
 
-**Figure 2.:** (A) THO* binding induces a half-open conformation of Sub2. The upper panels indicate the positions of corresponding middle panels within the THO*•Sub2 complex. The Tex1 subunit of THO* does not contact Sub2 and is omitted in the middle panels for clarity. Interacting residues of Sub2, which have been subjected to mutagenesis in B, are highlighted in green. The lower panel close-up views show the experimental density map of THO* after density modification, contoured at 1.5σ level. (B) Disruption of the THO*-Sub2 interaction compromises the stimulation of Sub2 ATPase activity (mole of ADP produced per second per mole of Sub2) by THO*. Error bars represent standard deviation of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.20070.006
+**Figure 2.:** (A) THO* binding induces a half-open conformation of Sub2. The upper panels indicate the positions of corresponding middle panels within the THO*•Sub2 complex. The Tex1 subunit of THO* does not contact Sub2 and is omitted in the middle panels for clarity. Interacting residues of Sub2, which have been subjected to mutagenesis in B, are highlighted in green. The lower panel close-up views show the experimental density map of THO* after density modification, contoured at 1.5σ level. (B) Disruption of the THO*-Sub2 interaction compromises the stimulation of Sub2 ATPase activity (mole of ADP produced per second per mole of Sub2) by THO*. Error bars represent standard deviation of three independent experiments.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Difference in the conformation of the ATPase in a nucleotide-free ‘open’ state (PDB 1XTI) as compared to a ‘semi-open’ state when bound to THO (Figure 1C, THO is omitted) and to a ‘closed’ state when bound to RNA and Yra1-C (Figure 3B, Yra1-C is omitted). The structures are viewed in the same orientation after alignment of the C-terminal RecA domain of the ATPase. The arrows indicate the distance between Leu281 and Glu87 of Sub2 or between equivalent residues of its human homolog UAP56.DOI: http://dx.doi.org/10.7554/eLife.20070.007
+**Figure 2—figure supplement 1.:** Difference in the conformation of the ATPase in a nucleotide-free ‘open’ state (PDB 1XTI) as compared to a ‘semi-open’ state when bound to THO (Figure 1C, THO is omitted) and to a ‘closed’ state when bound to RNA and Yra1-C (Figure 3B, Yra1-C is omitted). The structures are viewed in the same orientation after alignment of the C-terminal RecA domain of the ATPase. The arrows indicate the distance between Leu281 and Glu87 of Sub2 or between equivalent residues of its human homolog UAP56.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A) SDS-PAGE of the assembled full-length S. cerevisiae THO complex, as well as various Sub2 and Yra1 proteins used in biochemical assays. (B) UV readings at 340 nm (lightpath corrected) during the ATPase assay. The rate of background NADH decomposition was later subtracted to calculate the ATP hydrolysis rate. (C) THO and Yra1-C cumulatively accelerated the ATP hydrolysis rate of Sub2. Error bars represent standard deviation of three independent experiments. The reaction rates for Sub2 alone and for Sub2 in the presence of Yra1-C are the same as those in Figure 4B.DOI: http://dx.doi.org/10.7554/eLife.20070.008
+**Figure 2—figure supplement 2.:** (A) SDS-PAGE of the assembled full-length S. cerevisiae THO complex, as well as various Sub2 and Yra1 proteins used in biochemical assays. (B) UV readings at 340 nm (lightpath corrected) during the ATPase assay. The rate of background NADH decomposition was later subtracted to calculate the ATP hydrolysis rate. (C) THO and Yra1-C cumulatively accelerated the ATP hydrolysis rate of Sub2. Error bars represent standard deviation of three independent experiments. The reaction rates for Sub2 alone and for Sub2 in the presence of Yra1-C are the same as those in Figure 4B.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** Comparison of THO*•Sub2 with Gle1•Dbp5 (PDB 3RRN), eIF4G•eIF4A (PDB 2VSO), and CNOT1•DDX6 (PDB 4CT4) suggests a general binding mode between DEAD-box ATPases and their activators. The structures are viewed in the same orientation after alignment of the C-terminal RecA domain of the ATPases.DOI: http://dx.doi.org/10.7554/eLife.20070.009
+**Figure 2—figure supplement 3.:** Comparison of THO*•Sub2 with Gle1•Dbp5 (PDB 3RRN), eIF4G•eIF4A (PDB 2VSO), and CNOT1•DDX6 (PDB 4CT4) suggests a general binding mode between DEAD-box ATPases and their activators. The structures are viewed in the same orientation after alignment of the C-terminal RecA domain of the ATPases.
 
 Notably, this ATPase activation mechanism by configuring the two RecA domains in a half-open conformation is shared with several other DEAD-box proteins: Dbp5 in mRNA export, eIF4A in translation initiation, and DDX6 in miRNA-mediated translational repression, which are activated by Gle1, eIF4G, and CNOT1, respectively (Figure 2—figure supplement 3) (Folkmann et al., 2011; Mathys et al., 2014; Montpetit et al., 2011; Schütz et al., 2008). Moreover, the THO* arrangement of pairs of helices at the THO*-Sub2 interface resembles the MIF4G (middle of eIF4G) domains from Gle1, eIF4G, and CNOT1, further indicating a conserved mechanism of DEAD-box ATPase activation.
 
@@ -78,35 +355,184 @@ Recognition of the C-terminal RecA domain of DEAD-box proteins by their MIF4G co
 
 The semi-open configuration of Sub2 bound to THO may represent a ‘primed’ state for efficient mRNP engagement. DEAD-box proteins like Sub2 lack RNA specificity, so they are directed to their physiological RNA substrates by their partners (Linder and Jankowsky, 2011). THO has recently been shown to directly bind the phosphorylated C-terminal domain (CTD) of the largest Pol II subunit (Meinel et al., 2013). In addition, cotranscriptional loading of Sub2 onto active genes requires the Hpr1 subunit of THO (Zenklusen et al., 2002). Therefore, THO is well suited to the role of recruiting Sub2 to the transcription machinery, priming and targeting it to appropriate mRNP substrates, potentially those that have been properly processed.
 
-## Structural characterization of a Sub2•Yra1-C•RNA complex
+### Structural characterization of a Sub2•Yra1-C•RNA complex
 
-Sub2 has been implicated in loading of Yra1 onto mRNP in an ATP-dependent manner from studies on their human homologs (
+Sub2 has been implicated in loading of Yra1 onto mRNP in an ATP-dependent manner from studies on their human homologs (Dufu et al., 2010; Luo et al., 2001; Taniguchi and Ohno, 2008). To understand the molecular basis of Yra1 deposition by Sub2, one of the TREX-mediated remodeling reactions, we sought to determine the structure of their complex. Yra1 contains two conserved motifs at both termini (N-box and C-box), which are involved in Sub2 binding (Figure 3A). The two motifs of Yra1 are joined to the central conserved RRM domain through variable regions (N-vr and C-vr), which are implicated in RNA binding (Hautbergue et al., 2008; Zenklusen et al., 2001). Full-length Yra1 was not soluble under normal buffer conditions. Genetic studies indicated that the N-box and C-box motifs are functionally redundant, but a Yra1 mutant lacking the C-box exhibits a stronger growth phenotype (Zenklusen et al., 2001). Thus, we focused on a C-terminal fragment of Yra1, Yra1-C (a.a. 185–226) that comprises C-vr and C-box, to investigate its interaction with Sub2.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig3-v1.jpg)
 
-**Figure 3.:** (A) Schematic representation of Yra1. Yra1-C and Yra1-C* were used for biochemical assays and crystallization studies, respectively. (B) Cartoon representation of the Sub2•Yra1-C*•RNA complex in two orientations. (C and D) Details of the Sub2-RNA and Sub2-Yra1 interactions, corresponding to the view in the right panel in B. The polar interaction network is indicated by black dashes. (E) Schematic representation of the Sub2-Yra1 interactions. Black dashes indicate polar interactions. Black lines indicate van der Waals interactions.DOI: http://dx.doi.org/10.7554/eLife.20070.010
+**Figure 3.:** (A) Schematic representation of Yra1. Yra1-C and Yra1-C* were used for biochemical assays and crystallization studies, respectively. (B) Cartoon representation of the Sub2•Yra1-C*•RNA complex in two orientations. (C and D) Details of the Sub2-RNA and Sub2-Yra1 interactions, corresponding to the view in the right panel in B. The polar interaction network is indicated by black dashes. (E) Schematic representation of the Sub2-Yra1 interactions. Black dashes indicate polar interactions. Black lines indicate van der Waals interactions.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Alignment of Sub2•RNA with eIF4AIII•RNA (PDB 2 J0S) and Dbp5•RNA (PDB 3FHT) indicates a conserved mechanism of RNA recognition by DEAD-box proteins. (B) Schematic drawing of the polar interactions between Sub2 and RNA.DOI: http://dx.doi.org/10.7554/eLife.20070.011
+**Figure 3—figure supplement 1.:** (A) Alignment of Sub2•RNA with eIF4AIII•RNA (PDB 2 J0S) and Dbp5•RNA (PDB 3FHT) indicates a conserved mechanism of RNA recognition by DEAD-box proteins. (B) Schematic drawing of the polar interactions between Sub2 and RNA.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Overall sequence conservation at each position is shaded from light gray (60% similarity) to black (100% identity). Numbering of the residues is according to yeast Yra1. The secondary structure as shown in Figure 3B is indicated above the sequence as rectangle (α-helix), line (coil region), and dots (disordered residues).DOI: http://dx.doi.org/10.7554/eLife.20070.012
+**Figure 3—figure supplement 2.:** Overall sequence conservation at each position is shaded from light gray (60% similarity) to black (100% identity). Numbering of the residues is according to yeast Yra1. The secondary structure as shown in Figure 3B is indicated above the sequence as rectangle (α-helix), line (coil region), and dots (disordered residues).
 
-We determined a 2.6 Å crystal structure of Sub2 (a.a. 62–446) in complex with a truncated Yra1-C (Yra1-C*, a.a. 200–226), poly (U) 15-mer RNA, and the non-hydrolyzable ATP analogue ADP•BeF3 (Figure 3B and Table 2). Within this Sub2•Yra1-C*•RNA complex, Sub2 adopts a closed conformation with ADP•BeF3 and 6-nt of RNA (U1 to U6) bound in between Sub2-N and Sub2-C (Figure 3B,C, and Figure 2—figure supplement 1). The RNA is sharply bent between U4 and U5, as observed in structures of other RNA-bound DEAD-box ATPases (Figure 3—figure supplement 1). Sub2 is recognized by the conserved C-box of Yra1 (a.a. 208–226), which folds into a helix that fits in the groove formed by two helices of Sub2-N (Figure 3—figure supplement 2). Likely due to flexibility, electron density of the C-vr region and 9-nt of RNA is missing in the crystal structure. The interactions between Sub2 and Yra1 employ a number of Yra1 residues (Figure 3D,E). Specifically, Yra1 D216, E218, and Y222 make key polar contacts with Sub2, whereas L215, M219, and Y222 contribute to van der Waals interactions at the interface.10.7554/eLife.20070.013Table 2.Data collection and refinement statistics for the structure of the Sub2•Yra1*-C•RNA complex.DOI: http://dx.doi.org/10.7554/eLife.20070.013Sub2•Yra1-C*•RNAData collection Space groupP3121Cell dimensions a, b, c (Å)99.3, 99.3, 247.5 α, β, γ (°)90, 90, 120Wavelength (Å)0.9792Resolution (Å)50–2.6 (2.69–2.60)*Rmerge (%)16.4 (101.6) <I / σI> 13.3 (2.3) Completeness (%)100.0 (100.0) CC1/299.4 (72.9) Redundancy9.9 (8.9) Refinement Resolution (Å)50–2.6 No. reflections total44,413 test set2235Rwork / Rfree (%)21.9/26.8No. atoms Protein9644 RNA360 Ligand/ion96 Water27B-factors Protein56.3 RNA68.1 Ligand/ion46.2 Water34.9Ramachandran plot (%) Favored/Allowed/Disallowed97.6/2.4/0.0R.m.s deviations Bond lengths (Å)0.007 Bond angles (°)1.076*Highest-resolution shell is shown in parentheses.
+We determined a 2.6 Å crystal structure of Sub2 (a.a. 62–446) in complex with a truncated Yra1-C (Yra1-C*, a.a. 200–226), poly (U) 15-mer RNA, and the non-hydrolyzable ATP analogue ADP•BeF3 (Figure 3B and Table 2). Within this Sub2•Yra1-C*•RNA complex, Sub2 adopts a closed conformation with ADP•BeF3 and 6-nt of RNA (U1 to U6) bound in between Sub2-N and Sub2-C (Figure 3B,C, and Figure 2—figure supplement 1). The RNA is sharply bent between U4 and U5, as observed in structures of other RNA-bound DEAD-box ATPases (Figure 3—figure supplement 1). Sub2 is recognized by the conserved C-box of Yra1 (a.a. 208–226), which folds into a helix that fits in the groove formed by two helices of Sub2-N (Figure 3—figure supplement 2). Likely due to flexibility, electron density of the C-vr region and 9-nt of RNA is missing in the crystal structure. The interactions between Sub2 and Yra1 employ a number of Yra1 residues (Figure 3D,E). Specifically, Yra1 D216, E218, and Y222 make key polar contacts with Sub2, whereas L215, M219, and Y222 contribute to van der Waals interactions at the interface.
 
-## Sub2 and Yra1 cooperatively bind to RNA
+**Table 2.**
+ Data collection and refinement statistics for the structure of the Sub2•Yra1*-C•RNA complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sub2•Yra1-C*•RNA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P3121</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>99.3, 99.3, 247.5</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 120</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9792</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–2.6 (2.69–2.60)*</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)</td>
+      <td>16.4 (101.6)</td>
+    </tr>
+    <tr>
+      <td>&lt;I / σI&gt;</td>
+      <td>13.3 (2.3)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100.0 (100.0)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>99.4 (72.9)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>9.9 (8.9)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–2.6</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>total</td>
+      <td>44,413</td>
+    </tr>
+    <tr>
+      <td>test set</td>
+      <td>2235</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree (%)</td>
+      <td>21.9/26.8</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>9644</td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>360</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>56.3</td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>68.1</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>46.2</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>34.9</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored/Allowed/Disallowed</td>
+      <td>97.6/2.4/0.0</td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.076</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest-resolution shell is shown in parentheses._
+
+### Sub2 and Yra1 cooperatively bind to RNA
 
 Sub2, like other DEAD-box proteins (Linder and Jankowsky, 2011), predominantly interacts with the phosphate-ribose backbone of RNA, with Sub2-N and Sub2-C contacting the 3’ and 5’ ends, respectively (Figure 3B,C, and Figure 3—figure supplement 1). Notably, the RNA binding C-vr region of Yra1 that precedes C-box is located close to the RNA, which raises the possibility that it could extend the RNA-binding site in the Sub2•Yra1-C•RNA complex. Therefore, we examined whether Yra1 affects the RNA binding properties of Sub2.
 
-Using an electrophoretic mobility shift assay with poly(U) RNA, we found that Sub2 and RNA formed a complex in the presence of the non-hydrolyzable ATP analogue, ATP-γ-S (
+Using an electrophoretic mobility shift assay with poly(U) RNA, we found that Sub2 and RNA formed a complex in the presence of the non-hydrolyzable ATP analogue, ATP-γ-S (Figure 4A, compare lanes 1 and 2). In addition, Yra1-C is capable of binding RNA, while C-box alone is not, indicating that the RNA-binding ability indeed lies in C-vr (Figure 4A, compare lanes 3 and 8). The presence of Yra1-C promoted Sub2-RNA interaction, forming a trimeric Sub2•Yra1-C•RNA complex (Figure 4A, compare lanes 2 and 4–6). Importantly, this stimulation of RNA binding to Sub2 by Yra1-C was dependent on the presence of both ATP-γ-S and the C-vr region of Yra1 (Figure 4A, compare lanes 6, 7, and 9). Our structural and biochemical studies suggest that Sub2 and Yra1-C, by spatially juxtaposing their RNA binding regions, cooperatively bind to RNA.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig4-v1.jpg)
 
-**Figure 4.:** (A) Effect of Yra1 on the RNA binding properties of Sub2. An electrophoretic mobility shift assay was carried out with a fluorescently labeled poly(U) 20-mer RNA. Note that the Sub2•RNA complex (marked with a star) migrated slightly faster than the Sub2•Yra1-C•RNA complex. (B) Disruption of either Yra1-Sub2 or Yra1-RNA interaction compromises the stimulation of Sub2 ATPase activity by Yra1. Error bars represent standard deviation of three independent experiments. The reaction rate for Sub2 alone is the same as that in Figure 2B. (C) Schematic representation of the interaction between Sub2, Yra1-C, and RNA. The arrow indicates a potential interaction between the C-vr region of Yra1 and RNA, based on biochemical studies in A and the position of C-box in the Sub2•Yra1-C*•RNA structure.DOI: http://dx.doi.org/10.7554/eLife.20070.014
+**Figure 4.:** (A) Effect of Yra1 on the RNA binding properties of Sub2. An electrophoretic mobility shift assay was carried out with a fluorescently labeled poly(U) 20-mer RNA. Note that the Sub2•RNA complex (marked with a star) migrated slightly faster than the Sub2•Yra1-C•RNA complex. (B) Disruption of either Yra1-Sub2 or Yra1-RNA interaction compromises the stimulation of Sub2 ATPase activity by Yra1. Error bars represent standard deviation of three independent experiments. The reaction rate for Sub2 alone is the same as that in Figure 2B. (C) Schematic representation of the interaction between Sub2, Yra1-C, and RNA. The arrow indicates a potential interaction between the C-vr region of Yra1 and RNA, based on biochemical studies in A and the position of C-box in the Sub2•Yra1-C*•RNA structure.
 
-## Yra1 stimulates the ATPase activity of Sub2
+### Yra1 stimulates the ATPase activity of Sub2
 
 Previous reports showed that human Alyref (Yra1 in yeast) is an activator of the UAP56 (Sub2 in yeast) ATPase (Chang et al., 2013; Taniguchi and Ohno, 2008). To test whether this mechanism is conserved in yeast, we examined the effect of Yra1-C on the ATPase activity of Sub2. We found that Yra1-C is capable of accelerating Sub2 ATPase activity by ~2 fold (Figure 4B), which is comparable to the reported ~3 fold UAP56 stimulation by full length Alyref. Since Yra1-C interacts with both Sub2 and RNA within the Sub2•Yra1-C•RNA complex, we next assessed the contribution of each interaction to Sub2 stimulation. L215D or D216K mutation was introduced on Yra1 to, respectively, disrupt the hydrophobic or polar interactions at the Sub2-Yra1 interface (Figure 3D). We found that both mutations abolished the stimulatory effect of Yra1-C (Figure 4B). Similarly, C-box alone, lacking the C-vr RNA binding region, showed no stimulation of Sub2. Taken together, we conclude that Yra1-C exhibits a bipartite interaction, with the C-box binding to Sub2-N and the C-vr binding to RNA, both of which contribute to Sub2 activation (Figure 4C).
 
@@ -118,11 +544,11 @@ Some other proteins have been shown to contain C-box motifs, such as Uif, Chtop,
 
 ## Discussion
 
-The TREX complex plays a critical role in the recruitment of export factors to produce export competent mRNPs (
+The TREX complex plays a critical role in the recruitment of export factors to produce export competent mRNPs (Rodríguez-Navarro and Hurt, 2011; Stewart, 2010). Here, our structural observations combined with biochemical studies have provided molecular snapshots of these TREX-mediated mRNP remodeling reactions (Figure 5). Our data support a model in which THO mediates targeted deposition of Yra1 and Mex67•Mtr2 on mRNPs through an ATP-dependent process.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/20070/elife-20070-fig5-v1.jpg)
 
-**Figure 5.:** THO recognizes some landmarks of properly processed mRNP, primes Sub2 in a semi-open configuration and mediates targeted deposition of Sub2 and Yra1 onto the mRNP. Next, THO and Yra1 assist in loading of the export receptor Mex67•Mtr2, thereby initiating a series of obligatory reactions for mRNP nuclear export.DOI: http://dx.doi.org/10.7554/eLife.20070.015
+**Figure 5.:** THO recognizes some landmarks of properly processed mRNP, primes Sub2 in a semi-open configuration and mediates targeted deposition of Sub2 and Yra1 onto the mRNP. Next, THO and Yra1 assist in loading of the export receptor Mex67•Mtr2, thereby initiating a series of obligatory reactions for mRNP nuclear export.
 
 Previous studies suggested that the Sub2 ATPase is recruited to the transcription machinery via the THO complex, which directly binds phosphorylated Pol II CTD (Meinel et al., 2013; Zenklusen et al., 2002). In doing so, THO would bring Sub2 into spatial proximity to an elongating mRNA transcript. Our studies indicate that THO binding serves as more than a physical attachment. In the complex with THO, Sub2 assumes a semi-open conformation, which is similar to its catalytically active state. Interestingly, we found that THO stimulates the ATPase activity of Sub2. Our data support a view that THO, by configuring a semi-open conformation of Sub2, primes it for engaging with mRNA. The mechanism that restricts the activity of TREX to properly processed transcripts is currently not clear. Potentially, THO could deposit Sub2 upon recognizing a certain feature of an mRNP. Previous studies have shown that TREX functions genome-wide, for both intronless and intron-containing genes (Abruzzi et al., 2004; Lei et al., 2011; Masuda et al., 2005). However, it remains to be determined whether THO recognizes a universal feature for both types of transcripts.
 
@@ -132,7 +558,7 @@ Because binding of Mex67•Mtr2 and Sub2 to Yra1 is mutually exclusive, recruitm
 
 ## Materials and methods
 
-## Protein production
+### Protein production
 
 Yeast THO complex was expressed in High-Five insect cells by co-infection of recombinant baculoviruses encoding THO subunits as indicated (S. cerevisiae proteins, unless otherwise stated). To prepare the full length THO complex, each subunit was tagged with an N-terminal TEV-cleavable His tag, with the exception of Thp2, which was untagged. For crystallization purposes, various chimeric THO complexes containing S. cerevisiae and S. bayanus THO subunits were examined; a stable chimeric THO core complex (THO*) was successfully crystallized. To prepare THO*, Tho2 (residues 1–1207) and Tex1 (S. bayanus, residues 1–380) subunits were expressed with N-terminal TEV-cleavable His tags, while Hpr1 (residues 1–603), Mft1 (residues 1–256) and Thp2 (residues 1–261) were untagged. For negative stain EM, THO* subunits were also N- or C- terminally tagged with maltose-binding protein (MBP).
 
@@ -140,7 +566,7 @@ High-Five cells were harvested 48 hr after infection. Protein purification was c
 
 Sub2 and Yra1 variants (other than Yra1 C-box) were expressed in E. coli BL21-CodonPlus(DE3)-RIL cells (Stratagene), with an N-terminal TEV-cleavable GST tag. Site-directed mutagenesis was done by overlap extension PCR. Protein expression was induced at an OD600 of 1.0 with 0.5 mM isopropyl-β-D-thiogalactoside (IPTG) at 20°C for 16 hr. Cells were pelleted, resuspended, and sonicated in lysis buffer. GST-tagged proteins were purified using a glutathione sepharose four fast flow affinity column (GE Healthcare). After removing the GST tag by TEV, samples were applied to a mono Q column (for Sub2 variants) or a mono S column (GE Healthcare, for Yra1 variants), followed by size-exclusion chromatography using a Superdex 200 column (GE Healthcare) in 10 mM Tris-HCl (pH 8.0), 150 mM NaCl, and 0.5 mM TCEP. Purified proteins were concentrated, flash frozen in liquid nitrogen, and stored at −80°C. C-box (a.a. 208–226) of Yra1 was synthesized by GenScript.
 
-## Crystallization and data collection of the THO*•Sub2 complex
+### Crystallization and data collection of the THO*•Sub2 complex
 
 THO* complex and Sub2 were mixed at a molar ratio of 1:1.5 in the presence of 2 mM MgCl2 and 1 mM ADP. Crystals of the THO*•Sub2 complex were obtained at 16°C by sitting-drop vapor diffusion using 1 μl of the protein mixture, 1 μl of reservoir solution (100 mM Tris-HCl, pH 8.4, 17.5% PEG3350, 2% methanol), and 0.2 μl of 3.0 M NDSB-195 (Hampton Research, Aliso Viejo, CA). Streak seeding was required to produce good-quality crystals.
 
@@ -148,7 +574,7 @@ To prepare phosphotungstate cluster (Na3[PW12O40], Jena Bioscience, Germany) de
 
 X-ray diffraction data were collected at beamline ID24-C at APS, as well as beamline X25 and X29 at NSLS. All data were processed using the HKL suite (Table 1) (Otwinowski and Minor, 1997). Crystals of the THO*•Sub2 complex belong to the P21 space group with unit-cell dimensions ~170 × 340 × 175 Å. The crystals typically diffracted to 6–8 Å resolution. Heavy atom soaking, despite shrinking the unit-cell to ~150 × 320 × 175 Å, did not improve the resolution.
 
-## Structure determination of the THO*•Sub2 complex
+### Structure determination of the THO*•Sub2 complex
 
 Initial phases were obtained by single-wavelength anomalous diffraction (SAD) using Phenix (Adams et al., 2010). Experimental maps were calculated independently from three crystals (W-I, W-II and W-III) soaked with phosphotungstate cluster and two crystals (Ta-I and Ta-II) soaked with tantalum bromide cluster. The heavy atom substructures enabled us to identify a two fold non-crystallographic symmetry (NCS) of the THO*•Sub2 crystals by PROFESSS (Collaborative Computational Project, Number 4, 1994). The resulting electron density maps were of high enough quality that a seven-bladed β-propeller, corresponding to the Tex1 subunit, was readily recognizable. Consistent with the secondary structure prediction of the other THO subunits, rod like electron densities, corresponding to α-helices, constitute the majority regions of the electron density maps.
 
@@ -158,26 +584,26 @@ The initial model allowed us to generate domain masks for subsequent multi-cryst
 
 We carried out rigid body refinement at 6.0 Å using Phenix (Adams et al., 2010). Eleven rigid bodies were defined, including Sub2 N-terminal domain, Sub2 C-terminal domain, Tex1, as well as eight THO domains. The map after refinement was highly similar to that from the experimental phases. Helices were trimmed/extended and/or centered to fit the 2Fo-Fc map. The Sub2 N-terminal extension (residues 1–61) is likely disordered because no electron density was observed to connect to the existing N-terminus of the Sub2 model. It is not clear whether ADP is bound to Sub2, although it was required for obtaining the THO*•Sub2 crystals. At this resolution, many of the loops connecting the helices are not visible, therefore the subunit identity is not defined other than for Sub2 and Tex1. To validate the model, we generated an omit map which showed electron density at the expected positions of omitted helices (Figure 1—figure supplement 1). Molecular graphics were generated using PyMOL (http://www.pymol.org).
 
-## Crystallization and structure determination of the Sub2•Yra1-C*•RNA complex
+### Crystallization and structure determination of the Sub2•Yra1-C*•RNA complex
 
 Sub2 (a.a. 62–446), Yra1-C* (a.a. 200–226) and poly (U) 15-mer RNA were mixed at a molar ratio of 1:1.2:1.2 in the presence of 2 mM MgCl2 and ADP•BeF3 (prepared in a 1:4:20 ratio of ADP:Be:F). Crystals were grown at 4°C by sitting-drop vapor diffusion using a reservoir solution consisting of 100 mM Bis-Tris (pH 5.5), 20% PEG3350, and 0.2 M ammonium acetate. Crystals were transferred in three steps of increasing PEG400 concentration to cryoprotectant solution (100 mM Bis-Tris, pH 5.5, 20% PEG3350, 0.2 M ammonium acetate, 20% PEG400) and were flash frozen in liquid nitrogen.
 
 X-ray diffraction data were collected at beamline ID24-C at APS. Data were processed using XDS and AIMLESS (Table 2) (Collaborative Computational Project, Number 4, 1994; Kabsch, 2010). The structure was solved using Phenix AutoMR by searching for three copies of each RecA-like domain of UAP56 (PDB 1XTJ, human Sub2) (Adams et al., 2010). Model was rebuilt in COOT from this molecular replacement solution, followed by refinement with Phenix at 2.6 Å resolution (Adams et al., 2010; Emsley and Cowtan, 2004). The final Sub2•Yra1-C*•RNA structure contains Sub2 (a.a. 62–444), Yra1 (a.a. 208–224), and poly(U) 6-mer RNA. Molecular graphics were generated using PyMOL (http://www.pymol.org).
 
-## Electron microscopy and image processing
+### Electron microscopy and image processing
 
 Samples were prepared by negative staining with 0.75% (w/v) uranyl formate (Ohi et al., 2004). Data were collected with a Tecnai F20 (FEI) equipped with a Schottky field emission gun and operated at an acceleration voltage of 120 kV. SerialEM (Mastronarde, 2005) was used for automatic data collection using low-dose procedures at a calibrated magnification of 88,000× and a defocus value of −2.0 μm. Images were recorded on a 4K × 4K CCD Tietz camera with a binning factor of 2, corresponding to a pixel size of 3.4 Å on the specimen level.
 
 A total of 8070 THO*, 6988 MBP-Tho2 THO*, 6501 Tho2-MBP THO*, 5288 MBP-Hpr1 THO*, 8321 Hpr1-MBP THO*, 7492 MBP-Mft1 THO* and 8394 MBP-Thp2 THO* particles were manually selected from the raw micrographs using BOXER (Ludtke et al., 1999). Following contrast transfer function correction with the EMAN2 software package (Tang et al., 2007), these particles were rotationally and translationally aligned and subjected to reference-free alignment and K-means classification by SPIDER (Frank et al., 1996) specifying 100–125 output classes.
 
-## ATPase assay
+### ATPase assay
 
 Steady-state ATPase activity was analyzed using an NADH enzyme-coupled absorbance assay (Montpetit et al., 2012). Briefly, standard ATPase reactions were prepared with indicated proteins (2 μM for Sub2 or THO, 10 μM for Yra1), in 20 mM HEPES (pH 7.0), 100 mM NaCl, 2 mM MgCl2, 1 mM TCEP, 10 μM poly(U) 20-mer RNA (unless otherwise stated), 1 mM ATP, 2 mM phosphoenolpyruvate, 0.2 mM NADH, and 1% (vol/vol) pyruvate kinase/lactate dehydrogenase (Sigma). UV absorbance at 340 nm was monitored by a BioTek Synergy NEO Microplate Reader at 37°C. Reaction rates were calculated from the slopes of the linear phase showing the decrease in NADH absorbance as a function of time.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 For the experiment in Figures 4A and 20 nM poly(U) 20-mer RNA labeled with Alexa488 at the 5’ end was mixed with Sub2, Yra1 variants, and 1 mM nucleotide as indicated in a buffer containing 20 mM HEPES (pH 7.0), 100 mM NaCl, 1 mM TCEP, 2 mM MgCl2, 5% glycerol, and 0.5 U/μl SUPERase•In RNase Inhibitor (Thermo Fisher Scientific, Waltham, MA). The mixtures were incubated at room temperature for 10 min. Samples were separated on a 5% native PAGE gel that was prepared with 45 mM Tris-borate. RNA was visualized with the Typhoon 9400 Variable Mode Imager (GE Healthcare).
 
-## Accession numbers
+### Accession numbers
 
 The atomic coordinates and structure factors for the reported crystal structures are deposited in the Protein Data Bank under accession codes 5SUP and 5SUQ.

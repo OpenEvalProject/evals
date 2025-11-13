@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0387jng26 Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
+1. Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
 
 † Corresponding author
 
@@ -41,13 +41,13 @@ Specifically, we tested four key predictions. First, we expected that suppressio
 
 ## Results
 
-## Preventing retrieval yields the typical pattern associated with memory suppression
+### Preventing retrieval yields the typical pattern associated with memory suppression
 
 We first sought to establish whether our procedure elicited the activation pattern that has consistently been associated with retrieval suppression (e.g. Anderson et al., 2004; Benoit and Anderson, 2012; Depue et al., 2006; Mary et al., 2020). Suppressing versus recalling an aversive scene indeed led to increased activation in a number of brain regions including the right dlPFC and reduced activation in, amongst others, the bilateral hippocampi and PhC (Figure 1b, Appendix 1—table 3). This pattern is consistent with the engagement of the mechanism thought to mediate retrieval suppression (Benoit and Anderson, 2012; Gagnepain et al., 2014).
 
 In the following, we test the hypothesis that this mechanism impairs subsequent retrieval attempts by hindering reinstatement of the neural memory representation. We thus examine suppression - induced changes in the phenomenological quality of the memories and their neural basis. These analyses focus on the critical comparison of the suppress versus baseline conditions. In the appendix, we explore possible effects of retrieval practice (Karpicke and Blunt, 2011; Karpicke and Roediger, 2008; Roediger and Butler, 2011) that is, contrasts of the baseline versus recall conditions.
 
-## Suppression renders memories less vivid
+### Suppression renders memories less vivid
 
 We assessed the impact of suppression on the phenomenological quality of the memories by examining their change in vividness from the pre-test to the post-test. Indeed, there was a greater reduction for suppress than baseline memories as indicated by a significant interaction between time of test (pre, post) and condition (baseline, suppress) (F(1, 32) = 46.18, p < .001, η2 = 0.034). However, the main effects of time of test (F(1,32) = 28.87, p < .001, η2 = 0.063) and condition (F(1,32) = 4.22, p = .048, η2 = 0.007) were also significant. Follow-up tests showed that suppression reduced the vividness of the memories (t(32) = 6.60, p < .0001, d = 1.17), whereas there was only a trend for baseline memories to change over time (t(32) = 1.79, p = .08, d = 0.32) (Figure 1c).
 
@@ -55,13 +55,13 @@ We obtained a similar pattern in a behavioral study with an independent sample (
 
 Consistent with prior research (Stramaccia et al., 2021), suppression thus had a replicable, detrimental impact on people’s ability to vividly recall the suppressed memories. Importantly, we assessed the phenomenological quality of the memories during exactly those retrieval attempts that also provide the basis for our critical fMRI analyses. That is, in the following, we examine not only whether there is less reactivation of a memory during suppression (Detre et al., 2013; Gagnepain et al., 2014), but also the hypothesis that this effect then lingers on during these subsequent recall attempts.
 
-## Univariate suppression-induced changes in brain activity
+### Univariate suppression-induced changes in brain activity
 
 Before turning to scene-specific neural representations, we first probe whether suppression also yielded any generic after-effects in univariate brain activation. Specifically, we tested whether any voxels showed a stronger pre-to-post decrease for the suppressed than the baseline memories. Only a few regions showed such an effect, including parts of bilateral hippocampus (see Appendix 1—table 4).
 
 However, to address our hypothesis, we move beyond univariate activation levels. By using multi-voxel pattern analyses (Norman et al., 2006), we track changes in fine-grained activity patterns that are more specifically associated with the processing of scenes and with the reinstatement of individual memories.
 
-## Establishing a linear classifier to detect scene reactivation
+### Establishing a linear classifier to detect scene reactivation
 
 Memory retrieval reactivates the perceptual and conceptual representations elicited during encoding (Dijkstra et al., 2020; Linde-Domingo et al., 2019). To quantify the degree of such reactivation on a given trial, we trained a linear support vector machine (Hebart et al., 2014) on data from an independent task that participants had performed at the end of the MRI session. Specifically, the classifier learned to distinguish brain states associated with the perception of intact aversive scenes (similar to the ones used in the main task) versus morphed versions of the scenes. The morphed scenes were created via a diffeomorphic transformation that renders them unrecognizable while preserving their basic perceptual properties. Compared to conventional methods, such as scrambling, morphing has been shown to elicit neural activation that is more similar to activation induced by intact images (Stojanoski and Cusack, 2014).
 
@@ -75,23 +75,23 @@ We also sought to test for more localized reactivation of scene information in t
 
 We further validated our approach by examining the correspondence between the reactivation scores in the PhC and the vividness with which the memories could be recalled. The analysis was conducted on data from the pre-test. Because memories at that stage are still unconfounded by possible effects of the subsequent experimental manipulation, this allowed us to compute correlations based on all trials across the three conditions. Specifically, we correlated the scene reactivation and vividness scores for each participant and then performed one-sample t-tests on the individual Fisher-transformed correlation coefficients. These analyses showed that greater scene reactivation was indeed associated with more vivid recollections in left (M = 0.09, 95% CI = [0.03 0.16], t(32) = 2.82; p = .01) and right PhC (M = 0.06, 95% CI = [0.01 0.12], t(32) = 2.27; p = .03).
 
-## Reduced scene reactivation during suppression
+### Reduced scene reactivation during suppression
 
 The previous section established that the classifier provides a measure for the reactivation of scene information. We first examined whether such reactivation is reduced while participants intentionally try to suppress rather than to recall a memory. This was the case globally across the brain as indicated by the analysis based on the grey matter mask (t(32) = 7.04, p < .001, d = 1.22).
 
 For the PhC, a rANOVA with the factors hemisphere (left, right) and condition (recall, suppress) revealed an interaction of hemisphere and condition (F(1,32) = 30.04, p < .001, η2 = 0.003). Follow-up tests showed reduced scene evidence locally in the left (t(32) = 2.84, p = .01, d = 0.50), though not right PhC (t(32) = –0.60, p = .56, d = –0.11) (Figure 2b). These data suggest that participants were successful at controlling the retrieval of unwanted memories. At the same time, they further validate the use of the classifier as a measure of memory reactivation.
 
-## Reduced global scene reactivation following suppression
+### Reduced global scene reactivation following suppression
 
 Suppressed scenes were recalled less vividly than baseline scenes. We had hypothesized that this suppression-induced decline of the memories reflects a sustained reduction in the potential to reactivate their neural representations. We thus expected reactivation scores for suppress memories to decline from the pre-test to the post-test to a larger degree than for baseline memories.
 
 We tested for this effect by conducting a rANOVA on the global reactivation scores with the factors time of test (pre, post) and condition (suppress, baseline). This analysis yielded the expected significant interaction (F(1,32) = 5.14, p = .03, η2 = 0.006), reflecting diminished scene reactivation for suppressed (t(32) = 2.26, p = .03, d = 0.4) but not for baseline memories (t(32) = –0.2, p = .84, d = –0.03) (Figure 2c).
 
-## Reduced parahippocampal scene reactivation following suppression
+### Reduced parahippocampal scene reactivation following suppression
 
 As predicted, suppression also led to a sustained reduction of local scene reactivation in the PhC. This was corroborated by a rANOVA with the factors time of test (pre, post), condition (baseline, suppress), and hemisphere (left, right) that yielded the significant interaction between time and condition (F(1,32) = 4.33, p = .046, η2 = 0.003) (in addition to a main effect of time, F(1,32) = 8.83, p = .006, η2 = 0.017). This effect reflected the expected reduction in scene reactivation for suppressed (t(32) = 3.77, p < .001, d = 0.67) but not for baseline memories (t(32) = 1.38, p = .18, d = 0.24) (Figure 2c).
 
-## A link between suppression-induced reductions in scene reactivation and vividness
+### A link between suppression-induced reductions in scene reactivation and vividness
 
 Activity in the PhC has previously been associated with the number of details (Qin et al., 2011; Tendolkar et al., 2008) and the vividness (Kensinger et al., 2011; Sheldon and Levine, 2013; Todd et al., 2013) with which scenes can be recalled. We similarly observed that the recall of more vivid memories is accompanied by greater evidence for scene reactivation.
 
@@ -117,7 +117,7 @@ In contrast to the PhC, none of our candidate control regions showed sustained r
 
 The data suggest that reduced PhC reactivation reflects the failure to retrieve scene features that would have made the recollections more vivid. In the following, we further examine this interpretation by assessing changes in the neural reinstatement of individual memory representations.
 
-## Suppression success is associated with weaker memory-specific PhC pattern reinstatement
+### Suppression success is associated with weaker memory-specific PhC pattern reinstatement
 
 The classifier results indicate that suppression hinders the subsequent reactivation of scene information. However, they do not address the question whether this effect reflects reduced reinstatement of information that is specific to a particular memory. In a next step, we thus used Representational Similarity Analysis (RSA) (Kriegeskorte et al., 2008; Nili et al., 2014) to examine the reinstatement of activity patterns that are unique to the individual memories. We focus this analysis on the PhC, where the neural reinstatement of a particular memory should yield a unique and replicable activity pattern (Martin et al., 2013; Staresina et al., 2012; Staresina et al., 2013). Specifically, we expected a similar activity pattern to emerge whenever participants recall the same scene memory.
 
@@ -185,13 +185,13 @@ To conclude, the current study set out to examine the neural consequences of sup
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Thirty-seven right-handed volunteers participated in the MRI study. They were all drawn from the participant database of the Max Planck Institute for Human Cognitive and Brain Sciences, reported no history of psychiatric or neurological disorder, gave written informed consent as approved by the local research ethics committee, and were reimbursed for their time. Four participants were excluded either due to technical problems (2), non-compliance with the instructions as assessed by a post-experimental questionnaire derived from Hertel and Calcaterra, 2005 (please see below) (1), or drop out (1). We thus included 33 participants in the analysis (age: M = 24.85 y, SD = 2.14 y; 17 female, 16 male). We had aimed for a final sample of 30 participants and thus recruited 37 participants in anticipation of possible exclusions due to non-compliance or excessive movement. This target sample size was chosen to exceed previous studies on suppression and based on our behavioral study.
 
 The behavioral study included an independent sample of thirty-two volunteers. Two of these were excluded due to non-compliance with the instructions. For another participant, vividness ratings from the pre-test are missing due to technical issues, so that their data also had to be excluded from the analysis. These exclusions resulted in a final sample of 29 participants (M = 23.83, SD = 1.79, 14 female, 15 male) for the analysis of the vividness data. Demographic information for both the MRI and behavioral samples is summarized in Appendix 1—table 1.
 
-## Materials
+### Materials
 
 The stimuli for the experimental procedure were taken from Küpper et al., 2014. They comprised 60 object-scene pairs: 48 critical pairs and 12 filler pairs. The scenes were negative images depicting aversive scenes (e.g. accidents, injury, disaster) and were originally selected from the International Affective Picture System (IAPS; Lang et al., 2008) and online sources. The objects were photographs of familiar, neutral objects taken from Brady et al., 2008. Specifically, each object was chosen to resemble an object that was also part of its paired scene. By this, Küpper et al., 2014 intended to mimic the situation in which an everyday object can trigger the involuntary retrieval of an aversive experience that had featured a similar object (Ehlers, 2010; Ehlers and Clark, 2000). Moreover, the objects were chosen to be peripheral to the respective scene (e.g. a doll in the corner of a room) and to be not essential to its gist. Per se, they were thus not space-defining, a feature that has previously been associated with PhC activity (Auger et al., 2012).
 
@@ -201,9 +201,9 @@ The task design for training the pattern classifier was based on Poppenk and Nor
 
 We created morphed pictures of the aversive scenes with the procedure described by Stojanoski and Cusack, 2014. The morphed pictures retain the low-level visual features of the original pictures while ensuring that their content can no longer be recognized. We placed the pictures of the objects and fruits on top of phase-scrambled versions of the scenes and thus ensured that the images had the same size and rectangular shape. All images for the classifier training were normalized with respect to their luminance using the procedure described by Detre et al., 2013. The experiment was presented using Psychtoolbox (Brainard, 1997; Pelli, 1997).
 
-## Procedures
+### Procedures
 
-## Experimental design
+#### Experimental design
 
 We tested the impact of suppression on memory reinstatement using an adapted version of the Think/No-Think procedure developed by Küpper et al., 2014. This procedure entailed four phases: an initial study phase, a pre-test, the suppression phase, and a post-test. These were followed by a classifier training task in the scanner (MRI study only) and an additional memory task (see appendix). The entire session took around four hours. By repeating the same procedure in two independent studies, we could corroborate the replicability of the suppression-induced reduction in vividness.
 
@@ -223,25 +223,25 @@ Participants further indicated that they had engaged more frequently in direct s
 
 Moreover, they filled in Beck’s Depression Inventory (Beck et al., 1996), the Thought Control Ability Questionnaire (Luciano et al., 2005) and the State-Trait Anxiety Inventory (Spielberger et al., 1983). These features of our sample are summarized in Appendix 1—table 1.
 
-## fMRI data acquisition
+#### fMRI data acquisition
 
 We used a 3T Siemens Prisma MRI Scanner with a 32-channel head coil at the Max Planck Institute for Human Cognitive and Brain Sciences. Structural images were acquired with a T1-weighted MPRAGE protocol (256 sagittal slices with interleaved acquisition, field of view = 240 mm by 176 mm, 1 mm isotropic voxels, TR = 2300ms, TE = 2.98ms, flip angle = 9°, phase encoding: anterior-posterior, parallel imaging = GRAPPA, acceleration factor = 2). Functional images were acquired using a whole brain multiband echo-planar imaging (EPI) sequence (field of view = 192 mm by 192 mm, 2 mm isotropic voxels, 72 slices with interleaved acquisition (angled 15° towards coronal from AC-PC), TR = 2000ms, TE = 25ms, flip angle = 90°, phase encoding: anterior-posterior, MF = 3) (Feinberg et al., 2010; Moeller et al., 2010). 369 volumes were acquired in pre- and post-tests, 197 volumes in each suppression block and 395 volumes in the classifier training. The first five volumes of each run were discarded to allow for T1 equilibration effects. Pulse oxymeter data were collected on participants’ left hand. Participants gave their responses via a 5-button box with their right hand.
 
-## Analyses
+### Analyses
 
-## fMRI data preprocessing
+#### fMRI data preprocessing
 
 The MRI data were first converted into the Brain Imaging Data Structure (BIDS) format (Gorgolewski et al., 2016). All data preprocessing was performed using the default preprocessing steps of fMRIPrep 1.5.0rc2, based on Nipype 1.2.1. (Esteban et al., 2018): The respective T1 volume was corrected for intensity non-uniformity and skull-stripped, before it was segmented into cerebrospinal fluid (CSF), white matter (WM), and grey matter (GM). It was then spatially normalized to the ICBM 152 Nonlinear Asymmetrical template version 2009c using nonlinear registration.
 
 The functional data were slice-time corrected, motion corrected, and corrected for susceptibility distortions using fMRIPrep’s fieldmap-less approach. They were then coregistered to the corresponding T1 image using boundary-based registration with six degrees of freedom. Physiological noise regressors were extracted to allow for component-based noise correction. Anatomical CompCor components were calculated within the intersection of the subcortical mask and the union of CSF and WM masks, after their projection to the native space of each functional run. Framewise displacement was also calculated for each functional run. For further details of the pipeline, including the software packages used by fMRIPrep, please refer to the online documentation (https://fmriprep.org/en/20.2.0/). Our univariate analyses were performed in MNI space (following smoothing with a Gaussian kernel of 6 mm FWHM), whereas the multivariate pattern analyses (MVPA) were done on unsmoothed data in native space.
 
-## Regions of interest
+#### Regions of interest
 
 We manually segmented the PhC on the individual T1-weighted structural images, following the anatomical demarcation protocol by Insausti et al., 1998 and Pruessner et al., 2002. Specifically, we defined the PhC as the posterior third of the parahippocampal gyrus (Staresina et al., 2012). We further used the individual grey matter masks, segmented using FSLfast (in the fMRIPrep pipeline), as an ROI.
 
 We focused on the PhC given its prominent contribution to memories for scenes (Bohbot et al., 2006; Horner et al., 2015; Staresina et al., 2013; Staresina et al., 2012). However, we do not suggest that effects of suppression are solely attributable to changes to representations in this region. We also explored possible sustained effects of suppression in a number of suggested bilateral candidate control regions. These are the angular gyrus and precuneus, given their association with the phenomenological quality of memories (Richter et al., 2016a; see also Brodt et al., 2018), the amygdala, given its association with the processing of aversive stimuli (Depue et al., 2007; Gagnepain et al., 2017), and V1, given the finding of transient suppression-reduced reductions in early visual cortex (Depue et al., 2007; Gagnepain et al., 2014). Masks of the amygdala, V1, and precuneus were taken from the brainnetome atlas (Fan et al., 2016), and of the angular gyrus from the AAL2 atlas (Tzourio-Mazoyer et al., 2002) given the lack of an adequate brainnetome region.
 
-## First-level fMRI analysis
+#### First-level fMRI analysis
 
 Data were analyzed using SPM12 (https://fil.ion.ucl.ac.uk/spm). We decomposed the variance in the BOLD time series using general linear models (GLM) (Penny et al., 2011). For the univariate analysis of the suppression phase, we analyzed the data with a GLM including a regressor for the trials of the recall condition and a regressor for the trials of the suppress condition.
 
@@ -249,14 +249,68 @@ For our multivariate pattern analyses (MVPA), we assessed the individual activit
 
 All these regressors coded for the respective 3 s of each trial (or 16 s of each block for classifier training) and were convolved with the canonical hemodynamic response function. In addition, each GLM included six head motion parameters, framewise displacement, the first six aCompCor components and a block regressor as nuisance regressors. We then applied a 128 Hz high-pass filter to the data and the model. For the MVPA analyses, the resulting parameter estimates were transformed into t-values via a contrast of the respective individual trial versus all other trials.
 
-## Classification analysis
+#### Classification analysis
 
 We performed the classifier analysis using the decoding toolbox (Hebart et al., 2014). Specifically, we trained a linear support vector machine for each participant to distinguish activity patterns associated with intact aversive scenes versus their morphed versions. We employed a leave-one-out cross-validation approach that used, on each iteration, eleven of the twelve blocks as training data. This procedure assigns a linear weight to each voxel that reflects its importance in discriminating the two classes, thus creating a weight map. We then used the transformed weight pattern (Haufe et al., 2014) to estimate reactivation as the degree of scene evidence during each trial of the pre-test, post-test, and suppression phase. This was done by calculating the dot product of the weight pattern and the respective individual t-map.
 
-## Representational similarity analysis
+#### Representational similarity analysis
 
 We examined the reinstatement of unique memory representations using representational similarity analysis (RSA). Specifically, we assessed whether the retrieval of a given scene was associated with a similar neural activity pattern before and after the suppression phase. This analysis used the RSA toolbox (Nili et al., 2014). It was based on the 48 trials from the pre-test and the post-test. We computed the similarity values using Pearson correlation across all voxels of the respective ROI (Kriegeskorte et al., 2008). Specifically, we assessed the similarity of each item with itself (same-item similarity) and the average similarity of the item with all 15 other items from the same condition (different-item similarity) (Nili et al., 2020). By constraining the different-item similarity to items of the same category, we ensure that any differences with the same-item similarity do not simply reflect general condition differences (i.e. systematic pattern differences for baseline versus suppress items). The similarity estimates were then Fisher-transformed and averaged for each condition within subjects. We determined the magnitude of pattern reinstatement as the difference score between same-item and different-item similarity.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical tests were done with R version 4.0.3 (R Core Team, 2019). Repeated measures ANOVAs were conducted with the afex package (Type 3 sums of squares; Singmann et al., 2020) and effect sizes are reported as generalized eta squared. Follow-up tests were based on estimated marginal means (emmeans package, Lenth, 2020) using pooled variances and degrees of freedom (based on the Welch–Satterthwaite equation). The significance level was set to 5%. The robust skipped Spearman's correlations were estimated in Matlab (MATLAB Version 9.3.0.713579 (R2017b), 2017) using the robust correlation toolbox (Pernet et al., 2012). All software resources used are listed in Table 1.
+
+**Table 1.**
+ Software resources used.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Designation</td>
+      <td>Source/ Reference</td>
+      <td>Identifier</td>
+    </tr>
+    <tr>
+      <td>R version 4.0.3,RStudio</td>
+      <td>R Project for Statistical Computing</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>MATLAB, 2017</td>
+      <td>Mathworks</td>
+      <td>https://mathworks.com/</td>
+    </tr>
+    <tr>
+      <td>Psychtoolbox 3</td>
+      <td>Pelli, 1997</td>
+      <td>https://psychtoolbox.org/</td>
+    </tr>
+    <tr>
+      <td>FMRIPrep</td>
+      <td>Poldrack Lab,Standford University</td>
+      <td>https://fmriprep.org/en/1.5.0/</td>
+    </tr>
+    <tr>
+      <td>SPM12</td>
+      <td>Wellcome Centre for Neuroimaging, UCL</td>
+      <td>https://fil.ion.ucl.ac.uk/spm/</td>
+    </tr>
+    <tr>
+      <td>The decoding toolbox</td>
+      <td>Hebart et al., 2014</td>
+      <td>https://sites.google.com/site/tdtdecodingtoolbox/</td>
+    </tr>
+    <tr>
+      <td>RSA toolbox</td>
+      <td>Nili et al., 2014</td>
+      <td>https://github.com/rsagroup/rsatoolbox</td>
+    </tr>
+    <tr>
+      <td>ITK-SNAP</td>
+      <td>Yushkevich et al., 2006</td>
+      <td>http://itksnap.org/</td>
+    </tr>
+  </tbody>
+</table>

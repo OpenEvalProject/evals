@@ -76,9 +76,7 @@ We modified the text accordingly to tone down our description of the overprolife
 
 4) The entire embryo in the images of the amotl2a MZ mutant appears to be significantly bigger than the controls (Figure 4E, N). Is this the case, or is this within the natural variation in size within the batch? Would the mutation be expected to have a systemic effect, given the expression pattern of the gene?
 
-This is not the case. Both MZyap1-/- and MZamotl2a-/- embryos are indistinguishable from wild-type in terms of overall shape and size. The former picture in Figure 4N was maybe misleading because part of the embryo tail was not well visible. We have changed this picture. In addition, we have taken low magnification pictures with transmitted light of 3 wild-type, 3 MZyap1-/-, 3 MZamotl2a-/- and 3 MZyap1-/-;amotl2a-/- at the same stage mounted next to each other in one petri dish for Reviewer 1 (Author response image 1).10.7554/eLife.08201.045Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.08201.045
-
-DOI: http://dx.doi.org/10.7554/eLife.08201.045
+This is not the case. Both MZyap1-/- and MZamotl2a-/- embryos are indistinguishable from wild-type in terms of overall shape and size. The former picture in Figure 4N was maybe misleading because part of the embryo tail was not well visible. We have changed this picture. In addition, we have taken low magnification pictures with transmitted light of 3 wild-type, 3 MZyap1-/-, 3 MZamotl2a-/- and 3 MZyap1-/-;amotl2a-/- at the same stage mounted next to each other in one petri dish for Reviewer 1 (Author response image 1).10.7554/eLife.08201.045Author response image 1.
 
 Reviewer #3:
 

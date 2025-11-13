@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.43478.001 Neural circuit assembly occurs with subcellular precision, yet the mechanisms underlying this precision remain largely unknown. Subcellular synaptic specificity could be achieved by molecularly distinct subcellular domains that locally regulate synapse formation, or by axon guidance cues restricting access to one of several acceptable targets. We address these models using two Drosophila neurons: the dbd sensory neuron and the A08a interneuron. In wild-type larvae, dbd synapses with the A08a medial dendrite but not the A08a lateral dendrite. dbd-specific overexpression of the guidance receptors Unc-5 or Robo-2 results in lateralization of the dbd axon, which forms anatomical and functional monosynaptic connections with the A08a lateral dendrite. We conclude that axon guidance cues, not molecularly distinct dendritic arbors, are a major determinant of dbd-A08a subcellular synapse specificity.
+Neural circuit assembly occurs with subcellular precision, yet the mechanisms underlying this precision remain largely unknown. Subcellular synaptic specificity could be achieved by molecularly distinct subcellular domains that locally regulate synapse formation, or by axon guidance cues restricting access to one of several acceptable targets. We address these models using two Drosophila neurons: the dbd sensory neuron and the A08a interneuron. In wild-type larvae, dbd synapses with the A08a medial dendrite but not the A08a lateral dendrite. dbd-specific overexpression of the guidance receptors Unc-5 or Robo-2 results in lateralization of the dbd axon, which forms anatomical and functional monosynaptic connections with the A08a lateral dendrite. We conclude that axon guidance cues, not molecularly distinct dendritic arbors, are a major determinant of dbd-A08a subcellular synapse specificity.
 
 ## Introduction
 
@@ -32,15 +32,91 @@ We sought to test which of these two models generate dendritic subcellular synap
 
 ## Results
 
-## A08a interneuron has two dendritic arbors that receive distinct synaptic input
+### A08a interneuron has two dendritic arbors that receive distinct synaptic input
 
 To determine which of our proposed developmental mechanisms regulates subcellular synaptic specificity, we focused on the A08a interneuron as a model system. A08a has spatially distinct medial and lateral dendrites, and receives distinct input to each of these dendrites (Figure 2). A08a interneurons can be visualized by light microscopy using the R26F05(A08a)-LexA line in larvae (24 ± 4 hr after larval hatching; ALH) in abdominal segments (A) 1–7 (Figure 2A–A’,B). By expressing molecular markers, we determined that A08a has a distinct distal axonal (output) domain (mixed pre- and post-synapses) and a more proximal dendritic domain (predominantly post-synapses). A08a targets the dendritic marker DenMark::mCherry (Nicolaï et al., 2010) to the dendritic domain which includes two spatially distinct medial and lateral arbors. The A08a output domain forms a characteristic V-shaped projection at the midline, which is specifically labeled by the pre-synaptic marker Synaptotagmin::GFP (Wang et al., 2007) (Figure 2C–C’’).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43478/elife-43478-fig2-v2.jpg)
+
+**Figure 2.:** (A–C’’) Light microscopy (point scanning confocal) imaging of A08a neurons. (A) Dorsal view of the light micrograph (LM) 3D reconstruction of A08a neurons in the larval ventral nerve cord segments A1-7. The A08a neurons are visualized by 26F05(A08a)-LexA > LexAop-myr::smGdP::V5. Midline, dashed line in all panels. (A’) Posterior view of the LM 3D reconstruction of paired A08a neurons in segment A1 left/right. (B) Posterior view of a single A08a labeled by MultiColor FlpOut (MCFO), visualized by A08a-Gal4 > UAS-MCFO. (C–C’’) A08a-Gal4 drives expression of UAS-DenMark::mCherry (dendrite marker) and UAS-synaptotagmin::GFP (presynaptic marker). Note the complementary expression in the dendritic and output domains. (D–G) Electron microscopy (EM) reconstruction of A08a and four synaptic partner neurons. (D) Dorsal view of A08a neurons in segments A1-2. (D’) Posterior view of A08a neurons in segment A1. (E) A single A08a with presynaptic and postsynaptic sites labeled in red and blue highlight a distinct dendritic domain and a mixed pre- and post-synaptic output domain, respectively. (F) Synapse flow centrality analyses (Schneider-Mizell et al., 2016) shows that A08a has distinct mixed axonal (output) and dendritic compartments. (G) A08a receives dendritic arbor-specific input: dbd (yellow) and A02d (orange) synapse specifically on the medial dendrite, whereas A02l (blue) and A31x (cyan) synapse specifically on the lateral dendrite.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43478/elife-43478-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–A’) Posterior view of dbd (magenta) and A08a (green) neurons EM reconstruction in abdominal segment 1, left (A1L). dbd presynapses (enlarged circles) are color coded based on distance from A08a membrane and synaptic connectivity with A08a. Non-potential synapses (gray) indicate dbd presynapses that are more than 2 μm away from the center of A08a dendritic processes (skeleton). Potential synapses (red) indicate dbd presynapses less than 2 μm away from the A08a skeleton that are not connected with A08a. Actual synapses (cyan) indicate dbd presynapses that are synaptically coupled with A08a. Yellow box indicates region enlarged in A’. (B) Schematic showing how the synapse types are assigned between dbd (magenta) and A08a (green) neurons in the filling fraction analyses. The filling fraction is the number of actual synapses divided by the sum of actual and potential synapses. The distance threshold which defines non-potential synapses can be changed, allowing the filling fraction to be plotted as a function of distance (shown in C below). (C) The filling fraction plotted as a function of distance between dbd presynapses and A08a skeleton. When dbd presynapses are within 2 μm from the A08a skeleton, the percent of synapse formation (filling fraction) is 0.34 (A1L) and 0.38 (A1R). The filling fraction between a different set of neurons, v'ada and A09a, are provided for reference from Gerhard et al. (2017).
 
 A08a can also be visualized by electron microscopy (EM) in first instar larvae (~5 hr ALH, Figure 2D–D’) (Gerhard et al., 2017; Itakura et al., 2015; Schneider-Mizell et al., 2016). The EM reconstruction of A08a has been completed in four hemisegments (A1 left/right, A2 left/right), and in all cases, the A08a neuron has the same arbors as seen in light microscopy: two spatially distinct dendritic arbors that contain only post-synapses, and a V-shaped output domain that contains both pre- and post-synapses (Figure 2E). Moreover, the same output and dendritic subcellular compartments as seen with DenMark::mCherry and Synaptotagmin::GFP can also be detected in the EM reconstructed A08a neuron using the synapse flow centrality algorithm (Schneider-Mizell et al., 2016), which considers path directionality between synaptic input and output locations in the A08a neuron (Figure 2F).
 
 Next, we used the EM reconstruction to identify neurons with the most inputs onto A08a. We characterized the four neurons with the most synapses onto A08a dendrites (Table 1), and observed that dbd and A02d selectively synapse onto the A08a medial dendrite, whereas A02l and A31x selectively synapse onto the A08a lateral dendrite (Figure 2G; Table 1). Moreover, dbd-A08a partners have a synapse filling fraction similar to previously described synaptically connected neurons (Figure 2—figure supplement 1) (Gerhard et al., 2017; Stepanyants et al., 2002). A08a also receives synaptic input from additional neurons at its medial and lateral dendritic arbors, and these neurons also show a preference for either the medial or lateral dendritic arbor; a different set of neurons has synaptic input on the V-shaped output domain (data not shown). We conclude that the A08a neuron is an ideal model system to investigate the mechanisms generating subcellular synaptic specificity due to (a) Gal4 and LexA lines specifically expressed in A08a, (b) spatially distinct dendritic arbors with highly specific neuronal inputs onto each arbor, and (c) our ability to visualize A08a morphology by both light and electron microscopy. In addition, we have highly specific Gal4 and LexA lines for the dbd sensory neuron, which has specific synaptic input onto the A08a medial arbor (see below).
 
-## Quantifying dbd-A08a synapse voxel position by light microscopy
+**Table 1.**
+ Summary of inputs to A08a medial and lateral dendritic arbors from the first instar larval EM reconstruction.Neurons with the most synapses to A08a medial and lateral arbors shown. Neurons with fewer synapses also show specificity for medial or lateral dendritic arbors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">A08a inputs (hemisegment)</th>
+      <th colspan="2">Pre-synapse number</th>
+      <th rowspan="2">A08a arbor targeted</th>
+    </tr>
+    <tr>
+      <th>Total</th>
+      <th>With A08a</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dbd (A1L)</td>
+      <td>79</td>
+      <td>10</td>
+      <td>Medial only</td>
+    </tr>
+    <tr>
+      <td>dbd (A1R)</td>
+      <td>78</td>
+      <td>13</td>
+      <td>Medial only</td>
+    </tr>
+    <tr>
+      <td>A02d (A1L)</td>
+      <td>66</td>
+      <td>22</td>
+      <td>Medial only</td>
+    </tr>
+    <tr>
+      <td>A02d (A1R)</td>
+      <td>63</td>
+      <td>8</td>
+      <td>Medial only</td>
+    </tr>
+    <tr>
+      <td>A02l (A1L)</td>
+      <td>38</td>
+      <td>12</td>
+      <td>Lateral only</td>
+    </tr>
+    <tr>
+      <td>A02l (A1R)</td>
+      <td>31</td>
+      <td>4</td>
+      <td>Lateral only</td>
+    </tr>
+    <tr>
+      <td>A31x (A1L)</td>
+      <td>19</td>
+      <td>3</td>
+      <td>Lateral only</td>
+    </tr>
+    <tr>
+      <td>A31x (A1R)</td>
+      <td>26</td>
+      <td>9</td>
+      <td>Lateral only</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantifying dbd-A08a synapse voxel position by light microscopy
 
 The EM reconstruction allows precise quantification of synapse number and position between dbd and A08a, but EM is not a high-throughput method for experimental analysis of synaptic contacts. Thus, we developed a light microscopy method for quantifying the position of dbd-A08a putative synapse contacts. We used the genetics described above to label A08a, and additionally used the 165(dbd)-Gal4 line (Gohl et al., 2011) to label the dbd sensory neuron in 24 ± 4 hr ALH larvae. We conclude that dbd and A08a morphology seen in light microscopy precisely matches dbd and A08a morphology seen in the EM reconstruction (Figure 3A–B’’, Video 1).
 
@@ -48,19 +124,47 @@ The EM reconstruction allows precise quantification of synapse number and positi
 
 **Figure 3.:** (A) Dorsal view, light microscopy 3D reconstruction showing dbd (magenta) and A08a (green) neurons. A08a is visualized with A08a-LexA > LexAop-myr::smGdP::V5. dbd is visualized with dbd-Gal4 > UAS-myr::smGdP::HA. Anterior to left; midline, dashed line in all panels. (A’–A’’) Posterior view, light microscopy 3D reconstruction showing dbd and A08a neurons. dbd projects to the A08a medial dendritic arbor but not the A08a lateral dendritic arbor. Apparent colocalization of dbd with the A08a output domain is an artifact of the 3D projection. Asterisk, ventral off-target expression of dbd-Gal4. C, focal plane shown in panel C, below. (B–B’’) EM reconstruction of dbd and A08a neurons; B, dorsal view, (A1-A2); B’-B’’, posterior view, (A1). (C–C’’’) Single optical section showing a subset of dbd presynapses (magenta, labeled with dbd-Gal4 > UAS-brp-short-mstraw) positioned in close proximity to the A08a membrane (green, labeled with A08a-LexA > LexAop-myr::smGdP::V5). Voxels containing A08a membrane within 90 nm of voxels containing Brp-mstraw are defined as ‘synapse voxels’ (C’’’, yellow). (D) Quantification of synapse voxel position across A08a dendritic domain shows enrichment on the A08a medial dendritic arbor. (E) Representative chemical synapse between dbd and A08a (arrowhead) in the EM volume. (F) EM reconstruction showing that the dbd neuron (magenta) synapses specifically with the A08a medial but not lateral dendritic arbor (green); synapses, yellow circles.
 
+![Video 1.](https://cdn.elifesciences.org/articles/43478/elife-43478-video1.mp4.jpg)
+
+**Video 1.:** Synaptic partners dbd (magenta) and A08a (green) can be genetically labeled (165(dbd)-Gal4 > UAS-myr::smGdP::HA and 26 F05(A08a)-LexA > LexAop-myr::smGdP::V5 respectively).
+
 We next quantified the position of dbd pre-synaptic contacts along the medial-lateral axis of the A08a dendrite. We used dbd-Gal4 to express the active zone marker Bruchpilot-Short::mStrawberry (Brp-Short-mStraw, Owald et al., 2010) in the dbd neuron; the truncated Brp protein localizes to presynaptic sites but is not functional for inducing synapse formation, making it an excellent reporter for pre-synapses (Fouquet et al., 2009). In the same larvae, we used the 26F05(A08a)-LexA line to label the A08a interneuron to express a myristoylated::V5 epitope. The dbd neuron forms synapses with many neurons in addition to A08a, so we considered only the Brp signal in close proximity (<90 nm) to the A08a membrane to define the position of dbd-A08a ‘synapse voxels’ (Figure 3C–C’’’). Note that this is not designed to count individual synapse numbers, which are below the resolution limit of standard light microscopy, but rather to measure the position of putative synapses along the medio-lateral axis of the A08a dendrite. Quantifying synapse voxels across the medial-lateral axis of A08a dendrites in wild-type larvae (Figure 3D, n = 27 hemisegments, N = 18 animals) mirrors the position of synapses seen by EM (Figure 3F). In contrast, we do not observe synapse voxels between the dbd and the A08a output domain, consistent with lack of dbd synapses on the A08a output domain in the EM reconstruction (data not shown). Thus, we have established a light microscopy method for imaging and quantifying the position of dbd presynapses along the A08a dendritic membrane, which is a necessary prerequisite for investigating the mechanisms regulating dbd-A08a subcellular synaptic specificity.
 
-## Lateralized dbd has Brp + synapse voxels at the A08a lateral dendritic arbor
+### Lateralized dbd has Brp + synapse voxels at the A08a lateral dendritic arbor
 
 To determine if the lateral dendritic arbor of A08a is competent to receive input from the dbd neuron, we needed a way to re-direct dbd to a lateral location, giving it the opportunity to interact with the lateral dendrite of A08a. In Drosophila, neurons expressing the Netrin receptor Unc-5 or the Slit receptor Robo-2 have a repulsive response to midline-secreted Netrin and Slit ligands, respectively (Keleman and Dickson, 2001; Simpson et al., 2000a; Simpson et al., 2000b; Wang et al., 2007; Zlatic et al., 2003). Here, we used dbd-Gal4 to express either Unc-5 or Robo-2 and found that both receptors could lateralize the dbd axon terminal to varying degrees, with Unc-5 being most effective and Robo-2 having a milder effect (Figure 4—figure supplement 1).
 
 Wild-type dbd forms synapse voxels with the A08a medial dendritic arbor (Figure 4A–A’’,C; Figure 4—figure supplement 1B,E). In contrast, overexpression of Unc-5 in dbd can lateralize the dbd axon terminal, positioning dbd adjacent to the A08a lateral dendritic arbor (Figure 4B–B’; Figure 4—figure supplement 1D,E). These lateralized dbd terminals formed synapse voxels with the lateral dendritic arbor of A08a (Figure 4B’’). Similarly, overexpression of Robo-2 in dbd resulted in lateralization of the dbd axon terminal; the majority of dbd terminals formed synapse voxels in the intermediate zone between the medial and lateral dendrites (Figure 4—figure supplement 1C,E). The close apposition of dbd presynaptic Brp to the A08a dendritic membrane is consistent with, but does not prove, that there is functional connectivity between dbd and A08a at this arbor. Taken together, these results suggest that dbd can form Brp + putative synapses throughout the entire A08a dendritic domain, which is more consistent with the ‘guidance cue’ model and less consistent with the ‘labeled arbor’ model.
 
-## Lateralized dbd forms functional synapses with the A08a lateral dendritic arbor
+![Figure 4.](https://cdn.elifesciences.org/articles/43478/elife-43478-fig4-v2.jpg)
+
+**Figure 4.:** (A–A’) In control animals, dbd membrane (magenta, labeled with dbd-Gal4 >UAS-smGdP::myr::HA) is positioned in close proximity to the A08a medial dendritic arbor membrane (green, labeled with A08a-LexA > LexAop-myr::smGdP::V5). (A) Posterior view of one segment; midline, dashed line in all panels; box, area enlarged in A’. (A’) Posterior view of dbd and the A08a medial dendritic arbor; A’’ line, optical section shown in A’’. (A’’) Single z-slice shows a subset of dbd presynapses (magenta, labeled with dbd-Gal4 > UAS-brp-short::mstraw in close proximity to the A08a medial dendritic arbor membrane. (B–B’) Overexpression of Unc-5 in dbd can lateralize the axon terminal of dbd. B’’ line, position of optical section shown in B’’ below. See Figure 4—figure supplement 1E for quantification of lateralization classes. (B’’) Single z-slice shows a subset of dbd presynapses (magenta, labeled with dbd-Gal4 >UAS-brp-short::mstraw) positioned in close proximity to A08a membrane (green, labeled with A08a-LexA > LexAop-myr::smGdP::V5). (C–D) Quantification of synapse voxel position across the dendritic domain of A08a. (C) In control animals, dbd forms synapse voxels on the medial dendritic arbor of A08a; n = 27 hemisegments from 18 animals. Data reproduced from Figure 3D. (D) In hemisegments with full lateralization of dbd (as shown in B’), dbd forms synapse voxels on the lateral dendritic arbor of A08a; n = 5 hemisegments from five animals. See Figure 4—figure supplement 1E for quantification of lateralization classes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43478/elife-43478-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The A08a neuron in the EM reconstruction can be divided into medial, intermediate, and lateral dendritic domains. (B–D) The dbd neuron membrane (magenta) can target different subcellular domains of A08a (green), posterior view of one hemisegment. (B) Control: dbd contacts the A08a medial dendritic arbor (dbd-Gal4 >UAS lacZ). Data reproduced from Figure 3D. (C) Partial lateralization example: dbd contacts the intermediate dendrite domain (dbd-Gal4 >UAS-robo-2). (D) Full lateralization example: dbd contacts that lateral A08a dendritic arbor (dbd-Gal4 >UAS-unc-5). Data reproduced from Figure 4B’,D. Right panels show the distribution of synapse voxels for each genotype. Control, UAS-lacZ, n = 27 hemisegments from 18 animals; UAS-robo-2, n = 21 hemisegments from 15 animals; UAS-unc-5, n = 20 hemisegments from 17 animals. (E) Frequency of dbd membrane lateralization by genotype. dbd will either target mostly the medial, intermediate, or lateral dendritic domains, or not enter the neuropil (‘nerve’ category). See methods for full genotypes.
+
+### Lateralized dbd forms functional synapses with the A08a lateral dendritic arbor
 
 Our finding that the lateralized dbd axon terminal localizes Brp + puncta in close apposition to the lateral A08a dendritic arbor suggests that these two neurons are synaptically connected, but falls short of proving functional connectivity. To test for functional connectivity between the lateralized dbd and A08a, we took an optogenetics approach. We used the Gal4/UAS and LexA/LexAop binary expression systems (Brand and Perrimon, 1993; Lai and Lee, 2006) to express the light-gated cation channel CsChrimson (Chrimson) in dbd, and the calcium indicator GCaMP6m in A08a. For technical feasibility, all optogenetic experiments were done at the third instar larval stage (72 ± 4 hr ALH). Note that the A08a neuron at this stage retains its morphological features, including medial and lateral dendritic arbors plus a V-shaped output domain (Figure 5—figure supplement 1).
 
 We first tested for functional connectivity between the wild-type dbd and A08a, which had not yet been documented. In wild-type, Chrimson-induced activation of dbd resulted in a significant increase in GCaMP6m fluorescence in A08a, but not in the absence of the Chrimson co-factor all-trans retinal (ATR) (Figure 5A, quantified in D; Video 2), or in the absence of the dbd-Gal4 transgene (Figure 5E; quantified in F). We measured GCaMP6m levels in the output domain of A08a, which emitted a larger fluorescence signal compared to the arborizations in the dendritic domain (Figure 5C). This is the first experiment showing functional, excitatory connectivity between dbd and A08a. Next, we sought to determine whether the putative synapses between the lateralized dbd and the A08a lateral dendritic arbor are also functional. Using the same paradigm as in wild-type controls, we find that Chrimson activation of lateralized dbd resulted in an increase in GCaMP6m fluorescence in A08a that is statistically indistinguishable from wild-type controls (Figure 5B, quantified in D; Video 3). These data are consistent with dbd activating A08a equally well using medial arbor connectivity (control) or lateral arbor connectivity (following Unc-5 expression).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/43478/elife-43478-fig5-v2.jpg)
+
+**Figure 5.:** (A–A’) In wild-type animals, Chrimson activation of dbd neurons results in increased GCaMP6m fluorescence in the A08a output domain. For all figures,+ATR is shown in green, -ATR is shown in gray, and timing of Chrimson activation (500 ms) is represented with a pink bar. (A) A08a GCaMP6m ΔF/F0 traces from individual A08a pairs resulting from wild-type dbd activation. Non-evoked spontaneous activity is present in -ATR control. (A’) Average A08a GCaMP6m ΔF/F0 traces, before and after Chrimson activation of dbd neurons. Solid black lines represent the mean ΔF/F0. Shaded regions represent the standard deviation from the mean. +ATR, n = 28 A08a pairs, from 10 animals; -ATR, n = 11 A08a pairs, from five animals. (B–B’) In animals with fully lateralized dbd, Chrimson activation of dbd results in increased GCaMP6m fluorescence in A08a axon terminals. (B) A08a GCaMP6m ΔF/F0 traces from individual A08a pairs resulting from activation of lateralized dbd. (B’) Average A08a GCaMP6m ΔF/F0 traces, before and after Chrimson activation of dbd neurons. Solid black lines represent the mean ΔF/F0. Shaded regions represent the standard deviation from the mean. +ATR, n = 6 A08a pairs, from five animals; -ATR, n = 4 A08a pairs, from three animals. (C) Example ROI used for quantification drawn around A08a axon terminals in segment A5. (D) Quantification of the mean post-stimulus ΔF/F0 for lacZ control and unc-5. Error bars represent the standard deviation from the mean. Mean post-stimulus ΔF/F0: lacZ Control +ATR, 0.62 ± 0.28, n = 28 A08a pairs, from 10 animals; lacZ Control -ATR, −0.0172 ± 0.07, n = 11 A08a pairs, from five animals; unc-5 +ATR, 0.68 ± 0.24, n = 6 A08a pairs, from five animals; unc-5 -ATR, −0.035 ± 0.02, n = 4 A08a pairs, from three animals. (E–E’) dbd-Gal4 is required to produce Chrimson-evoked responses in A08a. A08a expresses GCaMP6m in a genetic background containing UAS-lacZ and 20XUAS-CsChrimson. (E) A08a GCaMP6m ΔF/F0 traces from individual A08a pairs. (E’) Average A08a GCaMP6m ΔF/F0 traces before and after light stimulus (pink bar). Solid black line represents the mean ΔF/F0. Shaded region represents the standard deviation from the mean. +ATR is represented in green (n = 10 A08a pairs). (F) Quantification of the mean post-stimulus ΔF/F0 for lacZ control +ATR, lacZ control -ATR, and no dbd-gal4 control. Error bars represent the standard deviation from the mean. Mean post-stimulus ΔF/F0: lacZ Control +ATR, 0.62 ± 0.28, n = 28 A08a pairs, from 10 animals (Data reproduced from Figure 6D); lacZ control -ATR, −0.0172 ± 0.07, n = 11 A08a pairs, from five animals (Data reproduced from Figure 6D); No dbd-gal4Control +ATR, 0.013 ± 0.17, n = 10 A08a pairs, from five animals. Significance between two groups was determined using a Mann-Whitney test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43478/elife-43478-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–A’’) Posterior view of a 3D light microscopy reconstruction in Imaris showing dbd (magenta) and A08a (green) neurons at 24 ± 4 hr ALH. Midline, dashed line in all panels. Asterisk, ventral off-target neurons. (A’) The dbd neurons are visualized by 165(dbd)-Gal4 > UAS-myr::smGdP::HA. (A’’) The A08a neurons are visualized by 26F05(A08a)-LexA > LexAop-myr::smGdP::V5. (B–B’’) Posterior view of a 3D light microscopy reconstruction in Imaris showing dbd (magenta) and A08a (green) neurons at 72 ± 4 hr ALH. Yellow dashed line indicates the imaging focal plane used to record GCaMP6m fluorescence changes in A08a neurons. Asterisk, position of ventral off-target neurons. (B’) The dbd neurons are visualized by 165(dbd)-Gal4 > UAS-myr::smGdP::HA. (B’’) The A08a neurons are visualized by 26F05(A08a)-LexA > LexAop-myr::smGdP::V5.
+
+![Video 2.](https://cdn.elifesciences.org/articles/43478/elife-43478-video2.mp4.jpg)
+
+**Video 2.:** Top: +ATR. A08a in WT controls exhibits stimulus-evoked changes in fluorescence. Video shows A08a axon terminals in a fictive brain preparation, anterior to the left. Bottom: -ATR. A08a does not exhibit stimulus-evoked changes in fluorescence in the absence of ATR. ‘ON’ indicates presentation of 561 nm light stimulus. Frames acquired at 4 frames/s, displayed at 0.5x speed.
+
+![Video 3.](https://cdn.elifesciences.org/articles/43478/elife-43478-video3.mp4.jpg)
+
+**Video 3.:** Top: +ATR. A08a exhibits stimulus-evoked changes in fluorescence to lateralized dbd. Video shows A08a axon terminals in a fictive brain preparation, anterior to the left. Bottom: -ATR. A08a does not exhibit stimulus-evoked changes in fluorescence in the absence of ATR. ‘ON’ indicates presentation of 561 nm light stimulus. White arrows indicate segments confirmed to have fully lateralized dbd’s in both left and right hemisegments. Frames acquired at 4 frames/s, displayed at 0.5x speed.
 
 We observed that the Gal4 line used to express Chrimson in dbd also has expression in a subset of ventral neurons (Figure 3; Figure 5—figure supplement 1), the stimulation of which could have hypothetically contributed to the observed A08a responses. To distinguish the influence of dbd neurons and the ventral off-targets on A08a responses, we activated each set of neurons separately via spatially restricted two-photon holographic stimulation (Figure 6A,B). We selected stimulation regions that were specific for each set of neurons. The stimulation regions were targeted to distinct planes and with nonoverlapping cross sections (Figure 6C). When we sequentially activated the dbd and off-target neurons within the same larva, we found that A08a had significantly larger GCaMP6m responses following Chrimson activation of dbd compared to the off-target neurons (Figure 6D-F). Similar results were observed for larvae where Unc-5 misexpression was used to lateralize the dbd axon (Figure 6G-J). We conclude that Chrimson activation of dbd neurons drives increased GCaMP6m fluorescence in A08a neurons in both wild-type and Unc-5 misexpression genotypes.
 
@@ -74,15 +178,23 @@ To determine whether the lateralized dbd provides monosynaptic input to A08a, we
 
 **Figure 7.:** (A) TTX eliminates spontaneous rhythmic neuronal activity in A08a (in which activity is part of an inter-segmental activity wave moving in the anterior or posterior direction representing fictive motor waves; Itakura et al., 2015). Representative traces show the ΔF/F0 for individual pairs of A08a neurons over the course of 3 min in lacZ control animals. Purple trace shows A08a ΔF/F0 without TTX present. Black trace shows A08a ΔF/F0 in the presence of 3 μM TTX, in which 20/20 A08a pairs from eight animals where rhythmic activity was eliminated. In 8/20 of these A08a pairs, non-rhythmic, non-intersegmentally coordinated changes in GCaMP6m fluorescence were observed, exemplified by the gray trace (see Discussion). (B) Experiment to test for monosynaptic dbd-A08a connectivity. TTX eliminates action-potential-mediated activity, preventing stimulation of non-Chrimson expressing neurons. Light-activation of Chrimson induces action-potential-independent neurotransmitter release from dbd. If dbd is monosynaptically connected to A08a, increases in A08a GCaMP fluorescence will result. (C–C”) Wild-type dbd has excitatory, monosynaptic connection to A08a medial dendritic arbor. (C) A08a GCaMP6m ΔF/F0 traces from individual A08a pairs resulting from wildtype dbd activation in the presence of TTX. (C’) Average A08a GCaMP6m ΔF/F0 traces in the presence of 3 μM TTX, before and after Chrimson activation of dbd neurons. Solid black lines represent the mean ΔF/F0. Shaded regions represent the standard deviation from the mean. +ATR, n = 20 A08a pairs, from nine animals; -ATR, n = 9 A08a pairs, from four animals. (C”) Quantification of the mean post-stimulus ΔF/F0 for lacZ control and lacZ +TTX animals. Mean post-stimulus ΔF/F0: lacZ Control +ATR, 0.62 ± 0.28, n = 28 A08a pairs, from 10 animals (Data reproduced from Figure 5D); lacZ control -ATR, −0.0172 ± 0.07, n = 11 A08a pairs, from five animals (Data reproduced from Figure 5D); lacZ control +TTX + ATR, 1.48 ± 0.70, n = 20 A08a pairs, from nine animals; lacZ control +TTX ATR, 0.019 ± 0.055, n = 9 A08a pairs, from four animals. (D–D”) Lateralized dbd has excitatory, monosynaptic connection to A08a lateral dendritic arbor. (D) GCaMP6m ΔF/F0 traces from A08a pairs after activation of lateralized dbd in the presence of TTX. (D’) Average A08a GCaMP6m ΔF/F0 traces in the presence of 3 μM TTX, before and after Chrimson activation (pink bar) of dbd neurons. Solid black lines represent the mean ΔF/F0. Shaded regions represent the standard deviation from the mean. +ATR, n = 17 A08a pairs, from 14 animals; -ATR, n = 5 A08a pairs, from four animals. (D”) Quantification of the mean post-stimulus ΔF/F0 for Unc-5 and Unc-5 +TTX animals. Mean post-stimulus ΔF/F0: Unc-5 +ATR, 0.68 ± 0.24, n = 6 A08a pairs, from five animals (Data reproduced from Figure 5D); Unc-5 -ATR, −0.035 ± 0.02, n = 4 A08a pairs, from three animals (Data reproduced from Figure 5D); Unc-5 +TTX +ATR, 2.00 ± 0.76, n = 17 A08a pairs, from 14 animals; Unc-5 +TTX ATR, 0.023 ± 0.03, n = 5 A08a pairs, from four animals. Significance between two groups was determined using a Mann-Whitney test.
 
+![Video 4.](https://cdn.elifesciences.org/articles/43478/elife-43478-video4.mp4.jpg)
+
+**Video 4.:** A08a exhibits spontaneous rhythmic activity in the absence of TTX. Video shows A08a axon terminals in a fictive brain preparation, anterior to the left. Video was acquired at two frames/second and recorded over 5 min. Video is displayed at 2x speed.
+
+![Video 5.](https://cdn.elifesciences.org/articles/43478/elife-43478-video5.mp4.jpg)
+
+**Video 5.:** A08a spontaneous rhythmic activity is eliminated in the presence of 3 µM TTX. Video shows A08a axon terminals in a fictive brain preparation, anterior to the left. Video was acquired at two frames/second and recorded over 5 min. Video is displayed at 2x speed.
+
 ## Discussion
 
-## Achieving subcellular synaptic specificity
+### Achieving subcellular synaptic specificity
 
 The ability of a presynaptic neuron to form synapses with a specific subcellular domain of its post-synaptic partner is well established in mammals (reviewed in Yogev and Shen, 2014) and has been described previously in Drosophila, although not at a mechanistic level. For example, the Drosophila giant fiber (GF) descending neuron targets a specific dendritic domain of the tergotrochanteral motor neuron, TTMn (Borgen et al., 2017). The transmembrane Sema-1a protein is required for both GF pathfinding to the motor neuropil, but also for establishing synaptic contact with the TTMn (Godenschwege et al., 2002; Godenschwege and Murphey, 2009). However, it remains unknown if Sema-1a protein is restricted to the specific dendritic domain of TTMn chosen by the GF, as predicted by the ‘labeled arbor’ model. Similarly, the Jaam1 and Jaam3 interneurons target different domains of their post-synaptic EL neuron partners (Heckscher et al., 2015), but the mechanism is unknown.
 
 Here, we provide evidence that axon guidance cues are the major determinants of subcellular dendritic synaptic specificity between dbd and A08a neurons, and that all regions of the A08a dendrite are competent to receive dbd synaptic inputs. Our findings expand upon the known mechanisms that generate subcellular synapse specificity to include guidance cues that restrict synaptic inputs to one region of a larger dendritic domain that is competent to receive synaptic input. We observed that the dbd axon is positioned close to the A08a output domain but never forms presynaptic contacts with this domain, as assayed by light and electron microscopy (data not shown). We speculate that the A08a output domain contains cell surface molecules (CSMs) that locally prevent dbd synapse formation. This is similar to work in C. elegans that identified secreted proteins that cluster CSMs to restrict synapse position on the DA9 motor neuron (Klassen and Shen, 2007). Similarly, NF186 expression is confined to the axon initial segment of Purkinje cells and determines the location of basket cell synapses (Ango et al., 2004). These observations suggest that synaptically coupled neurons may utilize both axon guidance cues and arbor-specific molecular cues to achieve subcellular synaptic specificity. We anticipate both ‘labeled arbors’ and ‘guidance cues’ play a role in determining subcellular synaptic specificity – possibly both acting in the same neuron, such as CSMs potentially regulating connectivity between coarse subcellular domains, such as the A08a axon versus dendrite, and guidance cues refining connectivity within a particular subcellular domain, such as the medial and lateral A08a dendritic domains.
 
-## Formation of functional lateralized dbd-A08a synapses
+### Formation of functional lateralized dbd-A08a synapses
 
 We have shown that the lateralized dbd axon not only makes close Brp contacts with the A08a lateral dendrite, but more importantly also makes functional synapses. Interestingly, there appear to be fewer synapse voxels between the lateralized dbd and A08a than between the medial dbd and A08a, yet functional connectivity is indistinguishable. This may be due to homeostatic mechanisms that increase the efficacy of the lateral dbd-A08a synapses. The fact that the dbd-A08a optogenetic activation occurs even in the presence of TTX, together with the observation of direct dbd-A08a synapses in EM, strongly suggests that dbd and A08a have direct, monosynaptic excitatory connectivity. Interestingly, dbd induced activation of GCaMP6m in A08a is greater in the presence of TTX (in both wild-type and after dbd lateralization), suggesting that dbd may activate an inhibitory feed-forward circuit that is silenced by TTX. A good candidate for such feed-forward inhibition is the A02d neuron, which is an inhibitory neuron that receives input from dbd and has output to A08a (Fushiki et al., 2016; Kohsaka et al., 2014) (Figure 2G). In some cases, we detected fluctuations in A08a GCaMP6m activity following TTX application (8/20 A08a pairs; Figure 7A); it is unclear if these represent cases of incomplete A08a inactivation, graded Ca2+ potentials, or Ca2+ release from internal organelles. It is also important to consider that not all insect neurons produce sodium-dependent spikes; therefore, we cannot fully rule out the possibility that the A08a activation we observe in the presence of TTX is due to indirect stimulation from non-spiking interneurons (Pearson and Fourtner, 1975; Pippow et al., 2009).
 
@@ -90,35 +202,333 @@ We also note that animals fed ATR (+ATR) have a statistically significant higher
 
 We have shown that the lateralized dbd maintains synaptic contact with A08a by remapping synaptic connectivity to the lateral arbor of A08a. However, we are unable to determine if dbd still maintains cellular synaptic specificity with its other synaptic partners. In contrast to A08a, other dbd target neurons only have a medial dendritic arbor, such as Jaam-3 (Heckscher et al., 2015). It would be interesting to know how these neurons respond to dbd lateralization; they may extend novel dendrite branches laterally, or may simply lose dbd synaptic inputs. The development of genetic tools to specifically label additional dbd target neurons will be required to understand if cellular synaptic specificity of dbd is maintained upon its remapping in the neuropil.
 
-## Functional consequences of subcellular synaptic specificity
+### Functional consequences of subcellular synaptic specificity
 
 In other systems, it is well established that subcellular location of synapses has a profound impact on how a neuron propagates information within a circuit (Bloss et al., 2016; Hao et al., 2009; Miles et al., 1996; Pouille et al., 2013; Tobin et al., 2017). From the Drosophila larval EM reconstruction, we show that A08a receives distinct input into its medial and lateral dendritic arbors, which is likely to influence how A08a integrates incoming synaptic activity. dbd is a proprioceptive sensory neuron, and A08a is rhythmically active during fictive motor waves (Itakura et al., 2015). Thus, the proper targeting of dbd and A02d to the medial arbor, and A02l and A31x to the lateral arbor, may be important for processing proprioceptive sensory input during locomotion. Although the dbd-Gal4 line used in our study has ventral sensory ‘off-target’ expression that precludes a behavioral analysis following dbd lateralization, if this off-target expression could be removed, it is possible that the behavioral consequences of dbd lateralization could be determined using recently developed high-resolution quantitative behavior analysis tools (Almeida-Carvalho et al., 2017; Kabra et al., 2013; Klein et al., 2017; Risse et al., 2017). Furthermore, future electrophysiological studies could directly test the functional consequences of the subcellular positioning of A08a inputs on neural processing (e.g. dendritic integration, coincidence detection, and noise suppression).
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Species (Drosophila melanogaster)</td>
+      <td>26F05-LexA</td>
+      <td>BDSC</td>
+      <td>54702</td>
+      <td>Expressed in A08a neurons</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>26F05-Gal4</td>
+      <td>BDSC</td>
+      <td>49192</td>
+      <td>Expressed in A08a neurons</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>165-Gal4</td>
+      <td>W. Grueber</td>
+      <td>N/A</td>
+      <td>Expressed in dbd neurons</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>UAS-LacZ</td>
+      <td>BDSC</td>
+      <td>8529</td>
+      <td>Control transgene</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>UAS-LacZ</td>
+      <td>BDSC</td>
+      <td>8530</td>
+      <td>Control transgene</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>UAS-unc-5::HA</td>
+      <td>B. Dickson</td>
+      <td>N/A</td>
+      <td>UAS drives unc-5</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>UAS-robo-2::HA</td>
+      <td>BDSC</td>
+      <td>66886</td>
+      <td>UAS drives robo-2</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>UAS-bruchpilot(short)-mstrawberry</td>
+      <td>S. Sigrist</td>
+      <td>N/A</td>
+      <td>UAS drives fluorescently labeled truncated bruchpilot</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>10xUAS-IVS-myr::smGdP::HA, 13xLexAop2-IVS-myr::smGdP::V5</td>
+      <td>BDSC</td>
+      <td>64092</td>
+      <td>UAS drives HA membrane tag, LexAop drives V5 membrane tag</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>UAS-MCFO</td>
+      <td>BDSC</td>
+      <td>64090</td>
+      <td>UAS drives multi-colored-flip-out</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>UAS-DenMark, UAS-syt.eGFP</td>
+      <td>BDSC</td>
+      <td>33064</td>
+      <td>UAS drives DenMark, UAS drives synaptotagmin::GFP</td>
+    </tr>
+    <tr>
+      <td>Species (D. melanogaster)</td>
+      <td>13XLexAop2-IVS-p10-GCaMP6m, 20xUAS-CsChrimson-mCherry</td>
+      <td>V. Jayaraman</td>
+      <td>N/A</td>
+      <td>LexAop drives GCamp6m, UAS drives Chrimson</td>
+    </tr>
+    <tr>
+      <td>Antibody, monoclonal</td>
+      <td>Mouse anti-V5</td>
+      <td>Invitrogen, Carlsbad, CA,</td>
+      <td>Cat. R96025, Lot 1949337</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody, polyclonal</td>
+      <td>Rabbit anti-mCherry</td>
+      <td>Novus Biologicals, Littleton, CO</td>
+      <td>Cat. NBP2-25157, Lot 102816</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody, monoclonal</td>
+      <td>Rat anti-HA</td>
+      <td>Roche Holding, AG, Basel, Switzerland</td>
+      <td>Cat. 11867423001, Lot 27573500</td>
+      <td>(1:100, after suggested dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody, monoclonal</td>
+      <td>Rat anti-OLLASDyLight-650conjugated antibody</td>
+      <td>Novus Biologicals, Littleton, CO</td>
+      <td>Cat. NBP1-06713C, Lot F-090517c</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody, polyclonal</td>
+      <td>Chicken anti GFP</td>
+      <td>Aves Labs, Inc, Tigard, OR</td>
+      <td>Cat. GFP-1020, Lot. GFP697986</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody, polyclonal</td>
+      <td>Rabbit anti-mCherry</td>
+      <td>Novus Biologicals, Littleton, CO</td>
+      <td>Cat. NBP2-25157, Lot 102816</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody, secondary</td>
+      <td>Alexa Fluor 488 AffiniPure Donkey Anti-Mouse IgG (H + L)</td>
+      <td>Jackson ImmunoResearch, West Grove, PA</td>
+      <td>Cat. 715-545-151</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody, secondary</td>
+      <td>Rhodamine RedTM-X (RRX) AffiniPure Donkey Anti-Rabbit IgG (H + L)</td>
+      <td>Jackson ImmunoResearch, West Grove, PA</td>
+      <td>Cat. 711-295-152</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody, secondary</td>
+      <td>Alexa Fluor 647 AffiniPure Donkey Anti-Rat IgG (H + L)</td>
+      <td>Jackson ImmunoResearch, West Grove, PA</td>
+      <td>Cat. 712-605-153</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody, secondary</td>
+      <td>Alexa Fluor 488 AffiniPure Donkey Anti-Chicken IgY (IgG) (H + L)</td>
+      <td>Jackson ImmunoResearch, West Grove, PA</td>
+      <td>Cat. 703-545-155</td>
+      <td>(1:400)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 All flies were raised at 25°C on standard cornmeal fly food.
 
-## Immunohistochemistry and sample preparation
+<table>
+  <thead>
+    <tr>
+      <th>Genotypes</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Females containing 10xUAS-IVS-myr::smGdP::HA, 13xLexAop2-IVS-myr::smGdP::V5 (BDSC# 64092); GMR26F05-LexA (A08a neurons) (BDSC# 54702), UAS-bruchpilot (short)-mstraw;165 Gal4 (dbd neurons) were crossed to males containing UAS-lacZ.Exel (control) (BDSC# 8529)</td>
+      <td>Figure 2A-A'; Figure 3A-A''; Figure 3C-D; Figure 4A-A'', Figure 4C, Figure 4—figure supplement 1B, E;</td>
+    </tr>
+    <tr>
+      <td>Females containing 10xUAS-IVS-myr::smGdP::HA, 13xLexAop2-IVS-myr::smGdP::V5 (BDSC# 64092); GMR26F05-LexA (A08a neurons) (BDSC# 54702), UAS-bruchpilot(short)-mstraw; 165 Gal4 (dbd neurons) were crossed to males containing UAS-robo-2::HA (BDSC# 66886)</td>
+      <td>Figure 4—figure supplement 1C, E</td>
+    </tr>
+    <tr>
+      <td>Females containing 10xUAS-IVS-myr::smGdP::HA, 13xLexAop2-IVS-myr::smGdP::V5 (BDSC# 64092); GMR26F05-LexA (A08a neurons) (BDSC# 54702), UAS-bruchpilot(short)-mstraw; 165 Gal4 (dbd neurons) were crossed to males containing UAS-unc-5::HA</td>
+      <td>Figure 4B-B''; Figure 4D; Figure 4—figure supplement 1D, E</td>
+    </tr>
+    <tr>
+      <td>Females containing GMR57C10-FLPL;; 10xUAS(FRT.stop)myr::smGdP-OLLAS, 10xUAS(FRT.stop)myr::smGdP::HA, 10xUAS(FRT.stop)myr::smGdP::V5-THS-10xUAS(FRT.stop)myr::smGdP-FLAG (MCFO) (BDSC# 64090) were crossed to males containing GMR26F05-Gal4 (BDSC# 49192)</td>
+      <td>Figure 2B</td>
+    </tr>
+    <tr>
+      <td>Females containing GMR26F05-Gal4 (BDSC# 49192) were crossed to males containing UAS-DenMark, UAS-syt.eGFP; In(3L)D, mirr/TM6C, Sb (BDSC# 33064)</td>
+      <td>Figure 2C-C''</td>
+    </tr>
+    <tr>
+      <td>Females containing GMR26F05-LexA (BDSC# 54702);165 Gal4 were crossed to males containing UAS-lacZ.Exel; 13XLexAop2-IVS-p10-GCaMP6m, 20xUAS-CsChrimson-mCherry (control)</td>
+      <td>Figure 5A-A'; Figure 5D'; Figure 5F; Figure 6C-F; Figure 7A; Figure 7C-C'</td>
+    </tr>
+    <tr>
+      <td>Females containing GMR26F05-LexA (BDSC# 54702); 165-Gal4, UAS-unc-5::HA were crossed to males containing 13XLexAop2-IVS-p10-GCaMP6m, 20xUAS-CsChrimson-mCherry</td>
+      <td>Figure 5B-B'; Figure 5D; Figure 6G-J; Figure 7D-D'</td>
+    </tr>
+    <tr>
+      <td>Females containing UAS-lacZ.Exel; 13XLexAop2-IVS-p10-GCaMP6m, 20xUAS-CsChrimson-mCherry were crossed to males containing GMR26F05-LexA (BDSC# 54702) (No Gal4 control)</td>
+      <td>Figure 5E-F</td>
+    </tr>
+  </tbody>
+</table>
 
-## Larval preparation
+### Immunohistochemistry and sample preparation
+
+#### Larval preparation
 
 Collection of timed larvae: embryos and larvae were raised at 25°C. Embryos were collected on 3.0% agar apple juice caps with yeast paste for 4 hr and then aged for 21 hr. Embryos were transferred to a fresh 3.0% agar apple juice cap and then aged for 4 hr. Hatched larvae were transferred to standard cornmeal fly food vials and aged until dissection.
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Larval brains were dissected in PBS, mounted on 12 mm #1.5 thickness poly-L-lysine coated coverslips (Neuvitro Corporation, Vancouver, WA, Cat# H-12–1.5-PLL) and fixed for 23 min in fresh 4% paraformaldehyde (PFA) (Electron Microscopy Sciences, Hatfield, PA, Cat. 15710) in PBST. Brains were washed in PBST and then blocked with 2.5% normal donkey serum and 2.5% normal goat serum (Jackson ImmunoResearch Laboratories, Inc, West Grove, PA) in PBST overnight. Brains were incubated in primary antibody for two days at 4°C. The primary was removed and the brains were washed with PBST, then incubated in secondary antibodies overnight at 4°C. The secondary antibody was removed following overnight incubation and the brains were washed in PBST. Brains were dehydrated with an ethanol series (30%, 50%, 75%, 100%, 100%, 100% ethanol; all v/v, 10 min each) (Decon Labs, Inc, King of Prussia, PA, Cat. 2716GEA) then incubated in xylene (Fisher Chemical, Eugene, OR, Cat. X5-1) for 2 × 10 min. Samples were mounted onto slides containing DPX mountant (Millipore Sigma, Burlington, MA, Cat. 06552) and cured for 3 days then stored at 4°C until imaged.
 
 The following primary and secondary antibodies were used:
 
-## Light microscopy
+<table>
+  <thead>
+    <tr>
+      <th>Primary antibody (concentration)</th>
+      <th>Source</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse anti-V5 tag monoclonal antibody (1:1000) Rabbit anti-mCherry polyclonal antibody (1:500) Rat anti-HA tag monoclonal antibody (1:100, after suggested dilution)</td>
+      <td>Invitrogen, Carlsbad, CA, Cat. R96025, Lot 1949337 Novus Biologicals, Littleton, CO, Cat. NBP2-25157, Lot 102816 Roche Holding, AG, Basel, Switzerland, Cat. 11867423001, Lot 27573500</td>
+      <td>Figure 2A-A'; Figure 3A-A''; Figure 3C-C'''; Figure 4A-B''; Figure 4—figure supplement 1B-D</td>
+    </tr>
+    <tr>
+      <td>Rat anti-OLLASDyLight-650conjugated antibody (1:100)</td>
+      <td>Novus Biologicals, Littleton, CO, Cat. NBP1-06713C, Lot F-090517c</td>
+      <td>Figure 2B</td>
+    </tr>
+    <tr>
+      <td>Chicken anti GFP polyclonal antibody (1:1000) (labels Syt:GFP) Rabbit anti-mCherry polyclonal antibody (1:500) (labels DenMark)</td>
+      <td>Aves Labs, Inc, Tigard, OR, Cat. GFP-1020, Lot. GFP697986 Novus Biologicals, Littleton, CO, Cat. NBP2-25157, Lot 102816</td>
+      <td>Figure 2C-C''</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Secondary antibody (concentration)</th>
+      <th>Source</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alexa Fluor 488 AffiniPure Donkey Anti-Mouse IgG (H + L) (1:400) Rhodamine RedTM-X (RRX) AffiniPure Donkey Anti-Rabbit IgG (H + L) (1:400) Alexa Fluor 647 AffiniPure Donkey Anti-Rat IgG (H + L)</td>
+      <td>Jackson ImmunoResearch, West Grove, PA, Cat. 715-545-151 Jackson ImmunoResearch, West Grove, PA, Cat. 711-295-152 Jackson ImmunoResearch, West Grove, PA, Cat. 712-605-153</td>
+      <td>Figure 2A-A'; Figure 3A-A''; Figure 3C-C'''; Figure 4A-B''; Figure 4—figure supplement 1B-D</td>
+    </tr>
+    <tr>
+      <td>Alexa Fluor 488 AffiniPure Donkey Anti-Chicken IgY (IgG) (H + L) (1:400) Rhodamine RedTM-X (RRX) AffiniPure Donkey Anti-Rabbit IgG (H + L) (1:400)</td>
+      <td>Jackson ImmunoResearch, West Grove, PA, Cat. 703-545-155 Jackson ImmunoResearch, West Grove, PA, Cat. 711-295-152</td>
+      <td>Figure 2C-C''</td>
+    </tr>
+  </tbody>
+</table>
+
+### Light microscopy
 
 Fixed larval preparations were imaged with a Zeiss LSM 800 laser scanning confocal (Carl Zeiss AG, Oberkochen, Germany) equipped with an Axio Imager.Z2 microscope. A 63x/1.40 NA Oil Plan-Apochromat DIC m27 objective lens and GaAsP photomultiplier tubes were used. Software program used was Zen 2.3 (blue edition) (Carl Zeiss AG, Oberkochen, Germany). For each experiment, all samples were acquired using the same acquisition parameters (see below).
 
-## Image processing and analyses
+<table>
+  <thead>
+    <tr>
+      <th>Voxel size</th>
+      <th>Excitation wavelength (laser power)</th>
+      <th>Detection wavelength</th>
+      <th>Pinhole size (AU)</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.090 × 0.090×0.280 µm3</td>
+      <td>488 nm (0.13%) 561 nm (0.07%) 640 nm (0.14%)</td>
+      <td>410–541 nm 541–627 nm 656–700 nm</td>
+      <td>35 µm for all channels (488 nm: 0.82AU, 561 nm: 0.71AU, 647 nm: 0.63AU)</td>
+      <td>Figure 2A-A'; Figure 3A-A''; Figure 3C-C'''; Figure 4A-B''; Figure 4—figure supplement 1B-D</td>
+    </tr>
+    <tr>
+      <td>0.067 × 0.067×0.280 µm3</td>
+      <td>640 nm (0.65%)</td>
+      <td>656–700 nm</td>
+      <td>40 µm (0.72AU)</td>
+      <td>Figure 2B</td>
+    </tr>
+    <tr>
+      <td>0.067 × 0.067×0.280 µm3</td>
+      <td>488 nm (0.13%) 561 nm (0.25%)</td>
+      <td>410–540 nm 540–772 nm</td>
+      <td>43 µm (0.99AU) 38 µm (0.77AU)</td>
+      <td>Figure 2C-C''</td>
+    </tr>
+  </tbody>
+</table>
 
-## Quantification of dbd-A08a synapse voxel distribution
+### Image processing and analyses
+
+#### Quantification of dbd-A08a synapse voxel distribution
 
 The ‘synapse voxel’ image analyses pipeline identifies Brp voxels that are either one voxel away or already overlapping with membrane containing voxels. Since each voxel size is 90 nm, then the ‘synapse voxels’ represent the voxels that have Brp less than 90 nm away from membrane voxels.
 
@@ -126,21 +536,21 @@ Image processing and analysis was performed using FIJI (ImageJ 1.50d, https://im
 
 Filling fractions were defined as previously described (Gerhard et al., 2017).
 
-## Figure preparation
+### Figure preparation
 
 Images in figures were prepared as either 3D projections in Imaris 9.2.0 (Bitplane AG, Zurich, Switzerland) or maximum intensity projections in FIJI (ImageJ 1.50d, https://imagej.net/Fiji). Scale bars are given for reference on maximum intensity projections and single z-slice micrographs, but do not necessarily represent actual distances, as the tissue samples undergo changes in size during the tissue clearing protocol. Pixel brightness was adjusted in some images for better visualization; all such adjustments were made uniformly over the entire image.
 
 Scale bars were included in all single focal planes and standard maximum intensity projections. In some cases, figures were ‘3D projected’ images exported from the Imaris software, where the scale bars are assigned to match the scale at the ‘center’ of the 3D projection. In these cases we did not add a scale bar because it would not be accurate for all parts of the image.
 
-## Data collection
+### Data collection
 
 A power analysis was not performed to determine the appropriate sample size. Many samples were dissected to account for low penetrance of dbd lateralization and to account for damaged samples that were not suitable for image analyses. All sample numbers represent biological replicates. However, we did perform the same experiment on multiple days. We did not exclude any outliers from the data sets. The criteria for excluding samples were as follows. For the fixed tissue preparation, samples with poor dissection quality or poor mounting on slides were excluded as they were unsuitable for the image analyses pipeline. Samples were also excluded if random ‘off-target’ neuron expression interfered with image analysis. For optogenetic experiments, samples were excluded if sample movement in the z-axis precluded accurate quantification of changes in fluorescence. For lateralized dbd optogenetics, brain segments were excluded from analysis if A08a received input from dbd on the medial dendrite. Samples were allocated into groups by genotype; every genotype was treated as an independent group.
 
-## Functional connectivity assays
+### Functional connectivity assays
 
 Newly hatched larvae were aged for 48 ± 4 hr ALH on standard cornmeal fly food at 25°C. At this time, larvae were transferred to apple caps containing wet yeast supplemented with 0.5 mM all-trans retinal (Sigma-Aldrich, R2500-100MG) and aged at 25°C in the dark. Following another 24 hr (72 ± 4 hr ALH) animals were dissected in HL3.1 saline solution. All dissections were performed in low lighting to prevent premature Chrimson activation. Freshly dissected brains were mounted in HL3.1 saline on 12 mm round Poly-L-Lysine-coated coverslips.
 
-## Confocal experiments (Figures 5 and 7)
+#### Confocal experiments (Figures 5 and 7)
 
 GCaMP6m signal in postsynaptic A08a axon terminals was imaged using 0.01% power of the 488 nm laser with a 40x objective on a Zeiss LSM800 confocal microscope (NA: 1.4; pinhole size: 32 µm (1AU); detection wavelength: 450–550 nm, voxel size: 0.782 × 0.782×1 µm3). Chrimson in presynaptic neurons was activated with three pulses of 561 nm laser at 100% power delivered via the same 40x objective using the bleaching function in the ZEN Zeiss software. The total length of the 561 nm pulses was about 450msec. After individual recording sessions of unc-5 expressing samples, Z-stacks of the brain were taken to verify the segments in which A08a exclusively received dbd input onto the lateral dendrite and were therefore permissible for analysis; the few larvae where Chrimson + off target neurons were close to A08a neurons were excluded, although due to low signal we can’t exclude the possibility of rare or fine contacts. A08a neurons from abdominal segments 3–5 were used for our analyses, as no statistically significant difference in post-stimulus ΔF/F0 was detected among these neurons.
 
@@ -148,7 +558,7 @@ To quantify ΔF/F0 traces we used a custom MATLAB script (The MathWorks, Natick,
 
 For demonstrating monosynaptic connectivity between dbd and A08a, brains were dissected and mounted in 3 µM TTX (Abcam, Cambridge, MA, ab120055) diluted in HL3.1. Brains were incubated for 5 min in the TTX solution prior to the recording session. To first determine the effectiveness of TTX, spontaneous A08a GCaMP6m activity was recorded over 5 min with and without TTX (in lacZ control animals). Spontaneous GCaMP6m activity was recorded on an LSM800 with a 40X objective (NA: 1.4; excitation wavelength: 488 nm; detection wavelength: 492–555 nm; pinhole size: 32 µm (1AU)). Once it was established that TTX eliminates spontaneous rhythmic A08a activity, we dissected fresh brains in TTX and performed the same Chrimson activation paradigm (using the same bleaching protocol and image acquisition settings) as described above to test monosynaptic connectivity.
 
-## Two photon experiments (Figure 6)
+#### Two photon experiments (Figure 6)
 
 Images were generated using a galvanometric and resonant scan mirror-based two-photon microscope (VIVO Multiphoton Movable Objective RS +Microscope and Vector resonant galvo scanner, 3i , Denver, CO). A Zeiss W Plan-Apochromat 20x/1.0 NA water dipping objective (apochromatically corrected 480 nm-1300nm) with a working distance of 2.3 mm was used for delivery of excitation and stimulation laser excitation. The imaging system utilizes the Chameleon Discovery dual wavelength laser system (Coherent, Santa Clara, CA) as the pump laser. The pump laser supplies 100 fs pulses at an 80 MHz repetition with an output power of 1.3 W at 940 nm and 3.9 W at 1040 nm. Imaging frames were obtained at a 39.6 Hz, and five frames were averaged per saved image. The scan range was 578 μm x 571 um, corresponding to a pixel size of 1.47 μm x 1.42 um. GCaMP6m and mCherry were excited using 940 nm (27 mW) and 1040 nm (200–244 mW) radiation, respectively, while the fluorescence was collected with two fast-gated GaAsP PMTs having filter sets that selectively collect fluorescence between 490 and 560 nm for the green channel and 570 and640 nm in the red channel.
 
@@ -156,6 +566,6 @@ Sample stimulation was based around a 5 W, 192 fs, 10 MHz laser system for ex
 
 For quantification of ΔF/F0 responses to two-photon activation (Figure 6), we computed F0 as the mean fluorescence over the 20 frames (2.53 s) prior to the 150 ms stimulus. ΔF was computed as the difference between F0 and the mean fluorescence over the 5 frames following the stimulus (0.63 s).
 
-## Statistical analyses
+#### Statistical analyses
 
 Statistical analyses for optogenetic experiments were performed with MATLAB and R. For analyzing the statistical significance of mean post-stimulus ΔF/F0, an H-test was used to determine whether the data for each experimental group were normally distributed. Because these data were non-normally distributed, a Mann-Whitney test was performed to determine whether there were statistically significant differences in mean ΔF/F0 among experimental groups. To analyze potential differences in F0 among + and - ATR groups we used a Pairwise Wilcox Test to calculate comparisons between each experimental group. This was followed by a Benjamini and Hochberg correction for multiple testing. All code for analysis of optogenetic data in Figures 5–7 is deposited at the following GitHub repository https://github.com/timothylwarren/elife_larvae_2019 (Warren, 2019; copy archived at https://github.com/elifesciences-publications/elife_larvae_2019).

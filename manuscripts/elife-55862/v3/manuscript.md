@@ -41,21 +41,106 @@ We find that most genes in the social chromosome show no strong allelic bias and
 
 ## Results
 
-## Hundreds of genes have fixed allelic differences between supergene variants
+### Hundreds of genes have fixed allelic differences between supergene variants
 
 To identify differences between supergene variants, we obtained 408-fold genome coverage from 20 haploid SB males and 20 haploid Sb males. Thirteen within each group (65%) were from the native South American range whereas the rest were from an invasive North American population (Wang et al., 2013). By comparing the two groups of males we identified 2877 single nucleotide polymorphisms (SNPs) with one allele in all SB individuals and a different allele in all Sb individuals, affecting 352 genes (Supplementary file 1). Among the 3.4% of SNPs affecting coding sequence, almost half changed the amino-acid sequence, with one change to a premature stop codon (47.7% non-synonymous vs. 52.3% synonymous changes). The remaining SNPs were in intergenic (36.1%), intronic (58.0%) or in untranslated regions (2.5%).
 
 Because the invasive North American population went through a severe bottleneck in the 20th century (Ascunce et al., 2011), we repeated the analysis after separating populations. We found 252 additional SNPs with fixed differences between SB and Sb individuals in South America, and 23,022 additional fixed differences between SB and Sb in North America. The latter number is 4-fold higher than expected due to differences in sampling size alone and is in line with lower genetic diversity of both supergene variants in North America due to the invasion bottleneck.
 
-## Seven genes have consistent variant-specific expression patterns in all populations
+### Seven genes have consistent variant-specific expression patterns in all populations
 
 To understand the impacts of different evolutionary processes on the supergene, we compared the expression of SB alleles and Sb alleles for all genes in the region. For this, we generated RNA-seq data from whole bodies of SB/Sb workers and from abdomens, thoraces, and heads of SB/Sb virgin queens collected in South America. To compare with patterns in other fire ant populations, we additionally incorporated existing RNA-seq gene expression data from pools of whole bodies of SB/Sb queens collected in the USA and Taiwan (Wurm et al., 2011; Fontana et al., 2020). We summarize our hypotheses and results in Table 1.
+
+**Table 1.**
+ Summary of the hypotheses proposed in this study, the tests carried out to explore them, the data used and the results obtained.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Underlying process</th>
+      <th>Hypothesis</th>
+      <th>Test</th>
+      <th>Expectation</th>
+      <th>Data</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Suppressed recombination</td>
+      <td rowspan="2">Allele bias is determined by the effects of genomic structure independently of function</td>
+      <td>Allele specific expression in the supergene remains constant across body parts/castes</td>
+      <td>Tissue-specific allele specific expression would suggest fine-tuning by selection for specific functions. A lack of allelic bias would be consistent with random changes in expression due to a random accumulation of mutations in Sb</td>
+      <td>RNAseq from three body parts of queens and whole bodies of workers from South American populations. Data generated in this study.</td>
+      <td>We find no tissue-specific differences in allelic bias (124 genes, four levels, DESeq2 Wald test &gt; 0.05, Figure 1)</td>
+    </tr>
+    <tr>
+      <td>Allele specific expression differences within the supergene should be highly correlated between closely related populations</td>
+      <td>Highly correlated supergene expression patterns between closely related populations would indicate that most expression differences between variants depend on the genomic content, rather than on function. Alternatively, if most expression patterns are driven by function, gene expression differences between supergene variants should be consistent across different populations, irrespective of ancestry.</td>
+      <td>RNAseq from SBSb queens from populations in the invasive range of North America and Taiwan and the native range of South America. North American and Taiwanese populations are closely related. Data generated in this study and from Wurm et al., 2011 and Fontana et al., 2020.</td>
+      <td>North American and Taiwanese expression patterns within the supergene are highly correlated (r²=0.67). Correlation between South American and the invasive populations is lower (r²=0.21 and 0.18 for North America-South American and Taiwan-South America respectively). Figure 1—figure supplement 5.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Some genes will show signs of dosage compensation</td>
+      <td>Genes Sb alleles with a hallmark of past sequence degeneration are more likely to be biased towards SB</td>
+      <td>A positive correlation between the number of non-synonymous mutations in Sb and lower allelic expression would indicate gene degeneration.</td>
+      <td>RNAseq from SBSb queens from populations in the invasive range of North America and Taiwan and the native range of South America. Data generated in this study and from Wurm et al., 2011 and Fontana et al., 2020.</td>
+      <td>SB bias increases with the number of non-synonymous mutations in Sb. Figure 4—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>We should find genes with a strong allelic bias towards the SB allele, but with no expression differences between social forms</td>
+      <td>In some genes, deleterious mutations in Sb leading to lowered expression of this allele should result in an increased expression of the SB allele to reach balanced expression, resulting in similar expression levels between multiple-queen (SB/Sb) and single-queen (SB/SB) individuals. Alternatively, low expression of the Sb allele will invariably lead to low expression of multiple-queen individuals.</td>
+      <td>RNAseq from North American SBSb and SBSB queens. Data from Wurm et al., 2011 and Fontana et al., 2020.</td>
+      <td>The patterns of expression differences between social forms in the social chromosome cannot be explained only by the observed allelic biases. A model allowing for dosage compensation fits the data best (294 genes, Figure 3). Differences in gene expression between social forms does not vary with varying levels of allelic bias (193 genes, Figure 3—figure supplement 1). Most genes with a strong SB bias are not differentially expressed between SBSb and SBSB queens (12 out of 15, binomial test p=0.03, Figure 4c)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antagonistic selection</td>
+      <td>Selection favors the linkage of antagonistic alleles to the supergene</td>
+      <td>The supergene region should be enriched in genes with differences between social forms</td>
+      <td>Selection would favor the linkage to the supergene of genes with different expression optima for the different social forms. This would result in more genes with socially biased expression than expected by chance in the supergene. If selection does not play a major role in supergene expression patterns, socially biased genes will be equally spread throughout the genome.</td>
+      <td>RNAseq from North American SBSb and SBSB queens. Data from Wurm et al., 2011 and Fontana et al., 2020.</td>
+      <td>The supergene region contains more genes with expression differences between social forms than expected by chance (33 out of 474 in the supergene, 260 out of 10,007 in the rest of the genome, Chi² test p&lt;10⁻⁷, Figure 2a).</td>
+    </tr>
+    <tr>
+      <td>Selection favors the fixation of alleles adapted to the multiple-queen form in the Sb variant</td>
+      <td>The Sb variant is enriched in genes high multiple-queen expression</td>
+      <td>If selection has favored the linkage to Sb of alleles beneficial to multiple-queen individuals, this variant should be enriched in genes highly expressed in this social form despite widespread degeneration. Alternatively, most Sb alleles are expected to be downregulated due to degeneration, and consequently Sb should be enriched in genes with low expression in multiple-queen colonies.</td>
+      <td>RNAseq from North American SBSb and SBSB queens. Data from Wurm et al., 2011 and Fontana et al., 2020.</td>
+      <td>Genes with Sb bias tend to show higher multiple-queen expression (5 out of 8, compared with 1 out of 15 for SB, Chi² test p=0.02, Figure 4d). This pattern is unlikely to be neutral due to widespread gene degeneration (Figure 3) and given that social bias patterns are similar within the supergene and in the rest of the genome (29 out of 33 genes with multiple queen bias in the supergene compared with 245 out of 260 in the rest of the genome, Chi² test p=0.31, Figure 2b).</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig1-v3.jpg)
+
+**Figure 1.:** Differences in expression (y axis) between social chromosome variants in whole bodies of workers from South America, heads, thoraces and abdomens of queens from South America, whole bodies of queens from North America and Taiwan. We show all 16 genes with significant allelic bias in South American populations, and the corresponding biases from the other populations. Bold gene names highlight when allelic bias occurs in all populations (Benjamini-Hochberg (BH) adjusted p<0.05 from the joint linear mixed-effects model). Significance in population-specific comparisons is indicated by an asterisks under each boxplot (BH adjusted p<0.05 from either the joint analysis or DESeq2 Wald tests). Each box shows the distribution of logarithm two expression ratios between SB and Sb in each sample type. Positive values indicate higher SB expression; negative values indicate higher Sb expression. A log2 expression ratio greater than one or smaller than −1 represents a two-fold gene expression difference in either direction. Genes are in chromosomal order.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The combined analysis detected seven genes with allele-specific expression across both populations, three of which were independently detected using only South American populations, six using only North American populations and three using only Taiwanese populations. The numbers in parentheses indicate how many genes analyzed in each comparison.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Differences in allele-specific expression between variants (y axis) for all genes in the supergene with enough expression information (x axis). Significant expression differences (BH adjusted p<0.05 from Wald test in DESeq2) are in green and the RefSeq ID of the significant gene is outlined in the x axis. Non-significant differences are marked by grey boxes. Within each plot, each box shows the distribution of log2 expression ratios between SB and Sb. Positive values indicate higher expression in SB; negative values indicate higher expression in Sb. The dashed line shows log2 expression ratios = 1, that is a two-fold gene expression difference in either direction. Genes are in chromosomal order, showing that genes with allelic biases in either direction are distributed throughout the supergene, rather than localized in a manner that would be expected by strata of differentiation. Thicker boxes have higher median read counts than thinner boxes.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Differences in allele-specific expression between variants (y axis) for all genes in the supergene with enough expression information (x axis). Significant expression differences (BH adjusted p<0.05 from Wald test in DESeq2) are in green and the RefSeq ID of the significant gene is outlined in the x axis. Non-significant differences are in gray. Within each plot, each box shows the distribution of log2 expression ratios between SB and Sb. Positive values indicate higher expression in SB; negative values indicate higher expression in Sb. The dashed line shows log2 expression ratios = 1, that is a two-fold gene expression difference in either direction. Genes are in chromosomal order, showing that genes with allelic biases in either direction are distributed throughout the supergene, rather than localized in a manner that would be expected by strata of differentiation. Thicker boxes have higher median read counts than thinner boxes.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Differences in allele-specific expression between variants (y axis) for all genes in the supergene with enough expression information (x axis). Significant expression differences (BH adjusted p<0.05 from Wald test in DESeq2) are in green and the RefSeq ID of the significant gene is outlined in the x axis. Non-significant differences are in gray. Within each plot, each box shows the distribution of log2 expression ratios between SB and Sb. Positive values indicate higher expression in SB; negative values indicate higher expression in Sb. The dashed line shows log2 expression ratios = 1, that is a two-fold gene expression difference in either direction. Genes are in chromosomal order, showing that genes with allelic biases in either direction are distributed throughout the supergene, rather than localized in a manner that would be expected by strata of differentiation. Thicker boxes have higher median read counts than thinner boxes.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** We show correlations: (a) between Taiwanese and North American populations; (b) between Taiwanese and South American populations; and (c) between South American and North American populations. Positive values represent higher expression of the SB allele, negative values represent higher expression of the Sb allele. Each dot represents a single gene within the supergene region. The sizes of the dots are proportional to the average gene expression level. Red dots represent the genes detected by the linear mixed effects model as significantly differentially expressed between SB and Sb across populations. The correlation r2 between each pair of populations was calculated using the Spearman method, with each gene being weighted by mean expression level (read counts).
 
 Among the 352 genes with fixed differences between SB and Sb in this combined dataset, 122 had sufficient expression for analysis of differences between alleles. We found that seven of the genes (5.7%) had consistent expression differences between variants across all populations (linear mixed-effects model; Benjamini-Hochberg (BH) adjusted p<0.05, Figure 1). Expression bias went in both directions: the Sb variants of ‘pheromone-binding protein Gp-9/OBP3’ (LOC105194481), ‘retinol-binding protein pinta-like’ (LOC105199327) and uncharacterized LOC105193135 were consistently more highly expressed. In contrast, the SB variants of ‘ejaculatory bulb-specific protein 3’ (LOC105199531), ‘carbohydrate sulfotransferase 11-like’ (LOC105193134), ‘calcium-independent phospholipase A2-gamma’ (LOC105203065) and uncharacterized LOC105199756 were consistently more highly expressed.
 
 We repeated our analysis in a population-specific manner. Within each of our three populations, this approach independently confirmed most of the allelic biases we had previously detected (Figure 1—figure supplement 1). It additionally uncovered population-specific patterns of allelic bias within the supergene (Figure 1—figure supplements 2–4, Supplementary file 3).
 
-## Supergene allele expression differs based on population ancestry but not body parts
+### Supergene allele expression differs based on population ancestry but not body parts
 
 If allelic bias evolved in response to antagonistic selection, we expect it to be fine-tuned for specific functions across different tissues. In contrast, if allelic bias resulted from the accumulation of neutral or deleterious mutations, we would expect a consistent bias across tissues.
 
@@ -65,27 +150,45 @@ The general lack of tissue-specific fine-tuning of allelic expression bias in th
 
 Together, these results support the idea that the effects of suppressed recombination on genomic architecture explain most of the allelic biases in the supergene region.
 
-## Overrepresentation of socially biased genes in the social supergene
+### Overrepresentation of socially biased genes in the social supergene
 
 Social-form specific selection should lead to an overrepresentation of socially biased gene expression in the supergene region. To test whether this pattern occurs, we compared gene expression between egg-laying queens from single-queen and from multiple-queen colonies. There were 293 socially biased genes with known chromosomal locations (Supplementary file 4). Such genes were indeed overrepresented in the supergene region (Figure 2a, 33 out of 474, 12 expected by chance, χ2 = 29.7, p<10−7). Next, we examined the direction of expression bias: we found that most socially biased genes had higher expression in multiple-queen colonies than in single-queen colonies (274 out of 293, i.e., 94%; binomial test, p<10−15). However, this pattern was not specific to the supergene (χ2=1.04, p=0.3, Figure 2b). In sum, more socially biased genes are present in the supergene than in the rest of the genome, but the direction of social bias is similar across the genome. Since the trend of social bias is genome-wide, it cannot be explained by Sb degeneration alone.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig2-v3.jpg)
 
-**Figure 2.:** (a) The supergene region is significantly enriched in genes with differences between social forms, a pattern that could indicate the effect of antagonistic selection. (b) Most genes with differential expression between social forms are more highly expressed in multiple-queen colonies. This expression bias is observed across the genome and is not a unique feature of the supergene.Figure 2—source data 1.The columns in the dataset stand for: genome_region, whether the gene is located in the supergene ("supergene") or in the rest of the genome ("recombining"); gng_linkage_group, the linkage group for the gnG assembly of the Solenopsis invicta reference genome in which a gene is located; refseq_id, gene ID in the RefSeq database; social_bias, whether a gene shows differential expression between social forms according to DESeq2's Wald test (Benjamini Hochberg adjusted p value < 0.05); social_bias_direction, whether a gene is more highly expressed in multiple-queen colonies ("Poly"), single-queen colonies ("Mono") or not differentially expressed ("Non-diff").
+**Figure 2.:** (a) The supergene region is significantly enriched in genes with differences between social forms, a pattern that could indicate the effect of antagonistic selection. (b) Most genes with differential expression between social forms are more highly expressed in multiple-queen colonies. This expression bias is observed across the genome and is not a unique feature of the supergene.
 
-## Genes with no social bias tend to have allele-specific expression biased towards the SB variant
+### Genes with no social bias tend to have allele-specific expression biased towards the SB variant
 
 Gene degeneration in Sb could lead to dosage compensation. To test whether this occurs, we compared the differences in expression levels between the SB and Sb alleles within heterozygous SB/Sb individuals from multiple-queen colonies to differences in expression between queens from single-queen (SB/SB) and multiple-queen colonies (SB/Sb). Dosage compensation should lead to a pattern where higher expression of the SB allele does not result in differences in expression between social forms.
 
 We tested whether such a pattern occurs for 294 genes in the supergene region using North American data. We compared the proportion of SB allele expression (PB) for each gene, with its expression in multiple-queen colonies relative to single-queen colonies (PMQ; Figure 3). If Sb degeneration had led to its global downregulation or inactivation, we would have found a stark bias towards SB, irrespective of social bias. Instead, we find that the expression levels of SB and Sb are balanced for most genes without differences between social forms (black line in Figure 3, linear regression passes through the point 0.5, 0.5 with a non-significant deviation of 0.0058; p=0.32). At the extremes of the distribution, however, allelic bias is higher when social bias is higher. We therefore considered two models to explain this pattern. The null model assumes that differences in expression patterns between social forms are due solely to differences in baseline allelic expression (purple line in Figure 3). In this model, the PB and PMQ values change solely as a consequence of the relative expression of the Sb and the SB alleles (see Materials and methods). This model (the purple line) fits the data poorly. The second model (red line), additionally allows for the effect of gene-specific dosage compensation by increasing expression of B-alleles in SB/Sb individuals in multiple queen-colonies. This model fits the data much better and it is significantly different from the null model (analysis of variance p<10−5). This finding confirms that SB expression in SB/Sb individuals is higher than expected given the observed patterns of expression differences between social forms. Further in line with this, we found no relation between the relative expression levels of the SB and Sb alleles in queens from multiple queen-colonies to the total expression of the genes in the supergene in either social form (Figure 3—figure supplement 1;Wilcoxon sum rank test p>0.05). Thus, higher SB allele expression in heterozygous individuals does not imply higher expression in single-queen colonies.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig3-v3.jpg)
+
+**Figure 3.:** Each point is one of 294 genes within the supergene (North American data). Point size is proportional to the mean expression in queens from multiple-queen colonies. The values were calculated as PB = xB/(xB + xb) and PMQ = xMQ/(xSQ + xMQ); where xB and xb are the expression of SB and Sb alleles, and xSQ and xMQ are the expression in single-queen and multiple-queen colonies. Values of PMQ below 0.5 therefore indicate higher expression in SB/SB queens from single-queen colonies; values above 0.5 indicate higher expression in SB/Sb queens from multiple-queen colonies. Values of PB above 0.5 indicate allelic bias towards SB; values below 0.5 indicate bias towards Sb. The straight black line shows a linear regression. The purple line shows the predicted null relationship if the pattern of expression was due to Sb degeneration alone PMQ = (1/ (2PB+1)). This model is a poor predictor of the data. The red line assumes gene-specific dosage compensation, where a decrease in expression of Sb leads to increased SB expression PB=(1-(PMQ/2))/PMQ. The model including dosage compensation fits the data better than the null model; both models are significantly different (analysis of variance between models p<10−5). The observed enrichment of multiple-queen genes in Sb is therefore unlikely due to Sb degeneration alone.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The plot represents the overall expression levels for all genes analyzed in the supergene for which there was allele-specific and social form expression data in North American populations. To account for the potential effects of antagonistic selection, nine genes with significant expression biases towards Sb or with high SB expression in multiple-queen colonies were removed. As a result, 193 genes in total were included in this analysis. Each bar represents the median normalized expression within group, the error bars are the 95% CI interval around the median (estimated from a 5000x median bootstrapping). The expression levels within each expression group (Single-queens, multiple-queens, SB and Sb expression) is normalized by the total number of reads in that group. This normalization allows the comparison across different datasets with different levels. The differences in expression between single-queen and multiple-queen individuals remain non-significant (Wilcox test p>0.05) across varying levels of SB-Sb expression differences. Only when Sb expression is much higher than SB expression (Sb/SB expression ratio >1.5) does it seem to be an increase in gene expression for multiple-queen individuals, but the difference between social forms remained non-significant (Wilcox test p=0.08). Without dosage compensation, we would expect that allelic bias would invariably result in changes in expression between social forms: As the allelic expression levels of SB increases, we would observe an increase in expression of single-queen colonies. Instead, expression levels in single-queen and multiple-queen individuals remain similar. These results are therefore consistent with SB expression compensating for low Sb expression.
+
 To complement these analyses of general trends, we focused on individual genes. Most genes had no significant allelic or socially biased expression (256, i.e., 87%; Figure 4a and Figure 4—figure supplement 1). However, fifteen of the 294 genes showed allelic bias but no differences in gene expression between social forms (5%; Figure 4c). Most of these genes (12) had higher expression in SB, with only three being more highly expressed in Sb (binomial test, p=0.03). In line with this result, the median expression of SB alleles of these 15 genes was 5.9-fold higher than that of Sb alleles (Wilcoxon signed rank test p=0.0008 against equal expression).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig4-v3.jpg)
+
+**Figure 4.:** X axes indicate ratios of expression between SB/Sb queens and SB/SB queens. Y axes indicate allelic expression ratios in SB/Sb queens. Both ratios use a log2 scale whereby log2 = 0 indicates absence of differences. Colors are proportional to numbers of genes. Double-headed arrows indicate significant expression differences. Panel (a) shows expression patterns for genes showing no difference in either comparison. The remaining three panels summarize expression patterns for: (b) genes with significant expression differences between SB/Sb and SB/SB queens only – these are biased towards higher expression in multiple-queen colonies (13 multiple-queen vs. two single-queen, binomial test, p=0.007); (c) genes with significant expression differences only between SB and Sb alleles within SB/Sb individuals – these are biased towards higher expression in the SB variant, in line with a dosage compensation mechanism (12 SB vs. 3 Sb, binomial test, p=0.03); (d) genes with significant expression differences between SB/Sb and SB/SB queens and between the SB and Sb variants in SB/Sb queens – the genes with higher expression of the Sb allele (y < 0) tend to be more highly expressed in queens from multiple-queen colonies (x > 0), in line with evolutionary antagonism between social forms (5 out of 8 Sb biased genes with bias towards multiple-queen colonies, compared with 1 out of 15 for SB biased genes χ2 = 5.8, p=0.02). The numbers in a) indicate how many genes had no differential expression. In b), (c) and d) the numbers in each quadrant indicate how many genes were significantly differentially expressed in the relevant comparison.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig4-figsupp1-v3.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55862/elife-55862-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Positive values indicate higher expression in SB; negative values indicate higher expression in Sb. Allelic expression bias was measured in all populations analyzed in this study: South America, U.S.A. and Taiwan. Each dot represents a gene from a sample in each population. Because genes with low expression result in noisy log2 ratios of expression, we excluded genes with a median expression of 5 reads or fewer). A linear regression (dark blue line, ‘log2 ratio’ ~ ‘Population’ + ‘Sample’ + ‘Number of nonsynonymous mutations’) shows that, overall, SB bias increases with the number of nonsynonymous mutations (coefficient = 0.052, p=0.01).
 
 The general and gene-specific patterns are hallmarks of dosage compensation: Lower expression of Sb alleles is compensated for by higher expression of SB alleles, resulting in the absence of expression differences between social forms. Importantly, the overall trends and gene-specific patterns both indicate that this dosage compensation occurs in gene-specific manners rather than being a response to global Sb-inactivation.
 
 Dosage compensation would arise if gene degeneration leads to decreased Sb expression. We tested this hypothesis by asking whether genes with higher coding sequence degeneration have a higher SB bias. We used the number of non-synonymous mutations per gene in the Sb allele as a proxy for gene degeneration and compared this measure against allelic bias (Figure 4—figure supplement 2). Indeed, as the number of non-synonymous mutations increases, so does the allelic bias towards SB (coefficient = 0.052, p=0.01). This indicates that coding-sequence degeneration could lead to lower expression, or alternatively that some genes generally degenerate faster than others.
 
-## Genes with higher expression of Sb than SB alleles are socially biased towards higher expression in multiple-queen colonies
+### Genes with higher expression of Sb than SB alleles are socially biased towards higher expression in multiple-queen colonies
 
 Antagonistic selection should lead to an enrichment of genes in the supergene that are highly expressed in multiple-queen colonies and show allelic bias towards Sb. In contrast, without antagonistic selection all expression differences between Sb and SB alleles should be due to gene degeneration, and lead to lower Sb expression levels (Ma et al., 2020).
 
@@ -95,13 +198,13 @@ From the 294 genes analyzed in the previous section, eight (3%) had both allele-
 
 In the fire ant, a supergene system with two variants (SB and Sb) controls whether colonies have one or multiple queens. We compared gene expression patterns between the SB and Sb variants of the social supergene within heterozygote SB/Sb individuals which exist only in multiple-queen colonies. We contrasted these patterns with differences in expression between queens from single-queen and multiple-queen colonies. We find patterns consistent with degeneration of Sb and with dosage compensation in response to this degeneration. We also find that some genes in Sb have patterns consistent with evolutionary antagonism.
 
-## The effects of gene degeneration on supergene expression patterns
+### The effects of gene degeneration on supergene expression patterns
 
 We found that a small proportion of the genes in the supergene region showed consistent allele-specific expression differences between the SB and Sb variants. It is tempting to conclude that such gene expression differences arose through selection, as a consequence of evolutionary antagonism between the single-queen and multiple-queen phenotypes. However, this interpretation may be too simplistic, as it ignores the impacts of supergene degeneration. Several studies have shown that Sb is degenerating (Wang et al., 2013; Stolle et al., 2019; Pracana et al., 2017a). Our observation that roughly half of the fixed differences in coding sequence between SB and Sb impact the protein sequence (where they are likely to have a deleterious effect) is also consistent with degeneration of the Sb variant. Such sequence-level degeneration is a symptom of reduced selection efficacy. By examining gene expression, we revealed three additional symptoms of degeneration and low selection efficacy. First, the absence of tissue-specificity in our study would not be expected if expression differences were adaptive. For some genes, the expression differences between Sb and SB are likely due to mutations that are completely neutral or deleterious. However, for other genes, expression differences could be partially adaptive, but low selection efficacy may have hindered the fine-tuning of their expression during the short timespan since the supergene’s emergence (Wang et al., 2013). As a result, strong selection for a particular level of allele-specific expression in one body part (e.g., in antennae), could result in consistent allele-specific expression patterns across tissues, even if this has mildly deleterious effects (e.g., in the gut).
 
 Second, there was a strong correlation in allelic bias between the invasive North American and Taiwanese populations, despite the data from the two populations being from different studies. Both invasive populations have lower genetic diversity overall (Ascunce et al., 2011), and in the supergene region in particular (Pracana et al., 2017a). The strong effect of ancestry on allelic bias indicates that genomic architecture, rather than gene function, defines most expression patterns within the supergene. Finally, gene degeneration can result in lower expression levels (Xu et al., 2019; Pucholt et al., 2017). For example, gene expression is reduced in genes with sequence-level signatures of degeneration in the mating-type chromosomes of the anther-smut fungus Microbotryum (Ma et al., 2020). We similarly find that Sb alleles with more non-synonymous mutations tend to have lower expression than SB alleles. This pattern could result from the relative inefficacy of selection on Sb, leading to selection favoring the downregulation of alleles accumulating detrimental mutations. We find such patterns of degeneration despite the likely effects of antagonistic selection (Huang and Wang, 2014) and the lack of evolutionary strata (Pracana et al., 2017a), both of which are likely to dampen the degeneration signal (Ma et al., 2020).
 
-## Dosage compensation in the social supergene
+### Dosage compensation in the social supergene
 
 The reduction in expression of the Sb allele in several genes could result in detrimental fitness effects if the genes involved are dosage sensitive, as observed in many sex chromosomes (Mank, 2013). We tested this idea in the fire ant supergene and found that allelic expression bias is relatively balanced, with similar levels of SB and Sb bias across the supergene. However, far more genes have multiple-queen biased expression than single-queen biased expression. This pattern implies that much of the observed SB bias leads to no differences between social forms. Our findings are consistent with dosage compensation, where the higher SB expression effectively counteracts lower Sb expression.
 
@@ -109,15 +212,15 @@ Some of this dosage compensation likely emerged through selection despite Hill-R
 
 Regardless of the mechanisms which mediate gene-by-gene dosage compensation in the fire ant, we show that it can emerge over time scales as short as approximately 175,000 generations (1 million years) (Wang et al., 2013; Pracana et al., 2017a). Furthermore, this is to our knowledge only the second known instance of dosage compensation in a supergene that does not determine sex or mating type. Indeed, a 2–3 million-year-old supergene controlling color morphs of the white-throated sparrow also shows patterns consistent with dosage compensation (Sun et al., 2018). Such findings support the idea that many of the patterns seen in sex chromosomes are representative of supergenes in general. Indeed, rapid evolution of dosage compensation similarly occurred in the 10 million-year-old sex chromosomes of the plant Silene latifolia (Muyle et al., 2012) and in two Drosophila species neo-sex chromosomes that are only a few million years old (Nozawa et al., 2014; Alekseyenko et al., 2013; Nozawa et al., 2018).
 
-## Supergene expression patterns consistent with antagonistic selection
+### Supergene expression patterns consistent with antagonistic selection
 
 Most Sb-biased genes are also more highly expressed in multiple-queen colonies, supporting the idea that antagonistic alleles are present in the supergene. In the unlikely case that this pattern had no fitness effects, it could arise neutrally (Harrison et al., 2012). We argue against this possibility because, as discussed above, expression patterns in the supergene do not follow what would be expected if differences between social forms were due exclusively to differences in allelic expression. Additionally, the patterns of expression differences between social forms are similar within the supergene and in the rest of the genome. This observation further suggests that expression differences between social forms are driven by factors unrelated to the genomic architecture of the supergene. Given the patterns of ongoing degeneration in Sb, we conclude that genes with Sb and multiple-queen bias were likely under antagonistic selection. Similarly, the neo-Y chromosome of Drosophila miranda is enriched in male-biased genes in the gonads (Zhou and Bachtrog, 2012).
 
-## Candidate genes for differences between social forms
+### Candidate genes for differences between social forms
 
 The approaches underpinning our analyses are unable to detect allelic differences in genes absent from the reference genome such as OBP-Z5, a putative Odorant Binding Protein exclusive to Sb (Pracana et al., 2017b). However, our analysis does single out candidate genes that potentially contribute to the social polymorphism of the fire ant (lists of all sequence and expression differences are in Supplementary files 1, 2, 3, 4). In particular, three genes stood out because they were differentially expressed between social forms and had variant-specific allele expression in all populations. For the first gene, ‘Pheromone-binding protein Gp-9’ (LOC105194481), also known as OBP-3, the Sb allele was more highly expressed. For decades, this gene has been a candidate effector for social form differences (Pracana et al., 2017a; Keller and Ross, 1998), yet its linkage to hundreds of other genes in the supergene led to doubts that its association to social form is any more than coincidental. We found five fixed differences between SB and Sb for this gene, four of which could affect protein efficiency (consistent with previous findings [Krieger and Ross, 2002]). For the second gene, ‘Ejaculatory bulb-specific protein 3’ (LOC105199531), which also contains an insect odorant binding protein domain (InterPro IPR005055), the SB allele was more highly expressed. Orthologs of this gene are associated with mating (Laturney and Billeter, 2014) in Drosophila melanogaster, sexual behavior in a moth (Bohbot et al., 1998), subcaste differences in bumblebees (Wolschin et al., 2012), venom production in social hornets (Yoon et al., 2015) and caste differences in the termite Reticulitermes flavipes (Steller et al., 2010). Finally, LOC105199327 is likely a Pinta retinol-binding protein. Such proteins help pigment transport and vision in D. melanogaster and the butterfly Papilio xuthus (Pelosi et al., 2018). In sum, all three candidate genes have putative functions related to environmental perception, in line with the complex social phenotype requiring subtle changes in environmental perception or signaling (Favreau et al., 2018).
 
-## Conclusions
+### Conclusions
 
 We found differences in expression between the SB- and Sb-linked alleles of genes in the fire ant supergene across three populations. Such strong patterns can naively be assumed to be indicative of adaptive processes emerging from evolutionary antagonism between social forms. However, we show that the evolutionary forces shaping expression patterns in the supergene are complex and must be interpreted with care. In particular, genes with higher expression of the SB allele than the Sb allele tend to either lack expression differences between social forms or have lower expression in multiple-queen than in single-queen colonies. Both patterns are consistent with the idea that suppressed recombination leads to degeneration in Sb and thus lower Sb allele expression. In some cases, a dosage compensation mechanism through higher expression of the healthy SB allele leads to similar expression levels in both social forms. In cases where no dosage compensation occurs, overall expression is lower in multiple-queen colonies than in single-queen colonies.
 
@@ -127,7 +230,52 @@ Our study shows that multiple complex evolutionary forces can simultaneously act
 
 ## Materials and methods
 
-## RNA sequencing of fire ants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Solenopsis invicta)</td>
+      <td>Fire ants</td>
+      <td>Argentina</td>
+      <td>NCBI taxonomy 13686</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tri Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>MFCD00213058</td>
+      <td>DNA/RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBNext Ultra II RNA Library Prep Kit</td>
+      <td>New England Biolabs</td>
+      <td>E7775L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEB Library Quant Kit</td>
+      <td>New England Biolabs</td>
+      <td>E7630</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA sequencing of fire ants
 
 We used three published and one new RNA-seq gene expression datasets from fire ants. Wurm et al., 2011 obtained whole-body RNA-seq data from six pools of 4 egg-laying SB/Sb queens, each from a multiple-queen colony from Georgia, USA. Morandin et al., 2016 obtained whole-body RNA-seq data from six samples, each being a pool of 3 queens from a single-queen or a multiple-queen colony (three replicates per social form) from Texas, USA. All the queens were mature and egg-laying (C. Morandin, personal communication), thus queens from multiple-queen colonies carried the SB/Sb genotype (Keller and Ross, 1998). Additionally, we manually checked the resulting RNA reads for heterozygous positions at key supergene markers using the IGV gene browser v2.4.19 (Robinson et al., 2011). Fontana et al., 2020 generated RNA-seq data from 4 samples of SB/Sb queens from multiple-queen colonies from Taiwan. Each sample is a pool of whole bodies from two virgin queens (more details in Supplementary file 5).
 
@@ -139,7 +287,7 @@ For all datasets, we assessed read quality using fastQC (v0.11.5; http://www.bio
 
 We further assessed aligned reads (i.e., BAM files) using MultiQC v1.5 (Ewels et al., 2016) and the BodyGene_coverage.py script of the RSeQC toolkit v2.6.4 (Wang et al., 2016). We removed one sample from multiple-queen colonies in the Morandin et al. data from subsequent analyses due to poor alignment quality. None of the other BAM files showed markers of technical artefacts that could bias our results.
 
-## Identifying SNPs with fixed differences between SB and Sb males
+### Identifying SNPs with fixed differences between SB and Sb males
 
 To detect allele-specific differences between SB and Sb we first identified SNPs with fixed differences between the SB and Sb variants. Because the patterns of genetic diversity differ between the invasive and South American S. invicta populations (Ross et al., 2007; Ahrens et al., 2005), we estimated allele specific expression differences in the social chromosome independently for each population. For this we used haploid male ants because they can provide unambiguous genotypes. For the invasive populations, we identified fixed allelic differences between a group of 7 SB males and a group of 7 Sb males from North America (NCBI SRP017317) (Wang et al., 2013).
 
@@ -147,7 +295,7 @@ For the South American population, we sequenced the genomes of 13 SB males and 1
 
 We extracted SNPs shared between South and North American populations using BCFtools isec v1.9 (Li et al., 2009). We then used SNPeff (Cingolani et al., 2012) to characterize the effects of individual SNPs.
 
-## Estimating read counts from alternate supergene variants in heterozygous individuals
+### Estimating read counts from alternate supergene variants in heterozygous individuals
 
 Because the reference genome for S. invicta is based on an SB individual, read mapping could be biased towards the SB variant in heterozygous individuals, resulting in false positive detection of allelic bias (Castel et al., 2015). To overcome this potential artifact, we called BCFtools consensus v1.9 (Li et al., 2009) once using North American Sb males and once using South American Sb males. We then aligned the RNAseq reads from each sample to the regular reference genome (version gnG; RefSeq GCF_000188075.1) and also, independently, to the most relevant of the modified references. For the reads from the Taiwanese population, we used the Sb reference using North American SNPs. For the alignment we used STAR with the same parameters as described above. We merged the two resulting BAM files from each sample using SAMtools v1.9 (Li et al., 2009). We then used the ‘rmdup’ function from the WASP pipeline (Soneson et al., 2015) to generate reference-bias free alignment files. The resulting BAM files can be considered reference bias free alignments. We added a reading group ID to each reference-bias free BAM file using the ‘AddOrReplaceReadGroups’ tool from Picard (v 2.7.0-SNAPSHOT; http://broadinstitute.github.io/picard/). We then ran all BAM files through GATK’s ‘ASEReadCounter’ v 3.6–0-g89b7209 (Wright et al., 2017) with default options to obtain read counts for each allele. We performed this step once on each population independently.
 
@@ -155,7 +303,7 @@ We then imported the resulting allele-specific SNP read counts per sample genera
 
 Additionally, to test whether we would be able to detect allele-specific expression changes across body parts and castes in the South American data, we calculated allele-specific expression in the whole genome as a positive control. We used the VCF file containing all SNPs in the 26 males collected from South America. We retained only SNPs with expression data in all samples and a median of at least 1 X RNA coverage in each allele across all samples. After filtering, 1096 SNPs remained for which we were able to test for allele-specific expression. We performed an allele specific expression analysis throughout the whole genome using body part and caste information from South American populations. Unlike the analysis of genes in the supergene region, in the whole genome analysis we cannot ensure that every individual is heterozygous for all SNPs. Indeed, the average frequency in the population for all the alleles analyzed was 0.41 with a standard deviation of ±0.2. This implies that both alleles were not necessarily present in all samples. We therefore had far less power to detect allele-specific expression across body parts using data from the whole genome than using SNPs from the supergene region only. Despite this lack of power, we were able to detect significant (Wald test BH adjusted p<0.05) allele-specific expression changes across body parts of queens and workers in 15 SNPs. These significant SNPs were distributed across nine genomic scaffolds. The significant differences in allele-specific expression were between a queen body part and whole bodies of workers.
 
-## Identifying expression differences between the SB and Sb variants of the supergene
+### Identifying expression differences between the SB and Sb variants of the supergene
 
 We imported the estimated read counts generated by Kallisto into R using Tximport v1.2.0 (Soneson et al., 2015) and DESeq2 v1.14.1 (Love et al., 2014). For every sample, read counts for the SB alleles and for the Sb alleles come from the same sequencing library, thus standard normalization methods (Dillies et al., 2013) are not applicable. As recommended by the developers of DESeq2 (Love, 2018), we thus deactivated normalization by setting SizeFactors = 1. For the North American and Taiwanese datasets (Wurm et al., 2011; Fontana et al., 2020), we only considered genes expressed in all samples for downstream analyses, whereas for the South American populations RNA dataset, we only analyzed genes expressed in all replicates of at least one body part.
 
@@ -169,24 +317,42 @@ We additionally analyzed the allele-specific expression patterns between the SB 
 
 In all analyses, we report gene differences between variants as log2 expression ratios between the SB and the Sb counts. That is, genes with expression biased towards SB will produce positive log2 expression ratios whereas those biased towards Sb will produce a negative value. To check whether there was an overall bias towards either variant, we tested the significance of the deviation from 0 for the median log2 expression ratios between SB and Sb via a Wilcoxon sum rank test.
 
-## Expression differences between single-queen and multiple-queen colonies
+### Expression differences between single-queen and multiple-queen colonies
 
 We determined the expression levels for all samples from the North American populations (Morandin et al., 2016) by using the count mode in Kallisto v0.44.0 (Bray et al., 2016) using S. invicta coding sequences. We imported the estimated counts into DESeq2 v1.14.1 (Love et al., 2014) using Tximport v1.2.0 (Soneson et al., 2015). We compared the DESeq2 normalized expression levels between social forms, determining significance of differential expression using the default Wald test for pairwise comparisons between genes. We estimated the proportion of significantly differentially to non-differentially expressed genes within and outside the supergene region based on supergene region coordinates from Pracana et al., 2017a. We then used the R packages GenomicRanges and GenomicFeatures (Lawrence et al., 2013) along with the annotations of S. invicta coding sequences to locate each gene with expression information in the genome. Our analyses are restricted to the 10,481 known S. invicta genes that can be reliably placed within or outside the supergene region; other genes are on scaffolds which lack chromosomal locations (Pracana et al., 2017a).
 
-## Expression differences between variants and social forms
+### Expression differences between variants and social forms
 
 We fitted a model to test whether there is a significant relationship between allele-specific expression differences between supergene variants in the Wurm et al., 2011 dataset, and gene expression differences between social forms (log2 expression ratios using the Morandin et al., 2016 dataset). We examined the overall trend in allele-specific expression patterns within the supergene (i.e., any bias towards expression of either the SB or Sb allelic variant).
 
-We obtained relative expression levels using DESeq2 for both comparisons: single-queen vs. multiple-queen expression for each gene (XSQ vs. XMQ) from the Morandin et al., 2016 dataset and expression of the SB allelic variant vs. the Sb (XB vs. Xb) within each gene from the Wurm et al., 2011 dataset DESeq2 returned an estimate of log2(XB/Xb) for the differences in expression between alleles and log2(XSQ/XMQ) for the differences among colony types. We first generated a null model in which the PB and PMQ values change solely as a consequence of the relative expression (r) of the Sb allele (xb) and the SB alleles (xB), such that xb = r xB, and therefore:PB=XbXb+XBandPMQ=Xb+XBXb+3XB
+We obtained relative expression levels using DESeq2 for both comparisons: single-queen vs. multiple-queen expression for each gene (XSQ vs. XMQ) from the Morandin et al., 2016 dataset and expression of the SB allelic variant vs. the Sb (XB vs. Xb) within each gene from the Wurm et al., 2011 dataset DESeq2 returned an estimate of log2(XB/Xb) for the differences in expression between alleles and log2(XSQ/XMQ) for the differences among colony types. We first generated a null model in which the PB and PMQ values change solely as a consequence of the relative expression (r) of the Sb allele (xb) and the SB alleles (xB), such that xb = r xB, and therefore:
 
-Notice that in this case the minimum value of PMQ = ⅓ would occur when there was no expression of the b allele (xb = 0). For greater values of xb, we can solve the pair of equations to obtain the relationship:PMQ=12PB+1
+$$
+P_{B}=\frac{X_{b}}{X_{b}+X_{B}}
+$$
 
-The second model additionally allows for the effect of dosage compensation by increasing expression of B-alleles in SB/Sb individuals in multiple queen-colonies. To do this, PB is defined by the expression differences between social forms such that:PB=1−PMQ2PMQ
+and
+
+$$
+P_{MQ}=\frac{X_{b}+X_{B}}{X_{b}+3X_{B}}
+$$
+
+Notice that in this case the minimum value of PMQ = ⅓ would occur when there was no expression of the b allele (xb = 0). For greater values of xb, we can solve the pair of equations to obtain the relationship:
+
+$$
+P_{MQ}=\frac{1}{2P_{B}+1}
+$$
+
+The second model additionally allows for the effect of dosage compensation by increasing expression of B-alleles in SB/Sb individuals in multiple queen-colonies. To do this, PB is defined by the expression differences between social forms such that:
+
+$$
+P_{B}=\frac{1−\frac{P_{MQ}}{2}}{P_{MQ}}
+$$
 
 Finally, we test whether the two models are significantly different using a standard analysis of variance test using the aov function in R. The linear regressions and statistical tests were performed in R v3.4.4 (Lawrence et al., 2013).
 
 We also explored whether genes with low Sb allele expression had higher SB allele expression, resulting in similar expression between multiple-queen (SB/Sb genotype) and single-queen (SB/SB genotype) individuals. Such a pattern would be consistent with an ongoing process of dosage compensation. To do so, we excluded the nine genes with significant biases towards Sb and high SB-SB/Sb ratios (i.e., SB variant more highly expressed in SB/Sb than SB/SB individuals), since they are more likely to have been subjected to antagonistic selection. We also excluded genes with fewer than three read counts mapping to either allele to remove more noisy estimates. The rest of all analyzed genes were then grouped by relative SB/Sb expression. We then compared the overall expression levels between these groups in multiple-queen and single-queen individuals.
 
-## Data availability
+### Data availability
 
 We deposited the genomic and transcriptomic reads we generated from South American Solenopsis invicta on NCBI SRA (PRJNA542606). All analysis scripts used will be made available at https://github.com/wurmlab/2019-11-allelic_bias_in_fire_ant_supergene (copy archived at https://github.com/elifesciences-publications/2019-11-allelic_bias_in_fire_ant_supergene; Martinez-Ruiz, 2020).

@@ -42,6 +42,14 @@ We used a modified version of the stimulus used in Turi et al., 2018, where clou
 
 Figure 2A shows the average timecourse of pupil size synchronized to the stereo-depth swap and averaged over all participants, separately for phases with stereo-defined black or white foreground (blue and red, respectively). This figure has the same format as Figure 1B in Turi et al., 2018, but while Turi et al., 2018 aligned the traces to the perceptual reports of a bistable stimulus, here they are aligned to physical changes in the stimulus, ignoring perceptual reports. We define zero as the end of the stereo-switch, which lasted 1.2 s. This procedural difference leads to differences in the overall shapes of the pupil timecourses, but the basic result is the same: pupil size modulates with the brightness of the foreground, dilating when black (blue traces of Figure 2A) and constricting when white (red traces). The black trace at the top of Figure 2A shows the difference in pupil size for the two directions of rotation, which begins to emerge after the depth swap is complete, and remains for several seconds.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/67185/elife-67185-fig2-v2.jpg)
+
+**Figure 2.:** (A) Pupil-size traces, synchronized to stereo-depth swaps (which occurred gradually over the yellow-shaded window) and averaged separately for times when the foreground was black (blue trace) or white (red trace). The top inset (black trace) shows the timecourse of the difference between the two traces. Thin lines show standard error across the 53 participants. (C) Same as A but showing gaze-velocity traces, computed after filtering out gazes shift faster than the maximum stimulus speed (3.9 deg/s) and after inverting the sign of velocity values for trials when the black dots moved leftward, so that positive gaze shifts always imply gaze shifts in the direction of the black dots. (B-D) Average pupil-size difference (B) or gaze-velocity difference (D), computed in the interval 0:2 s (marked by the vertical dashed lines in A and C) for each participant and plotted against their score on the Autism-Spectrum Quotient questionnaire. The thick black line shows the best fitting linear regression; text inset gives Pearson’s correlation coefficient with 95% confidence interval and associated p-value and base-10 logarithm of the Bayes Factor (lgBF).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67185/elife-67185-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Same as in Figure 2, but synchronizing traces from the main experiment to perceptual reports rather than stereo-depth. Blue and red traces show data from times when participants reported the black or the white dots in the foreground, respectively. Reports switched at time = 0 s, implying that color-coding is swapped for times < 0 s (accordingly, pupil-difference traces are sign-changed for t < 0 s). Pupil-size and gaze-velocity differences in panels B and D were computed by averaging over the interval −1:1 s marked by the vertical dashed lines.
+
 The pupil-size modulations are consistent with attention being focused on the front surface, as a relative pupil dilation or constriction is expected from attending to black or white, respectively (Binda et al., 2013; Mathôt et al., 2013). It is important to reiterate that here, as in Turi et al., 2018, pupil-size modulations cannot be explained by changes in luminance, as it was constant during the whole experiment, nor by changes in the luminance distribution over space, as the white and black dots formed two overlapping transparent surfaces.
 
 As in our previous study, there were large interindividual differences in the amplitude of pupil-size modulations, and again a large portion of the variance could be accounted for by the participants’ AQ score. Figure 2B plots the pupil modulation (difference in size for the two directions of motion) against AQ of each participant. The correlation is positive, strong, and highly significant (r = 0.45, p<0.001, base-10 logarithm of the Bayes Factor [lgBF] = 1.49), showing that the magnitude of the effect increases with AQ. This is consistent with the hypothesis that the magnitude of pupil-size modulation depends on the tendency to focus attention locally on the front surface (hence driven by surface color) or globally across both surfaces, and that these two strategies correspond well to the local and global perceptual styles associated with high and low autistic traits (Grinter et al., 2009; Happé and Frith, 2006).
@@ -55,6 +63,14 @@ We also monitored eye movements during the experiment, to see if they too may a
 Although behavioral performance did not correlate with AQ, it is possible that the pupil modulations are driven, at least in part, by the participants’ keypress responses. We investigated this possibility with additional analyses and data. First, we re-analyzed our pupil-size data synchronized to the perceptual switches, rather than the stereo-depth swaps (Figure 2—figure supplement 1). The difference between pupil-size traces still correlated significantly with AQ (r = 0.39, p<0.01, lgBF = 0.72), indicating that our pupil-size modulation index is robust and relatively independent of the method used for parsing traces (Figure 3—figure supplement 1, compare the left and the middle columns).
 
 More informatively, we measured a subsample of about half of our participants with a ‘no-report’ paradigm, where they simply viewed the stimulus for the same amount of time, without reporting their perception. The detailed form of the phase-locked timecourses of pupil size (Figure 3A, individual blue and red traces) differs from those in Figure 2, probably reflecting the lack of a pupil-dilation component linked to making and reporting perceptual decisions (Einhäuser et al., 2008). However, the timecourse of the pupil-size difference was very similar across experiments (compare the top black trace in Figures 2A and 3A), and its magnitude was clearly correlated with AQ score (Figure 3B). Correlation coefficients for the pupil-size difference and the other parameters were similar to the main experiment, where participants made active reports (Figure 3—figure supplement 1, compare leftmost and rightmost columns). The correlation between pupil-size difference and AQ scores did not differ across experiments (Fisher test: F = 0.3, p=0.76).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67185/elife-67185-fig3-v2.jpg)
+
+**Figure 3.:** Same as in Figure 2 but showing results from a no-report version of the experiment, in which 24 of the original participants took part. lgBF: base-10 logarithm of the Bayes Factor .
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67185/elife-67185-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Correlation matrix between AQ and the four main parameters collected in the main experiment (and analyzed after synchronizing traces to changes in stimulus depth or perceptual reports, left and middle column, respectively), and in the no-report experiment (right). The colormap shows the correlation coefficients, also displayed as text in each cell, accompanied with p-values and base-10 logarithm of the Bayes Factors (lgBFs); text in each cell additionally gives disattenuated correlations (values in parenthesis), computed with the Spearman-Brown formula (Spearman, 1910) taking into account the split-half reliability of each parameter, and the test-retest reliability of the AQ score (Hoekstra et al., 2008).
 
 These results support the hypothesis that there are multiple independent components of the pupil-size modulations related to observation of our complex stimulus. There is a transient dilation related to the key-press action (absent in the no-report experiment), best seen when time-locking pupil traces to the perceptual switches as in Figure 2—figure supplement 1: this component was not correlated with AQ (r = –0.15, p=0.29, lgBF = –0.72). There was also a transient constriction related to the perceptual change, isolated in the no-report experiment in Figure 3, which again did not correlate with AQ (r = –0.32, p=0.13, lgBF = –0.31). Finally, there was the relatively sustained pupil-size modulation, measured by the difference between traces for the two possible 3D layouts of the stimulus, and similarly observed in the two experiments. AQ scores were specifically correlated with this component (r = 0.38 or larger, p<0.05 and lgBF >0.6 in all cases), irrespective of whether perceptual reports were used for analysis or dispensed with altogether (see Figure 3—figure supplement 1 for a summary of the AQ-correlation analyses).
 
@@ -78,23 +94,23 @@ In summary, besides replicating (twice) the association between pupil-size modul
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Experimental procedures were approved by the regional ethics committee (Comitato Etico Pediatrico Regionale—Azienda Ospedaliero-Universitaria Meyer—Firenze [FI]) and are in accordance with the declaration of Helsinki; participants gave their written informed consent. Fifty-three neurotypical adults (41 women; age [mean ± SD]: 25.6 ± 3.3 years) volunteered to participate in the study. All reported normal or corrected-to-normal vision and had no diagnosed neurological condition. Sample size was set based on the previous study (we aimed for N = 50 and recruited three more to prevent data losses, which fortunately did not occur).
 
-## AQ score
+### AQ score
 
 All neurotypical adult participants filled out the validated Italian version of the 50-item Autism-Spectrum Quotient questionnaire (Baron-Cohen et al., 2001; Ruta et al., 2012). Responses are made on a 4-point Likert scale: 'strongly agree,' 'slightly agree,' 'slightly disagree,' and 'strongly disagree.' Participants filled out the form on paper or online, just before or after completing the experiment. Items were scored as described in the original paper (Baron-Cohen et al., 2001): one when the participant’s response was characteristic of ASD (slightly or strongly), 0 otherwise. Total scores ranged between 0 and 50, with higher scores indicating higher autistic traits.
 
 There were no significant gender effects on either AQ scores (two-sample t-test: t(51) = 0.31, p=0.76, lgBF = −0.48) or on our pupil measurements (pupil difference in the main experiment: t(51) = 1.38, p=0.17, lgBF = −0.18). However, as the male gender was under-represented in our sample, these results should be considered with caution.
 
-## Apparatus
+### Apparatus
 
 The experimental setup was the same as in our previous study (Turi et al., 2018), with the exception that participants viewed a CRT (Cathode-ray tube) monitor (22-inchcolor monitor; 120 Hz, 800 × 600 pixels; Barco Calibrator) through a mirror stereoscope (ScreenScope SA200LCD – Stereo Aids). Stimuli were generated with the PsychoPhysics Toolbox routines (Brainard, 1997; Pelli, 1997) for MATLAB (MATLAB r2010a, The MathWorks).
 
 Pupil diameter and position were monitored at 500 Hz with a video-based eyetracker (Eyelink 1000 SR Research). Pupil diameter was transformed from pixels to millimeters after calibrating the tracker with an artificial 4 mm pupil, positioned at the approximate location of the participants’ left eye. Eye position recordings were linearized using a standard 9-point calibration acquired at the beginning of the experiment, before positioning the stereoscope (the calibration could not be performed through the restricted field of view of the stereoscope).
 
-## Stimuli and procedure
+### Stimuli and procedure
 
 Two 8 × 14 deg red outlines centered on a red fixation point (0.15 deg diameter) were presented against a gray background (12.4 cd/m2) and displaced by 7.2 deg horizontally so that, when viewed through the stereoscope, they fused into a single image. Within the rectangles, 150 white and black dots (each 0.30 deg diameter) moved in opposite directions with a sinusoidal velocity profile peaking at 3.9 deg/s, generating the perception of a cylinder rotating in 3D at 60 deg/s (Figure 1A). As in our previous study, the stimulus was displayed for 60 s long trials (30 per participant).
 
@@ -104,7 +120,7 @@ In the main experiment, 53 participants continuously tracked rotation direction 
 
 A subsample (N = 24) was also tested in a ‘no-report’ version of the experiment, where they watched the same stimulus passively, without reporting rotation direction.
 
-## Pupil and gaze tracking analyses
+### Pupil and gaze tracking analyses
 
 We analyzed data from four synchronous recordings: stimulus stereo-depth and key-press responses, pupil diameter, and x-gaze position.
 

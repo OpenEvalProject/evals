@@ -45,17 +45,57 @@ In this study, we tested the hypothesis that the effects of UBI on the hindlimb 
 
 ## Results
 
-## Brain injury induces postural asymmetry in rats with transected spinal cord
+### Brain injury induces postural asymmetry in rats with transected spinal cord
 
 The hypothesis that a unilateral brain lesion may induce HL-PA through a pathway that bypasses the descending neural tracts was tested in rats that had complete transection of the spinal cord before the UBI was performed (Figure 1A–E; Figure 1—figure supplements 1–5). The spinal cord was transected at the T2-T3 level and then the hindlimb representation area of the sensorimotor cortex was ablated (Figure 1A; Figure 1—figure supplement 1A). HL-PA was analyzed within 3 hr after the UBI by both the hands-on and hands-off methods of hindlimb stretching followed by photographic and / or visual recording of the asymmetry in animals under pentobarbital anesthesia (for details, see ‘Materials and methods’ and Figure 1—figure supplement 2). HL-PA data are presented as the median values of HL-PA in mm (HL-PA size), and the probability to develop HL-PA (denoted as PA on the figures) that depicts the proportion of rats with HL-PA above the 1 mm threshold. The analysis was generally blind to the observer (for details, see ‘Materials and methods’). Control experiments demonstrated that this injury produced HL-PA with contralesional hindlimb flexion within 3 hr after the UBI in rats with intact spinal cord (Figure 1F–H; Figure 1—figure supplement 1B–D), and contralesional hindlimb motor deficits in the beam-walking and ladder rung tests (Figure 1—figure supplement 1E,F).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig1-v1.jpg)
+
+**Figure 1.:** (A) Location of the right hindlimb representation area on the rat brain surface (adapted from Frost et al., 2013) and a representative UBI. (B) HL-PA analysis. (C–E) HL-PA 3 hr after left UBI (n = 9) or right UBI (n = 9), and left (n = 4) or right (n = 4) sham surgery, all performed after complete spinal cord transection. (F–H) HL-PA 3 hr after left UBI (n = 8) or left sham surgery (n = 7) in animals with intact spinal cord. (C,F) Experimental design. (D,G) The HL-PA in millimeters (mm), and (E,H) the probability to develop HL-PA (PA) above 1 mm threshold. Threshold is shown by vertical dotted lines in (D,G). The HL-PA and the probability are plotted as median (black circles), 95% HPDC intervals (black lines), and posterior density (colored distribution) from Bayesian regression. Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. Effects on asymmetry and differences between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. Adjusted p is shown for differences identified by Bayesian regression.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Histological verification of the size and location of UBI resulting from a stereotaxic aspiration of brain tissue at the following coordinates: 0.5–4.0 mm posterior to the bregma and 1.8–3.8 lateral to the midline. Series of Nissl-stained coronal brain sections show representative lesions of the rat sensorimotor cortex. The numbers on the right indicate distances (in mm) from bregma. Scale bar = 1 mm. Sections were analyzed from most rats in the study. The general distribution pattern and the extent of the lesions were reliably similar across subjects. (B) Experimental designs for (C,D). (C,D) The HL-PA was analyzed before (Pre) and after left UBI (UBI) or left sham surgery (Sh) within 5 min and at the 30, 60, and 180 min time points while they were still under pentobarbital anesthesia (UBI, n = 8, Sh, n = 7); and at the 1 and 7-day time points under isoflurane anesthesia (UBI, n = 12; Sh, n = 8). (C) HL-PA expressed in millimeters, mm. Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. (D) Differences in HL-PA [Δ HL-PA(UBI – Sh) in millimeters] between UBI and sham surgery goups. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. Contrasts between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. Adjusted p is shown for differences identified by Bayesian regression. (E,F) The left UBI (L-UBI)-produced motor deficits in the beam-walking and ladder rung tests 1 day after the injury. The number of errors (slips) of the contralesional hindlimb in the UBI rats was significantly higher compared to the ipsilesional limb in these animals, and when compared to both hindlimbs in rats with sham surgery. Data are Mean ± SEM analyzed by two-way ANOVA followed by the Tukey HSD post-hoc test. (B) The main effect of left UBI (F1,36 = 8.21, p = 0.007) and hindlimb side (F1,36 = 5.80, p = 0.021); interaction: F1,36 = 6.78, p = 0.01. Right limb in the left UBI (n = 12) versus either left and right limb in left sham surgery (L-Sh; n = 8; p = 0.002), or left limb in the left UBI (P = 0.002) group. (C) The main effect of the left UBI (F1,34 = 3.43, p = 0.072) and hindlimb side (F1,34 = 4.11, p = 0.050); interaction: F1,34 = 4.22, p = 0.048. Right limb in the left UBI (n = 11) versus either right limb in left sham surgery (n = 8; p = 0.043) or left limb in the left UBI (p = 0.017) group.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Experimental setup. The anesthetized Sprague Dawley rats were placed on the bench in the prone position. Silk threads were glued to the nails of the middle three toes of both hindlimbs, and their other ends were tied to hooks attached to the movable platform that was operated by a micromanipulator. To reduce friction of hindlimbs with the surface upon changes in their position, the bench under the rat was covered with plastic sheet and the movable platform was raised up to form a 10° angle between the threads and the bench surface. First, stretching was initiated at the ‘natural’ hindlimb position that was either symmetric or asymmetric, and performed for the 20 mm distance at the 2 cm/s speed (Variant 1, V1; Figure 1—video 1, episodes 1 and 2). Second, the limbs were adjusted to approximately symmetric position by gentle pulling the thread on the flexed limb and then stretched at 2 cm/s for the 15 mm distance (Variant 2, V2; Figure 1—video 1, episode 3). The threads were then relaxed, the limbs were set free, and the resulting HL-PA was photographically recorded. The procedure was repeated six times in succession, and the mean value of postural asymmetry for a given rat was calculated and used in statistical analyses. (D) The HL-PA in intact rats (Int; n = 5) and rats with left UBI (n = 5) analyzed by the Variants 1 (V1) or 2 (V2) of the hands-off method (Int/V1, UBI/V1 and UBI/V2); and rats with left sham surgery (Sh/HN; n = 8) or left UBI (UBI/HN; n = 12) analyzed by the hands-on (HN) method. The UBI and sham surgery were performed 1 day before the HL-PA analysis. Negative and positive HL-PA values were assigned to rats with the left and right hindlimb flexion, respectively, and are shown in mm. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. (E) Contrasts between (a) the UBI and intact rats analyzed by the hands-off Variant 1 (V1) method [Δ HL-PA (UBI/V1 – Int/V1)]; (b) the UBI rats analyzed by the hands-off Variant 1 (V1) and Variant 2 (V2) methods [Δ HL-PA (UBI/V1 – UBI/V2)]; (c) the UBI and sham surgery rats [Δ HL-PA (UBI/HN – Sh/HN)] analyzed by the hands-on method [Δ HL-PA (UBI/HN – Sh/HN)]; and (d) the UBI rats analyzed by the hands-off Variant one method and the hands-on method [Δ HL-PA (UBI/V1 – UBI/HN)]. Effects on asymmetry and differences between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. p is shown for differences of HL-PA from zero (0 corresponds to a symmetric pattern) in (D), and contrasts between the groups in (E). Both variants 1 and 2 (V1 and V2) of the hands-off method, and the hands-on method produced virtually the same results; no differences (p > 0.40) in the magnitude and its direction were revealed between them.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Experimental designs. The UBI was conducted 5–10 min after complete spinal cord transection at the T2-T3 level. The HL-PA was analyzed while the rats were under pentobarbital anesthesia 30, 60, and 180 min after the brain injury. Data presented for the 180 min time point on Figure 1D,E, are shown here for comparison. The left UBI and right UBI groups consisted of nine rats each, while the control groups consisted of four left- (L–Sh) and four right- (R–Sh) sham animals. (B,D) Effects of UBI on the formation of HL-PA (expressed in millimeters, mm), and on the probability to develop HL-PA (PA) are shown. The rats with HL-PA magnitude greater than the 1 mm threshold (i.e. 99th HL-PA magnitude percentile in sham groups; shown by vertical dashed lines) were defined as asymmetric. Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. (C,E) Differences in the HL-PA [Δ HL-PA(UBI – Sh) in millimeters] and in the probability to develop HL-PA [Δ PA (UBI – Sh)] between UBI and sham surgery groups are shown. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. Contrasts between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. Adjusted p is shown for differences identified by Bayesian regression.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Experimental design. Induction of HL-PA by the UBI in rats with transected spinal cord. (B–E) The HL-PA in Sprague Dawley rats was analyzed with rats under pentobarbital anesthesia at 30, 60, and 120 min after the left (n = 5) or right (n = 6) UBI, and the left (n = 5) or right (n = 5) sham surgery performed after complete spinal cord transection at the T2-T3 level. (D,E) The left and right UBI groups, as well as the left and right sham surgery groups were combined into the UBI and sham groups, respectively. (F–I) The HL-PA in Wistar rats was analyzed in rats under pentobarbital anesthesia at 30, 60, and 180 min after the left UBI (n = 12) and the left sham surgery (n = 11) performed after complete spinal cord transection at the T2-T3 level. Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. Differences in the HL-PA [ΔHL-PA(UBI – Sh) in millimeters] and in the probability to develop HL-PA [ΔPA(UBI – Sh)] between UBI and respective sham surgery groups. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. Contrasts between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. Adjusted p is shown for differences identified by Bayesian regression.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Experimental design. A 3–4 mm spinal cord segment at the T2-T3 level was dissected and removed. (B,C) The HL-PA was analyzed with rats under pentobarbital anesthesia before and 180 min after the UBI (n = 5). Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. Contrasts between the analyses: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. p is shown for (B) differences from zero in HL-PA analyzed 3 hr after UBI (0 corresponds to a symmetric pattern), and (C) differences between HL-PA analyzed 3 hr after UBI (Post) and before it (Pre) [Δ HL-PA (Post – Pre)]. (D–F) Photographs show the spinal cord after laminectomy at the T2-T4 level (the rostral-caudal direction is from right to left) before (D) and after dissection of the 3–4 mm segment (E) that was then removed (F). Inspection under the microscope demonstrate that the transection is complete. The posterior longitudinal ligament, which spreads over the posterior aspects of the vertebral bodies in the vertebral canal, can be clearly seen (with no remains of other tissues) in the image (F).
+
 Strikingly, in the rats with transected spinal cords the UBI also induced HL-PA (Figure 1C–E). The HL-PA developed within 3 hr after the brain injury. Its size and probability were much greater than in rats with sham surgery (Left UBI, n = 31; Right UBI, n = 15; sham surgery, n = 29). An unanticipated observation was that in rats with HL-PA, the hindlimb was flexed on the contralesional side. The left or right hindlimb flexion was induced by the right and left UBI, respectively (Figure 1D; Figure 1—figure supplement 3B,C; Figure 1—figure supplement 4B,C,F,G). Both Wistar rats (Figure 1D–E; Figure 1—figure supplement 3, 4F-I) and Sprague Dawley rats (Figure 1—figure supplements 4B–E and 5) that were used in further molecular and electrophysiological experiments, respectively, developed HL-PA with hindlimb flexion on the contralesional side. To ensure the completeness of the transection, a 3–4 mm spinal segment was excised at the T2-T3 level in a subset of rats (Figure 1—figure supplement 5). After the excision, the left-side UBI-induced hindlimb postural asymmetry with the right limb flexion that replicated the other findings. The HL-PA size and probability, the time course of HL-PA development and formation of contralesional hindlimb flexion in rats with transected spinal cords that received UBI (Figure 1D,E; Figure 1—figure supplement 3, Figure 1—figure supplement 4) were similar to those of the UBI animals with intact spinal cords (Figure 1G,H; Figure 1—figure supplement 1C,D). We conclude that HL-PA formation in animals with transected spinal cord is mediated through a pathway that operates in parallel with the descending neural tracts and assures the development of contralesional flexion.
 
-## Brain injury induces asymmetry in withdrawal reflexes in rats with transected spinal cord
+### Brain injury induces asymmetry in withdrawal reflexes in rats with transected spinal cord
 
 The withdrawal reflexes are instrumental in the investigation of brain injury-induced functional changes in hindlimb neural circuits activated by afferent input (Dewald et al., 1999; Schouenborg, 2002; Serrao et al., 2012; Spaich et al., 2006; Zhang et al., 2020). We next sought to determine whether UBI in rats with transected spinal cords produces changes in the hindlimb withdrawal reflexes, and whether these changes are asymmetric. Special care was taken to ensure that EMG recordings obtained from the left and right hindlimbs were quantitatively comparable. To achieve this, a number of strict technical criteria, such as maximally symmetrical positioning of the stimulation and recording electrodes, were applied. The criteria used in this study are described in details in ‘Materials and methods’, and are similar to those proposed by Hultborn and Malmsten (Hultborn and Malmsten, 1983a; Hultborn and Malmsten, 1983b; Malmsten, 1983). Furthermore, to minimize inter-individual variations, the asymmetry indices were used instead of the absolute values of the reflex size. This allowed double assessment: first, within both the UBI and control groups that identified asymmetric reflexes in each group, and, second, between these groups that revealed the effects of UBI vs. sham surgery. Because multiple responses were measured for the same animal, including two of its limbs, four muscles, and the varying stimulation conditions, and because they were analyzed within an animal group and between the groups, we applied mixed-effects models using Bayesian inference. Only strong and significant UBI effects were considered as biologically relevant.
 
 Electromyographic responses were recorded from the extensor digitorum longus, interosseous, peroneus longus, and semitendinosus muscles of the contra- and ipsilesional hindlimbs in the rats with UBI (n = 18) or sham surgery (n = 11) performed after complete spinal transection and analyzed as the asymmetry index (AI = log2[Contra / Ipsi], where Contra and Ipsi were values for muscles of the contralesional and ipsilesional limbs) (Figure 2; Figure 2—figure supplement 1; Figure 2—figure supplement 2). When reflexes on both sides are equal (i.e. the Contra / Ipsi ratio equals 1), the asymmetry index is zero; if reflexes are doubled in size on the Contra or Ipsi side (i.e. the Contra / Ipsi ratio equals 2.0 or 0.5) the asymmetry index is +1 or –1, respectively.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig2-v1.jpg)
+
+**Figure 2.:** EMG activity of left and right extensor digitorum longus (EDL), interosseous (Int), peroneus longus (PL) and semitendinosus (ST) muscles were evoked by electrical stimulation of symmetric paw sites. The number of observations for both UBI and sham group is shown in Figure 2—figure supplement 2. The rats were subjected to left (n = 6) or right (n = 5) sham surgery, or to the left (n = 9) or right (n = 9) UBI. (A,B) Representative semitendinosus responses. (C,D) Asymmetry index (AI=log2[Contra/Ipsi]) for threshold and spike number. Differences in the asymmetry index from zero (AI = 0 when the ratio [Contra/Ipsi] = 1, that corresponds to a symmetric pattern) in UBI rats (C) in the current threshold for the semitendinosus muscle {median of the posterior distribution (median) = −1.840, 95% highest posterior density continuous interval (HPDCI) = [−3.169,–0.477], adjusted p-value (p) = 0.015, fold difference = 3.6}; and (D) in the number of spikes for the extensor digitorum longus (median = 1.818, HPDCI = [0.990, 2.655], p = 4×10−5, fold difference = 3.5) and semitendinosus (median = 2.560, HPDCI = [1.691, 3.415], p = 1×10−8, fold difference = 5.9) muscles. (E,F) Differences in the asymmetry index between the UBI and sham surgery (Sh) groups [ΔAI(UBI – Sh)]. Differences in the asymmetry index between the UBI and sham surgery groups for (E) the current threshold of the semitendinosus (median = −1.992, HPDCI = [−3.911,–0.106], p = 0.040, fold difference = 4.0); and (F) the number of spikes of the interosseous (median = −1.463, HPDCI = [−2.782,–0.159], p = 0.028, fold difference = 2.8), extensor digitorum longus (median = 2.379, HPDCI = [1.080, 3.743], p = 4×10−4, fold difference = 5.2), and semitendinosus (median = 2.745, HPDCI = [1.419, 4.128], p = 6×10−5, fold difference = 6.7). Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. * Asymmetry and differences between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) Representative EMG examples and respective stimulation sites of hindlimb muscles of the anesthetized rats with transected spinal cords. (A) Left panel: EMG responses of the extensor digitorum longus (EDL), semitendinosus (ST), peroneus longus (PL) and the fourth interosseous (Int) muscles to 18 electrical stimulations. Middle panel: Amplified view of EMG spikes from the regions delimited by the rectangles on the left panel. Right panel: Stimulation site for each muscle. (B) Peristimulus histogram of these muscles from 16 stimulations (from 2nd to 17th). (C–H) Representative examples of EMG responses of extensor digitorum longus (C,D; the same stimulation site), interosseous (E,F) and peroneus longus (G,H; the same stimulation site) muscles of the contra- and ipsilesional hindlimbs in rats that were subjected to UBI or sham surgery after transection of their spinal cord. Stimulation of the left and right hindlimbs of the UBI rat with the same current parameters induced larger EMG responses of the extensor digitorum longus muscle on the contra- compared to the ipsilesional side (D), and the interosseous muscle on the ipsi- compared to the contralesional side (F). Each of three muscles of sham rats (C,E,G) and of peroneus longus muscle of the UBI rat (H) demonstrated similar responses on both sides.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The rats that had left (L; n = 6) or right (R; n = 5) sham surgery, or left (n = 9) or right (n = 9) UBI.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The rats were subjected to the left (A,C) or right (B,D) UBI or sham surgery (Sh) after complete spinal cord transection. The number of observations is shown in Figure 2—figure supplement 2. The rats were subjected to the left (n = 6) or right (n = 5) sham surgery, or to the left (n = 9) or right (n = 9) UBI. EMG activity of left and right extensor digitorum longus (EDL), interosseous (Int), peroneus longus (PL), and semitendinosus (ST) muscles were evoked by electrical stimulation of symmetric paw sites. (A,B) Differences in the asymmetry index (AI=log2[Contra/Ipsi]) for spike numbers from zero (AI = 0 corresponds to a symmetric pattern) in UBI rats for the extensor digitorum longus (Left UBI: median = 2.705, HPDCI = [1.546, 3.900], p = 2×10−5); the interosseous (Right UBI: median = −2.614, HPDCI = [−3.699,–1.489], p = 1×10−5); and semitendinosus (Left UBI: median = 2.431, HPDCI = [1.280, 3.544], p = 9×10−5; Right UBI: median = 5.057, HPDCI = [3.725, 6.373], p = 2×10−13) muscles. (C,D) Differences in the asymmetry index between the UBI and sham surgery groups [ΔAI(UBI – Sh)] for the extensor digitorum longus (Left UBI: median = 2.872, HPDCI = [1.102, 4.654], p = 0.01; Right UBI: median = 2.022, HPDCI = [0.161, 3.879]); the interosseous (Right UBI: median = −2.471, HPDCI = [−4.325,–0.626], p = 0.06); and semitendinosus (Right UBI: median = 5.750, HPDCI = [3.8083.725, 7.6846.373], p = 1×10−8) muscles. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. * Red star: asymmetry and differences between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05; * Blue star: asymmetry and differences between the groups (95% HPDC intervals did not include zero).
 
 Analysis of the electrically evoked electromyographic responses revealed that the asymmetry index was different from zero in the current threshold for the semitendinosus muscle (3.6-fold lower on the contra- vs. ipsilesional side), and in the number of spikes for the extensor digitorum longus (3.5-fold higher on the contra- vs. ipsilesional side) and semitendinosus (5.9-fold higher on the contra- vs. ipsilesional side) muscles in UBI rats (Figure 2C,D). No contra- vs. ipsilesional asymmetry was evident in the sham surgery group. Representative UBI-induced asymmetry in the number of spikes for the semitendinosus muscle is shown in Figure 2A,B (for those of extensor digitorum longus, interosseous and peroneus longus muscles, see Figure 2—figure supplement 1).
 
@@ -63,7 +103,7 @@ When compared to sham surgery, UBI substantially decreased the asymmetry index f
 
 Thus, in rats with transected spinal cord, UBI, but not sham surgery, induced asymmetry in withdrawal reflexes. The number of spikes of both flexor muscles, the extensor digitorum longus and semitendinosus was higher on the contra vs. ipsilateral side in the UBI rats. Consistently, the threshold was lower for the contra vs. ipsilesional semitendinosus. These effects may be due to (i) higher sensitivity of the afferent system reflected in a lower threshold on the contra vs. ipsilesional side for the semitendinosus; and (ii) an increased excitability of efferent systems for both muscles reflected in the increased number of spikes on the contra vs. ipsilesional side. At the cellular level, the increased excitatory drive may develop due to changes in local spinal circuits including those in presynaptic afferent inhibition, and/or changes in intrinsic membrane properties of motoneurons. Regardless of mechanism, robust differences in the asymmetry index between the UBI and sham groups suggested that the UBI markedly elevated both the sensitivity of semitendinosus afferents and the excitability of the extensor digitorum longus and semitendinosus efferents, all on the contralesional vs. ipsilesional side. The UBI also inhibited the contralesional interosseous. The UBI effects on the hindlimb withdrawal reflexes in rats with the transected spinal cords were similar in their range and contra-ipsilesional patterns to those of the UBI animals with intact spinal cords (Watanabe et al., 2021; Zhang et al., 2020). These effects corroborate clinical findings showing contralateral facilitation of withdrawal reflexes in stroke patients (Dewald et al., 1999; Serrao et al., 2012; Spaich et al., 2006).
 
-## Brain injury produces molecular changes in the lumbar spinal cord
+### Brain injury produces molecular changes in the lumbar spinal cord
 
 We examined whether the UBI performed after complete spinal transection produced molecular changes in the lumbar spinal segments. Expression of 20 neuroplasticity-related, opioid and vasopressin genes, and the levels of three opioid peptides were analyzed in the ipsilesional and contralesional lumbar spinal cord of the rats with transected spinal cord that also had the left UBI (n = 12) or left sham surgery (n = 11). Genes coding for regulators of axonal sprouting, synapse formation, neuronal survival and neuroinflammation (Arc, Bdnf, Dlg4, Homer-1, Gap43, Syt4, and Tgfb1), transcriptional regulators of synaptic plasticity (cFos, Egr1, and Nfkbia), and essential components of the glutamate system critical for neuroplastic responses and regulation of spinal reflexes (GluR1, Grin2a, and Grin2b) were selected as neuroplasticity genes (for detailed description, see ‘Materials and methods, Neuroplasticity-related genes’). Genes of the opioid and vasopressin systems were included because of their involvement in asymmetric spinal responses to brain injury (see next section).
 
@@ -71,15 +111,43 @@ First, the mRNA levels and their median asymmetry index (AI = log2[Contra/Ipsi],
 
 These differences, however, pointed to the different direction in responses of the left and right spinal cord to the injury. Therefore, in the second step, we assessed whether the proportion of genes with lower expression on the contralesional vs. ipsilesional side was different between the UBI and sham surgery groups. The median gene expression asymmetry index of 19 out of 20 genes at the pairwise comparison was lower in the UBI rats compared to sham surgery group (sign-test: p = 4×10−5) (Figure 3A,B). Changes in the gene expression asymmetry index were consistent with decreased expression of 17 genes (sign test: p = 0.003) in the contralesional half (Figure 3—figure supplement 1E,F; Figure 3—figure supplement 2A–D) concomitantly with elevated expression of 15 genes (sign test: p = 0.041) in the ipsilesional half (Figure 3—figure supplement 1A–D; Figure 3—figure supplement 2A–D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig3-v1.jpg)
+
+**Figure 3.:** The mRNA and peptide levels were analyzed in the ipsi- and contralesional halves of lumbar spinal cord isolated from rats 3 hr after the left UBI (n = 12) or left sham surgery (Sh; n = 11). (A,B) Heatmap for the (0,1)-standardized expression asymmetry index (AI=log2[Contra/Ipsi]) for each gene denoted for each rat individually, and as medians for rat groups. (C,D) Heatmap for Spearman’s rank correlation coefficients of expression levels between the left- and right lumbar halves for all gene pairs (inter-area correlations) in rats with transected spinal cord that were subjected to sham surgery or UBI. (E) UBI effects on the Met-enkephalin-Arg-Phe (MEAP) levels in the left (Padjusted = 9×10−4; fold change: 1.4×) and right (Pundjusted = 0.020; fold change: 1.3×) halves. Data are presented in fmol/mg tissue in the log2 scale as boxplots with median and hinges representing the first and third quartiles, and whiskers extending from the hinge to the highest/lowest value that lies within the 1.5 interquartile range of the hinge.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Data are presented in the log2 scale as boxplots with median and hinges representing the first and third quartiles, and whiskers extending from the hinge to the highest/lowest value that lies within the 1.5 interquartile range of the hinge. The rats with spinal cord transection at the T2-T3 level were subjected to the left UBI (n = 12) or left sham surgery (n=11), and the mRNA levels were analyzed in the ipsi- (left) and contralesional (right) lumbar spinal cord isolated 3 hr after the injury. (A-F) The UBI-induced changes in expression of Syt4 (1.19-fold; Padjusted = 0.039), Grin2a (1.18-fold; Punadjusted = 0.04), Grin2b (1.22-fold; Punadjusted = 0.01) and Oprk1 (1.13-fold; Punadjusted = 0.03) in the left lumbar half; and Gap43 (1.13-fold; Punadjusted = 0.04) and Penk (1.17-fold; Punadjusted = 0.03) in the right lumbar half of the rats with transected spinal cord are shown. The mRNA levels of 20 genes were compared separately for the left and right halves of the lumbar spinal cord between the rats with UBI or sham surgery using Mann-Whitney test followed by Bonferroni correction for a number of tests (n = 40). (G-K) The expression asymmetry index (AI = log2[Contra/Ipsi], where Contra and Ipsi were the levels in the contra- and ipsilesional lumbar domains) for each of 20 genes was compared individually between the UBI and sham groups using Mann-Whitney test followed by Bonferroni correction. The expression asymmetry index for the Syt4 (median difference 0.38; Padjusted = 0.004), the Oprk1 (median difference 0.29; Punadjusted = 0.009), Oprm1 (median difference 0.24; Punadjusted = 0.032), Dlg4 (median difference 0.18; Punadjusted = 0.032) and Homer1 (median difference 0.19; Punadjusted = 0.037) are shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) Expression levels for each gene are denoted as (0,1)-standardized values for each sham and UBI rat individually (A,B), and as medians for the sham and UBI groups (C,D). In the left half 15 out of 20 analyzed genes have higher median expression in the UBI group (sign test: p = 0.041), while in the right half for 17 out of 20 genes median expression is higher in the sham group (sign test: p = 0.003). (E–H) Heatmap for Spearman’s rank correlation coefficients of expression levels for all gene pairs in the rats with left sham surgery (E,F) or left UBI (G,H). Differences between the UBI and sham groups in the proportion of positive and negative intra-area correlations were analyzed by the Fisher's Exact Test: for all correlations in the right half: p = 2.7×10−5; for significant correlations in the left and right halves, p = 8.1×10−3 and 8.9×10−3, respectively.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The rats with spinal cord transection at the T2-T3 level were subjected to the left UBI (n = 12) or left sham surgery (n=11), and the peptide levels were analyzed in the ipsi- (left) and contralesional (right) halves of lumbar spinal cord isolated 3 hr after the injury. Changes in the levels of Dynorphin B (1.2-fold; Mann-Whitney test: Punadjusted = 0.03) and Leu-enkephalin-Arg (1.6-fold; Mann-Whitney Punadjusted = 0.02) in the ipsilesional (left) half are shown. Data are presented in fmol/mg tissue in the log2 scale as boxplots with median and hinges representing the first and third quartiles, and whiskers extending from the hinge to the highest/lowest value that lies within the 1.5 interquartile range of the hinge.
+
 Gene co-expression patterns characterize regulatory interactions within and across tissues (Dobrin et al., 2009; Erola et al., 2020; Gerring et al., 2019; Zhang et al., 2020). Third, we examined whether the UBI induced changes in mRNA–mRNA correlations within the left and right half of the lumbar spinal cord (intra-area correlations), and between these halves (inter-area correlations). The proportion of intra-area positive correlations, which dominated in rats with sham surgery, was reduced after the UBI (Fisher's Exact Test: all correlations in the right half, p = 3×10−5; significant correlations in the left and right areas, p = 0.008 and 0.009, respectively) (Figure 3—figure supplement 2E–H). The inter-area gene-gene coordination strength was decreased after the UBI (Wilcoxon signed-rank test; all and significant correlations: p = 4×10−7 and 3×10−4, respectively) (Figure 3C,D). Positive inter-area correlations were predominant in rats with sham surgery (68%) in contrast to the UBI rats (42%) (Fisher's Exact Test: all and significant correlations, p = 6×10−14 and 0.004, respectively). Thus, the UBI robustly impairs coordination of expression of neuroplasticity-related and neuropeptide genes within and between the left and right halves of the lumbar spinal cord.
 
 Fourth, analysis of opioid peptides demonstrated that the UBI substantially elevated the levels of the proenkephalin marker Met-enkephalin-Arg-Phe in the ipsilesional (Padjusted = 9×10−4) and contralesional (Punadjusted = 0.020) spinal halves (Figure 3E), and the prodynorphin-derived Dynorphin B and Leu-enkephalin-Arg in the ipsilesional spinal cord (for both, Punadjusted < 0.05) (Figure 3—figure supplement 3).
 
 Altogether, the analysis of gene expression and of opioid peptides adds strong molecular evidence for the lateralized signaling from the injured brain to the lumbar neural circuits in rats with transected spinal cord.
 
-## UBI effects are mediated by neuroendocrine pathway
+### UBI effects are mediated by neuroendocrine pathway
 
 The left-right side specific mechanism that does not engage the descending neural tracts may operate through the neuroendocrine system by a release of pituitary hormones into the blood. Consistent with this hypothesis, no HL-PA developed in hypophysectomized animals that received left UBI after spinal transection (n = 8); the HL-PA median values and PA were nearly identical to those in sham operated rats (n = 8) (Figure 4A; Figure 4—figure supplement 1A–E). We next examined whether left UBI stimulates the release of chemical factors that may induce the development of HL-PA, into the blood. Serum that was collected 3 hr after performing a left UBI in rats with transected spinal cord was administered either centrally (into the cisterna magna; UBI serum, n = 13; sham serum, n = 7; Figure 4—figure supplement 1F–J) or intravenously (UBI serum, n = 13; sham serum, n = 7; Figure 4B; Figure 4—figure supplement 1K–O) to rats after their spinalization. Serum administration by either route resulted in formation of HL-PA with its values and its probability similar to those induced by the UBI in rats with intact and transected spinal cords. Remarkably, animals injected with serum from rats with left UBI displayed hindlimb flexion on the right side, which was the same as the flexion side in the donor rats (Figure 4B; Figure 4—figure supplement 1F–O). No HL-PA developed after administration of serum collected from rats with the left sham surgery. We conclude that the left UBI stimulates a release of chemical factors from the pituitary gland into the blood that induce HL-PA with contralesional flexion.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig4-v1.jpg)
+
+**Figure 4.:** (A) HL-PA in hypophysectomized (HPT; n = 8) and control (n = 12) rats with transected spinal cord 3 hr after left UBI (L-UBI). Left sham surgery (L–Sh): n = 8. (B) HL-PA after intravenous administration of serum from rats with either left UBI (L-UBI serum) or left sham surgery (L-Sh serum) to rats with transected spinal cord (n = 13 and 7, respectively). (C) Induction of HL-PA by Arg-vasopressin (AVP) and β-endorphin (β-End) in rats with transected spinal cord. Synthetic β-endorphin or Arg-vasopressin (1 microgram and 10 nanogram / 0.3 ml saline / animal, respectively), or saline was administered intravenously to rats (n = 8, 7, and 4 rats, respectively) after spinal cord transection. The HL-PA was analyzed in rats 60 min after the injection and under pentobarbital anesthesia. (D) Effect of naloxone (Nal, n = 6) or saline (n = 6), and SSR-149415 (SSR, n = 6) or vehicle (n = 5) on HL-PA 3 h after left UBI in rats with transected spinal cord. Vehicle and saline groups were combined into a single control group (Ctrl; n = 11). (E) Effect of naloxone (n = 6) or saline (n = 3) and SSR-149415 (n = 6) or vehicle (n = 3) on HL-PA 3 hr after intravenous administration of the left UBI serum to rats with transected spinal cord. Ctrl = saline + vehicle; n = 6. In (D,E), naloxone (or saline) and SSR-149415 (or vehicle) were administered 0.5 and 3 hr before HL-PA analysis, respectively. HL-PA values in millimeters (mm) and probability (PA) to develop HL-PA above 1 mm threshold (denoted by vertical dotted lines) are plotted as median, 95% HPDC intervals, and posterior distribution from Bayesian regression. Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. Asymmetry and differences between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. Adjusted p is shown for differences identified by Bayesian regression.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–E) The left UBI in hypophysectomized (HPT/UBI; n = 8) and control (UBI; n = 12) rats, and left sham surgery in control rats (Sh; n = 8) were performed after complete spinal cord transection at the T2-T3 level. (F–J) Induction of HL-PA by serum of the UBI animals. Serum collected from the rats with transected spinal cord 3 hr after the left UBI (UBI serum) or sham surgery (Sh serum) was administered to the cisterna magna (I.C.; 5 microliters / rat) to intact rats. The spinal cord was transected at the T2-T3 level 10–15 min after injection of the UBI (n = 13) or sham (n = 7) serum, and the HL-PA was analyzed 30, 60, and 180 min after the transection under pentobarbital anesthesia. (K–O) Time-course of HL-PA formation after intravenous administration of the left UBI serum to rats with transected spinal cord. HL-PA was analyzed after I.V. administration of serum collected from the rats with left-side UBI (UBI serum; n = 13) or sham surgery (Sham serum; n = 7), to the rats after their spinalization at the T2-T3 level. Data for the 180 min time point presented on Figure 4B are shown for comparison. Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. Differences in the HL-PA [ΔHL-PA(UBI – Sh) in millimeters] and in the probability to develop HL-PA [ΔPA(UBI – Sh)] between UBI and sham surgery groups. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. Contrasts between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. Adjusted p is shown for differences identified by Bayesian regression.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65247/elife-65247-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Experimental design. HL-PA formation was analyzed with the rats under pentobarbital anesthesia 30, 60, and 180 min after AVP (10 nanograms in five microliters / rat; n = 10 at the 30 and 60 min time points, and n = 22 at the 180 min time point) or saline (n = 5 at the 30 and 60 min time points, and n = nine rats at the 180 min time point) administration followed 10–15 min later by spinal cord transection. (B,D) Effects of Arg-vasopressin on the formation of HL-PA (expressed in millimeters, mm), and on the probability to develop HL-PA (PA). Negative and positive HL-PA values are assigned to rats with the left and right hindlimb flexion, respectively. (C,E) Differences in the HL-PA [ΔHL-PA(AVP – Saline) in millimeters] and in the probability to develop HL-PA [ΔPA(AVP – Saline)] between the Arg-vasopressin and saline groups. Medians, 95% HPDC intervals and densities from Bayesian sampler are plotted. Contrasts between the groups: 95% HPDC intervals did not include zero, and adjusted p-values were ≤ 0.05. Adjusted p is shown for differences identified by Bayesian regression.
 
 Previous studies demonstrated that multiple peptide factors extracted from the brain, pituitary gland and serum may induce a side-specific hindlimb motor response. Several of them were identified as peptide neurohormones including opioid peptides (Bakalkin and Kobylyansky, 1989; Bakalkin et al., 1986; Chazov et al., 1981) and Arg-vasopressin (Klement'ev et al., 1986). It was found that Arg-vasopressin or Leu-enkephalin administered centrally induced HL-PA with right hindlimb flexion. The pituitary gland is the main source of the opioid neurohormone β-endorphin and the antidiuretic hormone Arg-vasopressin in the body. Here, we first replicated the effects of Arg-vasopressin that, consistent with a previous study (Klement'ev et al., 1986), produced flexion of the right hindlimb after its intracisternal administration (Figure 4—figure supplement 2; peptide, n = 22, and saline, n = 9 at the 180 min time point). We then tested if β-endorphin and Arg-vasopressin may evoke asymmetric motor response after intravenous administration. Injection of these neurohormones, but not saline, to rats with transected spinal cords resulted in development of HL-PA with right hindlimb flexion (Figure 4C; β-endorphin, n = 8; Arg-vasopressin, n = 7; saline, n = 4).
 
@@ -87,7 +155,7 @@ We next investigated whether opioid receptors and the vasopressin receptor V1B, 
 
 ## Discussion
 
-## The left and right hemispheres in top-down control of the endocrine system
+### The left and right hemispheres in top-down control of the endocrine system
 
 During embryonic development, the left–right asymmetry of the body is generated by multiple paracrine signaling molecules that enable communications between the left and right halves of the embryo (Hamada et al., 2002). In the adult brain, functional lateralization is an organizing principle (Duboc et al., 2015; MacNeilage et al., 2009) and lateralized functions may be regulated by paracrine signaling molecules including peptide neurohormones (Deliagina et al., 2000; Hussain et al., 2012; Kononenko et al., 2017; Marlin et al., 2015; Nation et al., 2018; Phelps et al., 2019; Watanabe et al., 2015; Watanabe et al., 2021; Zink et al., 2011). Thus, oxytocin enables retrieval behavior by enhancing responses of the left, but not right, auditory cortex through its receptors expressed on the left side (Marlin et al., 2015). Arg-vasopressin targets the left but not right hemispheric areas to modulate social recognition-related activity (Zink et al., 2011). In the human brain, asymmetric distribution of the μ-opioid receptor along with opioid peptides that elicit euphoria and dysphoria may provide a basis for the lateralized processing of positive and negative emotions (Kantonen et al., 2020; Watanabe et al., 2015).
 
@@ -95,7 +163,7 @@ Top-down control of the hypothalamic-pituitary-adrenal and hypothalamic-pituitar
 
 Taken together, these findings suggest that feedforward and feedback interactions between the lateralized CNS features and the endocrine system controlling peripheral processes are mediated either by neural circuits with unusual, asymmetric organization, or by left-right sided neuroendocrine pathways that may be similar to the left-right sided paracrine mechanism operating in the development. An alternative pathway that does not engage descending neural tracts may convey side-specific signals from the brain to the paired endocrine glands, the left and right spinal cord, and the left and right extremities had been suggested (Bakalkin et al., 1984; Cope et al., 1980; Wolpaw and Lee, 1989), and supported by preliminary evidence (Bakalkin et al., 1986) but not elaborated.
 
-## The left-right side-specific humoral signaling
+### The left-right side-specific humoral signaling
 
 This study provides evidence for left-right side-specific humoral signaling that mediates the effects of UBI on the formation of HL-PA, asymmetry in withdrawal reflexes, and asymmetric changes in gene expression patterns in the lumbar spinal cord (Figure 5). Encoding of information about the injury side in a hormonal message, humoral transmission of this message to its target sites on peripheral nerve endings or spinal neurons, and translation of this message into the left-right side-specific response, are the key stages of this phenomenon.
 
@@ -107,7 +175,7 @@ The left- and right-side-specific responses evoked by hormonal molecules circula
 
 Theoretically, the paravertebral chain of sympathetic ganglia, which is the remaining neural connection after complete spinal cord transection, may convey supraspinal signals to the muscle vasculature and through this mechanism may differentially affect ipsi- and contralesional muscles. However, the sympathetic ganglia likely do not mediate control of lumbar neural circuits by the supraspinal structures (Brodal, 1981; Wolpaw and Lee, 1989). Furthermore, the sympathetic system has a limited capacity to independently regulate blood flow to the left and right hindlimbs (Lee et al., 2007). Our present findings could not rule out a role of the sympathetic pathway. However, experiments with hypophysectomized rats, ‘pathological’ serum and neurohormones inducing the HL-PA strongly suggest the dominance of the humoral pathway in rats with transected spinal cord.
 
-## Functional and mechanistic implications
+### Functional and mechanistic implications
 
 Clinical studies revealed robust functional changes induced by stroke or traumatic brain injury (TBI) in contralateral withdrawal reflexes that also control posture and locomotion (Dewald et al., 1999; Sandrini et al., 2005; Serrao et al., 2012). Patients with post-stroke motor deﬁcits lose their ability to modulate the withdrawal reflexes that affects spatiotemporal interaction among joints and causes movement abnormalities during motor activities (Bohannon and Smith, 1987; Serrao et al., 2012).
 
@@ -121,11 +189,11 @@ Single injection of either naloxone or SSR-149415 inhibited HL-PA asymmetry form
 
 The general opioid antagonists naloxone and naltrexone may normalize neurological functions that are impaired in animals and human patients after unilateral cerebral ischemia (Baskin and Hosobuchi, 1981; Baskin et al., 1984; Baskin et al., 1994; Hans et al., 1992; Hosobuchi et al., 1982; Jabaily and Davis, 1984; Namba et al., 1986; Skarphedinsson et al., 1989; Wang et al., 2019), and also reduce spasticity in patients with primary progressive multiple sclerosis (Gironi et al., 2008). Our findings suggest that the efficacy of pharmacological treatment may depend on topographical correspondence between the side of neuronal deficits and the side that is preferentially targeted by neurohormones and their antagonists.
 
-## Lateralized features of the spinal cord
+### Lateralized features of the spinal cord
 
 A number of anatomical, functional, and molecular studies revealed left–right asymmetry in the spinal cord organization (de Kovel et al., 2017; Deliagina et al., 2000; Hultborn and Malmsten, 1983a; Hultborn and Malmsten, 1983b; Knebel et al., 2018; Kononenko et al., 2017; Malmsten, 1983; Nathan et al., 1990; Ocklenburg et al., 2017; Zhang et al., 2020). Three-quarters of cervical spinal cords are asymmetric with a larger right side (Nathan et al., 1990). Spinal-muscular systems are asymmetric in human fetuses, and the asymmetry correlates with lateralized gene transcription (de Kovel et al., 2017; Ocklenburg et al., 2017). Mono- and polysynaptic segmental reflexes evoked by stimulation of the dorsal roots and recorded in the ventral roots in intact rats and cats display higher activity on the right side (Hultborn and Malmsten, 1983a; Hultborn and Malmsten, 1983b; Malmsten, 1983). Similarly, EMG recordings of hindlimb withdrawal reflexes evoked by electrical stimulation in control rats display higher activity on the right side (Zhang et al., 2020). On this asymmetric background, neural circuits controlling the left and right limbs may be differently regulated by opioid peptides and Arg-vasopressin (Bakalkin et al., 1981; Bakalkin et al., 1986; Chazov et al., 1981; Klement'ev et al., 1986). The left-right side-specific neurohormonal effects may be mediated through lateralized receptors. In the rat spinal cord, the expression of three opioid receptors is lateralized to the left, and their proportions and co-expression patterns are different between the left and right sides (Kononenko et al., 2017; Watanabe et al., 2021). The asymmetry may be a critical feature of the spinal cord allowing translation of the ‘non-directional’ hormonal messages into the left-right side-specific response.
 
-## Limitations
+### Limitations
 
 The side-specific endocrine signaling was revealed in anaesthetized animals with transected spinal cords that were studied up to 180 min post UBI. Its biological and pathophysiological relevance has not been determined. Pathways from the injured brain area to the hypothalamic-pituitary system, neurohormones mediating effects of the right side injury, peripheral or central targets for the left- and right-side-specific endocrine messengers, and afferent, central or efferent mechanisms of the asymmetry formation have not been investigated. The study did not analyze forelimb postural asymmetry. It was not induced by lesion of the hindlimb sensorimotor cortex (Zhang et al., 2020) but it did develop after injury of the forelimb area (unpublished data).
 
@@ -135,21 +203,360 @@ This study does not focus on clinical correlates and mechanisms of postural defi
 
 TBI and stroke cause dysfunction of the hypothalamic–pituitary system and hypopituitarism manifested as changes in secretion of pituitary hormones (Bondanelli et al., 2005; Emelifeonwu et al., 2020; Klose and Feldt-Rasmussen, 2018; Lillicrap et al., 2018). Ischemic stroke activates the hypothalamus-pituitary-adrenal axis (Anne et al., 2007), while a unilateral ablation of sensorimotor cortex elevates the level of circulating ACTH and induces morphological changes in the pituitary corticotrophs that produce ACTH and β-endorphin (Lavrnja et al., 2014). Neurobiological mechanisms underlying these effects may be similar with those of the UBI-induced endocrine signaling described in this study. These mechanisms and anatomical pathways involved have not been identified. However, cortical projections to the hypothalamus that may potentially mediate effects of focal brain injury on secretion of pituitary hormones have been described (Jeong et al., 2016).
 
-## Conclusion
+### Conclusion
 
 This study describes the left-right side-specific endocrine mechanism that, in addition to descending neural tracts, may mediate asymmetric effects of a unilateral brain injury on hindlimb postural asymmetry and spinal reflexes (Figure 5). Identification of features and the proportion of asymmetric sensorimotor deficits transmitted by neurohormonal signals vs. those mediated by neural pathways may be essential for understanding of stroke and TBI mechanisms.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Wistar Hannover rat, male</td>
+      <td>Charles River Laboratories, Spain</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Sprague Dawley rat, male</td>
+      <td>Taconic, Denmark and Charles River Laboratories, France</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>Abbott Laboratories, Norway</td>
+      <td>NDC 0044-5260-03</td>
+      <td>Anesthesia agent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lidocaine hydrochloride</td>
+      <td>Merck Group, Germany</td>
+      <td>PHR1257</td>
+      <td>Anesthetic</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma-Aldridge, USA</td>
+      <td>Cat#: 158127</td>
+      <td>Perfusion</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SSR-149415</td>
+      <td>Tocris Bioscience, United Kingdom</td>
+      <td>Cat#: 6195</td>
+      <td>vasopressin V1B antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Naloxone</td>
+      <td>Tocris Bioscience, United Kingdom</td>
+      <td>Cat#: 0599</td>
+      <td>Opioid antagonist</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Giemsa Stain</td>
+      <td>Sigma-Aldridge, USA</td>
+      <td>Cat#: 32884</td>
+      <td>Nissl staining</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNasy Plus Mini kit</td>
+      <td>Qiagen, CA, USA</td>
+      <td>Cat#: 74136</td>
+      <td>Total RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>Cat#: 1708891</td>
+      <td>cDNA Synthesis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal Probes supermix</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>Cat# 1725131</td>
+      <td>Real-Time PCR reagent</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ß-Endorphin</td>
+      <td>Bachem, Switzerland</td>
+      <td>Cat# H-2814</td>
+      <td>Neurohormone</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Arg-vasopressin</td>
+      <td>Bachem, Switzerland</td>
+      <td>Cat# H-1780</td>
+      <td>Neurohormone</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dynorphin B (rabbit, polyclonal)</td>
+      <td>Nguyen et al., 2005; Nylander et al., 1997; Yakovleva et al., 2006</td>
+      <td></td>
+      <td>RIA 1: 350000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Leu-enkephalin-Arg (rabbit, polyclonal)</td>
+      <td>Nguyen et al., 2005; Nylander et al., 1997; Yakovleva et al., 2006</td>
+      <td></td>
+      <td>RIA 1: 35000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Met-enkephalin-Arg-Phe (rabbit, polyclonal)</td>
+      <td>Nguyen et al., 2005; Nylander et al., 1997; Watanabe et al., 2015</td>
+      <td></td>
+      <td>RIA 1: 15750</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0050804</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arc (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0027389</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Avpr1a (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0023750</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bdnf (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0026843</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cFos (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0024078</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dlg4 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0026242</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egr1 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0022872</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gap43 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0027599</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapgh (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0050838</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GluR1 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0030725</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grin2a (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0025244</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grin2b (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0023973</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Homer-1 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0023985</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oprd1 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0029668</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oprk1 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0029310</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oprm1 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0024902</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdyn (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0025357</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Penk (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0029455</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pcsk6 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0045340</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nfkbia (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCEP0026759</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Syt4 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0029728</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgfb1 (Rattus norvegicus)</td>
+      <td>Bio-Rad Laboratories, USA</td>
+      <td>qRnoCIP0031022</td>
+      <td>PrimePCR Probe assay</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike 2</td>
+      <td>CED, UK</td>
+      <td></td>
+      <td>EMG recording</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Offline Sorter</td>
+      <td>Plexon, USA</td>
+      <td>version 3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroExplorer</td>
+      <td>Nex Technologies, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stan</td>
+      <td>Carpenter et al., 2017</td>
+      <td>v 2.19.2</td>
+      <td>Scaling the data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R program</td>
+      <td>R Development Core Team, 2018</td>
+      <td>v 3.6.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Brms</td>
+      <td>Burkner, 2017</td>
+      <td>v 2.9.6</td>
+      <td>Interface for R</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Emmeans</td>
+      <td>Searle et al., 2012</td>
+      <td>v 1.4</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TissuDura</td>
+      <td>Baxter, Germany</td>
+      <td>Cat#: 0600096</td>
+      <td>Covering material</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male Wistar Hannover rats (Charles River Laboratories, Spain), with body weight of 150–200 g were used in behavioral, HL-PA and molecular experiments (Figures 1, 3 and 4B–E; Figure 1—figure supplement 1, 3, 4F-I; Figure 3—figure supplement 1, 2, 3; Figure 4—figure supplement 1G–O, 2). Male Sprague Dawley rats were used for analysis of HL-PA (Figure 1—figure supplements 2, 4B–E and 5), in electrophysiological experiments (Figure 2, Figure 2—figure supplement 1, 2, 3) (Taconic, Denmark; 150–400 g body weight) and for hypophysectomy (Figure 4A and Figure 4—figure supplement 1B–E) (Charles River Laboratories, France; 115–125 g body weight). The animals received food and water ad libitum and were kept in a 12 hr day-night cycle at a constant environmental temperature of 21°C (humidity: 65%). Approval for animal experiments was obtained from the Malmö/Lund ethical committee on animal experiments (No.: M7-16), and the ethical committee of the Faculty of Medicine of Porto University and Portuguese Direção-Geral de Alimentação e Veterinária (No. 0421/000/000/2018).
 
-## Surgery
+### Surgery
 
 The animals were anesthetized with sodium pentobarbital (I.P.; 60 mg/kg body weight, as an initial dose and then 6 mg/kg every hour). If needed, the anesthesia was reinforced with ≈1.5% isoflurane (IsoFlo, Abbott Laboratories, Norway) in a mixture of 65% nitrous oxide-35% oxygen. Core temperature of the animals was controlled using a feedback-regulated heating system. In the experiments involving electrophysiological recordings, the rats were ventilated artificially via a tracheal cannula and the expiratory CO2 and mean arterial blood pressure (65–140 mmHg) was monitored continuously in the right carotid artery.
 
-## Aspiration brain injury and spinal cord transection
+### Aspiration brain injury and spinal cord transection
 
 The experimental design included rats with either the UBI alone or the UBI which was preceded by a complete spinal cord transection. In the UBI-only experiments, anesthetized rats were placed on a surgery platform with stereotaxic head holder. The rat head was fixed in a position in which the bregma and lambda were located at the same horizontal level. After local injection of lidocaine (Xylocaine, 3.5 mg/ml) with adrenaline (2.2 μg/ml), the scalp was cut open and a piece of the parietal bone located 0.5–4.0 mm posterior to the bregma and 1.8–3.8 mm lateral to the midline (Paxinos and Watson, 2007) was removed. The part of the cerebral cortex located below the opening that includes the hind-limb representation area of the sensorimotor cortex (HL-SMC) was aspirated with a metallic pipette (tip diameter 0.5 mm) connected to an electrical suction machine (Craft Duo-Vec Suction unit, Rocket Medical Plc, UK). Care was taken to avoid damaging the white matter below the cortex. After the ablation, bleeding was stopped with a piece of Spongostone and the bone opening was covered with a piece of TissuDura (Baxter, Germany). For sham operations, animals underwent the same anesthesia and surgical procedures, but the cortex was not ablated.
 
@@ -157,23 +564,23 @@ In the experiments in which UBI was preceded by the spinal cord transection, the
 
 To verify the UBI site the rats were perfused with 4% paraformaldehyde and the brains were removed from the skulls. Following post fixation overnight in the same fixative, the brains were soaked in phosphate-buffered saline for 2 days, dissected into blocks and the blocks containing the lesion area were cut into 50 µm sections using a freezing microtome. Every fourth section was mounted on slides and stained for Nissl with modified Giemsa solution (Sigma-Aldridge, USA; 1:5 dilution). The left drawing in Figure 1A shows the location of the right hindlimb representation area on the rat brain surface (adapted from Frost et al., 2013).
 
-## Hypophysectomy
+### Hypophysectomy
 
 The hypophysectomy was performed at the Charles River Laboratories (France) site and all the surgery-related procedures, including postoperative care and transportation of animals, were performed according to the ethical recommendations of that company. The procedure for transauricular hypophysectomy, performed under isoflurane anesthesia, was described elsewhere (Koyama, 1962). Briefly, a hypodermic needle fitted to a plastic syringe was introduced into the external acoustic meatus until its tip reached the medial wall of the tympanic cavity. The needle was then pushed slightly further, so that its tip pierced the bone and entered the pituitary capsule. The hypophysis was then sucked into the syringe. The success of hypophysectomy was assessed by visual inspection of the hypophyseal region of the skull under a microscope following animal sacrifice and removal of the brain. Only data obtained in rats in which complete hypophysectomy was confirmed were included in the analysis. Sham-operated rats underwent an identical procedure except that the needle was not introduced into the pituitary capsule. Following the hypophysectomy, the animals were given a 3-week recovery period before initiating the UBI experiments.
 
-## Behavioral tests
+### Behavioral tests
 
 Experiments were performed between 10:00 and 15:00 hr over the course of the week preceding surgeries (pre-training) and one-day post-surgery (testing).
 
-## Beam-walking test (BWT)(Feeney et al., 1982)
+#### Beam-walking test (BWT)(Feeney et al., 1982)
 
 The BWT apparatus consisted of a horizontally placed wooden beam, 130 cm long and 1.4 cm wide, which was elevated 55 cm above the surface of a table. One end of the beam was free, while another was connected to a square platform (10 x 10 cm, with the floor and two sidewalls painted in black) leading to the rat’s home cage. The rats were trained to walk along the beam from its free end to their home cages. Training continued during two consecutive days preceding the brain surgery, with three daily sessions and six trials per session. On the first, second, and third trials, the rat was placed on the beam close to the platform, at the midpoint, and at the starting point (free end of the beam), respectively. The rat was considered trained if it performed the task within 80 s on the second training day. On the day following the UBI/Sham surgery, rats were given one session consisting of three trials (runs). Each run was video-recorded for further offline analysis by an observer blind to the treatment groups. The number of times the left and the right hindlimbs slipped off the beam were recorded and averaged across all runs of a given session.
 
-## Ladder Rung Walking Test (LRWT) (Metz and Whishaw, 2002)
+#### Ladder Rung Walking Test (LRWT) (Metz and Whishaw, 2002)
 
 The horizontal LRWT apparatus, 100 cm long × 20 cm high, consisted of sidewalls made of clear Plexiglas and metal grid floor. The width of the apparatus was approximately 12 cm. The floor was composed of removable stainless steel bars (rungs), 3 mm in diameter, spaced 1 cm apart (center-to-center). The ladder was placed 30 cm above the surface of a table and was connected to the animal’s home cage at one of its ends. Its opposite end was open and served as a starting point. On each trial, the rat was placed on the starting point and allowed to cross the ladder to enter the home cage. The width of the apparatus was adjusted to the size of the animal in order to prevent the animal from running in the reverse direction. During training (one session consisting of five trials), every second bar was removed, so that the rungs were spaced regularly at 2 cm intervals. During post-surgery testing (one session of five trials), the rung spacing pattern was modified in order to increase the difficulty of the task. Five distinct irregular spacing patterns were implemented in the testing session: 001101, 011010100, 1010011100, 1000011010, and 10001011000, where one denotes a rung and 0 a missing rung. However, the rung spacing patterns and the order of their presentation were the same for all rats. Each ladder run was video-recorded for further offline analysis by an observer blind to the surgery type. A total number of steps made by the left and right hindlimbs during each run and the number of times the limbs slipped between the rungs were recorded. The limb slips/total steps ratio was averaged across the five testing trials and was used as an error score.
 
-## Analysis of postural asymmetry by the hands-on and hands-off methods
+### Analysis of postural asymmetry by the hands-on and hands-off methods
 
 Analysis of the HL-PA by the hands-on method was described previously (Bakalkin and Kobylyansky, 1989; Zhang et al., 2020). Briefly, the postural asymmetry measurement was performed under pentobarbital (60 mg/kg, I.P.) anesthesia, or isoflurane anesthesia when rats with UBI were analyzed one or more days after the surgery. The level of anesthesia was characterized by a barely perceptible corneal reflex and a lack of overall muscle tone. The rat was placed in the prone position on 1 mm grid paper, and the hip and knee joints were straightened by gently pulling the hindlimbs back for 5–10 mm to reach the same level. Then, the hindlimbs were released and the magnitude of postural asymmetry was measured in millimeters as the length of the projection of the line connecting symmetric hindlimb distal points (digits 2–4) on the longitudinal axis of the rat. The procedure was repeated six times in immediate succession, and the mean HL-PA value for a given rat was calculated and used in statistical analyses. The measurements were performed 0.5, 1, and 3 hr after the brain injury, or at other time points as shown on figures. In a separate group of rats (Figure 1—figure supplement 1C,D), HL-PA was assessed 1, 4, 7, and 14 days after the UBI or sham surgery under isoflurane anesthesia (1.5% isoflurane in a mixture of 65% nitrous oxide and 35% oxygen). The rat was regarded as asymmetric if the magnitude of HL-PA exceeded the 1 mm threshold (see statistical section). The limb displacing a shorter projection was considered to be flexed.
 
@@ -187,21 +594,21 @@ The postural asymmetry analysis was blind to the observer excluding the analysis
 
 The HL-PA was measured in mm with negative and positive HL-PA values that are assigned to rats with the left and right hindlimb flexion, respectively. This measure shows the flexion side and HL-PA value. However, it does not show the proportion of the animals with asymmetry in each group; we could not see whether all or a small fraction of animals display the asymmetry. Furthermore, its interpretation may not be straightforward for groups with the similar number of left or right flexion; in this case, the HL-PA value would be about zero. Data are also presented as the probability of postural asymmetry (PA) that shows the proportion of animals exhibiting HL-PA at the imposed threshold (> 1 mm). The PA does not show flexion side and flexion size. These two measures are obviously dependent; however, they are not redundant and for this reason, both are required for data presentation and characterization of the HL-PA.
 
-## EMG experiments
+### EMG experiments
 
-## Electromyography recordings
+#### Electromyography recordings
 
 Core temperature was maintained between 36°C and 38°C using a thermostatically controlled, feedback-regulated heating system. The EMG activity of the extensor digitorum longus (EDL), interrossi (Int), peroneaus longus (PL), and semitendinosus (ST) muscles of both hindlimbs were recorded as described previously (Schouenborg et al., 1992; Weng and Schouenborg, 1996). EMG recordings were initiated approximately 3 hr after spinalization (i.e.; 2 hr and 20 min after UBI). Recordings were performed using gauge stainless steel disposable monopolar electrodes (DTM-1.00F, The Electrode Store, USA). The electrodes were insulated with Teflon except for ∼200 μm at the tip. The impedance of the electrodes was from 200 to 1000 kΩ. For EMG recordings, a small opening was made in the skin overlying the muscle, and the electrode was inserted into the mid-region of the muscle belly. A reference electrode was inserted subcutaneously in an adjacent skin region. The electrode position was checked by passing trains (100 Hz, 200 ms) of cathodal pulses (amplitude < 30 µA, duration 0.2 ms). The EMG signal was recorded with Spike two program (CED, UK) with a sampling rate of 5000 Hz. Low and high pass filter was set at 50,000 Hz and 500 respectively. Generally, the EMG activity of three or four pairs of hind limb muscles was recorded simultaneously in each experiment / rat.
 
-## Cutaneous stimulation
+#### Cutaneous stimulation
 
 Stimulation sites were decided according to each muscle’s receptive field as described previously (Schouenborg et al., 1992; Weng and Schouenborg, 1996). After searching the muscle receptive field in responding to pinch stimulation, a pair of stimulation electrodes that were the same as the recording electrodes were inserted subcutaneously into the center of each muscle’s receptive field. The same pairs of digits (i.e. 2, 3, 4, and 5 of both limbs) were stimulated to induce ipsilateral reflex responses (Schouenborg et al., 1992). To detect the stimulation intensity that induce the maximal reflex in each muscle, graded current pulses (1 ms, 0.1 Hz) were used ranging mostly from 1 to 30 mA, and occasionally up to 50 mA. The reflex threshold was defined as the lowest stimulation current intensity evoking a response at least in 3 out of 5 stimulations. If a muscle response was induced by stimulation at more than one site, the lowest current was taken as a threshold value. For EMG data collection, the current level that induced submaximal EMG responses from both legs, usually ranging from 5 to 20 mA, was chosen. This was usually two to three times higher than the threshold currents. The same current level was used on symmetrical points from the most sensitive area on both paws. For each site, EMG responses from 18 to 20 stimulations at 0.1 Hz frequency were collected. No visible damage of the skin or marked changes in response properties at the stimulation sites were detectable at these intensities.
 
-## EMG data analysis
+#### EMG data analysis
 
 The spikes from Spike2 EMG data files were sorted with Offline Sorter (version 3, Plexon, USA). The EMG amplitude (spike number) from different muscles was calculated with NeuroExplorer (Nex Technologies, USA). To avoid stimulation artifacts, spikes from the first one or two stimulations were removed from further analysis. The number of spikes was calculated from 16 consecutive stimulations thereafter. The EMG thresholds and responses registered from 0.2 to 1.0 s were analyzed. In this animal preparation, characterized in our previous studies, the withdrawal reflexes evoked by innocuous stimulation were very weak compared to those evoked by noxious stimulation (Schouenborg, 2002; Schouenborg et al., 1992; Weng and Schouenborg, 1998; Zhang et al., 2020).
 
-## Criteria for comparison of two hindlimbs
+#### Criteria for comparison of two hindlimbs
 
 Strict criteria were applied to ensure data comparability between two hindlimbs for (i) the experimental procedures including the symmetry of stimulation and recording conditions between the two sides; (ii) application of electrodes with similar resistance for analysis of symmetric muscles; (iii) selection of the reflex features for the analysis; and (iv) statistical analysis. The core criteria were similar to those described by Hultborn and Malmsten (Hultborn and Malmsten, 1983a; Hultborn and Malmsten, 1983b; Malmsten, 1983). Pairs of stimulation and recording electrodes were positioned as symmetrically as possible. Stimulation electrodes were inserted into the center of the receptive fields of the left and right muscles (Schouenborg et al., 1992; Weng and Schouenborg, 1996), and recording electrodes into the middle portion of the muscle belly. This was performed by an experienced investigator. The same stimulation patterns were used for stimulation of pairs of digits to induce reflexes in symmetric muscles. The same threshold level was used for the left and right muscles. In general, the current level that was applied exceeded the higher threshold recorded for each pair of muscles at a given stimulation site by 2–3-fold. Data recorded with stimulation of more than one site (digits 2, 3, 4, and 5) were processed as replicates to decrease experimental error. Only ipsilateral responses were recorded. Only data for pairs of left and right muscles of the same animal were included in the analysis. The sample size was sufficiently large (n = 11 rats in sham, and n = 18 rats in UBI groups) to ensure statistical power sufficient for analysis of responses typically recorded in this model (Schouenborg et al., 1992; Weng and Schouenborg, 1996; Zhang et al., 2020).
 
@@ -211,7 +618,7 @@ Analysis of the asymmetry index allowed double assessment, first, within the UBI
 
 Because multiple responses were measured for the same animal, including two limbs, four muscles, and differing stimulation conditions, and because they were analyzed within animal groups and between the groups, we applied mixed-effects models using Bayesian inference. To avoid bias in the acquisition of experimental observations that may be imposed by intermediate data analyses, the data processing and statistical analysis were performed after the completion of experiments. Only strong and significant UBI effects (in the study they were from 2.8- to 54-fold) were considered as biologically relevant. At the same time, the background reflex asymmetry in the control group that had a smaller effect size (1.7-fold difference from the symmetry), in its magnitude and direction was in an agreement with results that we published previously (Zhang et al., 2020) and that were published by other groups (Hultborn and Malmsten, 1983a; Hultborn and Malmsten, 1983b; Malmsten, 1983).
 
-## Effects of serum, neurohormones, and antagonists of opioid (naloxone) and vasopressin V1B (SSR-149415) receptors on HL-PA development
+### Effects of serum, neurohormones, and antagonists of opioid (naloxone) and vasopressin V1B (SSR-149415) receptors on HL-PA development
 
 Serum was collected from three animals in each group of rats with transected spinal cord 3 hr after the UBI or sham surgery, pooled, kept at −80°C until use, and administered intravenously (0.3 mL / rat) to rats under pentobarbital anesthesia 10 min after complete spinal cord transection.
 
@@ -219,27 +626,27 @@ Serum and Arg-vasopressin were administered into the cisterna magna (intracister
 
 SSR-149415 (5 mg/ml/kg, n=12) dissolved in a mixture of DMSO (10%) and saline (90%), or vehicle alone (n = 8) was administered I.P. 10 min before spinal cord transection. This was followed by either the left-side UBI (SSR-149415: n = 6; vehicle: n = 5) or intravenous administration of serum from UBI rats (SSR-149415: n = 6; vehicle: n = 3). In rodents, the effects of SSR149415 develop within 0.5–1 hr and last for 4–6 hr after administration (Ramos et al., 2006; Serradeil-Le Gal et al., 2002). Naloxone (5 mg/ml/kg in saline) or saline alone was injected I.P. 2 hr after delivering the UBI (naloxone: n = 6; saline: n = 6) or after injecting the UBI serum (naloxone: n = 6; saline: n = 3) to rats with transected spinal cord.
 
-## Analysis of mRNA levels by quantitative RT-PCR (qRT-PCR)
+### Analysis of mRNA levels by quantitative RT-PCR (qRT-PCR)
 
 Total RNA was purified by using RNasy Plus Mini kit (Qiagen, Valencia, CA, USA). RNA concentrations were measured with Nanodrop (Nanodrop Technologies, Wilmington, DE, USA). RNA (1 μg) was reverse-transcribed to cDNA with the iScript cDNA Synthesis Kit (Bio-Rad Laboratories, CA, USA) according to manufacturer's protocol. cDNA samples were aliquoted and stored at –20°C. TagMan assay in 384-well format was applied. cDNAs were mixed with PrimePCR Probe assay and iTaq Universal Probes supermix (Bio-Rad) for qPCR with a CFX384 Touch Real-Time PCR Detection System (Bio-Rad Laboratories, CA, USA) according to manufacturer’s instructions. TagMan probes used are listed in Key resources table.
 
 All procedures were conducted strictly in accordance with the established guidelines for the qRCR based analysis of gene expression, consistent with the minimum information for publication of quantitative real-time PCR experiments guidelines (MIQE) (Bustin et al., 2009; Taylor et al., 2019). The raw qRT-qPCR data were obtained by the CFX Maestro Software for CFX384 Touch Real-Time PCR Detection System (Bio-Rad Laboratories, CA, USA). mRNA levels of genes of interest were normalized to the geometric mean of expression levels of two reference genes Actb and Gapdh selected out of 10 genes (Actb, B2m, Gapdh, Gusb, Hprt, Pgk, Ppia, Rplpo13a, Tbp, and Tfrc) using the geNorm program [https://genorm.cmgg.be/ and Kononenko et al., 2017; Vandesompele et al., 2002]. The expression stability of candidate reference genes was computed for four sets of samples that were the left and right halves of the lumbar spinal cord obtained from the left-sided sham surgery group and the left-sided UBI group and was as follows (from high to low): Actb, Gapdh, Tbp, Rplpo13a, Hprt, Pgk, B2m, Tfrc, Ppia, and Gusb. In each experiment, the internal reference gene-stability measure M did not exceed 0.5 at the threshold value imposed by the MIQE equal to 1.5. The number of reference genes was optimized using the pairwise stability measure (V value) calculated by the geNorm program. The V value for Actb and Gapdh, the top reference genes was 0.12 that did not exceed the 0.15 threshold demonstrating that analysis of these two genes is sufficient for normalization.
 
-## Neuroplasticity-related and neurohormonal genes
+#### Neuroplasticity-related and neurohormonal genes
 
 Arc, activity-regulated cytoskeletal gene implicated in numerous plasticity paradigms; Bdnf, brain-derived neurotrophic factor regulating synaptogenesis; cFos, a neuronal activity dependent transcription factor; Dlg4 gene codes for PSD95 involved in AMPA receptor-mediated synaptic plasticity and post NMDA receptor activation events; Egr1 regulating transcription of growth factors, DNA damage, and ischemia genes; Gap-43 coding for growth-associated protein Gap-43 that regulates axonal growth and neural network formation; GluR1 and Grin2b coding for the glutamate ionotropic receptor AMPA Type Subunit one and NMDA receptor subunit, respectively, both involved in glutamate signaling and synaptic plasticity; Grin2a subunit of the glutamate receptors that regulates formation of neural circuits and their plasticity; Homer-1 giving rise to Homer Scaffold Protein 1, a component of glutamate signaling involved in nociceptive plasticity; Nfkbia (I-Kappa-B-Alpha) that inhibits NF-kappa-B/REL complexes regulating activity-dependent inhibitory and excitatory neuronal function; Syt4 (Synaptotagmin 4) playing a role in dendrite formation and synaptic growth and plasticity; and Tgfb1 that gives rise to Transforming Growth Factor β1 regulating inflammation, expression of neuropeptides and glutamate neurotoxicity, were selected as representatives of neuroplasticity-related genes (Adkins et al., 2006; Anderson and Winterson, 1995; Buisson et al., 2003; Dolan et al., 2011; Epstein and Finkbeiner, 2018; Grasselli and Strata, 2013; Harris et al., 2016; Hayashi et al., 2000; Joynes et al., 2004; Larsson and Broman, 2008; O'Mahony et al., 2006; Santibañez et al., 2011; Tappe et al., 2006; Vavrek et al., 2006; Won et al., 2016; You et al., 2004).
 
 The prodynorphin (Pdyn) and proenkephalin (Penk) genes, and genes coding for opioid δ (Oprd1), κ (Oprk1) and µ (Oprm1) receptors, and arginine vasopressin receptor 1A (Avpr1a) were analyzed. Proopiomelanocortin (Pomc), arginine vasopressin receptor 1B (Avpr1B), arginine vasopressin receptor 2 (Avpr2), and arginine vasopressin (Avp) genes were found to be expressed at low levels in the spinal cord and were not included in the analysis.
 
-## Radioimmunoassay (RIA)
+### Radioimmunoassay (RIA)
 
 The procedure was described elsewhere (Christensson-Nylander et al., 1985; Merg et al., 2006). Briefly, 1 M hot acetic acid was added to finely powdered frozen tissues, and samples were boiled for 5 min, ultrasonicated, and centrifuged. Tissue extract was run through a SP-Sephadex ion exchange C-25 column, and peptides were eluted and analyzed by RIA. Anti-Dynorphin B antiserum showed 100% molar cross-reactivity with big dynorphin, 0.8% molar cross-reactivity with Leu-morphine (29 amino acid C-terminally extended Dynorphin B), and <0.1% molar cross-reactivity with Dynorphin A (1–17), Dynorphin A (1–8), α-neoendorphin, and Leu-enkephalin (Yakovleva et al., 2006). Cross-reactivity of Leu-enkephalin-Arg antiserum with Dynorphin B and Leu- and Met-enkephalin was <0.1% molar, with α-neoendorphin 0.5% molar, with Dynorphin A (1–8) 0.7% molar, with Met-enkephalin-Arg-Phe 1% molar and with Met-enkephalin-Arg 10% molar. Cross-reactivity of Met-enkephalin-Arg-Phe antiserum with Met-enkephalin, Met-enkephalin-Arg, Met-enkephalin-Arg-Gly-Leu, Leu-enkephalin and Leu-enkephalin-Arg was <0.1% molar (Nylander et al., 1997). Our variant of RIA readily detected Dynorphin B and Leu-enkephalin-Arg in wild-type mice (Nguyen et al., 2005) but not in Pdyn knockout mice; thus the assay was highly specific and not sensitive to the presence of contaminants. The peptide content is presented in fmol/mg tissue.
 
-## Statistical analysis
+### Statistical analysis
 
 Processing and statistical analysis of the HL-PA, EMG and molecular data was performed after completion of the experiments by the statisticians (DS and VG), who were not involved in execution of experiments. Therefore, the results of intermediate statistical analyses could not affect acquisition of experimental data that otherwise might be biased.
 
-## Postural asymmetry and withdrawal reflexes
+#### Postural asymmetry and withdrawal reflexes
 
 Predictors and outcomes were centered and scaled before Bayesian Regression Models were fitted by calling Stan 2.19.2 (Carpenter et al., 2017) from R 3.6.1 (R Development Core Team, 2018) using brms 2.9.6 (Burkner, 2017) interface. To reduce the influence of outliers, models used Student’s t response distribution with identity link function. Models had no intercepts with indexing approach to predictors (McElreath, 2019). Default priors were provided by brms according to Stan recommendations (Gelman, 2019). Residual SD and group-level SD were given weakly informative prior student_t(3, 0, 10). An additional parameter ν of Student’s distribution representing the degrees of freedom was given wide gamma prior gamma(2, 0.1). Group-level effects were given generic weakly informative prior normal(0, 1). Four Markov chain Monte Carlo (MCMC) chains of 40,000 iterations were simulated for each model, with a warm-up of 20,000 runs to ensure that effective sample size for each estimated parameter exceeded 10,000 (Kruschke, 2015), producing stable estimates of 95% highest posterior density continuous intervals (HPDCI). MCMC diagnostics were performed according to Stan manual.
 
@@ -253,7 +660,7 @@ In the EMG analysis, asymmetry in stimulation threshold (Thr) and a spike number
 
 The AISN was fitted using linear multilevel model with fixed effects of muscle (EDL, Int, PL and ST) interacting with operation type (UBI vs. sham) and log-transformed recording current. The sweep’s number was a fixed effect confounder with non-significant effect, showing that the AISN was not significantly affected by wind-up. The AIThr was fitted using the similar linear multilevel model without the recording current and sweep’s number factors. To get rid of No-U-Turn Sampler warnings, parameters adapt_delta=0.999 and max_treedepth=13 were used.
 
-## Gene expression and opioid peptide analyses
+#### Gene expression and opioid peptide analyses
 
 First, the mRNA levels of 14 neuroplasticity-related genes (Arc, Bdnf, cFos, Dlg4, Egr1, Homer-1, Gap43, GluR1, Grin2a, Grin2b, Nfkbia, Pcsk6, Syt4, and Tgfb1), and six opioid and vasopressin genes (Penk, Pdyn, Oprm1, Oprd1, Oprk1, and Avpr1a), along with the levels of opioid peptides Dynorphin B, Leu-enkephalin-Arg, and Met-enkephalin-Arg-Phe were compared separately for the left and right halves of the lumbar spinal cord between the left UBI (n = 12) and left sham (n = 11) rat groups. Only Avpr1a out of four genes of the vasopressin system (Avpr1a, Avpr1b, Avpr2, and Avp) was found to be expressed in the lumbar spinal cord and therefore included in the statistical analyses. The mRNA and peptide levels were compared between the animal groups for the left and right spinal halves separately using Mann-Whitney test followed by Bonferroni correction for a number of tests (correction factor for mRNAs was 40, for peptides 6). Results were considered significant if the p value corrected for multiple comparisons (Padjusted) did not exceed 0.05. Log fold change (logFC) was computed as a difference of median log2-scaled expression values.
 
@@ -261,7 +668,7 @@ Second, the expression asymmetry index (AI) defined as log2-scaled ratio of expr
 
 Heatmaps of expression levels and AI were constructed using data (0,1)-standardized for each gene by subtraction of the median value and division by an inter-quartile range. In the analysis of expression levels, standardization was applied to log2-scaled expression levels pooled for the left and the right spinal halves.
 
-## Intra- and inter-regional gene coexpression patterns
+#### Intra- and inter-regional gene coexpression patterns
 
 Spearman's rank correlation coefficient was calculated for all gene pairs in each area (n = 190) and between the areas (n = 400). To circumvent the effects of differences in a number of animals between the groups (caused by differences in the number of rats or by missing values) on outcome of statistical analyses, the following procedure was applied. For a given pair of genes, animals with missing expression levels were excluded from calculations. For the group with smaller number of remaining animals (let N denote this number), the correlation coefficient was calculated in a standard way. For the other group, the correlation coefficient was calculated for all subsets consisting of N animals, and the median was taken. The procedure was applied separately for each pair of genes in each analysis. Significance of correlation coefficients was assessed using Spearman R package with precomputed null distribution (i.e. approximation parameter set to ‘exact’).
 

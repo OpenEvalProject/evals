@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03qryx823 Rappaport Faculty of Medicine, Technion - Israel Institute of Technology Haifa Israel
-2. https://ror.org/03qryx823 Network Biology Research Laboratory, Technion - Israel Institute of Technology Haifa Israel
+1. Rappaport Faculty of Medicine, Technion - Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+2. Network Biology Research Laboratory, Technion - Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
 
 † Corresponding author
 
@@ -39,19 +39,37 @@ Because drift is commonly observed in spatially-selective cells, we base our ana
 
 ## Results
 
-## Spontaneous sparsification in a predictive coding network
+### Spontaneous sparsification in a predictive coding network
 
-To model representational drift in the CA1 area, we chose a simple model that could give rise to spatially-tuned cells (Recanatesi et al., 2021). In this model, an agent traverses a corridor while slightly modulating its angle with respect to the main axis (Figure 2A). The walls are textured by a fixed smooth noisy signal, and the agent receives this as input according to its current field of view. The model itself is a single hidden layer feedforward network, with the velocity and visual field as inputs. The desired output is the predicted visual input in the next time step. The model equations are given by:(1)y^t=σ(xtmT+b)nT,(2)σ(x)=max(0,x),
+To model representational drift in the CA1 area, we chose a simple model that could give rise to spatially-tuned cells (Recanatesi et al., 2021). In this model, an agent traverses a corridor while slightly modulating its angle with respect to the main axis (Figure 2A). The walls are textured by a fixed smooth noisy signal, and the agent receives this as input according to its current field of view. The model itself is a single hidden layer feedforward network, with the velocity and visual field as inputs. The desired output is the predicted visual input in the next time step. The model equations are given by:
+
+$$
+y^_{t}=\sigma(x_{t}m^{T}+b)n^{T},
+$$
+
+
+
+$$
+\sigma(x)=max(0,x),
+$$
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90069/elife-90069-fig2-v1.jpg)
 
 **Figure 2.:** (A) Illustration of an agent in a corridor receiving high-dimensional visual input from the walls. (B) Loss as a function of training steps (log scale). Zero loss corresponds to a mean estimator. Note the rapid drop in loss at the beginning, after which it remains roughly constant. (C) Mean spatial information (SI, blue) and fraction of units with non-zero activation for at least one input (red) as a function of training steps. (D) Rate maps sampled at four different time points (columns). Maps in each row are sorted according to a different time point. Sorting is done based on the peak tuning value to the latent variable. (E) Correlation of rate maps between different time points along training. Only active units are used.
 
-where m and n are the input and output matrices, respectively, b is the bias vector, and σ is the ReLU activation function. The vector σ(xtmT+b) constitutes the hidden layer, and each element in it is the activation of a given unit for the input at time t. The task is for the network’s output, y^, to match the visual input, x of the following time step, resulting in the following loss function:(3)f(m,n,b)=Et(yt^−xt+1)2.
+where $m$ and $n$ are the input and output matrices, respectively, $b$ is the bias vector, and $\sigma$ is the ReLU activation function. The vector $\sigma(x_{t}m^{T}+b)$ constitutes the hidden layer, and each element in it is the activation of a given unit for the input at time $t$. The task is for the network’s output, $y^$, to match the visual input, $x$ of the following time step, resulting in the following loss function:
 
-We train the network using Gradient Descent (GD), while adding update noise to the learning dynamics:(4)θτ+1=θτ−η∂f(θτ)∂θτ+ξτupdate,
+$$
+f(m,n,b)=E_{t}(y_{t}^−x_{t+1})^{2}.
+$$
 
-where θ=(m,n,b) is the vectorized parameters-vector, τ is the current training step and ξτupdate is Gaussian noise. We let the network converge to a good solution, demonstrated by a loss plateau, and continue training for an additional period. Note that this additional period can be orders of magnitude longer than the initial training period. The network quickly converged to a low loss and stayed at the same loss during the additional training period (Figure 2B). Surprisingly, when looking at the activity of units within the hidden layer, we noticed that it slowly became sparse (see methods for definitions of sparseness). This sparsification did not hurt performance, because individual units became more informative (Figure 2C), as quantified by the average Spatial Information (SI, see methods). When looking at the rate maps of units, i.e., their tuning to position, one can observe an image similar to representational drift observed in experiments (Ziv et al., 2013) – namely that neurons changed their tuning over time (Figure 2D). Additionally, their tuning specificity increased in accordance with the SI increase. By observing the correlation matrix of the rate maps over time, it is apparent that there was a gradual change that slowed down (Figure 2E). To summarize, we observed a spontaneous sparsification over a timescale much longer than the initial convergence, without introducing any explicit regularization.
+We train the network using Gradient Descent (GD), while adding update noise to the learning dynamics:
+
+$$
+\theta_{\tau+1}=\theta_{\tau}−η\frac{∂f(\theta_{\tau})}{∂\theta_{\tau}}+ξ_{\tau}^{update},
+$$
+
+where $\theta=(m,n,b)$ is the vectorized parameters-vector, $\tau$ is the current training step and $ξ_{\tau}^{update}$ is Gaussian noise. We let the network converge to a good solution, demonstrated by a loss plateau, and continue training for an additional period. Note that this additional period can be orders of magnitude longer than the initial training period. The network quickly converged to a low loss and stayed at the same loss during the additional training period (Figure 2B). Surprisingly, when looking at the activity of units within the hidden layer, we noticed that it slowly became sparse (see methods for definitions of sparseness). This sparsification did not hurt performance, because individual units became more informative (Figure 2C), as quantified by the average Spatial Information (SI, see methods). When looking at the rate maps of units, i.e., their tuning to position, one can observe an image similar to representational drift observed in experiments (Ziv et al., 2013) – namely that neurons changed their tuning over time (Figure 2D). Additionally, their tuning specificity increased in accordance with the SI increase. By observing the correlation matrix of the rate maps over time, it is apparent that there was a gradual change that slowed down (Figure 2E). To summarize, we observed a spontaneous sparsification over a timescale much longer than the initial convergence, without introducing any explicit regularization.
 
 At first glance, these results might seem inconsistent with the experimental descriptions of drift reported in the literature in which all metrics are stationary while only representations change (Ziv et al., 2013). We suggest that there exists an intermediate phase between initial familiarity and stationary activity metrics, which is consistent with the notion of drift, that exhibits a gradual change in activity statistics. It seems that most experimental paradigms require a long pre-exposure, longer than needed to become fully familiarized with the environment, thus missing the suggested effect. We thus analyzed four datasets, from four different labs, in which we believe that the familiarization stage was shorter than in other studies. Some of the analyses were present in the original papers, and others are novel using publicly available data. Three experiments start from a novel environment and one from a relatively short pre-exposure. As shown in Figure 3, all datasets are consistent with our simulations - namely that the fraction of active cells reduces while the mean SI per cell increases over a long timescale. See Methods section for a full description of the data sets and analyses, along with another paper (Geva et al., 2023) in which activity statistics are stationary, for comparison.
 
@@ -59,7 +77,7 @@ At first glance, these results might seem inconsistent with the experimental des
 
 **Figure 3.:** Data from four different labs show sparsification of CA1 spatial code, along with an increase in the information of active cells. Values are normalized to the first recording session in each experiment. Error bars show standard error of the mean. (A) Fraction of place cells (slope=-0.0003 p < .001) and mean spatial information (SI) (slope=0.002, p < .001) per animal over 200 min (Khatib et al., 2023). (B) Number of cells per animal (slope=-0.052, p = .004) and mean SI (slope=0.094, p < .001) over all cells pooled together over 10 days. Note that we calculated the number of active cells rather than fraction of place cells because of the nature of the available data (Jercog et al., 2019b). (C) Fraction of place cells (slope=-0.048, p = .011) and mean SI per animal (slope=0.054, p < .001) over 11 days (Karlsson and Frank, 2008). (D) Fraction of place cells (slope=-0.026, p < .001) and mean SI (slope=0.068, p < .001) per animal over 8 days (Sheintuch et al., 2023).
 
-## Generality of the phenomenon
+### Generality of the phenomenon
 
 The theoretical considerations (Blanc et al., 2020; Li et al., 2021), simulation results, and experimental results from multiple labs all suggest very general and robust phenomena.
 
@@ -67,13 +85,68 @@ To explore the sensitivity of our results to specific modeling choices, we syste
 
 The results of the simulations supported our main conclusion – sparsification dynamics were not sensitive to most of the parameters. For almost all of the simulations, excluding SGD with label noise, the fraction of active units gradually reduced, long after the loss converged (Figure 4A, Figure 4—figure supplement 1 for further breakdown). For label noise, a slow directed effect was observed but the dynamics were qualitatively different – as predicted by theory (Li et al., 2021) and explained in the next section. The fraction of active units did not reduce as much, but the activity of the units did sparsify (Figure 5—figure supplement 1). One qualitative difference observed between simulations was that the timescales could vary by orders of magnitude as a function of the noise scale (Figure 4B bottom, see methods for details). Additionally, apart from simulations that did not converge due to too large timescales, the final sparsity was the same for all networks with the same parameters (Figure 4B top), in accordance with results from Qin et al., 2023. In a sense, once noise is introduced, the network is driven to maximal sparsification in a stochastic manner. For Adam, RMSprop and SED sparsification ensued in the absence of any added noise. For SED the explanation is straightforward, as the parameter updates are driven by noise. For Adam and RMSprop, we suggest that in the vicinity of the zero-loss manifold, the second moment acts as noise. In some cases, the networks quickly collapsed to a sparse solution, most likely as a result of the learning rate being too high, in relation to the input statistics (Mulayoff et al., 2021). Importantly, for GD without noise, there was no change after the initial convergence.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90069/elife-90069-fig4-v1.jpg)
+
+**Figure 4.:** Summary of 616 simulations with various parameters, excluding stochastic gradient descent (SGD) with label noise (see Table 2). (A) Fraction of active units normalized by the first timestep for all simulations. Red line is the mean. Note that all simulations exhibit a stochastic decrease in the fraction of active units. See Figure 4—figure supplement 1 for further breakdown. (B) Dependence of sparseness (top) and sparsification time scale (bottom) on noise amplitude. Each point is one of 178 simulations with the same parameters except noise variance. (C) Learning a similarity matching task with Hebbian and anti-Hebbian learning using published code from Qin et al., 2023. Performance of the network (blue) and fraction of active units (red) as a function of training steps. Note that the loss axis does not start at zero, and the dynamic range is small. The background colors indicate which phase is dominant throughout learning (1 - red, 2 - yellow, 3 - green).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90069/elife-90069-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Summary of 516 simulations with three different learning algorithms: Stochastic error descent (SED, Cauwenberghs, 1992), SGD, Adam. All values are normalized to the first time step of each simulation. The red lines indicate mean over all simulations. (A) Fraction active units – number of units with any response. (B) Active fraction – overall activity across all units (see methods).
+
 As a further test of the generality of this phenomenon, we consider the recent simulation from Qin et al., 2023 in which representational drift was shown. The learning rule used in this work was very different from the ones we applied, and more biologically plausible. We simulated that network using the published code and found the same type of dynamics as shown above. Namely, the network initially converged to a good solution followed by a longer period of sparsification (Figure 4C). Note that in the original publication (Qin et al., 2023) the focus was on the stage following this sparsification, in which the network indeed maintained a constant fraction of active cells.
 
 In conclusion, we see that noisy learning leads to three phases under rather general conditions. The first phase is the learning of the task and convergence to the manifold of low-loss solutions. The second phase is directed movement on this manifold, driven by a second-order effect of implicit regularization. The third phase is an undirected random walk within the sub-manifold of low loss and maximum regularization. Table 1 summarizes these three phases and their signature in network metrics. It is important to note that these are not consecutive phases but rather overlapping ones – they occur simultaneously, but due to their different time scales one can identify when each phase is dominant. A rough delineation of when each phase is dominant can be seen in Figure 4C background colors – in the first phase (red) the loss function converged, in the second phase (yellow) the fraction of active units reduced substantially. In the third phase (red) both were stationary but the tuning of units continued to change, as shown in the original paper (Qin et al., 2023). We speculate that most experimental studies about drift demonstrated only the third phase of null drift, because they familiarized the animals to the environment for a substantial time period prior to recording. We refer to the second phase as a type of drift, because it happens after learning has finished and also features a gradual change in representations.
 
-## Mechanism of sparsification
+**Table 1.**
+ The three phases of noisy learning.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Duration</th>
+      <th>Performance</th>
+      <th>Activity statistics</th>
+      <th>Representations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>learning of task</td>
+      <td>short</td>
+      <td>changing</td>
+      <td>changing</td>
+      <td>changing</td>
+    </tr>
+    <tr>
+      <td>directed drift</td>
+      <td>long</td>
+      <td>stationary</td>
+      <td>changing</td>
+      <td>changing</td>
+    </tr>
+    <tr>
+      <td>null drift</td>
+      <td>endless</td>
+      <td>stationary</td>
+      <td>stationary</td>
+      <td>changing</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mechanism of sparsification
 
 What are the mechanisms that give rise to this observed sparsification? As illustrated in Figure 1, solutions in the zero-loss manifold have identical loss, but might vary in some of their properties. The authors of Blanc et al., 2020 suggest that noisy learning will slowly increase the flatness of the loss landscape in the vicinity of the solution. This can be demonstrated with a simple example. Consider a two-dimensional loss function. The function is shaped like a valley with a continuous one-dimensional zero-loss manifold at its bottom (Figure 5A). Crucially, the loss on this one-dimensional manifold is exactly zero, while the vicinity of the manifold becomes systematically flatter in one direction. We simulated gradient descent with added noise on this function from a random starting point (red dot). The trajectory quickly converged to the zero-loss manifold, and began a random walk on it. This walk was clearly biased towards the flatter area of the manifold, as can be seen by the spread of the trajectory. This bias could be comprehended by noting that the gradient was orthogonal to the contour lines of the loss, and therefore had a component directed towards the flat region.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90069/elife-90069-fig5-v1.jpg)
+
+**Figure 5.:** (A) Gradient Descent dynamics over a two-dimensional loss function with a one-dimensional zero-loss manifold (colors from blue to yellow denote loss). Note that the loss is identically zero along the horizontal axis, but the left area is flatter. The orange trajectory begins at the red dot. Note the asymmetric extension into the left area. (B) Fraction of active units is highly correlated with the number of non-zero eigenvalues of the Hessian. (C) Update noise reduces small eigenvalues. Log of non-zero eigenvalues at two consecutive time points for learning with update noise. Note that eigenvalues do not correspond to one another when calculated at two different time points, and this plot demonstrates the change in their distribution rather than changes in eigenvalues corresponding to specific directions. The distribution of larger eigenvalues hardly changes, while the distribution of smaller eigenvalues is pushed to smaller values. (D) Label noise reduces the sum over eigenvalues. Same as (C), but for actual values instead of log.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90069/elife-90069-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Summary of 362 simulations with either label or update noise added to stochastic gradient descent (SGD) learning algorithm. All values are normalized to the first time step of each simulation. Lines indicate the mean of simulations and shaded regions indicate one standard deviation. Loss convergence varies between simulations, and is achieved on a scale of no more than 105 time steps. (A) Active fraction as a function of training time. Note this metric decreases significantly for both types of noise. (B) Fraction of active units as a function of training time. For label noise, the change is much smaller. (C) Sum of the loss Hessian’s eigenvalues as a function of training time. Here the difference is apparent - label noise imposes slow implicit regularization over this metric while update noise does not. (D) Fraction of non-zero eigenvalues in the loss Hessian as a function of training time. As explained in the main text, update noise imposes implicit regularization over the sum of log-eigenvalues, which manifests as a zeroing of eigenvalues over time and thus a reduction in the fraction of active units.
 
 In higher dimensions, flatness is captured by the eigenvalues of the Hessian of the loss. Because these eigenvalues are a collection of numbers, different scenarios could lead to minimizing different aspects of this collection. Specifically, according to Blanc et al., 2020, update noise should regularize the sum of the log of the non-zero eigenvalues while label noise should do the same for the sum of eigenvalues. In our predictive coding example, where update noise was added, each inactivated unit translates into a set of zero-rows in the Hessian (see methods), and thus also into a set of zero-eigenvalues (Figure 5B). The slope of the regularizer approaches infinity as the eigenvalue approaches zero, and thus small eigenvalues are driven to zero much faster than large eigenvalues (Figure 5C). So in this case, update noise leads to an increase in the number of zero eigenvalues, which are manifested as a sparse solution. Another, perhaps more intuitive, way to understand these results is that units below the activation threshold are insensitive to noise perturbations. In other scenarios, in which we simulated with label noise, we indeed observed a gradual decrease in the sum of eigenvalues (Figure 5D). For a more intuitive demonstration of this phenomenon, see Figure 5—figure supplement 1.
 
@@ -91,82 +164,286 @@ Our explanation of drift invoked the concept of a low-loss manifold – a family
 
 Machine learning has been suggested as a model tool for neuroscience research (Richards et al., 2019; Marblestone et al., 2016; Saxe et al., 2021). However, the implicit regularization in ML has not been studied to explain representational drift in neuroscience, and may have been done without awareness of this phenomenon. It’s worth noting that this isn’t a phenomenon specific to neural networks, but rather a general property of overparameterized systems that optimize a cost function. Importing insights from this domain into neuroscience shows the utility of studying general phenomena in systems that learn. For example, another complex learning system in which a similar idea has been proposed is evolution – ‘survival of the flattest’ suggests that, under a high mutation rate, the fittest replicators are not just the ones with the highest fitness, but also with a flat fitness function which is more robust to mutations (Codoñer et al., 2006). One can hope that more such insights will arise as we open our eyes.
 
-## Code availability
+### Code availability
 
 The code for this project is available at https://github.com/Aviv-Ratzon/DriftReg, (copy archived at Aviv-Ratzon, 2024).
 
 ## Materials and methods
 
-## Predictive coding task
+### Predictive coding task
 
-The agent is moving in an arena of size (Lx,Ly), with constant velocity in the y direction of V0. The agent’s heading direction is θ and it changes at every time step by Δθ∼G(0,σθ2), the agent’s visual field has an angle θvis and is represented as a vector of size Lvis. The texture of the walls is generated from a random Gaussian vector of size Lwalls=2(Lx+Ly)Lvis, smoothed with a Gaussian filter with σ2=KsmoothLwalls. At each time step the agent receives the visual input from the walls, determined by the intersection points of its visual field with the walls. When the agent reaches a distance of LyLbuffer from the wall, it turns in the opposite direction.
+The agent is moving in an arena of size $(L_{x},L_{y})$, with constant velocity in the $y$ direction of $V_{0}$. The agent’s heading direction is θ and it changes at every time step by $Δ\theta∼G(0,\sigma_{\theta}^{2})$, the agent’s visual field has an angle $\theta_{vis}$ and is represented as a vector of size $L_{vis}$. The texture of the walls is generated from a random Gaussian vector of size $L_{walls}=2(L_{x}+L_{y})L_{vis}$, smoothed with a Gaussian filter with $\sigma^{2}=K_{smooth}L_{walls}$. At each time step the agent receives the visual input from the walls, determined by the intersection points of its visual field with the walls. When the agent reaches a distance of $L_{y}L_{buffer}$ from the wall, it turns in the opposite direction.
 
-## Tuning properties of units
+### Tuning properties of units
 
-For each unit we calculated a tuning curve. We divided the arena into 100 equal bins and computed the number of time steps in each bin and the mean unit activation. We then obtained the tuning curve by dividing the mean activity for each bin by the occupancy. We treated movement in each direction as a separate location. We calculated the spatial information (SI) of the tuning curves for each unit:(5)SI=∑ipirir¯log2⁡rir¯
+For each unit we calculated a tuning curve. We divided the arena into 100 equal bins and computed the number of time steps in each bin and the mean unit activation. We then obtained the tuning curve by dividing the mean activity for each bin by the occupancy. We treated movement in each direction as a separate location. We calculated the spatial information (SI) of the tuning curves for each unit:
 
-where i is the index of the bin, pi is the probability of being in the bin, ri is the value of the tuning curve in the bin and r¯ is the unit’s mean activity rate. Active unit was defined as a unit with non-zero activation for at least one input.
+$$
+SI=\sumip_{i}\frac{r_{i}}{r¯}log_{2}⁡\frac{r_{i}}{r¯}
+$$
 
-## Measuring sparsity
+where $i$ is the index of the bin, $p_{i}$ is the probability of being in the bin, $r_{i}$ is the value of the tuning curve in the bin and $r¯$ is the unit’s mean activity rate. Active unit was defined as a unit with non-zero activation for at least one input.
+
+### Measuring sparsity
 
 We measure sparsity using two metrics: Active fraction, and fraction active units. These can be calculated from the activation matrix (Figure 6), where each row corresponds to a single unit, each column corresponds to an input and the values of the cells are the activations of a given unit for a given input. We can then binarize this matrix, giving a value of 1 to cells with non-zero activations. The active fraction is the mean over all cells of the matrix. The fraction of active units is the fraction of rows with at least one non-zero value. Note that ‘units’ refers to hidden layer units.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90069/elife-90069-fig6-v1.jpg)
 
-## Simulations
+### Simulations
 
 For the random simulations, we train each network for 107 training steps while choosing random learning algorithm and parameters. The ranges and relevant values of parameters are specified in Table 2. For Adam and SED there was no added noise.
 
-## Sparsification timescale
+**Table 2.**
+ Parameter ranges for random simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Possible values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>learning algorithm</td>
+      <td>{SGD, Adam, SED}</td>
+    </tr>
+    <tr>
+      <td>noise type</td>
+      <td>{update, label}</td>
+    </tr>
+    <tr>
+      <td>number of samples</td>
+      <td>O’keefe and Nadel, 1979; Susman et al., 2019</td>
+    </tr>
+    <tr>
+      <td>initialization regime</td>
+      <td>{lazy, rich}</td>
+    </tr>
+    <tr>
+      <td>task</td>
+      <td>{abstract predictive, random, random smoothed}</td>
+    </tr>
+    <tr>
+      <td>input dimension</td>
+      <td>O’keefe and Nadel, 1979; Susman et al., 2019</td>
+    </tr>
+    <tr>
+      <td>output dimension</td>
+      <td>O’keefe and Nadel, 1979; Susman et al., 2019</td>
+    </tr>
+    <tr>
+      <td>noise variance (label/update)</td>
+      <td>[0.1,1]/[0.01,0.1]</td>
+    </tr>
+    <tr>
+      <td>hidden layer size</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sparsification timescale
 
 To produce Figure 4B bottom, we fitted an exponential curve over the curve of fraction of active units for each simulation and extracted the time constant of the exponential. To simplify this fit, we shifted each curve such that it plateaus at zero. We also clipped the length of the curves at the point in which they reach 90% of their final value to avoid fitting noise in the plateau after convergence. Note that we did this calculation to a subset of 178 simulations with the same parameters and varying noise scale. We chose this set of parameters because it exhibited a relatively ‘nice’ exponential curve. As can be seen in Figure 4A, some simulations exhibit a long plateau in the fraction of active units followed by a sudden start of the sparsification process. This type of plateau followed by a phase transition was described in previous works (Saxe et al., 2013; Schuessler et al., 2020). For some of the simulations finding the timescale of sparsification is not straightforward and rather noisy, thus for simplicity sake, we chose to calculate it only over the mentioned subset.
 
-## Stochastic error descent
+### Stochastic error descent
 
-The equation for parameter updates under this learning rule is given by:(6)θτ+1=θτ−η(f(θτ+ξτ)−f(θτ))ξτ
+The equation for parameter updates under this learning rule is given by:
 
-In this learning rule, the parameters are randomly perturbed at each training step by a Gaussian noise denoted by ξτ and then updated in proportion to the change in loss.
+$$
+\theta_{\tau+1}=\theta_{\tau}−η(f(\theta_{\tau}+ξ_{\tau})−f(\theta_{\tau}))ξ_{\tau}
+$$
 
-## Experimental data
+In this learning rule, the parameters are randomly perturbed at each training step by a Gaussian noise denoted by $ξ_{\tau}$ and then updated in proportion to the change in loss.
+
+### Experimental data
 
 We present here a detailed description of the analyses performed for each dataset. Table 3 summarizes the differences between them, along with an additional publication about CA1 drift Geva et al., 2023 in which stationary statistics were reported. The p-values for the regression slopes were calculated using a t-test where the null hypothesis is that the coeffecient is equal to zero. The regression included an intercept parameter.
 
-Khatib et al., 2023 - The results presented here were also shown in the paper, and a full description is available there. Only frames where the mice moved faster than 1cms were analyzed. We calculated the fraction of place cells out of all recognized cells, place cells were classified using a shuffle test. We also used the published code from Sheintuch et al., 2022 to verify that the increase in SI is sustained under bias corrections. Note that we treated the linear track as one-dimensional and separated the two different running directions, bins were 4cm in length. The metrics were averaged over cells pooled together from all animals. Data is not publicly available.
+**Table 3.**
+ Description of experimental datasets.
 
-Jercog et al., 2019a - The results presented here are novel. The published data features rate maps and full trajectories, without spike data. Only neurons with an average activity rate of over 0.1Hz were included. Because of this, we calculated only the number of active neurons each day rather than the fraction and could not classify which were place cells. We calculated the binned occupancy maps from the trajectories and used them with the published rate maps to calculate SI. Data is available at: https://crcns.org/data-sets/hc/hc-22/about-hc-22.
 
-Karlsson et al., 2015 - The results presented here are novel. The data features spikes and trajectories. We filtered the data to include time bins when the animals moved faster than 1cms and only neurons from CA1. We used the published code from Sheintuch et al., 2022 to calculate the fraction of place cells along with SI, and verified that the increase in SI is sustained under bias corrections. For the occupancy map we treated the entire W-shaped arena as a square and used bins of approximately 4cm length. This was done for the sake of simplifying the analysis, a more accurate method would be to consider separately each linear track and movement direction. Note that in this dataset animals spent varying amounts of time in two different environments. We pooled together for each animal the data of cells from either environment according to experience time in them. For example, if the animal visited environment A on day 4 for the 4th time and had 20 active cells, and visited environment B on day 6 for the 4th time and had 30 active cells, we pooled together the entire 50 cells for day 4 of this animal. Data is available at: https://crcns.org/data-sets/hc/hc-6/about-hc-5.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Khatib et al., 2023</th>
+      <th>Jercog et al., 2019b</th>
+      <th>Karlsson et al., 2015</th>
+      <th>Sheintuch et al., 2023</th>
+      <th>Geva et al., 2023</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Familiarity</td>
+      <td>3–5 days</td>
+      <td>novel</td>
+      <td>novel</td>
+      <td>novel</td>
+      <td>6–9 days</td>
+    </tr>
+    <tr>
+      <td>Species</td>
+      <td>mice</td>
+      <td>mice</td>
+      <td>rats</td>
+      <td>mice</td>
+      <td>mice</td>
+    </tr>
+    <tr>
+      <td># Animals</td>
+      <td>8</td>
+      <td>12</td>
+      <td>9</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Recordings days</td>
+      <td>1 day</td>
+      <td>10 days</td>
+      <td>max. 11 days</td>
+      <td>10 days</td>
+      <td>10 days</td>
+    </tr>
+    <tr>
+      <td>Session length</td>
+      <td>200 min</td>
+      <td>40 min</td>
+      <td>15–30 min</td>
+      <td>20 min</td>
+      <td>20 min</td>
+    </tr>
+    <tr>
+      <td>Recording type</td>
+      <td>calcium imaging</td>
+      <td>electrophysiology</td>
+      <td>electrophysiology</td>
+      <td>calcium imaging</td>
+      <td>calcium imaging</td>
+    </tr>
+    <tr>
+      <td>Arena</td>
+      <td>linear track</td>
+      <td>square or circle</td>
+      <td>W-shaped</td>
+      <td>linear or L-shaped track</td>
+      <td>linear track</td>
+    </tr>
+    <tr>
+      <td>Activity metric</td>
+      <td>fraction of place cells decrease</td>
+      <td>number of active cells decrease</td>
+      <td>fraction of place cells decrease</td>
+      <td>fraction of place cells decrease</td>
+      <td>fraction of place cell stationary</td>
+    </tr>
+    <tr>
+      <td>Mean SI change</td>
+      <td>increase</td>
+      <td>increase</td>
+      <td>increase</td>
+      <td>increase</td>
+      <td>stationary</td>
+    </tr>
+  </tbody>
+</table>
+
+Khatib et al., 2023 - The results presented here were also shown in the paper, and a full description is available there. Only frames where the mice moved faster than $1\frac{cm}{s}$ were analyzed. We calculated the fraction of place cells out of all recognized cells, place cells were classified using a shuffle test. We also used the published code from Sheintuch et al., 2022 to verify that the increase in SI is sustained under bias corrections. Note that we treated the linear track as one-dimensional and separated the two different running directions, bins were $4cm$ in length. The metrics were averaged over cells pooled together from all animals. Data is not publicly available.
+
+Jercog et al., 2019a - The results presented here are novel. The published data features rate maps and full trajectories, without spike data. Only neurons with an average activity rate of over $0.1Hz$ were included. Because of this, we calculated only the number of active neurons each day rather than the fraction and could not classify which were place cells. We calculated the binned occupancy maps from the trajectories and used them with the published rate maps to calculate SI. Data is available at: https://crcns.org/data-sets/hc/hc-22/about-hc-22.
+
+Karlsson et al., 2015 - The results presented here are novel. The data features spikes and trajectories. We filtered the data to include time bins when the animals moved faster than $1\frac{cm}{s}$ and only neurons from CA1. We used the published code from Sheintuch et al., 2022 to calculate the fraction of place cells along with SI, and verified that the increase in SI is sustained under bias corrections. For the occupancy map we treated the entire W-shaped arena as a square and used bins of approximately $4cm$ length. This was done for the sake of simplifying the analysis, a more accurate method would be to consider separately each linear track and movement direction. Note that in this dataset animals spent varying amounts of time in two different environments. We pooled together for each animal the data of cells from either environment according to experience time in them. For example, if the animal visited environment A on day 4 for the 4th time and had 20 active cells, and visited environment B on day 6 for the 4th time and had 30 active cells, we pooled together the entire 50 cells for day 4 of this animal. Data is available at: https://crcns.org/data-sets/hc/hc-6/about-hc-5.
 
 Sheintuch et al., 2023 - The results presented here were also shown in the paper. The data features various metrics calculated from the activity. We averaged the fraction of place cells and mean SI over animals for each day. Data is available at: https://github.com/zivlab/cell_assemblies, (copy archived at zivlab, 2023).
 
-## Label noise
+### Label noise
 
-Label noise is introduced to the loss function given by the following formula:(7)f(θτ)=Et(yt^−xt+1+ξτlabel)2,
+Label noise is introduced to the loss function given by the following formula:
 
-where ξτlabel is Gaussian noise.
+$$
+f(\theta_{\tau})=E_{t}(y_{t}^−x_{t+1}+ξ_{\tau}^{label})^{2},
+$$
 
-## Gradient descent dynamics around the zero-loss manifold
+where $ξ_{\tau}^{label}$ is Gaussian noise.
 
-The function we used for the two-dimensional example was given by:(8)L(x,y)=(xy)2,
+### Gradient descent dynamics around the zero-loss manifold
 
-which has zero loss on the x and y axes. For small enough update noise, GD will converge to the vicinity of this manifold (the axes). We consider a point on the x-axis: (x0,0), and calculate the direction of the gradient near that point. Because we are interested in motion along the zero-loss manifold, we consider a small perturbation in the orthogonal direction (x0,0+Δy) where x0>>1 and |Δy|<<1. Any component of the gradient in the x direction will lead to motion along the manifold. The update step at this point is given by:(9)−∇L(x0,0+Δy)=−2x0((Δy)2x0Δy)
+The function we used for the two-dimensional example was given by:
 
-One can observe that the step has a large component in the y direction, quickly returning to the manifold. There is also a smaller component in the x direction, reducing the value of x. Reducing x also reduces the Hessian’s eigenvalues:(10)HL(x0,0)=2(000x02)(11)λ1,2={0,x02},v1,2={(10),(01)}
+$$
+L(x,y)=(xy)^{2},
+$$
 
-Thus, it becomes clear that the trajectory will have a bias that reduces the curvature in the y direction.
+which has zero loss on the $x$ and $y$ axes. For small enough update noise, GD will converge to the vicinity of this manifold (the axes). We consider a point on the $x$-axis: $(x_{0},0)$, and calculate the direction of the gradient near that point. Because we are interested in motion along the zero-loss manifold, we consider a small perturbation in the orthogonal direction $(x_{0},0+Δy)$ where $x_{0}>>1$ and $|Δy|<<1$. Any component of the gradient in the $x$ direction will lead to motion along the manifold. The update step at this point is given by:
 
-For general loss functions and various noise models, rigorous proofs can be found in Blanc et al., 2020, and a different approach can be found in Li et al., 2021. Here, we will briefly outline the intuition for the general case. Consider again the update rule for GD:(12)θ←θ−η∇L(θ).
+$$
+−∇L(x_{0},0+Δy)=−2x_{0}((Δy)^{2}x_{0}Δy)
+$$
 
-In order to understand the dynamics close to the zero-loss manifold, we consider a point θ, for which L(θ)=0 expand the loss around it:(13)L(θ+δθ)=L(θ)+∇TL(θ)δθ+12δθTHδθ.
+One can observe that the step has a large component in the $y$ direction, quickly returning to the manifold. There is also a smaller component in the $x$ direction, reducing the value of $x$. Reducing $x$ also reduces the Hessian’s eigenvalues:
 
-We can then take the gradient of this expansion with respect to θ:(14)∇θL(θ+δθ)=∇θL(θ)+∇θ∇θTL(θ)δθ+∇θ(12δθTHδθ)(15)=0+Hδθ+∇θ(12δθTHδθ).
+$$
+H_{L}(x_{0},0)=2(000x_{0}^{2})
+$$
 
-The first term is zero, because the gradient is zero on the manifold. The second term is the largest one, as it’s linear in δθ. Note that the Hessian matrix has zero eigenvalues in directions on the zero-loss manifold, and non-zero eigenvalues in other directions. Thus, the second term corresponds to projecting δθ in a direction that is orthogonal to the zero-loss manifold. The third term can be interpreted as the gradient of some auxiliary loss function. Thus, we expect gradient descent to minimize this new loss, which corresponds to a quadratic form with the Hessian. This is the reason for the implicit regularization along the manifold. Note that the auxiliary loss function is defined by δθ, and thus different noise statistics will correspond, on average, to different implicit regularizations. In conclusion, the update step will have a large component that moves the parameter vector towards the zero-loss manifold, and a small component that moves the parameter vector on the manifold in a direction that minimizes some measure of the Hessian.
 
-## Hessian and sparseness
 
-In the main text, we show that the implicit regularization of the Hessian leads to sparse representations. Here, we show this relationship for a single-hidden layer feed-forward neural network with ReLU activation and Mean Squared Error loss:(16)f(xi)=σ(xtmT+b)nT
+$$
+\lambda_{1,2}={0,x_{0}^{2}},v_{1,2}={(10),(01)}
+$$
 
-The gradient and Hessian at the zero-loss manifold are given by Nacson et al., 2023:(17)∇θf(xi)=(∂f∂m∂f∂b∂f∂n)=(n⊙1(xi;θ)⊗xin⊙1(xi;θ)(xi⋅nT+b)⊙1(xi;θ))(18)∇θ2L(x;θ)=∑i∇θf(xi)∇θf(xi)T,
+Thus, it becomes clear that the trajectory will have a bias that reduces the curvature in the $y$ direction.
 
-where 1(xi;θ) is an indicator vector denoting whether each unit is active for some input xi. Sparseness means that a unit has become inactive for all inputs. All the partial derivatives of input, output and bias weights associated with such a unit are zero, and thus the relevant rows of the Hessian are zero as well. Thus, every inactive unit leads to several zero eigenvalues.
+For general loss functions and various noise models, rigorous proofs can be found in Blanc et al., 2020, and a different approach can be found in Li et al., 2021. Here, we will briefly outline the intuition for the general case. Consider again the update rule for GD:
+
+$$
+\theta←\theta−η∇L(\theta).
+$$
+
+In order to understand the dynamics close to the zero-loss manifold, we consider a point θ, for which $L(\theta)=0$ expand the loss around it:
+
+$$
+L(\theta+\delta\theta)=L(\theta)+∇^{T}L(\theta)\delta\theta+\frac{1}{2}\delta\theta^{T}H\delta\theta.
+$$
+
+We can then take the gradient of this expansion with respect to θ:
+
+$$
+∇_{\theta}L(\theta+\delta\theta)=∇_{\theta}L(\theta)+∇_{\theta}∇_{\theta}^{T}L(\theta)\delta\theta+∇_{\theta}(\frac{1}{2}\delta\theta^{T}H\delta\theta)
+$$
+
+
+
+$$
+=0+H\delta\theta+∇_{\theta}(\frac{1}{2}\delta\theta^{T}H\delta\theta).
+$$
+
+The first term is zero, because the gradient is zero on the manifold. The second term is the largest one, as it’s linear in $\delta\theta$. Note that the Hessian matrix has zero eigenvalues in directions on the zero-loss manifold, and non-zero eigenvalues in other directions. Thus, the second term corresponds to projecting $\delta\theta$ in a direction that is orthogonal to the zero-loss manifold. The third term can be interpreted as the gradient of some auxiliary loss function. Thus, we expect gradient descent to minimize this new loss, which corresponds to a quadratic form with the Hessian. This is the reason for the implicit regularization along the manifold. Note that the auxiliary loss function is defined by $\delta\theta$, and thus different noise statistics will correspond, on average, to different implicit regularizations. In conclusion, the update step will have a large component that moves the parameter vector towards the zero-loss manifold, and a small component that moves the parameter vector on the manifold in a direction that minimizes some measure of the Hessian.
+
+### Hessian and sparseness
+
+In the main text, we show that the implicit regularization of the Hessian leads to sparse representations. Here, we show this relationship for a single-hidden layer feed-forward neural network with ReLU activation and Mean Squared Error loss:
+
+$$
+f(x_{i})=\sigma(x_{t}m^{T}+b)n^{T}
+$$
+
+The gradient and Hessian at the zero-loss manifold are given by Nacson et al., 2023:
+
+$$
+∇_{\theta}f(x_{i})=(\frac{∂f}{∂m}\frac{∂f}{∂b}\frac{∂f}{∂n})=(n⊙1(x_{i};\theta)⊗x_{i}n⊙1(x_{i};\theta)(x_{i}⋅n^{T}+b)⊙1(x_{i};\theta))
+$$
+
+
+
+$$
+∇_{\theta}^{2}L(x;\theta)=\sumi∇_{\theta}f(x_{i})∇_{\theta}f(x_{i})^{T},
+$$
+
+where $1(x_{i};\theta)$ is an indicator vector denoting whether each unit is active for some input $x_{i}$. Sparseness means that a unit has become inactive for all inputs. All the partial derivatives of input, output and bias weights associated with such a unit are zero, and thus the relevant rows of the Hessian are zero as well. Thus, every inactive unit leads to several zero eigenvalues.

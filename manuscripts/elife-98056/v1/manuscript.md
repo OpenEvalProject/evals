@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 MOE Key Laboratory of Biosystems Homeostasis & Protection, College of Life Sciences, Zhejiang University Hangzhou China
-2. https://ror.org/046rm7j60 Department of Ecology and Evolutionary Biology, University of California, Los Angeles Los Angeles United States
+1. MOE Key Laboratory of Biosystems Homeostasis & Protection, College of Life Sciences, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. Department of Ecology and Evolutionary Biology, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 3. Center for Global Change and Ecological Forecasting, Zhejiang Zhoushan Island Ecosystem Observation and Research Station, Institute of Eco Chongming, Zhejiang Tiantong Forest Ecosystem National Observation and Research Station, School of Ecological and Environmental Sciences Shanghai China
 
 † Corresponding author
@@ -40,23 +40,63 @@ Third, habitat fragmentation could prevent or interrupt species’ dispersal whi
 
 Although the overall effect of habitat fragmentation on climate-induced community dynamics has been established, few empirical studies have ever considered these multiple mechanisms simultaneously. Here, we use 10 years of bird community data in a subtropical land-bridge island system (Thousand Island Lake, TIL, China, Figure 2) during a period of consistent climatic warming (Figure 2—figure supplement 1) to explore whether and how community thermal niche composition responds to climate change and how habitat fragmentation mediates the process. This reservoir island system was formed 65 years ago due to dam construction. Specifically, we focused on the following three predictions:
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig2-v1.jpg)
+
+**Figure 2.:** The map was created using ESRI (Environmental Systems Resource Institute) ArcMap software (version 10.3). The base map sources include Esri, Maxar, Earthstar Geographics, and the GIS User Community.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Breeding season temperature was calculated as the average of the mean monthly temperature for breeding seasons (April – June). Black lines and grey shade indicate the regression line and 95% confidence interval of the linear regression model (slope = 0.078, r2=34.53%, p=0.04).
+
 ## Results
 
 The number of species detected in surveys on each island across the study period averaged 13.37±6.26 (mean ± SD) species, ranging from 2 to 40 species, with an observed gamma diversity of 60 species. The STI of all 60 birds averaged 19.94±3.58°C (mean ± SD) and ranged from 9.30°C (Cuculus canorus) to 27.20°C (Prinia inornate), with a median of 20.63°C (Figure 3—figure supplement 1; Figure 3—figure supplement 2). STI of resident species (n=47) and summer visitors (n=13) did not show a significant difference (t-test: t=0.23, df = 17.82, p=0.82). No significant correlation was found between STI and species’ ecological traits; specifically, the continuous variables of dispersal ability, body size, body mass and clutch size (Pearson correlations for each, |r|<0.22), and the categorial variables of diet (carnivorous/omnivorous/herbivory), active layer (canopy/mid/low), and residence type (resident species/summer visitor).
 
-## Thermophilization of bird communities
+### Thermophilization of bird communities
 
 At the landscape scale, considering species detected across the study area, occurrence-based CTI (CTIoccur; see section STI and CTI) showed no trend (posterior mean temporal trend = 0.414; 95% CrI: –12.751, 13.554) but abundance-based CTI (CTIabun; see section STI and CTI) showed a significant increasing trend (temporal trend [mean ± SE]=0.327 ± 0.041, t=7.989, p<0.001). When measuring CTI trends for individual transects (expressed as °C/unit year), we found significant increases in CTI for both occurrence- (mean temporal trend = 0.124; 95% CrI: 0.108, 0.137) and abundance-based indices (temporal trend = 0.320 ± 0.021, t493=15.534, p<0.001; Figure 3).
 
-## Mechanisms underlying CTI trends
+![Figure 3.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig3-v1.jpg)
+
+**Figure 3.:** Vertical lines in (a) are posterior estimated CTI (mean ± SD); solid black line and shaded area are predictions and 95% credible intervals extracted from JAGS modeling posterior mean CTIoccur (n = 530) as a function of year, and using island identity as a random effect while accounting for the variation in posterior CTIoccur. Points and error bars in (b) are observed CTIabun (mean ± 2 SD); solid black line and shaded area are predicted values and 95% confidence intervals estimated from LMM modeling observed CTIabun (n = 530) as a function of year, and using island identity as a random effect.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The dotted horizontal line indicates the median of STI values; the dashed horizontal line indicates the mean of STI values. Grey points are Oriental species, red points are Palearctic species and purple points are Eurytopic species. The bottom right presents the frequency of STI values (right) and the overview relationship between total abundance (natural logarithm transversion of total abundance over 10 years and on all islands) and STI.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The units on the horizontal and vertical axes are degrees Celsius. Pearson correlation coefficients between STI used in our study and STI calculated with different time-windows: March to August (a) and January to December (b), were significantly high. Pearson correlation coefficients between STI used in our study and STI calculated with different distributional ranges: the distributional range in China (c) and distributional range across the world (d), were significantly high.
+
+### Mechanisms underlying CTI trends
 
 Comparing across species with different thermal affinities, we found a weak positive linear relationship between STI and species-specific temporal occupancy trends (t-test: slope = 0.206, t58=1.766, p=0.082; Figure 4a), indicating warm-adapted species were marginally more likely to increase in occurrence over time. Decomposing occurrence change to dynamic parameters; however, we found a significant positive relationship between STI and species’ temporal trends in colonization (t-test: slope = 0.259, p=0.043) and a significant negative relationship between STI and species’ temporal trends in extinction (t-test: slope = –0.414, p=0.015; Figure 4—figure supplement 1). Thus, warm-adapted species generally increased in occupancy over time, which was driven by an increase in colonization probability and a decrease in extinction probability; in contrast, cold-adapted species generally decreased in occupancy over time, which was driven by an increase in extinction probability and a decrease in colonization probability (Figure 4b). Considering all species, the influence of a thermal-association gradient underlying occurrence dynamics resulted in a particularly strong correlation between species’ trends in colonization and extinction probabilities (Pearson correlation r=–0.77; Figure 4b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig4-v1.jpg)
+
+**Figure 4.:** Each point and error bar in (a) represents the temporal trend of occupancy rate (posterior mean and 95% credible interval of year effect on occupancy rate) for each species, with the filled dots indicating a significant year effect while the hollow dots indicating nonsignificant year effect. The dotted vertical line indicates the median of STI values. Cold-adapted species are plotted in blue and warm-adapted species are plotted in orange. The number of species with significant occupancy trends in each quadrant was added to the plot. The black dashed line and shaded area are the predicted values and 95% confidence intervals of the weighted linear regression model (n = 60). Each point in (b) represents the posterior mean estimate of year in colonization, extinction or occupancy rate for each of 60 species. The color of the point indicates the temporal trend in occupancy. Similar to (a), each point and error bar in (c) represents the temporal trend of abundance (year effect and 95% confidence interval of year effect on abundance) for each species. The black dashed line and shaded area are the predicted values and 95% confidence intervals of the weighted linear regression model (n = 60).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Relationship between STI and mean estimates and 95%, and 80% credible intervals of posterior distribution for temporal trends of species extinction rate (a) and species colonization rate (b). Points and error bars in blue or orange indicate significant posterior estimates and error bars in grey indicate non-significant effects. Results of linear regression models modeling posterior mean of temporal trends in colonization (n = 60) or extinction (n = 60) weighted by standard deviations were added to plots.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Partial regression effects of year effect from LMM on total species richness (a) and total abundance (b) for warm versus cold-adapted species groups. The solid lines indicate significant effects. The shaded bands are 95% confidence intervals of fitted values with other variables at their mean values. Total richness (n = 530) for each of the 53 transects in each year was calculated as the mean of the posterior estimate of species absence/presence, while total abundance (n = 530) for each of the 53 transects in each year was calculated from raw maximum abundance data.
+
 Similar patterns were found for abundance, where we detected a strong positive relationship (t-test: slope = 0.153, t58=3.047, p=0.003) between STI and each species’ temporal trend in abundance: warm-adapted species generally increased abundance while cold-adapted species decreased over 10 years (Figure 4c). At the island scale, both total abundance and total species richness increased significantly for the warm-adapted species group while both responses significantly decreased for the cold-adapted species (richness trend, P<0.001; total abundance trend, p<0.001; Figure 2—figure supplement 1).
 
-## The mediating effects of fragmentation on colonization and extinction processes
+### The mediating effects of fragmentation on colonization and extinction processes
 
 Both colonization and extinction probabilities showed evidence of being moderated by fragmentation (Figure 5). Of particular interest was how the temporal trend in dynamic parameters varied as a function of area or isolation (i.e., Year:Area or Year:Isolation effects). Although species-specific interaction terms were not generally significant for most species, overall trends could be assessed across species. In particular, the effect of isolation on temporal dynamics of thermophilization was relatively consistent across cold- (Figure 5a) and warm-adapted species (Figure 5b); specifically, on islands nearer to the mainland, warm-adapted species (15 out of 15 investigated species) increased their colonization probability at a higher rate over time, while most cold-adapted species (21 out of 23 species) increased their extinction probability at a higher rate.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig5-v1.jpg)
+
+**Figure 5.:** Points are species-specific posterior means on the logit-scale extracted from MSOM, where parameters >0 indicate positive effects (on extinction [a] or colonization [b]) and parameters <0 indicate negative effects. Only cold-adapted species (23 selected species) with positive trends in extinction (a) and warm-adapted species (15 selected species) with positive trends in colonization (b) are shown, which are two main processes contributing positively to thermophilization. Points in blue/orange indicate significant effects (95% or 80% credible intervals) and points in white indicate non-significant effects. All points were jittered slightly by 0.22 in width.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98056/elife-98056-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The understory air temperature was monitored in 20 selected study islands differing in island area. Each plot represents the average air temperature (April – June) of a site within the islands. Lines and shaded areas are predicted values and 95% confidence intervals from linear regression models.
 
 Island area, in contrast, had a more mixed role in moderating colonization/extinction rates across species. For most warm-adapted species (11 out of 15 investigated species; Figure 5b), colonization rates increased faster over time on smaller islands (i.e., negative area:year interaction term); however, the colonization rates of the other four species increased faster on larger islands, including the only significant positive interactive effect (Dendrocitta formosae). For cold-adapted species, extinction rates were approximately equally split between increasing faster on smaller islands (12 out of 23 species) and increasing faster on larger islands (11 out of 23 species), including two species, Spizixos semitorques and Pericrocotus cantonensis, which showed significantly increasing rates of extinction on larger islands.
 
@@ -64,11 +104,11 @@ Island area, in contrast, had a more mixed role in moderating colonization/extin
 
 Our study explored the driving processes underlying a decade of thermophilization of a bird community breeding in a model fragmented system, specifically testing whether and how habitat fragmentation may mediate the colonization-extinction dynamics which underly shifts in mean community traits. Our results confirm that community thermal niche composition was changing directionally, mainly through gains in warm-adapted species and individuals and losses in cold-adapted species and individuals. We further found that habitat fragmentation influences two processes of thermophilization: colonization rates of most warm-adapted species tended to increase faster on smaller and less isolated islands, while the loss rates of most cold-adapted species tended to be exacerbated on less isolated islands.
 
-## Thermophilization of bird communities
+### Thermophilization of bird communities
 
 Although thermophilization has been found in many taxa (Lajeunesse and Fourcade, 2023) and is more apparent in the tropics than in temperate zones (Freeman et al., 2021), there are few empirical demonstrations of this process in subtropical fragmented systems. We found decadal-scale thermophilization evident in both occurrence- and abundance-based metrics, although the response was considerably stronger for abundance. This result is consistent with work in other systems, where abundance-weighted CTI generally responds more quickly than occurrence-based CTI given climatic warming (Devictor et al., 2008; Lindström et al., 2013; Oliver et al., 2017; Tayleur et al., 2016). Notably, when tested on the landscape scale (versus on individual island communities), only the abundance-based thermophilization trend was significant, indicating thermophilization of bird communities was mostly due to occurrence dynamics within the region, rather than exogenous community turnover outside the region.
 
-## Mechanisms underlying CTI trends
+### Mechanisms underlying CTI trends
 
 Consistent with our expectation, we found an overall increase in occupancy and abundance of warm-adapted species and a decrease in occupancy and abundance of cold-adapted species, which together contributed to thermophilization. This pattern is consistent with many previous studies conducted in continuous habitats in Europe or North America both for breeding and non-breeding bird communities (Curley et al., 2022; Princé and Zuckerberg, 2015; Tayleur et al., 2016). Also consistent with our expectation was that occupancy change was the product of temporal trends in both colonization and extinction dynamics; namely, warm-adapted species showed increasing colonization and decreasing extinction rates, while, cold-adapted species showed decreasing colonization and increasing extinction rates. Following that STI is predictably related to temporal trends in colonization and extinction rate (Figure 4), we can conclude that STI is an effective broad indicator of relative climatic vulnerability within a community, where species with relatively higher thermal preferences are generally poised to benefit from local climate warming and vice versa. This conclusion is supported by studies that have established relationships between STI and species’ population trend (Pearce-Higgins et al., 2015; Rigal et al., 2023), species’ contribution analysis (Tayleur et al., 2016), or spatial occupancy (Anderson et al., 2023). Decomposing average community trait shifts into colonization and extinction dynamics of individual species and their associated traits provides a comprehensive and more nuanced insight into community response to climate change.
 
@@ -78,7 +118,7 @@ Meanwhile, most cold-adapted species in our system demonstrated increasing extin
 
 Despite the general trend, not all warm-adapted species increased (in abundance or occupancy) and not all cold-adapted species decreased. In other words, not all species contributed equally to the process of thermophilization, as has been seen elsewhere (Tayleur et al., 2016). Variation in species’ response relates to their true thermal tolerance in the study region, which would require additional physiological data to measure and could also be influenced by habitat usage and biotic interactions.
 
-## The mediating effect of fragmentation on colonization and extinction processes
+### The mediating effect of fragmentation on colonization and extinction processes
 
 It has long been thought that habitat fragmentation can impact species’ climate tracking (Opdam and Wascher, 2004) but there are only a few empirical studies to date (Fourcade et al., 2021; Warren et al., 2001). Our research examining colonization-extinction dynamics provides empirical evidence of the possible mechanisms in a land-bridge island system.
 
@@ -96,49 +136,87 @@ Overall, our findings have important implications for conservation practices. Fi
 
 ## Materials and methods
 
-## Study area and islands selection
+### Study area and islands selection
 
 The Thousand Island Lake (TIL), located in eastern China, was formed in 1959 following the construction of the Xin’anjiang Dam for hydroelectricity (Figure 2). When the lake is at its highest, there are 1078 islands with an area larger than 0.25 ha. Currently, about 90% of the forested areas are dominated by Masson pine (Pinus massoniana) in the canopy and broad‐leaved species (e.g. Loropetalum chinensei, Vaccinium carlesii, and Rhododendron simsii) in the sub‐canopy and understory (Liu et al., 2020). The climatic zone is a typical monsoon climate. The precipitation is mainly concentrated between April and June with an average yearly rainfall of 1430 mm. The average annual temperature is 17 °C (hottest from June to August) and the average daily temperature ranges from –7.6 °C in January to 41.8 °C in July (Si et al., 2024).
 
 We selected 36 islands according to a gradient of island area and isolation with a guarantee of no significant correlation between island area and isolation (Pearson r=–0.21, p=0.21). For each island, we calculated island area and isolation (measured in the nearest Euclidean distance to the mainland) to represent the degree of habitat fragmentation (Figure 2). Distance to the mainland is the best distance-based measure in fitting species’ colonization rate and extinction rate in TIL (Si et al., 2014). Since lake formation, the islands have been protected by forbidding logging, allowing natural succession pathways to occur.
 
-## Bird data
+### Bird data
 
 We established 53 survey transects on 36 islands with the sampling effort on each island roughly proportional to the logarithm of the island area (Schoereder et al., 2004). As a result, 53 transects on 36 islands were sampled, including eight transect trails on the largest study island (area = 1058 ha), four transects on two islands between 100 and 500 ha, two transects on four islands between 10 and 100 ha, and one on each of the remaining small islands (c. 1 ha for most islands) (Si et al., 2018). Breeding bird communities were surveyed on each transect nine times annually (three times per month from April to June) from 2012 to 2021 (Si et al., 2017). In each survey, observers walked along each transect at a constant speed (2.0 km/hr) and recorded all the birds seen or heard on the survey islands. To minimize the bias, the order and direction of each island surveyed were randomized. We based our abundance estimate on the maximum number of individuals recorded across the nine annual surveys. We excluded non-breeding species, nocturnal and crepuscular species, high-flying species passing over the islands (e.g., raptors, swallows) and strongly water-associated birds (e.g., cormorants) from our record. First, our surveys were conducted during the day, so some nocturnal and crepuscular species, such as the owls and nightjars were excluded because of inadequate survey design. Second, wagtail, kingfisher, and water birds such as ducks and herons were excluded because we were only interested in forest birds. Third, birds like swallows, and eagles who were usually flying or soaring in the air rather than staying on islands, were also excluded as it was difficult to determine their definite belonging islands. Following these filtering, 60 species were finally retained.
 
-## Climate data
+### Climate data
 
 We obtained climate data (monthly average temperature from 2012 to 2021) from the Meteorological Bureau of Chun’an County in Zhejiang Province, China. We calculated breeding season temperature as the average of the mean monthly temperature from April to June in order to represent the thermal conditions birds experience at this site each year (Lindström et al., 2013). Breeding season temperature increased significantly over 10 years (slope = 0.078, r2=34.53%, p=0.04, Figure 2—figure supplement 1).
 
-## STI and CTI
+### STI and CTI
 
 We followed the methods of Devictor et al., 2008 to calculate a species temperature index (STI) using ArcMap 10.3. STI of a given species is defined as the average temperature of breeding months (April – June) across its distributional range (restricted to the Northern hemisphere) averaged over 1970–2000. Monthly temperature data were obtained from WorldClim at a resolution of 30-arc seconds (http://www.worldclim.org). Distributional maps were extracted from Birdlife International 2019 (http://datazone.birdlife.org/species/requestdis), in which we selected only the distributional regions where the species is either resident or breeding. All species were divided into two groups indicating their relative thermal preference: species with STI higher than the median STI were labeled as warm-adapted species, and species lower than the median STI were labeled as cold-adapted species (Bates et al., 2017). The STI of a species can differ depending on distributional and climate data but the rank order of species STI is highly correlated across methods (Barnagaud et al., 2013). We verified the robustness of our STI calculations using different distributional ranges and annual time windows (Figure 3—figure supplement 2).
 
-CTI is a community-level index representing the average species thermal niche of all species or individuals in the community (Devictor et al., 2008). Accordingly, for each community in each year, CTI was calculated as the average STI of all occurring species (hereafter: CTIoccur) or counted individuals (hereafter: CTIabun):CTIoccur,j,t=∑i=1Nj,tSTIiNj,tCTIabun,j,t=∑i=1Nj,t(STIi×Ai,j,t)∑i=1Nt,jAi,j,t
+CTI is a community-level index representing the average species thermal niche of all species or individuals in the community (Devictor et al., 2008). Accordingly, for each community in each year, CTI was calculated as the average STI of all occurring species (hereafter: CTIoccur) or counted individuals (hereafter: CTIabun):
+
+$$
+CTI_{occur,j,t}=\frac{\sumi=1N_{j,t}STI_{i}}{N_{j,t}}
+$$
+
+
+
+$$
+CTI_{abun,j,t}=\frac{\sumi=1N_{j,t}(STI_{i}\timesA_{i,j,t})}{\sumi=1N_{t,j}A_{i,j,t}}
+$$
 
 where Nj,t is the total number of species surveyed in the community j in year t, Ai,j,t denoted the maximum abundance among nine surveys of the i th species in community j in year t.
 
 CTIoccur was calculated using occurrence data corrected for imperfect detection (see next section), while CTIabun was estimated using the maximum annual count across 9 surveys. Given that our survey effort was so high (i.e., 9 repeat surveys per year), true abundance should be highly correlated with maximum observed abundance (MacKenzie et al., 2006). We also used these occurrence and abundance metrics from all islands to compute each year’s regional CTI at the landscape level.
 
-## Multispecies dynamic occupancy model
+### Multispecies dynamic occupancy model
 
-Presence-absence data can be highly sensitive to false negatives, so to explore the driving processes of change in CTIoccur, and to explore how habitat fragmentation mediated the main processes while accounting for the imperfect detection, we developed a spatially hierarchical dynamic multi-species occupancy model (MSOM) in a Bayesian framework based on the model by Royle and Kéry, 2007. We denote ynijt as the observation (detected = 1; undetected = 0) for species n (1–60 species) in survey visit j (1–9 surveys) at transect i (1–53 transects) in year t (1–10 years). Observation, ynijt is assumed to be the result of imperfect detection of the true occurrence status, znit (1 or 0), and is thus modeled as a Bernoulli-distributed variable with a probability of pnijt ×znit, where pnijt is the probability of detection for a given survey along a transect:ynijt∼Bernoulli(znit∗pnijt)
+Presence-absence data can be highly sensitive to false negatives, so to explore the driving processes of change in CTIoccur, and to explore how habitat fragmentation mediated the main processes while accounting for the imperfect detection, we developed a spatially hierarchical dynamic multi-species occupancy model (MSOM) in a Bayesian framework based on the model by Royle and Kéry, 2007. We denote ynijt as the observation (detected = 1; undetected = 0) for species n (1–60 species) in survey visit j (1–9 surveys) at transect i (1–53 transects) in year t (1–10 years). Observation, ynijt is assumed to be the result of imperfect detection of the true occurrence status, znit (1 or 0), and is thus modeled as a Bernoulli-distributed variable with a probability of pnijt ×znit, where pnijt is the probability of detection for a given survey along a transect:
+
+$$
+y_{nijt}∼Bernoulli(z_{nit}∗p_{nijt})
+$$
 
 where znit is assumed to be of fixed presence/absence status for a given species across all j survey intervals within year t. However, given that individual birds move dynamically across territories within a year, during 9 surveys each year, we broadly interpret our estimates of ‘occupancy’ as ‘use’ (Si et al., 2018) to relax the closure assumption (MacKenzie et al., 2004).
 
-Each site has an initial value of occupancy (ψni1) which can be given a uniform prior distribution from 0 to 1, and occupancy (ψnit) in subsequent years (t>1) is determined based on whether sites become colonized or remain occupied through persistence MacKenzie et al., 2003:Znit∼Bernoulli(ψnit)ψnit=Zni,t−1(1−εni,t−1)+(1−Zni,t−1)γni,t−1fort>1
+Each site has an initial value of occupancy (ψni1) which can be given a uniform prior distribution from 0 to 1, and occupancy (ψnit) in subsequent years (t>1) is determined based on whether sites become colonized or remain occupied through persistence MacKenzie et al., 2003:
 
-where ψnit,εni,t−1,γni,t−1 are transect-level probabilities of occupancy, extinction, and colonization, respectively.
+$$
+Z_{nit}∼Bernoulli(ψ_{nit})
+$$
 
-We modeled the probability of detection, pnijt, as a function of the length of the transect, lengthi and the ordinal day of year, dayijt. Island identity was included as a random effect to account for the nonindependence of transects within the same islands.logit(pnijt)=p0n+p1nlengthi+p2ndayijt+islandREni
 
-To explore how colonization rate and extinction rate change across 10 years and how habitat fragmentation mediated these dynamics processes, we modeled site-level extinction and colonization (εni,t, γni,t) each as a logit-linear function of five covariates: year, island area, isolation, the interaction between year and area and between isolation and year. Year was added as a random slope, thus allowing the temporal trend in the colonization or extinction to vary with island area and isolation:logit(εni,t)=α0n+α1nareai+α2nisolationi+(α3n+REi)yeart+α4nareaiyeart+α5nisolationiyeart+islandREnilogit(γni,t)=β0n+β1nareai+β2nisolationi+(β3n+REi)yeart+β4nareaiyeart+β5nisolationiyeart+islandREni
+
+$$
+ψ_{nit}=Z_{ni,t−1}(1−\epsilon_{ni,t−1})+(1−Z_{ni,t−1})\gamma_{ni,t−1}fort>1
+$$
+
+where $ψ_{nit},\epsilon_{ni,t−1},\gamma_{ni,t−1}$ are transect-level probabilities of occupancy, extinction, and colonization, respectively.
+
+We modeled the probability of detection, pnijt, as a function of the length of the transect, lengthi and the ordinal day of year, dayijt. Island identity was included as a random effect to account for the nonindependence of transects within the same islands.
+
+$$
+logit(p_{nijt})=p0_{n}+p1_{n}length_{i}+p2_{n}day_{ijt}+island_{REni}
+$$
+
+To explore how colonization rate and extinction rate change across 10 years and how habitat fragmentation mediated these dynamics processes, we modeled site-level extinction and colonization (εni,t, γni,t) each as a logit-linear function of five covariates: year, island area, isolation, the interaction between year and area and between isolation and year. Year was added as a random slope, thus allowing the temporal trend in the colonization or extinction to vary with island area and isolation:
+
+$$
+logit(\epsilon_{ni,t})=\alpha0_{n}+\alpha1_{n}area_{i}+\alpha2_{n}isolation_{i}+(\alpha3_{n}+RE_{i})year_{t}+\alpha4_{n}area_{i}year_{t}+\alpha5_{n}isolation_{i}year_{t}+island_{REni}
+$$
+
+
+
+$$
+logit(\gamma_{ni,t})=\beta0_{n}+\beta1_{n}area_{i}+\beta2_{n}isolation_{i}+(\beta3_{n}+RE_{i})year_{t}+\beta4_{n}area_{i}year_{t}+\beta5_{n}isolation_{i}year_{t}+island_{REni}
+$$
 
 In all cases, continuous covariates were z-transformed (mean of 0 and a standard deviation of 1). There is no strong correlation between island area and isolation (Pearson correlation r=–0.214) so these effects can be considered independent. We fit the MSOM with JAGS (Plummer, 2003) using the package rjags (Plummer, 2023) in R v4.3.1 (R Development Core Team, 2023). We used vague priors (e.g., normal with μ=0, τ=0.01). We ran three chains for 60,000 iterations, discarded the first 40,000 as burn-in and thinned by 20, yielding a combined posterior sample of 3000. We extracted 600 iterations across three chains for Z to calculate CTIoccur. Convergence was checked visually with trace plots and confirmed with a Gelman–Rubin statistic <1.1 (Gelman and Rubin, 1992). Inference on parameters was made using 95% and 80% Bayesian credible intervals. We checked the posterior predictive ability of the model fit by calculating Bayesian p-values (p=0.488, indicating an unbiased estimation of our model; Gelman et al., 1996).
 
-## Statistical analysis
+### Statistical analysis
 
-## Thermophilization of bird communities
+#### Thermophilization of bird communities
 
 To test for occurrence-based thermophilization at the island level, Bayesian linear regression using R2jags (Su and Yajima, 2021) was used to derive a posterior estimate of the temporal trend in CTIoccur while propagating error in the estimation of CTIoccur. The continuous variable year (z-transformed) was incorporated as the only predictor. To account for the nonindependence of data within islands, we included island identity as a random intercept, thus allowing intercepts to vary across islands. We used vague priors (e.g., normal with μ=0, τ=0.001) for intercept and year effect. We ran three chains for 10,000 iterations, discarded the first 5000 as burn-in and thinned by 5, yielding a combined posterior sample of 3000. We used the function MCMCsummary to get posterior intervals of the intercept and year effect, which were then used for plotting.
 
@@ -146,12 +224,12 @@ To test for abundance-based thermophilization, linear mixed effect models (LMM) 
 
 We also tested whether the overall regional bird composition (i.e. gamma diversity) experienced thermophilization. Bayesian linear regression was used for modeling temporal trends in regional CTIoccur. For abundance, a generalized least square (GLS) model was used to test the relationship between CTIabun and continuous variable year while accounting for potential temporal autocorrelation. GLS was conducted using gls function in nlme R package (Pinheiro et al., 2023).
 
-## Mechanisms underlying CTI trends
+#### Mechanisms underlying CTI trends
 
 To explore the dynamics underlying trends in CTIoccur, specifically, whether thermophilization was accompanied by increasing occupancy of warm-adapted species and decreasing occupancy of cold-adapted species, we extracted 600 posterior samples of occupancy rate per species, and summarized ψnt by its mean and variation (logit-transformed to meet normality). We then modeled each species’ temporal trend in occupancy (ψnt) over time using Bayesian linear regression in R2jags (Su and Yajima, 2021) to account for propagated uncertainty in ψnt. Similarly, to decompose the CTIabun trend, we modeled each species’ temporal trend in maximum abundance using a generalized linear mixed effect model with Poisson error structure while accounting for potential overdispersion – via an observation-specific random effect (Harrison, 2014). Weighted linear regression models tested for a relationship between STI and occupancy trend and between STI and abundance trend. This analysis was conducted using function lmer in package lme4 (Bates et al., 2015). Temporal correlations between occupancy and colonization or extinction rates were measured with Pearson correlations, using colonization and extinction rates derived directly from the fitted MSOM.
 
 As a complementary analysis, we also investigated the trend in species richness or total abundance of the two thermal preference groups, separately. The total richness or abundance in each group was calculated on each transect and in each year. We then modeled temporal trends of natural logarithm-transformed richness or abundance using LMM with island identity as the random effect. Partial regression plots from LMM were produced using ggeffects R package (Lüdecke, 2018). For each model, we checked for normality of residuals and computed goodness-of-fit metrics (R2) including conditional and marginal R2 (Nakagawa and Schielzeth, 2013) using performance R package (Lüdecke et al., 2021). All continuous fixed effects in the models were standardized (mean = 0 and SD = 1) to ease computation and facilitate the interpretation and comparison of coefficients within and across models (Schielzeth, 2010).
 
-## The mediating effects of habitat fragmentation on colonization and extinction processes
+#### The mediating effects of habitat fragmentation on colonization and extinction processes
 
 An increasing colonization trend of warm-adapted species and increasing extinction trend of cold-adapted species are two main expected processes that cause thermophilization (Fourcade et al., 2021). To test our third prediction about the mediating effect of habitat fragmentation, we selected warm-adapted species that had an increasing trend in colonization rate (positive year effect in colonization rate) and cold-adapted species that had an increasing extinction rate (positive year effect in extinction rate). For each of these species, we extracted their posterior effect of year, area, isolation, and the interaction terms from previously fit models. The interaction terms reveal if habitat fragmentation positively or negatively affects either colonization or extinction processes.

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01gghaa40 Centre for Discovery Brain Sciences, Simons Initiative for the Developing Brain, Hugh Robson Building, University of Edinburgh Edinburgh United Kingdom
+1. Centre for Discovery Brain Sciences, Simons Initiative for the Developing Brain, Hugh Robson Building, University of Edinburgh Edinburgh United Kingdom ([ROR:01gghaa40](https://ror.org/01gghaa40))
 
 † Corresponding author
 
@@ -23,13 +23,37 @@ Experiments that have manipulated circuits containing grid cells support the ide
 
 These challenges are common to efforts to test hypothesised functional roles for neural codes using perturbation strategies. A complementary approach is to take advantage of variability in the expression of behaviours and candidate neural representations. Thus, hypothesised functions for neural codes can be corroborated by correlations with behavioural outcomes, while dissociations between representations and behaviour may rule out hypothesised roles for a given code. In the case of grid codes, the idea that they provide a general-purpose spatial code predicts that they are always available and are stably anchored to the external environment (Figure 1A). This notion is challenged by observations that in circular track environments, grid firing patterns are maintained but are no longer anchored to the environment (Jacob et al., 2019). In this case, the grid representations are informative about distance travelled but not about absolute position (Figure 1B). Spatial representations within populations of MEC neurons that include grid cells can also be unstable with the network spontaneously remapping between different representations of location (Low et al., 2021). Thus, it appears that grid representations are not necessarily stably anchored to the external world, but it is unclear whether this instability impacts performance of spatial tasks. Here, we asked whether similar instability of grid activity manifests in a goal-directed task, and if so whether it can dissociate proposed behavioural roles for grid firing patterns.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig1-v1.jpg)
+
+**Figure 1.:** (A–B) Predicted task-anchored (A) and task-independent (B) firing of grid cells in a 1D environment (right) given firing patterns of grid cells previously observed in square (A) and circular (B) 2D arenas (left). T1-T4 indicate consecutive trials in the 1D environment, AVG indicates expected average across many trials. (C) Neurons were recorded in an open arena and then in a location memory task. Trials were configured with a reward for stopping in a visually cued zone (beaconed), or a reward for stopping in the same zone but with the cue absent (non-beaconed), or without the visual cue or the reward (probe). Trial percentages indicate the proportion of trial types experienced in a single session; in any given session this proportion was fixed and trials were interleaved in a fixed repeating pattern (see Materials and methods). (D) In the task-anchored coding scheme, a grid cell fires with field spacing λ and resets its firing every trial by anchoring its fields to the same track location, with a realignment lag R observed in the spatial autocorrelogram. Fields locations remain constant on each trial and thus peaks in the periodogram occur at integer spatial frequencies relative to the track repetition (see Figure 1—figure supplement 3). (E) In a task-independent coding scheme, a grid cell fires with field spacing λ and continues to fire at regular intervals without anchoring to the track. Unless field spacing and the track length are integer divisible, the location of fields varies across trials, and thus the peak of the periodogram is not constrained to an integer spatial frequency (see Figure 1—figure supplement 3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A single cell’s spikes were binned in space (1 cm bin size), divided by the time spent in each bin then smoothed using a Gaussian kernel (SD = 2 cm). Least squares spectral analysis (LSSA) was computed on a signal equivalent to three track lengths using the Lomb-Scargle implementation in the Astropy Python module (Δx=distance elapsed in trials, Δy=firing rate)(Price-Whelan et al., 2022). The signal was advanced 10 cm and repeated for the whole session. All individual periodograms generated were then used to generate the average periodogram.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** To generate shuffled datasets a cell’s spikes were first binned in space (1 cm bin size), divided by the time spent in each bin then smoothed using a Gaussian kernel (SD = 4 cm). Firing fields were detected and the original field bins reallocated to random locations on a new unsmoothed rate map. Bins not attributed to a field were allocated to the remaining gaps in the new map. The unsmoothed shuffled rate map was then smoothed with a Gaussian kernel (SD = 2 cm). An average periodogram was calculated and peak power detected. This was repeated 1000 times. The false alarm threshold was set equal to the 99th percentile of the peak power of periodograms generated from the shuffled dataset.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Examples of least squares spectral analysis (LSSA) used to estimate the sinusoidal components that best describe the firing rate profile of a task-anchored grid code (upper) and a task-independent code (lower). In each plot the schematised firing fields (solid colours) are shown as a function of track position. Each row shows examples of different sinusoidal components (f=frequency, p=period) at different phases. LSSA minimises the chi-squared error by searching over all phases (three example phases are shown in red, green, and blue per row) and amplitudes (amplitude is ignored here for simplicity) for each spatial frequency. For task-anchored grid representations, the chi-squared error (min χ2) is minimal at positive-integer spatial frequencies that correspond to sinusoidal waves with periods that are integer divisible by the track length. For task-independent grid representations the chi-squared error is minimal at a spatial frequency that corresponds to the underlying periodic firing rate profile. The standard normalised periodogram is created by normalising the chi-squared errors of the periodic model around a non-varying reference model. The resulting power is a dimensionless quantity that lies within the range 0–1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Plots show simulations of track firing for (i) a task-anchored grid cell, (ii) a task-independent grid cell, (iii) a task-anchored grid cell with field jitter, (iv) a task-independent grid cell with field jitter, (v) a place cell, (vi) a ramp-like cell, (vii) a cell with randomly positioned fields, and (viii) a cell with Gaussian noise-like activity. Each group of panels shows firing rate heat map by trial (upper left) and corresponding average firing rate (lower left), rolling periodogram (upper centre) and corresponding average periodogram (lower centre), the true and predicted trial classification (upper right). The predicted trial classification is established using analyses described in Figure 1—figure supplements 1–3.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** 500 task-anchored grid cells and 500 task-independent grid cells with grid spacings uniformly distributed between 40 and 400 cm were simulated to identify the optimal threshold to classify based on spatial frequency. Simulations were repeated using different spike rate probabilities and different field jitters (defined by the standard deviation of the field locations from their preassigned locations). Roughly, Pmax(spike) values of 0.01, 0.1, and 1 covered average firing rates on the order of magnitudes of 10–1, 100, 101 Hz respectively whereas jitter SD values of 0, 10, 20, and 30 cm covered progressively greater deviations from perfect periodic firing. Classifications were made on each set of simulations in the same way as for analysis of experimental data (see Figure 1—figure supplements 1–4). Prediction accuracy (left) and bias (right) are shown as a function of the spatial frequency from the nearest positive-integer used as a threshold to distinguish task-anchored and task-independent modes. Chance level accuracy is denoted with a red dashed line.
+
 We address this question by investigating grid and non-grid firing during a task in which mice learn the location of a reward on a virtual track (Figure 1C, Tennant et al., 2022; Tennant et al., 2018). On cued trials, the mice received rewards for stopping within a ‘reward zone’ that was marked by a distinct visual cue. In contrast to cue-rich virtual environments often used to study grid cells (e.g. Campbell et al., 2018; Domnisoru et al., 2013), this is the only spatially localised cue available after initiation of a trial. Removal of this cue enables testing of whether the mice are able to use a path integration strategy, in which case they should continue to selectively stop in the reward zone, or a cue-based strategy in which case they should no longer stop selectively at the reward zone location (Figure 1C; see also Tennant et al., 2022; Tennant et al., 2018). We find that during the task, grid cells can either be anchored to the track reference frame (‘task-anchored’), or can maintain a periodic firing pattern independent of the track reference frame (‘task-independent’). Adoption of these anchoring modes varied both between and within recording sessions. On trials when the reward zone cue was visible, adoption of the task-anchored representation did not predict task performance. By contrast, when the reward zone cue was absent, task-anchored grid firing was associated with successful localisation of the reward zone. Thus, our results suggest that task-anchoring of the grid cell network selectively enhances performance of behaviours that require path integration.
 
 ## Results
 
 We recorded from neurons in the MEC of nine wild-type mice exploring an open arena and then performing a location memory task in a virtual linear track environment. By comparing the hexagonal symmetry of spatial autocorrelograms of neural activity in the open arena with corresponding shuffled data, we identified 103/1881 neurons as grid cells (11.4±17.4 grid cells/mouse, range 0.4–9.5%, Supplementary file 1) (see Materials and methods for classification procedures). These grid cells had field sizes of 7.5±3.3 cm and grid spacing of 72.5±13.7 cm and were found in dorsomedial parts of the MEC. Until indicated otherwise, we report analyses of neurons across all trials of the location memory task regardless of whether the reward zone is indicated by the cue or whether mice stop at the rewarded location.
 
-## Grid cells exhibit either task-anchored or task-independent firing
+### Grid cells exhibit either task-anchored or task-independent firing
 
 A priori, we envisaged two scenarios for activity of grid cells during the location memory task. Given well-established spatial firing of grid cells in open arenas, we might expect that grid cell activity is anchored to the task reference frame (Figure 1A and D). Alternatively, given distance encoding but location-independent firing of grid cells in circular tracks (Jacob et al., 2019), we might expect the activity of grid cells to be periodic but independent from the task reference frame (Figure 1B and E).
 
@@ -45,13 +69,59 @@ To validate the periodogram-based classification we calculated the mean firing o
 
 These data suggest that during the location memory task we consider here, grid firing can either be anchored to the track and therefore be directly informative about position relative to the task reference frame, or be independent of the track and therefore may only be directly informative about distance travelled within the behavioural reference frame. Anchoring is consistent with previous reports of grid cell activity on virtual and real-world linear tracks (Domnisoru et al., 2013), while task independence is consistent with encoding of distance but not position by grid cells in real-world circular tracks (Jacob et al., 2019).
 
-## Grid cells switch between task-anchored and task-independent firing
+### Grid cells switch between task-anchored and task-independent firing
 
 We next asked if the mode adopted by the grid cells at the level of a whole session, either task-anchored or task-independent, was stable across individual trials within the session (Figure 3A, left), or if cells could switch mode (Figure 3A, right). Visual inspection of firing rate heat maps indicated that for some grid cells their firing pattern was stable across most trials within a session (Figure 3B and C). However, for many grid cells there appeared to be clear changes in anchoring within a session (Figure 3D and E). These switches could not be explained by variation between trials in the availability of cues or rewards, as these were interleaved in blocks that repeated throughout a session (see Materials and methods), whereas periods in which grid cell activity was in a given mode extended across the repeating blocks (e.g. Figures 3D, E—5E, F).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-v1.jpg)
+
+**Figure 3.:** (A) In a ‘stable coding’ scenario grid cells remain either task-anchored or task-independent throughout the recording session (left), whereas with ‘unstable coding’ the grid activity switches between task-anchored and task-independent modes (right). (B–E) Example trial-by-trial firing rate heat maps (upper left), corresponding rolling periodogram heat maps (upper right), mean rate maps (lower left), and mean periodograms (lower right) for neurons exhibiting stable task-anchored coding (B), stable task-independent coding (C), and unstable coding in which representations switch between task-anchored and task-independent (D–E). (F) Distribution across all recorded grid cells of task-anchored trials (left), task-independent trials (centre), and aperiodic trials (right). Session-level task-anchored grid (TAG), task-independent grid (TIG), and aperiodic grid (AG) cell classifications are differently coloured. (G) Spatial information was higher for trials when grid cells were task-anchored compared to when they were task-independent (left) (ANOVA: p<1e-7, Χ2=30.98, DF=1), whereas the average firing rate was similar between task-anchored and task-independent trials (right) (ANOVA: p=0.88, Χ2=0.022, DF=1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Periodograms were generated as in Figure 1—figure supplement 1. Sliding windows containing 200 consecutive periodograms were then extracted and averaged. A classification was made on the averaged periodogram using the peak power, spatial frequency, and an adjusted false alarm threshold (see Materials and methods). The classification and midpoint location of the window were stored and the procedure repeated for the full session. Windows were assigned to trials based on the location of their middle points and then the classification occurring most often was assigned to that trial.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Examples of the activity of simulated grid cells that switch between task-anchored and task-independent encoding modes of operation, either infrequently (i, iii) or relatively frequently (ii, iv), and with (iii, iv) and without (i, ii) jitter. Each example shows the firing rate heat map by trials (upper left), the average firing rate map (lower left), the rolling periodogram (upper right), the average periodogram (lower right), and the classification labels (true and predicted; far right). (B) To assess classification accuracy under different rolling windows, we calculated the prediction accuracy and bias (see Materials and methods). Chance level is denoted with a red dashed line. Plots on the left show the prediction accuracy (top) and the prediction bias (bottom) when grid cells alternate between task-anchored and task-independent firing fields in blocks of trials (as in i, iii above), whereas the right plots show the same information for a higher switching frequency (as in ii, iv above).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The false alarm threshold was defined by the 99th percentile of the distribution of the peak power of the average periodogram for 1000 shuffled instances of a cell’s firing rate profile across the full experimental session. The false alarm threshold decreases asymptotically as the number of periodograms used for the rolling window classification is increased. Each red line represents a single cell within a representative session. The blue line represents the maximum number of periodograms in this session.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** This is a repeat of the analysis shown in Figure 2F, but categorising cells according to the proportion of trials on which their firing is a given mode. Thus, whereas in Figure 2 task-anchored, task-independent, and periodic firing classifications are assigned on the basis of average periodograms across the behavioural session, here we group cells according to whether they show stable (>85% of trials) task-anchored, task-independent, or periodic firing. Conclusions from this analysis are similar to those of Figure 2F. (A) Comparison of mean firing rate (ANOVA: p=0.49, Χ2=1.42, DF=2; pairwise comparisons: TA vs TI, p=0.86, T=–0.532, DF=21.4; TA vs A, p=0.95, T=–0.292, DF=96.7; TI vs A, p=0.62, T=–0.937, DF=23.1). (B) Comparison of spatial information scores (ANOVA: p<1e-4, Χ2=21.47, DF=2; pairwise comparisons: TA vs TI, p=0.0002, T=4.229, DF=89.9; TA vs A, p=0.0001, T=–4.412, DF=94.2; TI vs A, p=0.21, T=1.703, DF=85.2). (C) Comparison of peak power (ANOVA: p=0.0007, Χ2=14.42, DF=2; pairwise comparisons: TA vs TI, p=0.05, T=2.383, DF=88.4; TA vs A, p=0.0008, T=–3.781, DF=98.9; TI vs A, p=0.996, T=–0.080, DF=86.5). (D) Comparison of peak width (ANOVA: p=0.002, Χ2=12.78, DF=2; pairwise comparisons: TA vs TI, p=0.03, T=–2.840, DF=16.2; TA vs A, p=0.13, T=1.949, DF=95.3; TI vs A, p=0.11, T=–2.162, DF=16.0).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Extension of Figure 3F. (A) Distribution of all recorded grid cells (top) and non-grid cells (bottom) encoding task-anchored (left), task-independent (centre), and aperiodic (right) epochs within a session. Session-level cell classifications are represented by the colour of the corresponding coding group. (B) Cumulative density for grid and non-grid cells encoding task-anchored, task-independent, and aperiodic epochs within a recording session (task-anchored: p=0.035, KS=0.14; task-independent: p<1e-15, KS=0.42; aperiodic: p<1e-12, KS=0.38, Ngrid cells = 103, Nnon-grid cells = 1778, Kolmogorov-Smirnov test).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) We compared the length of coding blocks - sequences of trials in which grid cells operate in the same mode - in the observed data with the length in datasets shuffled at the level of trials. To generate shuffled data spike locations were reallocated to a new position in the firing profile by randomly shuffling the trials (see Materials and methods). The rolling classification was then recomputed and length of coding blocks measured. (B) Cumulative histogram of block lengths for the observed grid cell population (red) and the same grid cell population with the trial order shuffled and blocks recalculated (grey) (p=0.0003; KS=0.066; Nblocks(data)=1765 Nblocks(shuffled)=2359; Kolmogorov-Smirnov test).
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (A) Example trial structure with repeating beaconed and non-beaconed trials in a ratio of two beaconed trials to one non-beaconed trial. The rolling window over which the rolling classification of periodicity is calculated is larger than the repeating trial block. Therefore, attribution of a periodic classification to a single trial cannot be explained by the trial type or order. (B) The percentage of trials in which each grid cell showed task-anchored coding as a function of the percentage of beaconed trials experienced during the session. The percentage of beaconed trials did not have a significant effect on the occurrence of task-anchored coding (p=0.95, Χ2=0.032, DF=1, ANOVA comparison of binomial family GLMMs with and without % beaconed trials as a fixed effect, with mouse ID, session ID, and neuronal ID as random effects and a logit linker function).
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig4-v1.jpg)
 
-**Figure 4.:** (A) Joint activity of 6 simultaneously recorded grid cells (orange frames) and 18 non-grid cells (blue frames) from a single session. For each cell, the firing rate map across trials (left) is shown next to the trial classification (right). (B) Classifications for all grid cells (GC) and non-grid cells (NG) as shown in (A), ordered by their agreement to the most common classification within the recorded network at any particular trial. The common classification for recorded grid cells is shown as  . (G¯C) Mean firing rate as a function of position for exemplar units from (A) when  was task-anchored (left) and task-independent (right). (G¯D) Strategy for assessing agreement between cells in their firing mode (i) and for generating shuffled datasets (ii). (E) Agreement in the firing mode between each combination of grid (G) and non-grid (NG) cells and corresponding scores for the shuffled data (lower), and the difference between the shuffled and actual scores (upper). Agreement was greater between grid cell pairs than between pairs involving non-grid cells (ANOVA: G-G, p<1e-13, Χ2=58.89, DF =1, NG-NG, p<1e-5, Χ2=20.42, DF =1, G-NG, p<1e-7, Χ2=30.37, DF =1; pairwise comparisons: G-G vs NG-NG, p<1e-4, T=–10.455, DF =10,720, G-G vs G-NG, p<1e-4, T=–8.415, DF =10,710, NG-NG vs G-NG, p<1e-4, T=–6.853, DF =10,352). (F) Spatial information of individual cells during trials in which  is task-independent as a function of spatial information during trials in which G¯ is task-anchored (left). The difference in spatial information between sessions classed as task-anchored or task-independent on the basis of grid cell activity was greater for grid than non-grid cells (right, ANOVA: p<1e-5, ΧG¯2=21.1, DF =1; G vs zero, p=0.018, T=2.723, DF =11.87; NG vs zero, p=0.3, T=–1.278, DF =2.58). The percentage change in spatial information was calculated as  .100⋅(SIG¯=TA−SIG¯=TI)/SIG¯=TA
+**Figure 4.:** (A) Joint activity of 6 simultaneously recorded grid cells (orange frames) and 18 non-grid cells (blue frames) from a single session. For each cell, the firing rate map across trials (left) is shown next to the trial classification (right). (B) Classifications for all grid cells (GC) and non-grid cells (NG) as shown in (A), ordered by their agreement to the most common classification within the recorded network at any particular trial. The common classification for recorded grid cells is shown as $G¯$ . (C) Mean firing rate as a function of position for exemplar units from (A) when $G¯$ was task-anchored (left) and task-independent (right). (D) Strategy for assessing agreement between cells in their firing mode (i) and for generating shuffled datasets (ii). (E) Agreement in the firing mode between each combination of grid (G) and non-grid (NG) cells and corresponding scores for the shuffled data (lower), and the difference between the shuffled and actual scores (upper). Agreement was greater between grid cell pairs than between pairs involving non-grid cells (ANOVA: G-G, p<1e-13, Χ2=58.89, DF =1, NG-NG, p<1e-5, Χ2=20.42, DF =1, G-NG, p<1e-7, Χ2=30.37, DF =1; pairwise comparisons: G-G vs NG-NG, p<1e-4, T=–10.455, DF =10,720, G-G vs G-NG, p<1e-4, T=–8.415, DF =10,710, NG-NG vs G-NG, p<1e-4, T=–6.853, DF =10,352). (F) Spatial information of individual cells during trials in which $G¯$ is task-independent as a function of spatial information during trials in which $G¯$ is task-anchored (left). The difference in spatial information between sessions classed as task-anchored or task-independent on the basis of grid cell activity was greater for grid than non-grid cells (right, ANOVA: p<1e-5, Χ2=21.1, DF =1; G vs zero, p=0.018, T=2.723, DF =11.87; NG vs zero, p=0.3, T=–1.278, DF =2.58). The percentage change in spatial information was calculated as $100⋅(SI_{G¯=TA}−SI_{G¯=TI})/SI_{G¯=TA}$ .
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig5-v1.jpg)
+
+**Figure 5.:** (A) Averages across each behavioural session of running speeds as a function of track position for all sessions. (B) Running speed as a function of track position for trial outcomes classified as hit, try, or run for an example session. (C–F) Examples of variation in the behaviour-related activity of grid and non-grid cells recorded on the location memory task, illustrating firing patterns that are stable and task-anchored (C) or task-independent (D) firing, and unstable firing where cells switch between task-anchored and task-independent modes (E–F). Plots show all simultaneously recorded cells’ firing rate maps in each session (left), stop rasters (lower centre), stop density on beaconed (B) and non-beaconed (NB) trials coloured according to whether grid cells were task-anchored or task-independent (upper centre) and a summary of raster of behaviour and cell classifications (right). Shaded regions in stop density plots represent standard error of the mean measured across epochs. The number of trials classified in a particular coding scheme is also provided with the stop density plot. Grid cells and non-grid cells are colour-coded by bounding boxes around the firing rate map.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Trials were classified into hits, tries, and runs, based on stopping locations and the speed profile on a given trial. First, trials were classified into hits and misses based on whether a stop was registered in the reward zone or not. Next, a distribution of the average speeds in the reward zone is drawn for hit and miss trials, the 95th percentile of the hit average speeds in the reward zone was used to split the miss trials into near hits (tries) and run-throughs (runs). Finally, trials in which the mouse’s average speed outside of the reward zone was <10 cm/s were removed to better discriminate trial outcomes based on the mouse’s engagement.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig5-figsupp2-v1.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A–F) Examples of variation in the behaviour-related activity of grid and non-grid cells recorded on the location memory task. Plots show all simultaneously recorded cells’ firing rate maps in each session (left), stop rasters (lower centre), stop density on beaconed (B) and non-beaconed (NB) trials coloured according to whether grid cells were task-anchored or task-independent (upper centre) and a summary of raster of behaviour and cell classifications (right). Shaded regions in stop density plots represent standard error of the mean measured across epochs. The number of trials classified in a particular coding scheme is also provided with the stop density plot. Grid cells and non-grid cells are colour-coded by bounding boxes around the firing rate map.
 
 To quantify switching between firing modes we evaluated rolling periodograms across each session. We classified each periodogram window as task-anchored, if the periodogram peaks occurred at integer multiples of the spatial frequency at which the track repeats, as task-independent if there were periodogram peaks at other spatial frequencies, or as aperiodic if there were no peaks above the false alarm threshold (see Materials and methods and Figure 3—figure supplements 1–3). For 26.2% of grid cells (27/103) the classification was consistently (>85% of trials) task-anchored or task-independent (Figure 3F), whereas for 73.8% of grid cells (76/103) no single coding scheme accounted for more than 85% of trials (Figure 3F). Grid cells identified as having task-anchored firing in our initial session-level analysis (Figure 2) were biassed towards high proportions of task-anchored trials (Figure 3B and F), whereas grid cells identified as task-independent at the session-level showed a bias towards high proportions of task-independent trials (Figure 3C and F), although in both groups many neurons showed variation between trials indicating that session-level analyses may obscure dynamic changes in task-anchoring. Differences in spatial information and periodogram properties between grid cells classified as task-anchored or task-independent based on their session-level firing patterns (Figure 2F) were nevertheless maintained when we instead compared neurons with firing mode that was consistent across trials within a session (Figure 3—figure supplement 4). For non-grid cells, consistent with session-level analyses, we again found that a sub-population showed task-anchored firing at a trial level, while task-independent periodic firing was substantially less common than in the grid cell population (Figure 3—figure supplement 5).
 
@@ -61,13 +131,25 @@ Given that populations of grid cells show coordinated dynamics that are consiste
 
 Together, these data indicate that grid cells can switch between task-anchored and task-independent firing modes within a behavioural session. This switching happens coherently across grid cell populations, which is consistent with grid cells forming networks with continuous attractor dynamics (Barry et al., 2007; Gardner et al., 2022; Waaga et al., 2021; Yoon et al., 2013). Our data also suggest that non-grid cells within the MEC form multiple populations, with some having activity that is coherent with the grid cell network, whereas others do not show task-independent periodic firing but instead maintain stable spatial representations independently from grid cells.
 
-## Task-anchored coding by grid cells is selectively associated with successful path integration-dependent reward localisation
+### Task-anchored coding by grid cells is selectively associated with successful path integration-dependent reward localisation
 
 Our analyses indicate that grid cells exhibit either task-anchored or task-independent firing, and that their activity can switch between these modes within a recording session. Since task-anchored firing fields could be read out directly to estimate track location, but location may only be inferred indirectly from task-independent activity, we reasoned that the presence or absence of task-anchoring could be used to assess whether grid firing contributes to the ongoing behaviour. Because in grid networks the activity of an individual neuron is informative about the network state as a whole (Fiete et al., 2008; Gardner et al., 2022; Waaga et al., 2021), then in principle activity of any grid cell is indicative of whether the grid network as a whole is in a task-anchored or task-independent mode (see also Figure 4). Thus, if anchoring of grid representations to the task environment is critical for localisation of the reward, then task-anchored coding of individual neurons should predict successful trials. On the other hand, if behavioural performance is maintained when the grid representation is task-independent, then it is unlikely that anchored grid representations are necessary for reward localisation.
 
 To distinguish these possibilities we took advantage of variation in behavioural outcomes, which were such that mice either stopped correctly in the reward zone (‘hit’ trials), slowed down on approach to the reward zone but did not stop (‘try’ trials), or maintained a high running speed across the reward zone (‘run’ trials)(Figure 5A and B and Figure 5—figure supplements 1 and 2). We separately evaluated outcomes from trials in which the reward zone cue was visible and a reward available (‘beaconed trials’), trials in which the reward zone cue was omitted and a reward was available (‘non-beaconed trials’), and trials in which the cue and the reward were both omitted (‘probe trials’). Because trials of each type were interleaved into blocks that were repeated across a session (see Materials and methods), while periods of task-anchored and task-independent activity were typically maintained for blocks of many trials, differences in behavioural outcomes could not be explained by association of the grid-anchoring mode with particular trials types.
 
 We first compared stopping behaviour when grid cells showed task-anchored firing that was stable within a session to when they showed task-independent firing that was stable within a session. On cued trials the spatial organisation of stopping behaviour (Figures 5C vs D and 6A) and the proportion of hit trials (Figure 6B) was similar for both groups. By contrast, on non-beaconed and probe trials stopping behaviour was clearly spatial when grid activity was task-anchored, but spatial organisation was largely absent when grid activity was task-independent (Figures 5C vs D and 6A), while the proportion of hit trials was substantially reduced (Figure 6B). These observations are consistent with grid representations being required for path integration-dependent but not cued localisation of the reward zone. This session-level analysis has the advantage that it focuses on large blocks of time (sessions) during which the mode of grid firing was stable, but the disadvantage that it excludes many sessions in which the mode of grid firing switches between task-anchored and task-independent.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig6-v1.jpg)
+
+**Figure 6.:** (A, C) Stopping probability relative to baseline as a function of position for sessions with stable grid codes (A) and for epochs within sessions containing both stable and unstable codes (C). Shaded regions in A and C represent standard error of the mean measured across sessions and epochs respectively. N represents the number of sessions with stable codes (A) and the number of grid cells with coding epochs (C). Stable sessions were defined as a session with at least one grid cell for which >85% of trials were in a single coding mode. (B, D) Percentage of hits on beaconed, non-beaconed, and probe trials when the code is task-anchored or task-independent for (B) sessions with stable codes (ANOVA: beaconed, p=0.1, Χ2=2.70, DF=1; non-beaconed, p=0.022, Χ2=5.24, DF=1; probe, p=0.033, Χ2=4.55, DF=1) and when epochs within sessions are task-anchored or task-independent (D) (ANOVA: beaconed, p=0.09, Χ2=2.84, DF=1; non-beaconed, p=0.001, Χ2=10.14, DF=1; probe, p=0.19, Χ2=1.70, DF=1, see Materials and methods). (E) Percentage of trials with hit, try, and run outcomes in which grid cell firing is task-anchored (TA) or task-independent (TI) (ANOVA: beaconed, p=0.11, Χ2=4.49, DF=2; non-beaconed, p=0.02, Χ2=7.75, DF=2; probe, p=0.07, Χ2=5.40, DF=2). Error bars denote standard error of the mean measured across the mean values for each animal. Faded lines show percentage values for individual mice that contained hit, try, and run trials for a given trial type. (F) Odds ratio between receipt of reward for trials on which epochs contain task-anchored firing relative to trials on which epochs contain task-independent firing (beaconed-G, p=0.23; non-beaconed-G, p=0.001; probe-G, p=0.27).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Running speed as a function of track location for all combinations of trial types and trial outcomes. Shaded regions represent standard deviations measured across trials. (B) Same as in A, however trials were subdivided further based on the coding scheme of grid cells. In cases where multiple grid cells were recorded simultaneously, the same trial was used multiple times to calculate the average speed profile.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/89356/elife-89356-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Procedure for classifying trials using an ensemble method (Lomb-Scargle+template correlation). (B) Trial density of all trial template correlations for trials classified as task-anchored (upper) or task-independent (bottom) using the Lomb-Scargle method. The same trial may be represented multiple times based on the number of simultaneously recorded cells. (C) To assess classification accuracy using the ensemble method, we calculated the prediction accuracy and bias of simulated grid cells (see Materials and methods). Chance level is denoted with a red dashed line. Plots on the left show the prediction accuracy (top) and the prediction bias (bottom) when grid cells alternate between task-anchored and task-independent firing fields in blocks of trials (as in i, iii above), whereas the right plots show the same information for a higher switching frequency (as in ii, iv above). (D) Summary table detailing the pros and cons of each method. (E) Stopping probability relative to baseline as a function of position for epochs within sessions containing both stable and unstable codes. Shaded regions represent standard error of the mean measured across epochs. N represents the number of grid cells with coding epochs. (F) Percentage of hits on beaconed, non-beaconed, and probe trials when the code is task-anchored or task-independent for epochs within sessions are task-anchored or task-independent (ANOVA: beaconed, p=0.43, Χ2=0.62, DF=1; non-beaconed, p=0.01, Χ2=6.43, DF=1; probe, p=0.06, Χ2=3.52, DF=1). (G) Percentage of trials with hit, try, and run outcomes in which grid cell firing is highly correlated with task-anchored firing (ANOVA: beaconed, p=0.51, Χ2=1.35, DF=2; non-beaconed, p=0.08, Χ2=5.14, DF=2; probe, p=0.04, Χ2=6.67, DF=2). Error bars denote standard error of the mean measured across the mean values for each animal. Faded lines show percentage values for individual mice that contained hit, try, and run trials for a given trial type. (H) Odds ratio between receipt of reward for trials on which epochs contain task-anchored firing relative to trials on which epochs contain task-independent firing (beaconed, p=0.4; non-beaconed, p=0.002; probe, p=0.04).
 
 We addressed this by using additional trial-level comparisons to evaluate all behavioural sessions, including those when the grid mode was unstable. On cued trials the spatial organisation of stopping behaviour (Figures 5E–F–6C), and the proportion of hit trials (Figure 6D), was similar irrespective of whether grid cell fields were task-anchored or task-independent. On trials in which the reward zone cue was hidden, the relationship between firing and behavioural outcome was more complex. In many sessions, localisation of the reward occurred almost exclusively when cell firing was task-anchored and not when it was task-independent (Figure 5E and F). In a few sessions, we observed spatial stopping behaviour comparable to cued trials, even when grid firing was predominantly task-independent (Figure 5—figure supplement 3). In one session, we also observed grid cells shifting phase between task-anchored epochs (Figure 5E) similar to findings in Low et al., 2021, although this did not appear to alter task performance. On average, spatial stopping behaviour was reduced on non-beaconed and probe trials during which grid firing was task-independent (Figure 6C), and the proportion of successful trials was reduced compared with when grid firing was task-anchored (Figure 6D). The differences in outcomes between task-anchored versus task-independent trials were not associated with differences in running speed profiles (Figure 6—figure supplement 1) indicating they were not a consequence of a difference in motor behaviour.
 
@@ -79,7 +161,7 @@ Together, these analyses demonstrate that anchoring of grid codes to track posit
 
 Our results support specific roles for task-anchored grid representations in path integration-dependent behaviours while arguing against the idea that grid codes provide a representation of location that is used more generally. Thus, we find that grid representations can either be anchored to position in a task environment, or can provide an environment-independent distance metric (Figure 2), that grid cells can switch between these operating modes within a behavioural session (Figures 3–4), and that anchoring of grid firing fields to location is not required for cued reward localisation, but appears to promote path integration-dependent reward localisation (Figures 5–6). By contrast, while some non-grid cells had activity that switched modes coherently with grid cells, many non-grid cells did not show task-independent periodic activity (Figure 3—figure supplement 5, Figures 4–5, Figure 5—figure supplement 2), suggesting that the MEC may implement multiple, parallel spatial computations.
 
-## Task-anchoring of grid cells varies within and between behavioural sessions
+### Task-anchoring of grid cells varies within and between behavioural sessions
 
 A standard view of grid firing is that it provides an ‘always on’ high capacity representation of current location. In contrast, our results demonstrate that grid representations are not necessarily anchored to the behaviourally relevant environmental reference frame. This extends previous observations that on circular tracks grid cells read out path integrated distance rather than absolute position (Jacob et al., 2019). Our results show that both modes of grid representation can be observed during the same behavioural task, and that the grid network can switch between these operating modes within a session. Consistent with the reported continuous attractor dynamics of grid networks, we find that simultaneously recorded grid cells switch modes coherently (Figures 4 and 5), although without recording from all grid cells simultaneously we cannot rule out the possibility that switching reflects a subset of grid cells that become disconnected from the wider network. The mode switching we observe here appears to differ from previously reported spontaneous remapping of MEC network states (Low et al., 2021) as the previously reported phenomenon was independent of any task contingencies and involved remapping between different task-anchored representations. By contrast, we show here switching between task-anchored representations that may be directly useful for solving the task at hand, and task-independent representations that appear unlikely to contribute to solving the task.
 
@@ -87,27 +169,163 @@ Grid cells are a relatively small proportion of the neurons in the MEC and an im
 
 The causes of switching between task-anchored and task-independent representations may be an important focus for future investigation. It appears unlikely that task-independent coding by grid cells result from failure of upstream circuits to generate appropriate visual representations, e.g. through a shift in visual attention, as mice performed well on the visually cued version of the location memory task when grid cells were task-independent. A perhaps more promising hypothesis for future investigation is that switching reflects modulatory pathways reducing the impact of visual inputs to the grid system, possibly reflecting top-down control mechanisms, shifts in brain state, or uncertainty about whether visual or motor signals indicate the correct environment.
 
-## Spatial roles of grid cells may be specific to path integration-dependent behaviours
+### Spatial roles of grid cells may be specific to path integration-dependent behaviours
 
 Our finding that cued identification of a reward location is similar when grid cells are task-anchored or task-independent suggests that grid representations are not required for cued recall of locations. Thus, when both visual and grid inputs are available to downstream decision-making circuits, the grid input appears not to be used. If it was, then the inconsistent positional signals from the task-independent grid codes would impair performance. An implication of this result is that cue-rich tracks often used to investigate grid activity patterns may not engage behaviours that require anchored grid firing. Several observations suggest that the MEC could nevertheless be required for recall of cued locations. First, inactivation of stellate cells in layer 2 of the MEC causes deficits in the task we use here and in other visually cued tasks (Qin et al., 2018; Tennant et al., 2018). Second, other spatial tasks that involve selections between cued locations appear to require the MEC (e.g. Gaskin and White, 2013; Gaskin and White, 2010). In this case, spatial representations used for the task could be encoded by other functional cell types, e.g. neurons that encode location through border (Solstad et al., 2008) or ramping firing fields (Tennant et al., 2022), or through cue-responsive cells (Casali et al., 2018; Keene et al., 2016; Kinkhabwala et al., 2020).
 
 On trials in which the reward zone cue is absent, efficient reward localisation relies on path integration from the start of the track (Tennant et al., 2018). We found that on these trials, task-anchored grid firing was associated with a spatially localised stopping strategy and a higher proportion of successful trials compared with when grid firing was task-independent. This corroborates key predictions of hypothesised roles for grid cells in path integration (McNaughton et al., 2006). It is conceivable that behaviourally relevant computations are implemented elsewhere in the brain with grid anchoring to the track an indirect consequence, but explanations of this kind are hard to reconcile with evidence that stellate cells in the MEC are required for the task we used here (Tennant et al., 2018), or with evidence for specific roles of grid firing in path integration based on genetic manipulations that abolish grid firing without affecting other functional cell types (Gil et al., 2018). Nevertheless, our finding of residual localisation performance on task-independent trials suggests that additional neural mechanisms may also support path integration-dependent behaviour. This could reflect additional mechanisms for the implementation of path integration, e.g. through ramping activity (cf. Tennant et al., 2022). Alternatively, mice could in principle estimate track location with a system that utilises information about distance travelled obtained from task-independent grid representations. If multiple mechanisms support path integration then it will be important to establish when each contributes. For example, because grid representations are available on the first entry to an environment they may be important for behaviour in newly experienced locations, whereas for familiar locations complementary representational strategies that emerge with learning may be sufficient.
 
-## Ideas and speculation
+### Ideas and speculation
 
 Our results point to a specific role for grid firing in path integration-dependent behaviour, and demonstrate the importance of anchoring of grid representations to task environments. One implication of our results is that rather than being an ‘always on’ tracking system, grid cell networks vary in their engagement with the environment. This may reflect control of the grid network by attentional or other top-down mechanisms. Alternatively, as the CA1 region of the hippocampus provides a major input to the MEC, instability of grid anchoring could be an indirect consequence of mechanisms that control the structure and stability of place cell maps (Krishnan et al., 2022; Pettit et al., 2022). In either case, our results motivate a focus on grid cell activity in tasks that require path integration, while an implication of our finding for investigations of grid cell activity using cue-rich environments is that in these experimental settings grid cells may not be influencing behavioural outcomes. Our results also offer a new perspective on interindividual differences in path integration by humans (e.g. Chrastil et al., 2017; Lakshminarasimhan et al., 2018; Petzschner and Glasauer, 2011). Thus, rather than resulting from variation in path integration per se, differences between individuals could instead result from variation in the anchoring of grid representations underlying path integration. This could be important as a potential mechanism for deficits in spatial localisation associated with neurological and neurodevelopmental disorders (Kunz et al., 2015; Newton et al., 2023; Noel et al., 2020).
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>C57BL/6</td>
+      <td>In-house breeding</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>NA</td>
+      <td>4.2.3</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>NA</td>
+      <td>3.8.1</td>
+      <td>https://www.python.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Fiji</td>
+      <td>NA</td>
+      <td>https://fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Blender</td>
+      <td>NA</td>
+      <td>2.7</td>
+      <td>https://www.blender.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Open Ephys</td>
+      <td>NA</td>
+      <td>0.4.4</td>
+      <td>https://open-ephys.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTAn</td>
+      <td>NA</td>
+      <td>1.13.5.1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EIB-16</td>
+      <td>NeuralLynx</td>
+      <td>Cat# 31-0603-0106</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Platinum/Iridium wire</td>
+      <td>NeuralLynx</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gold Plating Solution</td>
+      <td></td>
+      <td>20 ml Gold Plating Solution</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Headpost</td>
+      <td>RIVETS</td>
+      <td>NA</td>
+      <td>https://dudmanlab.org/html/rivets.html</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UV curing dental cement</td>
+      <td>RelyX</td>
+      <td>Cat# 56874</td>
+      <td>https://www.3m.co.uk/3M/en_GB/p/d/b00007450/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Simplex Rapid</td>
+      <td>Kemdent</td>
+      <td>Cat# ACR803</td>
+      <td>https://www.kemdent.co.uk/simplex-rapid-powder-clear-225g?osCsid=j0b5160aallnl2kcdtjpas4oj1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Omnetics to Mill-Max adaptor</td>
+      <td>Axona</td>
+      <td>HSADPT-NN1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RHD 6 ft ultrathin SPI cable</td>
+      <td>Intan</td>
+      <td>Cat# C3206</td>
+      <td>https://open-ephys.org/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RHD 6 ft standard SPI cable</td>
+      <td>Intan</td>
+      <td>Cat# C3218</td>
+      <td>https://intantech.com/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acquisition board</td>
+      <td>Open Ephys</td>
+      <td>NA</td>
+      <td>https://open-ephys.org/</td>
+    </tr>
+  </tbody>
+</table>
+
 ­All experiments were carried out under a UK Home Office project licence, were approved by the Animal Welfare and Ethical Review Board of the University of Edinburgh College of Medicine and Veterinary Medicine, and conformed with the UK Animals (Scientific Procedures) Act 1986 and the European Directive 86/609/EEC. Nine male C57BL/6J mice were used in this study. Three of the nine mice used here were also part of a previous study (Tennant et al., 2022).
 
-## Microdrive fabrication and surgical procedures
+### Microdrive fabrication and surgical procedures
 
 Microdrive fabrication and surgical procedures were similar to our previous work (Gerlei et al., 2020; Tennant et al., 2022). Microdrives containing four tetrodes were built by threading 90% platinum, 10% iridium tetrode wires (18 µm HML-coated, Neuralynx) to an EIB-16 board (Neuralynx) via an inner cannula (21 gauge 9 mm long). The board was covered in epoxy and a poor lady frame (Axona) cemented to the side. An outer cannula (17 gauge 7 mm), placed around the inner cannula, was secured temporarily using vaseline, allowing it to be lowered during the surgery. Tetrodes were trimmed to ~3 mm using ceramic scissors (Science Tools, Germany) and gold-plated (Non-cyanide Gold Plating Solution, Neuralynx) to give an impedance between 150 and 200 kΩ at 1 kHz.
 
 Before surgery, tips of the tetrodes were washed with ethanol and then sterile saline. Anaesthesia was induced using 5% isoflurane/95% oxygen, and sustained at 1–2% isoflurane/98–99% oxygen. After exposing the surface of the skull a RIVETS headpost (Osborne and Dudman, 2014) was attached to the skull with UV curing resin cement (RelyX Unicem, 3M). For electrical grounding, two M1 ×4 mm screws (AccuGroup SFE-M1-4-A2) were implanted through small craniotomies drilled on the left hemisphere ~3.4 mm lateral, and ~1 mm rostral relative to Bregma and the centre of the intraparietal plate, respectively. The microdrive was attached to a stereotaxic frame via an Omnetics to Mill-Max adaptor (Axona, HSADPT-NN1) and the tetrodes lowered 1.2–1.4 mm into the right hemisphere of the brain, beginning at 3.4 mm lateral from Bregma and along the lambdoid suture, and at an angle of –15 degrees in the posterior direction. The outer cannula was lowered and sealed with sterile vaseline, and the implant fixed to the skull with UV curing resin. After the resin hardened, the grounding wires were wrapped around the grounding screws and fixed with silver paint (RS components 101-5621). The grounding screws were covered with resin and any holes filled with dental cement (Simplex Rapid). After the surgery, mice recovered for ~20 min on a heat mat, had unlimited access to Vetergesic jelly (0.5 mg/kg of body weight buprenorphine in raspberry jelly) for 12 hr, and before proceeding were given a minimum of 2 days postoperative recovery.
 
-## Behavioural and electrophysiological recording
+### Behavioural and electrophysiological recording
 
 The behavioural setup, training procedures, and recording approaches were similar to those described previously (Tennant et al., 2022; Tennant et al., 2018). Mice were handled twice a day for 7 days following surgery. They were then habituated to the virtual reality setup for 10–20 min per day over 2 consecutive days. After each habituation session the mice were given access to soy milk to familiarise them with the reward and were given access to an open arena for 5–10 min of free exploration. From 4 to 5 days before starting training their access to food was restricted so that their body weight was ~85% of its baseline value, calculated from its weight prior to restriction and normalised to the expected daily growth for the animal’s age.
 
@@ -119,15 +337,15 @@ Electrophysiological signals were acquired using an Intan headstage connected vi
 
 Following experiments, tetrodes were localised using a microCT scanner (Source data 1 and 2). Mice were anaesthetised with isoflurane and then a lethal dose of sodium pentobarbital (Euthatal, Meridal Animal Health, UK) were perfused with a mixture of PFA and glutaraldehyde, and the head with the microdrive still intact on the skull left in the same solution for two nights. All tissue and bone except that attached to the microdrive was removed before washing the brains in ddH2O and incubating at 4°C for 2 weeks in 2% osmium tetroxide (2% OsO4). Brains were then washed in ddH2O, dehydrated in ethanol and then embedded in resin. After the resin had cured the brains were imaged in a microCT scanner (Skyscan 1172, Bruker, Kontich, Belgium). Scanning parameters were: source voltage 54 kV, current 185 μA, exposure 885 ms with a 0.5 mm aluminium filter between the X-ray source and the sample. The scan dataset was reconstructed (CTAn software, v1.13.5.1) and viewed with DataViewer (Bruker). Tetrodes were localised relative to landmarks in version 2 of the Allen Reference Atlas for the mouse brain (https://mouse.brain-map.org/static/atlas) (see Source data 1 and 2).
 
-## Spike sorting
+### Spike sorting
 
 Spikes were isolated from electrophysiological data using an automated pipeline based on MountainSort (v0.11.5 and dependencies) (Chung et al., 2017; Gerlei et al., 2020). Recordings from the open-field and virtual reality tasks were concatenated for spike sorting. Pre-processing steps converted Open Ephys files to mda format, filtered signals between 600 and 6000 Hz, and performed spatial whitening over all channels. Events were detected from peaks >3 standard deviations (SD) above baseline and separated by at least 0.33 ms from other events on the same channel. The first 10 principal components of the detected waveforms were used as inputs to the ISOSPLIT algorithm. Cluster quality was evaluated using isolation, noise overlap, and peak signal-to-noise ratio metrics (Chung et al., 2017). Units with firing rate >0.2 Hz, isolation >0.9, noise overlap <0.05, and peak signal-to-noise ratio >1 were used for further analysis. Downstream analyses were carried out using Python (v3.8.1) and R (v4.2.3).
 
-## Analysis of neural activity in the open arena
+### Analysis of neural activity in the open arena
 
 For analysis of neural activity in the open arena, firing rate maps were calculated by binning spikes into 2.5 cm bins, dividing by the total time occupied in each bin and then smoothed with a Gaussian kernel. Autocorrelograms were calculated by sliding the rate map over all x and y bins and calculating a correlation score. Grid scores were defined as the difference between the minimum correlation coefficient for rate map autocorrelogram rotations of 60 and 120 degrees and the maximum correlation coefficient for autocorrelogram rotations of 30, 90, and 150 degrees (see Sargolini et al., 2006). Fields were detected in the autocorrelogram by converting it into a binary array using 20% of the maximal correlations as a threshold. If the binary array had more than seven local maxima, a grid score was calculated. Correlations between the rotated autocorrelograms were then calculated using a ring containing the six local maxima closest to the centre of the binary array and excluding the maximum at the centre. The ring was detected based on the average distance of the six fields near the centre of the autocorrelogram (middle border=1.25 * average distance, outer border=0.25 * average distance). To compute the spatial stability of cells in the open arena, the within-session spatial correlation was calculated by computing the Pearson correlation between the firing rate map from the first half session and the second half session. Bins that were not visited in both halves were excluded from the calculation. Neurons were classified as grid cells when their grid score and spatial stability score was in the 99th percentile of the same scores from 1000 shuffled datasets. Shuffled spike data was generated by drawing a single value from a uniform distribution between 20 and 580 s and adding this to the timestamp of each spike. Spike times that exceeded the recording duration were wrapped to the start of the session. Spike locations were recomputed from the shuffled spike times and spatial scores recalculated.
 
-## Analysis of behaviour during the location memory task
+### Analysis of behaviour during the location memory task
 
 Plots of running speed as a function of location on the virtual track were generated by first binning speed into 1 cm location bins for each trial and then smoothing by convolution with a Gaussian filter (SD=2 cm, SciPy Python package).
 
@@ -135,11 +353,15 @@ Trials were classified into hits and misses based on whether the mouse stopped (
 
 To compute stop density profiles (e.g. Figure 5C–F), stops were counted within 1 cm location bins and the counts were divided by the number of trials to obtain the number of stops per cm per trial. This was smoothed by convolution with a Gaussian filter (SD=1 cm). To evaluate the stop density when aggregating sessions or for epochs of trials within a session (e.g. Figure 6A and C), the same procedure was applied to first generate a stop density profile for the trials of interest within a session. We then subtracted an average of density profiles calculated in the same way for shuffled data from the same trials but in which stop locations were randomly drawn from a uniform distribution of track locations. In this way, stop densities below zero in the subtracted profiles can be interpreted as below chance relative to their average shuffled distributions, and stop densities greater than zero can be interpreted as greater than chance. Aggregate stop density profiles were then generated by averaging the individual subtracted profiles. Where average stop density plots were shown for coding epochs (e.g. Figure 6C, Figure 6—figure supplement 2E), these were weighted both on the proportion of trials classified in a particular coding scheme (e.g. a code weight of 0.05 when 5% of trials were classified as task-anchored for a single grid cell) and the number of simultaneously recorded grid cells such that single sessions were weighted equally (e.g. a session weight of 0.2 [1/5] when five grid cells are simultaneously recorded in a session). Similar weighted averages were also applied to plots where the proportion of hit, try, and run trials differed within a session in a similar vein (Figure 6E, Figure 6—figure supplement 2G).
 
-## Analysis of neural activity during the location memory task
+### Analysis of neural activity during the location memory task
 
-Firing rate maps for each trial were generated by dividing the track into 1 cm bins, summing the number of spikes in each bin, and dividing by the time the animal spent there. Firing rates were smoothed with a Gaussian filter (SD =2 cm). Spatial information was calculated in bits per second as∑i=1NPiλilog2(λiλ)
+Firing rate maps for each trial were generated by dividing the track into 1 cm bins, summing the number of spikes in each bin, and dividing by the time the animal spent there. Firing rates were smoothed with a Gaussian filter (SD =2 cm). Spatial information was calculated in bits per second as
 
-where i indexes a position bin in the firing rate map, N is the number of bins, Pi is the occupancy probability, λi is the firing rate in the bin, and λ is the mean firing rate (Skaggs and McNaughton, 1996). When spatial information scores were generated for epochs within a session, we took the same number of trials for each epoch (e.g. when comparing task-anchored and task-independent epochs). This was done by randomly subsetting the epoch with the greater number of trials to match the number of trials of the epoch with the smaller number of trials.
+$$
+\sumi=1NP_{i}\lambda_{i}log_{2}(\frac{\lambda_{i}}{\lambda})
+$$
+
+where i indexes a position bin in the firing rate map, N is the number of bins, Pi is the occupancy probability, $\lambda$i is the firing rate in the bin, and $\lambda$ is the mean firing rate (Skaggs and McNaughton, 1996). When spatial information scores were generated for epochs within a session, we took the same number of trials for each epoch (e.g. when comparing task-anchored and task-independent epochs). This was done by randomly subsetting the epoch with the greater number of trials to match the number of trials of the epoch with the smaller number of trials.
 
 To quantify the spatial periodicity of neural firing, the Lomb-Scargle method of least squares spectral analysis (LSSA) as implemented by the Astropy Python module (Price-Whelan et al., 2022) was used to generate a frequency spectrum in the spatial domain (Lomb, 1976; Scargle, 1982). A periodogram was computed every 10 cm with a sample length equal to three track lengths (600 cm). Track locations were normalised between 0 and 1 so that spatial frequencies corresponded to the number of oscillations per trial. Spatial frequencies >5 were discarded from further analysis as no grid cells were found with grid spacings <40 cm. Individual periodograms were combined to create an average periodogram across the session (Figure 1—figure supplement 1 for an illustrative example).
 
@@ -155,7 +377,7 @@ To calculate the coding agreement between any two simultaneously recorded cells,
 
 A potential weakness of the Lomb-Scargle method that we used for trial-level classification is that the window over which classification is made has limited resolution, while simulations on artificial data suggested that classification could be biassed towards task-independent firing depending on how frequent transitions between coding schemes occur. We therefore implemented a second method for trial-level classification (Figure 6—figure supplement 2). With this method we first created an average firing rate profile of the task-anchored trials obtained from the Lomb-Scargle method. We then used this average as a template which we correlated with the firing rate profile of each trial. For analyses in Figure 6—figure supplement 2, trials with a correlation coefficient ≥0.5 were then classified as task-anchored positive (TA+) and task-anchored negative (TA-) otherwise. We note that when using this method we discarded units for which less than 15% of trials were originally classified as task-anchored, as for these units we were unable to generate templates of sufficient quality.
 
-## Simulation of firing during the location memory task
+### Simulation of firing during the location memory task
 
 To evaluate classification of grid firing as task-anchored or task-independent, we first simulated various cell types including grid cells, place cells, ramp cells, and aperiodic cells (Figure 1—figure supplement 4). For each cell type, we simulated an agent moving with a constant velocity of 10 cm/s across 100 trials of a 200 cm long linear track and logged the locations visited with a sampling rate of 1000 Hz. For each cell type, the probability of firing at any given location was defined by a probability density function (PDF) with a range of 0–1. The average firing rate was set by multiplying this normalised PDF by a scalar variable Pmax(spike) which by default was set to 0.1. Firing events were then assigned to each sampled location based on the scaled PDF. Firing rate maps and subsequent periodograms were created as described above.
 
@@ -167,6 +389,6 @@ To evaluate our classification of periodic firing at the level of individual cel
 
 To evaluate classification of periodic firing at the level of individual trials, we simulated 100 grid cells with grid spacings uniformly distributed between 40 and 400 cm that could alternate between task-anchored and task-anchored task-independent coding task-independent either in blocks of trials or every trial (see above) and compared the true labels of these simulated cells and trials with the predicted classifications (Figure 3—figure supplement 2). To determine how many periodograms to average over (or if any), we classified the simulated dataset across a range of rolling window sizes to map at what rolling window size we could maximise prediction accuracy and minimise bias between task-anchored and task-independent classifications. Again, this was repeated using a range of Pmax(spike) and jitter SD values and no field shuffles were computed. The prediction accuracy of our classification was calculated as the average percentage of true task-anchored and task-independent coding trials with a correct prediction label. The prediction bias was calculated as the average percentage of actual task-anchored trials minus the percentage of predicted task-anchored trials across cells.
 
-## Statistical analyses
+### Statistical analyses
 
 Group comparisons used linear mixed effect models (Figures 2F—4E–F, Figure 3—figure supplement 4) or generalised linear mixed effect models (Figures 4E, 6B and D–F) implemented using lme4 (Bates et al., 2015), lmerTest (Kuznetsova et al., 2017), and glmmTMB (Brooks et al., 2017) packages within R (R Development Core Team, 2021), with model comparisons using ANOVA and post-fitting pairwise comparisons (Searle et al., 1980) using estimated marginal means (Lenth et al., 2024). Fits of firing rate, spatial information, and peak width in Figures 2F and 3G and Figure 3—figure supplement 4A-B, D used log transformed data. Fits in Figure 4E (comparisons of shuffled data) used a beta family function, and in Figure 6 used a binomial family function with logit linker. Random effects had a nested structure to account for animals and sessions (all models), and where appropriate neuron identity (Figures 4E and 6). For analyses in Figure 6, trials classified as ‘aperiodic’ were removed from the dataset to facilitate direct comparison of trials with task-anchored and task-independent aperiodic grid firing. To estimate the effect size of the relative influence of task-anchored firing versus task-independent firing on task performance (Figure 6F), odds ratios and confidence intervals were extracted from the full model using sjPlot (Lüdecke et al., 2023).

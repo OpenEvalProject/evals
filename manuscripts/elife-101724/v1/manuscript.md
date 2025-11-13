@@ -22,22 +22,22 @@
 
 ### Affiliations
 
-1. https://ror.org/05m0wv206 Department of Thyroid and Breast Surgery, Taizhou Hospital of Zhejiang Province, Wenzhou Medical University Taizhou China
-2. https://ror.org/030zcqn97 Department of Thyroid and Breast Surgery, Ningbo Medical Center Lihuili Hospital Ningbo China
-3. https://ror.org/03cyvdv85 Department of Breast Surgery, The First Affiliated Hospital of Wenzhou Medical University Wenzhou China
-4. https://ror.org/04z13ha89 Department of Thyroid and Breast Surgery, Jinhua Municipal Central Hospital Jinhua China
-5. https://ror.org/04z13ha89 Department of Thyroid and Breast Surgery, Yiwu Central Hospital Jinhua China
+1. Department of Thyroid and Breast Surgery, Taizhou Hospital of Zhejiang Province, Wenzhou Medical University Taizhou China ([ROR:05m0wv206](https://ror.org/05m0wv206))
+2. Department of Thyroid and Breast Surgery, Ningbo Medical Center Lihuili Hospital Ningbo China ([ROR:030zcqn97](https://ror.org/030zcqn97))
+3. Department of Breast Surgery, The First Affiliated Hospital of Wenzhou Medical University Wenzhou China ([ROR:03cyvdv85](https://ror.org/03cyvdv85))
+4. Department of Thyroid and Breast Surgery, Jinhua Municipal Central Hospital Jinhua China ([ROR:04z13ha89](https://ror.org/04z13ha89))
+5. Department of Thyroid and Breast Surgery, Yiwu Central Hospital Jinhua China ([ROR:04z13ha89](https://ror.org/04z13ha89))
 6. Department of Breast Surgery, Ningbo Women and Children's Hospital Ningbo China
 7. Department of Breast Surgery, Yiwu Maternity and Children Hospital Jinhua China
-8. https://ror.org/004qehs09 Department of Surgical Oncology, Quzhou People's Hospital Quzhou China
-9. https://ror.org/03et85d35 Department of Breast Surgery, The First Affiliated Hospital of Ningbo University Ningbo China
-10. https://ror.org/00ka6rp58 Department of Surgical Oncology, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine Hangzhou China
+8. Department of Surgical Oncology, Quzhou People's Hospital Quzhou China ([ROR:004qehs09](https://ror.org/004qehs09))
+9. Department of Breast Surgery, The First Affiliated Hospital of Ningbo University Ningbo China ([ROR:03et85d35](https://ror.org/03et85d35))
+10. Department of Surgical Oncology, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:00ka6rp58](https://ror.org/00ka6rp58))
 
 † Corresponding author
 
 ## Abstract
 
-Approximately one-third of patients with HER2-positive breast cancer experienced recurrence within 10 years after receiving 1 year of adjuvant trastuzumab. The ExteNET study showed that 1 year of extended adjuvant neratinib after trastuzumab-based adjuvant therapy could reduce invasive disease-free survival (iDFS) events compared with placebo. This study investigated the efficacy and safety of pyrotinib, an irreversible pan-HER receptor tyrosine kinase inhibitor, after trastuzumab-based adjuvant therapy in patients with high-risk, HER2-positive early or locally advanced breast cancer. This multicenter phase II trial was conducted at 23 centers in China. After enrollment, patients received 1 year of extended adjuvant pyrotinib (400 mg/day), which should be initiated within 6 months after the completion of 1-year adjuvant therapy (trastuzumab alone or plus pertuzumab). The primary endpoint was 2-year iDFS rate. Between January 2019 and February 2022, 141 eligible women were enrolled and treated. As of October 10, 2022, the median follow-up was 24 (interquartile range, 18.0–34.0) months. The 2-year iDFS rate was 94.59% (95% confidence interval [CI]: 88.97–97.38) in all patients, 94.90% (95% CI: 86.97–98.06) in patients who completed 1-year treatment, 90.32% (95% CI: 72.93–96.77) in patients who completed only 6-month treatment, 96.74% (95% CI: 87.57–99.18) in the hormone receptor (HR)-positive subgroup, 92.77% (95% CI: 83.48–96.93) in the HR-negative subgroup, 96.88% (95% CI: 79.82–99.55) in the lymph node-negative subgroup, 93.85% (95% CI: 86.81–97.20) in the lymph node-positive subgroup, 97.30% (95% CI: 82.32–99.61) in patients with adjuvant trastuzumab plus pertuzumab, and 93.48% (95% CI: 86.06–97.02) in patients with adjuvant trastuzumab. The most common adverse events were diarrhea (79.4%), fatigue (36.9%), lymphocyte count decreased (36.9%), nausea (33.3%), and hand-foot syndrome (33.3%). Extended adjuvant pyrotinib administrated after trastuzumab-based adjuvant therapy showed promising efficacy in patients with high-risk HER2-positive breast cancer. The follow-up is ongoing to determine the long-term benefit. No external funding was received for this work. ClinicalTrials.gov: NCT05880927
+Background:Approximately one-third of patients with HER2-positive breast cancer experienced recurrence within 10 years after receiving 1 year of adjuvant trastuzumab. The ExteNET study showed that 1 year of extended adjuvant neratinib after trastuzumab-based adjuvant therapy could reduce invasive disease-free survival (iDFS) events compared with placebo. This study investigated the efficacy and safety of pyrotinib, an irreversible pan-HER receptor tyrosine kinase inhibitor, after trastuzumab-based adjuvant therapy in patients with high-risk, HER2-positive early or locally advanced breast cancer.Methods:This multicenter phase II trial was conducted at 23 centers in China. After enrollment, patients received 1 year of extended adjuvant pyrotinib (400 mg/day), which should be initiated within 6 months after the completion of 1-year adjuvant therapy (trastuzumab alone or plus pertuzumab). The primary endpoint was 2-year iDFS rate.Results:Between January 2019 and February 2022, 141 eligible women were enrolled and treated. As of October 10, 2022, the median follow-up was 24 (interquartile range, 18.0–34.0) months. The 2-year iDFS rate was 94.59% (95% confidence interval [CI]: 88.97–97.38) in all patients, 94.90% (95% CI: 86.97–98.06) in patients who completed 1-year treatment, 90.32% (95% CI: 72.93–96.77) in patients who completed only 6-month treatment, 96.74% (95% CI: 87.57–99.18) in the hormone receptor (HR)-positive subgroup, 92.77% (95% CI: 83.48–96.93) in the HR-negative subgroup, 96.88% (95% CI: 79.82–99.55) in the lymph node-negative subgroup, 93.85% (95% CI: 86.81–97.20) in the lymph node-positive subgroup, 97.30% (95% CI: 82.32–99.61) in patients with adjuvant trastuzumab plus pertuzumab, and 93.48% (95% CI: 86.06–97.02) in patients with adjuvant trastuzumab. The most common adverse events were diarrhea (79.4%), fatigue (36.9%), lymphocyte count decreased (36.9%), nausea (33.3%), and hand-foot syndrome (33.3%).Conclusions:Extended adjuvant pyrotinib administrated after trastuzumab-based adjuvant therapy showed promising efficacy in patients with high-risk HER2-positive breast cancer. The follow-up is ongoing to determine the long-term benefit.Funding:No external funding was received for this work.Clinical trial number:ClinicalTrials.gov: NCT05880927
 
 ## Introduction
 
@@ -51,7 +51,7 @@ In the present PERSIST study, our objective was to assess the efficacy and safet
 
 ## Methods
 
-## Study design and participants
+### Study design and participants
 
 This multicenter, single-arm, investigator-initiated, phase II exploratory study was conducted at 23 sites in China. The study protocol was approved by the institutional ethics committee of Taizhou Hospital of Zhejiang Province and all other participating centers, and the trial was performed in accordance with the 2013 Declaration of Helsinki. This trial was registered at https://clinicaltrials.gov/ (NCT05880927). Written informed consent was obtained from all patients before study enrollment.
 
@@ -61,19 +61,19 @@ High-risk patients were defined as those meeting one of the following criteria: 
 
 The main exclusion criteria were bilateral breast cancer, inflammatory breast cancer, previous participation in other clinical trials involving anticancer therapy, allergies to the drug components in this protocol, history of immunodeficiency diseases, inability to swallow, and pregnancy or lactation.
 
-## Procedure
+### Procedure
 
 Pyrotinib 400 mg was administrated orally once daily within 6 months of completing trastuzumab-based adjuvant therapy. Concurrent adjuvant endocrine therapy for HR-positive disease was recommended.
 
 Treatment duration was 12 months unless intolerable adverse events, disease recurrence, death, or consent withdrawal occurred.
 
-## Outcomes and assessment
+### Outcomes and assessment
 
 The primary endpoint was iDFS rate at 2 years. IDFS was defined as time from the initiation of pyrotinib treatment to invasive ipsilateral tumor recurrence, invasive contralateral breast cancer, local or regional invasive recurrence, distant recurrence, or death from any cause. The secondary endpoint was safety profile, graded according to the National Cancer Institute Common Terminology Criteria for Adverse Events, version 4.0.
 
 Patients were followed every 3 months for the first 2 years. The follow-up assessments included physical examination, Eastern Cooperative Oncology Group performance status, complete blood count, blood chemistry analysis, 12-lead electro-cardiogram, recording of adverse events, concomitant medications, and ultrasound. Computed tomography and bone scans may be conducted if clinically indicated.
 
-## Statistical analysis
+### Statistical analysis
 
 Based on the previous ExteNET trial (Burstein et al., 2021), the 2-year iDFS rate was assumed as 91% in the present study. To restrain the width of 2-sided 95% confidence interval (CI) to no more than 0.1, 126 patients were required. Considering a dropout rate of 10%, a total of 140 participants were recruited.
 
@@ -81,15 +81,116 @@ Continuous data were presented as median (range or interquartile range), while c
 
 ## Results
 
-## Baseline characteristics
+### Baseline characteristics
 
 Between January 2019 and February 2022, a total of 141 eligible women were enrolled in the study and received pyrotinib. All these patients were included in the full analysis set and safety set. The median age was 50 years (range, 25–72). Of the 141 patients, 107 (75.9%) patients had node-positive disease, and 64 (45.4%) had HR-positive disease. Detailed baseline characteristics are summarized in Table 1.
+
+**Table 1.**
+ Baseline characteristics of patients in the full analysis set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>All (n = 141)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years), median (range)</td>
+      <td>50 (25–72)</td>
+    </tr>
+    <tr>
+      <td>T stage, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T1</td>
+      <td>43 (30.5%)</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>83 (58.9%)</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>11 (7.8%)</td>
+    </tr>
+    <tr>
+      <td>T4</td>
+      <td>2 (1.4%)</td>
+    </tr>
+    <tr>
+      <td>Unable to determine</td>
+      <td>2 (1.4%)</td>
+    </tr>
+    <tr>
+      <td>Nodal status, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td>34 (24.1%)</td>
+    </tr>
+    <tr>
+      <td>1–3 positive nodes</td>
+      <td>49 (34.8%)</td>
+    </tr>
+    <tr>
+      <td>&gt;3 positive nodes</td>
+      <td>58 (41.1%)</td>
+    </tr>
+    <tr>
+      <td>Hormone receptor status, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Negative (ER and PR negative)</td>
+      <td>77 (54.6%)</td>
+    </tr>
+    <tr>
+      <td>Positive (ER positive, PR positive, or both)</td>
+      <td>64 (45.4%)</td>
+    </tr>
+    <tr>
+      <td>Ki-67, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥20%</td>
+      <td>119 (84.4%)</td>
+    </tr>
+    <tr>
+      <td>&lt;20%</td>
+      <td>22 (15.6%)</td>
+    </tr>
+    <tr>
+      <td>Previous neoadjuvant therapy, n (%)</td>
+      <td>26 (17.7%)</td>
+    </tr>
+    <tr>
+      <td>Previous adjuvant therapy, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Trastuzumab</td>
+      <td>92 (65.2%)</td>
+    </tr>
+    <tr>
+      <td>Trastuzumab plus pertuzumab</td>
+      <td>49 (34.8%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Tumors were assessed as being ER or PR positive with a threshold of 1%.ER, estrogen receptor; PR, progesterone receptor._
 
 In terms of treatment duration, 11 patients discontinued their treatment due to adverse events, while 38 patients had a treatment duration of less than or equal to 6 months due to the COVID-19 pandemic or personal reasons. A total of 92 and 31 patients completed 1-year and 6-month treatment of extended adjuvant pyrotinib, respectively (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101724/elife-101724-fig1-v1.jpg)
 
-## Efficacy
+#### Efficacy
 
 As of October 10, 2022, the median follow-up duration was 24 (interquartile range, 18.0–34.0) months. Of the 141 patients, seven patients experienced iDFS events, including one local recurrence, three brain metastases, two lung metastases, and one death due to distant metastasis. The 2-year iDFS rate was 94.59% (95% CI: 88.97–97.38; Figure 2).
 
@@ -101,9 +202,93 @@ Subgroup analyses showed that the 2-year iDFS rate was 94.90% (95% CI: 86.97–9
 
 **Figure 3.:** Kaplan–Meier curves for invasive disease-free survival in (A) patients who received 6-month (n = 31) and 1-year pyrotinib treatment (n = 92), (B) patients with hormone receptor-positive breast cancer (n = 64) and hormone receptor-negative breast cancer (n = 77), (C) patients with lymph node-positive breast cancer (n = 107) and patients with lymph node-negative breast cancer (n = 34), and (D) patients who received adjuvant therapy with trastuzumab (n = 92) and trastuzumab plus pertuzumab (n = 49).
 
-## Safety
+#### Safety
 
 The most frequently reported treatment-emergent adverse event was diarrhea (112 [79.4%]), followed by fatigue (52 [36.9%]), lymphocyte count decreased (52 [36.9%]), nausea (47 [33.3%]), and hand-foot syndrome (47 [33.3%]). Forty-three patients (30.5%) experienced grade 3 diarrhea, while no grade 4 or higher adverse events was reported (Table 2). Treatment discontinuation occurred in 11 (7.8%) patients, due to grade 3 diarrhea (n = 8), grade 3 hand-foot syndrome (n = 1), and intolerance (n = 2). In addition, 16 patients had dose reduction because of adverse events.
+
+**Table 2.**
+ Treatment-emergent adverse events occurring in at least 10% of the patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Events, n (%)</th>
+      <th colspan="2">All (n = 141)</th>
+    </tr>
+    <tr>
+      <th>Any grade</th>
+      <th>Grade 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Diarrhea</td>
+      <td>112 (79.4%)</td>
+      <td>43 (30.5%)</td>
+    </tr>
+    <tr>
+      <td>Fatigue</td>
+      <td>52 (36.9%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte count decreased</td>
+      <td>52 (36.9%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nausea</td>
+      <td>47 (33.3%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hand-foot syndrome</td>
+      <td>47 (33.3%)</td>
+      <td>1 (0.7%)</td>
+    </tr>
+    <tr>
+      <td>Hyperuricemia</td>
+      <td>33 (23.4%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>White blood cell count decreased</td>
+      <td>26 (18.4%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Dizziness</td>
+      <td>26 (18.4%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Anemia</td>
+      <td>24 (17.0%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Vomiting</td>
+      <td>22 (15.6%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Headache</td>
+      <td>19 (13.5%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Creatinine increased</td>
+      <td>17 (12.1%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Neutrophil count decreased</td>
+      <td>16 (11.3%)</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -123,10 +308,10 @@ Regarding adverse events, diarrhea was the major safety concern in the present s
 
 There are several limitations in the present study. First, our study was a single-arm study without control group. Second, patients who received T-DM1 therapy in the adjuvant setting were not enrolled. Third, 27.0% of patients did not complete 1-year extended adjuvant pyrotinib due to COVID-19 pandemic or personal reasons. Finally, the follow-up time was short. A phase III clinical trial (NCT03980054) of extended adjuvant pyrotinib in patients with high-risk HER2-positive breast cancer is ongoing, which will further demonstrate the efficacy of extended adjuvant TKI and bring new hope for patients with high-risk HER2-positive breast cancer.
 
-## Conclusions
+### Conclusions
 
 Our study suggests the potential of extended adjuvant pyrotinib in patients with high-risk HER2-positive early or locally advanced breast cancer after trastuzumab-based adjuvant therapy. The follow-up is ongoing to determine the long-term benefit of extended adjuvant pyrotinib.
 
-## Clinical trial registration number
+### Clinical trial registration number
 
 This trial was registered at https://clinicaltrials.gov/ (NCT05880927).

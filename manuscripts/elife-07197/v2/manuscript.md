@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.07197.001 Mutant KRAS colorectal cancer (CRC) cells release protein-laden exosomes that can alter the tumor microenvironment. To test whether exosomal RNAs also contribute to changes in gene expression in recipient cells, and whether mutant KRAS might regulate the composition of secreted microRNAs (miRNAs), we compared small RNAs of cells and matched exosomes from isogenic CRC cell lines differing only in KRAS status. We show that exosomal profiles are distinct from cellular profiles, and mutant exosomes cluster separately from wild-type KRAS exosomes. miR-10b was selectively increased in wild-type exosomes, while miR-100 was increased in mutant exosomes. Neutral sphingomyelinase inhibition caused accumulation of miR-100 only in mutant cells, suggesting KRAS -dependent miRNA export. In Transwell co-culture experiments, mutant donor cells conferred miR-100 -mediated target repression in wild-type-recipient cells. These findings suggest that extracellular miRNAs can function in target cells and uncover a potential new mode of action for mutant KRAS in CRC. DOI: http://dx.doi.org/10.7554/eLife.07197.001
+Mutant KRAS colorectal cancer (CRC) cells release protein-laden exosomes that can alter the tumor microenvironment. To test whether exosomal RNAs also contribute to changes in gene expression in recipient cells, and whether mutant KRAS might regulate the composition of secreted microRNAs (miRNAs), we compared small RNAs of cells and matched exosomes from isogenic CRC cell lines differing only in KRAS status. We show that exosomal profiles are distinct from cellular profiles, and mutant exosomes cluster separately from wild-type KRAS exosomes. miR-10b was selectively increased in wild-type exosomes, while miR-100 was increased in mutant exosomes. Neutral sphingomyelinase inhibition caused accumulation of miR-100 only in mutant cells, suggesting KRAS-dependent miRNA export. In Transwell co-culture experiments, mutant donor cells conferred miR-100-mediated target repression in wild-type-recipient cells. These findings suggest that extracellular miRNAs can function in target cells and uncover a potential new mode of action for mutant KRAS in CRC.
 
 ## Introduction
 
@@ -45,119 +45,653 @@ Despite accumulating evidence that exosomes are biologically active, little is k
 
 ## Results
 
-## Small ncRNAs are differentially distributed in exosomes
+### Small ncRNAs are differentially distributed in exosomes
 
-Because small RNAs are thought to be sorted at endosomal membranes and since
+Because small RNAs are thought to be sorted at endosomal membranes and since KRAS signaling can also occur on late endosomes (Lu et al., 2005), we hypothesized that oncogenic KRAS signaling could alter RNA export into exosomes. We prepared small RNA libraries from both exosomes and whole cells using isogenically matched CRC cell lines that differ only in KRAS status (Figure 1—source data 1) (Shirasawa et al., 1993). Exosomes were purified using differential centrifugation and consisted of vesicles ranging in size from 40 to 130 nm (Higginbotham et al., 2011; Demory Beckler et al., 2013). These preparations exclude larger microvesicles but contain smaller lipoproteins and probably other small RNA–protein complexes (unpublished observation). Comprehensive sequencing analyses of both cellular and exosomal small RNAs from all three cell lines revealed that more than 85% of the reads from the cellular RNA libraries mapped to the genome, compared to only 50–71% from the exosomal libraries (Figure 1A). The non-mappable reads consisted largely of sequences that contain mismatches to genomic sequences.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig1-v2.jpg)
 
-**Figure 1.:** Shown are (A) total read numbers (y-axis) and the total percentage of mappable reads (red), percentage of unique mappable reads (green), reads that map to multiple genomic locations (dark blue), and those that could not be mapped (cyan). (B) The majority of mappable small RNA reads were derived from noncoding RNAs in cells and exosomes. In cells, the majority of small RNA reads mapped to microRNAs (miRNAs) (miRbase 19), whereas in exosomes, the majority of small RNA reads mapped to repetitive elements. (C) The origin of repetitive reads from exosomal small RNA sequencing is shown. Repeat reads were annotated based on RepeatMasker and Rfam classified into tRNAs, rRNAs, snRNAs, and others. (D) The length distribution of reads mapping to miRNA hairpins was determined for small RNA reads from the three CRC cell lines and their purified exosomes. Colors represent the nucleotides identified for the 5′ base, T (cyan), A (red), G (green), and C (blue). Figure 1—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.07197.00310.7554/eLife.07197.004Figure 1—source data 1.Small RNA sequencing libraries were prepared from three isogenic CRC cell lines with the indicated alleles of KRAS. Table is based on work done in Demory Beckler et al. (2013).DOI: http://dx.doi.org/10.7554/eLife.07197.004
+**Figure 1.:** Shown are (A) total read numbers (y-axis) and the total percentage of mappable reads (red), percentage of unique mappable reads (green), reads that map to multiple genomic locations (dark blue), and those that could not be mapped (cyan). (B) The majority of mappable small RNA reads were derived from noncoding RNAs in cells and exosomes. In cells, the majority of small RNA reads mapped to microRNAs (miRNAs) (miRbase 19), whereas in exosomes, the majority of small RNA reads mapped to repetitive elements. (C) The origin of repetitive reads from exosomal small RNA sequencing is shown. Repeat reads were annotated based on RepeatMasker and Rfam classified into tRNAs, rRNAs, snRNAs, and others. (D) The length distribution of reads mapping to miRNA hairpins was determined for small RNA reads from the three CRC cell lines and their purified exosomes. Colors represent the nucleotides identified for the 5′ base, T (cyan), A (red), G (green), and C (blue). Figure 1—figure supplement 1.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** The small RNA read length distribution from serum-starved cells and from purified exosomes was determined, as well as the 5′ nucleotide from each read. The pattern from total cellular small RNA is consistent with primarily miRNA reads, the distribution from exosomes is much broader, encompassing a number of small reads derived from many sources (see Figure 1C,D). Colors represent the nucleotides identified for the 5′ base, T (cyan), A (red), G (green), and C (blue).DOI: http://dx.doi.org/10.7554/eLife.07197.005
+**Figure 1—figure supplement 1.:** The small RNA read length distribution from serum-starved cells and from purified exosomes was determined, as well as the 5′ nucleotide from each read. The pattern from total cellular small RNA is consistent with primarily miRNA reads, the distribution from exosomes is much broader, encompassing a number of small reads derived from many sources (see Figure 1C,D). Colors represent the nucleotides identified for the 5′ base, T (cyan), A (red), G (green), and C (blue).
 
 The global small RNA profiles identified reads from various classes of RNA, including miRNAs, with differential enrichment of specific RNAs in both the cellular and exosomal fractions. Compared to cellular RNA samples, which displayed an enrichment of miRNA sequences (∼70%), miRNA reads in exosomal samples comprised a smaller percentage of the total small reads (5–18%) compared to other ncRNA classes (e.g., tRNAs, rRNAs, snRNAs) (Figure 1B,C, Supplementary file 1). Most of these reads appear to be the fragments of larger RNAs, both cytoplasmic and nuclear. It is not clear how these RNAs are associated with and/or deposited into exosomes.
 
 The size distribution of cellular small RNA matched that expected from miRNA-derived reads (21–23 nucleotides). However, the small RNA read distribution from exosomes was much broader with many reads smaller than 22 nucleotides in length (Figure 1—figure supplement 1). Given that these reads map to RNAs other than known miRNAs, these data suggest that a large proportion of small exosomal RNA reads is derived from processing of other RNAs, in addition to post-transcriptionally modified miRNA reads that are apparently subject to editing, trimming, and/or tailing (Koppers-Lalic et al., 2014). Consistent with this, when read identity was restricted to miRNAs by mapping back to known miRNA hairpin sequences, the length distribution of mappable reads was nearly identical between cells and exosomes (Figure 1D).
 
-## miRNAs are differentially enriched in exosomes dependent on KRAS status
+### miRNAs are differentially enriched in exosomes dependent on KRAS status
 
 Focusing on mappable reads, we sought to ascertain whether miRNAs might be differentially represented when comparing cells to their secreted exosomes. For this, we quantified the relative abundance of individual miRNAs and made pairwise comparisons between normalized miRNA reads. Spearman correlation analyses demonstrated high correlation between replicates of individual cell lines (r = 0.95–0.96) and between cellular data sets differing only in KRAS status (r = 0.92–0.96) (Figure 2—figure supplements 1–3). In contrast, the miRNA profiles from exosomes compared to their parent cells were less correlated (DKO-1 r = 0.67–0.81, DKs-8 r = 0.64–0.71, DLD-1 r = 0.64–0.69) (Figure 2—figure supplements 1, 2, 4).
 
-We next utilized principal component (PC) analysis to determine whether the overall miRNA profiles could distinguish between cells and exosomes and/or between wild-type and mutant
+We next utilized principal component (PC) analysis to determine whether the overall miRNA profiles could distinguish between cells and exosomes and/or between wild-type and mutant KRAS status. The miRNA profiles from the three cell lines all clustered close to one another indicating that overall miRNA expression profiles are fairly similar among the different cell types (Figure 2). In marked contrast, PC analysis revealed that exosomal miRNA profiles clearly segregate according to KRAS status (Figure 2). Relatively, minor differences between cellular miRNA expression profiles become much more prominent when comparing exosomal miRNA patterns (Figure 2—figure supplement 3). This indicates that the presence of a mutant KRAS allele alters sorting of specific miRNAs to exosomes, a finding that has potentially important implications for biomarker development.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig2-v2.jpg)
 
-**Figure 2.:** Principal component analysis was performed comparing small RNA sequencing data sets from CRC cells and exosomes. The small RNA composition from cells differed significantly from exosomes. Nevertheless, clustering showed that mutant KRAS status could be inferred from small RNA composition. Also see Figure 2—figure supplements 1–4.DOI: http://dx.doi.org/10.7554/eLife.07197.006
+**Figure 2.:** Principal component analysis was performed comparing small RNA sequencing data sets from CRC cells and exosomes. The small RNA composition from cells differed significantly from exosomes. Nevertheless, clustering showed that mutant KRAS status could be inferred from small RNA composition. Also see Figure 2—figure supplements 1–4.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Pairwise similarity between the RNA sequencing data sets derived from cells and exosomes. Spearman correlations are shown between the cell samples (R = 0.93–0.96), between exosomes and cognate cells (R = 0.64–0.83) and between exosome samples (R = 0.74–0.86). Results were generated using the DESeq ‘pooled’ method.DOI: http://dx.doi.org/10.7554/eLife.07197.007
+**Figure 2—figure supplement 1.:** Pairwise similarity between the RNA sequencing data sets derived from cells and exosomes. Spearman correlations are shown between the cell samples (R = 0.93–0.96), between exosomes and cognate cells (R = 0.64–0.83) and between exosome samples (R = 0.74–0.86). Results were generated using the DESeq ‘pooled’ method.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Similar to supplemental Figure 2A. Differential analysis using the DESeq ‘per condition’ method.DOI: http://dx.doi.org/10.7554/eLife.07197.008
+**Figure 2—figure supplement 2.:** Similar to supplemental Figure 2A. Differential analysis using the DESeq ‘per condition’ method.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.07197.009
-
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** DOI: http://dx.doi.org/10.7554/eLife.07197.010
+To gain more insight into the relative abundance of miRNAs in cells vs matched exosomes, we examined the most abundant miRNA species in the various sequencing libraries (determined by mean reads of individual miRNAs). For many miRNAs, exosomal abundance correlated with cellular abundance (Supplementary file 2). However, calculation of fold changes among the three isogenic KRAS cell lines, and exosomes released from these cells, showed that distinct subsets of miRNAs are enriched in either exosomes or cells (Tables 1, 2). For all three cell lines, 25 miRNAs were consistently upregulated in cells and 29 miRNAs were consistently upregulated in exosomes (Figure 3A,B). Additionally, the diversity of miRNAs was substantially greater in mutant KRAS DKO-1 exosomes (94 unique miRNAs) compared to parental DLD-1 or wild-type KRAS DKs-8 exosomes (Figure 3B). A select subset of cell and exosomally targeted miRNAs were validated separately by quantitative reverse-transcription PCR (qRT/PCR) (Figure 3C). Collectively, these data indicate that the miRNA profiles observed in exosomes are distinct from their parental cells with specific miRNAs preferentially overrepresented or underrepresented in exosomes. We observed a mutant KRAS-specific pattern of secreted miRNAs, consistent with the hypothesis that dysregulation of miRNA metabolism is associated with tumorigenesis, a previously unrecognized feature of mutant KRAS.
 
-To gain more insight into the relative abundance of miRNAs in cells vs matched exosomes, we examined the most abundant miRNA species in the various sequencing libraries (determined by mean reads of individual miRNAs). For many miRNAs, exosomal abundance correlated with cellular abundance (
+**Table 1.**
+ Differential expression of miRNAs in colorectal cancer cells*
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="4">DKO-1</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-548u</td>
+      <td>hsa-miR-16-1-3p</td>
+      <td>hsa-miR-33a-3p</td>
+      <td>hsa-miR-33a-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-31-5p</td>
+      <td>hsa-miR-181b-3p</td>
+      <td>hsa-miR-450a-5p</td>
+      <td>hsa-miR-424-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-9-5p</td>
+      <td>hsa-miR-219-5p</td>
+      <td>hsa-miR-190a</td>
+      <td>hsa-miR-573</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-30d-3p</td>
+      <td>hsa-miR-204-5p</td>
+      <td>hsa-miR-1226-3p</td>
+      <td>hsa-miR-499a-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-450b-5p</td>
+      <td>hsa-miR-499b-3p</td>
+      <td>hsa-miR-3662</td>
+      <td>hsa-miR-20a-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-27b-5p</td>
+      <td>hsa-miR-5701</td>
+      <td>hsa-miR-4677-3p</td>
+      <td>hsa-let-7i-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-331-3p</td>
+      <td>hsa-miR-31-3p</td>
+      <td>hsa-miR-651</td>
+      <td>hsa-miR-1306-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-147b</td>
+      <td>hsa-miR-3611</td>
+      <td>hsa-miR-1305</td>
+      <td>hsa-miR-148a-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-27b-3p</td>
+      <td>hsa-miR-1306-3p</td>
+      <td>hsa-miR-374b-3p</td>
+      <td>hsa-miR-1260b</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3940-3p</td>
+      <td>hsa-miR-200c-5p</td>
+      <td>hsa-miR-548ar-3p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-132-5p</td>
+      <td>hsa-miR-484</td>
+      <td>hsa-miR-374a-5p</td>
+      <td>hsa-miR-1180</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-1307-3p</td>
+      <td>hsa-miR-200a-5p</td>
+      <td>hsa-miR-548o-3p</td>
+      <td>hsa-miR-149-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3615</td>
+      <td>hsa-miR-100-5p</td>
+      <td>hsa-miR-197-3p</td>
+      <td>hsa-miR-378a-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-let-7a-3p</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DLD-1</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-141-3p</td>
+      <td>hsa-miR-26b-5p</td>
+      <td>hsa-miR-24-3p</td>
+      <td>hsa-miR-3074-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-15a-5p</td>
+      <td>hsa-miR-27a-3p</td>
+      <td>hsa-miR-3613-5p</td>
+      <td>hsa-miR-30b-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-29a-3p</td>
+      <td>hsa-miR-301a-5p</td>
+      <td>hsa-let-7i-3p</td>
+      <td>hsa-miR-185-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-let-7g-5p</td>
+      <td>hsa-miR-23b-3p</td>
+      <td>hsa-miR-22-3p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKO-1 and DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-141-5p</td>
+      <td>hsa-miR-582-5p</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKO-1 and DLD-1</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-556-3p</td>
+      <td>hsa-miR-374a-3p</td>
+      <td>hsa-miR-106b-5p</td>
+      <td>hsa-miR-17-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-24-1-5p</td>
+      <td>hsa-miR-340-3p</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DLD-1 and DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-24-2-5p</td>
+      <td>hsa-miR-106a-5p</td>
+      <td>hsa-miR-30e-5p</td>
+      <td>hsa-miR-107</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-429</td>
+      <td>hsa-miR-98-5p</td>
+      <td>hsa-miR-425-5p</td>
+      <td>hsa-miR-140-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-93-5p</td>
+      <td>hsa-miR-210</td>
+      <td>hsa-miR-126-3p</td>
+      <td>hsa-miR-194-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-29b-3p</td>
+      <td>hsa-miR-15b-5p</td>
+      <td>hsa-miR-362-5p</td>
+      <td>hsa-miR-27a-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-454-3p</td>
+      <td>hsa-miR-452-5p</td>
+      <td>hsa-miR-196b-5p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKO-1, DLD-1 and DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-32-5p</td>
+      <td>hsa-miR-582-3p</td>
+      <td>hsa-miR-542-3p</td>
+      <td>hsa-miR-96-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-101-3p</td>
+      <td>hsa-miR-18a-5p</td>
+      <td>hsa-miR-3529-3p</td>
+      <td>hsa-miR-7-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-19a-3p</td>
+      <td>hsa-miR-142-3p</td>
+      <td>hsa-miR-20a-5p</td>
+      <td>hsa-miR-32-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-130b-5p</td>
+      <td>hsa-miR-1278</td>
+      <td>hsa-miR-7-1-3p</td>
+      <td>hsa-miR-590-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-4473</td>
+      <td>hsa-miR-17-5p</td>
+      <td>hsa-miR-103a-3p</td>
+      <td>hsa-miR-103b</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-19b-3p</td>
+      <td>hsa-miR-340-5p</td>
+      <td>hsa-miR-200a-3p</td>
+      <td>hsa-miR-34a-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-372</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*miRNAs differentially enriched in cells when comparing mean reads in exosomes vs cell.miRNAs expression patterns were compared between DKs-8, DKO-1, and DLD-1 cells. miRNAs were identified that were enriched in just one of the three cell types or that overlapped between combinations of cells. For miRNAs, 25 were identified that are expressed in all three cell types, 13 were enriched in DKs-8 cells, 15 in DLD-1 cells, and 39 were unique to DKO-1 cells._
+
+**Table 2.**
+ Differential distribution of miRNAs in exosomes*
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="4">DKO-1</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-139-5p</td>
+      <td>hsa-miR-3178</td>
+      <td>hsa-miR-151b</td>
+      <td>hsa-miR-125b-1-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-193b-3p</td>
+      <td>hsa-miR-935</td>
+      <td>hsa-miR-130b-3p</td>
+      <td>hsa-miR-628-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-139-3p</td>
+      <td>hsa-let-7d-3p</td>
+      <td>hsa-miR-589-3p</td>
+      <td>hsa-miR-4532</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-451a</td>
+      <td>hsa-miR-6087</td>
+      <td>hsa-miR-151a-5p</td>
+      <td>hsa-miR-940</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-222-3p</td>
+      <td>hsa-miR-766-5p</td>
+      <td>hsa-miR-505-5p</td>
+      <td>hsa-miR-3187-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-125a-3p</td>
+      <td>hsa-miR-3679-5p</td>
+      <td>hsa-miR-4436b-3p</td>
+      <td>hsa-miR-4787-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-2277-3p</td>
+      <td>hsa-miR-361-5p</td>
+      <td>hsa-miR-1293</td>
+      <td>hsa-miR-3183</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3162-5p</td>
+      <td>hsa-miR-642a-3p</td>
+      <td>hsa-miR-642b-5p</td>
+      <td>hsa-miR-197-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-324-3p</td>
+      <td>hsa-miR-145-3p</td>
+      <td>hsa-miR-3182</td>
+      <td>hsa-miR-3127-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3127-5p</td>
+      <td>hsa-miR-4728-3p</td>
+      <td>hsa-miR-3184-5p</td>
+      <td>hsa-miR-125b-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-186-5p</td>
+      <td>hsa-miR-1</td>
+      <td>hsa-miR-100-5p</td>
+      <td>hsa-miR-423-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-766-3p</td>
+      <td>hsa-miR-4753-5p</td>
+      <td>hsa-miR-145-5p</td>
+      <td>hsa-miR-4724-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-373-3p</td>
+      <td>hsa-miR-223-5p</td>
+      <td>hsa-miR-1307-5p</td>
+      <td>hsa-miR-1914-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3121-3p</td>
+      <td>hsa-miR-3613-3p</td>
+      <td>hsa-miR-205-5p</td>
+      <td>hsa-miR-98-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-23a-3p</td>
+      <td>hsa-miR-3124-5p</td>
+      <td>hsa-miR-3656</td>
+      <td>hsa-miR-3918</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-4449</td>
+      <td>hsa-miR-378c</td>
+      <td>hsa-miR-3138</td>
+      <td>hsa-miR-1910</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3174</td>
+      <td>hsa-miR-4466</td>
+      <td>hsa-miR-3679-3p</td>
+      <td>hsa-miR-3200-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-6511b-5p</td>
+      <td>hsa-miR-1247-5p</td>
+      <td>hsa-miR-22-3p</td>
+      <td>hsa-miR-877-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-4687-3p</td>
+      <td>hsa-miR-1292-5p</td>
+      <td>hsa-miR-181c-5p</td>
+      <td>hsa-miR-6131</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-6513-5p</td>
+      <td>hsa-miR-3661</td>
+      <td>hsa-miR-132-3p</td>
+      <td>hsa-miR-214-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-574-3p</td>
+      <td>hsa-miR-3190-3p</td>
+      <td>hsa-miR-326</td>
+      <td>hsa-miR-3191-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3198</td>
+      <td>hsa-miR-3928</td>
+      <td>hsa-miR-629-3p</td>
+      <td>hsa-miR-4489</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-4700-5p</td>
+      <td>hsa-miR-5006-5p</td>
+      <td>hsa-miR-5088</td>
+      <td>hsa-miR-2110</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3911</td>
+      <td>hsa-miR-3146</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-1224-5p</td>
+      <td>hsa-let-7b-5p</td>
+      <td>hsa-miR-155-5p</td>
+      <td>hsa-let-7c</td>
+    </tr>
+    <tr>
+      <td>hsa-let-7a-5p</td>
+      <td>hsa-miR-146b-5p</td>
+      <td>hsa-miR-4647</td>
+      <td>hsa-miR-4494</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-711</td>
+      <td>hsa-miR-1263</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DLD-1</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-1226-5p</td>
+      <td>hsa-miR-4745-5p</td>
+      <td>hsa-miR-4435</td>
+      <td>hsa-miR-939-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-409-3p</td>
+      <td>hsa-miR-1304-3p</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKO-1 and DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-146a-5p</td>
+      <td>hsa-miR-4508</td>
+      <td>hsa-miR-224-5p</td>
+      <td>hsa-miR-4429</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-222-5p</td>
+      <td>hsa-miR-629-5p</td>
+      <td>hsa-miR-4492</td>
+      <td>hsa-miR-3653</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-320a</td>
+      <td>hsa-miR-1290</td>
+      <td>hsa-miR-1262</td>
+      <td>hsa-miR-5010-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-204-3p</td>
+      <td>hsa-miR-4461</td>
+      <td>hsa-miR-5187-5p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKO-1 and DLD-1</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-483-5p</td>
+      <td>hsa-miR-4658</td>
+      <td>hsa-miR-4758-5p</td>
+      <td>hsa-miR-492</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-5001-5p</td>
+      <td>hsa-miR-371a-5p</td>
+      <td>hsa-miR-1323</td>
+      <td>hsa-miR-371b-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-501-3p</td>
+      <td>hsa-miR-4446-3p</td>
+      <td>hsa-miR-6511a-5p</td>
+      <td>hsa-miR-30a-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-4727-3p</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DLD-1 and DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-28-3p</td>
+      <td>hsa-miR-3934-5p</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">DKO-1, DLD-1 and DKs-8</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-658</td>
+      <td>hsa-miR-320d</td>
+      <td>hsa-miR-4792</td>
+      <td>hsa-miR-1246</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-320e</td>
+      <td>hsa-miR-4516</td>
+      <td>hsa-miR-320b</td>
+      <td>hsa-miR-4488</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-1291</td>
+      <td>hsa-miR-320c</td>
+      <td>hsa-miR-4634</td>
+      <td>hsa-miR-3605-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-4741</td>
+      <td>hsa-miR-3591-3p</td>
+      <td>hsa-miR-122-5p</td>
+      <td>hsa-miR-486-3p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-184</td>
+      <td>hsa-miR-223-3p</td>
+      <td>hsa-miR-3651</td>
+      <td>hsa-miR-486-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-3180</td>
+      <td>hsa-miR-3180-3p</td>
+      <td>hsa-miR-3168</td>
+      <td>hsa-miR-4497</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-423-5p</td>
+      <td>hsa-miR-3184-3p</td>
+      <td>hsa-miR-150-5p</td>
+      <td>hsa-miR-664a-5p</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-182-5p</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*miRNAs differentially enriched in exosomes when comparing mean reads in exosomes vs cell.miRNAs expression patterns were compared between exosomes purified from DKs-8, DKO-1, and DLD-1 cells. miRNAs were identified that were enriched in exosomes from just one of the three cell lines or that overlapped between combinations of cell lines. 29 miRNAs were common between exosomes from all three cell lines. 94 were enriched in exosomes from DKO-1 cells, 10 in exosomes from DKs-8 cells, and only 6 in exosomes from DLD-1 cells._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig3-v2.jpg)
 
-**Figure 3.:** KRAS-dependent regulation of miRNAs in exosomes and cells.Differentially distributed miRNAs in (A) cells and (B) exosomes from the three CRC cell lines differing in KRAS status. (C) qRT-PCR validation of selected miRs from DKs-8 and DKO-1 cellular and exosomal RNA samples normalized to U6 snRNA. Fold changes were calculated using the ΔΔC(t) method comparing exosomes to cells. Negative fold changes indicate greater enrichment in cells, and positive fold changes indicate greater enrichment in exosomes. Also see Supplementary file 2.DOI: http://dx.doi.org/10.7554/eLife.07197.013
+**Figure 3.:** Differentially distributed miRNAs in (A) cells and (B) exosomes from the three CRC cell lines differing in KRAS status. (C) qRT-PCR validation of selected miRs from DKs-8 and DKO-1 cellular and exosomal RNA samples normalized to U6 snRNA. Fold changes were calculated using the ΔΔC(t) method comparing exosomes to cells. Negative fold changes indicate greater enrichment in cells, and positive fold changes indicate greater enrichment in exosomes. Also see Supplementary file 2.
 
-## KRAS-dependent sorting of miRNAs
+### KRAS-dependent sorting of miRNAs
 
-## miR-100
+#### miR-100
 
 Down regulation of miR-100-5p was observed in mutant KRAS DKO-1 and parental DLD-1 cells compared to wild-type KRAS DKs-8 cells (Table 1). This is consistent with reports that have shown decreased miR-100 expression in metastatic cancers (Petrelli et al., 2012; Gebeshuber and Martinez, 2013). miR-100 has also been shown to negatively regulate migration, invasion, and the epithelial–mesenchymal transition (EMT) (Chen et al., 2014; Wang et al., 2014; Zhou et al., 2015). Interestingly, miR-100 was enriched in exosomes derived from mutant KRAS cells (>eightfold and >threefold enriched in DKO-1 and DLD-1 exosomes, respectively; Supplementary file 2), suggesting that decrease of miR-100 in cells is due to secretion in exosomes. This is in line with findings that circulating levels of miR-100 are upregulated in the plasma of mutant KRAS-expressing mouse pancreatic cancer models and in patients with pancreatic cancer (LaConti et al., 2011). More broadly, the observation that miR-100-5p specifically accumulates in exosomes suggests that there may be sequence-specific requirements for the sorting of certain miRNAs into exosomes.
 
-## miR-10b
+#### miR-10b
 
 Our RNA sequencing data identified miR-10b as preferentially secreted in exosomes isolated from cells harboring a wild-type KRAS allele (>threefold-change and >twofold-change enrichment in DKs-8 and DLD-1 exosomes, respectively) but retained in mutant KRAS DKO-1 cells (∼threefold-change cell enrichment). miR-10b is referred to as an oncomiR because it is frequently upregulated during progression of various cancers, including CRC (Ma, 2010).
 
-## miR-320
+#### miR-320
 
 miR-320 is aberrantly expressed in several types of cancer, including colon cancer. It is expressed in the proliferative compartment of normal colonic crypts (Schepeler et al., 2008; Hsieh et al., 2013). miR-320 members (miR-320b, -c, d, and -e) were abundant in both mutant KRAS (DKO-1) and wild-type KRAS (DKs-8) exosomes, but underrepresented in the matched cells, indicating that some miRNAs are transcribed and predominantly exported into exosomes, independent of KRAS status (Table 2, Supplementary file 1A). Of these family members, miR-320a and miR-320b were the most abundant species represented in exosomes by our RNA sequencing analyses (miR-320a in DKO-1 exosomes, and miR-320b in DKs-8 and DKO-1 exosomes). Interestingly, however, we observed the largest enrichment for miR-320d (fold changes >241 in DKs-8 and >229 in DKO-1) in exosomes relative to cells, despite being ∼fourfold less abundant than miR-320b levels. Because the 3′-terminus may be important in regulating miRNA stability and turnover, coupled to the fact that the sequences of miR-320a-d members differ only at their 3′-termini, enrichment of certain miRNAs in exosomes could be due to higher turnover/decay rates in cells.
 
-## Exosomal secretion and strand selection
+### Exosomal secretion and strand selection
 
 Because we observed differential export of specific miRNAs, we investigated whether there might be miRNA sequence-specific sorting signals. Previous reports have shown differential accumulation of 5p or 3p strands in exosomes compared to parental cells (Ji et al., 2014). Thus, we analyzed our data sets to test whether exosomes might be preferentially enriched for one strand over the other. We were able to identify individual miRNAs where the two strands differentially sorted between cells and exosomes. For example, the -5p strands of miR-423 were overrepresented in DKO-1 exosomes but in exosomes from DKs-8 cells, both strands were overrepresented compared to cells (data not shown). This indicates that KRAS status may differentially affect selection of passenger or guide strands for sorting into exosomes for select individual miRNAs.
 
-Individual miRNAs often exist as populations of variants (isomiRs) that differ in length and/or nucleotide composition generated by template- or non-template-directed variation (
+Individual miRNAs often exist as populations of variants (isomiRs) that differ in length and/or nucleotide composition generated by template- or non-template-directed variation (Burroughs et al., 2010; Newman et al., 2011; Neilsen et al., 2012). When we analyzed our sequencing data sets, we did not detect differential accumulation of isomers with variable 5′ termini (data not shown). For cellular miRNAs, most reads were full length with a slight enrichment in 3′ non-templated addition of A-tailed miRNAs, regardless of KRAS status (Figure 4; Figure 4—figure supplement 1). For exosomes, we observed a slight enrichment for C residues added to the 3′ ends of miRNAs from wild-type KRAS cells (Figure 4—figure supplement 1). We did not observe this in mutant KRAS exosomes, where instead, we noticed an increase in 3′ trimming of miRNAs (Figure 4, Figure 4—figure supplement 2). Overall, it remains to be determined whether such modifications constitute a global exosomal sorting signal in these cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig4-v2.jpg)
 
-**Figure 4.:** Data from the heat maps shown in Figure 4—figure supplement 2 were pooled to illustrate overall changes in either 3′ nucleotide additions (tailing) or 3′ resection (trimming) compared to full length miRNA sequences (intact). Overall, the patterns between cells and between exosomes are very similar. A comparison of cells to exosomes shows that exosomes display a slight increase in trimmed miRNAs. Also see Figure 4—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.07197.014
+**Figure 4.:** Data from the heat maps shown in Figure 4—figure supplement 2 were pooled to illustrate overall changes in either 3′ nucleotide additions (tailing) or 3′ resection (trimming) compared to full length miRNA sequences (intact). Overall, the patterns between cells and between exosomes are very similar. A comparison of cells to exosomes shows that exosomes display a slight increase in trimmed miRNAs. Also see Figure 4—figure supplement 2.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** 3′ NTA of A-tailed miRNAs is enriched in cells independent of KRAS status, whereas NTA of C residues are more abundant in wild-type KRAS DKs-8 exosomes. miRNAs with read counts ≥500 reads in both cells and exosomes were used in the analysis. Reads mapping to hairpin sequences were considered as templated miRNAs (untrimmed). Reads ≥18 nucleotides that did not map to hairpin or genome sequences were trimmed one nucleotide at the 3′-termini and mapped again to hairpin sequences. This was repeated three times to account for NTA's extending up to three nucleotides from the 3′-terminus. miRNAs significantly enriched in exosomes or cells are represented by red and blue circles, respectively.DOI: http://dx.doi.org/10.7554/eLife.07197.015
+**Figure 4—figure supplement 1.:** 3′ NTA of A-tailed miRNAs is enriched in cells independent of KRAS status, whereas NTA of C residues are more abundant in wild-type KRAS DKs-8 exosomes. miRNAs with read counts ≥500 reads in both cells and exosomes were used in the analysis. Reads mapping to hairpin sequences were considered as templated miRNAs (untrimmed). Reads ≥18 nucleotides that did not map to hairpin or genome sequences were trimmed one nucleotide at the 3′-termini and mapped again to hairpin sequences. This was repeated three times to account for NTA's extending up to three nucleotides from the 3′-terminus. miRNAs significantly enriched in exosomes or cells are represented by red and blue circles, respectively.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Heat maps show the extent of either 3′ nucleotide additions (tailing) or 3′ resection (trimming) compared to full-length miRNA sequences (intact).DOI: http://dx.doi.org/10.7554/eLife.07197.016
+**Figure 4—figure supplement 2.:** Heat maps show the extent of either 3′ nucleotide additions (tailing) or 3′ resection (trimming) compared to full-length miRNA sequences (intact).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** MEME analysis was performed to attempt to identify sequence motifs that might target miRNAs for export into exosomes. The top most abundant motifs found in miRNAs in Tables 1, 2 are shown for both cells and exosomes from DKO-1, DKs-8, or DLD-1 cell lines. (Upregulated in DKO-1 exo: 51, 1.5e-009; Upregulated in DKO-1 cell: 28,1.5e-007; Upregulated in DKs-8 exo, 22, 1.7e-010; Upregulated in DKs-8 cell, 19, 7.6e-007; Upregulated in DLD-1 exo, 8, 2.3e-003; Upregulated in DLD-1 cell 23, 3.3e-012).DOI: http://dx.doi.org/10.7554/eLife.07197.017
+**Figure 4—figure supplement 3.:** MEME analysis was performed to attempt to identify sequence motifs that might target miRNAs for export into exosomes. The top most abundant motifs found in miRNAs in Tables 1, 2 are shown for both cells and exosomes from DKO-1, DKs-8, or DLD-1 cell lines. (Upregulated in DKO-1 exo: 51, 1.5e-009; Upregulated in DKO-1 cell: 28,1.5e-007; Upregulated in DKs-8 exo, 22, 1.7e-010; Upregulated in DKs-8 cell, 19, 7.6e-007; Upregulated in DLD-1 exo, 8, 2.3e-003; Upregulated in DLD-1 cell 23, 3.3e-012).
 
 Consistent with published data, we have shown that miRNA expression patterns vary between parental cells and their cognate exosomes (Tables 1, 2, Figure 3A,B) (Valadi et al., 2007; Mittelbrunn et al., 2011; Ekstrom et al., 2012; Montecalvo et al., 2012; Squadrito et al., 2014). Differential export suggests that specific signals must exist to sort distinct miRNAs (Batagov et al., 2011; Villarroya-Beltri et al., 2013). We therefore conducted MEME analysis to attempt to identify sequence motifs that might serve as targeting signals. When we examined all miRNA reads detected in exosomes, we did not find any global enrichment for specific sequences or motifs, including those reported to be bound by hnRNP A2B1 (GGAG or U/CC) (Bolukbasi et al., 2012; Villarroya-Beltri et al., 2013) (Figure 4—figure supplement 3). However, when we analyzed miR-320 because it is preferentially exported to exosomes independent of KRAS status, we were able to identify the GGAG sequence contained within the 3′ end of the mature sequence. Additionally, upon restricting our analysis to reads from the most differentially expressed miRNAs when comparing exosomes to cells, we found a slight enrichment for C residues, possibly alternating C residues in exosomal miRNAs (Figure 4—figure supplement 3).
 
-## Sphingomyelinase-dependent sorting of miRNAs to exosomes
+### Sphingomyelinase-dependent sorting of miRNAs to exosomes
 
-Although little is understood regarding the molecular mechanisms for packaging exosomal miRNAs, recent evidence suggests that the secretion of miRNAs in exosomes is dependent on ceramide via its production by neutral sphingomyelinase 2 (nSMase 2) (
+Although little is understood regarding the molecular mechanisms for packaging exosomal miRNAs, recent evidence suggests that the secretion of miRNAs in exosomes is dependent on ceramide via its production by neutral sphingomyelinase 2 (nSMase 2) (Kosaka et al., 2010; Mittelbrunn et al., 2011). Inhibition of de novo ceramide synthesis by treatment with a nSMase inhibitor impaired exosomal miRNA release, apparently due to decreased formation of miRNA-containing exosomes (Kosaka et al., 2010; Mittelbrunn et al., 2011). To test the role of nSMase in miRNA secretion in our system, we treated CRC cells with the nSMase inhibitor, GW4869. We determined the effect of this inhibitor on miR-10b since it is preferentially found in wild-type KRAS DKs-8 exosomes, miR-100 since it is preferentially found in mutant KRAS DKO-1 and DLD-1 exosomes, and miR-320 which sorts into exosomes regardless of KRAS status. For miR-10b, we did not observe significant changes in its cellular levels after treatment with GW4869 in either wild-type KRAS DKs-8 or mutant KRAS DKO-1 cells (Figure 5C). In contrast, inhibition of nSMase caused a ∼threefold increase in intracellular levels of miR-100 in mutant KRAS DKO-1 cells but remained unchanged in wild-type DKs-8 KRAS cells (Figure 5A,B,C). Similarly, miR-320 levels were found to increase (∼2.5 fold) only in GW4869-treated mutant KRAS DKO-1 cells (Figure 5C). These data are most consistent with the hypothesis that impaired ceramide synthesis alters cellular accumulation of miRNAs dependent on mutant KRAS and suggest that multiple biogenic routes exist for miRNA secretion.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig5-v2.jpg)
 
-**Figure 5.:** DKO-1 or DKs-8 cells were treated with an inhibitor of neutral sphingomyelinase 2 (nSMase 2), GW4869. After treatment, in situ hybridization experiments were performed with probes against miR-100 (A, B). (C) qRT-PCR for miR-10b, miR-100, and miR-320a was performed on cells treated with GW4869 or DMSO, and fold change in expression was determined in treated vs untreated cells. In wild-type KRAS cells (DKs-8), inhibition of nSMase 2 had little or no effect on the cellular levels of these miRNAs. In contrast, mutant KRAS cells (DKO-1) showed an increase in cellular miRNA levels after inhibition of nSMAse 2. Data were derived from three biological replicates and performed in technical triplicates for qRT-PCR. Significance was determined by two-tailed, paired t-tests where * are p values ≤ 0.05 and ** ≤0.01.DOI: http://dx.doi.org/10.7554/eLife.07197.018
+**Figure 5.:** DKO-1 or DKs-8 cells were treated with an inhibitor of neutral sphingomyelinase 2 (nSMase 2), GW4869. After treatment, in situ hybridization experiments were performed with probes against miR-100 (A, B). (C) qRT-PCR for miR-10b, miR-100, and miR-320a was performed on cells treated with GW4869 or DMSO, and fold change in expression was determined in treated vs untreated cells. In wild-type KRAS cells (DKs-8), inhibition of nSMase 2 had little or no effect on the cellular levels of these miRNAs. In contrast, mutant KRAS cells (DKO-1) showed an increase in cellular miRNA levels after inhibition of nSMAse 2. Data were derived from three biological replicates and performed in technical triplicates for qRT-PCR. Significance was determined by two-tailed, paired t-tests where * are p values ≤ 0.05 and ** ≤0.01.
 
-## Extracellular transfer of miR-100
+### Extracellular transfer of miR-100
 
-Several reports have found that extracellular miRNAs can be taken up by recipient cells to mediate heterotypic cell–cell interactions and facilitate target repression in neighboring cells (
+Several reports have found that extracellular miRNAs can be taken up by recipient cells to mediate heterotypic cell–cell interactions and facilitate target repression in neighboring cells (Mittelbrunn et al., 2011; Boelens et al., 2014; Squadrito et al., 2014). To determine whether secreted miRNAs function in recipient cells, we designed luciferase (Luc) constructs containing either 3 perfect miR-100 recognition elements (MREs) in the 3′ untranslated region (UTR) (Luc-100-PT) or scrambled 3′UTR sequences that do not match any known miRNAs (Luc-CTL). These constructs were expressed in wild-type KRAS DKs-8 cells (recipient cells) in the presence or absence of donor cells. Baseline repression of Luc in the absence of donor cells was first analyzed to determine the levels of repression from endogenous miR-100 in DKs-8 cells. Compared to the scrambled control (Luc-CTL), strong Luc repression in the absence of donor cells was observed with perfect MREs (miR-100-PT) (Figure 6A). This supports our finding that miR-100 is expressed and retained in DKs-8 cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig6-v2.jpg)
 
-**Figure 6.:** Transwell co-culture of DKs-8 recipient cells with or without DKs-8 or DKO-1 donor cells. Luciferase (Luc) expression was measured in DKs-8 recipient cells transiently expressing (A) Luc fused to three perfectly complementary synthetic miR-100 target sites (miR-100-PT) or (B) Luc fused to the 3′UTR of mTOR, which harbors 3 endogenous target sites for miR-100. (C) Luc expression increased upon mutation of two (MS2) sites with full expression upon mutation of all three sites (MS3). Luc-CTL contains three random scrambled target sites that do not match any known miRNA sequence. (D) Luc expression was restored in recipient cells expressing miR-100-PT upon pretreatment of donor DKO-1 cells with 100 nM miR-100 antagomirs (AI-100) compared to pre-treatment of donor DKO-1 cells with 100 nm control antagomirs (AI-CTL) targeting cel-miR-67. (E) Taqman qRT-PCR for miR-100. Compared to DKs-8 recipient cells grown without donor cells, mir-100 levels increased by approximately 34% in the presence of mutant DKO-1 donor cells pre-treated with AI-CTL compared to an 8% increase in AI-100 pre-treated donor cells. Y axis is % increase in miR-100 = (CPAI-CTL or CPAI-100 − CPno donor/CPno donor)*100, where CP = absolute copy number. All Luc values were normalized to co-transfected vectors expressing β-galactosidase; n = 3 independent experiments in A–C and n = 4 in D, E. All Luc assays were performed in technical triplicate. Significance was determined by two-tailed, paired t-tests where * are p values ≤ 0.05 and ** ≤0.01. Also see Figure 6—figure supplements 1–3.DOI: http://dx.doi.org/10.7554/eLife.07197.019
+**Figure 6.:** Transwell co-culture of DKs-8 recipient cells with or without DKs-8 or DKO-1 donor cells. Luciferase (Luc) expression was measured in DKs-8 recipient cells transiently expressing (A) Luc fused to three perfectly complementary synthetic miR-100 target sites (miR-100-PT) or (B) Luc fused to the 3′UTR of mTOR, which harbors 3 endogenous target sites for miR-100. (C) Luc expression increased upon mutation of two (MS2) sites with full expression upon mutation of all three sites (MS3). Luc-CTL contains three random scrambled target sites that do not match any known miRNA sequence. (D) Luc expression was restored in recipient cells expressing miR-100-PT upon pretreatment of donor DKO-1 cells with 100 nM miR-100 antagomirs (AI-100) compared to pre-treatment of donor DKO-1 cells with 100 nm control antagomirs (AI-CTL) targeting cel-miR-67. (E) Taqman qRT-PCR for miR-100. Compared to DKs-8 recipient cells grown without donor cells, mir-100 levels increased by approximately 34% in the presence of mutant DKO-1 donor cells pre-treated with AI-CTL compared to an 8% increase in AI-100 pre-treated donor cells. Y axis is % increase in miR-100 = (CPAI-CTL or CPAI-100 − CPno donor/CPno donor)*100, where CP = absolute copy number. All Luc values were normalized to co-transfected vectors expressing β-galactosidase; n = 3 independent experiments in A–C and n = 4 in D, E. All Luc assays were performed in technical triplicate. Significance was determined by two-tailed, paired t-tests where * are p values ≤ 0.05 and ** ≤0.01. Also see Figure 6—figure supplements 1–3.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** miR-100 binding sites in the mTOR 3′UTR.miR-100 binding sites within the mTOR 3′UTR. Mutated nucleotides indicated in red (oligonucleotide sequences in Supplementary file 3).DOI: http://dx.doi.org/10.7554/eLife.07197.020
+**Figure 6—figure supplement 1.:** miR-100 binding sites within the mTOR 3′UTR. Mutated nucleotides indicated in red (oligonucleotide sequences in Supplementary file 3).
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** miR-100 levels in DKs-8 recipient cells.Taqman qRT-PCR for miR-100. miR-100 levels increased by approximately 114 copies in recipient cells cultured with DKO-1 donor cells pre-treated with AI-CTL compared to recipient cells cultured without donor cells. Pre-treatment of mutant DKO-1 donor cells with miR-100 antagomir inhibitor (AI-100) attenuated this effect. Absolute levels of miR-100 determined by standard curve generation of synthetically derived miR-100 (see ‘Materials and methods’). Approximately, 357.23 ± 16.65, 442.58 ± 12.59, and 329.48 ± 13.62 copies of miR-100 per input RNA were found in DKs-8 recipient cells cultured with DKO-1 donor AI-100, DKO-1 donor AI-CTL and without donor cells, respectively.DOI: http://dx.doi.org/10.7554/eLife.07197.021
+**Figure 6—figure supplement 2.:** Taqman qRT-PCR for miR-100. miR-100 levels increased by approximately 114 copies in recipient cells cultured with DKO-1 donor cells pre-treated with AI-CTL compared to recipient cells cultured without donor cells. Pre-treatment of mutant DKO-1 donor cells with miR-100 antagomir inhibitor (AI-100) attenuated this effect. Absolute levels of miR-100 determined by standard curve generation of synthetically derived miR-100 (see ‘Materials and methods’). Approximately, 357.23 ± 16.65, 442.58 ± 12.59, and 329.48 ± 13.62 copies of miR-100 per input RNA were found in DKs-8 recipient cells cultured with DKO-1 donor AI-100, DKO-1 donor AI-CTL and without donor cells, respectively.
 
 ![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/07197/elife-07197-fig6-figsupp3-v2.jpg)
 
-**Figure 6—figure supplement 3.:** Transwell co-culture of DKs-8-recipient cells with or without DKs-8 or DKO-1 donor cells. Luc expression was measured in DKs-8-recipient cells expressing Luc fused to three perfectly complementary synthetic miR-222 target sites (miR-222-PT).DOI: http://dx.doi.org/10.7554/eLife.07197.022
+**Figure 6—figure supplement 3.:** Transwell co-culture of DKs-8-recipient cells with or without DKs-8 or DKO-1 donor cells. Luc expression was measured in DKs-8-recipient cells expressing Luc fused to three perfectly complementary synthetic miR-222 target sites (miR-222-PT).
 
 To determine whether secretion of miR-100 by mutant KRAS DKO-1 donor cells could further augment miR-100 function in recipient wild-type cells, Transwell co-culture experiments were performed with DKs-8 recipient cells expressing the Luc reporters in the presence of DKO-1 donor cells (Figure 6). Significantly increased repression of Luc was observed when the reporter construct containing three perfect miR-100 sites was used (miR-100-PT) (Figure 6A). Because exosomes released from DKO-1 cells contain abundant levels of miR-100, increased Luc repression is consistent with transfer of additional copies of miR-100. Two control experiments were performed to test the hypothesis that additional copies of miR-100 are transferred between donor and recipient cells. First, we treated donor cells with antagomirs that block production of miR-100. Luc repression was almost completely reversed upon pre-treatment of DKO-1 donor cells with a miR-100 hairpin antagomir inhibitor (AI-100) (Figure 6D). Second, we performed qRT/PCR to calculate the increase in miR-100 levels in recipient cells. Cells grown in the presence or absence of donor cells showed an approximate 34% increase in the levels of miR-100 (Figure 6E and Figure 6—figure supplement 2).
 
@@ -183,54 +717,54 @@ Recently, quantitative analysis of secreted miRNAs suggested that the levels of 
 
 ## Materials and methods
 
-## Exosome isolation
+### Exosome isolation
 
 Exosomes were isolated from conditioned medium of DKO-1, Dks-8, and DLD-1 cells as previously described, with slight modification (Higginbotham et al., 2011). Briefly, cells were cultured in Dulbecco's Modified Eagle's Medium (DMEM) supplemented with 10% bovine growth serum until 80% confluent. The cells were then washed three times with Phosphate buffered saline (PBS) and cultured for 24 hr in serum-free medium. The medium was collected and replaced with ionomycin-containing medium for 1 hr, after which ionomycin-containing medium was collected and pooled with the previously collected serum-free medium. Pooled media was centrifuged for 10 min at 300×g to remove cellular debris, and the resulting supernatant was then filtered through a 0.22-mm polyethersulfone filter (Nalgene, Rochester, NY, USA) to reduce microparticle contamination. The filtrate was concentrated ∼300-fold with a 100,000 molecular weight cut-off centrifugal concentrator (Millipore, Darmstadt, Germany). The concentrate was then subjected to high-speed centrifugation at 150,000×g for 2 hr. The resulting exosome-enriched pellet was resuspended in PBS containing 25 mM hydroxyethyl-piperazineethanesulfonic acid (HEPES) (pH 7.2) and washed by centrifuging again at 150,000×g for 3 hr. The wash steps were repeated a minimum of three times until no trace of phenol red was detected. The resulting pellet was resuspended in PBS containing 25 mM HEPES (pH 7.2), and protein concentrations were determined with a MicroBCA kit (Pierce/Thermo, Rockford, IL, USA). The number of exosomes per μg of protein was determined by means of nanoparticle tracking analysis (NanoSight, Wiltshire, UK). Analysis was performed on three independent preparations of exosomes.
 
-## RNA purification
+### RNA purification
 
 Total RNA from exosomes and cells was isolated using TRIzol (Life Technologies/Thermo, Grand Island, NY). In the case of exosomal RNA isolation, TRIzol was incubated with 100 μl or less of concentrated exosomes for an extended 15 min incubation prior to chloroform extraction. RNA pellets were resuspended in 60 μl of RNase-free water and were then re-purified using the miRNeasy kit (Qiagen Inc., Valencia, CA, USA). Final RNAs were eluted with two rounds of 30 μl water extraction.
 
-## miRNA library preparation and sequencing
+### miRNA library preparation and sequencing
 
 Total RNA from each sample was used for small RNA library preparation using NEBNext Small RNA Library Prep Set from Illumina (New England BioLabs Inc., Ipswich, MA, USA). Briefly, 3′ adapters were ligated to total input RNA followed by hybridization of multiplex single read (SR) reverse transcription (RT) primers and ligation of multiplex 5′ SR adapters. RT was performed using ProtoScript II RT for 1 hr at 50°C. Immediately after RT reactions, PCR amplification was performed for 15 cycles using LongAmp Taq 2× master mix. Illumina-indexed primers were added to uniquely barcode each sample. Post-PCR material was purified using QIAquick PCR purification kits (Qiagen Inc.). Post-PCR yield and concentration of the prepared libraries were assessed using Qubit 2.0 Fluorometer (Invitrogen, Carlsbad, California, CA, USA) and DNA 1000 chip on Agilent 2100 Bioanalyzer (Applied Biosystems, Carlsbad, CA, USA), respectively. Size selection of small RNA with a target size range of approximately 146–148 bp was performed using 3% dye free agarose gel cassettes on a Pippin Prep instrument (Sage Science Inc., Beverly, MA, USA). Post-size selection yield and concentration of libraries were assessed using Qubit 2.0 Fluorometer and DNA high-sensitivity chip on an Agilent 2100 Bioanalyzer, respectively. Accurate quantification for sequencing applications was performed using qPCR-based KAPA Biosystems Library Quantification kits (Kapa Biosystems, Inc., Woburn, MA, USA). Each library was diluted to a final concentration of 1.25 nM and pooled in equimolar ratios prior to clustering. Cluster generation was carried out on a cBot v8.0 using Illumina's Truseq Single Read Cluster Kit v3.0. Single-end sequencing was performed to generate at least 15 million reads per sample on an Illumina HiSeq2000 using a 50-cycleTruSeq SBSHSv3 reagent kit. Clustered flow cells were sequenced for 56 cycles, consisting of a 50-cycle read, followed by a 6-cycle index read. Image analysis and base calling were performed using the standard Illumina pipeline consisting of Real Time Analysis version v1.17 and demultiplexed using bcl2fastq converter with default settings.
 
-## Mapping of RNA reads
+### Mapping of RNA reads
 
 Read sequence quality checks were performed by FastQC (Babraham Bioinformatics [http://www.bioinformatics.babraham.ac.uk/projects/fastqc/]). Adapters from the 3′ ends of reads were trimmed using Cutadpt with a maximum allowed error rate of 0.1 (Martin, 2011). Reads shorter than 15 nucleotides in length were excluded from further analysis. Reads were mapped to the human genome hg19 using Bowtie version 1.1.1 (Langmead and Salzberg, 2012). Mapped reads were annotated using ncPRO-seq (Chen et al., 2012) based on miRbase (Griffiths-Jones et al., 2008), Rfam (Gardner et al., 2011; Burge et al., 2013), and RepeatMasker (http://www.repeatmasker.org/), and expression levels were quantified based on read counts. Mature miRNA annotation was extended 2 bp in both upstream and downstream regions to accommodate inaccurate processing of precursor miRNAs. Reads with multiple mapping locations were weighted by the number of mapping locations.
 
-## PC analysis
+### PC analysis
 
 DESeq Version 1.16.0 was used to perform PC analyses (Anders and Huber, 2010).
 
-## Enrichment analysis
+### Enrichment analysis
 
 Differential expression was analyzed using DESeq Version 1.16.0 (Anders and Huber, 2010). Negative binomial distribution was used to compare miRNA abundance between cells vs exosomes and wild-type vs mutant KRAS status. The trimmed mean of M values method was used for normalization (Robinson and Oshlack, 2010). Differential expression was determined based on log2 fold change (log2 fold change) and false discovery rate (FDR) with |log2 fold change| ≥ 1 and FDR ≤ 0.001.
 
-## Trimming and tailing
+### Trimming and tailing
 
 Trimming and tailing analysis was based on miRBase annotation (Griffiths-Jones et al., 2006, 2008; Griffiths-Jones, 2010). Only high-confidence miRNAs (544) and corresponding hairpin sequences were used. Bowtie version 1.1.1 with 0 mismatch was used for mapping. miRNA reads were first mapped to hairpin sequences with unmapped reads, then mapped to the human genome hg19. Remaining reads were trimmed 1 bp from the 3′ end and remapped to hairpin sequences. The remapping process was repeated 10 times. Finally, all mapped reads were collected for further analysis.
 
-## qRT/PCR
+### qRT/PCR
 
 Taqman small RNA assays (Life Technologies) (individual assay numbers are listed below) were performed for indicated miRNAs on cellular and exosomal RNA samples. Briefly, 10 ng of total RNA was used per individual RT reactions; 0.67 μl of the resultant cDNA was used in 10 μl qPCR reactions. qPCR reactions were conducted in 96-well plates on a Bio-Rad CFX96 instrument. All C(t) values were ≤30. Triplicate C(t) values were averaged and normalized to U6 snRNA. Fold changes were calculated using the ∆∆C(t) method, where ∆ = C(t)miRNA − C(t)U6 snRNA, and ∆∆C(t) = ∆C(t)exo − ∆C(t)cell, and FC = 2−∆∆C(t). Analysis was performed on three independent cell and exosomal RNA samples. Taqman probe #: U6 snRNA: 001973; hsa-let-7a-5p: 000377; hsa-miR-100-5p: 000437; hsa-miR-320b: 002844; hsa-miR-320a: 002277.
 
-## Generation of miRNA standard curves
+### Generation of miRNA standard curves
 
 RNase-free, HPLC-purified 5′-phosphorylated miRNA oligoribonucleotides were synthesized (Integrated DNA Technologies) for human miR-100-5p (5′-phospho-AACCCGUAGAUCCGAACUUGUG-OH-3′) and cel-miR-39-3p (5′-phospho-UCACCGGGUGUAAAUCAGCUUG-OH-3′). Stock solutions of 10 μM synthetic oligonucleotide in RNase-free and DNase-free water were prepared according to the concentrations and sample purity quoted by the manufacturer (based on spectrophotometry analysis). Nine twofold dilution series beginning with 50 pM synthetic oligonucleotide were used in 10 µl RT reactions (Taqman small RNA assays), and qPCR was performed. Each dilution was performed in triplicate from three independent experiments. Linear regression was used to determine mean C(t) values plotted against log(miRNA copies/µl).
 
-## miRNA in situ hybridizations and ceramide dependence
+### miRNA in situ hybridizations and ceramide dependence
 
 Cells were plated in 6-well plates containing coverslips at a density of ∼2.5 × 105 cells and cultured in DMEM supplemented with 10% bovine growth serum for 24 hr. The cells were then washed three times with PBS and cultured for 24 hr in serum-free medium containing either 5 μM GW4869 (Cayman Chemicals # 13127, Ann Arbor, MI, USA) or DMSO. Medium was removed and cells were washed three times with PBS and fixed with 4% Paraformaldehyde (PFA) for ∼15 min at room temperature. After, cells were washed three times in DEPC-treated PBS and permeabilized in 70% ethanol for ∼4 hr at 4°C, and rehydrated in DEPC-treated PBS for 5 min. Pre-hybridization was performed in hybridization buffer (25% formamide, 0.05 M EDTA, 4× saline-sodium citrate (SSC), 10% dextran sulfate, 1X Denhardt’s solution 1 mg/ml Escherichia coli tRNA) in a humidified chamber at 60°C for 60 min. Hybridization buffer was removed and replaced with 10 nM of probe (probe numbers are listed below) diluted in hybridization buffer and incubated at either 55°C (miR-100 and miR-10b) or 57°C for scrambled and U6 probes for 2 hr. Coverslips were then washed in series with pre-heated SSC at 37°C as follows: 4× SSC briefly, 2× SSC for 30 min, 1× SSC for 30 min, and 0.1× SSC for 20 min. miRNA detection was conducted using Tyramide Signal Amplification (Perkin Elmer, # NEL741001KT, Waltham, MA, USA). Briefly, coverslips were blocked in blocking buffer (0.1 M TRIS-HCl, pH 7.5, 0.15 M NaCl, 0.5% Blocking Reagent [Roche, #11096176001, Basel, Switzerland]) at 4°C overnight. Blocking buffer was replaced with anti-DIG-POD (Roche, # 11207733910) diluted 1:100 in blocking buffer and incubated for 60 min. Coverslips were washed three times, 5 min per wash, in wash buffer (0.1 M Tris-HCl, pH 7.5, 0.15 M NaCl, 0.5% Saponin) followed by incubation with 1× Fluorescein diluted in 1× amplification reagent for 5 min. Fluorescent coverslips were then washed two times, 5 min per wash, in wash buffer. To preserve fluorescent signals, coverslips were fixed with 2% PFA containing 2% Bovine serum albumin in 1× PBS for 15 min. After fixation, coverslips were washed 2 times, 5 min per wash, in wash buffer, followed by a final wash in 1× PBS for 5 min. Coverslips were then mounted in Prolong Gold (Life Technologies) and visualized on a Zeiss LSM510 at 63× objective. 3′-DIG labeled probes for in situ hybridizations-U6 snRNA: 99002-05; Scramble: 99004-05; miR-10b-5p: 38486-05; miR-100-5p: 18009-05 (Exiqon, Woburn, MA, USA).
 
-## Co-culture and Luc reporter assays
+### Co-culture and Luc reporter assays
 
 Recipient cells were plated in six-well plates at a density of ∼2.5 × 105 cells and cultured in DMEM supplemented with 10% bovine growth serum for 24 hr. Media was replaced and cells were co-transfected (Promega, E2311, Madison, WI, USA) with 1.5 μg of Luc-reporter plasmid and 1.5 μg β-gal plasmid DNA/well. Donor cells were plated in 0.4-μm polyester membrane Transwell filters (Corning, 3450, Corning, NY, USA) at ∼2.5 × 105 cells/well for 24 hr. Media from donor Transwells and recipient 6-well plates were removed and replaced with DMEM without FBS. Co-culture of donor and recipient cells was conducted for either 24 or 48 hr before recipient cells were harvested. Lysates were prepared in 1× Reporter lysis buffer (Promega, E2510), and Luc assays were performed according to the manufacturer's protocol (Promega, E2510). β-gal expression was simultaneously determined from the lysates according to the manufacturer's protocol (Promega, E2000). Differences in transfection efficiency were accounted for by normalizing Luc expression to β-Gal expression (Luc/β-Gal). All assays were performed on three biological replicates, each with three technical replicates.
 
-## Antagomir treatment
+### Antagomir treatment
 
 Donor cells were plated in 0.4-μm polyester membrane Transwell filters (Corning, 3450, Corning, NY, USA) at ∼1.4 × 104 cells/well for 24 hr. Medium was replaced and donor cells were transfected with either miR-100 hairpin antagomirs (# IH-300517-05, GE Life Sciences) or negative control hairpin antagomirs corresponding to cel-miR-67 (# IN-001005-01, GE Life Sciences) to produce a final concentration of 100 nM of antagomir for 24 hr. Medium from donor Transwells and recipient 6-well plates was removed and replaced with DMEM without FBS. Co-culture of donor and recipient cells was conducted for 24 hr before recipient cells were harvested for RNA isolation.
 
-## Plasmid construction
+### Plasmid construction
 
 For the pLuc-mTOR construct, the 3′UTR of mTOR was PCR amplified (primer sequences in Supplementary file 3) from genomic DNA isolated from DKs-8 cells. The amplicon was cloned into pMiR-Report (Life Technologies) via SpeI/HinDIII restriction sites. Mutation of miR-100 binding sites in mTOR 3′UTR (MS) was performed on pLuc-mTOR using forward or reverse primers targeting either all three MRE's, or MRE 2 and 3 with QuikChange Lightning Multi-Site Directed Mutagenesis (Agilent, Santa Clara, CA, USA) according to manufacturer's protocol. To create the reporter construct containing three miR-100 perfect sites (miR-100-PT), oligonucleotides (Supplementary file 3) were annealed to produce a synthetic fragment containing the perfect sites with CTAGT and AGCTT overhangs. The fragment was cloned into pMiR-report via SpeI/HinDIII restriction sites. All plasmids were sequence verified (GeneWiz, South Plainfield, NJ, USA).

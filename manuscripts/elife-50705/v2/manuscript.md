@@ -57,31 +57,59 @@ Here we identify a novel mechanism linking the energy-demanding process of prote
 
 ## Results
 
-## BUD23 plays a major role in translational homeostasis
+### BUD23 plays a major role in translational homeostasis
 
 We previously identified pleiotropic actions of BUD23 in airway epithelial cells, and attributed these to an epigenetic effect (Jangani et al., 2014). The discovery that BUD23 modifies ribosomal RNA rather than histone proteins prompted re-examination of the BUD23 role in physiology. To identify candidate pathways affected by BUD23 we depleted expression in human airway epithelial cells (Figure 1A,B). This intervention caused a small but statistically significant decrease in cell proliferation (Figure 1C), which is similar to the anti-proliferative effects caused by BUD23 deletion in yeast (White et al., 2008).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig1-v2.jpg)
+
+**Figure 1.:** (A) Relative mRNA expression levels of BUD23. A549 cells were transfected for 48 hr with either BUD23 specific siRNA (si29, 30, 31) or non-targeting control (neg1, 2). Total RNA was extracted before reverse transcription to cDNA and qPCR (TaqMan). (B) Protein expression was determined by western blotting using antibody GTX105840. Actin was used as a loading control. (C) siRNA treated cells were plated into cell culture wells and allowed to grow in DMEM supplemented with 10% FBS for 48 hr. Total cell volume was then measured using SRB assay to indicate amount of proliferation. Polysome profiles were obtained from A549 cell lysates treated with (D) Control siRNA or (E) BUD23 specific siRNA (si30) for 48 hr (n = 3). Changes in the ratio of the 40S peak to the 60/80S peak were observed between the two conditions. Polysome fractions were divided into heavy (more than three ribosomes) or light (three or less ribosomes) before RNA sequencing.. A translational efficiency (TE) score was derived by dividing the relative proportion of transcript abundance in the heavy fraction by that in the light fraction. (F) The TE scores in the two conditions derived from the samples in A and B are plotted against each other. (G) Violin plot showing the change in translational efficiency upon BUD23 siRNA treatment (‘change in TE score’) for all detected transcripts (All) versus mitochondrially-encoded transcripts (Mitochondrial). (H) 5’UTR length of the transcripts was plotted against change in translational efficiency (TE, as defined in Figure 1G). The data are plotted in bins with ‘change in TE’ (BUD23 TE/Control TE) windows of 0.5. (I) 5’UTR GC content was of the same transcripts was plotted against change in TE. The data are plotted in bins with TE windows of 0.5.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Global translation rates in A549 cells after siRNA treatment were measured by 35-S-methionine incorporation assay. Equal protein loading was confirmed by Coomassie. (B) Data-set enrichment analysis using the PANTHER DB GO-Slim Biological processes database, of transcripts with >2 fold decrease in TE in the BUD23-depleted condition relative to control. These transcripts form a highly inter-connected network with a PPI enrichment value <1e−16.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A and B) De-novo motif analysis of 5’UTRs from the highly down-regulated (A) and up-regulated (B) transcripts identified by comparing TE from control and BUD23 knockdown A549 cells.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Change in translational efficiency (TE) after BUD23 siRNA treatment is plotted against transcript length. Transcript length was retrieved using the EDAseq package in R. (B) Distribution of 5’UTR GC content for ‘All’ transcripts analysed in the polysome profiling dataset (Figure 1F), compared to the transcripts annotated to the ‘mitochondrial’ compartment. No significant difference was detected using the Mann-Whitney statistical test.
 
 To investigate comprehensively the role of BUD23 in ribosome function we performed polysome profiling. The 48 hr knockdown of BUD23 resulted in a reduction of the 40S subunit peak, and a concomitant increase in the 60/80S peak (Figure 1D,E). There was, however, little change in the profile of the polysome fractions at this early time-point following transient BUD23 knockdown, allowing us to investigate the changes in mRNA substrate selection in the intact polysomes. To test the global efficiency of the translational apparatus in cells lacking BUD23, we used 35-S-methionine incorporation for 1 hr (Figure 1—figure supplement 1). This demonstrated little overall impact on global protein translation rate, confirming that the identified polysomes were essentially competent at this time-point, despite the impact on 40S maturation. In order to determine if BUD23-loss differentially impacted the translation of a specific subset of mRNAs, we profiled the translational efficiency (TE) of individual mRNA species within the polysome profiles.
 
 To do this, the polysome fractions were divided into ‘heavy’ (more than three ribosomes) or ‘light’ (less than three ribosomes) and pooled, prior to RNA extraction and sequencing. This defined a total of 14,527 transcripts, from which the relative proportion of each individual transcript in the heavy compared to the light fraction was calculated to give a translation efficiency (TE) score. Average TE scores across the three replicates for each condition (+ /- BUD23) were then plotted against each other (Figure 1F). This revealed that the most efficiently translated transcripts in the control samples (more heavily loaded with ribosomes), were most significantly reduced in the BUD23 knockdown condition. To examine the identity of the most highly affected transcripts, a threshold of >1 or <-1 difference in the relative TE was set (i.e. TE doubled or halved), and applied to Figure 1F, shown as trend lines. There were 650 transcripts with a TE ratio <-1 and 95 transcripts where the TE ratio >1 after BUD23 depletion; indicating the marked loss of high efficiency mRNA translation.
 
-## Analysis of BUD23 differentially translated mRNA species
+### Analysis of BUD23 differentially translated mRNA species
 
 The 650 transcripts for which TE was reduced (TE ratio <-1 after BUD23 depletion) constituted a highly connected network, with a significantly higher number of protein-protein interactions than would be expected from a random dataset of similar size, and an interaction analysis (PPI) enrichment p-value<1e−16. Gene set analysis of these transcripts revealed enrichment for genes involved in RNA processing, metabolic processes and organelle organisation among other high energy demand processes (Figure 1—figure supplement 1).
 
 Surprisingly, the TE of mitochondrially-encoded transcripts was observed to be particularly strongly down-regulated (Figure 1G). In fact, all mitochondrial transcripts had a negative change in TE after BUD23 loss, with approximately 50% reduction in TE.
 
-## BUD23 expression promotes ribosome interaction with low GC 5’UTRs
+### BUD23 expression promotes ribosome interaction with low GC 5’UTRs
 
 To investigate the mechanism underlying the BUD23 dependent selection of transcripts we examined specific mRNA features associated with translational efficiency. Given the known influence of 5’UTR features on translation efficiency, we reasoned that specific features of the 5’UTR may be particularly important for BUD23 action. A number of well-characterised 5’UTR features impact mRNA translation, including length, secondary structure, GC content, and specific motifs including the TOP sequence (Gandin et al., 2016; Meijer and Thomas, 2002). We saw no enrichment for TOP sequence content in the differentially translated mRNA species (Figure 1—figure supplement 2), and no correlation between change in TE score and 5’UTR length was observed (Figure 1H). We also noted that transcripts with shorter total lengths were not more likely to shift from the heavy to the light fraction (Figure 1—figure supplement 3). There was, however, a highly significant correlation between change in TE score and GC content (Pearson’s correlation value of −0.1337, p-value<2.2e−16) (Figure 1I). This identifies an intersection between mRNA transcript 5’UTR GC content and BUD23 ribosome maturation. There was no difference in the distribution of 5’UTR GC in mitochondrial-related transcripts relative to all transcripts detected in the polysome analysis (Figure 1—figure supplement 3).
 
-## Loss of BUD23 causes changes in cellular protein homeostasis
+### Loss of BUD23 causes changes in cellular protein homeostasis
 
 Our studies reveal the consequences for the ribosome of BUD23 action and point to an impact on the cellular proteome. Therefore, to investigate the downstream consequences of BUD23 loss we examined the cellular proteome by LC-MS/MS. BUD23 knockdown downregulated 83 proteins and upregulated 64, out of a total of 3255 identified (Figure 2—source data 1). When tested using PANTHER GO cellular component ontology analysis, upregulated proteins were over-represented for components of the large ribosomal subunit (14/64 proteins), whilst downregulated proteins were over-represented for components of the small ribosomal subunit (22/83 proteins), (Figure 2A, Figure 2—figure supplement 1). This imbalance in the relative abundance of ribosomal proteins, recapitulates the observation in the polysome profiles and confirms a major role for BUD23 in the maturation of the protein translation apparatus of the cell. Interestingly, TRMT112 protein, an obligate partner for BUD23, was also significantly down-regulated with BUD23 knock-down, which may indicate a reciprocal stabilising interaction.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig2-v2.jpg)
+
+**Figure 2.:** Significantly down-regulated and up-regulated proteins were defined using Welch’s T-test with a permutation-based FDR < 0.05. (A) Significantly down-regulated proteins were visualised as a network using String 10 online software. Red nodes are 40S ribosomal proteins, Green nodes are mitochondrial proteins (B) Over-representation analysis of the significantly down-regulated protein dataset was performed using the PANTHER GO-Slim Biological Processes, and significantly over-represented terms were visualise using ggplot2. (C) Mitochondrial stress test was conducted on A549 cells treated with BUD23-targeting or non-targeting control siRNA (n = 3). Oxygen consumption rate (OCR) was measured over time to obtain mitochondrial respiration rates. Values for ETS (D) and OXPHOS (E) were derived from the OCR measurements after the addition of oligomycin A (OA), FCCP and antimycin A + rotenone (AA+R) in succession. (F) Glycolytic capacity was tested using a Seahorse glycolytic stress test and measuring extracellular acidification rate (ECAR). (G) A549 cells were treated with control siRNA (neg1) or siRNA specifically targeting BUD23 (si30), RPS27A, LTV1 or RIOK2. 18S/28S ratio was measured using Tapestation to confirm ribosome subunit imbalance. (H) MT-ND1 mRNA was measured by qPCR as an indicator of mitochondrial transcript abundance (relative to control gene HPRT). (I) Mitochondrial copy number was measured relative to genomic copy number by qPCR. (J) Cellular fractionation into total ‘T’, cytosolic ‘C’, cellular debris ‘D’ and mitochondrial ‘M’ fractions. Protein was isolated from these fractions before SDS-PAGE and immuno-blotting for BUD23 and TRMT112. POLRMT was blotted as a control for mitochondrial proteins, TOM22 as a control for a mitochondrial membrane protein and GAPDH and Histone H4 as control non-mitochondrial proteins.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The up-regulated proteins from proteomic analysis of BUD23-deficient A549 cells are visualised as a STRING10 network.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A and B) Further analysis of the data in Figure 2C: Basal respiration was determined from average OCR measurements of A549 cells in an unstimulated state. LEAK respiration was determined by subtracting the average OCR after addition of OA from the average OCR after addition of AA+R. (C) qPCR analysis of mitochondrial gene expression (MT-ATP6 and MT-ATP8) in A549 cells treated with control siRNA (neg1) or siRNA specifically targeting BUD23, RPS27A, LTV1 or RIOK2. (D) Example RNA screentape gel showing 28S and 18S bands for A549 cells treated with either control siRNA or BUD23 specific siRNA.
+
 Ontology analysis of the proteomics dataset was used to predict the functional consequences of BUD23 reduction (PANTHER GO biological processes). Over-representation analysis of the up-regulated proteins overlapped significantly with the ‘protein translation’. Analysis of the down-regulated proteins again showed a statistically significant over-representation for proteins associated with GO biological terms including ‘translation’, as well as ‘rRNA metabolic process’ and ‘protein metabolic process’ which support a major effect on the translational apparatus (Figure 2B). Unexpectedly, there was also over-representation within the down-regulated proteins for the terms ‘Mitochondrion organization’ and ‘Cellular component biogenesis’, suggesting a consequential impact on mitochondrial function, a major destination for new protein synthesis in the cell.
 
-## BUD23 regulates mitochondrial function
+### BUD23 regulates mitochondrial function
 
 Because the TE of mitochondrial transcripts was down-regulated and mitochondrial organisation emerged from the proteome analysis, specific assays of mitochondrial activity were performed. Depletion of BUD23 with any of three, independent siRNAs resulted in a > 50% reduction in oxidative phosphorylation (OXPHOS) and around a 25% reduction in Electron Transfer Capacity (ETC) (Figure 2C,D,E) but no observable difference in leak respiration (LEAK), relative to control (Figure 2—figure supplement 2). Moreover, no alteration in glycolytic capacity was observed indicating specificity for mitochondrial energetic pathways (Figure 2F). We also observed a reduction in mitochondrial mRNA abundance with BUD23 knockdown, but no change in mitochondrial genome copy number, implying a functional defect, rather than loss of mitochondrial mass (Figure 2G,H,I), although these measurements were performed soon after siRNA knockdown, and so a later impact on mitochondrial mass resulting from prolonged BUD23 loss cannot be excluded.
 
@@ -89,9 +117,17 @@ To examine whether this mitochondrial transcription defect was specific to BUD23
 
 To check that BUD23 was not regulating mitochondria directly, we blotted for the protein after sub-cellular fractionation. BUD23 was found to be abundant in the cytosolic fraction but was not detected in the mitochondrial fraction after proteinase K digestion (Figure 2J). This suggests the mechanism of BUD23 action does not occur within the mitochondria. Furthermore, TRMT112, the obligate BUD23 binding partner, was also abundant in the cytosol, but barely detectable within mitochondria (Figure 2J). Together these data indicate that BUD23-dependent mitochondrial regulation is likely to be a downstream consequence of effects on ribosome composition, function, and cellular protein repertoire, rather than a direct effect of BUD23 protein within the mitochondria.
 
-## Homozygous deletion of Bud23 results in embryo-lethality
+### Homozygous deletion of Bud23 results in embryo-lethality
 
 To investigate the physiological impact of BUD23 we generated Bud23 null mice. We introduced a frameshift deletion within the Bud23 gene, which resulted in a null allele (Figure 3A). However, upon further breeding of heterozygous mice a clear deviation from the expected Mendelian ratio was observed in the resultant offspring. Out of 74 pups born, 39 were found to be wild-type for the Bud23 gene, 35 were heterozygous, and zero were homozygous for the null allele (Figure 3B), indicating embryonic lethality in Bud23-null mice. This is in contrast to reports in yeast where BUD23 was shown to be non-essential for life (White et al., 2008). Furthermore, it is notable that approximately half the expected heterozygote birth rate was seen, implying an additional haplo-insufficiency developmental death rate. Accordingly, we analysed embryos at day E10.5 and detected Mendelian ratios of wild-type, and heterozygous animals, but again no homozygous null embryos were seen (Figure 3B), suggesting total Bud23 loss is incompatible with embryogenesis, but haploinsufficiency results in fetal death later in development.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the targeting strategy used to create a murine Bud23 knockout allele and a floxed allele were generated by CRISPR-Cas9. (B) Genotype analysis of day E10.5 embryos and the offspring from heterozygous breeding pairs. (C) Bud23 Heterozygous (HZ) and wildtype (WT) mice (10–30 weeks old) were analysed over time for body composition by ECHO-MRI. (D) Genotype analysis of offspring from heterozygous recombined Bud23 (Bud23rec/wt) allele crosses. (E) PCR amplification of the Bud23 genomic locus in Bud23fl/fl mice positive or negative for MCKcre expression in heart tissue, shows successful recombination of the mutant Bud23 allele (bp = base pairs). (F) Disruption of BUD23 protein in the cre positive animals was confirmed by Western blot.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Metabolic function of adult HZ and WT mice was analysed over 3 days by CLAMS cage. (A) respiratory exchange ratio was calculated; (B) energy expenditure was calculated. Grey shading represents subjective night time.
 
 Surprisingly, surviving adult heterozygous mice showed no difference compared to wildtype littermate controls in body weight, lean body weight or body fat between 10 and 30 weeks of age (Figure 3C). There was also no significant change in energy expenditure or respiratory exchange ratio in Bud23+/- mice relative to WT littermate controls (Figure 3—figure supplement 1), suggesting compensatory mechanisms to permit survival.
 
@@ -99,21 +135,45 @@ To circumvent embryonic lethality, we generated a floxed Bud23 allele mouse, all
 
 We targeted Bud23 disruption to skeletal and cardiac muscle using Muscle Creatine Kinase (Mck)-cre as the driver (Whitnall et al., 2008). Cardiac muscle relies heavily on mitochondrial production of ATP in post-natal life, but less so during development, so offering us the chance to analyse BUD23 impact on a highly mitochondrially-dependent tissue. Bud23fl/fl Mck-Cre+/- mice exhibited Cre-mediated deletion of exon 7 of the Bud23 gene in cardiac tissue, with a consequent reduction in BUD23 protein levels (Figure 3E,F).
 
-## BUD23 deficiency drives preferential dysregulation of mitochondrial proteins
+### BUD23 deficiency drives preferential dysregulation of mitochondrial proteins
 
 Loss of BUD23 in cardiac muscle resulted in sudden death between the age of 28–35 days (Figure 4A). Littermate control mice expressing Bud23fl/flMck-Cre-/- or Bud23fl/wt Mck-Cre+/- (i.e. mice retaining at least one functional copy of the Bud23 allele) were viable, fertile and did not die prematurely (Figure 4A). Mouse tissues from this line were therefore subsequently harvested at 26 days of age. A significant reduction in the 18S/28S RNA ratio, consistent with the in vitro data using siRNA knockdown was observed at this time point (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig4-v2.jpg)
+
+**Figure 4.:** (A) Survival curve for Bud23fl/fl Mck-Cre+/- (Bud23 knock-out targeted to heart and muscle) shown in blue, compared to littermate controls (Bud23wt/fl Mck-Cre-/-, Bud23wt/fl Mck-Cre+/-, Bud23fl/fl Mck-Cre-/-), all shown in red. For subsequent analyses, hearts were collected from 26 day old Bud23fl/fl Mck-Cre+/-, and Bud23fl/fl Mck-Cre-/- littermate controls. (B) 18S/28S ratio analysis of RNA extracted from BUD23 positive or negative mouse hearts using TapeStation. (C) Proteomics was performed on heart tissue from Cre +ve and Cre -ve littermates (n = 3). Total protein concentration per cell is shown, as determined via the proteomic ruler approach. (D) Relative contribution levels of each organelle to total protein mass based on ontology. The decrease in mitochondrial mass observed in Cre positive hearts is indicated. (E and F) Volcano plots of either total protein or mitochondrial protein fold change differences in Cre positive hearts relative to Cre negative hearts. Significantly up- and down-regulated proteins are indicated in red (FDR < 0.05, s0 = 0.2). (G) Functional enrichment network of total down-regulated proteins. The network was built using String 10 online software prior to export into Cytoscape.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) PCA analysis of proteomic data from BUD23 deficient cardiac homogenates and littermate controls. (B) Network analysis of all significantly upregulated proteins. The cluster of proteins involved in translation/protein synthesis are coloured red; the cluster of proteins associated with the proteasome are highlighted in purple.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Correlation analysis of change in TE after BUD23 knockdown (x-axis, change in TE) plotted against change in protein abundance in BUD23-deficient murine hearts (y-axis, change in protein). Spearman’s rank correlation coefficient: R = 0.11, p=4e^−6.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Network analysis of all downregulated mitochondrial proteins. Electron transport chain complexes I, IV and V are highlighted in red purple and orange respectively.
 
 Proteomic analysis of cardiac tissue recovered from 26 day old Bud23fl/flMck-Cre+/- mice and littermate controls (Bud23fl/flMck-Cre-/-) revealed a significant decrease in protein content per cell with loss of BUD23 (Figure 4C), with clear separation by genotype (Figure 4—figure supplement 1). When detected proteins were annotated by sub-cellular compartment, mitochondria were found to be subject to the largest loss of protein content, with small reciprocal increases in the other compartments (Figure 4D), again identifying mitochondria as especially sensitive to BUD23 action. Of the 2047 proteins identified by mass spectroscopy, 347 were found to be significantly up-regulated and 442 were found to be significantly down-regulated in the BUD23 deficient condition (Figure 4E, Figure 4—source data 1). Whilst an approximately equivalent number of down and up regulated proteins was identified globally, when this list was refined to mitochondrial proteins only 20 were up-regulated compared to 220 down-regulated (50% of all down-regulated proteins) (Figure 4F). By contrast, the up-regulated dataset was enriched for translational (60S proteins) and proteasomal proteins (Figure 4—figure supplement 1). Whilst correlation between change in protein abundance in BUD23-deficient heart tissue and change in mRNA TE of the corresponding transcripts in the BUD23 siRNA treated A549 cells was poor overall (Figure 4—figure supplement 2), it is striking that mitochondria are affected to a great extent in both models. These observations show a strong selectivity for impaired expression of mitochondrial proteins as a result of BUD23 deficiency.
 
 Within the set of mitochondrial proteins, we found that electron transport chain complexes I, IV and V (ATP synthase) were most strongly reduced in response to loss of BUD23 (Figure 4—figure supplement 3). Furthermore, ontology analysis of all the significantly down-regulated proteins identified three main clusters of proteins: mitochondrial proteins, mitochondrial ribosomal proteins and proteins involved in energy metabolism, indicating a functional mechanism linking between the BUD23 dependent ribosomal defect, through reduced mitochondrial protein expression to result in disruption of energy metabolic pathways (Figure 4G). Therefore, BUD23 actions on the ribosome result in down-regulation of core mitochondrial proteins involved in ATP synthesis.
 
-## BUD23 deficiency causes mitochondrial dysfunction in cardiomyocytes
+### BUD23 deficiency causes mitochondrial dysfunction in cardiomyocytes
 
 Given the observation of preferential dysregulation of mitochondrial proteins, we hypothesised that mitochondrial function was likely to be compromised in BUD23-deficient cardiac tissue. Mitochondrial DNA copy number was reduced in BUD23 deficient cardiac tissue (Figure 5A). Functional analysis of mitochondrial function in cardiac homogenates using the Oroboros microrespirometer system revealed that mitochondrial OXPHOS and ETC were both significantly reduced in mice deficient for BUD23, while LEAK respiration was unaffected (Figure 5B). The reduction in OXPHOS led to a lower respiratory control ratio (RCR) indicating that mitochondria from mice deficient for BUD23 were less efficient at producing ATP. These effects were apparent regardless of which substrate was used for electron donation. In addition to reduced mitochondrial capacity, mice deficient for BUD23 had lower citrate synthase activity, indicating a reduction in cardiac mitochondrial density (Figure 5C), which accords with the measured loss of mitochondrial genome copy number (Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig5-v2.jpg)
+
+**Figure 5.:** Mouse tissues were collected at 26 days old. (A) Mitochondrial genome copy number measured in the heart tissue by qPCR, relative to autosomal genome copy number (n = 6). (B) Mitochondrial respiration was measured in heart homogenates (n = 5–6). Oxygen consumption was measured under various mitochondrial states and normalised to protein content: LEAK conditions (malate, pyruvate and glutamate as substrates); OXPHOS (routine respiration rate) through Complex I, I+II or IV; ETC (maximal respiration rate) through Complex I+II and II; Respiratory Control Ratio (RCR, measure of mitochondrial efficiency). (C) Citrate Synthase activity was measured in the heart homogenates as a marker of mitochondrial content. (D) Electron microscopy images of mitochondria in cardiomyocytes from either Bud23fl/fl (WT) hearts, or Bud23fl/fl Mck-Cre +ve (KO) hearts. Accumulation of electron dense granules is visible in Bud23fl/fl Mck-Cre +ve (KO) hearts, denoted by arrows. (E) These hearts were further analysed for expression of mitochondrial biogenesis genes, markers of glycolysis, mitochondrial biogenesis, oxidative stress and indicators of mitochondrial transcription using qPCR. (F) ROS was measured simultaneously with O2 consumption (see Figures 1–3) under various mitochondrial states and normalised to citrate synthase activity: LEAK conditions (malate, pyruvate and glutamate as substrates); OXPHOS (routine respiration rate) through Complex I or I+II; ETS (maximal respiration rate) through Complex I+II and II, and in the presence of antimycin-A (residual oxygen consumption, ROX)(n = 5–6).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Analysed to citrate synthase activity and protein content respectively in (A) and (B). (C and D) The data in Figure 4B separated into males and females respectively (normalised to citrate synthase activity).
+
 To test whether haplo-insufficiency of BUD23 protein was enough to impair mitochondrial function we also tested heart homogenates from Bud23+/- mice. These were found to have no significant difference in mitochondrial respiratory capacity across any mitochondrial state (LEAK, OXPHOS, ETS), whether normalised to citrate synthase activity or protein content (Figure 5—figure supplement 1). It was, however, noted that, compared to wild-types, Bud23+/- mice did exhibit significantly higher citrate synthase activities, indicating greater mitochondrial density. This may result from increased mitochondrial biogenesis to compensate for defective oxidative phosphorylation function and may partly explain the reduced viability in Bud23+/- mice. Interestingly, the impact of BUD23 loss on mitochondrial function appears to be sexually-dimorphic. When mitochondrial respiration was normalised to citrate synthase, male heterozygous (HZ) mice exhibited a deficiency in OXPHOS and ETS relative to wildtype, whereas female mice did not (Figure 5—figure supplement 1). This observation indicates a more severe phenotype in BUD23 deficient males, with further derangement of individual components of the electron transport chain.
 
-## Analysis of mitochondrial morphology, and operation of compensatory circuits in targeted cardiac muscle
+### Analysis of mitochondrial morphology, and operation of compensatory circuits in targeted cardiac muscle
 
 Electron microscopy (EM) analysis revealed that despite decreased mitochondrial protein abundance and reduced mitochondrial function in the BUD23 cardiac tissue, the individual mitochondria appear to be formed normally with an equivalent number of cristae compared to the wildtype. The intermyofibrillar mitochondria were typically arranged in a highly ordered pattern in the wildtype cardiac tissue, however, there was marked disorganisation in the BUD23-deficient cardiac tissue (Figure 5D). In addition, we identified the presence of numerous spherical electron dense inclusion bodies within the mitochondria of BUD23 deficient cardiac cells (Figure 5D, yellow arrows). Similar electron dense structures have been previously reported in myocardial mitochondria, which may accumulate in response to increased cellular bioenergetic demand (Jacob et al., 1994). The observation of these structures here may be consistent with attempted mitochondrial adaptation to energetic-demand challenge.
 
@@ -121,9 +181,17 @@ A frequent cellular adaptation to impaired oxidative phosphorylation is a switch
 
 Impaired mitochondrial function may result in overproduction of reactive oxygen species, which can trigger the apoptotic cascade and lead to cell death. Such a progression may explain the distorted and thinned ventricular walls observed in the cardiac Bud23-null mice. We found induction of NRF2 (Figure 5E), a key sentinel gene controlling cellular responses to reactive oxygen species stress, which led us to measure reactive oxygen species directly, and found that these were significantly higher in hearts lacking BUD23 expression (Figure 5F), identifying a burden of increased reactive oxygen species in BUD23 deficient cardiomyocytes resulting from the action of deranged mitochondria.
 
-## BUD23 deficiency in cardiac muscle leads to dilated cardiomyopathy
+### BUD23 deficiency in cardiac muscle leads to dilated cardiomyopathy
 
 Deficient mitochondrial generation of ATP in cardiac tissue is a key cause of cardiomyopathy. Given the strong mitochondrial deficiencies observed in BUD23-deficient cardiac tissue, we predicted that the cardiomyopathy was the likely cause of sudden death. Histological examination of hearts from Bud23fl/fl Mck-Cre+/- (BUD23-deficient) mice showed significant enlargement, ventricle dilatation and decreased ventricle wall thickness compared to littermate controls at 26 days old (Figure 6A–D). Littermate control mice expressing Bud23fl/flMck-Cre-/- or Bud23fl/wt Mck-Cre+/- (i.e. mice retaining at least one functional copy of the Bud23 allele) were viable, fertile and did not die prematurely (Figure 3A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig6-v2.jpg)
+
+**Figure 6.:** (A) Heart sections cut in the coronal plane and stained with haematoxylin and eosin from day 26 mice. Representative images are shown. (B) Heart weight measured as a ratio to total bodyweight. (C and D) Analysis of heart ventricle wall thickness in H and E stained heart sections. (E) Echocardiography of Bud23fl/flMck-Cre+/- mice and littermate controls at 26–28 days of age (n = 9–10). Mice were lightly anesthetized maintaining the heart rate at approximately 450 beats/min. Data for diastolic diameter (dD), systolic diameter (sD), fractional shortening (FS) and relative wall thickness (RWT) are shown; full parameter measurements are shown in supplementary. (F) Electrocardiography of Bud23fl/flMck-Cre+/- mice and littermate controls at 26–28 days of age (n = 9–10). Data for QRS, QTc and JT intervals are shown. Full parameter measurements are shown in supplementary. * denotes statistical significance (p<0.05) using Student’s T-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50705/elife-50705-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Fibrosis related proteins identified as significantly up-regulated in heart tissue from Bud23fl/flMck-Cre +/- mice and littermate controls Data are shown as Log2(LFQ) values. (B) Lungs and livers were removed en bloc from mice deficient for cardiac BUD23 or littermate controls, then weighed before and after drying to give a wet/dry ratio.
 
 Echocardiogram analysis of Bud23fl/fl Mck-Cre+/-mice at 26–28 days old showed that cardiac BUD23-deficiency resulted in systolic dysfunction indicated by significantly dilated left ventricle (sD), as well as significantly decreased fractional shortening and relative wall thickness (Figure 6E, Figure 6—source data 1).). There was, however, no observed pulmonary oedema or liver oedema (Figure 6—figure supplement 1,). Further analysis of the heart proteomics data from Figure 4 showed an increase in a number of markers of fibrosis, including Col4a2, CTGF, Galectin-3 and others (Figure 6—figure supplement 1). Taken together, these observations indicate that Bud23fl/fl Mck-Cre+/- mice exhibit the early stages of heart failure around 26–28 days of age. Electrocardiogram analysis of the same mice at the same age revealed significantly shorter QRS and corrected QT (QTc) intervals but no change in heart rate (Figure 6F; Figure 6—source data 1).).
 
@@ -141,15 +209,158 @@ There is a growing recognition that transcriptional control mechanisms are insuf
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BUD23</td>
+      <td></td>
+      <td>Gene ID: 114049</td>
+      <td>Aliases: WBSCR22, MERM1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Bud23null</td>
+      <td>This paper</td>
+      <td>Bud23null</td>
+      <td>Mutant allele: deleted exon 7 of BUD23 gene</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>BUD23fl/fl</td>
+      <td>This paper</td>
+      <td>BUD23fl/fl</td>
+      <td>Mutant allele: floxed exon 7 of BUD23 gene</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mck-Cre</td>
+      <td>Whitnall et al., 2008</td>
+      <td>B6.FVB(129S4)-Tg(Ckmm-cre)5Khn/J</td>
+      <td>Heart and muscle specific Cre-driver</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td>Airway epithelial adenocarcinoma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BUD23 (Rabbit polyclonal)</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX105840</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BUD23_F</td>
+      <td>This paper</td>
+      <td>Genotyping primers</td>
+      <td>5’-CCTGGCTGATGTGTTGCTTT-3’ Annealing temperature: 62°C</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>BUD23_R</td>
+      <td>This paper</td>
+      <td>Genotyping primers</td>
+      <td>5’-GCTGCACATCTCTCCTCACT-3’ Annealing temperature: 62°C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MT-ND1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>5’-GAAGTCACCCTAGCCATCATTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>MT-ND1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>5’GCAGGAGTAATCAGAGGTGTTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA: nontargeting control 1</td>
+      <td>Thermo Fisher</td>
+      <td>AM4611</td>
+      <td>Silencer Select</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA: nontargeting control 2</td>
+      <td>Thermo Fisher</td>
+      <td>4390847</td>
+      <td>Silencer Select</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA: BUD23</td>
+      <td>Thermo Fisher</td>
+      <td>41529</td>
+      <td>Silencer Select</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA: BUD23</td>
+      <td>Thermo Fisher</td>
+      <td>41530</td>
+      <td>Silencer Select</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA: BUD23</td>
+      <td>Thermo Fisher</td>
+      <td>41531</td>
+      <td>Silencer Select</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>www.r-project.org</td>
+      <td></td>
+      <td>Key packages: -EDGER -BIOCONDUCTOR -EDASEQ</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Seahorse XF Mito stress test</td>
+      <td>Agilent</td>
+      <td>103015–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Seahorse XF Glyco stress test</td>
+      <td>Agilent</td>
+      <td>103020–100</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All mice were routinely housed in 12:12 light/dark (L:D) cycles with ad libitum access to food and water. All experiments were carried out in accordance with the Animals (Scientific Procedures) Act 1986 (UK) under Home Office protocol number 70/8768 and P3A97F3D1. In studies utilizing conditional targeted mice, littermate controls (floxed/floxed) were used as control; these mice carried no copies of the Cre or iCre. Genotyping was performed on all experimental animals.
 
-## Physiological monitoring
+### Physiological monitoring
 
 To assess body composition, whole body, fat mass and lean body mass was assessed using the EchoMRI system (Echo Medical Systems). To assess metabolic gas exchange, mice were individually housed in indirect calorimetry cages (CLAMS, Columbus Instruments). Mice were acclimatised to the cages for 48 hr prior to recording data. Measurements of O2 consumption and CO2 production were recorded every 10 min for >72 hr. RER was derived from these measures (VCO2/VO2), as was energy expenditure (3.815∗VO2 + 1.232∗VCO2).
 
-## Generation of Bud23 conditional KO mice
+### Generation of Bud23 conditional KO mice
 
 In order to conditionally KO the Bud23 gene by Cre recombinase expression we generated a transgenic mouse line with the critical exon seven flanked by LoxP sites. Exon seven has an unequal splicing phase, meaning its Cre mediated excision would lead to a frame shift and KO of the Bud23 gene. This exon is also flanked by large introns giving sufficient space to insert LoxP sites without perturbing normal gene splicing and regulation. We used CRISPR (clustered regularly interspaced short palindromic repeats)-Cas9 in the mouse zygote to integrate these LoxP sites.
 
@@ -161,19 +372,19 @@ An injection mix of the three sgRNA (40 ng/ul each), Cas9 mRNA (100 ng/ul) and t
 
 Potential founder mice were screened by PCR and digest. Animals positive for both 5’ and 3’ LoxP integration had the region fully verified by pCR-Blunt cloning followed by Sanger sequencing. two founder mice were identified and then back-crossed to C57BL/6J wild-type mice to assess germline penetrance. Additionally, the described CRISPR targeting strategy resulted in deletion of critical exon 7, a global Bud23 KO line was generated from this founder animal.
 
-## Genotyping
+### Genotyping
 
 DNA was extracted from ear snip or tail tip using REDExtract-N-Amp tissue PCR kit (Sigma). Primer sequences and PCR reaction conditions are listed in the key resources table and the primer sequences supplementary file. PCR products were resolved on 1.5% agarose gels.
 
-## Cells
+### Cells
 
 STR authenticated A549 cells were obtained from the European Collection of Cell Cultures (ECACC Cat no: 86012804) and maintained in culture, incubated at 37°C in humidified air, 5% v/v CO2. Cultured cells were tested regularly for mycoplasma contamination. A549 cells were cultured in DMEM growth medium (Sigma, D6546), supplemented with 2 mM L-Glutamine (Sigma, G7513), 10% foetal calf serum (FCS) (Sigma, F96665).
 
-## Depletion of BUD23 with siRNA
+### Depletion of BUD23 with siRNA
 
 A549 cells were plated at 1 × 10^6 cells in a 10 cm cell culture dish and transfected with BUD23 specific or non-targeting control siRNA (S41529, S41530, S41531, negative control 1, negative control 2, Ambion Silencer Select) using Dharmafect DF-1 according to the manufacturer’s guidelines.
 
-## Mass spectrometry
+### Mass spectrometry
 
 A549 cell pellets were lysed in M-PER mammalian protein extraction reagent (Thermo Scientific). Whole mouse hearts were dissected, quartered and washed in ice cold PBS to remove blood before disruption of the tissue in 1x TBS supplemented with protease inhibitor cocktail using a TissueRuptor (Qiagen). SDS was added to a final concentration of 4% (w/v) prior to sonication. Samples were then reduced with 100 mM DTT and heated for 3 min at 95°C. Samples were prepared for label-free quantification in accordance with published protocols (Hernandez-Valladares et al., 2016). Digested samples were analysed by LC-MS/MS using an UltiMate 3000 Rapid Separation LC (RSLC, Dionex Corporation, Sunnyvale, CA) coupled to a Q Exactive HF (Thermo Fisher Scientific, Waltham, MA) mass spectrometer using a stepped normalized collision energy centered at 28.
 
@@ -181,29 +392,29 @@ A549 peptide mixtures were separated using a multistep gradient from 95% A (0.1%
 
 Ionization potential was set at 1900V with a survey scan window of 300–1750 m/z. MS1 used a resolution of 120,000 with a target ion intensity of 3e6. Higher-energy collisional dissociation was used. MS2 was set at a resolution of 60,000 with a target ion intensity of 2e5. Maximum injection times for MS1 and MS2 were 20 ms and 110 ms respectively. Peptides were dynamically excluded for 15 s after one occurrence.
 
-## Mass spectrometry data analysis
+### Mass spectrometry data analysis
 
 Mass spectra were analysed using MaxQuant version 1.6.0.16 (Cox and Mann, 2008), searching against either the Uniprot Mus musculus database (accessed 21/12/2017) or Homo sapiens database (accessed 12/03/2017) using the native Andromeda search engine. Match between runs was selected with a retention time of 1 min, using default parameters for all other settings. MS1 search tolerance was set at 20ppm, and MS2 at 4.5ppm. Modifications were set as Carbamidomethyl (C) for fixed, and Oxidation (M) and Acetyl (Protein N-term) variable. A minimum of 1 spectra was required for identification, while a minimum of 2 spectra were required for quantification. Resulting data was processed using Perseus version 1.6.0.7 (Tyanova et al., 2016) and R statistical software (Wickham, 2009; R Development Core Team, 2017). All proteins identified by site only, as a potential contaminant, or in the decoy reverse database were excluded. Data was then filtered to exclude proteins with more than 3 ‘zero-values’ across all groups. All proteins assigned to the GO term ‘blood microparticle’ were removed as well. LFQ values were log(2) transformed and missing values imputated in Perseus using a normal distribution (Lazar et al., 2016). The width of the new distribution was 0.3 standard deviations of the data, and was shifted downwards by 1.8 standard deviations of the data. A total of 6.68% of values were imputated. Significance was determined using a T-test with a permutation based FDR (FDR < 0.05, s0 = 0.1). s0 represents the relative importance of the difference between the means, with non-zero s0 values taking fold change, and not only p-value, into account. Estimations of copy numbers were performed using the proteomic ruler plug-in version 0.1.6 (Wiśniewski et al., 2014). Proteins were then mapped to subcellular localisations to determine percentage protein mass by organelle according to published protocols using the HeLa spatial proteome database (Doll et al., 2017; Itzhak et al., 2016). Interaction networks were built using String 10 online software (Szklarczyk et al., 2017) using seven data sources (textmining, experiments, databases, co-expression, neighborhood, gene fusion co-occurrence) and imported into Cytoscape (Shannon et al., 2003). Network edges represent confidence. A minimum interaction score of 0.4 (medium confidence) was required for network inclusion. Enrichment analysis was performed using PANTHER (Mi et al., 2017). Lists of proteins were exported for the identified GO terms and then manually coloured using Cytoscape for visualization.
 
-## Echocardiogram
+### Echocardiogram
 
 Transthoracic echocardiography (TTE) was performed using a Vevo 770 High-Resolution Imaging System (Visualsonics Inc, Toronto, Canada) and a 30MHz probe. Mice were lightly anesthetized with 1–1.5% isoflurane via facemask, maintaining the heart rate at approximately 450 beats/min. Views were taken in planes that approximated the parasternal short-axis view and the apical long-axis view. M-mode tracings were used to determine left ventricular end-diastolic diameter (LVDD) and end-systolic diameter (LVSD), posterior wall thickness in diastole (LVPWD) and systole (LVPWS), and interventricular septum thickness in diastole (IVSD) and systole (IVSS) over three cardiac cycles. The analysis was performed blinded to animal details. LV fractional shortening (FS) was calculated using the formula FS = [(LVDD - LVSD)/(LVDD)] x 100. Relative wall thickness (RWT) was calculated using the equation RWT = (IVDD + LVPWD)/LVDD.
 
-## Electrocardiogram (ECG)
+### Electrocardiogram (ECG)
 
 Mice were lightly anesthetized with 1–1.5% isoflurane via facemask. The body temperature was maintained around 37°C using a heat pad. The lead II ECG was recorded using Power Lab/4SP system (Adinstruments) from needle electrodes inserted subcutaneously into the left and right forelimbs and the right hindlimb. The signal was acquired for about 5 min using Chart 7 software (Adinstruments). During offline analysis, the 5 min recording was examined for unusually shaped P, QRS, or ‘T’ waves and for time-varying phenomenon (e.g. irregularities in interval durations). Ectopic or abnormal beats are noted. A representative 10–15 s segment of the recording was averaged to obtain the signal averaged ECG to calculate Heart rate, RR interval, P wave duration, PR interval, QRS, JT and QT durations. QT duration was corrected (QTc) using the Bazett's formula (Bazett, 1997).
 
-## Polysome profiling
+### Polysome profiling
 
 Polysome profiles were prepared according to the protocols previously published in: (Gandin et al., 2014). Two conditions were profiled, BUD23 siRNA and Control siRNA, with an n of 3 samples per condition. Fractions were collected from each sample and RNA was purified using the Trizol extraction method. RNA from fractions containing three or less ribosomes were pooled (‘Low translational efficiency) and RNA from fractions containing more than three ribosomes (‘high efficiency’) were pooled. Sub-polysomal fractions were similarly pooled. RNA sequencing was used to quantify the expression of RNA species in each of the pooled samples. Translational efficiency (TE) was defined as the relative abundance of a transcript in the high and low efficiency pooled fractions. A TE score for each transcript was calculated by averaging the ratio derived from each of the three replicates in each condition. TE was plotted for the two conditions using R software.
 
 Translational efficiency (TE) was then compared to both the length and GC content of the 5' UTR region. 5' UTRs were defined using the TxDb.Hsapiens.UCSC.hg38.knownGene (Bioconductor Core Team and Bioconductor Package Maintainer, 2016) and org.Hs.eg.db (Carlson, 2018) R packages. Sequences of the regions were extracted using the twoBitToFa program from the BLAT suite (Kent, 2002) and then GC content was calculated using the seqinr R package (Charif and Lobry, 2007). The Pearson correlation coefficients, and their relative significances, were calculated using cor.test function from the stats R package (R Development Core Team, 2017).
 
-## Assessment of mitochondrial function using seahorse
+### Assessment of mitochondrial function using seahorse
 
 Live cell metabolic assays were performed on A549 cells pre-treated with either BUD23 siRNA or control siRNA using a Seahorse XFe 96 analyser (Agilent). Mitochondrial stress tests was performed according to the manufacturer’s instructions (Agilent). 2M Oligomycin (OA), 1M FCCP and 0.5M rotenone/antimycin A (AA+R) were used for all conditions. A549 cells were plated into Seahorse XF96 plates at 160,000 cells per well, utilising 16 wells per condition. Cell density was normalised using SRB assay. Experiments were performed in triplicate.
 
-## Assessment of mitochondrial function using oroboros
+### Assessment of mitochondrial function using oroboros
 
 Of the three distinct experimental preparations available (isolated mitochondria, permeabilized fibers, and tissue homogenates), we utilized cardiac homogenates for mitochondrial assessment (see Goo et al., 2013 for advantages of this method). Ventricular tissue (~20 mg) was weighed and transferred to 1.5 ml of ice-cold MiRO5 medium (in mM: EGTA 0.5, MgCl2 1.4, taurine 20, KH2P04 10, HEPES 20, BSA 1%, K-MES 60 mM, sucrose 110 mM, pH 7.1, adjusted with 5 N KOH). Tissue was homogenized for 3 s in 1 s bursts with a tissue homogenizer and loaded immediately (40 µg/ml) into an Oroboros Oxygraph 2 k high resolution respirometry system (Oroboros Instruments, Innsbruck, Austria) for measurement of mitochondrial respiration combined with the Fluorescence-Sensor Green of the O2k-Fluo LED2-Module for H2O2 measurement (see Makrecka-Kuka et al., 2015 for full details).
 
@@ -213,24 +424,24 @@ Three parameters are commonly used to assess mitochondrial function (for reviews
 
 OXPHOS, LEAK and ETS were measured in the presence of Complex I substrates pyruvate and malate (electron transfer through Complexes I-IV) or Complex I+II substrates (addition of succinate). Additionally, respiratory flux with electron transfer through Complex IV alone was measured via the addition of the electron donor tetramethyl-phenylene-diamine (TMPD). The protocol used to measure these parameters was adapted from Pesta and Gnaiger (2012). Briefly, pyruvate (5 mmol l −1), malate (0.25 mmol l−1) and glutamate (10 mmol l−1) are added as carbon substrates and to spark the citric acid cycle. Under these conditions, mitochondria are in LEAK respiration with CI substrates in the absence of adenylates. OXPHOS with CI substrates was achieved through addition of saturating levels of ADP (2 mM l−1). Following steady-state conditions, succinate (10 mmol l−1) was added to achieve OXPHOS with CI+CII substrates. To uncouple respiration and achieve ETS with CI+CII substrates, carbonyl cyanide 4-trifluoromethoxyphenylhydrazone (FCCP) was carefully titrated to a maximum concentration of 0.25 μmol l−1. Rotenone was then added to achieve ETS with CII substrates and antimycin A (5 μmol l−1) was given to block Complex III and measure background non-mitochondrial residual oxygen consumption (ROX). OXPHOS through Complex IV alone was assessed by adding the electron donor TMPD (0.5 mmol l−1). To avoid oxidation of TMPD, ascorbate (2 mMol l−1) was added prior to TMPD injection.
 
-## Citrate synthase assay
+### Citrate synthase assay
 
 The citrate synthase activity of cardiac homogenates were measured in frozen homogenates. Briefly, maximal activity (Vmax) was determined with a spectrophotometer at 37°C with a Synergy HTX spectrophotometer (BioTek, UK) in assay buffer; 50 mM TRIS-HCl, pH 8.0. Citrate synthase activity was monitored in the presence or absence of oxaloacetate by the appearance of 5-thio-2-nitrobenzoic acid as a result of the reaction of free acetyl-CoA with 5,5’-dithiobis(2-nitrobenzoic acid) at 412 nm over a 10 min incubation period (assay buffer with 0.5 oxaloacetate, 0.3 mM acetyl-CoA, 0.15 mM 5,5-dithiobis-2-nitrobenzoic acid). Extinction coefficients were empirically determined to quantify Vmax values. Enzyme activities were normalised to total soluble protein, which was quantified according to Bradford (Bradford, 1976).
 
-## Western blots
+### Western blots
 
 Total cell protein was isolated from cells using protein extraction buffer (50 mM Tris, 150 mM NaCl, 1% TritonX-100, supplemented with protease inhibitors). Total protein was isolated from snap-frozen tissue using RIPA buffer supplemented with protease inhibitor cocktail after disruption using Lysing Matrix D tubes (MP Bio).
 
-## Electron Microscopy
+### Electron Microscopy
 
 All experiments were performed according to current UK Home Office regulations and under approval of the relevant University of Manchester (Manchester, UK) local ethics committee.
 
 Six mice were used for this study (n = 3 control, n = 3 Bud 23 KO). Immediately after euthanasia, hearts were harvested and small portions (cubes with sides smaller than 0.5 mm) of right and left ventricle were immersion fixed in 2.5% glutaraldehyde and 2% paraformaldehyde in 100 mM sodium cacodylate buffer (pH 7.2) overnight. Specimen preparation was performed, with small modifications, according to the Ellisman protocol (Holcomb et al., 2013). Briefly, after washings in sodium cacodylate, samples were sequentially stained in: 2% osmium tetroxide and 1.5% potassium ferrocyanide in 100 mM sodium cacodylate for 1 hr; 1% aqueous thiocarbohydrazide for 20 min; 2% aqueous osmium for 30 min; 1% aqueous uranyl acetate overnight and Walton’s lead aspartate for 30 min the following morning at 60°C. Samples were washed 3 times for 10 min in double distilled water after each staining step. Staining was followed by dehydration in ethanol ascending series (50%, 70%, 90%, 100%) and infiltration with TAAB 812 hard resin mixed with propylene oxide. After embedding, resin blocks were cured at 70° C for 40 hr. Plastic blocks were sectioned at 80 nm thickness using a Leica UC6 ultramicrotome and sections were imaged using a FEI Tecnai12 Biotwin operated at 100kV. Images were analysed using Fiji (Schindelin et al., 2012).
 
-## Cell fractionation
+### Cell fractionation
 
 Fractionation experiments were performed by differential centrifugation as previously described previously (Rorbach et al., 2014).
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Unless otherwise stated in the figure legend, parametric data was analysed by ANOVA with a Dunnett’s multiple comparisons test. Non-parametric data was analysed using a Mann-Whitney test. RNAseq data was analysed using edgeR (Robinson et al., 2010). For Mass Spectrometry data analysis please refer to the dedicated section.

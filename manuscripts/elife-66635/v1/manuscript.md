@@ -37,7 +37,7 @@ Stable isotope labelling (Lys (6)-SILAC-Mouse Diet, SILANTES GmbH) incorporated 
 
 ## Results
 
-## Proteome turnover in cartilage, skin, bone, and plasma during skeletal growth
+### Proteome turnover in cartilage, skin, bone, and plasma during skeletal growth
 
 To measure new protein synthesis and incorporation during the period of maximal skeletal growth, we pulse labelled two groups of mice (groups A and B, Figure 1) by feeding them heavy SILAC diet for 3 weeks from 4 weeks of age. Group A was culled for tissue collection immediately after the feeding period, whilst group B was fed the light SILAC diet for another 3 weeks (to week 10). Plasma, knee articular cartilage, ventral skin, and tibial bone were collected for analysis at week 7 (group A) or week 10 (group B). Tissues were extracted and analyzed by mass spectrometry (Figure 1).
 
@@ -47,9 +47,17 @@ To measure new protein synthesis and incorporation during the period of maximal 
 
 Figure 2 shows the percentage of heavy isotope incorporated into individual proteins at the end of the labelling period (week 7) compared with the amount of labelled protein remaining in that tissue after a 3 week washout period of light isotope diet (week 10). In essence, reflecting proteins that are newly incorporated into the tissue and their stability over time. Each tissue was considered separately. We used the plasma profile to define a fast turnover protein group as previously described (Price et al., 2010). As the animals are growing during this period, the amount of label remaining after the 3 week washout period reflects both protein turnover and label dilution due to tissue expansion. Proteins that showed over 80% incorporation during the heavy diet period and retained less than 20% after the light diet period were considered fast turnover proteins (hashed blue area, Figure 2), while proteins that showed little change in the percentage of isotope incorporation between the end of the heavy diet (week 7) and the end of the light diet (week 10) were regarded as ‘stable proteins’ (hashed pink area, Figure 2). Over 83% (142/171) of plasma proteins fell within the fast turnover group, while only 3.5% (6/171) proteins were within the stable group. Cartilage showed the lowest proportion of fast turnover proteins (18%, 115/634) when compared with bone (48%, 338/712) and skin (39%, 136/352), and was also the tissue that contained the most proteins with less than 40% isotope incorporation during the heavy diet period (bottom left-hand corner of graphs, Figure 2). The patterns of heavy isotope incorporation were similar across the four biological replicates for each tissue and time point (Figure 2—figure supplement 1). The full profile of the four tissue proteomes during skeletal growth are presented in Figure 2—source data 1.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig2-v1.jpg)
+
+**Figure 2.:** Each dot represents the mean of the percentage of incorporation of the heavy isotope for an individual protein, n = 4. The x axis represents percentage of the heavy isotope incorporation into proteins from weeks 4 to 7 of age (group A), and the y axis the heavy isotope subsequently lost during the light diet, weeks 7–10 (group B). Collagens are highlighted in red, proteoglycans in yellow, and glycoproteins in blue. The three most stable collagens, proteoglycans, and glycoproteins in each tissue are named. Percentage of stable (red hashed area) and fast turnover proteins (grey hashed areas) for each tissue are indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Data set of individual biological replicates for all four groups A–D (n = 2–4). The box extends from the 25th to 75th percentiles. The line in the middle of the box is plotted at the median, and the whiskers represent the 1 and 99 percentiles.
+
 When considering the stability of proteins across the whole proteome by examining the ratio (fold change) of % heavy label for each protein at time B compared with time A, a broad range of protein stabilities was demonstrated in each of the tissues (fold change range 0.05–1.06 [plasma], 0.11–1.0 [cartilage], 0.10–0.95 [bone], and 0.08–1.14 [skin]). Of these, matrisome proteins dominated the most stable proteins (ratios ≥ 0.8) particularly in cartilage and skin (12/18 proteins in skin, 14/25 proteins in cartilage, 2/14 proteins in bone, and 0/6 in plasma). The three most stable collagens (red dots), proteoglycans (yellow dots), and glycoproteins (blue dots) are highlighted for each tissue (Figure 2). During this period of skeletal growth, collagens exhibited variable stability across all tissues, and this included the fibrillar collagens (types I, II, III, V, and XI), which are generally regarded as being the most stable. Proteoglycan synthesis was more dynamic, showing lower fold change levels of the B/A ratio. Glycoproteins spanned a wide turnover range in all tissues.
 
-## Age-dependent remodelling of the tissue proteome
+### Age-dependent remodelling of the tissue proteome
 
 To investigate how new protein synthesis and incorporation changes during ageing, we pulse labelled another two groups of four male mice: groups C and D. Group C represented skeletally mature (young adult) mice fed heavy diet between 12 and 15 weeks of age. Group D mice were fed heavy diet between 42 and 45 weeks of age (older adult). For each animal, plasma, knee articular cartilage, ventral skin, and tibial bone were processed immediately after the 3 week heavy diet as in A (Figure 1). Histograms showing the frequency of incorporation of the heavy isotope into proteins in groups A, C, and D are shown in Figure 3. Protein synthesis generally decreased in all four tissues with age, as shown by a shift to the left of the histograms. As expected, this shift was more apparent for bone and cartilage between skeletally immature (group A) and young adult animals (group C) than between young (group C) and older adult mice (group D), commensurate with cessation of skeletal maturation. Although all tissues showed an age-related decline in new protein incorporation, protein synthesis was significantly different between the four tissues and at each age group, Kruskal–Wallis test, p<0.0001 for all comparisons. As expected, collagens (shown in red, Figure 3) dominated the proteins incorporating at the lowest levels (lowest % label).
 
@@ -61,17 +69,33 @@ We were able to determine protein synthesis rates in 27 different collagens α c
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig4-v1.jpg)
 
-**Figure 4.:** The percentage of newly synthesised collagen incorporated into articular cartilage, tibial bone, and ventral skin is estimated by the incorporation of the heavy isotope (13C6-Lys) into proteins during the 3 weeks of heavy diet. The three periods of heavy diet were compared: skeletal growth (4–7 weeks old), young adults just after skeletal maturity (12–15 weeks old), and older adults (42–45 weeks old). Error bars represent the standard deviation (n = 4). ND = not detected, protein group not present in the group dataset. NQ = not quantified, protein group present, but with <2 samples quantified. NL = not labelled, protein group with only light isotope quantified. Statistical significance was determined by pairwise comparisons using Perseus software, Student’s t-test reporting Benjamini-Hochberg adjusted p<0.05. Statistically significant differences were denoted as follows: &between groups A and C, $between groups A and D, ^between groups C and D, #between groups A–C and A–D, *between all three groups.Figure 4—source data 1.Figure 5.Percentage of new collagen incorporation in the three collagenous tissues. Cartilage, bone, and skin of skeletally growing mice (group A), young adults (group C), and older adults (group D). Mean ± SD, n = 4, Pairwise comparisons using Student’s t-test, p<0.05 significant.
+**Figure 4.:** The percentage of newly synthesised collagen incorporated into articular cartilage, tibial bone, and ventral skin is estimated by the incorporation of the heavy isotope (13C6-Lys) into proteins during the 3 weeks of heavy diet. The three periods of heavy diet were compared: skeletal growth (4–7 weeks old), young adults just after skeletal maturity (12–15 weeks old), and older adults (42–45 weeks old). Error bars represent the standard deviation (n = 4). ND = not detected, protein group not present in the group dataset. NQ = not quantified, protein group present, but with <2 samples quantified. NL = not labelled, protein group with only light isotope quantified. Statistical significance was determined by pairwise comparisons using Perseus software, Student’s t-test reporting Benjamini-Hochberg adjusted p<0.05. Statistically significant differences were denoted as follows: &between groups A and C, $between groups A and D, ^between groups C and D, #between groups A–C and A–D, *between all three groups.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig5-v1.jpg)
 
-**Figure 5.:** The percentage of newly synthesised proteoglycans incorporated into articular cartilage, tibial bone, and ventral skin is estimated by the percentage of incorporation of the heavy isotope (13C6-Lys) into the proteins during the 3 weeks of heavy diet. Protein synthesis and incorporation was estimated across the healthy life span, covering skeletal growth (4–7 weeks old), young adults just after skeletal maturity (12–15 weeks old), and older adults (42–45 weeks old). Error bars represent the standard deviation (n = 4). ND = not detected, protein group not present in the group dataset. NQ = not quantified, protein group present, but with <2 quantified samples. BMPg, bone marrow proteoglycan. Statistical significance was determined by pairwise comparisons using Perseus software, Student’s t-test reporting Benjamini-Hochberg adjusted p<0.05. Statistically significant differences were denoted as follows: &between groups A and C, $between groups A and D, ^between groups C and D, #between groups A–C and A–D, *between all three groups.Figure 5—source data 1.Figure 5.Percentage of new proteoglycan incorporation in the three collagenous tissues. Cartilage, bone, and skin of skeletally growing mice (group A), young adults (group C), and older adults (group D). Mean ± SD, n = 4, Pairwise comparisons using Student’s t-test, p<0.05 significant.
+**Figure 5.:** The percentage of newly synthesised proteoglycans incorporated into articular cartilage, tibial bone, and ventral skin is estimated by the percentage of incorporation of the heavy isotope (13C6-Lys) into the proteins during the 3 weeks of heavy diet. Protein synthesis and incorporation was estimated across the healthy life span, covering skeletal growth (4–7 weeks old), young adults just after skeletal maturity (12–15 weeks old), and older adults (42–45 weeks old). Error bars represent the standard deviation (n = 4). ND = not detected, protein group not present in the group dataset. NQ = not quantified, protein group present, but with <2 quantified samples. BMPg, bone marrow proteoglycan. Statistical significance was determined by pairwise comparisons using Perseus software, Student’s t-test reporting Benjamini-Hochberg adjusted p<0.05. Statistically significant differences were denoted as follows: &between groups A and C, $between groups A and D, ^between groups C and D, #between groups A–C and A–D, *between all three groups.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig6-v1.jpg)
 
-**Figure 6.:** The percentage of newly synthesised glycoproteins incorporated into articular cartilage, tibial bone, and ventral skin is estimated by the percentage of incorporation of the heavy isotope (13C6-Lys) into the proteins during the 3 weeks of heavy diet. Protein synthesis and incorporation was estimated across life, covering skeletal growth (4–7 weeks old), young adults just after skeletal maturity (12–15 weeks old), and older adults (42–45 weeks old).Figure 6—source data 1.Figure 6.Percentage of new glycoprotein incorporation in the three collagenous tissues. Cartilage, bone, and skin of skeletally growing mice (group A), young adults (group C), and older adults (group D). Mean ± SD, n = 4, Pairwise comparisons using Student’s t-test, p<0.05 significant.
+**Figure 6.:** The percentage of newly synthesised glycoproteins incorporated into articular cartilage, tibial bone, and ventral skin is estimated by the percentage of incorporation of the heavy isotope (13C6-Lys) into the proteins during the 3 weeks of heavy diet. Protein synthesis and incorporation was estimated across life, covering skeletal growth (4–7 weeks old), young adults just after skeletal maturity (12–15 weeks old), and older adults (42–45 weeks old).
 
 To examine changes in new protein incorporation across the whole tissue proteome with age, we compared the whole proteome profile in skeletally mature groups D and C. Data are represented in volcano plots (Figure 7). Significantly regulated proteins with –1.5 > FC > 1.5, and with Benjamini–Hochberg (BH) correction FDR p<0.05, for each tissue, are highlighted (bold points). Overall, of those proteins whose incorporation changed with age, most showed reduced incorporation. In connective tissues these were 37 from 452 in skin, 291 from 572 in bone, and 175 from 597 in cartilage. In plasma, 83 of 180 proteins exhibited statistically significant regulation upon ageing (proteins shown in Figure 7—source data 1). A small number of proteins had increased incorporation with age. Only two regulated proteins were common among the three collagenous tissues; H1f0, a histone protein, down-regulated in cartilage and bone but upregulated in skin, and Rpl12, a structural constituent of the ribosome 60 S subunit, down-regulated in the three tissues. Articular cartilage and tibial bone proteomes shared 9.6% of the statistically significant, regulated proteins while overlap between bone and skin was 1.1%, and cartilage and skin 0.7%. Total protein levels in each tissue, assessed by iBAQ measurements, remained unchanged post-skeletal maturity with just seven proteins changing significantly in articular cartilage (Figure 7—figure supplement 1). This likely reflects the substantially enhanced sensitivity of the pulse SILAC methodology to detect alterations in protein homeostasis.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig7-v1.jpg)
+
+**Figure 7.:** (A–D) Differential protein incorporation rates in young (15 weeks) versus older (45 weeks) adult tissues. (A) Cartilage, (B) bone, (C) skin, and (D) plasma. Volcano plots, unpaired Student’s t-test with BH correction FDR < 0.05, FC > 1.5, n = 4. Full list of proteins available in Figure 7—source data 1. (E–H) STRING cluster analysis of differentially incorporated proteins in each tissue. (E) Cartilage, (F) bone, (G) skin, and (F) plasma. Edges show high confidence interaction score = 0.7. Networks clustered to MCL inflation parameter = 2. Cluster elements are listed in Figure 7—source data 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Comparison of raw intensities from young adults (15 weeks old) and older adults (45 weeks old) showing that the majority of protein intensities follow a 1:1 ratio. (B). Volcano plots comparing protein abundance based on total iBAQ intensities. Unpaired Student's t-test with BH correction FDR < 0.05, FC > 1.5, n = 4. Collagens are marked as references. In cartilage six proteins were significantly down- (blue) or up- (red) regulated.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Values represent total number of protein groups quantified in each tissue, including those proteins recovered using iBAQ light and heavy data.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/66635/elife-66635-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Canonical Pathway enrichment analysis was performed comparing groups C (young adult) and D (older adult) by IPA. Canonical pathways identified by IPA are shown for each tissue. Fisher exact test (p>0.05).
 
 STRING protein interaction networks of statistically significant, regulated proteins for the four tissues are shown in Figure 7, with full list of cluster elements in Figure 7—source data 2. Each of the tissues shared a common cluster relating to regulatory elements involving ribosomal and histone proteins, albeit with different constituent proteins in each tissue. The largest cluster of interaction networks in cartilage (Figure 7) was mainly formed by ECM proteins such as collagens, collagen processing-related, and proteoglycans. Also notable, were two clusters abundant in proteoglycans and growth factors, and another cluster rich in myosin family members. Fifteen proteins with decreased incorporation have previously been implicated in OA development (Figure 7—source data 2, final column).
 
@@ -99,21 +123,108 @@ Compared with protein abundance, which only captures a snapshot of a protein at 
 
 ## Materials and methods
 
-## Samples and reagents
+**Key resources table**
 
-## All animal experiments were carried out with Institutional Ethical Approval Under Animals (Scientific Procedures) Act 1986 (Licence Number 30-3129)
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C57BL/6 J (Mus musculus, male)</td>
+      <td>C57BL/6 J</td>
+      <td>4 weeks old mice were from in house breeding colony and 11 and 41 weeks old from Charles rivers laboratories, Oxford, England</td>
+      <td>RRID:MGI:5655520</td>
+      <td>Wild type</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>13C6-Lysine-SILAC (97 % atom 13C)</td>
+      <td>SILANTES GmbH, Munich, Germany</td>
+      <td>13C-aa-Lys(6)-SILAC-Mouse diet-252923926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>12C6-Lysine-SILAC diets</td>
+      <td>SILANTES GmbH, Munich, Germany</td>
+      <td>12C-aa-Lys(0)-SILAC-Mouse diet-230004600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software Inc, San Diego, CA, USA</td>
+      <td>Prism: RRID:SCR_015807</td>
+      <td>GraphPad Prism 7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>MaxQuant</td>
+      <td>MaxQuant: RRID:SCR_014485</td>
+      <td>MaxQuant v1.5.7.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>Perseus</td>
+      <td>Perseus: SCR_015753</td>
+      <td>Perseus v1.6.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clinical Knowledge Graph’s analytics core</td>
+      <td>CKG</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STRING</td>
+      <td>STRING</td>
+      <td>STRING: SCR_005223</td>
+      <td>STRING v11</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IPA</td>
+      <td>QIAGEN Inc</td>
+      <td>QIAGEN IPA: SCR_008653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>The Database for Annotation, Visualization and Integrated Discovery (DAVID ) v6.8</td>
+      <td>DAVID</td>
+      <td></td>
+      <td>DAVID v6.8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Samples and reagents
+
+#### All animal experiments were carried out with Institutional Ethical Approval Under Animals (Scientific Procedures) Act 1986 (Licence Number 30-3129)
 
 Wild-type C57BL/6 J mice, ages 4, 11, and 41 weeks, were obtained originally from Charles River, Oxford, England. Mice from experimental groups A and B were taken from a breeding colony of these mice within our animal unit. Groups C and D were purchased directly for the experiment. 13C6-Lysine-SILAC (97% atom 13C) (heavy diet) and 12C6-Lysine-SILAC (light diet) were purchased from SILANTES GmbH, Munich, Germany. Animals’ care was in accordance with institutional guidelines.
 
-## Pulsed SILAC labelling experimental design
+#### Pulsed SILAC labelling experimental design
 
 Our labelling strategy was aimed at labelling long lived ECM proteins. Therefore, four groups of four male mice were fed with a stable isotope diet for a period of 3 weeks at different ages that spanned from weaning to late adulthood. The labelling scheme (Figure 1A) was as follows: Two groups of mice (A and B) were fed with the heavy diet from weeks 4 to 7. Then, one of these groups was culled for tissue collection and the other was changed to the light isotope diet (12C6-Lys) from weeks 7 to 10, then culled for tissue collection. This was used to calculate proteome turnover rates during skeletal growth. The third group (C) was fed with the heavy isotope diet from weeks 12 to 15 (young adult), and the fourth group (D) was fed with the heavy isotope diet from weeks 42 to 45 (late adult). All mice were acclimatised to the SILAC diet formulation by feeding them with the light isotope diet for 1 week before introducing the heavy diet. All mice gained weight in accordance with reference laboratory data for C57BL/6 mice (data not shown).
 
-## Tissue harvest
+#### Tissue harvest
 
 At the end of each labelling period, corresponding to ages 7, 10, 15, and 45 weeks, animals were culled injecting a terminal dose (30 mg/animal) of the anaesthetic Pentoject. Blood, knee articular cartilage, tibial bone, and ventral skin were collected from each animal (n = 4 mice per time point) as follows: blood was collected by cardiac puncture and mixed with 0.5 M anticoagulant EDTA to obtain a final concentration of 5 mM EDTA. The buffered blood was centrifuged for 15 min at 3000 rpm at 4°C. The resulting supernatant (plasma) was transferred to a 0.5 ml tube to be used for analysis. Knee articular cartilage was harvested using a micro-dissection technique previously developed described by our group (Gardiner, 2011). Articular cartilage from the femoral and tibial surfaces of both knees of one mouse were micro-dissected under the stereo microscope and collected in 1.5 ml micro-centrifuge tubes containing 50 μl PBS. Tibial bone samples were sectioned between the crest of the tibia and the insertion of the fibula. The bone marrow was flushed three times with PBS to remove cells using a 25 G needle. The final wash was checked for lack of cells using a stereo microscope. Approximately 0.8 cm2 of skin was cut from the lower flank of the ventral surface. Hair was removed using hair removal cream (Veet sensitive skin). Adipose tissue and blood vessels were removed from the subcutaneous region under the stereo microscope, and a portion of clean skin was collected using a 6 mm biopsy punch. All tissues were washed with phosphate-buffered saline (PBS [pH 7.4]) and stored frozen at −80°C until further processing.
 
-## Mass spectrometry sample preparation
+### Mass spectrometry sample preparation
 
 Bone and cartilage samples were placed in 180 µl of 5 mM dithiothreitol (DTT) and heated at 65°C for 15 min. After cooling to room temperature, samples were alkylated with 20 mM iodoacetamide (IAA) for 30 min. To quench remaining IAA, DTT was added and samples were incubated for 30 min. Then, samples were incubated with 4 M GuHCl for 2 hr. The samples were adjusted to pH 8 with 400 mM Tris base. Proteins were digested with 1 µg of trypsin overnight at 37°C. Digestion was terminated adding trifluoroacetic acid (TFA) to a final concentration of 0.5–1%. Peptides were purified using C18 solid phase extraction cartridges (SOLA HRP SPE cartridges, Thermo Fisher Scientific).
 
@@ -121,23 +232,23 @@ Five microlitres of plasma was reduced with 5 mM DTT, alkylated with 20 mM IAA, 
 
 Skin samples were grinded in a Cryomill, then incubated in 8 M urea, 3% SDS with protease inhibitors (cOmplete Mini EDTA-free Protease Inhibitor Cocktail, Roche) at room temperature for 1 hr in a total volume of 3 ml. As there was still a substantial pellet, samples were shaken overnight at 4°C to solubilise the pellet. Samples were centrifuged at 2500 g for 10 min and 100 µl of sample was taken for further processing. Proteins were reduced with 5 mM DTT for 30 min at room temperature, alkylated with 20 mM IAA for 30 min at room temperature, and precipitated with methanol/chloroform. Precipitated proteins were solubilised in 6 M urea buffer. Urea was diluted to <1 M with milli-Q water and proteins digested with trypsin overnight at 37°C at an enzyme to substrate ratio of 1:25. Digestion was terminated adding TFA to a final concentration of 0.5–1%. Peptides were purified using C18 solid-phase extraction cartridges as above.
 
-## Liquid chromatography–tandem mass spectrometry (LC–MS/MS)
+### Liquid chromatography–tandem mass spectrometry (LC–MS/MS)
 
 Tissues from groups A and B as well as skin samples were analysed on a LC–MS/MS platform consisting of Orbitrap Fusion Lumos coupled to an UPLC ultimate 3000 RSLCnano (Thermo Fisher Scientific) and samples from groups C and D with similar platform but coupled to a Q-Exactive HF. Samples were loaded in 1% acetonitrile and 0.1% TFA and eluted with a gradient from 2% to 35% acetonitrile in 0.1% formic acid and 5% DMSO in 60 min with a flow rate of 250 nl/min on a 50 cm EASY-Spray column (ES803, Thermo Fisher Scientific).
 
-## Orbitrap Fusion Lumos
+### Orbitrap Fusion Lumos
 
 The survey scan was acquired at a resolution of 120,000 between 400 and 1500 m/z and an AGC target of 4E5. Selected precursor ions were isolated in the quadrupole with a mass isolation window of 1.6 Th and analysed after CID fragmentation at 35% normalised collision energy in the linear ion trap in rapid scan mode. The duty cycle was fixed at 3 s with a maximum injection time of 35 ms, AGC target of 4000, and parallelisation enabled. Selected precursor masses were excluded for the following 27 s.
 
-## Q-Exactive HF
+### Q-Exactive HF
 
 The survey scan was acquired at a resolution of 60,000 between 375 and 1500 m/z with an AGC target of 3E6, up to the top 12 most abundant ions were selected for fragmentation from each scan. Selected precursor ions were isolated with a mass isolation window of 1.2 Th and fragmented by HCD at 28% normalised collision energy. Fragment scans were acquired at 30,000 resolution with an AGC target of 5E4 and a maximum injection time of 100 ms. Selected precursor masses were excluded for the following 27 s.
 
-## Protein identification
+### Protein identification
 
 Raw mass spectral data files were searched using MaxQuant software (V1.5.7.4, Tyanova et al., 2016b) using SILAC (Lys6) quantitation. Fixed modification was carbamidomethylation of cysteine, and variable modifications were oxidised methionine, deamidation of asparagine and glutamine, acetylation at protein N-terminal, and hydroxylation of proline. The data was searched against the mouse canonical Uniprot database (29/07/2015). FDR on peptide and protein level were set to 1%. Second peptide and ‘match between runs’ options were enabled, all other parameters were left at default settings. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD023180. Reviewer account details are as follows: Username: reviewer_pxd023180@ebi.ac.uk, Password: iSH0ppKX.
 
-## Statistical analysis
+### Statistical analysis
 
 After MaxQuant analysis, Excel version 1.5. 21.1, GraphPad Prism 7 (GraphPad Software Inc, San Diego, CA), STRING, Perseus software version 1.6.1.1 (Tyanova et al., 2016a), DAVID, IPA (QIAGEN Inc), and Python libraries from the Clinical Knowledge Graph’s analytics core (Santos et al., 2020) were used for data visualisation, statistical analysis, and pathway enrichment and protein network analysis.
 

@@ -21,20 +21,20 @@
 
 ### Affiliations
 
-1. https://ror.org/01ej9dk98 Department of Microbiology and Immunology, Doherty Institute, University of Melbourne Melbourne Australia
-2. https://ror.org/02bfwt286 Infection and Immunity Program, Department of Microbiology and Biomedicine Discovery Institute, Monash University Clayton Australia
-3. https://ror.org/01ej9dk98 Biological Optical Microscopy Platform, University of Melbourne Melbourne Australia
-4. https://ror.org/03265fv13 School of Microbiology, University College Cork Cork Ireland
-5. https://ror.org/03265fv13 School of Medicine, University College Cork Cork Ireland
-6. https://ror.org/03265fv13 APC Microbiome Ireland, University College Cork Cork Ireland
-7. https://ror.org/0524sp257 School of Cellular and Molecular Medicine, University of Bristol Bristol United Kingdom
-8. https://ror.org/01ej9dk98 Microbiological Diagnostic Unit Public Health Laboratory, Department of Microbiology and Immunology, Doherty Institute, University of Melbourne Melbourne Australia
+1. Department of Microbiology and Immunology, Doherty Institute, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+2. Infection and Immunity Program, Department of Microbiology and Biomedicine Discovery Institute, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+3. Biological Optical Microscopy Platform, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+4. School of Microbiology, University College Cork Cork Ireland ([ROR:03265fv13](https://ror.org/03265fv13))
+5. School of Medicine, University College Cork Cork Ireland ([ROR:03265fv13](https://ror.org/03265fv13))
+6. APC Microbiome Ireland, University College Cork Cork Ireland ([ROR:03265fv13](https://ror.org/03265fv13))
+7. School of Cellular and Molecular Medicine, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+8. Microbiological Diagnostic Unit Public Health Laboratory, Department of Microbiology and Immunology, Doherty Institute, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
 
 † Corresponding author
 
 ## Abstract
 
-Staphylococcus aureus infections are associated with high mortality rates. Often considered an extracellular pathogen, S. aureus can persist and replicate within host cells, evading immune responses, and causing host cell death. Classical methods for assessing S. aureus cytotoxicity are limited by testing culture supernatants and endpoint measurements that do not capture the phenotypic diversity of intracellular bacteria. Using a well-established epithelial cell line model , we have developed a platform called InToxSa ( in tracellular tox icity of ) to quantify intracellular cytotoxic S. a ureus S. aureus phenotypes. Studying a panel of 387 S . aureus bacteraemia isolates, and combined with comparative, statistical, and functional genomics, our platform identified mutations in S. aureus clinical isolates that reduced bacterial cytotoxicity and promoted intracellular persistence. In addition to numerous convergent mutations in the Agr quorum sensing system, our approach detected mutations in other loci that also impacted cytotoxicity and intracellular persistence. We discovered that clinical mutations in ausA , encoding the aureusimine non-ribosomal peptide synthetase, reduced S. aureus cytotoxicity, and increased intracellular persistence. InToxSa is a versatile, high-throughput cell-based phenomics platform and we showcase its utility by identifying clinically relevant S. aureus pathoadaptive mutations that promote intracellular residency.
+Staphylococcus aureus infections are associated with high mortality rates. Often considered an extracellular pathogen, S. aureus can persist and replicate within host cells, evading immune responses, and causing host cell death. Classical methods for assessing S. aureus cytotoxicity are limited by testing culture supernatants and endpoint measurements that do not capture the phenotypic diversity of intracellular bacteria. Using a well-established epithelial cell line model, we have developed a platform called InToxSa (intracellular toxicity of S. aureus) to quantify intracellular cytotoxic S. aureus phenotypes. Studying a panel of 387 S. aureus bacteraemia isolates, and combined with comparative, statistical, and functional genomics, our platform identified mutations in S. aureus clinical isolates that reduced bacterial cytotoxicity and promoted intracellular persistence. In addition to numerous convergent mutations in the Agr quorum sensing system, our approach detected mutations in other loci that also impacted cytotoxicity and intracellular persistence. We discovered that clinical mutations in ausA, encoding the aureusimine non-ribosomal peptide synthetase, reduced S. aureus cytotoxicity, and increased intracellular persistence. InToxSa is a versatile, high-throughput cell-based phenomics platform and we showcase its utility by identifying clinically relevant S. aureus pathoadaptive mutations that promote intracellular residency.
 
 ## Introduction
 
@@ -48,23 +48,107 @@ To address these issues, we took advantage of the capacity of S. aureus to invad
 
 ## Results
 
-## InToxSa assay development
+### InToxSa assay development
 
 We set out to develop a high-throughput and continuous cell death assay that could measure the intracellular toxicity of S. aureus in a format we named InToxSa. We used adherent HeLa-CCL2 epithelial cells as an infection model in a 96-well format and infected them with S. aureus at a standardised multiplicity of infection (MOI). Following an infection period of 2 hr, infected cells were treated with an antibiotic/enzyme combination to specifically kill extracellular bacteria and prevent further reinfection by bacteria released by cells dying during the assay. HeLa cell viability was continuously monitored by measuring PI fluorescence (see methods). Reduced HeLa cell viability was indicated by increasing fluorescence over time (Figure 1A). We used regression to fit standardised curves to the PI uptake data and calculated seven kinetic parameters including the area under the curve (AUC) representing the total of PI uptake over time, peak PI uptake [μmax], the time to μmax [t(μmax)], the maximum rate in PI uptake [rmax], the time to rmax [t(rmax)], trough, and time to trough (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of InToxSa assay. (B) Flow chart of the analytical pathway. (C) Plot of propidium iodide (PI) fluorescence uptake over 20 hr as a measure of S. aureus intracellular cytotoxicity in HeLa cells. Depicted curves are wild-type S. aureus JE2 (blue), the isogenic S. aureus JE2 agrA transposon mutant (red), and uninfected cells (yellow). The PI uptake curve for JE2 is annotated with five kinetic parameters. For each curve, the thick line represents the mean and the shading, the standard deviation. Curves are fitted with cubic smooth splines (see methods). To minimise batch effect, all kinetics data have been transformed using proportion of maximum scoring (POMS) using JE2 controls as reference minimum and maximum values (Little, 2013). x-axis is time and y-axis is PI uptake, represented as a proportion of maximal fluorescence in JE2-infected cells, where for every measured plate, a PI uptake value of 1 represents the maximum of JE2 PI uptake and zero its minimum. (D) Summary of five independent InToxSa experiments to assess assay and parameter variation. Violin plots represent the density distribution of all five replicates (based on Gaussian kernel density estimation) and the nested box plots (boxes represent median, first and third quartiles, whiskers represent are based on ×1.5 interquartile range) show the distribution of within plate replicates (3–5 technical replicates per plate replicate) for the three most discriminatory of seven parameters inferred from the PI uptake data (Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** PI uptake area under the curve (AUC), peak PI uptake [mmax], maximum PI uptake rate [rmax], trough, time of PI uptake peak, and time of trough for S. aureus JE2 compared to the agrA mutant. Units for AUC, Peak, and Maximum rate are arbitrary. Time of peak and time of trough (minutes).
 
 We then mapped out a series of experiments to validate InToxSa and explored bacterial genetic factors linked to intracellular cytotoxicity (Figure 1B). To demonstrate method performance, we measured the intracellular toxicity of the wild-type S. aureus USA300 strain JE2 against an isogenic agrA mutant (Nebraska Transposon Library mutant NE1532; Fey et al., 2013), using non-infected cells as a baseline (Figure 1C). S. aureus JE2 caused a rapid and substantial increase in PI fluorescence over time, reflective of the known high cytotoxicity of this strain (Das et al., 2016; Grosz et al., 2014; McConville et al., 2022). Cells infected with the agrA mutant yielded significantly lower PI uptake (AUC) and slower (rmax), indicating HeLa cell viability during the infection course and is consistent with the reported low cytotoxicity of S. aureus agr mutants (Figure 1C; Laabei et al., 2021; McConville et al., 2022).
 
 We then assessed the reproducibility and repeatability of InToxSa across five experimental replicates, each time using both biologically independent HeLa cell culture passages and independent S. aureus cultures with the same two comparator strains (JE2 wild type and the isogenic agrA transposon mutant) (Figure 1C). We measured seven PI uptake curve kinetic parameters (Figure 1C, Figure 1—figure supplement 1). We observed that the PI uptake AUC, peak PI uptake [μmax], and maximum PI uptake rate [rmax] for S. aureus JE2 compared to the agrA mutant and non-infected cells were significantly different, had very low intra-assay variation, and were among the most discriminatory and reproducible PI uptake curve parameters (Figure 1D, Table 1, Figure 1—figure supplement 1). At experimental endpoints, the acidity of the culture media had not changed, and no bacterial growth was observed after plating the media from infected 96-well plates, indicating that InToxSa assessed the cytotoxicity caused only by intracellular S. aureus (data not shown).
 
-## Confirmation of S. aureus internalisation in HeLa cells
+**Table 1.**
+ Summary of intracellular toxicity of S. aureus (InToxSa) assay performance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Strain</th>
+      <th rowspan="2">No. biological replicates</th>
+      <th rowspan="2" colspan="3">Area under the curve [AUC]</th>
+      <th colspan="3">Peak uptake</th>
+      <th colspan="3">Max uptake</th>
+    </tr>
+    <tr>
+      <th colspan="3">[μmax]</th>
+      <th colspan="3">[rmax]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td>Std. dev.</td>
+      <td>CoV</td>
+      <td>Mean</td>
+      <td>Std. dev.</td>
+      <td>CoV</td>
+      <td>Mean</td>
+      <td>Std. dev.</td>
+      <td>CoV</td>
+    </tr>
+    <tr>
+      <td>S. aureus JE2 wild type</td>
+      <td>25</td>
+      <td>162</td>
+      <td>14.6</td>
+      <td>0.09</td>
+      <td>1</td>
+      <td>0.09</td>
+      <td>0.09</td>
+      <td>0.003</td>
+      <td>0.0004</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>S. aureus JE2 agrA mutant</td>
+      <td>11</td>
+      <td>30.9</td>
+      <td>14</td>
+      <td>0.45</td>
+      <td>0.17</td>
+      <td>0.06</td>
+      <td>0.35</td>
+      <td>0.0004</td>
+      <td>0.0002</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>Non-infected</td>
+      <td>15</td>
+      <td>5.3</td>
+      <td>18.3</td>
+      <td>3.46</td>
+      <td>0.07</td>
+      <td>0.07</td>
+      <td>1.02</td>
+      <td>0.0001</td>
+      <td>0.00005</td>
+      <td>0.32</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Std. dev. = standard deviation; CoV = coefficient of variation._
+
+### Confirmation of S. aureus internalisation in HeLa cells
 
 We used confocal microscopy to confirm the presence of intracellular S. aureus (Figure 2A). HeLa cells grown on coverslips were infected with the same conditions used for InToxSa and analysed at 3, 8, and 24 hr post-infection. These timepoints were selected to reflect the key InToxSa timepoints highlighted during JE2 infection (start of PI uptake measurement, peak PI uptake [μmax], and experimental endpoint, respectively). We observed that at each timepoint, both JE2 and the agrA mutant co-localised with the lysosomal marker LAMP-1. However, the agrA mutant was detected in higher numbers within cells compared to wild type (Figure 2A, B). At later timepoints (8 and 24 hr) the number of JE2-infected cells decreased, with fewer detectable intracellular bacteria, suggesting that JE2-infected cells had died, consistent with bacterial cytotoxicity. In contrast, the number of cells infected with the agrA mutant did not vary significantly, indicating cell survival during the infection time course (Figure 2B). It also appeared that the number of intracellular bacteria increased for cells infected with the agrA mutant, suggesting bacterial replication over time. This latter observation was explored in more depth using high-content/high-throughput imaging (see later section). The microscopy results support the InToxSa assay outputs and indicate that non-cytotoxic S. aureus, such as the agrA mutant, can persist within cells without affecting cell viability.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig2-v1.jpg)
 
-**Figure 2.:** S. aureus.(A) HeLa cells were infected with S. aureus (wild-type JE2 or isogenic agrA mutant) and imaged at 3, 8, and 24 hr post-infection. Fixed cells were labelled with LAMP-1, S. aureus antibodies and 4′,6-diamidino-2-phenylindole (DAPI). (B) Manual quantification of confocal microscopy. Graph shows the percentage of cells infected with S. aureus at each of the three timepoints. At least 50 cells (n cells = 51–112) were counted in 3–5 fields of view, with at least 12 cells counted per field (n field = 12–40). Shown are all data points, mean, and standard deviation. Significance was assessed using two-way analysis of variance (ANOVA). Null hypothesis (no difference between means) rejected for adj p < 0.05. *p = 0.04, ***p = 0.007, ****p = <0.0001.
+**Figure 2.:** (A) HeLa cells were infected with S. aureus (wild-type JE2 or isogenic agrA mutant) and imaged at 3, 8, and 24 hr post-infection. Fixed cells were labelled with LAMP-1, S. aureus antibodies and 4′,6-diamidino-2-phenylindole (DAPI). (B) Manual quantification of confocal microscopy. Graph shows the percentage of cells infected with S. aureus at each of the three timepoints. At least 50 cells (n cells = 51–112) were counted in 3–5 fields of view, with at least 12 cells counted per field (n field = 12–40). Shown are all data points, mean, and standard deviation. Significance was assessed using two-way analysis of variance (ANOVA). Null hypothesis (no difference between means) rejected for adj p < 0.05. *p = 0.04, ***p = 0.007, ****p = <0.0001.
 
-## InToxSa benchmarking against trypan blue exclusion assay
+### InToxSa benchmarking against trypan blue exclusion assay
 
 In a previous study, we used a trypan blue exclusion assay with THP1 human macrophages exposed to culture supernatants to test within-host cytotoxicity variations from 51 clinical S. aureus isolated from 20 patients with bacteraemia (Giulieri et al., 2018). These 51 S. aureus isolates were originally selected because they were associated with phenotypic changes occurring during bacteraemia, such as infection relapse, antibiotic treatment failure, longer duration of bacteraemia, and augmented vancomycin MIC; phenotypes likely resulting from within-host evolution (Giulieri et al., 2018). Thus, the isolates were categorised by patient and by their sequential isolation, with the first isolate considered as ‘baseline’ and the subsequent isolates designated as ‘evolved’.
 
@@ -72,17 +156,35 @@ All 51 isolates were screened with InToxSa and compared with the original trypan
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig3-v1.jpg)
 
-**Figure 3.:** intracellular toxicity of  (S. aureusInToxSa) against trypan blue exclusion assay.Comparative evaluation of S. aureus intracellular cytotoxicity with bacterial supernatants for 51 paired isolates from 20 patients with S. aureus bacteraemia. (A) Supernatant-based cytotoxicity on THP1 cells. Episode with significant difference in THP1 survival between baseline and evolved isolates is boxed in blue (p < 0.05). Assay performed in biological and technical duplicates. Bars represent mean percentage of dead cells; error bars show range between duplicates. Toxicity within isolate groups was compared using analysis of variance (ANOVA) with Bonferroni correction (B) propidium iodide (PI) uptake of infected HeLa cells. Values are mean area under the curve (AUC) and standard deviation. Episodes exhibiting significant phenotypic differences between baseline and evolved isolates are boxed in red (p < 0.05). Assay performed in biological and technical triplicates. PI uptake AUC within isolate groups was compared using ANOVA with Bonferroni correction.
+**Figure 3.:** Comparative evaluation of S. aureus intracellular cytotoxicity with bacterial supernatants for 51 paired isolates from 20 patients with S. aureus bacteraemia. (A) Supernatant-based cytotoxicity on THP1 cells. Episode with significant difference in THP1 survival between baseline and evolved isolates is boxed in blue (p < 0.05). Assay performed in biological and technical duplicates. Bars represent mean percentage of dead cells; error bars show range between duplicates. Toxicity within isolate groups was compared using analysis of variance (ANOVA) with Bonferroni correction (B) propidium iodide (PI) uptake of infected HeLa cells. Values are mean area under the curve (AUC) and standard deviation. Episodes exhibiting significant phenotypic differences between baseline and evolved isolates are boxed in red (p < 0.05). Assay performed in biological and technical triplicates. PI uptake AUC within isolate groups was compared using ANOVA with Bonferroni correction.
 
-## Screening a large collection of clinical S. aureus to evaluate intracellular cytotoxicity
+### Screening a large collection of clinical S. aureus to evaluate intracellular cytotoxicity
 
 A major motivation for developing the InToxSa assay was to develop a pheno-genomics platform to efficiently measure the intracellular cytotoxicity profiles of a large collection of clinical S. aureus isolates and then use the power of comparative and statistical genomics to find bacterial genetic loci associated with intracellular cytotoxicity. To this end, we analysed 387 clinical S. aureus isolates, obtained from 298 episodes of bacteraemia and for which genome sequences were available (Giulieri et al., 2018; Holmes et al., 2011; Holmes et al., 2014; Holmes et al., 2018). A 164,449 single nucleotide polymorphism (SNP) core-genome phylogeny was inferred for this collection. The 387 isolates spanned 32 sequence types (STs) and were dominated by ST239, accounting for 30% of isolates (n:117), followed by ST22 (n:32, 8%), ST5 (n:34, 8%), ST45 (n:28, 7%), and ST1 (n:18, 5%). Fifty-three percent of the isolates were mecA positive (Figure 4A; Supplementary file 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig4-v1.jpg)
+
+**Figure 4.:** (A) Maximum likelihood phylogeny based on 164,449 core-genome SNPs for 387 S. aureus, showing sequence type (ST) and MRSA distribution. The heatmap depicts the mean area under the curve (AUC) of cytotoxicity based on intracellular toxicity of S. aureus (InToxSa) propidium iodide (PI) uptake assay. AUC values range from non-cytotoxic (score: 0, dark blue) to highly cytotoxic (score: 200, yellow). Adjacent to the heatmap (closed and open circles) are 28 pairs of genetically related, but phenotypically discordant isolates (see Figure 5). (B) ‘Variable importance plot’ showing different PI uptake metrics (features) in an unsupervised random forest (RF) machine learning model. The higher the value of ‘accuracy decrease’ or ‘Gini index decrease’, the higher the importance of the feature in the model. (C) Scatter plot of the two most discriminatory PI uptake kinetic metrics (AUC and maximum PI uptake rate). Dots are coloured based on the clustering obtained from the proximity matrix of the RF model. (D) Scatter plot showing the two principal components with the strongest association with PI uptake (lineage effect as measured using pyseer). Dots and ellipses are coloured based on the clustering obtained from the proximity matrix of the unsupervised machine learning model. (E) Manhattan plot of gene-burden genome-wide association study (GWAS) of cytotoxicity (PI uptake AUC) of 387 clinical isolates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Scatter plot of the first two principal components, representing 67% of the variance. Dots are coloured based on the clustering obtained from the proximity matrix of the unsupervised model. (B) Loading plot illustrating the contribution of each PI uptake parameter to the first two PCA components (depicted in panel A). The loadings are represented by the arrows: the length of the arrow is proportional to the strength of the PI uptake parameter contribution and the angle represents the direction of the contribution.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Lineages were calculated using multidimensional scaling on a distance matrix generated by Mash. The association with the cytotoxicity phenotype was calculated by computing the fixed effect of the first 10 components by linear regression.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Heatmap showing the correlation between the first 10 MDS axes and the 15 most prevalent STs. Here, MDS was applied to a genetic distance matrix calculated from Mash sketches (10,000 hashed k-mers per set). The correlations were calculated using the R package bugwas. (B) Ridge plots depicting the PI uptake distribution for the 15 most prevalent STs.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig4-figsupp4-v1.jpg)
 
 We assessed each of the 387 isolates by InToxSa, with the cytotoxicity phenotype for each isolate represented by mean PI uptake (AUC) and displayed as a heatmap, aligned with the core-genome phylogeny (Figure 4A). Several patterns were readily seen in the data. There was a wide range of cytotoxicity profiles across the 387 isolates, with notable variations within each ST suggesting frequent adaptation events affecting intracellular cytotoxicity levels. Two STs (ST239 and ST22) strongly associated with lower cytotoxicity. These variations are consistent with previous observations (Laabei et al., 2021).
 
 To select the most suitable InToxSa parameters for our statistical genomics approach, we assessed their relative importance by fitting the data using unsupervised random forest (RF) machine learning (Mantero and Ishwaran, 2021). In this model, ‘observations’ were each of the PI uptake values for the 387 isolates and controls and ‘features’ were the seven PI uptake curve parameters (Supplementary file 4). We then tested RF feature importance and showed with variable importance plots that the PI uptake parameters, AUC, μmax, and rmax were the most informative features for the model (Figure 4B), consistent with our initial InToxSa assessment using JE2 and the agrA mutant (Figure 1C, D). Using the proximity matrix from the unsupervised RF model, we defined three main PI uptake clusters, corresponding with low, moderate, and high intracellular cytotoxicity categories. We labelled each of the 387 PI uptake data points with these three (low, moderate, and high) cytotoxicity categories and plotted the AUC and rmax values against each other (Figure 4C). As expected, these parameters were strongly, positively correlated, suggesting that the AUC alone is sufficient to capture intracellular cytotoxicity differences between S. aureus isolates. We used principal component analysis of the PI uptake data as an alternative unsupervised learning approach (Figure 4—figure supplement 1). When considering the first two components (67% of the variance explained), we observed a similar pattern where the same toxicity groups could be recognised within a cytotoxicity continuum among clinical isolates (Figure 4—figure supplement 1).
 
-## GWAS analysis using InToxSa outputs to identify S. aureus genes linked to intracellular cytotoxicity
+### GWAS analysis using InToxSa outputs to identify S. aureus genes linked to intracellular cytotoxicity
 
 We next used GWAS to identify genetic correlates of strain-level cytotoxicity, expressed as mean PI uptake AUC. The fraction of cytotoxicity variation explained by genetic variation (heritability: h2) was 49%, a figure lower than the ones obtained for other phenotypes such as vancomycin resistance (Giulieri et al., 2022b). A lower heritability could be resulting from the InToxSa assay variability or caused by differences in gene expression levels or due to epigenetic changes.
 
@@ -90,21 +192,45 @@ To assess the contribution of lineage effects relative to locus effects, we defi
 
 Correcting for the observed population structure, we then used gene-burden GWAS to try and identify S. aureus loci significantly associated with intracellular cytotoxicity (PI uptake AUC) as a continuous variable. After correcting for multiple testing, only agrA reached the p < 0.05 significance threshold, supporting the important contribution of this locus to strain-level cytotoxicity (Figure 4E, Supplementary file 5). We also considered the highest ranking loci that did not reach genome-wide statistical significance. The second most significant gene, secA2 (p = 1.5 × 10−4) encodes the accessory ATPase to the Sec protein export system and is essential for the transport of SraP, a surface exposed and serine-rich staphylococcal protein which is associated with adhesion to, and invasion of epithelial cells and binding to human platelets (Siboo et al., 2005; Yang et al., 2014). Another high-ranking GWAS locus was ileS (p = 9.9 × 10−4), encoding an isoleucyl-tRNA synthetase linked with mupirocin resistance, and previously associated with S. aureus cytotoxicity (Yokoyama et al., 2018).
 
-## Identification of convergent mutations in genetic pairs with divergent InToxSa cytotoxicity profiles
+### Identification of convergent mutations in genetic pairs with divergent InToxSa cytotoxicity profiles
 
 Despite the relatively small sample size for this kind of analysis, the gene-burden GWAS detected the agrA locus with a high significance, but it did not have sufficient power to detect mutations other than those occurring in agr genes. This was expected with our sample size as demonstrated by our GWAS power calculations (Figure 4—figure supplement 4). Our power calculations have also showed that reducing the number of variants could substantially increase the yield of the analysis. This can be achieved by limiting the analysis to closely related isolates, with the added advantage of eliminating the bias related to the population structure. Therefore, we sought to identify rare mutations that might alter the intracellular cytotoxicity using comparative genomics approaches, a complementary strategy to microbial GWAS (Chen and Shapiro, 2021; Giulieri et al., 2022b; Saund and Snitkin, 2020). We used evolutionary convergence analysis to identify additional loci associated with intracellular cytotoxicity among the 387 S. aureus isolates. Our approach was to identify genetically related pairs of isolates with contrasting PI uptake AUC values from independent clades across the phylogeny and then search for homoplasic mutations between the pairs. We calculated genetic distances between all 387 genome-pairwise comparisons (149,769 combinations) and calculated a delta-PI uptake AUC value for each pair. We selected 28 phylogenetically independent S. aureus pairs (56 unique isolates) with a genetic distance <200 core-genome SNPs and a significant decrease in PI uptake AUC between reference (isolate-1) and control (isolate-2) (Wilcoxon rank-sum test) (Figure 5A). Variants within each pair (i.e., found in isolate-2 but not in isolate-1) were identified and annotated using a strategy that we have developed for S. aureus within-host evolution analysis (Giulieri et al., 2022a). We have previously shown that an SNP-calling approach using de novo assembly of one genome in a pair as a reference provided the most accurate estimate of the genetic distance (Higgs et al., 2022). There were between 0 and 206 mutations within the 28 pairs (Figure 5B). Mapping the genes in which these mutations were found back to a core-genome phylogeny constructed from the 56 paired S. aureus genomes showed convergent (homoplasic) mutations in agrA, supporting the GWAS findings. In addition, our analysis identified potentially convergent mutations in several other genes (6 with three independent mutations and 35 with two independent mutations) (Figure 5C–E, Supplementary file 6). However, because of the strong lineage effect and the paucity of representation for some S. aureus lineages (clonal complexes [CC] and STs), half of these mutations were only found in ST239, a well-represented lineage in our collection. In addition to target loci dedicated to the regulation of virulence factors such as the agr locus or involved in adhesion to host extracellular matrix proteins such as fibronectin and elastin (fnbA and ebpS), some of the convergent mutations were found in genes involved in metabolic processes (ribA, purF, sbnF, ilvB, lysA, and araB), associated with the cell wall (fmtB), devoted to the last step of the cell wall teichoic acid biosynthesis (tarL’), implicated in DNA repair (mfd), in protein transport (secA2), in solute transport (glcA, opp-3A, and thiW), in respiration (cydA) and found in a phage-associated locus (SAUSA300_1930). Aside from agrA and agrC genes (Giulieri et al., 2018; Laabei et al., 2014; Laabei et al., 2015; Mairpady Shambat et al., 2016), and those found in the promoter of the tar locus (Brignoli et al., 2022; Laabei et al., 2014), mutations in the other loci have not been associated with the reduction of cytotoxicity in clinical S. aureus isolates. Interestingly, homoplasic mutations were also found in the gene ausA, known to be involved in S. aureus escape from epithelial cell endosomes and the phagosome of phagocytic cells (Blättner et al., 2016).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig5-v1.jpg)
+
+**Figure 5.:** (A) Distribution of genetic distance determined by pairwise comparisons using MASH distances among the 387 S. aureus genomes, against the difference in propidium iodide (PI) uptake area under the curve (AUC) between each pair. The shaded circles denote the 95% multivariate t-distribution (blue: pairs included in the convergence analysis; red: pairs excluded from the analysis). (B) Ranked distribution of the difference in PI uptake AUC between the 28 pairs. Heatmap shows reduction in AUC values. (C) Core-genome phylogeny for the 28 pairs of isolates. Tree tips are coloured by PI uptake AUC. Aligned with the phylogeny, the 10 first genes targeted by convergent mutations are shown. (D) Number of mutations detected for each of the 20 genes, coloured by S. aureus ST. (E) Location of convergent mutations in each gene (non-synonymous in orange, truncating in maroon), purple triangles indicate the position of transposon inserted in tested transposon mutant. (F) Effect of loss of function for each of the 20 genes on intracellular cytotoxicity measured by intracellular toxicity of S. aureus (InToxSa), using mutants from the Nebraska transposon library. Dotted line shows mean PI uptake AUC of positive control strain JE2. Depicted are mean (dot) and standard deviation (SD; bar) of biological triplicates. Mutants causing significantly lower PI uptake AUC to JE2 are depicted in light blue, non-significant changes are in dark blue (Wilcoxon rank-sum test, corrected for multiple testing). (G, H) Operetta high-content imaging analysis for each of the 20 Nebraska transposon mutants and JE2 positive control. Heatmaps show the percentage of HeLa cells infected with each transposon mutant (blue) and the number of bacteria per infected cells at 3 and 24 hr post-infection (red).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Number of mutations detected for each of the 20 most convergent genes, coloured by S. aureus ST (B) Mutation maps.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Comparison of median propidium iodide (PI) uptake area under the curve (AUC; absolute values) between phylogenetically independent pairs with or without mutations in 20 genes with the highest number of homoplasic mutations in the convergent analysis of genetic pairs with discordant PI uptake. The boxplot represents 100 replicates of genetic pairs sampling. (B) Regression coefficients beta for 100 replicated linear regressions modelling the impact of presence/absence of mutations on the PI uptake AUC difference (absolute values) within the pairs (yellow: beta less than 0, green: beta above zero). The boxes show median beta and 5–95% quantile distribution.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Lines and shaded areas represent linear regressions and 95% confidence intervals, respectively. Pearson correlation coefficients (R) and p-values (p) are indicated on each plot.
 
 We focussed our analysis on genetic pairs with loss of cytotoxicity, to be consistent with the hypothesis that adaptive mutations arising during infection would promote a low-toxicity phenotype as previously shown (Giulieri et al., 2018; Laabei et al., 2014). This hypothesis is supported by our gene-burden GWAS, where 10 out of 10 most significant hits are associated with loss of cytotoxicity (mean normalised PI AUC decrease = −0.8, Supplementary file 5 and Figure 4E). To explore whether including pairs with toxicity gain would alter the analysis, we selected four additional phylogenetically independent pairs with gain of toxicity. Adding these pairs did not reveal new genes with convergent mutations, however, this analysis revealed an additional homoplasic mutation in ausA (Figure 5—figure supplement 1).
 
 To further confirm the roles of genes bearing homoplasic mutations in pairs with discordant phenotype, we compared PI uptake between pairs with and without homoplasic mutations. We ran the analysis in 100 replicates of independent pairs combinations and assessed the associations between within-pairs mutations (aggregated at the gene level) and PI uptake difference within the pair using linear regression. For 6 out of the 20 genes originally identified in the genetic pairs analysis (including agrA, glcA, ribA, fmtB, sbnF, and tarL’), this analysis showed that for >95% of replicates, the regression coefficient was above 0, thus providing a robust statistical support for our findings (Figure 5—figure supplement 2). For the gene ausA, 86% of replicates had a beta value above 0, however 78% of agrC regression replicates had a beta value below 0.
 
-## Functional assessment of genes with convergent mutations
+### Functional assessment of genes with convergent mutations
 
 To assess the functional consequences of the convergent mutations (caused by at least two homoplasic mutations per gene), we again turned to the Nebraska transposon library and selected transposon mutants for 20 genes we had identified (Figure 5D). We used InToxSa to assess the effect of gene disruption on the intracellular cytotoxicity phenotype for each mutant compared to the JE2 wild type (Figure 5F). Over the 20 transposon mutants tested, six showed a statistically significant reduction in cytotoxicity, namely NE1532 (agrA), NE119 (ausA), NE188 (mfd), NE873 (agrC), NE1140 (lysA), and NE117 (cydA). Strains with transposon insertions in agrA, agrC, and ausA showed a highly significant reduction in PI uptake AUC (adjusted p = 5.4 × 10−4, Wilcoxon rank-sum test), confirming their reported roles in affecting bacterial cytotoxicity and validating our convergence analysis (Figure 5F; Blättner et al., 2016; Das et al., 2016; Laabei et al., 2021; Mairpady Shambat et al., 2016). We extended this analysis and used high-content, high-throughput microscopy to observe and quantify in an unbiased manner the impact of each mutation on the S. aureus infectivity and intracellular persistence (see methods). There was an inverse relationship between InToxSa and high-content imaging outputs, with the three mutants most reduced in cytotoxicity showing both a higher percentage of infected cells recovered after 24 hr of infection, and a high number of bacteria per infected cell at 24 hr post-infection as compared to the wild-type control JE2 (Figure 5G, H – Figure 5—figure supplement 3).
 
-## Functional assessment of specific convergent mutations
+### Functional assessment of specific convergent mutations
 
 To further assess the impact of specific convergent mutations on intracellular cytotoxicity, we used site-directed mutagenesis in S. aureus BPH3370 (ST239) to recreate a subset of the convergent mutations. We selected isolate BPH3370 for these experiments as it displayed high InToxSa PI uptake AUC (comparable to JE2, Figure 4C) cytotoxicity without bearing any of the convergent mutations we intended to introduce. We focussed our attention on mutations likely to affect protein function and based on the attenuation in cytotoxicity of the cognate transposon mutants. We selected six mutations, previously not documented nor characterised, including non-synonymous mutations leading to residue substitution (agrA E7K and cydA R390C [a reversion of C390R]), frameshifts leading to truncated proteins (agrC G310 frameshift, ausA K2308 frameshift, and lysA K354 frameshift), and introduction of a stop codon (mfd W568 stop codon) in the sequences of convergent genes (Figure 6A and Figure 6—figure supplement 1). We then used InToxSa to assess the cytotoxicity of each targeted mutant, compared to BPH3370 wild type, JE2 and the corresponding JE2 Nebraska transposon mutant, for each of the six loci (Figure 6B, Figure 6—figure supplement 1). We observed that recreation of the E7K agrA mutation, the agrC G310 frameshift mutation and the ausA K2308 frameshift mutations lead to a significant reduction in intracellular cytotoxicity in BPH3370 (Figure 6B). However, the W568 stop codon mfd mutation, the K354 frameshift lysA mutation, and the cydA R390C mutation had no significant effect on the cytotoxicity of the BPH3370 strain (Figure 6—figure supplement 1). It is noteworthy that transposon insertions in these three genes also had a less pronounced effect on the phenotype of JE2 strain as compared to the agr and ausA loci (Figure 5F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig6-v1.jpg)
+
+**Figure 6.:** (A) Position and nature of convergent mutations identified in the genes agrA, agrC, and ausA. For each gene, the amino acid position affected by mutations is shown on the x-axis for each gene. Convergent mutations causing a significant contrasting propidium iodide (PI) uptake phenotype are coloured according to their consequence on protein function: non-synonymous (orange), truncating characterised by the introduction of a frameshift (fs) or a stop codon (*) (maroon). (B) Effect of convergent mutations on the intracellular cytotoxicity of the clinical isolate BPH3370. The PI uptake area under the curve (AUC) values for JE2, the cognate Nebraska transposon mutants of convergent genes, BPH3370 wild type and BPH3370 bearing the mutations affecting agrA, agrC, and ausA. The crossbar represents mean and standard deviation (p < 0.0001). (C) Predicted impact of K2308 frameshift mutation (K2308fs) on aureusimines. (D) HPLC analysis of S. aureus ethyl-acetate extracts for aureusimines compared to an Aureusimine B synthetic standard.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84778/elife-84778-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Position and nature of convergent mutations. (B) Effect of convergent mutations on the intracellular cytotoxicity of the clinical isolate BPH3370.
 
 We predicted that the ausA K2308 frameshift causing a 11 base pair deletion mutation in BPH3370 would lead to a loss of aureusimine biosynthesis. This was because the frameshift occurred within the ausA reducing domain and would thus prevent the release of the dipeptide L-Val-L-TyrT2 to form the intermediate amino aldehyde, with no cyclisation to form the imine (Figure 6C; Zimmermann and Fischbach, 2010). As expected, high-performance liquid chromatography (HPLC) analysis confirmed the absence of aureusimines in the BPH3370 K2308 frameshift mutant, similar to the transposon ausA mutant (NE119) (Figure 6D).
 
@@ -130,91 +256,178 @@ We developed InToxSa using HeLa cells, a well-defined, adherent, and non-phagocy
 
 We used InToxSa to identify S. aureus pathoadaptive mutations, enriched in bacterial populations that are associated with human disease (e.g., upon transit from colonising to invasive). We hypothesised that these mutations would support an intracellular persistence for S. aureus. Our future research will focus on understanding how these genetic changes might be allowing the bacterium to avoid cell-intrinsic surveillance systems, such as lytic programmed cell death; the self-destructive processes restricting systemic progression of intracellular bacterial pathogens (Wanford et al., 2022). Unlike well-described intracellular Gram-negative bacteria, S. aureus does not have effector proteins to block lytic programmed cell death (Soe et al., 2021). Pathoadaptive mutations such as those arising in the agr locus might prevent cellular injuries caused by S. aureus toxins under Agr control, that would be sensed by cell-intrinsic surveillance platforms such as the inflammasomes and trigger cell death (Krause et al., 2019; Soe et al., 2021). Loss-of-function mutations in ausA, preventing the biosynthesis of aureusimines might be confining S. aureus to a lysosomal compartment where the bacteria have the potential to replicate, and conceivably evade host surveillance mechanisms (Blättner et al., 2016; Flannagan et al., 2016; Grosz et al., 2014; Moldovan and Fraunholz, 2019).
 
-## Conclusion
+### Conclusion
 
 Current large-scale comparative genomics of S. aureus bacteraemia isolates can be further refined by including underexplored pathogenicity traits such as the capacity of S. aureus to invade and survive in host cells. We have addressed this poorly characterised trait of S. aureus pathogenicity by creating the InToxSa assay that measures the intracellular cytotoxicity of many hundreds of S. aureus clinical isolates at scale. We showcase the robustness and reproducibility of phenotypic outputs which, in combination with comparative and statistical genomics, have confidently identified convergent mutations arising in agr and ausA genes that reduced the intracellular cytotoxicity and increased the intracellular persistence of bacteraemia isolates during infection. The adoption of the InToxSa methodology in future pheno-genomics studies would improve the detection of pathoadaptive mutations supporting the persistence and relapse of S. aureus infections.
 
 ## Materials and methods
 
-## S. aureus isolates
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. aureus)</td>
+      <td>BPH2947</td>
+      <td>GenBank</td>
+      <td>Accession GCF_900620245.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli strain IM08B</td>
+      <td>Monk et al., 2015</td>
+      <td>IM08B</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Epithelial cells</td>
+      <td>ATCC</td>
+      <td>HeLa-CCL2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antibiotic</td>
+      <td>Baxter</td>
+      <td>Gentamicin</td>
+      <td>80 and 40 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Antibiotic</td>
+      <td>Ambi</td>
+      <td>Lysostaphin</td>
+      <td>10 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nucleic marker</td>
+      <td>Sigma</td>
+      <td>Propidium iodide</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S. aureus (Rabbit polyclonal)</td>
+      <td>WEHI-antibody technology platform</td>
+      <td>Customised</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit(Donkey polyclonal) coupled to Alexa Fluor 488</td>
+      <td>Thermo Fisher-Invitrogen</td>
+      <td>Cat#: A-21206</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin-TRITC</td>
+      <td>Sigma</td>
+      <td>P1951</td>
+      <td>IF (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma-Merck</td>
+      <td>10236276001</td>
+      <td>IF (1:2000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### S. aureus isolates
 
 Clinical isolates were selected from a combined collection of 843 clinical isolates of S. aureus bacteraemia (Giulieri et al., 2018) that was obtained from the vancomycin substudies of the Australian and New Zealand Cooperative on Outcome in Staphylococcal Sepsis (ANZCOSS) study (Holmes et al., 2011) and the Vancomycin Efficacy in Staphylococcal Sepsis in Australasia (VANESSA) study (Holmes et al., 2018). We selected 387 isolates to maximise the likelihood to detect phenotype–genotype associations by sampling different lineages and enriching for episodes where multiple isolates per patient were available (see Supplementary file 3).
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 After subculturing strains twice from −80°C glycerol stock, DNA was extracted using the Janus automated workstation (PerkinElmer) or manual extraction kits (Invitrogen PureLink genomic DNA kit or the Sigma GenElute kit). Normalised DNA (at a concentration of 0.2 ng/ml) was prepared for sequencing using Nextera XT DNA (Illumina) and sequencing was performed on Illumina MiSeq and NextSeq platforms. Reads quality was assessed based on mean read depth and percentage of S. aureus reads as computed using Kraken2 (Wood et al., 2019). Reads were assembled using Shovill, an assembly pipeline that optimises the Spades assembler (https://github.com/tseemann/shovill) (Bankevich et al., 2012). Annotation was performed using Prokka, with a minimal contig size of 500 bp (Seemann, 2014). Assembly and annotation metrics were used for further quality control of the reads. Genetic distance between clinical isolates was calculated using Mash with a sketch size of 10,000 (Ondov et al., 2016). We used the distance matrix generated by Mash to perform MDS using the function ‘cmdscale()’ in base R. Multi-locus ST were inferred from the assemblies using mlst (https://github.com/tseemann/mlst) (Seemann, 2020a). We assessed the correlation between the most prevalent ST and the MDS axes using the get_correlations() function in the R package bugwas (Earle et al., 2016).
 
-## Variants calling: single reference
+### Variants calling: single reference
 
 Clinical isolates’ reads were mapped to internal reference BPH2947 (accession GCF_900620245.1), an ST 239 reference genome that was generated from the collection. We used snippy, v4.6.0 for mapping and variant calling, with default settings (https://github.com/tseemann/snippy) (Seemann, 2020b). The core-genome alignment was constructed using Snippy-core. We defined core genome as positions where at least 90% of the sequences had a minimum coverage of 10 reads and used Goalign v0.3.4 and SNP-sites v2.5.1 to extract core-genome positions. To infer a maximum likelihood phylogenetic tree of the clinical isolates collection we ran IQ-TREE v2.0.3 using a GTR-G4 model. We used HomoplasyFinder (Crispell et al., 2019) to identify homoplasic sites based on the consistency index. The consistency index was calculated with the following formula: (Number of nucleotides at site − 1)/Minimum number of changes on tree.
 
-## Construction of mutants by allelic exchange
+### Construction of mutants by allelic exchange
 
 Engineering of convergent mutations in agrA, agrC, ausA, mfd, lysA, and cydA genes in the strain BPH3370 was performed by allelic exchange as described previously (Monk and Stinear, 2021) using oligonucleotides described in Brinkmann et al., 2004; Supplementary file 7 (outlining residues modified by convergent mutations). Upstream and downstream regions of each mutation were PCR amplified and gel extracted and then a splice by overlap extension PCR was performed to generate each insert. Each insert was cloned into linearised pIMAY-Z vector by Seamless Ligation Cloning Extract (SLiCE) cloning (Zhang et al., 2012) to generate six plasmids. Each plasmid was separately transformed into E. coli strain IM08B (Monk et al., 2015) confirmed by colony PCR, then purified and transformed into S. aureus strain BPH3370 by electroporation. Mutant candidates were screened by Sanger Sequencing (Australian Genome Research Facility, Melbourne, VIC, AUS) and positive clones were validated by whole-genome sequencing on an Illumina Miseq or NextSeq550 platforms (Illumina, San Diego, CA, USA) to confirm their genotype. The resultant reads were mapped to the BPH3370 reference genome and mutations were identified using snippy (v4.6.0, https://github.com/tseemann/snippy) (Crispell et al., 2019).
 
-## Clinical isolates library preparation
+### Clinical isolates library preparation
 
 The collection of clinical isolates was prepared to be readily inoculated from 96-well microtitre plates. Clinical isolates were grown in 10 ml Brain Heart Infusion (BHI) broth (BD Bacto) from single colonies to stationary phase. Briefly, a volume corresponding to 1-unit OD600 for each culture was centrifuged at 10,000 × g for 5 min. The bacterial pellets were washed once with 500 μl of fresh BHI and centrifuged again. The washed bacterial pellets were resuspended in 600 μl of storage media (BHI containing 40% glycerol), vortexed briefly and 200 μl were distributed across 96-well microtitre plates. To prevent operator and plate effect biases, the 387 isolates were randomly distributed with each plate to include 29 distinct isolates, represented in non-contiguous technical triplicates. Built-in controls for cytotoxicity were included in each plate. The wild-type JE2 strain was used as positive cytotoxicity control and the BPH3757 strain, an ST239 isolate bearing the T88M agrA mutation described in Giulieri et al., 2018, as a non-cytotoxic control. Six wells were kept empty to monitor the viability of non-infected controls and account for residual PI uptake. Plates were stored at −80°C. Each plate was at least tested in three biological replicates.
 
-## Tissue culture
+### Tissue culture
 
 HeLa-CCL2 cells (sourced from the ATCC) were maintained and propagated in Dubelcco’s modified Eagle medium (DMEM) + GlutaMAX (4.5 g/l D-glucose and 110 mg/l sodium pyruvate) supplemented with heat-inactivated 10% foetal bovine serum (Gibco) and in absence of antibiotics. The cells were regularly tested for the presence of mycoplasma.
 
-## InToxSa assay
+### InToxSa assay
 
 S. aureus isolates were inoculated directly from stabbed frozen parsed plates stock into 100 μl of BHI broth dispatched in flat bottom 96-well microtitre plates. Inoculated plates were incubated for 16 hr in a heat-controlled plate reader (CLARIOstar plate reader, BMG Labtech) set at 37°C. Bacterial growth was assessed by OD600 measurement every 10 min. The endpoint optical densities of cultures were used to infer bacterial density (1-unit OD600 corresponding to 5 × 108 bacteria/ml). Bacterial cultures were standardised and serially diluted in DMEM to reach an MOI 10. 100 μl of bacterial suspension were added to infect 40,000 HeLa-CCL2 cells grown (70% confluence per well) in 96-well black plates, clear bottom (Sigma). Infection was synchronised by centrifugation at 500 × g for 10 min (Eppendorf 5810R) at room temperature. Infected plates were incubated 2 hr at 37°C and 5% CO2 to allow for S. aureus internalisation. The infective media was then discarded, and cells washed once with sterile phosphate-buffered saline (PBS) and further incubated 1 hr with 100 μl DMEM containing cell impermeable antibiotics (80 μg/ml gentamicin [Baxter] and 10 μg/ml of lysostaphin [Ambi]) at 37°C and 5% CO2 (Kim et al., 2019). This first step of antibiotic-protection assay was followed by another using a lower antibiotic concentration (40 μg/ml gentamicin and 10 μg/ml lysostaphin), in media supplemented with 5% fetal bovine serum (Gibco), and 1 μg/ml PI, a live cell-impermeant nucleic acid dye (Sigma). Plates were then incubated in the CLARIOstar Plus plate reader (BMG Labtech) set at 37°C and 5% CO2 throughout the infection (up to 20 hr post-infection). The fluorescence signal emitted by PI-positive cells was acquired every 6 min from each well (excitation at 535 nm, emission at 617 nm, using the spiral well scanning mode with 50 flashes per well). Non-infected control cells were permeabilised with 0.1% Triton X-100 to determine the maximum level PI uptake and HeLa cell death.
 
-## High-content imaging
+### High-content imaging
 
 The Operetta high-content microscope (PerkinElmer) was employed to accurately quantify and analyse intracellular persistence at the single-cell resolution. HeLa-CCL2 cells were seeded in Cell Carrier-96 black and optically clear bottom plates (PerkinElmer) to reach a density of 15,000 cells per well at the day of infection. HeLa cells were infected as described in the above section.
 
 Post-infection, cells were washed twice with sterile PBS and fixed with 40 μl of freshly prepared 4% paraformaldehyde (Thermo Fisher Scientific) for 10 min. Fixed cells were further washed five times and stored at 4°C in PBS. Fixed cells were first permeabilised with 40 μl of 0.2% Triton X-100 for 3 min, washed thrice with PBS, and incubated 1 hr in 40 μl of blocking solution (PBS-bovine serum albumin [BSA] 3%). Bacteria were detected with polyclonal antibodies raised in rabbits against whole fixed cells of S. aureus USA300 strains, JE2::spa, BPH2919, and BPH3672 (WEHI antibody technology platform, https://www.wehi.edu.au/research/research-technologies/antibody-technologies). Sera were used at 1:1000, diluted in PBS-BSA 3%, Tween 0.05% for 5 hr at room temperature. Wells were then washed thrice with PBS and incubated 45 min with a secondary antibody (donkey anti-rabbit coupled to Alexa 488, 1:2000 dilution, Invitrogen) in PBS-BSA 3% containing 0.05% Tween-20 (Sigma) and 10% normal donkey serum (Abcam). Wells were washed thrice with PBS and incubated with Phalloidin-TRITC (1:4000) and DAPI (1:4000) (Sigma) in PBS for 15 min. Finally, wells were washed five times with PBS and covered with 200 μl of PBS. Plates were covered with aluminium foil and stored at 4°C until image acquisition on the Operetta microscope.
 
-## Confocal microscopy
+### Confocal microscopy
 
 HeLa-CCL2 grown on coverslips were infected using the same conditions described above. Coverslips were treated with PBS supplemented with 1% BSA and 0.2% Triton X-100 for 20 min at room temperature to permeabilise cells and incubated overnight in a blocking buffer (PBS supplemented with 1% BSA and 0.1% Tween-20). Coverslips were then probed 1 hr at room temperature with an anti-LAMP1 monoclonal antibody (1:250, clone H4A3 [mouse], Developmental Studies Hybridoma Bank) and 1:1000 polyclonal anti-S. aureus diluted in blocking buffer supplemented with 10% normal goat serum (Abcam). Coverslips were washed thrice with PBS then incubated overnight at 4°C with 1:2000 anti-rabbit (488), anti-mouse (647) secondary antibodies diluted in blocking buffer supplemented with 10% normal goat serum. Coverslips were then incubated 7 min with DAPI (1:5000), washed five times and mounted in Prolong Gold antifade (Thermo Fisher Scientific). Samples were imaged on the Zeiss LSM780 confocal microscope.
 
-## High-content imaging acquisition and analysis
+### High-content imaging acquisition and analysis
 
 Cells were analysed using the Operetta CLS high-content analysis system (PerkinElmer). For each well, images were acquired in a single plane at 11 non-overlapping fields of view (675 × 508 μm/1360 × 1024 pixels in size) using a ×20 PLAN long working distance objective (NA 0.45). DAPI fluorescence (HeLa cell nuclei) was imaged with the filter set: excitation = 360–400 nm, emission: 410–480 nm; 50 ms exposure. A488 fluorescence (S. aureus) was imaged with the filter set: excitation = 460–490 nm, emission = 500–550 nm; exposure = 200 ms. A594 fluorescence (HeLa actin stained by Phalloidin-TRITC) was imaged with the filter set ‘StdOrange1/Cy3’ filter set (excitation: 520–550 nm, emission: 560–630 nm; 0.5-s exposure).
 
 Image processing and analysis were performed using the PhenoLOGIC machine-learning option in the Harmony software (PerkinElmer, v4.1). Nuclei were segmented from the DAPI channel using the ‘Find Nuclei algorithm’ (Method B, Area filter >40 μm2, Common Threshold of 0.4). Cells were segmented from the A594 channels using the Find Cells algorithm (Method C, Area filter >100 μm2, Common Threshold of 0.5). The A488 signals corresponding to S. aureus were further processed using a sliding parabola (curvature, 50 pixels) and Gaussian filter (filter width, 1 pixel) to remove noise and improve the signal-to-noise ratio. S. aureus were segmented by applying the Find Spots algorithm (Method A, Relative Spot Intensity 0.280, Splitting Coefficient 0.5).
 
-## Processing of PI fluorescence signals
+### Processing of PI fluorescence signals
 
 For every 96-well plate, the PI uptake data for each well at each timepoint were standardised to the JE2 strain control using proportion of maximum scoring (POMS): (PI uptake − min(Pi uptake [JE2]))/range(PI uptake [JE2]). Experiments with less than two JE2 replicates available per plate were excluded from our analyses. Standardised data were used to fit a cubic smoothing spline (Little, 2013) using the R function smooth.spline(). Technical replicates within each plate were classified as outliers and excluded if >10% of their timepoint values differed by more than 1.5 times the interquartile range (Tukey method), between the fitted value and the mean for a given isolate. After excluding outlier replicates, fitted data were used to calculate the following PI uptake parameters: AUC, maximum PI uptake rate (rmax), peak PI uptake (μmax), time to maximum PI uptake rate (t(rmax)), time to peak PI uptake (t(μmax)), trough PI uptake, time of trough, and final PI uptake.
 
-## Dimensionality reduction of PI uptake data
+### Dimensionality reduction of PI uptake data
 
 Principal component analysis was performed using the ‘dudi.pca()’ function in the R package ‘adegenet’ and the randomForest package in R was used for fitting an unsupervised random forest model. We used the similarity matrix generated by the model to define similarity cluster of PI uptake. We used the output of the RF model to calculate the importance of each PI uptake parameter defined as mean decrease in Gini index and mean decrease in accuracy (Breiman, 2001).
 
-## PI uptake GWAS
+### PI uptake GWAS
 
 We transformed the mean PI uptake AUC data using the automated normalisation package bestNormalize in R. A GWAS using the normalised AUC data and the 158,169 core-genome variants (all positions where at least 90% of the strains had at least 10 reads coverage, see above) obtained after mapping isolates reads to reference genome BPH2947. All 387 isolates were included in the GWAS, including serial isolates from the same patient, as this outcome is bacterial and not expected to be affected by the host (Tonkin-Hill et al., 2022). To correct for the population structure, we used the factored spectrally transformed linear mixed models (FaST-LMM) implemented in pyseer v1.3.6 (Lees et al., 2018). Random effects in Fast-LMM were computed from a kinship matrix based on the core-genome SNPs generated by Gemma v0.98.1 (Zhou and Stephens, 2012). The Bonferroni method was used to correct p values for multiple testing. We performed the GWAS using single variants and the gene-burden test implemented in pyseer. We excluded synonymous mutations for single variants and gene-burden GWAS. For the single variants GWAS, only mutations with a minimum allele fraction (MAF) of 0.01 (as suggested in the pyseer documentation [https://pyseer.readthedocs.io/en/master/index.html]) were kept and at least two independent acquisitions across the phylogeny. For the gene-burden GWAS, we aggregated rare mutations (MAF <0.01), with 3072 coding sequences of the reference and modelled the association of the PI AUC with the presence/absence of any protein-altering mutations in each BPH2947 gene. For consistent annotation of mutations, we identified BPH2947 genes homologs using BLASTP and annotated FPR3757 genes using aureowiki (Fuchs et al., 2018) and Microbesonline (Alm et al., 2005). The GWAS analysis was run using a customised in-house pipeline (https://github.com/stefanogg/CLOGEN).
 
-## GWAS power calculation
+### GWAS power calculation
 
 We used BacGWASim (Saber and Shapiro, 2020) to simulate a genotype matrix with 1000 and 150,000 variants for a range of sample size between 300 and 9600. We set mutation rate at 0.06 and recombination rate at 0.01. We simulated 10 phenotype replicates with 16 true causal variants and a heritability of 0.5. We then run pyseer on each replicated simulation using the same pipeline described above. As in Denamur et al., 2022, power was calculated as the fraction of identified variants based on a Bonferroni corrected p value below 0.05.
 
-## Determination of genetic pairs with contrasting PI uptake
+### Determination of genetic pairs with contrasting PI uptake
 
 Isolate pairs for the convergent evolution analysis were identified by screening pairs separated by less than 200 mutations distance for statistically significant differences in the PI uptake AUC (Mann–Whitney test), wherein an isolate causing low PI uptake (isolate-2) was compared to a reference isolate causing higher PI uptake (isolate-1). The genetic distance between closely related isolates was calculated using Snippy and is based on the number of variants identified when mapping the reads of isolate-2 on the draft assembly of isolate-1 (Higgs et al., 2022). To avoid biases related to assembly errors and uneven reads coverage between the two isolates, variant calls were filtered as previously described (https://github.com/stefanogg/staph_adaptation_paper; Giulieri et al., 2022a; Giulieri, 2022). Non-redundant and phylogenetically independent genetic pairs were identified by manual inspection of the phylogenetic tree.
 
-## Genetic pairs analysis
+### Genetic pairs analysis
 
 Mutations identified in genetic pairs and filtered as described above were further characterised using a multilayered annotation strategy as previously described (Giulieri et al., 2022a). Firstly, mutated coding regions (amino acid sequences) across draft genomes were clustered using CD-HIT. We then used BLASTP to identify homologs of each cluster within the S. aureus USA300 FPR3757 reference genome that was annotated using the AureoWiki repository (Fuchs et al., 2018), with a 90% identity and 50% coverage threshold. As genetic pairs were phylogenetically independent and non-redundant, emergence of the same mutation or mutations in the same locus in multiple pairs indicated convergent evolution and was suggestive of positive selection. Based on this, we ranked USA300 FPR3757 homologs according to the number of pairs with mutations.
 
-## Comparison of PI uptake AUC between phylogenetically independent pairs with or without homoplasic mutations
+### Comparison of PI uptake AUC between phylogenetically independent pairs with or without homoplasic mutations
 
 A set of phylogenetically independent pairs was sampled from the tree using the R package ggtree. The impact of the presence/absence of homoplasic mutations on the PI uptake AUC difference within pairs was modelled using linear regression. The sampling and regression were repeated in 100 replicates. As this approach is not suitable for p-value statistical significance, the distribution of the regression coefficient beta of the replicates was used to infer the statistical support for the associations of the homoplasic mutations with the PI uptake phenotype.
 
-## Code and data availability
+### Code and data availability
 
 Scripts to process PI uptake data and to perform genomic analyses are available on github at https://github.com/stefanogg/InToxSa (copy archived at Giulieri and Guerillot, 2023). The code for genomic analyses is available on https://github.com/stefanogg/CLOGEN (copy archived at Giulieri, 2023) (GWAS analysis), and on https://github.com/stefanogg/staph_adaptation_paper (Giulieri, 2022) (comparative genomics of genetic pairs).
 
 Whole-genome sequences of the 387 clinical strains are available in the European Nucleotide Archive under Bioproject accession number PRJEB27932.
 
-## Aureusimine B identification
+### Aureusimine B identification
 
 Bacterial extracts were isolated from 30 ml cultures grown in TSB at 37°C overnight under agitation. Bacterial cells were pelleted by centrifugation at 4000 × g during 30 min and the culture supernatants were sterilised by passage through a 0.22 mM filter. For each strain, 10 ml of supernatant were added to an equal volume of ethyl acetate in glass tubes, vortexed and allowed to extract at room temperature overnight. Ethyl acetate extracts were dried in vacuo. Dried ethyl acetate extracts were resuspended in 100 ml methanol and 2 ml of each sample was analysed by HPLC using the Shimadzu Prominence HPLC system coupled to a SPD-M20A diode array detector. The column oven (CTO-20A) was set to 40°C and aureusimine B was separated on Kinetex C18, 75 × 3 mm, 2.6 μm column (Phenomenex). Purified aureusimine B was used as reference standard (Bioaustralis Fine Chemicals). All used chemicals were of analytical grade.
 

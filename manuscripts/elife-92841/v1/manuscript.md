@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02drdmm93 Department of Pathology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China
-2. https://ror.org/02drdmm93 Department of Hepatobiliary Surgery, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China
-3. https://ror.org/02drdmm93 Department of Pathology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital & Shenzhen Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Shenzhen China
+1. Department of Pathology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))
+2. Department of Hepatobiliary Surgery, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))
+3. Department of Pathology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital & Shenzhen Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Shenzhen China ([ROR:02drdmm93](https://ror.org/02drdmm93))
 
 † Corresponding author
 
 ## Abstract
 
-Diffuse large B-cell lymphoma (DLBCL) is the predominant type of malignant B-cell lymphoma. Although various treatments have been developed, the limited efficacy calls for more and further exploration of its characteristics. Datasets from the Gene Expression Omnibus (GEO) database were used for identifying the tumor purity of DLBCL. Survival analysis was employed for analyzing the prognosis of DLBCL patients. Immunohistochemistry was conducted to detect the important factors that influenced the prognosis. Drug-sensitive prediction was performed to evaluate the value of the model. VCAN, CD3G, and C1QB were identified as three key genes that impacted the outcome of DLBCL patients both in GEO datasets and samples from our center. Among them, VCAN and CD3G+ T cells were correlated with favorable prognosis, and C1QB was correlated with worse prognosis. The ratio of CD68 + macrophages and CD8 + T cells was associated with better prognosis. In addition, CD3G+T cells ratio was significantly correlated with CD68 + macrophages, CD4 + T cells, and CD8 +T cells ratio, indicating it could play an important role in the anti-tumor immunity in DLBCL. The riskScore model constructed based on the RNASeq data of VCAN, C1QB, and CD3G work well in predicting the prognosis and drug sensitivity. VCAN, CD3G, and C1QB were three key genes that influenced the tumor purity of DLBCL, and could also exert certain impact on drug sensitivity and prognosis of DLBCL patients. This work is supported by the Shenzhen High-level Hospital Construction Fund and CAMS Innovation Fund for Medical Sciences (CIFMS) (2022-I2M-C&T-B-062).
+Background:Diffuse large B-cell lymphoma (DLBCL) is the predominant type of malignant B-cell lymphoma. Although various treatments have been developed, the limited efficacy calls for more and further exploration of its characteristics.Methods:Datasets from the Gene Expression Omnibus (GEO) database were used for identifying the tumor purity of DLBCL. Survival analysis was employed for analyzing the prognosis of DLBCL patients. Immunohistochemistry was conducted to detect the important factors that influenced the prognosis. Drug-sensitive prediction was performed to evaluate the value of the model.Results:VCAN, CD3G, and C1QB were identified as three key genes that impacted the outcome of DLBCL patients both in GEO datasets and samples from our center. Among them, VCAN and CD3G+ T cells were correlated with favorable prognosis, and C1QB was correlated with worse prognosis. The ratio of CD68 + macrophages and CD8 + T cells was associated with better prognosis. In addition, CD3G+T cells ratio was significantly correlated with CD68 + macrophages, CD4 + T cells, and CD8 +T cells ratio, indicating it could play an important role in the anti-tumor immunity in DLBCL. The riskScore model constructed based on the RNASeq data of VCAN, C1QB, and CD3G work well in predicting the prognosis and drug sensitivity.Conclusions:VCAN, CD3G, and C1QB were three key genes that influenced the tumor purity of DLBCL, and could also exert certain impact on drug sensitivity and prognosis of DLBCL patients.Funding:This work is supported by the Shenzhen High-level Hospital Construction Fund and CAMS Innovation Fund for Medical Sciences (CIFMS) (2022-I2M-C&T-B-062).
 
 ## Introduction
 
@@ -35,41 +35,41 @@ This study utilized bioinformatic analysis to establish the relationship between
 
 ## Materials and methods
 
-## Data collection and tumor purity-related genes (TPGs) selection
+### Data collection and tumor purity-related genes (TPGs) selection
 
 The RNA-Sequence and clinical data of GSE53786 and GSE32918 datasets were downloaded from GEO database. The first gene symbols of GSE53786 datasets were retained when one probe detected multiple genes. Average expression value of genes in each dataset were calculated and used when one gene was detected by multiple probes. Tumor purity was assessed by ESTIMATE (Estimation of Stromal and Immune cells in Malignant Tumor tissues using Expression data) algorithm (Yoshihara et al., 2013) and then its correlation with genes expression was analyzed. The genes with | r |≥0.5 and p-value <0.05 was defined as the TPGs (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig1-v1.jpg)
 
-## TPGs function analysis
+### TPGs function analysis
 
 Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses were executed to analyze the biological processes, cellular components, molecular functions, and pathways related to the TPGs. The statistical significance was considered as p.adjust <0.05.
 
 The protein-protein interactions (PPI) analysis was utilized to investigate the interaction among TPGs, and those with interactive confidence greater than 0.90 on the STRING platform (version 11.5) were selected to establish an interaction network with Cytoscape software (version 3.8.2).
 
-## Prognostic model
+### Prognostic model
 
-The prognostic model was constructed with ‘survival’ package in R (version 4.1.3). The genes enrolled in this model was selected among the prognostic and PPI hub TPGs by function ‘step’ in ‘survival’ package, which can optimize the model. The prognostic model was represented by riskScore = ∑i=1ngene expressioni ×coefi  .
+The prognostic model was constructed with ‘survival’ package in R (version 4.1.3). The genes enrolled in this model was selected among the prognostic and PPI hub TPGs by function ‘step’ in ‘survival’ package, which can optimize the model. The prognostic model was represented by riskScore = $\sumi=1ngene expression_{i} \timescoef_{i} $ .
 
-## Clinical specimens and follow-up
+### Clinical specimens and follow-up
 
 190 patients from the Cancer Hospital Chinese Academy of Medical Sciences, the CHCAMS cohort, were enrolled in this study (Supplementary file 1). All patients received surgery or biopsy during September, 2010 and September, 2020, and then standard follow-ups were carried out until March, 2023. The overall survival (OS) was defined as the interval between the operation and death or the last follow-up. The specimens from the CHCAMS cohort were used for immunohistochemistry assay.
 
-## IHC
+### IHC
 
 Paraffin-embedded DLBCL tissues of CHCAMS Cohort were used for immunohistochemistry (IHC). After de-paraffinization and hydration, heat-induced method was performed for antigen retrieval. Primary antibody of VCAN (AB177480, 1:100, Abcam, USA), CD3G (AB134096, 1:1000, Abcam, USA), C1QB (AB92508, 1:50, Abcam, USA), CD68 (303565, 1:1000, Abcam, USA), CD4 (ZM-0418, ZSGB-BIO, China), CD8 (ZA-0508, ZSGB-BIO, China), CD206(24595 S, 1:400, CST, USA), and CD32(15625–1-AP, 1:1000, proteintech, China) was incubated at 4 °C overnight. Sections were washed with TBS-T buffer, and then incubated with secondary antibody, and finally stained with DAB. The quantitative analysis of the slices was conducted by QuPath-0.4.3. VCAN and C1QB were assessed by H-score, and CD3G, CD68, CD4, CD8, CD206, CD32 were assessed as the ratio of the corresponding positive cells among all cells.
 
-## Drug sensitivity prediction
+### Drug sensitivity prediction
 
 Drug sensitivity prediction was conducted utilizing ‘oncoPredict’ packages in R 4.1.3. The drug sensitivity data was collected from Genomics of Drug Sensitivity in Cancer (GDSC). The drugs that was analyzed in this study was selected according to clinical practice or clinical trials searched in Pubmed.
 
-## Statistical analysis
+### Statistical analysis
 
-Data in this study was shown in the form of mean ± SEM. Correlation between two variates was determined with Spearman analysis. Kaplan–Meier (K–M) curve and Log rank test were used for survival analysis. The cut-offs of survival analysis were provided by X-tile. The independent risk factor analysis was performed with Cox regression analysis. Receiver operating characteristic (ROC) curve was used for test the efficacy of prognostic model. The clinicopathological characteristics difference analysis was conducted with χ2 test, Fisher’s exact test, or Wilcoxon rank sum test. The drug sensitivity scores were compared with the Wilcoxon rank sum test. In this study, p<0.05 were considered statistically significant.
+Data in this study was shown in the form of mean ± SEM. Correlation between two variates was determined with Spearman analysis. Kaplan–Meier (K–M) curve and Log rank test were used for survival analysis. The cut-offs of survival analysis were provided by X-tile. The independent risk factor analysis was performed with Cox regression analysis. Receiver operating characteristic (ROC) curve was used for test the efficacy of prognostic model. The clinicopathological characteristics difference analysis was conducted with $χ^{2}$ test, Fisher’s exact test, or Wilcoxon rank sum test. The drug sensitivity scores were compared with the Wilcoxon rank sum test. In this study, p<0.05 were considered statistically significant.
 
 ## Results
 
-## Tumor purity-related genes were correlated with extracellular matrix organization and immune response
+### Tumor purity-related genes were correlated with extracellular matrix organization and immune response
 
 Based on GSE53786 dataset, we first assessed the tumor purity of DLBCL, which ranged from 17.2 to 67.4% (Figure 2A). In order to screen out the TPGs, we then analyzed the correlation between genes expression and tumor purity. According to the thresholds mentioned above, 642 genes were identified as TPGs, among which 31 genes were positively correlated with tumor purity, while 611 genes were negatively correlated with it (Figure 2B). In addition, tumor purity did have influence on the prognosis of DLBCL patients, which showed that patients with high tumor purity had lower OS rates than those with low tumor purity (Figure 2C, p=0.025).
 
@@ -79,7 +79,7 @@ Based on GSE53786 dataset, we first assessed the tumor purity of DLBCL, which ra
 
 Next, we performed GO and KEGG enrichment analyses to explore the functions and signaling pathways in which these TPGs were involved. It turned out that the TPGs were mainly associated with extracellular matrix organization and immune response (Figure 2D and E). Not only did the enrichment results confirm that these genes were reliable to be related with the tumor purity, but it also laid solid foundations for the sequent analyses.
 
-## A prognostic model was constructed with three TPGs
+### A prognostic model was constructed with three TPGs
 
 With the 642 TPGs, we exerted PPI analysis to investigate their interaction and the hub genes (Figure 3A). The TPGs who had five or more interactive genes were shown in Figure 3B, and defined as hub genes. Then, we performed univariate Cox regression analysis to figure out the TPGs that were associated with the prognosis of DLBCL patients, and 103 genes were identified (Figure 3C). Interestingly, most of the TPGs were correlated with good outcomes (with HR <1), and only six genes were associated with poor outcomes (with HR >1). Through conducting intersection analysis, we found nine genes (LUM, VCAN, YAP1, COL5A2, SDC2, TWIST1, CD3G, C1QB, and C3) were intersection genes (Figure 3D), indicating that they had an active effect in modulating the tumor purity, as well as influencing the prognosis of DLBCL patients.
 
@@ -95,9 +95,25 @@ After ascertaining the key genes, we tried to construct a prognostic model with 
 
 When we applied this model to GSE32918 dataset, it still did excellently and the results were in accordance with that in GSE53786 dataset (Figures 5A and 4B; Figure 5—figure supplement 1). Next, we analyzed the relationship between riskScore and some clinicopathological characteristics provided in GSE53786 dataset. The results showed that high-risk group had more ABC type DLBCL, while low-risk group had more the GCB type DLBCL (Figure 5C). Besides, high-risk group displayed higher lactic dehydrogenase (LDH) ratio (Figure 5F). However, the Eastern Cooperative Oncology Group (ECOG) performance and stage was not associated with the riskScore (Figure 5D and E). Still, the high-risk group has more Stage III and Stage IV patients, but less Stage I patients than low-risk group. Finally, we employed the univariate and multivariate analysis to explore whether riskScore was an independent prognostic factor for DLBCL patients. As expected, the riskScore was associated with the poor prognosis (Figure 5G, p<0.001, HR = 1.545, 95% CI 1.284–1.861) and was an independent prognostic factor (Figure 5H, p=0.002, HR = 1.474, 95% CI 1.156–1.879).
 
-## The prognostic value of VCAN, CD3G, and C1QB were validated by IHC assay
+![Figure 5.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig5-v1.jpg)
+
+**Figure 5.:** (A) Survival analysis results in GSE32918 dataset was consistent to that of GSE53786 dataset (n Low = 124, n High = 125). (B) The prognostic model also did well in GSE32918 dataset. (C) High-risk group in GSE53786 dataset contained more ABC-type DLBCL, while low-risk group contained more GCB-type DLBCL (χ2 test). (D) The ECOG performance of two groups (GSE53786 dataset) showed no statistical difference (χ2 test). (E) More patients in high-risk group were at Stage III or Stage IV, and less patients were at Stage I, compared with low-risk group, although no statistical significance was shown (GSE53786 dataset) (χ2 test). (F) High-risk group had higher LDH ratio (GSE53786 dataset) (Wilcoxon rank sum test, data are shown as mean ± SEM). (G) The riskScore was associated with poor prognosis of DLBCL patients in GSE53786 dataset. (H) The riskSocre was an independent prognostic factor for DLBCL patients. *p<0.05, **p<0.01, ns, not significant. ABC, activated B cell; GCB, germinal center B cell; ECOG, Eastern Cooperative Oncology Group; LDH, lactic dehydrogenase.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) High ESTIMATE-Score group had better prognosis. (B) ESTIMATE-Score was negatively associated with riskScore. Note: ESTIMATE-Score manifests the tumor purity, with high ESTIMATE-Score indicating low tumor purity and high immune and stromal components. Because the GSE32918 datasets were sequenced with illumina platform, the ESTIMATE algorithm only provided ESTIMATE Score to represent the tumor purity.
+
+### The prognostic value of VCAN, CD3G, and C1QB were validated by IHC assay
 
 With the purpose of the further validation of the prognostic value of VCAN, CD3G, and C1QB, we detected the expression of these genes in CHCAMS cohort by IHC. For VCAN, the patients were divided into high and low groups according to the cut-off of the H-score (275.42) provided by X-tile. The survival analysis showed that patients with high expression of VCAN had higher OS rate (Figure 6A, p=0.003). For CD3G, previous study revealed that it was a component of T cell receptor complex, for which it could be regarded as a marker of T cells (Wang et al., 2008). Therefore, we assessed the expression level of CD3G by counting the CD3G+ T cells ratio, and divided patients by the cut-off (2.5%). The survival analysis revealed that patients with high CD3G+ T cells infiltration showed favorable prognosis (Figure 6B, p<0.001). For C1QB, the patients in high expression group (cut-off=82.41) showed adverse prognosis (Figure 6C, p=0.015). Although the detection of protein level was not convenient to build a prognostic model for the difference of assessment methods and the lake of coefficient, these results were in accordance with those of GEO datasets, which successfully proved the prognostic value of VCAN, CD3G, and C1QB.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig6-v1.jpg)
+
+**Figure 6.:** (A) The representative image of VCAN staining of high and low expression groups and the survival analysis based on VCAN expression (n Low = 127, n High = 63). (B) The representative image of CD3G staining of high and low CD3G+ T cells ratio groups and the survival analysis based on CD3G+ T cells ratio (n Low = 61, n High = 129). (C) The representative image of C1QB staining of high and low expression groups and the survival analysis based on C1QB expression (n Low = 117, n High = 73). (D) The representative image of CD68 staining of high and low CD68 + macrophages ratio groups and the survival analysis based on CD68 + macrophages ratio (n Low = 125, n High = 65). (E) The representative image of CD8 staining of high and low CD8 + T cells ratio groups and the survival analysis based on CD8 + T cells ratio (n Low = 24, n High = 166). (F) The representative image of CD4 staining of high and low CD4 + T cells ratio groups and the survival analysis based on CD4 + T cells ratio (n Low = 132, n High = 58). (G) The correlation between VCAN, CD3G+ T cells ratio, C1QB and CD68 + macrophages, CD8 + T cells and CD4 + T cells ratio . ‘×’ means no statistical significance. (H-I) GSEA analysis based on the differentially expressed genes between high-risk and low-risk group in GSE53786 and GSE32918. (J) The CD3G+ T cells infiltration varied from colon to testis originating diffuse large B-cell lymphoma (DLBCL) in male (Fisher’s exact test). (K) The VCAN expression level was different between intra- and extra-lymph node DLBCL (χ2 test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The ratio of CD68 + macrophages, CD8 + T cells, and CD4 + T cells in CHCAMS cohort (n = 190, Kruskal-Wallis Test and Dunn’s Test, data are shown as mean ± SEM). (B-D) The correlation between VCAN, CD3G+ T cells, C1QB, and types of DLBCL in CHCAMS cohort (χ2 test). (E-K) The correlation between VCAN, CD3G+ T cells, C1QB, and DCBCL origination in CHCAMS cohort (E-G, I and K, χ2 test; H and J, Fisher’s exact test ). ‘Location to LN’ means the relative location of the tumor to lymph node, that is, intra-lymph node or extra-lymph node. (L-M) The predicted M1 and M2 macrophages proportion in GSE53786 dataset (n = 119, Wilcoxon rank sum test, data are shown as mean ± SEM). (N-O) The predicted M1 and M2 macrophages proportion in GSE32918 dataset (n = 249, Wilcoxon rank sum test, data are shown as mean ± SEM). (P) The validation of M1 (CD32 + cells) and M2(CD206 + cells) macrophages infiltration in diffuse large B-cell lymphoma (DLBCL) in CHCAMS cohort (n = 44, Wilcoxon signed rank test). **p<0.01, ***p<0.001.
 
 Given that these genes could potentially influence the tumor purity of DLBCL, we then analyzed the relationship between them and CD68 + macrophages, CD4 + T cells, and CD8 + T cells. As was shown in Figure 6—figure supplement 1A, CD68 + macrophages [(17.75±1.05) %] account for more ratio than CD4 + T cells [(0.68±0.20) %] and CD8 + T cells [(6.69±0.56) %] (p<0.001, Kruskal-Wallis Test and Dunn’s Test). In the survival analysis of these three types of immune cells, we found that CD68 + macrophages, CD8 + T cells, and CD4 + T cells were associated with better prognosis (Figure 6D–F, p=0.029, p=0.002, p=0.053). And XCELL and QUANTISEQ algorithms revealed that M1 macrophages accounted for more proportion than M2 macrophages in GSE53786 and GSE32918 (Figure 6—figure supplement 1L–O), which was confirmed in the CHCAMS cohort (Figure 6—figure supplement 1P). Besides, the ratio of CD3G+ T cells was positively correlated with that of CD68 + macrophages, CD8 + T cells, and CD4 + T cells, C1QB expression level was positively correlated with CD8 + T cells, and VCAN expression level was positively correlated with CD8 + T cells ratio (Figure 6G). GSEA analysis based on the differentially expressed genes between high-risk and low-risk group in the GEO datasets above revealed that the cellular adhesion, extracellular structures, and immune-related processes could result in the different outcome (Figure 6H–I).
 
@@ -105,7 +121,7 @@ In addition to the above analyses, we also explored the relationship between the
 
 These results showed that VCAN, CD3G, and C1QB played important roles in the microenvironment of DLBCL, possibly regulating the immune infiltration via modulating the extracellular organization and cellular interaction.
 
-## The TPGs signature model could also predict the drug sensitivity of DLBCL patients
+### The TPGs signature model could also predict the drug sensitivity of DLBCL patients
 
 In order to learn about the ability of the previously mentioned model to predict drug sensitivity, we performed the prediction with ‘oncoPredict’ package in R. Fifteen drugs (Supplementary file 2) included in the GDSC and used in clinical practice or under clinical trials (searched on Pubmed) were enrolled in this prediction analysis.
 

@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.41239.001 While the sphingosine-1-phosphate (S1P)/sphingosine-1-phosphate receptor-1 (S1PR1) axis is critically important for lymphocyte egress from lymphoid organs, S1PR1-activation also occurs in vascular endothelial cells (ECs), including those of the high-endothelial venules (HEVs) that mediate lymphocyte immigration into lymph nodes (LNs). To understand the functional significance of the S1P/S1PR1-G i axis in HEVs, we generated Lyve1;Spns2 Δ/Δ conditional knockout mice for the S1P-transporter Spinster-homologue-2 (SPNS2), as HEVs express LYVE1 during development. In these mice HEVs appeared apoptotic and were severely impaired in function, morphology and size; leading to markedly hypotrophic peripheral LNs. Dendritic cells (DCs) were unable to interact with HEVs, which was also observed in Cdh5 CRE-ERT2 ; S1pr1 Δ/Δ mice and wildtype mice treated with S1PR1-antagonists. Wildtype HEVs treated with S1PR1-antagonists in vitro and Lyve1 -deficient HEVs show severely reduced release of the DC-chemoattractant CCL21 in vivo. Together, our results reveal that EC-derived S1P warrants HEV-integrity through autocrine control of S1PR1-G i signaling, and facilitates concomitant HEV-DC interactions.
+While the sphingosine-1-phosphate (S1P)/sphingosine-1-phosphate receptor-1 (S1PR1) axis is critically important for lymphocyte egress from lymphoid organs, S1PR1-activation also occurs in vascular endothelial cells (ECs), including those of the high-endothelial venules (HEVs) that mediate lymphocyte immigration into lymph nodes (LNs). To understand the functional significance of the S1P/S1PR1-Gi axis in HEVs, we generated Lyve1;Spns2Δ/Δ conditional knockout mice for the S1P-transporter Spinster-homologue-2 (SPNS2), as HEVs express LYVE1 during development. In these mice HEVs appeared apoptotic and were severely impaired in function, morphology and size; leading to markedly hypotrophic peripheral LNs. Dendritic cells (DCs) were unable to interact with HEVs, which was also observed in Cdh5CRE-ERT2;S1pr1Δ/Δ mice and wildtype mice treated with S1PR1-antagonists. Wildtype HEVs treated with S1PR1-antagonists in vitro and Lyve1-deficient HEVs show severely reduced release of the DC-chemoattractant CCL21 in vivo. Together, our results reveal that EC-derived S1P warrants HEV-integrity through autocrine control of S1PR1-Gi signaling, and facilitates concomitant HEV-DC interactions.
 
 ## Introduction
 
@@ -48,33 +48,77 @@ We reported recently that BECs secrete S1P via the transporter Spinster-homolog-
 
 ## Results
 
-## Lyve1CRE-mediated Spns2-deletion in endothelial cells
+### Lyve1CRE-mediated Spns2-deletion in endothelial cells
 
 The spleen and thymus of Lyve1;Spns2Δ/Δ mice were unaltered in their tissue architecture and size, whereas in comparison to wildtype Spns2f/f mice, pLNs are hypotrophic (Figure 1 (A)). Lyve1-specific deletion of Spns2 did not affect S1P levels in blood, but did reduce the S1P concentration in lymph fluid to only 14.7% of that seen in lymph of Spns2f/f mice (Figure 1 (B)). Nevertheless, sphingosine and glycerol-based lysophospholipid levels in both blood and lymph were comparable between Spns2-deficient and control mice (Figure 1 (B) and Figure 1—figure supplement 1). Previously we have shown that Spns2-deficiency in global Spns2-/- mice and conditional Tie2-Spns2Δ/Δ mice results in a significant reduction of S1P-levels in the blood (Fukuhara et al., 2012). In consequence, impairment of the chemotactic S1P-gradient between thymic interstitium and blood vasculature resulted in a reduced egress of S1PR1-expressing T-cells and an accumulation of CD4+ and CD8+ single-positive (SP) T-cells in the thymus (Fukuhara et al., 2012). Nonetheless, frequencies and total cell numbers of CD4+ and CD8+ SP T-cells in the thymus of Lyve1;Spns2Δ/Δ mice were comparable to those of Spns2f/f mice (Figure 1—figure supplement 2 (A)), whereas the hypotrophic pLNs of Lyve1;Spns2Δ/Δ mice showed a strong reduction in the total number of cells to only 20.1% of CD4+ and 21.7% of CD8+ SP T-cells, and 59% of mature recirculating (rec.) B-cells (CD19+/CD23+/IgD+; Figure 1 (C–D)). These results indicate that Lyve1CRE mediated Spns2 deletion may prevent entry of recirculating lymphocytes to pLNs. Recirculating B- and T-cell populations were strongly decreased throughout various lymphoid organs in Lyve1;Spns2Δ/Δ mice (Figure 1—figure supplement 2 (A-E)). In the spleen of Lyve1;Spns2Δ/Δ mice, follicular (FO) B-cells were reduced to 43.5%, whereas marginal zone (MZ) B-cells were increased to 55% (Figure 1—figure supplement 2 (D-E)). Furthermore, in the thymus, BM and spleen of Lyve1;Spns2Δ/Δ mice we detected elevated frequencies of apoptotic lymphocytes, whereas the frequencies of apoptotic B- and T-cells were reduced in pLNs of Lyve1;Spns2Δ/Δ mice (Figure 1—figure supplement 2 (F)). These results are compatible with the hypothesis that LYVE1+ LECs make a significant contribution to lymph S1P-levels by secreting S1P via SPNS2 into the lymphatics and thereby control lymphocyte egress from secondary lymphoid organs into the lymphatic system.
 
-## Reduced lymphocyte immigration into pLNs and impaired lymphocyte egress into the lymphatic system in Lyve1;Spns2Δ/Δ mice
+![Figure 1.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig1-v1.jpg)
+
+**Figure 1.:** (A) Macroscopic view of spleen, thymus and pLNs of wildtype Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice. (B) Quantification of S1P and sphingosine (SPH) concentrations in lymph and blood. (C) FACS analysis of CD4+ and CD8+ SP T-cells (top) and mature rec. B-cells (bottom) of pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (D) Light microscopy of pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for CD3+ T-cells (top, blue) and IgD+ mature rec. B-cells (bottom, blue) counterstained for collagen-IV+ (brown) tissue frameworks. Each circle (B, C) represents an individual mouse; bars indicate the mean. Scale bars, 0.2 cm (A) or 200 μm (D). ***p<0.0005 (two-tailed unpaired Student’s t-test (B, C)). Data are representative for six mice per group (A, B), for 2x inguinal, 2x brachial and 2x axial LNs of six mice per group (D) or are pooled from three independent experiments (C) with n = 3 or n = 4 mice per group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantification of lymph concentrations of lysophosphatidic acid (LPA), lysophosphatidylcholine (LPC), lysophosphatidyethanolamine (LPE), lysophosphatidyglycerol (LPG), lysophosphatidylinositol (LPI) and lysophosphatidylserine (LPS). (B) Blood concentrations of glycerol-based lysophospholipids (as monitored in (A)). Data are representative for six mice per group (A), (B); mean + s.e.m. in A, (B).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) FACS analysis of thymocytes and T-cells in the thymus of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (B) FACS analysis of precursor B-cells (B220+/IgM-), immature B-cells (B220lo/IgM+) and mature rec. B-cells (B220hi/IgM+) in the BM of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (C) FACS analysis of CD4+ and CD8+ SP T-cells (top) and mature rec. B-cells (bottom) in the blood of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (D) FACS analysis of CD4+ and CD8+ SP T-cells (top) and B220+/CD21-/CD23- transitional (T1) and B1 B-cells (bottom), B220+/CD21+/CD23+ follicular (FO) B-cells (bottom) and B220+/CD21hi/CD23lomarginal zone (MZ) B-cells (bottom) in the spleen of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (E) Light microscopy of the spleen of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for CD3+ T-cells (top, blue) and IgD+ mature rec. B-cells (bottom, blue) counterstained for collagen-IV+ (brown) tissue frameworks. (F) FACS analysis of apoptotic CD4+ and CD8+ SP T-cells (left) and mature rec. B-cells (right) by AnnexinV-staining in the thymus, BM, spleen and pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. Each circle (A–C, D, F) represents an individual mouse; bars indicate the mean. Scale bars, 200 μm (E). *p<0.05; **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (A–C, D, F)). Data are pooled from three independent experiments (A–D, D, F) with n = 3 or n = 4 mice per group (A–C, D, F), or are representative for six mice per group (E).
+
+### Reduced lymphocyte immigration into pLNs and impaired lymphocyte egress into the lymphatic system in Lyve1;Spns2Δ/Δ mice
 
 Consistent with the strong reduction of lymph S1P-levels (Figure 1 (B)), flow cytometric analyses of the lymph collected from the cisterna chyli of Lyve1;Spns2Δ/Δ mice confirmed a complete absence of recirculating lymphocytes (Figure 2 (A)), indicating severe impairment of lymphocyte-egress into the lymphatics from pLNs. Moreover, the drastic difference in organ volume (Figure 1 (A)) and lymphocyte homeostasis (Figure 1 (B–D)) between pLNs of Lyve1;Spns2Δ/Δ mice suggests that lymphocyte immigration from the blood into pLNs was affected, even if the numbers of lymphocytes in circulation are influenced by their reduced viability (Figure 1—figure supplement 2 (B-F)). Therefore, we tested short-term lymphocyte trafficking to lymphoid tissues by adoptively transferring wildtype congenic CD45.1+ splenocytes i.v. into Spns2f/f and Lyve1;Spns2Δ/Δ mice (Figure 2 (B)). Flow cytometric analyses recorded two hours after injection of cells showed that immigration into pLNs of Lyve1;Spns2Δ/Δ mice was ~5.2 fold less efficient than into pLNs of Spns2f/f mice (Figure 2 (C)). Given that cellular immigration into pLNs was strongly reduced, we next sought to determine if Lyve1 specific ablation of Spns2 had an effect on HEVs and found that development of PNAd+ HEVs appear to be severely compromised in pLNs of Lyve1;Spns2Δ/Δ mice (Figure 2 (D)). In agreement with this observation in IHC, the frequencies of CD45-/CD31+/PNAd+ high-endothelial cells isolated from pLNs of Lyve1;Spns2Δ/Δ were ~2.3 fold reduced and total cell numbers were ~10.3 fold decreased in comparison to the controls when analysed by FACS (Figure 2 (E)). In order to functionally address the efficiency of the egress of lymphocytes from pLNs, congenic eGFP+ splenocytes were adoptively transferred into Spns2f/f and Lyve1;Spns2Δ/Δ recipient mice. After an equilibration period of 48 hr surface integrins on circulating lymphocytes were saturated with anti-αL and anti-α4 antibodies, as previously described (Lo et al., 2005). This results in reduced lymphocyte arrest under physiological shear at the endothelial cell wall. Therefore, lymphocyte immigration across HEVs was blocked at t = 0 hr and lymphocyte egress rates could be quantified 20 hr later (t = 20 hr, Figure 2 (F)). The numbers of adoptively transferred eGFP+ cells that were present 20 hr after integrin blockade in pLNs of Spns2f/f mice were strongly reduced in comparison to the cell numbers detected at 0 hr (Figure 2 (G)). However, the cell numbers in pLNs of Lyve1;Spns2Δ/Δ mice at 20 hr where unaltered when compared to those at 0 hr (Figure 2 (G)). These results functionally show that lymphocyte egress is reduced in pLNs of Lyve1;Spns2Δ/Δ mice in comparison to that measured in pLNs of Spns2f/f mice (Figure 2 (G)). In summary, our data demonstrate, unexpectedly, that Spns2-deficiency in LYVE1+endothelial cells led to severe impairment in function, morphology and size of PNAd+ HEVs, resulting in reduced immigration of lymphocytes which, in turn, led to the development of hypotrophic pLNs of Lyve1;Spns2Δ/Δ mice. Moreover, lymphocyte egress from pLNs into the lymphatic system is impaired in Lyve1;Spns2Δ/Δ because of the impaired S1P secretion via SPNS2 by LYVE1+ LECs.
 
-## Spns2-deficiency in HEVs of Lyve1;Spns2Δ/Δ mice
+![Figure 2.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig2-v1.jpg)
+
+**Figure 2.:** (A) FACS analysis of CD4+ and CD8+ SP T-cells (left) and mature rec. B-cells (right) of lymph fluid isolated from the cisterna chyli of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (B) Experimental flow-chart of short-terming homing assays to quantify lymphocyte immigration into pLNs. (C) FACS analysis of total congenic CD45.1+ cells in pLNs two hours upon injection of WT splenocytes into Spns2f/f and Lyve1;Spns2Δ/Δ mice. (D) Light microscopy of frozen sections of pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for PNAd+ HEVs (blue) counterstained for collagen-IV+ (brown). (E) FACS analysis of total CD45-/CD31+/PNAd+ high-endothelial cells isolated from pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (F) Experimental flow-chart of homing assays to quantify lymphocyte egress from pLNs. (G) Total numbers of congenic eGFP+ cells in pLNs at 0 hr and 20 hr upon injection of anti-α4 / anti-αL antibodies into Spns2f/f and Lyve1;Spns2Δ/Δ mice. Each circle (A, C, E, G) represents an individual mouse; bars indicate the mean. Scale bars, 50 μm (D). **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (A, C, E, G)). Data are representative for five mice per group pooled from two independent experiments (A) with n = 2 or n = 3 mice per group (A), for six mice per group (D) or are pooled from two (C, G) or three (E) independent experiments with n = 2, n = 3 or n = 4 mice per group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Confocal microscopy of pLNs of Lyve1;tdTomato reporter mice for tdTOMATO+ (LYVE1-) expressing cells (red), PNAd+ (green) HEVs and Lyve-1+ (blue) LECs. (B) FACS analysis of CD45-/CD31+/PNAd+/Lyve-1- high-endothelial cells and CD45-/CD31+/PNAd-/Lyve-1+ LECs isolated from pLNs of tdTomatoSTOP-loxP control mice or Lyve1;tdTomato mice for tdTOMATO expression. (C) FACS analysis of CD45-/CD31+/PNAd+/Lyve-1- high-endothelial cells and CD45-/CD31+/PNAd-/Lyve-1+ LECs of pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (D) Quantitative RT-PCR analysis of Spns2 mRNA in sorted LECs, HEVs (as in C) and of whole blood from Spns2f/f and Lyve1;Spns2Δ/Δ mice. (E) Confocal microscopy of whole mounts of iLNs isolated from embryos of E16.5 (top) and E18.5 (bottom) of WT C57BL/6 mice for MAdCAM-1 (green), PNAd (red) and Lyve-1 (blue) on high-endothelial cell progenitors and HEVs. Scale bars, 200 μm (A, left), 50 μm (A, right) and 20 μm (D). Data are representative for three mice per group (A), or are representative for two individual experiments (B–D) of pooled non-hematopoietic cells from 2x pLNs, 2x iLNs, 2x aLNs, 2x bLNs, 6x cervical LNs collected from five mice per group (B–D), or are representative for five analyzed embryos per group (E).
+
+### Spns2-deficiency in HEVs of Lyve1;Spns2Δ/Δ mice
 
 The abnormal morphology and function of HEVs and the concomitant difference in lymphocyte immigration to pLNs of Lyve1;Spns2Δ/Δ mice prompted us to investigate Lyve1CRE mediated gene deletion in HEVs. To this end, we intercrossed Lyve1CRE-mice to mice carrying tdTomato preceded by a LoxP-flanked transcriptional stop in the Rosa26 locus (Madisen et al., 2010). We revealed that more than 90% of HEVs of pLNs simultaneously expressed PNAd and tdTOMATO in Lyve1;tdTomato mice, but did not express LYVE1 at detectable levels on the cell surface (Figure 2—figure supplement 1 (A-B)). Furthermore, a comparable frequency of LECs isolated from Lyve1;tdTomato mice expressed the tdTOMATO reporter protein (Figure 2—figure supplement 1 (A-B)). Flow cytometric analyses of PNAd+ high-endothelial cells isolated from pLNs of adult Spns2f/f and Lyve1;Spns2Δ/Δ mice also confirmed the absence of Lyve1 expression on the surface of HEVs (Figure 2—figure supplement 1 (C)). However, quantitative RT-PCR analyses confirmed the deletion of Spns2 in purified CD45-/CD31+/PNAd+ high-endothelial cells and CD45-/LYVE1+ LECs in pLNs of Lyve1;Spns2Δ/Δ mice (Figure 2—figure supplement 1 (D)). We therefore hypothesized that LYVE1 is expressed in high-endothelial progenitor cells during ontogeny, and that LYVE1 expression downregulates with maturation of HEVs after birth. Hence, we next examined whether LYVE1-expression can be found on high-endothelial cell progenitors and PNAd+ HEVs in inguinal LNs (iLNs) of WT embryos of E16.5 and E18.5. iLNs of E16.5 expressed LYVE1 weakly on MAdCAM-1+/PNAd-endothelial cells that are evocative in localization and morphology to high-endothelial cell progenitors (Figure 2—figure supplement 1 (E), top). Furthermore, triple-positive MAdCAM-1+/PNAd+/LYVE1+ HEVs were found in iLNs of E18.5 (Figure 2—figure supplement 1 (E), bottom). These data strongly support the hypothesis that the progenitors of high-endothelial cells express LYVE1 during ontogeny which results in efficient deletion of Spns2 in PNAd+ HEVs of pLNs of Lyve1;Spns2Δ/Δ mice.
 
-## Dependency of the integrity of PNAd+ HEVs in pLNs on lymph-derived DCs
+### Dependency of the integrity of PNAd+ HEVs in pLNs on lymph-derived DCs
 
 Given that DCs play a critical role in the maintenance of HEV architecture and function in pLNs (Moussion and Girard, 2011; Wendland et al., 2011), we analysed DC homeostasis in Lyve1;Spns2Δ/Δ mice. Although a ~ 2.8 fold increase of the total CCR7- conventional migratory DCs (mDCs) per ml blood of Lyve1;Spns2Δ/Δ mice possibly reflects an impaired immigration of DCs to pLNs, DC frequencies in pLNs, spleen and BM, did not differ significantly between Spns2f/f and Lyve1;Spns2Δ/Δ mice (Figure 3 (A), Figure 3—figure supplement 1 (A)). However, in comparison to Spns2f/f mice total numbers of resident DCs (rDCs) and mDCs in pLNs of Lyve1;Spns2Δ/Δ mice were reduced to 65.2% (rDCs) and 58.4% (mDCs) indicating reduced immigration of DCs (Figure 3 (A)). Remarkably, surface expression of CCR7 was unaltered in both rDCs and mDCs in Spns2f/f and Lyve1;Spns2Δ/Δ mice (Figure 3 (A)). We observed that endogenous DCs were in close proximity to PNAd+ HEVs in pLNs of Spns2f/f mice (Figure 3 (B), Figure 3—figure supplement 1 (B)). In contrast, endogenous DCs were absent in areas adjacent to PNAd+ HEVs in pLNs of Lyve1;Spns2Δ/Δ mice (Figure 3 (B)), thus unlikely to provide angiogenic factors to high-endothelial cells. Transmission electron micrographs (TEM) confirmed the drastic morphological changes in atrophic HEVs in pLNs of Lyve1;Spns2Δ/Δ mice (Figure 3 (C)). The number of high-endothelial cells of a HEV appeared to be reduced and the height of EC is relatively flat in pLNs of Lyve1;Spns2Δ/Δ mice when compared to those in pLNs of Spns2f/f mice (Figure 3 (C)). Moreover, high-endothelial cells lost their characteristic cuboidal morphology and nuclei of high-endothelial cells appear deformed in comparison to HEVs in pLNs of Spns2f/f mice (Figure 3 (C)). This prompted us to asses if high-endothelial cells from pLNs of Lyve1;Spns2Δ/Δ mice are apoptotic. Indeed, a flow cytometric terminal deoxynucleotidyl ransferase (TdT) dUTP Nick-End Labeling (TUNEL) assay showed a dramatic ~25 fold increase of apoptotic CD45-/CD31+/PNAd+ high-endothelial cells in pLNs isolated from Lyve1;Spns2Δ/Δ mice in comparison to the controls (Figure 3 (D)). However, high-endothelial cell related PNAd scaffold proteins (GlyCAM-1, CD34, MadCAM-1), glycan and LPA synthetic enzymes (GlcNAc6ST-2, ENPP2) and vasculature associated (CD31, VCAM-1, ICAM-1, VE-cadherin) gene expression were unaltered between Lyve1;Spns2Δ/Δ and Spns2f/f mice (Figure 3—figure supplement 1 (C)). Only a mild reduction in mRNA expression of alpha-(Girard et al., 2012; Miyasaka and Tanaka, 2004)-fucosyltransferase-VII (FucT-VII) of ~2.75 fold and of lymphotoxin beta receptor (LTBR) of ~1.8 fold could be observed (Figure 3—figure supplement 1 (C)). Given the reduced HEV-DC interactions in pLNs of Lyve1;Spns2Δ/Δ mice and the impaired integrity of HEVs, we next asked whether Lyve1-specific ablation of Spns2 affected immigration of activated DCs by afferent lymphatics and the control of DC localization around HEVs. For this purpose, we injected fluorescently labelled mature bone-marrow derived DCs (BMDCs) into the footpad of Spns2f/f and Lyve1;Spns2Δ/Δ mice and investigated their migration into pLNs 24 hr later (Figure 3 (E)). BMDCs immigrated through afferent lymphatics into pLNs of Lyve1;Spns2Δ/Δ mice in frequencies comparable to those of the controls. Strikingly, total numbers of homed BMDCs were strongly reduced particularly in a restricted area 40 μm from the basal lamina of HEVs in pLNs of Lyve1;Spns2Δ/Δ mice when compared to BMDCs in pLNs of Spns2f/f mice (Figure 3 (F–H)). These data are compatible with the idea that the absence of SPNS2-dependent release of S1P from HEVs in pLNs of Lyve1;Spns2Δ/Δ mice caused impaired interactions of HEV with activated lymph-derived DCs, making DCs unable to support normal development and function of HEVs via humoral factors such as LTα1β2, which collectively resulted in heavily restricted lymphocyte immigration to pLNs. This hypothesis was supported by the partial rescue of total high-endothelial cell numbers and HEV morphology in pLNs of Lyve1;Spns2Δ/Δ mice observed upon 10 weeks of treatment with agonistic anti-LTβr antibody and recombinant LTα1/β2 protein (Figure 4 (A–D)). While this treatment was unable to rescue the size of pLNs (Figure 4 (A–C)), it significantly increased the total numbers of HEVs and the average PNAd+ area per LN-section (Figure 4 (B–D)).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig3-v1.jpg)
+
+**Figure 3.:** (A) FACS analysis of CCR7-expression on endogenous conventional mDCs (CD3-/CD19-/CD11cint/MHC-IIhi) and rDCs (CD3-/CD19-/CD11chi/MHC-IIint) isolated from pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (B) Confocal microscopy of pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for CD11c+ (green) DCs, PNAd+ (red) HEVs and Lyve-1+ (blue) LECs. (C) TEM images of HEVs in pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (D) Flow-cytometric TUNEL assay on CD45-/CD31+/PNAd+ high-endothelial cells isolated from pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (E) Experimental flow-chart of BMDC-differentiation in vitro, and lymphatic homing assays of footpad injected BMDCs to quantify DC-immigration from afferent lymphatics into pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (F) Confocal microscopy of pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for CMTMR+ BMDCs (red), PNAd+ (green) HEVs and ERTR7+ (blue) fibroblastic tissue networks. (G) Visualisation of the automated detection of individual CMTMR+ BMDCs (white spheres) from PNAd+ HEVs (green surface) in pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice. Grey gradients visualise the distance transformation from HEVs (green surface) defined by PNAd-staining. (H) Total numbers of BMDCs (white spheres in (F)) in distances from 0 μm - 100 μm from HEVs counted in 10 μm radial areas around HEVs in pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. Each circle represents an individual mouse (A, D) or total numbers of BMDCs around HEVs in the visual field of a micrograph (H); bars indicate the mean. Scale bars, 5 μm (C), 50 μm (B, F, G). *p<0.05; **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (A, D, H)). Data are representative for six mice per group pooled from two (A, B) or three (D) independent experiments with n = 3 (A) or n = 4 per (D) mice group, for 2x pLNs and 2x iLNs of three mice per group (C), for 36x representative individual sections of 2x analyzed popliteal LNs per mouse pooled from two independent experiments (H) with n = 6 mice per group (H).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) FACS analysis of CCR7- and CCR7+ conventional mDCs (CD19-/CD3-/CD11c+/MHC-II+) in blood, spleen, and BM of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (B) Confocal microscopy of pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for CD11c+ (green) DCs, PNAd+ (red) HEVs and Lyve-1+ (blue) LECs. White squares show the regions of interest magnified and shown in Figure 3 (B). (C) qRT-PCR analysis of the expression levels of PNAd scaffolds (GlyCAM-1, CD34, MadCAM-1), of Glycan and LPA synthetic enzymes (GlcNAc6ST-2, FucT-VII, ENPP2), and vascular associated genes (CD31, VCAM-1, ICAM-1, VE-cadherin, LTbR) in total mRNA isolated from CD45-/CD31+/PNAd+ high-endothelial cells sorted from pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. Each circle (A) represents an individual mouse (A) or the relative chemokine expression levels in mRNA extracted from the total CD45-/CD31+/PNAd+ high-endothelial cells (C); bars indicate the mean. Data are pooled from two independent experiments (A) with n = 3 or n = 4 mice per group (A), are representative for 18x individual sections of 2x analyzed pLNs, iLNs and bLNs per mouse pooled from three mice per group in two individual experiments (B), three independent mRNA preparations of 2x pLNs, iLNs and bLNs per mouse pooled from five mice per group (C), or seven (D) individual mice. Scale bars, 200 μm (B). *p<0.05; **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (A, C)).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig4-v1.jpg)
 
 **Figure 4.:** (A) Experimental flow-chart of PBS or agonistic anti-LTβr antibody (20 μg/mouse) and recombinant LTα1/β2 protein (10 μg/mouse) i.p. injections into Spns2f/f and Lyve1;Spns2Δ/Δ mice. (B) Confocal microscopy of iLNs of Spns2f/f mice +anti-LTβr antibody +LTα1/β2 (left), Lyve1;Spns2Δ/Δ mice +PBS (mid) and Lyve1;Spns2Δ/Δ mice +anti-LTβr antibody +LTα1/β2 (right) mice for LYVE1+ (green) LECs, PNAd+ (red) HEVs and ERTR7+ (blue) fibroblastic tissue networks. (C) Visualisation of the automated detection of PNAd+ HEVs (red surfaces) used for the quantification of the total numbers of HEVs/LN section and the total PNAd+ area/LN section of iLNs of Spns2f/f mice +anti-LTβr antibody +LTα1/β2 (left), Lyve1;Spns2Δ/Δ mice +PBS (mid) and Lyve1;Spns2Δ/Δ mice +anti-LTβr antibody +LTα1/β2 (right) mice. (D) The total numbers of HEVs/LN section and the total PNAd+ area/LN section extracted from the analyses shown in (B) and (C) of iLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice treated with +PBS or +anti-LTβr antibody +LTα1/β2. Each circle represents the total numbers of HEVs/LN section or the total PNAd+ area/LN section [μm2] extracted from the micrographs (B, C), bars indicate the mean. Scale bars, 200 μm (B, C). ***p<0.0005 (two-tailed unpaired Student’s t-test (D)). Data are shown for representative sections from 2x analyzed iLNs per mouse (B, C) selected from 21x – 33x individually analyzed sections of six mice per group (D).
 
-## Impaired HEV-DC interactions induced by S1PR1 antagonists
+### Impaired HEV-DC interactions induced by S1PR1 antagonists
 
 In order to understand how HEV-DC interactions and the migratory ability of DCs in pLNs are controlled by HEV-derived S1P, we blocked S1PR signalling by the nonspecific S1PR antagonist FTY720 before we injected mature BMDCs into the footpad of wildtype C57BL/6 mice (Figure 5 (A)). FTY720 targets four of the five S1PRs (S1PR1 and S1PR3-5) (Brinkmann et al., 2002) and should therefore induce impaired HEV-DC interactions of lymph-derived BMDCs in pLNs of recipient mice. Again, 24 hr after footpad injection we observed a severe reduction of homed BMDCs in a restricted area around HEVs within an extended area 70 μm from the basal lamina of HEVs (Figure 5 (B–D)), in agreement with the hypothesis that HEV-derived S1P controls DC localization in pLNs. Indeed, HEVs have been described to express S1PR1 and activate strong S1PR1-Gi signalling (Kono et al., 2014; Lee et al., 2014). In line with these observations our description of impaired HEV-DC interactions upon FTY720 treatment shows that HEVs are highly S1P-responsive. Certainly, mature BMDCs were also found to migrate to high S1P concentration, a phenomenon that correlated to the up-regulation of S1PR1 and S1PR3 (Czeloth et al., 2005; Maeda et al., 2007). In order to further evaluate the stimulation of specific S1PRs and their relationship in facilitating HEV-DC interactions we took advantage of the S1PR1-specific antagonist W146 and the S1PR3-specific antagonist TY52156. Osmotic pump implantation i.p. into wildtype C57BL/6 mice 48 hr prior to footpad injection of mature BMDCs provided constant antagonist levels in recipient mice (Figure 5 (D)). Interestingly, abrogation of S1PR1-Gi signalling with W146 also induced impaired HEV-DC interactions in a restricted area within 40 μm from the basal lamina of HEVs in pLNs of recipient mice (Figure 5 (F) and Figure 5—figure supplement 1 (A-B)). However, application of TY52156, and the concomitant block of S1PR3-signalling, did not affect localization of DCs around HEVs (Figure 5 (G) and Figure 5—figure supplement 1 (C-D)). Taken together, these results suggest that HEV-DC interactions are dependent on S1PR1- but not S1PR3 signalling either in DCs or in high-endothelial cells.
 
-## S1PR1-Gi signalling, survival of high-endothelial cells, and CCL21 release from PNAd+ HEVs in pLNs
+![Figure 5.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental flow-chart for the administration of the non-specific S1PR-antagonist FTY720 i.p. and lymphatic homing assays of footpad injected BMDCs to quantify HEV-DC interactions in pLNs in situ. (B) Confocal microscopy of pLNs of vehicle (left) or FTY720 (right) treated mice for CMTMR+ BMDCs (red), PNAd+ (green) HEVs and ERTR7+ (blue) fibroblastic tissue networks. (C) Visualisation of the distance of individual CMTMR+ BMDCs (white spheres) from PNAd+ HEVs (green surface) in pLNs of vehicle (left) or FTY720 (right) treated mice. Grey gradients visualise the distance transformation from HEVs (green surface) defined by PNAd-staining. (D) Total numbers of BMDCs (white spheres in (B)) in distances from 0 μm - 100 μm from HEVs (green surface in (B)) counted in 10 μm radial areas around HEVs in pLNs of vehicle or FTY720 treated mice. (E) Experimental flow-chart for the administration of the specific S1PR1-antagonist W146 and the S1PR3-antagonist TY52156, and lymphatic homing assays of BMDCs to quantify HEV-DC interactions in pLNs in situ. (F, G) Total numbers of BMDCs (white spheres as shown in (C)) in distances from 0 μm - 100 μm from HEVs counted in 10 μm radial areas around HEVs in pLNs of treated mice. Each circle represents the total numbers of BMDCs around HEVs in the visual field of a micrograph (D, F, G); bars indicate the mean. Scale bars, 50 μm (B, C). **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (F, G)). Data are representative for 37x representative individual sections of 2x analyzed popliteal LNs per mouse pooled from two independent experiments (B, C, D) with n = 6 mice per group (B, C, D) and for 34x (F) or 26x (G) representative individual sections of 2x analyzed popliteal LNs per mouse pooled from 5x mice per group (F, G).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal microscopy of pLNs of vehicle (left) or W146 (right) treated mice for CMTMR+ BMDCs (red), PNAd+ (green) HEVs and ERTR7+ (blue) fibroblastic tissue networks. (B) Visualisation of the automated quantification of the distance of individual CMTMR+ BMDCs (white spheres) from PNAd+ HEVs (green surface) in pLNs of vehicle (left) or W146 (right) treated mice. Grey gradients visualise the distance transformation from HEVs (green surface) defined by PNAd-staining. (C) Confocal microscopy of pLNs of vehicle (left) or TY52156 (right) treated mice for CMTMR+ BMDCs (red), PNAd+ (green) HEVs and ERTR7+ (blue) fibroblastic tissue networks. (D) Visualisation of the distance of individual CMTMR+ BMDCs (white spheres) from PNAd+ HEVs (green surface) in pLNs of vehicle (left) or TY52156 (right) treated mice. Grey gradients visualise the distance transformation from HEVs (green surface) defined by PNAd-staining. (E) Fluorescence microscopy of pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for isotype (top, green)/pAkt (bottom, green) on PNAd+ (red) HEVs and CD45+ (white) hematopoietic cells. Scale bars, 50 μm (A–D) and 20 μm (E). Data are representative for 2x analyzed popliteal LNs per mouse pooled from 5x mice per group (A–D), or are representative for five mice per group pooled from two independent experiments (E) with n = 2 or n = 3 mice per group (E).
+
+### S1PR1-Gi signalling, survival of high-endothelial cells, and CCL21 release from PNAd+ HEVs in pLNs
 
 Given that stimulation of S1PR3, rather than S1PR1, on mature BMDCs has been reported to control mature BMDC migration (Maeda et al., 2007), and, given our observation that a S1P-S1PR1 dependent survival of high-endothelial cells controls DC localization around HEVs, we further investigated the consequences of S1PR1-Gi signalling in HEVs. Immunohistochemistry and FACS revealed S1PR1 expression on PNAd+ HEVs in pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice (Figure 6 (A–B)). We assayed PNAd+ HEVs in pLN-sections of Spns2f/f and Lyve1;Spns2Δ/Δ mice for phosphorylated Akt (pAkt) which can be induced by several upstream signalling axes including S1PR1-Gi signalling (Ishii et al., 2004). PNAd+ HEVs in pLNs of Spns2f/f showed distinct phosphorylation of Akt in contrast to the reduced levels of pAkt in high-endothelial cells in pLNs of Lyve1;Spns2Δ/Δ mice (Figure 5—figure supplement 1 (E)). Hence, it is possible that a S1PR1-Gi directed signalling pathway in HEVs of pLNs from Lyve1;Spns2Δ/Δ mice appears to be defective, even though the proportion of S1PR1 surface expression was mildly increased in comparison to those in HEVs of pLNs from Spns2f/f (Figure 6 (B)).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig6-v1.jpg)
+
+**Figure 6.:** (A) Fluorescence microscopy of pLNs of Spns2f/f (left) and Lyve1;Spns2Δ/Δ (right) mice for isotype (top, green)/S1PR1 (bottom, green) on PNAd+ (red) HEVs and LYVE1+ (white) LECs, and CD45+ (blue) hematopoietic cells. (B) FACS analysis of the cell surface expression of S1PR1 on CD45-/CD31+/PNAd+ high-endothelial cells in pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (C) Experimental flow-chart of BMDC-differentiation in vitro, and lymphatic homing assays of footpad injected BMDCs to quantify DC-immigration from afferent lymphatics into pLNs of S1pr1f/f and Cdh5CRE-ERT2;S1pr1Δ/Δ mice. (D) Confocal microscopy of pLNs of S1pr1f/f (left) and Cdh5CRE-ERT2;S1pr1Δ/Δ (right) mice for CMTMR+ BMDCs (red), PNAd+ (green) HEVs and ERTR7+ (blue) fibroblastic tissue networks. (E) Visualisation of the automated detection of individual CMTMR+ BMDCs (white spheres) from PNAd+ HEVs (green surface) in pLNs of S1pr1f/f (left) and Cdh5CRE-ERT2;S1pr1Δ/Δ (right) mice. Grey gradients visualise the distance transformation from HEVs (green surface) defined by PNAd-staining. (F) Total numbers of BMDCs (white spheres in (E)) in distances from 0 μm - 100 μm from HEVs counted in 10 μm radial areas around HEVs in pLNs of S1pr1f/f and Cdh5CRE-ERT2;S1pr1Δ/Δ mice. Each circle represents an individual mouse (B) or total numbers of BMDCs around HEVs in the visual field of a micrograph (F); bars indicate the mean. Scale bars, 50 μm (A, D, G). *p<0.05, **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (B, F)). Data are representative for five mice per group pooled from two independent experiments (A) with n = 2 or n = 3 mice per group (A), or are representative for nine mice per group pooled from three independent experiments (B) with n = 3 mice per group (B), or for 37x representative individual sections of 2x analyzed popliteal LNs per mouse pooled from two independent experiments (F) with n = 4 mice per group (H).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) FACS analysis of the cell surface expression of S1PR1 on CD45-/CD31+/PNAd+/LYVE1- high-endothelial cells and (B) on CD45-/CD31+/PNAd-/LYVE1+ LECs in pLNs of S1pr1f/f and Cdh5CRE-ERT2;S1pr1Δ/Δ mice. (C) FACS analysis of CD4+ and CD8+ SP T-cells (top) and mature rec. B-cells (bottom) in the blood and (D) pLNs of S1pr1f/f and Cdh5CRE-ERT2;S1pr1Δ/Δ mice. (E) Confocal microscopy of pLNs of S1pr1f/f and Cdh5CRE-ERT2;S1pr1Δ/Δ mice for CMTMR+ BMDCs (red) and LYVE1+ (green) LECs. (F) Visualisation of the automated quantification of the distance of individual CMTMR+ BMDCs (white spheres) from LYVE1+ LECs (green surface) in pLNs of S1pr1f/f and Cdh5CRE-ERT2;S1pr1Δ/Δ mice. Grey gradients visualise the distance transformation from LECs (green surface) defined by anti-LYVE1-staining. (G) Total numbers of BMDCs (white spheres in (F)) in distances from 0 μm - 100 μm from HEVs counted in 10 μm radial areas around LECs in pLNs of S1pr1f/f and Cdh5CRE-ERT2;S1pr1Δ/Δ mice. Each circle represents an individual mouse (A–D) or total numbers of BMDCs around HEVs in the visual field of a micrograph (G); bars indicate the mean. Scale bars, 50 μm (E–F). *p<0.05, **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (A–D, G)). Data are representative for five mice per group pooled from two independent experiments (A–D) with n = 2 or n = 3 mice per group (A–D), or for 29x representative individual sections of 2x analyzed popliteal LNs per mouse pooled from two independent experiments (E–F) with n = 4 mice per group (G).
 
 The results of the S1PR-antagonist experiments and the S1PR1 expression analyses guided us to conditionally delete S1pr1 on high-endothelial cells and to analyse if DCs are able to co-localize with S1pr1-deficient high-endothelial cells in pLNs. Therefore, we opted to generate Cdh5CRE-ERT2;S1pr1Δ/Δ mice. Flow-cytometry revealed the efficient deletion of S1pr1 in HEVs and LECs in the conditional Cdh5CRE-ERT2;S1pr1Δ/Δ mice by postnatal tamoxifen administration (Figure 6—figure supplement 1 (A-B)). Cdh5CRE-ERT2;S1pr1Δ/Δ mice did not show any differences in CD4 or CD8 single-positive T-cell and mature rec. B-cell numbers in peripheral blood or pLNs (Figure 6—figure supplement 1 (C-D)). Strikingly, in these mice, mature wildtype BMDCs fail to co-localize with S1pr1-deficient HEVs, as also observed in Lyve1;Spns2Δ/Δ mice or WT mice treated with S1PR1-antagonists. Indeed, when we performed WT BMDC injections into the footpad of Cdh5CRE-ERT2;S1pr1Δ/Δ mice (Figure 6 (C)) and analysed HEV-DC interactions 24 hr later, we could detect a remarkable impairment of total DC-numbers within a restricted area of 0–60 μm around the basal lamina of HEVs (Figure 6 (D–F)), while no differences in DC-positioning close to cortical lymphatics were observed (Figure 6—figure supplement 1 (E-G)). These results demonstrate that S1PR1-Gi signalling on high-endothelial cells rather than on DCs is responsible for the impaired HEV-DC interaction.
 
@@ -82,7 +126,7 @@ This raises the question if the autocrine activation of S1PR1-Gi signalling that
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/41239/elife-41239-fig7-v1.jpg)
 
-**Figure 7.:** Lyve1;Spns2Δ/Δ mice.(A) The IHC analysis of CCL21 (white) distribution around PNAd+ HEVs, and visualisation of the automated detection of PNAd+ HEVs (green surface) and of the radial areas (blue) around HEVs used for the quantification of the mean fluorescent intensity of the CCL21 signal in pLNs of in Spns2f/f (top) and Lyve1;Spns2Δ/Δ (bottom) mice. (B) The mean fluorescent intensity of the CCL21 signal in distances from −5 μm to 40 μm from the outer border of HEVs (green surface in (C)) determined in 5 μm radial areas around HEVs in pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (C) qRT-PCR analysis of CCL19, CCL21 and CXCL13 expression levels in total mRNA isolated from CD45-/CD31+/PNAd+ high-endothelial cells sorted from pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (D) ELISA of the CCL21 levels of the supernatant of high-endothelial cells cultivated with or without 10 μM FTY720 (left) or 10 μM W146 (right) in vitro. Each circle represents the mean fluorescent intensity of the CCL21 signal detected around HEVs in the visual field of a micrograph (B), the relative chemokine expression levels in mRNA extracted from the total CD45-/CD31+/PNAd+ high-endothelial cells (C), or the CCL21 protein levels detected in the supernatant of individual cell cultures (D) of CD45-/CD31+/PNAd+ high-endothelial cells; bars indicate the mean. Scale bars, 50 μm (A). **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (B–D)). Data are representative for 18x individual sections of 2x analyzed pLNs, iLNs and bLNs per mouse pooled from three mice per group (A, B), three independent mRNA preparations of 2x pLNs, iLNs and bLNs per mouse pooled from five mice per group (C), or three independent stimulations with n = 2 to n = 4 of a total of 8x – 16x (FTY720) or 6x – 12x (W146) individual cell cultures (D) with total sorted high-endothelial cells from 2x pLNs, iLNs and bLNs per mouse pooled from five mice per group in vitro.
+**Figure 7.:** (A) The IHC analysis of CCL21 (white) distribution around PNAd+ HEVs, and visualisation of the automated detection of PNAd+ HEVs (green surface) and of the radial areas (blue) around HEVs used for the quantification of the mean fluorescent intensity of the CCL21 signal in pLNs of in Spns2f/f (top) and Lyve1;Spns2Δ/Δ (bottom) mice. (B) The mean fluorescent intensity of the CCL21 signal in distances from −5 μm to 40 μm from the outer border of HEVs (green surface in (C)) determined in 5 μm radial areas around HEVs in pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (C) qRT-PCR analysis of CCL19, CCL21 and CXCL13 expression levels in total mRNA isolated from CD45-/CD31+/PNAd+ high-endothelial cells sorted from pLNs of Spns2f/f and Lyve1;Spns2Δ/Δ mice. (D) ELISA of the CCL21 levels of the supernatant of high-endothelial cells cultivated with or without 10 μM FTY720 (left) or 10 μM W146 (right) in vitro. Each circle represents the mean fluorescent intensity of the CCL21 signal detected around HEVs in the visual field of a micrograph (B), the relative chemokine expression levels in mRNA extracted from the total CD45-/CD31+/PNAd+ high-endothelial cells (C), or the CCL21 protein levels detected in the supernatant of individual cell cultures (D) of CD45-/CD31+/PNAd+ high-endothelial cells; bars indicate the mean. Scale bars, 50 μm (A). **p<0.005; ***p<0.0005 (two-tailed unpaired Student’s t-test (B–D)). Data are representative for 18x individual sections of 2x analyzed pLNs, iLNs and bLNs per mouse pooled from three mice per group (A, B), three independent mRNA preparations of 2x pLNs, iLNs and bLNs per mouse pooled from five mice per group (C), or three independent stimulations with n = 2 to n = 4 of a total of 8x – 16x (FTY720) or 6x – 12x (W146) individual cell cultures (D) with total sorted high-endothelial cells from 2x pLNs, iLNs and bLNs per mouse pooled from five mice per group in vitro.
 
 ## Discussion
 
@@ -108,87 +152,479 @@ In summary, our results reveal a previously unsuspected role of high-endothelial
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 (B6) mice</td>
+      <td>CLEA Japan, Inc, Tokyo</td>
+      <td>RRID: IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Lyve1CRE mice</td>
+      <td>Pham et al., 2010</td>
+      <td>RRID: IMSR_JAX:012601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Spns2f/f mice</td>
+      <td>Fukuhara et al., 2012</td>
+      <td>RRID: MGI:5426399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ai9 mice</td>
+      <td>Madisen et al., 2010</td>
+      <td>RRID: Addgene_22799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Cdh5CRE-ERT2 mice</td>
+      <td>Okabe et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>S1pr1f/f</td>
+      <td>Allende et al., 2003</td>
+      <td>RRID: MGI:2681963</td>
+      <td>.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse/human monoclonal PNAd (MECA-79)</td>
+      <td>Streeter et al., 1988a</td>
+      <td></td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal MAdCAM1 (MECA-367)</td>
+      <td>Streeter et al., 1988b</td>
+      <td></td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD11a (M17/4)</td>
+      <td>BioXcell, West Lebanon, NH, USA</td>
+      <td>RRID: AB_1107582</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse/human monoclonal CD49d (PS/2)</td>
+      <td>BioXcell, West Lebanon, NH, USA</td>
+      <td>RRID: AB_1107657</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-mouse polyclonal collagen IV antibody (LB-1403)</td>
+      <td>Cosmo Bio Co., Ltd, Tokyo</td>
+      <td></td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD4 (RM4-5)</td>
+      <td>BD Biosciences, San Jose, CA</td>
+      <td>RRID: AB_393575</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal IgA (C10-3)</td>
+      <td>BD Biosciences, San Jose, CA</td>
+      <td>RRID: AB_396541</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CCR7 (4B12)</td>
+      <td>BD Biosciences, San Jose, CA</td>
+      <td></td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD45 (30-F11)</td>
+      <td>eBioscience, Inc, San Jose, CA</td>
+      <td>RRID: AB_10373710</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD8 (53–6.7)</td>
+      <td>eBioscience, Inc, San Jose, CA</td>
+      <td>RRID: AB_11155388</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal IgM (II/41)</td>
+      <td>eBioscience, Inc, San Jose, CA</td>
+      <td>RRID: AB_467582</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal IgD (11-26)</td>
+      <td>eBioscience, Inc, San Jose, CA</td>
+      <td>RRID: AB_465346</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD23 (B3D4)</td>
+      <td>eBioscience, Inc, San Jose, CA</td>
+      <td>RRID: AB_466392</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal LYVE1 (ALY7)</td>
+      <td>eBioscience, Inc, San Jose, CA</td>
+      <td>RRID: AB_1633414</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD45.1 (A20)</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_313491</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hamster anti-mouse monoclonal CD3 (145–2 C11)</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_312666</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse/human monoclonal B220 (RA3-6B2)</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_312986</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD21/35 (7E9)</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_940411</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal I-A/I-E (M5/114.15.2)</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_313316</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hamster anti-mouse monoclonal cD11c (N418)</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_313770</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal ERTR7</td>
+      <td>Santa Cruz Biotechnology, Inc, Dallas, TX</td>
+      <td></td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-mouse polyclonal EDG-1 (H-60)</td>
+      <td>Santa Cruz Biotechnology, Inc, Dallas, TX</td>
+      <td>RRID: AB_2184743</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-mouse polyclonal pAkt (Ser473)</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>RRID: AB_329825</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rabbit IgG isotype control</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>RRID: AB_1550038</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal CD16/CD32</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_312800</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse monoclonal LTβr (5G11)</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>RRID: AB_1659177</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse polyclonal CCL21 (AF457)</td>
+      <td>R and D Systems Inc, Minneapolis, MN</td>
+      <td>RRID: AB_2072083</td>
+      <td>[2 µg/ml]</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human LTα1/β2 protein</td>
+      <td>R and D Systems Inc, Minneapolis, MN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellTracker Orange CMTMR</td>
+      <td>Life Technologies/GIBCO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S1PR-antagonist FTY720</td>
+      <td>Cayman Chemical, Ann Arbor, MI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S1PR1-antagonist W146</td>
+      <td>Cayman Chemical, Ann Arbor, MI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S1PR3-antagonist TY52156</td>
+      <td>Tocris Bioscience, Bristol</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ALZET Osmotic Pumps 1003D</td>
+      <td>DURECT Corp., Cupertino, CA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS software version 8.2</td>
+      <td>Bitplane AG, Zurich</td>
+      <td>RRID: SCR_007370</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Lyve1CRE, Spns2f/f and Rosa26LSL-tdTomato (Ai9) mice have been previously described (Pham et al., 2010; Fukuhara et al., 2012; Madisen et al., 2010). Lyve1CRE mice were crossed to the Spns2f/f and the Rosa26LSL-tdTomato (Ai9) line in order to generate Lyve1;Spns2Δ/Δ and Lyve1;tdTomato mice, respectively. Lyve1CRE and Rosa26LSL-tdTomato (Ai9) mice were purchased from Charles River Laboratories, Inc, Wilmington, MA, USA, and C57BL/6 (wildtype) mice were bought from CLEA Japan, Inc, Tokyo. Unless otherwise stated, we used age-matched female and male mice that were between 8 and 14 weeks of age in all our experiments. All mice were housed and bred under specific pathogen-free conditions at animal facilities of the Immunology Frontier Research Center, Osaka University. All of the experimental procedures comply with ‘National Regulations for the Care and Use of Laboratory Animals’, and were approved by the ‘Animal Care and Use Committee’ of Osaka University, (Approval Nr.: 30-037-020).
 
-## Tamoxifen-induced recombination
+### Tamoxifen-induced recombination
 
 Cdh5CRE-ERT2 (Okabe et al., 2014) and S1pr1f/f (Allende et al., 2003) mice were bred in order to develop Cdh5CRE-ERT2;S1pr1Δ/Δ mice. Three weeks after birth homologous recombination in Cdh5CRE-ERT2;S1pr1Δ/Δ mice was induced by i.p. injections of 50 μg/g body weight 4-hydroxytamoxifen (4-OHT, Sigma) for four consecutive days.
 
-## Antibodies
+### Antibodies
 
 Anti-PNAd (MECA-79) and anti-MAdCAM-1 (MECA-367) mAbs were purified from the ascites of mice inoculated i.p. with the hybridoma using a size-exclusion column with size-exclusion resin (Toyopearl TSK HW55; Tosoh, Japan). Purified MECA-79 was labelled with the Alexa Fluor 488 or Alexa Fluor 594 Protein Labeling Kit (Thermo Fisher Scientific, Inc, Waltham, MA, USA). Purified Anti-CD49d (PS/2) and anti-CD11a (M17/4) antibodies (used for saturation of α4 and αL integrins in vivo) were obtained from BioXcell, West Lebanon, NH, USA. Anti–collagen IV antibody (LB-1403) was purchased from Cosmo Bio Co., Ltd, Tokyo, Japan. Fluorochrome-conjugated antibodies to mouse CD4 (RM4-5), IgA (C10-3) and CCR7 (4B12), we sourced from BD Biosciences, San Jose, CA, USA. Anti-mouse CD45 (30-F11), CD8 (53–6.7), IgM (II/41), IgD (Adams and Alitalo, 2007; von Andrian, 1996; Mionnet et al., 2011; Mebius et al., 1996; Moussion and Girard, 2011; Browning et al., 2005; Wendland et al., 2011; Chyou et al., 2011; Kumar et al., 2015; Herzog et al., 2013; Fukuhara et al., 2012; Kawahara et al., 2009; Osborne et al., 2008; Hisano et al., 2012; Mendoza et al., 2012; Nagahashi et al., 2013), CD23 (B3D4) and LYVE1 (ALY7) antibodies we obtained from eBioscience, Inc, San Jose, CA, USA. Anti-mouse CD45.1 (A20), CD3 (145–2 C11), B220 (RA3-6B2), CD21/35 (7E9), I-A/I-E (MHC-II, clone M5/114.15.2) and CD11c (N418) we purchased from BioLegend, San Diego, CA, USA. Anti-mouse fibroblast marker (ERTR7) and anti-mouse EDG-1 (H-60) we received from Santa Cruz Biotechnology, Inc, Dallas, TX, USA. Anti-mouse pAkt antibody and rabbit IgG isotype control were purchased from Cell Signaling Technology, Danvers, MA, USA.
 
-## Flow-cytometry
+### Flow-cytometry
 
 Single-cell suspensions of 2x inguinal, 2x axial and 2x brachial LNs, spleen and thymus were obtained by mincing the organs gently through a 40 μm nylon mesh. Total BM cells were flushed out of 2x femurs and 2x tibiae of a single mouse with ice-cold FACS-buffer (PBS +4%FCS +5 mM EDTA). 500 μl of peripheral blood was collected from the vena cava, whereas lymph fluid was collected with a fine borosilicate glass microcapillary pipette (Sutter Instrument, Novato, CA, USA) from the cysterna chyli, according to a previously published protocol (Matloubian et al., 2004). Erythrocytes of the spleen and peripheral blood were removed by hypotonic lysis with ACK-lysis buffer. Cells were incubated with anti-mouse CD16/CD32 followed by staining with the fluorochrome-conjugated antibodies in FACS-buffer. Dead cell discrimination was performed by 7-AAD (BD Biosciences). Samples were analyzed on a FACSCanto II flow cytometer or sorted with a FACSAria II cell sorter (both BD Biosciences). Data were analyzed with FlowJo software (TreeStar, Ashland, OR, USA).
 
-## TUNEL assay
+### TUNEL assay
 
 Flow-cytometric assessment of apoptosis in CD45-/CD31+/PNAd+ high–endothelial cells was performed using the Fluorescein In Situ Cell Death Detection Kit (Roche) according to the manufacturer’s protocol upon staining with anti-CD45 and anti-PNAd antibodies.
 
-## Lymphocyte homing assays
+### Lymphocyte homing assays
 
 In order to quantify lymphocyte immigration rates into secondary lymphoid organs, 3 × 107 total splenocytes of wildtype congenic (CD45.1+) donor mice were injected i.v. into recipient mice upon hypotonic erythrocyte lysis. Two hours after injection, 2x inguinal, 2x axial and 2x brachial LNs were collected from recipient mice and assessed for lymphocyte immigration by FACS (Figure 2C). In order to quantify lymphocyte egress rates from secondary lymphoid organs 3 × 107 total splenocytes of wildtype congenic (eGFP+) donor mice were injected i.v. into recipient mice upon hypotonic erythrocyte lysis. After an equilibration time of 48 hr lymphocyte entry to secondary lymphoid organs was blocked by i.v. injection of 100 µg per mouse of neutralizing antibodies against integrin α4 (PS/2) and αL (M17/4). Lymphoid organs were collected from recipient mice at 0 hr,and 20 hr after integrin saturation, and total cell numbers of graft lymphocytes were monitored by FACS.
 
-## In vitro differentiation and in vivo migration of mature BMDCs
+### In vitro differentiation and in vivo migration of mature BMDCs
 
 BMDCs were obtained based on a previously published protocol (Lutz et al., 1999). In brief, 2 × 106 total BM cells were cultivated for 10 days in 10 ml differentiation media (RPMI-1640 (Sigma, St. Louis, MO, USA), supplemented with 10 ng/ml GM-CSF (PeproTech, Rocky Hill, NJ, USA), 10% FCS (PAA laboratories GmbH, Pasching, Austria) 100 ug/ml penicillin/streptomycin, 2 mM L-glutamine, MEM non-essential amino acids, 1 mM sodium pyruvate and 0.05 mM β-mercaptoethanol (all from Life Technologies/GIBCO, Carlsbad, CA, USA) in a 10 cm petri dish. On day 3 additional 10 ml of differentiation media was added to the culture. On day 6, day 8 and day 10, 10 ml of differentiation media was substituted with fresh media and retrieved cells were returned into the culture. Complete maturation was induced on day 11 by transferring 10 ml of the original culture into a 10 cm cell culture dish. The remaining floating cells of the original culture were harvested by gentle pipetting. Upon centrifugation cells were added in 10 ml fresh differentiation media supplemented with 5 ng/ml GM-CSF + 1 μg/ml LPS (Sigma) and further differentiated for 24 hr to 36 hr. Analysis of cells obtained with this procedure revealed that >90% expressed CD11c. Mature BMDCs were labelled with CellTracker Orange CMTMR (5-[and-6]-[{(4-chloromethyl)benzoyl}amino] tetramethylrhodamine) (Life Technologies/GIBCO) [10 μm] in RPMI-1640 for 15 min at 37°C in a water bath. 1 × 106 of CMTMR-labelled BMDCs/footpad were injected into the footpad of recipient mice. Migration of mature BMDCs into popliteal LNs was confirmed by IHC of frozen sections 24 hr after footpad injection.
 
-## Treatment with S1PR-antagonists in vivo
+### Treatment with S1PR-antagonists in vivo
 
 The non-specific S1PR-antagonist FTY720 (Cayman Chemical, Ann Arbor, MI, USA) was solved in DMSO (vehicle) and diluted in PBS containing 30% BSA prior to i.p. injection. The S1PR1-antagonist W146 (Cayman Chemical) and the S1PR3-antagonist TY52156 (Tocris Bioscience, Bristol, UK) were solved in deionized water containing 10 mM Na2CO3 and 2% (2-hydroxypropyl)-beta-cyclodextrin (W146) or a 1:1 mixture of DMSO and polyethylene glycol 400 (TY52156). Mice were pre-treated with 3 mg/kg FTY20 or vehicle (control) 48 hr before subcutaneous BMDC injection into the footpad every 24 hr and received an additional FTY720 or vehicle (control) injection at BMDC-transfer (Figure 5 (A)). W146 and TY52156 or their respective vehicle (control) were continuously applied (13.2 μg/h) by osmotic pumps (1003D, DURECT Corp., ALZET Osmotic Pumps, Cupertino, CA, USA) implanted i.p. 48 hr before BMDC-injections (Figure 5 (E)).
 
-## Rescue of impaired HEVs in vivo
+### Rescue of impaired HEVs in vivo
 
 Three weeks old mice received weekly injections of PBS (Spns2f/f and Lyve1;Spns2Δ/Δ mice) or agonistic anti-LTβr (5G11) antibody (20 μg/mouse; BioLegend) and recombinant human LTα1/β2 protein (10 μg/mouse; R and D Systems) for a total of 10 weeks. LNs of mice were analyzed by IHC for Lyve-1+ LECs, PNAd+ HEVs and ERTR7+ fibroblastic tissue networks.
 
-## Systemic depletion of DCs in vivo
+### Systemic depletion of DCs in vivo
 
 XCR1-DTRvenus (Yamazaki et al., 2013) and CD11c-DTR (Jung et al., 2002) mice were injected i.p. with diphteria toxin (DT, Sigma) or PBS as a control vehicle at a dose of 25 ng/g body weight (XCR1-DTRvenus) or 6 ng/g body weight (CD11c-DTR) every second day for a total of eight days. The efficiency of DC depletion was controlled by staining against CD11c and FACS analyses (data not shown).
 
-## Immunohistological analysis
+### Immunohistological analysis
 
 Double immunostaining of fresh 6 µm-thick cryosections was performed as described previously (Kitazawa et al., 2015; Sawanobori et al., 2014). Briefly, cryosections were fixed with acetone and formol-calcium solution, then monoclonal antibodies against PNAd or other molecules were stained blue using alkaline phosphatase conjugated secondary antibodies and Vector Blue substrate (Vector Laboratories, Burlingame, CA, USA). Additionally, type IV collagen, which reveals the framework of tissues, was stained brown with a horseradish peroxidase conjugated goat anti-rabbit F(ab’)two fragment (MP Biomedicals, Santa Ana, CA, USA) and 3,3’-diaminobenzidine substrate (Dojindo Molecular Technologies, Kumamoto, Japan). Photomicrographs were captured with a Microphot-FX microscope (Nikon, Tokyo, Japan) and a DP26 digital camera (Olympus, Tokyo, Japan). Anti-CD3 and anti CD11c were stained with an alkaline phosphatase labelled goat anti-hamster IgG secondary antibody (Jackson ImmunoResearch Laboratories, Inc West Grove, PA, USA) and anti-IgD, anti-IgA and anti-MAdCAM-1 were developed with an alkaline phosphatase conjugated or horseradish-peroxidase-labelled goat anti-rat IgG secondary antibody (Jackson ImmunoResearch Laboratories, Inc). Secondary immunostainings of the anti-PNAd antibody was performed with an alkaline phosphatase conjugated or horseradish-peroxidase-labelled anti-rat IgM antibody (Jackson ImmunoResearch Laboratories, Inc). The biotinylated anti-MAdCAM-1 and anti-B220 antibody was developed with alkaline phosphatase conjugated or horseradish-peroxidase-labelled streptavidin (Sigma).
 
-## Immunofluorescent analysis
+### Immunofluorescent analysis
 
 Lymphoid organs were snap frozen in O.C.T compound (Sakura Finetek Inc, Tokyo, Japan) and cut into 10-µm-thick frozen sections. The sections were blocked in 10% FCS/PBS containing mouse γ-globulins (20 µg/ml, Sigma) upon acetone, methanol (anti-EDG-1) or 4% PFA (10 min.) followed by methanol (anti-pAkt) fixation, and stained with Alexa Fluor 405, Alexa Fluor 488, Alexa Fluor 594 or Alexa Fluor 647 labelled antibodies. Fluorescence images were obtained using an Olympus Fluoview FV1000-D confocal laser scanning microscope.
 
-## Whole-mount immunofluorescent analysis
+### Whole-mount immunofluorescent analysis
 
 Timed mating of mice was performed and iLNs were collected from embryos of E16.5 and E18.5. LNs were immersed for 2.5 hr in 4% PFA followed by a wash in 4% glycine/PBS and a subsequent fixation in 50%, 75% and 100% MeOH. Samples were blocked in 10% FCS/PBS containing mouse γ-globulins (20 µg/ml, Sigma) and 0.1% TritonX-100. The LNs were stained with anti-PNAd-Alexa Fluor 594, anti-MAdCAM-1-Alexa Fluor 488 and anti-LYVE1-Alexa Fluor 647 antibodies. Fluorescence images were obtained as described above.
 
-## Image analysis
+### Image analysis
 
 Quantification of raw image data was performed using IMARIS software version 8.2 (Bitplane AG, Zurich, Switzerland). The total number of DCs (CMTMR+) or the mean fluorescence intensity of the CCL21 signal of areas in a defined radius around HEVs (PNAd+) was determined using the automated spot (DCs) and surface (HEVs) detection tools by taking advantage of the distance transformation option.
 
-## CCL21 staining
+### CCL21 staining
 
 10 µm thick cryosections of pLNs were fixed in acetone and blocked in 10% FCS/PBS containing mouse γ-globulins (20 µg/ml, Sigma). Sections were first stained with goat anti-mouse CCL21 (AF457; R and D Systems Inc, Minneapolis, MN, USA) or normal goat IgG and biotinylated anti-PNAd antibody, before they were blocked with rabbit IgG and stained with horseradish-peroxidase-labelled rabbit anti-goat IgG antibody and Alexa Fluor 488 conjugated Tyramide stock solution from the Tyramide signal amplification kit (Thermo Fisher Scientific, Inc). Upon TSA signal amplification sections were additionally developed with Alexa Fluor 594-labelled streptavidin before mounting.
 
-## High-endothelial cell culture and quantification of CCL21
+### High-endothelial cell culture and quantification of CCL21
 
 pLNs (cervical, brachial, axillary and inguinal) were collected from wildtype C57BL/6, gently minced and digested with 1 mg/ml collagenase type I (Worthington Biochemical Corp., Lakewood, NJ, USA) and 2 μg/ml DNase I (Roche, Basel, Switzerland). The single-cell suspension was stained with anti-CD45 and anti-PNAd antibodies, and CD45-/CD31+/PNAd+ high-endothelial cells were collected by FACS. 4 × 104 high-endothelial cells were cultured in 100 μl serum-free EC-growth media (HuMedia-EG2; Kurabo, Osaka, Japan) with or without 10 μM FTY720 (non-specific S1PR antagonis) or W146 (S1PR1-specific antagonist) for 4 hr without S1P. After four hours, the cell culture supernatant was collected and high-endothelial cells were cultured further with media supplemented with charcoal-stripped FCS (homemade and checked by LC-MS/MS for depletion of S1P). One half of the cultures were cultivated without S1P, whereas the other half of the cultures was cultivated in the presence of 1 μM D-erythro-sphingosine-1-phosphate (Avanti Polar Lipids, Inc, Alabaster, AL, USA) for additional 20 hr. The concentration of CCL21 in the cell culture supernatants collected after four or 20 hr was quantified by ELISA using the mouse CCL21 DuoSet ELISA kit (R and D Systems, Minneapolis, MN, USA) according to the manufacturer’s protocol.
 
-## Quantification of S1P
+### Quantification of S1P
 
 The concentration of S1P was quantified by LC-MS/MS as described previously with minor modifications (Saigusa et al., 2012). Blood plasma or lymph samples (10 μL) were mixed with 8-times volume of methanol (80 µL) and equal volume of an internal standard, 1 µM dihydro-S1P (10 µL), in a 1.5 mL siliconized plastic microtube (Watson, USA). The tube was treated with an ultrasonic bath for 10 min and centrifuged at 21,500 g for 10 min at 4°C. The deproteinized supernatant was filtered and 10 µL of the filtrate was subjected to the LC-MS/MS. The LC-MS/MS system was equipped with a NANOSPACE SI-II HPLC (Shiseido, Japan) and a TSQ Quantum Ultra triple quadrupole mass spectrometer (Thermo Fisher Scientific, USA) with a heated-electrospray ionization-II (HESI-II) source. LC separation was performed using a Capcell Pak C18 ACR (1.5 mm i.d. ×100 mm, 3 μm, Shiseido) with a gradient elution of the two mobile phase (5 mM ammonium formate (HCOONH4)–H2O (pH 4.0) (A) and 5 mM HCOONH4–H2O/acetonitrile (CH3CN) (a volume ratio of 5/95; apparent pH 4.0) (B) at a flow rate of 150 μL/min. The gradient was initial elution with 50% B, followed by linear gradient to 95% B (from 0.2 to 2.8 min), 95% B isocratic (from 2.8 to 5.0 min), return to the initial 50% B condition (from 5.0 to 5.1 min) and then equilibrium (from 5.1 to 6.5 min) until next sample injection. Elute was continuously ionised and positive ions were detected by the mass spectrometer with a selected reaction monitoring mode using the following transitions: m/z 368.2 → 270.2 for dihydro-S1P and m/z 380.3 → 264.2 with a collision energy of 18 V for S1P. Ions were fragmented using a collision Argon pressure of 1.5 mTorr with collision energy of 16 V (dihydro-S1P) and 18 V (S1P). Mass chromatogram was obtained and analyzed by a Xcalibur software (Thermo Fisher Scientific) and peak area ratio between analyte and internal standard was used for quantification by using a standard curve.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Mice were perfused with a solution of 2% glutaraldehyde + 4% paraformaldehyde in 0.1 M phosphate buffer (pH 7.4) through the left ventricle. Removed LNs were postfixed by 2% osmium tetroxide and dehydrated in a graded ethanol series, and then embedded in Quetol 812 epoxy resin. Ultrathin sections were stained with 2% uranyl acetate and Reynold’s lead citrate, and examined using a JEM-1230 electron microscope (JEOL Ltd., Tokyo, Japan).
 
-## RNA isolation and quantitative RT-PCR
+### RNA isolation and quantitative RT-PCR
 
 Total RNA was isolated using the RNeasy mini kit (Qiagen, Hilden, Germany) or the NucleoSpin RNA Blood kit (Macherey-Nagel GmbH and Co. KG, Düren, Germany), and cDNA was synthesized with oligo(dt) primers and Superscript-III-RT (Invitrogen, Carlsbad, CA, USA). Expression of mRNAs was quantitatively assessed by real-time RTF-PCR using the SYBR Premix Ex Taq (Tli RNaseH Plus; Takara bio, Inc, Kusatsu. Japan) in a Thermal Cycler Dice Real Time System II (Takara bio, Inc). Each sample was assayed in duplicates for every run and results were normalised against Hprt or Gapdh mRNA expression.
 
 The PCR primer pairs used here were:
 
-GeneForward (5’ – 3’)Reverse (5’ – 3’)Spns2CCATCCTGAGTTTAGGCAACGGATCACCTTTCTATTGAAGCGGTCCL19CTGCCTCAGATTATCTGCCATAGGTAGCGGAAGGCTTTCACCCL21AAGGCAGTGATGGAGGGGCGGGTAAGAACAGGATTGCXCL13CATAGATCGGATTCAAGTTACGTCTTGGTCCAGATCACAACTTCAGlyCAM-1AGAATCAAGAGGCCCAGGATTGGGTCTTGTGGTCTCTTCCACD34AAACGGCCATTCAGCAAGACAACATCGCCACCCAACCAAATCACAAGMadCAM-1GTCCTGCACGGCCCACAACATCCAGTAGCAGGGCAAAGGAGAGGlcNAc6ST-2GGCAAGCAGAAGGGTTAGGCTGGGAACCCAGGAACATCFucT-VIICAGATGCACCCTCTAGTACTCTGGTGCACTGTCCTTCCACAACCENPP2TTGTCCGCCCTCCGTTAATCACAGGACCGCAGTTTCTCAACD31TCCCTGGGAGGTCGTCCATGAACAAGGCAGCGGGGTTTAVCAM-1GGATCGCTCAAATCGGGTGAGGTGACTCGCAGCCCGTAICAM-1GGGAATGTCACCAGGAATGTGCACCAGAATGATTATAGTCCAVE-cadherinTCCTCTGCATCCTCACTATCACAGTAAGTGACCAACTGCTCGTGAATLTbRTGGTGCTCATCCCTACCTTCATTCTCTCTATCCTCTCCCCCAGGapdhCCTCGTCCCGTAGACAAAATGTCTCCACTTTGCACTGCAAHprtAGGTTGCAAGCTTGCTGGTTGAAGTACTCATTATAGTCAAGGGCA
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward (5’ – 3’)</th>
+      <th>Reverse (5’ – 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spns2</td>
+      <td>CCATCCTGAGTTTAGGCAACG</td>
+      <td>GATCACCTTTCTATTGAAGCGGT</td>
+    </tr>
+    <tr>
+      <td>CCL19</td>
+      <td>CTGCCTCAGATTATCTGCCAT</td>
+      <td>AGGTAGCGGAAGGCTTTCAC</td>
+    </tr>
+    <tr>
+      <td>CCL21</td>
+      <td>AAGGCAGTGATGGAGGGG</td>
+      <td>CGGGTAAGAACAGGATTG</td>
+    </tr>
+    <tr>
+      <td>CXCL13</td>
+      <td>CATAGATCGGATTCAAGTTACG</td>
+      <td>TCTTGGTCCAGATCACAACTTCA</td>
+    </tr>
+    <tr>
+      <td>GlyCAM-1</td>
+      <td>AGAATCAAGAGGCCCAGGAT</td>
+      <td>TGGGTCTTGTGGTCTCTTCCA</td>
+    </tr>
+    <tr>
+      <td>CD34</td>
+      <td>AAACGGCCATTCAGCAAGACAACA</td>
+      <td>TCGCCACCCAACCAAATCACAAG</td>
+    </tr>
+    <tr>
+      <td>MadCAM-1</td>
+      <td>GTCCTGCACGGCCCACAACAT</td>
+      <td>CCAGTAGCAGGGCAAAGGAGAG</td>
+    </tr>
+    <tr>
+      <td>GlcNAc6ST-2</td>
+      <td>GGCAAGCAGAAGGGTTAGG</td>
+      <td>CTGGGAACCCAGGAACATC</td>
+    </tr>
+    <tr>
+      <td>FucT-VII</td>
+      <td>CAGATGCACCCTCTAGTACTCTGG</td>
+      <td>TGCACTGTCCTTCCACAACC</td>
+    </tr>
+    <tr>
+      <td>ENPP2</td>
+      <td>TTGTCCGCCCTCCGTTAATC</td>
+      <td>ACAGGACCGCAGTTTCTCAA</td>
+    </tr>
+    <tr>
+      <td>CD31</td>
+      <td>TCCCTGGGAGGTCGTCCAT</td>
+      <td>GAACAAGGCAGCGGGGTTTA</td>
+    </tr>
+    <tr>
+      <td>VCAM-1</td>
+      <td>GGATCGCTCAAATCGGGTGA</td>
+      <td>GGTGACTCGCAGCCCGTA</td>
+    </tr>
+    <tr>
+      <td>ICAM-1</td>
+      <td>GGGAATGTCACCAGGAATGT</td>
+      <td>GCACCAGAATGATTATAGTCCA</td>
+    </tr>
+    <tr>
+      <td>VE-cadherin</td>
+      <td>TCCTCTGCATCCTCACTATCACA</td>
+      <td>GTAAGTGACCAACTGCTCGTGAAT</td>
+    </tr>
+    <tr>
+      <td>LTbR</td>
+      <td>TGGTGCTCATCCCTACCTTCA</td>
+      <td>TTCTCTCTATCCTCTCCCCCAG</td>
+    </tr>
+    <tr>
+      <td>Gapdh</td>
+      <td>CCTCGTCCCGTAGACAAAATG</td>
+      <td>TCTCCACTTTGCACTGCAA</td>
+    </tr>
+    <tr>
+      <td>Hprt</td>
+      <td>AGGTTGCAAGCTTGCTGGT</td>
+      <td>TGAAGTACTCATTATAGTCAAGGGCA</td>
+    </tr>
+  </tbody>
+</table>
 
-## Statistical analysis
+### Statistical analysis
 
 All the statistical analysis on the data was performed using GraphPad Prism software version 5.03. Statistical significance of differences between two groups with normally distributed data was determined using a Student’s unpaired two-tailed t-test.
 

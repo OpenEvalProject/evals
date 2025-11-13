@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03dbr7087 Department of Physics, University of Toronto Toronto Canada
-2. https://ror.org/03dbr7087 Institute of Biomaterials & Biomedical Engineering, University of Toronto Toronto Canada
+1. Department of Physics, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+2. Institute of Biomaterials & Biomedical Engineering, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
@@ -32,67 +32,179 @@ To understand the emergent properties of immune memory and diversity in microbia
 
 ## Results
 
-## Bacteria and phages dynamically coexist and coevolve
+### Bacteria and phages dynamically coexist and coevolve
 
-We model bacteria and phage interacting and coevolving in a well-mixed system (Figure 1A and ‘Model’). Bacteria divide by consuming nutrients and phages reproduce by creating a burst of B new phages after successfully infecting a bacterium. Bacteria can contain a single CRISPR spacer that confers immunity against phages with a matching protospacer. Phages are labelled with a single protospacer type, a binary sequence of length L=30 that can mutate to a new type during a burst with probability μ⁢L, where μ is the per-base mutation rate per generation. All simulations begin with a single clonal phage population unless otherwise specified.
+We model bacteria and phage interacting and coevolving in a well-mixed system (Figure 1A and ‘Model’). Bacteria divide by consuming nutrients and phages reproduce by creating a burst of $B$ new phages after successfully infecting a bacterium. Bacteria can contain a single CRISPR spacer that confers immunity against phages with a matching protospacer. Phages are labelled with a single protospacer type, a binary sequence of length $L=30$ that can mutate to a new type during a burst with probability $\mu⁢L$, where $\mu$ is the per-base mutation rate per generation. All simulations begin with a single clonal phage population unless otherwise specified.
 
-Coexistence occurs across a wide range of parameters but is not guaranteed: below a certain success probability pV0=1B⁢(g⁢f(1-f)⁢α+1), phages are not able to reproduce often enough to overcome their base death rate due to outflow and adsorption and are driven extinct (grey area of Figure 1D; Bonsma-Fisher et al., 2018). In this expression, g is the bacterial growth rate, B is the phage burst size, α is the phage adsorption rate, f=F/(g⁢C0) is a normalized outflow rate, and C0 is the inflow nutrient concentration. This is the same extinction threshold reported by Payne et al., 2018 as the cutoff for achieving herd immunity in a well-mixed bacterial population. To a first approximation, phages must successfully infect every 1/B bacteria they encounter, but if bacteria are growing quickly, then phages must do better to overcome bacterial growth, leading to the extra terms in this expression (see ‘Phage extinction threshold’). We write this extinction threshold as A=(B⁢pV-1)⁢(1-f)⁢αf⁢g. Above the phage extinction threshold (A>1), the phage population size increases with increasing pV but eventually decreases again as bacterial numbers are driven too low to support a large phage population (Bonsma-Fisher et al., 2018). A similar non-monotonicity as a function of the probability of naive bacterial resistance (1-pV) was described in theoretical work by Weinberger et al., 2012b. In our model the position of the peak in phage population size as a function of infection success probability is determined by e, the effectiveness of CRISPR spacers against phage; increasing e pushes the peak to higher pV (Figure 1D). While e is a constant parameter that determines the outcome of pairwise interactions between bacteria and phages, the bacterial population as a whole possesses an average immunity to phages that is a weighted average of all the possible pairwise interactions (Figure 1A inset). It is the overall average immunity that determines population outcomes, which we describe in detail in ‘Pathogen and host diversity must be considered together’.
+![Figure 1.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig1-v2.jpg)
 
-To focus on regimes where bacteria and phages coexist, we select parameters within the deterministic coexistence regime to explore bacteria-phage coevolution. Even in this regime, stochastic extinction will eventually come for one or both populations in simulations (Figure 1E), though the timescale of extinction may be extremely long for large population sizes (Badali and Zilman, 2020). Phages are more susceptible to stochastic extinction than bacteria because of their large burst size B which increases their overall population fluctuations (Appendix 3). The length of coexistence before stochastic extinction depends on population size as well as simulation parameters and initial conditions (see ‘Stochastic population extinction’): phage populations can be rescued from extinction by high mutation rate (Figure 1—figure supplement 3) or high initial protospacer diversity (Figure 1—figure supplement 6), but are more likely to go extinct if spacer effectiveness is high (Figure 1—figure supplement 1). Conversely, bacteria are more likely to go extinct if spacer effectiveness or spacer acquisition rate are low (Figure 1—figure supplement 4). Population survival and persistence in natural populations is impacted by additional factors we do not address in our model, including immigration (Volkov et al., 2003; Chabas et al., 2016, niche partitioning Simek et al., 2010; Weitz et al., 2013; Mills et al., 2013; Badali and Zilman, 2020; Voigt et al., 2021), environmental fluctuations (Abreu et al., 2020; Voigt et al., 2021), and spatial structure (Haerter et al., 2011; Haerter and Sneppen, 2012; Heilmann et al., 2010; Heilmann et al., 2012; Simmons et al., 2018; Skanata and Kussell, 2021).
+**Figure 1.:** (A) We model bacteria and phages interacting in a well-mixed vessel. We track nutrient concentration, phage population size ($n_{V}$), and bacteria population size ($n_{B}$). Bacteria can either have no spacer ($n_{B}^{0}$) or a spacer of type $i$ ($n_{B}^{i}$, $\sum_{i}n_{B}^{i}=n_{B}^{s}$), and phages can have a single protospacer of type $j$ ($n_{V}^{j}$). With rate $\alpha$, a phage interacts with a bacterium. If the bacterium does not have a matching spacer, the phage kills with probability $p_{V}$ and produces a burst of $B$ new phages, while for bacteria with a matching spacer that probability is reduced to $p_{V}^{s}=p_{V}⁢(1-e)$, $0\leqe\leq1$. Bacteria without spacers that survive an attack have a chance to acquire a spacer with probability $η$, and bacteria with spacers lose them at rate $r$. Lower inset: average immunity is the weighted average pairwise immunity between spacer-containing bacteria and phages, given by $1-\frac{\sum_{i,j}n_{B}^{i}⁢n_{V}^{j}⁢p_{V}⁢(i,j)}{p_{V}⁢\sum_{i,j}n_{B}^{i}⁢n_{V}^{j}}$. The probability of a phage with protospacer $j$ successfully infecting a bacterium with spacer $i$ is $p_{V}⁢(i,j)$. (B) Three time points in a typical simulation with $C_{0}=10^{4}$, $e=0.95$, $η=10^{-4}$, and $\mu=10^{-5}$. Coloured circles represent unique protospacer or spacer sequences; shared sequences are shown with the same colour. The size of each circle is proportional to clone size, and new mutants are shown radially more distant from the centre. (C) Ten individual clone trajectories vs simulation time for phages (top) and bacteria (bottom). The mean clone size is shown with a horizontal dashed line. (D) Total phage, bacteria, and nutrient concentration as a function of phage success probability $p_{V}$. Markers show an average over five independent simulations for different values of $p_{V}$ with $C_{0}=10^{4},η=10^{-3},e=0.95$, and $\mu=10^{-7}$. Solid lines show theoretical predictions for different constant values of effective $e$. As $p_{V}$ decreases, phages go extinct at a critical value given by $A=1$, where $A=\frac{(B⁢p_{V}-1)⁢(1-f)⁢\alpha}{f⁢g}$. (E) Total phage and bacteria population size as a function of average bacterial immunity to phages. Colours indicate the fraction of simulations in which phage or bacteria go extinct before a set endpoint. Solid lines show the mean-field prediction. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Probability of extinction in four or more simulations with the same parameters vs. mean phage population size (left) and mean bacteria population size (right) for the lowest value of spacer acquisition probability ($η=10^{-5}$). Colours indicate mutation rate $\mu$ and shapes indicate CRISPR effectiveness $e$.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Probability of extinction in four or more simulations with the same parameters vs. mean phage population size (left) and mean bacteria population size (right) for the highest value of spacer acquisition probability ($η=10^{-2}$). Colours indicate mutation rate $\mu$ and shapes indicate CRISPR effectiveness $e$. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Mean time for the phage population to go extinct vs. phage mutation rate $\mu$ across simulations where at least one simulation experienced phage extinction. The darkness of each point indicates the fraction of simulations that went extinct with darkest colours representing all simulations extinct. Simulations are shown for $η=10^{-2}$. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Mean time for the bacteria population to go extinct vs. phage mutation rate $\mu$ across simulations where at least one simulation experienced bacteria extinction. The darkness of each point indicates the fraction of simulations that went extinct with darkest colours representing all simulations extinct. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Mean time for the phage population to go extinct vs. phage mutation rate $\mu$ across simulations where at least one simulation experienced phage extinction. The darkness of each point indicates the fraction of simulations that went extinct with darkest colours representing all simulations extinct. Colours represent number of initial phage clones $m_{i⁢n⁢i⁢t}$. Simulations are shown for $η=10^{-5}$ and $C_{0}=1000$. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Mean time for the phage population to go extinct vs. phage mutation rate $\mu$ across simulations where at least one simulation experienced phage extinction. The darkness of each point indicates the fraction of simulations that went extinct with darkest colours representing all simulations extinct. Colours represent number of initial phage clones $m_{i⁢n⁢i⁢t}$. Simulations are shown for $η=10^{-2}$ and $C_{0}=1000$. Error bars are the standard deviation across three or more independent simulations.
+
+Coexistence occurs across a wide range of parameters but is not guaranteed: below a certain success probability $p_{V}^{0}=\frac{1}{B}⁢(\frac{g⁢f}{(1-f)⁢\alpha}+1)$, phages are not able to reproduce often enough to overcome their base death rate due to outflow and adsorption and are driven extinct (grey area of Figure 1D; Bonsma-Fisher et al., 2018). In this expression, $g$ is the bacterial growth rate, $B$ is the phage burst size, $\alpha$ is the phage adsorption rate, $f=F/(g⁢C_{0})$ is a normalized outflow rate, and C0 is the inflow nutrient concentration. This is the same extinction threshold reported by Payne et al., 2018 as the cutoff for achieving herd immunity in a well-mixed bacterial population. To a first approximation, phages must successfully infect every $1/B$ bacteria they encounter, but if bacteria are growing quickly, then phages must do better to overcome bacterial growth, leading to the extra terms in this expression (see ‘Phage extinction threshold’). We write this extinction threshold as $A=\frac{(B⁢p_{V}-1)⁢(1-f)⁢\alpha}{f⁢g}$. Above the phage extinction threshold ($A>1$), the phage population size increases with increasing $p_{V}$ but eventually decreases again as bacterial numbers are driven too low to support a large phage population (Bonsma-Fisher et al., 2018). A similar non-monotonicity as a function of the probability of naive bacterial resistance ($1-p_{V}$) was described in theoretical work by Weinberger et al., 2012b. In our model the position of the peak in phage population size as a function of infection success probability is determined by $e$, the effectiveness of CRISPR spacers against phage; increasing $e$ pushes the peak to higher $p_{V}$ (Figure 1D). While $e$ is a constant parameter that determines the outcome of pairwise interactions between bacteria and phages, the bacterial population as a whole possesses an average immunity to phages that is a weighted average of all the possible pairwise interactions (Figure 1A inset). It is the overall average immunity that determines population outcomes, which we describe in detail in ‘Pathogen and host diversity must be considered together’.
+
+To focus on regimes where bacteria and phages coexist, we select parameters within the deterministic coexistence regime to explore bacteria-phage coevolution. Even in this regime, stochastic extinction will eventually come for one or both populations in simulations (Figure 1E), though the timescale of extinction may be extremely long for large population sizes (Badali and Zilman, 2020). Phages are more susceptible to stochastic extinction than bacteria because of their large burst size $B$ which increases their overall population fluctuations (Appendix 3). The length of coexistence before stochastic extinction depends on population size as well as simulation parameters and initial conditions (see ‘Stochastic population extinction’): phage populations can be rescued from extinction by high mutation rate (Figure 1—figure supplement 3) or high initial protospacer diversity (Figure 1—figure supplement 6), but are more likely to go extinct if spacer effectiveness is high (Figure 1—figure supplement 1). Conversely, bacteria are more likely to go extinct if spacer effectiveness or spacer acquisition rate are low (Figure 1—figure supplement 4). Population survival and persistence in natural populations is impacted by additional factors we do not address in our model, including immigration (Volkov et al., 2003; Chabas et al., 2016, niche partitioning Simek et al., 2010; Weitz et al., 2013; Mills et al., 2013; Badali and Zilman, 2020; Voigt et al., 2021), environmental fluctuations (Abreu et al., 2020; Voigt et al., 2021), and spatial structure (Haerter et al., 2011; Haerter and Sneppen, 2012; Heilmann et al., 2010; Heilmann et al., 2012; Simmons et al., 2018; Skanata and Kussell, 2021).
 
 Across a wide range of coexistence parameters, our simulations show continual phage evolution and bacterial CRISPR adaptation in response (Figure 1B). New phage protospacer clones arise from a single founding clone by mutation, and a small fraction of new mutants grow to a large size and become established. Once phage clones become large, bacteria acquire matching spacers and an immune bacterial subpopulation becomes established. The specific protospacer and spacer types present in the population continually change as old types go extinct and new types are created by phage mutation, but the average total diversity and average overlap between bacteria and phage remains constant at steady state (Figure 8). Both bacteria and phage clones stochastically go extinct, completing the life cycle of a clonal population (Figure 1C).
 
-## Phages drive stable emergent sequence diversity
+### Phages drive stable emergent sequence diversity
 
-New phage protospacer clones continually arise and go extinct in our simulations, generating turnover in clone identity in the population. Despite constant turnover, however, the total number of clones remains fixed at steady state. We use the mean number of bacterial clones at steady state, designated m, as a measure of system diversity. This choice of diversity measurement is equivalent to the Hartley entropy of the clone size distribution, a special case of the Rényi entropy (Mora and Walczak, 2016; Altan-Bonnet et al., 2020). This definition weights all clones equally regardless of their abundance; such a measurement is not appropriate when clone size distributions are very broad and small clones may be unsampled, but is reasonable when clone size distributions are relatively narrow and all clones are sampled (Mora and Walczak, 2016). In our simulation results, both bacteria and phage populations exhibit relatively narrow clone size distributions across a range of parameters, with the exception of low values of spacer acquisition η (Figure 2A, Figure 2—figure supplement 3, Figure 2—figure supplement 4). Even at low η, however, clone size distributions are approximately exponential, indicating that they are not scale-invariant and that the mean clone size still captures important information about the full clone size distribution.
+New phage protospacer clones continually arise and go extinct in our simulations, generating turnover in clone identity in the population. Despite constant turnover, however, the total number of clones remains fixed at steady state. We use the mean number of bacterial clones at steady state, designated $m$, as a measure of system diversity. This choice of diversity measurement is equivalent to the Hartley entropy of the clone size distribution, a special case of the Rényi entropy (Mora and Walczak, 2016; Altan-Bonnet et al., 2020). This definition weights all clones equally regardless of their abundance; such a measurement is not appropriate when clone size distributions are very broad and small clones may be unsampled, but is reasonable when clone size distributions are relatively narrow and all clones are sampled (Mora and Walczak, 2016). In our simulation results, both bacteria and phage populations exhibit relatively narrow clone size distributions across a range of parameters, with the exception of low values of spacer acquisition $η$ (Figure 2A, Figure 2—figure supplement 3, Figure 2—figure supplement 4). Even at low $η$, however, clone size distributions are approximately exponential, indicating that they are not scale-invariant and that the mean clone size still captures important information about the full clone size distribution.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig2-v2.jpg)
+
+**Figure 2.:** (A) Bacteria and phage clone size distributions normalized to the measured mean clone size for $C_{0}=10^{5}$, $\mu=3\times10^{-7}$, and $e=0.95$. As $η$ increases, both clone size distributions become more sharply peaked. (B) The mean number of bacterial clones depends only on a combined parameter in the limit of small average immunity (generally coinciding with high C0). (Inset) The mean number of bacterial clones can be predicted by numerically solving Equation 1 for $m$. The two lowest values of $η$ are shown with lighter shading. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Simulation mean number of bacteria clones ($m$) vs. theoretical prediction for $m$ given by numerically solving Equation 1, broken down by different values of $e$. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Simulation mean number of bacteria clones ($m$) vs. theoretical prediction for $m$ given by numerically solving Equation 1, broken down by different values of $\mu$. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Bacteria and phage clone size distributions normalized to the measured mean clone size for $C_{0}=10^{5}$, $\mu=3\times10^{-7}$, and $η=0.001$.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Bacteria and phage clone size distributions normalized to the measured mean clone size for $C_{0}=10^{5}$, $e=0.95$, and $η=0.001$.
 
 What determines clonal diversity? Many factors that correlate with transient diversity have been experimentally identified, such as phage extinction and slower phage evolution at high bacterial spacer diversity (van Houte et al., 2016; Common et al., 2020) and maintenance of a diverse bacterial population when exposed to diverse phages (Paez-Espino et al., 2015; Common et al., 2019; Guillemet et al., 2021; Lopatina et al., 2019), but a conceptual framework to understand emergent diversity has remained elusive. For instance, while initial high spacer diversity puts low-diversity phage populations under intense pressure to the point of driving them extinct (van Houte et al., 2016; Common et al., 2020), is the same true for emergent bacterial diversity after an extended period of coexistence? Is observed high bacterial spacer diversity indicative of successful bacterial escape from phage predation or an indicator of increased phage pressure? In our model, phage and bacterial diversity is tightly coupled: the number of large phage clones is approximately the same as the number of bacterial clones (Figure 22). This is also the case in experimental coevolution data from Paez-Espino et al., 2015: the number of phage protospacer types is on the same order of magnitude as the number of bacterial spacer types across most similarity thresholds (Figure 72). There is evidence that this coupling of diversity may also occur in the wild: a recent longitudinal study of Gordonia bacteria interacting with phage in a wastewater treatment plant identified 14 high-coverage phage genotypes and 11 high-coverage bacterial variants based on CRISPR spacer sequence (Guerrero et al., 2021a).
 
-Using the tight correspondence between bacterial diversity and phage diversity in our model, we calculate the overall steady-state diversity by balancing the effective phage clone mutation rate μ¯=1g⁢C0⁢α⁢B⁢pV⁢(1-e-μ⁢L)⁢(1-e⁢νm)⁢nV⁢nB, phage clone establishment probability Pe⁢s⁢t, and the time to extinction for large phage clones Te⁢x⁢t (details in ‘Measuring diversity):(1)m=Pestμ¯Text
+Using the tight correspondence between bacterial diversity and phage diversity in our model, we calculate the overall steady-state diversity by balancing the effective phage clone mutation rate $\mu¯=\frac{1}{g⁢C_{0}}⁢\alpha⁢B⁢p_{V}⁢(1-e^{-\mu⁢L})⁢(1-\frac{e⁢ν}{m})⁢n_{V}⁢n_{B}$, phage clone establishment probability $P_{e⁢s⁢t}$, and the time to extinction for large phage clones $T_{e⁢x⁢t}$ (details in ‘Measuring diversity):
 
-Equation 1 arises from the simple statement that the number of large clones must be equal to their establishment rate (Pe⁢s⁢t⁢μ¯) multiplied by their average time to extinction (Te⁢x⁢t). This relationship successfully predicts the number of bacterial clones at steady state across a wide range of parameters and a wide range of diversity values (Figure 2B inset, Figure 2—figure supplement 1, and Figure 2—figure supplement 2). At the lowest value of η the prediction tends to overestimate the number of clones – in this regime, low acquisition means that phage clones go extinct because of clonal interference before bacteria are able to acquire spacers (Figure 16, ‘Measuring diversity’).
+$$
+m=P_{est}\mu¯T_{ext}
+$$
 
-Through approximations (‘Analytic approximations for diversity’), we find that diversity depends on a single combined parameter to the power 1/3 (Figure 2B, Equation 2), and this parameter is proportional to spacer effectiveness e, the probability of bacterial survival followed by spacer acquisition (1-pV)⁢η, and the phage mutation rate μ⁢L.(2)m≈(4eη(1−pV)μL(gC0(1−f))3B2α2pV3r)13
+Equation 1 arises from the simple statement that the number of large clones must be equal to their establishment rate ($P_{e⁢s⁢t}⁢\mu¯$) multiplied by their average time to extinction ($T_{e⁢x⁢t}$). This relationship successfully predicts the number of bacterial clones at steady state across a wide range of parameters and a wide range of diversity values (Figure 2B inset, Figure 2—figure supplement 1, and Figure 2—figure supplement 2). At the lowest value of $η$ the prediction tends to overestimate the number of clones – in this regime, low acquisition means that phage clones go extinct because of clonal interference before bacteria are able to acquire spacers (Figure 16, ‘Measuring diversity’).
+
+Through approximations (‘Analytic approximations for diversity’), we find that diversity depends on a single combined parameter to the power $1/3$ (Figure 2B, Equation 2), and this parameter is proportional to spacer effectiveness $e$, the probability of bacterial survival followed by spacer acquisition $(1-p_{V})⁢η$, and the phage mutation rate $\mu⁢L$.
+
+$$
+m≈(\frac{4eη(1−p_{V})\muL(gC_{0}(1−f))^{3}}{B^{2}\alpha^{2}p_{V}^{3}r})^{\frac{1}{3}}
+$$
 
 Each of these parameters intuitively increases diversity (e.g., a higher phage mutation rate means that phage diversity increases and bacterial diversity follows suit). What is surprising is that their combined effect on diversity is to a power much less than 1: this 1/3 exponent means that if the mutation rate increased tenfold, the diversity would only increase by about a factor of two (Appendix 2—figure 1). In contrast, a simple neutral model of cell division with mutations gives a linearly proportional increase in diversity for the same increase in mutation rate (Appendix 2—figure 2).
 
-To understand where the dependence of diversity on these key parameters come from, we look more closely at each component expression. The effective phage mutation rate μ¯ depends linearly on the parameter μ:μ¯≈gC0(1−f)fμLαPV, while both the probability of establishment and the time to extinction depend inversely on diversity m:pest≈1mceη(1−PV)gC0(1−f)BpVr (Equation 5) and Text≈1m2gC0(1−f)fαBpV (Equation 173, Appendix 3). By comparison with Equation 1, we find that m3 depends approximately linearly on mutation rate, resulting in the weak m∝μ13 dependence on mutation rate.
+To understand where the dependence of diversity on these key parameters come from, we look more closely at each component expression. The effective phage mutation rate $\mu¯$ depends linearly on the parameter $\mu:\mu¯≈\frac{gC_{0}(1−f)f\muL}{\alphaP_{V}}$, while both the probability of establishment and the time to extinction depend inversely on diversity $m:p_{est}≈\frac{1}{m}\frac{ceη(1−P_{V})gC_{0}(1−f)}{B_{p_{V}r}}$ (Equation 5) and $T_{ext}≈\frac{1}{m}\frac{2gC_{0}(1−f)}{f\alphaBp_{V}}$ (Equation 173, Appendix 3). By comparison with Equation 1, we find that $m^{3}$ depends approximately linearly on mutation rate, resulting in the weak $m∝\mu^{\frac{1}{3}}$ dependence on mutation rate.
 
-The dependence of diversity on both e and η comes from the probability of phage establishment since μ¯ depends only very weakly on these parameters through its dependence on total population sizes and Te⁢x⁢t depends explicitly on m alone, not e or η. The phage probability of establishment is proportional to e⁢η⁢(1-pV)m (Equation 5), and as before, this gives m3∝e⁢η⁢(1-pV). Bacteria are more successful at high η⁢(1-pV)⁢e, which increases the phage establishment probability. Previous theoretical work has predicted that diversity increases as spacer acquisition rate increases (Childs et al., 2012); here, we provide a quantitative prediction for this dependence. In the following sections, we explore phage establishment in more detail.
+The dependence of diversity on both $e$ and $η$ comes from the probability of phage establishment since $\mu¯$ depends only very weakly on these parameters through its dependence on total population sizes and $T_{e⁢x⁢t}$ depends explicitly on $m$ alone, not $e$ or $η$. The phage probability of establishment is proportional to $\frac{e⁢η⁢(1-p_{V})}{m}$ (Equation 5), and as before, this gives $m^{3}∝e⁢η⁢(1-p_{V})$. Bacteria are more successful at high $η⁢(1-p_{V})⁢e$, which increases the phage establishment probability. Previous theoretical work has predicted that diversity increases as spacer acquisition rate increases (Childs et al., 2012); here, we provide a quantitative prediction for this dependence. In the following sections, we explore phage establishment in more detail.
 
-## What determines the fitness and establishment of new mutants?
+### What determines the fitness and establishment of new mutants?
 
-We find that diversity emerges in our model from the balance of phage clone establishment and extinction. However, only some phage mutants escape initial stochastic extinction and survive long enough to become established. What determines the fate of a new phage mutant? In our model, a single phage mutation in a protospacer can completely overcome CRISPR targeting, which means that new phage mutants can infect all bacteria equally well and their initial growth rate s0 is independent of CRISPR: s0≈α⁢nB⁢(B⁢pV-1)-F, where F is the chemostat flow rate (a shared death rate for phages and bacteria). Surprisingly, however, even once bacteria start to acquire matching spacers, the probability of establishment for new phage mutants is still well-described by theory in which CRISPR targeting only influences total average population sizes (Figure 3C); that is, the specific interaction between a phage and its matching clone can be ignored. Intuitively, this is because phage clones must grow to a certain size before bacteria encounter them enough to begin to acquire spacers, and this size turns out to be large enough to avoid stochastic extinction (Figure 15). The probability of phage establishment is 2⁢s0B⁢(s0+δ0), where δ0=F+α⁢nB⁢(1-pV) is the initial phage mutant death rate. Importantly, these rates are independent of the population size of matching CRISPR bacteria clones; the only dependence on bacteria is on the total bacterial population size nB (Appendix 3—figure 1), which is fairly stable at steady state.
+We find that diversity emerges in our model from the balance of phage clone establishment and extinction. However, only some phage mutants escape initial stochastic extinction and survive long enough to become established. What determines the fate of a new phage mutant? In our model, a single phage mutation in a protospacer can completely overcome CRISPR targeting, which means that new phage mutants can infect all bacteria equally well and their initial growth rate s0 is independent of CRISPR: $s_{0}≈\alpha⁢n_{B}⁢(B⁢p_{V}-1)-F$, where $F$ is the chemostat flow rate (a shared death rate for phages and bacteria). Surprisingly, however, even once bacteria start to acquire matching spacers, the probability of establishment for new phage mutants is still well-described by theory in which CRISPR targeting only influences total average population sizes (Figure 3C); that is, the specific interaction between a phage and its matching clone can be ignored. Intuitively, this is because phage clones must grow to a certain size before bacteria encounter them enough to begin to acquire spacers, and this size turns out to be large enough to avoid stochastic extinction (Figure 15). The probability of phage establishment is $\frac{2⁢s_{0}}{B⁢(s_{0}+\delta_{0})}$, where $\delta_{0}=F+\alpha⁢n_{B}⁢(1-p_{V})$ is the initial phage mutant death rate. Importantly, these rates are independent of the population size of matching CRISPR bacteria clones; the only dependence on bacteria is on the total bacterial population size $n_{B}$ (Appendix 3—figure 1), which is fairly stable at steady state.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig3-v2.jpg)
+
+**Figure 3.:** (A) Phage and bacteria coevolve in two timescale-separated regimes characterized by phage clone fitness. Average phage and bacteria clone size vs. time since phage mutation (right axis), and average clone growth rate vs. time since phage mutation (left axis). Markers show the average over all clone trajectories after steady state from six simulations with the same parameters. (B) Histograms of individual clone fitness grouped by time since phage mutation. Phage clones initially have fitness gt0, but rapidly most clones reach neutral growth (fitness $≈0$). Bacteria clones also follow suit, initially having fitness gt0 and rapidly reaching 0 fitness on average. Because spacer acquisition for a clone only happens after that clone is created by phage mutation, the top-right panel of (B) is empty at the earliest time point following phage mutation. Individual clone trajectories are highly variable. (C) Probability of phage clone establishment vs. average immunity. Clones are considered established in simulations when they reach the mean clone size. Equation 3 with $ν=1$ is shown in green and with $ν$ given by Equation 4 in blue. In (A, B), $C_{0}=10^{4}$, $e=0.95$, $η=10^{-3}$, and $\mu=3\times10^{-6}$. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Average phage and bacteria clone size vs. time (right vertical axis, purple and green markers) and average phage clone growth rate vs. time (left vertical axis, orange markers). Markers are the average over all clone trajectories after steady state in a single simulation. Phage clones appear at size 1 and grow until they reach the deterministic mean phage clone size on average. Once a phage clone becomes large, bacteria encounter it often enough to acquire a matching spacer, and bacteria clones grow until they reach their deterministic mean clone size. New phage mutants have a selective advantage (fitness gt0, positive growth rate) until they reach the deterministic mean clone size, at which point they evolve neutrally (fitness $≈0$). Individual clone trajectories are highly variable, leading to a large standard deviation on the mean phage clone fitness and a fitness trend which is only evident on average. The predicted clone size is piecewise-defined as the theoretical clone trajectory until the theoretical trajectory reaches the predicted mean clone size.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Phage establishment probability vs. effective $e$. Markers are simulation results; error bars are standard deviation across three or more independent simulations. Black lines are the numerical theoretical solution. Blue lines are the approximate solution given by Equation 54 (with the full theoretical predicted value of $m$), and green lines are the same but with $e=0$. All values of $e$ collapse on the same $η$ lines; the establishment probability depends only on $e/m$ and not on $e$ by itself. Interestingly, the $e=0$ approximation is close to the small $e$ approximation at high $η$. This implies that high $e$ matters more at small $η$. For some simulations near the transition from low to high $η$, the probability of establishment is zero, which is why the grey connecting lines drop below the x-axis near effective $e≈10^{-1}$.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Theoretical phage establishment probability vs. $e/m$. Solid lines are the numerical theoretical solution. Light dashed lines (‘small $e_{e⁢f⁢f}$’) are the approximate solution given by Equation 54 (with the full theoretical predicted value of $m$), heavy dashed lines are the same but with $e=0$. All values of $e$ collapse on the same $η$ lines; the establishment probability depends only on $e/m$ and not on $e$ by itself. The inflection point in $P_{e⁢s⁢t}$ (dashed black line) is given by Equation 58.
 
 Even though CRISPR targeting does not explicitly affect the establishment probability for new phage mutants, the probability of phage establishment increases as the average bacterial immunity increases (Figure 3C). Average immunity is a measure of the overall effectiveness of CRISPR immunity for the entire bacterial population; it is the average of all pairwise immunities between phage clones and bacterial clones weighted by their population sizes (Figure 1A inset). Because higher average immunity is beneficial for bacteria and leads to larger bacterial population sizes (Figure 3C), higher average immunity also means there is stronger selective advantage for new phage mutants that can escape CRISPR targeting (Figure 3C and Figure 5A).
 
-For insight into the nature of this dependence, we approximated the probability of establishment at two extremes of average immunity (see ‘Dominant balance approximations for ν’). The probability of establishment can also be written(3)Pest=2eνm(B−1)
+For insight into the nature of this dependence, we approximated the probability of establishment at two extremes of average immunity (see ‘Dominant balance approximations for $ν$’). The probability of establishment can also be written
 
-where ν is the fraction of bacteria that have spacers and m is the average number of bacterial clones at steady state. Low average immunity occurs when e/m is small: in this limit, the fraction of bacteria with spacers is(4)ν≈11+rη(1−pV)αn~V−em(pVη(1−pV)−ABpV(A−1)(BpV−1))
+$$
+P_{est}=\frac{2eν}{m(B−1)}
+$$
 
-where A=(B⁢pV-1)⁢(1-f)⁢αf⁢g is the extinction threshold for phages (A>1 for phage survival), and n~V is the phage population size calculated with e=0 (Equation 52); this is the extreme limit of low average immunity where total population sizes approach their values in the absence of CRISPR immunity (Figure 26). The quantity rη⁢(1-pV)⁢α⁢n~V can be understood as the ratio of the rate of spacer loss to the rate of spacer acquisition. If spacer loss is high and acquisition is low, the fraction of bacteria with spacers (ν) decreases. This in turn correlates with a lower probability of phage establishment (Equation 3) since phages are less likely to establish when there is less pressure from bacteria defending against them with CRISPR. Equation 4 is plotted in Figure 3C in blue. At very high average immunity, on the other hand, ν becomes close to 1 regardless of η (Figure 3—figure supplement 2), which is why the curves in Figure 3C overlap at high average immunity (ν=1 is plotted in green).
+where $ν$ is the fraction of bacteria that have spacers and $m$ is the average number of bacterial clones at steady state. Low average immunity occurs when $e/m$ is small: in this limit, the fraction of bacteria with spacers is
 
-For more insight into the parameter dependence of Pe⁢s⁢t, we apply the same approximation as for m, expanding Pe⁢s⁢t in 1/B and η (‘Approximation for m’):(5)Pest≈1m2eη(1−pV)gC0(1−f)BpVr≈[2(η(1−pV)eα)2μLBr2]13
+$$
+ν≈\frac{1}{1+\frac{r}{η(1−p_{V})\alphan~_{V}}−\frac{e}{m}(\frac{p_{V}}{η(1−p_{V})}−\frac{ABp_{V}}{(A−1)(Bp_{V}−1)})}
+$$
 
-The probability of establishment increases with the probability of bacterial escape and spacer acquisition η⁢(1-pV) and with spacer effectiveness e, but decreases with increasing mutation rate μ⁢L. This is consistent with the intuition that more successful bacteria increase the strength of selection for phage mutants (higher η and e), but that higher mutation rate reduces the probability of establishment for any particular mutant.
+where $A=\frac{(B⁢p_{V}-1)⁢(1-f)⁢\alpha}{f⁢g}$ is the extinction threshold for phages ($A>1$ for phage survival), and $n~_{V}$ is the phage population size calculated with $e=0$ (Equation 52); this is the extreme limit of low average immunity where total population sizes approach their values in the absence of CRISPR immunity (Figure 26). The quantity $\frac{r}{η⁢(1-p_{V})⁢\alpha⁢n~_{V}}$ can be understood as the ratio of the rate of spacer loss to the rate of spacer acquisition. If spacer loss is high and acquisition is low, the fraction of bacteria with spacers ($ν$) decreases. This in turn correlates with a lower probability of phage establishment (Equation 3) since phages are less likely to establish when there is less pressure from bacteria defending against them with CRISPR. Equation 4 is plotted in Figure 3C in blue. At very high average immunity, on the other hand, $ν$ becomes close to 1 regardless of $η$ (Figure 3—figure supplement 2), which is why the curves in Figure 3C overlap at high average immunity ($ν=1$ is plotted in green).
 
-## Cross-reactivity leads to dynamically unique evolutionary states
+For more insight into the parameter dependence of $P_{e⁢s⁢t}$, we apply the same approximation as for $m$, expanding $P_{e⁢s⁢t}$ in $1/B$ and $η$ (‘Approximation for $m$’):
+
+$$
+P_{est}≈\frac{1}{m}\frac{2eη(1−p_{V})gC_{0}(1−f)}{Bp_{V}r}≈[\frac{2(η(1−p_{V})e\alpha)^{2}}{\muLBr^{2}}]^{\frac{1}{3}}
+$$
+
+The probability of establishment increases with the probability of bacterial escape and spacer acquisition $η⁢(1-p_{V})$ and with spacer effectiveness $e$, but decreases with increasing mutation rate $\mu⁢L$. This is consistent with the intuition that more successful bacteria increase the strength of selection for phage mutants (higher $η$ and $e$), but that higher mutation rate reduces the probability of establishment for any particular mutant.
+
+### Cross-reactivity leads to dynamically unique evolutionary states
 
 We next asked how cross-reactivity between spacer and protospacer types impacts population dynamics and outcomes. Adding cross-reactivity was motivated by several experimental observations in CRISPR immunity: (a) In type I and type II CRISPR systems, single mutations in the PAM or protospacer seed regions (approximately 8 nucleotides at the start of a protospacer) can facilitate phage escape, whereas mutations elsewhere in the protospacer are tolerated by the CRISPR system (Deveau et al., 2008; Pyenson and Marraffini, 2020). Even when a phage manages to escape direct targeting, in type I and II systems an imperfect spacer match can facilitate priming: when Cas machinery binds to a protospacer match, even if unable to cleave the target, the likelihood of acquiring a nearby spacer is increased (Westra et al., 2015; Rao et al., 2017; Pyenson and Marraffini, 2020; Weissman et al., 2020). (b) Type III CRISPR targeting in Staphylococcus epidermidis has been shown to be completely tolerant to all single and even double mutations, meaning that these systems are naturally cross-reactive (Pyenson et al., 2017).
 
-We simulated two types of cross-reactivity: one in which phages experience an exponential decrease in CRISPR effectiveness with mutational distance (Equation 7), and a step-function cross-reactivity where phages require additional 1≤θ≤3 mutations to perfectly escape CRISPR targeting (Equation 8). Phage success probability without cross-reactivity is given by Equation 6, a special case of 7 and 8 with θ=0.(6)pV(i,j)={pV(1−e)if i=jpVif i≠j(7)pV(i,j)=pV(1−e exp[−dijθ])(8)pV(i,j)={pV(1−e)if dij≤θpVif dij>θ
+We simulated two types of cross-reactivity: one in which phages experience an exponential decrease in CRISPR effectiveness with mutational distance (Equation 7), and a step-function cross-reactivity where phages require additional $1\leq\theta\leq3$ mutations to perfectly escape CRISPR targeting (Equation 8). Phage success probability without cross-reactivity is given by Equation 6, a special case of 7 and 8 with $\theta=0$.
 
-The mutational distance di⁢j=∑|(Vi-Vj)| is the number of mutations between a protospacer and spacer, and θ scales the radius of cross-reactivity, with larger θ meaning more mutations are required to achieve the same immune escape (Yan et al., 2019).
+$$
+p_{V}(i,j)={p_{V}(1−e)if i=jp_{V}if i\neqj
+$$
+
+
+
+$$
+p_{V}(i,j)=p_{V}(1−e exp[−\frac{d_{ij}}{\theta}])
+$$
+
+
+
+$$
+p_{V}(i,j)={p_{V}(1−e)if d_{ij}\leq\thetap_{V}if d_{ij}>\theta
+$$
+
+The mutational distance $d_{i⁢j}=\sum|(V_{i}-V_{j})|$ is the number of mutations between a protospacer and spacer, and $\theta$ scales the radius of cross-reactivity, with larger $\theta$ meaning more mutations are required to achieve the same immune escape (Yan et al., 2019).
 
 Exponential cross-reactivity has been modelled extensively in vertebrate adaptive immunity (Chao et al., 2005; Mayer et al., 2015; Marchi et al., 2019; Yan et al., 2019; Schnaack and Nourmohammad, 2021; Chardès et al., 2022), and our definition of exponential cross-reactivity as a function of mutational distance is the same as in Yan et al., 2019. Step-function cross-reactivity, on the other hand, is reminiscent of the type III CRISPR system in which multiple point mutations are required to escape CRISPR targeting (Pyenson et al., 2017) and was also modelled theoretically by Han et al., 2013.
 
-We find that cross-reactivity results in strikingly different dynamics of clone establishment and persistence (Figure 4 and ‘Cross-reactivity’), including a travelling wave regime in which genetically neighbouring clones ‘pull’ each other along (Figure 4B–D), giving way to a regime in which new mutants have very low establishment rates in the case of step-function cross-reactivity (Figure 4C). When cross-reactivity is high and phages require multiple mutations to escape targeting, we expect new phage mutants to have a lower fitness on average because they may already be within the immunity range of existing bacterial clones. However, unlike without cross-reactivity, not all new mutant fitnesses are the same because fitness now depends on the distribution of matching spacers in the bacterial population. Cross-reactivity adds a ‘direction’ in the genetic landscape and a fitness gradient for new phage mutants, leading to a series of rapid establishments and a travelling-wave regime. We believe these rapid establishments also suppress instantaneous diversity; diversity emerges longitudinally instead of concurrently in this regime (Figure 4 and Figure 61). This is true for both types of cross-reactivity we studied, but we also observed striking qualitative differences between exponential and step-function cross-reactivity. In the former, all phage mutants are guaranteed a slight fitness advantage, and the travelling wave appears right at the start of simulations, with occasional lineage-splitting events (Figure 4B). In contrast, step-function cross-reactivity means that mutants within the cross-reactivity radius have no fitness advantage at all. In this case, there is some variable initial length of time required to establish the travelling wave pattern: at the start of a simulation, all mutants are within the cross-reactivity radius and evolve purely neutrally. At least d=θ new mutants must establish through neutral dynamics before the next mutant can escape CRISPR targeting and grow with high fitness; this leads to the travelling-wave regime appearing later for θ=2 than for θ=1, and sometimes never appearing at all. Once the traveling wave appears, the dominant phage and bacteria clone types are exactly offset by θ: the most abundant phage clone will in general be θ mutations away from the most abundant concurrent bacteria clone. This is directly visible in the clone trajectories in Figure 4C–D inset and Figure 54: matching-colour bacteria and phage clones are offset in time. Another regime is also possible in the case of step-function cross-reactivity: if multiple large clones establish that are each outside of all the others’ cross-reactivity radii (Figure 63), then new mutants all have zero fitness and the travelling wave comes to an abrupt halt (around 7000 generations in Figure 4C). Establishment of new clones is once again extremely rare, and the existing large clones persist for a long time (Figures 53 and 62).
+We find that cross-reactivity results in strikingly different dynamics of clone establishment and persistence (Figure 4 and ‘Cross-reactivity’), including a travelling wave regime in which genetically neighbouring clones ‘pull’ each other along (Figure 4B–D), giving way to a regime in which new mutants have very low establishment rates in the case of step-function cross-reactivity (Figure 4C). When cross-reactivity is high and phages require multiple mutations to escape targeting, we expect new phage mutants to have a lower fitness on average because they may already be within the immunity range of existing bacterial clones. However, unlike without cross-reactivity, not all new mutant fitnesses are the same because fitness now depends on the distribution of matching spacers in the bacterial population. Cross-reactivity adds a ‘direction’ in the genetic landscape and a fitness gradient for new phage mutants, leading to a series of rapid establishments and a travelling-wave regime. We believe these rapid establishments also suppress instantaneous diversity; diversity emerges longitudinally instead of concurrently in this regime (Figure 4 and Figure 61). This is true for both types of cross-reactivity we studied, but we also observed striking qualitative differences between exponential and step-function cross-reactivity. In the former, all phage mutants are guaranteed a slight fitness advantage, and the travelling wave appears right at the start of simulations, with occasional lineage-splitting events (Figure 4B). In contrast, step-function cross-reactivity means that mutants within the cross-reactivity radius have no fitness advantage at all. In this case, there is some variable initial length of time required to establish the travelling wave pattern: at the start of a simulation, all mutants are within the cross-reactivity radius and evolve purely neutrally. At least $d=\theta$ new mutants must establish through neutral dynamics before the next mutant can escape CRISPR targeting and grow with high fitness; this leads to the travelling-wave regime appearing later for $\theta=2$ than for $\theta=1$, and sometimes never appearing at all. Once the traveling wave appears, the dominant phage and bacteria clone types are exactly offset by $\theta$: the most abundant phage clone will in general be $\theta$ mutations away from the most abundant concurrent bacteria clone. This is directly visible in the clone trajectories in Figure 4C–D inset and Figure 54: matching-colour bacteria and phage clones are offset in time. Another regime is also possible in the case of step-function cross-reactivity: if multiple large clones establish that are each outside of all the others’ cross-reactivity radii (Figure 63), then new mutants all have zero fitness and the travelling wave comes to an abrupt halt (around 7000 generations in Figure 4C). Establishment of new clones is once again extremely rare, and the existing large clones persist for a long time (Figures 53 and 62).
 
-Changes to the fitness landscape of individual clones caused by cross-reactivity also influence population-level outcomes such as diversity. In general, we find that for high cross-reactivity, average diversity is lower than predicted for simulations without cross-reactivity because the probability of phage establishment per mutant decreases (Figure 5A). A decrease in phage mutant fitness as the strength of cross-reactivity increases is in line with the dependence of fitness on cross-reactivity reported by Yan et al., 2019 and Rouzine and Rozhnova, 2018. Even with more complicated underlying dynamics, though, measuring average immunity alone is enough to reproduce total population sizes using our simple deterministic equations developed in the limit of no cross-reactivity (Figure 5C, 'Total population size'). This is because average immunity completely captures the population-level impact of CRISPR immunity, and we can replace the CRISPR effectiveness parameter e with measured average immunity in Equations 13–17 to get very good agreement between measured and predicted population sizes even away from steady state (Figure 5—figure supplement 1). In contrast, inferring average immunity from the number of clones using the approximation that effective e≈e/m does not give good agreement with simulation results for simulations with cross-reactivity (Figure 5B).
+![Figure 4.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig4-v2.jpg)
+
+**Figure 4.:** Phage clone phylogenies for four simulations with different cross-reactivities: no cross-reactivity (A), exponential cross-reactivity with $\theta=4$ (B), and step-function cross-reactivity with $\theta=1$ (C) and $\theta=2$ (D). All simulations share all other parameters: $C_{0}=10^{4},η=10^{-4},\mu=10^{-6},e=0.95$. Phage clones are plotted at the first time they pass a population size of 2 to remove clutter from many new mutations destined for extinction, and the size of each circle is logarithmically proportional to the maximum size reached by that clone. Colours indicate the time of extinction of each clone. For each simulation with cross-reactivity, the left inset shows phage (top) and bacteria (bottom) clone sizes over time; colours indicate unique clone identities. Coloured rectangles above insets in (C) and (D) correspond to the dominant clone at each time. Dominant clone identities are offset by $\theta$ (vertical dashed line for visual aid).
+
+Changes to the fitness landscape of individual clones caused by cross-reactivity also influence population-level outcomes such as diversity. In general, we find that for high cross-reactivity, average diversity is lower than predicted for simulations without cross-reactivity because the probability of phage establishment per mutant decreases (Figure 5A). A decrease in phage mutant fitness as the strength of cross-reactivity increases is in line with the dependence of fitness on cross-reactivity reported by Yan et al., 2019 and Rouzine and Rozhnova, 2018. Even with more complicated underlying dynamics, though, measuring average immunity alone is enough to reproduce total population sizes using our simple deterministic equations developed in the limit of no cross-reactivity (Figure 5C, 'Total population size'). This is because average immunity completely captures the population-level impact of CRISPR immunity, and we can replace the CRISPR effectiveness parameter $e$ with measured average immunity in Equations 13–17 to get very good agreement between measured and predicted population sizes even away from steady state (Figure 5—figure supplement 1). In contrast, inferring average immunity from the number of clones using the approximation that effective $e≈e/m$ does not give good agreement with simulation results for simulations with cross-reactivity (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig5-v2.jpg)
+
+**Figure 5.:** (A) Probability of phage clone establishment vs. average immunity for different amounts and types of cross-reactivity. No cross-reactivity ($\theta=0$) is shown as black stars, exponential cross-reactivity in red, and step-function cross-reactivity in blue. Simulation averages are shown for $η=10^{-4}$ and $\mu=10^{-6}$. Error bars are the standard deviation across three or more independent simulations and are shown in both x directions and the positive y direction. (B, C) Total phage (purple) and total bacteria (teal) average population sizes vs. the mean number of bacterial clones $m$ (B) and vs. average bacterial immunity (C) for $η=10^{-4}$. Each point is an average at steady state over three or more independent simulations with the same parameters; error bars are standard deviation. Total sizes are scaled by the initial nutrient concentration C0. Lighter colours indicate stronger cross-reactivity, marker shapes match legends in (A) and (B). Solid lines are the predicted total population size given by solving Equations 13–17 and using the approximation effective $e≈e/m$ in (B) and the measured average immunity for effective $e$ in (C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Total phage (top) and total bacteria (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with $\theta=1$). The dashed black line uses the measured value of average immunity from the simulation at each time point to predict population sizes using the solutions to the system of Equations 13–17. This simulation has one initial phage clone and parameters $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$, and $e=0.95$.
 
 Figure 5B makes an additional subtle point: higher immune diversity promotes larger population sizes for phages but not for bacteria. This is counterintuitive and appears to conflict with several experimental results that show that more bacterial diversity increases the likelihood of phage extinction (van Houte et al., 2016; Common et al., 2020) and decreases the ability of phages to adapt (Morley et al., 2017). This discrepancy appears at first glance to be a consequence of limiting bacteria and phages to a single spacer and protospacer in our model, but we propose that it is actually because bacteria and phage diversity is decoupled in prior experiments. In the following section, we introduce a toy model to understand the conceptual impact of multiple protospacers and spacers when overall phage and bacterial diversity is coupled.
 
-## Pathogen and host diversity must be considered together
+### Pathogen and host diversity must be considered together
 
 Our model restricts bacteria to a single spacer and phages to a single protospacer. This single-spacer assumption is a reasonable approximation for the experimental systems we consider: many liquid culture experiments find that most bacteria acquire a single spacer when exposed to phages, (Heler et al., 2015; Heler et al., 2019; Pyenson and Marraffini, 2020) even after up to 2 weeks (Paez-Espino et al., 2013; Common et al., 2019). Additionally, metagenomic results show that most spacer matches to viral sequences are located near the leader end of the CRISPR array Weinberger et al., 2012a. These results, combined with theory positing that recently acquired spacer provide more immune benefit than older spacers (Childs et al., 2012; Han et al., 2013), suggest that dynamics may be dominated by a very small number of spacers per bacterium.
 
@@ -104,25 +216,97 @@ We find that across all combinations of array sizes and for two of three scenari
 
 Based on these results, we predict that in many realistic situations average immunity does not increase with diversity if phage and bacterial diversity are coupled. The intuition is this: if diversity of both bacteria and phages increase beyond the functional length of the CRISPR array, bacteria cannot be immune to all phage strains at once and average immunity must go down as diversity increases. The actual benefit of bacterial diversity depends very strongly on the characteristics of phage diversity (Figure 69) and manipulations of diversity should be understood in terms of their impact on average immunity. This has implications for understanding the so-called 'dilution effect' which is typically described as a decrease in the fraction of susceptible hosts as host diversity increases (Chabas et al., 2018; Common et al., 2020). Our model and analysis show that a dilution effect can only occur if host diversity increases out of proportion to pathogen diversity as in Common et al., 2020 (Figure 69A), whereas if both host and pathogen diversity increase in tandem, the dilution effect actually changes direction, decreasing the fraction of pathogens that a host may be immune to as pathogen diversity increases (Figure 69B–D). In the same vein, previous theoretical work has found that CRISPR with a fitness cost would be selected against when viral diversity is high for this reason (Weinberger et al., 2012b; Iranzo et al., 2013), notably with models that allowed for multiple spacers and protospacers. Our results, building on existing theory, show that phage and bacterial diversity must be explored in tandem and that CRISPR immunity may provide less benefit when phage diversity is high.
 
-## Dynamics are determined by diversity
+### Dynamics are determined by diversity
 
-How quickly does the phage population evolve? With explicitly modelled spacer and protospacer sequences of length L=30, we quantify the speed of evolution as the ‘mutational distance’ per generation (Rouzine and Rozhnova, 2018): between two time points, how far in genome space has the phage population travelled, or how many mutations have occurred on average (Speed of evolution)?
+How quickly does the phage population evolve? With explicitly modelled spacer and protospacer sequences of length $L=30$, we quantify the speed of evolution as the ‘mutational distance’ per generation (Rouzine and Rozhnova, 2018): between two time points, how far in genome space has the phage population travelled, or how many mutations have occurred on average (Speed of evolution)?
 
-The speed of evolution is both stable and repeatable between simulations at steady state and highly correlated between bacteria and phage (Figure 38). We find that the speed of evolution is inversely proportional to the time to extinction for large phage clones (Figure 6B, 'Measuring speed of evolution'). Intuitively, if phage clones turn over more quickly (small time to extinction), the population is able to move more quickly to a different genetic state, while if the time to extinction is large, new mutants are seeded close to parent populations that persist for a long time, limiting the mutational distance. Since the phage time to extinction has a simple relationship to bacterial diversity, we can also relate speed to diversity, and we find that the speed of evolution is proportional to diversity and proportional to the same parameter combination to the power 1/3 (Figure 6C). As in the case of diversity, increasing phage mutation rate μ increases the speed of evolution sublinearly, and like diversity, the prediction diverges from simulation results at low η as described in 'Measuring diversity.
+The speed of evolution is both stable and repeatable between simulations at steady state and highly correlated between bacteria and phage (Figure 38). We find that the speed of evolution is inversely proportional to the time to extinction for large phage clones (Figure 6B, 'Measuring speed of evolution'). Intuitively, if phage clones turn over more quickly (small time to extinction), the population is able to move more quickly to a different genetic state, while if the time to extinction is large, new mutants are seeded close to parent populations that persist for a long time, limiting the mutational distance. Since the phage time to extinction has a simple relationship to bacterial diversity, we can also relate speed to diversity, and we find that the speed of evolution is proportional to diversity and proportional to the same parameter combination to the power 1/3 (Figure 6C). As in the case of diversity, increasing phage mutation rate $\mu$ increases the speed of evolution sublinearly, and like diversity, the prediction diverges from simulation results at low $η$ as described in 'Measuring diversity.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig6-v2.jpg)
+
+**Figure 6.:** (A) Principal Component Analysis (PCA) decomposition of phage and bacteria clone abundances for a simulation with $C_{0}=10^{4}$, $e=0.95$, $η=10^{-4}$, and $\mu=10^{-5}$. Clone abundances are normalized at each time point, then PCA is performed for the entire phage time series over $≈4000$ generations (four times the mean extinction time for phage clones). Bacteria and phage clone abundances are transformed into the PCA coordinates; colours indicate simulation time. Five time points are highlighted in progressively lighter shades of red for emphasis. (B) Phage genomic speed of evolution vs. mean large phage clone time to extinction. The phage speed is the weighted average genomic distance between the phage population at the end of the simulation and the phage population at an earlier time, divided by the time interval. The dashed line is $y=\frac{1}{x}$. (C) The speed of evolution increases as spacer effectiveness $e$, spacer acquisition probability $η$, and phage mutation rate $\mu$ increase. The dashed line shows an approximate theoretical calculation (assuming speed = 1/time to extinction) which captures the trend across a wide range of parameters. Error bars in (B) and (C) are the standard deviation across three or more independent simulations and are shown in the positive direction only. (D) Spacer turnover as a function of time delay for four simulations with $C_{0}=10^{4}$, $e=0.95$, and $\mu=10^{-5}$. The fraction of bacterial clones remaining is the fraction of clones that were present at time $t$ that are still present at time $t+$ delay. Solid lines are an average across steady-state for each value of the time delay; shaded regions are the standard deviation. (E–G) Spacer-type turnover calculated as in (D) using experimental data from Paez-Espino et al., 2015 (E), metagenomic data sampled from groundwater from Burstein et al., 2016 (F), and metagenomic data sampled from a wastewater treatment plant from Guerrero et al., 2021a (G). Experimental time points are interpolated to the minimum sampling interval to allow averaging across the experiment.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** PCA decomposition of phage and bacteria clone abundances for a simulation with exponential cross-reactivity and $C_{0}=10^{4}$, $e=0.95$,,$η=10^{-4}$ and.$\mu=10^{-6}$ Clone abundances are normalized at each time point, then PCA is performed for the entire phage time series over $≈500$ generations (four times the mean extinction time for phage clones). Bacteria and phage clone abundances are transformed into the PCA coordinates; colours indicate simulation time. Five time points are highlighted in progressively lighter shades of red for emphasis.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Phage mutational distance reached in simulations divided by the number of phage establishments vs. diversity (left) and phage mutational distance per generation vs. mean phage time to extinction (right). Error bars are the standard deviation across three or more independent simulations and are shown in the positive direction only.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Spacer turnover as a function of time delay for four simulations with $C_{0}=10^{4}$, $e⁢t⁢a=0.001$, and $\mu=10^{-5}$. The fraction of bacterial clones remaining is the fraction of clones that were present at time $t$ that are still present at time $t+$ delay. Solid lines are an average across steady state for each value of the time delay; shaded regions are the standard deviation.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Spacer turnover as a function of time delay for four simulations with $C_{0}=10^{4}$, $e=0.95$, and $e⁢t⁢a=0.001$. The fraction of bacterial clones remaining is the fraction of clones that were present at time $t$ that are still present at time $t+$ delay. Solid lines are an average across steady state for each value of the time delay; shaded regions are the standard deviation.
 
 Our simulations show continual spacer turnover at steady state (Figure 6D, Figure 6—figure supplement 3, Figure 6—figure supplement 4), a feature that we might also expect to see in actively evolving laboratory or natural populations of bacteria and phages. We analysed data from a long-term in vitro coevolution experiment with Streptococcus thermophilus bacteria and phage (Paez-Espino et al., 2015), data from a time-series sampling of a natural aquifer community of bacteria (Burstein et al., 2016), and data from a time-series sampling of a wastewater treatment plant (Guerrero et al., 2021a) (see 'Materials and methods') and calculated spacer turnover over time (Figure 6E–G). We found that spacer sequences experienced turnover in all cases, indicating ongoing change in the spacer content in these populations, though no experimental system sho wed complete turnover of all spacer types. Even if spacer loss is happening for non-selective reasons (e.g., mixing or flow in the aquifer system), turnover indicates that new spacers are being acquired as well and that CRISPR systems are active. Moreover, the timescale of early spacer turnover in the S. thermophilus experiment is similar to the timescale in our simulations — after 1000 generations, most simulations have between 40 and 60% of clones remaining (Figure 6D) and about 60% of clones remain after 1000 generations in the experimental data (Figure 6E). We modelled all simulation parameters on known parameters for S. thermophilus where possible.
 
-## Time-shifted average immunity calculated from data reveals distinctive patterns of turnover
+### Time-shifted average immunity calculated from data reveals distinctive patterns of turnover
 
 Bacteria acquire spacers in response to phage clones becoming large. The spacer composition of the bacterial population tracks the phage protospacer composition with a lag: Figure 6A shows the first two components of a PCA decomposition of bacteria and phage abundances over time in a simulation, a visual illustration of bacterial tracking. Without cross-reactivity, trajectories in this lower-dimensional space do not travel in a straight line; they are reminiscent of the diffusive coevolutionary trajectories in antigenic space described in a theoretical model of vertebrate virus-host coevolution (Marchi et al., 2019). In the travelling wave regime with cross-reactivity, trajectories are much more ballistic (Figure 6—figure supplement 1). Can we quantify how well and how quickly can bacteria track the evolving phage population with CRISPR?
 
-Average immunity is a simple metric that quantifies the overlap between bacteria and phages. In experiments with both microbes and vertebrates, time-shift infectivity analyses between host and pathogen populations typically show that hosts are more immune to pathogens from the past and less immune to pathogens from the future (Richman et al., 2003; Frost et al., 2005; Moore et al., 2009; Hall et al., 2011; Koskella, 2014; Betts et al., 2018; Common et al., 2019; Dewald-Wang et al., 2022). We conduct a time-shift analysis on our simulation data (Figure 7A and B, Figure 7—figure supplement 11, Figure 7—figure supplement 12) and find that the same pattern holds true, but only for a limited time window: bacteria are indeed more immune to phages from the past, but this past immunity has a peak and then decays as we look further into the past, eventually reaching 0 immunity (Figure 7B). The presence of a peak in past immunity reflects the timescale of spacer turnover: once the bacterial population has lost all spacers from a previous time point, it is no longer immune to contemporaneous phages and time-shifted average immunity falls to 0. In simulations, the position of this peak is dependent on parameters such as η and μ (Figure 7E and F). As μ increases, the peak occurs further in the past since phage are now moving more quickly away from bacteria tracking, while as η increases, the peak moves closer to the present since bacteria are responding more quickly to changes in the phage population. This suggests that there is a tradeoff between immune memory durability and responding quickly to immune threats: bacteria must choose between tracking the phage population closely or keeping past immunity for a long time.
+Average immunity is a simple metric that quantifies the overlap between bacteria and phages. In experiments with both microbes and vertebrates, time-shift infectivity analyses between host and pathogen populations typically show that hosts are more immune to pathogens from the past and less immune to pathogens from the future (Richman et al., 2003; Frost et al., 2005; Moore et al., 2009; Hall et al., 2011; Koskella, 2014; Betts et al., 2018; Common et al., 2019; Dewald-Wang et al., 2022). We conduct a time-shift analysis on our simulation data (Figure 7A and B, Figure 7—figure supplement 11, Figure 7—figure supplement 12) and find that the same pattern holds true, but only for a limited time window: bacteria are indeed more immune to phages from the past, but this past immunity has a peak and then decays as we look further into the past, eventually reaching 0 immunity (Figure 7B). The presence of a peak in past immunity reflects the timescale of spacer turnover: once the bacterial population has lost all spacers from a previous time point, it is no longer immune to contemporaneous phages and time-shifted average immunity falls to 0. In simulations, the position of this peak is dependent on parameters such as $η$ and $\mu$ (Figure 7E and F). As $\mu$ increases, the peak occurs further in the past since phage are now moving more quickly away from bacteria tracking, while as $η$ increases, the peak moves closer to the present since bacteria are responding more quickly to changes in the phage population. This suggests that there is a tradeoff between immune memory durability and responding quickly to immune threats: bacteria must choose between tracking the phage population closely or keeping past immunity for a long time.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-v2.jpg)
+
+**Figure 7.:** (A, B) Average immunity of bacteria against phage for four simulations with different values of $η$ as a function of time shift. Solid lines are an average across steady state for each value of the time shift; shaded regions are the standard deviation. Average immunity peaks in the recent past (A, indicated by $\tau^{*}$) with a negative slope through zero delay (A, black dashed line) and decays to zero at long delays in the past or future (B). For all simulations $C_{0}=10^{4}$, $\mu=10^{-5}$, and $e=0.95$. (C, D) Average overlap between bacterial spacer and phage protospacer types using data from a lab experiment with S. thermophilus and phage from Paez-Espino et al., 2015 (C) and data from a wastewater treatment plant sampled over 3 years from Guerrero et al., 2021a (D). Spacer types are grouped by 85% similarity, and shaded region is standard deviation across averaged data. Base average immunity values were multiplied by the average number of protospacers corresponding to the S. thermophilus CRISPR system (C) and the Gordonia CRISPR systems (D) to account for multiple potential protospacer targets per phage. In (D), we compared two time shifts with zero delay average immunity using a Wilcoxon signed-rank test: $p=0.27$ for lower past immunity at 500 days, $p=0.008$ for lower past immunity at 200 days, $p=0.001$ for lower future immunity at 500 days, and $p=0.003$ for lower future immunity at 200 days. (E, F) The position of the peak in past immunity for simulated data vs. spacer acquisition probability $η$ (E) and phage mutation rate $\mu$ (F). The peak position is the time shift value for which the curves in (A) are largest, indicated by $\tau^{*}$. Error bars are the standard deviation across three or more independent simulations.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Time shifted overlap for experimental coevolution data with the first time point and last two time points removed. Interpolation spacing is 3 days, the smallest interval between remaining time points. Time intervals in days were multiplied by 6.64, the estimated number of bacterial generations per day assuming exponential growth with 100:1 serial dilutions. Protospacers are included if they have a perfect PAM, and all wild-type spacers are included.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Time-shifted overlap for experimental coevolution data with the first time point and last two time points removed. Interpolation spacing is 3 days, the smallest interval between remaining time points. Time intervals in days were multiplied by 6.64, the estimated number of bacterial generations per day assuming exponential growth with 100:1 serial dilutions. Protospacers are included if they have a perfect PAM or partially perfect PAM, and all wild-type spacers are included.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Time-shifted overlap for experimental coevolution data with the first time point and last two time points removed. Interpolation spacing is 3 days, the smallest interval between remaining time points. Time intervals in days were multiplied by 6.64, the estimated number of bacterial generations per day assuming exponential growth with 100:1 serial dilutions. All potential protospacers are included regardless of PAM sequence, and all wild-type spacers are included.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Time-shifted overlap for experimental coevolution data with increasing numbers of time points from the start and end removed. Interpolation spacing is the smallest interval between remaining time points. Only perfect-PAM protospacers are included; all wild-type spacers are included.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Time-shifted average immunity for spacers and protospacers from wastewater grouped at four different similarity thresholds. Points are trimmed from the start and end of the time series in each panel as described in the overlay text. Raw values are multiplied by 1956, the average number of protospacers with the GTT PAM from the phage DC-56 and DS-92 genomes. Only perfect-PAM protospacers are included; all wild-type spacers are included.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp6-v2.jpg)
+
+**Figure 7—figure supplement 6.:** Bootstrapped control: time-shifted average immunity for wastewater after randomly shuffling the interpolated clone abundances separately for bacteria and phage.
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp7-v2.jpg)
+
+**Figure 7—figure supplement 7.:** Bootstrapped control: time-shifted average immunity for wastewater after randomly shuffling pairs of interpolated bacteria and phage clone sizes such that time point matching is maintained between bacteria and phages.
+
+![Figure 7—figure supplement 8.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp8-v2.jpg)
+
+**Figure 7—figure supplement 8.:** Time-shifted average immunity for spacers and protospacers grouped at an 85% similarity threshold. 16 time points are removed from the end of the data series in order to remove the region with zero protospacer counts. Raw values are multiplied by 1956, the average number of protospacers with the GTT PAM from the phage DC-56 and DS-92 genomes. Only perfect-PAM protospacers are included; all wild-type spacers are included.
+
+![Figure 7—figure supplement 9.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp9-v2.jpg)
+
+**Figure 7—figure supplement 9.:** Time-shifted average immunity for spacers and protospacers grouped at an 85% similarity threshold. 21 time points are removed from the beginning of the data series to remove the region with anomalously high average immunity. Raw values are multiplied by 1956, the average number of protospacers with the GTT PAM from the phage DC-56 and DS-92 genomes. Only perfect-PAM protospacers are included; all wild-type spacers are included.
+
+![Figure 7—figure supplement 10.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp10-v2.jpg)
+
+**Figure 7—figure supplement 10.:** Time-shifted average immunity for spacers and protospacers grouped at an 85% similarity threshold. 21 time points are removed from the beginning of the data series to remove the region with anomalously high average immunity, and 16 time points are removed from the end of the data series in order to remove the region with zero protospacer counts. Raw values are multiplied by 1956, the average number of protospacers with the GTT PAM from the phage DC-56 and DS-92 genomes. Only perfect-PAM protospacers are included; all wild-type spacers are included.
+
+![Figure 7—figure supplement 11.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp11-v2.jpg)
+
+**Figure 7—figure supplement 11.:** Average immunity of bacteria against phage for four simulations with different values of $e$ as a function of time shift. Solid lines are an average across steady-state for each value of the time shift; shaded regions are the standard deviation. A short-time view is shown on the left and a long-time view on the right. For all simulations $C_{0}=10^{4}$, $e⁢t⁢a=0.001$, and $\mu=10^{-5}$.
+
+![Figure 7—figure supplement 12.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig7-figsupp12-v2.jpg)
+
+**Figure 7—figure supplement 12.:** Average immunity of bacteria against phage for four simulations with different values of $\mu$ as a function of time shift. Solid lines are an average across steady state for each value of the time shift; shaded regions are the standard deviation. A short-time view is shown on the left and a long-time view on the right. For all simulations $C_{0}=10^{4}$, $e=0.95$, and $e⁢t⁢a=0.001$.
 
 Time-shift analyses are usually performed explicitly by directly combining stored samples from different time points (Betts et al., 2018; Common et al., 2019; Dewald-Wang et al., 2022). However, by sequencing CRISPR spacers and phage genomes, a pseudo-analysis can be done without any time-shifted competition experiments by calculating the overlap between bacterial spacers and phage protospacers at different times delays. We performed such an analysis for two published datasets: a long-term laboratory coevolution experiment with S. thermophilus and phage (Paez-Espino et al., 2015) and time series of metagenomic samples over 3 years from a wastewater treatment plant (Guerrero et al., 2021a). In both experiments, whole-genome shotgun sequencing was performed on bacteria and phage DNA, and CRISPR spacers and protospacers were recovered and reported. We re-analysed these datasets to detect CRISPR spacers by finding sequences adjacent to known CRISPR repeats in raw reads. We also detected protospacers by finding matches to our detected CRISPR spacers in reads that did not match the CRISPR repeats or the bacterial reference genome(s) (see ‘Laboratory coevolution experimental data’; ‘Experimental data from wastewater treatment plant’).
 
-We grouped spacers with an 85% similarity threshold and interpolated counts between sequenced time points. We calculated the average overlap assuming e=1 (perfect immunity from matching spacers) as a function of time delay, averaging over all combinations of interpolated data with the same time delay (Figure 7C and D). We found two qualitatively different trends as a function of time delay. In the laboratory coevolution experiment, we found that bacteria are more immune to past phages and less immune to future phages (Figure 7C, Figure 7—figure supplement 1), consistent with what we see at short time delay in our model (Figure 7A, black dashed line). In contrast, in the wastewater treatment plant data, we found a peak in average immunity that is roughly centred at zero time delay: bacteria are most immune to phages from their same time point, and immunity rapidly decays in both the past and the future (Figure 7D), qualitatively similar to our simulation results on very long timescales (Figure 7B). These different trends may reflect different regimes of CRISPR immune memory: in the laboratory experiment data, we see no evidence of the decay of immune memory, while in the wastewater treatment data we see a suggestion of decay on the timescale of weeks. Bacteria appear to track the phage population closely in the wastewater data, while in the laboratory data bacteria lag behind the phage population.
+We grouped spacers with an 85% similarity threshold and interpolated counts between sequenced time points. We calculated the average overlap assuming $e=1$ (perfect immunity from matching spacers) as a function of time delay, averaging over all combinations of interpolated data with the same time delay (Figure 7C and D). We found two qualitatively different trends as a function of time delay. In the laboratory coevolution experiment, we found that bacteria are more immune to past phages and less immune to future phages (Figure 7C, Figure 7—figure supplement 1), consistent with what we see at short time delay in our model (Figure 7A, black dashed line). In contrast, in the wastewater treatment plant data, we found a peak in average immunity that is roughly centred at zero time delay: bacteria are most immune to phages from their same time point, and immunity rapidly decays in both the past and the future (Figure 7D), qualitatively similar to our simulation results on very long timescales (Figure 7B). These different trends may reflect different regimes of CRISPR immune memory: in the laboratory experiment data, we see no evidence of the decay of immune memory, while in the wastewater treatment data we see a suggestion of decay on the timescale of weeks. Bacteria appear to track the phage population closely in the wastewater data, while in the laboratory data bacteria lag behind the phage population.
 
-Because the variability in average immunity between time points was very high in the wastewater treatment plant data, we performed a Wilcoxon signed-rank test between the average immunity at zero time delay and the average immunity at a time delay ±200 and ±500 (see ‘Calculating average immunity for details’). We found that past immunity after 200 days is significantly lower than present (Wilcoxon statistic Z=1241 p-value p=0.008), but that immunity after 500 days is not significantly lower than present (Z=392,p=0.27). For both time delays, we found that future immunity is significantly lower than present (Z=580,p=0.0012 for 500 days and Z=1293,p=0.003 for 200 days). Interestingly, these significance values are not symmetric if we pose the question from the perspective of phage: the overlap between phage and future bacteria at 500 days is lower than the overlap for present phages (Z=507,p=0.024), and the overlap between phage and past bacteria is lower than the overlap at present (Z=388,p=0.027, Figure 88). This asymmetry, that bacteria are generally more immune to all past phages while phage are not more infective against all past bacteria, is qualitatively the same as that reported by Dewald-Wang et al. in an explicit time-shift study of bacteria and phage immunity and infectivity in chestnut trees (Dewald-Wang et al., 2022).
+Because the variability in average immunity between time points was very high in the wastewater treatment plant data, we performed a Wilcoxon signed-rank test between the average immunity at zero time delay and the average immunity at a time delay ±200 and ±500 (see ‘Calculating average immunity for details’). We found that past immunity after 200 days is significantly lower than present (Wilcoxon statistic $Z=1241$ p-value $p=0.008$), but that immunity after 500 days is not significantly lower than present ($Z=392,p=0.27$). For both time delays, we found that future immunity is significantly lower than present ($Z=580,p=0.0012$ for 500 days and $Z=1293,p=0.003$ for 200 days). Interestingly, these significance values are not symmetric if we pose the question from the perspective of phage: the overlap between phage and future bacteria at 500 days is lower than the overlap for present phages ($Z=507,p=0.024$), and the overlap between phage and past bacteria is lower than the overlap at present ($Z=388,p=0.027$, Figure 88). This asymmetry, that bacteria are generally more immune to all past phages while phage are not more infective against all past bacteria, is qualitatively the same as that reported by Dewald-Wang et al. in an explicit time-shift study of bacteria and phage immunity and infectivity in chestnut trees (Dewald-Wang et al., 2022).
 
 ## Discussion
 
@@ -130,7 +314,7 @@ Many bacteria and archaea possess CRISPR systems, and a significant fraction of 
 
 Our model is mechanistically simple, and we left out many known biological features and interactions by choice in order to gain a deep understanding of the factors that influenced our results. We modelled uniform spacer effectiveness, uniform spacer acquisition probability, and a constant phage mutation rate, all in a well-mixed system. This constitutes a null model of CRISPR immunity that provides a useful comparison point for both more accurate mechanistic models and experimental data. CRISPR is one of many other bacterial antiviral defence systems (Bernheim and Sorek, 2020), and within the CRISPR world, CRISPR systems are highly evolutionarily diverse and there are many known differences in function and effect between CRISPR systems of different bacterial species (Koonin et al., 2017; Hille et al., 2018; Makarova et al., 2020; Koonin and Makarova, 2022). Experiments typically study a particular CRISPR system, and it is unclear which revealed mechanisms are specific to that system or are a more general property of CRISPR systems. For example, the spacer acquisition rate has been demonstrated to vary across particular phage sequences in several experiments (Heler et al., 2019; Modell et al., 2017; Paez-Espino et al., 2013) and is the source of differences in spacer abundance in some experiments (Heler et al., 2019), but whether this is a general principle that causes broad abundance distributions is not known. Many theoretical works also include mechanistic details such as a lag between infection and burst (Levin et al., 2013; Santos et al., 2014), multiple protospacers and spacers (typically with a fixed upper bound) (Weinberger et al., 2012b; Iranzo et al., 2013; Bonsma-Fisher et al., 2018; Childs et al., 2014; Childs et al., 2012; Weissman et al., 2018, spatial structure Payne et al., 2018; Haerter et al., 2011, autoimmunity Weissman et al., 2018; Chabas et al., 2021, and fitness costs of immunity and/or escape mutations Weinberger et al., 2012b; Weissman et al., 2021). Many phages also contain anti-CRISPRs which impact phage evolution and CRISPR immunity (Bondy-Denomy et al., 2013; Hwang and Maxwell, 2019). These details are all biologically important, but stripping them away as we do provides great insight into which population features depend on these details and which may be more general properties of adaptive immunity.
 
-## Diversity and average immunity
+### Diversity and average immunity
 
 Experimental manipulations of CRISPR diversity have focused on changing the number of bacterial spacers present in the population (van Houte et al., 2016; Morley et al., 2017; Common et al., 2020) while keeping phage diversity fixed (and low), with the exception of Guillemet et al., 2021 who also explored high vs. low phage diversity. In contrast, emergent phage and bacterial diversity are tightly coupled in our model (Figure 2B). At high diversity, bacteria must ‘choose’ which of many phage clones to gain immunity against, meaning that they are then immune to a smaller fraction of the total phage population compared to when diversity is low. This is not a result of limiting bacteria and phage to a single spacer or protospacer; this trend also holds when there are multiple spacers or protospacers provided phage and bacteria diversity are correlated, as we showed in ‘Pathogen and host diversity must be considered together’.
 
@@ -142,9 +326,9 @@ Our results showed complex outcomes and a wide range of overall spacer diversity
 
 Our model makes quantitative predictions about the relationship of population size and population outcomes to average immunity that can be tested in data. We directly calculated average immunity in experimental data without the need to assemble phage genomes (Figure 7), and we found that average immunity is anticorrelated with phage population size in data in one experimental dataset, as predicted by our model (Figure 77). However, we did not find a correlation between average immunity and read count (a proxy for population size) in wastewater treatment plant data (Figure 90). When calculating average immunity using experimental data, one must make assumptions about the immune benefit of spacers. In our work, we assumed that spacer and protospacer sequences that belong to the same similarity group provide perfect immunity. Other more complex assumptions are possible, and there has been a great deal of work quantifying the efficiency of spacers based on the position of SNPs in the protospacer in vitro (see Sternberg et al., 2015 for an example) and in vivo (Soto-Perez et al., 2019). Additionally, phages regularly acquire mutations in PAMs, and these mutations strongly decrease the targeting efficiency of bacterial spacers (Leenay et al., 2016; Sun et al., 2013).
 
-In certain limits, average immunity can be related to the Morisita–Horn similarity index ΨWolda, 1981 (see Appendix 1), where instead of comparing two populations from different timepoints or different regions, we compared bacteria and phage populations scaled by the immune benefit of CRISPR. By comparing our definition of average immunity to the Morisita–Horn index, we find that the Morisita overlap is constant across all parameters we study, which implies that the population diversity evolves to attain the highest possible overlap. Average immunity is also theoretically similar to the concept of distributed immunity introduced by Childs et al., 2014; Childs et al., 2012, the ‘immunity’ quantity calculated by Han et al., 2013, and the probability of an immune encounter used by Iranzo et al., 2013 to derive mean-field population predictions. The mathematical definition of average immunity is slightly different than these quantities, but the effect on populations is strikingly similar, and it is significant that several different models and different metrics find that a quantification of immunity is the important predictor for population-level outcomes.
+In certain limits, average immunity can be related to the Morisita–Horn similarity index $Ψ$Wolda, 1981 (see Appendix 1), where instead of comparing two populations from different timepoints or different regions, we compared bacteria and phage populations scaled by the immune benefit of CRISPR. By comparing our definition of average immunity to the Morisita–Horn index, we find that the Morisita overlap is constant across all parameters we study, which implies that the population diversity evolves to attain the highest possible overlap. Average immunity is also theoretically similar to the concept of distributed immunity introduced by Childs et al., 2014; Childs et al., 2012, the ‘immunity’ quantity calculated by Han et al., 2013, and the probability of an immune encounter used by Iranzo et al., 2013 to derive mean-field population predictions. The mathematical definition of average immunity is slightly different than these quantities, but the effect on populations is strikingly similar, and it is significant that several different models and different metrics find that a quantification of immunity is the important predictor for population-level outcomes.
 
-## In silico time-shift experiments yield qualitative trends
+### In silico time-shift experiments yield qualitative trends
 
 We calculated average immunity in two experimental datasets and performed synthetic time-shift experiments by calculating average immunity between time-shifted populations of bacteria and phage. This effectively replicates explicit time-shift experiments (Richman et al., 2003; Frost et al., 2005; Moore et al., 2009; Blanquart and Gandon, 2013; Koskella, 2014; Chabas et al., 2016; Pyenson and Marraffini, 2020; Laanto et al., 2017; Common et al., 2019; Dewald-Wang et al., 2022). A similar time-shift calculation using sequence data was performed by Guillemet et al., 2021; they approached the question from the phage perspective and found that phages are most infectious against bacteria from the past and least infectious against bacteria from the future. Our results show that powerful insights into the dynamical immune state of a population can be obtained from sequencing data without explicitly performing time-shift experiments. We applied the same simple method to two very different experimental populations, suggesting that this analysis may be feasible in other time-series datasets, including from other natural microbial populations.
 
@@ -152,9 +336,9 @@ Our model predicts that an immune-evolving population in true steady state must 
 
 One reason why past immunity did not unambiguously decline in our analysis of the laboratory coevolution data may be that spacer loss was not observed in the original experiment (Paez-Espino et al., 2015. This is also true of several other similar experiments with S. thermophilus Paez-Espino et al., 2013; Weissman et al., 2018), though spacer loss was directly observed coincident with spacer acquisition in Deveau et al., 2008. Spacer loss has also been observed in other experimental systems (Jiang et al., 2013; Rao et al., 2017; Deecker and Ensminger, 2020; Garrett, 2021), and indirect evidence of spacer loss through sequence comparisons has been reported for S. thermophilus (Horvath et al., 2008 and metagenomic data Held et al., 2010; Weinberger et al., 2012a). Spacers may also be functionally lost despite remaining in the genome, either from stochastic decoupling of RNA polymerase (Zoephel and Randau, 2013; Martynov et al., 2017; Soto-Perez et al., 2019 or from a dilution effect of competition for limited Cas protein complexes Martynov et al., 2017; Bradde et al., 2020; Garrett, 2021). The ‘loss’ rate in our model could also be taken to be gain and loss of the entire CRISPR system, which is known to happen (Delaney et al., 2012; Rollie et al., 2020), although this would likely happen on much slower timescales than the acquisition and loss we model. The qualitative shape and timescale of time-shift curves like the ones we presented may indirectly contain information about the timescale of spacer loss.
 
-We found in our simulations that memory length decreased as spacer acquisition probability increased and as phage mutation rate decreased: if bacteria followed phages more closely (higher η) or if phages evolved more slowly (lower μ), the peak in past immunity was closer to the present and memory was more quickly lost (Figure 7A, E, and F). A similar correspondence was derived in a theoretical model of optimal immune memory formation in vertebrates: more frequent sampling of the pathogen landscape (corresponding to higher spacer acquisition η in our model) led to faster memory loss (Mayer et al., 2019). Notably, that result is the optimal update scheme for an immune system wishing to minimize the costs of infection; there is no explicit optimization in our model, yet we find a pattern consistent with a potentially optimal solution.
+We found in our simulations that memory length decreased as spacer acquisition probability increased and as phage mutation rate decreased: if bacteria followed phages more closely (higher $η$) or if phages evolved more slowly (lower $\mu$), the peak in past immunity was closer to the present and memory was more quickly lost (Figure 7A, E, and F). A similar correspondence was derived in a theoretical model of optimal immune memory formation in vertebrates: more frequent sampling of the pathogen landscape (corresponding to higher spacer acquisition $η$ in our model) led to faster memory loss (Mayer et al., 2019). Notably, that result is the optimal update scheme for an immune system wishing to minimize the costs of infection; there is no explicit optimization in our model, yet we find a pattern consistent with a potentially optimal solution.
 
-## Vertebrate adaptive immunity
+### Vertebrate adaptive immunity
 
 CRISPR adaptive immunity is mechanistically very different from the vertebrate adaptive immune system, yet there are several striking conceptual similarities between them and in the way past theoretical works have modelled vertebrate immunity. For example, phenomenological models of binding affinity between antigens and the immune system have used the degree of similarity between strings as a metric for interaction strength (Detours and Perelson, 1999; Detours and Perelson, 2000; Chao et al., 2005; Wang et al., 2015; Nourmohammad et al., 2016; Sachdeva et al., 2020), and more abstract models of the change in immunity after a virus mutation have also used string similarity to track the strength of immune coverage (Luksza and Lässig, 2014; Rouzine and Rozhnova, 2018; Yan et al., 2019). This is a simplification of a complex protein-protein interaction in the case of the vertebrate immune system (Altan-Bonnet et al., 2020), but it is nearly identical to the actual mechanism of CRISPR immunity, suggesting that lessons from models of CRISPR immunity may in turn be applicable to other forms of adaptive immunity.
 
@@ -162,139 +346,344 @@ Pathogen evolution has been extensively explored in models of vertebrate immunit
 
 Selection in the vertebrate immune system happens at many distinct stages within individuals, including T cell receptor selection in the thymus (Camaglia et al., 2022 and affinity maturation of B cells following an immune challenge Chardès et al., 2022; Nourmohammad et al., 2019; Nourmohammad et al., 2016; Molari et al., 2020). Selection also happens at the population level as pathogens and individuals coevolve over time (Marchi et al., 2019; Yan et al., 2019, for instance, in the evolution of influenza Luksza and Lässig, 2014; Yan et al., 2019). In contrast, within-host dynamics are much simpler in bacteria, and the possibilities for within-host coevolution are especially limited in the case of virulent phages that kill their hosts after a single infection. Similarly, in the vertebrate immune system, extremely high immune diversity is possible in a single individual, whereas in CRISPR immunity, total diversity per individual is many orders of magnitude lower: most bacteria contain tens of spacers with a very few examples of a few hundred spacers (Pavlova et al., 2021). This reintroduces the question of how to think about immunity in microbial populations, whether as playing out on the level of individuals or on the level of the entire population. Finally, unlike the vertebrate adaptive immune system, CRISPR immunity is heritable, and so the optimal immune strategy for bacteria takes place on a timescale potentially much longer than an individual’s lifetime as well as on the level of the entire population Mayer et al., 2016. We have highlighted several analogies between CRISPR adaptive immunity and vertebrate adaptive immunity. Overall, the mechanistic simplicity and experimental tractability of CRISPR immunity mean that abstract ideas from vertebrate immunity can be linked to measurable features of CRISPR immunity, and insights from CRISPR immunity may be useful in understanding vertebrate immunity as well.
 
-## Primed acquisition
+### Primed acquisition
 
-In some CRISPR systems, an imprecise match between a spacer and protospacer results in a much higher spacer acquisition rate, a phenomenon called priming (Rao et al., 2017). Including cross-reactivity in our model is a way to explore the effect of primed acquisition. However, we modelled cross-reactivity as a change in phage infection success probability, whereas in primed acquisition it is the spacer acquisition rate that changes. Because bacteria must lose their spacer before gaining a new spacer in our model, including primed acquisition directly would require expanding bacterial arrays to at least two spacers. The acquisition probability η could then become a function of protospacer-spacer similarity to directly model primed acquisition.
+In some CRISPR systems, an imprecise match between a spacer and protospacer results in a much higher spacer acquisition rate, a phenomenon called priming (Rao et al., 2017). Including cross-reactivity in our model is a way to explore the effect of primed acquisition. However, we modelled cross-reactivity as a change in phage infection success probability, whereas in primed acquisition it is the spacer acquisition rate that changes. Because bacteria must lose their spacer before gaining a new spacer in our model, including primed acquisition directly would require expanding bacterial arrays to at least two spacers. The acquisition probability $η$ could then become a function of protospacer-spacer similarity to directly model primed acquisition.
 
-## Selection patterns in CRISPR immunity
+### Selection patterns in CRISPR immunity
 
 The mechanism of selection for immune variants in CRISPR adaptive immunity is a matter of debate. We observed several features that suggest the presence of negative frequency-dependent selection in our model: (a) decreased clone growth rates as clone size increased, (b) cyclic clone size dynamics as immune pairs oscillate in size, and (c) continual turnover in spacer types over time. This is consistent with recent experimental observations of negative frequency-dependent selection in host-pathogen systems (Betts et al., 2018; Guillemet et al., 2021). Our model also contains the base assumption that phages that can successfully infect dominant bacterial strains will experience positive selection, generating ‘kill-the-winner‘ dynamics that lead to negative frequency-dependent selection for bacteria (Weinberger et al., 2012a). Our model does not capture true host-pathogen coevolution because bacteria are not able to evolve beyond ‘following’ the mutational landscape of phages by acquiring spacers. In true coevolution, bacterial genomic mutations, apart from the ability to acquire spacers, are also drivers of evolution and sources of selection pressure on phages.
 
-## Phase transitions in immunity
+### Phase transitions in immunity
 
-We observed large population size fluctuations when average immunity reached a particular value of approximately 10% for the parameters we used (Figure 31). This critical value is determined by a balance of the rate of spacer acquisition and spacer loss that leads to exactly equal fitness for both bacteria with spacers and bacteria without spacers (see ‘Dominant balance approximations for ν’). Despite the presence of spacers with non-zero effectiveness, near this critical point the population appears to behave as if there is no CRISPR immunity at all. This has two interesting results: first, the probability of phage establishment drops to zero for some simulations near this critical point (Figure 3—figure supplement 2), since if CRISPR has no influence then mutant phages do not experience strong positive selection. Second, population sizes become unstable near the transition: outcomes with quite different total bacteria population size and fraction of bacteria with spacers are possible (Figures 30 and 31). This critical point will be interesting to explore further as a possible phase transition.
+We observed large population size fluctuations when average immunity reached a particular value of approximately 10% for the parameters we used (Figure 31). This critical value is determined by a balance of the rate of spacer acquisition and spacer loss that leads to exactly equal fitness for both bacteria with spacers and bacteria without spacers (see ‘Dominant balance approximations for $ν$’). Despite the presence of spacers with non-zero effectiveness, near this critical point the population appears to behave as if there is no CRISPR immunity at all. This has two interesting results: first, the probability of phage establishment drops to zero for some simulations near this critical point (Figure 3—figure supplement 2), since if CRISPR has no influence then mutant phages do not experience strong positive selection. Second, population sizes become unstable near the transition: outcomes with quite different total bacteria population size and fraction of bacteria with spacers are possible (Figures 30 and 31). This critical point will be interesting to explore further as a possible phase transition.
 
-## Experimentally accessible parameters
+### Experimentally accessible parameters
 
 We found that diversity in our model depended on spacer acquisition rate, spacer effectiveness, and spacer mutation rate. These parameters are all known to vary in natural systems, and some may also be experimentally manipulated. CRISPR systems display a range of spacer acquisition rates even within the same system (Heler et al., 2019), and both spacer acquisition rate and spacer effectiveness may be controlled by the level of expression of Cas proteins, which has been found to be connected to the quorum sensing pathway (Høyland-Kroghsbo et al., 2017). Additionally, recent work has found that spacer acquisition is more efficient at slow bacterial growth rate because phages also grow more slowly, giving bacteria more time to acquire spacers (Høyland-Kroghsbo et al., 2018; Dimitriu et al., 2022). This change in bacterial growth rate can be controlled by nutrient concentration (Dimitriu et al., 2022; Payne et al., 2018, temperature Høyland-Kroghsbo et al., 2018, or by bacteriostatic antibiotics which slow bacterial growth without killing Dimitriu et al., 2022). Phage mutations rates also vary and may be experimentally modified (Kysela and Turner, 2007). These findings all represent possible experimental manipulations of parameters relevant for CRISPR immunity; for example, given these findings we predict that a bacteria-phage population exposed to bacteriostatic antibiotics would evolve higher CRISPR spacer diversity than one without antibiotics.
 
 ## Methods
 
-## Model
+### Model
 
 In this section, we describe the details of our phenomenological model of bacteria and phages, providing more detail for Figure 1A. Sections ‘Reactions’ and ‘Master equation’ list the stochastic interactions we simulate, and ‘Clone size master equation’ lists master equations that are used to derive mean-field equations for this dynamical system (Total population size) and clone size distributions for bacteria and phages (Appendix 2).
 
-We model bacteria and phages interacting in a chemostat. The populations we track are nutrient concentration (C), phages (nV), and bacteria (nB). Bacteria can either have no spacer (nB0) or a spacer of type i (nBi), and phages can have a single protospacer of type j (nVj). Nutrients flow in at concentration C0 with rate F, and all species flow out with rate F. The total number of bacteria with a spacer is nBs and the total number of bacteria is nB. Bacteria grow at rate g⁢C. With rate α, a phage interacts with a bacterium. With probability pV, the phage will kill bacteria without a matching spacer and produce a burst of new phages with size B, while for bacteria with a matching spacer that probability is reduced to pVs=(1-e)⁢pV (0≤e≤1). Bacteria without spacers that survive an attack have a chance to acquire a spacer with probability η. Bacteria with a spacer lose their spacer at rate r. Phages are limited to a single protospacer, and phages can mutate to a new protospacer type with probability μ⁢L, where μ is the per-base mutation rate and L is the protospacer length (L=30 in all simulations). Parameter descriptions and default values are shown in Table 3. See refs Weissman et al., 2021; Gurney et al., 2019 for recent examples of other chemostat-based models.
+We model bacteria and phages interacting in a chemostat. The populations we track are nutrient concentration ($C$), phages ($n_{V}$), and bacteria ($n_{B}$). Bacteria can either have no spacer ($n_{B}^{0}$) or a spacer of type $i$ ($n_{B}^{i}$), and phages can have a single protospacer of type $j$ ($n_{V}^{j}$). Nutrients flow in at concentration C0 with rate $F$, and all species flow out with rate $F$. The total number of bacteria with a spacer is $n_{B}^{s}$ and the total number of bacteria is $n_{B}$. Bacteria grow at rate $g⁢C$. With rate $\alpha$, a phage interacts with a bacterium. With probability $p_{V}$, the phage will kill bacteria without a matching spacer and produce a burst of new phages with size $B$, while for bacteria with a matching spacer that probability is reduced to $p_{V}^{s}=(1-e)⁢p_{V}$ ($0\leqe\leq1$). Bacteria without spacers that survive an attack have a chance to acquire a spacer with probability $η$. Bacteria with a spacer lose their spacer at rate $r$. Phages are limited to a single protospacer, and phages can mutate to a new protospacer type with probability $\mu⁢L$, where $\mu$ is the per-base mutation rate and $L$ is the protospacer length ($L=30$ in all simulations). Parameter descriptions and default values are shown in Table 3. See refs Weissman et al., 2021; Gurney et al., 2019 for recent examples of other chemostat-based models.
 
-## Reactions
+#### Reactions
 
-Table 1 lists all the interactions present in our model between individual bacteria (b), phages (V), and nutrients (C).
+Table 1 lists all the interactions present in our model between individual bacteria ($b$), phages ($V$), and nutrients ($C$).
 
-In Table 1, pV⁢(i,j) is the probability of a phage with protospacer type j killing a bacteria with spacer type i.
+**Table 1.**
+ Model reactions.
 
-Pn in Table 1 is the probability of n mutant phages in a burst, given by a binomial distribution:(9)Pn=P(n;B,1−P0)=(Bn)(1−P0)n(P0)B−n
 
-where P0=e-μ⁢L is the probability of no mutations for an individual phage. L is the protospacer length and μ is the mutation probability per base per generation.
+<table>
+  <tbody>
+    <tr>
+      <td>b0,i+C→g2⁢b0,i</td>
+      <td>Bacterium divides</td>
+    </tr>
+    <tr>
+      <td>b0,i→F∅</td>
+      <td>Bacterium flows out</td>
+    </tr>
+    <tr>
+      <td>Vj→F∅</td>
+      <td>Phage flows out</td>
+    </tr>
+    <tr>
+      <td>∅→FC0C</td>
+      <td>Nutrients flow in</td>
+    </tr>
+    <tr>
+      <td>C→F∅</td>
+      <td>Nutrients flow out</td>
+    </tr>
+    <tr>
+      <td>∑n=0B(b0+Vj→α⁢pV⁢Pn(B-n)⁢Vj+∑k=1nVm+k)</td>
+      <td>Interaction, phage wins,</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pn probability of n mutuant phages</td>
+    </tr>
+    <tr>
+      <td>b0+Vj→α(1−pV)(1−η)b0</td>
+      <td>Interaction, bacterium survives</td>
+    </tr>
+    <tr>
+      <td>b0+Vj→α(1−pV)ηbi</td>
+      <td>Interaction, bacterium survives and acquires a spacer</td>
+    </tr>
+    <tr>
+      <td>∑n=0B(bi+Vj→αpV(i,j)Pn(B−n)Vj+∑k=1nVm+k)</td>
+      <td>Interaction, phage wins,</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pn probability of n mutant phages</td>
+    </tr>
+    <tr>
+      <td>bi+Vjα(1−pV(i,j))→bi</td>
+      <td>Interaction, bacterium survives</td>
+    </tr>
+    <tr>
+      <td>bi→rb0</td>
+      <td>Bacterium loses spacer</td>
+    </tr>
+  </tbody>
+</table>
 
-In this formulation of the mutation term, new mutants are assumed to be a new, not previously existent, phage type which increases m by n, the number of mutations (+∑k=1nVm+k). In our simulations, phage mutations can happen to existing types, but these are rare events and we neglect them in our theoretical analysis.
+In Table 1, $p_{V}⁢(i,j)$ is the probability of a phage with protospacer type $j$ killing a bacteria with spacer type $i$.
 
-## Master equation
+$P_{n}$ in Table 1 is the probability of $n$ mutant phages in a burst, given by a binomial distribution:
 
-The reactions in Table 1 can be formulated as a master equation describing the probability of observing nB0 bacteria without spacers, the set of nBi bacteria with spacers of type i, the set of nVj phages with protospacers of type j, and a nutrient concentration of C at time t (Equation 10).(10)dP(nB0,{nBi},{nVj},C,t)dt=g(C+1)(nB0−1)P(nB0−1,{nBi},{nVj},C+1,t)+∑k=1mg(C+1)(nBk−1)P(nB0,{nBi≠k},nBk−1,{nVj},C+1,t)+F(nB0+1)P(nB0+1,{nBi},{nVj},C,t)+∑k=1mF(nBk+1)P(nB0,{nBi≠k},nBk+1,{nVj},C,t)+∑ℓ=1mF(nVℓ+1)P(nB0,{nBi},{nVj≠ℓ},nVℓ+1,C,t)+F(C+1)P(nB0,{nBi},nV,C+1,t)+FC0P(nB0,{nBi},nV,C−1,t)+∑ℓ=1mα(1−pV)(1−ηm)nB0(nVℓ+1)P(nB0,{nBi},{nVj≠ℓ},nVℓ+1,C,t)+∑k=1m∑ℓ=1mα(1−pV)ηm(nB0+1)(nVℓ+1)P(nB0+1,{nBi≠k},nBk−1,{nVj≠ℓ},nVℓ+1,C,t)+∑k=1m∑ℓ=1mα(1−pV(k,ℓ))nBk(nVℓ+1)P(nB0,{nBi≠k},nBk,{nVj≠ℓ},nVℓ+1,C,t)+∑k=1m∑ℓ=1m∑n=0BαpV(k,ℓ)Pn(nVℓ−(B−n)+1)(nBk+1)P(nB0,{nBi≠k},nBk+1,{nVj≠ℓ},nVℓ−(B−n)+1,C,t)+∑k=1m∑n=0BαpVPn(nVℓ−(B−n)+1)(nB0+1)P(nB0+1,{nBi},{nVj≠ℓ},nVℓ−(B−n)+1,C,t)+∑k=1mr(nBk+1)P(nB0−1,{nBi≠k},nBk+1,{nVj},C,t)−(F(nB0+∑k=1mnBk+∑ℓ=1mnVℓ+C+C0)+gC(nB0+∑k=1mnBk)+α∑ℓ=1mnVℓ(nB0+∑k=1mnBk)+r∑k=1mnBk)P(nB0,{nBi},{nVj},C,t)
+$$
+P_{n}=P(n;B,1−P_{0})=(\frac{B}{n})(1−P_{0})^{n}(P_{0})^{B−n}
+$$
 
-Each term is included only if all respective population quantities are ≥0; for instance, the first term is only included if nB0>0, since if nB0=0 then nB0−1<0 and the entire term is negative and non-physical. This is important to note especially in terms containing nV-(B-n)+1, which are only included if nV>B−n−1.
+where $P_{0}=e^{-\mu⁢L}$ is the probability of no mutations for an individual phage. $L$ is the protospacer length and $\mu$ is the mutation probability per base per generation.
 
-## Clone size master equation
+In this formulation of the mutation term, new mutants are assumed to be a new, not previously existent, phage type which increases $m$ by $n$, the number of mutations ($+\sum_{k=1}^{n}V^{m+k}$). In our simulations, phage mutations can happen to existing types, but these are rare events and we neglect them in our theoretical analysis.
 
-We can also write master equations for the total number of clones of size k. These equations describe the population-level distribution of clone sizes instead of the size of a single typical clone as in Equations 123 and 147.
+#### Master equation
 
-The master equation for bk, the number of bacteria clones of size k, is:(11)∂tbk=gC[(k−1)bk−1−kbk]⏟Bacteria growth+(F+r)[(k+1)bk+1−kbk]⏟Removal of spacer-containing bacteria by chemostat outflow or spacer loss+α∑ℓℓvℓ[(k+1)bk+1pV(k+1,ℓ)−kbkpV(k,ℓ)]⏟Phage predation - reduces clone size by 1 for each successful infection+αηnB0nvk∗(1−pV)[bk−1−bk]⏟New bacteria clones from spacer acquisition
+The reactions in Table 1 can be formulated as a master equation describing the probability of observing $n_{B}^{0}$ bacteria without spacers, the set of $n_{B}^{i}$ bacteria with spacers of type $i$, the set of $n_{V}^{j}$ phages with protospacers of type $j$, and a nutrient concentration of $C$ at time $t$ (Equation 10).
 
-The last term representing spacer acquisition is complicated: nVk⁣* is the total number of phages which contain protospacers that match bacteria clones of size k-1, multiplied by the probability of getting that protospacer if infected by that phage. In other words, these are the phages that bacteria clones of size k-1 could acquire spacers from to increase to size k, multiplied by the probability of acquiring a particular spacer from those phages. In a model where phages are all identical with a large number of protospacers m, nVk⁣*=nV/m, where nV is the total number of phages and 1/m is the probability of acquiring a particular spacer. If instead phages can only have a single protospacer, nVk⁣* is not known in general, but approximations may be found; for instance, if there are m phage types present and all phage clones are the same size, nVk⁣* is again equal to nV/m.
+$$
+\frac{dP(n_{B}^{0},{n_{B}^{i}},{n_{V}^{j}},C,t)}{dt}=g(C+1)(n_{B}^{0}−1)P(n_{B}^{0}−1,{n_{B}^{i}},{n_{V}^{j}},C+1,t)+\sumk=1mg(C+1)(n_{B}^{k}−1)P(n_{B}^{0},{n_{B}^{i\neqk}},n_{B}^{k}−1,{n_{V}^{j}},C+1,t)+F(n_{B}^{0}+1)P(n_{B}^{0}+1,{n_{B}^{i}},{n_{V}^{j}},C,t)+\sumk=1mF(n_{B}^{k}+1)P(n_{B}^{0},{n_{B}^{i\neqk}},n_{B}^{k}+1,{n_{V}^{j}},C,t)+\sumℓ=1mF(n_{V}^{ℓ}+1)P(n_{B}^{0},{n_{B}^{i}},{n_{V}^{j\neqℓ}},n_{V}^{ℓ}+1,C,t)+F(C+1)P(n_{B}^{0},{n_{B}^{i}},n_{V},C+1,t)+FC_{0}P(n_{B}^{0},{n_{B}^{i}},n_{V},C−1,t)+\sumℓ=1m\alpha(1−p_{V})(1−\frac{η}{m})n_{B}^{0}(n_{V}^{ℓ}+1)P(n_{B}^{0},{n_{B}^{i}},{n_{V}^{j\neqℓ}},n_{V}^{ℓ}+1,C,t)+\sumk=1m\sumℓ=1m\frac{\alpha(1−p_{V})η}{m}(n_{B}^{0}+1)(n_{V}^{ℓ}+1)P(n_{B}^{0}+1,{n_{B}^{i\neqk}},n_{B}^{k}−1,{n_{V}^{j\neqℓ}},n_{V}^{ℓ}+1,C,t)+\sumk=1m\sumℓ=1m\alpha(1−p_{V}(k,ℓ))n_{B}^{k}(n_{V}^{ℓ}+1)P(n_{B}^{0},{n_{B}^{i\neqk}},n_{B}^{k},{n_{V}^{j\neqℓ}},n_{V}^{ℓ}+1,C,t)+\sumk=1m\sumℓ=1m\sumn=0B\alphap_{V}(k,ℓ)P_{n}(n_{V}^{ℓ}−(B−n)+1)(n_{B}^{k}+1)P(n_{B}^{0},{n_{B}^{i\neqk}},n_{B}^{k}+1,{n_{V}^{j\neqℓ}},n_{V}^{ℓ}−(B−n)+1,C,t)+\sumk=1m\sumn=0B\alphap_{V}P_{n}(n_{V}^{ℓ}−(B−n)+1)(n_{B}^{0}+1)P(n_{B}^{0}+1,{n_{B}^{i}},{n_{V}^{j\neqℓ}},n_{V}^{ℓ}−(B−n)+1,C,t)+\sumk=1mr(n_{B}^{k}+1)P(n_{B}^{0}−1,{n_{B}^{i\neqk}},n_{B}^{k}+1,{n_{V}^{j}},C,t)−(F(n_{B}^{0}+\sumk=1mn_{B}^{k}+\sumℓ=1mn_{V}^{ℓ}+C+C_{0})+gC(n_{B}^{0}+\sumk=1mn_{B}^{k})+\alpha\sumℓ=1mn_{V}^{ℓ}(n_{B}^{0}+\sumk=1mn_{B}^{k})+r\sumk=1mn_{B}^{k})P(n_{B}^{0},{n_{B}^{i}},{n_{V}^{j}},C,t)
+$$
 
-The corresponding master equation for vℓ, the number of phage clones of size ℓ, is:(12)∂tvℓ=(F+α(nB0+nBs))[(ℓ+1)vℓ+1−ℓvℓ]⏟Phage death from chemostat flow and adsorption+α∑kkbk[∑n=0BPn(ℓ−(B−n))vℓ−(B−n)pV(k,ℓ−(B−n))−ℓvℓpV(k,ℓ)]⏟Phage burst after infecting spacer-containing bacteria (subtracting mutant phages which become new clones)+αnB0pV[∑n=0BPn(ℓ−(B−n))vℓ−(B−n)−ℓvℓ]⏟Phage burst after infecting bacteria without spacers+δℓ,1αB(1−e−μLp)[∑k′,ℓ′pV(k′,ℓ′)k′bk′ℓ′vℓ′+pVnB0∑ℓ′ℓ′vℓ′]⏟New phage clones created by mutation from both spacer-containing and naive bacteria
+Each term is included only if all respective population quantities are $\geq0$; for instance, the first term is only included if $n_{B}^{0}>0$, since if $n_{B}^{0}=0$ then $n_{B}^{0}−1<0$ and the entire term is negative and non-physical. This is important to note especially in terms containing $n_{V}-(B-n)+1$, which are only included if $n_{V}>B−n−1$.
+
+#### Clone size master equation
+
+We can also write master equations for the total number of clones of size $k$. These equations describe the population-level distribution of clone sizes instead of the size of a single typical clone as in Equations 123 and 147.
+
+The master equation for bk, the number of bacteria clones of size $k$, is:
+
+$$
+∂_{t}b_{k}=gC[(k−1)b_{k−1}−kb_{k}]⏟Bacteria growth+(F+r)[(k+1)b_{k+1}−kb_{k}]⏟Removal of spacer-containing bacteria by chemostat outflow or spacer loss+\alpha\sumℓℓv_{ℓ}[(k+1)b_{k+1}p_{V}(k+1,ℓ)−kb_{k}p_{V}(k,ℓ)]⏟Phage predation - reduces clone size by 1 for each successful infection+\alphaηn_{B}^{0}n_{v}^{k∗}(1−p_{V})[b_{k−1}−b_{k}]⏟New bacteria clones from spacer acquisition
+$$
+
+The last term representing spacer acquisition is complicated: $n_{V}^{k⁣*}$ is the total number of phages which contain protospacers that match bacteria clones of size $k-1$, multiplied by the probability of getting that protospacer if infected by that phage. In other words, these are the phages that bacteria clones of size $k-1$ could acquire spacers from to increase to size $k$, multiplied by the probability of acquiring a particular spacer from those phages. In a model where phages are all identical with a large number of protospacers $m$, $n_{V}^{k⁣*}=n_{V}/m$, where $n_{V}$ is the total number of phages and $1/m$ is the probability of acquiring a particular spacer. If instead phages can only have a single protospacer, $n_{V}^{k⁣*}$ is not known in general, but approximations may be found; for instance, if there are $m$ phage types present and all phage clones are the same size, $n_{V}^{k⁣*}$ is again equal to $n_{V}/m$.
+
+The corresponding master equation for $v_{ℓ}$, the number of phage clones of size $ℓ$, is:
+
+$$
+∂_{t}v_{ℓ}=(F+\alpha(n_{B}^{0}+n_{B}^{s}))[(ℓ+1)v_{ℓ+1}−ℓv_{ℓ}]⏟Phage death from chemostat flow and adsorption+\alpha\sumkkb_{k}[\sumn=0BP_{n}(ℓ−(B−n))v_{ℓ−(B−n)}p_{V}(k,ℓ−(B−n))−ℓv_{ℓ}p_{V}(k,ℓ)]⏟Phage burst after infecting spacer-containing bacteria (subtracting mutant phages which become new clones)+\alphan_{B}^{0}p_{V}[\sumn=0BP_{n}(ℓ−(B−n))v_{ℓ−(B−n)}−ℓv_{ℓ}]⏟Phage burst after infecting bacteria without spacers+\delta_{ℓ,1}\alphaB(1−e^{−\muL_{p}})[\sumk^{′},ℓ^{′}p_{V}(k^{′},ℓ^{′})k^{′}b_{k^{′}}ℓ^{′}v_{ℓ^{′}}+p_{V}n_{B}^{0}\sumℓ^{′}ℓ^{′}v_{ℓ^{′}}]⏟New phage clones created by mutation from both spacer-containing and naive bacteria
+$$
 
 The phage master equation assumes that all new mutants are unique and that they are a type not currently present in the population.
 
-Pn is a binomial distribution giving the probability of n mutant phages per burst (Equation 9).
+$P_{n}$ is a binomial distribution giving the probability of $n$ mutant phages per burst (Equation 9).
 
-pV is the probability of phage successfully infecting bacteria, and in general is an unknown function of both k and ℓ. All details of immunity are contained in pV; later we discuss certain choices of pV and their implications for the model and population dynamics. pV with no functional arguments is the probability of phage success against bacteria with no spacers, a constant.
+$p_{V}$ is the probability of phage successfully infecting bacteria, and in general is an unknown function of both $k$ and $ℓ$. All details of immunity are contained in $p_{V}$; later we discuss certain choices of $p_{V}$ and their implications for the model and population dynamics. $p_{V}$ with no functional arguments is the probability of phage success against bacteria with no spacers, a constant.
 
-## Mean-field model results
+### Mean-field model results
 
-## Total population size
+#### Total population size
 
 These mean-field equations for total bacteria, bacteria with spacers, phages, and nutrients are the backbone of our analytic model results. Throughout this work, we assume that clone dynamics take place in a background of total populations at steady state; these equations describe the model that we solve to find these steady-state quantities underlying results in ‘Bacteria and phages dynamically coexist and coevolve’, ‘Phages drive stable emergent sequence diversity’, ‘What determines the fitness and establishment of new mutants?’, ‘Cross-reactivity leads to dynamically unique evolutionary states’, and ‘Dynamics are determined by diversity’.
 
-The total number of bacteria with spacers, nBs, is equal to ∑k⁢bk, and the total number of phages, nV, is ∑ℓvℓ and ∂tnV=∑ℓ∂tvℓ, and summing over k and ℓ in Equations 11 and 12 gives mean-field equations:(13)nBs˙=(gC−F−r)nBs+α(1−pV)ηnB0nV−αnBsnVpVa(14)nV˙=−(F+α(nB0+nBs))nV+αB(pVanBsnV+pVnB0nV)
+The total number of bacteria with spacers, $n_{B}^{s}$, is equal to $\sumk⁢b_{k}$, and the total number of phages, $n_{V}$, is $\sumℓv_{ℓ}$ and $∂_{t}n_{V}=\sumℓ∂_{t}v_{ℓ}$, and summing over $k$ and $ℓ$ in Equations 11 and 12 gives mean-field equations:
 
-We can also write mean-field equations for the total number of bacteria without spacers, nB0, and the total nutrients, C. The total number of bacteria nB is nBs+nB0.(15)nB0˙=(gC−F)nB0−αpVnB0nV−α(1−pV)ηnB0nV+rnBs(16)C˙=F(C0−C)−gCnB(17)nB˙=(gC−F)nB−α(pVanBsnV+pVnB0nV)
+$$
+n_{B}^{s}˙=(gC−F−r)n_{B}^{s}+\alpha(1−p_{V})ηn_{B}^{0}n_{V}−\alphan_{B}^{s}n_{V}p_{V}^{a}
+$$
 
-The probability of phage success against bacteria with spacers, averaged across the whole population, is given by pVa=∑k,ℓk⁢bk⁢ℓ⁢vℓ⁢pV⁢(k,ℓ)nBs⁢nV.
 
-pVa is not known in general, but it can be simplified if certain assumptions are made about the population. In particular, we begin by assuming that immunity is all-or-nothing: if a bacterium has a matching spacer to a phage, the phage success probability is reduced to pV⁢(1-e) (where e is the ‘spacer effectiveness’), but if a bacterium has a spacer that is not exactly matching, that spacer confers no immunity and the phage probability of success is pV, the same as against naive bacteria. This amounts to defining pV in terms of the spacer type i and protospacer type j as follows:(18)pV(i,j)={pV(1−e)if i=jpVif i≠j
 
-If each bacterium and phage can have only one spacer or protospacer, then the number of bacteria or phage with a particular spacer type i is nBi and nVi, respectively, andpVa=pV(1−enBsnV∑inVinBi)
+$$
+n_{V}˙=−(F+\alpha(n_{B}^{0}+n_{B}^{s}))n_{V}+\alphaB(p_{V}^{a}n_{B}^{s}n_{V}+p_{V}n_{B}^{0}n_{V})
+$$
 
-Equations 13–17 can be solved analytically at steady state if we further assume pVa=pV⁢(1-e/m), where m is the average number of bacterial clones at steady state. This assumption is described in detail in ‘Measuring diversity’. The solution is exactly the mean-field analytic solution described in Bonsma-Fisher et al., 2018 with the simple replacement of the parameter e with e/m.
+We can also write mean-field equations for the total number of bacteria without spacers, $n_{B}^{0}$, and the total nutrients, $C$. The total number of bacteria $n_{B}$ is $n_{B}^{s}+n_{B}^{0}$.
 
-## Phage extinction threshold
+$$
+n_{B}^{0}˙=(gC−F)n_{B}^{0}−\alphap_{V}n_{B}^{0}n_{V}−\alpha(1−p_{V})ηn_{B}^{0}n_{V}+rn_{B}^{s}
+$$
+
+
+
+$$
+C˙=F(C_{0}−C)−gCn_{B}
+$$
+
+
+
+$$
+n_{B}˙=(gC−F)n_{B}−\alpha(p_{V}^{a}n_{B}^{s}n_{V}+p_{V}n_{B}^{0}n_{V})
+$$
+
+The probability of phage success against bacteria with spacers, averaged across the whole population, is given by $p_{V}^{a}=\frac{\sum_{k,ℓ}k⁢b_{k}⁢ℓ⁢v_{ℓ}⁢p_{V}⁢(k,ℓ)}{n_{B}^{s}⁢n_{V}}$.
+
+$p_{V}^{a}$ is not known in general, but it can be simplified if certain assumptions are made about the population. In particular, we begin by assuming that immunity is all-or-nothing: if a bacterium has a matching spacer to a phage, the phage success probability is reduced to $p_{V}⁢(1-e)$ (where $e$ is the ‘spacer effectiveness’), but if a bacterium has a spacer that is not exactly matching, that spacer confers no immunity and the phage probability of success is $p_{V}$, the same as against naive bacteria. This amounts to defining $p_{V}$ in terms of the spacer type $i$ and protospacer type $j$ as follows:
+
+$$
+p_{V}(i,j)={p_{V}(1−e)if i=jp_{V}if i\neqj
+$$
+
+If each bacterium and phage can have only one spacer or protospacer, then the number of bacteria or phage with a particular spacer type $i$ is $n_{B}^{i}$ and $n_{V}^{i}$, respectively, and
+
+$$
+p_{V}^{a}=p_{V}(1−\frac{e}{n_{B}^{s}n_{V}}\sumin_{V}^{i}n_{B}^{i})
+$$
+
+Equations 13–17 can be solved analytically at steady state if we further assume $p_{V}^{a}=p_{V}⁢(1-e/m)$, where $m$ is the average number of bacterial clones at steady state. This assumption is described in detail in ‘Measuring diversity’. The solution is exactly the mean-field analytic solution described in Bonsma-Fisher et al., 2018 with the simple replacement of the parameter $e$ with $e/m$.
+
+#### Phage extinction threshold
 
 This section relates to Figure 1E in ‘Bacteria and phages dynamically coexist and coevolve’.
 
-We reported in our previous work (Bonsma-Fisher et al., 2018) that Equations 13–15–17 experience a change in fixed point at a critical threshold of the phage infection success probability pV: below pV0=1B⁢(g⁢f(1-f)⁢α+1), phages are driven extinct (Figure 1E). This is the same extinction threshold reported by Payne et al., 2018 as the cutoff for achieving herd immunity in a well-mixed bacterial population. To a first approximation, phages must successfully infect every 1/B bacteria they encounter, but if bacteria are growing quickly, then phage must do better to overcome bacterial growth. The correction gives 1B(1+bacterial birth ratephage birth rate) =1B(1+phage generation timebacterial generation time) as reported in Payne et al., 2018. To see this, we note that the bacterial birth rate in our model is g⁢C≈g⁢C0⁢f when phage population sizes are small, and the phage birth rate in our model is α⁢B⁢pv⁢nB≈α⁢nB since B⁢pV≈1. When phage population sizes are small, the total number of bacteria is nB≈C0⁢(1-f). Combining these expressions, we find bacterial birth ratephage birth rate≈f⁢g⁢C0α⁢(1-f)⁢C0=f⁢gα⁢(1-f) as in our original expression.
+We reported in our previous work (Bonsma-Fisher et al., 2018) that Equations 13–15–17 experience a change in fixed point at a critical threshold of the phage infection success probability $p_{V}$: below $p_{V}^{0}=\frac{1}{B}⁢(\frac{g⁢f}{(1-f)⁢\alpha}+1)$, phages are driven extinct (Figure 1E). This is the same extinction threshold reported by Payne et al., 2018 as the cutoff for achieving herd immunity in a well-mixed bacterial population. To a first approximation, phages must successfully infect every $1/B$ bacteria they encounter, but if bacteria are growing quickly, then phage must do better to overcome bacterial growth. The correction gives $\frac{1}{B}(1+\frac{bacterial birth rate}{phage birth rate})$ $=\frac{1}{B}(1+\frac{phage generation time}{bacterial generation time})$ as reported in Payne et al., 2018. To see this, we note that the bacterial birth rate in our model is $g⁢C≈g⁢C_{0}⁢f$ when phage population sizes are small, and the phage birth rate in our model is $\alpha⁢B⁢p_{v}⁢n_{B}≈\alpha⁢n_{B}$ since $B⁢p_{V}≈1$. When phage population sizes are small, the total number of bacteria is $n_{B}≈C_{0}⁢(1-f)$. Combining these expressions, we find $\frac{bacterial birth rate}{phage birth rate}≈\frac{f⁢g⁢C_{0}}{\alpha⁢(1-f)⁢C_{0}}=\frac{f⁢g}{\alpha⁢(1-f)}$ as in our original expression.
 
-## Steady state
+#### Steady state
 
-Simulation results are calculated and presented at steady state unless otherwise specified. We define steady state to be the simulation run-time divided by 5, choosing simulation run-times so that mean-field quantities have equilibrated by the steady-state time. We run large population simulations longer than small population simulations: these simulations have less frequent interactions on average because of decreased α and take longer to equilibrate (Figure 8).
+Simulation results are calculated and presented at steady state unless otherwise specified. We define steady state to be the simulation run-time divided by 5, choosing simulation run-times so that mean-field quantities have equilibrated by the steady-state time. We run large population simulations longer than small population simulations: these simulations have less frequent interactions on average because of decreased $\alpha$ and take longer to equilibrate (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig8-v2.jpg)
 
-**Figure 8.:** , μ=10-6, e=0.5, and η=0.001C0 ranging from 300 (top row) to 30,000 (bottom row).Total population sizes equilibrate very quickly, but the total number of clones can take longer at large population sizes (high C0). The time constants inset are a measure of how quickly we expect each mean-field quantity to equilibrate:  time constant is the inverse growth rate of the total phage population (nV) and the extinction time constant is the mean time to extinction for large phage clones (1/(-F-α⁢nB⁢(B⁢pV-1)-α⁢B⁢pV⁢nBs⁢e/m)Equation 171), a measure of the rate of turnover of the number of clones.
+**Figure 8.:** Total phage, total bacteria (left), and mean number of bacterial clones (right) vs. simulation time for five simulations with $\mu=10^{-6}$, $e=0.5$, $η=0.001$, and C0 ranging from 300 (top row) to 30,000 (bottom row).Total population sizes equilibrate very quickly, but the total number of clones can take longer at large population sizes (high C0). The time constants inset are a measure of how quickly we expect each mean-field quantity to equilibrate: $n_{V}$ time constant is the inverse growth rate of the total phage population ($1/(-F-\alpha⁢n_{B}⁢(B⁢p_{V}-1)-\alpha⁢B⁢p_{V}⁢n_{B}^{s}⁢e/m)$) and the extinction time constant is the mean time to extinction for large phage clones (Equation 171), a measure of the rate of turnover of the number of clones.
 
-We set the total bacterial generations to be 10000⁢(log⁢C0-3), rounded to the nearest thousand, with a minimum of 10,000 generations (see Table 2). The following table lists simulation length and assumed steady-state time ts⁢s for different values of C0.
+We set the total bacterial generations to be $10000⁢(log⁢C_{0}-3)$, rounded to the nearest thousand, with a minimum of 10,000 generations (see Table 2). The following table lists simulation length and assumed steady-state time $t_{s⁢s}$ for different values of C0.
 
-Figure 9 shows the mean number of bacterial clones (m) at steady state as a function of the initial number of phage clones. For most parameters, the steady-state m is independent of the initial m. There is a slight dependence on initial m at high C0.
+**Table 2.**
+ Simulation length.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>C0</th>
+      <th>Simulation length (bacterial generations)</th>
+      <th>Steady-state start time (tss)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>300</td>
+      <td>10,000</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>10,000</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>3000</td>
+      <td>10,000</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>10,000</td>
+      <td>10,000</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>30,000</td>
+      <td>15,000</td>
+      <td>3000</td>
+    </tr>
+    <tr>
+      <td>100,000</td>
+      <td>20,000</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>300,000</td>
+      <td>25,000</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <td>1,000,000</td>
+      <td>30,000</td>
+      <td>6000</td>
+    </tr>
+  </tbody>
+</table>
+
+Figure 9 shows the mean number of bacterial clones ($m$) at steady state as a function of the initial number of phage clones. For most parameters, the steady-state $m$ is independent of the initial m. There is a slight dependence on initial $m$ at high C0.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig9-v2.jpg)
 
-**Figure 9.:** bacterial generations vs. initial number of phage clones for t=ts⁢s, e=0.8.η=10-3The mean is an average of 15 evenly spaced points from  to t=ts⁢s bacterial generations. Error bars are the standard deviation across three or more independent simulations.t=5⁢ts⁢s
+**Figure 9.:** Mean number of bacterial clones after $t=t_{s⁢s}$ bacterial generations vs. initial number of phage clones for $e=0.8$, $η=10^{-3}$.The mean is an average of 15 evenly spaced points from $t=t_{s⁢s}$ to $t=5⁢t_{s⁢s}$ bacterial generations. Error bars are the standard deviation across three or more independent simulations.
 
-## Single-clone mean-field dynamics
+#### Single-clone mean-field dynamics
 
 This section presents mean-field equations for the population size of single bacteria and phage clones. The steady-state bacteria and phage clone sizes (Equations 25 and 26) are, like the mean-field results in ‘Total population size’, used extensively in further analytic results. In particular, predicted mean clone sizes are used as a cutoff to measure the time to extinction for large clones (Appendix 3) and to calculate diversity in ‘Analytic approximations for diversity’ (main text ‘Phages drive stable emergent sequence diversity’). These expressions are also used to calculate the fitness of new phage mutants in Appendix 3.
 
-We can write mean-field equations for individual clones nBi and nVj as well:(19)nVj˙=−(F+α(nB0+nBs))nVj+αBP0pVnB0nVj+αBP0∑ipV(i,j)nBinVj+αB∑j∑k≠ipV(j,k)μΔiknBjnVk(20)nBi˙=(gC−F−r)nBi−α∑jpV(i,j)nBinVj+αηnB0nVi(1−pV)
+We can write mean-field equations for individual clones $n_{B}^{i}$ and $n_{V}^{j}$ as well:
 
-If pV⁢(i,j) is binary and all spacers are equally effective (Equation 18), nVj˙ and nBi˙ can be simplified:(21)nVj˙=−(F+αnB)nVj+αBP0pVnVj(nB−enBj)+αB∑j∑k≠ipV(j,k)μΔiknBjnVk(22)nBi˙=(gC−F−r)nBi−αpVnBi(nV−enVi)+αηnB0nVi(1−pV)
+$$
+n_{V}^{j}˙=−(F+\alpha(n_{B}^{0}+n_{B}^{s}))n_{V}^{j}+\alphaBP_{0}p_{V}n_{B}^{0}n_{V}^{j}+\alphaBP_{0}\sumip_{V}(i,j)n_{B}^{i}n_{V}^{j}+\alphaB\sumj\sumk\neqip_{V}(j,k)\mu^{Δ_{ik}}n_{B}^{j}n_{V}^{k}
+$$
 
-In Equations 19 and 21, mutations that arise from phage i decrease nVi, which is captured in that B becomes BP0=Be−μL for type i is effectively lower, since mutations go to different phage types.
 
-The last term in Equations 19 and 21 is for mutations that happen in all other phages besides type i that convert type k to type i. Any particular phage k has a certain mutational distance from phage i, Δi⁢k, which means Δi⁢k-specific mutations must happen to get from type k to type i. This happens with probability μΔi⁢k. Going forward we assume that this term is small, which is true if the overall mutation rate α⁢B⁢pVa⁢μ⁢nV⁢nB is sufficiently low and/or the space of protospacer types is sufficiently large so that mutations are almost always to new types not present in the population.
 
-We solve the coupled time-dependent system given by Equations 21 and 22 numerically, assuming all other populations (nB, nB0, nV, and C) are at their deterministic steady-state value and ignoring the last term of Equation 21. These solutions are plotted alongside mean clone sizes from a simulation in Figure 10 (‘Numerical deterministic prediction’). The deterministic solution matches the mean clone size well at early times but does not capture the effects of clone extinction at later times. By including only surviving clones in the simulation mean and normalizing the deterministic solution by the predicted fraction of surviving clones (‘Numerical deterministic prediction normalized to survival probability’), the theoretical prediction matches well at early times and can be piecewise-combined with the steady-state mean clone size to give good agreement at all times (see ‘Predicted clone size’ dashed lines in Figure 3—figure supplement 1). We estimate the predicted fraction of surviving phage clones by numerically solving Equation 153 which gives the phage clone probability of extinction in the absence of matching bacterial clones. The fraction of surviving clones is 1-P0⁢(t) where P0⁢(t) is the probability of extinction. Normalizing by 1-P0⁢(t) does not give good agreement at long times because P0⁢(t) goes to 1 as t goes to infinity, causing the solution to diverge at long times. While individual trajectories do eventually go extinct, the mean clone size conditioned on survival reaches the deterministic steady state at long times.
+$$
+n_{B}^{i}˙=(gC−F−r)n_{B}^{i}−\alpha\sumjp_{V}(i,j)n_{B}^{i}n_{V}^{j}+\alphaηn_{B}^{0}n_{V}^{i}(1−p_{V})
+$$
+
+If $p_{V}⁢(i,j)$ is binary and all spacers are equally effective (Equation 18), $n_{V}^{j}˙$ and $n_{B}^{i}˙$ can be simplified:
+
+$$
+n_{V}^{j}˙=−(F+\alphan_{B})n_{V}^{j}+\alphaBP_{0}p_{V}n_{V}^{j}(n_{B}−en_{B}^{j})+\alphaB\sumj\sumk\neqip_{V}(j,k)\mu^{Δ_{ik}}n_{B}^{j}n_{V}^{k}
+$$
+
+
+
+$$
+n_{B}^{i}˙=(gC−F−r)n_{B}^{i}−\alphap_{V}n_{B}^{i}(n_{V}−en_{V}^{i})+\alphaηn_{B}^{0}n_{V}^{i}(1−p_{V})
+$$
+
+In Equations 19 and 21, mutations that arise from phage $i$ decrease $n_{V}^{i}$, which is captured in that $B$ becomes $BP_{0}=Be^{−\muL}$ for type $i$ is effectively lower, since mutations go to different phage types.
+
+The last term in Equations 19 and 21 is for mutations that happen in all other phages besides type $i$ that convert type $k$ to type $i$. Any particular phage $k$ has a certain mutational distance from phage $i$, $Δ_{i⁢k}$, which means $Δ_{i⁢k}$-specific mutations must happen to get from type $k$ to type $i$. This happens with probability $\mu^{Δ_{i⁢k}}$. Going forward we assume that this term is small, which is true if the overall mutation rate $\alpha⁢B⁢p_{V}^{a}⁢\mu⁢n_{V}⁢n_{B}$ is sufficiently low and/or the space of protospacer types is sufficiently large so that mutations are almost always to new types not present in the population.
+
+We solve the coupled time-dependent system given by Equations 21 and 22 numerically, assuming all other populations ($n_{B}$, $n_{B}^{0}$, $n_{V}$, and $C$) are at their deterministic steady-state value and ignoring the last term of Equation 21. These solutions are plotted alongside mean clone sizes from a simulation in Figure 10 (‘Numerical deterministic prediction’). The deterministic solution matches the mean clone size well at early times but does not capture the effects of clone extinction at later times. By including only surviving clones in the simulation mean and normalizing the deterministic solution by the predicted fraction of surviving clones (‘Numerical deterministic prediction normalized to survival probability’), the theoretical prediction matches well at early times and can be piecewise-combined with the steady-state mean clone size to give good agreement at all times (see ‘Predicted clone size’ dashed lines in Figure 3—figure supplement 1). We estimate the predicted fraction of surviving phage clones by numerically solving Equation 153 which gives the phage clone probability of extinction in the absence of matching bacterial clones. The fraction of surviving clones is $1-P_{0}⁢(t)$ where $P_{0}⁢(t)$ is the probability of extinction. Normalizing by $1-P_{0}⁢(t)$ does not give good agreement at long times because $P_{0}⁢(t)$ goes to 1 as $t$ goes to infinity, causing the solution to diverge at long times. While individual trajectories do eventually go extinct, the mean clone size conditioned on survival reaches the deterministic steady state at long times.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig10-v2.jpg)
 
-**Figure 10.:** A) and bacteria (B) mean clone size in a simulation, either conditioned on survival (blue circles) or including extinct clones (orange circles).Theoretical predictions are plotted as solid lines: the time-dependent numerical solution to Equations 21 and 22 in green, the same solution divided by the phage clone probability of survival in red, and a one-dimensional solution to Equation 21 in (A) and 22 in (B). Equations 25 and 26 are black dashed lines. An alternate simulation mean clone size is plotted for bacteria (brown circles) in which each clone trajectory is stacked based on the bacterial acquisition time and averaged across trajectories, conditioned on survival. Simulation parameters are , C0=10000.0, μ=10-5, and η=0.001.e=0.95
+**Figure 10.:** Theoretical predictions are plotted as solid lines: the time-dependent numerical solution to Equations 21 and 22 in green, the same solution divided by the phage clone probability of survival in red, and a one-dimensional solution to Equation 21 in (A) and 22 in (B). Equations 25 and 26 are black dashed lines. An alternate simulation mean clone size is plotted for bacteria (brown circles) in which each clone trajectory is stacked based on the bacterial acquisition time and averaged across trajectories, conditioned on survival. Simulation parameters are $C_{0}=10000.0$, $\mu=10^{-5}$, $η=0.001$, and $e=0.95$.
 
 We consider bacteria clones in the background of phage clones; that is, time 0 for a bacterial clone starts when the matching phage clone arises by mutation. This is the case in the numerical solution for the coupled bacteria-phage clone system given by Equations 21 and 22. For this reason, normalizing the bacterial clone size prediction by the phage clone probability of extinction also gives good agreement to the simulation mean conditioned on bacterial clone survival. (If a bacterial clone size is 0 but its corresponding phage clone has not yet gone extinct, that 0 will count in the mean clone size, but after the phage goes extinct, a 0 in the bacterial clone size will not be included.)
 
-We can also solve Equations 21 and 22 analytically by assuming nBi and nVi are constant, respectively; this amounts to removing the dependence of phage clone dynamics on bacteria clone dynamics and vice versa.
+We can also solve Equations 21 and 22 analytically by assuming $n_{B}^{i}$ and $n_{V}^{i}$ are constant, respectively; this amounts to removing the dependence of phage clone dynamics on bacteria clone dynamics and vice versa.
 
-If we assume nBi=0, we get the following solution for nVi⁢(t):(23)nVi(t)=nVi(0)es0t
+If we assume $n_{B}^{i}=0$, we get the following solution for $n_{V}^{i}⁢(t)$:
 
-where s0=α⁢B⁢pV⁢nB⁢e-μ⁢L-F-α⁢nB is the average growth rate of phage clones and t is in minutes. This is the same growth rate as is in Equation 156 with a small correction: B→B⁢e-μ⁢L; the burst of an individual phage clone is reduced by phages that mutate to a new type.
+$$
+n_{V}^{i}(t)=n_{V}^{i}(0)e^{s_{0}t}
+$$
 
-Likewise if we assume that nVi is constant, we get the following solution for nBi⁢(t):(24)nBi(t)=nBi(0)esBt+δsB(esBt−1)
+where $s_{0}=\alpha⁢B⁢p_{V}⁢n_{B}⁢e^{-\mu⁢L}-F-\alpha⁢n_{B}$ is the average growth rate of phage clones and $t$ is in minutes. This is the same growth rate as is in Equation 156 with a small correction: $B→B⁢e^{-\mu⁢L}$; the burst of an individual phage clone is reduced by phages that mutate to a new type.
 
-where sB=g⁢C-F-r-α⁢pV⁢(nV-nVi) is the average growth rate for bacterial clone i and δ=α⁢η⁢nB0⁢nVi⁢(1-pV) is the rate of spacer acquisition for that clone.
+Likewise if we assume that $n_{V}^{i}$ is constant, we get the following solution for $n_{B}^{i}⁢(t)$:
+
+$$
+n_{B}^{i}(t)=n_{B}^{i}(0)e^{s_{B}t}+\frac{\delta}{s_{B}}(e^{s_{B}t}−1)
+$$
+
+where $s_{B}=g⁢C-F-r-\alpha⁢p_{V}⁢(n_{V}-n_{V}^{i})$ is the average growth rate for bacterial clone $i$ and $\delta=\alpha⁢η⁢n_{B}^{0}⁢n_{V}^{i}⁢(1-p_{V})$ is the rate of spacer acquisition for that clone.
 
 Equations 23 and 24 are plotted in Figure 10 (‘Analytic 1D prediction’). Equation 23 matches the phage clone size not conditioned on survival at early times, but continues to grow past the steady-state phage clone size without growing bacterial clones to reign it in. Equation 24 is not comparable to the simulation mean with time zero as the time of phage clone birth; rather it should be compared to bacterial clone growth independent of what the phages are doing. Using the steady-state mean phage clone size in Equation 24 (purple line), we obtain a rough correspondence with the simulation mean (brown circles). The prediction does not match at intermediate times, likely because this solution assumes that phage clones are at their mean size when in fact they are likely still smaller.
 
-Equations 21 and 22 can be solved at steady state in terms of the total mean-field variables (ignoring the last term of Equation 21). These solutions (Equations 25 and 26) are indicated by horizontal dashed lines in Figure 10.(25)nBi∗=1e(nB−F+αnBαBP0pV)(26)nVi∗=nBi∗(αpVnV−(gC−F−r))αηnB0(1−pV)+αpVenBi∗
+Equations 21 and 22 can be solved at steady state in terms of the total mean-field variables (ignoring the last term of Equation 21). These solutions (Equations 25 and 26) are indicated by horizontal dashed lines in Figure 10.
 
-## Simulation methods
+$$
+n_{B}^{i}^{∗}=\frac{1}{e}(n_{B}−\frac{F+\alphan_{B}}{\alphaBP_{0}p_{V}})
+$$
+
+
+
+$$
+n_{V}^{i}^{∗}=\frac{n_{B}^{i}^{∗}(\alphap_{V}n_{V}−(gC−F−r))}{\alphaηn_{B}^{0}(1−p_{V})+\alphap_{V}en_{B}^{i}^{∗}}
+$$
+
+### Simulation methods
 
 This section describes how simulations were performed, shows basic simulation results, describes parameter choices (‘Parameter values’), and explores the parameter dependence of stochastic population extinction (‘Stochastic population extinction’) that relates to results in ‘Bacteria and phages dynamically coexist and coevolve’.
 
@@ -302,67 +691,160 @@ Simulations were written in Python and performed on the Béluga and Niagara supe
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig11-v2.jpg)
 
-**Figure 11.:** ) and total bacteria (nV) as a function of time for a Gillespie simulation and a tau-leaping simulation with the same parameters.nBTotal phage is shown at early times (A) and late times (B), and total bacteria at early times (C) and late times (D). The simulation parameters are , C0=104, μ=10-6, and η=0.001. Early time dynamics differ slightly in this example, but the long-time behaviour and steady-state values are similar.e=0.95
+**Figure 11.:** Total phage ($n_{V}$) and total bacteria ($n_{B}$) as a function of time for a Gillespie simulation and a tau-leaping simulation with the same parameters.Total phage is shown at early times (A) and late times (B), and total bacteria at early times (C) and late times (D). The simulation parameters are $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=0.001$, and $e=0.95$. Early time dynamics differ slightly in this example, but the long-time behaviour and steady-state values are similar.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig12-v2.jpg)
 
-**Figure 12.:** ) vs. simulation time for three sets of simulations, each beginning with 1, 10, or 50 phage clones.mGillespie simulations are dashed blue lines, and tau-leaping simulations are solid orange and red lines. The simulation parameters are , C0=104, μ=10-6, and η=0.001.e=0.95
+**Figure 12.:** Number of bacterial clones ($m$) vs. simulation time for three sets of simulations, each beginning with 1, 10, or 50 phage clones.Gillespie simulations are dashed blue lines, and tau-leaping simulations are solid orange and red lines. The simulation parameters are $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=0.001$, and $e=0.95$.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig13-v2.jpg)
 
-**Figure 13.:** The simulation parameters are , C0=104, μ=10-6, and η=0.001.e=0.95
+**Figure 13.:** The simulation parameters are $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=0.001$, and $e=0.95$.
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig14-v2.jpg)
 
-**Figure 14.:** A) and tau-leaping simulation (B).The first 10 trajectories that surpass  are shown. The simulation parameters are nVi=1000, C0=104, μ=10-6, and η=0.001.e=0.95
+**Figure 14.:** The first 10 trajectories that surpass $n_{V}^{i}=1000$ are shown. The simulation parameters are $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=0.001$, and $e=0.95$.
 
-We initialized five simulations for each parameter combination for a total of approximately 19,800 simulations, not including simulations with cross-reactivity. A small subset of simulation parameters were run six times instead of five. Not all simulations were successfully completed either due to errors while running or because their running time was exceedingly long. Of the initialized simulations, approximately 10,000 were completed and included in analysis. Simulations with very low μ tended to either have no phage establishments (at low C0) or very long running times (at high C0), and simulations with very high μ tended to have higher diversity and longer running times in general. Unless otherwise noted, plots with simulation averages are an average across three to six simulations with the same parameters. We set simulations to run for a fixed number of bacterial generations intended to be long enough to allow the system to reach steady state and remain there for a long time to generate statistics (‘Steady state’).
+We initialized five simulations for each parameter combination for a total of approximately 19,800 simulations, not including simulations with cross-reactivity. A small subset of simulation parameters were run six times instead of five. Not all simulations were successfully completed either due to errors while running or because their running time was exceedingly long. Of the initialized simulations, approximately 10,000 were completed and included in analysis. Simulations with very low $\mu$ tended to either have no phage establishments (at low C0) or very long running times (at high C0), and simulations with very high $\mu$ tended to have higher diversity and longer running times in general. Unless otherwise noted, plots with simulation averages are an average across three to six simulations with the same parameters. We set simulations to run for a fixed number of bacterial generations intended to be long enough to allow the system to reach steady state and remain there for a long time to generate statistics (‘Steady state’).
 
-We model spacers and protospacers as a binary sequence of length L as in Han et al., 2013; Han and Deem, 2017. When a phage reproduces and creates a burst of B phages, we draw B⁢L numbers from a binomial distribution with probability μ. Successes in this draw designate bits that will mutate (flip) in the newly created phages. It is possible but very rare for more than one mutation to happen in the same new phage: this occurs with probability 1-e-μ⁢L-μ⁢L⁢e-μ⁢L≈(μ⁢L)2 whereas a single mutation occurs with probability μ⁢L⁢e-μ⁢L≈μ⁢L. Multiple mutations occur approximately μ⁢L times as often as single mutations; for the largest value of μ we use, they represent 0.3% of events.
+We model spacers and protospacers as a binary sequence of length $L$ as in Han et al., 2013; Han and Deem, 2017. When a phage reproduces and creates a burst of $B$ phages, we draw $B⁢L$ numbers from a binomial distribution with probability $\mu$. Successes in this draw designate bits that will mutate (flip) in the newly created phages. It is possible but very rare for more than one mutation to happen in the same new phage: this occurs with probability $1-e^{-\mu⁢L}-\mu⁢L⁢e^{-\mu⁢L}≈(\mu⁢L)^{2}$ whereas a single mutation occurs with probability $\mu⁢L⁢e^{-\mu⁢L}≈\mu⁢L$. Multiple mutations occur approximately $\mu⁢L$ times as often as single mutations; for the largest value of $\mu$ we use, they represent 0.3% of events.
 
 Our simulation code can be found on GitHub.
 
-## Parameter values
+#### Parameter values
 
 Parameter values are as above unless otherwise indicated. Representative values estimated for S. thermophilus bacteria in lab conditions.
 
-Parameter descriptions and values are listed in Table 3. The burst size for phage that target S. thermophilus has been measured at between 140 and 200 (Lucchini, 1999) and 80 for phage 2972 (Levin et al., 2013). We use a burst size of 170. (Vaningelgem et al., 2004) measured the maximum growth rate of S. thermophilus in milk at 42°C to be 2.4×10-2⁢ min-1. This corresponds to g⁢C0 in our model; we choose g based on C0 so that g⁢C0=2.4×10-2⁢ min-1.
+Parameter descriptions and values are listed in Table 3. The burst size for phage that target S. thermophilus has been measured at between 140 and 200 (Lucchini, 1999) and 80 for phage 2972 (Levin et al., 2013). We use a burst size of 170. (Vaningelgem et al., 2004) measured the maximum growth rate of S. thermophilus in milk at 42°C to be $2.4\times10^{-2}⁢ min^{-1}$. This corresponds to $g⁢C_{0}$ in our model; we choose $g$ based on C0 so that $g⁢C_{0}=2.4\times10^{-2}⁢ min^{-1}$.
 
-The parameter α in our model is the phage adsorption rate constant divided by the culture volume. The rate of adsorption for phage is of the order of 10-8⁢ min-1 ml Delbrück, 1940; this is similar to the values used in Levin et al., 2013 and Weissman et al., 2018. In order to explore regimes of different total population sizes, we decrease α as we increase C0 in order to maintain stable coexistence between bacteria and phage; this is equivalent to decreasing the culture volume as C0 decreases. For example, if C0=105, we set α=2×10-2/C0=2×10-7, implying a culture volume of approximately 50⁢μ⁢l.
+**Table 3.**
+ Model parameters.
 
-Levin et al., 2013 estimated the frequency of phage mutants that escape CRISPR targeting by S. thermophilus to be between 5×10-7 to 5×10-5. These measurements are the fractions of phages from lysate that can evade CRISPR targeting of different unique spacers. This is analogous to μ⁢L in our model, which is the probability of a mutation occurring in a newly burst phage. We use values of μ between 10-8 and 10-4 corresponding to μ⁢L between 3×10-7 and 3×10-3 to encompass the physiological range of phage mutation rates as well as unusually high mutation rates.
 
-We generally fix the probability of successful phage infection against naive bacteria at pV=0.02 (though pV is varied in Figure 1E and in Bonsma-Fisher et al., 2018). This is consistent with the value of 10-2 used in Doekes et al., 2021 and Berngruber et al., 2013. Several other models of CRISPR immunity have assumed phage success probability to be much higher, typically close to 1 (Childs et al., 2014; Childs et al., 2012; Weissman et al., 2018). Increasing pV does not qualitatively alter our results beyond changing the relative population sizes of phage and bacteria; at high values of pV bacteria population sizes are small and they become more likely to experience stochastic extinction (see Figure 1E). A low value of pV can be taken to reflect the presence or effectiveness of other anti-phage defence systems.
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1g⁢C0</td>
+      <td>Bacterial doubling time</td>
+      <td>41.7 min</td>
+    </tr>
+    <tr>
+      <td>C0</td>
+      <td>Inflow nutrient concentration in</td>
+      <td>102 to 10-6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Units of bacterial cell density</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>Phage adsorption rate</td>
+      <td>2×10-2/C0</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Phage burst size</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Chemostat flow rate</td>
+      <td>0.3⁢g⁢C0</td>
+    </tr>
+    <tr>
+      <td>pV</td>
+      <td>Probability of phage success</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>for bacteria without spacers</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>Spacer effectiveness</td>
+      <td>0.1 to 0.95</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>Rate of spacer loss</td>
+      <td>0.04⁢g⁢C0</td>
+    </tr>
+    <tr>
+      <td>η</td>
+      <td>Probability of spacer acquisition</td>
+      <td>10-5 to 10-2</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>Phage mutation rate per base per generation</td>
+      <td>10-8 to 10-4</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Phage protospacer length in nucleotides</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
 
-The rate of spacer loss in our model, r, can be thought of as a phenomenological parameter since the true rate of spacer loss is not well understood (Weissman et al., 2018). For comparison, Jiang et al. estimate the rate of loss of function of the entire CRISPR system in S. epidermis at 10-4 to 10-3 per individual per generation (Jiang et al., 2013). We rescale the parameter r as a function of bacterial growth rate, which means that the rescaled parameter R=r/(g⁢C0)=0.04 is constant per bacterial generation. Our loss rate is an order of magnitude higher than the rate in Jiang et al., 2013.
+_Parameter values are as above unless otherwise indicated. Representative values estimated for Streptococcus thermophilus bacteria in lab conditions._
 
-We vary the parameters η and e to explore different 'strengths' of CRISPR immunity. The parameter e is spacer effectiveness: when e=0, spacers provide no immunity and bacteria with spacers are functionally no different from bacteria without spacers. When e=1, a spacer-containing bacterium that encounters a phage with a matching protospacer is guaranteed to survive. We vary e between 0.1 and 0.5 to explore different regimes of CRISPR effectiveness. The parameter η is the probability that a naive bacterium will acquire a spacer if it is infected but not killed by a phage. Rates of naive spacer acquisition vary widely, and we vary η between 10-5 and 10-2, with the value of η constant within a simulation. For comparison with measured acquisition rates, Pyenson et al. measured naive acquisition in Staphylococcus aureus to be approximately 10-6 to 10-7 (Pyenson and Marraffini, 2020). Acquisition rates may hundreds of times higher in primed acquisition (Staals et al., 2016), and Heler et al. measured four orders of magnitude difference in spacer abundances shortly after infection, likely a result of differences in acquisition rate (Heler et al., 2019).
+The parameter $\alpha$ in our model is the phage adsorption rate constant divided by the culture volume. The rate of adsorption for phage is of the order of $10^{-8}⁢ min^{-1}$ ml Delbrück, 1940; this is similar to the values used in Levin et al., 2013 and Weissman et al., 2018. In order to explore regimes of different total population sizes, we decrease $\alpha$ as we increase C0 in order to maintain stable coexistence between bacteria and phage; this is equivalent to decreasing the culture volume as C0 decreases. For example, if $C_{0}=10^{5}$, we set $\alpha=2\times10^{-2}/C_{0}=2\times10^{-7}$, implying a culture volume of approximately $50⁢\mu⁢l$.
 
-The flow rate F was picked in order to get a stable fixed point where phage and bacteria coexist. Stability conditions approximately correspond to those derived in our previous work (Bonsma-Fisher et al., 2018).
+Levin et al., 2013 estimated the frequency of phage mutants that escape CRISPR targeting by S. thermophilus to be between $5\times10^{-7}$ to $5\times10^{-5}$. These measurements are the fractions of phages from lysate that can evade CRISPR targeting of different unique spacers. This is analogous to $\mu⁢L$ in our model, which is the probability of a mutation occurring in a newly burst phage. We use values of $\mu$ between 10-8 and 10-4 corresponding to $\mu⁢L$ between $3\times10^{-7}$ and $3\times10^{-3}$ to encompass the physiological range of phage mutation rates as well as unusually high mutation rates.
 
-## Stochastic population extinction
+We generally fix the probability of successful phage infection against naive bacteria at $p_{V}=0.02$ (though $p_{V}$ is varied in Figure 1E and in Bonsma-Fisher et al., 2018). This is consistent with the value of 10-2 used in Doekes et al., 2021 and Berngruber et al., 2013. Several other models of CRISPR immunity have assumed phage success probability to be much higher, typically close to 1 (Childs et al., 2014; Childs et al., 2012; Weissman et al., 2018). Increasing $p_{V}$ does not qualitatively alter our results beyond changing the relative population sizes of phage and bacteria; at high values of $p_{V}$ bacteria population sizes are small and they become more likely to experience stochastic extinction (see Figure 1E). A low value of $p_{V}$ can be taken to reflect the presence or effectiveness of other anti-phage defence systems.
+
+The rate of spacer loss in our model, $r$, can be thought of as a phenomenological parameter since the true rate of spacer loss is not well understood (Weissman et al., 2018). For comparison, Jiang et al. estimate the rate of loss of function of the entire CRISPR system in S. epidermis at 10-4 to 10-3 per individual per generation (Jiang et al., 2013). We rescale the parameter $r$ as a function of bacterial growth rate, which means that the rescaled parameter $R=r/(g⁢C_{0})=0.04$ is constant per bacterial generation. Our loss rate is an order of magnitude higher than the rate in Jiang et al., 2013.
+
+We vary the parameters $η$ and $e$ to explore different 'strengths' of CRISPR immunity. The parameter $e$ is spacer effectiveness: when $e=0$, spacers provide no immunity and bacteria with spacers are functionally no different from bacteria without spacers. When $e=1$, a spacer-containing bacterium that encounters a phage with a matching protospacer is guaranteed to survive. We vary $e$ between 0.1 and 0.5 to explore different regimes of CRISPR effectiveness. The parameter $η$ is the probability that a naive bacterium will acquire a spacer if it is infected but not killed by a phage. Rates of naive spacer acquisition vary widely, and we vary $η$ between 10-5 and 10-2, with the value of $η$ constant within a simulation. For comparison with measured acquisition rates, Pyenson et al. measured naive acquisition in Staphylococcus aureus to be approximately 10-6 to 10-7 (Pyenson and Marraffini, 2020). Acquisition rates may hundreds of times higher in primed acquisition (Staals et al., 2016), and Heler et al. measured four orders of magnitude difference in spacer abundances shortly after infection, likely a result of differences in acquisition rate (Heler et al., 2019).
+
+The flow rate $F$ was picked in order to get a stable fixed point where phage and bacteria coexist. Stability conditions approximately correspond to those derived in our previous work (Bonsma-Fisher et al., 2018).
+
+#### Stochastic population extinction
 
 This section relates to results in 'Bacteria and phages dynamically coexist and coevolve'.
 
-Even when bacteria and phage are within the deterministic coexistence regime, populations may experience stochastic extinction (main text Figure 1F). Simulations are run for a fixed number of generations (see 'Steady state') or until bacteria or phage go extinct. Population extinction on the timescale of our simulation run-time is restricted to low values of C0 (no phage population extinctions happen for C0>3000, and no bacteria extinctions happen for C0>300). Phages are prone to population extinction at higher population sizes than bacteria because of their large burst size which makes their dynamics more noisy (see 'Long-time approximation for P0⁢(t)').
+Even when bacteria and phage are within the deterministic coexistence regime, populations may experience stochastic extinction (main text Figure 1F). Simulations are run for a fixed number of generations (see 'Steady state') or until bacteria or phage go extinct. Population extinction on the timescale of our simulation run-time is restricted to low values of C0 (no phage population extinctions happen for $C_{0}>3000$, and no bacteria extinctions happen for $C_{0}>300$). Phages are prone to population extinction at higher population sizes than bacteria because of their large burst size which makes their dynamics more noisy (see 'Long-time approximation for $P_{0}⁢(t)$').
 
-Extinction probability is strongly related to total population size, with smaller populations being more likely to go extinct across all parameters (Figure 1—figure supplement 1 and Figure 1—figure supplement 2). However, there are differences that depend on parameters and initial conditions. First, high spacer effectiveness increases the likelihood of phage extinction and decreases the likelihood of bacterial extinction (Figure 1—figure supplement 1). High spacer effectiveness correspondingly increases the time to extinction for bacteria (Figure 1—figure supplement 4) and decreases the time to extinction for phages (Figure 1—figure supplement 3). Bacteria also appear to be less likely to go extinct at high values of η (Figure 1—figure supplement 4). Phages have longer times to extinction and lower extinction probability at high values of μ (Figure 1—figure supplement 3). And finally, phages have a longer time to extinction if the initial number of phage clones (mi⁢n⁢i⁢t) is high (Figure 1—figure supplement 6), but this effect disappears at low η (Figure 1—figure supplement 5), perhaps because bacteria do not acquire spacers quickly enough for the initial phage diversity to make a difference before the number of clones equilibrates, which happens rapidly at low total population size (see upper rows of Figure 8).
+Extinction probability is strongly related to total population size, with smaller populations being more likely to go extinct across all parameters (Figure 1—figure supplement 1 and Figure 1—figure supplement 2). However, there are differences that depend on parameters and initial conditions. First, high spacer effectiveness increases the likelihood of phage extinction and decreases the likelihood of bacterial extinction (Figure 1—figure supplement 1). High spacer effectiveness correspondingly increases the time to extinction for bacteria (Figure 1—figure supplement 4) and decreases the time to extinction for phages (Figure 1—figure supplement 3). Bacteria also appear to be less likely to go extinct at high values of $η$ (Figure 1—figure supplement 4). Phages have longer times to extinction and lower extinction probability at high values of $\mu$ (Figure 1—figure supplement 3). And finally, phages have a longer time to extinction if the initial number of phage clones ($m_{i⁢n⁢i⁢t}$) is high (Figure 1—figure supplement 6), but this effect disappears at low $η$ (Figure 1—figure supplement 5), perhaps because bacteria do not acquire spacers quickly enough for the initial phage diversity to make a difference before the number of clones equilibrates, which happens rapidly at low total population size (see upper rows of Figure 8).
 
-## Simulation results
+### Simulation results
 
-## Measuring diversity
+#### Measuring diversity
 
 This section describes in detail our method for measuring diversity in simulations, relating to results in 'Phages drive stable emergent sequence diversity'. It provides justification for matching the number of large phage clones to the number of bacteria clones and discusses the assumptions made and where they may break down.
 
-A measure for the overall sequence diversity in the population is the total number of unique clones. In general, the bacterial diversity and phage diversity need not be the same, but it turns out that the number of bacterial clones (which we call m) closely tracks the number of 'large' phage clones across a wide range of parameters.
+A measure for the overall sequence diversity in the population is the total number of unique clones. In general, the bacterial diversity and phage diversity need not be the same, but it turns out that the number of bacterial clones (which we call $m$) closely tracks the number of 'large' phage clones across a wide range of parameters.
 
-To measure the number of large phage clones in a simulation, we scale the observed phage clone size distribution by the probability of extinction for each clone size below a size cutoff given by Equation 115. We multiply each observed number of clones of size n by the probability of extinction (Equation 159) to the power of the clone size n (Equation 27): this gives a scaling factor for each clone size that predicts how many clones of that size will survive at long times (Equation 28). Pnlarge is plotted alongside the full normalized histogram of clone sizes for one simulation in Figure 15.(27)1−P0(n)=1−(1−2s0B(s0+δ0))n(28)Pnlarge={Pn(1−P0(n))if n<NestPnif n≥Nest
+To measure the number of large phage clones in a simulation, we scale the observed phage clone size distribution by the probability of extinction for each clone size below a size cutoff given by Equation 115. We multiply each observed number of clones of size $n$ by the probability of extinction (Equation 159) to the power of the clone size $n$ (Equation 27): this gives a scaling factor for each clone size that predicts how many clones of that size will survive at long times (Equation 28). $P_{n}^{large}$ is plotted alongside the full normalized histogram of clone sizes for one simulation in Figure 15.
+
+$$
+1−P_{0}(n)=1−(1−\frac{2s_{0}}{B(s_{0}+\delta_{0})})^{n}
+$$
+
+
+
+$$
+P_{n}^{large}={P_{n}(1−P_{0}(n))if n<N_{est}P_{n}if n\geqN_{est}
+$$
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig15-v2.jpg)
 
-**Figure 15.:** , C0=104, e=0.95, and η=0.01.μ=3×10-6The blue points are the values of the full normalized phage clone size histogram with a bin width of 1500. The orange line is given by  in PnlargeEquation 28 smoothed with a running average of window size 3000. Both distributions are scaled by the total number of phage clones.
+**Figure 15.:** Phage clone size distribution from 15 combined time points for a simulation with the parameters $C_{0}=10^{4}$, $e=0.95$, $η=0.01$, and $\mu=3\times10^{-6}$.The blue points are the values of the full normalized phage clone size histogram with a bin width of 1500. The orange line is given by $P_{n}^{large}$ in Equation 28 smoothed with a running average of window size 3000. Both distributions are scaled by the total number of phage clones.
 
-We then calculate the number of large phage clones at steady state as Ntotal×∑nPnlarge, the total number of phage clones multiplied by the fraction of clones that survive for long times. Note that Pnlarge is not normalized; it is a quantity ≤1 representing the proportion of the clone size distribution that corresponds to large clones. The predicted number of large phage clones is plotted against the observed mean number of bacterial clones in Figure 22. There is extremely good agreement at all parameters except the lowest value of η, η=10-5, where the estimated number of large phage clones tends to be larger than m. In this regime, phage clones go extinct because of clonal interference before bacteria are able to acquire spacers (Figure 16 and Figure 17). At low η and high μ, phage clone fitness declines more rapidly with less influence from bacterial spacer acquisition than at high η and moderate μ: Figure 18 shows the ratio of phage clone initial fitness to phage clone fitness at the mean bacteria spacer acquisition time, measured from simulations, vs. η/μ. At most parameters, however, phage clone fitness has not changed much by the time bacteria are acquiring spacers.
+We then calculate the number of large phage clones at steady state as $N_{total}\times\sum_{n}P_{n}^{large}$, the total number of phage clones multiplied by the fraction of clones that survive for long times. Note that $P_{n}^{large}$ is not normalized; it is a quantity $\leq1$ representing the proportion of the clone size distribution that corresponds to large clones. The predicted number of large phage clones is plotted against the observed mean number of bacterial clones in Figure 22. There is extremely good agreement at all parameters except the lowest value of $η$, $η=10^{-5}$, where the estimated number of large phage clones tends to be larger than $m$. In this regime, phage clones go extinct because of clonal interference before bacteria are able to acquire spacers (Figure 16 and Figure 17). At low $η$ and high $\mu$, phage clone fitness declines more rapidly with less influence from bacterial spacer acquisition than at high $η$ and moderate $\mu$: Figure 18 shows the ratio of phage clone initial fitness to phage clone fitness at the mean bacteria spacer acquisition time, measured from simulations, vs. $η/\mu$. At most parameters, however, phage clone fitness has not changed much by the time bacteria are acquiring spacers.
 
 ![Figure 16.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig16-v2.jpg)
 
@@ -370,277 +852,610 @@ We then calculate the number of large phage clones at steady state as Ntotal×�
 
 ![Figure 17.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig17-v2.jpg)
 
-**Figure 17.:** where 1/D.D=α⁢η⁢(1-pV)⁢nVi*⁢nB0⁢g⁢C0Points outlined in red are simulations where the ratio of large phage clones to bacterial clones exceeds 1.2. Phage clones experience clonal interference at low : they go extinct faster than bacteria acquire spacers.η
+**Figure 17.:** Mean time to extinction for phage clones vs. the timescale of bacteria spacer acquisition given by $1/D$ where $D=\alpha⁢η⁢(1-p_{V})⁢nVi*⁢n_{B}^{0}⁢g⁢C_{0}$.Points outlined in red are simulations where the ratio of large phage clones to bacterial clones exceeds 1.2. Phage clones experience clonal interference at low $η$: they go extinct faster than bacteria acquire spacers.
 
 ![Figure 18.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig18-v2.jpg)
 
-**Figure 18.:** .η/μPoints outlined in red are simulations where the ratio of large phage clones to bacterial clones exceeds 1.2. The phage fitness is the average per capita growth rate of phage clones conditioned on survival. Phage clones experience clonal interference at low  and high η.μ
+**Figure 18.:** Ratio of average phage clone initial fitness to the average phage clone fitness at the mean bacterial spacer acquisition time vs $η/\mu$.Points outlined in red are simulations where the ratio of large phage clones to bacterial clones exceeds 1.2. The phage fitness is the average per capita growth rate of phage clones conditioned on survival. Phage clones experience clonal interference at low $η$ and high $\mu$.
 
-There is an η-dependent ‘floor’ on the minimum size a phage clone must be before bacteria begin to acquire spacers (Figure 16). We can estimate the size of a phage clone at the time of first spacer acquisition by calculating the mean time of acquisition from an exponentially growing population. Let n⁢(t) be the size of a phage clone relative to the time of mutation. We assume phage clones grow exponentially with rate s0 at early times, where s0=α⁢nB⁢(B⁢pV-1)-F is the average initial growth rate of phage clones: n⁢(t)=es0⁢t.
+There is an $η$-dependent ‘floor’ on the minimum size a phage clone must be before bacteria begin to acquire spacers (Figure 16). We can estimate the size of a phage clone at the time of first spacer acquisition by calculating the mean time of acquisition from an exponentially growing population. Let $n⁢(t)$ be the size of a phage clone relative to the time of mutation. We assume phage clones grow exponentially with rate s0 at early times, where $s_{0}=\alpha⁢n_{B}⁢(B⁢p_{V}-1)-F$ is the average initial growth rate of phage clones: $n⁢(t)=e^{s_{0}⁢t}$.
 
-The probability that no acquisitions have happened by time t is given by P0 in a Poisson process. Let a=α⁢η⁢(1-pV)⁢nB0 be the rate of spacer acquisition (see Equation 15), then the probability of no acquisitions by time t is P0⁢(t)=e-a⁢∫0tn⁢(t′)⁢dt′=e-as0⁢(es0⁢t-1). Now, the probability that an acquisition happens between time t and t+d⁢t is then(29)P(t)=P0(t)an(t)=aes0te−as0(es0t−1)
+The probability that no acquisitions have happened by time $t$ is given by P0 in a Poisson process. Let $a=\alpha⁢η⁢(1-p_{V})⁢n_{B}^{0}$ be the rate of spacer acquisition (see Equation 15), then the probability of no acquisitions by time $t$ is $P_{0}⁢(t)=e^{-a⁢\int_{0}^{t}n⁢(t^{′})⁢dt^{′}}=e^{-\frac{a}{s_{0}}⁢(e^{s_{0}⁢t}-1)}$. Now, the probability that an acquisition happens between time $t$ and $t+d⁢t$ is then
 
-Equation 29 is shown as a function of t for four simulations with different values of η in Figure 19. The probability has a sharp peak: there is a particular time related to phage clone growth at which the first acquisition is most likely — intuitively, this is what leads to the appearance of a sharp floor in phage clone size at first acquisition. Interestingly, the mean time of first acquisition is non-monotonic in η: the mean time is smallest for the lowest and highest values of η.
+$$
+P(t)=P_{0}(t)an(t)=ae^{s_{0}t}e^{−\frac{a}{s_{0}}(e^{s_{0}t}−1)}
+$$
+
+Equation 29 is shown as a function of $t$ for four simulations with different values of $η$ in Figure 19. The probability has a sharp peak: there is a particular time related to phage clone growth at which the first acquisition is most likely — intuitively, this is what leads to the appearance of a sharp floor in phage clone size at first acquisition. Interestingly, the mean time of first acquisition is non-monotonic in $η$: the mean time is smallest for the lowest and highest values of $η$.
 
 ![Figure 19.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig19-v2.jpg)
 
-**Figure 19.:** for four simulations with different values of t and η, and C0=104,μ=10-5.e=0.95The mean of each distribution is shown as a vertical dashed line.
+**Figure 19.:** Probability of the first spacer acquisition happening at time $t$ for four simulations with different values of $η$ and $C_{0}=10^{4},\mu=10^{-5}$, and $e=0.95$.The mean of each distribution is shown as a vertical dashed line.
 
-We calculate the mean time from Equation 29:(30)⟨t⟩=∫0∞aes0te−as0(es0t−1)tdt(31)⟨t⟩=1s0eas0Γ(0,as0)
+We calculate the mean time from Equation 29:
 
-where Γ⁢(0,as0)=∫as0∞e-tt⁢dt is the incomplete gamma function. We can plug this time into n⁢(t)=es0⁢t to estimate the mean phage clone size at first acquisition; the measured clone size is plotted as a function of this prediction in Figures 20 and 21. The clone size depends on the phage growth rate and bacterial acquisition rate, which are themselves primarily dependent on the total bacteria population size and the acquisition probability parameter η. If a<<s0 (true for our parameters), then eas0≈1 and Γ(0,as0)>1, meaning that the time of first acquisition is larger than 1/s0. (Γ(0,as0)>1 for as0⪅0.25.) Since 1/s0 is the approximate time at which phages are safe from stochastic extinction due to drift (see ‘Clone fitness’), this means that phage clones are out of the stochastic extinction regime by the time bacteria begin to acquire spacers.
+$$
+⟨t⟩=\int_{0}^{∞}ae^{s_{0}t}e^{−\frac{a}{s_{0}}(e^{s_{0}t}−1)}tdt
+$$
+
+
+
+$$
+⟨t⟩=\frac{1}{s_{0}}e^{\frac{a}{s_{0}}}Γ(0,\frac{a}{s_{0}})
+$$
+
+where $Γ⁢(0,\frac{a}{s_{0}})=\int_{\frac{a}{s_{0}}}^{∞}\frac{e^{-t}}{t}⁢dt$ is the incomplete gamma function. We can plug this time into $n⁢(t)=e^{s_{0}⁢t}$ to estimate the mean phage clone size at first acquisition; the measured clone size is plotted as a function of this prediction in Figures 20 and 21. The clone size depends on the phage growth rate and bacterial acquisition rate, which are themselves primarily dependent on the total bacteria population size and the acquisition probability parameter $η$. If $a<<s_{0}$ (true for our parameters), then $e^{\frac{a}{s_{0}}}≈1$ and $Γ(0,\frac{a}{s_{0}})>1$, meaning that the time of first acquisition is larger than $1/s_{0}$. ($Γ(0,\frac{a}{s_{0}})>1$ for $\frac{a}{s_{0}}⪅0.25$.) Since $1/s_{0}$ is the approximate time at which phages are safe from stochastic extinction due to drift (see ‘Clone fitness’), this means that phage clones are out of the stochastic extinction regime by the time bacteria begin to acquire spacers.
 
 ![Figure 20.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig20-v2.jpg)
 
-**Figure 20.:** Equation 31, and the prediction with the mode of the distribution given by Equation 29 for four simulations with different values of  and η, and C0=104,μ=10-5.e=0.95
+**Figure 20.:** Mean phage clone size at time of first spacer acquisition for simulation data, the predicted with Equation 31, and the prediction with the mode of the distribution given by Equation 29 for four simulations with different values of $η$ and $C_{0}=10^{4},\mu=10^{-5}$, and $e=0.95$.
 
 ![Figure 21.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig21-v2.jpg)
 
-**Figure 21.:** of es0⟨t⟩Equation 31.Error bars are the standard deviation across three or more independent simulations.
+**Figure 21.:** Measured mean phage clone size at the time of first spacer acquisition vs. the prediction given by $e^{s_{0}⟨t⟩}$ of Equation 31.Error bars are the standard deviation across three or more independent simulations.
 
-The definition of large phage clones we just described depends on the measured simulation distribution of phage clone sizes. We can instead approximate the number of large phage clones as the product of the rate at which phage clones become established and the rate at which large phage clones go extinct. This statement is summarized in Equation 32. Numerically solving this equation for m gives a prediction for the total number of bacterial clones and total number of large phage clones.(32)m=[2s0B(s0+δ0)]⏟phage establishment fractionαB(1−e−μL)pVnVnB(1−eνm)1gC0⏟phage mutation rate2nVi(1−lnnVinV)gC0(B−1)2β+δ⏟large phage clone time to extinction
+The definition of large phage clones we just described depends on the measured simulation distribution of phage clone sizes. We can instead approximate the number of large phage clones as the product of the rate at which phage clones become established and the rate at which large phage clones go extinct. This statement is summarized in Equation 32. Numerically solving this equation for $m$ gives a prediction for the total number of bacterial clones and total number of large phage clones.
 
-s0=β0⁢(B-1)-δ0=α⁢nB⁢(B⁢pV-1)-F
+$$
+m=[\frac{2s_{0}}{B(s_{0}+\delta_{0})}]⏟phage establishment fraction\alphaB(1−e^{−\muL})p_{V}n_{V}n_{B}(1−\frac{eν}{m})\frac{1}{gC_{0}}⏟phage mutation rate\frac{2n_{V}^{i}(1−ln\frac{n_{V}^{i}}{n_{V}})gC_{0}}{(B−1)^{2}\beta+\delta}⏟large phage clone time to extinction
+$$
 
-nVi= deterministic mean phage clone size at steady state
+$s_{0}=\beta_{0}⁢(B-1)-\delta_{0}=\alpha⁢n_{B}⁢(B⁢p_{V}-1)-F$
 
-β0=nB⁢α⁢pV
+$n_{V}^{i}=$ deterministic mean phage clone size at steady state
 
-δ0=F+α⁢nB⁢(1-pV)
+$\beta_{0}=n_{B}⁢\alpha⁢p_{V}$
 
-β=nB⁢α⁢pV-α⁢pV⁢e⁢nBi
+$\delta_{0}=F+\alpha⁢n_{B}⁢(1-p_{V})$
 
-δ=F+α⁢nB⁢(1-pV)+α⁢pV⁢e⁢nBi
+$\beta=n_{B}⁢\alpha⁢p_{V}-\alpha⁢p_{V}⁢e⁢n_{B}^{i}$
 
-We now describe each of the three terms in Equation 32. The phage establishment rate is the phage mutation rate multiplied by the fraction of new phage mutants which become established. Derivation of the phage establishment fraction and phage time to extinction can be found in ‘Long-time approximation for P0⁢(t)’ (Equation 158). Derivation of the mean time to extinction for large phage clones can be found in ‘Neutral time to extinction from backward master equation’ (Equation 171).
+$\delta=F+\alpha⁢n_{B}⁢(1-p_{V})+\alpha⁢p_{V}⁢e⁢n_{B}^{i}$
 
-The phage mutation rate is the mean-field phage reproduction rate α⁢B⁢nV⁢(pVa⁢nBs+pV⁢nB0) multiplied by the probability of one or more mutations per burst (1-e-μ⁢L).
+We now describe each of the three terms in Equation 32. The phage establishment rate is the phage mutation rate multiplied by the fraction of new phage mutants which become established. Derivation of the phage establishment fraction and phage time to extinction can be found in ‘Long-time approximation for $P_{0}⁢(t)$’ (Equation 158). Derivation of the mean time to extinction for large phage clones can be found in ‘Neutral time to extinction from backward master equation’ (Equation 171).
 
-We assume that pVa=pV⁢(1-e/m), which is true if all clones are equal in size (i.e., nVi=nV/m and nBi=nBs/m) or if the deviations from equal size are uncorrelated between matching bacteria and phage clones. This assumption means that the average immunity in the population is approximately e/m which is accurate across a wide range of parameters: Figure 22 and Figure 23 compare the full average immunity (Equation 33) with e/m, where m is the number of bacterial clones present at a given time point in a simulation. The assumption breaks down at low η and high μ (points below the line in the upper right). Intuitively this happens when the sizes of matching clones become anti-correlated because bacteria acquire few spacers while phages acquire many mutations. The resulting matching pairs have more mismatched clone sizes than the mean number of bacterial clones would suggest. (In this particular case, phage clones are smaller than nV/m.) Conversely, at large population sizes and large spacer acquisition rates, matching clone sizes become correlated, leading to average immunity >e/m. Figure 24 shows clone size distributions for four simulations with increasing η, showing that as η increases the phage clone distribution becomes more narrow and the matching clone pairs become more correlated.(33)Average immunity=1−∑i,jnBinVjpV(i,j)pV∑i,jnBinVj=enBsnV∑inVinBi
+The phage mutation rate is the mean-field phage reproduction rate $\alpha⁢B⁢n_{V}⁢(p_{V}^{a}⁢n_{B}^{s}+p_{V}⁢n_{B}^{0})$ multiplied by the probability of one or more mutations per burst ($1-e^{-\mu⁢L}$).
+
+We assume that $p_{V}^{a}=p_{V}⁢(1-e/m)$, which is true if all clones are equal in size (i.e., $n_{V}^{i}=n_{V}/m$ and $n_{B}^{i}=n_{B}^{s}/m$) or if the deviations from equal size are uncorrelated between matching bacteria and phage clones. This assumption means that the average immunity in the population is approximately $e/m$ which is accurate across a wide range of parameters: Figure 22 and Figure 23 compare the full average immunity (Equation 33) with $e/m$, where $m$ is the number of bacterial clones present at a given time point in a simulation. The assumption breaks down at low $η$ and high $\mu$ (points below the line in the upper right). Intuitively this happens when the sizes of matching clones become anti-correlated because bacteria acquire few spacers while phages acquire many mutations. The resulting matching pairs have more mismatched clone sizes than the mean number of bacterial clones would suggest. (In this particular case, phage clones are smaller than $n_{V}/m$.) Conversely, at large population sizes and large spacer acquisition rates, matching clone sizes become correlated, leading to average immunity $>e/m$. Figure 24 shows clone size distributions for four simulations with increasing $η$, showing that as $η$ increases the phage clone distribution becomes more narrow and the matching clone pairs become more correlated.
+
+$$
+Average immunity=1−\frac{\sumi,jn_{B}^{i}n_{V}^{j}p_{V}(i,j)}{p_{V}\sumi,jn_{B}^{i}n_{V}^{j}}=\frac{e}{n_{B}^{s}n_{V}}\sumin_{V}^{i}n_{B}^{i}
+$$
 
 ![Figure 22.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig22-v2.jpg)
 
-**Figure 22.:** For each simulation, we take a subset of 15 evenly spaced timepoints at steady state and calculate the size and number of phage clones present. We scale the observed clone sized distribution with Equation 28 and calculate the mean number of large phage clones by multiplying the total number of clones with the fraction of large phage clones given by . We use the simulation mean total population sizes to calculate ∑nPnlarges0 and  in δ0Equation 27. We obtain the mean number of bacterial clones by averaging the number of clones present at 15 evenly spaced timepoints at steady state. Error bars are the standard deviation across three or more independent simulations.
+**Figure 22.:** For each simulation, we take a subset of 15 evenly spaced timepoints at steady state and calculate the size and number of phage clones present. We scale the observed clone sized distribution with Equation 28 and calculate the mean number of large phage clones by multiplying the total number of clones with the fraction of large phage clones given by $\sum_{n}P_{n}^{large}$. We use the simulation mean total population sizes to calculate s0 and $\delta_{0}$ in Equation 27. We obtain the mean number of bacterial clones by averaging the number of clones present at 15 evenly spaced timepoints at steady state. Error bars are the standard deviation across three or more independent simulations.
 
 ![Figure 23.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig23-v2.jpg)
 
-**Figure 23.:** vs e=enBs⁢nV⁢∑inVi⁢nBi across all simulations where e/m on average.m≥1Error bars are the standard deviation across three or more independent simulations. The solid black line is .y=x
+**Figure 23.:** Effective $e=\frac{e}{n_{B}^{s}⁢n_{V}}⁢\sum_{i}n_{V}^{i}⁢n_{B}^{i}$ vs $e/m$ across all simulations where $m\geq1$ on average.Error bars are the standard deviation across three or more independent simulations. The solid black line is $y=x$.
 
 ![Figure 24.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig24-v2.jpg)
 
-**Figure 24.:** , C0=10000, and μ=10-5.e=0.95From top to bottom,  increases by a factor of 10 in each row, from η in the top row to η=10-5 in the bottom row. The first two columns show clone size distributions combined from 15 time points between 2000 and 10,000 bacterial generations. Bacteria are in the left column and phages in the middle column. The third column shows the pairwise clone sizes of matching clones at the last sampled time point (9467 generations). The expected large phage clone size is the total phage population divided by the mean number of bacterial clones. The inverse overlap is η=10-2, which we assume is eeeff=nBs⁢nV∑inVi⁢nBi as shown in ≈mFigure 23. The dashed line in the third column indicates the line that clone size pairs would fall on if they were perfectly correlated, and the red star indicates the mean large clone size for phages and the mean clone size for bacteria.
+**Figure 24.:** Four simulations with $C_{0}=10000$, $\mu=10^{-5}$, and $e=0.95$.From top to bottom, $η$ increases by a factor of 10 in each row, from $η=10^{-5}$ in the top row to $η=10^{-2}$ in the bottom row. The first two columns show clone size distributions combined from 15 time points between 2000 and 10,000 bacterial generations. Bacteria are in the left column and phages in the middle column. The third column shows the pairwise clone sizes of matching clones at the last sampled time point (9467 generations). The expected large phage clone size is the total phage population divided by the mean number of bacterial clones. The inverse overlap is $\frac{e}{e_{eff}}=\frac{n_{B}^{s}⁢n_{V}}{\sum_{i}n_{V}^{i}⁢n_{B}^{i}}$, which we assume is $≈m$ as shown in Figure 23. The dashed line in the third column indicates the line that clone size pairs would fall on if they were perfectly correlated, and the red star indicates the mean large clone size for phages and the mean clone size for bacteria.
 
-For several parameter combinations, there is no m that satisfies Equation 32. This generally occurs for parameters resulting in small total population sizes. In these cases, no solution is found because the predicted mutation rate and/or the predicted establishment fraction and/or the predicted mean time to extinction for large clones are too low (Figure 25).
+For several parameter combinations, there is no $m$ that satisfies Equation 32. This generally occurs for parameters resulting in small total population sizes. In these cases, no solution is found because the predicted mutation rate and/or the predicted establishment fraction and/or the predicted mean time to extinction for large clones are too low (Figure 25).
 
 ![Figure 25.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig25-v2.jpg)
 
-**Figure 25.:** Highlighted in grey are parameter combinations for which no theoretically predicted  could be determined; the predicted quantity is instead calculated with the simulation mean m. Error bar are the stnadard deviation across three or more independent simulations.m
+**Figure 25.:** Highlighted in grey are parameter combinations for which no theoretically predicted $m$ could be determined; the predicted quantity is instead calculated with the simulation mean $m$. Error bar are the stnadard deviation across three or more independent simulations.
 
-## Analytic approximations for diversity
+#### Analytic approximations for diversity
 
-This section describes how we approximate our measurement of diversity to arrive at Equation 87, an analytic approximation for the number of bacterial clones at steady state. The first sections describe approximations for each of the components of diversity; the combination is summarized in ‘Approximation for m’. This is the mathematical background for results in ‘Phages drive stable emergent sequence diversity’.
+This section describes how we approximate our measurement of diversity to arrive at Equation 87, an analytic approximation for the number of bacterial clones at steady state. The first sections describe approximations for each of the components of diversity; the combination is summarized in ‘Approximation for $m$’. This is the mathematical background for results in ‘Phages drive stable emergent sequence diversity’.
 
-We want to understand more intuitively how diversity depends on system parameters. Here we describe analytic approximations for diversity m and its components. Equation 32 contains m both explicitly and implicitly, so we approximate each of the three components to arrive at an analytic approximation for m.
+We want to understand more intuitively how diversity depends on system parameters. Here we describe analytic approximations for diversity $m$ and its components. Equation 32 contains $m$ both explicitly and implicitly, so we approximate each of the three components to arrive at an analytic approximation for $m$.
 
-We can make some initial simplifications by cancelling terms (note that s0+δ0=β0⁢(B-1) and β0=nB⁢α⁢pV):(34)m=(2s0B−1)(1−e−μL)nV(1−eνm)2nVi(1−lnnVinV)(B−1)2β+δ
+We can make some initial simplifications by cancelling terms (note that $s_{0}+\delta_{0}=\beta_{0}⁢(B-1)$ and $\beta_{0}=n_{B}⁢\alpha⁢p_{V}$):
 
-Now expanding s0 and the denominator and cancelling and collecting terms:(35)m=4(αnB(BpV−1)−F)(1−e−μL)nVnVi(1−lnnVinV)(B−1)(B(B−2)β+αnB+F)(1−eνm)
+$$
+m=(\frac{2s_{0}}{B−1})(1−e^{−\muL})n_{V}(1−\frac{eν}{m})\frac{2n_{V}^{i}(1−ln\frac{n_{V}^{i}}{n_{V}})}{(B−1)^{2}\beta+\delta}
+$$
 
-In theory, nVi≈nV/m and nBi≈nBs/m. To see this, we start with the solutions for the deterministic mean bacteria and phage clone sizes (Equations 25 and 26, reprinted here):(36)nBi∗=1e(nB−F+αnBαBP0pV)(37)nVi∗=nBi∗(αpVnV−(gC−F−r))αηnB0(1−pV)+αpVenBi∗
+Now expanding s0 and the denominator and cancelling and collecting terms:
 
-From the deterministic mean-field equation for nV (Equation 14), we have that F+α⁢nB=α⁢B⁢pV⁢nB⁢(1-e⁢νm). Substituting this in Equation 36, we get(38)nBi∗=1e(nB−αBpVnB(1−eνm)αBP0pV)=nBe(1−(1−eνm)P0)
+$$
+m=\frac{4(\alphan_{B}(Bp_{V}−1)−F)(1−e^{−\muL})n_{V}n_{V}^{i}(1−ln\frac{n_{V}^{i}}{n_{V}})}{(B−1)(B(B−2)\beta+\alphan_{B}+F)}(1−\frac{eν}{m})
+$$
 
-We can neglect P0, both because it is always close to 1 and because, at steady state, the effect of mutants leaving type i is partially balanced by mutants entering type i.(39)nBi∗≈nBνm=nBsm
+In theory, $n_{V}^{i}≈n_{V}/m$ and $n_{B}^{i}≈n_{B}^{s}/m$. To see this, we start with the solutions for the deterministic mean bacteria and phage clone sizes (Equations 25 and 26, reprinted here):
 
-Similarly, from the deterministic mean-field equation for nBs (Equation 13), we have g⁢C-F-r=α⁢nV⁢pV⁢(1-em)-α⁢nV⁢(1-pV)⁢η⁢nB0nBs. Substituting this in Equation 37, we get(40)nVi∗=nBi∗(αpVnV−(αnVpV(1−em)−αnV(1−pV)ηnB0nBs))αηnB0(1−pV)+αpVenBi∗
+$$
+n_{B}^{i}^{∗}=\frac{1}{e}(n_{B}−\frac{F+\alphan_{B}}{\alphaBP_{0}p_{V}})
+$$
 
-Substituting nB0=nB⁢(1-ν) and nBs=nB⁢ν, we find nVi*=nV/m.
 
-Replacing nVi and nBi with nV/m and nBs/m, respectively:(41)m=4(αnB(BpV−1)−F)(1−e−μL)nV2m(1−ln1m)(B−1)(B(B−2)αpVnB(1−eνm)+αnB+F)(1−eνm)
 
-Now we want to solve Equation 41 for m. This is difficult because the total population sizes nB, nV, C, and ν also depend on m. To find the m dependence of nV, nB, C, and ν, we note that we can approximate the steady-state solutions to Equations 13–17 as the corresponding solutions described in Bonsma-Fisher et al., 2018 with the simple replacement of the parameter e with e/m. This is because e/m is a good approximation for the full average immunity at most parameters (Figure 23), and average immunity enters these equations in place of e in the model without phage mutations. This is analogous to average adaptive immunity replacing the rate of innate immunity in the Lotka-Volterra system described by Iranzo et al., 2013.
+$$
+n_{V}^{i}^{∗}=\frac{n_{B}^{i}^{∗}(\alphap_{V}n_{V}−(gC−F−r))}{\alphaηn_{B}^{0}(1−p_{V})+\alphap_{V}en_{B}^{i}^{∗}}
+$$
 
-We write the steady-state solutions for Equations 14 and 17 below, where we have defined pV⁢(i,j) as in Equation 18 and approximated average immunity as e/m. For simplicity we rescale nB and nV by C0: nV=C0⁢y* and nB=C0⁢x*. Here p=pV⁢α/g. These steady-state solutions are shown in Figure 26.
+From the deterministic mean-field equation for $n_{V}$ (Equation 14), we have that $F+\alpha⁢n_{B}=\alpha⁢B⁢p_{V}⁢n_{B}⁢(1-\frac{e⁢ν}{m})$. Substituting this in Equation 36, we get
+
+$$
+n_{B}^{i}^{∗}=\frac{1}{e}(n_{B}−\frac{\alphaBp_{V}n_{B}(1−\frac{eν}{m})}{\alphaBP_{0}p_{V}})=\frac{n_{B}}{e}(1−\frac{(1−\frac{eν}{m})}{P_{0}})
+$$
+
+We can neglect P0, both because it is always close to 1 and because, at steady state, the effect of mutants leaving type $i$ is partially balanced by mutants entering type $i$.
+
+$$
+n_{B}^{i}^{∗}≈\frac{n_{B}ν}{m}=\frac{n_{B}^{s}}{m}
+$$
+
+Similarly, from the deterministic mean-field equation for $n_{B}^{s}$ (Equation 13), we have $g⁢C-F-r=\alpha⁢n_{V}⁢p_{V}⁢(1-\frac{e}{m})-\alpha⁢n_{V}⁢(1-p_{V})⁢η⁢\frac{n_{B}^{0}}{n_{B}^{s}}$. Substituting this in Equation 37, we get
+
+$$
+n_{V}^{i}^{∗}=\frac{n_{B}^{i}^{∗}(\alphap_{V}n_{V}−(\alphan_{V}p_{V}(1−\frac{e}{m})−\alphan_{V}(1−p_{V})η\frac{n_{B}^{0}}{n_{B}^{s}}))}{\alphaηn_{B}^{0}(1−p_{V})+\alphap_{V}en_{B}^{i}^{∗}}
+$$
+
+Substituting $n_{B}^{0}=n_{B}⁢(1-ν)$ and $n_{B}^{s}=n_{B}⁢ν$, we find $nVi*=n_{V}/m$.
+
+Replacing $n_{V}^{i}$ and $n_{B}^{i}$ with $n_{V}/m$ and $n_{B}^{s}/m$, respectively:
+
+$$
+m=\frac{4(\alphan_{B}(Bp_{V}−1)−F)(1−e^{−\muL})\frac{n_{V}^{2}}{m}(1−ln\frac{1}{m})}{(B−1)(B(B−2)\alphap_{V}n_{B}(1−\frac{eν}{m})+\alphan_{B}+F)}(1−\frac{eν}{m})
+$$
+
+Now we want to solve Equation 41 for $m$. This is difficult because the total population sizes $n_{B}$, $n_{V}$, $C$, and $ν$ also depend on $m$. To find the $m$ dependence of $n_{V}$, $n_{B}$, $C$, and $ν$, we note that we can approximate the steady-state solutions to Equations 13–17 as the corresponding solutions described in Bonsma-Fisher et al., 2018 with the simple replacement of the parameter $e$ with $e/m$. This is because $e/m$ is a good approximation for the full average immunity at most parameters (Figure 23), and average immunity enters these equations in place of $e$ in the model without phage mutations. This is analogous to average adaptive immunity replacing the rate of innate immunity in the Lotka-Volterra system described by Iranzo et al., 2013.
+
+We write the steady-state solutions for Equations 14 and 17 below, where we have defined $p_{V}⁢(i,j)$ as in Equation 18 and approximated average immunity as $e/m$. For simplicity we rescale $n_{B}$ and $n_{V}$ by C0: $n_{V}=C_{0}⁢y^{*}$ and $n_{B}=C_{0}⁢x^{*}$. Here $p=p_{V}⁢\alpha/g$. These steady-state solutions are shown in Figure 26.
 
 ![Figure 26.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig26-v2.jpg)
 
-**Figure 26.:** ).eBlue points are simulation results. Error bars are standard deviation across three or more independent simulations. The solid black line is the solution given by Equations 42–44 (from Bonsma-Fisher et al., 2018) with the parameter  replaced by effective e. The horizontal grey dashed line corresponds to the no-CRISPR (e) mean-field solution (derived in e=0Bonsma-Fisher et al., 2018).
+**Figure 26.:** Total phage, total bacteria, and fraction of bacteria with spacers as a function of average immunity (effective $e$).Blue points are simulation results. Error bars are standard deviation across three or more independent simulations. The solid black line is the solution given by Equations 42–44 (from Bonsma-Fisher et al., 2018) with the parameter $e$ replaced by effective $e$. The horizontal grey dashed line corresponds to the no-CRISPR ($e=0$) mean-field solution (derived in Bonsma-Fisher et al., 2018).
 
-At low average immunity (high diversity), the population behaves as if there were no CRISPR system at all. Figure 26 shows total phage, total bacteria, and the fraction of bacteria with spacers as a function of average immunity (effective e). At low average immunity, total population sizes are the same as in a population without CRISPR entirely. Interestingly, the effective no-CRISPR case does not necessarily correspond to no CRISPR spacers: ν>0 even when effective e≈0 for these parameters. This is because spacer acquisition and growth of that clone can still happen even if the spacer confers no fitness benefit.(42)x∗=fpVp1BpV(1−eν∗m)−1(43)y∗=(f−1)p(BpV(eν∗m−1)+1)−fpVp(eν∗m−1)(p(BpV(eν∗m−1)+1)−pV)
+At low average immunity (high diversity), the population behaves as if there were no CRISPR system at all. Figure 26 shows total phage, total bacteria, and the fraction of bacteria with spacers as a function of average immunity (effective $e$). At low average immunity, total population sizes are the same as in a population without CRISPR entirely. Interestingly, the effective no-CRISPR case does not necessarily correspond to no CRISPR spacers: $ν>0$ even when effective $e≈0$ for these parameters. This is because spacer acquisition and growth of that clone can still happen even if the spacer confers no fitness benefit.
 
-We have defined x* and y* in terms of ν*, which is given in the following implicit cubic equation, where R=r/(g⁢C0):(44)0=(1−ν)[−pVeνm−η(1−pV)][(1−f)p(pVB(1−eνm)−1)−fpV]+RνpV(1−eνm)(BppV(1−eνm)−p+pV)
+$$
+x^{∗}=\frac{fp_{V}}{p}\frac{1}{Bp_{V}(1−\frac{eν^{∗}}{m})−1}
+$$
 
-This cubic equation is analytically solvable (ignoring the dependence of m on ν), but the full solutions in terms of all parameters are cumbersome.
 
-Only one of the three solutions of Equation 44 is physical in the parameter range we use (real-valued and properly bounded):(45)ν∗=−(1+i3)(−27a2d+9abc−2b3)2+4(3ac−b2)3−27a2d+9abc−2b33623a+(1−i3)(3ac−b2)3 22/3a(−27a2d+9abc−2b3)2+4(3ac−b2)3−27a2d+9abc−2b33−b3a
 
-where the coefficients are(46)a=B(em)2fppV2(f+R−1)(47)b=−emfpV(p(f(B(pV(em+η+1)−η)−1)+B(η−pV(em+η−2R+1))−R+1)+pV(f+R))(48)c=fp[BpV2(em(f−1)(η+1)+(f−1)η+R)−(em−1)(f−1)pV(Bη+1)−(2B+2)(f−1)ηpV+(f−1)η−pV(f+R−1)]+fpV(emfpV−fη+pV(fη+R))(49)d=−fη(pV−1)((f−1)p(BpV−1)+fpV)
+$$
+y^{∗}=\frac{(f−1)p(Bp_{V}(\frac{eν^{∗}}{m}−1)+1)−fp_{V}}{p(\frac{eν^{∗}}{m}−1)(p(Bp_{V}(\frac{eν^{∗}}{m}−1)+1)−p_{V})}
+$$
 
-## Dominant balance approximations for ν
+We have defined $x^{*}$ and $y^{*}$ in terms of $ν^{*}$, which is given in the following implicit cubic equation, where $R=r/(g⁢C_{0})$:
 
-The cubic equation for ν given by Equation 44 can be simplified in certain parameter regimes using dominant balance. We write Equation 44 as a⁢ν4+b⁢ν2+c⁢ν+d=0 with the coefficients as written above. Comparing the numerical values of the coefficients in different parameter regimes, we arrive at Table 4 which outlines three different approximations for ν obtained by dropping coefficients of the original cubic equation. Broadly speaking, at low η and low e, both the cubic and quadratic coefficients (a and b) are small, so ν*≈-d/c, while at high η and low e the cubic coefficient (a) can be dropped, and at high e and low η the constant d can be dropped. Figures 27—29 show total population sizes as a function of the three approximations in Table 4.
+$$
+0=(1−ν)[−p_{V}\frac{eν}{m}−η(1−p_{V})][(1−f)p(p_{V}B(1−\frac{eν}{m})−1)−fp_{V}]+Rνp_{V}(1−\frac{eν}{m})(Bpp_{V}(1−\frac{eν}{m})−p+p_{V})
+$$
+
+This cubic equation is analytically solvable (ignoring the dependence of $m$ on $ν$), but the full solutions in terms of all parameters are cumbersome.
+
+Only one of the three solutions of Equation 44 is physical in the parameter range we use (real-valued and properly bounded):
+
+$$
+ν^{∗}=−\frac{(1+i\sqrt{3})\sqrt[3]{\sqrt{(−27a^{2}d+9abc−2b^{3})^{2}+4(3ac−b^{2})^{3}}−27a^{2}d+9abc−2b^{3}}}{6\sqrt[3]{2}a}+\frac{(1−i\sqrt{3})(3ac−b^{2})}{3 2^{2/3}a\sqrt[3]{\sqrt{(−27a^{2}d+9abc−2b^{3})^{2}+4(3ac−b^{2})^{3}}−27a^{2}d+9abc−2b^{3}}}−\frac{b}{3a}
+$$
+
+where the coefficients are
+
+$$
+a=B(\frac{e}{m})^{2}fpp_{V}^{2}(f+R−1)
+$$
+
+
+
+$$
+b=−\frac{e}{m}fp_{V}(p(f(B(p_{V}(\frac{e}{m}+η+1)−η)−1)+B(η−p_{V}(\frac{e}{m}+η−2R+1))−R+1)+p_{V}(f+R))
+$$
+
+
+
+$$
+c=fp[Bp_{V}^{2}(\frac{e}{m}(f−1)(η+1)+(f−1)η+R)−(\frac{e}{m}−1)(f−1)p_{V}(Bη+1)−(2B+2)(f−1)ηp_{V}+(f−1)η−p_{V}(f+R−1)]+fp_{V}(\frac{e}{m}fp_{V}−fη+p_{V}(fη+R))
+$$
+
+
+
+$$
+d=−fη(p_{V}−1)((f−1)p(Bp_{V}−1)+fp_{V})
+$$
+
+#### Dominant balance approximations for ν
+
+The cubic equation for $ν$ given by Equation 44 can be simplified in certain parameter regimes using dominant balance. We write Equation 44 as $a⁢ν^{4}+b⁢ν^{2}+c⁢ν+d=0$ with the coefficients as written above. Comparing the numerical values of the coefficients in different parameter regimes, we arrive at Table 4 which outlines three different approximations for $ν$ obtained by dropping coefficients of the original cubic equation. Broadly speaking, at low $η$ and low $e$, both the cubic and quadratic coefficients ($a$ and $b$) are small, so $ν^{*}≈-d/c$, while at high $η$ and low $e$ the cubic coefficient ($a$) can be dropped, and at high $e$ and low $η$ the constant $d$ can be dropped. Figures 27—29 show total population sizes as a function of the three approximations in Table 4.
+
+**Table 4.**
+ $ν$ approximations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">η</th>
+      <th colspan="5">eeffective</th>
+    </tr>
+    <tr>
+      <th>≤0.01</th>
+      <th>0.01 to 0.05</th>
+      <th>0.05 to 0.1</th>
+      <th>0.1 to 0.5</th>
+      <th>0.5 to 1</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>≤10-5</td>
+      <td>-dc</td>
+      <td>-dc</td>
+      <td>-dc</td>
+      <td>-b+b2-4⁢a⁢c2⁢a</td>
+      <td>-b+b2-4⁢a⁢c2⁢a</td>
+    </tr>
+    <tr>
+      <td>10-5 to10-4</td>
+      <td>-dc</td>
+      <td>-dc</td>
+      <td>-c+c2-4⁢b⁢d2⁢b</td>
+      <td>-b+b2-4⁢a⁢c2⁢a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10-4 to 10-2</td>
+      <td>-dc</td>
+      <td>-dc</td>
+      <td>-c+c2-4⁢b⁢d2⁢b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥10-2</td>
+      <td>-dc</td>
+      <td>-c+c2-4⁢b⁢d2⁢b</td>
+      <td>-c+c2-4⁢b⁢d2⁢b</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: the drop-a solution also works for below e=0.1 for all values of η (since 2⁢b⁢dc2≈0), but the -d/c solution is simpler and so preferred for the very low e range._
 
 ![Figure 27.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig27-v2.jpg)
 
-**Figure 27.:** , nV, and nB vs. ν for η, approximating e=0.05.ν≈-d/c
+**Figure 27.:** $n_{V}$, $n_{B}$, and $ν$ vs. $η$ for $e=0.05$, approximating $ν≈-d/c$.
 
 ![Figure 28.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig28-v2.jpg)
 
-**Figure 28.:** , nV, and nB vs ν for η, approximating e=0.15.ν≈-c+c2-4⁢b⁢d2⁢b
+**Figure 28.:** $n_{V}$, $n_{B}$, and $ν$ vs $η$ for $e=0.15$, approximating $ν≈\frac{-c+\sqrt{c^{2}-4⁢b⁢d}}{2⁢b}$.
 
 ![Figure 29.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig29-v2.jpg)
 
-**Figure 29.:** , nV, and nB vs. ν for η, approximating e=0.8.ν≈-b+b2-4⁢a⁢c2⁢a
+**Figure 29.:** $n_{V}$, $n_{B}$, and $ν$ vs. $η$ for $e=0.8$, approximating $ν≈\frac{-b+\sqrt{b^{2}-4⁢a⁢c}}{2⁢a}$.
 
-For small effective e and small η, ν≈-d/c:(50)ν≈η(1−pV)(α(1−f)(BpV−1)−fg)η(1−pV)(α(1−f)(B(em+1)pV−1)−fg)+αpV(BpV−1)(R−em(1−f))+gpV(emf+R)
+For small effective $e$ and small $η$, $ν≈-d/c$:
 
-We define two combined parameters: A=(B⁢pV-1)⁢(1-f)⁢αf⁢g, and η^=η⁢(1-pV). Each of these has an intuitive meaning: A>1 is the stability condition for phage existence, and η^ is the probability of spacer acquisition following escape from naive phage predation, so it can be thought of as the overall spacer acquisition probability at the start of an infection. With these variable substitutions, we get(51)ν≈η^(A−1)pVR(1−f+Aff(1−f))+η^(A−1+ABpVem(A−1)(BpV−1))−empV(A−1)
+$$
+ν≈\frac{η(1−p_{V})(\alpha(1−f)(Bp_{V}−1)−fg)}{η(1−p_{V})(\alpha(1−f)(B(\frac{e}{m}+1)p_{V}−1)−fg)+\alphap_{V}(Bp_{V}−1)(R−\frac{e}{m}(1−f))+gp_{V}(\frac{e}{m}f+R)}
+$$
 
-Now we notice that the deterministic total phage population size when e=0 is given by(52)nVno CRISPR=n~V=gC0f(1−f)(A−1)αpV(1−f+Af)
+We define two combined parameters: $A=\frac{(B⁢p_{V}-1)⁢(1-f)⁢\alpha}{f⁢g}$, and $η^=η⁢(1-p_{V})$. Each of these has an intuitive meaning: $A>1$ is the stability condition for phage existence, and $η^$ is the probability of spacer acquisition following escape from naive phage predation, so it can be thought of as the overall spacer acquisition probability at the start of an infection. With these variable substitutions, we get
 
-We also include nB for e=0 for completeness:(53)nBno CRISPR=n~B=C0(1−f)A
+$$
+ν≈\frac{η^(A−1)}{p_{V}R(\frac{1−f+Af}{f(1−f)})+η^(A−1+\frac{ABp_{V}\frac{e}{m}}{(A−1)(Bp_{V}−1)})−\frac{e}{m}p_{V}(A−1)}
+$$
 
-We can replace some terms in ν with n~V by comparison with Equation 52:(54)ν≈11+rη^αn~V−em(pVη^−ABpV(A−1)(BpV−1))
+Now we notice that the deterministic total phage population size when $e=0$ is given by
 
-where r=R⁢g⁢C0 is the spacer loss rate per minute. The second term in the denominator is the balance of spacer acquisition and spacer loss per naive bacterium: η^⁢α⁢n~V is the rate of spacer acquisition per naive bacterium in the low average immunity limit.
+$$
+n_{V}_{no CRISPR}=n~_{V}=\frac{gC_{0}f(1−f)(A−1)}{\alphap_{V}(1−f+Af)}
+$$
 
-The third term in the denominator is negative for the parameters we use, but this is not necessarily true in general. It is negative if η^AB<(A−1)(BpV−1), which for the values of A and B⁢pV we use (fixed across all simulations) is true for η<0.0113.
+We also include $n_{B}$ for $e=0$ for completeness:
 
-From this expression for ν we learn the following:
+$$
+n_{B}_{no CRISPR}=n~_{B}=\frac{C_{0}(1−f)}{A}
+$$
 
-For e/m→0, we define ν~:(55)ν~=11+rη^αn~V
+We can replace some terms in $ν$ with $n~_{V}$ by comparison with Equation 52:
 
-Equation 54 expression breaks down at high η where the true value of ν is largely independent of e. In this case, when both em is small and η^ is large, we can drop the third term in the denominator in Equation 54.
+$$
+ν≈\frac{1}{1+\frac{r}{η^\alphan~_{V}}−\frac{e}{m}(\frac{p_{V}}{η^}−\frac{ABp_{V}}{(A−1)(Bp_{V}−1)})}
+$$
 
-There is a discontinuity in Equation 54 at the value of e/m where the denominator equals zero. This critical value of e/m, em*, is given by Equation 56.(56)em∗=(A−1)(BpV−1)(αη^n~V+r)αn~VpV((A−1)(BpV−1)−ABη^)
+where $r=R⁢g⁢C_{0}$ is the spacer loss rate per minute. The second term in the denominator is the balance of spacer acquisition and spacer loss per naive bacterium: $η^⁢\alpha⁢n~_{V}$ is the rate of spacer acquisition per naive bacterium in the low average immunity limit.
 
-Taking a series expansion in η^ and keeping the first two terms:(57)em∗≈rαn~VpV+η^pV+ABrη^αn~VpV(A−1)(BpV−1)
+The third term in the denominator is negative for the parameters we use, but this is not necessarily true in general. It is negative if $η^AB<(A−1)(Bp_{V}−1)$, which for the values of $A$ and $B⁢p_{V}$ we use (fixed across all simulations) is true for $η<0.0113$.
 
-At high η, the middle term dominates, and at small η, the first two terms dominate (since the third term is ≈9.8⁢η^ and 1/pV=50). This transition governs the change between the low e and high e regimes; Equation 58 is plotted in Figure 3—figure supplement 2 and Figure 3—figure supplement 3.(58)em∗≈rαn~VpV+η^pV
+From this expression for $ν$ we learn the following:
 
-If we substitute this critical value of e/m into the mean-field equations and take η to 0, we recover the no-CRISPR mean-field solutions for nV, nB, and C. Since this also corresponds to ν=0, this seems to explain why several simulation values of the phage establishment probability go to 0 around effective e=0.1 for small η and small C0 (Figure 30). Despite the presence of spacers with non-zero effectiveness, the population appears to behave as if there is no CRISPR near this point, which removes the fitness advantage of new phage mutants and lowers their establishment probability. We also see large fluctuations in total bacteria population size near this critical point (Figure 31).
+For $e/m→0$, we define $ν~$:
+
+$$
+ν~=\frac{1}{1+\frac{r}{η^\alphan~_{V}}}
+$$
+
+Equation 54 expression breaks down at high $η$ where the true value of $ν$ is largely independent of $e$. In this case, when both $\frac{e}{m}$ is small and $η^$ is large, we can drop the third term in the denominator in Equation 54.
+
+There is a discontinuity in Equation 54 at the value of $e/m$ where the denominator equals zero. This critical value of $e/m$, $\frac{e}{m}^{*}$, is given by Equation 56.
+
+$$
+\frac{e}{m}^{∗}=\frac{(A−1)(Bp_{V}−1)(\alphaη^n~_{V}+r)}{\alphan~_{V}p_{V}((A−1)(Bp_{V}−1)−ABη^)}
+$$
+
+Taking a series expansion in $η^$ and keeping the first two terms:
+
+$$
+\frac{e}{m}^{∗}≈\frac{r}{\alphan~_{V}p_{V}}+\frac{η^}{p_{V}}+\frac{ABrη^}{\alphan~_{V}p_{V}(A−1)(Bp_{V}−1)}
+$$
+
+At high $η$, the middle term dominates, and at small $η$, the first two terms dominate (since the third term is $≈9.8⁢η^$ and $1/p_{V}=50$). This transition governs the change between the low $e$ and high $e$ regimes; Equation 58 is plotted in Figure 3—figure supplement 2 and Figure 3—figure supplement 3.
+
+$$
+\frac{e}{m}^{∗}≈\frac{r}{\alphan~_{V}p_{V}}+\frac{η^}{p_{V}}
+$$
+
+If we substitute this critical value of $e/m$ into the mean-field equations and take $η$ to 0, we recover the no-CRISPR mean-field solutions for $n_{V}$, $n_{B}$, and $C$. Since this also corresponds to $ν=0$, this seems to explain why several simulation values of the phage establishment probability go to 0 around effective $e=0.1$ for small $η$ and small C0 (Figure 30). Despite the presence of spacers with non-zero effectiveness, the population appears to behave as if there is no CRISPR near this point, which removes the fitness advantage of new phage mutants and lowers their establishment probability. We also see large fluctuations in total bacteria population size near this critical point (Figure 31).
 
 ![Figure 30.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig30-v2.jpg)
 
-**Figure 30.:** vs. effective ν.eThe solid line is the full numerical theoretical solution. The dashed black line is given by Equation 58. Error bars are the standard deviation across three or more independent simulations.
+**Figure 30.:** Fraction of bacteria with spacers $ν$ vs. effective $e$.The solid line is the full numerical theoretical solution. The dashed black line is given by Equation 58. Error bars are the standard deviation across three or more independent simulations.
 
 ![Figure 31.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig31-v2.jpg)
 
-**Figure 31.:** Equation 58.Insets show a smaller x-axis range for the same quantities. Total phage (top left), total bacteria (top right), fraction of bacteria with spacers (bottom left) and total nutrients (bottom right) are plotted. X error bars are the standard deviation across three or more independent simulations.
+**Figure 31.:** Insets show a smaller x-axis range for the same quantities. Total phage (top left), total bacteria (top right), fraction of bacteria with spacers (bottom left) and total nutrients (bottom right) are plotted. X error bars are the standard deviation across three or more independent simulations.
 
-Another way to understand the critical point is to look at the difference in relative fitness between bacteria with and without spacers, nBs and nB0:(59)nBs˙nBs−nB0˙nB0=−r(1+nBsnB0)+αnVpVeeff+α(1−pV)ηnV(nB0nBs−1)
+Another way to understand the critical point is to look at the difference in relative fitness between bacteria with and without spacers, $n_{B}^{s}$ and $n_{B}^{0}$:
 
-Now if effective e is given by Equation 58:(60)nBs˙nBs−nB0˙nB0=−rnBsnB0+α(1−pV)ηnVnB0nBs
+$$
+\frac{n_{B}^{s}˙}{n_{B}^{s}}−\frac{n_{B}^{0}˙}{n_{B}^{0}}=−r(1+\frac{n_{B}^{s}}{n_{B}^{0}})+\alphan_{V}p_{V}e_{eff}+\alpha(1−p_{V})ηn_{V}(\frac{n_{B}^{0}}{n_{B}^{s}}−1)
+$$
 
-Equation 60 indicates that at the critical value of effective e, the fitness difference is exactly given by the balance of spacer acquisition and spacer loss. Below this critical point, there are additional constant negative terms, and for the same values of nBs and nB0, the relative fitness of spacer-containing bacteria is lower than naive bacteria; above this point, it is higher. At the critical point, the immunity boost from spacers exactly cancels out spacer loss. It is interesting that for the same reasons that many parameters collapse onto the same curves as a function of average immunity, the value of this critical point is largely independent of the parameters of CRISPR immunity and occurs at a value of effective e≈10-1 regardless of μ, e, or C0.
+Now if effective $e$ is given by Equation 58:
 
-## Large e approximation for ν
+$$
+\frac{n_{B}^{s}˙}{n_{B}^{s}}−\frac{n_{B}^{0}˙}{n_{B}^{0}}=−r\frac{n_{B}^{s}}{n_{B}^{0}}+\alpha(1−p_{V})ηn_{V}\frac{n_{B}^{0}}{n_{B}^{s}}
+$$
 
-In the limit of e→1 and small η, we find the following approximate solution for ν by setting e=1 and taking a series expansion in η.(61)ν≈α(BpV−1)(f+R−1)+g(f+R)αBpV(f+R−1)+gRη^pV(f+R−1)(α(BpV−1)(f+R−1)+g(f+R))
+Equation 60 indicates that at the critical value of effective $e$, the fitness difference is exactly given by the balance of spacer acquisition and spacer loss. Below this critical point, there are additional constant negative terms, and for the same values of $n_{B}^{s}$ and $n_{B}^{0}$, the relative fitness of spacer-containing bacteria is lower than naive bacteria; above this point, it is higher. At the critical point, the immunity boost from spacers exactly cancels out spacer loss. It is interesting that for the same reasons that many parameters collapse onto the same curves as a function of average immunity, the value of this critical point is largely independent of the parameters of CRISPR immunity and occurs at a value of effective $e≈10^{-1}$ regardless of $\mu$, $e$, or C0.
 
-Equation 61 is plotted in Figure 3—figure supplement 2 in red. The second term proportional to η^ is tiny compared to the first for all values of η we use.
+#### Large e approximation for ν
 
-## Approximation for Text
+In the limit of $e→1$ and small $η$, we find the following approximate solution for $ν$ by setting $e=1$ and taking a series expansion in $η$.
 
-If we evaluate the mean phage time to extinction (‘Neutral time to extinction from backward master equation’) at the deterministic mean phage clone size, we can approximate nVi≈nVm and nBi≈nBsm as before:(62)Text≈2nVm(1+lnm)gC0B(B−2)αpVnB(1−νem)+F+αnB
+$$
+ν≈\frac{\alpha(Bp_{V}−1)(f+R−1)+g(f+R)}{\alphaBp_{V}(f+R−1)}+\frac{gRη^}{p_{V}(f+R−1)(\alpha(Bp_{V}−1)(f+R−1)+g(f+R))}
+$$
 
-We expand nV and nB in powers of e/m:(63)nV=gC0f(1−f)(A−1)αpV(1−f+Af)+eνmC0[−fgαpV−1−fpV(1−f+Af)+ABf(1−f)(1−f+Af)2]+O(e/m)2(64)nB=C0(1−f)A+eνm[BFpVα(BpV−1)2]+O(e/m)2
+Equation 61 is plotted in Figure 3—figure supplement 2 in red. The second term proportional to $η^$ is tiny compared to the first for all values of $η$ we use.
 
-Note that ν never appears without e/m beside it in these expressions, so we will use the zeroth-order expression for ν (Equation 55) which still allows us to keep e/m to first order elsewhere.(65)ν~=11+rη^αn~V+O(e/m)
+#### Approximation for Text
 
-Substituting Equations 63–65 into Text:(66)Text≈2(1+lnm)f(B−1)n~Vm(1−1BpV)+em2(1+lnm)[2C02fgη^(1−A)((BpV−2)(g−A2fg1−f)+2gA1−f(1+f(BpV−2)))αpV2B(B−1)(1+Af1−f)2(η^gfC0(1−A)−pVr(1+Af1−f))]
+If we evaluate the mean phage time to extinction (‘Neutral time to extinction from backward master equation’) at the deterministic mean phage clone size, we can approximate $n_{V}^{i}≈\frac{n_{V}}{m}$ and $n_{B}^{i}≈\frac{n_{B}^{s}}{m}$ as before:
 
-The second term is order em2, which we drop, giving the following approximation for the mean phage time to extinction (plotted in Figure 32):(67)Text≈2(1+lnm)f(B−1)n~Vm(1−1BpV)
+$$
+T_{ext}≈\frac{2\frac{n_{V}}{m}(1+lnm)gC_{0}}{B(B−2)\alphap_{V}n_{B}(1−ν\frac{e}{m})+F+\alphan_{B}}
+$$
+
+We expand $n_{V}$ and $n_{B}$ in powers of $e/m$:
+
+$$
+n_{V}=\frac{gC_{0}f(1−f)(A−1)}{\alphap_{V}(1−f+Af)}+\frac{eν}{m}C_{0}[−\frac{fg}{\alphap_{V}}−\frac{1−f}{p_{V}(1−f+Af)}+\frac{ABf(1−f)}{(1−f+Af)^{2}}]+O(e/m)^{2}
+$$
+
+
+
+$$
+n_{B}=\frac{C_{0}(1−f)}{A}+\frac{eν}{m}[\frac{BFp_{V}}{\alpha(Bp_{V}−1)^{2}}]+O(e/m)^{2}
+$$
+
+Note that $ν$ never appears without $e/m$ beside it in these expressions, so we will use the zeroth-order expression for $ν$ (Equation 55) which still allows us to keep $e/m$ to first order elsewhere.
+
+$$
+ν~=\frac{1}{1+\frac{r}{η^\alphan~_{V}}}+O(e/m)
+$$
+
+Substituting Equations 63–65 into $T_{ext}$:
+
+$$
+T_{ext}≈\frac{2(1+lnm)}{f(B−1)}\frac{n~_{V}}{m}(1−\frac{1}{Bp_{V}})+\frac{e}{m^{2}}(1+lnm)[\frac{2C_{0}^{2}fgη^(1−A)((Bp_{V}−2)(g−\frac{A^{2}fg}{1−f})+\frac{2gA}{1−f}(1+f(Bp_{V}−2)))}{\alphap_{V}^{2}B(B−1)(1+\frac{Af}{1−f})^{2}(η^gfC_{0}(1−A)−p_{V}r(1+\frac{Af}{1−f}))}]
+$$
+
+The second term is order $\frac{e}{m^{2}}$, which we drop, giving the following approximation for the mean phage time to extinction (plotted in Figure 32):
+
+$$
+T_{ext}≈\frac{2(1+lnm)}{f(B−1)}\frac{n~_{V}}{m}(1−\frac{1}{Bp_{V}})
+$$
 
 ![Figure 32.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig32-v2.jpg)
 
-**Figure 32.:** Koskella, 2014).The full theoretical predicted value of  is used in the approximate expression.m
+**Figure 32.:** The full theoretical predicted value of $m$ is used in the approximate expression.
 
-Here again we are using the phage population size independent of CRISPR (n~V). Notably this is independent of η and e (except implicitly in m) but is still extremely close to the full theoretical quantity.
+Here again we are using the phage population size independent of CRISPR ($n~_{V}$). Notably this is independent of $η$ and $e$ (except implicitly in $m$) but is still extremely close to the full theoretical quantity.
 
 From Equation 67 we learn:
 
-The 1+ln⁢m term is more difficult to parse. A hand-wavy intuition is that while larger m sometimes means smaller clone size and shorter extinction times (n~Vm), it is also related to increased phage success in the population, and so the 1+ln⁢m in the numerator softens the straight inverse dependence on m through clone size.
+The $1+ln⁢m$ term is more difficult to parse. A hand-wavy intuition is that while larger $m$ sometimes means smaller clone size and shorter extinction times ($\frac{n~_{V}}{m}$), it is also related to increased phage success in the population, and so the $1+ln⁢m$ in the numerator softens the straight inverse dependence on $m$ through clone size.
 
-## Approximation for Pest
+#### Approximation for Pest
 
-Now we approximate the probability of phage clone establishment.(68)Pest=2s0B(s0+δ0)
+Now we approximate the probability of phage clone establishment.
 
-Recall that s0=β0⁢(B-1)-δ0=α⁢nB⁢(B⁢pV-1)-F, β0=nB⁢α⁢pV, and δ0=F+α⁢nB⁢(1-pV). These all depend on nB, so plugging in Equation 42 for nB, we get(69)Pest=2eνm(B−1)
+$$
+P_{est}=\frac{2s_{0}}{B(s_{0}+\delta_{0})}
+$$
 
-Equation 69 with ν given by Equation 54 is plotted in blue in Figure 3—figure supplement 2. The same expression with e=0 is plotted in green. There is a discontinuity in ν~ when the third term in the denominator becomes large, which is why the blue lines do not extend to large effective e. These two approximations bound the full solution at low effective e.
+Recall that $s_{0}=\beta_{0}⁢(B-1)-\delta_{0}=\alpha⁢n_{B}⁢(B⁢p_{V}-1)-F$, $\beta_{0}=n_{B}⁢\alpha⁢p_{V}$, and $\delta_{0}=F+\alpha⁢n_{B}⁢(1-p_{V})$. These all depend on $n_{B}$, so plugging in Equation 42 for $n_{B}$, we get
 
-## Approximation for phage mutation rate
+$$
+P_{est}=\frac{2eν}{m(B−1)}
+$$
 
-The effective phage mutation rate (new phages per minute, μ¯) is given by Equation 70. In general, μ¯ depends both explicitly on e and m and implicitly through nV, nB, and ν. We do the same small e/m approximation for μ¯ as above, where we expand nV, nB, and ν in e/m (nV≈n~V+em⁢nV1, etc.). The zeroth order approximation (e/m=0) does not change μ¯ much at all across the whole range of parameters we investigated (Equation 71 and Figure 33).(70)μ¯=αB(1−e−μL)pVnVnB(1−eνm)1gC0(71)μ¯=αB(1−e−μL)pVgC0[n~Vn~B+em(nV1n~B+n~VnB1−ν~n~Vn~B)]+O(e/m)2
+Equation 69 with $ν$ given by Equation 54 is plotted in blue in Figure 3—figure supplement 2. The same expression with $e=0$ is plotted in green. There is a discontinuity in $ν~$ when the third term in the denominator becomes large, which is why the blue lines do not extend to large effective $e$. These two approximations bound the full solution at low effective $e$.
+
+### Approximation for phage mutation rate
+
+The effective phage mutation rate (new phages per minute, $\mu¯$) is given by Equation 70. In general, $\mu¯$ depends both explicitly on $e$ and $m$ and implicitly through $n_{V}$, $n_{B}$, and $ν$. We do the same small $e/m$ approximation for $\mu¯$ as above, where we expand $n_{V}$, $n_{B}$, and $ν$ in $e/m$ ($n_{V}≈n~_{V}+\frac{e}{m}⁢n_{V}^{1}$, etc.). The zeroth order approximation ($e/m=0$) does not change $\mu¯$ much at all across the whole range of parameters we investigated (Equation 71 and Figure 33).
+
+$$
+\mu¯=\alphaB(1−e^{−\muL})p_{V}n_{V}n_{B}(1−\frac{eν}{m})\frac{1}{gC_{0}}
+$$
+
+
+
+$$
+\mu¯=\frac{\alphaB(1−e^{−\muL})p_{V}}{gC_{0}}[n~_{V}n~_{B}+\frac{e}{m}(n_{V}^{1}n~_{B}+n~_{V}n_{B}^{1}−ν~n~_{V}n~_{B})]+O(e/m)^{2}
+$$
 
 ![Figure 33.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig33-v2.jpg)
 
-**Figure 33.:** vs theoretical phage mutation rate.e=0
+**Figure 33.:** Approximate phage mutation rate for $e=0$ vs theoretical phage mutation rate.
 
-Approximation for m
+Approximation for $m$
 
-Finally, we do the same approximation for the complete expression for m, expanding all variables in powers of e/m. The result turns out to be the same as if we combined the individual approximations shown above.(72)m=2eνm(B−1)⏟phage establishment fractionαB(1−e−μL)pVnVnB(1−νem)⏟phage mutation rate2nVm(1+lnm)B(B−2)αpVnB(1−νem)+F+αnB⏟large phage clone time to extinction(73)m=4(1−e−μL)ν~n~V2(B−1)2e(1+ln⁡m)m2+4n~V(1−e−μL)(BC0fgpV(2(B−1)ν~nV1+(B−1)ν1n~V+ν~2(−n~V))+αnB1ν~n~V(BpV−1)2)(B−1)3BC0fgpVe2(1+ln⁡(m))m3+O(e/m)3
+Finally, we do the same approximation for the complete expression for $m$, expanding all variables in powers of $e/m$. The result turns out to be the same as if we combined the individual approximations shown above.
 
-Let’s look at the first term by itself, neglecting (e/m)2 and higher. Rearranging to collect m terms:(74)m3(1+ln⁡m)=4e(1−e−μL)ν~n~V2(B−1)2
+$$
+m=\frac{2eν}{m(B−1)}⏟phage establishment fraction\alphaB(1−e^{−\muL})p_{V}n_{V}n_{B}(1−ν\frac{e}{m})⏟phage mutation rate\frac{2\frac{n_{V}}{m}(1+lnm)}{B(B−2)\alphap_{V}n_{B}(1−ν\frac{e}{m})+F+\alphan_{B}}⏟large phage clone time to extinction
+$$
 
-Let us let the right-hand side of Equation 74 equal a, a new parameter that is independent of m. Now we are approximating:(75)m3=a(1+lnm)
 
-Changing variables to(76)z=1+ln⁡a3+ln⁡z3
 
-We solve this perturbatively. Let z0=1+ln⁡a3, then let z=z0⁢(1+δ) where we assume δ is small. Now we are solving for the perturbation: (77)z0(1+δ)=z0+13ln⁡(z0(1+δ))
+$$
+m=\frac{4(1−e^{−\muL})ν~n~_{V}^{2}}{(B−1)^{2}}\frac{e(1+ln⁡m)}{m^{2}}+\frac{4n~_{V}(1−e^{−\muL})(BC_{0}fgp_{V}(2(B−1)ν~n_{V}^{1}+(B−1)ν^{1}n~_{V}+ν~^{2}(−n~_{V}))+\alphan_{B}^{1}ν~n~_{V}(Bp_{V}−1)^{2})}{(B−1)^{3}BC_{0}fgp_{V}}\frac{e^{2}(1+ln⁡(m))}{m^{3}}+O(e/m)^{3}
+$$
 
-We approximate ln⁡(1+δ)≈δ for small δ. This gives(78)δ≈ln⁡z03z0−1(79)m≈(az0(1+ln⁡z03z0−1))13(80)m≈[a(ln⁡(a)+3)(ln⁡(a)+ln⁡(13(ln⁡(a)+3))+2)3(ln⁡(a)+2)]13
+Let’s look at the first term by itself, neglecting $(e/m)^{2}$ and higher. Rearranging to collect $m$ terms:
 
-If a is large, the leading order contribution to m is a1/3.(81)a=4eν~n~V2(1−e−μL)(B−1)2
+$$
+\frac{m^{3}}{(1+ln⁡m)}=\frac{4e(1−e^{−\muL})ν~n~_{V}^{2}}{(B−1)^{2}}
+$$
 
-Measured m vs. a is shown in Figure 34. To get more insight into the dependence of a and m on parameters, we make some approximations. First, since μL<<1, we approximate (1-e-μ⁢L)≈μ⁢L. Then substituting ν~ in a:(82)a≈4eμLη^αn~Vη^αn~V+rn~V2(B−1)2
+Let us let the right-hand side of Equation 74 equal $a$, a new parameter that is independent of $m$. Now we are approximating:
+
+$$
+m^{3}=a(1+lnm)
+$$
+
+Changing variables to
+
+$$
+z=1+\frac{ln⁡a}{3}+\frac{ln⁡z}{3}
+$$
+
+We solve this perturbatively. Let $z_{0}=1+\frac{ln⁡a}{3}$, then let $z=z_{0}⁢(1+\delta)$ where we assume $\delta$ is small. Now we are solving for the perturbation
+
+$$
+z_{0}(1+\delta)=z_{0}+\frac{1}{3}ln⁡(z_{0}(1+\delta))
+$$
+
+We approximate $ln⁡(1+\delta)≈\delta$ for small $\delta$. This gives
+
+$$
+\delta≈\frac{ln⁡z_{0}}{3z_{0}−1}
+$$
+
+
+
+$$
+m≈(az_{0}(1+\frac{ln⁡z_{0}}{3z_{0}−1}))^{\frac{1}{3}}
+$$
+
+
+
+$$
+m≈[\frac{a(ln⁡(a)+3)(ln⁡(a)+ln⁡(\frac{1}{3}(ln⁡(a)+3))+2)}{3(ln⁡(a)+2)}]^{\frac{1}{3}}
+$$
+
+If $a$ is large, the leading order contribution to $m$ is $a^{1/3}$.
+
+$$
+a=\frac{4eν~n~_{V}^{2}(1−e^{−\muL})}{(B−1)^{2}}
+$$
+
+Measured $m$ vs. $a$ is shown in Figure 34. To get more insight into the dependence of $a$ and $m$ on parameters, we make some approximations. First, since $\muL<<1$, we approximate $(1-e^{-\mu⁢L})≈\mu⁢L$. Then substituting $ν~$ in $a$:
+
+$$
+a≈\frac{4e\muL\frac{η^\alphan~_{V}}{η^\alphan~_{V}+r}n~_{V}^{2}}{(B−1)^{2}}
+$$
 
 ![Figure 34.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig34-v2.jpg)
 
-**Figure 34.:** in simulations vs. m as given by aEquation 81.The solid line is  vs. m solved numerically using aEquation 113. The right panel shows the same but with the two lowest values of  removed. Error bars are the standard deviation across three or more independent simulations.η
+**Figure 34.:** Measured mean $m$ in simulations vs. $a$ as given by Equation 81.The solid line is $m$ vs. $a$ solved numerically using Equation 113. The right panel shows the same but with the two lowest values of $η$ removed. Error bars are the standard deviation across three or more independent simulations.
 
-Substituting in n~V:(83)n~V=C0αpV(BpV−1)(1−f)α−fg1+(BpV−1)α/g(84)a≈4eμLη^α(C0αpV(BpV−1)(1−f)α−fg1+(BpV−1)α/g)η^α(C0αpV(BpV−1)(1−f)α−fg1+(BpV−1)α/g)+r(C0αpV(BpV−1)(1−f)α−fg1+(BpV−1)α/g)2(B−1)2
+Substituting in $n~_{V}$:
 
-Now we do an expansion assuming large burst size, B>>1. Expanding in 1/B:(85)a≈4g3C03(1−f)3eημL(1−pV)α2B2pV2(gC0(1−f)η(1−pV)+pVr)+O(1B3)
+$$
+n~_{V}=\frac{C_{0}}{\alphap_{V}}\frac{(Bp_{V}−1)(1−f)\alpha−fg}{1+(Bp_{V}−1)\alpha/g}
+$$
 
-Now if η is small, specifically if pVr>η(1−pV)gC0(1−f), we can expand in η. This assumption roughly amounts to assuming bacterial survival followed by spacer acquisition is rare compared to phage predation and spacer loss.(86)a≈4g3C03(1−f)3eμLα2B2pV3r[η(1−pV)−gC0(1−f)pVrη2(1−pV)2+...]
 
-The 0th-order term captures the trend across a wide range of parameters and gives some insight into parameter dependence (Figure 2C). To summarize: For μL<<1, B>>1 and pVr>η^gC0(1−f):(87)a≈4eμLη^(gC0(1−f))3B2α2pV3r
 
-Equation 87 implies that m goes like (e⁢μ⁢η)1/3, a non-intuitive dependence.
+$$
+a≈\frac{4e\muL\frac{η^\alpha(\frac{C_{0}}{\alphap_{V}}\frac{(Bp_{V}−1)(1−f)\alpha−fg}{1+(Bp_{V}−1)\alpha/g})}{η^\alpha(\frac{C_{0}}{\alphap_{V}}\frac{(Bp_{V}−1)(1−f)\alpha−fg}{1+(Bp_{V}−1)\alpha/g})+r}(\frac{C_{0}}{\alphap_{V}}\frac{(Bp_{V}−1)(1−f)\alpha−fg}{1+(Bp_{V}−1)\alpha/g})^{2}}{(B−1)^{2}}
+$$
 
-## Speed of evolution
+Now we do an expansion assuming large burst size, $B>>1$. Expanding in $1/B$:
+
+$$
+a≈\frac{4g^{3}C_{0}^{3}(1−f)^{3}eη\muL(1−p_{V})}{\alpha^{2}B^{2}p_{V}^{2}(gC_{0}(1−f)η(1−p_{V})+p_{V}r)}+O(\frac{1}{B}^{3})
+$$
+
+Now if $η$ is small, specifically if $p_{V}r>η(1−p_{V})gC_{0}(1−f)$, we can expand in $η$. This assumption roughly amounts to assuming bacterial survival followed by spacer acquisition is rare compared to phage predation and spacer loss.
+
+$$
+a≈\frac{4g^{3}C_{0}^{3}(1−f)^{3}e\muL}{\alpha^{2}B^{2}p_{V}^{3}r}[η(1−p_{V})−\frac{gC_{0}(1−f)}{p_{V}r}η^{2}(1−p_{V})^{2}+...]
+$$
+
+The 0th-order term captures the trend across a wide range of parameters and gives some insight into parameter dependence (Figure 2C). To summarize: For $\muL<<1$, $B>>1$ and $p_{V}r>η^gC_{0}(1−f)$:
+
+$$
+a≈\frac{4e\muLη^(gC_{0}(1−f))^{3}}{B^{2}\alpha^{2}p_{V}^{3}r}
+$$
+
+Equation 87 implies that $m$ goes like $(e⁢\mu⁢η)^{1/3}$, a non-intuitive dependence.
+
+#### Speed of evolution
 
 This section provides more detail on our calculation of the speed of phage evolution presented in ‘Dynamics are determined by diversity’.
 
 The speed of evolution of a population is often taken as the rate at which its genetic structure changes over time. For example, Betts et al. measure the rate of evolution in a bacteria-phage coevolution experiment by calculating the Euclidean genetic distance between populations at different time points (Betts et al., 2018), and Rouzine and Rozhnova calculate the rate of substitution (Rouzine and Rozhnova, 2018). Speed of evolution is sometimes defined more functionally as the rate of change of a population’s fitness over time (see Desai and Fisher, 2007; Desai et al., 2007; Rouzine and Rozhnova, 2018).
 
-In our context, the average population fitness does not change over time at steady state (more like a Red Queen scenario than an arms-race scenario) and so we use a measure of genetic distance to calculate the speed of evolution. Instead of Euclidean distance (L2 norm), we use Hamming distance or edit distance (L1 norm). This distance metric is more representative of the process involved in changing sequences since the sequence [1,1] is mutationally twice as far from [0,0] as [0,1]. Our sequence space has as many dimensions as the number of genetic sites, and a population’s 'centre of mass' can be calculated by weighting each sequence ('position') in this space by the frequency of each subpopulation with that sequence. Our effective space is dimension L=30 since each protospacer has 30 sites that can mutate. Each site can have the value 0 or 1 meaning there are 230 possible sequences, but a sequence can differ by at most 30 changes from another sequence. The maximum distance possible in our model using the L1 norm is 30.
+In our context, the average population fitness does not change over time at steady state (more like a Red Queen scenario than an arms-race scenario) and so we use a measure of genetic distance to calculate the speed of evolution. Instead of Euclidean distance (L2 norm), we use Hamming distance or edit distance (L1 norm). This distance metric is more representative of the process involved in changing sequences since the sequence [1,1] is mutationally twice as far from [0,0] as [0,1]. Our sequence space has as many dimensions as the number of genetic sites, and a population’s 'centre of mass' can be calculated by weighting each sequence ('position') in this space by the frequency of each subpopulation with that sequence. Our effective space is dimension $L=30$ since each protospacer has 30 sites that can mutate. Each site can have the value 0 or 1 meaning there are 230 possible sequences, but a sequence can differ by at most 30 changes from another sequence. The maximum distance possible in our model using the L1 norm is 30.
 
-For example: if L=2 and there are 20 phages with the sequence [0,1] and 10 phages with the sequence [1,1], then the centre of mass in the two-dimensional space is [13,1]:Rx=130(20×0+10×1)=1/3xRy=130(20×1+10×1)=1y
+For example: if $L=2$ and there are 20 phages with the sequence [0,1] and 10 phages with the sequence [1,1], then the centre of mass in the two-dimensional space is $[\frac{1}{3},1]$:
 
-If the ancestor phage is [0,0], then the centre of mass distance is 1+1/3=43. If the ancestor sequence is at one of the corners (i.e. only values of 0 or 1), calculating the centre of mass in this manner is the same as calculating the population-weighted average distance from the ancestor: 20 phages are 1 mutation away, 10 are 2 mutations away, therefore the average distance is (20+20)/30=43. However, if the ancestor sequence is not at a corner (i.e. if comparing two centres of mass), the sum of distances gives larger values than the difference of centres of mass. The sum of distances is a measure of the spread, while the change in centre of mass is a measure of the speed of evolution.
+$$
+R_{x}=\frac{1}{30}(20\times0+10\times1)=1/3x
+$$
 
-We can look at the distance of the phage and bacteria population in simulations from the ancestor sequence over time to get an idea of how the population moves through sequence space. Figures 35 and 36 show the mutational distance for phage and bacteria over time from either the ancestor phage sequence or a centre of mass starting point later in the simulation, for low (Figure 35) and high (Figure 36) values of η.
+
+
+$$
+R_{y}=\frac{1}{30}(20\times1+10\times1)=1y
+$$
+
+If the ancestor phage is [0,0], then the centre of mass distance is $1+1/3=\frac{4}{3}$. If the ancestor sequence is at one of the corners (i.e. only values of 0 or 1), calculating the centre of mass in this manner is the same as calculating the population-weighted average distance from the ancestor: 20 phages are 1 mutation away, 10 are 2 mutations away, therefore the average distance is $(20+20)/30=\frac{4}{3}$. However, if the ancestor sequence is not at a corner (i.e. if comparing two centres of mass), the sum of distances gives larger values than the difference of centres of mass. The sum of distances is a measure of the spread, while the change in centre of mass is a measure of the speed of evolution.
+
+We can look at the distance of the phage and bacteria population in simulations from the ancestor sequence over time to get an idea of how the population moves through sequence space. Figures 35 and 36 show the mutational distance for phage and bacteria over time from either the ancestor phage sequence or a centre of mass starting point later in the simulation, for low (Figure 35) and high (Figure 36) values of $η$.
 
 ![Figure 35.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig35-v2.jpg)
 
-**Figure 35.:** The centre of mass distance is plotted in blue for phage (left) and bacteria (centre). Grey circles represent the size of clonal subpopulations at each distance from the ancestor sequence (arbitrary scale). The third panel shows the weighted average distance of the population from the centre of mass at that timepoint, a measure of the spread in sequences present at any time. In this simulation , C0=104, η=10-5, μ=10-6, and mean e=0.95.m=2.8
+**Figure 35.:** The centre of mass distance is plotted in blue for phage (left) and bacteria (centre). Grey circles represent the size of clonal subpopulations at each distance from the ancestor sequence (arbitrary scale). The third panel shows the weighted average distance of the population from the centre of mass at that timepoint, a measure of the spread in sequences present at any time. In this simulation $C_{0}=10^{4}$, $η=10^{-5}$, $\mu=10^{-6}$, $e=0.95$, and mean $m=2.8$.
 
 ![Figure 36.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig36-v2.jpg)
 
-**Figure 36.:** The centre of mass distance is plotted in blue for phage (left) and bacteria (centre). Grey circles represent the size of clonal subpopulations at each distance from the ancestor sequence (arbitrary scale). The third panel shows the weighted average distance of the population from the centre of mass at that timepoint, a measure of the spread in sequences present at any time. In this simulation , C0=104, η=10-2, μ=10-6, and mean e=0.95.m=14.5
+**Figure 36.:** The centre of mass distance is plotted in blue for phage (left) and bacteria (centre). Grey circles represent the size of clonal subpopulations at each distance from the ancestor sequence (arbitrary scale). The third panel shows the weighted average distance of the population from the centre of mass at that timepoint, a measure of the spread in sequences present at any time. In this simulation $C_{0}=10^{4}$, $η=10^{-2}$, $\mu=10^{-6}$, $e=0.95$, and mean $m=14.5$.
 
-Since the maximum distance in our model is 30, there comes a point in distance where mutations back in the direction of the ancestor become likely. The fraction of available mutations fm that move away from the ancestor decreases as the distance increases: fm=L-distanceL. For L=30, this means that at a distance of 15 the population is equally likely to move towards or away from the ancestor. This is apparent in Figure 35 – the distance from the ancestor phage reaches 15 and then begins to decrease. In other simulations, the distance continues to increase and does not come close to 15 (Figure 36).
+Since the maximum distance in our model is 30, there comes a point in distance where mutations back in the direction of the ancestor become likely. The fraction of available mutations fm that move away from the ancestor decreases as the distance increases: $f_{m}=\frac{L-distance}{L}$. For $L=30$, this means that at a distance of 15 the population is equally likely to move towards or away from the ancestor. This is apparent in Figure 35 – the distance from the ancestor phage reaches 15 and then begins to decrease. In other simulations, the distance continues to increase and does not come close to 15 (Figure 36).
 
-## Measuring speed of evolution
+### Measuring speed of evolution
 
-The speed of evolution in this framework is the distance the population travels in spacer space in a certain amount of time. In principle, this is straightforward to calculate, but we find that the distance between populations does not increase linearly with the time interval used to calculate the distance (Figure 37 left panel). This means that measured speed will depend on the time interval used to calculate it (Figure 37 right panel), and there is no clear way to choose one particular time interval over another. We go to the long Δ⁢t limit and measure the maximum distance from the ancestor reached by a population in a set number of bacterial generations. The maximum distance reached by bacteria and phage populations is highly correlated with each other within a simulation and is also repeatable across independent simulations (Figure 38). Speed in this definintion increases with phage mutant initial fitness (Figure 39).
+The speed of evolution in this framework is the distance the population travels in spacer space in a certain amount of time. In principle, this is straightforward to calculate, but we find that the distance between populations does not increase linearly with the time interval used to calculate the distance (Figure 37 left panel). This means that measured speed will depend on the time interval used to calculate it (Figure 37 right panel), and there is no clear way to choose one particular time interval over another. We go to the long $Δ⁢t$ limit and measure the maximum distance from the ancestor reached by a population in a set number of bacterial generations. The maximum distance reached by bacteria and phage populations is highly correlated with each other within a simulation and is also repeatable across independent simulations (Figure 38). Speed in this definintion increases with phage mutant initial fitness (Figure 39).
 
 ![Figure 37.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig37-v2.jpg)
 
-**Figure 37.:** (left) and the distance divided by the time interval t-Δ⁢t (right).Δ⁢tDistances are averaged over the entire simulation at steady state; error bars are standard deviation. Simulation parameters are , C0=104, η=10-2, μ=10-6, and mean e=0.95.m=14.5
+**Figure 37.:** Phage and bacteria centre of mass distance from the centre of mass at time $t-Δ⁢t$ (left) and the distance divided by the time interval $Δ⁢t$ (right).Distances are averaged over the entire simulation at steady state; error bars are standard deviation. Simulation parameters are $C_{0}=10^{4}$, $η=10^{-2}$, $\mu=10^{-6}$, $e=0.95$, and mean $m=14.5$.
 
 ![Figure 38.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig38-v2.jpg)
 
@@ -648,89 +1463,97 @@ The speed of evolution in this framework is the distance the population travels 
 
 ![Figure 39.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig39-v2.jpg)
 
-**Figure 39.:** , e=0.95, and η=10-3.μ=3×10-7Error bars are the standard deviation across multiple independent simulations and are shown in the positive direction only.
+**Figure 39.:** Phage mutational distance per generation vs. initial phage mutant fitness for simulations with $e=0.95$, $η=10^{-3}$, and $\mu=3\times10^{-7}$.Error bars are the standard deviation across multiple independent simulations and are shown in the positive direction only.
 
-The total number of phage establishments in a simulation determines the maximum distance that the population can move away from the ancestor, but if diversity is high, many of those establishments will not actually move the population further away. A simple approximate scaling for this process is that total distance is proportional to 1m: if there are m established clones and one of them is the furthest away from the ancestor, there is a 1m probability that the next establishment will come from the furthest-away clone. This is similar to Childs et al., 2012 where if they have v protospacers per phage (and one dominant bacterial species with a spacer), there is only a 1/v chance that a random mutation will actually be an escape mutation.
+The total number of phage establishments in a simulation determines the maximum distance that the population can move away from the ancestor, but if diversity is high, many of those establishments will not actually move the population further away. A simple approximate scaling for this process is that total distance is proportional to $\frac{1}{m}$: if there are $m$ established clones and one of them is the furthest away from the ancestor, there is a $\frac{1}{m}$ probability that the next establishment will come from the furthest-away clone. This is similar to Childs et al., 2012 where if they have $v$ protospacers per phage (and one dominant bacterial species with a spacer), there is only a $1/v$ chance that a random mutation will actually be an escape mutation.
 
-Since m is a product of mutation rate, establishment probability, and extinction time, plotting distance per establishment vs. m is equivalent to plotting speed vs. time to extinction (Equation 88). We have m=Pest⁢μ¯⁢T, where Pest is the probability of establishment for a new phage clone, μ¯ is the effective phage mutation rate, and T is the mean time to extinction for large phage clones. Let the mutational distance from the ancestor be Δ=v⁢τ, where v is the 'speed' and τ is a fixed time interval used to measure distance.(88)ΔPestμ¯τ∝1mvτPestμ¯τ∝1Pestμ¯Tv∝1T
+Since $m$ is a product of mutation rate, establishment probability, and extinction time, plotting distance per establishment vs. $m$ is equivalent to plotting speed vs. time to extinction (Equation 88). We have $m=P_{est}⁢\mu¯⁢T$, where $P_{est}$ is the probability of establishment for a new phage clone, $\mu¯$ is the effective phage mutation rate, and $T$ is the mean time to extinction for large phage clones. Let the mutational distance from the ancestor be $Δ=v⁢\tau$, where $v$ is the 'speed' and $\tau$ is a fixed time interval used to measure distance.
 
-Figure 6—figure supplement 2 shows distance per establishment vs. m and speed vs. T. Relating distance and speed to the time to extinction gives further insight into the underlying parameter dependencies: we know from other approximations ('Analytic approximations for diversity') that T∝n~V⁢1+ln⁡mm, and for small m we can substitute our approximation for m, giving T∝1e⁢μ⁢η13 and v∝e⁢μ⁢η13. Applying the same approximation here as for m above (Equation 87), with Te⁢x⁢t≈2⁢n~Vf⁢(B-1)⁢m⁢(1-1B⁢pV) (Figure 6):(89)v≈αBf(eμηL(1−pV)2α2B2r)13
+$$
+\frac{Δ}{P_{est}\mu¯\tau}∝\frac{1}{m}\frac{v\tau}{P_{est}\mu¯\tau}∝\frac{1}{P_{est}\mu¯T}v∝\frac{1}{T}
+$$
 
-## Spread in sequence space
+Figure 6—figure supplement 2 shows distance per establishment vs. $m$ and speed vs. $T$. Relating distance and speed to the time to extinction gives further insight into the underlying parameter dependencies: we know from other approximations ('Analytic approximations for diversity') that $T∝n~_{V}⁢\frac{1+ln⁡m}{m}$, and for small $m$ we can substitute our approximation for $m$, giving $T∝\frac{1}{e⁢\mu⁢η}^{\frac{1}{3}}$ and $v∝e⁢\mu⁢η^{\frac{1}{3}}$. Applying the same approximation here as for $m$ above (Equation 87), with $T_{e⁢x⁢t}≈\frac{2⁢n~_{V}}{f⁢(B-1)⁢m}⁢(1-\frac{1}{B⁢p_{V}})$ (Figure 6):
 
-We can ask how spread out the population is in sequence space – how far is the average clone from the centre of mass? When there are more clones (larger m), the population spread is larger (Figures 40 and 41). The spread also depends on initial conditions, at least on the timescale of our simulations: simulations that start with one phage clone (Figure 40) have lower spread than simulations that start with 50 phage clones (Figure 41). In principle, waiting for a very long time in simulations that begin with 1 clone should produce results in line with simulations that start with 50 clones as different clans diverge from each other over time. This suggests that there are multiple features with which we could define steady state, and they do not all reach true steady state at the same time. Total population size equilibrates fastest, followed by diversity (Figure 8), and then spread in sequence space.
+$$
+v≈\alphaBf(\frac{e\muηL(1−p_{V})}{2\alpha^{2}B^{2}r})^{\frac{1}{3}}
+$$
+
+### Spread in sequence space
+
+We can ask how spread out the population is in sequence space – how far is the average clone from the centre of mass? When there are more clones (larger $m$), the population spread is larger (Figures 40 and 41). The spread also depends on initial conditions, at least on the timescale of our simulations: simulations that start with one phage clone (Figure 40) have lower spread than simulations that start with 50 phage clones (Figure 41). In principle, waiting for a very long time in simulations that begin with 1 clone should produce results in line with simulations that start with 50 clones as different clans diverge from each other over time. This suggests that there are multiple features with which we could define steady state, and they do not all reach true steady state at the same time. Total population size equilibrates fastest, followed by diversity (Figure 8), and then spread in sequence space.
 
 ![Figure 40.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig40-v2.jpg)
 
-**Figure 40.:** for simulations with one original phage clone ancestor.mThe dashed line is , a purely phenomenological choice. Error bars are the standard deviation across three or more independent simulations.m-1
+**Figure 40.:** Average population distance from the centre of mass at steady state for bacteria (left) and phages (right) vs. mean $m$ for simulations with one original phage clone ancestor.The dashed line is $\sqrt{m}-1$, a purely phenomenological choice. Error bars are the standard deviation across three or more independent simulations.
 
 ![Figure 41.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig41-v2.jpg)
 
-**Figure 41.:** for simulations with 50 original phage clones.mThe dashed line is  and the solid line is m-1. Error bars are the standard deviation across three or more independent simulations.m-1
+**Figure 41.:** Average population distance from the centre of mass for bacteria (left) and phages (right) vs. mean $m$ for simulations with 50 original phage clones.The dashed line is $\sqrt{m}-1$ and the solid line is $m-1$. Error bars are the standard deviation across three or more independent simulations.
 
-## Number and size of clone clans
+### Number and size of clone clans
 
 Watching a simulation visualization of spacer and protospacer types, it is apparent that over time several different lineages may appear and become separated from each other in genome space (Figure 42). What determines how many separate 'clans' there are at steady state? What is the characteristic size of a clan? How does this depend on parameters? To address this question, we perform agglomerative clustering on protospacer and spacer sequences to identify separated groups of sequences. We use the L1 norm to define distance, which as described above is the most natural distance metric for sequence changes by mutation. Clusters are grouped using the ‘single’ linkage criterion in scikit-learn AgglomerativeClustering: the cluster distance is the minimum of the distances between all observations of the two sets. In other words, a collection of sequences that differ from any other sequence in the cluster by one mutation are all grouped together, even if some of the sequences differ by more than one from each other. This is a reasonable criterion for identifying groups of sequences that are related by descent and are actively feeding each other with mutations.
 
 ![Figure 42.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig42-v2.jpg)
 
-**Figure 42.:** , C0=104, η=10-3, μ=10-5, initial e=0.95.m=1Phages are on the left, bacteria with spacers on the right.
+**Figure 42.:** A frame from a simulation movie at 5000 generations with $C_{0}=10^{4}$, $η=10^{-3}$, $\mu=10^{-5}$, $e=0.95$, initial $m=1$.Phages are on the left, bacteria with spacers on the right.
 
 Figures 43 and 44 show the resulting dendrogram from this clustering process for phages and bacteria at one time point for one initial phage clone and 10 initial phage clones. To determine the number of clusters, we use a distance threshold of 2. This separates groups that have no members closer than two mutations away. In reality, these groups may still be linked by descent more recently than other groups (apparent in the dendrograms), but a distance of 2 or more means these groups are likely to remain separate going forward in time since they lack a connecting clone that can be accessed by a single mutation.
 
 ![Figure 43.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig43-v2.jpg)
 
-**Figure 43.:** The number of clusters is determined with a cutoff at a distance of 2. , C0=104, η=10-3, μ=10-5, initial e=0.95.m=1
+**Figure 43.:** The number of clusters is determined with a cutoff at a distance of 2. $C_{0}=10^{4}$, $η=10^{-3}$, $\mu=10^{-5}$, $e=0.95$, initial $m=1$.
 
 ![Figure 44.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig44-v2.jpg)
 
-**Figure 44.:** The number of clusters is determined with a cutoff at a distance of 2. , C0=104, η=10-3, μ=10-5, initial e=0.95.m=10
+**Figure 44.:** The number of clusters is determined with a cutoff at a distance of 2. $C_{0}=10^{4}$, $η=10^{-3}$, $\mu=10^{-5}$, $e=0.95$, initial $m=10$.
 
 Simulations with an initial number of clones greater than 1 converge to a steady-state number of clusters at a different rate than beginning with one clone since clones from a single ancestor remain more related on average than clones from multiple different ancestors (Figures 45 and 46).
 
 ![Figure 45.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig45-v2.jpg)
 
-**Figure 45.:** , C0=104, η=10-3, μ=10-5, initial e=0.95.m=1
+**Figure 45.:** Clan number and size over time in a simulation with $C_{0}=10^{4}$, $η=10^{-3}$, $\mu=10^{-5}$, $e=0.95$, initial $m=1$.
 
 ![Figure 46.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig46-v2.jpg)
 
-**Figure 46.:** , C0=104, η=10-3, μ=10-5, initial e=0.95.m=10
+**Figure 46.:** Clan number and size over time in a simulation with $C_{0}=10^{4}$, $η=10^{-3}$, $\mu=10^{-5}$, $e=0.95$, initial $m=10$.
 
-We calculate the average number of clans at steady state and the average clan size for bacteria and phages across all simulations. The number of clans is proportional to m; at high mutation rates the number of clans is approximately m/2. Low mutation rates mean that it takes a long time for the number of clans to equilibrate, which can be seen by contrasting the mutation rate dependence of 10 initial clones (Figure 47) with 1 initial clone (Figure 48).
+We calculate the average number of clans at steady state and the average clan size for bacteria and phages across all simulations. The number of clans is proportional to $m$; at high mutation rates the number of clans is approximately $m/2$. Low mutation rates mean that it takes a long time for the number of clans to equilibrate, which can be seen by contrasting the mutation rate dependence of 10 initial clones (Figure 47) with 1 initial clone (Figure 48).
 
 ![Figure 47.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig47-v2.jpg)
 
-**Figure 47.:** for all simulations that begin with 10 clones.mThe dashed lines are  divided by the mean bacterial clan size (m) and ≈1.3. Error bars are the standard deviation across three or more independent simulations.m/2
+**Figure 47.:** Average clan number vs. $m$ for all simulations that begin with 10 clones.The dashed lines are $m$ divided by the mean bacterial clan size ($≈1.3$) and $m/2$. Error bars are the standard deviation across three or more independent simulations.
 
 ![Figure 48.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig48-v2.jpg)
 
-**Figure 48.:** for all simulations that begin with one clone with m.μ≥10-6The dashed lines are  divided by the mean bacterial clan size and m. Error bars are the standard deviation across three or more independent simulations.m/2
+**Figure 48.:** Average clan number vs. $m$ for all simulations that begin with one clone with $\mu\geq10^{-6}$.The dashed lines are $m$ divided by the mean bacterial clan size and $m/2$. Error bars are the standard deviation across three or more independent simulations.
 
 The regimes of low and high clan number in our model are similar to regimes of virus-host coevolution identified in Marchi et al., 2019: at low virus mutation rates and low mutational jump distances, trajectories move in a straight line in antigenic space, while at higher jump distances, trajectories become more diffusive, the way ours look. At even higher mutation rates and jump sizes, trajectories split into multiple stable coexisting lineages, which is what we see at high diversity.
 
 Based on their parameters and regimes, we expect that increasing cross-reactivity relative to mutation rate in our model should bring our results closer to the ballistic regime.
 
-## Cross-reactivity
+#### Cross-reactivity
 
 In this section, we present additional methods and results for simulations with two types of cross-reactivity relating to results in 'Cross-reactivity leads to dynamically unique evolutionary states'.
 
-In our standard simulations and theory, we assume that pV⁢(i,j) is binary (Equation 6): any mismatch between protospacers and spacers means bacteria no longer have any immune advantage against phage. Here, we discuss results of simulations where pV includes some cross-reactivity so that the more mutations a protospacer contains, the less immunity bacteria have against it.
+In our standard simulations and theory, we assume that $p_{V}⁢(i,j)$ is binary (Equation 6): any mismatch between protospacers and spacers means bacteria no longer have any immune advantage against phage. Here, we discuss results of simulations where $p_{V}$ includes some cross-reactivity so that the more mutations a protospacer contains, the less immunity bacteria have against it.
 
-We explore two types of cross-reactivity: one in which we define pV⁢(i,j) as an exponential function of the mutational distance between a spacer and protospacer (Equation 7), and one in which pV⁢(i,j) is a θ-function of mutational distance (Equation 8). The exponential definition of cross-reactivity is the same as that used in Marchi et al., 2019; Yan et al., 2019 to model viruses evolving in abstract antigen space (Marchi et al., 2019) and in genomic distance space (Yan et al., 2019). Note that our usual binary definition of pV is a special case of Equations 7 and 8 with θ=0. Figure 49 shows these different definitions of pV⁢(i,j) as a function of di⁢j.
+We explore two types of cross-reactivity: one in which we define $p_{V}⁢(i,j)$ as an exponential function of the mutational distance between a spacer and protospacer (Equation 7), and one in which $p_{V}⁢(i,j)$ is a $\theta$-function of mutational distance (Equation 8). The exponential definition of cross-reactivity is the same as that used in Marchi et al., 2019; Yan et al., 2019 to model viruses evolving in abstract antigen space (Marchi et al., 2019) and in genomic distance space (Yan et al., 2019). Note that our usual binary definition of $p_{V}$ is a special case of Equations 7 and 8 with $\theta=0$. Figure 49 shows these different definitions of $p_{V}⁢(i,j)$ as a function of $d_{i⁢j}$.
 
 ![Figure 49.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig49-v2.jpg)
 
-**Figure 49.:** as a function of mutational distance between spacers and protospacers for different definitions and degrees of cross-reactivity.pVDefinitions are plotted for , pV=0.02.e=0.95
+**Figure 49.:** Phage infection success probability $p_{V}$ as a function of mutational distance between spacers and protospacers for different definitions and degrees of cross-reactivity.Definitions are plotted for $p_{V}=0.02$, $e=0.95$.
 
-Cross-reactivity leads to a higher average bacterial immunity against phages for the same parameters (Figures 50 and 51). This means that our assumption that effective e≈e/m, valid for nearly all parameters without cross-reactivity, breaks down when we introduce cross-reactivity. Importantly, this is a quasi-steady-state effect: if we start simulations with more initial clones, clone clans are genetically separated and both mean m and average immunity converge to the binary pV case (Figure 50 right panel).
+Cross-reactivity leads to a higher average bacterial immunity against phages for the same parameters (Figures 50 and 51). This means that our assumption that effective $e≈e/m$, valid for nearly all parameters without cross-reactivity, breaks down when we introduce cross-reactivity. Importantly, this is a quasi-steady-state effect: if we start simulations with more initial clones, clone clans are genetically separated and both mean $m$ and average immunity converge to the binary $p_{V}$ case (Figure 50 right panel).
 
 ![Figure 50.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig50-v2.jpg)
 
-**Figure 50.:** , e=0.95.μ=10-6Dashed lines are simulations with cross-reactivity, solid line is simulations without cross-reactivity. Error bars are the standard deviation across three or more independent simulations.
+**Figure 50.:** Average immunity vs. diversity with different degrees of cross-reactivity for simulations with $e=0.95$, $\mu=10^{-6}$.Dashed lines are simulations with cross-reactivity, solid line is simulations without cross-reactivity. Error bars are the standard deviation across three or more independent simulations.
 
 ![Figure 51.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig51-v2.jpg)
 
-**Figure 51.:** .pVThese simulations begin with one initial phage clone and parameters , C0=104, μ=10-6, η=0.0001.e=0.95
+**Figure 51.:** Mean phage clone size (top) and mean bacteria clone size (bottom) relative to time of phage mutation for different definitions of $p_{V}$.These simulations begin with one initial phage clone and parameters $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=0.0001$, $e=0.95$.
 
 Phages are less likely to establish when there is cross-reactivity because phage escape mutations are incomplete (Figure 5A). However, the clones that do survive grow quicker: simulations with high cross-reactivity appear to have a faster mean growth rate for clones, regardless of conditioning on survival (Figure 51).
 
@@ -738,43 +1561,43 @@ Adding cross-reactivity causes some unexpected dynamical behaviours (Figure 52, 
 
 ![Figure 52.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig52-v2.jpg)
 
-**Figure 52.:** These simulations have parameters , C0=104, μ=10-6, η=0.0001.e=0.95
+**Figure 52.:** These simulations have parameters $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=0.0001$, $e=0.95$.
 
 ![Figure 53.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig53-v2.jpg)
 
-**Figure 53.:** ).θ=1This simulation has one initial phage clone and parameters , C0=104, μ=10-6, and η=10-4. Later times in this simulation are shown in e=0.95Figure 55, and earlier times in this simulation are shown in Figure 54.
+**Figure 53.:** Phage clone size (top) and bacteria clone size (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with $\theta=1$).This simulation has one initial phage clone and parameters $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$, and $e=0.95$. Later times in this simulation are shown in Figure 55, and earlier times in this simulation are shown in Figure 54.
 
 ![Figure 54.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig54-v2.jpg)
 
-**Figure 54.:** ).θ=1This simulation has one initial phage clone and parameters , C0=104, μ=10-6, and η=10-4. Later times in this simulation are shown in e=0.95Figure 55.
+**Figure 54.:** Phage clone size (top) and bacteria clone size (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with $\theta=1$).This simulation has one initial phage clone and parameters $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$, and $e=0.95$. Later times in this simulation are shown in Figure 55.
 
 ![Figure 55.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig55-v2.jpg)
 
-**Figure 55.:** ) showing the switch between a travelling wave and low turnover regime.θ=1This simulation has one initial phage clone and parameters , C0=104, μ=10-6, and η=10-4. Earlier times in this simulation are shown in e=0.95Figure 54.
+**Figure 55.:** Phage clone size (top) and bacteria clone size (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with $\theta=1$) showing the switch between a travelling wave and low turnover regime.This simulation has one initial phage clone and parameters $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$, and $e=0.95$. Earlier times in this simulation are shown in Figure 54.
 
-To see this happening, let us look closely at the simulation in Figure 54 at time 3565 (Figure 56). There are three large phage clones and two large bacteria clones (soon to be three). Phage clone 0 is the largest and phage clone 2 is the smallest. Phage clone 0 and phage clone 1 are both either 0 or 1 mutation away from bacteria clones 0 and 1 (Figure 57). Because θ=1, they are all equally fit; effectively they could be considered one large clone. Phage 2, however, is 1 mutation from bacteria clone 1 but 2 mutations from bacteria clone 0, so it now has a much higher fitness than the other two phage clones and grows quickly. But now bacteria clone 1 is also fit against this new mutant, so it too continues growing. This push-pull keeps going with new phage mutants experiencing runaway fitness for a while. This also leads to an asymmetry in clone identity between the populations: because a bacterial clone may be immune to a phage clone with a different but related sequence, we see bacteria clones becoming large after their matching phage clone has gone extinct because they are still resistant to an existing phage clone that is genetically related (Figures 58 and 59).
+To see this happening, let us look closely at the simulation in Figure 54 at time 3565 (Figure 56). There are three large phage clones and two large bacteria clones (soon to be three). Phage clone 0 is the largest and phage clone 2 is the smallest. Phage clone 0 and phage clone 1 are both either 0 or 1 mutation away from bacteria clones 0 and 1 (Figure 57). Because $\theta=1$, they are all equally fit; effectively they could be considered one large clone. Phage 2, however, is 1 mutation from bacteria clone 1 but 2 mutations from bacteria clone 0, so it now has a much higher fitness than the other two phage clones and grows quickly. But now bacteria clone 1 is also fit against this new mutant, so it too continues growing. This push-pull keeps going with new phage mutants experiencing runaway fitness for a while. This also leads to an asymmetry in clone identity between the populations: because a bacterial clone may be immune to a phage clone with a different but related sequence, we see bacteria clones becoming large after their matching phage clone has gone extinct because they are still resistant to an existing phage clone that is genetically related (Figures 58 and 59).
 
 ![Figure 56.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig56-v2.jpg)
 
-**Figure 56.:** Figure 54.Large phage and bacteria clones are numbered in the legend; these numbers correspond to the numbers in Figure 57.
+**Figure 56.:** Large phage and bacteria clones are numbered in the legend; these numbers correspond to the numbers in Figure 57.
 
 ![Figure 57.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig57-v2.jpg)
 
-**Figure 57.:** Figure 56.Dark blue is low infection success, light blue is high infection success.
+**Figure 57.:** Dark blue is low infection success, light blue is high infection success.
 
 ![Figure 58.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig58-v2.jpg)
 
-**Figure 58.:** Figure 54 (, C0=104, μ=10-6).η=10-4Clones in the travelling wave regime (4000–6200 generations, orange) grow much more quickly than clones in the initial low-turnover regime (1000–3200 generations, blue) or the final low turnover regime (7000–10,000 generations, green). The black dashed line is the mean clone size for a simulation with the same parameters but without cross-reactivity.
+**Figure 58.:** Mean phage clone size (top) and mean bacteria clone size (bottom) relative to the time of phage clone mutation, either normalized to surviving clones (left) or averaged over all trajectories (right) for the simulation shown in Figure 54 ($C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$).Clones in the travelling wave regime (4000–6200 generations, orange) grow much more quickly than clones in the initial low-turnover regime (1000–3200 generations, blue) or the final low turnover regime (7000–10,000 generations, green). The black dashed line is the mean clone size for a simulation with the same parameters but without cross-reactivity.
 
 ![Figure 59.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig59-v2.jpg)
 
-**Figure 59.:** Figure 54.(Left) A subset of clone trajectories for phages (top) and bacteria (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with ). Three trajectories are highlighted and coloured to show increasing time. The population is in a regime where matching clones are offset: because clones that are one mutation apart have the same complete immune overlap, the highlighted clones have large bacterial clone size well after the matching phage clone goes extinct. (Right) The clone size of the highlighted trajectories shown as a function of the bacterial marginal immunity against a particular phage clone (top) or the marginal immunity of a particular bacteria clone (bottom).θ=1
+**Figure 59.:** (Left) A subset of clone trajectories for phages (top) and bacteria (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with $\theta=1$). Three trajectories are highlighted and coloured to show increasing time. The population is in a regime where matching clones are offset: because clones that are one mutation apart have the same complete immune overlap, the highlighted clones have large bacterial clone size well after the matching phage clone goes extinct. (Right) The clone size of the highlighted trajectories shown as a function of the bacterial marginal immunity against a particular phage clone (top) or the marginal immunity of a particular bacteria clone (bottom).
 
 This fitness and growth pattern can be seen as a function of the marginal immunity of bacterial clones to the phage population and of the bacterial population to individual phage clones (Figure 59). Average immunity for individual clones, which we call marginal immunity in analogy with Nourmohammad et al., 2016, captures the fitness differences between individual clones that determine their dynamical behaviour. Without cross-reactivity, bacteria clones are only immune to at most one phage clone at a time, though their overall marginal immunity still changes smoothly as the matching phage clone changes size (Figure 60B). When cross-reactivity is added, bacteria may be immune or partially immune to multiple phage clones, and calculating marginal immunity summarizes all of these combined effects on the fitness of a particular clone. Bacteria clones grow larger once their marginal immunity is high, and phage clones grow large once bacterial marginal immunity against them is low. These opposing forces generate Lotka-Volterra oscillations even in the case with no cross-reactivity, though these oscillations are more rapid and persistent when cross-reactivity is added (Figure 60C and D). Phage clones grow quickly when bacteria have low marginal immunity to their sequence, while bacteria clones grow quickly when they have high marginal immunity.
 
 ![Figure 60.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig60-v2.jpg)
 
-**Figure 60.:** (A) A subset of clone trajectories for phages (top) and bacteria (bottom) in a simulation with no cross-reactivity. Transient oscillations occur. One trajectory is highlighted and coloured to show increasing time. (B) The highlighted trajectory in (A) is shown as a function of the marginal immunity for phages (top) and bacteria (bottom). Clones experience an oscillating fitness that depends on their overlap from the other population. Arrows indicate the direction of increasing time in the oscillation. (C) A subset of clone trajectories for phages (top) and bacteria (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with ). The population is in a regime where several clones experience persistent and rapid oscillations. One trajectory is highlighted and coloured to show increasing time. (θ=1D) The highlighted trajectory in (C) is shown as a function of the marginal immunity for phages (top) and bacteria (bottom). Clones experience an oscillating fitness that depends on their overlap from the other population. Arrows indicate the direction of increasing time in the oscillation. For all simulations , and C0=104,e=0.95,η=10-4.μ=10-5
+**Figure 60.:** (A) A subset of clone trajectories for phages (top) and bacteria (bottom) in a simulation with no cross-reactivity. Transient oscillations occur. One trajectory is highlighted and coloured to show increasing time. (B) The highlighted trajectory in (A) is shown as a function of the marginal immunity for phages (top) and bacteria (bottom). Clones experience an oscillating fitness that depends on their overlap from the other population. Arrows indicate the direction of increasing time in the oscillation. (C) A subset of clone trajectories for phages (top) and bacteria (bottom) in a simulation with cross-reactivity (step function CRISPR effectiveness with $\theta=1$). The population is in a regime where several clones experience persistent and rapid oscillations. One trajectory is highlighted and coloured to show increasing time. (D) The highlighted trajectory in (C) is shown as a function of the marginal immunity for phages (top) and bacteria (bottom). Clones experience an oscillating fitness that depends on their overlap from the other population. Arrows indicate the direction of increasing time in the oscillation. For all simulations $C_{0}=10^{4},e=0.95,η=10^{-4}$, and $\mu=10^{-5}$.
 
 Clones grow more quickly on average in the travelling wave regime than in other regimes in the same simulation (Figure 58).
 
@@ -782,63 +1605,71 @@ In Figure 4, we show phylogenies of four simulations with different amounts and 
 
 ![Figure 61.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig61-v2.jpg)
 
-**Figure 61.:** Figure 4: no cross-reactivity (A) and step-function cross-reactivity with  (B, θ=1) (θ=2C), and  (θ=3D).All simulations share all other parameters: . Phage clones are plotted at the first time they pass a population size of 2 (to remove clutter from many new mutations destined for extinction), and the size of each circle is logarithmically proportional to the maximum size reached by that clone. Colours indicate the time of extinction of each clone. For each simulation with cross-reactivity, the left inset shows phage (top) and bacteria (bottom) clone sizes over time; colours indicate unique clone identities.C0=104,η=10-4,μ=10-5,e=0.95
+**Figure 61.:** Phage clone phylogenies for four simulations with different cross-reactivities and a higher mutation rate than shown in main text Figure 4: no cross-reactivity (A) and step-function cross-reactivity with $\theta=1$ (B, $\theta=2$) (C), and $\theta=3$ (D).All simulations share all other parameters: $C_{0}=10^{4},η=10^{-4},\mu=10^{-5},e=0.95$. Phage clones are plotted at the first time they pass a population size of 2 (to remove clutter from many new mutations destined for extinction), and the size of each circle is logarithmically proportional to the maximum size reached by that clone. Colours indicate the time of extinction of each clone. For each simulation with cross-reactivity, the left inset shows phage (top) and bacteria (bottom) clone sizes over time; colours indicate unique clone identities.
 
 ![Figure 62.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig62-v2.jpg)
 
-**Figure 62.:** simulation shown in θ=2Figure 61C.Each of the large trajectories oscillating out of phase between 5000 and 7000 generations is at least three mutations away from all of the others; they are all outside each other’s cross-reactivity radius.
+**Figure 62.:** Phage clone size (top) and bacteria clone size (bottom) for a short time window of the $\theta=2$ simulation shown in Figure 61C.Each of the large trajectories oscillating out of phase between 5000 and 7000 generations is at least three mutations away from all of the others; they are all outside each other’s cross-reactivity radius.
 
 ![Figure 63.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig63-v2.jpg)
 
-**Figure 63.:** Figure 62; colours of those trajectories are labelled on the y axis.Each clone is at least three mutations away from all other large clones.
+**Figure 63.:** Each clone is at least three mutations away from all other large clones.
 
 The durability and turnover of immune memory is qualitatively different in the different regimes of the simulation with cross-reactivity shown in Figure 54. We calculated time-shifted average immunity for each of the three regimes (initial regime with no turnover, travelling wave regime, and persistent oscillation regime) and found that turnover was extremely low in all but the travelling wave regime, which had a rapid decay of immune memory to zero (Figure 64). In contrast, the immune memory for the same parameters without cross-reactivity had a much more gradual long-term decay towards zero immunity (Figure 65). In the travelling wave regime, different amounts of cross-reactivity result in different time-shifted immunity patterns. Turnover is slow but smooth with exponential cross-reactivity, while turnover is much more rapid with step-function cross-reactivity (Figure 66). The differences in rate of turnover can also be seen by comparing timescale of sequence change in Figure 4.
 
 ![Figure 64.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig64-v2.jpg)
 
-**Figure 64.:** Figure 54 (, C0=104, μ=10-6, and η=10-4, step-function cross-reactivity with e=0.95).θ=1The initial low-diversity regime (1000–3200 generations) and the low turnover, high diversity regime (7000–10,000 generations) had extremely low turnover, while the travelling wave regime (4000–6200 generations) had high average immunity near 0 delay that rapidly decayed to zero both in the past and future.
+**Figure 64.:** Time-shifted average immunity for three regimes of the simulation shown in Figure 54 ($C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$, and $e=0.95$, step-function cross-reactivity with $\theta=1$).The initial low-diversity regime (1000–3200 generations) and the low turnover, high diversity regime (7000–10,000 generations) had extremely low turnover, while the travelling wave regime (4000–6200 generations) had high average immunity near 0 delay that rapidly decayed to zero both in the past and future.
 
 ![Figure 65.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig65-v2.jpg)
 
-**Figure 65.:** Figure 64 without cross-reactivity (, C0=104, μ=10-6, and η=10-4). Peak average immunity is low because of high diversity, and immunity decays very gradually to zero in both the past and future.e=0.95
+**Figure 65.:** Time-shifted average immunity for the corresponding simulation to Figure 64 without cross-reactivity ($C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$, and $e=0.95$). Peak average immunity is low because of high diversity, and immunity decays very gradually to zero in both the past and future.
 
 ![Figure 66.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig66-v2.jpg)
 
-**Figure 66.:** (middle bottom), and θ=1 (bottom).θ=2Shared parameters are , C0=104, μ=10-6, and η=10-4. Only the travelling-wave regime of each simulation with cross-reactivity was used to compare turnover in this regime. The grey shaded region is the standard deviation across averaged data.e=0.95
+**Figure 66.:** Time-shifted average immunity for four simulations with the same parameters but different types of cross-reactivity: no cross-reactivity (top), exponential cross-reactivity (middle top), step-function cross-reactivity with $\theta=1$ (middle bottom), and $\theta=2$ (bottom).Shared parameters are $C_{0}=10^{4}$, $\mu=10^{-6}$, $η=10^{-4}$, and $e=0.95$. Only the travelling-wave regime of each simulation with cross-reactivity was used to compare turnover in this regime. The grey shaded region is the standard deviation across averaged data.
 
 Adding cross-reactivity appears to slightly decrease average clan sizes (Figure 67). This is what we intuitively expect since cross-reactivity means phages are under pressure to get as far away from other clones as possible.
 
 ![Figure 67.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig67-v2.jpg)
 
-**Figure 67.:** .minit=10Error bars are the standard deviation across three or more independent simulations.
+**Figure 67.:** Average clan size across simulations with different parameters for different degrees of cross-reactivity with $m_{init}=10$.Error bars are the standard deviation across three or more independent simulations.
 
-## Data analysis
+### Data analysis
 
 This section contains details of our methods for analysing sequencing data from three published papers – groundwater metagenome data used in calculating spacer turnover (Metagenomic CRISPR spacer analysis from Burstein et al., 2016), a laboratory long-term coevolution experiment used for spacer turnover and time-shifted average immunity (‘Laboratory coevolution experimental data’), and wastewater treatment plant metagenome data used for spacer turnover and time-shifted average immunity (‘Experimental data from wastewater treatment plant’). Methods and toy models relating to calculating average immunity in data are in ‘Theoretical considerations when calculating average immunity from data’.
 
-## Metagenomic CRISPR spacer analysis from Burstein et al., 2016
+#### Metagenomic CRISPR spacer analysis from Burstein et al., 2016
 
 This dataset is the source for Figure 6F in ‘Dynamics are determined by diversity’.
 
-We detected spacer sequences in metagenomic data from Burstein et al., 2016. We analysed the 0.1 μ⁢m filter dataset which contains metagenomic reads at six time points, found under accession PRJNA268031. We searched for matches to the CRISPR repeats identified in the study using blast; we accessed a list of repeats from the study’s Supplementary data 2. There were 144 unique repeat sequences. Reads are 150 bp long, and we kept only blast results where a repeat had two or more matches to a read in order to accurately detect spacers and to reduce spurious matches to repeats. To further ensure match quality, we kept only alignments that were at least 85% similar to repeat queries, unless another match to the same repeat was present on the read. This 85% threshold was chosen for consistency with previous spacer identification studies (Paez-Espino et al., 2013; Paez-Espino et al., 2015; Skennerton et al., 2013).
+We detected spacer sequences in metagenomic data from Burstein et al., 2016. We analysed the 0.1 $\mu⁢m$ filter dataset which contains metagenomic reads at six time points, found under accession PRJNA268031. We searched for matches to the CRISPR repeats identified in the study using blast; we accessed a list of repeats from the study’s Supplementary data 2. There were 144 unique repeat sequences. Reads are 150 bp long, and we kept only blast results where a repeat had two or more matches to a read in order to accurately detect spacers and to reduce spurious matches to repeats. To further ensure match quality, we kept only alignments that were at least 85% similar to repeat queries, unless another match to the same repeat was present on the read. This 85% threshold was chosen for consistency with previous spacer identification studies (Paez-Espino et al., 2013; Paez-Espino et al., 2015; Skennerton et al., 2013).
 
 It is possible that multiple unique repeats match the same read. For each matched read, we kept the repeat match that had the highest alignment identity (fractional alignment length times percent identity). We detected spacers between repeats, then used the detected spacer length to extract spacers on either side of matched repeats. Because we required at least two repeat matches, at most three spacers could be detected from a read, and at minimum two spacers were detected. We detected a total of 37,963 spacers of which there were 17,491 unique sequences. The most abundant sequence was present 572 times. After grouping within each unique repeat by spacer sequence similarity with an 85% average similarity threshold, there were 12022 unique types with the largest type having an abundance of 616.
 
-## Theoretical considerations when calculating average immunity from data
+#### Theoretical considerations when calculating average immunity from data
 
 The methods described here are used to scale the y-axis of Figure 7C, D in ‘Time-shifted average immunity calculated from data reveals distinctive patterns of turnover’.
 
 In our simulations and model, we assume that each phage has a single protospacer and each bacterium has a single spacer. In reality, phages can have hundreds to thousands of possible protospacers, and bacteria can also acquire tens to hundreds of spacers (Pavlova et al., 2021). If we assume that average immunity plays out at the organism level; that is, if a bacterium that contains one or more spacers matching one or more phage protospacers is immune to that phage, then calculating average immunity in practice requires knowing something about the typical numbers of protospacers and spacers in organisms.
 
-First, let us consider the effect of changing the number of protospacers while keeping spacer array length constant at 1. This is a reasonable model for experimental data at short timescales when most bacteria acquire only one new spacer. For a set i of observed spacers and a set j of observed protospacers with abundances ni and nj, if each spacer and protospacer are assumed to belong to one organism only, then the average immunity is given by Equation 90. We assume for simplicity that any matching spacer provides perfect immunity, that is, pV⁢(i,j)=pV⁢(1-δi⁢j).(90)1−∑i,jninjpV(i,j)pV∑i,jninj=1−pV∑i,jninj(1−δij)pV∑i,jninj=∑i,jninjδijNiNj
+First, let us consider the effect of changing the number of protospacers while keeping spacer array length constant at 1. This is a reasonable model for experimental data at short timescales when most bacteria acquire only one new spacer. For a set $i$ of observed spacers and a set $j$ of observed protospacers with abundances ni and nj, if each spacer and protospacer are assumed to belong to one organism only, then the average immunity is given by Equation 90. We assume for simplicity that any matching spacer provides perfect immunity, that is, $p_{V}⁢(i,j)=p_{V}⁢(1-\delta_{i⁢j})$.
 
-where Ni denotes ∑ini.
+$$
+1−\frac{\sumi,jn_{i}n_{j}p_{V}(i,j)}{p_{V}\sumi,jn_{i}n_{j}}=1−\frac{p_{V}\sumi,jn_{i}n_{j}(1−\delta_{ij})}{p_{V}\sumi,jn_{i}n_{j}}=\frac{\sumi,jn_{i}n_{j}\delta_{ij}}{N_{i}N_{j}}
+$$
 
-If instead the same set of protospacers is divided among fewer phages so that each phage has a protospacers on average, then the total number of phages is Nj/a. The numerator of average immunity remains the same since each bacterium still contains only a single spacer. Average immunity is exactly the same as before but multiplied by the average number of protospacers per phage (Equation 91).(91)∑i,jninjδijNiNja=a∑i,jninjδijNiNj
+where $N_{i}$ denotes $\sum_{i}n_{i}$.
+
+If instead the same set of protospacers is divided among fewer phages so that each phage has $a$ protospacers on average, then the total number of phages is $N_{j}/a$. The numerator of average immunity remains the same since each bacterium still contains only a single spacer. Average immunity is exactly the same as before but multiplied by the average number of protospacers per phage (Equation 91).
+
+$$
+\frac{\sumi,jn_{i}n_{j}\delta_{ij}}{N_{i}\frac{N_{j}}{a}}=\frac{a\sumi,jn_{i}n_{j}\delta_{ij}}{N_{i}N_{j}}
+$$
 
 This agrees with the intuition that more spacer targets per phage increases the immune potential of the CRISPR system.
 
-In data from Paez-Espino et al., 2015, we find quantitative agreement between the range of average immunity values in their data and the types of values in our simulations once we apply this simple transformation with a=696, since there are 231 possible CRISPR1 protospacers and 465 possible CRISPR3 protospacers in the phage genome (determined by searching for the canonical PAM for each CRISPR locus).
+In data from Paez-Espino et al., 2015, we find quantitative agreement between the range of average immunity values in their data and the types of values in our simulations once we apply this simple transformation with $a=696$, since there are 231 possible CRISPR1 protospacers and 465 possible CRISPR3 protospacers in the phage genome (determined by searching for the canonical PAM for each CRISPR locus).
 
 If bacteria contain multiple spacers and phages contain multiple protospacers, the combinatorics of average immunity gets more interesting. Now, if a bacterium contains multiple spacers that target the same phage, we assume this does not increase its immunity (although in reality there may be a benefit to multiple matching spacers).
 
@@ -846,13 +1677,13 @@ We simulated sets of spacers and protospacers, randomly divided them into arrays
 
 ![Figure 68.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig68-v2.jpg)
 
-**Figure 68.:** We simulate 50 phages, each with 5 protospacers represented by letters from the alphabet, uniformly sampled. We simulate 420 bacterial spacers, drawn from the alphabet either uniformly (top row) or following an exponential distribution with mean 6 (bottom row). We construct arrays by sampling from the set of 420 spacers without replacement, either creating arrays of constant length (left column), or of variable length with a gaussian distribution (middle column) or exponential distribution (right column). Average immunity is calculated as in Equation 90 except the indices run over all arrays and not over individual sequences, and the presence of any matching pair gives perfect immunity. Blue points are average results over 50 simulations; error bars are standard deviation. The black dashed curve is given by .an=1-Cn=1-(1-a1)n
+**Figure 68.:** We simulate 50 phages, each with 5 protospacers represented by letters from the alphabet, uniformly sampled. We simulate 420 bacterial spacers, drawn from the alphabet either uniformly (top row) or following an exponential distribution with mean 6 (bottom row). We construct arrays by sampling from the set of 420 spacers without replacement, either creating arrays of constant length (left column), or of variable length with a gaussian distribution (middle column) or exponential distribution (right column). Average immunity is calculated as in Equation 90 except the indices run over all arrays and not over individual sequences, and the presence of any matching pair gives perfect immunity. Blue points are average results over 50 simulations; error bars are standard deviation. The black dashed curve is given by $a_{n}=1-C^{n}=1-(1-a_{1})^{n}$.
 
-We developed a simple theoretical model for the change in average immunity as array length increases. The baseline average immunity when bacteria are assumed to have single spacers we denote a1, and define a constant C=1-a1. Then as array length increases, the total number of bacteria decreases and the overlap increases, but by a smaller factor than the population size decrease: the remaining average immunity that could be gained is reduced with the same fraction as the original average immunity so that the average immunity for an array of length n+1 is an+1=1-(1-an)⁢C. Plotting 1-an vs. n on a log plot gives a straight line. Plugging in a1=1-C gives an=1-Cn, plotted as a black dashed line in Figure 68. The theory agrees well with the simulated results except for when array length is exponentially distributed; in this case, we believe the presence of several very long and very short arrays means that short-array bacteria do not get the coverage of multiple spacers while the long-array bacteria have redundant spacers. This functional form for average immunity as a function of array length is very similar to a quantity derived by Iranzo et al., 2013 — they calculated that the probability that a random bacterium is immune to a random phage, each with a random set of spacers and protospacers is pc=1-(1-α⁢nNt)Ns, where n is the average bacterial array length, Nt is the total number of unique protospacers, and Ns is the number of protospacers per phage. The constant α is a scaling factor that measures the degree of correlation between matching spacer and protospacer abundances. Their scaling is as a function of the phage array length instead of bacterial, but the same intuition applies.
+We developed a simple theoretical model for the change in average immunity as array length increases. The baseline average immunity when bacteria are assumed to have single spacers we denote a1, and define a constant $C=1-a_{1}$. Then as array length increases, the total number of bacteria decreases and the overlap increases, but by a smaller factor than the population size decrease: the remaining average immunity that could be gained is reduced with the same fraction as the original average immunity so that the average immunity for an array of length $n+1$ is $a_{n+1}=1-(1-a_{n})⁢C$. Plotting $1-a_{n}$ vs. $n$ on a log plot gives a straight line. Plugging in $a_{1}=1-C$ gives $a_{n}=1-C^{n}$, plotted as a black dashed line in Figure 68. The theory agrees well with the simulated results except for when array length is exponentially distributed; in this case, we believe the presence of several very long and very short arrays means that short-array bacteria do not get the coverage of multiple spacers while the long-array bacteria have redundant spacers. This functional form for average immunity as a function of array length is very similar to a quantity derived by Iranzo et al., 2013 — they calculated that the probability that a random bacterium is immune to a random phage, each with a random set of spacers and protospacers is $p_{c}=1-(1-\alpha⁢\frac{n}{N_{t}})^{N_{s}}$, where $n$ is the average bacterial array length, $N_{t}$ is the total number of unique protospacers, and $N_{s}$ is the number of protospacers per phage. The constant $\alpha$ is a scaling factor that measures the degree of correlation between matching spacer and protospacer abundances. Their scaling is as a function of the phage array length instead of bacterial, but the same intuition applies.
 
 An interesting result of this analysis is that the relative immune benefit from gaining a spacer decreases as immunity increases: a CRISPR array twice as long does not provide double the immunity. A similar diminishing-returns result has also been observed in theoretical models of vertebrate immunity where the relative decrease in immune susceptibility and increase in immune memory both decrease as the number of infections increases over an organism’s lifetime (Mayer et al., 2019). Long CRISPR arrays are also subject to a dilution effect: spacers compete to form complexes with limited Cas protein machinery, and if the number of spacers is high, there is a higher chance that the needed spacer is not available in high enough numbers during an infection (Martynov et al., 2017; Bradde et al., 2020).
 
-## Average immunity negatively correlates with diversity regardless of array size
+#### Average immunity negatively correlates with diversity regardless of array size
 
 This section describes the toy model we present in results ‘Pathogen and host diversity must be considered together.
 
@@ -860,7 +1691,7 @@ In our simulations, we observed an inverse proportionality between average immun
 
 We tested this with a toy model, described in ‘Pathogen and host diversity must be considered together’. Conceptually, there are two regimes of CRISPR immunity and phage evolution to consider. In an ‘evolutionarily late’ regime, bacteria are exposed to many diverse phages for which any one spacer may target only a few phage genotypes. In an ‘evolutionarily early’ regime, most phages are clonally similar and protospacer diversity is generated through escape mutations. In this scenario, we can imagine a set of phages that share most of their protospacers but have a small number of recently mutated protospacers. This regime can further be divided into a slow-mutation ‘successive sweeps’ regime in which each new mutation takes place in the background of the previous mutant and a fast-mutation ‘clonal interference’ regime in which many unique mutations coexist in the same background.
 
-We explored these three scenarios by generating synthetic sets of protospacers and spacers and varying the total diversity by changing the size of the pool of available sequences, distributing sequences exponentially in abundance to qualitatively match data Bonsma-Fisher et al., 2018. We randomly assigned sequences to individual phages and bacteria, then calculated average immunity in three scenarios of protospacer origin. First, we divided protospacers randomly among 100 phages so that each phage had x unique protospacers to mimic an evolutionarily diverse population. In the second scenario, we created a set of phages that mimic a population undergoing successive sweeps by changing the first protospacer, then the first and second, and so on. In the third scenario, the set of phages share the first x-1 protospacers and only the last protospacer is varied; this mimics an initially clonal population undergoing rapid mutations. In all scenarios, we sampled uniformly from the pool of protospacers to generate 1000 spacer sequences that were divided into bacterial arrays with either a constant array size (Figure 69B–D), or a Gaussian-distributed array size (Figure 70). We repeated the bacterial array assortment process 20 times for each total spacer diversity and combination of array sizes.
+We explored these three scenarios by generating synthetic sets of protospacers and spacers and varying the total diversity by changing the size of the pool of available sequences, distributing sequences exponentially in abundance to qualitatively match data Bonsma-Fisher et al., 2018. We randomly assigned sequences to individual phages and bacteria, then calculated average immunity in three scenarios of protospacer origin. First, we divided protospacers randomly among 100 phages so that each phage had $x$ unique protospacers to mimic an evolutionarily diverse population. In the second scenario, we created a set of phages that mimic a population undergoing successive sweeps by changing the first protospacer, then the first and second, and so on. In the third scenario, the set of phages share the first $x-1$ protospacers and only the last protospacer is varied; this mimics an initially clonal population undergoing rapid mutations. In all scenarios, we sampled uniformly from the pool of protospacers to generate 1000 spacer sequences that were divided into bacterial arrays with either a constant array size (Figure 69B–D), or a Gaussian-distributed array size (Figure 70). We repeated the bacterial array assortment process 20 times for each total spacer diversity and combination of array sizes.
 
 ![Figure 69.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig69-v2.jpg)
 
@@ -870,21 +1701,25 @@ We explored these three scenarios by generating synthetic sets of protospacers a
 
 **Figure 70.:** Bacterial array sizes are drawn from a Gaussian distribution with mean given by the array mean for each row and a standard deviation of 2. Points are averages across 50 independent runs.
 
-We calculated average immunity in these synthetic scenarios, assuming for simplicity that any matching spacer provides perfect immunity, that is, e=1, pV⁢(i,j)=pV⁢(1-δi⁢j), or pV(I,J)=pV[I∩J=∅]. For the set of bacteria nB and phages nV, the average immunity for the population is(92)1−∑I,JnBInVJpV(I,J)pV∑I,JnBInVJ=1−pV∑I,JnBInVJ[I∩J=∅]pV∑I,JnBInVJ=∑I,JnBInVJ[I∩J≠∅]NBINVJ
+We calculated average immunity in these synthetic scenarios, assuming for simplicity that any matching spacer provides perfect immunity, that is, $e=1$, $p_{V}⁢(i,j)=p_{V}⁢(1-\delta_{i⁢j})$, or $p_{V}(I,J)=p_{V}[I∩J=∅]$. For the set of bacteria $n_{B}$ and phages $n_{V}$, the average immunity for the population is
 
-where NBI=∑InBI and NVI=∑InVJ. In our base model, bacteria and phages are each limited to a single spacer or protospacer, whereas now I and J label the full set of spacers or protospacers in an organism. nBI is the number of bacteria with the same unique set of spacers I and the Iverson bracket [I∩J≠∅] gives 1 if any of the spacers in I matches any of the protospacers in J and 0 if there is no overlap between sets I and J.
+$$
+1−\frac{\sumI,Jn_{B}^{I}n_{V}^{J}p_{V}(I,J)}{p_{V}\sumI,Jn_{B}^{I}n_{V}^{J}}=1−\frac{p_{V}\sumI,Jn_{B}^{I}n_{V}^{J}[I∩J=∅]}{p_{V}\sumI,Jn_{B}^{I}n_{V}^{J}}=\frac{\sumI,Jn_{B}^{I}n_{V}^{J}[I∩J\neq∅]}{N_{B}^{I}N_{V}^{J}}
+$$
+
+where $N_{B}^{I}=\sum_{I}n_{B}^{I}$ and $N_{V}^{I}=\sum_{I}n_{V}^{J}$. In our base model, bacteria and phages are each limited to a single spacer or protospacer, whereas now $I$ and $J$ label the full set of spacers or protospacers in an organism. $n_{B}^{I}$ is the number of bacteria with the same unique set of spacers $I$ and the Iverson bracket $[I∩J\neq∅]$ gives 1 if any of the spacers in $I$ matches any of the protospacers in $J$ and 0 if there is no overlap between sets $I$ and $J$.
 
 The 1-spacer 1-protospacer curve in Figure 69B represents the same situation as our simulations: one spacer and one protospacer (but with a random distribution of sequences), and the trend matches our simulations exactly with average immunity inversely proportional to diversity. This strict inverse dependence changes shape as the number of spacers and protospacers per organism changes.
 
 We compared these toy model results to the experimental setup of Common et al., 2020. In their experiments, they combined equal proportions of bacterial strains with a different CRISPR spacer with one phage strain that is either targeted by all spacers or escaped from one of the spacers. There is then one susceptible bacterial strain per mixture when the escape phage is used. All experiments also contained one surface mutant bacterial strain that is always immune to the phage.
 
-We can directly calculate the expected initial average immunity based on this setup. For m bacterial CRISPR strains, one surface mutant strain, and one escape phage, total bacteria Nb, total phage Nv, each bacterial strain has abundance Nb/m and vj=Nv.
+We can directly calculate the expected initial average immunity based on this setup. For $m$ bacterial CRISPR strains, one surface mutant strain, and one escape phage, total bacteria $N_{b}$, total phage $N_{v}$, each bacterial strain has abundance $N_{b}/m$ and $v_{j}=N_{v}$.
 
-We calculate average immunity assuming e=1:∑i,jbiviδijNiNj
+We calculate average immunity assuming $e=1:\frac{\sumi,jb_{i}v_{i}\delta_{ij}}{N_{i}N_{j}}$
 
-We can include the surface mutant or not; it slightly shifts the total diversity but the trend is unaffected. For instance, for m=3 CRISPR clones, the phage is able to infect one of them, so average immunity is Nv⁢Nb/m+Nv⁢Nb/mNb⁢Nv=2m=23. If we included the surface mutant in equal proportions, we would get 3/4 instead.
+We can include the surface mutant or not; it slightly shifts the total diversity but the trend is unaffected. For instance, for $m=3$ CRISPR clones, the phage is able to infect one of them, so average immunity is $\frac{N_{v}⁢N_{b}/m+N_{v}⁢N_{b}/m}{N_{b}⁢N_{v}}=\frac{2}{m}=\frac{2}{3}$. If we included the surface mutant in equal proportions, we would get $3/4$ instead.
 
-## Laboratory coevolution experimental data
+#### Laboratory coevolution experimental data
 
 This dataset is the source for Figure 6E in ‘Dynamics are determined by diversity’ and Figure 7C in ‘Time-shifted average immunity calculated from data reveals distinctive patterns of turnover’.
 
@@ -892,7 +1727,7 @@ We analysed experimental data from Paez-Espino et al., 2015. In this experiment,
 
 We analysed data from the MOI-2B series and detected spacers in the CRISPR1 and CRISPR3 loci by searching raw reads for matches to the S. thermophilus repeats (GTTTTTGTACTCTCAAGATTTAAGTAACTGTACAAC for CRISPR1 and GTTTTAGAGCTGTGTTGTTTCGAATGGTTCCAAAAC for CRISPR3) using BLAST.
 
-The expected structure of the CRISPR locus is 36 nt repeats interspaced with 30 nt spacers. Reads are 100 nt long (Illumina), and so at most two complete spacers can be detected per read (one full repeat match near the centre of the read). To maximize the number of genuine spacers detected while removing low-quality matches, we kept only full-length alignments to the repeat (length 36), unless a shorter alignment was also present on the same read as a full-length alignment (for instance, if the repeat is partially present at the start or end of a read). If a single repeat match was present on a read, we extracted 30 nt on either side and labelled these spacers. We set a minimum spacer length to be 26 nt (≈0.85×30) and did not keep spacer sequences at the start or end of a read that were shorter than this. If two repeat matches were present, we extracted the spacer sequence between the matches.
+The expected structure of the CRISPR locus is 36 nt repeats interspaced with 30 nt spacers. Reads are 100 nt long (Illumina), and so at most two complete spacers can be detected per read (one full repeat match near the centre of the read). To maximize the number of genuine spacers detected while removing low-quality matches, we kept only full-length alignments to the repeat (length 36), unless a shorter alignment was also present on the same read as a full-length alignment (for instance, if the repeat is partially present at the start or end of a read). If a single repeat match was present on a read, we extracted 30 nt on either side and labelled these spacers. We set a minimum spacer length to be 26 nt ($≈0.85\times30$) and did not keep spacer sequences at the start or end of a read that were shorter than this. If two repeat matches were present, we extracted the spacer sequence between the matches.
 
 To detect wild-type spacers, we searched for matches to the CRISPR repeats on the S. thermophilus DGCC7710 reference genome (accession NZ_CP025216) and extracted the sequences between repeat matches. We also searched raw reads from the day 1 data of the control replicate (no phages) for matches to the repeats and performed the same spacer extraction procedure.
 
@@ -900,7 +1735,7 @@ We grouped all extracted spacers using the AgglomerativeClustering method from S
 
 ![Figure 71.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig71-v2.jpg)
 
-**Figure 71.:** Paez-Espino et al., 2015 after grouping by 85% average similarity and removing single spacer counts (blue bars).Counts reported in Paez-Espino et al., 2015 are red points.
+**Figure 71.:** Counts reported in Paez-Espino et al., 2015 are red points.
 
 To detect protospacers, we first blasted all reads against the S. thermophilus DGCC7710 reference genome and the phage 2972 reference genome (accession NC_007019) (Figure 72). We next blasted all unique detected spacer sequences from the previous step against all the reads, removing any query sequences that are a perfect subset of another sequence and any sequences that were more than 30% N nucleotide. This detects both potential protospacer sequences and the original spacers themselves. To isolate protospacers, we kept only results that were on reads that did not match the bacterial genome and that did not match the CRISPR1 repeat (CRISPR3 repeats were not checked; however, they represent a very small number of additional reads, less than 0.1%). We kept only results that were 26 nt or larger. If there were multiple hits on a read from the same spacer type (but different sequences), we kept only the match with the lowest e-value. We extracted the matched sequence from the read and 10 nucleotides after it to check for a PAM sequence (all spacers were stored oriented in the same direction relative to the repeat to facilitate comparison and PAM detection). Since reads are paired-end, some reads will overlap, and some spacers may be double-counted in the overlap. We decremented the total spacer or protospacer count for a sequence by 1 if a spacer sequence was present on both ends of a paired read. We also removed sequences that contained long strings of 11 or more of the same nucleotide, assuming these to be sequencing errors. This removed around 1% of sequences.
 
@@ -914,15 +1749,15 @@ We checked the 10 nt region downstream from each potential protospacer and remov
 
 ![Figure 73.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig73-v2.jpg)
 
-**Figure 73.:** Paez-Espino et al., 2015.Colours indicate different similarity grouping thresholds. Spacer counts include wild-type spacers, and protospacers are included only if they possess a perfect PAM. Data is summed over CRISPR1 and CRISPR3. All sequences are included regardless of abundance.
+**Figure 73.:** Colours indicate different similarity grouping thresholds. Spacer counts include wild-type spacers, and protospacers are included only if they possess a perfect PAM. Data is summed over CRISPR1 and CRISPR3. All sequences are included regardless of abundance.
 
-## Calculating average immunity
+### Calculating average immunity
 
 To calculate average immunity between bacteria and phage, we interpolated spacer and protospacer counts between sequenced time points using the shortest interval between experimental time points as the sampling frequency from the interpolated data. We removed the first time point and last two time points from the data because the first time point has low bacterial spacer counts and a very large phage population size, and at the last two time points, phage counts are very low because phages are about to go extinct (Figure 74 and Figure 73). Results including all time points are given in Figure 7—figure supplement 4; they are qualitatively similar except for large changes at the first and last time points where only the first and last phage population are included in the average, respectively.
 
 ![Figure 74.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig74-v2.jpg)
 
-**Figure 74.:** Paez-Espino et al., 2015.Circles are points digitized from Figure 1A in Paez-Espino et al., 2015; squares are the population size interpolated to match the sequencing dates in the experiment.
+**Figure 74.:** Circles are points digitized from Figure 1A in Paez-Espino et al., 2015; squares are the population size interpolated to match the sequencing dates in the experiment.
 
 We calculated the time-shifted average overlap between bacteria and phage spacer types by comparing bacteria and phage types separated by a time delay and averaging over all points with the same time delay (Figure 7—figure supplement 4). As described in ‘Theoretical considerations when calculating average immunity from data’, we multiplied raw average immunity values by the total number of protospacers to account for multiple protospacers on each phage genome. The number of possible protospacers in phage 2972 for the CRISPR1 locus in S. thermophilus (AGAAW PAM) is 231 and the number for CRISPR3 is 465 (696 total). Note that because PAM mutations are common, the true number of protospacers may be less than this hypothetical amount, which would cause us to slightly overestimate average immunity. However, we are also assuming that each bacterium has one effective spacer, and this is likely an underestimate based on estimates of locus length from Paez-Espino et al., 2015.
 
@@ -940,13 +1775,13 @@ Our model predicts that phage population sizes should decrease as average immuni
 
 ![Figure 76.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig76-v2.jpg)
 
-**Figure 76.:** Paez-Espino et al., 2015.Protospacers are included if they have a perfect PAM, and all wild-type spacers are included. Spacers and protospacers are grouped with an 85% similarity threshold. Colours from blue to yellow indicate increasing time.
+**Figure 76.:** Protospacers are included if they have a perfect PAM, and all wild-type spacers are included. Spacers and protospacers are grouped with an 85% similarity threshold. Colours from blue to yellow indicate increasing time.
 
 ![Figure 77.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig77-v2.jpg)
 
 **Figure 77.:** Protospacers are included if they have a perfect PAM, and all wild-type spacers are included. Spacers and protospacers are grouped with an 85% similarity threshold.
 
-## Experimental data from wastewater treatment plant
+#### Experimental data from wastewater treatment plant
 
 This dataset is the source for Figure 6G in ‘Dynamics are determined by diversity’ and Figure 7D in ‘Time-shifted average immunity calculated from data’ reveals distinctive patterns of turnover.
 
@@ -964,7 +1799,7 @@ To detect protospacers, we first blasted all reads against the Gordonia MAG and 
 
 ![Figure 78.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig78-v2.jpg)
 
-**Figure 78.:** Gordonia MAG and either phage reference genome vs the base-10 log difference in e-value between the matches for accession SRR9260993.A positive value means the bacteria match has a lower e-value than the phage match. The vertical dashed line indicates the -25 cutoff; matches to the left were considered phage matches, matches to the right were considered bacteria matches.
+**Figure 78.:** A positive value means the bacteria match has a lower e-value than the phage match. The vertical dashed line indicates the -25 cutoff; matches to the left were considered phage matches, matches to the right were considered bacteria matches.
 
 We kept only potential protospacers that were 85% of the expected spacer length or larger. If there were multiple hits on a read from the same spacer type (but different sequences), we kept only the match with the lowest e-value. We extracted the matched sequence from the read and 10 nucleotides on either side to check for a PAM sequence (all spacers were stored oriented in the same direction relative to the repeat to facilitate comparison and PAM detection). Consistent with the PAM reported by Guerrero et al., we identified a GTT PAM at the 5’ end of protospacer sequences (Figure 79, reverse-complement).
 
@@ -980,25 +1815,25 @@ Our detection of reads that matched the Gordonia MAG and phage genomes is closel
 
 ![Figure 80.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig80-v2.jpg)
 
-**Figure 80.:** Guerrero et al., 2021a vs. number of reads assigned to phage or bacteria from our analysis.Each marker is a separate time point.
+**Figure 80.:** Each marker is a separate time point.
 
 The number of unique protospacer and spacer types we detected fluctuated considerably over the course of the study (Figure 81, Figure 82). The number of shared types as well as the ratio of phage types to bacteria types also fluctuated considerably.
 
 ![Figure 81.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig81-v2.jpg)
 
-**Figure 81.:** Guerrero et al., 2021a.The left panels show absolute counts, and the right panels show fractional abundance for the included types. None of the top types are shared between phage and bacteria.
+**Figure 81.:** The left panels show absolute counts, and the right panels show fractional abundance for the included types. None of the top types are shared between phage and bacteria.
 
 ![Figure 82.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig82-v2.jpg)
 
-**Figure 82.:** Guerrero et al., 2021a.Colours indicate different similarity grouping thresholds. Spacer counts include wild-type spacers, and protospacers are included only if they possess a perfect PAM. Data is summed over CRISPR1 and CRISPR2.
+**Figure 82.:** Colours indicate different similarity grouping thresholds. Spacer counts include wild-type spacers, and protospacers are included only if they possess a perfect PAM. Data is summed over CRISPR1 and CRISPR2.
 
 About 40% of spacer and protospacer types remained throughout the time series without going extinct at an 85% similarity threshold (Figure 83). In data from Paez-Espino et al., 2015, about 20% of original types remained at the end of the experiment (Figure 6E); however, the fraction of types remaining decreases steadily in data from Paez-Espino et al., 2015 unlike in this dataset.
 
 ![Figure 83.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig83-v2.jpg)
 
-**Figure 83.:** Guerrero et al., 2021a.Types are grouped with an 85% similarity threshold. The grey shaded region is the standard deviation across averaged data.
+**Figure 83.:** Types are grouped with an 85% similarity threshold. The grey shaded region is the standard deviation across averaged data.
 
-## Calculating average immunity
+### Calculating average immunity
 
 To calculate average immunity between bacteria and phage, we interpolated counts between sequenced time points using a 14-day spacing (the most common sampling interval in the data). We calculated the time-shifted average overlap between bacteria and phage spacer types by comparing bacteria and phage types separated by a time delay and averaging over all points with the same time delay (Figure 7—figure supplement 5). As described in ‘Theoretical considerations when calculating average immunity from data’, we multiplied raw average immunity values by the average number of protospacers with the GTT PAM from the phage DC-56 and DS-92 genomes (1956 protospacers) to account for multiple protospacers on each phage genome. Note that because PAM mutations are common, the true number of protospacers may be less than this hypothetical amount, which would cause us to slightly overestimate average immunity. However, we are also assuming that each bacterium has one effective spacer, and this is likely an underestimate. As the similarity threshold increases, the overall overlap goes down slightly because there are more total types. As in the data from Paez-Espino et al., 2015, the number of shared types across the whole dataset is insensitive to the clustering threshold: there is a tradeoff between the total number of types (which increases as the similarity threshold increases) and the likelihood that types are shared (which increases as the similarity threshold decreases) (Figure 82).
 
@@ -1008,7 +1843,7 @@ We experimented with different trimming thresholds for the data, removing time p
 
 **Figure 84.:** Raw values cannot be larger than 1, but plotted values are multiplied by 1956, the average number of protospacers with the GTT PAM from the phage DC-56 and DS-92 genomes, yielding some values larger than 1.
 
-Because the variability in average immunity between time points was very high, we performed a Wilcoxon signed-rank test between the average immunity at zero time delay and the average immunity at a time delay ±200 and ±500 (arbitrarily chosen). We paired each shifted time point with its corresponding average immunity at zero delay for each bacterial abundance (Figure 85). Using a paired test answers the following question for each time point: is the overlap between bacteria and past phages significantly lower than the overlap in the present, and is the overlap between bacteria and future phages significantly lower than the overlap in the present? The test returns a statistic that is the sum of the ranks of differences greater than zero; a larger number indicates more asymmetry between the two compared datasets. We found that past immunity after 200 days is significantly lower than present (Wilcoxon statistic Z=1241, p-value p=0.008), but that immunity after 500 days is not significantly lower than present (Z=392,p=0.27). When comparing all time points with present, only a small range of past immunity values were significantly lower than present (Figure 86). For both time delays, we found that future immunity is significantly lower than present (Z=580,p=0.0012 for 500 days and Z=1293,p=0.003 for 200 days). Interestingly, these significance values are not symmetric if we pose the question from the perspective of phage: the overlap between phage and future bacteria at 500 days is lower than the overlap for present phages (Z=507,p=0.024), and the overlap between phage and past bacteria is lower than the overlap at present (Z=388,p=0.027). This asymmetry, that bacteria are generally more immune to all past phages while phage are not more infective against all past bacteria, is qualitatively the same as that reported by Dewald-Wang et al. in an explicit time shift study of bacteria and phage immunity and infectivity in chestnut trees Dewald-Wang et al., 2022.
+Because the variability in average immunity between time points was very high, we performed a Wilcoxon signed-rank test between the average immunity at zero time delay and the average immunity at a time delay ±200 and ±500 (arbitrarily chosen). We paired each shifted time point with its corresponding average immunity at zero delay for each bacterial abundance (Figure 85). Using a paired test answers the following question for each time point: is the overlap between bacteria and past phages significantly lower than the overlap in the present, and is the overlap between bacteria and future phages significantly lower than the overlap in the present? The test returns a statistic that is the sum of the ranks of differences greater than zero; a larger number indicates more asymmetry between the two compared datasets. We found that past immunity after 200 days is significantly lower than present (Wilcoxon statistic $Z=1241$, p-value $p=0.008$), but that immunity after 500 days is not significantly lower than present ($Z=392,p=0.27$). When comparing all time points with present, only a small range of past immunity values were significantly lower than present (Figure 86). For both time delays, we found that future immunity is significantly lower than present ($Z=580,p=0.0012$ for 500 days and $Z=1293,p=0.003$ for 200 days). Interestingly, these significance values are not symmetric if we pose the question from the perspective of phage: the overlap between phage and future bacteria at 500 days is lower than the overlap for present phages ($Z=507,p=0.024$), and the overlap between phage and past bacteria is lower than the overlap at present ($Z=388,p=0.027$). This asymmetry, that bacteria are generally more immune to all past phages while phage are not more infective against all past bacteria, is qualitatively the same as that reported by Dewald-Wang et al. in an explicit time shift study of bacteria and phage immunity and infectivity in chestnut trees Dewald-Wang et al., 2022.
 
 ![Figure 85.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig85-v2.jpg)
 
@@ -1026,8 +1861,8 @@ Unlike in the data from Paez-Espino et al., 2015, we did not find a correlation 
 
 ![Figure 88.](https://cdn.elifesciences.org/articles/81692/elife-81692-fig88-v2.jpg)
 
-**Figure 88.:** Guerrero et al., 2021a.Protospacers are included if they have a perfect PAM, and all wild-type spacers are included. Spacers and protospacers are grouped with an 85% similarity threshold. Colours from blue to yellow indicate increasing time.
+**Figure 88.:** Protospacers are included if they have a perfect PAM, and all wild-type spacers are included. Spacers and protospacers are grouped with an 85% similarity threshold. Colours from blue to yellow indicate increasing time.
 
-## Spacer turnover
+#### Spacer turnover
 
 For all sets of experimentally observed spacers (Paez-Espino et al., 2015, Burstein et al., 2016, and Guerrero et al., 2021a), we calculated spacer turnover over time. We interpolated spacer abundances grouped by 85% similarity over time using the smallest time delay between samples, then calculated the average fraction of spacer types remaining as a function of time delay across the entire dataset.

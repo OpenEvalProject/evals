@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.45954.001 Genome rearrangements resulting in copy number variation (CNV) and loss of heterozygosity (LOH) are frequently observed during the somatic evolution of cancer and promote rapid adaptation of fungi to novel environments. In the human fungal pathogen Candida albicans , CNV and LOH confer increased virulence and antifungal drug resistance, yet the mechanisms driving these rearrangements are not completely understood. Here, we unveil an extensive array of long repeat sequences (65–6499 bp) that are associated with CNV, LOH, and chromosomal inversions. Many of these long repeat sequences are uncharacterized and encompass one or more coding sequences that are actively transcribed. Repeats associated with genome rearrangements are predominantly inverted and separated by up to ~1.6 Mb, an extraordinary distance for homology-based DNA repair/recombination in yeast. These repeat sequences are a significant source of genome plasticity across diverse strain backgrounds including clinical, environmental, and experimentally evolved isolates, and represent previously uncharacterized variation in the reference genome.
+Genome rearrangements resulting in copy number variation (CNV) and loss of heterozygosity (LOH) are frequently observed during the somatic evolution of cancer and promote rapid adaptation of fungi to novel environments. In the human fungal pathogen Candida albicans, CNV and LOH confer increased virulence and antifungal drug resistance, yet the mechanisms driving these rearrangements are not completely understood. Here, we unveil an extensive array of long repeat sequences (65–6499 bp) that are associated with CNV, LOH, and chromosomal inversions. Many of these long repeat sequences are uncharacterized and encompass one or more coding sequences that are actively transcribed. Repeats associated with genome rearrangements are predominantly inverted and separated by up to ~1.6 Mb, an extraordinary distance for homology-based DNA repair/recombination in yeast. These repeat sequences are a significant source of genome plasticity across diverse strain backgrounds including clinical, environmental, and experimentally evolved isolates, and represent previously uncharacterized variation in the reference genome.
 
 ## Introduction
 
@@ -36,11 +36,23 @@ We provide evidence that long repeat sequences are involved in the formation of 
 
 ## Results
 
-## An inverted repeat within CEN4 is associated with the formation of a novel isochromosome
+### An inverted repeat within CEN4 is associated with the formation of a novel isochromosome
 
 To identify the mechanisms by which C. albicans isolates generate genome plasticity, we performed a comparative genomics analysis of 33 diverse clinical isolates (Supplementary file 1). This set of isolates included 11 that underwent controlled experimental evolution, where a known progenitor isolate was passaged in vitro or in vivo. Additionally, we performed comparative genomics on newly obtained clinical isolates, and clinical isolates whose genomes were published previously, including the reference isolate SC5314.
 
 Given the significant impact of i(5L) on antifungal drug resistance, we focused first on the characterization of a novel segmental aneuploidy detected on Chr4 that arose during in vitro evolution in the presence of FLC. Initially, we passaged a FLC-sensitive clinical isolate P78042, which was trisomic for Chr4 (Hirakawa et al., 2015; Lockhart et al., 2002), in the presence of FLC (128 µg/ml) for 100 generations by serial dilution (see Materials and methods). One evolved isolate (AMS3743) was selected, based on increased fitness in FLC (see below), and the whole genome was sequenced. Read depth analysis indicated that this isolate had four copies of the right arm of Chr4 (Chr4R), but only two copies of Chr4L, and the copy number breakpoint occurred at the centromere of Chr4 (CEN4) (Figure 1A). Wildtype CEN4, like CEN5, is comprised of a CENP-A-binding core sequence (~3.1 kb) flanked by a long (524 bp) inverted repeat (Burrack et al., 2016; Ketel et al., 2009; Sanyal et al., 2004).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig1-v2.jpg)
+
+**Figure 1.:** (A) Whole genome sequence data plotted as a log2 ratio and converted to chromosome copy number (Y-axis) and chromosome location (X-axis) using YMAP, for the progenitor clinical isolate (P78042) and an isolate obtained after 100 generations in FLC (AMS3743). The copy number breakpoint in AMS3743 occurs at CEN4 (red arrow). (B) CHEF karyotype gel stained with ethidium bromide (left panel) identifies a novel band (asterisk) above Chr5. Southern blot analysis (right panel) of the same gel using a DIG-labeled CEN4 probe identifies the full-length Chr4 homolog in P78042 and AMS3743, and the novel band in AMS3743 that is twice the size of the right arm of Chr4 in an isochromosome structure (asterisk, i(4R)). (C) PCR validation of i(4R). Schematic representation of the Chr4 homologue (top) and i(4R), where the location of a single primer sequence (Primer 1, Supplementary file 7) that flanks the CEN4 inverted repeat is indicated. PCR with Primer 1 amplified the expected product of i(4R) in AMS3743. (D) 24 hr growth curves in YPAD (top panel) and YPAD +32 µg/ml FLC (bottom panel) for P78042 (black line) and AMS3743 (green line). Average slope and standard error of the mean for three biological replicates is indicated. The average maximum slope (n = 3) of P78042 and AMS3743 in YPAD was not significantly different (0.046 and 0.046, respectively, p>0.75, t-test). The average maximum slope (n = 3) of P78042 and AMS3743 was significantly different in FLC (0.002 and 0.003, respectively, p<0.0006, t-test). OD, optical density (Figure 1—source data 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) CHEF karyotype gel stained with ethidium bromide. Passage of AMS3743_10 for 30 days in YPAD alone followed by single colony selection identified one single colony that had lost the i(4R) band (AMS3743_S6). (B) 24 hr growth curves in YPAD (top panel) and YPAD +32 µg/ml FLC (bottom panel) of P78042 (black line), AMS3743 with i(4R) (green line), AMS3734_S1 with i(4R) (blue line), and AMS3743_S6 which lost the i(4R) (red line). There was no significant difference in average max slope between P78042, AMS3743, AMS3743_S1, and AMS3746_S6 in YPAD (p>0.96, one-way ANOVA with Tukey’s multiple comparison). The average maximum slope in FLC was significantly higher in isolates containing i(4R) (0.003 for both AMS3743 and AMS3743_S1) than in the isolates not containing i(4R) (0.002 for both P78042 and AMS3742_S6) (p>0.05, one-way ANOVA with Tukey’s multiple comparison). OD, optical density (Figure 1—source data 1). (C) Location of the CEN4 inverted repeat (red arrows and lines). Location of the Major Repeat Sequence on Chr4 (black circle). (D) CEN4 is comprised of a ~ 3.6 kb CENP-A-binding core sequence (hatched box) asymmetrically flanked by a 524 bp inverted repeat sequence (red) separated by ~3.1 kb. PCR analysis with primers anchored outside or inside the inverted repeat (Primers 2, 3, and 4, see Supplementary file 7), identified two different orientations of CEN4 (denoted Chr4A and Chr4B) that arose due to an inversion between the repeat sequences on one homologue, in the reference isolate SC5314 all isolates analyzed.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Unique PCR fragments flanking the left side of the CEN4 inverted repeat were obtained for the reference isolate SC5314. PCR products were amplified for both the reference and inverted orientations of CEN4. Primers are indicated as in Figure 1—figure supplement 1D and Supplementary file 7. Sanger sequencing was performed with both forward and reverse primers.
 
 To test the hypothesis that this segmental aneuploidy is an isochromosome structure, we performed CHEF karyotype analysis. Isolate AMS3743 had a novel ~1.2 Mb chromosome band that hybridized to a CEN4 probe via Southern blot (Figure 1B). This ~1.2 Mb band was twice the size of the right arm of Chr4 (~607 Kb). Consistent with an isochromosome i(4R) structure (a centromere flanked by inverted copies of Chr4R), a single primer amplified a ~4.1 kb product, from Chr4R through CEN4 and back to Chr4R in the isolate with i(4R) but did not amplify any sequence in the reference (SC5314), or progenitor (P78042) isolates (Figure 1C).
 
@@ -48,15 +60,31 @@ Next, we determined the impact of i(4R) on fitness in the presence and absence o
 
 Overall, these data imply that the long inverted repeat within CEN4 can generate an independent isochromosome structure comprised of two right arms of Chr4, and that i(4R) is necessary and sufficient for increased fitness in FLC. These results parallel the identification of isochromosomes associated with the long inverted repeat sequence within CEN5, which can result in the formation of i(5R) and i(5L), the latter of which confers FLC resistance (Selmecki et al., 2006; Selmecki et al., 2008).
 
-## Inverted repeat sequences are associated with inversion of centromere sequences
+### Inverted repeat sequences are associated with inversion of centromere sequences
 
 During our investigation of the i(4R) structure, we unveiled a surprising feature of CEN4: the CENP-A-binding core sequence of CEN4 contained two different alleles. One homologue of Chr4 contained a ~3.1 kb sequence inversion between the inverted repeat associated with CEN4. The new, inverted CEN4 sequence was detected by PCR in the reference isolate SC5314, and in the distantly related isolates P78042 and AMS3743 (Figure 1—figure supplement 1C & D). Sanger sequencing indicated that a recombination event occurred between the two arms of the inverted repeat (Figure 1—figure supplement 2). Interestingly, the CENP-A-binding core sequence of CEN4 is asymmetrically positioned on one side of the inverted repeat sequence (Figure 1—figure supplement 1D, shaded region) (Burrack et al., 2016; Sanyal et al., 2004). Therefore, this inversion caused a separation between the known CENP-A-binding core sequence of CEN4 that is located to the right and outside of the inverted repeat.
 
-## Identification of long repeat sequences throughout the C. albicans genome
+### Identification of long repeat sequences throughout the C. albicans genome
 
 Given the extensive genome rearrangements observed at the long inverted repeat associated with CEN4, we sought to characterize all long repeat sequences within the C. albicans reference genome (SC5314). All long sequence matches within SC5314 were identified by aligning the reference genome sequence to itself using the bioinformatics suite MUMmer (Kurtz et al., 2004). First, all exact sequence matches of 20 nucleotides or longer were identified, then all matches were clustered and extended to obtain a maximum-length colinear string of matches, resulting in a final list of long repeat sequences that ranged from 65 bp to 6499 bp (median 318 bp) with sequence identities of ≥80% (See Materials and methods). The genomic position and percent identity of all matched repeats was determined with MUMmer and manually verified using BLASTN and IGV (Robinson et al., 2011; Thorvaldsdóttir et al., 2013). After excluding all rDNA, MRS and sub-telomeric repeat sequences, 1974 long repeat matches were identified (Supplementary file 2). The MUMmer analysis identified five ORFs and one gene family with known, complex embedded tandem repeat sequences (PGA18, PGA55, EAP1, orf19.1725, CSA1, and the ALS gene family, herein referred to as ‘the complex tandem repeat genes’). The complexity of these repeat sequences prohibited the assignment of exact repeat copy number per genome, and they were removed from analyses when indicated. The remaining long repeat sequences cover 2.87% of the haploid reference genome (see Materials and methods).
 
 Long repeat matches occurred between sequences on the same chromosome (intra-chromosomal repeats, Figure 2A), on different chromosomes (inter-chromosomal repeats), or both. The number of all repeat matches per chromosome was correlated with chromosome size (R2 = 0.65, p<0.016, Figure 2B); however, regions of high repeat density (e.g. ChrRR near the rDNA) or low repeat density (e.g. Chr7L) were detected on some chromosome arms. This repeat density did not correlate with GC content (R2 = 0.063, p>0.32) or ORF density (R2 = 0.02, p>0.59) on any chromosome arm (Figure 2—source data 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig2-v2.jpg)
+
+**Figure 2.:** Detailed results for all long intra- and inter-chromosomal repeat positions, orientations, and gene features are found in Supplementary file 2. Repeats associated with the rDNA, major repeat sequences (MRS), and sub-telomeric repeats were removed prior to the analysis. (A) Representative image of the long intra-chromosomal repeat positions (colored lines – not to scale). Each repeat family is assigned a unique color within its respective chromosome. Numbers and symbols below each chromosome indicate chromosomal position (Mb), MRS position (black circles), and rDNA locus (blue circle, ChrR). (B) Number of all repeat matches (excluding the complex tandem repeat genes) on each chromosome, ordered by chromosome size (R2 = 0.65, p<0.016, gray indicates 95% confidence interval, Figure 2—source data 1). (C) The number of intra-chromosomal (Intra-Chr) and inter-chromosomal (Inter-Chr) repeat matches assigned to each genomic feature: Intergenic, LTR, ORF (excluding the complex tandem repeat genes), retrotransposon (Retro), and tRNA (Figure 2—source data 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Schematic of a previously uncharacterized long repeat sequence (repeat family 124). The repeat sequence (red arrows) is described in terms of copy length (bp) and shared sequence identity (% of exact nucleotide matches) between the two matched sequences. The distance between intra-chromosomal repeat matches is the spacer length, and their orientation can be inverted (reverse complement located on the opposite DNA strand), mirrored (reverse complement located on the same DNA strand), or tandem. Long repeat sequences are further characterized by the genomic features contained within the repeat. Long repeats that contain ORFs include partial ORF sequences, single complete ORF sequences (paralogs) or multiple ORFs and intergenic sequences. Repeat family 124 contains four complete ORFs (black arrows) and flanking intergenic sequences in each copy of the long repeat sequence. Other repeat sequences contain lone LTRs, retrotransposons, tRNAs, and intergenic sequences. Details of all repeat sequence matches are found in Supplementary file 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The spacer length for all intra-chromosomal repeat matches (excluding the complex tandem repeat genes) for each chromosome, ordered by chromosome size in bp (R2 = 0.06, p<0.0001, Figure 2—source data 2). (B) Distribution of intra-chromosomal spacer length for each of the eight C. albicans chromosomes (chromosome ends indicated with a black bar). There is a significant difference in the distributions of repeat spacer lengths between chromosomes (p<0.035, Kruskal-Wallis test with Dunn’s multiple comparison), with the longest chromosomes having more repeat matches that are separated by greater spacer length than the smallest chromosomes (Figure 2—source data 2).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The percent shared identity (A) and repeat copy length (B) of intra-chromosomal (Intra-Chr) or inter-chromosomal (Inter-Chr) repeat matches containing each genomic feature: Intergenic, LTR, ORF (excluding the complex tandem repeat genes), Retrotransposon (Retro), and tRNA (Supplementary file 2). Copy length is significantly different between repeats containing ORFs compared to repeats containing other features (p<0.0001, Kruskal-Wallis with Dunn’s multiple comparisons). (C) Percent sequence identity of repeat matches for each chromosome both before (pink) and after (blue) removal of the complex tandem repeat genes. The median sequence identity of repeats on Chr6 is significantly increased after removal of the complex tandem repeat genes (p<0.0001, Kruskal-Wallis with Dunn’s multiple comparisons). The length (D) and percent GC content (E) of the full-length ORF coding sequences (CDS) within long repeat sequences (pink) and all other full-length CDSs not contained in long repeat sequences (blue). Dashed lines represent median values. The full-length CDSs contained in long repeats are significantly longer (p<0.0008, Kolmogorov-Smirnov test) and have a significantly higher percent GC content (p<0.0001, Kolmogorov-Smirnov test) than all full-length CDSs not contained in long repeat sequences. ***p<0.001, ****p<0.0001 (see Materials and methods, Figure 2—source data 3).
 
 We next calculated the orientation and distance between matched intra-chromosomal repeat sequences (Figure 2—figure supplement 1), both important factors for reconstructing the evolutionary history of these duplication events and for analyzing the frequency and outcome of homologous recombination events that occur between repeat sequences (Lobachev et al., 1998; Ramakrishnan et al., 2018). Intra-chromosomal repeats are often generated in tandem by recombination between sister chromatids or replication slippage, and these repeats can move further away from each other by chromosomal rearrangement events (including chromosomal inversions) (Achaz et al., 2000; Reams and Roth, 2015). Indeed, intra-chromosomal repeats were predominantly tandem, although inverted and mirrored repeats also occurred (Supplementary file 2). We hypothesized that the distance between matched intra-chromosomal repeats (spacer length) would be predominantly short and that the distribution of spacer lengths on each chromosome would be similar. Strikingly, spacer length ranged from 1 bp to 2,856,212 bp (median ~82.8 kb, excluding the complex tandem repeat genes, see Materials and methods), and was correlated with chromosome size (Figure 2—figure supplement 2A, R2 = 0.066, p<0.0001). Additionally, the distribution of spacer lengths was significantly different between chromosomes (Figure 2—figure supplement 2B, p<0.035, Kruskal-Wallis with Dunn’s multiple comparison test) with the larger chromosomes (Chr1 and ChrR) containing many repeat matches that were separated by distances greater than ~1.5 Mb. The increased distance between repeat sequences likely occurred via additional large inversions, insertions or telomere-telomere recombination/fusion events.
 
@@ -66,13 +94,21 @@ Of the matched repeat pairs, the long repeat sequences containing ORFs had the l
 
 The complex tandem repeat genes, for which genome copy number could not be determined, had low sequence identity and were predominantly found on Chr6 (Figure 2—figure supplement 3C). In contrast, the full-length coding sequence of all ORFs that were contained within long repeat sequences, were significantly longer (median value of 1380 bp vs 1200 bp, Figure 2—figure supplement 3D, p<0.0008, Kolmogorov-Smirnov test) and had a significantly higher GC content (median value of 37.22% vs 35.22% Figure 2—figure supplement 3E, p<0.0001, Kolmogorov-Smirnov test) than the full-length coding sequence of all ORFs not contained within long repeat sequences (genome-wide, excluding the complex tandem repeat genes, see Materials and methods). Interestingly, increased GC content was correlated with increased rates of both mitotic and meiotic recombination events in S. cerevisiae (Kiktev et al., 2018).
 
-## Identification of CNV breakpoints in isolates with segmental aneuploidies
+### Identification of CNV breakpoints in isolates with segmental aneuploidies
 
 Next, CNV breakpoints were determined across 13 additional isolates with one or more segmental aneuploidies. Six of these isolates were from in vitro evolution experiments in the presence of azole antifungal drugs (FLC or miconazole), four were from in vivo evolution experiments in a murine model of oropharyngeal candidiasis (OPC) performed in the absence of antifungal drugs, and three were human clinical isolates (Supplementary file 1). All segmental aneuploidies arose from a known euploid diploid progenitor (Abbey et al., 2014; Hirakawa et al., 2015), except two clinical isolates with unknown origin and the i(4R) isolate that arose from a trisomic progenitor, described above.
 
 Segmental aneuploidies were initially detected by CHEF karyotype analysis and ddRAD-seq, but the coordinates of the CNV breakpoints were not known (Abbey et al., 2014; Forche et al., 2018; Mount et al., 2018; Ropars et al., 2018). The ploidy of each isolate was measured by flow cytometry and the DNA copy number of all loci was determined using whole genome sequencing (see Materials and methods). Among the 13 diverse isolates, 19 segmental aneuploidies were confirmed, with at least one segmental aneuploidy detected on each of the eight chromosomes (Figure 3A, Figure 3—figure supplement 1A–J). Segmental amplifications were more frequent (12/19, 63.2%) than segmental deletions (3/19, 15.8%). The remaining segmental aneuploidies (4/19, 21.1%) consisted of more complex rearrangements that resulted in a segmental amplification and a terminal chromosome deletion at the same breakpoint.
 
-## All segmental aneuploidies occur at long repeat sequences
+![Figure 3.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig3-v2.jpg)
+
+**Figure 3.:** (A) Whole genome sequence data plotted as a log2 ratio and converted to chromosome copy number (Y-axis) and chromosome location (X-axis) using YMAP. The source of each isolate is indicated in color: in vivo evolution experiments in a murine model of oropharyngeal candidiasis (OPC) (green), in vitro evolution experiments in the presence of azole antifungal drugs (red), and clinical isolates (blue). Ploidy, determined by flow cytometry, is indicated on the far right. Every copy number breakpoint occurred at a repeat sequence (red arrow), additional details are in Supplementary file 3. Location of the Major Repeat Sequences (black circle) and rDNA array (blue circle) are shown below. Example copy number breakpoints for two isolates (B–C). (B) Isolate AMS3053 underwent a complex rearrangement on Chr3L at a long inverted repeat (Repeat 124, red lines). Read depth (top panel) and allele frequency (IGV panel) data indicate the copy number breakpoint coincided with LOH (blue region) telomere proximal to the breakpoint. The inverted repeat copies (~3.2 kb, 99.5% sequence identity, separated by ~11.3 kb) each contain four complete ORFs and intergenic sequences. (C) Read depth (top panel) and allele frequency (IGV panel) data for isolate CEC2871 shows an internal chromosome deletion on ChrR with copy number breakpoints (red lines) and LOH (blue) that occur between a long tandem repeat (Repeat family 201, red arrows). The tandem repeat copies (~1.4 kb, 93.8% sequence identity, separated by ~55 kb) each contain one ORF.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative segmental aneuploidy breakpoints from Figure 3. Whole genome sequence data plotted as a log2 ratio and converted to chromosome copy number (Y-axis) and chromosome location (X-axis) using YMAP. Copy number variation breakpoints (red and green arrowheads) are indicated. Each breakpoint is associated with a long repeat sequence (red or green arrow) shown in the gene track, and annotated genomic features are indicated with black arrows, below the gene track (A-J, Supplementary file 3). Segmental chromosome aneuploidies from the indicated isolates occur within (A) Chr1 repeat family 14, containing ORFs HGT1 and HGT2; (B) Chr2 repeat family 93, containing two uncharacterized ORFs; (C) Chr3 repeat family 124 containing eight ORFs and associated intergenic sequences; (D) CEN4 repeat family 151; (E) CEN5 repeat family 161, containing two ORFs; (F) Chr6 repeat family 137, containing the ALS gene family; (G) a complex repeat region on Chr7 with both inverted and tandem repeat sequences containing five uncharacterized ORFs; and (H) ChrR repeat region containing the rDNA array. Two examples of complex segmental aneuploidies involving more than one repeat family (I and J). (I) Chr1 repeat family 65 is associated with a centromere proximal amplification, while repeat family 40 is associated with a chromosome truncation event. (J) Example of a segmental aneuploidy flanked by two different repeat families. An internal deletion is flanked by repeat family 14 and family 9 in clinical isolate FH5. Family 9 is the only inter-chromosomal repeat associated with any observed copy number breakpoint.
+
+### All segmental aneuploidies occur at long repeat sequences
 
 The CNV breakpoint of each segmental aneuploidy was determined using both read depth and allele ratio analysis (see Materials and methods). From the 19 segmental aneuploidies, 26 CNV breakpoints were identified because some segmental aneuploidies contained multiple breakpoints. Strikingly, every CNV breakpoint occurred within 2 kb of a long repeat sequence, ranging from 248 bp to ~4.76 kb in length. Observed breakpoints had significantly more overlap with long repeat sequences than expected given the total genome coverage of long repeat sequences (p<0.0001, two-tailed Fishers Exact Test, see Materials and methods). All but one of the repeat sequences were intra-chromosomal and separated by a distance ranging from ~3.1 kb to ~1.62 Mb (Supplementary file 3). Importantly, repeats containing ORFs were significantly more common than all other types of repeats at these breakpoints (18/26 CNV breakpoints, p<0.001, χ2 Goodness-of-fit test).
 
@@ -82,9 +118,17 @@ Eight CNV breakpoints occurred within other long repeat sequences, including: a�
 
 In summary, all CNV breakpoints in this collection occurred at or within long repeat sequences. Inverted repeat sequences predominantly coincided with segmental amplifications and terminal chromosome deletions, while tandem repeat sequences coincided with internal chromosome deletions. Some aneuploidies were comprised of multiple breakpoints, each associated with a different repeat family. Overall, a repeat homology-associated repair mechanism appears to be driving the formation of segmental aneuploidies. Importantly, the involvement of long repeats in CNV breakpoints is independent of genetic background and environmental selection.
 
-## LOH occurs at long inter- and intra-chromosomal repeat sequences
+### LOH occurs at long inter- and intra-chromosomal repeat sequences
 
 In many of the isolates with segmental aneuploidies, the CNV also was accompanied by LOH (e.g. Figure 3B and C). To ask if long repeat sequences were associated with LOH breakpoints in the absence of detectable CNVs, we selected 20 near-euploid genomes that had at least one long-range homozygous region, but the coordinates of the LOH breakpoint were not known (Ford et al., 2015; Hirakawa et al., 2015; Ropars et al., 2018). These 20 isolates belong to nine major C. albicans clades from different origins (e.g. superficial and invasive human infections, healthy human hosts, and spoiled food) (Figure 4A, Supplementary file 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig4-v2.jpg)
+
+**Figure 4.:** Whole genome sequence data plotted as a log2 ratio and converted to chromosome copy number (Y-axis) and chromosome location (X-axis) using YMAP. (A) All long-range homozygous regions (light blue) that are associated with long repeat sequences (colored arrows) are indicated for 20 diverse C. albicans isolates. LOH breakpoints and isolate information are detailed in Supplementary files 1 and 4. The type of long repeat is indicated with colored arrows: intra-chromosomal (red), inter-chromosomal (yellow), both intra- and inter-chromosomal (green), rDNA repeat (blue), and MRS (black). (B–C) Two example LOH breakpoints in isolate CEC723 that occur at long repeats (red arrows) on (B) Chr1 (repeat copy length ~1.1 kb), and (C) ChrR (repeat copy length ~3.3 kb) and continue to the right telomere of the respective chromosomes. Heterozygous and homozygous allele ratios are indicated in the IGV track. The position, orientation, and spacer length of the long repeat sequence is indicated in the gene track. ORFs (black arrows) contained within the long repeat sequences are indicated above the gene track. The LOH breakpoint on ChrR is within a repeat-dense region; additional long repeats in the region are indicated (dashed arrows).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Homozygosis of the right arm of Chr3 in SC5314 occurred near a telomere repeat sequence. Chromosome plot indicating the location of homozygosis (light blue) on Chr3R in SC5314. An 8 bp unit of the C. albicans telomere repeat sequence (5’ – AACTTCTT – 3’) indicated by the two red arrows. Read depth and allele ratios above the gene track indicates that homozygosis occurs near the 8 bp telomere seed sequence in the 3’ end of orf19.5880 and continues to the Chr3R telomere. (B) Proposed model of telomere addition and subsequent homozygosis of the right arm of Chr3 in SC5314. (i) A double-strand DNA break occurs on one homolog of Chr3 (blue) near the 8 bp telomere seed sequence (red arrow). (ii) Recombination between the 8 bp telomere seed sequence on Chr3 and a telomere on another chromosome end (iii) leads to the formation of a truncated Chr3 capped with a new telomere. (iv) A secondary break within the newly added telomere sequence and BIR of the opposite Chr3 homolog results in (v) formation of a full-length disomic Chr3 that is homozygous for the right arm.
 
 153 LOH breakpoints were identified in the 20 isolates (See Materials and methods, Supplementary file 4). 61/153 LOH breakpoints were found within 2 kb of a long repeat sequence, and, like the CNV breakpoints, these LOH breakpoints could occur on any chromosome (Figure 4A). The copy length of the repeat sequences found at LOH breakpoints ranged from 78 bp to 6499 bp (median 516 bp) with sequence identities ranging from 82.2% to 100% (median of 95.1%). Most of the repeats associated with LOH breakpoints were intra-chromosomal (46/61), in all three orientations (inverted, mirrored, and tandem), and separated by a distance ranging from 903 bp to ~1.6 Mb (median ~35.3 kb). The vast majority of long-range homozygous regions contained only one LOH breakpoint and proceeded from the breakpoint to the proximal telomere, similar to previous analyses (Ene et al., 2018; Forche et al., 2008; Forche et al., 2009; Selmecki et al., 2005). Surprisingly, four isolates had an LOH breakpoint that proceeded from one chromosome arm to the telomere on the opposite chromosome arm, causing centromere homozygosis (three events on ChrR and one event on Chr5).
 
@@ -92,7 +136,7 @@ One isolate, CEC723, had two long-range homozygous regions associated with intra
 
 Finally, the reference isolate SC5314 contains a well-known long-range homozygous region on Chr3R. We asked if this LOH breakpoint occurred within a long repeat sequence. Remarkably, the LOH breakpoint occurred in orf19.5880 near an 8 bp sequence (AACTTCTT) identical to part of the C. albicans 23 bp telomere repeat sequence (GGTGTACGGATTGTCTAACTTCTT). Furthermore, a second copy of this same 8 bp sequence was found in an inverted orientation ~3.4 kb away in the adjacent ORF (orf19.5884). This long-range LOH event continued to the right telomere of Chr3. While LOH may have resulted from a repair template on the other homolog, an alternative model cannot be ruled out. We previously found that an LOH and CNV breakpoint that caused a segmental Chr5 truncation in the common laboratory strain BWP17 (Selmecki et al., 2005) was initiated at a 9 bp sequence (CTAACTTCT) that is almost identical to the sequence found at this breakpoint (AACTTCTT). We posit that a similar chromosome truncation, followed by reduplication of the monosomic portion of Chr3 (Figure 4—figure supplement 1A & B) may have generated the homozygosis of Chr3. These 8 bp and 9 bp telomere-like sequences occur 2160 and 249 times, respectively, within the non-telomeric portions of the C. albicans reference genome (Supplementary file 5). The presence of such a large number of potential template sequences, especially if including the telomere repeats at each chromosome end, might have driven this two-step model.
 
-## Repeat sequences cause sequence inversions and heterozygous islands
+### Repeat sequences cause sequence inversions and heterozygous islands
 
 As expected, levels of heterozygosity were high within long repeat sequences due to the ability of short-read (Illumina) sequences to map to multiple positions in the genome (e.g. the heterozygous bases within repeat sequences in Figure 4B and C). Unexpectedly, between or adjacent to some long repeat sequences, heterozygous islands were observed in otherwise homozygous regions of the genome. For example, in isolate P75063, an LOH breakpoint on Chr4L was associated with a ~1.7 kb inverted repeat and resulted in a terminal homozygosis of the chromosome (Figure 5A). Adjacent to this homozygous region was an ~32 kb region that had multiple homozygous/heterozygous transitions (5’ homozygous-heterozygous-homozygous-heterozygous 3’). We hypothesized that a long sequence inversion, similar to that observed within the repeats flanking CEN4, accounted for the multiple heterozygous to homozygous transitions in this region. PCR amplification between unique sequences flanking the inverted repeat revealed a ~32 kb inversion in P75063 and SC5314 and was the only orientation that amplified by PCR; the reference orientation did not amplify, suggesting that the reference genome may be incorrect at this position (Figure 5B).
 
@@ -102,9 +146,17 @@ As expected, levels of heterozygosity were high within long repeat sequences due
 
 These two long inversions (at CEN4 and Chr4L), plus an additional seven potential sequence inversions were identified bioinformatically from a set of 21 clinical isolates (Hirakawa et al., 2015); however, none of these inversion breakpoints were characterized or validated by PCR or Sanger sequencing. We found that all potential inversions had breakpoints within long inverted repeats, and these potentially cause chromosomal inversions of ~4.1 kb to ~102.6 kb in length (median ~39.0 kb, Supplementary file 6). All but one sequence inversion (8/9) occurred within repeats containing ORFs and a high median sequence identity (98.3%). In summary, we identified examples of chromosomal inversions that occurred between long repeat sequences and provide the first molecular validation of these inversions in both the reference SC5314 and clinical isolates.
 
-## Breakpoints resulting in CNV, LOH, and inversion, occur in the longest repeat sequences with highest homology
+### Breakpoints resulting in CNV, LOH, and inversion, occur in the longest repeat sequences with highest homology
 
 Overall, many uncharacterized long repeat sequences exist within the C. albicans genome. Repeats associated with breakpoints (CNV, LOH, and inversion) were significantly longer than all other long repeat sequences (median copy length of 785 bp vs 278 bp, p<0.0001, Kolmogorov-Smirnov test), and had a significantly higher percent sequence identity than all other long repeat sequences (median identity of 96.2% vs 94.2%, p<0.036 Kolmogorov-Smirnov test) (Figure 6A). Repeats containing ORFs were longer than repeats containing other genomic features and were the most common repeat identified at breakpoints (33/53, 62.3%, Figure 6B & C). Furthermore, repeats containing ORFs were the only genomic feature with both significantly longer copy length and significantly higher sequence identity at breakpoints than at non-breakpoints (p<0.0001 copy length, p<0.0001 sequence identity Kolmogorov-Smirnov test, Figure 6—figure supplement 1A & B). Additionally, repeat matches that contain multiple ORF sequences represent only 8.6% of all long repeats containing ORFs, yet these extra-long repeats comprise 26.8% of the observed breakpoints (Supplementary file 2). Therefore, at least under selection, genome rearrangements are occurring more often at repeats with high sequence identity, and at repeats with high sequence identity and high copy length, the latter of which includes ORFs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig6-v2.jpg)
+
+**Figure 6.:** (A) Scatterplot of percent sequence identity and copy length of all long repeat matches in Supplementary file 2, excluding the complex tandem repeat genes. All long repeats are indicated in gray, and repeats associated with the observed breakpoints are indicated as follows: LOH (blue), CNV (red), and inversion (green). Six repeats (black circle) were associated with more than one type of breakpoint, and two repeats (black star) were associated with all three types of breakpoints. Solid black lines indicate the median repeat copy length (278 bp, vertical black line) and median percent sequence identity (94.3%, horizontal black line). Repeats associated with LOH, CNV, and inversion breakpoints have a significantly higher median copy length (p<0.0001, Kolmogorov-Smirnov test) and median sequence identity (p<0.036, Kolmogorov-Smirnov test) than all other long repeat sequences (excluding the complex tandem repeat genes, Figure 6—source data 1). (B) Scatterplot as in Figure 6A, where genomic features contained within long repeats are indicated: intergenic sequence (light brown), lone LTR (blue), ORF (pink), retrotransposon (dark brown), and tRNA (green). (C) The distribution of genomic features contained within long repeats at LOH, CNV, and inversion breakpoints. Colors indicated as in Figure 6B.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45954/elife-45954-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Percent sequence identity of long repeat matches (excluding the complex tandem repeat genes) associated with an observed breakpoint, or not associated with an observed breakpoint (gray) for each genomic feature contained within the long repeat (intergenic sequence [light brown], lone LTR [blue], ORF [pink], and tRNA [green]). Breakpoint-associated repeats containing intergenic sequences (n = 3) have significantly higher identity than all other breakpoint-associated repeats combined (p<0.036, Kruskal-Wallis [K–W] test). The sequence identity of breakpoints containing ORFs and intergenic sequence are significantly higher than non-breakpoint associated repeats containing the same genomic features (intergenic sequence p<0.023, ORF p<0.0001, Kolmogorov-Smirnov [K–S] test). (B) The copy length of repeats associated with an observed breakpoint (color as in A) or not associated with an observed breakpoint (gray) for each genomic feature contained within the long repeat. Breakpoint-associated repeats containing ORFs are significantly longer than all other repeats (p<0.0001, Kruskal-Wallis [K-W] test, Figure 6—source data 1). Breakpoint-associated repeats containing ORFs are significantly longer than non-breakpoint associated repeats containing ORFs (p<0.0001, Kolmogorov-Smirnov [K-S] test). Importantly, breakpoint-associated repeats containing ORFs were the only repeats with both significantly higher identity and significantly longer copy length than non-breakpoint associated repeats (Figure 6—figure supplement 1).
 
 Nine repeat families were associated with more than one breakpoint type (CNV, LOH, and inversion), and two of these (124 and 151) were associated with all three breakpoint types. Repeat family 124 (Figure 3B and 6A), comprised of 4 ORFs, was one of the longest repeats (~3.2 kb) and had one of the highest percent sequence identities (>99%). Repeat family 151 flanks CEN4 and was associated with the formation of the novel isochromosome i(4R), which was necessary and sufficient for increased fitness in the presence of FLC (Figure 1C and Figure 6A). Overwhelmingly, these data support that long repeat sequences found throughout the C. albicans genome are utilized to generate segmental aneuploidies, long-range LOH and sequence inversions, and that in at least one environment these rearrangements provide a significant fitness benefit to the organism.
 
@@ -112,7 +164,7 @@ Nine repeat families were associated with more than one breakpoint type (CNV, LO
 
 Genomic variation caused by CNV, LOH, and sequence inversion can drive rapid adaptation and promote tumorigenesis. Here, we examined the role of genome architecture during the formation of genetic variation in the diploid, heterozygous fungal pathogen, C. albicans. Our genome-wide analysis of 33 isolates identified long repeat sequences that had prominent roles in generating genomic diversity. These long repeats included previously uncharacterized repeat sequences, centromeric repeats, repeats found within intergenic sequences, and repeats that span multiple ORFs and intergenic sequences. Importantly, long repeat sequences were found at every CNV and sequence inversion breakpoint observed, and frequently occurred at LOH breakpoints as well. Long repeats that were associated with all breakpoints (CNV, LOH, and inversion) had on average significantly higher sequence identity compared to all repeats identified (p<0.036, Kolmogorov-Smirnov test). Furthermore, repeats containing ORFs had both significantly higher sequence identity and significantly longer copy length at breakpoints than at non-breakpoints (sequence identity p<0.0001, copy length p<0.0001 Kolmogorov-Smirnov test, Figure 6, Figure 6—figure supplement 1A and B). These results were independent of genetic background or source of isolation. Thus, long repeat sequences found across the C. albicans genome underlie the formation of significant genome variation that can increase fitness and drive adaptation.
 
-## DNA double-strand breaks are repaired using long repeat sequences found across the C. albicans genome
+### DNA double-strand breaks are repaired using long repeat sequences found across the C. albicans genome
 
 The genomic variants described in this study are the result of DNA double-strand breaks (DSBs) and subsequent recombination events resulting in CNVs, LOH, and sequence inversions. While the factors leading to, and the location of the initiating DSBs are unknown, the genomic variants recovered were all selected as viable, and perhaps beneficial, outcomes of the DSB repair process. DSBs are repaired by either non-homologous end-joining (NHEJ) or homologous recombination (HR). HR is thought to be a high-fidelity repair process due to the use of an intact, homologous DNA template. However, recent studies have also implicated HR in an increased rate of mutagenesis and chromosomal rearrangements (Bishop and Schiestl, 2000; Kramara et al., 2018).
 
@@ -126,7 +178,7 @@ First, we propose that single-strand annealing (SSA) is initiated by the anneali
 
 The second HR mechanism we propose is break-induced replication (BIR) which is initiated by DSBs that have only one free end available for repair. During BIR, single-stranded DNA invades a homologous sequence followed by subsequent DNA synthesis which can copy long, chromosomal-sized DNA segments (Anand et al., 2013; Kramara et al., 2018; Malkova and Ira, 2013; Mehta and Haber, 2014). If templating and synthesis occurs on a homologous chromosome, BIR can lead to long-range homozygosis of a chromosome (Figure 7D). Processes similar to BIR have been proposed for CNV generation in a diverse set of organisms ranging from bacteria to humans (Hastings et al., 2009). These predominantly micro-homology-mediated BIR (MMBIR) events use short regions of homology to repair DSBs in a Rad51-independent manner (Hastings et al., 2009). One caveat is that the repeat sequences involved in generating genome rearrangements observed in this study are much longer than those involving MMBIR. While repair by BIR is rare in S. cerevisiae model systems, the selective benefit of the resulting genotypes generated by BIR could increase the apparent frequency with which these types of mutations are recovered in certain environments, for instance the acquisition of i(4R) in the presence of FLC (Figure 1).
 
-## C. albicans repeat copy length and spacer length
+### C. albicans repeat copy length and spacer length
 
 The repeat copy length associated with observed breakpoints in C. albicans are similar in copy length to transposable (Ty) elements in S. cerevisiae (~6 kb) and long interspersed nuclear elements (LINE) in the human genome (~6–7 kb), which are a major source of genome rearrangements (Chen et al., 2014; Dunham et al., 2002; Gresham et al., 2010; Higashimoto et al., 2013; Selmecki et al., 2015). Both Ty and LINE elements are high copy number repeats; LINE elements are present in thousands of copies in the human genome (Rodić and Burns, 2013). However, beyond the similarity in copy length, we rarely found high copy number repeats, like lone LTRs or retrotransposons, associated with CNV and inversion breakpoints (5.7%, Figure 6). These breakpoints predominantly occurred at repeats containing ORFs that are often present in only two copies per genome (Supplementary file 2). LOH breakpoints, on the other hand, were associated more often with LTRs (22.6%, Figure 6), which may be a result of selection or may suggest a preference for a different repair mechanism when a DSB occurs near these loci.
 
@@ -136,7 +188,7 @@ The spacer length, especially between inverted repeats, has been a major focus o
 
 Astoundingly, the C. albicans CNV and inversion breakpoints are associated with much longer repeat spacer lengths than those described in S. cerevisiae, ranging from ~3.1 kb to ~1.6 Mb (median ~30 kb) and ~3.1 kb to ~94.3 kb (median ~34.6 kb), respectively. Recombination between such long distances requires a naturally occurring, long-distance homology search. It is tempting to speculate that C. albicans may have a mechanism for long-distance resection, particular chromatin features, or a 3D-nuclear structure that facilitates recombination between inverted repeats separated by long distances.
 
-## Inverted repeat sequences directly associated with the CENP-A-binding centromere core sequences facilitate isochromosome formation
+### Inverted repeat sequences directly associated with the CENP-A-binding centromere core sequences facilitate isochromosome formation
 
 Centromeres were common breakpoints for CNV, LOH and inversion. Twelve of the 33 isolates had breakpoint events that occurred within centromeres, including those described at CEN4 and CEN5, as well as two additional centromeres that contained one copy of a long repeat sequence, CEN2 and CEN3 (Supplementary file 2). Notably, C. albicans centromeres are the earliest firing centers of DNA replication (Koren et al., 2010; Tsai et al., 2014). Therefore, errors in DNA replication may be a common source of DSBs that are repaired via HR between long repeat sequences.
 
@@ -146,79 +198,299 @@ Similarly, repair of a DSB within or near a centromere-associated inverted repea
 
 In this study, Illumina short-read datasets were used to identify genomic features that were driving structural and allelic variation across diverse C. albicans isolates. The use of both new and previously published short-read datasets highlights the utility of this bioinformatic approach for the analysis of structural variants within this and other species. However, short-read data are unable to provide a key understanding of the molecules containing the long repeat sequences. For example, the definitive structure of chromosomal inversions, including the heterozygous CEN4 sequence, is difficult to determine with short-read data. PCR enabled rapid validation of these inversions (Figures 1 and 5); however, it required knowledge of the repeat location and unique surrounding sequences. Future long-read sequencing is needed to address the definitive structure of existing DNA molecules and potential DNA intermediates involved in recombination and resolution of CNV, LOH, and inversions.
 
-## Long repeats containing ORFs were significantly more common at breakpoints resulting in CNV, LOH and inversion than any other genomic feature
+### Long repeats containing ORFs were significantly more common at breakpoints resulting in CNV, LOH and inversion than any other genomic feature
 
 One hypothesis is that active transcription may promote DNA DSBs, due to the formation of R-loop structures (Aguilera and Gaillard, 2014; Santos-Pereira and Aguilera, 2015). Additionally, increased transcription in certain environments may increase the probability of a DNA DSB that result in genome rearrangements, as was observed at the S. cerevisiae CUP1 locus in high-copper environments (Adamo et al., 2012; Fogel et al., 1983; Hull et al., 2017; Thomas and Rothstein, 1989). Several indirect results are consistent with this hypothesis in C. albicans. First, all ORFs within a long repeat that were associated with a breakpoint were indeed actively transcribed in the reference isolate SC5314 during growth in rich medium (Bruno et al., 2010). Second, some breakpoint ORFs have increased expression in the selective environment from which the isolate with the breakpoint was obtained. For example, two different in vivo isolates, one bloodstream clinical isolate and one murine OPC-evolved isolate, have the same breakpoint on Chr1 at the inverted repeat that includes HGT1 and HGT2 (Supplementary file 2). Both HGT1 and HGT2 are induced during OPC, biofilm production and adaptation to serum (Horák, 2013; Nobile et al., 2012; Pitarch et al., 2001). Therefore, increased transcription of these repeat ORFs in vivo is a potential source of DNA damage that resulted in DSB repair.
 
-## Conclusion
+### Conclusion
 
 In conclusion, genome rearrangements resulting in segmental aneuploidies, sequence inversions, and LOH are associated with long repeat sequence breakpoints on every chromosome. These genome rearrangements can arise rapidly, both in vitro and in vivo, and can provide an adaptive phenotype such as improved growth in antifungal drugs. Importantly, long repeat sequences are hotspots for genome variation across diverse selective environments. Indeed, several repeats were involved in all three types of genome rearrangements in different isolates. These data support the idea that the C. albicans genome is one of the most rapidly evolving genomes due to disruption of conserved syntenic sequence blocks via genome rearrangements between long repeat sequences (Fischer et al., 2006). Finally, given the frequency of long repeat sequences in the human genome, studies of C. albicans genome rearrangements can contribute to understanding the mechanisms that facilitate CNV, LOH, and inversions associated with human disease and cancer.
 
 ## Materials and methods
 
-## Yeast isolates and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>SC5314</td>
+      <td>Hirakawa et al., 2015 (doi:10.1101/gr.174623.114)</td>
+      <td>RRID:SCR_013437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. albicans)</td>
+      <td>P78042</td>
+      <td>Hirakawa et al., 2015 (doi:10.1101/gr.174623.114)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. albicans)</td>
+      <td>AMS3743</td>
+      <td>This Study</td>
+      <td></td>
+      <td>In vitro evolution of P78042 in 128 ug/ml FLC for 100 generations</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. albicans)</td>
+      <td>AMS3743_10</td>
+      <td>This Study</td>
+      <td></td>
+      <td>In vitro evolution of AMS3743 in rich medium for 300 generations</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. albicans)</td>
+      <td>AMS3743_10_S6</td>
+      <td>This Study</td>
+      <td></td>
+      <td>Single colony from AMS3743_10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Digoxigenin-AP Fab Fragments</td>
+      <td>Roche</td>
+      <td>11093274910 RRID:AB_2734716</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>PCR Primers</td>
+      <td>This Study</td>
+      <td></td>
+      <td>Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina Nextera XT Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>105032350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina Nextera XT Index Kit</td>
+      <td>Illumina</td>
+      <td>105055294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina MiSeq v2 Reagent Kit</td>
+      <td>Illumina</td>
+      <td>15033625</td>
+      <td>2 × 250 cycles</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Blue Pippin 1.5% agarose gel dye-free cassette</td>
+      <td>Sage Science</td>
+      <td>250 bp - 1.5 kb DNA size range collections, Marker R2</td>
+      <td>Target of 900 bp</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS kit</td>
+      <td>Life Technologies</td>
+      <td>Q32854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR DIG Probe Synthesis Kit</td>
+      <td>Roche</td>
+      <td>11636090910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent 2100 Bioanalyzer High Sensitivity DNA Reagents</td>
+      <td>Agilent Technologies</td>
+      <td>5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluconazole (FLC)</td>
+      <td>Alfa Aesar</td>
+      <td>J62015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUMmer Sutie</td>
+      <td>Kurtz et al., 2004 (doi:10.1186/gb-2004-5-2-r12)</td>
+      <td>v3.0 RRID:SCR_001200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic</td>
+      <td>Bolger et al., 2014 (doi:10.1093/bioinformatics/btu170)</td>
+      <td>v0.33 RRID:SCR_011848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA</td>
+      <td>Li, 2013 (doi:10.1093/bioinformatics/btp324)</td>
+      <td>v0.7.12 RRID:SCR_010910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>Li et al., 2009 (doi:10.1093/bioinformatics/btp352)</td>
+      <td>v0.1.19 RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Genome Analysis Toolkit</td>
+      <td>McKenna et al., 2010 (doi:10.1101/gr.107524.110)</td>
+      <td>v3.4–46 RRID:SCR_001876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REPuter</td>
+      <td>Kurtz et al., 2001 (doi:10.1093/nar/29.22.4633)</td>
+      <td>V1.0 https://bibiserv.cebitec.uni-bielefeld.de/reputer</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Yeast Analysis Mapping Pipeline</td>
+      <td>Abbey et al., 2014 (doi:10.1186/s13073-014-0100-8)</td>
+      <td>v1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>https://www.graphpad.com</td>
+      <td>v6.0 RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/?</td>
+      <td>v2.0.0-rc-30/1.49 s RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>Thorvaldsdóttir et al., 2013 (doi:10.1093/bib/bbs017)</td>
+      <td>v2.3.92 RRID:SCR_011793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org</td>
+      <td>v3.5.2 RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Candida Genome Database</td>
+      <td>http://Candidagenome.org</td>
+      <td>RRID:SCR_002036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium Iodide</td>
+      <td>Invitrogen</td>
+      <td>P3566</td>
+      <td>25 ug/ml final concentration</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ribonuclease A</td>
+      <td>MP Biomedicals</td>
+      <td>101076</td>
+      <td>0.5 mg/ml final concentration</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast isolates and culture conditions
 
 All isolates used in this study are shown in Supplementary file 1. Isolates were stored at −80°C in 20% glycerol. Isolates were grown at 30°C in YPAD (yeast peptone dextrose medium; Rose W, 1990) supplemented with 40 µg ml−1 adenine and 80 µg ml−1 uridine).
 
-## In vivo evolution experiments
+### In vivo evolution experiments
 
 OPC isolates were obtained as previously described (Forche et al., 2018; Solis and Filler, 2012). Briefly, mice were orally infected with strain YJB9318 and single colony isolates were obtained from tongue tissue of mice on days 1, 2, 3, and 5 post infection and stored in 50% glycerol at −80°C for further use.
 
-## In vitro evolution experiments
+### In vitro evolution experiments
 
 Six isolates were obtained from in vitro evolution experiments in the presence of antifungal drug (Supplementary file 1). Isolate AMS3053 was obtained on 20 µg/ml Miconazole agar plates as previously described (Mount et al., 2018). Isolates AMS3742, AMS3743, AMS3747, AMS3748, and AMS3744 were obtained from liquid batch culture evolution experiments conducted in 96-well format. Progenitor isolates were plated for single colonies on YPAD and incubated for 48 hr at 30°C. Single colonies were grown to saturation in liquid YPAD at 30°C. A 1:1000 dilution was made in YPAD medium containing either 1 µg/ml or 128 µg/ml of FLC. Plates were covered with BreathEASIER tape (Electron Microscope Science) and cultured in a humidified chamber for 72 hr at 30°C. At each 72 hr time point, cells were resuspended by pipetting and transferred into fresh media via a 1:1000 dilution and cultured for another 72 hr at 30°C, for 10 consecutive passages. After the final transfer, cells were immediately collected for genomic DNA isolation and ploidy analysis by flow cytometry.
 
 To obtain AMS3743 isolates that had lost the i(4R) (Figure 1—figure supplement 1), 12 single colonies of AMS3743 were selected on YPAD plates at 30°C after 48 hr. All 12 single colonies had i(4R) (by PCR) and were used to initiate 12 YPAD-evolved lineages, each cultured for 24 hr in 4 ml liquid YPAD at 30°C with shaking. Every 24 hr, a 1:1000 dilution was inoculated into fresh YPAD medium. Cultures were passaged for 30 days. Cells from all 12 YPAD-evolved lineages were divided into tubes for −80°C storage, genomic DNA isolation, and CHEF analysis. All 12 YPAD-evolved lineages maintained i(4R) by CHEF analysis. CHEF gel densitometry analysis (see below) identified one lineage (AMS3743_10) that had a lighter i(4R) band density relative to the rest of the genome. AMS3743_10 was plated for single colonies on a YPAD plate and incubated at 30°C for 48 hr. Six single colonies were cultured for 24 hr in 4 ml liquid YPAD at 30°C with shaking, and cells were divided into tubes for −80°C storage, genomic DNA isolation, and CHEF analysis. One of the six single colonies lost the i(4R) (AMS3743_10_S6, Figure 1—figure supplement 1).
 
-## Contour-clamped homogenous electric field (CHEF) electrophoresis
+### Contour-clamped homogenous electric field (CHEF) electrophoresis
 
 Samples were prepared as previously described (Selmecki et al., 2005). Cells were suspended in 300 µL 1.5% low-melt agarose (Bio-Rad) and digested with 1.2 mg Zymolyase (US Biological). Chromosomes were separated on a 1% Megabase agarose gel (Bio-Rad) in 0.5X TBE using a CHEF DRIII apparatus. Run conditions as follows: 60 s to 120 s switch, 6 V/cm, 120° angle for 36 hrs followed by 120 s to 300 s switch, 4.5 V/cm, 120° angle for 12 hrs.
 
-## CHEF gel densitometry
+### CHEF gel densitometry
 
 Ethidium bromide stained CHEF gels were imaged using the GelDock XR imaging system (BioRad). Images were exported as .PNG files, converted to 32-bit, and analyzed using ImageJ (v2.0.0-rc-30/1.49 s). The total lane density (gray value, area under the curve) was collected for each sample. The density associated with i(4R) was determined by drawing a box around the i(4R) density peak (box distance was from each adjacent minimums). The fraction of i(4R) relative to the entire genome was determined by normalizing the i(4R) density relative to the total lane density. The population with lowest ratio of i(4R) relative to total genome (AMS3743_10) was used for single colony analysis.
 
-## Southern hybridization
+### Southern hybridization
 
 DNA from CHEF gels was transferred to BrightStar Plus nylon membrane (Invitrogen). Probing and detection of the DNA was conducted as previously described (Selmecki et al., 2005; Selmecki et al., 2008; Selmecki et al., 2009). Probes were generated by PCR incorporation of DIG-11-dUTP into target sequences following manufacturer’s instructions (Roche). Primer pairs used in probe design are listed in Supplementary file 7.
 
-## PCR
+### PCR
 
 All primer sequences were designed to avoid heterozygous or SNP loci in the reference genome SC5314 and clinical isolates. Primers and primer sequences are found in Supplementary file 7. PCR conditions for i(4R) were as follows: 95°C for 3 min, followed by 32 cycles of 95°C for 30 s, 55°C for 30 s, 72°C for 5.5 min, and a final extension at 72°C for 10 min. The PCR conditions for the Chr4 inversion (Figure 5) were the same as above, except the annealing temperature was 53°C and the extension time was 3.25 min.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were prepared as previously described (Todd et al., 2018). Briefly, cells were grown to a density of 1 × 107 in liquid medium and gently spun down (500 x g) for 3 min. The supernatant was removed and cells were fixed with 70% (v/v) ethanol for at least 1 hr at room temperature. Cells were then washed twice with 50 mM sodium citrate and sonicated (Biorupter Fisher Science) for 10–15 s at 30% power to separate the cells. Following sonication, cells were centrifuged and resuspended with 50 mM sodium citrate and incubated for at least 3 hr at 37°C in 0.5 mg ml−1 RNase A (MP Biomedicals) in 50 mM sodium citrate (Fisher Scientific). Cells were stained with 25 µg ml−1 propidium iodide (Invitrogen) overnight in the dark at 37°C. Cells were sonicated for 5–10 s at 15% power, and 30,000 cells were analyzed on a ZE5 cell analyzer (BioRad). Data were analyzed in FlowJo (https://www.flowjo.com/solutions/flowjo/downloads) (v10.4.1).
 
-## Growth curve analysis
+### Growth curve analysis
 
 Growth curves were determined using a BioTek Epoch plate reader. Culture medium included YPAD or YPAD +32 µg/ml FLC (Alfa Aesar) Approximately 5 × 103 cells were inoculated into 200 µl culture medium in a clear, flat bottomed 96-well plate (Thermo Scientific). The plate was incubated at 30°C with double orbital shaking at 256 rpm, and the OD600 was measured every 15 min. Data were collected with Gen5 Software (BioTek) and exported to Microsoft Excel for downstream analysis. All growth curves were conducted in individual biological triplicate on separate days.
 
-## Illumina whole genome sequencing
+### Illumina whole genome sequencing
 
 Genomic DNA was isolated with phenol chloroform as described previously (Selmecki et al., 2006). Libraries were prepared using the NexteraXT DNA Sample Preparation Kit following the manufacturer’s instructions (Illumina). DNA fragments between 600 and 1200 bp were selected for sequencing using a Blue Pippin 1.5% agarose gel dye-free cassette (Sage Science). Library fragments were analyzed with a Bioanalyzer High Sensitivity DNA Chip (Agilent Technologies) and Qubit High Sensitivity dsDNA (Life Technologies). Libraries were sequenced using paired-end, 2 × 250 reads on an Illumina MiSeq (Creighton University). Adaptor sequences and low-quality reads were trimmed using Trimmomatic (v0.33 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 TOPHRED33) (Bolger et al., 2014). Reads were mapped to the Candida albicans reference genome (A21-s02-m09-r08) obtained 7 of October 2015 from the Candida Genome Database website: http://www.candidagenome.org/download/sequence/C_albicans_SC5314/Assembly21/archive/ C_albicans_SC5314_version_A21-s02-m09-r08_chromosomes.fasta.gz). The reads were mapped using the Burrows-Wheeler Aligner MEM algorithm using default parameters (BWA v0.7.12) (Li, 2013). Duplicate PCR amplicons were removed using Samtools (v0.1.19) (Li et al., 2009), and reads were realigned around possible indels using Genome Analysis Toolkit’s RealignerTargetCreator and IndelRealigner (-model USE_READS -targetIntervals) (v3.4–46) (McKenna et al., 2010). All WGS data have been deposited in the National Center for Biotechnology Information Sequence Read Archive database as PRJNA510147. Sequence data obtained from published datasets are noted in Supplementary file 1.
 
-## Identification of aneuploidy and copy number breakpoints
+### Identification of aneuploidy and copy number breakpoints
 
 Preliminary identification of chromosomes containing CNVs was conducted using Illumina whole genome sequence data and the Yeast Mapping Analysis Pipeline (YMAP v1.0). Fastq files were uploaded to YMAP and read depth was plotted as a function of chromosome location using the reference genome Candida albicans (A21-s02-mo8-r09), with correction for chromosome end bias and GC content (Abbey et al., 2014). The average normalized genome coverage was determined for 45.5 kb non-overlapping windows across each chromosome using the YMAP GBrowse CNV track. The largest absolute difference between the average normalized genome coverage of two consecutive 45.5 kb windows was identified. To further refine CNV breakpoints, fastq files were aligned to the reference genome as above (Illumina Whole Genome Sequencing), read depth was calculated for every base pair in the nuclear genome using Samtools (samtools depth -aa) (v0.1.19), and normalized by read depth of the total nuclear genome using R (v3.5.2). The two consecutive 45.5 kb windows were further sub-divided into 5 kb windows. The average normalized read depth was determined for these 5 kb windows and a rolling mean of every two consecutive 5 kb windows was determined. CNV breakpoint boundaries were identified when 75% of four consecutive means had an average normalized read depth that deviated from the average normalized nuclear genome read depth by more than 25% in tetraploids or 50% in diploids (Ford et al., 2015). Boundaries were confirmed by visual inspection in Integrative Genomics Viewer (IGV v2.3.92) (Thorvaldsdóttir et al., 2013). CNV breakpoints were then determined using visual inspection of total read depth and allele ratio analysis (when the breakpoint was surrounded by heterozygous sequence) within unique, non-repeat sequences. CNV breakpoint positions were compared to Supplementary file 2 and breakpoints were assigned a repeat name if they fell within 2 kb of a long repeat sequence.
 
-## Enrichment of CNV breakpoints at long repeat sequences
+### Enrichment of CNV breakpoints at long repeat sequences
 
 Enrichment analysis of CNV breakpoints was conducted using a two-tailed Fisher’s Exact Test in Bedtools (Bedtools v2.28.0) with default parameters (Quinlan and Hall, 2010). Briefly, two bed files were generated with 1) the start and stop positions of all long repeat sequences and 2) the start and stop positions of all long repeat sequences located within 2 kb of a CNV breakpoint (Supplementary file 2, excluding the complex tandem repeat genes). The overlap of observed breakpoints and long repeat sequences was compared to the expected overlap between CNV breakpoints and long repeat sequences, given the total genome coverage of long repeat sequences. The minimum overlap required was a single base pair between a CNV breakpoint and repeat sequence.
 
-## Identification of long-range homozygosity breakpoints
+### Identification of long-range homozygosity breakpoints
 
 Illumina whole genome sequence data were analyzed using YMAP (v1.0) and IGV (v2.3.92). First, fastq files were uploaded to YMAP and the density of heterozygous SNPs was determined for non-overlapping 5 kb windows and plotted by chromosomal position in standard SNP/LOH view (default parameters, baseline ploidy was 2N for all isolates except AMS3420, which was 4N). Approximate positions of all long-range homozygous and heterozygous transitions were determined within 20–25 kb. To further refine LOH breakpoints, fastq files were aligned to the reference genome as above (Illumina Whole Genome Sequencing) and visualized in IGV. All heterozygous to homozygous (and vice versa) transitions were recorded when four or more consecutive loci were heterozygous and transitioned to four or more homozygous loci (and vice versa). The minimum distance covered by the four or more consecutive loci was greater than 300 bp and all four of the loci were located within unique, non-repeat sequences. Additionally, all heterozygous loci utilized for breakpoint analysis had an alternate allele frequency greater than or equal to 20%, read depth greater than 10 reads, and both forward and reverse strands that supported the alternate allele (Selmecki et al., 2015). The breakpoints of these long-range homozygous tracks (‘LOH breakpoints’) were recorded as the last heterozygous locus and the first homozygous locus of the heterozygous > homozygous transition, and vice versa for the homozygous > heterozygous transition. Long-range LOH breakpoints were then compared to Supplementary file 2 and were assigned a repeat number if they fell within 2 kb of a long repeat sequence (Supplementary file 4).
 
-## Identification of inversion breakpoints
+### Identification of inversion breakpoints
 
 Additional positions of predicted chromosomal inversions were obtained from Hirakawa et al. (2015), Table S13. Coordinates corresponding to potential inversions were obtained using BreakDancer or NUCmer (Hirakawa et al., 2015). The distance between the BreakDancer or NUCmer coordinates (start and stop) and the nearest long repeat sequence was determined. If a long repeat sequence occurred within 2 kb of either BreakDancer or NUCmer coordinates, the repeat number and family were recorded. Disagreement between BreakDancer and NUCmer coordinates that coincided with breakpoints in different repeat families (representing more complex chromosome rearrangements or inversions) were removed from the analysis. Additionally, all NUCmer or Breakdancer positions that occurred within ALS gene family repeats were removed from the analysis because the BreakDancer and NUCmer coordinates did not support a consistent length of sequence inversion (likely due to mapping errors within and between ALS repeats). The long repeat sequences identified at these potential inversion breakpoints, including those shared across different isolates, are summarized in Supplementary file 6.
 
-## Microsatellite repeat identification
+### Microsatellite repeat identification
 
 Short repetitive sequences found at either copy number breakpoints or allele ratio breakpoints were analyzed using REPuter (Kurtz et al., 2001) with a minimum repeat length of 8 bp. Analysis was conducted using the forward, reverse, complement, and palindromic match direction.
 
-## Identification of long repeat sequences
+### Identification of long repeat sequences
 
 Repeat sequences within the C. albicans genome were identified using the MUMmer suite (v3.0) (Kurtz et al., 2004). Whole genome sequence alignment with NUCmer (nucmer --maxmatch --nosimplify) identified all maximum-length matches with 100% sequence identity (minimum match length of 20 bp) within the Candida albicans SC5314 reference genome (A21-s02-m09-r08, obtained 7 of October 2015 from the Candida Genome Database (CGD): http://www.candidagenome.org/download/sequence/C_albicans_SC5314/Assembly21/archive/ C_albicans_SC5314_version_A21-s02-m09-r08_chromosomes.fasta.gz). All maximum length matches were identified, regardless of their uniqueness (meaning all matches in the genome were identified). Then, all sequence matches were clustered and extended to obtain a maximum-length colinear string of matches if they were separated by no more than 90 nucleotides (NUCmer default parameters). Three repeat matches shared less than 80% sequence identity, therefore an 80% cutoff was used for the final long repeat analysis (Supplementary file 2), similar to previous studies (Achaz et al., 2000; Warren et al., 2014). All sequences that self-aligned to the same genomic position were removed.
 
@@ -230,7 +502,7 @@ After the post-alignment annotations and filtration, repeats were combined into 
 
 The fraction of the genome covered by long repeat sequences was determined by multiplying the average copy length of each repeat family by the number of copies of that repeat family found throughout the genome (excluding the complex tandem repeat genes). The sum of the average copy length of all repeat families (409129 bp) was then divided by the length of the haploid Candida albicans SC5314 reference genome (excluding the mt-DNA, 14280189 bp) to determine that 2.87% of the genome is covered by long repeat sequences (Figure 2—source data 1).
 
-## Annotation of repeat sequences
+### Annotation of repeat sequences
 
 The long repeat sequences were annotated according to the genomic features contained within each matched repeat sequence using the C. albicans genome feature file described above. The genomic features included were: lone long terminal repeats (LTRs) lacking ORFs, retrotransposons, tRNAs, ORFs, and intergenic sequences. Repeat matches containing ORFs included partial ORF sequences, single complete ORF sequences, and multiple ORFs and intergenic sequences. In cases where one repeat copy contained a genome feature, but the other repeat copy contained an intergenic sequence (no genome feature), this latter repeat was flagged as ‘Unannotated Intergenic Sequence’ and both repeat copies were assigned the feature found at the annotated repeat copy (Supplementary file 2). All unannotated sequences were verified in both V21 and V22 of the C. albicans reference genome (Skrzypek et al., 2017).
 
@@ -238,10 +510,10 @@ Of the known LTRs present within the C. albicans genome, only five were not dete
 
 All full-length ORF coding sequences within the C. albicans reference genome (C_albicans_SC5314_version_A21-s02-m09-r08_chromosomes.fasta.gz) were analyzed for length and GC content using EMBOSS Infoseq (http://imed.med.ucm.es/cgi-bin/emboss.pl?_action=input&_app=infoseq). All full-length ORF coding sequences were divided into coding sequences that were contained within long repeat sequences or coding sequences that were not contained within long repeat sequences (excluding the complex tandem repeat genes, Supplementary file 2, Figure 2—figure supplement 3D and E). If a long repeat sequence contained a partial ORF sequence, the full-length coding sequence was used in the analysis. Similarly, if a long repeat sequence contained multiple ORF sequences, the full-length coding sequence of each ORF were included in the analysis.
 
-## Exclusion of complex tandem repeat genes
+### Exclusion of complex tandem repeat genes
 
 Five ORFs and one gene family with known, complex embedded tandem repeats were confirmed by NUCmer (PGA18, PGA55, EAP1, Adhesin-like orf19.1725, CSA1, and the ALS gene family comprised of eight ORFs, Supplementary file 2) (Levdansky et al., 2008; Wilkins et al., 2018). Assignment of a genome copy count was not possible for these tandem repeat genes due to the extreme complexity of matched repeat sequences. For this reason, all repeat copy counts and analysis using copy counts exclude the complex tandem repeat genes listed above and are indicated throughout the text (Supplementary file 2).
 
-## Statistical analyses
+### Statistical analyses
 
 For this study, biological replicates are defined as a single, independent culture derived from a frozen −80°C glycerol stock. Data were analyzed using GraphPad Prism v6 and made into graphical representations using RSudio v1.1.463. All p-values below 0.05 were considered significant.

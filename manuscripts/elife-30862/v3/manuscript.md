@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.30862.001 RXRA regulates transcription as part of a heterodimer with 14 other nuclear receptors, including the peroxisome proliferator-activated receptors (PPARs). Analysis from TCGA raised the possibility that hyperactive PPAR signaling, either due to PPAR gamma gene amplification or RXRA hot-spot mutation (S427F/Y) drives 20–25% of human bladder cancers. Here, we characterize mutant RXRA, demonstrating it induces enhancer/promoter activity in the context of RXRA/PPAR heterodimers in human bladder cancer cells. Structure-function studies indicate that the RXRA substitution allosterically regulates the PPAR AF2 domain via an aromatic interaction with the terminal tyrosine found in PPARs. In mouse urothelial organoids, PPAR agonism is sufficient to drive growth-factor-independent growth in the context of concurrent tumor suppressor loss. Similarly, mutant RXRA stimulates growth-factor-independent growth of Trp53/Kdm6a null bladder organoids. Mutant RXRA-driven growth of urothelium is reversible by PPAR inhibition, supporting PPARs as targetable drivers of bladder cancer.
+RXRA regulates transcription as part of a heterodimer with 14 other nuclear receptors, including the peroxisome proliferator-activated receptors (PPARs). Analysis from TCGA raised the possibility that hyperactive PPAR signaling, either due to PPAR gamma gene amplification or RXRA hot-spot mutation (S427F/Y) drives 20–25% of human bladder cancers. Here, we characterize mutant RXRA, demonstrating it induces enhancer/promoter activity in the context of RXRA/PPAR heterodimers in human bladder cancer cells. Structure-function studies indicate that the RXRA substitution allosterically regulates the PPAR AF2 domain via an aromatic interaction with the terminal tyrosine found in PPARs. In mouse urothelial organoids, PPAR agonism is sufficient to drive growth-factor-independent growth in the context of concurrent tumor suppressor loss. Similarly, mutant RXRA stimulates growth-factor-independent growth of Trp53/Kdm6a null bladder organoids. Mutant RXRA-driven growth of urothelium is reversible by PPAR inhibition, supporting PPARs as targetable drivers of bladder cancer.
 
 ## Introduction
 
@@ -31,45 +31,77 @@ RXRA is a nuclear receptor that regulates transcription as a homodimer or as an 
 
 ## Results
 
-## Mutant RXRA induces PPAR transcriptional signaling at the canonical DR1 motif
+### Mutant RXRA induces PPAR transcriptional signaling at the canonical DR1 motif
 
 To establish a causal role of RXRA hot-spot mutations in hyper-activation of PPAR singling, we used retroviral transduction to introduce wild-type or mutant RXRA into two bladder cancer cell lines, JMSU-1 and 575A. Equivalent RXRA expression levels were confirmed by qPCR and western blot (Figure 1A). RNA-seq was used to compare transcriptomes in the wild-type and S427F RXRA expressing cells. Gene transcripts robustly up-regulated by the mutation (twofold, FDR <0.05) were analyzed using over-representation analysis (ORA) to identify enriched pathways. In both cell lines, the PPAR signaling pathway (KEGG-hsa03320) was the top scoring hit. When the ORA was limited to genes up-regulated by the mutation in both cell lines, again PPAR signaling was the top hit (Figure 1B, Figure 1—source data 1). We also compared transcriptome changes induced by the RXRA mutation to those induced after treating RXRAwt expressing cells with the PPARG agonist pioglitazone. There was robust correlation in both JMSU-1 and 575A (Pearson r = 0.72, p=1.4 × 10−34 or 3.1 × 10−105), confirming that the mutation drives expression changes similar to agonist-induced PPAR activation (Figure 1C). Mutation-driven hyper-activation of PLIN2 and FABP3, two genes found up-regulated in our RNA-seq analysis, also occured in the context of RXRAS427Y in JMSU-1 cells (Figure 1D), confirming gain-of-function with either aromatic substitution. Previous analysis of human bladder cancer specimens identified a correlation between the presence of RXRAS427F/Y and both the up-regulation of PLIN2 expression and PPAR signaling pathway activity (Cancer Genome Atlas Research Network, 2014). Our data establishes a causal role of the RXRA mutations in driving these expression changes.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig1-v3.jpg)
 
-**Figure 1.:** (A) JMSU-1 and 575A cells were transduced with pBABE retrovirus to express indicated RXRA alleles and expression confirmed by western blot (top) or RT-qPCR in triplicate ± SD (data expressed as a fraction of actin signal). (B) Protein coding transcripts up-regulated greater than or equal to twofold (FDR < 0.05) in cells expressing RXRAS427F compared to cells expressing RXRAwt were identified and then subjected to over representation analysis (ORA, GO-Elite) to discover enriched pathways relative to all other protein coding transcripts identified by RNA-seq. Experiment was done in two bladder cancer cell lines, JMSU-1 or 575A, using three RNA samples, each purified from an independent cell well, for each condition. (See also source data 1). (C) Transcriptome changes induced by RXRAS427F relative to RXRAwt were compared to expression changes of the same transcripts induced by 16 hr of pioglitazone (1 μM) treatment in the RXRAwt expressing cells. D) Relative expression of two PPAR targets with expression of indicated RXRA alleles. RT-qPCR performed in triplicate ±SD. Comparison by Student’s t-test. (E) RAEs were defined by the presence of overlapping ChIP-seq signal for RXRA and H3K27ac. RAEs identified by binding of RXRAwt and/or RXRAS427F are represented in grey. Hyperactive RAEs represented in red had elevated H3K27ac mean peak height in the mutant expressing cells compared to the wild-type cells (FDR < 0.05). All ChIP-seq peak callings were based on data from three independent immuno-precipitations, each utilizing input material from an independent cell plate. HOMER motif analysis was used to identify motifs enriched in hyperactive RAEs relative to the background of non-hyperactive RAEs. Source data 2 specifies number of peaks in each sector of the venn diagram. (F) Activity of a DR1 response element reporter (3X PPRE) transfected into JMSU-1 cells stably expressing either RXRAwt or RXRAS427F. RXRAwt cells were also treated with pioglitazone (1 μM) for 16 hr. For all reporter assays, Firefly luciferase expressing reporter was co-transfected with a constitutive Renilla luciferase expression vector to normalize for transfection efficiency. Data represents mean ± SEM of Firefly to Renilla luciferase signal from three independent experiments done on different days, each performed using triplicate cell wells. Statistical comparisons are by paired t-test.10.7554/eLife.30862.004Figure 1—source data 1.Pathways over-represented in genes up-regulated by RXRAS427Fcompared to RXRAwtin either JMSU-1 or 575A. Analysis was also done using genes up-regulated in both cell lines.10.7554/eLife.30862.005Figure 1—source data 2.Figure 1E.
+**Figure 1.:** (A) JMSU-1 and 575A cells were transduced with pBABE retrovirus to express indicated RXRA alleles and expression confirmed by western blot (top) or RT-qPCR in triplicate ± SD (data expressed as a fraction of actin signal). (B) Protein coding transcripts up-regulated greater than or equal to twofold (FDR < 0.05) in cells expressing RXRAS427F compared to cells expressing RXRAwt were identified and then subjected to over representation analysis (ORA, GO-Elite) to discover enriched pathways relative to all other protein coding transcripts identified by RNA-seq. Experiment was done in two bladder cancer cell lines, JMSU-1 or 575A, using three RNA samples, each purified from an independent cell well, for each condition. (See also source data 1). (C) Transcriptome changes induced by RXRAS427F relative to RXRAwt were compared to expression changes of the same transcripts induced by 16 hr of pioglitazone (1 μM) treatment in the RXRAwt expressing cells. D) Relative expression of two PPAR targets with expression of indicated RXRA alleles. RT-qPCR performed in triplicate ±SD. Comparison by Student’s t-test. (E) RAEs were defined by the presence of overlapping ChIP-seq signal for RXRA and H3K27ac. RAEs identified by binding of RXRAwt and/or RXRAS427F are represented in grey. Hyperactive RAEs represented in red had elevated H3K27ac mean peak height in the mutant expressing cells compared to the wild-type cells (FDR < 0.05). All ChIP-seq peak callings were based on data from three independent immuno-precipitations, each utilizing input material from an independent cell plate. HOMER motif analysis was used to identify motifs enriched in hyperactive RAEs relative to the background of non-hyperactive RAEs. Source data 2 specifies number of peaks in each sector of the venn diagram. (F) Activity of a DR1 response element reporter (3X PPRE) transfected into JMSU-1 cells stably expressing either RXRAwt or RXRAS427F. RXRAwt cells were also treated with pioglitazone (1 μM) for 16 hr. For all reporter assays, Firefly luciferase expressing reporter was co-transfected with a constitutive Renilla luciferase expression vector to normalize for transfection efficiency. Data represents mean ± SEM of Firefly to Renilla luciferase signal from three independent experiments done on different days, each performed using triplicate cell wells. Statistical comparisons are by paired t-test.
 
 Canonical RXRA-mediated gene regulation involves direct engagement of promoter/enhancers of target genes in the context of homodimers or heterodimers. Specific partner-pairs preferentially bind to direct repeats (DR) with defined spacer lengths. RXR homodimers and RXR/PPAR heterodimers both show preference for DRs with a single nucleotide spacer (DR1) (Evans and Mangelsdorf, 2014; Nielsen et al., 2008). Using ChIP-seq data for RXRA and acetylated H3K27 (H3K27ac), we identified all active enhancer/promoters bound by RXRAwt and/or RXRAS427F in JMSU-1 (‘RXR-bound Active Enhancer/promoters’ or RAEs). Differential mean peak height of the H3K27ac signal was used as an indicator of relative activation status in the wild-type and mutant condition at each RAE. ~12% of RAEs showed significant up-regulation in the mutant condition (FDR <0.05) (Figure 1E, Figure 1—source data 2). HOMER motif finding was then performed to identify motifs enriched at these hyper-activated RAEs, relative to the background of all RAEs. Consistent with activation of PPAR pathway genes, the canonical RXR/PPAR (DR1) motif was the only known motif found to be enriched with significant q-value. The most statistically robust motif identified by de novo discovery is shown in Figure 1E. Comparing the de novo identified motif to known motifs found it to be most similar to a PPAR response element (DR1). These data demonstrate that hyper-activation of enhancer/promoters driven by the RXRA hot-spot mutation occurs preferentially at canonical RXR/PPAR response elements. Using transient transfection of a DR1-driven luciferase reporter, we confirmed relative hyper-activation of DR1 in the JMSU-1 cells expressing mutant RXRA compared to wild-type (Figure 1F), with a degree of induction similar to that observed after pioglitazone treatment.
 
-## Hot-spot mutation-driven transcriptional activity is dependent on expression of PPARD or PPARG
+### Hot-spot mutation-driven transcriptional activity is dependent on expression of PPARD or PPARG
 
 Having established that mutant RXRA up-regulates PPAR target gene expression, we next tested if this was dependent on PPARs. TCGA data were first queried to determine which of the three PPARs are most highly expressed in bladder cancer specimens with mutant RXRA (Cerami et al., 2012). Both PPARG and PPARD were significantly more highly expressed than PPARA, but the relative proportion of PPARG and PPARD varied amongst the samples (Figure 2A,B). Using siRNA, we acutely knocked-down PPARG and PPARD in the JMSU-1 and 575A cells transduced with wild-type or mutant RXRA and used RT-qPCR to query the expression of PLIN2 and FABP3 (Figure 2C). In the non-targeting control, both genes were again found up-regulated by mutant RXRA. PPARD knock-down alone appeared to increase PPARG expression suggesting receptor cross talk and loss of negative feedback regulation. However, expression of neither PPAR target gene was significantly reduced by PPARD knock-down alone. PPARG knock-down partially inhibited PLIN2 expression in both cell lines, but did not have significant impact on FABP3. Combined knock-down of PPARD and PPARG, however, strongly inhibited RXRAS427F-driven hyper-expression of both genes, to an extent greater than knockdown of PPARG alone. Thus, both PPARD and PPARG contribute to mutant RXRA-mediated transcriptional hyperactivity in human bladder cancer cells and appear to have redundant function.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig2-v3.jpg)
+
+**Figure 2.:** A) PPAR RNA expression in RXRA hot-spot mutant clinical samples from the TCGA dataset. Whisker plot shows 25th, median, and 75th percentile. (B) Data from panel A plotted per patient with hot-spot mutation. (C) Effects of siRNA-mediated knock-down of PPARD and PPARG in JMSU-1 and 575A cell lines on two target genes (PLIN2 and FABP3) up-regulated by mutant RXRA. Data by RT-qPCR in triplicate ±SD and indicated comparisons by Student’s t-test. (D) DR1 luciferase reporter activity in UM-UC-3 cells transfected with RXRA ±PPARD or PPARG. Cells were treated with 1 µM of the PPARG agonist pioglitazone or the PPARD agonist GW0742 for 16 hr. Data represents mean ±SEM of Firefly to Renilla luciferase signal from three independent experiments done on different days, each performed using triplicate cell wells. Statistical comparisons are by paired t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) DR1 and DR5 luciferase reporter activity in UM-UC-3 cells transfected with RXRA ±RARA as indicated and treated with 100 nM all-trans-retinoic acid (ATRA) for 16 hr.
+
 Since hyperactivity of mutant RXRA was dependent on PPAR expression, we reasoned that no hyperactivity would be observed in the DR-1 luciferase reporter assay in a bladder cancer cell line with low endogenous expression of PPARs. Treatment of UM-UC-3 with agonists to either PPARG or PPARD did not have meaningful impact on reporter activity when RXRA was transfected without a PPAR (Figure 2D), indicating a lack of relevant endogenous expression in this cell line. Similarly, RXRAS427F/Y did not show increased activity relative to RXRAwt (Figure 2D). Since RXRA can drive transcription as a homodimer with a preference for the DR1 motif, these data indicate that the mutation does not confer gain-of-function in the homodimer context. We then examined reporter activity with co-transfection of PPARG or PPARD. Expression of either PPAR was sufficient to elicit mutant RXRA associated hyperactivity to an extent that approximated agonist induced activation of the PPAR in the wild-type RXRA condition (Figure 2D). Similar to what was observed in the JMSU-1 stable cells, RXRAS427F appeared to have somewhat stronger activity than RXRAS427Y, but both were hyperactive relative to RXRAwt (Figure 2D). Lastly, we tested reporter activity with co-transfection of retinoic acid receptor alpha (RARA), which belongs to another family of RXRA heterodimerization partners. Both the DR1 reporter and a reporter with the preferred RXR/RAR binding motif, DR5, were induced by the RAR agonist all-trans-retinoic acid, but mutant RXRA did not elicit greater activity than wild-type RXRA (Figure 2—figure supplement 1). These data confirmed that RXRA hot-spot mutations confer gain-of-function selectively in the context of PPAR expression.
 
-## Mutant RXRA activates the PPAR AF2 via an allosteric mechanism
+### Mutant RXRA activates the PPAR AF2 via an allosteric mechanism
 
 Nuclear receptors share a conserved domain structure and are prototypically activated by agonist binding to the ligand-binding domain (LBD). The activator function two domain (AF2) is then stabilized in a conformation favoring recruitment of co-activators, initiating transcriptional regulation. In the context of RXRA/PPAR heterodimers, activation can be induced with agonists to either receptor (Evans and Mangelsdorf, 2014). Solved crystal structures of the RXRA/PPARG heterodimer reveal that RXRA S427 resides in helix 10 at a heterodimerization interface (Figure 3A) (Chandra et al., 2008; Gampe et al., 2000). Based on its location, we hypothesized that the RXRA mutation directly activates the PPARG AF2, independent of PPAR ligand binding. To gain evidence, we determined the inducibility of PPARG Q286P, a previously characterized substitution in the ligand-binding pocket (Figure 3A) that prevented ligand activation by a panel of PPARG agonists (Walkey and Spiegelman, 2008). The Q286P mutation completely blocked pioglitazone-driven receptor activation, but RXRA S427F-driven receptor hyperactivity was maintained (Figure 3B). In contrast, the PPARG E471A mutation previously characterized to diminish the transactivation activity of the PPARG AF2 (Chen et al., 2000), strongly reduced both pioglitazone and RXRA S427F-driven activity (Figure 3B). The analogous AF2 mutation in RXRA, E453A, diminished activation by the RXRA agonist SR11237, but had no impact on mutation-driven hyperactivity (Figure 3C). These data support a model in which RXRAS427F hyperactivity relies primarily on the PPAR AF2, independent of PPAR agonist binding.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig3-v3.jpg)
+
+**Figure 3.:** A) RXRA S427 and other amino acids mutated for structure-function studies highlighted in green on a published full-length crystal structure of a RXRA/PPARG heterodimer. (B) DR1 reporter assay in UM-UC-3 co-transfecting indicated RXRA and PPARG alleles. Cells were treated with vehicle (DMSO) or pioglitazone 1 µM for 16 hr. Data represents mean normalized signal ±SEM of three independent experiments done on different days, each performed in triplicate, with data from each experiment normalized to the RXRAwt vehicle condition for each section. Statistical comparisons are by unpaired t-test. (C) Left, reporter assay performed with indicated RXRA alleles only and drug treatment with the RXRA agonist SR11237 (100 nM) for 16 hr. Right, reporter assay with wild-type PPARG co-transfected. Data represent mean ±SEM of Firefly to Renilla luciferase signal from three independent experiments done on different days, each performed using triplicate cell wells. Statistical comparisons are by paired t-test. (D) Published agonist structure of RXRA/PPARG heterodimer (PDB: 1FM6) in red and blue with key residues highlighted in bright green. Top three occupied microstate clusters from simulation experiments are superimposed. (E) Distance from starting agonist structure between alpha carbons of RXR 427 and PPARG 477 in the top 5% most-occupied microstates for wild-type and mutant RXRA. Mean ±SD, comparison is by Student’s t test. (F) Alignment of the AF2 region and C-terminus of all RXRA dimerization partners. Terminal tyrosine unique to PPARs is indicated. (G) Reporter assay similar to B, but using PPARD and the PPARD agonist GW0742.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Distribution of micro-state clusters occupied in RXRAwt and RXRAS427F simulations. (B) Western blot confirming expression of PPARD and PPARG with terminal tyrosine mutation or deletion in transfected UM-UC-3 cells. Irrelevant intervening lanes were removed where indicated with vertical bar without further image manipulation.
 
 To gain insight into how RXRAS427F/Y regulates the PPARG AF2, we performed long-time scale molecular simulations of RXRA/PPARG heterodimers with wild-type RXRA or after the S427F substitution. The starting structure was the agonist-bound crystal structure of the RXRA/PPARG LBDs(PDB: 1FM6) (Gampe et al., 2000); however, the agonist compounds were deleted to reduce subsequent computational complexity and to enable drift toward the inactivated state. We next constructed Markov State Models (MSMs) following the procedure from Hart et al. (2016) to quantify the thermodynamics and kinetics of each heterodimer. First, conformations adopted by backbone-heavy atoms near the mutated site in RXRA and the PPARG AF2 (RXRA 425–429 and PPARG 445–477) from both wild-type and mutant simulations were clustered in the same state space. An MSM was then constructed for each variant based on how often the corresponding simulations transitioned between every pair of clusters. The wild-type and mutant largely populate different clusters, consistent with our hypothesis that mutant and wild-type RXRA differentially regulate the PPARG AF2 region (Figure 3—figure supplement 1A)
 
 We next inspected the three most frequently occupied clusters for wild-type and mutant by superimposing the PPARG residues 445–459 on helix 11 as an anchor, enabling us to visualize relative displacement of the AF2 region located in helix 12 (Figure 3D). In the RXRA mutant condition, PPARG E471 more closely approximated the agonist confirmation, in agreement with our mutational studies showing the importance of this residue. The terminal tyrosine of PPARG (Y477) also appeared in distinct spaces in the two conditions. Comparing the 5% most frequently occupied clusters for wild type and mutant, we observed a significant difference in inter-residue distance between RXRA 427 and PPARG 477 (Figure 3E). These data raised the possibility that an aromatic interaction between RXRA S427F/Y and the terminal tyrosine found in all PPARs may underlie activation of PPAR (Figure 3F). To test this, the terminal tyrosine was either deleted or mutated to serine in both PPARG (Y477) and PPARD (Y441) and expression of the mutant PPARs was confirmed by western blot (Figure 3—figure supplement 1B). Inducibility by RXRAS427F or agonist was then determined (Figure 3B and G). In all cases, inducibility by agonist was maintained, but RXRA S427F-mediated hyperactivity was eliminated. We conclude that S427F/Y initiates an allosteric relay via an aromatic interaction with the terminal tyrosine on PPAR, leading to PPAR AF2 activation. No other RXR dimerization partners have an aromatic amino acid at the corresponding position, providing a structural basis for the selective activation of PPARs (Figure 3F).
 
-## PPARD activation induces growth-factor-independent growth of urothelial organoids in the context of tumor suppressor loss
+### PPARD activation induces growth-factor-independent growth of urothelial organoids in the context of tumor suppressor loss
 
 We next sought to determine if PPAR activation drives proliferation of urothelial cells. To culture primary urothelial cells, we developed a mouse urothelial organoid culture system. Similar organoid systems have proven successful at identifying pro-tumorigenic phenotypes driven by cancer-associated mutations in multiple tissue types (Sachs and Clevers, 2014; Karthaus et al., 2014; Drost et al., 2015; Hwang et al., 2016; Boj et al., 2015). With our urothelial approach, hollow spherical epithelial structures can reliably be grown and passaged from primary mouse bladder epithelium, utilizing epidermal growth factor (EGF) as the primary growth factor (Figure 4—figure supplement 1A). Because growth-factor-independent growth is a classical hallmark of transformed cells, we asked if stimulation with PPAR agonists could confer growth in the absence of EGF. As expected, there was no growth of three independently derived wild-type organoids in the absence of growth factor. Treatment with the PPARD agonist GW0742 or the PPARG agonist pioglitazone had no significant effect on growth in these conditions, suggesting that PPAR activation is not sufficient to drive growth in normal urothelial organoids (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig4-v3.jpg)
+
+**Figure 4.:** (A) Organoids were derived from three independent wild-type mouse bladders and infected with Adeno-Cre. Growth was determined for each line in organoid media without EGF using CellTiter-Glo after treatment with vehicle, GW0742 (100 nM), or pioglitazone (100 nM). Data represent mean ±SEM from three independent experiments, each performed in triplicate cell wells. Statistical comparison is by unpaired t-test. (B) Similar to A but organoids were derived from Trp53flox/flox; Kdm6aflox mice. (C) CellTiter-Glo growth assay in media without EGF of a sub-clone from DKO431 (DKO 431.A) treated with GW0742 (10, 100 nM) or pioglitazone (100, 1000 nM). Mean values ± SEM from three independent experiments, each performed using triplicate organoid wells. Comparison is by paired t-test. (D) DKO 431.A organoids were plated in standard organoid media and then treated with, vehicle, GW0742 (10, 100 nM)) or pioglitazone (100, 1000 nM) for an additional 48 hr. Induction of PPAR target genes was determined by RT-qPCR in triplicate ± SD. (See also Figure 4—figure supplement 1C.) (E) DKO 431.A organoids were infected with a retroviral vector that was empty, expresses RXRAwt, or expresses RXRAS427F and expression of total RXRA (western blot) and human RXRA (RT-qPCR, triplicate +/SD) was determined. (F) Mean CellTiter-Glo signal ±SEM from three identical experiments, each performed using triplicate organoid wells. Comparison of D10 data is by paired t-test. (G) Identical number of indicated organoid cells were plated in media without EGF and then harvested with trypsin weekly and counted in duplicate using a BioRad TC20. Identical numbers of cells were then re-plated and this was repeated for 6 weeks. Total cell number doublings were calculated and plotted. Comparison of doublings is by paired t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Wild-type urothelial organoids grown for 3 weeks in standard organoid media and imaged with low-power (4X) phase contrast bright-field microscopy. (B) CellTiter-glo growth assay in media without EGF performed identically to those in Figure 4A and Figure 4B, but with organoids generated from mice with singly floxed Trp53 or Kdm6a. Statistical comparisons are by unpaired t test. (C) Aggregated RT-qPCR from three distinct experiments as described in Figure 4D with each data point from each experiment plotted with mean indicated. Statistical comparisons are by two-way ANOVA (Repeated Measures, GraphPad Prism). (D) PPARG western blot of indicated cell lines. PPARG transfected UM-UC-3 included as a positive control. Equivalent protein mass from whole cell lysates were loaded into each well.
 
 Bladder cancer genomes typically harbor mutations in several genes recognized as recurrently altered in bladder cancers (Cancer Genome Atlas Research Network, 2014). We speculated that pro-tumorigenic activities of PPAR signaling may only be apparent in the context of tumor suppressor loss. For our analysis, we focused on TP53 and KDM6A which are amongst the most frequently mutated tumor suppressors in bladder cancer, mutated in ~50% and~25% of bladder cancer cases, respectively (Cancer Genome Atlas Research Network, 2014; Guo et al., 2013; Van Allen et al., 2014). Of 16 patient samples identified with an RXRA hot-spot mutation across three cohorts, four had mutations in both TP53 and KDM6A, five had mutations in TP53 only, three had mutations in KDM6A only, and four had mutations in neither (Cerami et al., 2012). To determine if loss of tumor suppressor function would enable pro-tumorigenic activities of PPAR activation, we generated conditional knock-out bladder organoids from mice with the following three genotypes: (1) Trp53F/F, (2) Kdm6aF, and (3) Trp53F/F;Kdm6aF. Three independent organoid lines (each from a distinct mouse bladder) were generated with each genotype. These organoid lines were then all infected with Adeno-cre and complete deletion of the conditional alleles was confirmed by genotyping PCR (not shown). The wild-type organoids utilized in Figure 4A were generated from the littermates of these mice and also were infected with Adeno-Cre to control for Cre exposure.
 
 We then determined growth of the organoids in EGF deplete media after treatment with PPAR agonists (Figure 4B, Figure 4—figure supplement 1B). No genotype showed consistent positive growth in the vehicle condition. Elimination of Trp53, but not Kdm6a, was sufficient for GW0742 to drive proliferation. With combined knock-out of Trp53 and Kdm6a, growth induction by GW0742 was even more robust than with Trp53 knock-out alone. These data suggest that loss of tumor suppressors creates a context permissive for PPARD-driven proliferation. Even though responsiveness to GW0742 was consistent across all of the dual knock-out organoids, we reasoned that utilizing a clonal sub-line might minimize variation due to random clonal skewing in later experiments involving retroviral infection and drug selection. Therefore, we established DKO 431.A from a single organoid picked from the DKO 431 line and assessed its responsiveness to PPAR agonists. DKO 431.A showed strong, dose-dependent, enhanced growth when treated with GW0742, but not pioglitazone (Figure 4C). To assess transcriptional activation by the same PPAR agonists, DKO 431.A organoids were plated in standard media for 7 days and then treated with two doses of GW0742 or pioglitazone for 48 hr. Expression of two PPAR target genes, Plin2 and Fabp4 was then determined by RT-qPCR. GW0742 strongly induced both genes, while pioglitazone and little to no effect (Figure 4D, Figure 4—figure supplement 1C). These findings confirm that the ability of PPAR agonists to induce target genes in DKO 431.A correlates with their ability to promote growth-factor-independent growth. The apparent lack of response to PPARG agonist in these experiments is likely simply due to its lower expression in these mouse organoids relative to 575A and JMSU-1, the two cells lines in which we had established induction of PPAR target genes with pioglitazone in Figure 1 (Figure 4—figure supplement 1D).
 
-## Mutant RXRA drives sustained growth-factor-independent growth in urothelial organoids with concurrent loss of Kdm6a and Trp53
+### Mutant RXRA drives sustained growth-factor-independent growth in urothelial organoids with concurrent loss of Kdm6a and Trp53
 
 We then asked if RXRAS427F would promote growth-factor-independent growth. DKO 431.A was infected with retrovirus bearing empty vector, RXRAwt, or RXRAS427F and similar expression levels of RXRA between the wild-type and mutant condition was confirmed by western blot and qPCR (Figure 4E). Growth of the organoids in EGF deplete media was then assessed. Mutant RXRA-expressing organoids grew significantly faster than empty vector or wild-type expressing organoids (Figure 4F). However, growth was also observed in the wild-type condition. To ensure that the difference between mutant and wild-type growth was robust, we passaged wild-type and mutant-expressing organoids with tyrpsinization weekly, always plating an identical number of cells and then counting the number of cells present at time of each passage. The total number of doublings over six passages was then determined. Mutant RXRA organoids showed consistent growth throughout the experiment, while the wild-type condition appeared to plateau (Figure 4G). Comparing the number of doublings per passage between the two conditions, we found the difference to be highly significant (paired t test p=0.0003), confirming gain-of-function with the mutant allele.
 
-## Mutant RXRA-driven proliferation of urothelial organoids is dependent on PPARD activity
+### Mutant RXRA-driven proliferation of urothelial organoids is dependent on PPARD activity
 
 Having established that RXRAS427F phenocopies GW0742 induced growth in the organoid growth assay, we next looked for transcriptional evidence that RXRAS427F was activating PPARD. Organoids were cultured in standard media for seven days and then treated with PPAR antagonists for an additional two days. We then determined mRNA expression levels of two PPAR target genes by RT-qPCR. Comparing vehicle-treated samples, Plin2 and Fabp4 were found significantly up-regulated in the mutant condition compared to the empty vector or wild-type organoids, confirming that mutant RXRA up-regulates expected PPAR targets in the organoid system (Figure 5A). Treatment of the mutant expressing organoids with either of two PPARD inverse agonists, ST247 and GSK0660, blunted up-regulation of the target genes (Figure 5A, Figure 5—figure supplement 1) (Naruhn et al., 2011; Shearer et al., 2008). The PPARG antagonist T0070907 did not show any inhibitory activity. These findings confirm that mutant RXRA drives PPARD hyper-activity in the organoid system.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig5-v3.jpg)
+
+**Figure 5.:** (A) Retrovirally transduced organoids from Figure 4 were plated for 7 days in standard media and then treated with the indicated PPARD antagonists (1000 nM ST-247, GSK0660) or PPARG antagonist (100 nM T0070907) for 2 days. Expression of PPAR targets was determined by RT-qPCR in triplicate ±SD and comparison is by Student’s t-test to the RXRAS427F DMSO condition. (See also Figure 5—figure supplement 1)) (B-E) CellTiter-Glo growth assay of indicated organoid lines treated with indicated drugs. Plotted is mean signal ±SEM from three independent experiments, each performed using triplicate organoid wells. MCB6C is an organoid line we derived from a carcinogen-induced bladder tumor and lacks RXRA mutation. Organoids were cultured in media without EGF except for panel E where inclusion of EGF is indicated. Comparison is to DMSO condition using paired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30862/elife-30862-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Statistical comparisons are by two-way ANOVA (repeated measures, GraphPad Prism).
 
 We next sought to determine if mutant RXRA-driven growth could be reversed with PPAR inhibition. When treated with either of the two PPARD antagonists, the mutant expressing organoids showed significant, dose-dependent growth inhibition (Figure 5B.) To determine if the proliferative effects of PPARD inhibitors was specific to the RXRA-mutant-driven proliferation, we utilized an organoid line we established from a carcinogen-induced bladder tumor, called MCB6C, which shows robust growth in EGF deplete media, but does not harbor the RXRA mutation (not shown). Treatment of MCB6C with the PPARD inhibitors in EGF deplete media did not inhibit their growth across the identical doses (Figure 5C). As expected based on the gene expression analysis, the PPARG antagonist T0070907 also had no antiproliferative effects on 431.A.RXRAS427F (Figure 5D). Lastly, 431.A.RXRwt organoids in EGF-containing media were treated with the same PPAR antagonists, none of which significantly inhibited growth of this organoid line (Figure 5E), confirming PPAR dependence is specific to mutant RXRA-driven proliferation.
 
@@ -85,76 +117,835 @@ The organoid system provided us with a unique capability to assay epithelial aut
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Homo sapiens)</td>
+      <td>RXRA</td>
+      <td>NA</td>
+      <td>NCBI Gene ID:6256; NM_002957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (H. sapiens)</td>
+      <td>PPARG</td>
+      <td>NA</td>
+      <td>NCBI Gene ID:5468; NM_138711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (H. sapiens)</td>
+      <td>PPARD</td>
+      <td>NA</td>
+      <td>NCBI Gene ID:5467; NM_006238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus)</td>
+      <td>Kdm6aF</td>
+      <td>other</td>
+      <td></td>
+      <td>Generated by Dr. Lukas Wartman (Washington University School of Medicine) with ES cells obtained from EUCOMM with the Kdm6atm1a (EUCOMM)Wtsi allele (manuscript in preparation)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>Trp53Flox; B6.129P2- Trp53tm1brn/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>The Jackson Laboratory:008462; RRID:IMSR_JAX:008462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent</td>
+      <td>Ad5CMVCre-eGFP adenovirus</td>
+      <td>University of Iowa Viral Vector Core</td>
+      <td>VVC-U of Iowa:1174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>MCB6C</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Clonal organoid line generated from tumor bearing bladder of male C57BL/6 mouse treated with BBN</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>DKO 431.A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>clonal organoid line generated from the urothelium of a male Trp53Flox/Flox;Kdm6aFlox mouse</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Organoid lines generated from the urothelium of wild-type male mice resulting from cross between Trp53Flox/+ and Kdm6aFlox/+ mice</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>"Trp53-/-; Kdm6a-"; DKO</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Organoid lines were generated from the urothelium of Trp53Flox/Flox; Kdm6aFlox male mice and then infected with Ad5CMVCre-eGFP adenovirus in vitro</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>"Kdm6a-"; KKO</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Organoid lines were generated from the urothelium of Kdm6aFlox male mice and then infected with Ad5CMVCre-eGFP adenovirus in vitro</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>"Trp53-/-"; PKO</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Organoid lines were generated from the urothelium of Trp53Flox/Flox male mice and then infected with Ad5CMVCre-eGFP adenovirus in vitro</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>DKO 431.A.EV</td>
+      <td>this paper</td>
+      <td></td>
+      <td>DKO 431.A organoid line infected with retrovirus carrying pBABE puro empty vector</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>DKO 431. A.RXRAwt</td>
+      <td>this paper</td>
+      <td></td>
+      <td>DKO 431.A organoid line infected with retrovirus carrying pBABE puro RXRA</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>DKO 431.A.RXRAS427F</td>
+      <td>this paper</td>
+      <td></td>
+      <td>DKO 431.A organoid line infected with retrovirus carrying pBABE puro RXRA S427F</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>JMSU-1</td>
+      <td>other</td>
+      <td>RRID:CVCL_2081</td>
+      <td>obtained from Dr. David Solit (MSKCC)</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>575A</td>
+      <td>other</td>
+      <td>RRID:CVCL_7941</td>
+      <td>obtained from Dr. David Solit (MSKCC)</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>UM-UC-3</td>
+      <td>other</td>
+      <td>RRID:CVCL_1783</td>
+      <td>obtained from Dr. David Solit (MSKCC)</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>Lenti-X 293T</td>
+      <td>Clontech</td>
+      <td>Clontech:632180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>JMSU-1 RXRA WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>JMSU-1 cell line infected with retrovirus carrying pBABE puro RXRA</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>JMSU-1 RXRA S427F</td>
+      <td>this paper</td>
+      <td></td>
+      <td>JMSU-1 cell line infected with retrovirus carrying pBABE puro RXRA S427F</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>JMSU-1 RXRA S427Y</td>
+      <td>this paper</td>
+      <td></td>
+      <td>JMSU-1 cell line infected with retrovirus carrying pBABE puro RXRA S427Y</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>575A RXRA WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>575A cell line infected with retrovirus carrying pBABE puro RXRA</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>575A RXRA S427F</td>
+      <td>this paper</td>
+      <td></td>
+      <td>575A cell line infected with retrovirus carrying pBABE puro RXRA S427F</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PPARG (81B8) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology:2443; RRID:AB_823598</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PPARD (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab178866</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-RXRA (D6H10) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology:3085</td>
+      <td>(1:1200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-beta-Actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:A5441; RRID:AB_476744</td>
+      <td>(1:50000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GAPDH (D16H11) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology:5174; RRID:AB_10622025</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit IgG, HRP (goat)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology:7074; RRID:AB_2099233</td>
+      <td>(1:7500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mouse IgG, HRP (horse)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology:7076; RRID:AB_330924</td>
+      <td>(1:7500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-RXRA (K8508) (mouse monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>R&amp;D Systems: PP-K8508-00; RRID:AB_2182738</td>
+      <td>(5 µg)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-H3K27Ac (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab4729; RRID:AB_2118291</td>
+      <td>(0.4 µg)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>PPRE X3-TK-luc; DR1 reporter (plasmid)</td>
+      <td>Addgene; PMID 9539737</td>
+      <td>Addgene:1015</td>
+      <td>plasmid was deposited by Bruce Spiegelman</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGL3-RARE-luciferase; DR5 reporter (plasmid)</td>
+      <td>Addgene; PMID 16818722</td>
+      <td>Addgene:13458</td>
+      <td>plasmid was deposited by T. Michael Underhill</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pRL-SV40 (plasmid)</td>
+      <td>Promega</td>
+      <td>Promega:E2231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCL-ampho (plasmid)</td>
+      <td>other</td>
+      <td></td>
+      <td>obtained from Dr. Charles Sawyers (MSKCC)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>VSVG (plasmid)</td>
+      <td>other</td>
+      <td></td>
+      <td>obtained from Dr. Charles Sawyers (MSKCC)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 RARA (plasmid)</td>
+      <td>OriGene</td>
+      <td>OriGene:SC119566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARG (plasmid)</td>
+      <td>OriGene</td>
+      <td>OriGene:SC108192</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARG Q286P (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Q286 was mutated via site-directed mutagenesis of pCMV6-XL4 PPARG</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARG E471A (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>E471 was mutated via site-directed mutagenesis of pCMV6-XL4 PPARG</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARG Y477S (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Y477 was mutated via site-directed mutagenesis of pCMV6-XL4 PPARG</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARG Y477X (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Y477 was deleted via site-directed mutagenesis of pCMV6-XL4 PPARG</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 empty vector (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>generated by digesting pCMV6-XL4 PPARG with NotI to remove PPARG and by ligating the plasmid ends with T4 DNA ligase</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pBABE puro RXRA (plasmid)</td>
+      <td>Addgene</td>
+      <td>Addgene:11441</td>
+      <td>deposited by Ronald Kahn</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pBABE puro RXRA S427F (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>S427 was mutated via site-directed mutagenesis of pBABE puro empty vector</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pBABE puro RXRA S427Y (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>S427 was mutated via site-directed mutagenesis of pBABE puro empty vector</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pBABE puro RXRA E453A (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>E453 was mutated via site-directed mutagenesis of pBABE puro empty vector</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pBABE puro RXRA S427F/E453A (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>E453 was mutated via site-directed mutagenesis of pBABE puro RXRA S427F</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pBABE puro empty vector (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>generated by digesting pBABE puro RXRA with EcoRI to remove RXRA and by ligating the plasmid ends with T4 DNA ligase</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARD (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Human PPARD was cloned from JMSU-1 epithelial bladder cancer cells and inserted into the pCMV6-XL4</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARD Y441S (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Y441 was mutated via site-directed mutagenesis of pCMV6-XL4 PPARD</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV6-XL4 PPARD Y441X (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Y441 was deleted via site-directed mutagenesis of pCMV6-XL4 PPARD</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>ON-TARGETplus Non-targeting Pool (siRNA)</td>
+      <td>Dharmacon</td>
+      <td>Dharmacon: D-001810-10-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>ON-TARGETplus Human PPARG siRNA</td>
+      <td>Dharmacon</td>
+      <td>Dharmacon: L-003436-00-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>ON-TARGETplus Human PPARD siRNA</td>
+      <td>Dharmacon</td>
+      <td>Dharmacon: L-003435-00-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Dual-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Promega:E2940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>CellTiter-Glo</td>
+      <td>Promega</td>
+      <td>Promega:G7571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Ovation Ultraflow System V2</td>
+      <td>NuGen</td>
+      <td>NuGen:0344-32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Pioglitazone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:E6910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>GW 0742</td>
+      <td>Tocris</td>
+      <td>Tocris:2229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>SR 11237</td>
+      <td>Tocris</td>
+      <td>Tocris:3411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>all-trans-Retinoic Acid (ATRA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:R2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>GSK 0660</td>
+      <td>Tocris</td>
+      <td>Tocris:3433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>ST247</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:SML0424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>T0070907</td>
+      <td>Cayman Chemical</td>
+      <td>Cayman Chemical:10026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GROMACS 5.1.3</td>
+      <td>DOI: 10.1016/j.softx. 2015.06.001</td>
+      <td>RRID:SCR_014565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MSMBuilder 2.8</td>
+      <td>PMID: 22125474</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Chimera</td>
+      <td>PMID: 15264254; http://www.rbvi.ucsf.edu/chimera</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>mKDM6A Forward (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CGAGAAAGGAAATGTG AGAGCAAGG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>mKDM6A Reverse 4 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CTGGCAGGATATGATA GCAATGTG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oIMR8543 (primer)</td>
+      <td>The Jackson Laboratory; https://www2.jax.org/protocolsdb/f?p=116:2:0::NO:2:P2_MASTER_PROTOCOL_ID,P2_JRS_CODE:3226,008462</td>
+      <td></td>
+      <td>5' GGTTAAACCCAGCT TGACCA 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>oIMR8544 (primer)</td>
+      <td>The Jackson Laboratory; https://www2.jax.org/protocolsdb/f?p=116:2:0::NO:2:P2_MASTER_PROTOCOL_ID,P2_JRS_CODE:3226,008462</td>
+      <td></td>
+      <td>5' GGAGGCAGAGACA GTTGGAG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARD.qPCR.Fwd.1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' ATGCACCAACGA GGCTGATG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARD.qPCR.Rev.1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CTGCTCCATGGCT GATCTCC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARG fwd1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' ATGCCTTGCAGT GGGGATGTC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARG rev1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GAGGTCAGCGGA CTCTGGATTC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>hPLIN2 fwd1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' AGTGCTCTGCCC ATCATCCAG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>hPLIN2 rev1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' TCACAGCGCCTT TGGCAT TG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>FABP4 fwd1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' ACTGCAGCTTCCT TCTCACCTTG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>FABP4 rev1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' TGCCAGCCACTT TCCTGGTG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>mPlin2 Fwd1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GTGCCCTGCCC ATCATCC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>mPlin2 Rev1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' TTACGGCACCTCT GGCACTG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>mFabp4 Fwd1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' TGCAGCCTTTCTCA CCTGGAAG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>mFabp4 Rev1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GCCTGCCACTTTCC TTGTGG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRA fwd1 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' ACAAGACGGAGC TGGGCTG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRA rev2 (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GGCTGCTCTGGGT ACTTGTGC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRA E453A SDM For (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' acaccttccttatggccat gctggaggcgccg 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRA E453A SDM Rev (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' cggcgcctccagcatggcc ataaggaaggtgt 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRa S427F-F (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CCG GCT CTG CGC TTT ATC GGG CTC AAA T 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRa S427F-R (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CAT TTG AGC CCG ATA AAG CGC AGA GCC G 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRa S427Y-F (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CCG GCT CTG CGC TAT ATC GGG CTC AAA T 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RXRa S427Y-R (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CAT TTG AGC CCG ATA TAG CGC AGA GCC G 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>F hPPARGQ286P (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' ccacggagcgaaacgg gcagccctgaaag 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>R hPPARGQ286P (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' ctttcagggctgcccgttt cgctccgtgg 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>F hPPARGE471A (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' agtccttgtagatcgcctg caggagcggg 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>R hPPARGE471A (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' cccgctcctgcaggcgat ctacaaggact 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARG Y477S For SDM (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GAGATCTACAAGGACTTGAG CTAGCAGAGAGTCCTGAGC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARG Y477S Rev SDM (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GCTCAGGACTCTCTGCTAGCT CAAGTCCTTGTAGATCTC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARG Y477X For SDM (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GATCTACAAGGACTTGTAG TAGCAGAGAGTCCTGA 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARG Y477X Rev SDM (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' TCAGGACTCTCTGCTACTAC AAGTCCTTGTAGATC 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARD Y441S For (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' AGATCTACAAGGACATGAG CTAACGGCGGCACCCAG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARD Y441S Rev (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CTGGGTGCCGCCGTTA GCTCATGTCCTTGTAGATCT 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARD Y441X For (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' GATCTACAAGGACATGTGA TAACGGCGGCACCCAGG 3'</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PPARD Y441X Rev (primer)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5' CCTGGGTGCCGCCGTTATC ACATGTCCTTGTAGATC 3'</td>
+    </tr>
+  </tbody>
+</table>
+
 Mouse Bladder Organoid Generation and Culturing: Urothelium was dissected from bladders collected from 6- to 8-week-old male mice, minced into smaller pieces with scissors, and digested with collagenase type II (17101015 Gibco) re-suspended at 5 mg/mL in Advanced DMEM/F12+++ medium (advanced DMEM/F-12 medium (12634028 Gibco) supplemented with 1% penicillin-streptomycin and 1% HEPES (MT25060CI Corning)), 5 µM ROCK1/2 inhibitor Y-27632 (72302 Stemcell Technologies), and 0.2 mg/mL elastase (E7885 Sigma) for 4 hr at 37°C while shaking at 700 rpm. After digestion with collagenase, cells were pelleted at 500 x g for 5 min and digested with TrypLE (12605010 Gibco) for 30 min at 37°C with shaking at 700 rpm. Cells were washed with Advanced DMEM/F12+++ medium and re-suspended in growth factor reduced Matrigel (356231 Corning) at 10,000 cells per a 50 µL Matrigel tab. Tabs were incubated at 37°C for 15 min to allow Matrigel to harden. Once hardened, tabs were cultured in organoid medium prepared as described in Gao et al. (2014) except for the following changes: final concentration of EGF was 5 ng/µL, final concentration of A83-01 was 20 nM, and FGF10, FGF2, dihydrotestosterone, Y-27632, SB202190, and primocin were omitted. Organoids were split approximately every 7 days. Tabs were homogenized by pipetting. Organoids were digested with TrypLE for approximately 20 min at 37°C with periodic vortexing. Cells were washed with Advanced DMEM/F12+++ medium and re-suspended at 10,000 cells per a 50 µL Matrigel tab. To generate MCB6C, mice were treated with BBN 0.1% via drinking water for 22 weeks. Bladders were harvested and a polyclonal organoid line (MCB6) was generated from a tumor-bearing bladder. A single organoid was isolated to generate MCB6C.
 
-## Mice
+### Mice
 
 Animals were handled and housed according to protocols approved by the Washington University School of Medicine Institutional Animal Care and Use Committee. Kdm6aF mice were generated by Dr. Lukas Wartman (Washington University School of Medicine) with ES cells obtained from EUCOMM with the Kdm6atm1a(EUCOMM)Wtsi allele (manuscript in preparation) and maintained on the C57BL6/J background. B6.129P2-Trp53tm1brn/J (Trp53Flox) mice were purchased from Jackson Laboratory (stock # 008462). Mice were genotyped via PCR (Kdm6a 5’ CGAGAAAGGAAATGTGAGAGCAAGG 3’ and 5’ CTGGCAGGATATGATAGCAATGTG 3’; Trp53 5’ GGTTAAACCCAGCTTGACCA 3’ and 5’ GGAGGCAGAGACAGTTGGAG 3’). Experimental animals resulted from crosses between Kdm6aFlox/+ and Trp53Flox/+ mice.
 
-## Adenovirus infection of organoids
+### Adenovirus infection of organoids
 
 To generate Trp53-/-, Kdm6a-, and Trp53-/-;Kdm6a- organoids, Trp53Flox/Flox, Kdm6aFlox, and Trp53Flox/Flox;Kdm6aFlox organoids were infected with Ad5CMVCre-eGFP adenovirus (University of Iowa Viral Vector Core) in vitro. Organoids were trypsinized into single cells. 500,000 cells were pelleted in a 1.5-mL tube and re-suspended in 100 µL of organoid medium supplemented with a final concentration of 5 µg/mL polybrene (TR-1003-G Millipore) with or without virus at a MOI of 50. Cells were incubated at 32°C with shaking at 700 rpm on an Eppendorf ThermoMixer for 1 hr. Cells were then incubated at 37°C without shaking for approximately 2.5 hr. Cells were pelleted and re-suspended in 650 µL Matrigel to make twelve 50 µL Matrigel tabs. Tabs were hardened at 37°C for 15 min and organoid medium was added. To verify recombination of floxed alleles, DNA was isolated from organoid cell pellets using the DNeasy Blood and Tissue Kit (69506 Qiagen, Germany) and genotyped via PCR using the primers listed in Key Resources.
 
-## Expression vector construction
+### Expression vector construction
 
 Wild-type human RXRA was expressed from pBABE puro RXRA (plasmid #11441 Addgene). Point mutations were introduced via the QuikChange Site-Directed Mutagenesis protocol (Agilent Technologies). pBABE puro empty vector was generated by digesting pBABE puro RXRA with EcoRI to remove RXRA and by ligating the plasmid ends together with T4 DNA ligase (M0202S New England BioLabs). Wild-type human PPARG1 was expressed from pCMV6-XL4 PPARG (SC108192 Origene). Point mutations were introduced via the QuikChange Site-Directed Mutagenesis protocol. pCMV6-XL4 empty vector was generated by digesting pCMV6-XL4 PPARG with NotI to remove PPARG and by ligating the plasmid ends together with T4 DNA ligase. Human PPARD was cloned from JMSU-1 epithelial bladder cancer cells. Cells were harvested upon reaching 80–90% confluency and total RNA was isolated using the RNeasy Mini Kit. JMSU-1 cDNA was generated using a First-Strand cDNA Synthesis Kit (27-9261-01 GE Healthcare Life Sciences) with random hexameric primers and 5 µg total RNA. Primers targeting the 5’ and 3’ UTRs were used to amplify PPARD. PPARD was inserted into the pCMV6-XL4 expression vector using the In-Fusion HD Cloning System (639646 Clontech). Point mutations were introduced via the QuikChange Site-Directed Mutagenesis protocol. See Key Resources for primer sequences.
 
-## Cell lines
+### Cell lines
 
 JMSU-1, 575A, and UM-UC-3 were obtained from Dr. David Solit (MSKCC). 293 Lenti-X cells were obtained from Clonetech. Cells were cultured in recommended medium supplemented with 10% fetal bovine serum (FBS; FB-11 Omega Scientific), 1% penicillin-streptomycin (15140122 Gibco), and 1x GlutaMAX Supplement (35050061 Gibco). Cells were grown at 37°C in 5% CO2.
 
-## Retroviral infections
+### Retroviral infections
 
 Retrovirus was produced by using LipoD293 DNA In Vitro Transfection Reagent (SL100668 SignaGen Laboratories) to transiently transfect 293 Lenti-X cells with 0.45 µg VSVG, 2.27 µg pCL-ampho, and 2.27 µg pBABE puro empty vector, RXRA WT, RXRA S427F, or RXRA S427Y in a 100 mm TC-treated tissue culture dish. Medium was replaced with recommended culturing medium approximately 6 hr post-transfection. Retrovirus was collected 48 hr post-transfection and was filtered through a 0.45-µM filter. Stable cells lines were generated by seeding cells in a 100 mm TC-treated tissue culture dish 18–24 hr before adding virus so that cell confluency was 50–70% when virus was added. The next day, medium was removed and retrovirus diluted 1:4 in the recommended culturing medium and supplemented with a final concentration of 8 µg/mL polybrene (TR-1003-G Millipore) was added to the cells. After approximately 24 hr, the virus-containing medium was replaced with fresh medium. Cells were cultured for an additional 36 hr, at which time puromycin (P8833 Sigma-Aldrich) was added at a predetermined concentration to select for transduced cells. To generate stable organoid lines, organoids were trypsinized into single cells. 500,000 cells were pelleted in a 1.5-mL tube and resuspended in 500 µL of 1:1 organoid medium:retrovirus mixture supplemented with a final concentration of 8 µg/mL polybrene. Cells were incubated at 32°C with shaking at 600 rpm on an Eppendorf ThermoMixer for 1.5 hr. Cells were then incubated at 37°C without shaking for approximately 5 hr. Cells were pelleted and resuspended in enough Matrigel to make three 50 µL Matrigel tabs. Tabs were hardened at 37°C for 15 min and organoid medium was added. 48 hr after infection, puromycin was added at a predetermined concentration to select for transduced cells.
 
-## siRNA knockdown
+### siRNA knockdown
 
 Cells were seeded in a 12-well cell culture plate 18–24 hr before transfection so that cell confluency was 50–70% at time of transfection. PepMute siRNA Transfection Reagent (SL100566 SignaGen Laboratories) was used to transiently transfect cells with ON-TARGETplus Non-targeting Pool (D-001810-10-20 Dharmacon), ON-TARGETplus Human PPARG siRNA (L-003436-00-0005 Dharmacon), and/or ON-TARGETplus Human PPARD siRNA (L-003435-00-0005 Dharmacon). PepMute/siRNA complex-containing medium was replaced with recommended culturing medium approximately 24 hr post transfection. Cells were collected 72 hr post transfection.
 
-## Western blotting
+### Western blotting
 
 Cells and organoids were lysed in M-PER (78501 Thermo Scientific) supplemented with 1x Halt Protease Inhibitor Cocktail (87786 ThermoFisher Scientific) and 0.45 M NaCl for 10 min on ice with periodic vortexing. Lysates were cleared by centrifugation at 18,000 x g for 15 min. Protein concentration was determined with Pierce BCA Protein Assay (23224/23228 ThermoFisher Scientific). Protein lysates were denatured by boiling in 1x Bolt LDS Sample Buffer (B0008 Invitrogen) and 1x NuPAGE Sample Reducing Reagent (NP0004 Invitrogen) for 10 min. Proteins were separated on Bolt 4–12% Bis-Tris Plus Gels (NW04122BOX Invitrogen), transferred onto Immobilon-P Membrane, PVDF, 0.45 µM (IPVH00010 Millipore), and blocked according to antibody specifications. Blots were incubated with primary antibody in blocking solution overnight at 4°C. Blots were washed with 1x TBS plus 0.1% Tween and primary antibodies were detected with HRP-conjugated secondary antibodies. Amersham ECL Prime western blotting detection reagent (RPN2232 GE Healthcare Life Sciences) or Clarity Western ECL Substrate (170–5060 Bio-Rad) was used for chemiluminescence and luminescence was detected with the Bio-Rad ChemiDoc XRS + System. Antibodies and concentration list in Key Resources
 
-## RNA isolation, cDNA synthesis, and RT-qPCR
+### RNA isolation, cDNA synthesis, and RT-qPCR
 
 RNeasy Mini Kit (74106 Qiagen) was used to isolate RNA from organoid and cell pellets. iScript cDNA Synthesis Kit (1708891 Bio-Rad) was used to synthesize cDNA from 0.5 to 1 µg of RNA. RT-qPCR was performed according to package instructions for SsoFast EvaGreen Supermix with low ROX (172–5211 Bio-Rad) on the Applied Biosystems QuantStudio 3 Real-Time PCR system. See Key Resources for primer sequences used.
 
-## Reporter assays
+### Reporter assays
 
 Cells were seeded in a 48-well cell culture plate 18–24 hr before transfection so that cell density was approximately 70% at time of transfection. LipoD293 DNA In Vitro Transfection Reagent (SL100668 SignaGen Laboratories) was used to transiently transfect cells with a reporter plasmid, expression vectors, and a plasmid expressing Renilla luciferase. LipoD293/DNA complex-containing medium was replaced with recommended culturing medium supplemented with 1% FBS 16–18 hr post-transfection. Drugs were added to cells 48 hr post transfection. Drug-containing medium was removed 16 hr later and cells were washed with 1x PBS. Luciferase activity was assayed using Dual-Glo Luciferase Assay System (E2940 Promega) and in accordance with the Dual-Glo protocol except that a 1:1 mixture of 1xPBS:Dual-Glo Reagent was added to the cells. Luminescence was measured on the SpectraMax i3 Platform (Molecular Devices). See Key Resources for list of plasmids.
 
-## Growth assays
+### Growth assays
 
 Organoids were plated at 1000 or 1500 cells per tab and cultured in normal or EGF deplete organoid medium, respectively, for 8–10 days. Drugs or DMSO were added to medium at time of plating. Medium was changed every 4 days post-plating. Cell viability was measured day 1 (baseline measurement) and at indicated days post-plating using CellTiter-Glo (G7571 Promega). Briefly, tabs were homogenized in 1:1 mixture of 1xPBS:CellTiter-Glo reagent and incubated at room temperature for 10 min with shaking. Homogenate was transferred to a white, 96-well plate and luminescence was measured on the SpectraMax i3 Platform. For organoid counting assay, organoids were digested into a single-cell suspension with trypsin and the counted in duplicate using a Bio-rad TC20.
 
-## RNA-seq sample preparation
+### RNA-seq sample preparation
 
 Cells were seeded in biological triplicate in 6-well tissue culture plates at 300,000 cells (JMSU-1) or 125,000 (575A) cells per well. 48 hr later, 0.1% DMSO or 1 µM pioglitazone (E6910 Sigma-Aldrich) was added to cells. RNA was isolated with the RNeasy Mini Kit (74106 Qiagen) 16–18 hr after addition of drugs. RNA library prep and sequencing were done by the Genome Technology Access Center in the Department of Genetics at Washington University School of Medicine. Briefly, Ribosomal RNA was removed by poly-A selection using Oligo-dT beads. mRNA was then fragmented and reverse transcribed to yield double stranded cDNA using random hexamers. cDNA was blunt ended, had an A base added to the 3’ ends, and then had Illumina sequencing adapters ligated to the ends. Ligated fragments were then amplified for 12 cycles using primers incorporating unique index tags. Fragments were sequenced on an Illumina HiSeq-2500 or HiSeq-3000 using single reads extending 50 bases.
 
-## RNA-seq data acquisition, quality control, and processing
+### RNA-seq data acquisition, quality control, and processing
 
 RNA-seq reads were aligned to the Ensembl release 76 top-level assembly with STAR version 2.0.4b. Gene counts were derived from the number of uniquely aligned unambiguous reads by Subread:featureCount version 1.4.5. Transcript counts were produced by Sailfish version 0.6.3. Sequencing performance was assessed for total number of aligned reads, total number of uniquely aligned reads, genes and transcripts detected, ribosomal fraction known junction saturation and read distribution over known gene models with RSeQC version 2.3. All gene-level and transcript counts were then imported into the R/Bioconductor package EdgeR and TMM normalization size factors were calculated to adjust for samples for differences in library size. Genes or transcripts not expressed in any sample were excluded from further analysis. The TMM size factors and the matrix of counts were then imported into R/Bioconductor package Limma and weighted likelihoods based on the observed mean-variance relationship of every gene/transcript and sample were then calculated for all samples with the voomWithQualityWeights function. Performance of the samples was assessed with a spearman correlation matrix and multidimensional scaling plots. Gene/transcript performance was assessed with plots of residual standard deviation of every gene to their average log-count with a robustly fitted trend line of the residuals. Generalized linear models were then created to test for gene/transcript level differential expression. Differentially expressed genes and transcripts were then filtered for FDR adjusted p-values less than or equal to 0.05. Go-Elite version 1.2 was used to identify over-represented pathways curated by KEGG.
 
-## ChIP-seq sample preparation
+### ChIP-seq sample preparation
 
 JMSU-1 cells stably expressing RXRAwt or RXRAS427F were seeded in biological triplicate in 150 mm TC-treated culture dish and collected when 70–90% confluency was reached. Crosslinking and ChIP were performed as described for adherent cells in the ENCODE experiment summary for ENCSR000BJW (https://www.encodeproject.org/experiments/ENCSR000BJW/). Chromatin was sonicated using the Diagenode Pico Bioruptor. DNA-protein complexes were precipitated with antibodies against RXRA (PP-K8508-00 R and D Systems) and H3K27Ac (ab4729 Abcam). Ovation Ultralow System V2 (0344–32 NuGen) was used to generate the sequencing library. The library was sequenced by the Genome Technology Access Center in the Department of Genetics at Washington University School of Medicine.
 
-## ChIP-seq data analysis
+### ChIP-seq data analysis
 
 Reads were aligned to hg19 using NovoAlign version 3.04.06 with the command novoalign -r None -l 30 -e 100 -i 230 140 –H. For the RXRA and H3K27ac IPs, peaks were called for each phenotype using the IDR (Li et al., 2011) pipeline described here (Kundaje, 2012) with MACS version 2.1.1 (Zhang et al., 2008) as the peak caller. RAE regions were defined for each phenotype by running bedtools intersect on the H3K27ac and RXRA IDR peak lists. Differential binding analysis was performed on the H3K27ac signal using DiffBind (Ross-Innes et al., 2012) comparing mutant to wild-type with the IDR peak lists as input and an FDR cutoff of 0.05. Motif analysis of the RAE regions was performed using HOMER version 4.9 (Heinz et al., 2010) with the command findMotifsGenome.pl –h –bg <Background> <Peaklist> hg19. Peaklist was the RAE regions found by DiffBind to have higher H3K27ac binding in mutant. Background was the list of all RAE regions minus the ones found in peaklist.
 
-## Preparation of structures for molecular dynamics simulations
+### Preparation of structures for molecular dynamics simulations
 
 The published structure of complexed RXRA/PPARG LBDs bound to agonist (PDB: 1FM6) (Gampe et al., 2000) was used as the starting conformation for simulations. To reduce subsequent computational complexity and enable drift towards an inactive state during simulations, the respective agonist structures binding RXRA and PPARG were removed. The small peads were aligned to hg19 usptide nuclear receptor coactivator 1 (NCOA1) bound to both RXRA and PPARG AF2 domains was also removed with the same purpose. The Chimera molecular visualization tool (Pettersen et al., 2004) was used to mutate RXRA serine 427 to phenylalanine (RXRA S427F), creating wild-type and mutant structures for subsequent simulations.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 The protocol described by Hart et. al. was used for molecular dynamics simulations (Hart et al., 2016). Briefly, simulations were performed using the molecular dynamics package GROMACS 5.1.3 (Abraham et al., 2015). The Amber03 force field (Duan et al., 2003) was used and hydrogen atoms in each structure were replaced with virtual sites. The protein structure was solvated within a dodecahedron whose border was at least 10 Å away from the protein in all directions. Chlorine counterions were added to neutralize the system’s overall positive charge. To ensure the system contains no steric clashes or inappropriate geometry, energy minimization was used to relax the system below a 1000 kJ/mol/nm threshold. To equilibrate solvent and ions around the structure, the system underwent position-restrained molecular dynamics simulation for one nanosecond using a step size of 4 fs. After relaxation and equilibration, each system was subjected to long-timescale molecular simulations. Simulations took place using the NPT ensemble at 1 bar and 300 K. Parrinello-Rahman pressure coupling (Parrinello and Rahman, 1981) and the V-rescale thermostat (Bussi et al., 2007) were used during simulations. The LINCS method (Hess, 2008) constrained hydrogen bonds and allowed the use of virtual sites. The cutoffs for electrostatic and van der Waals interactions was 9 Å. Periodic boundary conditions were applied during simulation and the particle-mesh Ewald summation reconstituted any long-distance electrostatic interactions. Each simulation lasted 100 nanoseconds with conformations stored every 10 picoseconds. Ten simulations were run to produce an aggregate 1 microsecond of simulation for both wild-type and mutant conditions.
 
-## Markov state modeling
+### Markov state modeling
 
 MSMBuilder 2.8 (Beauchamp et al., 2011) was used to analyze conformations adopted during molecular simulation. Wild-type and mutant structures were clustered in overlapping state space using the hybrid k-centers/k-medoids technique. Clustering was based on the RMSD of between backbone-heavy atoms from PPARG 445–477 and RXRA 425–429. The inter-cluster distance cutoff was 1 Å and 50 iterations were performed to refine cluster assignment. A microstate Markov state model (MSM) was constructed using the Transpose method for symmetric counts matrix estimation and without applying an ergodic trim. The 5% most frequently occupied microstates during wild-type and mutant conformations were selected. Distance between alpha carbons of RXRA 427 and PPARG 477 was calculated for comparison between microstate structures from wild-type and mutant simulations. The inter-residue distances were normalized to the respective distance in the agonist-bound crystal structure. The Chimera molecular visualization tool was used to generate representative figures.
 
-## Statistics
+### Statistics
 
 All statistical tests are as indicated in figure legends. Analysis was done in GraphPad Prism with the exception of pearson coefficients which were calculated using Microsoft Excel. All statistical comparisons are two-tailed. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.

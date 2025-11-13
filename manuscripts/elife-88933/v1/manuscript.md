@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03efmqc40 School of Life Sciences, Arizona State University Tempe United States
-2. https://ror.org/010kva064 Department of Biology, Southern Oregon University Ashland United States
+1. School of Life Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+2. Department of Biology, Southern Oregon University Ashland United States ([ROR:010kva064](https://ror.org/010kva064))
 3. Dirección de Sanidad Vegetal Buenos Aires Argentina
-4. https://ror.org/03efmqc40 School of Sustainability, Arizona State University Tempe United States
+4. School of Sustainability, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
 
 † Corresponding author
 
@@ -39,27 +39,186 @@ Based on this literature, we hypothesized that animals would steadily reduce pro
 
 ## Results
 
-## Protein-to-carbohydrate intake ratio decreased throughout development
+### Protein-to-carbohydrate intake ratio decreased throughout development
 
 We measured self-selected protein and carbohydrate consumption rates for each developmental stage (instars, adults) of S. cancellata using chemical-defined artificial diets (see ‘Materials and methods’ for more information). We found that younger instars (first to fourth) had a protein-biased consumption (selected high protein-to-carbohydrate ratios, p:c) with third-instar nymphs exhibiting the highest p:c of 1.37p:1c (Figure 1A and D). In contrast, older locusts became carbohydrate-biased, with adults selecting intake targets of 1p:2.66c (Figure 1A and D). Males and females (both unmated) did not differ from each other in relative macronutrient consumption during most of the developmental stages (Figure 1, Table 1). There were no significant interactions between sex and diet pair on total macronutrient consumption (Table 1). The insignificant effect of diet pair indicates that locusts are tightly regulated to a specific intake target. The mortality was relatively low and was not affected by sex or diet pairs.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88933/elife-88933-fig1-v1.jpg)
 
-**Figure 1.:** Schistocerca cancellata.(A) Self-selected protein to carbohydrate (p:c) consumption rates decreased systematically during ontogeny. (B) For lab-reared locusts, mass-specific carbohydrate consumption rates were highest in early instars relative to older instars and adults. Field-collected fifth and sixth instars consumed more carbohydrate than lab-reared nymphs. (C) For lab-reared locusts, mass-specific protein consumption declined systematically with age. Field-collected fifth- and sixth- instar nymphs consumed protein at similar rates to lab-reared animals. (D) Young, first to fourth nymph instars self-selected protein-biased intake target ratios, whereas later in development, locusts became carbohydrate-biased (medians and interquartile ranges are represented by the boxes and center line, with an X to indicate the mean). The numbers above the boxes represent life stage averaged (both sexes) p:c intake targets. The post hoc letters were given only when there was no significant interactive developmental stage * sex effect. For panels (A–C), means and standard errors (SEM) are shown. All consumption rates are in grams per day, divided by the final body mass of the relevant instar. The three asterisks represent significant differences between lab and field populations when p<0.001. Throughout, males are black circles/bars and females are white circles/bars; field locusts are represented by striped bars. For sample sizes, see Table 1.Figure 1—source data 1.Figure 1.Figure 1—source data 2.Figure 1 (field-collected locusts).
+**Figure 1.:** (A) Self-selected protein to carbohydrate (p:c) consumption rates decreased systematically during ontogeny. (B) For lab-reared locusts, mass-specific carbohydrate consumption rates were highest in early instars relative to older instars and adults. Field-collected fifth and sixth instars consumed more carbohydrate than lab-reared nymphs. (C) For lab-reared locusts, mass-specific protein consumption declined systematically with age. Field-collected fifth- and sixth- instar nymphs consumed protein at similar rates to lab-reared animals. (D) Young, first to fourth nymph instars self-selected protein-biased intake target ratios, whereas later in development, locusts became carbohydrate-biased (medians and interquartile ranges are represented by the boxes and center line, with an X to indicate the mean). The numbers above the boxes represent life stage averaged (both sexes) p:c intake targets. The post hoc letters were given only when there was no significant interactive developmental stage * sex effect. For panels (A–C), means and standard errors (SEM) are shown. All consumption rates are in grams per day, divided by the final body mass of the relevant instar. The three asterisks represent significant differences between lab and field populations when p<0.001. Throughout, males are black circles/bars and females are white circles/bars; field locusts are represented by striped bars. For sample sizes, see Table 1.
+
+**Table 1.**
+ The diet pair presented did not affect the amount of protein and carbohydrate consumed at any developmental stage (multiple analysis of covariance [MANCOVA], with diet pairs as blocks and masses as a covariate), indicating that locusts tightly regulated to a specific intake target.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nymph instar</th>
+      <th></th>
+      <th>F-value</th>
+      <th>p-Value</th>
+      <th>Wilks' Λ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">FirstNmale = 37Nfemale = 41</td>
+      <td>Diet</td>
+      <td>F(2,72) = 2.82</td>
+      <td>0.07</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>F(2,72) = 1.46</td>
+      <td>0.24</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Diet × sex</td>
+      <td>F(2,72) = 0.36</td>
+      <td>0.7</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td rowspan="3">SecondNmale = 46Nfemale = 51</td>
+      <td>Diet</td>
+      <td>F(2,91) = 2.33</td>
+      <td>0.1</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>F(2,91) = 2.63</td>
+      <td>0.08</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Diet × sex</td>
+      <td>F(2,91) = 0.10</td>
+      <td>0.91</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ThirdNmale = 50Nfemale = 48</td>
+      <td>Diet</td>
+      <td>F(2,93) = 1.09</td>
+      <td>0.34</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>F(2,93) = 10.1</td>
+      <td>&lt;0.001</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Diet × sex</td>
+      <td>F(2,93) = 0.87</td>
+      <td>0.42</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td rowspan="3">FourthNmale = 58Nfemale = 40</td>
+      <td>Diet</td>
+      <td>F(2,91) = 0.38</td>
+      <td>0.68</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>F(2,91) = 2.84</td>
+      <td>0.06</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Diet × sex</td>
+      <td>F(2,91) = 0.32</td>
+      <td>0.73</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td rowspan="3">FifthNmale = 55Nfemale = 35</td>
+      <td>Diet</td>
+      <td>F(2,84) = 1.17</td>
+      <td>0.32</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>F(2,84) = 2.84</td>
+      <td>0.06</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Diet × sex</td>
+      <td>F(2,84) = 0.82</td>
+      <td>0.44</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td rowspan="3">SixthNmale = 30Nfemale = 24</td>
+      <td>Diet</td>
+      <td>F(2,48) = 0.91</td>
+      <td>0.41</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>F(2,48) = 1.18</td>
+      <td>0.32</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Diet × sex</td>
+      <td>F(2,48) = 1.37</td>
+      <td>0.26</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td rowspan="3">AdultNmale = 28Nfemale = 25</td>
+      <td>Diet</td>
+      <td>F(2,47) = 0.752</td>
+      <td>0.477</td>
+      <td>0.969</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>F(2,47) = 5.191</td>
+      <td>0.009</td>
+      <td>0.819</td>
+    </tr>
+    <tr>
+      <td>Diet × sex</td>
+      <td>F(2,47) = 0.184</td>
+      <td>0.832</td>
+      <td>0.992</td>
+    </tr>
+  </tbody>
+</table>
 
 Mass-specific carbohydrate consumption rates were about 30% higher for the first two instars compared to older animals but varied little across the older groups (ANOVA: diet: F6,554 = 34.459; p<0.001, Figure 1B). Males and females did not differ significantly in mass-specific carbohydrate consumption rates (ANOVA: sex: F1,554 = 0.294; p=0.940, Figure 1B). Mass-specific protein consumption rate decreased steadily through ontogeny, with a roughly fourfold decrease in adults compared to first instars (ANOVA: diet: F6,554 = 193.142; p<0.001, Figure 1C). There were differences between the sexes (ANOVA: sex: F1,554 = 7.055; p=0.008) and a significant interactive sex * diet effect on mass-specific protein consumption (ANOVA: sex * diet: F6,554 = 38.995; p=0.011), which was associated with small, irregular stage effects on which sex consumed more. Together, these ontogenetic effects on carbohydrate and protein consumption led to strong decreases in the protein:carbohydrate intake ratio through ontogeny, with the youngest instars consuming about 30% more protein than carbohydrate and the oldest juveniles and adults consuming approximately twice as much carbohydrate as protein (ANOVA: sex: F1,574 = 3.112, p=0.078; developmental stage: F6,574 = 87.529, p<0.001; sex * developmental stage: F6,574 = 1.419, p=0.645) (Figure 1D).
 
-## Macronutrient consumption correlates with growth, but only protein consumption consistently scales hypometrically
+### Macronutrient consumption correlates with growth, but only protein consumption consistently scales hypometrically
 
 The decrease in protein consumption (corrected by initial mass) was well-predicted by the decrease in specific growth rates (see ‘Materials and methods’) in both sexes (Figure 2A). Mass-specific carbohydrate consumption (corrected by initial mass) was also negatively correlated with specific growth rates, but this was only significant for females (Figure 2B). Plotting macronutrient consumption rates on a log-log plot revealed a strong correlation with body mass (Figure 3). Whereas protein consumption rates in S. cancellata scaled strongly hypometrically, with a slope of 0.761 (95% confidence interval: 0.744–0.778) (Figure 3A), carbohydrate consumption rates scaled weakly hypometrically, with a slope closer to 1 (slope of 0.939; 95% confidence interval: 0.92–0.957) (Figure 3B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88933/elife-88933-fig2-v1.jpg)
 
-**Figure 2.:** A), whereas mass-specific carbohydrate consumption was only significantly related to specific growth rate in females (B).Filled circles and dashed line represent males, whereas opened circles and dotted line represent females. Here, consumption rates in grams per day were divided by initial mass at the relevant instar because the final mass at the instar was a strong determinant of the parameters on both axes. Means and standard errors (SEM) are shown.Figure 2—source data 1.Figure 2.
+**Figure 2.:** Filled circles and dashed line represent males, whereas opened circles and dotted line represent females. Here, consumption rates in grams per day were divided by initial mass at the relevant instar because the final mass at the instar was a strong determinant of the parameters on both axes. Means and standard errors (SEM) are shown.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88933/elife-88933-fig3-v1.jpg)
+
+**Figure 3.:** (A) Protein consumption rate scales hypometrically throughout development across the animal kingdom (PGLS, slope = 0.776, SE = 0.086, t = 9.036, p<0.001). The blue circles: locusts (Schistocerca cancellata, this study); orange circles: fish (early development in multiple species [reviewed in Dabrowski, 1986]); gray circles: rats (Rattus rattus [Ricci and Levin, 2003]); red circles: chicken (Gallus gallus domesticus [Kaufman et al., 1978]); light blue circles: cats (Felis catus [Dickinson and Scott, 1956; Miller and Allison, 1958]); green circles: pigs (Sus domesticus [Black et al., 1986]); purple circles: caribou (Rangifer tarandus [McEwan, 1968]); brown circles: dairy cattle (Bos taurus [Crichton et al., 1959]). Diamonds represent the median value of each taxonomic group (matched by color), and the black dashed line is the across-species phylogenetically corrected regression model (see Figure 3—figure supplement 1 for phylogenetic tree). (B) Carbohydrate consumption rates scale hypometrically, a very close to isometrically in Schistocerca cancellata.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88933/elife-88933-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The pruned tree used in our analysis represents estimated divergence times among focal taxa. This tree was derived from a larger, time-calibrated tree from TimeTree.org with 15,029 leaf nodes representing all currently available taxa contained in the clade represented by the focal taxa.
 
 Combining our data with the available literature for animals (see ‘Materials and methods’ for more details) revealed that declining protein consumption rates during ontogeny or across species that differ in body mass is a general pattern for animals (Figure 3A). Older and larger animals consume proportionally less protein in locusts, fish, rats, chickens, pigs, cats, caribou, and dairy cattle, and with a very similar pattern holding across species (Figure 3A). Correcting for phylogeny (see ‘Materials and methods’) yielded a multispecies regression model (slope of 0.776) that predicts protein consumption rates by mass, with a very similar slope to the regression for data from S. cancellata (Figure 3A).
 
-## Field-collected nymphs had higher rates of metabolism and carbohydrate consumption but similar protein consumption as lab-reared locusts
+### Field-collected nymphs had higher rates of metabolism and carbohydrate consumption but similar protein consumption as lab-reared locusts
 
 Field-collected (Gran Chaco, Paraguay, April 2019) South American locusts had more carbohydrate-biased intake targets relative to lab-reared locusts (Figure 1A). Death rates were low during the experiments, and there was not a significant effect of diet on the death rate. Male fifth- and sixth-instar nymphs collected from field populations had 50–90% higher carbohydrate consumption rates relative to lab-reared nymphs (Mann–Whitney U test: U = 2; U = 17; respectively; p<0.001 for both instars) as did female fifth- and sixth-instar nymphs (Mann–Whitney U test: U = 6; U = 2; respectively; p<0.001 for both instars) (Figure 1A and B). However, there were no significant differences in protein consumption between field-collected and lab-reared nymphs for male fifth- and sixth-instar nymphs (Mann–Whitney U test: U = 204; p=0.197; U = 163; p=0.135; respectively) or female fifth- and sixth-instar nymphs (Mann–Whitney U test: U = 43; p=0.071; U = 127; p=0.859; respectively) (Figure 1B and C). The higher carbohydrate consumption of field-captured locusts was partly due to a higher resting metabolic rate. Using stop-flow respirometry (see ‘Materials and methods’), we demonstrated that field-collected sixth- (N = 29) instar nymphs had ~23% higher mass-specific resting oxygen consumption rate than sixth- (N = 50) instar lab-reared nymphs (1.126 ± 0.052 ml·g–1·h–1, 0.914 ± 0.021 ml·g–1·h–1, mean ± SEM for field-collected and lab-reared, respectively) (Mann–Whitney U test: U = 349; p<0.001).
 
@@ -75,39 +234,43 @@ Assuming that energy needs and consumption are primarily set by metabolic rate, 
 
 An important goal for the field of nutritional ecology is to predict nutritional needs, foraging behavior and strategies, and consequences of nutritional imbalance for animals in the field (Behmer and Joern, 2008). Relative to the lab population, we measured a 50–90% increase in carbohydrate consumption rates for field-collected fifth- and sixth-instar nymphs. In contrast, protein consumption rates did not vary between lab and field in our study. This may not be true under every ecological condition; for example, poor resource conditions that reduce growth will likely also reduce protein consumption. Nonetheless, these data support the hypothesis that protein consumption rates of animals in good field conditions may be predicted from results with lab-reared animals. There are multiple reasons why carbohydrate consumption in the field may be poorly predicted by laboratory consumption data. Consumption patterns can reflect their past feeding history (Marmonier et al., 2000; Wiggins et al., 2018), which was not known in the case of our field-captured animals. In the lab, consumption rates were measured from the first day of the instar, but likely over a later part of the instar in the field-collected animals, potentially affecting the results. Captive animals usually do not need to travel long distances to forage, which can be energetically expensive and cause long-term effects on resting metabolic rates (Bergman et al., 2001). Studies of monkeys and apes have demonstrated that decreases in foraging activity in captivity may promote metabolic suppression, diabetes, and obesity (reviewed in Bellisari, 2008). Increased energy demands and energy metabolism in field animals may also be due to a past history of consumption of tougher, better chemically defended plants (Clissold et al., 2009; Maskato et al., 2014). Field animals may be more likely to be coping with pathogens, and immune responses can elevate metabolic rates in insects (Catalán et al., 2012; Freitak et al., 2003). In addition, adaptation to lab conditions over multiple generations in captivity may reduce metabolic rates and carbohydrate consumption (Garland et al., 1987; Latorre et al., 2020). Also, it is important to note that because we only tested one instar in the field, we have not demonstrated that hypometric scaling of protein consumption occurs under field conditions, though this seems likely. Future studies will be necessary to confirm this, and to decipher the mechanisms that elevate metabolic rates and carbohydrate consumption for locusts and other animals in the field.
 
-## Conclusions and future directions
+### Conclusions and future directions
 
 Hypometric scaling of protein consumption is associated with declining specific growth rate during ontogeny and body mass across species in animals, providing a new and useful paradigm for nutritional ecology. Many important questions remain. Is species-level variation in the ontogenetic scaling of protein consumption rate predictable by species differences in growth rates? How useful would age-specific diets be for humans and animal husbandry? Is the hypometric scaling of protein intake related to parallel patterns in the morphology and physiology of digestive and assimilative processes? Does spatial or temporal variation in protein availability play an important role in the biogeography of animal body sizes? Plausibly, higher protein availability favors the ecological success of smaller, faster-growing animals. Finally, rising temperatures and CO2 levels are predicted to lower the relative availability of protein to carbohydrate in leaves; while it has been shown that this can slow herbivore growth (DeLucia et al., 2012; Kuczyk et al., 2021; Scherber et al., 2013), our findings suggest such changes may also select for herbivores with larger body sizes, higher activity, and lower mass-specific protein requirements.
 
 ## Materials and methods
 
-## Locust lab culture
+### Locust lab culture
 
 We used South American locusts (S. cancellata) from a captive colony at Arizona State University (ASU), 7–10 generations after locusts were collected from La Rioja and Catamarca regions of Argentina. The culture was kept at 30% RH, 34°C during the day and 25°C during the night, under 14 hr light:10 hr dark photoperiod. Supplementary radiant heat was supplied during the daytime by incandescent 60 W electric bulbs next to the cages. In this general culture, locusts were fed daily with wheat shoots, fresh romaine lettuce leaves, and wheat bran ad libitum. For all experiments, animals were excluded only if they died during the experimental procedure.
 
-## Artificial diets
+### Artificial diets
 
 The artificial diets were made as described by Dadd, 1961 and adapted by Simpson and Abisgold, 1985. We used five different isocaloric artificial foods in different assays that varied in protein and digestible carbohydrates: 7p:35c (% of protein and % of digestible carbohydrates, by dry mass), 14p:28c, 21p:21c, 28p:14c, 35p:7c. All the diets contained 54% cellulose and 4% vitamins and salts. The proteins were provided as a mix of 3:1:1 casein:peptone:albumen. The carbohydrate was provided as a 1:1 mix of sucrose and dextrin.
 
-## Effect of ontogeny and body mass on intake targets
+### Effect of ontogeny and body mass on intake targets
 
 Nutritional intake targets were measured for each nymphal instar (50–60 individuals for each sex for first to fifth and 30 individuals for each sex for sixth), with diets weighed on the first day and last day of each instar. Animals were kept in individual cages with an air temperature of 34°C:25°C (day:night), without access to a radiant heat source. The adult (30 for each sex) intake targets measurements were started on molt day and recorded for 3 weeks. To have sufficient individuals of the same age, in each developmental stage, we monitored for newly molted individuals and randomly collected them on the same day. For the first-instar nymphs, we monitored egg cups daily. When hatching was observed, within a few hours, we inserted the cups into standard colony-rearing cages (45 × 45 × 45 cm metal mesh) to keep the ages of the nymphs as similar as possible. Sexing was performed by identifying the presence/absence of developing ovipositor valves. For early developmental stages (first to third instars), we used a dissecting microscope to visualize these structures (SMZ-168, MOTIC, Schertz, TX).
 
-During these measurements, individuals were kept in plastic containers with holes drilled in the roof for ventilation which maintained the RH at ~30%. The first- to third-instar nymphs were kept in 11 × 16 × 4 cm cages, and fourth-instar nymphs to adults were kept in 19 × 10.4 × 14 cm containers. Each container had a water tube (refilled once a week), a perch (for successful molting) and two complementary artificial diets. To determine if locusts were arriving at a consistent p:c intake target ratio and not just eating randomly from the two dishes, we provided half the locusts with the choice between 35p:7c and 7p:35c diets, while the other half were provided with the choice between 28p:14c and 7p:35c diets. We randomly placed cages from different diets pair treatments and sex on different shelves. To calculate consumption, we weighed each diet dish two times: (1) after drying and prior to inserting it into the assay boxes and (2) after it was removed from the experimental boxes and re-dried at 60°C for 24 hr. To reduce error during the first-instar nymph experiment, we used small diet dishes (made from 1.5 ml Eppendorf lids) and weighed them with a microbalance (MSA6.6S-000-DM, accuracy of 10–6 g, Sartorius Weighing Technology GmbH, Goettingen, Germany). For all other instars, we used diet dishes made from an acrylic cylinder (10 × 25 mm) glued to a Petri dish (58 mm in diameter) and weighed them using an analytical balance (accuracy of 10–5 g, XSE205, Mettler Toledo, Columbus, OH). Locusts were also weighed using the analytical balance. To reduce handling, which increases mortality, we weighed the locusts only after the experiment and used final masses to correct consumption values. To calculate specific growth rate (Equation 1) for each instar, we calculated mean initial masses for an extra 20 freshly molted (or newly hatched for first instar) individuals for each instar and sex.(1)Specificgrowthrate=ln⁡(finalmassinitialmass)instardevelopmentaltime(days)
+During these measurements, individuals were kept in plastic containers with holes drilled in the roof for ventilation which maintained the RH at ~30%. The first- to third-instar nymphs were kept in 11 × 16 × 4 cm cages, and fourth-instar nymphs to adults were kept in 19 × 10.4 × 14 cm containers. Each container had a water tube (refilled once a week), a perch (for successful molting) and two complementary artificial diets. To determine if locusts were arriving at a consistent p:c intake target ratio and not just eating randomly from the two dishes, we provided half the locusts with the choice between 35p:7c and 7p:35c diets, while the other half were provided with the choice between 28p:14c and 7p:35c diets. We randomly placed cages from different diets pair treatments and sex on different shelves. To calculate consumption, we weighed each diet dish two times: (1) after drying and prior to inserting it into the assay boxes and (2) after it was removed from the experimental boxes and re-dried at 60°C for 24 hr. To reduce error during the first-instar nymph experiment, we used small diet dishes (made from 1.5 ml Eppendorf lids) and weighed them with a microbalance (MSA6.6S-000-DM, accuracy of 10–6 g, Sartorius Weighing Technology GmbH, Goettingen, Germany). For all other instars, we used diet dishes made from an acrylic cylinder (10 × 25 mm) glued to a Petri dish (58 mm in diameter) and weighed them using an analytical balance (accuracy of 10–5 g, XSE205, Mettler Toledo, Columbus, OH). Locusts were also weighed using the analytical balance. To reduce handling, which increases mortality, we weighed the locusts only after the experiment and used final masses to correct consumption values. To calculate specific growth rate (Equation 1) for each instar, we calculated mean initial masses for an extra 20 freshly molted (or newly hatched for first instar) individuals for each instar and sex.
+
+$$
+Specificgrowthrate=\frac{ln⁡(\frac{finalmass}{initialmass})}{instardevelopmentaltime(days)}
+$$
 
 For comparisons of consumption rate to specific growth rate, we divided consumption rates in grams per day by initial mass at the relevant instar because final (but not initial) mass was a strong determinant of specific growth rate.
 
-## Comparing intake targets and metabolic rates between lab-reared and field-captured locusts
+### Comparing intake targets and metabolic rates between lab-reared and field-captured locusts
 
 We compared protein and carbohydrate consumption rates of fifth- and sixth-instar lab-reared nymphs (from the intake target experiment) to the field data we randomly collected from similarly aged nymphs in 2019 during the S. cancellata outbreak in Gran-Chaco, Paraguay (Talal et al., 2020). During the days of the experiments, field-collected nymphs were kept at temperatures averaging 32.2 ± 1.94°C (measured with a Hobo logger, Onset, Bourne, MA), without access to a radiant heat source. We assessed macronutrient consumption rates by providing locusts with a choice between a low and a high carbohydrate diet (the same diets as in intake target experiment, see above) for 8 days.
 
 Comparison of resting metabolic rates was carried out on sixth-instar nymphs that were reared on confined artificial diets varying in protein:carbohydrate ratio (both in the field and in the lab) (Talal et al., 2021). Since we did not find an effect of dietary protein to carbohydrate ratio on oxygen consumption in either the lab or in the field (Talal et al., 2021), we pooled the data from the different diet treatment groups to compare resting metabolic rates between lab and field populations by measuring oxygen consumption. We carried out stop-flow respirometry using a FoxBox oxygen analyzer (Sable Systems International, Las Vegas, USA) as described in Talal et al., 2021. Briefly, after inserting the nymph in a metabolic chamber and flushing it with CO2-free, dry, air, the chamber was sealed for a period of time, after which a known volume was injected into CO2-free, dry air flow (500 ml∙min–1) which was flushed through the oxygen analyzer. The metabolic rate (oxygen consumption) was temperature-corrected to 34°C using Q10 of 2 (Talal et al., 2021).
 
-## Scaling of protein consumption across animals
+### Scaling of protein consumption across animals
 
 To determine whether the pattern of protein consumption scaled similarly across animals as in locusts, we survey the literature for measures of protein consumption relative to body mass in animals during ontogeny. We searched the literature using scholar.google.com using the search terms ‘protein requirement during development/ontogeny; macronutrient consumptions/requirements; self-selection of protein consumption during development’. We included any study that measured body masses and protein consumption rates over ontogeny, as well as studies with these data for adults. Because temperature has strong effects on metabolic rates and consumption rates, we corrected the data for ectotherms to 37°C using a Q10 of 2 (Clarke and Johnston, 1999; Harrison and Fewell, 1995).
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed using SPSS 20.0 (IBM) and R Studio (R Development Core Team, 2021). Prior to using parametric analyses, the normality of data was confirmed. For the intake target experiments: to rule out random feeding on different diet pairs, we employed multiple analysis of covariance (MANCOVA), using mass of carbohydrate and protein eaten as dependent variables, diet pair and sex as independent variables, and final body mass as a covariate. Due to some assumption violations, we compared protein and carbohydrate consumption rates as well as p:c ratios, among developmental stages and sexes, using aligned rank-transformed observations on mass-specific values. To test for a significant effect of both developmental stage and sex, we performed ANOVAs on aligned rank-transformed observations according to the general procedure outlined by Feys, 2016 using the software R (R Development Core Team, 2021) and the R library ARTool (Matthew and Wobbrock, 2020).
 

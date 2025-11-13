@@ -22,7 +22,7 @@
 
 ## Abstract
 
-The ability to learn progressively declines with age. Neural hyperactivity has been implicated in impairing cognitive plasticity with age, but the molecular mechanisms remain elusive. Here, we show that chronic excitation of the Caenorhabditis elegans O 2 -sensing neurons during ageing causes a rapid decline of experience-dependent plasticity in response to environmental O 2 concentration, whereas sustaining lower activity of O 2 -sensing neurons retains plasticity with age. We demonstrate that neural activity alters the ageing trajectory in the transcriptome of O 2 -sensing neurons, and our data suggest that high-activity neurons redirect resources from maintaining plasticity to sustaining continuous firing. Sustaining plasticity with age requires the K + -dependent Na + /Ca 2+ (NCKX) exchanger, whereas the decline of plasticity with age in high-activity neurons acts through calmodulin and the scaffold protein Kidins220. Our findings demonstrate directly that the activity of neurons alters neuronal homeostasis to govern the age-related decline of neural plasticity and throw light on the mechanisms involved.
+The ability to learn progressively declines with age. Neural hyperactivity has been implicated in impairing cognitive plasticity with age, but the molecular mechanisms remain elusive. Here, we show that chronic excitation of the Caenorhabditis elegans O2-sensing neurons during ageing causes a rapid decline of experience-dependent plasticity in response to environmental O2 concentration, whereas sustaining lower activity of O2-sensing neurons retains plasticity with age. We demonstrate that neural activity alters the ageing trajectory in the transcriptome of O2-sensing neurons, and our data suggest that high-activity neurons redirect resources from maintaining plasticity to sustaining continuous firing. Sustaining plasticity with age requires the K+-dependent Na+/Ca2+ (NCKX) exchanger, whereas the decline of plasticity with age in high-activity neurons acts through calmodulin and the scaffold protein Kidins220. Our findings demonstrate directly that the activity of neurons alters neuronal homeostasis to govern the age-related decline of neural plasticity and throw light on the mechanisms involved.
 
 ## Introduction
 
@@ -36,11 +36,19 @@ Here, we have established an assay in C. elegans to elucidate how neuronal activ
 
 ## Results
 
-## Previous oxygen experience determines whether the plasticity of O2 responses is maintained or lost with age in C. elegans
+### Previous oxygen experience determines whether the plasticity of O2 responses is maintained or lost with age in C. elegans
 
 Long-term exposure to different oxygen environments creates a memory that configures C. elegans’ aversion to high CO2 (Fenk and de Bono, 2017). We therefore hypothesized that C. elegans adapt their O2 preference depending on previous oxygen experience. To test this, we cultured animals from birth in an atmosphere of either their preferred O2 concentration (7%) or at 21% O2, and assayed the speed of locomotion of young (1-day-old) adults when they were exposed to a series of stepwise decreasing concentrations from 21% to 7% O2 and a final step from 7% to 21% O2 (Figure 1—figure supplement 1A,B). The reference laboratory strain N2 has acquired a hyperactive version of the neuropeptide receptor NPR-1, which attenuates avoidance of 21% O2 in the presence of bacterial food (McGrath et al., 2009; Persson et al., 2009). We therefore tested animals bearing the ad609 loss-of-function mutation in npr-1, thus restoring their robust avoidance of high O2 (Busch et al., 2012). Strikingly, the concentration of O2 at which the worms were initially cultured determined their responses to the stepwise changes in O2 concentration: animals initially cultured in 21% O2 gradually decreased their speed of locomotion as the O2 concentration decreased from 21% to 7%, as observed in previous studies (Busch et al., 2012); those initially cultured in 7% O2, however, were highly motile at all concentrations from 21% to 11% and only exhibited dwelling behavior when they reached their initial culture condition of 7% O2 (Figure 1—figure supplement 1B).
 
 We hypothesized that animals can ‘update’ their O2 preference if they have recently been switched to a different oxygen environment, and tested this by transferring them from 21% to 7% O2 or vice versa 12 hr before assaying their locomotory speed in response to stepwise changes in O2 concentration (Figure 1A). Indeed, when 1-day-old adults cultured at 21% were shifted to 7% O2 overnight, their locomotory response to intermediate O2 strongly increased compared to animals cultured at high oxygen throughout, and resembled that of animals that had been cultured at 7% O2 for their whole life (Figure 1B,C). Conversely, animals shifted from 7% O2 to a 21% oxygen environment decreased their locomotory speed at intermediate O2 relative to animals cultured at 7% oxygen throughout, and their response resembled that of animals cultured at 21% O2 for their whole life (Figure 1B,C). This shows that the tuning of oxygen responses depends on the O2 conditions animals were cultured in and is plastic according to the most recent O2 concentration change.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig1-v1.jpg)
+
+**Figure 1.:** (A) Assay scheme for testing O2-evoked speed responses of day 1, day 4, day 7, and day 10 adults. (B and C) O2-evoked speed responses of day 1 and day 7 adults cultured at 21% O2 (B) and 7% O2 (C), and speed responses after shifting to 7% O2 (B) and 21% O2(C) for overnight culturing at L4 stage and day 6 of adulthood respectively. Mean ± sem, n = 7 assays (70–140 animals) were performed for each condition, ****p<0.0001 indicates a significant effect of overnight O2 level shift on speed responses, ns, p>0.05, mixed model ANOVA. (D) Animals cultured at 7% O2 showed slower decline rate of plasticity with age compared to animals cultured at 21% O2. Mean ± sem, n = 3–7 assays (45–140 animals) for each condition, **p<0.01, ***p<0.001, asterisks indicate a significant difference between the normalized plasticity index of 21% and 7% O2 cultured animals, unpaired t-test with Holm-Sidak correction for multiple comparisons. (E and F) Aerotaxis assay showing O2 preference of day 1 (E) and day 7 adults (F) cultured at 21% O2 and after shifting to 7% O2 for overnight culturing. Animals were exposed to an O2 gradient from 7% to 21% O2 and the area was divided into nine grids for counting and calculation. Mean ± sem, n = 6–8 assays. (G) Aerotaxis index of day 1 adults cultured at 21% O2 showed plasticity after shifting to 7% O2, while day 7 adults cultured at 21% O2 showed no plasticity after shifting to 7% O2. Mean ± sem, *p<0.05, ns, p>0.05, Mann-Whitney U test. (H and I) Aerotaxis assay showing O2 preference of day 1 (H) and day 7 adults (I) cultured at 7% O2 and after shifting to 21% O2 for overnight culturing. Mean ±sem, n = 5–6 assays. (J) Aerotaxis index of day 1 and day 7 adults cultured at 7% O2 showed plasticity. Mean ± sem, **p<0.01, Mann-Whitney U test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Behavioral assay set-up. Three cameras are located above each of the assay plates. During the assay, the chamber was sealed and mixed gas was pumped in at a steady flow rate. Worms were placed on the seeded low peptone plates inside the chamber. (B) Assay program for testing worms’ O2-evoked speed responses of 21% and 7% O2 cultured day 1 adults. A full round assay lasts for 32 min. Specifically, the program is set as 8 min of 21% O2, followed by 19%, 17%, 14%, 11%, 7%, 21% O2 for 4 min at each step. (C–E) O2-evoked speed responses gradually decline with age for animals cultured at 21% O2 throughout (C), or shifted to 7% O2 overnight (D), and animals cultured at 7% O2 throughout (E), or shifted to 21% O2 overnight (F). Mean ±sem, three or more assays were performed for each condition. (G and H) O2-evoked speed responses of day seven adults cultured at 21% and 7% O2 and shifted from 7% to 21% O2 (G) or shifting from 21% to 7% O2 (H). Mean ±sem, five or more assays were performed for each condition. (I) Plasticity of day 7 adults cultured at 7% O2 is significantly higher than animals cultured at 21% O2 after shifting from 7% to 21% O2 or shifting from 21% to 7% O2. Mean ±sem, *p<0.05, **p<0.01, unpaired t-test.
 
 To investigate how age might affect this oxygen-evoked behavior, we cultured animals at either 21% or 7% O2 up to the adult age of 4, 7, or 10 days and tested them in the same assay as above. In both culture conditions, locomotory speed at 21% O2 gradually declined with age, from 163 µm/s for 1-day-old to 97 µm/s for 10-day-old animals cultured in 21% O2 and from 188 µm/s for 1-day-old to 114 µm/s for 10-day-old animals cultured in 7% O2; these speeds still enabled animals to robustly avoid high oxygen environments, however (Figure 1B,C,E,F,H,I and Figure 1—figure supplement 1C,E). This suggests that the sensory ability itself remains largely intact until day 10 of adulthood but is accompanied by a progressive decline in locomotory ability, consistent with previous studies on the decline of C. elegans nervous system function with age, where locomotory speed typically reaches half-maximal capacity in 7–8 day-old adults (Glenn et al., 2004; Hahm et al., 2015; Hsu et al., 2009; Podshivalova et al., 2017). Response tuning by O2 culture condition, that is, the higher locomotory speed at intermediate O2 concentrations of worms cultured at 7% O2 and lower speed of worms cultured at 21% O2, is preserved in ageing animals (Figure 1B,C and Figure 1—figure supplement 1C,E). We then tested if experience-dependent plasticity of O2 responses declines with age, by switching 3-, 6-, and 9-day-old animals to the opposite O2 environment for 12 hr and recording O2-evoked locomotion the next day (Figure 1A). Animals that were cultured at high ambient O2 and switched to 7% started to lose the ability to update their O2-evoked responses already at day 4 and by day 7 showed no difference to those of animals kept continuously at 21% (Figure 1B,D, Figure 1—figure supplement 1D). By contrast, animals cultured at 7% O2 largely retained O2 experience-dependent plasticity even up to day 10 of adulthood and changed their locomotory response to stepwise changes in O2 concentration after switching to 21% O2 for 12 hr (Figure 1C,D, Figure 1—figure supplement 1F). We calculated a plasticity index based on the sum of the speed differential across measurement points, normalized to the plasticity in young adults (see Materials and methods for details). The index documents the divergence in plasticity for worms exposed to a high or low oxygen environment (Figure 1D). The decline of cognitive plasticity with age is thus conditional on environmental state.
 
@@ -50,9 +58,17 @@ Previous experience also alters spatial oxygen preferences, and, like speed, thi
 
 Taken together, these results indicate that previous O2 experience generates a memory that sculpts O2-evoked behavioral responses. The ability to update this memory declines with age conditional on the previous O2 environment: it is lost in ageing animals cultured at 21% O2 but maintained in animals kept at 7% O2.
 
-## Plasticity of O2-evoked Ca2+ responses is lost in ageing neurons chronically stimulated with high O2
+### Plasticity of O2-evoked Ca2+ responses is lost in ageing neurons chronically stimulated with high O2
 
 To investigate how previous experience and age alter the neural encoding of O2 levels, we recorded Ca2+ responses in URX neurons in vivo by using the Ca2+ sensor cameleon YC3.60 when 1- and 7-day-old adults were exposed to stepwise changing O2 concentrations, with the same O2 steps as in the assay testing the O2-evoked locomotory speed. The URX oxygen-sensing neuron pair are tonic receptors that continuously signal ambient O2 concentration, sufficient to mediate most O2-evoked behaviors, including the regulation of locomotion, aerotaxis and aggregation (Busch et al., 2012; Macosko et al., 2009). Consistent with previous results (Busch et al., 2012), a 21% O2 stimulus induced a tonically elevated Ca2+ response in URX, whereas at 7% O2 the intracellular Ca2+ concentration dropped to baseline. Responses to O2 were graded and declined with decreasing ambient O2 concentration (Figure 2A,B). O2 concentration in the culture environment profoundly affected the magnitude of O2-evoked Ca2+ responses: in animals grown at 7% O2, URX displayed significantly higher [Ca2+] responses to high and intermediate O2 concentrations compared to 21% O2 cultured animals (Figure 2A, red trace and Figure 2B, blue trace, Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig2-v1.jpg)
+
+**Figure 2.:** (A and B) Ca2+ responses of URX to O2 of day one adults grown at 21% (A) and 7% O2 (B), and Ca2+ responses of animals shifted to the opposite O2 condition the night before imaging. O2 was applied in the following order the same as speed assay: 21%, 19%, 17%, 14%, 11%, 7%, and 21%. Each step lasts for 1 min. Mean ± sem, n = 26–34 animals per condition, for each 1 min step, 11–60 s period was used for statistical analysis, **p<0.01, ***p<0.001, asterisks indicate a significant effect of overnight O2 level shift on Ca2+ responses, mixed model ANOVA. (C and D) Ca2+ responses of URX to O2 of day 7 adults grown at 21% (C) and 7% O2 (D), and Ca2+ responses of animals shifted to the opposite O2 condition the night before imaging. Mean ±sem, n = 25–27 animals per condition, for each 1 min step, 11–60 s period was used for statistical analysis, **p<0.01, ns, p>0.05, asterisks indicate a significant effect of overnight O2 level shift on Ca2+ responses, mixed model ANOVA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Scatter plots of URX Ca2+ responses of day 1 (A) and day 7 (B) adults at 21%, 19%, 17%, 14% O2 and after the upstep back to 21%O2. (CE) URX of 7% O2 cultured animals displays elevated [Ca2+] to high (21%) and intermediate (19%, 17%, 14%) O2 compared to 21% O2 cultured animals. ****p<0.00015 indicates a significant effect of O2 culture condition on Ca2+ responses, #p<0.5, ##p<0.01, ####p<0.0001 indicates a significant difference of Ca2+ response at that O2 concentration, mixed model ANOVA with Holm-Sidak test. (DF) URX Ca2+ responses to the initial and final (21%) O2 stimulus steps are increased in 1-day-old 7% O2 cultured animals relative to those of 21% O2 cultured animals, and decline with age only in the 7% O2 cultured animals. *p<0.05, **p<0.01, ****p<0.0001, ns, p>0.05, one-way ANOVA with Holm-Sidak test.
 
 To test whether the Ca2+ responses of URX neurons to O2 reflect the plasticity seen in O2-dependent locomotory behavior, we transferred animals from 21% to 7% O2 or vice versa 12 hr before the Ca2+ imaging in one day old adults. Animals shifted from 21% to 7% O2 showed a significantly increased URX responses to the O2 stimuli compared to animals kept at 21% O2 throughout (Figure 2A; Figure 2—figure supplement 1A; Figure 1B). Conversely, 1-day-old animals shifted from 7% to 21% O2 showed significantly reduced responses to O2 stimuli compared to animals kept at 7% O2 (Figure 2B; Figure 2—figure supplement 1A; Figure 1C). There was no significant difference between the URX Ca2+ responses in worms shifted from 21% to 7% O2 (Figure 2A, blue line) and those of animals that have been grown at 7% O2 only (Figure 2B, blue line; mixed-model ANOVA, p=0.2682). Therefore, Ca2+ responses of URX neurons in young adults to O2 are reprogrammed by switching the animals to a different O2 environment.
 
@@ -60,11 +76,23 @@ We next tested how age affects URX activity and plasticity. In 7-day-old adults 
 
 Taken together, these results show that the URX Ca2+ responses are programmed by previous O2 experience in the culture environment, and display strong experience-dependent plasticity in response to recently changed ambient O2 concentration. Moreover, previous experience governs the age-dependent decline of both neuronal and behavioral plasticity: exposure to high ambient oxygen causes their decline and loss within 1 week, whereas at lower oxygen levels plasticity is well preserved in 7-day-old animals.
 
-## The accelerated plasticity decline in ageing high O2-cultured animals is caused by chronically high neuronal activity but not organismal oxidative stress
+### The accelerated plasticity decline in ageing high O2-cultured animals is caused by chronically high neuronal activity but not organismal oxidative stress
 
 The loss of experience-dependent plasticity in ageing animals cultured in a high O2 environment may result from either tonically high activity and elevated [Ca2+] in the O2-sensing neurons (Busch et al., 2012) or increased oxidative stress in the organism (Jagannathan et al., 2016).
 
 To test if chronically elevated neural activity is responsible for the accelerated decline of plasticity with age, we inhibited the activity of the oxygen-sensing neurons URX, AQR and PQR long-term while exposing them to the high oxygen condition. To do so, we expressed a chemogenetic tool, the Drosophila histamine-gated chloride channel HisCl1, in the O2-sensing neurons. Addition of exogenous histamine to C. elegans culture plates enables the rapid, reversible and prolonged inhibition of neurons expressing this channel (Pokala et al., 2014). We cultured pgcy-32::HisCl1 animals and control animals lacking the transgene in 21% oxygen from birth until 6 days old in the presence of 20 mM histamine, and pgcy-32::HisCl1 animals grown in 21% O2 in the absence of histamine. They were then either switched to 7% O2 for 18 hr or retained at 21% O2 (Figure 3A). Animals with inhibited O2-sensing neurons showed strong plasticity after switching them to 7% O2, whereas control animals grown without histamine or not expressing HisCl1 showed little plasticity (Figure 3B). Plasticity of the 7-day-old animals with inhibited neurons was nearly as great as that of 1-day-old animals and significantly greater than in either of the control conditions, whereas histamine treatment or HisCl1 expression itself did not prevent the decline of plasticity with age (Figure 3C and Figure 3—figure supplement 2D). In contrast, experience-dependent plasticity of 7-day-old adults cultured at 7% O2, where the O2-sensing neurons are not chronically active, was not altered by HisCl1-mediated silencing of the O2-sensing neurons (Figure 3—figure supplement 1A–C,E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig3-v1.jpg)
+
+**Figure 3.:** (A) Assay scheme of long-term silencing of O2-sensing neurons by histamine induced HisCl1 in O2-sensing neurons. (B) O2-evoked speed responses of pgcy-32::HisCl1 animals with and without 20 mM histamine treatment, and control animals with 20 mM histamine treatment. Mean ±sem, n = 5–7 assays (75–140 animals) per condition. Mean ±sem. (C) Plasticity of pgcy-32::HisCl1 day 7 adults treated with 20 mM histamine is significantly higher than pgcy-32::HisCl1 animals without histamine treatment, or control animals with 20 mM histamine treatment. Plasticity indices were normalized to day 1 no histamine treated pgcy-32::HisCl1 adults. Mean ±sem, **p<0.01, unpaired t-test. (D–E) O2-evoked speed responses of day 4 adults with (D) and without (E) pgcy-32::ChR expression treated with all-trans retinal (ATR) and blue light from L4 stage to day 3 of adulthood. Mean ±sem, n = 6–7 assays, ##p<0.01 indicates a significant difference of O2-evoked speed responses upon ATR treatment, **p<0.01 next to the data point in the plot indicates a significant difference of speed at this [O2] point, mixed model ANOVA with Holm-Sidak test. (F) Long-term optogenetic stimulation accelerates plasticity decline with age. Mean ±sem, **p<0.01, ns, p>0.05, unpaired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Assay scheme of long-term silencing of O2-sensing neurons by histamine induced HisCl1 in O2-sensing neurons for animals cultured at 7% O2. (B) O2-evoked speed responses of pgcy-32::HisCl1 animals with and without 20 mM histamine treatment, and control animals with 20 mM histamine treatment. Mean ±sem, n = 5 assays per condition. Mean ±sem. (C) Inhibition of neuronal activity by HisCl1 at 7% O2 does not affect the plasticity of day 7 adults. Mean ±sem, **p<0.01, unpaired t-test. (D–E) O2-evoked speed responses of pgcy-32::HisCl1 animals cultured at 21% (D) or 7% (E) O2 at day 1 adulthood without histamine treatment. Mean ±sem, n = 3–4 assays per condition.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) O2-evoked speed responses of animals with and without 5 mM NAC treatment. Day 1 adults cultured at 21% O2 (A) and 7% O2 (B), and day 7 adults cultured at 21% O2 (C) and 7% O2 (D). Mean ±sem, three or more assays were performed for each condition. (E) 5 mM NAC treatment does not improve plasticity decline with age. Mean ±sem, ns, p>0.05, unpaired t-test. (F) Fluorescence quantification of gst-4p-induced GFP expression in animals with and without 5 mM NAC treatment. Mean ±sem, n = 13–23 animals each condition, *p<0.01, ***p<0.0001, ns, p>0.05, one-way ANOVA with Holm-Sidak test.
 
 The chemogenetic silencing of the O2-sensing neurons shows that high neural activity is necessary to accelerate the decline of plasticity. To investigate if high neural activity is sufficient to accelerate cognitive decline, we performed chronic optogenetic stimulation of the URX O2-sensing neurons in animals cultured at 7% O2, using the blue light-gated cation channel Channelrhodopsin (ChR) (Figure 3D–F). We tested 4-day-old adults. At this age, experience-dependent plasticity is sustained in animals grown at 7% O2, but declines in animals cultured at 21% O2 (Figure 1D). Animals cultured at 7% O2 with chronic URX excitation showed significantly reduced behavioral plasticity at day 4 of adulthood, compared to controls (ChR-expressing animals exposed to blue light without the administration of the rhodopsin cofactor all-trans retinal) (Figure 3D,F). In addition, chronic blue light illumination in the presence of all-trans retinal (ATR) did not significantly affect plasticity in control animals without ChR expression (Figure 3E,F). The chronic stimulation only alters the behavior of animals that are switched to 21% O2 but not that of animals kept at 7% O2 throughout (Figure 3D). This suggests that chronic optogenetic activation of URX does not alter O2 responses per se, but specifically changes how the plasticity of the O2 response declines with age.
 
@@ -72,9 +100,21 @@ To investigate the potential role of oxidative stress, we also performed the beh
 
 Thus, long-term chemogenetic inactivation of O2-sensing neurons prevents the loss of experience-dependent plasticity in ageing animals cultured in high oxygen concentrations, whereas chronic optogenetic activation of these neurons induces a loss of plasticity in ageing animals cultured at low oxygen. Treatment with the antioxidant NAC to reduce oxidative stress does not ameliorate the loss of experience-dependent plasticity in worms cultured at high oxygen. Together, these data indicate that the amount of neuronal activity governs the decline of cognitive plasticity with age: chronically high neuronal activity causes the decline and eventual loss of the ability of neurons to reconfigure their responses following sensory input changes, compromising their ability to generate behavioral plasticity and adaptation in ageing individuals, whereas neurons that are chronically under-active in the long term are better at retaining neuronal plasticity.
 
-## Neuronal activity state dynamically regulates gene expression in the O2-sensing neurons during ageing
+### Neuronal activity state dynamically regulates gene expression in the O2-sensing neurons during ageing
 
 Sustained neuronal excitation and the associated elevated intracellular [Ca2+] profoundly affect gene transcription, reconfiguring functional properties of neurons and underpinning experience-dependent plasticity (Flavell and Greenberg, 2008; Tyssowski et al., 2018). To elucidate the molecular and cellular processes responsible for the rapid loss of plasticity with age induced by high neural activity, we investigated whether and how neuronal activity regulates gene transcription in the O2-sensing neurons during ageing. O2-sensing neurons are tonically activated by 21% oxygen, and persistently inactive at 7% O2 (Busch et al., 2012). We therefore studied the transcriptomes of neurons from animals cultured in high (21%) or low (7%) O2 concentrations as a proxy for neurons at high and low activity state, respectively. We isolated O2-sensing neurons from 1- and 7-day-old age-synchronized C. elegans populations expressing pgy-37::GFP in the URX, AQR, and PQR oxygen-sensing neurons by enzymic dissociation of worm bodies and fluorescence-activated cell sorting, and determined their transcriptional profiles by RNA sequencing (Figure 4A and Materials and methods; Supplementary file 1). For comparison we also obtained transcriptional profiles of whole C. elegans bodies at each corresponding condition (Supplementary file 1). An interactive presentation of the dataset using the web tool DrEdGE (Tintori et al., 2020) is available (Supplementary file 2; dredge.bio.unc.edu/BuschLab_eLife). For 1-day-old animals cultured in 21% O2, 7881 genes were differentially expressed in the O2-sensing neuron samples when compared to whole-worm transcriptomes, of which 4058 genes were enriched in the O2-sensing neurons (at a false discovery rate (FDR) of <0.1 and a minimum fold change of 1.5). Genes known to be expressed in URX, AQR, and PQR neurons were among the most highly enriched transcripts in neuronal samples from both 1- and 7-day-old animals. These genes included, for example, the atypical guanylate cyclases gcy-32, gcy-33, gcy-34, gcy-35, gcy-36 and gcy-37, which are causally linked to oxygen sensing (Cheung et al., 2004; Gray et al., 2004; Zimmer et al., 2009), and the FMRFamide neuropeptide gene flp-8, which is only expressed in the URX and AUA neurons (Kim and Li, 2004). Tissue enrichment analysis (Angeles-Albores et al., 2016) of all the neuronal samples also indicated that they were enriched for genes known to be expressed in URX, AQR, and PQR neurons (Supplementary file 3). Moreover, a previously published list of genes enriched in the O2-sensing neurons (Cao et al., 2017; Supplementary file 4) is also significantly enriched in our O2-sensing neuron samples (normalized enrichment score = 1.79, q = 0). These data confirmed that neuronal RNA isolated from both the 1- and 7-day-old animals in the experiment was highly enriched for transcripts expressed in the O2-sensing neurons URX, AQR, and PQR. We then did a thorough overlap analysis for differentially expressed genes (DEGs), comparing the O2-sensing neurons to whole-worm-derived transcripts of 1- and 7-day-old animals, and found an extensive overlap of genes enriched or depleted in the O2-sensing neurons across age and O2 culture conditions, suggesting that the expression of genes for neuronal identity remains stable at different culture conditions and life stages (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental overview of animal preparation and cell sorting for day 1 and day 7 adults. Animals were synchronized by bleaching and the eggs were plated on OP50 plates. L3 stage animals were transferred to mex-3 RNAi bacterial seeded plates to avoid progeny contamination (see Materials and methods for details). Day four adults were transferred to OP50 plate again until cell dissociation for FACS sorting and RNA preparation. (B) Chord diagram showing overlapped enriched and depleted genes across sorted neurons of day 1 and day 7 adults cultured at 21% and 7% O2 respectively. The numbers around the circle signify number of genes. FDR < 0.1 and fold change >1.5. (C) Enriched GO terms (with potential neuronal functions) for O2 level-induced changes that are present in both whole worm and sorted neurons of day 1 and day 7 adults respectively. NES, normalized enrichment score. p<0.05 and FDR < 0.25. (D) Neuron-specific GO terms (with potential neuronal functions) in response to O2-induced neuronal activity in day 1 and day 7 adults. p<0.05 and FDR < 0.25.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) O2-sensing neurons (URX, AQR and PQR) and a touch receptor neuron AVM with GFP expression in day 1 (A) and day 7 (B) adults. Neurons are intact in both day 1 and day 7 adults. Scale bar = 20 µm. (C–E) In vivo functional Ca2+ imaging for ASI (C), AVM (D), and URX (E) in response to O2 levels. AVM and ASI do not show response to 21% O2. Mean ±sem. (F) Cell-specific RNAi knockdown of mex-3 does not affect O2-evoked behavior and its plasticity. Mean ±sem, n = 3 assays. (G) mex-3 RNAi feeding for the whole worm does not affect O2-evoked behavior and its plasticity in day 2 adults. Mean ±sem, n = 3 assays. (H) mex-3 RNAi feeding for the whole worm does not affect activity-dependent decline of plasticity with age. Mean ±sem, n = 3 assays.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Heatmaps and Venn diagrams showing the comparisons of the activity-regulated differentially expressed genes between sorted O2-sensing neurons and whole worm. FDR < 0.1 and fold change >1.5 for DEGs in sorted neurons. (B) Chord diagram showing overlapped O2-induced up- and down-regulated genes across whole worm and sorted O2-sensing neurons that cultured at 21% and 7% O2, respectively. The numbers around the circle signify number of genes. FDR < 0.1 and fold change >1.5.
 
 When comparing high (21%) and low (7%) O2 conditions, 301 genes were found to be differentially expressed among the O2-sensing neuron samples and 248 genes among the whole worm samples in 1-day-old adults, whereas in 7-day-old adults, 264 neuronal and 50 whole-worm genes were differentially expressed. Very few of these DEGs were common to the neuronal and whole-worm gene sets, or to the young and old samples (Figure 4—figure supplement 2A,B). To determine which gene categories were enriched in the differentially expressed gene sets, we performed gene ontology (GO) analysis. As expected, several GO terms were co-regulated in the same direction in the neuronal and whole-worm transcriptomes, which may reflect general cellular responses to ambient O2 concentration. Specifically, genes involved in neuropeptide signaling were upregulated in both neurons and whole worm transcriptomes of young adults cultured at the high O2 concentration, whereas several GO terms related to translation were downregulated in both neurons and whole worms at this O2 concentration (Figure 4C). In 7-day-old worms, only one gene class overlapped between neurons and whole-worm samples (Supplementary file 5). Although the genes expressed in the O2-sensing neurons that are upregulated at high O2 overlap by only nine genes between young and old animals (Figure 4—figure supplement 2B), they were enriched in many of the same categories of C. elegans phenotypes as shown by phenotype enrichment analysis (Angeles-Albores et al., 2016; Supplementary file 3). Genes whose expression was significantly increased at 21% O2 were enriched in phenotypes primarily linked to high locomotory activity, such as ‘forward locomotion increased’ and ‘pausing decreased’ (Supplementary file 3). This is notable as C. elegans display persistently high locomotory activity at 21% O2 (Busch et al., 2012).
 
@@ -82,9 +122,17 @@ The GO terms that were enriched in genes differentially expressed at high or low
 
 In response to elevated neuronal activity, mammalian neurons induce the expression of hundreds of activity-regulated genes (ARGs), which are thought to orchestrate transcription-dependent neuronal plasticity (Tyssowski et al., 2018). By looking for orthologs in C. elegans of genes in mouse cultured cortical neurons and the visual cortex (Tyssowski et al., 2018), we identified putative ARGs in C. elegans O2-sensing neurons (Supplementary file 6). Among these ARGs, a subset of delayed primary response genes (dPRGs), whose expression is induced in response to sustained neural activity, was significantly enriched in the set of genes upregulated in high-activity oxygen-sensing neurons from 7-day-old C. elegans when compared to low-activity neurons from worms of the same age (Figure 4D). Our data suggest that functional ARGs are conserved between C. elegans and mammals. Taken together, our findings suggest that neuronal activity regulates gene expression in the O2-sensing neurons during ageing.
 
-## Neuronal activity state alters the ageing trajectory of the neuronal transcriptome in the O2-sensing neurons
+### Neuronal activity state alters the ageing trajectory of the neuronal transcriptome in the O2-sensing neurons
 
 We next identified the gene expression changes with age in O2-sensing neurons, and asked whether and how neuronal activity alters the age-related transcriptional change. In both low and high O2 culture conditions, signifying low and high neural activity states, respectively, expression of about 5000 neural genes, ~25% of the genome, significantly changes with age, with about half of them up- or downregulated. In the whole-worm samples, ~2000 genes changed with age, with about half of them up- or downregulated (Supplementary file 1). In the O2-sensing neurons, ~60% of the genes differentially expressed with age were shared between the high and low activity states in 21% and 7% O2 cultured animals, respectively (Figure 5A,D). There was also a substantial overlap between the DEGs by age in the whole-worm samples in 21% and 7% O2 cultured animals, and between neuronally and whole-worm differentially regulated gene sets (Figure 5A and Figure 5—figure supplement 1A). This suggests that those overlapping genes constitute a core set of genes changing expression with age. We thus cross-checked the transcriptome changes with age with the ‘MetaWorm’ dataset (Supplementary file 7) of C. elegans ageing signature genes (Tarkhov et al., 2019) by gene set enrichment analysis, and found that the subset of MetaWorm genes upregulated with age shows significant enrichment in age-related upregulated genes in both O2-sensing neurons and whole-worm samples; conversely, the subset of MetaWorm genes downregulated with age is significantly enriched in age-related downregulated genes in both neuronal and whole-worm samples (Figure 5—figure supplement 1B, supplementary file 7). Our data thus likely contain many shared gene expression changes that represent a universal transcriptomic signature of ageing regardless of tissue type and culture condition.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig5-v1.jpg)
+
+**Figure 5.:** (A) Chord diagram showing overlapped age-related up- and down-regulated genes across whole worm and sorted neurons that cultured at 21% and 7% O2 respectively. The numbers around the circle signify number of genes. FDR < 0.1 and fold change >1.5. (B) GO terms related to the neuronal activity are generally downregulated in aged neurons. REVIGO plot. p<0.05 and FDR < 0.25. (C) GO terms related to antioxidant defenses and translation are generally upregulated in aged neurons. p<0.05 and FDR < 0.25. (D) Venn diagrams and heatmaps showing the comparison of age-related up- and down-regulated genes between low and high activity neurons. FDR < 0.1 and fold change >1.5. (E) Canonical pathways with potential neuronal functions with a difference of z-score >1.3 between 21% and 7% O2 exposed sorted neurons from IPA analysis. See supplementary file 8 for a full list.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmaps and Venn diagrams showing the comparisons of the age-regulated differentially expressed genes between sorted O2-sensing neurons and whole worm samples. FDR < 0.1 and fold change >1.5 for DEGs in sorted neurons. (B) Gene set enrichment analysis for MetaWorm age-related upregulated and downregulated gene sets in age-related changes in whole-worm and neuronal transcriptomes. FDR < 0.05 for all NES reported here.
 
 Next, we focused on gene expression changes with age that were specific to the O2-sensing neurons. Consistent with previous findings in the ageing brains of Drosophila, killifish, rat, and mouse (Baumgart et al., 2014; Davie et al., 2018; Ori et al., 2015; Ximerakis et al., 2019), our data show that translational and ribosome biogenesis related genes are upregulated in aged neurons (Figure 5C), comprising the great majority of GO terms upregulated with age. In contrast, translation-related genes in the whole worm transcriptome samples showed consistently decreased expression with age (Figure 5C). By pathway analysis (Supplementary file 8), eIF2 and eIF4 signaling, required for translation initiation, is upregulated in aged neurons regardless of neuronal activity (Figure 5E). Conversely, genes required for neural function are widely downregulated in aged O2-sensing neurons regardless of activity state. GO categories downregulated with age were dominated by neuronal activity-related terms such as adult locomotory behavior, regulation of membrane potential, G-protein-coupled receptor signaling pathway, neuropeptide signaling or chemical synaptic transmission (Figure 5B).
 
@@ -96,17 +144,41 @@ Conversely, GO terms related to learning and signaling downstream from Ca2+ (Ca2
 
 Taken together, our data indicate that neural activity alters age-dependent gene expression changes in the O2-sensing neurons. Specifically, chronically high neuronal activity leads to the continued high expression of genes that encode the core O2-sensing machinery, Ca2+ homeostasis regulating genes, oxidative stress-related factors, as well as activity-regulated genes, while the expression of learning-related genes and Ca2+-mediated signaling factors declined. This suggests that in high activity neurons, resources are directed toward maintaining a high firing rate, leaving limited resources for neural plasticity during ageing.
 
-## Activity-dependent gene expression changes in O2-sensing neurons underpin plasticity regulation during ageing
+### Activity-dependent gene expression changes in O2-sensing neurons underpin plasticity regulation during ageing
 
 To examine whether the activity-dependent regulation of transcription in O2-sensing neurons modulates O2-evoked locomotory responses and O2 experience-dependent plasticity, we performed cell-specific RNAi in the O2-sensing neurons to knock down the expression of some of these genes using a transgenic strain that expresses the RNA transporter SID-1 only in these cells, which avoids the RNAi knockdown spreading to other cells or tissues. We first selected 11 genes from top-ranked genes by false discovery rate (FDR) for differential expression in the day 1 adult neuronal transcriptomes, of which four were down- and seven upregulated by neural activity state. Knockdown of 6 of the 11 genes affected either O2-evoked behavior and/or experience-dependent plasticity in 1-day-old adults (Figure 6—figure supplement 1). Specifically, knockdown of cebp-1 (C/EBP transcription factor), ptp-4 (protein tyrosine phosphatase receptor) or unc-86 (POU homeodomain transcription factor) in the O2-sensing neurons significantly reduced O2 experience-dependent plasticity (Figure 6—figure supplement 1G,H,I,M,N). nlp-11 neuropeptide, ptp-4 or sol-1 (glutamate receptor subunit) knockdown altered both the speed responses to the stepwise changes in O2 concentration of animals kept at 21% O2 and of animals shifted from 21% to 7% O2 (Figure 6—figure supplement 1A,H,K,N). Knockdown of nhr-14 (nuclear hormone receptor) altered speed responses to O2 only in animals kept at 21% O2 throughout (Figure 6—figure supplement 1D,N). Together, these results demonstrate that genes differentially regulated by neural activity in young adults’ O2-sensing neurons play a role in the behavior and plasticity evoked by oxygen stimuli.
 
 We then validated the most significant differently expressed genes by neural activity in day 7 neurons. They are kdin-1, which encodes the orthologue of the scaffold protein ARMS/kinase D interacting substrate 220 (KIDINS220), skn-1, which encodes the C. elegans orthologue of the transcription regulator Nrf2, and cfp-1, encoding the orthologue of the transcriptional activator CXXC-type zinc finger protein 1. ARMS/KIDINS220 has been implicated in regulating neural excitability and Ca2+ homeostasis, and SKN-1/Nrf2 are key regulators of oxidative stress responses and metabolism (Blackwell et al., 2015; Jaudon et al., 2020). Neural expression of all three genes significantly declines with age in 7% O2 culture but not at 21% O2 (Supplementary file 1). We knocked down kdin-1, skn-1 and cfp-1 by cell-specific RNAi in the O2-sensing neurons only, and tested O2 experience-dependent plasticity in day 2 and day 7 adult worms. kdin-1 and skn-1 knockdown did not affect O2-evoked locomotory responses or plasticity in day 2 adults, whereas cfp-1 RNAi increased O2 responses in day 2 adult animals cultured at high O2, but not in those shifted to 7% O2 for 12 hr, significantly reducing plasticity (Figure 6A,C). RNAi of all three genes altered O2-evoked responses in 21% O2-cultured day 7 adults (Figure 6B). In particular, RNAi of kdin-1 restored O2 experience-dependent plasticity in 7-day-old 21% O2 cultured animals, which displayed the same levels of plasticity as at day 2, whereas plasticity significantly declined in control animals (Figure 6B,C). RNAi of skn-1 reduced responses to high O2 in 7-day-old animals kept at 21% O2 throughout, but did not affect the responses of those shifted to 7% O2. cfp-1 RNAi moderately increased O2 responses of 7-day-old animals shifted to 7% but did not affect those of animals kept at 21% throughout. In contrast, plasticity in 7-day-old animals cultured at 7% O2 was not significantly affected by the knockdown of kdin-1, skn-1 or cfp-1, although O2 responses of animals kept at 7% throughout were altered (Figure 6—figure supplement 2). These results suggest that genes whose expression is selectively sustained in ageing neurons kept at a high activity state contribute to the loss of O2 experience-dependent plasticity with age. kdin-1 has a very specific effect on the decline of plasticity without altering O2 responses, whereas skn-1 and cfp-1 affect plasticity indirectly through altered O2 responses in non-shifted animals. Thus, our data indicate that activity-induced neuronal transcriptional alteration plays a profound role in experience-dependent plasticity and its decline with age.
 
-## Neuronal Ca2+ signaling factors orchestrate the activity-dependent decline of plasticity with age
+![Figure 6.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Behavioral test of three DEGs from RNA-seq day 7 neuron samples that specifically downregulated in ageing low-activity neurons. Strain KL92 (sid-1(pk3321) V.; npr-1(ad609) X.; cipIs7[pgcy-32::sid-1::SL2-GFP] V) is used for cell-specific RNAi knockdown by feeding. Mean ±sem, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns, p>0.05, asterisks above the speed plot indicate a significant interaction between the effect of gene knockdown and [O2] steps on speed responses, asterisks next to the data point in the plot indicate a significant difference of speed at this [O2] point compared to either RNAi feeding or control animals experienced the same O2 culture condition, ###p<0.001 indicates a significant gene knockdown effect on O2-evoked speed responses at that culture condition, mixed model ANOVA with Holm-Sidak test. (C) Normalized plasticity index of kdin-1, skn-1 and cfp-1 cell-specific RNAi knockdown animals. Mean ±sem, *p<0.05, **p<0.01, ns, p>0.05, unpaired t test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–K) Behavioral validation of top gene candidates from RNA-seq day one neuron samples. 6 out of 11 showed phenotypes of O2-evoked speed responses or its plasticity in young adults. Mean ±sem, three or more assays were performed for each gene each condition, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, indicates a significant interaction between the effect of gene knockdown and [O2] steps on speed responses, #p<0.05, ##p<0.01 indicates a significant gene knockdown effect on O2-evoked speed responses at that culture condition. (L and M) Plasticity index of gene candidates tested. Mean ±sem, *p<0.05, ns, p>0.05. (N) Statistical summary of candidates tested by mixed model ANOVA.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Mean ±sem, *p<0.05, **p<0.01, ***p<0.001, ns, p>0.05, asterisks above the speed plot indicate a significant interaction between the effect of gene knockdown and [O2] steps on speed responses, asterisks next to the data point in the plot indicate a significant difference of speed at this [O2] point compared to either RNAi feeding or control animals experienced the same O2 culture condition.
+
+### Neuronal Ca2+ signaling factors orchestrate the activity-dependent decline of plasticity with age
 
 Our transcriptomic profiling of the O2-sensing neurons suggests that neural activity modulates the changing expression of Ca2+ signaling factors with age. Altered Ca2+ signaling has been implicated in impaired neural plasticity and age-related cognitive decline (Foster, 2007; Palop et al., 2007). We therefore hypothesized that Ca2+ signaling may be an important intermediary between activity state and the decline of plasticity in neurons with age. To test this and gain an understanding of the molecular processes involved, we characterized how four key Ca2+-linked genes, cmd-1 calmodulin, tax-6 calcineurin, unc-68 ryanodine receptor and the ncx-5 K+-dependent Na+/Ca2+ exchanger are involved in the age-related decline of behavioral plasticity in oxygen responses. All four genes show age-related downregulation in transcription in our data collected from the O2-sensing neurons (Supplementary file 1).
 
 The calcium-binding protein calmodulin plays a central role in the regulation of activity-dependent plasticity (Ma et al., 2014) and is highly conserved between C. elegans and humans with 98% amino acid sequence identity. Due to its pleiotropic roles in many physiological processes, we used cell-specific RNAi to knock down cmd-1 in URX, AQR and PQR only, and subjected young (day 1) or old (day 7) animals to the environmental shifts detailed in Figure 1 to test for locomotory speed and experience-dependent plasticity in response to the stepwise changes in oxygen concentrations detailed in Figure 1—figure supplement 1B. In 1-day-old adults cultured at 21% O2, cmd-1 knockdown strongly reduced the locomotory response to 21% O2 after downsteps of O2 concentrations from 21% to 7% O2, but did not diminish the initial locomotory response to high O2 (Figure 7A). In animals previously cultured at 7% O2 throughout and also in those shifted from 7% to a 21% O2 environment overnight, cmd-1 knockdown reduced locomotory responses to high O2 (Figure 7B). In contrast, 7-day-old cmd-1 RNAi adults responded normally to 21% O2 after a period of low O2 exposure (Figure 7E,F). These results suggest that CMD-1 is essential in young neurons but not in old neurons to recover from a low activity state to promote a strong avoidance response to high O2.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig7-v1.jpg)
+
+**Figure 7.:** (A and B) O2-evoked speed responses of young adults with cell-specific knockdown of cmd-1, ncx-5 and tax-6 in O2-sensing neurons URX, AQR, and PQR. Strain KL92 (sid-1(pk3321) V.; npr-1(ad609) X.; cipIs7[pgcy-32::sid-1::SL2-GFP] V) is used for cell-specific RNAi knockdown by feeding. Mean ±sem, three or more assays were performed for each condition, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, asterisks above the speed plot indicate a significant interaction between the effect of gene knockdown and [O2] steps on speed responses, asterisks next to the data point in the plot indicate a significant difference of speed at this [O2] point compared to either RNAi feeding or control animals experienced the same O2 culture condition, #p<0.05 indicates a significant gene knockdown effect on O2-evoked speed responses at that culture condition, mixed model ANOVA with Holm-Sidak test. (C and D) Normalized plasticity index of young adults with cell-specific knockdown of cmd-1, ncx-5 and tax-6. Mean ±sem, *p<0.05, ns, p>0.05, unpaired t test. (E and F) O2-evoked speed responses of day 7 adults with cell-specific knockdown of cmd-1, ncx-5 and tax-6. Strain KL92 (sid-1(pk3321) V.; npr-1(ad609) X.; cipIs7[pgcy-32::sid-1::SL2-GFP] V) is used for cell-specific RNAi knockdown by feeding. Mean ±sem, five or more assays were performed for each condition, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, asterisks above the speed plot indicate a significant interaction between the effect of gene knockdown and [O2] steps on speed responses, asterisks next to the data point in the plot indicate a significant difference of speed at this [O2] point compared to either RNAi feeding or control animals experienced the same O2 culture condition, ##p<0.01 indicates a significant gene knockdown effect on O2-evoked speed responses at that culture condition, mixed model ANOVA with Holm-Sidak test. (G and H) Normalized plasticity index of day 7 adults with cell-specific knockdown of cmd-1, ncx-5 and tax-6 in O2-sensing neurons. Mean ±sem, **p<0.01, ns, p>0.05, unpaired t test. (I) Table shows the age-related plasticity changes in controls and cell-specific RNAi knockdown animals. Mean ±sem, *p<0.05, **p<0.01, ns, p>0.05, unpaired t test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Mean ±sem, *p<0.05, **p<0.01 asterisks above the speed plot indicate a significant interaction between the effect of gene knockdown and [O2] steps on speed responses, asterisks next to the data point in the plot indicate a significant difference of speed at this [O2] point compared to either RNAi feeding or control animals experienced the same O2 culture condition.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A–B) O2-evoked speed responses of day 7 adults were not affected by daf-16 specifically knockdown in O2-sensing neurons. n = 5–6 assays per condition. Mean ±sem, ns, p>0.05. (C–D) O2-evoked speed responses of day 7 adults were not affected by crtc-1 specifically knockdown in O2-sensing neurons. n = 4 assays per condition. Mean ±sem, ns, p>0.05.
 
 Cell-specific knockdown of cmd-1 in the O2-sensing neurons did not affect experience-dependent plasticity in young adults, but significantly restored experience-dependent plasticity in day 7 adults cultured at 21% O2 (Figure 7C,G), where the O2-sensing neurons had been chronically stimulated. Lowering cmd-1 levels did not further improve the response and plasticity of animals long-term cultured at 7% O2 (Figure 7F,G). This suggests that chronically high neuronal activation specifically acts through CMD-1 to result in plasticity loss with age, and that this pathway is not activated when neurons are kept at a low activity state. Lowering neuronal CMD-1 levels can counteract the plasticity decline with age.
 
@@ -121,6 +193,14 @@ ncx-5 encodes a member of the K+-dependent Na+/Ca2+ exchanger family which plays
 In young adults, knockdown of ncx-5 does not affect the behavior of animals cultured at 21% O2 (Figure 7A), and has a slight but statistically significant effect on the responses to the stepwise changes in O2 levels of animals shifted from 7% to 21% O2 overnight, suggesting that ncx-5 is involved in adaptation to high neuronal activity (Figure 7B). The knockdown of ncx-5 in O2-sensing neurons did not affect experience-dependent plasticity of young adults, but significantly reduced it in ageing animals (Figure 7D,H). Day seven animals shifted from 21% to 7% O2 for 12 hr significantly reduced rather than increased locomotory responses to O2, resulting in a reversed plasticity index (Figure 7E,H). ncx-5 RNAi in 7-day-old animals cultured at 7% O2 significantly decreased behavioral plasticity by reducing oxygen responses in animals kept at 7% and increasing responses in animals shifted to 21% O2 for 12 hr (Figure 7F,H). These results suggest that NCX-5 plays an essential and specific role in sustaining experience-dependent plasticity during ageing and in enabling older animals to adapt to new environments.
 
 We hypothesized that the accelerated behavioral plasticity decline in ageing animals with ncx-5 knockdown may be a consequence of altered O2-evoked Ca2+ responses in the O2-sensing neurons of young adults. To test this, we performed Ca2+ imaging of the URX O2-sensing neurons in both 2-day and 7-day-old adults (Figure 8, Figure 8—figure supplement 1A–D). Cell-specific knockdown of ncx-5 in the O2-sensing neurons did not generally alter the response magnitude of the neurons to high O2 stimuli in either young or old adults (Figure 8—figure supplement 1C,D). Intriguingly, although ncx-5 knockdown did not change the behavioral plasticity of 2-day-old adults, it did reduce plasticity of neuronal Ca2+ responses: ncx-5 RNAi animals shifted from 21% to 7% O2 for 12 hr increased their Ca2+ responses to O2 stimuli, compared to those cultured at 21% O2 throughout, less strongly than control animals did upon the same treatment (Figure 8A,B, Figure 8—figure supplement 1A,B). Also in the converse experiment, control animals shifted from 7% to 21% O2 for 12 hr very significantly reduced their responses to high and intermediate O2 stimuli, whereas with ncx-5 knocked down, URX Ca2+ responses to the O2 stimuli were not significantly different between animals shifted from 7% to 21% O2 and those cultured at 7% O2 throughout (Figure 8C,D, Figure 8—figure supplement 1A,B). Therefore, the ability of the O2-sensing neurons to adapt to changing O2 environments requires Ca2+ clearance by NCX-5 already in young adults. The accumulated effect of lack of NCX-5 during ageing may be the cause of accelerated behavioral plasticity decline. Furthermore, we found that knockdown of ncx-5 in URX elevates baseline [Ca2+] at 7% O2 in low O2 cultured animals, where the neuron is inactive (Figure 8E). This suggests that impaired Ca2+ homeostasis at rest may be responsible for accelerating the plasticity decline. To further explore this, we tested if knockdown of cmd-1, which slows plasticity decline, alters Ca2+ homeostasis as well, by performing Ca2+ imaging in URX. Ca2+ levels were indeed significantly reduced when cmd-1 was knocked down in 1-day-old 21% O2-cultured animals (Figure 8E, Figure 8—figure supplement 1E). Together, these results suggest that the control of Ca2+ homeostasis in young adults by NCX-5 in low-activity neurons and CMD-1 in high-activity neurons determines if behavioral plasticity is retained or lost in aged animals.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig8-v1.jpg)
+
+**Figure 8.:** (A–B) URX Ca2+ responses of day 2 adults cultured at 21% O2 and shifted to 7% O2 overnight with control L4440 (A) and ncx-5 (B) RNAi knockdown in O2-sensing neurons. Strain KL317 (sid-1(pk3321) V; npr-1(ad609) X; cipIs7[pgcy-32::sid-1::SL2-GFP] V; dbEx(pgcy-32::YC3.60 lin-15(+))) is used for cell-specific RNAi knockdown by feeding followed by Ca2+ imaging. Each [O2] step lasts for 1 min. 21–50 s in each 1-min step was used for statistical analysis. Mean ±sem, n = 16–19 animals per condition, *p<0.05, **p<0.01, asterisks indicate a significant effect of overnight O2 level shift on Ca2+ responses, mixed model ANOVA. (C–D) URX Ca2+ responses of day two adults cultured at 7% O2 and shifted to 21% O2 overnight with control L4440 (C) and ncx-5 (D) RNAi knockdown in O2-sensing neurons. Each [O2] step lasts for 1 min. 21–50 s in each 1-min step was used for statistical analysis. Mean ±sem, n = 20–21 animals per condition. ****p<0.0001, ns, p>0.05, asterisks indicate a significant effect of overnight O2 level shift on Ca2+ responses, mixed model ANOVA. (E) Baseline URX Ca2+ response is higher in 7% O2 cultured animals (day two adults) with ncx-5 knockdown, and lower in 21% O2 cultured animals (day one adults) with cmd-1 knockdown in O2-sensing neurons. Mean Ca2+ response during 21–50 s of 7% O2 step was used for statistical analysis. Mean ±sem, n = 17–21 animals per condition. *p<0.05, unpaired t-test. (F) Models for molecular and cellular processes in ageing high- and low-activity neurons.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/59711/elife-59711-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A–B) Scatter plot showing URX Ca2+ responses of day two adults with L4440 control RNAi (A) and ncx-5 (B) RNAi knockdown. (C) URX Ca2+ responses to 21% O2. No significant difference is seen between L4440 control RNAi and ncx-5 RNAi URX Ca2+ responses to 21% O2. ns, p>0.05. Two-way ANOVA. (D) URX Ca2+ responses of day seven adults cultured at 21% and 7% O2 throughout. ncx-5 RNAi knockdown animals showed no significant difference compared to controls. Each [O2] step lasts for 1 min. 21–50 s in each 1-min step was used for statistical analysis. Mean ±sem, n = 21–23 animals per condition. ns, p>0.05, mixed model ANOVA. (E) URX Ca2+ responses of 21% O2 cultured day 1 adults with cmd-1 knockdown in O2-sensing neurons. Mean ±sem.
 
 Previous studies in C. elegans have highlighted the role of longevity regulation pathways, in particular of the insulin/insulin-like growth factor signaling(IIS)/FOXO pathway, in altering cognitive performance with age (Kaletsky et al., 2016; Kauffman et al., 2010; Murakami et al., 2005). To test if the IIS/FOXO signaling pathway regulates plasticity decline in the O2-sensing neurons, we performed cell-specific RNAi knockdown of daf-16 in O2-sensing neurons, but did not observe any significant effect (Figure 7—figure supplement 2A,B), suggesting that IIS/FOXO signaling is not involved in the O2 experience-dependent decline of plasticity with age. The TAX-6 calcineurin phosphatase is known to modulate C. elegans longevity via the CREB-regulated transcriptional coactivator CRTC-1 (Mair et al., 2011). However, knockdown of crtc-1 in the O2-sensing neurons affects neither O2-evoked locomotory responses nor experience-dependent plasticity (Figure 7—figure supplement 2C,D). Thus, these data suggest that neuronal activity state affects age-related plasticity decline independent of lifespan-regulating pathways.
 
@@ -152,45 +232,251 @@ In summary, our study reveals that sustained high neural activity alters the neu
 
 ## Materials and methods
 
-## Strains and C. elegans culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>OP50</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>AX204</td>
+      <td>Coates and de Bono, 2002</td>
+      <td></td>
+      <td>npr-1(ad609) X</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>AX1864</td>
+      <td>Busch et al., 2012</td>
+      <td></td>
+      <td>npr-1(ad609) X; dbEx(pgcy-32::YC3.60)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL71</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 6 sid-1(pk3321) him5(e1490)V; npr-1(ad609)X</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL123</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 4—figure supplement 1 npr-1(ad609) X; iaIs25[Pgcy-37::GFP + unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL92</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 6 sid-1(pk3321) V.; npr-1(ad609) X.; cipIs7[pgcy-32::sid-1::SL2-GFP] V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL269</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 3 npr-1(ad609)X; cipIs35[pgcy-32::HisCl1 codon optimized::SL2 GFP]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL217</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 7 npr-1(ad609) X; cipIs31[pgcy-32::cmd-1 sense fragment::let-868 3'UTR; pgcy-32::cmd-1 antisense fragment::let-868 3'UTR; ccRFP]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL317</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 8 sid-1(pk3321) V; npr-1(ad609) X; cipIs7[pgcy-32::sid-1::SL2-GFP] V; dbEx(pgcy-32::YC3.60 lin-15(+))</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL325</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 3—figure supplement 2 dvIs19[(pAF15) gst-4p::GFP::NLS] III; npr-1(ad609) X</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KL24</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 3 npr-1(ad609) X; Ex (pgcy-32::ChRcodopt-mCitrine)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PicoPure RNA isolation kit</td>
+      <td>Arcturus Bioscience</td>
+      <td>KIT0204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ovation RNA-seq system V2</td>
+      <td>Nugen</td>
+      <td>7102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>H7250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>All-trans retinal</td>
+      <td>Sigma-Aldrich</td>
+      <td>R2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetyl cysteine</td>
+      <td>Sigma</td>
+      <td>A7250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DinoCapture 2.0</td>
+      <td>Dino-Lite Europe</td>
+      <td>RRID:SCR_019095</td>
+      <td>https://www.dino-lite.eu/index.php/en/support/software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MCQ Gas Blender 100</td>
+      <td>MCQ Instruments</td>
+      <td></td>
+      <td>https://www.mcqinst.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://fiji.sc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cutadapt</td>
+      <td>Martin, 2011</td>
+      <td>RRID:SCR_011841</td>
+      <td>https://cutadapt.readthedocs.io/en/stable/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td>RRID:SCR_015899</td>
+      <td>https://github.com/alexdobin/STAR/releases</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCounts</td>
+      <td>Liao et al., 2014</td>
+      <td>RRID:SCR_012919</td>
+      <td>http://bioinf.wehi.edu.au/featureCounts/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GSEA</td>
+      <td>Subramanian et al., 2005</td>
+      <td>RRID:SCR_003199</td>
+      <td>https://www.gsea-msigdb.org/gsea/index.jsp</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10 µm filter for cell filtration</td>
+      <td>CellTrics</td>
+      <td>04-004-2324</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and C. elegans culture
 
 C. elegans were grown at 20°C and kept on NGM plates seeded with E. coli OP50 bacteria as food source as previously described (Brenner, 1974). Previously described strains are AX204 (npr-1(ad609) X) and AX1864 (npr-1(ad609) X; dbEx(pgcy-32::YC3.60)) (Busch et al., 2012). KL24 (npr-1(ad609) X; cipEx41(pgcy-32::ChRcodopt-mCitrine)) was generated by ballistic gene transfer of a pExpr plasmid containing a Channelrhodopsin-mCitrine fusion gene, both codon optimized for C. elegans, under the gcy-32 promoter for expression in the O2-sensing neurons. KL71 (sid-1(pk3321) him5(e1490)V; npr-1(ad609)X) was generated by crossing AX204 with TU3596 (sid-1(pk3321) him-5(e1490) V; lin-15B(n744) X). KL123 (npr-1(ad609) X; iaIs25[Pgcy-37::GFP + unc-119(+)]) was generated by crossing AX204 with ZG610 (iaIs25[Pgcy-37::GFP + unc-119(+)]). KL92 (sid-1(pk3321) V.; npr-1(ad609) X.; cipIs7[pgcy-32::sid-1::SL2-GFP] V) was generated by miniMos injection (Frøkjær-Jensen et al., 2014) as follows: A sid-1 full length genomic fragment was cloned into the miniMos plasmid pCFJ907, under the gcy-32 promoter that drives expression in the O2-sensing neurons. The pExpr sid-1 was injected at 10 ng/µl to AX204, together with co-injection markers pGH8 (Prab3::mCherry::unc-54 3’UTR) at 10 ng/µl, pCFJ90 (Pmyo-2:mCherry:unc-54 3’UTR) at 2.5 ng/µl, pCFJ104 (Pmyo3::mCherry::unc-54 3’UTR) at 10 ng/µl, pRF4 at 20 ng/µl, and pCFJ601 (Peft-3::Mos1 transposase) at 50 ng/µl. 500 µl 25 mg/ml (diluted in water) G418 antibiotic was directly added to the 6 cm NGM plate the day after injection, and the worms were grown at 25°C. Inserted transgenes were identified by screening for surviving animals that lost the co-injection markers as seen by the absence of fluorescent protein expression in neurons and muscle. For identifying the integration sites in the chromosome, inverse PCR was performed as described (Frøkjær-Jensen et al., 2014). This strain was then crossed with KL71. KL269 (npr-1(ad609)X; cipIs35[pgcy-32::HisCl1 codon optimized::SL2 GFP]) was also generated by miniMos injection, and a codon-optimized single copy of HisCl1 was inserted. KL217 (npr-1(ad609) X; cipIs31[pgcy-32::cmd-1 sense fragment::let-868 3'UTR; pgcy-32::cmd-1 antisense fragment::let-868 3'UTR; ccRFP]) was generated by injecting sense and antisense cmd-1 fragments (40 ng/µl each) cloned from genomic DNA, co-injected with punc-122::RFP at 20 ng/µl followed by UV integration. KL317 (sid-1(pk3321) V; npr-1(ad609) X; cipIs7[pgcy-32::sid-1::SL2-GFP] V; dbEx(pgcy-32::YC3.60 lin-15(+))) was generated by crossing KL92 to AX1864. KL325 (dvIs19[(pAF15) gst-4p::GFP::NLS] III; npr-1(ad609) X) was generated by crossing SPC167 (dvIs19[(pAF15) gst-4p::GFP::NLS] III; skn-1(lax120) IV) to AX204.
 
-## Behavioral assays
+### Behavioral assays
 
-## O2-evoked speed assay
+#### O2-evoked speed assay
 
 For the day 1 adults assay, L4 larval stage animals were picked to NGM plates seeded with E. coli OP50 2 days before, and cultured overnight in a hypoxia chamber for the 7% O2 culture environment, or outside the chamber for the 21% O2 culture environment, both at the temperature of 20°C with around 38% humidity. 20–30 µl of OP50 was seeded on 3.5 cm low peptone assay plates (Busch et al., 2012) the day before the assay. On the day of the assay, 15–30 worms were picked to each of the assay plates and assayed 5–10 min after picking. For the worms grown at 7% O2 overnight, the worms were picked to the assay plates within 15 min before the start of the assay. A gas mixture consisting of 0.04% CO2, a variable O2 concentration, and N2 as the balance gas was generated by a gas mixer (MCQ Gas Blender 100) and pumped into a perspex assay chamber through the inlet tube beside the chamber with a flow rate of 120 sccm (standard cm³/min).
 
 The control worms were tested in parallel for each culturing condition on each day of the assay. The behavior of the animals was recorded with a Dino-Lite USB camera/microscope using the DinoCapture software, and analyzed with a custom-written Matlab script (Laurent et al., 2015). Data represent the mean speed for each assay. Error bars represent SEM. Power analysis of the behavioral data showed that the observed effect size is moderate (Cohen's f is around 0.52 based on Pillai's Trace statistic value of 1.278), and to be detected at a power of 0.8, the required sample size was 2.81 per condition. We thus recorded three or more films for each condition independently.
 
-For the day 7 adults assay, L4s were picked to culture plates seeded with a bacterial food lawn 2 days in advance and transferred to fresh plates every 2 days. The night before assay, conditions were shifted according to specific protocols. The plasticity index is defined as ∑c(speed of shifted condition−speed of original conditionspeed of original condition)c, where c are the different oxygen concentrations assayed. The plasticity index was normalized to young adults (day 1 or day 2) experiencing the same O2 condition shift, that is shift from 21% O2 to 7% O2, or shift from 7% O2 to 21% O2. Adult age is defined relative to L4 larval stage (=day 0).
+For the day 7 adults assay, L4s were picked to culture plates seeded with a bacterial food lawn 2 days in advance and transferred to fresh plates every 2 days. The night before assay, conditions were shifted according to specific protocols. The plasticity index is defined as $\sumc(\frac{speed of shifted condition−speed of original condition}{speed of original condition})_{c}$, where c are the different oxygen concentrations assayed. The plasticity index was normalized to young adults (day 1 or day 2) experiencing the same O2 condition shift, that is shift from 21% O2 to 7% O2, or shift from 7% O2 to 21% O2. Adult age is defined relative to L4 larval stage (=day 0).
 
-## Histamine treatment
+#### Histamine treatment
 
 Experiments were performed as previously described with slight modifications (Pokala et al., 2014). 1M histamine stock solution was prepared with dH2O and added to NGM before pouring to reach a final concentration of 20 mM. Plates were stored in 4°C for no more than one month and were seeded 2 days before use. Parental animals at day 1 – day 2 adult stage were picked to plates containing histamine. L4 stage progeny was transferred to newly seeded histamine plates and then transferred every 2 days. On day 6 of adulthood, animals were transferred to NGM plates without histamine for recovery at either 21% or 7% O2 overnight. Animals were assayed on day 7 of adulthood on plates without histamine. For control, animals without HisCl1 expression were cultured in the presence of 20 mM histamine, and animals with HisCl1 expression in O2-sensing neurons were grown on NGM plates without histamine. Histamine treatment has no effect on the lifespan of wild-type worms (Zullo et al., 2019).
 
-## NAC treatment
+#### NAC treatment
 
 100 mM NAC stock solution (diluted in dH2O) was added to NGM before pouring to reach the final concentration of 5 mM. Plates were stored in 4°C and used within one month. Parental animals were grown on OP50 plates. For day 1 adults assay, L4 animals were picked to NAC plates the night before assay. For the day 7 adults assay, L4 animals were picked to NAC plates and transferred to new NAC plates (seeded 2 days before use) every 2 days until assay. The plasticity index was normalized to day 1 adults without NAC treatment.
 
-## Chronic optogenetic stimulation
+#### Chronic optogenetic stimulation
 
 Parental KL24 or AX204 animals were cultured at 7% O2 and their progeny at L4 larval stage were used for the assay. KL24 worms were preselected for fluorescence in URX neurons only. 30 µl of 5 mM all-trans retinal (Sigma) dissolved in ethanol was spread on the bacterial food lawn 1–2 days before use, and 30 µl of ethanol was spread on the control plates without retinal. Animals were irradiated on a custom-built setup with 300 ms pulsed blue light (Luxeon Rebel Blue LEDs, peak wavelength 470 nm) at an intensity of 10 mW/cm2 and a frequency of 0.8 Hz at controlled temperature (20°C). To limit effects of blue light exposure on organismal health, we tested plasticity in 4-day-old adults. Pulsed blue light stimulation started from L4 stage, and on day 3 of adulthood animals were transferred to normal NGM plates without all-trans retinal and kept in the dark overnight until assayed on day 4. Animals were transferred to fresh all-trans retinal or control plates every day.
 
-## Aerotaxis assay
+### Aerotaxis assay
 
 Aerotaxis assays were done essentially as described previously (Gray et al., 2004). For each assay, 150–200 L4s were picked the night before the day 1 adults assay, or then transferred to newly seeded plates every 2 days for the 7-day-old adults assay. For the assay, animals were picked to 9 cm NGM plates seeded two days before assay to form a thin rectangular bacterial food lawn, and a 30 × 15×0.2 mm polydimethylsiloxane (PDMS) microfluidic assay chamber placed over the animals, connected to two syringes at each end to pump 7% O2 or 21% O2, respectively, into the chamber at a pumping rate of 1.5 ml/min. After 30 min, the location of animals in the chamber was recorded with a Point Grey Grasshopper3 CMOS camera mounted on a Leica stereo microscope for distribution analysis and chemotaxis index quantification. The aerotaxis index is defined as (number of animals at high O2 area – number of animals at low O2 area)/total animal number.
 
-## Ca2+ imaging
+### Ca2+ imaging
 
 Ratiometric Ca2+ imaging was performed on a Nikon Eclipse Ti-E Inverted compound microscope with a CoolLED pE4000 fluorescence light source using a 40x Apochromat λS LWD water immersion lens, following an established protocol (Busch et al., 2012).For imaging in day one adults, L4 animals were picked the day before imaging. For day seven adults imaging, L4 animals were picked and transferred to fresh culture plates every 2 days. For imaging, 2% agarose pad (diluted in M9) was used. Individual animals were glued on pad with Dermabond Topical Skin Adhesive, leaving the nose free of glue. A drop of food was put next to the nose, M9 buffer was applied alongside the worm, and glued worms were covered with a polydimethylsiloxane (PDMS) microfluidic chamber. Gases at specific O2 concentrations were generated by a gas mixer (MCQ Gas Blender 100) and collected into individual sealable syringes. 435 nm fluorescence light intensity was set at 1% and exposure time was set at 300 ms. The filter set used was Chroma 59017 for dual CFP/YFP recording. An emission splitter (Cairn Research) was used to separate the cyan and yellow emission light with an FITC/Alexa Fluor 488/Fluo3/Oregon Green dichroic, ET480/40 m filter for CFP emission and ET535/30 m filter for YFP emission. Images were captured with an ORCA-Flash 4.0 V2+ camera at 2 frames per second. Imaging data were analyzed using Neuron Analyzer, a customwritten Matlab program, as previously described (Laurent et al., 2015).
 
-## RNAi by feeding
+### RNAi by feeding
 
 RNAi by feeding was performed as previously described (Kamath and Ahringer, 2003) with slight modifications. RNAi plates were supplemented with 100 μg/ml carbenicillin and 1 mM IPTG. Plates were poured freshly and stored at 4°C for no more than 1 month. Bacterial strains (RNase-deficient E. coli HT115) expressing dsRNA were obtained from the Ahringer library and confirmed by sequencing. For the unc-68 RNAi clone which is not available from the library, an unc-68 gene fragment cloned from genomic DNA was inserted into L4440 plasmid by double digestion using XhoI and Not I, and this plasmid was then transformed into HT115 bacteria. Primers used for unc-68 fragment PCR cloning from genomic DNA were CGCGCTCTCGAGGCTACATGGTGATTGCCTCA and TAATTTGCGGCCGCTGCTCCCATTT CACATGAGT. Bacteria were grown on LB plates with carbenicillin and tetracycline at 37°C overnight. Bacterial liquid culture with 100 μg/ml carbenicillin was grown at 37°C with shaking at 200 rpm for 6–8 hr. The liquid culture was seeded on the plates, left to dry at room temperature for 2 days. L4 stage animals were picked to the RNAi plate. After 48 hr, adults were transferred to the second RNAi plate seeded with the same bacteria, and their progeny was used for the assays. For RNAi by feeding experiments in young adults we assayed 2-day-old adults instead of day 1 adults because RNAi knockdown is more efficient at this age (data not shown). KL92 was used for behavioral assays and KL317 for Ca2+ imaging; in both strains, expression of the RNA transporter sid-1 was limited to the O2-sensing neurons by transgenic expression from the gcy-32 promoter to achieve cell-specific knockdown (Calixto et al., 2010). All the RNAi feeding animals were cultured at 20°C. The RNAi clones used for RNAi feeding experiments are listed in Supplementary file 9.
 
-## Sample preparation for cell-specific RNA-sequencing in day 1 and day 7 adults
+### Sample preparation for cell-specific RNA-sequencing in day 1 and day 7 adults
 
 Strain KL123 was used for cell-specific RNA-sequencing. URX, AQR and PQR were strongly labeled with GFP in this strain in both young and old adults (Figure 4—figure supplement 1A,B). Weaker fluorescent labeling was also occasionally detected in the AVM mechanosensory neuron and the ASI chemosensory neurons (Figure 4—figure supplement 1A,B and data not shown). AVM and ASI did not respond to oxygen stimuli (Figure 4—figure supplement 1C–E), making it unlikely that they would contribute to activity-dependent transcriptional changes under different oxygen conditions. To avoid contamination of the 7-day adult samples with RNA of their offspring, we fed worms with bacteria inducing RNAi against mex-3, which causes embryonic lethality with near 100% penetrance (Kamath et al., 2001). We confirmed that the mex-3 RNAi treatment had no impact on either experience-dependent plasticity or the differential decline of plasticity in 7-day-old animals (Figure 4—figure supplement 1F–H).
 
@@ -200,14 +486,14 @@ Cell dissociation and FACS sorting procedures were performed as previously descr
 
 For FACS sorting, age-matched AX204 worms were used as negative control for setting gates. For KL123 (npr-1(ad609) X; iaIs25[Pgcy-37::GFP + unc-119(+)]), 5’000–20’000 GFP positive cells from each sample were sorted into 300 µl extraction buffer for RNA extraction using the PicoPure RNA isolation kit (Arcturus Bioscience). RNA samples with a RIN score >7.0 were used for cDNA synthesis. cDNA was generated using the Ovation RNA-seq system V2. Libraries were generated using TruSeq DNA Nano gel free library preparation kit. NovaSeq 50PE was used for all samples. Four independent biological replicates per condition were sequenced.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 Reads were trimmed using Cutadapt (version cutadapt-1.9.dev2) (Martin, 2011). Reads were trimmed for quality at the 3’ end using a quality threshold of 30 and for adapter sequences of the TruSeq DNA kit (AGATCGGAAGAGC). The reference used for mapping was the Caenorhabditis elegans (build WBcel235) genome from Ensembl. Reads were aligned to the reference genome using STAR (version 2.5.2b) (Dobin et al., 2013) specifying paired-end reads and the option --outSAMtype BAM Unsorted. Reads were assigned to features of type ‘exon’ in the input annotation grouped by gene_id in the reference genome using featureCounts (version 1.5.1) (Liao et al., 2014). Genes with biotype rRNA were removed prior to counting. featureCounts assigns counts on a ‘fragment’ basis as opposed to individual reads such that a fragment is counted where one or both of its reads are aligned and associated with the specified features. Strandedness was set to ‘unstranded’ and a minimum alignment quality of 10 was specified. The raw counts were filtered to remove genes consisting predominantly of near-zero counts, filtering on counts per million (CPM) to avoid artefacts due to library depth. Differential gene expression analysis was performed using DESeq2 (Love et al., 2014) (version 1.18.1 with R version 3.4.2) at a default false discovery rate (FDR) of 0.1 as used in previous studies (Thomson et al., 2017), and additionally with a minimal fold change of 1.5 to exclude smaller changes in transcript abundance mostly seen in the whole-worm samples. Pathway analysis was performed using Ingenuity Pathway Analysis (Qiagen). Gene set enrichment analysis was performed in GSEA (Broad Institute) and WormBase Tissue Enrichment Analysis (Angeles-Albores et al., 2016). GSEA version 2–2.2.1 was used and gene sets containing more than 500 genes or less than five genes were excluded. Only gene sets with p<0.05 and q < 0.25 were considered as significantly enriched, as done in previous studies (Ximerakis et al., 2019). The normalized enrichment score (NES) was defined previously (Subramanian et al., 2005).
 
-## Quantitative fluorescence microscopy
+### Quantitative fluorescence microscopy
 
 KL325 was used for gst-4p::GFP fluorescence intensity quantification. NAC (5 mM) treatment was initiated from hatching. Worms were immobilized by 100 mM NaN3 on a 2% agarose pad. Images were captured on a Zeiss Axio Imager Z1m with a 10x objective, and images analyzed by ImageJ. Specifically, a threshold was applied to each picture to highlight the fluorescent whole worm and the mean value of this highlighted area was used for statistical analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Unpaired t-test with Holm-Sidak correction for multiple comparisons was performed to examine the plasticity difference between 21% and 7% O2 animals at day 4, day 7, and day 10 of adulthood. For O2-evoked speed responses, mixed model ANOVA was performed to examine the effect of condition shift (21% to 7% O2 or 7% to 21% O2 the night before assay) and [O2] steps (21%, 19%, 17%, 14%, 11%, 7%, and 21% O2) on worms’ speed responses. Mann-Whitney U test was used for aerotaxis index comparison. For O2-evoked speed responses in RNAi feeding assays, mixed model ANOVA with Holm-Sidak test was conducted to examine the effect of gene knockdown and [O2] steps on speed responses. O2-evoked Ca2+ responses were analyzed using mixed model ANOVA, and the time period used for analysis is indicated in corresponding figure legends. Plasticity indexes were compared by unpaired t-test. One-way ANOVA with Holm-Sidak test was used for fluorescence intensity comparison. GraphPad Prism was used for statistical analysis.

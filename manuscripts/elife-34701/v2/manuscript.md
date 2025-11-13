@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.34701.001 Tumor suppressor p53 prevents early death due to cancer development. However, the role of p53 in aging process and longevity has not been well-established. In humans, single nucleotide polymorphism (SNP) with either arginine (R72) or proline (P72) at codon 72 influences p53 activity; the P72 allele has a weaker p53 activity and function in tumor suppression. Here, employing a mouse model with knock-in of human TP53 gene carrying codon 72 SNP, we found that despite increased cancer risk, P72 mice that escape tumor development display a longer lifespan than R72 mice. Further, P72 mice have a delayed development of aging-associated phenotypes compared with R72 mice. Mechanistically, P72 mice can better retain the self-renewal function of stem/progenitor cells compared with R72 mice during aging. This study provides direct genetic evidence demonstrating that p53 codon 72 SNP directly impacts aging and longevity, which supports a role of p53 in regulation of longevity.
+Tumor suppressor p53 prevents early death due to cancer development. However, the role of p53 in aging process and longevity has not been well-established. In humans, single nucleotide polymorphism (SNP) with either arginine (R72) or proline (P72) at codon 72 influences p53 activity; the P72 allele has a weaker p53 activity and function in tumor suppression. Here, employing a mouse model with knock-in of human TP53 gene carrying codon 72 SNP, we found that despite increased cancer risk, P72 mice that escape tumor development display a longer lifespan than R72 mice. Further, P72 mice have a delayed development of aging-associated phenotypes compared with R72 mice. Mechanistically, P72 mice can better retain the self-renewal function of stem/progenitor cells compared with R72 mice during aging. This study provides direct genetic evidence demonstrating that p53 codon 72 SNP directly impacts aging and longevity, which supports a role of p53 in regulation of longevity.
 
 ## Introduction
 
@@ -37,11 +37,114 @@ In this study, we employed a mouse model with knock-in of human TP53 gene (Hupki
 
 ## Results
 
-## The lifespans of mice carrying human p53 Codon 72 SNP
+### The lifespans of mice carrying human p53 Codon 72 SNP
 
 To investigate the impact of human p53 codon 72 SNP upon aging and the lifespan, Hupki mice with knock-in of human TP53 gene carrying codon 72 SNP in place of the corresponding mouse Trp53 gene were employed (Kung et al., 2016; Frank et al., 2011; Leu et al., 2013). It has been reported that p53 protein levels in different tissues are comparable between R72 and P72 mice, which was confirmed in this study (Figure 1—figure supplement 1A) (Kung et al., 2016; Frank et al., 2011; Leu et al., 2013). Previous studies including ours showed that the P72 allele in these mice has a weaker transcriptional activity towards a subset of p53 target genes than the R72 allele, suggesting that these mice retain the function of p53 codon 72 SNP in human (Feng et al., 2011; Kung et al., 2016; Azzam et al., 2011). Because the lifespan of mice varies among different inbred strains, Hupki mice with p53 codon 72 SNP were backcrossed to mice with different genetic backgrounds, including 129SVsl and C57BL/6J, for ten generations to establish p53 codon 72 SNP Hupki mice in 129SVsl and C57BL/6J backgrounds, respectively. The lifespan of mice with p53 codon 72 SNP in 129SVsl and C57BL/6J backgrounds was measured in a cohort of ~150 mice for each genotype. The median survival age was 740 days in 129SVsl mice and 490 days in C57BL/6J mice, respectively (Figure 1—figure supplement 1B and C), which is consistent with previously reported lifespans of these two mouse strains (Storer, 1966).
 
 In 129SVsl mice, P72 mice showed an overall longer lifespan compared with R72 mice; the median survival age was 759 days for P72 mice and 697 days for R72 mice, respectively (Log-rank test: p<0.0001) (Figure 1A). The causes of death included tumor, inflammation (including dermatitis), ocular lesion, urinary syndrome, nephropathy, etc., which are common causes of death in 129SVsl mice as reported by previous studies (Marx et al., 2013; Brayton et al., 2012; Radaelli et al., 2016) (Table 1). For those mice died from non-neoplastic events, P72 mice showed a significantly longer lifespan than R72 mice; the median survival was 768 days for P72 mice and 673 days for R72 mice, respectively (Log-rank test: p<0.0001) (Figure 1B). For those mice died from neoplastic diseases, R72 mice (with a median survival of 774 days) showed a longer lifespan than P72 mice (with a median survival of 756 days) (Log-rank test: p=0.015) (Figure 1C). Further analysis of mice older than 18 months, which are equivalent to humans older than 60 years (Dutta and Sengupta, 2016), showed that P72 mice had a longer lifespan (with a median survival of 780 days) than R72 mice (with a median survival of 715 days) (Log-rank test: p<0.0001) (Figure 1D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34701/elife-34701-fig1-v2.jpg)
+
+**Figure 1.:** (A) The overall survival of 129SVsl R72 mice (n = 162) and P72 mice (n = 219). The median survival is 697 days and 759 days for R72 and P72 mice, respectively. p<0.0001. (B) Survival of 129SVsl R72 mice (n = 136) and P72 mice (n = 180) died from non-neoplastic events. The median survival is 673 days and 768 days for R72 and P72 mice, respectively. p<0.0001. (C) Survival of 129SVsl R72 mice (n = 26) and P72 mice (n = 39) died from neoplastic diseases. The median survival is 774 days and 756 days for R72 mice and P72 mice, respectively. p=0.015. (D) Survival of 129SVsl R72 mice (n = 140) and P72 mice (n = 199) older than 18 months. The median survival is 715 days and 780 days for R72 mice and P72 mice, respectively. p<0.0001. Log-rank test was used to analyze the difference in survival.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34701/elife-34701-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The p53 protein levels in the bone marrow from 129SVsl p53 P72 and R72 mice were determined by the Western-blot assays. (B) The lifespan of 129SVsl p53 Hupki mice, including both p53 P72 and p53 R72 mice (median survival: 740 days; n = 381). (C) The lifespan of C57BL/6J Hupki mice, including both p53 P72 and p53 R72 mice (median survival: 490 days; n = 306).
+
+**Table 1.**
+ Major contributing causes of death in mice evaluated at end of life.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">129SVsl</th>
+      <th colspan="2">C57BL/6J</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>R72</th>
+      <th>P72</th>
+      <th>R72</th>
+      <th>P72</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>n (%)</td>
+      <td>n (%)</td>
+      <td>n (%)</td>
+      <td>n (%)</td>
+    </tr>
+    <tr>
+      <td>Neoplasm</td>
+      <td>26 (16.3)</td>
+      <td>39 (18.3)</td>
+      <td>48 (32.9)</td>
+      <td>56 (35)</td>
+    </tr>
+    <tr>
+      <td>Nonspecific systemic disease</td>
+      <td>33 (20.6)</td>
+      <td>47 (22.1)</td>
+      <td>21 (14.4)</td>
+      <td>31 (19.4)</td>
+    </tr>
+    <tr>
+      <td>Ocular lesion</td>
+      <td>38 (23.8)</td>
+      <td>53 (24.9)</td>
+      <td>7 (4.8)</td>
+      <td>5 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Dermatitis</td>
+      <td>5 (3.1)</td>
+      <td>4 (1.9)</td>
+      <td>34 (23.3)</td>
+      <td>43 (26.9)</td>
+    </tr>
+    <tr>
+      <td>Megaesophagus</td>
+      <td>15 (9.4)</td>
+      <td>24 (11.3)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Urinary syndrome/nephropathy</td>
+      <td>18 (11.3)</td>
+      <td>21 (9.9)</td>
+      <td>9 (6.2)</td>
+      <td>4 (2.5)</td>
+    </tr>
+    <tr>
+      <td>Neurologic diseases</td>
+      <td>5 (3.1)</td>
+      <td>7 (3.3)</td>
+      <td>4 (2.7)</td>
+      <td>3 (1.9)</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>9 (5.6)</td>
+      <td>8 (3.8)</td>
+      <td>10 (6.8)</td>
+      <td>8 (5.0)</td>
+    </tr>
+    <tr>
+      <td>Unknown reason</td>
+      <td>11 (6.9)</td>
+      <td>10 (4.7)</td>
+      <td>13 (8.9)</td>
+      <td>10 (6.3)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note:Nonspecific systemic disease: age-related or -induced lesions including cardiac and respiratory failure; sepsis and DIC; female reproductive diseases or male urogenital diseases, etc.Ocular lesion: includes corneal ulceration and chronic keratitisNeurologic diseases: include head tilt, paresis, paralysis and ataxiaOthers: include rectal prolapse, gastrointestinal bleedings_
 
 Similar results were observed in C57BL/6J mice. P72 mice had an overall longer lifespan (with a median survival of 495.5 days) than R72 mice (with a median survival of 481 days) (Log-rank test: p=0.015) (Figure 2A). For those mice died from non-neoplastic events, P72 mice had a significantly longer lifespan (with a median survival of 564.5 days) than R72 mice (with a median survival of 438 days) (Log-rank test: p<0.0001) (Figure 2B). For those mice died from neoplastic diseases, R72 mice (with a median survival of 566 days) had a longer lifespan than P72 mice (with a median survival of 411 days) (Log-rank test: p=0.0084) (Figure 2C). Further analysis of mice older than 18 months showed that P72 mice had a longer lifespan (with a median survival of 693 days) than R72 mice (with a median survival of 657 days) (Log-rank test: p<0.0001) (Figure 2D).
 
@@ -49,7 +152,7 @@ Similar results were observed in C57BL/6J mice. P72 mice had an overall longer l
 
 **Figure 2.:** (A) The overall survival of C57BL/6J R72 mice (n = 146) and P72 mice (n = 160). The median survival is 481 days and 495.5 days for R72 and P72 mice, respectively. p=0.015. (B) Survival of C57BL/6J R72 mice (n = 98) and P72 mice (n = 104) died from non-neoplastic events. The median survival is 438 days and 564.5 days for R72 and P72 mice, respectively. p<0.0001. (C) Survival of C57BL/6J R72 mice (n = 48) and P72 mice (n = 56) died from neoplastic disease. The median survival is 566 days and 411 days for R72 mice and P72 mice, respectively. p=0.0084. (D) Survival of C57BL/6J R72 mice (n = 61) and P72 mice (n = 70) older than 18 months. The median survival is 657 days and 693 days for R72 mice and P72 mice, respectively. p<0.0001. Log-rank test was used to analyze the difference in survival.
 
-## P72 mice showed delayed aging-associated phenotypes
+### P72 mice showed delayed aging-associated phenotypes
 
 Our results that mice carrying different p53 codon 72 SNP have different lifespans suggest that p53 codon 72 SNP impacts the aging process. Therefore, several aging-associated phenotypes were examined in R72 and P72 mice at different ages.
 
@@ -57,7 +160,7 @@ During the aging process, mice develop lordokyphosis which is characterized by a
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34701/elife-34701-fig3-v2.jpg)
 
-**Figure 3.:** (A) Lordokyphosis in 129SVsl R72 and P72 mice. Shown are representative images taken with the INVEON PET/CT system of mouse whole skeleton at different ages. (B) Average of spine angles from 6-month-old and 18-month-old 129SVsl R72 and P72 mice. A narrowing of the angle indicates an increase in lordokyphosis. n = 5/group, *: p<0.05; Student’s t-test. (C) Representative micro-CT bone structure images taken with the INVEON PET/CT system of tibias from 129SVsl R72 and P72 mice at different ages. (D–F) Quantification of bone volume relative to total volume (D), trabecular number (E) and trabecular spacing (F) from micro-CT scans of tibias from 129SVsl R72 and P72 mice at different ages using INVEON Research Workplace software. Data were presented as mean ± SD. n = 3, *: p<0.05, #: p<0.01; Student’s t-test. (G) Lordokyphosis in C57BL/6J R72 and P72 mice. Shown are representative images of mouse whole skeleton at different ages. (H) Average of spine angles from 6-month-old and 18-month-old C57BL/6J R72 or P72 mice. n = 5, *: p<0.05; Student’s t-test. (I–K) Quantification of bone volume relative to total volume (I), trabecular number (J) and trabecular spacing (K) from micro-CT scans of tibias from C57BL/6J R72 and P72 mice at different ages using INVEON Research Workplace software. Data were presented as mean ± SD. n = 3, *: p<0.05, #: p<0.01; Student’s t-test.10.7554/eLife.34701.008Figure 3—source data 1.Quantification of bone volume relative to total volume of tibias from micro-CT scans of R72 and P72 mice at different ages. Quantification of trabecular number of tibias from micro-CT scans of R72 and P72 mice at different ages. Quantification of trabecular spacing from micro-CT scans of tibias from R72 and P72 mice at different ages.
+**Figure 3.:** (A) Lordokyphosis in 129SVsl R72 and P72 mice. Shown are representative images taken with the INVEON PET/CT system of mouse whole skeleton at different ages. (B) Average of spine angles from 6-month-old and 18-month-old 129SVsl R72 and P72 mice. A narrowing of the angle indicates an increase in lordokyphosis. n = 5/group, *: p<0.05; Student’s t-test. (C) Representative micro-CT bone structure images taken with the INVEON PET/CT system of tibias from 129SVsl R72 and P72 mice at different ages. (D–F) Quantification of bone volume relative to total volume (D), trabecular number (E) and trabecular spacing (F) from micro-CT scans of tibias from 129SVsl R72 and P72 mice at different ages using INVEON Research Workplace software. Data were presented as mean ± SD. n = 3, *: p<0.05, #: p<0.01; Student’s t-test. (G) Lordokyphosis in C57BL/6J R72 and P72 mice. Shown are representative images of mouse whole skeleton at different ages. (H) Average of spine angles from 6-month-old and 18-month-old C57BL/6J R72 or P72 mice. n = 5, *: p<0.05; Student’s t-test. (I–K) Quantification of bone volume relative to total volume (I), trabecular number (J) and trabecular spacing (K) from micro-CT scans of tibias from C57BL/6J R72 and P72 mice at different ages using INVEON Research Workplace software. Data were presented as mean ± SD. n = 3, *: p<0.05, #: p<0.01; Student’s t-test.
 
 Another aging-related phenotype in both humans and mice is osteoporosis (López-Otín et al., 2013). The mouse tibias bone structure and density were examined by a micro-CT scan followed by 3D reconstruction. The structure and density of the tibias bone between 6-month-old 129SVsl R72 and P72 mice were morphologically identical, and showed no sign of osteoporosis (Figure 3C). Osteoporosis was observed in both R72 and P72 mice at the age of 18 months. Notably, R72 mice displayed a more obvious sign of osteoporosis than P72 mice (Figure 3C). Analysis of tibias bone structure and density of mice at different ages showed aging-related changes, including decreased bone volume/total volume (BV/TV), decreased trabecular number and increased trabecular spacing during aging (Figure 3D–F). P72 mice showed a delayed development of all these aging-related changes compared with R72 mice, with the most obvious differences observed at the age of 18 months (Figure 3D–F). Similar results were obtained in C57BL/6J mice (Figure 3I–K).
 
@@ -65,15 +168,23 @@ Decreases in the skin dermal thickness and subcutaneous adipose tissues occur du
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34701/elife-34701-fig4-v2.jpg)
 
-**Figure 4.:** (A) H and E staining of cross-sections of dorsal skins from 129SVsl R72 mice and P72 mice at different ages. e: epidermis; d: dermis; a: adipose; m: muscle. Scale bar: 100 µm. (B and C) Quantification of dermal thickness (B) and subcutaneous adipose layer thickness (C) of 129SVsl R72 mice and P72 mice at different ages. (D and E) Skin wound healing abilities in 129SVsl (D) and C57BL/6J (E) R72 and P72 mice at different ages. The skin wound area was quantified as 0.25 × π ×width × length. For (B–E), data were presented as mean ± SD, n ≥ 5/group, *: p<0.05, #:p<0.01, ##: p<0.001; Student’s t-test.10.7554/eLife.34701.010Figure 4—source data 1.Quantification of subcutaneous adipose layer thickness of 129SVslsl R72 and P72 mice at different ages. Quantification of wound healing areas in 129SVsl R72 and P72 mice at different ages. Quantification of wound healing areas in C57BL/6J R72 and P72 mice at different ages.
+**Figure 4.:** (A) H and E staining of cross-sections of dorsal skins from 129SVsl R72 mice and P72 mice at different ages. e: epidermis; d: dermis; a: adipose; m: muscle. Scale bar: 100 µm. (B and C) Quantification of dermal thickness (B) and subcutaneous adipose layer thickness (C) of 129SVsl R72 mice and P72 mice at different ages. (D and E) Skin wound healing abilities in 129SVsl (D) and C57BL/6J (E) R72 and P72 mice at different ages. The skin wound area was quantified as 0.25 × π ×width × length. For (B–E), data were presented as mean ± SD, n ≥ 5/group, *: p<0.05, #:p<0.01, ##: p<0.001; Student’s t-test.
 
 One of the hallmarks of aging is the stem cell exhaustion, which leads to the reduced ability of tissue repair (López-Otín et al., 2013). Under stress, such as skin wounds, epidermal stem cells exhibit a highly organized and complex self-renewal process to restore the integrity and function of the skin. This ability dampens down as both humans and mice age (López-Otín et al., 2013). Therefore, the cutaneous repair ability of mice was examined by measuring the wound healing process which reflects the function of the skin stem cell (Shaw and Martin, 2009). Three-mm wounds were introduced in the mouse skin by punch and the wound diameters were measured daily. Both R72 and P72 129SVsl young mice (6-month-old) showed an efficient wound healing ability (Figure 4D). However, 12- and 18-month-old R72 mice showed a more pronounced decrease in the wound healing ability than age-matched P72 mice (Figure 4D). Similar results were obtained in C57BL/6J mice (Figure 4E). These results demonstrate that P72 mice exhibited a delayed aging process compared with R72 mice.
 
-## The impact of p53 Codon 72 SNP upon hematopoietic stem cell self-renewal abilities during the aging process
+### The impact of p53 Codon 72 SNP upon hematopoietic stem cell self-renewal abilities during the aging process
 
 Stem cell exhaustion is considered as a hallmark of the aging process (López-Otín et al., 2013). During aging in both humans and mice, the regeneration ability of stem cells gradually diminishes (López-Otín et al., 2013). Ample studies on stem cell aging process have focused on hematopoietic stem cell (HSC) (Chambers and Goodell, 2007; Seita and Weissman, 2010). Studies using mouse models demonstrated a HSC aging phenotype with the characteristic of the increase of the pool of stem/progenitor cells and the reduction of their self-renewal abilities during the aging process (Dumble et al., 2007; Chambers et al., 2007). p53 has been indicated to play a critical role in regulating the function of stem/progenitor cells (Dumble et al., 2007; Kaiser and Attardi, 2018). Here, we investigated the impact of p53 codon 72 SNP upon HSC pool size and self-renewal function during aging.
 
 To this end, the numbers of long term-HSCs (LT-HSCs) as well as proliferating HSCs, which represent HSC pool size and self-renewal function, respectively, were measured in R72 and P72 mice at different ages. Bone marrow cells were isolated from mouse hind limb bones and stained with mature hematopoietic lineage markers. The numbers of LT-HSCs (Lin-/low, Sca1+, c-kit+ and CD34-, Flk2-) were determined by FCM analysis (Figure 5—figure supplement 1). Consistent with previous reports (Akunuru et al., 2016; Morrison et al., 1996), the percentage of LT-HSCs in bone marrow cells clearly increased during the aging process in both 129SVsl and C57BL/6J mice (Figure 5A–C). R72 mice showed a more rapid increase in the numbers of LT-HSCs than P72 mice during aging. While there was no significant difference in LT-HSC numbers between young 129SVsl R72 and P72 mice, much higher LT-HSC numbers were observed in R72 mice than P72 mice at the age of both 12 and 18 months (Figure 5A&B). Similar results were obtained in C57BL/6J mice (Figure 5C). These results demonstrated that P72 mice showed a delayed HSC expansion during aging.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/34701/elife-34701-fig5-v2.jpg)
+
+**Figure 5.:** (A) The representative gating of long-term HSCs (LT-HSCs) in 129SVsl R72 mice and P72 mice. LT-HSCs were identified as Lin-/low, Sca1+, c-kit+ and CD34-, Flk2- cells from bone marrow by flow cytometry analysis. (B and C) The bar graph represents the percentage of LT-HSCs in the bone marrow of 129SVsl (B) and C57BL/6J (C) R72 mice and P72 mice at different ages. Data were presented as mean ± SD. n ≥ 5/group, *: p<0.05, #: p<0.01, ##: p<0.001; Student’s t-test. (D and E) The bar graph represents the percentage of proliferating HSCs in the bone marrow of 129SVsl (D) and C57BL/6J (E) R72 mice and P72 mice at different ages. Proliferating HSCs were labeled with BrdU for 16 hr in vivo and then identified as Lin-/low, Sca1+, c-kit+, Flk2 - and BrdU+ by flow cytometry analysis. Data were presented as mean ± SD. n = 5/group, *: p<0.05, #: p<0.01; Student’s t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34701/elife-34701-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Live bone marrow cells from 18-month-old 129SVsl p53 R72 mice (upper panels) and p53 P72 mice (lower panels) were gated to identify LT-HSCs. LT-HSCs were selected based on low or negative expression of mature lineage markers (Lin-/low), dual positive staining of Sca-1 and c-kit, and double negative expression of Flk2 and CD34.
 
 To determine the population of functional/proliferating HSCs in R72 and P72 mice at different ages, BrdU-labeled proliferating HSCs were quantified by FCM analysis. As shown in Figure 5D&E, the number of proliferating HSCs decreased during aging in both 129SVsl and C57BL/6J mice, which is consistent with previous reports (Dumble et al., 2007; Chambers and Goodell, 2007). Notably, the decrease of proliferating HSC numbers was more rapid in R72 mice than P72 mice during aging. In 129SVsl mice, the percentage of proliferating HSCs in all HSCs in R72 mice decreased from 45% at the age of 6 months to 28% at the age of 22 months, whereas the decrease of proliferating HSCs in P72 mice was less pronounced: from 44% at the age of 6 months to 34% at the age of 22 months (Figure 5D). Similar results were obtained in C57BL/6J mice; the decrease of proliferation HSCs was more rapid in R72 mice than P72 mice during aging (Figure 5E).
 
@@ -81,7 +192,7 @@ To further evaluate the self-renewal and repopulation function of HSCs in mice w
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34701/elife-34701-fig6-v2.jpg)
 
-**Figure 6.:** (A) The experimental design for bone marrow transplantation assays to examine engraftment and repopulation abilities of HSCs in mice. (B) Percentage of CD45.2 cells in peripheral blood at 16 weeks after engraftment. In both 129SVsl mice (left) and C57BL/6J mice (right), aged P72 mice showed better stem cell abilities of engraftment and repopulation compared with aged R72 mice. n = 6/group, ##: p<0.001; Student’s t-test. (C) The mRNA expression levels of p21, Puma and Noxa (upper panels) and the protein expression levels of p21 (lower panels) in bone marrow from 129SVsl p53 R72 and P72 mice at different ages as determined by real-time PCR assays and Western-blot assays, respectively. Data were presented as mean ± SD, n = 4/group, *p<0.05; Student’s t-test. (D) A schematic model depicting the dual functions of p53 codon 72 SNP in regulating longevity.10.7554/eLife.34701.015Figure 6—source data 1.The mRNA expression levels of p21, Puma and Noxa in bone marrow from 129SVsl p53 R72 and P72 mice.
+**Figure 6.:** (A) The experimental design for bone marrow transplantation assays to examine engraftment and repopulation abilities of HSCs in mice. (B) Percentage of CD45.2 cells in peripheral blood at 16 weeks after engraftment. In both 129SVsl mice (left) and C57BL/6J mice (right), aged P72 mice showed better stem cell abilities of engraftment and repopulation compared with aged R72 mice. n = 6/group, ##: p<0.001; Student’s t-test. (C) The mRNA expression levels of p21, Puma and Noxa (upper panels) and the protein expression levels of p21 (lower panels) in bone marrow from 129SVsl p53 R72 and P72 mice at different ages as determined by real-time PCR assays and Western-blot assays, respectively. Data were presented as mean ± SD, n = 4/group, *p<0.05; Student’s t-test. (D) A schematic model depicting the dual functions of p53 codon 72 SNP in regulating longevity.
 
 In response to stress, p53 transcriptionally regulates a group of target genes that can lead to different cell fates through inducing growth arrest or apoptosis, etc. Here, 129SVsl mice were employed to examine whether p53 codon 72 SNP differentially regulates the basal expression of its target genes involved in cell cycle arrest (p21) and apoptosis (Puma and Noxa), which in turn impacts the number and function of stem cells. As shown in Figure 6C, p21 mRNA expression levels in the bone marrow were slightly higher in P72 mice compared with R72 mice as determined by real-time PCR assays with this difference being more obvious in older mice than young mice. This difference in p21 expression levels was confirmed at the protein level as determined by Western-blot assays (Figure 6C). In contrast, the bone marrow from P72 mice displayed slightly lower expression levels of Puma and Noxa than that from R72 mice (Figure 6C). These results demonstrate the differential regulation of the basal expression levels of p21, Puma and Noxa by p53 codon 72 SNP in the bone marrow, which may contribute to the delayed aging process in HSC number and function observed in P72 mice.
 
@@ -99,42 +210,42 @@ Taken together, results from this study provided the genetic evidence showing th
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Hupki mice carrying either the P72 or R72 allele were generous gifts from Dr. Maureen Murphy (The Wistar Institute) (Kung et al., 2016). Hupki mice in 129SVsl and C57BL/6J backgrounds were produced by backcrossing Hupki mice ten times to 129SVsl and C57BL/6J, respectively. C57BL/6J CD45.1 mice (RRID:IMSR_JAX:002014) were purchased from The Jackson Laboratory (Bar Harbor, ME). All animal experiments were approved by the IACUC committee of Rutgers University.
 
-## Micro-CT scan analysis
+### Micro-CT scan analysis
 
 Mice were anesthetized for CT scanning of whole body skeletons using the INVEON PET/CT system (Siemens Healthcare). The images were reconstructed using INVEON Research Workplace software (Siemens Healthcare, Tarrytown, NY).
 
 The bone microstructure measurement was carried out as previously described (Ell et al., 2013). In brief, mouse tibias were scanned by micro-CT. The images were reconstructed with Beam Hardening Correction and Hounsfield calibrated before being analyzed using INVEON Research Workplace software. The 3D images were generated corresponding to the trabecular bone regions. CT scans were carried out at the Preclinical Imaging Shared Resource of Rutgers Cancer Institute of New Jersey.
 
-## Histology
+### Histology
 
 Paraffin-embedded skin specimens were sectioned with 5 µm thickness and stained with hematoxylin and eosin (H and E). The thickness of the dermal and adipose layers from the skin samples were determined by taking three random measurements along the length of each skin sample using ImageJ software.
 
-## Cutaneous wound healing assays
+### Cutaneous wound healing assays
 
 Cutaneous wound healing assays were carried out as previously described (Tyner et al., 2002). In brief, mice were anesthetized and a full-thickness wound was generated in the mouse dorsal skin using a 3 mm biopsy punch (Integra, York, PA). Wound diameters were measured daily. Wound areas = 0.25 × π ×width × length.
 
-## Flow cytometry (FCM) assays to determine LT-HSC numbers and HSC proliferation
+### Flow cytometry (FCM) assays to determine LT-HSC numbers and HSC proliferation
 
 LT-HSC numbers were determined as previously described (Dumble et al., 2007). In brief, bone marrow cells were flushed out from mouse hind limb bones with PBS and stained with a cocktail of antibodies (BD bioscience Pharmingen), including an anti-lineage-APC antibody (RRID:AB_1645213), an anti-Sca-1-PE-Cy7 antibody (RRID:AB_647253), an anti-c-kit-PE-CF594 antibody (RRID:AB_11154233), an anti-CD34-FITC antibody (RRID:AB_395017) and an anti-Flk-2-PE antibody (RRID:AB_395079). LT-HSCs which were selected as Lin-/low, Sca1+, c-kit+ and CD34-, Flk2- cells were quantified by FCM analysis using a Beckman-Coulter Cytomics FC500 Flow Cytometer (Indianapolis, IN).
 
 To determine the HSC proliferation ability, mice were injected intraperitoneally with 1 mg BrdU (BD bioscience Pharmingen) at 16 hr before the collection of bone marrow. Bone marrow cells were stained with a cocktail of antibodies, including an anti-lineage-APC antibody, an anti-Sca-1-PE-Cy7 antibody, an anti-c-kit-PE-CF594 antibody and an anti-Flk-2-PE antibody. After cell surface staining, a BrdU-FITC Flow Kit (BD bioscience Pharmingen; RRID:AB_2617060) was used to identify cycling cells according to the manufacturer’s instructions. Proliferating HSCs were identified as Lin-/low, Sca1+, c-kit+, Flk2- and BrdU+ by FCM analysis.
 
-## Total bone marrow competitive transplantation assays
+### Total bone marrow competitive transplantation assays
 
 Bone marrow transplantation assays were carried out as previously described (Dumble et al., 2007). In brief, bone marrow cells from 6-month-old and 18-month-old ‘donor’ CD45.2 mice were mixed with bone marrow cells from 6-month-old ‘competitor’ CD45.1 mice at a ratio of 2:1. Recipient CD45.1 mice at the age of 6 to 12 week-old were irradiated with a lethal dose of 10 Gy the day before bone marrow transplantation. n = 6/group. The mixture of bone marrow cells was injected into recipient mice via the tail vein. Sixteen weeks after transplantation, peripheral white blood cells of recipient mice were analyzed for CD45.1 and CD45.2 cell surface markers using an anti-CD45.1-PE antibody (RRID:AB_395044) and an anti-CD45.2-FITC antibody (RRID:AB_395041), respectively (BD Biosciences Pharmingen).
 
-## Western-blot assays
+### Western-blot assays
 
 Standard Western-blot assays were used to analyze protein expression in tissues. The following antibodies were used for assays: anti-p53 (FL393, Santa Cruz Biotechnology; RRID; AB_653753), anti-p21 (Santa Cruz Biotechnology; RRID:AB_628073), and β-actin (Sigma; RRID:AB_476744).
 
-## Taqman real-time PCR
+### Taqman real-time PCR
 
 Total RNA was prepared by using an RNeasy kit (Qiagen). All probes were purchased from Applied Biosystems. Real-time PCR was done in triplicate with TaqMan PCR mixture (Applied Biosystems). The expression of genes was normalized to the β-actin gene.
 
-## Statistical analysis
+### Statistical analysis
 
 The data were present as mean ± SD. The lifespan of mice were summarized by Kaplan-Meier plots and compared using the log-rank test using GraphPad Prism software. All other p values were obtained using the Student’s t-test. Based on survival data of p53 codon 72 SNP mice, we hypothesized that the P72 mice have a delayed development of aging associated phenotypes. Therefore, one-tailed Student’s t-test was used for majority of data analysis related to the development of aging associated phenotypes. Values of p<0.05 were considered to be significant.

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.36588.001 Ribosome degradation through the autophagy-lysosome pathway is crucial for cell survival during nutrient starvation, but whether it occurs under normal growth conditions and contributes to animal physiology remains unaddressed. In this study, we identified RNST-2, a C. elegans T2 family endoribonuclease, as the key enzyme that degrades ribosomal RNA in lysosomes. We found that loss of rnst-2 causes accumulation of rRNA and ribosomal proteins in enlarged lysosomes and both phenotypes are suppressed by blocking autophagy, which indicates that RNST-2 mediates autophagic degradation of ribosomal RNA in lysosomes. rnst-2(lf) mutants are defective in embryonic and larval development and are short-lived. Remarkably, simultaneous loss of RNST-2 and de novo synthesis of pyrimidine nucleotides leads to complete embryonic lethality, which is suppressed by supplements of uridine or cytidine. Our study reveals an essential role of autophagy-dependent degradation of ribosomal RNA in maintaining nucleotide homeostasis during animal development.
+Ribosome degradation through the autophagy-lysosome pathway is crucial for cell survival during nutrient starvation, but whether it occurs under normal growth conditions and contributes to animal physiology remains unaddressed. In this study, we identified RNST-2, a C. elegans T2 family endoribonuclease, as the key enzyme that degrades ribosomal RNA in lysosomes. We found that loss of rnst-2 causes accumulation of rRNA and ribosomal proteins in enlarged lysosomes and both phenotypes are suppressed by blocking autophagy, which indicates that RNST-2 mediates autophagic degradation of ribosomal RNA in lysosomes. rnst-2(lf) mutants are defective in embryonic and larval development and are short-lived. Remarkably, simultaneous loss of RNST-2 and de novo synthesis of pyrimidine nucleotides leads to complete embryonic lethality, which is suppressed by supplements of uridine or cytidine. Our study reveals an essential role of autophagy-dependent degradation of ribosomal RNA in maintaining nucleotide homeostasis during animal development.
 
 ## Introduction
 
@@ -35,11 +35,23 @@ In this study, we identified RNST-2, the C. elegans T2 family endoribonuclease, 
 
 ## Results
 
-## qx245 mutants contain abnormal lysosomes
+### qx245 mutants contain abnormal lysosomes
 
 From a forward genetic screen for mutants with lysosomal defects, we isolated qx245, which contained abnormally enlarged lysosomes. In wild type, lysosomes labeled by the lysosomal membrane protein LAAT-1::GFP and the lysosomal DNase II NUC-1::CHERRY appeared as small puncta and thin tubules, with an average volume of 0.77 μm3 in 4-fold embryos and L1 larvae (Figure 1A,D,G,J,M and Figure 1—figure supplement 1A,D,G,J,M,P) (Guo et al., 2010; Liu et al., 2012). In qx245 mutants, however, enlarged lysosomes were observed at embryonic, larval and adult stages in multiple cell types including hypodermal cells, muscle cells and sheath cells (Figure 1B,E,H,K and Figure 1—figure supplement 1B,E,H,J,K,M,N). The average volume of lysosomes reached 2.85 μm3 in qx245 embryos and L1 larvae, and 5.67 μm3 in adult hypodermis, which is 3.7 and 2.5 times bigger than in wild type, respectively (Figure 1M and Figure 1—figure supplement 1P). The enlargement of lysosomes in qx245 was observed from late embryonic to early larval stages, and at the adulthood (Figure 1—figure supplement 1Q). We found that the enlarged lysosomes in qx245 mutants were stained by Lysotracker Red to a similar extent as in wild type, suggesting that lysosome acidification is not affected (Figure 1J–K”, N and Figure 1—figure supplement 1R).
 
-## qx245 affects RNST-2, a widely expressed lysosomal T2 endoribonuclease
+![Figure 1.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig1-v2.jpg)
+
+**Figure 1.:** (A–I) Confocal fluorescence images of embryos at the 4-fold stage (4F, A–C), larvae 1 (L1, D–F) and adult hypodermis (G–I) in wild-type (WT, A, D, G), rnst-2(qx245) (B, E, H) and rnst-2(bp555) (C, F, I) expressing LAAT-1::GFP. (J–L”) Confocal fluorescence images of the hypodermis in wild-type (J–J″), rnst-2 (qx245) (K–K″) and rnst-2(bp555) (L–L″) adults expressing LAAT-1::GFP and stained by Lysotracker red. In (A–L’’), white arrowheads and arrows indicate globular and tubular lysosomes, respectively, and blue arrowheads indicate enlarged globular lysosomes. Scale bars: 5 µm. (M) Quantification of the average volume of lysosomes labeled by LAAT-1::GFP in 4-fold-stage embryos (4F), L1 larvae (L1) and adult hypodermis (day 3 of adulthood). (N) The percentage of LAAT-::GFP-positive lysosomes that were stained by lysotracker red was quantified in adult hypodermis. In (M, N), at least 10 worms were scored in each strain at each stage. Data are shown as mean ± SD. Two-way ANOVA with the Bonferroni post hoc test (M) or one-way ANOVA with Tukey’s post hoc test (N) was performed to compare mutant datasets with wild type. ***p<0.001, other points had p>0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–I) Confocal fluorescence images of embryos at the 4-fold stage (4F, (A–C), larvae 1 (L1, D–F) and adult hypodermis (G–I) in wild-type (WT, (A, D, G), rnst-2(qx245) (B, E, H) and rnst-2(bp555) (C, F, I) expressing NUC-1::CHERRY. (J–O) Confocal fluorescence images in sheath cells (J–L) and body wall muscle cells (M–O) in wild-type (J, M), rnst-2(qx245) (K, N) and rnst-2(bp555) (L, O) adults expressing LAAT-1::GFP driven by ced-1 (J–L) or myo-3 promoter (M–O). White arrowheads and arrows indicate globular and tubular lysosomes, and yellow arrowheads indicate enlarged lysosomes in rnst-2(qx245) and rnst-2(bp555). Scale bars: 5 µm. (P) Quantification of the volume of lysosomes labeled by NUC-1::CHERRY in 4-fold embryos (4F), L1 larvae (L1) and adult hypodermis (day 3 of adulthood). (Q) Quantification of the average volume of lysosomes labeled by NUC-1::CHERRY in wild type (WT) and rnst-2(qx245) at different stages. At least 10 worms were scored in each strain at each stage and data are shown as mean ± SEM. (R) Volume of lysotracker-stained- and LAAT-1::GFP-positive lysosomes was quantified in the adult hypodermis and compared. In (P, R), at least 10 worms were scored in each strain and data are shown as mean ± SD. Two-way ANOVA with the Bonferroni post hoc test (P) or one-way ANOVA with Tukey’s post hoc test (R) was performed to compare mutant datasets with wild type. ***p<0.001, other points had p>0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cloning of rnst-2. The top bar indicates the genetic position of rnst-2. The rnst-2 gene structure is shown with filled boxes representing exons and thin lines indicating introns. The arrow delineates the direction of transcription. The position of the mutation site in qx245 and bp555 is indicated. (B, F–K) Confocal ﬂuorescence images of lysosomes in the indicated strains at the L1 stage expressing LAAT-1::GFP. White arrowheads and arrows indicate globular and tubular lysosomes, respectively, and yellow arrowheads indicate enlarged lysosomes. (C–E) Confocal ﬂuorescence images of wild-type larvae expressing RNST-2::CHERRY (C), RNST-2(H118A)::CHERRY (D) and human RNASET2::CHERRY (E) driven by the rnst-2 promoter. Scale bars in (B–K): 5 µm. (L) Sequence alignment of C. elegans (c.e) RNST-2, Drosophila melanogaster (d.r) RNASET2 and human (h.s) RNASET2. Identical residues are shaded in black and similar ones are marked in white boxes. Blue boxes indicate two conserved catalytic active sites (CAS). Mutations identified in different rnst-2 alleles are in red.
+
+### qx245 affects RNST-2, a widely expressed lysosomal T2 endoribonuclease
 
 The qx245 mutation affects the gene rnst-2, which encodes a T2 family endoribonuclease (RNase T2) (Figure 1—figure supplement 2A and L). RNase T2 family enzymes catalyze cleavage of single-stranded RNA at all four bases with an optimal pH of 4–5 (Luhtala and Parker, 2010). These enzymes perform diverse functions in a wide variety of organisms by processing extracellular and intracellular RNAs (Luhtala and Parker, 2010). We found that qx245 carried a G-to-A mutation in rnst-2 that resulted in the replacement of Gly 119 by Glu (Figure 1—figure supplement 2L). bp555, an independently isolated rnst-2 mutant allele, caused a premature stop codon after Pro 55. The G119E mutation in qx245 affected the second catalytic active site (CAS II), whereas both CAS I and II were lost in bp555, suggesting that qx245 and bp555 are strong loss-of-function or null mutations of rnst-2 (Figure 1—figure supplement 2L). Consistent with this, enlarged lysosomes were observed in bp555, like in qx245 (Figure 1C,F,I,L,M and Figure 1—figure supplement 1C,F,I,L,O,P). C. elegans RNST-2 shares 47% sequence similarity and 29% sequence identity with human RNASET2 (Figure 1—figure supplement 2L). Expression of RNST-2 or human RNASET2 controlled by the rnst-2 promoter efficiently rescued the enlarged lysosome phenotype in qx245 mutants, suggesting that RNASET2 can substitute for worm RNST-2 in maintaining lysosome morphology (Figure 1—figure supplement 2C,E–G,I).
 
@@ -49,37 +61,73 @@ We generated a RNST-2::CHERRY reporter driven by the rnst-2 promoter, which full
 
 **Figure 2.:** (A–H′) DIC and confocal fluorescence images of wild type expressing RNST-2::CHERRY driven by the rnst-2 promoter. RNST-2::CHERRY is expressed from early embryos (A, A’) to the adult stage in various cell types including hypodermis (B, B’), intestine (C, C’), sheath cell (D, D’), pharynx (E, E’), tail (F, F’), vulva (G, G’) and muscle cell (H, H’). (I–J″) Confocal fluorescence images of the hypodermis in wild type co-expressing RNST-2::CHERRY and LAAT-1::GFP (I–I″) or SCAV-3::GFP (J–J″). RNST-2 colocalizes with LAAT-1 and SCAV-3 to both globular (arrowheads) and tubular (arrows) lysosomes. Scale bars: 5 µm.
 
-## rnst-2(lf) lysosomes accumulate rRNA and ribosomal proteins in an autophagy-dependent manner
+### rnst-2(lf) lysosomes accumulate rRNA and ribosomal proteins in an autophagy-dependent manner
 
 To determine whether RNST-2 functions as a ribonuclease in lysosomes, we performed rescue experiments. Expression of wild-type RNST-2, but not RNST-2(H118A), which carries a mutation in the histidine residue (H118) essential for the catalytic activity of endoribonuclease T2 (Kawata et al., 1990), rescued the enlarged lysosome phenotype of rnst-2(qx245) mutants, indicating that catalytic activity of RNST-2 is important for its function in lysosomes (Figure 1—figure supplement 2C,D,G,H). We purified lysosomes from wild type and rnst-2 worms and extracted RNA from lysosomes (Figure 3—figure supplement 1A,B) (Liu et al., 2012). We found that rnst-2(qx245) and rnst-2(bp555) lysosomes accumulated high levels of RNA, especially 26S and 18S rRNA (Figure 3A and Figure 3—figure supplement 1C). The total RNA level in rnst-2 lysosomes was more than five times higher than in wild type (Figure 3A and Figure 3—figure supplement 1C). Moreover, lysosomal accumulation of ribosomal proteins from the large and small subunits was observed in rnst-2(qx245) and rnst-2(bp555) but not wild-type worms (Figure 3B and Figure 3—figure supplement 1D). The lysosomal accumulation of RNA and ribosomal proteins in rnst-2(qx245) mutants was fully suppressed by expression of RNST-2 (Figure 3A and B). These data indicate that loss of RNST-2 disrupts ribosomal RNA degradation in lysosomes. The defective degradation of rRNA in rnst-2 lysosomes may impair further digestion of ribosomes, causing accumulation of ribosomal proteins in lysosomes.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig3-v2.jpg)
+
+**Figure 3.:** (A, C) RNA purified from lysosomes in the indicated strains was examined by agarose gel electrophoresis. Full processing of the lysosomal cathepsin CPL-1 (dc-CPL-1) was used to normalize the amount of lysosomes in each strain. The total extracted RNA was quantified and normalized to 1-fold in wild type (A, C, right panel). Abundant 26S and 18S rRNA was observed in lysosomes of rnst-2(qx245) mutants. At least three independent experiments were performed and data are shown as mean ± SD. (B, D) Accumulation of ribosomal proteins (large subunit: RPL-5, RPL-25.2; small subunit: RPS-3 and RPS-0) and LGG-1 in lysosomes was examined by western blot analysis in the indicated strains. Full processing of the lysosomal cathepsin CPL-1 (dc-CPL-1) was used to normalize the amount of lysosomes in each strain. (E–H) 3D reconstitution of the fluorescence images in 10–15 z-series (0.5 µm/section) in L1 larvae of the indicated strains expressing LAAT-1::GFP. Enlarged lysosomes (arrowheads) were observed in rnst-2(qx245). (I) Quantification of the average volume of lysosomes in the strains shown in (E–H). At least 10 worms were scored in each strain and data are shown as mean ± SD. In (A, C, I), one-way ANOVA with Tukey’s post hoc test was performed to compare all other datasets with wild type or datasets that are linked by lines (I). ***p<0.0001, N.S.: no significance.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The processing of the lysosomal cathepsin CPL-1 is revealed by western blot using anti-CPL-1 antibodies (full length: 38 KD, processed active form: 27 KD), and was used to determine the enrichment of lysosomes in different fractions (B1-4) separated by a density gradient as described in the Materials and methods. Fraction B3 was used as the purified lysosomal fraction (PLF). (B) The purity of PLF was examined by western blot using antibodies that recognize proteins in nuclei (anti-HEL-1), mitochondria (anti-HSP-60), endosomes (anti-RME-1) or ribosomes (anti-RPL-5, anti-RPL-25.2, anti-RPS-3, anti-RPS-0). The whole worm lysate (WL) and PLF was normalized using fully processed CPL-1. (C–F) Accumulation of RNA (C, E) and ribosomal proteins (D, F) in lysosomes was examined in the indicated strains. Fully processed CPL-1 (dc-CPL-1) was used to normalize the amount of lysosomes in different strains. Total RNA purified from lysosomes was quantified and normalized as 1-fold in wild type. At least three independent experiments were performed and data are shown as mean ± SD. (G–L) 3D reconstitution of the fluorescence images in 10–15 z-series (0.5 µm/section) in L1 larvae of the indicated strains expressing NUC-1::CHERRY. Arrowheads indicate enlarged lysosomes in rnst-2(qx245). (M) Quantification of the average volume of lysosomes in the indicated strains. At least 10 worms were quantified in each strain and data are shown as mean ± SD. In (C, E, M), Student’s two-tailed unpaired t test (C) or one-way ANOVA with Tukey’s post hoc test (E, M) was performed to compare other datasets with wild type or datasets that are linked by lines. ***p<0.0001, N.S.: no significance.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–F) Confocal fluorescence images of embryos in wild type (A, C, E) and rnst-2(qx245) (B, D, F) expressing VIT-2::GFP at different stages. (G–H’) DIC and confocal fluorescence images of the day three adult in wild type (G, G’) and rnst-2(qx245) (H, H’) expressing CAV-1::GFP. White arrowheads indicate spermatheca, yellow and blue arrowheads indicate oocytes and embryos, respectively. Scale bars: 5 µm. (I, J) Quantification of embryonic (I) and germ cell corpses (J) in wild type and rnst-2(qx245). At least 10 worms were scored in each strain and data are shown as mean ± SD. Two-way ANOVA with the Bonferroni post hoc test (I) or Student’s two-tailed unpaired t test (J) was performed to compare other datasets with wild type. All points had p>0.05.
+
 We next investigated whether autophagy is responsible for delivering ribosomal RNA to lysosomes. ATG-2/ATG2 and EPG-6/WIPI4 regulate autophagosome formation and loss of their functions disrupt progression from phagophores to complete autophagosomes (Tian et al., 2010; Lu et al., 2011). We found that mutation of atg-2 or epg-6 completely suppressed lysosomal accumulation of rRNA and ribosomal proteins in rnst-2(qx245) mutants (Figure 3C,D and Figure 3—figure supplement 1E,F). Moreover, lysosome volume, which was greatly increased in rnst-2(qx245), was reduced significantly in rnst-2;atg-2 double mutants (Figure 3E–I). Loss of EPG-6 or LGG-1, the C. elegans homolog of Atg8/LC3, also led to greatly reduced lysosome volume in rnst-2 (Figure 3—figure supplement 1G–M). Altogether, these data suggest that rRNA and ribosomal proteins are delivered to lysosomes through autophagy and defects in their degradation lead to enlargement of lysosomes in rnst-2 mutants.
 
-## Loss of RNST-2 does not affect endocytic and phagocytic cargo degradation but partially impairs autophagy
+### Loss of RNST-2 does not affect endocytic and phagocytic cargo degradation but partially impairs autophagy
 
 rnst-2 mutants accumulate ribosomal RNA and proteins that are delivered to lysosomes by autophagy. We next examined whether loss of RNST-2 also affects degradation of endocytic and phagocytic cargos. Cell surface protein CAV-1 and yolk lipoprotein VIT-2 are delivered to lysosomes through the endocytic pathway and are degraded shortly after fertilization and during embryogenesis, respectively (Sato et al., 2006; Grant and Hirsh, 1999). In rnst-2(qx245) embryos, both VIT-2::GFP and CAV-1::GFP were properly degraded as in wild type (Figure 3—figure supplement 2A–H’). Moreover, rnst-2(qx245) mutants contained similar numbers of embryonic and germ cell corpses as in wild type, suggesting that phagocytosis and degradation of apoptotic cells is unaffected (Figure 3—figure supplement 2I,J). These data suggest that lysosomal degradation of endocytic and phagocytic cargos is not affected in rnst-2(lf) mutants. rnst-2(lf) lysosomes contained high levels of LGG-1, which associates with autophagosomes and their precursors (Figure 3B). This lysosomal accumulation of LGG-1 is consistent with defects in degrading autophagic cargos (Tian et al., 2010). We next examined whether the autophagy process is affected in rnst-2 mutants. The PGL granule component PGL-3 is removed in soma by selective autophagy during embryogenesis, which requires the bridging molecule SEPA-1 (Zhang et al., 2009). PGL-3 and SEPA-1 puncta persisted in autophagy-defective mutants such as atg-2 (Figure 4—figure supplement 1C,C’, F,F’) (Zhang et al., 2009), but were removed in both wild-type and rnst-2 embryos, suggesting that autophagic clearance of PGL granules is unaffected in rnst-2 mutants (Figure 4—figure supplement 1A–B’, D–E’). SQST-1 is the C. elegans p62 homolog that associates with various protein aggregates and is removed by autophagy (Tian et al., 2010). SQST-1 puncta were cleared in wild-type embryos, present in late-staged rnst-2 mutant embryos, and persisted at both early and late stages in atg-2 embryos (Figure 4A–I’ and Figure 4—figure supplement 1G–I’). Similarly, LGG-1, which associates with autophagic structures and is a substrate of autophagy, was present in atg-2 embryos at both early and late stages, but accumulated only in late-staged embryos in rnst-2 mutants (Figure 4J–R’ and Figure 4—figure supplement 1J–L’). In addition, GFP::ATG-18, the PtdIns3P-binding protein that associates with early autophagic structures (Lu et al., 2011), was diffuse in the cytoplasm in both wild type and rnst-2(lf), suggesting that autophagosome formation is not blocked (Figure 4—figure supplement 2). Altogether, these data suggest that the autophagy process is partially impaired or delayed in rnst-2(lf), causing accumulation of SQST-1 and LGG-1 in late-staged embryos. Consistent with this, rnst-2 mutants accumulated both LGG-1-I and LGG-1-II (lipid-conjugated form of LGG-1) at embryonic and adult stages (Figure 4S and T). Moreover, loss of rnst-2 significantly shortened the lifespan of the L1 larvae in the absence of food (Figure 4U), a process that requires autophagy activity (Kang et al., 2007).
 
-## rnst-2 mutants are defective in embryogenesis and larval development, and are short-lived
+### rnst-2 mutants are defective in embryogenesis and larval development, and are short-lived
 
 rnst-2 mutants are viable but grow slowly. Both rnst-2(qx245) and rnst-2(bp555) were retarded in embryogenesis and exhibited 20–30% embryonic lethality (Figure 5A and B). Moreover, approximately 50% of rnst-2(qx245) and rnst-2(bp555) embryos that hatched were arrested during larval development, and this arrest was rescued by expression of RNST-2 (Figure 5C). These data indicate that loss of rnst-2 severely affects embryonic and larval development. In addition to affecting development, rnst-2 mutants are short-lived compared with wild type (Figure 5D and E). To further investigate the effect of rnst-2(lf) on lifespan, we examined whether loss of rnst-2 affects the lifespan of long-lived mutants. Reducing insulin signaling extends the lifespan in C. elegans (Murphy and Hu, 2013). Worms that carry a loss-of-function mutation in the insulin receptor DAF-2 live twice as long as wild-type worms (Figure 5D and E) (Kenyon et al., 1993). We found that loss of rnst-2 significantly reduced the lifespan of daf-2(lf) worms to the wild-type level (Figure 5D and E). Moreover, loss of rnst-2 also reduced the lifespan of glp-1(e2144), which affects germline stem cells and thus extends lifespan (Figure 5F and G) (Arantes-Oliveira et al., 2002). These data suggest that RNST-2 function is important for maintaining normal lifespan and for the lifespan extension in daf-2 and glp-1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig4-v2.jpg)
+
+**Figure 4.:** (A–R’) Confocal fluorescence images of embryos in wild type (WT), rnst-2(qx245) and atg-2(bp576) at 200 cell (A–C’, J–L”), comma (D–F’, M–O’) and 4-fold (G–I’, P–R’) stages stained by anti-SQST-1 (A–I’) or anti-LGG-1 antibodies (J–R’). DAPI staining shows nuclei in each embryo. Scale bars: 5 µm. (S, T) Western blot analysis of LGG-1-I and LGG-1-II (lipid-conjugated form) in wild-type, rnst-2(qx245), rnst-2(bp555) and atg-2(bp576) at the embryonic (S) and adult stages (day 3 of adulthood) (T). (U) The survival of L1 larvae in the absence of food was quantified in the indicated strains. At least 200 animals were scored at each time point in each strain. three independent experiments were performed and the mean lifespan of L1 larvae in the absence of food was quantified (right panel). The data are shown as mean ± SD. One-way ANOVA with Tukey’s post hoc test was performed to compare mutant datasets with wild type. ***p<0.0001, N.S., no significance.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Confocal fluorescence images of embryos in wild type (A–A’, D–D’), rnst-2(qx245) (B–B’, E–E’), atg-2(bp576) (C–C’, F–F’) and rnst-2(bp555) (G–L’) stained by anti-SEPA-1 (A–C’), anti-PGL-3 (D–F’), anti-SQST-1 (G–I’) or anti-LGG-1 (J–L’) antibodies at 200 cell (A–G’, J, J’), comma (H, H’, K, K’) and 4-fold (I, I’, L, L’) stages. White arrowhead indicates PGL-3 in the germline precursor cells, which is not removed by autophagy. DAPI staining shows nuclei in each embryo. Scale bars: 5 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** DIC and confocal fluorescence images of embryos in wild type (A–D’) and rnst-2(qx245) (E– H’) expressing GFP::ATG-18 at pre-comma (A, A’, E, E’), comma (B, B’, F, F’), 2-fold (C, C’, G, G’) and 4-fold (D, D’, H, H’) stages. Scale bars: 5 µm.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig5-v2.jpg)
 
-**Figure 5.:** rnst-2 mutants are defective in embryogenesis and larval development, and are short-lived.(A–C) Embryonic and larval development was examined in wild type, rnst-2(qx245) and rnst-2(bp555). At least 150 embryos and 100 larvae were examined in each strain and at least three independent experiments were performed. (D–G) Lifespan analyses were performed in the indicated strains. More than 100 worms were examined in each strain and three independent experiments were performed. The mean lifespan in the indicated strains was quantified and is shown in (E, G). Data are shown as mean ± SD. One-way ANOVA with Tukey’s post hoc test was performed to compare datasets with wild type or datasets that are linked by lines. *p<0.05, **p<0.001, ***p<0.0001.10.7554/eLife.36588.019Figure 5—source data 1.Figure 5 numerical data.
+**Figure 5.:** (A–C) Embryonic and larval development was examined in wild type, rnst-2(qx245) and rnst-2(bp555). At least 150 embryos and 100 larvae were examined in each strain and at least three independent experiments were performed. (D–G) Lifespan analyses were performed in the indicated strains. More than 100 worms were examined in each strain and three independent experiments were performed. The mean lifespan in the indicated strains was quantified and is shown in (E, G). Data are shown as mean ± SD. One-way ANOVA with Tukey’s post hoc test was performed to compare datasets with wild type or datasets that are linked by lines. *p<0.05, **p<0.001, ***p<0.0001.
 
-## Simultaneous loss of rnst-2 and de novo synthesis of pyrimidines leads to synthetic embryonic lethality
+### Simultaneous loss of rnst-2 and de novo synthesis of pyrimidines leads to synthetic embryonic lethality
 
 RNST-2 is an endoribonuclease that degrades RNA in lysosomes. We suspected that defective RNA degradation in rnst-2(lf) mutants affects generation and recycling of RNA catabolites, which are important for animal development. Pyrimidine and purine nucleotides are essential components of RNA. They are produced through both de novo and salvage pathways and are building blocks for the synthesis of RNA, DNA, phospholipids and nucleotide sugars (Huang and Graves, 2003). As purine metabolic pathways are not well understood in C. elegans and the key enzyme involved in purine biosynthesis is not clearly identified, we focused on the pyrimidine pathway. PYR-1/CAD and UMPS-1/UMPS are two key enzymes required for the de novo synthesis of UMP, the precursor for other pyrimidine nucleotides (Merry et al., 2014; Franks et al., 2006; Huang and Graves, 2003). pyr-1(cu8) and umps-1(mn160) single mutants exhibited 50% and 25% embryonic lethality, respectively, indicating that pyrimidine biosynthesis is important for embryogenesis (Figure 6A and B). We found that loss of rnst-2 and pyr-1 or rnst-2 and umps-1 led to almost 100% embryonic lethality (Figure 6A,B and Figure 6—figure supplement 1A,B). By contrast, loss of the lysosomal amino acid transporter LAAT-1, which blocks transport of lysine and arginine out of lysosomes, did not cause increased embryonic lethality in pyr-1 or umps-1 mutants (Figure 6A and B) (Liu et al., 2012). Moreover, loss of LMP-1, the lysosomal membrane protein homologous to human LAMP1, did not affect embryonic and larval development, and had no effect on the embryonic viability in pyr-1 or umps-1 (Figure 6—figure supplement 1C–E). These data suggest that loss of RNST-2 function, but not a general defect of lysosomes, leads to the synthetic embryonic lethality in pyr-1 or umps-1 mutants. Similar to rnst-2(lf), the pyr-1(cu8) mutation also caused a significantly shortened lifespan in daf-2(lf) worms, whereas laat-1(qx42) was less effective in reducing the daf-2(lf) lifespan (Figure 6—figure supplement 1F–I). These data suggest that maintenance of pyrimidine homeostasis is important for extended lifespan in daf-2(lf).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig6-v2.jpg)
+
+**Figure 6.:** The percentage of viable embryos was scored in the indicated strains without (A, B) or with uridine (C, D) or cytidine supplementation (E, F). At least 150 embryos were examined in each strain and three independent experiments were performed. Data are shown as mean ± SD. One-way ANOVA with Tukey’s post hoc test was performed to compare all other datasets with wild type or datasets that are linked by lines. *p<0.05, **p<0.001, ***p<0.0001, N.S.: no significance.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–E) The percentage of viable embryos (A–D) and L1 larvae growing to L4 (E) was quantified in the indicated strains. At least 150 embryos or 100 larvae were examined in each strain and at least three independent experiments were performed. (F–I) Lifespan analyses were performed in the indicated strains. More than 100 worms were examined in each strain and three independent experiments were performed. The mean lifespan in the indicated strains was quantified and is shown in (G, I). In (A–E, G, I), data are shown as mean ± SD. One-way ANOVA with Tukey’s post hoc test (A–D, G, I) or Student’s two-tailed unpaired t test (E) was performed to compare datasets with wild type or datasets that are linked by lines. *p<0.05, **p<0.001, ***p<0.0001, N.S.: no significance.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36588/elife-36588-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The percentage of viable embryos was quantified in the indicated strains without (A, B) or with uridine (C) or cytidine (D) treatment. At least 150 embryos were examined in each strain/treatment and at least three independent experiments were performed. One-way ANOVA with Tukey’s post hoc test (A, B) or Two-way ANOVA with the Bonferroni post hoc test (C, D) was performed to compare datasets with wild type or datasets that are linked by lines. *p<0.05, **p<0.001, ***p<0.0001, all other points had p>0.05.
 
 To further test whether lysosomal degradation of rRNA by RNST-2 is important in providing pyrimidines during embryonic development, we performed pyrimidine supplement experiments. External supplement of uridine had no effect on embryogenesis in wild type, but efficiently suppressed the synthetic embryonic lethality in pyr-1;rnst-2 double mutants (Figure 6C). The embryonic lethality in umps-1;rnst-2 was partially relieved by uridine supplement, consistent with the idea that UMPS-1 acts in both de novo and salvage pathways to synthesize UMP (Figure 6D) (Merry et al., 2014). We found that cytidine supplement caused reduced viability of wild-type embryos, but it partially suppressed the synthetic embryonic lethality in pyr-1;rnst-2 and umps-1;rnst-2 double mutants, albeit to a lesser extent than uridine supplements (Figure 6E and F). These data suggest that RNA degradation by RNST-2 in lysosomes is important in maintaining pyrimidine homeostasis during embryogenesis. We found that the autophagy-defective mutations lgg-1(bp500), atg-2(bp576), atg-18(gk378) and atg-9(bp564) partially affected embryogenesis and caused synthetic embryonic lethality in pyr-1(RNAi) and umps-1(RNAi) worms, consistent with the role of autophagy in delivering RNA to lysosomes (Figure 6—figure supplement 1A,B). Supplements of uridine or cytidine did not obviously improve the embryonic viability of rnst-2(qx245) single mutants or in autophagy-defective mutants (Figure 6C–F and Figure 6—figure supplement 1C,D), suggesting that a general autophagy defect may contribute to the partial embryonic lethality in these worms.
 
 ## Discussion
 
-## RNST-2 degrades ribosomal RNA delivered by autophagy in lysosomes
+### RNST-2 degrades ribosomal RNA delivered by autophagy in lysosomes
 
 Here we identified C. elegans RNST-2, a T2 family endoribonuclease, as a key enzyme that degrades ribosomal RNA in lysosomes. RNST-2 localizes to lysosomes and loss of its function causes rRNA accumulation in enlarged lysosomes in an autophagy-dependent manner. Thus, RNST-2 degrades rRNA delivered by autophagy in lysosomes, which is consistent with the function of Ryn1 and RNS2, the yeast and Arabidopsis thaliana T2 family endoribonucleases, respectively (Huang et al., 2015; Floyd et al., 2015). Loss of zebrafish rnaset2 results in accumulation of undigested rRNA in lysosomes of neurons (Haud et al., 2011), while expression of human RNASET2 in worms efficiently rescued the lysosome phenotype in rnst-2 mutants (Figure 1—figure supplement 2E,I). Thus, T2 family endoribonuclease acts as the key enzyme to degrade ribosomal RNA in lysosomes in diverse species throughout evolution. The rnst-2 lysosomes appear to accumulate intact 26S and 18S rRNA, suggesting that mature ribosomes are targeted for degradation. In addition to rRNA, rnst-2 lysosomes also contain high levels of ribosomal proteins, suggesting that rRNA degradation may facilitate destruction and further digestion of ribosomes. Our data suggest that the autophagy process is partially impaired in rnst-2 mutants. We suspect that gradual buildup of undigested rRNA and ribosomal proteins in lysosomes leads to impaired autophagy kinetics and thus reduction in autophagic flux. Consistent with this, dysregulation of autophagy has been commonly found in lysosomal storage disorders characterized by the accumulation of undegraded metabolites in lysosomes (Seranova et al., 2017).
 
-## Ribosomal RNA degradation through the autophagy-lysosome pathway is important in maintaining nucleotide homeostasis essential for animal development
+### Ribosomal RNA degradation through the autophagy-lysosome pathway is important in maintaining nucleotide homeostasis essential for animal development
 
 Bulk or selective degradation of ribosomes via the autophagy-lysosome pathway is important for cell survival under nutrient deprivation conditions, but whether it occurs under normal conditions and is important for animal physiology remains unclear. Here, we found that loss of RNST-2 function affects degradation of ribosomal RNA and proteins, and causes severe developmental defects, suggesting that ribosome degradation occurs under normal growth conditions and is important for animal development. Importantly, simultaneous loss of RNST-2 or autophagy and the de novo synthesis of pyrimidines causes complete embryonic lethality, and this synthetic lethality can be suppressed by exogenous supply of uridine or cytidine. This indicates that rRNA turnover through the autophagy-lysosome pathway plays an important role in maintaining nucleotide homeostasis during development. We have attempted to measure the nucleoside levels by LC/MS in rnst-2;pyr-1(RNAi) embryos, and observed a reduction in cytidine but not guanosine (data not shown). Given that the nucleoside levels were measured in embryonic lysates prepared from unhealthy embryos with an intact purine synthesis pathway but containing heterogeneous tissues and both intracellular and extracellular nucleosides, the results may not reflect the situation in key tissues that cause the phenotype.
 
@@ -91,37 +139,474 @@ Our study reveals the essential role of autophagy-dependent ribosome degradation
 
 ## Materials and methods
 
-## C. elegans strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>rnst-2</td>
+      <td></td>
+      <td>WBGene00019624</td>
+      <td>Other name: CELE_K10C9.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rpl-5</td>
+      <td></td>
+      <td>WBGene00004416</td>
+      <td>Other name: CELE_F54C9.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rpl-25.2</td>
+      <td></td>
+      <td>WBGene00004439</td>
+      <td>Other name: CELE_F52B5.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rps-3</td>
+      <td></td>
+      <td>WBGene00004472</td>
+      <td>Other name: CELE_C23G10.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rps-0</td>
+      <td></td>
+      <td>WBGene00004469</td>
+      <td>Other name: CELE_B0393.1</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>rnaset2</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 8635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>N2</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:N2_(ancestral)</td>
+      <td>wild type (Bristol)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW1624</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>laat-1(qx42)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW5331</td>
+      <td>DOI: 10.1016/j.cell.2010.04.034</td>
+      <td></td>
+      <td>lgg-1(bp500)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OK286</td>
+      <td>DOI: 10.1042/BJ20131085</td>
+      <td>RRID:WB-STRAIN:OK286</td>
+      <td>pyr-1(cu8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HZ1690</td>
+      <td>DOI 10.1016/j.devcel.2011.06.024</td>
+      <td>RRID:WB-STRAIN:HZ1690</td>
+      <td>epg-6(bp242)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SP507</td>
+      <td>DOI: 10.1042/BJ20131085</td>
+      <td>RRID:WB-STRAIN:SP507</td>
+      <td>umps-1(mn160)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CF1041</td>
+      <td>DOI: 10.1126/science.1139952</td>
+      <td></td>
+      <td>daf-2(e1370)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HZ1687</td>
+      <td>DOI: 10.1083/jcb.201209098</td>
+      <td>RRID:WB-STRAIN:HZ1687</td>
+      <td>atg-9(bp564)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VC893</td>
+      <td>DOI: 10.1016/j.cell.2010.04.034</td>
+      <td>RRID:WB-STRAIN:VC893</td>
+      <td>atg-18(gk378)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW10781</td>
+      <td>this paper</td>
+      <td></td>
+      <td>rnst-2(qx245)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW15104</td>
+      <td>this paper</td>
+      <td></td>
+      <td>rnst-2(bp555)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HZ1683</td>
+      <td>DOI 10.1016/j.devcel.2011.06.024</td>
+      <td>RRID:WB-STRAIN:HZ1683</td>
+      <td>atg-2(bp576)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CF1903</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:CF1903</td>
+      <td>glp-1(e2144)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW5097</td>
+      <td>RRID:WB-STRAIN:PD4482</td>
+      <td></td>
+      <td>lmp-1(nr2045)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW7251</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>qxIs354 (Pced-1LAAT-1::GFP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW5399</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>qxIs257 (Pced-1NUC-1::CHERRY)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW8056</td>
+      <td>DOI: 10.1083/jcb.201602090</td>
+      <td></td>
+      <td>qxIs430 (Pscav-3SCAV-3::GFP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW10197</td>
+      <td>DOI: 10.1083/jcb.201602090</td>
+      <td></td>
+      <td>qxIs468 (Pmyo-3LAAT-1::GFP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW642</td>
+      <td>DOI: 10.1091/mbc.10.12.4311</td>
+      <td></td>
+      <td>bIs1 (Pvit-2VIT-2::GFP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RT688</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>pwIs281 (Ppie-1CAV-1::GFP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW8293</td>
+      <td>DOI: 10.15252/embr.201438618</td>
+      <td></td>
+      <td>qxEx4098 (Pced-1GFP:ATG-18)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW12615</td>
+      <td>this paper</td>
+      <td></td>
+      <td>qxIs544 (Prnst-2RNST-2::CHERRY)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW13567</td>
+      <td>this paper</td>
+      <td></td>
+      <td>qxEx6614 (Prnst-2RNST-2(H118A)::CHERRY)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW8783</td>
+      <td>this paper</td>
+      <td></td>
+      <td>qxEx4279 (Pmyo-3LAAT-1::GFP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XW17778</td>
+      <td>this paper</td>
+      <td></td>
+      <td>qxEx8302 (Prnst-2RNASET2-CHERRY)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RPL-5 (rat polyclonal)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>WB(1:300)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-RPL-25.2 (rat polyclonal)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>WB(1:300)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-RPS-0 (rat polyclonal)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-RPS-3 (rat polyclonal)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-CPL-1 (rat polyclonal)</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-LGG-1 (rat polyclonal)</td>
+      <td>DOI: 10.1016/j.cell.2010.04.034</td>
+      <td></td>
+      <td>WB(1:1000); Immunostaining(1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-alpha-Tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich (Missouri, USA)</td>
+      <td>Cat #T5168; RRID:AB_477579</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-SQST-1 (rat polyclonal)</td>
+      <td>DOI: 10.1016/j.cell.2010.04.034</td>
+      <td></td>
+      <td>Immunostaining (1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-PGL-3 (rat polyclonal)</td>
+      <td>DOI: 10.1016/j.cell.2010.04.034</td>
+      <td></td>
+      <td>Immunostaining (1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-SEPA-1 (rabbit polyclonal)</td>
+      <td>DOI: 10.1016/j.cell.2010.04.034</td>
+      <td></td>
+      <td>Immunostaining (1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-HSP-60 (mouse polyclonal)</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-HEL-1 (rabbit polyclonal)</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>anti-RME-1 (mouse polyclonal)</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Plasmids for generating transgenic strains</td>
+      <td>pPD49.26-Prnst-2RNST- 2::CHERRY</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pPD49.26-Prnst-2 RNASET2::CHERRY</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pPD49.26-Prnst-2 RNST-2(H118A)::CHERRY</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pPD49.26-Prnst-2RNST- 2(cDNA)::CHERRY</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td>Plasmids for protein expression</td>
+      <td>pET-21b-rpl-25.2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pET-21b-rpl-5</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pET-21b-rps-0</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pET-21b-rps-3</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lysosome Isolation Kit</td>
+      <td>Sigma-Aldrich (Missouri, USA)</td>
+      <td>Cat #LYSISO1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RNeasy Plus Universal Mini Kit</td>
+      <td>QIAGEN (Hilden, Germany)</td>
+      <td>Cat #73404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine</td>
+      <td>Sigma-Aldrich (Missouri, USA)</td>
+      <td>Cat #U3003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cytidine</td>
+      <td>Sigma-Aldrich (Missouri, USA)</td>
+      <td>Cat #C4654</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DAPI</td>
+      <td>Vector Laboratories (California, USA)</td>
+      <td>Cat #H-1200; RRID:AB_2336790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LysoTracker red</td>
+      <td>Invitrogen (Oregon, USA)</td>
+      <td>Cat #L7528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Velocity</td>
+      <td>PerkinElmer (Massachusetts, USA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Zen</td>
+      <td>Carl Zeiss (Oberkochen, Germany)</td>
+      <td>RRID:SCR_01367</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains
 
 C. elegans strains were cultured and maintained at 20°C using standard protocols (Brenner, 1974). The N2 Bristol strain was used as the wild-type strain except in single nucleotide polymorphism (SNP) mapping, in which Hawaiian strain CB4856 was used. The strains used in this work are listed in the key resources table.
 
-## Isolation, mapping, and cloning of rnst-2
+### Isolation, mapping, and cloning of rnst-2
 
 The qx245 and bp555 mutations were isolated from genetic screens for lysosome- and autophagy-defective mutants, respectively. The qx245 mutation was mapped to the left side of LG V at the genetic map position −17 (Snp-pkP5076) by single nucleotide polymorphism (SNP) mapping. Transformation rescue experiments were performed and a fosmid clone in this region, WRM0636aH01, possessed rescue activity. Whole genome sequencing identified a point mutation in the coding sequence of K10C9.3 within WRM0636aH01. Expression of the long PCR fragment covering the open reading frame of K10C9.3 fully rescued the qx245 defect. The sequence of the K10C9.3 gene was determined in both qx245 and bp555 alleles and molecular lesions were identified. qx245 contained a G-to-A transition that results in a substitution of Gly 119 by Glu, while bp555 contained a C-to-T transition that generates a premature stop codon after Pro55. Both mutant alleles were backcrossed with N2 strain at least four times before further analyses.
 
-## Lysotracker staining
+### Lysotracker staining
 
 ~50 worms aged to day 3 of adulthood were soaked for 1.5 hr in 80 µl LysoTracker red solution (Invitrogen, Oregon, USA), which was diluted as 1:200 by M9. Worms were then transferred to NGM plates with fresh OP50 and recovered for 2 hr before examination. All steps were performed in the dark.
 
-## Quantification of lysosome number and volume
+### Quantification of lysosome number and volume
 
 Fluorescence images of embryos, larvae, and adults expressing LAAT-1::GFP or NUC-1: CHERRY in 10–15 z-series (0.5 µm/section) were captured by spinning-disk microscopy. Serial optical sections were reconstituted to 3D view and the number and volume of lysosomes were measured by Velocity software (PerkinElmer, Massachusetts, USA). At least 10 worms were quantified in each strain at each stage.
 
-## Microscopy and imaging analysis
+### Microscopy and imaging analysis
 
 Differential interference contrast and ﬂuorescence images were captured by an inverted confocal microscope (LSM880; Carl Zeiss, Oberkochen, Germany) with 488, 405 and 561 lasers and images were processed and viewed using Zen software (Carl Zeiss, Oberkochen, Germany). All images were taken at 20°C.
 
-## Generation of antibodies
+### Generation of antibodies
 
 Full-length RPL-5, RPL-25.2, RPS-3 and RPS-0 ribosomal proteins tagged with six Histidine residues (RPL-5-His6, RPL-25.2-His6, RPS-3-His6, RPS-0-His6) were expressed in E. coli. The recombinant proteins were purified by Ni-NTA agarose beads and the eluted RPL-5-His6, RPS-3-His6 and RPS-0-His6 proteins were used to raise polyclonal antibodies in rat. For RPL-25.2-His6, a specific protein band was excised from the SDS-PAGE and used to generate polyclonal antibody in rat. The RPL-5 and RPS-0 polyclonal antibodies were further purified using RPL-5 or RPS-0 recombinant proteins. All polyclonal antibodies were generated in the Antibody Center at NIBS (National Institute of Biological Sciences, Beijing, China).
 
-## Western blot analysis and immunostaining
+### Western blot analysis and immunostaining
 
 Mix-staged embryos of C. elegans were collected from aged adults by bleaching. Embryonic and worm lysates (day three adults) were obtained and analyzed by western blot using anti-LGG-1 antibodies and anti-α-tubulin antibodies (Sigma-Aldrich, Missouri, USA).
 
 For immunostaining, mix-staged embryos were fixed by ice-cold methanol and acetone on glass sheets treated by 1% poly-lysine. After blocking with 1% BSA and 10% fetal calf serum in phosphate buffered saline (PBS), the samples were incubated with anti-LGG-1(1:1000 dilution), anti-SQST-1 (1:1000 dilution), anti-SEPA-1 (1:1000 dilution) or anti-PGL-3 (1:1000 dilution) antibodies at 4°C overnight. The samples were washed three times in PBST (PBS + 0.2% Tween 20) and incubated with the secondary antibody (1:200 dilution) (Jackson ImmunoResearch, Pennsylvania, USA) for 80 min at room temperature in the dark. The samples were washed three times, then stained with DAPI (Vector Laboratories, California, USA) and visualized using a Zeiss LSM880 confocal microscope.
 
-## Lysosome purification and examination of RNA accumulation
+### Lysosome purification and examination of RNA accumulation
 
 Lysosomes were purified from adult worms by a Lysosome Isolation kit (LYSISO1; Sigma-Aldrich, Missouri, USA) as described previously with modifications (Liu et al., 2012). In brief, synchronized larvae one worms were cultured at 20°C to day 3 of adulthood and collected. Worm pellets were suspended in the extraction buffer supplied in the Lysosome Isolation kit and ruptured by glass beads with the FastPrep−24 Instrument (MP Biomedicals, Ohio, USA). The worm lysate was centrifuged at 14,000 rpm to precipitate the crude lysosomes. The crude lysosomes were diluted in 19% Optiprep Density Gradient Medium Solution and further separated on a sucrose density gradient (from bottom to top: 27%, 19%, 16%, 8%).
 
@@ -129,30 +614,43 @@ After centrifugation, lysosome enrichment was determined by the amount of proces
 
 The purified lysosome fractions from different strains were examined for accumulation of ribosomal proteins by western blot and ribosomal RNAs by RNA purification (73404; QIAGEN, Hilden, Germany). The purified RNAs were separated and examined by agarose gel electrophoresis. At least three independent experiments were performed in each strain and average data are shown in Figure 3 and Figure 3—figure supplement 1.
 
-## Examination of embryonic development, larval development and lifespan
+### Examination of embryonic development, larval development and lifespan
 
 To examine embryonic development, ~20 young adult worms (24 hr post L4) were placed on a NGM plate with OP50 for 2 hr. The worms were then removed and the eggs laid on the plate were followed. After 10 hr, newly hatched L1 worms were counted and transferred every hour until no new L1 worms hatched out. The percentage of eggs that hatched every hour was calculated to show the progress of embryonic development, and the total percentage of hatched L1 was quantified to determine level of embryonic lethality. More than 150 embryos were quantified in each strain. At least three independent experiments were performed in each strain and the average result from three experiments is shown in Figure 5, Figure 6, Figure 6—figure supplements 1 and 2. To analyze larval development, 100 L1 worms were collected. After 48 hr incubation, newly developed L4 worms were counted and transferred every hour until no live larvae were present on the plate. The total percentage of fully developed L4 was quantified to determine the level of larval arrest. At least three independent experiments were performed in each strain and the average result from three experiments is shown in Figure 4—figure supplement 1C and Figure 6—figure supplement 1E. Lifespan assays were performed at 20°C or 25°C [glp-1(e2144) and the control strains] as described previously (Hansen et al., 2005). About 150 L4 worms (day 0) were picked to NGM plates with fresh OP50, 15 worms per plate. The surviving worms were counted every 2 days and were transferred to new plates to avoid interference from the progeny. The worms that crawled off the plate, exploded, bagged, or became contaminated were discarded. At least three independent experiments were performed for each strain. The representative survival curve is shown in Figure 5D and F, Figure 6—figure supplement 1F and H and the mean lifespan from three experiments is shown in Figure 5E and G, Figure 6—figure supplement 1G and I.
 
-## Quantification of L1 survival under starvation treatment
+### Quantification of L1 survival under starvation treatment
 
 Mix-staged embryos were collected and placed in M9 buffer, so that their growth could be synchronized to the larvae 1 (L1) stage. The L1 worms were transferred equally to 96-well plates, with about 200 larvae per well. The worms were transferred to NGM plates with fresh OP50 every 2 days and the surviving larvae were quantified. At least three independent experiments were performed for each strain. The representative survival curve is shown in Figure 4U (left panel) and the mean lifespan from three independent experiments is shown in Figure 4U (right panel).
 
-## RNAi
+### RNAi
 
 The bacteria-feeding RNAi protocol was used as described before (Kamath and Ahringer, 2003). In pyr-1 RNAi (D2085.1; 3117–4214 nt) and umps-1 RNAi (T07C4.1; 274–1400 nt) experiments,~30 L1 or L2 worms (P0) were placed on the RNAi plates. Embryos of the F1 generation were collected and quantified for survival throughout embryonic development.
 
-## Nucleotide supplementation
+### Nucleotide supplementation
 
 Uridine and cytidine (Sigma-Aldrich, Missouri, USA) were dissolved in distilled water to a final concentration of 1M and this stock solution was stored at −20°C. The stock solution of uridine or cytidine was supplied to both NGM plates and OP50 culture spotted onto NGM plates as a 1:10 dilution. L4 larvae (P0) were placed on uridine- or cytidine-containing plates and cultured to the next generation (F1). The survival of the F2 embryos was quantified.
 
-## Statistical analysis
+### Statistical analysis
 
 The standard deviation (SD) was used as y-axis error bars for bar charts plotted from the mean value of the data. Data derived from different genetic backgrounds were compared by Student’s two-tailed unpaired t test, one-way analysis of variance (ANOVA) with Tukey’s post hoc test or two-way ANOVA with the Bonferroni post hoc test. Data were considered statistically different when p<0.05. p<0.05 is indicated with single asterisks, p<0.001 with double asterisks and p<0.0001 with triple asterisks (0.001 in a two-way ANOVA analysis).
 
-## Plasmid construction
+### Plasmid construction
 
 To construct Prnst-2RNST-2::CHERRY, Prnst-2RNST-2 was amplified from N2 genomic DNA using primers PDFZ482/PYBL29 and was ligated to pPD49.26-nCHERRY3 through the Nhe I/Nco I sites. To generate the Prnst-2RNASET2::CHERRY reporter, the 2.1 kb promoter of rnst-2 was amplified from N2 genomic DNA using primers PYBL42/PYBL43 and cloned into pPD49.26-nCHERRY3 through the BamH I site. RNASET2 of Homo sapiens was amplified from a human cDNA library using the primers PDFZ487/PDFZ488 and cloned into Prnst-2nCHERRY3 through the Nhe I/Nco I sites. Prnst-2RNST-2(H118A)::CHERRY was generated through PCR-based site-directed mutagenesis using the primers PDFZ485/PDFZ486 on Prnst-2RNST-2(cDNA)::CHERRY. The cDNA of rnst-2 was amplified from a C. elegans cDNA library (Invitrogen, Oregon, USA) using primers PYBL32/PYBL41 and cloned into Prnst-2nCHERRY3 through the Nhe I site. The RNST-2(H118A) fragment was digested from Prnst-2RNST-2(H118A)::CHERRY after mutagenesis, and re-ligated to Prnst-2nCHERRY3 through the Nhe I site. For the protein expression vectors, the cDNAs of rpl-25.2, rps-3 and rps-0 were amplified from a C. elegans cDNA library (Invitrogen, Oregon, USA) using primers PYBL64/PYBL65, PYBL70/PYBL71 and PYBL67/PYBL68, respectively, and ligated to pET21b vector through the Nde I/Xho I sites. The cDNA of rpl-5 was amplified from a C. elegans cDNA library (Invitrogen, Oregon, USA) using the primers of PYBL99/PYBL101 and ligated to pET21b vector through the Nhe I/Xho I sites.
 
-## Primers used for plasmid construction
+### Primers used for plasmid construction
 
-PrimerSequence (5' to 3')PDFZ482 PYBL29 PYBL42 PYBL43 PDFZ487 PDFZ488 PDFZ485 PDFZ486 PYBL32 PYBL41 PYBL64 PYBL65 PYBL70 PYBL71 PYBL67 PYBL68 PYBL99 PYBL101GCCCATGGCATTTCCAATATTTTTGATAGCGCTCC GCGCTAGCCCGTGGGAGTAATGTTGC GCGGATCCTTCTGGAAATCTTGCGTGAT GCGGATCCGGCGACTACTGTAAACGA CGGCTAGCATGCGCCCTGCAGCCCTGCGCGG GCCCATGGCATGCTTGGTCTTTTTAGGTGGGG GAAACACGAGTATGATAAGGCCGGGACATGTGCTCAAAG CTTTGAGCACATGTCCCGGCCTTATCATACTCGTGTTTC GCGCTAGCATGAAACTTCTCCTTCTTCTCT GCGCTAGCATTTCCAATATTTTTGATAGCG GCCATATGATGGCTCCGTCATCAAACAAAG GCCTCGAGGATGAATCCGATCTTGTTGGCA GCCATATGATGGCTGCCAATCAAAACGTGA GCCTCGAGTTGAACTGGAGCAACTGGTTGA GCCATATGATGTCAGGCGGTGCCGCTCATT GCCTCGAGCCAGTTAGACTGGGTTGGAGCG GCGCTAGCATGGGTCTCGTCAAGGTCATTA GCCTCGAGCTCCTGTTGCTCCTTGAGTT
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence (5' to 3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDFZ482 PYBL29 PYBL42 PYBL43 PDFZ487 PDFZ488 PDFZ485 PDFZ486 PYBL32 PYBL41 PYBL64 PYBL65 PYBL70 PYBL71 PYBL67 PYBL68 PYBL99 PYBL101</td>
+      <td>GCCCATGGCATTTCCAATATTTTTGATAGCGCTCC GCGCTAGCCCGTGGGAGTAATGTTGC GCGGATCCTTCTGGAAATCTTGCGTGAT GCGGATCCGGCGACTACTGTAAACGA CGGCTAGCATGCGCCCTGCAGCCCTGCGCGG GCCCATGGCATGCTTGGTCTTTTTAGGTGGGG GAAACACGAGTATGATAAGGCCGGGACATGTGCTCAAAG CTTTGAGCACATGTCCCGGCCTTATCATACTCGTGTTTC GCGCTAGCATGAAACTTCTCCTTCTTCTCT GCGCTAGCATTTCCAATATTTTTGATAGCG GCCATATGATGGCTCCGTCATCAAACAAAG GCCTCGAGGATGAATCCGATCTTGTTGGCA GCCATATGATGGCTGCCAATCAAAACGTGA GCCTCGAGTTGAACTGGAGCAACTGGTTGA GCCATATGATGTCAGGCGGTGCCGCTCATT GCCTCGAGCCAGTTAGACTGGGTTGGAGCG GCGCTAGCATGGGTCTCGTCAAGGTCATTA GCCTCGAGCTCCTGTTGCTCCTTGAGTT</td>
+    </tr>
+  </tbody>
+</table>

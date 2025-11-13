@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Lipid metabolism plays an important role in viral infections. We aimed to assess the causal effect of lipid-lowering drugs (HMGCR inhibitiors, PCSK9 inhibitiors, and NPC1L1 inhibitior) on COVID-19 outcomes using two-sample Mendelian randomization (MR) study. We used two kinds of genetic instruments to proxy the exposure of lipid-lowering drugs, including expression quantitative trait loci of drugs target genes, and genetic variants within or nearby drugs target genes associated with low-density lipoprotein (LDL cholesterol from genome-wide association study). Summary-data-based MR (SMR) and inverse-variance-weighted MR (IVW-MR) were used to calculate the effect estimates. SMR analysis found that a higher expression of HMGCR was associated with a higher risk of COVID-19 hospitalization (odds ratio [OR] = 1.38, 95% confidence interval [CI] = 1.06–1.81). Similarly, IVW-MR analysis observed a positive association between HMGCR-mediated LDL cholesterol and COVID-19 hospitalization (OR = 1.32, 95% CI = 1.00–1.74). No consistent evidence from both analyses was found for other associations. This two-sample MR study suggested a potential causal relationship between HMGCR inhibition and the reduced risk of COVID-19 hospitalization. Start-up Fund for high-level talents of Fujian Medical University.
+Background:Lipid metabolism plays an important role in viral infections. We aimed to assess the causal effect of lipid-lowering drugs (HMGCR inhibitiors, PCSK9 inhibitiors, and NPC1L1 inhibitior) on COVID-19 outcomes using two-sample Mendelian randomization (MR) study.Methods:We used two kinds of genetic instruments to proxy the exposure of lipid-lowering drugs, including expression quantitative trait loci of drugs target genes, and genetic variants within or nearby drugs target genes associated with low-density lipoprotein (LDL cholesterol from genome-wide association study). Summary-data-based MR (SMR) and inverse-variance-weighted MR (IVW-MR) were used to calculate the effect estimates.Results:SMR analysis found that a higher expression of HMGCR was associated with a higher risk of COVID-19 hospitalization (odds ratio [OR] = 1.38, 95% confidence interval [CI] = 1.06–1.81). Similarly, IVW-MR analysis observed a positive association between HMGCR-mediated LDL cholesterol and COVID-19 hospitalization (OR = 1.32, 95% CI = 1.00–1.74). No consistent evidence from both analyses was found for other associations.Conclusions:This two-sample MR study suggested a potential causal relationship between HMGCR inhibition and the reduced risk of COVID-19 hospitalization.Funding:Start-up Fund for high-level talents of Fujian Medical University.
 
 ## Introduction
 
@@ -32,29 +32,83 @@ Therefore, we performed two-sample MR analysis in this study to test the associa
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 This two-sample MR study is based on publicly available summary-level data from genome-wide association studies (GWASs) and expression quantitative trait loci (eQTLs) studies (Supplementary file 1—Table 1). All these studies had been approved by the relevant institutional review boards and participants had provided informed consents.
 
-## Selection of genetic instruments
+### Selection of genetic instruments
 
 Three classes of FDA-approved lipid-lowering drugs were included as exposures in this study: HMGCR inhibitors, PCSK9 inhibitors, and NPC1L1 inhibitor.
 
 As shown in Table 1, we used available eQTLs for drugs target genes (i.e., HMGCR, PCSK9, and NPC1L1) as the proxy of exposure to each lipid-lowering drug. The eQTLs summary-level data were obtained from eQTLGen Consortium (https://www.eqtlgen.org/) or GTEx Consortium V8 (https://gtexportal.org/), the details of which are presented in Supplementary file 1—Table 1. We identified common (minor allele frequency [MAF] >1%) eQTLs single-nucleotide polymorphisms (SNPs) significantly (p < 5.0 × 10−8) associated with the expression of HMGCR or PCSK9 in blood, and the expression of NPC1L1 in adipose subcutaneous tissue as there are no eQTLs in blood or other tissues available at a significance level for NPC1L1. Only cis-eQTLs were included to generate genetic instruments in this study, which were defined as eQTLs within 1 Mb on either side of the encoded gene.
 
+**Table 1.**
+ Information of genetic instruments.Abbreviations and acronyms: eQTLs, expression quantitative trait loci; GWAS, genome-wide association study; HEIDI, heterogeneity in dependent instruments; HMGCR, HMG-CoA reductase; IVW-MR, inverse-variance-weighted Mendelian randomization; LDL, low-density lipoprotein; MR-PRESSO, Mendelian Randomization Pleiotropy RESidual Sum and Outlier; MAF, minor allele frequency; NPC1L1, Niemann–Pick C1-Like 1; PCSK9, proprotein convertase subtilisin/kexin type 9; SNP, single-nucleotide polymorphism; SMR, summary-data-based Mendelian randomization.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Exposure</th>
+      <th colspan="2">Genetic instruments</th>
+    </tr>
+    <tr>
+      <th>Genetic variants associated with mRNA expression levels (eQTLs)</th>
+      <th>Genetic variants associated with LDL cholesterol level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HMGCR inhibitors</td>
+      <td>Nine hundred and twenty-one common cis-eQTLs (MAF &gt;1%) in blood for HMGCR gene (p &lt; 5.0 × 10−8), top SNP: rs6453133</td>
+      <td>Seven common SNPs (MAF &gt;1%) in low linkage disequilibrium (r2 &lt; 0.30), associated with LDL cholesterol (p &lt; 5.0 × 10−8), located within ±100 kb windows from HMGCR region</td>
+    </tr>
+    <tr>
+      <td>PCSK9 inhibitors</td>
+      <td>Twenty-four common cis-eQTLs (MAF &gt;1%) in blood for PCSK9 gene (p &lt; 5.0 × 10−8), top SNP: rs472495</td>
+      <td>Twelve common SNPs (MAF &gt;1%) in low linkage disequilibrium (r2 &lt; 0.30), associated with LDL cholesterol (p &lt; 5.0 × 10−8), located within ±100 kb windows from PCSK9 region</td>
+    </tr>
+    <tr>
+      <td>NPC1L1 inhibitors</td>
+      <td>Eleven common cis-eQTLs (MAF &gt;1%) in adipose subcutaneous tissue for NPC1L1 gene (p &lt; 5.0 × 10−8), top SNP: rs41279633</td>
+      <td>Three common SNPs (MAF &gt;1%) in low linkage disequilibrium (r2 &lt; 0.30), associated with LDL cholesterol (p &lt; 5.0 × 10−8), located within ±100 kb windows from NPC1L1 region</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Statistical analyses</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primary analysis</td>
+      <td>Summary-data-based Mendelian randomization</td>
+      <td>Inverse-variance-weighted Mendelian randomization</td>
+    </tr>
+    <tr>
+      <td>Sensitivity analyses</td>
+      <td>F-StatisticPositive control analysis (LDL cholesterol used as outcome)Linkage disequilibrium test: HEIDI testHorizontal pleiotropy test: SMR association between expression of adjacent genes and outcome</td>
+      <td>F-StatisticPositive control analysis (coronary heart disease used as outcome)Heterogeneity test: Cochran Q testHorizontal pleiotropy test: MR-Egger regression, MR-PRESSO test</td>
+    </tr>
+  </tbody>
+</table>
+
 Secondly, to validate the observed association using the eQTLs as an instrument, we additionally proposed an instrument by selecting SNPs within 100 kb windows from target gene of each drug that was associated with LDL cholesterol level at a genome-wide significance level (p < 5.0 × 10−8) to proxy the exposure of lipid-lowering drugs. A GWAS summary data of LDL cholesterol levels from the Global Lipids Genetics Consortium (GLGC) with a sample size of 173,082 were used to identify these SNPs, where only common SNPs (MAF >1%) were included (Willer et al., 2013; Supplementary file 1—Table 1). Seven SNPs within 100 kb windows from HMGCR gene were selected for proxying HMGCR inhibitors, 12 SNPs from PCSK9 gene identified for PCSK9 inhibitors, and 3 SNPs from NPC1L1 gene selected for NPC1L1 inhibitor. To maximize the strength of the instrument for each drug, SNPs used as instruments were allowed to be in low weak linkage disequilibrium (r2 < 0.30) with each other.
 
-## Outcome sources
+### Outcome sources
 
 GWAS summary-level data for COVID-19 outcomes were obtained from the COVID-19 Host Genetics Initiative V4 with a sample size of 1,299,010 for COVID-19 susceptibility, 908,494 for COVID-19 hospitalization, and 626,151 for COVID-19 severe disease, respectively (https://www.covid19hg.org/; COVID-19 Host Genetics Initiative, 2020; Supplementary file 1—Table 1). The study population was restricted to individuals with European ancestry, including meta-analyses of GWASs containing up to 22 cohorts from 11 countries. GWAS from these cohorts used a model adjusted for age, sex, age × age, age × sex, genetic principal components, and study-specific covariates. A COVID-19 case was confirmed by lab or self-reported infections, or electronic health records of infections. The susceptibility outcome was measured by comparing COVID-19 cases and controls who did not have a history of COVID-19. The hospitalized outcome was measured by comparing COVID-19 hospitalized cases and controls who were never admitted to the hospital due to COVID-19, including individuals without COVID-19. The severe disease outcome was measured by comparing COVID-19 cases who died or required respiratory support and controls without severe COVID-19, including individuals without COVID-19. We included individuals without COVID-19 as controls for all outcomes to decrease collider bias and allow for population-level comparisons (Griffith et al., 2020; Butler-Laporte et al., 2021).
 
-## Statistical analyses
+### Statistical analyses
 
-## Primary MR analysis
+#### Primary MR analysis
 
 Summary-data-based MR (SMR) method was applied to generate effect estimates when using eQTLs as an instrument, which investigates the association between the expression level of a gene and outcome of interest using summary-level data from GWAS and eQTL studies (Zhu et al., 2016). Allele harmonization and analysis were performed using SMR software, version 1.03 (https://cnsgenomics.com/software/smr/#Overview). Inverse-variance-weighted MR (IVW-MR) method was used to combine effect estimates when using genetic variants associated with LDL cholesterol level as an instrument. Allele harmonization and analysis were conducted using the TwoSampleMR package in R software, version 4.1.0.
 
-## Sensitivity analysis
+#### Sensitivity analysis
 
 The strength of SNPs used as the instrument was assessed using the F-statistic, and we included SNPs with an F-statistic of >10 to minimize weak instrument bias (Burgess and Thompson, 2011). Positive control analyses were performed for validation of both genetic instruments. Since lowering the level of LDL cholesterol is the well-proven effect of lipid-lowering drugs, we thus examined the association of exposures of interest with LDL cholesterol level as positive control study for the instrument from eQTLs. For the instrument from LDL cholesterol GWAS, we performed positive control study by examining the association of exposures of interest with coronary heart disease because coronary heart disease is the main indication of lipid-lowering drugs.
 
@@ -66,13 +120,13 @@ To account for multiple testing, Bonferroni correction was used to adjust the th
 
 ## Results
 
-## Genetic instruments selection and COVID-19 outcomes
+### Genetic instruments selection and COVID-19 outcomes
 
 A total of 921,24, and 11 cis-eQTLs were identified from eQTLGen or GTEx Consortium for drugs target gene HMGCR, PCSK9, and NPC1L1, respectively, and the most significant cis-eQTL SNP was selected as a genetic instrument for the target gene of each drug (Table 1, Supplementary file 1—Table 2). A total of 7, 12, and 3 SNPs within or nearby gene HMGCR, PCSK9, and NPC1L1 were selected from a GWAS summary data of LDL cholesterol levels in the Global Lipids Genetics Consortium, respectively (Table 1, Supplementary file 1—Table 3). F-Statistics for all instrument variants were over 30, suggesting that weak instrument bias can be minimized in our study (Supplementary file 1-Tables 2 and 3). Positive control study showed significant associations between exposure to each drug and LDL cholesterol when using eQTLs-proposed instruments (Supplementary file 1—Table 5), as well as between exposure to each drug and coronary heart disease when using LDL cholesterol GWAS-proposed instruments (Supplementary file 1—Table 6), further ensuring the efficacy of the selected genetic instruments.
 
 From COVID-19 GWASs, a total of 14,134 cases and 1,284,876 controls were used to explore the association with COVID-19 susceptibility, 6406 cases and 902,088 controls for COVID-19 hospitalization, and 3886 cases and 622,265 controls for COVID-19 severe disease (Supplementary file 1—Table 1).
 
-## Primary analysis
+### Primary analysis
 
 In Figure 1 and Supplementary file 1—Table 2, results from SMR analysis found a suggestive evidence for the association of the increased expression of HMGCR gene in blood (equivalent to a one standard deviation increase) with the higher risk of COVID-19 susceptibility (odds ratio [OR] = 1.30, 95% confidence interval [CI] = 1.05–1.61; p = 0.017) and COVID-19 hospitalization (OR = 1.38, 95% CI = 1.06–1.81; p = 0.019), indicating that HMGCR inhibitors might lower the risk of COVID-19 susceptibility and hospitalization. Suggestive evidence was observed regarding the negative association between PCSK9 expression and risk of COVID-19 susceptibility (OR = 0.84, 95% CI = 0.73–0.97; p = 0.02). No significant association was found between the expression of NPC1L1 and COVID-19 outcomes.
 
@@ -86,7 +140,7 @@ In Figure 2 and Supplementary file 1—Table 4, IVW-MR analysis also found a sug
 
 **Figure 2.:** IVW-MR method was used to assess the association.
 
-## Sensitivity Analysis
+### Sensitivity Analysis
 
 For SMR analysis, HEIDI test suggested that all observed associations were not due to a linkage (p > 0.01), except for the association between HMGCR expression and COVID-19 susceptibility (p = 0.009) (Supplementary file 1—Table 2). We further examine if horizontal pleiotropy was present in the association between HMGCR expression and COVID-19 outcomes by investigating if there was an association between the expression of nearby genes which are significantly associated with the top eQTL SNP (instrument variant) of HMGCR and COVID-19 outcomes. We identified six genes, including HMGCR, the expression of which were associated with the instrument variant (Supplementary file 1—Table 7). Only four genes have available eQTLs at a genome-wide significance level (p < 5.0 × 10−8). Among these four genes, only HMGCR expression was significantly related to COVID-19 susceptibility and COVID-19 hospitalization, suggesting a small role of horizontal pleiotropy in the observed associations (Supplementary file 1—Table 8).
 
@@ -100,14 +154,14 @@ Compared to developing a new drug, repurposing an old drug is much more economic
 
 As a genetic epidemiological method, MR study could overcome the limitations of traditional observational studies. In this MR study, we used genetic variants related to HMGCR expression or HMGCR-mediated LDL cholesterol as instruments to proxy the exposure of statins. Both analyses found a suggestive evidence that HMGCR inhibition could reduce the risk of COVID-19 hospitalization, rather than COVID-19 susceptibility and very severe outcome. Although strong evidence is lacking, these results provided a causal evidence supporting the finding from the largest cohort study (Zhang et al., 2020), which calls for additional observational studies in different populations, mechanistic studies, and randomized controlled studies to examine its potential effect against COVID-19. Patients with COVID-19 who already take statins or start to take it for the indication of statins were recommended to continue to take it, which might be beneficial to both its original indication and COVID-19 (Rubin, 2021). And statins might be a prioritized drug in future clinical trials for treating COVID-19. Besides, although no association was found between NPC1L1 expression in adipose subcutaneous and COVID-19 outcomes, there was a strong evidence of the association between NPC1L1-mediated LDL cholesterol and COVID-19 susceptibility. The effect of NPC1L1 inhibitor on COVID-19 susceptibility may be worth further studies as well.
 
-## Study strengths
+### Study strengths
 
 The main strength of our study is the use of genetic instruments to proxy drug exposure, which could minimize confounding bias and avoid reverse causation. Besides, we used two different kinds of genetic instruments to proxy the studied drug, which contributes to validating the effect estimates from each other. A number of sensitivity analyses have been performed to test the efficacy of genetic instruments and the assumptions of MR study.
 
-## Study limitations
+### Study limitations
 
 This study has several limitations. Firstly, there are no available eQTLs in blood for NPC1L1, so we were not able to explore the association between NPC1L1 expression in blood and COVID-19 outcomes. Besides, there are no available eQTLs in liver (the main tissue related to lipid metabolism) for these target genes, which might provide more convincing evidence of the observed association. The sample size of eQTL study for PCSK9 and NPC1L1 in GTEx is relatively smaller, which may affect the statistical power for the results of PCSK9 or NPC1L1 inhibition. Secondly, the effect of statins probably varies between subgroups, for example, it may be more effective in patients with chronic diseases (e.g., coronary heart disease). However, the use of summary-level data did not allow us to perform subgroup analyses, so further MR study with individual-level data is needed to provide more detailed information. Thirdly, the Bonferroni correction for multiple tests suggests that we cannot rule out the false-positive possibility for the finding of the protective effect of statins on COVID hospitalization. Fourthly, confounding bias and/or horizontal pleiotropy cannot be completely excluded although we have performed various sensitivity analyses to test the assumptions of MR study. Fifthly, both eQTLs and GWAS data used in this study were predominantly obtained from European population ancestry, thus these findings should be interpreted with caution when generalizing to other populations.
 
-## Conclusions
+### Conclusions
 
 In conclusion, this MR study suggested a causal relationship between HMGCR inhibition and the reduced risk of COVID-19 hospitalization. Clninical trials are called to examine if statins have the protective effect against COVID-19 and further researches are needed to explore the underlying mechanisms.

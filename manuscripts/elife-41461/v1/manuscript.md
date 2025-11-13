@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.41461.001 RNA polymerase II (Pol II) pausing is a general regulatory step in transcription, yet the stability of paused Pol II varies widely between genes. Although paused Pol II stability correlates with core promoter elements, the contribution of individual sequences remains unclear, in part because no rapid assay is available for measuring the changes in Pol II pausing as a result of altered promoter sequences. Here, we overcome this hurdle by showing that ChIP-nexus captures the endogenous Pol II pausing on transfected plasmids. Using this reporter-ChIP-nexus assay in Drosophila cells, we show that the pausing stability is influenced by downstream promoter sequences, but that the strongest contribution to Pol II pausing comes from the initiator sequence, in which a single nucleotide, a G at the +2 position, is critical for stable Pol II pausing. These results establish reporter-ChIP-nexus as a valuable tool to analyze Pol II pausing.
+RNA polymerase II (Pol II) pausing is a general regulatory step in transcription, yet the stability of paused Pol II varies widely between genes. Although paused Pol II stability correlates with core promoter elements, the contribution of individual sequences remains unclear, in part because no rapid assay is available for measuring the changes in Pol II pausing as a result of altered promoter sequences. Here, we overcome this hurdle by showing that ChIP-nexus captures the endogenous Pol II pausing on transfected plasmids. Using this reporter-ChIP-nexus assay in Drosophila cells, we show that the pausing stability is influenced by downstream promoter sequences, but that the strongest contribution to Pol II pausing comes from the initiator sequence, in which a single nucleotide, a G at the +2 position, is critical for stable Pol II pausing. These results establish reporter-ChIP-nexus as a valuable tool to analyze Pol II pausing.
 
 ## Introduction
 
@@ -39,9 +39,21 @@ Although traditional reporter assays were not designed to detect Pol II pausing,
 
 ## Results
 
-## Promoter-specific Pol II pausing properties are recapitulated on the reporter
+### Promoter-specific Pol II pausing properties are recapitulated on the reporter
 
 To test whether Pol II pausing is recapitulated on a plasmid, we used a GFP reporter, which has moderate expression when transfected into D. melanogaster Kc167 cells and allows rapid insertion of any type of promoter sequence (Figure 1A and Figure 1—figure supplement 1). After transient transfection of the reporter construct, the entire cell extracts were used for ChIP-nexus since there is no straightforward method for isolating plasmids from fixed cells before chromatin immunoprecipitation. Due to the high number of plasmids per cell, we found that only moderate sequence coverage (~5 to 10 million unique reads per sample) was sufficient to obtain high ChIP signal from the plasmid. Sequencing the endogenous genome in addition to the plasmid also provided a convenient internal control for the ChIP quality and for normalizing samples with each other.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig1-v1.jpg)
+
+**Figure 1.:** (A) Reporter-ChIP-nexus is performed by cloning Drosophila pseudoobscura promoters or synthetic promoters into a simple GFP reporter and transfecting into D. melanogaster Kc167 cells. The whole cell lysate from cross-linked cells is used to perform Pol II ChIP-nexus. Exonuclease stop bases are then mapped and shown on the positive strand in red above the line, while reads from the negative end are shown in blue below the line. (B) Results of reporter-ChIP-nexus reveal strong Pol II pausing at the synthetic super core promoter (SCP), which contains the core promoter elements TATA, Inr, MTE, DPE and PB (top). The position of transcriptional initiation is mapped by sequencing the 5’ end of the produced RNA (bottom). The results for the SCP promoter show that the vast majority of RNAs start at the expected site of initiation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** To perform reporter-ChIP-nexus, we constructed a simple GFP reporter plasmid with upstream regulatory sequences. An EcoRV cutting site was used to linearize the plasmid and insert a promoter of interest using Gibson assembly (see Materials and methods for more information).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** RNA transcribed form the reporter was reverse transcribed using a primer that has 3’ sequences complementary to the GFP sequence. The 5’ of this primer contains a BamHI restriction cutting site and a partial reverse TruSeq P5 adapter sequence (purple). When the reverse transcriptase reaction is complete (usually stopping at the cap), each generated cDNA contains the TruSeq P5 adapter sequence. After purification, the single-stranded cDNA is circularized to bring the TruSeq P5 adapter sequence to the cDNA 3’ end, where the reverse transcriptase stops. The product is then linearized again by digesting with BamHI (scissors) after making the restriction enzyme cut site double-stranded by annealing it to a complementary oligos (red). The resulting DNA is then amplified in a PCR with a primer that contains the full-length P5 sequence (matching the partial P5 sequence), as well as a primer that primes on the GFP sequence (black) and has the full-length P7 adapter sequence at the 5’ end (yellow). The library is then sequenced with a P5 primer and after alignment to the plasmid, the first base is recorded. These bases correspond to the site where the reverse transcriptase stopped transcribing, which should occur at the 5’ end of the RNA, where the cap is found.
 
 To explore whether Pol II pausing can be detected on this plasmid, we first cloned in the super core promoter (SCP) (Figure 1B and Table S1). This synthetic promoter contains correctly positioned TATA, Inr, MTE, DPE and PB core promoter elements such that they are recognized by TFIID and efficiently direct Pol II transcription (Juven-Gershon et al., 2006; Louder et al., 2016). Since it is a synthetic sequence, it can be unambiguously distinguished from the endogenous promoters in the genome. After transfection of the plasmid, we used ChIP-nexus to map Pol II on this promoter. Interestingly, we observed a strong accumulation of paused Pol II signal at the expected pausing position, suggesting that Pol II can pause on the plasmid (Figure 1B).
 
@@ -53,27 +65,63 @@ Since the promoter sequences might have diverged in function between D. melanoga
 
 In total, we selected eight pseudoobscura promoters of ~250 bp in length that had a variety of known core promoter elements bound by TFIID (Table S1). We transfected each plasmid into D. melanogaster Kc167 cells and mapped the initiation start sites using gene-specific 5’ RNA sequencing (Figure 1—figure supplement 2). On all plasmids, the start sites mapped within a narrow window of a few base pairs to the predicted Inr sequence (Figure 2A and Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig2-v1.jpg)
+
+**Figure 2.:** (A) To obtain the endogenous Pol II pattern of D. pseudoobscura promoters in the genome, ChIP-nexus was performed in a D. pseudoobscura cell line. Results are shown for the pepck, comm2 and pk promoters. The same promoters were then examined using reporter-ChIP-nexus in D. melanogaster Kc167 cells, which yielded patterns very similar to the endogenous Pol II profiles. The transcription initiation sites were confirmed by 5’ RNA sequencing. (B) To determine the stability of paused Pol II on the plasmid, transfected cells were treated with either DMSO (Control) or triptolide (TRI) for 1 hr. The results show a relative reduction in Pol II similar to that of the endogenous loci after treating the D. pseudoobscura cell line with TRI (see Figure 2—figure supplement 4). Therefore, reporter-ChIP-nexus reveals gene-specific Pol II pausing stability on a plasmid.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Pol II ChIP-nexus was performed on the D. pseudoobscura cell line ML83-63. The stability of paused Pol II was analyzed by comparing the Pol II profile under control and triptolide (TRI) treated conditions. The eight D. pseudoobscura promoters shown in this figure have high Pol II signal and various degrees of Pol II pausing. The sequences of these promoters were cloned into our reporter and used for later mutagenesis experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The ChIP-nexus profile of endogenous D. pseudoobscura promoters (first row) strongly resembles the profile detected by reporter-ChIP-nexus after cloning the D. pseudoobscura promoters into the reporter and transfection of the plasmid into Kc167 cells (second row). The artificial super core promoter (SCP) also produces a strong Pol II pausing profile. The transcription start site on the reporter was mapped for each promoter using gene-specific 5’ RNA sequencing (third row) and was found to map to the expected location.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Pol II ChIP-nexus and H3K4me3 ChIP-seq profiles at D. pseudoobscura RpL13A and Act5C endogenous loci and that on the plasmids with 300 bp or 2 kb promoter region insertion. Both RpL13A and Act5C show strong pausing profile at the endogenous loci. However, in contrast to Act5C, where Pol II pausing can be observed on the plasmid with both 300 bp and 2 kb promoter region insertion, RpL13A pausing profile can only be recapitulated on the plasmid when the larger 2 kb region was inserted. In addition, although Act5C show minimal enrichment of H3K4me3, high H3K4me3 signal can be observed at RpL13A endogenous locus, and this H3K4me3 signal was only recapitulated on the plasmid with the 2 kb promoter region insertion. This correlation between Pol II profile and H3K4me3 enrichment suggests that endogenous chromoatin context is important for establishing paused Pol II at Rpl13A.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The stability of paused Pol II was examined on the plasmids and at the endogenous loci by treatment with triptolide (TRI). After TRI treatment, paused Pol II is lost, and the degree of persistence relative to the DMSO-treated control condition is a measurement for the stability of paused Pol II. The examples of the comm2 and pk promoters show that the relative loss of Pol II on the plasmid is similar to that at the endogenous loci.
+
 We then performed Pol II ChIP-nexus on the transfected cells and compared the Pol II profile on each plasmid to the endogenous profile in D. pseudoobscura cells. Again, we detected strong Pol II signal on all plasmids, precisely at the canonical pausing position. Moreover, the Pol II profile was in most cases indistinguishable from the endogenous Pol II profile (Figure 2A and Figure 2—figure supplement 2), with Pearson correlations similar to or slightly below those of replicate experiments (Table S2 and S3). This indicates that lifting a promoter with TFIID-dependent core promoter elements out of its genomic chromatin context does not abolish Pol II pausing and confirms that the pausing profile at those promoters is highly dependent on the promoter sequence.
 
 To test the versatility of our assay, we also tested a D. pseudoobscura promoter that is more likely dependent on the chromatin context. The promoter of the ribosomal gene RpL13A belongs to the group of promoters that uses TCT as initiator element (Parry et al., 2010). These promoters undergo focused initiation, but unlike other focused promoters, have a strong +1 nucleosome with high levels of H3K4me3 (Figure 2—figure supplement 3). We found that Pol II pausing can be recapitulated on the plasmid for RpL13A when a larger 2 kb region surrounding the core promoter was cloned into the plasmid, but not with a smaller 300 bp region (Figure 2—figure supplement 3). The plasmid with the larger region showed high levels of H3K4me3, similar to the endogenous Rpl13A promoter, while the construct with the smaller insertion did not (Figure 2—figure supplement 3). These results indicate that further technical optimization may be required for examining Pol II pausing on plasmids at promoters where genomic context is essential. This would be consistent with previous studies indicating that plasmids may or may not be correctly chromatinized when transfected into cells (Jeong and Stein, 1994; Reeves et al., 1985).
 
 Focusing on the set of eight selected promoters, we next tested whether the stability of Pol II after triptolide treatment is recapitulated on the plasmid. To directly compare the Pol II ChIP-nexus profile on the plasmid between triptolide-treated and untreated cells, we used the same pool of plasmid-transfected cells for both samples and normalized them to each other using the genome reads. The results show that paused Pol II is indeed lost after treatment with triptolide and that the degree of loss is proportional to the stability of Pol II on the endogenous promoter. For example, some promoters (e.g. comm2) showed a strong reduction of paused Pol II after 1 hr triptolide treatment, while others (e.g pk) displayed minimal loss (Figure 2B and Figure 2—figure supplement 4). Taken together, these results suggest that Pol II not only pauses on the plasmid, but that the promoter-specific stability of paused Pol II can, to some extent, be measured on a plasmid.
 
-## The Pol II pausing stability can be altered by changing the downstream promoter sequence
+### The Pol II pausing stability can be altered by changing the downstream promoter sequence
 
 Strong Pol II pausing correlates with the presence of downstream elements such as the PB, MTE and DPE (Chen et al., 2013; Gaertner et al., 2012; Gilchrist et al., 2010; Hendrix et al., 2008; Kwak et al., 2013; Shao and Zeitlinger, 2017). These sequences may be directly implicated in Pol II pausing since they are located near the site of paused Pol II, and changing the position of the DPE relative to the Inr alters Pol II pausing (Kwak et al., 2013). However, further functional evidence for their role in Pol II pausing is lacking, and a detailed mechanistic dissection of these downstream sequences using reporter-ChIP-nexus could be challenging. For example, sequences near the location of paused Pol II would have to be altered, which could indirectly affect the ChIP-nexus profile of Pol II, for example through altered protein-DNA crosslinking efficiency.
 
 We therefore decided to broadly test the role of downstream sequences in Pol II pausing in our initial study. We took two promoters with a short Pol II pausing half-life (Act5C and pepck) and replaced the entire downstream promoter sequence with that of a stably paused promoter (pk or dve) (Figure 3A and Figure 3—figure supplement 1). We then performed Pol II ChIP-nexus on these hybrid promoters with or without triptolide treatment (we treated for 5 min since the wildtype promoters have a short Pol II half-live). While it was difficult to judge whether the wildtype and hybrid promoters had a different Pol II profile under control conditions, we found that a higher fraction of paused Pol II was reproducibly maintained on the hybrid promoters after triptolide treatment compared to the wild-type promoter (Figure 3B). Since the loss of Pol II at the pausing position after triptolide treatment reflects the pausing stability, these data suggest that the replacement of the downstream promoter sequence made Pol II pausing more stable.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig3-v1.jpg)
+
+**Figure 3.:** (A) The pepck and Act5C downstream sequences were replaced with that from the stably paused promoter pk or dve (fusion site: 8 bp after the TSS). (B) Pol II ChIP-nexus data on the plasmids after transfection into Kc167 cells with or without treatment with triptolide (TRI) for 5 min. The wild-type pepck promoter shows a strong reduction of paused Pol II. At the pepck-pk-down and pepck-dve-down fusion promoters, the same TRI treatment did not reduce paused Pol II to the same extent as at the wild-type promoter, suggesting an increase in the paused Pol II stability as a result of changing the downstream promoter sequence. (C) To quantify the difference in paused Pol II stability between different constructs, the ratio of paused Pol II before and after TRI treatment is calculated using two biological replicates. The ratio for the wild-type promoter is then normalized to 1 (light green), and the relative change in this ratio for the fusion promoter is shown on the right (dark green). Error bars refer to the standard error of the mean (TRI treatment: 5 min for all promoters).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Pol II ChIP-nexus profile at Act5C and Act5C-pk-down fusion promoters under control condition and after 5 min Triptolide (TRI) treatment.
+
 To quantify the difference in Pol II pausing stability, we first calculated the relative loss of paused Pol II between control and triptolide-treated samples for each construct. Since the same batch of transfected cells are used for this comparison, and the total read counts are normalized to the genomic DNA, the relative loss of paused Pol II is constant and independent of transfection efficiency. Indeed, we found that these measurements were highly reproducible across biological replicates, although the reproducibility was somewhat lower with shorter treatment times of triptolide, presumably because small experimental fluctuations have a larger effect. To compare two constructs, we then determined the difference of triptolide-induced Pol II loss between the mutant construct and the wild-type counterpart. These calculations show that replacing the downstream region in our promoters increased the half-life of paused Pol II around 2-fold (Figure 3C).
 
 Taken together, these results confirm that downstream promoter sequences indeed influence the stability of Pol II pausing and we will now refer to MTE, DPE and PB collectively as pausing elements. We next focused on the role of the other TFIID-bound regions in Pol II pausing.
 
-## An upstream region with a TATA box may reduce paused Pol II stability
+### An upstream region with a TATA box may reduce paused Pol II stability
 
 The TATA box is often enriched among promoters with the lowest amount of Pol II pausing (Chen et al., 2013; Day et al., 2016; Gaertner et al., 2012; Shao and Zeitlinger, 2017), and there is evidence in mammalian cells that it promotes the release of paused Pol II (Amir-Zilberstein et al., 2007; Montanuy et al., 2008). However, some promoters, including the hsp70 promoter, contain a TATA box and yet show a strong pausing profile (Buckley et al., 2014; Gilchrist et al., 2010; Kwak et al., 2013), questioning the simple model of TATA promoting pause release.
 
 To clarify the correlation between the presence of TATA or other core promoter elements and the stability of Pol II pausing, we first performed a genome-wide data analysis (Figure 4A and Figure 4—figure supplement 1). We scored each core promoter element based on the presence of consensus sequence at the expected promoter position, allowing for one mismatch: TATA box (STATAWAWR), Inr (TCAKTY), and pausing elements (CSARCSSA, KCGGTTSK or KCGRWCG). We then analyzed how their presence, alone or in pairwise combination, is correlated with the half-lives of paused Pol II that we measured previously (Shao and Zeitlinger, 2017).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig4-v1.jpg)
+
+**Figure 4.:** (A) Analysis of paused Pol II half-lives as a function of various core promoter element combinations. Median paused Pol II half-life of promoters with different combinations of core promoter elements (top) and the number of promoters classified (middle) are shown. A Wilcoxon rank sum test was then used to test whether the various promoter combinations have significantly different Pol II half-lives from each other (bottom). Core promoter elements other than those used for classification were allowed to occur in each group (e.g. Inr and pausing elements can occur at the 194 promoters with TATA box). Similar results were obtained when no promoter element other than those used for classification were allowed (mutually exclusive model Figure 4—figure supplement 1). (B) Experimental strategy to functionally test the role of TATA in Pol II pausing: the upstream promoter sequences of the paused promoter pk, comm2 and dve were replaced with that of the TATA promoter Act5C (fusion site: 7 bp before the TSS), or a canonical TATA box sequence (TATAAAA) was inserted at 31 bp upstream of the TSS. (C) The Pol II ChIP-nexus profiles for wild-type pk, the upstream region replacement (Act5C-up-pk) and the TATA insertion (TATA-pk) under control conditions (left) and after 1 hr treatment with triptolide (TRI, right) show that Pol II pausing is reduced after the pk promoter acquired a TATA box. (D) Quantification of the relative changes in paused Pol II stability for all fusion promoters relative to the wild-type promoters (TRI treatment: 1 hr for pk and dve based promoters, 40 min for comm2 based promoters). Note that only the pk promoter shows a clear reduction in Pol II pausing after insertion of a TATA box.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** To better understand the relationship between core promoter elements and the half-live of paused Pol II genome-wide, we calculated the median half-life for each element and its possible combination with other elements with a mutually exclusive model (See Materials and method for details). Left: median paused Pol II half-life. Right: number of promoters in each category.
 
 As expected, promoters with a pausing element or an Inr tended to have a long Pol II half-life (median ~25 min) and promoters with both elements displayed an even longer half-life (median ~30 min), consistent with them functioning together (Figure 4A and Figure 4—figure supplement 1). Also consistent with previous findings (Chen et al., 2013; Day et al., 2016; Shao and Zeitlinger, 2017), any combination that contained a predicted TATA box showed a shorter median half-life of paused Pol II (medians 15–19 min). For example, the median half-life of promoters with a pausing element decreased from ~25 min to ~15 min in the presence of TATA (Wilcoxon p<10−4).
 
@@ -81,13 +129,21 @@ To test whether the TATA box robustly destabilized paused Pol II, we then replac
 
 To determine whether this effect was due to the TATA box, we then performed a much smaller alteration and replaced the 7 bp sequence located 31 bp upstream of the transcription start site with a canonical TATA-box sequence (TATAAAA) (Figure 4B). We found that in the pk promoter (but not the comm2 and dve promoter), this small change indeed reduced the stability of Pol II pausing, albeit to a lesser extent than when the entire upstream region was replaced (Figure 4C and D and Figure 5—figure supplement 1). This suggests that the TATA box may indeed play a role in destabilizing paused Pol II, but that the overall promoter context plays an important role, too.
 
-## The Inr strongly contributes to the stability of Pol II pausing
+### The Inr strongly contributes to the stability of Pol II pausing
 
 To better understand how the TATA box may promote pause release in some promoter contexts, we turned our attention to the Inr. The Inr functions synergistically with the TATA box in transcription if the two elements are optimally spaced from each other (Emami et al., 1997; Malecová et al., 2007; O'Shea-Greenfield and Smale, 1992; Xu et al., 2011), but on the other hand, the Inr is overall more highly enriched among highly paused genes (Gilchrist et al., 2010; Hendrix et al., 2008). This raises the question whether the Inr functions together with TATA in pause release or whether it plays a role in Pol II pausing together with the pausing elements.
 
 To test whether an upstream TATA-containing region is dependent on the Inr, we took the dve promoter, which only weakly responded to the TATA-region replacement and swapped both the upstream region and the Inr with the sequences from the TATA-containing Act5C promoter (Figure 5A). Indeed, this replacement resulted in a strong, more than three-fold reduction in the stability of Pol II pausing (Figure 5B and C), suggesting that the type of Inr made a critical difference in this promoter context. However, even when we only replaced the Inr and not the upstream region in the dve promoter, we also observed a strong reduction in Pol II pausing stability (Figure 5B and C). These results suggest that the Inr sequence itself is an important determinant of Pol II pausing, even independently of the upstream TATA box.
 
-## Highly paused promoters and TATA promoters contain different Inr variants
+![Figure 5.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental series on the dve promoter testing the role of the Inr in conjunction with a TATA-containing region. Either only the upstream region was replaced with that of the Act5C promoter (fusion site 7 bp before the TSS), the upstream region and the Inr were replaced (fusion site 8 bp after the TSS), or only the Inr was replaced (16 bp region around the TSS). (B) Pol II ChIP-nexus profiles under control conditions and after treatment with triptolide (TRI) for 1 hr show a strong reduction of paused Pol II after replacing the Inr sequence. (C) Quantification of the relative changes in paused Pol II stability for all fusion promoters relative to the wild-type promoter (TRI treatment: 1 hr for all the promoters).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Pol II ChIP-nexus profile at comm2, Act5C-up-comm2, TATA-comm2, dve, Act5C-up-dve and TATA-dve promoters under control condition and after Triptolide (TRI) treatment (40 min for comm2 and 1 hr for dve).
+
+### Highly paused promoters and TATA promoters contain different Inr variants
 
 The observation that the Inr sequence itself is important for pausing prompted us to perform a genome-wide search for Inr variants that may preferentially promote or destabilize Pol II pausing. For this purpose, we compared a strict set of naturally occurring TATA-containing promoters that have a relatively short paused Pol II half-life (<30 min) with those of stably paused promoters without a TATA box (half-life >= 60 min). The results revealed a significant difference in the Inr sequence between the two promoter types (Figure 6A and B). The Inr sequence surrounding the first transcribed base of stably paused promoters is best described by the motif TYAGTY (Figure 6B left).
 
@@ -97,9 +153,25 @@ The observation that the Inr sequence itself is important for pausing prompted u
 
 In contrast, Inr sequences of TATA-containing promoters are more degenerate with frequent mismatches to the Inr consensus sequences (Figure 6B right). These mismatches may even occur at the A, which is the first transcribed base (the +1). However, the most striking difference is that the consensus Inr of stably paused promoters contains a G at the next position (the +2). Stably paused promoters contain a G in 90% of cases, while TATA-containing promoters have a G at this position in only 26% (p<10−46). This raises the possibility that the G at the +2 position of the Inr, which we refer to as Inr-G, plays an important role in stabilizing Pol II pausing.
 
-## The Inr-G variant plays a dominant role in stabilizing Pol II pausing
+### The Inr-G variant plays a dominant role in stabilizing Pol II pausing
 
 The discovery of the Inr-G variant prompted us to revisit our earlier analysis on how different combinations of promoter elements correlate with the half-life of paused Pol II. Strikingly, when we distinguished between Inr-G and Inr-nonG variants, the presence of the Inr-G variant correlated by far the strongest with Pol II pausing (Figure 7A and B and Figure 7—figure supplement 1). Promoters with an Inr-G variant had a median Pol II half-life of ~44 min, compared to ~14 min for promoters with the Inr-nonG variant (Wilcoxon p<10−48) or ~18 min for promoters with a pausing element (Wilcoxon p<10−24). When the Inr-G variant was found in combination with a pausing element, the median Pol II half-life was almost 60 min (compared to ~14 min for the Inr-nonG variant, Wilcoxon p<10−62). This suggests that while the pausing elements contribute to Pol II pausing, they strongly depend on the Inr-G variant, which overall has the strongest effect on Pol II pausing.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig7-v1.jpg)
+
+**Figure 7.:** (A) Analysis of paused Pol II half-lives as a function of core promoter element combinations after separating the Inr sequences into those that contain a G at position +2 (Inr-G) versus those that do not contain a G at this position (Inr-nonG). Median paused Pol II half-life (left), promoter numbers (right) and boxplot of their distribution (bottom, median in red) are shown for promoters with different combinations of core promoter elements. The promoters only contain the indicated promoter element, excluding any other promoter element (e.g. the 491 promoters with pausing elements and Inr-G variant do not contain TATA box). Similar results were obtained using a non-mutually exclusive model (Figure 7—figure supplement 1). Note that strong Pol II pausing was observed in all combinations that contain the Inr-G variant. Results from testing between combinations using the Wilcoxon rank test are shown in Table S4. (B) Experimental strategy to test the effect of mutating the G at Inr + 2 position of the Inr to T or A at the stably paused promoters dve, pk and the synthetic Super Core Promoter (SCP). (C) Pol II ChIP-nexus profiles after treatment with triptolide (TRI) for 1 hr show a strong reduction in Pol II pausing after the G was mutated at the dve promoter. (D) Quantification of the relative changes in paused Pol II stability for all fusion promoters relative to the corresponding wild-type promoter. Error bars are from replicate experiments. The duration of TRI treatment was 1 hr for pk and dve derived promoters, 30 min for SCP derived promoters.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Median paused Pol II half-life (left) and promoter numbers (right) at promoters with different combinations of core promoter elements using a non-mutually exclusive model. (B) Paused Pol II half-life at promoters with different combinations of core promoter elements using a non-mutually exclusive model.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Pol II ChIP-nexus profile at SCP, SCP-Inr-GtoT, pk and pk-Inr-GtoT fusion promoters under control condition and Triptolide (TRI) treatment (30 min for SCP, 1 hr for pk).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/41461/elife-41461-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** To study the effect of altered promoter sequences on RNA expression, we performed RT-qPCR for all experiments. The relative Pol II pausing stability (green) and relative RNA expression levels (yellow) are shown. Measurements for the wild-type promoter are normalized to 1, and the relative values for the mutated promoters are shown next to it. Errors bars refer to standard error among two to three biological replicates. Note that the error is large due the variability in transfection efficiency between independent samples. Despite the variability, the change in Pol II pausing stability was in most cases inversely correlated with that of RNA transcription. Thus, a loss in Pol II pausing was usually associated with an increase in transcription. This is consistent with Pol II pausing having an inhibitory effect on transcription. We cannot exclude the possibility that the causality is reverse though, that is that an increase in promoter strength leads to a reduction in Pol II pausing. It is unclear, however, whether promoter strength can be uncoupled from Pol II pausing, and we cannot measure them separately. In our model, promoter strength and Pol II pausing are both determined by TFIID, which binds to both the upstream and downstream core promoter elements we studied.
 
 Interestingly, the presence of TATA was still correlated with shorter Pol II half-lives (median ~13 min), but the variant of Inr that was present made a strong difference (Figure 7A and Figure 7—figure supplement 1). While promoters with a combination of TATA and Inr-nonG had slightly shorter half-lives (median ~11 min), TATA in combination with the Inr-G variant showed very stable Pol II pausing (median ~59 min, Wilcoxon p<10−7). This suggests that the Inr acts dominantly over TATA in its effect on Pol II pausing, which explains our earlier observations that introducing a TATA upstream region alone only had a small effect on stably paused promoters.
 
@@ -109,7 +181,7 @@ Strikingly, we observed a dramatic reduction in the stability of paused Pol II i
 
 ## Discussion
 
-## The Inr plays an important role in stable Pol II pausing
+### The Inr plays an important role in stable Pol II pausing
 
 Genome-wide correlations have suggested a role for promoter sequences in Pol II pausing (Chen et al., 2013; Gaertner et al., 2012; Gilchrist et al., 2010; Hendrix et al., 2008; Nechaev et al., 2010; Shao and Zeitlinger, 2017), but functional data supporting a causal role for these sequences had been largely lacking. Here, we found that Pol II pausing is remarkably well recapitulated on a plasmid and that its stability can be measured on the plasmid by treatment with triptolide. By taking advantage of this assay, which we call reporter-ChIP-nexus, we were able to test the contribution of individual core promoter elements to Pol II pausing. We found that replacement of core promoter regions bound by TFIID tended to change the stability of paused Pol II in the expected direction, but the overall sequence context of the promoter was still important.
 
@@ -125,7 +197,7 @@ Interestingly, an Inr-G variant (TCAGTT) was identified in comparative Drosophil
 
 It is important to point out that while the G is conserved in Drosophila, human Inr sequences are often more degenerate and do not show a significant enrichment of G at the +2 (Carninci et al., 2006; Frith et al., 2008; Lo and Smale, 1996; Vo Ngoc et al., 2017a). However, there are also Inr variants with a much longer consensus sequence (Hendy et al., 2017; Yarden et al., 2009). It is therefore possible that human Inr variants also differentially affect Pol II pausing.
 
-## Promoter elements could be linked to Pol II pausing through TFIID
+### Promoter elements could be linked to Pol II pausing through TFIID
 
 The promoter elements we tested here for Pol II pausing have traditionally been studied for their role in promoter recognition and transcription initiation by TFIID (Burley and Roeder, 1996; Lee and Young, 2000). TFIID is a large, flexible multi-subunit complex that can simultaneously bind to the TATA box, the Inr, and the pausing elements (Louder et al., 2016; Patel et al., 2018), thereby promoting the assembly of the transcription initiation complex. More recent evidence, however, suggests that TFIID has a function beyond initiation. For example, there is accumulating evidence that TFIID promotes Pol II re-initiation (Joo et al., 2017; Oelgeschläger et al., 1998; Yudkovsky et al., 2000; Zhang et al., 2015). Furthermore, genome-wide ChIP-nexus data show that TFIID binding extends beyond the pausing position in vivo (Shao and Zeitlinger, 2017), raising the intriguing possibility that TFIID plays a role in the coordination between consecutive rounds of Pol II initiation, pausing, and pause release.
 
@@ -135,7 +207,7 @@ If TFIID remains bound after initiation, it is possible that it influences the s
 
 **Figure 8.:** (A)At stably paused promoters, pausing elements and consensus Inr sequences with a G at +2 position promote TFIID-downstream DNA interactions, which prolong Pol II pausing. (B)At TATA-containing promoters, the TATA box and a degenerate Inr sequence favor TFIID interactions with upstream DNA, which promote Pol II pause release.
 
-## Future perspective
+### Future perspective
 
 We found that reporter-ChIP-nexus is a useful method for studying the relationship between promoter sequence and Pol II pausing. This plasmid-based assay recapitulates the endogenous Pol II dynamics at the promoters tested and has sufficient sensitivity to identify changes in Pol II pausing upon promoter sequence alterations. The simplicity of the assay will no doubt be helpful for further studies on the roles of individual promoter sequences in Pol II pausing, including those of promoter types not studied here.
 
@@ -145,17 +217,349 @@ Taken together, reporter-ChIP-nexus promises to open new possibilities for measu
 
 ## Materials and methods
 
-## Methods
+**Key resources table**
 
-## Reporter construction
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Rpb3</td>
+      <td>Julia Zeitlinger Lab</td>
+      <td>Zeitlinger Lab #163185–50</td>
+      <td>10 ug</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-H3K4me3</td>
+      <td>Cell Signaling</td>
+      <td>#9727</td>
+      <td>10 ug</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>NEB 5-alpha Competent E. coli (High Efficiency)</td>
+      <td>New England Biolabs</td>
+      <td>#C2987H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>One Shot ccdB Survival 2 T1R Competent Cells</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#A10460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Chloroform</td>
+      <td>Sigma-Aldrich</td>
+      <td>#C2432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CircLigase ssDNA Ligase</td>
+      <td>Illumina (Epicentre)</td>
+      <td>#CL4115K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>#276855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Dynabeads Protein A</td>
+      <td>Life Technologies</td>
+      <td>#100-08D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Dynabeads Protein G</td>
+      <td>Life Technologies</td>
+      <td>#100-04D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FastDigest BamHI</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#FERFD0054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>FuGENE HD reagent</td>
+      <td>Promega</td>
+      <td>#E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>HyClone SFX-Insect Cell Culture Media</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#SH3027802PM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Klenow Fragment (3’ to 5’ exo-)</td>
+      <td>New England Biolabs</td>
+      <td>#M0212S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lambda Exonuclease</td>
+      <td>New England Biolabs</td>
+      <td>#M0262L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Opti-MEM Reduced Serum Medium</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#31985062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Phenol: Chloroform: iso-Amyl alcohol</td>
+      <td>VWR</td>
+      <td>#97064–824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Protease Inhibitor Cocktail tablets EDTA-free</td>
+      <td>Roche Diagnostics Corporation</td>
+      <td>#5056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proteinase K</td>
+      <td>Life Technologies</td>
+      <td>#25530–049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>recJ</td>
+      <td>New England Biolabs</td>
+      <td>#M0264L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Restriction emzyme AfeI</td>
+      <td>New England Biolabs</td>
+      <td>#R0652S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Restriction emzyme EcoRV-HF</td>
+      <td>New England Biolabs</td>
+      <td>#R3195S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Restriction emzyme SacI-HF</td>
+      <td>New England Biolabs</td>
+      <td>#R3156S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase A</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#EN0531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase H</td>
+      <td>New England Biolabs</td>
+      <td>#M0297S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript II Reverse Transcriptase</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#18064014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 DNA Polymerase</td>
+      <td>New England Biolabs</td>
+      <td>#M0203S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Triptolide</td>
+      <td>TOCRIS Bioscience</td>
+      <td>#3253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TRIzol Reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MiniPrep kit</td>
+      <td>Genesee</td>
+      <td>#11–330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fast SYBR Green Master mix</td>
+      <td>Life Technologies</td>
+      <td>#4385612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>#E2611S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity RNA-to-cDNA Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#4387406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IBI High Speed Plasmid Mini Kit</td>
+      <td>MIDSCI</td>
+      <td>#IB47101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext dA-tailing module</td>
+      <td>New England Biolabs</td>
+      <td>#E6053L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext end-repair module</td>
+      <td>New England Biolabs</td>
+      <td>#E6050L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Multiplex Oligos for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>#E7335S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5High-Fidelity 2X Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>#M0492L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>#E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Ligation Kit</td>
+      <td>New England Biolabs</td>
+      <td>#M2200L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>Kc167 cells</td>
+      <td>DGRC</td>
+      <td>#1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. pseudoobscura)</td>
+      <td>ML83-63 cells</td>
+      <td>DGRC</td>
+      <td>#33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ChIP-nexus oligos</td>
+      <td>(He et al., 2015)</td>
+      <td></td>
+      <td>See Table S5</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gene-specific 5’ RNA sequencing oligos</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Table S6</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Reporters used in this study</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Table S7 and S8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analysis code</td>
+      <td>GitHub</td>
+      <td>https://github.com/zeitlingerlab/Shao_eLife_2019</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Methods
+
+#### Reporter construction
 
 The pAWG GFP reporter plasmid from the Drosophila Gateway cloning collection was used as the backbone for the reporter plasmid. The Act5C core promoter (−41 to 103 bp around the transcription start site, not including the upstream Act5C regulatory sequences, which is −2470 to −42 bp from the transcription start site) and the downstream Gateway cloning cassette (sequence between attR1 and attR2) were removed by digesting with the SacI and AfeI restriction enzymes. A 6 x UAS sequence from pUASp (as found in DGRC #1189) was inserted between the SacI and Afel restriction sites using Gibson Assembly Master Mix. The resulting plasmid pAWG-UAS has the Act5c upstream regulatory region, 6 x UAS, a GFP coding sequence and an EcoRV restriction site between the UAS sequences and the GFP coding region. Promoter sequences of interests were inserted into pAWG-UAS at the EcoRV cutting site with Gibson Assembly Master Mix. Subsequent mutations of core promoter sequences were performed with the Q5 site-directed site mutagenesis kit. For plasmid amplification and purification, the DNA was transformed into NEB 5-alpha Competent E. coli (High Efficiency) or One Shot ccdB Survival 2 T1R Competent Cells and purified with IBI High Speed Plasmid Mini Kit. Clones were validated with Sanger sequencing using the sequencing primer GCACCGTGACCATCACAGCATA. See Table S6 and S7 for detailed constructs descriptions and sequences.
 
-## Cell culture and transcription inhibitor treatment
+#### Cell culture and transcription inhibitor treatment
 
 D. melanogaster Kc167 cells (DGRC #1) were grown in SFX media at 25°C. D. pseudoobscura ML83-63 cells (DGRC #33) were grown in M3 +BPYE + 10% FCS media at 25°C. Transcription inhibitors were added directly into culture media. Cells were treated with 500 μM Triptolide (TOCRIS Bioscience Cat. No. 3253 dissolved in DMSO) as done previously (Shao and Zeitlinger, 2017). Equivalent amounts of DMSO treatment (2% v/v) were used as control. To best capture the stability of paused Pol II, cells were treated with Triptolide for different time after transfecting with different reporter constructs. Refer to the main text and figure legends for the treatment duration.
 
-## ChIP-nexus
+#### ChIP-nexus
 
 For each ChIP-nexus experiment, 107 Kc167 cells or ML83-63 cells were fixed with 1% formaldehyde in culturing media at room temperature for 10 min with rotation. Fixed cells were washed with cold PBS, incubated with Orlando and Paro’s Buffer (0.25% triton X-100, 10 mM EDTA, 0.5 mM EGTA, 10 mM Tris-HCl pH 8.0, with freshly added Protease Inhibitor) for 10 min at room temperature with rotation, and then centrifuged and re-suspended in ChIP Buffer (10 mM Tris-HCl, pH 8.0; 140 mM NaCl; 0.1% SDS; 0.1% sodium deoxycholate; 0.5% sarkosyl; 1% Triton X-100, with freshly added Protease Inhibitor). Sonication was performed with a Bioruptor Pico for five rounds of 30 s on and 30 s off. Chromatin extracts were then centrifuged at 16000 g for 5 min at 4°C, and supernatants were used for ChIP.
 
@@ -165,27 +569,43 @@ For chromatin immunoprecipitation, chromatin extracts were added to the antibody
 
 After RecJf exonuclease digestion, the chromatin was eluted and subjected to reverse crosslinking and ethanol precipitation. Purified single-stranded DNA was then circularized with CircLigase, annealed with oligonucleotides complementary to the BamHI restriction site and linearized by BamHI digestion. The linearized single-stranded DNA was purified by ethanol precipitation and subjected to PCR amplification with NEBNext High-Fidelity 2X PCR Master Mix and ChIP-nexus primers. The ChIP-nexus libraries were then gel-purified before sequencing with Illumina NextSeq 500.
 
-## Reporter-ChIP-nexus
+#### Reporter-ChIP-nexus
 
 To transform cells with the reporter plasmid, 1.5 × 107 Kc167 cells were diluted in 10 ml SFX media and seeded into a 10 cm cell culture dish. A mixture of 2.5 µg reporter plasmids, 20 µl FuGENE HD reagent and 500 µl Opti-MEM Reduced Serum Medium was then added to the cell culture. Transfected cells were cultured for 48 hr at 25°C to allow proper expression of the reporter. ChIP-nexus was performed on the whole cell extracts from transfected cells following standard ChIP-nexus procedure as described above. After sequencing, reporter-ChIP-nexus samples were aligned to the combined genome of dm3 and the specific reporter construct. Only reads that uniquely aligned to the reporter sequence were used for analysis and PCR duplicates with the same ChIP-nexus barcode were removed.
 
-## Reporter expression quantification
+#### Reporter expression quantification
 
 Expression of the reporter was quantified by calculating the expression of GFP RNA from the reporter over the expression of the endogenous RNA from the RpL30 locus, after normalizing for the difference in copy number between the reporter and the endogenous genome.
 
 For cDNA preparations, 5 × 105 transfected cells were transferred into 1.5 ml tubes and washed with cold PBS. After removing all liquid, cells were lysed and incubated with 500 µl TRIzol Reagent at room temperature for 5 min. Total RNA was then extracted with 100 µl Chloroform and purified with a Direct-zol RNA MiniPrep kit. cDNA was generated with a High-Capacity RNA-to-cDNA Kit.
 
-For DNA preparations, 5 × 105 transfected Drosophila Kc167 cells were transferred to 1.5 ml tubes and washed with cold PBS. After removing all liquid, cells were lysed with 50 µl ChIP buffer. Cell lysates were incubated with 150 Elution buffer (50 mM Tris pH 8.0, 10 mM EDTA, 1% SDS), 100 µl TE buffer (50 mM Tris pH 8.0, 1 mM EDTA) and 4 µl RNAse A for 30 min at 37°C. Then, 2 µl Protease K was added to the mixture and incubated at 65°C for 2 hr. The DNA was then purified with an ethanol precipitation. qPCR on both the cDNA and DNA was performed using Fast SYBR Green Master Mix and primers against GFP and RpL30. The relative expression of the reporter was calculated using the following equations.GFPexpression=2Ct(GFPDNA)−Ct(GFPcDNA)RpL30expresssion=2Ct(RpL30DNA)−Ct(RpL30cDNA)GFPrelativeexpression=(GFPexpression)/RpL30expression
+For DNA preparations, 5 × 105 transfected Drosophila Kc167 cells were transferred to 1.5 ml tubes and washed with cold PBS. After removing all liquid, cells were lysed with 50 µl ChIP buffer. Cell lysates were incubated with 150 Elution buffer (50 mM Tris pH 8.0, 10 mM EDTA, 1% SDS), 100 µl TE buffer (50 mM Tris pH 8.0, 1 mM EDTA) and 4 µl RNAse A for 30 min at 37°C. Then, 2 µl Protease K was added to the mixture and incubated at 65°C for 2 hr. The DNA was then purified with an ethanol precipitation. qPCR on both the cDNA and DNA was performed using Fast SYBR Green Master Mix and primers against GFP and RpL30. The relative expression of the reporter was calculated using the following equations.
+
+$$
+GFPexpression=2^{Ct(GFPDNA)−Ct(GFPcDNA)}
+$$
+
+
+
+$$
+RpL30expresssion=2^{Ct(RpL30DNA)−Ct(RpL30cDNA)}
+$$
+
+
+
+$$
+GFPrelativeexpression=(GFPexpression)/RpL30expression
+$$
 
 For this analysis, cDNA was prepared from two to three biological replicates (cells were transfected and processed on different dates) using 5 × 105 transfected cells each. Two technical replicates (the same biological sample were split into two and processed side by side) were performed during qPCR.
 
-## Gene-specific 5’ RNA sequencing
+#### Gene-specific 5’ RNA sequencing
 
 This method is similar to 5’ RNA amplification of cDNA ends (RACE) but uses reagents and steps from ChIP-nexus. Briefly, total RNA was isolated from 5 × 105 transfected cells as above, and cDNA was generated from the GFP RNA using SuperScript II Reverse Transcriptase and a primer against GFP that has partial TruSeq P5 sequences at the 5’ end (GFP_reversetx_primer). The cDNA was purified by treatment with RNAse A and RNAse H at room temperature for 30 min, followed by ethanol precipitation. The cDNA circularization, cutting and PCR amplification was then performed as in the ChIP-nexus protocol (thus without rolling circle amplifications), except that a new BamHI cutting oligo (reversetx_BamHI_cutting) was annealed before BamHI cutting, and a barcoded P7-GFP fusion primer (reversetx_barcode_primer_#1) was used in the PCR. After sequencing with TruSeq primers, the reads were aligned to the dm3-reporter combined genome, and the first bases of the P5 sequenced reads were recorded as the stop bases of the reverse transcriptase and correspond to the 5’ ends of the GFP RNA from the reporter plasmid.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Normalization of Pol II signal on the plasmid
+#### Normalization of Pol II signal on the plasmid
 
 Due to variations in the transfection efficiency, absolute Pol II signal on different plasmids is not comparable. As a result, paused Pol II stability needs to be accessed by comparing Pol II signal under control and triptolide-treated conditions. Because control and triptolide-treated samples come from the same pool of transfected cells, they have the same transfection efficiency and the same plasmid/Kc167 genome ratio. Therefore, Pol II signal on the plasmids under control and triptolide-treated conditions can be directly compared after normalizing for read counts.
 
@@ -193,19 +613,19 @@ The changes in Pol II signal after triptolide treatment is calculated in the fol
 
 It is likely that this method underestimates the changes of Pol II signal between control and triptolide-treated condition since the total occupancy of Pol II is slightly reduced after triptolide treatment (Shao and Zeitlinger, 2017), yet we normalize both samples to equal read counts. However, since the relative loss of Pol II after triptolide treatment is similar across all samples in the Kc167 genome, the relative differences in the above calculated ratio between different plasmids is preserved. For this analysis, two biological replicates (cells were transfected and processed on different dates) were performed using 107 transfected cells each.
 
-## Correlation between paused Pol II half-lives and core promoter elements
+#### Correlation between paused Pol II half-lives and core promoter elements
 
 In Figure 4A and Figure 4—figure supplement 1, promoters with previously measured paused Pol II half-life (Shao and Zeitlinger, 2017) were separated into groups with either one or two of the following core promoter elements: TATA box (STATAWAWR), Inr (TCAKTY) and pausing elements (CSARCSSA, KCGGTTSK or KCGRWCG). Only motif matches at the expected canonical position and with up to one mismatch were allowed (Table S1). In a mutually exclusive model (Figure 4—figure supplement 1), promoters with TATA-box and Inr cannot contain pausing elements, while in a non-mutually exclusive model (Figure 4A), pausing elements are allowed.
 
 The same method was applied to Figure 7A,B (using a mutually exclusive model) and Figure 7—figure supplement 1 (using a non-mutually exclusive model), except that promoters were further separated into containing Inr-G or Inr-nonG variants based on whether a G is present at the +2 position.
 
-## Sequence analysis of TATA promoters and stably paused promoters
+#### Sequence analysis of TATA promoters and stably paused promoters
 
 TATA promoters and stably paused promoters were defined using the length of paused Pol II half-life (Shao and Zeitlinger, 2017) and the presence or absence of the TATA box sequence (STATAWAWR with up to one mismatch) at 40 to 20 bp upstream of the transcription start site. TATA promoters have the TATA box sequence and paused Pol II half-lives shorter than 30 min, whereas stably paused promoters lack a detectable TATA box sequence and have paused Pol II half-lives longer than 60 min. In Drosophila Kc167 cell, 132 promoters were defined as TATA promoters and 490 promoters were defined as stably paused promoters.
 
 In Figure 5A, DNA sequences at TATA promoters (n = 132) and stably paused promoters (n = 132, randomly selected from the original 490 promoters) were obtained from the dm3 genome and represented as heatmap. The consensus motif for the Inr sequence in Figure 5B was generated using the R package seqLogo.
 
-## Data and software availability
+### Data and software availability
 
 Raw and processed data associated with this manuscript are deposited in GEO under the accession number GSE116244 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116244).
 

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.38821.001 Substrates of most transport proteins have not been identified, limiting our understanding of their role in physiology and disease. Traditional identification methods use transport assays with radioactive compounds, but they are technically challenging and many compounds are unavailable in radioactive form or are prohibitively expensive, precluding large-scale trials. Here, we present a high-throughput screening method that can identify candidate substrates from libraries of unlabeled compounds. The assay is based on the principle that transport proteins recognize substrates through specific interactions, which lead to enhanced stabilization of the transporter population in thermostability shift assays. Representatives of three different transporter (super)families were tested, which differ in structure as well as transport and ion coupling mechanisms. In each case, the substrates were identified correctly from a large set of chemically related compounds, including stereo-isoforms. In some cases, stabilization by substrate binding was enhanced further by ions, providing testable hypotheses on energy coupling mechanisms.
+Substrates of most transport proteins have not been identified, limiting our understanding of their role in physiology and disease. Traditional identification methods use transport assays with radioactive compounds, but they are technically challenging and many compounds are unavailable in radioactive form or are prohibitively expensive, precluding large-scale trials. Here, we present a high-throughput screening method that can identify candidate substrates from libraries of unlabeled compounds. The assay is based on the principle that transport proteins recognize substrates through specific interactions, which lead to enhanced stabilization of the transporter population in thermostability shift assays. Representatives of three different transporter (super)families were tested, which differ in structure as well as transport and ion coupling mechanisms. In each case, the substrates were identified correctly from a large set of chemically related compounds, including stereo-isoforms. In some cases, stabilization by substrate binding was enhanced further by ions, providing testable hypotheses on energy coupling mechanisms.
 
 ## Introduction
 
@@ -35,25 +35,67 @@ Therefore, there is an unmet demand for the development of new methods to limit 
 
 ## Results
 
-## Principle of the method
+### Principle of the method
 
 Ligands, such as substrates or inhibitors, are recognized by transport proteins through specific interactions at the exclusion of other molecules. The formation of these additional bonds leads to an increase in the total number of interactions (Robinson and Kunji, 2006; Yan, 2017; Yamashita et al., 2005). Consequently, binding leads to an overall increase in the stability of the ligand-bound species compared to the unliganded species in the population of protein molecules. We have previously shown that the mitochondrial ADP/ATP carrier (AAC) from the thermophilic fungus Thermothelomyces thermophila (UniProt G2QNH0) when purified in dodecyl-maltoside is stabilized upon binding of its specific inhibitors carboxyatractyloside and bongkrekic acid in thermostability shift assays using the thiol-reactive fluorophore N-[4-(7-diethylamino-4-methyl-3-coumarinyl)-phenyl]-maleimide (CPM) (Crichton et al., 2015; King et al., 2016). In the assay, the apparent melting temperature Tm of a population of purified transporters is determined by monitoring the increase in fluorescence by CPM reacting with thiols that have become exposed due to thermal denaturation of the proteins (Figure 1a). The apparent melting temperature Tm is the temperature at which the rate of unfolding for a given population is highest. We tested whether transported substrates can also cause a shift in thermostability, as their properties differ quite substantially from those of inhibitors or other tight binders. Indeed, the thermostability of the AAC population was enhanced in the presence of ADP and ATP, but not in the presence of AMP, which reflects the known substrate specificity of the carrier well (Mifsud et al., 2013) (Figure 1b). This effect is only observed at high concentrations of the substrate, well above the apparent Km of transport (Figure 1—figure supplement 1). The higher the substrate concentration, the higher the likelihood that part of the population is prevented from unfolding by binding of the substrate, leading to the observed shift in thermostability. We reasoned that this approach could be applied as a screening method to find substrate candidates of uncharacterized transporters by using compound libraries. To verify the method, we have tested transporters from three different (super)families, which are distinct in structure and transport mechanism.
 
-## Substrates cause specific thermostability shifts in different transporters
+![Figure 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig1-v2.jpg)
+
+**Figure 1.:** (a) As protein molecules in a population unfold due to a gradual rise in temperature (25–90°C), buried cysteine residues become solvent-exposed and accessible to the thiol-specific probe CPM (blue stick representation) that becomes fluorescent upon reaction. (b) Typical unfolding curves of the mitochondrial ADP/ATP carrier of Thermothelomyces thermophila (2 μg) in the absence and presence of 2.5 mM AMP, ADP and ATP, shown in red, blue and green, respectively. (c) The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT), which is used as an indicator of thermal stability. The apparent melting temperatures reported in the text are from three independent protein purifications.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The substrate concentration-dependency of the apparent melting temperature of purified mitochondrial ADP/ATP carrier. The apparent melting temperature (Tm) was determined from the peak in the derivative of the unfolding curve for different concentrations of AMP, ADP, and ATP in 20 mM HEPES pH 8.0, 100 mM NaCl, 0.1% dodecyl-maltoside, 0.1 mg ml−1 tetraoleoyl cardiolipin. The data are represented by the average and standard deviation of three biological repeats for ADP and ATP, and five biological repeats for AMP.
+
+### Substrates cause specific thermostability shifts in different transporters
 
 The galactose transporter GalP of E. coli (Henderson, 1977) is a prototypical member of the sugar porter family that belongs to the major facilitator superfamily (MFS) (Pao et al., 1998). Currently, the MFS contains 24 different transporter families and 320,665 sequence entries from 5224 species, but the substrates for the vast majority of them have not been formally identified (Pfam CL0015). In humans, 14 of the 65 solute carrier families belong to the MFS, and substrates are not known for around 12% of them (http://slc.bioparadigms.org/).
 
 The structure of GalP has not been determined, but those of its mammalian homologs GLUT1 (Deng et al., 2014), GLUT3 (Deng et al., 2015), and GLUT5 (Nomura et al., 2015) are available (Figure 2a). GalP contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide (McDonald and Henderson, 2001). To evaluate the strategy, we measured the unfolding curves of purified GalP in dodecyl-maltoside in the presence of a large number of different sugars. We determined the temperature shift by subtracting the apparent Tm of unliganded GalP (57.6 ± 0.3°C) from the apparent Tm values observed in the presence of compounds (ΔTm). The GalP population was markedly stabilized by D-glucosamine (ΔTm; 5.7 ± 0.4°C), D-glucose (ΔTm; 4.2 ± 0.5°C), D-galactose (ΔTm; 2.1 ± 0.6°C) (Figure 2—figure supplement 1), and to a lesser extent by D-talose, 2-deoxy-D-glucose, 6-deoxy-D-glucose. Importantly, the related L-isoforms showed no significant shift (Figure 2b). These results match the known substrate specificity of GalP well (Henderson and Maiden, 1990; Walmsley et al., 1994). D-Glucosamine, the most stabilizing compound, had not been investigated previously, but transport assays showed that this compound is a new substrate (Figure 2—figure supplement 2), demonstrating that the assay can be used to discover as well as to extend the substrate specificity of transport proteins.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-v2.jpg)
+
+**Figure 2.:** (a), (c) and (e) Structural models of GalP (based on GLUT5, PDB 4YBQ), Mhp1 (PDB 2JLN) and AAC (based on Aac2p, PDB 4C9G), respectively. The models are shown in rainbow cartoon and wheat surface representations. Cysteine residues are shown as spheres, except for Cys-19 of GalP, which could not be modeled. (b), (d) and (f) Thermostability screen of GalP (3 μg), Mhp1 (3 μg) and AAC (2 μg) against sugar (50 mM final concentration), nucleobase (2 mM) and nucleotide libraries (2.5 mM), respectively. The temperature shift (ΔTm) is the apparent melting temperature in the presence of compound minus the apparent melting temperature in the absence of compound. The data are represented by the standard deviation of five, three and three independent repeats, respectively. Two-tailed Student’s t-tests assuming unequal variances were performed for the significance analysis (0.05 < p-value: not significant; 0.01 < p-value<0.05: *; 0.001 < p-value<0.01: **; 0.0001 < p-value<0.001: ***; p-value<0.0001: ****). L-BH, 5-benzyl-L-hydantoin; BVH, 5-bromovinylhydantoin; L-IMH, 5-indolylmethyl-L-hydantoin, L-NMH 5- (2-naphthylmethyl)-L-hydantoin.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Typical thermostability profiles of purified GalP (top) and their derivatives (dF/dT; bottom) in the absence and presence of stabilizing substrates D-galactose (red trace), D-glucose (blue trace) and D-glucosamine (green trace), which was also causing a significant shift. The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT) and is indicated for each curve. For each reaction, 2.5 μg purified protein was assayed in the presence of 50 mM compound. The apparent melting temperature reported in the text is from five independent protein purifications.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Transport assays with [14C]-labeled D-glucosamine in whole cells of the GalP-expressing plasmid pGP1 in the host E. coli strain JM1100 (open circles) and control JM1100 without plasmid (closed circles). Transport in (a) the absence or (b) presence of 4000-fold excess of unlabeled D-galactose. The data are represented by the average and standard deviation of four technical repeats.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Typical thermostability profiles of purified Mhp1 (top) and their derivatives (dF/dT; bottom) in the absence or presence of stabilizing compounds 5-benzyl-L-hydantoin (L-BH, red trace), 5-indolylmethyl-L-hydantoin (L-IMH, blue trace), 5-(2-naphthylmethyl)-L-hydantoin (L-NMH, green trace) and 5-bromovinylhydantoin (BVH, orange trace). The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT) and is indicated for each curve. For each reaction, 2.5 μg purified protein was assayed in the presence of 140 mM NaCl and 2 mM compound in buffer containing 10 mM Tris-HCl pH 8.0, 2.5% glycerol and 0.05% dodecyl-maltoside. The apparent melting temperature reported in the text is from three independent protein purifications.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Purified ADP/ATP carrier in dodecyl-maltoside was separately mixed with 2.5 mM of library compounds in 20 mM HEPES pH 8.0, 100 mM NaCl, 0.1% dodecyl-maltoside, 0.1 mg ml−1 tetraoleoyl cardiolipin and subjected to a melting regime. The shifts in the apparent Tm were recorded and are shown as bars. The data are represented by the average and standard deviation of three independent assays. The significance tests were carried out as in Figure 2.
+
 The transport protein Mhp1 from Microbacterium liquefaciens (Uniprot D6R8X8) transports 5-substituted hydantoins in a sodium-coupled mechanism (Suzuki and Henderson, 2006; Shimamura et al., 2010) (Figure 2c), and is a member of the nucleobase-cation-symport family of homologous proteins that also transport purines, pyrimidines, vitamins and related metabolites. The transporter has the LeuT-fold (Shimamura et al., 2010; Yamashita et al., 2005) and belongs to the amino acid-polyamine-organocation superfamily (Västermark and Saier, 2014), which currently contains 20 families and 147,819 sequence entries, the substrates of which have mostly not been identified (Pfam CL0062). Mhp1 contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide (Calabrese et al., 2017). Purified Mhp1 in dodecyl-maltoside had an apparent Tm of 51.3°C ± 0.6°C and to test the binding specificity, the ΔTm was determined upon addition of different nucleobases and other compounds (Figure 2d). The only stabilizing compounds were 5-indolylmethyl-L-hydantoin (ΔTm; 14.1 ± 1.2°C), 5-benzyl-L-hydantoin (ΔTm; 13.6 ± 1.2°C) and 5-bromovinylhydantoin (ΔTm; 11.9 ± 1.1°C) (Figure 2—figure supplement 3). A chemically related inhibitor of Mhp1, 5-(2-naphthylmethyl)-L-hydantoin (L-NMH) also led to a thermostability shift (ΔTm; 15.6 ± 1.7°C) (Figure 2d). These results match the known substrate and inhibitor specificity of Mhp1 (Simmons et al., 2014), showing that the assay could identify substrates from a set of closely related compounds without false positives.
 
 To validate the method further, we also screened the mitochondrial ADP/ATP carrier from T. thermophila (UniProt G2QNH0) (King et al., 2016) (Figure 2e). This transport protein belongs to the mitochondrial carrier family (MCF), which is involved in the translocation of chemically diverse compounds across the mitochondrial inner membrane, using uniport, symport or antiport modes of transport (Kunji, 2012). Currently, there are 89,340 different sequence entries from 831 different species in the database (Pfam PF00153). In humans, the MCF is the largest solute carrier family with 53 different members (SLC25), but the substrate specificity of only half of them has been defined (Kunji, 2012). We screened the thermostability of purified AAC using a library of mitochondrial compounds (Figure 2—figure supplement 4). In the presence of ATP, ADP, and dADP the population was stabilized, showing ΔTm values of 7.2 ± 0.2, 6.0 ± 0.5 and 1.8 ± 0.2°C, respectively (Figures 1b and 2f). Some other compounds, mostly structurally related nucleotides, also stabilized the protein, but with significantly smaller shifts (Figure 2f). For each type of nucleotide, the di- and tri-phosphate species showed larger shifts than the monophosphate forms, similar to the preference of ATP and ADP over AMP (Figures 1d and 2f), showing that the assay can also identify functional groups that are important contributors to substrate binding.
 
-## Substrate screening of a mitochondrial carrier from Tetrahymena thermophila
+### Substrate screening of a mitochondrial carrier from Tetrahymena thermophila
 
 To see whether this method can be used to identify candidate substrates for a previously uncharacterized transporter, we performed a high-throughput screen on a purified mitochondrial carrier from the thermophilic ciliate Tetrahymena thermophila (UniProt I7M3J0). The carrier is phylogenetically related to the yeast mitochondrial carrier that transports inorganic phosphate in symport with a proton into the mitochondrial matrix for ATP synthesis (Runswick et al., 1987), but its substrates have not been identified experimentally. The population of carriers had an apparent Tm of 56.0 ± 0.8°C and was screened against a library of 132 different mitochondrial compounds at pH 6.0 (Figure 3). The highest shift in the Tm of the population was observed for phosphate (ΔTm; 4.6 ± 0.4°C), followed by glyoxylate (ΔTm; 3.6 ± 0.8°C), acetyl-phosphate (ΔTm; 3.2 ± 0.5°C) and phosphoenolpyruvate (ΔTm; 2.3 ± 0.2°C) (Figure 3—figure supplement 1), whereas small shifts were observed for nucleotides. These compounds either contain phosphate as a functional group or resemble the structure of phosphate, such as glyoxylate (Figure 3—figure supplement 2). Thus, this assay can be used to narrow down substantially the number of potential substrate candidates from a library of unlabeled compounds. Uptake assays using protein reconstituted into proteoliposomes confirmed that the mitochondrial carrier exchanges phosphate (Figure 3—figure supplement 3a). We also tested whether glyoxylate, phosphoenolpyruvate and acetyl phosphate, which also gave a shift in thermostability assays, were transported, but none of them did (Figure 3—figure supplement 3b). However, in competition assays glyoxylate abolished uptake, demonstrating that it competes effectively with [33P]-orthophosphate for binding when present in a 1000-fold excess (Figure 3—figure supplement 3c).
 
-## The effect of coupling ions
+![Figure 3.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-v2.jpg)
+
+**Figure 3.:** Purified carrier (1 μg) in lauryl maltose neopentyl glycol was incubated at pH 6.0 with 2.5 mM of each library compound separately and the ΔTm was determined, which is the difference between the apparent melting temperatures in the presence and absence of the tested compound. The data are represented by the average and standard deviation of three independent assays. The significance tests were performed as described in the legend to Figure 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Typical thermostability curves of purified phosphate carrier (top) and their derivatives (dF/dT; bottom) in the absence and presence of stabilizing compounds phosphate (red trace), glyoxylate (blue trace), acetyl-phosphate (green trace) and phosphoenolpyruvate (PEP, orange trace). The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT) and is indicated for each curve. For each reaction, 2 μg purified protein was assayed in the presence of 2.5 mM compound in 20 mM MES pH 6.0, 100 mM NaCl, 0.1% lauryl maltose neopentyl glycol, 0.1 mg ml−1 tetraoleoyl cardiolipin. The apparent melting temperatures reported in the text are from three independent protein purifications.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Transport assays were initiated by the addition of 20 μM. [33P]-labeled orthophosphate in proteoliposomes with reconstituted carrier in the absence of internal orthophosphate (triangles) or the presence of 20 mM internal orthophosphate (circles), and a control with liposomes without reconstituted protein (squares). (B) Proteoliposomes were loaded with 20 mM compound (as indicated), and transport was initiated by the addition of 20 μM [33P]-labeled orthophosphate. (C) Competition experiments in which uptake was assayed in the presence of 20 mM external unlabeled compound (1,000-fold excess). All data are represented by the average and the standard deviation of four technical repeats, except for [33P]-orthophosphate/orthophosphate homoexchange, which is represented by the average and the standard deviation of two biological repeats, each with four technical repeats (n = 8). PEP; phosphoenolpyruvate.
+
+### The effect of coupling ions
 
 Secondary active transporters are widespread and often use the electrochemical gradient of protons or other ions to drive the uptake of substrates against their concentration gradient. Coupling ions are also recognized by transporters through specific interactions, often directly associated with the binding of substrates (Kunji and Robinson, 2010; Krishnamurthy et al., 2009).
 
@@ -81,19 +123,176 @@ Even though the main purpose of this study was to identify potential substrates 
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dodecyl-β-D-maltoside</td>
+      <td>Glycon Biochemicals GmbH</td>
+      <td>Glycon:D97002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dodecyl maltose neopentyl glycol</td>
+      <td>Anatrace</td>
+      <td>Anatrace:NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-[4-(7-diethylamino-4-methyl-3- coumarinyl)phenyl] maleimide (CPM)</td>
+      <td>Sigma</td>
+      <td>Sigma:C1484</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete Mini EDTA-free protease inhibitor tablets</td>
+      <td>Roche</td>
+      <td>Roche:5056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nickel Sepharose (High Performance)</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare:17526802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nickel-NTA Superflow</td>
+      <td>Qiagen</td>
+      <td>Qiagen:30430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Factor Xa protease</td>
+      <td>NEB</td>
+      <td>NEB:P8010L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetraoleoyl cardiolipin (TOCL)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids:710335C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>E. coli polar lipid extract</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids:100600C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[14C]-galactose</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td>American Radiolabeled Chemicals:ARC0117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[14C]-glucosamine</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td>American Radiolabeled Chemicals:ARC0118A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[33P]-orthophosphate</td>
+      <td>Hartmann Analytic</td>
+      <td>Hartmann Analytic:FF-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BioBeads</td>
+      <td>BioRad</td>
+      <td>BioRad:152–3920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C10E5</td>
+      <td>Sigma</td>
+      <td>Sigma:76436</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydantoin compounds</td>
+      <td>Other</td>
+      <td></td>
+      <td>A gift from Marta Sans, Maria Kokkinidou and Arwen Pearson, University of Hamburg</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Saccharomyces cerevisiae W303-1B</td>
+      <td>ATCC</td>
+      <td>ATTC:201238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Saccharomyces cerevisiae WB12</td>
+      <td>PMID:9878703</td>
+      <td></td>
+      <td>A gift from Dr H. Terada, Tokyo University of Science</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Escherichia coli JM1100</td>
+      <td>PMID:15558</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant  DNA reagent</td>
+      <td>Modified pYES3 vector</td>
+      <td>PMID:26453935</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 An additional key resources table is presented in Supplementary file 2, and details the compounds in the libraries.
 
-## Materials
+### Materials
 
 Chemicals were obtained from Sigma Aldrich and Thermo Fisher Scientific (USA). Nickel NTA and sepharose beads were purchased from Qiagen (USA). All enzymes were provided by New England BioLabs (USA). Lipids were purchased from Avanti Polar Lipids (USA) and detergents from Anatrace (USA). The hydantoin compounds were a kind gift of Marta Sans, Maria Kokkinidou and Arwen Pearson (University of Hamburg).
 
-## Protein expression
+### Protein expression
 
 For expression of mitochondrial ADP/ATP carrier of Thermothelomyces thermophila and the putative phosphate carrier of Tetrahymena thermophila in yeast mitochondria, gene constructs were designed to contain an N-terminal tag composed of eight histidine residues followed by a Thr-Ser-Glu-Asp linker and an Ile-Glu-Gly-Arg Factor Xa protease cleavage site. The genes were cloned into pYES3/CT vector (Invitrogen, USA) with a constitutively active promoter (pMIR promoter of the S. cerevisiae phosphate carrier). The plasmids were transformed into S. cerevisiae WB.12 (MATα ade2-1 trp1-1 ura3-1 can1-100 aac1::LEU2 aac2::HIS3) and W303-1B (MATα leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15) strains, respectively. Cells were grown in a 50-l fermenter after which mitochondria were prepared (Kunji and Harding, 2003).
 
 For expression of GalP in E. coli the promoter region and the galP gene, which was modified to encode six histidine residues at the C-terminus of the protein, were cloned into plasmid pBR322 to form plasmid pGP1, which was transformed into the galactose/glucose transport-deficient host strain JM1100 (ptsG ptsM ptsF mgl galP Hfr Δhis gnd thyA galK) (Henderson et al., 1977). Cells were grown in basal salts medium supplemented with 30 mM glycerol, 20 µg/ml thymine, 80 µg/ml histidine and 15 µg/ml tetracycline in a fermenter (30- or 100-liter scale). The gene hyuP from M. liquefaciens, modified to encode six histidine residues at the C-terminus, was cloned into plasmid pTTQ18 (Stark, 1987; Suzuki and Henderson, 2006). The His6-tagged Mhp1 hydantoin transport protein was expressed in E. coli BL21 (DE3) grown in M9 medium supplemented with 20 mM glycerol, 20 mM NH4Cl, 100 μg/ml of carbenicillin, 0.2% w/v casamino acids, 2 mM MgSO4.7H2O, 0.4 mM CaCl2.2H2O, using induction by IPTG in 100-l fermenter cultures. In all cases after harvesting the intact cells preparations were made of inner membranes (Ward et al., 1999), which were stored at −80°C in Tris-HCl buffer pH 7.5 until used for purification of each individual protein.
 
-## Protein purification
+### Protein purification
 
 The mitochondrial ADP/ATP carrier and phosphate carrier were purified using the detergents dodecyl-maltoside and lauryl maltose neopentyl glycol, respectively, using established procedures (King et al., 2016).
 
@@ -101,28 +300,28 @@ For the purification of His-tagged GalP, E. coli membranes were solubilized in b
 
 The purification of Mhp1 followed the same procedure as the GalP purification with the following modifications. Membranes were solubilized for 2 hr and incubated with Nickel NTA resin for 2 hr. The wash buffer contained 10 mM Tris-HCl pH 8, 20 mM imidazole, 10% glycerol and 0.05% dodecyl-maltoside and the elution buffer contained 10 mM Tris-HCl pH 8, 200 mM imidazole, 2.5% glycerol and 0.05% dodecyl-maltoside.
 
-## Reconstitution
+### Reconstitution
 
 Twelve milligrams of total polar lipid extract (Avanti Polar Lipids, Alabaster) was dried under a stream of nitrogen, washed with methanol, and dried as before. Lipids were re-hydrated in 20 mM MES pH 6.5, 50 mM NaCl and, when required, compound was added to a final concentration of 20 mM from a 200 mM stock. Lipids were solubilised by vortexing in the presence of 1.5% (v/v) pentaethylene glycol monodecyl ether, and 50 μg protein was added. The samples were incubated on ice for 5 min, and pentaethylene glycol monodecyl was removed to form liposomes by addition of bio-beads (Bio-Rad, Hemel Hempstead, UK). Eight additions of bio-beads were made to the sample: the first four used 60 mg, and the final four used 120 mg. Between additions, the samples were incubated with inversion at 4˚C for 20 min. Following the final bio-bead addition, the samples were incubated overnight at 4˚C with inversion. Bio-beads were removed by passage of the sample through empty micro-bio spin columns (Bio-Rad, Hemel Hempstead, UK). The external buffer was replaced with 20 mM MES pH 6.5, 50 mM NaCl using a PD10 desalting column (GE Healthcare, Little Chalfont, UK). When required, competitors were added externally to a final concentration of 20 mM.
 
-## Transport assays
+### Transport assays
 
 Robotic transport assays were performed using a Hamilton MicroLab Star robot (Hamilton Robotics Ltd, UK). For GalP transport assays, E. coli cells (GalP-expressing strain pGP1/JM1100 and JM1100 control strains) were diluted to OD600 of 20 in MES buffer (5 mM MES pH 6.6, 150 mM KCl) and incubated at room temperature with 20 mM glycerol for 10 min to be energized prior to being loaded into the wells of a MultiScreenHTS +Hi Flow-FB (pore size = 1.0 μm, Millipore). Transport assays were initiated by addition of 100 μl of buffer containing 5 μM [14C]-galactose (American Radiolabeled Chemicals, 0.2 GBq/mmol) or 5 μM [14C]-glucosamine (American Radiolabeled Chemicals, 0.2 GBq/mmol). For the competition assay, radiolabeled substrate was mixed with a 4000-fold excess of the competitor compound prior to the assay. For phosphate transport assays, 100 μl proteoliposomes were loaded into a MultiScreenHTS-HA 96-well filter plate (pore size, 0.45 µm; Millipore, Billerica), and transport was initiated by the addition of 100 μl of buffer containing 20 μM [33P]-orthophosphate (Hartmann Analytic, 0.5 GBq/mmol). For competition assays, transport was initiated in the presence of 20 mM compound (1000-fold excess). Transport was stopped after 0, 10, 20, 30, 45, 60, 150 s and, 5, 7.5 and 10 min incubation times with 200 μl ice-cold buffer and the samples were filtered and washed as above. Levels of radioactivity were measured by adding 200 μl MicroScint-20 (Perkin Elmer) and measured with a TopCount scintillation counter (Perkin Elmer). Initial rates were determined from the linear part of the uptake curves.
 
-## Preparation of the mitochondrial compound library
+### Preparation of the mitochondrial compound library
 
 To identify mitochondrial metabolites every enzyme in the KEGG metabolic database (Kanehisa et al., 2017) was evaluated for mitochondrial localization using the MitoMiner database of mitochondrial localization evidence (Smith and Robinson, 2016). A wide range of data were considered including large-scale experimental evidence from GFP tagging and mass-spectrometry of mitochondrial fractions, mitochondrial targeting sequence predictions, immunofluorescent staining from the Human Protein Atlas (Thul et al., 2017), and annotation from the Gene Ontology Consortium (The Gene Ontology Consortium, 2017). Ensembl Compara allowed these data to be shared across human, mouse, rat and yeast homologs (Zerbino et al., 2018). Once a list of enzymes with probable mitochondrial localization was collated, KEGG was used to produce a corresponding list of potential mitochondrial compounds. Additional candidates were taken from a computer model of mitochondrial metabolism that manually partitioned metabolites on either side of the mitochondrial inner membrane (Smith and Robinson, 2011). Compounds were dissolved in PIPES buffer (10 mM PIPES pH 7.0, 50 mM NaCl) to a final concentration of 25 mM or in dimethyl sulfoxide to a final concentration of 100 mM. pH was adjusted if necessary and the stocks were frozen at −80°C.
 
-## Analysis of the total number of identified transport protein substrates in different species
+### Analysis of the total number of identified transport protein substrates in different species
 
 The TransportDB database contains a large number of organisms for which the transporter complement has been identified via a bioinformatic pipeline, along with substrate predictions for the transporters characterized (Elbourne et al., 2017). To acquire the figures in Supplementary file 1, a Perl script driving an SQL query of the underlying MySQL database to TransportDB was developed to quantify those transporters where no prediction could be made for the substrate for the listed species. The number of transporters with unassigned specificity represents a minimal number, as the search procedure uses sequence similarity to characterised transporters as a criterion. However, the substrate specificity needs to be determined experimentally, as a single mutation in the binding site can profoundly change substrate recognition.
 
-## Thermostability shift assay and library screening
+### Thermostability shift assay and library screening
 
 To determine stability, purified protein (typically 1–3 μg) was mixed with 20 μg/ml of the thiol-reactive fluorophore 7-diethylamino-3-(4'-maleimidylphenyl)−4-methylcoumarin (CPM) and the fluorescent intensity was measured over a 25–90°C range of temperature using a rotatory qPCR multi sample instrument (Rotor-Gene Q, Qiagen, the Netherlands). Following an initial 18°C pre-incubation step of 90 s, the temperature was ramped 1°C every 15 s, with a 4 s wait between readings, which is equal to a ramp rate of 5.6 °C/min. The excitation and emission wavelengths were 460 nm and 510 nm, respectively. Five mg/ml stocks of CPM prepared in dimethyl sulfoxide were diluted to 0.1 mg/ml and equilibrated in assay buffer for 1 hr at room temperature in the dark before addition to the protein sample. The assay buffer was usually the buffer in which the protein was purified or in a similar buffer with a different pH (MES for pH 6.0, HEPES for pH 8.0) or a different concentration of other ions. Data analyses and apparent melting temperatures (Tm, the inflection point of a melting temperature) were determined using software supplied with the instrument.
 
 For GalP experiments, 500 mM sugar stocks were made in MilliQ water (Merck-Millipore, USA) as 10 times stocks. For Mhp1 experiments, 100 mM compound stocks were made in dimethyl sulfoxide as 50 times stocks.
 
-## Data analyses and representation
+### Data analyses and representation
 
 Statistical analyses were performed using Microsoft Excel with the inbuilt function of two-tailed, two-sample unequal variance Student’s t-test. The average apparent Tm of ‘no ligand’ control samples (three technical repeats within each Rotor-Gene Q run) was subtracted from the apparent Tm measured for each compound addition in the same run. This assay was performed with three or five biological repeats using independent batches of purified protein. The null hypothesis of the t-test was that the observed ΔTm for each compound was not significantly different from zero.

@@ -32,27 +32,39 @@ Here we tested the role of gcm in pigment cell development through single cell t
 
 ## Results
 
-## The ectodermal transcriptional state at a single cell level
+### The ectodermal transcriptional state at a single cell level
 
 Pigment cells of the sea urchin larva appear as a homogeneous population based on their morphology, expression of the transcription factor gcm, the enzyme pks1, and the presence of red pigment. Yet the many immune functions ascribed to pigmented cells in larvae and in adult tissues implies a heterogeneous population of cells. We tested this hypothesis with single cell sequencing technology. To enrich for pigment cells, we dissociated embryos/larvae from 48hpf and 72hpf, enriching for the ectodermal layer that includes the pigment cells (Calestani et al., 2003; McClay and Marchase, 1979; Ransick and Davidson, 2012), captured cells by drop-seq technology (Figure 1A), and sequenced the resulting cDNAs at a single cell level. The ectoderm-enriched single cell transcriptome revealed multiple cell-types, mostly of ectodermal origin as expected, and the overall cell cluster organization was highly reproducible between 48hpf and 72hpf samples (Figure 1B). The cells that formed the main clusters of the tSNE plots represented ectodermal cell types, including ciliary band cells, apical, oral, aboral, and lateral ectodermal cells (Figure 1C) based on expression of known cell-type marker genes. The pigment cell markers gcm and pks1 were found in clusters 2 and 13, which showed a similar transcriptome profile, and cluster 12, which had a transcriptomic profile that was distinct from clusters 2 and 13. In addition to gcm and pks1, cluster 12 also expressed the transcription factor six1 and its co-factor eya, which are expressed in aboral secondary mesoderm at mesenchyme blastula (Poustka et al., 2007; Ransick and Davidson, 2012). Cluster 2 and 13 expressed gcm, pks1 and well-known pigment cell markers (fmo3, fmo5-1, sult1c2 [Calestani et al., 2003; Ransick and Davidson, 2006; Ransick and Davidson, 2012; Ransick et al., 2002]). Other key clusters we found are the proneural apical plate (cluster 10), ciliary band neurons (cluster 16), serotonergic neurons (cluster 15 and 17), skeletal cells (cluster 11), and mid-gut cells (cluster 14). Overall our single cell transcriptomes showed consistent cell types between 48hpf gastrulae and 72hpf early larvae.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig1-v2.jpg)
 
-**Figure 1.:** S. purpuratus ectodermal cell-types by scRNA-seq.(A) Cartoon summarizing the dissociation of gastrulae and larvae (pigment cells in red, other cell-types in black), cell separation through drop-seq technology and RNA sequencing. Our single cell sequence datasets detected 20,489 reads/genes and a median 2,909 UMI counts per cell at 48hpf as well as 19,716 reads/genes and a median 1,136 UMI counts per cell at 72hpf. (B) tSNE plots of gastrula (48hpf) and larvae (72hpf) enriched for the ectodermal cell-types. Colors indicate major cell-types grouped by gene expression similarity. In the 48hpf sample, 5688 single cells were captured for downstream analysis, sequenced at a level of 81,121 reads per cell. The 72hpf sample includes 8178 single cells with an average of 54,788 reads per cell. The two samples were integrated to identify conserved cell types and cluster marker genes using Seurat. (C) Table summarizing the cell-type for each cluster (48hpf +72hpf) with the most representative marker genes (colors in the table reflect colors of the tSNE plot clusters).
+**Figure 1.:** (A) Cartoon summarizing the dissociation of gastrulae and larvae (pigment cells in red, other cell-types in black), cell separation through drop-seq technology and RNA sequencing. Our single cell sequence datasets detected 20,489 reads/genes and a median 2,909 UMI counts per cell at 48hpf as well as 19,716 reads/genes and a median 1,136 UMI counts per cell at 72hpf. (B) tSNE plots of gastrula (48hpf) and larvae (72hpf) enriched for the ectodermal cell-types. Colors indicate major cell-types grouped by gene expression similarity. In the 48hpf sample, 5688 single cells were captured for downstream analysis, sequenced at a level of 81,121 reads per cell. The 72hpf sample includes 8178 single cells with an average of 54,788 reads per cell. The two samples were integrated to identify conserved cell types and cluster marker genes using Seurat. (C) Table summarizing the cell-type for each cluster (48hpf +72hpf) with the most representative marker genes (colors in the table reflect colors of the tSNE plot clusters).
 
-## Gcm is enriched in three clusters at Gastrula and early larva stages
+### Gcm is enriched in three clusters at Gastrula and early larva stages
 
 Single cell transcriptomes revealed cryptic cell-state distinctions by assessing their individual gene expression profiles, even though the limiting mRNA captured in each drop likely over-represents the more abundant transcripts in a cell. With sufficient depth in sequencing, these datasets allowed us to identify cell-state specific marker genes and to predict the nature of each cluster (details in Figure 1 legend). We use the term cell state here instead of cell type for the compelling reason that distinctions in these cell groupings by this technology does not always mean a distinction in cell morphology, physiology, function, or cellular location, key characteristics of the use of cell type (Clevers et al., 2017). Transcript profiles outnumber the classic definition of cell types, which is necessarily limited when one considers lineage variations and boundaries between lineages. Instead, cell states refer to populations of cells that show distinctions in transcript accumulation, which may or may not be reflected in the end–point function of the cell.
 
 First, we analyzed the cell state of gcm expression during embryonic development, from the early zygote to the larva stage. To this aim we integrated the three gcm-enriched clusters from the ectodermal dataset (2, 12 and 13) to the gcm-enriched cluster of a time-course single cell analysis of sea urchin embryos encompassing eight developmental time points, from eight-cell stage to late gastrulae (Foster et al., 2020). The gcm enriched cluster from this dataset was integrated to that of the ectodermal datasets and analyzed together as in Seurat V3 (Stuart et al., 1821). This analysis revealed 7 cell states of gcm-expressing cells, across the developmental time points (Figure 2A, Figure 2—figure supplement 1), showing that gcm is dynamically expressed between many different cell states through development. This is an unusual feature for gene expression in that gcm is not just accumulating in more cell states as they appeared, but that gcm is transiently expressed in many different cell states. This suggests that gcm in this embryo may initiate various gene activities, but that maintenance of that gene activity is dependent on other transcriptional mechanisms. This may reflect the many different activator and repressor roles that gcm has in this embryo.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig2-v2.jpg)
+
+**Figure 2.:** (A) tSNE plot showing integration of gcm enriched clusters from datasets encompassing nine time points across sea urchin development: 8 cell stage, morula, early blastula, hatched blastula, mesenchyme blastula, early gastrula, late gastrula, 48hpf, and 72hpf. Cells are colored by time point. Feature plots for selected genes are provided in Figure 2—figure supplement 1. Using the dataset of Foster et al., 2020 we found that Gcm was first detected at 64 cell stage, when there are nine gcm+ cells, 1% of total cells. At morula stage 125 cells express gcm, 3.48%. Early blastula:13.9% Hatched: 9.5% Mesenchyme blastula: 7.6% Early gastrula: 6.5% and late gastrula 4.7%. (B) Feature plots of gastrulae and larvae colored for gcm or pks1 showing gene expression in clusters 2 and 13 at 48hpf and 72hpf, and cluster 12 at 48hpf. Violin plots showing expression of gcm and pks1 are in Figure 2—figure supplement 2. (C) Heatmap from scRNA-seq data represents expression of gcm and pks1 in the three clusters mitotic (13) and differentiated (2) pigment cells, and mesodermal cells (12). gcm expression is high in the mesodermal cluster at 48hpf, but decreases at 72hpf. (D) Magnification of tSNE plot from Figure 1B shows that the number of cells in the differentiated pigment cells cluster (2) increases over time, while the mitotic cluster (13) decreases. (E,F,G) Double staining for pigment cells (Sp1 antibody) and Edu labeling to mark cells that have recently synthesized DNA (yellow arrowheads). Note that mitotic pigment cells are broadly distributed within the embryos and larvae. (H) Magnifications of boxes 1 and 2 from figure F and G. White arrowheads show a pigment cell undergoing mitosis, yellow arrowhead shows another mitotic pigment cell, arrows show pigment cells that are non-mitotic. Scale bars are 100 μm (F, G), 20 μm (E) and 5 μm (H). All images are stacks of merged confocal Z sections.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Feature plots showing expression of pigment cell markers across developmental stages. Co-expression of these markers identifies pigment cells in the data. (B) Feature plots showing co-expression of stomach cell genes, blimp1/krox, foxA, and gataE in cluster 6.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** A violin plot has more information than a box plot. While a box plot shows summary statistics such as mean/median and interquartile ranges, the violin plot shows the full distribution of the data. The difference is particularly useful when the data distribution is multimodal (more than one peak). Normalized gene expression values at log scale shown per cell cluster identity. Plots depict probability density at different expression levels. Each dot represents one cell. Enrichment of pigment cell markers in clusters 2 and 12 show enriched expression of pigment cell marker genes.
+
 We then analyzed the expression of gcm in two time points key in pigment cell differentiation (48 and 72hpf). Of these cell clusters expressing gcm, we found enrichment for other pigment cell terminal differentiation genes in three clusters in late gastrulae (48hpf; clusters 2,12, 13) and two clusters in larvae (72hpf; clusters 2, 13 shown in Figure 2B,C). We next examined pigment gene expression in these three clusters. Pks1 was highly expressed in cells of clusters 2 and 13, and at low levels in cells of clusters 12 at gastrula stage (see violin plot, Figure 2—figure supplement 2). Feature plots showed that clusters 2 and 13 are spatially close, but separate, meaning that cell states 2 and 13 had similarities in their transcript profiles, while cluster 12 diverged significantly from cluster 2 and 13 (Figure 2B). To define the differences in each of these three gcm+ clusters we performed differential gene expression analysis (clusters 2 vs 12, 2 vs 13 and 12 vs 13) and analyzed the average logFC for pks1 in each cluster. We found that pks1 was highly expressed in clusters 2 and 13 with respect to cluster 12, where pks1 levels were low. To determine if the pks1 low levels are stage dependent we normalized the data and compared cluster 12 to cluster 13 at 48hpf and 72hpf separately and found that at both stages pks1 levels in cluster 12 were lower than in clusters 2 and 13 (Supplementary file 1). Similarly, other known pigment cell markers, such as sult1c2 or fmo5-1 (previously called sult and fmo2; Calestani et al., 2003; Ransick and Davidson, 2012) were highly expressed in clusters 2 and 13 but not in cluster 12 (Supplementary file 1). This finding shows that gcm is dynamically expressed during embryogenesis, and that it transiently marks two distinct pigment cell clusters (2 and 13). Another cluster that included mesodermal markers (12) expressed gcm in gastrulae, and low pks1 expression, suggesting that this is a population of pigment cell mesodermal precursors.
 
-## Gcm marks mitotic and post mitotic pigment cell populations
+### Gcm marks mitotic and post mitotic pigment cell populations
 
 Having defined that clusters 2 and 13 are related based on their transcriptomic profile, and represent pigment cells, we analyzed these clusters in additional detail. The number of cells in these two clusters changed from 48hpf to 72hpf. Over a period of 24 hours, the proportion of cells in cluster two increased, while the proportion of cells in cluster 13 decreased (Figure 2D). To investigate the differences between the clusters, we performed differential gene expression analysis of clusters 2 and 13 at 48hpf and 72hpf. Both clusters expressed pigment cell markers at high levels, and the only difference was that cluster 13 (the cluster with fewer cells at both time points) also expressed transcripts encoding S-phase and mitotic activities at high levels. The elevated markers in cluster 13 included cdk1, pcna, DNA polymerases, DNA ligases, condensins, and centromere proteins (Supplementary file 2), all genes that were absent in cluster 2. This result suggested that there were two pigmented cell clusters with a different cell cycle potential, cluster 13 being pigment cells still undergoing mitosis and cluster two being post-mitotic pigment cells. To test whether there are pigment cells in a mitotic state, or whether migrating pigment cells are all mitotic, we performed an EdU pulse for 30 min, followed by Sp1 staining (a conserved pigment cell marker [Gibson and Burke, 1985]). We found that from gastrula to early larva, cells that were in S-phase represented 34% of total pigment cells, and were broadly distributed in the embryos (Figure 2E,F,G). These cells were synthesizing DNA and dividing (see anaphase cells, inset Figure 2E, and Figure 2H, white arrowhead). This finding of a mitotic pigment cell cluster suggests that pigment cells have the ability to divide as migratory cells. Unique about this tSNE cluster of pigment cells though is the significant increase in mRNAs involved in cell cycle progression, a feature not normally seen in other dividing cells within the embryo.
 
-## Expression of unique pigment genes identified by scRNA-seq
+### Expression of unique pigment genes identified by scRNA-seq
 
 To test for polytypic pigment cells, we defined the expression of newly identified pigment cell markers found in the scRNA-seq by in situ hybridization. scRNA-seq data showed that gcm and pks1 are expressed in the same group of cells at these timepoints. The co-expression of these two genes was always assumed based on a similar pattern of expression and functional studies (Calestani et al., 2003; Calestani and Rogers, 2010; Materna et al., 2013; Ransick and Davidson, 2006; Ransick and Davidson, 2012), but never tested by RNA co-localization. We independently tested the scRNA-seq result by performing double fluorescent in situ hybridization (FISH) of gcm and pks1. In blastulae and gastrulae, pks1 and gcm were expressed in the same cells that have pigment cell morphology (Figure 3A–B’’). In larvae, however, pks1 expression was maintained in pigment cells, while gcm expression transitioned into the left coelomic pouch, the site of the future adult rudiment (Figure 3C–C’’). Previously, one single gcm-expressing cell was found close to the coelomic pouch with a gcm::gfp recombinant BAC (Ransick and Davidson, 2012). We therefore used gcm in gastrulae and pks1 in larvae as markers to assess whether the putative pigment cell genes were expressed exclusively in this cell population.
 
@@ -64,17 +76,51 @@ We then selected a few genes whose expression were relevant to pigment cell func
 
 MIF (macrophage inhibitory factor) is a member of a gene family of cytokines that regulate innate immunity (Hibino et al., 2006; Nishihira, 2000). Of these genes, mif5 was expressed in the same gcm+ pigment cell clusters at 48hpf (2, 12, and 13, violin plots in Figure 2—figure supplement 2), and by 72hpf it became enriched in the pigment cell clusters 2 and 13 exclusively. Double FISH confirmed expression of mif5 in pigment cells at both stages (Figure 3G–H’). A known pigment cell marker is the enzyme sulfotransferase (Calestani et al., 2003). Single cell data showed that sult1c2 was highly expressed in pigment cell clusters at 48hpf and 72hpf and violin plots showed that sult1c2 expression remained low in a few cells of all the other cell types (violin plots in Figure 2—figure supplement 2). Double FISH confirmed a strong expression of sult1c2 in the gcm/pks1+ cells (Figure 3I–I’). Opioid receptor, kappa 1-like (oprk) is a Cholecystokinin Receptor Type A, a G-protein coupled receptor that binds to cholecystokinin peptide hormones to modulate feeding and dopamine-induced behavior (Crawley, 1991). scRNA-seq data showed that oprk was enriched in clusters 2, 12 and 13 at 48hpf, but by 72hpf it was enriched also in the ciliary band neurons (cluster 16), and we detected a spotty expression in this region by FISH (arrowhead in Figure 3L’ and violin plots in Figure 2—figure supplement 2). Lastly, we analyzed the expression profile of the gene glutamate receptor 6 (gluR6). GluR6 was not detectable by single cell sequencing at 48hpf, and double FISH analysis showed only faint signals in gcm+ cells (violin plots in Figure 2—figure supplement 2; Figure 3M–M’). GluR6 was detectable at 72hpf though at low levels in cluster 2 (differentiated pigment cells) and cluster 16, a cluster of neurons. Double FISH with pks1 at 72hpf showed that gluR6 was expressed in pks1+ cells in or underneath the ectoderm (Figure 3M–M’ and inset one in N’) and in cells that are not pigment cells also located in the blastocoel beneath (basal to) the ectoderm (Figure 3N’ insets 1 and 2). GluR6 was also highly expressed in both coelomic pouches (Figure 3N–N’ and inset), a tissue not included in the scRNA-seq enriched for the ectoderm. Altogether the single cell transcriptome data and double FISH on the transcripts found in the scRNA-seq dataset indicated that genes for pigment cell function (besides gcm and pks1 in gastrulae) are never expressed in the mesodermal cluster (cluster 12), but rather in the mitotic (cluster 13) and post-mitotic (cluster 2) pigment cell clusters.
 
-## A diverse family of fmos is present in distinct pigment cell states
+### A diverse family of fmos is present in distinct pigment cell states
 
 Having defined that there are two distinct sub-populations of pigment cells in embryos that expressed gcm and pks1, we investigated the expression of a class of enzymes that at least one representative modifies the polyketide pigment scaffold, the Flavin-dependent monooxygenases (Fmo). Fmos are present throughout phylogeny, and although their conserved protein domain is typical of proteins with oxidizing activity, it is still unclear the exact role in the sea urchin pigment biosynthetic pathway/s. To determine the expression of fmos in echinoderms, we sought all Fmo domains in the S. purpuratus genome (echinobase.org, V4.2; RRID:SCR_013732), and we found that not all of the identified fmos were specifically expressed in pigmented cells. We performed a phylogenetic analysis to look for protein subfamilies, and found 4 Fmo clades: one is in the same clade with vertebrate Fmo proteins (clade 2), two are not closely related to Fmo proteins in other organisms (clades 1 and 3), and one sub-family is in the same clade with fly orthologs (Figure 4A). Among these 4 clades, only the fmo genes in clade one were found significantly enriched in both of the pigment cell states. Fmo5-1, fmo3 and fmo2-2 (previously named 1,2,3) were all expressed in the mitotic and differentiated pigment cell clusters, but not in the mesodermal cluster 12 (violin plots in Figure 4—figure supplement 1; Figure 4L–M). We next investigated the co-expression of clade one fmos with gcm and pks1 by double in situ hybridization (Figure 4B–I’). We found that fmo5-1 and 3 were exclusively expressed in pigment cells, while fmo2-2 is expressed also in cells that are gcm-negative (Figure 4D–D’). Fmo2 was not detected in the ectoderm single cell transcriptomes, but we analyzed its spatial expression since it was at the base of clade 1 (Figure 4A). In addition to the pigment cells, fmo2 was expressed at low level in a few cells of the blastocoel that are gcm/pks1 –. They are in tight apposition to the ectoderm (Figure 4E,E’ and I,I’). Overall, by scRNA-seq and FISH we found that all fmos from clade one were enriched in pigment cells. In a different sea urchin species (Hemicentrotus pulcherrimus), knocking out the gene function of fmo3 resulted in a change in pigmentation of the adult, distinct from the albino phenotype of the pks1 gene knockout (Wessel et al., 2020). Perhaps these Fmo family members uniquely have enzymatic activities for polyketide metabolites, so that in the pigment cell the polyketide derived from Pks1 is converted to the intensely deep purple pigment.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig4-v2.jpg)
+
+**Figure 4.:** (A) Maximum Likelihood tree showing the relationship of sea urchin flavin-dependent monooxygenases (FMOs) to other FMO proteins. Branches corresponding to partitions reproduced in less than 50% bootstrap replicates (500 replicates) are collapsed. Baeyer–Villiger monooxygenase was used as an outgroup. The same phylogeny was also supported by a maximum parsimony tree. (B–I’) Double FISH of fmos from clade one with gcm or pks1. In the insets, yellow arrowheads indicate co-expression in the pigment cells, white arrowheads indicate cells that are not pigment cells. Dashed line boxes indicate cells magnified below each picture. Nuclei are depicted in blue (DAPI). Scale bars 50 μm in whole embryo images and 20 μm in magnifications. All images are stacks of merged confocal Z sections. (L–M) single cell data show that the fmos of clade one are found in clusters 2 and 13.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The same data areshown in the feature plots on the right.
+
 We next determined the expression of fmos that were not found in the scRNAseq transcriptome. We used the available data of S. purpuratus quantitative RNA expression through development (http://www.spbase.org:3838/quantdev/) as an additional tool to determine the temporal expression of representative genes from the 4 clades of fmos. Clades 2, 3 and 4 fmos were expressed at low levels during embryonic development, with less than 1000 transcripts per embryo (Figure 5A,B). Only fmo2-3 from clade three was expressed between 1000 and 2000 transcripts/embryo. All transcripts of clade one fmos were instead above 10,000 transcripts/embryo, reflecting their high abundance in the embryos. Only fmo2, located at the base of clade one in the phylogenetic tree, was not abundant in the embryo and had less than 250 transcripts/embryo (Figure 5A,B). We investigated further the spatial expression of representative genes for the other three fmo clades that are poorly expressed at embryonic stages. Fmo1, fmo2-3 and fmo5 are not exclusively expressed in the pigment cells, and FISH analysis showed low expression levels in the whole embryo (Figure 5—figure supplement 1). Our experiments show that only clade one fmos are highly expressed in embryos (in agreement with our FISH and transcriptomic analyses), while the other clades of fmos are poorly or not detectable at all in embryos.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) Transcripts abundance of the four fmo clades in the embryo, 0 to 72 hr post fertilization (hpf). This graph was made using the online resource http://www.spbase.org:3838/quantdev/. All fmos in clade 1 (fmo5-1, fmo2-2, fmo3, squared box) and fmo2-3 from clade three are expressed in the embryo. A and B represent the same data. (C, D, E) Spine, tube feet and coelomocytes bright field images show red pigmented cells. Scale bars are 100 μm, magnification scale bars 20 μm. Confocal images of spines and tube feet labeled with the pigment cell marker Sp1, showing that adult structures have common features with embryonic pigment cells. Nuclei are in blue (DAPI); scale bar 100 μm and 5 μm for insets. qPCR of fmos in the adult spines (C), tube feet (D) and coelomocytes (E) show that clade one is expressed in coelomocytes. Gcm and pks1 are expressed in the coelomocytes, but not in spines or tube feet. All experiments were repeated in three biological replicates. Fold change = 2^(-Dct). FISH of genes not in clade one is in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Double FISH of gcm with fmo1 (from clade 4), fmo2-3, and fmo5 (from clade 3) shows that these genes are not exclusively expressed in the pigment cells (marked by gcm), but rather broadly expressed. Nuclei are depicted in blue (DAPI). All images are stacks of merged confocal Z sections. Scale bar 20 μm.
 
 Since our results showed that many fmos were not expressed during development, we analyzed their temporal expression in adult pigmented structures (spines and tube feet) and in the adult immune system (coelomocytes) by performing quantitative PCR in these tissues (Figure 5C–E). We first documented that spines and tube feet have pigmented cells by the criteria of deep red color and immunoreactivity to a conserved pigment cell marker recognized by the antibody Sp1 (Gibson and Burke, 1985; Figure 5C,D). We found that at least one gene of clades 2, 3 and 4 was expressed in the spines, while fmos from clade one were lacking (Figure 5C). Tube feet were not a site of significant fmo expression, only two of the fmos were detected (Figure 5D). Coelomocytes, however, expressed fmos from clade 1, but not the other fmos (Figure 5E). These cells are diverse in morphology and putative function, of which the red spherule cells are known to produce echinochrome and spinochrome (Coates et al., 2018; Hira et al., 2020). In the pigment biosynthesis pathway, the enzyme pks1 is upstream of the fmos in the biosynthetic pathway of echinochrome. We found that pks1 was highly expressed in the adult immune cells, but expressed only at low levels in spines and tube feet. We interpret these results as fmos might function independently from pks1, and that low levels of polyketide synthase gene activity are sufficient for maintenance levels of polyketide synthesis and pigmentation, especially in immune-quiescent animals (not challenged by bacteria). Taken together, these results suggested that of the four fmo families, only clade 1 was found specifically in pigment cells of the embryo and in the adult red spherule cells, two cell-types with known immune functions. Within this clade, fmo2-2 and fmo2 are expressed also in embryonic cells that do not contain pigments, pointing these to a distinct oxidizing function. Other fmos are expressed in the spines (clades 2, 3 and 4) where pks1 is expressed at low levels, suggesting a role for non-clade 1 fmos independent of pigment biosynthesis and from gcm and pks1. Overall, we conclude that the many pigmented cell populations in the larvae and adults of S. purpuratus have distinct gene profiles.
 
-## Pigment cell dependence on gcm function
+### Pigment cell dependence on gcm function
 
 Having defined that gcm expression is associated with the expression of pigment cell genes, we tested whether pigment cell gene expression was dependent on gcm. Gastrulae in which gcm is knocked down have a unique phenotype with no pigmentation and low levels of pks1, sult1c2 and fmo3 (Ransick and Davidson, 2006). Even if some indirect evidence exists (Ransick and Davidson, 2006) a direct test of pigment cells presence/absence in gcm KD or null embryos is still missing. To understand whether in gcm KD embryos pigment cells are ‘pigmentless’ because of a lack of pks1 and fmo3, or whether there are fewer pigment cells, we tested gcm role in pigment cells early specification and pigment production. We performed a single cell differential gene analysis of 48hpf embryos compared to control embryos to determine the fate of the pigment cell clusters when gcm is knocked down. We dissociated control and gcm KD gastrulae without enriching for the ectoderm to ensure that all cells were captured for the analysis. Therefore, these tSNE plots (Figure 6A) revealed information different than the scRNAseq of ectoderm-enriched wild-type embryos (Figure 1B). The tSNE plots of the single cell transcriptome of control gastrula show a main group of ectodermal clusters (ciliary band neurons, serotonergic neurons, apical and aboral ectoderm), and clusters for skeleton, coelomic pouches, foregut and mid-gut (Figure 6A). Cells from gcm-KD embryos were very sensitive to dissociation and more susceptible to lysis than normal embryos. Because of the low number of sequenced cells, and the consequent lack of many ectodermal cell types, pigment cells were represented by a single cluster (cluster 6). The gcm KD experiment resulted in the same tSNE cluster profile as with the control MO. Since fewer cells were sequenced in the gcm MO experiment as a result of greater sensitivity to dissociation, we normalized the cells in each cluster for the total sequenced cells in each experimental condition. While 40% of the clusters did not change size (Figure 6—figure supplement 1), the pigment cell cluster population dramatically decreased by a factor of 7 with gcm knocked down by the morpholino (Figure 6B). We interpret this result as gcm is responsible to specify pigment cells, and not just for driving expression of pigment cell genes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig6-v2.jpg)
+
+**Figure 6.:** (A) Global visualization of single cell profiled in control MO and gcm MO gastrulae. tSNE plots show that in controls and morphants there is no change in general cluster organization. Pigment cell cluster is number 6, green. The table summarizes the main cell-types and relative marker genes, colors represent clusters in the tSNE plots. In the 48hpf control morpholino injected sample, 3402 single cells were captured for downstream analysis, sequenced at a level of 56,550 reads per cell. The 48hpf gcm morpholino sample includes 643 single cells with an average of 379,895 reads per cell. The two samples were integrated to identify conserved cell types and cluster marker genes using Seurat. Feature and violin plot of pigment cell genes in controls and gcm depleted embryos are shown in Figure 6—figure supplement 2 and Figure 6—figure supplement 3. (B) Percentage of Pigment Cells relative to total sequenced cells in control MO versus gcm MO experiments, two-sided Chi-square and Fisher’s exact test gave p<0.001 (****); Chi-square df 31,35, 1, z 5.599. A graph with percentage of cells relative to total sequenced cells for each cluster is shown in Figure 6—figure supplement 1. (C) Expression of pigment genes in gcm MO (Fold change, Fc) compared to control MO normalized by number of total sequenced cells in each experiment (average LogFc*number of cells in each cluster/total sequenced cells in each experiment). (D) Expression levels of pigment genes normalized for the total sequenced cells shows that there is an overall decrease in gene expression in the pigment gene clusters. (E) qPCR of pigment genes in gcm MO gastrulae. Experiments were performed in three biological replicates (error bars). (F) Sp1 Ab staining of 72hpf larvae depleted of pks1 by CRISPR Cas9 shows that distribution of pigment cells does not change. A qPCR of pigment genes in control and pks1 depleted embryos is shown in Figure 6—figure supplement 4. (G) Sp1 Ab staining in gcm MO early larva (72hpf). Nuclei are stained with DAPI. (H) Number of Sp1 positive cells decreases in gcm MO compared to controls (n = number of larvae, two-tailed student t-test p<0.001 (****) corresponds to p=1,44704E-17; 95% confidence interval of −31,07 to −25,21), (mean for control MO is 35,51; mean for gcm MO is 4.37), and it is unchanged in pks1 Cas9 (two-tailed student t-test p value 0,4191; 95% confidence interval of −3,326 to 7,393; mean of control Cas9 is 33,67, mean of pks1 Cas9 is 35,70). Additional file in Figure 6—source data 1. Images are confocal Z-projections, scale bar 50 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Number of cells in each cluster are normalized to the total sequenced cells in each experimental condition. Number of cells in cluster 6 (pigment cells) goes significantly down. Significance was assessed by X2 test (****p<0.001). Additional file, Figure 6—figure supplement 1—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Data for each gene are shown with a feature plot that provides a clear overview of single cells expressing that unique transcript in the context of all other clusters (left), and violin plot that clearly shows the expression levels of that specific transcript for each cluster (right).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig6-figsupp3-v2.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/60388/elife-60388-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** qPCR of pigment genes in pks1Cas9 knock out embryos. Note that pks1 gene expression goes down, confirming the gene was knocked out. The graph represents three biological replicae (error bar).
 
 We next examined the overall expression level of pigment cell genes following gcm knockdown, and found that the expression of most of the tested genes decreased in cell state cluster 6 (Figure 6C shows fold change; feature plots and violin plots in Figure 6—figure supplement 2 and Figure 6—figure supplement 3), while gcm expression remained unchanged. In gcm morphants, the expression of pigment genes in the embryo decreased because there were significantly fewer pigment cells (Figure 6D shows gene expression in controls versus morphants). To focus the analysis on gcm targets, we tested by qPCR expression level changes of other gcm targets (Figure 6E). The expression of gluR6 and fmo2, which were expressed in more cell-states than the pks1+ cells, was unchanged. Fmo2-2 from clade1, which was not detectable in the single cell experiment, was downregulated in the gcm morphant. Genes like fmo2-3 and fmo5, not found in the pigment cell cluster, did not change expression in gcm morphant embryos (Figure 6E). In contrast, larvae of cas9-mediated knockout of pks1 were indistinguishable from control larvae when stained for Sp1 antibody (Figure 6F). The pks1 - KO is used here to test homeostasis in the pigment cells and whether Pks1 and/or pigment may have any function, directly or indirectly, in regulating gene expression. It has been previously shown that embryos lacking Pks1 still have pigment cells (Calestani et al., 2003). Pigment cells stained with the Sp1 antibody show that not only the number, but also the distribution of pigment cells does not change in Pks1 depleted larvae. Gene expression of candidate genes in pks1- larvae was also indistinguishable from controls (Figure 6—figure supplement 4). We conclude that pigmentation does not have a role in positioning these cells within the larvae, in regulating numbers or density of the pigment cells, or change overtly the physiology of the cells as this would have been revealed by the cellular phenotype or steady state levels of relevant candidate mRNAs.
 
@@ -82,7 +128,7 @@ Having shown that gcm defines the number and gene expression of pigment cells, w
 
 ## Discussion
 
-## Gcm as a regulator of pigment
+### Gcm as a regulator of pigment
 
 Pigments are compounds that selectively absorb a certain wavelength, and their production relies on a complex biosynthetic pathway that, for most plants and animals, involves ill-defined pathways. The cells that make the pigment are diverse and distinct in their biology, and the echinoderm pigments themselves also likely serve diverse functions. For instance, spinochromes and other pigments have been identified in adult of Echinometra mathaei, a species of sea urchins with many color variations between adults of the species, and pigmentation in this animal is correlated with fitness (Brasseur et al., 2018). It has also been proposed that the water-soluble pigment Spinochrome E can penetrate into the egg cytoplasm of the sand dollar Scaphechinus mirabilis and be used as a source of hydrogen peroxide in the embryo (Brasseur et al., 2018; Drozdov et al., 2017). Here we use a combination of RNA single cell sequencing and fluorescent in situ hybridization to take a deep look at the genes responsible for this incredible variety of colors, and we show that pigment cells within an organism are highly diverse (Figure 7).
 
@@ -96,7 +142,7 @@ It is known that the downstream effects of gcm loss of function is the lack of p
 
 A previous transcriptome study identified pigment cell genes by enriching the sample for late gastrula gcm-GFP expressing cells (Barsi et al., 2015). To evaluate our single cell data in this comparative light, we searched for the pigment cell markers described in our study in the list of genes previously reported, and found that all of the candidates we identified were enriched in the above gcm+ transcriptome. Some of the pigment markers we found were also expressed in other cell states. For example, oprk, that in other organisms modulates feeding and dopamine-induced behavior (Crawley, 1991) and the glutamate receptor gluR6, were expressed in pigment cells and also in the ciliary band neurons (cluster 16). In particular, gluR6 is expressed in a cluster of neurons located in the blastocoel basal to the ciliary band that resemble the localization of the lateral ganglion cells (Bisgrove and Burke, 1987; Perillo et al., 2018). We interpret the neuronal expression as new gene expression in those cells, and not a cell fate transition of the pigment cells since pigment cells are differentiated in larvae. The fact that pigment cells were expressing these neuronal receptors and others (this study and [Barsi et al., 2015]) suggests that they might also have a sensory function possibly coordinated with their immune response function. Our study provides new insights into the expression and function of gcm, a transcriptional factor that we found dynamically expressed in several embryonic clusters, and that controls the different states of pigment cells and possibly their different functions.
 
-## Do pigment cells maintain a stem state?
+### Do pigment cells maintain a stem state?
 
 How the pigment cells are regulated through larval development and into adulthood is not clear. Do all the various pigment cells of the adult, including in the spines, tube feet, and coelomocytes, come from a core stem cell population? Or do they each have their own developmental lineage from a unipotential precursor? Each of these populations, as shown here, appear to have different transcript profiles and functions. What is clear is that the numbers of pigment cells expand if larvae are immune challenged (Kiselev et al., 2013; Ageenko et al., 2014; Wessel et al., 2020). In our scRNA-seq of ectodermal cells we found two distinct populations of pigment cells, one of which is enriched in mitotic markers, suggesting the possibility of a stem cohort of dividing cells. We favor the concept of a stem population for this lineage because the transcript profile is distinct in the mitotic cohort and those cells are resistant to the gcm knockdown. Perhaps Gcm is essential for the lineage expansion, but not for the stem precursors.
 
@@ -104,7 +150,7 @@ The molecular analysis does suggest distinct populations, or at least different 
 
 We pose two hypotheses to explain the finding of a mitotic pigment cell cluster: either there is a unique stem cell population of pigment cells, or all pigment cells have the ability to divide. In both cases, a follow up question is whether they divide upon a signal, and what this signal might be (i.e. coelom infection, arm growth, ectodermal injury). It has been suggested that in adult sea urchin a population of pigment stem cells is set aside in the pre-metamorphosis larva to serve as a reservoir for the adult cells (Wessel et al., 2020). This is more than initially activating the program for these cells to develop, but also to maintain and replace these cells in the adult. We can rule out pigment presence as an indicator of homeostasis since the pks1 knock out larvae had similar pigment cells distribution as wild-type larvae. Thus, a stem population for these cells may be key for adult survival and the single cell results herein may point to this population. We propose that the hereby-identified embryonic mitotic cluster might be the cells that are selected in early embryos to replenish the larvae and/or adult stages. However, as we learned here, pigmented cells in the diverse tissues of an adult are pigmented cells in distinct states. Either the presumed stem cluster is capable of diversifying, or new pigment lineages form later in development. An alternative hypothesis is that the pigment cell mitotic cluster serves in the embryo as a reservoir to replenish blastocoelar cell-types. We propose that the mitotic pigment cell cluster might represent a group of cells that retain the developmental potential that allows these cells to convert to other blastocoelar cells, or to the highly migratory pigment cells of the larvae. Overall our interpretation of mitotic and post-mitotic pigment cell clusters is compatible with cells in the latter cluster having immune function, whereas the mitotic pigment cells population may be a stem/dividing population. Indelible lineage labeling will be important to test these hypotheses.
 
-## A unique family of fmos is expressed in cells with immune functions
+### A unique family of fmos is expressed in cells with immune functions
 
 Spines, tube feet, cells in coelomic fluid and larvae of sea urchins express different types of flavin containing monooxygenases (fmo) enzymes that contribute to the pigment biosynthesis. In adult spines and tube feet under control conditions (not immune challenged) pks1 is not transcribed, or is so at very low levels. Two scenarios are possible to explain this observation: either cells could have a level of enzyme (protein) sufficient to synthesize some pigment or in the absence of degranulation of pigment in response to infections or injuries, the synthesis of pigment is halted. In the case of cells with predicted similar functions, for example coelomic-pigmented cells (the red spherule cells), versus larval-pigmented cells, the composition of pigment synthesizing enzymes and other gene expression is instead similar. Cells with immune functions (adult coelomocytes and larval pigment cells) always express the same group of fmos, together with the enzyme pks1 and the transcriptional factor gcm. Both cells produce the pigment echinochrome A, a molecule with antimicrobial properties (Brasseur et al., 2018; Coates et al., 2018; Gerardi et al., 1990; Johnson, 1969; Lebedev et al., 2005; Perry and Epel, 1981), suggesting that gcm, pks1, and group1 fmos work together to make this unique pigment, but might not interact to make other echinoderm pigments. These results may reveal that distinct biochemical pathways lead to the same chemical outcome, or that pigmentation is just one of multiple different functions in what we routinely refer to as a single pigment cell.
 
@@ -116,36 +162,172 @@ In conclusion, by leveraging two distinctly derived RNA-seq datasets, we were ab
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>gcm</td>
+      <td>Echinobase</td>
+      <td>SPU_006462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>pks1</td>
+      <td>Echinobase</td>
+      <td>SPU_002895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>fmo2</td>
+      <td>Echinobase</td>
+      <td>SPU_002963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>fmo3</td>
+      <td>Echinobase</td>
+      <td>SPU_017374</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>fmo2-2</td>
+      <td>Echinobase</td>
+      <td>SPU_014947</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>fmo5-1</td>
+      <td>Echinobase</td>
+      <td>SPU_012348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>sult1c2</td>
+      <td>Echinobase</td>
+      <td>SPU_006187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>oprk1c</td>
+      <td>Echinobase</td>
+      <td>SPU_000719</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>mif5</td>
+      <td>Echinobase</td>
+      <td>SPU_020036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>glur6</td>
+      <td>Echinobase</td>
+      <td>SPU_018876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Strongylocentrotus purpuratus)</td>
+      <td>abcg11</td>
+      <td>Echinobase</td>
+      <td>SPU_018876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sp1 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# Sp1, RRID:SCR_013527</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>control MO; control morpholino</td>
+      <td>Gene Tools</td>
+      <td></td>
+      <td>5’-GCTTTGGAGTAACCTTCTGCACCAT-3’ (0.5 mM)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>gcm MO; gcm morpholino</td>
+      <td>Gene Tools</td>
+      <td></td>
+      <td>5’-GCTTTGGAGTAACCTTCTGCACCAT-3’ (0.5 mM)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>Image J</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v 3.1.4</td>
+      <td>SEURAT</td>
+      <td>SEURAT, RRID:SCR_007322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult Strongylocentrotus purpuratus were obtained from Josh Ross (info@scbiomarine.com) off the California coast and kept in artificial seawater at 16°C. Gametes were obtained by shaking adult sea urchins or by intracoelomic injection of 0.5M KCl. Eggs were fertilized in the presence of 1 mM 3-amino-triazol (3-AT) (Sigma, Cat. #:A8056). Embryos were cultured at 16°C in filtered seawater from the Marine Biological Laboratory (MBL).
 
-## RNA whole mount in situ hybridization
+### RNA whole mount in situ hybridization
 
 For fluorescent whole mount in situ hybridization (FISH), we followed the protocol outlined in Cole and Arnone, 2009; Perillo et al., 2016. Signal was developed with fluorophore-conjugated tyramide (Perkin Elmer, Cat. #:NEL752001KT; RRID:AB_2572409). Labeled probes were transcribed from linearized DNA using digoxigenin-11-UTP (Sigma Aldrich, Cat. #:11277073910), or labeled with DNP (Mirus Bio, Cat. #:MIR3825) following kit instructions. Probes were synthesized using primers in Supplementary file 3. 20 to 40 samples were imaged with a Zeiss 800 confocal microscope from the Brown University Leduc Bioimaging Core Facility (RRID:SCR_017861).
 
-## Immunochemistry and EdU pulse labeling
+### Immunochemistry and EdU pulse labeling
 
 Larvae and adult tissues were fixed in 4% paraformaldehyde (PFA) in filtered seawater (FSW) for 15 min at room temperature, washed multiple times in phosphate-buffered saline with 0.1% Tween-20 (PBST), and incubated overnight at 4◦C with the Sp1 antibody 1:50 (DSHB; RRID:SCR_013527) in 1 mg/ml Bovine Serum Albumin (BSA) and 4% sheep serum in PBST. Samples were then washed three times with PBST and incubated for 2 hr at room temperature with the secondary anti-mouse antibody conjugated to Alexa 488 (Life Technologies; Cat#:A-21121, RRID:AB_2535764) diluted 1/500 in 1 mg/ml BSA in PBST. 5-ethynyl-2-deoxyuridine (EdU) pulse labeling of the pigment cells was performed with the Click-IT EdU imaging kit (Life Technologies; Cat#:C10340). Embryos and larvae were soaked in 10 μM EdU in FSW for 30 min (considering a 20 min cell cycle), washed five times with FSW and fixed in 4% PFA/FSW. Following EdU detection with fluorescent azide (according to the manufacturer's instructions), samples were stained with the Sp1 antibody as described above. 20 to 40 larvae were stained for imaging. Samples were mounted for imaging with an Olympus FV3000 Confocal Microscope (RRID:SCR_017015) equipped with high sensitivity GaAsP detectors managed by cellSens software (RRID:SCR_016238) from the Brown University Leduc Bioimaging Core Facility (RRID:SCR_017861). Raw files were analyzed and figures were made using the software Image J (RRID:SCR_003070).
 
-## Perturbation experiments with MO injection and CRISPR Cas9
+### Perturbation experiments with MO injection and CRISPR Cas9
 
 Translation-blocking antisense morpholino (MO) against Gcm (SPU_006462; MO synthesized by Gene-Tools; sequence 5’-GCTTTGGAGTAACCTTCTGCACCAT-3’) was used at a concentration of 0.5 mM. MOs were injected with 20% glycerol and 10,000 MW fluorescent dextran (injection solution). Eggs were dejelled by washing in pH4.0 seawater. For each experiment, around 600 zygotes were injected with ∼2–4 pl of oligonucleotide injection solution by constant pressure injection in with 1 mM 3-AT (Sigma). For each condition, only 300 of these injected embryos with the expected phenotypes were dissociated at 48hpf and used for single cell RNA seq. The gcm morphant has a unique phenotype with a straight gut and no pigmentation. As a negative control, fertilized eggs were injected with a MASO sequence irrelevant to S. purpuratus (the MO to Foxy3 of Patiria miniata, and is referred to as the control morpholino [5’-TGCGATTAGAATCAAAACGGAGTGA-3’]). It is used to compare to the gcm morphants. We chose to use a gcm morpholino to knockdown gcm instead of CRISPR/Cas9 as used previously (Oulhen and Wessel, 2016). CRISPR/Cas9 randomly mutates the targeted genomic sequence and in thee wildtype animals we decided it best to not have the variability of different mutations (between experiments, and between each injected embryos) that could have different effects in the gene expression and the phenotypes obtained.
 
 Three Cas9 guide RNAs (gRNAs; 200 ng/ul of each gRNA) previously used in our lab (Oulhen and Wessel, 2016) were used to target pks1 DNA. gRNAs were mixed with 500 ng/ul of Cas9 mRNA, injected into freshly fertilized eggs as described previously in Oulhen and Wessel, 2016.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Phylogenetic analyses were conducted using MEGA version 6 (MEGA Software, RRID:SCR_000667) (Tamura et al., 2011). Protein sequences were obtained from NCBI and echinobase. Phylogenetic reconstruction was carried out using the maximum likelihood method, and tested also by Neighborjoining methodology. Both tests resulted in the same outcome. Bootstrap values were determined by 500 replicates. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using a JTT model, and then selecting the topology with superior log likelihood value. The analysis involved 25 amino acid sequences. There were a total of 671 positions in the final dataset. SPU or NCBI accession numbers are as follows: AAA52457 HsFMO; P31513 HsFMO3; Q99518 HsFMO2; CAA77797 HsFMO4; P49326 HsFMO5; SPU_002963 Sp-Fmo2; SPU_007044 Sp-FMO6L; SPU_009114 Sp-Fmo5; SPU_012348 Sp-Fmo5-1; SPU_014947 Sp-Fmo2-2; SPU_017252 Sp-Fmo5-2; SPU_017374 Sp-Fmo3; SPU_017639 Sp-Fmo; SPU_022596 Sp-Fmo5-3; SPU_022597 Sp-Fmo3-1; SPU_022765 Sp-Fmo2-3; SPU_023681 Sp-Fmo2-5; SPU_024227 Sp-Fmo5-6; SPU_024261 Sp-Fmo5-4; SPU_025958 Sp-Fmo2-4; EDL39293.1 Mm-Fmo4; NP_001171509 Mm-Fmo6; BAA03745 Mm-Fmo; AAQ94601 Dr-Fmo1; NP_989910 Gg-Fmo3; AAK94940 Dm-Fmo1; AAL27708 Dm-Fmo2; Q47PU3 Gg-Fmo5; NP_001087387 Xl-Fmo5-1; CAD10798 Comamonas_testosteroni.
 
-## Adult tissues RNA extraction and qPCR
+### Adult tissues RNA extraction and qPCR
 
 RNA from 100 embryos was isolated with the RNeasy Micro kit (Qiagen, Cat#:74004), while RNA from adult tissues was isolated from Trizol (Thermo Fisher Scientific, Cat#:10296010). cDNA synthesis was performed using Maxima kit (Life Technologies, Cat#:K1641). qPCR was performed using ABI 7900 real time instrument with Maxima SYBR master mix (Life Technologies, Cat#:FERK0222) and normalized to ubiquitin transcripts. Experiments were run in three biological replicates, and every biological replicate was run on the qPCR machine with three technical replicates. In the graphs, the mean of the three technical replicates is shown, and error bars represent biological replicates. List of primers used for qPCR are in Supplementary file 4.
 
-## Embryo dissociations
+### Embryo dissociations
 
 Embryos were collected and washed twice with calcium-free seawater, and then suspended in hyalin-extraction media (HEM) for 15 min (George and McClay, 2019). For enrichment of ectodermal cells, embryos were transferred to 0.5M NaCl as soon as the squamous ectodermal epithelium cells became rounded and loosened from each other. The embryos were then gently sheared with a pipette to remove the ectoderm from the basal lamina and the remainder of the embryo was removed from the enriched ectoderm population with a 40 micron Nitex mesh filter. When the entire embryo was to be dissociated, the embryos were subjected to more prolonged HEM treatment, then transferred into 0.5M NaCl, gently sheared with a pipette to complete dissociation, and residual cellular clumps were removed with a 40 micron Nitex mesh. Dissociated cells were counted on a hemocytometer, and diluted with 0.5M NaCl to reach the appropriate concentration for the scRNA-seq protocol. Embryos were collected only by settling at 1xg, and at no time were cells or embryos pelleted in a centrifuge. Throughout the procedure, specimens were kept at 4°C.
 
-## Single cell RNA sequencing
+### Single cell RNA sequencing
 
 Single cell RNA sequencing: Single cell encapsulation was performed using the Chromium Single Cell Chip B kit on the 10x Genomics Chromium Controller. Single cell cDNA and libraries were prepared using the Chromium Single Cell 3’ Reagent kit v3 Chemistry. Libraries were sequenced by Genewiz on the Illumina Hiseq (RRID:SCR_016387) (2 × 150 bp paired-end runs). The non-injected 48hpf and 72hpf samples were sequenced in separate lanes (350M reads per lane). The morpholino injected samples were sequenced together in the same lane (350M reads total). Single cell unique molecular identifier (UMI) counting was performed using Cell Ranger Single Cell Software Suite 3.0.2 from 10X Genomics (Cell Ranger, RRID:SCR_017344). The custom transcriptome reference was generated from assembly Spur_4.2 using Cell Ranger. Cell Ranger matrices were further analyzed using the R package Seurat v 3.1.4 (SEURAT, RRID:SCR_007322) (Stuart et al., 1821). Cells with at least 400 and at most 2500 different represented genes were included in downstream analysis. The top 2000 highly variable gene representatives (features) across the datasets were used to integrate datasets. TSNE projection and clustering analysis for all datasets were conducted using 15 dimensions and a resolution of 0.5. Cluster markers were found using Find Conserved Markers and Find Markers functions. The integration of gcm-enriched clusters from multiple time points was performed using Seurat following the standard integration pipeline (dims:10 res:0.1). The time course dataset included samples collected from eight-cell stage, 64 cell stage, morula, early blastula, hatched blastula, mesenchyme blastula, early gastrula and late gastrula (4-8hpf) stage (Foster et al., 2020). The sequencing data generated here have been made publicly available at Gene Expression Omnibus [https://www.ncbi.nlm.nih.gov/geo/] (GSE155427).

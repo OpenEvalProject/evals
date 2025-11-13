@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Neurobiology and Institute for Neuroscience, University of Chicago Chicago United States
+1. Department of Neurobiology and Institute for Neuroscience, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ Here, we describe three different versions of a contextual fear-conditioning par
 
 ## Results
 
-## A paradigm for contextual fear conditioning in head-fixed mice exploring virtual reality environments
+### A paradigm for contextual fear conditioning in head-fixed mice exploring virtual reality environments
 
 To establish the contextual fear conditioning protocol (Figure 1A–C), head-fixed mice were water-restricted and trained to run on a treadmill and navigate VR environments for water rewards, as we have demonstrated previously (Dong et al., 2021; Krishnan et al., 2022; Krishnan and Sheffield, 2023; Ratigan et al., 2023). Forward movement on the treadmill translates to forward movement in VR, allowing mice to navigate the VR environment. The environments used were 2m-long linear tracks rich in visual cues (Figure 1). Reaching the track’s end triggered a water reward and defined a completed trial/lap. Mice were then virtually teleported back to the track’s start for the next lap. Unlike freely moving mice that tend to explore new environments, head-fixed mice placed on a treadmill do not automatically start exploring VR environments. However, they can be trained through reinforcement learning using water restriction and water rewards (Dombeck et al., 2010; Dong et al., 2021; Krishnan et al., 2022; Ratigan et al., 2023; Sheffield and Dombeck, 2015).
 
@@ -49,11 +49,35 @@ In summary, our criteria for selecting mice for the experimental stage of contex
 
 We tested three versions of the head-fixed CFC paradigm. In Paradigm 1, the neutral environment was the training VR environment, and a new VR environment was paired with shocks. In Paradigms 2 and 3, both the neutral and shock-paired environments were new and distinct from the training environment to better control for environmental familiarity. In Paradigms 1 and 2, the tail-coat was removed on the days following CFC, whereas in Paradigm 3, it remained on the mouse on all post-CFC days. With these paradigms, we varied some parameters that may influence fear memory recall, contextual discrimination, fear extinction, and their associated behaviors in head-fixed VR-based CFC paradigms. We detail these variations in the following sections, starting with Paradigm 1.
 
-## When tested for contextual fear memory recall, mice displayed increased freezing behavior in the shocked-paired VR environment
+### When tested for contextual fear memory recall, mice displayed increased freezing behavior in the shocked-paired VR environment
 
 On Day 0 of the experimental stage in Paradigm 1 (CFC day), mice (n=27, 25 males and 2 females) were exposed to the same VR environment we used for training, referred to as the Familiar VR from here onwards (Figure 1C), for 10 min. We then switched them to a new VR environment (CFC VR). Following baseline exploration of the CFC VR for 10 min, we repeatedly applied mild-electric shocks (4–12 shocks, 0.5-1 mA in amplitude, 1 s long) to the mouse’s tail. We call the period when shocks were delivered ‘during CFC.’ Shocks were pseudo-randomly administered with respect to the animal’s position in the CFC VR, with an inter-shock interval (ISI) of 1 min. To ensure that the shocks were associated with the context and not a specific position in the environment, no visual cues were explicitly paired with the shock. We quantified the animal’s response to the shocks and observed an immediate increase in running speed following each shock (Figure 2—figure supplement 1B). This was consistent across all mice and shocks and was a reliable indicator that the apparatus was working correctly. Sixty seconds after the last shock was administered, the VR screens were switched off, the tail-coat was removed, and mice were returned to their home cages. The next day (Fear memory recall, Day 1), we tested for recall of the learned association between the VR environment and the fearful stimulus. Mice were exposed to both VRs (familiar VR and CFC VR) for 5 min each in a counterbalanced manner. Water reward remained absent on recall days; however, in this paradigm, the tail-coat was no longer present.
 
 Before fear conditioning, mice exhibited similar behavior in both the Familiar and CFC VRs. We evaluated the time taken to complete a lap and the freezing behavior (defined as time points when the animal’s instantaneous velocity was 0 cm/s). Neither metric revealed a significant difference between the two VRs before shock administration (Figure 2A, Figure 2—figure supplement 1D-E). However, after CFC, when the animals were reintroduced to the VRs on recall Day 1, we observed a significant increase in freezing and time taken to complete a lap in the CFC VR compared to the Familiar VR (Figure 2A–D). As soon as mice transitioned to the CFC VR (either from dark or after the Familiar VR) on the recall day, we observed behaviors such as slowing down, freezing, moving backward, and hesitation to move forward (Videos 1–3). This response was markedly different from their behavior in the Familiar VR. This difference in behavior can be observed clearly in most mice on the very first lap (Figure 2A–B). Since we removed the reward, we didn’t find licking behavior to be indicative of recall behavior (Figure 2—figure supplement 1C). However, some mice displayed licking behavior in the Familiar VR on Day 0 before fear conditioning, which was absent on Day 1. This is likely because mice had previously received a water reward in the Familiar VR. We will address this caveat in Paradigms 2 and 3.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig2-v1.jpg)
+
+**Figure 2.:** (A) A single example mouse’s lap running behavior on experiment days, Day 0 and Day 1. Behavior is shown for approximately 3 min in all sessions except during CFC, which is shown for the 6 min that the session lasted. Frames where freezing was detected (instantaneous velocity 0 cm/s) are marked with black dots. A zoomed-in portion on the right in CFC VR highlights these freezing epochs as periods of minimal movement on the treadmill (i.e. instantaneous velocity 0 cm/s), which are less visible in the full-scale view. The traces on the right show that this mouse increased freezing, decreased velocity, and moved backward (shown in gray) in the CFC VR (red traces) but not in the Familiar VR (blue traces) on Recall Day. This mouse received six shocks at 1mA intensity at 60 s inter-stimulus interval (ISI). (B) First 2 min of recall behavior in more mice (n=5) in Familiar VR versus CFC VR. (C–D) Left Average freezing percentage on recall day in the very first lap (C) and all laps (D) during the 5 min that mice explored the Familiar (blue) and CFC (red) VR. Freezing (%) was calculated as the number of frames where freezing was detected in a lap divided by the total number of frames in each lap. (Right) Delta calculated as the difference in the amount of freezing in the CFC VR compared to the Familiar VR before CFC (Day 0) and after CFC (Day 1). The dashed line represents 0. (E–F) Same as C-D but for the time taken to complete the first lap (E) and all laps (F). Mice displayed an increase in freezing and in time taken to complete a lap in the first lap and, on average, in the CFC VR. In C-F, circles and pluses represent individual mice (n=27, 25 male, and two female mice). In C-F, data was pooled from mice receiving different numbers of shocks (4, 6, 12) at varying intensities (0.5 mA, 0.6mA, 0.8 mA, 1 mA, and 1.2 mA), which is separately displayed in Figure 2—figure supplement 1. Lines join data from the same mouse. p-values were calculated using a paired t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Box plot of average time taken to complete a lap before and after the addition of a tail-coat recorded in a randomly chosen subset of mice (circles, n=8). (B) Instantaneous velocity increased immediately after shock onset. This increased running speed also served as a reliable measure to confirm that mice received the tail shock. The gray line indicates the average velocity calculated by shuffling the instantaneous velocity 100 times. (C) Licking behavior doesn't stop immediately in the familiar virtual reality (VR) without water, as mice previously received water rewards in the familiar VR. However, it was low in the other sessions and across environments. There was no significant difference between the Familiar and contextual fear conditioning (CFC) VR on Day 1. Licking behavior was collected only in a subset of mice (circle, n=5). (D–E) The amount of freezing (D) and time taken to complete a lap (E) were not significantly different between the Familiar and CFC VR before fear conditioning (n=25). While not significantly different, there was a trend towards longer time taken in the first lap of the CFC VR (E), which we have observed before when mice enter novel environments from familiar ones (Dong et al., 2021). The significantly lesser freezing during this first lap (D) suggests that animals were exploring slowly rather than remaining immobile. The boxplots in A, (C–E) range from the first quartile (25th percentile) to the third quartile (75th percentile), and the box shows the interquartile range (IQR). The line across the box represents the median (50th percentile). The whiskers extend to 1.5×IQR on either side of the box, and anything above this range is defined as an outlier. P-values were calculated using a paired t-test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) The left panel shows freezing in the first lap (A) and across all laps (B). The right panel illustrates delta freezing, calculated as the difference in freezing between the contextual fear conditioning (CFC) virtual reality (VR) and the Familiar VR. The colors represent the shock parameters used. Number of animals used is indicated in the figure legend. The dashed line represents the average freezing percentage in a control paradigm, where mice experienced the same conditions without shocks (n=7). In most cases, we observed an increase in freezing in the CFC VR compared to the Familiar VR (delta >0). (C–D) Freezing in the first lap (C) and across all laps (D) by shock amplitude. In all cases, mice received six shocks that were 1 min apart. Greater fear discrimination could be seen at higher shock amplitudes. (E) Median freezing in the CFC VR by shock amplitude for first lab freezing (black) and average freezing across laps (gray). (F–G) A subset of animals underwent multiple days of recall tests (n=25 Day 0, n=27 Recall Day 1, n=13 Recall Day 2, n=8 Recall Day 3, n=7 Recall Day 4). VR environments were presented in a counterbalanced manner for 5 min each day. The increase in freezing in the CFC VR was highest on the first day, both in the first lap (F) and across all laps (G). p-values were calculated using a paired t-test. (H–I) Within-VR comparison of the same dataset. First lap freezing (H) and average freezing across all laps (I), separated by Familiar VR (left panels) and CFC VR (right panels), demonstrate fear extinction across days. The black line represents average freezing in control mice that received no shocks. p-values indicate significant differences between experimental and no-shock control groups (t-test). Fear extinction is quantified by the linear mixed effect (LME) model in Tables 1 and 2, which shows the statistical comparison of freezing in recall days versus Day 0 (baseline) within each VR.
+
+![Video 1.](https://cdn.elifesciences.org/articles/105422/elife-105422-video1.mp4.jpg)
+
+**Video 1.:** Video was recorded immediately after the mouse transitioned to the virtual reality (VR) environment, and they were collected at a sampling rate of 30 frames/s.
+
+![Video 2.](https://cdn.elifesciences.org/articles/105422/elife-105422-video2.mp4.jpg)
+
+**Video 2.:** Video was recorded immediately after the mouse transitioned to the VR environment, and they were collected at a sampling rate of 30 frames/s.
+
+![Video 3.](https://cdn.elifesciences.org/articles/105422/elife-105422-video3.mp4.jpg)
+
+**Video 3.:** This mouse displays more avoidance-like behaviors, such as slowing down and making backward movements. Video was recorded immediately after the mouse transitioned to the VR environment, and they were collected at a sampling rate of 30 frames/s.
 
 To quantify the distinct conditioned responses observed (Figure 2A–B, Videos 1–3), we used two metrics: freezing behavior, defined as periods when the animal’s instantaneous velocity was 0 cm/s, and time taken to complete a lap, which captured the avoidance-like behaviors (such as slowing down, moving backward, and hesitation to move forward) as well as freezing. When we quantified the freezing behavior in mice, we found it to be, on average, high throughout the 5 min that mice spent in the CFC VR on recall Day 1 (Figure 2C–D, average freezing (%), mean ± 95% Confidence Intervals (CI), Familiar VR: 17.52±3.25, CFC VR: 23.54±3.26, p=0.001, Paired t-test, n=27). We also observed a significant increase in freezing during the first lap in the CFC VR compared to the familiar VR (Figure 2B–C, average first lap freezing (%), Familiar VR: 15.94±4.03, CFC VR: 25.11±3.41, p<0.001, Paired t-test). Mice also took longer to complete a lap in the CFC VR compared to the Familiar VR, both in the first lap (average time taken to complete first lap (s), Familiar VR: 14.81±3.74, CFC VR: 41.16±9.33, p<0.001, Paired t-test) and on average (Figure 2E–F, the average time taken to complete all laps (s), Familiar VR: 16.17±3.05, CFC VR: 38.82±11.06, p<0.001, Paired t-test). The increase in freezing and time taken to complete a lap in the CFC VR compared to the Familiar VR was significantly higher on Day 1 than Day 0, indicating that it results from fear conditioning (Figure 2C–F, p<0.05, Paired t-test).
 
@@ -67,21 +91,105 @@ Fear discrimination was most prominent on Recall Day 1. Mice displayed the most 
 
 To determine the extinction of the fear response, we compared freezing within each VR to baseline freezing levels on Day 0 (Figure 2—figure supplement 2H–I). We quantified this using a Linear Mixed Effects (LME) Model, treating recall days as fixed effects and mouse as a random effect, with baseline freezing on Day 0 as the reference (Tables 1–2). In the CFC VR, both first lap and average freezing were most prominent on Recall Day 1 and returned to baseline levels by Recall Day 2. While we observed a small increase in average freezing on Recall Day 3, it remained lower than Recall Day 1 levels and returned to baseline by Recall Day 4. This pattern suggests that the pronounced first lap freezing observed on Recall Day 1 extinguishes quickly, while average freezing, though more variable, also extinguishes by Recall Day 4.
 
+**Table 1.**
+ Linear mixed effect (LME) summary (estimate ± standard error, p-value) for first lap freezing in Paradigm 1 with fixed effects (recall days, baseline: before CFC, Day 0) and random effect (mouse).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VR</th>
+      <th>Recall Day 1</th>
+      <th>Recall Day 2</th>
+      <th>Recall Day 3</th>
+      <th>Recall Day 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Familiar VR</td>
+      <td>–0.97±1.95, p=0.62</td>
+      <td>–5.75±2.51, p=0.02</td>
+      <td>–4.13±3.03, p=0.18</td>
+      <td>1.08±3.18, p=0.73</td>
+    </tr>
+    <tr>
+      <td>CFC VR</td>
+      <td>12.96±2.02, p&lt;0.001</td>
+      <td>3.42±2.55, p=0.18</td>
+      <td>1.73±3.07, p=0.57</td>
+      <td>1.26±3.23, p=0.70</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Linear mixed effect (LME) summary (estimate ± standard error, p-value) for average freezing in Paradigm 1 with fixed effects (recall days, baseline: before CFC, Day 0) and random effect (mouse).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VR</th>
+      <th>Recall Day 1</th>
+      <th>Recall Day 2</th>
+      <th>Recall Day 3</th>
+      <th>Recall Day 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Familiar VR</td>
+      <td>1.00±1.13, p=0.37</td>
+      <td>–0.43±1.48, p=0.77</td>
+      <td>0.76±1.80, p=0.67</td>
+      <td>4.87±1.88, p=0.013</td>
+    </tr>
+    <tr>
+      <td>CFC VR</td>
+      <td>7.55±1.58, p&lt;0.001</td>
+      <td>2.89±2.04, p=0.16</td>
+      <td>6.03±2.47, p=0.018</td>
+      <td>3.78±2.58, p=0.15</td>
+    </tr>
+  </tbody>
+</table>
+
 In the Familiar VR, freezing behavior—both first lap and average—did not differ significantly from baseline on most days. However, we observed an unexpected increase in average freezing compared to baseline on Recall Day 4. This increase could reflect either fear generalization or a decrease in motivation - a response to the prolonged absence of reward in a previously rewarded environment. To distinguish between these possibilities, we examined freezing behavior in control mice that underwent the same paradigm without shocks (no-shock controls, n=7, black lines in Figure 2—figure supplement 2H–I). Average freezing in the Familiar VR exceeded that of no-shock controls on both Recall Days 1 and 4. Since no-shock controls explored the environments under no-reward conditions, this suggests that the increase in freezing in the Familiar VR stems from fear conditioning and may indicate generalization rather than motivational changes. This aligns with findings from freely moving animals, where specific fear memories have been shown to generalize over time with repeated exposures to both neutral and conditioned contexts (Biedenkapp and Rudy, 2007; Wiltgen and Silva, 2007).
 
 In summary, these results demonstrate that head-fixed mice can acquire fear associations in VR environments. Most mice displayed freezing as a conditioned response specifically to the shock-paired VR and showed robust fear discrimination—behavior that mirrors that of freely moving animals after fear conditioning. By the fourth recall day, freezing had largely extinguished. Notably, beyond freezing, other avoidance-like defensive behaviors were prominent in the shock-paired VR, demonstrating the range of behavioral responses our paradigm can capture.
 
-## A second paradigm where head-fixed mice discriminate between two novel VRs
+### A second paradigm where head-fixed mice discriminate between two novel VRs
 
 As previously mentioned, the incomplete extinction of licking behavior in the familiar VR before fear conditioning or the gradual increases in freezing behavior in the familiar VR during recall tests may indicate that mice still associate the VR with water rewards, which could be a caveat. Furthermore, in traditional CFC paradigms with freely moving mice, fear behavior has been assessed mainly by comparing two novel contexts, one associated with shocks and the other acting as a control. To address this, we tested another paradigm (Paradigm 2), using a novel VR instead of the familiar VR to act as the control (Figure 3A). One novel VR was assigned as the Control VR, and a second novel VR was assigned as the CFC VR, which would later become paired with the shocks. In this paradigm, we also added an extra habituation day to increase the animal’s pre-exposure time to the novel VRs prior to conditioning (Day–1). Pre-exposure to the context before fear conditioning can enhance contextual fear, as seen in freely moving animals (Biedenkapp and Rudy, 2007; Fanselow, 1980; Fanselow, 1990; Maren et al., 2013; Rudy et al., 2002; Wiltgen and Silva, 2007).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig3-v1.jpg)
+
+**Figure 3.:** (A) The training paradigm for Paradigm 2 is similar to Paradigm 1. On experiment day, mice were introduced to two novel VRs, one of which would be associated with the shock (contextual fear conditioning, CFC VR) and the other wouldn’t (Control VR). In this paradigm, there was an added habituation day, where mice were exposed to the two VRs for 10 min. The next day, mice ran in the two VRs again before receiving mild electric shocks in the CFC VR. The recall test occurred the next day. In this cohort, all mice received six shocks at 1 mA intensity. (B–D) These panels show the lap running behavior of a single mouse on experiment days –1, 0, and 1. Behavior is displayed for about 3 min in all sessions except during CFC. Frames with freezing detected by a threshold (instantaneous velocity 0 cm/s) are marked by black dots. In (D), this mouse shows an increase in freezing, a decrease in velocity, and some backward movement when in the CFC VR (red traces). (E) Comparison between freezing in the first lap (left) and all laps (right) in Paradigm 1 (blue and red) versus Paradigm 2 (green and red). In Paradigm 1, only animals that received six shocks at 1 mA intensity are included. n=12 mice were used in both paradigms (10 male and two female mice). The scale bar for panels B-D is indicated in B. p-values were calculated using a paired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Licking behavior remains low in all sessions, unlike Paradigm 1. It does not significantly differ between the Control vs contextual fear conditioning (CFC) virtual reality (VR) before and after CFC. (B–C) The amount of freezing and average running speed was not significantly different between the Control and CFC VR before fear conditioning, both on Day –1 (B) and Day 0 (C). p-values were calculated using a paired t-test.
 
 The training was done similarly to the previous paradigm. After mice showed consistent running behavior in the Familiar VR with the tail-coat and without reward, they were advanced to the experimental stage. On Day –1, mice were exposed to the two novel VRs for 10 min each. On Day 0, they were re-exposed to the same two VRs for 10 min before receiving six 1-s-long mild electric shocks (at 1 mA and 60 s ISI) in one of them - the CFC VR. On Day 1, mice were exposed to the two VRs for 5 min to evaluate memory recall (Figure 3A–B).
 
 Compared to Paradigm 1, in the novel VRs, mice showed no differences in licking behavior across all experimental sessions (Figure 3—figure supplement 1A). There was also no significant difference in freezing behavior and time taken to complete a lap between the two VRs on Day –1 and Day 0 before fear conditioning (Figure 3—figure supplement 1B–C).
 
-## Head-fixed mice show heightened fear discrimination during the first lap when discriminating between two novel VRs
+### Head-fixed mice show heightened fear discrimination during the first lap when discriminating between two novel VRs
 
 We compared the freezing behavior between Paradigm 1 and Paradigm 2 on Recall Day 1 to the same intensity and number of shocks (1 mA, 1 s long, 60 s ISI, six shocks, n=12 mice each paradigm). While first lap freezing in the CFC VR was markedly higher in Paradigm 2, significant differences between the Control VR and CFC VR were observed only for first lap freezing, not for average freezing or lap completion time across all laps (Figures 3B–D–4A–E). The effect sizes for the difference in first lap freezing between the two VRs were nearly identical between the paradigms (Cohen’s d: First lap freezing: Paradigm 1: 1.038, Paradigm 2: 1.040), but the effect size for average freezing was notably smaller in Paradigm 2 compared to Paradigm 1 (Cohen’s d: Average Freezing: Paradigm 1: 0.797, Paradigm 2: 0.093).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig4-v1.jpg)
+
+**Figure 4.:** (A) First 2 min of recall behavior in five mice in Control VR (green) versus CFC VR (red). (B–C) The left panels show the amount of freezing on the recall day in (B) the very first lap and (C) all laps during the 5 min when the mice explored the Control (green) and CFC (red) VR. Freezing (%) is calculated as the number of frames where freezing was detected in a lap divided by the total number of frames in each lap. On the right, the delta is calculated as the difference in the amount of freezing in the CFC VR compared to the Control VR before (Day 0) and after CFC (Day 1). The dashed line represents 0. (D–E) Same as B-C but for the time taken to complete the first lap (D) and all laps (E). In B-E, circles and pluses represent individual mice (n=12). Lines join data from the same mouse. p-values were calculated using a paired t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–F) Average freezing across mice (A–C) and the number of freezing epochs (D-F, see Methods) in each lap across the two virtual realities (VRs) on the first day of recall in (A, D) Paradigm 1, (B, E) Paradigm 2 and (C, F) Paradigm 3. Lines indicate mean, and shading indicates 95% confidence intervals. P-values between (A, D) Familiar VR and contextual fear conditioning (CFC) VR and (B–C, E–F) Control VR and CFC VR were calculated using a paired t-test. * indicates p-values <0.01.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) First lap freezing (A) and average freezing across all laps (B) across 2 d of recall in Paradigm 2. p-values were calculated using a paired t-test. Circles indicate data from individual mice (n=12 for Recall Day 1 and n=8 for Recall Day 2). p-values were calculated using a paired t-test. (C–D) Within-virtual reality (VR) comparison of the same dataset. First lap freezing (C) and average freezing across all laps (D), separated by Familiar VR (left panels) and contextual fear conditioning (CFC) VR (right panels), demonstrate fear extinction across days. Fear extinction is quantified by the linear mixed effect (LME) model in Tables 3 and 4, which shows the statistical comparison of freezing in recall days versus Day 0 (baseline) within each VR.
 
 When we quantified freezing by lap on Recall Day 1 in Paradigm 2, we found that after the first lap, mice showed similar freezing in both the Control VR and the CFC VR across all subsequent laps (Figure 4—figure supplement 1). In contrast, in Paradigm 1, mice consistently froze more in the CFC VR compared to the Familiar VR throughout Recall Day 1 (Figure 4—figure supplement 1).
 
@@ -89,7 +197,59 @@ Indeed, when we quantified freezing behavior in the Control VR and CFC VR in Par
 
 When mice were returned to the two VRs the following day for a second day of recall (Recall Day 2), they continued to exhibit modest levels of fear discrimination, as indicated by a small but statistically significant difference in freezing in the first lap and on average between the CFC VR and Control VR (Figure 4—figure supplement 2A–B). However, when assessing fear extinction by comparing freezing in the CFC VR across recall days to baseline levels (Figure 4—figure supplement 2C–D, Tables 3–4), we found no significant differences beyond the very first lap on Recall Day 1. This suggests that while mice maintained their ability to discriminate between environments by freezing more in the CFC VR, their overall fear response had extinguished. Thus, in Paradigm 2, fear extinction occurs rapidly within the first recall session after the initial lap.
 
-## A shorter ISI and leaving the tail-coat on during fear memory recall improved fear discrimination when using two novel VRs
+**Table 3.**
+ Linear mixed effect (LME) summary (estimate ± standard error, p-value) for first lap freezing in Paradigm 2 with fixed effects (recall days, baseline: before CFC, Day 0) and random effect (mouse).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VR</th>
+      <th>Recall Day 1</th>
+      <th>Recall Day 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control VR</td>
+      <td>–5.22±2.88, p=0.08</td>
+      <td>–6.99±3.22, p=0.04</td>
+    </tr>
+    <tr>
+      <td>CFC VR</td>
+      <td>5.02±1.98, p=0.02</td>
+      <td>4.01±2.24, p=0.09</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Linear mixed effect (LME) summary (estimate ± standard error, p-value) for average freezing in Paradigm 2 with fixed effects (recall days, baseline: before CFC, Day 0) and random effect (mouse).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VR</th>
+      <th>Recall Day 1</th>
+      <th>Recall Day 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control VR</td>
+      <td>–2.71±2.00, p=0.19</td>
+      <td>–1.15±2.27, p=0.62</td>
+    </tr>
+    <tr>
+      <td>CFC VR</td>
+      <td>–0.23±2.06, p=0.91</td>
+      <td>2.76±2.32, p=0.25</td>
+    </tr>
+  </tbody>
+</table>
+
+### A shorter ISI and leaving the tail-coat on during fear memory recall improved fear discrimination when using two novel VRs
 
 Freezing behavior in the CFC VR in Paradigm 2 was weaker than in Paradigm 1, with rapid fear extinction after the first recall lap. In Paradigm 3, two parameters were changed relative to Paradigm 2 to test whether freezing behavior and fear discrimination could be enhanced. First, the interval between consecutive shocks was reduced to see if a shorter ISI could produce a more robust fear response (McNally and Westbrook, 2006; Williams, 1994). Second, the tail-coat was kept on during memory recall, based on evidence that removing contextual cues can reduce conditioned freezing (González et al., 2003). We hypothesized that the tail-coat might act as a contextual cue and that its presence during recall might enhance freezing behavior. To further test these effects, we used a lower shock intensity of 0.6 mA—which we previously showed as producing only modest fear responses in Paradigm 1 (Figure 2—figure supplement 2C–E)—to determine whether a shorter ISI and the retention of the tail-coat during recall could enhance conditioned fear responses produced by the lower shock intensity.
 
@@ -101,15 +261,81 @@ In Paradigm 3, mice followed the same experimental protocol as Paradigm 2, with 
 
 We found that mice (n=20 male mice) showed better fear discrimination between the Control and CFC VRs in Paradigm 3 compared to Paradigm 2 (Figure 5B–D). Mice not only showed significant freezing in the first lap (freezing in first lap %: Control VR: 13.61±2.24 CFC VR: 19.73±5.17, p=0.021, Paired t-test) but average freezing across all laps was also higher in the CFC VR compared to the Control VR (Figure 5C–D, Figure 6A–D, average freezing in all laps %: Control VR: 15.28±2.00, CFC VR: 21.92±2.95, p<0.001, Paired t-test).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) The left panels show the amount of freezing on the recall day in (A) the very first lap and (B) all laps during the 5 min when the mice explored the Control (green) and CFC (red) VR. Freezing (%) is calculated as the number of frames where freezing was detected in a lap divided by the total number of frames in each lap. On the right, the delta is calculated as the difference in the amount of freezing in the CFC VR compared to the Control VR before (Day 0) and after CFC (Day 1). The dashed line represents 0. (C–D) Same as A-B but for time taken to complete the first lap (C) and all laps (D). Circles and pluses represent individual mice (n=20). Lines join data from the same mouse. p-values were calculated using a paired t-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/105422/elife-105422-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Freezing in the first lap (A) and average freezing across all laps (B) in the Control virtual reality (VR) vs contextual fear conditioning (CFC) VR on three consecutive recall days in Paradigm 3 (n=20). The tail-coat was kept on all recall days. p-values were calculated using a paired t-test. (C–D) Within-VR comparison of the same dataset. First lap freezing (C) and average freezing across all laps (D), separated by Familiar VR (left panels) and CFC VR (right panels), demonstrate fear extinction across days. Fear extinction is quantified by the linear mixed effect (LME) model in Tables 5 and 6, which shows the statistical comparison of freezing in recall days versus Day 0 (baseline) within each VR.
+
 While first lap freezing showed a weaker effect size in Paradigm 3 compared to the other paradigms, there was a strong effect of average freezing across the session (Cohen’s d: First lap freezing: Paradigm 1: 1.038, Paradigm 2: 1.040, Paradigm 3: 0.719. Average Freezing: Paradigm 1: 0.797, Paradigm 2: 0.093, Paradigm 3: 1.232). On average, we found that Paradigm 1 still produced the highest absolute freezing behavior in the CFC VR (average freezing in all laps %: CFC VR: Paradigm 1: 23.54±3.26, Paradigm 2: 21.51±4.21, Paradigm 3: 21.92±2.95). The difference in freezing behavior between the CFC VR and the neutral VR was comparable between Paradigms 1 and 3 (∆ average freezing % (CFC VR – Familiar/Control VR): Paradigm 1: 6.74, Paradigm 2: 0.61, Paradigm 3: 6.63). Thus, unlike Paradigm 2, where the largest differences in freezing between the CFC VR and the Control VR were restricted to the first lap, the shorter ISIs and the addition of the tail-coat during the recall day in Paradigm 3 improved contextual fear discrimination between the two novel VRs. When tested for memory recall in Paradigm 3, mice froze more in the CFC VR than in the Control VR, and this effect persisted beyond the first lap (Figure 5C–D, Figure 4—figure supplement 1). Mice also maintained their ability to discriminate between the two VRs for the first two recall days, freezing significantly more in the CFC VR than in the Control VR on both Recall Days 1 and 2 (Figure 6—figure supplement 1A–B). However, by Recall Day 3, this discrimination diminished, as freezing levels no longer differed significantly between the two VRs.
 
 Unlike the rapid fear extinction observed in Paradigm 2, mice in Paradigm 3 showed delayed extinction (Tables 5–6, Figure 6—figure supplement 1C–D). Freezing levels in the CFC VR remained elevated above baseline during the first lap and across all laps on Recall Days 1 and 2, with average freezing still elevated above baseline on Recall Day 3. While freezing levels showed a consistent downward trend across days, these results suggest that fear had not completely extinguished by Recall Day 3. As in Paradigm 1, the most pronounced increases in first lap freezing in the CFC VR occurred in early recall days, while elevated average freezing persisted longer. These findings suggest that the shorter ISI and presence of the tail-coat during memory recall may enhance conditioned fear and delay fear extinction in head-fixed mice discriminating between two novel VRs, though the individual effects of these parameters require further investigation.
+
+**Table 5.**
+ Linear mixed effect (LME) summary (estimate ±standard error, p-value) for first lap freezing in Paradigm 3 with fixed effects (recall days, baseline: before CFC, Day 0) and random effect (mouse).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VR</th>
+      <th>Recall Day 1</th>
+      <th>Recall Day 2</th>
+      <th>Recall Day 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control VR</td>
+      <td>1.84±1.92, p=0.34</td>
+      <td>3.01±1.92, p=0.12</td>
+      <td>–2.09±1.92, p=0.28</td>
+    </tr>
+    <tr>
+      <td>CFC VR</td>
+      <td>9.67±2.61, p=0.0005</td>
+      <td>6.84±2.61, p=0.01</td>
+      <td>3.33±2.61, p=0.21</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ Linear mixed effect (LME) summary (estimate ±standard error, p-value) for average freezing in Paradigm 3 with fixed effects (recall days, baseline: before CFC, Day 0) and random effect (mouse).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VR</th>
+      <th>Recall Day 1</th>
+      <th>Recall Day 2</th>
+      <th>Recall Day 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control VR</td>
+      <td>2.65±0.97, p=0.008</td>
+      <td>3.99±0.97, p=0.0001</td>
+      <td>2.28±0.97, p=0.02</td>
+    </tr>
+    <tr>
+      <td>CFC VR</td>
+      <td>10.30±1.41, p&lt;0.001</td>
+      <td>8.81±1.41, p&lt;0.001</td>
+      <td>4.28±1.41, p=0.004</td>
+    </tr>
+  </tbody>
+</table>
 
 The tail-coat’s presence during recall days likely contributed to some transfer of fear to the Control VR, evidenced by elevated freezing in the Control VR compared to baseline. Nevertheless, freezing levels in the Control VR remained consistently lower than in the CFC VR across all days (Figure 6—figure supplement 1, Tables 5–6).
 
 In summary, our results show that mice exhibited greater average freezing behavior in the CFC VR in Paradigms 1 and 3 compared to Paradigm 2. In Paradigm 2, the most noticeable increase in freezing occurred during the very first lap in the CFC VR compared to the Control VR. Fear extinction was rapid in Paradigm 2 and was back to baseline levels within the first day of recall. We found that fear discrimination could be improved, and fear extinction could be delayed with a shorter ISI when presenting tail shocks and when the tail-coat was present during memory recall, as shown in Paradigm 3. Thus, we provide three different variations for performing CFC in head-fixed mice that can be used to understand the neural underpinnings of fear memory.
 
-## Place cells in the CA1 subregion of the hippocampus displayed remapping and decreased field widths following contextual fear conditioning
+### Place cells in the CA1 subregion of the hippocampus displayed remapping and decreased field widths following contextual fear conditioning
 
 The hippocampus plays a critical role in the encoding, consolidation, and recall of memories and is necessary for the expression of contextual fear memory (Anagnostaras et al., 2001; Ji and Maren, 2007; Liu et al., 2012; Maren et al., 2013; Maren and Holt, 2000; Phillips and LeDoux, 1992; Ramirez et al., 2013; Wiltgen and Silva, 2007). Context is thought to be represented in the hippocampus by place cells that fire at specific spatial locations (place fields) in an environment (O’Keefe and Dostrovsky, 1971). These place cells have been thought to help discriminate between feared and neutral contexts. Previous studies on freely moving animals have shown that fear conditioning can cause place cells to remap (Blair et al., 2023; Kim et al., 2015; Kinsky et al., 2023; Mamad et al., 2019; Moita et al., 2004; Ormond et al., 2023; Schuette et al., 2020; Wang et al., 2012; Wang et al., 2015; Wu et al., 2017). Remapping is defined by place cells shifting their firing fields, indicative of place cells adapting to incorporate new information into memory (Colgin et al., 2008; Leutgeb et al., 2005; Muller and Kubie, 1987). Additionally, a recent study (Schuette et al., 2020) that performed calcium imaging of hippocampal cells in freely moving mice found that fear conditioning narrows the width of place fields in the feared environment. This suggests that place cells encode the same environment on a finer scale following fear conditioning, potentially enhancing context discrimination and threat avoidance (Schuette et al., 2020).
 
@@ -153,23 +379,69 @@ In conclusion, we have developed a head-fixed version of the classic CFC paradig
 
 ## Methods
 
-## Subjects
+### Subjects
 
 All experimental and surgical procedures adhered to the University of Chicago Animal Care and Use Committee guidelines under protocol number: 72508. This study utilized 10–12 wk-old C57BL/6 J (Strain #:000664), Thy1GCaMP6s (Strain #:024275), and Tg(Grik4-cre)G32-4Stl/J (Strain #:006474) male and female mice obtained from JAX labs. Following the start of water restriction, the mice were individually housed in a reverse 12 hr light/dark cycle, and behavioral experiments were conducted during the animals’ dark cycle.
 
-## Head-fixation surgery
+### Head-fixation surgery
 
 Mice were anesthetized with 1–2% isoflurane and given an intraperitoneal injection of 0.5 mL of saline and a subcutaneous injection of 0.45 mL of Meloxicam (1–2 mg/kg). A small incision was made on the skull to attach a metal head-plate (9.1 mm × 31.7 mm, Atlas Tool and Die Works) to head-restrain the mice. Some mice also had an imaging window implanted above the hippocampus, as previously described (Dong et al., 2021; Krishnan et al., 2022; Sheffield and Dombeck, 2015). Post-surgery mice were housed individually. After a recovery day, they were water-restricted to 0.8–1.0 ml/day.
 
-## Behavior training
+### Behavior training
 
 Head-restrained mice were trained to run on a cylindrical treadmill to navigate VR environments similar to the setups previously described (Dong et al., 2021; Krishnan et al., 2022; Sheffield and Dombeck, 2015). Behavioral training began 7 d following the water restriction. Briefly, VR environments were created using the Virtual Reality MATLAB Engine, or VIRMEN (Aronov and Tank, 2014), and projected to five screens covering the mouse’s field of view. Mice were head restrained with their limbs resting on a freely rotating Styrofoam wheel, which acted as a treadmill. VR environments were 2 m linear tracks. Mice received a water reward (4 μl) through a waterspout upon completing each traversal of the linear track, considered a lap. This reward was followed by a 1.5 s pause in the VR to allow the mouse to consume the water. The mice were then virtually teleported to the start of the track to begin a new lap. Training sessions lasted 30 min per day. Mice were considered well-trained when they could run at >3 laps per minute. We found that this level of training was necessary to ensure that mice would continue to run even without rewards (Krishnan et al., 2022; Krishnan and Sheffield, 2023). Generally, about 60% of mice met our criteria, which typically took around 10–14 d to achieve. Behavior data was collected using a PicoScope Oscilloscope (PICO4824, Pico Technology, v6.13.2).
 
-## Tail-coat
+### Tail-coat
 
 A custom-designed ‘tail-coat’ delivered mild electric shocks to a head-fixed mouse’s tail during VR navigation. A pictorial representation of the tail-coat can be found in Figure 1D. The tail-coat, handmade from wearable conductive fabrics, featured a lightweight design to ensure the mouse could continue running during baseline VR exploration (Table 7). First, the mouse’s tail was measured while anesthetized for head-plate surgeries. A small denim patch cloth (Michael’s) was cut into a rectangle to fit snugly on the mouse’s tail. Marks were made where snap buttons (Michael’s) would be sewn, ensuring they clipped just above the tail. Given that the mouse’s tail narrows away from the body, the buttons closer to the body were placed slightly further apart than those closer to the tip. Typically, the buttons were set 2 cm apart on the narrow end and 2.5 cm apart on the broader end. Care was taken to adjust the placement of the buttons so they weren't too tight or loose for the mouse. We found that these measurements were generally similar across sexes and for the age group that we tested. After measurements were taken and the cloth cut, small strips of 8 mm wide conductive fabric tape (Adafruit) were attached to either side of the cloth, with some tape hanging off the edge. A metal strip (McMaster Carr) of the same width was affixed to this portion of the tape to provide a secure grip for alligator clips used in fear conditioning. Finally, snap buttons were sewn with conductive thread at the marked spots. Clear nail polish was applied to secure the threads in place. The tail-coat creation process should take less than half an hour. Dimensions of the cloth for a typical male mouse, 12 wk of age and weighing ~30 g, are shown in Figure 1D. The denim cloth was 4 cm in width and 3.2 cm in length; the conductive tape was 1.2 cm in width and 5.2 cm in length, with 1.5 cm hanging out at each side.
 
-## Contextual fear conditioning protocol in head-fixed mice
+**Table 7.**
+ Items required for head-fixed contextual fear discrimination.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Manufacturer</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Denim patch cloth</td>
+      <td>Any fabric or hobby shop</td>
+      <td>https://www.michaels.com/product/loops-threads-denim-patches-assorted-10113795</td>
+    </tr>
+    <tr>
+      <td>Snap Buttons</td>
+      <td>Any fabric or hobby shop</td>
+      <td>https://www.michaels.com/product/loops-threads-sew-on-snaps-10354228?michaelsStore=1191&amp;inv=14</td>
+    </tr>
+    <tr>
+      <td>Conductive nylon fabric tape</td>
+      <td>Adafruit</td>
+      <td>https://www.adafruit.com/product/3960</td>
+    </tr>
+    <tr>
+      <td>Stainless conductive thread – 3 Ply</td>
+      <td>Adafruit</td>
+      <td>https://www.adafruit.com/product/641</td>
+    </tr>
+    <tr>
+      <td>Multipurpose 304 Stainless steel sheet</td>
+      <td>McMaster-Carr</td>
+      <td>https://www.mcmaster.com/products/304-stainless-steel/multipurpose-304-stainless-steel-6/?s=304-stainless-steel</td>
+    </tr>
+    <tr>
+      <td>Shock box</td>
+      <td>Colbourn precision animal shockerAlternate: Lafayette Instruments Scrambled Grid Current Generator</td>
+      <td>https://lafayetteinstrument.com</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contextual fear conditioning protocol in head-fixed mice
 
 Once the mice were well-trained and met our criteria of running >3 laps per minute, they were ready for the next stage. The following day, a tail-coat was attached to the mouse’s tail. Mice that maintained consistent running in the VR, with minimal pauses, while wearing the tail-coat advanced to the next stage. For mice startled by the tail-coat, we typically attempted another day with the tail-coat, rewarding them and observing if their running behavior improved to running at least three laps per minute. If not, these mice were not advanced to the next stage. In mice that do advance, on the subsequent day, the tail-coat was kept on, and the water reward was removed. All else remained the same, including the 1.5 s pause at the end, to allow animals to distinguish the start and end of a lap. If the mice continued to run as before, they moved on to the experiment stage. From that day forward, the mice no longer received water reinforcement when running in the VR environments. Typically, about 40% of mice made it to the experiment stage. Tail-coats were only added during VR exploration and removed before returning the animals to their home cage. Once the mice advanced to the experiment stage, they were taken through the entire process and not excluded from analysis, even if they showed signs of inconsistent running behavior, which happened with some mice (for instance, see Figure 3—figure supplement 1B–C).
 
@@ -181,19 +453,19 @@ Additionally, a subset of mice in Paradigms 1 and 2 and all mice in Paradigm 3 w
 
 All VRs were randomly assigned as either Control or CFC VR to prevent biasing any inherent preferences in mice. However, the Familiar VR was always kept the same. We also used both sexes in our experiments. However, we found female mice less receptive to the ‘tail-coat’ than their male counterparts. We believe this is due to the low average weight of female mice (~16 g) following water restriction. Female mice of the same age (10–12 wk) weighed significantly less than males (20–23 g vs 25–30 g) and lost further weight following water restriction. As a result, only four female mice could proceed through and complete all the behavioral tests.
 
-## Behavior measurement
+### Behavior measurement
 
 Freezing periods were periods during which the animal’s instantaneous velocity was 0 cm/s. Freezing epochs were defined as continuous, uninterrupted freezing periods longer than 1 s. The time taken to complete a lap was calculated as the total time (in seconds) the animal took to run from 0 to 200 cm.
 
-## Surgery and two-photon imaging
+### Surgery and two-photon imaging
 
 Stereotaxic surgeries and cannula window implantation above the CA1 subregion of the hippocampus were performed in the same way as previously reported (Krishnan et al., 2022). Briefly, a genetically-encoded calcium indicator, AAV1-CamKII-GCaMP6f (pENN.AAV.CamKII.GCaMP6f.WPRE.SV40 was a gift from James M. Wilson – Addgene viral prep #100834-AAV1; https://www.addgene.org/100834/; RRID:Addgene_100834) was injected (~50 nL at a depth of 1.25 mm below the surface of the dura) using a beveled glass micropipette leading to GCaMP6f expression in a large population of CA1 pyramidal cells. Mice underwent water restriction (1.0 ml/day) following viral injection and, 7 d later, were implanted with a hippocampal window and head plate (Dombeck et al., 2010). Mice were allowed to rest from the surgeries for 3–4 d, after which behavioral training began. Imaging was done using a laser scanning two-photon microscope (Neurolabware). The setup is the same as the one previously described (Krishnan et al., 2022). Time-series images were collected through Scanbox (v4.1, Neurolabware), and the PicoScope Oscilloscope (PICO4824, Pico Technology, v6.13.2) was used to synchronize frame acquisition timing with behavior. At the end of the imaging session on Day –1 or Day 0, a 1 min time-series movie was collected at a higher magnification and then averaged to aid as a reference frame in finding the same imaging plane on subsequent days. Across-day images collected were motion-corrected using Suite2p (Pachitariu et al., 2017) and aligned using ImageJ (v1.53, NIH). Region of interests were extracted using Suite2p.
 
-## Place cell extraction and place field parameters
+### Place cell extraction and place field parameters
 
 Place fields were identified as previously described (Dong et al., 2021; Krishnan et al., 2022). Briefly, the 2 m track was divided into 40 position bins (each 5 cm wide). The running behavior of the animal was filtered to exclude periods where the animal was immobile (speed <1 cm/s). Filtering ensured that place cells were defined only during active exploration and not during freezing bouts. We have previously found that filtering versus not filtering yields similar results (Krishnan et al., 2022). Extracted place fields satisfied the following criteria, which were used for all conditions and all mice: 1. The average ΔF/F was greater than 10% above the baseline. 2. The cell displayed significant calcium transients on >30% of laps in the field. 3. The rising phase of the mean transient was located on the track. 4. Their p-value from bootstrapping was <0.05. Multiple place fields within the same cell were treated independently. Parameters of place fields were calculated as described before (Krishnan et al., 2022); this includes the center of mass (COM), place field reliability, out/in-field firing ratio, and place field widths.
 
-## Statistics
+### Statistics
 
 At the time of study design, sample sizes were based on prior studies using head-fixed mice in virtual reality environments (Krishnan et al., 2022; Sheffield and Dombeck, 2015). However, the final sample size was constrained by the low attrition rate of mice progressing to the experimental stage. Mice were randomly assigned to one of three experimental setups and independently to a shock paradigm. Behavioral analyses, including the identification of freezing epochs, were conducted blind to the assigned paradigm until all data were compiled for group-level comparisons. The experiment has been independently replicated multiple times in the laboratory across different cohorts of mice and by different experimenters.
 

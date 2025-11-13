@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.41431.001 Viruses manipulate host cells to enhance their replication, and the identification of cellular factors targeted by viruses has led to key insights into both viral pathogenesis and cell biology. In this study, we develop an HIV reporter virus (HIV-AFMACS) displaying a streptavidin-binding affinity tag at the surface of infected cells, allowing facile one-step selection with streptavidin-conjugated magnetic beads. We use this system to obtain pure populations of HIV-infected primary human CD4+ T cells for detailed proteomic analysis, and quantitate approximately 9000 proteins across multiple donors on a dynamic background of T cell activation. Amongst 650 HIV-dependent changes (q < 0.05), we describe novel Vif-dependent targets FMR1 and DPH7, and 192 proteins not identified and/or regulated in T cell lines, such as ARID5A and PTPN22. We therefore provide a high-coverage functional proteomic atlas of HIV infection, and a mechanistic account of host factors subverted by the virus in its natural target cell.
+Viruses manipulate host cells to enhance their replication, and the identification of cellular factors targeted by viruses has led to key insights into both viral pathogenesis and cell biology. In this study, we develop an HIV reporter virus (HIV-AFMACS) displaying a streptavidin-binding affinity tag at the surface of infected cells, allowing facile one-step selection with streptavidin-conjugated magnetic beads. We use this system to obtain pure populations of HIV-infected primary human CD4+ T cells for detailed proteomic analysis, and quantitate approximately 9000 proteins across multiple donors on a dynamic background of T cell activation. Amongst 650 HIV-dependent changes (q < 0.05), we describe novel Vif-dependent targets FMR1 and DPH7, and 192 proteins not identified and/or regulated in T cell lines, such as ARID5A and PTPN22. We therefore provide a high-coverage functional proteomic atlas of HIV infection, and a mechanistic account of host factors subverted by the virus in its natural target cell.
 
 ## Introduction
 
@@ -28,9 +28,21 @@ The utility of cancer cell line models (such as CEM-T4) is, however, limited by 
 
 In this study, we therefore sought to apply our temporal proteomic approach to HIV infection of primary human CD4+ T lymphocytes, the principle cell type infected in vivo, at an MOI ≤ 1. To this end, we have developed an HIV reporter virus encoding a cell surface streptavidin-binding affinity tag, allowing antibody-free magnetic cell sorting of infected cells (AFMACS) (Matheson et al., 2014) (Figure 1A). This system allows rapid, scalable, affinity purification of HIV-infected cells from mixed cultures, bypassing the need for high MOIs or fluorescence-activated cell sorting (FACS). We use this system to generate a detailed atlas of cellular protein dynamics in HIV-infected primary human CD4+ T cells, show how this resource can be used to identify novel cellular proteins regulated by HIV, and assign causality to individual HIV accessory proteins.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig1-v1.jpg)
+
+**Figure 1.:** (A) Workflow for AFMACS-based magnetic selection of HIV-infected primary T cells. (B) Schematic of HIV-AFMACS provirus (pNL4-3-ΔEnv-Nef-P2A-SBP-ΔLNGFR). For simplicity, reading frames are drawn to match the HXB2 HIV-1 reference genome. Length is indicated in base pairs (bp). The complete sequence is available in Supplementary file 1. Nef-hu, codon-optimised Nef; RRE, Rev response element; SP, signal peptide. (C) Expression of cell surface SBP-∆LNGFR and CD4 on primary T cells 24 or 48 hr post-infection with HIV-AFMACS. Cells were stained with anti-LNGFR and anti-CD4 antibodies at the indicated time points and analysed by flow cytometry. (D–E) Magnetic sorting of HIV-infected (red, LNGFR+, CD4 low) and uninfected (blue, LNGFR-, CD4 high) cells. Cells were separated using AFMACS 48 hr post-infection with HIV-AFMACS and analysed as in (C). Representative (D) and summary (E) data from six independent experiments in CEM-T4s (triangles) and primary T cells (circles) are shown, with means and 95% confidence intervals (CIs).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Expression of GFP (pNL4-3-ΔEnv-EGFP only) or cell surface SBP-∆LNGFR (all other constructs) and CD4 on CEM-T4s 48 hr post-infection with indicated pNL4-3-ΔEnv-based viruses (A). Cells were stained with anti-LNGFR and anti-CD4 antibodies and analysed by flow cytometry. gRNA length is shown for each construct, and compared with functional viral titre derived from the % LNGFR +cells (B). Each construct is numbered, and the three proviruses selected for further testing are highlighted (red, bold text). pNL4-3-ΔEnv-EGFP was included as a control (green).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Expression of GFP (pNL4-3-ΔEnv-EGFP only) or cell surface SBP-∆LNGFR (all other constructs) and CD4 or tetherin in CEM-T4s 24 or 48 hr post-infection with HIV-AFMACS. Cells were stained with anti-LNGFR and anti-CD4 or anti-tetherin antibodies at the indicated time points and analysed by flow cytometry (red, infected cells; grey, mock infected cells). Schematics indicate the location/setting of SBP-ΔLNGFR within each provirus, with ORFs and non-coding features coloured as in Figure 1B (but with Nef in black and EGFP in green). For simplicity, reading frames are drawn to match the HXB2 HIV-1 reference genome. The final HIV-AFMACS virus is highlighted (pNL4-3-ΔEnv-Nef-P2A-SBP-ΔLNGFR, bold text). pNL4-3-ΔEnv-EGFP was included as a control.
+
 ## Results
 
-## Design and construction of the HIV-AFMACS reporter virus
+### Design and construction of the HIV-AFMACS reporter virus
 
 AFMACS-based magnetic selection requires the high-affinity 38 amino acid streptavidin-binding peptide (SBP) (Keefe et al., 2001) to be displayed at the cell surface by fusion to the N-terminus of the truncated Low-affinity Nerve Growth Factor Receptor (SBP-ΔLNGFR) (Ruggieri et al., 1997). Cells expressing this marker may be selected directly with streptavidin-conjugated magnetic beads, washed to remove unbound cells, then released by incubation with the naturally occurring vitamin biotin (Matheson et al., 2014). To engineer a single round HIV reporter virus encoding SBP-ΔLNGFR, we considered three settings in the proviral construct: fused to the endogenous Env signal peptide (as a direct replacement for Env); or as an additional cistron, downstream of nef and either a P2A peptide or IRES. We used Env-deficient pNL4-3-ΔEnv-EGFP (HIV-1) as a backbone and, since increased size of lentiviral genome is known to reduce packaging efficiency (Kumar et al., 2001), tested each approach in constructs from which EGFP was removed and/or the 3’ long terminal repeat (LTR) truncated. Further details relating to construct design are described in the Materials and methods and Supplementary file 1.
 
@@ -40,9 +52,25 @@ As expected, all viruses tested expressed SBP-ΔLNGFR at the cell surface of inf
 
 Since analysis of cells at early as well as late time points is essential for the generation of time course data, we focussed on pNL4-3-ΔEnv-Nef-P2A-SBP-ΔLNGFR (now termed HIV-AFMACS). To confirm that HIV-AFMACS virus could be used for cell selection (Figure 1A), infected primary T cells were captured by streptavidin-conjugated magnetic beads, released by incubation with excess biotin, then analysed by flow cytometry. Compared with unselected cells (input) or cells released during washing (flow-through), selected cells were markedly enriched for SBP-ΔLNGFR expression and CD4 downregulation (Figure 1D). In fact, from mixed populations containing approximately 20–40% infected cells, purities of ≥ 90% were routinely achieved by AFMACS of both CEM-T4s and primary human CD4+ T cells, with ≤ 10% infected cells lost in the flow-through (Figure 1E). The full HIV-AFMACS sequence is available from GenBank (accession: MK435310) and in Supplementary file 1, and the proviral construct will be made available to the community via the National Institutes of Health (NIH) AIDS Reagent Program.
 
-## Time-dependent proteomic remodelling during HIV infection of primary T cells
+### Time-dependent proteomic remodelling during HIV infection of primary T cells
 
 To gain a comprehensive, unbiased overview of viral and cellular protein dynamics during HIV-infection of its natural target cell, we used the HIV-AFMACS virus to spinoculate activated, primary human CD4+ T cells, sorted infected (SBP-ΔLNGFR positive) and uninfected (SBP-ΔLNGFR negative) cells by AFMACS 24 hr and 48 hr post-infection, and analysed whole cell lysates using tandem mass tag (TMT)-based quantitative proteomics (Figure 2A–B and Figure 2—figure supplement 1A) (Greenwood et al., 2016; Weekes et al., 2014). Interpretation of HIV-dependent proteomic remodelling in primary T cells is complicated by concurrent changes in relative protein abundance resulting from T cell activation (Geiger et al., 2016). We therefore exploited multiplex TMT labelling to measure parallel protein abundances in resting and activated (uninfected) T cells from the same donor, as well as control (mock-infected) T cells obtained at each time point.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig2-v1.jpg)
+
+**Figure 2.:** (A) Overview of time course proteomic experiment. Control (pale grey, resting/activated/mock) and experimental (dark grey, resting/activated; red, LNGFR+, HIV-infected, selected; blue, LNGFR-, uninfected, flow-through) cells are indicated for each condition/time point. (B) Magnetic sorting of HIV-infected (red, LNGFR+, selected) cells used for (A). Corresponding uninfected (LNGFR-, flow-through) cells are shown in Figure 2—figure supplement 1A. Cells were separated using AFMACS at the indicated time points post-infection with HIV-AFMACS, stained with anti-LNGFR and anti-CD4 antibodies and analysed by flow cytometry. Mock-infected cells are shown in grey. (C) Expression profiles of illustrative restriction factors regulated by T cell activation and HIV infection (tetherin) or T cell activation alone (SAMHD1) in cells from (A–B). Relative abundances (bars, fraction of maximum) and log2(ratio)s of abundances (lines) in experimental (Expt):control (Ctrl) cells are shown for each condition/time point and coloured as in (A) (summarised in the key). (D) Expression profiles of illustrative accessory protein targets (CD4, Nef/Vpu; SERINC5, Nef; SNAT1, Vpu; APOBEC3G, Vif; PPP2R5D, Vif; UNG, Vpr) in cells from (A–B). Axes, scales and colours are as in (C). Expression profiles of other accessory protein targets are shown in Figure 2—figure supplement 1B. (E) Patterns of temporal regulation of Vpr vs other accessory protein (Vif/Nef/Vpu) targets in cells from (A–B). Log2(ratio)s of abundances in experimental (Expt):control (Ctrl) cells are shown for 45 accessory protein targets (as in Figure 2—figure supplement 3A). Colours are as in (C), and average profiles (mean, black lozenges/dotted lines) are highlighted for each group of targets.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Uninfected (blue, LNGFR-, flow-through) cells used for time course proteomic experiment (Figure 2A). Corresponding HIV-infected (LNGFR+, selected) cells are shown in Figure 2B. Cells were separated using AFMACS at the indicated time points post-infection with HIV-AFMACS, stained with anti-LNGFR and anti-CD4 antibodies and analysed by flow cytometry. Mock-infected cells are shown in grey. (B–C) Expression profiles of accessory protein targets (B) (APOBEC3 and PPP2R5 family proteins, Vif; HLA-A/B alleles, Nef; other downregulated proteins, Vpr) and viral proteins (C) from time course proteomic experiment (Figure 2A). Axes, scales and colours are as in Figure 2C with the exception of APOBEC3C (range of log2(Expt/Ctrl) 0 to −4 rather than 0 to −2.5). SERINC1, APOBEC3B and HLA-C alleles are included as controls. Only HLA alleles quantitated by >1 unique peptide, canonical isoforms of PPP2R5C (Q13362) and ZGPAT (Q8N5A5), and 6/7 viral proteins with no missing values are included. Since viral proteins are not expressed in control (Ctrl) cells, log2(ratio)s of abundances in Expt:Ctrl cells are not shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Protein abundances in activated vs resting primary human CD4 +T cells from this study (x axis; time course proteomic experiment, Figure 2A) or Geiger et al. (2016) (y axis). Fold changes are compared for proteins quantitated from at least 2 samples of resting and activated cells in both datasets. Together with tetherin and SAMHD1 (Figure 2C), canonical T cell activation markers CD69, CD25 (IL2RA, IL-2 receptor alpha chain) and CD71 (TFRC, transferrin receptor) are also highlighted (red).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Hierarchical cluster analysis of 45 accessory protein targets according to profiles of temporal expression from time course proteomic experiment (Figure 2A). Vpr (gold) vs other accessory protein (Vif/Nef/Vpu; green) targets are highlighted. The heatmap shows range-scaled log2(ratio)s of abundances in experimental (Expt):control (Ctrl) cells for each condition/time point. Unscaled data for the same proteins are shown in Figure 2E. (B–C) Expression profiles of ARID5A, PTPN22 (B) and AIRD5B (C) from time course proteomic experiment (Figure 2A). Axes, scales and colours are as in Figure 2C.
 
 In total, we quantitated 9070 cellular proteins across 10 different conditions. As previously reported (Geiger et al., 2016), T cell activation itself caused extensive proteomic remodelling, with relative abundances of 2677/9070 (29%) proteins changing by > 2 fold in activated vs resting cells (Figure 2—figure supplement 2). All data from infected and uninfected cells have been made available via ProteomeXchange with identifier PXD012263, and are summarised in an interactive spreadsheet allowing generation of temporal profiles for any quantitated proteins of interest (Figure 2—source data 1). For example, the restriction factor tetherin (targeted by HIV-1 Vpu [Neil et al., 2008]) is upregulated by T cell activation, then progressively depleted in HIV-infected (red, SBP-ΔLNGFR positive) but not uninfected (blue, SBP-ΔLNGFR negative) cells (Figure 2C, left panel). Conversely, the restriction factor SAMHD1 (targeted by some HIV-2/SIV Vpx and Vpr variants, but not HIV-1 [Hrecka et al., 2011; Laguette et al., 2011; Lim et al., 2012]) is depleted by T cell activation, independent of HIV infection (Figure 2C, right panel). In these graphical representations, relative protein abundances for each condition are depicted by bars, and ratios of protein abundances in paired experimental/control cells from each condition/time point are depicted by lines (grey, resting/activated; red, SBP-ΔLNGFR positive, infected; blue, SBP-ΔLNGFR negative, uninfected).
 
@@ -50,9 +78,33 @@ Aside from tetherin, levels of many other reported Vpu (CD4, SNAT1) (Matheson et
 
 Together with cellular proteins, we identified gene products from seven viral open reading frames (ORFs; Figure 2—figure supplement 1C). As expected (Karn and Stoltzfus, 2012), viral regulatory and accessory proteins expressed from fully spliced, Rev-independent transcripts (Tat, Rev, Nef-P2A and SBP-ΔLNGFR) were expressed early in infection, peaking at 24 hr. Conversely, viral structural proteins expressed from unspliced, Rev-dependent transcripts (Gag and Gagpol) were expressed late in infection, increasing progressively from 24 to 48 hr. Viral accessory proteins expressed from partially spliced transcripts were either not detected (Vpr and Vpu) or incompletely quantitated (Vif).
 
-## Proteins and pathways regulated by HIV in primary T cells from multiple donors
+### Proteins and pathways regulated by HIV in primary T cells from multiple donors
 
 Inter-individual variability is known to affect gene expression during T cell activation (Ye et al., 2014). Accordingly, to identify reproducible HIV targets, we analysed primary human CD4+ T cells from three further donors. In each case, mock-infected cells were compared with HIV-infected cells selected using AFMACS 48 hr post-infection (Figure 3A–B and Figure 3—figure supplement 1A). Aside from APOBEC3 proteins, we recently discovered the PPP2R5A-E (B56) family of PP2A phosphatase regulatory subunits to be degraded by diverse Vif variants, spanning primate and ruminant lentiviruses (Greenwood et al., 2016). To formally document Vif-dependent changes in primary T cells, both wildtype (WT) and Vif-deficient (ΔVif) viruses were therefore included. Whilst some donor-dependent differences were apparent, most sample-sample variability was accounted for by HIV infection (Figure 3—figure supplement 1B), and all accessory protein substrates from Figure 2C–D and Figure 2—figure supplement 1B were significantly depleted by WT HIV (Figure 3C, left panel). In total, we quantitated 8789 cellular proteins across nine different conditions, of which 650 were significantly regulated by HIV infection (q < 0.05) and are summarised in an interactive filter table (Figure 3—source data 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig3-v1.jpg)
+
+**Figure 3.:** (A) Overview of single time point proteomic experiment. HIV-infected (LNGFR+) primary T cells were isolated using AFMACS 48 hr post-infection with WT (red) or ΔVif (blue) HIV-AFMACS. (B) AFMACS-based enrichment of WT (red circles) and ΔVif (blue triangles) HIV-infected (LNGFR+) cells used for (A), with means and 95% CIs. Corresponding cells pre-selection are included for each donor/virus (WT, grey circles; ΔVif, grey triangles). Cells were stained with anti-LNGFR and anti-CD4 antibodies and analysed by flow cytometry, with representative data in Figure 3—figure supplement 1A. (C) Protein abundances in WT HIV-infected vs mock-infected cells from (A). Volcano plots show statistical significance (y axis) vs fold change (x axis) for 8789 cellular and six viral proteins quantitated in cells from all three donors (no missing values). Proteins with Benjamini-Hochberg FDR-adjusted p values (q values) < 0.05 or > 0.05 are indicated (FDR threshold of 5%). Proteins highlighted in each plot are summarised in the key. Vpr/Vif/Nef/Vpu substrates (green circles) comprise proteins from Figure 2C–D and Figure 2—figure supplement 1B, excluding negative controls (SAMHD1, APOBEC3B, SERINC1, HLA-C) and HLA-A/B alleles (different in each donor) but including SMUG1 (not identified in time course proteomic experiment) (Schröfelbauer et al., 2005) and both quantitated isoforms of PP2R5C (Q13362 and Q13362-4) and ZGPAT (Q8N5A5 and Q8N5A5-2). Additional Vpr substrates (gold circles) and Vpr-dependent changes (gold crosses) comprise recently described direct and indirect Vpr targets (Greenwood et al., 2019). HIV-dependent changes only identified in primary T cells (red circles and crosses) comprise proteins with q < 0.05 either not identified or not concordantly regulated by HIV in CEM-T4s (Greenwood et al., 2016) (and exclude known accessory protein-dependent changes). Further details on comparator datasets used in this figure are provided in the Materials and methods. (D–E) Abundances of ARID5A and PTPN22 in mock-infected (grey), WT HIV-infected (red) and ΔVif HIV-infected (green) primary T cells from (A). Mean abundances (fraction of maximum) with 95% CIs are shown (D). As well as proteomic analysis, cells from donor A were lysed in 2% SDS and analysed by immunoblot with anti-ARID5A, anti-PTPN22, anti-Nef and anti-α-tubulin antibodies (E). Same lysates as Figure 5D.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) AFMACS-based enrichment of HIV-infected (red, LNGFR+, selected) cells used for single time point proteomic experiment (Figure 3A). Cells were stained with anti-LNGFR and anti-CD4 antibodies and analysed by flow cytometry. Mock-infected cells are shown in grey. Representative data is shown from donor B, with summary data in Figure 3B. (B) Principal component analysis of mock-infected (grey), WT (red) and ΔVif (blue) HIV-infected samples from single time point proteomic experiment (Figure 3A). The correlation matrix was analysed for 8795 cellular and viral proteins quantitated in cells from all three donors (no missing values). Visually-identical results were obtained with/without viral proteins.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Between-sample coefficients of variation (%) for all protein abundances from primary T cells (single time point proteomic experiment, Figure 3A) or CEM-T4s (Greenwood et al., 2016). Boxplots show median, interquartile range and Tukey whiskers for mock-infected (grey) and WT HIV-infected (red) cells. (B) Protein abundances in WT HIV-infected vs mock-infected cells from primary T cells (x axis; single time point proteomic experiment, Figure 3A) or CEM-T4s (y axis) (Greenwood et al., 2016). Fold changes are compared for proteins with q < 0.05 in both datasets. Further details on the CEM-T4 dataset used in this figure are provided in the Materials and methods.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Protein abundances in WT HIV-infected vs mock-infected cells from single time point proteomic experiment (Figure 3A), with details for volcano plots as in Figure 3C. Proteins highlighted in each plot are summarised in the key. Additional Nef/Vpu targets (green circles) comprise (alphabetical order, grouped by study): CCR7 (Ramirez et al., 2014), CD37/CD53/CD63/CD81/CD82 (Haller et al., 2014; Lambelé et al., 2015), CD99 (two quantitated gene products, H7C2F2 and P14209)/PLP2/UBE2L6 (Jain et al., 2018), ICAM1/3 (Sugden et al., 2017), NTB-A (Shah et al., 2010), PVR (Bolduan et al., 2014; Matusali et al., 2012), SELL (Vassena et al., 2013). RUNX1 target genes (blue circles) were previously reported to be regulated by Vif at a transcriptional level because of competition for CBFβ binding (Kim et al., 2013). ISGs (purple circles) were previously curated from published microarray data sets from IFN-treated cells (Schoggins et al., 2014; Schoggins et al., 2011). (B) Mechanisms underlying significant HIV-dependent proteins changes (q < 0.05) in single time point proteomic experiment (Figure 3A). Established accessory protein targets from Figure 3C (left panel, 22 proteins) and (A) (left panel, three proteins) and additional Vpr substrates and Vpr-dependent changes from Figure 3C (middle panel) are shown. Amongst the 32 additional Vpr substrates depleted in primary T cells, 26 had q < 0.05. Remaining proteins are categorised based on the identification plus/minus HIV-dependent regulation in a previous, similar experiment using CEM-T4s (Greenwood et al., 2019). Of 131 proteins not identified in the comparator CEM-T4 dataset, one is known Vpr target SMUG1 (Schröfelbauer et al., 2005) and four other proteins were found to be regulated by Vpr in other experiments using CEM-T4s (ZNF512B, ATXN7, CLUH and SLC39A3) (Greenwood et al., 2019). Further details on comparator datasets used in this figure are provided in the Materials and methods.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Overview of SBP-ΔLNGFR control proteomic experiment. Transduced (LNGFR+) primary T cells were isolated using AFMACS 48 hr post-transduction with pSBP-ΔLNGFR (red) or pTat/SBP-ΔLNGFR (blue) lentivectors. (B–C) AFMACS-based enrichment of LNGFR +cells transduced with pSBP-ΔLNGFR (red circles) or pTat/SBP-ΔLNGFR (blue triangles), with means and 95% CIs (B). Corresponding cells pre-selection are included for each donor/virus (pSBP-ΔLNGFR, grey circles; pTat/SBP-ΔLNGFR, grey triangles). Cells were stained with anti-LNGFR and anti-CD4 antibodies and analysed by flow cytometry. Representative data are shown (C) (red, LNGFR+, selected cells; grey, mock-infected cells). (D) Pair-wise comparisons of protein abundances in cells from (A). Volcano plots show statistical significance (y axis) vs fold change (x axis) for 8518 cellular and three viral proteins quantitated in cells from all three donors (no missing values). Proteins with Benjamini-Hochberg FDR-adjusted p values (q values) < 0.05 or > 0.05 for each comparison are indicated (FDR threshold of 5%). Viral proteins and MYB (also regulated by HIV) are highlighted. Detection of Gagpol reflects incoming lentiviral particles rather than de novo synthesis.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/41431/elife-41431-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Protein abundances in WT HIV-infected vs mock-infected cells from this study (x axis; single time point proteomic experiment, Figure 3A) or Kuo et al. (2018) (y axis). Fold changes are compared for proteins with q < 0.05 in both datasets. (B) Protein abundances in WT HIV-infected vs mock-infected cells from single time point proteomic experiment (Figure 3A), with details for volcano plot as in Figure 3C. Proteins with q < 0.05 not reported by Kuo et al. (2018) are highlighted in red.
 
 Compared with a previous, similar experiment using CEM-T4s (Greenwood et al., 2016), we observed greater variability in protein abundances between replicates (Figure 3—figure supplement 2A), but a high degree of correlation in HIV-dependent changes between cell types (Figure 3—figure supplement 2B). As well as ‘canonical’ accessory protein targets, we have recently discovered that most protein-level changes in HIV-infected CEM-T4s may be explained by primary and secondary effects of Vpr, including degradation of at least 34 additional substrates (Greenwood et al., 2019). These changes were recapitulated in primary T cells (Figure 3C, middle panel), with 33 newly described Vpr substrates quantitated, and 32 decreased in abundance. Several other cell surface proteins reported to be downregulated by Nef and/or Vpu were also depleted, but the magnitude of effect was typically modest, and many were unchanged (Figure 3—figure supplement 3A, left panel). Likewise, we did not see evidence of HIV/Vif-dependent transcriptional regulation of RUNX1 target gene products such as T-bet/TBX21 (Figure 3—figure supplement 3A, middle panel) (Kim et al., 2013). Nonetheless, taken together, known accessory protein-dependent changes, characterised in transformed T cell lines, are able to account for 297/650 (46%) of proteins regulated by HIV in primary T cells (Figure 3—figure supplement 3B), including 175/299 (59%) of proteins decreased in abundance.
 
@@ -62,7 +114,7 @@ As with individual proteins, pathways and processes downregulated by HIV infecti
 
 **Figure 4.:** (A–B) Gene Ontology (GO) functional annotation terms enriched amongst upregulated or downregulated proteins with q < 0.05 in WT HIV-infected vs mock-infected cells from single time point proteomic experiment (Figure 3A). In the Enrichment Map (Merico et al., 2010) network-based visualisation (A), each node represents a GO term, with node size indicating number of annotated proteins, edge thickness representing degree of overlap (red, enriched amongst upregulated proteins; blue, enriched amongst downregulated proteins) and similar GO terms placed close together. Degree of enrichment is mapped to node colour (left side, enriched amongst upregulated proteins; right side, enriched amongst downregulated proteins) as a gradient from white (no enrichment) to red (high enrichment). Highlighted nodes (arrow heads) represent GO terms enriched amongst both upregulated and downregulated proteins. In the bar charts (B), the 10 most enriched GO terms (ranked by p value) amongst upregulated (red) and downregulated (blue) proteins are shown, with an indicative Benjamini-Hochberg FDR threshold of 5% (dashed line). (C) Protein abundances in WT HIV-infected vs mock-infected cells from single time point proteomic experiment (Figure 3A), with details for volcano plot as in Figure 3C. 57 proteins annotated with the GO term ‘sterol biosynthetic process’ (GO:0016126) are highlighted in red. Amongst these, 15 proteins are regulated by Vpr in CEM-T4s (circles) (Greenwood et al., 2019).
 
-## Identification and characterisation of primary T cell-specific HIV targets
+### Identification and characterisation of primary T cell-specific HIV targets
 
 Despite the overall agreement with cell line data, 1252/8789 (14%) cellular proteins quantitated here were not identified in a previous, similar experiment using CEM-T4s (Greenwood et al., 2016). Furthermore, having excluded known accessory-protein dependent changes, 192/650 (30%) proteins regulated by HIV in primary T cells were either not detected, or not significantly/concordantly regulated, in CEM-T4s (Figure 3C, right panel and Figure 3—figure supplement 3B). These proteins may represent accessory protein substrates expressed in primary T cells but not T cell lines, or proteins regulated by alternative, cell type-specific mechanisms, such as the interferon response (Figure 3—figure supplement 3A, right panel) (Vermeire et al., 2016).
 
@@ -76,7 +128,7 @@ We previously showed that substrates of different HIV accessory proteins could b
 
 Based on their patterns of temporal regulation, ARID5A and PTPN22 are therefore very likely to represent novel Vpr substrates, specific for primary T cells (Figure 2—figure supplement 3B). Consistent with this, another member of the ARID5 subfamily of AT-rich interaction domain (ARID)-containing proteins, ARID5B, is a widely conserved target of Vpr variants from primate lentivuses (Greenwood et al., 2019), and shares a similar temporal profile (Figure 2—figure supplement 3C).
 
-## Comprehensive analysis of recognised and novel Vif targets in primary T cells
+### Comprehensive analysis of recognised and novel Vif targets in primary T cells
 
 As predicted, both APOBEC3 and PPP2R5 family proteins were depleted in primary CD4+ T cells infected with WT, but not ΔVif viruses (Figure 5A–B). Vif-dependent depletion of PPP2R5A-E causes a marked increase in protein phosphorylation in HIV-infected CEM-T4 T cells, particularly substrates of the aurora kinases (AURKA/B) (Greenwood et al., 2016). AURKB activity is enhanced by ‘activation loop’ auto-phosphorylation at threonine 232 (T232), antagonised by PP2A-B56 (Meppelink et al., 2015; Yasui et al., 2004). Accordingly, a marked increase in AURKB T232 phosphorylation is seen in CEM-T4s transduced with Vif as a single transgene (Figure 5C). We therefore confirmed depletion of PPP2R5D by immunoblot of AFMACS-selected primary T cells and, as a functional correlate, observed increased AURKB phosphorylation (Figure 5D).
 
@@ -106,19 +158,302 @@ Amongst the HIV accessory proteins, Vif was thought until recently to exclusivel
 
 ## Materials and methods
 
-## General cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line</td>
+      <td>CEM-T4</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>Cat. #: 117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal BV421-conjugated anti-CD4</td>
+      <td>BioLegend</td>
+      <td>Cat. #: 317434</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE-conjugated anti-CD4</td>
+      <td>BD Biosciences</td>
+      <td>Cat. #: 561843</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE-conjugated anti-tetherin</td>
+      <td>BioLegend</td>
+      <td>Cat. #: 348405</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal AF647-conjugated anti-LNGFR</td>
+      <td>BioLegend</td>
+      <td>Cat. #: 345114</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal FITC-conjugated anti-LNGFR</td>
+      <td>BioLegend</td>
+      <td>Cat. #: 345103</td>
+      <td>Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-PPP2R5D</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab188323</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HIV-1 Vif</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>Cat. #: 6459</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-p24</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab9071</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HIV-1 Nef</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>Cat. #: 3689</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-PTPN22 (D6D1H)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat. #: 14693</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ARID5A</td>
+      <td>GeneTex</td>
+      <td>Cat. #: GTX631940</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FMR1 (FMRP)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat. #: 4317</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DPH7</td>
+      <td>Atlas Antibodies</td>
+      <td>Cat. #: HPA022911</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-α-tubulin</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat. #: 3873</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-β-actin</td>
+      <td>Sigma</td>
+      <td>Cat. #: A5316</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-total AURKB</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat. #: 3094</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-AURK</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat. #: 2914</td>
+      <td>Immunoblot</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HIV-AFMACS</td>
+      <td>This paper</td>
+      <td>GenBank: MK435310</td>
+      <td>pNL4-3-ΔEnv-Nef-P2A-SBP-ΔLNGFR proviral construct (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCtrl</td>
+      <td>(Matheson et al., 2014)</td>
+      <td>Not applicable</td>
+      <td>pHRSIN-SE-P2A-SBP-ΔLNGFR-W expression vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVif</td>
+      <td>This paper</td>
+      <td>Not applicable</td>
+      <td>pHRSIN-SE-P2A-Vif-hu-W expression vector (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSBP-ΔLNGFR</td>
+      <td>This paper</td>
+      <td>Not applicable</td>
+      <td>pHRSIN-S-P2A-SBP-ΔLNGFR-W expression vector (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTat/SBP-ΔLNGFR</td>
+      <td>This paper</td>
+      <td>Not applicable</td>
+      <td>pLTR-Tat-P2A-SBP-ΔLNGFR expression vector (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Untouched Human CD4 T Cells kit</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 11346D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Human T-Activator CD3/CD28</td>
+      <td>Gibco</td>
+      <td>Cat. #: 11132D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Biotin Binder</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 11047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iST-NHS Sample Preparation Kit</td>
+      <td>PreOmics</td>
+      <td>Cat. #: P.O.00030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>S-Trap micro MS Sample Preparation Kit</td>
+      <td>Protifi</td>
+      <td>Cat. #: C02-micro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMT10plex Isobaric Label Reagent Set</td>
+      <td>Thermo Scientific</td>
+      <td>Cat. #: 90110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lympholyte-H</td>
+      <td>Cedarlane Laboratories</td>
+      <td>Cat. #: CL5020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IL-2</td>
+      <td>PeproTech</td>
+      <td>Cat. #: 200–02</td>
+      <td>Recombinant human IL-2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lenti-X Concentrator</td>
+      <td>Clontech</td>
+      <td>Cat. #: 631232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer 2.1</td>
+      <td>Thermo Scientific</td>
+      <td>RRID: SCR_014477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID 6.8</td>
+      <td>(Huang et al., 2009a;Huang et al., 2009b)</td>
+      <td>RRID: SCR_001881</td>
+      <td>https://david.ncifcrf.gov/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape 3.6.1</td>
+      <td>(Shannon et al., 2003)</td>
+      <td>RRID: SCR_003032</td>
+      <td>http://cytoscape.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Enrichment Map 3.1.0 Cystoscape plugin</td>
+      <td>(Merico et al., 2010)</td>
+      <td>RRID:SCR_016052</td>
+      <td>http://baderlab.org/Software/EnrichmentMap</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cluster 3.0</td>
+      <td>(de Hoon et al., 2004)</td>
+      <td>RRID:SCR_013505</td>
+      <td>http://bonsai.hgc.jp/~mdehoon/software/cluster/software.htm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Java TreeView 1.1.6r4</td>
+      <td>(Saldanha, 2004)</td>
+      <td>RRID:SCR_013503</td>
+      <td>http://jtreeview.sourceforge.net</td>
+    </tr>
+  </tbody>
+</table>
+
+### General cell culture
 
 CEM-T4 T cells (CEM-T4s) (Foley et al., 1965) were obtained directly (< 1 year) from the AIDS Reagent Program, Division of AIDS, NIAD, NIH: Dr J.P. Jacobs and cultured in RPMI supplemented with 10% FCS, 100units/ml penicillin and 0.1 mg/ml streptomycin at 37°C in 5% CO2. HEK-293T cells were obtained from Lehner laboratory stocks (authenticated by STR profiling [Menzies et al., 2018; Miles et al., 2017]) and cultured in DMEM supplemented with 10% FCS, 100units/ml penicillin and 0.1 mg/ml streptomycin at 37°C in 5% CO2. All cells were confirmed to be mycoplasma negative (Lonza MycoAlert).
 
-## Primary cell isolation and culture
+### Primary cell isolation and culture
 
 Primary human CD4+ T cells were isolated from peripheral blood by density gradient centrifugation over Lympholyte-H (Cedarlane Laboratories) and negative selection using the Dynabeads Untouched Human CD4 T Cells kit (Invitrogen) according to the manufacturer’s instructions. Purity was assessed by flow cytometry for CD3 and CD4 and routinely found to be ≥ 95%. Cells were activated using Dynabeads Human T-Activator CD3/CD28 beads (Gibco) according to the manufacturer’s instructions and cultured in RPMI supplemented with 10% FCS, 30 U/ml recombinant human IL-2 (PeproTech), 100units/ml penicillin and 0.1 mg/ml streptomycin at 37°C in 5% CO2.
 
-## Ethics statement
+### Ethics statement
 
 Ethical permission for this study was granted by the University of Cambridge Human Biology Research Ethics Committee (HBREC.2017.20). Written informed consent was obtained from all volunteers prior to providing blood samples.
 
-## HIV-1 molecular clones
+### HIV-1 molecular clones
 
 pNL4-3-ΔEnv-EGFP (Zhang et al., 2004) was obtained from the AIDS Reagent Program, Division of AIDS, NIAD, NIH: Drs Haili Zhang, Yan Zhou, and Robert Siliciano and the complete proviral sequence verified by Sanger sequencing (Source BioScience). Derived from the HIV-1 molecular clone pNL4-3, it encodes EGFP in the env ORF), resulting in a large, critical env deletion and expression of a truncated Env-EGFP fusion protein retained in the endoplasmic reticulum (ER) by a 3’ KDEL ER-retention signal.
 
@@ -140,7 +475,7 @@ To generate a Vif-deficient HIV-AFMACS molecular clone (pNL4-3-ΔVif-ΔEnv-Nef-P
 
 Where appropriate, additional unique restriction sites were included to facilitate future cloning. All sequences were verified by Sanger sequencing (Source BioScience). The complete HIV-AFMACS sequence is available in Supplementary file 1.
 
-## Lentivectors for transgene expression
+### Lentivectors for transgene expression
 
 pHRSIN-SE-P2A-SBP-ΔLNGFR-W (referred to as pCtrl in this paper, in which EGFP and SBP-ΔLNGFR expression are mediated by the spleen focus-forming virus (SFFV) promoter and coupled by a P2A peptide) has been previously described (Matheson et al., 2014).
 
@@ -150,7 +485,7 @@ For over-expression of HIV-1 Tat and SBP-ΔLNGFR from the HIV-1 LTR promoter, P2
 
 For over-expression of codon optimised NL4-3 Vif (Vif-hu), a gBlock (IDT) was incorporated into pCtrl in place of SBP-ΔLNGFR by Gibson assembly between KpnI/XhoI sites to generate pHRSIN-SE-P2A-Vif-hu-W (referred to as pVif in this paper, in which EGFP and Vif-hu expression are coupled by a P2A peptide).
 
-## Viral stocks
+### Viral stocks
 
 VSVg-pseudotyped NL4-3-ΔEnv-based viral stocks were generated by co-transfection of HEK-293 T cells with pNL4-3-ΔEnv molecular clones and pMD.G at a ratio of 9:1 (µg) DNA and a DNA:FuGENE 6 ratio of 1 µg:6 µl. Media was changed the next day and viral supernatants harvested and filtered (0.45 µm) at 48 hr prior to concentration with Lenti-X Concentrator (Clontech) and storage at −80°C.
 
@@ -158,33 +493,33 @@ VSVg-pseudotyped lentivector stocks were generated by co-transfection of 293Ts w
 
 All viruses and lentivectors were titered by infection/transduction of known numbers of relevant target cells with known volumes of viral stocks under standard experimental conditions, followed by flow cytometry for SBP-ΔLNGFR or EGFP plus/minus CD4 at 48 hr to identify the fraction of infected cells (f) containing at least one transcriptionally active provirus (SBP-ΔLNGFR or EGFP positive plus/minus CD4 low). The number of infectious/transducing units present was then calculated by assuming a Poisson distribution (where f = 1-e-MOI). Typically, a dilution series of each viral stock was tested, and titer determined by linear regression of -ln(1-f) on volume of virus.
 
-## T cell infections
+### T cell infections
 
 CEM-T4s were infected/transduced by spinoculation at 800 g for 2 hr in a non-refrigerated benchtop centrifuge in complete media supplemented with 10 mM HEPES. Primary human CD4+ T cells were infected/transduced using the same protocol 48 hr after activation with CD3/CD28 Dynabeads.
 
 Unlike CEM-T4s, permissivity of infected primary T cells varies between donors/experiments, and the maximum fraction of infected cells in viral dilution series is often around 50% for single round infections, even at high MOI. In practice, we therefore aimed to use sufficient infectious/transducing units to achieve approximately 30% infection, corresponding to a ‘nominal’ MOI ≤ 0.5 (assuming a Poisson distribution). This ensured that, even if only 50% of cells were permissive, the ‘effective’ MOI would still be ≤ 1.
 
-## Antibody-Free magnetic cell sorting (AFMACS)
+### Antibody-Free magnetic cell sorting (AFMACS)
 
 AFMACS-based selection of CEM-T4 or primary human CD4+ T cells using the streptavidin-binding SBP-ΔLNGFR affinity tag was carried out essentially as previously described (Matheson et al., 2014). For primary T cells, CD3/CD28 Dynabeads were first removed using a DynaMag-2 magnet (Invitrogen). 24 or 48 hr post-infection, washed cells were resuspended in incubation buffer (IB; Hank’s balanced salt solution, 2% dialysed FCS, 1x RPMI Amino Acids Solution (Sigma), 2 mM L-glutamine, 2 mM EDTA and 10 mM HEPES) at 10e7 cells/ml and incubated with Dynabeads Biotin Binder (Invitrogen) at a bead-to-total cell ratio of 4:1 for 30 min at 4°C. Bead-bound cells expressing SBP-ΔLNGFR were selected using a DynaMag-2 (Invitrogen), washed to remove uninfected cells, then released from the beads by incubation in complete RPMI with 2 mM biotin for 15 min at room temperature (RT). Enrichment was routinely assessed by flow cytometry pre- and post-selection.
 
-## Proteomic analysis
+### Proteomic analysis
 
-## Sample preparation
+#### Sample preparation
 
 For TMT-based whole cell proteomic analysis of primary human CD4+ T cells, resting or activated cells were washed with ice-cold PBS with Ca/Mg pH 7.4 (Sigma) and frozen at −80°C. Samples were lysed, reduced, alkylated, digested and labelled with TMT reagents (Thermo Scientific) using either iST-NHS (PreOmics GmbH; time course and single time point experiments) or S-Trap (Protifi; SBP-ΔLNGFR control experiment) sample preparation kits, according to the manufacturers’ instructions. Typically, 5e6 resting or 1e6 activated cells were used for each condition.
 
-## Off-line high pH reversed-phase (HpRP) peptide fractionation
+#### Off-line high pH reversed-phase (HpRP) peptide fractionation
 
 HpRP fractionation was conducted on an Ultimate 3000 UHPLC system (Thermo Scientific) equipped with a 2.1 mm ×15 cm, 1.7 µm Acquity BEH C18 column (Waters, UK). Solvent A was 3% ACN, solvent B was 100% ACN, and solvent C was 200 mM ammonium formate (pH 10). Throughout the analysis C was kept at a constant 10%. The flow rate was 400 µL/min and UV was monitored at 280 nm. Samples were loaded in 90% A for 10 min before a gradient elution of 0–10% B over 10 min (curve 3), 10–34% B over 21 min (curve 5), 34–50% B over 5 min (curve 5) followed by a 10 min wash with 90% B. 15 s (100 µL) fractions were collected throughout the run. Peptide-containing fractions were orthogonally recombined into 24 fractions (e.g. fractions 1, 25, 49, 73 and 97) and dried in a vacuum centrifuge. Fractions were stored at −80°C prior to analysis.
 
-## Mass spectrometry
+#### Mass spectrometry
 
 Data were acquired on an Orbitrap Fusion mass spectrometer (Thermo Scientific) coupled to an Ultimate 3000 RSLC nano UHPLC (Thermo Scientific). HpRP fractions were resuspended in 20 µl 5% DMSO 0.5% TFA and 10 uL injected. Fractions were loaded at 10 μl/min for 5 min on to an Acclaim PepMap C18 cartridge trap column (300 um ×5 mm, 5 um particle size) in 0.1% TFA. Solvent A was 0.1% FA and solvent B was ACN/0.1% FA. After loading, a linear gradient of 3–32% B over 3 hr was used for sample separation over a column of the same stationary phase (75 µm × 50 cm, 2 µm particle size) before washing at 90% B and re-equilibration.
 
 An SPS/MS3 acquisition was used for all samples and was run as follows. MS1: Quadrupole isolation, 120’000 resolution, 5e5 AGC target, 50 ms maximum injection time, ions injected for all parallelisable time. MS2: Quadrupole isolation at an isolation width of m/z 0.7, CID fragmentation (NCE 35) with the ion trap scanning out in rapid mode from m/z 120, 8e3 AGC target, 70 ms maximum injection time, ions accumulated for all parallelisable time. In synchronous precursor selection mode the top 10 MS2 ions were selected for HCD fragmentation (65NCE) and scanned out in the orbitrap at 50’000 resolution with an AGC target of 2e4 and a maximum accumulation time of 120 ms, ions were not accumulated for all parallelisable time. The entire MS/MS/MS cycle had a target time of 3 s. Dynamic exclusion was set to ±10 ppm for 90 s, MS2 fragmentation was trigged on precursor ions 5e3 counts and above.
 
-## Data processing and analysis
+#### Data processing and analysis
 
 Spectra were searched by Mascot within Proteome Discoverer 2.1 in two rounds. The first search was against the UniProt Human reference proteome (26/09/17), the HIV-AFMACS proteome and compendium of common contaminants (GPM). The second search took all unmatched spectra from the first search and searched against the human trEMBL database (Uniprot, 26/09/17). For time course and single time point experiments, the following search parameters were used. MS1 Tol: 10 ppm. MS2 Tol: 0.6 Da. Fixed Mods: Ist-alkylation (+113.084064 Da) (C) and TMT (N-term, K). Var Mods: Oxidation (M). Enzyme: Trypsin (/P). For the SBP-ΔLNGFR control experiment, Carbamidomethyl (C) modification was used in place of Ist-Alkylation. MS3 spectra were used for reporter ion-based quantitation with a most confident centroid tolerance of 20 ppm. Peptide spectrum match (PSM) false discovery rate (FDR) was calculated using Mascot percolator and was controlled at 0.01% for ‘high’ confidence PSMs and 0.05% for ‘medium’ confidence PSMs. Normalisation was automated and based on total s/n in each channel. Proteins/peptides satisfying at least a ‘medium’ FDR confidence were taken forth to statistical analysis in R. This consisted of a moderated T-test (Limma) with Benjamini-Hochberg correction for multiple hypotheses to provide a q value for each comparison (Schwämmle et al., 2013). Further data manipulation and general statistical analysis (including principal component analysis) was conducted using Excel, XLSTAT and GraphPad Prism 7.
 
@@ -194,11 +529,11 @@ For functional analysis of proteins significantly downregulated or upregulated b
 
 For clustering according to profiles of temporal expression, known accessory protein substrates from Figure 2C–D and Figure 2—figure supplement 1B and additional Vpr substrates shown in Figure 3C were analysed using Cluster 3.0 (downloaded from http://bonsai.hgc.jp/~mdehoon/software/cluster/software.htm) (de Hoon et al., 2004) and visualised using Java TreeView 1.1.6r4 (downloaded from http://jtreeview.sourceforge.net) (Saldanha, 2004). Only proteins significantly downregulated by WT HIV (q < 0.05) in the single time point proteomic experiment (Figure 3A) were included. Where more than one isoform was quantitated, only the canonical isoform was used (PPP2R5C, Q13362; ZGPAT, Q8N5A5; NUSAP1, Q9BXS6). Data from the time course proteomic experiment (Figure 2A) were expressed as log2(ratio)s of abundances in experimental (Expt):control (Ctrl) cells for each condition/time point, and range-scaled to highlight patterns of temporal expression relative to the biological response range (minimum-maximum) for each protein. Agglomerative hierarchical clustering was performed using uncentered Pearson correlation and centroid linkage (Eisen et al., 1998).
 
-## Comparison with CEM-T4 T cells
+#### Comparison with CEM-T4 T cells
 
 To compare results between primary and transformed T cells at a similar depth of proteomic coverage, we re-analysed TMT-labelled peptide eluates from a previous study (Greenwood et al., 2016) conducted in CEM-T4s spinoculated in triplicate with VSVg-pseudotyped NL4-3-ΔEnv-EGFP WT or ΔVif viruses at an MOI of 1.5. This extended analysis consisted of reinjection of HpRP fractions on longer (3 hr) gradients using a higher performance (75 as opposed to 50 cm) analytical column and the MS parameters employed in this study. In total, the new CEM-T4 dataset covered 8065 proteins, comparable with the datasets from primary T cells described here.
 
-## Comparisons with other published datasets
+#### Comparisons with other published datasets
 
 A previous study quantitated 7816 proteins at multiple time points following in vitro activation of naïve (CD45RA+ CCR7+) primary human CD4+ human T cells with plate-bound anti-CD23 and anti-CD28 antibodies (Geiger et al., 2016). For comparison with this study, a filtered list of 5907 proteins quantitated in at least two samples from both resting cells and cells activated for 48 hr was used.
 
@@ -210,14 +545,14 @@ Curated lists of ISGs have been previously described (Schoggins et al., 2014; Sc
 
 A recent study quantitated 7761 proteins in FACS-sorted T cells at a single time point 96 hr post-infection with an R5-tropic, GFP-expressing Nef-deficient virus (Kuo et al., 2018). The comparator is GFP negative rather than mock-infected cells (equivalent to SBP-ΔLNGFR negative cells in this study), and the full dataset is not available. For comparison with this study, the published list of 1551 differentially expressed proteins (q < 0.05) was therefore used.
 
-## Flow cytometry
+### Flow cytometry
 
 For primary T cells, CD3/CD28 Dynabeads were first removed using a DynaMag-2 magnet (Invitrogen). Typically 2e5 washed cells were incubated for 15 min in 100 µL PBS with the indicated fluorochrome-conjugated antibody. All steps were performed on ice or at 4°C and stained cells were fixed in PBS/1% paraformaldehyde.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed in PBS/2% SDS supplemented with Halt Protease Inhibitor Cocktail (Thermo Scientific) and Halt Phosphatase Inhibitor Cocktail (Thermo Scientific) for 10 min at RT. Benzonase (Sigma) was included to reduce lysate viscosity. Post-nuclear supernatants were heated in Laemelli Loading Buffer for 25 min at 50°C, separated by SDS-PAGE and transferred to Immobilon-P membrane (Millipore). Membranes were blocked in PBS/5% non-fat dried milk (Marvel)/0.2% Tween and probed with the indicated primary antibody overnight at 4°C. Reactive bands were visualised using HRP-conjugated secondary antibodies and SuperSignal West Pico or Dura chemiluminescent substrates (Thermo Scientific). Typically 10–20 μg total protein was loaded per lane (Pierce BCA Protein Assay kit).
 
-## Antibodies
+### Antibodies
 
 Antibodies for immunoblot and flow cytometry are detailed in the Key resources table. The following antibodies were obtained from the AIDS Reagent Program, Division of AIDS, NIAID, NIH: mouse monoclonal anti-HIV-1 Vif (Simon et al., 1995) from Dr MH Malim, and mouse monoclonal anti-HIV-1 Nef (Chang et al., 1998) from Dr JA Hoxie.

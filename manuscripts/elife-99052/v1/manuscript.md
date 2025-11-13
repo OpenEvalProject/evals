@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/008s83205 Department of Chemistry, University of Alabama at Birmingham Birmingham United States
+1. Department of Chemistry, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
 
 † Corresponding author
 
 ## Abstract
 
-Escherichia coli ClpB and Saccharomyces cerevisiae Hsp104 are AAA+ motor proteins essential for proteome maintenance and thermal tolerance. ClpB and Hsp104 have been proposed to extract a polypeptide from an aggregate and processively translocate the chain through the axial channel of its hexameric ring structure. However, the mechanism of translocation and if this reaction is processive remains disputed. We reported that Hsp104 and ClpB are non-processive on unfolded model substrates. Others have reported that ClpB is able to processively translocate a mechanically unfolded polypeptide chain at rates over 240 amino acids (aa) per second. Here, we report the development of a single turnover stopped-flow fluorescence strategy that reports on processive protein unfolding catalyzed by ClpB. We show that when translocation catalyzed by ClpB is challenged by stably folded protein structure, the motor enzymatically unfolds the substrate at a rate of ~0.9 aa s −1 with a kinetic step-size of ~60 amino acids at sub-saturating [ATP]. We reconcile the apparent controversy by defining enzyme catalyzed protein unfolding and translocation as two distinct reactions with different mechanisms of action. We propose a model where slow unfolding followed by fast translocation represents an important mechanistic feature that allows the motor to rapidly translocate up to the next folded region or rapidly dissociate if no additional fold is encountered.
+Escherichia coli ClpB and Saccharomyces cerevisiae Hsp104 are AAA+ motor proteins essential for proteome maintenance and thermal tolerance. ClpB and Hsp104 have been proposed to extract a polypeptide from an aggregate and processively translocate the chain through the axial channel of its hexameric ring structure. However, the mechanism of translocation and if this reaction is processive remains disputed. We reported that Hsp104 and ClpB are non-processive on unfolded model substrates. Others have reported that ClpB is able to processively translocate a mechanically unfolded polypeptide chain at rates over 240 amino acids (aa) per second. Here, we report the development of a single turnover stopped-flow fluorescence strategy that reports on processive protein unfolding catalyzed by ClpB. We show that when translocation catalyzed by ClpB is challenged by stably folded protein structure, the motor enzymatically unfolds the substrate at a rate of ~0.9 aa s−1 with a kinetic step-size of ~60 amino acids at sub-saturating [ATP]. We reconcile the apparent controversy by defining enzyme catalyzed protein unfolding and translocation as two distinct reactions with different mechanisms of action. We propose a model where slow unfolding followed by fast translocation represents an important mechanistic feature that allows the motor to rapidly translocate up to the next folded region or rapidly dissociate if no additional fold is encountered.
 
 ## Introduction
 
@@ -34,11 +34,21 @@ To examine enzyme catalyzed protein unfolding, Wickner and co-workers constructe
 
 Our previous examinations of ClpB and Hsp104 were carried out on unstructured polypeptide chains, so we interpret those results to reflect translocation and not protein unfolding (Li et al., 2015b; Durie et al., 2019). Here, we sought to develop a single turnover transient state kinetics approach to test for processive unfolding catalyzed by ClpB. Inspired by the RepA(1-70)-GFP constructs made by Wickner and co-workers (Doyle et al., 2007b; Hoskins et al., 2000) and the Titin I27 substrates used extensively by the Baker and Sauer groups (Kenniston et al., 2003) we constructed RepA-TitinX, where X = 1, 2, or 3, see Figure 1A. In these constructs the first 70 amino acids of the RepA protein provide the binding site and are followed by one, two, or three repeats of the Titin I27 domain. Each protein ends with a C-terminal cysteine used for fluorescent labeling by maleimide chemistry.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig1-v1.jpg)
+
+**Figure 1.:** (A) RepA(1-70)-Titin1 (Blue), RepA(1-70)-Titin2 (purple), and RepA(1-70)-Titin3 (green). Each construct from N- to C-terminus consists of the first 70 amino acids of the Phage P1 RepA protein, a known binding sequence for ClpB followed by tandem repeats of the Titin I27 domain separated by linkers. Each construct contains a single cysteine shown in space-filling at the C-terminus that has been reacted with Alex Fluor (AF)–555. (B) Schematic of steps in forming pre-bound complex based on our previous work (Lin and Lucius, 2015; Lin and Lucius, 2016; Weaver et al., 2017; Li et al., 2015a). ClpB (black) is assembled into hexameric rings competent for substrate binding by adding ATPγS, illustrated as bound to the RepA-Titin1 substrate in blue, followed by rapid mixing with ATP. As shown, ClpB is expected to unfold the Titin I27 domains and translocate the newly unfolded substrates through the axial channel of the hexameric ring. (C) Schematic representation of stopped-flow. Syringe 1 contains the indicated concentrations of ClpB monomer, ATPγS, and RepA-TitinX, where X = 1, 2, 3. Syringe 2 contains 400 μM ATP and 20 μM α-casein to serve as a trap for any free ClpB. The contents of the two syringes are rapidly mixed at a 1:1 mixing ratio and flow into the observation channel where AF555 is excited at λex = 555 nm and emission is observed at λem > 570 nm. (D) Representative time-course collected using strategy in (C) using RepA-Titin3 after pre-incubating the sample at 25°C for 600 s. (E) Successive experimental time-courses collected as in D. The total time of incubation before collection of the time-course is indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 2 μM ClpB in the presence of 1 mM ATPγS was incubated with 0.5 μM polypeptide labeled with AF555. The emission spectra by exciting AF555 at 520 nm were collected every 10 min. The blue trace represents emission spectra collected with no ClpB. The purple trace represents emission spectra collected immediately after mixing ClpB with ATPγS and polypeptide. 10 min (green), 20 min (red), 30 min (brown), and 40 min (gray) represent the incubation times of ClpB with ATPγS and polypeptide. (B) Relative fluorescence enhancement was calculated at 568 nm by using Equation 4 and is plotted as a function of incubation times of ClpB with ATPγS and polypeptide. With the increase in incubation times, we observe fluorescence enhancement upon binding of ClpB with polypeptide substrate.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig1-figsupp2-v1.jpg)
+
 Using the RepA-TitinX constructs, we report evidence of sequential and processive unfolding of the tandem repeats of the stably folded Titin I27 domains. Surprisingly, we have also found that ATPγS alone will support processive protein unfolding and translocation of these constructs. Because of this we developed a sequential mixing stopped-flow strategy to separate and quantify the rates of ATPγS- and ATP:ATPγS-driven protein unfolding. Here, we report rates of protein unfolding in the range of 1–4 amino acids (aa) s−1 with a kinetic step-size of ~60 aa unfolded between two rate-limiting steps. These rates of protein unfolding are approximately two orders of magnitude slower than the reported translocation rates on unfolded polypeptide chains reported by others (Avellaneda et al., 2020; Mazal et al., 2021). Thus, we propose that protein unfolding catalyzed by ClpB is rate-limiting and, upon unfolding, translocation on the newly unfolded polypeptides is much faster than protein unfolding. Our method reveals mechanistic insights into ClpB catalyzed protein unfolding that have been inaccessible by other techniques. Importantly, our technology overcomes the barrier of needing covalent modification to detect enzyme catalyzed protein unfolding and translocation by the protein disaggregating machines. The approach can be broadly applied to the many AAA+ motors that have been hypothesized to catalyze protein unfolding and translocation but do not covalently modify the substrate on which they operate.
 
 ## Results
 
-## Development of single turnover protein unfolding method
+### Development of single turnover protein unfolding method
 
 To test for protein unfolding catalyzed by wild type (wt) ClpB, we engineered constructs containing the N-terminal 70 amino acids of the RepA protein Doyle et al., 2007b; Durie et al., 2018 followed by tandem repeats of the Titin I27 domain. Each construct contains a single cysteine residue at the C-terminus labeled with Alexa Fluor (AF) 555-maleimide, see Figure 1A. The rationale for these constructs is that we can preassemble ClpB into the biologically active hexamers in the presence of ATPγS (Lin and Lucius, 2015; Lin and Lucius, 2016; Weaver et al., 2017) and bind the hexamer to the N-terminal RepA sequence (Li et al., 2015a), see Figure 1B for schematic of assembly and binding steps.
 
@@ -56,19 +66,39 @@ We hypothesized that the variability observed in Figure 1E and Figure 1—figure
 
 To test for ATPγS-driven unfolding and translocation, we loaded ClpB pre-bound to RepA-Titin1 in the presence of 300 μM ATPγS into Syringe 1 of the stopped-flow. In Syringe 2, we loaded 2 mM ATPγS and 20 μM α-casein trap with no hydrolysable ATP, see Figure 2A. The rationale for this design is that, even though we anticipate pre-translocation due to the presence of 300 μM ATPγS, we expect translocation to be accelerated upon mixing and increasing the total concentration of ATPγS.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig2-v1.jpg)
+
+**Figure 2.:** (A) Mixing strategy as in Figure 1C but with ATP replaced with 2 mM ATPγS in Syringe 2. (B) Time-courses collected using RepA-Titin1 (blue), RepA-Titin2 (purple), and RepA-Titin3 (green) plotted as relative fluorescence enhancement vs. time. The solid black line represents the best-fit line from fitting to Scheme 1, Figure 4A. The fitting parameters obtained are the unfolding rate constant, kU = (0.0042 ± 0.0003) s–1, and the kinetic step-size, m = (26 ± 5) aa. (C) Length of substrate vs. peak time determined from B. The plot was fit to a linear equation to yield a slope = (0.098 ± 0.003) aa s–1 and intercept of (71 ± 7) aa.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 1.5 μM ClpB (Syringe 1) is mixed with 2.3 μM ATPγS (Syringe 2) and 100 nM RepA-TitinX (Syringe 2), where X = 1, 2, 3, using standard mix on stopped-flow apparatus. Under these conditions, upon mixing, ClpB binds ATPγS, assembles into hexamers competent for binding RepA-Titin1 and proceeds to unfolding. In this setup, the fluorescence change is monitored over time. (B) The scatter plot shows the experimental time-courses with the maximum fluorescence normalized to one obtained using three different RepA-TitinX substrates. The experimental time-courses are an average of at least three or more successive time-courses and the standard deviation of these averaged time-courses are shown as error bars on the data points.
+
 In the absence of hydrolysable ATP but in the presence of only ATPγS, the time-courses exhibit a distinct lag, followed by a fluorescence enhancement, and a slow loss in signal, see Figure 2B. Consistent with translocation from the N-terminal RepA sequence to the C-terminal fluorophore both the lag time and the time of appearance of the peak is observed to increase for each addition of another Titin I27 domain, see Figure 2B. This indicates that ClpB proceeds through an increasing number of rate-limiting steps for each increase in substrate length.
 
 If the observed peak in the time-courses for each RepA-TitinX substrate, in Figure 2B, represent arrival of ClpB at the C-terminal fluorophore then plotting the total length of the substrate vs. emergence of the peak, termed ‘peak time’, should represent a classical kinematics position vs. time plot. Figure 2C shows the length of the substrate vs. the peak time from the time-courses in Figure 2B. As expected, substrate length vs. peak time exhibits a linear increase with a slope of (0.098 ± 0.003) aa s−1 and an intercept of (71 ± 7) aa. From these observations, we hypothesize that the slope represents the rate of unfolding and translocation in the presence of a final mixing concentration of 1.15 mM ATPγS and no ATP. We propose that the intercept represents the number of amino acids pre-unfolded and pre-translocated in the presence of 300 μM ATPγS during the 10-min pre-incubation time.
 
 To further test ATPγS-driven translocation, we performed a series of experiments where only ClpB was loaded into Syringe 1 and, in Syringe 2 was loaded ATPγS and RepA-TitinX, see Figure 2—figure supplement 1A for mixing schematic. In this setup, before PIFE can be observed, ClpB must bind ATPγS, assemble into hexamers, bind to the RepA sequence, and initiate protein unfolding and translocation. Importantly, these experiments may not be single turnover because the ClpB is not pre-bound to the substrate and there is no trap for free ClpB, that is no α-casein. Nevertheless, the time-courses do exhibit a lag phase that increases with increasing substrate length, followed by PIFE, and an apparent plateau, see Figure 2—figure supplement 1B. As expected, when assembly and binding must occur before protein unfolding and translocation can ensue the time-courses exhibit a longer lag and undetectable dissociation after arrival at the fluorophore, compare time-courses in Figure 2—figure supplement 1B to Figure 2B. In sum, all experiments in the presence of only ATPγS as an energy source reveal that ClpB processively unfolds tandem repeats of Titin I27.
 
-## Development of sequential mixing strategy to control and quantify ATPγS-driven protein unfolding and translocation
+### Development of sequential mixing strategy to control and quantify ATPγS-driven protein unfolding and translocation
 
 ClpB is pre-bound to the polypeptide chain to remove the kinetics of ClpB assembly and binding to the protein substrate. This is important as we are seeking to acquire time-courses that are rate-limited only by the kinetics of protein unfolding and/or translocation but not the kinetics of hexamer formation or substrate binding.
 
 Previously, we reported that only ATPγS would support ClpB binding to the polypeptide and the non-hydrolysable nucleoside triphosphate analogs, AMPPNP and AMPPCP could not substitute for ATPγS (Weaver et al., 2017). Consequently, we cannot eliminate the ATPγS pre-unfolding/pre-translocation if we seek to have a pre-bound complex. Thus, we devised a sequential mixing strategy to account for and control the pre-unfolding and translocation that occurs in the presence of ATPγS.
 
 Sequential mixing stopped-flow allows for two mixing events, illustrated in Figure 3A. In this design we load 8 μM ClpB monomer into Syringe 1 and, in Syringe 2, we load 2 mM ATPγS and 200 nM RepA-TitinX, see Figure 3A for mixing schematic. The contents of Syringes 1 and 2 are rapidly mixed and allowed to age, without observation, for a user-defined amount of time, Δt1. In this experiment, the Δt1 is the amount of time where ClpB will bind ATPγS, assemble into hexamers, bind to RepA-TitinX and initiate some pre-unfolding and pre-translocation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of sequential mixing. Syringe 1 contains 8 μM ClpB monomer, Syringe 2 contains 2 mM ATPγS and 200 nM RepA-TitinX, and Syringe 3 contains 40 μM α-casein and 1 mM ATP. The contents of Syringes 1 and 2 are mixed 1:1 in mixing chamber 1 leading to a concentration of 4 μM ClpB, 1 mM ATPγS, and 100 nM RepA-TitinX. The sample ages for a user-defined amount of time, Δt1, followed by rapid mixing with the contents of Syringe 3. The sample flows into the observation channel at a final concentration of 2 μM ClpB, 50 nM RepA-TitinX, 500 μM ATPγS, 500 μM ATP, and 20 μM α-casein. In the observation channel AF555 is excited at λex = 555 nm and emission is observed at λem > 570 nm. (B) Representative time-courses from the average of five or more sequentially collected time-courses for RepA-Titin1(blue), RepA-Titin2(purple), and RepA-Titin3(green) at Δt1 = 600 s. The black solid lines represent the best-fit line from fitting to Scheme 1 (see Figure 4A). The fitting parameters obtained are kU = (0.017 ± 0.002) s−1 and m = (56.5 ± 0.7) aa. (C) Total length of substrate as a function of peak time determined for Δt1 = 300, 420, and 600 s. Solid lines represent weighted linear fits yielding (D) slope vs. Δt1 and (E) the intercept vs. Δt1. All data points and error bars represent the average and standard deviation determined from three replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Successive time-courses for RepA-Titin1 were collected using the schematic in Figure 3A. Shots 1–4 indicate time-courses collected in succession.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (II) After ATPγS-driven translocation has occurred, the unavailable length is the pre-translocated distance and excluded length. (III) On ATP-driven translocation, ClpB completely unfolds and translocates on RepA-Titin1.
 
 After Δt1 elapses the sample is rapidly mixed with the contents of the third syringe containing 40 μM α-casein and 1 mM ATP, see Figure 3A. After the second mixing event the sample flows into the observation chamber and fluorescence as a function of time, Δt2, is monitored. The final concentrations after the two mixing events are 2 μM ClpB monomer, 50 nM RepA-TitinX, 500 μM ATPγS, and 500 μM ATP. The final ratio of ATP to ATPγS was chosen because it has been shown that ClpB exhibits its highest protein disaggregation activity and protein unfolding activity in the presence of a 1:1 mix of ATP:ATPγS. Moreover, the 1:1 mix activates ClpB in the absence of the co-chaperones, KJE (Doyle et al., 2007b).
 
@@ -82,9 +112,58 @@ Figure 3D indicates that the rate is independent of Δt1 within the time range t
 
 The intercept values from the fits in Figure 3C increase linearly with increasing Δt1, see Figure 3E. We hypothesize that the intercept represents the number of amino acids pre-unfolded and pre-translocated in the presence of 1 mM ATPγS during Δt1, which we term pre-translocated distance. The slope of the pre-translocated distance vs. Δt1 yields a value of (0.09 ± 0.06) aa s−1, consistent with the rate of translocation determined in the presence of 1.15 mM ATPγS and no ATP, see Figure 2. Interestingly, the weighted linear fit in Figure 3E yields an intercept of (48 ± 17) amino acids when extrapolating to Δt1 = 0, see Table 1. We interpret this number to represent the average number of amino acids that are not involved in unfolding and translocation, which we will term the excluded length. The excluded length may represent the number of amino acids that are in contact with the motor but not part of the lattice to be translocated, the number of amino acids dangling outside of the hexameric ring relative to the direction of translocation, or some combination of the two, see Figure 3—figure supplement 2 for schematic representation of these various distances.
 
-## Global fitting of length-dependent time-courses
+**Table 1.**
+ Parameters obtained from model-independent analysis on experiments presented in Figure 3 and Figure 4—figure supplement 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters from model-independent analysis</th>
+      <th>500 μM [ATPγS] and 500 μM [ATP]</th>
+      <th>150 μM [ATPγS] and 500 μM [ATP]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rate of translocation with ATPγS and ATP(aa s−1)</td>
+      <td>0.9 ± 0.1</td>
+      <td>4.3 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Excluded length (aa)</td>
+      <td>48 ± 17</td>
+      <td>67 ± 23</td>
+    </tr>
+    <tr>
+      <td>Rate of translocation with ATPγS (aa s−1)</td>
+      <td>0.09 ± 0.06</td>
+      <td>0.05 ± 0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+_Error represent the standard deviation determined from three replicates._
+
+### Global fitting of length-dependent time-courses
 
 Scheme 1, in Figure 4A, represents an n-step sequential mechanism that we propose to describe the experimental time-courses collected at each value of Δt1, see Figure 3B for Δt1 = 600 s. Scheme 1 (see Figure 4A) shows ClpB pre-bound to a RepA-TitinX of substrate length, L. Upon mixing with ATP the motor proceeds through n number of unfolding steps with rate constant kU. Each intermediate is denoted as I(L-im), where L represents the total number of amino acids in the substrate, i is the number of steps taken to arrive at a given intermediate, I, and m represents the average number of amino acids unfolded between two rate-limiting steps, that is the kinetic step-size. The rate constant, kend, represents dissociation from the C-terminal end of the unfolded polypeptide chain denoted as (RepA-Titinunfolded)L.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig4-v1.jpg)
+
+**Figure 4.:** (A) Proposed kinetic scheme for ClpB catalyzed protein unfolding and translocation on RepA-TitinX substrates. Parameters (B) kU, (C) m, and (D) mkU obtained from fitting to Scheme 1 at each Δt1 are shown in solid black circles. The black solid line represents the best weighted fit line to a linear equation with zero slope to yield the average value of the unfolding rate constant, kU = (0.017 ± 0.002) s−1, kinetic step-size, m = (56.5 ± 0.7) aa, and overall rate, mkU = (0.89 ± 0.09) aa s−1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The number of steps, n (shown in circles) is plotted as a function of (A) number of steps vs. total length of substrate. Solid line yields a slope = (0.016 ± 0.002) aa−1 and intercept = (−1.4 ± 0.4) steps. (B) Reduced length of substrate calculated by subtracting C = 118 aa from the length. Solid line yields a slope = (0.016 ± 0.002) aa−1 and zero intercept.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Sequential mixing stopped-flow experiments were carried out as described in Figure 3A with the exception that Syringe 2 contains 600 μM ATPγS. Thus, after both mixing events, the final concentrations are 2 μM ClpB, 50 nM RepA-TitinX, 150 μM ATPγS, 500 μM ATP, and 20 μM α-casein. (A) Representative time-courses from the average of five or more sequentially collected time-courses for RepA-Titin1(blue), RepA-Titin2(purple), and RepA-Titin3(green) at Δt1 = 600 s. The black solid lines represent the best-fit line from fitting to Scheme 1. The fitting parameters obtained are kU = (0.055 ± 0.005) s−1 and m = (58.4 ± 3.8) aa. (B) Total length of substrate as a function of peak time determined for Δt1 = 300, 420, and 600 s as described in Materials and methods. Solid lines represent weighted linear fits yielding (C) slope vs. Δt1 with solid line representing the weighted average of (4.3 ± 0.2) aa s−1 and (D) the intercept vs. Δt1 fit to a linear equation with a slope = (0.05 ± 0.05) aa s−1 and intercept of (67 ± 23) aa. All data points and error bars represent the average and standard deviation determined from three replicates.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) kU, (B) m, and (C) mkU obtained from fitting to Scheme 1 at each Δt1 are shown in solid black circles. The black solid line represents the weighted average value of kU = (0.055 ± 0.005) s−1, m = (58.4 ± 3.8) aa, and mkU = (3.1 ± 0.2) aa s−1. All data points and error bars represent the average and standard deviation determined from three replicates.
 
 The observed total number of steps, n, is hypothesized to be proportional to the substrate length divided by the kinetic step-size as n = L/m. To test this, the three time-courses were simultaneously fit using Scheme 1 (see Figure 4A and Equation 5) with kU constrained to be the same for all three time-courses, that is global, and the number of steps, n, and kend local to each time-course. In this analysis, we ascribe signal change to the last intermediate, I(L-nm), and the unfolded product, (RepA-Titinunfolded), see Materials and methods.
 
@@ -98,13 +177,56 @@ The rate constant describing dissociation, kend, was local to each time-course b
 
 The solid lines in Figure 3B represent the best-fit lines and indicate excellent agreement between the model and the experimental time-courses. From the global fit of each of three replicates for three Δt1 values we found the unfolding rate constant, kU, the kinetic step-size, m, and the overall rate, mkU to all be independent of Δt1, see Figure 4B–D. As a function of Δt1 we determined an average kinetic step-size of m = (56.5 ± 0.7) aa step−1 indicating that ~57 amino acids are unfolded between two rate-limiting steps with unfolding rate constant, kU = (0.017 ± 0.002) s−1, see Table 2. The product of m and kU yields the overall rate of mkU = (0.89 ± 0.09) aa s−1, which is in excellent agreement with (0.9 ± 0.1) aa s−1 determined from the peak time analysis in Figure 3D.
 
-## Impact of the ATP:ATPγS ratio on processive unfolding and translocation
+**Table 2.**
+ Parameters obtained from global fitting the time-courses obtained from experiments in Figure 3 and Figure 4—figure supplement 2 to Scheme 1 in Figure 4A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters from model-dependent analysis</th>
+      <th>500 μM [ATPγS] and 500 μM [ATP]</th>
+      <th>150 μM [ATPγS] and 500 μM [ATP]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>m (aa)</td>
+      <td>56.5 ± 0.7</td>
+      <td>58 ± 4</td>
+    </tr>
+    <tr>
+      <td>kU (s–1)</td>
+      <td>0.017 ± 0.002</td>
+      <td>0.055 ± 0.005</td>
+    </tr>
+    <tr>
+      <td>mkU (aa s−1)</td>
+      <td>0.89 ± 0.09</td>
+      <td>3.1 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Error represent the standard deviation determined from three replicates._
+
+### Impact of the ATP:ATPγS ratio on processive unfolding and translocation
 
 To test the impact of different ATP:ATPγS mixing ratios, experiments were carried out as schematized in Figure 3A but with a lower concentration of ATPγS. As in Figure 3A, 8 μM ClpB was loaded into Syringe 1 but 600 μM ATPγS and 200 nM RepA-TitinX substrate were loaded into Syringe 2. Syringe 3, again, contains 1 mM ATP and 40 μM α-casein. Thus, after the two mixing events, the final concentration of ATP and ATPγS were 500 and 150 μM, respectively, yielding an approximately 3:1 ATP:ATPγS mixing ratio.
 
 Figure 4—figure supplement 2A shows a series of representative time-courses for all three RepA-TitinX substrates at fixed Δt1 = 600 s. The relative fluorescence enhancement value is approximately two-fold lower and the time-courses exhibit larger fluctuations in the signal compared to time-courses collected at 1:1 ATP:ATPγS, compare Figure 4—figure supplement 2A to Figure 3B.
 
-The amplitude of a single turnover experiment is directly proportional to the amount of bound enzyme or the extent of binding, X¯, given by Equation 1 (Lucius et al., 2003), where [ClpB6−RepA−TitinX] represents hexameric ClpB bound to the RepA-TitinX substrate and [RepA−TitinX]Total represents the total amount of RepA-TitinX present in the experiment. In this single turnover experiment, the peak height is expected to be proportional to the amount of ClpB that arrived at the fluorophore after mixing with ATP. However, the amount of ClpB that made it to the fluorophore is defined by the processivity, P, given by Equation 2, raised to the power of the number of steps taken, n, where kU is as defined in Scheme 1 (see Figure 4A) and kd is the rate constant for dissociation at each intermediate (Lucius et al., 2003). Thus, the peak height is proportional to the amount of ClpB initially bound, X-, times the processivity, Pn, times a fluorescence output factor or FX-Pn, see Equations 1 and 2(1)X¯=[ClpB6−RepA−TitinX][RepA−TitinX]Total(2)P=kUkU+kd
+The amplitude of a single turnover experiment is directly proportional to the amount of bound enzyme or the extent of binding, $X¯$, given by Equation 1 (Lucius et al., 2003), where $[ClpB_{6}−RepA−Titin_{X}]$ represents hexameric ClpB bound to the RepA-TitinX substrate and $[RepA−Titin_{X}]_{Total}$ represents the total amount of RepA-TitinX present in the experiment. In this single turnover experiment, the peak height is expected to be proportional to the amount of ClpB that arrived at the fluorophore after mixing with ATP. However, the amount of ClpB that made it to the fluorophore is defined by the processivity, P, given by Equation 2, raised to the power of the number of steps taken, n, where kU is as defined in Scheme 1 (see Figure 4A) and kd is the rate constant for dissociation at each intermediate (Lucius et al., 2003). Thus, the peak height is proportional to the amount of ClpB initially bound, $X-$, times the processivity, Pn, times a fluorescence output factor or $FX-P^{n}$, see Equations 1 and 2
+
+$$
+X¯=\frac{[ClpB_{6}−RepA−Titin_{X}]}{[RepA−Titin_{X}]_{Total}}
+$$
+
+
+
+$$
+P=\frac{k_{U}}{k_{U}+k_{d}}
+$$
 
 The observed reduction in peak height upon reducing the [ATPγS] is consistent with less ClpB bound, lower processivity, or both as the impact on fluorescence due to PIFE is expected to be the same for both [ATPγS]. Less ClpB bound is expected as we have shown that the fraction of hexameric ClpB present in solution is a function of both ATPγS concentration and ClpB concentration (Lin and Lucius, 2015; Lin and Lucius, 2016). Thus, less hexamer is present and able to bind the substrate at 150 μM ATPγS compared to 500 µM ATPγS. However, reduced processivity at lower ATPγS may also be contributing to the lower amplitude.
 
@@ -120,7 +242,7 @@ The time-courses in Figure 4—figure supplement 2A were also subjected to globa
 
 Substantial evidence exists indicating that ClpA processively unfolds and translocates a polypeptide through its axial channel, out the other side of its hexameric ring structures, and into the proteolytic barrel of ClpP (Weber-Ban et al., 1999; Reid et al., 2001). Thus, by homology, it has been hypothesized that ClpB and Hsp104 must employ the same mechanisms as ClpA. However, this has been difficult to test, in part, because of the lack of covalent modification coupled to ClpB/Hsp104 catalyzed processing of protein substrates. This means that when ClpB/Hsp104 processes a protein substrate, they do not hand it off to an associated protease. Consequently, the substrate both enters and leaves the reaction without covalent modification.
 
-## Evidence of processive protein unfolding and translocation catalyzed by ClpB
+### Evidence of processive protein unfolding and translocation catalyzed by ClpB
 
 In acknowledgment of the difficulty in detecting unfolding and translocation without covalent modification, Weibezahn et al. embarked on a clever protein engineering strategy to test for threading through the axial channel of ClpB (Weibezahn et al., 2004). In their strategy, they constructed a variant of ClpB that included the IGL loop from ClpA. The IGL loop is responsible for the interaction between ClpA and ClpP. The rationale being that if ClpB was ‘forced’ to interact with the protease, ClpP, and if proteolytic fragments were detected then this must indicate that ClpB threads substrate through the axial channel and into ClpP for proteolysis in the same way as ClpA.
 
@@ -130,7 +252,7 @@ Cleavage in the absence of ATP calls into question what is being detected with t
 
 Wickner and co-workers have shown that both ClpB and Hsp104 can induce a loss of GFP fluorescence when GFP contains the first 70 amino acids of the RepA protein at the N-terminus as a binding site (Doyle et al., 2007b). With those results in mind, we attempted to develop the stopped-flow approach reported here using RepA-GFP. However, we observed loss of fluorescence upon simply mixing ClpB/Hsp104 with RepA-GFP and ATPγS (data not shown). Under the impression that ATPγS would only support assembly and binding but not ClpB catalyzed protein unfolding, we interpreted those observations to indicate that, in the presence of only ATPγS, ClpB bound to the junction between unfolded RepA and GFP and melted sufficient secondary structure to result in cooperative unfolding of GFP and subsequent loss of fluorescence. After all, protein unfolding is often cooperative, thus the motor may only need to destabilize some of the folded region of GFP to induce complete unfolding (Nagy, 2004). This led to questions about how we would determine the extent to which the structured region must be unfolded before GFP fluorescence is extinguished in a single turnover experiment. Thus, the RepA-GFP construct was abandoned.
 
-## Development of transient state kinetics approach to examine the elementary steps in enzyme catalyzed protein unfolding and translocation
+### Development of transient state kinetics approach to examine the elementary steps in enzyme catalyzed protein unfolding and translocation
 
 Our objective has been to develop a single turnover stopped-flow method that would report on the elementary kinetic steps in a single-round of enzyme catalyzed protein unfolding and translocation. We have been seeking to quantify the elementary rate constants, kinetic step-sizes, and processivity for the protein disaggregating machines, ClpB and Hsp104. To this end, we previously applied the single turnover stopped-flow approach that used unfolded polypeptides ranging in length between 30 and 50 amino acids as well as truncations of the unstructured protein α-casein of lengths up to 127 amino acids. Based on the observations of Doyle et al., 2007b we used a mix of ATP and ATPγS to activate the motor as we have done here (Li et al., 2015b; Durie et al., 2019; Durie et al., 2018).
 
@@ -144,7 +266,7 @@ The rate-limiting protein unfolding of the Titin I27 domains followed by rapid t
 
 Importantly, using single turnover stopped-flow experiments we showed that ClpAP and ClpA exhibited different translocation mechanisms including overall rate, rate constants, and kinetics step-sizes on unfolded polypeptide chains. We interpreted those differences to indicate that ClpP allosterically impacts the translocation mechanism employed by ClpA (Miller et al., 2013; Rajendar and Lucius, 2010). Thus, ClpA and ClpAP should be considered different enzymes. Consequently, it is not surprising that ClpA and ClpB would exhibit marked differences in their mechanisms of protein unfolding and translocation.
 
-## Interpretation of the kinetic step-size
+### Interpretation of the kinetic step-size
 
 From the model independent peak time analysis, we determined an overall rate of protein unfolding. However, the rate of protein unfolding is a convolution of the number of amino acids unfolded per step and the rate constant defining that step. From global analysis, we can deconvolute the rate constant and step-size from the overall rate thereby extracting additional information about the elementary mechanism.
 
@@ -156,17 +278,21 @@ Here, we conclude that it is unlikely that ClpB physically traverses 56–58 ami
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99052/elife-99052-fig5-v1.jpg)
 
-**Figure 5.:** In the presence of ATPγS, hexameric ClpB binds to the unfolded 70 amino acid long RepA sequence. Upon mixing with ATP, ClpB unfolds ~60 amino acids with rate constant, k, shown as complete collapse of the first Titin I27 domain. ClpB then proceeds through multiple fast translocation steps with rate constant Uk before arrival at the next folded Titin I27 domain and the process repeats. After complete unfolding of the final Titin I27 domain, ClpB may dissociate before arrival at the C-terminus, or rapidly translocate to the C-terminus followed by slow dissociation with dissociation rate constant Tk. We expect protein-induced fluorescence enhancement (PIFE) to occur at the last unfolding step and/or at the last translocation step; the relative intensities of AF555 represented by the size of the pink star.end
+**Figure 5.:** In the presence of ATPγS, hexameric ClpB binds to the unfolded 70 amino acid long RepA sequence. Upon mixing with ATP, ClpB unfolds ~60 amino acids with rate constant, kU, shown as complete collapse of the first Titin I27 domain. ClpB then proceeds through multiple fast translocation steps with rate constant kT before arrival at the next folded Titin I27 domain and the process repeats. After complete unfolding of the final Titin I27 domain, ClpB may dissociate before arrival at the C-terminus, or rapidly translocate to the C-terminus followed by slow dissociation with dissociation rate constant kend. We expect protein-induced fluorescence enhancement (PIFE) to occur at the last unfolding step and/or at the last translocation step; the relative intensities of AF555 represented by the size of the pink star.
 
 In our constructs, each Titin I27 domain is 98 amino acids so a step-size of ~60 amino acids is less than one full domain. Unfolding of less than one repeat is unexpected as AFM studies aimed at unfolding tandem repeats of Titin I27 have shown that each domain unfolds cooperatively, that is without a partially unfolded intermediate state (Oberhauser et al., 2001). Moreover, optical tweezer experiments showed that both ClpAP and ClpXP induced cooperative unfolding of each Titin I27 domain (Olivares et al., 2017). Consequently, the observed kinetic step-size reported here may not represent the mechanical unfolding step-size. With those observations in mind, if protein unfolding is fully rate limiting, we would expect an upper limit on the kinetic step-size to be the length of a Titin I27 domain or ~98 amino acids. However, the kinetic step-size is predicted to be smaller than the total amount of structure unfolded if translocation is partially rate limiting with unfolding, which may be the case here at these sub-saturating ATP concentrations since both translocation and unfolding are ATP-driven processes. Again, this is because the kinetic step-size is the average number of amino acids unfolded/translocated between two rate-limiting steps. Thus, if multiple translocation steps are partially rate limiting with a single protein unfolding event, then we predict a reduced kinetic step-size compared to the mechanical unfolding step-size. Testing this hypothesis with a complete [ATP] dependence of the kinetic parameters is underway.
 
 A mechanical translocation step-size of 2 amino acids per step has been proposed from many cryo-EM structures of AAA+ motors bound to polypeptide substrates (Gates and Martin, 2020; Glynn et al., 2020). This is based on the distance between polypeptide contacts across the axial channel of the motor. However, to our knowledge, an experimental determination of a mechanical step-size as small as two amino acids per step has yet to be reported. Nevertheless, rate-limiting protein unfolding of a Titin I27 domain followed by fast translocation in small sub-steps remains a model to be tested.
 
-## Quantification of unfolding vs. translocation processivity
+### Quantification of unfolding vs. translocation processivity
 
 The conclusion that ClpB is a non-processive translocase on unfolded polypeptide chains was based on the lack of any detectible length-dependence in the time-courses (Li et al., 2015b). The collected time-courses were most consistent with two-step dissociation. Here, we have shown that ClpB is able to unfold up to three tandem repeats of stably folded Titin I27 domains with a total substrate length of 362 amino acids. This indicates that, after unfolding the substrate, ClpB exhibits a translocation processivity of at least N = 362 amino acids, where N is defined as the processivity in the number of amino acids translocated per binding event.
 
-The processivity, N, in number of amino acids is related to the processivity as a probability, P, as defined in Equation 3, where m is the step-size (Lucius et al., 2003).(3)P=e−m/N
+The processivity, N, in number of amino acids is related to the processivity as a probability, P, as defined in Equation 3, where m is the step-size (Lucius et al., 2003).
+
+$$
+P=e^{−m/N}
+$$
 
 Since the relationship between the probability processivity, P, and the number processivity, N, requires knowledge of the step-size, m, we can approximate the processivity, P, for translocation in the presence of fold to be in the range of P = 0.994 to P = 0.946 for a step-size between 2 and 20 amino acids, respectively, since we do not know the translocation step-size with certainty. In contrast, if we use a step-size of a full Titin I27 domain (98 amino acids), in Equation 3 then P = ~0.76. Thus, these differences in processivity may suggest that when ClpB is challenged by stably folded regions the processivity for this process is reduced. Thus, going forward, it will be interesting to determine how processivity relates to stability of the folded regions. Equally, examining additional tandem repeats will also be of importance.
 
@@ -184,11 +310,11 @@ Here, we interpret our results to indicate that protein unfolding is rate-limiti
 
 ## Materials and methods
 
-## Buffers and reagents
+### Buffers and reagents
 
 Buffers were prepared with reagent-grade chemicals using 18 MΩ deionized water from a Purelab Ultra Genetic system (Evoqua, Warrendale, PA). Buffer H200 contains 25 mM HEPES (2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid), pH = 7.5 at 25°C, 10 mM MgCl2, 200 mM NaCl, 2 mM 2-mercaptoethanol, and 10% (vol/vol) glycerol. E. coli ClpB was purified as described (Hwang et al., 2011). All ClpB concentrations are reported in monomer units. ATP and ATPγS were purchased from Thermo Fisher Scientific (Waltham, MA) and CalBiochem (La Jolla, CA), respectively. Both ATP and ATPγS were dialyzed into H200 using 100–500 Da molecular weight cutoff dialysis tubing (Thermo Fisher Scientific, Waltham, MA). α-Casein was purchased from Sigma-Aldrich (Darmstadt, Germany), dissolved in 6 M guanidine hydrochloride, 20 mM HEPES, pH 7 at 25°C, and dialyzed into H200 using 10 kDa molecular weight cutoff dialysis tubing (Thermo Fisher Scientific, Waltham, MA).
 
-## Purification of RepA-TitinX
+### Purification of RepA-TitinX
 
 The His6-RepA-TitinX proteins are composed of an N-terminal 6 His tag with a thrombin cleavage sequence for tag removal (MGSSHHHHHH SSGLVPRGSH). The 6 His tag is followed by the first 70 amino acids of the phage P1 RepA protein (MNQSFISDIL YADIESKAKE LTVNSNNTVQ PVALMRLGVF VPKPSKSKGE SKEIDATKAF SQLEIAKAEG) (Kenniston et al., 2003). For RepA-Titin1, the RepA sequence is directly connected to the Titin I27 domain (PDB ID: 2RQ8) (Durie et al., 2018) with all native cysteine residues changed to alanine and the final sequence is given by MLIEVEKPLY GVEVFVGETA HFEIELSEPD VHGQWKLKGQ PLAASPDAEI IEDGKKHILI LHNAQLGMTG EVSFQAANT KSAANLKVKE L. Additional Titin I27 domains are connected with an eight residue linker, RSKLGTRM. Each construct contains a single cysteine at the C-terminus for fluorescent modification. The genes encoding for RepA(1-70)TitinX were constructed and cloned into the pET28a vector by Genscript (Piscataway, NJ). The total substrate lengths are 168, 265, and 362 amino acids for RepA-Titin1, RepA-Titin2, and RepA-Titin3, respectively.
 
@@ -202,26 +328,34 @@ His6-RepA-TitinX was subjected to Thrombin protease (Sigma-Aldrich, Burlington, 
 
 Labeling of C-terminal Cysteine on RepA-TitinX was carried out using a C2-maleimide reaction with Alexa Fluor 555 fluorophore (Invitrogen, Waltham, MA) following the manufacturer’s protocol except 3 (fluorophore): 1 (protein) molar excess. After labeling, RepA-TitinX-Alexa Fluor 555 along with free Alexa Fluor 555 was dialyzed into the H200 buffer. Free Alexa Fluor 555 was then separated from RepA-TitinX-Alexa Fluor 555 using a HiPrep 26/10 desalting column (GE Healthcare, Piscataway, NJ). The labeled protein sample was dialyzed into storage buffer (40 mM Tris, 500 mM NaCl, 2 mM 2-mercaptoethanol, 10% (vol/vol) glycerol, 2 mM Ethylenediaminetetraacetic acid(EDTA)) and stored at −80°C. The labeling efficiency of RepA-TitinX-Alexa Fluor 555 in H200 buffer was observed to be 65–100%. The reported concentrations of RepA-TitinX substrates are determined spectrophotometrically by measuring the absorbance of Alexa Fluor 555 at 555 nm and using an extinction coefficient of 158 000 M−1 cm−1.
 
-## Structures of RepA-TitinX
+### Structures of RepA-TitinX
 
 The raw structures of RepA-TitinX with X = 1, 2, or 3 were obtained from simulations using AlphaFold (Jumper et al., 2021). Starting from the N-terminus, the first 70 amino acids represent the N-terminus of the Phage P1 RepA protein. AlphaFold predicted low confidence on α helices present in the RepA 1–70 sequence. This is consistent with previous reports that this sequence is not likely structured (Hoskins et al., 2000; Sharma et al., 2004; Kim et al., 2002). Thus, we used ‘Sculpting’ function in Schrodinger, 2015a; Schrodinger, 2015b to unfold the α helices in the RepA sequence in the AlphaFold predicted structures to yield the structures shown in Figure 1A. The TitinI27 regions are predicted to have folded β sandwich structure consistent with the published structure (PDB ID: 2RQ8) (Yagawa et al., 2010). The connectors between tandem repeats of TitinI27 are predicted to be unstructured as shown in Figure 1. Cysteine is shown in space-filling at the C terminus of each substrate. Alexa Fluor 555 is attached to the C-terminal cysteine, not shown.
 
-## Standard mixing stopped-flow experiments
+### Standard mixing stopped-flow experiments
 
-ClpB and RepA-TitinX were dialyzed into H200 buffer using 50 and 10 kDa molecular weight cutoff dialysis tubing, respectively. The experiments were performed on an SX20 Applied Photophysics stopped-flow fluorometer (Leatherhead, UK) under standard mixing set-up at 25°C as shown in Figure 1C. 1.5 μM ClpB was incubated for 5 min with 300 μM ATPγS to form the active hexameric complex and subsequently incubated for 10 min with 100 nM RepA-TitinX substrate to form the pre-bound complex. The pre-bound complex was loaded into Syringe 1 and 400 μM ATP and 20 μM α-casein into Syringe 2 of the apparatus. All the components are diluted twofold upon mixing. Before collection of the first shot, the observation channel was thoroughly washed with the solutions of each syringe to equilibrate the instrument. For comparing the relative increase in fluorescence signal across RepA-TitinX substrates, processing of raw time-courses were done using Equation 4.(4)Relativefluorescenceenhancement=|(Foav−Ft)|Foav
+ClpB and RepA-TitinX were dialyzed into H200 buffer using 50 and 10 kDa molecular weight cutoff dialysis tubing, respectively. The experiments were performed on an SX20 Applied Photophysics stopped-flow fluorometer (Leatherhead, UK) under standard mixing set-up at 25°C as shown in Figure 1C. 1.5 μM ClpB was incubated for 5 min with 300 μM ATPγS to form the active hexameric complex and subsequently incubated for 10 min with 100 nM RepA-TitinX substrate to form the pre-bound complex. The pre-bound complex was loaded into Syringe 1 and 400 μM ATP and 20 μM α-casein into Syringe 2 of the apparatus. All the components are diluted twofold upon mixing. Before collection of the first shot, the observation channel was thoroughly washed with the solutions of each syringe to equilibrate the instrument. For comparing the relative increase in fluorescence signal across RepA-TitinX substrates, processing of raw time-courses were done using Equation 4.
 
-where Foav is the average of the first few constant raw fluorescence data points and Ft is raw fluorescence signal at a given time.
+$$
+Relativefluorescenceenhancement=\frac{|(F_{o}^{av}−F_{t})|}{F_{o}^{av}}
+$$
 
-## Sequential mixing stopped-flow experiments
+where $F_{o}^{av}$ is the average of the first few constant raw fluorescence data points and $F_{t}$ is raw fluorescence signal at a given time.
+
+### Sequential mixing stopped-flow experiments
 
 8 μM ClpB was rapidly mixed with 2000 μM ATPγS and 200 nM RepA-TitinX substrate. After mixing, the reagents incubate in the ageing loop for a user-defined period of time, Δt1. 1000 μM ATP and 40 μM α-casein in Syringe 3 were rapidly mixed with the pre-bound complex of ClpB with RepA-TitinX formed during sequential mixing in ageing loop, see Figure 3A. All the components in Syringes 1 and 2 are diluted fourfold when present in the observation chamber while components in Syringe 3 are diluted twofold. In the observation channel, Alexa Fluor 555 is excited at 555 nm and the emission signal is collected using a 570-nm long pass filter.
 
-## Determination of reduced length
+### Determination of reduced length
 
 For each set of time-courses collected using RepA-TitinX, we plot total length vs. peak time. The intercept of this plot is C, which is the sum of pre-translocated distance with ATPγS and excluded length. Excluded length is defined as the sum of dangle distance and occluded length, see Figure 3—figure supplement 2. So, we subtract C from total length, L to get reduced length of substrate, L′. L′ is the available length for ClpB to translocate and unfold. To note, C is determined individually for each replicate at a particular Δt1. The average values of C at different Δt1’s are shown in Figure 3E and Figure 4—figure supplement 2D.
 
-## Model-dependent analysis of the experimental time-courses
+### Model-dependent analysis of the experimental time-courses
 
-The time-courses were fit using the custom built MATLAB (Mathworks, Natick, MA) toolbox, MENOTR (Ingram et al., 2021). Equation 5 described the dataset for each RepA-TitinX and the resultant kinetic parameters are described in Table 2. Out of all parameters, kU and m were fit globally across each RepA-TitinX.(5)F(t)=L−1{F1(ku)n(kend+S)(ku+S)n+F2kend(ku)nS(kend+S)(ku+S)n}
+The time-courses were fit using the custom built MATLAB (Mathworks, Natick, MA) toolbox, MENOTR (Ingram et al., 2021). Equation 5 described the dataset for each RepA-TitinX and the resultant kinetic parameters are described in Table 2. Out of all parameters, kU and m were fit globally across each RepA-TitinX.
+
+$$
+F(t)=L^{−1}{\frac{F_{1}(k_{u})^{n}}{(k_{end}+S)(k_{u}+S)^{n}}+\frac{F_{2}k_{end}(k_{u})^{n}}{S(k_{end}+S)(k_{u}+S)^{n}}}
+$$
 
 where F1 and F2 are two fluorescence amplitudes for the last intermediate, I(L-nm) and unfolded RepA-TitinX, respectively, s is the Laplace variable and other kinetic parameters are defined as per Scheme 1, see Figure 4A.

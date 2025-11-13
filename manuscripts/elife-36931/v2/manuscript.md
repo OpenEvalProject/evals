@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.36931.001 We report the near atomic resolution (3.3 Å) of the human polycystic kidney disease 2-like 1 (polycystin 2-l1) ion channel. Encoded by PKD2L1, polycystin 2-l1 is a calcium and monovalent cation-permeant ion channel in primary cilia and plasma membranes. The related primary cilium-specific polycystin-2 protein, encoded by PKD2, shares a high degree of sequence similarity, yet has distinct permeability characteristics. Here we show that these differences are reflected in the architecture of polycystin 2-l1.
+We report the near atomic resolution (3.3 Å) of the human polycystic kidney disease 2-like 1 (polycystin 2-l1) ion channel. Encoded by PKD2L1, polycystin 2-l1 is a calcium and monovalent cation-permeant ion channel in primary cilia and plasma membranes. The related primary cilium-specific polycystin-2 protein, encoded by PKD2, shares a high degree of sequence similarity, yet has distinct permeability characteristics. Here we show that these differences are reflected in the architecture of polycystin 2-l1.
 
 ## Introduction
 
@@ -35,13 +35,37 @@ Here we present a structure of the full-length human polycystin 2-l1 protein at 
 
 We first expressed and purified full-length recombinant polycystin 2-l1 protein tagged with maltose binding protein (MBP) (Figure 1—figure supplement 1) using HEK293 GnT I- cells and the BacMam system (Goehring et al., 2014). To determine whether the MBP-tagged protein was functional, we measured single channel activity in reconstituted liposomes under voltage clamp. The channel’s conductance in the same buffer used for purification (HKN, see Materials and methods) was 105 pS, consistent with previous single-channel studies from cells expressing polycystin 2-l1 (DeCaen et al., 2013) (Figure 1—figure supplement 1d).
 
-## General architecture of polycystin 2-l1
+### General architecture of polycystin 2-l1
 
 Polycystin 2-l1’s structure exhibits many of the hallmarks of TRP channels: it forms a homotetramer with a domain-swapped Voltage Sensing-Like Domain (VSLD, the S1-S4 transmembrane domains) (Figure 1a) and shares remarkable architectural similarity to polycystin-2 (Figure 1—figure supplement 2) (RMSD of 1.5 Å measured with polycystin-2 model pdb 5T4D). As characteristic of group 2 TRP channels (TRPPs and TRPMLs), polycystin 2-l1 has a long S1-S2 extracellular loop, termed the polycystin mucolipin domain (PMD). This domain, a series of 3 α-helices, 4 β-sheets, and a glycosylated three loop region (see below, TLC or three-leaf clover), forms a cover, or lid, above the channel (Figure 1b). In contrast to the 3 or 4 observed glycans in polycystin-2's polycystin mucolipin domain (PMD) (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017), polycystin 2-l1’s PMD has one clear glycan density located at residue N207. An additional density, at N241, could possibly support an additional glycan. Notably, the PMD interacts with underlying elements of the pore, the voltage sensing-like domains, and adjacent PMDs. The role of glycosylation of the PMD in TRPPs is unknown. Two possibilities include serving as a folding/quality control mechanism or as a site for intermolecular interactions (e.g., ligand involved in gating).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-v2.jpg)
+
+**Figure 1.:** (a) Side view parallel to the membrane and from the top (extracellular) surface. Distinct subunits in the tetramer are color-coded. (b) 2D topological representation of the polycystin 2-l1 monomer; voltage sensor-like domain (VSLD, teal), polycystin mucolipin domain (PMD, orange), and pore domain (PD, violet). (c) Monomer color-coded and matched to Figure 1b: N terminus/VSLD (teal), PMD (orange), C terminus/PD (violet).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) SDS-PAGE of amylose purification for supernatant, flow, wash and elution (left). Size exclusion chromatography (Superose 6 Increase) after affinity chromatography and exchange from detergent to amphipol PMAL-C8 (right). (b) Representative sample of negative-stained polycystin 2-l1 in PMALC8 (scale bar, 200 nm). (c) 8 representative 2D class averages used in data processing. (d) Sample trace of voltage-clamped, liposome-reconstituted recombinant polycystin 2-l1 (top). Amplitude histogram of open and closed events (bottom left) and mean current of open (Level 1) and closed (Level 0) events. Average current = 13.2 pA (±2.8 S.D.) at +125 mV, 1.6 s duration.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) The Cα-RMSD between polycystin 2-l1 and polycystin-2 (5T4D) mapped onto the polycystin 2-l1 monomer. The average RMSD is 1.5 Å with a range of 0.14 Å (blue) to 9.8 Å (red). (b) Overlay of the polycystin 2-l1 monomer (green) on the polycystin 2 (gray) monomer; cartoon representation. (c) Polycystin 2-l1 S2 segment (green) and polycystin 2 S2 (gray), showing the relative angle and lateral shift (arrow). S6 relative angle shown at right. (d) Calculation of pore radius (Å) along the pore axis for polycystin-2 (red) and polycystin 2-l1 (black). Residues G522 and L521 in the selectivity filter, and I560 are labeled and are the three narrowest distances.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** 842,139 particles were automatically selected to generate a 2D class average. Eight classes were selected; a reference from a previous dataset that generated a 3.6 Å map was used to derive four initial classes. The four classes were generated from automatic refinement; one class was selected to generate an additional round of four classes. The subsequent particle was then selected to generate two more classes (two more rounds with a mask to omit contributions from the amphipol). The final, highest resolution structure was selected and then sharpened.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Angular distribution plot, inner black dashed ring (θ = 30°) and outer white dashed ring (θ = 60). (b) Corresponding 2D FSC of polycystin 2-l1 in PMAL C8 (horizontal dashed 0.143 criterion; solid vertical black line is the minimum refinement limit of 8 Å. (c) 3D FSC and preferred orientation analysis of the same dataset with the red line representing the estimated global FSC of 3.2 Å ± 1 SD (green dashed lines). Dashed line 0.143 criterion are at left and the correlated resolution estimations and orientations from the preferred orientation analysis are at the right. Red lines represent global estimated FSC, black lines FSC for the z-axis of the orientation indicated above. Color code (red (poorer) to blue (better) resolution) represents in-plane resolution (x/y axes) and resolution value Z (including graph below) refers to the z-axis directional resolution and corresponding FSC plot. For instance, the side view shows an increased z-axis resolution but a decreased x/y resolution (red) which is consistent with the angular distribution plot. (d) Local resolution map (calculated by ResMAP with a value of box 20 and cutoff 0.5) of the same dataset with top, side, and bottom orientations.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) EM density maps are shown for the polycystin 2-l1 monomer in the Voltage Sensor Like Domain for helices S1-S4. (b) The PMD with all secondary structural elements and a general scheme of the three loops that comprise the Three Leaf Clover (TLC) region (left and below). (c) The Pore Domain for helices S5, S6 and the selectivity filter with pore-helices 1 and 2 (PH1 and PH2).
+
 The intracellular face of polycystin 2-l1 is too poorly resolved to model the N terminus and the S4-S5 linker densities. Also, despite expression of full-length protein (Figure 1—figure supplement 1) the C terminus of polycystin 2-l1 was not resolved. We conclude that these elements are either unstructured or connected with flexible regions, which, along with the lack of cytoplasmic elements in 2D classification in polycystin-2 (Shen et al., 2016), prevents model building of these regions.
 
-## The voltage sensing-like domain
+### The voltage sensing-like domain
 
 The VSLD is comprised of four transmembrane helical spanning elements that, while similar in structure to the voltage-sensing domains of voltage-gated ion channels, do not convert the energy of the transmembrane electric field into pore gating. Indeed, none of the group II TRP channels have significant voltage dependence. Comparison of the VSLD of polycystin 2-l1 and polycystin-2 reveals that the polycystin 2-l1 S2 helix is tilted an additional 4.5° away from the core, is laterally shifted away from the rest of the VSLD, and shows the greatest local RMSD difference (Figure 1—figure supplement 2a, b and c). Polycystin 2-l1’s S3 is a near-continuous helix extending from the membrane-spanning region into a pocket created by the PMD (Figures 1c and 3b). This S3 helix exhibits greater secondary structure than the presumed closed polycystin-2 structure of Shen et al. (Shen et al., 2016), but is similar to that of the multiple- and single-ion models of Wilkes et al., (Wilkes et al., 2017). The S3 extended helix abuts the PMD of the same monomer but does not display the same cation-π interactions as polycystin-2’s F545 and R320 residues. The S3-S4 linker and the top portion of the S4 helix also fit into the same cleft of the PMD as in polycystin-2. In polycystin-2, the S4 adopts a 310-helix configuration (I571 – F579). The density of the S4 helix of polycystin 2-l1 is incomplete at this region so a 310 configuration is not observed. Similarly, the equivalent residues of polycystin-2 that are thought to form a salt bridge between the S3 and S4 helix (K572, K575) (Shen et al., 2016), do not have sufficient side chain density to model accurately. The equivalent residue for polycystin-2’s acidic D511 residue is D390 in polycystin 2-l1, which does not form a salt-bridge with neighboring residues.
 
@@ -49,7 +73,7 @@ The VSLD is comprised of four transmembrane helical spanning elements that, whil
 
 **Figure 2.:** (a) Path of permeation depicted with HOLE (left). At right is a close-up view of the selectivity filter (two monomers removed for clarity) with three conserved residues L521, G522, and D523. Pore radius (HOLE) measured along the pore axis (left). (b) Electron density map superimposed on the polycystin 2-l1 model; contour level 5.0. (c) TRPP family multiple sequence alignment of conservation projected in color onto the polycystin 2-l1 pore domain. Two of four monomers have been removed to increased clarity.
 
-## The polycystin mucolipin domain
+### The polycystin mucolipin domain
 
 The polycystin mucolipin domain (PMD) rests on top of the VSLD of the same monomer and the adjacent pore domain (Figure 3b and c), with a series of three α-helices facing inward towards the funnel/turret of the pore (Figure 3c). A series of β-sheets is sandwiched between these α-helices with several loops that interface with the extracellular space and adjacent PMD (Figures 1b and 3c). Finally, a disulfide bond is present between residues C210-C223 in the PMD, similar to several polycystin-2 structures (Figure 3d). This element is proposed to stabilize a loop in polycystin-2 (Shen et al., 2016; Wilkes et al., 2017) and seems likely to play the same role in polycystin 2-l1.
 
@@ -57,7 +81,7 @@ The polycystin mucolipin domain (PMD) rests on top of the VSLD of the same monom
 
 **Figure 3.:** (a) sequence conservation projected in color onto the PMD domain for polycystin 2-l1 homologs; Three-leaf clover (TLC) domains labeled. (b) The S3 (green), S3-S4 linker (green, rotated 50°), and TLC1 from the adjacent PMD (red) interact with the PMD of the same domain (gray). (c) Interactions of the PMD (gray) with the pore domain (PD) and PMD of the adjacent monomer (yellow). PMD secondary structural elements helices 1–3, and β-sheets 1 to 4 labeled, along with the PD and Pore Helix (PH1). (d) Disulfide C210-C223 (yellow) in the TLC1 loop (3.4 Å) of the PMD.
 
-## Three leaf clovers (TLCs) of the polycystin mucolipin domain (PMD)
+#### Three leaf clovers (TLCs) of the polycystin mucolipin domain (PMD)
 
 Grieben et al., (Grieben et al., 2017) described the three-lobed area of polycystin-2’s PMD, naming it the ‘three-leafed clover’. The same area is found in polycystin 2-l1, but with several differences. Polycystin 2-l1 lacks the small α-helix in TLC1 of polycystin-2. Interestingly, this region (D208-D225) displays moderately lower sequence conservation among the TRPPs (Figure 3a). As noted, TLC1 in polycystin-2 appears to extend into the adjacent PMD and interact with the S3 helix and S3-S4 linker (Grieben et al., 2017; Wilkes et al., 2017). In polycystin 2-l1, the analogous TLC1 extends from one monomer into the PMD of the adjacent subunit (Figure 3b). However, the nature of the interaction differs in that F216 of TLC1 is near Y308 of the adjacent subunit’s PMD, representing a possible π - π stacking interaction or a hydrophobic pocket (Figure 4a). Additionally, N311’s carboxamide oxygen group, located on a hairpin between β3 and β4 of the PMD, is within hydrogen bonding distance (3.3 Å) of Y224’s amide in TLC1 of the adjacent subunit of polycystin 2-l1 (Figure 4b). Finally, residue W259 of TLC3 formats a cation-π stacking interaction with the upper pore domain at residue R534 (Figure 4c). We interpret these interactions as supporting tetrameric assembly and stability.
 
@@ -65,13 +89,13 @@ Grieben et al., (Grieben et al., 2017) described the three-lobed area of polycys
 
 **Figure 4.:** (a) π- π interaction of residue residing in TLC1 F216 (brown) with the neighboring (green) PMD (Y308). (b) Hydrogen bonding interaction (green dash) of PMD residue N311 with the neighboring PMD residue Y224’s amide (blue). (c) Residue W259 in TLC3 of the PMD forms a cation-π stacking interaction with the upper pore domain residue R534. The guanidino group of R534 also forms a hydrogen bond (red dash) with the carbonyl of G260 of the adjacent PMD domain.
 
-## Fenestrations
+#### Fenestrations
 
 Despite moderately low identity and an increase in charged residues in polycystin 2-l1’s TLC3 (SPDKEE (residues 228–232) versus SVSSED in polycystin-2), the loop appears essentially the same as in polycystin-2. This element appears to reach under the PMD’s β-sheet. Proximity of the returning loop of TLC1 towards TLC2, as well as the S5-PH1 loop of the monomer and the PH2-S6 loop adjacent monomer creates four lateral openings at the base of the PMD in polycystin 2-l1, as in polycystin-2. These could present an alternative route for ion permeation (Grieben et al., 2017; Wilkes et al., 2017). This area is less conserved among the polycystin 2-l1 homologs (PKD2, PKD2L2)(Figure 3a).
 
 Polycystin 2-l1’s PMD also interacts with the adjacent subunit’s upper pore domain. In the polycystin-2 multiple- (pdb 5MKF) and single-ion (pdb 5MKE) structures, Wilkes et al., (Wilkes et al., 2017) observed glycosylation-dependent interactions of the PMD of one subunit with the loop pore-helices of the adjacent (Wilkes et al., 2017), with mutually exclusive glycosylation states. One last interaction between TLC3 and the loop between pore-helix 2 and S6, noted in the polycystin-2 structure (Shen et al., 2016), is seen in polycystin 2-l1: W259, from TLC3, forms a cation-π stacking interaction with R534 and a hydrogen bond with G260’s carbonyl (2.8 Å) (Figure 4c). This difference may help rationalize the intermediate pore size observed in the polycystin-2 multiple-ion structure (1.4 Å) (Wilkes et al., 2017) and the single-ion structure (1.0 Å) (Wilkes et al., 2017) where such interactions do not exist, and our polycystin 2-l1 structure (2.6 Å).
 
-## The pore domain
+### The pore domain
 
 As in polycystin-2, polycystin 2-l1’s selectivity filter is flanked by two pore-helices, which are themselves each flanked by a transmembrane spanning helix (S5 and S6). The S6 helix of polycystin 2-l1 remains α-helical throughout its length, whereas the S6 helix of polycystin-2 is broken by a middle π-helix element, before continuing to the C terminus (Shen et al., 2016) (Figure 1—figure supplement 2b and c). The S6 helix of polycystin 2-l1 is also tilted 7.9° relative to polycystin-2 (Figure 1—figure supplement 2c). The key filter residues of polycystin 2-l1 are L521, G522 and D523, in which the carbonyls of L521 and G522 point to the central pore axis (Figure 2a). D523’s side chain is well-resolved; the side chains face upward in parallel to the axis of ion conduction. The pore domain shows moderately strong conservation in S5, S6, and elements of the selectivity filter, as well as in pore helix 1 (Figure 2c). Notably, however, K511 in polycystin 2-l1 is highly variable among equivalent residues in other TRPPs (Figure 2c). The corresponding residue is a negatively-charged glutamate in polycystin-2 and an asparagine in polycystin 2-l2. The effect of this residue is to confer a net positive electrostatic potential (Figure 5a) relative to polycystin-2’s net negative charge.
 
@@ -83,7 +107,7 @@ Relative to polycystin-2’s pore helix 1 (PDB 5T4D), the angle between the begi
 
 The narrowest apertures in the selectivity filter, measured by HOLE (Smart et al., 1996), have radii of 2.6 and 2.8 Å at L521 and G522 respectively (Figure 2a). These distances represent a larger opening than that in any of the three polycystin-2 structures (1.0 to 1.4 Å) (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017). Such a diameter is sufficient to accommodate a partially hydrated Ca2+ ion with an average ~2.4 Å metal-oxygen distance (Katz et al., 1996; Marcus, 1988) and an ionic radius of 0.99 Å (Pauling, 1988; Hille, 2001). An observed density in the selectivity filter extends across the two carbonyls of L521 and G522, contrasting with polycystin-2 densities that localize above and below the selectivity filter (Wilkes et al., 2017) (Figure 2b). However, cryo-EM cannot determine the ion’s identity with the same degree of reliability of X-ray anomalous scattering. Although defined buffers are used, we cannot rule out the possibility of less abundant ions occupying the site.
 
-## Ion permeation differences between polycystin-2 and polycystin 2-l1
+#### Ion permeation differences between polycystin-2 and polycystin 2-l1
 
 Polycystin-2 and polycystin 2-l1 core selectivity filters residues (LGD) are conserved, leading us to examine other explanations as to why polycystin 2-l1 conducts Ca2+ while polycystin-2 does not (PCa/PNa ~6) (DeCaen et al., 2013, 2016; Kleene and Kleene, 2017; Liu et al., 2018). If the pore helix 1-selectivity filter-pore helix 2 region of polycystin 2-l1 (C512-P538) is substituted by polycystin-2’s analogous region (C632-P658), the polycystin 2-l1 chimera has roughly (within 4-fold) similar permeability to Na+, K+, and Ca2+ (Shen et al., 2016). Point mutation experiments in which polycystin 2-l1’s D523 and D525 were mutated to alanine or serine yielded no measurable currents (DeCaen et al., 2013). However, polycystin 2-l1(LGD523: D523N) was 18-fold, and polycystin 2-l1(LGDFD525: D525N) 9-fold less calcium-permeant (PCa2+/PCs+) than wt polycystin 2-l1. Also, and significantly, the D525N mutation reduced outward current block by Ca2+, while D523N did not (DeCaen et al., 2016). These experiments indicate that order and placement of negative charge in the narrow region of the pore is important for both Ca2+ permeation and block. Higher resolution cryo-EM structures that identify Ca2+ and/or monovalents that are occupying the pore with high certainty (or equivalent crystallographic studies like those of CaVAb [Tang et al., 2014]), and molecular dynamic simulations, should shed light on these issues.
 
@@ -107,24 +131,260 @@ The explosion of structures available for TRP channels lays the groundwork for i
 
 ## Materials and methods
 
-## Cloning, expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>PKD2L1</td>
+      <td>Synthetic, non-codon optimized</td>
+      <td>Uniprot - Q9P0L9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293 GnT I-</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-3022/RRID: CVCL_A785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-1711/RRID: CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BACMAM</td>
+      <td>doi: 10.1038/nprot.20.14.173</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cisTEM</td>
+      <td>doi: 10.7554/eLife.35383</td>
+      <td></td>
+      <td>http://cistem.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>http://www.pymol.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>UCSF Resource for Biocomputing, Visualization, and Bioinformatics</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3D FSC</td>
+      <td>doi: 10.1038/nmeth.4347</td>
+      <td></td>
+      <td>https://3dfsc.salk.edu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>doi.org/10.1107/S0907444909052925</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>doi.org:10.1107/S0907444910007493</td>
+      <td>RRID:SCR_014222</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOLE</td>
+      <td>(see References)</td>
+      <td></td>
+      <td>http://www.holeprogram.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VMD</td>
+      <td>UIUC Theoretical and Computational Biophysics Group</td>
+      <td></td>
+      <td>http://www.ks.uiuc.edu/Research/vmd/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning, expression and purification
 
 Cloning, expression, and purification of full-length human polycystin 2-l1 were completed using the BacMam strategy (Goehring et al., 2014). Briefly, constructs were subcloned into the vector pEG using restriction sites NotI and BstBI. The construct sequence was verified and transformed into DH10bac cells. Blue-white screening facilitated colony selection to create a midiprep of the bacmid. This preparation was used to transfect Sf9 cells using Cellfectin II following the manufacturer’s instructions. Amplification of the virus was completed for 2 cycles (P2) before viral particle were used to infect HEK293S GnT I- cells at 10% v/v at 37°C and 8% CO2 with shaking. After 24 hr, sodium butyrate was added to a final concentration of 10 mM and cells were harvested after 48 hr.
 
 Protein was extracted directly from pellets using 40x critical micellar concentration (CMC) of the detergent C12E9 in HKN buffer (in mM: HEPES 50, KCl 150, NaCl 50, CaCl2 5; pH 7.5) with an EDTA-free protease inhibitor cocktail (Roche) tablet for 2 hr at 4°C using gentle rotation. Ultracentrifugation of the sample was completed at 40,000 RPM for 1 hr at 4°C. The resulting supernatant was retained and used for a batch incubation with amylose resin overnight at 4°C. Resin was collected, washed in HKN buffer with higher K+ (500 mM) and 2x CMC of n-Dodecyl β-D-maltoside: cholesteryl hemisuccinate 10:1 (DDM:CHS) for 10 bed volumes followed by a normal HKN buffer for 10 bed volumes with 2xCMC of DDM:CHS. The protein was eluted using 40 mM maltose in HKN buffer at 2xCMC DDM: CHS. All fractions were collected, concentrated and subjected to 1 round of size exclusion chromatography using an Increase Superose6 (GE Lifesciences) column pre-equilibrated with HKN and 2xCMC DDH: CHS. Protein-containing fractions, as determined by A280 and western-blotting against maltose binding protein (MBP), were collected, concentrated and used for further preparation. The sample’s concentration was again determined using A280 and incubated with a 1:3 ratio (mass) of poly (maleic andydride-alt-1-decene substituted with 3-(dimethylamino) propylamine; PMAL C8) overnight with gentle rotation at 4°C. A final round of size exclusion chromatography using an Increase Superose6 column equilibrated with HKN buffer was performed, fractions collected, and concentrated using a Vivaspin Turbo4 100,000 molecular weight cutoff (MWCO) centrifugation device before being applied to grids and freezing.
 
-## Sample preparation
+### Sample preparation
 
 The cryo specimen was vitrified using 3 μl of purified polycystin 2-l1 in PMAL-C8 at 3.5 mg/ml and applied onto a glow-discharged 400 mesh copper Quantifoil R1.2/1.3 holey carbon grid (Quantifoil). Grids were blotted for 3 s at 95% humidity and flash frozen in liquid nitrogen-cooled liquid ethane bath using a Vitrobot (Thermo Fisher, Hillsboro OR). Samples were stored in liquid nitrogen until acquisition.
 
-## Cryo-EM image acquisition, processing and modeling
+### Cryo-EM image acquisition, processing and modeling
 
 Data for full-length polycystin 2-l1 were collected on a FEI Titan Krios (Thermo Fisher, Hillsboro, OR) at 300 kV with a Gatan Quantum Image Filter (20 eV slit) and K2 Summit detector at the Janelia Research Campus (Ashburn, VA) using the following parameters: A total of 3814 image stacks were acquired at a sampling rate of 1.04 Å/pixel with an 8 s exposure of 8 e- pixel−1 s−1 at 0.2 s/frame for a total dose of approximately 60 e- Å2 s−1 using SerialEM (Mastronarde, 2005).
 
 Data was processed using cisTEM (Grant et al., 2018), which contains all processing steps listed below with relevant references to the technique for each step. Briefly, beam-induced motion and physical drift were corrected followed by dose-weighing using the Unblur algorithm (Grant and Grigorieff, 2015). Next the contrast transfer function was estimated and used to correct micrographs. After inspection of all micrographs, 3,494 were used for data processing. Particles were then automatically selected based on an empirical evaluation of maximum particle radius (80 Å), characteristic particle radius (60 Å), and threshold peak height (2 S.D. above noise). 2D classification on 842,130 particles used an input starting reference from a previous model solved in C4 symmetry (Figure 1—figure supplement 3). This initial model was generated ab initio from a data set acquired for polycystin 2-l1 and processed using cisTEM (particles from 20 Å to 8 Å for the first step of classification with a 20 Å low pass filter used for the initial model to avoid bias). Eight class averages representing different orientations were selected for further iterative 3D classification and refinement in C4 symmetry (Figure 1—figure supplement 3). The best solutions for each iteration were selected for local refinement in (Figure 1—figure supplement 3) cisTEM. Upon completion of 3D refinement, the best class was sharpened using B-factors. Fourier Shell Correlation (FSC) and angular distribution plots were collected for the final dataset in cisTEM (Figure 1—figure supplement 4a and b). Final resolution maps are based on the 0.143 FSC criterion (Rosenthal and Henderson, 2003). 3D FSC plots were for the final data were analyzed via the web portal for 3DFSC (https://3dfsc.salk.edu) (Tan et al., 2017) (Figure 1—figure supplement 4c). Local resolution was calculated using ResMAP (Kucukelbir et al., 2014) (Figure 1—figure supplement 4d). Examples of model fit in cryo-EM maps are provided in Figure 1—figure supplement 5 and data collection, refinment and validations statistics in Table 1.
 
+**Table 1.**
+ Cryo-EM data collection, refinement, and validation
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection and processing</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Calibrated Magnification</td>
+      <td>48,077</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron Exposure (e-/A2)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.0 to −2.4</td>
+    </tr>
+    <tr>
+      <td>Pixel Size (Å/pixel)</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <td>Symmetry Imposed</td>
+      <td>C4</td>
+    </tr>
+    <tr>
+      <td>Initial Particle images (no.)</td>
+      <td>842,139</td>
+    </tr>
+    <tr>
+      <td>Final Particle images (no.)</td>
+      <td>114,814</td>
+    </tr>
+    <tr>
+      <td>Map Resolution (Å)</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>FSC Threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map Resolution Range</td>
+      <td>3.3–7.1</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model Resolution cutoff (Å)</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map Sharpening B Factor (Å2)</td>
+      <td>−90</td>
+    </tr>
+    <tr>
+      <td>Model Composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen Atoms</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Protein Residues</td>
+      <td>1656</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>R.M.S. Deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond Lengths (Å)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mol Probity Score</td>
+      <td>1.94</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>Outlier Rotamers (%)</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>91.0</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>8.82</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.18</td>
+    </tr>
+  </tbody>
+</table>
+
 Polyalanine α-helices and β-sheets were built for each transmembrane section and the PMD using pdb 5T4D as a final guide in Coot (Emsley et al., 2010). Densities were inspected, and initial assignments of residues were based on aromatic or bulky residues. Real-space refinement, using PHENIX (Adams et al., 2010), was completed iteratively with inspection of the model in Coot. Model quality was evaluated using Molprobity (Williams et al., 2018) and EMRinger (Barad et al., 2015). The model was then compared to sequence alignments of the TRPP family and three models of the closely related polycystin-2 structures (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017). Pore size was evaluated using HOLE (Smart et al., 1996) and local resolution maps calculated from RESMAP (Kucukelbir et al., 2014). The sequence analysis for polycystin 2-l1 family members and projection onto the structure was completed using 500 multiple sequence alignments generated from iterative Blast searches and then analyzed with Consurf (Glaser et al., 2003; Landau et al., 2005). Electrostatic plots were created in Pymol. Model rendering was completed in Pymol and Chimera (Pettersen et al., 2004).
 
-## Electrophysiology
+### Electrophysiology
 
 Liposomes containing full-length polycystin 2-l1 protein were voltage clamped to record single channel currents. Protein was reconstituted following the dilution method (Cortes and Perozo, 1997) into liposomes made from Soy Extract Polar (Avanti). After extensive dialysis, lipids were pelleted and resuspended in HKN buffer and stored at −80°C until characterization. A sample of reconstituted protein was dried overnight at 4°C under constant vacuum and rehydrated the next morning in the same buffer. Liposomes were allowed to swell for 1 hr on ice before recording with patch pipettes (10–15 MΩ). The bath was a Tris buffered variant of HKN (in mM: TRIS 10, KCl 150, NaCl 50, CaCl2 1), pH 7.4; the pipette contained the same buffer with 1 mM MgCl2. Solution osmolarity was measured at 400–405 mOsm. Data was acquired at 10 kHz and a low-pass Bessel-filtered at 1–2 kHz. For each recording, pipette offset and capacitance were corrected. Approximately 2 min after a GΩ seal was achieved, the patch was excised, and capacitance corrected before recording.

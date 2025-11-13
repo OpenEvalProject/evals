@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.01370.001 An outstanding challenge has been to understand the mechanism whereby proteins associate. We report here the results of exhaustively sampling the conformational space in protein–protein association using a physics-based energy function. The agreement between experimental intermolecular paramagnetic relaxation enhancement (PRE) data and the PRE profiles calculated from the docked structures shows that the method captures both specific and non-specific encounter complexes. To explore the energy landscape in the vicinity of the native structure, the nonlinear manifold describing the relative orientation of two solid bodies is projected onto a Euclidean space in which the shape of low energy regions is studied by principal component analysis. Results show that the energy surface is canyon-like, with a smooth funnel within a two dimensional subspace capturing over 75% of the total motion. Thus, proteins tend to associate along preferred pathways, similar to sliding of a protein along DNA in the process of protein-DNA recognition. DOI: http://dx.doi.org/10.7554/eLife.01370.001
+An outstanding challenge has been to understand the mechanism whereby proteins associate. We report here the results of exhaustively sampling the conformational space in protein–protein association using a physics-based energy function. The agreement between experimental intermolecular paramagnetic relaxation enhancement (PRE) data and the PRE profiles calculated from the docked structures shows that the method captures both specific and non-specific encounter complexes. To explore the energy landscape in the vicinity of the native structure, the nonlinear manifold describing the relative orientation of two solid bodies is projected onto a Euclidean space in which the shape of low energy regions is studied by principal component analysis. Results show that the energy surface is canyon-like, with a smooth funnel within a two dimensional subspace capturing over 75% of the total motion. Thus, proteins tend to associate along preferred pathways, similar to sliding of a protein along DNA in the process of protein-DNA recognition.
 
 ## Introduction
 
@@ -45,45 +45,43 @@ The most important result of our analysis is that the region of the space in a n
 
 ## Results
 
-## Prediction of encounter complex ensembles
+### Prediction of encounter complex ensembles
 
-We focused on the modeling of the association between the N-terminal domain of Enzyme I (EIN) and the histidine-containing phosphocarrier protein (HPr) (
+We focused on the modeling of the association between the N-terminal domain of Enzyme I (EIN) and the histidine-containing phosphocarrier protein (HPr) (Figure 1A), because the complex has been studied in a series of PRE titration experiments (Fawzi et al., 2010). Specific association between the two proteins occurs in the first step of the bacterial phosphotransfer system, resulting in phosphoryl transfer between EIN and HPr upon proper alignment of active site histidines of the two sides of the interface (Garrett et al., 1999). The binding has an equilibrium dissociation constant of 4.3 μM (Suh et al., 2008). For the computational study of encounter complexes we have placed the center of EIN at the origin of a coordinate system, and systematically sampled the entire rotational/translational space of HPr. Unbound structures were used both for the receptor, EIN (chain A from PDB entry 1ZYM) and for the ligand, HPr (chain P from PDB entry 2JEL). Sampling was performed using the docking program PIPER, which performs exhaustive evaluation of a physics-based energy function in discretized 6D space of mutual orientations of two proteins using the Fast Fourier transform (FFT) correlation approach (Kozakov et al., 2006). We sample 70,000 rotations, which approximately correspond to sampling at every 5° in the space of Euler angles. In the translational space, the sampling is defined by the 1.0 Å grid cell size. PIPER is used with a ‘smooth’ energy function that includes terms describing attractive and repulsive van der Waals interactions, electrostatic interactions calculated by a simplified generalized Born-type expression, and a desolvation terms, the latter represented by a pairwise interaction potential (Chuang et al., 2008). We call the energy function ‘smooth’ because the repulsive contributions to the van der Waals interaction are selected to allow for a certain amount of overlaps.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig1-v1.jpg)
 
-**Figure 1.:** Unbound structures were used both for the receptor, EIN (chain A from PDB entry 1ZYM) and for the ligand, HPr (chain P from PDB entry 2JEL). Encounter complexes were generated using Fast Fourier transform (FFT) based sampling. (A) Cartoon of the specific complex formed by EIN and HPr, shown in grey and yellow, respectively. The locations of the paramagnetic tags E5C-EDTA-Mn+ and E32C-EDTA-Mn2+ on HPr are encircled and are shown in red and blue, respectively. (B) Centers of HPr structures in the encounter complex ensemble. Colors indicate classification as follows (8): blue, Class I (i.e., overlapping with the specific complex); magenta, patch 1 of Class II (i.e., non-overlapping) positions; red, patch 2 of Class II positions; and pink, additional Class II position outside the main patches. (C) Ligand IRMSD vs PIPER energy score. (D) Two representative HPr poses, colored light blue and dark blue, from Class I. (E) Two representative HPr poses (in different shades of magenta) from Patch 1 of Class II. (F) View of the EIN–HPr complex and the centers of HPr poses after rotating 180° around the vertical axis (the bound HPr is now on the left side, almost completely hidden by EIN). (G) Representative HPr poses (in different shades of red) from Patch 2 of Class II, shown in the rotated view.DOI: http://dx.doi.org/10.7554/eLife.01370.003
+**Figure 1.:** Unbound structures were used both for the receptor, EIN (chain A from PDB entry 1ZYM) and for the ligand, HPr (chain P from PDB entry 2JEL). Encounter complexes were generated using Fast Fourier transform (FFT) based sampling. (A) Cartoon of the specific complex formed by EIN and HPr, shown in grey and yellow, respectively. The locations of the paramagnetic tags E5C-EDTA-Mn+ and E32C-EDTA-Mn2+ on HPr are encircled and are shown in red and blue, respectively. (B) Centers of HPr structures in the encounter complex ensemble. Colors indicate classification as follows (8): blue, Class I (i.e., overlapping with the specific complex); magenta, patch 1 of Class II (i.e., non-overlapping) positions; red, patch 2 of Class II positions; and pink, additional Class II position outside the main patches. (C) Ligand IRMSD vs PIPER energy score. (D) Two representative HPr poses, colored light blue and dark blue, from Class I. (E) Two representative HPr poses (in different shades of magenta) from Patch 1 of Class II. (F) View of the EIN–HPr complex and the centers of HPr poses after rotating 180° around the vertical axis (the bound HPr is now on the left side, almost completely hidden by EIN). (G) Representative HPr poses (in different shades of red) from Patch 2 of Class II, shown in the rotated view.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** 2+ and E32C-EDTA-Mn2+ on HPr.The C-EDTA moiety is shown as sticks, with carbon atoms colored cyan. The rest of the HPr structure is shown as yellow cartoon. The Mn2+ ions are shown as magenta spheres. (A) Three rotamers of HPr-E5C-EDTA-Mn2+. (B) Three rotamers of HPr-E32C-EDTA-Mn2+.DOI: http://dx.doi.org/10.7554/eLife.01370.004
+**Figure 1—figure supplement 1.:** The C-EDTA moiety is shown as sticks, with carbon atoms colored cyan. The rest of the HPr structure is shown as yellow cartoon. The Mn2+ ions are shown as magenta spheres. (A) Three rotamers of HPr-E5C-EDTA-Mn2+. (B) Three rotamers of HPr-E32C-EDTA-Mn2+.
 
 Since the generated structures will be used for calculating PRE profiles to compare them to experimental PRE data (Fawzi et al., 2010), two sets of docking calculations were performed using HPr structures that included the paramagnetic label EDTA-Mn2+, placed either at E5C, which is distal to the EIN/HPr interface in the native state, or at E32C, which is close to the edge of the interface (Figure 1A). Each C-EDTA-Mn2+ label has three potential rotameric states, and hence Mn2+ can occupy three different positions (Figure 1—figure supplement 1). A separate docking was performed for each rotameric state of each EDTA-Mn2+ probe. We retained the 10,000 lowest energy structures from each docking simulation, thus a total of 30,000 low energy structures for each of the two probes. These structures were then used for the analysis of encounter complexes and for the calculation of intermolecular PRE rates.
 
 Figure 1B shows the center of each low energy HPr structure, generated by the docking, as a small sphere, and indicates that these structures form three major clusters. Figure 1C shows the Interface Root Mean Square Deviation (IRMSD) from the native complex vs the PIPER energy score of the docked structures. For the calculation of IRMD we first select the interface residues of HPr that are within 10 Å of any EIN atom in the native complex. For each docked structure we than superimpose EIN onto EIN in the X-ray structure of the complex, and calculate the RMSD between the Cα atoms of the HPr interface residues in docked and native structures. The structures in the largest cluster (shown in blue in Figure 1B) overlap with the native state, with the lowest energy conformations being within 5 Å IRMSD from the native (Figure 1C). The structures in this cluster, termed Class I, are the results of rigid body rotations and small translations around the native binding mode. Two representative Class I structures are shown in Figure 1D. Some Class I structures have less than 1 Å IRMSD, but the cluster extends as far as 15 Å IRMSD from the native. The two other clusters, termed Class II patch 1 and Class II patch 2, consist of structures that can coexist with the native complex. We note that while the three clusters clearly separate in the 3D representation shown in Figure 1B, they substantially overlap when projected into one dimension as a function of their IRMSD values. Nevertheless, Figure 1C shows at least three distinguishable energy minima. Class II patch 1 (magenta in Figure 1B) centers around a local energy minimum at around 17 Å IRMSD (Figure 1C). Figure 1E shows two representative conformations for this patch. The third large cluster, Class II patch 2 (red in Figure 1B), is located on the opposite side of the Class I cluster, and is better seen after rotating the complex by 180° around its vertical axis (Figure 1F). The local energy minimum in this cluster is located at about 30 Å IRMSD from the native state. Figure 1G shows two representative conformations for the Class II patch 2. In addition to the complexes that belong to Class I and the two patches of Class II, there are a number of smaller patches, shown in pink in Figure 1B.
 
-## PRE experiments and theoretical PRE profiles based on structure
+### PRE experiments and theoretical PRE profiles based on structure
 
-To detect encounter complexes in the EIN/HPr system by PRE titration experiments, HPr was labeled with a paramagnetic EDTA-Mn
+To detect encounter complexes in the EIN/HPr system by PRE titration experiments, HPr was labeled with a paramagnetic EDTA-Mn2+ moiety conjugated via a disulfide bond to surface cysteine mutations at specific sites (Fawzi et al., 2010). We consider the mutations E5C and E32C that are both located outside the specific interaction surface with EIN (Figure 1A) and thus the labels do not interfere with the formation of the native complex. Intermolecular 1HN−Γ2 rates for the backbone amide protons of U-[2H,15N]-labeled EIN were measured in the presence of 150 mM NaCl to eliminate potential spurious nonspecific interactions not relevant at physiological ionic strength. PRE measurements were carried out at six different concentrations of the paramagnetically labeled HPr (ranging from 60 to 450 μM), corresponding to HPr:EIN molar ratios of 0.2–1.5. At each point in the titration, the intermolecular PREs were summed over their respective residues and normalized to the highest value of each titration curve. The data points in Figure 2 show the normalized intermolecular PRE values and their standard errors observed in these titration experiments (Fawzi et al., 2010).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig2-v1.jpg)
 
-**Figure 2.:** PRE measurements were carried out at 300 μM EIN, 300 μM HPr, and 150 mM NaCl (Fawzi et al., 2010). Theoretical intermolecular PREs, calculated only from the coordinates of the specific EIN/HPr complex, are shown as black lines. Calculated PRE values, based on all generated encounter complexes, are shown as blue lines, and reveal substantial contributions by the non-specific structures. The experimental PRE rates (Γ2) are displayed as filled-in magenta circles. Points representing Γ2 values that were too large (>60 s−1) to be determined accurately are placed at the saturation level Γ2/Γ2max = 1. Interface residues are indicated by red ticks on the x-axis. (A) Results for EIN/HPr-E5C-EDTA-Mn2+ complexes. (B) Results for EIN/HPr-E32C-EDTA-Mn2+ complexes.DOI: http://dx.doi.org/10.7554/eLife.01370.005
+**Figure 2.:** PRE measurements were carried out at 300 μM EIN, 300 μM HPr, and 150 mM NaCl (Fawzi et al., 2010). Theoretical intermolecular PREs, calculated only from the coordinates of the specific EIN/HPr complex, are shown as black lines. Calculated PRE values, based on all generated encounter complexes, are shown as blue lines, and reveal substantial contributions by the non-specific structures. The experimental PRE rates (Γ2) are displayed as filled-in magenta circles. Points representing Γ2 values that were too large (>60 s−1) to be determined accurately are placed at the saturation level Γ2/Γ2max = 1. Interface residues are indicated by red ticks on the x-axis. (A) Results for EIN/HPr-E5C-EDTA-Mn2+ complexes. (B) Results for EIN/HPr-E32C-EDTA-Mn2+ complexes.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Theoretical intermolecular PREs, calculated from the coordinates of the specific EIN/HPr complex, are also shown as reference (black line). The experimental PRE rates (Γ2) are displayed as filled-in magenta circles. (A) Results for EIN/HPr-E5C-EDTA-Mn2+ compexes. (B) Results for EIN/HPr-E32C-EDTA-Mn2+ complexes.DOI: http://dx.doi.org/10.7554/eLife.01370.006
+**Figure 2—figure supplement 1.:** Theoretical intermolecular PREs, calculated from the coordinates of the specific EIN/HPr complex, are also shown as reference (black line). The experimental PRE rates (Γ2) are displayed as filled-in magenta circles. (A) Results for EIN/HPr-E5C-EDTA-Mn2+ compexes. (B) Results for EIN/HPr-E32C-EDTA-Mn2+ complexes.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** Mannitol/HPr interactions.(A) Native structure of the complex formed by IIAMannitol (grey) and HPr (yellow). The location of the paramagnetic tag, HPr-E5C-EDTA-Mn2+, is colored red and is indicated by a circle. The PDB ID of the complex is 1 J6T. (B) Centers of HPr structures, shown as blue spheres, in the encounter complex ensemble generated by the PIPER docking program. IIAMannitol, shown as grey solid, is considered the receptor. The native binding pose of HPr is shown as yellow cartoon. (C) Theoretical intermolecular PRE profiles calculated from the coordinates of the native structure only (black line), and based on all encounter complexes generated by the docking (blue line). The experimental PRE rates (Γ2) are displayed as filled-in magenta circles (Tang et al., 2006). Points representing Γ2 values that were too large (>60 s−1) to be determined accurately are placed at the saturation level Γ2/Γ2max = 1. The interface residues of IIAMannitol are indicated by red ticks on the x-axis.DOI: http://dx.doi.org/10.7554/eLife.01370.007
+**Figure 2—figure supplement 2.:** (A) Native structure of the complex formed by IIAMannitol (grey) and HPr (yellow). The location of the paramagnetic tag, HPr-E5C-EDTA-Mn2+, is colored red and is indicated by a circle. The PDB ID of the complex is 1 J6T. (B) Centers of HPr structures, shown as blue spheres, in the encounter complex ensemble generated by the PIPER docking program. IIAMannitol, shown as grey solid, is considered the receptor. The native binding pose of HPr is shown as yellow cartoon. (C) Theoretical intermolecular PRE profiles calculated from the coordinates of the native structure only (black line), and based on all encounter complexes generated by the docking (blue line). The experimental PRE rates (Γ2) are displayed as filled-in magenta circles (Tang et al., 2006). Points representing Γ2 values that were too large (>60 s−1) to be determined accurately are placed at the saturation level Γ2/Γ2max = 1. The interface residues of IIAMannitol are indicated by red ticks on the x-axis.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** (A) Normalized intermolecular PRE profiles for the HPr/HPr complex. The theoretical intermolecular PREs profile, calculated from low energy encounter complexes, is shown as a green line. The experimental PRE rates (Γ) are displayed as filled-in magenta circles (2Tang et al., 2008). Points representing Γ2 values that were too large (>60 s−1) to be determined accurately are placed at the saturation level Γ2/Γ2max = 1. Interface residues are indicated by red ticks on the x-axis. (B) Ensemble of low energy conformations of HPr/HPr interactions (Tang et al., 2008). One of the two HPr molecules, considered he receptor, is shown as grey cartoon. The centers of the other HPr positions generated by the docking are shown as small blue spheres. These structures were used for back-calculating the theoretical PRE profile (green curve) shown in A.DOI: http://dx.doi.org/10.7554/eLife.01370.008
+**Figure 2—figure supplement 3.:** (A) Normalized intermolecular PRE profiles for the HPr/HPr complex. The theoretical intermolecular PREs profile, calculated from low energy encounter complexes, is shown as a green line. The experimental PRE rates (Γ2) are displayed as filled-in magenta circles (Tang et al., 2008). Points representing Γ2 values that were too large (>60 s−1) to be determined accurately are placed at the saturation level Γ2/Γ2max = 1. Interface residues are indicated by red ticks on the x-axis. (B) Ensemble of low energy conformations of HPr/HPr interactions (Tang et al., 2008). One of the two HPr molecules, considered he receptor, is shown as grey cartoon. The centers of the other HPr positions generated by the docking are shown as small blue spheres. These structures were used for back-calculating the theoretical PRE profile (green curve) shown in A.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig2-figsupp4-v1.jpg)
-
-**Figure 2—figure supplement 4.:** Bashir et al., 2010), shown as pink spheres, and the ones generated by the PIPER docking program, shown as blue spheres.DOI: http://dx.doi.org/10.7554/eLife.01370.009
 
 Given the coordinates of a complex, one can back-calculate theoretical PRE profiles (‘Materials and methods’). As shown in Figure 2, the theoretical profile calculated from the coordinates in the X-ray structure of the native complex (black curve) substantially deviates from the experimental values for a number of residues. For HPr-E5C the largest differences occur at positions 59–97 and 160–167 of EIN, with smaller deviations at 23–37 and 183–189 (Figure 2A). For HPr-E32C the large differences are at positions 22–51, 56–74, 96–106, and 160–167 of EIN, with smaller differences at 184–189 (Figure 2B). These deviations show that the observed PRE rates cannot be explained well on the basis of the native binding mode of HPr alone, and provide at least qualitative evidence for the existence of lowly populated encounter states in rapid exchange with the final native complex (Tang et al., 2008).
 
@@ -93,49 +91,682 @@ To provide a control and to demonstrate that the use of an accurate energy funct
 
 Considering encounter complexes generated by PIPER using its physics based energy function we also obtained good agreement with experimental PRE data for other pairs of proteins. The first is the IIAMannitol/HPr complex (Cornilescu et al., 2002; Tang et al., 2006). Figure 2—figure supplement 2,B show the native structure of the complex and the ensemble of docked structures generated by PIPER. The paramagnetic label is placed at E5C of HPr, colored red and indicated by a small circle in Figure 2—figure supplement 2A. It is important that, similarly to the EIN/HPr system, the E5C-EDTA-Mn2+ label is on the far side of HPr from the interface in the native structure of the complex. Figure 2—figure supplement 2C shows the experimental PRE data, the theoretical PRE profile based on the native complex (black line), and the theoretical profile obtained by considering the 30,000 low energy structures generated by the docking (blue line). The correlation coefficient between the experimental PRE rates and the ones back-calculated from the native structure is 0.58, whereas using the docked structures for the PRE calculation increases the correlation coefficient to 0.78, demonstrating substantially improved prediction. Although some of the improvements occur at the interface residues, it is clearly helpful that the HPr-E5C-EDTA-Mn2+ label is far from the interface. The distance between the label and a number of IIAMannitol residues is substantially reduced in some of the encounter complexes, which makes the presence of minor species more pronounced. We also show observed PRE data and theoretical profiles calculated from the ensemble of structures generated by docking for the complexes HPr/HPr (Tang et al., 2008; Figure 2—figure supplement 3), and cytochrome c/cytochrome c peroxidase (Bashir et al., 2010) (Figure 2—figure supplement 4), demonstrating good qualitative agreement in both cases.
 
-## Energy landscapes of encounter complexes
+### Energy landscapes of encounter complexes
 
 Having established that the sampling algorithm and energy function are accurate enough for predicting ensembles of encounter complexes, we proceeded to the characterization of the energy landscape in a neighborhood of the native complex conformation. As in the previous section, we focused on the rigid-body motions of the ligand protein in the space fixed on the receptor protein, although local structural adjustments of the proteins were allowed for more accurate energy calculation. Geometrically the 6D translational/rotational space is the so-called Special Euclidean Group SE(3), which is the semidirect product of R3 of the translations and SO(3) of the rotations (Park, 1995; Park and Ravani, 1997; Shen et al., 2008; Mirzaei et al., 2012). Restricting considerations to encounter complexes in which the surfaces of the two proteins touch each other removes the distance of the two proteins as a variable, and the space can be parameterized in terms of 5 angular coordinates. Two angles are needed to define the direction from the center of the receptor to the center of the ligand interface, and the other three angles specify the rotation of the ligand. Although the resulting space is nonlinear and thus the 5 angular coordinates are interdependent, a 5D Euclidean space can be mapped onto this nonlinear space using exponential maps (Shen et al., 2008), and hence we will be able to use analysis tools such as PCA, developed for application in Euclidean space. Further details justifying the need for the use of exponential maps will be given in ‘Materials and methods’. Once an appropriate coordinate system was defined, we selected and densely sampled a region in the neighborhood of the native state to obtain information on the shape of the binding funnel (Camacho et al., 1999; Selzer and Schreiber, 2001; Wang and Wade, 2003; Miyashita et al., 2004). Since the apparent properties of the landscape depend both on the energy evaluation model and the method of sampling, to assess the generality of the results we used both PIPER (Kozakov et al., 2006) and the very different docking program RosettaDock (Gray et al., 2003), which is based on Monte Carlo minimization and rebuilds side chain conformations during the search. From each sampling calculation, performed either by PIPER or by RosettaDock, we selected the conformations below a certain energy threshold to delineate the floor of the energy funnel.
 
-Encounter complexes were generated from unbound protein structures (Chen et al., 2003) for a diverse set of 42 interacting protein pairs (Table 1). For each of these complexes, selected from the protein docking benchmark (Chen et al., 2003), both PIPER and RosettaDock found an energy funnel near the native state. Since this is generally not the case for complexes involving multiple subunits or large conformational changes upon binding, such complexes in the benchmark set were not considered. Structures were retained within 10 Å IRMSD from the native state. After sampling, the exponential coordinates were normalized to ensure that the variances in the sample set are the same along each coordinate axis, and the shape of the energy landscape over the selected region was studied by applying principal component analysis (PCA) to 5% of conformations with the lowest energy values. As will be emphasized in ‘Materials and methods’, the use of exponential maps, resulting in independent coordinates, is crucial for the success of our study, as only in this case can PCA separate the essential hyperspaces that bound the low energy ensemble.10.7554/eLife.01370.010Table 1.Eigenvalues (in %) obtained by PCA, and the angle between restrictive subspacesDOI: http://dx.doi.org/10.7554/eLife.01370.010PDB IDPIPERRosettaDockDiscrepancy (degrees)λ1λ2λ3λ4λ5λ1λ2λ3λ4λ51AVX59.432.86.21.20.367.415.513.43.40.351B6C72.119.16.91.30.584.210.23.31.90.441 E6E59.118.111.310.01.557.616.310.98.86.4291EAW44.331.722.21.00.957.933.04.64.00.4251 E6J78.713.57.10.30.347.631.518.71.21.0161GLA58.926.99.33.71.241.533.115.18.02.321IQD74.713.57.83.60.458.026.712.71.90.7131K7447.828.019.03.61.561.022.010.55.21.2191MAH60.322.411.74.41.252.822.013.57.74.0141N8O56.123.413.36.40.966.922.310.30.30.2201PPE56.426.414.91.70.647.144.47.90.40.131PXV68.317.09.64.30.832.127.223.614.52.781 R0R55.026.815.32.70.269.320.26.73.00.9132SNI49.331.617.01.50.679.615.53.51.20.2161KXQ47.730.016.84.11.366.330.04.40.20.1297CEI44.728.520.94.61.347.727.918.93.61.9192SIC58.623.49.47.21.484.28.84.12.40.531AY756.920.315.05.42.442.132.512.69.23.7271OPH72.615.59.22.20.584.29.35.90.40.2211UDI64.618.612.62.41.851.227.114.26.41.1331BUH44.827.717.69.20.640.332.916.68.21.9211FSK45.028.022.13.51.442.629.719.95.81.9211JPS57.125.712.44.00.856.328.813.70.70.6301DQJ51.431.315.01.40.946.519.817.412.34.0172B4255.627.712.83.40.545.423.115.711.54.4242FD665.118.19.94.62.236.423.921.013.75.0202HQS80.111.37.21.00.454.136.27.81.60.492I2570.318.59.90.80.556.015.312.810.55.3122MTA45.826.120.55.22.545.532.212.27.42.7301MLC59.331.56.81.21.142.730.117.37.02.8172HRK57.731.09.70.90.761.216.410.58.63.3301AHW74.416.37.71.10.546.731.517.23.11.5241Z5Y66.118.08.95.41.557.132.39.70.60.4292HLE54.028.113.03.41.467.012.912.15.92.122NZ869.414.18.45.22.944.828.315.17.34.5341BVN61.420.314.33.60.437.228.517.810.06.5321CGI66.915.410.95.41.957.927.910.73.00.5481GPW53.820.914.26.44.746.526.517.95.04.0272JEL72.416.38.12.20.947.831.612.96.80.8311NCA76.718.83.01.20.455.924.315.63.21.0272UUY69.415.412.71.60.973.616.29.01.00.2111KAC48.934.613.32.01.253.819.515.66.84.230
+Encounter complexes were generated from unbound protein structures (Chen et al., 2003) for a diverse set of 42 interacting protein pairs (Table 1). For each of these complexes, selected from the protein docking benchmark (Chen et al., 2003), both PIPER and RosettaDock found an energy funnel near the native state. Since this is generally not the case for complexes involving multiple subunits or large conformational changes upon binding, such complexes in the benchmark set were not considered. Structures were retained within 10 Å IRMSD from the native state. After sampling, the exponential coordinates were normalized to ensure that the variances in the sample set are the same along each coordinate axis, and the shape of the energy landscape over the selected region was studied by applying principal component analysis (PCA) to 5% of conformations with the lowest energy values. As will be emphasized in ‘Materials and methods’, the use of exponential maps, resulting in independent coordinates, is crucial for the success of our study, as only in this case can PCA separate the essential hyperspaces that bound the low energy ensemble.
+
+**Table 1.**
+ Eigenvalues (in %) obtained by PCA, and the angle between restrictive subspaces
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">PDB ID</th>
+      <th colspan="5">PIPER</th>
+      <th colspan="5">RosettaDock</th>
+      <th rowspan="2">Discrepancy (degrees)</th>
+    </tr>
+    <tr>
+      <th>λ1</th>
+      <th>λ2</th>
+      <th>λ3</th>
+      <th>λ4</th>
+      <th>λ5</th>
+      <th>λ1</th>
+      <th>λ2</th>
+      <th>λ3</th>
+      <th>λ4</th>
+      <th>λ5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1AVX</td>
+      <td>59.4</td>
+      <td>32.8</td>
+      <td>6.2</td>
+      <td>1.2</td>
+      <td>0.3</td>
+      <td>67.4</td>
+      <td>15.5</td>
+      <td>13.4</td>
+      <td>3.4</td>
+      <td>0.3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1B6C</td>
+      <td>72.1</td>
+      <td>19.1</td>
+      <td>6.9</td>
+      <td>1.3</td>
+      <td>0.5</td>
+      <td>84.2</td>
+      <td>10.2</td>
+      <td>3.3</td>
+      <td>1.9</td>
+      <td>0.4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1 E6E</td>
+      <td>59.1</td>
+      <td>18.1</td>
+      <td>11.3</td>
+      <td>10.0</td>
+      <td>1.5</td>
+      <td>57.6</td>
+      <td>16.3</td>
+      <td>10.9</td>
+      <td>8.8</td>
+      <td>6.4</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>1EAW</td>
+      <td>44.3</td>
+      <td>31.7</td>
+      <td>22.2</td>
+      <td>1.0</td>
+      <td>0.9</td>
+      <td>57.9</td>
+      <td>33.0</td>
+      <td>4.6</td>
+      <td>4.0</td>
+      <td>0.4</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>1 E6J</td>
+      <td>78.7</td>
+      <td>13.5</td>
+      <td>7.1</td>
+      <td>0.3</td>
+      <td>0.3</td>
+      <td>47.6</td>
+      <td>31.5</td>
+      <td>18.7</td>
+      <td>1.2</td>
+      <td>1.0</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>1GLA</td>
+      <td>58.9</td>
+      <td>26.9</td>
+      <td>9.3</td>
+      <td>3.7</td>
+      <td>1.2</td>
+      <td>41.5</td>
+      <td>33.1</td>
+      <td>15.1</td>
+      <td>8.0</td>
+      <td>2.3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1IQD</td>
+      <td>74.7</td>
+      <td>13.5</td>
+      <td>7.8</td>
+      <td>3.6</td>
+      <td>0.4</td>
+      <td>58.0</td>
+      <td>26.7</td>
+      <td>12.7</td>
+      <td>1.9</td>
+      <td>0.7</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>1K74</td>
+      <td>47.8</td>
+      <td>28.0</td>
+      <td>19.0</td>
+      <td>3.6</td>
+      <td>1.5</td>
+      <td>61.0</td>
+      <td>22.0</td>
+      <td>10.5</td>
+      <td>5.2</td>
+      <td>1.2</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>1MAH</td>
+      <td>60.3</td>
+      <td>22.4</td>
+      <td>11.7</td>
+      <td>4.4</td>
+      <td>1.2</td>
+      <td>52.8</td>
+      <td>22.0</td>
+      <td>13.5</td>
+      <td>7.7</td>
+      <td>4.0</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>1N8O</td>
+      <td>56.1</td>
+      <td>23.4</td>
+      <td>13.3</td>
+      <td>6.4</td>
+      <td>0.9</td>
+      <td>66.9</td>
+      <td>22.3</td>
+      <td>10.3</td>
+      <td>0.3</td>
+      <td>0.2</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>1PPE</td>
+      <td>56.4</td>
+      <td>26.4</td>
+      <td>14.9</td>
+      <td>1.7</td>
+      <td>0.6</td>
+      <td>47.1</td>
+      <td>44.4</td>
+      <td>7.9</td>
+      <td>0.4</td>
+      <td>0.1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1PXV</td>
+      <td>68.3</td>
+      <td>17.0</td>
+      <td>9.6</td>
+      <td>4.3</td>
+      <td>0.8</td>
+      <td>32.1</td>
+      <td>27.2</td>
+      <td>23.6</td>
+      <td>14.5</td>
+      <td>2.7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1 R0R</td>
+      <td>55.0</td>
+      <td>26.8</td>
+      <td>15.3</td>
+      <td>2.7</td>
+      <td>0.2</td>
+      <td>69.3</td>
+      <td>20.2</td>
+      <td>6.7</td>
+      <td>3.0</td>
+      <td>0.9</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>2SNI</td>
+      <td>49.3</td>
+      <td>31.6</td>
+      <td>17.0</td>
+      <td>1.5</td>
+      <td>0.6</td>
+      <td>79.6</td>
+      <td>15.5</td>
+      <td>3.5</td>
+      <td>1.2</td>
+      <td>0.2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>1KXQ</td>
+      <td>47.7</td>
+      <td>30.0</td>
+      <td>16.8</td>
+      <td>4.1</td>
+      <td>1.3</td>
+      <td>66.3</td>
+      <td>30.0</td>
+      <td>4.4</td>
+      <td>0.2</td>
+      <td>0.1</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>7CEI</td>
+      <td>44.7</td>
+      <td>28.5</td>
+      <td>20.9</td>
+      <td>4.6</td>
+      <td>1.3</td>
+      <td>47.7</td>
+      <td>27.9</td>
+      <td>18.9</td>
+      <td>3.6</td>
+      <td>1.9</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>2SIC</td>
+      <td>58.6</td>
+      <td>23.4</td>
+      <td>9.4</td>
+      <td>7.2</td>
+      <td>1.4</td>
+      <td>84.2</td>
+      <td>8.8</td>
+      <td>4.1</td>
+      <td>2.4</td>
+      <td>0.5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1AY7</td>
+      <td>56.9</td>
+      <td>20.3</td>
+      <td>15.0</td>
+      <td>5.4</td>
+      <td>2.4</td>
+      <td>42.1</td>
+      <td>32.5</td>
+      <td>12.6</td>
+      <td>9.2</td>
+      <td>3.7</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>1OPH</td>
+      <td>72.6</td>
+      <td>15.5</td>
+      <td>9.2</td>
+      <td>2.2</td>
+      <td>0.5</td>
+      <td>84.2</td>
+      <td>9.3</td>
+      <td>5.9</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>1UDI</td>
+      <td>64.6</td>
+      <td>18.6</td>
+      <td>12.6</td>
+      <td>2.4</td>
+      <td>1.8</td>
+      <td>51.2</td>
+      <td>27.1</td>
+      <td>14.2</td>
+      <td>6.4</td>
+      <td>1.1</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>1BUH</td>
+      <td>44.8</td>
+      <td>27.7</td>
+      <td>17.6</td>
+      <td>9.2</td>
+      <td>0.6</td>
+      <td>40.3</td>
+      <td>32.9</td>
+      <td>16.6</td>
+      <td>8.2</td>
+      <td>1.9</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>1FSK</td>
+      <td>45.0</td>
+      <td>28.0</td>
+      <td>22.1</td>
+      <td>3.5</td>
+      <td>1.4</td>
+      <td>42.6</td>
+      <td>29.7</td>
+      <td>19.9</td>
+      <td>5.8</td>
+      <td>1.9</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>1JPS</td>
+      <td>57.1</td>
+      <td>25.7</td>
+      <td>12.4</td>
+      <td>4.0</td>
+      <td>0.8</td>
+      <td>56.3</td>
+      <td>28.8</td>
+      <td>13.7</td>
+      <td>0.7</td>
+      <td>0.6</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>1DQJ</td>
+      <td>51.4</td>
+      <td>31.3</td>
+      <td>15.0</td>
+      <td>1.4</td>
+      <td>0.9</td>
+      <td>46.5</td>
+      <td>19.8</td>
+      <td>17.4</td>
+      <td>12.3</td>
+      <td>4.0</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>2B42</td>
+      <td>55.6</td>
+      <td>27.7</td>
+      <td>12.8</td>
+      <td>3.4</td>
+      <td>0.5</td>
+      <td>45.4</td>
+      <td>23.1</td>
+      <td>15.7</td>
+      <td>11.5</td>
+      <td>4.4</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>2FD6</td>
+      <td>65.1</td>
+      <td>18.1</td>
+      <td>9.9</td>
+      <td>4.6</td>
+      <td>2.2</td>
+      <td>36.4</td>
+      <td>23.9</td>
+      <td>21.0</td>
+      <td>13.7</td>
+      <td>5.0</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2HQS</td>
+      <td>80.1</td>
+      <td>11.3</td>
+      <td>7.2</td>
+      <td>1.0</td>
+      <td>0.4</td>
+      <td>54.1</td>
+      <td>36.2</td>
+      <td>7.8</td>
+      <td>1.6</td>
+      <td>0.4</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>2I25</td>
+      <td>70.3</td>
+      <td>18.5</td>
+      <td>9.9</td>
+      <td>0.8</td>
+      <td>0.5</td>
+      <td>56.0</td>
+      <td>15.3</td>
+      <td>12.8</td>
+      <td>10.5</td>
+      <td>5.3</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>2MTA</td>
+      <td>45.8</td>
+      <td>26.1</td>
+      <td>20.5</td>
+      <td>5.2</td>
+      <td>2.5</td>
+      <td>45.5</td>
+      <td>32.2</td>
+      <td>12.2</td>
+      <td>7.4</td>
+      <td>2.7</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>1MLC</td>
+      <td>59.3</td>
+      <td>31.5</td>
+      <td>6.8</td>
+      <td>1.2</td>
+      <td>1.1</td>
+      <td>42.7</td>
+      <td>30.1</td>
+      <td>17.3</td>
+      <td>7.0</td>
+      <td>2.8</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>2HRK</td>
+      <td>57.7</td>
+      <td>31.0</td>
+      <td>9.7</td>
+      <td>0.9</td>
+      <td>0.7</td>
+      <td>61.2</td>
+      <td>16.4</td>
+      <td>10.5</td>
+      <td>8.6</td>
+      <td>3.3</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>1AHW</td>
+      <td>74.4</td>
+      <td>16.3</td>
+      <td>7.7</td>
+      <td>1.1</td>
+      <td>0.5</td>
+      <td>46.7</td>
+      <td>31.5</td>
+      <td>17.2</td>
+      <td>3.1</td>
+      <td>1.5</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>1Z5Y</td>
+      <td>66.1</td>
+      <td>18.0</td>
+      <td>8.9</td>
+      <td>5.4</td>
+      <td>1.5</td>
+      <td>57.1</td>
+      <td>32.3</td>
+      <td>9.7</td>
+      <td>0.6</td>
+      <td>0.4</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>2HLE</td>
+      <td>54.0</td>
+      <td>28.1</td>
+      <td>13.0</td>
+      <td>3.4</td>
+      <td>1.4</td>
+      <td>67.0</td>
+      <td>12.9</td>
+      <td>12.1</td>
+      <td>5.9</td>
+      <td>2.1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2NZ8</td>
+      <td>69.4</td>
+      <td>14.1</td>
+      <td>8.4</td>
+      <td>5.2</td>
+      <td>2.9</td>
+      <td>44.8</td>
+      <td>28.3</td>
+      <td>15.1</td>
+      <td>7.3</td>
+      <td>4.5</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>1BVN</td>
+      <td>61.4</td>
+      <td>20.3</td>
+      <td>14.3</td>
+      <td>3.6</td>
+      <td>0.4</td>
+      <td>37.2</td>
+      <td>28.5</td>
+      <td>17.8</td>
+      <td>10.0</td>
+      <td>6.5</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>1CGI</td>
+      <td>66.9</td>
+      <td>15.4</td>
+      <td>10.9</td>
+      <td>5.4</td>
+      <td>1.9</td>
+      <td>57.9</td>
+      <td>27.9</td>
+      <td>10.7</td>
+      <td>3.0</td>
+      <td>0.5</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>1GPW</td>
+      <td>53.8</td>
+      <td>20.9</td>
+      <td>14.2</td>
+      <td>6.4</td>
+      <td>4.7</td>
+      <td>46.5</td>
+      <td>26.5</td>
+      <td>17.9</td>
+      <td>5.0</td>
+      <td>4.0</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>2JEL</td>
+      <td>72.4</td>
+      <td>16.3</td>
+      <td>8.1</td>
+      <td>2.2</td>
+      <td>0.9</td>
+      <td>47.8</td>
+      <td>31.6</td>
+      <td>12.9</td>
+      <td>6.8</td>
+      <td>0.8</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>1NCA</td>
+      <td>76.7</td>
+      <td>18.8</td>
+      <td>3.0</td>
+      <td>1.2</td>
+      <td>0.4</td>
+      <td>55.9</td>
+      <td>24.3</td>
+      <td>15.6</td>
+      <td>3.2</td>
+      <td>1.0</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>2UUY</td>
+      <td>69.4</td>
+      <td>15.4</td>
+      <td>12.7</td>
+      <td>1.6</td>
+      <td>0.9</td>
+      <td>73.6</td>
+      <td>16.2</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>0.2</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>1KAC</td>
+      <td>48.9</td>
+      <td>34.6</td>
+      <td>13.3</td>
+      <td>2.0</td>
+      <td>1.2</td>
+      <td>53.8</td>
+      <td>19.5</td>
+      <td>15.6</td>
+      <td>6.8</td>
+      <td>4.2</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
 
 The eigenvalues obtained by PCA are normalized to add to 100%. Each eigenvalue λ i can be then interpreted as the percentage of the total variance that is accounted for by the variance along the corresponding eigenvector vi. The smallest eigenvalue, λ5, is less than 5% for almost all complexes (Table 1). In many cases both λ5 and λ4 are small (their sum is less than 10%), indicating that the eigenvectors v4 and v5 span a ‘restrictive’ subspace where the low energy structures barely deviate from the native complex. In contrast, λ1 and λ2 typically sum up to more than 75% of variance. Thus, it is expected that in the ‘permissive’ subspace spanned by v1 and v2 the low energy structures may substantially differ from the native conformation.
 
-As an example,
+As an example, Figure 3A shows IRMSD and energy distributions along the five eigenvectors, calculated from the low energy structures generated by PIPER, for the complex between the retinoid X-receptor α (RXRα) and the peroxisome proliferator-activated receptor γ (PPARγ), considered here as the receptor and the ligand, respectively. The PDB entry of the complex is 1K74, but we docked the unbound (separately crystallized) RXRα and PPARγ structures rather than the components from the complex. Figure 3B shows the distributions of the same quantities, but based on the low energy structures generated by RosettaDock. The largest eigenvalue, λ1, is close to 50% for both energy functions. The corresponding movements along v1 are rotations of helix H12 of PPARγ around a hydrophobic patch, formed by the side chains of F432, A433, and L436, which binds to a large hydrophobic pocket of RXRα and remains almost at the same position in all low energy encounter complexes (Figure 3C, Figure 3—figure supplement 1; Video 1). As helix H12 rotates, the entire PPARγ moves with it until a loop formed by PPARγ residues 394 to 403 reaches a favorable position on the surface of RXRα. We note that hydrophobic patch on helix H12 and the residues connecting it to the rest of the protein (residues 413–433) are known to be essential for forming the heterodimer (Chan and Wells, 2009). Along the eigenvector v2 that correspond to the second largest eigenvalue λ2 we can observe how the amino end of helix H12 with the hydrophobic patch on it moves into its binding pocket (Video 2). Based on the eigenvalues λ1 and λ2 (Table 1), over 75% of all movement of PPARγ approaching RXRα occurs in the subspace spanned by the eigenvectors v1 and v2. Thus, this subspace can be regarded as the essential consensus of a very large number of association trajectories. In contrast to the permissive subspace, changes are very small along v5 (Figure 3D). Since the higher energy structures (not included in the data considered for PCA) can be substantially further from the native state than the ones with low energy, we conclude that the valley based on energy is much narrower than the valley based on geometry.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig3-v1.jpg)
 
-**Figure 3.:** (A) Distributions of IRMSD (green) and energy (cyan) values based on structures generated by PIPER as functions of the ‘balanced’ coordinates shown on the x-axis. Dark blue diamonds indicate low energy data points used for the PCA. The IRMSD (y-axis in the left column) is given in Å. The energy values (on the y-axis in the right column) are given by the PIPER scoring function. (B) Same as Figure 3A, but based on structures generated by RosettaDock. The energy values (on the y-axis in the right column) are given by the RosettaDock scoring function. (C) Encounter complexes along the most permissive direction v1. The ensemble includes mostly translations from the native state. (D) Encounter complexes along the most restrictive direction v5.DOI: http://dx.doi.org/10.7554/eLife.01370.011
+**Figure 3.:** (A) Distributions of IRMSD (green) and energy (cyan) values based on structures generated by PIPER as functions of the ‘balanced’ coordinates shown on the x-axis. Dark blue diamonds indicate low energy data points used for the PCA. The IRMSD (y-axis in the left column) is given in Å. The energy values (on the y-axis in the right column) are given by the PIPER scoring function. (B) Same as Figure 3A, but based on structures generated by RosettaDock. The energy values (on the y-axis in the right column) are given by the RosettaDock scoring function. (C) Encounter complexes along the most permissive direction v1. The ensemble includes mostly translations from the native state. (D) Encounter complexes along the most restrictive direction v5.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** The receptor, RXRα, is shown in surface representation. Color code: oxygen red, nitrogen blue, and carbon white.DOI: http://dx.doi.org/10.7554/eLife.01370.012
+**Figure 3—figure supplement 1.:** The receptor, RXRα, is shown in surface representation. Color code: oxygen red, nitrogen blue, and carbon white.
 
-As a second example, we show IRMSD and energy distributions and PCA results for an enzyme–inhibitor complex, subtilisin Carlsberg and its protein inhibitor, OMTKY3 (
+![Video 1.](https://cdn.elifesciences.org/articles/01370/elife-01370-media1.mp4.jpg)
+
+**Video 1.:** The receptor, RXRα, is shown as grey surface.
+
+![Video 2.](https://cdn.elifesciences.org/articles/01370/elife-01370-media2.mp4.jpg)
+
+**Video 2.:** The receptor, RXRα, is shown as grey surface.
+
+As a second example, we show IRMSD and energy distributions and PCA results for an enzyme–inhibitor complex, subtilisin Carlsberg and its protein inhibitor, OMTKY3 (Figure 4). The PDB entry of the complex is 1R0R. For this pair of proteins, the low energy encounter complexes along the eigenvectors v4 and v5 show even narrower distributions than in the previous example, both for PIPER and RosettaDock (Figure 4A,B). Since the essentially planar inhibitor loop (residues 13 to 19 of OMTKY3) is locked into the crevice at the enzyme’s active site, we expected that the motion along the most permissive direction would be the rigid body rotation of the entire inhibitor, possibly with slight readjustments of the loop. However, we have found that the motion along v1 is the move of the loop, and particularly the primary specificity residue L18, deeper into the binding pocket of the enzyme (Figure 4C, Figure 4—figure supplement 1; Video 3). The rotation along the loop is also present, but along the eigenvector v2 rather than v1 (Video 4). Based on the eigenvectors λ1 and λ2 (Table 1), 81.8% of the movements of OMTKY3 upon binding occurs in the subspace spanned by eigenvectors v1 and v2 for this complex. In contrast, the motion along the most restrictive direction v5 is a very small translation along the bottom of the active site (Figure 4D). It is important to note that, in principle, small eigenvalues identified by PCA could have also occur by chance due to undersampling a subspace. We performed simple Monte Carlo analyses to exclude this possibility (‘Materials and methods’).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig4-v1.jpg)
 
-**Figure 4.:** All notations are as in Figure 3. (A) Distributions of interface IRMSD and energy values based on the structures generated by PIPER. (B) Same as Figure 4A, but based on the RosettaDock dataset. (C) Encounter complexes along the most permissive direction v1. The ensemble consists of small rotations that leave the inhibitory loop position largely invariant. (D) Encounter complexes along the most restrictive direction v5.DOI: http://dx.doi.org/10.7554/eLife.01370.015
+**Figure 4.:** All notations are as in Figure 3. (A) Distributions of interface IRMSD and energy values based on the structures generated by PIPER. (B) Same as Figure 4A, but based on the RosettaDock dataset. (C) Encounter complexes along the most permissive direction v1. The ensemble consists of small rotations that leave the inhibitory loop position largely invariant. (D) Encounter complexes along the most restrictive direction v5.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Two snapshot of the motion are shown (in green and cyan) for residues 16 to 19 (CTLE), with L18 indicating the primary specificity residue.DOI: http://dx.doi.org/10.7554/eLife.01370.016
+**Figure 4—figure supplement 1.:** Two snapshot of the motion are shown (in green and cyan) for residues 16 to 19 (CTLE), with L18 indicating the primary specificity residue.
+
+![Video 3.](https://cdn.elifesciences.org/articles/01370/elife-01370-media3.mp4.jpg)
+
+**Video 3.:** The receptor, subtilisin Carlsberg, is shown as grey surface.
+
+![Video 4.](https://cdn.elifesciences.org/articles/01370/elife-01370-media4.mp4.jpg)
+
+**Video 4.:** The receptor, subtilisin Carlsberg, is shown as grey surface.
 
 As shown by the eigenvalues in Table 1 and by Figures 3 and 4, the energy funnels derived from the PCA of the energy landscapes generated by PIPER and RosettaDock slightly differ. This is not surprising, because we specifically selected two docking programs that are very different both in terms of their sampling algorithms and scoring functions (‘Materials and methods’). PIPER performs systematic rigid body sampling on a dense grid using a ‘smooth’ potential that allows for some overlaps (Kozakov et al., 2006). In contrast, RosettaDock samples the region of interest using a Monte Carlo minimization algorithm, which biases the search toward low energy regions, and thus the sampling is less exhaustive than the systematic sampling by PIPER. The method periodically rebuilds the complete set of interface side chains, followed by the optimization of the rigid body displacement. The energy is locally minimized in every iteration cycle of a Monte Carlo search algorithm (Gray et al., 2003), and since the clashes are continuously removed, RosettaDock can use an energy function that is more sensitive to small changes in the coordinates than the energy function used in PIPER. Accordingly, Panels A and B of Figures 3 and 4 display somewhat different shapes of the energy distributions around the native state placed at the center of the coordinate system. Using rigid structures without local minimization, the minimum of the PIPER energy may be somewhat shifted from the native state, resulting in a more skewed energy landscape than the one obtained with RosettaDock, which generally places the energy minimum closer to the native structure and hence has a more symmetric energy landscape. In view of the differences between the two energy functions we consider it important that the PCA analyses of low energy structures generated by either PIPER or RosettaDock yield similar distributions of the eigenvalues for all 42 complexes. For each complex, both programs result in two small eigenvalues λ5 and λ4. Although these eigenvalues are generally somewhat smaller for PIPER, because the rigid body approximation leads to a steeper increase in energy as we move away from the minimum along the most restrictive direction, both programs clearly indicate the existence of a restrictive subspace. In addition, Monte Carlo studies, described in the ‘Materials and methods’, show that the restrictive subspaces predicted PIPER and RosettaDock are fairly similar. The similarity of these subspaces obtained by two very different energy functions for all 42 complexes indicates that the reduction of dimensionality is an inherent property of protein–protein association. Both programs predict that, on the other end of the spectrum, the two largest eigenvalues, λ1 and λ2, together exceed 75% of the total variance for most complexes. Thus, in a neighborhood of the native state the encounter complexes are essentially restricted to a two dimensional permissive subspace in the rotational/translational space, and this conclusion is independent of the docking program used.
 
 ## Discussion
 
-## Generation of encounter complexes by docking
+### Generation of encounter complexes by docking
 
 Assuming moderate conformational changes and using grid approximation, the FFT based global and systematic sampling of the configurational space of two interacting proteins using a physics based energy function converts the docking problem into an exactly solvable problem of statistical mechanics (Kozakov et al., 2013). According to the CAPRI community-wide protein–protein docking experiment, this type of approximation gives good results for a large fraction of complexes (Lensink and Wodak, 2013). However, it has been well known that, for most protein pairs, such global search yields low energy structures in several regions of the conformational space, some of which are far from the structure of the native complex. Physics-based energy functions are expected to be globally valid for modeling interactions between proteins, including the non-native states. Thus, one can assume the energy values that are low relative to the average energy but still exceed the energy at the global minimum may lead to the formation of relatively short-lived encounter complexes along the association pathways. As shown in this paper, the agreement between experimental PRE data and theoretical PRE profiles calculated from the ensemble of structures generated by docking confirms this hypothesis, and thus structures of encounter complexes can be obtained simply as byproducts of docking without any further computational expense. While this result is not unexpected, in view of the limited structural information available on encounter complexes it is potentially significant.
 
-## Identification of encounter complexes using PRE
+### Identification of encounter complexes using PRE
 
 To detect intermediate structures in the association of proteins EIN and HPr, paramagnetic labels were introduced at two sites on HPr, one at a time, and the transverse paramagnetic relaxation enhancement (PRE) rates, Γ2, of the backbone amide protons (1HN) of EIN were measured. Since the population of the intermediate structures is generally much lower than the population of the native complex, it is important to discuss why PRE can detect the presence of encounter complexes. The major factor is that the magnitude of the PREs is proportional to < r−6>, where r is the distance between the nucleus of interest and the paramagnetic center, and <> denotes averaging over the ensemble of structures. Due to the large magnetic moment of an unpaired electron, the effect is detectable for sizeable separations (up to ∼34 Å for Mn2+). A hypothetical example can be used to explain why the method can detect states with very low populations. We consider an ensemble that includes a major species A with the population, pA, of 99%, and with a paramagnetic center to proton distance of 30 Å, and a minor species B with the population, pB, of 1%, and with a paramagnetic center to proton distance of 8 Å. We calculate Γ2 for this proton in a two-site exchange system between A and B, where Γ2 is defined as the difference in the transverse relaxation rates of the paramagnetic and diamagnetic states (Iwahara and Clore, 2006). For a ∼30-kDa complex, for species A the 1H-Γ2 arising from Mn2+ is ∼2 s−1 (Γ2,A), and for species B it is ∼5.6 × 103 s−1 (Γ2,B). Considering B as a short-lived encounter complex and A as the native state, and assuming that the system is in the fast exchange regime, the apparent PRE rate, Γ2, is the population weighted average of the Γ2 rates of the two species, that is, Γ2 = pA Γ2,A + pB Γ2,B (Iwahara and Clore, 2006). Based on this expression Γ2 is ∼30-fold larger than Γ2,A, thereby permitting one to both infer the presence of, and obtain some structural information on, the minor species, because the PRE is a highly distance-dependent quantity. Thus, according to this simple explanation, the PREs can clearly capture the footprint of minor species that exchange rapidly with the native complex, in spite of their much lower concentration.
 
 In a realistic protein–protein association the PRE rate, Γ2, is the population weighted average of the Γ2 rates over the native state and the entire ensemble of encounter complexes. The strong distance dependence of Γ2 implies that the observed values are sensitive even to small conformational changes that may occur, for example, due to changes in the rotameric state of the EDTA-Mn2+ paramagnetic probe. Thus, as shown in Figure 2, the PRE data, while sensitive to the presence of minor species, are also fairly noisy (‘Materials and methods’). In spite of their substantial variance, the data are informative, since PREs generally also occur at residues that are far from the paramagnetic label in the native complex but are getting closer to it in some members of the encounter ensemble, clearly indicating the presence of non-native transition states. As the examples studied in this paper show, the minor species can be better detected if the label is far from the interface. In fact, a label placed close to interface generates a strong PRE signal, and thus the PRE profile back-calculated from the native structure already correlates well with the data. However, accounting for the encounter complex ensemble most likely improves the prediction even in such cases, but the improvement is generally smaller than the one with the paramagnetic label placed far from the interface.
 
-## Reduction of dimensionality in protein–protein association
+### Reduction of dimensionality in protein–protein association
 
 The reduction of dimensionality in molecular association was originally proposed to explain high binding rates (von Hippel and Berg, 1989), particularly the ability of proteins to locate their target sites along DNA (Riggs et al., 1970). Dimensionality reduction is caused by interaction forces that are non-specific and thus do not lead to binding at a specific site, but keep the macromolecules in proximity for a prolonged time, allowing an extensive search of the surface along certain directions while restraining the search along others (Ubbink, 2009). This is clearly the case for DNA, whose negative charge attracts positively charged proteins without providing a specific interaction site (Iwahara et al., 2006; Gorman and Greene, 2008). It is well known that long-range electrostatic interactions can also increase the rates of association of two proteins with net opposite charges or with strong charge dipoles, as the search for the reactive patches is facilitated by dipolar pre-orientation of the proteins upon their approach (Schreiber et al., 2009). Such charge interactions prolong the lifetime of the transition state and increase the fraction of productive complexes, and thus can reduce dimensionality. However, it is frequently assumed that, due to specific charge–charge interactions and their irregular surface, proteins do not have ensembles of orientations having similar energies and thus allowing for search along the surface. We have shown here that this is definitely not the case because the energy landscape of interacting proteins, at least within the 10 Å IRMSD neighborhood of the native state, always includes a permissive subspace along which the conformation of the complex can substantially change without crossing significant energy barriers. Thus, there is no reason to assume that the interactions are nonspecific in protein-DNA association but are specific when two proteins associate. In fact, for all 42 protein pairs, some of which have strong electrostatic interactions, the energy landscape is smooth funnel in a two dimensional permissive subspace. In all cases this subspace captures at least 75% of the total motion as the two molecules approach the native state. For each of the 42 complexes we also detect a high energy subspace, which reduces the dimensionality of the space available to encounter complexes along the association pathways. Thus, there is much less difference between protein-DNA and protein–protein association than it was previously believed.
 
@@ -143,43 +774,53 @@ Finally we note that the reduced dimensionality of the search space can potentia
 
 ## Materials and methods
 
-## Global sampling by the Fast Fourier transform (FFT) correlation approach
+### Global sampling by the Fast Fourier transform (FFT) correlation approach
 
-In order to fully explore the conformational space in protein–protein association we perform exhaustive evaluation of an energy function in the discretized space of mutual orientations of the two proteins using the docking program PIPER, which is based on the Fast Fourier transform (FFT) correlation approach (Kozakov et al., 2006). The center of mass of the first protein, defined here as the receptor, is fixed at the origin of the coordinate system, whereas the second protein (usually the smaller of the two), defined as the ligand, is rotated and translated. The translational space is represented as a grid of 1.0 Å displacements of the ligand center of mass, and the rotational space is sampled using 70,000 rotations based on a deterministic layered Sukharev grid sequence, which quasi-uniformly covers the space. The energy expression used for the FFT based sampling includes simplified van der Waals energy Evdw with attractive (Eattr) and repulsive (Erep) contributions, the electrostatic interaction energy Eelec, and a statistical pairwise potential Epair, representing other solvation effects (Chuang et al., 2008):E=Evdw+w2Eelec+w3Epair
+In order to fully explore the conformational space in protein–protein association we perform exhaustive evaluation of an energy function in the discretized space of mutual orientations of the two proteins using the docking program PIPER, which is based on the Fast Fourier transform (FFT) correlation approach (Kozakov et al., 2006). The center of mass of the first protein, defined here as the receptor, is fixed at the origin of the coordinate system, whereas the second protein (usually the smaller of the two), defined as the ligand, is rotated and translated. The translational space is represented as a grid of 1.0 Å displacements of the ligand center of mass, and the rotational space is sampled using 70,000 rotations based on a deterministic layered Sukharev grid sequence, which quasi-uniformly covers the space. The energy expression used for the FFT based sampling includes simplified van der Waals energy Evdw with attractive (Eattr) and repulsive (Erep) contributions, the electrostatic interaction energy Eelec, and a statistical pairwise potential Epair, representing other solvation effects (Chuang et al., 2008):
 
-The individual energy terms are calculated by the Evdw=Eattr+w1Erep, Eelec=∑i∑j[qiqj/{r2+D2 exp(−r2/4D2)}1/2], and Epair = Σi Σj εij, where r is the distance between atoms i and j, D is an atom-type independent approximation of the generalized Born radius, and εij is a pairwise interaction potential between atoms i and j. All energy expressions are defined on the grid. The coefficients w1 = 4, w2 = 600, w3 = 5, weight the different contributions to the scoring function, and are based on calorimetric considerations. In order to evaluate the energy function E by FFT, it must be written as a sum of correlation functions. The first two terms, Evdw and Eelec, satisfy this condition, whereas Epair is written as a sum of a few correlation functions, using an eigenvalue-eigenvector decomposition (Kozakov et al., 2006). For each rotation, this expression can be efficiently calculated using P forward and one inverse Fast Fourier transforms. The calculations are performed for each of the 70,000 rotations, and one or several lowest energy translations for each rotation are retained. The results are clustered with a 10 Å IRMSD radius around the native coordinate.
+$$
+E=E_{vdw}+w_{2}E_{elec}+w_{3}E_{pair}
+$$
 
-## Generating encounter complexes
+The individual energy terms are calculated by the $E_{vdw}=E_{attr}+w_{1}E_{rep}, E_{elec}=\sum_{i}\sum_{j}[q_{i}q_{j}/{r^{2}+D^{2} exp(−r^{2}/4D^{2})}^{1/2}]$, and Epair = Σi Σj εij, where r is the distance between atoms i and j, D is an atom-type independent approximation of the generalized Born radius, and εij is a pairwise interaction potential between atoms i and j. All energy expressions are defined on the grid. The coefficients w1 = 4, w2 = 600, w3 = 5, weight the different contributions to the scoring function, and are based on calorimetric considerations. In order to evaluate the energy function E by FFT, it must be written as a sum of correlation functions. The first two terms, Evdw and Eelec, satisfy this condition, whereas Epair is written as a sum of a few correlation functions, using an eigenvalue-eigenvector decomposition (Kozakov et al., 2006). For each rotation, this expression can be efficiently calculated using P forward and one inverse Fast Fourier transforms. The calculations are performed for each of the 70,000 rotations, and one or several lowest energy translations for each rotation are retained. The results are clustered with a 10 Å IRMSD radius around the native coordinate.
+
+### Generating encounter complexes
 
 Unbound structures were used both for the receptor, EIN (chain A from PDB (Berman et al., 2000) entry 1ZYM) and for the ligand, HPr (chain P from PDB entry 2JEL). Encounter complexes were generated using the global systematic Fast Fourier Transform based docking program PIPER (Kozakov et al., 2006). The docking was performed with each of the three conformers of EDTA-Mn2+ group, both at positions E5C and E32C of HPr (Fawzi et al., 2010). For each conformer, the 10,000 lowest energy complex structures were retained for the calculation of PRE rates.
 
-## Transverse paramagnetic relaxation enhancement (PRE) rate calculation
+### Transverse paramagnetic relaxation enhancement (PRE) rate calculation
 
-To calculate the transverse PRE rates (Γ2) from the ensemble of encounter complexes generated by the FFT based sampling we use the Nst = 30,000 (10,000 for each of the three conformers of EDTA-Mn2+) lowest energy structures. The observed PRE values are the PRE rates averaged over a population (Iwahara et al., 2004; Tang et al., 2006), and hence<Γ2(i)>=(∑jΓji)/Nstwhere Γji is the PRE rate for residue i of the jth structure in the ensemble. Each individual Γji value is proportional to the inverse sixth power of distance rij between the backbone amide proton (directly bonded to 15N) of the ith residue and the paramagnetic ion Mn2+. To account for magnetic trap flexibility, we use the three state EDTA-Mn2+ Solomon-Bloembergen approximation (Iwahara et al., 2004; Tang et al., 2006). With these assumptions the PRE rates are given by Γji = C × Σk (rikj)−6, where C = 1.2 × 1010 Å6/s and rikj is the distance between residue i and the kth state of EDTA-Mn2+ in the jth structure in the low energy ensemble of docked configurations. The Γji values are limited to 90s−1,that is, Γji = 90 if Γji ≥ 90. Introducing this threshold is based on the observation that both theoretical and experimental Γji values become very uncertain over this threshold because small distance variations strongly affect the result (Kim et al., 2008; Fawzi et al., 2010).
+To calculate the transverse PRE rates (Γ2) from the ensemble of encounter complexes generated by the FFT based sampling we use the Nst = 30,000 (10,000 for each of the three conformers of EDTA-Mn2+) lowest energy structures. The observed PRE values are the PRE rates averaged over a population (Iwahara et al., 2004; Tang et al., 2006), and hence
 
-## Sampling by Monte Carlo minimization
+$$
+<Γ_{2}(i)>=(\sum_{j}Γ_{ji})/N_{st}
+$$
+
+where Γji is the PRE rate for residue i of the jth structure in the ensemble. Each individual Γji value is proportional to the inverse sixth power of distance rij between the backbone amide proton (directly bonded to 15N) of the ith residue and the paramagnetic ion Mn2+. To account for magnetic trap flexibility, we use the three state EDTA-Mn2+ Solomon-Bloembergen approximation (Iwahara et al., 2004; Tang et al., 2006). With these assumptions the PRE rates are given by Γji = C × Σk (rikj)−6, where C = 1.2 × 1010 Å6/s and rikj is the distance between residue i and the kth state of EDTA-Mn2+ in the jth structure in the low energy ensemble of docked configurations. The Γji values are limited to 90s−1,that is, Γji = 90 if Γji ≥ 90. Introducing this threshold is based on the observation that both theoretical and experimental Γji values become very uncertain over this threshold because small distance variations strongly affect the result (Kim et al., 2008; Fawzi et al., 2010).
+
+### Sampling by Monte Carlo minimization
 
 The free energy landscape near the native complex was explored using both PIPER, based on the Fast Fourier transform (FFT) correlation approach (Kozakov et al., 2006) and RosettaDock, a docking program based on the Monte Carlo minimization (MCM) algorithm (Gray et al., 2003). In each MCM cycle, RosettaDock perturbs the position of the ligand by random translations and rotations, followed by adjusting the distance between the ligand and receptor to create a contact. Next, a fast MCM at low resolution optimizes the complex orientation with respect to features that do not depend on the explicit conformations of the side chains. Finally, the side chains are added, and an all-atom optimization locates the local minimum energy conformation. The complete set of interface side chains is repacked every eight cycles, followed by the optimization the rigid body displacement. After each move, side chain packing, and minimization, an energy score is calculated. The new position is kept or rejected according to the standard Metropolis acceptance criterion (Gray et al., 2003). RosettaDock uses a detailed energy function which includes van der Waals interactions with a linear term serving as the repulsive part, a solvation term based on a pairwise Gaussian solvent exclusion model, hydrogen bonding energies using an orientation-dependent empirical function, a rotamer probability term, residue–residue atom pair interactions for charged residues, and a simple electrostatic term across the protein–protein interface.
 
-## Parameterizing the conformational space
+### Parameterizing the conformational space
 
 The origin of the reference frame is placed at the center of the receptor, and the z-axis is directed toward the center of the interface of the native conformation. The translation of the ligand is described by the vector from the center of the receptor to the center of the ligand interface (as opposed to the center of the ligand), and the rotation of the ligand is also defined around the center of its interface. This choice is made to decouple, as much as possible, the effects of translation on the locations of the interface atoms from those of the rotation. A translation vector y ∈ R3 can be represented by a triplet (r,θ,φ), where r = ||y|| is the distance, θ is the azimuth angle between the projection of y on the xy-plane and the x-axis (longitude, 0 ≤ θ < 2π), and φ is the zenith angle between the z-axis and the vector y (colatitude, 0 ≤ φ < π). As will be discussed, we consider r separately, and focus on selecting appropriate parameterizations for (θ,φ) compounded with the rotational space SO(3).
 
-Parameterizing rotations is problematic because rotations are non-Euclidean in nature (i.e., travelling infinitely far in any direction will bring you back to your starting point an infinite number of times). Any attempt to parameterize the entire set of three degrees-of-freedom (DOF) rotations by an open subset of Euclidean space (as do Euler angles) will suffer from gimbal lock, the loss of rotational degrees of freedom, due to singularities in the parameter space (
+Parameterizing rotations is problematic because rotations are non-Euclidean in nature (i.e., travelling infinitely far in any direction will bring you back to your starting point an infinite number of times). Any attempt to parameterize the entire set of three degrees-of-freedom (DOF) rotations by an open subset of Euclidean space (as do Euler angles) will suffer from gimbal lock, the loss of rotational degrees of freedom, due to singularities in the parameter space (Grassia, 1998). Parameterizations that are themselves defined over non-Euclidean spaces (such as the set of unit quaternions embedded in R4) may remain singularity-free, and thus avoid gimbal lock. Employing such parameterizations is complicated, however, since the numerical tools such as optimization and PCA assume Euclidean parameterizations; therefore we must either develop new tools whose domains are non-Euclidean, or complicate our systems by imposing explicit constraints, for example, to assure that the quaternions stay on the unit sphere (Grassia, 1998). In this paper we use exponential maps (Park, 1995; Park and Ravani, 1997; Shen et al., 2008) to project an Euclidean space onto the nonlinear rotational space. As an example, the simplest exponential map defines a local one-to-one correspondence between the unit circle, which is a nonlinear space (called the circle group), centered at 0 in the complex plane, and the tangent space at 1, which can be identified with the imaginary line in the complex plane. The exponential map for the circle group is given by it → eit, where i = √(−1), it specifies a point on the tangent line, and the exponential function projects it into the corresponding point of the circle (Figure 5A). Extending the map to three dimensions, the exponential map projecting the tangent plain of a 3D sphere onto the surface of the sphere is shown in Figure 5B.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01370/elife-01370-fig5-v1.jpg)
 
-**Figure 5.:** (A) Parameterization of the unit circle using an exponential map. The function e is a local one-to-one mapping of the tangent line around p = 1 onto the unit circle. (itB) Prameterization of the 3D unit sphere using exponential parameters.DOI: http://dx.doi.org/10.7554/eLife.01370.019
+**Figure 5.:** (A) Parameterization of the unit circle using an exponential map. The function eit is a local one-to-one mapping of the tangent line around p = 1 onto the unit circle. (B) Prameterization of the 3D unit sphere using exponential parameters.
 
 For (θ,φ) the exponential coordinates are (σ1,σ2) = (-φ sinθ, φ cosθ). For SO(3), the exponential coordinates are ω = (ω1, ω2, ω3) ∈ R3, where ω1, ω2, and ω3 are elements of a skew-symmetric matrix (Park, 1995; Shen et al., 2008; Mirzaei et al., 2012). The vector (σ1, σ2, ω1, ω2, ω3) defines the relative orientation of the two rigid proteins. Once this relative orientation is given, the binding distance r along the translation vector y (which connects the centers of the receptor with the center of the ligand’s interface) is determined by the assumptions that the two proteins are in contact but do not overlap (Shen et al., 2008). Complexes generated by the docking methods used in this work always have this property. In particular, given a complex structure generated by the FFT sampling approach PIPER (Kozakov et al., 2006), we can uniquely determine the corresponding (σ1, σ2, ω1, ω2, ω3) coordinates and the value of r. Since RosettaDock (Gray et al., 2003) generally changes the conformations of the component proteins, to isolate the rigid body motion we have to fit the initial protein structures to the complex and determine the closest rigid body transformation, projecting the higher dimensional motion into the rotational-translational space.
 
-## Sampling the near-native region and principal component analysis
+#### Sampling the near-native region and principal component analysis
 
 We sample energy values in a sphere in the 5D parameter space around the point (0, 0, 0, 0, 0), which corresponds to the native conformation. Since we all five coordinates are angles, the radius of the sphere is also defined as an angle, and we used 22.5° as the radius, which roughly translates into a radius of 10 Å IRMSD neighborhood for relatively small proteins. After the FFT based sampling using the PIPER program (Kozakov et al., 2006) we selected 5000 structures, uniformly distributed within this sphere. Conformations with more than 10 Å IRMSD from the native structure were discarded, resulting in about 4000 structures. RosettaDock (Gray et al., 2003) was used to generate 2000 structures within the 10 Å IRMSD radius. After sampling we normalized the 5D coordinates to ensure that the variances in the sample set are the same along each coordinate axis, replacing each vector (σ1, σ2, ω1, ω2, ω3) with its normalized version (x1, x2, x3, x4, x5). The use of such normalized coordinates removed the potential differences in the scaling of the initial angular parameters, and also rendered the results less dependent on the relative sizes of the two component proteins. For each of the two scoring functions, principal component analysis (PCA) was applied to the so-called ‘most favorable’ conformations whose energy values were below a certain threshold, for example, in the lowest 5% for the FFT-based sampling data. Let N denote the number of such favorable structures. The normalized coordinates (x1, x2, x3, x4, x5) of the N structures were arranged into a N-by-5 matrix X, where each row represented a conformation. The PCA analysis computed the eigenvalues and eigenvectors of the covariance matrix
 
 (X–μX)’(X–μX), where μX is the sample mean and prime denotes transpose. We sorted the eigenvalues in descending order and normalized them such that their sum equaled 1.0 (100%). The results were denoted by λ1,…, λ5, and v1,…, v5 denote the corresponding eigenvectors, which are mutually orthogonal.
 
-## Further validation of the energy landscape
+### Further validation of the energy landscape
 
 Since small eigenvalues identified by PCA might also occur by chance due to undersampling a subspace, we performed a simple Monte Carlo analysis to show that this is not the case. PCA was based on at least 100 low energy structures for each of the 42 complexes, and thence we generated 100 random vectors in the 5D space, applied PCA to derive the eigenvalues, and performed this experiment 1000 times. Results confirmed that the probability of λ5 < 10% is less than 0.01. Thus, in view of the large number of sample points we used, it is very unlikely that the small eigenvalues shown in Table 1 occur due to undersampling.
 

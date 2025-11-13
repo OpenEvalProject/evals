@@ -15,15 +15,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01kq0pv72 MOE Key Laboratory of Laser Life Science & Institute of Laser Life Science, Guangdong Provincial Key Laboratory of Laser Life Science, Guangzhou Key Laboratory of Spectral Analysis and Functional Probes, College of Biophotonics, School of Optoelectronic Science and Engineering, South China Normal University Guangzhou China
-2. https://ror.org/0106qb496 State Key Laboratory of Reproductive Regulation and Breeding of Grassland Livestock, College of Life Sciences, Inner Mongolia University Hohhot China
-3. https://ror.org/0106qb496 Key Laboratory of Herbage and Endemic Crop Biotechnology, and College of Life Sciences, Inner Mongolia University Hohhot China
+1. MOE Key Laboratory of Laser Life Science & Institute of Laser Life Science, Guangdong Provincial Key Laboratory of Laser Life Science, Guangzhou Key Laboratory of Spectral Analysis and Functional Probes, College of Biophotonics, School of Optoelectronic Science and Engineering, South China Normal University Guangzhou China ([ROR:01kq0pv72](https://ror.org/01kq0pv72))
+2. State Key Laboratory of Reproductive Regulation and Breeding of Grassland Livestock, College of Life Sciences, Inner Mongolia University Hohhot China ([ROR:0106qb496](https://ror.org/0106qb496))
+3. Key Laboratory of Herbage and Endemic Crop Biotechnology, and College of Life Sciences, Inner Mongolia University Hohhot China ([ROR:0106qb496](https://ror.org/0106qb496))
 
 † Corresponding author
 
 ## Abstract
 
-Autophagy-related gene 6 (ATG6) plays a crucial role in plant immunity. Nonexpressor of pathogenesis-related genes 1 (NPR1) acts as a signaling hub of plant immunity. However, the relationship between ATG6 and NPR1 is unclear. Here, we find that ATG6 directly interacts with NPR1. ATG6 overexpression significantly increased nuclear accumulation of NPR1. Furthermore, we demonstrate that ATG6 increases NPR1 protein levels and improves its stability. Interestingly, ATG6 promotes the formation of SINCs (SA-induced NPR1 condensates)-like condensates. Additionally, ATG6 and NPR1 synergistically promote the expression of pathogenesis-related genes. Further results showed that silencing ATG6 in NPR1-GFP exacerbates Pst DC3000/ avrRps4 infection, while double overexpression of ATG6 and NPR1 synergistically inhibits Pst DC3000/ avrRps4 infection. In summary, our findings unveil an interplay of NPR1 with ATG6 and elucidate important molecular mechanisms for enhancing plant immunity.
+Autophagy-related gene 6 (ATG6) plays a crucial role in plant immunity. Nonexpressor of pathogenesis-related genes 1 (NPR1) acts as a signaling hub of plant immunity. However, the relationship between ATG6 and NPR1 is unclear. Here, we find that ATG6 directly interacts with NPR1. ATG6 overexpression significantly increased nuclear accumulation of NPR1. Furthermore, we demonstrate that ATG6 increases NPR1 protein levels and improves its stability. Interestingly, ATG6 promotes the formation of SINCs (SA-induced NPR1 condensates)-like condensates. Additionally, ATG6 and NPR1 synergistically promote the expression of pathogenesis-related genes. Further results showed that silencing ATG6 in NPR1-GFP exacerbates Pst DC3000/avrRps4 infection, while double overexpression of ATG6 and NPR1 synergistically inhibits Pst DC3000/avrRps4 infection. In summary, our findings unveil an interplay of NPR1 with ATG6 and elucidate important molecular mechanisms for enhancing plant immunity.
 
 ## Introduction
 
@@ -37,35 +37,137 @@ Here, we show that ATG6 and NPR1 synergistically enhance Arabidopsis resistance 
 
 ## Results
 
-## NPR1 physically interacts with ATG6 in vitro and in vivo
+### NPR1 physically interacts with ATG6 in vitro and in vivo
 
 To examine the relationship between ATGs and NPRs, we predicted that some ATGs might interact with NPRs. In a yeast two-hybrid (Y2H) screen, we identified that NPR1, NPR3, and NPR4 could interact with ATG6 and several ATG8 isoforms (Figure 1—figure supplement 1 and Appendix 1—result 1). In this study, we mainly investigated the relationship between ATG6 and NPR1 during the process of plant immune response. First, the NPR1 truncations NPR1-N (1-328AA, containing the BTB/POZ domain, ANK1, ANK2) and NPR1-C (328-594AA, containing the ANK3, ANK4, SBD, and NLS) were used to identify the interaction domains between NPR1 and ATG6. The results showed that NPR1-C interacted with full-length ATG6 in yeast (Figure 1a, line 3). The interaction between NPR1 and SnRK2.8 was used as a positive control (Lee et al., 2015). Second, pull-down assays were performed in vitro. NPR1-His bound GST-ATG6, but not GST (Figure 1b). Furthermore, co-immunoprecipitation assays were performed in N. benthamiana, as shown in Figure 1c, ATG6-mCherry was co-immunoprecipitated with NPR1-GFP. In Figure 1—figure supplement 2, fluorescence signals of NPR1-GFP and ATG6-mCherry were co-localized in both the nucleus and cytoplasm. The interaction between ATG6 and NPR1 was also verified by a bimolecular fluorescence complementation (BiFC) assay (Figure 1d, e). These results demonstrate that ATG6 interacts with NPR1 both in vitro and in vivo.
 
-## ATG6 co-localized with NPR1 in the nucleus
+![Figure 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig1-v1.jpg)
+
+**Figure 1.:** (a) Interaction of NPR1 with ATG6 in yeast. The CDS of ATG6, NPR1, NPR1-N (1–984 bp), NPR1-C (984–1782 bp), and SnRK2.8 were fused to pGADT7 (AD) and pGBKT7 (BD), respectively. Co-transformation of NPR1-BD + AD, BD + ATG6-AD, BD + SnRK2.8-AD, NPR1-N-BD + AD, and NPR1-C-BD + AD were used as negative controls. The interaction of NPR1-BD and SnRK2.8-AD was used as a positive control. Yeast growth on SD/-Trp-Leu-His-Ade media represents interaction. Numbers represent the dilution fold of yeast. 0, –1 (10-fold dilution), –2 (100-fold dilution), and –3 (1000-fold dilution). (b) In vitro pull-down assays of NPR1-His with GST-ATG6 fusion protein. NPR1-His prokaryotic proteins were incubated with GST-tag Purification Resin conjugated with GST-ATG6, GST, and SnRK2.8-GST. Western blotting analysis with anti-GST and anti-His. Black asterisk indicates SnRK2.8-GST bands. Red asterisk indicates GST-ATG6 bands. (c) Co-immunoprecipitation of NPR1 with ATG6 in vivo. Total protein was extracted from Nicotiana benthamiana transiently transformed with ATG6-mCherry + GFP and ATG6-mCherry + NPR1-GFP, followed by IP with GFP-Trap. Western blots analysis with ATG6 and GFP antibodies. (d) Bimolecular fluorescence complementation assay of NPR1 with ATG6 in N. benthamiana leaves. Agrobacterium carrying ATG6-cYFP and NPR1-nYFP was co-expressed in leaves of N. benthamiana for 3 days. As a positive control, NPR1-nYFP and SnRK2.8-cYFP were co-expressed. As negative controls, nYFP and ATG6-cYFP, NPR1-nYFP and cYFP, nYFP and SnRK2.8-cYFP were co-expressed. Confocal images were obtained from mCherry, YFP. nls-mCherry as a nuclear localization mark. Scale bar = 100 μm. (e) Relative fluorescence intensity of YFP in (d) using ImageJ software, ND means not detected, n = 15 independent images were analyzed to quantify YFP fluorescence. ** indicates that the significant difference compared to the control is at the level of 0.01 (Student’s t-test p value, **p < 0.01). All experiments were performed with three biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Interaction of NPR1、NPR3 and NPR4 with ATG6 in yeast, respectively. (b) Interaction of NPR1、NPR3 and NPR4 with ATG8e in yeast, respectively. (c) Interaction of NPR1、NPR3 and NPR4 with ATG8g in yeast, respectively. (d) Interaction of NPR1、NPR3 and NPR4 with ATG8f in yeast, respectively. (e) Interaction of NPR1 with ATG8d in yeast. (f) Interaction of NPR3 with ATG8d in yeast. The CDS of NPR1, NPR3, NPR4, ATG6, and ATG8d-g were fused to the AD and BD domains, respectively, and co-expressed with yeast cells. Yeast cell growth on SD/-Trp-Leu-His-Ade media represents interaction. Add different concentrations of SA to SD/-Trp-Leu-His-Ade medium to verify the effect of SA on their interactions. All experiments were performed with three biological replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** NPR1-GFP were co-expressed with ATG6-mCherry in N. benthamiana for 3 days followed by confocal observation. Scale bar, 50 μm. Experiment was performed with three biological replicates.
+
+### ATG6 co-localized with NPR1 in the nucleus
 
 Remarkably, we found that ATG6 is localized in the cytoplasm and nucleus, and it co-localized with NPR1 in the nucleus (Figure 1—figure supplement 2). Nuclear localization of ATG6 was also observed in N. benthamiana transiently transformed with ATG6-mCherry and ATG6-GFP under normal and SA treatment conditions (Figure 2a, b). ATG6-GFP co-localizes with the nuclear localization marker nls-mCherry (indicated by white arrows) (Figure 2b). Additionally, we observed punctate patterns indicative of canonical autophagy-like localization of ATG6-GFP fluorescence signals (indicated by red circles) (Figure 2b). The nuclear localization signal of ATG6 was also observed in UBQ10::ATG6-GFP overexpressing Arabidopsis (Figure 2—figure supplement 1a). To exclude the possibility that the observed localization of ATG6-GFP is due to free GFP. The protein levels of ATG6-GFP and free GFP in UBQ10::ATG6-GFP Arabidopsis and N. benthamiana were detected before and after SA treatment. Notably, no free GFP was detected and this means that the fluorescence signal observed by confocal microscopy is ATG6-GFP, not free GFP (Figure 2—figure supplement 1d, e). In both plants and animals, proteins are transported to the nucleus via specific nuclear localization signals (NLSs), which are typically characterized by short stretches of basic amino acids (Dingwall and Laskey, 1991; Raikhel, 1992; Nigg, 1997). Furthermore, we analyzed the putative NLS in the ATG6 protein sequence using NLSExplorer (http://www.csbio.sjtu.edu.cn/bioinf/NLSExplorer). Although we did not identify a classical monopartite NLS, we discovered a bipartite NLS similar to the consensus bipartite sequence (KRX(10–12)K(KR)(KR)) (Kosugi et al., 2009) in the carboxy-terminal region (475–517 aa) of ATG6, with a cut-off score of 2.6 (Figure 2c). Additionally, our comparison of ATG6 C-terminal sequences across several species, including Microthlaspi erraticum, Capsella rubella, Brassica carinata, Camelina sativa, Theobroma cacao, Brassica rapa, Eutrema salsugineum, Raphanus sativus, Hirschfeldia incana, and Brassica napus, sequence comparison indicates that this bipartite NLS is relatively conserved (Figure 2c).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig2-v1.jpg)
+
+**Figure 2.:** (a) The nuclear localization of ATG6-mCherry in N. benthamiana. Scale bar, 100 μm. (b) Co-localization of ATG6-GFP and nls-mCherry in N. benthamiana. Scale bar, 50 μm. (c) ATGs protein nuclear localization sequence analysis using the online NLSExplorer prediction software and sequence comparison of ATG6 C-terminal with other species. (d) Subcellular fractionation of ATG6-mCherry in N. benthamiana after 1 mM SA treatment. Black asterisk (*) indicates ATG6-mCherry bands. (e) Subcellular fractionation of ATG6-GFP in N. benthamiana after 1 mM SA treatment. Black asterisk (*) indicates ATG6-GFP bands. (f) Subcellular fractionation of ATG6-GFP in ATG6-GFP Arabidopsis after 0.5 mM SA treatment. (g) Subcellular fractionation of ATG6-mCherry in ATG6-mCherry Arabidopsis after 0.5 mM SA treatment. In (d–g), ATG6-mCherry (d, g) and ATG6-GFP (e, f) were detected using ATG6 or GFP antibody. Actin and H3 were used as cytoplasmic and nucleus internal reference, respectively. Numerical values indicate quantitative analysis of ATG6-mCherry and ATG6-GFP using ImageJ. All experiments were performed with three biological replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) The nuclear localization of ATG6-GFP in ATG6-GFP under normal condition. Scale bar, 20 μm. (b) The nuclear localization of ATG6-mCherry in ATG6-mCherry × NPR1-GFP. Scale bar, 50 μm. (c) Predicted subcellular localization of ATG6 by Arabidopsis database (https://suba.live/). (d) ATG6-GFP and free GFP protein levels in ATG6-GFP Arabidopsis. (e) ATG6-GFP and free GFP protein levels in N. benthamiana. Black asterisk (*) indicates ATG6-GFP bands. All experiments were performed with three biological replicates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Total proteins from 7-day-old seedlings were extracted. Western blot was performed using ATG6 and GFP antibodies. Actin was used as an internal reference. Black asterisk (*) indicates ATG6-GFP bands. (b) NPR1-GFP and free GFP protein levels in 7-day-old seedlings of NPR1-GFP and ATG6-mCherry × NPR1-GFP plants after 0.5 mM SA treatment for 0, 3, 6, and 9 hr. Numerical values indicate the ration of NPR1-GFP/free GFP. All experiments were performed with three biological replicates.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Cytoplasmic and nuclear proteins were extracted from Arabidopsis. Endogenous ATG6 were detected using ATG6 antibody. Actin and H3 were used as cytoplasmic and nucleus internal reference, respectively. Numerical values indicate quantitative analysis of ATG6 using ImageJ. Experiment was performed with three biological replicates.
+
 Moreover, the nuclear and cytoplasmic fractions were separated. Under SA treatment, ATG6-mCherry and ATG6-GFP were detected in the cytoplasmic and nuclear fractions in N. benthamiana (Figure 2d, e). However, in N. benthamiana, we observed that ATG6-mCherry was not detected in the nuclear fractions under normal conditions, which differents with the results shown in Figure 2a. We suspect that this discrepancy may be due to the fluorescence signal in Figure 2a primarily arising from free mCherry rather than the ATG6-mCherry fusion. ATG6 was also detected in the nuclear fraction of UBQ10::ATG6-GFP and UBQ10::ATG6-mCherry overexpressing plants, and SA promoted both cytoplasm and nuclear accumulation of ATG6 (Figure 2f, g). Additionally, we obtained ATG6 and NPR1 double overexpression of Arabidopsis UBQ10::ATG6-mCherry × 35S::NPR1-GFP (ATG6-mCherry × NPR1-GFP) by crossing and screening (Figure 2—figure supplement 2a). In ATG6-mCherry × NPR1-GFP, we observed co-localization of ATG6-mCherry with NPR1-GFP in the nucleus (Figure 2—figure supplement 1b). These results are consistent with the prediction of the subcellular location of ATG6 in the Arabidopsis subcellular database (https://suba.live/) (Figure 2—figure supplement 1c). Additionally, we have conducted an investigation into the localization of endogenous ATG6 in Col. Our results demonstrate that endogenous ATG6 is present in both the nucleus and cytoplasm, and we have observed that SA treatment promotes the accumulation of ATG6 in the nucleus (Figure 2—figure supplement 3). Together, these findings suggest that ATG6 is localized to both cytoplasm and nucleus, and co-localized with NPR1 in the nucleus.
 
-## ATG6 overexpression increased nuclear accumulation of NPR1
+### ATG6 overexpression increased nuclear accumulation of NPR1
 
 Previous studies have shown that the nuclear localization of NPR1 is essential for improving plant immunity (Kinkema et al., 2000; Chen et al., 2021b). We observed that a stronger nuclear localization signal of NPR1-GFP in ATG6-mCherry × NPR1-GFP leaves than that in NPR1-GFP under normal condition and 0.5 mM SA treatment for 3 hr (Figure 3a, b and Figure 3—figure supplement 1). These findings indicate that ATG6 might increase nuclear accumulation of NPR1. To exclude the possibility that the observed localization of NPR1-GFP is due to free GFP, we detected the levels of NPR1-GFP and free GFP in ATG6-mCherry × NPR1-GFP plants before and after SA treatment. Only ~10% of free GFP was detected in ATG6-mCherry × NPR1-GFP plants before and after SA treatment, confirming that the observed localization of NPR1-GFP is not due to free GFP (Figure 2—figure supplement 2b). Furthermore, the nuclear and cytoplasmic fractions of ATG6-mCherry × NPR1-GFP and NPR1-GFP were separated. Under normal conditions, the nuclear fractions NPR1-GFP in ATG6-mCherry × NPR1-GFP and NPR1-GFP were relatively weaker (Figure 3c), which differs from the above observation (Figure 3a). We speculate that this phenomenon might be attributed to the rapid turnover of NPR1 in the nucleus (Spoel et al., 2009; Saleh et al., 2015). Consistent with the fluorescence distribution results, the nuclear fractions of NPR1-GFP in ATG6-mCherry × NPR1-GFP were significantly higher than those in NPR1-GFP under 0.5 mM SA treatment for 3 and 6 hr (Figure 3c and Figure 3—figure supplement 2). Furthermore, Agrobacterium harboring ATG6-mCherry and NPR1-GFP were transiently transformed to N. benthamiana leaves. After 1 day, the leaves were treated with 1 mM SA for 8 and 20 hr. Subsequently nucleoplasmic separation experiments were performed. Similar to Arabidopsis, increased nuclear accumulation of NPR1 was found when ATG6 was overexpressed (Figure 3e and Figure 3—figure supplement 2). Notably, we found that the ratio (nucleus NPR1/total NPR1) in ATG6-mCherry × NPR1-GFP was not significantly different from that in NPR1-GFP after SA treatment, and a similar phenomenon was observed in N. benthamiana (Figure 3d, f and Figure 3—figure supplement 2). These results suggested that the increased nuclear accumulation of NPR1 in ATG6-mCherry × NPR1-GFP plants might attributed to higher levels and more stable NPR1 rather than the enhanced nuclear translocation of NPR1 facilitated by ATG6. Furthermore, we validated the functionality of the ATG6-GFP and ATG6-mCherry fusion proteins utilized in this study by examining the phenotypes of ATG6-GFP and ATG6-mCherry Arabidopsis plants under carbon starvation conditions (Figure 3—figure supplement 3 and Appendix 1—result 2).
 
-## ATG6 increases endogenous SA levels and promotes the expression of NPR1 downstream target genes
+![Figure 3.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig3-v1.jpg)
+
+**Figure 3.:** (a) Confocal images of NPR1-GFP nuclear localization in 7-day-old seedlings of NPR1-GFP and ATG6-mCherry × NPR1-GFP under normal and 0.5 mM SA spray for 3 hr. Scale bar, 50 μm. (b) The count of nuclear localizations of NPR1-GFP in ATG6-mCherry × NPR1-GFP and NPR1-GFP Arabidopsis plants following SA treatment in (a). Statistical data were obtained from three independent experiments, each comprising five individual images, resulting in a total of 15 images analyzed for this comparison. ** indicates that the significant difference compared to the control is at the level of 0.01 (Student’s t-test p value, **p < 0.01). (c) Subcellular fractionation of NPR1-GFP in 7-day-old seedlings of NPR1-GFP and ATG6-mCherry × NPR1-GFP after 0.5 mM SA treatment for 0, 3, and 6 hr. (d) The ration of NPR1 in the nucleus/total NPR1 in (c), Student’s t-test was conducted to analyze the data. The mean and standard deviation were calculated from three biological replicates, ns indicates no significant difference. (e) Subcellular fractionation of NPR1-GFP in N. benthamiana after 1 mM SA treatment for 0, 8, and 20 hr. (f) The ration of NPR1 in the nucleus/total NPR1 in (e), Student’s t-test was conducted to analyze the data. The mean and standard deviation were calculated from three biological replicates, ns indicates no significant difference. In (c, e), cytoplasmic and nuclear proteins were extracted from Arabidopsis or N. benthamiana. NPR1-GFP were detected using GFP antibody. Actin and H3 were used as cytoplasmic and nucleus internal reference, respectively. Numerical values indicate quantitative analysis of NPR1-GFP using ImageJ. All experiments were performed with three biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Scale bar, 50 μm. Experiment was performed with three biological replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Replicate experiments at Figure 3c, e. (Figure 3c) Subcellular fractionation of NPR1-GFP in 7-day-old seedlings of NPR1-GFP and ATG6-mCherry × NPR1-GFP after 0.5 mM SA treatment for 0, 3, and 6 hr. (Figure 3e) Subcellular fractionation of NPR1-GFP in N. benthamiana after 1 mM SA treatment for 0, 8, 20, and 24 hr.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Phenotypes of detached rosette leaves from 3-week-old of Col, amiRNAATG6 # 1, amiRNAATG6 # 2, ATG6-mCherry, ATG6-GFP, and atg5 under constant dark treatment for 4 days. Bar = 1 cm. (b) Relative chlorophyll content in (a). ** indicates that the significant difference compared to the Col is at the level of 0.01 (Student’s t-test p value, **p < 0.01). Experiment was performed with three biological replicates.
+
+### ATG6 increases endogenous SA levels and promotes the expression of NPR1 downstream target genes
 
 NPR1 localized in the nucleus is essential for activation of immune gene expression (Kinkema et al., 2000; Chen et al., 2021b). In our study, we observed that ATG6 overexpression increased nuclear accumulation of NPR1 (Figure 3) and demonstrated an interaction between ATG6 and NPR1 in the nucleus (Figure 1d). Therefore, we speculate that ATG6 might regulate NPR1 transcriptional activity. Notably, the expression level of ICS1 in ATG6-mCherry × NPR1-GFP seedlings was significantly higher than that in NPR1-GFP under normal and SA treatment conditions (Figure 4—figure supplement 1). Free SA levels in ATG6-mCherry × NPR1-GFP were also significantly higher compared to NPR1-GFP under Pst DC3000/avrRps4 treatment. While there was no significant difference was observed under normal condition (Figure 4a), this may be related to free SA consumption, as it can be converted to bound SA (Ding and Ding, 2020). In addition, the expression of PR1 (pathogenesis-related gene 1) and PR5 in ATG6-mCherry × NPR1-GFP was significantly higher than that of NPR1-GFP under normal and SA treatment conditions (Figure 4b, c). The expression of PR1 and PR5 in ATG6-mCherry was significantly higher than that of Col under Pst DC3000/avrRps4 treatment (Figure 4—figure supplement 2). These results support the role of ATG6 in facilitating the expression of NPR1 downstream PR1 and PR5 genes.
 
-## ATG6 increases NPR1 protein levels and the formation of SINCs-like condensates
+![Figure 4.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig4-v1.jpg)
+
+**Figure 4.:** (a) Level of free SA in 3-week-old NPR1-GFP and ATG6-mCherry × NPR1-GFP after Pst DC3000/avrRps4 for 12 hr. Expression of PR1 (b) and PR5 (c) in 3-week-old NPR1-GFP and ATG6-mCherry × NPR1-GFP under normal and SA treatment conditions, values are means ± SD (n = 3 biological replicates). The AtActin gene was used as the internal control. * or ** indicates that the significant difference compared to the control is at the level of 0.05 or 0.01 (Student’s t-test p value, *p < 0.05 or **p < 0.01). All experiments were performed with three biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Values are means ± SD (n = 3 biological replicates). The AtActin gene was used as the internal control. ** indicates that the significant difference compared to the control is at the level of 0.01 (Student’s t-test p value, **p < 0.01). Experiment was performed with three biological replicates.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Values are means ± SD (n = 3 biological replicates). The AtActin gene was used as the internal control. ** indicates that the significant difference compared to the control is at the level of 0.01 (Student’s t-test p value, **p < 0.01). Experiment was performed with three biological replicates.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig4-figsupp3-v1.jpg)
+
+### ATG6 increases NPR1 protein levels and the formation of SINCs-like condensates
 
 Interestingly, similar to previous reports (Zavaliev et al., 2020), SA promoted the translocation of NPR1 into the nucleus, but still a significant amount of NPR1 was present in the cytoplasm (Figure 3c, e). Previous studies have shown that SA increased NPR1 protein levels and facilitated the formation of SINCs in the cytoplasm, which are known to promote cell survival (Zavaliev et al., 2020). In our experiments, we observed that under SA treatment, the protein levels of NPR1 in ATG6-mCherry × NPR1-GFP was significantly higher than that in NPR1-GFP (Figure 5a). To further support our conclusions, we proceeded to silence ATG6 in NPR1-GFP (NPR1-GFP/silencing ATG6) and subsequently assessed the protein level of NPR1-GFP before and after SA treatment. Our findings revealed that the protein level of NPR1-GFP in NPR1-GFP/silencing ATG6 under SA treatment was notably lower than that in the NPR1-GFP/Negative control (Figure 5—figure supplement 1). Under SA treatment for 8 hr, the protein levels of NPR1-GFP in N. benthamiana co-transformed with ATG6-mCherry + NPR1-GFP was also significantly higher than that of mCherry + NPR1-GFP (Figure 5b). While there was a slight increase at 20 hr, a minor decrease was observed at 24 hr, suggesting that the rise in NPR1 protein levels induced by ATG6 was transient. We also detected the expression of NPR1 was detected. It is worth noting that NPR1 up-regulation was more obvious in Col after 3 hr treatment with Pst DC3000/avrRps4. After 6 hr treatment with Pst DC3000/avrRps4, there was no significant difference in the expression of NPR1 between Col and ATG6-mCherry (Figure 5—figure supplement 2). These results suggest that ATG6 increases NPR1 protein levels. After SA treatment, more SINCs-like condensates fluorescence were observed in N. benthamiana co-transformed with ATG6-mCherry + NPR1-GFP compared to mCherry + NPR1-GFP (Figure 5c, d, Videos 1 and 2). Additionally, we observed that SINCs-like condensates signaling partial co-localized with certain ATG6-mCherry autophagosomes fluorescence signals (Figure 5—figure supplement 3). Taken together, these results suggest that ATG6 increases the protein levels of NPR1 and promotes the formation of SINCs-like condensates, possibly caused by ATG6 increasing SA levels in vivo.
 
-## ATG6 maintains the protein stability of NPR1
+![Figure 5.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig5-v1.jpg)
+
+**Figure 5.:** (a) NPR1-GFP protein levels in 7-day-old seedlings of NPR1-GFP and ATG6-mCherry × NPR1-GFP after 0.5 mM SA treatment for 0, 3, 6, and 9 hr. Numerical values indicate quantitative analysis of NPR1-GFP protein using ImageJ. (b) NPR1-GFP protein levels in N. benthamiana. ATG6-mCherry + NPR1-GFP, NPR1-GFP + mCherry were co-expressed in N. benthamiana. After 2 days, leaves were treated with 1 mM SA for 8, 20, and 24 hr. Total proteins were extracted and analyzed. Numerical values indicate quantitative analysis of NPR1-GFP protein using ImageJ. (c) ATG6 promotes the formation of SINCs-like condensates. ATG6-mCherry + NPR1-GFP, NPR1-GFP + mCherry were co-expressed in N. benthamiana. After 2 days, leaves were treated with 1 mM SA for 24 hr. Confocal images obtained at excitation with wavelengths of 488 nm, scale bar = 50 μm. (d) SINCs-like condensates numbers of per section in (c), n > 10 sections. ** indicates that the significant difference compared to the control is at the level of 0.01 (Student’s t-test p value, **p < 0.01). All experiments were performed with three biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The mixture of AuNPs-amiRNAATG6 or AuNPs-amiRNANgeative control was performed by pressure infiltration through the abaxial leaf surface. After 3 days, NPR1-GFP protein levels were detected by treating with 0.5 mM SA for 0, 3, and 6 hr. Experiment was performed with three biological replicates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Values are means ± SD (n = 3 biological replicates). The AtActin gene was used as the internal control. ** indicates that the significant difference compared to the control is at the level of 0.01 (Student’s t-test p value, **p < 0.01). Experiment was performed with three biological replicates.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** ATG6-mCherry + NPR1-GFP were co-expressed in N. benthamiana. After 2 days, leaves were treated with 1 mM SA for 24 hr. Scale bar = 50 μm. Experiment was performed with three biological replicates.
+
+![Video 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-video2.mp4.jpg)
+
+### ATG6 maintains the protein stability of NPR1
 
 Maintaining the stability of NPR1 is critical for enhancing plant immunity (Skelly et al., 2019). To further verify whether ATG6 regulates NPR1 stability, we co-transfected NPR1-GFP with ATG6-mCherry or mCherry in N. benthamiana and performed cell-free degradation assays. Our results showed that NPR1-GFP degradation was significantly delayed when ATG6 was overexpressed (Figure 6—figure supplement 1). A similar trend was observed in Arabidopsis, where the NPR1-GFP protein in ATG6-mCherry × NPR1-GFP showed a slower degradation rate compared to NPR1-GFP during 0–180 min time period in a cell-free degradation assay (Figure 6a, b). Moreover, when Arabidopsis seedlings were treated with cycloheximide (CHX) to block protein synthesis, we found that NPR1-GFP in NPR1-GFP was degraded after CHX treatment for 3–9 hr and the half-life of NPR1-GFP is ~3 hr, while the half-life of NPR1-GFP in ATG6-mCherry × NPR1-GFP is ~9 hr (Figure 6c, d). In addition, we also analyzed the degradation of NPR1-GFP in NPR1-GFP and NPR1-GFP/atg5 following 100 μM CHX treatment. The results show that the degradation rate of NPR1-GFP in NPR1-GFP/atg5 plants was similarly to that in NPR1-GFP plants (Figure 6e, f). These results indicate that ATG6 plays a role in maintaining the stability of NPR1, which may also be related to the fact that ATG6 promotes an increase in free SA in vivo, since SA has the function of increasing NPR1 stability (Ding et al., 2016; Skelly et al., 2019).
 
-## ATG6 and NPR1 cooperatively inhibit infection of Pst DC3000/avrRps4
+![Figure 6.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig6-v1.jpg)
+
+**Figure 6.:** (a) NPR1-GFP degradation assay in Arabidopsis. Total proteins from 7-day-old seedlings of NPR1-GFP and ATG6-mCherry × NPR1-GFP were extracted, using Actin as an internal reference. ‘M’ indicates 100 μM MG115 treatment. (b) Quantification of NPR1-GFP degradation rates in (a) using ImageJ. In (a, b), the extracts were incubated for 0–180 min at room temperature (25°C), the degradation rate of NPR1-GFP was analyzed. (c) NPR1-GFP protein turnover. Seven-day-old NPR1-GFP and ATG6-mCherry × NPR1-GFP seedlings were treated with 100 μM cycloheximide (CHX) for different times. Total proteins were analyzed, actin was used as an internal reference. (d) Quantification of NPR1-GFP protein turnover rates in (c) using ImageJ. (e) NPR1-GFP protein turnover. Seven-day-old NPR1-GFP and NPR1-GFP/atg5 seedlings were treated with 100 μM CHX for different times. Total proteins were analyzed, actin was used as an internal reference. (f) Quantification of protein levels of NPR1-GFP in (e) using ImageJ. All experiments were performed with three biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) NPR1-GFP degradation assay in N. benthamiana. Total proteins from N. benthamiana co-transfected with mCherry + NPR1-GFP and ATG6-mCherry + NPR1-GFP were extracted. CBB was used as a control. (b) Quantification of NPR1-GFP degradation rates in (a) using ImageJ. All experiments were performed with three biological replicates.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Total proteins from 7-day-old seedlings of ATG6-mCherry × NPR1-GFP were extracted. These extracts were then incubated at room temperature (25°C) for 0–120 min to analyze the degradation rate of NPR1-GFP. To inhibit the proteasome pathway, 100 μM MG115 was utilized. Additionally, autophagy was inhibited using 5 μM concanamycin A and 30 μM Wortmannin. The analysis of NPR1-GFP was quantitatively performed using ImageJ software, and the corresponding numerical values were determined. Experiment was performed with three biological replicates.
+
+### ATG6 and NPR1 cooperatively inhibit infection of Pst DC3000/avrRps4
 
 The mRNA expression levels of ATG6 in Col were significantly increased after 6, 12, and 24 hr under Pst DC3000/avrRps4 treatment (Figure 7a). Similarly, both the ATG6 gene and protein were significantly upregulated under 0.5 mM SA treatment (Figure 7b, c). These results suggest that the expression of ATG6 could be induced by Pst DC3000/avrRps4 and 0.5 mM SA treatment.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig7-v1.jpg)
+
+**Figure 7.:** (a) Expression of ATG6 under Pst DC3000/avrRps4 infiltration in 3-week-old Col leaves, values are means ± SD (n = 3 biological replicates). The AtActin gene was used as the internal control. (b) Expression of ATG6 in the presence of 0.5 mM SA in 3-week-old Col leaves, values are means ± SD (n = 3 biological replicates). The AtActin gene was used as the internal control. (c) The protein levels of ATG6 after 0.5 mM SA in 3-week-old Col leaves. Total leaf proteins from Arabidopsis were analyzed, actin was used as an internal reference. Numerical values indicate quantitative analysis of ATG6 protein using ImageJ. (d) Growth of Pst DC3000/avrRps4 in Col/silencing ATG6 and Col/negative control (NC). (e) Phenotypes of 16-day-old amiRNAATG6 # 1 and amiRNAATG6 # 2. Bar, 1 cm. (f) Phenotypes of 23-day-old amiRNAATG6 # 1 and amiRNAATG6 # 2. Bar, 3 cm. (g) Expression of ATG6 in Col, amiRNAATG6 # 1 and amiRNAATG6 # 2 under infiltration treatment of 100 μM β-estradiol, values are means ± SD (n = 3 biological replicates). The AtActin gene was used as the internal control. (h) Growth of Pst DC3000/avrRps4 in Arabidopsis leaves of amiRNAATG6 # 1，amiRNAATG6 # 2 and Col. (i) Growth of Pst DC3000/avrRps4 in NPR1 GFP/silencing ATG6 and NPR1-GFP/NC. (j) Growth of Pst DC3000/avrRps4 in Arabidopsis leaves of Col, amiRNAATG6 # 1，amiRNAATG6 # 2, npr1, NPR1-GFP, ATG6-mCherry, and ATG6-mCherry × NPR1-GFP. In (d, h–j), a low dose of Pst DC3000/avrRps4 (OD600 = 0.001) was infiltrated. After 3 days, the growth of Pst DC3000/avrRps4 was counted. * or ** indicates that the significant difference compared to the control is at the level of 0.05 or 0.01 (Student’s t-test p value, *p < 0.05 or **p < 0.01). All experiments were performed with three biological replicates.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Prokaryotic expression of the GST-ATG6 fusion protein was used to verify the specificity of the ATG6 antibody, and GST and GST-SnRK2.8 were used as negative controls. GST-ATG6 bands was marked with a black asterisk. (b) The levels of ATG6 protein. Levels of ATG6-mCherry and endogenous ATG6 in Col, amiRNAATG6 # 1, amiRNAATG6 # 2, and ATG6-mCherry were detected after 100 μM estradiol treatment for 24 hr. Experiment was performed with three biological replicates.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/97206/elife-97206-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (a) Trypan blue staining showing cell death in the leaves of Col, amiRNAATG6 # 1, amiRNAATG6 # 2, npr1, NPR1-GFP, ATG6-mCherry, and ATG6-mCherry × NPR1-GFP. A low dose of Pst DC3000/avrRps4 (OD600 = 0.001) was infiltrated. After 3 days, trypan blue staining was performed. Bar, 0.2 cm. (b) Number of dead cells per section in the leaves of Col, amiRNAATG6 # 1, amiRNAATG6 # 2, npr1, NPR1-GFP, ATG6-mCherry, and ATG6-mCherry × NPR1-GFP in (a). ** indicates that the significant difference compared to the control is at the level of 0.01 (Student’s t-test p value, **p < 0.01). Experiment was performed with three biological replicates.
 
 Considering that ATG6 increases NPR1 protein levels (Figure 5a, b) and promotes its nuclear accumulation (Figure 3), as well as maintains NPR1 stability (Figure 6), then we studied the role of ATG6–NPR1 interactions in plant immunity. However, studying the function of ATG6 is challenging due to the lethality of homozygous atg6 mutant (Qin et al., 2007; Harrison-Lowe and Olsen, 2008; Patel and Dinesh-Kumar, 2008). According to our previous report (Lei et al., 2020; Zhang et al., 2023), ATG6 was silenced using artificial miRNAATG6 (amiRNAATG6) delivered by the gold nanoparticles (AuNPs). First, the effect of ATG6 silencing in Col on the plant immune response was investigated. Similar to atg5, Col/silencing ATG6 exhibited more active growth of Pst DC3000/avrRps4 than Col/negative control (NC) after Pst DC3000/avrRps4 infiltration for 3 days (Figure 7d). Furthermore, according to the previously reported methods (Ohira et al., 2017; Gomez et al., 2022), we generated two amiRNAATG6 lines (amiRNAATG6 # 1 and amiRNAATG6 # 2) designed against ATG6 and placed under the control of a β-estradiol inducible promoter. There were no significant phenotypic differences in amiRNAATG6 # 1 compared to the Col, while amiRNAATG6 # 2 exhibited a slight leaf developmental defect (Figure 7e, f). Subsequently, we investigated the expression of ATG6 following treatment with 100 μM β-estradiol. Our results showed that, after 100 μM β-estradiol treatment for 1–3 days, the expression of ATG6 in both amiRNAATG6 # 1 and amiRNAATG6 # 2 lines was significantly lower than that in Col. Specifically, the expression of ATG6 in the amiRNAATG6 #1 and amiRNAATG6 #2 lines decreased by 50–70% compared with Col (Figure 7g and Figure 7—figure supplement 1b). Furthermore, to assess the function of ATG6 in plant immune, we performed infiltrations of Pst DC3000/avrRps4 after 100 µM β-estradiol treatment for 24 hr. We compared the growth of Pst DC3000/avrRps4 in the amiRNAATG6 lines and Col. The results clearly demonstrate that the growth of Pst DC3000/avrRps4 in amiRNAATG6 # 1 and amiRNAATG6 # 2 was significantly more compared to Col (Figure 7h). Moreover, we silenced ATG6 in NPR1-GFP (NPR1-GFP/silencing ATG6), and NPR1-GFP/atg5 (crossed NPR1-GFP with atg5 to obtain NPR1-GFP/atg5) was used as an autophagy-deficient control. There was more Pst DC3000/avrRps4 growth in NPR1-GFP/silencing ATG6 and NPR1-GFP/atg5 compared to NPR1-GFP/NC after Pst DC3000/avrRps4 infiltration (Figure 7i). In contrast, the growth of Pst DC3000/avrRps4 in NPR1-GFP, ATG6-mCherry, ATG6-mCherry × NPR1-GFP was significantly lower than that in Col and npr1 (Figure 7j) and was the lowest in ATG6-mCherry × NPR1-GFP (Figure 7j).
 
@@ -91,13 +193,13 @@ An increasing number of studies have shown that ATGs differentially affect plant
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
 Details of plasmid construction primer used are listed in Appendix 2—table 1 and Appendix 2—table 2 , methods are listed in Appendix 3—method 1, The mapping of vectors is listed in Appendix 4.
 
-## Plant material
+### Plant material
 
-## Arabidopsis
+#### Arabidopsis
 
 35S::NPR1-GFP (in npr1-2 background) and npr1-1 were kindly provided by Dr. Xinnian Dong of Duke University; atg5-1 (SALK_020601).
 
@@ -105,9 +207,9 @@ UBQ10::ATG6-mCherry, UBQ10::ATG6-GFP, and amiRNAATG6 lines were obtained by Agro
 
 Full description of the Arabidopsis screening is included Appendix 3—method 2. Details of plant material are listed in Appendix 2—table 3.
 
-## Growth conditions
+### Growth conditions
 
-## Arabidopsis thaliana
+#### Arabidopsis thaliana
 
 All Arabidopsis thaliana (Arabidopsis) seeds were treated in 10% sodium hypochlorite for 7 min, washed with ddH2O, and treated in 75% ethanol for 30 s, finally washed three times with ddH2O. Seeds were sown in 1/2 MS with 2% sucrose solid medium, vernalized at 4°C for 2 days.
 
@@ -115,94 +217,94 @@ For 7-day-old Arabidopsis seedling cultures, the plates were placed under the fo
 
 For 3-week-old Arabidopsis cultures, after 7 days of growth on the plates, the seedlings were transferred to soil for further growth for 2 weeks under the same conditions (Zhang et al., 2018a).
 
-## N. benthamiana
+#### N. benthamiana
 
 For 3-week-old N. benthamiana cultures, seeds were sown in the soil and vernalized at 4°C for 2 days. After 10 days of growth on soil, the seedlings were transferred to soil for further growth for 2 weeks under the same conditions (Jiao et al., 2019).
 
-## Treatment conditions
+### Treatment conditions
 
-## Treatment of 7-day-old seedlings
+#### Treatment of 7-day-old seedlings
 
-## For SA treatment
+##### For SA treatment
 
-Seven-day-old Arabidopsis seedlings were transferred to 1/2 MS liquid medium containing 0.5 mM SA for 0, 3, and 6 hr, respectively. The corresponding results are shown in Figures 2f, g, 3c, d , 5a.
+Seven-day-old Arabidopsis seedlings were transferred to 1/2 MS liquid medium containing 0.5 mM SA for 0, 3, and 6 hr, respectively. The corresponding results are shown in Figures 2f, g, 3c, d, 5a.
 
-## For CHX treatment
+##### For CHX treatment
 
 Seedlings of Arabidopsis (7 days) were transferred to 1/2 MS liquid medium containing 100 μM CHX for 0, 3, 6, and 9 hr, respectively. The corresponding results are shown in Figure 6c, e.
 
-## Treatment of 3-week-old Arabidopsis
+### Treatment of 3-week-old Arabidopsis
 
-## For silencing ATG6 in Col and NPR1-GFP
+#### For silencing ATG6 in Col and NPR1-GFP
 
 As previously described (Lei et al., 2020; Zhang et al., 2022; Zhang et al., 2023), 1 mM gold nanoparticles (AuNPs) were synthesized. The artificial microRNA (amiRNA)ATG6 (UCAAUUCUAGGAUAACUGCCC) was designed based on the Web MicroRNA Designer (http://wmd3.weigelworld.org/) platform. The complementary sequence of amiRNAATG6 is located on the eighth exon of the ATG6 gene. The sequence of ‘UUCUCCGAACGUGUCACGUTT’ was used as a negative control (NC). NC is a universal negative control without species specificity (Gao et al., 2018; Lei et al., 2020). amiRNAATG6 and amiRNANC synthesized by Suzhou GenePharma. AuNPs (1 mM) and amiRNAATG6 (20 µM) were incubated at a 9:1 ratio for 30 min at 25°C, 50 rpm. After incubation, a mixture of AuNPs and amiRNAATG6 was diluted 15-fold with the infiltration buffer (pH 5.7, 10 mM 2-Morpholinoethanesulphonic acid (MES), 10 mM MgCl2) and infiltrated through the abaxial leaf surface into 3-week-old Col or NPR1-GFP for 1–3 days. The third day was chosen as material for ATG6 silencing. After the third day of AuNPs-amiRNAATG6 and AuNPs-amiRNANC infiltration, Pst DC3000/avrRps4 was infiltrated, and then growth of Pst DC3000/avrRps4 was detected.
 
-## For β-estradiol treatment
+#### For β-estradiol treatment
 
 100 μM β-estradiol was infiltrated to treat 3-week-old Arabidopsis leaves. After 24 hr of treatment with β-estradiol, Pst DC3000/avrRps4 was infiltrated and then growth of Pst DC3000/avrRps4 was detected after 3 days.
 
-## For Pst DC3000/avrRps4 infiltration
+##### For Pst DC3000/avrRps4 infiltration
 
 Infiltration with Pst DC3000/avrRps4 was performed as previously described (Wang et al., 2016; Skelly et al., 2019). Full description of the Pst DC3000/avrRps4 culture is included in Appendix 3—method 3.
 
-## For SA treatment
+##### For SA treatment
 
 For 3-week-old Col, 0.5 mM SA was infiltrated into the leaves for 0, 2, 4, 6, and 8 hr. The corresponding results are shown in Figure 7b, c.
 
-## Y2H assay
+### Y2H assay
 
 Y2H experiments were performed according to the previously described protocol (Fu et al., 2012). Full description of Y2H is included in Appendix 3—method 4.
 
-## Pull-down assays in vitro
+### Pull-down assays in vitro
 
 500 μl of GST, GST-ATG6, and SnRK2.8-GST were incubated with GST-tag Purification Resin (Beyotime, P2250) for 2 hr at 4°C. The mixture was then centrifuged at 1500 × g for 1 min at 4°C, and the resin was washed three times with PBS buffer. Next, the GST-tag purification resin was incubated with the NPR1-His for 2 hr at 4°C. After washing three times with PBS buffer, 2× sample buffers were added to the resin and denatured at 100°C for 10 min. The resulting samples were then used for western blotting analysis. Full description of prokaryotic proteins expression is included in Appendix 3–method 5.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 0.5 g leaves of N. benthamiana transiently transformed with ATG6-mCherry + GFP and ATG6-mCherry + NPR1-GFP were fully ground in liquid nitrogen and homogenized in 500 μl of lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA, 5% glycerol, 0.2% NP40, 1 mM Phenylmethylsulfonyl fluoride (PMSF), 40 μM MG115, protease inhibitor cocktail 500× and phosphatase inhibitor cocktail 5000×). The samples were then incubated on ice for 30 min, and centrifuged at 10,142 × g (TGL16, Cence, Hunan, China) for 15 min at 4°C. The supernatant (500 μl) was incubated with 20 μl of GFP-Trap Magnetic Agarose beads (ChromoTek, gtma-20) in a 1.5-ml Eppendorf tube for 2 hr by rotating at 4°C. After incubation, the GFP-Trap magnetic Agarose beads were washed three times with cold wash buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA) and denatured at 75°C for 10 min after adding 2× sample buffer. Western blotting was performed with antibodies to ATG6 and GFP.
 
-## Nuclear and cytoplasmic separation
+### Nuclear and cytoplasmic separation
 
 Nuclear and cytoplasmic separation were performed according to the previously described method (Kinkema et al., 2000). Full description of nuclear and cytoplasmic separation is given in Appendix 3—method 6.
 
-## Protein degradation in vitro
+### Protein degradation in vitro
 
 Protein degradation assays were performed according to a previously described method (Spoel et al., 2009; Saleh et al., 2015). Full description of protein degradation is included in Appendix 3—method 7.
 
-## Protein extraction and western blotting analysis
+### Protein extraction and western blotting analysis
 
 Protein extraction and western blotting were performed as previously described (Lei et al., 2020; Zhang et al., 2022). Protein was denatured at 100°C for 10 min. NPR1 protein was denatured at 75°C for 10 min (Lei et al., 2020). Full description is included in Appendix 3—method 8. Antibody information is presented in Appendix 2—table 4.
 
-## Confocal microscope observation
+### Confocal microscope observation
 
-## For nuclear localization of NPR1-GFP observation
+#### For nuclear localization of NPR1-GFP observation
 
 Seven-day-old seedlings of NPR1-GFP and ATG6-mCherry × NPR1-GFP were sprayed with 0.5 mM SA for 0 and 3 hr. GFP and mCherry fluorescence signals in leaves were observed under the confocal microscope (Zeiss LSM880). Statistical data were obtained from three independent experiments, each comprising five individual images, resulting in a total of 15 images analyzed for this comparison.
 
-## For the BiFC assay
+#### For the BiFC assay
 
 Agrobacterium was infiltrated into N. benthamiana as previously described (Jiao et al., 2019). Fluorescence signals were observed after 3 days. The full description of BiFC is contained in Appendix 3—methods 9 and 10.
 
-## For the observation of SINCs-like condensates
+#### For the observation of SINCs-like condensates
 
 Agrobacterium was infiltrated into N. benthamiana. After 2 days, the leaves were treated in 1 mM SA solution for 24 hr, and then fluorescence signals were observed. At least 20 image sets were obtained and analyzed. A full description of SINCs-like condensates observation is included in Appendix 3—method 11.
 
-## For growth of Pst DC3000/avrRps4
+#### For growth of Pst DC3000/avrRps4
 
 A low dose (OD600 = 0.001) of Pst DC3000/avrRps4 was used for the infiltration experiments. After 3 days, the colony count was counted according to a previous description (Wang et al., 2016; Lei et al., 2020). Full description of the growth of Pst DC3000/avrRps4 is given in Appendix 3—method 12.
 
-## Free SA measurement
+#### Free SA measurement
 
 Free SA was extracted from 3-week-old Arabidopsis using a previously described method (Wang et al., 2016; Gong et al., 2020). Free SA was measured by high-performance liquid chromatography (Shimadzu LC-6A, Japan). Detection conditions: 294 nm excitation wavelength, 426 nm emission wavelength.
 
-## Real-time quantitative PCR
+#### Real-time quantitative PCR
 
 Total RNA was extracted from Arabidopsis (100 mg) using Trizol RNA reagent (Invitrogen, 10296-028, Waltham, MA, USA). Real-time quantitative PCR (RT-qPCR) assays were performed as previously described (Zhang et al., 2018a; Zhang et al., 2022). All primers for RT-qPCR are listed individually in Appendix 2—table 5. Full description of RT-qPCR is included in Appendix 3—method 13.
 
-## Trypan blue staining
+#### Trypan blue staining
 
 The leaves of 3-week-old Col, amiRNAATG6 # 1, amiRNAATG6 # 2, npr1, NPR1-GFP, ATG6-mCherry, and ATG6-mCherry × NPR1-GFP plants, located in the fifth and sixth positions, were infiltrated with Pst DC3000/avrRps4. After 3 days, the leaves were excised and subjected to a 1-min boiling step in trypan blue staining buffer (consisting of 10 g phenol, 10 ml glycerol, 10 ml lactic acid, 10 ml ddH2O, and 10 mg trypan blue), followed by destaining three times at 37°C in 2.5 mg/ml chloral hydrate.
 
-## Statistical analysis
+### Statistical analysis
 
 All quantitative data in this study were presented as mean ± SD. The experimental data were analyzed by a two-tailed Student’s t-test. Significance was assigned at p values <0.05 or <0.01.

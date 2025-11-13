@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/017zqws13 Department of Genetics, Cell Biology, and Development, University of Minnesota Minneapolis United States
+1. Department of Genetics, Cell Biology, and Development, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 
 † Corresponding author
 
 ## Abstract
 
-Precise control of protein degradation is critical for life, yet how natural genetic variation affects this essential process is largely unknown. Here, we developed a statistically powerful mapping approach to characterize how genetic variation affects protein degradation by the ubiquitin-proteasome system (UPS). Using the yeast Saccharomyces cerevisiae , we systematically mapped genetic influences on the N-end rule, a UPS pathway in which protein N-terminal amino acids function as degradation-promoting signals. Across all 20 possible N-terminal amino acids, we identified 149 genomic loci that influence UPS activity, many of which had pathway- or substrate-specific effects. Fine-mapping of four loci identified multiple causal variants in each of four ubiquitin system genes whose products process ( NTA1 ), recognize ( UBR1 and DOA10 ), and ubiquitinate ( UBC6 ) cellular proteins. A cis -acting promoter variant that modulates UPS activity by altering UBR1 expression alters the abundance of 36 proteins without affecting levels of the corresponding mRNA transcripts. Our results reveal a complex genetic basis of variation in UPS activity.
+Precise control of protein degradation is critical for life, yet how natural genetic variation affects this essential process is largely unknown. Here, we developed a statistically powerful mapping approach to characterize how genetic variation affects protein degradation by the ubiquitin-proteasome system (UPS). Using the yeast Saccharomyces cerevisiae, we systematically mapped genetic influences on the N-end rule, a UPS pathway in which protein N-terminal amino acids function as degradation-promoting signals. Across all 20 possible N-terminal amino acids, we identified 149 genomic loci that influence UPS activity, many of which had pathway- or substrate-specific effects. Fine-mapping of four loci identified multiple causal variants in each of four ubiquitin system genes whose products process (NTA1), recognize (UBR1 and DOA10), and ubiquitinate (UBC6) cellular proteins. A cis-acting promoter variant that modulates UPS activity by altering UBR1 expression alters the abundance of 36 proteins without affecting levels of the corresponding mRNA transcripts. Our results reveal a complex genetic basis of variation in UPS activity.
 
 ## Introduction
 
@@ -30,9 +30,19 @@ Technical challenges have precluded a comprehensive view of the genetics of UPS 
 
 Here, we leveraged advances in synthetic reporter design to obtain high-throughput, reporter expression level-independent measurements of UPS activity in millions of live, single cells. We use these measurements to map genetic influences on the N-end rule, a UPS pathway that recognizes degrons in protein N-termini (N-degrons) (Varshavsky, 1991) of thousands of endogenous cellular proteins (Kats et al., 2018; Bartel et al., 1990; Hwang et al., 2010; Varshavsky, 2011). Different N-degrons are processed by one of two distinct targeting systems (Figure 1A), which allowed us to test for potential pathway-specific effects of natural genetic variation on UPS activity. Systematic, statistically powerful genetic mapping revealed the complex, polygenic genetic architecture of UPS activity. Across the set of 20 N-degrons, we identified 149 loci influencing UPS activity, many of which had pathway- or substrate-specific effects. Resolving causal nucleotides at four loci identified regulatory and missense variants in ubiquitin system genes whose products process, recognize, and ubiquitinate cellular proteins. By measuring the effect of a causal variant in the UBR1 promoter on the transcriptome and proteome, we implicate genetic influences on UPS activity as a potentially prominent source of post-translational variation in gene expression.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the production and degradation of UPS activity reporters according to the UPS N-end rule. (B) Density plots of the log2 RFP / GFP ratio from 10,000 cells for each of 8 independent biological replicates per strain per reporter for representative Arg/N-end and Ac/N-end pathway reporters. "BY" and "RM" are genetically divergent yeast strains. "BY rpn4Δ", "BY ubr1Δ”, and "BY doa10Δ" carry the indicated gene deletions in the BY background and were used as reporter control strains. (C) The median from each biological replicate in B. was scaled, normalized, and plotted as a stripchart such that y axis values are directly proportional to UPS activity. (D). Heatmap for all strains and N-degrons using data generated as in C. Symbols above the heatmap denote significant UPS activity differences between BY and RM. "*" indicates 0.05 > Tukey HSD p > 1e-6; “#” indicates Tukey HSD p < 1e-6. (E) Schematic of the bulk segregant analysis genetic mapping method used to identify UPS activity QTLs. (F) Density plot of the UPS activity distribution for a genetically diverse mapping population harboring the tryptophan (Trp) N-degron reporter. Dashed vertical lines show the thresholds used to collect cells with extreme UPS activity, which correspond to the high and low UPS activity pools denoted in E. (G) Backplot of the cells collected in F. onto a scatter plot of GFP and RFP.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The -log2 RFP / GFP ratio value was extracted from 10,000 cells from each of 8 independent biological replicates per strain per reporter and converted to Z-scores. High values correspond to high UPS activity and low values correspond to low UPS activity. Tukey HSD p-values for each between strain comparison for each reporter are listed in Figure 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig1-figsupp2-v2.jpg)
+
 ## Results
 
-## Single-cell measurements identify heritable variation in UPS activity
+### Single-cell measurements identify heritable variation in UPS activity
 
 To understand how genetic variation influences UPS activity, we focused on the N-end rule, in which a protein’s N-terminal amino acid functions as an N-degron that results in a protein’s ubiquitination and proteasomal degradation (Figure 1A). The UPS N-end rule can be subdivided into the Arg/N-end and Ac/N-end pathways based on the molecular properties and recognition mechanisms of each pathway’s constituent N-degrons (Figure 1A; Varshavsky, 2011). We reasoned that the breadth of degradation signals and recognition mechanisms encompassed in the N-end rule would allow us to identify diverse genetic influences on UPS activity and that the well-characterized effectors of the N-end rule would aid in defining the molecular mechanisms of variant effects. We used a previously described approach (Varshavsky, 2005) to generate constructs containing each of the 20 possible N-degrons and appended these sequences to tandem fluorescent timers (TFTs; Figure 1A; Khmelinskii et al., 2012). TFTs are fusions of a rapidly maturing green fluorescent protein (GFP) and a slower maturing red fluorescent protein (RFP) (Khmelinskii et al., 2012; Khmelinskii and Knop, 2014). The TFT’s output, expressed as the -log2 RFP / GFP ratio, is directly proportional to its degradation rate and, when fused to N-degrons, measures UPS N-end rule activity (Kats et al., 2018; Kong et al., 2021; Khmelinskii et al., 2012). Because the TFT is expressed as a single protein construct, the output of the TFT is also independent of its expression level (Kats et al., 2018; Khmelinskii et al., 2014; Khmelinskii et al., 2012; Kong et al., 2021), enabling its use in genetically diverse populations.
 
@@ -40,21 +50,37 @@ We characterized the performance of our TFTs by measuring their output in yeast 
 
 To understand how natural genetic variation influences UPS activity, we compared two genetically divergent S. cerevisiae strains, the "BY" laboratory strain and the "RM" vineyard strain (Ehrenreich et al., 2009). RM had higher UPS activity than BY for 9 of 12 Arg/N-degrons and 6 of 8 Ac/N-degrons (corrected p < 0.05, Figure 1D, Figure 1—figure supplement 1, Figure 1—source data 1). BY had higher UPS activity than RM for the phenlyalanine, tryptophan, and tyrosine Arg/N-degrons (corrected p < 0.05, Figure 1D, Figure 1—figure supplement 1, Figure 1—source data 1). BY and RM had similar activity towards the methionine and proline Ac/N-degrons (corrected p > 0.05, Figure 1D, Figure 1—figure supplement 1, Figure 1—source data 1). Together, these results show that individual genetic differences create heritable, substrate-specific variation in UPS activity.
 
-## Genetic mapping reveals a complex, polygenic genetic architecture for UPS activity
+### Genetic mapping reveals a complex, polygenic genetic architecture for UPS activity
 
 We mapped quantitative trait loci (QTLs) for UPS activity using bulk segregant analysis (Figure 1E; Michelmore et al., 1991; Ehrenreich et al., 2010; Albert et al., 2014). In our implementation, this approach attains high statistical power by comparing whole-genome sequence data from pools of thousands of single cells with extreme UPS activity selected from a large population of haploid, recombinant progeny obtained by crossing BY and RM (Figure 1E–G; Ehrenreich et al., 2010; Albert et al., 2014). Using this method, we reproducibly identified 149 UPS activity QTLs across the set of 20 N-degrons at a false discovery rate of 0.5% (Figure 2A/B, Figure 2—source data 1, Supplementary file 1, Appendix 1). The number of QTLs per reporter ranged from 1 (for the Ile N-degron) to 15 (for the Ala N-degron) with a median of 7 (Figure 2B, Figure 2—source data 1). Using the absolute difference in allele frequency between the high and low UPS activity pools as a measure of effect size, we found that most QTLs had small effects, with only 5 loci (3%) causing an allele frequency difference greater than 0.5 (Figure 2C, Figure 2—source data 1). Thus, UPS activity is a complex, polygenic trait, shaped by variation throughout the genome.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig2-v2.jpg)
 
-**Figure 2.:** (A) Results from the alanine (Ala) N-degron reporter illustrate the results and reproducibility of the method. Asterisks denote QTLs, colored by biological replicate. (B) QTL mapping results for the 20 N-degrons. Colored blocks of 100 kb denote QTLs detected in each of two independent biological replicates, colored according to the direction and magnitude of the effect size (RM allele frequency difference between high and low UPS activity pools). Experimentally validated (boxed) and candidate (unboxed) causal genes for select QTLs are annotated above the plot. (C) Cumulative distributions of the effect size and direction for Arg/N-end and Ac/N-end QTLs. (D) Cumulative distribution of LOD scores for Arg/N-end and Ac/N-end QTLs.Figure 2—source data 1."chr" = chromosome, "LOD" = logarithm of the odds, "QTL_CI_left" = left index of QTL confidence interval, "QTL_peak" = peak position of QTL, "QTL_CI_right" = right index of QTL confidence interval.Figure 2—source data 2."chr" = chromosome, "QTL_CI_left" = left index of QTL confidence interval, "QTL_peak" = peak position of QTL, "QTL_right_CI" = right index of QTL confidence interval, "LOD" = logarithm of the odds, "RM_AFD" = RM allele frequency difference between high and low UPS activity pools.
+**Figure 2.:** (A) Results from the alanine (Ala) N-degron reporter illustrate the results and reproducibility of the method. Asterisks denote QTLs, colored by biological replicate. (B) QTL mapping results for the 20 N-degrons. Colored blocks of 100 kb denote QTLs detected in each of two independent biological replicates, colored according to the direction and magnitude of the effect size (RM allele frequency difference between high and low UPS activity pools). Experimentally validated (boxed) and candidate (unboxed) causal genes for select QTLs are annotated above the plot. (C) Cumulative distributions of the effect size and direction for Arg/N-end and Ac/N-end QTLs. (D) Cumulative distribution of LOD scores for Arg/N-end and Ac/N-end QTLs.
 
 Analysis of the set of UPS QTLs revealed several patterns. First, the RM allele was associated with higher UPS activity in a significant majority of UPS QTLs (89 out of 149, 60%, binominal test p = 0.021, Figure 2C), a result that is consistent with our observation that RM had higher UPS activity for 15 of 20 N-degrons (Figure 1D, Figure 1—source data 1). Second, the number and patterns of QTLs differed between the Ac/N-end and Arg/N-end pathways (Figure 2B, Figure 2—source data 1). The Ac/N-end pathway was affected by a significantly higher number of QTLs per reporter than the Arg/N-end pathway (9 vs 7, respectively, Wilcoxon test p = 0.021), while the QTLs with the largest effect sizes were found for the Arg/N-end pathway (Figure 2C / D, Figure 2—source data 1).
 
 Third, multiple QTLs for distinct N-degrons occurred in close proximity and had the same direction of effect (Figure 2B), suggesting these QTLs may result from the same causal genes or variants. To better understand potential pleiotropy among the set of UPS activity QTLs, we computed overlap among the set of 149 UPS activity QTLs. We considered QTLs for distinct N-degrons overlapping when their peak position occurred within 100 kb and they had the same direction of effect (the sign of the RM allele frequency between the high and low UPS activity pools). Applying these criteria revealed that the 149 UPS activity QTLs were located at 35 distinct QTL regions (Figure 2—source data 2). Of these 35 regions, 23 (66%) affected only reporters from either the Arg/N-end (12) or Ac/N-end (11) pathways of the N-end rule (Figure 2—source data 2). Five of the 23 pathway-specific QTL regions affected only individual N-degrons (Figure 2—source data 2). Use of more lenient LOD score thresholds for QTL detection did not alter these general conclusions (Figure 2—source data 2, Supplementary file 2). Thus, the majority of QTLs for the N-end rule are pathway-specific, revealing considerable complexity in the genetics of UPS protein degradation.
 
-## Multiple causal DNA variants in UBR1 create substrate-specific effects on UPS activity
+### Multiple causal DNA variants in UBR1 create substrate-specific effects on UPS activity
 
 We leveraged the high degree of pathway specificity in our N-end rule QTLs to aid in the identification of causal genes in broad genomic QTL regions. A QTL on chromosome VII detected with 8 of 12 Arg/N-degron reporters (Figure 2B) was centered on UBR1, the E3 ligase that recognizes Arg/N-degrons and targets them for UPS protein degradation (Figure 3A). To determine whether UBR1 contains causal DNA variants for UPS activity towards Arg/N-degrons, we used the CRISPR-swap allelic engineering method (Lutz et al., 2019) to create BY strains with RM UBR1 alleles (see ‘Materials and methods’). Arg/N-degrons are classified as Type 1 or 2 depending on their Ubr1 binding site (Varshavsky, 2011; Bartel et al., 1990). The RM allele at the chromosome VII QTL was associated with decreased UPS activity towards Type 1 Arg/N-degrons and increased UPS activity towards Type 2 Arg/N-degrons (Figure 2B). We therefore tested the effects of the RM UBR1 alleles on two Type 1 (asparagine [Asn] and aspartate [Asp]) and two Type 2 Arg/N-degrons (tryptophan [Trp] and phenylalanine [Phe]).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic illustrating Ubr1’s role in Arg/N-degron recognition. (B) Multiple causal DNA variants in UBR1 shape UPS activity towards the Trp N-degron. The BY strain was engineered to contain full or partial RM UBR1 alleles as indicated and UPS activity towards the Trp N-degron TFT was measured by flow cytometry. UPS activity was Z-score normalized and scaled relative to the median of a control BY strain engineered to contain the full BY UBR1 allele. Each point in the plot shows the median of 10,000 cells for each of 16 independent biological replicates per strain. p-values at the top of the plot display the Benjamini-Hochberg corrected p-value for the t-test of the indicated strain versus the strain with the BY UBR1 allele. Box plot center lines, box boundaries, and whiskers display the median, interquartile range, and 1.5 times the interquartile range, respectively. (C). Barchart summarizing the effects of RM UBR1 alleles on UPS activity towards the indicated Type 1 and 2 Arg/N-degrons using data generated as in B. p-values in the plot display the Benjamini-Hochberg corrected p-value for the t-test of the indicated strain versus the control strain engineered to contain the BY UBR1 allele. (D) Diagram of the individual BY / RM UBR1 promoter variants. (E) as in C., but for the RM UBR1 promoter and individual BY / RM UBR1 promoter variants. (F) Sequence logo of the Hap5 binding motif created by the causal –469A>T UBR1 promoter variant. (G) Multi-species alignment of the UBR1 promoter at the causal –469A>T variant. Abbreviations: ‘S. para.’, Saccharomyces paradoxus; ‘S. mik.’, Saccharomyces mikatae; ‘S. bay.’, Saccharomyces bayanus; ‘S. arb’, Saccharomyces arboricola; ‘S. pas.’, Saccharomyces pastorianus; ‘S. jur’, Saccharomyces jurei.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Raw UBR1 full gene fine-mapping results. The BY strain was engineered to contain full or partial RM UBR1 alleles as indicated and UPS activity towards the indicated Type 1 and Type 2 Arg/N-degron TFTs was measured by flow cytometry. UPS activity was Z-score normalized and scaled relative to the median of a control BY strain engineered to contain the full BY UBR1 allele. Each point in the plot shows the median of 10,000 cells for each of 16 independent biological replicates per strain per reporter. p-values at the top of the plot display the Benjamini-Hochberg-corrected p-value for the t-test of the indicated strain versus the strain with the BY UBR1 allele. Box plot center lines, box boundaries, and whiskers display the median, interquartile range, and 1.5 times the interquartile range, respectively. (A) UPS activity towards the indicated Type 1 Arg/N-degrons. (B) UPS activity towards the indicated Type 2 Arg/N-degrons.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Fine-mapping the causal nucleotide in the UBR1 promoter. The BY strain was engineered to carry the RM UBR1 promoter or one of the two single nucleotide BY / RM UBR1 promoter variants as indicated and UPS activity towards the Trp and Phe Type 2 Arg/N-degrons was measured by flow cytometry. UPS activity was Z-score normalized and scaled relative to the median of a control BY strain engineered to contain the full BY UBR1 allele. Each point in the plot shows the median of 10,000 cells for each of 16 independent biological replicates per strain per reporter. p-values at the top of the plot display the Benjamini-Hochberg-corrected p-value for the t-test of the indicated strain versus the strain with the BY UBR1 allele. Box plot center lines, box boundaries, and whiskers display the median, interquartile range, and 1.5 times the interquartile range, respectively.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Population frequencies and distribution of causal variants. Tree diagrams show genetic distance among a global panel of S. cerevisiae isolates with branches colored according to which allele a strain carries. Indicated clades with the BY allele for a causal DNA variant are outlined.
 
 Consistent with our QTL mapping results, The RM UBR1 allele significantly decreased the degradation rate of Type 1 Arg/N-degrons and increased the degradation rate of Type 2 Arg/N-degrons (corrected p < 0.05, Figure 3B/C, Figure 3—figure supplement 1). Thus, UBR1 is a causal gene for the chromosome VII QTL, and BY / RM variants in UBR1 differentially affect the degradation of Type 1 and 2 substrates of the Arg/N-end pathway.
 
@@ -66,11 +92,31 @@ To identify individual causal variants, we tested the effect of the two BY / RM 
 
 To gain further insight into the causal –469A>T variant, we examined its molecular properties, evolutionary history and population frequency using genome sequence data from a panel of 1,011 S. cerevisiae strains (Peter et al., 2018). The BY allele of the causal –469A>T variant in the UBR1 promoter disrupts a predicted binding site for the transcription activator Hap5 (Figure 3F) and decreased the output of a synthetic reporter in a massively parallel study of yeast promoter variants (Renganaath et al., 2020). BY carries the derived ‘A’ allele at –469A>T, which occurs in a poly(T) motif that is highly conserved across yeast species (Figure 3G). The population frequency of –469A>T is 1% and the variant is found in only in the Mosaic Region 1 clade that contains the BY strain (Figure 3—figure supplement 3). These results suggest the BY allele decreases UPS activity by decreasing UBR1 expression, which we subsequently validated at the RNA and protein levels (Figure 5). Moreover, the derived status and low population frequency of the BY allele at position –469 suggests that it may negatively impact organismal fitness, a notion consistent with the generally deleterious consequences of reduced UBR1 activity or expression (Zenker et al., 2006; Zenker et al., 2005; Chen et al., 2006).
 
-## Causal variants in functionally diverse ubiquitin system genes influence UPS activity
+### Causal variants in functionally diverse ubiquitin system genes influence UPS activity
 
 Some of the QTLs with the largest effects were specific to distinct N-end rule pathways or substrates and centered on known ubiquitin system genes (Figure 2B). We used allelic engineering to test whether these genes contained causal DNA variants for UPS activity.
 
 A QTL on chromosome X was specific to the Type 1 asparagine (Asn) N-degron of the Arg/N-end pathway (Figure 2B). The QTL’s peak occurred within NTA1, which encodes an amidase that converts N-terminal asparagine and glutamine residues to aspartate and glutamate, respectively (Figure 4A). This processing is necessary to convert Asn and Gln N-ends into functional N-degrons (Baker and Varshavsky, 1995). NTA1 contains multiple BY / RM promoter variants and two missense variants that alter amino acids on the protein’s exterior surface (Figure 4B/D). Consistent with the chromosome X QTL effect, the full RM NTA1 allele significantly increased the degradation rate of the Asn TFT (corrected p < 0.05, Figure 4C, Figure 4—figure supplement 1). The RM NTA1 promoter did not alter the degradation rate of the Asn TFT (corrected p > 0.05, Figure 4C). Instead, the two BY / RM NTA1 missense variants, D111E and E129G, both influenced degradation of the Asn TFT, but in opposite directions. D111E decreased the Asn TFT’s degradation, while, E129G increased it (corrected p < 0.05, Figure 4C, Figure 4—figure supplement 1). The effect of E129G was in the same direction as that of the chromosome X QTL and was approximately threefold greater than that of the effect of D111E (Figure 4C, Figure 4—figure supplement 1). Thus, at NTA1, one causal variant's large effect masks the opposing, smaller effect of a second causal variant.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig4-v2.jpg)
+
+**Figure 4.:** (A, E, and I). Schematics showing the role of Nta1 (A), Doa10 (E), and Ubc6 (I) in UPS substrate processing, recognition, and ubiquitination, respectively. (B, F, and J). Location of regulatory and missense BY / RM variants, as well as active sites and functional domains in the proteins encoded by NTA1 (B), DOA10 (F), and UBC6 (J). C., G., and K. Fine-mapping results for NTA1 (C), DOA10 (G), and UBC6 (K). Benjamini-Hochberg corrected p-values are shown for the t-test of the indicated strain versus a control BY strain engineered to contain the BY allele of each gene. AlphaFold predicted protein structures for Nta1 (D), Doa10 (H), and Ubc6 (L) are shown with causal DNA variants, functional domains, active sites, and transmembrane helices highlighted. The inset in L. shows a predicted hydrogen bonding network at residue 229 in the BY Ubc6 protein.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The BY strain was engineered to contain full or partial RM NTA1 alleles as indicated and UPS activity towards the Asn Arg/N-degron was measured by flow cytometry. UPS activity was Z-score normalized and scaled relative to the median of a control BY strain engineered to contain the full BY NTA1 allele. Each point in the plot shows the median of 10,000 cells for each of 16 independent biological replicates per strain per reporter. p-values at the top of the plot display the Benjamini-Hochberg-corrected p-value for the t-test of the indicated strain versus the strain with the BY NTA1 allele. Box plot center lines, box boundaries, and whiskers display the median, interquartile range, and 1.5 times the interquartile range, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The BY strain was engineered to contain full or partial RM DOA10 alleles as indicated and UPS activity towards the Gly and Thr Ac/N-degrons was measured by flow cytometry. UPS activity was Z-score normalized and scaled relative to the median of a control BY strain engineered to contain the full BY DOA10 allele. Each point in the plot shows the median of 10,000 cells for each of 16 independent biological replicates per strain per reporter. p-values at the top of the plot display the Benjamini-Hochberg-corrected p-value for the t-test of the indicated strain versus the strain with the BY DOA10 allele. Box plot center lines, box boundaries, and whiskers display the median, interquartile range, and 1.5 times the interquartile range, respectively.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The BY strain was engineered to contain full or partial RM UBC6 alleles as indicated and UPS activity towards the Thr and Ala Ac/N-degrons was measured by flow cytometry. UPS activity was Z-score normalized and scaled relative to the median of a control BY strain engineered to contain the full BY UBC6 allele. Each point in the plot shows the median of 10,000 cells for each of 16 independent biological replicates per strain per reporter. p-values at the top of the plot display the Benjamini-Hochberg-corrected p-value for the t-test of the indicated strain versus the strain with the BY UBC6 allele. Box plot center lines, box boundaries, and whiskers display the median, interquartile range, and 1.5 times the interquartile range, respectively.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Tree diagrams show genetic distance among a global panel of S. cerevisiae isolates with branches colored according to which allele a strain carries. Indicated clades with the BY allele for a causal DNA variant are outlined.
 
 A QTL on chromosome IX detected for 6 of 8 Ac/N-end degrons contained DOA10, the E3 ligase of the Ac/N-end rule pathway (Figure 4E). The effect size of this QTL varied between Ac/N-degrons. We therefore tested the glycine (Gly) and threonine (Thr) reporters to determine whether BY / RM DOA10 variants exert substrate-specific effects on UPS activity. The RM DOA10 allele contains three missense variants, Q410E, K1012N, and Y1186F, and does not contain promoter or terminator variants (Figure 4F/H). The full RM DOA10 allele significantly increased the degradation of both the Gly and Thr TFTs (corrected p < 0.05, Figure 4G, Figure 4—figure supplement 2). When tested in isolation, all three BY / RM DOA10 missense variants increased the degradation of the Gly TFT (corrected p < 0.05, Figure 4G, Figure 4—figure supplement 2). In contrast, only the Y1186F variant significantly increased the degradation of the Thr TFT (Figure 4G, Figure 4—figure supplement 2). The multiple causal variants and substrate-specific effects of individual DOA10 variants further highlights the complex effects of variation in E3 ubiquitin ligases on UPS activity.
 
@@ -84,9 +130,17 @@ We examined additional QTLs to nominate candidate causal genes. The most frequen
 
 Taken together, our analysis of causal genes and nucleotides illustrates the breadth and diversity of genetic influences on UPS activity. Each fine-mapped causal gene harbored multiple causal variants that may differentially affect distinct UPS substrates. Regulatory and missense variants in ubiquitin system genes that shape the full sequence of molecular events in protein ubiquitination, including substrate processing, recognition, and ubiquitination, alter UPS activity.
 
-## Protein-specific effects of UBR1 -469A>T on gene expression
+### Protein-specific effects of UBR1 -469A>T on gene expression
 
 Previous efforts to understand how genetic variation influences gene expression have revealed considerable discrepancies between genetic effects on mRNA versus protein abundance. Many gene expression QTLs alter protein abundance without detectable effects on mRNA levels (Battle et al., 2015; Ghazalpour et al., 2011; Mirauta et al., 2020; Albert et al., 2014; Brion et al., 2020; Chick et al., 2016; Cenik et al., 2015; Abell et al., 2022; Foss et al., 2011). We reasoned that protein-specific gene expression QTLs could arise through effects on UPS protein degradation. To test this idea and explore how variant effects on UPS activity influence other aspects of cellular physiology, we measured global gene expression at the protein and RNA levels in the same cultures of the BY strain and a BY strain engineered to contain the causal –469A>T RM allele in the UBR1 promoter ("BY UBR1 –469A>T"). As expected, the derived BY allele decreased UBR1 protein and RNA levels (Figure 5A/B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig5-v2.jpg)
+
+**Figure 5.:** (A) Protein fold-change versus statistical significance for BY versus BY UBR1 –469A>T for all detected proteins. Differentially abundant proteins are shown in blue. (B) RNA fold-change versus statistical significance for BY versus BY UBR1 –469A>T for all detected transcripts. Differentially expressed transcripts are shown in yellow. (C) Scatterplot comparing changes in protein and RNA abundance caused by UBR1 –469A>T. "LFC" = log2 fold change.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79570/elife-79570-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Barchart of significantly over-represented Gene Ontology Biological Process and Reactome Pathway terms identified using the list of differentially expressed mRNA transcripts between the wild-type BY strain and BY UBR1 –469A>T. The numbers in the bars denote the observed (left) and expected (right) number of genes for a given process or pathway.
 
 Out of 3,046 proteins quantified by mass spectrometry, 39 proteins were differentially abundant at a 10% FDR (Figure 5A, Figure 5—source data 1). Consistent with the reduced UPS activity conferred by the BY UBR1 allele, a significant majority (28 of 39, 71%, binomial test p = 9.5e-3) of differentially abundant proteins were increased by the BY allele (Figure 5A, Figure 5—source data 1). The median log2 fold change across all proteins was –0.012, while for differentially abundant proteins, the median log2 fold change was 0.37 (Figure 5A, Figure 5—source data 1). No Gene Ontology or Reactome pathway terms were enriched in our set of differentially abundant proteins. This result is consistent with recent observations that sequence features, rather than biological function or subcellular localization are the primary determinants of substrate targeting by E3 ligases. (Kong et al., 2021; Christiano et al., 2020).
 
@@ -106,13 +160,310 @@ We have developed a generalizable framework for mapping genetic influences on pr
 
 ## Materials and methods
 
-## Tandem fluorescent timer ubiquitin-proteasome system activity reporters
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>UBR1</td>
+      <td>Saccharomyces Genome Database (SGD)</td>
+      <td>YGR184C</td>
+      <td>edited to containalternative alleles / variants</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>DOA10</td>
+      <td>SGD</td>
+      <td>YIL030C</td>
+      <td>edited to containalternative alleles / variants</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBC6</td>
+      <td>SGD</td>
+      <td>YER100W</td>
+      <td>edited to containalternative alleles / variants</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>NTA1</td>
+      <td>SGD</td>
+      <td>YJR062C</td>
+      <td>edited to containalternative alleles / variants</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>HIS3</td>
+      <td>SGD</td>
+      <td>YOR202W</td>
+      <td>selectable marker for genome engineering</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>LYP1</td>
+      <td>SGD</td>
+      <td>YNL268W</td>
+      <td>selectable marker for genome engineering</td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground (S. cerevisiae)</td>
+      <td>BY4741</td>
+      <td>Leonid Kruglyak</td>
+      <td>YFA0040</td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground (S. cerevisiae)</td>
+      <td>RM11.1a</td>
+      <td>Leonid Kruglyak</td>
+      <td>YFA0039</td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground (S. cerevisiae)</td>
+      <td>recombinant progeny of BY4741 x RM11.1a</td>
+      <td>this study</td>
+      <td>SFA-</td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground (S. cerevisiae)</td>
+      <td>strains with tandem fluorescent timer reporters</td>
+      <td>this study</td>
+      <td>YFA-</td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground (S. cerevisiae)</td>
+      <td>strains lacking individual ubiquitin-proteasome system genes</td>
+      <td>this study</td>
+      <td>YFA-</td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground (S. cerevisiae)</td>
+      <td>strains with alternative UPS gene alleles / variants</td>
+      <td>this study</td>
+      <td>YFA-</td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Strain, strainbackground (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>New England Biolabs</td>
+      <td></td>
+      <td>for plasmid cloning and propagation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>23 plasmids</td>
+      <td>this study</td>
+      <td>PFA-</td>
+      <td>Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>backbone plasmid</td>
+      <td>Addgene</td>
+      <td>35121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>backbone plasmid</td>
+      <td>Addgene</td>
+      <td>41030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KanMX cassette</td>
+      <td>Wach et al., 1994;10.1002/yea.320101310</td>
+      <td></td>
+      <td>selectable marker for genome engineering</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NatMX cassette</td>
+      <td>Wach et al., 1994;10.1002/yea.320101310</td>
+      <td></td>
+      <td>selectable marker for genome engineering</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>102 oligonucleotides</td>
+      <td>Integrated DNATechologies</td>
+      <td>OFA-</td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNALibrary Prep Kit</td>
+      <td>Illumina</td>
+      <td>FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EB Ultra IIDirectional RNAlibrary kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>E7760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monarch GelExtraction kit</td>
+      <td>New England Biolabs</td>
+      <td>T1010L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiFi DNA AssemblyCloning Kit</td>
+      <td>New England Biolabs</td>
+      <td>E5520S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMT10plex IsobaricLabel Reagent Set</td>
+      <td>ThermoFisher Scientific</td>
+      <td>90110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ZR Fungal / BacterialRNA Miniprep kit</td>
+      <td>Zymo Research</td>
+      <td>R2014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-96 DNA Plus kit</td>
+      <td>Zymo Research10.1093/bioinformatics/btp324</td>
+      <td>D4070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MULTIPOOL</td>
+      <td>Edwards and Gifford, 2012;10.1186/1471-2105-13-S6-S8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>trimmomatic</td>
+      <td>Bolger et al., 201410.1093/bioinformatics/btu170</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto</td>
+      <td>Bray et al., 2016;10.1038/nbt.3519</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PANTHER</td>
+      <td>Mi et al., 2021;10.1093/nar/gkaa1106</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastp</td>
+      <td>Chen et al., 2018;10.1093/bioinformatics/bty560</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSeQC</td>
+      <td>Wang et al., 2012;10.1093/bioinformatics/bts356</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scaffold</td>
+      <td>https://www.proteomesoftware.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold</td>
+      <td>Jumper et al., 2021;10.1038/s41586-021-03819-2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Inkscape</td>
+      <td>https://inkscape.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSR II Flow Cytometer</td>
+      <td>BD</td>
+      <td></td>
+      <td>flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FACSAria II Cell Sorter</td>
+      <td>BD</td>
+      <td></td>
+      <td>cell sorting</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Orbitrap Fusion TribridMS-MS instrument</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td>mass spectrometry</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Next-Seq 550</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>DNA / RNAsequencing</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tandem fluorescent timer ubiquitin-proteasome system activity reporters
 
 We used tandem fluorescent timers (TFTs) to measure ubiquitin-proteasome system (UPS) activity. TFTs are fusions of two fluorescent proteins (FPs) with distinct spectral profiles and maturation kinetics (Khmelinskii et al., 2012; Khmelinskii and Knop, 2014). In the most common implementation, a TFT consists of a faster maturing green fluorescent protein (GFP) and a slower maturing red fluorescent protein (RFP). Because the FPs in the TFT mature at different rates, the RFP / GFP ratio changes over time. If the degradation rate of a TFT exceeds the maturation rate of the RFP, the -log2 RFP / GFP ratio is directly proportional to the construct’s degradation rate (Khmelinskii and Knop, 2014; Khmelinskii et al., 2012). When fused to N-degrons, the TFT’s RFP / GFP ratio measures UPS N-end rule activity (Khmelinskii et al., 2012; Khmelinskii et al., 2014). The RFP / GFP ratio is also independent of the TFT’s expression level, (Khmelinskii et al., 2012; Khmelinskii and Knop, 2014; Kong et al., 2021) preventing confounding from genetic effects on reporter expression in genetically diverse cell populations.
 
 We used fluorescent proteins from previously characterized TFTs in our experiments (Khmelinskii et al., 2016; Khmelinskii and Knop, 2014; Khmelinskii et al., 2012; Khmelinskii et al., 2014). superfolder GFP (Pédelacq et al., 2006) (sfGFP) was used as the faster maturing FP in all TFTs. sfGFP matures in approximately 5 min and has excitation and emission maximums of 485 nm and 510 nm, respectively (Pédelacq et al., 2006). The slower maturing FP in each TFT was either mCherry or mRuby. mCherry matures in approximately 40 min and has excitation and emission maximums of 587 nm and 610 nm, respectively (Shaner et al., 2004). mRuby matures in approximately 170 min and has excitation and emission maximums of 558 nm and 605 nm, respectively (Kredel et al., 2009). All TFT fluorescent proteins are monomeric. We separated green and red FPs in each TFT with an unstructured 35 amino acid linker sequence to minimize fluorescence resonance energy transfer (Khmelinskii et al., 2012).
 
-## Construction of Arg/N-end and Ac/N-end pathway TFTs
+### Construction of Arg/N-end and Ac/N-end pathway TFTs
 
 To generate TFT constructs with defined N-terminal amino acids, we used the ubiquitin-fusion technique (Bachmair et al., 1986; Varshavsky, 2005; Varshavsky, 2011), which involves placing a ubiquitin moiety immediately upstream of a sequence encoding the desired N-degron. During translation, ubiquitin-hydrolases cleave the ubiquitin moiety, exposing the N-degron (Figure 1A). We synthesized DNA (Integrated DNA Technologies [IDT], Coralville, Iowa, USA) encoding the Saccharomyces cerevisiae ubiquitin sequence and a peptide linker sequence derived from Escherichia coli ß-galactosidase previously used to identify components of the Arg/N-end and Ac/N-end pathways (Bachmair et al., 1986). The peptide linker sequence is unstructured and contains internal lysine residues required for ubiquitination and degradation by the UPS (Bachmair et al., 1986; Hwang et al., 2010). Peptide linkers encoding the 20 possible N-terminal amino acids were made by PCR amplifying the linker sequence using oligonucleotides encoding each unique N-terminal amino acid (Supplementary file 3).
 
@@ -120,25 +471,201 @@ We then devised a general strategy to assemble TFT-containing plasmids with defi
 
 We used Addgene plasmid #35121 (a gift from John McCusker) to construct all TFT plasmids. Digesting this plasmid with BamHI and EcoRV restriction enzymes produces a 2,451 bp fragment that we used as a vector backbone for TFT plasmid assembly. We obtained a DNA fragment containing 734 bp of sequence upstream of the LYP1 start codon, a SwaI restriction site, and 380 bp of sequence downstream of the LYP1 stop codon by DNA synthesis (IDT). We performed isothermal assembly cloning using the New England Biolabs (NEB; Ipswich, MA, USA) HiFi Assembly Cloning Kit (NEB) to insert the LYP1 homology sequence into the BamHI/EcoRV digest of Addgene plasmid #35121 to create the final backbone plasmid BFA0190 (Supplementary file 4). We then combined SwaI digested BFA0190 and the components of each TFT reporter and used the NEB HiFi Assembly Kit (NEB) to produce each TFT plasmid. The 5’ and 3’ LYP1 sequences in each TFT contain naturally-occurring SacI and BglII restriction sites, respectively. We digested each TFT plasmid with SacI and BglII (NEB) to obtain a linear DNA transformation fragment (Figure 1—figure supplement 2). The flanking LYP1 homology and KanMX module in each TFT construct allows selection for reporter integration at the LYP1 locus using G418 (Goldstein and McCusker, 1999) and the toxic amino acid analogue thialysine (S-(2-aminoethyl)-L-cysteine hydrochloride) (Zwolshen and Bhattacharjee, 1981; Baryshnikova et al., 2010; Kuzmin et al., 2016). The sequence identity of all assembled plasmids was verified by Sanger sequencing. The full list of plasmids used in this study is found in Supplementary file 4.
 
-## Yeast strain handling
+### Yeast strain handling
 
 We used two strains of the yeast Saccharomyces cerevisiae to characterize our TFT reporters and perform genetic mapping of UPS activity. The haploid BY strain (genotype: MATa his3Δ hoΔ) is closely related to the S. cerevisiae S288C laboratory strain. The second mapping strain, RM, was originally isolated from a California vineyard and is haploid with genotype MATa can1Δ::STE2pr-SpHIS5 his3Δ::NatMX AMN1-BY hoΔ::HphMX URA3-FY. BY and RM differ at 1 nucleotide per 200 base pairs on average, such that approximately 45,000 single nucleotide variants (SNVs) between the strains can serve as markers in a genetic mapping experiment (Albert et al., 2014; Brion et al., 2020; Ehrenreich et al., 2009; Ehrenreich et al., 2010).
 
 We built additional strains for characterizing our UPS activity reporters by deleting individual UPS genes from the BY strain. Each deletion strain was constructed by replacing the targeted gene with the NatMX cassette (Goldstein and McCusker, 1999), which confers resistance to the antibiotic nourseothricin. We PCR amplified the NatMX cassette from Addgene plasmid #35121 using primers with homology to the 5’ upstream and 3’ downstream sequences of the targeted gene. The oligonucleotides for each gene deletion cassette amplification are listed in Supplementary file 3. We created a BY strain lacking the UBR1 gene, which encodes the Arg/N-end pathway E3 ligase Ubr1. We refer to this strain hereafter as ‘BY ubr1Δ’. We created a BY strain (‘BY doa10Δ’) lacking the DOA10 gene that encodes the Ac/N-end pathway E3 ligase Doa10. Finally, we created a BY strain (‘BY rpn4Δ’) lacking the RPN4 that encodes the proteasome transcription factor Rpn4. Table 1 lists these strains and their full genotypes. Supplementary file 5 contains the complete list of strains used in this study.
 
+**Table 1.**
+ Strain genotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Short Name</th>
+      <th>Genotype</th>
+      <th>Antibiotic Resistance</th>
+      <th>Auxotrophies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BY</td>
+      <td>MATa his3Δ hoΔ</td>
+      <td></td>
+      <td>histidine</td>
+    </tr>
+    <tr>
+      <td>RM</td>
+      <td>MATα can1Δ::STE2pr-SpHIS5</td>
+      <td>clonNAT, hygromycin</td>
+      <td>histidine</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>his3Δ::NatMX hoΔ::HphMX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BY rpn4Δ</td>
+      <td>MATa his3Δ hoΔ rpn4Δ::NatMX</td>
+      <td>clonNAT</td>
+      <td>histidine</td>
+    </tr>
+    <tr>
+      <td>BY ubr1Δ</td>
+      <td>MATa his3Δ hoΔ ubr1Δ::NatMX</td>
+      <td>clonNAT</td>
+      <td>histidine</td>
+    </tr>
+    <tr>
+      <td>BY doa10Δ</td>
+      <td>MATa his3Δ hoΔ doa10Δ::NatMX</td>
+      <td>clonNAT</td>
+      <td>histidine</td>
+    </tr>
+  </tbody>
+</table>
+
 Table 2 describes the media formulations used for all experiments. Synthetic complete amino acid powders (SC -lys and SC -his -lys -ura) were obtained from Sunrise Science (Knoxville, TN, USA). Where indicated, we added the following reagents at the indicated concentrations to yeast media: G418, 200 mg/mL (Fisher Scientific, Pittsburgh, PA, USA); clonNAT (nourseothricin sulfate, Fisher Scientific), 50 mg/L; thialysine (S-(2-aminoethyl)-L-cysteine hydrochloride; MilliporeSigma, St. Louis, MO, USA), 50 mg/L; canavanine (L-canavanine sulfate, MilliporeSigma), 50 mg/L.
 
-## Yeast transformation
+**Table 2.**
+ Media formulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Media Name</th>
+      <th>Abbreviation</th>
+      <th>Formulation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Yeast-Peptone-Dextrose</td>
+      <td>YPD</td>
+      <td>10 g/L yeast extract</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20 g/L peptone</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20 g/L dextrose</td>
+    </tr>
+    <tr>
+      <td>Synthetic Complete</td>
+      <td>SC</td>
+      <td>6.7 g/L yeast nitrogen base</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1.96 g/L amino acid mix -lys</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20 g/L dextrose</td>
+    </tr>
+    <tr>
+      <td>Haploid Selection</td>
+      <td>SGA</td>
+      <td>6.7 g/L yeast nitrogen base</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1.74 g/L amino acid mix -his -lys -ura</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20 g/L dextrose</td>
+    </tr>
+    <tr>
+      <td>Sporulation</td>
+      <td>SPO</td>
+      <td>1 g/L yeast extract</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10 g/L potassium acetate</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0.5 g/L dextrose</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast transformation
 
 We used a standard yeast transformation protocol to construct reporter control strains and build strains with UPS activity reporters (Gietz and Schiestl, 2007). In brief, we inoculated yeast strains growing on solid YPD medium into 5 mL of YPD liquid medium for overnight growth at 30°C. The following morning, we diluted 1 mL of saturated culture into 50 mL of fresh YPD and grew the cells for 4 hr. The cells were then successively washed in sterile ultrapure water and transformation solution 1 (10 mM Tris HCl [pH 8.0], 1 mM EDTA [pH 8.0], and 0.1 M lithium acetate). At each step, we pelleted the cells by centrifugation at 3000 rpm for 2 min in a benchtop centrifuge and discarded the supernatant. The cells were suspended in 100 μL of transformation solution 1 along with 50 μg of salmon sperm carrier DNA and 300 ng of transforming DNA. The cells were incubated at 30 for 30 min and 700 μL of transformation solution 2 (10 mM Tris HCl [pH 8.0], 1 mM EDTA [pH 8.0], and 0.1 M lithium acetate in 40% polyethylene glycol [PEG]) was added to each tube, followed by a 30-min heat shock at 42°C. We then washed the transformed cells in sterile, ultrapure water. We added 1 mL of liquid YPD medium to each tube and incubated the tubes for 90 min with rolling at 30°C to allow for expression of the antibiotic resistance cassettes. After washing with sterile, ultrapure water, we plated 200 μL of cells on solid SC -lys medium with G418 and thialysine, and, for strains with the NatMX cassette, clonNAT. For each strain, we streaked multiple independent colonies (biological replicates) from the transformation plate for further analysis as indicated in the text. We verified reporter integration at the targeted genomic locus by colony PCR (Ward, 1992). The primers used for these experiments are listed in Supplementary file 3.
 
-## Yeast mating and segregant populations
+### Yeast mating and segregant populations
 
 We created populations of genetically variable, recombinant cells ("segregants") for genetic mapping using a modified synthetic genetic array (SGA) approach (Baryshnikova et al., 2010; Kuzmin et al., 2016). We first mated BY strains with a given UPS activity reporter to RM by mixing freshly streaked cells of each strain on solid YPD medium. For each UPS activity reporter, we mated two independently-derived clones (biological replicates) to the RM strain. Cells were grown overnight at 30°C and we selected for diploid cells (successful BY-RM matings) by streaking mated cells onto solid YPD medium with G418 (which selects for the KanMX cassette in the TFT in the BY strain) and clonNAT (which selects for the NatMX cassette in the RM strain). We inoculated 5 mL of YPD with freshly streaked diploid cells for overnight growth at 30°C. The next day, we pelleted the cultures, washed them with sterile, ultrapure water, and resuspended the cells in 5 mL of SPO liquid medium (Table 2). We sporulated the cells by incubating them at room temperature with rolling for 9 days. After confirming sporulation by brightfield microscopy, we pelleted 2 mL of culture, washed cells with 1 mL of sterile, ultrapure water, and resuspended cells in 300 μL of 1 M sorbitol containing 3 U of Zymolyase lytic enzyme (United States Biological, Salem, MA, USA) to degrade ascal walls. Digestions were carried out at 30°C with rolling for 2 hr. We then washed the spores with 1 mL of 1 M sorbitol, vortexed for 1 min at the highest intensity setting, resuspended the cells in sterile ultrapure water, and confirmed the release of cells from ascii by brightfield microscopy. We plated 300 μl of cells onto solid SGA medium containing G418 and canavanine. This media formulation selects for haploid cells with (1) a UPS activity reporter via G418, (2) the MATa mating type via the Schizosaccharomyces pombe HIS5 gene under the control of the STE2 promoter (which is only active in MATa cells), and (3) replacement of the CAN1 gene with S. pombe HIS5 via the toxic arginine analog canavanine (Baryshnikova et al., 2010; Kuzmin et al., 2016). Haploid segregant populations were grown for 2 days at 30°C and harvested by adding 10 mL of sterile, ultrapure water and scraping the cells from each plate. We pelleted each cell suspension by centrifugation at 3000 rpm for 10 min and resuspended the cells in 1 mL of SGA medium. We added 450 μL of 40% (v/v) sterile glycerol solution to 750 μL of segregant culture and stored samples in screw cap cryovials at -80°C. We stored two independent sporulations of each reporter (derived from our initial matings) as independent biological replicates.
 
-## Flow cytometry
+### Flow cytometry
 
 We measured UPS activity by flow cytometry as follows. Yeast strains were manually inoculated into 400 μL of liquid SC -lys medium with G418 and grown overnight in 2 mL 96-well plates at 30°C with 1000 rpm mixing using a MixMate (Eppendorf, Hamburg, Germany). The following morning, we inoculated a fresh 400 μL of G418-containing SC -lys media with 4 μL of each saturated culture. Cells were grown for an additional 3 hr prior to analysis by flow cytometry. All flow cytometry experiments were performed on an LSR II flow cytometer (BD, Franklin Lakes, NJ, USA) equipped with a 20 mW 488 nm laser with 488/10 and 525/50 filters for measuring forward/side scatter and sfGFP, respectively, as well as a 40 mW 561 nm laser and a 610/20 filter for measuring mCherry and mRuby. Table 3 lists the parameters and settings that were used for all flow cytometry and fluorescence-activated cell sorting (FACS) experiments. We recorded 10,000 cells each from 8 independent biological replicates per strain for our analyses of BY, RM, and reporter control strains.
+
+**Table 3.**
+ Flow cytometry and FACS settings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Laser Line (nm)</th>
+      <th>Laser Setting (V)</th>
+      <th>Filter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>forward scatter (FSC)</td>
+      <td>488</td>
+      <td>500</td>
+      <td>488/10</td>
+    </tr>
+    <tr>
+      <td>side scatter (SSC)</td>
+      <td>488</td>
+      <td>275</td>
+      <td>488/10</td>
+    </tr>
+    <tr>
+      <td>sfGFP</td>
+      <td>488</td>
+      <td>500</td>
+      <td>525/50</td>
+    </tr>
+    <tr>
+      <td>mCherry</td>
+      <td>561</td>
+      <td>615</td>
+      <td>610/20</td>
+    </tr>
+    <tr>
+      <td>mRuby</td>
+      <td>561</td>
+      <td>615</td>
+      <td>610/20</td>
+    </tr>
+  </tbody>
+</table>
 
 We analyzed flow cytometry data using R (R Foundation for Statistical Computing, Vienna Austria) and the flowCore R package (Hahne et al., 2009). We first filtered each flow cytometry dataset to include only those cells within 10% ± the forward scatter (a proxy for cell size) median. We empirically determined that this gating approach captured the central peak of cells in the FSC histogram. It also removed cellular debris, aggregates of multiple cells, and restricted our analyses to cells of the same approximate size. We observed that the TFT’s output changed with the passage of time during flow cytometry experiments. We used the residuals of a loess regression of the TFT’s output on time to correct for this effect, similar to a previously-described approach (Brion et al., 2020).
 
@@ -146,37 +673,53 @@ To characterize our TFT reporters, we used the following analysis steps. We extr
 
 For fine-mapping causal genes and variants for UPS activity QTLs, we used the following approach. We extracted the median -log2 RFP / GFP ratio from each of 10,000 cells per strain per reporter. These values were Z-score normalized relative to the median of the control strain (a BY strain engineered to contain the BY allele of a candidate causal gene). Statistical significance was assessed using a t-test of each experimental strain versus the control strain with Benjamini-Hochberg correction for multiple testing (Benjamini and Hochberg, 1995).
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 We selected populations of segregants for QTL mapping using a previously described approach for isolating phenotypically extreme cell populations by FACS (Albert et al., 2014; Brion et al., 2020). Segregant populations were thawed approximately 16 hr prior to cell sorting and grown overnight in 5 mL of SGA medium containing G418 and canavanine. The following morning, 1 mL of cells from each segregant population was diluted into a fresh 4 mL of SGA medium containing G418 and canavanine. Segregant cultures were then grown for an additional 4 hours prior to sorting. All FACS experiments were carried out using a FACSAria II cell sorter (BD). We used plots of side scatter (SSC) height by SSC width and forward scatter (FSC) height by FSC width to remove doublets from each sample. We then filtered cells on the basis of FSC area, restricting our sorts to ±7.5% of the central FSC peak, which we empirically determined excluded cellular debris and aggregates while encompassing the primary haploid cell population. Finally, we defined a fluorescence-positive population by comparing each segregant population to negative control BY and RM strains without TFTs. We collected pools of 20,000 cells each from three gates drawn on each segregant population:
 
 We collected cell pools from two independent biological replicates (spore preparations) for each reporter. Each pool of 20,000 cells was collected into sterile 1.5 mL polypropylene tubes containing 1 mL of SGA medium and grown overnight at 30°C with rolling. The next day, we mixed 750 μL of cells with 450 μL of 40% (v/v) glycerol and stored this mixture in 2 mL 96-well plates at −80°C.
 
-## Genomic DNA isolation and library preparation
+### Genomic DNA isolation and library preparation
 
 We extracted genomic DNA from sorted segregant pools for whole-genome sequencing. Deep-well plates containing glycerol stocks of sorted segregant pools were thawed and 800 μL of each sample was pelleted by centrifugation at 3,700 rpm for 10 min. We discarded the supernatant and resuspended cell pellets in 800 μL of a 1 M sorbitol solution containing 0.1 M EDTA, 14.3 mM β-mercaptoethanol, and 500 U of Zymolyase lytic enzyme to digest cell walls prior to DNA extraction. The digestion reaction was carried out by resuspending cell pellets with mixing at 1,000 rpm for 2 min followed by incubation for 2 hr at 37°C. When the digestion reaction finished, we discarded the supernatant, resuspended cells in 50 μL of phosphate buffered saline, and used the Quick-DNA 96 Plus kit (Zymo Research, Irvine, CA, USA) to extract genomic DNA. We followed the manufacturer’s protocol to extract genomic DNA with the following modifications. We incubated cells in a 20 mg/mL proteinase K solution overnight with incubation at 55°C. After completing the DNA extraction protocol, we eluted DNA using 40 μL of DNA elution buffer (10 mM Tris-HCl [pH 8.5], 0.1 mM EDTA). The DNA concentration for each sample was determined using the Qubit dsDNA BR assay kit (Thermo Fisher Scientific, Waltham, MA, USA) in a 96 well format using a Synergy H1 plate reader (BioTek Instruments, Winooski, VT, USA).
 
 We used a previously-described approach to prepare libraries for short-read whole-genome sequencing on the Illumina Next-Seq platform (Albert et al., 2014; Brion et al., 2020). We used the Nextera DNA library kit (Illumina, San Diego, CA, USA) according to the manufacturer’s instructions with the following modifications. For the tagmentation reaction, 5 ng of genomic DNA from each sample was diluted in a master mix containing 4 μL of Tagment DNA buffer, 1 μL of sterile molecular biology grade water, and 5 μL of Tagment DNA enzyme diluted 1:20 in Tagment DNA buffer. The tagmentation reaction was run on a SimpliAmp thermal cycler (Thermo Fisher Scientific) using the following parameters: 55°C temperature, 20 μL reaction volume, 10 min incubation. To prepare libraries for sequencing, we added 10 μL of the tagmentation reaction to a master mix containing 1 μL of an Illumina i5 and i7 index primer pair mixture, 0.375 μL of ExTaq polymerase (Takara Bio, Mountain View, CA, USA), 5 μL of ExTaq buffer, 4 μL of a dNTP mixture, and 29.625 μL of sterile molecular biology grade water. We generated all 96 possible index oligo combinations using 8 i5 and 12 i7 index primers. The library amplification reaction was run on a SimpliAmp thermal cycler with the following parameters: initial denaturation at 95°C for 30 s, then 17 cycles of 95°C for 10 s (denaturation), 62°C for 30 s (annealing), and 72°C for 3 min (extension). We quantified the DNA concentration of each reaction using the Qubit dsDNA BR assay kit (Thermo Fisher Scientific) and pooled 10 μL of each reaction. This pooled mixture was run on a 2% agarose gel and we extracted and purified DNA in the 400 bp to 600 bp region using the Monarch Gel Extraction Kit (NEB) according to the manufacturer’s instructions.
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 We submitted pooled, purified DNA libraries to the University of Minnesota Genomics Center (UMGC) for Illumina sequencing. Prior to sequencing, UMGC staff performed three quality control (QC) assays. Library concentration was determined using the PicoGreen dsDNA quantification reagent (Thermo Fisher Scientific) with libraries at a concentration of 1 ng/μL passing QC. Library size was determined using the Tapestation electrophoresis system (Agilent Technologies, Santa Clara, CA, USA) with libraries in the range of 200–700 bp passing QC. Library functionality was determined using the KAPA DNA Library Quantification kit (Roche, Penzberg, Germany), with libraries with a concentration greater than 2 nM passing. All submitted libraries passed each QC assay. We submitted 7 libraries for sequencing at different times. Libraries were sequenced on a NextSeq 550 instrument (Illumina). Depending on the number of samples, we used the following output settings. For libraries with 70 or more samples (2 libraries), 75 bp paired end sequencing was performed in high-output mode to generate approximately 360 × 106 reads. For libraries with 50 or fewer samples (5 libraries), 75 bp paired end sequencing was performed in mid-output mode to generate approximately 120 × 106 reads. Average read coverage of the genome ranged from 9 to 35 with a median coverage of 28 across all libraries. Sequence data de-multiplexing was performed by UMGC. Whole-genome sequencing data have been deposited into the NIH Sequence Read Archive under Bioproject accession PRJNA881749.
 
-## Raw whole-genome sequencing data processing
+### Raw whole-genome sequencing data processing
 
 We calculated allele frequencies from our whole-genome sequencing data using the following pipeline. We initially filtered reads to include only those reads with mapping quality scores greater than 30. We aligned the filtered reads to the S. cerevisiae reference genome (version sacCer3) using BWA (Li and Durbin, 2009a) (command: ‘mem -t 24’). We then used samtools (Li et al., 2009b) to remove unaligned reads, non-uniquely aligned reads, and PCR duplicates (command: ‘samtools rmdup -S’). Finally, we produced vcf files containing coverage and allelic read counts at each of 18,871 high-confidence, reliable SNPs (Bloom et al., 2013; Ehrenreich et al., 2010) (command: ‘samtools mpileup -vu -t INFO/AD -l’). Because the BY strain is closely related to the S288C genome reference S. cerevisiae strain, we considered BY alleles reference and RM alleles alternative alleles.
 
-## QTL mapping
+### QTL mapping
 
 We identified QTLs from sequence data following established procedures for bulk segregant analysis (Ehrenreich et al., 2010; Albert et al., 2014; Brion et al., 2020). Allele counts in the vcf files generated above were provided to the MULTIPOOL algorithm (Edwards and Gifford, 2012). MULTIPOOL computes logarithm of the odds (LOD) scores by comparing two models: (1) a model in which the high and low UPS activity pools come from one from common population and thus share the same frequency of the BY and RM allele, and (2) a model in which these pools come from two populations with two different allele frequencies, indicating the presence of a QTL. We identified QTLs as genomic regions exceeding an empirically-derived significance threshold (see below). We used MULTIPOOL with the following settings: bp per centiMorgan = 2,200, bin size = 100 bp, effective pool size = 1,000. As in previous QTL mapping in the BY/RM cross by bulk segregant analysis (Albert et al., 2014; Brion et al., 2020), we excluded variants with allele frequencies higher than 0.9 or lower than 0.1 (Albert et al., 2014; Brion et al., 2020). We also used MULTIPOOL to estimate confidence intervals for each significant QTL, which we defined as a 2-LOD drop from the QTL peak position. To visualize QTLs and gauge their effects, we also computed the RM allele frequency differences (ΔAF) at each site between our high and low UPS activity pools. Because allele frequencies are affected by random counting noise, we used loess regression to smooth the allele frequency for each sample before computing ΔAF. We used the smoothed values to plot the ΔAF distribution along the genome and as a measure of QTL effect size.
 
-## Null sorts and empirical false discovery rate estimation
+### Null sorts and empirical false discovery rate estimation
 
-We used "null" segregant pools (fluorescence-positive cells with no selection on UPS activity) to empirically estimate the false discovery rate (FDR) of our QTL mapping method. Because these cells are obtained as two pools from the same null population in the same sample, any ΔAF differences between them are the result of technical noise or random variation. We permuted these null comparisons across segregant pools with the same UPS activity reporter for a total of 112 null comparisons. We define the "null QTL rate" at a given LOD threshold as the number of QTLs that exceeded the threshold in these comparisons divided by the number of null comparisons. To determine the FDR for a given LOD score, we then determined the number of QTLs for our experimental comparisons (high UPS activity versus low UPS activity). We define the "experimental QTL rate" as the number of experimental QTLs divided by the number of experimental comparisons. The FDR is thus computed as follows:nullQTLrate=n.nullQTLsn.nullcomparisonsexperimentalQTLrate=n.experimentalQTLsn.experimentalcomparisonsFDR=nullQTLrateexperimentalQTLrate
+We used "null" segregant pools (fluorescence-positive cells with no selection on UPS activity) to empirically estimate the false discovery rate (FDR) of our QTL mapping method. Because these cells are obtained as two pools from the same null population in the same sample, any ΔAF differences between them are the result of technical noise or random variation. We permuted these null comparisons across segregant pools with the same UPS activity reporter for a total of 112 null comparisons. We define the "null QTL rate" at a given LOD threshold as the number of QTLs that exceeded the threshold in these comparisons divided by the number of null comparisons. To determine the FDR for a given LOD score, we then determined the number of QTLs for our experimental comparisons (high UPS activity versus low UPS activity). We define the "experimental QTL rate" as the number of experimental QTLs divided by the number of experimental comparisons. The FDR is thus computed as follows:
+
+$$
+nullQTLrate=\frac{n.nullQTLs}{n.nullcomparisons}
+$$
+
+
+
+$$
+experimentalQTLrate=\frac{n.experimentalQTLs}{n.experimentalcomparisons}
+$$
+
+
+
+$$
+FDR=\frac{nullQTLrate}{experimentalQTLrate}
+$$
 
 We evaluated the FDR over a LOD range of 2.5–10 in 0.5 LOD increments. We found that a LOD value of 4.5 led to a null QTL rate of 0.0625 and an FDR of 0.507%. We used this value as our significance threshold for QTL mapping and further filtered our QTL list by excluding QTLs that were not detected in each of two independent biological replicates. Replicating QTLs were defined as those whose peaks were within 100 kb of each other on the same chromosome with the same direction (positive or negative) of RM allele frequency difference between high and low UPS activity pools.
 
-## QTL fine-mapping by allelic engineering
+### QTL fine-mapping by allelic engineering
 
 We used ‘CRISPR-Swap’ (Lutz et al., 2019), a two-step method for scarless allelic editing, to fine-map QTLs to the level of their causal genes and nucleotides. In the first step of CRISPR-Swap, a gene of interest (GOI) is deleted and replaced with a selectable marker. In the second step, cells are co-transformed with (1) a plasmid that expresses CRISPR-cas9 and a guide RNA targeting the selectable marker and (2) a repair template encoding the desired allele of the GOI.
 
@@ -186,21 +729,193 @@ We then modified the original CRISPR-Swap plasmid (PFA0055, Addgene plasmid #131
 
 We used genomic DNA from BY and RM strains as a template to PCR amplify repair templates for CRISPR-Swap. Genomic DNA was extracted from BY and RM strains using the ‘10-min prep’ protocol (Hoffman and Winston, 1987). We amplified full-length repair templates from RM and BY containing each GOI’s promoter, open-reading frame (ORF), and terminator using Phusion Hot Start Flex DNA polymerase (NEB). We also created chimeric repair templates containing combinations of BY and RM alleles using PCR splicing by overlap extension (Horton et al., 1989). Table 4 lists the repair templates used for CRISPR swap. The sequence of all repair templates was verified by Sanger sequencing.
 
+**Table 4.**
+ CRISPR-swap repair templates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Allele Name</th>
+      <th>Promoter</th>
+      <th>ORF</th>
+      <th>Terminator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UBR1</td>
+      <td>UBR1 BY</td>
+      <td>BY</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBR1</td>
+      <td>UBR1 RM</td>
+      <td>RM</td>
+      <td>RM</td>
+      <td>RM</td>
+    </tr>
+    <tr>
+      <td>UBR1</td>
+      <td>UBR1 RM promoter</td>
+      <td>RM</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBR1</td>
+      <td>UBR1 RM ORF</td>
+      <td>BY</td>
+      <td>RM</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBR1</td>
+      <td>UBR1 RM terminator</td>
+      <td>BY</td>
+      <td>BY</td>
+      <td>RM</td>
+    </tr>
+    <tr>
+      <td>UBR1</td>
+      <td>UBR1 -469A&gt;T</td>
+      <td>–469, RM; all other, BY</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBR1</td>
+      <td>UBR1 -197T&gt;G</td>
+      <td>–197, RM; all other, BY</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>DOA10</td>
+      <td>DOA10 BY</td>
+      <td>BY</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>DOA10</td>
+      <td>DOA10 RM</td>
+      <td>RM</td>
+      <td>RM</td>
+      <td>RM</td>
+    </tr>
+    <tr>
+      <td>DOA10</td>
+      <td>DOA10 Q410E</td>
+      <td>BY</td>
+      <td>1228, RM; all other, BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>DOA10</td>
+      <td>DOA10 K1012N</td>
+      <td>BY</td>
+      <td>3036, RM; all other, BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>DOA10</td>
+      <td>DOA10 Y1186F</td>
+      <td>BY</td>
+      <td>3557, RM; all other, BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>NTA1</td>
+      <td>NTA1 BY</td>
+      <td>BY</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>NTA1</td>
+      <td>NTA1 RM</td>
+      <td>RM</td>
+      <td>RM</td>
+      <td>RM</td>
+    </tr>
+    <tr>
+      <td>NTA1</td>
+      <td>NTA1 RM promoter</td>
+      <td>RM</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>NTA1</td>
+      <td>NTA1 D111E</td>
+      <td>RM</td>
+      <td>331, RM; all other, BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>NTA1</td>
+      <td>NTA1 E129G</td>
+      <td>RM</td>
+      <td>386, RM; all other, BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBC6</td>
+      <td>UBC6 BY</td>
+      <td>BY</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBC6</td>
+      <td>UBC6 RM</td>
+      <td>RM</td>
+      <td>RM</td>
+      <td>RM</td>
+    </tr>
+    <tr>
+      <td>UBC6</td>
+      <td>UBC6 RM promoter</td>
+      <td>RM</td>
+      <td>BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBC6</td>
+      <td>UBC6 D229G</td>
+      <td>BY</td>
+      <td>1686, RM; all other, BY</td>
+      <td>BY</td>
+    </tr>
+    <tr>
+      <td>UBC6</td>
+      <td>UBC6 RM terminator</td>
+      <td>BY</td>
+      <td>BY</td>
+      <td>RM</td>
+    </tr>
+  </tbody>
+</table>
+
 To create allele swap strains, we co-transformed BY strains with 200 ng of plasmid PFA0227 and 1.5 μg of GOI repair template. Transformants were selected and single colony purified on synthetic complete medium lacking histidine and then patched onto solid YPD medium. We tested each strain for the desired exchange of the NatMX selectable marker with a UBR1 allele by patching strains onto solid YPD medium containing clonNAT. We then verified allelic exchange in strains lacking clonNAT resistance by colony PCR (primers listed in Supplementary file 3). We kept 16 independently-derived biological replicates of each allele swap strain. To test the effects of each allele swap, we transformed UPS activity reporters into our allele swap strains and characterized reporter activity by flow cytometry using the methods described above.
 
 We tested whether a QTL on chromosome V results from variation in UBC6 using CRISPR-Swap. Deleting UBC6 caused a large growth defect relative to the wild-type BY strain. Providing cells with multiple UBC6 alleles, including the BY allele, did not correct the growth rate defect. We did not observe growth defects in any other fine-mapping strains.
 
-## RNA isolation
+### RNA isolation
 
 We isolated total RNA from 5 independent biological replicates each of the wild-type BY strain and a BY strain edited to contain the –469A>T RM variant in the UBR1 promoter (hereafter "UBR1 –469A>T BY"). All 10 samples were grown and harvested at the same time. BY and UBR1 –469A>T BY strains were grown overnight at 30°C in 5 mL of SC medium. The following day, the cultures were diluted to an OD of 0.05 in 100 mL of fresh SC medium and grown for approximately 7 hours. When the optical density (OD) of each culture was approximately 0.40, the cells were pelleted by centrifugation at 3,000 rpm for 10 min. Pellets were then washed by resuspending them in 1 mL of sterile ultrapure water, followed by centrifugation at 3,000 rpm for 3 min to again pellet the cells. Following this step, cell pellets were resuspended in 1 mL of ultrapure water and split into 4 aliquots, each containing 250 μL. After re-centrifuging and discarding the supernatant, the pellets were snap frozen by immersion in liquid nitrogen, followed by storage at −80°C. Pellets were subsequently used for RNA isolation and mass spectrometric proteomic analysis, as described below.
 
 Total RNA was extracted from frozen cell pellets using the ZR Fungal/Bacterial miniprep kit (Zymo), according to the manufacturer’s instructions. Briefly, total RNA was isolated from cell pellets in two batches, each containing equal numbers of BY and UBR1 –469A>T BY samples. After thawing, pellets were resuspended in lysis buffer and transferred to screwcap lysis tubes containing glass beads. Tubes were secured in a Mini-BeadBeater (BioSpec Products, Bartlesville, OK, USA) and cells were processed in 5 cycles of 2 min of agitation followed by 2 min at −80°C. The cell lysate/bead mixture was centrifuged for 1 min at 16,000 x g and 400 μL of 95% ethanol was added to the cleared supernatant followed by mixing. Samples were then spun through a binding column and on-column DNA digest was performed with DNase I (Zymo) according to the manufacturer’s instructions. Total RNA was eluted from columns using 50 μL of RNase-free ultrapure water. The concentration of each sample was quantified using RiboGreen; all samples had a concentration greater than 300 ng/μL. The integrity of each sample was assessed at UMGC using the Tapestation (Agilent) and an RNA ScreenTape. RNA integrity numbers ranged from 9.7 to 10.0 (where 10.0 is the maximum possible score), with a median value of 9.9. All RNA samples were stored at −80°C.
 
-## RNA-seq
+### RNA-seq
 
 We isolated mRNA from each total RNA sample using the 550 ng of total RNA input and the NEBNext Poly(A) mRNA Magnetic Isolation Module (NEB). All samples were processed in a single batch and the isolated mRNA from each sample was used to prepare RNA sequencing libraries using the NEBNext Ultra II Directional RNA Library Prep kit (NEB) according to the manufacturer’s instructions. Libraries were amplified using NEBNext Ultra II Q5 polymerase and unique combinations of primers from the NEBNext Multiplex Oligos for Illumina (NEB). The following amplification protocol was used: initial denaturation at 98°C for 30 s, followed by 10 cycles of 98°C (10 s; denaturation), 65°C (75 s; annealing and extension), and a 65°C final extension for 5 min. PCR reactions were pooled using equal amounts of DNA and submitted to UMGC for three quality control assays, which measured the library concentration by PicoGreen, library functionality by KAPA qPCR, and library size using the Tapestation electrophoresis system (Agilent). The resulting library contained a small amount of adapter dimer (approximately 9%), which was subsequently removed via a bead-based cleanup. The final, cleaned library passed all three QC assays and was sequenced on a Next-Seq 2000 instrument (Illumina) in paired-end mode with 150 bp reads. The sequencing run generated 1,367,252,076 reads with an average of 136,725,207 (range: 112,285,619–152,571,763) reads per sample.
 
-## RNA-seq data processing and analysis
+### RNA-seq data processing and analysis
 
 We performed quality control and preprocessing of RNA-seq data using fastp (Chen et al., 2018). Our initial processing removed reads with a length less than 36 bp and any reads where the mean quality dropped below a mean quality score of 15 in a 4 bp window. We also used fastp to trim adapter sequences from the ends of all reads. We then used Kallisto (Bray et al., 2016) to pseudoalign processed reads to the S. cerevisiae transcriptome, which was obtained from Ensembl (version 96) (Howe et al., 2021).
 
@@ -208,17 +923,17 @@ To identify differentially expressed transcripts, we used the estimated counts o
 
 To link differences in transcript abundance to biological pathways, we performed gene ontology enrichment analysis using PANTHER (Mi et al., 2021). The ‘statistical overrepresentation test’ was used to search for gene ontology (GO) biological processes and Reactome pathways enriched in our set of 78 transcripts differentially expressed between BY and UBR1 –469A>T BY. We used the 5,676 genes quantified in our RNA-seq statistical analysis as the reference set and used the Benjamini-Hochberg method (Benjamini and Hochberg, 1995) to correct for multiple testing. GO terms and Reactome pathways with a corrected p-value less than 0.05 were considered significant in our analysis.
 
-## Protein isolation and proteomic analysis by mass spectrometry
+### Protein isolation and proteomic analysis by mass spectrometry
 
 To quantify gene expression at the protein level, we submitted five cell pellets each from the same BY and UBR1 –469A>T BY cultures used for RNA-seq analysis to the University of Minnesota Center for Mass Spectrometry and Proteomics (CMSP) for proteomic analysis by mass spectrometry. Cell pellets were resuspended for protein extraction in a protein extraction buffer containing 7 M urea, 2 M thiourea, 0.4 M triethylammonium bicarbonate pH 8.5, 20% acetonitrile, and 4 mM tris(2-carboxyethyl)phosphine. Cell lysis and protein extraction was then performed using the Barocycler NEP2320 (Pressure Biosciences, Medford, MA, USA).
 
 Samples were prepared and analyzed by mass spectrometry as follows. CMSP first labeled individual samples using the tandem mass tag (TMT) 10plex labeling kit (Thermo). After tagging, samples were pooled for analysis by mass spectrometry on an Orbitrap Tribrid Eclipse instrument (Thermo). Database searching was performed using the Proteome Discoverer software and the statistical analysis of protein abundance was performed in Scaffold (Proteome Software, Portland, OR, USA). We considered proteins to be differentially abundant between strains if they had a and a Benjamini-Hochberg corrected p-value less than 0.1. We performed ontological enrichment analysis of differentially abundant proteins using PANTHER as described above, except that the set of 3,046 detected proteins was used as the reference set.
 
-## Evolutionary analysis of variants
+### Evolutionary analysis of variants
 
 We inferred the allelic status of individual variants by comparing them to two outgroups: a likely-ancestral Taiwanese S. cerevisiae isolate and the sister species Saccharomyces paradoxus. We classified variants as ancestral if they were found in at least one outgroup. All alleles analyzed in this study could be unambiguously classified using this approach. We extracted the population frequency of all analyzed variants using genome sequence data from a panel of 1,011 S. cerevisiae isolates (Peter et al., 2018).
 
-## Data and statistical analysis
+### Data and statistical analysis
 
 All data were analyzed using R (version 3.6.1; R Project for Statistical Computing). For all boxplots, the center line shows the median, the box excludes the upper and lower quartiles, the whiskers extend to 1.5 times the interquartile range. Protein structure predictions were obtained from the AlphaFold Protein Structure Database (Jumper et al., 2021) and visualized using ChimeraX (Pettersen et al., 2021). DNA binding motifs were determined using the Yeast Transcription Factor Specificity Compendium database (de Boer and Hughes, 2012). Final figures and illustrations were made using Inkscape (version 0.92; Inkscape Project).
 

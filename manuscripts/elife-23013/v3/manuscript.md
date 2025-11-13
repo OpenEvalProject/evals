@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.23013.001 Characterising the longevity of immunological memory requires establishing the rules underlying the renewal and death of peripheral T cells. However, we lack knowledge of the population structure and how self-renewal and de novo influx contribute to the maintenance of memory compartments. Here, we characterise the kinetics and structure of murine CD4 T cell memory subsets by measuring the rates of influx of new cells and using detailed timecourses of DNA labelling that also distinguish the behaviour of recently divided and quiescent cells. We find that both effector and central memory CD4 T cells comprise subpopulations with highly divergent rates of turnover, and show that inflows of new cells sourced from the naive pool strongly impact estimates of memory cell lifetimes and division rates. We also demonstrate that the maintenance of CD4 T cell memory subsets in healthy mice is unexpectedly and strikingly reliant on this replenishment. DOI: http://dx.doi.org/10.7554/eLife.23013.001
+Characterising the longevity of immunological memory requires establishing the rules underlying the renewal and death of peripheral T cells. However, we lack knowledge of the population structure and how self-renewal and de novo influx contribute to the maintenance of memory compartments. Here, we characterise the kinetics and structure of murine CD4 T cell memory subsets by measuring the rates of influx of new cells and using detailed timecourses of DNA labelling that also distinguish the behaviour of recently divided and quiescent cells. We find that both effector and central memory CD4 T cells comprise subpopulations with highly divergent rates of turnover, and show that inflows of new cells sourced from the naive pool strongly impact estimates of memory cell lifetimes and division rates. We also demonstrate that the maintenance of CD4 T cell memory subsets in healthy mice is unexpectedly and strikingly reliant on this replenishment.
 
 ## Introduction
 
@@ -32,39 +32,105 @@ In short, our understanding of memory T cell homeostasis is limited because the 
 
 ## Results
 
-## Naive T cells transition to memory in the steady state and in the absence of deliberate infection
+### Naive T cells transition to memory in the steady state and in the absence of deliberate infection
 
-It is an immunological paradigm that activation of naive T cells by foreign antigens ultimately gives rise to persistent populations of memory cells. However, in healthy individuals, not deliberately infected, it is unclear whether generation of memory is an event restricted to first encounter with environmental antigens, such as in the establishment of the T cell compartment in neonates, or whether generation of memory cells occurs constitutively throughout life. Whether there is continual differentiation of naive cells into memory in the steady state has not previously been assessed, and knowledge of this quantity is critical for quantitative analysis of memory homeostasis. To characterise the fluxes into memory subsets, we took advantage of a temporal fate mapping approach described previously (
+It is an immunological paradigm that activation of naive T cells by foreign antigens ultimately gives rise to persistent populations of memory cells. However, in healthy individuals, not deliberately infected, it is unclear whether generation of memory is an event restricted to first encounter with environmental antigens, such as in the establishment of the T cell compartment in neonates, or whether generation of memory cells occurs constitutively throughout life. Whether there is continual differentiation of naive cells into memory in the steady state has not previously been assessed, and knowledge of this quantity is critical for quantitative analysis of memory homeostasis. To characterise the fluxes into memory subsets, we took advantage of a temporal fate mapping approach described previously (Hogan et al., 2015) that allows visualisation of tonic reconstitution processes within different haematopoetic compartments. Briefly, we condition young adult CD45.1 hosts with the chemotherapeutic drug busulfan that ablates haematopoetic stem cells (HSC) but leaves compartments of committed lineages intact, including thymic and peripheral T cells. Conditioned hosts are then reconstituted with CD45.2 bone marrow (Figure 1A). Total numbers of thymocytes remain normal, and by 6 weeks the CD45.1:CD45.2 ratio equilibrates in all thymic compartments (Hogan et al., 2015). We see no trend in thymic chimerism across treated animals out to a year post-BMT (Hogan et al., 2015), indicating that chimerism among T cell precursors is stably maintained. Chimeric mice also exhibit normal numbers of peripheral CD4 naive and CD4 memory T cells (Figure 1B), and both populations display normal levels of proliferation as assessed by Ki67 expression (Figure 1C). Together these data indicate that busulfan treatment and the generation of bone marrow chimerism have no meaningful impact on lymphocyte homeostasis, as previously described (Vezys et al., 2006; Hogan et al., 2015). By 8 weeks post-BMT, donor-derived cells are readily detectable not only in the naive but also to a striking extent in the CD44hi memory compartment (Figure 1D), revealing that well into adulthood newly generated naive T cells continue to differentiate into memory in clean healthy mice. We observe a steady but ultimately incomplete replacement of the host-derived CD4 memory cells with donor cells over the course of a year (Figure 1E), while the total CD4 memory compartment remains relatively stable in size (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig1-v3.jpg)
 
-**Figure 1.:** (A) Outline of experimental protocol. Host CD45.1 mice aged 8 weeks were treated with two doses of 10 mg/kg busulfan, followed by injection of 107 T cell-depleted bone marrow cells from CD45.2 donors. The numbers of donor and host cells in the thymus and peripheral lymphocyte compartments were evaluated by flow cytometry at various time points up to one year post bone marrow transplantation (BMT). (B) Numbers of naive and memory CD4 T cells (host + donor) recovered from spleen and lymph nodes of busulfan chimeras made at age 8 weeks, compared to numbers in WT CD45.1 controls. (C) Ki67 expression in naive and memory CD4 cells in chimeras (14 weeks post-BMT) compared to age-matched WT controls; 11 mice per group. (D) Identification of host and donor-derived cells in a representative mouse 8 weeks post-BMT. (E) Timecourses of normalised peripheral chimerism (defined as the proportion of the population that is donor-derived, divided by the proportion of the DP1 population that is donor-derived) in naive and memory CD4 T cell populations, showing steady but incomplete replacement of host cells in both. Fitted curves are empirically determined to show trends only.DOI: http://dx.doi.org/10.7554/eLife.23013.00310.7554/eLife.23013.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.23013.00410.7554/eLife.23013.005Figure 1—source data 2.DOI: http://dx.doi.org/10.7554/eLife.23013.005
+**Figure 1.:** (A) Outline of experimental protocol. Host CD45.1 mice aged 8 weeks were treated with two doses of 10 mg/kg busulfan, followed by injection of 107 T cell-depleted bone marrow cells from CD45.2 donors. The numbers of donor and host cells in the thymus and peripheral lymphocyte compartments were evaluated by flow cytometry at various time points up to one year post bone marrow transplantation (BMT). (B) Numbers of naive and memory CD4 T cells (host + donor) recovered from spleen and lymph nodes of busulfan chimeras made at age 8 weeks, compared to numbers in WT CD45.1 controls. (C) Ki67 expression in naive and memory CD4 cells in chimeras (14 weeks post-BMT) compared to age-matched WT controls; 11 mice per group. (D) Identification of host and donor-derived cells in a representative mouse 8 weeks post-BMT. (E) Timecourses of normalised peripheral chimerism (defined as the proportion of the population that is donor-derived, divided by the proportion of the DP1 population that is donor-derived) in naive and memory CD4 T cell populations, showing steady but incomplete replacement of host cells in both. Fitted curves are empirically determined to show trends only.
 
-## Measuring the constitutive flows into CD4 T cell memory subsets
+### Measuring the constitutive flows into CD4 T cell memory subsets
 
-Since the continuous generation of new memory T cells was readily detectable, we examined the underlying dynamics more closely, paying particular attention to the feeding of canonically defined memory subsets. Specifically, we modelled the kinetics of replacement of host cells by donor cells within the CD4
+Since the continuous generation of new memory T cells was readily detectable, we examined the underlying dynamics more closely, paying particular attention to the feeding of canonically defined memory subsets. Specifically, we modelled the kinetics of replacement of host cells by donor cells within the CD4+CD25−CD44hi CD62Lhi and CD4+CD25−CD44hiCD62Llo populations, termed CD4 central memory (CD4 TCM) and CD4 effector memory (CD4 TEM) respectively (Figure 2A), for over a year post-treatment. We previously demonstrated that the kinetics of lymphocyte replacement in the busulfan chimeras are a rich source of information regarding homeostatic turnover and population substructure (Hogan et al., 2015).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig2-v3.jpg)
 
-**Figure 2.:** (A) Gating strategy for CD4 central and effector memory subsets. (B) Describing the kinetics of the source. Fits of empirical descriptor functions to the timecourses of naive CD4 counts and chimerism, with 95% uncertainty envelopes (see Materials and methods). Similar curves (not shown) were used to describe CD4 TCM numbers and chimerism when modelled as the source for CD4 TEM. Estimates of the parameters defining the source functions are in Appendix 1—table 1. (C) Timecourses of total (host+donor) numbers of CD4 TCM and TEM and of chimerism, modelled from 6 weeks post-BMT (age 14 weeks/98 days). The resistant memory models with naive source described both the CD4 TCM and TEM data well (left-hand and central panels). Also shown are the statistically poorer fits to CD4 TEM kinetics using a model in which they are fed exclusively by CD4 TCM (AIC = 11). Both models contained five free parameters; estimates are in ΔAppendix 1—table 2. (D) Projections of how the rates of memory replacement change with age, assuming a naive source. Replacement is shown both as a fraction of the total pool, and as a fraction of the displaceable subset only.DOI: http://dx.doi.org/10.7554/eLife.23013.00610.7554/eLife.23013.007Figure 2—source data 1.Figure 2 panels B and C, and Figure 2—figure supplement 1).DOI: http://dx.doi.org/10.7554/eLife.23013.00710.7554/eLife.23013.008Figure 2—source data 2.EM and CD4 TCM populations.DOI: http://dx.doi.org/10.7554/eLife.23013.008
+**Figure 2.:** (A) Gating strategy for CD4 central and effector memory subsets. (B) Describing the kinetics of the source. Fits of empirical descriptor functions to the timecourses of naive CD4 counts and chimerism, with 95% uncertainty envelopes (see Materials and methods). Similar curves (not shown) were used to describe CD4 TCM numbers and chimerism when modelled as the source for CD4 TEM. Estimates of the parameters defining the source functions are in Appendix 1—table 1. (C) Timecourses of total (host+donor) numbers of CD4 TCM and TEM and of chimerism, modelled from 6 weeks post-BMT (age 14 weeks/98 days). The resistant memory models with naive source described both the CD4 TCM and TEM data well (left-hand and central panels). Also shown are the statistically poorer fits to CD4 TEM kinetics using a model in which they are fed exclusively by CD4 TCM ($Δ$AIC = 11). Both models contained five free parameters; estimates are in Appendix 1—table 2. (D) Projections of how the rates of memory replacement change with age, assuming a naive source. Replacement is shown both as a fraction of the total pool, and as a fraction of the displaceable subset only.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig2-figsupp1-v3.jpg)
 
-**Figure 2—figure supplement 1.:** EM cells lags that of CD4 TCM (three mice per timepoint; mean and s.e.m.).DOI: http://dx.doi.org/10.7554/eLife.23013.009
-
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig2-figsupp2-v3.jpg)
 
-**Figure 2—figure supplement 2.:** Proportions of CD4 TEM and TCM predicted to be numerically stable, self-renewing cells resistant to displacement, with age. Shaded regions indicate 95% confidence intervals.DOI: http://dx.doi.org/10.7554/eLife.23013.010
+**Figure 2—figure supplement 2.:** Proportions of CD4 TEM and TCM predicted to be numerically stable, self-renewing cells resistant to displacement, with age. Shaded regions indicate 95% confidence intervals.
 
 Assuming host and donor cells behave similarly, the rate of accumulation of donor cells in each subset is a constant fraction of the total rate of influx of cells from the naive pool, presumably following clonal expansion, and/or through differentiation from other memory subsets. We used simple mathematical models to describe these flows (see Materials and methods). Our choice of models was guided by two key observations. First, the appearance of donor CD4 TEM cells lagged that of both naive and TCM cells (Figure 2C and Figure 2—figure supplement 1), suggesting that CD4 TCM are sourced predominantly from naive precursors while CD4 TEM may be sourced either directly from the naive compartment and/or via CD4 TCM. Second, donor cells displayed a more restricted capacity for populating memory relative to the naive pool (Figure 1E). We considered two explanations of this observation; either that there exist self-renewing populations of host-derived memory cells that resist displacement by newly recruited cells (the ‘resistant memory’ model), or that the per-cell rates of entry into each memory subset wane over time (the ‘declining recruitment’ model).
 
 We then assessed the abilities of these models to describe the kinetics of the sizes and host/donor compositions of the CD4 TEM and CD4 TCM pools in healthy, chimeric laboratory mice aged between 14 and 60 weeks. For both memory subsets we fitted each combination of model and source population to the timecourses of the total numbers and donor chimerism of cells recovered from spleen and lymph nodes. The donor chimerism was normalised to that at the early DP1 stage of thymic development in each animal. Doing this controlled for varying degrees of depletion of HSC across animals with busulfan treatment. The size and donor/host composition of the putative source populations (naive for CD4 TCM, and either naive or TCM for CD4 TEM) were not modelled explicitly but instead described by empirical functions fitted to the observations (Figure 2B; Materials and methods). Together these steps allowed us to describe the data from multiple mice with single predictors reflecting the population-average parameters (Figure 2C; Materials and methods).
 
-For both models explaining the apparent capping in host memory cell replacement, we compared the variant models in which CD4 TEM was fed either directly from naive or from CD4 TCM. Comparing these fits, we found the strongest statistical support for a dominant naive CD4 → TEM recruitment pathway over CD4 TCM →TEM (ΔAIC = 11). Although the model fits were visually similar (Figure 2C), the conclusion favouring a naive source derives largely from substantial differences in the quality of the fits during the early stages of infiltration of donor cells into memory, which are relatively data-rich and well defined. Thus, naive T cell numbers, and not CD4 TCM numbers, provide the strongest predictor of CD4 TEM accumulation over long timescales.
+For both models explaining the apparent capping in host memory cell replacement, we compared the variant models in which CD4 TEM was fed either directly from naive or from CD4 TCM. Comparing these fits, we found the strongest statistical support for a dominant naive CD4 $→$ TEM recruitment pathway over CD4 TCM →TEM (ΔAIC = 11). Although the model fits were visually similar (Figure 2C), the conclusion favouring a naive source derives largely from substantial differences in the quality of the fits during the early stages of infiltration of donor cells into memory, which are relatively data-rich and well defined. Thus, naive T cell numbers, and not CD4 TCM numbers, provide the strongest predictor of CD4 TEM accumulation over long timescales.
 
-For CD4 TEM we found comparable statistical support for the resistant memory and declining recruitment models (ΔAIC = 0.16). For CD4 TCM we found stronger support for the resistant memory model (ΔAIC = 8.3). We cannot rule out a combination of resistant memory and declining recruitment, and by parsimony we favour the resistant memory model for both populations (fits shown in Figure 2C). We estimate that in 14 week-old mice, 6.3% of CD4 TEM (95% confidence interval 4.4–8.6) and 9.8% (6.5–16.9) of CD4 TCM are displaced per week by new memory cells from the source. The declining recruitment model yielded comparable parameter estimates (Table 1). Indeed, consistent rates of production of new memory cells could be derived simply from the growth rate of chimerism in memory and the difference in chimerism between it and its source, irrespective of the details of the mechanism limiting memory replacement (see Materials and methods).10.7554/eLife.23013.011Table 1.Estimated rates of replacement of CD4 effector and central memory through influx of new cells in 14 week-old mice. We quote both absolute influx (cells per day as a percentage of the pool size) and percent replaced per week. The latter is slightly less than 7 × the daily rate of influx because immigrant cells are assumed to be lost at the same rate as existing displaceable cells (see Methods). AIC differences (ΔAIC) are quoted relative to the best-fitting model for each cell type. These differences reflect the relative support for two models, with exp(-ΔAIC/2) being the relative probability that it is the model with the lower penalised likelihood (larger AIC value) that minimises the information lost in describing the data. For CD4 TEM the two models have equal support, but for CD4 TCM the resistant memory model is favoured (ΔAIC = 8.3, exp(-ΔAIC/2)=0.02). Models considered most plausible are highlighted.DOI: http://dx.doi.org/10.7554/eLife.23013.011Resistant memory modelDeclining recruitment modelSource% Input/day% Replaced/wkΔAIC% Input/day% Replaced/wkΔAICCD4 TEMNaive1.0(0.7, 1.4)6.3(4.4, 8.6)0.161.0(0.7, 1.6)6.4(4.3, 9.7)0CM4.1(2.6, 7.5)23.0(16, 35)113.6(2.1, 6.2)21(13, 30)11CD4 TCMNaive1.5(1.0, 2.8)9.8(6.5, 17)02.3(1.3, 4.1)13.5(8.4, 22)8.3
+For CD4 TEM we found comparable statistical support for the resistant memory and declining recruitment models (ΔAIC = 0.16). For CD4 TCM we found stronger support for the resistant memory model (ΔAIC = 8.3). We cannot rule out a combination of resistant memory and declining recruitment, and by parsimony we favour the resistant memory model for both populations (fits shown in Figure 2C). We estimate that in 14 week-old mice, 6.3% of CD4 TEM (95% confidence interval 4.4–8.6) and 9.8% (6.5–16.9) of CD4 TCM are displaced per week by new memory cells from the source. The declining recruitment model yielded comparable parameter estimates (Table 1). Indeed, consistent rates of production of new memory cells could be derived simply from the growth rate of chimerism in memory and the difference in chimerism between it and its source, irrespective of the details of the mechanism limiting memory replacement (see Materials and methods).
 
-If this seeding of new memory occurs through recruitment of naive cells followed by clonal expansion and differentiation, one would expect there to be a delay in the transition between source and memory. To explore this we extended the models to allow for lags of 1–7 days before changes in the source population were reflected in changes in the rate of entry into memory. During this period the transitioning cells would likely disappear from the naive and memory T cell populations as we defined them (see Materials and methods), through expression of the IL-2 receptor α-chain, CD25. These extensions yielded rates of replacement that were very similar to the zero-lag models, with weaker statistical support, although the timecourses lack the resolution required to examine this transition process in detail.
+**Table 1.**
+ Estimated rates of replacement of CD4 effector and central memory through influx of new cells in 14 week-old mice. We quote both absolute influx (cells per day as a percentage of the pool size) and percent replaced per week. The latter is slightly less than 7 $\times$ the daily rate of influx because immigrant cells are assumed to be lost at the same rate as existing displaceable cells (see Methods). AIC differences ($Δ$AIC) are quoted relative to the best-fitting model for each cell type. These differences reflect the relative support for two models, with exp($-Δ$AIC/2) being the relative probability that it is the model with the lower penalised likelihood (larger AIC value) that minimises the information lost in describing the data. For CD4 TEM the two models have equal support, but for CD4 TCM the resistant memory model is favoured ($Δ$AIC = 8.3, exp($-Δ$AIC/2)=0.02). Models considered most plausible are highlighted.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th></th>
+      <th colspan="5">Resistant memory model</th>
+      <th colspan="5">Declining recruitment model</th>
+    </tr>
+    <tr>
+      <th>Source</th>
+      <th colspan="2">% Input/day</th>
+      <th colspan="2">% Replaced/wk</th>
+      <th>ΔAIC</th>
+      <th colspan="2">% Input/day</th>
+      <th colspan="2">% Replaced/wk</th>
+      <th>ΔAIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD4 TEM</td>
+      <td>Naive</td>
+      <td>1.0</td>
+      <td>(0.7, 1.4)</td>
+      <td>6.3</td>
+      <td>(4.4, 8.6)</td>
+      <td>0.16</td>
+      <td>1.0</td>
+      <td>(0.7, 1.6)</td>
+      <td>6.4</td>
+      <td>(4.3, 9.7)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CM</td>
+      <td>4.1</td>
+      <td>(2.6, 7.5)</td>
+      <td>23.0</td>
+      <td>(16, 35)</td>
+      <td>11</td>
+      <td>3.6</td>
+      <td>(2.1, 6.2)</td>
+      <td>21</td>
+      <td>(13, 30)</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>CD4 TCM</td>
+      <td>Naive</td>
+      <td>1.5</td>
+      <td>(1.0, 2.8)</td>
+      <td>9.8</td>
+      <td>(6.5, 17)</td>
+      <td>0</td>
+      <td>2.3</td>
+      <td>(1.3, 4.1)</td>
+      <td>13.5</td>
+      <td>(8.4, 22)</td>
+      <td>8.3</td>
+    </tr>
+  </tbody>
+</table>
+
+If this seeding of new memory occurs through recruitment of naive cells followed by clonal expansion and differentiation, one would expect there to be a delay in the transition between source and memory. To explore this we extended the models to allow for lags of 1–7 days before changes in the source population were reflected in changes in the rate of entry into memory. During this period the transitioning cells would likely disappear from the naive and memory T cell populations as we defined them (see Materials and methods), through expression of the IL-2 receptor $\alpha$-chain, CD25. These extensions yielded rates of replacement that were very similar to the zero-lag models, with weaker statistical support, although the timecourses lack the resolution required to examine this transition process in detail.
 
 The models can also be used to predict how the rates of replacement of CD4 TEM and CD4 TCM change with age (Figure 2D), although these predictions derive from relatively uncertain projections of the sizes of the populations beyond a year of age (Figure 2C). We predict that between 14 weeks and 1 year of age, the proportion of cells replaced each week by new memory falls from 6.3% to 1% for CD4 TEM and 9.8% to 6% for CD4 TCM. For CD4 TEM this decline stems from a combination of the fall in naive T cell numbers (the putative source population) with age, and a predicted slow increase in CD4 TEM numbers (Figure 2C). The declining recruitment model predicts a steeper drop in rates of replacement with age, due to the multiplicative effect of the fall in both naive T cell numbers and the per capita rate of recruitment from the naive pool with age (Figure 2D, blue shaded regions). For CD4 TCM the proportional replacement remains relatively steady with age, because the drop in the size of the naive source population is balanced by the predicted slow decline in CD4 TCM numbers.
 
@@ -72,43 +138,163 @@ Finally, we estimate that between 14 weeks and 1 year of age the resistant, nume
 
 In summary, we find clear evidence for substantial tonic flows of cells from the naive T cell pool into both CD4 central and effector memory. For central memory we favour a model in which this flow remains high well into the second year of life, but displaces only a subset of cells. The remainder are generated before 8 weeks of age and analogous to the apparently stable ‘incumbent’ populations of naive CD4 and CD8 T cells that also resist replacement (Figure 2B, right-hand panel; and Hogan et al. (2015)). We estimate that CD4 effector memory is replaced at a rate comparable to that of central memory in young adult mice, but that the rate of assimilation of new effector memory cells declines more strongly with age. This kinetic can be explained equally well by the existence of a resistant CD4 TEM subset or simply by a waning force of recruitment from the naive pool.
 
-## Using Ki67 expression as a molecular clock permits temporal stratification of DNA label uptake
+### Using Ki67 expression as a molecular clock permits temporal stratification of DNA label uptake
 
-Having identified and measured the contributions to CD4 memory subsets from naive sources, we wanted to measure cell lifetimes and division rates within these subsets in normal healthy mice and to test alternative models of homeostatic dynamics. Resolving different types of heterogeneity in these dynamics requires dissecting the fates of quiescent and dividing or recently-divided cells. Doing so is difficult with DNA labelling alone because for anything other than very short pulse-chase experiments the labelled fraction contains cells with a wide range of times since their last division. We therefore measured the division-linked uptake of the nucleoside analogue 5-bromo-2’-deoxyuridine (BrdU) in the context of Ki67 expression. Ki67 is a nuclear protein that is expressed during cell division but subsequently lost by non-dividing cells on a timescale of a few days (
+Having identified and measured the contributions to CD4 memory subsets from naive sources, we wanted to measure cell lifetimes and division rates within these subsets in normal healthy mice and to test alternative models of homeostatic dynamics. Resolving different types of heterogeneity in these dynamics requires dissecting the fates of quiescent and dividing or recently-divided cells. Doing so is difficult with DNA labelling alone because for anything other than very short pulse-chase experiments the labelled fraction contains cells with a wide range of times since their last division. We therefore measured the division-linked uptake of the nucleoside analogue 5-bromo-2’-deoxyuridine (BrdU) in the context of Ki67 expression. Ki67 is a nuclear protein that is expressed during cell division but subsequently lost by non-dividing cells on a timescale of a few days (Pitcher et al., 2002; Younes et al., 2011; De Boer and Perelson, 2013). As such, it is a marker of active and recent division. The frequency of cells expressing Ki67 is expected to be constant in a population at steady state, but when combined with time courses of BrdU labelling, Ki67 acts as a timestamp allowing us to distinguish the fates of recently divided Ki67high BrdU+ cells and their quiescent Ki67low BrdU+ progeny (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig3-v3.jpg)
 
-**Figure 3.:** (A) Representative data from flow cytometric analyses of BrdU uptake and Ki67 expression in a pulse-chase experiment. Cells were recovered from lymph nodes. (B) Outline of experimental design. (C) A schematic of the core multi-compartment model used to describe the flows between the BrdU Ki67×-⁣/+low/high populations during and after labelling. Shown here is a model of temporal heterogeneity, in which either effector or central memory CD4 T cells are modelled as a single population entering division stochastically at per capita rate ; with quiescent (Ki67αlow) and recently divided (Ki67high) cells dying at rates  and δ- respectively; an external source of cells feeding the BrdUδ+ Ki67±high populations at rates  and S+, where S- is a constant, S++S-; and cells transitioning from Ki67Shigh to Ki67low at rate . This basic model was refined to account for multiple subpopulations (kinetic heterogeneity), different distributions of Ki67 expression times, inefficient BrdU uptake, and post-labelling dilution of BrdU within both labelled cells and within the source (β). See Materials and methods and Appendix 1 for details of the model formulation.S+⁣/-⁢(t)DOI: http://dx.doi.org/10.7554/eLife.23013.012
+**Figure 3.:** (A) Representative data from flow cytometric analyses of BrdU uptake and Ki67 expression in a pulse-chase experiment. Cells were recovered from lymph nodes. (B) Outline of experimental design. (C) A schematic of the core multi-compartment model used to describe the flows between the BrdU$\times-⁣/+$ Ki67low/high populations during and after labelling. Shown here is a model of temporal heterogeneity, in which either effector or central memory CD4 T cells are modelled as a single population entering division stochastically at per capita rate $\alpha$; with quiescent (Ki67low) and recently divided (Ki67high) cells dying at rates $\delta^{-}$ and $\delta^{+}$ respectively; an external source of cells feeding the BrdU$^{\pm}$ Ki67high populations at rates $S^{+}$ and $S^{-}$, where $S^{+}+S^{-}$ is a constant, $S$; and cells transitioning from Ki67high to Ki67low at rate $\beta$. This basic model was refined to account for multiple subpopulations (kinetic heterogeneity), different distributions of Ki67 expression times, inefficient BrdU uptake, and post-labelling dilution of BrdU within both labelled cells and within the source ($S^{+⁣/-}⁢(t)$). See Materials and methods and Appendix 1 for details of the model formulation.
 
-We performed three pulse-chase experiments in which mice were fed BrdU for either 4, 7 or 21 days, with a chase period of 8–14 days following withdrawal of the label from drinking water. Groups of mice were analysed for co-staining of Ki67 and BrdU at different times during these experiments to define the population dynamics of CD4 TEM and CD4 TCM in detail (Figure 3B; for the experimental protocols see Materials and methods M1). Over the relatively short time courses of the experiments we saw no substantial changes in either the absolute sizes of memory T cell subsets or in the fraction of cells expressing Ki67 (Appendix 1—figure 1). With these constraints the dynamics of the system can be characterised by two quantities – the proportions of cells within the Ki67high and Ki67low populations that are BrdU+. In this equilibrium, loss (turnover) of memory is balanced by production of new cells by division and input from external sources.
+We performed three pulse-chase experiments in which mice were fed BrdU for either 4, 7 or 21 days, with a chase period of 8–14 days following withdrawal of the label from drinking water. Groups of mice were analysed for co-staining of Ki67 and BrdU at different times during these experiments to define the population dynamics of CD4 TEM and CD4 TCM in detail (Figure 3B; for the experimental protocols see Materials and methods M1). Over the relatively short time courses of the experiments we saw no substantial changes in either the absolute sizes of memory T cell subsets or in the fraction of cells expressing Ki67 (Appendix 1—figure 1). With these constraints the dynamics of the system can be characterised by two quantities – the proportions of cells within the Ki67high and Ki67low populations that are BrdU$^{+}$. In this equilibrium, loss (turnover) of memory is balanced by production of new cells by division and input from external sources.
 
-## Modelling BrdU/Ki67 kinetics reveals strong support for kinetic over pure temporal heterogeneity in CD4 T cell memory subsets
+### Modelling BrdU/Ki67 kinetics reveals strong support for kinetic over pure temporal heterogeneity in CD4 T cell memory subsets
 
 To assess the support for different homeostatic mechanisms, we used mathematical models to describe the fluxes of cells between the BrdU+/− × Ki67high/low populations within the CD4 TEM and CD4 TCM subsets (Figure 3C and Materials and methods; detailed in Appendix 1). In a model of pure temporal heterogeneity (TH), each memory subset is assumed to comprise one population of cells undergoing single stochastic divisions characteristic of T cell homeostasis (Yates et al., 2008; Choo et al., 2010; Hogan et al., 2013), but with potentially different rates of loss of quiescent (Ki67low) and recently divided (Ki67high) cells. We also considered a model of pure kinetic heterogeneity (KH) in which each memory subset is assumed to comprise two sub-populations maintained independently, each at constant size and with their own rates of division and loss, and with Ki67high and Ki67low cells within each subpopulation having equal susceptibility to death. In both TH and KH models, any external source is assumed to feed the Ki67high subpopulation(s) exclusively.
 
-We aimed to estimate the rate(s) of division and loss in both models, together with a minimal set of additional parameters representing key biological quantities. In the KH models these included the relative sizes of the two subpopulations and the allocation of the source into each. Both TH and KH models also required parameters quantifying the efficiency of BrdU uptake per cell division and the gradual decline of the BrdU+ fraction once BrdU feeding stops. The latter can result from three non-exclusive processes; (i) differences in the death rates of BrdU− and BrdU+ cells, (ii) dilution of the labelled population by unlabelled cells from the source (Tough and Sprent, 1994; Bonhoeffer et al., 2000; Debacq et al., 2002; De Boer et al., 2003), and (iii) within-cell dilution of BrdU through division post-administration (Tough and Sprent, 1994; Parretta et al., 2008; Ganusov et al., 2010). The first process is captured in the basic KH/TH model structure. The second requires a description of the dilution of label within the source post-administration. We found the strongest support for a simple model in which the BrdU content of the souce drops rapidly from 100% to zero after a delay that is estimated from the data (see Appendix 1). For the third, we found that the best-fitting models required two divisions to drive cells from BrdU+→ → BrdU-, consistent with another BrdU labelling study in mice (Parretta et al., 2008). Finally, we explored different distributions of times spent in the Ki67high state post-mitosis, by assuming cells progress through a variable number of intermediate states before transitioning to Ki67low. Best-fitting models for both KH and TH require more than 12 such states, meaning that there is very little variance in the time cells spend in the Ki67high state. We note that these kinetics and the estimated mean residence time in Ki67high (1/β) reflect the Ki67 gating strategy as well as the cell-intrinsic rate of loss of Ki67 post-mitosis. Exploiting the constraints that there were no significant changes in the numbers and the proportions of cells that were Ki67high within both CD4 TEM and TCM during the labelling experiments (see Appendix 1—figure 1), four free parameters remained for the TH model and six for the KH model. A detailed description of the model formulation and the strategy for parameter estimation is given in Appendix 1.
+We aimed to estimate the rate(s) of division and loss in both models, together with a minimal set of additional parameters representing key biological quantities. In the KH models these included the relative sizes of the two subpopulations and the allocation of the source into each. Both TH and KH models also required parameters quantifying the efficiency of BrdU uptake per cell division and the gradual decline of the BrdU$^{+}$ fraction once BrdU feeding stops. The latter can result from three non-exclusive processes; (i) differences in the death rates of BrdU− and BrdU+ cells, (ii) dilution of the labelled population by unlabelled cells from the source (Tough and Sprent, 1994; Bonhoeffer et al., 2000; Debacq et al., 2002; De Boer et al., 2003), and (iii) within-cell dilution of BrdU through division post-administration (Tough and Sprent, 1994; Parretta et al., 2008; Ganusov et al., 2010). The first process is captured in the basic KH/TH model structure. The second requires a description of the dilution of label within the source post-administration. We found the strongest support for a simple model in which the BrdU content of the souce drops rapidly from 100% to zero after a delay that is estimated from the data (see Appendix 1). For the third, we found that the best-fitting models required two divisions to drive cells from BrdU$^{+}→$ → BrdU$^{-}$, consistent with another BrdU labelling study in mice (Parretta et al., 2008). Finally, we explored different distributions of times spent in the Ki67high state post-mitosis, by assuming cells progress through a variable number of intermediate states before transitioning to Ki67low. Best-fitting models for both KH and TH require more than 12 such states, meaning that there is very little variance in the time cells spend in the Ki67high state. We note that these kinetics and the estimated mean residence time in Ki67high ($1/\beta$) reflect the Ki67 gating strategy as well as the cell-intrinsic rate of loss of Ki67 post-mitosis. Exploiting the constraints that there were no significant changes in the numbers and the proportions of cells that were Ki67high within both CD4 TEM and TCM during the labelling experiments (see Appendix 1—figure 1), four free parameters remained for the TH model and six for the KH model. A detailed description of the model formulation and the strategy for parameter estimation is given in Appendix 1.
 
-Strikingly, despite this freedom in parameterisation, the data were sufficiently rich to discriminate between the models and showed unequivocal support for kinetic over pure temporal heterogeneity within the CD4 effector and central memory pools (
+Strikingly, despite this freedom in parameterisation, the data were sufficiently rich to discriminate between the models and showed unequivocal support for kinetic over pure temporal heterogeneity within the CD4 effector and central memory pools (Figure 4, ΔAIC = 110 (CD4 TEM), 251 (CD4 TCM)). For both memory subsets the BrdU/Ki67 timecourses were consistent with the existence of two subpopulations roughly equal in size but with highly distinct kinetics (Table 2 and Figure 5A, at dashed vertical lines). CD4 TCM appear to comprise a population dividing and dying roughly every 3 days, and a slower population with mean lifetime of 38 days, dividing every 170 days, with the source feeding the slow and fast populations in roughly a 2:1 ratio. For CD4 TEM the fast population appears to be essentially self-renewing, dividing and dying every 6 days, with the slower population fed by the source (mean lifetime 43 days, interdivision time 140 days).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig4-v3.jpg)
 
-**Figure 4.:** Data and best fit predictions for two classes of model describing BrdU uptake and loss – kinetic heterogeneity (left panels) and temporal heterogeneity (right panels) – for CD4 TEM (upper panels) and CD4 TCM (lower panels). Fits were generated using the best-fit estimates of the influx into each population (for CD4 TEM, 7.0% of the pool size per week at 14 weeks of age; for CD4 TCM, 10.6% per week; these figures are 7  the daily influx quoted in ×Table 1). Colours denote different BrdU feeding timecourses and shaded regions represent 95% confidence envelopes on the fits, calculated by resampling the parameters from their bootstrap distributions. The inability of the TH model to describe both the timecourses well stems from the tight coupling between the BrdUKi67+low cells and their BrdUKi67+high precursors, with little freedom to fit the timecourses of both simultaneously; whereas in the KH model, those two populations are enriched for the slow and fast subpopulations respectively, which are parameterised independently.DOI: http://dx.doi.org/10.7554/eLife.23013.01310.7554/eLife.23013.014Figure 4—source data 1. fractions within the Ki67+high and Ki67low populations during the BrdU labelling/delabelling experiments.DOI: http://dx.doi.org/10.7554/eLife.23013.01410.7554/eLife.23013.015Figure 4—source data 2.DOI: http://dx.doi.org/10.7554/eLife.23013.015
+**Figure 4.:** Data and best fit predictions for two classes of model describing BrdU uptake and loss – kinetic heterogeneity (left panels) and temporal heterogeneity (right panels) – for CD4 TEM (upper panels) and CD4 TCM (lower panels). Fits were generated using the best-fit estimates of the influx into each population (for CD4 TEM, 7.0% of the pool size per week at 14 weeks of age; for CD4 TCM, 10.6% per week; these figures are 7 $\times$ the daily influx quoted in Table 1). Colours denote different BrdU feeding timecourses and shaded regions represent 95% confidence envelopes on the fits, calculated by resampling the parameters from their bootstrap distributions. The inability of the TH model to describe both the timecourses well stems from the tight coupling between the BrdU$^{+}$Ki67low cells and their BrdU$^{+}$Ki67high precursors, with little freedom to fit the timecourses of both simultaneously; whereas in the KH model, those two populations are enriched for the slow and fast subpopulations respectively, which are parameterised independently.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig5-v3.jpg)
 
-**Figure 5.:** EM and CD4 TCM homeostasis assuming kinetic heterogeneity.(A) Key kinetic parameters for CD4 TEM and TCM estimated for different levels of memory influx. Grey points represent population average parameters; for interdivision times these are offset for clarity. Vertical dashed lines and shaded areas represent the best estimates of influx with 95% confidence intervals. These estimates are the weekly influxes as a fraction of the pool size (i.e., 7  the daily influxes quoted in ×Table 1; 0.07 of pool/week for CD4 TEM, 0.11 for TCM). (B) Estimated mean duration of Ki67 expression post-mitosis. (C) Estimated proportions of cells that are Ki67high within fast and slow subpopulations. The weighted averages of these proportions for each of CD4 TEM and CD4 TCM were constrained to be the observed level of expression (mean + s.e.m.) averaged over the course of the BrdU labelling experiments (Appendix 1—figure 1). (D) Stratifying Ki67high expression within CD4 TEM and CD4 TCM by host and donor, in six busulfan chimeras that were 8 weeks post-BMT and of comparable ages to the mice used in the BrdU labelling experiments, indicating that fast/slow cells cannot be exclusively identified as donor/host-derived.DOI: http://dx.doi.org/10.7554/eLife.23013.01610.7554/eLife.23013.017Figure 5—source data 1.EM and TCM cells in busulfan chimeras 8 weeks post-BMT (panel D).DOI: http://dx.doi.org/10.7554/eLife.23013.017
+**Figure 5.:** (A) Key kinetic parameters for CD4 TEM and TCM estimated for different levels of memory influx. Grey points represent population average parameters; for interdivision times these are offset for clarity. Vertical dashed lines and shaded areas represent the best estimates of influx with 95% confidence intervals. These estimates are the weekly influxes as a fraction of the pool size (i.e., 7 $\times$ the daily influxes quoted in Table 1; 0.07 of pool/week for CD4 TEM, 0.11 for TCM). (B) Estimated mean duration of Ki67 expression post-mitosis. (C) Estimated proportions of cells that are Ki67high within fast and slow subpopulations. The weighted averages of these proportions for each of CD4 TEM and CD4 TCM were constrained to be the observed level of expression (mean + s.e.m.) averaged over the course of the BrdU labelling experiments (Appendix 1—figure 1). (D) Stratifying Ki67high expression within CD4 TEM and CD4 TCM by host and donor, in six busulfan chimeras that were 8 weeks post-BMT and of comparable ages to the mice used in the BrdU labelling experiments, indicating that fast/slow cells cannot be exclusively identified as donor/host-derived.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/23013/elife-23013-fig5-figsupp1-v3.jpg)
 
-**Figure 5—figure supplement 1.:** We fitted extensions of the basic KH model in which death rates of Ki67high cells were set to be 1/10 or 10 times that of Ki67low cells. Orange/blue denote the fast/slow subpopulations respectively. Mean lifetimes for each population (EM/CM, fast/slow) are weighted averages of the lifetimes of the Ki67high and Ki67low subsets. Vertical bars indicate 95% confidence intervals calculated by bootstrapping residuals and resampling from the bootstrap estimates of the magnitude of the source.DOI: http://dx.doi.org/10.7554/eLife.23013.018
+**Figure 5—figure supplement 1.:** We fitted extensions of the basic KH model in which death rates of Ki67high cells were set to be 1/10 or 10 times that of Ki67low cells. Orange/blue denote the fast/slow subpopulations respectively. Mean lifetimes for each population (EM/CM, fast/slow) are weighted averages of the lifetimes of the Ki67high and Ki67low subsets. Vertical bars indicate 95% confidence intervals calculated by bootstrapping residuals and resampling from the bootstrap estimates of the magnitude of the source.
 
-## Sensitivity of predictions to the size of memory influx and choice of model
+**Table 2.**
+ Parameters describing homeostasis of murine CD4 memory subsets, using a two-population model of kinetic heterogeneity and the best estimates of the magnitudes of the influx into each subset from the naive pool. Pool-average lifetimes and interdivision times are defined to be the mean of the corresponding quantities for the fast and slow subpopulations weighted by their size estimates. The best-fitting models were those that assumed no difference in death rates of Ki67high and Ki67low cells (indicated by rows in which ratio of loss rates = 1).
 
-Given the notorious dependence of estimates of lymphocyte division and death rates on model assumptions (De Boer and Perelson, 2013), we explored the sensitivity of our estimates and predictions to the magnitude of the source. We performed fits to the BrdU/Ki67 timecourses for multiple values of the influx spanning values of zero to 30% of the pool size per week, which included the point estimates and their 95% confidence intervals (Figure 5A). Despite the two additional parameters required to describe the source (i.e. its partitioning between the fast and slow subpopulations, and the timing of the switch to unlabelled source after withdrawal of BrdU; see Appendix), including a source gave superior descriptions of both CD4 TEM and TCM labelling kinetics compared to models of self-renewing memory with no influx (ΔAIC = 9 and 20, respectively, at the best estimates of the source). The flows into memory impact measures of homeostatic dynamics significantly; if the contribution of the source is neglected, pool-averaged cell lifetimes may be overestimated by 25–50% and, more strikingly, interdivision times underestimated by a factor of 2–3 (Figure 5A).
 
-At our best estimates of the influx into CD4 TEM and TCM from the naive pool, we infer that it predominantly feeds the slower subpopulations within each. Since we presume that memory is largely generated from naive cells through antigen-driven proliferation, this result was puzzling. A more restricted model in which the source was constrained to feed exclusively into the faster subpopulation had substantially lower statistical support (ΔAIC = 18 for CD4 TEM, 9.9 for TCM), but visually the fits were similar (Appendix 1—figure 2; parameter estimates in Appendix 1—table 3). Further, if CD4 TEM derive from TCM to any extent, we predict higher levels of influx (Table 1) and the proportion predicted to enter the slow population is then lower (Figure 5A, upper panels). We therefore remain cautious regarding the extents to which the constitutive influx feeds low and fast-dividing memory subsets. Irrespective, at all values of the source we explored, all variants of the KH model were far better descriptions of the kinetics than the TH model (ΔAIC > 90 for both CD4 TEM and TCM).
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Parameter</th>
+      <th>Ratio of loss rates</th>
+      <th colspan="2">CD4 effector memory</th>
+      <th colspan="2">CD4 central memory</th>
+    </tr>
+    <tr>
+      <th>Ki67high:Ki67low</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pool-average lifetime (days)</td>
+      <td>1 10 0.1</td>
+      <td>29 41 55</td>
+      <td>(28, 30) (39, 42) (54, 56)</td>
+      <td>21 27 44</td>
+      <td>(19, 24) (26, 35) (39, 51)</td>
+    </tr>
+    <tr>
+      <td>Pool-average interdivision time (days)</td>
+      <td>1 10 0.1</td>
+      <td>88 63 84</td>
+      <td>(83, 158) (53, 353) (80, 108)</td>
+      <td>86 59 51</td>
+      <td>(47, 144) (35, 74) (38, 84)</td>
+    </tr>
+    <tr>
+      <td>Ki67 lifetime (days)</td>
+      <td>1 10 0.1</td>
+      <td>3.28 3.23 3.28</td>
+      <td>(3.14, 3.39) (3.03, 3.30) (3.18, 3.41)</td>
+      <td>3.59 3.74 3.32</td>
+      <td>(3.47, 3.70) (3.57, 3.82) (3.31, 3.52)</td>
+    </tr>
+    <tr>
+      <td>Efficiency of BrdU uptake (%)</td>
+      <td>1 10 0.1</td>
+      <td>76 75 78</td>
+      <td>(74, 79) (73, 78) (76, 81)</td>
+      <td>77 78 78</td>
+      <td>(76, 79) (76, 79) (78, 81)</td>
+    </tr>
+    <tr>
+      <td>Delay before source switches to BrdU− post-labelling (days)</td>
+      <td>1 10 0.1</td>
+      <td>2.5 2.6 2.1</td>
+      <td>(1.7, 3.0) (1.9, 3.5) (1.3, 2.3)</td>
+      <td>0.085 0.006 0.14</td>
+      <td>(0.002, 1.16) (0.003, 1.43) (0.003, 0.66)</td>
+    </tr>
+    <tr>
+      <td>Source contribution to peripheral production (fraction)</td>
+      <td>1 10 0.1</td>
+      <td>0.12 0.11 0.15</td>
+      <td>(0.12, 0.13) (0.099, 0.11) (0.15, 0.16)</td>
+      <td>0.092 0.085 0.12</td>
+      <td>(0.088, 0.096) (0.08, 0.088) (0.11, 0.12)</td>
+    </tr>
+    <tr>
+      <td>Fraction of source enteringslow subpopulation</td>
+      <td>1 10 0.1</td>
+      <td>1 1 1</td>
+      <td>(0.98, 1) (0.95, 1) (0.98, 1)</td>
+      <td>0.69 1 0.46</td>
+      <td>(0.38, 0.85) (0.45, 1) (0.19, 0.62)</td>
+    </tr>
+    <tr>
+      <td>Mean lifetime offast subpopulation (days)</td>
+      <td>1 10 0.1</td>
+      <td>5.7 17 18</td>
+      <td>(5.5, 6.8) (15, 20) (18, 21)</td>
+      <td>3.3 7.1 6.4</td>
+      <td>(3.1, 3.4) (6.2, 7.5) (6.4, 6.9)</td>
+    </tr>
+    <tr>
+      <td>Mean lifetime ofslow subpopulation (days)</td>
+      <td>1 10 0.1</td>
+      <td>43 61 75</td>
+      <td>(43, 48) (60, 65) (74, 77)</td>
+      <td>38 48 76</td>
+      <td>(34, 44) (47, 65) (68, 90)</td>
+    </tr>
+    <tr>
+      <td>Mean interdivision time offast subpopulation (days)</td>
+      <td>1 10 0.1</td>
+      <td>5.7 5.7 6.8</td>
+      <td>(5.5, 6.9) (5.1, 6.7) (6.8, 7.6)</td>
+      <td>3.4 3.3 4.2</td>
+      <td>(3.2, 3.5) (3.0, 3.4) (4.2, 4.4)</td>
+    </tr>
+    <tr>
+      <td>Mean interdivision time ofslow subpopulation (days)</td>
+      <td>1 10 0.1</td>
+      <td>138 113 125</td>
+      <td>(130, 275) (90, 750) (119, 169)</td>
+      <td>167 118 92</td>
+      <td>(89, 280) (72, 151) (69, 151)</td>
+    </tr>
+    <tr>
+      <td>Size of fast subpopulation(fraction of total)</td>
+      <td>1 10 0.1</td>
+      <td>0.38 0.46 0.35</td>
+      <td>(0.37, 0.44) (0.43, 0.54) (0.34, 0.38)</td>
+      <td>0.49 0.52 0.47</td>
+      <td>(0.47, 0.51) (0.49, 0.53) (0.45, 0.48)</td>
+    </tr>
+  </tbody>
+</table>
 
-Despite the richness of the BrdU/Ki67 timecourse, given the number of unknowns to be estimated it was not possible to fit a single model containing both forms of heterogeneity. However to look for a signature of temporal heterogeneity we explored variants of the KH model in which the loss rates of Ki67high cells were forced to be either a tenth or ten times that of the Ki67low cells in each subpopulation. For CD4 TEM neither extension improved on the basic KH model’s description of the data (ΔAIC>4). For CD4 TCM we found almost equal support for a model in which Ki67high cells died 10 times faster than Ki67low cells and for the basic KH model in which death rates are independent of the level of Ki67 expression. This additional level of temporal heterogeneity increased the estimated mean lifetimes of both fast and slow CD4 TCM subsets but had little impact on estimates of interdivision times (Table 2 and Figure 5—figure supplement 1). We conclude that our data do not provide evidence for substantial differences in the susceptibility to death of recently-divided and quiescent memory CD4 T cells.
+### Sensitivity of predictions to the size of memory influx and choice of model
+
+Given the notorious dependence of estimates of lymphocyte division and death rates on model assumptions (De Boer and Perelson, 2013), we explored the sensitivity of our estimates and predictions to the magnitude of the source. We performed fits to the BrdU/Ki67 timecourses for multiple values of the influx spanning values of zero to 30% of the pool size per week, which included the point estimates and their 95% confidence intervals (Figure 5A). Despite the two additional parameters required to describe the source (i.e. its partitioning between the fast and slow subpopulations, and the timing of the switch to unlabelled source after withdrawal of BrdU; see Appendix), including a source gave superior descriptions of both CD4 TEM and TCM labelling kinetics compared to models of self-renewing memory with no influx ($Δ$AIC = 9 and 20, respectively, at the best estimates of the source). The flows into memory impact measures of homeostatic dynamics significantly; if the contribution of the source is neglected, pool-averaged cell lifetimes may be overestimated by 25–50% and, more strikingly, interdivision times underestimated by a factor of 2–3 (Figure 5A).
+
+At our best estimates of the influx into CD4 TEM and TCM from the naive pool, we infer that it predominantly feeds the slower subpopulations within each. Since we presume that memory is largely generated from naive cells through antigen-driven proliferation, this result was puzzling. A more restricted model in which the source was constrained to feed exclusively into the faster subpopulation had substantially lower statistical support ($Δ$AIC = 18 for CD4 TEM, 9.9 for TCM), but visually the fits were similar (Appendix 1—figure 2; parameter estimates in Appendix 1—table 3). Further, if CD4 TEM derive from TCM to any extent, we predict higher levels of influx (Table 1) and the proportion predicted to enter the slow population is then lower (Figure 5A, upper panels). We therefore remain cautious regarding the extents to which the constitutive influx feeds low and fast-dividing memory subsets. Irrespective, at all values of the source we explored, all variants of the KH model were far better descriptions of the kinetics than the TH model ($Δ$AIC $>$ 90 for both CD4 TEM and TCM).
+
+Despite the richness of the BrdU/Ki67 timecourse, given the number of unknowns to be estimated it was not possible to fit a single model containing both forms of heterogeneity. However to look for a signature of temporal heterogeneity we explored variants of the KH model in which the loss rates of Ki67high cells were forced to be either a tenth or ten times that of the Ki67low cells in each subpopulation. For CD4 TEM neither extension improved on the basic KH model’s description of the data ($Δ$AIC$>$4). For CD4 TCM we found almost equal support for a model in which Ki67high cells died 10 times faster than Ki67low cells and for the basic KH model in which death rates are independent of the level of Ki67 expression. This additional level of temporal heterogeneity increased the estimated mean lifetimes of both fast and slow CD4 TCM subsets but had little impact on estimates of interdivision times (Table 2 and Figure 5—figure supplement 1). We conclude that our data do not provide evidence for substantial differences in the susceptibility to death of recently-divided and quiescent memory CD4 T cells.
 
 We estimated the mean post-mitotic duration of Ki67 expression to be between 3.1 and 3.7 days, consistent with estimates elsewhere (Pitcher et al., 2002; Younes et al., 2011; De Boer and Perelson, 2013). This estimate was model-independent, insensitive to the magnitude of the influx into memory, and closely comparable for CD4 TEM and TCM (Figure 5B). The KH model predicted that the fast subpopulations express Ki67 at levels of approximately 65% (CD4 TEM) and 85% (TCM), while the slow populations in both are less than 10% Ki67high (Figure 5C). Ki67high CD4 memory cells are therefore predicted to be highly enriched for the fast dividing subset. Notably, the relative sizes of the fast and slow subsets were similar to the split of donor/host cells observed in memory in the busulfan chimeras (Figure 2C). It was then tempting to speculate that the slowly-dividing cells were the apparently resistant and stable populations of host-derived CD4 TEM and TCM cells in the busulfan chimeras, while the more rapidly dividing cells represent the influx of donor cells into memory subsets. To test this, we measured Ki67 expression in busulfan chimeras 8 weeks after BMT, when hosts were a comparable age to those used in the BrdU feeding experiments. Although donor cells were indeed slightly enriched for Ki67high cells relative to host cells, both subpopulations exhibited substantial levels of Ki67 expression (Figure 5D) and did not map to the fast/slow populations inferred from the BrdU labelling analysis. These data therefore strongly suggest that both newly-recruited donor and more established host memory CD4 T cells are kinetically heterogeneous.
 
@@ -120,7 +306,7 @@ To date, our understanding of how CD4 memory is structured and maintained has be
 
 Temporal fate mapping in the busulfan chimeras revealed the surprisingly high rate of de novo generation of memory/effector cells in the CD4 memory compartments from naive cells, with at least 6–10% of cells replaced each week in 14 week old mice. Even at the lower bounds, the extent of this new memory generation from naive sources was surprising given that the hosts were in a clean, regulated environment and not deliberately infected. A recent study of feral mice and those in dirty environments revealed the expansion of CD8 TEM compartments resulting from the increased antigenic load (Beura et al., 2016). The authors concluded that expansion was driven by episodic exposure and not constitutive stimuli, as the activation and proliferative status of immune cells were similar to those in cleaner laboratory mice. However, our data strongly indicate the existence of tonic drivers of generation of new memory cells. An obvious mechanism is the continued recruitment of recent thymic emigrants into responses against commensal or environmental antigens. The fact that memory compartments remain remarkably stable in size in the face of this chronic stimulus suggests that these responding cells are regulated differently to those generated in an active infection, perhaps due to the absence of overt inflammatory stimulus. Whether inflammatory stimuli modulate these responses will be the subject of future study.
 
-We also explored the differentiation pathways underlying the flow of cells from naive to different memory compartments over timescales of weeks to months. Previous studies suggest that regulation of CD62L expression by activated CD4 T cells is both heterogenous and slow, compared with CD8 cells (Bjorkdahl et al., 2003; Chao et al., 1997). Loss of CD62L expression is largely irreversible in CD4 TEM (Kassiotis and Stockinger, 2004; Bingaman et al., 2005), suggesting that the CD62L-expressing CD4 TCM derive directly from activation of naive T cells and not from TEM. Consistent with this we clearly observed more rapid and slightly greater replacement of the CD4 TCM than CD4 TEM compartment in busulfan chimeras. For CD4 TEM the situation is less clear, but CD8 TEM may be generated both directly from activation of naive T cells or by subsequent differentiation of CD8 TCM (Restifo and Gattinoni, 2013). Due to the risk of overfitting it was not possible to quantify the contributions of each of these pathway to CD4 TEM at steady state, and so we considered only the extreme alternatives in which CD4 TEM are sourced entirely from naive or entirely from CD4 TCM. The TCM → TEM model was statistically inferior but gave visually similar fits (Figure 2C), and predicted much higher rates of CD4 TEM replacement (∼23%/week, compared to ∼6% for a naive source; Table 1 ). As it seems likely that the CD4 TEM population is fed by both naive and TCM cells to some extents, we conclude that our estimate of 6% is a lower bound and it is possible that nearly a quarter of CD4 TEM are replaced each week under healthy conditions at 14 weeks of age.
+We also explored the differentiation pathways underlying the flow of cells from naive to different memory compartments over timescales of weeks to months. Previous studies suggest that regulation of CD62L expression by activated CD4 T cells is both heterogenous and slow, compared with CD8 cells (Bjorkdahl et al., 2003; Chao et al., 1997). Loss of CD62L expression is largely irreversible in CD4 TEM (Kassiotis and Stockinger, 2004; Bingaman et al., 2005), suggesting that the CD62L-expressing CD4 TCM derive directly from activation of naive T cells and not from TEM. Consistent with this we clearly observed more rapid and slightly greater replacement of the CD4 TCM than CD4 TEM compartment in busulfan chimeras. For CD4 TEM the situation is less clear, but CD8 TEM may be generated both directly from activation of naive T cells or by subsequent differentiation of CD8 TCM (Restifo and Gattinoni, 2013). Due to the risk of overfitting it was not possible to quantify the contributions of each of these pathway to CD4 TEM at steady state, and so we considered only the extreme alternatives in which CD4 TEM are sourced entirely from naive or entirely from CD4 TCM. The TCM → TEM model was statistically inferior but gave visually similar fits (Figure 2C), and predicted much higher rates of CD4 TEM replacement ($∼$23%/week, compared to $∼$6% for a naive source; Table 1 ). As it seems likely that the CD4 TEM population is fed by both naive and TCM cells to some extents, we conclude that our estimate of 6% is a lower bound and it is possible that nearly a quarter of CD4 TEM are replaced each week under healthy conditions at 14 weeks of age.
 
 Our estimated average lifetimes of lymph-node-derived memory CD4 T cells (21d for TCM and 29d for TEM) are slightly higher than those made previously. Other studies of total CD44hi CD4 T cells using BrdU or deuterated water labelling found kinetics consistent with mean lifetimes of 14-22d (De Boer and Perelson, 2013; Westera et al., 2013). One of these studies found that a simple model of two self-renewing, stable populations described the labelling kinetics better than the simplest single-compartment model with no temporal heterogeneity, and that the fast and slow CD4 memory populations were comparable in size (Westera et al., 2013). Both studies assumed that memory is self-renewing and constant in size, so mean lifetimes are necessarily equal to average interdivision times. If we make a similar assumption and neglect the memory sources, our estimates of lifetimes increase (40d and 30d for CD4 TEM and TCM respectively). Thus, studies assuming memory is a self-renewing compartment will tend to overestimate lifetimes and underestimate interdivision times. This issue again highlights the sensitivity of measures of population dynamics to the biology encoded in the model. Our analysis suggests that the rate of recruitment into memory from the naive pool varies with age, and given the relative stability of memory population sizes it is therefore likely that memory turnover is also not constant over the life course. It is possible that the discrepancies between our and other estimates may derive from differences in host age or in commensal colonisation arising in the different housing facilities, both of which may impact the rate of tonic recruitment into memory, the relative sizes of fast and slowly dividing subpopulations, and hence estimates of cell lifetimes and division rates.
 
@@ -128,91 +314,131 @@ Our experimental analyses revealed heterogeneous behaviour amongst memory CD4 T 
 
 In the absence of infection, it is intuitive that the stimulus driving the continuous recruitment into memory derives from environmental antigens in food and commensal organisms. It also seems intuitive that this stimulus should continue to drive fast-dividing memory subpopulations throughout life. Certainly, we find evidence of these within both new (donor-derived) and more established (host-derived) memory populations (Figure 5D). However if environmental antigens are the stimulus for tonic recruitment, then it is surprising that newly generated memory cells are not exclusively fast-dividing. These observations could be explained if exposure to environmental antigens is subject to natural fluctuations in load, resulting in episodic but frequent stimuli to divide rather than continuous rounds of division. Indeed bursts of TCR-driven proliferation may be involved in the maintenance of CD4 memory to persistent phagosomal infections (Nelson et al., 2013). Such a view would be consistent with the estimates of interdivision times for the fast subpopulations, which are still much longer than the interdivision times of several hours that result from cognate antigen challenge. Episodic fast divisions within both CD4 TEM and TCM could also account for the arguably counter-intuitive model prediction that the source predominantly feeds the slowly-dividing subpopulations. We also note that the fits yielded by the model of discrete fast and slow populations are good, but not perfect, and it seems likely that there is a richer kinetic substructure (Ganusov et al., 2010). Testing this hypothesis that the composition of fast and slow populations is dynamic, establishing how the influx into memory is routed to these subpopulations, and identifying the lineage relationships between CD4 TEM and TCM at steady state, will require new approaches. What is clear, however, is that whether subdivided by surface phenotype or age structure, kinetically distinct subpopulations are consistently demonstrable within memory CD4 T cells.
 
-Our analysis also provides new insight into the interpretation of Ki67 expression, which is commonly used as a proxy for levels of cell proliferation. There has been a growing awareness that while Ki67 is induced at onset of cell cycle, expression persists following completion of mitosis (Pitcher et al., 2002; Younes et al., 2011; Hogan et al., 2013; De Boer and Perelson, 2013). Here we explicitly model its expression and estimate that cells take approximately 3.5 days to become Ki67low. This figure depends in part on the flow cytometry gating strategy and so is a functional rather than a biochemical measure. However the modelling indicated that the residence time in Ki67high has a low coefficient of variation and so we infer that the post-mitotic loss of Ki67 is essentially deterministic, with very little cell-cell variation. Since cell division only takes between 2–8 hr (Bruno and Darzynkiewicz, 1992; Hogan et al., 2013), Ki67 is therefore chiefly a post-mitotic marker. Its extended expression makes it a sensitive measure for detecting cell division occurring at low absolute frequencies. Knowledge of its lifetime is also useful for isolating cell populations. The fast CD4 TCM and TEM subpopulations divide approximately every 3 and 6 days respectively, while their slower counterparts divide only every 140 days or more. Therefore a substantial fraction of the fast subsets (greater than half for CD4 TCM) will begin to divide again before losing Ki67 expression. Ki67-bright CD4 memory cells are therefore highly enriched for the fast dividing subsets, and the BrdU+ Ki67low subset is increasingly rich in slowly-dividing cells. These properties can be used as basis for further functional characterisation of these subpopulations.
+Our analysis also provides new insight into the interpretation of Ki67 expression, which is commonly used as a proxy for levels of cell proliferation. There has been a growing awareness that while Ki67 is induced at onset of cell cycle, expression persists following completion of mitosis (Pitcher et al., 2002; Younes et al., 2011; Hogan et al., 2013; De Boer and Perelson, 2013). Here we explicitly model its expression and estimate that cells take approximately 3.5 days to become Ki67low. This figure depends in part on the flow cytometry gating strategy and so is a functional rather than a biochemical measure. However the modelling indicated that the residence time in Ki67high has a low coefficient of variation and so we infer that the post-mitotic loss of Ki67 is essentially deterministic, with very little cell-cell variation. Since cell division only takes between 2–8 hr (Bruno and Darzynkiewicz, 1992; Hogan et al., 2013), Ki67 is therefore chiefly a post-mitotic marker. Its extended expression makes it a sensitive measure for detecting cell division occurring at low absolute frequencies. Knowledge of its lifetime is also useful for isolating cell populations. The fast CD4 TCM and TEM subpopulations divide approximately every 3 and 6 days respectively, while their slower counterparts divide only every 140 days or more. Therefore a substantial fraction of the fast subsets (greater than half for CD4 TCM) will begin to divide again before losing Ki67 expression. Ki67-bright CD4 memory cells are therefore highly enriched for the fast dividing subsets, and the BrdU$^{+}$ Ki67low subset is increasingly rich in slowly-dividing cells. These properties can be used as basis for further functional characterisation of these subpopulations.
 
 Taken together, our data reveal complexity in the regulation of memory compartments, in which the substantial and tonic de novo generation of memory cells braids into highly dynamic and heterogeneous subpopulations which themselves exhibit an unexpectedly diverse age structure. Despite this complexity in cell dynamics, the compartment sizes are remarkably stable throughout life, indicating tight homeostatic control. Key questions for the future are whether tonic influxes contribute to the erosion of antigen-specific CD4 T cell memory over time (Homann et al., 2001), whether the tonic recruitment and turnover of memory cells are modulated during the course of an inflammatory, infectious episode, and whether this backdrop of memory cell activity in any way influences T cell activation and development that occurs during such challenges.
 
 ## Methods and materials
 
-## Experimental protocols
+### Experimental protocols
 
-## Mice
+#### Mice
 
 WT CD45.1 and CD45.2 mice were bred and maintained in conventional pathogen-free colonies at either the National Institute for Medical Research (London, UK) or at the Royal Free Campus of University College London. All experiments were performed in accordance with UK Home Office regulations, project license number PPL70-8310.
 
-## Busulfan chimeras
+#### Busulfan chimeras
 
 Chimeric mice were generated as described previously in Bio-protocol (Hogan et al., 2017a). Briefly, WT CD45.1 mice aged 8 weeks were treated with 20 mg/kg busulfan (Busilvex, Pierre Fabre) to deplete HSC, and reconstituted with T-cell depleted bone marrow cells from congenic donor WT CD45.2 mice. Chimeras were sacrificed at 6–52 weeks after bone marrow transplantation, and cells from the thymus, spleen and lymph nodes were analysed by flow cytometry.
 
-## BrdU timecourses
+#### BrdU timecourses
 
 BrdU (Sigma) was administered to WT mice by an initial intraperitoneal injection of 0.8 mg BrdU, followed by maintenance of 0.8 mg/mL BrdU in drinking water for the indicated time periods up to 21 days. BrdU in drinking water was refreshed every 2–3 days. Starting times for BrdU treatment were staggered so that all mice in a timecourse experiment were sacrificed on the same day for analysis of lymph node cells by flow cytometry. Ages at sacrifice were in the range 14–16 weeks. The protocol described in more detail at Bio-protocol (Hogan et al., 2017b).
 
-## Flow cytometry
+#### Flow cytometry
 
-Cells were stained with the following monoclonal antibodies and cell dyes: CD45.1 FITC, CD45.2 AlexaFluor 700, TCR-beta APC, CD4 PerCP-eFluor710, CD25 PE, CD44 APC-eFluor780, CD25 eFluor450, CD62L eFluor450 (all eBioscience), TCRβ PerCP-Cy5.5, CD5 BV510, CD4 BV650, CD44 BV785 (all BioLegend), CD62L BUV737 (BD Biosciences), LIVE/DEAD nearIR and LIVE/DEAD Blue viability dyes (Invitrogen). BrdU and Ki67 co-staining was performed using the FITC BrdU Flow Kit (BD Biosciences) according to the manufacturer’s instructions, along with anti-Ki67 eFluor660 (eBioscience). Cells were acquired on a BD LSR-II or BD LSR-Fortessa flow cytometer and analysed using Flowjo software (Treestar). Subset gates were as follows: CD4 naive: live TCRβ+ CD5+ CD4+ CD25- CD44- CD62L+. CD4 TEM: live TCRβ+ CD5+ CD4+ CD25- CD44+ CD62L-. CD4 TCM: live TCRβ+ CD5+ CD4+ CD25- CD44+ CD62L+.
+Cells were stained with the following monoclonal antibodies and cell dyes: CD45.1 FITC, CD45.2 AlexaFluor 700, TCR-beta APC, CD4 PerCP-eFluor710, CD25 PE, CD44 APC-eFluor780, CD25 eFluor450, CD62L eFluor450 (all eBioscience), TCR$\beta$ PerCP-Cy5.5, CD5 BV510, CD4 BV650, CD44 BV785 (all BioLegend), CD62L BUV737 (BD Biosciences), LIVE/DEAD nearIR and LIVE/DEAD Blue viability dyes (Invitrogen). BrdU and Ki67 co-staining was performed using the FITC BrdU Flow Kit (BD Biosciences) according to the manufacturer’s instructions, along with anti-Ki67 eFluor660 (eBioscience). Cells were acquired on a BD LSR-II or BD LSR-Fortessa flow cytometer and analysed using Flowjo software (Treestar). Subset gates were as follows: CD4 naive: live TCR$\beta$+ CD5+ CD4+ CD25- CD44- CD62L+. CD4 TEM: live TCR$\beta$+ CD5+ CD4+ CD25- CD44+ CD62L-. CD4 TCM: live TCR$\beta$+ CD5+ CD4+ CD25- CD44+ CD62L+.
 
-## Modelling the fluxes between naive, central memory and effector memory subsets
+### Modelling the fluxes between naive, central memory and effector memory subsets
 
-We used a simple framework to describe the kinetics of constitutive renewal of the effector and central memory CD4 compartments. Assume that cells flow into a memory subset M⁢(t) at per capita rate γ from a precursor population S⁢(t), and that in the absence of this source, memory is lost to death and/or differentiation at net rate λ. We place no constraints on the growth or decay of memory so λ may be positive or negative. Then if host and donor cells follow identical kinetics,(1)dMhostdt=γShost(t)−λMhost(t)(2)dMdonordt=γSdonor(t)−λMdonor(t)
+We used a simple framework to describe the kinetics of constitutive renewal of the effector and central memory CD4 compartments. Assume that cells flow into a memory subset $M⁢(t)$ at per capita rate $\gamma$ from a precursor population $S⁢(t)$, and that in the absence of this source, memory is lost to death and/or differentiation at net rate $\lambda$. We place no constraints on the growth or decay of memory so $\lambda$ may be positive or negative. Then if host and donor cells follow identical kinetics,
 
-The rate γ is the product of the per capita rate of egress of cells from the precursor population S and the net effect of any expansion and/or contraction that takes place during the transition into memory. We define the memory chimerism to be the fraction of cells that are donor-derived,χM=MdonorMdonor+Mhost
+$$
+(1)\frac{dM_{host}}{dt}=\gammaS_{host}(t)−\lambdaM_{host}(t)(2)\frac{dM_{donor}}{dt}=\gammaS_{donor}(t)−\lambdaM_{donor}(t)
+$$
 
-which differs among age-matched animals due to variation in the degree of HSC depletion with busulfan treatment. We normalise the memory chimerism to that in the thymic precursor population DP1, χDP1, which is stable by approximately 6 weeks post-BMT. Equations 1 and 2 can then be recast in forms that do not depend on the degree of HSC depletion and so are applicable across mice in the experimental cohort:(3)dMdt=γS(t)−λM(t)(4)dρMdt=γS(t)M(t)(ρS(t)−ρM(t))
+The rate $\gamma$ is the product of the per capita rate of egress of cells from the precursor population $S$ and the net effect of any expansion and/or contraction that takes place during the transition into memory. We define the memory chimerism to be the fraction of cells that are donor-derived,
 
-where M=Mhost+Mdonor, and ρM=χM/χDP1 and ρS=χS/χDP1 are the normalised donor chimerism in the memory and source populations respectively.
+$$
+χ_{M}=\frac{M_{donor}}{M_{donor}+M_{host}}
+$$
 
-To account for the apparent capping of chimerism in the memory subsets, this model can be extended to allow the per-cell rate of recruitment into memory to vary with the age of the animal, γ⁢(t), and/or a population of host-derived memory cells, Minc, that resists displacement by newer cells. Combining these extensions yields(5)dMdt=γ(t)S(t)−λ(M(t)−Minc)(6)dρMdt=γ(t)S(t)M(t)(ρS(t)−ρM(t))−λMincM(t)ρM(t)
+which differs among age-matched animals due to variation in the degree of HSC depletion with busulfan treatment. We normalise the memory chimerism to that in the thymic precursor population DP1, $χ_{DP1}$, which is stable by approximately 6 weeks post-BMT. Equations 1 and 2 can then be recast in forms that do not depend on the degree of HSC depletion and so are applicable across mice in the experimental cohort:
 
-where now M=Mhost+Mdonor+Minc. Note that in the text we work with two sub-models – one in which there is a resistant population Minc but the per capita rate of recruitment from the source γ=γ0 is a constant; and another in which all memory is displaceable (Minc=0) but that the per capita rate of recruitment from the source wanes with age, γ⁢(t)=γ0⁢exp⁡(-ϕ⁢t). Below we show the predictions of the most general model that combines both elements.
+$$
+(3)\frac{dM}{dt}=\gammaS(t)−\lambdaM(t)(4)\frac{dρ_{M}}{dt}=\frac{\gammaS(t)}{M(t)}(ρ_{S}(t)−ρ_{M}(t))
+$$
+
+where $M=M_{host}+M_{donor}$, and $ρ_{M}=χ_{M}/χ_{DP1}$ and $ρ_{S}=χ_{S}/χ_{DP1}$ are the normalised donor chimerism in the memory and source populations respectively.
+
+To account for the apparent capping of chimerism in the memory subsets, this model can be extended to allow the per-cell rate of recruitment into memory to vary with the age of the animal, $\gamma⁢(t)$, and/or a population of host-derived memory cells, $M_{inc}$, that resists displacement by newer cells. Combining these extensions yields
+
+$$
+(5)\frac{dM}{dt}=\gamma(t)S(t)−\lambda(M(t)−M_{inc})(6)\frac{dρ_{M}}{dt}=\frac{\gamma(t)S(t)}{M(t)}(ρ_{S}(t)−ρ_{M}(t))−\frac{\lambdaM_{inc}}{M(t)}ρ_{M}(t)
+$$
+
+where now $M=M_{host}+M_{donor}+M_{inc}$. Note that in the text we work with two sub-models – one in which there is a resistant population $M_{inc}$ but the per capita rate of recruitment from the source $\gamma=\gamma_{0}$ is a constant; and another in which all memory is displaceable ($M_{inc}=0$) but that the per capita rate of recruitment from the source wanes with age, $\gamma⁢(t)=\gamma_{0}⁢exp⁡(-ϕ⁢t)$. Below we show the predictions of the most general model that combines both elements.
 
 We can make a conservative estimate of the flows into memory by assuming that both the effector and central memory pools are fed directly from the naive pool. For each, we fitted the model of the dynamics of total cell numbers and the normalised chimerism within the naive CD4 T cell pool (Equations 5 and 6) to the observations, using empirical functions describing changes in the size and chimerism of the source population with time. The following functional forms described both putative source populations (naive and CD4 TCM) well;
 
-Source population size(7)S(t)=S0e−Rt
+Source population size
 
-Source chimerism(8)ρS(t)=ρmax1+e−rt(ρmax−ρ0)/ρ0
+$$
+S(t)=S_{0}e^{−Rt}
+$$
+
+Source chimerism
+
+$$
+ρ_{S}(t)=\frac{ρ_{max}}{1+e^{−rt}(ρ_{max}−ρ_{0})/ρ_{0}}
+$$
 
 Estimates of the parameters governing these functions are given in Appendix 1—table 1.
 
-To fit the resistant memory and declining recruitment models, we maximised the product of the log likelihoods of the two timecourses, as described in the Supporting Information of Hogan et al. (2015), using a trust region method implemented in Python (Figure 2—source data 2). We estimated the net rate of loss/growth of memory, λ and the initial rate of recruitment from the source, γ0; and either (i) Minc for the model of resistant memory with constant per capita rate of recruitment from the source; or (ii) ϕ for the model in which the per capita rate of recruitment from the source itself falls exponentially at rate ϕ. Confidence intervals on these parameters were generated by simultaneously bootstrapping residuals 3000 times and resampling from the bootstrap estimates of the parameters governing the sources, S⁢(t) and ρS⁢(t).
+To fit the resistant memory and declining recruitment models, we maximised the product of the log likelihoods of the two timecourses, as described in the Supporting Information of Hogan et al. (2015), using a trust region method implemented in Python (Figure 2—source data 2). We estimated the net rate of loss/growth of memory, $\lambda$ and the initial rate of recruitment from the source, $\gamma_{0}$; and either (i) $M_{inc}$ for the model of resistant memory with constant per capita rate of recruitment from the source; or (ii) $ϕ$ for the model in which the per capita rate of recruitment from the source itself falls exponentially at rate $ϕ$. Confidence intervals on these parameters were generated by simultaneously bootstrapping residuals 3000 times and resampling from the bootstrap estimates of the parameters governing the sources, $S⁢(t)$ and $ρ_{S}⁢(t)$.
 
-One quantity of interest is γ⁢(t)⁢S⁢(t)/M⁢(t), which is the number of new cells entering memory per unit time as a fraction of the memory pool size. Another is the fraction of memory cells replaced through immigration. Because we assumed that recently recruited memory cells are as susceptible to loss as older displaceable memory cells, the number of memory cells expected to be replaced through immigration during a time (0,t) is slightly less than the total influx in the same period. Consider a memory population M⁢(0) that comprises a displaceable population X⁢(0) and an incumbent self-renewing population Minc, M⁢(0)=X⁢(0)+Minc. We defined the fractional replacement to be the proportion of the memory pool comprised of immigrants after a time t;(9)freplace⁢(t)=Y⁢(t)X⁢(t)+Y⁢(t)+Minc
+One quantity of interest is $\gamma⁢(t)⁢S⁢(t)/M⁢(t)$, which is the number of new cells entering memory per unit time as a fraction of the memory pool size. Another is the fraction of memory cells replaced through immigration. Because we assumed that recently recruited memory cells are as susceptible to loss as older displaceable memory cells, the number of memory cells expected to be replaced through immigration during a time $(0,t)$ is slightly less than the total influx in the same period. Consider a memory population $M⁢(0)$ that comprises a displaceable population $X⁢(0)$ and an incumbent self-renewing population $M_{inc}$, $M⁢(0)=X⁢(0)+M_{inc}$. We defined the fractional replacement to be the proportion of the memory pool comprised of immigrants after a time $t$;
 
-where X⁢(t)=X⁢(0)⁢e-λ⁢t is the number of displaceable cells present at t=0 which survived to time t; and Y⁢(t) is the number of cells that entered memory during (0,t) and survived to t, which is the solution to d⁢Y/d⁢t=γ⁢(t)⁢S⁢(t)-λ⁢Y⁢(t) given Y⁢(0)=0. If we assume γ⁢(t)=γ0⁢exp⁡(-ϕ⁢t) and the empirical form for the source S⁢(t)=S0⁢exp⁡(-R⁢t), this yields(10)freplace(t)=γ0S0(eψt−1)eψt(ψ(M(0)−Minc)+γ0S0)+ψMince(ψ+λ)t−γ0S0,
+$$
+f_{replace}⁢(t)=\frac{Y⁢(t)}{X⁢(t)+Y⁢(t)+M_{inc}}
+$$
 
-where we define ψ=R+ϕ-λ. In the text we quote both the daily influx γ⁢S/M and the expected weekly fractional replacement, freplace(t=7 days), both at 14 weeks of age, which is 6 weeks post-BMT in these animals (Table 1). We also quote replacement as a fraction of the displaceable subpopulation only:(11)freplacedisplaceable⁢(t)=Y⁢(t)X⁢(t)+Y⁢(t)=γ0⁢S0⁢(eψ⁢t-1)eψ⁢t⁢(ψ⁢(M0-Minc)+γ0⁢S0)-γ0⁢S0.
+where $X⁢(t)=X⁢(0)⁢e^{-\lambda⁢t}$ is the number of displaceable cells present at $t=0$ which survived to time $t$; and $Y⁢(t)$ is the number of cells that entered memory during $(0,t)$ and survived to $t$, which is the solution to $d⁢Y/d⁢t=\gamma⁢(t)⁢S⁢(t)-\lambda⁢Y⁢(t)$ given $Y⁢(0)=0$. If we assume $\gamma⁢(t)=\gamma_{0}⁢exp⁡(-ϕ⁢t)$ and the empirical form for the source $S⁢(t)=S_{0}⁢exp⁡(-R⁢t)$, this yields
+
+$$
+f_{replace}(t)=\frac{\gamma_{0}S_{0}(e^{ψt}−1)}{e^{ψt}(ψ(M(0)−M_{inc})+\gamma_{0}S_{0})+ψM_{inc}e^{(ψ+\lambda)t}−\gamma_{0}S_{0}},
+$$
+
+where we define $ψ=R+ϕ-\lambda$. In the text we quote both the daily influx $\gamma⁢S/M$ and the expected weekly fractional replacement, $f_{replace}(t=7$ days$)$, both at 14 weeks of age, which is 6 weeks post-BMT in these animals (Table 1). We also quote replacement as a fraction of the displaceable subpopulation only:
+
+$$
+f_{replace}^{displaceable}⁢(t)=\frac{Y⁢(t)}{X⁢(t)+Y⁢(t)}=\frac{\gamma_{0}⁢S_{0}⁢(e^{ψ⁢t}-1)}{e^{ψ⁢t}⁢(ψ⁢(M_{0}-M_{inc})+\gamma_{0}⁢S_{0})-\gamma_{0}⁢S_{0}}.
+$$
 
 Figure 2D shows how the weekly fractional replacement of both total and displaceable memory is predicted to change with age.
 
-The estimates of daily influx are robust to the details of the model of the capping of memory chimerism. This is because information regarding this parameter is largely contained in the gradient of the donor chimerism in memory d⁢ρM/d⁢t early in reconstitution, which is well-defined in the data (Figure 2C, lower panels; animals of age c. 100 days). When the chimerism ρM and/or the rate of change of memory cell numbers in the absence of influx (λ) are low, then in either model(12)γ⁢(t)⁢S⁢(t)M⁢(t)≃d⁢ρM/d⁢tρS⁢(t)-ρM⁢(t)=d⁢χM/d⁢tχS-χM.
+The estimates of daily influx are robust to the details of the model of the capping of memory chimerism. This is because information regarding this parameter is largely contained in the gradient of the donor chimerism in memory $d⁢ρ_{M}/d⁢t$ early in reconstitution, which is well-defined in the data (Figure 2C, lower panels; animals of age c. 100 days). When the chimerism $ρ_{M}$ and/or the rate of change of memory cell numbers in the absence of influx ($\lambda$) are low, then in either model
 
-This expression yields estimates of influx of 2.5% of the pool size per day for CD4 TCM and 1.2% per day for CD4 TEM, assuming both are sourced by naive cells. Both of these estimates lie within the 95% confidence intervals calculated using the best-fitting models (Table 1). Equation 12 also explains why the predicted rates of CD4 TEM replacement are much higher if one assumes that the source is TCM rather than naive; this rate scales inversely with the difference in chimerism between the source and target populations, which is lower for a TCM → TEM pathway than for naive → TEM.
+$$
+\frac{\gamma⁢(t)⁢S⁢(t)}{M⁢(t)}≃\frac{d⁢ρ_{M}/d⁢t}{ρ_{S}⁢(t)-ρ_{M}⁢(t)}=\frac{d⁢χ_{M}/d⁢t}{χ_{S}-χ_{M}}.
+$$
 
-## Modelling BrdU/Ki67 dynamics
+This expression yields estimates of influx of 2.5% of the pool size per day for CD4 TCM and 1.2% per day for CD4 TEM, assuming both are sourced by naive cells. Both of these estimates lie within the 95% confidence intervals calculated using the best-fitting models (Table 1). Equation 12 also explains why the predicted rates of CD4 TEM replacement are much higher if one assumes that the source is TCM rather than naive; this rate scales inversely with the difference in chimerism between the source and target populations, which is lower for a TCM → TEM pathway than for naive $→$ TEM.
 
-The model is illustrated in Figure 3C, indicating flows between the BrdU×-⁣/+ Ki67low/high populations following first order kinetics with fixed rate constants. To describe the data we made the following extensions to this basic structure:
+### Modelling BrdU/Ki67 dynamics
+
+The model is illustrated in Figure 3C, indicating flows between the BrdU$\times-⁣/+$ Ki67low/high populations following first order kinetics with fixed rate constants. To describe the data we made the following extensions to this basic structure:
 
 With these extensions, the model parameterises the following processes:
 
-α = rate of entry into division resulting in expression of Ki67,
+$\alpha$ = rate of entry into division resulting in expression of Ki67,
 
-δ− = rate of loss (death or differentiation) for Ki67low cells,
+$\delta^{−}$ = rate of loss (death or differentiation) for Ki67low cells,
 
-δ+ = rate of loss (death or differentiation) for Ki67high cells,
+$\delta^{+}$ = rate of loss (death or differentiation) for Ki67high cells,
 
-ϵ = probability of incorporating BrdU per division during label administration,
+$ϵ$ = probability of incorporating BrdU per division during label administration,
 
-S± = rate of entry of cells into the K+B± compartments from the source,
+$S^{\pm}$ = rate of entry of cells into the K+B± compartments from the source,
 
-k^ = number of Ki67high intermediate compartments,
+$k^$ = number of Ki67high intermediate compartments,
 
-1/β = mean duration of Ki67 expression (i.e., mean total residence time in Ki67high compartments),
+$1/\beta$ = mean duration of Ki67 expression (i.e., mean total residence time in Ki67high compartments),
 
-b^ = number of divisions required for a BrdU+ cell to become BrdU− in the absence of label,
+$b^$ = number of divisions required for a BrdU+ cell to become BrdU− in the absence of label,
 
-τ = time for source to become BrdU− following withdrawal of BrdU.
+$\tau$ = time for source to become BrdU− following withdrawal of BrdU.
 
-For the basic KH model we set δ+=δ-=δ for each subpopulation. We also examined variants of KH in which the death rate of Ki67high cells in each subpopulation was forced be either 1/10 or 10 times the death rate of of Ki67low cells.
+For the basic KH model we set $\delta^{+}=\delta^{-}=\delta$ for each subpopulation. We also examined variants of KH in which the death rate of Ki67high cells in each subpopulation was forced be either 1/10 or 10 times the death rate of of Ki67low cells.
 
 Detailed descriptions of the representation of this model as ordinary differential equations and the procedure for parameter estimation are given in Appendix 1.
 

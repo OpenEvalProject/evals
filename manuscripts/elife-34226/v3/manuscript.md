@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.34226.001 Choanoflagellates, the closest living relatives of animals, can provide unique insights into the changes in gene content that preceded the origin of animals. However, only two choanoflagellate genomes are currently available, providing poor coverage of their diversity. We sequenced transcriptomes of 19 additional choanoflagellate species to produce a comprehensive reconstruction of the gains and losses that shaped the ancestral animal gene repertoire. We identified ~1944 gene families that originated on the animal stem lineage, of which only 39 are conserved across all animals in our study. In addition, ~372 gene families previously thought to be animal-specific, including Notch, Delta, and homologs of the animal Toll-like receptor genes, instead evolved prior to the animal-choanoflagellate divergence. Our findings contribute to an increasingly detailed portrait of the gene families that defined the biology of the Urmetazoan and that may underpin core features of extant animals.
+Choanoflagellates, the closest living relatives of animals, can provide unique insights into the changes in gene content that preceded the origin of animals. However, only two choanoflagellate genomes are currently available, providing poor coverage of their diversity. We sequenced transcriptomes of 19 additional choanoflagellate species to produce a comprehensive reconstruction of the gains and losses that shaped the ancestral animal gene repertoire. We identified ~1944 gene families that originated on the animal stem lineage, of which only 39 are conserved across all animals in our study. In addition, ~372 gene families previously thought to be animal-specific, including Notch, Delta, and homologs of the animal Toll-like receptor genes, instead evolved prior to the animal-choanoflagellate divergence. Our findings contribute to an increasingly detailed portrait of the gene families that defined the biology of the Urmetazoan and that may underpin core features of extant animals.
 
 ## Introduction
 
@@ -32,9 +32,25 @@ To counteract the impact of gene loss in M. brevicollis and S. rosetta, and gain
 
 ## Results
 
-## The phylogenetic distribution of animal and choanoflagellate gene families
+### The phylogenetic distribution of animal and choanoflagellate gene families
 
 To reconstruct the genomic landscape of animal evolution, we first cataloged the protein coding potential of nineteen diverse choanoflagellate species by sequencing and assembling their transcriptomes (Figure 1, Figure 1—figure supplement 1, Supplementary file 1). Because most of these species were previously little-studied in the laboratory, two important stages of this project were the establishment of growth conditions optimized for each species and the development of improved protocols for isolating choanoflagellate mRNA for cDNA library construction and sequencing (Supplementary file 1, Materials and methods). After performing de novo transcriptome assembly and filtering for cross-contamination, we predicted a catalog of between 18,816–61,053 unique protein-coding sequences per species. [These counts likely overestimate the true numbers of underlying protein-coding genes, as they may include multiple alternative splice variants for any given gene and redundant contigs resulting from intra-species polymorphisms or sequencing artifacts (Grabherr et al., 2011; Haas et al., 2013)].
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig1-v3.jpg)
+
+**Figure 1.:** Choanoflagellates have diverse morphologies, including single cells, multicellular colonies, and the production in some lineages of extracellular structures. (a) Diaphanoeca grandis, within a silica-based extracellular structure called a ‘lorica’. (b) Acanthoeca spectabilis, within lorica. (c) Codosiga hollandica, with a basal organic stalk. (d) A rosette colony of Salpingoeca rosetta; image courtesy of Mark Dayel. (e) Salpingoeca dolichothecata, within an organic extracellular structure called a ‘theca’. (f) Mylnosiga fluctuans, with no extracellular structure. (g) Didymoeca costata, within lorica. (h) Salpingoeca helianthica, within theca. (h’) A rosette colony of S. helianthica. All scale bars represent 5 µm. Prey bacteria are visible in most panels as small black dots. Images of all choanoflagellate species sequenced in this study can be found in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** All scale bars are 5 µm. (a) Acanthoeca spectabilis, a nudiform loricate. (b) Choanoeca perplexa, a thecate craspedid. (c) Codosiga hollandica, a naked stalked craspedid. (d) Diaphanoeca grandis, a tectiform loricate. (e) Didymoeca costata, a tectiform loricate. (f) Hartaetosiga balthica, a naked stalked craspedid. (g) Hartaetosiga gracilis, a naked stalked craspedid; the image shows a colony of cells attached to the same stalk. (h) Helgoeca nana, a nudiform loricate. (i) Microstomoeca roanoka, a thecate craspedid. (j) Mylnosiga fluctuans, a naked craspedid. (k) Salpingoeca dolichothecata, a thecate craspedid. (l) Salpingoeca helianthica, a thecate craspedid. (m) Salpingoeca infusionum, a thecate craspedid. (n) Salpingoeca kvevrii, a thecate craspedid. (o) Salpingoeca macrocollata, a thecate craspedid. (p) Salpingoeca punica, a thecate craspedid; p’ represents a live cell within its theca, and p’’ an empty theca. (q) Salpingoeca urceolata, a thecate craspedid; q’ represents a live cell within its theca, and q’’ a group of empty thecae joined at the bases of their stalks. (r) Savillea parva, a nudiform loricate. (s) Stephanoeca diplocostata, a tectiform loricate. See (Leadbeater, 2015; Richter and Nitsche, 2016) for descriptions of choanoflagellate groups and their extracellular structures.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (a) An additional two rounds of polyA selection does not result in significant loss of read coverage at the 5’ ends of transcripts. The proportion of transcripts with at least one sequence read mapping at each given distance from their 3’ ends is plotted for two rounds (orange) and four rounds (yellow) of polyA + selection. Also shown is the proportion of total transcripts in the S. rosetta genome at each length (green). There is a difference between the two round and four round coverage beginning at approximately 10,000 bases from the 3’ end of transcripts, but this represents only a very small fraction of total transcripts encoded in the S. rosetta genome. Furthermore, for the four round treatment, 93% of the genes predicted in the S. rosetta genome (green line) are represented in its transcriptome over at least 90% of their length (yellow line). (b) The number of S. rosetta reads mapping either to the S. rosetta ribosomal locus or to the genome of its prey bacterium, A. machipongoensis (neither of which produces polyadenylated transcripts), after either two rounds or for rounds of polyA selection. Four rounds of polyA selection removes roughly an order of magnitude more non-polyadenylated RNA.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (a) The distribution of BLAST percent identities between contigs of different species. On the right, towards 100%, are cross-contaminants occurring on the flow cell due to library index misreading. On the left, around roughly 83%, a broader distribution from conserved homologous sequences. (b) The distribution of BLAST match lengths between contigs of different species. The peak at 150 is due to the minimum contig length of transcriptome assembly. (c) The distribution of read mapping ratios between pairs of contigs that meet the BLAST criteria to be considered putatively cross-contaminated, on a log10 scale. The vast majority of contigs can be easily identified as coming from one species of the pair based on read mapping ratio. (d) The distribution of FPKM values for all contigs in all transcriptome assemblies (after removal of cross-contamination), on a log10 scale.
 
 Using multiple independent metrics, we found that the new choanoflagellate transcriptomes approximate the completeness of choanoflagellate genomes for the purposes of cataloging protein-coding genes. For example, by comparing the S. rosetta genome with its transcriptome, we found that 93% of S. rosetta genes predicted from the genome were represented in its transcriptome with coverage over at least 90% of their length (Figure 1—figure supplement 2a). Furthermore, compared with the genomes of M. brevicollis and S. rosetta, which contain 83 and 89%, respectively, of a benchmark set of conserved eukaryotic genes [BUSCO; (Simão et al., 2015)], each of the new choanoflagellate transcriptomes contains between 88–96% (Supplementary file 2).
 
@@ -44,23 +60,302 @@ We next compared the choanoflagellate gene catalogs with those of diverse animal
 
 By grouping gene families by their phylogenetic distribution on a heat map, we were able to visualize and infer their evolutionary history, as well as their presence or absence in each species analyzed (Figure 2, Figure 2—figure supplement 3, Figure 2—figure supplement 4, Supplementary file 4; Supplementary file 5). Several notable observations emerged from this visualization. First, the origins of animals, choanoflagellates, and choanozoans [the monophyletic group composed of animals and choanoflagellates (Brunet and King, 2017)] were each accompanied by the evolution of distinct sets of gene families (i.e., synapomorphies), some of which likely underpin their unique biological features. Second, the numbers of gene families gained on the animal and choanoflagellate stem lineages are roughly equivalent (~1944 and ~2,463, respectively), indicating that the specific functions of novel gene families, not their quantity, were critical to the very different phenotypes each clade went on to have. Finally, although different sets of gene families can reliably be inferred to have been present in the last common ancestor of each group, gene family loss was rampant during animal and choanoflagellate diversification. [After these analyses were complete, several additional genomes from early-branching holozoans and animals became available. Incorporating them post hoc into the heat map did not substantially change any of the above observations (Figure 2—figure supplement 5; Materials and methods)].
 
-## Differential retention and loss of ancestral gene families in extant animals and choanoflagellates
+![Figure 2.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-v3.jpg)
+
+**Figure 2.:** Top, a consensus phylogeny (Philippe et al., 2009; Burki et al., 2016; Carr et al., 2017) of the species whose gene contents were compared. Each colored node represents the last common ancestor of a group of species. Bottom, a heat map of the 13,358 orthologous gene families inferred to have been present in at least one of six nodes representing common ancestors of interest: Ureukaryote, Uropisthokont, Urholozoan, Urchoanozoan, Urchoanoflagellate, and Urmetazoan (the full heat map for all gene families is shown in Figure 2—figure supplement 4). Each row represents a gene family. Gene families are sorted by their presence in each group of species, indicated by colored bars and boxes (eukaryotes, opisthokonts, holozoans, choanozoans, choanoflagellates and animals) and subsequently clustered within groups by uncentered Pearson correlation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Phylogenetic diversity is calculated as the average cophenetic distance (i.e., along branch lengths) between each pair of species from 49 separate phylogenetic trees constructed for conserved genes (Materilas and methods). The red dot marks the cophenetic distance between the mouse Mus musculus and the sponge Amphimedon queenslandica.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Joint distribution of the number of choanoflagellates and the number of animals in all gene families containing at least one animal and at least one choanoflagellate representative. Most gene families contain a similar number of animals and choanoflagellates, but there are also some gene families with many animals and few choanoflagellates or vice versa; these are candidates to contain false orthologs. (b) The empirical cumulative distribution function (van der Vaart, 1998, p. 265) of all BLAST E values. The x axis represents ordered BLAST E values (in log10, from highest to lowest), and the y axis represents the probability that they were assigned (from 0 to 1). The dashed grey horizontal line indicates an assigned probability of 0.1, corresponding to a BLAST E value between 10−6 and 10−7. (c–d) Network diagrams of BLAST hits among choanoflagellates (green) and animals (purple) and their assigned presence probabilities for two example gene families. Edge width and opacity is inversely proportional to BLAST E value. (c) Gene family 9066, which contains one choanoflagellate and 17 animals. The choanoflagellate protein sequence has high E value hits to only a subset of the other sequences in the cluster, and is assigned a low presence probability. The animal sequences are all connected by low E value hits, resulting in high probabilities. (d) Gene family 5870, which contains 20 choanoflagellates and 15 animals. (e–f) Histograms showing probability distributions. X axis labels reflect the minimum value contained in each bin; for example, in (e), the bin labeled 0 includes values ≥ 0 and <0.05. (e) Probabilities assigned to all BLAST hits, comparing hits between proteins in the same gene families, which are mostly composed of high probability hits with a small proportion of low probability hits that are likely spurious, versus hits to different gene families, which are less likely to represent orthologous relationships and are assigned low probabilities by our procedure. (f) Comparison of probabilities assigned to all BLAST hits within gene families that contain at least 15 choanoflagellates and at least 15 animals, which are likely to be enriched for true orthologs, versus those present in one choanoflagellate and at least 15 animals, which are likely to be enriched for artifactual orthologs. For the first category, probabilities for both choanoflagellate and animal proteins are shown, whereas for the second only choanoflagellate probabilities are plotted.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (a) The average gene presence probability within each major group of species. Filasterea contains only one representative, Capsaspora owczarzaki. (b) The average gene presence probability within each subgroup, used to determine whether a gene family only found in one group was present at the common ancestor of that group; such gene families must pass the 0.1 average probability threshold for at least two subgroups. Outgroups (subgroups: Excavata, Diaphoretickes, Amoebozoa), Choanoflagellates (subgroups: Loricates, Craspedids), Animals (subgroups: Sponges, Ctenophores, Other Animals). Some major groups or subgroups may have distributions that appear jagged because they contain few species. For each group and subgroup, there are (at least) roughly an order of magnitude more gene families with average probability less than 0.1 than any other probability bin, leading us to select 0.1 as the average probability threshold.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** The representation is the same as in Figure 2, with one major difference: gene family origin, indicated on the left, indicates that the average gene family probability within the group is at least 0.1, but does not imply that it was present in the last common ancestor of the group (as is the case in Figure 2).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** There are four additional teretosporeans (Corallochytrium limacisporum, Chromosphaera perkinsii, Ichthyophonus hoferi and Creolimax fragrantissima), two additional sponges (Sycon ciliatum and Tethya wilhelma) and one additional ctenophore (Pleurobrachia bachei). Additional species are in bold and enclosed by dark green boxes. We used the same clustering as in Figure 2 (additional species were given no weight). Previous gene family origin assignments are shown as vertical bars on the left. With the additional species included, there would be 86 gene families newly present in the Urholozoan (red horizontal lines to the left of the heat map), and 37 in the Urmetazoan (purple lines).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** Groups of gene families implicated in animal cell adhesion, cell-cell communication, and transcription regulation, in addition to RNAi components, are shown with the evidence for their presence in animals, choanoflagellates and Capsaspora owczarzaki. Criteria for gene family presences are based on diagnostic protein domain architectures (Supplementary file 6). CSL/Su(H): CBF-1/RBPJ-κ/Suppressor of Hairless/Lag-1.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp7-v3.jpg)
+
+**Figure 2—figure supplement 7.:** These include the pathways for leucine, valine, isoleucine, histidine, lysine, threonine, tryptophan, phenylalanine and methionine, which were all more complete in the Urchoanozoan than in the Urmetazoan. Green: pathway components present in the Urchoanozoan and the Urmetazoan. Purple: pathway components present in the Urchoanozoan but absent from the Urmetazoan.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** Architectures are shown for the proteins within each species that most closely match the animal Notch protein: C. owczarzaki (CAOG_00333), three choanoflagellates, M. brevicollis (26647), S. rosetta (PTSG_03468), M. fluctuans (m.79158), and the sponge A. queenslandica (Aqu1.224719). In the M. brevicollis protein, Stealth (DUF3184) domains are not depicted. In the A. queenslandica protein, the EGF domain variants hEGF and EGF_CA are shown as EGF. Positions of domains in proteins are relative; they reflect ordering, but are not to scale. All protein domains are shown in grey, as they are all of ancient origin. Transmembrane domains are smaller rectangles not labeled with text.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp9-v3.jpg)
+
+**Figure 2—figure supplement 9.:** (a) In the canonical animal TGF-β signaling pathway (in purple), a TGF-β ligand (e.g. BMP, Activin) is cleaved from its TGFb_propeptide (LAP) domain, freeing it to interact with TGF-β receptors. TGF-β receptors form a heterocomplex that leads to the phosphorylation of TGF_beta_GS-containing receptors on their TGF_beta_GS domain. They subsequently phosphorylate SMADs, which translocate to the nucleus in their own oligomeric complexes. (b) Several TGF-β pathway constituent domains evolved on the Urchoanozoan stem lineage (in blue), but none of those domains are found in domain architectures of the animal pathway. (c) Presence of TGF-β constituent domains in animals, choanoflagellates and Capsaspora owczarzaki. The TGFb_propeptide, TGF_beta_GS, MH1 and MH2 domains are found only in choanozoans, and the TGF_beta domain is found only in animals.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp10-v3.jpg)
+
+**Figure 2—figure supplement 10.:** This gene family contains numerous animal sequences but only one choanoflagellate sequence, which was assigned a low probability (0.03) of membership in the gene family based on its high E value blastp hits to other members of the family (see also Figure 2—figure supplement 2c). The tree includes all proteins from gene family 9066 and the most closely-related sequence outside the family for each species. Once these sequences are added, it is clear that the choanoflagellate sequence should not be a member of the gene family (although there are two animal sequences that should have been included). The ‘Other’ group is all species that are neither choanoflagellates nor animals. The tree is unrooted. Branches with bootstrap support values below 50% were removed; support for other nodes of interest is indicated. Scale bar represents one substitution/site.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp11-v3.jpg)
+
+**Figure 2—figure supplement 11.:** For each gene family containing one or more proteins annotated with at least one domain, the distribution of the proportion of the proteins in the gene family annotated with each domain. We used this distribution to produce a threshold for a true vs. ‘noise’ domain annotation of the family.
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig2-figsupp12-v3.jpg)
+
+**Figure 2—figure supplement 12.:** The trees are unrooted. Branches with bootstrap support values below 50% were removed; support for other nodes of interest is indicated. Scale bars represent one substitution/site. Evidence levels match those defined in Supplementary File 6. (a) All proteins in our data set that contain a Notch domain. The ‘Other’ group is all species that are neither choanoflagellates nor animals. Proteins with strongly conserved domain architecture (black) were found in either one animal-specific or one choanoflagellate-specific clade, both with partial support. Both NOD and NODP are present in most, but not all, animal proteins with strongly conserved domain architecture. (b) All proteins in our data set that contain a DSL domain. Choanoflagellate proteins form a partially supported sister group to animal proteins.
+
+### Differential retention and loss of ancestral gene families in extant animals and choanoflagellates
 
 While the phenomenon of gene loss has been well documented in the evolution of animals and other eukaryotes (Wolf and Koonin, 2013; Albalat and Cañestro, 2016; O'Malley et al., 2016), it has been unclear which extant animals retained the most gene families from the Urmetazoan. Using the Urchoanozoan and Urmetazoan gene family catalogs reconstructed in this study, we ranked extant species based on their conservation of ancestral gene families (Figure 3, Figure 3—figure supplement 1). Compared with other animals in our study, the cephalochordate Branchiostoma floridae retains the most gene families that evolved along the animal stem lineage and also the most gene families with pre-choanozoan ancestry [extending prior observations that B. floridae preserved a comparatively large portion of the gene content of the last common ancestor of chordates (Louis et al., 2012)]. Among the non-bilaterian animal lineages, the cnidarian Nematostella vectensis most completely retains the Urmetazoan genetic toolkit [consistent with previous findings of conservation between N. vectensis and bilaterians (Putnam et al., 2007; Sullivan and Finnerty, 2007)], followed by the sponge Oscarella pearsei. Importantly, B. floridae, N. vectensis, and O. pearsei each retain different subsets of the Urmetazoan gene catalog, as only two thirds (67%) of the genes retained in any one of these species are found in all three species. In contrast, the more rapidly evolving ecdysozoans C. elegans, Pristionchus pacificus and Tetranychus urticae, as well as the ctenophore Mnemiopsis leidyi, retain the fewest ancestral gene families, suggesting widespread gene family loss in these lineages, although the draft nature of some of their genome assemblies and high rates of sequence evolution may artificially inflate counts of missing genes.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig3-v3.jpg)
+
+**Figure 3.:** (a) Consensus phylogenetic tree (Philippe et al., 2009; Burki et al., 2016; Carr et al., 2017) with gene family retention. Gene families are divided by their origin in the last common ancestor in different groups: holozoan, choanozoan, choanoflagellate, or animal. Colors correspond to nodes indicated in the phylogenetic tree. Bars represent the sum of presence probabilities for gene families with each origin. (Note that a small sum of probabilities is assigned to certain species of choanoflagellates for animal-specific gene families, and vice versa. This is an expected result, as, in our method, every gene family is assigned a finite probability of presence in every species, producing a small background signal when summed over the approximately two thousand animal- or choanoflagellate-specific gene families. Variation in this background signal across species is due to species-specific effects on BLAST scores arising from database size and other factors, as well as intrinsically noisy scores assigned to weak BLAST hits.) (b–c) Ranked order of gene family retention for (b) animals and (c) choanoflagellates, similar to (a), but with the addition of gene families originating in the last common ancestor of Opisthokonts and of eukaryotes. Gene families originating within choanoflagellates are not included, in order to focus only on those gene families potentially shared with animals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Gene families are divided by their origin in the last common ancestor in different groups: eukaryotic, opisthokont, holozoan, choanozoan, choanoflagellate, or animal. Colors correspond to nodes indicated in the phylogenetic tree. Bars represent the sum of presence probabilities for gene families with each origin.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** A phylogenetic tree of choanoflagellates with inferred losses of Argonaute (blue) and Dicer (red). For each species with moderate evidence for either Argonaute or Dicer, the expression level of that gene is shown as a percentile FPKM rank within each species. Species lacking a gene have no expression value. Overall, there have been multiple losses of both Argonaute and Dicer, and RNAi machinery appears to be entirely absent in the clade containing the two previously sequenced species, Monosiga brevicollis and Salpingoeca rosetta. In the species with Argonaute, it is highly expressed, and Dicer always shows a lower relative expression level.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Out of a total of ~1944 gene families that evolved on the animal stem lineage, the cumulative count that are missing for increasing numbers of animal species. On the x axis, the number of animal species missing, and on the y axis, the count of gene families lost in that many or fewer species. There are 39 ‘core’ animal-specific gene families present in all animals in our data set, although there are also numerous gene families missing only in 1, 2 or three animals.
+
 Of the 21 choanoflagellates in our analysis, S. dolichothecata [which, despite the shared genus name, is not closely related to S. rosetta (Carr et al., 2017)] retains the most choanozoan-specific gene families, and therefore may be relatively more informative for comparative genomic studies of animal origins than other choanoflagellate species (Figure 3, Figure 3—figure supplement 1). Notably, the two choanoflagellate species with previously-sequenced genomes, M. brevicollis and S. rosetta, are among the choanoflagellates that have retained the fewest ancestral gene families. Thus, they are less representative of Urchoanoflagellate gene content than are most choanoflagellate species we sequenced. Indeed, several key gene families that were previously thought to be absent from choanoflagellates (due to their absence in M. brevicollis and S. rosetta) are conserved in S. dolichothecata and other choanoflagellates: the ancient ribonucleases Argonaute and Dicer, which are required for RNAi across eukaryotes (Jinek and Doudna, 2009), and holozoan gene families previously found in C. owczarzaki that are important for the regulation of animal development, including the transcription factors Churchill and Runx (Sebé-Pedrós et al., 2011) and a diagnostic domain for integrin β (Sebé-Pedrós et al., 2010) (Figure 2—figure supplement 6, Figure 3—figure supplement 2, Supplementary file 6, Materials and methods). These findings of lineage-specific gene family loss in certain animals, M. brevicollis and S. rosetta echo the more general observation that the criteria used to select species for genome sequencing also frequently select for those with streamlined genomes [e.g., (Gu et al., 2005)].
 
-## Animal-specific gene families: innovation and loss
+### Animal-specific gene families: innovation and loss
 
 Gene families that originated on the stem lineage leading to animals are more likely to function in pathways or processes that distinguish animals from other eukaryotic groups. We identified ~1944 such animal-specific gene families (Supplementary file 5), including well-known developmental receptors, signaling proteins and transcription factors such as TGF-β, Hedgehog, Pax and Sox [consistent with previous reports (Srivastava et al., 2010; Riesgo et al., 2014)]. Notably, we detected many animal-specific gene families with no known function; 203 gene families (12% of total) lack any Pfam domain, and a further 50 (3%) are annotated only with Pfam domains of unknown function. The biochemical activities of these uncharacterized animal-specific gene families remain to be discovered, along with their roles in animal development and evolution.
 
 We next sought to characterize the extent to which the ~1944 gene families that originated on the animal stem lineage were subsequently retained in the 21 animal genomes we analyzed (Table 1). We found only 39 gene families that are universally conserved in all 21 animal genomes in our study; we refer to these as core animal-specific gene families. This count of core animal-specific gene families is likely to be an underestimate due to methodological tradeoffs in the genome-scale analysis that we used to identify gene families (see Materials and methods). By reducing the stringency of the requirement for conservation, we identified a total of 153 gene families that were missing in no more than two animals from our data set (i.e., approximately 10%; Figure 3—figure supplement 3), leaving ~1791 gene families that, despite being specific to animals, were lost in three or more extant lineages. In addition, recent studies in organisms not included in our genomic data set – myxozoans, a parasitic lineage of cnidarians, and glass sponges, which develop into syncytial larvae and adults – indicate that even among the 39 core animal-specific genes, some appear to be dispensable in animals with dramatically derived body plans (Chang et al., 2015; Schenkelaars et al., 2017).
 
+**Table 1.**
+ Core animal-specific gene families that are present in all animals in this studyRepresentative gene names and annotations are based on a consensus from each gene family (Materials and methods). Gene families are ordered by pathway/function. *: missing in myxozoans, a lineage of parasitic cnidarians (Chang et al., 2015), ** missing in myxozoans and in glass sponges (Schenkelaars et al., 2017), two animal lineages with derived body plans.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene family ID</th>
+      <th>Representative gene name(s)</th>
+      <th>Pathway/Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6201</td>
+      <td>A-kinase anchor protein 17B</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>8693</td>
+      <td>interleukin enhancer-binding factor 2</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>5720</td>
+      <td>lethal(2) giant larvae</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>5290</td>
+      <td>mediator subunit</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>6241</td>
+      <td>mediator subunit</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>7805</td>
+      <td>MEX3 B/C</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>6675</td>
+      <td>nuclear factor 1 A/B</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>3849</td>
+      <td>T-box transcription factor TBX 2/3</td>
+      <td>gene regulation</td>
+    </tr>
+    <tr>
+      <td>6532</td>
+      <td>catenin beta</td>
+      <td>Wnt</td>
+    </tr>
+    <tr>
+      <td>4891</td>
+      <td>catenin delta</td>
+      <td>Wnt</td>
+    </tr>
+    <tr>
+      <td>6254</td>
+      <td>dishevelled 1–3</td>
+      <td>Wnt**</td>
+    </tr>
+    <tr>
+      <td>3570</td>
+      <td>frizzled 1/2/5/7/8</td>
+      <td>Wnt*</td>
+    </tr>
+    <tr>
+      <td>441</td>
+      <td>low-density lipoprotein receptor (LRP) 1/2/4/5/6</td>
+      <td>Wnt*</td>
+    </tr>
+    <tr>
+      <td>5637</td>
+      <td>transcription factor 7 (TCF/LEF)</td>
+      <td>Wnt</td>
+    </tr>
+    <tr>
+      <td>6000</td>
+      <td>transcription factor COE 1–4</td>
+      <td>Wnt</td>
+    </tr>
+    <tr>
+      <td>6831</td>
+      <td>fermitin 1–3</td>
+      <td>cell-cell adhesion</td>
+    </tr>
+    <tr>
+      <td>804</td>
+      <td>hemicentin/obscurin/titin</td>
+      <td>cell-cell adhesion</td>
+    </tr>
+    <tr>
+      <td>4442</td>
+      <td>integrin alpha 2/5/8</td>
+      <td>cell-cell adhesion</td>
+    </tr>
+    <tr>
+      <td>7164</td>
+      <td>laminin gamma 1–3</td>
+      <td>cell-cell adhesion</td>
+    </tr>
+    <tr>
+      <td>8024</td>
+      <td>vinculin</td>
+      <td>cell-cell adhesion</td>
+    </tr>
+    <tr>
+      <td>4993</td>
+      <td>calcium-dependent secretion activator</td>
+      <td>synapse/vesicle</td>
+    </tr>
+    <tr>
+      <td>476</td>
+      <td>metabotropic glutamate receptor 1–8</td>
+      <td>synapse/vesicle</td>
+    </tr>
+    <tr>
+      <td>7929</td>
+      <td>receptor-type tyrosine-protein phosphatase-like N</td>
+      <td>synapse/vesicle</td>
+    </tr>
+    <tr>
+      <td>8406</td>
+      <td>kinase suppressor of Ras 2</td>
+      <td>MAPK/JNK</td>
+    </tr>
+    <tr>
+      <td>7174</td>
+      <td>MAPK 7</td>
+      <td>MAPK/JNK</td>
+    </tr>
+    <tr>
+      <td>6010</td>
+      <td>MAPK 8–10</td>
+      <td>MAPK/JNK</td>
+    </tr>
+    <tr>
+      <td>495</td>
+      <td>disintegrin and metalloprotease (ADAM)</td>
+      <td>metalloprotease</td>
+    </tr>
+    <tr>
+      <td>4051</td>
+      <td>tetraspanin 5/14/17/33</td>
+      <td>metalloprotease</td>
+    </tr>
+    <tr>
+      <td>2737</td>
+      <td>caspase 3/7/9</td>
+      <td>apoptosis</td>
+    </tr>
+    <tr>
+      <td>5675</td>
+      <td>calumenin</td>
+      <td>calcium ion</td>
+    </tr>
+    <tr>
+      <td>6842</td>
+      <td>cyclin T 1/2</td>
+      <td>cell cycle</td>
+    </tr>
+    <tr>
+      <td>621</td>
+      <td>dystonin/desmoplakin/plectin</td>
+      <td>cytoskeleton</td>
+    </tr>
+    <tr>
+      <td>7916</td>
+      <td>phosphorylase b kinase</td>
+      <td>glycan</td>
+    </tr>
+    <tr>
+      <td>6512</td>
+      <td>heparan-sulfate 6-O-sulfotransferase 1–3</td>
+      <td>heparan sulfate</td>
+    </tr>
+    <tr>
+      <td>7146</td>
+      <td>inositol monophosphatase 3</td>
+      <td>inositol</td>
+    </tr>
+    <tr>
+      <td>6163</td>
+      <td>protein kinase C iota/zeta</td>
+      <td>PI3K</td>
+    </tr>
+    <tr>
+      <td>6251</td>
+      <td>small G protein signaling modulator 1–2</td>
+      <td>Rab GTP</td>
+    </tr>
+    <tr>
+      <td>6366</td>
+      <td>MAP kinase-activating death domain protein 9–11</td>
+      <td>TNF</td>
+    </tr>
+    <tr>
+      <td>8587</td>
+      <td>BTB/POZ domain-containing protein 9</td>
+      <td>ubiquitin</td>
+    </tr>
+  </tbody>
+</table>
+
 Focusing on the 39 core animal-specific gene families, we asked whether they might participate in pathways known to be critical for animal biology. Indeed, this set of genes includes seven from the Wnt pathway (including Frizzled, Dishevelled, TCF/LEF and β-catenin), five involved in cell-cell adhesion (including integrin α, laminin, and vinculin), and other well-known animal gene families such as JNK, caspases, and metabotropic glutamate receptors. The 39 core animal gene families also include several that are less well characterized or whose specific contributions to animal origins and animal biology are not immediately obvious, such as two subunits of the transcription-regulating Mediator complex (Malik and Roeder, 2010) and the ubiquitination-associated BTB/POZ domain-containing protein 9 (DeAndrade et al., 2012). For comparison, choanoflagellates have a similarly small set of 75 gene families (out of ~2463 choanoflagellate-specific gene families) that are conserved in all 21 choanoflagellate species that we sampled; 27% of these gene families encode Pfam domains related to kinase signaling (including protein kinases, phosphatases and adapters; Supplementary file 7).
 
 While novel features of animal biology might have evolved with the emergence of new gene families, the loss of ancient genes also influenced animal origins. We detected ~1645 gene families that evolved prior to the choanoflagellate-animal divergence that were retained in choanoflagellates and lost entirely from animals. These include gene families in pathways necessary for the biosynthesis of the amino acids leucine, isoleucine, valine, methionine, histidine, lysine and threonine (Figure 2—figure supplement 7, Supplementary file 8). The shikimic acid pathway, which is required for the synthesis of the aromatic amino acids tryptophan and phenylalanine, and other aromatic compounds, was also lost along the animal stem lineage [although subsequently regained in cnidarians through horizontal gene transfer from bacteria (Fitzgerald and Szmant, 1997; Starcevic et al., 2008)]. We thus demonstrate that components of the biosynthesis pathways for nine amino acids that are essential in animals (Payne and Loomis, 2006; Guedes et al., 2011) were lost on the animal stem lineage, and not prior to the divergence of choanoflagellates and animals. The SLN1 two-component osmosensing system, which has been shown in fungi to regulate acclimation to changes in environmental salinity (Posas et al., 1996), is also conserved in choanoflagellates but absent in animals. [Although these amino acid synthesis and osmosensing pathway components were retained in choanoflagellates, several other gene families involved in diverse biosynthetic pathways were instead lost on the choanoflagellate stem lineage (Supplementary file 9)]. Together, the ensemble of animal gene family losses reflects the substantial changes in metabolism and ecology that likely occurred during early animal evolution.
 
-## Choanozoan-specific gene families: innovation and loss
+### Choanozoan-specific gene families: innovation and loss
 
 In addition to the set of gene families that evolved on the animal stem lineage, those that originated on the holozoan and choanozoan stem lineages also contributed to the genomic heritage of animals. Our increased sampling of choanoflagellate diversity allowed us to ask whether gene families previously thought to have been animal innovations, due to their absence from M. brevicollis, S. rosetta and other outgroups, may in fact have evolved before the divergence of animals and choanoflagellates. We found that ~372 gene families previously thought to be restricted to animals have homologs in one or more of the 19 newly sequenced choanoflagellates (Supplementary file 5; see Supplementary file 10 for a list of pathways with components gained or lost on the Choanozoan stem lineage).
 
@@ -68,11 +363,23 @@ Within this set of genes are the Notch receptor and its ligand Delta/Serrate/Jag
 
 We also found evidence that numerous gene families and pathways that originated in animals arose through shuffling of more ancient protein domains and genes that were already present in the Urchoanozoan (Ekman et al., 2007; King et al., 2008; Grau-Bové et al., 2017). For example, the new choanoflagellate gene catalogs confirm that several signature animal signaling pathways, such as Hedgehog, Wnt, JNK, JAK-STAT, and Hippo, are composed of a mixture of gene families that were present in the Urchoanozoan and others that evolved later on the animal stem lineage or within animals (Snell et al., 2006; Adamska et al., 2007; Hausmann et al., 2009; Richards and Degnan, 2009; Srivastava et al., 2010; Sebé-Pedrós et al., 2012; Babonis and Martindale, 2017) (Supplementary file 8). For another animal signaling pathway, TGF-β, the critical ligand, receptor and transcription factor gene families are composed of animal-specific domain architectures (Heldin et al., 1997; Munger et al., 1997), although all three contain constituent protein domains that evolved on the choanozoan stem lineage (Figure 2—figure supplement 9).
 
-## The pre-animal origins of the animal innate immunity pathway
+### The pre-animal origins of the animal innate immunity pathway
 
 One surprise from our analyses was the existence in choanoflagellates of genes required for innate immunity in animals. Although innate immunity is a feature of both animal and plant biology, the receptors and pathways used by these evolutionarily distant organisms are thought to have evolved independently (Ausubel, 2005). The animal immune response is initiated, in part, when potential pathogens stimulate (either directly or indirectly) the Toll-like receptors (TLRs), which have previously been detected only in animals (Leulier and Lemaitre, 2008). Importantly, although TLRs are found in nearly all bilaterians and cnidarians, they are absent from placozoans, ctenophores, and sponges [proteins with similar, but incomplete domain architectures have been detected in sponges (Miller et al., 2007; Riesgo et al., 2014)] and were therefore thought to have evolved after the origin of animals.
 
 We found that 14 of 21 sequenced choanoflagellates encode clear homologs of animal TLRs (Figure 4a,c), implying that TLRs first evolved on the Urchoanozoan stem lineage (Materials and methods). Animal and choanoflagellate TLRs are composed of an N-terminal signal peptide, multiple leucine rich repeat (LRR) domains, a transmembrane domain, and an intracellular Toll/interleukin-1 receptor/resistance (TIR) domain. In the canonical TLR signaling pathway, the interaction of the intracellular TIR domain of Toll-like receptors with TIR domains on adapter proteins (e.g., MyD88) initiates one of a number of potential downstream signaling cascades that ultimately lead to activation of the NF-κB transcription factor (Janeway and Medzhitov, 2002).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig4-v3.jpg)
+
+**Figure 4.:** Components of the canonical TLR pathway (a) and a potential choanoflagellate Kinase TLR signaling pathway (b), with their canonical domain architectures and colored by their inferred ancestral origin (blue = choanozoan ancestry, purple = metazoan ancestry, green = choanoflagellate ancestry, and red = holozoan ancestry). Question marks denote steps of the signaling pathway and/or interaction partners that are hypothesized, but untested. (c) Presence of receptors, adapters, kinases and the transcription factor NF-κB in animals, choanoflagellates and C. owczarzaki.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Only a portion of the alignment, surrounding the glutamic acid residue that is necessary but not sufficient for SARM1 function (position 642, magenta box), is depicted. The Homo sapiens SARM1 protein, which was not part of our data set of gene families, but which we included in the alignment, is shown at the top. Choanoflagellate sequences are surrounded by a green box. Positions at the top are given with respect to the human SARM1 protein. Each species is listed with its identifier followed by the length of the protein that was used to build the full alignment.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/34226/elife-34226-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** The tree is unrooted. Branches with bootstrap support values below 50% were removed. Branch lengths are not shown, for ease of interpretation. Protein domain architecture is not given in order. The ‘Other’ group is all species that are neither animals, choanoflagellates or plants. The tree is largely unresolved, but plant and choanozoan proteins encoding a transmembrane, LRR and TIR domain (dark blue) are never found together in the same resolved clade, supporting their distinct evolutionary histories. ‘Kinase TLRs’ (LRR, transmembrane, Pkinase, TIR; dark red) and ‘Kinase TIRs’ (no transmembrane, Pkinase, TIR; light red) are only found in choanoflagellates.
 
 To investigate whether the Urchoanozoan TLR might have activated a downstream signaling pathway that resembled the canonical TLR pathway in animals, we searched for TLR adapters, downstream kinases and NF-κB in choanoflagellates (Figure 4c, Supplementary file 6). While many choanoflagellates encode NF-κB, we found no evidence for two critical Death domain-containing proteins involved in the TLR-dependent activation of NF-κB: the adapter protein MyD88 (Wiens et al., 2005; Gauthier et al., 2010) and the downstream kinase IRAK (Song et al., 2012). However, we did detect two new classes of choanoflagellate-specific proteins that pair kinase domains directly with LRR and/or TIR domains, potentially bypassing the need to recruit kinases into multi-protein signaling complexes (Figure 4b): TLR-like proteins with an intracellular kinase domain positioned between the transmembrane domain and TIR domain (which we provisionally term ‘Kinase TLRs’) and proteins encoding TIR and kinase domains, but lacking a transmembrane domain (which we provisionally term ‘Kinase TIRs’). In addition, we detected homologs of the TIR-containing adapter SARM1, a multi-functional protein that can trigger both NF-κB-dependent and NF-κB-independent responses (Couillault et al., 2004; Sethman and Hawiger, 2013; Liu et al., 2014). Choanoflagellate SARM1 homologs contain a conserved glutamic acid residue that is necessary for SARM1 NADase activity in animals (Essuman et al., 2017) (Figure 4—figure supplement 1). Finally, although we did not detect most animal cytosolic innate immune sensors in choanoflagellates, including the LRR-containing NLR family, ALRs, MAVS, MDA5 and RIG-I, we did find evidence for both cGAS and STING in diverse choanoflagellates [as previously reported in M. brevicollis (Wu et al., 2014)]. Thus, critical components of the animal innate immune pathway, including both extracellular and intracellular pattern sensing receptors, predate animal origins.
 
@@ -88,7 +395,7 @@ Our study provides a detailed view of the changes in gene content that laid the 
 
 The sections on Quality trimming, Error correction, De novo transcriptome assembly, Identification and removal of cross-contamination, Prediction of amino acid sequences from assembled transcripts and elimination of redundant transcripts, and Measurement of expression levels and elimination of noise transcripts were described in (Peña et al., 2016). They are repeated here for convenience and clarity (with modifications to the text but not to the underlying methods).
 
-## Origin of cultures
+### Origin of cultures
 
 We acquired 18 of 20 cultures used for transcriptome sequencing from external sources (Supplementary file 1). We isolated the remaining two cultures, Acanthoeca spectabilis (Virginia) ATCC PRA-387 and Codosiga hollandica ATCC PRA-388. (A. spectabilis (Virginia) is a different isolate from A. spectabilis ATCC PRA-103, which was originally collected in Australia.) We collected the water sample from which A. spectabilis (Virginia) was isolated on December 19, 2007 near Hog Island, Virginia (GPS coordinates: 37.472502,–75.816018) and we isolated C. hollandica from a sample collected on June 25, 2008 from Madeira, Portugal (GPS coordinates: 32.762222,–17.125833). C. hollandica was formally described in Carr et al. (2017).
 
@@ -96,7 +403,7 @@ We isolated choanoflagellates with a micromanipulator and a manual microinjector
 
 One culture we obtained from ATCC, Salpingoeca infusionum, was contaminated by an unidentified biflagellated unicellular eukaryote. To remove the contaminant from the culture, we counted then diluted cells into separate wells of two 24-well plates. After 7 days of growth, we found 4 of 48 wells containing only S. infusionum and bacteria, one well containing only the contaminant and bacteria, and the remaining 43 wells containing only bacteria. We selected one of the four wells containing only S. infusionum for use in transcriptome sequencing.
 
-## Antibiotic treatment and optimization of culture conditions
+### Antibiotic treatment and optimization of culture conditions
 
 Choanoflagellates are co-isolated with diverse bacterial prey, which serve as a food source. In order to limit bacterial diversity to the species that led to optimal choanoflagellate growth, we treated each culture with a panel of ten different antibiotics (Supplementary file 11). We obtained all antibiotics from Thermo Fisher Scientific (Waltham, Massachusetts, United States) with the exception of erythromycin, gentamicin, ofloxacin, and polymyxin B (Sigma-Aldrich, St. Louis, Missouri, United States). We sterilized antibiotic solutions before use by filtration through a 0.22 µm syringe filter (Thermo Fisher Scientific) in a laminar flow hood. We initially treated each culture with all ten antibiotics. We selected initial treatments that decreased bacterial density and diversity, and then repeatedly diluted the cultures into fresh medium with the same antibiotic until no further change in bacterial density or diversity was observed. We then re-treated each of these cultures with an additional test of all ten antibiotics, as their modified bacterial communities often responded differently from their initial communities. We repeated successive rounds of treatment until no further reduction in bacterial density or diversity was observed (Supplementary file 1).
 
@@ -104,7 +411,7 @@ We tested a range of concentrations of different temperatures and growth media (
 
 We selected final culture conditions that maximized choanoflagellate density and variety of cell types present, as we hypothesized that different cell types, each potentially expressing different subsets of genes, would yield the greatest diversity of transcripts for sequencing. We defined five generic choanoflagellate cell types: ‘attached’: attached to the bottom of the culture vessel or to a piece of floating debris, either directly, within a theca, within a lorica, or on a stalk; ‘slow swimmer’: a typical swimming cell; ‘fast swimmer’: a cell with reduced collar length swimming at higher speed; ‘free-swimming colonial’: in a colony swimming in the water column; ‘attached colonial’: in a colony attached to a stalk; ‘passively suspended’: suspended in the water column, either naked or within a lorica. See (Dayel et al., 2011; Carr et al., 2017) for further information on choanoflagellate cell types and (Leadbeater, 2015; Richter and Nitsche, 2016) for descriptions of extracellular structures (thecae, loricae, etc.).
 
-## Growth of cultures in large batches in preparation for RNA isolation
+### Growth of cultures in large batches in preparation for RNA isolation
 
 We routinely grew choanoflagellates in 25 cm2 angled neck cell culture flasks with 0.2 µm vented caps (Corning Life Sciences, Corning, New York, United States) containing 25 ml of medium. We performed all cell culture work in a laminar flow hood. To reduce the possibility of cross-contamination among samples in the hood, we dispensed media into growth vessels prior to the introduction of cultures, we only worked with a single culture at a time, and we cleaned thoroughly with 70% ethanol before and after introducing cultures. To grow and collect large amounts of cells for RNA preparation, we used different growth vessels, volumes, growth durations and centrifugation times as appropriate to each culture (Supplementary file 1). Vessels included long neck Pyrex glass culture flasks (Corning), 150 mm plastic tissue culture dishes (Becton Dickinson), and 75 cm2 angled neck cell culture flasks with 0.2 µm vented caps (Corning).
 
@@ -112,7 +419,7 @@ We harvested cultures depending on the cell types present (Supplementary file 1)
 
 We pelleted cells in 50 ml conical tubes at 3220 x g in a refrigerated centrifuge at 4°C, removed the first 47.5 ml of supernatant by pipetting, and the last 2.5 ml by aspiration. When we harvested more than 50 ml for a culture, we spun in separate tubes, removed all but 2.5 ml of supernatant, resuspended, combined into a single 50 ml conical tube, and repeated the centrifugation as above. We flash froze pellets in liquid nitrogen and stored them at −80°C. To reduce the possibility of cross-contamination, we harvested and centrifuged each culture separately, we used disposable plastic pipette tubes, conical tubes, and cell scrapers, and we cleaned all other material (bench tops, pipettes, etc.) with ELIMINase (Decon Laboratories, King of Prussia, Pennsylvania, United States) between cultures.
 
-## RNA isolation
+### RNA isolation
 
 We isolated total RNA from cell pellets with the RNAqueous kit (Ambion, Thermo Fisher Scientific). We modified the manufacturer’s protocol to double the amount of lysis buffer, in order to increase RNA yield and decrease degradation. We performed both optional steps after adding lysis buffer: we spun for 3 min at top speed at 1°C and passed the supernatant through a 25 gauge syringe needle several times. We used the minimum suggested volumes in the two elution steps (40 and 10 µl). We measured RNA concentration using a NanoDrop ND-1000 spectrophotometer (Thermo Fisher Scientific).
 
@@ -120,7 +427,7 @@ For all species except C. hollandica, we immediately proceeded to digest genomic
 
 We evaluated total RNA on Bioanalyzer 2100 RNA Pico chips (Agilent Technologies, Santa Clara, California, United States) with four criteria to be considered high-quality: (1) four distinct ribosomal RNA peaks (16S and 23S for bacteria, 18S and 28S for choanoflagellates), (2) low signal in all other regions, as a non-ribosomal signal is evidence of degradation, (3) at least a 1:1 ratio of 28S ribosomal area to 18S ribosomal area, since 28S ribosomal RNA is likely to degrade more easily than is 18S ribosomal RNA, and (4) an RNA Integrity Number (RIN) of 7 or greater (Schroeder et al., 2006). (We note that the Bioanalyzer software could not calculate RIN for several cultures.) If we were not able to obtain high-quality total RNA after the first attempt for any culture, we repeated cell growth, centrifugation and total RNA isolation up to a maximum of 5 times, and selected the best available total RNA sample to use for transcriptome sequencing. We produced a rough estimate of the amount of choanoflagellate total RNA present in each sample by calculating the ratio of choanoflagellate to bacterial ribosomal RNA peaks (18S vs. 16S and 28S vs. 23S) and multiplying the resulting fraction by the total amount of RNA present in the sample (Supplementary file 1).
 
-## Test of polyA selection to separate choanoflagellate from bacterial RNA
+### Test of polyA selection to separate choanoflagellate from bacterial RNA
 
 The standard library preparation protocol for Illumina mRNA sequencing used poly-dT beads to separate polyadenylated mRNA from other types of non-polyadenylated RNA such as rRNA and tRNA. For choanoflagellates, the bead selection step also served to separate choanoflagellate mRNA from bacterial RNA (which is not polyadenylated). Because the amount of bacterial RNA isolated from a culture often exceeded the amount of choanoflagellate RNA by one to several orders of magnitude, we reasoned that the standard bead selection might not be sufficient. We tested this hypothesis on S. rosetta Px1, a culture grown with a single species of bacterium, Algoriphagus machipongonensis. Because both species have sequenced genomes (Alegado et al., 2011; Fairclough et al., 2013), we could identify the origin of sequenced RNA using a straightforward read mapping procedure. We cultivated S. rosetta Px1 cells as described previously (Fairclough et al., 2010). We scraped and harvested 50 ml of culture after three days of growth in a 150 ml tissue culture dish. We performed centrifugation (with a 10 min spin), RNA isolation, DNase digestion and total RNA quality assessment as described above.
 
@@ -132,55 +439,55 @@ The four-round method removed roughly an order of magnitude more non-polyadenyla
 
 Given the superior ability of four rounds of polyA selection to remove contaminating bacterial RNA with little to no loss of transcript coverage, we adopted this methodology for subsequent transcriptome sequencing. The raw sequence reads for this experiment are available at the NCBI Short Read Archive with the BioProject identifier PRJNA420352.
 
-## Library preparation and mRNA sequencing
+### Library preparation and mRNA sequencing
 
 We began the Illumina TruSeq v2 mRNA library preparation protocol with approximately 2 µg of total RNA per culture, if available (Supplementary file 1). We performed four rounds of polyA selection (instead of the standard two) and introduced two further modifications to the standard protocol: first, we repeated the Agencourt AMPure XP (Beckman Coulter, Indianapolis, Indiana, United States) bead clean-up step to enhance adapter removal, and second, we used 1.5 µl less volume in all bead elution steps, in order to reduce loss during the protocol. We prepared libraries from 5 RNA samples at a time, and the libraries were later multiplexed into groups of 6 or seven per sequencing lane. To allow us to detect evidence of potential cross-contamination during either process, we ensured that the groupings for sample preparation and sequencing were distinct (Supplementary file 1).
 
 We estimated library concentration using the Qubit dsDNA HS Assay (Thermo Fisher Scientific) and determined quality and fragment size distribution with a Bioanalyzer 2100 High Sensitivity DNA chip (Agilent). We quantified libraries by qPCR (Kapa Biosystems, Sigma-Aldrich) and sequenced them on an Illumina HiSeq 2000 at the Vincent J. Coates Genomics Sequencing Laboratory at the California Institute for Quantitative Biosciences (Berkeley, California, United States). One group of libraries was sequenced twice (consisting of A. spectabilis, Diaphanoeca grandis, Helgoeca nana, S. helianthica, S. infusionum and Salpingoeca urceolata) due to a drop-off in quality after base 50 on the forward read of sequencing pairs; quality scores up to base 50 on the forward read and on reverse reads were not affected. The second, repeat sequencing run did not experience this issue. We incorporated both sequencing runs for affected libraries into subsequent analyses (including Quality trimming and Error correction, see below). We produced between 23 million and 61 million paired-end 100 bp sequencing reads per library (Supplementary file 1). Raw sequence reads are available at the NCBI Short Read Archive with the BioProject identifier PRJNA419411 (accession numbers for each species are listed in Supplementary file 1).
 
-## Quality trimming
+### Quality trimming
 
 We trimmed sequence reads using Trimmomatic version 0.30 (Lohse et al., 2012) with two separate filters: (1) removal of TruSeq adapter sequence and (2) trimming very low quality bases from the ends of each read. To implement these filters, we ran Trimmomatic in three phases. In the first phase, we clipped palindromic adapters using the directive ILLUMINACLIP:2:40:15 and discarded resulting reads shorter than 25 bases with MINLEN:25. This resulted in two data sets: one containing reads whose mate pair remained in the set, and the other composed of reads whose pair was removed due to adapter contamination. In the second phase, we clipped simple adapters from the remaining paired data set using the directive ILLUMINACLIP:2:40:15, imposed a minimum Phred-like quality cutoff of 5 on the first ten and last ten bases using LEADING:5 and TRAILING:5, subjected the read to a minimum sliding window quality using SLIDINGWINDOW:8:5 and discarded resulting reads shorter than 25 bases with MINLEN:25. The third phase operated on the remaining unpaired reads from the first phase, and implemented the same directives as the second phase. We used a permissive minimum quality of 5 in order to remove very low quality bases, as these might interfere with read error correction in the subsequent processing step. We discarded reads less than 25 in length because they were shorter than the k-mer size of the Trinity assembler (see De novo transcriptome assembly below). In all adapter clipping operations, we used sequences appropriate to the index used for multiplexed sequencing. The number of sequence reads and total bases remaining after trimming for each library are given in Supplementary file 1.
 
-## Error correction
+### Error correction
 
 We performed error correction on trimmed reads using Reptile v1.1 (Yang et al., 2010) following the authors’ instructions, with the modifications described below. We began by using the ‘fastq-converter.pl’ script to convert from FASTQ and to discard reads with more than one ambiguous character ‘N’ in any window of 13 bases. For reads with one ‘N’, we chose the character ‘a’ as the substitute for ‘N’, as all of the characters in our input reads were in upper case (A, C, G, or T); thus, we could later recognize ‘N’ bases converted in this step. Next, we tuned parameters using the ‘seq-analy’ utility following the authors’ instructions, in four steps: (1) Running ‘seq-analy’ with default settings. (2) Adjusting the input settings to ‘seq-analy’ using the results from step 1. For all species, we set MaxBadQPerKmer to eight and KmerLen to 25 (to match the k-mer length used in Trinity). (3) Re-running ‘seq-analy’ using the adjusted input settings. (4) Creating the input settings to ‘Reptile’ based on the output of step 3. We set KmerLen to 13 and step to 12 for all species. The values of QThreshold, T_expGoodCnt, T_card and Qlb differed by species (Supplementary file 1). All other parameters were left at their defaults to run Reptile.
 
 We noticed that the locations within reads of errors identified by Reptile fell into two general classes: sporadic errors not located adjacent to any other error, and clustered errors, in which several adjacent bases within the same k-mer window were identified as errors. In some extreme cases, every single base within a sequence read was identified as a target for error correction; we observed this phenomenon in the set of read corrections for every species. We reasoned that this was an unintended consequence of the iteration-to-exhaustion approach (step 2d) of the Reptile algorithm. Therefore, we designed a method to correct sporadic errors, but not clustered errors. For each species, we began by grouping each read according to the total number of errors identified. Within each group, we built a distribution of the number of adjacent errors within the same k-mer window. For sporadic errors, this number should be close to 0, but for clustered errors, the number could be up to the k-mer size minus one. There was a clear pattern within each of these distributions, with some errors identified with no neighbors (sporadic errors), a smaller number identified with one neighbor, and an increasing number beginning at two or more neighbors (clustered errors). We used these empirical distributions to set the maximum allowable amount of neighboring errors within a k-mer window as the count just prior to the beginning of the secondary increase within each distribution. For example, for D. grandis, in the case of the group of reads containing four total identified errors, there were 316,103 errors with no neighbors within the same k-mer, 197,411 with one neighbor, 156,043 with two neighbors, and 353,639 with three neighbors (that is, all four errors were within the same k-mer window). Thus, for the group of reads containing four total identified errors in D. grandis, we only corrected errors with up to two neighboring errors in the same k-mer window. After running Reptile error correction of sequence reads and quality files subject to these cutoffs, we performed a final step of restoring ambiguous bases converted by ‘fastq-converter.pl’ (from ‘N’ to ‘a’) that were not subsequently corrected by Reptile back to their original value of ‘N’.
 
-## De novo transcriptome assembly
+### De novo transcriptome assembly
 
 We performed de novo transcriptome assembly on trimmed, corrected sequence reads and quality files with Trinity release 2013-02-25 (Grabherr et al., 2011) with ‘--min_contig_length’ set to 150 and all other parameters at their default values. We chose a minimum contig length of 150 (rather than the default of 200) so as not to exclude assembly fragments that might encode predicted proteins with lengths between 50 and 66 amino acids, because some domains in the Pfam database are as short as 50 amino acids. Because none of the species we sequenced had an available genome assembly, we did not know whether transcripts might be encoded in overlapping positions within the genome. To test this possibility, we repeated each Trinity assembly with the addition of the ‘--jaccard-clip’ option and compared the estimated number of fusion transcripts predicted by Transdecoder release 2012-08-15 (Haas et al., 2013). We found essentially no difference in the number of predicted fusion transcripts between the original and ‘--jaccard-clip’ assemblies, and so we continued with the original assemblies. Assembly statistics are reported in Supplementary file 1.
 
-## Identification and removal of cross-contamination
+### Identification and removal of cross-contamination
 
 Cross-contamination within a multiplexed Illumina sequencing lane is estimated to cause incorrect assignment of roughly 0.5% of index pairs (Kircher et al., 2012). We designed a procedure to eliminate transcriptome assembly contigs resulting from incorrect index assignments. We ran blastn version 2.2.26 (Altschul et al., 1997) with a maximum E value of 1 × 10−10 to query contigs from each species against all other species. Because of the evolutionary distances among the choanoflagellates we sequenced (Figure 2—figure supplement 1), most contigs from one species had no matches in any other species. Within the contigs that did have cross-species matches (Figure 1—figure supplement 3a), we observed a large number that were identical or nearly-identical, which were likely cross-contaminants, and another set of matches distributed around roughly 80% identity, likely representing highly conserved genes. The two cases were separated at roughly 96% identity. After exploring the distribution of match lengths in a similar manner (Figure 1—figure supplement 3b), we considered matches at 96% or greater identity of at least 90 bases in length to be cross-contaminated.
 
 Next, we identified the sources of cross-contaminated contigs by comparing the number of reads mapping from both species for each match. We first masked contigs with Tandem Repeats Finder version 4.04 (Benson, 1999), with the following parameter values: match = 2, mismatch = 7, indel penalty = 7, match probability = 80, mismatch probability = 10, min score = 30, max period = 24. We next mapped reads to masked contigs using the Burroughs-Wheeler Aligner, BWA, version 0.7.5a (Li and Durbin, 2009) and SAMtools version 0.1.18 (Li et al., 2009). We ran BWA ‘aln’ with the ‘-n 200’ option to allow up to 200 equally best hits to be reported, and all other parameter values left at their defaults. Based on the distribution of read mapping ratios between the pair of species matching for each cross-contaminated contig (Figure 1—figure supplement 3c), we retained only contigs for the species in a pair with 10 times or more reads mapping, and discarded all other contigs, with one exception: if a contig had at least 10,000 reads mapping, we did not discard it, regardless of read mapping ratio. We observed that many contigs encoding conserved genes (for example, α-tubulin and elongation factor 1α) also tended to be the most highly expressed, and thus the read mapping ratio was often close to one for these contigs. We identified as cross-contaminated and removed between 1.7 and 8.8% of contigs for each species (Supplementary file 1). We note that our procedure would also be expected to discard sequences from any bacterial species that were present in two different choanoflagellate cultures. For a more detailed examination of the cross-contamination removal process, see (Richter, 2013).
 
-## Prediction of amino acid sequences from assembled transcripts and elimination of redundant transcripts
+### Prediction of amino acid sequences from assembled transcripts and elimination of redundant transcripts
 
 We predicted proteins from decontaminated contigs with Transdecoder release 2012-08-15 (Haas et al., 2013) with a minimum protein sequence length of 50. We noticed that many of the proteins originating from different contigs within a species were completely identical along their entire length. Furthermore, we also observed many contigs whose predicted proteins were a strict subset of the predicted proteins from another contig. For example, contig one might encode predicted proteins A and B, and contig two might encode two predicted proteins exactly matching A and B, and a third predicted protein C. We removed both types of redundancy (exact matches and subsets) from the set of predicted proteins, and we also removed the contigs from which they were predicted (Supplementary file 1).
 
-## Measurement of expression levels and elimination of noise transcripts
+### Measurement of expression levels and elimination of noise transcripts
 
 To estimate expression levels, we mapped sequence reads to decontaminated, non-redundant, Tandem Repeats-masked contigs using the Burroughs-Wheeler Aligner, BWA, version 0.7.5a (Li and Durbin, 2009). We ran BWA ‘mem’ with the ‘-a’ option to report all equally best hits, with all other parameter values left at their defaults. We converted BWA output to BAM format using SAMtools version 0.1.18 (Li et al., 2009) and ran eXpress version 1.4.0 (Roberts and Pachter, 2013) with default parameter values in order to produce estimated expression levels, in fragments per kilobase per million reads (FPKM). The distribution of FPKM values (Figure 1—figure supplement 3d) had a peak near 1, with steep decreases in the number of contigs at lower values. Therefore, we chose an extremely conservative noise threshold two orders of magnitude below the peak, at FPKM 0.01, and discarded contigs (and their associated predicted proteins) below this value (Supplementary file 1).
 
 The final sets of contigs are available as Dataset 1, and the proteins as Dataset 2 (Richter et al., 2018). FPKM values for contigs are given in Dataset 3 (Richter et al., 2018). We also submitted the final sets of contigs and proteins to the NCBI Transcriptome Shotgun Assembly (TSA) sequence database. The contigs (and their associated proteins) available in the TSA differ from our final sets in three ways: (1) The TSA database does not accept contigs with lengths less than 200, whereas our minimum was 150; (2) The submission system identified and rejected a small number of contigs as bacterial contaminants; (3) The submission system identified and required us to trim a small number of contigs to remove Illumina adapter sequences that were missed by our screen with Trimmomatic. Differences between the assemblies we analyzed and those submitted to NCBI TSA are summarized in Supplementary file 1, and a complete list of affected contigs can be found in Dataset 9 (Richter et al., 2018).
 
-## Completeness of predicted protein sets
+### Completeness of predicted protein sets
 
 To determine whether the conserved gene content of the transcriptomes we produced was similar to the two sequenced choanoflagellate genomes, we searched our data for conserved eukaryotic proteins with BUSCO version 3.0.2 (Simão et al., 2015). We used default parameter values and the 303 BUSCOs from the ‘eukaryota_odb9’ set, and performed searches with HMMER version 3.1b2 (Eddy, 2011).
 
 We note that each final transcriptome assembly contained between 18,816 and 61,053 proteins per species (Supplementary file 1), markedly more than the 9196 and 11,629 genes predicted, respectively, from the assembled genomes of M. brevicollis (King et al., 2008) and S. rosetta (Fairclough et al., 2013). The relatively higher protein counts predicted from choanoflagellate transcriptomes likely represent an overestimate resulting from the inherent complexities in assembling unique contig sequences from short read mRNA sequencing data in the absence of a reference genome (Grabherr et al., 2011), including the fact that sequence reads from different splice variants may have assembled into separate contigs while being encoded by the same gene. Because our goal was to reconstruct the full diversity of genes in the Urchoanozoan and Urmetazoan, the tendency of transcriptomes to yield overestimates of gene numbers was not a significant concern.
 
-## Tests of choanoflagellate species identity and contamination with animal sequences
+### Tests of choanoflagellate species identity and contamination with animal sequences
 
 To confirm the identity of the choanoflagellate cultures we sequenced, we compared our transcriptome data to seven protein coding genes with choanoflagellate sequences previously available in GenBank: actin, alpha tubulin, beta tubulin, EF-1A, EFL, HSP70 and HSP90. To search the transcriptomes for each gene, we downloaded all previously available choanoflagellate sequences from GenBank, aligned them using FSA version 1.15.7 (Bradley et al., 2009) with default parameter values, and trimmed the alignments using Gblocks (Talavera and Castresana, 2007) with allowed gap positions set to ‘half’ and all other parameter values set to their most permissive. We next built HMMs for each trimmed alignment using hmmbuild from the HMMer package version 3.0 (Eddy, 2011) and searched the contigs from each transcriptome (and their reverse complements) with hmmsearch, both with default parameter values. In each case, the top hit we retrieved for each transcriptome (the contig with the lowest E value) matched the corresponding sequence for the species in GenBank.
 
 We tested for the possibility of animal contamination within choanoflagellate transcriptomes using the same set of seven HMMs to search the nucleotide coding sequences from all 59 species in our data set. For each target species, we retained the top three hits by E value. For each gene, we aligned the resulting sequences using using MAFFT version 7.130b (Katoh and Standley, 2013) with the parameters ‘--maxiterate 1000 --localpair’ and trimmed alignments using trimAl version 1.2rev59 (Capella-Gutiérrez et al., 2009) with the parameter ‘-gt 0.8’. We built phylogenetic trees with RAxML version 8.2.0 (Stamatakis, 2014) with the options ‘-m GTRCAT’ to define the model of DNA substitution and ‘-f a -N 100’ option for a rapid bootstrap analysis with 100 bootstraps. We collapsed branches with bootstrap support below 50 using Archaeopteryx version 0.9813 (Han and Zmasek, 2009). We observed no instances with ≥50% bootstrap support in which a choanoflagellate sequence was nested within a clade of animal sequences (Figure 2—source data 1), indicating that none of the choanoflagellate transcriptome sequences we retrieved appeared to be of animal origin.
 
-## Construction of gene families and their probabilities of presence
+### Construction of gene families and their probabilities of presence
 
 To identify gene families, we chose a set of representative animals and outgroup species (Supplementary file 3). We used the 19 choanoflagellates we sequenced and the complete predicted protein sets from the M. brevicollis (King et al., 2008) and S. rosetta genomes (Fairclough et al., 2013). As an internal control, we had sequenced two independent isolates of Stephanoeca diplocostata, whose predicted proteins we compared using CD-HIT version 4.5.4 (Li and Godzik, 2006) with default parameter values. We found that the two S. diplocostata isolates contained essentially equivalent predicted protein sets, so we used only the French isolate for constructing orthologous groups. We compared the 21 choanoflagellate species to 21 representative animals with genome-scale sequence data available, with an emphasis on early-branching non-bilaterians: sponges, ctenophores, T. adhaerens and cnidarians. We included 17 outgroups with sequenced genomes in our analysis: C. owczarzaki, a holozoan representative of the closest relatives of animals and choanoflagellates, five fungi chosen to represent fungal diversity, two amoebozoa, and nine species representing all other major eukaryotic lineages. The predicted proteins of the chytrid Homolaphlyctis polyrhiza were released in two partially redundant sets, which we combined using CD-HIT version 4.5.4 with default parameter values.
 
@@ -196,7 +503,7 @@ We tested the effectiveness of our approach to screen out false positive ortholo
 
 Protein sequences for gene families are available as Dataset 4, and presence probabilities by species are listed as part of Dataset 5 (Richter et al., 2018).
 
-## Inference of gene family origins and heat map
+### Inference of gene family origins and heat map
 
 For each gene family, we calculated the sum of membership probabilities for species from each of the five major groups in this study (choanoflagellates, animals, C. owczarzaki, fungi, and other eukaryotes). Based on the resulting distribution (Figure 2—figure supplement 3a), for a gene family to be considered present in a major group, we required this sum to be ≥10% of the number of species in the major group (stated alternatively, we required the average presence probability in the group to be ≥10%). Notably, the 10% threshold was independent of the tree topology within each major group, thereby minimizing the impact of currently unresolved within-group species relationships [e.g., among early-branching animals (King and Rokas, 2017)]. For choanoflagellates and animals, each of which have 21 species in our data set, this equates, for example, to a gene family represented at high probability (≥70%, corresponding to an average BLAST E value of 1 × 10−20; Figure 2—figure supplement 2a) in three or more species, or at 35% probability (E value of 1 × 10−10) in six or more species. Therefore, the only truly orthologous gene families likely to be excluded by this threshold are those with weak homology (i.e., average BLAST E values > 10−10) to only a few species in a major group, a rare case which would also require numerous independent losses of the gene family within the group.
 
@@ -206,17 +513,17 @@ In the text, we precede estimated gene family counts with a tilde. We selected a
 
 To produce a heat map for visual display of gene families, we ordered them by their patterns of presence within the five major species groups. Within a given pattern (for example, absent in outgroups and fungi but present in C. owczarzaki, animals and choanoflagellates) we clustered gene families by Pearson correlation using Cluster 3.0 (de Hoon et al., 2004), with all other parameter values set to their defaults. We visualized heat maps using Java TreeView version 1.1.6r4 (Saldanha, 2004) and color palettes from ColorBrewer (Harrower and Brewer, 2003). For display purposes, we restricted Figure 2 to gene families inferred to have been present in at least one of six nodes representing last common ancestors of interest: Ureukaryote, Uropisthokont, Urholozoan, Urchoanozoan, Urchoanoflagellate, and Urmetazoan. The full heat map for all gene families with representatives from at least two species is shown in Figure 2—figure supplement 4. Gene families present, gained and loss at each ancestral node are listed in Dataset 6 (Richter et al., 2018).
 
-## Test of existing methods of ancestral gene content reconstruction
+### Test of existing methods of ancestral gene content reconstruction
 
 We tested three classes of existing ancestral reconstruction methods using presence/absence data as input: Dollo parsimony, maximum likelihood, and Bayesian. The three different methods produced substantially different estimates of ancestral gene family content (Supplementary file 13). We performed Dollo parsimony analysis on presence/absence data for all gene families using PHYLIP version 3.695 (Felsenstein, 2013) with default parameter values. For comparison to previous studies, we also gathered Dollo parsimony-based gene content estimates from Fairclough et al., 2013, which included two choanoflagellate species (M. brevicollis and S. rosetta). We ran maximum likelihood analysis on presence/absence data for all gene families using Mesquite version 3.40 (Maddison and Maddison, 2018). When running Mesquite, we supplied the phylogenetic tree shown in Figures 2 and 3 as input (see Materials and methods, ‘Species tree and phylogenetic diversity’) and analyzed gene family content evolution with the AsymmMk (asymmetrical Markov k-state two parameter) model. We performed Bayesian analysis with MrBayes version 3.2.6 (Ronquist and Huelsenbeck, 2003). We supplied presence/absence data only for gene families present in more than one species (i.e., we eliminated singletons), and specified the options ‘noabsencesites’ and ‘nosingletonpresence’ to correct for unobservable site patterns following (Pisani et al., 2015), with Naegleria gruberi as the outgroup, gamma-distributed rate variation among sites, and other parameters left at their defaults. We ran separate analyses for each ancestral node of interest, each time including the species descended from that node as a topology constraint. We ran each analysis with a sampling frequency of 1000 generations until the average standard deviation of split frequencies between runs reached 0.01 (between 5 million and 10 million generations, depending on the ancestral node of interest). For the two analyses that produced probabilities of gene family presence at internal nodes (maximum likelihood and Bayesian), we calculated total counts as follows: for gene family presence, we summed the probabilities across all gene families. For gene family gains, we summed the difference in probability between each node of interest and its parent (e.g., the Urmetazoan and its parent, the Urchoanozoan) only for the gene families with a higher probability of presence in the node of interest compared with its parent. For gene family losses, we performed an analogous sum only for the gene families with lower probabilities in the node of interest in comparison to its parent.
 
-## Test of gene family presence in recently released genomes
+### Test of gene family presence in recently released genomes
 
 Because new genome sequences are continuously becoming available, we tested whether the ancestral gene content reconstruction we performed would be influenced by the addition of new genome-scale data from two key sets of species: early-branching animals and early-branching holozoans. We chose species with high-quality publicly available protein catalogs that would maximize the phylogenetic diversity added to our data set. For early-branching animals, we selected two sponges, the demosponge Tethya wilhelma version v01_augustus_prots (Francis et al., 2017) and the calcareous sponge Sycon ciliatum version SCIL_T-PEP_130802 (Fortunato et al., 2014), and one ctenophore, Pleurobrachia bachei version 02_P-bachei_Filtered_Gene_Models (Moroz et al., 2014). For early-branching holozoans, we selected the teretosporeans C. fragrantissima, Ichthyophonus hoferi, Chromosphaera perkinsii and Corallochytrium limacisporum (Grau-Bové et al., 2017). Because we planned to implement a best reciprocal BLAST approach, which might be confounded by paralogs present within any of the species, we began by removing redundancy separately for each species using CD-HIT version 4.6 (Li and Godzik, 2006) with default parameter values. We then performed best reciprocal blastp from the protein catalog of each additional species versus all 59 species included in our original analysis (Supplementary file 3), with the same maximum E value (1 × 10−5). We retained only top reciprocal blastp hits. We next calculated gene family presence probabilities for each additional species, using a slightly modified procedure. Because we retained only the top hit for each additional species protein to each original species, an additional species protein could only match to a single representative per species within each gene family, although the family might contain multiple representatives per species. Thus, instead of calculating average E value from each additional species protein to all members of each gene family (as we did for the original set), we calculated the average of best hits to each species within the family. Next, because each protein from an additional species might hit multiple different gene families, we chose the single gene family match with the lowest average E value. Finally, for each gene family and each additional species, we selected the lowest average E value of any protein in the species to the gene family and translated those to probabilities using the same empirical cumulative density function as for the original analysis (Figure 2—figure supplement 2b).
 
 To visualize whether the additional species might substantially impact our inferences of ancestral gene content, we inserted their presence probabilities into the original heat map of Figure 2 without reordering gene families (Figure 2—figure supplement 5). The additional sponges display similar patterns of gene family presence probability to the original sponge species in the analysis, as does the additional ctenophore in comparison to the original ctenophore. With these species added, the number of gene families present in the Urmetazoan in our original data set, ~8,418, would increase by 37, sixteen of which would be previously choanoflagellate-specific gene families newly classified as shared with animals. Within the early-branching holozoans, C. perkinsii appears to show slight evidence for the presence of animal-specific gene families, but generally with low probabilities, roughly comparable to the choanoflagellate S. dolichothecata. Thus, we estimate that a very small number of animal-specific gene families would instead be classified as originating in Holozoa with the addition of early-branching holozoans (13 of ~1,944). In addition, since we only included one representative early-branching holozoan (C. owczarzaki) in our original analysis, a subset of gene families originally classified as originating in Choanozoa would instead be assigned to Holozoa with the additional species (30); in general, however, we did not strongly emphasize the distinction between choanozoan-origin and holozoan-origin gene families in our results. Furthermore, as described below (Protein domains and evidence for gene presence based on domain architecture), the additional species would have a negligable effect on our inferences of gene family presence based on protein domain architecture.
 
-## Species tree and phylogenetic diversity
+### Species tree and phylogenetic diversity
 
 We attempted to produce a robustly supported phylogenetic tree reflecting the relationships among M. brevicollis, S. rosetta and the choanoflagellate species we sequenced. As input, we selected different subsets of gene families based on different criteria (for example, one set of criteria selecting the 49 gene families missing at most five species, with remaining species having exactly one copy, or another set of criteria selecting the 24 gene families present in all species, with no species having more than two copies and at most 10 species having two copies). Within each subset, we separately aligned each gene family using MAFFT version 7.130b (Katoh and Standley, 2013) with the parameters ‘--maxiterate 1000 --localpair’ and trimmed alignments using trimAl version 1.2rev59 (Capella-Gutiérrez et al., 2009) with the parameter ‘-gt 0.5’. We then concatenated the trimmed alignments from each gene family and built trees with maximum likelihood (RAxML version 8.2.0 (Stamatakis, 2014) with the options ‘-m PROTCATGTR’ and ‘-f a -N 100’) and Bayesian (PhyloBayes-MPI version 1.5a (Lartillot et al., 2013) with the option ‘-dc’) methods. We found that two species resting on long terminal branches, S. dolichothecata and C. hollandica, had low support values and inconsistent phylogenetic positions depending on the gene family subset and the analysis method used. We hypothesized that this might result from the fact that both lack sister species in our transcriptome data set. To test this, we instead built phylogenetic trees with the addition of nucleotide sequences from sister species for C. hollandica (Codosiga botrytis and Sphaeroeca volvox) and S. dolichothecata (Salpingoeca tuba). For this analysis, we were limited by the small number of genes that had previously been sequenced for these species (a maximum of 5). We found that the phylogenetic positions of both C. hollandica and S. dolichothecata stabilized when their sister species were added [and that the choanoflagellate topology was consistent with that of (Carr et al., 2017)]. We concluded that a robust phylogenomic tree of choanoflagellates, with stable, supported positions for C. hollandica and S. dolichothecata may require further genome-scale sequencing from sister groups of both species.
 
@@ -224,13 +531,13 @@ Therefore, since the focus of this study was not phylogenetic tree construction,
 
 To measure phylogenetic diversity, we selected a set of 49 gene families for which each species had exactly one protein representative and no more than five species were missing (or roughly 10% of the 59 species in our data set). We aligned the protein sequences in each gene family separately using MAFFT version 7.130b (Katoh and Standley, 2013) with the parameters ‘--maxiterate 1000 --localpair’. We performed two rounds of alignment trimming with trimAl version 1.2rev59 (Capella-Gutiérrez et al., 2009): in the first round, we used the parameter ‘-automated1’, and we supplied the output of the first round to the second round, with the parameter ‘-gt 0.5’. We constructed phylogenetic trees from the two-round trimmed alignments separately for each gene family with RAxML version 8.2.0 (Stamatakis, 2014), with the options ‘-m PROTGAMMALGF’ and ‘-f a -N 100’. We measured cophenetic distances separating pairs of species on the resulting trees (in units of substitutions per site along branches) using the ape package version 4.1 (Paradis et al., 2004) and plotted pairwise distances averaged across all 49 gene families using the ggplot2 package version 2.2.1 (Wickham, 2009), both with R version 3.4.1 (R Core Team, 2017) in the RStudio development platform version 1.0.143 (RStudio Team, 2016).
 
-## Group-specific core gene families found in all extant members
+### Group-specific core gene families found in all extant members
 
 To identify animal-specific or choanoflagellate-specific gene families that were also present in all species within either group, we required every species in the group to pass the 10% minimum probability criterion. These core gene families are subject to several potential technical artifacts. First, an incomplete genome or transcriptome assembly could result in a species appearing to lack a gene family. Second, gene families containing repeated or repetitive protein domains (e.g. EGF or Ankyrin) might cause inappropriate inferences of sequence homology in our BLAST-based approach. Third, a true orthologous gene family present in all animals could be erroneously partitioned by OrthoMCL into two or more gene families, neither of which would then be considered present in all animals. Fourth, a gene family which duplicated on the lineage leading to the last common ancestor of a group could produce two gene families, among which paralogs are incorrectly partitioned, resulting in one or more species appearing to lack one of the two families. Thus, the lists of core gene families should not be considered exhaustive, especially for serially duplicated or repeat-containing gene families.
 
 We annotated core animal-specific gene families (Table 1) by selecting consensus features and functions in UniProt (The UniProt Consortium, 2017), FlyBase (Gramates et al., 2017) and WormBase (Lee et al., 2018). Notably, BTB/POZ domain-containing protein 9, whose function is relatively poorly characterized in comparison to other core animal-specific gene families, contains the BTB Pfam domain, which was identified as part of an expanded repertoire of ubiquitin-related domain architectures in animals (Grau-Bové et al., 2015).
 
-## Gene family retention
+### Gene family retention
 
 To determine retention of ancestral gene families within extant species, we began with the sets inferred to have evolved on the stem lineages leading to the Ureukaryote, Uropisthokont, Urholozoan, Urchoanozoan, Urchoanoflagellate, and Urmetazoan (Supplementary file 4, Dataset 6; Richter et al., 2018). For each set of gene families partitioned by ancestral origin, we summed the membership probabilities for each species. Because we applied a 10% membership probability threshold to consider a gene family to be present within group of species (see above, Inference of gene family origins and heat map), a species in one group might have a small residual sum of membership probabilities for gene families assigned to another group. As an example, some choanoflagellates may display a small amount of retention of animal-specific gene families, which represents the sum of non-zero membership probabilities that did not reach the 10% threshold.
 
@@ -238,13 +545,13 @@ To test whether B. floridae, N. vectensis, and O. pearsei retained the same gene
 
 Some animal species with draft genomes, for example P. pacificus, were among those that retained the fewest ancestral gene families. However, the lack of gene predictions resulting from an incomplete genome assembly is likely not as strong as the signal produced by gene loss. In the example case of P. pacificus, its sister species C. elegans, which has a finished genome, retains the second fewest gene families. We produced phylogenetic tree-based visualizations using the Interactive Tree of Life (iTOL) web site (Letunic and Bork, 2016). We produced bar charts using the ggplot2 package version 2.2.1 (Wickham, 2009) with R version 3.4.1 (R Core Team, 2017) in the RStudio development platform version 1.0.143 (RStudio Team, 2016).
 
-## Gene family annotation and pathway analysis
+### Gene family annotation and pathway analysis
 
 We annotated gene family function using the PANTHER Classification System (Thomas et al., 2003). We used the PANTHER HMM library version 7.2 (Mi et al., 2010) and the PANTHER HMM Scoring tool version 1.03 (Thomas et al., 2006) with default parameter values and the recommended expectation value cutoff of 10−23. We used PANTHER-provided files to associate PANTHER HMM hits with Gene Ontology (GO) terms (Ashburner et al., 2000). Annotations for both sets of terms, for all input proteins (including those not placed into gene families) are available in Dataset 7 (Richter et al., 2018). Annotations by gene family are listed in Dataset 8 (Richter et al., 2018).
 
 We compared pathways present in the Urholozoan, Urchoanozoan, Urchoanoflagellate and Urmetazoan using MAPLE version 2.3.0 (Takami et al., 2016). As input, we provided protein sequences from gene families present at each ancestral node, but only for species descending from the ancestral node (for example, for the Urholozoan, we only included sequences from holozoans). We supplied the following parameters to MAPLE: NCBI BLAST; single-directional best hit (bi-directional best hit would not have been appropriate, since our input database consisted of gene families containing closely-related proteins from multiple species); KEGG version 20161101; and organism list ‘ea’ (all eukaryotes in KEGG). We compared completeness based on the WC (whole community) module completion ratio. We listed modules which differed by 25% or greater in completeness between the Urchoanozoan and Urmetazoan in Supplementary file 8, between the Urholozoan and Urchoanozoan in Supplementary file 10, and between the Urchoanozoan and Urchoanoflagellate in Supplementary file 9. To focus on amino acid biosynthesis pathways (Figure 2—figure supplement 7), we exported KEGG results from MAPLE for the Urchoanozoan and Urmetazoan gene sets and compared them using the KEGG Mapper Reconstruct Pathway tool, pathway ID 01230 (Kanehisa et al., 2012).
 
-## Evidence for gene presence based on protein domain architecture
+### Evidence for gene presence based on protein domain architecture
 
 We predicted protein domains with the Pfam version 27.0 database and pfam_scan.pl revision 2010-06-08 (Punta et al., 2012), which used hmmscan from the HMMER 3.0 package (Eddy, 2011). We performed all Pfam searches with default parameter values. We predicted signal peptides and transmembrane domains using Phobius version 1.01 (Käll et al., 2004) with default parameter values. Domains for all input proteins (including those not placed into gene families) are listed in Dataset 7 (Richter et al., 2018). Domains by gene family are shown in Dataset 8 (Richter et al., 2018).
 
@@ -254,7 +561,7 @@ We established a set of criteria defining ‘strong’, ‘moderate’ and ‘we
 
 Genome or transcriptome data for nine additional early-branching holozoans became available since our initial analyses of protein domain architecture (Torruella et al., 2015; Grau-Bové et al., 2017). To test whether the genes and protein domains of interest that we inferred to have originated in the Urchoanozoan did not in fact originate in the Urholozoan, we interrogated the domain content of the nine new species. In all cases, there were no proteins in any of the nine species with domain architectures that would qualify as ‘strong’ evidence to change our inference of ancestral origin (i.e., where there was not already ‘strong’ evidence in C. owczarzaki).
 
-## Notch and Delta
+### Notch and Delta
 
 To identify Notch and Delta, we relied solely on conserved protein domain architecture rather than on BLAST-based or phylogenetic evidence. In addition to their diagnostic protein domains, both families contain repeated, common protein domains. These can result in false inferences of homology for BLAST, and in difficulties in producing robust sequence alignments for phylogenetic analysis. Previous studies on Notch and Delta encountered difficulties in producing resolved phylogenetic trees, which were more pronounced for early-branching animals (Gazave et al., 2009) and potentially due to the presence of EGF repeats (Rasmussen et al., 2007). To test these effects in our data, we built phylogenetic trees for both Notch and Delta. For Notch, we selected all proteins encoding a Notch domain, and for Delta, all proteins encoding a DSL (Delta Serrate ligand) domain. We aligned Notch and Delta separately using MAFFT version 7.130b (Katoh and Standley, 2013) with the parameters ‘–maxiterate 1000 –localpair’ for high accuracy alignments, trimmed them using trimAl version 1.2rev59 (Capella-Gutiérrez et al., 2009) with the option ‘-gt 0.4’ to discard positions represented in fewer than 40% of proteins in the alignment, and built phylogenetic trees using RaxML version 8.2.0 (Stamatakis, 2014), with the options ‘-m PROTGAMMALGF’ to define the model of protein substitution and ‘-f a –N 100’ for a rapid analysis with 100 bootstraps. We visualized trees and removed branches with less than 50% bootstrap support using the Interactive Tree of Life (iTOL) web site (Letunic and Bork, 2016), yielding trees that were largely unresolved for both genes (Figure 2—figure supplement 12), consistent with previous results and reinforcing the use of protein domain architecture to identify Notch and Delta.
 
@@ -262,11 +569,11 @@ For Notch, we defined ‘strong’ evidence for conserved domain architecture to
 
 For Delta, we defined ‘strong’ evidence as the presence of both an MNNL (N terminus of Notch ligand) and a DSL domain. Both of these domains were considered to be animal-specific prior to this study [although we note that the DSL domain is found in two recently sequenced holozoans, the ichthyosporeans C. fragrantissima and Pirum gemmata (Grau-Bové et al., 2017)]. The choanoflagellate S. dolichothecata expressed a protein encoding both the MNNL and DSL domains (m.249548), but lacking the transmembrane domain typically found in Delta. However, the contig encoding this protein was only partially assembled, and the presence of other partially assembled contigs in S. dolichothecata encoding combinations of DSL, transmembrane and EGF domains increases our confidence that S. dolichothecata encodes a bona fide Delta. (Predicted proteins encoding MNNL and DSL, but not a transmembrane domain, were also present in some animals in our data set; for example, Capitella teleta and Strongylocentrotus purpuratus.)
 
-## TGF-β signaling pathway
+### TGF-β signaling pathway
 
 The canonical TGF-β signaling ligand (e.g., Activins or BMPs) is characterized by the TGFb_propeptide (LAP) and TGF_beta domains (Munger et al., 1997), the type I TGF-β receptor by the combination of a TGF_beta_GS and a kinase domain, and the transcriptional activator SMAD by the MH1 and MH2 domains (Heldin et al., 1997). Although none of these combinations was present in choanoflagellates, we detected the individual TGFb_propeptide, TGF_beta_GS, MH1 and MH2 domains encoded in separate proteins (Figure 2—figure supplement 9). None of these four domains is found in eukaryotes outside Choanozoa (kinases are ancient domains, and the TGF_beta domain is found only in animals).
 
-## Toll-like receptor signaling and innate immunity
+### Toll-like receptor signaling and innate immunity
 
 For our analysis of Toll-like receptors, we considered all proteins containing two of the three following Pfam domains: LRR, Pkinase and TIR, as these are found in immune receptors and signaling proteins in both animals and plants. We found that the domain architecture of LRR, transmembrane domain and TIR, in that order, was unique to choanozoans, consistent with the independent evolution in plants of immune-related proteins that contain the same protein domains but with distinct domain architectures, different pattern recognition, and different downstream signaling pathways (Ausubel, 2005; Leulier and Lemaitre, 2008). The domain architectures LRR, transmembrane, Pkinase, TIR (‘Kinase TLRs’) and Pkinase, TIR lacking a transmembrane domain (‘Kinase TIRs’) were both unique to choanoflagellates. We did not distinguish among members of the LRR and TIR families (whose names in Pfam take the form of LRR_X, where X is a number, or TIR/TIR_2), because we found that different animal TLRs could contain domain combinations of each type. For example, M. musculus TLR11 (UniProt Q6R5P0, NCBI GI 45429992) contains LRR_8 and TIR_2 domains, whereas M. musculus TLR6 (UniProt Q9EPW9, NCBI GI 157057101) contains LRR_4 and TIR domains. We also did not attempt to differentiate among single vs. multiple cysteine cluster LRR domains (Imler and Zheng, 2004), because we found that TLRs containing a multiple cysteine cluster LRRNT Pfam domain as the final LRR prior to the transmembrane region were restricted to D. melanogaster within our data set.
 
@@ -280,13 +587,13 @@ We built an alignment for all proteins in the gene family containing SARM1 (gene
 
 In addition to TLRs, we also searched the choanoflagellates in our data set for cytosolic immune sensing genes. Several classes of nucleotide-binding domain and leucine-rich repeat (NLR) proteins have previously been detected in the A. queenslandica genome, suggesting that NLRs were present in the Urmetazoan (Yuen et al., 2014). The architecture of NLRs consists of a protein interaction domain (either Death or CARD), a nucleotide binding domain (NACHT) and multiple LRRs. Although we detected proteins encoding both NACHT and LRR domains in multiple choanoflagellates, neither the Death or CARD domain was present in any choanoflagellate we studied. The CARD domain in animal NLRs either directly or indirectly mediates activation of caspases (von Moltke et al., 2013), which are among the 39 core animal-specific gene families that we detected, suggesting that both NLRs and associated caspase downstream signaling activity may be animal innovations. Plants possess an analogous intracellular sensing pathway, NBS-LRR, which, like the TLR pathway, is thought to have evolved independently (Urbach and Ausubel, 2017). Diagnostic domains were absent in choanoflagellates for four additional cytosolic sensors: three containing CARD domains [mitochondrial antiviral signaling protein (MAVS), melanoma differentiation-associated protein 5 (MDA5) and retinoic acid inducible gene 1 (RIG-I)] and one containing HIN and PYRIN domains [absent in melanoma 2 (AIM2)]. However, we did find evidence for two other sensors previously reported in M. brevicollis (Wu et al., 2014): STING is present in both Salpingoeca macrocollata and M. brevicollis, based on the presence of the diagnostic Pfam domain TMEM173, and cGAS, identified by the Pfam domain Mab-21, is present in S. macrocollata, M. brevicollis and M. fluctuans.
 
-## RNAi machinery in choanoflagellates
+### RNAi machinery in choanoflagellates
 
 To define ‘strong’ evidence for the presence of Argonaute in our data set, we used the conserved Pfam domain architecture DUF1785, PAZ and Piwi (Supplementary file 6). To detect ‘strong’ evidence for Dicer, we searched for the architecture Dicer_dimer, PAZ and Ribonuclease_3 (we considered the Dicer_dimer domain alone to be ‘moderate’ evidence). We did not detect Piwi in choanoflagellates, although it is present in most other eukaryotic lineages. Piwi is thought to repress transposable elements (Aravin et al., 2001; Aravin et al., 2007), and M. brevicollis, the only choanoflagellate species that has been investigated for transposable elements, appears to have very few (Carr et al., 2008).
 
 Argonaute and Dicer were each lost five times independently in choanoflagellates (Figure 3—figure supplement 2), although these could both be overestimates if the genes were not expressed in our culture conditions. A similar pattern of repeated parallel loss has also been previously observed in kinetoplastids, a group of single-celled eukaryotes (Matveyev et al., 2017). Curiously, in contrast to the case for kinetoplastids, where Argonaute and Dicer were generally lost together, we detect five choanoflagellate species in which Argonaute is present and Dicer is absent or vice versa. These absences could reflect the presence of non-canonical RNAi genes or Dicer-independent RNAi pathways in choanoflagellates, as previously reported in Saccharomyces cerevisiae and in M. musculus, respectively (Drinnenberg et al., 2009; Cheloufi et al., 2010).
 
-## Cell adhesion: Flamingo, Protocadherins, and Integrins
+### Cell adhesion: Flamingo, Protocadherins, and Integrins
 
 Diverse cadherins have previously been identified in choanoflagellates (Abedin and King, 2008; Nichols et al., 2012), but two classes of cadherins involved in animal planar cell polarity and development were thought to be animal-specific: Flamingo and Protocadherins.
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.44964.001 In vestibular cerebellum, primary afferents carry signals from single vestibular end organs, whereas secondary afferents from vestibular nucleus carry integrated signals. Selective targeting of distinct mossy fibers determines how the cerebellum processes vestibular signals. We focused on vestibular projections to ON and OFF classes of unipolar brush cells (UBCs), which transform single mossy fiber signals into long-lasting excitation or inhibition respectively, and impact the activity of ensembles of granule cells. To determine whether these contacts are indeed selective, connectivity was traced back from UBC to specific ganglion cell, hair cell and vestibular organ subtypes in mice. We show that a specialized subset of primary afferents contacts ON UBCs, but not OFF UBCs, while secondary afferents contact both subtypes. Striking anatomical differences were observed between primary and secondary afferents, their synapses, and the UBCs they contact. Thus, each class of UBC functions to transform specific signals through distinct anatomical pathways.
+In vestibular cerebellum, primary afferents carry signals from single vestibular end organs, whereas secondary afferents from vestibular nucleus carry integrated signals. Selective targeting of distinct mossy fibers determines how the cerebellum processes vestibular signals. We focused on vestibular projections to ON and OFF classes of unipolar brush cells (UBCs), which transform single mossy fiber signals into long-lasting excitation or inhibition respectively, and impact the activity of ensembles of granule cells. To determine whether these contacts are indeed selective, connectivity was traced back from UBC to specific ganglion cell, hair cell and vestibular organ subtypes in mice. We show that a specialized subset of primary afferents contacts ON UBCs, but not OFF UBCs, while secondary afferents contact both subtypes. Striking anatomical differences were observed between primary and secondary afferents, their synapses, and the UBCs they contact. Thus, each class of UBC functions to transform specific signals through distinct anatomical pathways.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ This problem is deepened by the diversity of UBCs. Two subtypes of UBC have been
 
 ## Results
 
-## Primary vestibular afferents in the Glt25d2 mouse line
+### Primary vestibular afferents in the Glt25d2 mouse line
 
 Vestibular hair cells detect head acceleration, velocity, and gravity, and convey these signals to vestibular ganglion (VG) neurons; within each vestibular end organ, there are two subtypes of hair cell and at least three subtypes of VG cell (Eatock and Songer, 2011). VG axons project to vestibular nuclei in the brainstem and directly to the ipsilateral vestibular cerebellum (Dow, 1936). First, we set out to determine which VG cells project centrally to cerebellum and, peripherally, which end organ and hair cell subtype those same neurons contact. In order to express transgenes in primary afferents that may project to UBCs in the vestibular cerebellum, we determined that the Glt25d2 mouse line that has Cre recombinase (Cre) targeted to the Colgalt2 locus (B6-Tg(Colgalt2-cre)NF107Gsat) (Gerfen et al., 2013) expresses Cre in primary afferents projecting to the vestibular nuclei and vestibular lobes of the cerebellum, by crossing it with a tdTomato reporter line (Ai9) (Figure 1A–B). In cerebellar lobes IX and X, these afferents appeared as mossy fibers, and were most likely primary (first-order) from the VG, and not those from brainstem vestibular nuclei or nucleus prepositus hypoglossi that also project to cerebellum, because no somata lying in these areas expressed Cre (Figure 1C). Primary afferents did not project to flocculus or paraflocculus.
 
@@ -35,9 +35,21 @@ Vestibular hair cells detect head acceleration, velocity, and gravity, and conve
 
 VG neurons have specialized dendrites that receive input from vestibular hair cells in the five vestibular end organs: the three semicircular canals and the two otolith organs, the utricle and sacculus. There are 3 types of peripheral afferent neuron based on their dendritic morphology: ‘pure-calyx’, which form calyx endings on Type I hair cells, bouton, which makes bouton endings on Type II hair cells, and dimorphic, which have both calyx and bouton terminals (Fernández et al., 1988). The central regions of each end-organ are populated with ‘pure-calyx’ type dendritic endings of VG neurons expressing calretinin (Desmadryl and Dechesne, 1992; Leonard and Kevetter, 2002). Note that pure-calyx endings also receive input from Type II hair cells that contact the outer surface of the calyx. tdTomato-positive VG neurons in the Glt25d2::tdTomato mouse varied in soma size, location and calretinin expression (Figure 1D–E), indicating Cre expression in diverse types of VG neurons. Indeed, some peripheral afferents that expressed tdTomato had pure-calyx endings (based on co-labeling with calretinin) and others had dimorphic endings (Figure 1F–G). It was not possible to determine whether pure bouton endings expressed tdTomato because pure bouton endings could not be differentiated from boutons extending from the dimorphic fibers.
 
-## Cre+ dimorphic vestibular afferents from semicircular canals project to cerebellum
+### Cre+ dimorphic vestibular afferents from semicircular canals project to cerebellum
 
 To determine which signals are carried to cerebellum via Cre+ primary afferents in the Glt25d2 mouse line, we used retrogradely-infecting adeno-associated viruses (retro-AAVs) that express GFP. Unlike typical AAVs, retro-AAVs infect axons and thus allow the source of projections to the injected site to be determined (Tervo et al., 2016). Injections of Cre-dependent retro-AAV (AAV2-retro-CAG-Flex-GFP) were made into lobe X to label projecting VG neurons and their peripheral afferents in the five vestibular end organs (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cre-dependent retro-AAV was injected into lobe X of Glt25d2 mice to label the primary afferents with GFP to identify their dendritic endings in the vestibular organs. In this figure all of the images are from the same animal. (B) At the injection site labeled axons are apparent. GFP- black. (C) Somata in the VG were infected and expressed GFP. None colocalized with calretinin, a marker for vestibular primary afferents with pure-calyx endings. (D) Retrolabeled dimorphic calyx endings in the crista of the vertical canal. GFP- black. Below- Boxed region above expanded- Examples of retrolabeled (left- black, right- green) dimorphic calyces, a single retrolabeled bouton-only arbor (arrowhead) and calretinin+ pure calyces (magenta). Note that some hair cells also express calretinin in mice. (E) Retrolabeled dimorphic calyx endings in the crista of the anterior canal. Below- Boxed region above expanded- note the clearly dimorphic calyces having a flask shape with narrow top. Calretinin-expressing pure-calyx afferents (magenta) have a wider top and no bouton endings. The central region of the cristae only rarely had retrolabeled afferents and they were never pure-calyx. (F) Retrolabeled dimorphic calyx endings in the crista of the horizontal canal. Below- Boxed region above expanded. (G) The peripheral area of the utricle had few labeled afferents. Calretinin (magenta) was used to determine the extent of the utricular macula and to identify the striola (dashed outline). (H) Retrolabeled dimorphic calyces were found in the sacculus having many calyces and boutons per afferent fiber. See also Figure 2—figure supplements 1–2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cre-dependent retrograde AAV (AAV2-retro-CAG-Flex-GFP) was injected in lobe X and IX of Glt25d2 mouse to infect the primary afferents. In this figure all of the images are from the same animal. (B) Sagittal section of cerebellum showing labeled primary afferents in both lobe X and IX. GFP is pseudocolored black. (C) Somata in the vestibular ganglion were infected with the virus and expressed GFP. None colocalized with calretinin, a marker for vestibular primary afferents with pure-calyx endings. (D) Retrolabeled dimorphic calyx endings in the anterior and horizontal canals and utricle. GFP is pseudocolored black. Right- Same image showing calretinin labeling (magenta) in addition to GFP (green). (E) Many more peripheral afferents were labeled in the posterior vertical canal compared to experiments in which lobe X was infected and lobe IX was not. (F) Many peripheral afferents in the sacculus were labeled.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Retro-AAV (AAV2-retro-CAG-GFP) infected afferents in lobe X and IX. In this figure all of the images are from the same animal. (B) The virus infected many cells in the cerebellum. Retrolabeled somata were apparent in the vestibular nuclei. GFP is pseudocolored black. (C) Somata in the vestibular ganglion were infected with the virus and expressed GFP. Expanded view to the right with arrowhead indicating a retrolabeled VG neuron (green) colabeled for calretinin (magenta). In this experiment 4.6% of the retrolabeled somata were colabeled for calretinin. (D) Retrolabeled afferents in the vertical canal. GFP is pseudocolored black. Below- Left- Examples of retrolabeled afferents. Right- GFP (green) with calretinin labeling (magenta). (E) Retrolabeled afferents in the anterior canal. GFP is pseudocolored black. Below- Left- Examples of retrolabeled afferents. Right- GFP (green) with calretinin labeling (magenta). Arrowhead indicates a pure-calyx ending that was retrolabeled. (F) Retrolabeled afferents in horizontal canal. GFP is pseudocolored black. Below- Left- Examples of retrolabeled afferents. Right- GFP (green) with calretinin labeling (magenta). (G) Retrolabeled afferents in the utricle. GFP is pseudocolored black. Note the distribution of the majority of afferents is lateral to the striola. Below- Left- Examples of retrolabeled afferents. Right- GFP (green) with calretinin labeling (magenta). (H) Retrolabeled afferents in the posterior vertical canal. GFP is pseudocolored black. Below- Left- Examples of retrolabeled afferents. Right- GFP (green) with calretinin labeling (magenta).
 
 GFP-expressing afferents were apparent at the injection site in lobe X (Figure 2B). The VGs ipsilateral to the injected side of lobe X were immunolabeled for calretinin and imaged as whole mounts (Figure 2C). In a total of 670 retrolabeled VG somata, none expressed calretinin (n = 5 ganglia in separate experiments), suggesting that Cre-positive (Cre+) cells with pure-calyx endings do not project to lobe X. Note that we could not be confident we imaged every VG neuron because dissection of the complete VG complex was not always possible.
 
@@ -47,15 +59,39 @@ Another injection labeled numerous afferents projecting to the ventral leaflet o
 
 In sum, in the Glt25d2 mouse line the source of Cre+ primary vestibular afferents that project to lobe X are mostly dimorphic afferents in the ipsilateral semicircular canals and extrastriolar regions of the sacculus, and are therefore likely to predominantly convey information about angular acceleration of the head. To investigate all the primary vestibular projections to cerebellum, injections were made using a non-Cre-dependent retrograde virus (AAV2-retro-CAG-GFP) targeting lobe X. In all cases both lobes IX and X were infected (as well as cerebellar nuclei) (Figure 2—figure supplement 2). VG ipsilateral to the site of injection had many retrogradely labeled somata, including 2.7% that were calretinin-positive (34/1486, n = 3 VG in separate experiments). The majority of calretinin positive cells were not retrolabeled (91%, 343/377). Examples of central/striolar pure-calyx afferents that were retrolabeled were found in all five end organs, although they were rare, numbering only a few per end organ (Figure 2—figure supplement 2E). This provides evidence that some pure-calyx afferents may project to cerebellum, but we cannot determine whether they project to lobe X, lobe IX or cerebellar nuclei, as all regions were infected. In comparison to the Cre-dependent virus, this viral injection labeled many more afferents in all the end organs, but especially in the otolith organs (Figure 2—figure supplement 2G–H). In this experiment many peripheral afferents in the lateral utricle were labeled, consistent with the report that hair cell polarity relates to afferent projection pattern, with afferents innervating lateral utricle projecting to cerebellum and medial utricle projecting to vestibular nuclei (Maklad et al., 2010). The majority of the afferents appeared to be dimorphic and were too dense/numerous to count accurately. These sources of primary afferent projections to mouse cerebellum were similar to those reported in gerbils (Purcell and Perachio, 2001).
 
-## Primary vestibular afferents innervate ON UBCs in cerebellum
+### Primary vestibular afferents innervate ON UBCs in cerebellum
 
 Having established that most of the primary afferents to lobe X are dimorphic VG fibers from the semicircular canals, we asked whether these fibers contact UBCs. The Glt25d2 mouse line was crossed with a channelrhodopsin (ChR2) reporter line (Ai32), which caused expression of ChR2 and EYFP in primary vestibular afferents. This cross allowed specific activation of primary afferents with light in acute brain slice physiology experiments. Whole-cell patch-clamp recordings were made near ChR2-EYFP-expressing mossy fiber endings in sagittal slices of cerebellum containing lobe X, specifically targeting recordings to candidate UBC somata identified by size (~10 µm diameter; Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig3-v2.jpg)
+
+**Figure 3.:** (A) In the Glt25d2::ChR2-EYFP cross, primary afferents from the vestibular ganglion (VG) expressed ChR2 and were activated by blue light during whole-cell recordings of UBCs in an acute slice preparation. (B) Mossy fibers were activated by LED light pulses (50 Hz 0.25 ms) that evoked spiking responses in postsynaptic UBC that outlasted mossy fiber activation. In the same cell in voltage clamp (below) light pulses evoked fast EPSCs that depressed, followed by a slow inward current. 50 μM GYKI53655 blocked the majority of the inward current. This slow AMPAR-mediated current after the offset of stimulation is diagnostic of an ON UBC. This case was without 4-AP in the bath. All UBCs that had light evoked PSCs were ON UBCs (n = 13). (C) 50 Hz light stimulation of various train durations illustrated as lines above the traces. The slow AMPAR-mediated current begins at the offset of stimulation, consistent with re-activation of AMPARs as they recover from desensitization while glutamate gradually leaves the synapse. (D) Spiking response (top) and EPSCs (bottom) evoked by electrical stimulation (3.8 V, 50 Hz, 0.25 ms, black) were similar to those evoked by ChR2 stimulation (50 Hz 0.25 ms, blue) in the same cell. (E) UBCs were filled with biocytin and recovered in 6/13 cases. This UBC received input from ChR2-EYFP expressing primary vestibular afferent. Maximum intensity projection. (F) Orthogonal view of the boxed region in B, showing UBC brush wrapping around mossy fiber. (G) Surfaces were created on the fluorescence to characterize the structure of the mossy fiber-UBC synapse. (H) A one voxel thick contact layer between the UBC and mossy fiber surfaces was made to calculate the apposition area between the two surfaces (shown in red). The calculated apposition area of this mossy fiber to UBC contact was 137.66 μm2. (I) The postsynaptic EPSC correlated with the area of the UBC brush (left), but did not correlate with the contact area between the mossy fiber and brush (right). Currents are in the presence of 4-AP. (J) The slow EPSC did not correlate with the UBC brush area (left) or contact area between the mossy fiber and brush (right), suggesting that this current is due to the action of glutamate at distant receptors. Currents are in the presence of 4-AP. (K–L) In Glt25d2::tdTomato cross, tdTomato+ primary afferents were seen innervating the brushes of mGluR1+ UBCs (white), but not calretinin+ UBCs (green). Soma of mGluR1+ UBCs identified with *. Single image planes. (M) 20% of counted mGluR1+ UBCs were contacted by tdTomato+ primary afferents. No counted calretinin+ UBCs were contacted by these primary afferents. See also Figure 3—figure supplements 1–5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Left- Biocytin filled UBC- magenta, EYFP/ChR2 labeled primary afferent- green. Maximum intensity projection. Center- 3D rendering. Right- UBC showing contact with mossy fiber (white). UBC in middle row is also shown in Figure 7A and Figure 8E.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Fluorescent spheres were mounted on microscope slides and imaged following the procedures used for the biocytin filled cells (see Materials and methods). These spheres had a mean diameter of 4.23 μm according to the information provided by the supplier. (B) Surfaces were made following the procedures used for filled cells and mossy fibers. (C) A side view of the super-resolution image stack shows that the z-resolution was not elongated. (D) A side view of the surfaces indicates that they are less smooth on the top and bottom of the stack, but was well fit to the fluorescence and clearly represented the spherical shape. Surface areas were calculated following the procedures used for biocytin filled cells. The mean surface area was 56.61 ± 1.68 μm2, n = 18,~1% greater than the expected surface area (56.21 μm2) given the mean diameter of 4.23 μm provided by the supplier. The volume was calculated to be 37.22 ± 2.23 μm3,~6% less than the expected volume of 39.63 μm3. This indicates that the approach used to measure the surface area and volume of filled cells in super-resolution images is reasonably accurate.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) UBC with ChR2 evoked IPSCs. 2 ms blue light (blue bar) activated primary afferents and evoked IPSCs that were delayed and mediated by both GABAA and glycine receptors. Amplitudes were 28.92 ± 27.73 pA (mean ± SD), n = 23. Note that these responses are in the presence of 50 μM 4-AP. (B) In 5/6 UBCs 5 μM SR-95531 blocked the IPSC 31.5 ± 16.7% (mean ± SD). The addition of 0.5 μM strychnine blocked 94.0 ± 2.0% (mean ± SD) of the remaining current. (C) Granule cell with ChR2 evoked IPSCs. Gray traces are individual trials and black trace is the average. Amplitudes were 11.32 ± 8.02 pA (mean ± SD), n = 10, in the presence of 50 μM 4-AP. Delays from onset of light to beginning of the IPSCs were 5.52 ± 0.40 ms (mean ± SD), n = 10.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Granule cell responds to 10 Hz and 50 Hz ChR2 evoked synaptic stimulation. The input to this granule cell can follow 50 Hz light flashes, but fails towards the end of a 50 pulse train (stars). This example is in 50 μM 4-AP. (B) Granule cell EPSCs evoked by ChR2 stimulation of primary afferents in 0 or 50 μM 4-AP. (C) A granule cell filled with biocytin and recovered post hoc. Maximum intensity projection. (D) Orthogonal view of the boxed region in C, showing granule cell claw wrapping around mossy fiber. (E) Surface reconstruction of granule cell showing mossy fiber contact area in red 37.98 μm2). (F) Granule cell claw showing contact with brush in red. (G) The Glt25d2::tdTomato mouse was crossed with the TCGO mouse line that expresses mCitrine (yellow) in a very small, presumably random, subset of granule cells in cerebellum. The expression is especially sparse in lobes IX and X. (H) Higher magnification of lobe X shows sparse labeling of granule cells and even sparser UBCs (a single UBC indicated by *). (I) Granule cell claw contacting primary afferent. Maximum intensity projection. (J) Orthogonal view of mossy fiber to granule cell claw contact. No granule cell was observed to contact multiple mossy fibers with different claws or the same mossy fiber with multiple claws. (K) Summary of contact areas measured between primary afferents and granule cell claws. White circles were measured from biocytin filled granule cells.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Example of response to electrical synaptic stimulation in 50 μM 4-AP (black) and after washout of 4-AP (brown). Inset shows the first 3 EPSCs in the train with a longer time base. 4-AP increases the amplitude of the EPSC, increases synaptic depression but has no effect on the recurrent slow EPSC that occurs at the offset of stimulation in ON UBCs. (B) In a different ON UBC, 4-AP washout had an effect on ChR2 evoked currents. In 4-AP, release was asynchronous. After washout the release became synchronous. In this cell and one other this asynchronous release was observed in 4-AP and changed after 4-AP washout. (C) The first ChR2 evoked fast EPSC amplitude was larger for cells that had 50 μM 4-AP in the bath. (D) Importantly, the slow EPSC at the offset of the stimulus train that is diagnostic of ON UBCs was inward whether or not 4-AP was present. (E) Decay of the first EPSC in the train with and without 4-AP. (F) Paired pulse ratio was lower in most cells in the presence of 50 μM 4-AP. (G) OFF UBC responses could be evoked by electrical stimulation in these Glt25d2::ChR2-EYFP slices with 4-AP present, indicating that the lack of OFF UBC responses evoked by primary fiber activation was not due to non-specific block of GIRK or mGluR2 or to the absence of OFF UBCs in this mouse line.
 
 ChR2 activation of primary afferents with blue light flashes caused bursts of action potentials in postsynaptic UBCs (Figure 3B). Activation of primary afferents led to time-locked, depressing EPSCs, followed by a slow inward current that began at the end of the stimulation train; both responses were mediated by AMPA receptors, and are diagnostic of ON UBCs (Figure 3C) (Borges-Merjane and Trussell, 2015; Lu et al., 2017; Zampini et al., 2016). The chances of finding a UBC that happened to be contacted by a nearby labeled fiber was low. However, of 107 UBCs recorded in brain slices from 22 mice, all 13 UBCs that responded to optogenetic activation of primary afferents were ON UBCs. The response to ChR2 stimulation of primary afferents was remarkably similar to responses evoked by electrical stimulation of white matter (Figure 3D). Thus, primary afferents preferentially target ON UBCs and we found no evidence for primary projections to OFF UBCs.
 
 Recorded cells were filled with biocytin for post hoc imaging during whole-cell recording (Figure 3E–F). Biocytin fills confirmed the UBC morphology of the recorded cells and allowed visualization of the contacts between presynaptic EYFP-labeled mossy fiber axon and biocytin filled postsynaptic brush in six experiments (Figure 3—figure supplement 1). This approach provided views of the complex morphology of these synaptic interfaces. 3D renderings were made in order to estimate the surface area of the brush and the area of the brush that contacted the mossy fiber (Figure 3G–H, Figure 3—figure supplement 2). Although this is not a direct measure of the transmitter release regions, it quantifies the area of apparent contact where transmission occurs. The area of the brush that contacted the mossy fiber was 99.45 ± 40.95 µm2 (mean ± SD). The area of the UBC brush itself was 446.68 ± 86.35 µm2 (mean ± SD), and thus nearly a quarter of the dendrite was available for synaptic contact. We tested whether the morphology of these connections correlated with the synaptic responses of the UBCs. The postsynaptic fast EPSC was positively correlated with UBC brush area, but not the contact area between the mossy fiber and brush (Figure 3I). The slow EPSC amplitudes that occur at the offset of stimulation and decay times did not correlate with the contact area between the mossy fiber and UBC or the brush area (Figure 3J). This lack of correlation may suggest that the postsynaptic AMPARs that mediate this slow current are at some distance from the sites of contact with the mossy fiber, or that glutamate removal by diffusion or transport shape this current (Lu et al., 2017).
 
-## mGluR1-expressing ON UBCs receive Cre+ primary vestibular afferent input while calretinin-expressing OFF UBCs do not
+### mGluR1-expressing ON UBCs receive Cre+ primary vestibular afferent input while calretinin-expressing OFF UBCs do not
 
 mGluR1 is expressed by ON UBCs and not by OFF UBCs, while calretinin is expressed by OFF UBCs and not by ON UBCs (Borges-Merjane and Trussell, 2015). Calretinin expression thus marks pure-calyx afferents of the vestibular end organs, as well as cerebellar OFF UBCs. Immunohistochemical labeling of these two markers of UBC subtype in cerebellar sections of Glt25d2::tdTomato mice expressing tdTomato in primary afferents revealed numerous projections to mGluR1-expressing UBCs, but not to calretinin-expressing UBCs (Figure 3K–M), confirming the physiological analysis. To quantify the proportion of UBCs that receive input from these primary vestibular afferents a systematic random sampling approach was taken that ensured all of the granule cell layer of lobe X had an equal probability of being sampled (see Materials and methods). Overall 145 mGluR1-expressing UBCs were counted, 29 of which received primary afferent input (20%). In the same brain sections 96 calretinin+ UBCs were counted, none of which received primary afferent input. Thus, a direct VG projection to lobe X targets mGluR1-expressing ON UBCs but not calretinin-expressing OFF UBCs.
 
@@ -65,23 +101,31 @@ Although the expression of Cre appeared random in the VG (see above), it is poss
 
 **Figure 4.:** (A) AAVs of various serotypes were injected into the posterior vertical semicircular canal of adult mice. (B–C) Example showing experiment using AAV2-retro-CAG-GFP. The anterior canal and utricle had numerous peripheral afferent fibers labeled (green). Calretinin (magenta) labels pure-calyx afferents and Type I hair cells. (D) Each 50 μm thick section of lobe X of cerebellum had a few virally-labeled afferents (green) shown among many calretinin-expressing UBCs (magenta). (E) Vestibular ganglia showing viral expression of fluorescent proteins (black) using four different viruses in separate experiments indicated above. Many neurons of various sizes were labeled. Images in F-G correspond to ganglia and viruses indicated in E. (F) Virally-labeled primary afferents were apparent in lobe X. Note the thickness of the afferents and the lack of branching. (G) Immunostaining for calretinin and mGluR1 was used to investigate to which type of UBC this population of fibers projected. Each terminal swelling along virally-labeled primary afferents was imaged, along with calretinin and mGluR1 labeling. 33% of afferent endings intercalated with the brush of an mGluR1+ UBCs, whereas no calretinin+ UBCs were contacted. Somata of mGluR1+ UBCs indicated with *. Single image planes.
 
-## Primary vestibular afferent pathway evokes disynaptic IPSCs in UBCs and granule cells
+### Primary vestibular afferent pathway evokes disynaptic IPSCs in UBCs and granule cells
 
 Since primary vestibular afferents excite ON UBCs, we asked whether they might also trigger inhibitory control of the same UBCs. Indeed, some UBCs that received direct primary afferents had ChR2-evoked fast disynaptic inhibitory post synaptic currents (IPSCs) in addition to monosynaptic EPSCs. In many cases, activation of primary afferents evoked IPSCs alone in UBCs and granule cells, without a typical ON or OFF synaptic response (Figure 3—figure supplement 3). The onset of these IPSCs occurred at a delay consistent with disynaptic inhibition in all cases (5.74 ± 1.42 ms (mean ± SD), n = 23). In most of these UBCs some component of the IPSC was blocked by GABAAR antagonist SR-95531 and the remaining current was blocked by glycine receptor antagonist strychnine (Figure 3—figure supplement 3B). Presumably cerebellar Golgi cells, which co-release GABA and glycine, are the source of this disynaptic inhibition (Rousseau et al., 2012). Thus, the same population of primary vestibular afferents both excite ON UBCs and activate a pathway that leads to their inhibition.
 
-## Primary vestibular afferents innervate granule cells in cerebellum
+### Primary vestibular afferents innervate granule cells in cerebellum
 
 The primary afferents that contacted ON UBCs also contacted granule cells, but generated clearly different physiological responses. Optogenetic activation of Cre+ afferents resulted in fast EPSCs in granule cells, but never exhibited a slow AMPAR-mediated EPSC at the offset of stimulation (Figure 3—figure supplement 4A). In contrast, the peak and decay time of the first EPSC in the response train was similar to postsynaptic responses of ON UBCs (Figure 3—figure supplement 4B, Figure 3—figure supplement 5). The contact area between mossy fiber and granule cell claw was only about 15% of those measured between primary afferent and UBC brush (Figure 3—figure supplement 4C–K). These results are consistent with the hypothesis that the slow EPSC of UBCs results from pre and postsynaptic structure, and is not simply a feature of mossy fiber transmitter release per se. Granule cells also received inhibition at a latency consistent with disynaptic input from Golgi cells (5.52 ± 0.40 ms (mean ± SD), n = 10, Figure 3—figure supplement 3C). These data indicate that Cre+ primary afferents contact granule cells and Golgi cells, but specifically target the ON subtype of UBCs.
 
-## Secondary vestibular afferents innervate ON and OFF UBCs in cerebellum
+### Secondary vestibular afferents innervate ON and OFF UBCs in cerebellum
 
 A major target of the vestibular primary afferents is the medial vestibular nucleus of the brainstem (MV). The principal neurons of MV project secondary vestibular afferents to lobe X, and therefore represent a second potential source of mossy fiber input to UBCs. To target ChR2 to this secondary vestibular pathway, viral injections were made into MV of mGluR2-GFP mice, which express GFP in UBCs (Borges-Merjane and Trussell, 2015). The virus (AAV1-CAG-ChR2(H134R)-mCherry) expressed the same variant of ChR2 as that expressed in the Ai32 (ChR2-EYFP) mouse line, fused to mCherry (red fluorescent protein). Three weeks after infection, acute brain slices were prepared and whole-cell patch-clamp recordings of UBCs were made near mCherry-labeled secondary afferents (Figure 5A). The location of the injection site was histologically confirmed in all experiments. Primary afferent axons local to the injection site were only rarely infected, as identical injections into Glt25d2::ChR2-EYFP mice showed few co-labeled neurons (see below).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig5-v2.jpg)
+
+**Figure 5.:** (A) Medial vestibular nucleus (MV) was infected with a ChR2 expressing virus. (B) Example OFF UBC. 50 Hz 10x ChR2 activation of secondary vestibular mossy fibers caused a pause in spiking (above) and evoked a slow IPSC diagnostic of OFF UBCs (below). (C) The AMPAR-mediated fast EPSC varied across cells. In this example it was very small. In OFF UBCs, the IPSC was always blocked by mGluR2 antagonist LY341495 (1μM). (D) Example ON UBC. 50Hz10x ChR2 activation of secondary vestibular mossy fibers caused an increase in spiking (above) and evoked a fast and slow EPSC that were blocked by GYKI53655 (50μM) diagnostic of an ON UBCs (below). (E) The UBC shown in B was filled with biocytin (magenta) and recovered. Yellow: Immunohistochemical amplification of mCherry which is fused with the ChR2 protein. Maximum intensity projection. (F) Orthogonal view of boxed region in E, showing UBC brush wrapping around mossy fiber. (G–H) The mossy fiber and UBC shown in E-F was 3D rendered and the apposition area between the two volumizations was calculated. The calculated apposition area of this mossy fiber to UBC contact was 336 μm2 (red). (I) The postsynaptic EPSC of the OFF UBCs correlated with the area of the UBC brush. R2 = 0.529, p=0.027 (left), but did not correlate with the contact area between the mossy fiber and brush (right). (J) The slow IPSC of the OFF UBCs did not correlate with the UBC brush area (left) or contact area between the mossy fiber and brush (right). (K) OFF UBCs that received input from secondary afferents had smaller EPSCs than those of ON UBCs. t-test, p=0.003. (L) mCherry-expressing secondary mossy fibers (red) were seen innervating the brushes of mGluR1+ UBCs (white) and also calretinin+ UBCs (green). Soma of mGluR1+ UBCs identified with *. Arrowheads indicate contact between mossy fiber and brush. Single image planes. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44964/elife-44964-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Left- Biocytin filled UBC- magenta, mCherry/ChR2 labeled secondary afferent- yellow. Maximum intensity projection. Center- 3D rendering. Right- UBC showing contact with mossy fiber (white). (A) OFF UBCs. (B) ON UBCs.
 
 Out of 108 UBCs recorded in brain slices from 14 mice, nine postsynaptic UBCs were of the OFF subtype: ChR2 activation of secondary afferents caused initial fast EPSCs that then depressed and led to a slow IPSC that caused a pause in spiking (Figure 5B). The IPSC was blocked by the mGluR2 antagonist LY341495 in all cases tested (Figure 5C). In four additional cases, secondary vestibular afferents projected to ON UBCs, based on the presence of a slow inward current response (Figure 5D). Seven of the OFF UBCs were filled with biocytin and 3D rendered in order to estimate the brush area and contact area between the mossy fiber and the brush (Figure 5E–H, Figure 5—figure supplement 1A). As was seen with ON UBCs that received primary input, the fast EPSC amplitude correlated with the UBC brush area of these OFF UBCs (Figure 5I). No correlations between the slow IPSC and mossy fiber-UBC contact area or UBC brush area were found (Figure 5J). The EPSCs of secondary afferent-receiving ON UBCs were larger than those of secondary afferent-receiving OFF UBCs (Figure 5K). EPSCs of ON UBCs that received secondary afferents were similar to ON UBCs that received primary afferents (secondary: 45.17 ± 8.26 pA vs primary: 46.35 ± 14.09 pA, (mean ± sem), t-test, p=0.954, n = 11). All four ON UBCs were recovered for histological analysis (Figure 5—figure supplement 1B). One of the ON UBCs had two brushes, which is a rare morphology (Braak and Braak, 1993; Mugnaini and Floris, 1994).
 
 To corroborate these physiological results we took an anatomical approach using the same ChR2-mCherry expression in MV and utilized mGluR1 and calretinin expression to identify ON and OFF UBCs (Figure 5L). Of 231 mGluR1+ UBCs counted, 44 (19%) received labeled mossy fiber input. Of 114 calretinin+ UBCs counted, 19 (17%) received labeled mossy fiber input. Thus, although their populations differ in number, a similar proportion of mGluR1+ and calretinin+ UBCs are innervated by secondary afferents.
 
-## Primary and secondary vestibular afferents differ in morphology in cerebellum
+### Primary and secondary vestibular afferents differ in morphology in cerebellum
 
 Primary and secondary afferents in the cerebellum appeared to have different morphologies (Figure 6), suggesting that mossy fiber structure may differ depending upon their source. To compare the primary and secondary afferents in the same sections, a mCherry expressing virus (AAV1-CAG-ChR2(H134R)-mCherry) was injected into the right MV of Glt25d2::ChR2-EYFP reporter mice. ChR2, being a transmembrane protein, targeted the fused mCherry or EYFP proteins to the membranes of primary and secondary afferents. Labeled secondary afferents were more numerous than primary afferents (Figure 6A–B), although their number is somewhat artificial given the incomplete labeling of both VG and MV neurons. In addition to lobe X, primary and secondary afferents projected to ventral leaflet of lobe IX, where UBCs are also present in high density relative to other lobes (Harris et al., 1993). Primary afferents only projected into IXc, whereas secondary afferents also projected into the more caudal lobe IXb (Figure 6C–D). The terminals of primary fibers were often ‘rosette-like’, similar to those of secondary afferents, but in many cases the elaborate protrusions from the main fiber ran along a longer length of the axon than the more spherically shaped secondary afferents (Figure 6E–F).
 
@@ -97,7 +141,7 @@ Surprisingly, the differences in morphology based on source of input also extend
 
 **Figure 7.:** (A) 3D rendering of primary afferent showing characteristic thick axon (green). Biocytin fill- gray, contact between mossy fiber and UBC- red. (B) 3D rendering of secondary mossy fiber showing thin axons and rosette-like ending. Biocytin fill- gray, contact between mossy and UBC- yellow. (C) The contact areas between recovered primary afferents and UBC brushes was smaller than those of secondary mossy fibers (t-test, p=0.0003, n = 17). (D) The surface area of the UBC brushes that received primary afferents were smaller than those of secondary mossy fiber-receiving UBCs (t-test, p=0.009, n = 18). The volume of the UBC brushes that received primary afferents were also larger than those of secondary mossy fiber-receiving UBCs (t-test, p=0.014, n = 18), not shown. (E) The volume of the somas of UBCs that received primary afferents were smaller than those of secondary mossy fiber-receiving UBCs (t-test, p=0.035, n = 15).
 
-## Primary vestibular afferents generate build-up EPSCs via non-mossy contact to soma
+### Primary vestibular afferents generate build-up EPSCs via non-mossy contact to soma
 
 Besides the ON/OFF distinction described previously, some UBCs respond to electrical stimulation of white matter with a peculiar slow-rising EPSC (Figure 8A–B) (Zampini et al., 2016). These AMPAR-mediated EPSCs are distinct from typical synaptic responses due to their slow activation during the stimulus and slow decay upon cessation of stimulation and their lack of fast EPSCs; notably, they lacked the slow inward current that appears only after transmission ceases, characteristic of the ON UBC. Previously these build-up responses were considered to arise from variation in apposition of receptors and release sites at mossy fiber terminals (Zampini et al., 2016). Here we asked if they represent a different form of input with unique origin. Build-up EPSCs were always blocked by AMPAR antagonists which in some cases revealed a small mGluR2-mediated IPSC (Figure 8B). In other cases, primary afferent stimulation evoked a small IPSC mediated by mGluR2, which, when blocked revealed the build-up EPSC (Figure 8D). Electrical stimulation of white matter activates all axons nearby, including primary, secondary and intrinsic mossy fibers from UBCs. Therefore, the source and mechanism underlying these build-up EPSCs are not easily studied using conventional approaches. In the present experiments that utilized Glt25d2::ChR2-EYFP mice to stimulate primary afferents selectively, access to pre- and postsynaptic morphology allowed us to investigate the basis of these build-up responses in detail.
 
@@ -119,11 +163,11 @@ The vestibular cerebellum is unique in its high density of UBCs, suggesting a ce
 
 **Figure 9.:** Vestibular ganglion (VG) neurons having dimorphic peripheral endings that receive input from Type I and II hair cells project their primary afferents directly to ON UBCs in lobe X of cerebellum, and do not target OFF UBCs. These primary afferents also project to granule cells as well as inhibitory interneurons (Golgi cells) that provide feed-forward inhibition to ON UBCs (not shown). This direct projection to cerebellum may coordinate ensembles of granule cell activities in a ‘labeled line’ representing acceleration or velocity of the head in a single direction. Secondary mossy fibers arising from neurons in the medial vestibular nucleus (MV) project to both OFF and ON UBCs. MV neurons receive input from calretinin-expressing (CR+) VG neurons that make pure-calyx dendritic endings around Type I hair cells, in addition to dimorphic primary afferents. The signals carried by secondary afferents are integrated across vestibular end organs and processed by the local MV circuit. Thus, distinct anatomical pathways that vary in the convergence of inputs, level of processing and axon morphology target distinct UBC classes to transform specific sensory signals.
 
-## UBCs as an input layer preceding granule cells
+### UBCs as an input layer preceding granule cells
 
 Purkinje cells are considered the site of multimodal integration in the cerebellum, due to their enormous number of granule cell inputs. Recent studies have highlighted the integrative aspects of cells in the granule cell layer as well. Granule cells have multiple dendrites, allowing them to receive signals from multiple modalities (Chabrol et al., 2015; Huang et al., 2013; Knogler et al., 2017; Sawtell, 2010). By contrast, UBCs receive only a single mossy fiber input to their dendritic brush and therefore do not integrate multiple modalities, instead maintaining the activities of ensembles of postsynaptic granule cells segregated in a ‘labeled line’. Such an arrangement may be of particular advantage in cerebellar vestibular processing vs other cerebellar modalities. The typical pattern of integration by granule cells could disrupt vestibular processing by mixing inputs from the five vestibular end organs (per ear) that sense head movements in different directions. Instead, UBCs could act as an input layer prior to the granule cells to allow divergence to parallel ensembles of postsynaptic granule cells that each faithfully represent head movement along the axes of different end organs. Convergence must occur at some point to integrate signals from the canals and otoliths, which is necessary to estimate orientation relative to gravity, and this may happen at the granule cell and/or Purkinje cell level. Alternatively, or in addition, convergence occurring in the MV could be processed specifically by UBCs that receive secondary input. Further experiments are necessary to explore whether primary and secondary pathways target distinct populations of granule cells, either through UBCs or directly, and whether the primary and secondary-receiving granule cells vary in physiological response or morphology, as do UBCs.
 
-## Secondary mossy fibers from MV relay integrated signals to UBCs
+### Secondary mossy fibers from MV relay integrated signals to UBCs
 
 MV neurons receive multiple primary afferent inputs, feedback inhibition from Purkinje cells, and can be inhibited by stimulation of the contralateral vestibular organs (Shimazu and Precht, 1966; Uchino et al., 1986). Thus, secondary vestibular mossy fibers may carry signals integrated from multiple end organs and both hemispheres to both ON and OFF UBCs. This is a strikingly different pattern of connectivity than the ON UBCs that receive primary afferent input from a cluster of hair cells in a single end organ and a single VG subtype. OFF UBCs do not appear to receive input from primary afferents at all, and may therefore only process signals that have been integrated by MV. This circuitry indicates that OFF UBCs process bilateral vestibular signals to pause input to ensembles of granule cells, perhaps in a push-pull circuit that could contribute to reflexive eye movements.
 
@@ -131,31 +175,356 @@ The rate of input to secondary afferent-receiving UBCs may be preserved by MV ne
 
 At the level of the vestibular granule cell, it is likely that a single neuron integrates both primary and secondary inputs (Chabrol et al., 2015) but also intrinsic mossy fiber input from UBCs. (Chabrol et al., 2015) emphasized that mossy fibers from different sources may exhibit different forms of short-term plasticity, and these characteristic time-dependent responses impact the integrative function of the granule cell. Given the radical transformation of mossy fiber input by UBCs, which results in prolonged or delayed firing, or cessation in activity in vivo (Kennedy et al., 2014), granule cells that receive some dendritic input from a UBC’s intrinsic mossy fiber likely will be dominated by that input while the UBC is active. However, paired recordings between presynaptic UBCs and postsynaptic granule cells will be necessary to test this hypothesis. Additionally, whether a single granule cell integrates input from multiple UBCs carrying primary and secondary signals will be an important next step to understanding the integration that occurs in vestibular cerebellum.
 
-## Primary and secondary vestibular afferents have distinct morphologies in cerebellum
+### Primary and secondary vestibular afferents have distinct morphologies in cerebellum
 
 Brodal and Drablos (1963) suggested that vestibular lobes of rat cerebellum contain a population of mossy fibers that differ from those of other lobes. The fact that they reported these fibers in flocculus, despite a dearth of primary afferents (Newlands and Perachio, 2003; Osanai et al., 1999), implies that these fibers may have been intrinsic mossy fibers of UBCs, as suggested by Rossi et al. (1995). Differences in morphology between mossy fibers based on their source have been reported in non-vestibular lobes of the cerebellum. Mossy fibers projecting from the deep cerebellar nuclei are larger, are more likely to have filipodia projecting from the rosette, and have more boutons, than those projecting from basal pontine nuclei (Gao et al., 2016; Gilmer and Person, 2017). While mossy fibers originating from different regions that project to lobe X vary in presynaptic plasticity (Chabrol et al., 2015), we find that these axons also exhibit characteristic morphological features that may support differences in electrical activity level. Primary afferents were quite thick, projected along the white matter of lobe X, and only rarely branched. It is perhaps not surprising that the primary vestibular afferents in the cerebellum are large given that their diameter in the vestibular nerve is among the thickest in the brain (mean, ~3 µm) (Gacek and Rasmussen, 1961); notably, these also have elevated tonic firing rates of >100 Hz (Jones et al., 2008). The relatively thin diameter of the secondary afferents suggests lower firing rates (Perge et al., 2012). Indeed, vestibular nucleus neurons that respond to vestibular stimulation in vivo have spontaneous firing rates between 0 and 30 Hz in cats and ~65 Hz in squirrel monkeys (Cullen and McCrea, 1993; Shimazu and Precht, 1965). In mice, the best approximation of spontaneous firing of secondary mossy fibers may be the EPSCs recorded in granule cells in the flocculus that could be modulated by vestibular stimulation. These EPSCs occurred at ~13 Hz under anesthesia (Arenz et al., 2008), much lower than vestibular nerve fibers.
 
 Some UBCs that were postsynaptic to primary afferents had their dendritic brush wrapping around smooth parts of the axon, providing anatomical evidence that synapses may exist along the length of the axon in addition to the terminal swellings. This is corroborated by the finding that smooth parts of the primary afferent contacting a UBC soma could evoke EPSCs. Such differences in en passant mossy terminal morphology might affect efficiency of propagating action potentials.
 
-## Atypical synaptic input to UBCs
+### Atypical synaptic input to UBCs
 
 In build-up responses, contacts are made directly to the UBC soma, clearly out of reach of the dendrite. Previous descriptions of build-up responses in UBCs speculated that such responses might arise from misalignment of a mossy fiber active zone relative to an AMPAR cluster (Zampini et al., 2016). Instead, the observation that build-up EPSCs occur specifically when mossy fibers appear to contact UBC somas demonstrates a novel basis for these synaptic currents. This conclusion depended upon recovering many filled cells after optogenetically stimulating labeled mossy fibers. Apparently, UBC somata express some AMPA receptors sufficient to respond to somatic inputs. Indeed, outside-out patch-clamp recording has previously shown that AMPARs do function in somatic membranes of UBCs (Kinney et al., 1997). Previous analysis of electron micrographs highlighted mossy fiber terminals that contacted Golgi cell somata, forming large convoluted ‘en marron’ synapses (Chan-Palay and Palay, 1971), which are distinct from the club-like endings contacting UBCs. Mossy fibers touching granule cell somata have also been observed, although these same mossy fibers only made definitive synaptic contacts with nearby granule cell dendrites (Palay and Chan-Palay, 1974). The fortuitous observation of somatic contacts by mossy fibers that were associated with distinct postsynaptic responses suggests that somatic inputs could represent a previously unappreciated form of transmission in the granule region of the cerebellum.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Tg(Colgalt2-cre)NF107Gsat/Mmucd</td>
+      <td>Dr. Chip Gerfen (NIH) PMID: 20023653</td>
+      <td>RRID: MGI:2138232</td>
+      <td>Referred to as Glt25d2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.TgN(grm2-IL2RA/GFP)1kyo</td>
+      <td>Dr. Robert Duvoisin (OHSU) PMID: 9778244</td>
+      <td>RBRC: RBRC01194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai9(RCL-tdT)</td>
+      <td>Jackson Laboratory PMID: 22446880</td>
+      <td>RRID: IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai32(RCL-ChR2(H134R)/EYFP)</td>
+      <td>Jackson Laboratory PMID: 22446880</td>
+      <td>RRID: IMSR_JAX:024109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Et(tTA/mCitrine)TCGOSbn</td>
+      <td>Dr. Adam Hantman (Janelia Farm) PMID: 26999799</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Aves Labs</td>
+      <td>Cat # GFP-1020 RRID: AB_10000240</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DsRed</td>
+      <td>Clontech</td>
+      <td>Cat# 632496 RRID:AB_10013483</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mCherry</td>
+      <td>Sicgen</td>
+      <td>Cat# AB0040-200 RRID:AB_2333092</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-rat mGluR1a</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 556389 RRID:AB_396404</td>
+      <td>IHC (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-calretinin</td>
+      <td>Swant</td>
+      <td>Cat# 7697 RRID:AB_2619710</td>
+      <td>IHC (1:500–2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-calretinin</td>
+      <td>Swant</td>
+      <td>Cat# CG1 RRID:AB_10000342</td>
+      <td>IHC (1:500–2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-shank1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 162 013 RRID:AB_2619859</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Myo7A</td>
+      <td>Dr. Peter Barr-Gillespie (OHSU)</td>
+      <td></td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-chicken Alexa Fluor 488</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 703-545-155 RRID:AB_2340375</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-mouse Alexa Fluor 488</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 715-545-150 RRID:AB_2340846</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-rabbit Cy3</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 711-165-152 RRID:AB_2307443</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-goat Cy3</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 705-165-147 RRID:AB_2307351</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-mouse Alexa Fluor 647</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 715-605-151 RRID:AB_2340863</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-chicken Alexa Fluor 647</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 703-605-155 RRID:AB_2340379</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin-Alexa Fluor 647</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# S21374 RRID:AB_2336066</td>
+      <td>IHC (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 594 hydrazide sodium salt</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A10438</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GYKI-53655</td>
+      <td>Tocris</td>
+      <td>Cat # 2555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JNJ-16259685</td>
+      <td>Tocris</td>
+      <td>Cat # 2333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LY-341495</td>
+      <td>Tocris</td>
+      <td>Cat # 1209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(+)-MK-801 hydrogen maleate</td>
+      <td>Sigma</td>
+      <td>Cat # M107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine hydrochloride</td>
+      <td>Sigma</td>
+      <td>Cat # S8753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR-95531 hydrobromide</td>
+      <td>Tocris</td>
+      <td>Cat # 1262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Aminopyradine</td>
+      <td>Tocris</td>
+      <td>Cat # 940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1-CAG-ChR2(H134R)-mCherry (2.92E12 GC/ml)</td>
+      <td>University of Pennsylvania Vector Core</td>
+      <td>Cat # CS0949</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-CAG-ChR2(H134R)-mCherry (2.96E12 GC/ml)</td>
+      <td>University of Pennsylvania Vector Core</td>
+      <td>Cat # CS0916</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-retro-CAG-GFP (1.0E13 GC/ml)</td>
+      <td>Janeila Farm Vector Core PMID: 27720486</td>
+      <td></td>
+      <td>Dr. Adam Hantman (Janelia Farm)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-retro-CAG-tdTomato (7.0E12 GC/ml)</td>
+      <td>Addgene PMID: 27720486</td>
+      <td>Cat # 59462-AAVrg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-retro-CAG-Flex-GFP (9.86E12 GC/ml)</td>
+      <td>Janeila Farm Vector Core PMID: 27720486</td>
+      <td></td>
+      <td>Dr. Adam Hantman (Janelia Farm)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-PHP.S-CAG-tdTomato (1.7E13 GC/ml)</td>
+      <td>Addgene PMID: 28671695</td>
+      <td>Cat # 59462-PHP.S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Black</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>https://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affinity Designer</td>
+      <td>Serif</td>
+      <td>RRID:SCR_016952</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 C57BL/6J-TgN(grm2-IL2RA/GFP)1kyo (referred to as mGluR2-GFP) of both sexes were used to identify UBCs (Borges-Merjane and Trussell, 2015; Nunzi et al., 2002; Watanabe et al., 1998). Male C57BL/6J-Tg(Colgalt2-cre)NF107Gsat/Mmucd (referred to as Glt25d2) mice were used to express either tdTomato or ChR2-EYFP in primary vestibular afferents by crossing with Ai9(RCL-tdT) (Jackson Labs 007909) (Madisen et al., 2010) or Ai32(RCL-ChR2(H134R)/EYFP) (Jackson Labs 024109) (Madisen et al., 2012) mouse lines, respectively. The TCGO mouse line was used for its sparse granule cell labeling (C57BL/6J.Cg-Et(tTA/mCitrine)TCGOSbn) (Huang et al., 2013; Shima et al., 2016). Wild type C57BL/6J mice were used for semicircular canal injections and for breeding. Mouse lines were maintained in the animal facility managed by the Department of Comparative Medicine and all procedures were approved by the Oregon Health and Science University’s Institutional Animal Care and Use Committee and met the recommendations of the Society for Neuroscience. Because mossy fiber and UBC synapse formation is mature in animals older than postnatal day 21 (P21) (Morin and Wood, 2001), we used pups older than this age (P21-P39) for experiments.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were overdosed with isoflurane and perfused through the heart with 0.01M phosphate buffered saline, 7.4 pH (PBS) followed by 4% paraformaldehyde in PBS. Brains were extracted from the skull and incubated in the same solution overnight at 4°C. Brains were transferred to 30% sucrose in PBS for >2 days. 50 μm thick sections were made on a cryostat (HM 550, Microm) at −22°C and saved as floating sections in PBS. When labeling mGluR1 and calretinin, brains were transferred to PBS instead of 30% sucrose and sectioned on a vibratome. To recover cells that were filled with Biocytin during whole-cell recording, acute brain slices were fixed overnight in 4% paraformaldehyde in PBS, followed by storage in PBS. Both floating 50 μm sections and 300 μm thick acute slices were treated with the following procedures. Sections were rinsed 3 × 10 min in PBS, blocked and permeabilized in 2% BSA, 2% fish gelatin, 0.2% Triton X-100 in PBS for >2 hr at room temperature. Sections were incubated in primary antibodies for 2–3 days at 4°C on an orbital shaker. Sections were rinsed 3 × 10 min in PBS, followed by secondary antibodies and streptavidin for 2–3 days at 4°C on an orbital shaker. See Key Resource table for a full list of antibodies used. Sections were rinsed in PBS and in some cases incubated in 4% paraformaldehyde in PBS for 1 hr. Sections were mounted on microscope slides and coverslipped with CFM-3 (CitiFluor).
 
-## Vestibular end organ histology
+### Vestibular end organ histology
 
 Mice were perfused with saline with 10 U/ml heparin warmed to 37°C, followed by 35 ml 4% PFA in 0.1M phosphate buffer 4°C. End organs were carefully dissected out in PBS and permeabilized and blocked in 2% Triton X-100, 5% normal donkey serum in PBS 1 hr RT shaking. Primary antibodies were incubated for 1–3 days at 4°C shaking, then rinsed in PBS and incubated in secondary antibodies as above. End organs were coverslipped using a 0.12 mm spacer and CFM-3 mountant.
 
-## Histological imaging and analysis
+### Histological imaging and analysis
 
 Images were acquired on a Zeiss Elyra PS.1 with AiryScan system that reconstructs super-resolution images from a series of images acquired under spatially structured illumination (Gustafsson, 2000). Images were processed in Zen Black or transferred to Imaris (Bitplane), a multidimentional analysis program based on fluorescence intensity data. Surfaces were created on the channels that contained the UBC and mossy fiber fluorescence to isolate the structure and extract the area and volume statistics and the 3D reconstructions. A surface calculation that is part of the Imaris software was used to create a one voxel thick contact layer between the UBC and mossy fiber surfaces and the contact area was calculated. To test the ability to measure surface areas and volumes accurately, fluorescent microspheres (Spherotech, FP4060-2) were imaged following the same procedures used for biocytin filled cells (Figure 5—figure supplement 1).
 
@@ -167,17 +536,17 @@ To measure primary afferent diameter, sections of lobe X from Glt25d2::ChR2-EYFP
 
 To count peripheral vestibular afferents, whole mounted end organs were imaged using a Zeiss LSM 880 with fast Airyscan super-resolution and 25 × 0.8 NA oil immersion objective. Images were counted using ImageJ and the Cell Counter plugin. Dimorphic calyces counted when they had (1) a 3-dimentional calyx shape (2) at least one bouton process and (3) a labeled axon extending from its base. Calretinin staining clearly labeled pure-calyx afferents that are also distinguishable from their wider opening at the top. These counts are likely underestimates for the total number of retrolabeled afferents, due to tissue damage and inadequate fluorescence. More bouton-only endings may be present because they may be interpreted as being boutons extending from neighboring dimorphs. Afferent fibers were counted 10–50 µm distal to the base of the hair cells.
 
-## Acute brain slice preparation
+### Acute brain slice preparation
 
 Mice were anesthetized with isoflurane and decapitated. The brain was rapidly extracted into ice-cold high-sucrose artificial cerebral spinal fluid solution (ACSF) containing (in mM): 87 NaCl, 75 sucrose, 25 NaHCO3, 25 glucose, 2.5 KCl, 1.25 NaH2PO4, 0.5 CaCl2, 7 MgCl2, bubbled with 5% CO2/95% O2. Parasagittal cerebellum sections containing lobe X were cut at 300 µm with a vibratome (VT1200S, Leica) in ice-cold high-sucrose ACSF. Immediately after cutting, slices were incubated in 35°C recording ACSF for 30–40 min, followed by storage at room temperature. Recording ACSF contained (in mM): 130 NaCl, 2.1 KCl, 1.2 KH2PO4, 3 Na-HEPES, 10 glucose, 20 NaHCO3, 2 Na-pyruvate, 2 CaCl2, 1 MgSO4, 0.4 Na-ascorbate, bubbled with 5% CO2/95% O2(300–305 mOsm).
 
-## Electrophysiology
+### Electrophysiology
 
 Slices were transferred to submerged recording chamber and perfused with the ACSF heated to 33–35°C at 3 ml/min (TC-324B, Warner Instruments). Slices were viewed using an infrared Dodt contrast mask and a 60X water-immersion objective (LUMPlanFL, Olympus) and camera (IR-1000, Dage-MTI) on a fixed stage microscope (Axioskop 2 FS Plus, Zeiss). In slices from mGluR2-GFP mice UBCs were identified by their GFP fluorescence. In slices from Glt25d2 mice UBCs were identified by their soma diameter ~10 μm in the granular cell layer in lobe X. All cells recorded were filled with 1 μM Alexa Fluor 594 hydrazide sodium salt (A10438, Molecular Probes) in order to confirm UBC or granule cell morphology. Pipettes were pulled from thin-walled borosilicate glass capillaries (1.2 mm OD, WPI) to a tip resistance of 5–8 MΩ. The internal pipette solution contained (in mM): 113 K-gluconate, 9 HEPES, 4.5 MgCl2, 0.1 EGTA, 14 Tris-phosphocreatine, 4 Na2-ATP, 0.3 Tris-GFP, with osmolality adjusted to ~290 mOsm with sucrose and pH adjusted to pH 7.3 with KOH. In some experiments 0.1–0.5% biocytin (B1592, Molecular Probes) was added to the pipette solution. Reported voltages are corrected for a −10 mV liquid junction potential. Whole-cell recordings were amplified (10X), low-pass filtered (10 kHz Bessel, Multiclamp 700B, Molecular Devices) and digitized using pClamp software (20–50 kHz, Digidata 1550, Molecular Devices). Further digital filtering was performed offline, in most cases a 1 kHz low-pass Bessel 8-pole filter was applied. Series resistance was compensated with correction 20–40% and prediction 60–70%, bandwidth 2 kHz. Cells were voltage-clamped at −70 mV. Mossy fibers were stimulated extracellularly by applying voltage pulses (1–50 V, 100–250 µs) using a stimulus generator (Master 8, A.M.P.I.) via a concentric bipolar electrode (CBBPC75, FHC). ChR2 was activated using full-field blue LED light flashes (Lambda TLED+, Sutter) through a GFP filter set.
 
 In some cases, a low concentration (50 µM) of the K+ channel blocker 4-aminopyridine (4-AP) was used to increase the reliability of ChR2-evoked transmitter release, presumably by lowering spike threshold. These cases are indicated in figure legends. Bath application of 4-AP increased the peak EPSC, increased synaptic depression and slowed the decay of the EPSC, but did not change the ON or OFF UBC response type (Figure 3—figure supplement 5). Additionally, OFF UBCs were recorded in these slices with electrical stimulation of the white matter and in the presence of 4-AP, indicating that OFF UBCs were present in these transgenic animals and that 4-AP did not block the inwardly rectifying K+ channels that mediate the OFF response (Figure 3—figure supplement 5).
 
-## Viral injections
+### Viral injections
 
 Viral injections were made into the medial vestibular nucleus in P21-25 mGluR2-GFP mice using a stereotax (David Kopf) single axis manipulator (MO-10, Narishige) and pipette vice (Ronal) under isoflurane anesthesia. Glass capillaries (WireTrol II, Drummond Scientific) were pulled on a horizontal puller (P-97, Sutter), beveled at a ~45 degree angle with a 20–30 μm inside diameter using a diamond lapping disc (0.5 µm grit, 3M DLF4XN_5661X) The scalp was cut and a small hole was drilled in the skull. The pipette was lowered into the brain at ~10 µm / s. Five-min periods before and after injection were allowed. 20–50 nl of virus was injected using stereotaxic coordinates 6.1 mm caudal, 0.8 mm lateral to bregma and 3.75 mm ventral to the surface of the brain. AAV1-CAG-ChR2(H134R)-mCherry (2.92E12 GC/ml) virus from the University of Pennsylvania vector core was injected into MV to label and express ChR2 in secondary mossy fibers. AAV2-retro-CAG-Flex-GFP (9.86E12 GC/ml) or AAV2-retro-CAG-GFP (1.0E13 GC/ml) (Janelia Farm) was injected into lobe X of adult Glt25d2 mice (>12 weeks) using stereotaxic coordinates 7.2 mm caudal, 0.5 mm lateral to bregma and 3.0 mm ventral to the surface of the brain. 200–400 nl of virus was used. Experiments were done 2–3 weeks after virus injection.
 

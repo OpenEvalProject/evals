@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.35449.001 Schistosomes are parasitic flatworms infecting hundreds of millions of people. These parasites alternate between asexual reproduction in molluscan hosts and sexual reproduction in mammalian hosts; short-lived, water-borne stages infect each host. Thriving in such disparate environments requires remarkable developmental plasticity, manifested by five body plans deployed throughout the parasite’s life cycle. Stem cells in Schistosoma mansoni provide a potential source for such plasticity; however, the relationship between stem cells from different life-cycle stages remains unclear, as does the origin of the germline, required for sexual reproduction. Here, we show that subsets of larvally derived stem cells are likely sources of adult stem cells and the germline. We also identify a novel gene that serves as the earliest marker for the schistosome germline, which emerges inside the mammalian host and is ultimately responsible for disease pathology. This work reveals the stem cell heterogeneity driving the propagation of the schistosome life cycle.
+Schistosomes are parasitic flatworms infecting hundreds of millions of people. These parasites alternate between asexual reproduction in molluscan hosts and sexual reproduction in mammalian hosts; short-lived, water-borne stages infect each host. Thriving in such disparate environments requires remarkable developmental plasticity, manifested by five body plans deployed throughout the parasite’s life cycle. Stem cells in Schistosoma mansoni provide a potential source for such plasticity; however, the relationship between stem cells from different life-cycle stages remains unclear, as does the origin of the germline, required for sexual reproduction. Here, we show that subsets of larvally derived stem cells are likely sources of adult stem cells and the germline. We also identify a novel gene that serves as the earliest marker for the schistosome germline, which emerges inside the mammalian host and is ultimately responsible for disease pathology. This work reveals the stem cell heterogeneity driving the propagation of the schistosome life cycle.
 
 ## Introduction
 
@@ -36,15 +36,31 @@ To clarify these relationships, we transcriptionally profiled stem cells from Sc
 
 ## Results
 
-## Single-cell RNAseq defines three major sporocyst stem cell classes
+### Single-cell RNAseq defines three major sporocyst stem cell classes
 
 Each miracidium carries 10–20 germinal cells (Pan, 1980; Cort et al., 1954; Wang et al., 2013), which expand massively and differentiate to produce many daughter sporocysts (Figure 1A, and Figure 1—figure supplement 1). Our recent work has shown that germinal cells exhibit heterogeneity within this population (Wang et al., 2013), revealed by the distinct proliferation kinetics and expression of a schistosome homolog of nanos (Wang and Lehmann, 1991), a conserved regulator of germ cell development (Juliano et al., 2010; Wang et al., 2007) also expressed in the schistosome adult stem cells (Collins et al., 2013). To characterize this heterogeneity further, we isolated and transcriptionally profiled these stem cells from in vitro-transformed mother sporocysts (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the schistosome life cycle. Images depicting developmental stages shown in Figure 2 are labeled accordingly. (B) Dissociated cells were gated using forward scattering (FSC), side scattering (SSC), and DyeCycle Violet (DCV) fluorescence to isolate S or G2/M phase cells from mother sporocysts. Dead cells and debris (<30% of total events) were pre-excluded based on high TOTO-3 fluorescence. Right: Sorted G2/M phase cells from mother sporocysts visualized by DIC and fluorescence microscopy. (C) PCA of 35 single-cell transcriptomes of sporocyst stem cells. Summative variances are reported in percentages. Assignment of cell classes is based on hierarchical clustering. (D) Selected genes with heavy loadings are plotted in projection on the first 2 PCs. The projection on each axis represents the correlation coefficient of the respective gene with each principal component. (E) Box plots of expression levels of selected class-dependent genes. ago2-1 expression is also shown as a ubiquitous stem cell marker. Boxes indicate quartiles and medians, whiskers show maxima and minima, and dots represent outliers (above and below 1.5X interquartile range). *p<0.01 (t-test). p-values were estimated based on multiple models using either TPM or log2(TPM +1) as expression values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The schistosome-infected snail, 2 weeks post-infection, was removed from its shell and treated to render the tissues transparent and labeled with fluorescently tagged sWGA that binds strongly to the parasite. This tiled image is ~1.5 cm in width, 2 mm in thickness, and contains ~10 billion voxels. Top: a confocal section. Bottom: ~200 confocal sections are combined to produce a depth-colored projection. (B) Representative images of mother sporocyst (left), and daughter sporocyst containing cercarial embryos (right) inside the snail host. (C) Two-day EdU labeling to detect proliferating cells in mother sporocysts (dashed circles) in a snail 1 week post-infection. Note EdU+ schistosome cells possess large nucleoli stained by POPO-1. EdU+ snail cells (outside of the circles) have compact nuclei without visible nucleoli.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Confocal maximum intensity projections of FISH on in vitro-transformed mother sporocysts using probes to detect the indicated transcripts. Labeled germinal cells are mostly posterior to the degenerating brain from miracidia (dashed circles). Asterisks: tail of each sporocyst; arrowheads: co-expression. Insets: magnified boxed cells.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** A total of 6661 transcripts are detected in at least three single cells. The levels represent the cut-off in fold difference, disk sizes scale with the number of genes specific to the respective class, triangle sides scale with the number of genes differentially expressed between respective class pairs. The differentially expressed genes are defined by two sample t-test (p<0.05), using the more stringent estimate from the assumptions of either unequal or equal population variances. For consistency in quantifying p-values, genes specific to individual classes are defined as being enriched with respect to both the other two classes.
 
 Principal component analysis (PCA) of single-cell transcriptomes revealed three major cell classes (Figure 1C). We designated these classes based upon their respective markers: κ-cells (kappa indicates klf+nanos-2+); φ-cells (phi indicates fgfrA,B+); and δ-cells (delta indicates double-positive for nanos-2 and fgfrA,B). The difference between κ and δ/φ-cells extends along PC1, and contributes to ~30% of the total variance among cells, whereas the difference between δ and φ-cells is secondary, delineated by PC2 and contributing ~10% of the total variance. For example, nanos-2 exhibits almost equal loadings on both PCs, negative on PC1, positive on PC2, consistent with its expression in both κ and δ-cells. Based on projections along the first two PCs (Treutlein et al., 2014), we identified additional genes that contribute to the distinctions between classes: a schistosome p53 homolog and a zinc finger protein (zfp-1) expressed abundantly in δ-cells and at lower levels in φ-cells; and a hes family transcription factor (hesl) expressed specifically in φ-cells (Figure 1D and E, Supplementary file 1). We validated these transcriptomic findings by fluorescent in situ hybridization (FISH) on in vitro-cultured mother sporocysts (Figure 1—figure supplement 2). Unfortunately, the κ class-specific marker klf was expressed at very low levels (Figure 1E), beneath the detection limits of our current FISH protocol.
 
 In addition to these class-defining genes, the divergence of the three cell classes is manifested by hundreds of other genes that exhibit various levels of statistically significant differences between classes (Figure 1—figure supplement 3). However, these genes comprise only a small fraction of transcripts detected in these cells (N = 6,661), and most of them are not enriched in stem cells compared to differentiated cells. Notably, very few transcripts are specific to individual cell classes, with φ-cells showing the fewest specific markers. These observations confirm that sporocyst stem cells, regardless of the subpopulation to which they belong, share a common transcriptomic profile.
 
-## Stem cell classes display distinct spatiotemporal patterns throughout asexual development
+### Stem cell classes display distinct spatiotemporal patterns throughout asexual development
 
 Examining fgfrA and nanos-2 enabled us to distinguish all three cell classes in situ: φ-cells express fgfrA, κ-cells express nanos-2, and δ-cells express both. Thus, we followed these cells throughout intramolluscan development by monitoring fgfrA and nanos-2 expression. After the first week of infection, asexually produced embryos– identified as compact, spherical cell clusters (Schutte, 1974) and from which daughter sporocysts will arise– begin to develop (Figure 2A). φ-cells were distributed beneath the parasite’s outer layer and excluded from daughter embryos. δ-cells were found in large clusters within embryos. κ-cells clustered with δ-cells in embryos and were found in extraembryonic tissues as singlets or doublets, suggested to be the source of developing embryos in previous histological studies (Schutte, 1974).
 
@@ -56,7 +72,7 @@ Two weeks post-infection, mother sporocysts contain many mature daughter sporocy
 
 Intramolluscan development culminates with the production of infectious cercariae. In early cercarial embryos (dashed circle in Figure 2D–2E), φ-cells were found concentrated both anteriorly and posteriorly, where the mouth and tail bud form, respectively. Additionally, two clusters of κ-cells were observed posterior to the penetration glands (Figure 2D–2E), at the site of the germinal cell cluster, considered gonadal primordia based on histological and ultrastructural studies (Cheng and Bier, 1972; Dorsey et al., 2002). In the mature cercarial body (Figure 2F–2G), the κ-cell pair posterior to the glands expands into two clusters that contain multiple cells each. In parallel, five δ-cells were detected in a regular pattern around the penetration glands, with one at the midline and two pairs laterally (Figure 2E), whereas φ-cells are absent at this stage. Since the cercarial body (but not the tail) penetrates the mammalian host, only δ and κ-cells, but not φ-cells, may be passed to the intramammalian (sexual) stage.
 
-## Larvally derived stem cells drive initial proliferation in schistosomula
+### Larvally derived stem cells drive initial proliferation in schistosomula
 
 After emerging from the snail into water, cercariae burrow through mammalian host skin and their bodies transform into the next life-cycle stage, the schistosomula. At this stage, the parasites do not grow for several weeks, until they reach the hepatic portal vein. Thus, the extent of proliferation in the initial days after infection has been unclear (Clegg, 1965), with mitotic cells only detected 4 days post-infection (Clegg and Smithers, 1972). Furthermore, because the adult stem cells have only been identified recently (Collins et al., 2013), their developmental origin has yet to be investigated. The identification of δ and κ-cells in cercariae provides a potential source of new multipotent cells upon entry into the mammalian host.
 
@@ -66,9 +82,29 @@ We mimicked this transition by exposing cercariae to ex vivo mouse tail-skin bio
 
 **Figure 3.:** (A) Schematic of in vitro transformation from cercariae to schistosomula and EdU labelling. (B) EdU+ cells are detected medially (1) and laterally (2L, 2R, 3L,3R) at the locations of δ-cells in cercarial bodies (ventral view). These cells divide to generate doublets, indicated by arrows. The time of EdU pulse post-transformation is indicated. Images are maximum intensity projections of confocal stacks. (C) Confocal maximum intensity projection of FISH of nanos-2 and fgfrA on schistosomula at 2 days post-transformation confirms that only δ-cells incorporated EdU. Right: magnified images of boxed cells. (D) Quantification of EdU incorporation after transformation; x axis: length of EdU treatment post-transformation. Means and standard deviations are specified. N: number of worms analyzed. (E) Irradiated cercariae exhibit no EdU+ cells after transformation, which confirms that EdU specifically labels proliferating cells.
 
-## Stem cells in juveniles reveal germline and somatic populations
+### Stem cells in juveniles reveal germline and somatic populations
 
 Intramammalian growth initiates after schistosomula migrate into the portal vein, around 2 weeks post-infection (Clegg, 1965; Basch, 1981). To characterize proliferation driving juvenile growth, we harvested EdU-labeled parasites 3 weeks post-infection. Worms displayed a range of sizes based upon differences in arrival time, enabling a developmental time course to be reconstructed from a static time point. EdU labeling revealed a posterior growth zone (PGZ) that extended as the parasites grew (Figure 4A). In more mature juveniles, all cells in primordial testes and ovaries also incorporated EdU (Figure 4B). To compare proliferating cells from juveniles to sporocyst stem cells, we transcriptionally profiled isolated cells undergoing division (S and G2/M phase) from juveniles and sporocysts (Figure 4—figure supplement 1). Five-hundred and seventy-three genes were commonly enriched in both populations, including previously identified schistosome stem cell markers (e.g. nanos-2, ago2-1, and fgfrA), and cell cycle-associated transcripts (h2a, cyclin B, and PCNA) (Wang et al., 2013; Collins et al., 2013). Taken together, proliferating cells from juveniles resemble the sporocyst stem cells both morphologically and transcriptionally (Figure 4—figure supplement 1), suggesting that these cells represent juvenile stem cells, which support both somatic growth and germline development in the mammalian host.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Distributions of EdU+ cells in three-week-old juveniles. Note the high density of EdU+ cells toward the posterior of the worms. (B) More mature males with partly developed lateral body extensions and females with a visible uterus display EdU+ cells in primordial gonads and the posterior growth zone (PGZ). (C) Hierarchical clustering of 85 juvenile stem cells distinguishes two major cell classes. Gene names in blue: cell class-dependent genes identified in the sporocyst stem cells; gene names in grey: top genes upregulated in juvenile stem cells compared to sporocyst stem cells. Expression levels were standardized gene-by-gene by mean-centering and dividing by the standard deviation of expressing cells. (D) Domain diagram of Eled, predicted by TMHMM 2.0 (Krogh et al., 2001). TM: transmembrane domain. S/T rich domain: extracellular domain enriched in serine/threonine.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Dissociated cells were gated using FSC, SSC, and DCV fluorescence to isolate S or G2/M phase cells from juveniles. Dead cells and debris (<30% of total events) were pre-excluded based on high TOTO-3 fluorescence. (B) Sorted G2/M phase cells from juveniles visualized by DIC and fluorescence microscopy. (C) Proliferating cells in juveniles are irradiation-sensitive. Calcein AM fluorescence measures cytoplasmic content. Percentages are normalized to total number of live cell events. (D) Single confocal sections to show similar nuclear morphology of EdU+ cells in soma (left) and primordial gonads (right) in juvenile worms. (E) Comparison of expression levels in log space for all genes encoded by the S. mansoni genome (n = 10,765) between juveniles and sporocysts. (F) Comparisons of expression levels in log space for all transcripts (n = 10,765) between sorted G2/M cells from juveniles vs. mother sporocysts. (G) Comparison of enrichment in stem cells in log space for all genes between juveniles and sporocysts. Previously characterized stem cell genes in Wang et al. (2013) are highlighted. All these genes are enriched in the sorted cell populations. (H) Comparisons of expression levels in log space for all transcripts between juvenile cells at S phase vs. G2/M phase. This result suggests that cell-cycle status is unlikely to contribute to the observed cell heterogeneity. Although our single-cell analyses rely exclusively on the G2/M phase cells, at the population level, G2/M and S phase cells are largely transcriptionally identical. This conclusion is surprising but consistent with the previous single-cell analyses of proliferating stem cells in schistosome’s free-living cousin, the planarian (van Wolfswinkel et al., 2014).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Histogram showing variations in CT values corresponding to h2a levels from individual juvenile stem cells on StepOne Real-time PCR platform. 4 CT around the plate median were selected for multiplex qPCR on the Fluidigm Biomark platform, which showed similar variations in h2a level. (B) Positions of nested primer sets on ago2-1, mier, and hmt coding sequences, three genes that cover the full dynamic range in gene expression levels. Two sets of primers were measured simultaneously for each of the three genes to estimate technical noise. (C) Single-cell qPCR determined expression levels of ago2-1, mier, and hmt based on two amplicons show linear relations. The spread from linear relations quantifies the technical uncertainty in this method. Technical noise was determined as 2 ~3 CT and inversely proportional to gene expression level.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) PCA of the single-cell qPCR results revealed that most assayed genes extended along PC1, which appears to scale with average expression levels among cells. The top class-specific markers in sporocyst stem cells, including nanos-2, fgfrA, p53, zfp-1, and hesl were opposed on PC2 by eled. Although eled is undetectable in sporocyst stem cells but is among the most abundant transcripts in juvenile stem cells, cellular heterogeneity was not dominated by differences between sporocyst and juvenile stem cells, since all other top genes in this category (i.e. genes upregulated in juvenile vs. sporocyst stem cells, orange) had small loadings on PC2. Blue: cell class-dependent genes identified in the sporocyst stem cells; arrowheads: ago2-1, mier, and hmt are represented by two independent primer sets. (B) Box plots of expression levels of selected class-dependent genes. Boxes indicate quartiles and medians, whiskers show maxima and minima, and dots represent outliers (above and below 1.5X interquartile range). For all genes, the difference is statistically significant (p<10−4, t-test). Note that the limit of detection of the single-cell qPCR experiments was determined as 22 CT; undetected genes or CT values greater than 22 were all adjusted to 22. Expression values in log space were calculated as 22-CT. The technical noise was determined as 2–3 CT. (C) Confocal sections of FISH to detect p53, zfp-1, and nanos-2. Dashed circles: testes lobes. p53 and zfp-1, are only expressed in δ’-cells and excluded from primordial gonads, whereas nanos-2 is expressed in both soma and a subset of germ cells.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) RNAseq read mapping confirms the annotation of eled (Smp_041540). Exons are shown as green boxes connected by introns (lines). Start and stop codon are also specified. Reads that bridge the two exons are shown by dotted lines. Total RNA was extracted from juvenile worms. (B) Sequence alignment of eled homologs from various schistosome species. Alignment was generated by ClustalOmega (Li et al., 2015) using sequences of Uniprot IDs specified in the figure. Secondary structural elements are predicted by PSIPRED server based on S. mansoni sequence (Buchan et al., 2013). Identical, very similar, and similar amino acids are indicated by ‘*’, ‘:’, and ‘.’, respectively. Colors represent residues with different properties. Orange: A, V, F, P, M, I, L, W; red: D, E; blue: R, K; green: S, T, Y, H, C, N, G, Q.
 
 Are κ and δ-cells maintained during juvenile development? Since κ and δ-cells can be distinguished by a small set of transcripts, we measured expression of 87 genes, including all identified cell class-specific factors, across single juvenile proliferating cells by multiplex qPCR (Figure 4—figure supplement 2, and Supplementary file 2) (van Wolfswinkel et al., 2014). The assayed gene set contained the class-specific factors identified from sporocyst stem cells and the most highly enriched genes in juvenile vs. sporocyst stem cells. Hierarchical clustering identified two major cell classes (Figure 4C). δ’-cells are similar to δ-cells, but express abundantly both δ and φ-cell markers (including nanos-2, fgfrA, p53, zfp-1, and hesl), indicating that these cells are the likely source of the adult somatic stem cells (Collins et al., 2013; 2016).
 
@@ -78,11 +114,19 @@ In juveniles eled expression was detected in primordial testes, ovaries, and vit
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig5-v1.jpg)
 
-**Figure 5.:** eled expression during the course of intramammalian development.(A) FISH detects eled and h2a expression in juveniles. The boundary of the PGZ is defined by a sharp drop of eled+ cells. eled signal in testes and ovary was over saturated in order to detect weaker expression in soma. (B) Double FISH of eled and h2a in juvenile gonads. Insets: magnified boxed areas. (C) eled expression in adults. eled+ cells were only detected in reproductive organs (insets). Note high expression in testes and anterior ovary, where oogonial stem cells are found, but low expression in the posterior ovary, where germ cells differentiate.
+**Figure 5.:** (A) FISH detects eled and h2a expression in juveniles. The boundary of the PGZ is defined by a sharp drop of eled+ cells. eled signal in testes and ovary was over saturated in order to detect weaker expression in soma. (B) Double FISH of eled and h2a in juvenile gonads. Insets: magnified boxed areas. (C) eled expression in adults. eled+ cells were only detected in reproductive organs (insets). Note high expression in testes and anterior ovary, where oogonial stem cells are found, but low expression in the posterior ovary, where germ cells differentiate.
 
-## eled is the earliest schistosome germline marker and functions in opposition to nanos
+### eled is the earliest schistosome germline marker and functions in opposition to nanos
 
 Expression of eled in gonadal primordia led us to examine earlier stages of germ cell development. We found that eled expression precedes nanos-1, which is germline specific both in juveniles (Figure 6—figure supplement 1) and adults (Iyer et al., 2016; Wang and Collins, 2016): only a subset of eled+ cells in gonadal primordia co-express nanos-1, and the number of eled+nanos-1+ cells increases over the course of development (Figure 6A,B). Quantification reveals a sharp transition as worm length exceeds ~400 µm: before the transition, none of the gonadal eled+ cells is nanos-1+; after the transition, most if not all of the gonadal eled+ cells become nanos-1+ (Figure 6C). These results suggest that germ cells may be derived from ε-cells early in juvenile development, and eled is the earliest germline marker yet identified in schistosomes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig6-v1.jpg)
+
+**Figure 6.:** (A) Double FISH of eled and nanos-1 in 3-week juveniles, showing the emergence of nanos-1 expression in gonadal primordia. (B) Magnified boxed gonadal regions in (A). Images are numbered from less to more mature worms. Images are confocal sections. Empty arrowheads: eled+nanos-1-; solid arrowheads: eled+nanos-1+. (C) Quantification of nanos-1 expression in eled+ presumptive germ cells as a function of worm length. Symbols represent cell counts in individual animals. Note the sharp transition at worm length ~400 µm (N = 13).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** WISH of (A) nanos-1 and (B) nanos-2 in juveniles (top: male; bottom: female). While nanos-2 is expressed in both ε and δ’-cells, the other schistosome nanos homolog, nanos-1, only shows expression in testes, ovary, and vitellaria.
 
 To characterize functional interactions between eled and nanos, we knocked down gene function using RNA interference (RNAi) (Mann et al., 2010; Collins et al., 2013; Wang et al., 2013). For these experiments, juveniles were soaked in double-stranded RNA (dsRNA) continuously in vitro for 2 weeks. We focused on male juveniles because female development was retarded under in vitro culture. To assess gene expression changes after RNAi, we performed whole-mount in situ hybridization (WISH); we used confocal microscopy to examine testis structure.
 
@@ -90,7 +134,7 @@ eled RNAi resulted in upregulation of nanos-2 in the PGZ (Figure 7A), where the 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig7-v1.jpg)
 
-**Figure 7.:** eled functionally antagonizes nanos.(A) WISH images showing the expression of eled, nanos-1, and nanos-2 in male juveniles after RNAi. +: higher nanos-2 expression compared to the control; -: regressed testes; asterisks: RNAi depletion of the target transcripts. (B) Confocal sections of DAPI-stained testes in RNAi worms. Nuclear morphologies are consistent with (1) undifferentiated spermatogonium, (2) spermatocyte; (3) round spermatid, (4) elongating spermatid, and (5) sperm. In nanos-1 or nanos-2 (RNAi) animals, all testis lobes regressed; whereas in eled (RNAi) animals, worms with more than two testis lobes with accumulation of sperm were counted as manifesting the phenotype (schistosomes normally possess 6–8 testis lobes). N: number of worms analyzed in one biological replicate; penetrance was consistent between 4 biological replicates.
+**Figure 7.:** (A) WISH images showing the expression of eled, nanos-1, and nanos-2 in male juveniles after RNAi. +: higher nanos-2 expression compared to the control; -: regressed testes; asterisks: RNAi depletion of the target transcripts. (B) Confocal sections of DAPI-stained testes in RNAi worms. Nuclear morphologies are consistent with (1) undifferentiated spermatogonium, (2) spermatocyte; (3) round spermatid, (4) elongating spermatid, and (5) sperm. In nanos-1 or nanos-2 (RNAi) animals, all testis lobes regressed; whereas in eled (RNAi) animals, worms with more than two testis lobes with accumulation of sperm were counted as manifesting the phenotype (schistosomes normally possess 6–8 testis lobes). N: number of worms analyzed in one biological replicate; penetrance was consistent between 4 biological replicates.
 
 ## Discussion
 
@@ -116,13 +160,128 @@ This study presents an important step toward understanding the fundamental mecha
 
 ## Materials and methods
 
-## Parasite harvesting
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Schistosoma mansoni)</td>
+      <td>NMRI</td>
+      <td>BEI Resources</td>
+      <td>NR-21963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Digoxigenin-POD</td>
+      <td>Roche</td>
+      <td>11207733910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Digoxigenin-AP</td>
+      <td>Roche</td>
+      <td>11093274910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNP-HRP</td>
+      <td>PerkinElmer</td>
+      <td>FP1128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fluorescein-POD</td>
+      <td>Roche</td>
+      <td>11426346910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid-pJC53.2</td>
+      <td>Addgene</td>
+      <td>26536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>succinylated Wheat Germ Agglutinin (sWGA)</td>
+      <td>Vector Laboratories</td>
+      <td>FL-1021S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Carboxyrhodamine 110 azide</td>
+      <td>Click Chemistry Tools</td>
+      <td>AZ105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alexa Fluor 488 azide</td>
+      <td>Invitrogen</td>
+      <td>A10266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>5-ethynyl-2-deoxyuridine (EdU)</td>
+      <td>Invitrogen</td>
+      <td>A10044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Vybrant DyeCycle Violet (DCV)</td>
+      <td>Invitrogen</td>
+      <td>V35003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>POPO-1</td>
+      <td>Invitrogen</td>
+      <td>P3580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TOTO-3</td>
+      <td>Invitrogen</td>
+      <td>T3604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Calcein AM</td>
+      <td>Invitrogen</td>
+      <td>C3100MP</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Parasite harvesting
 
 In vitro-transformed mother sporocysts were obtained as detailed previously (Wang et al., 2013; Mann et al., 2010; Ivanchenko et al., 1999). Briefly, S. mansoni (strain NMRI) eggs were purified from livers harvested from schistosome-infected mice (Swiss Webster, female, ~7 weeks post-infection). Free-swimming miracidia were hatched from eggs in artificial pond water and transformed in vitro to mother sporocysts by exchanging pond water with sporocyst culture medium supplemented with 1X Antibiotic-Antimycotic (Gibco) and 20 µg/mL gentamycin (Gemini) at 37°C in 5% CO2/5% O2 for 48 hr. S. mansoni cercariae were shed from infected Biomphalaria glabrata snails about 5–8 weeks post-infection by exposing snails to bright light at 26°C for 1–2 hr. Schistosomula were transformed from cercariae using skin transformation (Clegg and Smithers, 1972; Protasio et al., 2013), in which cercariae were placed on ex vivo mouse skin biopsies (Swiss-Webster, Taconic) overlaid on Basch medium 169 (Basch, 1981) to collect parasites that passed through the skin. Juvenile and adult worms were obtained from infected mice (Swiss Webster NR-21963, ~3 or 6–7 weeks post-infection, respectively) by hepatic portal vein perfusion using 37°C DMEM. Worms were cultured at 37°C/5% CO2 in Basch Medium 169 supplemented with 1X Antibiotic-Antimycotic.
 
 In adherence to the Animal Welfare Act and the Public Health Service Policy on Humane Care and Use of Laboratory Animals, all experiments with and care of mice were performed in accordance with protocols approved by the Institutional Animal Care and Use Committees (IACUC) of: Stanford University (protocol approval number 30366); University of Illinois at Urbana-Champaign (protocol approval number 15134); University of Wisconsin–Madison (protocol approval number M005569).
 
-## Culture media
+### Culture media
 
 Artificial pond water: 0.125 mg/L FeCl3•6H2O, 32.25 mg/L CaCl2•2H2O, 25 mg/L MgSO4•7H2O, 42.5 mg/L KH2PO4, 1.875 mg/L (NH4)2SO4, pH 7.2.
 
@@ -132,7 +291,7 @@ Sporocyst culture medium is modified from Ivanchenko et al. (1999): 10% heat ina
 
 Modified Basch 169 medium (Mann et al., 2010): 1 g/L lactalbumin hydrolysate, 1 g/L glucose, 8 mg/L insulin, 1 μM serotonin, 1 μM hydrocortisone, 0.5 μM hypoxanthine, 0.2 μM triiodothyronine, 0.5X MEM vitamins, 5% Schneider’s Drosophila Medium, 10% heat inactivated FBS, 10 mM HEPES, pH 7.
 
-## Parasite treatments
+### Parasite treatments
 
 To ablate dividing cells, cercariae or juveniles were exposed to either 200 Gy of γ-irradiation on a Gammacell-220 Excel with a Co60 source (Nordion) or 250 Gy of X-ray irradiation on a CellRad Faxitron source and cultured for 48 hr for juveniles and 72 hr for schistosomula.
 
@@ -140,7 +299,7 @@ For EdU labeling, schistosomula were pulsed with 2–5 µM EdU. Juveniles were p
 
 RNAi was performed using previously described protocols (Wang et al., 2013; Collins et al., 2013). Clones were generated using oligonucleotide primers listed in Supplementary file 3. For RNAi, juveniles were soaked in ~20 µg/mL dsRNA for 2 weeks, with media containing dsRNA refreshed daily. We noticed that worm density is critical to achieve efficient knockdown. We used 20–30 juveniles per mL of medium. Each RNAi was repeated on at least three biological replicates (each replicate is from a separate infection). Every biological replicate contained two technical replicates (each replicate is one well of a 24-well plate and contains 20–30 worms). In rare situations, wells with juveniles showing significantly lower activities at the end of RNAi treatments were excluded from downstream analysis, as this deterioration in overall physiology is likely caused by poor culture conditions. To assess gene expression changes after RNAi, we performed WISH as signal development can be quenched while still in the linear range. The development was performed in parallel in control and RNAi animals and stopped simultaneously. Imaging was performed with identical illumination and exposure settings.
 
-## In situ hybridization
+### In situ hybridization
 
 RNA FISH experiments were performed as detailed previously (Wang et al., 2013; Collins et al., 2013) with modifications specific to each life-cycle stage. To observe various intramolluscan stages, schistosome-infected B. glabrata snails (10, 15, 25, or 30 days post-infection, dpi) were relaxed in sodium pentobarbital solution (0.5 mg/mL) for 6 hr, killed in hot water (70–90°C) for 30 s, deshelled, and fixed in 4% formaldehyde in artificial pond water supplemented with 0.2% Triton X-100% and 1% NP-40 for 24 hr at 4°C. The snail tissue was then bleached in a formamide bleaching solution (0.5% formamide, 0.5% SSC, and 1.2% H2O2) for 90 min, equilibrated in 30% sucrose/PBSTx (PBS with 0.3% Triton X-100) overnight, embedded in TBS tissue freezing medium, and cryosectioned at 30 µm thickness. Dried cryosections of snail tissues were then rehydrated in PBSTx on gelatin-coated slides, permeabilized by 2 µg/mL proteinase K for 5 min, and post-fixed for 10 min. Schistosomula were killed with ice-cold 1% HCl for 30–60 s before fixation. Fixed, dehydrated in vitro-transformed mother sporocysts were rehydrated, permeabilized by 2 µg/mL proteinase K (proK, Invitrogen) for 5 min, and post-fixed for 10 min in 4% formaldehyde in PBSTx. Schistosomula were bleached in the formamide bleaching solution for 10 min, and permeabilized by 5 µg/mL proteinase K for 10 min. Juveniles were killed in 6 M MgCl2 for 30 s-5 min, fixed for 4 hr, dehydrated in methanol, incubated in 3% H2O2 in methanol for 30 min, then rehydrated, permeabilized by 10 µg/mL proteinase K for 10 min, and post-fixed. Adults were permeabilized by 5 µg/mL proteinase K for 45 min.
 
@@ -150,13 +309,13 @@ All FISH/WISH experiments were repeated on at least three biological replicates,
 
 To assign cell classes using FISH signals, confocal stacks were obtained from a laser-scanning microscope using over-sampled resolutions recommended by Imaris (Bitplane). The stacks were resampled to give isotropic voxels, and subjected to Gaussian filtering and background subtraction. Center of labeled cell bodies was segmented channel-by-channel with Imaris using parameters empirically determined to minimize the need for manual curation. Overlapping cells from two channels were merged, and the assignment of cell classes for each individual cell was based on the ratio of integrated intensity within 10 µm (the cell diameter) around the respective determined centers between two channels. This analysis provides quantification of co-localization to support our observation of anatomical distributions of different cell classes.
 
-## Cell sorting and RNAseq
+### Cell sorting and RNAseq
 
 We developed a fluorescence-activated cell sorting (FACS) strategy to isolate proliferative stem cells. We used DyeCycle Violet (DCV) to label live cells proportionally to their DNA content and sorted replicating cells at either S or G2/M phase (Hayashi et al., 2006). Schistosomes are covered by a syncytial outer layer impenetrable to typical digestive enzymes used for cell dissociation (Hahnel et al., 2013). To overcome this barrier, we briefly treated the parasites with detergents, followed by trypsin to dissociate tissues into cell suspensions. This method dramatically improved the yield of dissociation and reduced the duration of enzymatic digestion to maximize cell viability. Specifically, in vitro-transformed mother sporocysts were permeabilized in PBS containing 0.1% Triton X-100% and 0.1% NP-40 for 20 s, and washed thoroughly to remove the surfactants. The permeabilized sporocysts were dissociated in 0.125% trypsin in HBSS for 10 min and triturated with a 1 mL pipette for 10 min. Cell suspensions were passed through a 100 μm nylon mesh (Falcon Cell Strainer) and centrifuged at 150 g for 5 min. Cell pellets were gently resuspended, passed through a 30 μm nylon mesh, and stained with Vybrant DyeCycle Violet (5 µM, Invitrogen), TOTO-3 (0.2 µM, Invitrogen), and calcein AM (0.1 µg/mL, Invitrogen) in sporocyst culture medium for 30–45 min. Dissociation of juveniles was performed similarly but with the following modifications: juveniles were permeabilized for 30 s, dissociated in 0.25% trypsin for 20 min, and triturated with serially narrowed flamed-tip glass. Dissociated cells were analyzed on an LSR II flow cytometer or sorted using a FACAria II flow sorter (BD Biosciences), with dead cells excluded based on TOTO-3 fluorescence. We confirmed that the FACS signature of the proliferative cells disappeared as early as 2 days after worms received high doses of X-ray irradiation (Figure 4—figure supplement 1C). All flow sort profiles were confirmed on at least three biological replicates.
 
 250,000 stem cells from either sporocysts or juveniles were sorted directly into lysis buffer (Qiagen) supplemented with 0.6% 2-mercaptoethanol (Sigma), and total RNA was purified using Qiagen RNeasy mini kit. After DNase treatment and poly(A) selection, stranded RNA-seq libraries were prepared using TruSeq Stranded RNA Sample Prep kit (Illumina), pooled in equimolar concentrations, and sequenced on a HiSeq2500 sequencer (Illumina) to acquire 100- or 160 bp reads with a depth of 40–100 million reads per library. To compare these transcriptomes of purified cell populations to those of whole animals, we also extracted total RNA from approximately 10,000 miracidia, in vitro-transformed mother sporocysts (48 hr post-transformation), or cercariae, or about 1000 juvenile worms, using the standard Trizol (Invitrogen) extraction method. All RNAseq data have been submitted to SRA and are available under accession number PRJNA395457.
 
-## Single-cell RNAseq
+### Single-cell RNAseq
 
 Single stem cells from in vitro-transformed mother sporocysts were captured on a medium-sized (10–17 µm) microfluidic RNA-seq chip (Fluidigm) using the Fluidigm C1 system. Sorted cells were resuspended at a density of 300 cells/µL, with size distribution and number density confirmed on a TC20 cell counter (Bio-rad). The single-cell suspension was then mixed with Fluidigm suspension reagent at 7:3 ratio and loaded onto the chip immediately. After capture, chambers on the chip were examined quickly by phase-contrast microscopy to assess the number, size, and morphology of captured cells and by fluorescence microscopy to examine the live-dead cell stain, and only chambers containing single round-shaped live cells were included in the downstream procedures. cDNAs were prepared on the chip using SMARTer Ultra Low RNA kit for Illumina (Clontech) following the manufacturer’s instructions. cDNA quality was quantitated by qPCR analysis of two quality-control genes (ago2-1 and h2a) on an Applied Biosystems Step One Plus station using GoTaq qPCR reagents (Promega). Libraries were constructed from this cDNA using Illumina Nextera XT DNA Sample Preparation kit. Library size distribution and concentration were assessed using High Sensitivity DNA analysis kit on an Agilent Bioanalyzer, as well as fluorometrically using Qubit Fluorometer (Invitrogen). Libraries were then sequenced on a HiSeq 2500 to obtain 100 bp reads at a depth of 3–10 million reads per cell. Data from four biological replicates were pooled together for analysis, but two of them were later excluded from final results, as they had a high ‘dead cell’ rate.
 
@@ -164,7 +323,7 @@ Mapping of reads to the annotated S. mansoni genome (Protasio et al., 2012) was 
 
 PCA was performed using genes expressed in at least three cells and showing variance and bimodality coefficient of expression levels across all cells greater than empirically determined thresholds. Hierarchical clustering was performed using Euclidean distance metric on expression levels standardized gene-by-gene by mean-centering and dividing by the standard deviation of expressing cells. Assignment of cell classes is based on hierarchical clustering. As TPM values are well characterized as log-normal distributions for housekeeping genes, log2(TPM+1) was used as a measure of expression level in PCA and hierarchical clustering.
 
-## Single-cell qRT-PCR
+### Single-cell qRT-PCR
 
 For single-cell analysis of juvenile stem cells, cells were sorted directly into 96-well plates that contained 5 μL 1X CellsDirect One-Step Reaction mix (Invitrogen) supplemented with 0.05 μL RNaseOUT (Invitrogen) in each well. Sorted cells were immediately frozen on dry ice and kept at −80°C until reverse transcription (RT). After thawing plates containing sorted cells, each well was supplemented with 5 μL 1X CellsDirect One-Step Reaction mix that also contained 0.2 μL SuperScript III/Platinum Taq mix (Invitrogen) and outer primer pairs with a final concentration of 10 nM per primer. Reverse transcription was performed at 50°C for 20 min and stopped by heating the plate to 95°C for 2 min. The cDNA was then amplified for 20 cycles (95°C 15 s, 60°C 4 min) before digestion of the remaining outer primers with ExoI (20 U/well, New England Biolabs) at 37°C for 30 min and inactivation of the RT enzyme at 80°C for 15 min. Amplified cDNA samples were diluted 1:6 in water. We performed 10 technical replicates (each replicate consisting of one 96-well plate).
 
@@ -172,6 +331,6 @@ For quality control, 5 μL of each well was used to quantify h2a levels by qPCR.
 
 CT values from the DynamicArray chip qPCR were determined from amplification curves with Fluidigm Real-time PCR analysis software using auto (detectors) thresholding and linear (derivative) baseline correction with a quality threshold of 0.65. The limit of detection was determined as 22 CT based on negative controls; undetected genes or CT values greater than 22 were all adjusted to 22. Expression values in log space were calculated as 22-CT. About 10% of cells showing substantially fewer numbers of genes detected were excluded from downstream analysis. To estimate technical variability, two independent sets of nested primers were designed for three genes, ago2-1, mier (Smp_101370), and hmt (Smp_055310), expression levels of which cover the full dynamic range of the qPCR analysis. The technical noise was determined as 2–3 CT and inversely correlated with gene expression level. PCA was performed on 90 amplicons (87 genes with the extra three technical-variability controls). Subsequently, genes with the highest scores in the first two PCs were identified and used for hierarchical clustering of cells. For hierarchical clustering, expression levels were standardized gene-by-gene by mean-centering and dividing by the standard deviation of expressing cells.
 
-## In toto imaging of schistosome-infected snails
+### In toto imaging of schistosome-infected snails
 
 Fixed and bleached whole snails were rendered transparent by clearing in 50, 75, and 100% tetrahydrofuran (THF) in water, followed by dichloromethane, and hexane, successively, for 12–24 hr at each step (Ertürk et al., 2012). Specimens were then rehydrated through 100% THF, 50% THF, and PBSTx (PBS with 0.3% Triton X-100), and then bleached either in 6% H2O2 in PBSTx overnight or in 0.5% formamide, 0.5X SSC, and 1.2% H2O2 for 90 min. Lectin stainings were performed as previously described (Wang et al., 2013), with 12–24 hr incubation times at every step. Imaging was performed in RapiClear (Sunjinlab).

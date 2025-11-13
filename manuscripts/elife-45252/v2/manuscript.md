@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.45252.001 Previously, we found that phagocytic cells ingest bacteria directly from the cytosol of infected cells without killing the initially infected cell (Steele et al., 2016). Here, we explored the events immediately following bacterial transfer. Francisella tularensis bacteria acquired from infected cells were found within double-membrane vesicles partially composed from the donor cell plasma membrane. As with phagosomal escape, the F. tularensis Type VI Secretion System (T6SS) was required for vacuole escape. We constructed a T6SS inducible strain and established conditions where this strain is trapped in vacuoles of cells infected through bacterial transfer. Using this strain we identified bacterial transfer events in the lungs of infected mice, demonstrating that this process occurs in infected animals. These data and electron microscopy analysis of the transfer event revealed that macrophages acquire cytoplasm and membrane components of other cells through a process that is distinct from, but related to phagocytosis.
+Previously, we found that phagocytic cells ingest bacteria directly from the cytosol of infected cells without killing the initially infected cell (Steele et al., 2016). Here, we explored the events immediately following bacterial transfer. Francisella tularensis bacteria acquired from infected cells were found within double-membrane vesicles partially composed from the donor cell plasma membrane. As with phagosomal escape, the F. tularensis Type VI Secretion System (T6SS) was required for vacuole escape. We constructed a T6SS inducible strain and established conditions where this strain is trapped in vacuoles of cells infected through bacterial transfer. Using this strain we identified bacterial transfer events in the lungs of infected mice, demonstrating that this process occurs in infected animals. These data and electron microscopy analysis of the transfer event revealed that macrophages acquire cytoplasm and membrane components of other cells through a process that is distinct from, but related to phagocytosis.
 
 ## Introduction
 
@@ -27,21 +27,29 @@ We previously found that macrophages acquire microbes and cytosolic content from
 
 ## Results
 
-## Macrophages phagocytose portions of infected cells to acquire both bacteria and cytosolic material
+### Macrophages phagocytose portions of infected cells to acquire both bacteria and cytosolic material
 
 We previously found that bacterial transfer from infected to uninfected BMDMs requires cell-cell contact (Steele et al., 2016). To resolve how bacteria transfer between cells, we performed transmission electron microscopy (TEM) of bone marrow derived macrophages (BMDMs) during bacterial transfer. For this assay, we mixed BMDMs that had been infected for 20 hr with Francisella tularensis and uninfected BMDMs. The donor and recipient cell were identified based on the cell-cell interaction in the image.
 
 By TEM, the recipient cell appeared to engulf a small protrusion of the donor cell (Figure 1A and B). Notably, the donor cell fragment was contiguous with the cytosol of the host in the initial slices but was surrounded by protrusions from the recipient in sequential slices. These data indicate that BMDMs phagocytose small portions of their neighbours.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig1-v2.jpg)
+
+**Figure 1.:** (A) Transmission electron microscopy of a donor and recipient BMDM. The less electron dense cell is the donor cell in this instance. The scale bar represents 5 μm. (B–E) Higher magnification images of the black box in panel A. Each panel is a sequential slice through the same region. The scale bar represents 500 nm. (F) A diagram of the synchronized transfer assay. Recipient cells are seeded onto a coverslip, inverted onto the infected cells and then the coverslip is removed to purify the recipient cells. (G) Representative confocal microscopy image of a recipient cell after bacterial transfer. This image indicates that bacteria and cytosolic content are both acquired together. The different images represent different combinations of stains and the complete overlay. F. tularensis (green), transferred cytosolic protein (Cell Trace Red) (red), LAMP-1 (white) and DAPI (blue). An example donor cells is depicted in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** A representative donor cell infected with F. tularensis (green) that was stained with cell trace red (red) for the cytosolic transfer assay. Wheat germ agglutinin (WGA) (white) denotes the plasma membrane and DAPI (blue) for the nucleus. These are the control cells for Figure 1G.
+
 The material that the macrophage acquired appears to include a F. tularensis bacterium based on shape and electron density. F. tularensis is typically identified in TEM images by of the characteristic electron translucent capsule surrounding the bacteria, which this bacterium lacks (Steele et al., 2013) (Example in Figure 5). The fragmentation of the bacterium and lack of capsule suggests that this particular bacterium may be getting degraded during the transfer process or a killed bacterium is being transferred between cells. Cell-cell transfer is a host-mediated process. So killed bacteria, and potentially even bacterial fragments, are fully capable of transferring between macrophages. It is important to note that in the case of F. tularensis, the majority of bacteria are viable following cell-cell transfer (Steele et al., 2016).
 
-## Host proteins transfer with the bacteria
+### Host proteins transfer with the bacteria
 
 The TEM results suggest that cytosolic material transferred with the bacteria (Figure 1B). To test this observation, we labelled infected donor cells with Cell Trace Red, a dye that labels intracellular proteins by binding to free amines (Figure 1—figure supplement 1). We then inverted a coverslip seeded with unstained, uninfected BMDMs onto the dyed, infected cell population. We let the cells incubate like this for 30 min so that cell-cell transfer could occur between the two populations. We then removed the coverslip, which is almost exclusively ‘recipient’ cells (Figure 1F) (0.13 ± 0.23% of cells are infected donors that migrated to the coverslip, three independent experiments, 500 cells per experiment analyzed, mean ± SD).
 
 We stained recipient cells for LAMP-1 and assessed if Cell Trace Red and bacteria were within the same vacuole following bacterial transfer. We found that most Francisella containing vacuoles (FCVs) also contained Cell Trace Red labelled protein from the donor cell cytosol (Figure 1G). From these results, we conclude that both host cytosolic proteins and bacteria are acquired within the same vacuole following bacterial transfer.
 
-## F. tularensis enters and escapes an endocytic compartment following cell-cell transfer
+### F. tularensis enters and escapes an endocytic compartment following cell-cell transfer
 
 Our results indicate that BMDMs phagocytose portions of live cells but does not reveal what happens to the acquired material following transfer. Phagocytosis of extracellular F. tularensis leads to co-localization of bacteria with the early endosomal marker EEA-1. The F. tularensis containing phagosome matures, which results in co-localization with the late endosomal marker LAMP-1 (Craven et al., 2008). The bacteria then rupture and escape the phagosome, entering the cytosol where they replicate. We were interested in whether FCVs follow a similar maturation process after cell-cell transfer.
 
@@ -49,19 +57,27 @@ Using the assay described in Figure 1F with modified co-incubation times, we fou
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig2-v2.jpg)
 
-**Figure 2.:** F. tularensis enters the endocytic pathway in recipient cells after cell-cell transfer.(A) Representative image of F. tularensis (green) inside an EEA-1 (red) positive vacuole 10 min after synchronized cell-cell transfer. (B) Representative image of F. tularensis (green) inside a LAMP-1 (red) positive vacuole 1 hr after synchronized cell-cell transfer. (C–D) The percentage of cells with at least one bacterium enclosed inside of (C) EEA-1 or (D) LAMP-1 positive vacuoles. The black line represents a conventional infection where the BMDMs phagocytose extracellular bacteria. The blue line represents purified recipient BMDMs after bacterial transfer. From three independent experiments with 50 infected cells counted per experiment per time point. Student t-test. Mean ± standard deviation. *p<0.05, **p<0.01, ***p<0.001. ns- no statistical significance. No time points were significantly different for LAMP-1 co-localization.
+**Figure 2.:** (A) Representative image of F. tularensis (green) inside an EEA-1 (red) positive vacuole 10 min after synchronized cell-cell transfer. (B) Representative image of F. tularensis (green) inside a LAMP-1 (red) positive vacuole 1 hr after synchronized cell-cell transfer. (C–D) The percentage of cells with at least one bacterium enclosed inside of (C) EEA-1 or (D) LAMP-1 positive vacuoles. The black line represents a conventional infection where the BMDMs phagocytose extracellular bacteria. The blue line represents purified recipient BMDMs after bacterial transfer. From three independent experiments with 50 infected cells counted per experiment per time point. Student t-test. Mean ± standard deviation. *p<0.05, **p<0.01, ***p<0.001. ns- no statistical significance. No time points were significantly different for LAMP-1 co-localization.
 
-## The Francisella type VI secretion system is required for post-transfer endosomal escape, but not for cytosolic replication
+### The Francisella type VI secretion system is required for post-transfer endosomal escape, but not for cytosolic replication
 
 Following uptake of extracellular bacteria, F. tularensis requires a type VI secretion system (T6SS) to escape the phagosome (Clemens et al., 2018). Due to the similarities in the vacuole maturation kinetics between extracellular uptake and bacterial transfer, we hypothesized that the T6SS was also required for escape from the recipient cell endosomes after bacterial transfer. To test this hypothesis, we needed a strain that was fully functional in the initially infected cells, but was unable to escape the endosome in the recipient BMDM. To accomplish this goal, we put one of the T6SS structural protein genes (FTL_0119) under anhydrous tetracycline (ATc) induction in a FTL_0119 deletion background. In this strain, the T6SS is only able to form in the presence of ATc.
 
 We infected BMDMs with the T6SS inducible strain after growing the bacteria overnight in broth containing ATc. The inoculation and subsequent infection were in media lacking ATc. Under these conditions, the T6SS strain escaped the initial phagosome and replicated in the cytosol at nearly the same rate as wild-type (Figure 3A, Figure 3—figure supplement 1). These data indicate that the T6SS is largely dispensable for F. tularensis intracellular replication so long as the mutant escapes the initial phagosome. This is crucial because different amounts of replication likely impact the amount of cell-cell transfer.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig3-v2.jpg)
+
+**Figure 3.:** (A) The percent of bacteria enclosed in a LAMP-1 positive vacuoles 3 hr after a synchronized infection with extracellular bacteria. These data represent the ability of the inducible type VI secretion system (T6SS) strain to escape the initial phagosome during a conventional infection under the inducible expression condition. (B) The percent of bacteria enclosed in LAMP-1 positive vacuoles after cell-cell transfer. Under conditions where the inducible strain is not producing the T6SS, the bacteria remain largely trapped while the wildtype strain continues to escape the phagosome over time. From three independent experiments with 50 infected cells counted per experiment per time point. Mean ± standard deviation. Panel A used a One-way Anova with Dunnett post-test. Panel B used a Student t-test to compare between time points. **p<0.01, ***p<0.001, ns – not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Colony forming units of wildtype, the parent ΔdotU strain and the ΔdotU strain with dotU under an anhydrous tetracycline inducible promoter. Pre-induced indicates that the bacteria were only exposed to ATc in the overnight and not during or after inoculation of the BMDMs. This assay was performed three times in triplicate and the data represents the mean ± standard deviation. One-way ANOVA with Dunnett post-test. *p<0.05, **p<0.01, **p<0.001.
+
 Normally, Francisella escapes the FCV over time (Figure 3B). But following cell-cell transfer with the T6SS inducible strain, the FCV remained intact for at least 6 hr (Figure 3B). The phagosomal escape defect is similar between the post-transfer FCV in the T6SS inducible strain and impaired escape in the initial phagosome following inoculation with the uninduced T6SS or a marker-less, in-frame dotU deletion strain. These data indicate that Francisella uses the same machinery to escape both vacuoles regardless of the route of entry.
 
 In addition to showing similarities between phagosomes and post-transfer FCVs, the T6SS inducible strain enables us to accumulate FCVs in recipient BMDMs over time (Figure 3B). This makes it more likely that we can detect bacteria in FCVs post transfer. Additionally, the bacteria serve as a marker to identify vacuoles post-transfer. We will use this strain in later experiments to test FCV formation during cell-cell transfer by TEM and during mouse infections.
 
-## Cell-cell transfer enhances bacterial transmission compared to extracellular uptake
+### Cell-cell transfer enhances bacterial transmission compared to extracellular uptake
 
 F. tularensis is thought to primarily infect macrophages when the cells phagocytose extracellular bacteria. Our previous results suggest that F. tularensis exploits cell-cell transfer to infect cells and that this process may be common in vivo (Steele et al., 2016). It is unclear if macrophages preferentially acquire bacteria through these infection routes, so we tested if BMDMs acquired more bacteria if the bacteria were extracellular compared to acquisition of bacteria from the cytosol of infected cells.
 
@@ -73,15 +89,43 @@ For these experiments, we normalized the amount of bacteria in each sample. Dono
 
 A small population of infected cells migrates to the recipient population (0.13 ± 0.23%), which will slightly skew our colony forming unit results (three independent experiments, 500 cells examined per experiment, mean ± SD). To account for this, we validated these results by microscopy. We labelled the recipient BMDM plasma membranes with biotin before the two populations were mixed and used the synchronized transfer assay (Figure 1F). After isolating the recipient cells, we stained them with fluorescent streptavidin to ensure they were not contaminating donor cells. Only fully biotin labelled recipient cells were included in the microscopy analysis. We found that recipient BMDMs acquired significantly more bacteria per cell than BMDMs exposed to extracellular F. tularensis (Figure 4B and C). Taken together, cell-cell transfer of bacteria increased the number of bacteria that spread because recipient cells typically acquired multiple bacteria at the same time.
 
-## F. tularensis enters a distinctive vacuole following cell-cell transfer
+### F. tularensis enters a distinctive vacuole following cell-cell transfer
 
 Part of the reason cell-cell transfer was so much more efficient at transferring bacteria is that several bacteria entered the same FCV (Figure 5A). Following phagocytosis of extracellular bacteria, the vast majority of cells have a single bacteria per vacuole (Figure 5—figure supplement 1A). In contrast, almost half of recipient cells with bacteria in a LAMP-1 positive vacuole have multiple bacteria within the same vacuole, with about 20% having more than five bacteria in the same vacuole (Figure 5—figure supplement 1A). Recipient cells often take several bites of the same donor cell, so the same cell often has multiple vacuoles containing bacteria (for example, Figure 2A/B and Figure 4C). Thus, recipient BMDMs acquired several F. tularensis bacteria simultaneously.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative image of a recipient cell following bacterial transfer. The plasma membrane of the initially infected donor cell was labelled with biotin and the purified recipient cells were permeabilized and stained with fluorescent streptavidin (red). (B) The same image as panel A without the wheat germ agglutinin staining for the plasma membrane. The images on the right are higher magnifications of the white box. An example donor cells is depicted in Figure 5—figure supplement 3 (C–D). Two representative transmission electron micrograph images of inducible T6SS bacteria inside of double membrane structures in purified recipient cells. The images on the right are higher magnifications of the boxed region for each respective image. Arrows denote double membranes, white stars denote bacteria. The scale bars are all 500 nm. Sequential slices and related structures in the same cell for Panel C are available in Figure 5—figure supplement 6.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The percent of LAMP-1 positive vacuoles containing the indicated number of F. tularensis bacteria. The white bars represent phagocytosis of extracellular bacteria in a conventional infection. (B) The percentage of vacuoles with three or more bacteria in the same LAMP-1 positive vacuole over time. three independent experiments with 50 infected cells analyzed per experiment per time point. Panel A is derived from a combination of all time points in panel B. Mean ±the standard deviation. Student t-test. ***p<0.001. There were no bacteria in the initial inoculum sample with 5 + bacteria in Panel A after 1200 cells were analyzed across three experiments. For that sample, # is meant to call attention to the vast difference between the samples since a t-test cannot be performed.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) A representative donor BMDM infected with Schu S4. (B) A representative recipient BMDM 2 hr after cell-cell transfer. The images below the panel are higher magnifications of the region in the white box.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** A representative infected donor cell where proteins on the plasma membrane were biotinylated and stained with fluorescent streptavidin (red). These are the control cells for Figure 5A/B.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Two examples of wildtype bacteria in FCVs inside of recipient cells. The insets are higher magnification images of the region denoted in the white boxes. Black arrows point to double membrane regions on the membrane. Wildtype bacteria are labelled with a white asterisk. The scale bar represents 500 nm for the low magnification image.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** The percent of infected cells that contained a LAMP-1 positive FCV with three or more bacteria in the same vacuole. The cell-cell transfer and physical separation (Transwell) samples were purified recipient cells exposed to donor cells for 30 min. The normal infection samples were BMDMs that had been infected with F. tularensis for 20 hr. Mean ± standard deviation. Each data point represents an experiment. three independent experiments with 100 infected cells (cell-cell transfer), 100 infected cells (normal infection) or 25 infected cells (physical separation) per experiment. One-way ANOVA with Dunnett post-test. **p<0.01, ***p<0.001.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (A) A low magnification of the recipient BMDM depicted in Figure 5. The scale bar represents 5 μm. (B) A higher magnification of the white box on the far right. This image depicts at least two bacteria in separate vacuoles within the recipient cell. (C) A higher magnification of the white box on the far left. (D) A series of sequential stacks of the white box in the middle. This large vacuole contains at least six bacteria acquired from the donor cell. The scale bars for panels B-D represent 500 nm. White asterisks denote F. tularensis bacteria. The first slice is the same image as Figure 5 Panel C.
 
 More bacteria per vacuole likely means more bacterial effectors were present to modify the vacuole, possibly increasing bacterial escape kinetics. If more bacteria within the same FCV increased phagosomal escape, the percentage of cells with multi-bacterial FCVs should decrease over time. Instead, we found that the percent of LAMP-1+ vesicles containing multiple bacteria was consistent across the time points that we examined (Figure 5—figure supplement 1B). These data indicate that having multiple bacteria in a vacuole does not substantially alter escape kinetics. It also suggests that vacuoles with several bacteria are not intrinsically different from vacuoles with a single bacterium.
 
 For these assays, we used the live vaccine strain of F. tularensis. However, we observed identical structures following cell-cell transfer of the highly virulent Schu S4 strain (Figure 5—figure supplement 2). Thus, these results are broadly applicable to virulent F. tularensis.
 
-## Transferred bacteria are enclosed in a multi-membranous structure
+### Transferred bacteria are enclosed in a multi-membranous structure
 
 In Figure 1B, the donor cell plasma membrane is enclosed inside of the plasma membrane of the recipient BMDM. This result suggests that vacuoles formed through phagocytosis of intact cells should have two membranes. We hypothesized that the transferred material would be inside of a structure that resembles an autophagosome, but is made from membranes of two different cells. The plasma membrane of the recipient cell should enclose the structure, just like a typical phagosome. Inside of that should be a portion of the donor cell plasma membrane that was pinched off during transfer. The transferred cytosolic content would be at the core of this structure.
 
@@ -93,17 +137,25 @@ The inducible T6SS strain was only found inside of multi-membraned structures in
 
 The morphology of these FCVs is unusual. The T6SS inducible bacteria were found within complex, membranous structures that most closely resemble residual bodies (Novikoff and Shin, 1978). Residual bodies are the undigested remnants of phagosolysosomes or autophagolysosomes (De Duve and Wattiaux, 1966). Since the mutant cannot escape, the vacuole likely matures down the normal degradative pathway. In comparison, TEM of wildtype F. tularensis indicate that the bacteria are in a more electron dense, less membranous compartment. This is likely due to modifications of the vacuole by the T6SS, which is essential for F. tularensis to escape the vacuole.
 
-## Cell-Cell contact is required for FCVs containing multiple bacteria to form
+### Cell-Cell contact is required for FCVs containing multiple bacteria to form
 
 A possible alternative explanation for the formation of FCVs containing multiple bacteria is phagocytosis of extracellular vesicles that contain several bacteria. In theory, this structure would also form a double membraned compartment after phagocytosis that could enclose several bacteria. To assess the likelihood that extracellular vesicles explain our phenotype rather than contact dependent cell-cell transfer, we analyzed how many cells had FCVs containing several bacteria when the infected and uninfected populations were physically separated.
 
 We only observed FCVs containing several bacteria under conditions where cell-cell contact was possible (assay from Figure 1F). When infected and uninfected BMDMs were physically separated by 2–3 millimetres using a Transwell membrane, very few recipient BMDMs became infected and we did not find a single recipient cell with multiple bacteria in the same LAMP-1+ vacuole in any of the experiments (Figure 5—figure supplement 5). In this setup, bacteria and extracellular vesicles can pass through the membrane, but whole cells from the different populations could not touch. In contrast, uninfected cells that were able to physically touch infected cells had readily observable multi-bacterial FCVs. Thus, cell-cell transfer needs to occur for recipient cells to acquire multiple bacteria within the same FCV.
 
-## FCVs containing multiple bacteria occur in a mouse infection model
+### FCVs containing multiple bacteria occur in a mouse infection model
 
 To test if multi-bacterial FCVs form in vivo, we intranasally inoculated mice with the inducible T6SS strain. The lungs were harvested 24 hr post inoculation and a single cell suspension of cells was allowed to adhere to a coverslip for 1 hr. The cells were then washed, fixed with paraformaldehyde and stained for LAMP-1. We then examined the adherent cells ex vivo by microscopy.
 
 We readily found multi-bacterial clusters in LAMP-1+ vacuoles in lung cells ex vivo, similar to our results using cultured BMDMs (Figure 6). Based on the similarities with our in vitro results, cell-cell transfer of bacteria occurs during F. tularensis infections in the lung and is not a cell culture phenomenon.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative image of a LAMP-1 stained recipient BMDM following bacterial transfer. (B–C) Representative images of LAMP-1 stained lung cell ex vivo. Note the similarity in structures between the known recipient BMDM in Panel A and the adherent infected cells ex vivo. F. tularensis is depicted in green, LAMP-1 in red and DAPI in blue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45252/elife-45252-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** An example of a donor cell in the in vivo transfer assay. This cell was identified as a donor based on the number of bacteria per cell, which indicated bacterial replication. These cells were excluded from our analysis.
 
 It is difficult to determine how bacteria infect cells in vivo because there are several different potential routes that likely all occur. To estimate how much cell-cell transfer may be occurring in vivo during F. tularensis infections, we quantified the number of cells with T6SS mutant bacteria clustered within the same LAMP-1+ vacuole. We excluded cells where bacterial growth occurred because these were most likely the initially infected cells (example in Figure 6—figure supplement 1). We found that 19.02 ± 2.93% of the recipient cells had three or more bacteria within the same LAMP-1 positive vacuole (mean ± SD, from 4 experiments with two mice pooled per sample, 45 putative recipient cells identified).
 
@@ -133,41 +185,135 @@ We focused on a bacterium that escapes the phagosome in this study, but pathogen
 
 ## Materials and methods
 
-## Antibodies and critical reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>EEA-1 (goat monoclonal)</td>
+      <td>Santa Cruz Biosciences</td>
+      <td>clone N19, catalog number sc-6415</td>
+      <td>1:50 dilution, permeabilized in 0.1% saponin, 2% FBS in humidifier at 37 degrees Celcius for 30 minutes. Cells cannot be fixed for longer than 7 minutes prior to staining.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LAMP-1 (rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone 1D4B</td>
+      <td>1:500 dilution after stock mixed with 50% glycerol, permeabilized in 0.1% saponin, 2% FBS in humidifier at 37 degrees Celcius for 30 minutes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat secondary (goat monoclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>catalog number 26-4826-82</td>
+      <td>1:500 dilution in0.1% saponin, 2% FBS in humidifier at 37 degrees Celcius</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat secondary (donkey monoclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>catalog number PA1-28662</td>
+      <td>1:500 dilution in 0.1% saponin, 2% FBS in humidifier at 37 degrees Celcius</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>6–10 week old female C57Bl/6J</td>
+      <td>Jackson Labs</td>
+      <td>catalog number 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Francisella tularensis, Live Vaccine Strain)</td>
+      <td>F. tularensis or LVS</td>
+      <td>CDC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Francisella tularensis, Schu S4)</td>
+      <td>F. tularensis Schu S4</td>
+      <td>BEI Resources</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Francisella tularensis, inducibleT6SS mutant)</td>
+      <td>T6SS mutant</td>
+      <td>this paper</td>
+      <td></td>
+      <td>F. tularensis strain with an in-frame, markerless deletion of FTL_0119 (dotU) that is complemented with a pEDL17 plasmid containing dotU under the tetracycline inducible promoter and GFP on a constitutive promoter</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Francisella tularensis, Empty Vector Control)</td>
+      <td>WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>wildtype LVS that is complemented with a pEDL17 plasmid containing a kanamycin resistance cassette under the tetracycline inducible promoter and GFP on a constitutive promoter</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Francisella  tularensis, Empty Vector in ΔdotU)</td>
+      <td>ΔdotU</td>
+      <td>this paper</td>
+      <td></td>
+      <td>A FTL_0119 deletion in LVS that is complemented with a pEDL17 plasmid containing a kanamycin resistance cassette under the tetracycline inducible promoter and GFP on a constitutive promoter</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>anhydrous tetracycline</td>
+      <td>Cayman Chemicals</td>
+      <td>catalog number100009542</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies and critical reagents
 
 The EEA-1 antibody (N-19, sc-6415) and LAMP-1 antibody (1D4B) were acquired from Santa Cruz Biotechnologies (Dallas, Texas) and the Developmental Studies Hybridoma Bank (University of Iowa, Iowa City, Iowa) (Hughes and August, 1981) respectively. The secondary antibodies used were anti-Rat (cat# 26-4826-82) and anti-goat (cat# PA1-28662) from ThermoFisher Scientific (Waltham, Massachusetts).
 
-## Cell culture
+### Cell culture
 
 Bone Marrow derived Macrophages were differentiated and used as previously described (Steele et al., 2016). BMDMs were seeded the night before infection at 200,000 cells per well in a 12 well plate. For all microscopy studies, the imaged BMDMs were seeded onto an acid treated coverslip.
 
-## Bacterial growth
+### Bacterial growth
 
 F. tularensis live vaccine strain and Schu S4 were grown on chocolate agar supplemented with isovitalex for 3 days. The day before infection, the cells were seeded into Chamberlain’s defined media. The culture was shaken at 37°C overnight, typically 16–18 hr.
 
-## Synchronized infection by extracellular bacteria
+### Synchronized infection by extracellular bacteria
 
 All bacterial infections where uptake of extracellular bacteria was tested were performed by synchronizing the infection. Briefly, cells were chilled on ice and had cold media containing bacteria at either a multiplicity of infection of 5 (experiments comparing bacterial uptake to cell-cell transfer) or 100 (all other assays). The cells were placed into a chilled centrifuge and spun for 5 min at 300x g. The cells were then heat shocked in a 37° water bath and incubated for 30 min. Following incubation, the media was exchanged with media containing 10 ug/ml gentamicin.
 
-## Synchronized transfer assays
+### Synchronized transfer assays
 
 BMDMs were seeded directly into a 12 well plate or placed on coverslips. 20 hr post inoculation, the media in both wells was replenished with fresh media containing 10 ug/ml gentamicin and the uninfected BMDMs on the coverslip were inverted onto the infected BMDMs. After a 30 min incubation, the coverslip was removed and placed back in the original well. The cells were then harvested at the indicated time. This procedure had a 0.13 ± 0.23% frequency of infected donor cells attaching to the coverslip (three independent experiments, 500 cells examined per experiment, mean ± SD).
 
-## Inducible type VI secretion system
+### Inducible type VI secretion system
 
 The tetracycline inducible promoter containing plasmid pEDL17 was modified to constitutively express GFP and express either kanamycin resistance (empty vector controls) or DTL_0019 (dotU) (LoVullo et al., 2012). Genes under the control of the tetracycline inducible promoter were induced by 250 ng/ml of anhydrous tetracycline (ATc) (Cayman Chemicals, Ann Arbor, Michigan) in Chamberlains Defined Media for 18 hr prior to inoculating cells. In all induction experiments, ATc was added to the overnight growth media for all samples except the uninduced control. ATc was removed prior to inoculation of host cells unless otherwise indicated. pEDL17-GFP empty vector had a slight but consistent delay in phagosomal escape compared to the pkk214-GFP plasmid used in most of our studies.
 
-## Quantification of bacteria after Cell-Cell transfer
+### Quantification of bacteria after Cell-Cell transfer
 
 BMDMs were synchronously infected with either infected BMDMs in the presence of gentamicin or extracellular bacteria. Extracellular bacteria were added at a multiplicity of infection of 5. This MOI was chosen because the donor BMDMs averaged five bacteria per cell based on bacterial colony forming units at 20 hr post inoculation and the initial number of BMDMs seeded.
 
 After a 30 min incubation, the slide with infected cells in the cell-cell transfer sample was returned to its original well and 10 ug/ml of gentamicin in fresh media was added to all samples. At 2 hr after the start of transfer, the cells were scraped from the plate, lysed by vortexing, serially diluted and quantified.
 
-## Transfer of donor plasma membrane
+### Transfer of donor plasma membrane
 
 BMDMs were infected for 19 hr with GFP-expressing F. tularensis. 10 ug/ml gentamicin added 2 hr post inoculation. The infected cells were labelled with biotin using an EZ-link sulfo-NHS- biotin labelling kit following the manufacturer’s protocol (ThermoFisher Scientific). The cells were washed with complete media and incubated for 30 min after biotin labelling. A coverslip with uninfected, unlabelled cells were placed onto the infected cells for 1 hr. The cells were then lifted off, fixed with 4% paraformaldehyde, washed with PBS followed by 50 mM ammonium chloride, stained with wheat germ agglutinin (cat# W32466 ThermoFisher Scientific) and imaged by confocal microscopy.
 
-## Microscopy
+### Microscopy
 
 Microscopy results were acquired using a Leica DM4000 upright fluorescence microscope. For a bacterium or bacterial cluster to be counted as within an EEA-1 or LAMP-1 positive vacuole, the fluorescent marker had to completely surround the bacteria, as in Figure 2A and B. Bacteria that co-localized with these markers but where the markers did not form a coherent vacuole were not counted as being within a vacuole.
 
@@ -175,7 +321,7 @@ Occasionally, BMDMs will have bacteria in multiple vacuoles or some in vacuoles 
 
 Representative confocal images were acquired using a Leica SP-8 microscope and the same samples were used for representative images and data analysis where applicable.
 
-## Mouse cell to cell transfer analysis
+### Mouse cell to cell transfer analysis
 
 Mice were anesthetized with avertin and intranasally inoculated with 10,000 colony forming units of the inducible T6SS strain. The bacteria were grown in chamberlains defined media containing 250 ng/ml ATc overnight and 250 ng/ml of ATc was added to the PBS containing bacteria that the mice were inoculated with.
 
@@ -185,13 +331,13 @@ The lung cell samples were placed onto chamber slides and incubated at 37° for 
 
 All animals were handled according to approved institutional animal care and use committee (IACUC) protocol #4946 at Washington State University.
 
-## Transmission Electron Microscopy
+### Transmission Electron Microscopy
 
 BMDMs were inoculated with wildtype bacteria or ΔdotU ATc inducible dotU strain. 10 μg/ml of gentamicin was added to the BMDMs at 2 hr post inoculation. The cells were then incubated for a total of 20 hr. At 20 hr post inoculation, BMDMs seeded on a Nunc Thermomax plastic coverslip (ThermoFisher Scientific) were inverted onto the infected cells for synchronized transfer. The cells were incubated with recipient cells for 1 hr, purified and fixed for 1 hr with 2% paraformaldehyde and 2% glutaraldehyde in 0.1M cacodylate buffer (pH 7.2).
 
 The BMDMs were microwave fixed using a Pelco Biowave Pro 36500 Laboratory Microwave System for 1 min at 350 Watts with a temperature restriction set to 38°C. The cells were rinsed 0.1M Cacodylate buffer 2X, 10 min each and 1X in distilled water for 10 min. The cells were incubated in 2% OsO4 and 1.5% potassium ferrocyanide, 2 mM CaCl2 in 0.05M cacodylate buffer (pH 7.2). They were rinsed 3X in distilled water, 10 min each and dehydrated in progressive graded ethanol series (10 min each step). The ethanol was replaced with acetone and the cells were infiltrated in 1:1 acetone and Spurr’s resin overnight on a rotator. The acetone was evaporated over 6 hr. Fresh 100% resin was added and left to infiltrate overnight on a rotator, this step was repeated two more times. The cells were embedded and cured for 24 hr at 70°C. Sectioning, staining and imaging were done as described in Froelich et al. (2011).
 
-## Statistics
+### Statistics
 
 The statistical test for each experiment is listed in the figure legend. All details about the number of replicates, experiments, and cells analyzed are included in the figure legends.
 

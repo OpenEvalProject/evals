@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.14003.001 The interplay between bacterial antimicrobial susceptibility, phylogenetics and patient outcome is poorly understood. During a typhoid clinical treatment trial in Nepal, we observed several treatment failures and isolated highly fluoroquinolone-resistant Salmonella Typhi ( S . Typhi). Seventy-eight S. Typhi isolates were genome sequenced and clinical observations, treatment failures and fever clearance times (FCTs) were stratified by lineage. Most fluoroquinolone-resistant S . Typhi belonged to a specific H58 subclade. Treatment failure with S. Typhi-H58 was significantly less frequent with ceftriaxone (3/31; 9.7%) than gatifloxacin (15/34; 44.1%)(Hazard Ratio 0.19, p=0.002). Further, for gatifloxacin-treated patients, those infected with fluoroquinolone-resistant organisms had significantly higher median FCTs (8.2 days) than those infected with susceptible (2.96) or intermediately resistant organisms (4.01)(p<0.001). H58 is the dominant S. Typhi clade internationally, but there are no data regarding disease outcome with this organism. We report an emergent new subclade of S. Typhi-H58 that is associated with fluoroquinolone treatment failure. Clinical trial registration: ISRCTN63006567. DOI: http://dx.doi.org/10.7554/eLife.14003.001
+The interplay between bacterial antimicrobial susceptibility, phylogenetics and patient outcome is poorly understood. During a typhoid clinical treatment trial in Nepal, we observed several treatment failures and isolated highly fluoroquinolone-resistant Salmonella Typhi (S. Typhi). Seventy-eight S. Typhi isolates were genome sequenced and clinical observations, treatment failures and fever clearance times (FCTs) were stratified by lineage. Most fluoroquinolone-resistant S. Typhi belonged to a specific H58 subclade. Treatment failure with S. Typhi-H58 was significantly less frequent with ceftriaxone (3/31; 9.7%) than gatifloxacin (15/34; 44.1%)(Hazard Ratio 0.19, p=0.002). Further, for gatifloxacin-treated patients, those infected with fluoroquinolone-resistant organisms had significantly higher median FCTs (8.2 days) than those infected with susceptible (2.96) or intermediately resistant organisms (4.01)(p<0.001). H58 is the dominant S. Typhi clade internationally, but there are no data regarding disease outcome with this organism. We report an emergent new subclade of S. Typhi-H58 that is associated with fluoroquinolone treatment failure.Clinical trial registration: ISRCTN63006567.
 
 ## Introduction
 
@@ -56,41 +56,311 @@ During a recent randomised controlled trial (RCT) comparing ceftriaxone and gati
 
 ## Results
 
-## Salmonella Typhi whole genome sequencing
+### Salmonella Typhi whole genome sequencing
 
-We performed WGS on the 78 available
+We performed WGS on the 78 available S. Typhi isolates from patients in both RCT treatment arms (gatifloxacin and ceftriaxone) (Supplementary file 1). The resulting phylogeny, which incorporated reference sequence CT18, indicated that the majority of isolates (65/78; 83.3%) fell within the H58 lineage, while the remaining 13 (16.7%) represented eight different lineages (Figure 1). All but four of the H58 strains contained the common DNA gyrase (gyrA) mutation in codon 83 (S83F), which confers reduced susceptibility to FQs (ciprofloxacin MIC; 0.125–0 5 μg/ml) (Parry et al., 2010). Nested within the S83F H58 group, but separated from the rest of the group by a branch defined by 30 SNPs, was an H58 subclade comprised of 12 isolates containing the S83F gyrA mutation, a mutation in gyrA at codon 87 (D87N), and an additional mutation in the topoisomerase gene, parC (S80I) (H58 triple mutant). Notably, these H58 triple mutants shared high MICs against ciprofloxacin (≥24 μg/ml). Further, an additional two non-H58 RCT isolates with ciprofloxacin MIC≥24 μg/ml had the S83F gyrA mutation, an alternative mutation at codon 87 (D87V), the S80I parC mutation, and an A364V mutation in parE (Figure 1, Supplementary file 1). Notably, none of the sequenced isolates harboured plasmid-mediated quinolone resistance genes (PMQR) or contained additional antimicrobial resistance genes within the well-described S. Typhi-associated IncH1 family of plasmids.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/14003/elife-14003-fig1-v1.jpg)
 
-**Figure 1.:** Salmonella Typhi isolated during a gatifloxacin versus ceftriaxone randomised controlled trial.Maximum likelihood phylogeny based on core-genome SNPs of 78 Salmonella Typhi RCT isolates with the corresponding metadata, including the presence of mutations (dark grey) in gyrA (S83F, D87V and D87N), parC (S80I) and parC (A364V) and susceptibility to ciprofloxacin (susceptible, light blue; intermediate, mid-blue and non-susceptible, dark blue) by Minimum Inhibitory Concentration (MIC). The reference strain CT18 was used for context and highlighted by the black boxes. Red lines linking to metadata show isolates belonging to the Salmonella Typhi H58 lineage (with H58 triple mutants highlighted), other lineages (non-H58) are shown with black lines. The scale bar indicates the number of substitutions per variable site (see methods). Asterisks indicate ≥85% bootstrap support at nodes of interest.DOI: http://dx.doi.org/10.7554/eLife.14003.003
+**Figure 1.:** Maximum likelihood phylogeny based on core-genome SNPs of 78 Salmonella Typhi RCT isolates with the corresponding metadata, including the presence of mutations (dark grey) in gyrA (S83F, D87V and D87N), parC (S80I) and parC (A364V) and susceptibility to ciprofloxacin (susceptible, light blue; intermediate, mid-blue and non-susceptible, dark blue) by Minimum Inhibitory Concentration (MIC). The reference strain CT18 was used for context and highlighted by the black boxes. Red lines linking to metadata show isolates belonging to the Salmonella Typhi H58 lineage (with H58 triple mutants highlighted), other lineages (non-H58) are shown with black lines. The scale bar indicates the number of substitutions per variable site (see methods). Asterisks indicate ≥85% bootstrap support at nodes of interest.
 
-## Clinical presentation of Salmonella Typhi infections
+### Clinical presentation of Salmonella Typhi infections
 
-We stratified clinical data from the RCT by H58 status of the corresponding S. Typhi isolates (H58; N=65, non-H58; N=13) and compared baseline characteristics between these groups. We found no significant differences in demographics and no association between disease severity at presentation between those infected with an H58 S. Typhi isolate or a non-H58 isolate (Supplementary file 2A). Next, we compared the baseline characteristics of patients stratified by ciprofloxacin susceptibility (susceptible, intermediate and resistant), and found no differences in disease severity or demographics on presentation; the only exception being that FQ-resistant S. Typhi were more frequently isolated from adults (Supplementary file 2B). A significantly lower proportion of H58 S. Typhi (4/65; 6.2%) were susceptible to FQs compared to non-H58 isolates (6/13; 46%) (p=0.001) (Table 1) and, overall, H58 isolates had significantly higher (but not resistant) MICs against the majority of tested antimicrobials than non-H58 isolates (Table 1).10.7554/eLife.14003.004Table 1.Comparison of antimicrobial susceptibility by Salmonella Typhi lineage.DOI: http://dx.doi.org/10.7554/eLife.14003.004E testNon-H58 (N=13)H58 (N=65)p value*MIC50MIC90GM (range)MIC50MIC90GM (range)Amoxicillin0.510.77 (0.38–38)0.75>2561.43 (0.38–>256)0.0412Chloramphenicol342.7 (1.5–8)4125.7 (2–>256)0.0147Ceftriaxone0.060.060.06 (0.05–0.13)0.090.190.11 (0.03–0.64)0.0004Gatifloxacin0.130.250.06 (0.01–2)0.1320.21 (0.01–3)0.1197Nalidixic acid>256>25621.6 (1–>256)>256>256346.8 (1–>256)0.0004Ofloxacin0.250.750.24 (0.03–>32)0.5>32321.09 (0.03–>32)0.0240Trimethoprim sulphate0.020.050.03 (0.02–0.05)0.050.320.09 (0.01–>32)0.0016Ciprofloxacin0.130.750.11 (0.01–>32)0.38>320.80 (0.02–>32)0.0051Ciprofloxacin susceptibility group0.0008#- Susceptible6 (46.2%)4 (6.2%)- Intermediate4 (30.8%)48 (73.8%)- Resistant3 (23.1%)13 (20.0%)*Comparisons between Salmonella Typhi lineage for MICs and ciprofloxacin susceptibility groups were based on the Wilcoxon rank sum test and Fisher’s exact test. respectively.MIC: minimum inhibitory concentration, measured in µg/ml#p value for comparison of susceptible vs. intermediate/resistant combined between groups by Fisher’s exact test is 0.001.GM: geometric mean, the upper range of the values was determined by multiplying the MIC by 2 if the result was >X (for example, >256 = 256*2 = 512).
+We stratified clinical data from the RCT by H58 status of the corresponding S. Typhi isolates (H58; N=65, non-H58; N=13) and compared baseline characteristics between these groups. We found no significant differences in demographics and no association between disease severity at presentation between those infected with an H58 S. Typhi isolate or a non-H58 isolate (Supplementary file 2A). Next, we compared the baseline characteristics of patients stratified by ciprofloxacin susceptibility (susceptible, intermediate and resistant), and found no differences in disease severity or demographics on presentation; the only exception being that FQ-resistant S. Typhi were more frequently isolated from adults (Supplementary file 2B). A significantly lower proportion of H58 S. Typhi (4/65; 6.2%) were susceptible to FQs compared to non-H58 isolates (6/13; 46%) (p=0.001) (Table 1) and, overall, H58 isolates had significantly higher (but not resistant) MICs against the majority of tested antimicrobials than non-H58 isolates (Table 1).
 
-## Treatment failure and fever clearance times
+**Table 1.**
+ Comparison of antimicrobial susceptibility by Salmonella Typhi lineage.
 
-The primary endpoint of the RCT in which these data were generated was a composite for treatment failure (see method and previous publication) (
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">E test</th>
+      <th colspan="3">Non-H58 (N=13)</th>
+      <th colspan="3">H58 (N=65)</th>
+      <th>p value*</th>
+    </tr>
+    <tr>
+      <th>MIC50</th>
+      <th>MIC90</th>
+      <th>GM (range)</th>
+      <th>MIC50</th>
+      <th>MIC90</th>
+      <th>GM (range)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amoxicillin</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>0.77 (0.38–38)</td>
+      <td>0.75</td>
+      <td>&gt;256</td>
+      <td>1.43 (0.38–&gt;256)</td>
+      <td>0.0412</td>
+    </tr>
+    <tr>
+      <td>Chloramphenicol</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2.7 (1.5–8)</td>
+      <td>4</td>
+      <td>12</td>
+      <td>5.7 (2–&gt;256)</td>
+      <td>0.0147</td>
+    </tr>
+    <tr>
+      <td>Ceftriaxone</td>
+      <td>0.06</td>
+      <td>0.06</td>
+      <td>0.06 (0.05–0.13)</td>
+      <td>0.09</td>
+      <td>0.19</td>
+      <td>0.11 (0.03–0.64)</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>Gatifloxacin</td>
+      <td>0.13</td>
+      <td>0.25</td>
+      <td>0.06 (0.01–2)</td>
+      <td>0.13</td>
+      <td>2</td>
+      <td>0.21 (0.01–3)</td>
+      <td>0.1197</td>
+    </tr>
+    <tr>
+      <td>Nalidixic acid</td>
+      <td>&gt;256</td>
+      <td>&gt;256</td>
+      <td>21.6 (1–&gt;256)</td>
+      <td>&gt;256</td>
+      <td>&gt;256</td>
+      <td>346.8 (1–&gt;256)</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>Ofloxacin</td>
+      <td>0.25</td>
+      <td>0.75</td>
+      <td>0.24 (0.03–&gt;32)</td>
+      <td>0.5</td>
+      <td>&gt;3232</td>
+      <td>1.09 (0.03–&gt;32)</td>
+      <td>0.0240</td>
+    </tr>
+    <tr>
+      <td>Trimethoprim sulphate</td>
+      <td>0.02</td>
+      <td>0.05</td>
+      <td>0.03 (0.02–0.05)</td>
+      <td>0.05</td>
+      <td>0.32</td>
+      <td>0.09 (0.01–&gt;32)</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>Ciprofloxacin</td>
+      <td>0.13</td>
+      <td>0.75</td>
+      <td>0.11 (0.01–&gt;32)</td>
+      <td>0.38</td>
+      <td>&gt;32</td>
+      <td>0.80 (0.02–&gt;32)</td>
+      <td>0.0051</td>
+    </tr>
+    <tr>
+      <td>Ciprofloxacin susceptibility group</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td>0.0008#</td>
+    </tr>
+    <tr>
+      <td>- Susceptible</td>
+      <td colspan="3">6 (46.2%)</td>
+      <td colspan="3">4 (6.2%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Intermediate</td>
+      <td colspan="3">4 (30.8%)</td>
+      <td colspan="3">48 (73.8%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Resistant</td>
+      <td colspan="3">3 (23.1%)</td>
+      <td colspan="3">13 (20.0%)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Comparisons between Salmonella Typhi lineage for MICs and ciprofloxacin susceptibility groups were based on the Wilcoxon rank sum test and Fisher’s exact test. respectively.MIC: minimum inhibitory concentration, measured in µg/ml#p value for comparison of susceptible vs. intermediate/resistant combined between groups by Fisher’s exact test is 0.001.GM: geometric mean, the upper range of the values was determined by multiplying the MIC by 2 if the result was >X (for example, >256 = 256*2 = 512)._
+
+### Treatment failure and fever clearance times
+
+The primary endpoint of the RCT in which these data were generated was a composite for treatment failure (see method and previous publication) (Arjyal et al., 2016). Treatment failure with H58 S. Typhi was significantly less common in the ceftriaxone group (3/31; 9.7%) than the gatifloxacin group (15/34; 44.1%) (Hazard Ratio (HR) of time to failure 0.19, 95%CI 0.05–0.56, p=0.002) (Table 2). Conversely, there was no significant difference in treatment failure between those infected with non-H58 isolates treated with gatifloxacin (0/6; 0%) or ceftriaxone (2/7; 28.6%) (p=0.32). Similarly, time to fever clearance differed significantly between the two treatment groups in H58 infections, with median FCTs of 5.03 days (interquartile range (IQR): 3.18–7.21) in the gatifloxacin group and 3.07 days (IQR: 1.89–4.52) in the ceftriaxone group (p<0.0006). Again, this trend was not mirrored in the non-H58 S. Typhi infections, with FCTs of 2.87 (IQR: 2.08–3.7) and 3.12 (IQR: 2.2–4.12) days for gatifloxacin and ceftriaxone, respectively (p=0.61) (Table 3). Moreover, in the gatifloxacin arm, H58 S. Typhi tended to be associated with a higher risk of treatment failure (p=0.06) and a longer fever clearance time (p=0.013) (Figure 2, Table 2 and Supplementary file 2C).
+
+**Table 2.**
+ Summary of time to treatment failure by Salmonella Typhi lineage and ciprofloxacin susceptibility.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time to treatment failure</th>
+      <th>Gatifloxacin (events/N)</th>
+      <th>Ceftriaxone (events/N)</th>
+      <th>Hazard ratio of time to failure (95%CI); p value</th>
+      <th>Heterogeneity test (p value)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H58*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>- H58</td>
+      <td>15/34</td>
+      <td>3/31</td>
+      <td>0.19 (0.05, 0.56); p=0.002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Non-H58</td>
+      <td>0/6</td>
+      <td>2/7</td>
+      <td>3.87 (0.31, 534.24); p=0.32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ciprofloxacin susceptibility group†</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>- Susceptible</td>
+      <td>0/5</td>
+      <td>1/5</td>
+      <td>2.40 (0.13, 350.21); p=0.57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Intermediate</td>
+      <td>7/25</td>
+      <td>2/27</td>
+      <td>0.27 (0.05, 0.99); p=0.049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Resistant</td>
+      <td>8/10</td>
+      <td>2/6</td>
+      <td>0.27 (0.05, 1.01); p=0.052</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Likelihood ratio test p=0.06 and 0.40 for comparison of time to treatment failure between H58 vs. non-H58 groups in gatifloxacin arm only and in all patients, respectively†Likelihood ratio test p=0.007 for comparison of time to treatment failure between MIC groups in gatifloxacin arm only_
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/14003/elife-14003-fig2-v1.jpg)
 
-**Figure 2.:** Salmonella Typhi lineage and ciprofloxacin susceptibility with treatment failure and fever clearance time in patients randomised to gatifloxacin.(A) Kaplan-Meier curve for time to treatment failure by H58 and non-H58 Salmonella Typhi. (B) Kaplan-Meier curve for time to treatment failure by Salmonella Typhi susceptibility group (susceptible, intermediate, resistant to ciprofloxacin). (C) Non-parametric maximum likelihood estimators for interval-censored fever clearance time (see methods) by H58 and non-H58 Salmonella Typhi. (D) Non-parametric maximum likelihood estimators for interval-censored fever clearance time by Salmonella Typhi susceptibility group (susceptible, intermediate, resistant to ciprofloxacin).DOI: http://dx.doi.org/10.7554/eLife.14003.006
+**Figure 2.:** (A) Kaplan-Meier curve for time to treatment failure by H58 and non-H58 Salmonella Typhi. (B) Kaplan-Meier curve for time to treatment failure by Salmonella Typhi susceptibility group (susceptible, intermediate, resistant to ciprofloxacin). (C) Non-parametric maximum likelihood estimators for interval-censored fever clearance time (see methods) by H58 and non-H58 Salmonella Typhi. (D) Non-parametric maximum likelihood estimators for interval-censored fever clearance time by Salmonella Typhi susceptibility group (susceptible, intermediate, resistant to ciprofloxacin).
 
-As we identified two non-H58 isolates that were also FQ-resistant (Figure 1), we additionally stratified outcome for the gatifloxacin arm (N=40 patients) by FQ susceptibility of the infecting organism. Those infected with FQ-resistant S. Typhi failed gatifloxacin treatment more frequently (8/10; 80%) than those infected with an intermediately resistant organism (7/25; 28%) or a susceptible organism (0/5; 0%) (p=0.007) (Figure 2 and Table 2). Furthermore, in the gatifloxacin arm, those infected with FQ-resistant organisms had significantly higher median FCTs than those infected with S. Typhi with alternative FQ susceptibility profiles (median FCTs (days): susceptible, 2.96 (IQR: 2.13–3.85), intermediate, 4.01 (IQR: 2.76–5.37) and resistant 8.2 (IQR: 5.99–10.5), respectively [p<0.0001]) (Table 3 and Supplementary file 2D). Comparatively, the median FCT for those infected with an FQ-resistant organism but randomised to ceftriaxone was 3.83 days (IQR: 2.96–4.7) (p<0.0001 for the between-treatment comparison).10.7554/eLife.14003.007Table 3.Summary of fever clearance time by Salmonella Typhi lineage and ciprofloxacin susceptibility.DOI: http://dx.doi.org/10.7554/eLife.14003.007Fever clearance timeGatifloxacin median (IQR) daysCeftriaxone median (IQR) daysAcceleration factor (95%CI); p valueHeterogeneity test (p value)H58¥0.07- H585.03 (3.18, 7.21)3.07 (1.89 ,4.52)1.59 (1.22, 2.09); p=0.0006- Non-H582.87 (2.08, 3.7)3.12 (2.2, 4.12)0.90 (0.59, 1.36); p=0.61Ciprofloxacin susceptibility group‡0.015- Susceptible2.96 (2.13, 3.85)4.78 (4.01, 5.5)0.71 (0.49, 1.02); p=0.07- Intermediate4.01 (2.76, 5.37)2.63 (1.52, 4.05)1.31 (0.97, 1.76); p=0.07- Resistant8.2 (5.99, 10.5)3.83 (2.96, 4.7)2.23 (1.57, 3.17); p<0.0001¥p=0.013 and p=0.029 for comparison of interval censored time to fever clearance between H58 vs. non-H58 groups in gatifloxacin arm only and in all patients, respectively‡p<0.0001 for comparison of interval censored time to fever clearance between MIC groups in gatifloxacin arm only
+As we identified two non-H58 isolates that were also FQ-resistant (Figure 1), we additionally stratified outcome for the gatifloxacin arm (N=40 patients) by FQ susceptibility of the infecting organism. Those infected with FQ-resistant S. Typhi failed gatifloxacin treatment more frequently (8/10; 80%) than those infected with an intermediately resistant organism (7/25; 28%) or a susceptible organism (0/5; 0%) (p=0.007) (Figure 2 and Table 2). Furthermore, in the gatifloxacin arm, those infected with FQ-resistant organisms had significantly higher median FCTs than those infected with S. Typhi with alternative FQ susceptibility profiles (median FCTs (days): susceptible, 2.96 (IQR: 2.13–3.85), intermediate, 4.01 (IQR: 2.76–5.37) and resistant 8.2 (IQR: 5.99–10.5), respectively [p<0.0001]) (Table 3 and Supplementary file 2D). Comparatively, the median FCT for those infected with an FQ-resistant organism but randomised to ceftriaxone was 3.83 days (IQR: 2.96–4.7) (p<0.0001 for the between-treatment comparison).
 
-## The emergence of fluoroquinolone-resistant Salmonella Typhi
+**Table 3.**
+ Summary of fever clearance time by Salmonella Typhi lineage and ciprofloxacin susceptibility.
 
-To measure the pattern of emergence of FQ-resistant
+
+<table>
+  <thead>
+    <tr>
+      <th>Fever clearance time</th>
+      <th>Gatifloxacin median (IQR) days</th>
+      <th>Ceftriaxone median (IQR) days</th>
+      <th>Acceleration factor (95%CI); p value</th>
+      <th>Heterogeneity test (p value)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H58¥</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>- H58</td>
+      <td>5.03 (3.18, 7.21)</td>
+      <td>3.07 (1.89 ,4.52)</td>
+      <td>1.59 (1.22, 2.09); p=0.0006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Non-H58</td>
+      <td>2.87 (2.08, 3.7)</td>
+      <td>3.12 (2.2, 4.12)</td>
+      <td>0.90 (0.59, 1.36); p=0.61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ciprofloxacin susceptibility group‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>- Susceptible</td>
+      <td>2.96 (2.13, 3.85)</td>
+      <td>4.78 (4.01, 5.5)</td>
+      <td>0.71 (0.49, 1.02); p=0.07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Intermediate</td>
+      <td>4.01 (2.76, 5.37)</td>
+      <td>2.63 (1.52, 4.05)</td>
+      <td>1.31 (0.97, 1.76); p=0.07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Resistant</td>
+      <td>8.2 (5.99, 10.5)</td>
+      <td>3.83 (2.96, 4.7)</td>
+      <td>2.23 (1.57, 3.17); p&lt;0.0001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_¥p=0.013 and p=0.029 for comparison of interval censored time to fever clearance between H58 vs. non-H58 groups in gatifloxacin arm only and in all patients, respectively‡p<0.0001 for comparison of interval censored time to fever clearance between MIC groups in gatifloxacin arm only_
+
+### The emergence of fluoroquinolone-resistant Salmonella Typhi
+
+To measure the pattern of emergence of FQ-resistant S. Typhi in Nepal, we compiled FQ susceptibility data from 837 organisms isolated during enteric fever RCTs conducted at Patan Hospital between 2005 and 2014 (Figure 3) (Pandit et al., 2007; Koirala et al., 2013; Arjyal et al., 2011). MICs against FQs were generally higher for S. Paratyphi A than for S. Typhi. There was a significant temporal increase in S. Typhi MICs against both ciprofloxacin (p<0.0001) and gatifloxacin (p<0.0001), with a sharp increase from 2009. MICs against gatifloxacin in S. Paratyphi A also significantly increased with time (p<0.0001); however, MICs against ciprofloxacin showed only weak evidence of an upward trend over time (p=0.06).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/14003/elife-14003-fig3-v1.jpg)
 
-**Figure 3.:** Salmonella Typhi and Salmonella Paratyphi against ciprofloxacin and gatifloxacin over ten years.Minimum Inhibitory Concentrations (μg/ml) for 568 Nepali Salmonella Typhi (blue) and 269 Nepali Salmonella Paratyphi A (grey) against (A) ciprofloxacin and (B) gatifloxacin collected from four randomised controlled trials conducted between 2005–2014 at Patan Hospital in Kathmandu, Nepal (Pandit et al., 2007; Koirala et al., 2013; Arjyal et al., 2011). The smoothed line derived from the generalized additive model showing a non-linear increase in Minimum Inhibitory Concentrations over time, with shading representing the 95% confidence interval. Lower and upper horizontal lines represent the current CLSI cut-offs for susceptible/intermediate and intermediate/resistant, respectively (CLSI, 2012).DOI: http://dx.doi.org/10.7554/eLife.14003.008
+**Figure 3.:** Minimum Inhibitory Concentrations (μg/ml) for 568 Nepali Salmonella Typhi (blue) and 269 Nepali Salmonella Paratyphi A (grey) against (A) ciprofloxacin and (B) gatifloxacin collected from four randomised controlled trials conducted between 2005–2014 at Patan Hospital in Kathmandu, Nepal (Pandit et al., 2007; Koirala et al., 2013; Arjyal et al., 2011). The smoothed line derived from the generalized additive model showing a non-linear increase in Minimum Inhibitory Concentrations over time, with shading representing the 95% confidence interval. Lower and upper horizontal lines represent the current CLSI cut-offs for susceptible/intermediate and intermediate/resistant, respectively (CLSI, 2012).
 
-We hypothesised that the H58 triple mutants represented a contemporary importation into Nepal. To explore this, we compared the genomes of the 78 RCT
+We hypothesised that the H58 triple mutants represented a contemporary importation into Nepal. To explore this, we compared the genomes of the 78 RCT S. Typhi isolates with those from 58 supplementary S. Typhi isolates from previous studies conducted between 2008 and 2013 in this setting (Figure 4, Supplementary file 1) (Wong et al., 2015). We found that the majority of the local H58 isolates (84/121; 69.4%) were closely related; these strains represented an 'endemic' Nepali H58 clade containing a single S83F gyrA mutation. Additionally, we identified a further five Nepali strains isolated in 2013 that belonged to the H58 triple mutant group, and had an MIC ≥24 μg/ml against ciprofloxacin. Incorporating additional genome sequences from a recent international study of the H58 lineage (Wong et al., 2015), we found that all the Nepali H58 triple mutants were very closely related (5 SNPs to nearest neighbour) to H58 triple mutants isolated previously in neighbouring India between 2008 and 2012 (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/14003/elife-14003-fig4-v1.jpg)
 
-**Figure 4.:** Salmonella Typhi in a regional context.Maximum likelihood phylogeny based on core-genome SNPs of 136 (78 from the RCT) Salmonella Typhi isolates from Nepal and neighbouring India (Supplementary file 1). Main tree shows the overall phylogenetic structure and the presence of specific combinations of mutations in gyrA (S83F, D87V and D87N), parC (S80I) and parE (A364V). The inset shows a magnified view of the fluoroquinolone-resistant Salmonella Typhi H58 triple mutants from Nepal and their close association with similarly fluoroquinolone-resistant Salmonella Typhi H58 triple mutants from India (Wong et al., 2015). The scale bar on the primary tree indicates the number of substitutions per variable site, while that in the inset indicates genetic distance in number of SNPs (see methods). Asterisks indicate ≥85% bootstrap support at nodes of interest.DOI: http://dx.doi.org/10.7554/eLife.14003.009
+**Figure 4.:** Maximum likelihood phylogeny based on core-genome SNPs of 136 (78 from the RCT) Salmonella Typhi isolates from Nepal and neighbouring India (Supplementary file 1). Main tree shows the overall phylogenetic structure and the presence of specific combinations of mutations in gyrA (S83F, D87V and D87N), parC (S80I) and parE (A364V). The inset shows a magnified view of the fluoroquinolone-resistant Salmonella Typhi H58 triple mutants from Nepal and their close association with similarly fluoroquinolone-resistant Salmonella Typhi H58 triple mutants from India (Wong et al., 2015). The scale bar on the primary tree indicates the number of substitutions per variable site, while that in the inset indicates genetic distance in number of SNPs (see methods). Asterisks indicate ≥85% bootstrap support at nodes of interest.
 
 ## Discussion
 
@@ -106,7 +376,7 @@ In conclusion, our data, for the first time, show a significant association betw
 
 ## Materials and methods
 
-## Study design and setting
+### Study design and setting
 
 The RCT from which the organisms and corresponding clinical data originated for these analyses was conducted at Patan Hospital and the Civil Hospital in the Lalitpur area of Kathmandu, Nepal, between 2011 and 2014, as described previously (Arjyal et al., 2016). The trial was registered at www.clinicaltrials.gov (ISRCTN63006567). Briefly, patients were randomly assigned to seven days of treatment with either oral gatifloxacin (400 mg tablets, Square Pharmaceuticals Limited, Bangladesh) at a dose of 10 mg/kg once daily or intravenous ceftriaxone (Powercef, 1000mg injection vial, Wockhardt Ltd, India), injected over 10 min at a dose of 60 mg/kg up to a maximum of two grams (aged 2 to 13 years) or two grams (≥14 years) once daily.
 
@@ -114,12 +384,12 @@ A detailed description of the RCT from which these data were generated has been 
 
 Blood (3 ml if aged <14 years; 8 ml if aged ≥14 years) was taken from all patients for bacterial culture on enrolment. Adult blood samples were inoculated into media containing tryptone soya broth and sodium polyanethol sulphonate, up to a total volume of 50 mL. Bactec Peds Plus culture bottles (Becton Dickinson, New Jersey, USA) were used for paediatric blood samples. Culture results were reported for up to seven days, positive bottles were subcultured onto blood, chocolate and MacConkey agar and presumptive Salmonella colonies were identified using standard biochemical tests and serotype-specific antisera (Murex Biotech, Dartford, England). Antimicrobial susceptibility testing was performed by the modified Bauer-Kirby disc diffusion method with zone size interpretation based on CLSI guidelines (CLSI, 2012). Etests were used to determine MICs, following the manufacturer's recommendations (bioMérieux, France). Ciprofloxacin MICs were used to categorise S. Typhi isolates as susceptible (≤0.06 μg/mL), intermediate (0.12–0.5 μg/mL) and resistant (≥1 μg/mL) following CLSI guidelines (CLSI, 2012).
 
-## Whole genome sequencing and analysis
+### Whole genome sequencing and analysis
 
 Genomic DNA from Nepali S. Typhi organisms originating from this RCT (78 isolates) was extracted using the Wizard Genomic DNA Extraction Kit (Promega, Wisconsin, USA) (Supplementary file 1) (Karkey et al., 2013). Two μg of genomic DNA was subjected to WGS on an Illumina Miseq platform, following the manufacturer’s recommendations to generate 250bp/100bp paired-end reads. All reads were mapped to the reference sequence of S. Typhi CT18 (accession no: AL515582) using SMALT (version 0.7.4). Candidate single nucleotide polymorphisms (SNPs) were called against the reference sequence using SAMtools (Li et al., 2009) and filtered with a minimal phred quality of 30 and a quality cut-off of 0.75. The allele at each locus in each isolate was determined by reference to the consensus base in that genome, using samtools mpileup and removing low confidence alleles with consensus base quality ≤20, read depth ≤5 or a heterozygous base call. SNPs called in phage regions, repetitive sequences or recombinant regions were excluded, (Wong et al., 2015) resulting in a final set of 1,607 chromosomal SNPs. Strains belonging to haplotype H58 were defined by the SNP glpA-C1047T (position 2348902 in S. Typhi CT18, BiP33) (Emary et al., 2012; Holt et al., 2008; Parkhill et al., 2001).
 
 A maximum likelihood (ML) phylogeny was estimated using a 1440 SNP alignment of the 78 RCT isolates in RAxML (version 7.8.6) with the generalized time-reversible substitution model (GTR) and a gamma distribution, with support for the phylogeny assessed via 1000 bootstrap replicates. The alignment was then compared to a global S. Typhi sequence database, with a particular focus on identifying sequences with a mutational profile suggestive of shared ancestry with a divergent H58 clade identified in the previous phylogeny. A secondary ML phylogenetic tree was then inferred from the SNP alignment of the 136 Nepali Typhi along with 19 recently described Typhi H58 with the aforementioned mutational profile, using the same parameters as above (1642 SNPs; Supplementary file 1) (Wong et al., 2015). Raw sequence data are available in the European Nucleotide Archive (ENA) (Supplementary file 1).
 
-## Statistical analysis
+### Statistical analysis
 
 Comparison of baseline characteristics within patient groups, stratified by the H58 status or susceptibility category of their corresponding S. Typhi isolates was performed using the Kruskal Wallis test for continuous variables and Fisher’s exact test for categorical variables. Time to treatment failure was analysed using Firth’s penalized maximum likelihood bias reduction method for Cox regression as a solution for the non-convergence of likelihood function in the case of zero event counts in subgroups (Firth, 1993). For comparisons between treatment arms, H58 status, or ciprofloxacin susceptibility group, the model included treatment arm, H58 status, or susceptibility group as a single covariate. Confidence intervals (CI) and p-values were calculated by profile-penalized likelihood. FCT was analysed as an interval-censored outcome, i.e. as the time interval from the last febrile temperature assessment until the first afebrile assessment, using parametric Weibull accelerated failure time models (Kalbfleisch and Prentice, 2002). Median and inter-quartile range (IQR) FCT calculations for subgroups were based on models for each subgroup separately. Acceleration factors were based on models that included treatment arm as the only covariate. The non-parametric maximum likelihood estimator (NPMLE) was used to visualize the distribution of FCT between groups. Heterogeneity between subgroups was tested with models that included an interaction between treatment arm and the sub-grouping variable. To study the emergence of FQ resistance, data from previous enteric fever trials from 2005–2014 (Pandit et al., 2007; Koirala et al., 2013; Arjyal et al., 2011) was pooled and generalized additive models (GAM) were used to examine potential non-linear trends of ciprofloxacin and gatifloxacin MICs over time. All analyses were performed using R software version 3.2.2 (Team, 2012).

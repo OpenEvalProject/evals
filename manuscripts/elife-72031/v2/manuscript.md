@@ -21,16 +21,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00a0jsq62 Medical Research Council Unit The Gambia at the London School of Hygiene and Tropical Medicine Gambia United Kingdom
-2. https://ror.org/013meh722 Department of Genetics, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/05shq4n12 Genomic Research on Complex Diseases, CSIR-Centre for Cellular and Molecular Biology Hyderabad India
-4. https://ror.org/011cztj49 MRC Lifecourse Epidemiology Unit, University of Southampton, Southampton General Hospital Southampton United Kingdom
-5. https://ror.org/0220mzb33 Department of Women and Children's Health, King's College London London United Kingdom
-6. https://ror.org/024mrxd33 School of Medicine, University of Leeds Leeds United Kingdom
-7. https://ror.org/03jc41j30 School of Food and Biological Engineering, Jiangsu University Zhenjiang China
-8. https://ror.org/00v452281 Epigenomics and Mechanisms Branch, International Agency For Research On Cancer Lyon France
-9. https://ror.org/026k5mg93 Biomedical Research Centre, University of East Anglia Norwich United Kingdom
-10. https://ror.org/0008xqs48 Bellvitge Institute for Biomedical Research Barcelona Spain
+1. Medical Research Council Unit The Gambia at the London School of Hygiene and Tropical Medicine Gambia United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+2. Department of Genetics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Genomic Research on Complex Diseases, CSIR-Centre for Cellular and Molecular Biology Hyderabad India ([ROR:05shq4n12](https://ror.org/05shq4n12))
+4. MRC Lifecourse Epidemiology Unit, University of Southampton, Southampton General Hospital Southampton United Kingdom ([ROR:011cztj49](https://ror.org/011cztj49))
+5. Department of Women and Children's Health, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+6. School of Medicine, University of Leeds Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
+7. School of Food and Biological Engineering, Jiangsu University Zhenjiang China ([ROR:03jc41j30](https://ror.org/03jc41j30))
+8. Epigenomics and Mechanisms Branch, International Agency For Research On Cancer Lyon France ([ROR:00v452281](https://ror.org/00v452281))
+9. Biomedical Research Centre, University of East Anglia Norwich United Kingdom ([ROR:026k5mg93](https://ror.org/026k5mg93))
+10. Bellvitge Institute for Biomedical Research Barcelona Spain ([ROR:0008xqs48](https://ror.org/0008xqs48))
 
 † Corresponding author
 
@@ -58,7 +58,7 @@ Our identification of hotspots in the postnatal methylome that retain a record o
 
 ## Results
 
-## Identification of Gambian SoC-associated CpGs
+### Identification of Gambian SoC-associated CpGs
 
 Key characteristics of DNAm datasets from the two Gambian cohorts analysed in this study are provided in Table 1. DNAm differences associated with SoC are potentially confounded by season of sample collection effects in the ENID 2 yr dataset (n = 233) since all samples were collected at age 24 months (Figure 2A top). This is not the case in the older EMPHASIS cohort (n = 289; age 7–9 yr) where all samples were collected in the Gambian dry season (Figure 2A bottom). To account for the potential influence of season of collection effects, we therefore compared year-round DNAm signatures across ENID (2 yr) and EMPHASIS datasets by focussing on 391,814 autosomal CpGs (‘array background’) intersecting the Illumina HM450 and EPIC arrays used to measure DNAm in each dataset (Table 2). We modelled the effect of date of conception on DNAm using Fourier (or ‘cosinor’) regression (Rayco-Solon et al., 2005) which makes no prior assumptions about specific seasonal windows that might drive DNAm changes in offspring (see Materials and methods).
 
@@ -66,7 +66,138 @@ Key characteristics of DNAm datasets from the two Gambian cohorts analysed in th
 
 **Figure 2.:** (A) Relationship between date of conception and date of sample collection for ENID (top) and EMPHASIS (bottom) cohorts. (B) Modelled seasonal change in methylation for 768 SoC-associated loci (false discovery rate [FDR] < 5%) in the ENID cohort. 26 ME CpGs are marked in red. (C) Conception date of modelled methylation maximum in each cohort for 61 CpGs significantly associated with SoC in both cohorts (left) and 61 matched controls (right). (D) (Left) Date of modelled DNAm maximum vs. seasonal amplitude in each cohort for 768 CpGs significantly associated with SoC in the ENID cohort. MEs are marked in red. Dashed line indicates SoC amplitude threshold used to identify SoC-CpGs. (Right) Same CpGs as left, but in the older EMPHASIS cohort. Significant SoC associations for this cohort are marked in a darker colour. (E) (Left) Seasonal amplitudes for SoC-associated CpGs that are (red) or are not (blue) MEs; along with amplitudes for 768 matched and random controls (light/dark grey respectively). (Right) As left but in the older EMPHASIS cohort. For EMPHASIS significant SoC associations are marked in a darker colour. Boxes represent the middle 50% of the data (inter-quartile range [IQR]); the line inside the box is the median, and whiskers represent values lying within 1.5 times the IQR.
 
+**Table 1.**
+ Gambian seasonality-methylation analysis: cohort characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cohort</th>
+      <th>Sample size</th>
+      <th>Age</th>
+      <th>% male</th>
+      <th>Tissue</th>
+      <th>Methylation array</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ENID (2 yr)</td>
+      <td>233</td>
+      <td>2 years</td>
+      <td>50.6</td>
+      <td rowspan="2">Peripheral blood</td>
+      <td>Illumina Infinium HM450</td>
+    </tr>
+    <tr>
+      <td>ENID (5–7 yr)</td>
+      <td>138</td>
+      <td>5–7 years</td>
+      <td>56.5</td>
+      <td>Illumina Infinium MethylationEPIC</td>
+    </tr>
+    <tr>
+      <td>EMPHASIS</td>
+      <td>289</td>
+      <td>7–9 years</td>
+      <td>54.3</td>
+      <td>Peripheral blood</td>
+      <td>Illumina Infinium MethylationEPIC</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: ENID: Early Nutrition and Immune Development Trial (Moore et al., 2012); EMPHASIS: Epigenetic Mechanisms linking Pre-conceptional nutrition and Health Assessed in India and Sub-Saharan Africa (Chandak et al., 2017). Individuals with ENID longitudinal (5–7 yr) methylation data are a subset of those with methylation at 2 yr. There is no overlap between individuals included in the ENID and EMPHASIS cohorts._
+
+**Table 2.**
+ CpG sets considered in this analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CpG set</th>
+      <th>Number of CpGs</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Array background</td>
+      <td>391,814</td>
+      <td>Intersection of CpGs on Illumina HM450 (ENID 2 yr) and EPIC (EMPHASIS) cohort arrays, post QC</td>
+    </tr>
+    <tr>
+      <td>SoC-CpGs</td>
+      <td>259</td>
+      <td>SoC-associated CpGs with SoC effect size (SoC methylation amplitude) &gt; 4% in the ENID 2 yr dataset</td>
+    </tr>
+    <tr>
+      <td>Matched controls</td>
+      <td>259</td>
+      <td>CpGs with similar methylation distributions to SoC-CpGs in the ENID 2 yr dataset*</td>
+    </tr>
+    <tr>
+      <td>Random controls</td>
+      <td>259</td>
+      <td>Random sample from array background</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Matching methylation distributions determined by Kolmogorov-Smirnov tests (see Appendix 1—figure 16). QC: quality control; LRT: likelihood ratio test. See Materials and methods for further details._
+
 We began by identifying 768 SoC-associated CpGs showing significant seasonal variation in 2 year olds from the ENID cohort with a false discovery rate (FDR) < 5% (Supplementary file 1a; Materials and methods). Fourier regression models revealed a heterogeneous distribution of year-round methylation peaks and nadirs at these loci (Figure 2B). SoC-associated loci were highly enriched for loci exhibiting SIV/ESS previously identified in multi-tissue screens in adult Caucasians (Kessler et al., 2018; Van Baak et al., 2018), hereafter named ‘MEs’ for short (Table 3; Figure 2B, 26 ME CpGs marked in red; enrichment p = 2.5 × 10–14). More than twice as many of these loci were within 100 bp of a putative ME (n = 56; Supplementary file 1a). All identified loci showed increased seasonal amplitudes, defined as the distance between methylation peak and nadir, compared to matched and random controls (Supplementary file 1b; see Table 2 and Materials and methods for justification and further details on selection of controls). Loci with the largest amplitudes tended to show increased methylation in conceptions in the Gambian rainy season (Figure 2D left) in line with our previous observations in this population (Waterland et al., 2010; Dominguez-Salas et al., 2014).
+
+**Table 3.**
+ External datasets considered in this analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CpG set</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Putative metastable epialleles (MEs)</td>
+      <td>1881 ME/SIV/ESS CpGs overlapping array background identified in multi-tissue and MZ/DZ screens in Van Baak et al., 2018 and Kessler et al., 2018.</td>
+    </tr>
+    <tr>
+      <td>Parent-of-origin-specific methylation (PofOm)</td>
+      <td>699 Parent-of-origin-specific methylation loci identified in peripheral blood in Zink et al., 2018, overlapping array background.</td>
+    </tr>
+    <tr>
+      <td>Embryo DNAm data</td>
+      <td>RRBS data for inner cell mass and embryonic liver (&lt;10 weeks’ gestation) from Guo et al., 2014.</td>
+    </tr>
+    <tr>
+      <td>Sperm DNAm data</td>
+      <td>WGBS data from Okae et al., 2014.</td>
+    </tr>
+    <tr>
+      <td>Germline DMRs (gDMRs)</td>
+      <td>Regions differentially methylated in sperm and oocytes identified in WGBS data by Sanchez-Delgado et al., 2016.</td>
+    </tr>
+    <tr>
+      <td>Transposons (ERVs)</td>
+      <td>ERVs determined by RepeatMasker were downloaded from the UCSC h19 annotations repository.</td>
+    </tr>
+    <tr>
+      <td>Transcription factor ChIP-seq</td>
+      <td>ZFP57, TRIM28, and CTCF transcription factor binding sites identified from ChIP-seq in human embryonic kidney and hESCs are described in Kessler et al., 2018.</td>
+    </tr>
+    <tr>
+      <td>Chromatin state predictions and histone three marks</td>
+      <td>Chromatin state predictions for H1 ESCs, fetal brain, fetal muscle, and fetal small intestine generated using Ernst and Kellis, 2012, from Roadmap Epigenomics Consortium et al., 2015. Histone mark data are from the same source.</td>
+    </tr>
+  </tbody>
+</table>
+
+_ME: metastable epiallele; SIV: systemic interindividual variation; ESS: epigenetic supersimilarity; MZ/DZ: monozygotic/dizygotic twins; PofOm: parent-of-origin methylation; RRBS: reduced representation bisulfite-seq; DMR: differentially methylated region; ERV: endogenous retrovirus; ESCs: embryonic stem cells. See materials and methods for further details._
 
 Next, we analysed SoC effects at these 768 loci in 7–9 year olds from the EMPHASIS cohort. Mean methylation at SoC-associated loci was strongly correlated across cohorts (Appendix 1—figure 1), and we found evidence of a similar effect of increased methylation in conceptions in the Gambian rainy season (Figure 2D right). Sixty-one loci (including three ME CpGs) were also significantly associated with SoC (FDR < 5%) in the older cohort (Figure 2D right). Notably, the date of conception at methylation maximum was highly correlated across these two independent and different aged cohorts (Figure 2C left; Spearman rho = 0.7, p = 1.0 × 10–8). No significant correlation was observed at matched controls with similar methylation distributions to SoC-associated loci (Figure 2C right).
 
@@ -88,7 +219,7 @@ Critically, the date of conception at methylation maximum at SoC-CpGs was highly
 
 Our observation of a remarkably similar season of conception signature across two cohorts and three datasets with different confounding structures with respect to season of sample collection, batch, and biological variables (Supplementary file 1p-r ), combined with evidence from cross-cohort and longitudinal analyses of SoC effect attenuation with age led us to conclude that SoC-CpGs act as robust sentinels of SoC-associated effects persisting at least until the age of 2 years.
 
-## Properties of SoC-CpGs
+### Properties of SoC-CpGs
 
 SoC-CpGs are distributed throughout the genome and cluster together in several regions (Appendix 1—figure 4). Noting that the number of clusters is relatively insensitive to the inter-CpG distance used to define them (Appendix 1—figure 5), we identified 56 distinct SoC-CpG clusters and 105 ‘singletons’ (SoC-CpGs with no close neighbours) using a maximum inter-CpG distance of 5 kbp (Supplementary file 1e). With this definition, 59% of SoC-CpGs fell within clusters (Supplementary file 1f). Of note, SoC effect amplitudes and cross-cohort correlations were greater at SoC-CpGs falling within clusters than with singletons (Appendix 1—figure 6).
 
@@ -100,7 +231,7 @@ Pairwise methylation states are highly correlated at a large majority of SoC-CpG
 
 Finally, SoC-CpG reliability is classified as ‘excellent’ (median ICC = 0.76) using probe reliability estimates from a recent repeated measures study (Sugden et al., 2020). Reliability of matched control CpGs is classified as ‘good’ (median ICC = 0.68) using the same method.
 
-## Early stage embryo, gametic, and PofOm
+### Early stage embryo, gametic, and PofOm
 
 Given the strong enrichment for MEs within the set of SoC-CpGs, we next analysed links to methylation changes in early stage human embryos, as we have done previously for putative MEs identified in a whole-genome bisulfite-seq (WGBS) multi-tissue screen (Kessler et al., 2018). We aligned our data with public reduced representation bisulfite-seq (RRBS) data from human IVF (in vitro fertilisation) embryos (Guo et al., 2014) and obtained informative methylation calls for 112,380 array background CpGs covered at ≥10× read depth in inner cell mass (ICM, pre-gastrulation) and/or embryonic liver (post-gastrulation) tissues. As previously noted at putative MEs (Kessler et al., 2018), we found a distinctive pattern of increased incidence of intermediate methylation states at SoC-CpGs in post-gastrulation embryonic liver tissue, strongly contrasting with a general trend of genome-wide hyper- and hypomethylation at loci mapping to array background (Figure 5A). A similar pattern of increased incidence of intermediate methylation states was observed at distribution-matched controls.
 
@@ -116,7 +247,7 @@ Regions of PofOm detected in postnatal samples tend to be differentially methyla
 
 A large majority of SoC-CpGs that are hypomethylated in sperm are not oo-gDMRs (i.e. they are not hypermethylated in oocytes) (Figure 5C and 5D bottom right), suggesting that factors associated with regional sperm hypomethylation rather than differential gametic methylation may be a key driver of sensitivity to periconceptional environment at these loci.
 
-## SoC-CpG overlap with predicted chromatin states
+### SoC-CpG overlap with predicted chromatin states
 
 We assessed the overlap of SoC-CpGs with predicted chromatin states generated from histone marks in various cell lines and tissues by the Roadmap Epigenomics Consortium et al., 2015. Given our interest in methylation states associated with periconceptional environment that persist into early postnatal life, we focussed on data from H1 embryonic stem cells (ESCs) and fetal tissues (fetal brain, muscle, and small intestine) derived from all three germ layers, described as having the ‘highest quality’ epigenomes (see Figure 2 in Roadmap Epigenomics Consortium et al., 2015). Around half of all SoC-CpGs overlapped sites with predicted transcriptional or regulatory function, with relatively few overlapping constitutive heterochromatic regions (Figure 6). Overlaps with specific histone marks in H1 ESCs are given in Appendix 1—figure 10. As expected, given predicted chromatin states, many show a predominance of overlapping H3K4me1 and H3K27me3 marks and combinations thereof, suggestive of active or poised enhancers.
 
@@ -124,7 +255,7 @@ We assessed the overlap of SoC-CpGs with predicted chromatin states generated fr
 
 **Figure 6.:** Chromatin states predicted by ChromHMM (Ernst and Kellis, 2012) from chromatin marks in four cell lines and tissues generated by the Roadmap Epigenomics Consortium et al., 2015. Predicted states for all 259 SoC-CpGs are shown. Predictions from the ChromHMM 15-state model are collapsed to eight states for clarity. TSS: active transcription start site/flanking active TSS/bivalent or poisedTSS; TSS/enhancer: flanking bivalent TSS/enhancer; enhancer: enhancer/bivalent enhancer/genic enhancer; transcription: strong/weak transcription/transcription at gene 5’ and 3’; ZNF/repeat: zinc finger genes and repeats; polycomb: repressed/weak repressed polycomb; heterochromatin; low signal: low signal in all marks states used as inputs to ChromHMM.
 
-## Enrichment of transposable elements and transcription factors associated with genomic imprinting
+### Enrichment of transposable elements and transcription factors associated with genomic imprinting
 
 Variable methylation states at MEs are associated with TEs in murine models (Waterland and Jirtle, 2003; Kazachenka et al., 2018), and we have previously observed enrichment for proximity to two classes of endogenous retroviruses, ERV1 and ERVK, at putative human MEs (Silver et al., 2015; Kessler et al., 2018). Here, we found evidence that SoC-CpGs are enriched for proximity to ERV1 (Figure 7A top) but not ERVK retroviral elements (Appendix 1—figure 11; Table 3).
 
@@ -134,9 +265,50 @@ Variable methylation states at MEs are associated with TEs in murine models (Wat
 
 Enrichment for PofOm and gDMRs at SoC-CpGs suggests a potential link to mechanisms implicated in the maintenance of PofOm and genomic imprinting in the early embryo. Our previous analysis of MEs identified from WGBS data found enrichment for proximal binding sites for three TFs (CTCF, ZFP57, and TRIM28) identified through ChIP-seq of embryonic stem and kidney cells that are linked to maintenance of PofOm at imprints (Kessler et al., 2018). Here, we found evidence for enrichment of proximal ZFP57 binding sites within 2 kbp of a SoC-CpG as previously observed at MEs, but we found no evidence for enrichment of proximal CTCF or TRIM28 binding sites in this array-based study (Figure 7A bottom; Appendix 1—figure 11; Table 3).
 
-## Influence of genotype
+### Influence of genotype
 
 Genetic variation is a major driver of interindividual variation in DNAm via methylation quantitative trait loci (mQTL) (Gaunt et al., 2016). We explored the influence of mQTL on SoC-CpGs in the EMPHASIS cohort for which we had genotype data on 284 individuals measured at >2.6M SNPs after imputation from the Illumina Global Screening Array (GSA) and subsequent LD pruning (see Materials and methods). The majority of mQTL effects occur in cis (Gaunt et al., 2016). In order to maximise power, we therefore adopted a two-step approach where we performed separate screens for mQTL in cis (defined as SNPs within 1 Mb of an associated CpG; Gaunt et al., 2016) and trans (all others), and compared our findings at SoC-CpGs with matched and random control CpGs (Materials and methods). Half of SoC-CpGs had one or more associated mQTL compared with 78% and 19% of matched and random controls, respectively; 92% of SoC-CpG mQTL were in cis (Table 4).
+
+**Table 4.**
+ Methylation quantitative trait loci (mQTL) associated with SoC-CpGs and controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CpG set</th>
+      <th>Number of CpGs with mQTL</th>
+      <th>Number of mQTL (cis/trans)</th>
+      <th>Median number of mQTL per CpG (IQR)</th>
+      <th>Methylation variance explained*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SoC-CpGs</td>
+      <td>130 (50%)</td>
+      <td>2771 (2549/222)</td>
+      <td>6 (2–30)</td>
+      <td>0.09 (0.08–0.15)</td>
+    </tr>
+    <tr>
+      <td>Matched controls</td>
+      <td>201 (78%)</td>
+      <td>7886 (7417/469)</td>
+      <td>15 (4–50)</td>
+      <td>0.09 (0.06–0.21)</td>
+    </tr>
+    <tr>
+      <td>Random controls</td>
+      <td>50 (19%)</td>
+      <td>1512 (1476/36)</td>
+      <td>7 (2–35)</td>
+      <td>0.1 (0.08–0.18)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*delta adjusted R2 (see Materials and methods); IQR: inter-quartile range._
 
 We next compared methylation variance explained by significant mQTL using adjusted R2 values for all SoC-CpGs and controls with at least one genome-wide significant mQTL (FDR < 5%; n = 130, 201, and 50 CpGs for SoC-CpGs, matched and random controls, respectively; Table 4). These values were compared to a baseline model that included the same set of covariates (principal components [PCs], age and sex) used in Fourier regression models for the main seasonality analysis, in order to account for potential differences in additional variance explained by other covariates and unmeasured factors (see Materials and methods). There was no difference in additional variance explained by significant mQTL between SoC-CpGs and both sets of control CpGs (Figure 7B; Table 4).
 
@@ -144,11 +316,11 @@ To assess the potential for genetic confounding of SoC-associated DNAm signals a
 
 Finally, we searched for GxE (SoC) effects, again performing separate tests for SNPs in cis and trans. No GxE associations were identified after correcting for multiple testing (see Materials and methods).
 
-## Influence of genetic ancestry
+### Influence of genetic ancestry
 
 Eighty percent of the population of the Kiang West region of The Gambia from which the cohorts analysed in this study are drawn are of Mandinka ethnicity, with the majority of the remainder Fula (Hennig et al., 2017). This is evident from a genome-wide principal component analysis (PCA) of genetic variation in the EMPHASIS cohort, where we observed a distinct cluster of 16 individuals from a single village which is predominantly Fula (Appendix 1—figure 12). Individuals in the main ENID cohort were drawn from the same Kiang West villages as the EMPHASIS study, but we were unable to directly adjust for potential confounding effects due to genetic ancestry since no genetic data was available for this cohort. Based upon the EMPHASIS cohort PCA and our knowledge of village population structures, we reasoned that village of origin is a useful proxy for genetic ancestry in the ENID cohort and performed a sensitivity analysis with an additional covariate dichotomised according to whether an individual came from the predominantly Fula village. The first two genetic PCs were used as adjustment covariates for the corresponding EMPHASIS analysis. Results from this ethnicity-adjusted sensitivity analysis were not materially different from those obtained for the main analysis (Appendix 1—figure 13; Supplementary file 1s).
 
-## Overlap of SoC-CpGs with existing studies
+### Overlap of SoC-CpGs with existing studies
 
 To place our findings in the context of existing literature on associations between DNAm and nutrition-related exposures, including exposure to famine conditions, folate supplementation in gestation and previous reported associations with Gambian SoC, we checked for overlaps between SoC-CpGs and loci identified in a recent review by James et al., 2018b. Many cited studies including the majority of previous work in The Gambia used pyrosequencing and other methylation platforms targeting loci not covered by Illumina arrays. However, a total of 57 previously identified loci did overlap or partially overlap array background. None of these overlapped a SoC-CpG within 1 kbp. We also checked for overlaps with the larger set of SoC-associated CpGs not passing the 4% minimum effect size threshold, and found a single CpG (cg17434309) mapping to IGF2 that was within 1 kbp of two previously identified loci, one linking maternal plasma vitamin B12 with cord blood methylation (Ba et al., 2011), and the second linking gestational famine to blood methylation in older adults (Tobi et al., 2012).
 
@@ -204,7 +376,7 @@ There is increasing interest in the phenomenon of methylation variability as a m
 
 ## Materials and methods
 
-## Gambian cohorts and sample processing
+### Gambian cohorts and sample processing
 
 Detailed descriptions of the Gambian cohorts analysed in this study are published elsewhere (Moore et al., 2012; Chandak et al., 2017). Briefly, for the ENID 2 yr dataset, blood samples from 233 children aged 24 months (median [inter-quartile range, IQR]: 731 [729,733] days of age) were collected from participants in the Early Nutrition and Immune Development (‘ENID’) trial (Moore et al., 2012), born in 2011 and 2012. DNA was extracted, bisulfite-converted, and hybridised to Illumina HumanMethylation450 (hereafter ‘HM450’) arrays following standard protocols (see Van Baak et al., 2018, for further details). N = 138 ENID participants with 2 yr HM450 data who were enrolled in a follow-up study with DNA collected at 5–7 yr (6.2 yr [5.7,6.6]) had DNA bisulfite-converted and hybridised to Illumina Infinium Methylation EPIC (hereafter ‘EPIC’) arrays. For the EMPHASIS cohort, DNA was extracted from blood samples from 289 Gambian children aged 7–9 yr (9.0 [8.6,9.2] years) participating in the Epigenetic Mechanisms linking Pre-conceptional nutrition and Health Assessed in India and Sub-Saharan Africa (‘EMPHASIS’) study (Chandak et al., 2017), born between 2006 and 2008. DNA was bisulfite-converted and hybridised to EPIC arrays, again using standard protocols.
 
@@ -212,13 +384,17 @@ For the ENID cohort, date of conception was calculated from fetal gestational ag
 
 Samples from the ENID 2 yr dataset were processed in two batches with each batch covering conception dates throughout the year. Samples from the ENID (5–7 yr) and EMHASIS (7–9 yr) datasets were processed in single batches.
 
-## Methylation array pre-processing and normalisation
+### Methylation array pre-processing and normalisation
 
 Raw intensity IDAT files from the HM450 and EPIC arrays were processed using the meffil (Min et al., 2018) package in R (v3.6.1) using standard meffil defaults. Briefly, this comprised probe and sample quality control steps (filtering on bisulfite conversion efficiency, low probe detection p-values and bead numbers, high number of failed samples per probe, high number of failed probes per sample); methylation-derived sex checks; removal of ambiguously mapping (i.e. cross-hybridising) probes (Chen et al., 2013); removal of probes containing SNPs at the CpG site or at a single base extension; and removal of non-autosomal CpGs. Following filtering, methylation data was normalised with dye-bias and background correction using the noob method, followed by Functional Normalisation to reduce technical variation based on PCA of control probes on the arrays (Fortin et al., 2014). After pre-processing and normalisation, methylation data comprised methylation beta values for 421,026 CpGs on the HM450 array for the 233 individuals from the ENID 2 yr cohort, and 802,283 CpGs on the EPIC array for 289 individuals from the EMPHASIS cohort; 391,814 CpGs intersecting both arrays were carried forward for statistical analysis of these two datasets. Finally, SoC-CpGs, matched and random controls, all of which were present in the ENID (5–7 yr) EPIC dataset, were included in the longitudinal analysis.
 
-## Statistical modelling
+### Statistical modelling
 
-Variation of DNAm with date of conception was modelled using Fourier regression (Rayco-Solon et al., 2005). This models the relationship between a response variable (here DNAm) and a cyclical predictor (date of conception). The effect of the latter is assumed to be cyclical due to annually varying seasonality patterns, so that the modelled effect for an individual conceived on the 31 December should be ‘close’ to that for an individual conceived on the 1 January. This is achieved by deconvolving the conception date (predictor) into a series of pairs of sin and cosine terms, and obtaining estimates for the regression coefficients β and γ in the following model:Mij=α0j+∑k=1mαik+∑r=1n[βrjsin⁡(rθi)+γrjcos⁡(rθi)]+εij
+Variation of DNAm with date of conception was modelled using Fourier regression (Rayco-Solon et al., 2005). This models the relationship between a response variable (here DNAm) and a cyclical predictor (date of conception). The effect of the latter is assumed to be cyclical due to annually varying seasonality patterns, so that the modelled effect for an individual conceived on the 31 December should be ‘close’ to that for an individual conceived on the 1 January. This is achieved by deconvolving the conception date (predictor) into a series of pairs of sin and cosine terms, and obtaining estimates for the regression coefficients β and γ in the following model:
+
+$$
+M_{ij}=\alpha_{0j}+\sumk=1m\alpha_{ik}+\sumr=1n[\beta_{rj}sin⁡(r\theta_{i})+\gamma_{rj}cos⁡(r\theta_{i})]+\epsilon_{ij}
+$$
 
 where, for individual i and CpG j:
 
@@ -232,31 +408,31 @@ To reduce the influence of methylation outliers, methylation values greater than
 
 Note that our observation of attenuation of SoC effect sizes with age at SoC-CpGs when comparing DNAm data at aged 2 yr (ENID) and 7–9 yr (EMPHASIS), supported by analysis of longitudinal data (ENID 5–7 yr), suggested that a combined meta-analysis of ENID and EMPHASIS datasets would have reduced power to detect SoC effects at 2 years of age.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 We performed sensitivity analyses following the same Fourier regression modelling strategy as outlined above, but with (i) methylation estimated cell counts using estimateCellCounts() from minfi (v1.30.0); (ii) known batch and technical covariates; and (iii) village ID included as additional covariates. See Supplementary file 1s for further details on regression models used in the sensitivity analyses. For each sensitivity analysis we tested to see if Fourier regression coefficients estimated in the main analysis fell within 95% CIs in the adjusted models.
 
-## Inflation of test statistics
+### Inflation of test statistics
 
 The concept of genomic inflation rests on the assumption that a relatively small number of loci will be associated with the exposure (or disease/outcome) of interest. Test statistics for the ENID (2 yr) cohort did show signs of genomic inflation (lambda = 1.33), suggesting a potential effect of SoC on global methylation levels (Zheng et al., 2017). A similar level of inflation was observed before in a study looking at the effect of periconceptional folate on DNAm (Gonseth et al., 2015). There is also evidence of global and/or multi-locus effects of folate in other studies, including an RCT of folate supplementation in pregnancy (Irwin et al., 2019), and there are many other examples including studies investigating the effect of mutations in the MTHFR gene (see review by Crider et al., 2012). While we do not know if the SoC associations we observe in our cohorts are driven by seasonal differences in folate, we do observe significant seasonal differences in multiple C1 metabolites including folate in our population (Dominguez-Salas et al., 2013; Dominguez-Salas et al., 2014), so that SoC may serve as a proxy for multi-locus C1 metabolite effects in our analyses.
 
 We tested for potential SoC effects on global methylation by analysing methylation differences at LINE1 and Alu elements using REMP (v1.16.0), a recently published method to predict methylation at repetitive elements from Illumina array data (Zheng et al., 2017). We used default cutoffs for reliability suggested by the authors. This analysis confirmed a small but significant effect of increased methylation in rainy vs. dry conceptions at LINE1 and Alu elements (mean rainy season increase 0.02% and 0.01%, respectively, both Wilcoxon p < 2.2 × 10–16) suggesting a SoC effect on global methylation levels. This contrasted with a significant but extremely small effect in the opposite direction across array background (–5 × 10–4%; p < 2.2 × 10–16; see Appendix 1—figure 15), supporting evidence from previous studies of a potential effect of peri/preconception nutrition-related exposures on global methylation levels.
 
-## Identification of SoC-CpGs
+### Identification of SoC-CpGs
 
 For the ENID 2 yr cohort, p-values, pj, were used to compute a FDR for each CpG accounting for multiple testing (assuming 391,814 independent tests corresponding to the number of loci in array background) using p.adjust() in R with method = ‘fdr’. Following the rationale described in the main text, SoC-associated CpGs with a SoC amplitude <4% in the ENID cohort were then excluded to form the final set of 259 ‘SoC-CpGs’ (see Table 2).
 
-## Selection of control CpGs
+### Selection of control CpGs
 
 SoC-CpGs are enriched for intermediate methylation states (Figure 4B), so that there is a risk that some downstream analyses reflect the distributional properties of these loci, rather than factors associated with their putative establishment at periconception. For this reason we identified a set of ‘matched control’ CpGs that were selected to have similar methylation beta distributions to SoC-CpGs (and additional SoC-associated CpGs with amplitude <4%) in the ENID 2 yr dataset. Matched controls were drawn from array background (excluding SoC-associated CpGs and known MEs/ESS/SIV CpGs), with one matched control identified for each of the 768 SoC-associated CpGs. Alignment of control and SoC-CpG methylation distributions was achieved using a two-sided Kolmogorov-Smirnov test for divergence of cumulative distribution functions (ks.test() in R) with a p-value threshold p > 0.1. Examples are given in Appendix 1—figure 16, along with a comparison of sample mean distributions.
 
 An additional 768 random control CpGs were randomly sampled from array background, again excluding SoC-CpGs and known MEs/ESS/SIV CpGs.
 
-## CpG sets considered in analyses
+### CpG sets considered in analyses
 
 Summary information on external datasets considered in the analyses is provided in Table 3. Further information on these is provided below.
 
-## Cluster-based adjustments
+### Cluster-based adjustments
 
 Many SoC-CpGs cluster together and this could influence some analyses. For example, methylation at CpGs may be highly correlated, which could influence comparisons of inter-CpG correlations between SoC-CpGs and controls (Figure 3D). Also enrichment tests are likely to be influenced by neighbouring CpGs that together constitute a single ‘enrichment signal’ proximal to a particular genomic feature (e.g. a TF binding site).
 
@@ -264,33 +440,45 @@ To account for this, cluster-adjusted analyses used ‘de-clustered’ CpG sets 
 
 In the case of SoC-CpGs, the set of 259 non-clustered CpGs were reduced to 161 CpGs after de-clustering.
 
-## Chromatin state and histone (H3K) mark analysis
+### Chromatin state and histone (H3K) mark analysis
 
 Data on chromatin states predicted by the ChromHMM 15-state model (Ernst and Kellis, 2012) in H1 ESCs, and three fetal tissues (brain, muscle, and small intestine) derived from three different germ layers, generated by the Roadmap Epigenomics Consortium et al., 2015, was downloaded from the Washington University Roadmap Epigenomics repository; 15-state model predictions were collapsed to eight states for visualisation purposes, with sub-classifications described in the Figure 5 caption.
 
 Overlaps with H3K marks for each of the above tissues were assessed using the annotatr (v1.10.0) package in R to interrogate the same Roadmap Epigenomics ChIP-seq data used by ChromHMM for chromatin state prediction.
 
-## Additional modelling of seasonal variation in blood cell composition
+### Additional modelling of seasonal variation in blood cell composition
 
 Cell count estimates using the Houseman method (Jaffe and Irizarry, 2014) were obtained using the estimateCellCounts() from minfi (v1.30.0) in R. Seasonal variation in blood cell composition was then modelled by Fourier regression with one pair of Fourier terms and sex (ENID + EMPHASIS) and age (EMPHASIS only) as adjustment covariates. Fitted models indicated no marked seasonal differences within and between cohorts (Appendix 1—figure 17).
 
-## Genetic association analyses
+### Genetic association analyses
 
-## Genotype data
+#### Genotype data
 
 mQTL and related SoC association analyses were performed on all 284 individuals from the EMPHASIS (7–9 yr) cohort for which we had QC’d genotype data; 259 SoC-CpGs plus sets of 259 matched and random control CpGs were considered in this analysis. Subjects were genotyped using the Illumina Infinium Global Screening Array-24 v1.0 Beadchip (Illumina, San Diego, CA) following standard protocols. Array-derived genotypes were pre-phased using SHAPEITv2 and imputation was performed using IMPUTEv2.3.2 on 1000 genomes phase 3 data. Further details are provided in Saffari et al., 2020. SNPs with a MAF ≤10% were excluded, along with those with an IMPUTE ‘info’ metric ≤0.9, a stringent threshold to ensure maximum confidence in imputation quality. Imputed SNPs were then pruned (using plink v1.90 -indep-pairwise with window size 50, step size five and r2 threshold of 0.8) to remove SNPs in strong LD. Finally, to minimise the influence of low-frequency homozygous variants in linear models, analysis was restricted to SNPs with 10 or more homozygous variants, resulting in a final dataset comprising 2,609,310 SNPs.
 
-## Identification of mQTL and ‘GxE’ SNPs
+#### Identification of mQTL and ‘GxE’ SNPs
 
 mQTL analysis was performed using the GEM package (v1.10.0) from R Bioconductor (Pan et al., 2016).
 
-SNP effects on methylation were modelled as follows:Mj∼covs+G
+SNP effects on methylation were modelled as follows:
+
+$$
+M_{j}∼covs+G
+$$
 
 where Mj is the methylation M-value for CpG j, G is the SNP genotype coded as allelic dosage (0,1,2) and covs correspond to the adjustment covariates used in the main EMPHASIS analysis (PCs 1–6, child age, sex, and intervention status).
 
-GxE (SoC) effects were modelled as follows:Mj∼covs+sin⁡θ+G+Gxsin⁡θ
+GxE (SoC) effects were modelled as follows:
 
-when sinθ is the most significant Fourier term in the main SoC analysis.Mj∼covs+cosθ+G+Gxsin⁡θ
+$$
+M_{j}∼covs+sin⁡\theta+G+Gxsin⁡\theta
+$$
+
+when sinθ is the most significant Fourier term in the main SoC analysis.
+
+$$
+M_{j}∼covs+cos\theta+G+Gxsin⁡\theta
+$$
 
 when cosθ is the most significant Fourier term in the main SoC analysis.
 
@@ -300,21 +488,33 @@ Since most mQTL effects are known to act in cis (Gaunt et al., 2016), in order t
 
 (i) Identification of cis-mQTL passing FDR < 5% considering the reduced set of SNPs within 1 Mbp of a CpG in the set to be analysed (SoC-CpGs, matched or random controls); (ii) identification of trans-mQTL passing FDR < 5%, considering the full set of 2.6 M SNPs.
 
-## Calculation of methylation variance explained by mQTL
+#### Calculation of methylation variance explained by mQTL
 
-For each CpG j, total methylation variance explained was calculated for the following model:Mj∼covs+mQTLj1+mQTLj2+...mQTLjn
+For each CpG j, total methylation variance explained was calculated for the following model:
+
+$$
+M_{j}∼covs+mQTL_{j1}+mQTL_{j2}+...mQTL_{j_{n}}
+$$
 
 where covs are as defined above, and mQTLjn is the genotype (coded 0, 1, 2) of the nth mQTL mapping to CpG j. Methylation variance explained was calculated from the model adjusted R2 value, adjR2mQTL, to account for different levels of model complexity due to the differing number of mQTL identified for each CpG.
 
-A final estimate of mQTL methylation variance explained was obtained by subtracting variance explained by the covariate-only model:ΔadjR2=adjRmQTL2−adjRcov2
+A final estimate of mQTL methylation variance explained was obtained by subtracting variance explained by the covariate-only model:
 
-where adjR2cov is the adjusted R2 for the covariate-only model.Mj∼covs.
+$$
+ΔadjR^{2}=adjR_{mQTL}^{2}−adjR_{cov}^{2}
+$$
 
-## SoC association analysis
+where adjR2cov is the adjusted R2 for the covariate-only model.
+
+$$
+M_{j}∼covs.
+$$
+
+#### SoC association analysis
 
 Potential confounding of SoC-DNAm signals by SoC-associated genetic variants was assessed by analysing SoC associations with all 2771 SoC-CpG-associated mQTL identified in the mQTL analysis (see Table 4). SoC association analysis was performed under an allelic model using -assoc with plink v1.90. Significant mQTL-SoC associations were identified using FDR < 5%, which assumes independence of all mQTL-SoC associations. We also considered a more liberal multiple testing correction threshold: pBonf = 0.05/130, assuming complete dependence of all cis-mQTL mapping to each of the 130 SoC-CpG with an associated mQTL.
 
-## Genetic ancestry sensitivity analysis
+#### Genetic ancestry sensitivity analysis
 
 An investigation of population structure in the EMPHASIS cohort was conducted by first performing a PCA using -pca in plink v1.90. The PCA was performed on non-imputed data, with LD pruning using -indep-pairwise 50 5 0.2 in plink v1.90, corresponding to an r2 threshold of 0.2 Weale, 2010. Evidence for population structure was then obtained by plotting the first four PCs (Appendix 1—figure 12). Confirmation of a likely link to Gambian ethnic ancestry in this largely ethnically Mandinka region of Gambia followed our observation that a distinct cluster (Appendix 1—figure 12) was primarily made up of individuals from a single, predominantly ethnic Fula village.
 
@@ -324,10 +524,10 @@ We adjusted for genetic ancestry directly using the first two genetic PCs identi
 
 Since no genetic data is available for this cohort, and since individuals from this cohort are drawn from the same villages as the EMPHASIS cohort on which we did the genetic PCA, we reasoned that village of origin is a useful proxy for genetic ancestry in our population. We therefore included an additional covariate dichotomised according to whether or not an individual was one of the nine who came from the predominantly Fula village identified as genetic outlier in the EMPHASIS PCA analysis.
 
-## Sensitivity analysis to investigate confounding by infant sex
+#### Sensitivity analysis to investigate confounding by infant sex
 
 Our finding that multiple SoC-CpGs were associated with infant sex in previous EWAS prompted us to perform a sensitivity analysis checking for the possibility of a residual confounding effect due to sex. To do this we regressed out the effect of infant sex at each CpG in the M-value methylation matrix, prior to the main regression analysis. We then re-ran the Fourier regression analysis with and without an additional adjustment for infant sex in Fourier regression models. As expected, given that we adjusted for infant sex in the main analysis, this produced near-identical results, suggesting that the main analysis was not confounded by infant sex.
 
-## Bootstrapped confidence intervals
+### Bootstrapped confidence intervals
 
 All bootstrapped confidence intervals presented in this paper use 1000 bootstrap samples.

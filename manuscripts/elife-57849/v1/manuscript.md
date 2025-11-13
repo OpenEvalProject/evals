@@ -86,7 +86,7 @@ The aim of this study is to identify the genetic determinants of extreme longevi
 
 ## Results
 
-## Design of the study and criteria for longevity definition
+### Design of the study and criteria for longevity definition
 
 To study the genetics of longevity, we selected a population of 105+/110+ (N = 81) with mean age of 106.6 years and born in a limited birth cohort range (1903–1909). We used the data produced by WGS in 105+/110+ as discovery data (Cohort 1) to have information about all the variants, and to maximize the probability to identify significant genetic association according to biological models. This design is supported by data showing that the power to detect association with longevity is greater for centenarians versus nonagenarians subjects of the same birth cohort (Tan et al., 2008).
 
@@ -96,11 +96,120 @@ The choice of controls is an issue often debated in longevity studies. A number 
 
 **Figure 1.:** (A) 105+/110+ (in blue) and controls (in orange) recruited in the Italian peninsula and analyzed by whole genome sequencing (discovery cohort). (B) The study design applied in the present study. (C) PCA plot for the discovery cohort (Cohort 1), in red are indicated 105+/110+ and in black the group of controls (CTRL).
 
-## Common variants : single variant analysis
+### Common variants : single variant analysis
 
 First, we performed a WGS association study adding sex as covariate and considering 5,511,852 common variants (MAF >5%). No association is observed at the genome-wide significance level (<5*10−8) (Figure 2A), but significant p-values after SLIDE correction (significance at adjusted p-value 10%) are observed for STK17A and COA1 genes. The uniform deflation observed in the QQ-plot (Figure 2B) could be due to the small sample size. Genomic inflation factor is 1.02.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57849/elife-57849-fig2-v1.jpg)
+
+**Figure 2.:** (A) Manhattan plot for all the SNPs tested for the association analysis by considering semi-supercentenarians and controls. The x-axis shows SNPs according to their chromosomal positions and y-axis shows the p-values, expressed as –log10(p-value). (B) QQ plot of expected –log10(p-values) (x axis) versus observed –log10(p-values) (y axis) (one black point per variant). The genomic inflation factor was estimated to 1.02. (C) Allele frequency of rs7456688-A in all the cohorts analyzed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57849/elife-57849-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The rs623108-A allele correlates with rs7456688-A (moderate LD r2 = 0.58 in European populations of 1000Genomes). Data Source: GTEx Analysis Release V8.
+
 Top association signals are located in the same large block of linkage disequilibrium at chromosome seven surrounding STK17A and COA1 genes and are reported in Table 1 (loci with significance at adjusted p-value 10% for the discovery). Technical validation with different technologies (Sequenom MassARRAY iPLEX) of the identified SNPs was performed considering a subset of 53 individuals from Cohort 1. Positions identified by comparing 105+/110+ and controls with unadjusted p-value<10−4 are reported in Supplementary file 1. Supplementary file 1 also includes the previous nominal p-values adjusted for PC1 and PC2.
+
+**Table 1.**
+ Common variants identified in the comparison between 105+/110+ and controls with significance at adjusted p-value 10%.Gene name, chromosome, position (GrCH 37/hg19), rs ID, minor allele (based on whole sample), estimated odds ratio for Cohort 1, lower/upper bound of 95% confidence interval for odds ratio, nominal p-values, adjusted p-values using SLIDE method (window of 100 SNPs an 10,000 permutations) frequency in 105+/110+ s and controls and p-values in Cohort 2 were reported.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GENE NAME</th>
+      <th>CHR</th>
+      <th>BP</th>
+      <th>dbSNP</th>
+      <th>A1</th>
+      <th>OR</th>
+      <th>L95</th>
+      <th>U95</th>
+      <th>P_unadj (Cohort1)</th>
+      <th>P_adjusted SLIDE (Cohort1)</th>
+      <th>F_105 (Cohort1)</th>
+      <th>F_CTRL (Cohort1)</th>
+      <th>P_unadj (Cohort2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STK17A</td>
+      <td>7</td>
+      <td>43637796</td>
+      <td>rs7456688</td>
+      <td>A</td>
+      <td>5.906</td>
+      <td>2.688</td>
+      <td>12.97</td>
+      <td>9.73*10−6</td>
+      <td>7.00*10−2</td>
+      <td>0.556</td>
+      <td>0.222</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>STK17A</td>
+      <td>7</td>
+      <td>43638009</td>
+      <td>rs10257700</td>
+      <td>C</td>
+      <td>5.906</td>
+      <td>2.688</td>
+      <td>12.97</td>
+      <td>9.73*10−6</td>
+      <td>7.00*10−2</td>
+      <td>0.556</td>
+      <td>0.222</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>STK17A</td>
+      <td>7</td>
+      <td>43643835</td>
+      <td>rs10279856</td>
+      <td>G</td>
+      <td>5.906</td>
+      <td>2.688</td>
+      <td>12.97</td>
+      <td>9.73*10−6</td>
+      <td>7.00*10−2</td>
+      <td>0.556</td>
+      <td>0.222</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>STK17A,COA1</td>
+      <td>7</td>
+      <td>43650221</td>
+      <td>rs69685881</td>
+      <td>A</td>
+      <td>5.906</td>
+      <td>2.688</td>
+      <td>12.97</td>
+      <td>9.73*10−6</td>
+      <td>7.00*10−2</td>
+      <td>0.556</td>
+      <td>0.222</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>STK17A,COA1</td>
+      <td>7</td>
+      <td>43651047</td>
+      <td>rs7805969</td>
+      <td>A</td>
+      <td>5.906</td>
+      <td>2.688</td>
+      <td>12.97</td>
+      <td>9.73*10−6</td>
+      <td>7.00*10−2</td>
+      <td>0.556</td>
+      <td>0.222</td>
+      <td>0.016</td>
+    </tr>
+  </tbody>
+</table>
 
 Given the presence of the well-known Italian genetic structure we decided to perform an association analysis comparing Northern 105+/110+ to Southern 105+/110+subjects. We next merged the identified signals (derived from the comparison 105+/110+ vs CTRL) with the p-values calculated comparing Northern 105+/110+ and Southern 105+/110+ subjects. All the identified signals described in Supplementary file 1 showed a non-significant p-values in the analysis based on geography. This indicates that the Italian genetic structure does not bias the signals identified.
 
@@ -116,25 +225,144 @@ Next, we performed a gene-based association study by VEGAS2 including common var
 
 We then performed a RiVIERA analysis – a tool for variant prioritization – on WGS data for inference of possible causal/regulatory variants considering SNPs located in the above-mentioned window (from chr7:43560257 to chr7:43938230) around the COA1 gene (Figure 4A). As reported in Figure 4A and SNPs, rs10279856 (in LD with the five previously reported SNPs), rs3779059, rs849166, rs849175 showed a credible score >0 (credible scores 0.261; 0.261; 0.240; 0.236 respectively).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57849/elife-57849-fig4-v1.jpg)
+
+**Figure 4.:** (A) Common variants in COA1 gene and output of the Bayesian model RiVIERA (Risk Variant Inference using Epigenomic Reference Annotations). The SNPs are shown as a function of their position on chromosome 7. The symbol (dot, rectangle, triangle) indicates the distance to the transcription start site (TSS). The size of the symbol reflects the credible score which exhibit an higher probability of regulatory properties. The colour (indicated as ‘overlapping_annotation’) indicates the total number of epigenomic marks that co-localize with the SNP. (B) KEGG Pathways analysis was performed using i-GSEA4GWAS. -log(FDR value) were indicating for each significant pathways (<0.01). (C) Number of rare variants in the NME1, NME1-NME2 region. Genomic positions were reported in x-axis while the number of variants for each position is reported in y-axis. The number of rare variants in 105+/110+ is reported in blue and in CTRL in orange.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57849/elife-57849-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Y-axes reported the prevalence and x-axes the number of mutations.
+
 These four SNPs (rs10279856, rs3779059, rs849166, and rs849175) were identified in GTEx as eQTL for STK17A and surrounding genes like COA1 and BLVRA as reported in Supplementary file 3. The genotypes the most frequent in centenarians (rs10279856-G reference allele and rs3779059-A, rs849166-A, rs849175-A alternative alleles) are associated to a reduced expression of COA1 gene in adipose (subcutaneous), artery - (aorta and tibial), artery - tibial, esophagus - mucosa, oesophagus - muscularis, nerve - tibial and skin, the same SNPs are associated to an increase in BLVRA expression in whole blood and a decrease of the expression of the same gene in artery (tibial) and oesophagus (mucosa). The same four SNPs are associated to an increase of SKT17A gene expression in heart (atrial and left ventricle), lung, nerve and thyroid.
 
 Longevity is a complex trait for which gene-environment interactions as well as the complex interplay of multiple genes and pathways play a major role (Zeng et al., 2016). Gene pathway analysis identified 24 KEGG pathways as significantly enriched (FDR ≤ 0.05) as reported in Figure 4B and in Supplementary file 4. Axon guidance, calcium signaling, glycine serine and threonine metabolism, long term potentiation, melanogenesis, PPAR signaling and taste transduction are among the most significant pathways identified.
 
 Pathway analysis performed considering GO and BioCarta were reported in Supplementary file 5 and Supplementary file 6. In the top ranking BioCarta pathways enrichment in inflammatory pathways (cytokines and inflammatory response) was observed (FDR value = 0.009).
 
-## Common variants: haplotype-based analysis
+### Common variants: haplotype-based analysis
 
 After genotype phasing, a total of 234 individual haplotypes were used for the haplotype association analysis (162 cases and 72 controls). We analyzed seven suggestive significance areas, emerged from the single-SNP analysis (Supplementary file 1), for the association with haplotype clusters. We found a significant association (p-value<5 * 10−8) for three haplotypes located in COA1 gene (Table 2). All these haplotypes are less frequent in semi-supercentenarians than in controls. The lowest p-value of 1.84 * 10–8 corresponds to a haplotype defined by 13 consecutive markers (chr7: 43655836–43714795). The cluster that includes this haplotype consists of 111 individual haplotypes, all carrying the same allele at the 13 consecutive markers. A p-value of 4.05 * 10–8 was detected for a second significant haplotype, located on COA1 gene and defined by eight consecutive markers (chr7: 43720429–43756081). This haplotype is in a cluster containing 112 individual haplotypes for which the same allele sequence is carried by all the individual haplotypes at the eight consecutive markers. The third significant haplotype (p-value=4.00 * 10–8) located in COA1 gene is characterized by three consecutive markers (chr7: 43637796–43643835). It is to note that these markers are three out of the five variants identified by single-SNP analysis (i.e. rs7456688, rs10257700, rs10279856). This haplotype was found in all 109 individual haplotypes that are in the related cluster.
 
+**Table 2.**
+ Most significant haplotypes from each significant suggestive area emerged from the single-SNP analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chr</th>
+      <th>Region</th>
+      <th>Haplotype</th>
+      <th>Gene</th>
+      <th>Allelic test OR</th>
+      <th>Allelic test p-value</th>
+      <th>F_105</th>
+      <th>F_CTRL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>196515104–196992016</td>
+      <td>GGAGCA</td>
+      <td>DNAH7</td>
+      <td>11.54 (3.02–65.45)</td>
+      <td>2.34*10–05</td>
+      <td>0.98</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>43637796–43643835</td>
+      <td>GTA</td>
+      <td>COA1</td>
+      <td>0.19 (0.1–0.36)</td>
+      <td>4.00*10–08</td>
+      <td>0.35</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>43655836–43714795</td>
+      <td>CATGATTAGTACG</td>
+      <td>COA1</td>
+      <td>0.18 (0.09–0.35)</td>
+      <td>1.84*10–08</td>
+      <td>0.35</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>43720429–43756081</td>
+      <td>GATGACTT</td>
+      <td>COA1</td>
+      <td>0.19 (0.09–0.36)</td>
+      <td>4.05*10–08</td>
+      <td>0.36</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>151364264–151376555</td>
+      <td>ACCAT</td>
+      <td>PRKAG2</td>
+      <td>0.13 (0.05–0.37)</td>
+      <td>8.31*10–06</td>
+      <td>0.04</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>114679493–114691177</td>
+      <td>TTATGC</td>
+      <td>UGCG</td>
+      <td>3.23 (1.66–6.57)</td>
+      <td>1.69*10–04</td>
+      <td>0.48</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>103874937–103955668</td>
+      <td>TAA</td>
+      <td>LPPR1</td>
+      <td>0.13 (0.05–0.32)</td>
+      <td>9.16*10–07</td>
+      <td>0.05</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>18852217–18873142</td>
+      <td>CCTGT</td>
+      <td>.</td>
+      <td>3.23 (1.66–6.57)</td>
+      <td>1.69*10–04</td>
+      <td>0.48</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>49897577–49905581</td>
+      <td>GCGATCG</td>
+      <td>CAB39L</td>
+      <td>0.21 (0.09–0.44)</td>
+      <td>1.07*10–05</td>
+      <td>0.10</td>
+      <td>0.35</td>
+    </tr>
+  </tbody>
+</table>
+
 The most significant haplotypes of the remaining six suggestive significance areas emerging from the single-SNP analysis (located in DNAH7, PRKAG2, UGCG, LPPR1, CAB39L genes and in chr11:18852217–18873142), were reported in Table 2, but the haplotype cluster analysis did not identify statistically significant signals at the commonly used 5 * 10–8 significance level.
 
-## Comparison with existing data
+### Comparison with existing data
 
 Next, we investigated whether the eight known ‘longevity variants’ reported in Erikson (Erikson et al., 2016) might be associated to extreme longevity in the Italian populations (Supplementary file 7). Only one significant SNP located in TP53 gene was identified in our study (rs1042522 nominal p-value=0.01). We also analysed the association with APOE-e4, considering the combination of rs7412 and rs429358. We showed a reduced frequency of APOE-e4 in 105+/110+ compared to controls but the difference was not significant (105+ APOE-e4 16%, CTRL_WGS APOE-e4 22%).
 
 We then listed the SNPs identified in a previous longevity study of the Italian population (Giuliani et al., 2018a) and reported in Supplementary file 8 the p-values calculated comparing 105+/110+ and CTRL (Cohort 1). Eighteen unique SNPs showed a significant p-value (nominal p-values<0.05) when considering Cohort 1. Eleven of them mapped in ESRRG (rs1436897), GUCY2EP (rs10899257), FHIT (rs2630196, rs2630173), PLCB1 (rs10485720), TBX18 (rs860844), ARID1B (rs17266366), NACAD (rs61740895, rs3735495, rs3735494), OR7G1 (rs1036224) genes. NACAD and TBX18 genes have also been associated to longevity in the Health and Retirement study, an ongoing panel survey of a nationally representative sample of men and women older than 50 years in the United States (data previously reported in Giuliani et al., 2018b). In Supplementary file 8 the SNP that showed the lowest p-value in the association analysis of Cohort 1 is rs623108, located in an intergenic region downstream BLVRA gene. rs623108 is in moderate LD (r2 = 0.58 in European populations of 1000Genomes) with the SNPs reported in Table 1. The rs623108-A allele is correlated with rs7456688-A, highlighting the central role of this region for extreme longevity in the Italian population. A GTEx analysis showed that rs623108-A correlates with STK17A expression in heart (p-value=7.6*10–13, NES = 0.39 for atrial appendage and p-value=9.5*10–23 and NES = 0.36 for Left Ventricle) and in thyroid (p-value=7.5*10–20 and NES = 0.27). eQTL violin plots are reported in Figure 2—figure supplement 1.
 
-## 105+/110+ private mutations and rare variants analysis
+### 105+/110+ private mutations and rare variants analysis
 
 We first performed a private mutation analysis of 105+/110+: we identified a total number of 3,446,719 private mutations exclusive of 105+/110+ (not present in CTRL) and 2,282,600 mutations showed a MAF ≤1% in the Genome Aggregation Database (gnomAD). Figure 4—figure supplement 1 reports a density plot with the prevalence of private mutations for 105+/110+. Among these mutations 5055 have been predicted as damaging in more than 4 (out of 6) databases (SIFT Pred, Polyphen2 HVAR Pred, MutationTaster Pred, MutationAssessor Pred, FATHMM Pred, FATHMM MKL Coding Pred). A complete list is reported in Supplementary file 9. Sixty-five private mutations carried by 44 105+/110+ have also been reported in ClinVar as pathogenic or likely pathogenic.
 
@@ -142,7 +370,7 @@ We then considered the rare variants identified in Cohort1. First, in order to e
 
 Secondly, we considered 34,852 rare and damaging mutations (predicted as damaging in more than 4 [out of 6] database) and performed a gene-burden association testing (SKAT-O). The complete list of genes identified is reported in Supplementary file 11. The most significant gene is PLEKHG4 (p-value=0.0011) which shows an increased burden of damaging mutations in CTRL but not in 105+/110+. According to OMIM the protein encoded by this gene has a role in intracellular signalling and dynamics at the Golgi apparatus.
 
-## Cardiovascular insight: analysis of somatic mutations and polygenic risk score (PRS)
+### Cardiovascular insight: analysis of somatic mutations and polygenic risk score (PRS)
 
 The analysis of somatic mutations was performed considering those individuals whose cell count is not compromised as suggested by a recent paper (Jaiswal et al., 2014). For this analysis, 79 105+/110+ and 31 controls have been considered. We identified 147 somatic mutations in 80 individuals. The VAF distribution is reported in Figure 5—figure supplement 1.
 
@@ -151,6 +379,16 @@ By comparing the total number of somatic mutations between controls and 105+/110
 Moreover, Mann-Whitney U test was used to compare the number of variants in each gene between 105+/110+ and significant differences were found for DNMT3A (Mann-Whitney p-value=9*10–4) and ASXL1 gene (Mann-Whitney p-value=0.0167).
 
 We then calculated the prevalence of somatic mutation for each gene and observed that a general trend in which 105+/110+ have a lower prevalence (except for JAK2 gene) as reported in Figure 5A. Prevalence was calculated considering the number of individuals carrying at least one mutation in each gene. As expected DNMT3A and TET2 were the most commonly mutated genes in both 105+/110+ and CTRL.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57849/elife-57849-fig5-v1.jpg)
+
+**Figure 5.:** (A) Prevalence of somatic mutations in 105+/110+ and controls considering the seven genes analysed. (B,C) the distribution of single-nucleotide substitutions types observed in 105+/110+ and CTRL.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57849/elife-57849-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57849/elife-57849-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The y-axes reported the value of the score calculated in 105+/110+ (in blue) and in CTRL (in red).
 
 Similarly to previous report (Buscarlet et al., 2017) the majority of somatic mutations corresponded to a C>T substitution in both 105+/110+ and controls, (Figure 5B and Figure 5C).
 
@@ -210,9 +448,9 @@ In conclusion, this study constitutes the first whole genome sequencing of extre
 
 ## Materials and methods
 
-## Cohorts description
+### Cohorts description
 
-## Cohort 1 (discovery cohort)
+#### Cohort 1 (discovery cohort)
 
 The cohort consists of 84 unrelated Italian healthy semi-supercentenarians and supercentenarians [105+/110+] older than 104 years (mean age 106.6 ± 1.6) recruited in North, Centre, and South of the Italian peninsula and 5 out of 84 were supercentenarians and 40 healthy unrelated controls (mean age 68.0 ± 5.9) matched for geographic origin (as also demonstrated by PCA).
 
@@ -226,11 +464,11 @@ Each sample’s raw reads were aligned to the GRCh37/hg19 reference genome by Is
 
 The WGS analysis was approved by the local Ethical Committee (S. Orsola Hospital - University of Bologna; Prot. n. 2006061707, amendment 08/11/2011; Fondazione IRCCS Cà Granda Ospedale Maggiore Policlinico, Prot. n. 2035, amendment 30/11/2011; University of Calabria 9/9/2004 amendment on 24/11/2011).
 
-## Cohort 2 (validation cohort)
+#### Cohort 2 (validation cohort)
 
 We considered 333 centenarians (mean age: 100.4 ± 1.4) and a group of 358 unrelated healthy individuals controls (mean age: 60.7 ± 7.2). The control group is comparable with the one used for the discovery phase regarding, age, sex and geographical composition, as published in a previous study (Giuliani et al., 2018b). Genomic DNA was extracted from whole blood via a salting out modified protocol, or using QIAamp 96 DNA Blood Kit (QIAGEN, Hilden, Germany). DNA quantification was performed using the Quant-iT dsDNA Broad-Range Assay Kit (Invitrogen Life Technologies, Carlsbad, CA, USA) or by Quant-iT PicoGreen dsDNA Assay Kit (Thermo Fisher Scientific) according to manufacturer protocols. 200 ng of DNA were genotyped for 542,585 genetic markers with the CoreExomeChip v.1.1 array Illumina (San Diego, CA, USA). DNA samples of centenarians were recruited with the approval by the Ethical Committee of Sant’Orsola-Malpighi University Hospital (Bologna, Italy). A written informed consent form was obtained from all participants. Further approval for this study was also released in January 2011 by the Azienda-Ospedaliera Arcispedale Santa Maria Nuova ethics committee (Reggio Emilia) within the framework of the project ‘GWAS of psoriatic arthritis in the Italian population’ (in the present study we used only controls). The variants identified in Cohort 1 were replicated using imputed SNPs through Michigan server and filtering for Rsq >0.8 (Das et al., 2016).
 
-## Samples quality check
+### Samples quality check
 
 To convert the gVCF files to the eVCF format, we first produced a reference VCF file containing the genomic position of all the variants called in centenarians and controls population (extracted using the gvcftools available at https://github.com/sequencing/gvcftools) plus the variants annotated in the clinvar database and in the genAge database. This reference VCF was used as input to the gvcf2evcf program to produce the eVCF files. The pipeline was described in Ferrarini et al., 2015. Then variants were annotated using the ANNOVAR tool (Wang et al., 2010). A Variant Tools (version2.7.0) project was created to import all the eVCF files. The project was exported to the TPED format compatible with PLINK (San Lucas et al., 2012). Quality controls determined concordance between sex by database and sex determined using genotypes, identified individuals with elevated missing data rates or outlying heterozygosity, identified related individuals and individuals of divergent ancestry (Anderson et al., 2010; Clarke et al., 2011). Variants in tandem repeats and homopolymer regions as well as variants with a call rate less than 98% were filtered out (Anderson et al., 2010; Clarke et al., 2011; Erikson et al., 2016).
 
@@ -242,9 +480,9 @@ After quality filters statistical analysis were performed on 81 105+/110+ (18 M;
 
 Quality controls regarding the validation cohort were previously reported (Giuliani et al., 2018b) and followed the pipeline described for GWAS (Anderson et al., 2010) for the identification and removal of DNA samples and markers that introduce bias.
 
-## Statistical analysis
+### Statistical analysis
 
-## Common variants : single variant analysis
+#### Common variants : single variant analysis
 
 Single Gene-based analysis was performed by using VEGAS2 tool and p-values from all annotated common variants (https://vegas2.qimrberghofer.edu.au/). Gene-based replication has been proposed to be regarded as a new gold standard in association studies because genes are functional units consistent across human populations and, dealing with some 20,000 genes instead of thousands or millions of SNPs, limit the burden of multiple testing (Neale and Sham, 2004). The default parameters have been used for this analysis (+/- 0 kb outside the gene and top 100% SNPs). We declare significance when the top-ranking genes identified analysing Cohort 1 were significant (p-value<0.05) in Cohort 2.
 
@@ -262,29 +500,35 @@ RiVIERA (Risk Variant Inference using Epigenomic Reference Annotations) analysis
 
 GTEx portal was used to investigate whether identified SNPs affect gene expression levels in different tissues (https://www.gtexportal.org/home/), NES is the slope of the linear regression of normalized expression data versus the three genotype categries using single tissue eQTL analysis, representing eQTL effect size. Pathway analysis was performed by means of i-GSEA4GWAS v2 considering KEGG, GO and BioCarta pathway and p-values for association calculated using annotated variants (only common variants were considered). The used algorithm combined the list of p-values for all the positions (MAF >0.05) according to SNP-mapped genes and then filtered the collection of pathways/gene sets to obtain a general p-value for each pathway. False discovery rate (FDR) was calculated as described in Zhang et al., 2010.
 
-## Common variants: haplotype-based analysis
+#### Common variants: haplotype-based analysis
 
-In order to perform the haplotype analysis of the suggestive significance areas emerged from the single-SNP analysis, we used Beagle version 5.1 (Browning et al., 2018; Browning, 2006; Browning and Browning, 2007b) to phase genotypes. Then we used Beagle 3.3.2 (Browning and Browning, 2007b) with the default settings to cluster the individual haplotypes at each SNP position using a localized haplotype cluster model (Browning and Browning, 2007a). Briefly, this model localizes each cluster to a specific marker locus i, and clusters together the haplotypes which have similar probability distribution for their alleles at markers >i. For each haplotype cluster at a given locus, we defined a diallelic pseudomarker variable that is 2 if an individual haplotype is in the cluster, and 1 if it is not in the cluster. Such a definition of pseudomarker enables us to test the association between the haplotype cluster and a trait status (105+/110+ vs CTRL) in the same way as the other diallelic markers, that is using a Fisher’s exact test for 2x2 tables. We used the cluster2haps.jar (see Online Resources) program to identify the allele sequences that define a haplotype cluster, and the pseudomarker.jar (see Online Resources) program to convert the haplotype clusters to diallelic markers. The R software (R Development Core Team, 2020) was used to perform the Fisher’s exact test and to compute the Odds Ratio (OR) of the most significant haplotypes.
+In order to perform the haplotype analysis of the suggestive significance areas emerged from the single-SNP analysis, we used Beagle version 5.1 (Browning et al., 2018; Browning, 2006; Browning and Browning, 2007b) to phase genotypes. Then we used Beagle 3.3.2 (Browning and Browning, 2007b) with the default settings to cluster the individual haplotypes at each SNP position using a localized haplotype cluster model (Browning and Browning, 2007a). Briefly, this model localizes each cluster to a specific marker locus $i$, and clusters together the haplotypes which have similar probability distribution for their alleles at markers >i. For each haplotype cluster at a given locus, we defined a diallelic pseudomarker variable that is 2 if an individual haplotype is in the cluster, and 1 if it is not in the cluster. Such a definition of pseudomarker enables us to test the association between the haplotype cluster and a trait status (105+/110+ vs CTRL) in the same way as the other diallelic markers, that is using a Fisher’s exact test for 2x2 tables. We used the cluster2haps.jar (see Online Resources) program to identify the allele sequences that define a haplotype cluster, and the pseudomarker.jar (see Online Resources) program to convert the haplotype clusters to diallelic markers. The R software (R Development Core Team, 2020) was used to perform the Fisher’s exact test and to compute the Odds Ratio (OR) of the most significant haplotypes.
 
-## Comparison with existing data
+#### Comparison with existing data
 
 The analysis of existing data has been performed considering the SNPs previously identified in the Italian populations from GWAS data (Giuliani et al., 2018b).The most significant SNPs and the SNPs identified in Class A, Class B, Class E, and Class F has been merged with the results of association test performed in Cohort 1 and the significant loci were reported in Supplementary file 8. The different classes in Giuliani et al., 2018a includes different set of SNPs whose allele frequencies change according to the birth cohort (and thus age) of the group. Class A includes SNPs for which CTRL >50 years old showed higher allele frequencies than CTRL <50 years and centenarians, while similar allele frequencies were observed in centenarians and CTRL <50 years old. Class B: SNPs for which CTRL >50 years old showed lower allele frequencies than CTRL <50 years old and centenarians, while similar allele frequencies in centenarians and CTRL <50 years old were observed. Class E: these variants significantly decreased in frequency in centenarians, while CTRL <50 years old and CTRL >50 years old showed similar frequencies. Class F: these variants significantly increased in frequency in centenarians, while CTRL <50 years old and CTRL >50 years old showed similar frequencies. We selected these classes as they are more homogenous with the age of CTRL included in Cohort 1.
 
-## 105+/110+ private mutations and rare variants analysis
+#### 105+/110+ private mutations and rare variants analysis
 
 Private mutations in 105+/110+ has been identified selecting those mutations that are present only in one 105+/110+ and not in any other controls (total number 3,446,719). Rare coding variants (minor allele frequency <1%) were analysed using the Omnibus Sequence Kernel Association Tests (SKAT-O) method as implemented in the SKAT R package. We created a null model for dichotomous trait adding sex as covariate and default settings. Damaging variants have been identified considering the positions defined ‘damaging’ in more than four out of six databases (SIFT Pred, Polyphen2 HVAR Pred, MutationTaster Pred, MutationAssessor Pred, FATHMM Pred, FATHMM MKL Coding Pred included in dbNSFP functional prediction version 3.0).
 
 In Cohort 2, imputation was performed for chromosome 7 (filtering out SNPs with Rsq <0.8) using Michigan imputation server (https://imputationserver.sph.umich.edu/) and only the SNPs identified in Cohort 1 were selected. On these variants, association analysis was performed using a logistic model with sex as covariate (PLINK tool version 1.9). In this cohort, multiple test correction has been performed by Benjamin Hochberg method.
 
-## Analysis of somatic mutations
+#### Analysis of somatic mutations
 
 We looked for somatic mutations according to the most important studies done so far (Genovese et al., 2014; Jaiswal et al., 2014; Xie et al., 2014; Zink et al., 2017). Briefly the definition of PUTATIVE SOMATIC MUTATIONS includes those mutations that followed the following criteria: (a) SNPs; (b) Observed once or twice in the cohort; (c) AF above 10%; (d) Failed the hypothesis that the alternate allelic count was distributed as a binomial process with mean 50% with a designed false positive rate of 10–5. We fixed the mean 50% for the binomial test as we do not have the same problems of exome sequencing in the experimental procedure described by Genovese and colleagues. We selected seven genes which are the most frequently associated to clonal hematopoiesis (ASXL1, DNMT3A, JAK2, PPM1D, TET2, TP53, SF3B1). Variants have been annotated with SnpEff [15], which predicts the effects of genetic variants to the final encoded protein, in order to detect mutations that would lead to a reduced or abnormal function of the protein. In this scenario, we identified different types of mutations with low, modifier, moderate and high impact on the protein function. Moderate (e.g. missense variant, inframe deletion) and high impact variants (e.g. stop gained, frameshift variant) are highly likely to disrupt the protein function. Low impact variants (e.g. synonymous variant) and modifier (usually non-coding variants or variants affecting non-coding genes) have usually no impact on function or there is no evidence of impact, thus in these cases predictions are difficult. After excluding variants with alternative frequency equal to 1 or 0, we transformed the coverage distribution of centenarians so that their cumulative distribution was the same as the one of controls. We called that normalized coverage. The alternative (alt) and reference (ref) counts were recomputed as (frequency * normalized coverage). We excluded variants with normalized coverage <10 reads, with normalized alternative counts < 3 reads (Jaiswal et al., 2014), and that were observed in more than one control or in more than two centenarians minor allele frequency less than 0.025% (Genovese et al., 2014). To exclude germinal (inherited) variants [Genovese et al.], we defined as somatic mutations SNPs that failed the hypothesis that the alternate allelic count was distributed as a binomial process with mean 47.13% for control subjects and 46.43% for centenarians, indels were excluded from this analysis. The means of the binomial processes were computed as the median frequency of variants with frequency between 0.2 and 0.8. Analogously, we excluded homozygous germinal variants by testing the hypothesis that the alternate allelic count was distributed as a binomial process with mean 1% or 99%. In both cases, a significance threshold of 0.05 was used to reject the null hypothesis. Mann-Whitney U test was used to compare the average number of variants in each gene between the two groups and Fisher’s exact test was used to compare the proportion of subjects with at least one mutation in the two groups. All calculations were performed in python 3.6.
 
-## Polygenic risk score (PRS)
+#### Polygenic risk score (PRS)
 
 Initially the exploration of available genetic risk scores (GRS) for coronary artery disease (CAD) was performed, submitting the respective query to PubMed. We selected five CAD genetic risk scores that are summarized in Supplementary file 15 and for which the data on: score algorithm, involved SNPs and the respective effect sizes used in score calculation - was extracted. For the scores 1–3, the effect sizes corresponding to the list of SNPs were retrieved from the original publications. References of scores 4–5 came from the work of Girelli and colleagues (Girelli et al., 2017) summarizing up-to-date association studies on CAD and identifying elsewhere recognized risk variants. As recommended by the authors of the review, EBI GWAS catalog available at http://www.ebi.ac.uk/gwas was used to extract the data. Thus, the total list of 928 (709 unique) SNPs coming from 22 GWAS studies describing variants associated with CAD was obtained after submitting the query ‘coronary artery disease’ to online repository. Eventually, three of the references used the detected genomic positions to construct separate CAD risk scores and they were included in our work (scores 4–6). Other 19 studies – solely claiming the newly discovered correlations with the cardiovascular disorder and not defining GRS – were omitted. The lists of SNPs involved in each of GRS are provided in Supplementary File (Supplementary file 16, 17, 18, 19), except for score 2 (Khera et al., 2018) which is available at Cardiovascular Disease Knowledge Portal at http://www.broadcvdi.org/informational/data.
 
-In general, the GRS calculation followed presented equation:GRS=(A1∗β1)+(A2∗β2)+...+(An∗βn)where A stands for the genotype (wild type = 0, heterozygous = 1, homozygous = 2) and β for the effect size (expressed for example as OR or beta value) of a particular risk allele n. The.
+In general, the GRS calculation followed presented equation:
+
+$$
+GRS=(A_{1}∗\beta_{1})+(A_{2}∗\beta_{2})+...+(A_{n}∗\beta_{n})
+$$
+
+where A stands for the genotype (wild type = 0, heterozygous = 1, homozygous = 2) and β for the effect size (expressed for example as OR or beta value) of a particular risk allele n. The.
 
 For each participant of Cohort 1 (discovery cohort) six separate GRS were calculated using –score function within PLINK toolset. For polygenic score 1, due to a high ratio of absent risk variants among analyzed samples (above 10%), missing positions were searched for proxy SNPs using LDproxy web tool within LDlink suite available at https://ldlink.nci.nih.gov/. We performed each interrogation searching for specific RS numbers and the proxy variants were determined according to the following criteria: (1) presence in Tuscany population; (2) present in cohort I; (3) display the highest R2 (necessarily above 0.8). In the effect, 24 absent leading SNPs were successfully substituted and identified proxies were incorporated in the risk score calculation with original loadings. This operation was not considered necessary for other GRS since the ratio of absent SNPs was neglectable.
 

@@ -30,31 +30,83 @@ Consistent with our hypothesis, small RNAs derived from satDNAs exist in germlin
 
 ## Results and discussion
 
-## SatDNA transcripts originate primarily from large heterochromatic satDNA blocks
+### SatDNA transcripts originate primarily from large heterochromatic satDNA blocks
 
 To study satDNA expression patterns, we characterized transcripts from two representative complex satDNA families in D. melanogaster—Rsp and 1.688—across tissues and developmental time points. Rsp consists of a dimer of two closely related ~120 bp repeats in the pericentric heterochromatin on chromosome 2R of D. melanogaster (Wu et al., 1988; Pimpinelli and Dimitri, 1989). The 1.688 family of repeats is the most abundant complex satDNA in D. melanogaster (Lohe and Roberts, 1988). It comprises different subfamilies that exist as discrete tandem arrays in the pericentric heterochromatin named after their repeat unit sizes on chromosome 2L (260-bp), chromosome 3L (353-bp and 356-bp), and the X chromosome (359-bp) (Losada and Villasante, 1996; Abad et al., 2000). Because there is high sequence similarity among these repeats, we analyzed all 1.688 subfamilies together unless stated otherwise.
 
 We mined modENCODE datasets (Supplementary file 1 and Graveley et al., 2011; Brown et al., 2014) and found evidence for satDNA expression in total RNA-seq datasets from both sexes and across different developmental stages (Figure 1, Figure 1—figure supplement 1). Both satDNA families are expressed in gonads, head, and other tissues (Figure 1A, Figure 1—figure supplement 1C). Their transcript abundance is low (RPMRsp < 10 and RPM1.688 < 300; Supplementary file 2) and generally increases throughout development and with adult age (Figure 1—figure supplement 1A, B). SatDNA-derived reads have very low abundance in the poly-A selected RNA-seq data (RPMRsp < 0.2 and RPM1.688 < 10; Supplementary file 2), indicating that the majority of satDNA transcripts are not polyadenylated.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig1-v2.jpg)
+
+**Figure 1.:** (A) Rsp satDNA transcription level in various tissues (corresponding result for 1.688 is shown in Figure 1—figure supplement 1C). Carcass: whole body without the head, reproductive organs, and digestive tract. Source data in Figure 1—source data 1. (B) RNA fluorescence in situ hybridization shows evidence for Rsp and 1.688-derived transcripts in testes and ovaries; asterisk indicates the hub. The probe for 1.688 recognizes all 1.688 subfamilies except for 260-bp on chromosome 2L. (C) Northern blot probed with Rsp. Total RNA was extracted from ovaries of fly lines with varying copy numbers of Rsp: ZW144 (200 copies), Ral357 (600 copies), Iso-1 (1100 copies), Ral380 (2300), and lt pk cn bw (4100). There is no signal after RNaseA treatment. Signal quantification (shown in Figure 1—figure supplement 1D) shows Rsp transcript abundance correlates with its genomic copy number (Pearson’s correlation coefficient r2 = 0.93, p-value=0.02). (D) qPCR and qRT-PCR quantification of Rsp copy number and expression level, respectively, of strains used in northern blot. A linear regression line is shown in the plot with red dotted line (Pearson’s correlation coefficient r2 = 0.98, p-value=0.003). Details for (C) and (D) in Supplementary file 4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) SatDNA transcription level in various developmental stages (A for Rsp and B for 1.688). L2: second instar larvae; WPP: white prepupae; Fem: female. Complex satDNA expression increases with adult age. (C) 1.688 satDNA transcription level in various tissues (corresponding result for Rsp is shown in Figure 1A). Carcass: whole body without the head, reproductive organs, and digestive tract. Source data in Figure 1—source data 1. (D) Northern signal quantification of Rsp transcript abundance. Data for (A–C) from modENCODE (Graveley et al., 2011; Brown et al., 2014).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** RNA FISH of Rsp and 1.688 in ovary (A), with RNaseA treatment prior to probe hybridization (B) and with RNaseH treatment after DNA probe hybridization (C). The 1.688 probe recognizes major 1.688 loci on chromosomes X and 3.
+
 To validate the presence of satDNA-derived transcripts in gonads, we used RNA fluorescence in situ hybridization (FISH). Both Rsp and 1.688 satellite transcripts are visible in testes and ovaries (Figure 1B, Figure 1—figure supplement 2A). These signals are undetectable after treating with RNaseA prior to probe hybridization (Figure 1—figure supplement 2B), which degrades single-stranded RNAs, or RNaseH post-probe hybridization (Figure 1—figure supplement 2C), which degrades the RNA in DNA-RNA hybrids. This suggests that these signals are from RNA rather than DNA. We detected satDNA transcript foci in ovarian nurse cells and in pre-meiotic testicular germ cells. Interestingly, in testes we detected Rsp signal at earlier stages of spermatogenesis (i.e., germline stem cells/spermatogonia) than the 1.688 signals (i.e., primary spermatocytes; Figure 1B). The difference in timing is notable as Rsp is the specific target of Segregation Distorter (SD; Sandler et al., 1959): a well-known male meiotic drive system that causes a defect in post-meiotic germ cells (reviewed in Larracuente and Presgraves, 2012). Rsp transcription may therefore play some specific role in the male germline distinct from other complex satDNA.
 
 The bulk of satDNAs are found in large blocks of tandem repeats in the heterochromatin with small blocks occurring in the euchromatin (Waring and Pollack, 1987; DiBartolomeis et al., 1992; Kuhn et al., 2012; Sproul et al., 2020). Some of the euchromatic (Menon et al., 2014; Joshi and Meller, 2017; Deshpande and Meller, 2018) and heterochromatic loci in the 1.688 family (Usakin et al., 2007) are transcribed. To determine if satDNA-derived transcripts originating from large heterochromatic loci is a general feature of other complex satDNAs, we examined transcript size and abundance in total RNA from ovaries of flies that vary in Rsp repeat copy number (Supplementary file 3; Khost et al., 2017). We determined that, while transcript lengths were similar among these lines—ranging between <300 nt and >9000 nt (Figure 1C)—the abundance of Rsp transcripts correlated with genomic copy number (Figure 1—figure supplement 1D and Supplementary file 4, Pearson’s correlation coefficient r2 = 0.93, p-value=0.02). We validated these hybridization results using qPCR and qRT-PCR to quantify Rsp genomic DNA and RNA transcript abundance, respectively (Figure 1D and Supplementary file 4, Pearson’s correlation coefficient r2 = 0.98, p-value=0.003). The correlation between genomic copy number and transcript abundance is consistent with most transcripts originating from the large blocks of heterochromatic satDNA.
 
-## SatDNA transcripts are processed into piRNAs in Drosophila germline
+### SatDNA transcripts are processed into piRNAs in Drosophila germline
 
 Many different repeat-derived transcripts are processed into piRNAs (Aravin et al., 2003; Saito et al., 2006; Brennecke et al., 2007) and endo-siRNAs (Czech et al., 2008; Ghildiyal et al., 2008; Okamura et al., 2008; Menon et al., 2014). To ask if complex satDNA-derived RNAs are processed into small RNAs, we reanalyzed published small RNA-seq data (Supplementary file 1; Ghildiyal et al., 2010; Rozhkov et al., 2010; Fagegaltier et al., 2014; Mohn et al., 2014; Quénerch'du et al., 2016; Andersen et al., 2017; Parhad et al., 2017). We indeed detected satDNA-derived small RNAs in testes and ovaries (Figure 2—figure supplement 1A, B). Our results suggest that the majority of these satDNA-derived small RNAs are piRNAs. First, these small RNAs are abundant in testes and ovaries, and their size distribution is typical for piRNA populations: an average of 90% of the RNAs range from 23 nt to 28 nt, with a peak at 24–26 nt in D. melanogaster (Brennecke et al., 2007; Figure 2A for Rsp and Figure 2—figure supplement 1C for 1.688). Second, the satDNA-derived small RNAs bear a signature of the piRNA-guided RNA cleavage process called the ping-pong cycle. piRNAs amplified through ping-pong have a 10 nt overlap of antisense-sense piRNAs with a preference of uridine at the 5′ end (1U) or adenosine at nucleotide position 10 (10A) (Brennecke et al., 2007; Gunawardane et al., 2007). Our analysis of the ovary small RNA-seq data (Mohn et al., 2014; Andersen et al., 2017; Parhad et al., 2017) confirms a ping-pong signature for satDNA-derived small RNAs: Z-score = 4.55 for Rsp and 6.85 for 1.688 satellite (Figure 2—figure supplement 1E, G) and ~60–80% have 1U/10A (Figure 2—figure supplement 1D, F). Third, satDNA-derived small RNAs are bound by the PIWI proteins, as expected for piRNAs. Our reanalysis of published Piwi, Aubergine (Aub), and Argonaute3 (Ago3) RIP-seq data from ovaries (Brennecke et al., 2007; Mohn et al., 2015; Sato et al., 2015) shows that Rsp and 1.688 RNAs interact with each of these proteins (Supplementary file 5). For example, ~0.9% and 0.1% of Piwi-bound RNAs map to 1.688 and Rsp, respectively. For comparison, ~2% and 17% Piwi-bound RNAs mapped to the dual-strand piRNA clusters 80F and 42AB, respectively. In contrast, only an average of 0.0005% of the reads from Piwi RIP-seq data mapped to miRNAs, which are abundant small RNAs not known to be bound by Piwi. This suggests that the abundance of satellite RNA in the RIP-seq data is not likely due to noise or contamination. Our results from Aub and Ago3 RIP data are similar to Piwi (Supplementary file 5; e.g., 3.1% and 0.1% of Aub-bound RNAs map to 1.688 and Rsp, respectively; and 1.8% and 0.07% of Ago3-bound RNAs map to 1.688 and Rsp, respectively). Together, these results indicate that satDNA-derived transcripts are processed into piRNAs in the female germline.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig2-v2.jpg)
+
+**Figure 2.:** (A) Size distribution of Rsp small RNAs in testes and ovaries (1.688 distribution is in Figure 2—figure supplement 1C). Source data in Figure 2—source data 1. (B) Rhino ChIP-seq result from ovaries showing the enrichment scores for satDNAs, uni-strand (uni) piRNA clusters, dual-strand (dual), and euchromatin (eu). The enrichment scores for each satDNA and piRNA cluster are shown in Figure 2—figure supplement 5A. p-values are estimated by pairwise t-tests with FDR correction (Benjamini and Hochberg, 1995). * adjusted p-value<0.05. Source data in Figure 2—source data 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Small RNA levels (RPM) in ovary, testis, head, and body (minus head) for 1.688 (A) and Rsp (B). Source data in Figure 2—figure supplement 1—source data 1. (C) Size distribution of 1.688 small RNAs in gonads. (D, F) Relative nucleotide bias of each position in small RNAs from Rsp (D) and 1.688 (F) satellite in ovary. (E, G) 5′-to-5′ end distance analysis results of small RNAs from Rsp (E) and 1.688 (G) satellite in ovary show bias of 10-nt overlap. Z-score = 4.55 for Rsp and 6.85 for 1.688 satellite. Data from Ghildiyal et al., 2010; Rozhkov et al., 2010; Fagegaltier et al., 2014; Mohn et al., 2014; Quénerch'du et al., 2016; Andersen et al., 2017; Parhad et al., 2017.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Small RNA reads pileup along Rsp, 260-bp and 359-bp (representative 1.688 satellites) consensus sequences for ovary (A) and testis (B). Rsp-L is 1–116 nt and Rsp-R is 117–223 nt in a Rsp dimer sequence. (C) Alignment depth of genomic satDNA repeat variants extracted from the genome assembly along consensus sequences. Rsp variants resident inside the Ago3 intron on chromosome 3L (3L locus) are shown separately in a dashed line. (D) Rhino ChIP-seq reads pileup along the satellite consensus sequences. Data from Rozhkov et al., 2010; Mohn et al., 2014; Zhang et al., 2014; Quénerch'du et al., 2016; Andersen et al., 2017; Parhad et al., 2017.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Small RNA reads pileup along Invader6 (A), mdg3 (B), and Het-A (C) consensus sequences for ovary and testis. Data from Rozhkov et al., 2010; Mohn et al., 2014; Quénerch'du et al., 2016; Andersen et al., 2017; Parhad et al., 2017.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Percentages of reads mapped to plus and minus strands at all genomic copies of Rsp or 1.688 satellites for all mapped reads (left) and uniquely mapped reads (right). Source data in Figure 2—figure supplement 4—source data 1. (B) Read depth for the plus and minus strands on the contigs containing the Rsp 2R major locus and 260-bp 2L locus (Khost et al., 2017). Read depth of all reads mapped to each locus is shown on the left, and depth of uniquely mapped reads is shown on the right. Ovary data is from Mohn et al., 2014; Andersen et al., 2017, and testis data is from this study.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Rhino ChIP-seq enrichment scores for Rsp, 1.688 (based on an analysis of discrete heterochromatic loci, details in Materials and methods), piRNA clusters, and euchromatin indicate that satDNAs are enriched for Rhino, resembling dual-strand piRNA clusters. Uni-strand piRNA clusters and euchromatin are not Rhino enriched. The Rhino enrichment results for 1.688 with all subfamilies across the genome are similar. (B) H3K9me3 ChIP-seq enrichment scores indicate that Rsp, 1.688 (based on an analysis of discrete heterochromatic loci, details in Materials and methods) and most piRNA clusters are enriched for H3K9me3, while euchromatin is not. Source data in Figure 2—source data 2. Data from Klenov et al., 2014; Le Thomas et al., 2014; Mohn et al., 2014; Zhang et al., 2014; Parhad et al., 2017.
+
 We examined the piRNA distribution along individual repeat units for Rsp and two subfamilies of 1.688 (359-bp and 260-bp) by blasting the corresponding sequencing reads to each consensus sequence. We find that the distribution of piRNA read depth is not uniform along the length of single monomers (359-bp and 260-bp) or dimers (Rsp) of these satDNA repeats (Figure 2—figure supplement 2A, B). This pattern could arise if these piRNAs derive from repeat fragments overrepresented in the genome. However, when we look at the alignment depth of all genomic repeat variants, it is more uniform across the monomers/dimers than the piRNA pileup (Figure 2—figure supplement 2C). We observe similar non-uniform patterns of piRNA pileup over germline-dominant TEs (e.g., invader6, mdg3, and Het-A; Figure 2—figure supplement 3), suggesting that these uneven distributions may arise from piRNA processing. The piRNA read pileup pattern also differs between ovaries and testes (Figure 2—figure supplement 2A, B), suggesting that there may be differences in transcription machinery, precursor production, or precursor processing between these tissues.
 
-## SatDNA transcription resembles dual-strand piRNA clusters
+### SatDNA transcription resembles dual-strand piRNA clusters
 
 D. melanogaster ovarian piRNAs originate primarily from uni- or dual-strand piRNA clusters. To determine which pathway controls the expression of satDNA-derived piRNA precursors, we asked whether transcripts come from one or both strands. We mapped total RNAseq reads from ovary and testis to the genome assembly. Collectively, for all genomic copies of Rsp or 1.688 satDNA (all subfamilies), we find a nearly 1:1 ratio of reads mapping to the plus and minus strands (Figure 2—figure supplement 4A; all mapped and uniquely mapped reads). However, the highly repetitive nature of satDNAs makes confidently assigning satellite-derived reads to a genomic location difficult. We therefore take advantage of our assemblies for two representative satDNA loci: the major Rsp locus on chromosome 2R and the 260-bp locus, a subfamily of 1.688, on chromosome 2L (Khost et al., 2017). For these two loci, we confirm that reads map uniquely to both strands of the contigs (Figure 2—figure supplement 4B). Together, these results suggest that satDNAs are transcribed from both strands, similar to dual-strand piRNA clusters.
 
 Dual-strand piRNA clusters are associated with the heterochromatin binding protein Rhi (Klattenhoff et al., 2009; Zhang et al., 2014). We therefore reanalyzed publicly available ChIP-seq datasets from ovaries (Mohn et al., 2014; Zhang et al., 2014; Parhad et al., 2017) to determine if satDNA regions are also Rhi-associated. Our results for piRNA clusters are consistent with previous studies (Klattenhoff et al., 2009; Mohn et al., 2014; Andersen et al., 2017): the dual-strand piRNA clusters have higher Rhi enrichment (mean enrichment ChIP/Input Edual = 9.08) compared to uni-strand piRNA clusters (Euni = 1.69; pairwise t-test with Benjamini–Hochberg; Benjamini and Hochberg, 1995 adjusted p-value Padj=0.01) and euchromatic genes (Eeuch = 1.55; Padj=0.01). We found that complex satDNAs are in the top 30% of all repeats enriched in Rhi (full data in Figure 2—source data 3). The level of Rhi enrichment for satDNAs (Esat = 4.70) is intermediate between the highly enriched dual-strand piRNA clusters (Padj=0.1) and the minimally Rhi enriched uni-strand piRNA clusters (Padj=0.01) or euchromatin (Padj=0.01 Figure 2B and Figure 2—figure supplement 5A). Unlike the uneven distribution of piRNAs along satellite monomers/dimers (Figure 2—figure supplement 2A, B), the distribution of Rhi ChIP-seq reads (Figure 2—figure supplement 2D) is similar to the alignment depth of genomic repeats (Figure 2—figure supplement 2C). This suggests that Rhi localizes to the large satDNA genomic loci rather than a subset of smaller clusters or repeats across the genome (e.g., the 12 copies of Rsp inside an intron of Ago3 on chromosome 3L; Figure 2—figure supplement 2C) or in potentially unannotated piRNA clusters.
 
-## SatDNA transcription is regulated by RDC complex and Moon
+### SatDNA transcription is regulated by RDC complex and Moon
 
 Because we find that satDNAs generate piRNAs in the female germline and their chromatin is associated with Rhi, we asked if the same transcription and RNA processing machinery are used by both satDNAs and dual-strand piRNA clusters. We used publicly available small RNA-seq datasets generated from mutants of genes involved in the heterochromatin-dependent transcription initiation of dual-strand piRNA clusters: Rhi, Cuff, Del (RDC), and Moon (Klattenhoff et al., 2009; Pane et al., 2011; Czech et al., 2013; Le Thomas et al., 2014; Mohn et al., 2014; Andersen et al., 2017; Parhad et al., 2017). We normalized piRNA abundance to the number of reads mapped to either miRNAs (Figure 3A) or the uni-strand flamenco cluster (Figure 3—figure supplement 1), neither of which should be affected by mutations in the RDC pathway.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig3-v2.jpg)
+
+**Figure 3.:** (A) Heatmap showing the quantification of changes in piRNA abundance in small RNA-seq data from mutants of rhino, cutoff, deadlock, and moonshiner compared to controls for satDNAs and piRNA clusters, normalized by miRNA level. GLKD: germline knockdown. Complete list of log2 fold changes in Supplementary file 6. (B) qPCR estimate of Rsp copy number in wild types and mutants. (C) qRT-PCR estimate of Rsp transcript level in mutants compared to wild types. ΔΔCt = ΔCt(wild type) – ΔCt(mutant), a negative value indicates lower expression in mutant. Student’s t-test, p-value=0.077, 0.048. Source data in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Heatmap showing the quantification of changes in piRNA abundance from mutants of rhino, cutoff, deadlock, and moonshiner compared to controls for satDNAs and piRNA clusters, normalized to the flamenco piRNA cluster. GLKD: germline knockdown. Complete list of log2 fold changes in Supplementary file 7. Data from Klattenhoff et al., 2009; Pane et al., 2011; Czech et al., 2013; Le Thomas et al., 2014; Mohn et al., 2014; Andersen et al., 2017; Parhad et al., 2017.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Boxplots showing the quantification of total RNA abundance for piRNA clusters in RDC (A) and rhi/moon (B) mutant ovaries relative to wild type (log2 fold change of 1 kb windows). 20A and flamenco are uni-strand piRNA clusters; 42AB, 80F, and 38C1/2 are dual-strand piRNA clusters. Source data in Figure 3—figure supplement 2—source data 1. Data from Mohn et al., 2014 for (A) and (Andersen et al., 2017) for (B). A sliding window method is not feasible for analyzing satellite DNAs (satDNAs) because it relies on uniquely mapped reads, of which there are relatively few at satDNA loci. Therefore, we instead count reads mapping to all genomic repeat variants for each satDNA and piRNA cluster (the whole locus; Supplementary file 8). The locus-wide results are comparable with the sliding window analysis, but more conservative.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Heatmap showing the quantification of changes in small RNA abundance from mutants of proteins in the primary piRNA pathway (A), pathway for piRNA precursor export from the nucleus and ping-pong pathway (B, C) compared to controls. The results are consistent between replicates/studies regarding Vreteno, Shutdown, Krimper, and UAP56, suggesting that complex satDNA piRNA production is regulated by these proteins. For some mutants, including Aub, SpnE, and Piwi, the results differed between complex satDNAs; for example, the 1.688 family of satDNAs shows consistently decreased piRNA levels, but not Rsp for Piwi. For other proteins such as Zucchini and Armitage, the patterns of change for satDNAs are variable between different datasets; for example, satDNAs show decreased piRNA levels in one of the datasets, but increased levels in the other dataset for Zucchini. For all the datasets analyzed, all piRNA clusters behave as reported previously. GLKD: germline knockdown. Flamenco is only expressed in somatic tissues, GLKD does not affect its abundance. piRNAs are resistant to oxidation, for one of the datasets from Zhang et al., 2012, they were selected for sequencing after oxidation to exclude other types of small RNAs (e.g., siRNAs, miRNAs), so normalization to miRNA is not appropriate, thus it is excluded in (B). In the piwi mutant from Malone et al., 2009, flamenco expression is affected and not appropriate as control for normalization, thus it is excluded in (C). Source data in Figure 3—figure supplement 3—source data 1. Data from Malone et al., 2009; Handler et al., 2011; Olivieri et al., 2012; Preall et al., 2012; Zhang et al., 2012; Czech et al., 2013; Sato et al., 2015; Wang et al., 2015.
 
 Our analysis of the known piRNA clusters agrees with published results: the dual-strand piRNA clusters 42AB and 80F are Rhi- and Moon-dependent, and 38C1/2 is Rhi-dependent but not Moon-dependent. The uni-strand piRNA clusters 20A and flamenco are not dependent on either protein (Klattenhoff et al., 2009; Pane et al., 2011; Mohn et al., 2014; Andersen et al., 2017). We find that the pools of complex satDNA-derived piRNAs are also reduced in RDC and Moon mutants (Figure 3A, Figure 3—figure supplement 1). In rhi mutants, Rsp piRNA abundance is 0.2–6.3% their levels in wild-type datasets. Similarly, piRNA abundance for 1.688 is 1.4–7.8% their levels in wild-type datasets (complete list of log2 fold change for satDNAs in Supplementary files 6 and 7). The reduction in satDNA piRNA level is robust to normalization method (miRNA in Figure 3A; flamenco cluster in Figure 3—figure supplement 1). While the expression of simple satellite repeats like AAGAG was not decreased in these mutants (Supplementary file 6 and Supplementary file 7), the low abundance of AAGAG reads (the number of reads mapping to AAGAG are only ~0.5% of Rsp and ~0.03% of 1.688) and known sources of bias for simple repeats (e.g., PCR bias in RNA-seq library preparation; Wei et al., 2018) points to the need for different approaches to verify this finding. Overall, our results indicate that piRNA production from complex satDNAs is regulated by the heterochromatin-dependent transcription machinery associated with dual-strand piRNA clusters.
 
@@ -62,13 +114,21 @@ To further examine how the RDC complex and Moon affect complex satDNA transcript
 
 We also asked if the satDNA-derived piRNA pool is affected in mutants of 12 genes involved in piRNA precursor export from the nucleus, primary piRNA biogenesis, and the ping-pong cycle (Figure 3—figure supplement 3; Czech et al., 2018; datasets from Malone et al., 2009; Handler et al., 2011; Olivieri et al., 2012; Preall et al., 2012; Zhang et al., 2012; Czech et al., 2013; Sato et al., 2015; Wang et al., 2015; Supplementary file 1). For each of the datasets analyzed, we recapitulate previously reported results for all known piRNA clusters (Figure 3—figure supplement 3; Czech et al., 2018). Our reanalysis of these data suggests that piRNA production for all complex satDNA is regulated by the primary piRNA pathway (Gasz, Vreteno, Shutdown), UAP56, and the ping-pong pathway (Ago3, Krimper). Some of our reanalysis results varied between datasets from different studies for satDNAs. For example, satDNAs show decreased piRNA levels in one mutant Zucchini dataset (Olivieri et al., 2012) but increased levels in an independent Zucchini dataset (Malone et al., 2009; Handler et al., 2011). While further work is required to determine all of the components involved in processing satDNA transcripts, our results suggest that piRNA production at satDNA loci is regulated by the dual-strand piRNA pathway.
 
-## Heterochromatin establishment at satDNAs requires Piwi
+### Heterochromatin establishment at satDNAs requires Piwi
 
 Consistent with their Rhi enrichment, we find that satDNAs are enriched for H3K9me3 in ovaries (Figure 2—figure supplement 5B; datasets from Klenov et al., 2014; Le Thomas et al., 2014; Mohn et al., 2014). Piwi plays an important role in establishing H3K9 methylation on euchromatic TEs in ovaries (Mohn et al., 2014) and heterochromatin more generally in embryos (Akkouche et al., 2017). Transiently knocking down piwi expression early in the embryonic germline leads to a general decrease in H3K9me3 in the adult ovary, and a specific decrease in piRNA production and increase in spliced non-precursor transcripts at dual-strand piRNA clusters (Akkouche et al., 2017). We therefore reanalyzed H3K9me3 ChIP-seq data from embryonic piwi knock down ovaries (Akkouche et al., 2017). We detected a decrease of H3K9me3 at satDNAs (Figure 4A), suggesting that Piwi is also required for the establishment of heterochromatin at these loci. Consistent with the decrease in H3K9me3, piRNA production from satDNAs is also reduced (with some variation among replicates observed for Rsp; Figure 4B); and satDNA total RNA levels are increased (Figure 4—figure supplement 1), similar to dual-strand piRNA clusters (Akkouche et al., 2017). However, it is again difficult to distinguish between satDNA precursor and non-precursor RNAs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig4-v2.jpg)
+
+**Figure 4.:** (A) Log2 fold change of H3K9me3 ChIP/input enrichment shows satDNA H3K9me3 levels decrease in piwi embryonic knockdown ovaries compared to control. Source data in Figure 4—source data 1. p-values are estimated by one-sample t-test (mu = 0) with FDR corrections (Benjamini and Hochberg, 1995). * adjusted p-value<0.05, ** adjusted p-value<0.01, *** adjusted p-value<0.001. (B) Log2 fold change of small RNA abundance shows satDNA small RNA levels decrease compared to controls, with variation observed for replicate2. Small RNA abundance is normalized to the number of reads mapped to miRNAs. Source data in Figure 4—source data 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62375/elife-62375-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Adjusted p-values are reported by DESeq2. 20A and flamenco are uni-strand piRNA clusters (uni), 42AB, 80F, and 38C1/2 are dual-strand piRNA clusters (dual). *** adjusted p-value<0.001. Source data in Figure 4—figure supplement 1—source data 1. Data from Akkouche et al., 2017.
+
 While Piwi is important for heterochromatin establishment at piRNA clusters, it appears to be dispensable for heterochromatin maintenance (Czech et al., 2018). Depleting Piwi in the nucleus with piwi mutants lacking a nuclear localization signal (NLS; Klenov et al., 2014), or knocking down germline piwi (Le Thomas et al., 2013; Mohn et al., 2014) affects H3K9me3 level on a subset of active transposons, but not on piRNA clusters (Klenov et al., 2014; Mohn et al., 2014). Similar to piRNA clusters, our reanalysis of these data shows that the level of H3K9me3 on satDNAs is largely unchanged in the knockdown or mutant ovaries (with some variation observed among datasets; Supplementary file 10). These analyses suggest a role for Piwi in establishing, but not maintaining, heterochromatin at satDNAs in early embryos, which is important for producing piRNAs later in adult ovaries.
 
-## Conclusions
+### Conclusions
 
 piRNA pathways are primarily studied for their conserved role in protecting genome integrity by repressing TE activity in different organisms (Aravin et al., 2006; Girard et al., 2006; Grivna et al., 2006; Lau et al., 2006; Brennecke et al., 2007; Houwing et al., 2007; reviewed in Parhad and Theurkauf, 2019). However, our findings support a more general role for these pathways. Here we show that transcription from satDNAs is regulated by the heterochromatin-dependent RDC machinery and Moon in ovaries and these transcripts are processed into piRNAs. Thus, complex satDNA transcription is regulated in a manner similar to dual-strand piRNA clusters in the female germline (Figure 5).
 
@@ -86,31 +146,314 @@ Many mysteries remain surrounding the functions of the piRNA pathway outside of 
 
 ## Materials and methods
 
-## Drosophila stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>rhi</td>
+      <td>Flybase</td>
+      <td>Flybase: FBgn0004400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>moon</td>
+      <td>Flybase</td>
+      <td>Flybase: FBgn0030373</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>del</td>
+      <td>Flybase</td>
+      <td>Flybase: FBgn0086251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>cuff</td>
+      <td>Flybase</td>
+      <td>Flybase: FBgn0260932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>piwi</td>
+      <td>Flybase</td>
+      <td>Flybase: FBgn0004872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female and male)</td>
+      <td>Iso-1</td>
+      <td>Bloomington Drosophila Stock Center (BDSC)</td>
+      <td>BDSC: 2057; RRID:BDSC_2057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female)</td>
+      <td>ZW144</td>
+      <td>doi:10.1534/g3.114.015883 Grenier et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female)</td>
+      <td>Ral357</td>
+      <td>BDSC</td>
+      <td>BDSC:25184; RRID:BDSC_25184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female)</td>
+      <td>Ral380</td>
+      <td>BDSC</td>
+      <td>BDSC:25190; RRID:BDSC_25190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female)</td>
+      <td>It pk cn bw</td>
+      <td>Ganetzky, 1977</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female)</td>
+      <td>w1118</td>
+      <td>BDSC</td>
+      <td>BDSC:5905; RRID:BDSC_5905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female)</td>
+      <td>w1</td>
+      <td>BDSC</td>
+      <td>BDSC:2390; RRID:BDSC_2390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster, female)</td>
+      <td>OregonR</td>
+      <td>BDSC</td>
+      <td>BDSC:2376; RRID:BDSC_2376</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>rhi mutant</td>
+      <td>Vienna Drosophila Resource Center (VRDC)</td>
+      <td>VDRC:313487</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>rhi mutant</td>
+      <td>VRDC</td>
+      <td>VDRC:313488</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>moon mutant</td>
+      <td>VRDC</td>
+      <td>VDRC:313735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>moon mutant</td>
+      <td>VRDC</td>
+      <td>VDRC:313738</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPS3 forward</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>AGTTGTACGCCGAGAAGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPS3 Reverse</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>TGTAGCGGAGCACACCATAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tRNA forward</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>CTAGCTCAGTCGGTAGAGCATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tRNA Reverse</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>CCAACGTGGGGCTCGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rsp forward</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>GGAAAATCACCCATTTTGATCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rsp Reverse</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>CCGAATTCAAGTACCAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Probe for 1.688</td>
+      <td>IDT</td>
+      <td>RNA FISH probe</td>
+      <td>Cy5TTTTCCAAATTTCGGTCATCAAATAATCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Probe for Rsp</td>
+      <td>Stellaris</td>
+      <td>RNA FISH probe</td>
+      <td>Custom Stellaris FISH probes with 45 sequences listed in Supplementary file 11</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T7_rsp2</td>
+      <td>IDT</td>
+      <td>Northern blot probe synthesis primer</td>
+      <td>TAATACGACTCACTATAGGGCCGAATTCAAGTACCAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rsp1</td>
+      <td>IDT</td>
+      <td>Northern blot probe synthesis primer</td>
+      <td>GGAAAATCACCCATTTTGATCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rsp primer_F</td>
+      <td>IDT</td>
+      <td>Slot blot probe synthesis primer</td>
+      <td>TAATACGACTCACTATAGGGGAAAATCACCCATTTTGATCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rsp primer_R</td>
+      <td>IDT</td>
+      <td>Slot blot probe synthesis primer</td>
+      <td>CCGAATTCAAGTACCAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rp49 primer_F</td>
+      <td>IDT</td>
+      <td>Slot blot probe synthesis primer</td>
+      <td>TAATACGACTCACTATAGGGCAGTAAACGCGGTTCTGCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rp49 primer_R</td>
+      <td>IDT</td>
+      <td>Slot blot probe synthesis primer</td>
+      <td>CAGCATACAGGCCCAAGATC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>doi:10.1038/nmeth.1923.</td>
+      <td>RRID:SCR_016368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>doi:10.1002/0471250953.bi1107s32.</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>doi:10.1186/s13059-014-0550-8.</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>piPipes</td>
+      <td>doi:10.1093/bioinformatics/btu647.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLAST</td>
+      <td>NCBI</td>
+      <td>RRID:SCR_004870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R core team</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Customized Python scripts</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Wei et al., 2021b GitHub (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks
 
 Iso-1 (RRID:BDSC_2057) was used as the wild-type strain, unless stated otherwise. In the qPCR validation experiment, rhi mutants (rhi-) are transheterozygotes from the Vienna Drosophila Resource Center (VDRC 313487 and 313488) as are the moonshiner mutants (moon-) (VDRC 313735 and 313738) as described in Andersen et al., 2017. Based on the origin and genetic background of these mutants, w1118 (RRID:BDSC_5905) or the progeny from OregonR (Ore) (RRID:BDSC_2376) crossed to w1 (RRID:BDSC_2390) were used as the wild-type controls for rhi- and moon-. All flies were maintained at 23°C on cornmeal medium.
 
-## Small RNA-seq
+### Small RNA-seq
 
 6–8-day-old testes were dissected in RNase-free PBS buffer. Total RNA was extracted using mirVana miRNA Isolation Kit (Ambion) with procedures for isolating RNA fractions enriched for small RNAs (<200 nt), then treated with RNase free DNase I (Promega) at 37°C for 1 hr. Library preparation and sequencing were performed by Genomics Research Center at University of Rochester. Briefly, 2S rRNA was depleted (Wickersheim and Blumenstiel, 2013), small RNA library was prepared with TruSeq Small RNA Library Prep Kit (Illumina) and sequenced by Illumina platform HiSeq2500 Single-end 50 bp.
 
-## Total RNA-seq
+### Total RNA-seq
 
 6–8-day-old testes were dissected in RNase-free PBS buffer. Total RNA was extracted using mirVana miRNA Isolation Kit (Ambion) with procedures for isolating RNA fractions enriched for long RNAs (>200 nt), then treated with RNase free DNase I (Promega) at 37°C for 1 hr. Library preparation and sequencing were performed by Genomics Research Center at University of Rochester. Briefly, rRNA was removed and total RNA library was prepared with TruSeq Stranded Total RNA Library Prep Human/Mouse/Rat (Illumina) and sequenced by Illumina platform HiSeq2500 Paired-end 125 bp.
 
-## SatDNA analysis
+### SatDNA analysis
 
 Reads were mapped to the heterochromatin-enriched genome assembly (Chang and Larracuente, 2019) and counted based on their annotations (e.g., Rsp or 1.688). Due to the highly repetitive nature of satDNAs, around 80% of total RNA-seq and 99% of small RNA-seq reads that are mapped to satDNA regions are not uniquely assigned; discarding these multiple mapped reads would result in loss of statistical power in the satDNA analysis. To deal with this, multiple mapped reads were randomly assigned to one of their multiple best mapping locations, unless stated otherwise. Reads were then counted based on the annotations of their assigned mapping locations. Because there is high-sequence similarity among the 1.688 subfamily repeats (260-bp, 359-bp, 353-bp, 356-bp), all 1.688 subfamilies were combined, unless stated otherwise. A similar approach was used in our analysis of piRNA clusters, except that only uniquely mapped reads were counted so that the published results could serve as controls for our method. Additional details specific to small RNA-seq, RNA-seq, ChIP-seq, and RIP-seq analyses are given below.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 All total RNA-seq datasets reanalyzed in our study are listed in Supplementary file 1. Total RNA-seq reads were trimmed for adaptors and then mapped to the genome using Bowtie2 (RRID:SCR_016368) (Langmead and Salzberg, 2012). A customized Python script was used to count reads that mapped to each repeat feature or piRNA cluster, and RPM values were reported by normalizing raw counts to 1,000,000 total mapped reads (Wei et al., 2021b https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation; Wei, 2020, htseq_bam_count_proportional.py; Wei et al., 2021b). For the 1.688 subfamilies, all subfamilies were combined into one 1.688 category, although analyzing each by subfamily (e.g., 353-bp, 356-bp, 359-bp, 260-bp) does not change our conclusions (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation) (Wei, 2020; Wei et al., 2021b). For results shown in Supplementary file 8, DESeq2 (RRID:SCR_015687) (Love et al., 2014) was used to perform differential expression analysis of the raw counts with combined data from different studies (Mohn et al., 2014; Andersen et al., 2017), with experimental condition and associated study as covariates. This analysis method is conservative and leads to smaller log2 fold changes than published results of piRNA clusters. For comparison with the published results, a similar approach was used to analyze piRNA clusters (Mohn et al., 2014; Andersen et al., 2017). Briefly, quantification of reads mapping to 1 kb windows inside each piRNA cluster was estimated using a customized Python script (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation; Wei, 2020;, htseq_bam_count_proportional.py; Wei et al., 2021b), and subsequent differential expression analysis between mutants and wildtype was done using DESeq2 (RRID:SCR_015687) (Love et al., 2014; results shown in Figure 3—figure supplement 2).
 
-## Small RNA-seq analysis
+### Small RNA-seq analysis
 
 All small RNA-seq datasets reanalyzed in our study are listed in Supplementary file 1. Small RNA-seq reads were trimmed for adaptors, then mapped to the genome using Bowtie (RRID:SCR_005476) (Langmead, 2010). A customized Python script (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation; Wei, 2020, htseq_bam_count_proportional.py; Wei et al., 2021b) was used to count reads that mapped to each repeat feature or piRNA cluster. To control for differences in small RNA abundance and compare across samples, raw counts were then normalized to the number of reads that mapped to either miRNAs or the flamenco piRNA cluster. The difference in expression was represented by the log2 fold changes of these normalized counts in mutants compared to wild type (i.e., log2(countmutant/countWT)) for each repeat and piRNA cluster. We further analyzed the size distribution and relative nucleotide bias at positions along each satDNA by extracting reads mapped to the satDNA of interest using a customized Python script (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation; Wei, 2020, extract_sequence_by_feature_gff.py; Wei et al., 2021b). The 10nt overlap Z-score of piRNAs mapped to each satDNA was calculated using piPipes (Han et al., 2015). To determine which parts of these repeats are represented in piRNA or ChIP datasets, the read pileup patterns along the consensus sequence of a satDNA were examined (e.g., Figure 2—figure supplement 2). Reads (ChIP or piRNA) mapping to a particular satDNA or genomic satDNA variant (as a control) were BLAST-ed to the consensus dimer (for 1.688 satellite) or trimer (for Rsp because it has left and right consensus sequences), and then coordinates were converted along a dimer/trimer to coordinates along a monomer/dimer consensus sequence. All plots were made in R (R Development Core Team, 2017).
 
-## ChIP/RIP-seq analysis
+### ChIP/RIP-seq analysis
 
 All total ChIP-seq and RIP-seq datasets reanalyzed in our study are listed in Supplementary file 1. ChIP-seq and RIP-seq reads were trimmed for adaptors and mapped to the genome using Bowtie2 (RRID:SCR_016368) (Langmead and Salzberg, 2012). A customized Python script (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation; Wei, 2020, htseq_bam_count_proportional.py; Wei et al., 2021b) was used to count reads that mapped to each repeat feature or piRNA cluster. Raw counts were normalized to 1,000,000 total mapped reads.
 
@@ -118,7 +461,7 @@ For the ChIP-seq results, enrichment scores of each repeat and piRNA cluster wer
 
 For the RIP-seq analyses, reported was the percentage of reads mapped to each repeat and piRNA cluster with miRNAs as the negative control. For the 1.688 subfamilies, all subfamilies were combined into one 1.688 category, although analyzing each by subfamily (e.g., 353-bp, 356-bp, 359-bp, 260-bp) does not change the conclusions (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulation; Wei, 2020; Wei et al., 2021b).
 
-## RNA FISH
+### RNA FISH
 
 A Cy5-labeled oligo probe (5′-Cy5TTTTCCAAATTTCGGTCATCAAATAATCAT-3′) previously described in Ferree and Barbash, 2009 was used to detect 1.688 transcripts from all subfamilies except 260-bp on chromosome 2L. Custom Stellaris FISH probes were designed for Rsp (Supplementary file 11), and RNA FISH was performed following the manufacturer’s instructions (Biosearch Technologies, Inc). 3–6-day-old ovaries and testes were dissected in RNase-free PBS buffer, fixed with 4% paraformaldehyde in PBS buffer at room temperature for 30 min, and then washed twice with PBS for 5 min. To permeabilize, tissues were kept in RNase free 70% ethanol at 4°C overnight. The ethanol was aspirated, and samples washed with Stellaris wash buffer on a nutating mixer for 3 min and kept still for 2 min at room temperature. Hybridization was then performed with each probe in Stellaris hybridization buffer in a humidity chamber at 37°C overnight. The working concentration was 100 nM for the oligo probe and 125 nM for the Stellaris probes. From this point, samples were kept in the dark. The samples were washed with Stellaris wash buffer twice at 37°C for 30 min each. Samples were then transferred to mounting medium containing DAPI and imaged with Leica SP5 laser scanning confocal microscope.
 
@@ -126,7 +469,7 @@ For RNaseA controls, after fixation and permeation, tissues were treated with RN
 
 For RNase H controls, after probe hybridization and washing, tissues were treated with 1.5 μl RNase H (5000 units/ml; New England Biolabs) in 50 μl final volume in 1X RNAse H buffer at 37°C for 2 hr and washed three times with Stellaris wash buffer at room temperature for 10 min before mounting and imaging.
 
-## qPCR
+### qPCR
 
 For genomic DNA qPCR, 3–8-day-old flies were mashed with pipette tips for 5–10 s and incubated in buffer (10 mM Tris-Cl pH 8.2, 1 mM EDTA, 25 mM NaCl, 200 μg/ml Proteinase K) at 37°C for 30 min (Gloor and Engels, 1992). To extract nucleic acids, a mixture of phenol/Sevag (1:1) of equal volume was added, and the samples vortexed for 45–60 s and then centrifuged for 3–5 min. The aqueous top layers were saved, an equal volume of Sevag added, and the samples vortexed for 30 s then centrifuged for 1 min. The aqueous top layers were saved and a second Sevag extraction performed. Diluted nucleic acid samples (concentration of 0.04 ng/μl) were used for qPCR to determine the repeat copy numbers in the genome. Repeat copy numbers are normalized to the tRNA:Lys-CTT copy numbers.
 
@@ -134,24 +477,24 @@ For RNA qRT-PCR, 3–6-day-old ovaries were dissected in RNase-free PBS buffer, 
 
 The replicate number for genomic DNA qPCR is 2–4 and for RNA qRT-PCR is 4–6. The sequences of primers used are: Rsp (forward: GGAAAATCACCCATTTTGATCGC, reverse: CCGAATTCAAGTACCAGAC); tRNA (forward: CTAGCTCAGTCGGTAGAGCATGA, reverse: CCAACGTGGGGCTCGAAC); RPS3 (forward: AGTTGTACGCCGAGAAGGTG, reverse: TGTAGCGGAGCACACCATAG).
 
-## Northern blot analysis
+### Northern blot analysis
 
-## Isolation of total RNA and RNase controls
+#### Isolation of total RNA and RNase controls
 
 Stocks of D. melanogaster were chosen, which represented a range of Rsp repeat copy numbers; flies were collected (0–20 hr old) and aged for 6 days. Ovaries were dissected from approximately 20 females (i.e., 6.0–6.8 days old) from each stock, and total nucleic acid isolated using a standard phenol/Sevag procedure (Khost et al., 2017). Total nucleic acid was then treated with DNase I as recommended (20 units; Promega), re-extracted with phenol/Sevag, and ethanol precipitated. Total RNA was resuspended in distilled water. The integrity of the RNA was checked on 1% agarose gels, and the concentration estimated by an optical density at 260 nm.
 
 For RNase controls, 10 μg of total RNA was resuspended in 50 mM NaCl, 5 mM EDTA, 10 mM Tris pH 7.5, 100 μg/ml RNaseA, and incubated at 37°C for 30 min. Samples were phenol/Sevag extracted, 10 μg of ytRNA added as carrier, and ethanol precipitated.
 
-## Northern blot analysis
+#### Northern blot analysis
 
 Total RNA (10 μg)/RNase controls were suspended in 1× MOPS (0.04 M morpholinepropanesulfonic acid [MOPS] pH 7.0, 0.01 M Na acetate, 0.001 M EDTA), 2.2 M formaldehyde, 50% formamide. The RNA was then heated at 65°C for 15 min, placed on ice, and one-tenth volume loading buffer (1× MOPS, 50% formamide, 2.2 M formaldehyde, 4% Ficoll, 0.25% bromophenol blue) added. RNAs were separated on a 1% agarose gel containing 0.5 M formaldehyde/1× MOPS at 40 V for 3 hr. Standard RNA lanes were cut from the gel and stained with ethidium bromide to monitor electrophoresis. Gels were washed for 25 min in sterile water (with four changes). RNA was transferred to GeneScreen Plus nylon membrane (prewet in 10× SSC) by capillary action using 10× SSC. After transfer, the nylon membrane was rinsed in 2× SSC, UV crosslinked, and then baked for 2 hr under vacuum at 80°C. The membrane was prehybridized in 2× SSC, 5× Denhardt's solution, 1% sodium dodecyl sulfate (SDS), 10% polyethylene glycol (PEG- molecular weight, 8,000), 25 mM sodium phosphate (pH 7.2), 0.1% sodium pyrophosphate, and 50% formamide for 3 hr at 55°C. Hybridizations were done overnight at 55°C in the same buffer containing a biotinylated RNA probe (see slot blot; primers: T7_rsp2 5′-TAATACGACTCACTATAGGGCCGAATTCAAGTACCAGAC-3′ and rsp1 5′-GGAAAATCACCCATTTTGATCGC-3′). The hybridized membranes were washed in 1 M sodium phosphate pH 6.8, 0.5 M EDTA, 5% SDS (2×, 10 min each) at 60°C and then at 1 M sodium phosphate pH 6.8, 0.5M EDTA, 1% SDS (3×, 10 min each) at 65°C. The washed membranes were then processed as recommended for the Chemiluminescent Nucleic Acid Detection Module (ThermoScientific), and the signal recorded on a ChemiDoc XR+ (Bio-Rad).
 
-## Slot blot
+### Slot blot
 
 Five female flies were mashed and the total nucleic acid phenol/Sevag extracted as described above for qPCR. Approximately 200 ng of the nucleic acid was denatured (final concentration 0.25 M NaOH, 0.5 M NaCl) for 10 min at room temperature, the sample transferred to a tube with an equal volume of ice-cold loading buffer (0.1× SSC, 0.125 M NaOH) and left on ice. The slot blotter was then prepared and samples loaded as recommended for the 48-well BioDot SF microfiltration apparatus (Bio-Rad). After loading, the wells were washed with 200 μl of loading buffer. The nylon membrane (GeneScreen Plus) was then rinsed for 2 min with 2× SSC before being UV crosslinked (Stratalinker). The membrane was first hybridized with a biotinylated rp49 RNA probe in North2South hybridization solution (ThermoScientific) at 65°C overnight. The membrane was processed as recommended for the Chemiluminescent Nucleic Acid Detection Module (ThermoScientific), and the signal recorded on a ChemiDoc XR+ (Bio-Rad). The membrane was then stripped with a 100°C solution of 0.1× SSC/0.5% SDS (three times for ~20 min each) and re-hybridized with a Rsp probe (60°C overnight) and processed as above. Signals were quantitated using the ImageLab software (Bio-Rad). We determined the relative signal compared to Iso-1 for each line (5–7 replicates), and then estimate the Rsp copy number by scaling the relative slot blot signal to our estimate of Rsp copy number in Iso-1 (1100 repeats). Our Iso-1 estimate is based on Rsp count in a long-read assembly, which is supported by empirical slot blots (Khost et al., 2017).
 
 To make the biotinylated RNA probes, gel extracted PCR amplicons (primers: Rsp 5′-TAATACGACTCACTATAGGGGAAAATCACCCATTTTGATCGC-3′ and 5′-CCGAATTCAAGTACCAGAC-3′; rp49 5′- TAATACGACTCACTATAGGGCAGTAAACGCGGTTCTGCATG-3′ and 5′-CAGCATACAGGCCCAAGATC-3′) were transcribed using the Biotin RNA Labeling Mix (Roche) and T7 polymerase (Promega).
 
-## Data availability
+### Data availability
 
 Sequencing data generated in this paper are available in the NCBI Sequence Read Archive under project accession PRJNA647441. All data files and code to recreate analyses and figures are deposited in GitHub (https://github.com/LarracuenteLab/Dmelanogaster_satDNA_regulationWei, 2020) and at the Dryad Digital Repository (https://doi.org/10.5061/dryad.hdr7sqvj3; Wei et al., 2021b).

@@ -35,9 +35,21 @@ In this study, we initially aimed to identify sites of microtubule nucleation wi
 
 ## Results
 
-## A detailed analysis of endogenous γ-tubulin localisation within class I and class IV da neurons
+### A detailed analysis of endogenous γ-tubulin localisation within class I and class IV da neurons
 
 We began by examining the localisation of γ-tubulin (as a proxy for γ-TuRCs) within class I and class IV da neurons. To avoid any potential artefacts induced by ectopic overexpression, we used alleles where γ-tubulin23C (the zygotic form of γ-tubulin) was tagged at its endogenous locus with GFP (Tovey and Conduit, 2018 and this study). We generated fly stocks expressing two genetic copies of endogenously-tagged γ-tubulin23C-GFP (hereafter γ-tubulin-GFP) and the membrane marker mCD8-RFP, expressed either in class I or class IV da neurons, and imaged living animals. The most striking and obvious localisation of γ-tubulin-GFP was as multiple bright and relatively large puncta within the soma of both neuronal types (Figure 1A; Figure 2A); we address this localisation in subsequent sections. We could also detect discrete accumulations of γ-tubulin-GFP at specific dendritic sites (Figure 1A; Figure 2A), which were typically dim and varied between class I and class IV neurons. We therefore describe the localisation of γ-tubulin-GFP within dendrites for each neuron type in turn below.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig1-v3.jpg)
+
+**Figure 1.:** (A) Fluorescent confocal images of the proximal region of a class I da neuron expressing mCD8-RFP (greyscale) within a living 3rd instar larva expressing endogenously-tagged γ-tubulin-GFP (green). Left panel (A) shows an overlay of the GFP and RFP signals, right panel (A’) shows only the GFP signal with the outline of the neuron drawn for clarity; white, blue and orange arrowheads indicate γ-tubulin-GFP puncta/accumulations within dendritic stretches, branchpoints, and dendritic bubbles, respectively. (B,C) Selected images of γ-tubulin-GFP-positive branchpoints (B) or dendritic bubbles (C) from living neurons as in (A). Individual mCD8-RFP channel images (greyscale) have been included for clarity. (D–F) Confocal images show branchpoints (D,E) or dendritic bubbles (F) from 3rd instar larvae expressing endogenous γ-tubulin-GFP fixed and immunostained for GFP (green), GM130 (magenta) and HRP (greyscale). γ-tubulin-GFP signal was rarely observed co-localising with GM130 and HRP signal (D), and frequently observed independent of the Golgi markers at both branchpoints (E) and dendritic bubbles (F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A fluorescent confocal image of the anterior region of a living 3rd instar larva where mCD8-RFP and mCD4-tdGFP are expressed in class I (magenta) and class IV (green) neurons, respectively. (B,C) Enlarged images of a class I (B) and a class IV (C) da neuron.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Fluorescent confocal images of the proximal region of a class I da neuron expressing 221-gal4 > UAS-γ-tubulin-GFP (green) and 221-gal4 > UAS ManII-mCherry (magenta) within a living 3rd instar larva. Left panel shows an overlay of the GFP and mCherry channels, middle and right panels show the GFP and mCherry channels, respectively. Blue and orange arrowheads indicate enrichments of ectopically expressed γ-tubulin-GFP within branchpoints and dendritic bubbles, respectively. (B,C) Fluorescent confocal images of distal dendrites (B) or a soma (C) from different class I da neurons expressing 221-gal4 > UAS ManII-GFP fixed and immunostained with antibodies against HRP (greyscale) and GFP (green). Arrowheads in (B) indicate HRP puncta that represent internal membrane, at least some of which could be Golgi outposts. Note that UAS-ManII-GFP spreads into regions of the class I dendrites, including dendritic bubbles, that do not contain HRP puncta, suggesting that over-expressing ManII in class I neurons leads to ‘leaking’ of the protein outside of Golgi outposts within dendrites. In contrast, the UAS-ManII-GFP signal always colocalises with the HRP signal within soma (C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig2-v3.jpg)
 
@@ -53,23 +65,51 @@ For class IV neurons we focussed on the ddaC neuron (hereafter class IV neurons)
 
 In contrast to class I neurons, we found that the vast majority of ectopically expressed (via ppk-Gal4) ManII-GFP puncta within class IV neurons colocalised with HRP and did not form large accumulations or stretches within the dendrites (Figure 2C), suggesting that ectopically expressed ManII-GFP can be used as a reliable marker of Golgi outposts in class IV neurons. We observed an average of ~12 and~5 ManII-GFP-positive Golgi outposts within proximal and distal regions, respectively, which is consistent with previous observations (Zheng et al., 2008) and far higher than the 2.3 and 0.3 γ-tubulin-GFP puncta per 100 μm that we observed in proximal and distal dendrites (compare Figure 2A to Figure 2C). Thus, only Golgi outposts within the proximal branchpoints of class IV neurons associate readily with γ-tubulin. In contrast to class I neurons, we very rarely observed γ-tubulin-GFP spread diffusely through branchpoints, suggesting that Golgi outpost-independent accumulation of γ-tubulin at branchpoints is specific to class I neurons. Moreover, we found far fewer dendritic bubbles per 100 μm of dendrite in class IV neurons (0.4 and 0.8 per 100 μm dendrite in proximal and distal regions, respectively). Collectively, our data show that Golgi outposts within class IV neuron branchpoints close to the soma frequently associate with γ-tubulin, but that the majority of Golgi outposts do not. Whether this proximal Golgi outpost associated γ-tubulin represents fully functional γ-TuRCs remains to be tested.
 
-## γ-tubulin-GFP localises to the somatic Golgi of sensory neurons in a Cnn- and Plp-independent manner
+### γ-tubulin-GFP localises to the somatic Golgi of sensory neurons in a Cnn- and Plp-independent manner
 
 The most striking and obvious localisation of γ-tubulin-GFP within both class I and class IV neurons was as multiple large bright puncta within their soma (see images of neurons from live animals in Figure 1A and Figure 2A, and of fixed and stained neurons in Figure 3A–C). We also observed similar puncta within the somas of other nearby sensory neurons (Figure 3A), including external sensory (es) neurons; these sensory neurons possess basal bodies that appear to associate with large amounts of γ-tubulin-GFP (Figure 3A). Staining with antibodies against HRP and the Golgi marker GM130 showed that all γ-tubulin-GFP puncta within the soma of all sensory neurons associated with somatic Golgi stacks (Figure 3B,C; Figure 3—figure supplement 1), which are typically scattered throughout the cytosol in Drosophila cells while still maintaining cis-medial-trans polarity (Kondylis and Rabouille, 2009). These Golgi stacks can be oriented side-on or face-on to the imaging plane, appearing either more elongated or circular, respectively. Our staining showed that the signals of γ-tubulin-GFP and GM130 partially overlapped at side-on stacks, with γ-tubulin-GFP extending further out laterally than GM130 (Figure 3B; Figure 3—figure supplement 1A); γ-tubulin-GFP surrounded GM130 in a ring-like pattern on face-on stacks (Figure 3C; Figure 3—figure supplement 1B). To determine whether γ-tubulin associates specifically with the cis-Golgi, as has been suggested for γ-tubulin in non-neuronal mammalian cells (Wu et al., 2016), we stained the neurons with antibodies against HRP, GM130, and Arl1. The mammalian homologue of GM130 is a cis-Golgi protein, while Arl1 is a known trans Golgi protein in Drosophila (Munro, 2011). We found that the GM130 and Arl1 signals were offset at side-on stacks, consistent with them being cis- and trans-Golgi proteins, respectively. Moreover, γ-tubulin colocalised with GM130 rather than Arl1 (Figure 3D). Together, this shows that γ-tubulin-GFP, possibly in the form of γ-TuRCs, localises to the rims of the cis-Golgi stack in the soma of Drosophila da neurons.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig3-v3.jpg)
+
+**Figure 3.:** (A) Confocal images show the somas and some proximal dendrites of sensory neurons within the dorsal cluster: class I (yellow), class IV (blue), as (pink) and other (orange) from a 3rd instar larva expressing endogenously-tagged γ-tubulin-GFP and immunostained for GFP (green) and HRP (marking Golgi stacks, greyscale). Upper panel (A) shows an overlay of the GFP and HRP signals, lower panel (A’) shows only the GFP signal with coloured neuronal outlines drawn for clarity. (B, C) Confocal images show the somas of class I (B) or class IV (C) da neurons from a 3rd instar larva expressing endogenously-tagged γ-tubulin-GFP fixed and immunostained for GFP (green), GM130 (magenta) and HRP (greyscale). Enlarged boxes in (B) and (C) show side-on and face-on stacks, respectively. (D) Confocal images show an example of a single Golgi stack within a da neuron from a 3rd instar larva expressing endogenously-tagged γ-tubulin-GFP fixed and immunostained for GFP (green), Arl1 (trans-Golgi, magenta) and GM130 (cis-Golgi, greyscale). The larva was also stained with HRP antibodies to identify neurons, but this channel has been omitted for clarity.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A,B) Confocal images show the soma of an es neuron (A) or another sensory neuron within the dorsal cluster (B) from 3rd instar larva expressing two copies of endogenous γ-tubulin-GFP fixed and immunostained with antibodies against GFP (green), GM130 (magenta) and HRP (greyscale). γ-tubulin-GFP and GM130 signals associate at presumptive side-on stacks (extended GM130 signal) and face-on stacks (round GM130 signal) in a way that suggests γ-TuRCs are recruited to the rims of the cis-Golgi.
+
 Two proteins, Cnn and Plp, were possible candidates for γ-TuRC recruitment to the somatic Golgi, as their homologues are required for proper organisation of microtubules at the somatic Golgi in cycling mammalian cells (Rios, 2014; Roubin et al., 2013; Wang et al., 2010; Wu et al., 2016), and Cnn and Plp have been implicated in γ-TuRC recruitment to Golgi outposts in Drosophila class I neurons (Yalgin et al., 2015), with Plp also being implicated in class IV neurons (Ori-McKenney et al., 2012). Cnn is a multi-isoform gene with three sets of isoforms driven by three different promoters (Eisman et al., 2009; Figure 4—figure supplement 1A). Promoter one drives the most-studied isoform (that we term Cnn-P1) that localises to centrosomes during mitosis; promoter two drives isoforms (Cnn-P2) that are yet to be characterised; and promoter three drives isoforms that are expressed specifically within testes (Chen et al., 2017) and so have not been considered in this study. Immunostaining with antibodies against Cnn revealed very weak, if any, signal within the soma or dendrites of the dorsal sensory neurons; while the presumptive basal bodies of the es neurons displayed a strong Cnn signal (data not shown). Given that antibody staining can be problematic, we generated flies where Cnn-P1 or Cnn-P2 were tagged with GFP at their isoform-specific N-termini (hereafter, GFP-Cnn-P1 and GFP-Cnn-P2; Figure 4—figure supplement 1A). The GFP insertions appear functional as flies could be kept as homozygous stocks and the localisation of GFP-Cnn-P1 to centrosomes in syncytial embryos was normal (Figure 4—Video 1). GFP-Cnn-P1 signal was very weak and inconsistent within the soma of living class I da neurons (Figure 4A). In contrast, we could readily detect clear GFP-Cnn-P1 puncta within distal dendritic bubbles in live animals (Figure 4B). In fixed samples, there was a weak GFP-Cnn-P1 signal associated with the somatic Golgi in the dorsal cluster of sensory neurons, similar to that observed in live samples (Figure 4—figure supplement 1B), although we did not detect GFP-Cnn-P1 associated with HRP puncta within dendrites (Figure 4—figure supplement 1B; data not shown). We found a strong GFP-Cnn-P1 signal at the presumptive basal bodies of the es neurons (Figure 4—figure supplement 1B). Collectively our data suggest that GFP-Cnn-P1 does not readily associate with Golgi, but accumulates within a fraction of dendritic bubbles in class I neurons, possibly together with γ-tubulin.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig4-v3.jpg)
+
+**Figure 4.:** (A,B) Fluorescent confocal images of proximal (A) and distal (B) regions of class I da neurons expressing mCD8-RFP (greyscale) within a living 3rd instar larva expressing endogenously-tagged GFP-Cnn-P1 (green). Upper panels show an overlay of the GFP and RFP channels, lower panels show only the GFP channel with the outline of the neurons drawn for clarity. Arrowhead in (A) indicates a rare dendritic GFP-Cnn-P1 puncta within a proximal dendritic bubble, while arrowheads in (B) indicate more frequent GFP-Cnn-P1 accumulations within distal dendritic bubbles. (C) Confocal images show the somas and some proximal dendrites of sensory neurons within the dorsal cluster from a 3rd instar cnn mutant larva expressing endogenously-tagged γ-tubulin-GFP and immunostained for GFP (green), HRP (greyscale) and Cnn (magenta). Images in (C’) and (C’’) show the separate channels for the class I soma and the presumptive basal body of an es neuron, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A gene diagram of cnn to indicate the different Cnn isoforms. Boxed regions are exons, lines are introns. CRISPR combined with homologous recombination was used to insert GFP just after the start codon of either the promoter 1 (P1) or promoter 2 (P2) isoform. Promotor three isoforms are expressed only in testes and so were not analysed in this study. (B) Confocal images show the somas and some proximal dendrites of sensory neurons within the dorsal cluster from a 3rd instar larva expressing endogenously-tagged GFP-Cnn-P1 and immunostained with nanobodies against GFP covalently coupled to ATTO-488 (green) and antibodies against HRP (greyscale) and GM130 (magenta). Left panel (B) shows an overlay of the GFP and anti-HRP signals, while the right panel (B’) shows the GFP signal with coloured outlines of the different neurons drawn for clarity, with insets showing all channels, including an overlay, for the class I neuron soma, regions of the class IV neuron soma and a class IV proximal branchpoint that contains Golgi outposts. The GFP-Cnn-P1 signal appears very weakly, if at all, at the somatic Golgi and Golgi outposts marked by HRP and GM130 staining. (C) Confocal images show class I da neurons from a living 3rd instar larva expressing 221-Gal4 > UAS-mCD8-RFP (magenta) and two copies of endogenously tagged GFP-Cnn-P2. Left panel (C) shows an overlay of the GFP and RFP channels, while the right panel (C’) shows just the GFP channel. Note that the GFP-Cnn-P2 surrounds the axons and somas of the neurons, suggestive of localisation within ensheathing glia. The * star indicates a region of very bright RFP signal that has bled through into the GFP channel.
 
 In contrast to GFP-Cnn-P1, we did not detect any obvious GFP-Cnn-P2 signal within the soma or dendrites of da neurons in living larvae (Figure 4—figure supplement 1C). Instead, GFP-Cnn-P2 appeared to be expressed within glial cells that ensheath the axons, soma, and part of the proximal dendritic region of the da neurons (Figure 4—figure supplement 1C). These glia are known to help regulate dendritic development (Han et al., 2011; Sepp and Auld, 2003; Yadav et al., 2019), and thus Cnn-P2 isoforms may have an indirect role in dendritic arbor growth. GFP-Cnn-P2 also localised strongly to the presumptive basal body of es neurons (data not shown). Consistent with the localisation pattern of GFP-Cnn-P1 and GFP-Cnn-P2, γ-tubulin-GFP could still associate with the somatic Golgi of the sensory neurons in cnn mutant larvae, but not to the basal bodies of es neurons (Figure 4C). We therefore conclude that Cnn is dispensable for γ-TuRC recruitment to the somatic Golgi within sensory neurons.
 
 In contrast to Cnn, antibodies against Plp readily stained the somatic Golgi in all sensory neurons, including class I and class IV da neurons (Figure 5—figure supplement 1A). The Plp signal was, however, offset from the γ-tubulin-GFP signal at Golgi stacks in both class I and class IV da neurons (Figure 5A,B), suggesting that they localise to different Golgi compartments. Plp also associated with the class IV proximal Golgi outposts (Figure 5C) and the presumptive basal bodies of the es neurons (Figure 5—figure supplement 1B), and was enriched within a fraction of the distal class I dendritic bubbles (Figure 5—figure supplement 1C). Strikingly, γ-tubulin-GFP localisation at the somatic Golgi of all sensory neurons, including class I and class IV neurons was unaffected in plp mutant larvae (Figure 5D). This was also true of the γ-tubulin-positive proximal Golgi outposts in class IV neurons (Figure 5D). The absence of Plp did, however, lead to the loss of γ-tubulin-GFP from the basal bodies of es neurons (Figure 5D). In summary, neither Plp nor Cnn are required for the efficient recruitment of γ-tubulin to the somatic Golgi within sensory neurons, or to the few γ-tubulin-GFP-positive Golgi outposts within the proximal branch points of class IV da neurons, but both are required for the localisation of γ-tubulin-GFP to the basal body region within es neurons.
 
-## Growing microtubules originate asymmetrically from the somatic golgi
+![Figure 5.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig5-v3.jpg)
+
+**Figure 5.:** (A–C) Confocal images show the somas of a class I (A) or a class IV (B) neuron and a proximal branchpoint of a class IV neuron (C) from 3rd instar larvae expressing γ-tubulin-GFP fixed and immunostained for GFP (green), Plp (magenta) and HRP (greyscale). Arrowhead in (C) indicates a γ-tubulin-GFP-positive Golgi outpost that contains Plp. (D) Confocal images show the somas and some proximal dendrites of sensory neurons within the dorsal cluster: class I (yellow), class IV (blue), es (pink) and other (orange), from a plp mutant 3rd instar larva expressing endogenously-tagged γ-tubulin-GFP and immunostained for GFP (green), HRP (greyscale) and GM130 (magenta). Left panel (D) shows an overlay of the GFP and HRP signal, with insets showing overlays for different neurons, as indicated; right panel (D’) shows the GFP channel with coloured outlines of the different neurons drawn for clarity, with insets showing separate channels for a proximal branchpoint.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal images show the somas and some proximal dendrites of sensory neurons within the dorsal cluster from a 3rd instar larva expressing ppk-mCD4-tdGFP and immunostained with antibodies against GFP (green), HRP (greyscale) and Plp (magenta). Left panel (A) shows the GFP and anti-HRP channels, while the right panel (A’) shows the anti-Plp channel; insets show an overlay of the anti-Plp and anti-HRP channels. Plp signal colocalises with the HRP staining that marks the multiple well-distributed Golgi stacks within the neuronal soma of each neuron. Plp also localises to some HRP puncta (presumably Golgi outposts) within the proximal branchpoints of class IV neurons. (B) Confocal images show parts of the es neurons containing the basal bodies from a 3rd instar larva expressing two copies of endogenously tagged γ-tubulin-GFP and immunostained with antibodies against GFP (green), HRP (greyscale) and Plp (magenta). (C) Confocal images show dendritic bubbles of a class I da neuron from a 3rd instar larva immunostained with antibodies against HRP (greyscale) and Plp (magenta).
+
+### Growing microtubules originate asymmetrically from the somatic golgi
 
 We next wanted to assess whether the somatic Golgi is an active MTOC. EB1-GFP binds to growing microtubule ends and generates fluorescent ‘comets’, typically representing growing microtubule plus ends. While the origin of these comets can represent either microtubule regrowth after catastrophe or sites of microtubule nucleation, the position of emerging EB1-GFP comets has been routinely used in Drosophila neurons as a proxy for nucleation sites (Nguyen et al., 2014; Ori-McKenney et al., 2012; Weiner et al., 2020; Yalgin et al., 2015; Zhou et al., 2014). It is generally considered that comets repeatedly emerging from the same location are likely to represent nucleation sites (Ori-McKenney et al., 2012; Zhou et al., 2014). We therefore imaged the soma of class I neurons expressing EB1-GFP and the Golgi marker ManII-mCherry and manually tracked each EB1-GFP comet (Figure 6A; Figure 6—Video 1; the circle of each track represents the latest position of the EB1 comet). Comets could be observed originating at both Golgi stacks and non-Golgi sites. They emerged at different Golgi stacks within the same cell, and sequentially from the same Golgi stack, suggestive of nucleation. Intriguingly, many Golgi-derived comets appeared to grow towards the axon. Measuring the initial angle of each comet’s growth relative to the axon entry site (indicated in Figure 6A) showed that there was a strong bias for initial growth towards the axon (163 comets analysed from 59 Golgi stacks from seven neurons, p<0.001), although some comets did grow away from the axon and thus towards dendrites (Figure 6B). While it is possible that the direction of comet growth can be influenced by comets growing into the soma from the dendrites, which will tend to grow towards the axon, we minimised this effect by quantifying only those comets that originate from Golgi stacks. The comets we analysed are therefore more likely to represent true growth events from the Golgi rather than catastrophe and regrowth of microtubules that originated from dendrites.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig6-v3.jpg)
+
+**Figure 6.:** (A) Widefield fluorescent images from a movie showing the soma of a class I da neuron expressing EB1-GFP (greyscale) and ManII-mCherry (magenta). Manually assigned multi-colour tracks of EB1-GFP comets were drawn over each image (filled circle = last location of comet). Arrow indicates a Golgi stack from which sequential EB1-GFP comets emerge; dotted lines show an example of an angle measurement of a comet’s initial growth relative to the axon entry point (orange circle). Time in min:s from the start of the movie is shown. (B) Graph shows a frequency distribution of the initial growth angle (before turning) relative to the axon entry site (as indicated in (A)) of EB1-GFP comets that emerged from Golgi stacks. Negative angles were made positive so as not to distinguish between comets growing to the left or right of the axon. 163 comets from 59 Golgi stacks from seven neurons were analysed. (C) Scatter graph shows the position of the normalised resultant comet vectors (see methods) for each of 44 Golgi stacks from seven neurons. Circle position is representative of the average angle from the axon and how similar the angles were (as indicated). Circle size reflects the number of comets analysed per Golgi stack (as indicated below). (D) Graph shows a frequency distribution of the resultant vector lengths for the comet data (blue) and for 3 sets of data produced using randomly generated angles (grey shades). (E) Widefield fluorescent images from a movie showing the soma of class I da neuron expressing UAS-EB1-GFP (greyscale) and UAS-ManII-mCherry (magenta). The sample was subjected to a warm-cool-warm temperature cycle to induce depolymerisation (5°C; blue outline) and then repolymerisation (20 °C; red outline) of dynamic microtubules. Tracks were manually colour coded: green = comets emerging from Golgi stacks; purple = comets emerging from elsewhere. Time in min:s from the 5°C to 20°C transition is shown.
+
 We also noticed that the direction of initial growth of each comet that emerged from the same Golgi stack was similar, irrespective of their angle from the axon. We therefore generated and plotted normalised resultant vectors (final vector position from a (0,0) origin represented by a blue circle) for the comets from each Golgi stack that produced two or more comets (Figure 6C; see Materials and methods). The angle between the positive Y-axis and a line connecting (0,0) and a given circle on the graph is representative of the overall comet angle from the axon; the distance (d) of each circle from (0,0) is representative of the similarity of comet angles (d = 1 if all angles are the same; d = 0 if all angles are evenly distributed). 77% of the circles were in the upper quadrants (Figure 6C; p<0.001), again showing that there was a preference for comets to grow initially towards the axon. Moreover, there was a bias for resultant vector lengths to be large, as compared to randomly generated data (Figure 6D; p<0.001). We conclude that comets from a particular Golgi stack emerge within a small angle with respect to each other and with a directional preference towards the axon. While not definitive, the similarity in the direction of comets emerging repeatedly from the same Golgi stack is indicative of consecutive microtubule nucleation events.
 
-## A temperature-based microtubule nucleation assay suggests that microtubules are nucleated from the somatic Golgi in class I da neurons
+### A temperature-based microtubule nucleation assay suggests that microtubules are nucleated from the somatic Golgi in class I da neurons
 
 The origin of EB1-GFP comets is not a perfect proxy for microtubule nucleation, as EB1-GFP comets also appear during the regrowth of partially depolymerised microtubules. We therefore performed a microtubule nucleation assay using a temperature-control device (CherryTemp, Cherry Biotech) to cool samples rapidly to 5°C and then re-heat them to 20°C during continuous imaging of the sample. Cooling typically causes depolymerisation of dynamic microtubules and warming causes their regrowth. Cooling-warming microtubule nucleation assays have previously been performed in various systems, including Drosophila embryos (Hayward et al., 2014), Drosophila S2 cells (Bucciarelli et al., 2009), and in mammalian cells (Torosantucci et al., 2008). While populations of cold-stable microtubules have been identified in mammalian neurons, cold stability is thought to be induced by binding to MAP6 proteins, which are specific to vertebrates (Bosc et al., 2003; Delphin et al., 2012). We therefore expected that cooling would result in the depolymerisation of at least the dynamic microtubules within Drosophila neurons, allowing us to correlate the position of new comet growth with nucleation sites.
 
@@ -77,9 +117,13 @@ During cooling-warming cycles we observed no obvious effect on the distribution 
 
 In our opinion, the best evidence for microtubule nucleation occurring at the somatic Golgi comes from the observation that several comets emerged from Golgi stacks relatively late after warming. For example, in Figure 6—Video 2 four comets emerged from Golgi stacks at least 50 s post warming. While some of these late comets emerged from a Golgi stack that had generated a comet immediately after warming, others emerged from Golgi stacks that had not generated a comet immediately after warming. Most importantly, the direction of all late emerging comets suggests that they were not simply generated by catastrophe-rescue of a microtubule that had grown immediately after warming. While it is impossible to rule out that these late emerging comets could have been generated by re-growing microtubules that were originally out of focus, the data strongly suggests that they instead represent genuine nucleation events from the Golgi .
 
-## Growing microtubules within the soma are guided towards the axon while being excluded from entering dendrites in a Kinesin-2-dependent manner
+### Growing microtubules within the soma are guided towards the axon while being excluded from entering dendrites in a Kinesin-2-dependent manner
 
 We next wanted to determine the fate of growing microtubules within the soma. We therefore imaged and tracked EB1-GFP comets within the soma and proximal axons and dendrites of 13 class I da neurons (Figure 7A; Figure 7—Video 1). These neurons have at least two primary dendrites but only a single axon; however, comets that initiated within the soma often grew into the axon, while few entered dendrites (Figure 7—Video 1). We found that this was due to two major factors. The first was that a higher proportion of comets reached the axon entry site: of the 666 comets that had initiated within the soma across all movies 104 approached the entrance to the axon (15.6%), while only 47 approached the entrance of a dendrite (7.1%) (Figure 7C; p<0.001); the remaining 77.3% of comets terminated within the soma away from the axon or dendrites. The second important factor was that when comets arrived at either the axon entry site or a dendritic entry site, they had more chance of entering the axon: of the 104 comets that approached the entrance to an axon across all movies 56 entered (53.8%), while of the 47 comets that approached the entrance to a dendrite only 13 entered (27.7%) (Figure 7D; p<0.001). Overall, 8.4% of all comets that originated in the soma entered the axon while only 2.0% entered a dendrite. In summary, growing microtubule plus ends within the soma preferentially reach the entrance to the axon and can readily enter, while the few that reach dendrites are normally excluded from entering.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/58943/elife-58943-fig7-v3.jpg)
+
+**Figure 7.:** (A,B) Widefield fluorescent images from movies showing the somas of class I da neurons expressing UAS-EB1-GFP and either γ-tubulin-37C RNAi (control) (A) or UAS-Kap3 RNAi (B). Manually assigned multi-colour tracks of EB1-GFP comets are drawn over each image (filled circle = last location of comet). Time in min:s from the start of the movie is shown. (C) Graph shows the % of comets that approach either the axon (green) or the dendrites (magenta) in either control (666 comets analysed across 13 movies) or Kinesin-2 RNAi (1058 comets analysed across nine movies) class I da neuron somas, as indicated. (D) Graph shows the % of comets that enter the axon (green) or the dendrites (magenta) as a proportion of those that had approached the axon in either control or Kinesin-2 RNAi class I da neuron somas, as indicated. (E) Graph shows the % of applicable comets that display turning events within either control (n = 257 comets across 13 movies) or Kinesin-2 RNAi (n = 386 comets across nine movies) class I da neuron somas, as indicated. (F) Graph shows the % of comets that are anterograde in the proximal primary dendrite (before any branches) in either control (n = 252 comets across 13 movies) or Kinesin-2 RNAi (n = 338 comets across nine movies) class I da neurons, as indicated. Error bars in (C–F) show the 95% confidence intervals.
 
 While asymmetric nucleation from the somatic Golgi likely contributes to more microtubule plus ends reaching the axon (Figure 6) we also observed several occasions where microtubules turned towards the axon (Figure 7A; Figure 7—Video 1). Microtubule "collision resolution" events have been observed previously within dendritic branchpoints of da neurons, where the microtubules turn towards the soma along stable microtubules (Mattie et al., 2010; Weiner et al., 2016). This depends upon Kinesin-2, which is a heterotrimeric plus-end-directed motor whose regulatory subunit, Kap3, interacts with EB1 via APC (Mattie et al., 2010). It has been proposed that plus-end-associated Kinesin-2 guides growing microtubules along and towards the plus end of so-called ‘rail’ microtubules, as this can be recapitulated in vitro (Chen et al., 2014; Doodhi et al., 2014). When we depleted Kap3 from class I da neurons by RNAi there was a dramatic reduction in the frequency of microtubule turning events within the soma. In control cells, of the 257 comets across all movies that grew for more than 2 μm within the soma and that did not travel along the cell cortex, 165 displayed turning behaviour (64.2%), while across 9 Kap3 RNAi cells only 35 of the 386 qualifying comets displayed turning behaviour (9.1%) (Figure 7A,B,E; Figure 7—Videos 1 and 2; p<0.001). Comets in Kap3 RNAi cells tended to change direction only when travelling along the cell cortex or after collision with the nuclear envelope or cell cortex (Figure 7B; Figure 7—Video 2). As a result of reduced turning in Kap3 RNAi neurons, a lower proportion of comets reached the axon entry site and a higher proportion reached dendritic entry sites, compared to control cells: of the 1058 comets that originated within the soma of Kap3 RNAi cells, 97 approached the axon entry site (9.2%, compared to 15.6% in control neurons, p<0.001) and 114 approached a dendritic entry site (10.8%, compared to 7.1% in control neurons, p=0.0098) (Figure 7C). These data suggest that Kinesin-2 guides growing plus ends along pre-existing microtubules towards the axon and away from dendrites within the soma.
 
@@ -89,7 +133,7 @@ Most significantly, the proportion of comets that entered dendrites after Kap3 R
 
 We conclude that Kinesin-2 is required to guide growing microtubule plus ends within the soma towards the axon and to prevent them from entering dendrites, which is essential in order to maintain minus-end-out microtubule polarity within proximal dendrites.
 
-## A model for microtubule regulation within the neuronal soma
+### A model for microtubule regulation within the neuronal soma
 
 Based on our observations, and the findings from previous studies (Chen et al., 2014; Doodhi et al., 2014; Mattie et al., 2010; Weiner et al., 2016), we propose a model to explain how microtubules are generated and regulated within the soma of da neurons, which also helps explain how microtubule polarity is promoted in axons and maintained within proximal dendrites (Figure 8). In this model, γ-TuRCs are localised to the cis-Golgi and microtubules are nucleated preferentially towards the axon, generating a polarised microtubule network within the soma. Plus-end-associated Kinesin-2 guides the growing plus ends of the nucleated microtubules along and towards the plus ends of the polarised microtubule network, and thus guides them towards the axon and away from dendrites (Figure 8A,C). Microtubules that happen to grow towards a dendrite are excluded from entering when the plus-end-associated Kinesin-2 engages with the shaft of a dendritic microtubule of opposite polarity and thus exerts a backward stalling force on the growing plus end (Figure 8B,C). Importantly, this model explains how minus-end-out microtubule polarity is maintained within proximal dendrites.
 
@@ -119,43 +163,431 @@ It will be interesting in future to examine whether the plus ends of somatic mic
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>5-alpha competent E. coli</td>
+      <td>NEB</td>
+      <td>C2987I</td>
+      <td>High Efficiency chemically competent</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>cnnf04547</td>
+      <td>Exelixis at Harvard Medical School</td>
+      <td>Exelixis:f04547; Flybase:FBst1019233</td>
+      <td>FlyBase symbol: cnnf04547 ; Stock discontinued at the Exelixis and available from Conduit lab upon request.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>plp5</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:9567; FLYB:FBst0009567; RRID:BDSC_9567</td>
+      <td>FlyBase symbol: ru1 Plp5 st1/TM6C, Sb1 Tb1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>plps2172</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:12089; Flybase:FBst0012089; RRID:BDSC_12089</td>
+      <td>FlyBase symbol: ‘w[1118]; P{w[+mC]=lacW}Plp[s2172]/TM3, Sb[1]’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:27392; Flybase:FBti0115769; RRID:BDSC_27392</td>
+      <td>FlyBase symbol: ‘w[*]; P{w[+mC]=UAS-mCD8.ChRFP}3’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-EB1-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:35512; Flybase:FBti0141213; RRID:BDSC_35512</td>
+      <td>FlyBase symbol: ‘w[*]; P{w[+mC]=UAS-EB1-GFP}3’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ManII-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:65248; Flybase:FBti018367; RRID:BDSC_65248</td>
+      <td>FlyBase symbol: ‘w[1118]; P{w[+mC]=UAS-ManII-EGFP}2; TM2/TM6B, Tb[1]’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ManII-mCherry</td>
+      <td>Ori-McKenney et al., 2012 (doi:10.1016/j.neuron.2012.10.008)</td>
+      <td></td>
+      <td>Fly genotype: ‘w[1118]; P{w[+mC]=UAS-ManII-mCherry}/CyO’; gift from Yuh-Nung Jan</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:32078; Flybase:FBti0127690; RRID:BDSC_32078</td>
+      <td>FlyBase symbol: ‘w[*]; P{w[+mC]=ppk-GAL4.G}2’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:32079; Flybase:FBti013120; RRID:BDSC_32079</td>
+      <td>FlyBase symbol: ‘w[*]; P{w[+mC]=ppk-GAL4.G}3’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>221-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:26259; Flybase:FBti011433; RRID:BDSC_26259</td>
+      <td>FlyBase symbol: ‘w[*]; Pin[1]/CyO; P{GawB}221w-’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppkCD4-tdGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:35842; Flybase:FBti014342; RRID:BDSC_35842</td>
+      <td>FlyBase symbol: ‘w[1118]; P{w[+mC]=ppk-CD4-tdGFP}1b’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dicer 2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:24646; Flybase:FBti010143; RRID:BDSC_24646</td>
+      <td>FlyBase symbol: P{w[+mC]=UAS-Dcr2.D}1,w[1118]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>γ-tubulin37C RNAi; UAS-γ-tubulin37C RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:32513; Flybase:FBti0132207; RRID:BDSC_32513</td>
+      <td>FlyBase symbol: ‘y[1] sc[*] v[1] sev[21]; P{y[+t7.7] v[+t1.8]=TRiP.HMS00517}attP2’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Kap3 RNAi; UAS-Kap3 RNAi</td>
+      <td>ViennaDrosophila Resource Center</td>
+      <td>FBst0466097; VDRC ID:45400</td>
+      <td>FlyBase symbol: ‘w1118;P{GD7377}v45400’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Klp64D RNAi</td>
+      <td>ViennaDrosophila Resource Center</td>
+      <td>FBst0466080; VDRC ID:45373</td>
+      <td>FlyBase symbol: ‘w1118;P{GD7048}v45373’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>γ-tubulin23c-sfGFP</td>
+      <td>Tovey and Conduit, 2018 (https://doi.org/10.1016/j.cub.2018.05.044)</td>
+      <td></td>
+      <td>insertion of sfGFP with a 4X GlyGlySer linker at the C-terminus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>γ-tubulin23c-eGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>insertion of eGFP with a 4X Ser linker at the C-terminus. Generated by inDroso</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sfGFP-Cnn-P1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>insertion of sfGFP with a 4X GlyGlySer linker at the start of exon 1a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sfGFP-Cnn-P2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>insertion of sfGFP with a 4X GlyGlySer linker at the start of exon 1b</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11814460001; RRID:AB_390913</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cnn (rabbit polyclonal)</td>
+      <td>Lucas and Raff, 2007 (https://doi.org/10.1083/jcb.200704081)</td>
+      <td></td>
+      <td>IF(1:1000); gift from Jordan Raff</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Plp (rabbit polyclonal)</td>
+      <td>Martinez-Campos et al., 2004 (https://doi.org/10.1083/jcb.200402130)</td>
+      <td></td>
+      <td>IF(1:500); gift from Jordan Raff</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Arl1 (chicken polyclonal)</td>
+      <td>Torres et al., 2014 (doi:10.1242/jcs.122028)</td>
+      <td></td>
+      <td>IF(1:200); gift from Sean Munroe</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GM130 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab30637; RRID:AB_732675</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa-647 conjugated Hrp (goat polyclonal)</td>
+      <td>Jackson</td>
+      <td>Jackson ImmunoResearch 123-605-021; RRID:AB_2338967</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATTO-488 GFP-booster (Camelid single domain ‘nanobody’)</td>
+      <td>Chromotek</td>
+      <td>gb2AF488-10; RRID:AB_2827573</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IgG H and L Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab150117, RRID:AB_2688012</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG H and L Alexa Fluor 568 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11036, RRID:AB_10563566</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDF3 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_49410</td>
+      <td>pCFD3-dU6:3gRNA; gift from Simon Bullock</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBluescript SK+ (plasmid)</td>
+      <td>Simon Bullock lab</td>
+      <td></td>
+      <td>Standard cloning vector; gift from Simon Bullock</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBS-KS-attB1-2-PT-SA-SD-2-sfGFP-FIAsh-StrepII-TEV-3x-FLAG (plasmid)</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>Stock number:1314</td>
+      <td>Vector used to amplify sf GFP sequence</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CnnNt_P1T2_f</td>
+      <td>This paper</td>
+      <td>Guide oligo</td>
+      <td>GTCGTGTTTAGACTGGTCCATGGG To generate Bbs1 cleavable fragment to clone into Bbs1 cut pCFD3 for Cnn promoter one tagging. Guide sequence underlined.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CnnNt_P1T2_b</td>
+      <td>This paper</td>
+      <td>Guide oligo</td>
+      <td>AAACCCCATGGACCAGTCTAAACA; To generate Bbs1 cleavable fragment to clone into Bbs1 cut pCFD3 for Cnn promoter one tagging. Guide sequence underlined.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CnnNt_P2T2_f</td>
+      <td>This paper</td>
+      <td>Guide oligo</td>
+      <td>GTCGTTAAATGAAACATAGAATA; To generate Bbs1 cleavable fragment to clone into Bbs1 cut pCFD3 for Cnn promoter two tagging. Guide sequence underlined.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CnnNt_P2T2_b</td>
+      <td>This paper</td>
+      <td>Guide oligo</td>
+      <td>AAACTATTCTATGTTTCATTTAA; To generate Bbs1 cleavable fragment to clone into Bbs1 cut pCFD3 for Cnn promoter two tagging. Guide sequence underlined.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P1_GFP_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAAGTTAACTATTTGAGGACCTCCCATGGTGTCCAAGGGCGAGGAG; used to amplify sfGFP with overhangs for HiFi cloning into pBS containing homology arms for for Cnn promoter 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P1_GFP_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCGCAAAACCTGTTTAGACTGGTCGGATCCGCCGCTACCTCCGCTTCCACCGGAACCTCCCTTGTACAGCTCATCCATGCC; used to amplify sfGFP with overhangs for HiFi cloning into pBS containing homology arms for for Cnn promoter 1. Also contains sequence for 4X GlyGlySer linker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P2_GFP_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCAAATGTTAAATGAAAGATACAATATGGTGTCCAAGGGCGAGGAG; used to amplify sfGFP with overhangs for HiFi cloning into pBS containing homology arms for for Cnn promoter 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P2_GFP_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGAGGTAGATCGAAAGATACCCGCGGATCCGCCGCTACCTCCGCTTCCACCGGAACCTCCCTTGTACAGCTCATCCATGCC; used to amplify sfGFP with overhangs for HiFi cloning into pBS containing homology arms for for Cnn promoter 2. Also contains sequence for 4X GlyGlySer linker</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P1_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAAGCTAAGCAGATTCTTCAGC; used to amplify upstream homology arm for promoter 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P1_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGAGGTCCTCAAATAGTTAAC; used to amplify upstream homology arm for promoter 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P1_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACCAGTCTAAACAGGTTTTGC; used to amplify downstream homology arm for promoter 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P1_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTCTCTGCACGTCCAAATAAAC; used to amplify downstream homology arm for promoter 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P2_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACTCGCTATAGTCTCGATCC; used to amplify upstream homology arm for promoter 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P2_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATTGTATCTTTCATTTAACATTTGCGCTC; used to amplify upstream homology arm for promoter 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P2_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCGGGTATCTTTCGATCTACC; used to amplify downstream homology arm for promoter 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P2_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCCCGTGGAACAGGAACCAC; used to amplify downstream homology arm for promoter 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P1_pBS_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGGTTTATTTGGACGTGCAGAGAGCGGGGGATCCACTAGTTCTAGAG; used to amplify pBS backbone for promoter 1. Contains overhangs for HiFi cloning.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P1_pBS_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGCTGAAGAATCTGCTTAGCTTTCGGGCTGCAGGAATTCGATATC; used to amplify pBS backbone for promoter 1. Contains overhangs for HiFi cloning.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_DHA_P2_pBS_f</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTGCTGTGGTTCCTGTTCCACGGGAGGGGGATCCACTAGTTCTAGAG; used to amplify pBS backbone for promoter 2. Contains overhangs for HiFi cloning.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cnn_UHA_P2_pBS_b</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGTGGATCGAGACTATAGCGAGTGGGGCTGCAGGAATTCGATATC; used to amplify pBS backbone for promoter 2. Contains overhangs for HiFi cloning.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Live imaging solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A14291DJ</td>
+      <td>Larvae imaging</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Paul Conduit (paul.conduit@ijm.fr).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 All fly strains were maintained at 18 or 25°C on Iberian fly food made from dry active yeast, agar, and organic pasta flour, supplemented with nipagin, propionic acid, pen/strep and food colouring.
 
-## Drosophila melanogaster stocks
+#### Drosophila melanogaster stocks
 
 The following fluorescent alleles were used in this study: γ-tubulin23C-sfGFP (Tovey et al., 2018), γ-tubulin23c-eGFP (this study), sfGFP-Cnn-P1 (this study), sfGFP-Cnn-P2 (this study), UAS-mCD8-mRFP (BL 27392), UAS-EB1-GFP (BL 35512), UAS-ManII-mCherry (Yuh-Nung Jan), and UAS-ManII-GFP (BL 65248). The following Gal4 lines were used in this study: ppk-Gal4 Chr II (B32078) and Chr III (BL 32079) and 221-Gal4 (BL 26259). The following mutant alleles were used in this study: plp5 (BL 9567), plps2172 (BL 12089), cnnf04547 (Exelixis at HMS), ppkCD4-tdGFP (BL 35842), KAP RNAi (VDRC 45400 GD), γ-tubulin37C RNAi (BL32513), Klp64D RNAi (VDRC 45373) UAS-Dicer 2 (BL 24646).
 
 For examining the endogenous localisation of γ-tubulin23C we used flies expressing γ-tubulin23C-sfGFP and γ-tubulin23C-eGFP i.e. 2 copies of γ-tubulin23C-GFP, either alone or in combination with one copy of UAS-mCD8-RFP expressed under the control of one copy of either 221-Gal4 or ppk-Gal4. For examining the localisation of Cnn, we used flies expressing two copies of either sfGFP-Cnn-P1 or sfGFP-Cnn-P2 either alone or in combination with one copy of UAS-mCD8-RFP expressed under the control of one copy of either 221-Gal4 or ppk-Gal4. For examining the localisation of Plp in relation to medial Golgi, we used flies with one copy of UAS-ManII-GFP expressed under the control of one copy of either 221-Gal4 or ppk-Gal4. For examining the localisation of γ-tubulin23C in the absence of Cnn or Plp, we used flies expressing two copies of γ-tubulin23C-(sf/e)GFP (as above) in a cnnf04547/cnn f04547 or plp5/plps2172 mutant background. For examining microtubule dynamics in relation to the Golgi we used flies with one copy of UAS-EB1-GFP and one copy of UAS-ManII-mCherry, both expressed under the control of one copy of 221-Gal4. For examining microtubule dynamics in control neurons we used flies with one copy of UAS-EB1-GFP and one copy of UAS-γ-tubulin37C RNAi, with or without one copy of UAS-Dicer-2, expressed under the control of one copy of 221-Gal4. For examining microtubule dynamics in Kap3 RNAi neurons we used flies with one copy of UAS-EB1-GFP, one copy of UAS-Dicer-2, and one copy of UAS-Kap3 RNAi expressed under the control of one copy of 221-Gal4.
 
-## Method details
+### Method details
 
-## DNA cloning
+#### DNA cloning
 
 5-alpha Competent E. coli (High Efficiency) (NEB) cells were used for bacterial transformations, DNA fragments were purified using QIAquick Gel Extraction Kits (Qiagen), plasmid purification was performed using QIAprep Spin Miniprep Kits (Qiagen). Phusion High-Fidelity PCR Master Mix with HF Buffer (ThermoFisher Scientific) was used for PCRs.
 
-## Generating endogenously-tagged fly lines
+### Generating endogenously-tagged fly lines
 
 All endogenously-tagged lines were made using CRISPR combined with homologous recombination, by combining the presence of a homology-repair vector containing the desired insert with the appropriate guide RNAs and Cas9. The γ-tubulin23C-eGFP allele was generated by inDroso by initially inserting an SSSS-eGFP-3’UTR-LoxP-3xP3-dsRED-Lox P cassette before the selection markers were excised. The multi-serine insert acts as a flexible linker between γ-tubulin23C and eGFP. The following guide RNA sequences were used to cut either side of the 3’UTR: AGTCGATC|TGTGACCAGCGC and TTATGGTT|AATGTCGACTTG. The sfGFP-Cnn-P1 (insertion of sfGFP at the start of exon 1a) and sfGFP-Cnn-P2 (insertion of sfGFP at the start of exon 1b) alleles were generated within the lab following a similar approach to that used previously (Tovey et al., 2018). For GFP-Cnn-P1, flies expressing a single guide RNA containing the target sequence TGTTTAGACTGGTCCATGGG were crossed to nos-Cas9 expressing females and the resulting embryos were injected by the Department of Genetics Fly Facility, Cambridge, UK, with a pBluescript plasmid containing sfGFP and linker sequence (4X GlyGlySer) flanked on either side by 1.5 kb of DNA homologous to the cnn genomic locus surrounding the 5’ end of the appropriate coding region. The homology vectors were made by HiFi assembly (NEB) of PCR fragments generated from genomic DNA prepared from nos-Cas9 flies (using MicroLYSIS, Microzone) and a vector containing the sfGFP tag (DGRC, 1314). For GFP-Cnn-P2 flies, both the guide RNA containing the target sequence GTTAAATGAAACATAGAATA and the homology vector were injected into nos-Cas9 embryos (BL54591) by Rainbow Transgenic Flies, Inc Camarillo, CA 93012, USA. F1 and F2 males were screened by PCR using the following primers: for sfGFP-Cnn-P1: forward primer: AAAGTTAACTATTTGAGGACCTCCCATGGTGTCCAAGGGCGAGGAG; reverse primer: CCCGCAAAACCTGTTTAGACTGGTCGGATCCGCCGCTACCTCCGCTTCCACCGGAACCTCCCTTGTACAGCTCATCCATGCC; for sfGFP-Cnn-P2: forward primer: GCAAATGTTAAATGAAAGATACAATATGGTGTCCAAGGGCGAGGAG; reverse primer: GTGAGGTAGATCGAAAGATACCCGCGGATCCGCCGCTACCTCCGCTTCCACCGGAACCTCCCTTGTACAGCTCATCCATGCC.
 
-## Antibodies
+### Antibodies
 
 The following primary antibodies were used: anti-GFP mouse monoclonal at 1:250 (Roche, 11814460001), anti-Cnn Rabbit polyclonal raised against first 660aa of Cnn-P1 (which includes amino acids 35–632 of Cnn-P2) at 1:1000 (Lucas and Raff, 2007), anti-Plp rabbit polyclonal at 1:500 (Martinez-Campos et al., 2004), Alexa-647 conjugated HRP polyclonal at 1:500 (Jackson), anti-Arl1 chicken polyclonal at 1:200 (gift from Sean Munro Torres et al., 2014), and anti-GM130 rabbit polyclonal at 1:300 (Abcam). The following secondary antibodies were used: ATTO-488 GFP-booster at 1:200 (Chromotek), Alexa-488 anti-Mouse at 1:500 (Abcam), Alexa-547 anti-Rabbit at 1:500 (ThermoFisher).
 
-## Immunostaining
+### Immunostaining
 
 Larvae were dissected as described previously (Broadie and Bate, 1993). The fillet preparations were fixed in freshly prepared 4% formaldehyde for 20 min at room temperature and were then washed four times for 10 min in PBST (PBS + 0.1% TritonX-100). The preparations were then blocked in PBST + 5% BSA for 1 hr at room temperature and incubated with the appropriate primary antibodies diluted in PBST overnight at 4°C. After washing in PBST for ~8 hr, changing washes every 30–45 min, samples were incubated in secondary antibodies diluted in PBST overnight at 4°C. The fillet preparations were then washed for ~8 hr, changing washes every 30–45 min in PBST before mounting in Moviol. They were stored at −20°C and imaged within a week. Neurons within segments A2 to A6 were imaged; we observed no difference in the staining patterns between these segments.
 
-## Fixed and live cell imaging
+### Fixed and live cell imaging
 
 Imaging of all samples except for those expressing EB1-GFP in neurons or GFP-Cnn-P1 in embryos was carried out on an Olympus FV3000 scanning inverted confocal system run by FV-OSR software using a 60 × 1.4 NA silicon immersion lens (UPLSAPO60xSilcon). For live samples, wandering L3 larvae were placed in a drop of glycerol and flattened between a slide and a 22 × 22 mm coverslip, held in place by double-sided sticky tape, and imaged immediately. Imaging of EB1-GFP within da neurons and GFP-Cnn-P1 within embryos was performed on a Leica DM IL LED inverted microscope controlled by μManager software and coupled to a RetigaR1 monochrome camera (QImaging) and a CoolLED pE-300 Ultra light source using a 63X 1.3 NA oil objective (Leica 11506384). For EB1-GFP imaging, larvae were dissected in live imaging solution (ThermoFisher) to remove the majority of their tissues and mounted in Schneider’s medium supplemented with FBS and pen/strep between a slide and 22 × 22 mm coverslip held in place with tape and imaged immediately. When using the CherryTemp, the larvae were held between the CherryTemp chip and a 22 × 22 mm coverslip. The CherryTemp software was used to rapidly change the temperature of the liquid within the flow chamber from 20°C to 5°C after an initial 45 s of imaging. The temperature was then rapidly changed back to 20°C after a further 180 s and the neurons were imaged for a further 135 s. For EB1-GFP imaging, single Z-plane images were acquired every 5 s; for EB1-GFP/ManII-mCherry dual imaging single Z-plane images were acquired every 3 s. All images were processed using Fiji (ImageJ). EB1 comets were tracked using the Manual Tracking plugin in Fiji.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical analysis and graph production were performed using GraphPad Prism and SciStat.com.
 

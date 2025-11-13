@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04dawnj30 Department of Biological Sciences, University of North Carolina at Charlotte Charlotte United States
-2. https://ror.org/04dawnj30 School of Data Science, University of North Carolina at Charlotte Charlotte United States
-3. https://ror.org/04dawnj30 Center for Biomedical Engineering and Science, University of North Carolina at Charlotte Charlotte United States
+1. Department of Biological Sciences, University of North Carolina at Charlotte Charlotte United States ([ROR:04dawnj30](https://ror.org/04dawnj30))
+2. School of Data Science, University of North Carolina at Charlotte Charlotte United States ([ROR:04dawnj30](https://ror.org/04dawnj30))
+3. Center for Biomedical Engineering and Science, University of North Carolina at Charlotte Charlotte United States ([ROR:04dawnj30](https://ror.org/04dawnj30))
 
 † Corresponding author
 
@@ -33,9 +33,17 @@ Here, we provide direct evidence that in addition to its exonuclease-mediated fu
 
 ## Results
 
-## APE1 is required for the recruitment of ATRIP onto ssDNA in the ATR-Chk1 DDR pathway activation in Xenopus egg extracts
+### APE1 is required for the recruitment of ATRIP onto ssDNA in the ATR-Chk1 DDR pathway activation in Xenopus egg extracts
 
 Our recent studies have revealed that APE1 plays an important role in the defined SSB structure-induced ATR-Chk1 DDR pathway via its 3'–5' exonuclease activity in Xenopus HSS system (Lin et al., 2018; Lin et al., 2020). This APE1-mediated initiation of 3'–5' SSB end resection (~1–3 nt-ssDNA gap) will be followed by APE2 recruitment and activation to continue SSB end resection, generating a longer stretch of ssDNA (~18–26 nt-ssDNA) coated by RPA for subsequent assembly of an ATR checkpoint protein complex including ATR-ATRIP, TopBP1, and 9-1-1 complex to activate ATR DDR (Lin et al., 2018; Wallace et al., 2017; Willis et al., 2013). In addition to the 3'–5' SSB end resection initiation, we are interested in whether APE1 plays other roles such as non-catalytic function in the ATR DDR pathway. To test this question directly, we chose to utilize a defined plasmid DNA with a 1–3 nt small ssDNA gap structure (designated as Gap plasmid) in vitro as previously described (Lin et al., 2018), and tested whether APE1 is still required for the ATR DDR in response to this Gap plasmid in HSS (top of the panel, Figure 1A). As expected, the defined Gap plasmid (‘Gap’), but not control plasmid (‘CTL’) triggered Chk1 phosphorylation, suggesting the activation of the ATR-Chk1 DDR pathway by the defined Gap plasmid in the Xenopus HSS (Figure 1A). Notably, the Gap plasmid-induced Chk1 phosphorylation was still impaired in APE1-depleted HSS system (‘extract’, Figure 1A), suggesting that APE1 may play an additional non-catalytic function in the ATR DDR pathway. To further define the additional role of APE1 in ATR DDR activation, we isolated the DNA-bound fractions from the HSS and examined the abundance of checkpoint proteins via immunoblotting analysis. Although the recruitment of RPA70 and RPA32 to the Gap plasmid was slightly reduced when APE1 was depleted from the HSS (‘DNA-bound’, Figure 1A), the presence of RPA70 and RPA32 on Gap-plasmid DNA suggests that the gap structure can be further processed by APE2 in the APE1-depleted HSS, consistent with our previous studies (Lin et al., 2018; Lin et al., 2020). Notably, the recruitment of ATRIP onto Gap plasmid was significantly compromised in APE1-depleted HSS, suggesting that APE1 plays a more direct role in ATRIP recruitment to ssDNA regions in the defined Gap plasmid (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig1-v1.jpg)
+
+**Figure 1.:** (A) CTL (control) or Gap plasmid was added to Mock- or APE1-depleted high-speed supernatant (HSS) and incubated for 30 min. The DNA-bound fractions and total egg extract were examined via immunoblotting analysis as indicated. (B) Streptavidin beads coupled with equal moles of biotin-labeled double-stranded DNA (dsDNA) with ssDNA gap structures (30 nt or 80 nt) were added to Mock- or APE1-depleted HSS. After incubation for 30 min at room temperature, the DNA-bound fractions and total egg extract were examined via immunoblotting analysis as indicated. (C) Streptavidin beads coupled with equal moles of biotin-labeled dsDNA with ssDNA gap structures (30 nt or 80 nt) were added to an interaction buffer containing purified His-ATRIP protein with/without His-RPA protein. After incubation for 30 min at room temperature, the DNA-bound fractions and the input were examined via immunoblotting analysis. (D) Streptavidin beads coupled with equal moles of biotin-labeled dsDNA with ssDNA gap structures (30 nt or 80 nt) were added to an interaction buffer containing His-ATRIP and His-RPA, which was supplemented with GST or GST-APE1. After incubation for 30 min at room temperature, the DNA-bound fractions and the input were examined via immunoblotting analysis. (A, B, D) ATRIP intensity was quantified, and the ratio of ATRIP from DNA-bound vs extract/input was examined. a.u., arbitrary unit. Mean ± SD, n=3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Streptavidin beads coupled with equal moles of biotin-labeled double-stranded DNA (dsDNA) with single-stranded DNA (ssDNA) gap structures (30 nt or 80 nt) were added to Mock- or RPA-depleted high-speed supernatant (HSS). After incubation for 30 min at room temperature, the DNA-bound fractions and total egg extract were examined via immunoblotting analysis as indicated. (B) siRNA-mediated APE1 knockdown impaired Chk1 phosphorylation at Ser345 and at Ser317 induced by H2O2 (1.25 mM) in U2OS cells. Total cell lysates were extracted and analyzed via immunoblotting analysis as indicated. (C) Streptavidin beads coupled with same amount of biotin-labeled dsDNA with ssDNA gap structures (30 nt or 80 nt) were added to an interaction buffer containing His-ATRIP, which was supplemented with/without His-RPA. DNA-bound fractions and total extract samples were examined via immunoblotting analysis as indicated. (D) Streptavidin beads coupled with equal moles of biotin-labeled dsDNA with ssDNA gap structures (30 nt or 80 nt) were added to HSS, which was supplemented with GST or WT GST-APE1. DNA-bound fractions and total extract samples were examined via immunoblotting analysis as indicated. (A, B, D) The intensity of ATRIP, APE1, hChk1-P-S345, or hChk1 was quantified, and the ratio of ATRIP or APE1 DNA-bound vs extract/input, or hChk1-P-S345 vs hChk1 was examined. a.u., arbitrary unit. Mean ± SD, n=3.
 
 In light of different lengths of ssDNA in vitro reconstitution systems by previous studies (such as 75 nt or 80 nt) (Bomgarden et al., 2004; Choi et al., 2010; Zou and Elledge, 2003), we intended to study the recruitment of ATRIP onto defined double-stranded DNA (dsDNA) structures with different length of ssDNA gaps. We chose to test two 100 bp-dsDNA structures with either 30 nt- or 80 nt-ssDNA gap covalently linked with 5'-biotin on top strand (designated as ‘30 nt gap’ and ‘80 nt gap’) for subsequent streptavidin magnetic bead-bound isolation and analysis from Xenopus egg extracts (top of the panel of Figure 1B). When equal moles of dsDNA with 30 nt or 80 nt-ssDNA gap were added to HSS, more RPA70 and RPA32 as well as APE1 and ATRIP are recruited to the 80 nt-ssDNA gap and Chk1 phosphorylation was also enhanced (Figure 1B). This enhanced Chk1 phosphorylation is likely due to increased RPA complex recruitment onto the 80 nt-ssDNA gap (Figure 1B). Whereas APE1 depletion led to compromised Chk1 phosphorylation, the recruitment of ATRIP but not RPA70 nor RPA32 was compromised in APE1-depleted HSS (Figure 1B). Our observations so far suggest that APE1 is important for the recruitment of ATRIP onto RPA-coated ssDNA and Chk1 phosphorylation in Xenopus HSS.
 
@@ -45,17 +53,37 @@ Because ssDNA gaps have been widely accepted as a central platform for protein r
 
 Next, to determine whether APE1 plays any direct role in the RPA-dependent ATRIP recruitment onto ssDNA gaps, we tested whether His-tagged ATRIP recombinant protein can be recruited to 30 nt- or 80 nt-ssDNA gap in vitro in the absence or presence of equal moles of recombinant RPA complex. Consistent with previously reported RPA-dependent ATRIP recruitment to ssDNA (Zou and Elledge, 2003), 30/80 nt-ssDNA coated with RPA70 and RPA32 significantly enhanced the recruitment of His-ATRIP in vitro, although almost no binding of ATRIP onto ssDNA (30 nt and 80 nt) was observed in the absence of recombinant RPA complex (Figure 1C). We noticed more binding of His-ATRIP onto 80 nt-ssDNA gap compared with 30 nt-ssDNA gap (Figure 1C). As expected, the recruitment of His-ATRIP onto 30 nt- and 80 nt-ssDNA was similar to each when same amount of ssDNA gap structures was coupled to beads (Figure 1—figure supplement 1C). Furthermore, the addition of GST-APE1 but not GST protein increased the recruitment of His-ATRIP onto ssDNA with the presence of His-RPA complex in vitro (Figure 1D). It is worth noting that the presence of GST-APE1 had almost no noticeable effect on the recruitment of His-RPA70 and His-RPA32 to ssDNA gap structures (Figure 1D). Similarly, the presence of GST-APE1 but not GST increased the recruitment of endogenous ATRIP but not endogenous RPA70/RPA32 to ssDNA gap structures in the Xenopus HSS (Figure 1—figure supplement 1D). Whereas RPA itself is sufficient for ATRIP recruitment onto ssDNA in vitro, our observations here suggest that APE1 may stimulate the RPA-dependent ATRIP recruitment onto ssDNA in vitro. Alternatively, it is possible that APE1 may play an additional but direct role in the recruitment of ATRIP onto ssDNA in vitro that is independent of RPA.
 
-## APE1 recognizes and binds with ssDNA directly in a length-dependent manner in vitro
+### APE1 recognizes and binds with ssDNA directly in a length-dependent manner in vitro
 
 Although APE1 is known as a DNA repair protein to specifically recognize and process AP site, it remains unclear whether and how APE1 interacts with ssDNA. To identify the possible direct role of APE1 in ATRIP recruitment onto ssDNA, we first performed systematic analysis of APE1 association with ssDNA. Our bead-bound experiments showed that GST-APE1 but not GST was recruited onto 30 nt- and 80 nt-ssDNA gap structures in vitro (Figure 2A–B). We also determined that GST-APE1 but not GST was recruited onto beads coupled with 70 nt-ssDNA in vitro (Figure 2—figure supplement 1). Furthermore, we demonstrated that GST-APE1 but not GST was recruited to beads coupled with 40 nt-, 60 nt-, and 80 nt-ssDNA, but not 10 nt- nor 20 nt-ssDNA (Figure 2C). Furthermore, the longer ssDNA is, the more GST-APE1 is recruited (Figure 2C). Collectively, these observations suggest an APE1-ssDNA interaction in a length-dependent manner in vitro (30–80 nt) regardless the ssDNA is alone or in gapped structures.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic diagram of APE1 functional domains and a summary of its interactions with ssDNA, ATRIP, and RPA from this study. Various symbols indicate estimates of APE1 interactions: ‘+++’, indicates the strongest interaction; ‘+’ indicates moderate interaction; ‘+/-’ indicates minimal to no interaction; ‘-’ indicates almost no interaction; ‘nd’, not determined. (B) Streptavidin beads coupled with biotin-labeled double-stranded DNA (dsDNA) with ssDNA gap structures (30 nt or 80 nt) were added to an interaction buffer containing GST or GST-APE1. After incubation for 30 min at room temperature, the DNA-bound fractions and the input were examined via immunoblotting analysis as indicated. (C) Streptavidin beads coupled with biotin-labeled ssDNA with different lengths (10 nt, 20 nt, 40 nt, 60 nt, or 80 nt) were added to an interaction buffer containing GST or GST-APE1. After incubation for 30 min at room temperature, the DNA-bound fractions and the input were examined via immunoblotting analysis. (D) Streptavidin beads coupled with biotin-labeled ssDNA (70 nt) were added to an interaction buffer containing (70 nt) GST or WT or fragment of GST-APE1. After incubation for 30 min at room temperature, the DNA-bound fractions and the input were examined via immunoblotting analysis. (E) An electrophoretic mobility shift assay (EMSA) shows the interaction between WT, AA35-316 and AA1-34 GST-APE1, and the 70 nt-ssDNA structure in vitro.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Streptavidin beads coupled with biotin-labeled 70 nt-ssDNA were added to interaction buffer, which was supplemented with GST or WT GST-APE1. DNA-bound fractions and input samples were examined via immunoblotting analysis as indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A and C) Various GST or WT/mutant/fragment GST-APE1 was added to nuclease assay buffer containing the 70 bp double-stranded DNA (dsDNA)-single-strand break (SSB) structure for exonuclease activity assays. Samples were examined via denaturing urea PAGE electrophoresis and visualized. (B and D) Various GST or WT/mutant/fragment GST-APE1 was added to nuclease assay buffer containing the 39 bp-dsDNA-AP structure for endonuclease activity assays. Samples were examined via denaturing urea PAGE electrophoresis and visualized.
 
 To further dissect domain requirements within APE1 for ssDNA association, we generated a series of deletion GST-tagged APE1 and found that WT GST-APE1 and AA101-316 GST-APE1 but not any other deletion GST-APE1 tested (i.e. AA35-316, AA1-100, AA1-34, AA35-100, AA101-200) associated with beads coupled with 70 nt-ssDNA in vitro (Figure 2A and D). Intriguingly, AA101-316 but not AA35-316 GST-APE1 associated with ssDNA (Figure 2D). We speculate that the fragment of AA35-100 within APE1 may somehow inhibit the APE1-ssDNA association due to a currently unknown mechanism. In addition, our electrophoretic mobility shift assays (EMSA) revealed that WT GST-APE1 but not GST formed protein-ssDNA complex in vitro (Figure 2E). Notably, neither AA35-316 nor AA1-34 GST-APE1 formed protein-ssDNA complex in EMSA (Figure 2E). These observations suggest that AA1-34 within APE1 is required but seems not sufficient for ssDNA association at least under our tested conditions, and that APE1 AA35-316 is deficient for ssDNA association while APE1 AA101-316 is proficient in ssDNA interaction (Figure 2).
 
 What are the effects of N-terminal motif of APE1 for its 3'–5' exonuclease and AP endonuclease activities? Similar to our previous report (Lin et al., 2020), WT GST-APE1 but neither ED (E95Q-D306A) GST-APE1 nor GST displayed 3'–5' exonuclease and AP endonuclease activities (Figure 2—figure supplement 2A–B). Notably, AA101-316 GST-APE1 is defective for 3'–5' exonuclease and AP endonuclease activities (Figure 2—figure supplement 2A–B); however, AA35-316 GST-APE1 is proficient in AP endonuclease activity but deficient for 3'–5' exonuclease activity (Figure 2—figure supplement 2C–D). These observations suggest the importance of the AA1-34 motif of APE1 for its 3'–5' exonuclease activity and the AA35-100 motif within APE1 for its AP endonuclease activity.
 
-## APE1 interacts and recruits ATRIP onto ssDNA in an RPA-independent manner in vitro and promotes the ATR DDR pathway in Xenopus egg extracts using a non-catalytic mechanism
+### APE1 interacts and recruits ATRIP onto ssDNA in an RPA-independent manner in vitro and promotes the ATR DDR pathway in Xenopus egg extracts using a non-catalytic mechanism
 
 We next tested whether and how APE1 might interact with ATRIP directly by protein-protein interaction assays. GST pulldown assays showed that GST-APE1 but not GST directly interacted with His-ATRIP in vitro (Figure 2A and Figure 3A). Domain dissection experiments revealed that both AA35-316 GST-APE1 and AA1-100 GST-APE1 associated with His-ATRIP to the similar capacity as WT GST-APE1 (Figure 3). However, AA101-316 GST-APE1 and other fragments of APE1 tested (i.e. AA1-34, AA35-100, and AA101-200) were deficient for interaction with His-ATRIP (Figure 3A). In addition, neither of the point mutants within GST-APE1’s active sites (i.e. ED, D306A, and C92A-C98A) affected the APE1-ATRIP interaction (Figure 3B), although they are deficient for 3'–5' exonuclease as shown previously (Lin et al., 2020). Thus, our findings indicate that AA35-100 within APE1 is required but not sufficient for ATRIP interaction and AA1-100 is the minimum fragment within APE1 sufficient for ATRIP association in vitro (Figures 2A and 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) GST pulldown assays with GST, WT, or fragment/mutant GST-APE1 as well as His-ATRIP in an interaction buffer. The input and pulldown samples were examined via immunoblotting analysis. (C) Streptavidin beads coupled with biotin-labeled double-stranded DNA (dsDNA) with ssDNA gap structures (30 nt or 80 nt) were added to an interaction buffer containing His-ATRIP and GST/GST-tagged proteins (WT, AA101-316, or AA35-316 GST-APE1) as indicated. DNA-bound fractions and input samples were examined via immunoblotting analysis as indicated. (D) Streptavidin beads coupled with biotin-labeled dsDNA with ssDNA gap structures (30 nt or 80 nt) were added to APE1-depleted high-speed supernatant (HSS), which was supplemented with GST or GST-tagged proteins (WT, AA101-316, or ED GST-APE1) as indicated. DNA-bound fractions and total extract samples were examined via immunoblotting analysis as indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** DNA-bound fractions and total extract samples were examined via immunoblotting analysis as indicated.
 
 Based on the observation of direct APE1-ATRIP interaction (Figure 3A), we intended to test whether APE1 could recruit ATRIP onto ssDNA directly in the absence of RPA in vitro. We found that His-ATRIP protein was recruited onto 30 nt- and 80 nt-ssDNA gap structures in the presence of WT GST-APE1 but not GST (compare Lanes 4–6 and Lane 1–3 in ‘bead-bound’, Figure 3C). Due to its deficiency in ssDNA interaction (Figures 2D and 3A), AA35-316 GST-APE1 was not recruited to 30 nt- and 80 nt-ssDNA gap structures, which led to the insufficient recruitment of His-ATRIP onto ssDNA (Lanes 10–12 in ‘bead-bound’, Figure 3C). Notably, AA101-316 GST-APE1 was recruited to 30 nt- and 80 nt-ssDNA gap structures but could not recruit ATRIP to ssDNA, due to deficiency in ATRIP association (Lanes 7–9 in ‘bead-bound’, Figure 3C). These observations strongly support that APE1 interacts with ssDNA via its AA1-34 fragment and recruits ATRIP onto ssDNA via its AA1-100 in in vitro reconstitution systems, and that such APE1-mediated ATRIP recruitment onto ssDNA is independent of RPA.
 
@@ -63,11 +91,27 @@ To test the biological significance of APE1-mediated ATRIP onto ssDNA, we perfor
 
 In light of the significance of APE1 and its 3'–5' exonuclease in the initial end resection of defined SSB structures and subsequent ATR DDR pathway in Xenopus HSS system (Lin et al., 2020), we sought to test whether APE1’s catalytic function plays a vital role in the direct ATRIP regulation and chose to use ED GST-APE1 lacking 3'–5' exonuclease and AP endonuclease (Figure 2—figure supplement 2A–B; Lin et al., 2020). We found that similar to WT GST-APE1, ED GST-APE1 bound with ssDNA and recruited endogenous ATRIP onto ssDNA and rescued Chk1 phosphorylation in APE1-depleted HSS (Lanes 10–12, Figure 3D). This observation suggests that APE1’s nuclease activity is dispensable for its direct recruitment of ATRIP onto ssDNA gap structures and subsequent ATR-Chk1 DDR pathway activation in the Xenopus HSS system. Together, these findings demonstrate that APE1 directly associates with and recruits ATRIP onto ssDNA in vitro and that APE1 recruits ATRIP onto ssDNA via a non-catalytic function to promote the ATR-Chk1 DDR pathway activation in the Xenopus HSS system.
 
-## APE1 interacts with RPA70 and RPA32 via two distinct binding motifs
+### APE1 interacts with RPA70 and RPA32 via two distinct binding motifs
 
 We have shown that APE1 depletion and RPA depletion led to deficiency or impairment in the recruitment of ATRIP onto ssDNA gaps in Xenopus HSS system (Figure 1B, Figure 1—figure supplement 1A). Next, we sought to determine whether APE1 interacts with RPA directly, and, if so, whether RPA plays a role for APE1-mediated ATRIP recruitment onto ssDNA for ATR DDR in the HSS system. Due to the significant role of RPA in the recruitment of ATR direct activators such as TopBP1 and ETAA1 to ssDNA (Acevedo et al., 2016; Bass et al., 2016; Lee et al., 2016; Lyu et al., 2019), it is not technically feasible to test whether RPA depletion directly or indirectly affects the ATR-Chk1 DDR pathway in the HSS system due to potential defective APE1-mediated ATRIP recruitment. Our strategy is to identify RPA-interaction motifs within APE1 in vitro, and to determine whether a mutant APE1 deficient in RPA interaction still recruits ATRIP onto ssDNA in the HSS system.
 
 First, we tested the possibility that recombinant GST-APE1 might interact with purified recombinant His-RPA complex (RPA70, RPA32, and RPA14) by protein-protein interaction assays. Our GST pulldown assays showed that WT GST-APE1 but not GST interacted with His-RPA70 in vitro (Figure 4A, Figure 4—figure supplement 1A). Almost no noticeable effects were observed for the interaction of ED, DA, and CA GST-APE1 with His-RPA70, suggesting that the E95, D209, D306, C92, and C98 residues in APE1 are not critical for ATRIP interaction (Figure 4—figure supplement 1B). Domain dissection experiments revealed that AA35-316 and AA1-100 GST-APE1 associated with His-RPA70 in a similar capacity to WT GST-APE1 (Figure 4A). The binding to His-RPA70 was decreased but nevertheless not completely eliminated in other deletion fragments of GST-APE1 tested (i.e. AA101-316, AA1-34, AA35-100, AA101-200) (Figure 4A). These observations suggest (i) that the first 100 amino acids of APE1 are important for RPA association and (ii) that more than one binding sites within APE1 may mediate interaction with RPA complex.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig4-v1.jpg)
+
+**Figure 4.:** (A) GST pulldown assays with GST, WT, or fragment of GST-APE1 as well as His-RPA in an interaction buffer. The input and pulldown samples were examined via immunoblotting analysis. (B) Schematic diagram of APE1 functional domains and its putative RPA-binding motifs (RBM1 and RBM2), as well as sequence alignment of RBM1 and RBM2 from different RPA-interaction proteins. (C) GST pulldown assays with GST, WT/mutant GST-APE1, as well as His-RPA protein complex in an interaction buffer. The input and pulldown samples were examined via immunoblotting analysis. (D) GST pulldown assays with GST, WT/mutant GST-APE1, as well as His-ATRIP protein in an interaction buffer. The input and pulldown samples were examined via immunoblotting analysis. (E) Streptavidin beads coupled with biotin-labeled double-stranded DNA (dsDNA) with single-stranded DNA (ssDNA) gap structures (30 nt or 80 nt) were added to APE1-depleted high-speed supernatant (HSS), which was supplemented with WT or RBM mutant GST-APE1 (WT, RBM1-M, RBM2-M or RBM-DM GST-APE1) as indicated. DNA-bound fractions and total extract samples were examined via immunoblotting analysis as indicated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The intensity of His-RPA70 in Figure 4A was quantified, and the ratio of His-RPA70 in PD (pulldown) vs input was analyzed. a.u., arbitrary unit. (B) GST pulldown assays with GST, or WT/mutant GST-APE1 in an interaction buffer. The input and pulldown samples were examined via immunoblotting analysis. (C) The intensity of His-RPA70 and His-RPA32 in Figure 4C was quantified, and the ratio of His-RPA70 or His-RPA32 in PD vs input was analyzed. a.u., arbitrary unit. Mean ± SD, n=3.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Various GST or WT/mutant GST-APE1 was added to nuclease assay buffer containing the 70 bp double-stranded DNA (dsDNA)-single-strand break (SSB) structure for exonuclease activity assays. Samples were examined via denaturing urea PAGE electrophoresis and visualized. (B) Various GST or WT/mutant GST-APE1 was added to nuclease assay buffer containing the 39 bp-dsDNA-AP structure for endonuclease activity assays. Samples were examined via denaturing urea PAGE electrophoresis and visualized.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Streptavidin beads coupled with biotin-labeled ssDNA with different lengths were added to interaction buffer containing GST-APE1, which was supplemented with or without His-RPA protein. The input and pulldown samples were examined via immunoblotting analysis. (B) The intensity of GST-APE1 in (A) was quantified, and the ratio of GST-APE1 in bead vs input was analyzed. a.u., arbitrary unit. Mean ± SD, n=3. (C) Streptavidin beads coupled with biotin-labeled ssDNA with different lengths were added to interaction buffer containing WT/RBM-DM GST-APE1, which was supplemented with/without His-RPA protein complex. The input and pulldown samples were examined via immunoblotting analysis. (D) The intensity of GST-APE1 in (C) was quantified, and the ratio of GST-APE1 in bead vs input was examined. a.u., arbitrary unit. Mean ± SD, n=3. (E) Streptavidin beads coupled with biotin-labeled double-stranded DNA (dsDNA) with 80 nt-ssDNA gap structure were added to an interaction buffer containing purified His-ATRIP protein (20 μg) with/without His-RPA protein complex (5 μg) and/or GST-APE1 protein (5 μg). After incubation, the bead-bound fractions and the input were examined via immunoblotting analysis. (F) The intensity of His-ATRIP in (E) was quantified, and the ratio of His-ATRIP in bead vs input was examined. a.u., arbitrary unit. Mean ± SD, n=3.
 
 Second, to further test our hypothesis of multiple bindings sites of APE1 for its interaction with RPA complex, we performed amino acid sequence alignments of APE1 (Xenopus APE1 and human APE1) to several human RPA70-interacting proteins (e.g. ETAA1, ATRIP, RAD9A, NBS1, and Mre11) and RPA32-interacting proteins (e.g. ETAA1, XPA, SMARCAL1, and TIPIN) (Bass et al., 2016; Haahr et al., 2016; Lee et al., 2016), and found that APE1 contains a putative RPA70-binding motif (15AA, designated as RBM1) and a putative RPA32-binding motif (41AA, designated as RBM2) (Figure 4B). To determine whether these two possible RPA-binding motifs within APE1 are important for RPA association, we generated single mutant in RBM1 (D69A, designated as RBM1-M) or RBM2 (E148A-E149A, designated as RBM2-M) or in combination (D69A-E148A-E149A, designated as RBM-DM) (Figure 4B). GST pulldown assays showed that RBM-DM GST-APE1 was defective for interaction with His-RPA70 and His-RPA32 in vitro, although RPA association was mildly impaired in single mutant RBM1-M and RBM2-M GST-APE1 (Figure 4C, Figure 4—figure supplement 1C). However, neither of the RPA-binding mutants within APE1 affected its association with His-ATRIP protein (Figure 4D). In addition, neither of the RPA-binding mutant GST-APE1 (i.e. RBM1-M, RBM2-M, and RBM-DM) had noticeable effects on APE1’s 3'–5' exonuclease and AP endonuclease activity, comparing with WT GST-APE1 under our experimental conditions (Figure 4—figure supplement 2A–B). Our observations here suggest that APE1 directly interacts with RPA70 and RPA32 in vitro using two previously uncharacterized distinct motifs within APE1 (i.e. RBM1 and RBM2) (Figure 4B).
 
@@ -83,7 +127,7 @@ In current study, we have identified and characterized another distinct regulato
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/82324/elife-82324-fig5-v1.jpg)
 
-**Figure 5.:** Xenopus egg extracts for ATR DNA damage response (DDR) pathway.(A) In in vitro reconstitution system, RPA can recruit ATRIP to ssDNA gaps. In parallel, APE1 promotes the recruitment of ATRIP to ssDNA gaps in vitro via APE1 direct interaction with ssDNA and ATRIP protein. The RPA-dependent and APE1-dependent recruitment of ATRIP onto ssDNA is likely independent of each other in in vitro reconstitution system. (B) APE1 is required for the recruitment of ATRIP onto ssDNA gaps for the ATR/Chk1 DDR activation in the Xenopus high-speed supernatant (HSS) system via two modes: (#1) APE1-dependent and RPA-dependent; and (#2) APE1-dependent but RPA-independent. In Mode #1: RPA interacts with ATRIP protein and recruits ATRIP onto RPA-ssDNA in HSS. However, this Mode #1 may be inhibited by a currently uncharacterized Protein X in HSS, and such inhibitory effect by Protein X can be reversed by APE1. In Mode #2, APE1 can interact with ATRIP that is not in complex with RPA protein complex, and recruits ATRIP onto ssDNA gaps independent of RPA in HSS. Other significant DDR proteins are omitted from this diagram for a simplified illustration. NTD, N-terminal domain; Redox, redox domain; EEP, exonuclease-endonuclease-phosphatase domain; RBM1, RPA70-binding motif; RBM2, RPA32-binding motif.
+**Figure 5.:** (A) In in vitro reconstitution system, RPA can recruit ATRIP to ssDNA gaps. In parallel, APE1 promotes the recruitment of ATRIP to ssDNA gaps in vitro via APE1 direct interaction with ssDNA and ATRIP protein. The RPA-dependent and APE1-dependent recruitment of ATRIP onto ssDNA is likely independent of each other in in vitro reconstitution system. (B) APE1 is required for the recruitment of ATRIP onto ssDNA gaps for the ATR/Chk1 DDR activation in the Xenopus high-speed supernatant (HSS) system via two modes: (#1) APE1-dependent and RPA-dependent; and (#2) APE1-dependent but RPA-independent. In Mode #1: RPA interacts with ATRIP protein and recruits ATRIP onto RPA-ssDNA in HSS. However, this Mode #1 may be inhibited by a currently uncharacterized Protein X in HSS, and such inhibitory effect by Protein X can be reversed by APE1. In Mode #2, APE1 can interact with ATRIP that is not in complex with RPA protein complex, and recruits ATRIP onto ssDNA gaps independent of RPA in HSS. Other significant DDR proteins are omitted from this diagram for a simplified illustration. NTD, N-terminal domain; Redox, redox domain; EEP, exonuclease-endonuclease-phosphatase domain; RBM1, RPA70-binding motif; RBM2, RPA32-binding motif.
 
 In this study we have characterized a critical role of APE1 as a previously underappreciated ssDNA-interacting protein in the ATR DDR pathway. Our data indicate that APE1 protein directly associates with ssDNA structures (40 nt, 60 nt, and 80 nt) and ssDNA regions (30 nt and 80 nt) in the defined ssDNA gap structures and that the N-terminal 34 amino acids (NT34) within APE1 are important for and the AA101-316 APE1 is sufficient for such direct ssDNA association (Figure 2). Whereas the concentration of Xenopus APE1 protein in Xenopus laevis egg was estimated to be ~1.5 μM (Wühr et al., 2014), the concentration of hAPE1 protein in HEK293T cells was estimated to ~2.8 μM (https://opencell.czbiohub.org/gene/ENSG00000100823) (Wiśniewski et al., 2014). Considering most APE1 protein is localized inside of the nucleus of mammalian cells (Li and Wilson, 2014), the observed APE1 affinity and interaction with ssDNA in our in vitro EMSA (Figure 2E) are physiologically relevant. Notably, the APE1-ssDNA interaction is critical for the recruitment of ATRIP protein onto ssDNA gaps in vitro and in Xenopus egg extracts for ATR DDR activation (Figure 3C, Figure 3—figure supplement 1, Figure 5). A previous study has demonstrated that APE1 can incise the AP site within ssDNA in a sequence- and secondary-structure-dependent manner (Fan et al., 2006). Although this finding implies that that APE1 may associate with ssDNA, the molecular determinant of APE1 for ssDNA interaction is elusive. A more recent study using EMSA has determined that a 22 nt-ssDNA structure is sufficient for a stable hAPE1-ssDNA complex formation in vitro (Bazlekowa-Karaban et al., 2019), which is in line with our estimated ssDNA gap size (~18–26 nt) for APE1 recruitment and ATR DDR activation in response to defined SSB structures in the Xenopus HSS system (Lin et al., 2018; Lin et al., 2020). In addition, a structural biology preprint study has shown that the critical residues in active sites (e.g. Y171, D210, N212, H309) and DNA intercalating residue R177 of hAPE1 are important for the formation and/or stabilization of the hAPE1-ssDNA complex (Hoitsma et al., 2022), which is supportive of our observation on the AA101-316 APE1 interaction with ssDNA (Figure 2D). Furthermore, mouse APE1 was shown to interact with 20 nt-ssDNA and -dsDNA for exonucleolytic cleavage in vitro (Liu et al., 2021). Although it remains unknown how the NT34 motif of APE1 contributes to ssDNA interaction and its 3'–5' exonuclease activity (Figure 2—figure supplement 2C–D), this is reminiscent of the regulation of APE2 3'–5' exonuclease by its C-terminal Zf-GRF interaction with ssDNA (Lin et al., 2018; Wallace et al., 2017). It has been reported that hAPE1 N-terminal domain is important for ssRNA interaction and RNA metabolism as well as biomolecular condensates formation (Fantini et al., 2010; Li et al., 2022). Future studies are needed to determine how exactly APE1 N-terminal motif and/or EEP domain contributes to ssDNA interaction.
 
@@ -95,15 +139,207 @@ Taken together, our findings in this study have elucidated distinct mechanisms o
 
 ## Materials and methods
 
-## Experimental procedures for Xenopus egg extracts, DDR signaling technology, and plasmid DNA bound fraction isolation in Xenopus egg extracts
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0015</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to APEX1(ON-TARGETplus SMARTpool)</td>
+      <td>Dharmacon/Horizon Discovery Lts. and Li et al., 2022</td>
+      <td>L-010237-00-0005</td>
+      <td>Transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>70 nt FAM-ssDNA structure</td>
+      <td>This study and Lin et al., 2020</td>
+      <td>Oligo#1</td>
+      <td>FAM-5'-TCGGTACCCGGGGATCCTCTAGAGTCGACCTGCAGGCATGCAAGCTTGGCGTAATCATGGTCATAGCTGT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>60 nt Biotin-labeled top strand</td>
+      <td>This study</td>
+      <td>Oligo#2</td>
+      <td>Biotin-5'-GGGTAACGCCAGGGTTTTCCCAGTCACGACGTTGTAAAACGACGGCCAGTGAATTCGAGC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>10 nt top strand</td>
+      <td>This study</td>
+      <td>Oligo#3</td>
+      <td>5’-TGCAGGCATG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>100 nt bottom strand</td>
+      <td>This study</td>
+      <td>Oligo#4</td>
+      <td>5'-CATGCCTGCAGGTCGACTCTAGAGGATCCCCGGGTACCGAGCTCGAATTCACTGGCCGTCGTTTTACAACGTCGTGACTGGGAAAACCCTGGCGTTACCC- 3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>10 nt Biotin-labeled top strand</td>
+      <td>This study</td>
+      <td>Oligo#5</td>
+      <td>Biotin-5'-GGGTAACGCC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>70 nt Biotin-ssDNA structure</td>
+      <td>This study</td>
+      <td>Oligo#6</td>
+      <td>Bioin-5'- ACAGCTATGACCATGATTACGCCAAGCTTGCATGCCTGCAGGTCGACTCTAGAGGATCCCCGGGTACCGA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>10 nt Biotin-ssDNA structure</td>
+      <td>This study and Ha et al., 2020</td>
+      <td>Oligo#7</td>
+      <td>Bioin-5'-GGTCGACTCT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>20nt Biotin-ssDNA structure</td>
+      <td>This study and Ha et al., 2020</td>
+      <td>Oligo#8</td>
+      <td>Bioin-5'- GGTCGACTCTAGAGGATCCC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>40 nt Biotin-ssDNA structure</td>
+      <td>This study and Ha et al., 2020</td>
+      <td>Oligo#9</td>
+      <td>Bioin-5'- GGTCGACTCTAGAGGATCCCCGGGTACCGAGCTCGAATTC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>60 nt Biotin-ssDNA structure</td>
+      <td>This study and Ha et al., 2020</td>
+      <td>Oligo#10</td>
+      <td>Bioin-5'-GGTCGACTCTAGAGGATCCCCGGGTACCGAGCTCGAATTCACTGGCCGTCGTTTTACAAC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>80 nt Biotin-ssDNA structure</td>
+      <td>This study</td>
+      <td>Oligo#11</td>
+      <td>Bioin-5'- GGTCGACTCTAGAGGATCCCCGGGTACCGAGCTCGAATTCACTGGCCGTCGTTTTACAACGTCGTGACTGGGAAAACCCT-3'</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Xenopus APE1 (Rabbit polyclonal)</td>
+      <td>Lin et al., 2020</td>
+      <td></td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Xenopus ATRIP (Rabbit polyclonal)</td>
+      <td>Willis et al., 2013</td>
+      <td></td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Xenopus RPA70 (Rabbit polyclonal)</td>
+      <td>Acevedo et al., 2016</td>
+      <td></td>
+      <td>IB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Xenopus RPA32 (Rabbit polyclonal)</td>
+      <td>Acevedo et al., 2016</td>
+      <td></td>
+      <td>IB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chk1-P-S345 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#2348</td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chk1-P-S317 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#12302</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chk1 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-8408</td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GST (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-138</td>
+      <td>IB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-8036</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human APE1 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-17774</td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-56</td>
+      <td>IB (1:4000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental procedures for Xenopus egg extracts, DDR signaling technology, and plasmid DNA bound fraction isolation in Xenopus egg extracts
 
 The preparation of Xenopus HSS and immunodepletion of target proteins in HSS were described previously (Cupello et al., 2019; Cupello et al., 2016; Lebofsky et al., 2009; Lin et al., 2020; Willis et al., 2012). For the DDR signaling experiments, typically different plasmid DNA was mixed with HSS to final concentrations (e.g. 75 ng/μL) for a 45 min incubation at room temperature using a protocol similar to previously described (Lin et al., 2019). Reaction mixture was added with sample buffer followed by examination via immunoblotting analysis. For DNA-bound protein isolation from HSS system, a detailed method has been described previously (Lin et al., 2018). Briefly, reaction mixture was diluted with egg lysis buffer followed by spinning through a sucrose cushion at 10,000 rpm at 4°C for 15 min. After aspiration, the DNA-bound protein factions were analyzed via immunoblotting analysis. Xenopus use is approved by UNCC IACUC (#22-023 and #19-004).
 
-## Cell culture, and knockdown of APE1 and preparation of cell lysates
+### Cell culture, and knockdown of APE1 and preparation of cell lysates
 
 Human osteosarcoma cell line U2OS cells were purchased from and authenticated by American Type Culture Collection (ATCC, Cat#HTB-96), and were tested negative for mycoplasma contamination. U2OS cells were cultured in DMEM with 10% FBS and penicillin (100 U/mL) and streptomycin (100 μg/mL) at 37°C in CO2 incubator (5%). For siRNA-mediated APE1-KD experiment, siRNA On-Targetplus SMARTpool for APE1 was transfected to U2OS cells (30% confluence) using Lipofectamine RNAiMAX reagent method, as previously described (Li et al., 2022). For oxidative stress experiment, U2OS cells were treated with H2O2 (1.25 mM) for 2 hr before cell collection and the total cell lysate preparation for immunoblotting analysis, as recently described (Li et al., 2022).
 
-## Preparation of various plasmids and FAM/biotin-labeled DNA structures
+### Preparation of various plasmids and FAM/biotin-labeled DNA structures
 
 The preparation of control (CTL) plasmid and SSB plasmid was described previously (Lin et al., 2018; Lin et al., 2019). To generate the gap plasmid structure (‘Gap’ plasmid), the SSB plasmid was treated by WT-GST-APE1 protein in a reaction buffer (50 mM HEPES pH 7.4, 60 mM NaCl, 2 mM MgCl2, and 2 mM DTT) followed by phenol-chloroform extraction and purification using a similar procedure described previously (Lin et al., 2020).
 
@@ -111,26 +347,26 @@ The 39 bp FAM-labeled dsDNA-AP structure for APE1 endonuclease assays was prepar
 
 The 100 bp biotin-dsDNA structure with a 30 nt- or 80 nt-ssDNA gap (30 nt gap or 80 nt gap) in the middle was created by annealing of three complementary oligos in same molar ratio at 95–100°C for 5 min followed by natural cooling down at room temperature for ~30 min. For the 30 nt-ssDNA gap, the three complementary oligos are 60 nt biotin-labeled top strand Oligo#2, 10 nt top stand Oligo#3, and 100 nt bottom strand Oligo#4. For the 80 nt-ssDNA gap, the three complementary oligos are 10 nt biotin-labeled top strand Oligo#5, 10 nt top stand Oligo#3, and 100 nt bottom strand Oligo#4. The 70 nt biotin-ssDNA structure in Figure 2D and Figure 2—figure supplement 1 was designed as Oligo#6. The biotin-ssDNA structures with different lengths of ssDNA were synthesized as Oligo#7 (10 nt), Oligo#8 (20 nt), Oligo#9 (40 nt), Oligo#10 (60nt), and Oligo#11 (80 nt) and most of them were described previously (Ha et al., 2020).
 
-## Recombinant DNA and proteins, and immunoblotting analysis
+### Recombinant DNA and proteins, and immunoblotting analysis
 
 The preparation of recombinant WT, mutants (ED, DA, CA), and some fragments (AA35-316, AA101-316, AA101-200) of pGEX-4T1-APE1 was described previously (Lin et al., 2020). Other fragments of GST-APE1 (e.g. AA1-100, AA1-34, AA35-100) were generated by PCR of respective fragment and subcloned into pGEX-4T1. RBM1-M, RBM2-M, and RBM-DM pGEX-4T1-APE1 were mutated with QuikChange IIXL Site-Directed Mutagenesis kit (Agilent) and purified by QIAprep spin miniprep kit. His-RPA trimer expression plasmid was described previously (Acevedo et al., 2016). His-ATRIP expression plasmid was generated by PCR full-length Xenopus ATRIP into pET28A at BamHI and XhoI sites. The induction/expression, purification, and validation of GST or His-tagged recombinant proteins from BL21(DE3) Escherichia coli cells (VWR Cat#80030-326) were performed following vendor’s standard protocol. Immunoblotting analysis was performed following similar methods described previously (Lin et al., 2020; Yan and Michael, 2009).
 
-## GST pulldown assays and DNA binding assays
+### GST pulldown assays and DNA binding assays
 
 The GST-pulldown experiments were performed in an interaction buffer using similar methods as described previously (Lin et al., 2018; Lin et al., 2020). Methods for the DNA binding assays have been described previously (Lin et al., 2018; Lin et al., 2020). Briefly, streptavidin Dynabeads coupled with various biotin-labeled structures (e.g. biotin-ssDNA, biotin-dsDNA, or biotin-dsDNA with ssDNA gap) was incubated with various recombinant proteins in a buffer (80 mM NaCl, 20 mM glycerophosphate, 2.5 mM EGTA, 0.01% NP-40, 10 mM MgCl2, 100 μg/mL BSA, 10 mM DTT, and 10 mM HEPES-KOH, pH 7.5) or with the HSS as indicated. After washing, the bead-bound fractions and input samples were examined via immunoblotting analysis.
 
-## In vitro endo/exonuclease assays
+### In vitro endo/exonuclease assays
 
 For in vitro APE1 endo/exonuclease assays, the FAM-dsDNA-AP structure or FAM-dsDNA-SSB structure was treated with WT, mutant or fragment of GST-APE1 in APE1 reaction buffer at 37°C, as described previously (Lin et al., 2020). The reactions were quenched with TBE-urea sample buffer and denatured for 5 min at 95°C. The samples were examined on TBE-urea PAGE gel and imaged with a Bio-Rad imager.
 
-## Electrophoretic mobility shift assays
+### Electrophoretic mobility shift assays
 
 The EMSA for testing DNA-protein interaction were similar to methods described previously (Lin et al., 2020). Briefly, an increasing concentration of proteins were incubated with 10 nM of FAM-labeled DNA structures in EMSA reaction buffer. Reactions were examined on a TBE native gel and imaged by a Bio-Rad imager.
 
-## Quantification, statistical analysis, and reproducibility
+### Quantification, statistical analysis, and reproducibility
 
 The data presented are representative of three biological replicates unless otherwise specified. All statistical analysis of the intensity of protein of interest was performed between individual samples using GraphPad Prism with unpaired t-test (Figure 4—figure supplement 3B) or paired t-test (all other analyses). Results are shown as mean ± standard deviation (SD) for three independent experiments (p values are as indicated, n=3). p<0.05 is considered as significantly different.
 
-## Material availability statement
+### Material availability statement
 
 Materials generated in this study can be accessed by contacting the corresponding author.

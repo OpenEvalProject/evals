@@ -17,7 +17,7 @@
 
 ## Abstract
 
-The molecular mechanisms underlying the diversity of cortical glutamatergic synapses are still incompletely understood. Here, we tested the hypothesis that presynaptic active zones (AZs) are constructed from molecularly uniform, independent release sites (RSs), the number of which scales linearly with the AZ size. Paired recordings between hippocampal CA1 pyramidal cells and fast-spiking interneurons in acute slices from adult mice followed by quantal analysis demonstrate large variability in the number of RSs ( N ) at these connections. High-resolution molecular analysis of functionally characterized synapses reveals variability in the content of one of the key vesicle priming factors – Munc13-1 – in AZs that possess the same N . Replica immunolabeling also shows a threefold variability in the total Munc13-1 content of AZs of identical size and a fourfold variability in the size and density of Munc13-1 clusters within the AZs. Our results provide evidence for quantitative molecular heterogeneity of RSs and support a model in which the AZ is built up from variable numbers of molecularly heterogeneous, but independent RSs.
+The molecular mechanisms underlying the diversity of cortical glutamatergic synapses are still incompletely understood. Here, we tested the hypothesis that presynaptic active zones (AZs) are constructed from molecularly uniform, independent release sites (RSs), the number of which scales linearly with the AZ size. Paired recordings between hippocampal CA1 pyramidal cells and fast-spiking interneurons in acute slices from adult mice followed by quantal analysis demonstrate large variability in the number of RSs (N) at these connections. High-resolution molecular analysis of functionally characterized synapses reveals variability in the content of one of the key vesicle priming factors – Munc13-1 – in AZs that possess the same N. Replica immunolabeling also shows a threefold variability in the total Munc13-1 content of AZs of identical size and a fourfold variability in the size and density of Munc13-1 clusters within the AZs. Our results provide evidence for quantitative molecular heterogeneity of RSs and support a model in which the AZ is built up from variable numbers of molecularly heterogeneous, but independent RSs.
 
 ## Introduction
 
@@ -31,19 +31,35 @@ Here, we performed in vitro paired whole-cell recordings followed by quantal ana
 
 ## Results
 
-## Large variability in unitary EPSC amplitudes evoked by CA1 PCs in FSINs
+### Large variability in unitary EPSC amplitudes evoked by CA1 PCs in FSINs
 
 To investigate the variance in unitary EPSC (uEPSC) amplitudes evoked in FSINs by CA1 PC single action potentials (APs), we recorded a total of 79 monosynaptically connected pairs in 2 mM external [Ca2+] from acute slices of adult mice of both sexes (Figure 1). The amplitude of uEPSCs ranged from 3 to 507 pA with a mean of 105.0 pA and a SD of 107.9 pA, yielding a coefficient of variation (CV) of 1.03. The uEPSCs had a moderate variability in their 10–90% rise times (RT, mean = 0.4 ± 0.2 ms, CV = 0.4), but some had values over 1 ms. To exclude the contribution of differential dendritic filtering to the observed variance in amplitudes, we restricted our analysis to presumed perisomatic synapses by subselecting cells with mean uEPSC 10–90% RTs ≤ 500 µs. These fast-rising EPSCs had a similar large variability in their amplitudes (113.1 ± 111.0 pA, n = 68; Figure 1D), with a CV of 0.98. The type of short-term plasticity is a widely used feature of postsynaptic responses that is assumed to predict the Pv. Although some connections displayed initial facilitation followed by depression, most of the connections showed robust depression, and the resulting moderate variability in the paired-pulse ratio (CV = 0.38; Figure 1E) implies that the variability in Pv might not be the major source of variability in EPSC amplitudes. It is well known that FSINs are morphologically diverse (contain perisomatic region-targeting basket and axo-axonic cells and dendrite-targeting bistratified cells) and therefore we tested whether the observed amplitude variance could be the consequence of different morphological identity of the postsynaptic cells. A total of 50 FSINs could be categorized into perisomatic region-targeting (n = 35) or bistratified (n = 15) cells, and when uEPSCs amplitudes were compared (perisomatic: 128.1 ± 121.9 pA vs bistratified: 126.4 ± 125.7 pA), no significant difference was found (p=0.98, Mann–Whitney U-test). Furthermore, the CV within each group was ~1, revealing a similar variance in EPSC peak amplitudes when the postsynaptic cells belong to a well-defined IN category.
 
-## Quantal parameters at PC–FSIN connections
+![Figure 1.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative confocal image of a monosynaptically connected, biocytin labeled PC–FSIN pair in the hippocampal CA1 region (top). Membrane potential responses of the IN upon depolarizing and hyperpolarizing current injections (bottom). The supratreshold response shows FS firing characteristics. (B) Excitatory connections in three PC–FSIN pairs. EPSCs (lower traces) recorded in postsynaptic FSINs evoked by action potential (AP) trains in the presynaptic PCs (6 APs at 40 Hz followed by a recovery pulse at 300 or 500 ms, upper traces) display large variability in amplitude and short-term plasticity in 2 mM [Ca2+]. (Pair #1, 68.0 ± 27.7 pA, PPR: 1.05; Pair #2, 140.7 ± 50.8 pA, PPR: 0.58; Pair #3, 507.4 ± 199.6 pA, PPR: 0.65). Top scale bars apply to the top two traces. Recording shown in orange (Pair #1) are from the cell pair in (A). (C) Superimposed averaged traces of the first EPSCs (n = 65 from 50 mice, mean EPSC rise time: 0.4 ± 0.2, CV = 0.40). Colored traces are from the corresponding pairs shown in (B). (D, E) Cumulative distribution of the peak amplitudes of the rise time-subselected first EPSCs and the paired-pulse ratios (EPSC2/EPSC1) recorded in 2 mM [Ca2+] (n = 68 pairs from 46 mice; mean ± SD are indicated on the figure). Colored symbols represent two corresponding pairs with rise times ≤ 0.5 ms shown in (B). (F) Unitary EPSCs in a representative PC–FSIN pair recorded in 6 mM [Ca2+]. Same stimulation protocol as in (B). (G) Stability of the peak amplitude of the first EPSCs over 30 sweeps from the pair shown in (F). (H) Relationship between mean and variance values of EPSC peak amplitudes in 6 mM [Ca2+] from the pair shown in (F). Quantal parameters were estimated with MPFA. N, number of functional release sites, q, quantal size, Pv, vesicular release probability. rs, Spearman’s rank correlation coefficient. s.o. stratum oriens, s.p. stratum pyramidale, s.r. stratum radiatum, s.lm. stratum lacunosum-moleculare.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Maximum intensity projection of confocal image stack of contact #1 (left) and reconstruction of the same contact after re-sectioning (nineteen 200 nm thick sections, right). Arrows point to the putative synaptic contact between the PC and the FSIN. (B) A single 200 nm thin section containing contact #1. The biocytin-filled presynaptic bouton and postsynaptic dendrite are outlined with white lines. The presynaptic bouton is labeled for vGluT1 (green). Munc13-1 (cyan) and PSD-95 (red) are shown in confocal (middle) and STED (bottom) images. The close apposition of the Munc13-1 and PSD-95 immunosignals on the merged STED image confirms that the presynaptic axon forms a synapse on the postsynaptic dendrite. (C) Same as (A), but for contact #2. (D) Same as (B), but for contact #2.
+
+### Quantal parameters at PC–FSIN connections
 
 To elucidate the basis of the uEPSC amplitude variability, we determined the quantal parameters N, Pv, and q of the connections using multiple-probability fluctuation analysis (MPFA, Silver, 2003). For their reliable determination, the Pv must be changed substantially and must have a maximum value > 0.5. We aimed to achieve these by elevating the external [Ca2+] to 6 mM and applying a train of presynaptic APs (6 APs at 40 Hz) within which the Pv changes dynamically (Biró et al., 2005; Figures 1F–H). We also bath applied the CB1 receptor antagonist AM251 to increase further the Pv (the effect of AM251 in separate experiments: control: 68.0 ± 16.5 pA; AM251: 78.0 ± 23.2 pA, n = 5 pairs) and to minimize potential variability due to differential presynaptic tonic CB1 receptor activations. The peak amplitude of uEPSCs in 6 mM [Ca2+] was significantly higher (165.5 ± 169.3 pA, n = 100; p=4.42 × 10−4, Mann–Whitney U-test) than in 2 mM extracellular [Ca2+] but showed similarly large variability (CV = 1.0). The RT-subselected, presumably perisomatic uEPSCs had a mean amplitude of 183.4 ± 180.7 pA (n = 81) with a CV of 0.99, confirming our results in 2 mM [Ca2+] that dendritically unfiltered EPSCs are also highly variable. Of these 81 pairs, we managed to reliably determine the quantal parameters (see Materials and methods) in 47 pairs (peak amplitude: 215.8 ± 211.2 pA, CV = 0.98; Figure 2A) and found large variability in N (9.9 ± 9.0, CV = 0.91; Figure 2B), a much smaller variance in q (32.4 ± 16.0 pA, CV = 0.49; Figure 2C) and an especially low variance in Pv (0.72 ± 0.1, CV = 0.14; Figure 2D). Peak amplitude of uEPSCs correlated tightly with N (Spearman regression coefficient (rs) = 0.79; Figure 2E), less tightly with q (rs = 0.38; Figure 2F) and with Pv (rs = 0.36; Figure 2G), demonstrating that variability in N is the major determinant of the uEPSC amplitude variability.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Distribution in the peak amplitude of the first EPSCs (mean: 215.9 ± 211.2 pA), the number of release sites (N, mean: 9.9 ± 9.0), quantal size (q, mean: 32.4 ± 16.0 pA), and vesicular release probability (Pv, mean: 0.72 ± 0.1) in 47 pairs from 41 mice in 6 mM [Ca2+]. Boxplots represent 25–75% percentile, median (middle line), mean (red square), and SD (whisker) values. (E–I) Relationship between the peak amplitude of the first EPSC and the N (E), q (F), Pv (G), N/AZ(H), number of anatomical contact sites (I) in 6 mM [Ca2+], (E–G n = 47 pairs, H and I n = 61 contacts from 26 pairs, 25 mice). (J) Relationships between Pv and N/AZ and q and N/AZ are shown in 26 pairs. rs, Spearman’s rank correlation coefficient.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantal parameters in the presence of 2 mM and 6 mM [Ca2+] (mean of 1st EPSC peak amplitude: 107.0 ± 90.6 pA vs 170.1 ± 112.6 pA; Pv: 0.42 ± 0.15 vs 0.71 ± 0.10; q: 27.4 ± 14.1 pA; N: 10.0 ± 8.2). N and q values were determined from MPFA calculated in 6 mM [Ca2+]. (B) N as a function of first EPSC peak amplitude in the presence of 2 mM (black) and 6 mM (blue) [Ca2+]. (C) Pv as a function of first EPSC peak amplitude in the presence of 2 mM (black) and 6 mM (red) [Ca2+]. (D) Q as a function of first EPSC peak amplitude in the presence of 2 mM (black) and 6 mM (green) [Ca2+]. (E) Pv as a function of N in the presence of 2 mM (black) and 6 mM (red) [Ca2+]. Data are collected from n = 14 cell pairs, 12 mice. rs, Spearman’s rank correlation coefficient. p, Wilcoxon signed rank test (panel A), Spearman’s rank test (B-E).
 
 The small variance in Pv and its small contribution to the total amplitude variance in 6 mM [Ca2+] is not surprising given the ceiling effect of artificially increasing the release. To investigate its variance under more physiological [Ca2+], we recorded cell pairs in 2 mM, then subsequently in 6 mM [Ca2+] (Figure 2—figure supplement 1). The Pv was then determined with MPFA in 6 mM [Ca2+], and its value in 2 mM [Ca2+] was calculated from the uEPSC amplitude ratio, assuming that changing extracellular [Ca2+] only affects Pv. As expected, the Pv was smaller (mean = 0.42 ± 0.15, n = 14) and more variable (CV = 0.36) in 2 mM [Ca2+] when compared to that in 6 mM [Ca2+] (mean = 0.71 ± 0.10, CV = 0.14, n = 14). Because Pv in 2 mM [Ca2+] shows a more pronounced correlation with the peak EPSC amplitude (Figure 2—figure supplement 1C), we calculated the relative contribution of the three quantal parameters to the amplitude variance and found that even in 2 mM [Ca2+], the variance in N (63%) has a substantially larger contribution than that of q (25%) or Pv (12%; for CV values in 2 mM [Ca2+], see Figure 2—figure supplement 1A).
 
 Because PC–FSIN connections are not mediated by single synapses (Buhl et al., 1997; Molnár et al., 2016), the overall variability in N is not simply the consequence of different N/AZ, but also the function of the number of synaptic contacts formed by the presynaptic axon on the postsynaptic cell. To determine the number of synaptic contacts between the connected cells, we carried out high-magnification confocal microscopy analysis of the biocytin-filled, aldehyde-fixed, and post hoc developed cells (detailed below). Our data revealed a relatively weak correlation between peak uEPSC amplitude and the N/AZ (rs = 0.37; Figure 2H) and a more robust one between the peak uEPSC amplitude and the synapse number (rs = 0.61; Figure 2I). When we examined their variances, an approximately equal contribution of the synapse number (mean = 2.3 ± 1.6, n = 26, CV = 0.68) and the N/AZ (mean = 4.9 ± 3.7, n = 26, CV = 0.75) to the variance in N (mean = 10.2 ± 9.8, n = 26, CV = 0.96) was observed.
 
-## Correlation of the amounts of synaptic molecules with N
+### Correlation of the amounts of synaptic molecules with N
 
 So far, our results demonstrate large variability in the peak amplitude of uEPSCs between CA1 PC and FSINs, which is primarily the consequence of large variability in N among the connections. This variability originates approximately equally from differences in the number of synaptic contacts between the connected cells (ranges from 1 to 7, CV = 0.68) and from variations in N/AZs (ranges from 1 to 17, CV = 0.75). The mechanisms underlying the variability in the number of synaptic contacts between monosynaptically connected cells are unknown and addressing this issue is outside the scope of the present study.
 
@@ -51,27 +67,43 @@ Here we address the question of what the molecular correlates of the variability
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig3-v2.jpg)
 
-**Figure 3.:** (A) Confocal maximum intensity projection image of a monosynaptically connected, biocytin-filled PC–FSIN pair in the hippocampal CA1 region. (B) Enlarged view of the boxed area in (A) with the IN soma and proximal dendrites. (C) Confocal image stack enlarged from the boxed area in (B). Boxed region indicates the location of the synaptic contact site shown in (F and G). (D) Unitary EPSCs recorded from the pair shown in (A) in the presence of 2 mM or 6 mM [Ca2+]. Six APs were evoked at 40 Hz followed by a recovery pulse at 500 ms. (E) Relationship between mean and variance values of EPSC peak amplitudes in the presence of 6 mM extracellular [Ca2+]. Quantal parameters were estimated with MPFA. (F) Maximum intensity projection image of confocal z-stacks (from seven optical sections at 300 nm steps) was obtained from a 125 µm thick resin-embedded slice. Arrow points to the putative synaptic contact between the PC axon and the IN dendrite. (G) The same contact is shown reconstructed from 10 thin (200 nm) serial sections after re-sectioning the resin-embedded slice. (H) STED microscopy image of a single 200 nm thin section. White dashed lines outlining the presynaptic bouton and the postsynaptic dendrite are superimposed on all images. Excitatory synapses – including the identified connection – are located along the biocytin filled dendrite identified by vGluT1 (green), Munc13-1 (cyan), and PSD-95 (red) triple immunolabeling. Arrows point to the putative synaptic contact between the PC axon and the IN dendrite. White box indicates the location of the enlarged area in (I). (I) Localization and separation of the presynaptic (vGluT1 and Munc13-1) and postsynaptic (PSD-95) proteins in the identified contact on two consecutive sections. The biocytin-filled bouton is labeled for vGluT1 (green). The close apposition of the Munc13-1 and PSD-95 immunosignals on the merged STED image confirms that the presynaptic axon forms a synapse on the postsynaptic dendrite. (J, left panel) Summed Munc13-1 intensity of synapses of each pair as a function of contact number. In pairs with double or triple contacts the sums of Munc13-1 intensities are plotted. Black circles represent single-contact pairs, colored circles represent pairs with two (red, blue, green, orange, light green) or three (yellow) synaptic contacts throughout the panels. The Munc13-1 intensity shows a significant positive correlation with N/AZ (middle panel) and the lack of correlation with Pv (right panel). rs: Spearman’s rank correlation coefficient s.o. stratum oriens, s.p. stratum pyramidale, s.r. stratum radiatum, s.lm. stratum lacunosum-moleculare.Figure 3—source data 1.
+**Figure 3.:** (A) Confocal maximum intensity projection image of a monosynaptically connected, biocytin-filled PC–FSIN pair in the hippocampal CA1 region. (B) Enlarged view of the boxed area in (A) with the IN soma and proximal dendrites. (C) Confocal image stack enlarged from the boxed area in (B). Boxed region indicates the location of the synaptic contact site shown in (F and G). (D) Unitary EPSCs recorded from the pair shown in (A) in the presence of 2 mM or 6 mM [Ca2+]. Six APs were evoked at 40 Hz followed by a recovery pulse at 500 ms. (E) Relationship between mean and variance values of EPSC peak amplitudes in the presence of 6 mM extracellular [Ca2+]. Quantal parameters were estimated with MPFA. (F) Maximum intensity projection image of confocal z-stacks (from seven optical sections at 300 nm steps) was obtained from a 125 µm thick resin-embedded slice. Arrow points to the putative synaptic contact between the PC axon and the IN dendrite. (G) The same contact is shown reconstructed from 10 thin (200 nm) serial sections after re-sectioning the resin-embedded slice. (H) STED microscopy image of a single 200 nm thin section. White dashed lines outlining the presynaptic bouton and the postsynaptic dendrite are superimposed on all images. Excitatory synapses – including the identified connection – are located along the biocytin filled dendrite identified by vGluT1 (green), Munc13-1 (cyan), and PSD-95 (red) triple immunolabeling. Arrows point to the putative synaptic contact between the PC axon and the IN dendrite. White box indicates the location of the enlarged area in (I). (I) Localization and separation of the presynaptic (vGluT1 and Munc13-1) and postsynaptic (PSD-95) proteins in the identified contact on two consecutive sections. The biocytin-filled bouton is labeled for vGluT1 (green). The close apposition of the Munc13-1 and PSD-95 immunosignals on the merged STED image confirms that the presynaptic axon forms a synapse on the postsynaptic dendrite. (J, left panel) Summed Munc13-1 intensity of synapses of each pair as a function of contact number. In pairs with double or triple contacts the sums of Munc13-1 intensities are plotted. Black circles represent single-contact pairs, colored circles represent pairs with two (red, blue, green, orange, light green) or three (yellow) synaptic contacts throughout the panels. The Munc13-1 intensity shows a significant positive correlation with N/AZ (middle panel) and the lack of correlation with Pv (right panel). rs: Spearman’s rank correlation coefficient s.o. stratum oriens, s.p. stratum pyramidale, s.r. stratum radiatum, s.lm. stratum lacunosum-moleculare.
 
 We then analyzed the amounts of PSD-95 and Munc13-1 molecules in the functionally characterized synapses quantitatively. We have chosen PSD-95 because its amount correlates almost perfectly with the size of the synapse (see Figure 5C and Cane et al., 2014; Meyer et al., 2014) and, therefore, we use it as a molecular marker of the synapse size and concentrated on Munc13-1 as it has been suggested to be a core component of the RS (Reddy-Alla et al., 2017; Sakamoto et al., 2018). Immunoreactivity for both molecules in the functionally characterized synapses was normalized to that of the population mean of the surrounding synapses, ruling out variations in our data due to slight differences in slice conditions, fixations, or immunoreactions. We have analyzed a total of 11 cell pairs: five had only one, five had two, and one had three synaptic contacts. The summed immunoreactivity for Munc13-1 showed a significant positive correlation with the number of contacts per connection (Figure 3J, left panel). For the single-contact connections, the functionally determined N and the amounts of molecules can be directly correlated. However, for the multi-contact pairs, it is unknown how the Ns are distributed among the synapses. Based on the assumption that N positively correlates with the size of the synapses, we allocated the Ns to the two or three synapses based on their size (assessed from their PSD-95 immunoreactions). When the correlations between the Munc13-1 immunoreactivity and N/AZ was examined, a significant positive correlation was found (rs = 0.57; Figure 3J, middle panel), but no significant correlation was observed between the Munc13-1 immunoreactivity and the Pv (rs = 0.02; Figure 3J, right panel).
 
 Since N is the function of how many contacts there are between the cells and how many RSs there are within the AZs, we next dissected their individual contributions. Although our results revealed positive correlations for both values with Munc13-1 (Figure 3J), we noticed a remarkable variability: synapses with widely different N/AZ had similar amounts of Munc13-1 and synapses with similar N/AZ showed very different amounts of Munc13-1 (Figure 3J). In summary, our data are consistent with a model in which the size of the presynaptic AZ correlates with the N/AZ, but the observed variance indicates variability in the overall amounts of Munc13-1 in individual RSs. Next, we aimed to investigate this issue with a more sensitive and higher resolution method.
 
-## Variable size and molecular content of Munc13-1 clusters in glutamatergic AZs on Kv3.1b + INs as revealed by SDS-FRL
+### Variable size and molecular content of Munc13-1 clusters in glutamatergic AZs on Kv3.1b + INs as revealed by SDS-FRL
 
 To investigate the relationship between the size of AZs and the amounts of Munc13-1, we obtained replicas from the CA1 region of age-matched mouse hippocampus. First, we verified the specificity of our labeling using two Munc13-1 antibodies recognizing non-overlapping epitopes (Figure 4—figure supplement 1). We then performed double immunogold labeling for Kv3.1b and Munc13-1 (Figure 4). We used the Kv3.1b potassium channel subunit to identify fractured membrane segments of parvalbumin-positive FSINs (Weiser et al., 1995). AZs fractured on these Kv3.1b + IN somata and proximal dendrites are highly variable in size (mean = 0.071 ± 0.014 µm2, CV = 0.43 ± 0.06, n = 4 reactions in three mice) and contain variable number of gold particles labeling Munc13-1 (mean = 26.0 ± 5.1 gold, CV = 0.49 ± 0.08, n = 4; Figure 4C–G). Visual inspection of the EM images revealed that large AZs had many gold particles and small ones had fewer. Indeed, a significant positive correlation was observed between the AZ size and the Munc13-1 gold number in four experiments of three mice (Figure 4I). If Munc13-1 had a tight correlation with the AZ area, then its density should be uniform and synapse size independent. Plots showing the Munc13-1 density vs. the AZ area revealed substantial (mean CV = 0.33 ± 0.07) and slightly synapse size-dependent variability (Figure 4J). Synapses with identical size could have a 10-fold difference in their Munc13-1 content, suggesting large variability in either the RS density or the amounts of Munc13-1 per RS. To exclude the possibility that a significant source of this variability is technical, we carried out PSD-95 labeling experiments (Figure 5). The number of gold particles for PSD-95 showed an extremely tight, positive correlation with the synapse area (rs = 0.96), resulting in a size-independent uniform PSD-95 density (Figure 5C and D). The exceptionally small variability in the PSD-95 density (CV = 0.09) demonstrates the capability of SDS-FRL method to reveal uniform densities of synaptic molecules with a small variance. Because the variability in Munc13-1 density is substantially higher (CV = 0.33 ± 0.07) with similar mean values (Munc13-1: 383 ± 71 gold/µm2 vs PSD-95 in dendrites: 497 ± 45 gold/µm2) and because we demonstrate that this cannot be the consequence of a lower labeling efficiency of our Munc13-1 Ab (see Materials and methods), we concluded that the observed synapse to synapse variation in the Munc13-1 density must have a biological origin.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Low-magnification EM images of corresponding protoplasmic-face (somaPF, A) and exoplasmic-face (somaEF, B) membranes of a Kv3.1b + cell body in the stratum oriens. AZs fractured onto the somatic plasma membranes are highlighted in orange. (C, D) High-magnification images of the boxed areas from (A) and (B) show matching EF and PF membranes of a bouton (bEF and bPF) attached to the Kv3.1+ cell. 5 nm gold particles (highlighted in red) labeling Munc13-1 are accumulated in the AZ (orange) of the bouton. (E–G) Other examples of Munc13-1 labeled AZs attached to Kv3.1b + somata or dendrites. (H) Distribution and cluster identification of gold particles labeling Munc13-1 in the AZs shown in (D–G) by DBSCAN analysis (epsilon = 31 nm, minimum number of particles per cluster = 2). (I) Number of Munc13-1 gold particles as a function of AZ area. Data from Exp1 (n = 36) is shown on the upper panel, additional three experiments are shown on the lower panel (Exp2, n = 65; Exp3, n = 48, Exp4 = 10 from three mice). The four AZs shown in (D–G) are indicated by their corresponding colors. (J) Density of Munc13-1 gold particles as a function of AZ area. Data from Exp1 (n = 36) is shown on the upper panel, additional three experiments are shown on the lower panel. (K) Cumulative distribution of mean NNDs (per AZ) of Munc13-1 gold particles (n = 159 AZs) and mean NNDs of randomly distributed particles within the same AZs (generated from 200 random distributions per AZ, p<0.001, Wilcoxon test). (L) Number of Munc13-1 gold particle clusters (estimated by DBSCAN analysis, n = 105 AZs) as a function of AZ area. Colored symbols represent the AZs shown in panels (D–G). rS, Spearman’s rank correlation coefficient.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Two axon terminals with AZs (yellow) labeled for Munc13-1 with a guinea pig antibody (epitope: AA 364–469) shown at low (left) and high (right) magnifications. (C, D) Two axon terminals with AZs (yellow) double labeled for Munc13-1 with two polyclonal antibodies raised against non-overlapping epitopes (guinea pig antibody: AA 364–469, 5 nm gold; rabbit antibody: AA 3–317, 10 nm gold) shown at low (left) and high (right) magnifications. Quantitative analysis in Figure 4 was performed with the rabbit anti-Munc13-1 antibody.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) Two mirror replica pairs showing excitatory postsynaptic densities (PSDs) on dendrites in the CA1 area. PSD area is identified by the accumulation of intramembrane particles on the exoplasmic-face dendritic membranes (dendriteEF) highlighted by blue (left). The corresponding protoplasmic-face of the same dendrite (dendritePF) is labeled for PSD-95 with 5 nm gold particles (right). (C) Number of gold particles labeling PSD-95 as a function of PSD area in dendritic shaft (n = 25) and dendritic spine (n = 32) synapses. (D) Density of gold particles labeling PSD-95 as a function of PSD area in dendritic shafts (n = 25, rs = −0.115, p=0.583) and dendritic spines (n = 32, rs = −0.326, p=0.069). rs, Spearman’s rank correlation coefficient.Figure 5—source data 1.
+**Figure 5.:** (A, B) Two mirror replica pairs showing excitatory postsynaptic densities (PSDs) on dendrites in the CA1 area. PSD area is identified by the accumulation of intramembrane particles on the exoplasmic-face dendritic membranes (dendriteEF) highlighted by blue (left). The corresponding protoplasmic-face of the same dendrite (dendritePF) is labeled for PSD-95 with 5 nm gold particles (right). (C) Number of gold particles labeling PSD-95 as a function of PSD area in dendritic shaft (n = 25) and dendritic spine (n = 32) synapses. (D) Density of gold particles labeling PSD-95 as a function of PSD area in dendritic shafts (n = 25, rs = −0.115, p=0.583) and dendritic spines (n = 32, rs = −0.326, p=0.069). rs, Spearman’s rank correlation coefficient.
 
 Next, we investigated the sub-synaptic distribution of Munc13-1 as it has been suggested to have a clustered distribution in AZs (Rebola et al., 2019; Sakamoto et al., 2018; Tang et al., 2016) and the clusters represent the RSs. First, we measured mean nearest-neighbor distances (NND) between gold particles in the AZs and compared them to random particle distributions. The mean NND distances were significantly smaller than those of randomly distributed gold particles (data: 0.026 ± 0.01 µm, random: 0.033 ± 0.009 µm, n = 159, p<0.001, Wilcoxon signed-rank test; Figure 4K). A previous study from our laboratory demonstrated that Ripley’s H-function analysis could reveal clustered distribution of synaptic molecules, including Munc13-1 in cerebellar synapses (Rebola et al., 2019). We performed this analysis on 159 AZs and found that in 66% of the AZs the distribution of gold particles was compatible with clustering (p<0.05, MAD test). We then used DBSCAN (Ester et al., 1996) to identify the Munc13-1 clusters in these 105 AZs. DBSCAN requires two user-defined parameters: ε (nm), which is the maximum distance between two localization points to be assigned to the same cluster, and MinPts, the minimum number of points within a single cluster. We systematically changed the ε value from 1 to 100 nm and found the largest difference between the data and the random distributions at ε = 31 nm. We then determined the mean number of clusters (Nc = 5.4 ± 2.5) with this ε value and a MinPts of 2. We then tested the effects of changing ε and MinPts on Nc (ε = 21, MinPts = 2, Nc = 5.7 ± 2.7; ε = 41, MinPts = 2, Nc = 4.0 ± 1.8; ε = 31, MinPts = 3, Nc = 3.8 ± 1.8) and found that changing these parameters within plausible values results in a moderate change in Nc. The average of ~5 clusters per AZ is remarkably similar to the N/AZ (4.9 ± 3.7), supporting the notion that Munc13-1 clusters are indeed the molecular equivalents of the functional RSs (Sakamoto et al., 2018). When the number of clusters were plotted against the AZ area, a significant positive correlation was found (Figure 4L). However, the number of clusters also varied fourfold in synapses of identical sizes, resulting in a CV of 0.36 in the cluster density (mean: 73 ± 27 clusters/µm2 AZ area, n = 105). We also noticed that not only the cluster density varies, but the Munc13-1 content of the clusters (4.5 ± 3.0 gold/cluster, CV = 0.67, n = 571) is also highly variable (for individual AZs see Figure 4H). Finally, we measured the nearest-neighbor inter-cluster distance and obtained a mean of 85 ± 34 nm (n = 568 distances from 102 AZs) that is consistent with the spacing and size of docked synaptic vesicles.
 
-## Quantitative STED analysis reveals highly variable amounts of Munc13-1 in excitatory synapses of identical sizes
+### Quantitative STED analysis reveals highly variable amounts of Munc13-1 in excitatory synapses of identical sizes
 
 Our replica-labeling experiments reveal large variability in the Munc13-1 content of synapses with identical sizes, which is the consequence of both the variability in the cluster density and the molecular content of the clusters. We believe that the replica-labeling is the most appropriate method for quantitative analysis of sub-synaptic distributions of molecules due to its high resolution and sensitivity, but unfortunately, it is impossible to perform SDS-FRL in synapses that had been functionally characterized due to the random fracturing of the tissue. Because of this limitation, we developed the above described postembedding, multiplexed immunofluorescent reaction with which we could molecularly characterize functionally tested individual synapses (Holderith et al., 2020). In our final set of experiments, we aimed to compare the results of the postembedding reactions to those obtained with SDS-FRL.
 
 We randomly selected and serially sectioned proximal dendritic segments of two in vitro recorded FSINs (Figure 6). The sections were then immunoreacted for Munc13-1 and PSD-95 in consecutive labeling rounds, and their reaction strengths were quantitatively analyzed on the STED images. First, we performed the analysis on 200 nm thick sections (the usual section thickness in our protocol) and focused on en face synapses where the pre- and postsynaptic specializations are present in a single section and therefore no 3D reconstruction is needed from serial sections (Figure 6C). In the two examined cells relative Munc13-1 and PSD-95 intensities showed a loose correlation (Figure 6D). More importantly, the PSD-95 normalized Munc13-1 labeling showed a substantial variability (Cell 1: CV = 0.42; Cell 2: CV = 0.40) and a slight synapse size- (PSD-95 intensity) dependence, like that obtained with SDS-FRL (compare Figure 4J with Figure 6E). Because the orientation of the functionally characterized synapses related to the sectioning plane is random, i.e. is not always perpendicular or vertical, we repeated these experiments using 70 nm section thickness and performed full 3D reconstruction of the synapses from serial sections (Figure 6—figure supplement 1). As can be seen in the superimposed STED images in Figure 6—figure supplement 1C, the relative proportion of cyan (Munc13-1) and red (PSD-95) signals varies substantially, resulting in a large variability in the PSD-95 normalized Munc13-1 signal (CV = 0.40, Figure 6—figure supplement 1D,E) again consistent with our SDS-FRL results and indicating that the different amounts of Munc13-1 in synapses with identical N/AZ are likely to be of biological origin.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig6-v2.jpg)
+
+**Figure 6.:** (A) Confocal maximum intensity projection image of a biocytin-filled FSIN (Cell1, soma, and basal dendrites in the str. oriens are shown). The dendritic segments that were re-sectioned and analyzed are highlighted in yellow. (B) Reconstruction of the re-sectioned dendritic segments (from twenty 200 nm thick sections) shown in (A). Colored circles indicate en face excitatory synapses (n = 33) identified by Munc13-1 and PSD-95 double immunolabeling. (C) STED analysis of Munc13-1 and PSD-95 immunofluorescent signals on a single 200 nm thick section (shown in the boxed area in (B)). The biocytin-filled dendrite shown in a confocal image (top left) is outlined by a white line. Colored regions of interests (ROIs) represent en face synapses based on the Munc13-1 and PSD-95 immunosignals. (D) Relative Munc13-1 intensity as a function of relative PSD-95 signal in individual synapses. Symbols represent mean normalized integrated fluorescent intensities in individual synapses (Cell1, n = 33; Cell2, n = 26). Magenta and green filled symbols indicate the corresponding color-coded synapses shown in (C). Note that the two synapses have very similar Munc13-1 content although their PSD-95 reactivity is ~2.5-fold different. (E) Munc13-1 to PSD-95 ratio as a function of relative PSD-95 intensity in individual synapses. Magenta and green filled symbols indicate the corresponding color-coded synapses shown in (C). rs, Spearman’s rank correlation coefficient.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67468/elife-67468-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal maximum intensity projection image of a biocytin-filled FSIN (the re-sectioned and analyzed dendritic segment is highlighted in yellow). (B) Reconstruction of the re-sectioned dendritic segment (23 sections, 70 nm thick each) shown in (A). Colored circles indicate excitatory synapses (n = 54) identified by Munc13-1 and PSD-95 double immunolabeling. (C) STED analysis of Munc13-1 and PSD-95 immunofluorescent signals on eight consecutive 70 nm thick sections (shown in the boxed area in B). The biocytin-filled dendrite (top left) is outlined by a dashed white line. Colored regions of interests (ROIs) represent excitatory contacts based on the Munc13-1 and PSD-95 immunosignals. (D) Relative Munc13-1 intensity as a function of relative PSD-95 signal in individual synapses. Symbols represent mean normalized integrated fluorescent intensities in individual synapses (n = 53). Magenta, blue and green filled symbols indicate the corresponding color-coded synapses shown in (C). Note that the three synapses have very similar PSD-95 content although their Munc13-1 reactivity is largely different. (E) Munc13-1 to PSD-95 ratio as a function of relative PSD-95 intensity in individual synapses. Magenta, blue, and green filled symbols indicate the corresponding color-coded synapses shown in (C). rs, Spearman’s rank correlation coefficient, s.o. stratum oriens, s.p. stratum pyramidale, s.r. stratum radiatum.
 
 ## Discussion
 
@@ -91,11 +123,560 @@ Our results are also compatible with the concept that individual cortical synaps
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-Munc13-1</td>
+      <td>Synaptic systems</td>
+      <td>Cat#126–103; RRID:AB_887733</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Guinea pig polyclonal) anti-Munc13-1</td>
+      <td>Custom made by Synaptic systems</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Guinea pig polyclonal) anti-panAMPAR</td>
+      <td>Frontiers</td>
+      <td>Cat#Af580; RRID:AB_257161</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Guinea pig polyclonal) anti-PSD95</td>
+      <td>Synaptic systems</td>
+      <td>Cat#124–014; RRID:AB_2619800</td>
+      <td>(1:200) (1:500 for FRL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-vGluT1</td>
+      <td>Synaptic systems</td>
+      <td>Cat#135–302; RRID:AB_887877</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey anti-rabbit polyclonal) Alexa488</td>
+      <td>Jackson</td>
+      <td>Cat# 711-545-152, RRID:AB_2313584</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey anti-Guinea pig polyclonal) Alexa488</td>
+      <td>Jackson</td>
+      <td>Cat# 706-545-148, RRID:AB_2340472</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat anti-Guinea pig polyclonal) Abberior STAR 635P</td>
+      <td>Abberior</td>
+      <td>Cat#2-0112-007-1</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat anti-rabbit polyclonal) Abberior STAR 635P</td>
+      <td>Abberior</td>
+      <td>Cat#2-0012-007-2</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Guinea pig polyclonal) anti-Cav2.1</td>
+      <td>Synaptic systems</td>
+      <td>Cat#152 205; RRID:AB_2619842</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-Kv3.1b</td>
+      <td>Synaptic systems</td>
+      <td>Cat#242 003; RRID:AB_11043175</td>
+      <td>(1:1600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat anti-rabbit polyclonal) 5 nm gold conjugated</td>
+      <td>British Biocell International</td>
+      <td>EM.GAR5</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat anti- guinea pig polyclonal) 5 nm gold conjugated</td>
+      <td>British Biocell International</td>
+      <td>EM.GAG5</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat anti-rabbit polyclonal) 10 nm gold conjugated</td>
+      <td>British Biocell International</td>
+      <td>EM.GAR10</td>
+      <td>(1:80, 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey anti-guinea pig polyclonal) 12 nm gold conjugated</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>706-205-148 RRID:AB_2340465</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin Cy3 coupled</td>
+      <td>Jackson</td>
+      <td>Cat# 016-160-084, RRID:AB_2337244</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium dodecyl sulfate</td>
+      <td>Sigma</td>
+      <td>71725–100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Sigma</td>
+      <td>A2153-50G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Molar Chemicals</td>
+      <td>Cat#BC0487491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyle acetate</td>
+      <td>TAAB</td>
+      <td>Cat#U008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Durcupane ACM Resin Single component A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#44611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Durcupane ACM Resin Single component B</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#44612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Durcupane ACM Resin Single component C</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#44613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Durcupane ACM Resin Single component D</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#44614</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picric acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#197378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X100</td>
+      <td>VWR Chemicals</td>
+      <td>Cat#9002-93-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Slowfade Diamond</td>
+      <td>Invitrogen</td>
+      <td>Cat#S36967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris Base</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#252859</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris–HCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#T3253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaH2PO4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S0751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Na2HPO4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S9763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BlottoA</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#Sc2333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal goat serum (NGS)</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#S-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin (BSA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A2153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketamine</td>
+      <td>Produlab Pharma B.V.</td>
+      <td>#2302/2/07, 10%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylasine</td>
+      <td>Produlab Pharma B.V.</td>
+      <td>#2303/3/07, 20 mg / ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pipolphene</td>
+      <td>EGIS Gyógyszergyár Zrt.</td>
+      <td>#OGYI-T-3086/01, 25 mg / ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S5016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaHCO3</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S6014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C5080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#M2670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaH2PO4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S0751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G7528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S9888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>K-gluconate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P1847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cesium methanesulfonate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C1426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Creatinine phosphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#27920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#H7523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP disodium salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTP sodium salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#B4261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (include species and sex here)</td>
+      <td>Mouse, male, female C57Bl6/J</td>
+      <td>Jackson</td>
+      <td>Cat# JAX:000664, RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (include species and sex here)</td>
+      <td>Mouse, male, female Tg(Chrna2-Cre)OE25Gsat/Mmucd</td>
+      <td>Jackson</td>
+      <td>RRID:MMRRC_036502-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>National Institute of Health</td>
+      <td>https://imagej.nih.gov/ij; RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hyperstack stitcher (ImageJ plugin)</td>
+      <td>This paper, 3D Histech</td>
+      <td>http://www.nusserlab.hu/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS3</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/hu/products/photoshop.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 2018</td>
+      <td>OriginLab</td>
+      <td>https://www.originlab.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Multiclamp (version 2.1)</td>
+      <td>Axon Instruments/Molecular Devices</td>
+      <td>https://www.moleculardevices.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex (version 10.3)</td>
+      <td>Axon Instruments/Molecular Devices</td>
+      <td>https://www.moleculardevices.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GoldExt</td>
+      <td>Nusser Lab</td>
+      <td>http://www.nusserlab.hu/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statistica</td>
+      <td>TIBCO Software Inc.</td>
+      <td>https://www.tibco.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vibratome VT1200S</td>
+      <td>Leica</td>
+      <td>https://www.leica-microsystems.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ultramicrotome EM UCT</td>
+      <td>Leica</td>
+      <td>https://www.leica-microsystems.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Abberior Instruments Expert Line STED microscope</td>
+      <td>Abberior Instruments</td>
+      <td>https://www.abberior.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olympus FV1000 Confocal microscope</td>
+      <td>Olympus</td>
+      <td>https://www.olympus-lifescience.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Multiclamp 700B amplifier</td>
+      <td>Axon Instruments/Molecular Devices</td>
+      <td>https://www.moleculardevices.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMZ Zeits Puller</td>
+      <td>Zeitz</td>
+      <td>https://www.zeitz-puller.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Borosilicate glass capillary</td>
+      <td>Sutter Instruments</td>
+      <td>Cat# BF150-86-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superfrost Ultra plus slide</td>
+      <td>Thermoscientific</td>
+      <td>http://www.thermoscientific.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PapPen</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 008899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olympus BX51 microscope</td>
+      <td>Olympus</td>
+      <td>https://www.olympus-lifescience.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nikon Eclipse FN1 microscope</td>
+      <td>Nikon</td>
+      <td>https://www.nikon.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica EM ACE900 Freeze Fracture System</td>
+      <td>Leica Microsystems</td>
+      <td>https://www.leica-microsystems.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica HPM100 High Pressure Freezing System</td>
+      <td>Leica Microsystems</td>
+      <td>https://www.leica-microsystems.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Jeol JEM1011 Transmission electronmicroscope</td>
+      <td>Jeol</td>
+      <td>https://www.jeol.co.jp/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Animals were housed in the vivarium of the Institute of Experimental Medicine in a normal 12 hr/12 hr light/dark cycle and had access to water and food ad libitum. All the experiments were carried out according to the regulations of the Hungarian Act of Animal Care and Experimentation 40/2013 (II.14) and were reviewed and approved by the Animal Committee of the Institute of Experimental Medicine, Budapest.
 
-## SDS-digested freeze-fracture replica-labeling
+### SDS-digested freeze-fracture replica-labeling
 
 Three C57Bl/6J (P49–P63) male and a P49 female mice were deeply anesthetized and were transcardially perfused with ice-cold fixative containing 2% formaldehyde (FA) in 0.1 M phosphate buffer (PB) for 15 min. Eighty micrometer thick coronal sections from the dorsal hippocampus were cut, cryoprotected in 30% glycerol, and pieces from the CA1 area were frozen with a high-pressure freezing machine (HPM100, Leica Microsystems, Vienna, Austria) and fractured in a freeze-fracture machine (EM ACE900, Leica) as described in Lorincz and Nusser, 2010. Tissue debris were digested from the replicas with gentle stirring in a TBS solution containing 2.5% SDS and 20% sucrose (pH = 8.3) at 80°C for 18 hr. The replicas were then washed in Tris-buffered saline (TBS) containing 0.05% bovine serum albumin (BSA) and blocked with 5% BSA in TBS for 1 hr followed by an incubation in a solution of the following antibodies: rabbit polyclonal anti-Kv3.1b (1:1600; Synaptic Systems, SySy, Goettingen, Germany, Cat# 242 003, RRID:AB_11043175), rabbit polyclonal Munc13-1 (1:200, SySy, Cat# 126 103, RRID:AB_887733, raised against AA 3–317), a guinea pig polyclonal Munc13-1 (1:200, produced in collaboration with SySy against AA 364–469), and a guinea pig polyclonal PSD-95 (1: 500, SySy, Cat# 124 014, RRID:AB_2619800) antibody. In three experiments from four mice, the Munc13-1 antibody was mixed with a guinea pig Cav2.1 (1:3000, SySy, Cat# 152 205, RRID:AB_2619842) antibody, but only the Munc13-1 signal was analyzed in the present study. This was followed by an incubation in 5% BSA in TBS containing the following secondary antibodies: goat anti-rabbit IgGs (GAR) coupled with 5 nm or 10 nm gold particles (1:80 or 1:100; British Biocell International, BBI, Crumlin, UK) or donkey anti-guinea pig IgGs coupled with 12 nm gold particles (1:25, Jackson ImmunoResearch, Ely, UK) or goat anti-guinea pig IgGs coupled with 5 nm or 15 nm gold particles (1:100, BBI). Finally, replicas were rinsed in TBS and distilled water, before they were picked up on parallel bar copper grids and examined with a Jeol1011 EM (Jeol, Tokyo, Japan). The rabbit Munc13-1 antibody was raised against an intracellular epitope, resulting in a labeling on the protoplasmic face (P-face); therefore, nonspecific labeling was determined on surrounding exoplasmic-face (E-face) plasma membranes and was found to be 5.7 ± 0.8 gold particle/µm2.
 
@@ -103,17 +684,17 @@ To quantify the Munc13-1 densities in the AZs of axon terminals targeting Kv3.1b
 
 To test the variability in the density of gold particles due to the stochastic binding of Abs to their epitopes, we performed the following modeling. We assume that Ab binding can be approximated with a binomial process where the probability of an Ab binding to an epitope is p and the total number of epitopes is Nep. First, we assumed a p of 0.5 and an Nep of 80, to model the average of 40 gold particles per synapse for our PSD-95 labeling. The CV of this binomial distribution was 11% (mean = 40; SD = 4.4), which is very close to that of our experimental data for PSD-95, indicating a potential labeling efficiency of ~50% and 80 PSD molecules. Then we tested the effect of lowering the labeling efficiency an order of magnitude (p=0.05) and therefore increasing the Nep by a factor of 10. The CV (15.2%) of the resulting binomial distribution was indeed larger but was still about half of that we obtained for Munc13-1 experimentally. Another order of magnitude decrease in p is still inconsistent with our experimental data, where the CV remains virtually the same (CV = 15.5%), but the Nep exceeds the number of protein present in a synapse. In summary, our modeling demonstrates that all variance (CV ~10%) in the density of PSD-95 immunolabeling could originate from a random process of Ab binding with a p of 0.5, but such process is responsible for no more than 25% of the variance (CV ~15% out of the 33% experimental data) for the Munc13-1 labeling.
 
-## Analysis of the distribution of Munc13-1 protein within the AZs
+### Analysis of the distribution of Munc13-1 protein within the AZs
 
 We used a Python-based open-source software with a graphical user interface, GoldExt (Szoboszlay et al., 2017; available on the website: http://www.nusserlab.hu/) to analyze gold particle distributions. Coordinates of the immunogold particles and corresponding AZ perimeters were extracted from EM images. Spatial organization of immunogold particles in presynaptic AZs was analyzed on the population of AZs using mean nearest-neighbor distance (NND) and a Ripley analysis (Rebola et al., 2019; Ripley, 1979). For the NND analysis, we calculated the mean of the NNDs of all gold particles within an AZ and that of random distributed gold particles within the same AZ (same number of gold particles, 200 repetitions). The NNDs were then compared statistically using the Wilcoxon signed-rank test. We used a variance stabilized and boundary corrected version of the Ripley’s K function, called H-function (Hr) to examine whether particle distributions within individual AZs are clustered or dispersed over a range of spatial scales according to Rebola et al., 2019. To determine the number of clusters in Munc13-1 labeled AZs, we used the density-based clustering algorithm, DBSCAN (Ester et al., 1996).
 
-## In vitro electrophysiology
+### In vitro electrophysiology
 
-## Slice preparation
+#### Slice preparation
 
 Acute 300 µm thick coronal dorsal hippocampal slices were cut from C57Bl6/J (Jackson Laboratories, Bar Harbor, ME) (n = 70), Tg(Chrna2-Cre)OE25Gsat/Mmucd (RRID:MMRRC_036502-UCD, on C57Bl6/J background) (n = 18), sst tm3.1 (flop) Zjh/J (RRID:Cat_JAX:028579, RRID:IMSR_JAX:028579 on C57Bl6/J background) (n = 2), and Tg(Vipr2-cre)KE2Gsat/Mmucd (RRIP: MMRRC_034281-UCD) × Dlx5/6-Flpe (Tg(mI56i-flpe)39Fsh/J), (RRID:IMSR_JAX:010815) on C57Bl6/J background (n = 1) mice of both sexes (postnatal day 52–86). Animals were anaesthetized with a ketamine, xylasine, pypolphene cocktail (0.625, 6.25, 1.25 mg/ml, respectively, 10 µl/g body weight) and then decapitated or perfused with ice-cold cutting solution containing (in mM): sucrose, 205.2; KCl, 2.5; NaHCO3, 26; CaCl2, 0.5; MgCl2, 5; NaH2PO4, 1.25; and glucose, 10, bubbled with 95% O2 and 5% CO2. The brain was quickly removed into ice-cold cutting solution, and coronal slices containing the dorsal hippocampus were cut using a Leica vibratome (VT1200S, Leica, Wetzlar, Germany) and placed in a submerged-type chamber in ACSF containing (in mM): NaCl, 126; KCl, 2.5; NaHCO3, 26; CaCl2, 2; MgCl2, 2; NaH2PO4, 1.25; glucose, 10 saturated with 95% O2 and 5% CO2 (pH = 7.2–7.4) at 36°C, which was then gradually cooled down to 22–24°C. Recordings were carried out in the same ACSF 32–33°C, slices were kept up to 6 hr.
 
-## Electrophysiology and data analysis
+### Electrophysiology and data analysis
 
 Patch pipettes were pulled (Zeitz Universal Puller; Zeitz-Instrumente Vertriebs, Munich, Germany) from thick-walled borosilicate glass capillaries with an inner filament (1.5 mm outer diameter, 0.86 mm inner diameter; Sutter Instruments, Novato, CA). Pipette resistance was 4–5 MΩ when filled with the intracellular solution containing (in mM): K-gluconate, 130; KCl, 5; MgCl2, 2; EGTA, 0.05; creatine phosphate, 10; HEPES, 10; ATP, 2; GTP, 1; biocytin, 7; glutamate, 20 (for presynaptic PCs only) (pH = 7.3; 290–300 mOsm). All recordings were carried out in the presence of 0.35 mM γ-DGG (Tocris, Bristol, UK; #112) and 2 µM AM251 (Tocris; #1117). All drugs were applied using a recirculating system with a peristaltic pump (3–5 ml/min). All drugs were ordered from Sigma (St. Luis, MO), unless indicated otherwise.
 
@@ -121,22 +702,22 @@ Recordings were obtained using either a Multiclamp 700A or 700B amplifier (Molec
 
 Both PCs and FSINs in the hippocampal CA1 area were identified by their position and shape and size of the somata in the DIC image. INs were held at −65 mV in current-clamp mode, and firing properties were determined from their responses to square current injections (500 ms, from −300 pA to +300, 50 pA steps). Neurons with a narrow spike width, producing high-frequency spiking in response to large depolarizing current injections and displaying lack of a sag in response to hyperpolarizing current injections were considered FSINs in accordance with the literature. Presynaptic CA1 PCs were held at −65 mV in current-clamp mode and postsynaptic FSINs were held at −65 mV in voltage-clamp mode. In the presynaptic PCs, six APs were evoked at 40 Hz followed by a recovery pulse after 300 or 500 ms with 1.5 ms long 1.5 nA depolarizing current pulses, which was repeated in every 8 s. The measured EPSC amplitude values were corrected with the amplitude of the baseline negative peak. To investigate changes in quantal parameters, Pv was increased by elevating extracellular [Ca2+] to 6 mM. MPFA was carried out according to Biró et al., 2005. If the variance for the largest mean value was the largest, the cell was excluded from the analysis. This criterium served to ensure that the Pv is likely to be >0.5 increasing the reliability of deciphering the quantal parameters from the parabola fit. The mean and variance of EPSC peak amplitudes were calculated in 6 mM [Ca2+] recordings from 24 to 30 sweeps (contaminated sweeps were excluded, and if the total number of sweeps was <24, the cell pair was omitted from the analysis). Plots of mean versus variance values were fitted with a parabola to determine N and q. Pv was calculated as P1/(N * q) where P1 is the peak amplitude of the first EPSC of the train. All electrophysiological data were analyzed with Microsoft Excel and OriginPro 2018 (OriginLab, Northampton, MA) as described above.
 
-## Postembedding immunofluorescent reactions
+### Postembedding immunofluorescent reactions
 
-## Tissue preparation
+#### Tissue preparation
 
 After recordings, slices were placed in a fixative containing 4% FA and 0.2% picric acid in 0.1 M PB (pH = 7.4) for 12 hr at 4°C. They then were embedded in agarose (2%) and re-sectioned at ~150 µm thickness. The biocytin-filled cells were visualized with Cy3-conjugated streptavidin (1:1000, Jackson ImmunoResearch, Bar Harbor, ME) in TBS containing 0.2% Triton X-100. Sections were then treated with uranyl acetate, dehydrated in a graded series of ethanol, incubated in acetonitrile, and flat-embedded in epoxy resin (Durcupan) as described in Holderith et al., 2020. Putative contacts between the recorded neurons were identified with visual inspection at high magnification (60×, 1.35 NA objective, Olympus FV1000 microscope, Tokyo, Japan). Tissue blocks containing the biocytin-filled processes were re-embedded, and ultrathin (70 or 200 nm) serial sections were cut and mounted on adhesive Superfrost Ultra plus slides. Potential contact sites between the presynaptic PC boutons, and the postsynaptic dendrites were identified on the ultrathin sections, imaged using a confocal microscope (Olympus FV1000), and reconstructed with a custom-made ImageJ plugin (HyperStackStitcher, 3DHistech, available on the website: http://www.nusserlab.hu/software.html).
 
-## Postembedding immunofluorescent labeling
+### Postembedding immunofluorescent labeling
 
 Etching of the resin, antigen retrieval, immunolabeling, and elution were carried out as reported previously (Holderith et al., 2020). Primary and secondary antibodies were the followings: rabbit polyclonal Munc13-1 (1:200, SySy Cat# 126 103, RRID:AB_887733), guinea pig polyclonal PSD-95 (1: 200, SySy, Cat# 124 014, RRID:AB_2619800), rabbit polyclonal vGluT1 (1:200, SySy, Cat# 135–302, RRID:AB_887877), guinea pig polyclonal pan-AMPAR (1:200, Frontier Cat# Af580, RRID:AB_257161), goat anti-rabbit IgGs coupled with Abberior635P (1:200, Abberior GmbH, Goettingen, Germany), goat anti-guinea pig IgGs coupled with Abberior635P (1:200), and donkey anti-rabbit coupled with Alexa488 (1:200, Jackson ImmunoResearch). After labeling, sections were washed and mounted in Slowfade Diamond Antifade Mountant (ThermoFisher Scientific, Waltham, MA). Images of all sections containing the identified synaptic contacts were taken at high magnification using an Abberior Instruments Expert Line STED microscope (100 × 1.4 NA objective on an Olympus BX63 microscope, Abberior Instruments GmbH, Goettingen, Germany). After imaging, immunoreagents were eluted and a new round of labeling was performed.
 
-## Image analysis
+### Image analysis
 
 A custom-made ImageJ plugin (HyperStackStitcher) was used to align images of ultrathin serial sections. To quantitatively analyze immunolabelings, ROIs were placed over the identified and surrounding synapses in ImageJ, and background subtracted integrated fluorescence intensities were measured. Signals of the identified synapses were normalized to the population mean calculated from 49 to 89 surrounding synapses.
 
 To quantify the Munc13-1 and PSD-95 signal of random synapses located on FSIN dendrites, the measured integrated fluorescence intensities were normalized to the mean of the analyzed synapse population. Munc13-1 to PSD-95 ratios were calculated in each synapse, and the coefficient of variation (CV) of these ratios were assessed.
 
-## Statistical analysis
+### Statistical analysis
 
 Shapiro-Wilk test was used to test the normality of our data. To compare two dependent groups, paired t-test or Wilcoxon signed-rank test was used. Correlations were determined with Spearman’s rank correlation and the regression coefficient (rs); related p-values were calculated from two-tailed Student’s t-distribution. In Figure 3J, the p-values were adjusted with the Holm–Bonferroni methods to account for the repeated use of the same data. Statistical tests were performed in Statistica (TIBCO Software Inc, Palo Alto, CA) or OriginPro 2018 (OriginLab).

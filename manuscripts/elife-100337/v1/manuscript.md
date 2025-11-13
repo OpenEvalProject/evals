@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Psychological & Brain Sciences, Johns Hopkins University Baltimore United States
-2. https://ror.org/00za53h95 Department of Philosophy, Johns Hopkins University Baltimore United States
+1. Department of Psychological & Brain Sciences, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Philosophy, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ Altogether this approach reveals that as a group subjects can report above-chanc
 
 ## Results
 
-## Above-chance sensitivity to inattentional blindness stimuli: location
+### Above-chance sensitivity to inattentional blindness stimuli: location
 
 Experiment 1 modified the canonical inattentional blindness task used by Mack and Rock, 1998; Figure 2a. On three trials, subjects were presented with a cross randomly assigned on each trial to be directly above or below a central fixation point (for 200 ms), and their task was to report which arm of the cross (horizontal or vertical) was longer. The fourth, critical trial, proceeded in the same way, but with the addition of an unexpected red line appearing in the periphery simultaneous with the cross. After again reporting which arm of the cross was longer, subjects were asked the standard question used to measure inattentional blindness: ‘Did you notice anything unusual on the last trial which wasn’t there on previous trials?’ (yes/no). In line with established findings on IB, a considerable proportion of subjects (28.6%) responded ‘no’ they didn’t notice anything unusual (we refer to these subjects across all our experiments as ‘non-noticers’).
 
@@ -56,15 +56,15 @@ Following the standard IB question, our modification included an additional ques
 
 Critically, this result also holds using d′, an unbiased measure of sensitivity (d′2afc = 0.51, 95% CI = [0.16, 0.85]; see Box 1 on SDT), which we use in reporting all following results concerning sensitivity in non-noticers. An important novelty of our strategy is that it derives these statistics in relation to a ‘super subject’ whose responses are comprised of individual subjects’ responses in their single critical trials. Note that all analyses reported here relate to this super subject as opposed to individual subjects; see Discussion for more on the assumptions behind this analytic approach.
 
-## Above-chance sensitivity to inattentional blindness stimuli: color
+### Above-chance sensitivity to inattentional blindness stimuli: color
 
 Experiment 2 repeated the design of Experiment 1, except that the additional line could be either red or blue, and the question about the line’s location was replaced with a one-interval forced-response question about the line’s color. This experiment yielded similar results to Experiment 1: Only 72.3% of subjects shown an additional stimulus said they had noticed something, yet 81% were able to indicate the additional line’s color correctly. And again, as a group, non-noticers demonstrated above chance sensitivity, this time to color (d′ = 0.38, 95% CI = [0.03, 0.73]). (See Appendix for reason to think that this may actually underestimate subjects’ true performance, which may be nearly double this figure.) Note that the unbiased nature of this measure is especially critical here since subjects displayed a significant bias in favor of responding ‘blue’ (c = 0.67, 95% CI = [0.49, 0.84]). In other words, consistent with the results of Experiment 1, as a group, subjects who had just claimed not to have noticed an additional stimulus were able to correctly report its color at rates well above chance. This pair of initial results shows that even subjects who answer ‘no’ under traditional questioning can, as a group, still correctly report various features of the stimuli they just reported not having noticed, indicating significant group-level sensitivity to visual features. Moreover, these results are even consistent with an alternative hypothesis about IB, namely that as a group, subjects who would traditionally be classified as inattentionally blind are in fact at least partially aware of the stimuli they deny noticing.
 
-## Conservative reporting of visual awareness
+### Conservative reporting of visual awareness
 
 Our results raise a natural question: Why, if subjects could succeed at our forced-response questions as a group, did they all individually claim not to have noticed anything? Experiment 2 made an additional modification precisely to address this question: the introduction of ‘absent’ trials in which no additional line was shown but subjects were still asked the yes/no and one-interval forced-response questions. Absent trials provide an additional source of information about subjects’ biases, by revealing how often they respond ‘yes’ without any stimulus present (i.e. their false alarm rate). This allows for the computation of response bias (c) in relation to the crucial IB question (‘Did you notice anything unusual on the last trial which wasn’t there on previous trials?’; again, see Box 1), which to our knowledge is unique in this literature. This analysis revealed evidence for the second aspect of our alternative hypothesis: Not only do subjects collectively have residual sensitivity to unnoticed IB stimuli, they are, as a group, conservative in reporting their awareness (c = 0.31, 95% CI = [0.22, 0.41]; d′ = 1.81, 95% CI = [1.63, 1.99]; note that statistics here are for all subjects). In turn, this raises the possibility that subjects may retain awareness of unreported IB stimuli corresponding to their residual visual sensitivity but that this awareness is systematically underreported.
 
-## Above-chance sensitivity in high-confidence non-noticers
+### Above-chance sensitivity in high-confidence non-noticers
 
 Although the previous two studies are consistent with the hypothesis that ‘inattentionally blind’ subjects retain at least partial awareness of unattended stimuli (and are conservative in reporting that awareness), it is possible that these results were driven by a subset of subjects, with other subjects remaining truly blind to the IB stimulus (i.e. having no sensitivity at all to its features). This might arise if above-chance sensitivity were restricted to subjects who were under-confident in responding ‘no’ when asked whether they had noticed anything unusual. In that case, subjects who confidently answered ‘no’ (i.e. felt certain they didn’t notice any additional stimulus) might, as a group, fail to perform above chance on the subsequent discrimination task. Experiment 3 addressed this possibility directly, by (a) adding confidence ratings to the standard yes/no question, and (b) dramatically increasing the sample size, so as to separately analyze the performance of high- and low-confidence subjects. The task proceeded in the same way as Experiment 1, except that after the yes/no question about noticing anything unusual, subjects were asked to rate their confidence in their answer, on a four-point scale from 0 to 3 (0 = Not at all confident; 3 = Highly confident); finally, subjects were then asked the left/right discrimination question (and gave their confidence in that answer as well, although this was less crucial to our hypothesis—see Appendix for details). As shown in Figure 3e, answers to these questions ran the full spectrum of responses, with subjects expressing varying degrees of confidence in ‘yes’ and ‘no’ responses to the IB question. Of particular relevance was the group of ‘high-confidence non-noticers’—that is, subjects who said ‘no’ (they didn’t notice anything unusual), and then rated their confidence in that answer as ‘3’ (highly confident). Remarkably, even this group of subjects (N=204) collectively demonstrated significantly above-chance sensitivity to the location of the IB stimulus (d′2afc = 0.34; 95% CI = [0.08, 0.60]). Further, as is evident from Figure 3e, subjects’ confidence in their yes/no response predicted accuracy for that group on the discrimination task, suggesting that subjects may have graded awareness of unattended stimuli in IB tasks (see Appendix for details).
 
@@ -72,7 +72,7 @@ Although the previous two studies are consistent with the hypothesis that ‘ina
 
 **Figure 3.:** (a) Schematic trial sequence for Experiment 2. On Trials 1–3 subjects were presented with a cross above or below fixation for 200 ms and judged which arm was longer. On Trial 4, for 2/3 of subjects, an unexpected line appeared in the periphery simultaneous with the cross. This line could be either blue or red and on the left or right. For 1/3 of subjects no additional line was shown. After reporting which cross-arm was longer, all subjects were asked, ‘Did you notice anything unusual on the last trial which wasn’t there on previous trials?’ (yes/no), followed by a one-interval forced-response question concerning the color of the line (red/blue). (b) Performance on the one-interval forced-response question about the unexpected line’s color amongst subjects who were shown a line and who reported not noticing anything unusual (N = 234; 27.73% of subjects). As a group, subjects who answered ‘no’ demonstrated sensitivity to the color of the stimulus they had just claimed not to have noticed. (c) Schematic trial sequence for Experiment 3. Trials 1–4 were identical to Experiment 1, except subjects were asked additional questions about their confidence following both yes/no and 2afc questions. (d) Performance on the 2afc question in Experiment 3, considering only subjects who reported not noticing anything unusual (N = 1634; 30.85% of subjects). Replicating the finding of Experiment 1, as a group, subjects who answered ‘no’ demonstrated sensitivity to the location of the stimulus they had just claimed not to have noticed. (e) Performance on the 2afc question in Experiment 3 for all subjects, broken down by confidence in their response to the yes/no question whether they had noticed anything unusual (N in each bin as follows: No-3 = 204; No-2 = 601; No-1 = 640; No-0 = 189; Yes-0 = 25; Yes-1 = 189; Yes-2 = 771; Yes-3 = 2677). Remarkably, even subjects who were highly confident that they had not noticed anything unusual were collectively significantly above chance. Error bars are 95% CIs.
 
-## Generalizing to dynamic inattentional blindness
+### Generalizing to dynamic inattentional blindness
 
 Experiments 1–3 suggest that, collectively, subjects underreport their perception of a brief (200 ms) IB stimulus. However, in classic studies of dynamic inattentional blindness (Simons and Chabris, 1999; Most et al., 2005; Ward and Scholl, 2015), the unexpected stimulus remains in view for an extended period. Here, it is tempting to think that subjects will not be conservative in reporting that they noticed an IB stimulus given they have many seconds to build confidence in what they saw. Experiment 4 tested this possibility by modifying a traditional sustained inattentional blindness paradigm in which the IB stimulus remains on screen for 5 s. Finding the same pattern of above-chance sensitivity and conservative response bias in this very different paradigm would be striking evidence that, quite generally, there is residual sensitivity to visual features in inattentional blindness, and lend further support to our alternative hypothesis.
 
@@ -98,7 +98,7 @@ Inattentional blindness captures both scholarly interest and popular imagination
 
 The present work puts this crucial assumption to the test, yielding results that point to a very different pattern than the consensus interpretation: Across five pre-registered experiments totaling over 25,000 subjects, we found that groups of observers could successfully report a variety of features of unattended stimuli, even when they all individually claimed not to have noticed those stimuli. Furthermore, our approach revealed that subjects are conservatively biased in reporting their awareness, in ways that not only explain our results (i.e. provide an account of how and why subjects who claimed not to have seen something could still report its features) but also recast the large and influential body of literature that has taken answers to yes/no questions in IB paradigms at face value.
 
-## Design and analytical approach
+### Design and analytical approach
 
 Our experiments all employed designs and protocols closely modeled on canonical IB studies. In Experiments 1–3, we studied IB using a cross task closely modeled on Mack and Rock’s classic studies (Mack and Rock, 1998). In Experiments 4–5, we studied IB using a dynamic task closely modeled on Wood and Simons, 2017 (itself adapted from influential work by Most et al., 2001; Most et al., 2005; Ward and Scholl, 2015). In all cases, we used the standard yes/no question from previous experiments to determine IB rates. These choices were deliberate: Our aim was to interrogate the canonical interpretation of a large and long-standing tradition of experimental work, and so we sought to cleave as closely as possible to the experiments which inspired and have been subject to this interpretation. Our results do not reflect idiosyncratic design choices but rather speak to the central paradigms in the literature.
 
@@ -108,7 +108,7 @@ To assess objective sensitivity and bias in IB, we adopted a novel analytical ap
 
 Our super subject analysis raises the question of how to interpret the responses of individual subjects. Even though our experiments revealed that subjects who denied noticing any unusual stimulus could collectively report its features above chance, it was also the case that some subjects denied noticing any unusual stimulus and then also went on to incorrectly answer the follow-up questions about its features. Indeed, this has also been true in other studies that include follow-ups (e.g. Most et al., 2001; Most et al., 2005; Cohen et al., 2011; Cohen et al., 2020). Are these individual subjects truly inattentionally blind? Intriguingly, even this seemingly cautious conclusion does not follow from that pattern of performance, for several reasons. First, and straightforwardly, many such follow-ups are not 2afc questions but rather yes/no questions themselves (including our own questions about color and shape, as well as many similar questions used in previous work); since such questions are biased (e.g. subjects may tend to favor responding that an object was blue rather than red, perhaps making assumptions about the visibility of each color), any individual incorrect answer to such a question may reflect this sort of bias as opposed to the total absence of color signal. Second, even in an unbiased 2afc task, an observer may have significant information from the stimulus (perhaps, well above an unbiased single-interval detection criterion) but still decide incorrectly because of high noise from the other spatial interval; in such a case, it is far from clear that the subject should be treated as blind. Third, there will inevitably be subjects who fail to correctly report an unnoticed object’s features because they failed to see it in the first place — not due to inattention, but rather due to more ordinary failures such as happening to look away from the display at the key moment, sneezing or blinking just as the unexpected stimulus appears, being interrupted by one’s child or pet or smoke alarm, and so on; such subjects would be ‘blind’ to the stimulus, of course, but not inattentionally blind. Fourth, any series of follow-up questions, including ours, inevitably probes only some limited set of features at the exclusion of others; thus, subjects may have been aware of some feature of the stimulus other than the features explicitly probed (e.g. the orientation of an unexpected line rather than its color). Fifth, many processes intervene between being (or not being) sensitive to a stimulus and generating a response to a follow-up question; subjects will occasionally press the wrong button by mistake, or rush through the questions without reading carefully, or forget what they saw (and thus guess); although such mishaps will tend to break in favor of incorrect answers just as often as correct answers, they make it so that any individual error (or success) is difficult to interpret on its own (and in ways that testify to the value of the group-level approach that we favor here). Sixth, and perhaps most generally, taking correct and incorrect answers to place subjects neatly into two categories — those who saw the stimulus and those who did not — reflects a binary approach to perception and awareness that we suggest should be resisted. Indeed, an aspect of our contribution here, discussed further below, is to encourage conceiving perception and awareness as coming in degrees, in line with a SDT framework. On this view, perception and awareness are most helpfully characterized in terms of continuous statistics such as d′ rather than more traditional but problematic measures such as the proportion of correct or incorrect responses.
 
-## Relation to previous work
+### Relation to previous work
 
 Our work was motivated by concerns that the traditional interpretation of IB relies on assessing perception and awareness simply by asking participants whether they noticed anything unusual. As discussed, such yes/no questions are notoriously subject to bias, which may lead subjects to answer ‘no’ even when they do have a degree of perception or awareness, due to factors such as under-confidence. More recent studies of IB have attempted to improve on simple yes/no questioning through the use of various follow-up questions. However, although these improved methods undoubtedly have their merits, none of them resolves the concerns that motivated our investigations. This is for three fundamental reasons.
 
@@ -126,27 +126,27 @@ We acknowledge that above-chance performance in our experiments could be taken t
 
 Evidence that inattentionally blind subjects process and are sensitive to the unexpected stimuli they deny noticing has been used to support so-called inattentional amnesia accounts of IB—the traditional rival to the orthodox interpretation of IB. On inattentional amnesia accounts, unattended objects and features are consciously perceived but not encoded so as to be available for later explicit report (Wolfe, 1999; Moore, 2001; though see Ward and Scholl, 2015; Hirschhorn et al., 2024). Our results are consistent with some degree of inattentional amnesia, and likewise, with what Block, 2001 calls inattentional inaccessibility. (For a fuller discussion of these alternative hypotheses and IB more generally, see Wu, 2014.) However, our findings suggest that inattentional amnesia cannot be the whole story, since they reveal that some features of unexpected objects are available for later explicit report even in the group of subjects who deny noticing anything unusual.
 
-## Visual awareness as graded
+### Visual awareness as graded
 
 A further upshot of our findings is that they lend support to a more graded perspective on IB (in particular) and both perception and visual awareness (in general). This stands in contrast to the two interpretations that have dominated discussion of IB, both of which adopt a binary perspective. On the orthodox interpretation, inattention abolishes all perception and awareness; on the rival inattentional amnesia account, inattention abolishes all explicit encoding. Our data suggest the need to move beyond such binaries (cf. Cohen et al., 2023): Inattention degrades but does not eliminate perception and awareness – and likewise explicit encoding. This more nuanced approach has some kinship with what Simons, 2000 calls inattentional agnosia. On this account, subjects who report not noticing may have some awareness of the unexpected object but fail to ‘encode the properties necessary to register that the item was something new, different, or noteworthy’ (Most et al., 2005). Although aligned with the spirit of our view, this account still does not fully capture our results, since in our studies the group of non-noticing subjects could explicitly report features which would ordinarily suffice to mark the unexpected object as new or different (e.g. color, shape). Nonetheless, we agree that unattended stimuli are encoded in a partial or degraded way. Here, we see a variety of promising options for future work to investigate. One is that unattended stimuli are only encoded as part of ensemble representations or summary scene statistics (Rosenholtz, 2011; Cohen et al., 2016). Another is that only certain basic ‘low-level’ or ‘preattentive’ features (see Wolfe and Utochkin, 2019 for discussion) can enter awareness without attention. A final possibility consistent with the present data is that observers can in principle perceive individual objects and higher level features under inattention but that the precision of the corresponding representations is severely reduced. Our central aim here is to provide evidence that there is residual perceptual sensitivity to visual features for subjects who would ordinarily be classified as inattentionally blind. Further work is needed to characterize the exact nature of this perception, and the awareness (if any) which corresponds to it.
 
-## Conclusion
+### Conclusion
 
 Taken together, and after decades of inconclusive findings, the results of our five studies offer the strongest evidence so far of significant residual visual sensitivity across a range of visual features in IB. In other words, as a group, the inattentionally blind enjoy at least some degraded or partial sensitivity to the location, color, and shape of stimuli which they report not noticing. Together with our finding that subjects collectively exhibit a systematically conservative bias in reporting their awareness, our results also call into question the orthodox interpretation of IB on which inattention entirely abolishes awareness, suggesting that a reconceptualization of inattentional blindness may be required. Indeed, perhaps ironically, inattentional blindness if anything provides evidence that awareness of certain features survives inattention. Our results highlight the critical value of assessing response bias and including objective measures of sensitivity in studying inattentional blindness and visual awareness. They also point to a broader rethinking of perception and consciousness as graded, rather than binary, phenomena.
 
 ## Materials and methods
 
-## Open science practices
+### Open science practices
 
 All sample sizes, exclusion criteria, analyses, and key experimental parameters reported here have been pre-registered. Data, analyses, stimuli, and pre-registrations are publicly available at https://osf.io/fcrhu/. Readers can also experience all experiments for themselves at https://perceptionresearch.org/ib/.
 
-## Experiment 1: above-chance sensitivity to the location of unnoticed stimuli
+### Experiment 1: above-chance sensitivity to the location of unnoticed stimuli
 
-## Participants
+#### Participants
 
 500 adults were recruited from the online platform Prolific (for validation of the reliability of this subject pool, see Peer et al., 2017), with participation limited to US subjects. As described in our pre-registration, we reached this number by running batches of 100 subjects until a target number of 100 non-noticers (i.e. subjects answering ‘no’ to the yes/no question about whether they noticed the unexpected stimulus) was reached. After excluding subjects who incorrectly reported which arm of the cross was longer on any of Trials 1–3 and those who failed to provide a complete dataset, or failed a test for color vision (Ishihara color plate; see data archive), 374 subjects were included in the analysis. (All these exclusion criteria were pre-registered.) This experiment and all others reported here were approved by the Homewood Institutional Review Board of Johns Hopkins University (protocol number: HIRB00005762). All subjects provided informed consent and were compensated financially for their participation.
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
 As shown in Figure 2, Experiment 1 contained four trials, with the fourth trial differing from the first three in several ways. All trials took place in a display with dimensions 600 px x 600 px. Due to the nature of online experiments, we cannot be sure of the exact size or distance of stimuli as subjects actually experienced them (and so we give these figures in pixels); however, any differences in subjects’ monitors and/or display setups would have been constant across all trials of the experiment.
 
@@ -158,31 +158,49 @@ Following this, two additional questions were asked, in the following order, eac
 
 For all forced-choice and forced-response questions asked in all experiments reported here, subjects indicated their answers by clicking a radio button next to the text corresponding to their answer, and then submitted their responses by clicking a separate ‘Submit’ button, a design aimed at eliminating motor-error responses.
 
-## Analysis and results
+#### Analysis and results
 
 As reported in the main text, 28.6% (107/374) of subjects responded ‘no’ to Question 1; we refer to these subjects as ‘non-noticers’. These subjects are those who demonstrate inattentional blindness by conventional standards. However, 63.6% of non-noticers answered Question 2 correctly (the 2afc location task). This proportion was compared to chance responding (50%) with both frequentist and Bayesian null hypothesis tests, using the binom.test and proportionBF functions, respectively, from the BayesFactor package in R (Ihaka and Gentleman, 1996; Morey et al., 2015; all arguments used were defaults), which yielded a 95% CI = [0.54, 0.73], and a BF10 = 9.9.
 
 SDT analyses began by calculating the number of hits, false alarms, present trials, and absent trials, and then applying the log-linear correction of adding 0.5 to all cells of the decision matrix (Hautus, 1995; see also Box 1). This is a standard correction to prevent an infinite d′ in the event that either hits or false alarms are zero (this correction was applied to all experiments, although neither hits nor false alarms were ever zero), and simulations have shown that if anything, this correction underestimates d′ (Hautus, 1995).
 
-The SDT measure of sensitivity (d′) for non-noticers’ performance on the 2afc location task was calculated as follows:d2afc′=12[z(H)−z(FA)]
+The SDT measure of sensitivity (d′) for non-noticers’ performance on the 2afc location task was calculated as follows:
 
-For our analysis, we (arbitrarily) considered trials where a stimulus was presented on the left to be ‘present’ trials, and trials where a stimulus was presented on the right to be ‘absent’ trials (d′ will be identical regardless of which trial type is considered present/absent; c will be the same value with the opposite sign). With a hit rate and false alarm rate of 72.64% and 45.54% respectively (after log-linear adjustment), the resulting d′2afc = 0.51. Note that d′ for this experiment was adjusted downward by a factor of 1/2 because 2afc tasks are theoretically easier than yes/no or forced-response tasks (Macmillan and Creelman, 2005). This formula for d′2afc (as well as those for d′ and criterion, described below) assumes equal variance for signal and noise distributions (a standard assumption in SDT), but the analysis code provided allows for the calculation of SDT statistics when the variance of signal and noise distributions is unequal.
+$$
+d_{2afc}^{′}=\frac{1}{\sqrt{2}}[z(H)−z(FA)]
+$$
 
-Because each subject in the experiment contributes just one trial, the signal detection metrics were calculated at the group level, and the standard error for each SDT calculation was estimated using methods described by Macmillan and Creelman, 2005, pgs. 325–328; see also Kadlec, 1999. We estimated the variance for d′ in this 2afc task using methods first described by Gourevitch and Galanter, 1967, and re-described in Macmillan and Creelman, 2005, equations 13.5 and 13.7. First, equation 13.5 demonstrates how ϕ (a function which converts z-scores into probabilities) can be computed for the hit rate and false alarm rates:ϕ(H)=12πe−12z(H)2ϕ(FA)=12πe−12z(FA)2
+For our analysis, we (arbitrarily) considered trials where a stimulus was presented on the left to be ‘present’ trials, and trials where a stimulus was presented on the right to be ‘absent’ trials (d′ will be identical regardless of which trial type is considered present/absent; c will be the same value with the opposite sign). With a hit rate and false alarm rate of 72.64% and 45.54% respectively (after log-linear adjustment), the resulting d′2afc = 0.51. Note that d′ for this experiment was adjusted downward by a factor of $1/\sqrt{2}$ because 2afc tasks are theoretically easier than yes/no or forced-response tasks (Macmillan and Creelman, 2005). This formula for d′2afc (as well as those for d′ and criterion, described below) assumes equal variance for signal and noise distributions (a standard assumption in SDT), but the analysis code provided allows for the calculation of SDT statistics when the variance of signal and noise distributions is unequal.
 
-With ϕ(H) and ϕ(FA) computed, we then estimated the variance of d′ in this 2afc task using equation 13.7:var(d2afc′)=H(1−H)2N2[ϕ(H)]2+FA(1−FA)2N1[ϕ(FA)]2
+Because each subject in the experiment contributes just one trial, the signal detection metrics were calculated at the group level, and the standard error for each SDT calculation was estimated using methods described by Macmillan and Creelman, 2005, pgs. 325–328; see also Kadlec, 1999. We estimated the variance for d′ in this 2afc task using methods first described by Gourevitch and Galanter, 1967, and re-described in Macmillan and Creelman, 2005, equations 13.5 and 13.7. First, equation 13.5 demonstrates how ϕ (a function which converts z-scores into probabilities) can be computed for the hit rate and false alarm rates:
+
+$$
+ϕ(H)=\frac{1}{\sqrt{2\pi}}e^{−\frac{1}{2}z(H)^{2}}
+$$
+
+
+
+$$
+ϕ(FA)=\frac{1}{\sqrt{2\pi}}e^{−\frac{1}{2}z(FA)^{2}}
+$$
+
+With ϕ(H) and ϕ(FA) computed, we then estimated the variance of d′ in this 2afc task using equation 13.7:
+
+$$
+var(d_{2afc}^{′})=\frac{H(1−H)}{2N_{2}[ϕ(H)]^{2}}+\frac{FA(1−FA)}{2N_{1}[ϕ(FA)]^{2}}
+$$
 
 where N2 is the number of present trials, and N1 is the number of absent trials. (For information about how the variance is affected by sample size using different methods and in different tasks, see Macmillan and Creelman, 2005, Tables 13.2 and 13.3; our sample sizes are more than sufficient to expect this variance estimation to be accurate to the hundredth decimal place).
 
 Finally, we computed a confidence interval around d′2afc using standard methods: The result is 95% CI = [0.16, 0.85], suggesting performance in the non-noticing group was significantly above chance.
 
-## Experiment 2: above-chance sensitivity to the color of unnoticed stimuli
+### Experiment 2: above-chance sensitivity to the color of unnoticed stimuli
 
-## Participants
+#### Participants
 
 1700 adults were recruited from Prolific, collected in batches of 100 subjects until a target number of 100 non-noticers was reached. After excluding subjects who incorrectly reported which arm of the cross was longer on any of Trials 1–3 and those who failed to provide a complete dataset, or failed a test for color vision, 1261 subjects were included in the analysis.
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
 The fourth, critical trial proceeded the same way as Experiment 1, except that the extra vertical line that appeared simultaneous with the cross was either red (RGB(147,0,0)) or blue (RGB(0,0,136)), with the color and location of the line randomized across subjects.
 
@@ -190,45 +208,53 @@ Following the presentation of Trial 4, subjects were asked which cross arm was l
 
 To reduce uncertainty about what color ‘red’ and ‘blue’ referred to, the text for each color option was printed in the red and blue color used for the IB stimuli in the different conditions (RGB(147,0,0), RGB(0,0,136)).
 
-## Analyses and results
+#### Analyses and results
 
 As reported in the main text, 27.7% of subjects shown an additional stimulus responded ‘no’ to Question 1 (i.e. demonstrated inattentional blindness by conventional standards). However, 58.5% of these non-noticers answered correctly on Question 2 (95% CI = [51.95%, 64.93%]; BF10 = 4.54).
 
-In Experiment 2, the follow-up color discrimination was a one-interval forced-response design, and so for signal detection analyses, sensitivity was calculated without the 1/√2 adjustment, such that d′ = z(H) - z(FA), resulting in d′ = 0.38. We estimated the variance of d′ for this one-interval forced-response task using similar methods to those described for Experiment 1, with one minor change to the variance equation to account for this being a forced-response task (equation 13.4 in Macmillan and Creelman, 2005):var(d′)=H(1−H)N2[ϕ(H)]2+FA(1−FA)N1[ϕ(FA)]2
+In Experiment 2, the follow-up color discrimination was a one-interval forced-response design, and so for signal detection analyses, sensitivity was calculated without the 1/√2 adjustment, such that d′ = z(H) - z(FA), resulting in d′ = 0.38. We estimated the variance of d′ for this one-interval forced-response task using similar methods to those described for Experiment 1, with one minor change to the variance equation to account for this being a forced-response task (equation 13.4 in Macmillan and Creelman, 2005):
+
+$$
+var(d^{′})=\frac{H(1−H)}{N_{2}[ϕ(H)]^{2}}+\frac{FA(1−FA)}{N_{1}[ϕ(FA)]^{2}}
+$$
 
 The only difference between equation 13.4 and equation 13.7 is that the latter includes a factor of 2 in the denominator of both terms, which accounts for 2afc tasks theoretically being easier than yes/no tasks.
 
-The procedure for significance testing comparing d′ to chance (d′ = 0) was identical to Experiment 1 Methods, and the two-sided frequentist binomial probability test yielded a 95% confidence interval of [0.03, 0.73]. As stated in the main text, subjects demonstrated a significant bias to respond ‘blue’, which we measured by calculating subjects’ criterion on the red/blue question as:c=−12[z(H)+z(FA)]
+The procedure for significance testing comparing d′ to chance (d′ = 0) was identical to Experiment 1 Methods, and the two-sided frequentist binomial probability test yielded a 95% confidence interval of [0.03, 0.73]. As stated in the main text, subjects demonstrated a significant bias to respond ‘blue’, which we measured by calculating subjects’ criterion on the red/blue question as:
+
+$$
+c=−\frac{1}{2}[z(H)+z(FA)]
+$$
 
 resulting in a positive (conservative) criterion value of c = 0.67. The 95% confidence interval around the criterion estimate is [0.49, 0.84]. Since this interval does not contain zero, this represents a statistically significant bias. For a more intuitive understanding of the bias, 78.42% of subjects shown no IB stimulus guessed that the stimulus was blue.
 
 Lastly, an important contribution of this work is the inclusion of absent trials, which enable us to compute response bias (c) for the traditional IB question, ‘Did you notice anything unusual on the last trial which wasn’t there on previous trials?’ As predicted, we found that, as a group, subjects were conservative in reporting their awareness of the IB stimulus (c = 0.31, 95% CI = [0.22, 0.41]), suggesting that subjects in inattentional blindness experiments may systematically underreport their awareness of unexpected stimuli.
 
-## Experiment 3: above-chance sensitivity even in highly confident non-noticers
+### Experiment 3: above-chance sensitivity even in highly confident non-noticers
 
-## Participants
+#### Participants
 
 7000 subjects were recruited from Prolific, and data were collected in batches until we reached 200 non-noticers who reported being ‘highly confident’ in their yes/no response. After excluding duplicate data files, subjects who incorrectly reported which arm of the cross was longer on any of Trials 1–3, those who failed to provide a complete dataset, or failed a test for color vision, 5296 subjects were included in the analysis.
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
 This experiment explored whether sensitivity to the visual features of an IB stimulus varies as a function of subjects’ confidence in their responses to the traditional IB question (i.e. whether or not they noticed anything unusual on the last trial), and more specifically whether even highly confident non-noticers would show such sensitivity. Experiment 3 was identical to Experiment 1, except that after subjects answered the traditional yes/no question (which was the same as Question 1 in Experiment 1) and the follow-up left/right question (which was the same as Question 2 in Experiment 2), they also rated their confidence in each of those responses:
 
-## Analyses and results
+#### Analyses and results
 
 As reported in the main text, 30.85% of subjects shown an additional stimulus responded ‘no’ to Question 1 (i.e. demonstrated inattentional blindness by conventional standards).
 
 As with Experiments 1 and 2, we were interested in whether subjects who responded ‘no’ to the traditional IB question would nevertheless perform above-chance on subsequent discrimination questions about the IB stimulus. Beyond our general interest in all subjects who answered ‘no’, we were most interested in whether the non-noticers who reported high confidence in their answer still performed above-chance on the 2afc question. We compared the performance of those observers to chance (d′2afc = 0) using the methods described above, and found that even the most confident non-noticers—that is those who reported being ‘highly confident’ that they did not notice anything unusual, rating their confidence at 3 on a scale from 0 to 3—collectively demonstrated significantly above-chance sensitivity to the location of the IB stimulus: d′2afc = 0.34; 95% CI = [0.08, 0.60]. Importantly, this group of subjects is minimally powered, with just 204 subjects, adding force to the argument that there is meaningful sensitivity amongst highly confident non-noticers. The bin of second-most interest is that of the moderately confident non-noticers (those responding with a confidence rating of 2 on a scale from 0 to 3). Sensitivity in this group was above zero (d′2afc = 0.05), but not significantly so (95% CI = [–0.10, 0.20]). Figure 3e depicts the uncorrected results of null hypothesis significance tests comparing the d′2afc estimate for each confidence rating bin to chance (d′2afc = 0), but essentially the same pattern of significant results is obtained when the Holm-Bonferroni correction for multiple comparisons is applied (p = 0.034 for the No-3 bin, and p = 0.09 for the Yes-0 bin–although note this bin only contains 25 subjects).
 
-## Experiment 4: above-chance sensitivity in a sustained inattentional blindness task
+### Experiment 4: above-chance sensitivity in a sustained inattentional blindness task
 
-## Participants
+#### Participants
 
 1500 subjects were recruited from Prolific, and data were collected in batches until we reached 100 non-noticers who answered the color discrimination question first, 100 non-noticers who answered the shape discrimination question first, and 100 non-noticers who answered the location discrimination question first (more on these three discrimination questions below).
 
 After exclusions, 1278 subjects including 417 non-noticers remained in the analysis for Experiment 4. The pre-registered exclusion criteria for this experiment were the same as those reported by Wood and Simons, 2017. Subjects were excluded if: (i) their reported bounces for either of the first two trials erred by more than 50% in either direction from the true number of bounces of their attended objects on that trial, (ii) they failed to contribute a complete dataset, (iii) they reported problems with experimental playback, such as stuttering, freezing or another issue specified in a free-response, or (iv) an observer managed to submit or run the study twice (evidenced by two files sharing the same Prolific ID), in which case we excluded their second run from the analysis.
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
 In Experiment 4, subjects participated in a sustained inattentional blindness task modified slightly from experimental code published by Wood and Simons, 2017. All subjects completed three trials of a dynamic, multiple object tracking task containing black squares and white squares. At the beginning of the experiment, each subject was told whether they should attend to the black or white squares. At the beginning of each trial, subjects were instructed to fixate on a small blue square (11 px x 11 px; RGB(0,0,255)) in the center of a gray (RGB(127,127,127)) rectangle (666 px x 546 px), and were told that their task was to count the number of times the squares of their attended color bounced off of the walls of the gray rectangle. Each trial lasted approximately 17 s, and each subset of black/white squares bounced an average of 28 times. After the trial ended, subjects were asked to report how many times the squares of their attended color bounced off of the walls of the rectangle. Of the 222 excluded subjects, 185 were excluded for bounce reports that erred by more than 50% in either direction of the actual number of bounces.
 
@@ -238,7 +264,7 @@ Regardless of condition, at the end of the critical trial, subjects were again a
 
 Note that Question 1 (the traditional IB question) differs slightly in Experiments 4 and 5 from the question wording in Experiments 1–3 because we aimed to cleave as closely as possible to Wood and Simons, 2017 and other inattentional blindness experiments using similar paradigms.
 
-## Analyses and results
+#### Analyses and results
 
 As reported in the main text, 57.32% of subjects shown an additional stimulus on the critical trial answered ‘no’ to the traditional IB question (Question 1). For absent trials, 6.31% of subjects answered ‘yes’ to the traditional IB question when no additional stimulus appeared; this is the false alarm rate, which can be used (along with the hit rate) to estimate subjects’ bias in responding to the traditional IB question. In Experiment 4, as in Experiment 2, we found that, as a group, subjects answered the traditional IB question using a conservative criterion (c = 0.85, 95% CI = [0.73, 0.97]), suggesting they may be underreporting their awareness of IB stimuli.
 
@@ -248,17 +274,17 @@ Because the order of the discrimination questions varied by subject, we pre-regi
 
 Finally, in a pre-registered analysis breaking down the inattentional blindness rate by the color of the attended stimuli, we found that subjects were roughly 3 x more likely to report noticing a color-congruent than a color-incongruent IB stimulus (86.57% vs 28.71%). This interacted with subjects’ responses on the color discrimination task, with subjects shown an IB stimulus demonstrating a significant bias to say that the stimulus that appeared was the opposite color to the colored squares they attended (84.25% of subjects who attended to white squares answered black; 75.09% of subjects who attended to black squares answered white). In order to get a better estimate of sensitivity to color in this task, we pilot tested a new pair of IB stimulus colors in Experiment 5 to equate the guessing rate on absent trials.
 
-## Experiment 5: replicating above-chance sensitivity in a sustained inattentional blindness task
+### Experiment 5: replicating above-chance sensitivity in a sustained inattentional blindness task
 
-## Participants
+#### Participants
 
 To ensure a large enough sample without overlap with previous experiments using this paradigm, Experiment 5 recruited Prolific subjects not only from the USA but also from Canada, the United Kingdom, and Australia. In order to reduce the size of the confidence intervals around the sensitivity estimates relative to Experiment 4, we collected data until we reached at least 2200 subjects who reported not noticing the unexpected stimulus. Exclusion criteria were identical to Experiment 4. After exclusions, 10,830 subjects in total, including 2339 non-noticers, were included in the analysis. (To our knowledge, this made Experiment 5 the largest single inattentional blindness sample ever collected.)
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
 Experiment 5 repeated the design of Experiment 4, with two key differences: (1) Every subject was assigned to attend to the white squares in the primary task, (2) the IB stimuli were either orange or green—two colors that as a pair produced equal IB rates in pilot testing. Again, subjects were asked the traditional IB question (yes/no) followed by three discrimination questions (color, shape, and location) in random order for each subject. The change to the colors of the IB stimuli of course meant that the color question and options were changed to read:
 
-## Analyses and results
+#### Analyses and results
 
 As reported in the main text, with the congruency effects mitigated and despite the highly salient color of the orange/green IB stimuli, the pattern of results matched that of Experiment 4: Analysis of responses to the traditional yes/no question once again revealed that subjects were collectively biased to respond ‘no’ (c = 0.45, 95% CI = [0.41, 0.49]), with the hit rate (subjects in the Present condition who responded ‘yes’) being 71.01% (100% - the IB rate) and the false alarm rate (subjects in the Absent condition who responded ‘yes’) being 7.24% (see a more detailed breakdown of the SDT analysis for this experiment in Box 1). Thus, even when a highly salient, moving stimulus entered the display suddenly and remained on screen for multiple seconds, subjects were hesitant to report noticing it.
 

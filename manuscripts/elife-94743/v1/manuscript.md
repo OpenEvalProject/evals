@@ -17,16 +17,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04kx2sy84 Key Laboratory of Pathogenic Fungi and Mycotoxins of Fujian Province, Key Laboratory of Biopesticide and Chemical Biology of Education Ministry, Proteomic Research Center, and School of Life Sciences, Fujian Agriculture and Forestry University Fuzhou China
-2. https://ror.org/02aj8qz21 Institute of Edible Mushroom, Fujian Academy of Agricultural Sciences Fuzhou China
-3. https://ror.org/04kx2sy84 College of Animal Sciences, Fujian Agriculture and Forestry University Fuzhou China
-4. https://ror.org/02bv3c993 State Key Laboratory of Pathogen and Biosecurity, Institute of Microbiology and Epidemiology, Academy of Military Medical Sciences (AMMS) Beijing China
+1. Key Laboratory of Pathogenic Fungi and Mycotoxins of Fujian Province, Key Laboratory of Biopesticide and Chemical Biology of Education Ministry, Proteomic Research Center, and School of Life Sciences, Fujian Agriculture and Forestry University Fuzhou China ([ROR:04kx2sy84](https://ror.org/04kx2sy84))
+2. Institute of Edible Mushroom, Fujian Academy of Agricultural Sciences Fuzhou China ([ROR:02aj8qz21](https://ror.org/02aj8qz21))
+3. College of Animal Sciences, Fujian Agriculture and Forestry University Fuzhou China ([ROR:04kx2sy84](https://ror.org/04kx2sy84))
+4. State Key Laboratory of Pathogen and Biosecurity, Institute of Microbiology and Epidemiology, Academy of Military Medical Sciences (AMMS) Beijing China ([ROR:02bv3c993](https://ror.org/02bv3c993))
 
 † Corresponding author
 
 ## Abstract
 
-The epigenetic reader SntB was identified as an important transcriptional regulator of growth, development, and secondary metabolite synthesis in Aspergillus flavus . However, the underlying molecular mechanism is still unclear. In this study, by gene deletion and complementation, we found SntB is essential for mycelia growth, conidial production, sclerotia formation, aflatoxin synthesis, and host colonization. Chromatin immunoprecipitation sequencing (ChIP-seq) and RNA sequencing (RNA-seq) analysis revealed that SntB played key roles in oxidative stress response of A. flavus , influencing related gene activity, especially catC encoding catalase. SntB regulated the expression activity of catC with or without oxidative stress, and was related to the expression level of the secretory lipase (G4B84_008359). The deletion of catC showed that CatC participated in the regulation of fungal morphogenesis, reactive oxygen species (ROS) level, and aflatoxin production, and that CatC significantly regulated fungal sensitive reaction and AFB1 yield under oxidative stress. Our study revealed the potential machinery that SntB regulated fungal morphogenesis, mycotoxin anabolism, and fungal virulence through the axle of from H3K36me3 modification to fungal virulence and mycotoxin biosynthesis. The results of this study shed light into the SntB-mediated transcript regulation pathways of fungal mycotoxin anabolism and virulence, which provided potential strategy to control the contamination of A. flavus and its aflatoxins.
+The epigenetic reader SntB was identified as an important transcriptional regulator of growth, development, and secondary metabolite synthesis in Aspergillus flavus. However, the underlying molecular mechanism is still unclear. In this study, by gene deletion and complementation, we found SntB is essential for mycelia growth, conidial production, sclerotia formation, aflatoxin synthesis, and host colonization. Chromatin immunoprecipitation sequencing (ChIP-seq) and RNA sequencing (RNA-seq) analysis revealed that SntB played key roles in oxidative stress response of A. flavus, influencing related gene activity, especially catC encoding catalase. SntB regulated the expression activity of catC with or without oxidative stress, and was related to the expression level of the secretory lipase (G4B84_008359). The deletion of catC showed that CatC participated in the regulation of fungal morphogenesis, reactive oxygen species (ROS) level, and aflatoxin production, and that CatC significantly regulated fungal sensitive reaction and AFB1 yield under oxidative stress. Our study revealed the potential machinery that SntB regulated fungal morphogenesis, mycotoxin anabolism, and fungal virulence through the axle of from H3K36me3 modification to fungal virulence and mycotoxin biosynthesis. The results of this study shed light into the SntB-mediated transcript regulation pathways of fungal mycotoxin anabolism and virulence, which provided potential strategy to control the contamination of A. flavus and its aflatoxins.
 
 ## Introduction
 
@@ -40,27 +40,61 @@ However, the specific regulatory mechanism of SntB in A. flavus remains unclear.
 
 ## Results
 
-## The phenotype of SntB in A. flavus
+### The phenotype of SntB in A. flavus
 
 The role of SntB in A. flavus has been previously characterized by analyzing both ΔsntB and overexpression of sntB genetic mutants (Pfannenstiel et al., 2018). To further investigate the intrinsic mechanism of this regulator on the development and aflatoxin biosynthesis in A. flavus, the sntB deletion strain (∆sntB) and the complementary strain (Com-sntB) were constructed by the method of homologous recombination and verified by diagnostic PCR (Figure 1—figure supplement 1A). The expression levels of sntB in wild-type (WT), ∆sntB, and Com-sntB strains was further detected by quantitative RT-PCR (qRT-PCR) and the result showed that the expression of sntB was absent in the gene-deletion strain, and it fully recovered in the Com-sntB strain (Figure 1—figure supplement 1B), which reflected that the ∆sntB and Com-sntB strains had been successfully constructed, and could be used in the subsequent experiments of this study.
 
 The phenotype analysis of this study revealed that the deletion of sntB gene significantly inhibited the growth of mycelium, hyphae morphology, the length of fungal cell (between two adjacent septa), the number of conidiation, sclerotium formation, and aflatoxin biosynthesis, while the above phenotypes of both development and mycotoxin biosynthesis were fully recovered in the Com-sntB strain (Figure 1). To reveal the signaling pathways of SntB in conidiation, sclerotium formation, and aflatoxin biosynthesis, qRT-PCR analysis was performed to assess the expression levels of sporulation-related transcriptional factor genes, steA, wetA, fluG, and veA, sclerotia formation-related transcriptional factor genes, nsdC, nsdD, and sclR (Cary et al., 2012; Yang et al., 2018), and the AFs synthesis gene cluster structural genes aflC, aflR, and aflP, and the main regulatory genes aflR and aflS. As shown in Figure 1—figure supplement 2, the relative expression levels of these genes were significantly lower in the ΔsntB strain compared to that of the WT strain, and recovered in the Com-sntB strain. These results indicated that SntB regulates the conidiation, sclerotium formation, and aflatoxin biosynthesis by the canonical signaling pathways mediated by these regulators.
 
-## SntB plays important roles in virulence of A. flavus to both plant and animal hosts
+![Figure 1.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig1-v1.jpg)
+
+**Figure 1.:** (A) The colonies of wild-type (WT), ΔsntB, and Com-sntB strains grown on potato dextrose agar (PDA) at 37°C in dark for 4 days. (B) The colony diameter statistics of the above fungal strains. (C) Microscopic examination revealed the difference in mycelia of each fungi strain at 37℃ in dark, scale=200 μm. (D) Microscopic examination of the hyphal septum of each strain at 37℃ in dark, scale=50 μm. (E) The spore production statistics. (F) All the above fungal strains were point-inoculated on CM medium and grown for 7 days at 37℃. (G) The number of sclerotia of the above fungal strains. ND=Not detectable. (H) AFB1 production of the above fungal strains was detected by TLC after the strains incubating at 29℃ in PDB medium for 7 days.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PCR verification of gDNA in wild-type (WT), ΔsntB, and Com-sntB strains (‘ORF’ represents the sntB gene fragment, ‘AP’ represents the amplification of the fusion fragment upstream with primers sntB-p1 and P801, and ‘BP’ represents the downstream of the fusion fragment from primers P1020 and sntB-p4). (B) Quantitative RT-PCR (qRT-PCR) verification of the expression level of the sntB gene in WT and sntB gene mutant strains.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The expression of sporulation-related genes steA, WetA, fluG, and veA in each strain at 48 hr. (B) The expression of sclerotia-associated genes nsdC, nsdD, and sclR in each strain at 48 hr. (C) The expression of aflatoxin-associated genes in each strain at 48 hr. The asterisk *** above the bars represents significantly different (p<0.001).
+
+### SntB plays important roles in virulence of A. flavus to both plant and animal hosts
 
 In order to explore the effect of SntB on the fungal colonization ability, peanut seeds and maize kernels were infected with spore solution of each fungal strain. Compared to WT, the conidiation yield of ΔsntB on the infected host was significantly reduced (p<0.001) and no AFB1 could be detected on the hosts infected by ΔsntB, while in the Com-sntB strain, the capacity to produce conidia and AFB1 on both crop kernels was recovered (Figure 2A–C and Figure 2—figure supplement 1A). The role of sntB in fungal virulence to animals was also investigated. As shown in Figure 2D and E, the survival rate of silkworms injected by spores of ΔsntB strain was significantly higher than that from WT infected larvae. There was less fungal mycelium, conidia, and AFB1 production on the dead silkworms injected by ΔsntB compared to the silkworms from the WT injection groups, but when the gene was reintroduced (i.e. the Com-sntB group), similar to what found in the WT group, the survival rate of silkworms obviously dropped and more fungal mycelium, conidia, and AFB1 produced on the dead silkworms (Figure 2F–H). All the above results revealed that SntB plays an essential role in virulence of A. flavus.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig2-v1.jpg)
+
+**Figure 2.:** (A) Phenotype of peanut and maize kernels colonized by ΔsntB, Com-sntB, and wild-type (WT) strains at 29°C in dark for 7 days. (B) Statistical of the number of conidia on the surface of peanut and maize kernels. (C) TLC analysis to detect the yield of AFB1 in kernels infected by the above fungal strains after 7 days incubation. (D) Photographs of the silkworms infected by the above fungal strains. (E) The survival rate of silkworms in 5 days after injection of the above strains. (F) Photographs of the dead silkworms infected by A. flavus after 6 days incubation. (G) The spore production statistics of the above fungal strains on the dead silkworms shown in (F). (H) TLC analysis of AFB1 levels produced in infected dead silkworms in (F).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Statistics of the number of conidia on the corn seed. (B) The phenotype of each strain on starch screening medium supplemented with 0.1% of soluble starch in darkness at 29°C for 3 days, followed by the addition of iodine solution. (C) HC value of the clear circle (outer diameter/inner diameter) of the salient analysis of the map. The asterisk ** above the bars represents significantly different (p<0.01).
+
 The capacity of fungal infection is closely related to secreted hydrolases, such as amylase, lipase, protease, etc. In order to explore the effect of SntB on the activity of hydrolases, the activities of amylase in the above each fungal strain were further determined. The results showed that the colonies of ΔsntB produced almost no degradation transparent circle after adding iodine solution compared with that of WT and Com-sntB, which indicated that the activity of α-amylase in ΔsntB strain was significantly reduced (p<0.001) (Figure 2—figure supplement 1B and C). This suggests that SntB plays an important role in the fungal pathogenicity by changing the hydrolases activity of A. flavus.
 
-## SntB chords global gene expression
+### SntB chords global gene expression
 
 To explore the downstream signaling pathways regulated by SntB, samples with three biological replicates of WT and ∆sntB strains were submitted for RNA-seq. In the assay, the bases score Q30 was more than 93.19% (Supplementary file 1a) and mapping ratio was from 95.17% to 95.80% (Supplementary file 1b). To further confirm the quality of RNA-seq, PCA and Pearson correlation analysis were performed. Correlation analysis revealed that the samples were clustered by groups (Figure 3A). A plot of PC1 (47.70%) and PC2 (23.20%) scores showed a clear separation between the groups (Figure 3B). A total of 1446 and 1034 genes were significantly up- and down-regulated, respectively, in the ∆sntB compared to the WT strain (Figure 3C and Supplementary file 1c). Gene ontology (GO) enrichment analysis identified 93 enriched GO terms (p<0.05) (Figure 3D and Supplementary file 1d). In the biological process category, the most enriched terms were ‘oxidation-reduction process (GO: 0055114)’. In the molecular function category, ‘catalytic activity (GO: 0003824),’ ‘oxidoreductase activity (GO: 0016491)’, and ‘cofactor binding (GO: 0048037)’ were the most significantly enriched terms. Whereas terms associated with ‘Set3 complex (GO: 0034967)’, ‘mitochondrial crista junction (GO: 0044284)’, and ‘extracellular region (GO: 0005576)’ were significantly enriched in the cellular component category. Additionally, all the DEGs were mapped according to the KEGG database, and 42 significantly enriched pathways were identified (p<0.05) (Supplementary file 1e). Among them, ‘metabolic pathways (ko01100)’, ‘aflatoxin biosynthesis (ko00254)’, and ‘microbial metabolism in diverse environments (ko01120)’ were the most significantly enriched (Figure 3E and Supplementary file 1e).
 
-## Characterization of the binding regions of SntB by ChIP-seq
+![Figure 3.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig3-v1.jpg)
+
+**Figure 3.:** (A) The Pearson correlation results shown by heatmap. (B) Principal component analysis (PCA) on six fungal samples, including three ΔsntB (KOsnt2) and three wild-type (WT) samples. (C) Volcano map reflecting the distribution of the differentially expressed genes. (D) Kyoto encyclopedia of genes and genomes (KEGG) analyses of the differentially expressed genes. (E) Gene ontology (GO) analyses of the differentially expressed genes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig3-figsupp1-v1.jpg)
+
+### Characterization of the binding regions of SntB by ChIP-seq
 
 To characterize the chromatin regions targeted by SntB, ChIP-seq were carried out with both HA tag fused sntB strain (sntB-HA) and WT strain. The sntB-HA strain was constructed by homologous recombination through fused HA to the 3’ end of sntB (Figure 4A). In the ChIP-seq assay, more than 94.66% of bases score Q30 and above in each sample (Supplementary file 1f), and reaching 52.50% to 94.48% of mapping ratio (Supplementary file 1g). The principal component analysis (PCA) (Figure 4—figure supplement 1A) and heatmap (Figure 4—figure supplement 1B) reflected that the quality of samples was competent for subsequent analysis. There were 1510 up-enriched differently accumulated peaks (DAPs) in sntB-HA fungal strain compared to the WT strain, which were distributed on the whole A. flavus genome (Figure 4B and Supplementary file 1h). Most of the up-enriched peaks were located in the promoter (82.85%) region (Figure 4C). To determine binding regions of SntB, we used the HOMER known and de novo motif discovery algorithm. Motifs were sorted based on p-values and the top 5 enriched known motifs were shown in Figure 4D. The results consisted of motifs derived from previously published ChIP-seq experiments on Cbf1, bHLHE40, NFY, Usf2, and USF1 (Supplementary file 1i). However, the most enriched de novo motif was NFYA (1e-97) (Figure 4E). The genes of the DAPs were further subjected to GO and KEGG analysis. The most strikingly enriched GO terms in the biological process category were ‘cell communication (GO:0007154)’, ‘response to stimulus (GO:0050896)’, and ‘response to external stimulus (GO:0009605)’. Whereas terms associated with ‘DNA-binding transcription factor activity (GO:0003700)’, ‘DNA-binding transcription factor activity, RNA polymerase II-specific (GO:0000981)’, and ‘sequence-specific DNA binding (GO:0043565)’ were the most significantly enriched molecular function category (Figure 4F and Supplementary file 1j). And these genes were mostly enriched in ‘Methane metabolism’ and ‘MAPK signaling pathway - yeast’ pathways (p-value<0.05) (Figure 4G and Supplementary file 1k).
 
-## Integration of the results of ChIP-seq and RNA-seq assays
+![Figure 4.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig4-v1.jpg)
+
+**Figure 4.:** (A) Verification of the construction of sntB-HA strain using western blot. M means the protein marker of PAGE-MASTER Protein Standard Plus (GenScript USA, MM1397). (B) The distribution of differently accumulated peaks on the genome. (C) Vennpie map of the differently accumulated peaks distribution on gene functional elements. (D) Enrichment of known motifs showing the top-ranked motif logos. (E) Enrichment of de novo motifs showing the top-ranked motif logos. (F) Gene ontology (GO) analyses of the differently accumulated peak-related genes. (G) Kyoto encyclopedia of genes and genomes (KEGG) analyses of the differently accumulated peak-related genes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heatmap. (B) Principal component analysis (PCA). (C) Peak distribution on the genome of SNTB-HA group. (D) Peak distribution on the genome of wild-type (WT) group.
+
+### Integration of the results of ChIP-seq and RNA-seq assays
 
 After overlapping the results from both different sequence methods (ChIP-seq and RNA-seq), 238 DEGs were found (Figure 5A). According to the GO annotation, these DEGs were significantly enriched in eight GO terms, including ‘cellular response to reactive oxygen species (GO:0034614)’, ‘reactive oxygen species metabolic process (GO:0072593)’, and ‘cellular response to oxygen-containing compound (GO:1901701)’ (Figure 5B). It was further noted that the DEGs were significantly assigned to ‘carbon metabolism (afv01200)’, ‘peroxisome (afv04146)’, and ‘glyoxylate and dicarboxylate metabolism (afv00630)’ KEGG pathways (Figure 5C and Supplementary file 1l and m). These results revealed that SntB is essential for A. flavus to maintain the homeostasis of intracellular reactive oxygen species (ROS). Studies had shown that SNTB could response to oxidative stress in yeast (Baker et al., 2013) and Magnaporthe oryzae (He et al., 2018). As Figure 5D and Figure 5E showed, due to the deletion of the sntB gene, ΔsntB exhibited a severe menadione sodium bisulfite (MSB) sensitivity phenotype compared to that of the WT strain, and the phenotype recovered in the complementary strain (Com-∆sntB). The results showed that the inhibition rate of oxidant MSB to ΔsntB would be significantly enhanced with the increase of MSB concentration, which showed that SntB deeply participates in the regulation of oxidative stress pathway. As the most abundant peroxisomal enzyme, catalases (CAT) catalyze decomposition of hydrogen peroxide (Okumoto et al., 2020). To further study the mechanism of SntB-mediated oxidative response of A. flavus, the catC (encode a catalase) gene was selected based on the above integration results. According to the peak map, the binding region of SntB on catC gene was significantly enriched in sntB-HA strains compared to WT strain (Figure 5F). The motif in the binding region was shown in Figure 5G and the sequence was TCCGCCCG. The relative expression levels of catC in WT and ∆sntB strains under MSB treatment were measured. As shown in Figure 5H, the expression level of catC was significantly higher in ∆sntB strain than in WT strain, it suggested that to compensate the absence of sntB, catC is up-regulated to respond the higher intracellular oxidative level. However, under the stress of oxidant MSB, the deletion of sntB obviously suppressed the expression level of catC compared to that of WT strain, which reflected that the absence of sntB significantly impaired the capacity of catC to further respond to extra external oxidative stress. These results revealed that SntB is deeply involved in CatC-mediated oxidative response in A. flavus.
 
@@ -68,17 +102,27 @@ After overlapping the results from both different sequence methods (ChIP-seq and
 
 **Figure 5.:** (A) Venn diagrams of ChIP-seq and RNA-seq. (B) Gene ontology (GO) analyses of the common genes. (C) Kyoto encyclopedia of genes and genomes (KEGG) analyses of the common genes. (D) The phenotype of wild-type (WT), ΔsntB, and Com-sntB strains cultured in PDA containing a series concentration of menadione sodium bisulfite (MSB) for 3 days. (E) Statistical analysis of the growth inhibition rate of MSB to all the above fungal strains according to Panel D. (F) Comparison of the enrich levels of the SntB binding region of catC gene between WT and sntB-HA strains. (G) The motif logo in the SntB binding region of catC gene. (H) The relative expression level of catC in WT and ΔsntB strains with or without MSB treatment.
 
-## CatC is important for A. flavus response to oxidative stress
+### CatC is important for A. flavus response to oxidative stress
 
 The functions of catC gene in A. flavus were further explored by knockout of the catC (Figure 6—figure supplement 1). As shown in Figure 6A–C, the diameter of ΔcatC strain was significantly smaller than that of WT, and the conidia number in the ΔcatC strain decreased significantly compared to that of WT. The sclerotia production of ΔcatC strain was also significantly less than that of WT strain (Figure 6D and E). In view of CatC is involved in the oxidative response pathways of A. flavus (Figure 4), both ΔcatC and WT strains were treated by a serial concentration of MSB, and the results showed that the inhibition rates of MSB in ΔcatC strain were significantly lower than that of WT (Figure 6F and G). Catalase is a major peroxisome protein and plays a critical role in removing peroxisome-generated ROS. The result of fluorescence intensity of oxidant-sensitive probe 6-carboxy-2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA) showed that ROS accumulation in the ΔcatC strain was higher than that in the WT strain (Figure 6H). This result echoed that the deletion of sntB increased intracellular oxidative level and the inhibition rate of MSB, and up-regulated the expression of catC (Figure 5D–F). The role of CatC in the biosynthesis of AFB1 was also assessed (Figure 6I). The results showed that a relatively large amount of AFB1 was produced by the ΔcatC strain compared to the WT. But when under the stress of MSB, AFB1 yield of the WT strain was significantly more than that of ΔcatC strain. All the above results revealed that the CatC plays an important role in SntB-mediated regulation pathway on fungal morphogenesis, oxidative stress responding, and AFB1 production.
 
-## SntB regulates fungal virulence through peroxidase-mediated lipolysis
+![Figure 6.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig6-v1.jpg)
+
+**Figure 6.:** (A) The colonies of wild-type (WT) and ΔcatC strains grown on potato dextrose agar (PDA) at 37°C in dark for 4 days. (B) The colony diameter statistics of the above fungal strains. (C) The spore production statistics of the above fungal strains. (D) All above fungal strains were point-inoculated on complete medium (CM) and grown for 7 days at 37°C. (E) The number of sclerotia of the above fungal strains. (F) The phenotype of above strains cultured on PDA medium containing a series concentration of menadione sodium bisulfite (MSB) for 3 days. (G) Statistical analysis of the growth inhibition rate of MSB to all the above fungal strains according to (F). (H) Relative reactive oxygen species (ROS) levels in the WT, ∆sntB, Com-sntB, and ∆catC strains. (I) AFB1 production of the above fungal strains was detected by TLC after the strains incubating at 29°C in potato dextrose (PDB) medium for 7 days.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig6-figsupp1-v1.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Comparison of the enrich levels of the SntB binding region of catA, catB, sod1, and sod2 genes between wild-type (WT) and sntB-HA strains. (B) The motif logo in the SntB binding region of catA, catB, sod1, and sod2 genes.
+
+### SntB regulates fungal virulence through peroxidase-mediated lipolysis
 
 Biogenesis of peroxisomes was reported to promote lipid hydrolysis, increase the production of glycerol, and further change fungal pathogenicity (Wang et al., 2023a). Since it is deeply involved in oxidative response of A. flavus, we wondered if SntB also takes part in the regulation of the production of lipid and glycerol. As shown in Supplementary file 1n, one gene (G4B84_008359) in lipase activity GO term was significantly down-regulated in ΔsntB strain, which encoded a secretory lipase belonged to the virulence factors reported in Pseudomonas aeruginosa (Papadopoulos et al., 2022). The lipase activity was also assayed by examining the ability to cleave glycerol tributyrate substrate (Sieber and Thummel, 2009). The results showed that the colony diameter of ΔsntB strain on PDA medium with tributyrin were significantly smaller than that of the control, and the colony diameters of WT and Com-sntB strains on PDA medium were obviously bigger than those on 0.3% tributyrin PDA medium. The relative inhibition rate of tributyrin to the colony growth of ΔsntB strains was significantly higher than that of WT and Com-sntB strain (Figure 7A and B). Our previous study revealed that H3 lysine 36 trimethylation (H3K36me3) modification on the chromatin region of the sntB is regulated by AshA and SetB (Zhuang et al., 2022). H3K36me3 usually promote gene transcription (Zhao et al., 2019; Kooistra and Helin, 2012). Our study revealed the potential machinery associated with SntB-mediated regulation on fungal morphogenesis, mycotoxin anabolism, and fungal virulence, which lurks the axle of from SntB to fungal virulence and mycotoxin biosynthesis through lipid catabolism (i.e. H3K36me3 modification-SntB-Peroxisomes-Lipid hydrolysis-fungal virulence and mycotoxin biosynthesis).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/94743/elife-94743-fig7-v1.jpg)
 
-**Figure 7.:** A. flavus.(A) The phenotype of each strain on PDA medium containing 0.3% tributyrin. (B) Statistics of inhibition rates. The asterisk *** above the bars represents significantly different (p<0.001). (C) Mechanistic diagram of the bio-functions of SntB in A. flavus.
+**Figure 7.:** (A) The phenotype of each strain on PDA medium containing 0.3% tributyrin. (B) Statistics of inhibition rates. The asterisk *** above the bars represents significantly different (p<0.001). (C) Mechanistic diagram of the bio-functions of SntB in A. flavus.
 
 ## Discussion
 
@@ -102,46 +146,390 @@ Overall, we explored and clarified the bio-function of the SntB and found that S
 
 ## Materials and methods
 
-## A. flavus strains, media, and culture conditions
+### A. flavus strains, media, and culture conditions
 
 A. flavus Δku70 ΔpyrG was used as a host strain, for genetic manipulations. All strains used in this study are listed in Table 1. Potato dextrose agar (PDA, 39 g/L, BD, Difco, Franklin, NJ, USA), complete medium (CM, 6 g/L tryptone, 6 g/L yeast extract, 10 g/L glucose), and potato dextrose (PDB, 24 g/L, BD, Difco, Franklin, NJ, USA) were used for mycelial growth and sporulation determination, sclerotia production, and mycotoxin production analysis, respectively. All experiments were technically repeated three times and biologically repeated three times.
 
-## The construction of mutant strains
+**Table 1.**
+ A. flavus strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Related genotype</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A. flavus CA14</td>
+      <td>Δku70, ΔpyrG</td>
+      <td>Kindly presented from Prof. Chang (Chang et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Wild-type (WT)</td>
+      <td>Δku70, ΔpyrG::AfpyrG</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔsntB</td>
+      <td>Δku70, ΔsntB::AfpyrG</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Com-sntB</td>
+      <td>∆ku70, ΔpyrG; ∆sntB::AfpyrG:: sntB</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>sntB-HA</td>
+      <td>Δku70, sntB-HA::AfpyrG</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔcatC</td>
+      <td>Δku70, ΔcatC::AfpyrG</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### The construction of mutant strains
 
 All mutant strains, including sntB and catC gene knock-out strain (ΔsntB and ΔcatC), the complementation strain for the ΔsntB strain (Com-sntB), and HA tag fused to sntB strain (sntB-HA), were constructed following the protocol of homologous recombination (Zhuang et al., 2022) and the detail protocol was as described in our previous study (Pan et al., 2023). The related primers were listed in Table 2. The constructed strains were confirmed by diagnostic PCRs (Hu et al., 2018). The construction of sntB-HA was further determined by western blot with anti-HA antibody (MCE, YA3393) as described previously (Pan et al., 2023).
 
-## Phenotypic analysis and aflatoxin analysis
+**Table 2.**
+ Primers used for strain construction in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence (5’ → 3’)</th>
+      <th>Fragment amplified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sntB-p1</td>
+      <td>CTTCTCGAATTCCCCTTCATGACACTCTCC</td>
+      <td>For the construction of knock-out strain</td>
+    </tr>
+    <tr>
+      <td>sntB-p2</td>
+      <td>GCTAAATCAGGATGGGTTGGAGGGTGAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-p3</td>
+      <td>GCATCTCCTTTGTGTTGTTTGGACCGTGT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-p4</td>
+      <td>CAACCAACCACTGACGTCGACCAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-p5</td>
+      <td>GTCACCCTCCAACCCATCCTGATTTAGCGCCTCAAACAATGCTCTTCACCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-p6</td>
+      <td>ACACGGTCCAAACAACACAAAGGAGATGCGTCTGAGAGGAGGCACTGATGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-p7</td>
+      <td>TAGATCACCCAGCGGGCCACAA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-p8</td>
+      <td>GACTCAAATGGAAATCCCGTCGTGCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-F</td>
+      <td>GCAGCAACACCACGTGAGGCCCAATTC</td>
+      <td>A fragment from sntB ORF</td>
+    </tr>
+    <tr>
+      <td>sntB-R</td>
+      <td>CCAGGTCACAGGGCATAGAACACACTCGTA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P1020-F</td>
+      <td>ATCGGCAATACCGTCCAGAAGC</td>
+      <td>Verify the fragment of AfpyrG</td>
+    </tr>
+    <tr>
+      <td>P801-R</td>
+      <td>CAGGAGTTCTCGGGTTGTCG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-C-p2</td>
+      <td>GGGTGAAGAGCATTGTTTGAGGCCCTCCAACCTTACTCCGTACACAATTCTAG</td>
+      <td>For the construction of complementary strain of sntB</td>
+    </tr>
+    <tr>
+      <td>sntB-C-p3</td>
+      <td>GCATCAGTGCCTCCTCTCAGACGGCACGACGGGATTTCCATTTGAGTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-C-p4</td>
+      <td>CCAATTTCCTGATGATTGTGATGTGTGTCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC-P-F</td>
+      <td>GCCTCAAACAATGCTCTTCACCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC-P-R</td>
+      <td>GTCTGAGAGGAGGCACTGATGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sntB-HA-P1</td>
+      <td>GAGATTTATCGACGACTATATGGC</td>
+      <td>For the construction of HA tag fused strain of sntB</td>
+    </tr>
+    <tr>
+      <td>sntB-HA-P2</td>
+      <td>TGAACCTCCGCCACCACTACCTCCGCCACCAGAGAGTAAATTCTTGAGAGATGGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HA-linker-pyrG-F</td>
+      <td>TGGCGGAGGTAGTTACCCATACGACGTCCCAGACTACGCTTACCCATACGACGTCCCAGACTACGCTTACCCATACGACGTCCCAGACTACGCTTGAGCCTCAAACAATGCTCTTCACCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>catC-P1</td>
+      <td>CTTGAGACGCAGGACGAA</td>
+      <td>For the construction of knock-out strain of catC</td>
+    </tr>
+    <tr>
+      <td>catC-P2</td>
+      <td>GGGTGAAGAGCATTGTTTGAGGCTGATGTGGGTTGTATGAATG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>catC-P3</td>
+      <td>GCATCAGTGCCTCCTCTCAGACTGGATGCGGGTGAATACTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>catC-P4</td>
+      <td>ACAAGCTGTCATGCGTGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>catC-P5</td>
+      <td>TGGGAGTCTCGAACACAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>catC-P6</td>
+      <td>GAAAACCCCGCAACAGAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>catC-F</td>
+      <td>AGCCTATTTCGGACCCCT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>catC-R</td>
+      <td>CAGTCTCCTTTCGGCATC</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Phenotypic analysis and aflatoxin analysis
 
 The spores (107 conidia/mL) of WT, ΔsntB, and Com-sntB strains were used. The details of the experiment were according to our previous study (Pan et al., 2023). Hyphal septum was stained according to the described method (Kaminskyj, 2000). Each fungal strain was evaluated on four plates, and each experiment was repeated three times.
 
-## Fungal colonization on crop kernels
+### Fungal colonization on crop kernels
 
 According to our previous experimental protocol (Pan et al., 2023), the colonizing ability of WT, ΔsntB, and Com-sntB fungal strains on peanut and corn kernels was analyzed. The crop kernels were disinfected with 0.05% sodium hypochlorite and soaked for 30 min in a solution containing 105 conidia/mL fungal spores. Afterward, the seeds were placed in a Petri dish and cultured at 29°C for 6 days. Finally, the number of conidia was calculated and AFB1 product was analyzed by TLC.
 
-## Animal invasion assay
+### Animal invasion assay
 
 The animal invasion assay using silkworms (Bombyx mori) was conducted according to our previous study (Zhuang et al., 2022; Zhang et al., 2021). Silkworms were randomly separated into four groups (10 larvae/group) when silkworm larva reach about 1 g in weight. Each silkworm was injected with 5 µL saline, or 5 µL conidial suspension (106 spores/mL) from WT, ΔsntB, and Com-sntB strains. The survival rate of silkworms was calculated. Dead silkworms were transferred into fresh 9 cm Petri dishes and cultivated for 5 days in the dark. The conidia number and AFB1 production from each group were measured.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 To reveal the potential complex regulatory network of the sntB, RNA-seq analysis was carried out on the WT and ΔsntB strains by Applied Protein Technology, Shanghai (https://www.aptbiotech.com) (Wen et al., 2022). Data processing was according to a previous study (Hao et al., 2023). Differentially expressed genes (DEGs) were assigned as genes with |log2FoldChange|>1 and adjusted p-adj<0.05. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways were used to analyze the functions of DEGs.
 
-## ChIP-seq and data analysis
+### ChIP-seq and data analysis
 
 ChIP-seq analysis was carried out on the WT and sntB-HA strains. The conidia (104/mL) of each strain were inoculated in 100 mL PDB shaking at 180 rpm under 29°C for 72 hr, and subjected to ChIP-seq analysis by Wuhan IGENEBOOK Biotechnology Co., Ltd (http://www.igenebook.com). ChIP experiment was carried out according to a previous study (Zhuang et al., 2022). Raw sequencing with low-quality reads were discarded, and reads contaminated with adaptor sequences trimmed were filtered by Trimmomatic (v0.36) (Liao et al., 2014). The clean reads were mapped to the reference genome of A. flavus by Burrows-Wheeler Alignment tool (BWA, v0.7.15) (Li and Durbin, 2009). MACS2 (v2.1.1) and Bedtools (v2.25.0) were used for peak calling and peak annotation, respectively. Differential binding peaks were identified by Fisher’s test with q-value<0.05. HOMER (v3) was used to predict motif occurrence within peaks with default settings for a maximum motif length of 12 base pairs (Hull et al., 2013). Genes less than 2000 bp away were associated with the corresponding peak. GO and KEGG enrichment analyses of annotated genes were implemented in EasyGO (Zhou and Su, 2007) and KOBAS (v2.1.1) (Xie et al., 2011), with a corrected p-value cutoff of 0.05.
 
-## qRT-PCR analysis
+### qRT-PCR analysis
 
 The fungal spores (106/mL) were cultured in PDB medium for 48 hr, and then mycelium was ground into powder with liquid nitrogen. Total RNA was prepared by TRIpure total RNA Extraction Reagent (Bestek, China) according to the protocol used by Zhang (Mengjuan et al., 2021). qRT-PCR was performed according to a previous study (Hu et al., 2018), and the primers were shown in Table 3.
 
-## Oxidative stress assays
+**Table 3.**
+ Primers used for RT-qPCR in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence (5’ → 3’)</th>
+      <th>Fragment amplified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sntB-qF</td>
+      <td>ACTCATCAGAGCCCCTATGGGCCAGTC</td>
+      <td rowspan="8"></td>
+    </tr>
+    <tr>
+      <td>sntB-qR</td>
+      <td>GCACTAAGAACGCGATCGACAGAATAGACAC</td>
+    </tr>
+    <tr>
+      <td>catC-qF</td>
+      <td>GAAAGAGTTGTCCATGCCA</td>
+    </tr>
+    <tr>
+      <td>catC-qR</td>
+      <td>CAGAAAACGGGTGTGTGAT</td>
+    </tr>
+    <tr>
+      <td>brlA-F</td>
+      <td>GCCTCCAGCGTCAACCTTC</td>
+    </tr>
+    <tr>
+      <td>brlA-R</td>
+      <td>TCTCTTCAAATGCTCTTGCCTC</td>
+    </tr>
+    <tr>
+      <td>abaA-F</td>
+      <td>TCTTCGGTTGATGGATGATTTC</td>
+    </tr>
+    <tr>
+      <td>abaA-R</td>
+      <td>CCGTTGGGAGGCTGGGT</td>
+    </tr>
+    <tr>
+      <td>nsdC-F</td>
+      <td>GCCAGACTTGCCAATCAC</td>
+      <td rowspan="6">Sclerotium-related genes</td>
+    </tr>
+    <tr>
+      <td>nsdC-R</td>
+      <td>CATCCACCTTGCCCTTTA</td>
+    </tr>
+    <tr>
+      <td>nsdD-F</td>
+      <td>GGACTTGCGGGTCGTGCTA</td>
+    </tr>
+    <tr>
+      <td>nsdD-R</td>
+      <td>AGAACGCTGGGTCTGGTGC</td>
+    </tr>
+    <tr>
+      <td>sclR-F</td>
+      <td>CAATGAGCCTATGGGAGTGG</td>
+    </tr>
+    <tr>
+      <td>sclR-R</td>
+      <td>ATCTTCGCCCGAGTGGTT</td>
+    </tr>
+    <tr>
+      <td>aflC-F</td>
+      <td>GTGGTGGTTGCCAATGCG</td>
+      <td rowspan="6">Toxin synthesis structure genes</td>
+    </tr>
+    <tr>
+      <td>aflC-R</td>
+      <td>CTGAAACAGTAGGACGGGAGC</td>
+    </tr>
+    <tr>
+      <td>aflP-F</td>
+      <td>CGATGTCTATCTTCTCCGATCTATTC</td>
+    </tr>
+    <tr>
+      <td>aflP-R</td>
+      <td>TCTCAGTCTCCAGTCTATTATCTACC</td>
+    </tr>
+    <tr>
+      <td>aflO-F</td>
+      <td>CTTTCGGCAGTGACCTAACC</td>
+    </tr>
+    <tr>
+      <td>aflO-R</td>
+      <td>TCTTGAACTATAAGGCGACCA</td>
+    </tr>
+    <tr>
+      <td>aflR-F</td>
+      <td>AAAGCACCCTGTCTTCCCTAAC</td>
+      <td rowspan="4">Toxin synthesis regulatory genes</td>
+    </tr>
+    <tr>
+      <td>aflR-R</td>
+      <td>GAAGAGGTGGGTCAGTGTTTGTAG</td>
+    </tr>
+    <tr>
+      <td>aflS-F</td>
+      <td>GCTCAGACTGACCGCCGCTC</td>
+    </tr>
+    <tr>
+      <td>aflS-R</td>
+      <td>GCTCAGACTGACCGCCGCTC</td>
+    </tr>
+    <tr>
+      <td>18S rRNA-F</td>
+      <td>CTGAAGACTAACTACTGCGAAAGC</td>
+      <td rowspan="4">RNA extraction quality testing</td>
+    </tr>
+    <tr>
+      <td>18S rRNA-R</td>
+      <td>GAGCGGGTCATCATAGAAACAC</td>
+    </tr>
+    <tr>
+      <td>β-tublin-F</td>
+      <td>TTGAGCCCTACAACGCCACT</td>
+    </tr>
+    <tr>
+      <td>β-tublin-R</td>
+      <td>TGGTTCAGGTCACCGTAAGAGG</td>
+    </tr>
+    <tr>
+      <td>actin-F</td>
+      <td>ACGGTGTCGTCACAAACTGG</td>
+      <td rowspan="2">Internal reference gene</td>
+    </tr>
+    <tr>
+      <td>actin-R</td>
+      <td>CGGTTGGACTTAGGGTTGATAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Oxidative stress assays
 
 To evaluate the role of SntB in fungal resistance to oxidative stress, a series concentration (0, 0.12, 0.24, and 0.36 mM) of MSB were added to the medium. 106 fungal spores for each strain were inoculated on the medium and cultured in dark at 37°C. The diameters of colonies were measured 3 days after inoculation and the inhibition rate was calculated as previously described (Pan et al., 2023). The AFB1 product was analyzed by TLC after the strains were cultured in YES medium in dark at 29°C for 7 days.
 
-## ROS assay
+### ROS assay
 
 With the instructions provided in the user’s manual, the intracellular ROS production was measured using a ROS assay kit (S0033S, Beyotime Institute of Biotechnology, China). After harvest, the mycelia were incubated with 10 µM DCFH-DA and 50 g/mL Rosup for 30 min. With SpectraMax Imaging Cytometer (Molecular Devices, Sunnyvale, CA, USA) at emission wavelength of 525 nm and excitation wavelength of 488 nm, then fluorescence signals of intracellular ROS production were acquired.
 
-## Statistical analysis
+### Statistical analysis
 
 All data in this study were expressed as mean ± standard deviation. The statistical analysis was performed using the software GraphPad Prism8 (GraphPad Software, La Jolla, CA, USA). The difference was considered to be statistically significant when p<0.05.

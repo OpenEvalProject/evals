@@ -18,13 +18,13 @@
 
 ### Affiliations
 
-1. https://ror.org/022k4wk35 State Key Laboratory of Cognitive Neuroscience and Learning & IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China
-2. https://ror.org/022k4wk35 School of Artificial Intelligence, Beijing Normal University Beijing China
-3. https://ror.org/006thab72 Department of Psychology, Medical School Hamburg Hamburg Germany
-4. https://ror.org/006thab72 ICAN Institute for Cognitive and Affective Neuroscience, Medical School Hamburg Hamburg Germany
-5. https://ror.org/04tsk2644 Institute of Cognitive Neuroscience, Biopsychology, Faculty of Psychology, Ruhr University Bochum Bochum Germany
-6. https://ror.org/022k4wk35 Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University Beijing China
-7. https://ror.org/029819q61 Chinese Institute for Brain Research Beijing China
+1. State Key Laboratory of Cognitive Neuroscience and Learning & IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+2. School of Artificial Intelligence, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+3. Department of Psychology, Medical School Hamburg Hamburg Germany ([ROR:006thab72](https://ror.org/006thab72))
+4. ICAN Institute for Cognitive and Affective Neuroscience, Medical School Hamburg Hamburg Germany ([ROR:006thab72](https://ror.org/006thab72))
+5. Institute of Cognitive Neuroscience, Biopsychology, Faculty of Psychology, Ruhr University Bochum Bochum Germany ([ROR:04tsk2644](https://ror.org/04tsk2644))
+6. Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+7. Chinese Institute for Brain Research Beijing China ([ROR:029819q61](https://ror.org/029819q61))
 
 † Corresponding author
 
@@ -50,21 +50,144 @@ Two experienced raters manually delineated PT and determined the HG gyrification
 
 As shown in Table 1, the manual operation showed excellent interrater reliability and imaging test-retest reproducibility for all PT measures. Among these young adults, left and right HG duplications were identified in 229 and 263 subjects, respectively (occurrence rate: left, 25.3%, right, 29.0%). In terms of the HG gyrification pattern in both hemispheres, all subjects were divided into four groups: 503 individuals with bilateral sHGs (L1/R1, 55.5%), 175 individuals with left sHG but right dHG (L1/R2, 19.3%), 141 individuals with left dHG but right sHG (L2/R1, 15.6%), and 88 individuals with bilateral dHGs (L2/R2, 9.7%). Age and sex did not differ among these four groups (Table 2).
 
+**Table 1.**
+ The reliability of planum temporale (PT) measures from manually delineated PT.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Reliability</th>
+      <th>Interrater ICC(N=20)</th>
+      <th>Imaging test-retest ICC(N=43)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">PT functional activation</td>
+      <td>Speech perception</td>
+      <td>0.99</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>Speech comprehension</td>
+      <td>0.99</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td rowspan="5">PT structural measures</td>
+      <td>Surface area</td>
+      <td>0.85</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Thickness</td>
+      <td>0.97</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>Myelin content</td>
+      <td>0.98</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>NDI</td>
+      <td>0.99</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>ODI</td>
+      <td>0.96</td>
+      <td>0.86</td>
+    </tr>
+  </tbody>
+</table>
+
+_ICC, intraclass correlation coefficient; PT, planum temporale; NDI, neurite density index; ODI, orientation dispersion index._
+
+**Table 2.**
+ The distribution of Heschl's gyrus (HG) gyrification patterns.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Type of HG gyrification pattern</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>L1/R1</th>
+      <th>L1/R2</th>
+      <th>L2/R1</th>
+      <th>L2/R2</th>
+      <th>Group difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Subject number</td>
+      <td>503</td>
+      <td>175</td>
+      <td>141</td>
+      <td>88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (mean±SD)</td>
+      <td>28.8±3.7</td>
+      <td>28.8±3.8</td>
+      <td>29.2±3.6</td>
+      <td>28.1±3.6</td>
+      <td>p=0.19</td>
+    </tr>
+    <tr>
+      <td>Sex (F/M)</td>
+      <td>275/228</td>
+      <td>96/79</td>
+      <td>83/58</td>
+      <td>55/33</td>
+      <td>p=0.49</td>
+    </tr>
+  </tbody>
+</table>
+
 The differences in age and sex distribution across the four groups were evaluated using one-way ANOVA and the Kruskal-Wallis test, respectively. HG, Heschl’s gyrus. L1/R1, single HG on the left and single HG on the right; L1/R2, single HG on the left and duplicated HG on the right; L2/R1, duplicated HG on the left and single HG on the right; L2/R2, duplicated HG on the left and duplicated HG on the right. F, female; M, male.
 
 For each subject, fMRI activation of the left and right PT during an auditory-language comprehension task was estimated. Both left and right PTs showed significant group-level activation for all three contrasts (i.e. ‘story – baseline,’ ‘math – baseline,’ and ‘story – math’) within the task (Figure 2—figure supplement 1), indicating a strong functional involvement of both PTs in such auditory-language processing. Factor analysis of the activation T values of the three contrasts revealed two factors in each hemisphere: one representing PT functional activation of speech perception and the other representing PT functional activation of speech comprehension.
 
 We evaluated the correlation of functional and structural measures of the left and right PT with two available behavioral language test scores (the oral reading recognition test, measuring the ability to reade decoding; the picture vocabulary test, measuring the ability of linguistic comprehension), but found no significant results (all PFWE >0.05).
 
-## PT functional and structural asymmetries at the group level
+### PT functional and structural asymmetries at the group level
 
 For each of the four groups above, PT functional lateralization of speech perception and comprehension activation were evaluated while controlling for age, gender, and brain size. As shown in Figure 2, significant leftward PT lateralization was observed for both speech perception and comprehension in the L1/R1 (Cohen’s d: speech perception = 0.35, speech comprehension = 0.36) and L1/R2 (Cohen’s d: speech perception = 0.52, speech comprehension = 0.57) groups but not in the L2/R1 and L2/R2 groups (Supplementary file 1a), suggesting a specific influence of the HG gyrification pattern on speech-related functional lateralization of the PT. For each hemisphere, we further compared these PT activations between subjects with sHG and dHG. The results showed that HG duplication was largely accompanied by decreased functional activation in the ipsilateral PT, and the degree of such a decrease varied between the left and right PTs (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95547/elife-95547-fig2-v1.jpg)
+
+**Figure 2.:** For each group, a linear mixed model (LME) was used to test the hemispheric asymmetry of each PT functional activation. ‘Hemisphere’ was the fixed effect, asymmetry index was the response variable, age, and sex, and total brain volume were covariates. L1/R1, single HG on the left and single HG on the right; L1/R2, single HG on the left and duplicated HG on the right; L2/R1, duplicated HG on the left and single HG on the right; L2/R2, duplicated HG on the left and duplicated HG on the right. * denotes a significant difference between left and right PTs (i.e. PFWE <0.05). Positive and negative values of the asymmetry index represent leftward and rightward asymmetry, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95547/elife-95547-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) The group Cohen’s D effect size maps, show vertices with a medium effect size (Cohen’s D>0.4). (b) Group T statistic maps from the Permutation Analysis of Linear Models (PALM), showing vertices with T>10. There were three contrasts between task conditions from this task: ‘story – baseline,’ ‘math – baseline,’ and ‘story – math.’ Statistical maps were generated from 997 subjects with quantified fMRI data. A white rectangle is placed around the planum temporale (PT). As shown, bilateral PTs were successfully activated under the three contrasts.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95547/elife-95547-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The PT functional activation of the two groups was compared using two-sample t-tests after controlling for age, sex, and hemispheric brain volume (ICV). sHG, single Heschl’s gyrus; dHG, duplicated Heschl’s gyrus; ns, non-significant. Nonsignificant differences (PFWE >0.05) are colored gray. Cohen’s d values are listed in Supplementary file 1j.
+
 Similar analyses were applied to PT structural measures, i.e., surface area, thickness, myelin content, NDI, and ODI. As shown in Figure 3, ODI and cortical thickness showed consistent leftward and rightward asymmetry across all 4 groups, suggesting a minimal influence of the HG gyrification pattern on the group-level PT asymmetry of these particular measures. In contrast, there was the more or less confounding influence of the HG gyrification pattern on the PT asymmetry of the other four structural measures. Specifically, we observed (1) significant leftward asymmetry of PT surface area in the L1/R1, L1/R2, and L2/R2 groups (Cohen’s d: L1/R1 = 0.42, L1/R2 = 1.48, L2/R2 = 0.73) but no asymmetry in the L2/R1 group; (2) significant leftward and rightward asymmetry of PT myelin content only in the L1/R2 and L2/R1 groups (Cohen’s d: L1/R2 = 0.58, L2/R1 = –0.68); and (3) significant leftward NDI asymmetry in the L1/R2 group (Cohen’s d: L1/R2 = 0.40) but rightward NDI asymmetry in both the L1/R1 and L2/R1 groups (Cohen’s d: L1/R1 = –0.21, L2/R1 = –0.48) (Supplementary file 1a). In addition, the comparison of these PT structural measures between subjects with sHG and dHG indicated that HG duplication was accompanied by a decrease in surface area, myelin content, NDI, and ODI of the ipsilateral PT, with the left and right PT also showing variable degrees of such a decrease (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95547/elife-95547-fig3-v1.jpg)
+
+**Figure 3.:** For each group, a linear mixed model (LME) was used to test the hemispheric asymmetry of each PT structural measure. “Hemisphere” was the fixed effect, and the asymmetry index was the response variable. Age, sex, and total brain volume were covariates. Notably, we did not standardize these structural measures, so the scales differed between indicators. L1/R1, single HG on the left and single HG on the right; L1/R2, single HG on the left and duplicated HG on the right; L2/R1, duplicated HG on the left and single HG on the right; L2/R2, duplicated HG on the left and duplicated HG on the right. NDI, neurite density index; ODI, orientation dispersion index. * denotes a significant difference between left and right PTs (PFWE <0.05). Positive and negative values of the asymmetry index represent leftward and rightward asymmetry, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95547/elife-95547-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The PT structural measures of the two groups were compared using two-sample t-tests after controlling for age, sex, and hemispheric brain volume (ICV). sHG, single Heschl’s gyrus; dHG, duplicated Heschl’s gyrus. Nonsignificant differences (PFWE >0.05) are colored gray. NDI, neurite density index; ODI, orientation dispersion index; ns, non-significant. Cohen’s d values are listed in Table.
 
 We also evaluated whether functional and structural PT asymmetries correlate with the two behavioral language test scores. The AI of PT speech comprehension activation was found significantly correlated with picture vocabulary test scores (R = 0.10, PFWE = 0.047). No any other correlation was observed.
 
-## Structure-function associations of PT asymmetries at the individual level
+### Structure-function associations of PT asymmetries at the individual level
 
 For each functional or structural PT measure, an asymmetry index (AI) was calculated for each subject. For each functional-structural pair of PT measures (2 × 5 pairs in total), we evaluated the interindividual correlation of their AIs with consideration of the HG gyrification pattern (including a group factor, i.e., L1/R1, L1/R2, L2/R1, or L2/R2), while controlling for age, gender, and brain size. No significant group effect (i.e. the interaction with the HG gyrification pattern in the general linear model) was observed for any functional-structural AI pair.
 
@@ -72,17 +195,17 @@ As shown in Figure 4, among these functional-structural pairs, the functional AI
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95547/elife-95547-fig4-v1.jpg)
 
-**Figure 4.:** For each pair of correlations, a general linear model (GLM) was used. ‘Functional AI’ was the response variable and ‘structural AI,’ ‘group,’ and ‘structural AI × group’ were predictor variables. Age, sex, and total brain volume were covariates. The scatter plots for nonsignificant correlations (P >0.05) are colored gray. AI, asymmetry index; NDI, neurite density index; ODI, orientation dispersion index; ns, non-significant.FWE
+**Figure 4.:** For each pair of correlations, a general linear model (GLM) was used. ‘Functional AI’ was the response variable and ‘structural AI,’ ‘group,’ and ‘structural AI × group’ were predictor variables. Age, sex, and total brain volume were covariates. The scatter plots for nonsignificant correlations (PFWE >0.05) are colored gray. AI, asymmetry index; NDI, neurite density index; ODI, orientation dispersion index; ns, non-significant.
 
-## Within-hemispheric PT structure-function associations at the individual level
+### Within-hemispheric PT structure-function associations at the individual level
 
 In addition to PT functional and structural AIs, we evaluated the correlations between PT functional and structural measures of each hemisphere separately, while controlling for age, gender, and brain size (Figure 5). For speech perception, functional activation correlated positively with myelin content and ODI for either the left (myelin content: R = 0.16, PFWE = 6.47 × 10–5; ODI: R = 0.17, PFWE = 2.88 × 10–5) or right PT (myelin content: R = 0.20, PFWE = 1.30 × 10–7; ODI: R = 0.18, PFWE = 7.18 × 10–6), regardless of the HG gyrification pattern. The permutation test, however, showed no significant difference in the degree of functional-structural correlations between the left and right PTs. Moreover, speech perception activation showed significant correlations with surface area (R = –0.11, PFWE = 2.33 × 10–2) and NDI (R = 0.14, PFWE = 2.16 × 10–3) for the right PT but not the left PT. Regarding speech comprehension, functional activation significantly correlated with myelin content for the right PT (R = 0.16, PFWE = 2.59 × 10–5) but not the left PT. We also observed a significant correlation between functional activation of speech comprehension and NDI for the left PT (R = –0.12, PFWE = 1.62 × 10–2) but not the right PT.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/95547/elife-95547-fig5-v1.jpg)
 
-**Figure 5.:** For each pair of correlations, a general linear model (GLM) was used. ‘Functional measure’ was the response variable and ‘structural measure,’ ‘group,’ and ‘structural measure × group’ were predictor variables. Age, sex, and hemispheric brain volume were covariates. The scatter plots for nonsignificant correlations (P >0.05) are colored gray. NDI, neurite density index; ODI, orientation dispersion index; ns, non-significant.FWE
+**Figure 5.:** For each pair of correlations, a general linear model (GLM) was used. ‘Functional measure’ was the response variable and ‘structural measure,’ ‘group,’ and ‘structural measure × group’ were predictor variables. Age, sex, and hemispheric brain volume were covariates. The scatter plots for nonsignificant correlations (PFWE >0.05) are colored gray. NDI, neurite density index; ODI, orientation dispersion index; ns, non-significant.
 
-## Specificity of the observed PT structure-function associations
+### Specificity of the observed PT structure-function associations
 
 For the included subjects, another six task-based fMRI scans were acquired. To test whether the observed PT functional-structural couplings above are specific to auditory-language processing, we further estimated left and right PT activation of the main contrast from each of these tasks as well as their AI of PT activation, and then repeated all PT coupling analyses for these tasks. As shown in Supplementary file 1b-1e, there were only very few significant correlations among the PT functional-structural pairs, therefore, supporting the specificity of our currently observed PT functional-structural couplings to the functional activation of auditory-language processing.
 
@@ -110,17 +233,17 @@ In conclusion, the association between specific PT functional and microstructura
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 In the present study, all participants of the human connectome project (HCP young adult, S1200 release) were included. The project was reviewed and approved by the Institutional Ethics Committee of Washington University in St. Louis, Missouri. The HCP young adult cohort consists of healthy individuals without neurodevelopmental, neuropsychiatric, or neurologic disorders. All participants signed written informed consent forms. For more details about the data access authority and ethical approval, please refer to Van Essen et al., 2013; Van Essen et al., 2012.
 
 Due to quality issues (quality control codes A and B from the HCP minimal preprocessing pipeline), 72 subjects were excluded. To control for the potential confounding effect of handedness, we included only qualified right-handed subjects (907 in total, Edinburgh Handedness questionnaire >20) in the analysis.
 
-## Behavioral language test
+### Behavioral language test
 
 Two behavioral language tests in the NIH toolbox were applied to HCP individuals: the oral reading recognition test (ORRT, measuring the ability to reade decoding) and the picture vocabulary test (PVT, measuring the ability of linguistic comprehension). Given the well-documented role of PT in language processing as well as the previously reported association of PT with language performance (Blau et al., 2010; Liem et al., 2014; Tzourio-Mazoyer and Mazoyer, 2017), whether and how PT measures and their asymmetries correlate with these two language test scores were evaluated. Specifically, the age-adjusted scores for these two language tests were used in the current study.
 
-## MRI acquisition and preprocessing
+### MRI acquisition and preprocessing
 
 MRI data of all subjects were collected using the same 3T Siemens Skyra magnetic resonance machine at Washington University in St. Louis with a 32-channel head coil (Van Essen et al., 2012). Briefly, T1-weighted images were acquired by using a magnetized rapid gradient-echo imaging (MPRAGE) sequence with the following parameters: repetition time (TR) = 2400 ms, echo time (TE) = 2.14 ms, reversal time (TI) = 1000 ms, flip angle (FA) = 8°, field of view (FOV) = 224 × 224 mm2, voxel size 0.7 mm isotropic. T2-weighted images were acquired using the variable flip angle turbo spin-echo (SPACE) sequence with the following parameters: TR = 3200 ms, TE = 565 ms, field of view (FOV) = 224 × 224 mm2, voxel size 0.7 mm isotropic.
 
@@ -130,7 +253,7 @@ Task-fMRI scans were acquired under seven tasks: language processing, working me
 
 All MRI images were preprocessed using the HCP minimal preprocessing pipeline (Glasser et al., 2013). For each subject, the HCP minimal preprocessing pipeline provides the native pial and white surfaces that are resampled onto the standard 32 k_fs_LR mesh (~32 k vertices for each hemispheric surface).
 
-## Manually delineating PT and determining the HG gyrification pattern
+### Manually delineating PT and determining the HG gyrification pattern
 
 We followed a well-established procedure for manually delineating PT and determining HG gyrification patterns (Altarelli et al., 2014; Vanderauwera et al., 2018). The procedure was carried out using the Anatomist software platform embedded in BrainVISA, a sophisticated visualization and labeling tool (Geffroy et al., 2011). The Anatomist software platform allows for simultaneously localizing a given coordinate on the surface as well as on the coronal, axial, and sagittal views of the T1 image.
 
@@ -138,7 +261,7 @@ Two well-trained raters (Q.P. and Z.G.) blinded to the subjects’ demographics 
 
 Next, the two raters performed the PT delineation on the native pial surface for each subject while simultaneously viewing the coronal, axial, and sagittal slices of the T1 image. According to Altarelli et al., 2014 (Altarelli et al., 2014), the anterior border of the PT was indicated by Heschl’s sulcus or the second Heschl’s sulcus; the posterior border of the PT was indicated by a change in the slope of the continuous plane characterizing the planum on the coronal view; and the lateral border was defined as the most lateral margin of the STG. For more details, please refer to Altarelli et al., 2014 and Vanderauwera et al., 2018 (Altarelli et al., 2014; Vanderauwera et al., 2018).
 
-## PT functional activation and asymmetry index
+### PT functional activation and asymmetry index
 
 The HCP minimal preprocessing pipeline provides individual-level T activation maps on the 32 k_fs_LR cortical surface for three contrasts between task conditions (‘story – baseline,’ ‘math – baseline,’ and ‘story – math’). For each contrast, we applied the widely-used LI-toolbox approach to quantify PT functional activation and its AI. This approach avoids the dependency on a single threshold for identifying activation and proves robust and specific for computing the AI of functional activation (Wilke and Lidzba, 2007; Wilke and Schmithorst, 2006). Briefly, a number of thresholds from 0 to the maximum T value of bilateral PTs were applied to the activation map of the left and right region of interest (i.e. PT). At each threshold, the activationleft, activationright, and AI values (i.e. ‘activationleft – activationright / activationleft + activationright’) are first estimated iteratively using a bootstrap algorithm, in which the activationleft or activationright is defined as ‘(the total vertex area weighted T values across vertices survived the threshold) / (the total number of vertices across the entire region of interest),’ a measure taking into account both the relative regional size of activated vertices and their T values. A histogram analysis is then followed to determine the final values for the activationleft, activationright, and AI. Lastly, all estimated final activationleft, activationright and AI values across different thresholds were weighted by their threshold, yielding the overall activation of each PT and AI values for each subject.
 
@@ -148,19 +271,19 @@ In the first specificity analysis, we also applied the same LI-toolbox approach 
 
 In the second specificity analysis, we also applied the same LI-toolbox approach to compute the activationleft, activationright, and AI values of the entire hemisphere for each of the three contrasts under the language task. As above, two-factor scores representing functional activation of speech perception and comprehension of the entire hemisphere were estimated and applied in statistical analyses.
 
-## PT structural measures and asymmetry index
+### PT structural measures and asymmetry index
 
 For each subject, we directly obtained cortical maps of surface area, thickness, and T1w/T2w ratio-based myelin content from the HCP minimal preprocessing pipeline. For each delineated PT, the total surface area and averaged thickness and myelin content across PT vertices were calculated. For each subject, we also calculated the NDI and ODI using a diffusion MRI-based neurite orientation dispersion and density imaging (NODDI) approach (Zhang et al., 2012). NODDI is a highly effective method for detecting key features of neurite morphology, which employs a tissue model that detects the intracellular, extracellular, and cerebrospinal fluid compartments (Zhang et al., 2012). In the gray matter of the cerebral cortex, the NDI is an estimated volume fraction of the intracellular microstructural environment, with higher NDI indicating greater neurite density. The ODI is a measure of the alignment or dispersion of neurite, with higher ODI indicating more dispersed neurite and lower ODIs indicating more aligned neurite (Jespersen et al., 2012; Zhang et al., 2012). Specifically, voxelwise values for these two measures were first estimated using AMICO (Daducci et al., 2015) and then projected onto the PT vertices using the ribbon mapping method (Marcus et al., 2011). For each delineated PT, we averaged the values of the two measures across PT vertices.
 
 For all structural measures, the AI was computed as (Left-Right) / (Left +Right).
 
-## Interrater reliability and test-retest reproducibility
+### Interrater reliability and test-retest reproducibility
 
 To assess interrater reliability, the two raters both determined the HG gyrification pattern and delineated the PT for the same 20 randomly selected subjects. The results of the HG gyrification pattern reached 100% consistency. Regarding the PT measures, we calculated the intraclass correlation coefficient (ICC). As shown in Table 1, the interrater ICC values ranged from 0.85 to 0.99, indicating excellent interrater reliability for these measures.
 
 To evaluate the test-retest reproducibility of both manual operation and brain imaging, one rater (P.Q.) further determined the HG gyrification pattern and delineated the PT for the 43 test-retest HCP subjects who were rescanned (test-retest interval: 1–11 mo). The test-retest results of the HG gyrification pattern also reached 100% consistency. As shown in Table 1, the imaging test-retest ICC values ranged from 0.55 to 0.86, indicating excellent test-retest reproducibility.
 
-## Statistical analysis
+### Statistical analysis
 
 In terms of the HG gyrification pattern in both hemispheres, all subjects were divided into four groups: bilateral sHGs (L1/R1), left sHG but right dHG (L1/R2), left dHG but right sHG (L2/R1), and bilateral dHGs (L2/R2). The differences in age and sex distribution across the four groups were evaluated using one-way ANOVA and the Kruskal-Wallis test, respectively. For each group, we tested the hemispheric asymmetry of each PT functional activation and structural measure. A linear mixed model (LME) was used, in which ‘hemisphere’ was a fixed effect and ‘individual identity’ was a random effect. In the model, age, sex, and total brain volume (Williams et al., 2022) were included as covariates. To further evaluate the influence of the HG gyrification pattern on functional and structural measures of the left and right PT, we divided all subjects into two groups for each hemisphere: sHG or dHG. The PT measures of the two groups were then compared using two-sample t-tests after controlling for age, sex, and hemispheric brain volume.
 

@@ -31,7 +31,7 @@
 
 ## Abstract
 
-Leber congenital amaurosis type nine is an autosomal recessive retinopathy caused by mutations of the NAD + synthesis enzyme NMNAT1. Despite the ubiquitous expression of NMNAT1, patients do not manifest pathologies other than retinal degeneration. Here we demonstrate that widespread NMNAT1 depletion in adult mice mirrors the human pathology, with selective loss of photoreceptors highlighting the exquisite vulnerability of these cells to NMNAT1 loss. Conditional deletion demonstrates that NMNAT1 is required within the photoreceptor. Mechanistically, loss of NMNAT1 activates the NADase SARM1, the central executioner of axon degeneration, to trigger photoreceptor death and vision loss. Hence, the essential function of NMNAT1 in photoreceptors is to inhibit SARM1, highlighting an unexpected shared mechanism between axonal degeneration and photoreceptor neurodegeneration. These results define a novel SARM1-dependent photoreceptor cell death pathway and identifies SARM1 as a therapeutic candidate for retinopathies.
+Leber congenital amaurosis type nine is an autosomal recessive retinopathy caused by mutations of the NAD+ synthesis enzyme NMNAT1. Despite the ubiquitous expression of NMNAT1, patients do not manifest pathologies other than retinal degeneration. Here we demonstrate that widespread NMNAT1 depletion in adult mice mirrors the human pathology, with selective loss of photoreceptors highlighting the exquisite vulnerability of these cells to NMNAT1 loss. Conditional deletion demonstrates that NMNAT1 is required within the photoreceptor. Mechanistically, loss of NMNAT1 activates the NADase SARM1, the central executioner of axon degeneration, to trigger photoreceptor death and vision loss. Hence, the essential function of NMNAT1 in photoreceptors is to inhibit SARM1, highlighting an unexpected shared mechanism between axonal degeneration and photoreceptor neurodegeneration. These results define a novel SARM1-dependent photoreceptor cell death pathway and identifies SARM1 as a therapeutic candidate for retinopathies.
 
 ## Introduction
 
@@ -51,13 +51,37 @@ NMNAT1 is a nuclear enzyme that synthesizes NAD+, an essential metabolite that i
 
 LCA9 patients are mutant for NMNAT1 throughout the body, yet their defects are limited to the eye. In an effort to model this, we generated a global knockout using Nmnat1fl/fl: CAG-CreERT2 mice harboring homozygous Nmnat1 floxed alleles (Nmnat1fl/fl) and CAG-CreERT2, which expresses a tamoxifen-activated Cre recombinase from the ubiquitous actin promoter. We chose a conditional approach because NMNAT1 knockout embryos are lethal (Conforti et al., 2011). We treated 2-month-old Nmnat1fl/fl: CAG-CreERT2 and control mice with tamoxifen. We first used RT-PCR to measure Nmnat1 mRNA in the retina at 21 days after tamoxifen and found that it was significantly decreased in NMNAT1 cKO (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen) compared with wild-type (WT) mice (Figure 1—figure supplement 1B). To investigate the metabolic consequence of NMNAT1 deletion, we measured the levels of NMN, the substrate for NMNAT1, and NAD+, the product of NMNAT1, in the retina at 25 days after tamoxifen injection. There is a significant increase in levels of NMN, presumably because it cannot be consumed by NMNAT1. There is also a mild decrease in NAD+ in NMNAT1 cKO mice, although this is not statistically significant, suggesting that other NMNAT enzymes are an additional source of NAD+ (Figure 1A,B). We next evaluated retinal pathology at 4 weeks after Nmnat1 excision using biomicroscopy. Fundus images showed abnormalities including attenuation of blood vessels (Figure 1C,D arrowhead) and the appearance of a honeycomb structure, suggesting exposure of retinal pigment epithelium (RPE) cells (Figure 1C,D arrow) in the mutant animals. Histopathological examination of the retina with hematoxylin and eosin (HE) stained sections showed severe retinal degeneration as evidenced by the reduction of the retina thickness and the thinning of the outer nuclear layer (ONL) at 4 weeks post tamoxifen treatment (Figure 1E,F). Quantitative analysis demonstrated a significant reduction of retinal thickness, especially of the ONL (Figure 1G,H). Hence, photoreceptor cells are highly vulnerable following the loss of NMNAT1.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62027/elife-62027-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Metabolite analysis by LC-MSMS in retinal tissues from WT or NMNAT1 conditional knockout (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO) mice at 25 days post tamoxifen injection. Fold changes of NAD+ (A) and NMN (B) concentrations compared with that of WT retinal tissues are shown. *p<0.05 denotes the significant difference from WT with Kruskal-Wallis test (n = 3 mice for WT and n = 3 mice for NMNAT1 cKO). Graphs show the all data points and median (cross bars). (C, D) Fundus biomicroscopy images of the retina from wild type (WT, C) or NMNAT1 conditional knock out (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO, D) mice at 4 weeks post tamoxifen injection. (E, F) representative images of hematoxylin and eosin stained eye sections from WT mice (E) or NMNAT1 conditional knockout (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO, E) mice at 4 weeks post tamoxifen injection (ONL: outer nuclear layer and INL: inner nuclear layer). The substantial thinning of the ONL was observed in 3 WT and 3 NMNAT1 cKO mice. (G) The quantification of the retina thickness from WT and NMNAT1 conditional knockout (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO) mice were shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for WT, n = 3 mice for NMNAT1 cKO (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen at 4 weeks post tamoxifen injection)). F(1, 72)=309, p<1.0×10−16 between WT and NMNAT1 cKO retina. *p<0.05 and **p<0.001 denotes the significant difference compared with WT retina. (H) The quantification of the ONL thickness from WT and NMNAT1 conditional knockout (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO) mice were shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for WT and n = 3 mice for NMNAT1 cKO). F(1, 72)=1023, p<1.0×10−16 between WT and NMNAT1 cKO retina. **p<0.001 denotes the significant difference compared WT.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62027/elife-62027-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) X-Gal staining of retinal tissues from mice heterozygous for Nmnat-lacZ fusion protein lacking the nuclear localization signal (Nmnat1-lacZ/wt) or wild-type (WT) mice (control). (B) Quantitative RT-PCR analysis of Nmnat1 mRNA in retinal tissues from WT or Nmnat1fl/fl: CAG-CreERT2 mice at 21 days post tamoxifen injection (NMNAT1 cKO) showed significant reduction of Nmnat1 mRNA compared with WT. *p<0.05 denotes the significant difference from WT with Mann-Whitney U test (n = 4 for WT (two mice) and n = 8 for NMNAT1 cKO (four mice)).
+
 To gain insights into the temporal aspects of the retinal degenerative process, we analyzed retinal morphology at seven time points after tamoxifen administration. The loss of nuclei in the ONL layers were evident at 25 days post tamoxifen injection and robust retinal thinning was evident at 33 days post tamoxifen injection (Figure 2A). We measured the loss of photoreceptor cells by counting the number of ONL cell nuclei. Cell loss was first detected in the ONL around 3 weeks after tamoxifen administration and gradually progressed such that only ~15% of the cells remained at 33 days (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62027/elife-62027-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative images of hematoxylin and eosin stained sections showing time course of retinal degeneration in NMNAT1 conditional knockout (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO) mice at 19 to 33 days post tamoxifen injection or littermate wild-type (WT) mice at 33 days post tamoxifen injection (WT). Blue bars indicate outer nuclear layer (ONL), inner nuclear layer (INL), and outer segment (OS). Similar results were obtained from three mice at each time point. (B) Quantification of relative ONL nuclei numbers of NMNAT1 conditional knockout mouse (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO) compared with WT at various time after tamoxifen injection. The graph shows all data points and median (cross bars). Statistical analysis was performed by one-way ANOVA with Holm-Bonferroni multiple comparison (n = 3 mice for each of WT, 19d, 21d, 33d and n = 4 mice for each of 25d, 27d). F(7, 64)=19, p=1.9×10−13. *p<0.05, **p<0.001, and ***p<0.0001 denotes the significant difference compared with WT. (C, D, E) ERG analysis of controls (Nmnat1fl/fl: CAG-CreERT2 vehicle or Nmnat1fl/fl + tamoxifen) and NMNAT1 conditional knockout (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen: NMNAT1 cKO). Graphs show the average and error bars represent the standard error. Scotopic a-wave (C), scotopic b-wave (D), and photopic b-wave (E) are shown. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for Nmnat1fl/fl: CAG-CreERT2 with vehicle, n = 3 mice for Nmnat1fl/fl at 33 days post tamoxifen injection, n = 4 mice for Nmnat1fl/fl: CAG-CreERT2 at 33 days post tamoxifen injection). F(1, 72)=220, p<2×10−16 between controls (Nmnat1fl/fl: CAG-CreERT2 with vehicle and Nmnat1fl/fl 33 days post tamoxifen injection) and NMNAT1 cKO for scotopic a-wave, F(1, 72)=633, p<2×10−16 between controls and NMNAT1 cKO for scotopic b-wave, F(1, 56)=94, p=1.3×10−13 between controls and NMNAT1 cKO for photopic b-wave. *p<0.05, **p<0.001, and ***p<0.0001 denote a significant difference compared with WT.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62027/elife-62027-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** ERG analysis of WT or NMNAT3 knock out mice (NMNAT3 KO). Graphs show the average and error bars represent the standard error. Statistical analysis was performed by one-way ANOVA (n = 3 mice for WT, n = 3 mice for NMNAT3 KO). F (8, 36)=0.78, p=0.623 for scotopic a-wave, F (8, 36)=0.28, p=0.97 for scotopic b-wave, F (6, 28)=0.23, p=0.97 for photopic b-wave and there is no statistical difference between WT and NMNAT3 KO in each flush intensity.
 
 Next, we evaluated retinal function after NMNAT1 deletion using electroretinogram (ERG). We examined three cohorts of mice: Nmnat1fl/fl: CAG-CreERT2 treated with tamoxifen, untreated Nmnat1fl/fl: CAG-CreERT2 or Nmnat1fl/fl treated with tamoxifen. In mutant animals in which Nmnat1 was excised, we observed a complete loss of both scotopic (rod-driven responses) and photopic (cone-driven responses) responses, indicating the loss of Nmnat1 in mature retina causes severe photoreceptor dysfunction (Figure 2C–E). This is consistent with previous reports showing developmental retinal defects in the tissue specific Nmnat1 knockout mice (Eblimit et al., 2018; Wang et al., 2017). While previous reports show that Nmnat1 is necessary for appropriate retinal development, our pathological and functional analyses of conditional deletion of NMNAT1 in two-month-old mice demonstrates that NMNAT1 is also necessary for photoreceptor cell maintenance and mature retinal functions.
 
 In addition to NMNAT1, mammalian cells encode two other NMNAT isoforms; NMNAT2 that is localized in the Golgi and cytosol, and NMNAT3 that is localized inside the mitochondria. Since the loss of NMNAT1 induced retinal degeneration, we wished to determine the role of NMNAT2 and 3 in the retinal structure/function. A previous study showed that NMNAT2 knockout mice are perinatally lethal and have truncated optic nerves as well as peripheral axon degeneration (Slivicki et al., 2016). We could not assess the role of NMNAT2 in retinal function due to the lack of conditional knockout mice. On the other hand, NMNAT3 deficient mice (NMNAT3 KO) are viable with splenomegaly and hemolytic anemia (Hikosaka et al., 2014). We generated NMNAT3 KO mice and investigated their retinal function using ERG. Consistent with the previous report, NMNAT3 KO mice showed splenomegaly (data not shown), however, there were no defects in ERG (Figure 2—figure supplement 1). These results indicate that NMNAT3 is dispensable for retinal function, suggesting NMNAT1 is the functionally dominant isoform controlling retinal phenotype.
 
 Identifying the cells that are vulnerable to NMNAT1 loss is key to understanding LCA9 pathogenesis. The severe loss of the ONL nuclei (Figure 2B) induced by NMNAT1 deletion prompted us to test whether loss of NMNAT1 specifically in photoreceptors would result in their death and recapitulate the phenotype observed using the widely expressed CAG-CreERT2. We therefore generated mice lacking NMNAT1 specifically in rod photoreceptors by crossing the Nmnat1fl/fl mice with Rhodopsin-Cre (Rho-Cre) mice (Li et al., 2005). We analyzed the retinas of Nmnat1fl/fl:Rho-Cre mice at 6-weeks-of-age. Similar to previous findings using Crx-Cre that expresses Cre recombinase in developing photoreceptors as early as E11 (Eblimit et al., 2018; Wang et al., 2017), histological analysis revealed severe thinning of the ONL in these mutant mice (Figure 3A,B). The quantitative analysis showed a significant reduction of the retina and ONL thickness in Nmnat1fl/fl:Rho-Cre retina (Figure 3D) as well as a significant reduction in ONL cell number as detected by nuclear counts (Figure 3F). Consistent with the loss of ONL cells, ERG analysis showed a severe reduction in the scotopic a- and –b-waves, representing rod photoreceptor function, in the Nmnat1fl/fl:Rho-Cre mice (Figure 3G,H). In addition, we found decreases in cone mediated photoresponses (photopic b-wave signal) (Figure 3I) that is likely secondary to a loss of rod photoreceptor cells due to loss of required rod-derived survival factors (Lin et al., 2016; Aït-Ali et al., 2015).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62027/elife-62027-fig3-v1.jpg)
+
+**Figure 3.:** (A, B, C) Hematoxylin and eosin stained eye sections from 6 week old wild-type (WT, A), rod-specific NMNAT1 KO (Nmnat1fl/fl:Rho-Cre: Rho-Cre, B), or cone-specific NMNAT1 KO (Nmnat1fl/fl:OPN1LW-Cre: OPN1LW-Cre, C) mice. Blue bars indicate outer nuclear layer (ONL) and inner nuclear layer (INL). Red bars indicate the outer segments (OS) and inner segments (IS). Similar results were obtained from three mice for each genotype. (D) Quantification of retina and ONL thickness in WT or rod-specific NMNAT1 KO (Rho-Cre) retinas. The graph shows all data points and median (cross bars). Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for WT and n = 3 mice for Rho-Cre). F(1, 72)=428, p<2×10−16 between WT and Rho-Cre retina thickness and F(1, 64)=530, p<2×10−16 between WT and Rho-Cre ONL thickness. *p<0.05, **p<0.001, and ***p<0.0001 denote significant differences compared with WT. (E) Quantification of retina and ONL thickness in WT or cone-specific NMNAT1 KO (OPN1LW-Cre) retinas. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for WT and n = 3 mice for OPN1LW-Cre). F(1, 72)=4, p=0.037 between WT and OPN1LW-Cre retina thickness and F(1, 64)=0.03, p=0.87 between WT and OPN1LW-Cre ONL thickness. There are no significant differences in OPN1LW-Cre retina and ONL thickness compared with WT. (F) Quantification of relative ONL nuclei numbers compared with WT. The graph shows all data points and median (cross bars). Statistical analysis was performed by one-way ANOVA with Holm-Bonferroni multiple comparison (n = 6 mice for WT, n = 3 mice for Rho-Cre, n = 3 mice for OPN1LW-Cre). F(2, 35)=59, p=5.9×10−12. ***p<0.0001 denotes the significant difference compared WT. (G, H, I) ERG analysis of WT, Rho-Cre, and OPN1LW-Cre mice. Scotopic a-wave (G), scotopic b-wave (H), and photopic b-wave (I) are shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 6 mice for WT, n = 3 mice for Rho-Cre, n = 3 mice for OPN1LW-Cre). F(2, 81)=314, p<2.0×10−16 among genotypes (WT, Rho-Cre, and OPN1LW-Cre) for scotopic a-wave, F(2, 81)=413, p<2×10−16 among genotypes for scotopic b-wave, F(2, 63)=102 , p<2×10−16 among genotypes for photopic b-wave. *p<0.05, **p<0.001, and ***p<0.0001 denote a significant difference compared with WT.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62027/elife-62027-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fluorescent microscope images of the retina after subretinal injection of AAV expressing GFP. The photoreceptor cell layer is identified with immunostaining with antibody against human rhodopsin. Scale bar, 50 μm. (B) Fluorescent microscope images of the retina after subretinal injection of AAV expressing HA-tagged human NMNAT1. The expression of NMNAT1 is shown by immunohistochemistry with antibody against HA epitope tag and nuclei are visualized with DAPI. Asterisks indicate the cells expressing HA-Nmnat1. Scale bar, 50 μm. (C) Enlarged images corresponding to the white box in (B), showing the partial expression of NMNAT1 in the cells in the outer nuclear layer. The stars indicate the NMNAT1 expressing cells. Scale bar, 10 μm. (D, E, F) ERG analysis of AAV-GFP (control) or AAV NMNAT1 (AAV- NMNAT1) administrated NMNAT1 cKO mice. Scotopic a-wave (D), scotopic b-wave (E), and photopic b-wave amplitudes (F) are shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 5 for control or AAV- NMNAT1). F(8, 72)=2.4, p=0.022 between control and AAV-NMNAT1 for scotopic a- wave, F(8, 72)=0.48, p=0.86 between control and AAV-NMNAT1 for scotopic b- wave, F(6, 56)=0.39, p=0.88 between controls and AAV-NMNAT1 for photopic b- wave. *p<0.05 denotes the statistical difference between WT and AAV-NMNAT1 mice.
 
 To explore directly the role of NMNAT1 in cones, we deleted NMNAT1 using the cone-specific OPN1LW-Cre. We crossed Nmnat1fl/fl mice with OPN1LW-Cre mice in which Cre recombinase expression is driven by the human red/green pigment (OPN1LW) promoter starting at P10 (Le et al., 2004). At 6-weeks-of-age we examined these mutant mice histologically, but did not detect any gross abnormalities, presumably due to the low number of cones (only 3% of total photoreceptors) in mice (Figure 3A,C,E). However, ERG analysis showed a complete loss of the photopic b-wave, which is derived from cone photoreceptors. This functional result demonstrates that NMNAT1 activity is vital for cone function (Figure 3I). In summary, these genetic ablation experiments demonstrate the importance of NMNAT1 for proper function and survival of both rods and cones, and indicate that LCA9-associated retinal degeneration is likely due to the direct cell-autonomous effects of NMNAT1 mutations in photoreceptors.
 
@@ -67,7 +91,7 @@ We next sought to determine the molecular mechanisms required for retinal degene
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62027/elife-62027-fig4-v1.jpg)
 
-**Figure 4.:** (A, B) Metabolite analysis by LC-MSMS in retinal tissues from WT, NMNAT1 conditional knockout (Nmnat1 + tamoxifen at 29 to 32 days post tamoxifen injection: NMNAT1 cKO), or NMNAT1 cKO:SARM1 KO mice were shown. Metabolites from whole retina of one eye were analyzed for NADfl/fl: CAG-CreERT2+ (A) and cADPR (B) concentrations and compared with that of WT retinal tissues . Graphs show the all data points and median (cross bars). Statistical analysis was performed by one-way ANOVA with Holm-Bonferroni multiple comparison (n = 7 mice for WT, n = 3 mice for NMNAT1 cKO, and n = 6 mice for NMNAT1 cKO:SARM1 KO). F(2, 13)=259, p=3.0×10−4 for NAD+ and F(2,13) = 48, p=9.43×10−7 for cADPR. **p<0.001 and ***p<0.0001 denote the significant difference compared with WT. (C, D, E) Representative images of hematoxylin and eosin stained eye sections from NMNAT1 WT (Nmnat1, fl/fl: Sarm1+/-C), NMNAT1 cKO (Nmnat1 post 32 days tamoxifen injection, fl/fl:Sarm1+/+: CAG-CreERT2D), and NMNAT1 cKO: SARM1 KO (Nmnat1 at post 32 days tamoxifen injection, fl/fl: Sarm1-/-: CAG-CreERT2E). Blue bars represent outer nuclear layer (ONL) and inner nuclear layer (INL). Similar results were obtained from three mice for WT, two mice for NMNAT1 cKO, and three mice for NMNAT1cKO:SARM1 KO. (F) The quantification of the retina thickness from NMNAT1 WT and NMNAT1 cKO:SARM1 KO mice were shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO:SARM1 dKO). F(1, 72)=0.8, p=0.37 between NMNAT1 WT and NMNAT1 cKO:SARM1 KO retina. There is no significant difference between NMNAT1 WT and NMNAT1 cKO:SARM1 KO. (G) The quantification of the outer nuclear layer (ONL) thickness from NMNAT1 WT and NMNAT1 cKO:SARM1 KO mice were shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO:SARM1 KO). F(1, 64)=0.43, p=0.51 between NMNAT1 WT and NMNAT1 cKO:SARM1 KO retina. There is no significant difference between NMNAT1 WT and NMNAT1 cKO:SARM1 KO. (H) Quantification of relative ONL nuclei numbers compared with WT. The graph shows all data points and median (cross bars). Statistical analysis was performed by Mann-Whitney U test (n = 3 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO:SARM1 KO). p=0.10. There are no statistical differences between NMNAT1 WT and NMNAT1 cKO:SARM1KO. (I, J, K) ERG analysis of NMNAT1 WT (Nmnat1 or fl/fl: Sarm1+/-Nmnat1), NMNAT1 cKO (fl/fl: Sarm1-/-Nmnat1 post 29 to 32 days tamoxifen injection), and NMNAT1 cKO: SARM1 KO (fl/fl: CAG-CreERT2Nmnat1 post 32 days tamoxifen injection). Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 8 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO, and n = 8 mice for NMNAT1 cKO: SARM1 KO). F (2, 144)=29, p=2.9×10fl/fl: SARM1-/-: CAG-CreERT2−11 among genotypes (NMNAT1 WT, NMNAT1 cKO, NMNAT1 cKO:SARM1 KO) for scotopic a-wave, F (2, 144)=46, p<2.0×10−16 among genotypes for scotopic b-wave, F (2, 112)=94, p<2.0×10−16 among genotypes for photopic b-wave. *p<0.05, **p<0.001, and ***p<0.0001 denotes the statistical difference between NMNAT1 WT and NMNAT1 cKO or between NMNAT1 cKO:SARM1KO and NMNAT1 cKO. There is no statistical difference between NMNAT1 WT and NMNAT1 cKO: SARM1 KO.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A, B) Metabolite analysis by LC-MSMS in retinal tissues from WT, NMNAT1 conditional knockout (Nmnat1fl/fl: CAG-CreERT2 + tamoxifen at 29 to 32 days post tamoxifen injection: NMNAT1 cKO), or NMNAT1 cKO:SARM1 KO mice were shown. Metabolites from whole retina of one eye were analyzed for NAD+ (A) and cADPR (B) concentrations and compared with that of WT retinal tissues . Graphs show the all data points and median (cross bars). Statistical analysis was performed by one-way ANOVA with Holm-Bonferroni multiple comparison (n = 7 mice for WT, n = 3 mice for NMNAT1 cKO, and n = 6 mice for NMNAT1 cKO:SARM1 KO). F(2, 13)=259, p=3.0×10−4 for NAD+ and F(2,13) = 48, p=9.43×10−7 for cADPR. **p<0.001 and ***p<0.0001 denote the significant difference compared with WT. (C, D, E) Representative images of hematoxylin and eosin stained eye sections from NMNAT1 WT (Nmnat1fl/fl: Sarm1+/-, C), NMNAT1 cKO (Nmnat1fl/fl:Sarm1+/+: CAG-CreERT2 post 32 days tamoxifen injection, D), and NMNAT1 cKO: SARM1 KO (Nmnat1fl/fl: Sarm1-/-: CAG-CreERT2 at post 32 days tamoxifen injection, E). Blue bars represent outer nuclear layer (ONL) and inner nuclear layer (INL). Similar results were obtained from three mice for WT, two mice for NMNAT1 cKO, and three mice for NMNAT1cKO:SARM1 KO. (F) The quantification of the retina thickness from NMNAT1 WT and NMNAT1 cKO:SARM1 KO mice were shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO:SARM1 dKO). F(1, 72)=0.8, p=0.37 between NMNAT1 WT and NMNAT1 cKO:SARM1 KO retina. There is no significant difference between NMNAT1 WT and NMNAT1 cKO:SARM1 KO. (G) The quantification of the outer nuclear layer (ONL) thickness from NMNAT1 WT and NMNAT1 cKO:SARM1 KO mice were shown. Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 3 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO:SARM1 KO). F(1, 64)=0.43, p=0.51 between NMNAT1 WT and NMNAT1 cKO:SARM1 KO retina. There is no significant difference between NMNAT1 WT and NMNAT1 cKO:SARM1 KO. (H) Quantification of relative ONL nuclei numbers compared with WT. The graph shows all data points and median (cross bars). Statistical analysis was performed by Mann-Whitney U test (n = 3 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO:SARM1 KO). p=0.10. There are no statistical differences between NMNAT1 WT and NMNAT1 cKO:SARM1KO. (I, J, K) ERG analysis of NMNAT1 WT (Nmnat1fl/fl: Sarm1+/- or Nmnat1fl/fl: Sarm1-/-), NMNAT1 cKO (Nmnat1fl/fl: CAG-CreERT2 post 29 to 32 days tamoxifen injection), and NMNAT1 cKO: SARM1 KO (Nmnat1fl/fl: SARM1-/-: CAG-CreERT2 post 32 days tamoxifen injection). Graphs show the average and error bars represent the standard error. Statistical analysis was performed by two-way ANOVA with Tukey post-hoc test (n = 8 mice for NMNAT1 WT, n = 3 mice for NMNAT1 cKO, and n = 8 mice for NMNAT1 cKO: SARM1 KO). F (2, 144)=29, p=2.9×10−11 among genotypes (NMNAT1 WT, NMNAT1 cKO, NMNAT1 cKO:SARM1 KO) for scotopic a-wave, F (2, 144)=46, p<2.0×10−16 among genotypes for scotopic b-wave, F (2, 112)=94, p<2.0×10−16 among genotypes for photopic b-wave. *p<0.05, **p<0.001, and ***p<0.0001 denotes the statistical difference between NMNAT1 WT and NMNAT1 cKO or between NMNAT1 cKO:SARM1KO and NMNAT1 cKO. There is no statistical difference between NMNAT1 WT and NMNAT1 cKO: SARM1 KO.
 
 ## Discussion
 
@@ -85,38 +109,146 @@ Our identification of SARM1 as the executioner of photoreceptor death in this mo
 
 ## Materials and methods
 
-## Mouse
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (mouse, male and female)</td>
+      <td>Nmnat1 FRTgeo;loxP</td>
+      <td>EUCOMM</td>
+      <td>RRID:MGI:5782147</td>
+      <td>C57BL/6J to generate NMNAT1 knockout mouse</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse, male and female)</td>
+      <td>CAG-CreERT2</td>
+      <td>The Jackson Laboratory</td>
+      <td>004682, RRID:IMSR_JAX:004682</td>
+      <td>Whole body Cre transgenic mouse:C57BL/6J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse, male and female)</td>
+      <td>Rho-Cre</td>
+      <td>Li et al., 2005</td>
+      <td>Rhodopsin- iCre75</td>
+      <td>Rod-specific Cre transgenic mouse:C57BL/6J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse, male and female)</td>
+      <td>OPN1LW-Cre</td>
+      <td>Le et al., 2004</td>
+      <td>human red/green pigment-Cre, RRID:IMSR_JAX:032911</td>
+      <td>Cone-specific Cre transgenic mouse:C57BL/6J</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NMNAT1</td>
+      <td>Sasaki et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rhodopsin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab3267, RRID:AB_303655</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3724, RRID:AB_1549585</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GAPDH mouse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCCCCCATGTTTGTGATG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GAPDH mouse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTGGTCATGAGCCCTTCC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NMNAT1 mouse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGAACTCACACTGGGTGGAAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NMNAT1 mouse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGGCTTTTCCAGTGCAGGTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV8(Y733F)</td>
+      <td>Zolotukhin et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573 RRID:CVCL_0045</td>
+      <td>Used for AAV virus production</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse
 
 Animal studies were carried out under approved protocols from animal studies committee at Washington University. NMNAT1 mutant mice (Nmnat1 FRTgeo;loxP/+) which have FRT sites flanking promoterless LacZ-neomycin phosphotransferase gene (beta Geo) expression cassette located between exon 2 and 3 together with loxP sites flanking exon three was obtained from EUCOMM (NMNAT tm1a(EUCOMM)Wtsi, RRID:MGI:5782147). This mouse expresses functionally null truncated NMNAT1 (exon 1 and 2) fused to beta Geo. Nmnat1 FRTgeo;loxP/+ heterozygote mice were viable and fertile however, in consistent with former results, no whole body knockout (Nmnat1FRTgeo;loxP/FRTgeo;loxP) was born (Conforti et al., 2011). Next Nmnat1 FRTgeo;loxP/+ mice were crossed with FLP recombinase expressing mice in the C57BL/6 J background to remove beta Geo cassette flanked by FRT sites and RD8 mutation that might affect the ocular phenotypes (Mattapallil et al., 2012). The resultant mice (Nmnat1 fl/+) have two loxP sites flanking the third exon. Then Nmnat1 fl/+ mice were crossed with mice expressing inducible Cre recombinase under actin promoter (CAG-CreERT2, RRID:IMSR_JAX:004682) and Nmnat1fl/fl: CAG-CreERT2 mice were generated. All genotypes were confirmed by genomic PCR. NMNAT1 whole body knockout mice were generated by injecting 100 μg/g 4-hydroxytamoxifen (Sigma) into 6 to 8 weeks old Nmnat1fl/fl: CAG-CreERT2 with IP for total 10 days with 2 days rest after first 5 days injection. The last day of injection was counted as day 0 after tamoxifen injection. Mice expressing Cre recombinase (CAG-CreERT2) were obtained from The Jackson Laboratory. To generate mice lacking Nmnat1 specifically from rod photoreceptors, we crossed Nmnat1fl/fl mice with mice carrying a copy of the Rhodopsin- iCre75 transgene, in which Cre recombinase expression is driven by the rhodopsin promoter starting postnatally at P7, which were provided by Dr. Ching-Kang Jason Chen (Li et al., 2005). To generate mice lacking NMNAT1 specifically from cone photoreceptors, we crossed Nmnat1fl/fl mice with mice carrying one copy of the Cre recombinase under human red/green pigment promoter (OPN1LW-Cre, RRID:IMSR_JAX:032911), which were provided by Dr. Yun Le (Le et al., 2004). SARM1 knockout mice were obtained from Dr. Marco Colonna (Szretter et al., 2009). NMNAT3 knockout mice were derived from ES cells (Nmnat3tm1(KOMP)Mbp, Knockout Mouse Project (KOMP)) in our facility and crossed with C57BL/6 J mice for at least five generations.
 
-## AAV preparation
+### AAV preparation
 
 Plasmids containing the photoreceptor-specific human rhodopsin kinase (hGRK1) promoter up stream of either GFP or HA-tagged NMNAT1 were packaged in AAV8(Y733F) capsid. The detailed methodology of vector production and purification has been previously described (Zolotukhin et al., 2002). Briefly, vectors were packaged using a plasmid based system in HEK293 cells (ATCC CRL-1573, RRID:CVCL_0045) by CaPO4 transfection. Cells were harvested and lysed by successive freeze thaw cycles. Virus within the lysate was purified by discontinuous iodixanol step gradients followed by further purification via column chromatography on a 5 ml HiTrap Q sepharose column using a Pharmacia AKTA FPLC system (Amersham Biosciences, Piscataway, NJ, USA). Vectors were then concentrated and buffer exchanged into Alcon BSS (sodium-155.7 mM, potassium- 10.1 mM, calcium- 3.3 mM, m- 1.5 mM, chloride- 128.9 mM, citrate- 5.8 mM, acetate- 28.6 mM, osmolality- 298 mOsm) supplemented with Tween 20 (0.014%). Virus was titered by qPCR relative to a standard and stored at −80C° as previously described (Jacobson et al., 2006). HEK293 cells used for producing AAV were purchased directly from ATCC who applies appropriate quality controls for maintaining and confirming identification of these lines. HEK293 cells were used more than two years ago for viral production and thus could not be authenticated now. HEK293 cells are passaged 50 times before discarding culture and thawing new vial. Short tandem repeat profiling is performed annually to authenticate the cell lines.
 
-## Subretinal injections
+### Subretinal injections
 
 Mice were anesthetized with a mixture of ketamine (70–80 mg/kg) and xylazine (15 mg/kg) injected intraperitoneally. The pupil was dilated with 1% tropicamide and topical anesthesia (0.5% proparacaine hydrochloride ophthalmic solution) was also applied to the eye. A self-sealing scleral incision was made by using the tip of a 31 G needle with the bevel pointed down. Then a 33G needle on a Hamilton syringe was inserted into the scleral incision and 1 µl of AAV containing solutions were injected in the subretinal space inducing a transient retinal detachment. The needle was slowly removed to prevent reflux and an ophthalmic ointment of neomycin/polymyxin B sulfate/bacitracin zinc was applied to the injected eye.
 
-## Fundus microscopy and fluorescent angiography
+### Fundus microscopy and fluorescent angiography
 
 Digital color fundus photography was performed using the Micron III retinal imaging system (Phoenix Research Laboratories). Prior to fundus imaging, mice were anesthetized with an intraperitoneal injection of 86.9 mg/kg ketamine and 10 mg/kg xylazine and administered 1.0% tropicamide eye drops (Bausch and Lomb) to dilate the pupils.
 
-## Electroretinography (ERG)
+### Electroretinography (ERG)
 
 ERG was performed as previously described (Hennig et al., 2013) by using the UTAS-E3000 Visual Electrodiagnostic System running EM for Windows (LKC Technologies). Mice were anesthetized by intra peritoneal injection of a mixture of 86.9 mg/kg ketamine and 13.4 mg/kg xylazine. The recording electrode was a platinum loop placed in a drop of methylcellulose on the surface of the cornea; a reference electrode was placed sub-dermally at the vertex of the skull and a ground electrode under the skin of the back or tail. Stimuli were brief white flashes delivered via a Ganzfeld integrating sphere, and signals were recorded with bandpass settings of 0.3 Hz to 500 Hz. After a 10 min stabilization period, a 9-step scotopic intensity series was recorded that included rod-specific/scotopic bright flash responses. After a 5 min light adaptation period on a steady white background, a 7-step cone-specific/photopic intensity series was recorded. Scotopic and photopic b-wave amplitudes and scotopic a-wave amplitudes were recorded for all flash intensities. We extracted quantitative measurements from the ERG waveforms using an existing Microsoft Excel macro that defines the a-wave amplitude as the difference between the average pre-trial baseline and the most negative point of the average trace and defines the b-wave amplitude as the difference between this most negative point to the highest positive point, without subtracting oscillatory potentials.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Mice were euthanized and eyeballs were enucleated and retinas were dissected and immediately freeze in liquid N2. On the day of preparation, Trizol was directly added to the frozen retina and tissues were homogenized with Polytron and RNA was extracted using Trizol (Thermo Fisher Scientific) and chloroform (Sigma) phase separation. Quantitative RT-PCR reaction was performed with primers (Nmnat1-forward: AGAACTCACACTGGGTGGAAG, Nmnat1-reverse: CAGGCTTTTCCAGTGCAGGTG, Gapdh-forward: TGCCCCCATGTTTGTGATG, Gapdh-reverse: TGTGGTCATGAGCCCTTCC) with reaction mixture (ThermoFisher, SYBR Green PCR Master Mix) and monitored with Prism 7900HT (ABI) and analyzed with delta-CT method.
 
-## Histology
+### Histology
 
 Mice were euthanized and eyeballs were enucleated and fixed in 4% formalin for 8 hr then washed with PBS and then embedded in paraffin. The thickness of the retinal layers or outer nuclear layers was measured using HE stained sections and plotted against the distance from the optic nerve head. The numbers of nuclei in the outer nuclear layer were analyzed using HE stained retinal sections. Outer nuclear layer was visually determined and the number of nucleus in each layer was counted and normalized by the length parallel to each layer of the retina. Data were expressed relative to the total number of nuclei in the WT. For immunostaining of the HA epitope tag, paraffin embedded eye sections were deparaffinized and treated with formic acid (70% in water) for 15 min at room temperature. Sections were rinsed and treated with blocking solution (goat IgG). Primary antibody against HA (Cell Signaling Technology, 3724, 1:400, RRID:AB_1549585) and secondary antibody Jackson Immuno Research Laboratories, AlexaFluo@568, 111-585-003 were used to visualize the HA-tagged NMNAT1. Primary antibody against rhodopsin (Abcam, ab3267, 1:500, RRID:AB_303655) was used to identify the photoreceptor outer segment. Slides were analyzed under the microscope (Nikon, Eclipse 80i) after the nuclear staining with DAPI and mounting (Vector Laboratories, VECTASHIELD with DAPI, H-1200–10). For X-Gal staining, retina were dissected and fixed in the cold fixation buffer (0.2% Glutaraldehyde, 5 mM EGTA, 2 mM MgCl2, 0.1M K-phoshate buffer pH7.2) for 1 hr, wash with detergent rinse (0.02% Igepal, 0.01% Sodium Deoxycholate, and 2 mM MgCl2in 0.1M phosphate buffer pH 7.3), and incubated with X-Gal solution (1 mg/ml X-Gal, 0.02% Igepal, 0.01% Sodium Deoxycholate, 5 mM Potassium Ferricyanide, 5 mM Pottassium Ferrocyanide, and 2 mM MgCl2,0.1M phosphate buffer pH 7.3) for 10 hr in the dark at room temperature. Tissues were rinsed with PBS then fix with 4% PFA for 1 hr then paraffin sections were prepared and the sections were analyzed under the microscope (Nikon, Eclipse 80i).
 
-## Metabolite measurement
+### Metabolite measurement
 
 Mice were euthanized and eyeballs were enucleated and retinas were dissected and immediately freeze in liquid N2. On the day of extraction, retinal tissues were homogenized in 160 μl of cold 50% MeOH solution in water using homogenizer (Branson) and then centrifuged (15,000 g, 4°C, 10 min). Clear supernatant was transferred to new tube containing 100 μl chloroform and vigorously shake then centrifuged (15,000 g, 4°C, 10 min). The chloroform extraction was repeated three times. Clear aqueous phase (120 μl) was transferred to new tube and then lyophilized and stored at −80°C until measurement. Lyophilized samples were reconstituted with 60 µl of 5 mM ammonium formate (Sigma) and centrifuged at 12,000 x g for 10 min. Cleared supernatant was transferred to the sample tray. Serial dilutions of standards for each metabolite in 5 mM ammonium formate were used for calibration. Liquid chromatography was performed by HPLC (1290; Agilent) with Atlantis T3 (LC 2.1 × 150 mm, 3 µm; Waters) (Hikosaka et al., 2014). For steady-state metabolite analysis, 20 μl of samples were injected at a flow rate of 0.15 ml/min with 5 mM ammonium formate for mobile phase A and 100% methanol for mobile phase B. Metabolites were eluted with gradients of 0–10 min, 0–70% B; 10–15 min, 70% B; 16–20 min, 0% B (Hikosaka et al., 2014). The metabolites were detected with a triple quadrupole mass spectrometer (6460, Agilent) under positive ESI multiple reaction monitoring (MRM) using m/z for NAD+:664 > 428, NMN:335 > 123, cADPR: 542 > 428, and Nam:123 > 80. Metabolites were quantified by MassHunter quantitative analysis tool (Agilent) with standard curves and normalized by the protein amount in the sample.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample number (n) was defined as a number of mice or replicates and indicated in the figure legend. Data comparisons were performed using Mann-Whitney U test, Kruskal-Wallis test, one-way ANOVA, or two-way ANOVA using R. F and P values for ANOVA were reported for each comparison in corresponding figure legends. For multiple comparisons, Holm-Bonferroni multiple comparison for one-way-ANOVA and Tukey post-hoc test for two-way-ANOVA were used.

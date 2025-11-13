@@ -24,21 +24,21 @@
 
 ### Affiliations
 
-1. https://ror.org/02e16g702 Laboratory of Biomolecular Science and Center for Research and Education on Drug Discovery, Faculty of Pharmaceutical Sciences, Hokkaido University Sapporo Japan
-2. https://ror.org/02e16g702 Division of Pathogen Structure, Research Center for Zoonosis Control, Hokkaido University Sapporo Japan
-3. https://ror.org/00p4k0j84 Medical Institute of Bioregulation, Kyushu University Fukuoka Japan
-4. https://ror.org/00p4k0j84 Department of Virology, Faculty of Medicine, Kyushu University Fukuoka Japan
-5. https://ror.org/044vy1d05 Institute for Enzyme Research, University of Tokushima Tokushima Japan
-6. https://ror.org/057zh3y96 Department of Microbiology, Graduate School of Medicine and Faculty of Medicine, The University of Tokyo Tokyo Japan
-7. https://ror.org/02e16g702 Global Station for Biosurfaces and Drug Discovery, Hokkaido University Sapporo Japan
-8. https://ror.org/02e16g702 Institute for Vaccine Research and Development (HU-IVReD), Hokkaido University Sapporo Japan
-9. https://ror.org/00097mb19 Core Research for Evolutional Science and Technology, Japan Science and Technology Agency Saitama Japan
+1. Laboratory of Biomolecular Science and Center for Research and Education on Drug Discovery, Faculty of Pharmaceutical Sciences, Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))
+2. Division of Pathogen Structure, Research Center for Zoonosis Control, Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))
+3. Medical Institute of Bioregulation, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
+4. Department of Virology, Faculty of Medicine, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
+5. Institute for Enzyme Research, University of Tokushima Tokushima Japan ([ROR:044vy1d05](https://ror.org/044vy1d05))
+6. Department of Microbiology, Graduate School of Medicine and Faculty of Medicine, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+7. Global Station for Biosurfaces and Drug Discovery, Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))
+8. Institute for Vaccine Research and Development (HU-IVReD), Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))
+9. Core Research for Evolutional Science and Technology, Japan Science and Technology Agency Saitama Japan ([ROR:00097mb19](https://ror.org/00097mb19))
 
 † Corresponding author
 
 ## Abstract
 
-Canine distemper virus (CDV) belongs to morbillivirus, including measles virus (MeV) and rinderpest virus, which causes serious immunological and neurological disorders in carnivores, including dogs and rhesus monkeys, as recently reported, but their vaccines are highly effective. The attachment glycoprotein hemagglutinin (CDV-H) at the CDV surface utilizes signaling lymphocyte activation molecule (SLAM) and Nectin-4 (also called poliovirus-receptor-like-4; PVRL4) as entry receptors. Although fusion models have been proposed, the molecular mechanism of morbillivirus fusion entry is poorly understood. Here, we determined the crystal structure of the globular head domain of CDV-H vaccine strain at 3.2 Å resolution, revealing that CDV-H exhibits a highly tilted homodimeric form with a six-bladed β-propeller fold. While the predicted Nectin-4-binding site is well conserved with that of MeV-H, that of SLAM is similar but partially different, which is expected to contribute to host specificity. Five N -linked sugars covered a broad area of the CDV-H surface to expose receptor-binding sites only, supporting the effective production of neutralizing antibodies. These features are common to MeV-H, although the glycosylation sites are completely different. Furthermore, real-time observation using high-speed atomic force microscopy revealed highly mobile features of the CDV-H dimeric head via the connector region. These results suggest that sugar-shielded tilted homodimeric structure and dynamic conformational changes are common characteristics of morbilliviruses and ensure effective fusion entry and vaccination.
+Canine distemper virus (CDV) belongs to morbillivirus, including measles virus (MeV) and rinderpest virus, which causes serious immunological and neurological disorders in carnivores, including dogs and rhesus monkeys, as recently reported, but their vaccines are highly effective. The attachment glycoprotein hemagglutinin (CDV-H) at the CDV surface utilizes signaling lymphocyte activation molecule (SLAM) and Nectin-4 (also called poliovirus-receptor-like-4; PVRL4) as entry receptors. Although fusion models have been proposed, the molecular mechanism of morbillivirus fusion entry is poorly understood. Here, we determined the crystal structure of the globular head domain of CDV-H vaccine strain at 3.2 Å resolution, revealing that CDV-H exhibits a highly tilted homodimeric form with a six-bladed β-propeller fold. While the predicted Nectin-4-binding site is well conserved with that of MeV-H, that of SLAM is similar but partially different, which is expected to contribute to host specificity. Five N-linked sugars covered a broad area of the CDV-H surface to expose receptor-binding sites only, supporting the effective production of neutralizing antibodies. These features are common to MeV-H, although the glycosylation sites are completely different. Furthermore, real-time observation using high-speed atomic force microscopy revealed highly mobile features of the CDV-H dimeric head via the connector region. These results suggest that sugar-shielded tilted homodimeric structure and dynamic conformational changes are common characteristics of morbilliviruses and ensure effective fusion entry and vaccination.
 
 ## Introduction
 
@@ -52,19 +52,245 @@ Here, we report the receptor-binding properties and crystal structure of CDV-H f
 
 ## Results
 
-## Preparation and Nectin-4-binding characteristics of CDV-H
+### Preparation and Nectin-4-binding characteristics of CDV-H
 
 CDV-H consists of an N-terminal cytoplasmic tail, transmembrane region, stalk region, and C-terminal head domain (Figure 1A). Surface plasmon resonance (SPR) analyses in two previous reports showed that the CDV-H protein can bind to dog SLAM with a μM range of Kd (Fukuhara et al., 2019; Khosravi et al., 2016), but there has been no observation that CDV-H binds to the Nectin-4 ligand at the protein level. Here, we examined the binding activity of CDV-H to human and dog Nectin-4. The soluble head domain of CDV-H (residues 149–604, Kyoto Biken strain) with a 6×Histidine tag at the C-terminal site was produced using HEK293T cells as described in our previous report (Figure 1A–C; Fukuhara et al., 2019). The ectodomains of human Nectin-4 (residues 1–333, designated as hNectin-4) and dog Nectin-4 (residues 1–332; dNectin-4) were expressed in HEK293T cells and purified by Ni-affinity chromatography, followed by size-exclusion chromatography (Figure 1A; Figure 1—figure supplement 1). SPR analysis revealed that CDV-H binds to dNectin-4 with low affinity (Kd ~ 10−7 to 10−6 M) and fast kinetics (Figure 1D ; Table 1). The binding characteristics of the CDV-H–dNectin-4 interaction were similar to those of CDV-H–SLAM, which is typical for receptor recognition of viral attachment proteins. Furthermore, we examined whether CDV-H could bind to hNectin-4. SPR experiments clearly demonstrated that CDV-H exhibits a sufficient response to hNectin-4 with similar binding kinetics to the CDV-H–dNectin-4 interaction, as shown in Figure 1D and Table 1.
 
-## Crystal structure of CDV-H
+**Table 1.**
+ Kinetics of Nectin-4 against MeV-H and CDV-H.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SPR results</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>dNectin-4</td>
+      <td></td>
+      <td>hNectin-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>KA [M−1]</td>
+      <td>KD [M]</td>
+      <td>KA [M−1]</td>
+      <td>KD [M]</td>
+    </tr>
+    <tr>
+      <td>MeV-Hwt</td>
+      <td>7.39 × 105</td>
+      <td>1.35 × 10−6</td>
+      <td>1.48 × 106</td>
+      <td>6.74 × 10−7</td>
+    </tr>
+    <tr>
+      <td>MeV-Hvac</td>
+      <td>9.50 × 105</td>
+      <td>1.05 × 10−6</td>
+      <td>1.50 × 106</td>
+      <td>6.66 × 10−7</td>
+    </tr>
+    <tr>
+      <td>CDV-Hwt</td>
+      <td>3.96 × 105</td>
+      <td>2.53 × 10−6</td>
+      <td>3.97 × 105</td>
+      <td>9.48 × 10−7</td>
+    </tr>
+    <tr>
+      <td>CDV-Hvac</td>
+      <td>1.06 × 106</td>
+      <td>9.42 × 10−7</td>
+      <td>1.05 × 106</td>
+      <td>2.52 × 10−6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_The values of dissociation and association constants (KD and KA) were determined by SPR analysis._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic images for expression region of CDV-H globular domain (top), dog signaling lymphocyte activation molecule (SLAM) ectodomain (middle), and dog Nectin-4 (bottom). CT, cytoplasmic tail; TM, transmembrane; CO, connector region; SP, signal peptide. (B) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) for CDV-H protein in reducing (left) and non-reducing (right) conditions. The arrows indicate monomer (left) and disulfide-linked dimer (right) of CDV-H. (C) Gel filtration chromatogram of CDV-H using Superdex 200 column. The arrow indicates the peak of CDV-H (Ve = v12.2 ml). (D) Surface plasmon resonance analysis for the interactions between CDV-H and Nectin-4 receptors: dog (left) and human (right) Nectin-4. The green, red, and blue lines indicate CDV-Hwt, CDV-Hvac, and β2 microglobulin as a negative control, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gel filtration chromatogram of dog (left) and human (right) Nectin-4 using Superdex 200 column. The arrow indicates the peak of each Nectin-4. (B) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) for human and dog Nectin-4 in reducing conditions. The arrow indicates the band of each Nectin-4.
+
+### Crystal structure of CDV-H
 
 To determine the structure of the vaccine strain CDV-H by X-ray crystallography, the expression plasmid encoding soluble CDV-H head domain was transfected into HEK293S GnTI− cells, which lack N-acetylglucosaminyltransferase I (GnTI) activity to modify glycosylation with homologous oligomannose-type sugars (Man5GlcNAc2) and was purified as described above. The molecular weight of the non-reducing soluble CDV-H determined by gel filtration chromatography and sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) matched its dimer form (Figure 1B), indicating that the head domain of CDV-H exists as a disulfide-linked homodimer. The crystals were obtained by sitting-drop vapor diffusion at 20°C in 100 mM tri-sodium citrate (pH 5.6), 10% polyethylene glycol-4000, and 10% isopropanol (Figure 2A). We determined the crystal structure of CDV-H refined at 3.2 Å resolution by molecular replacement using the MeV-H structure (Hashiguchi et al., 2007), which shares approximately 30% sequence identity in the head domain with CDV-H as a search probe (Figure 2B and Table 2).
 
+**Table 2.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CDV-H</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P43212</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a = b, c (Å)</td>
+      <td>86.84, 303.51</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)*</td>
+      <td>34.8–3.1 (3.2–3.1)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.153 (0.914)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>11.2 (3.0)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>69.86</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>−0.808</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.6 (100)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.1 (6.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>34.8–3.1 (3.2–3.1)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>21,519 (2131)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.2645 (0.3532)/0.3092 (0.4064)</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>6564</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>70.56</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot†</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>94%</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>6%</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.73%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest resolution shell is shown in parenthesis.†Analyzed by Molprobity (Harder et al., 1996)._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig2-v1.jpg)
+
+**Figure 2.:** (A) Micrograph of CDV-H head domain crystal. Scale bar indicates 0.1 mm. (B) Overall structure of CDV-H with secondary structures in cartoon model, colored gradually from blue (N-terminus) to red (C-terminus). (C) Structural comparison of CDV-H (rainbow color) and MeV-H (PDB ID: 2ZB6, gray). (D) Electron density map (2.5 σ omit map shown in black mesh) around Asn422 of CDV-H attached with N-glycan.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Electron density maps (1.0 σ 2Fo−Fc map shown in magenta mesh) are shown with cyan-based stick models of chains A (left) and B (right).
+
 There are two CDV-H monomers (chains A and B) in the asymmetric unit of the crystals, which have only slight differences (root mean square deviation = 0.301 Å) in the structures of some loops (Figure 2—figure supplement 1). Therefore, hereafter, we focus on chain A as a representative structure of CDV-H, in which a more extensive electron density is observed than that in chain B. The head domains of CDV-H of vaccine strain exhibit a six-bladed β-propeller structure, which is essentially the same as recent cryo-EM structure of wild-type CDV-H ectodomain (r.m.s.d. = 0.584–0.743 Å) (Kalbermatter et al., 2023), similar to that of the MeV-H structures (Figure 2C). Furthermore, CDV-H forms a homodimer structure facing the β-propeller 2, α1 and α2 helices, resulting in a dimer orientation inclined to the horizontal plane (Figure 3A), similar to the MeV-H homodimer structures and distinct from other paramyxoviruses, such as parainfluenza virus 5 (Figure 3B; Hashiguchi et al., 2007; Yin et al., 2006; Yuan et al., 2011). The interactions at the homodimer interface are mainly composed of three parts: the top, middle, and bottom sections, as shown in Figure 3A. The top section of CDV-H is a hydrophobic cluster consisting of Leu201, Val203, Trp259, Leu260, and Leu265, which interact with Leu205, Leu209, Leu234, and Ile248, respectively. Trp259 is substituted for Pro263 in MeV-H, compensated by the replacement of Leu209 with Tyr209, resulting in the maintained CH–π interaction between Leu209 and Trp259 (Figure 3C, top). The middle section is a hydrogen-bond network formed by the main-chain O atoms of Thr268 and Thr269, with the Nδ atom of Gln267 (Figure 3C, middle). Lys257 forms a hydrogen bond with the side-chain O atom of Asn270. Tyr271 interacts hydrophobically with Lys257, Leu265, and Gln267. Tyr271 further interacts with Trp259 at the interface between the top and middle sections. In MeV-H, His271 forms a hydrogen bond with the side-chain O atom of Met272 in another monomer. In the bottom section of CDV-H, Phe323 of each molecule is hooked by a π–π interaction (Figure 3C, bottom). Phe323 further interacts with the hydrophobic residues, Phe255, Ile322, and Pro169. In MeV-H, Trp327 makes π–cation interactions with Lys328 of another monomer. The characteristics of these interactions at the homodimer interface are conserved in morbilliviruses, while some HN proteins in the paramyxoviruses have substitutions and lack middle or bottom sections, adopting different angles of homodimer formation (Figure 3B). These findings suggest that the unique dimer orientation is a common feature of morbilliviruses and is appropriate for binding to the protein receptors SLAM and Nectin-4 (Figure 3—figure supplement 1).
 
-## Receptor-binding sites
+![Figure 3.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig3-v1.jpg)
+
+**Figure 3.:** (A) Homodimer structure of CDV-H with secondary structures in cartoon model as the same as Figure 2B (rainbow: chain A and gray: chain B). The black arrows indicate the receptor-binding sites. (B) Structural comparison of CDV-H with other paramyxovirus hemagglutinin dimers. MeV-H (top, PDB code: 2ZB6), PIV5-HN (middle, PDB code: 4JF7), and NDV-HN (bottom, PDB code: 3T1E) are shown in similar direction with CDV-H of A. (C) The closed-up images for three sites at the homodimer interface. One of the CDV-H dimer is shown in slate, asymmetric unit in gray. One of the MeV-H dimer is colored hot pink.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Attachment glycoproteins were aligned with the CDV-H structure. G proteins of Hendra virus; HeV (PDB code: 2VSK) and Nipah virus; NiV (PDB code: 3D12), HN proteins from Mumps virus; MuV (PDB code: 5B2C), Parainfluenza virus 5; PIV5 (PDB code: 4JF7), Newcastle disease virus; NDV (PDB code: 3T1E), Sosuga virus; SosV (PDB code: 6SG8), and human parainfluenza virus 3; hPIV3 (PDB code: 1V2I), H protein of measles virus (MeV; PDB code: 2ZB6). Green, yellow, and gray boxes indicate α-helices, β-sheets, and disordered regions in the structure, respectively. Red letters indicate the residues involved in homodimer formation. The positions of the secondary structures of the six-bladed β-propeller CDV-H are shown underneath the alignment.
+
+### Receptor-binding sites
 
 The previously reported complex structures of MeV-H with SLAM or Nectin-4 revealed that the β4–β6 blades are involved in their interactions (Hashiguchi et al., 2011; Zhang et al., 2013; Santiago et al., 2010). The superposition of the current CDV-H structure onto each individual complex structure enabled the construction of a reasonable CDV-H–receptor complex model without any significant structural hindrance (Figure 4—figure supplement 1). Previous mutagenesis studies have reported that eight amino acids (Tyr525, Asp526, Ile527, Ser528, Arg529, Tyr547, Thr548, and Arg552) on the β5 blade of CDV-H are important for interaction with dSLAM (von Messling et al., 2005; Zipperle et al., 2010). The crystal structure of MeV-H complexed with tamarin SLAM showed that the H-SLAM interaction composes mainly four sites (Figure 4A; Hashiguchi et al., 2011). At the corresponding site 1 on CDV-H, Asp501 is disordered in both asymmetric units of CDV-H. Asp501 and Asp503 on the acidic loop of the β5 blade are equivalent to Asp505 and Asp507 in MeV-H interacting with Lys77 and Arg90 of tamarin SLAM (Hashiguchi et al., 2011). Both Lys77 and Arg90 are conserved in dSLAM. Next to the acidic loop, Arg529 of the β5 blade supported by Asp526 on CDV-H would interact with Glu123 of dSLAM in a manner similar to site 2 of the MeV-H–tamarin SLAM complex (Figure 4B, C). These interactions are likely strengthened by the surrounding hydrophobic interactions formed by Pro554 and Phe552 on MeV-H and His61 on tamarin SLAM, which correspond to residues Pro550 and Thr548 on CDV-H and His61 on dSLAM, respectively. Additionally, Leu63 of dSLAM, equivalent to Val63 of tamrin SLAM, is likely to be involved in hydrophobic interactions around site 2. Consistently, Ohno also highlighted the importance of Leu63 in dSLAM for CDV infection (Ohno et al., 2003). While site 3 residues on the CDV-H edge of β-propeller 6 have a low conservation rate, this region interacts with β8 of tamarin SLAM in the complex structure of MeV-H–tamarin SLAM. Furthermore, the β8-H contact-forming residues on dSLAM are conserved, except for His130. Therefore, this region can interact with dSLAM without side-chain dependency. At site 4, the aromatic residues Tyr520, Tyr537, Tyr539, and Thr548 on CDV-H are conserved, except for the substitution of Phe552 with Thr548. Additionally, Ile74, of dSLAM equivalent to Val74, tamarin SLAM is stabilized by hydrophobic Leu464, Phe483, and Leu500 on CDV-H. Sequence comparison between dSLAM and tamarin SLAM showed that 7 of 21 residues at the H-binding face (Pro70, Gly71, Ile74, Lys75, Lys76, Phe126, and His130 in dSLAM) are different (Figure 4C). The amino acids corresponding to residues 74, 75, 76, 126, and 130 of dSLAM reportedly influence the host specificities of morbilliviruses (Ohishi et al., 2010). Therefore, CDV-H binds to dSLAM in a manner similar to MeV-H–tamarin SLAM interaction.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig4-v1.jpg)
+
+**Figure 4.:** (A) Structures of CDV-H with putative SLAM-binding sites (left, slate) and SLAM complex of MeV-H (right, hot pink) are shown. (B) The residues that are involved in SLAM receptor binding revealed by mutagenesis studies are shown in stick model on CDV-H (top) and MeV-H (bottom). (C) Amino acid sequence alignment of v-type domains of SLAMs. Asterisks (*) indicate fully conserved residues. A colon (:) indicates conservation between groups of strongly similar properties. A period (.) indicates conservation between groups of weakly similar properties. Interacting with hemagglutinin residues (<4.0 Å) are indicated in yellow-colored boxes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The superposition of CDV-H onto the MeV-H–tamarin signaling lymphocyte activation molecule (SLAM) complex (left), and onto MeV-H–hNectin-4 complex (right). Coloring is the same as that in Figures 4A and 5A.
 
 Next, the crystal structure of MeV-H in complex with hNectin-4 showed that the H–hNectin-4 interaction consists of three main sites (Figure 5A; Zhang et al., 2013). To examine CDV-H binding to dog Nectin-4, the superposition of CDV-H onto the MeV-H–hNectin-4 complex structure (Zhang et al., 2013) revealed that 10 of the 24 interacting residues were identical in MeV-H with CDV-H, while all 20 interacting residues of hNectin-4 were identical to dNectin-4 (Figure 5B, C). As mentioned above, SPR analysis demonstrated that both dNectin-4 and hNectin-4 could bind to CDV-H (Figure 1D). This result suggests that the binding mode of CDV-H to dNectin-4 is presumably the same as that of MeV-H to hNectin-4. Zhang et al. defined the interaction area as sites I–III in the complex structure of MeV-H with hNectin-4 (Zhang et al., 2013). Along with the definition, the site I includes hydrophobic groove composed of eight residues, which are maintained; the Leu464, Leu482, Phe483, and Leu526 of MeV-H are substituted to Phe460, Val478, Leu479, and Ile522 in CDV-H, respectively (Figure 5B). The change from Leu500 of MeV-H to Thr496 suggests a lower contribution of site II, as supported by a previous report (Langedijk et al., 2011). At site III, Gln391 and Tyr499 of MeV-H are substituted by Tyr387 and Gln495 of CDV-H, which interact with Tyr55 and Lys54 of Nectin-4 the receptors, respectively.
 
@@ -72,13 +298,33 @@ Next, the crystal structure of MeV-H in complex with hNectin-4 showed that the H
 
 **Figure 5.:** (A) Structures of CDV-H with putative Nectin-4-binding sites (left, slate) and Nectin-4 complex of MeV-H (right, hot pink) are shown. (B) The residues that are involved in Nectin-4 receptor binding revealed by mutagenesis studies are shown in stick model on CDV-H (top) and MeV-H (bottom). (C) Amino acid sequence alignment of v-type domains of Nectin-4s. Abbreviations and green-colored boxes are shown in the same manner with Figure 4C.
 
-## Glycosylation sites
+### Glycosylation sites
 
 Previous studies have suggested that the H proteins of a wild-type strain isolated from cases of natural CDV infections in recent years and vaccine strains show approximately 90% identity in their open reading frame, but may have differences in antigenicity of viruses because the wild-type strain has more potential N-linked glycosylation sites in its H protein (Harder et al., 1996; Iwatsuki et al., 1997; Lan et al., 2006; Haas et al., 1997). There were five potential glycosylation sites (Asn149, Asn391, Asn422, Asn456, and Asn587) in the H protein head domain of the Kyoto Biken vaccine strain (CDV-Hvac) and two additional sites (Asn309 and Asn603) in the 5VD wild-type strain (CDV-Hwt) (Figure 6A). To identify the N-glycosylation sites, mutagenesis was performed on each site of CDV-Hs. Western blot analysis indicated that all asparagine CDV-H mutants except for the N309D and N603D mutants migrated further than the wild-type, revealing that both CDV-Hvac and CDV-H wt have five sugar chains in common glycosylation sites (Asn149, Asn391, Asn422, Asn456, and Asn587) (Figure 6B), while Asn309 and Asn603 specific to CDV-Hwt are not glycosylated. This result is consistent with a previous report showing that five standard glycosylation sites exist in the ectodomain of the wild-type CDV-H protein (Sawatsky and von Messling, 2010). The CDV-H structure, which contains five N-linked sugars as described above, exhibits electron density only for Asn422-linked GlcNAc (Figure 2D). Asn149- and Asn422-linked sugars, which are located close to each other, appear to bury internal spaces between the stalk and head domains, and Asn587-linked sugars might support the stabilization of the CDV-H dimer orientation (Figure 6C, Figure 6—figure supplement 1). Sugars modified on Asn391, Asn456, and Asn587 seemed to cover the large pocket in CDV-H, and Asn456-linked sugars appeared to lean toward the center of the pocket (Figure 6C). Finally, since the receptors, SLAM and Nectin-4, bind to the side surface of CDV-H conserved with MeV-H, as revealed by the abovementioned mutagenesis study, the majority of CDV-H surfaces are covered with sugars, forcing only the RBSs to be exposed (Figure 6C).
 
-## Mobile interdomain features of CDV-H dimer revealed by the HS-AFM
+![Figure 6.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic images of full-length and expression constructs of ectodomain of CDV-Hs (wild-type and vaccine strains), together with that of MeV-H. (B) Mutagenesis studies for all potential glycan modification revealed to show that N390D and N630D showed clear western blot data. (C) Differences in glycan shields. Glycosylation sites on the surface of CDV-H (left) and MeV-H (right) dimers shown in white, with common N-linked glycans modeled in black and deep blue. Receptor-binding sites were shown in yellow circle on the CDV-H dimer. Tamarin signaling lymphocyte activation molecules (SLAMs) bound to the MeV-H dimer were shown in yellow. Twofold symmetry axis was shown as black ellipse.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Side view of glycan models (five residues) mapped on the surface presentation of CDV-H (left) and MeV-H–SLAM complex structure (right) was represented in the same manner with Figure 6C. (B) Schematic representation of CDV-H dimer showing the locations of glycosylated (green) and unglycosylated (red) asparagine. Receptor-binding sites (RBSs) were shown in yellow.
+
+### Mobile interdomain features of CDV-H dimer revealed by the HS-AFM
 
 The crystal structure of CDV-H shows a connector domain (residues 158–187) that mediates a head domain to the stalk region, which facilitates head-to-head homodimer formation with a set of disulfide bonds at Cys154 (Figures 1A and 7A). This region was mainly disordered in the previous MeV-H structures (Hashiguchi et al., 2007). Interestingly, there were no covalent bonds in the homodimer interface of the head domains, even though a conserved homodimer orientation was observed in the crystal structures of CDV-H and MeV-H, as described above. This observation raises the possibility that each head domain of CDV-H also dissociates and moves flexibly, as shown in the structure of Nipah virus (NiV)-G protein, previously (Wang et al., 2022). Therefore, here, HS-AFM was used to directly visualize the real-time dynamics of the CDV-H under physiological conditions. When CDV-H was loaded onto a mica substrate and scanned with a cantilever to acquire images of attached molecules, the CDV-H dimer was observed as two globules clustered together in most cases, but sometimes, each domain moved independently (Figure 7B and Videos 1–3). Time-course analysis of the dynamics of the representative CDV-H dimer showed that CDV-H could adopt both associated and dissociated forms (Figure 7C). The distances between the domains were calculated by measuring those between the centers of mass of each domain. Finally, the distribution of distances between each head domain in the CDV-H dimers showed approximately 15 nm as a major peak (Figure 7D). This is a reasonable length for the linker between the head domain dimers.
+
+![Video 1.](https://cdn.elifesciences.org/articles/88929/elife-88929-video1.mp4.jpg)
+
+**Video 1.:** CDV_H, 100 × 100 nm. 5 fps, 5 frames per second, 100 × 100 nm scale, 200 × 200 pixel, scale bar: 20 nm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/88929/elife-88929-video2.mp4.jpg)
+
+**Video 2.:** CDV_H, 100 × 100 nm. 10 fps, 10 frames per second, 100 × 100 nm scale, 200 × 200 pixel, scale bar: 20 nm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/88929/elife-88929-video3.mp4.jpg)
+
+**Video 3.:** CDV_H, 500 × 500 nm. 5 fps, 5 frames per second, 500 × 500 nm scale, 200 × 200 pixel, scale bar: 100 nm.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88929/elife-88929-fig7-v1.jpg)
 
@@ -102,26 +348,26 @@ The previous model for morbillivirus entry only focused on the orientation shift
 
 ## Materials and methods
 
-## Construction of expression plasmids
+### Construction of expression plasmids
 
 The expression plasmids encoding the ectodomain (amino acid residues Asn149 to Pro607 (or to Arg604)) of CDV-H derived from a Kyoto Biken vaccine strain (or a 5VD wild-type strain) were previously reported (Fukuhara et al., 2019). The cDNAs encoding the authentic signal sequence and ectodomain of human and dog Nectin-4 were amplified using the primer sets of 5′-GGCAAAGAATTCGCCACCATGCCCCTGTCCCTGGGAGCCG-3′ and 5′-CAGAACCTCGAGAACATCCACAGTGACCTG-3′. The DNA fragments were cloned into a modified pCA7 vector using the restriction enzyme sites EcoRI and XhoI to fuse a C-terminal HRV 3C protease site, FLAG tag, His6 tag, and Avi-tag sequence.
 
-## Protein expression and purification
+### Protein expression and purification
 
 HEK293S cells lacking GnTI activity (Aricescu et al., 2006; Reeves et al., 2002) were kindly provided by Prof. Simon Davis (University of Oxford) and maintained in Dulbecco’s modified Eagle medium (DMEM; Wako) supplemented with 10% fetal bovine serum (FBS; Hyclone) at 37°C and 5% CO2. Eighty-% confluent cells were transfected with plasmids encoding CDV-H or Nectin-4 using polyethylenimine (Polyscience Inc) at a ratio of 1:2. After transfection, the cells were cultured in DMEM containing 2% FBS for 4 days. The soluble proteins secreted into the culture medium were purified by Ni2+-NTA affinity chromatography (GE Healthcare) and Superdex 200 GL 10/300 gel filtration chromatography (GE Healthcare). The CDV-H protein for crystallization was further purified using Resource Q anion exchange chromatography (GE Healthcare).
 
-## Western blot analysis
+### Western blot analysis
 
 To determine the glycosylation sites on CDV-H, we disrupted the N-glycosylation potential sites by changing Asn to Asp (309, 391, 422, 456, 587, and 603) or deleting Asn149 of the CDV-H globular head domain. After they were subjected to SDS–PAGE and transferred to polyvinylidene difluoride (PVDF) membranes, anti-His-tag antibodies and horseradish peroxidase-conjugated goat anti-mouse IgG were added. Horseradish peroxidase activity was detected using Amersham ECL Plus Western Blotting Detection Reagent (GE Healthcare).
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 The CDV-H protein (4 mg/ml in 20 mM Tris–HCl pH 8.0, 100 mM NaCl) was crystallized by sitting-drop vapor diffusion at 20°C in 100 mM tri-sodium citrate pH 5.6, 10% polyethylene glycol-4000, and 10% isopropanol in 0.4 μl drops containing a 1:1 mixture of the protein to the reservoir solution. X-ray diffraction datasets were collected on NW-12 beamline at the Photon Factory (Tsukuba) and BL-41XU at Spring-8 (Harima) and integrated and scaled using HKL2000 (HKL Research, Inc) (Minor et al., 2006). The molecular replacement software, MOLREP, using the crystal structure of MeV-H (PDB ID code: 2Z6B) as a search model, provided a clear solution (Hashiguchi et al., 2007; Vagin and Teplyakov, 2010). Model refinement calculations were executed using REFMAC (Murshudov et al., 2011), and model building was performed using COOT (Emsley and Cowtan, 2004). Figures were prepared using PyMOL Delano, 2002.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 Purified proteins were dissolved in N-(2-Hydroxyethyl)piperazine-N'-2-ethanesulfonic acid (HEPES) buffered saline (HBS) supplemented with ethylenediaminetetraacetic acid (EDTA) and surfactant P20 (HBS-EP) buffer (10 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, and 0.005% Surfactant P20) (BIAcore AB). SPR experiments were performed using a BIACORE3000 instrument (GE Healthcare). CDV-H was immobilized on a CM5 sensor chip (GE Healthcare) using the direct amine coupling method. dSLAM in HBS-EP buffer was injected over the immobilized CDV-H. Values obtained by subtracting the response in the negative controlled flow cell, which was immobilized bovine serum albumin from the response in sample flow cells, were regarded as the binding responses. The data were analyzed using the BIA evaluation version 4.1 (GE Healthcare) and ORIGIN version 7 software (Microcal Inc). The dissociation constant (Kd) was derived by the nonlinear curve fitting of the standard Langmuir binding isotherm. Kinetics data were fitted into rate equations derived from the simple 1:1 Langmuir binding model (A + B ↔ AB) using the curve-fitting model of BIA evaluation version 4.1.
 
-## High-speed atomic force microscopy
+### High-speed atomic force microscopy
 
 HS-AFM images of CDV-H were acquired in the tapping mode at room temperature using an HS-AFM instrument, NanoExplorer (Research Institute of Biomolecule Metrology). The sample solution (2 µl) was placed on the freshly cleaved mica surface and incubated for 5 min. The samples on the mica were scanned in phosphate buffer (5 mM phosphate pH 6.2) by HS-AFM using a cantilever BL-AC10DS-A2 (Olympus). Images of 200 × 200 pixels from a 100 × 100 nm area were obtained at a scan rate of two frames per second (fps). Images were analyzed using ImageJ v1.52p software (http://rsbweb.nih.gov/ij/; Schneider et al., 2012).

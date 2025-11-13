@@ -24,7 +24,7 @@
 
 ## Abstract
 
-The septum is a ventral forebrain structure known to regulate innate behaviors. During embryonic development, septal neurons are produced in multiple proliferative areas from neural progenitors following transcriptional programs that are still largely unknown. Here, we use a combination of single-cell RNA sequencing, histology, and genetic models to address how septal neuron diversity is established during neurogenesis. We find that the transcriptional profiles of septal progenitors change along neurogenesis, coinciding with the generation of distinct neuron types. We characterize the septal eminence, an anatomically distinct and transient proliferative zone composed of progenitors with distinctive molecular profiles, proliferative capacity, and fate potential compared to the rostral septal progenitor zone. We show that Nkx2.1 -expressing septal eminence progenitors give rise to neurons belonging to at least three morphological classes, born in temporal cohorts that are distributed across different septal nuclei in a sequential fountain-like pattern. Our study provides insight into the molecular programs that control the sequential production of different neuronal types in the septum, a structure with important roles in regulating mood and motivation.
+The septum is a ventral forebrain structure known to regulate innate behaviors. During embryonic development, septal neurons are produced in multiple proliferative areas from neural progenitors following transcriptional programs that are still largely unknown. Here, we use a combination of single-cell RNA sequencing, histology, and genetic models to address how septal neuron diversity is established during neurogenesis. We find that the transcriptional profiles of septal progenitors change along neurogenesis, coinciding with the generation of distinct neuron types. We characterize the septal eminence, an anatomically distinct and transient proliferative zone composed of progenitors with distinctive molecular profiles, proliferative capacity, and fate potential compared to the rostral septal progenitor zone. We show that Nkx2.1-expressing septal eminence progenitors give rise to neurons belonging to at least three morphological classes, born in temporal cohorts that are distributed across different septal nuclei in a sequential fountain-like pattern. Our study provides insight into the molecular programs that control the sequential production of different neuronal types in the septum, a structure with important roles in regulating mood and motivation.
 
 ## Introduction
 
@@ -34,29 +34,69 @@ The septum is a ventral forebrain structure composed of a diverse array of GABAe
 
 ## Results
 
-## Early emergence of distinct neuronal lineages in the developing septum
+### Early emergence of distinct neuronal lineages in the developing septum
 
 We selected six ages spanning the entire development of the septum, from the embryonic period to its maturity. We chose developmental stages that would cover the peak period of neurogenesis for both the medial (embryonic day [E]11) and lateral septum (E14) (Wei et al., 2012), as well as the subsequent processes of neuronal maturation, such as migration, axonal outgrowth, and synaptogenesis (E17, postnatal days [P]3 and 10), along with P30 as a stage representative of a mature septum (Figure 1A, top). For each developmental stage, we manually dissected the septum (for E11, E14, and E17, the MGEs/PoAs, as potential sources of septal neurons [Wei et al., 2012], were collected as well), generated a single-cell suspension, and subjected it to single-cell encapsulation followed by RNA sequencing using a custom inDrops microfluidic system (Klein et al., 2015; Zilionis et al., 2017; Figure 1A, bottom). After filtering the data based on quality control criteria (see Materials and methods), we obtained a total of 72,243 cells across the six developmental stages. Plotting the data using UMAP, a method that yields two-dimensional graphic representations where the position of individual cells conveys information about their relationships, we identified clusters corresponding to radial glia (RG), intermediate progenitors (IP), and neurons (N) based upon marker expression (Figure 1B). These identities were largely consistent with t-distributed stochastic neighbor embedding (t-SNE) of the same data (Figure 1—figure supplement 1A), where cluster identities were assigned based on an extensive set of putative marker genes (Figure 1—figure supplement 1B). As expected from the experimental design, our dataset contains a number of distinct cell types, including different progenitor classes (radial glia and intermediate progenitors) and neurons at progressive stages of maturation (newborn, migrating, wiring, and mature), as well as a number of other cells that were not the focus of this study (glia, ependymal cells, endothelial cells, etc.) (Figure 1—figure supplement 1A and B). However, in order to resolve potential relationships among individual cells and thus understand the molecular changes happening along defined lineages, we needed a tool that allowed better visualization of inferred trajectories. We decided to use SPRING, a tool that generates a k-nearest-neighbor layout where each cell is represented as a node extending edges to the ‘k’ other nodes within the dataset with most similar gene expression profiles (Weinreb et al., 2018). This resulted in a graph containing all cells we sequenced, which were aligned according to their developmental stage despite the fact that SPRING was agnostic to the origin of each cell (Figure 1C). The clusters that we had identified could be projected onto the SPRING visualization, confirming the similarities between cells located close to each other within the plot (Figure 1—figure supplement 2A). Based on gene expression, we could distinguish groups of cells corresponding to the glial lineage, organized along developmental trajectories from progenitors to mature astrocytes (Figure 1—figure supplement 2B) and oligondendrocytes (Figure 1—figure supplement 2C). To keep the focus on septal neuron specification, we removed cells identified as non-neuronal (Figure 1—figure supplement 1A and B) and produced a SPRING plot containing 53,011 cells that includes neurons at different maturation stages as well as the progenitors that gave rise to them (Figure 1D). We then produced SPRING plots of the E11 and E14 timepoints, corresponding respectively to the peak medial and lateral septal neurogenic periods. (Figure 1E and F). We used the genes Nes (nestin), Ascl1 (achaete-scute family bHLH transcription factor 1), and Dcx (doublecortin) as cell-type markers for radial glia, intermediate progenitors, and newborn neurons, respectively (Gleeson et al., 1999; Lendahl et al., 1990; Yun et al., 2002; Figure 1E and F). The SPRING visualizations for E11 and E14 had a consistent organization, where more stem-like cells (i.e., radial glia) were located at one end of the plot, and more differentiated ones (i.e., neurons) at the opposite, with intermediate progenitors interspersed between them, reminiscent of the known lineage relationships among these three cell types (Figure 1B and C). Sectors of the SPRING plots comprised newborn neurons were sharply divided into distinct protruding clusters, representing cells with common molecular identities. We assigned prospective identities to each of those clusters based upon their marker gene expression and confirmed the presence of cells expressing the said markers during MS (E11) and LS (E13, E14) neurogenic stages using the Allen Developing Mouse Brain Atlas (Figure 1G and H, Figure 1—figure supplement 2D and E). MGE/PoA-derived neurons were identified based on their expression of Lhx6 (LIM homeobox 6) (Alifragis et al., 2004), while newborn cholinergic neurons expressed Gbx2 (gastrulation brain homeobox 2) (Asbreuk et al., 2002; Chen et al., 2010); we also identified Dner (delta/notch-like EGF repeat containing) as a general marker for septal neurons (Figure 1G and H). We identified additional distinct newborn neuronal populations, including presumptive pallium-derived neurons expressing Tbr1 (T-box brain transcription factor 1) (Bulfone et al., 1995), septum-derived Cajal-Retzius cells (Bielle et al., 2005) expressing Trp73 (transformation-related protein 73) (Causeret et al., 2021; Meyer et al., 2004), and presumptive LGE-derived neurons expressing Isl1 (ISL LIM homeobox 1) (Stenman et al., 2003; Toresson et al., 2000; Figure 1—figure supplement 2D and E). The expression of these genes was restricted to the mantle zones of the MGE and the developing septum, further confirming that they are markers of postmitotic neurons, rather than progenitors (Figure 1G and H, Figure 1—figure supplement 1C, Figure 1—figure supplement 2). While we recovered a relatively low number of cells from P30 samples (Figure 1—figure supplement 3A), and only a fraction of these (23%) could be identified as MS or LS neurons, analysis of those groups of cells allowed us to identify several previously unreported potential markers for neurons located in either the LS or MS (Figure 1—figure supplement 3B), or common to both nuclei (Figure 1—figure supplement 3C). We identified Prkcd (protein kinase C delta) as a potential LS marker gene and confirmed its restricted expression by crossing a Prkcd-Cre mouse line (Kalish et al., 2018) with a Cre-dependent reporter line (Figure 1—figure supplement 3D). Nearly all labeled cells were neurons confined to the LS (Figure 1—figure supplement 3E), and thus could be assumed to be largely GABAergic (Zhao et al., 2013). As far as we are aware, this is the first report of a mouse line that grants wide genetic access to GABAergic neurons in the LS. Together, these findings demonstrate that our scRNA-Seq dataset can be used to identify diverse molecular cell types and infer their developmental trajectories within the developing septum.
 
-## The septal eminence as a specialized proliferative area
+![Figure 1.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental approach: samples were collected at the indicated developmental stages and submitted to single-cell RNA sequencing using inDrops. (B) UMAP plot of all cells, where the transition from radial glia (RG, purple) to neurons (N, yellow) via intermediate progenitors (IP, red) schematized in the cartoon at the bottom right can be visualized (gray dashed arrows). (C) SPRING plot shows developmental stage-dependent organization of all sequenced cells. (D) SPRING plot of cells belonging to neuronal trajectory (colors indicate cell groups determined by Louvain clustering). (E, F) SPRING plots of all cells at embryonic stages E11 (E) and E14 (F) display differentiation-dependent alignment of cells, illustrated by the relative enrichment of the genes Nes, Ascl1, and Dcx (cell-type markers for RG, IP, and N, respectively) in adjacent areas of the graphs. (G, H) Analysis of each protrusion within the neuronal portion of E11 (G) and E14 (H) SPRING plots shows enrichment in marker genes for MGE/PoA-derived (Lhx6), cholinergic (Gbx2), and septal (Dner) newborn neurons; the presence of these neuronal types in the embryonic septum at similar stages is confirmed by in situ hybridization (bottom panels).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) t-SNE plot of all cells in the dataset. Assigned identities are written over the corresponding clusters. The three major groups of clusters encircled in black outlines contain progenitor cells (orange text), neurons (blue text), and astrocytes (dark gray text). (B) Heatmap displaying the relative levels of expression for 73 potential diagnostic genes (rows) in each of the t-SNE clusters. Major groups identified in (A) are highlighted in the corresponding colors. Putative identities are shown in the x-axis. (C) Schematic showing the correspondence between sagittal (left) and coronal (right) sections at rostral (1) and caudal (2) positions within the septum (SEP), showing the lateral (LGE) and medial (MGE) ganglionic eminences for reference; the main proliferative area (ventricular zone) is highlighted in red. The compass on left panel indicates the rostrocaudal and dorsoventral axes. WiN, wiring neurons; PaN, pallial neurons; NbN, newborn neurons; IPC, intermediate progenitor cells; vMGE, ventral portion of the MGE; RG, radial glia; Divid, dividing cells; Eryt, erythrocytes; Vasc, vasculature; Mesen, mesenchymal cells; UI, unidentified; Neu, neurons; Oligo, oligodendrocytes; OPC, oligodendrocyte progenitor cells; Ast, astrocytes; Micro, microglia; Epend, ependymal cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) SPRING plot of all cells, as shown in Figure 1C, overlaid with the Seurat clusters identified in the t-SNE plot displayed in Figure 1—figure supplement 1A. (B, C) SPRING was used to highlight marker genes for progenitors (left) and differentiated cells (right) within the astrocyte (B) and oligodendrocyte (C) lineages. (D, E) Analysis of ‘protrusions’ within the neuronal portion of E11 (D) and E14 (B) SPRING plots shows enrichment in marker genes for newborn pallial neurons (Tbr1), Cajal–Retzius cells (Trp73) and potentially LGE-like (Isl1) newborn neurons in the septum, analogous across both stages; the presence of these neuronal types in the embryonic septum at similar stages is confirmed by in situ hybridization (bottom panels).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) t-SNE plot of P30 cells. Assigned identities are written over the corresponding clusters. Two major cluster groups contain astrocytes (blue), and neurons (green), of which a small proportion are either lateral or medial septal neurons (bold text). (B) Analysis of gene enrichment in different clusters (feature plots), validated with in situ hybridization images from the Allen Brain Atlas, led to the discovery of genes that are enriched in neurons of the lateral septum (LS) (left) or medial septum (MS) (right), either following widespread patterns (top) or representing a subpopulation within the corresponding septal nucleus (bottom). (C) Similarly, general septal markers common to LS and MS could be identified, either present in the majority of septal cells (left) or in a subset of them (right). (D) Coronal section through the septum of a P30 Prkcd-Cre;Ai14 mouse, where expression of tdTomato (gray; magenta in merge, counterstained with DAPI in blue), shows that cell labeling is restricted to the LS. Scale bars, 250 µm. (E) Insets from (D), showing overlap of immunostaining for tdTomato (gray; magenta in merge) and NeuN (green in merge) only in the LS.
+
+### The septal eminence as a specialized proliferative area
 
 Previous work has shown that a portion of cells in the septum, most notably MS cholinergic neurons, are derived from progenitors expressing the transcription factor Nkx2.1 (Magno et al., 2017; Wei et al., 2012; Xu et al., 2008). Within the forebrain, Nkx2.1 is expressed in the MGE (Sussel et al., 1999) as well as in the PoA and in the caudal portion of the developing septum (Magno et al., 2017; Puelles et al., 2000; Rubin et al., 2010). We hypothesized that the caudal portion of the embryonic septum (i.e., the region we define as the septal eminence) could be the developmental source of several types of mature septal neurons. Since our embryonic samples contained cells from both the MGE/PoA and the septum, as identified in SPRING plots (Figure 1G and H), we needed an additional marker to distinguish between these proliferative areas. We analyzed the expression of Zic4, a general septal marker (Rubin et al., 2010), and Nkx2.1 in the E14 SPRING plot, revealing a region of overlapping expression spanning progenitors and newborn neurons (Figure 2A). We confirmed that embryonic progenitors located in the VZ/SVZ proliferative areas of the caudal, but not the rostral, septum were positive for NKX2.1 (Magno et al., 2017; Figure 2B). Using embryonic samples of Nkx2.1-Cre;Ai14 mice, a model where cells with a developmental history of Nkx2.1 expression are labeled by the fluorescent reporter tdTomato, in combination with immunofluorescence staining with an antibody that recognizes several ZIC isoforms, including ZIC4 (Borghesani et al., 2002), we found a stream of ZIC-positive cells migrating rostrally from their putative site of origin in the caudal septum, consistent with previously described tangential migration of Nkx2.1-lineage cells into the septum from caudal locations (Wei et al., 2012; Figure 2C). The distinct neuronal output from the septal eminence and its expression of Nkx2.1 suggests that there may be fundamental differences in progenitor composition and proliferative behaviors between the rostral and caudal proliferative zones in the embryonic septum (Magno et al., 2017). To address these potential differences, we performed immunostaining for the mitotic marker phosphorylated histone 3 on E13 Nkx2.1-Cre;Ai14 samples in order to compare the abundance and location of cycling progenitors between the rostral and caudal (Nkx2.1-expressing) portions of the developing septum (Figure 2D). This experiment revealed a much lower proportion of dividing cells located in the putative subventricular zone of the septal eminence when compared to the rostral portion of the septum (Figure 2D and E). This could reflect underlying cell biological differences between these two regions, whereby fate-restricted progenitors in the septal eminence would preferentially undergo direct neurogenic divisions at the ventricular surface rather than delaminating and entering the subventricular zone as transit-amplifying intermediate progenitors (Petros et al., 2015; Turrero García and Harwell, 2017). We performed immunofluorescence staining for NKX2.1 together with ASCL1 as a marker for fate-committed, potentially terminally dividing progenitors (Yun et al., 2002) on E14 samples; we found a roughly twofold increase in the proportion of ASCL1+ mitotic cells at the ventricular surface of the NKX2.1+ portion of the septal anlage (Figure 2F and G). Together, these data suggest that the caudal portion of the developing septum is composed of progenitors with distinctive molecular profiles, proliferative capacity, and fate potential compared to its rostral counterpart. Given the similarities between the caudal developing septum and the ganglionic eminences and its distinctive progenitor composition, we propose to name this proliferative zone as the septal eminence (see ‘Discussion’).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig2-v2.jpg)
 
-**Figure 2.:** (A) SPRING plots at embryonic day (E)14 show that a set of cells at this stage (dashed magenta line) express both Zic4 (left) and Nkx2.1 (right). (B) Immunofluorescence staining for NKX2.1 (green; counterstained with DAPI, blue) at rostral and caudal locations of the septum on coronal sections of an E14 brain. Panels on the right display magnified insets (marked with dashed white squares on the corresponding overview images); the main proliferative area (ventricular zone) is highlighted by a yellow dashed line, showing NKX2.1-positive cells in the caudal, but not rostral, septal anlage. Scale bars: 250 µm (overview images); 100 µm (close-up images). (C) Horizontal section (compass on the top left of left panel indicates rostrocaudal and mediolateral axes) of the right hemisphere of an E13 Nkx2.1-Cre;Ai14 mouse brain. Immunofluorescence staining for ZIC proteins (left panel; green in merge) and the tdTomato fluorescent reporter (middle panel; magenta in merge), shown both as single channels and merged (right panel, with DAPI counterstaining in blue), show a subset of Nkx2.1-expressing septal progenitors in the septal eminence, as well as a caudal-to-rostral stream of migrating ZIC-positive neurons with a developmental history of Nkx2.1 expression (yellow dashed arrow). Scale bar, 250 µm. (D) Close-up of the area indicated by the dashed white line in (C); immunofluorescence staining for tdTomato (magenta in merge) and phosphorylated histone 3 (pH3, green in merge) shows difference in the number of subapically dividing cells in the rostral portion of the septum (yellow arrows) compared to the Nkx2.1-expressing (red dashed line) septal eminence (orange arrows). Scale bar, 100 µm. (E) Quantification of the proportion of dividing (pH3+) cells located in the subventricular zone of the rostral (gray dots) and caudal (red squares), that is, Nkx2.1– and Nkx2.1+, proliferative regions of the developing septum at E13. (F) Immunostaining for ASCL1 (yellow in merge) and NKX2.1 (magenta in merge), counterstained with DAPI (blue in merge), in rostral and caudal proliferative regions of the septum of an E14 mouse brain, highlighting ASCL1+ (yellow arrows on DAPI and ASCL1 panels) and ASCL1– (blue arrows on DAPI and ASCL1 panels) dividing cells at the apical surface. Scale bars, 20 µm. (G) Quantification of the proportion of ventricular surface divisions that are ASCL1+ in the rostral (gray dots) and caudal (yellow squares) proliferative regions of the developing septum at E14. All data points are represented; black bars represent the mean. Unpaired t-tests were performed; the p-values are indicated above the corresponding compared sets of data: bold typeface indicates statistically significant differences (p<0.05). CTX: cortex; LGE: lateral ganglionic eminence; MGE: medial ganglionic eminence; SEP: septum.Figure 2—source data 1.
+**Figure 2.:** (A) SPRING plots at embryonic day (E)14 show that a set of cells at this stage (dashed magenta line) express both Zic4 (left) and Nkx2.1 (right). (B) Immunofluorescence staining for NKX2.1 (green; counterstained with DAPI, blue) at rostral and caudal locations of the septum on coronal sections of an E14 brain. Panels on the right display magnified insets (marked with dashed white squares on the corresponding overview images); the main proliferative area (ventricular zone) is highlighted by a yellow dashed line, showing NKX2.1-positive cells in the caudal, but not rostral, septal anlage. Scale bars: 250 µm (overview images); 100 µm (close-up images). (C) Horizontal section (compass on the top left of left panel indicates rostrocaudal and mediolateral axes) of the right hemisphere of an E13 Nkx2.1-Cre;Ai14 mouse brain. Immunofluorescence staining for ZIC proteins (left panel; green in merge) and the tdTomato fluorescent reporter (middle panel; magenta in merge), shown both as single channels and merged (right panel, with DAPI counterstaining in blue), show a subset of Nkx2.1-expressing septal progenitors in the septal eminence, as well as a caudal-to-rostral stream of migrating ZIC-positive neurons with a developmental history of Nkx2.1 expression (yellow dashed arrow). Scale bar, 250 µm. (D) Close-up of the area indicated by the dashed white line in (C); immunofluorescence staining for tdTomato (magenta in merge) and phosphorylated histone 3 (pH3, green in merge) shows difference in the number of subapically dividing cells in the rostral portion of the septum (yellow arrows) compared to the Nkx2.1-expressing (red dashed line) septal eminence (orange arrows). Scale bar, 100 µm. (E) Quantification of the proportion of dividing (pH3+) cells located in the subventricular zone of the rostral (gray dots) and caudal (red squares), that is, Nkx2.1– and Nkx2.1+, proliferative regions of the developing septum at E13. (F) Immunostaining for ASCL1 (yellow in merge) and NKX2.1 (magenta in merge), counterstained with DAPI (blue in merge), in rostral and caudal proliferative regions of the septum of an E14 mouse brain, highlighting ASCL1+ (yellow arrows on DAPI and ASCL1 panels) and ASCL1– (blue arrows on DAPI and ASCL1 panels) dividing cells at the apical surface. Scale bars, 20 µm. (G) Quantification of the proportion of ventricular surface divisions that are ASCL1+ in the rostral (gray dots) and caudal (yellow squares) proliferative regions of the developing septum at E14. All data points are represented; black bars represent the mean. Unpaired t-tests were performed; the p-values are indicated above the corresponding compared sets of data: bold typeface indicates statistically significant differences (p<0.05). CTX: cortex; LGE: lateral ganglionic eminence; MGE: medial ganglionic eminence; SEP: septum.
 
-## Fate mapping of neurons derived from the septal eminence
+### Fate mapping of neurons derived from the septal eminence
 
 To better understand the contribution of rostral and septal eminence progenitors to the mature complement of septal neurons, we used three different genetic mouse models to fate-map P30 septal cells derived from Zic4-expressing (all septal proliferative areas), Nkx2.1-expressing (MGE/PoA and septal eminence), or Zic4 and Nkx2.1 coexpressing (septal eminence) progenitors (Figure 3A, C and E). Given the differences in septal anatomy along the rostrocaudal axis (Creps, 1974; Figure 3—figure supplement 1A), we quantified cells at rostral (R), medial (M), and caudal (C) locations. Combining a Zic4-Cre driver line (Rubin et al., 2010) with the nuclear membrane fluorescent reporter Sun1-GFP (Mo et al., 2015; Figure 3A), we found that the vast majority of neurons (71–97%) in the three main subdivisions of the LS (dorsal, intermediate, and ventral nuclei), and approximately 50% of MS neurons, had a developmental history of Zic4 expression throughout the rostrocaudal axis (Figure 3B). We then used the Nkx2.1-Cre;Ai14 mouse model (Figure 3C), in combination with ZIC immunofluorescence staining, to understand the relative contribution of Nkx2.1-expressing progenitors to the mature septum-derived neuronal population. About 10–30% of ZIC+ cells in both the LS and the MS, in decreasing proportion along the rostrocaudal axis, had a developmental history of Nkx2.1 expression (Figure 3D). To further refine our analyses, we used an intersectional genetic approach, combining an Nkx2.1-IRES-FlpO (Nkx2.1-Flp) knock-in driver line (He et al., 2016) with a Zic4-Cre driver line and the FLTG reporter line (Plummer et al., 2015; Figure 3E). Cells with a history of expression of both genes (intersectional population, septal eminence-derived) would result in labeling with GFP, while expression of only Nkx2.1 (subtractive population, MGE/PoA-derived) would label cells with tdTomato (Plummer et al., 2015). The intersectional population was predominantly located in the LS, allocated to progressively more ventral locations along the rostrocaudal axis, while the subtractive population was mainly found in the MS (Figure 3F, left). We performed immunofluorescence staining for the neuronal marker NeuN (Figure 3—figure supplement 1B and C) and found that the vast majority of the intersectional population, but only a small fraction of the subtractive cells, were neurons (Figure 3F, right). This observation was supported by the distinct astrocytic morphology of many MS subtractive cells (Figure 3E, Figure 3—figure supplement 1A–C), and it was true for both the LS and the MS, with only minor changes along the rostrocaudal axis (Figure 3—figure supplement 1D and E). Our results demonstrate that the septal eminence generates neurons that largely occupy the LS, while cells derived from the MGE/PoA are mainly allocated to the medial septum and appear to be glia rather than neurons, consistent with previous reports (Wei et al., 2012).
 
-## Temporal transcriptional programs during MS and LS neurogenesis
+![Figure 3.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig3-v2.jpg)
+
+**Figure 3.:** (A) Coronal section of the septum of a postnatal day (P)30 Zic4-Cre;Sun1-GFP mouse; immunofluorescence staining for the reporter GFP shows the location of Zic4-lineage cells. Yellow dashed lines indicate the location of medial septum (MS) and lateral septum (LS) nuclei as indicated. (B) Quantification of the proportion of neurons within the Zic4-lineage within the total NeuN+ neuronal population. (C) Coronal section of the septum of a P30 Nkx2.1-Cre;Ai14 mouse; immunofluorescence staining for the reporter tdTomato shows the location and morphology of Nkx2.1-lineage cells. (D) Quantification of the proportion of Nkx2.1-lineage cells within the ZIC+ population, as recognized by a pan-ZIC antibody. (E) Coronal section of the septum of a P30 Nkx2.1-Flp;Zic4-Cre;FLTG mouse; immunofluorescence staining for the reporters GFP (green) and tdTomato (magenta) shows the location and morphology cells within the Nkx2.1 lineage with (GFP+) or without (tdTomato+) a developmental history of Zic4 expression. (F) Left: proportion of the entire intersectional (GFP+, top) or subtractive (tdTomato+, bottom) populations allocated within each septal nucleus in the Nkx2.1-Flp;Zic4-Cre;FLTG line, as illustrated in (C); right: proportion of cells positive for the neuronal marker NeuN within the intersectional (GFP+, green squares) and subtractive (tdTomato+, red circles) populations in the entire LS (top) and in the MS (bottom). Scale bars (A, C, E), 250 µm. Quantifications in (B), (D), and (F) were obtained for each of the mouse lines above the corresponding set of graphs, across the dorsal, intermediate, and ventral nuclei of the LS (LSd, LSi, and LSv, respectively) and the MS, at rostral (R), medial (M), and caudal (C) locations along the rostrocaudal axis. Unpaired t-tests (right graphs in F) were performed; the p-values are indicated above the corresponding compared sets of data: bold typeface indicates statistically significant differences (p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Overview of the septum along the rostrocaudal axis on coronal sections of a postnatal day (P)30 Nkx2.1-Flp;Zic4-Cre;FLTG mouse; immunofluorescence staining for the reporters GFP (green) and tdTomato (magenta) counterstained with DAPI (blue). (B, C) Confocal images of the lateral (B) and medial (C) septum of a P30 Nkx2.1-Flp;Zic4-Cre;FLTG mouse; immunostaining for GFP (green in merged image in B) and tdTomato (magenta in merged image in C) along with the neuronal marker NeuN (gray in merged images) allows the identification of neurons within the intersectional (B) and subtractive (C) populations in this genetic model. (D, E) Quantification of the proportion of labeled cells within the intersectional (GFP+, green circles; D) and subtractive (tdTomato+, red circles; E) positive for NeuN, across the dorsal, intermediate, and ventral nuclei of the lateral septum (LSd, LSi, and LSv, respectively) and the medial septum (MS), obtained at rostral (R), medial (M), and caudal (C) locations along the rostrocaudal axis. Scale bars, 250 µm (A), 100 µm (B, C).
+
+### Temporal transcriptional programs during MS and LS neurogenesis
 
 After confirming the existence of at least two spatially distinct developmental origins for septal neurons, we addressed the crucial temporal component of neuronal fate determination (Kohwi and Doe, 2013). Neurons destined for the medial septum are mainly generated during early neurogenesis, while those that will occupy the LS are born at later stages (Wei et al., 2012). We reasoned that since neuronal subtypes can already be distinguished at embryonic stages (Figure 1G and H, Figure 1—figure supplement 2D and E), different molecular programs guiding the generation of MS versus LS neurons from neural progenitor cells would be detectable as well. We used our scRNA-Seq dataset to compare the gene expression profiles of each of the three main cell types present along the neurogenic sequence (radial glia, intermediate progenitors, and newborn neurons) across the three embryonic stages we had collected and found numerous genes that were differentially expressed (Figure 4A). Several classes of genes showed different levels of expression across developmental stages, including transcription factors, cell adhesion molecules, and intercellular and intracellular signaling molecules (Figure 4—figure supplement 1A–D). We focused on a select subset of genes composed of cell-type markers and candidate temporal competence factors (Figure 4B). Since neurogenesis is largely completed by E17 and signatures of gliogenesis could already be detected, we decided to focus our subsequent analyses on the neurogenic stages E11 and E14. To validate our in silico differential gene expression analysis, we performed single-molecule in situ hybridization (RNAscope) for selected mRNA transcripts and quantified the signals during early (E12) and late (E14) septal neurogenesis (Figure 4C–H). We selected genes that were differentially expressed either at E11 or E14 and compared their expression in the septum proper (rostral) and the septal eminence (caudal) within the relevant zone demarcated by the expression of cell-type marker genes (Nes for RG, Ascl1 for IP, and Dcx for NN). Transcripts for genes of interest were normalized to the relevant marker gene. In RG, Hmga2 was significantly enriched in E12 septum (Figure 4C and F), while Hes5 was enriched at E14 (Figure 4—figure supplement 1E). In IP, both Ccnd2 (Figure 4D and G) and Ccnd1 (Figure 4—figure supplement 1F) were significantly enriched at E14. The gene Prdm16, a known marker of RG in other areas of the telencephalon (Baizabal et al., 2018; Shimada et al., 2017), was clearly upregulated in late-born neurons (Figure 4E and H); the same was true for other markers generally expressed at later neurogenic stages, such as Nfia (Clark et al., 2019; Figure 4—figure supplement 1G). Together, our data provide a framework for characterizing dynamic gene expression as progenitors transition from generating MS neurons to LS neurons.
 
-## Morphology and distribution of temporal cohorts of neurons in the Nkx2.1 lineage
+![Figure 4.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig4-v2.jpg)
+
+**Figure 4.:** (A) Heatmaps illustrating all genes differentially enriched in the scRNA-Seq dataset across embryonic stages for the three cell types indicated in the cartoon: radial glia (RG, purple), intermediate progenitors (IP, red), and newborn neurons (NN, yellow). The Viridis color scale represents fold change over the mean, and applies to (A) and (B). (B) Heatmap showing the differential enrichment of a subset of selected genes, displayed as in (A). (C–E) Coronal brain sections showing the rostral septum at embryonic days (E)12 and 14, subjected to fluorescent single-molecule in situ hybridization for the genes Nes+ Hmga2 (C), Ascl1+ Ccnd2 (D), and Dcx+ Prdm16 (E). Cell-type marker mRNA puncta (Nes, Ascl1, and Dcx) are displayed in magenta, mRNA puncta for differentially enriched genes (Hmga2, Ccnd2, and Prdm16) in green, and DAPI counterstaining in blue. Yellow dashed lines in (C) mark the limit between ventricular zone (VZ) and mantle zone (MZ), as indicated. Dashed boxes indicate the location of the magnified 100 × 100 µm fields shown below, both as merged images (middle panels) and single channel for the corresponding differentially enriched genes (bottom panels). Scale bars: 100 µm (top panels), 25 µm (middle panels). (F–H) Quantification of density of mRNA puncta of differentially enriched genes, normalized to the density of cell-type marker mRNA; measurements were obtained from the rostral (empty symbols) and caudal (full symbols) portions of the septum at E12 (circles) and E14 (triangles). All data points are represented; black bars represent the mean. Unpaired t-tests were performed; p-values are indicated above the corresponding compared sets of data: those highlighted in bold indicate statistically significant differences (p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Heatmaps of differentially enriched classes of genes across embryonic stages for the three indicated cell types: radial glia (RG), intermediate progenitors (IP), and newborn neurons (NN), and sorted by biological function category: (A) cell adhesion genes; (B) cell-cell signaling genes; (C) transcription factors; (D) intracellular signaling. The Viridis color scale between (A) and (B) represents fold change over the mean, and applies to panels (A–D). (E, F) Quantification of mRNA puncta density of differentially enriched genes (E, Hes5; F, Ccnd1; G, Nfia), normalized to the density of cell-type marker mRNA (E, Nes; F, Ascl1; G, Dcx). Measurements were obtained from the rostral (empty symbols) and caudal (full symbols) portions of the septum at E12 (circles) and E14 (triangles). All data points are represented; black bars represent the mean. Unpaired t-tests were performed; p-values are indicated above the corresponding compared sets of data: those highlighted in bold indicate statistically significant differences (p<0.05).
+
+### Morphology and distribution of temporal cohorts of neurons in the Nkx2.1 lineage
 
 Septal neurons are born in a defined medial-to-lateral temporal sequence, where the MS is generated early in neurogenesis and later-born neurons are allocated to progressively more lateral positions (Creps, 1974; Wei et al., 2012). Our molecular profiling data suggest that the temporally defined molecular states of septal progenitors and neuronal precursors correlate with the production of specific cell fates. To better understand how birthdate affects the specification of neurons derived from the septal eminence, we used an intersectional approach based on Ascl1 expression by fate-restricted neurogenic progenitors within the Nkx2.1 lineage (Kelly et al., 2018; Kelly et al., 2019; Figure 5A). We combined the Nkx2.1-Flp driver mouse line with a tamoxifen (TMX)-inducible Ascl1-CreERT2 line and the intersectional Ai65 reporter line, which expresses the fluorescent protein tdTomato in a Cre- and Flp-dependent manner (Figure 5B). Administration of tamoxifen causes the expression of tdTomato in cells with a developmental history of Nkx2.1 expression that are undergoing a peak of Ascl1 expression, leading to a neurogenic division (Kelly et al., 2019). We administered tamoxifen to timed-pregnant dams at four embryonic timepoints spanning the neurogenic period (E10, E12, E14, and E16) and collected the brains of their progeny at P30 when development of the septum is complete (Figure 5C). Temporally defined cohorts of tdTomato-expressing cells were distributed primarily within the LS (Figure 5D). Cells labeled at different stages were not only distributed in a general medial-to-lateral pattern, as expected (Creps, 1974), but also in a roughly medial-to-dorsal-to-ventral one. Considering the temporal dynamics and viewing each temporal cohort as a still picture within a sequence, this pattern can be compared to water in a fountain or a fireworks display, whereby cells are initially located in the center of an upward stream, ‘moving’ into more dorsal positions until they reach the apex and then ‘falling on the outside’ to progressively more ventral positions (Figure 5D and E, Figure 5—figure supplement 1C). This is consistent with a previous study where the authors proposed that specific neuronal subtypes might follow specific birthdate patterns divergent from the general medial-to-lateral order (Wei et al., 2012). We adopted and extended the classification of morphological types of LS neurons described by Alonso and Frotscher, 1989 to determine the extent of morphological diversity within each neuronal temporal cohort. We found the same morphological neuronal types regardless of their location within the different nuclei within the LS, We therefore designated labeled cells as types I, II, and III, irrespective of their allocation to LSd, LSi, or LSv, as follows (see Materials and methods for further details): type I neurons, with relatively few thick dendrites forming a spherical contour; type II neurons, with thinner and branched dendrites; we propose to further subdivide the morphological types by adding a neuronal type III, with thick, spine-dense dendrites forming a bipolar dendritic field (Figure 5F). With the exception of E16, where only a few mostly type II cells were present in the LSv, there were neurons of all three types in each temporal cohort labeled, with slight changes in their overall proportions (Figure 5G). Type I cells were most abundant in the LSd; type II neurons were prevalent across all LS areas and temporal cohorts, and the proportion of type III cells was highest in the E14 cohort, and practically confined to LSd and LSi (Figure 5—figure supplement 1A). Type II neurons could be further classified into three subgroups based upon the morphology of their dendrites; type IIa, with overall thicker dendrites; type IIb, with a thick initial dendritic segment bifurcating into thinner processes, and type IIc, with thin and long dendrites (Figure 5—figure supplement 1B). The LSd/LSi location and bipolar shape of the dendritic field of type III neurons are likely reflective of unique functional/connectivity properties, which will require further investigation (Figure 5—figure supplement 1C). Taken together, our data suggest that while the output of morphological neuron types remains relatively stable over the course of neurogenesis, their allocation across LS nuclei is strongly associated with birthdate. This set of experiments confirms that while septal neurogenesis generally follows a medial-to-lateral organization, certain subsets of neurons, such as those from septal eminence progenitors, follow slightly different patterns (Wei et al., 2012). We expand upon the morphological classes proposed by Alonso and Frotscher, describing the newly defined type III neurons.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of neurogenesis in the septal eminence: radial glia (RG) (purple) within the Nkx2.1 lineage give rise to Ascl1-expressing transit-amplifying progenitors (red), which in turn divide to generate neurons. (B) Two driver lines, Nkx2.1-Flp and Ascl1-CreERT2, were crossed with an intersectional reporter line. The action of both Flp and Cre recombinases (i.e., within the Nkx2.1 lineage and in the presence of tamoxifen) leads to the expression of the fluorescent reporter tdTomato. (C) Experimental design: tamoxifen was administered to pregnant dams at embryonic day (E)10, E12, E14, or E16, covering the entire septal neurogenic period. Resulting litters were sacrificed and analyzed at postnatal day (P)30. (D) Representative images of coronal sections through the septum of P30 mice in which recombination was induced at the indicated stages. Cells derived from terminal progenitor divisions are labeled with tdTomato (gray; counterstained with DAPI, blue). Scale bars, 100 µm. (E) Quantification of the location of tdTomato+ cells in each septal nucleus as a percentage of total labeled cells (mean ± SD) within each temporal cohort. The number of biological replicates is indicated above each bar. (F) Representative images of neurons belonging to the three morphological subtypes within each LS nucleus, labeled with tdTomato (gray; counterstained with DAPI, blue). Arrows indicate the cell bodies of corresponding neuronal types. Scale bars, 50 µm. (G) Quantification of morphological neuron types as a percentage of the total number of classified cells (mean ± SD) within each temporal cohort. The total number of classified cells is indicated on the left side of the corresponding column; the number of biological replicates is the same as in (E) except for the E14 timepoint (N = 7).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71545/elife-71545-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of the distribution of the three main morphological neuron types in the dorsal (LSd, left), intermediate (LSi, middle), and ventral (LSv, right) nuclei of the lateral septum. Cells in each septal nucleus, represented as a percentage of total classified cells (mean ± SD) within each temporal cohort. (B) Proposed subdivision of morphological neuron type II into three subtypes: IIa (thick dendrites); type IIb (thick initial dendritic segments [arrowhead] that branch out into thinner processes); and type IIc (thin dendrites). Images show cells labeled with tdTomato (gray; counterstained with DAPI, blue); arrows indicate the somata of neurons within each proposed subtype. Quantification of each subtype (as % of total type II cells, mean ± SD) within each LS subdivision within the E14 temporal cohort. (C) Graphical summary of the distribution and morphological types of LS neurons derived from the septal eminence within each temporal cohort.
 
 ## Discussion
 
@@ -80,73 +120,342 @@ The initial exploration of P30 samples within our dataset has yielded several pr
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ASCL1</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 556604;RRID:AB_396479</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Aves</td>
+      <td>Cat# GFP-1020;RRID:AB_10000240</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-pH3</td>
+      <td>Abcam</td>
+      <td>Cat # ab10543; RRID:AB_2295065</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-NeuN</td>
+      <td>Millipore</td>
+      <td>Cat# MAB377; RRID:AB_2298772</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NKX2.1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-53136;RRID:AB_793529</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-RFP</td>
+      <td>Rockland</td>
+      <td>Cat# 600-901-379; RRID:AB_10704808</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RFP</td>
+      <td>Rockland</td>
+      <td>Cat# 600-401-379; RRID:AB_2209751</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ZIC</td>
+      <td>Segal Lab, DFCI;Borghesani et al., 2002</td>
+      <td>n/a (gift)</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-chicken Alexa 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11039; RRID:AB_142924</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-chicken Alexa 546</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11040; RRID:AB_1500590</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse Alexa 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11001; RRID:AB_2534069</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Alexa 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11008; RRID:AB_143165</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Alexa 546</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11010; RRID:AB_2534077</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rat Alexa 647</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A21247; RRID:AB_141778</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J (‘Ai14’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 007914; RRID:IMSR_JAX:007914</td>
+      <td>(Gt(ROSA)26Sor)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6;129S-Gt(ROSA)26Sortm65.1(CAG-tdTomato)Hze/J (‘Ai65’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 021875; RID:IMSR_JAX:021875</td>
+      <td>(Gt(ROSA)26Sor)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>STOCK Ascl1tm1.1(Cre/ERT2)Jejo/J(‘Ascl1-CreERT2’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 012882; RRID:IMSR_JAX:012882</td>
+      <td>(Ascl1)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>CD-1 (‘wildtype; WT’ in text)</td>
+      <td>Charles River</td>
+      <td>Strain code 022; RRID:IMSR_CRL:022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm1.3(CAG-tdTomato,-EGFP)Pjen/J (‘FLTG’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 026932; RRID:IMSR_JAX:026932</td>
+      <td>(Gt(ROSA)26Sor)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J-Tg(Nkx2-1-cre)2Sand/J (‘Nkx2.1-Cre’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 008661; RRID:IMSR_JAX:008661</td>
+      <td>(Nkx2-1)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Nkx2-1tm2.1(flpo)Zjh/J(‘Nkx2.1-Flp’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 028577; RRID:IMSR_JAX:028577</td>
+      <td>(Nkx2-1)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>STOCK Tg(Prkcd-glc-1/CFP,cre)EH124Gsat/Mmucd (‘Prkcd-Cre’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>MMRRC:011559; RRID:MMRRC_011559-UCD</td>
+      <td>(Prkcd)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6;129-Gt(ROSA)26Sortm5(CAG-Sun1/sfGFP)Nat/J (‘Sun1-GFP’ in text)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock no. 021039;RRID:IMSR_JAX:021039</td>
+      <td>(Gt(ROSA)26Sor) (Sun1)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Zic4-iCre (‘Zic4-Cre’ in text)</td>
+      <td>Kessaris Lab, UCL (Rubin et al., 2010)</td>
+      <td>Animal code A611(gift)</td>
+      <td>(Zic4)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ascl1 RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 313291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ccnd1 RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 442671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ccnd2 RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 433211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dcx RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 478671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hes5 RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 400998</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hmga2 RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 466641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nes RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 313161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nfia RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 586501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prdm16 RNAscope probe</td>
+      <td>ACD</td>
+      <td>Cat# 584281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji 2.1.0/1.53c</td>
+      <td>Schindelin et al., 2012</td>
+      <td>http://fiji.sc; RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (MATBOTS)</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All animal procedures conducted in this study followed experimental protocols approved by the Institutional Animal Care and Use Committee of Harvard Medical School. Mouse strains mentioned in the main text are listed in the Key resources table. Wild-type animals for single-cell sequencing and validation experiments were purchased as timed-pregnant females or as entire litters at the following developmental timepoints: E11, 14, and 17; and P3, 10, and 30. For all other experiments, mouse housing and husbandry were performed in accordance with the standards of the Harvard Medical School Center of Comparative Medicine. Mice were group housed in a 12 hr light/dark cycle, with access to food and water ad libitum. Samples were obtained at the ages indicated in the figure legends and throughout the text; for embryonic samples, the plug date was considered as E0. All results reported include animals of both sexes, balanced equally wherever possible; the sex of embryos and P3 animals was not determined. The number of animals used for each experiment (i.e., biological replicates) is indicated in the corresponding graphs where possible. The number of animals used for scRNA-Seq experiments was (the number of cells that passed the initial quality controls for each stage is indicated in brackets): E11 – 35 embryos from three litters (25,829 cells); E14 – 33 embryos from three litters (19,555 cells); E17 – 8 embryos from two litters (10,526 cells); P3 – 4 pups from two litters (7355 cells); P10 – 2 pups (one male, one female) from one litter (4833 cells); P30 – 2 males and 2 females from one litter (6456 cells).
 
-## Method details
+### Method details
 
-## Dissection, single-cell suspension and droplet capture
+#### Dissection, single-cell suspension and droplet capture
 
 For embryonic samples, the pregnant dam was sacrificed; embryos were removed from the uterus and maintained in Hibernate-E medium minus CaCl2 (HEMC), on ice for the remainder of the procedure. Postnatal animals were deeply anesthetized and transcardially perfused with ice-cold PBS. Brains were extracted and transferred to dissection medium (HEMC +0.1 mg/ml DNAse I). All septa (MGEs were also collected from embryonic samples) were manually dissected out and lightly minced with the dissection forceps, then transferred with a minimum amount of medium to an Eppendorf tube containing 1 ml of Accutase and 0.1 mg/ml of DNAse I. They were then incubated, rocking at 4°C, for 10–15 min. The tube was then centrifuged at 1000 rpm, at 4°C, for 1–2 min. After discarding the supernatant, the tissue was resuspended in 1 ml of dissection medium and dissociated by gently pipetting up and down, first with a 1000 µl pipette tip (10–15 times), and subsequently with a 200 µl tip (10 times), both loaded to half to two-thirds capacity. The suspension was centrifuged at 1000 rpm, at 4°C, for 5 min. The supernatant was discarded, and cells were resuspended in 1 ml of HEMC and filtered through a 35 µm cell strainer and transferred to a clean low-adhesion Eppendorf tube. The resulting single-cell suspension was maintained on ice and subjected to single-cell droplet encapsulation with a custom microfluidic inDrops system at the Harvard Medical School Single Cell Core. Cell encapsulation and library preparation followed a previously described protocol (Klein et al., 2015; Zilionis et al., 2017), with modifications in the primer sequences as included in the Key resources table.
 
-## Single-cell RNA sequencing
+#### Single-cell RNA sequencing
 
 Libraries of approximately 3000 cells were collected from each sample. inDrops was performed as previously described (Hrvatin et al., 2018; Klein et al., 2015; Zilionis et al., 2017), generating indexed libraries that were then pooled and sequenced across eight runs on the NextSeq 500 (Illumina) platform.
 
-## inDrops sequencing data processing
+#### inDrops sequencing data processing
 
 Transcripts were processed according to a previously published pipeline (Hrvatin et al., 2018; Klein et al., 2015; Zilionis et al., 2017). Briefly, this pipeline was used to build a custom transcriptome from the Ensembl GRCm38 genome and GRCm38.88 annotation with Bowtie 1.1.1 (after filtering the annotation gtf file (ftp://ftp.ensembl.org/pub/release-88/gtf/mus_musculus/Mus_musculus.GRCm38.88.gtf.gz filtered for feature_type = ‘gene’, gene_type = ‘protein_coding’ and gene_status = ‘KNOWN’)). Read quality control and mapping against this transcriptome were then performed. Finally, unique molecular identifiers were used to reference sequence reads back to individual captured molecules, thus yielding values denoted as UMI counts. All steps of the pipeline were run with default parameters unless explicitly specified.
 
-## Quality control for cell inclusion
+#### Quality control for cell inclusion
 
 Cells from each timepoint (E11, E14, E17, P3, P10, P30) were preprocessed separately. Any cells with fewer than 700 or more than 10,000 transcript counts were excluded from the analysis. Any cells in which >50% of UMIs mapped to mitochondrial genes were excluded. The dataset was normalized (NormalizeData()), variable genes identified (FindVariableGenes(x.low.cutoff = 0.0125, x.high.cutoff = 3, y.cutoff = 0.5)). The data were scaled using variable genes and a negative binomial model with the percentage of mitochondrial genes and the number of UMIs per cell regressed (ScaleData(vars.to.regress = c("percent.mito", "nUMI"), genes.use = seurat_mat@var.genes, model.use = "negbinom")). PCA analysis, clustering, t-SNE plotting, and marker identification were performed using recommended parameters: RunPCA(pc.genes = seurat_mat@var.genes, pcs.compute = 40, pcs.print = 1:30, maxit = 500, weight.by.var = FALSE); FindClusters(dims.use = 1:30, resolution = 1.5, print.output = 1, save.SNN = T,reduction.type = "pca"); RunTSNE(dims.use = 1:30, do.fast = T); FindAllMarkers(only.pos = F, min.pct = 0.1, thresh.use = 0.25). By inspection of the t-SNE plots and marker genes, 1–3 clusters were identified at each timepoint as likely doublet clusters and those cells were excluded from further analysis. Our dataset after quality control contained 72,243 cells with more than 700 reads assigned to each cell.
 
-## Dimensionality reduction and clustering
+#### Dimensionality reduction and clustering
 
 All 72,243 cells were combined into a single dataset and analyzed simultaneously. The R software package Seurat (Butler et al., 2018; Satija et al., 2015) was used to cluster cells. First, the data were log-normalized and scaled to 10,000 transcripts per cell. Variable genes were identified using the FindVariableGenes() function. The following parameters were used to set the minimum and maximum average expression and the minimum dispersion: x.low.cutoff = 0.0125, x.high.cutoff = 3, y.cutoff = 0.5. Next, the data were scaled using the ScaleData() function, and principal component analysis (PCA) was carried out. The FindClusters() function using the top 30 principal components (PCs) and a resolution of 1.5 was used to determine the initial 32 clusters.
 
-## SPRING
+#### SPRING
 
 SPRING plots were generated using the standard SPRING pipeline (Weinreb et al., 2018) with modifications described in Weinreb et al., 2020. Briefly, UNI counts were total counts normalized (without log-normalization) and filtered for highly variable genes. Gene expression values were standardized to zero mean and unit variance, and a low-dimensional embedding was estimated with PCA. The final 2D layout was produced by applying the ForceAtlas2 graph layout algorithm to a k-nearest-neighbor graph over PCA coordinates with k = 3.
 
 The SPRING plots described in the paper and their data can be visualized and explored in the following webpages:
 
-## Bioinformatic analyses: cluster ID and differential gene expression
+#### Bioinformatic analyses: cluster ID and differential gene expression
 
 Clusters were assigned a cell-type label by manual inspection of marker gene expression. We curated a list of known markers from the literature and constructed as cluster-by-marker heatmap as follows: UMI counts for each cell were total counts normalized (no log-normalization). The normalized counts were used to compute an average gene expression level for each marker in each cluster. The cluster averages for each gene were then standardized to zero mean and unit variance for visualization on a common scale.
 
 Differential expression across timepoints was performed separately for each cell type using the ‘rank_genes_groups’ function in scanpy (Wolf et al., 2018). We followed the recommended preprocessing and used default parameters: cells were total counts normalized and then log transformed with pseudocount 1. A t-test was used to test significance with Benjamini–Hochberg correction for multiple hypotheses. Heatmaps for differentially expressed genes report the degree of enrichment as fold change over the average expression across timepoints.
 
-## Tamoxifen administration
+#### Tamoxifen administration
 
 For temporal cohort analyses (Figure 5), pregnant dams were administered 1–3 mg of tamoxifen (stock solution 10 mg/ml in corn oil) via oral gavage, at the corresponding embryonic stage.
 
-## Tissue processing for immunofluorescence staining and fluorescent in situ hybridization (FISH)
+#### Tissue processing for immunofluorescence staining and fluorescent in situ hybridization (FISH)
 
 Postnatal animals were transcardially perfused with PBS followed by 4% paraformaldehyde (PFA) in 120 mM phosphate buffer; their brains were dissected out and postfixed in 4% PFA overnight at 4°C. Brains were sectioned into 75–100 µm sections on a vibratome, and either further processed for FISH and/or immunofluorescence staining or stored at 4°C in PBS with 0.05% sodium azide. Embryonic brains were dissected out in ice-cold PBS and fixed in 4% PFA overnight at 4°C. The samples were cryoprotected in 30% sucrose/PBS overnight at 4°C, embedded in O.C.T. compound, frozen on dry ice, and stored at –20°C. Samples were sectioned at 20 µm on a cryostat; sections were either stored at –20°C or further processed for FISH and/or immunofluorescence staining.
 
-## Immunofluorescence staining
+#### Immunofluorescence staining
 
-## Floating vibratome sections
+##### Floating vibratome sections
 
 Samples were permeabilized with 0.5% Triton X-100 in PBS for 1–2 hr and blocked in blocking buffer (10% goat serum, 0.1% Triton X-100 in PBS) for 1–2 hr at room temperature. The sections were then incubated for 24–72 hr, at 4°C, with primary antibodies diluted in blocking buffer. The samples were washed three times (10–30 min/wash) with PBS, counterstained with 4′,6-diamidino-phenylindole (DAPI) for 45 min (both steps at room temperature), and incubated with secondary antibodies diluted in blocking buffer for 2 hr at room temperature or overnight at 4°C. They were then washed (three 10–30 min washes) and mounted on slides with ProLong Gold Antifade Mountant.
 
-## Cryosections
+##### Cryosections
 
 Slides were allowed to reach room temperature, and then washed three times with PBS. Sections were permeabilized with 0.5% Triton X-100 in PBS for 30 min and blocked with blocking buffer for 1 hr at room temperature. Slides were incubated with primary antibodies diluted in blocking buffer overnight in a humid chamber at 4°C. They were then washed with PBS (three 10–30 min washes), counterstained with DAPI (45 min), and incubated for 1–2 hr with secondary antibodies diluted in blocking buffer, at room temperature. Slides were washed (three 10–30 min washes) with PBS and mounted with ProLong Gold Antifade Mountant.
 
-## FISH
+### FISH
 
 Embryonic samples at E12 and E14, prepared as outlined above, were submitted to the RNAscope protocol (Advanced Cell Diagnostics), following the manufacturer’s instructions with minor modifications. All RNAscope probes (as listed in the Key resources table) were purchased from ACD. Additional in situ images were obtained from the Allen Developing Mouse Brain Atlas (Figure 1G and H, Figure 1—figure supplement 2) and from the Allen Mouse Brain Atlas (Lein et al., 2007; Figure 1—figure supplement 3B and C).
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Images were acquired using a Leica SP8 laser point scanning confocal microscope. 10×, 25×, and 40× objectives were used, and the parameters of image acquisition (speed, resolution, averaging, zoom, z-stack, etc.) were adjusted for each set of samples. Images were further analyzed using ImageJ, both in its native and Fiji distributions, as described below. Brightness and contrast were adjusted as necessary for visualization; the source images were kept unmodified.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Cell quantification
+#### Cell quantification
 
 The CellCounter tool in ImageJ/Fiji was used for all cell quantifications. In the mature septum (Figures 3 and 5), all cells positive for the corresponding marker within the dorsal, intermediate, and ventral nuclei of the LS (labeled in graphs as LSd, LSi, and LSv, respectively), as well as in the medial septal nucleus (MS) were counted. In Figure 3D–F and Figure 3—figure supplement 1A, D and E, the rostral, medial, and caudal (R/M/C) locations correspond approximately to Bregma +0.75, +0.5, and +0.25, respectively.
 
@@ -158,6 +467,6 @@ Quantification of RNAscope puncta (Figure 4, Figure 4—figure supplement 1) was
 
 Cell and RNA puncta numbers were compiled in Microsoft Excel spreadsheets; GraphPad Prism 9 was used to build graphs.
 
-## Statistical analysis
+#### Statistical analysis
 
 All statistical analyses were performed with GraphPad Prism 9, as detailed in the figure legends. All p-values were rounded to ten thousandth and are presented above each statistical comparison in the corresponding figures; those highlighted in bold are below 0.05, which was considered the cutoff for statistical significance (p-values deemed not statistically significant under this criterion are displayed in regular type).

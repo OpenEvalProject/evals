@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03yjb2x39 Faculty of Kinesiology and Department of Biomedical Engineering, University of Calgary Calgary Canada
+1. Faculty of Kinesiology and Department of Biomedical Engineering, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
 
 † Corresponding author
 

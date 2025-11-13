@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.31668.001 Models for regulation of the eukaryotic heat shock response typically invoke a negative feedback loop consisting of the transcriptional activator Hsf1 and a molecular chaperone. Previously we identified Hsp70 as the chaperone responsible for Hsf1 repression and constructed a mathematical model that recapitulated the yeast heat shock response (Zheng et al., 2016). The model was based on two assumptions: dissociation of Hsp70 activates Hsf1, and transcriptional induction of Hsp70 deactivates Hsf1. Here we validate these assumptions. First, we severed the feedback loop by uncoupling Hsp70 expression from Hsf1 regulation. As predicted by the model, Hsf1 was unable to efficiently deactivate in the absence of Hsp70 transcriptional induction. Next, we mapped a discrete Hsp70 binding site on Hsf1 to a C-terminal segment known as conserved element 2 (CE2). In vitro, CE2 binds to Hsp70 with low affinity (9 µM), in agreement with model requirements. In cells, removal of CE2 resulted in increased basal Hsf1 activity and delayed deactivation during heat shock, while tandem repeats of CE2 sped up Hsf1 deactivation. Finally, we uncovered a role for the N-terminal domain of Hsf1 in negatively regulating DNA binding. These results reveal the quantitative control mechanisms underlying the heat shock response.
+Models for regulation of the eukaryotic heat shock response typically invoke a negative feedback loop consisting of the transcriptional activator Hsf1 and a molecular chaperone. Previously we identified Hsp70 as the chaperone responsible for Hsf1 repression and constructed a mathematical model that recapitulated the yeast heat shock response (Zheng et al., 2016). The model was based on two assumptions: dissociation of Hsp70 activates Hsf1, and transcriptional induction of Hsp70 deactivates Hsf1. Here we validate these assumptions. First, we severed the feedback loop by uncoupling Hsp70 expression from Hsf1 regulation. As predicted by the model, Hsf1 was unable to efficiently deactivate in the absence of Hsp70 transcriptional induction. Next, we mapped a discrete Hsp70 binding site on Hsf1 to a C-terminal segment known as conserved element 2 (CE2). In vitro, CE2 binds to Hsp70 with low affinity (9 µM), in agreement with model requirements. In cells, removal of CE2 resulted in increased basal Hsf1 activity and delayed deactivation during heat shock, while tandem repeats of CE2 sped up Hsf1 deactivation. Finally, we uncovered a role for the N-terminal domain of Hsf1 in negatively regulating DNA binding. These results reveal the quantitative control mechanisms underlying the heat shock response.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ Based on these results, we generated a mathematical model of the yeast heat shoc
 
 ## Results
 
-## Hsp70-mediated negative feedback is required to deactivate Hsf1
+### Hsp70-mediated negative feedback is required to deactivate Hsf1
 
 Our model of the heat shock response is centered on a feedback loop in which Hsf1 regulates expression of its negative modulator, Hsp70 (Figure 1A). When the temperature is raised, the concentration of unfolded proteins exceeds the capacity of Hsp70. Hsp70 is titrated away from Hsf1, freeing Hsf1 to induce more Hsp70. Once sufficient Hsp70 has been produced to restore proteostasis, Hsp70 binds and deactivates Hsf1. In addition to producing more Hsp70, Hsf1 also induces expression of an inert YFP reporter that can be used as a proxy for Hsf1 activity. In the yeast strains used here, this YFP reporter is integrated into the genome under the control of a promoter containing four repeats of the heat shock cis-element (4xHSE) recognized by Hsf1 (Zheng et al., 2016).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig1-v3.jpg)
+
+**Figure 1.:** (A) The Hsf1 regulatory circuit described by the mathematical model. To generate the feedback-severed yeast strain (∆FBL), all four Hsp70 paralogs (SSA1/2/3/4) were deleted from the genome and 2 copies of SSA2 under the control of the Hsf1-independent TEF1 promoter were integrated to achieve comparable Hsp70 expression under basal conditions. (B) Simulated and experimental heat shock time courses comparing the HSE-YFP reporter in wild type and ∆FBL cells. The experimental points represent the average of the median HSE-YFP level in three biological replicates, and the error bars are the standard deviation of the replicates. (C) Western blot of the expression of Hsp70 (Ssa1/2), the Hsf1 and glycolytic enzyme GAPDH (Tdh1/2/3) in wild type and ∆FBL cells under non-heat shock and 60 min heat shock conditions. The values for the ratio of Ssa1/2:GAPDH are the average of two biological replicates. (D) Dilution series spot assay of wild type, ssa1/2∆ and ∆FBL cells grown at 30°C and 37°C for 36 hr. (E) Wild type and ∆FBL cells expressing the Hsp104-mKate aggregation reporter along with the HSE-YFP imaged over a heat shock time course showing transient accumulation of Hsp104 foci and sustained induction of HSE-YFP levels in the ∆FBL cells. (F) Quantification of the number of Hsp104-mKate foci in wild type and ∆FBL cells over a heat shock time course. N > 100 cells for each time point. Error bars represent the standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The original value for β was 1.778 min−1 and the updated value is 0.3557 min−1.
 
 To test the model, we severed the feedback loop, both computationally and experimentally, and monitored Hsf1 activity over time following a shift from 25°C to 39°C by simulating and measuring the HSE-YFP reporter. We cut the feedback loop in the mathematical model by removing the equation relating the production of Hsp70 to the concentration of free Hsf1 without changing any parameters or initial conditions. In the absence of Hsf1-dependent transcription of Hsp70, the model predicted that the HSE-YFP reporter should be activated with the same kinetics as that of the wild type, but should continue to accumulate long after the response is attenuated in the wild type (Figure 1B).
 
@@ -47,29 +55,53 @@ To experimentally test this in yeast cells, we decoupled expression of all four 
 
 The inability of Hsf1 to deactivate in the ∆FBL strain could result either from a specific disruption of the ‘OFF switch’ or from a general failure of the cells to restore proteostasis. In other words, does cutting the feedback loop simply result in sustained stress, or is the prolonged Hsf1 activity the result of specifically breaking its deactivation mechanism? To distinguish these possibilities, we first compared growth of wild type, ∆FBL and ssa1/2∆ cells at 30°C and 37°C. The ssa1/2∆ cells – which retain viability due to Hsf1-mediated induction of SSA3/4 – displayed severely impaired growth at 30°C and were inviable at 37°C (Figure 1D). By contrast, the wild type and ∆FBL strains grew equally at 30°C, and the ∆FBL strain showed only a slight reduction in growth at 37°C (Figure 1D). Surprisingly, removal of both SSA3 and SSA4 – the major heat shock-inducible Hsp70 genes in yeast – had only modest phenotypic consequences at elevated temperature. The reduced growth of the ∆FBL mutant at 37°C could be a consequence of either an inadequate or overzealous heat shock response, and does not necessarily indicate a general failure to restore proteostasis. To directly monitor the loss and restoration of proteostasis, we imaged wild type and ∆FBL cells expressing Hsp104-mKate over a heat shock time course. Hsp104 is a disaggregase that forms puncta marking protein aggregates when tagged with a fluorescent protein (Solís et al., 2016). Upon acute heat shock, the number of Hsp104-mKate foci spiked in both wild type and ∆FBL cells, but dissolved with the same kinetics in both strains (Figure 1E,F). These data suggest that the ∆FBL cells can restore proteostasis just as efficiently as wild type cells and that the prolonged Hsf1 activation in the ∆FBL cells is due to a spdeactivation defect. Since Hsp104 requires Hsp70 for efficient activity (Seyffer et al., 2012; Winkler et al., 2012), there must be sufficient Hsp70 expressed under basal conditions to allow Hsp104 to operate. While Hsp104 may not recognize all classes of unfolded proteins and aggregates, these results suggest that the transcriptional negative feedback loop is required to deactivate Hsf1 once proteostasis has been restored.
 
-## Scanning mutagenesis reveals three independent repressive segments in Hsf1
+### Scanning mutagenesis reveals three independent repressive segments in Hsf1
 
 In addition to positioning the transcriptional feedback loop as the core regulatory circuit that controls Hsf1 activity, the model also posits that Hsp70 binding is the mechanism that represses Hsf1. If this assumption were true, then disrupting the binding interaction should increase Hsf1 activity under non-heat shock conditions (Figure 2—figure supplement 1). To test this, we generated a series of 48 Hsf1 mutants in which we systematically removed 12 amino acid segments along the nonessential N- and C-terminal regions of Hsf1 (Figure 2A). We integrated these mutants into the genome as the only copy of HSF1 in a strain background bearing the HSE-YFP reporter and assayed for activity by measuring YFP levels under non-heat shock and heat shock conditions by flow cytometry (Zheng et al., 2016). To benchmark the assays, we used wild type Hsf1 and mutants lacking the entire N- and C-terminal regions. As previously shown, removal of the N-terminal region led to significantly increased Hsf1 activity under both non-heat shock and heat shock conditions in this assay (Sorger, 1990; Zheng et al., 2016), while removal of the C-terminal region significantly reduced Hsf1 activity under both conditions (Figure 2A). In the N-terminal region, we found two distinct 12 amino acid segments that when deleted resulted in increased Hsf1 activity (amino acids 85–96 and 121–132) (Figure 2A). In the C-terminal region, removal of two consecutive 12 amino acid segments as well as truncation of the final six amino acids resulted in increased Hsf1 activity (amino acids 528–539, 540–551 and 828–833) (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig2-v3.jpg)
+
+**Figure 2.:** (A) Screen for functional determinants. The indicated Hsf1 mutants were integrated into the genome as the only copy of Hsf1 expressed from the endogenous HSF1 promoter in a strain expressing the HSE-YFP reporter. Hsf1∆N is a deletion of the first 145 amino acids following the methionine; Hsf1∆C is a truncation of the last 409 amino acids of Hsf1, retaining the first 424 amino acids. Each mutant in the scanning deletion analysis is missing a stretch of 12 amino acids in either the N-terminal 149 residues or final 414 C-terminal residues. Each strain was assayed in triplicate for its HSE-YFP level under non-heat shock (NHS) and heat shock (HS) conditions by flow cytometry. The error bars are the standard deviation of the replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (B) Analysis of double and triple mutants of the functional segments. ∆N1 and ∆N2 represent ∆85–96 and ∆121–132, respectively, and each independently contribute to Hsf1 activity. CE2 is a region spanning the consecutive C-terminal determinants defined in (A) that is conserved among a subset of fungal species. Statistical significance was determined by one-way ANOVA comparing each double mutant to both of the single mutant parents (*p<0.05 for both tests).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The ‘wild type’ rate is 2.783 min−1 as in the previous iteration of the model (not shown on the graph) (Zheng et al., 2016).
+
 To determine if these segments acted independently, we generated double mutants. Combining the N-terminal deletions (∆85–96/∆121–132) resulted in a mutant with significantly greater basal activity than either of the single mutants, suggesting that these segments operate independently to repress Hsf1 activity (p<0.05, Figure 2B). We will refer to these N-terminal segments as N1 and N2. By contrast, combining the consecutive C-terminal segments (∆528–539/∆540–551) resulted in a double mutant with the same activity as the single deletions, suggesting that a unique functional determinant encompasses these segments (Figure 2B). Consistent with this notion, a region spanning these two segments comprises a previously identified element conserved in Hsf1 in other fungal species known as ‘conserved element 2’ (CE2) (Figure 2B) (Jakobsen and Pelham, 1991; Nicholls et al., 2011). Indeed, specific removal of CE2 was sufficient to match the increased level of Hsf1 activity observed in the ∆528–539/∆540–551 mutant (Figure 2B). Additional removal of the final six amino acids provided no further increase in Hsf1 activity, consistent with previous studies suggesting a non-additive interaction between these elements (Figure 2B) (Hashikawa and Sakurai, 2004; Yamamoto et al., 2007). However, combining the N1/N2 and CE2 deletions resulted in an Hsf1 mutant with significantly greater activity than either the ∆N1/∆N2 mutant or the ∆CE2 mutant (Figure 2B). Together, the scanning mutagenesis revealed three independent repressive segments on Hsf1 (N1, N2, and CE2).
 
-## The Hsf1 N-terminal region modulates DNA binding
+### The Hsf1 N-terminal region modulates DNA binding
 
 The segments we identified with increased HSE-YFP levels could function either by enhancing the association of Hsf1 with HSEs (i.e., increasing DNA binding) or by boosting the transactivation capacity of Hsf1 (i.e., increasing recruitment of the transcriptional machinery). To directly test the ability to bind to HSEs in cells, we performed chromatin immunoprecipitation (ChIP) of wild type Hsf1, Hsf1∆N, Hsf1∆C, Hsf1∆N1/∆N2, Hsf1∆CE2 and Hsf1∆N1/∆N2/∆CE2 under non-heat shock and acute (5 min) heat shock conditions. Following ChIP enrichment, we assayed for association with the synthetic 4xHSE promoter that drives the YFP reporter as well as five endogenous target gene promoters (HSC82, HSP82, SSA4, HSP26 and TMA10) by qPCR. Under non-heat shock conditions, wild type Hsf1 binding ranged over nearly two orders of magnitude across these targets, from 0.14% of input at the TMA10 promoter to 12.0% of input at the 4xHSE promoter (Figure 3—figure supplement 1A). Upon acute heat shock, the inducibility of Hsf1 binding also varied widely across these targets, with induction of greater than 100-fold for TMA10 and less than 1.5-fold for HSC82 (Figure 3—figure supplement 1A). These data are inconsistent with the notion that Hsf1 is constitutively bound to its target genes (Gross et al., 1990; Jakobsen and Pelham, 1988; Sorger et al., 1987).
 
 Interestingly, the Hsf1∆N mutant showed significantly increased association with the 4xHSE and SSA4 promoters under non-heat shock conditions (Figure 3A, Figure 3—figure supplement 1A). This increased binding to the 4xHSE promoter was accompanied by increased transcriptional output of the YFP reporter in Hsf1∆N cells (Figure 3B). Northern blot analysis of expression of the endogenous SSA transcripts corroborated the HSE-YFP results (Figure 3—figure supplement 1B). These data suggest a simple relationship between DNA binding and transcription for the Hsf1∆N mutant: the N-terminal region of Hsf1 inhibits DNA binding and thereby reduces transcriptional activity.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig3-v3.jpg)
+
+**Figure 3.:** (A) Chromatin immunoprecipitation of Hsf1 followed by quantitative PCR of the 4xHSE promoter in the indicated Hsf1 wild type and mutant strains under non-heat shock and heat shock conditions (solid and outlined bars, respectively). Error bars show the standard deviation of biological replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (B) Relationship between Hsf1 binding at the 4xHSE promoter as determined by ChIP-qPCR and transcriptional activity as measured by levels of the HSE-YFP reporter under non-heat shock (NHS) and heat shock (HS) conditions for the panel of mutants assayed in (A).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) ChIP-qPCR of Hsf1 mutants at endogenous target promoters under non-heat shock and 39°C heat shock conditions. Error bars show the standard deviation of biological replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (B) Northern blot analysis of SSA transcripts under non-heat shock conditions and following a 30 min heat shock at 39°C. The labeled probe recognizes all four SSA paralogs of Hsp70. The probe was generated by random priming off a 500 bp PCR product of a region of conserved sequence shared by SSA1/2/3/4.
+
 Consistent with a role for the N-terminal segment in regulating DNA binding, the Hsf1∆N1/∆N2 mutant mirrored Hsf1∆N in both its increased binding to the 4xHSE promoter and increased transcription of the YFP reporter under non-heat shock conditions relative to wild type (Figure 3A,B). However, unlike the complete ablation of the N-terminal region, Hsf1∆N1/∆N2 showed no increase in association with the SSA4 promoter compared to wild type (Figure 3—figure supplement 1A), suggesting that its enhanced association with endogenous targets may be limited. Neither Hsf1∆CE2 nor Hsf1∆N1/∆N2/∆CE2 showed significant differences compared to wild type at any of the six target promoters under either non-heat shock or heat shock conditions, indicating that CE2 has no effect on Hsf1 DNA binding (Figure 3—figure supplement 1). Remarkably, under heat shock conditions, none of the five mutants showed significant differences in binding to the 4xHSE promoter compared to wild type (Figure 3A). Thus, during heat shock, the differences in YFP reporter levels reflect the different transactivation abilities of the series of mutants, spanning more than 16-fold between Hsf1∆C and Hsf1∆N1/∆N2/∆CE2 (Figure 3B). Taken together, the ChIP results suggest that the N-terminal region inhibits DNA binding at select promoters with a major contribution from the N1 and N2 segments. This effect may be direct, reflecting an intrinsically higher affinity of Hsf1∆N or Hsf1∆N1/∆N2 for DNA, or indirect, a consequence of enhanced ability to recruit chromatin remodeling enzymes to open local chromatin structure.
 
-## CE2 is necessary for Hsf1 to bind to Hsp70
+### CE2 is necessary for Hsf1 to bind to Hsp70
 
 Since CE2 affects Hsf1 transactivation but not DNA binding, we hypothesized that it could be a binding site for Hsp70. To test this, we performed serial immunoprecipitation from whole cell lysates followed by mass spectrometry (IP/MS) of 3xFLAG/V5-tagged Hsf1 mutants to identify specific interactions with chaperone proteins (Zheng and Pincus, 2017). We measured Hsp70 binding to wild type Hsf1, Hsf1∆N, Hsf1∆C, Hsf1∆N1/∆N2, Hsf1∆CE2 and Hsf1∆N1/∆N2/∆CE2 under non-heat shock conditions, performing three biological replicates for each. Removal of the entire N-terminal region or the N1/N2 segments had no effect on Hsp70 binding relative to wild type (Figure 4A). By contrast, removal of the full C-terminal region significantly reduced the association of Hsf1 with Hsp70 (Figure 4A). Moreover, specific removal of CE2 – either alone or in combination with the N1/N2 deletions – also resulted in significantly diminished association with Hsp70, nearly matching removal of the entire C-terminal region (Figure 4A). Analysis of an additional biological replicate by Western blotting corroborated the IP/MS results (Figure 4A). The residual Hsp70 that co-precipitated with Hsf1∆CE2 was refractory to dissociation upon heat shock, suggesting that this secondary interaction is unlikely to be regulatory (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig4-v3.jpg)
+
+**Figure 4.:** (A) Co-immunoprecipitation of Hsf1 and Hsp70. The indicated Hsf1 mutants, C-terminally tagged with 3xFLAG-V5, were serially precipitated and subjected to mass spectrometry as described. The ratio of Hsp70 (Ssa1/2) to Hsf1 was determined in three biological replicates (bar graph, error bars are the standard deviation). Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). An additional replicate was analyzed by Western blot using antibodies against Ssa1/2 and the FLAG tag to recognize Hsf1. The FLAG blot was cropped in the middle to show the much smaller Hsf1∆C. The immunoblot results are not as quantitative as MS and therefore were not used in generating bar graph. (B) Cells expressing C-terminally 3xFLAG-V5-tagged wild type Hsf1 and Hsf1∆CE2 were either left untreated or heat shocked for 5 min at 39°C before serial Hsf1 immunoprecipitation and analyzed by Western blot using antibodies against Ssa1/2 and the FLAG tag to recognize Hsf1. (C) Cells expressing the indicated mutants of Hsf1, expressed as the only copy of Hsf1, were assayed for HSE-YFP levels under non-heat shock conditions by flow cytometry. The error bars are the standard deviation of three replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (D) In vitro Hsf1:Hsp70 binding assay. Recombinant Hsf1-V5 and 3xFLAG-Ssa2 were purified, incubated together and assayed for binding by anti-FLAG immunoprecipitation followed by epitope-tag-specific Western blot. Addition of 5-fold molar excess of wild type Hsf1-6xHIS but not Hsf1∆CE2-6xHIS diminished the amount of Hsf1-V5 bound to 3xFLAG-Ssa2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Untagged wild type Hsf1 and Hsf1∆CE2 were incubated at the indicated molar ratios and the amount of Hsf1-V5 bound to 3xFLAG-Ssa2 was quantified.
 
 If CE2 is a direct binding site for Hsp70, then its primary sequence should control the affinity. Since Hsp70 binds best to peptides with hydrophobic and basic amino acids (Van Durme et al., 2009), we reasoned that mutation of three basic residues in CE2 to acidic residues should disrupt Hsp70 binding and lead to increased Hsf1 activity under non-heat shock conditions. Indeed, the Hsf1R537E,K541D,R543E triple mutant (referred to as ce2-mut) displayed increased levels of the HSE-YFP reporter under non-heat shock conditions, phenocopying ∆CE2 (Figure 4C). Conversely, introduction of two additional repeats of the wild type CE2 sequence (3xCE2) into Hsf1 reduced the basal level of the reporter (Figure 4C).
 
 To test if CE2 is required for Hsf1 to directly bind to Hsp70, we utilized an in vitro binding assay we previously established to monitor interaction between recombinant purified Hsf1 and Hsp70 (Zheng et al., 2016). Whereas wild type Hsf1-6xHIS was able to outcompete wild type Hsf1-V5 for binding to Ssa2 (the most highly expressed yeast Hsp70) at 5-fold molar excess, Hsf1∆CE2-6xHIS was not (Figure 4D, Figure 4—figure supplement 1). Together, these results demonstrate that CE2 is necessary for Hsp70 to bind to Hsf1 and repress its basal activity.
 
-## CE2 is sufficient to bind to Hsp70
+### CE2 is sufficient to bind to Hsp70
 
 CE2 could be necessary for Hsf1 to bind to Hsp70 either because it is a direct binding site or because it influences the conformation of Hsp70 to expose a binding site located elsewhere. To test if CE2 is sufficient to bind to Hsp70, we developed an in vitro fluorescence polarization assay. We obtained synthetic peptides consisting of the wild type CE2 sequence or the ce2-mut sequence labeled at their N-termini with 5-carboxyfluorescein (5-FAM) (Figure 5A). Neither peptide aggregated in solution. We titrated the concentration of recombinant yeast Hsp70 (Ssa2) and measured polarization of the 5-FAM fluorophore. Using this assay, we determined that Ssa2 directly binds to CE2 with a dissociation constant (Kd) of 9 µM, while the Kd for the ce2-mut peptide is reduced more than 5-fold (extrapolated to be 52 µM).
 
@@ -79,9 +111,17 @@ CE2 could be necessary for Hsf1 to bind to Hsp70 either because it is a direct b
 
 To test if the CE2 sequence is sufficient to bind to Hsp70 in cells, we deployed the ‘decoy’ assay we previously developed as a proxy to monitor Hsp70 binding (Zheng et al., 2016). In this experiment, we overexpressed synthetic constructs fused to a scaffold consisting of the well-folded fluorescent protein mKate that we can use to quantify expression. If the sequence appended to mKate binds to Hsp70, then it will titrate Hsp70 from endogenous Hsf1 and we will observe activation of the HSE-YFP reporter (Figure 5B). As a positive control, we used the previous decoy construct containing the full Hsf1 N- and C-termini (NHsf1-CHsf1), and we used mKate alone as a negative control. Addition of a single CE2 sequence to mKate modestly but significantly increased the HSE-YFP level, while addition of two or three tandem CE2 segments dramatically induced the HSE-YFP reporter, to a greater extent than even the NHsf1-CHsf1 decoy (Figure 5C). By contrast, no induction was observed for the ce2-mut decoys, even in the presence of three tandem repeats (Figure 5C). Thus, both in vitro and in cells, CE2 is sufficient to bind to Hsp70.
 
-## Hsp70 affinity tunes the dynamics of the heat shock response
+### Hsp70 affinity tunes the dynamics of the heat shock response
 
 Finally, we returned to our mathematical model to predict the effects that modulating Hsp70:Hsf1 affinity would have on the dynamics of the heat shock response. Intuitively, simulations in which we increased the affinity showed faster deactivation kinetics and a lower maximal output, while decreasing the affinity showed slower deactivation and increased maximal output (Figure 6A, Figure 6—figure supplement 1A). To test these predictions experimentally, we utilized Hsf13xCE2 to increase affinity for Hsp70 and the Hsf1∆CE2 and Hsf1ce2-mut to reduce affinity. In agreement with the model, Hsf13xCE2 deactivated more rapidly than wild type, while Hsf1∆CE2 and Hsf1ce2-mut displayed delayed deactivation kinetics in a heat shock time course (Figure 6B, Figure 6—figure supplement 1B). Thus, the affinity for Hsp70 tunes Hsf1 activation dynamics.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig6-v3.jpg)
+
+**Figure 6.:** (A) Simulations of HSE-YFP levels over a heat shock time course as a function of increased rate of dissociation (reduced affinity) of Hsp70 from Hsf1. (B) Experimental heat shock time course of HSE-YFP levels in cells expressing wild type Hsf1, Hsf1∆CE2 or Hsf13xCE2. Each point represents the average of the median HSE-YFP level in three biological replicates, and the error bars are the standard deviation of the replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Simulations of HSE-YFP levels over a heat shock time course at 3-fold higher (blue) and 5-fold lower (green) affinity for Hsp70. (B) Experimental heat shock time course of HSE-YFP levels in cells expressing WT Hsf1 (gray) and Hsf1ce2-mut (red). Each point represents the average of the median HSE-YFP level in three biological replicates, and the error bars are the standard deviation of the replicates.
 
 ## Discussion
 
@@ -101,42 +141,132 @@ The dual mechanisms of Hsf1 regulation described here – control of DNA binding
 
 ## Materials and methods
 
-## Yeast strains, plasmids and cell growth
+### Yeast strains, plasmids and cell growth
 
 Yeast cells were cultured in SDC media and dilution series spot assays were performed as described (Zheng et al., 2016). Strains and plasmids are listed in Supplementary files 1 and 2.
 
-## Mathematical modleling
+### Mathematical modleling
 
 Modeling was performed as described (Zheng et al., 2016).
 
-## Model parameter
+#### Model parameter
 
-ParameterPrevious Paper model valuesThis paper’s model valuesk1, k3166.8 min−1 a.u.−1166.8 min−1 a.u.−1k22.783 min−12.783 min−1k40.0464 min−10.0464 min−1k54.64e-7 min−14.64e-7 min−1β1.778 min−10.3557 min−1Kd0.0022 a.u.0.0022 a.u.kdil (fixed)0 min−10 min−1n (fixed)33
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Previous Paper model values</th>
+      <th>This paper’s model values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>k1, k3</td>
+      <td>166.8 min−1 a.u.−1</td>
+      <td>166.8 min−1 a.u.−1</td>
+    </tr>
+    <tr>
+      <td>k2</td>
+      <td>2.783 min−1</td>
+      <td>2.783 min−1</td>
+    </tr>
+    <tr>
+      <td>k4</td>
+      <td>0.0464 min−1</td>
+      <td>0.0464 min−1</td>
+    </tr>
+    <tr>
+      <td>k5</td>
+      <td>4.64e-7 min−1</td>
+      <td>4.64e-7 min−1</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>1.778 min−1</td>
+      <td>0.3557 min−1</td>
+    </tr>
+    <tr>
+      <td>Kd</td>
+      <td>0.0022 a.u.</td>
+      <td>0.0022 a.u.</td>
+    </tr>
+    <tr>
+      <td>kdil (fixed)</td>
+      <td>0 min−1</td>
+      <td>0 min−1</td>
+    </tr>
+    <tr>
+      <td>n (fixed)</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Initial conditions
+#### Initial conditions
 
-SpeciesInitial value (a.u.)Description[HSP]o1Free Hps70[Hsf1]o0Free Hsf1[HSP•Hsf1]o0.002HSP70•Hsf1 complex[HSP•UP]o0Hsp70•UP complex[YFP]o3Initial YFP concentration[UP]o (@ 39°C)10.51UP concentration at 39°C
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Initial value (a.u.)</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[HSP]o</td>
+      <td>1</td>
+      <td>Free Hps70</td>
+    </tr>
+    <tr>
+      <td>[Hsf1]o</td>
+      <td>0</td>
+      <td>Free Hsf1</td>
+    </tr>
+    <tr>
+      <td>[HSP•Hsf1]o</td>
+      <td>0.002</td>
+      <td>HSP70•Hsf1 complex</td>
+    </tr>
+    <tr>
+      <td>[HSP•UP]o</td>
+      <td>0</td>
+      <td>Hsp70•UP complex</td>
+    </tr>
+    <tr>
+      <td>[YFP]o</td>
+      <td>3</td>
+      <td>Initial YFP concentration</td>
+    </tr>
+    <tr>
+      <td>[UP]o (@ 39°C)</td>
+      <td>10.51</td>
+      <td>UP concentration at 39°C</td>
+    </tr>
+  </tbody>
+</table>
 
-## Flow cytometry
+### Flow cytometry
 
 Heat shock experiments, heat shock time courses and decoy assays were performed and HSE-YFP levels were quantified by flow cytometry as described (Zheng et al., 2016). Data were processed in FlowJo 10. Data were left ungated and YFP fluorescence was normalized by side scatter (SSC) for each cell.
 
-## Spinning disc confocal imaging
+### Spinning disc confocal imaging
 
 Imaging was performed as described (Zheng et al., 2016). Hsp104-mKate foci were quantified manually in ImageJ.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 Hsf1 ChIP was performed and quantified by qPCR as described (Anandhakumar et al., 2016).
 
-## Serial 3xflag/V5 immunoprecipitation
+### Serial 3xflag/V5 immunoprecipitation
 
 Hsf1-3xFLAG-V5 was serially immunoprecipitated and analyzed by mass spectrometry and Western blotting as described (Zheng et al., 2016; Zheng and Pincus, 2017).
 
-## Recombinant protein purification, binding and competition assay
+### Recombinant protein purification, binding and competition assay
 
 Recombinant proteins were expressed and purified as described and the in vitro binding assay between Hsf1 and Ssa2 was performed as described (Zheng et al., 2016).
 
-## Fluorescence polarization assay
+### Fluorescence polarization assay
 
 CE2 and ce2-mut peptides labeled at their N-termini with 5-carboxyfluorescein (5-FAM) were obtained at >95% purity from GenScript. Fluorescence polarization was measured on a Tecan M1000 plate reader with absorbance at 480 nm and emission at 525 nm with increasing concentrations of 6x-HIS-3xFLAG-Ssa2. The peptides were kept constant at 100 nM. The reaction volume for each data point was 30 µl, and the measurements were performed in black, flat-bottomed 384 well plates after incubation for 30 min at room temperature. Binding curves were fitted using Prism software (Graph Pad) and Kd values were extracted.

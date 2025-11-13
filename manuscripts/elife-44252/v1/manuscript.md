@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.44252.001 Cannabinoid type one receptor (CB1R) is only stably surface expressed in axons, where it downregulates neurotransmitter release. How this tightly regulated axonal surface polarity is established and maintained is unclear. To address this question, we used time-resolved imaging to determine the trafficking of CB1R from biosynthesis to mature polarised localisation in cultured rat hippocampal neurons. We show that the secretory pathway delivery of CB1R is axonally biased and that surface expressed CB1R is more stable in axons than in dendrites. This dual mechanism is mediated by the CB1R C-terminus and involves the Helix 9 ( H9 ) domain. Removal of the H9 domain increases secretory pathway delivery to dendrites and decreases surface stability. Furthermore, CB1R ΔH9 is more sensitive to agonist-induced internalisation and less efficient at downstream signalling than CB1R WT . Together, these results shed new light on how polarity of CB1R is mediated and indicate that the C-terminal H9 domain plays key roles in this process.
+Cannabinoid type one receptor (CB1R) is only stably surface expressed in axons, where it downregulates neurotransmitter release. How this tightly regulated axonal surface polarity is established and maintained is unclear. To address this question, we used time-resolved imaging to determine the trafficking of CB1R from biosynthesis to mature polarised localisation in cultured rat hippocampal neurons. We show that the secretory pathway delivery of CB1R is axonally biased and that surface expressed CB1R is more stable in axons than in dendrites. This dual mechanism is mediated by the CB1R C-terminus and involves the Helix 9 (H9) domain. Removal of the H9 domain increases secretory pathway delivery to dendrites and decreases surface stability. Furthermore, CB1RΔH9 is more sensitive to agonist-induced internalisation and less efficient at downstream signalling than CB1RWT. Together, these results shed new light on how polarity of CB1R is mediated and indicate that the C-terminal H9 domain plays key roles in this process.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ Here we systematically investigated how axonal surface polarity of CB1R arises b
 
 ## Results
 
-## Preferential delivery of newly synthesized CB1Rs to, and retention at, the axonal membrane establishes surface polarisation
+### Preferential delivery of newly synthesized CB1Rs to, and retention at, the axonal membrane establishes surface polarisation
 
 To investigate how CB1R surface polarity is established we used the retention using selective hooks (RUSH) system (Boncompain et al., 2012) and antibody feeding techniques to examine its secretory pathway trafficking and surface expression (Figure 1). We used CB1R tagged at the N-terminus with streptavidin binding peptide (SBP) and EGFP (SBP-EGFP-CB1R). When co-expressed with a Streptavidin-KDEL ‘hook’ that localises to the lumen of the Endoplasmic Reticulum (ER), SBP-EGFP-CB1R is anchored at the ER membrane. The retained SBP-EGFP-CB1R can then be synchronously released by addition of biotin and its trafficking through the secretory pathway and surface expression in both axons and dendrites can be monitored (Evans et al., 2017).
 
@@ -41,7 +41,7 @@ To investigate how CB1R surface polarity is established we used the retention us
 
 **Figure 1.:** (1) Before the addition of biotin, SBP-EGFP-CB1R is retained in the ER by a streptavidin-KDEL hook (0 min). (2) Addition of biotin (orange triangles) releases the receptor and it begins to accumulate at the surface. (3) Antibody feeding with anti-GFP antibodies during biotin-mediated release labels newly delivered, surface expressed SBP-EGFP-CB1R. (4) A proportion of receptors internalise, still bound to primary antibody. (5) Cells are cooled to 4°C to prevent further internalisation. Live secondary antibody incubation labels retained surface receptors (indicated by magenta star). (6) After fixation and permeabilization, incubation with a different secondary antibody labels all receptors delivered to the surface during the time course of the experiment (red star = surface + endocytosed).
 
-## CB1R is directly trafficked to the axon through the secretory pathway
+#### CB1R is directly trafficked to the axon through the secretory pathway
 
 We first examined the synchronous trafficking of total SBP-EGFP-CB1R in the somatodendritic and axonal compartments of primary hippocampal neurons (Figure 2A–C). Prior to biotin-mediated release, SBP-EGFP-CB1R was retained in the ER in the soma and dendrites but was absent from the axonal compartment and was not present at the cell surface (0 min; Figure 2A). After addition of biotin, SBP-EGFP-CB1R moved through the secretory pathway and entered the proximal segment of the axonal compartment at 25 min and continued to accumulate until 45 min when it reached its peak, which was comparable to an unretained control (O/N) (Figure 2B–C). These data suggest that once released from the ER, CB1R is immediately trafficked towards the axonal compartment, and passes through the axon initial segment (AIS), which constitutes an exclusion and diffusion barrier to separate the axonal from the somatodendritic compartments, via the intracellular secretory pathway.
 
@@ -49,23 +49,23 @@ We first examined the synchronous trafficking of total SBP-EGFP-CB1R in the soma
 
 **Figure 2.:** The trafficking of SBP-EGFP-CB1R following release with biotin was monitored after 0 (no biotin), 15, 25, 30, 35, 40, 45, 60, 90 min, and overnight (O/N; non-retained control) in DIV 13 hippocampal neurons. Upper panels for each condition show whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; red = surface + endocytosed; magenta = surface; blue = axon marker (Ankyrin-G). In all images the scale bar = 20 µm. (A) Representative image of a hippocampal neuron expressing the RUSH construct SBP-EGFP-CB1R without biotin (0 min). SBP-EGFP-CB1R is anchored in the ER of the somatodendritic compartment and is not detected in the proximal 50 µm of axons or on the surface of dendrites. Merge: green = total; blue = Ankyrin G; red = surface + endocytosed; magenta = surface. (B) Representative confocal images of total SBP-EGFP-CB1R expressed in DIV 13 hippocampal neurons 25 min and 45 min after biotin release from the ER showing that SBP-EGFP-CB1R has entered the proximal axonal compartment (initial 50 µm). Merge: green = total; blue = Ankyrin G. (C) Quantification of data represented in (A and B). SBP-EGFP-CB1R was initially absent from the axon but entered after 25 min and continued to accumulate until it plateaued after 45 min to a level comparable to a non-retained control (O/N). One-way ANOVA with Tukey’s post hoc test. N = three to six independent experiments, n = 19–45 neurons per condition. 0 min vs. 25 min: mean ± SEM, 0.307 ± 0.0173 vs. 0.729 ± 0.0772; N = 6, n = 45 vs. N = 3, n = 19; **p = 0.0018. 30 min vs. ON: mean ± SEM, 1.03 ± 0.0597 vs. 1.2 ± 0.0632; N = 4, n = 32 vs. N = 4, n = 24, nsp = 0.8186. (D) Representative confocal images of total and surface expressed SBP-EGFP-CB1R in DIV 13 hippocampal neurons 40 min and 90 min after biotin-mediated release showing that SBP-EGFP-CB1R is preferentially delivered to, and retained at, the axonal surface. Merge: surface to total seen as white; endocytosed to total seen as yellow. (E) Quantification of data represented in (D). SBP-EGFP-CB1R reached the proximal surface of the axon 40 min after release and the surface of dendrites 60 min after release. Furthermore, significantly more SBP-EGFP-CB1R reached the axonal versus dendritic surface at 45, 60, and 90 min. 45 min, Axons vs. Dendrites: mean ± SEM, 0.723 ± 0.077 vs. 0.319 ± 0.035; N = 3, n = 20 vs. N = 3, n = 20; **p = 0.0054. 60 min, Axons vs. Dendrites: mean ± SEM, 1.00 ± 0.093 vs. 0.452 ± 0.023; N = 6, n = 46 vs. N = 6, n = 46; ****p < 0.0001. 90 min, Axons vs. Dendrites: mean ± SEM, 1.511 ± 0.129 vs. 0.566 ± 0.054; N = 4, n = 26 vs. N = 4, n = 26; ****p < 0.0001. (F) Quantification of data represented in (D). Comparison between surface + endocytosed (red; see E) and surface (magenta) curves show that SBP-EGFP-CB1R was retained on the surface of axons. (For all p > 0.9999). (G) Quantification of data represented in (D). Comparison between surface + endocytosed (pale red; see (E) and surface (pale magenta) curves show that SBP-EGFP-CB1R was internalised from the surface of dendrites. 90 min, SE vs. S: mean ± SEM, 0.766 ± 0.054 vs. 0.408 ± 0.038; N = 4, n = 26 vs. N = 4, n = 26; **p = 0.0046. Statistical analyses in (E-G); Two-way ANOVA with Tukey’s post hoc test (all analysed and corrected for multiple comparisons together). Three to six independent experiments, n = 19–45 neurons per condition. (H) Distribution of total CB1R along the first 100 µm of the axon indicates that CB1R is trafficked within the axon. By 30 min after release from the ER, and before CB1R reaches the surface, CB1R is present at least 100 µm away from the soma at levels comparable to an unretained control (O/N). The blue shaded portion indicates the location of the AIS (defined by Ankyrin-G immunostaining). Two-way ANOVA with Sidak’s post hoc test. Four to six independent experiments, n = 12–18. 90–100 µm, 0 vs. 30 min: mean ± SEM, 0.163 ± 0.014 vs. 0.452 ± 0.045; N = 6, n = 12 vs. N = 4, n = 18; *p = 0.0243. 90–100 µm, 30 min vs. O/N: mean ± SEM, 0.452 ± 0.045 vs. 0.511 ± 0.066; N = 4, n = 18 vs. N = 4, n = 15; nsp = 0.905. (I) Distribution of surface expressed CB1R along the first 100 µm of the axon shows an accumulation of CB1R at the distal region of the AIS 90 min after release from the ER. This accumulation in the AIS is reduced in the O/N unretained control consistent with lateral diffusion within the membrane. Two-way ANOVA with Sidak’s post hoc test. Four to six independent experiments, n = 12–18. 0–50 µm, 90 min vs. O/N: All points p ≤ 0.0285. 50–100 µm, 90 min vs. O/N: All points p ≥ 0.0878.
 
-## De novo CB1R is more rapidly surface expressed in axons than in dendrites
+#### De novo CB1R is more rapidly surface expressed in axons than in dendrites
 
 Having established that SBP-EGFP-CB1R released from the ER traffics directly to axons, we next investigated where and when the newly synthesised SBP-EGFP-CB1R first reaches the plasma membrane. We determined how much SBP-EGFP-CB1R was surface expressed during a given time period using an antibody feeding assay (Evans et al., 2017) (Figure 1). Antibody feeding was performed concurrent with the addition of biotin to release ER-retained SBP-EGFP-CB1R. This protocol labels both surface expressed CB1Rs and those that have been surface expressed and subsequently endocytosed (Figure 1; Figure 2D–G; surface + endocytosed), giving a measure of total amount of surface expression irrespective of internalisation. SBP-EGFP-CB1R was surface expressed in the proximal segment of axons 40 min after release from the ER, whereas in dendrites, CB1R was not surface expressed until 60 min after release (Figure 2E). Moreover, significantly more SBP-EGFP-CB1R reached the surface of axons than the surface of dendrites 45, 60, and 90 min after release from the ER (Figure 2E). These data demonstrate that the secretory pathway delivers a greater amount of CB1R more rapidly to the axonal membrane than to the dendritic membrane.
 
-## De novo CB1R is retained longer at the surface of axons than of dendrites
+#### De novo CB1R is retained longer at the surface of axons than of dendrites
 
 It has been suggested CB1R polarity is maintained by differential rates of endocytosis in the somatodendritic and axonal compartments (Leterrier et al., 2006; McDonald et al., 2007a). To test this, we also stained for surface SBP-EGFP-CB1R and compared the amount of surface expressed SBP-EGFP-CB1R to the amount of surface + endocytosed SBP-EGFP-CB1R in axons (Figure 2D,F) and dendrites (Figure 2D,G). In the proximal segment of axons, the normalised surface and surface + endocytosed curves were identical, suggesting that most surface expressed SBP-EGFP-CB1R is stable and retained at the axonal membrane (Figure 2D,F). This may be due either to minimal endocytosis or to the efficient recycling of endocytosed receptors. In stark contrast, however, in dendrites there is significantly less surface than surface + endocytosed SBP-EGFP-CB1R 90 min after addition of biotin, indicating that surface expressed CB1R is more rapidly endocytosed from and/or not recycled back to the dendritic membrane (Figure 2G).
 
-## CB1R is trafficked to more distal parts of the axon via intracellular mechanisms
+#### CB1R is trafficked to more distal parts of the axon via intracellular mechanisms
 
 Analysis of CB1R total fluorescence along the axon indicates that by 30 min after release from the ER, and before CB1R appears on the surface, intracellular CB1R has progressed through the AIS and is already present at least 100 µm along the axon at levels similar to the unretained control (O/N; Figure 2H,I). These data indicate that CB1R-containing secretory vesicles can rapidly travel to more distal areas of the axon. Furthermore, surface CB1Rs delivered from the secretory pathway accumulate at the final portion of the AIS, before then progressing further along the axon (Figure 2I). Interestingly, 100 µm along the axon CB1R levels reach a steady state 90 min after release, at levels similar to when receptors are released overnight. However, following overnight release fewer receptors remain in the most proximal region of the axon. These results suggest that additional mechanisms contribute to the delivery of CB1R receptors the distal axon and presynaptic boutons. This process occurs over a time-course of several hours and could involve lateral surface diffusion and trapping analogous to the accumulation of AMPARs at the postsynaptic membrane (Borgdorff and Choquet, 2002).
 
-## A two-part model of CB1R polarity
+#### A two-part model of CB1R polarity
 
 Our results using RUSH time-resolved analysis show that CB1R surface polarity is initially established and maintained by two distinct but complementary mechanisms. Firstly, we show the novel finding that the secretory pathway preferentially delivers CB1R to the axonal surface, with significantly less going to the dendritic surface. Secondly, by distinguishing between surface and surface + endocytosed receptors, our antibody feeding experiments show that newly delivered CB1R is preferentially retained/stabilised at the axonal membrane and internalised from the dendritic membrane. Previous literature proposes that this differential internalisation is due to the presence of agonist in the dendritic membrane and absence of agonist on axonal membrane (Leterrier et al., 2006; Ladarre et al., 2014), although a potential role for constitutive internalisation distinct to agonist-induced internalisation has also been proposed (McDonald et al., 2007a). Taken together, we propose that preferential delivery to the proximal segment of the axon and less rapid internalisation of axonally surface expressed CB1Rs are major contributors to the axonal surface polarisation of CB1R in hippocampal neurons.
 
-## H9 contributes to axonal surface polarisation
+### H9 contributes to axonal surface polarisation
 
 The intracellular ctCB1R is implicated in desensitization and internalization (reviewed in Mackie, 2008; Stadel et al., 2011) and structural motifs and potential interaction partners have been identified (Figure 3A; Stadel et al., 2011). However, the role of this region in determining axonal polarity has not been investigated and the function of the H9 structural motif is unknown. We therefore wondered whether ctCB1R, and H9 in particular, contribute to CB1R surface polarisation.
 
@@ -81,31 +81,31 @@ We next analysed constitutive endocytosis of CD4-ctCB1RWT and CD4-ctCB1RΔH9 (Fi
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44252/elife-44252-fig4-v1.jpg)
 
-**Figure 4.:** H9.(A) Representative confocal images of DIV 14 primary hippocampal neurons expressing CD4ΔCT (left), CD4-ctCB1RWT (middle), or CD4-ctCB1RΔH9 (right). Neurons were subjected to 2 hr of antibody feeding followed by stripping of surface antibody to reveal the endocytosed pool of receptors. Upper panels for each condition show a whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; red = endocytosed; blue = dendritic marker (MAP2). Merge: endocytosed to total seen as yellow. Scale bar = 20 µm. (B) Quantification of data presented in (A). Both CD4-ctCB1RWT and CD4-ctCB1RΔH9 were significantly more internalised in dendrites, but not in axons, than CD4 alone. Three independent experiments; n = 24–26 neurons per condition. Two way ANOVA with Sidak’s post hoc test. Axons, CD4 vs. WT vs. ΔH9: mean ± SEM, 1.00 ± 0.040 vs. 1.065 ± 0.039 vs. 1.148 ± 0.048; N = 3, n = 24 vs. N = 3, n = 26 vs. N = 3, n = 24; nsp ≥ 0.3514. Dendrites, CD4 vs. WT: mean ± SEM, 1.042 ± 0.038 vs. 1.250 ± 0.051; N = 3, n = 24 vs. N = 3, n = 26; *p = 0.0279. Dendrites, CD4 vs. ΔH9: mean ± SEM, 1.042 ± 0.038 vs. 1.355 ± 0.060; N = 3, n = 24 vs. N = 3, n = 24; *p < 0.0001. Dendrites, WT vs. ΔH9: mean ± SEM, 1.250 ± 0.051 vs. 1.355 ± 0.060; N = 3, n = 26 vs. N = 3, n = 24; nsp = 0.8275.
+**Figure 4.:** (A) Representative confocal images of DIV 14 primary hippocampal neurons expressing CD4ΔCT (left), CD4-ctCB1RWT (middle), or CD4-ctCB1RΔH9 (right). Neurons were subjected to 2 hr of antibody feeding followed by stripping of surface antibody to reveal the endocytosed pool of receptors. Upper panels for each condition show a whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; red = endocytosed; blue = dendritic marker (MAP2). Merge: endocytosed to total seen as yellow. Scale bar = 20 µm. (B) Quantification of data presented in (A). Both CD4-ctCB1RWT and CD4-ctCB1RΔH9 were significantly more internalised in dendrites, but not in axons, than CD4 alone. Three independent experiments; n = 24–26 neurons per condition. Two way ANOVA with Sidak’s post hoc test. Axons, CD4 vs. WT vs. ΔH9: mean ± SEM, 1.00 ± 0.040 vs. 1.065 ± 0.039 vs. 1.148 ± 0.048; N = 3, n = 24 vs. N = 3, n = 26 vs. N = 3, n = 24; nsp ≥ 0.3514. Dendrites, CD4 vs. WT: mean ± SEM, 1.042 ± 0.038 vs. 1.250 ± 0.051; N = 3, n = 24 vs. N = 3, n = 26; *p = 0.0279. Dendrites, CD4 vs. ΔH9: mean ± SEM, 1.042 ± 0.038 vs. 1.355 ± 0.060; N = 3, n = 24 vs. N = 3, n = 24; *p < 0.0001. Dendrites, WT vs. ΔH9: mean ± SEM, 1.250 ± 0.051 vs. 1.355 ± 0.060; N = 3, n = 26 vs. N = 3, n = 24; nsp = 0.8275.
 
-## H9 restricts delivery of CB1R to the dendritic membrane
+#### H9 restricts delivery of CB1R to the dendritic membrane
 
 To further explore the possibility that H9 is involved in the axonal surface polarity of CB1R, we used RUSH to compare the forward trafficking of SBP-EGFP-CB1RWT and SBP-EGFP-CB1RΔH9. We labelled all the CB1R that had been surface expressed (surface + endocytosed) 0, 30, 60, and 90 min after biotin-mediated release from the ER. Representative neuronal images at 90 min after biotin-mediated release are shown in Figure 5A.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44252/elife-44252-fig5-v1.jpg)
 
-**Figure 5.:** H9 both restricts delivery of CB1R to the dendritic membrane and plays a role in surface retention of CB1R.The trafficking of RUSH SBP-EGFP-CB1R following release with biotin was monitored after 0 (no biotin), 30, 60, and 90 min in DIV 13 hippocampal neurons. (A) Representative confocal images of hippocampal neurons expressing SBP-EGFP-CB1RWT or SBP-EGFP-CB1RΔH9 90 min after release with biotin. Upper panels for each condition show whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; red = surface + endocytosed; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white; endocytosed to total seen as yellow. Scale bar = 20 µm. (B) Quantification of data represented in (A). Time-resolved analysis of surface + endocytosed receptors shows significantly more SBP-EGFP-CB1RΔH9 reaches the surface of dendrites than SBP-EGFP-CB1RWT, indicating that H9 may play a role in restricting delivery to the dendritic surface. Two-way ANOVA with Sidak’s post hoc test. Three to seven independent experiments, n = 26–63 neurons per condition. 60 min, WT vs. ΔH9: mean ± SEM, 0.497 ± 0.022 vs. 0.711 ± 0.036; N = 8, n = 63 vs. N = 8, n = 48; ****p < 0.0001. 90 min, WT vs. ΔH9: mean ± SEM, 0.766 ± 0.054 vs. 1.08 ± 0.066; N = 4, n = 26 vs. N = 4, n = 31; ****p < 0.0001. C) Quantification of data represented in (A). Time-resolved analysis of surface + endocytosed receptors shows no difference between SBP-EGFP-CB1RWT and SBP-EGFP-CB1ΔH9 in reaching the surface of the axon. Two-way ANOVA with Sidak’s post hoc test. N = three to seven independent experiments, n = 26–63 neurons per condition. 0, 30, 60, 90 min, WT vs. ΔH9: p > 0.2459. (D) Quantification of data represented in (A). Analysis of surface + endocytosed polarity demonstrates a defect in polarised delivery of SBP-EGFP-CB1RΔH9 compared to SBP-EGFP-CB1RWT. Unpaired t-test. N = four independent experiments, n = 26–31 neurons per condition. WT vs. ΔH9: mean ± SEM, 2.03 ± 0.136 vs. 1.46 ± 0.13; N = 4, n = 26 vs. N = 4, n = 31; **p = 0.0038. (E) Quantification of data represented in (A). Analysis of surface polarity revealed no difference between SBP-EGFP-CB1RWT and SBP-EGFP-CB1ΔH9. Unpaired t-test. N = four independent experiments, n = 26–31 neurons per condition. WT vs. ΔH9: mean ± SEM, 3.935 ± 0.329 vs. 4.075 ± 0.361; N = 4, n = 26 vs. N = 4, n = 31; nsp = 0.7797. (F) Quantification of data represented in (A). Time-resolved analysis of surface receptors shows significantly less SBP-EGFP-CB1ΔH9 than SBP-EGFP-CB1RWT on the surface of axons 90 min after release, most likely due to increased endocytosis of the ΔH9 mutant. Two-way ANOVA with Sidak’s post hoc test. N = three to eight independent experiments, n = 26–63 neurons per condition. 90, WT vs. ΔH9: mean ± SEM, 1.498 ± 0.144 vs. 1.154 ± 0.123; N = 4, n = 26 vs. N = 4, n = 31; **p = 0.0066. (G) Quantification of data represented in (A). Time-resolved analysis of surface receptors shows significantly less SBP-EGFP-CB1ΔH9 than SBP-EGFP-CB1RWT on the surface of dendrites 60 and 90 min after release, most likely due to increased endocytosis. Two-way ANOVA with Sidak’s post hoc test. N = three to eight independent experiments, n = 26–63 neurons per condition. 60, WT vs. ΔH9: mean ± SEM, 0.262 ± 0.013 vs. 0.21 ± 0.018; N = 8, n = 63 vs. N = 8, n = 48; *p = 0.0232. 90, WT vs. ΔH9: mean ± SEM, 0.408 ± 0.038 vs. 0.312 ± 0.030; N = 4, n = 26 vs. N = 4, n = 31; **p = 0.0011.
+**Figure 5.:** The trafficking of RUSH SBP-EGFP-CB1R following release with biotin was monitored after 0 (no biotin), 30, 60, and 90 min in DIV 13 hippocampal neurons. (A) Representative confocal images of hippocampal neurons expressing SBP-EGFP-CB1RWT or SBP-EGFP-CB1RΔH9 90 min after release with biotin. Upper panels for each condition show whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; red = surface + endocytosed; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white; endocytosed to total seen as yellow. Scale bar = 20 µm. (B) Quantification of data represented in (A). Time-resolved analysis of surface + endocytosed receptors shows significantly more SBP-EGFP-CB1RΔH9 reaches the surface of dendrites than SBP-EGFP-CB1RWT, indicating that H9 may play a role in restricting delivery to the dendritic surface. Two-way ANOVA with Sidak’s post hoc test. Three to seven independent experiments, n = 26–63 neurons per condition. 60 min, WT vs. ΔH9: mean ± SEM, 0.497 ± 0.022 vs. 0.711 ± 0.036; N = 8, n = 63 vs. N = 8, n = 48; ****p < 0.0001. 90 min, WT vs. ΔH9: mean ± SEM, 0.766 ± 0.054 vs. 1.08 ± 0.066; N = 4, n = 26 vs. N = 4, n = 31; ****p < 0.0001. C) Quantification of data represented in (A). Time-resolved analysis of surface + endocytosed receptors shows no difference between SBP-EGFP-CB1RWT and SBP-EGFP-CB1ΔH9 in reaching the surface of the axon. Two-way ANOVA with Sidak’s post hoc test. N = three to seven independent experiments, n = 26–63 neurons per condition. 0, 30, 60, 90 min, WT vs. ΔH9: p > 0.2459. (D) Quantification of data represented in (A). Analysis of surface + endocytosed polarity demonstrates a defect in polarised delivery of SBP-EGFP-CB1RΔH9 compared to SBP-EGFP-CB1RWT. Unpaired t-test. N = four independent experiments, n = 26–31 neurons per condition. WT vs. ΔH9: mean ± SEM, 2.03 ± 0.136 vs. 1.46 ± 0.13; N = 4, n = 26 vs. N = 4, n = 31; **p = 0.0038. (E) Quantification of data represented in (A). Analysis of surface polarity revealed no difference between SBP-EGFP-CB1RWT and SBP-EGFP-CB1ΔH9. Unpaired t-test. N = four independent experiments, n = 26–31 neurons per condition. WT vs. ΔH9: mean ± SEM, 3.935 ± 0.329 vs. 4.075 ± 0.361; N = 4, n = 26 vs. N = 4, n = 31; nsp = 0.7797. (F) Quantification of data represented in (A). Time-resolved analysis of surface receptors shows significantly less SBP-EGFP-CB1ΔH9 than SBP-EGFP-CB1RWT on the surface of axons 90 min after release, most likely due to increased endocytosis of the ΔH9 mutant. Two-way ANOVA with Sidak’s post hoc test. N = three to eight independent experiments, n = 26–63 neurons per condition. 90, WT vs. ΔH9: mean ± SEM, 1.498 ± 0.144 vs. 1.154 ± 0.123; N = 4, n = 26 vs. N = 4, n = 31; **p = 0.0066. (G) Quantification of data represented in (A). Time-resolved analysis of surface receptors shows significantly less SBP-EGFP-CB1ΔH9 than SBP-EGFP-CB1RWT on the surface of dendrites 60 and 90 min after release, most likely due to increased endocytosis. Two-way ANOVA with Sidak’s post hoc test. N = three to eight independent experiments, n = 26–63 neurons per condition. 60, WT vs. ΔH9: mean ± SEM, 0.262 ± 0.013 vs. 0.21 ± 0.018; N = 8, n = 63 vs. N = 8, n = 48; *p = 0.0232. 90, WT vs. ΔH9: mean ± SEM, 0.408 ± 0.038 vs. 0.312 ± 0.030; N = 4, n = 26 vs. N = 4, n = 31; **p = 0.0011.
 
 Interestingly, significantly more SBP-EGFP-CB1RΔH9 than SBP-EGFP-CB1RWT reached the surface of dendrites during the time course of our experiments (Figure 5B), whereas trafficking to axons was similar for both SBP-EGFP-CB1RWT and SBP-EGFP-CB1RΔH9 (Figure 5C). These altered properties resulted in a significant difference in the surface + endocytosed polarity index after 90 min (Figure 5D) and are consistent with a role for H9 in restricting delivery of CB1R to the dendritic membrane.
 
-## H9 plays a role in the surface retention of CB1R
+#### H9 plays a role in the surface retention of CB1R
 
 Surprisingly, in contrast to the total amount of CB1R that had been surface expressed during the time course (surface + endocytosed; Figure 5D), the polarity of the amount of CB1R on the cell surface 90 min after biotin-mediated release was identical for SBP-EGFP-CB1RWT and SBP-EGFP-CB1RΔH9 (surface; Figure 5E). Closer analysis revealed identical levels of axonal surface expression of both SBP-EGFP-CB1RWT and SBP-EGFP-CB1RΔH960 min after release from the ER. However, at 90 min there is significantly less surface expression of ΔH9 mutant (Figure 5F) suggesting that, although similar amounts of SBP-EGFP-CB1RWT and SBP-EGFP-CB1RΔH9 reach the surface, surface expression of SBP-EGFP-CB1RΔH9 is less stable than that of the wild-type. Furthermore, in dendrites, the increased delivery and surface trafficking of the ΔH9 mutant is counteracted by the fact that less is retained at the surface 60 min after ER release (Figure 5G). Taken together these results suggest that, separate from its role in restricting delivery to the dendritic membrane, H9 also plays a role in membrane stability and retention at both axons and dendrites.
 
-## H9 stabilises CB1R at the surface
+### H9 stabilises CB1R at the surface
 
 To investigate the role of H9 in membrane stability, we next compared surface expression (Figure 6A) and endocytosis (Figure 6B) of EGFP-CB1RWT and EGFP-CB1RΔH9 in axons and dendrites at steady-state. EGFP-CB1RΔH9 displayed lower levels of surface expression (Figure 6C), as well as increased endocytosis (Figure 6D) in both axons and dendrites compared to EGFP-CB1RWT, suggesting H9 plays a role in stabilising CB1R at the surface of both axons and dendrites. Moreover, similar to our findings using RUSH, there was no difference in surface polarity between EGFP-CB1RWT and EGFP-CB1RΔH9 (Figure 6E). These results suggest that, while H9 plays a role in CB1R surface expression and endocytosis, its potential to mediate surface polarity is masked in the full-length receptor.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/44252/elife-44252-fig6-v1.jpg)
 
-**Figure 6.:** H9 stabilises CB1R at the axonal surface.(A) Representative confocal images of surface stained DIV 14 hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9. Green = total; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white. (B) Representative confocal images of DIV 14 primary hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9. Neurons were subjected to 2 hr of antibody feeding followed by stripping off of surface antibody to reveal the endocytosed pool of receptors. Green = total; red = endocytosed; blue = axon marker (Ankyrin-G). Merge: endocytosed to total seen as yellow. (C) Quantification of data shown in (A). Surface expression of EGFP-CB1RΔH9 in both axons and dendrites was significantly reduced compared to EGFP-CB1RWT. Two-way ANOVA with Tukey’s post hoc test. N = ten independent experiments; n = 80–88 neurons per condition. Axons, WT vs. ΔH9: mean ± SEM, 1 ± 0.028 vs. 0.765 ± 0.029; N = 10, n = 80 vs. N = 10, n = 88; ****p < 0.0001. Dendrites, WT vs. ΔH9: mean ± SEM, 0.335 ± 0.016 vs. 0.247 ± 0.017; N = 10, n = 80 vs. N = 10, n = 88; *p = 0.0392. (D) Quantification of data shown in (B). Endocytosis of EGFP-CB1RΔH9 is significantly increased compared to EGFP-CB1RWT in both axons and dendrites. One-way ANOVA with Tukey’s post hoc test. N = seven independent experiments; n = 49 neurons per condition. Axons, WT vs. ΔH9: mean ± SEM, 1.00 ± 0.058 vs. 1.38 ± 0.08; **p = 0.0026. Dendrites, WT vs. ΔH9: mean ± SEM, 0.689 ± 0.05 vs. 1.225 ± 0.105; ****p < 0.0001. (E) Quantification of data shown in (A) presented as the surface polarity index. There was no difference in surface polarity between EGFP-CB1RWT or EGFP-CB1RΔH9. Mann-Whitney test. N = ten independent experiments; n = 80–88 neurons per condition. WT vs. ΔH9: mean ± SEM, 3.298 ± 0.1812 vs. 3.915 ± 0.3367; N = 10, n = 80 vs. N = 10, n = 88; p = 0.6886.
+**Figure 6.:** (A) Representative confocal images of surface stained DIV 14 hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9. Green = total; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white. (B) Representative confocal images of DIV 14 primary hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9. Neurons were subjected to 2 hr of antibody feeding followed by stripping off of surface antibody to reveal the endocytosed pool of receptors. Green = total; red = endocytosed; blue = axon marker (Ankyrin-G). Merge: endocytosed to total seen as yellow. (C) Quantification of data shown in (A). Surface expression of EGFP-CB1RΔH9 in both axons and dendrites was significantly reduced compared to EGFP-CB1RWT. Two-way ANOVA with Tukey’s post hoc test. N = ten independent experiments; n = 80–88 neurons per condition. Axons, WT vs. ΔH9: mean ± SEM, 1 ± 0.028 vs. 0.765 ± 0.029; N = 10, n = 80 vs. N = 10, n = 88; ****p < 0.0001. Dendrites, WT vs. ΔH9: mean ± SEM, 0.335 ± 0.016 vs. 0.247 ± 0.017; N = 10, n = 80 vs. N = 10, n = 88; *p = 0.0392. (D) Quantification of data shown in (B). Endocytosis of EGFP-CB1RΔH9 is significantly increased compared to EGFP-CB1RWT in both axons and dendrites. One-way ANOVA with Tukey’s post hoc test. N = seven independent experiments; n = 49 neurons per condition. Axons, WT vs. ΔH9: mean ± SEM, 1.00 ± 0.058 vs. 1.38 ± 0.08; **p = 0.0026. Dendrites, WT vs. ΔH9: mean ± SEM, 0.689 ± 0.05 vs. 1.225 ± 0.105; ****p < 0.0001. (E) Quantification of data shown in (A) presented as the surface polarity index. There was no difference in surface polarity between EGFP-CB1RWT or EGFP-CB1RΔH9. Mann-Whitney test. N = ten independent experiments; n = 80–88 neurons per condition. WT vs. ΔH9: mean ± SEM, 3.298 ± 0.1812 vs. 3.915 ± 0.3367; N = 10, n = 80 vs. N = 10, n = 88; p = 0.6886.
 
-## CB1RΔH9 is less efficient at activating downstream signalling pathways and more susceptible to agonist-induced internalisation
+### CB1RΔH9 is less efficient at activating downstream signalling pathways and more susceptible to agonist-induced internalisation
 
 Because CB1R surface expression and polarisation has been linked to its activity (Leterrier et al., 2006; Ladarre et al., 2014), we investigated if deleting H9 affects CB1R downstream signalling pathways. Measuring the signalling efficiency of EGFP-CB1RΔH9 in neurons would require the complete removal of endogenous CB1R so we expressed EGFP-CB1RWT or EGFP-CB1RΔH9 in HEK293T cells, which do not express endogenous CB1R (Atwood et al., 2011) and are routinely used to measure activation of the ERK pathway. Cells were treated with vehicle (EtOH) or stimulated with the selective CB1R agonist ACEA (arachidonyl-2'-chloroethylamide) (Hillard et al., 1999) and blotted for ERK1/2 phosphorylation as a measure of signalling downstream of CB1R (Daigle et al., 2008). There was no significant difference in ERK1/2 phosphorylation in cells expressing EGFP-CB1RWT or EGFP-CB1RΔH9 under basal conditions in the absence of ACEA. However, upon ACEA stimulation, the level of ERK1/2 activation was significantly reduced in EGFP-CB1RΔH9-transfected cells compared to EGFP-CB1RWT-transfected cells expressing equivalent amounts of receptor (Figure 7A–C). Because the ΔH9 mutant is more internalised than the wild-type in neurons, we examined whether the deficiency in ERK1/2 phosphorylation was due to a similarly reduced surface expression in HEK283T cells. However, EGFP-CB1RWT and EGFP-CB1RΔH9 were surface expressed at equivalent levels in HEK293T cells, as determined by surface biotinylation experiments (Figure 7D–E), suggesting the ΔH9 mutant is deficient in its ability to activate downstream signalling pathways.
 
@@ -113,9 +113,9 @@ We next monitored ACEA-induced internalisation of EGFP-CB1RWT and EGFP-CB1RΔH9 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/44252/elife-44252-fig7-v1.jpg)
 
-**Figure 7.:** H9 in CB1R signalling and in resisting agonist-induced endocytosis.(A) Representative blots showing ERK1/2 phosphorylation in HEK293T cells expressing EGFP-CB1RWT or EGFP-CB1RΔH9 following vehicle (0.1% EtOH) or ACEA (1 μM) treatment for 5 min. (B) Quantification of data shown in (A). Following treatment with ACEA, ERK1/2 was significantly more phosphorylated in EGFP-CB1RWT- and EGFP-CB1RΔH9-transfected cells compared to untransfected cells. However, ERK1/2 activation was significantly reduced in EGFP-CB1RΔH9-expressing cells compared to EGFP-CB1RWT-expressing cells. There was no significant difference in ERK1/2 phosphorylation in vehicle-treated cells. Two-way ANOVA with Tukey’s post hoc test. N = three independent experiments. ACEA, WT vs. Control: mean ± SEM, 7.17 ± 0.684 vs. 1.21 ± 0.252; ****p < 0.0001. ΔH9 vs. Control: mean ± SEM, 3.57 ± 0.825 vs. 1.21 ± 0.252; *p = 0.0150. WT vs. ΔH9: mean ± SEM, 7.17 ± 0.684 vs. 3.57 ± 0.825; ***p = 0.0007. EtOH, WT vs. ΔH9 vs. Control: nsp ≥ 0.9125. (C) Quantification of data shown in (A). EGFP-CB1RWT and EGFP-CB1RΔH9 expressed equally in HEK293T cells. Two-way ANOVA with Sidak’s post hoc test. Three independent experiments. (nsp ≥ 0.9654). (D) Representative immunoblots from surface biotinylation experiments showing surface and total fractions of EGFP-CB1RWT and EGFP-CB1RΔH9 in HEK293T cells. (E) Quantification of data shown in (D). EGFP-CB1RWT and EGFP-CB1RΔH9 are surface expressed at equivalent levels in HEK293T cells. Unpaired t-test. Eight independent experiments. WT vs. ΔH9: mean ± SEM, 1.00 ± 0.0974 vs. 0.885 ± 0.0549; nsp = 0.3212. (F) Representative confocal images of DIV 12 hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9 and treated with vehicle (0.1% EtOH) or CB1R agonist (5 μM ACEA) for 3 hr. Upper panels for each condition show whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white. (G) Quantification of data represented in (F). Significantly less EGFP-CB1RΔH9 than EGFP-CB1RWT remained on the surface of axons after agonist application, indicating greater sensitivity to agonist-induced internalisation. The surface mean fluorescence was first normalised to the total mean fluorescence for each ROI, then to the average axonal EtOH value within a condition (set to 100%). Unpaired t-test. N = three independent experiments; n = 23–24 neurons per condition. WT vs. ΔH9: mean ± SEM, 64 ± 6.42 vs. 40.6 ± 4.87; N = 3, n = 24 vs. N = 3, n = 23; **p = 0.0059.
+**Figure 7.:** (A) Representative blots showing ERK1/2 phosphorylation in HEK293T cells expressing EGFP-CB1RWT or EGFP-CB1RΔH9 following vehicle (0.1% EtOH) or ACEA (1 μM) treatment for 5 min. (B) Quantification of data shown in (A). Following treatment with ACEA, ERK1/2 was significantly more phosphorylated in EGFP-CB1RWT- and EGFP-CB1RΔH9-transfected cells compared to untransfected cells. However, ERK1/2 activation was significantly reduced in EGFP-CB1RΔH9-expressing cells compared to EGFP-CB1RWT-expressing cells. There was no significant difference in ERK1/2 phosphorylation in vehicle-treated cells. Two-way ANOVA with Tukey’s post hoc test. N = three independent experiments. ACEA, WT vs. Control: mean ± SEM, 7.17 ± 0.684 vs. 1.21 ± 0.252; ****p < 0.0001. ΔH9 vs. Control: mean ± SEM, 3.57 ± 0.825 vs. 1.21 ± 0.252; *p = 0.0150. WT vs. ΔH9: mean ± SEM, 7.17 ± 0.684 vs. 3.57 ± 0.825; ***p = 0.0007. EtOH, WT vs. ΔH9 vs. Control: nsp ≥ 0.9125. (C) Quantification of data shown in (A). EGFP-CB1RWT and EGFP-CB1RΔH9 expressed equally in HEK293T cells. Two-way ANOVA with Sidak’s post hoc test. Three independent experiments. (nsp ≥ 0.9654). (D) Representative immunoblots from surface biotinylation experiments showing surface and total fractions of EGFP-CB1RWT and EGFP-CB1RΔH9 in HEK293T cells. (E) Quantification of data shown in (D). EGFP-CB1RWT and EGFP-CB1RΔH9 are surface expressed at equivalent levels in HEK293T cells. Unpaired t-test. Eight independent experiments. WT vs. ΔH9: mean ± SEM, 1.00 ± 0.0974 vs. 0.885 ± 0.0549; nsp = 0.3212. (F) Representative confocal images of DIV 12 hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9 and treated with vehicle (0.1% EtOH) or CB1R agonist (5 μM ACEA) for 3 hr. Upper panels for each condition show whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white. (G) Quantification of data represented in (F). Significantly less EGFP-CB1RΔH9 than EGFP-CB1RWT remained on the surface of axons after agonist application, indicating greater sensitivity to agonist-induced internalisation. The surface mean fluorescence was first normalised to the total mean fluorescence for each ROI, then to the average axonal EtOH value within a condition (set to 100%). Unpaired t-test. N = three independent experiments; n = 23–24 neurons per condition. WT vs. ΔH9: mean ± SEM, 64 ± 6.42 vs. 40.6 ± 4.87; N = 3, n = 24 vs. N = 3, n = 23; **p = 0.0059.
 
-## The role of H9 in polarity is revealed in the presence of inverse agonist
+### The role of H9 in polarity is revealed in the presence of inverse agonist
 
 Our data thus far indicate that ctCB1R, and the H9 domain in particular, can mediate surface polarity of a CD4 chimera (Figure 3), and promote polarised surface delivery of CB1R (Figure 5). In contrast, deletion of H9 has no effect on CB1R surface polarity at steady-state (Figure 6). However, deletion of H9 does have a striking effect on the surface stability of CB1R with CB1RΔH9 being less surface expressed in both axons and dendrites and displaying increased endocytosis (Figures 4 and 6). Furthermore, CB1R ΔH9 is more responsive to agonist-induced internalisation (Figure 7).
 
@@ -125,7 +125,7 @@ In hippocampal neurons treated with the DMSO control both EGFP-CB1RWT and EGFP-C
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/44252/elife-44252-fig8-v1.jpg)
 
-**Figure 8.:** H9 in polarity is revealed in the presence of inverse agonist.(A) Representative confocal images of DIV 14 hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9 and treated with vehicle (0.2% DMSO) or CB1R inverse agonist (10 µM AM281) for 3 hr. Upper panels for each condition show whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white. (B) Quantification of data shown in (A) presented as the surface polarity index (A/D ratio). In the presence of inverse agonist, but not vehicle, EGFP-CB1RΔH9 was significantly less axonally polarised than EGFP-CB1RWT. Two-way ANOVA with Sidak’s post hoc test. N = three independent experiments; n = 18–22 neurons per condition. DMSO, WT vs. ΔH9: mean ± SEM, 2.17 ± 0.135 vs. 2.34 ± 0.196; N = 3, n = 22 vs. N = 3, n = 22; nsp = 0.9605. AM281, WT vs. ΔH9: mean ± SEM, 2.2 ± 0.18 vs. 1.41 ± 0.0649; N = 3, n = 19 vs. N = 3, n = 18; **p = 0.0067. (C) Quantification of data represented in (A). Significantly more EGFP-CB1RΔH9 than EGFP-CB1RWT relocated to the surface of dendrites after inverse agonist application. The surface mean fluorescence was first normalised to the total mean fluorescence for each ROI, then to the average DMSO value within a condition (set to 100%). Unpaired t-test. N = three independent experiments; n = 18–19 neurons per condition. WT vs. ΔH9: mean ± SEM, 122 ± 12.2 vs. 215 ± 11.3; N = 3, n = 19 vs. N = 3, n = 18; ****p < 0.0001.
+**Figure 8.:** (A) Representative confocal images of DIV 14 hippocampal neurons expressing EGFP-CB1RWT or EGFP-CB1RΔH9 and treated with vehicle (0.2% DMSO) or CB1R inverse agonist (10 µM AM281) for 3 hr. Upper panels for each condition show whole cell field of view and lower panels are enlargements of axonal (a) and dendritic (d) ROIs. Green = total; magenta = surface; blue = axon marker (Ankyrin-G). Merge: surface to total seen as white. (B) Quantification of data shown in (A) presented as the surface polarity index (A/D ratio). In the presence of inverse agonist, but not vehicle, EGFP-CB1RΔH9 was significantly less axonally polarised than EGFP-CB1RWT. Two-way ANOVA with Sidak’s post hoc test. N = three independent experiments; n = 18–22 neurons per condition. DMSO, WT vs. ΔH9: mean ± SEM, 2.17 ± 0.135 vs. 2.34 ± 0.196; N = 3, n = 22 vs. N = 3, n = 22; nsp = 0.9605. AM281, WT vs. ΔH9: mean ± SEM, 2.2 ± 0.18 vs. 1.41 ± 0.0649; N = 3, n = 19 vs. N = 3, n = 18; **p = 0.0067. (C) Quantification of data represented in (A). Significantly more EGFP-CB1RΔH9 than EGFP-CB1RWT relocated to the surface of dendrites after inverse agonist application. The surface mean fluorescence was first normalised to the total mean fluorescence for each ROI, then to the average DMSO value within a condition (set to 100%). Unpaired t-test. N = three independent experiments; n = 18–19 neurons per condition. WT vs. ΔH9: mean ± SEM, 122 ± 12.2 vs. 215 ± 11.3; N = 3, n = 19 vs. N = 3, n = 18; ****p < 0.0001.
 
 These results indicate that in the absence of constitutive activity of the receptor, H9 plays a role in mediating CB1R surface polarity. Furthermore, these data suggest that the increased internalisation observed in dendrites with H9 deletion may be mediated by the presence of endogenous agonist and reaffirm the importance of the neuronal milieu on CB1R trafficking.
 
@@ -139,11 +139,11 @@ Consistent with previous reports (Leterrier et al., 2006; Simon et al., 2013; Ro
 
 Our results further demonstrate that ctCB1R is important for maintaining axonal surface polarity, in part mediated by the H9 motif, which plays a role in both the preferential delivery and selective retention of CB1R at in axons. We show that deleting H9 (CB1RΔH9) has a range of effects on trafficking, surface expression, and signalling in hippocampal neurons. More specifically, these include; i) CB1RΔH9 lacks the preferential delivery to axons observed for CB1RWT, ii) CB1RΔH9 is less efficiently surface expressed, iii) CB1RΔH9 that does reach the surface it is more rapidly endocytosed in both axons and dendrites, and iv) CB1RΔH9 is more sensitive to agonist-induced internalisation and less efficient at downstream signalling, monitored by activation of ERK1/2 phosphorylation.
 
-## Preferential axonal trafficking
+### Preferential axonal trafficking
 
 The mechanism behind polarised membrane trafficking in neurons is a fundamental question and our data suggest a sorting mechanism at the level of the secretory pathway that preferentially targets CB1R to the axon. Since dendritic and axonal cargo are synthesized in the somatodendritic compartment, selective sorting to the correct domain is crucial. While several sorting signals and adaptors have been described for dendritic cargo, the mechanisms behind selective sorting to axons are less well known (Lasiecka and Winckler, 2011; Bentley and Banker, 2016). For example, a recent study in C. elegans has suggested that sorting of cargos to axons or dendrites depends on binding to different types of clathrin-associated adaptor proteins (AP); axonal cargo bind to AP-3 whereas dendritic cargo bind to AP-1 (Li et al., 2016). Interestingly, AP-3 binding has been associated with CB1R trafficking to the lysosome in the dendritic compartment (Rozenfeld and Devi, 2008). One possibility is that H9 may modulate CB1R binding to AP-3, allowing for preferential delivery to axons and sorting to dendritic lysosomes, causing an decrease in dendritic membrane CB1R. More studies are needed to examine the possibility of H9 influencing AP-3 and CB1R interaction.
 
-## Trafficking within the axon
+### Trafficking within the axon
 
 We used time-resolved RUSH experiments to investigate the initiation of CB1R polarity. We measured the transit through the secretory pathway and incorporation into, and passage through, the highly organised axon initial segment (AIS) that acts as a ‘gate-keeper’ for proteins entering the axonal compartment. Our data show that CB1R polarisation was initiated in the first 90 min since they were directly targeted to, and surface expressed within, proximal axonal regions.
 
@@ -151,7 +151,7 @@ Immunocytochemistry in brain sections using immunogold electron microscopy (Kato
 
 CB1Rs are highly mobile and diffuse rapidly in the plasma membrane (Mikasova et al., 2008; Oddi et al., 2012), so the accumulation of surface CB1R we observe may be followed by lateral diffusion and ‘capture’ of surface CB1R at presynaptic sites, analogous to the diffusion and retention models proposed for AMPARs and GABAARs at the postsynaptic membrane (Hastings and Man, 2018; Kneussel and Hausrat, 2016). Another, non-exclusive possibility is that CB1R-containing vesicles originating from the secretory system and/or endosomal system traffic to distal sites inside the axon (Lasiecka and Winckler, 2011). Indeed, it has been reported that CB1R in somatodendritic endosomes can be rerouted and trafficked to distal axonal surfaces (Simon et al., 2013). Our observation that intracellular CB1R is present at least 100 µm along the axon before it appears at the surface supports the concept of a rapid and direct trafficking of CB1R-containing secretory vesicles to more distal areas of the axon, although more detailed tracking of these secretory vesicles to presynaptic boutons would be required to confirm this. Overall, we interpret our data to suggest that arrival at, and progression through, the AIS constitutes the initial phase of CB1R axonal polarisation. Once within the axonal compartment trafficking to more distal locations and to presynaptic sites is then mediated by additional mechanisms that probably include both intracellular transport and lateral diffusion and trapping.
 
-## H9 and membrane retention
+### H9 and membrane retention
 
 Our data suggest that H9 stabilises CB1R at the membrane, regardless of compartment. While the H8 domain is highly conserved in GPCRs, structural domains analogous to H9 have only been reported in squid rhodopsin (Murakami and Kouyama, 2008) and the bradykinin receptor (Piserchio et al., 2005). NMR and circular dichroism studies suggest that H9, like H8, is an amphipathic α-helix, associating with the lipid bilayer via a cluster of hydrophobic residues on the non-polar face of the helix (Ahn et al., 2009). Furthermore, CB1R has been shown to be palmitoylated just downstream of H8 at C416, which affects its membrane association and G-protein coupling (Oddi et al., 2012; Oddi et al., 2018). H9 also contains a cysteine residue, raising the possibility that post-translational modifications such as palmitoylation, prenylation, or farnesylation at this site could modulate membrane association.
 
@@ -161,13 +161,394 @@ Given the increased interest in CB1R as a clinical target, understanding the fun
 
 ## Materials and methods
 
-## Constructs and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab13970; RRID:AB_300798</td>
+      <td>ICC (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rat monoclonal; clone 3H9)</td>
+      <td>Chromotek</td>
+      <td>Chromotek:3h9-100; RRID:AB_10773374</td>
+      <td>WB (1:2,000-1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ankyrin-G (mouse monoclonal; purified; clone N106/36)</td>
+      <td>NeuroMab</td>
+      <td>NeuroMab:75–146; RRID:AB_10673030</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD4 (mouse monoclonal; purified; clone OKT4)</td>
+      <td>BioLegend</td>
+      <td>BioLegend:317402; RRID:AB_571963</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAP2 (rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>SySy:188 003; RRID:AB_2281442</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAP Kinase, Activated/monophosphorylated, Phosphothreonine ERK-1 and 2 (mouse monoconal; clone ERK-PT115)</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:M7802; RRID:AB_260658</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAP Kinase, Non-Phosphorylated ERK (mouse monoclonal; clone ERK-NP2)</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:M3807; RRID:AB_260501</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (mouse monoclonal; clone 6C5)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab8245; RRID:AB_2107448</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Peroxidase anti-mouse IgG (goat)</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:A3682</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Peroxidase anti-rat IgG (rabbit)</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:A5795</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Cy2 anti-chicken IgY (donkey)</td>
+      <td>Jackson Immuno Research (Stratech)</td>
+      <td>JIR:703-225-155; RRID:AB_2340370</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Alexa Fluor 647 anti-chicken IgY (donkey)</td>
+      <td>Jackson Immuno Research (Stratech)</td>
+      <td>JIR:703-606-155; RRID:AB_2340380</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Cy3 anti-chicken IgY (donkey)</td>
+      <td>Jackson Immuno Research (Stratech)</td>
+      <td>JIR:703-165-155; RRID:AB_2340363</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Cy5 anti-mouse IgG (donkey)</td>
+      <td>Jackson Immuno Research (Stratech)</td>
+      <td>JIR:715-175-150; RRID:AB_2340819</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Cy3 anti-mouse IgG (donkey)</td>
+      <td>Jackson Immuno Research (Stratech)</td>
+      <td>JIR:715-165-150; RRID:AB_2340813</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>DyLight 405 anti-mouse IgG (goat)</td>
+      <td>Jackson Immuno Research (Stratech)</td>
+      <td>JIR:115-475-003; RRID:AB_2338786</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Alexa Fluor 488 anti-rabbit IgG (donkey)</td>
+      <td>Jackson Immuno Research (Stratech)</td>
+      <td>JIR:711-545-152; RRID:AB_2313584</td>
+      <td>ICC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Arachidonyl-2'-chloroethylamide (ACEA)</td>
+      <td>Bio-Techne (Tocris)</td>
+      <td>Tocris:1319</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AM 281</td>
+      <td>Bio-Techne (Tocris)</td>
+      <td>Tocris:1115</td>
+      <td>Dissolved in DMSO</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ECACC (Sigma-Aldrich)</td>
+      <td>ECACC:12022001; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (R. norvegicus)</td>
+      <td>primary hippocampal neurons</td>
+      <td>University of Bristol Animal Services Unit</td>
+      <td></td>
+      <td>E18 Wistar Han rats</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRESneo3_Str- KDEL_IRES-SPIl-2-SBP-mCherry-Ecadherin (plasmid)</td>
+      <td>PMID:22406856</td>
+      <td>Addgene:65287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA1-SPHgH-SEP-CB1RWT (plasmid)</td>
+      <td>PMID:17467290</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA1-SPHgH-SEP-CB1RΔH9 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR mutagenesis template: pcDNA1-SPHgH-SEP-CB1RWT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRESneo3_Str-KDEL_IRES-SPIl-2-SBP-EGFP-CB1RWT (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR template: pcDNA1-SPHgH-SEP-CB1R Vector: pIRESneo3_Str-KDEL_IRES-SPIl-2-SBP-mCherry- Ecadherin</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRESneo3_Str-KDEL_IRES-SPIl-2-SBP-EGFP-CB1RΔH9 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR template: pcDNA1-SPHgH-SEP-CB1RΔH9 Vector: pIRESneo3_Str-KDEL_IRES-SPIl-2-SBP-mCherry-Ecadherin</td>
+    </tr>
+    <tr>
+      <td>Recombinant  DNA reagent</td>
+      <td>pcDNA3.1-SPIl-2-SBP-EGFP-CB1RWT (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR template: pIRESneo3_Str-KDEL_IRES-SPIl-2-SBP-EGFP-CB1RWT Vector: pcDNA3.1(+)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-SPIl-2-SBP-EGFP-CB1RΔH9 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR template: pIRESneo3_Str-KDEL_IRES-SPIl-2-SBP-EGFP-CB1RΔH9 Vector: pcDNA3.1(+)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-SPIl-2-EGFP-CB1RWT (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR mutagenesis template: pcDNA3.1-SPIl-2-SBP-EGFP-CB1RWT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-SPIl-2-EGFP-CB1RΔH9 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR mutagenesis template: pcDNA3.1-SPIl-2-SBP-EGFP-CB1RΔH9</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCB6-CD4ΔCt (plasmid)</td>
+      <td>PMID:11689435</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCB6-CD4-ctCB1RWT (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Overlap extension PCR template: pcDNA1-SPHgH- SEP-CB1RWT Vector: pCB6-CD4ΔCt</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCB6-CD4-ctCB1RΔH9 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Overlap extension PCR template: pcDNA1-SPHgH-SEP-CB1RΔH9 Vector: pCB6-CD4ΔCt</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobasal</td>
+      <td>Thermo Fisher Scientific (Gibco)</td>
+      <td>TFS:21103049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Horse Serum</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:H1270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27</td>
+      <td>Thermo Fisher Scientific (Gibco)</td>
+      <td>TFS:A3582801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GS21</td>
+      <td>MTI GlobalStem</td>
+      <td>GS:3100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GlutaMAX</td>
+      <td>Thermo Fisher Scientific (Gibco)</td>
+      <td>TFS:35050038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Lonza</td>
+      <td>Lonza:12–614F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamine</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:G7513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:F7524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TFS:11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Biotin</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich:B4501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link Sulfo-NHS-SS-Biotin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TFS:21331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin− Agarose</td>
+      <td>Merck (Millipore)</td>
+      <td>Merck:S1638</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TFS:BP9704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoromount-G</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TFS:00-4958-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete Protease Inhibitor Cocktail</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Sigma-Aldrich: 11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce Phosphatase Inhibitor</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TFS:A32957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHAPS Detergent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TFS:28300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Fiji (https://fiji.sc/)</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs and reagents
 
 A previously characterised rat CB1R construct in which the first 25 N-terminal amino acids were omitted to avoid possible cleavage of the SBP-EGFP tag (McDonald et al., 2007b; Nordström and Andersson, 2006) was used as a template for sub-cloning into pcDNA3.1. This construct displays normal plasma membrane trafficking (McDonald et al., 2007b; Hebert-Chatelain et al., 2016) and removes the region reported to constitute a mitochondrial targeting motif (Hebert-Chatelain et al., 2016). Helix 9 (residues 440–460) was removed by site-directed mutagenesis. These WT and ΔH9 constructs were subsequently used as a template to clone into the RUSH vector system (interleukin-2 signal peptide followed by SBP and EGFP N-terminal tags) as previously described (Evans et al., 2017; Boncompain and Perez, 2013). Non-ER-retained SBP-EGFP-tagged versions were obtained by re-cloning these inserts from the RUSH vector into pcDNA3.1 (pcDNA-SPIl-2-SBP-EGFP-CB1R). The SBP tag was deleted for surface biotinylation experiments by site-directed mutagenesis (pcDNA-SPIl-2-EGFP-CB1R). Chimeric CD4-ctCB1R WT and ΔH9 were generated by overlap extension PCR followed by cloning into a plasmid expressing CD4 lacking its own C-terminus (Garrido, 2001).
 
 Chicken anti-GFP was from Abcam (ab13970); mouse anti-Ankyrin-G was from NeuroMab (clone N106/36); rabbit anti-MAP2 was from Synaptic Systems (188 003); mouse anti-CD4 was from BioLegend (clone OKT4); rat anti-GFP was from ChromoTek (3H9); anti-phosphoERK (M7802), and anti-non-phosphoERK (M3807) were from Sigma; mouse anti-GAPDH (6C5 ab8245) was from Abcam. All fluorescent secondaries were from Jackson Immunoresearch Laboratories and HRP conjugated secondaries were from Sigma. ACEA and AM281 were from Tocris bio-techne.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Dissociated hippocampal cultures were prepared from E17-E18 Wistar rats as previously described (Martin and Henley, 2004). Glass coverslips were coated in poly-D-lysine or poly-L-lysine (1 mg/mL, Sigma) in borate buffer (10 mM borax, 50 mM boric acid) overnight and washed in water. Dissociated hippocampal cells were plated at different densities in plating medium (Neurobasal, Gibco supplemented with 10% horse serum, Sigma; 2 mM GlutaMAX, Gibco; and either GS21, GlobalStem, or B27, Thermo Fisher) which was changed to feeding medium (Neurobasal supplemented with 1.2 mM GlutaMAX and GS21 or B27) after 24 hr. For RUSH experiments, cells were plated and fed in media containing GS21 instead of B27 because it does not contain biotin. Cells were incubated at 37°C and 5% CO2 for up to 2 weeks. Animal care and procedures were carried out in accordance with UK Home Office and University of Bristol guidelines.
 
@@ -175,15 +556,15 @@ Transfection of neuronal cultures was carried out at DIV 12 using Lipofectamine2
 
 HEK293T cells (ECACC) were passaged and maintained in complete DMEM (DMEM + 10% FBS + 2 mM L-Glutamine). HEK293T cells were regularly treated with ciprofloxacin (10 µg/mL) to prevent mycoplasma contamination.
 
-## Phospho-ERK assay
+### Phospho-ERK assay
 
 HEK293T cells were transfected with SBP-EGFP-CB1RWT, SBP-EGFP-CB1RΔH9, or empty pcDNA3.1 and left for 24 hr. The cells were serum-starved overnight and then treated with 1 μM ACEA or 0.01% EtOH for 5 min before being lysed in lysis buffer (50 mM Tris-HCl; 150 mM NaCl; 1% CHAPS, ThermoFisher Scientific; protease inhibitors, Roche) with phosphatase inhibitors (Pierce, ThermoFisher Scientific). SDS-PAGE and Western blotting procedures were carried out according to standard protocols.
 
-## Surface biotinylation assay
+### Surface biotinylation assay
 
 HEK293T cells were transfected with EGFP-CB1RWT or EGFP-CB1RΔH9 for 48 hr, then cooled to 4°C on ice and washed 3 times in ice-cold PBS. 0.3 mg/mL of EZ-Link Sulfo-NHS-SS-Biotin in PBS was added for 10 min, then the cells were washed 3 times in PBS. 50 mM NH4Cl in PBS was added for 2 min to quench any remaining unreacted biotin, and the cells were washed another 3 times in PBS before being lysed in lysis buffer. Biotinylated surface proteins were isolated using streptavidin coated agarose beads according to standard protocols.
 
-## Live surface staining and antibody feeding
+### Live surface staining and antibody feeding
 
 To measure surface staining, cultured neurons were cooled at room temperature for 5–10 min, then incubated with the appropriate antibody (chicken anti-GFP or mouse anti-CD4) in conditioned media for 10–20 min at RT. The neurons were washed multiple times in PBS before fixation.
 
@@ -191,15 +572,15 @@ For agonist and inverse agonist experiments, the neurons were treated with 5 μM
 
 To measure endocytosed receptors, neurons were fed with the appropriate antibody (chicken anti-GFP or mouse anti-CD4) for 2 hr in conditioned media at 37°C and 5% CO2. Neurons were washed several times in PBS and then surface antibody was stripped by two quick washes with ice-cold pH 2.5 PBS (anti-GFP) or a 4 min incubation with 0.5M NaCl and 0.2M acetic acid (anti-CD4) followed by several washes in PBS before fixation.
 
-## RUSH live labelling
+### RUSH live labelling
 
 Neurons were transfected with RUSH constructs at DIV 12 for no longer than 24 hr to prevent ER stress resulting from accumulation of unreleased receptors. Neurons were incubated in conditioned media containing D-biotin (40 μM, Sigma) and chicken anti-GFP (1:1,000) for different lengths of time at 37°C and 5% CO2. The 0 min timepoint was only incubated with chicken anti-GFP without biotin for 60 min. For the O/N timepoint, neurons were incubated in 40 μM D-biotin immediately following transfection and then left overnight at 37°C and 5% CO2 before being incubated with biotin and chicken anti-GFP for 60 min to label surface CB1R. Every independent experiment included a 60 min timepoint to which values were normalised and a 0 min control. Following biotin treatment, neurons were washed several times in PBS and cooled to 4°C to prevent further internalisation. They were then live labelled with 647-labelled anti-chicken in conditioned media for 15 min at 4°C before being fixed and permeabilised and stained with Cy3-labelled anti-chicken. In the text, ‘surface’ thus refers to 647 fluorescence acquisition, whereas ‘surface + endocytosed’ refers to Cy3 fluorescence acquisition.
 
-## Fixation and fixed immunostaining
+### Fixation and fixed immunostaining
 
 Cultured neurons were fixed in 4% formaldehyde in PBS for 12 min, then washed 3x in PBS, 1x in 100 mM Glycine in PBS, and 3x in PBS. The neurons were then blocked and permeabilised in PBS + 3% BSA + 0.1% Triton X-100 before being incubated in fluorescent secondary (1:400) in PBS + 3% BSA. Subsequently, the neurons were re-incubated in primary antibody (anti-GFP or anti-CD4) to measure total levels of expression and stained with either anti-MAP2 (dendritic marker) or anti-Ankyrin-G (axonal initial segment marker) in PBS + 3% BSA. The neurons were then washed several times in PBS and mounted onto glass slides using Fluoromount-G (ThermoFisher Scientific).
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Images were acquired using either a Leica SPE single channel confocal laser scanning microscope or a Leica SP8 AOBS confocal laser scanning microscope (Wolfson Bioimaging Facility, University of Bristol). All settings were kept the same within experiments. Neurons used for data acquisition were selected only on their total staining.
 
@@ -213,6 +594,6 @@ Polarity indices (A/D ratio) were calculated by dividing the axonal mean fluores
 
 The scalebar for all images represents 20 μm.
 
-## Statistics
+### Statistics
 
 All statistics were performed using GraphPad Prism. The ROUT method was used to identify outliers for all parameters measured before normalising to control. Neurons were removed from analysis if any one parameter was found to be an outlier. As is the convention in the field (Leterrier et al., 2006; Coutts et al., 2001; Simon et al., 2013; Evans et al., 2017; McDonald et al., 2007b; Leterrier et al., 2017), ‘N’ denotes the number of separate neuronal cultures prepared from litters of pups from separate dams and ‘n’ denotes the total number of neurons across the separate cultures assessed. To determine statistical significance between two groups, a D’Agostino and Pearson normality test was performed. Unpaired t-tests were performed on data that passed the normality test whereas the Mann-Whitney test was used if it did not. One- or Two-way ANOVAs with Tukey’s or Sidak’s post hoc test were used to determine statistical significance between more than two groups depending on the comparisons required. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001. All data are presented as mean ± SEM.

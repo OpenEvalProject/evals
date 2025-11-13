@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05t8khn72 Institute for Molecular Biology of Barcelona (IBMB, CSIC), Baldiri Reixac 15 Barcelona Spain
+1. Institute for Molecular Biology of Barcelona (IBMB, CSIC), Baldiri Reixac 15 Barcelona Spain ([ROR:05t8khn72](https://ror.org/05t8khn72))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ We previously identified human kazrin C as a protein that potently inhibits clat
 
 ## Results
 
-## Kazrin depletion impairs endosomal traffic
+### Kazrin depletion impairs endosomal traffic
 
 We originally identified kazrin C as a human brain cDNA, whose overexpression causes accumulation of the transferrin receptor (TfnR) at the plasma membrane (PM) in Cos7 cells (Schmelzl and Geli, 2002), suggesting that kazrin might be involved in clathrin-mediated endocytic uptake from the PM. However, treatment of Cos7 cells with an shRNA directed against kazrin (shKzrn) (Figure 1—figure supplement 1A) did not inhibit endocytic internalization but it rather increased the intracellular signal of Alexa 647-Tfn (A647-Tfn) upon a 2 hr incubation (Figure 1—figure supplement 1B,C), indicating that depletion of kazrin either exacerbated endocytic uptake or inhibited endocytic recycling. The distribution of A647-Tfn labeled endosomes was also altered in the shKzrn treated cells, as compared with that of untreated cells or cells transfected with a control shRNA (shCTR). In wild-type (WT) and shCTR-treated cells, A647-Tfn accumulated in the juxtanuclear region, where the RE is usually located (Granger et al., 2014; Sheff et al., 2002; Shen et al., 2006; Tang and Marshall, 2012; Yamashiro et al., 1984). In contrast, TxR-Tfn labeled endosomes appeared more scattered toward the cell periphery in shKzrn treated cells (Figure 1—figure supplement 1B,C). The accumulation of endocytosed material at the periphery suggested that kazrin plays a post-internalization role in the endocytic pathway, possibly in the transport of material toward the juxtanuclear RE.
 
@@ -37,31 +37,173 @@ shRNA transfection in Cos7 cells did not achieve complete kazrin depletion in a 
 
 To better discern on the possible effects of kazrin depletion on endocytic uptake or in subsequent trafficking events, WT and kazKO cells were exposed to a short, 10 min incubation pulse with Texas Red-Tfn (TxR-Tfn), fixed, and analyzed. In WT cells, TxRed-Tfn accumulated in a pericentriolar region adjacent to the nucleus, similar to Cos7 cells (Figure 1A and Figure 1—figure supplement 3A). No differences in the amount of internalized TxR-Tfn were observed between WT and kazKO MEF (Figure 1—figure supplement 4), suggesting that kazrin did not play a relevant role in the formation of endocytic vesicles from the PM, but it might rather work downstream in the pathway. In agreement with this view, and similar to the shKzrn Cos7, kazKO MEFs accumulated TxR-Tfn in the cell periphery, as compared with WT cells (Figure 1A and B). Juxtanuclear accumulation of TxR-Tfn was restored in kazKO MEF by low, physiological expression of GFP-kazrin C but not GFP (Figure 1A and B), indicating a direct role of kazrin in the process. No significant difference between the kazKO and the kazKO GFP-expressing cells could be detected in these experiments. Therefore, in order to simplify the experimental design, further assays were normalized to the closest isogenic kazKO background, namely the kazKO cells when compared to the WT, and the kazKO GFP expressing cells when compared to kazKO MEF expressing GFP-kazrin C.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal images of wild-type (WT) and kazKO MEF or kazKO MEF expressing low levels (See Materials and methods (M & M)) of GFP or GFP-kazrin C, incubated with Texas Red-Tfn (TxR-Tfn) at 16 °C and chased at 37 °C for 10 min. Scale bar, 10 μm. Cell borders are indicated by dashed lines and nuclei in blue. (B) Scattered plot of the mean ± SD (Standard deviation) TxR-Tfn perinuclear enrichment (See M & M) for the cells described in A, after 10 min incubation at 37 °C. p-values of the two-tailed Mann-Whitney tests are shown. n>58 cells for each sample. Refer also to Figure 1—figure supplement 1 for the effects of kazrin depletion in Cos7 cells, Figure 1—figure supplement 2 for the strategy of kazKO MEF generation, Figure 1—figure supplement 3A for pericentriolar localization of internalized transferrin (Tfn) in WT cells, and Figure 1—figure supplement 4 for the effects of kazrin depletion on TxR-Tfn uptake in MEF. (C) Confocal images of the WT and kazKO MEF, or kazKO MEF expressing low levels of GFP or GFP-kazrin C, fixed and stained with anti-EEA1 and A568-conjugated secondary antibodies. A 17 μm2 magnified insets showing endosomes in the peripheral areas are shown on the right. Scale bar, 10 μm. Cell borders are indicated with dashed lines and nuclei in blue. (D) Scattered plots of the mean ± SD early endosome autoantigen 1 (EEA1) perinuclear enrichment (See M & M) in the cells described in C. The values were normalized to the corresponding kazKO cells (either kazKO or kazKO GFP). p-values of the two-tailed Mann-Whitney tests are shown. n>80 cells for each sample. Refer to Figure 1—figure supplement 3B for pericentriolar localization of EEA1 in WT cells and Figure 1—figure supplement 4 for the effects of kazrin depletion on the RAB11 perinuclear enrichment. (E) Line plot of the mean ± SD TxR-Tfn fluorescence intensity per cell in WT and kazKO MEFs, or kazKO MEFs expressing low levels of GFP and GFP-kazrin C, at the indicated time points after loading early endosomes (EEs) with TxR-Tfn at 16 °C and release at 37 °C to allow recycling (See M & M for further details). Data were normalized to the average intensity at time 0. p-values of the two-tailed Student t-tests are shown. n>16 cells per sample and time point.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Strategy for the establishment of kazKO MEFs created with the CRISPR-Cas9 technology. The gRNA was designed to recognize a sequence at the beginning of exon 2 of the mouse Kazn gene, after the initiation codon of kazrin C, and followed by a PAM site. The Cas9 nuclease gene was transfected in a plasmid into the cells, together with the gRNA. Cas9 cleavage often leads to a frameshift mutation that impedes the expression of the gene. The plasmid encoding the gRNA and the Cas9 also encodes GFP, which allows sorting and isolation of transfected cells by FACS. The resulting clones were analyzed by immunoblot, and those with no kazrin expression were selected. One of them was used as the base for another three cell lines in which genes encoding GFP or GFP-kazrin C were inserted in the genome. The inserted constructs were preceded by a tetracycline-response element. This was achieved by lentiviral transduction and selection by FACS. Thus, none of these cell lines have endogenous kazrin expression but express GFP or GFP-kazrin C upon doxycycline addition. (B) Immunoblots of cell lysates from wild-type (WT) and kazKO MEF or kazKO MEFs expressing GFP and GFP-kazrin C, in the presence (+) or absence (−) of 5 µg/ml doxycycline for 24 hr (dox). The membranes were probed with a polyclonal rabbit serum against the N-terminus of kazrin C, anti-GFP, or stained with Ponceau red (as a loading control). A high and a low exposure for the kazrin signal are shown. (C) Confocal images of GFP-kazrin C kazKO MEFs in the presence (+) or absence (−) of 5 µg/ml doxycycline for 24 hr (dox). Scale bar, 10 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) MIP of confocal fluorescence images of WT MEF loaded with TxR-Tfn for 10 min, fixed and stained with DAPI and with rabbit anti-pericentrin and secondary A488-conjugated antibodies. The individual channels and the merge are shown. (B) MIP of confocal fluorescence images of WT MEF, fixed and stained with rabbit anti-pericentrin and mouse anti-early endosome Autoantigen 1 (EEA1) andtibodies and secondary A488 and A568-conjugated antibodies, respectively. The individual channels and the merge are shown. Dashed lines indicate the cell periphery and nuclei are in blue.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Confocal images of wild-type (WT) and kazKO MEF incubated for 10 min with 20 µg/ml TxR-Tfn at 37 °C. Scale bar, 10 µm. (B) Scattered plot of the mean ± SD TxR-Tfn fluorescence intensity per cell for WT and kazKO cells. The fluorescence intensity in WT and kazKO cells was normalized to the mean value of the kazKO cells. The p-value of a Mann-Whitney test is shown. n>100 cells for each sample.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Confocal images of wild-type (WT) and kazKO MEFs, fixed and stained with anti-RAB11 and A488-conjugated secondary antibodies. The dashed lines indicate the cell periphery and nuclei are in blue. Scale bar, 10 µm. (B) Scattered plot of the mean ± SD RAB11 perinuclear enrichment (See M & M for further details) for WT and kazKO MEF. The data were normalized to the mean of the kazKO cells. p-values of two-tailed Student t-tests are shown. n>29 cells for each sample.
+
 To evaluate if the scattering of TxR-Tfn endosomes was due to a defect in the transfer of material form the EEs to the REs or if it was caused by the dispersal of the REs, we analyzed the distribution of the EE and the RE markers EEA1 (Early endosome autoantigen 1) and RAB11 (Ras-related in brain 11), respectively. We observed that kazKO MEFs accumulated peripheral, often enlarged, EEA1 positive structures, as compared with WT MEF (Figure 1C and D and Figure 1—figure supplement 3B). The juxtanuclear distribution of the REs, was however not significantly affected in the knock-out cells (Figure 1—figure supplement 5). Again, low expression of GFP-kazrin C but not GFP recovered the EEA1 juxtanuclear distribution (Figure 1C and D). The data thus suggested that kazrin promotes the transfer of endocytosed material toward the juxtanuclear region, where the RE is located.
 
 Consistent with the role of kazrin in endocytic traffic towards the RE, recycling of TxR-Tfn back to the PM was diminished in kazKO cells (Figure 1E), albeit not completely blocked. A complete block in recycling was not to be expected because, in addition to the RAB11 route, the TfnR can take a RAB4-dependent shortcut to the PM (Sheff et al., 2002). As for the juxtanuclear Tfn enrichment assays, the expression of GFP-kazrin C but not GFP restored the recycling defects installed in the kazKO MEF (Figure 1E).
 
 To further confirm the specific role of kazrin in endocytic recycling via the juxtanuclear RE, we analyzed its implication in cellular processes that strongly rely on this pathway, such as cell migration and invasion (Emery and Ramel, 2013; Fan et al., 2004; Jones et al., 2006; Kessler et al., 2012; Mammoto et al., 1999; Powelka et al., 2004; Ramel et al., 2013; Wilson et al., 2018; Yoon et al., 2005). Analysis of the migration of single WT and kazKO cells through Matrigel demonstrated that depletion of kazrin significantly reduced the migration speed, which, similar to endocytic traffic, was recovered upon re-expressing GFP-kazrin C at low levels, but not GFP (Figure 2A and B, Video 1). We also observed an increased persistency in the migration of kazKO cells (Figure 2—figure supplement 1), but it was not recovered with GFP-kazrin C re-expression (Figure 2—figure supplement 1). Increased persistency might be a secondary effect caused by the trafficking block to the RE, which accelerates recycling via the RAB4-dependent shortcut circuit (Perrin et al., 2013; White et al., 2007). The long recycling pathway also plays an important role in the last abscission step during cytokinesis (Fielding et al., 2005; Horgan et al., 2004; Pollard and O’Shaughnessy, 2019; Wilson et al., 2005). Consistent with kazrin playing a role in this process, kazKO cells had a significant delay in cell separation after cytokinesis, which was again restored by GFP-kazrin C expression (Figure 2C and D and Video 2).
 
-## Kazrin is recruited to EEs and directly interacts with components of the endosomal machinery through its C-terminal predicted IDR
+![Figure 2.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig2-v2.jpg)
+
+**Figure 2.:** (A) Paths described by individually migrating wild-type (WT) and kazKO MEF or kazKO MEFs expressing GFP or GFP-kazrin C at low levels (See M & M). The cells were embedded in Matrigel and tracked for 9 hr with a 10 min time lapse. All tracks start at the (0,0) coordinate in the graph. See also Video 1 for examples of individual migrating cells. (B) Scattered plot of the mean ± SD speed of cells described in (A). The data wre normalized to the mean of the corresponding KO cells (either kazKO or kazKO expressing GFP). p-values of the two-tailed Mann-Whitney tests are shown. n>100 cells per condition. See also Figure 2—figure supplement 1 for the effects of kazrin depletion on directionality. (C) Time-lapse epifluorescence images of WT and kazKO MEFs or kazKO MEFs expressing GFP or GFP-kazrin C at low levels, as they divide. Cells were recorded every 10 min. See also Video 2 for examples of individual dividing cells. Windows are 55 x 74 μm2 for WT MEF, 38 x 50 μm2 for kazKO MEF and 60 x 80 μm2 for GFP and GFP-kazrin C expressing MEF. (D) Mean time ± SD between substrate attachment and complete cell separation of the cells described in C. The data were normalized to the mean of the corresponding KO (kazKO or kazKO expressing GFP). p-values of the two-tailed Mann-Whitney tests are shown. n>68 dividing cells per condition.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Scattered plots of the mean ± SD directionality ratio of individually migrating wild-type (WT) and kazKO cells or kazKO MEF expressing low levels (See M & M) of GFP or GFP-kazrin C. Cells were embedded in Matrigel and tracked for 9 hr. The data were normalized to the corresponding kazKO cells. p-values of the two-tailed Mann-Whitney tests are shown. n>155 cells recorded per condition.
+
+![Video 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-video1.mp4.jpg)
+
+**Video 1.:** The cells were embedded in Matrigel and imaged with an epifluorescence microscope.
+
+![Video 2.](https://cdn.elifesciences.org/articles/83793/elife-83793-video2.mp4.jpg)
+
+**Video 2.:** Scale bar = 10 μm. The cells were embedded in Matrigel and imaged with an epifluorescence microscope.
+
+### Kazrin is recruited to EEs and directly interacts with components of the endosomal machinery through its C-terminal predicted IDR
 
 Next, we investigated whether endogenous kazrin was present in EEs. For that purpose, we initially used subcellular fractionation and immunoblot because the endogenous protein was not detectable by fluorescence microscopy, nor was GFP-kazrin C expressed at physiological levels. As shown in Figure 3A, endogenous kazrin neatly co-fractionated in the lightest fractions with EE markers such as the tethering factor EEA1 and EHD (Eps15 homology domain) proteins, most likely corresponding to EHD1 and EHD3. On the contrary, it only partially co-fractionated with a transitional early-to-late endosome marker (Vacuolar Protein Sorting 35 ortholog, VPS35) and did not with markers of recycling endosomes (RAB11) or the Golgi apparatus (Golgi Matrix protein 130, GM130) (Figure 3A). Moderately overexpressed GFP-kazrin C also co-fractionated with EEs, although it appeared slightly more spread towards the RE and Golgi fractions in the gradient (Figure 3A). Endogenous kazrin localization at EEs was confirmed by subcellular fractionation experiments in mIMCD3 cells (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig3-v2.jpg)
+
+**Figure 3.:** (A) Left, immunoblots of Optiprep density gradient fractionations of membrane lysates of wild-type (WT) and kazKO MEF or kazKO MEF moderately expressing (See M & M) GFP or GFP-kazrin C. The membranes were probed with antibodies against the kazrin C N-terminus, EEA1, and EHD1 (EE markers), VPS35 (RAB5/RAB7 transition endosomal marker), RAB11 (RE/Golgi marker), GM130 (cis-Golgi marker) and BIP (Binding immunoglobulin protein) (ER marker). The antibody against EHD1 is likely to recognize other Eps15 homology domain (EHD) proteins. Band intensity plots per fraction for kazrin or the indicated intracellular membrane markers are shown on the right. The signal intensities of each fraction were normalized to the maximum for each antibody. All gradients were loaded with the same amount of total protein. Refer also to Figure 3—figure supplement 1 for co-fractionation of kazrin and early endosome autoantigen 1 (EEA1) in the lightest gradient fractions in IMCD3 cells. (B) Immunoblots of anti-GFP-agarose precipitates from lysates of kazKO MEF moderately expressing GFP or GFP-kazrin C, probed with antibodies against the indicated proteins. 10 µg of total protein were loaded as input. (C) Immunoblots of pull-downs from glutathione-Sepharose beads coated with GST, or GST fused to full-length EHD1 or EHD3, the clathrin heavy chain terminal domain (CHC-TD) or the γ-adaptin ear domain, incubated with purified 6xHis-kazrin C. The membranes were probed with an anti-kazrin antibody (ab74114, from Abcam) and stained with Ponceau red to visualize the GST fusion constructs. Refer also to Figure 3—figure supplement 2 for evidence indicating co-immunoprecipitation of endogenous kazrin with γ-adaptin and clathrin. (D) Immunoblots of pull-downs from glutathione-Sepharose beads coated with GST, or GST fused to the N- (amino acids 1–174) or C- (amino acids 161–327) terminal portions of kazrin C, incubated with non-denaturing extracts from MEFs. 10 µg of total protein were loaded as input. Ponceau red staining of the same membrane (lower panels) is shown to visualize the protein extract or the GST fusion constructs. (E) Prediction of IDRs in kazrin C. The graph shows the probability of each residue of being part of an intrinsically disordered region (IDR), according to the IUPred2A software. Residues in the shaded area have a consistent probability over 0.5 to form part of an IDR. (F) Immunoblots of a lipid-binding assay performed with either the purified GST-kazrin C C-terminal portion (amino acids 161–327) (GST-kaz-Ct) or an equivalent construct in which the poly-K region has been mutated to poly-A. The membranes used in this assay contain a concentration gradient of the indicated phosphoinositides. Membranes were probed with an anti-GST antibody. (G) Immunoblot of a liposome pelleting assay probed with an anti-GST antibody. GST or GST-kazrin C were incubated in the presence (+) or absence (−) of liposomes containing 5% phosphatidylinositol 3-phosphate (PI3P). Liposomes were recovered at 100.000 g for 1.5 hr. One equivalent of the input (T), one equivalent of the supernatant (S), and ten equivalents of the pellet (P) were loaded per sample.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Immunoblots of Optiprep density gradient fractions of membrane lysates of IMCD3 WT and kazKO cells, were probed with a rabbit serum raised against the N-terminus of kazrin C or with an anti-EEA1 antibody.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Immunoblot of protein A-Sepharose precipitates from wild-type (WT) or kazKO MEFs or Cos7 cells using a mixed serum raised against the N and the C-terminal portions of kazrin C or a pre-immunization serum, probed with anti-γ-adaptin or anti-clathrin heavy chain (CHC) antibodies. Endogenous kazrin could not be detected with any of the tested antibodies in the immunoprecipitates because the antibody chain has a molecular weight similar to that of kazrin (approx. 50 Kda). kazKO MEF was used as specificity control instead.
 
 To confirm the interaction of kazrin C with endosomes, we immunoprecipitated GFP-kazrin C from native cellular extracts and probed the immunoprecipitates for a number of proteins involved in endosomal trafficking. We detected specific interactions of GFP-kazrin C and γ-adaptin, a component of the Golgi and endosomal clathrin adaptor AP-1 (Adaptor Protein 1), as well as clathrin and EHD proteins (Figure 3B). No interaction with the retromer subunit VPS35, the tethering factor EEA1, or the clathrin adaptors GGA2 (Golgi-localized Gamma-ear-containing ADP-ribosylation factor-binding 2) or AP-2 (Adaptor Protein 2) could be detected in immunoprecipitation assays (Figure 3B), indicating that kazrin C binds the machinery implicated in endosomal traffic from EEs to or through REs (Caplan et al., 2002; George et al., 2007; Grant et al., 2001; Grant and Caplan, 2008; Jović et al., 2007; Lin et al., 2001; Naslavsky et al., 2006; Perrin et al., 2013; Rapaport et al., 2006). Pull-down assays with purified components demonstrated that kazrin C can directly interact with EHD1 and EHD3, the clathrin heavy chain terminal domain, and the γ-adaptin ear (Figure 3C). Pull-down assays from cell extracts showed that the EHD proteins and the AP-1 complex bound to the C-terminus of kazrin C, predicted to be an IDR, but not to the N-terminus (Figure 3D and E). Most kazrin interacting partners were previously defined to bind its N-terminal region predicted to form a coiled-coil (Groot et al., 2004; Sevilla et al., 2008b). The interaction of endogenous kazrin with γ-adaptin could also be confirmed in co-immunoprecipitation experiments from MEFs, using a polyclonal antibody against the C-terminus of kazrin C (Figure 3—figure supplement 2). In lipid overlay and liposome pelleting assays, we also found that purified kazrin C interacted with PhosphatidylInositol 3-Phosphate (PI3P) (Figure 3F and G), a lipid particularly enriched on EEs (Gillooly et al., 2000; Wang et al., 2019). The interaction required the poly-Lys stretch in the C-terminus of kazrin C (Figure 3F), previously proposed to constitute a nuclear localization signal (Groot et al., 2004). The data suggested that the predicted kazrin C IDR had multiple binding sites for EE components, and therefore, it might be required for its EE recruitment and its function in endosomal traffic.
 
 To investigate the role of the C-terminal region of kazrin C in its recruitment to endosomes and its function in endocytic traffic, we generated kazKO cells expressing a GFP-kazrin C construct lacking the C-terminal predicted IDR (lacking amino acids 161–327) (kazKO GFP-kazrin C-Nt), using the lentivirus system (Figure 4—figure supplement 1). We then analyzed its subcellular localization and its capacity to complement the kazKO endocytic defects, as compared with full-length GFP-kazrin C or GFP. As shown in Figure 4A and B, moderately expressed GFP-kazrin C significantly associated with the microsomal fraction containing the EEs. In contrast, GFP and GFP-kazrin C-Nt were mostly cytosolic, indicating that the C-terminal predicted IDR, which binds PI3P, γ-adaptin, and EHD proteins, might be required to bring kazrin to cellular membranes. Next, we proceeded to image cells expressing moderate levels of GFP-kazrin C and GFP-kazrin C-Nt, upon loading of EEs with TxR-Tfn at 16 °C. The previously reported localizations of kazrin C in the nucleus and at cell-cell contacts were evident in these cells (Figure 4—figure supplement 2; Groot et al., 2004). At the PM, GFP-kazrin C neatly co-localized with the adherens junction components N-cadherin, β-catenin, and p120-catenin, but not with desmoglein, a desmosomal cadherin (Figure 4—figure supplement 2). In addition to the previously reported localizations, GFP-kazrin C formed small foci, which associated with the surface of the TxR-Tfn labeled endosomes (Figure 4C and D; Figure 4—figure supplement 3 and Video 3). Co-localization of GFP-kazrin C foci with EHD-labeled structures could also be observed in the cell periphery (Figure 4—figure supplement 4 and Video 4). GFP-kazrin C-Nt and GFP staining at similar expression levels appeared mostly cytosolic, with nearly no visible (for GFP) or scarce (for GFP-kazrin C-Nt) foci per cell (Figure 4C to E). The few GFP-kazrin C-Nt foci observable appeared less associated with TxR-Tfn loaded endosomes, as compared to GFP-kazrin C (Figure 4C and D; Figure 4—figure supplement 3 and Videos 3 and 5).
 
+![Video 3.](https://cdn.elifesciences.org/articles/83793/elife-83793-video3.mp4.jpg)
+
+**Video 3.:** Cells were shifted to 37℃ and fixed after 10 min. The windows are 5 × 5 µm2.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunoblots of subcellular fractionations from kazKO cells expressing moderate amounts (See M & M) of GFP, GFP-kazrin C or a GFP-kazrin C construct lacking the C-terminal predicted IDR (GFP-kazrin C-Nt). Cells were lysed in a non-denaturing buffer and centrifuged at 186,000 g for 1 hr to separate membranes (Mic) from the cytosol (Cyt). 15 µg of the total extract (Tot), and 1 and 5 equivalents of the cytosolic and membrane fractions were loaded per lane, respectively. (B) Scattered plot of the mean ± SD percentage of the GFP-signal associated with the microsomal fraction (Mic) in kazKO MEF expressing moderate amounts of GFP, GFP-kazrin C or GFP-kazrin C-Nt. Student´s t-tests p-values are shown. n=5 independent experiments for each sample. See M & M for experimental details. (C) MIP of confocal images of kazKO MEF expressing moderate amounts of GFP, GFP-kazrin C, or GFP-kazrin-Nt, loaded with 20 µg/ml of Texas Red-Tfn (TxR-Tfn) at 16 °C to accumulate endocytic cargo on early Endosomes endosomes (EEs). The images from the GFP and TxR channels and the merge from 5 × 5 µm2 fields are shown on the right. (D) Frames showing consecutive 60o turn snapshots of the 5 × 5 µm2 3D reconstruction animations of the insets shown in C for GFP-kazrin C and GFP-kazrin-C-Nt, showing the association of GFP-kazrin C foci, but not GFP-kazrin C-Nt, with TxR-Tfn-loaded EEs. (E) Scattered plot of the mean ± SD of the number of condensates per cell, visible with the GFP filter channel in the kazKO cells described in (B). p-values of the two-tailed Mann-Whitney test are shown. n=29 cells for each sample. Refer also to Video 3 for four 3D reconstruction animations of TxR-Tfn loaded endosomes associated with GFP-kazrin C, and Video 5 for GFP-kazrin C-Nt; Figure 4—figure supplement 2 for co-localization of GFP-kazrin C with adhesion molecules; Figure 4—figure supplement 3 for analysis of the association of GFP-kazrin C and GFP-kazrin C-Nt foci with TxR-Tfn loaded endosomes; and Figure 4—figure supplement 4 and Video 4 for co-localization of GFP-kazrin C with Eps15 homology domain (EHD) proteins. (F) Confocal micrographs of kazKO cells expressing low amounts (see M & M) of GFP, GFP-kazrin C, or GFP-kazrin C-Nt loaded with 20 µg/ml of TxR-Tfn at 16 °C and chased for 10 min at 37 °C. Cell borders are indicated by dashed lines and the nuclei in blue. (G) Scattered plots of the mean ± SD TxR-Tfn perinuclear enrichment for the cells and experimental conditions described in D. See M & M for experimental details. The data is normalized to the mean value of kazKO cells expressing GFP. p-values of the two-tailed Mann-Whitney test are shown. n>25 cells for each sample.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Ponceau red staining (lower panels) and immunoblots against GFP of wild-type (WT) and kazKO MEFs, or kazKO cells expressing GFP-Kazrin C or a GFP-Kazrin C construct lacking the predicted intrinsically disordered region (IDR) (GFP-kazrin-Nt) in the absence (−) or presence (+) of 5 µg/ml doxycycline for 24 hr (dox).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Merged confocal images of kazKO MEFs expressing moderate levels (See M & M) of GFP or GFP-kazrin C, fixed and stained with anti-N-cadherin, β-catenin, p120-catenin, or desmoglein antibodies and A568-conjugated secondary antibodies. Merged images and individual channels of 10 × 10 µm2 are shown. Scale bar, 10 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Snapshots of 3D reconstruction animations (see also Video 3 (left) and 5 (right)) of 5 × 5 µm2 crops from confocal fluorescence microscopy Z-stacks of kazKO MEFs expressing moderate levels of GFP-kazrin C or GFP-kazrin C-Nt, loaded with Texas Red-Tfn (TxR-Tfn) at 16 °C. Individual channels and merged images are shown (B) Scattered plot showing the mean ± SD of the maximal distance between the centroids of the closest GFP and TxR foci, as a measure of their association. 3D reconstructions of at least 20 GFP-kazrin C and GFP-kazrin C-Nt foci from different cells were generated and manually analyzed using the line toolbar of Fiji (See M & M for further details). Student´s t-tests p-values are shown.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) MIP of merged confocal images of kazKO MEFs expressing moderate levels (See M & M) of GFP or GFP-kazrin C (GFP-kaz), fixed and stained with anti-EHD1 and A568-conjugated secondary antibodies. Individual channels and merged images of 5 × 5 µm2 magnified crops are shown on the right. See also Video 4 for 3D reconstruction animations of the GFP-kazrin C EHD1 crops. (B) Frames showing consecutive 30o turn snapshots of the 5 × 5 µm2 insets in Video 4, corresponding to crop 1 and crop 2 in A.
+
+![Video 4.](https://cdn.elifesciences.org/articles/83793/elife-83793-video4.mp4.jpg)
+
+**Video 4.:** The windows are 5 × 5 µm2.
+
+![Video 5.](https://cdn.elifesciences.org/articles/83793/elife-83793-video5.mp4.jpg)
+
+**Video 5.:** Cells were shifted to 37℃ and fixed after 10 min. The windows are 5 × 5 µm2.
+
 The data thus indicated that the C-terminal predicted IDR was required to recruit kazrin C to endosomal membranes and consequently, it should be required to sustain its function in endosomal traffic, provided that it played a direct role in the process. To test this hypothesis, we investigated the capacity of GFP-kazrin C-Nt to restore traffic of TxR-Tfn to the juxtanuclear region in the kazKO cells, as compared to the full-length kazrin C. As shown in Figure 4F and G, GFP-kazrin C significantly increased the juxtanuclear enrichment of TxR-Tfn in a kazKO background upon a 10 min uptake, as compared to GFP expression, whereas GFP-kazrin C-Nt did not.
 
-## Kazrin C localizes at the pericentriolar region and directly interacts with dynactin and LIC1
+### Kazrin C localizes at the pericentriolar region and directly interacts with dynactin and LIC1
 
 Interestingly, we observed that in most cells expressing GFP-kazrin C, one or two very bright foci embracing EEs were visible in the juxtanuclear region (Figure 5A). Neat co-localization of the bright juxtanuclear GFP-kazrin C foci with pericentrin demonstrated that GFP-kazrin C accumulated in the pericentriolar region (Figure 5B). Live-cell imaging evidenced small GFP-kazrin C foci moving towards and away from the pericentriolar region (Figure 5—figure supplement 1 and Videos 6 and 7). These structures were reminiscent of pericentriolar satellites, which are IDR-enriched membrane-less compartments that transport centrosomal components in a microtubule-dependent manner (Prosser and Pelletier, 2020). Treatment with the microtubule depolymerizing drug nocodazole disrupted the juxtanuclear localization of GFP-kazrin C, along with that of EEs (Figure 5C and D). Likewise, treatment with ciliobrevin to inhibit dynein activity resulted in concomitant dispersal of EEs as previously observed (Aniento et al., 1993; Burkhardt et al., 1997; Driskell et al., 2007; Flores-Rodriguez et al., 2011) and GFP-kazrin C depletion from pericentrin condensates (Figure 5E and F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig5-v2.jpg)
+
+**Figure 5.:** (A) Merged confocal fluorescence micrographs of kazKO MEF moderately expressing (See M & M) GFP-kazrin C, fixed and stained with anti-EEA1 and A568-conjugated secondary antibodies. Individual channels and merged images of 6 x magnifications are shown. Scale bar, 10 μm. (B) Merged and individual channels of confocal fluorescence micrographs of kazKO MEF moderately expressing GFP or GFP-kazrin C, fixed and stained with anti-pericentrin and A568-conjugated secondary antibodies. 3.5 x magnifications are shown. Arrowheads indicate cell-cell borders. Scale bar, 10 μm. Refer also to Figure 5—figure supplement 1 and Videos 6 and 7 for live imaging. (C) Confocal fluorescence micrographs of kazKO MEF moderately expressing GFP-kazrin C, treated with DMSO or 100 ng/ml nocodazole, fixed, and stained with anti-EEA1 and A568-conjugated secondary antibodies and DAPI. Scale bar, 5 μm. (D) Bar plot showing the percentage of cells with a perinuclear localization of GFP-kazrin C (left) and scattered plot of the mean ± SD EEA1 perinuclear enrichment (right) in the cells and the experimental conditions described in C. See M & M for further details. The data was normalized to the mean of the mock-treated cells. p-values of a two-sided Fisher’s exact test (left) and a two-tailed Student t-test (right) are shown. n>32 cells for each sample. (E) Confocal fluorescence micrographs of kazKO MEF moderately expressing GFP-kazrin C, treated with DMSO or 40 nM ciliobrevin, fixed, and stained with mouse anti-EEA1 and rabbit anti-pericentrin antibodies and A488 and A568-conjugated secondary antibodies, respectively, and DAPI. 5.4 × 5.4 µm2 magnified areas where the pericentrin foci accumulate are shown. (F) Scattered plot of the mean ± SD intensity signal of pericentrin and GFP-kazrin C in the pericentriolar dots (left), for the cells and experimental conditions described in E, normalized to the mean signal of pericentrin or GFP-kazrin C, in cells treated with DMSO. Scattered plot of the mean ± SD EEA1 perinuclear enrichment (right) in cells treated as described in E. See M & M for further details. The data was normalized to the mean of the mocktreated cells. p-values of the two-tailed Student t-test are shown. n>44 cells for each sample. (G) Sequence comparison between kazrin C and human BICDR1 (LALIGN). (H) Immunoblots of anti-GFP agarose immunoprecipitates (IP) from cell lysates of kazKO MEF moderately expressing GFP or GFP-kazrin C, probed for the indicated proteins. (I) Immunoblots of pull-downs with of glutathione-Sepharose beads coated with purified GST or GST fused to kazrin C (GST-kazrin) or its N- (amino acids 1–176) (GST-kazrin-Nt) or C-terminal (amino acids 161–327) (GST-kazrin-Ct) portions, incubated with (+) or without (−) dynactin complex, purified from pig. The membranes were probed with an anti-p150 glued antibody or stained with Ponceau red to detect the GST constructs. (J) Immunoblots of pull-downs with glutathione-Sepharose beads coated with GST, GST-LIC1, or GST-LIC2, incubated with purified 6xHis-kazrin C. The membranes were probed with a mouse anti-kazrin antibody or stained with Ponceau red to detect the GST constructs. (K) Immunoblot of protein A-Sepharose immunoprecipitates (IP) from WT or kazKO MEFs using a mix of rabbit polyclonal serums against the N- and C-terminal domains of kazrin C or a pre-immunization serum, probed with an anti-p150 glued (dynactin) antibody. The low amounts of endogenous kazrin could not be detected in the immunoprecipitates with any of the antibodies tested because the antibody had a molecular weight similar to endogenous kazrin (about 50 Kda) and interfered with the detection. The kazKO MEF was used as a specificity control instead.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** 2.65 s time-lapse confocal images of the perinuclear region of kazKO MEFs expressing moderate levels of GFP-kazrin C (See M & M), See also Videos 6 and 7 Arrows point to GFP-kazrin C foci moving toward the cell center.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Confocal micrographs of Cos7 cells transiently expressing GFP, GFP-kazrin C, or a chimera of GFP-kazrin C fused to the mitochondrial targeting domain (MTD) of D. melanogaster centrosomin fixed and stained with anti-TOMM20 and A568 secondary antibodies to visualize mitochondria and anti-pericentrin and A648-conjugated secondary antibodies. (B) Scattered plot of the mean ± SD mitochondria perinuclear enrichment in cells treated as described in A. See M & M for further details. The data were normalized to the mean of the cells mock-treated. The p-values of the two-tailed Mann-Whitney tests are shown. n=102 cells for each sample.
+
+![Video 6.](https://cdn.elifesciences.org/articles/83793/elife-83793-video6.mp4.jpg)
+
+**Video 6.:** A 51.2 x 51.2 μm2 window is shown.
+
+![Video 7.](https://cdn.elifesciences.org/articles/83793/elife-83793-video7.mp4.jpg)
+
+**Video 7.:** Scale bar, 2 μm.
 
 Our observations suggested that dynein-dependent transport is required not only for the accumulation of EEs at the pericentriolar region as previously reported (Aniento et al., 1993; Burkhardt et al., 1997; Driskell et al., 2007; Flores-Rodriguez et al., 2011) but also, for the localization of GFP-kazrin C in this area. Interestingly, pericentriolar localization of GFP-kazrin C was reminiscent of that observed for well-established or candidate dynein/dynactin activating adaptors such as hook2, hook3, or BICDR1 (Baron and Salisbury, 1988; Schlager et al., 2010; Szebenyi et al., 2007). Indeed, kazrin C shared 23.3% identity and 57.3% similarity with BICDR1 (BICauDal Related protein 1) (Figure 5G), over 232 amino acids, and 19.6% identity and 61.3% similarity with hook3, over 168 amino acids. Such similarity was in the range of that shared between hook3 and BICDR1 (24.7% identity and 56.7% similarity over 268 amino acids) (LALIGN). Therefore, we hypothesized that kazrin might also interact with the dynein/dynactin complex and serve as a candidate dynein/dynactin endosomal adaptor. Consistent with this hypothesis, we found that moderately expressed GFP-kazrin C pulled-down the dynactin component p150-glued from cell extracts as well as the dynein heavy chain, whereas GFP alone did not (Figure 5H). Similar to what has been described for other bona fide or candidate dynein/dynactin adaptors (Celestino et al., 2022; Fenton et al., 2021; Kendrick et al., 2019; Schlager et al., 2010; Splinter et al., 2010), we also detected co-immunoprecipitation of GFP-kazrin C with plus-end directed motors, specifically, with kinesin-1 (Figure 5H), a motor associated with EEs (Loubéry et al., 2008; Schmidt et al., 2009). We observed no co-immunoprecipitation with tubulin (Figure 5H), indicating that GFP-kazrin C interactions with dynactin, dynein, and kinesin-1 were not indirectly mediated by microtubules. Pull-down experiments with GST-kazrin C, expressed and purified from E. coli, and the dynactin complex, purified from pig (Jha et al., 2017), demonstrated that the interaction was direct and that it was contributed by both, the N- and C-terminal halves of kazrin C (Figure 5I), suggesting multiple contacts with different dynactin components. As also described for other dynein/dynactin adaptors (Gonçalves et al., 2019; Horgan et al., 2010; Lee et al., 2020; Redwine et al., 2017; Schroeder and Vale, 2016), pull-down experiments with purified components showed a specific interaction of kazrin C with one of the dynein LIC, in particular LIC1 (Figure 5J). Finally, immunoprecipitation experiments from MEFs using the polyclonal antibody against the C-terminus of kazrin C also suggested binding of endogenous kazrin with the dynactin complex (Figure 5K).
 
 To test if GFP-kazrin C might be able to convey cargo other than endosomes to the pericentriolar region, we constructed a chimera bearing the mitochondrial targeting domain (MTD) of a testis-specific D. melanogaster centrosomin (Chen et al., 2017) (GFP-kazrin C-MTD), that lacks the centrosome targeting sequences but still bears the CM1 gamma-tubulin nucleating domain present in all centrosomin variants. This splice variant thereby converts mitochondria to microtubule organizing centers (MTOC) in spermatids (Chen et al., 2017). The GFP-kazrin C-MTD chimera bearing only the MTD but not the CM1 domain was transfected in Cos7 cells and the distribution of mitochondria was analyzed and compared to that of cells expressing GFP-kazrin C or GFP alone. As shown in Figure 5—figure supplement 2, GFP-kazrin C-MTD but not GFP or GFP-kazrin C, significantly increased the pericentriolar accumulation of mitochondria.
 
 Our data indicated that kazrin might act as a candidate endosomal dynein/dynactin adaptor, with its C-terminal IDR working as a scaffold that entraps EEs or certain EE subdomains through multiple low-affinity binding sites. To test this hypothesis, we applied high-speed live-cell fluorescence imaging to visualize the movement of TxR-Tfn-loaded EEs in WT and kazKO cells. As previously described, EEs in WT cells were highly motile exhibiting long-range trajectories of several micrometers, followed by more confined movements within a 1 µm radius (Driskell et al., 2007; Flores-Rodriguez et al., 2011; Loubéry et al., 2008; Nielsen et al., 1999; Rogers et al., 2010; Zajac et al., 2013; Video 8 (WT) and Video 9). Time projections of Z-stacks of 90 s Videos evidenced the linear endosomal trajectories in WT cells, with an average length of about 5 µm (Figure 6A and B; Figure 6—figure supplement 1 and Video 8 (WT) and Video 9). However, in kazKO MEFs, the kymographs showed a profusion of bright dots as compared to the straight trajectories in the WT, and the length of the straight trajectories (longer than 1 µm) was significantly reduced (Figure 6A and B; Figure 6—figure supplement 1 and Videos 8–10). These observations suggested that the absence of kazrin reduced the association of EEs with some microtubule-dependent motors and/or diminished their processivity or velocity. Analysis of the maximum instantaneous velocities (Vi) of retrograde trajectories longer than 1 µm, mostly contributed by dynein (Flores-Rodriguez et al., 2011; Loubéry et al., 2008), showed that those were lower in the kazKO cells, as compared to the WT (Figure 6C and Videos 8–10). Finally, and also supporting the view that kazrin directly contributes to EE retrograde transport, we observed that expression of GFP-kazrin C, but not expression of the truncated version lacking the C-terminal endosomal binding region (GFP-kazrin C-Nt) nor GFP alone, rescued the endosome motility defects installed by depletion of kazrin (Figure 6A to C; Figure 6—figure supplement 2 and Videos 11–14).
+
+![Video 8.](https://cdn.elifesciences.org/articles/83793/elife-83793-video8.mp4.jpg)
+
+**Video 8.:** The windows are 42.5 × 42.5 µm2. Cells were loaded with TxR-Tfn at 16℃ to accumulate endocytic cargo in early endosomes (EEs) and imaged immediately after the shift to 37℃. The images correspond to the maximum intensity Z projection.
+
+![Video 9.](https://cdn.elifesciences.org/articles/83793/elife-83793-video9.mp4.jpg)
+
+**Video 9.:** The windows are 12.8 × 12.5 µm2. Cells were loaded with TxR-Tfn at 16℃ to accumulate endocytic cargo in early endosomes (EEs) and imaged immediately after the shift to 37℃. The images correspond to the maximum intensity Z projection.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig6-v2.jpg)
+
+**Figure 6.:** (A) Time projections of MIP of confocal fluorescence microscopy videos taken for 90 s with a 3 s time-lapse, of wild-type (WT) and kazKO MEF or kazKO MEF expressing low levels of GFP, GFP-kazrin C of a GFP-kazrin C construct lacking the C-terminal predicted intrinsically disordered region (IDR) (GFP-kazrin-Nt) (See M & M), showing trajectories of early endosome (EE) loaded with Texas Red-Tfn (TxR-Tfn) at 16℃. Cells were shifted to 37℃ and immediately imaged. Scale bar = 10 µm. A magnified 10 × 10 µm2 inset is shown below. Arrows point to straight trajectories and dashed circles indicate constrained endosome movements. (B) Scattered plots of the mean ± SD lengths of endosome trajectories (longer than 1 µm) (left graphs) for the cells and experimental conditions described in A. p-values of the two-tailed Mann-Whitney tests are shown. n=100 endosomes for each sample recorded in more than 20 cells. Line plots for the frequencies of the trajectory length in each cell type are shown on the right. (C). Scattered plots of the mean ± SD maximum instantaneous velocities (Vi) (left graphs) of retrograde endosome trajectories (longer than 1 µm) for the cells and experimental conditions described in A. p-values of the two-tailed Mann-Whitney tests are shown. n=100 endosomes for each sample recorded in more than 20 cells. Line plots for the frequencies of the maximum Vi for each cell type are shown on the right. See also Video 8 for life imaging of an example of WT and kazKO cells loaded with TxR-Tfn, and Videos 9 and 10 for four different magnified fields showing endosome motility in different WT and kazKO cells, respectively. See also Video 11 for an example of life imaging of kazKO cells expressing low levels of either GFP, GFP-kazrin C, or GFP-kazrin C-Nt loaded with TxR-Tfn, and Videos 12–14 for four different magnified fields showing endosome motility in these cell types.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Time projections of MIP of confocal fluorescence microscopy videos taken for 90 s with a 3 s time-lapse, of wild-type (WT) and kazKO MEF, showing trajectories (highlighted in blue) and confined movements (highlighted in red) of early endosome (EE) loaded with Texas Red-Tfn (TxR-Tfn) at 16℃. Cells were shifted to 37℃ and immediately imaged.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/83793/elife-83793-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Time projections of MIP of confocal fluorescence microscopy videos taken for 90 s with a 3 s time-lapse, of kazKO MEF expressing low levels (See M & M) of GFP, GFP-kazrin C or a GFP-kazrin C construct lacking the C-terminal predicted intrinsically disordered region (IDR) (GFP-kazrin-Nt), showing elongated trajectories (highlighted in blue) and confined movements (highlighted in red) of early endosome (EE) loaded with Texas Red-Tfn (TxR-Tfn) at 16℃. Cells were shifted to 37℃ and immediately imaged.
+
+![Video 10.](https://cdn.elifesciences.org/articles/83793/elife-83793-video10.mp4.jpg)
+
+**Video 10.:** The windows are 12.8 × 12.5 µm2. Cells were loaded with TxR-Tfn at 16℃ to accumulate endocytic cargo in early endosomes (EEs) and imaged immediately after the shift to 37℃. The images correspond to the maximum intensity Z projection.
+
+![Video 11.](https://cdn.elifesciences.org/articles/83793/elife-83793-video11.mp4.jpg)
+
+**Video 11.:** The windows are 42.5 × 42.5 µm2. Cells were loaded with TxR-Tfn at 16℃ to accumulate endocytic cargo in early endosomes (EEs) and imaged immediately after the shift to 37℃. The images correspond to the maximum intensity Z projection.
+
+![Video 12.](https://cdn.elifesciences.org/articles/83793/elife-83793-video12.mp4.jpg)
+
+**Video 12.:** The windows are 12.8 × 12.5 µm2. Cells were loaded with TxR-Tfn at 16℃ to accumulate endocytic cargo in early endosomes (EEs) and imaged immediately after the shift to 37℃. The images correspond to the maximum intensity Z projection.
+
+![Video 13.](https://cdn.elifesciences.org/articles/83793/elife-83793-video13.mp4.jpg)
+
+**Video 13.:** The windows are 12.8 × 12.5 µm2. Cells were loaded with TxR-Tfn at 16℃ to accumulate endocytic cargo in early endosomes (EEs) and imaged immediately after the shift to 37℃. The images correspond to the maximum intensity Z projection.
+
+![Video 14.](https://cdn.elifesciences.org/articles/83793/elife-83793-video14.mp4.jpg)
+
+**Video 14.:** The windows are 12.8 × 12.5 µm2. Cells were loaded with TxR-Tfn at 16℃ to accumulate endocytic cargo in early endosomes (EEs) and imaged immediately after the shift to 37℃. The images correspond to the maximum intensity Z projection.
 
 ## Discussion
 
@@ -79,11 +221,157 @@ It is worth noticing that kazrin is only expressed in vertebrates, whose evoluti
 
 ## Materials and methods
 
-## DNA techniques and plasmid construction
+### DNA techniques and plasmid construction
 
 Oligonucleotides used for plasmids construction and information about the construction strategies are available upon request. DNA manipulations were performed as described (Sambrook et al., 1989), or with the Getaway cloning system (Life Technologies) in the case of lentiviral vectors. Enzymes for molecular biology were obtained from New England Biolabs. Plasmids were purified with the Nucleospin plasmid purification kit (Macherey-Nagel 740422.10). Linear DNA was purified from agarose gels using the gel extraction kit from Qiagen. Polymerase chain reactions (PCRs) were performed with the Expand High Fidelity polymerase (Roche) and a TRIO-thermoblock (Biometra GmbH). Plasmids used are listed in Table 1. E. coli DH5α (Chan et al., 2013) was used to amplify plasmids. All plasmids generated in this work are available for non-commercial purposes under request.
 
-## Cell culture and cell line establishment
+**Table 1.**
+ Plasmids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Insert</th>
+      <th>Backbone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pGEX-5X-3</td>
+      <td>GST</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-hB24</td>
+      <td>GST + kazrin C, human gene KIAA1026</td>
+      <td>pGEX-4T-2</td>
+    </tr>
+    <tr>
+      <td>pGST-kaz-Ct (161-327)</td>
+      <td>GST + kazrin C Ct (aa 161–327)</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-kaz-Nt (1-176)</td>
+      <td>GST + kazrin C Nt (aa 1–176)</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-kaz-Ct-KA</td>
+      <td>GST + kazrin C Ct (aa 161–327) -(281-KRKKKK-286, AAAAAA)</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pQE11-kazrin</td>
+      <td>6xHis + kazrin C</td>
+      <td>pQE11</td>
+    </tr>
+    <tr>
+      <td>pGST-EHD1</td>
+      <td>GST + EHD1</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-EHD3</td>
+      <td>GST + EHD3</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-γ-Adaptin-ear</td>
+      <td>GST + human AP1 Adaptin G1 ear (aa 702–925)</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-CHC17-TD</td>
+      <td>GST + human CHC17-aa1-483 (CHC TD +linker)</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-LIC1</td>
+      <td>GST + dynein light intermediate chain 1</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pGST-LIC2</td>
+      <td>GST + dynein light intermediate chain 2</td>
+      <td>pGEX-5X-3</td>
+    </tr>
+    <tr>
+      <td>pX458-kaz KO 1</td>
+      <td>Cas9 and Cas9 target sequence 1</td>
+      <td>pSpCas9(BB)–2A-GFP (pX458)</td>
+    </tr>
+    <tr>
+      <td>pX458-kaz KO 2</td>
+      <td>Cas9 and Cas9 target sequence 2</td>
+      <td>pSpCas9(BB)–2A-GFP (pX458)</td>
+    </tr>
+    <tr>
+      <td>pVSV-G</td>
+      <td>Lentivirus envelope protein</td>
+      <td>pLenti-CMV</td>
+    </tr>
+    <tr>
+      <td>pAX8</td>
+      <td>Lentivirus packaging protein</td>
+      <td>pLenti-CMV</td>
+    </tr>
+    <tr>
+      <td>pINDUCER-EGFP</td>
+      <td>EGFP</td>
+      <td>pINDUCER20</td>
+    </tr>
+    <tr>
+      <td>pINDUCER-EGFP-kazrin C</td>
+      <td>EGFP + kazrin C</td>
+      <td>pINDUCER20</td>
+    </tr>
+    <tr>
+      <td>pINDUCER-EGFP-kazrin C-Nt</td>
+      <td>EGFP + kazrin C (aminoacids 1–176)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pKLO.1_shKzrn</td>
+      <td>cloneID TRCN00001 82832</td>
+      <td>pLK0.1</td>
+    </tr>
+    <tr>
+      <td>pLK0.1</td>
+      <td>SHC002</td>
+      <td>pLK0.1</td>
+    </tr>
+    <tr>
+      <td>pCMV-dR8.2dvpr</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pCMV-VSG-G</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pEGFP-C2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pEGFP-kazrin C</td>
+      <td>pEGFP-C2 + kazrin C</td>
+      <td>pEGFP-C2</td>
+    </tr>
+    <tr>
+      <td>pEGFP-kazrin C-MTD</td>
+      <td>pEGFP-C2 + kazrin C fused to the Mitochondrial Targeting domain of D. melanogaster centrosomin CnnT splice variant (AT9084) (aa 212–480)</td>
+      <td>pEGFP-C2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and cell line establishment
 
 Cos7 cells were obtained from the German Collection of Microorganisms and Cell Cultures (https://www.dsmz.de/dsmz) (ACC-60). It is a cell line with fibroblast features derived from CV-1, a simian (Cercopithecus aethiops) cell line, by transformation with an origin-defective mutant of SV-40; cells were described in the literature to support the growth of SV-40 viruses; classified as risk category 1 according to the German Central Commission for Biological Safety (ZKBS). Mice embryonic fibroblast (MEF) was provided by S. Offermanns, (University of Heidelberg, Germany) and derived from C57BL/6 mice (Offermanns et al., 1997). mIMCD3 were kindly provided by F. García-Belmonte from the Centro de Biología Molecular Severo Ochoa (Spain) and they were purchased from the American Type Culture Collection ATCC (CRL-2123). mIMCD-3 is an inner medullary collecting duct (IMCD) cell line derived by Michael Rauchman from a mouse transgenic for the early region of SV40 [Tg(SV40E)bri/7]. It has epithelial morphology. MEF and Cos7 cells were grown in DMEM (Thermo Fisher Scientific, 21969035) supplemented with 10% FBS, 100 µ/ml penicillin, 100 µg/ml streptomycin, and 2 mM L-glutamine (Thermo Fisher Scientific, 25030081) in a humidified 5% CO2 atmosphere at 37 °C. mIMCD3 were grown in DMEM/F-12 (Thermo Fisher Scientific, 21331020) with 10% FBS. Cos7 were transiently transfected with Lipofectamine 2000 (Thermo Fisher Scientific, 11668027). Cells were analyzed 24 hr after transfection. For shRNA kazrin depletion, pKLO.1_shKzrn from Merck Mission Library 2007 (Clone ID TRCN000018283) was used. pLKO.1_CV/_SCR (SHC002) was used as a control. For lentivirus production and Cos7 cell transfection, HEK293T cells were co-transfected with either the pLL3.7 encoding GFP, for virus production control and infection efficiency monitoring, or with pLKO.1 encoding the desired shRNA, and the viral packaging (pCMV-dR8.2 dvpr) and envelope (pCMV-VSV-G) plasmids, using calcium phosphate transfection. About 16 hr after transfection, the medium was changed and half of the usual volume was added. During the two following days, the medium containing the virus was collected and filtered with a 0.45 μm filter. The filtered virus solution was directly used for the infection of cell lines or stored in aliquots at –80 °C without prior concentration of the virus. Infection and selection of stably infected cells were done in the presence of the appropriate concentration of puromycin, titrated by using the minimum antibiotic concentration sufficient to kill untransfected cells, but to maintain cells transfected with the pLL3.7 GFP-containing plasmid. Actual depletion of kazrin or the protein of interest was analyzed by immunoblot using home-made polyclonal rabbit antibodies raised against the N- (amino acids 1–176) and C- terminal (amino acids 161–327) portions of kazrin C.
 
@@ -91,33 +379,33 @@ MEF and mIMCD3 KO cells were produced with the CRISPR-Cas9 system. Two guide RNA
 
 For complementation assays, GFP, GFP-kazrin C, and GFP-kazrin C-Nt were induced for up to 12 hr to achieve low, nearly-physiological expression levels of GFP-kazrin C (as compared to endogenous kazrin by immunoblot, using the home-made rabbit polyclonal anti-kazrin serums), and analogous expression levels of GFP or GFP-kazrin C-Nt (as compared by immunoblot using the mouse anti-GFP antibody (see antibodies section)). For GFP-kazrin C imaging or biochemical studies, cells were induced for up to 24 hr to achieve analogous, moderately-overexpressed levels of the proteins. To study the effect on microtubule dynamics and dynein inhibition, MEFs were treated with 100 ng/ml of nocodazole for 16 h or 40 nM of ciliobrevin for 12 hr, respectively, or DMSO, and then fixed at room temperature. kazKO MEF and kazKO MEF expressing GFP and GFP-kazrin C are available for non-commercial purposes under request. Cos7 and mIMCD3 we authenticated by ATCC. MEF was authenticated by proteomic analysis. All cell lines were tested negative for mycoplasma by PCR using EZ-PCR Mycoplasma detecting kit (VITRO, SA) or custom-made oligonucleotides.
 
-## TxR-Tfn accumulation, juxtanuclear enrichment, and recycling assays
+### TxR-Tfn accumulation, juxtanuclear enrichment, and recycling assays
 
 Cos7 cells or MEFs were grown on R-collagen-coated glass coverslips. For all assays, cells were starved 30 min in DMEM without FBS or bovine serum albumin (BSA). For the accumulation assays, cells were then incubated with pre-warmed DMEM containing 20 µg/ml of TxR-Tfn (from human serum, Molecular Probes, T2875) and 0.1% BSA for the specified times. Cells were washed in ice-cold PBS once and fixed in 4% PFA for 20 min on ice. For the TxR-Tfn juxtanuclear enrichment and recycling assays, 20 µg/ml of TxR-Tfn in DMEM with 0.1% BSA was added and cells were incubated at 16 °C for 30 min to load EEs. Cells were then washed in ice-cold PBS with 25 mM acetic acid pH 4.2, and with PBS and subsequently incubated with 500 µg/ml unlabeled Tfn (Merck, 616395) in DMEM with 0.1% BSA at 37 °C. Cells were then transferred to the ice at the indicated time points, washed in ice-cold PBS with 25 mM acetic acid pH 4.2 and with PBS, and fixed in 4% PFA for 20 min on ice. For the juxtanuclear enrichment assays the mean TxR-Tfn fluorescence intensity within a 10 µm diameter circle in the juxtanuclear region was divided by the signal in the whole cell selected with the Fiji free hand tool to define the ROI (Region of interest), at 10 min chase, after background subtraction. For recycling experiments, the mean fluorescence intensity per cell was measured using the Fiji free hand drawing tool to select the ROI at the indicated time points and the signal was normalized to the average intensity at time 0.
 
 For TxR-Tfn accumulation, juxtanuclear enrichment, and recycling assays, images were taken with a Zeiss LSM780 confocal microscope equipped with a 63 x oil (NA = 1.4) objective, a GaAsP PMT detector 45% QE and images were acquired at pixel size 0.06 µm, unless otherwise indicated. For the experiments shown in 4 F, an Andor Dragonfly spinning disk microscope equipped with a 100 x oil (NA = 1.49) objective and a Sona 4.2 B11 sCMOS camera 95% QE was used. Images were acquired at pixel size 0.05 µm. At least two independent membrane traffic assays were performed with at least two biological replicas per experiment, with analogous results. Data from biological replicas from a representative experiment were combined to generate the graphs.
 
-## GFP-kazrin and TxR-Tfn association analysis and immunofluorescence
+### GFP-kazrin and TxR-Tfn association analysis and immunofluorescence
 
 3D reconstructions of EEs loaded with TxR-Tfn in cells expressing GFP-kazrin C or GFP-kazrin C-Nt were performed with voxel size 0.05 × 0.05 × 0.10 µm, compiled with the Andor Dragonfly spinning disk microscope equipped with a 100 x oil (NA = 1.49) objective and a Sona 4.2 B11 sCMOS camera 95% QE, in cells treated as for the TxR-Tfn recycling assay, immediately upon the shift from 16℃ to 37℃. 3D videos of 5 × 5 µm2 were generated with the Fiji 3D reconstruction tool. A 2.0 Gaussian blur filter was applied to the images after performing the 3D reconstruction and the contrast and brightness were modified to eliminate the cytosolic or nuclear background. Once the 3D reconstruction was built, the TxR foci (EE) closest to the GFP-kazrin C or GFP-kazrin C-Nt foci were identified manually by measuring with the line Fiji toll bar, and the distance between the centroid of those foci was measured with the same tool in the video frame showing the maximal separation. For immunofluorescence experiments, cells were seeded onto cover-glasses and fixed with 4% PFA in PBS containing 0.02% BSA and 0.02% sodium azide (PBS*), for 10 min at room temperature. Cells were washed three times for 5 min with PBS* and permeabilized with PBS* containing 0.25% Triton X-100 for 10 min. Cells were washed three times for 5 min with PBS* and incubated for 20 min in PBS* containing 1% BSA. Cells were then incubated in the presence of the primary antibody in PBS* for 1 hr at room temperature, washed three times with PBS*, and incubated for 1 hr in the presence of the secondary antibodies prepared in PBS*. Cells were washed three times with PBS* and mounted using Prolong Gold that included DAPI for nuclear staining (Thermo Fisher Scientific, P36934). Images were taken with a Zeiss LSM780 confocal microscope equipped with a 63 x oil (NA = 1.4) objective, a GaAsP PMT detector 45% QE, and images were acquired at pixel size 0.06 µm for the experiments shown in Figure 5B and C and 0.120 µm for the experiments shown in Figure 5A and 0.110 µm for the experiments in Figure 5E. Images shown in Figure 4—figure supplement 4 and the associated videos for the 3D reconstruction of EHD labeled endosomes, were performed with the Andor Dragonfly spinning disk microscope equipped with a 100 x oil (NA = 1.49) objective and a Sona 4.2 B11 sCMOS camera 95% QE, with voxel size 0.05 × 0.05 × 0.10 µm. Experiments shown in Figure 4—figure supplement 2 and Figure 1—figure supplement 1 were acquired with a Leica TCS-SP5 confocal microscope equipped with a 63 x oil objective (NA = 1.4), with a pixel size of 0.06 µm. Juxtanuclear enrichments for EEA1 and RAB11 in MEFs were calculated after background subtraction as the mean fluorescence intensity within a 10 and 9 µm (respectively) diameter circle in the juxtanuclear region, divided by the mean intensity in the whole cell, as delimited with the Fiji free hand drawing tool to select the ROI. Association of GFP-kazrin C with pericentrin foci in the experiment shown in Figure 5E and F was measured by drawing a circle of 1.1 µm in diameter around the pericentrin foci and measuring the mean intensity for the pericentrin and GFP-kazrin C upon background subtraction. Data was normalized to the mean intensity of mock-treated cells.
 
-## Cell migration and division assays
+### Cell migration and division assays
 
 Cells were plated on 400 µg/ml Matrigel (Corning, CLS354234)-coated plates at low density and incubated for 5 hr. Once the cells were attached, the medium was replaced by Matrigel for 30 min to embed the cells in a matrix. Matrigel excess was then removed and cells were kept at 37 °C with 5% CO2 during imaging. Phase contrast images were taken every 10 min for a total of 9 hr with a motorized bright field Leica AF7000 microscope equipped with a 10 x objective (NA = 0.3), and a digital Hamamatsu ORCA-R2 CCD camera and images were taken with a pixel size of 0.64 µm. To analyze cell migration, cells were tracked using the Fiji plugin MTrackJ. Speed and direction persistency was calculated using the open-source program DiPer (Dang et al., 2013). To detect cytokinesis delay compatible with a defect in abscission, the time was measured from the moment daughter cells attach to the substrate until they completely detach from each other. At least two independent experiments with at least two biological replicas were performed for the motility and cell separation assays with analogous results. The data of different biological replicas of a representative experiment were combined to generate the graphs.
 
-## Live confocal imaging and endosome motility analysis
+### Live confocal imaging and endosome motility analysis
 
 Cells were seeded on plates with polymer coverslips for high-end microscopy (Ibidi, 81156). Cells were kept at 37 °C with 5% CO2 during the imaging. For the Videos 6 and 7 and the Figure 5—figure supplement 1, images were taken every 2.65 s on a Zeiss LSM780 confocal microscope equipped with a 63 x oil objective (NA = 1.4) with voxel size 0.05 × 0.05 × 0.130 µm. To follow EE motility, cells were starved for 30 min in DMEM without FBS and subsequently loaded at 16 °C with 20 µg/ml TxR-Tfn in DMEM with 0.1% BSA, as described for the TxR-Tfn recycling experiments. Cells were then rinsed with PBS and imaged immediately upon the addition of 37℃ pre-warmed media loaded with unlabeled Tfn. Images were compiled with voxel size 0.17 × 0.17 × 0.46 µm for WT and KO cells and 0.09 × 0.9 × 0.46 µm for GFP GFP-kazrin C and GFP-kazrin C-Nt expressing cells, and they were taken every 3 s for 1.5 min using the Andor Dragonfly 505 microscope, equipped with a 60 x oil (NA = 1.4) objective and a Sona 4.2 B11 sCMOS camera 95% QE. Maximum intensity projections of the Z-stacks were generated with Fiji, after background subtraction and registration using the Linear Stack Alignment with SIFT tool of Fiji. Videos were generated from the original videos using the Fiji crop tool and a 1.0 Gaussian filter was applied. Kymographs of the maximum intensity Z-stack projections were generated to measure the length of linear trajectories with the Fiji free-hand line tool. Maximum instantaneous velocity (Vi) of TxR-Tfn loaded endosomes was measured by manually tracking endosomes moving into the cell center with the Fiji plugin MTrackJ. Two independent experiments with three biological replicas were performed to analyze the endosome motility giving analogous results. The data from different replicas of one of the experiments were combined to generate the graphs.
 
-## SDS-PAGE and immunoblots
+### SDS-PAGE and immunoblots
 
 SDS–PAGE was performed as described (Laemmli, 1970), using pre-casted Mini-PROTEAN TGX 4–20% Acrylamide gels (Bio Rad, 4561096). Protein transfer, blotting, and chemiluminescence detection were performed using standard procedures. Detection of proteins was performed using the ECL kit (Cytiva, RPM2209).
 
-## Cell fractionation
+### Cell fractionation
 
 Cell fractionation was performed as described in Li and Donowitz, 2014. Briefly, cells were scraped from the plate, harvested by centrifugation at 700 g for 10 min, and resuspended in 1 ml of ice-cold Lysis Buffer (LB: 25 mM Hepes pH 7.4, 150 mM NaCl, 1 mM DTT, 2 mM EGTA) containing protease inhibitors. The cell suspension was then passed 10 times through a 27 G needle. The lysate was cleared by centrifuging twice at 3000 g for 15 min. The supernatant was subsequently centrifuged at 186,000 g for 1 hr at 4 °C to fractionate cellular membranes from the cytosol. The membrane pellet was resuspended in LB with protease inhibitors, passed 10 times though a 27 G needle, and laid on an Optiprep (Merck, 92339-11-2) gradient. A 12 ml 2% step Optiprep gradient in LB ranging from 32 to 10% was prepared beforehand in Ultra-Clear tubes (Beckman Coulter). Samples were spun for 16 hr at 100,000 g at 4 °C. 0.6 ml fractions were carefully collected from the top. Samples were then precipitated with trichloroacetic acid, air-dried, and resuspended in SDS-PAGE sample buffer for immunoblot analysis. For the experiments shown in Figure 4A, the supernatant from the 3000 g centrifugation was adjusted to 1 mg/ml of total protein and centrifuged at 186,000 g for 1 hr at 4 °C to fractionate cellular membranes (pellet) from the cytosol (supernatant). 15 µg of total protein from the 3000 g supernatant (total) and the corresponding one and five equivalents of the cytosolic or membrane fractions were loaded in an SDS-PAGE acrylamide gel and immunoblotted for EHD proteins or GFP. Cell fractionation assays in MEF were reproduced in at least three independent experiments. Confirmatory cell fractionation experiments in Cos7 and IMDC cells were performed once. To quantify the ECL signal in Figure 4A the band intensities of the cytosolic and microsomal fractions were measured with Fiji using the rectangular drawing box, after background subtraction, in films with similar exposures for all samples. The microsomal fraction was divided by five and normalized by the total signal calculated as the cytosolic +5 x microsomal signals.
 
-## GST pull-downs, GFP-trap, and endogenous immunoprecipitations
+### GST pull-downs, GFP-trap, and endogenous immunoprecipitations
 
 Purification of recombinant GST and 6-His fusion proteins from BL21 E. coli (Novagen, D48406) was performed as described (Geli et al., 2000). Pull down experiments were performed with Glutathione-Sepharose beads (GE Healthcare, 17-0756-01) coated with 0.5 μg of the indicated GST-tagged proteins and 2 nM of eluted 6xHis-kazrin C incubated in 1 ml of binding buffer containing PBS or 2 nM of the dynactin complex in 0.5 ml of DBB (25 mM Tris-HCl pH 8, 50 mM KoAc, 0.5 mM ATP, 1 mM DTT, 1 mM MgCl2, 1 mM EGTA and 10% glycerol), both bearing 0.2% Triton-X100 and 0.5% BSA with protease inhibitors (Complete Roche, 11836145001), for 1 hr at 4 °C in a head-over-shoulder rotation. Beads were washed three times with the corresponding binding buffer containing Triton-X100 and twice without detergent. The beads were boiled in Laemmli buffer. Input and pulled-down samples were loaded in an SDS-PAGE gel and analyzed by immunoblot. For the pull downs from mammalian protein extracts, GST, and the GST-kazrin C N- (amino acids 1–176) and C-terminal (amino acids 161–327) portions were expressed and purified from E. coli as described above, using glutathione-Sepharose beads, and the beads were incubated with the 3000 g supernatant of a non-denaturing protein extract from WT MEF, prepared as described for the subcellular fractionation using LB, after adding 1% Triton-X100. After 1 hr incubation, beads were recovered and washed with LB 1% Triton-X100 three times and twice with LB buffer. Beads were resuspended in SDS-PAGE sample buffer and analyzed by immunoblot against EHD proteins and γ-adaptin.
 
@@ -125,16 +413,16 @@ For immunoprecipitations from MEFs, moderately overexpressing GFP and GFP-kazrin
 
 For endogenous immunoprecipitations, WT or kazKO cell extracts were generated as described above but incubated with rabbit IgGs against the kazrin C C-terminus (aa 161–327), pre-bound from a serum to Protein A-Sepharose, or IgGs from the pre-immune serum. The amount of endogenous kazrin in the immunoprecipitates could not be assessed because the IgGs interfered with the detection. Immunoprecipitation and pull-down assays were performed at least twice with the proper controls to discard possible background signals. Analogous results were obtained in all replicas. All key interactions were demonstrated with at least two different techniques.
 
-## Lipid strip and liposome pelleting assays
+### Lipid strip and liposome pelleting assays
 
 Lipid strips (Echelon, P-6100) were incubated in 1% skimmed milk in PBS for 1 hr at room temperature. The corresponding GST fusion protein was added to a final concentration of 15 µg/ml in incubation buffer (10 mM Tris pH 8.0, 150 mM NaCl, 0.1% Tween-20, 3% BSA (fatty acid free, Merck, A7030)), with protease inhibitors over night at 4 °C. The strips were washed three times for 10 min in the incubation buffer and developed by immunoblot. Lipid strips with purified kazrin constructs were performed three times.
 
 For the liposome pelleting assay, 1.2 µg of GST or GST-kazrin C expressed and purified from E. coli were dissolved in 100 µl of LBB (20 mM Hepes pH7.4, 120 mM NaCl, 1 mM EGTA, 1 mM MgCl2, 0.2 mM CaCl2, 5 mM KCl, 1 mg/ml fatty acid-free BSA) and centrifuge for 90 min at 100.000 g. The supernatant was recovered and incubated with 15 ul polyPIPsomes containing 5% PI3P (Echelon Y-P3003). Samples without liposomes were used to control for pelleting of protein aggregates. After 30 min of incubation at room temperature, liposomes were recovered by centrifugation at 100.000 g for 90 min. The supernatant was recovered and the pellet was resuspended in 20 µl of LBB. 5 µl of the total mixture and 1 and 10 equivalents of the 100.000 g supernatants and pellets, respectively, were analyzed by immunoblot using a goat anti-GST antibody. The liposome pelleting assay was performed three times.
 
-## Quantification, statistical analysis, and structure prediction
+### Quantification, statistical analysis, and structure prediction
 
 Quantifications were performed with the Fiji open-source platform (Schindelin et al., 2012). Statistical analysis was performed with GraphPad Prism. The D'Agostino-Pearson test was applied to data sets to assess normality. If the data followed a normal distribution or the result of the normality test was not significant, an unpaired two-tailed Student t-test was performed to assess significance. If the distribution was not normal, a two-tailed Mann-Whitney test was used. Results are expressed as mean ± SEM with respect to the number of cells (n) for a representative experiment. Prediction of IDRs was achieved with the IUPred2A software, which assigns each residue a IUPred score that is the probability of it being part of a IDR (Meszaros et al., 2018).
 
-## Antibodies
+### Antibodies
 
 Polyclonal sera against kazrin for immunoblotting were generated in rabbits using an N-terminal (amino acids 1–176) and a C-terminal (amino acids 161–327) fragment of kazrin C fused to GST. The following commercial antibodies were used in this study: anti-RAB11 (610656, AB_397983), anti-RAB4 (610888, AB_398205), anti-rabaptin-5 (610676, AB_398003), anti-GM130 (610822, AB_398141), anti-GGA2 (612612, AB_399892), anti-clathrin heavy chain (610499, AB_397865), anti-p150 Glued (610473, AB_397845), anti-α-adaptin (610501, AB_2313949), anti-γ-adaptin (610386, AB_397769), anti-N-cadherin (610920, AB_398236), anti-β-catenin (610153, AB_397554), anti-p120-catenin (610134, AB_397537), anti-desmoglein (610273, AB_397669), from BD Biosciences; anti-pericentrin (4448, AB_304461) and anti-EHD1 (109311, AB_10859459), anti kazrin C (74114, AB_10863615) and anti-VPS35 (57632, AB_946126), from Abcam; anti-kinesin-1 heavy chain (133184, AB_2132389) from Santa Cruz Biotechnology, anti-EEA1 (3288, AB_2096811) from Cell Signalling Technology; anti-tubulin (T-6557, AB_477584) from Merck; anti-GFP (632380, AB_10013427) from Takara Bio; anti-Dynein Heavy Chain (Ab23905, AB_2096669) from Abcam; anti-TOMM20 (WH0009804M1, AB_1843992). Peroxidase-conjugated anti-mouse (A2554, AB_258008), anti-goat (A4174, AB_258138) and rabbit (A0545, AB_257896) IgGs were from Merck. Alexa Fluor 568 anti-mouse IgG (A11037, AB_2534095), Alexa Fluor 568 anti-rabbit IgG (A11036, AB_10563566), and Alexa Fluor 647 anti-rabbit IgG (A21245, AB_2535813), from Thermo Fisher Scientific.

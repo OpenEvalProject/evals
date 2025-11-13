@@ -14,14 +14,14 @@
 ### Affiliations
 
 1. Department of Medical Neurobiology, Institute of Medical Research Israel – Canada, The Faculty of Medicine Jerusalem Israel
-2. https://ror.org/03qxff017 Edmond and Lily Safra Center for Brain Sciences, The Hebrew University of Jerusalem Jerusalem Israel
-3. https://ror.org/01cqmqj90 Department of Neurosurgery, Hadassah Medical Center Jerusalem Israel
+2. Edmond and Lily Safra Center for Brain Sciences, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
+3. Department of Neurosurgery, Hadassah Medical Center Jerusalem Israel ([ROR:01cqmqj90](https://ror.org/01cqmqj90))
 
 † Corresponding author
 
 ## Abstract
 
-The tonic activity of striatal cholinergic interneurons (CINs) is modified differentially by their afferent inputs. Although their unitary synaptic currents are identical, in most CINs cortical inputs onto distal dendrites only weakly entrain them, whereas proximal thalamic inputs trigger abrupt pauses in discharge in response to salient external stimuli. To test whether the dendritic expression of the active conductances that drive autonomous discharge contribute to the CINs’ capacity to dissociate cortical from thalamic inputs, we used an optogenetics-based method to quantify dendritic excitability in mouse CINs. We found that the persistent sodium (NaP) current gave rise to dendritic boosting, and that the hyperpolarization-activated cyclic nucleotide-gated (HCN) current gave rise to a subhertz membrane resonance. This resonance may underlie our novel finding of an association between CIN pauses and internally-generated slow wave events in sleeping non-human primates. Moreover, our method indicated that dendritic NaP and HCN currents were preferentially expressed in proximal dendrites. We validated the non-uniform distribution of NaP currents: pharmacologically; with two-photon imaging of dendritic back-propagating action potentials; and by demonstrating boosting of thalamic, but not cortical, inputs by NaP currents. Thus, the localization of active dendritic conductances in CIN dendrites mirrors the spatial distribution of afferent terminals and may promote their differential responses to thalamic vs . cortical inputs.
+The tonic activity of striatal cholinergic interneurons (CINs) is modified differentially by their afferent inputs. Although their unitary synaptic currents are identical, in most CINs cortical inputs onto distal dendrites only weakly entrain them, whereas proximal thalamic inputs trigger abrupt pauses in discharge in response to salient external stimuli. To test whether the dendritic expression of the active conductances that drive autonomous discharge contribute to the CINs’ capacity to dissociate cortical from thalamic inputs, we used an optogenetics-based method to quantify dendritic excitability in mouse CINs. We found that the persistent sodium (NaP) current gave rise to dendritic boosting, and that the hyperpolarization-activated cyclic nucleotide-gated (HCN) current gave rise to a subhertz membrane resonance. This resonance may underlie our novel finding of an association between CIN pauses and internally-generated slow wave events in sleeping non-human primates. Moreover, our method indicated that dendritic NaP and HCN currents were preferentially expressed in proximal dendrites. We validated the non-uniform distribution of NaP currents: pharmacologically; with two-photon imaging of dendritic back-propagating action potentials; and by demonstrating boosting of thalamic, but not cortical, inputs by NaP currents. Thus, the localization of active dendritic conductances in CIN dendrites mirrors the spatial distribution of afferent terminals and may promote their differential responses to thalamic vs. cortical inputs.
 
 ## Introduction
 
@@ -39,23 +39,23 @@ In the present study, we apply our method to study nonlinearities of CIN dendrit
 
 ## Results
 
-## Ionic currents underlying amplification and resonance in cholinergic interneurons
+### Ionic currents underlying amplification and resonance in cholinergic interneurons
 
-The HCN and NaP currents depolarize CINs over largely non-overlapping voltage ranges. The HCN current is mostly active below –60 mV and is responsible for the voltage sag in response to a hyperpolarizing current pulse (Figure 1A, ‘HCN’), whereas the NaP current takes over at –60 mV and is necessary and sufficient (Bennett et al., 2000) to drive CINs to action potential threshold (Figure 1A, ‘NaP’). Therefore, because NaP is a regenerative current, while HCN is a restorative current, we would expect the current responses to an oscillating voltage command to depend strongly on whether the membrane voltage is clamped above or below –60 mV (Beatty et al., 2015). We therefore held mouse CINs in whole-cell voltage clamp (n=10 neurons, N=4 mice), first at –55 mV, and subjected them to a voltage command that was composed of a continuous sequence of sinusoidal cycles with an amplitude of 2 mV and a frequency that increases discretely from 0.2 to 20 Hz. The current amplitude was very small at low frequencies and increased monotonically to the high frequency (Figure 1B, black), which is suggestive of an impedance curve with amplified lower frequencies. Loosely speaking, this means that the CINs’ ‘input resistance’ to a low-frequency oscillatory input currents is boosted. As expected (Figure 1C, black), the impedance curve, |Z(f)|, exhibited an amplifying structure, with the phase delay being strictly positive. In order to quantify the degree of amplification, we fit the model of the phase delay, ϕs , for an iso-potential cell with quasi-linear properties (see Equation 5 in Materials and methods). In this fit, there is a (negative) amplifying parameter, µn – that is derived from biophysical properties of amplifying current (e.g. the slope of the activation curve, reversal potential, etc.) (Goldberg et al., 2007) – which was estimated to be µn = –3.9.
+The HCN and NaP currents depolarize CINs over largely non-overlapping voltage ranges. The HCN current is mostly active below –60 mV and is responsible for the voltage sag in response to a hyperpolarizing current pulse (Figure 1A, ‘HCN’), whereas the NaP current takes over at –60 mV and is necessary and sufficient (Bennett et al., 2000) to drive CINs to action potential threshold (Figure 1A, ‘NaP’). Therefore, because NaP is a regenerative current, while HCN is a restorative current, we would expect the current responses to an oscillating voltage command to depend strongly on whether the membrane voltage is clamped above or below –60 mV (Beatty et al., 2015). We therefore held mouse CINs in whole-cell voltage clamp (n=10 neurons, N=4 mice), first at –55 mV, and subjected them to a voltage command that was composed of a continuous sequence of sinusoidal cycles with an amplitude of 2 mV and a frequency that increases discretely from 0.2 to 20 Hz. The current amplitude was very small at low frequencies and increased monotonically to the high frequency (Figure 1B, black), which is suggestive of an impedance curve with amplified lower frequencies. Loosely speaking, this means that the CINs’ ‘input resistance’ to a low-frequency oscillatory input currents is boosted. As expected (Figure 1C, black), the impedance curve, |Z(f)|, exhibited an amplifying structure, with the phase delay being strictly positive. In order to quantify the degree of amplification, we fit the model of the phase delay, $ϕ_{s}$ , for an iso-potential cell with quasi-linear properties (see Equation 5 in Materials and methods). In this fit, there is a (negative) amplifying parameter, µn – that is derived from biophysical properties of amplifying current (e.g. the slope of the activation curve, reversal potential, etc.) (Goldberg et al., 2007) – which was estimated to be µn = –3.9.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig1-v3.jpg)
 
-**Figure 1.:** (A) CINs exhibit a voltage sag due to HCN currents, and autonomous pacemaking due to NaP currents. (B) Application of 2 mV sinusoidal voltage commands to the soma, of increasing frequencies, elicits a current response that is voltage dependent (black trace, –55 mV; red trace, –70 mV). (C) Estimation of the impedance (left) and phase shift (right) show that at –55 mV, CINs exhibit an amplified impedance and that at –70 mV, CINs exhibit a resonance (non-monotonic impedance and negative phase delays). Solid lines are parameter fits for  up to a scale factor (left), and phase shift, α2+β2-1/2 (right, see ϕsEquation 5).
+**Figure 1.:** (A) CINs exhibit a voltage sag due to HCN currents, and autonomous pacemaking due to NaP currents. (B) Application of 2 mV sinusoidal voltage commands to the soma, of increasing frequencies, elicits a current response that is voltage dependent (black trace, –55 mV; red trace, –70 mV). (C) Estimation of the impedance (left) and phase shift (right) show that at –55 mV, CINs exhibit an amplified impedance and that at –70 mV, CINs exhibit a resonance (non-monotonic impedance and negative phase delays). Solid lines are parameter fits for $\alpha^{2}+\beta^{2}^{-1/2}$ up to a scale factor (left), and phase shift, $ϕ_{s}$ (right, see Equation 5).
 
 When neurons were held at –70 mV (n=10 neurons, N=7 mice), the current response was very different. It was much larger at subhertz frequencies as compared to the experiment at –55 mV, and then exhibited what looks like a slightly decreasing amplitude for frequencies near 1 Hz, followed by an amplitude increase at higher frequencies (Figure 1B, red). Estimation of the amplitude response and phase delay (Figure 1C, red), revealed significantly different curves (amplitude: p=6·10–25, phase: p=1·10–17, ANCOVA) with a clear resonance peak at approximately 1 Hz, and a zero crossing at a slightly lower frequency (Figure 1C, red). Fitting the somatic phase delay yielded a reasonable fit only when both an amplifying and resonant component were included in the fit with the amplifying parameter (µn = –3.4) being only slightly reduced relative to the –55 mV fit. In contrast, the additional (positive) resonance parameter, µh – which is derived from the biophysical properties of the restorative current – was estimated to be µh=1.6 (see Materials and methods) based on the fit to the negative lobe in the phase delay.
 
-The previous experiments suggest that the amplifying effect at –55 mV occurs due to prominence of the amplifying NaP current in that voltage range, whereas the resonance visible at –70 mV is due to the HCN current that dominates that voltage range. This conclusion was supported by the fact that application of 1 µM TTX (n=9 neurons, N=4 mice), that abolished autonomous spiking and slightly hyperpolarized the CIN (Figure 2A), reduced the impedance (p=9·10–9) and exhibited a trend toward a shortened phase delay (P=0.137, ANCOVA, Figure 2B). These changes are captured by the amplification parameter being estimated as less negative (µn = –2.0), which reduces ϕs (Equation 5 in Materials and methods). Similarly, application of 10 µM ZD7288, the selective HCN antagonist (n=9 neurons, N=7 mice), which abolished the sag response (Figure 2C), abolished the resonance peak in the impedance curve (p=4·10–16) and significantly reduced the negative lobe in the phase delay (p=0.018, ANCOVA, Figure 2D), which was captured by the resonance parameter being reduced to µh=0.5.
+The previous experiments suggest that the amplifying effect at –55 mV occurs due to prominence of the amplifying NaP current in that voltage range, whereas the resonance visible at –70 mV is due to the HCN current that dominates that voltage range. This conclusion was supported by the fact that application of 1 µM TTX (n=9 neurons, N=4 mice), that abolished autonomous spiking and slightly hyperpolarized the CIN (Figure 2A), reduced the impedance (p=9·10–9) and exhibited a trend toward a shortened phase delay (P=0.137, ANCOVA, Figure 2B). These changes are captured by the amplification parameter being estimated as less negative (µn = –2.0), which reduces $ϕ_{s}$ (Equation 5 in Materials and methods). Similarly, application of 10 µM ZD7288, the selective HCN antagonist (n=9 neurons, N=7 mice), which abolished the sag response (Figure 2C), abolished the resonance peak in the impedance curve (p=4·10–16) and significantly reduced the negative lobe in the phase delay (p=0.018, ANCOVA, Figure 2D), which was captured by the resonance parameter being reduced to µh=0.5.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig2-v3.jpg)
 
 **Figure 2.:** (A) TTX (blue) prevents autonomous spiking (black). (B) TTX prevents amplification of the impedance (left), and reduces the phase shift (right). (C) ZD7288 (red) abolishes the voltage sag (black). (D) ZD7288 abolishes the resonance peak in the impedance, and the negative phase shifts in the subhertz range. Solid lines are parameter fits as in Figure 1.
 
-## Optogenetic interrogation of the spatial distribution of NaP and HCN currents in the CIN dendritic arbor
+### Optogenetic interrogation of the spatial distribution of NaP and HCN currents in the CIN dendritic arbor
 
 While the above experiments demonstrate the NaP and HCN currents are capable of transforming subthreshold voltage fluctuations, the question remains as to where within the CIN’s somatodendritic compartments these currents perform their amplifying and restorative actions, respectively. One extreme scenario is that they are restricted to the axosomatic region (where they are needed for sustaining the autonomous firing patterns of the CINs). In that scenario, the dendrites could be entirely linear, passively transmitting the distal depolarizations to the soma. Only at the soma are the inputs then transformed by these currents. However, a more realistic scenario is that these currents are also expressed dendritically and exert their nonlinear influence on synaptic inputs more distally. But in this scenario, we would still want to know where along the dendrites the currents are expressed. To determine the precise location of these channels would require advanced in situ molecular and anatomical techniques and/or direct electrophysiological recordings from CIN dendrites in conjunction with advanced imaging techniques. While these experiments may, in principle, be done, we wondered whether the optogenetics-based technique that we recently developed to interrogate the role of dendrites in synaptic integration (Tiroshi and Goldberg, 2019) could help us address this question.
 
@@ -63,7 +63,19 @@ We previously showed that the impact of dendrites on synaptic integration can be
 
 Because CINs exhibit prominent amplifying and resonating currents that are strongly voltage dependent (Figures 1 and 2), we posited that by using the same optogenetic technique and semi-infinite cable model we would be able to quantify the contribution of CIN dendrites to post-synaptic integration. In particular, we hypothesized that by fitting a quasi-linear cable model, we would be able to quantify to what degree CIN dendrites per se possess amplifying or resonating properties (See Materials and methods). Finally, by comparing illumination of the proximal vs. the entire dendritic arbor, we could learn something about the localization of the nonlinearities along the dendritic arbor. To this end, we crossed mice that express Cre-recombinase under a choline acetyltransferase (Chat gene) promoter with the Ai32 mouse that expresses ChR2 and EYFP in a Cre-dependent manner (see Materials and methods). The cholinergic neuropil and individual CINs could be clearly visualized in the dorsal striatum of these ChAT-ChR2 mice (Figure 3A). Individual CINs were patched and recorded in voltage clamp, while illuminating either the proximal region with a 60 X water-immersion objective (Figure 3A) or the entire slice with a 5 X air objective, with a continuous sequence of sinusoidally modulated illumination waveforms at various frequencies (Figure 3B, blue).
 
-Comparison of the somatic current traces in response to proximal (Figure 3B, black) vs. full-field (red) illumination demonstrated that the phase of the full-field-generated current is delayed relative to the proximally-generated current. This could be observed in the raw data both for the low and high (yellow inset) frequencies. The effect at the high frequency was very evident when plotting the phase delay curves both when the CINs were held at –55 mV (Figure 3C) and at –70 mV (Figure 3D). Estimation of these phase delays revealed delays that were considerably larger than those observed with the electrical somatic stimulation (Figure 1). The main contributor to the large delays are the kinetics of the ChR2, ϕC (Equation 6b, in Materials and methods) with an additional dendritic delay ϕd (Equation 2 in Materials and methods). So we used independent measurements of the ChR2 kinetics in CINs (Figure 3—figure supplement 1), and previous literature about these kinetics (Nagel et al., 2003; Tchumatchenko et al., 2013) to fit the phase and amplitude contribution of ChR2, as explained in Appendix 1.
+![Figure 3.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig3-v3.jpg)
+
+**Figure 3.:** (A) A CIN in a sagittal slice from ChAT-ChR2 mouse is patch-clamped in the whole-cell mode while either a small proximal region around the soma or the full-field are illuminated with a sinusoidally modulated 470 nm LED. (B) The current response to the proximal (black) and full-field (red) illumination differ, with the phase of the full-field illumination right-shifted at the higher frequencies (20 Hz is highlighted in yellow). (C) Phase shifts at –55 mV holding potential, calculated for proximal (black) and full-field illumination (red). A tendency towards negative phase shifts is present at 0.4 Hz (green arrow). Fitting the passive model at –55 mV demonstrated that the effective range of illumination (r) is larger for the full field fit (Equation 2). (D) Phase shifts at –70 mV holding potential, exhibit a negative phase shift, and the resonance parameter (µh) is smaller for the full field fit, as is the magnitude of the amplification parameter (µn, see main text). The elevation in these parameters’ magnitudes when illuminating proximally relative to full-field suggests that the surface densities of NaP and HCN currents are higher proximally. (E) Phase response for proximal (left) and full-field illumination (right) in TTX at –55 mV. (F) Amplitude response for proximal (left) and full-field illumination (right) at –55 mV reveals an opposite effect of TTX.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean somatic current responses to a 1 ms-long proximal (black, alpha-function fit in gray) and full-field (red, fit in magenta) 470 nm illumination. (B) Distributions of rise and decay time constants (n=7 CINs, N=3 mice) demonstrate that the decay time constant was significantly larger by approximately 3 ms for the full-field illumination, due to dendritic delays. (C) Phase delays of an alpha function with the observed time constants fit the empirical phased delays observed at –55 mV.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** While the curves at –70 mV hint at the presence of a low frequency resonance, the large error bars provide minimal constraints to model fits.
+
+Comparison of the somatic current traces in response to proximal (Figure 3B, black) vs. full-field (red) illumination demonstrated that the phase of the full-field-generated current is delayed relative to the proximally-generated current. This could be observed in the raw data both for the low and high (yellow inset) frequencies. The effect at the high frequency was very evident when plotting the phase delay curves both when the CINs were held at –55 mV (Figure 3C) and at –70 mV (Figure 3D). Estimation of these phase delays revealed delays that were considerably larger than those observed with the electrical somatic stimulation (Figure 1). The main contributor to the large delays are the kinetics of the ChR2, $ϕ_{C}$ (Equation 6b, in Materials and methods) with an additional dendritic delay $ϕ_{d}$ (Equation 2 in Materials and methods). So we used independent measurements of the ChR2 kinetics in CINs (Figure 3—figure supplement 1), and previous literature about these kinetics (Nagel et al., 2003; Tchumatchenko et al., 2013) to fit the phase and amplitude contribution of ChR2, as explained in Appendix 1.
 
 We found that fitting our model of ChR2 kinetics to the significantly-different phases observed in the proximal and full-field illuminations at –55 mV (n=5 neurons, N=4 mice, p=4·10–3, ANCOVA) yielded that the full-field illumination activated roughly twice the electrotonic range (r=1.07) that was activated by the proximal illumination (r=0.46, Figure 3C). However, a closer look at these fits reveals that the phase delay at 0.4 Hz (for both the proximal and full field illumination), is not captured by this model. This dip in phase delay (Figure 3C, green arrow) at this low frequency is reminiscent of what a restorative current is expected to do. In order to accentuate the effect of the restorative HCN currents, we repeated the experiment at the –70 mV holding potential (Figure 3D). In this case (n=14 neurons, N=10 mice), the phase delays at the lower frequencies (especially at 0.4 Hz) were negative, which was reminiscent of the results from the electrical voltage stimulation experiments (Figure 1) at the –70 mV holding potential. Estimation of the amplitude responses for proximal and distal stimulation at both holding potentials revealed that they were less sensitive at revealing the resonance structure (Figure 3—figure supplement 2), that was more readily read off from the phase responses (Figure 3D) in the sense that phase estimates provided tighter error bars than the amplitude estimates.
 
@@ -71,25 +83,143 @@ When fitting a full ChR2 kinetics plus quasi-linear dendrite model (incorporatin
 
 Table 1 summarizes the model parameters used to fit the curves in Figures 1—3. In Appendix 1, we discuss how the various parameters affect the model and provide a more detailed description of how the parameter space was searched to fit the model.
 
+**Table 1.**
+ Parameters fit to quasi-linear model in Figures 1–3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure, Curve</th>
+      <th>µn</th>
+      <th>µh</th>
+      <th>τn (ms)</th>
+      <th>τh (ms)</th>
+      <th>γR</th>
+      <th>τ (ms)</th>
+      <th>r</th>
+      <th>Amp (GΩ)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1C, –55 mV</td>
+      <td>–3.9189</td>
+      <td>-</td>
+      <td>28</td>
+      <td>-</td>
+      <td>5.4296</td>
+      <td>41.8</td>
+      <td>-</td>
+      <td>2.4728</td>
+    </tr>
+    <tr>
+      <td>1C, –70 mV</td>
+      <td>–3.3854</td>
+      <td>1.5863</td>
+      <td>11.6</td>
+      <td>1077.8</td>
+      <td>5.8722</td>
+      <td>26.1</td>
+      <td>-</td>
+      <td>1.4229</td>
+    </tr>
+    <tr>
+      <td>2B, TTX</td>
+      <td>–2.0178</td>
+      <td>-</td>
+      <td>31.7</td>
+      <td>-</td>
+      <td>3.4610</td>
+      <td>19.4</td>
+      <td>-</td>
+      <td>1.3809</td>
+    </tr>
+    <tr>
+      <td>2B, ZD7288</td>
+      <td>–1.8988</td>
+      <td>0.4844</td>
+      <td>13.4</td>
+      <td>9107.5</td>
+      <td>2.6111</td>
+      <td>17.2</td>
+      <td>-</td>
+      <td>0.8323</td>
+    </tr>
+    <tr>
+      <td>3C, proximal</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>35.8</td>
+      <td>0.4360</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3C, distal</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>26.8</td>
+      <td>1.0651</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3D, proximal</td>
+      <td>–1.4763</td>
+      <td>3.4400</td>
+      <td>60.0</td>
+      <td>551.2</td>
+      <td>3.3405</td>
+      <td>33.6</td>
+      <td>0.5788</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3D, distal</td>
+      <td>–0.8885</td>
+      <td>1.6646</td>
+      <td>49.2</td>
+      <td>403.3</td>
+      <td>3.8850</td>
+      <td>45.3</td>
+      <td>1.0646</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
 The conclusion that the HCN current is concentrated proximally is buttressed by the fact that the negative phase delays in the subhertz frequency range tended to be less negative for the full-field illumination (P=0.037, Wilcoxon rank-sum test on phase delays at 0.4 Hz). In the framework of our quasi-linear model, the only mathematically possible way to recreate this finding while increasing the effective electrotonic range r being illuminated is by reducing the restorative parameter µh. Otherwise, if µh were constant then illuminating a larger region of the cable – by increasing r – would necessarily recruit more restorative current, thereby making the negative phases more negative (See Appendix 1).
 
 Aside from the deviation at 0.4 Hz (Figure 3C, green arrow, which may be indicative of a resonant component), the other phase measurements at –55 mV are consistent with a simple model of ChR2 kinetics plus a passive dendritic delay, thereby raising the possibility that optogenetic dendritic activation fails to engage NaP currents. This failure could suggest that NaP currents are relatively absent from the dendrites. However, our somatic measurements showed clear evidence that NaP currents affect the quasi-linear properties of the soma (Figure 2B). Additionally, the fit to the phases at –70 mV, required the inclusion of an amplification parameter, which was estimated to have a larger magnitude for the proximal illumination (µn = –1.5) than for the full-field illumination (µn = –0.9). It therefore seems more likely that the Nav channels that underlie the NaP currents are localized proximally and taper off distally. To test this, we repeated the measurements at –55 mV before and after application of TTX. While TTX application may have slightly increased the phase delays for both proximal and full-field illumination (Figure 3E) – which could reflect a reduction in the overall dendritic membrane conductance of the CINs, and therefore a lengthening of its space constant – the amplitude responses (Figure 3F) unequivocally show that TTX exerts an opposite affect when proximal vs. full-field illumination are used. While full-field illumination in TTX increased the somatic current’s amplitude response (control: n=9 neurons, N=7 mice; TTX: n=14 neurons, N=8 mice, p=7·10–9, ANCOVA) presumably by reducing the current escape via the dendritic membrane, proximal illumination in TTX reduced the somatic current’s amplitude response (control: n=9 neurons, N=7 mice; TTX: n=12 neurons, N=6 mice, p=1.1·10–4, ANCOVA) indicating that proximal NaP currents indeed boost the somatic current, as concluded from the somatic experiments (Figure 2). Thus, this pharmacological result provides model-independent evidence that the NaP currents are expressed primarily proximally and less so distally. In the following section, we provide independent evidence in support of this conclusion.
 
-## Distance of dendritic bAP invasion indicates location of amplifying Nav channels
+### Distance of dendritic bAP invasion indicates location of amplifying Nav channels
 
 The persistent and fast-inactivating Nav currents flow through the same Nav channels (Alzheimer et al., 1993). Therefore, a method that is indicative of where these NaV channels are located will indicate where the NaP current can be found. One such method involves determining to what distance from the soma dendritic bAPs invade the dendritic arbor. To this end, we used 2PLSM Ca2+ imaging to measure the size of the Ca2+ transients elicited by bAPs in autonomously firing CINs at various distances from the soma (Figure 4A). We conducted line scans (n=11 neurons, N=7 mice) to measure the Ca2+ signals at various distances from the soma (Figure 4B). Next, we estimated the size of the spike triggered average (STA) of the ∆F/F0 Ca2+ signal, by averaging around spontaneous APs measured at the soma (Figure 4C). The amplitude of the STA was estimated by fitting it with an alpha-function (see Materials and methods). A scatter plot of STA amplitude vs. distance from soma demonstrates a large degree of variability (Figure 4D). Nevertheless, applying a 35 µm moving average to the scatter plot reveals a trapezoidal dependence of Ca2+ transient sizes (Figure 4D, black). We previously demonstrated that somatic Ca2+ transients are smaller than dendritic transients due to the difference in the surface-area-to-volume ratio (Goldberg et al., 2009; Rehani et al., 2019). In the same vein, the initial dip in the size of the transients at short distances from the soma result from the large size of the proximal dendrites (Figure 4D), relative to the distal dendrites. Neglecting that effect, we found that the size of the bAP-driven Ca2+ transients remains constant up to approximately 70 µm from the soma, and then drops off. Additionally, in 7 CINs (N=5 mice) in which we had measurements of ∆F/F0 at both proximal and distal (>70 µm) locations, we found that the median distal signal was significantly lower than the proximal one by 29% (p=0.047, Wilcoxon rank-sum test). This spatial dependence of the Ca2+ transient amplitude, suggests that the bAP maintains a constant amplitude due to the presence of Nav channels that sustain their regenerative nature out to some 70 µm from the soma. Farther out, the Ca2+ transients decrease presumably due to a drop off in Nav channel expression, which leads to a lower amplitude bAPs, and hence less Ca2+ via voltage-activated Ca2+ channels. Thus, this measurement strengthens the conclusion that NaP currents are present in CIN dendrites – primarily in proximal dendrites (up to approximately 70 µm from the soma).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig4-v3.jpg)
 
-**Figure 4.:** (A) Autonomous discharge of a CIN that was patched and filled with fluo-4 and Alexa Fluor 568 for 2PLSM imaging (image). (B) Line scans at various distances from the soma exhibit Ca2+ oscillations caused by bAPs. (C) Calculating the spike-triggered average of these oscillations and fitting an alpha-function gives an estimate of the amplitude of these oscillations (in % ∆F/F). (oD) The scatter plot of these amplitudes as a function of distance from the soma (11 CINs from 7 mice are pooled) exhibits a large degree of variability. However, a 35 µm moving average (black line) exhibits that the Ca2+ transients begin to decay approximately 70 µm from the soma, indicating that bAPs are supported by Nav channels up to that point (the initial increase up to 20 µm is due to the increase in the surface-to-volume ratio in the large proximal dendrites).
+**Figure 4.:** (A) Autonomous discharge of a CIN that was patched and filled with fluo-4 and Alexa Fluor 568 for 2PLSM imaging (image). (B) Line scans at various distances from the soma exhibit Ca2+ oscillations caused by bAPs. (C) Calculating the spike-triggered average of these oscillations and fitting an alpha-function gives an estimate of the amplitude of these oscillations (in % ∆F/Fo). (D) The scatter plot of these amplitudes as a function of distance from the soma (11 CINs from 7 mice are pooled) exhibits a large degree of variability. However, a 35 µm moving average (black line) exhibits that the Ca2+ transients begin to decay approximately 70 µm from the soma, indicating that bAPs are supported by Nav channels up to that point (the initial increase up to 20 µm is due to the increase in the surface-to-volume ratio in the large proximal dendrites).
 
-## NaP currents boost proximal thalamic inputs but not distal cortical inputs to CINs
+### NaP currents boost proximal thalamic inputs but not distal cortical inputs to CINs
 
 In a previous study of CINs in the Q175 mouse model of Huntington’s disease (HD), we found that their total NaP current is larger, and that bAPs invade farther out into their dendrites (up to 120–130 µm from the soma) in the Q175 mice relative to wildtype mice. In that study, we also found that optogenetically-activated corticostriatal excitatory postsynaptic currents (EPSCs) in CINs were boosted by NaP in these HD mice, because they were reduced by ranolazine, a selective antagonist of the NaP current (Tanimura et al., 2016). The facts: (a) that wildtype mice have smaller NaP currents (Tanimura et al., 2016) that are concentrated more proximally (Figures 2B and 3F); and (b) that bAPs invade CIN dendrites effectively only up to 70 µm from the soma (Figure 4) – raise the question as to whether distal cortical inputs are boosted in CINs from wildtype mice. To test this, we used Thy1-ChR2 mice (Aceves Buendia et al., 2019; Arenkiel et al., 2007; Matityahu et al., 2022) that expresses ChR2 in cortical fibers (Figure 5A), but not in the parafascicular nucleus (PfN) of the thalamus (Figure 5—figure supplement 1A) or in the pedunculopontine nucleus (Gradinaru et al., 2009), another nucleus that provides monosynaptic glutamatergic projection to CINs (Assous et al., 2019). Interestingly, we found in acute striatal slices from these wildtype mice that ranolazine failed to reduce the amplitude of monosynaptic corticostriatal EPSPs (Figure 5—figure supplement 1B) to CINs (n=11 neurons, N=6 mice, p=0.74, Wilcoxon signed-rank test, Figure 5B), indicating the cortical inputs to CINs are not normally boosted.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig5-v3.jpg)
+
+**Figure 5.:** (A) CINs were patched in current clamp in Thy1-ChR2 mice, so that 470 nm LED illumination of striatal slices activated nominally cortical terminals. (B) Optogenetically evoked monosynaptic cortical EPSPs were unaffected by ranolazine. (C) The parafascicular nucleus (PfN) of Vglut2-Cre mice was inoculated with AAVs harboring Cre-dependent ChR2, so that 470 nm LED illumination of striatal slices activated monosynaptic PfN terminals while CINs were patched in current clamp mode. (D) Optogenetically evoked thalamic EPSPs in CINs (held between –50 mV and –60 mV) were reduced by 30 µM ranolazine.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76039/elife-76039-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Coronal slice via the PfN in a Thy1-ChR2-EYFP mouse express EYFP in fibers only but not in somata, ruling out that intrastriatal optogenetic activation in these mice recruits thalamic inputs. FR – fasciculus retroflexus. (B) Optogenetic EPSCs in all CINs recorded in Thy1-ChR2 (n=8 neurons, N=2 mice) and in 6/7 CINs from Vglut2-cre mice, whose PfN was inoculated with AAVs harboring floxed ChR2 (N=2) were monosynaptic, as 4-AP (100 µM) rescued release in the presence of TTX (1 µM). (C) Optical PPRs (100 ms interval) recorded in Thy1-ChR2 mice (left) or in Vglut2-cre mice whose PfN was transfected with AAVs harboring ChR2 (right) are unchanged by ranolazine.
+
 Taken together with the previous findings in the HD mice (Tanimura et al., 2016), this finding suggests that whether or not distal cortical inputs are boosted depends on how far into the dendritic arbor the NaP current is capable of producing amplification. In wildtype mice, where the data (Figures 2—4) suggest the NaP currents are restricted proximally, distal cortical inputs are not boosted. However, in HD mice where NaP currents reach farther out into the dendrites (Tanimura et al., 2016) cortical inputs are boosted. A corollary of this conclusion would be that PfN inputs that terminate proximally on CINs (Doig et al., 2014; Lapper and Bolam, 1992; Mamaligas et al., 2019; Thomas et al., 2000) should exhibit ranolazine-sensitive boosting even in wildtype mice, because they presumably contact proximal regions where the dendritic membrane exhibits amplification (Figure 3F). To test this, we transcranially inoculated the PfN of Vglut2-ires-Cre mice with adeno-associated viruses (AAVs) harboring Cre-dependent ChR2 and EYFP genes (Figure 5C; Aceves Buendia et al., 2019; Rehani et al., 2019). Two weeks later, we tested the sensitivity of optogenetically evoked monosynaptic EPSPs (Figure 5—figure supplement 1B) to ranolazine. Indeed, the mean amplitude of the EPSP was reduced by a median of 16% (n=11 neurons, N=4 mice, p=0.04, Wilcoxon signed-rank test, Figure 5D). Importantly, ranolazine had no effect on paired-pulse ratios (Aceves Buendia et al., 2019) at either cortical or PfN synapses (Figure 5—figure supplement 1C), ruling out a presynaptic mechanism-of-action. Thus, we conclude that the post-synaptic boosting of glutamatergic inputs to CINs by NaP currents occurs in dendritic regions that correspond to the spatial localization of these currents as derived from the quasi-linear properties of CINs and from 2PLSM imaging of bAPs.
 
-## Tonically active neurons in non-human primates exhibit a pause-like response to slow wave oscillations during sleep
+### Tonically active neurons in non-human primates exhibit a pause-like response to slow wave oscillations during sleep
 
 Our data, alongside previous studies (Beatty et al., 2015), demonstrate that somatodendritic HCN currents give rise to resonances in the subhertz range in CIN surface membranes. In contrast, SPNs exhibit no resonance (Beatty et al., 2015). This suggests CINs in intact animals may exhibit increased sensitivity to oscillatory inputs in that frequency range, whereas SPNs should not. Delta waves in the electroencephalogram (EEG) and in cortical and sub-cortical local field potentials (LFP) are prominent during non-REM sleep across species (Brown et al., 2012; Liu and Dan, 2019), including in non-human primates (NHPs) (Mizrahi-Kliger et al., 2018). Because the LFP is widely thought to represent subthreshold cellular activity, affected by afferent and recurrent synaptic inputs (Buzsáki et al., 2012), we hypothesized that the tonically active neurons (TANs) in the NHP striatum – that are comprised primarily of CINs (Aosaki et al., 1995; Kawaguchi, 1993; Wilson et al., 1990) – will exhibit stronger entrainment to slow-wave LFP events during sleep, while SPNs under the same conditions will not. Indeed, triggering the spike trains of TANs and SPNs (from N=2 NHPs) on slow wave events that occur during sleep stages N2 and N3 (Mizrahi-Kliger et al., 2018; Riedner et al., 2007), which represent relatively deep non-REM sleep, demonstrates that while the firing rate of SPNs was unaffected (n=83), the firing rates of TANs (n=122) was modulated by these slow-wave events (Figure 6A–E). In contrast, the TANs firing was not modulated during higher frequency sleep spindle events (Figure 6F–H), in agreement with the subhertz membrane resonance peak we observed in the acute slice experiments. Importantly, the biphasic response exhibited by TANs to slow-wave events bears a striking resemblance to the ‘classical’ TAN response to external cues (Aosaki et al., 1995; Apicella et al., 1991; Joshua et al., 2008; Kimura et al., 1984). Because these responses in awake primates require an intact thalamic projection (Bradfield et al., 2013; Goldberg and Reynolds, 2011; Matsumoto et al., 2001; Schulz and Reynolds, 2013; Smith et al., 2004; Yamanaka et al., 2018) (and there is no reason to assume that this is altered in sleep), our findings (Figure 6) provide support to the hypothesis that the CIN membrane resonance contributes to a thalamically-driven biphasic CIN response during slow-wave sleep, possibly because this projection terminates proximally on CINs. Importantly, because the primates are asleep in a sound-proof room, this is, to the best of our knowledge, the first report of striatal TANs responding to an internally generated brain event, and not an external saliency-related cue.
 
@@ -99,27 +229,27 @@ Our data, alongside previous studies (Beatty et al., 2015), demonstrate that som
 
 ## Discussion
 
-## Quasi-linear dendritic properties of CINs and the non-uniform distribution of their active conductances
+### Quasi-linear dendritic properties of CINs and the non-uniform distribution of their active conductances
 
 In the current study, we applied a cable-theoretic and optogenetics-based formalism – that we developed previously to study dendritic properties of SNr neurons (Tiroshi and Goldberg, 2019) – to study the dendritic properties of CINs. Unlike SNr neurons that were found to act like passive linear cables exhibiting no voltage dependent properties, we find that CIN dendrites exhibit both amplification and resonances in a voltage dependent manner: amplification is more prominent at depolarized subthreshold potentials (approximately –55 mV), whereas resonances are more prominent at more hyperpolarized potentials (approximately –70 mV). Moreover, we found that our method is able to provide information about where in the dendritic arbor these quasi-linear properties are localized. We extracted boosting (µn) and resonance (µh) parameters for proximal vs. full-field illumination, and found that the magnitude of both parameters is smaller when the entire dendritic arbor is illuminated. In other words, activating more of the distal dendritic membrane dilutes the amplifying and resonating effects, meaning that the additional membrane illuminated in the full-field condition contributed less to amplification and resonances. The simplest interpretation of this finding is that the active conductances that give rise to amplification and resonance are more highly expressed proximally, and apparently taper off farther out in the dendritic arbor. We identified the relevant currents by studying the quasi-linear properties of CIN somata with voltage perturbations. We found that amplification is TTX-sensitive and therefore arises from Nav channels that give rise to the NaP current. Similarly, we found that resonances require HCN channels.
 
 We used one direct and two indirect methods to validate the preferentially proximal localization of NaP currents. First, TTX application revealed that boosting occurs only at the soma (Figure 2B) and in proximal (but not distal, Figure 3F) dendritic membranes. Importantly, the TTX results demonstrate that our conclusion that boosting is restricted to the soma and proximal dendrites is independent of the quasi-linear model fit. Second, we implemented a widely-used approach of estimating the distance of dendritic invasion of bAPs by imaging the Ca2+ influx that accompanies them (Carter and Sabatini, 2004; Day et al., 2008; Goldberg et al., 2009; Kerr and Plenz, 2004; Rehani et al., 2019; Tanimura et al., 2016). We found – not unlike in SPN neurons – that bAPs maintain their amplitude out to 70 µm from the soma and then begin to decay, suggesting that Nav currents that support bAP propagation taper off from that point onwards. Because strictly speaking a change in Ca2+ transients could result from a change in the concentration of voltage-activated Ca2+ channels, future work can verify our results by directly testing where locally puffed TTX attenuates the bAP (perhaps even with the use of voltage sensitive probes). Second, we demonstrated that only thalamic – but not cortical – EPSPs exhibit sensitivity to the selective NaP blocker. Because the thalamic terminals are located more proximally (Lapper and Bolam, 1992; Mamaligas et al., 2019; Thomas et al., 2000), this provides further evidence that NaP currents are more prominent locally. The preferential localization of HCN currents proximally in CIN dendrites requires additional validation, particularly because other neurons exhibit an opposite pattern (Berger et al., 2001; Harnett et al., 2015; Kole et al., 2006). However, we were less interested in validating the proximal localization of HCN currents, because unlike NaP currents, activation of HCNs is conditioned on CINs being actively (after-)hyperpolarized, during which bAPs are unlikely to occur. We did, however, test a context in which HCN currents, and the resonance they underlie, are likely to affect CIN collective dynamics. We found that TANs respond biphasically to internally generated slow wave activity during sleep, but not to sleep spindles. This preferential entrainment is consistent with the fact that CIN membranes exhibit a resonance in the subhertz range as found by us and others (Beatty et al., 2015). The elevated impedance (or frequency-dependent access resistance) in this range means that inputs fluctuating in this range will more efficiently depolarize the CINs, and therefore more likely to trigger additional action potentials than inputs fluctuating at a frequency that is far from the resonance frequency. Accordingly, SPNs that do not exhibit resonances (Beatty et al., 2015) are not entrained by the slow wave oscillation. Our findings in sleeping NHPs are at odds with various rodent studies that found that cortical slow-wave activity is weakly associated with the discharge of TANs in anesthetized rodents, and more strongly associated with SPN activity (Goldberg et al., 2003; Mahon et al., 2001; Reig and Silberberg, 2014; Schulz et al., 2011; Sharott et al., 2012; Stern et al., 1998). These differences may be attributable to species differences and/or differences between natural sleep and anesthesia, which may differ in the degree to which thalamic vs. cortical inputs engage striatal neurons. Moreover, the dendritic nonlinearities in SPNs (Plotkin et al., 2011) may be preferentially engaged during anesthesia, thereby causing SPNs to respond more strongly under anesthesia than during natural sleep.
 
-## Advantages and limitations of the quasi-linear formalism and the optogenetics-based approach
+### Advantages and limitations of the quasi-linear formalism and the optogenetics-based approach
 
 As mentioned in the Introduction, the quasi-linear approach provides a tool to characterize membrane excitability in general functional terms, without requiring the complete biophysical characterization of membrane currents. Unfortunately, the method is not invertible: even after estimating all the quasi-linear parameters one cannot deduce the full biophysical characterization of the underlying channels even if one has a precise mathematical model of these channels. Moreover, even though we extracted the values of µn and µh, we do not know how to translate them into a quantitative measure of channel density. Still, the ability to compare parameters for various spatial illumination patterns enables us to reach qualitative conclusions regarding relative channel density. Additionally, our attribution of µn to NaP and µh to HCN is only provisional. CINs possess other channels that have a major influence on their firing patterns such as A-type, inward rectifying, and various Ca2+-activated K+ channels, to mention a few (Bennett et al., 2000; Deng et al., 2007; Goldberg et al., 2009; Goldberg and Wilson, 2010; Goldberg and Wilson, 2005; McGuirt et al., 2021; Oswald et al., 2009; Song and Surmeier, 1996; Wilson, 2005; Wilson and Goldberg, 2006) that were not included in our analysis. Future work should elaborate how these and other channels contribute to the quasi-linear properties of CINs and their dendrites.
 
 Using optogenetics provides another level of practicality. The seminal studies that characterized the filtering properties of dendrites or pyramidal neurons (Berger et al., 2001; Goldberg et al., 2007; Hutcheon et al., 1996; Ulrich, 2002) required dual soma-dendrite patching which is not practical for all neuronal types whose dendrites taper off rapidly. Expressing opsins in the membrane being activated, as we did, means that a single somatic patch electrode can suffice to conduct the quasi-linear characterization. We currently use this approach to illuminate large regions of the dendritic arbor simultaneously, which means we can only derive large-scale dendritic properties. In the future, localized laser stimulation of dendritic regions (visualized with the help of a fluorescent marker in the patch pipette), or even two-photon laser activation of opsins (provided one can find stimulation parameters that do not harm the dendrites) could be used as an alternative approach. On the backdrop of optogenetics being utilized almost exclusively to study circuit mapping (Häusser, 2021; Kim et al., 2017; Petreanu et al., 2009) by expressing opsins presynaptically, we believe our study joins other studies (Higgs and Wilson, 2017; Tiroshi and Goldberg, 2019) to underscore the value of using opsins expressed postsynaptically to study neuronal – even dendritic – excitability.
 
-## Somatic amplification and resonance in CINs
+### Somatic amplification and resonance in CINs
 
 We preceded our optogenetic characterization of dendritic nonlinearities with the electrical characterization of quasi-linear somatic properties using a sinusoidal voltage command applied through the patch pipette. As previously reported by Beatty and collaborators (Beatty et al., 2015), CIN somata exhibit a membrane resonance in the subhertz range, that depends on the holding potential. However, while Beatty and collaborators found that an amplified resonance is present in the more depolarized (approximately – 55 mV) range, we found that the resonance is only pronounced in the more hyperpolarized (approximately –70 mV) range, where it depends on the HCN current. It is possible that the resonances observed by Beatty and collaborators (Beatty et al., 2015) at –55 mV arose from ineffective clamping of dendrites with the slightly higher resistance electrodes used in that study. In support of this proposition, we also found evidence for the resonance arising from unclamped (dendritic) membranes. When the CINs were clamped at –55 mV, while somatic voltage perturbations did not produce a resonance, optogenetic stimulation (both proximal and full field) at 0.4 Hz produced a more negative phase than at the neighboring 0.2 Hz and 0.6 Hz stimulation (Figure 3C, green arrow). This downward deflection in phase is reminiscent of the full-blown negative subhertz region that occurred with optogenetic stimulation when the CINs were clamped at –70 mV (Figure 3D). Thus, it is likely that resonance originated in both studies from dendritic HCN currents. Because in the study of Beatty and collaborators (Beatty et al., 2015) TTX lowered the impedance, without removing the subhertz resonance peak, we conclude that the effect of TTX in both studies is to remove the NaP-dependent boosting, without directly affecting resonance. It also seems that the location of the peak amplitudes estimated by Beatty and collaborators (Beatty et al., 2015) is perhaps 1 Hz larger than the location of the peaks in our study. However, this difference could result from the fact that they used a chirp stimulation where the frequency increases continuously, whereas we used several periods of perfect sinusoidal waveforms with a discrete set of frequencies. Moreover, it can be shown mathematically that for the quasi-linear model the zero crossing in the phase response occurs at a slightly smaller frequency than the peak in the amplitude response, so this may also contribute to the impression that the resonance frequency observed in our experiments is slightly different from that observed in Beatty and collaborators (Beatty et al., 2015).
 
-## Dendritic contribution to capacity of CINs to differentiate between their excitatory inputs
+### Dendritic contribution to capacity of CINs to differentiate between their excitatory inputs
 
 In NHPs, TANs that are comprised primarily of CINs (Aosaki et al., 1995; Goldberg and Wilson, 2010; Kawaguchi, 1993; Wilson et al., 1990), encode – through a brief pause in their tonic firing – external stimuli that are salient and often unexpected, even conveying a stop or behavioral shift signal (Aoki et al., 2018; Thorn and Graybiel, 2010) or stimuli that are associated with reward (Apicella et al., 1991; Goldberg and Reynolds, 2011; Kimura et al., 1984). The pause response requires an intact projection from the PfN of the thalamus (Bradfield et al., 2013; Goldberg and Reynolds, 2011; Matsumoto et al., 2001; Schulz et al., 2011; Schulz and Reynolds, 2013; Smith et al., 2004; Yamanaka et al., 2018), indicating that TANs are attuned to thalamic input. While TANs do not respond to ongoing movement (Aosaki et al., 1994; Apicella et al., 1991; Kimura et al., 1984; Raz et al., 1996), and hence seem less attuned to sensorimotor cortical input (Sharott et al., 2012), CIN activity in awake behaving mice is strongly modulated by self-initiated movements (Gritton et al., 2019; Howe et al., 2019; Yarom and Cohen, 2011). Nevertheless, slice physiology studies in rodents (Aceves Buendia et al., 2019; Assous, 2021; Assous et al., 2017; Ding et al., 2010; Johansson and Silberberg, 2020; Kosillo et al., 2016; Threlfell et al., 2012) clearly show that thalamic inputs to CINs are stronger in the sense that they give rise to larger EPSPs (Johansson and Silberberg, 2020) and can trigger a pause-like responses (Ding et al., 2010), whereas cortical inputs to most CINs (Mamaligas et al., 2019) are weaker in that they give rise, in acute slices, to smaller EPSPs and cannot trigger the pause-like response – although this distinction is less pronounced in anesthetized rodents (Doig et al., 2014). Thus, it is clear that CINs differentiate between these two excitatory inputs and respond differently to them. A major contributor to the CINs’ capacity to dissociate thalamic and cortical input is the differential distribution of their respective terminals on the dendritic arbor: thalamic input terminate perisomatically and on proximal dendrites, whereas cortical input terminates on distal dendrites (Doig et al., 2014; Lapper and Bolam, 1992; Mamaligas et al., 2019; Thomas et al., 2000). Our finding that the higher expression of NaP currents in proximal dendrites preferentially boosts thalamic over cortical inputs, suggests that active conductances are expressed in CIN dendrites in a manner that corresponds and reinforces the effect of the spatial separation between the terminals of the two inputs.
 
-## Adaptive changes in dendritic excitability in movement disorders
+### Adaptive changes in dendritic excitability in movement disorders
 
 The capacity of the CIN dendritic excitability to mirror the distribution of afferent terminals is also an adaptive process. As mentioned above, we previously reported that CIN dendritic excitability is elevated in the Q175 mouse model of HD (Tanimura et al., 2016). In contrast to control (Thy1-ChR2) mice in which cortical EPSPs in CINs are insensitive to ranolazine (Figure 5), cortical EPSCs in CINs from Q175 mice (crossed with Thy1-ChR2 mice) are strongly attenuated by ranolazine. The acquired dependence of distal cortical inputs on NaP currents in Q175 mice results from an upregulation of the NaP current, which was also evidenced by bAPs invading farther out into the CINs’ dendritic arbor (Tanimura et al., 2016). This elevated excitability in the Q175 mouse is probably a homeostatic response aimed at elevating the postsynaptic sensitivity to the remaining synaptic contents after the loss of afferent cortical and thalamic inputs observed in HD mouse models (Deng et al., 2013). Indeed, CINs more readily aquired pause responses to cortical inputs in Q175 HD mice than in wildtype mice (Tanimura et al., 2016). Because thalamostriatal inputs are also altered in models of Parkinson’s disease (PD) (Aceves Buendia et al., 2019; Parker et al., 2016; Tanimura et al., 2019), future work should determine whether the excitability of CIN dendrites is altered in these models, as well. Importantly, dendrites are positioned at the interface between synaptic inputs and the intrinsic properties of CIN. While changes in synaptic transmission and intrinsic excitability of CINs have received attention in models of PD, HD and other movement disorders (Abudukeyoumu et al., 2019; Aceves Buendia et al., 2019; Choi et al., 2020; Ding et al., 2006; Ding et al., 2011; Eskow Jaunarajs et al., 2015; Mallet et al., 2019; Paz et al., 2021; Pisani et al., 2007; Plotkin and Goldberg, 2019; Poppi et al., 2021; Tanimura et al., 2019; Tubert and Murer, 2021), studying alterations in dendritic excitability in these models is a complementary approach that remains largely unchartered territory.
 
@@ -129,72 +259,342 @@ In summary, we have used a new optogenetics-based approach, complemented by othe
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129S-Chattm1(cre)Lowl/MwarJ</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:031661RRID:IMSR_JAX:031661</td>
+      <td>B6J.ChAT-IRES-Cre (Δneo)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(Thy1-COP4/EYFP)18Gfng/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:007612RRID:IMSR_JAX:007612</td>
+      <td>Thy1-ChR2-YFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6;129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:012569RRID:IMSR_JAX:012569</td>
+      <td>Ai32(RCL-ChR2(H134R)/EYFP)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>STOCK Slc17a6tm2(cre)Lowl/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:016963RRID:IMSR_JAX:016963</td>
+      <td>Vglut2-ires-cre</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mecamylamine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Lot # 019M4108VCAS: 826-39-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atropine sulfate salt monohydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Lot # BCBH8339VCAS No.:5908-99-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR 95531 hydrobromide (Gabazine)</td>
+      <td>Hello Bio</td>
+      <td>CAS:104104-50-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNQX</td>
+      <td>TOCRIS</td>
+      <td>CAS:2379-57-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Hello Bio</td>
+      <td>CAS:79055-68-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP 55845 hydrochloride</td>
+      <td>Hello Bio</td>
+      <td>CAS: 149184-22-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydro-β-erythroidine hydrobromide</td>
+      <td>TOCRIS</td>
+      <td>CAS: 29734-68-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ranolazine dihydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS Number:95635-56-6</td>
+      <td>Product NumberR6152</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD7288</td>
+      <td>MedChemExpress</td>
+      <td>CAS No.: 133059-99-1</td>
+      <td>Synonyms: ICI D7288</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin citrate</td>
+      <td>Hello Bio</td>
+      <td>CAS: 18660-81-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Aminopyridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS Number:504-24-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate buffered saline tablets</td>
+      <td>Sigma-Aldrich</td>
+      <td>MDL number:MFCD00131855</td>
+      <td>Product NumberP4417</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS Number:30525-89-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XYLAZINE AS HYDROCHLORIDE</td>
+      <td>EUROVET ANIMAL HEALTH B.V</td>
+      <td>CAS: 082-91-92341-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CLORKETAM</td>
+      <td>VETOQUINOL</td>
+      <td>CAS: 1867-66-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Meloxicam</td>
+      <td>Chanelle Pharmaceuticals Manufacturing ltd</td>
+      <td>CAS Number:71125-38-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>isoflurane</td>
+      <td>Primal Critical Care</td>
+      <td>CAS Number:26675-46-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WinWCP</td>
+      <td>University of Strathclyde Glasgow</td>
+      <td>RRID:SCR_014713</td>
+      <td>Data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FEMTOSmart Software: MESc</td>
+      <td>FEMTONICS</td>
+      <td>RRID:SCR_018309</td>
+      <td>2 P Data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements Basic Research</td>
+      <td>Nikon instruments</td>
+      <td>RRID:SCR_002776</td>
+      <td>Confocal images acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Signal 6</td>
+      <td>Cambridge Electronic Design</td>
+      <td>RRID:SCR_017081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaLab SnR</td>
+      <td>Alpha-Omega Engineering</td>
+      <td>https://www.alphaomega-eng.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Electrode Positioning System</td>
+      <td>Alpha-Omega Engineering</td>
+      <td>https://www.alphaomega-eng.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Model 940 Small Animal Stereotaxic Instrument with Digital Display Console</td>
+      <td>Kopf Instruments</td>
+      <td>https://kopfinstruments.com/product/model-940-small-animal-stereotaxic-instrument-with-digital-display-console/</td>
+      <td>See “Stereotaxic viral inoculation in Vglut2-ires-Cre mice” in Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sound-attenuating room</td>
+      <td>IAC acoustics</td>
+      <td>https://www.iacacoustics.com/</td>
+      <td>See “Non-Human Primates (NHPs)” in Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass-coated Tungsten electrodes</td>
+      <td>Alpha-Omega Engineering</td>
+      <td>https://www.alphaomega-eng.com/</td>
+      <td>See “Non-Human Primates (NHPs)” in Materials and Methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Homozygous Ai32 (RCL-ChR2(H134R)/EYFP) mice (The Jackson laboratory [Jax] stock: 012569) that express floxed ChR2 and an EYFP fusion protein under the CAG promoter were crossed with homozygous ChAT-IRES-Cre (∆neo) mice the express Cre recombinase under the Chat promoter (Jax stock: 031661). The ChAT-ChR2 offspring (4–8 weeks old/both sexes) were used for the majority of experiments. To investigate corticostriatal transmission, we used homozygous transgenic Thy1-ChR2 mice (B6.Cg-Tg (Thy1-COP4/EYFP) 18Gfng/1, Jax stock: 007612), that express ChR2 under the Thy1 promoter in cortical neurons (Arenkiel et al., 2007). To investigate thalamostriatal transmission, we used Vglut2-ires-Cre mice (Jax stock: 016963).
 
-## Non-human primates (NHPs)
+### Non-human primates (NHPs)
 
 Data were obtained from two healthy, young adult, female vervet monkeys. The monkeys were habituated to sleeping in a primate chair, positioned in a dark, double-walled sound-attenuating room. The primate chair restrained the monkeys’ hand and body movements but otherwise allowed them to be in a position similar to their natural (sitting) sleeping posture. Detailed sleep habituation, surgery and sleep staging were reported previously (Mizrahi-Kliger et al., 2018). For extracellular recordings, the monkeys’ heads were immobilized with a head holder, and eight glass-coated tungsten microelectrodes were advanced the dorsal striatum. Electrical signals were amplified with a gain of 20, filtered using a 0.075 Hz (2 pole) to 10 kHz (3 pole) Butterworth filter and sampled at 44 kHz by a 16-bit analog/digital converter. Spiking activity was sorted online using a template matching algorithm. The striatum was identified based on its stereotaxic coordinates according to MRI imaging and primate atlas data (Martin and Bowden, 2000). TANs and SPNs were identified using real-time assessment of their electrophysiological features. Spiking and LFPs were recorded only for identified recording sites with stable recording quality (i.e., where single-neuron spiking yielded an average isolation score ≥ 0.85).
 
 We followed established procedures for slow wave detection in the LFP (Riedner et al., 2007). Briefly, the LFP signal was filtered at the 0.5–4 Hz range and putative slow wave events whose duration was 0.25–2 s were kept for further analysis. Next, the slow wave peaks were sorted according to their amplitude. Artifacts were removed by discarding all events whose amplitude exceeded 5 standard deviations above the mean. Finally, conditional firing rate analysis was only performed on 30% of the slow wave events with the highest amplitude. Conventional procedures were also used for sleep spindle detection in the LFP (Sela et al., 2016). Briefly, the detection algorithm was only used for striatal sites whose LFP showed significant 10–17 Hz (spindle range) activity. LFP was filtered at the 10–17 Hz range, and the Hilbert transform was then used to extract the instantaneous amplitude. Events exceeding 3 standard deviations above the mean were deemed potential spindle events, and a threshold of one half of a standard deviation above the mean was used to detect the start and end points of an individual sleep spindle. A potential sleep spindle was defined as such only if it lasted 0.5–3 s, and provided it did not exhibit a relatively high (more than 4.5 standard deviations above the mean) amplitude in a control 20–30 Hz range. The spindle data were obtained using a 4-pole 4–25 Hz Butterworth filter.
 
-## Histology
+### Histology
 
 An 8-week-old male Thy1-ChR2 mouse was deeply anesthetized with a terminal dose of ketamine-xylazine followed by perfusion through the heart of cold PBS and 4% PFA. The removed brain was kept overnight at 4 °C in 4% PFA. The next day, the brain was washed 3 × 15 min before 50 µm coronal slices of the PfN were cut with a vibratome (Leica VT1000S). VECTASHIELD (Vector Laboratories) was applied onto mounted slices to protect from bleaching. Coronal slices of the PfN were imaged using confocal microscope (Nikon A1R) using 10 x lens and a 20 x oil immersion lens to visualize constitutive EYFP expression.
 
-## Stereotaxic viral inoculation in Vglut2-ires-Cre mice
+### Stereotaxic viral inoculation in Vglut2-ires-Cre mice
 
 Mice were deeply anesthetized with isoflurane in a non-rebreathing system (2.5% induction, 1–1.5% maintenance) and placed in a stereotaxic frame (Kopf Instruments, Tujunga, CA). Temperature was maintained at 35 °C with a heating pad, artificial tears were applied to prevent corneal drying, and animals were hydrated with a bolus of injectable saline (10 ml/kg) mixed with analgesic (2.5 mg/kg Meloxicam). Stereotaxic injections into caudal intralaminar nuclei of thalamus were performed under aseptic conditions. Adeno-associated viruses (AAV) serotype 9 carrying double-floxed fusion genes for hChR2 (E123A) and EYFP under an EF1a promoter (University of Pennsylvania Vector Core, Addgene #35507) were used to transfect PfN neurons. Injection coordinates were from Bregma: lateral, 0.65 mm; posterior, 2.3 mm; and 3.35 mm depth from surface of brain (Rehani et al., 2019). A small hole was bored into the skull with a micro drill bit and a glass pipette was slowly inserted at the PfN coordinates. To minimize backflow, solution was slowly injected; a total volume of 250 nl (>2.5 × 1012 GC/ml) of the AAV constructs was injected over a period of approximately 1.5 min and the pipette was left in place for 5 min before slowly retracting it. Slice physiology experiments were conducted 2–3 weeks after surgery.
 
-## Slice preparation
+### Slice preparation
 
 Mice were deeply anesthetized with ketamine (200 mg/kg)–xylazine (23.32 mg/kg) and perfused through the heart with ice-cold-modified artificial cerebrospinal fluid (ACSF) bubbled with 95% O2–5% CO2, and containing (in mM) 2.5 KCl, 26 NaHCO3, 1.25 Na2HPO4, 0.5 CaCl2, 10 MgSO4, 0.4 ascorbic acid, 10 glucose and 210 sucrose. The brain was removed, and 275 µm thick sagittal slices containing the striatum were cut in ice-cold-modified ACSF. Slices were then submerged in ACSF, bubbled with 95% O2–5% CO2, containing (in mM) 2.5 KCl, 126 NaCl, 26 NaHCO3, 1.25 Na2HPO4, 2 CaCl2, 2 MgSO4 and 10 glucose, and stored at room temperature for at least 1 hr prior to recording.
 
-## Electrophysiological recording
+### Electrophysiological recording
 
 The slices were transferred to the recording chamber mounted on a Zeiss Axioskop 60 X, 0.9 NA fixed-stage microscope and perfused with oxygenated ACSF at 31 °C. During the optogenetic stimulation experiments, in order to guarantee that the effects we measured were generated post-synaptically, the ACSF solution contained (in µM) 10 DNQX to block AMPA receptors, 50 D-APV to block NMDA receptors, 10 gabazine (SR95531) to block GABAA receptors, 2 CGP55845 to block GABAB receptors, 10 atropine to block muscarinic ACh receptors, and 10 mecamylamine to block nicotinic ACh receptors. In the experiments in which optogenetics were used to stimulate cortical or thalamic input we used the same blockers, except for DNQX which was left out. An Olympus 40 X, 0.8 NA water-immersion objective with a 26.5 mm field number (FN) was used to examine the slice using standard infrared differential interference contrast video microscopy. Patch pipette resistance was typically 4–5 MΩ when filled with recording solutions. The junction potential estimated at 7–8 mV was not corrected. In EPSC measurements, the intracellular solution contained (in mM): 127.5 CsCH3SO3, 7.5 CsCl, 10 HEPES, 10 TEA-Cl, 4 phosphocreatine disodium, 0.2 EGTA, 0.21 Na2GTP, and 2 Mg1.5ATP (pH = 7.3 with CsOH, 280–290 mOsm/kg). In the Ca2+ imaging experiments (see below) the internal solution contained (in mM) 135 K-gluconate, 5 KCl, 2.5 NaCl, 5 Na-phosphocreatine, 10 HEPES, 0.1 fluo-4 (Molecular Probes), 0.1 Alexa Fluor 568 (for morphological visualization, Molecular Probes), 0.21 Na2GTP, and 2 Mg1.5ATP, pH 7.3 with KOH (280–290 mOsm/kg). In all other experiments, the intracellular solution contained (in mM) 135.5 KCH3SO3, 5 KCl, 2.5 NaCl, 5 Na-phosphocreatine, 10 HEPES, 0.2 EGTA, 0.21 Na2GTP, and 2 Mg1.5ATP, pH 7.3 with KOH (280–290 mOsm/kg). Electrophysiological recordings were obtained with a MultiClamp 700B amplifier (Molecular Devices, Sunnyvale, CA). Signals were filtered at 10 kHz online, digitized at 10 or 20 kHz and logged onto a personal computer with the Signal 6 software (Cambridge Electronic Design, Cambridge, UK).
 
-## Voltage-perturbation experiments
+### Voltage-perturbation experiments
 
 CINs were held at either –55 mV or –70 mV and were given an 83 second-long voltage command structured as a concatenated sequence of sinusoids from a discrete set of frequencies ranging from 0.2 to 20 Hz with an amplitude of 2 mV (3 or 5 s per frequency, such that each frequency was represented by an integer multiple of its fundamental period). Phase shifts between the voltage sinusoidal and the somatic current response were determined by the location of the peak in the cross-correlation function (CCF) of the two traces (whose units are mV·pA), for each stimulation frequency and for each illumination condition. The impedance at each frequency, |Z(f)|, was calculated from the maximal amplitude of the CCF as |Z(f)| = (2 mV)2/max(CCF) (so that its units are GΩ).
 
-## Optogenetic stimulation
+### Optogenetic stimulation
 
 Optogenetic stimulation was performed with blue-light (470 nm) LED illumination via the objective (Mightex, Toronto, ON, Canada). We used two spatial illumination regimes: (a) proximal illumination wherein an opaque disk with a central pinhole was placed in the back focal plane of the 60 X water-immersion objective such that a ~130 μm diameter region around the soma was illuminated (Tiroshi and Goldberg, 2019), thereby targeting the soma and proximal dendrites; and (b) full-field illumination of the entire slice with a 5 X air objective which excites the soma and the entire dendritic field. In all experiments, LED light intensity was chosen such that stimulation generated comparable current responses for both regimes. We used the same sequence of sinusoids described above, only this time the voltage driving the LED was modulated (the minimal voltage was the LED’s voltage threshold, 40 mV). The phase delays were again calculated according to the latency of the peak of the CCF between the LED voltage command and somatic current. Note, that the phases were corrected by 0.5 (i.e., by π in radians) due to the fact that the ChR2 inward current is in antiphase with the LED’s voltage command. The amplitude response was calculated from the peak value of the CCF, normalized by the amplitude of the 470 nm LED command (i.e. 1 V for proximal illumination and 0.1 V for the full-field illumination, so that its units are picoamperes).
 
 To activate the excitatory synaptic inputs in the Thy1-ChR2 and in the Vglut2-mice a full-field 470 nm LED 1 ms-long pulses were used with GABA, ACh and NMDA receptor blockers in the ACSF. For EPSPs we average 25 trials (3 s intervals, and trials with spikes were omitted). Paired-pulse ratio (PPR) measurements consisted of 64 trials of two pulses (100ms apart, 3 s interval). The mean EPSC amplitude was calculated as the difference between the mean peak current and the mean baseline current that preceded the pulse. PPR was the ratio of the second mean EPSC to the first mean EPSC. To demonstrate that the EPSCs were monosynaptic they were recorded before and after application of 1 µM TTX and 100 µM 4-aminopyridine (4-AP) (Petreanu et al., 2009).
 
-To estimate the kinetics of the ChR2 currents, brief 1ms-long 470 nM LED pulses (1 V for proximal and 0.1 V for the full-field illumination) were repeated 250 times and the resulting average current response was measured, and fit with an alpha function(1)A(e−t/τr−e−t/τd)
+To estimate the kinetics of the ChR2 currents, brief 1ms-long 470 nM LED pulses (1 V for proximal and 0.1 V for the full-field illumination) were repeated 250 times and the resulting average current response was measured, and fit with an alpha function
 
-to estimate the τr and τd, the rise and decay times, respectively.
+$$
+A(e^{−t/\tau_{r}}−e^{−t/\tau_{d}})
+$$
 
-## Two-photon laser scanning microscopy (2PLSM)
+to estimate the $\tau_{r}$ and $\tau_{d}$, the rise and decay times, respectively.
+
+### Two-photon laser scanning microscopy (2PLSM)
 
 The two-photon excitation source was a Chameleon Vision II tunable Ti:Sapphire pulsed laser (Coherent, Santa Clara, CA, USA) tuned to 820 nm. The images were collected with the Femto2D system (Femtonics, Budapest, Hungary) which includes two 3 mm galvo-scanners, one gated GaAsP and one multi-alkaline non-descanned photomultiplier tube for imaging fluo-4 and Alexa Fluor, respectively. Z-stacks of optical sections (spaced 2 µm apart) were collected using 0.2 µm pixels and 15 µs dwell times. Optical and electrophysiological data were obtained using the software package MES (Femtonics), which also integrates the control of all hardware units in the microscope. The software automates and synchronizes the imaging signals and electrophysiological protocols. Data in MATLAB format was extracted from the MES package to personal computers using proprietary code (Femtonics). We recorded spontaneously occurring bAPs with line scans at various distances measured radially from the tip of the soma. Spike triggered averages of the Ca2+ measurements (∆F/F0) were estimated and an alpha-function (Equation 1) was fit to them. The value of the peak of the fitted alpha-function was used as a measure of the size of the spontaneous bAP at that location.
 
-## Drugs and reagents
+### Drugs and reagents
 
 TTX was used to block voltage-activated Na+ currents. Ranolazine was used to block NaP currents. ZD7288 was used to block the HCN current. Gabazine (SR-95531) and CGP 55845 were used to block GABAA and GABAB receptors, respectively. 4-Aminopyridine (4-AP) was used to enable optogenetically-driven monosynaptic release in the presence of TTX. All reagents, drugs and toxins were purchased from either Merck/Sigma-Aldrich (Darmstadt, Germany), Tocris Biosciences (Bristol, UK), MedChemExpress (Monmouth Junction, NJ, USA) or HelloBio (Bristol, UK).
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Data were analyzed and curve fitting was performed using the lsqcurvefit function in MATLAB (MathWorks, Natick, MA, USA) with the parameters listed in Appendix 1. The nonparametric two-tailed Wilcoxon signed-rank test was used for matched samples and the Wilcoxon rank-sum test was used for independent samples. The parametric ANCOVA test was used to test significant changes in the amplitude and phase curves as a function of the natural logarithm of the frequencies (an transformation that spreads out this independent parameter more uniformly). Null hypotheses were rejected if the p-value was below 0.05.
 
 For the TAN and SPN locking to slow wave or spindle peak analysis, confidence intervals (at p-value of 0.01) were calculated based on the distribution of conditional firing rates 1 s before and after the slow wave peak.
 
-## Parameter fitting to the phase delay
+### Parameter fitting to the phase delay
 
-In our previous study (Tiroshi and Goldberg, 2019), we modeled the dendritic arbor as a semi-infinite cable with a homogeneous quasi-linear membrane (i.e. the current density of each nonlinearity is constant along the dendrite). When a segment of length r (measured in units of the dendrite’s space constant) from the soma is activated with a sinusoidal current injection, the dendritic phase delay is given by.(2)ϕd=12πtan-1⁡qp-tan-1⁡sin⁡qrepr-cos⁡qr
+In our previous study (Tiroshi and Goldberg, 2019), we modeled the dendritic arbor as a semi-infinite cable with a homogeneous quasi-linear membrane (i.e. the current density of each nonlinearity is constant along the dendrite). When a segment of length r (measured in units of the dendrite’s space constant) from the soma is activated with a sinusoidal current injection, the dendritic phase delay is given by.
 
-where(3) p=α2+β2+α2 q=α2+β2-α2
+$$
+ϕ_{d}=\frac{1}{2\pi}tan^{-1}⁡\frac{q}{p}-tan^{-1}⁡\frac{sin⁡qr}{e^{pr}-cos⁡qr}
+$$
 
-α and β are functions of frequency and are determined by the linearization of the dendritic nonlinearities as explained in Goldberg et al., 2007 and Remme and Rinzel, 2011, with a negative amplifying parameter, µn, and a positive resonance parameter, µh (See Appendix 1).(4a)α(f)=γR+μn1+(2πfτn)2+μh1+(2πfτh)2(4b)β(f)=2πf[τ−μnτn1+(2πfτn)+μhτh1+(2πfτh)]
+where
 
-Additional parameters include total dendritic conductance (relative to leak), γR, the membrane time constant τ, and the time constants representing the kinetics of the nonlinear dendritic conductances, as explained in Goldberg et al., 2007 and in Remme and Rinzel, 2011. In some cases, we only used the amplifying parameter in the fit (e.g., Figure 1C), and in Figure 3C, we used Equation 2 in the case of a passive dendrite for which αf=1 and βf=2πfτ.
+$$
+ p=\sqrt{\frac{\sqrt{\alpha^{2}+\beta^{2}}+\alpha}{2}} q=\sqrt{\frac{\sqrt{\alpha^{2}+\beta^{2}}-\alpha}{2}}
+$$
 
-Using the same formalism it is easy to show that for the (isopotential) soma with a quasi-linear membrane the phase delay is given by.(5)ϕs=12πtan-1⁡βα
+α and β are functions of frequency and are determined by the linearization of the dendritic nonlinearities as explained in Goldberg et al., 2007 and Remme and Rinzel, 2011, with a negative amplifying parameter, µn, and a positive resonance parameter, µh (See Appendix 1).
 
-corresponding to an amplitude that is equal to α2+β2-1/2 up to a scaling factor. In the main text, we point out that when µn becomes less negative ϕs is reduced. This is because when µn becomes less negative, α is increased (Equation 4a) and β is decreased (Equation 4b).
+$$
+\alpha(f)=\gamma_{R}+\frac{\mu_{n}}{1+(2\pif\tau_{n})^{2}}+\frac{\mu_{h}}{1+(2\pif\tau_{h})^{2}}
+$$
 
-The amplitude attenuation and phase delays generated by the ChR2 kinetics are calculated from the Fourier transform of the alpha function (Equation 1) and are given by.(6a)ACf∝1-τrτd2πf22+2πfτr+τd2-1/2(6b)ϕCf=12πtan-1⁡2πfτr+τd1-τrτd2πf2
+
+
+$$
+\beta(f)=2\pif[\tau−\frac{\mu_{n}\tau_{n}}{1+(2\pif\tau_{n})}+\frac{\mu_{h}\tau_{h}}{1+(2\pif\tau_{h})}]
+$$
+
+Additional parameters include total dendritic conductance (relative to leak), $\gamma_{R}$, the membrane time constant $\tau$, and the time constants representing the kinetics of the nonlinear dendritic conductances, as explained in Goldberg et al., 2007 and in Remme and Rinzel, 2011. In some cases, we only used the amplifying parameter in the fit (e.g., Figure 1C), and in Figure 3C, we used Equation 2 in the case of a passive dendrite for which $\alphaf=1$ and $\betaf=2\pif\tau$.
+
+Using the same formalism it is easy to show that for the (isopotential) soma with a quasi-linear membrane the phase delay is given by.
+
+$$
+ϕ_{s}=\frac{1}{2\pi}tan^{-1}⁡\frac{\beta}{\alpha}
+$$
+
+corresponding to an amplitude that is equal to $\alpha^{2}+\beta^{2}^{-1/2}$ up to a scaling factor. In the main text, we point out that when µn becomes less negative $ϕ_{s}$ is reduced. This is because when µn becomes less negative, α is increased (Equation 4a) and β is decreased (Equation 4b).
+
+The amplitude attenuation and phase delays generated by the ChR2 kinetics are calculated from the Fourier transform of the alpha function (Equation 1) and are given by.
+
+$$
+A_{C}f∝1-\tau_{r}\tau_{d}2\pif^{2}^{2}+2\pif\tau_{r}+\tau_{d}^{2}^{-1/2}
+$$
+
+
+
+$$
+ϕ_{C}f=\frac{1}{2\pi}tan^{-1}⁡\frac{2\pif\tau_{r}+\tau_{d}}{1-\tau_{r}\tau_{d}2\pif^{2}}
+$$

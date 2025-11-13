@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Physiology and Biophysics, University of Washington Seattle United States
+1. Department of Physiology and Biophysics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ Here, we show how we can predictably manipulate the responses of rod and cone ph
 
 ## Results
 
-## Biochemical model
+### Biochemical model
 
 We chose a model architecture based on the biochemical interactions that comprise the phototransduction cascade. We chose this model rather than empirical models (e.g. Clark et al., 2013) because it was more clearly connected to the mechanistic operation of the phototransduction cascade and because it was exactly invertible (see Angueyra et al., 2022 for comparison of the biochemical model with empirical models).
 
@@ -47,7 +47,7 @@ The free parameters consisted of the gain γ with which photons are converted to
 
 We were able to collect responses to a larger set of stimuli from individual rods than cones due to differences in recording techniques. We recorded from rod photoreceptors using suction electrodes, which allow for stable, long-lasting recordings. This allowed us to measure responses to a comprehensive set of stimuli from each individual rod. We recorded from cone photoreceptors using whole-cell patch clamp recordings. Light responses are stable in these recordings for a much shorter time (due to internal dialysis), and consequently we recorded responses to a single stimulus type from each individual cone. Despite these differences in data collection, we identified values for the free parameters in both rod and cone models by numerically minimizing the mean-squared error (MSE) between model predictions and measured responses (see Methods for more details).
 
-## Fitting rod phototransduction models
+### Fitting rod phototransduction models
 
 We measured responses of mouse and macaque rod photoreceptors to a set of stimuli consisting of a family of brief flashes of different strengths, flashes delivered at several times relative to the onset and offset of a light step, and a ‘variable mean noise stimulus’ consisting of Gaussian noise with periodic changes in mean intensity (Figure 1B; see Methods for experimental details). The variable mean noise stimulus approximates the large and frequent changes in input that are characteristic of natural vision (Frazor and Geisler, 2006). These large (up to 30-fold) changes in mean intensity strongly engage photoreceptor adaptation, and the superimposed Gaussian noise probes sensitivity to rapidly varying inputs.
 
@@ -57,15 +57,171 @@ Figure 1B compares the predicted and measured responses of a mouse rod photorece
 
 To arrive at consensus models for rod transduction currents, we fit measured responses from multiple rods from either primate or mouse simultaneously. We first used the measured dark current and the previously measured relation between current and cGMP (Equation 4 in Figure 1; Rieke and Baylor, 1996) to specify the cGMP concentration in darkness for each cell. We then allowed γ to vary between cells to account for differences in sensitivity. The remaining parameters (σ, η, and KGC) were constrained to have the same value across cells. We then numerically identified best values for these parameters by minimizing the MSE between model predictions and the set of recorded rod responses. These consensus models provide our best estimate of how an unrecorded cell of a given type will respond; these models provide the foundation for the manipulations of the photoreceptor responses in Figures 6–10. Consensus parameters for mouse and primate rods were very similar (see Table 1).
 
-## Fitting cone phototransduction models
+**Table 1.**
+ Parameters and best fit consensus values for biophysical phototransduction models for each cell type (see Methods for fitting details).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Parameter</th>
+      <th rowspan="2">Symbol</th>
+      <th rowspan="2">Units</th>
+      <th rowspan="2">Type</th>
+      <th colspan="4">Photoreceptor type</th>
+    </tr>
+    <tr>
+      <th>Primatecone</th>
+      <th>Mousecone</th>
+      <th>Primaterod</th>
+      <th>Mouserod</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Opsin decay rate const.</td>
+      <td>σ</td>
+      <td>s−1</td>
+      <td>Free</td>
+      <td>22</td>
+      <td>9.74</td>
+      <td>7.07</td>
+      <td>7.66</td>
+    </tr>
+    <tr>
+      <td>PDE decay rate const.</td>
+      <td>ϕ</td>
+      <td>s−1</td>
+      <td>Constrained (φ = σ)</td>
+      <td>22</td>
+      <td>9.74</td>
+      <td>7.07</td>
+      <td>7.66</td>
+    </tr>
+    <tr>
+      <td>PDE dark activation rate</td>
+      <td>η</td>
+      <td>s−1</td>
+      <td>Free</td>
+      <td>2000</td>
+      <td>761</td>
+      <td>2.53</td>
+      <td>1.62</td>
+    </tr>
+    <tr>
+      <td>Dark current</td>
+      <td>ID</td>
+      <td>pA</td>
+      <td>Measured</td>
+      <td>−240 to −428</td>
+      <td>−41 to −80</td>
+      <td>−19 to −37</td>
+      <td>−16 to −24</td>
+    </tr>
+    <tr>
+      <td>cGMP concentration in dark</td>
+      <td>GD</td>
+      <td>μM</td>
+      <td>Derived</td>
+      <td>28.7 to 35</td>
+      <td>15.9 to 20</td>
+      <td>12.1 to 15.0</td>
+      <td>11.4 to 13.1</td>
+    </tr>
+    <tr>
+      <td>cGMP-to-current constant</td>
+      <td>k</td>
+      <td>pAμM−3</td>
+      <td>Fixed</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>cGMP channel cooperativity</td>
+      <td>n</td>
+      <td>Unitless</td>
+      <td>Fixed</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Ca2+ concentration in dark</td>
+      <td>CD</td>
+      <td>μM</td>
+      <td>Fixed</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ca2+ extrusion rate constant</td>
+      <td>β</td>
+      <td>s−1</td>
+      <td>Fixed (rods)Free (cones)</td>
+      <td>9</td>
+      <td>2.64</td>
+      <td>25</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Cooperativity of GC Ca2+ dependence</td>
+      <td>m</td>
+      <td>Unitless</td>
+      <td>Fixed</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Affinity of GC Ca2+ dependence</td>
+      <td>KGC</td>
+      <td>μM</td>
+      <td>Free</td>
+      <td>0.5</td>
+      <td>0.4</td>
+      <td>0.5</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Opsin gain</td>
+      <td>γ</td>
+      <td>Unitless</td>
+      <td>Free</td>
+      <td>10</td>
+      <td>10</td>
+      <td>4.2</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fitting cone phototransduction models
 
 Due to the limited duration of the cone recordings, we focused on the variable mean noise stimulus. This stimulus was the most effective in constraining cone model parameters, likely because it strongly engages adaptation and thoroughly probes response dynamics.
 
 We identified consensus cone models by fitting measured responses to the variable mean noise stimulus from multiple cones simultaneously, as described above for the rods. Four parameters (σ, η, KGC, and β) were constrained to have the same value across cones, while γ was allowed to vary across cells. Consensus parameters for mouse and primate cones differed substantially, reflecting the ~twofold faster kinetics of primate cone responses (flash response time-to-peak is ~35 ms in primate cones, and ~70 ms in mouse cones; see Table 1). For primate cones, performance using these consensus parameters was very similar to that from the parameters in Angueyra et al., 2022; for consistency we used these published parameters for our consensus model.
 
-## Model performance
+### Model performance
 
 Figure 2 tests the performance of the consensus models for both rod and cone photoreceptors. We focused on the variable mean noise stimulus since it probes responses to rapid stimulus variations and large changes in mean intensity that strongly engage photoreceptor nonlinearities. For each individual cell, we specified the dark cGMP concentration (GD) using the measured dark current and allowed the overall gain γ to vary; the remaining parameters were set to the consensus model values in Table 1. The resulting models (red) captured the measured responses (black) well.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig2-v1.jpg)
+
+**Figure 2.:** (A) Comparison of measured responses (black) with predictions of full (red) and linear model (blue) to variable mean noise stimulus (gray). Full model responses used consensus parameters from fitting responses of multiple cells of each type simultaneously, with the dark current and sensitivity allowed to vary between cells (see Methods and Table 1). The linear model was generated from fitting the low-contrast responses of the full model (see Methods). Insets expand regions in gray boxes. Linear model parameters (see Equation 7) were α = 0.31, τR = 10.6 ms, and τD = 23.6 ms for the primate cone, α = 0.031, τR = 31.6 ms, and τD = 56.7 ms for the mouse cone, α = 5.3, τR = 141 ms, and τD = 208 ms for the primate rod, and α = 4.7, τR = 115 ms, and τD = 185 ms for the mouse rod, (B) Fraction of variance explained for the full model fit to each cell individually (y-axis) plotted against that for the consensus model that has fixed parameters across cells except for the dark current and sensitivity. Means ± SDs were 0.90 ± 0.04 (specific model) and 0.87 ± 0.05 (consensus model) for six primate cones, 0.92 ± 0.02 and 0.94 ± 0.02 for six mouse cones, 0.94 ± 0.02, 0.94 ± 0.02 and 0.94 ± 0.02 for six primate rods and 0.93 ± 0.03 and 0.93 ± 0.03 for eight mouse rods. Data for Figures 1-5 is available at https://doi.org/10.5061/dryad.q2bvq83vg.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Generalization across stimuli. Responses of primate and mouse rods were fit to the variable mean noise stimulus only and model performance was evaluated for responses to the flash family and flashes and steps, using the fraction of variance explained to evaluate the fits (see Figure 1B). The generalization performance to stimuli not included in the fit (y-axis) is compared to performance when the model is fit to all stimuli (x-axis). Means ± SDs were 0.92 ± 0.05 (generalize) and 0.94 ± 0.03 (fit all) for six primate rods and 0.90 ± 0.04 and 0.92 ± 0.02 for eight mouse rods. (B) Generalization across cells. Models were fit to the variable mean noise stimulus. The performance of each cell was evaluated for a model in which all cells were fit (x-axis), or in which the test cell was excluded from the fit (y-axis). γ was allowed to vary for the held-out cell while other parameters were determined by fitting the remaining data as for the consensus models. Means ± SDs were 0.88 ± 0.04 (hold out) and 0.87 ± 0.05 (fit all) for six primate cones, 0.90 ± 0.02 and 0.91 ± 0.02 for six mouse cones, 0.96 ± 0.02 and 0.96 ± 0.02 for six primate rods, and 0.95 ± 0.02 and 0.95 ± 0.02 for eight mouse rods.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Linear models were generated by fitting low-contrast responses to the full model for each cell. Full models and linear models were optimized with a single-scale factor for each cell (γ for the full model and α for the linear model in Equation 7). The fraction of variance explained was computed for the variable mean noise stimuli as in Figure 2. Means ± SDs were 0.63 ± 0.15 (linear) and 0.87 ± 0.05 (consensus) for six primate cones, 0.68 ± 0.04 and 0.91 ± 0.02 for six mouse cones, 0.86 ± 0.02 and 0.96 ± 0.02 for six primate rods, and 0.86 ± 0.04 and 0.95 ± 0.02 for eight mouse rods.
 
 For each recorded cell, the consensus models captured more than 80% of the variance of the responses (Figure 2B); on average these models captured ~90% of the variance. We compared the performance of the consensus models with that of models fit to each cell individually. Consensus models and models fit to individual cells performed similarly (Figure 2B). Models also generalized well across stimuli and to cells that did not contribute to the fits (Figure 2—figure supplement 1). This suggests that the consensus models can be used to predict responses of unrecorded cells.
 
@@ -73,7 +229,7 @@ Figure 2 also shows predictions of a linear phototransduction model (blue) (see 
 
 Figures 1 and 2 indicate that the known components of the phototransduction cascade, with appropriate parameters, can account for the full time course of the rod and cone photocurrents, including the nonlinearities in the photoreceptor responses. These models will not capture slow forms of adaptation that might become important, for example, at high light levels; for the range of stimuli used here, such slow adaptation contributes little to the photoreceptor currents (e.g. Angueyra et al., 2022). Our central goal was to use these models to design stimuli that permit predictable manipulations of the photoreceptor responses. Hence, more important than the accuracy of the forward model is the ability to predict stimuli the elicit desired responses. We directly evaluate these stimulus predictions below.
 
-## Model inversion
+### Model inversion
 
 In this section, we show that the model illustrated in Figure 1A can be exactly inverted to identify the stimulus that corresponds to a specific desired photoreceptor response. The resulting unique correspondence between photocurrent and stimulus applies to the entire stimulus waveform, including the mean intensity and modulations about the mean. In other words, the result of model inversion is an estimate of the full stimulus in real units (isomerizations per second) corresponding to the desired response.
 
@@ -101,13 +257,13 @@ Variance explained, as in Figure 4B, mixes low temporal frequencies for which we
 
 The ability to convert photoreceptor responses to input stimuli is useful in several ways (see Discussion). Our focus in the remainder of the Results is on using this approach to design stimuli that alter the photoreceptor responses in specific ways, such as negating the impact of adaptation and shaping response kinetics.
 
-## Light-adaptation clamp examples
+### Light-adaptation clamp examples
 
 Figure 6 illustrates how we can use the model inversion procedure to predictably manipulate photoreceptor responses, in this case using the cone model and (for simplicity) a sinusoidal stimulus. Unlike Figure 4 where we invert measured responses, we now start with a desired or target response. For the specific applications described below, the aim was to remove nonlinearities in photoreceptor responses and hence we generate the target response from a linear phototransduction model. As in Figure 2, the linear model used to generate the target response was obtained by fitting responses of the full phototransduction model to low-contrast noise stimuli at a specified mean light level (see Methods). The output of this linear model provides an estimate of how the photoreceptors would respond if we could eliminate their nonlinear properties. The response of the linear model to a sinusoidal stimulus is, as expected, another sinusoid (Figure 6, second panel from left). The response of real cones, and of the full cone model, deviates strongly from a sinusoid (black trace in the far right panel; Angueyra et al., 2022).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig6-v1.jpg)
 
-**Figure 6.:** Starting with an initial stimulus (left), we generate a target or desired response (second panel from right).In this case, the target was chosen to be the response of a linear phototransduction model; for a sinusoidal input, a linear model produces a sinusoidal output. We use the (linear) target response as the input to the inverse phototransduction model and identify the stimulus required to elicit that response (red in third panel from left). Substantial stimulus modifications are required for the full model to produce a sinusoidal output. Finally, we confirm that the modified stimulus works as designed in direct recordings, in this case from a primate cone (right panel). Linear model parameters used to compute the target response (see Equation 7) were α = 0.31, τ = 10.6 ms, and Rτ = 23.6 ms.D
+**Figure 6.:** Starting with an initial stimulus (left), we generate a target or desired response (second panel from right).In this case, the target was chosen to be the response of a linear phototransduction model; for a sinusoidal input, a linear model produces a sinusoidal output. We use the (linear) target response as the input to the inverse phototransduction model and identify the stimulus required to elicit that response (red in third panel from left). Substantial stimulus modifications are required for the full model to produce a sinusoidal output. Finally, we confirm that the modified stimulus works as designed in direct recordings, in this case from a primate cone (right panel). Linear model parameters used to compute the target response (see Equation 7) were α = 0.31, τR = 10.6 ms, and τD = 23.6 ms.
 
 Adaptive nonlinearities in phototransduction cause the responses to sinusoidal light inputs to deviate from sinusoids. These time-dependent nonlinearities operate sufficiently rapidly to shape each cycle of the response, causing responses to decreases in light intensity to be larger than those to increases and causing the responses to light-to-dark transitions to be slower than those to dark-to-light transitions. To eliminate the impact of these nonlinear response properties, we seek a stimulus that will cause the response of the full model to match the target response – that is a stimulus that ‘clamps’ the cone response to the target. The model inversion process identifies such a stimulus directly (red trace in second panel from right). Our primary interest is not in the shape of the stimulus itself but instead in the response that the stimulus produces. The right panel in Figure 6 compares measured cone responses to the original (black) and modified (red) stimuli; responses to the modified stimulus are considerably more sinusoidal than those to the original stimulus, as quantified in more detail below.
 
@@ -115,17 +271,17 @@ The approach outlined in Figure 6 is exact in principle, but could fail due eith
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig7-v1.jpg)
 
-**Figure 7.:** (A) Photoreceptor responses to original sinusoidal stimuli (bottom, black) and modified stimuli (red). Dashed lines in the bottom panels are best-fitting sinusoids for reference. Original and modified stimuli are shown above the recorded responses. Linear model parameters used to compute the target responses (see Equation 7) were α = 0.31 (20,000 R*/s) and 1.65 (5000 R*/s), τ = 10.6 and 15.2 ms, and Rτ = 23.6 and 18.1 ms for the primate cone, Dα = 0.031 and 0.13, τ = 31.6 and 26.7 ms, and Rτ = 56.7 and 50.3 ms for the mouse cone, Dα = 5.3, τ = 141 ms, and Rτ = 208 ms for the primate rod, and Dα = 4.7, τ = 115 ms, and Rτ = 185 ms for the mouse rod. (DB) Mean-squared error between measured responses and best-fitting sinusoids for modified stimuli plotted against that for original stimuli for each recorded cell. Points with error bars are means ± SDs. These values are 0.15 ± 0.05 (modified) and 0.02 ± 0.02 (original) at 20,000 R*/s and 0.08 ± 0.06 and 0.03 ± 0.02 at 5000 R*/s for six primate cones, 0.10 ± 0.01 and 0.04 ± 0.03 (20,000 R*/s) and 0.06 ± 0.03 and 0.02 ± 0.01 (5000 R*/s) for five mouse cones, 0.14 ± 0.08 and 0.05 ± 0.01 for six primate rods, and 0.16 ± 0.04 and 0.03 ± 0.01 for seven mouse rods.
+**Figure 7.:** (A) Photoreceptor responses to original sinusoidal stimuli (bottom, black) and modified stimuli (red). Dashed lines in the bottom panels are best-fitting sinusoids for reference. Original and modified stimuli are shown above the recorded responses. Linear model parameters used to compute the target responses (see Equation 7) were α = 0.31 (20,000 R*/s) and 1.65 (5000 R*/s), τR = 10.6 and 15.2 ms, and τD = 23.6 and 18.1 ms for the primate cone, α = 0.031 and 0.13, τR = 31.6 and 26.7 ms, and τD = 56.7 and 50.3 ms for the mouse cone, α = 5.3, τR = 141 ms, and τD = 208 ms for the primate rod, and α = 4.7, τR = 115 ms, and τD = 185 ms for the mouse rod. (B) Mean-squared error between measured responses and best-fitting sinusoids for modified stimuli plotted against that for original stimuli for each recorded cell. Points with error bars are means ± SDs. These values are 0.15 ± 0.05 (modified) and 0.02 ± 0.02 (original) at 20,000 R*/s and 0.08 ± 0.06 and 0.03 ± 0.02 at 5000 R*/s for six primate cones, 0.10 ± 0.01 and 0.04 ± 0.03 (20,000 R*/s) and 0.06 ± 0.03 and 0.02 ± 0.01 (5000 R*/s) for five mouse cones, 0.14 ± 0.08 and 0.05 ± 0.01 for six primate rods, and 0.16 ± 0.04 and 0.03 ± 0.01 for seven mouse rods.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig8-v1.jpg)
 
-**Figure 8.:** (A) Responses to a brief light flash delivered before and during a step in light intensity. For the original stimuli, flashes delivered before and during the step are identical, and the resulting responses decrease in amplitude ~twofold (summarized on x-axis of bottom panels). Red traces show responses to stimuli designed to compensate for the adaptation produced by the change in light intensity (following approach in Figure 6). Linear model parameters used to compute the target responses (see Equation 7) were α = 1.65, τ = 15.2 ms, and Rτ = 18.1 ms for the primate cone, Dα = 0.13, τ = 26.7 ms, and Rτ = 50.3 ms for the mouse cone, Dα = 5.3, τ = 141 ms, and Rτ = 208 ms for the primate rod, and Dα = 4.7, τ = 115 ms, and Rτ = 185 ms for the mouse rod. (DB) Summary of gain changes (amplitude of response during the step divided by that of response prior to step) for responses to modified (y-axis) and original (x-axis) stimuli. Open circles show the mean ± SD; values are 1.2 ± 0.2 (modified) and 0.52 ± 0.06 (original) for 10 primate cones, 0.8 ± 0.1 and 0.32 ± 0.05 for 5 mouse cones, 1.3 ± 0.3 and 0.6 ± 0.1 for 7 primate rods, and 1.0 ± 0.1 and 0.47 ± 0.08 for 7 mouse rods.
+**Figure 8.:** (A) Responses to a brief light flash delivered before and during a step in light intensity. For the original stimuli, flashes delivered before and during the step are identical, and the resulting responses decrease in amplitude ~twofold (summarized on x-axis of bottom panels). Red traces show responses to stimuli designed to compensate for the adaptation produced by the change in light intensity (following approach in Figure 6). Linear model parameters used to compute the target responses (see Equation 7) were α = 1.65, τR = 15.2 ms, and τD = 18.1 ms for the primate cone, α = 0.13, τR = 26.7 ms, and τD = 50.3 ms for the mouse cone, α = 5.3, τR = 141 ms, and τD = 208 ms for the primate rod, and α = 4.7, τR = 115 ms, and τD = 185 ms for the mouse rod. (B) Summary of gain changes (amplitude of response during the step divided by that of response prior to step) for responses to modified (y-axis) and original (x-axis) stimuli. Open circles show the mean ± SD; values are 1.2 ± 0.2 (modified) and 0.52 ± 0.06 (original) for 10 primate cones, 0.8 ± 0.1 and 0.32 ± 0.05 for 5 mouse cones, 1.3 ± 0.3 and 0.6 ± 0.1 for 7 primate rods, and 1.0 ± 0.1 and 0.47 ± 0.08 for 7 mouse rods.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig9-v1.jpg)
 
-**Figure 9.:** (A) Responses of primate cones and mouse rods to brief flashes (black) and stimuli designed to slow down responses slightly (left) and more substantially (right) (red). Traces show the mean ± SEM (four cells for upper left, three for upper right, five for both bottom panels). Thin traces show the target responses used to generate the modified stimuli. (B) As in A for stimuli designed to speed up responses (measured traces show mean ± SEM for four cones in the top panel and three rods in the bottom panel). (C) Measured change in time-to-peak plotted against predicted change for a variety of manipulations of kinetics as in A and B. Linear model parameters used to compute the target responses (see Equation 7) were α = 1.65, τ = 15.2 ms, and Rτ = 18.1 ms for the primate cone, Dα = 0.13, τ = 26.7 ms, and Rτ = 50.3 ms for the mouse cone, Dα = 5.3, τ = 141 ms, and Rτ = 208 ms for the primate rod, and Dα = 4.7, τ = 115 ms, and Rτ = 185 ms for the mouse rod.D
+**Figure 9.:** (A) Responses of primate cones and mouse rods to brief flashes (black) and stimuli designed to slow down responses slightly (left) and more substantially (right) (red). Traces show the mean ± SEM (four cells for upper left, three for upper right, five for both bottom panels). Thin traces show the target responses used to generate the modified stimuli. (B) As in A for stimuli designed to speed up responses (measured traces show mean ± SEM for four cones in the top panel and three rods in the bottom panel). (C) Measured change in time-to-peak plotted against predicted change for a variety of manipulations of kinetics as in A and B. Linear model parameters used to compute the target responses (see Equation 7) were α = 1.65, τR = 15.2 ms, and τD = 18.1 ms for the primate cone, α = 0.13, τR = 26.7 ms, and τD = 50.3 ms for the mouse cone, α = 5.3, τR = 141 ms, and τD = 208 ms for the primate rod, and α = 4.7, τR = 115 ms, and τD = 185 ms for the mouse rod.
 
-## Sinusoidal stimuli
+### Sinusoidal stimuli
 
 We start with the sinusoidal stimuli illustrated in Figure 6. As predicted by the model, responses of both rod and cone photoreceptors to high-contrast sinusoidal light inputs are strongly nonsinusoidal: responses to decreases in light intensity are larger than those to increases, and responses to dark-to-light transitions are faster than those to corresponding light-to-dark transitions (Figure 7A). These nonlinearities in the photoreceptor responses are clear from the substantial deviations between the measured responses and the best-fitting sinusoids (dashed lines in Figure 7A). These response asymmetries are important in interpreting responses of downstream visual neurons to similar stimuli. For example, asymmetries in signaling of On and Off ganglion cells are often attributed to differences in On and Off retinal circuits (e.g. Stockman et al., 2014), and the possibility that they arise at least in part in the photoreceptors themselves is rarely considered.
 
@@ -133,7 +289,7 @@ Responses to the modified stimuli (red traces in Figure 7A) were much closer to 
 
 Figure 7 demonstrates that the adaptive nonlinearities in phototransduction that distort responses to sinusoidal stimuli can largely be compensated for, resulting in near-sinusoidal responses. These or similar modified stimuli could in turn be used to test the contribution of nonlinearities in phototransduction to asymmetries in responses of On and Off retinal neurons to sinusoidal stimuli such as drifting or contrast-reversing gratings.
 
-## Steps and flashes
+### Steps and flashes
 
 As a second example of the light-adaptation clamp procedure, we generated stimuli that compensate for the adaptive changes in gain of photoreceptor responses produced by changes in mean light intensity. These gain changes cause responses to a fixed strength flash to become smaller and faster when the mean light intensity increases.
 
@@ -141,7 +297,7 @@ The control stimulus consisted of identical flashes delivered at two mean light 
 
 The red traces in Figure 8A (bottom) show responses to the stimuli designed to compensate for adaptation. Responses to the test flashes had similar amplitudes at the low and high mean light level. This similarity is held across cells (the ratio of the response amplitudes is plotted on the y-axes in Figure 8B). The change in gain produced by the background was reduced in all photoreceptor types. Responses to the modified stimuli in some cases (e.g. the mouse cones) show a systematic dependence on background, likely due to differences in sensitivity between the cells used to fit and test the model. Nonetheless, the modified stimuli compensated for much of the reduction in response gain produced by adaptation.
 
-## Altering kinetics
+### Altering kinetics
 
 As for adaptation, separating the contributions of phototransduction and post-transduction circuit mechanisms to the kinetics of responses of downstream cells is difficult. Hence, we sought to use the model inversion process to predictably alter the kinetics of the photoreceptor responses, which could help elucidate the impact of photoreceptor kinetics on downstream signaling. For example, compensating for the speeding of photoreceptor responses that occurs with increasing light intensity would isolate the kinetics of the post-transduction circuitry and determine if they change independently from the changes in kinetics of the photoreceptor responses.
 
@@ -151,7 +307,7 @@ The top panels in Figure 9A show original (black) and modified (red) stimuli des
 
 Speeding up the responses is similarly straightforward in principle but more difficult in practice. Stimuli that speed up the response consist of a brief increment followed by a decrement – which together cause all but the initial rising phase of the response to cancel. In practice, this approach is limited because the contrast of the decrement cannot exceed 100%. Nonetheless, speeding up responses by 20–30% is possible, and stimuli predicted to achieve this are shown in Figure 9B. Measured responses sped as predicted, although the falling phase of the response, particularly for mouse rods, was faster than the predicted response. This again likely reflects differences in the specific cells used to fit and test the model. As for slowing responses, the time-to-peak of the measured responses closely follows predictions (Figure 9C).
 
-## Impact of cone adaptation on ganglion cell responses
+### Impact of cone adaptation on ganglion cell responses
 
 The overall goal of this project is to separate the contributions of phototransduction and post-transduction circuit mechanisms to downstream visual signaling. Here, we show two examples of how the ability to manipulate photoreceptor responses can reveal adaptational mechanisms at different locations in retinal circuits.
 
@@ -159,7 +315,7 @@ First, we compare responses of primate cones and downstream retinal neurons to t
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/93795/elife-93795-fig10-v1.jpg)
 
-**Figure 10.:** (A) Left: schematic of retinal circuit. Right: responses of a cone (top), horizontal cell (middle), and On parasol ganglion cell (bottom) to the step and flash protocol for both original and modified stimuli. Stimuli were delivered from a computer monitor at a refresh rate of 60 Hz and hence appear different from those in Figure 8. (B) Summary of experiments like those in A, plotting the change in gain for the modified stimuli (the ratio of the amplitude of the response to the flash during the step that before) against that for the original stimuli. Means ± SDs were 1.2 ± 0.2 (modified) 0.52 ± 0.06 (original) for 10 cones and 1.2 ± 0.1 and 0.6 ± 0.2 for 5 parasol RGCs. (C) Left: horizontal cell responses to a sinusoidal stimulus (black) and stimulus modified to generate sinusoidal cone responses (red, see also Figures 6 and 7). Right: trajectories of responses to one stimulus cycle. The response to the original stimulus follows different trajectories during the depolarizing (a→b→c) phase compared to the hyperpolarizing (c→d→a) phase. (D) Summary of results from three horizontal cells and three cone bipolar cells. Time-dependent nonlinearities were measured from the area enclosed by response trajectories as in C. Means ± SDs were 0.08 ± 0.05 (area modified) and 0.22 ± 0.08 (area original) across all six cells. Linear model parameters used to compute the target responses (see Equation 7) were α = 1.65, τ = 15.2 ms, and Rτ = 18.1 ms.D
+**Figure 10.:** (A) Left: schematic of retinal circuit. Right: responses of a cone (top), horizontal cell (middle), and On parasol ganglion cell (bottom) to the step and flash protocol for both original and modified stimuli. Stimuli were delivered from a computer monitor at a refresh rate of 60 Hz and hence appear different from those in Figure 8. (B) Summary of experiments like those in A, plotting the change in gain for the modified stimuli (the ratio of the amplitude of the response to the flash during the step that before) against that for the original stimuli. Means ± SDs were 1.2 ± 0.2 (modified) 0.52 ± 0.06 (original) for 10 cones and 1.2 ± 0.1 and 0.6 ± 0.2 for 5 parasol RGCs. (C) Left: horizontal cell responses to a sinusoidal stimulus (black) and stimulus modified to generate sinusoidal cone responses (red, see also Figures 6 and 7). Right: trajectories of responses to one stimulus cycle. The response to the original stimulus follows different trajectories during the depolarizing (a→b→c) phase compared to the hyperpolarizing (c→d→a) phase. (D) Summary of results from three horizontal cells and three cone bipolar cells. Time-dependent nonlinearities were measured from the area enclosed by response trajectories as in C. Means ± SDs were 0.08 ± 0.05 (area modified) and 0.22 ± 0.08 (area original) across all six cells. Linear model parameters used to compute the target responses (see Equation 7) were α = 1.65, τR = 15.2 ms, and τD = 18.1 ms.
 
 Second, we recorded responses of primate horizontal cells and cone bipolar cells to sinusoidal stimuli and stimuli designed to produce sinusoidal cone transduction currents (as in Figures 6 and 7). Horizontal cell responses to both stimuli showed clear nonlinearities (Figure 10C, left); specifically, responses to the increment and decrement phases of the stimuli were highly asymmetric. The depolarizing and hyperpolarizing phases of the responses, however, appeared more symmetrical for the modified stimuli (red). The change in shape can be visualized by plotting the trajectories of one cycle of the responses vs the stimulus (Figure 10C, right). For the original sinusoid, the depolarizing (a→b→c) and hyperpolarizing (c-→d→a) response phases differed considerably. These differences were much smaller for the modified stimuli. This difference in response shape held across cells (Figure 10D). In this case, compensating for nonlinearities in cone phototransduction reveals an additional, largely time-independent, nonlinear process shaping horizontal and cone bipolar responses. Furthermore, it disentangles contributions of phototransduction and post-transduction processes to time-dependent and time-independent nonlinearities in the horizontal and bipolar responses.
 
@@ -169,49 +325,49 @@ Figure 10 shows two relatively simple examples of how the stimulus design approa
 
 Rod and cone photoreceptors play an essential role in the responses of downstream visual neurons and visual perception. Refining this picture to identify the specific contributions of photoreceptors and post-photoreceptor circuitry to the computations that underlie vision has been difficult. Here, we have created and tested a tool that allows predictable manipulations of the photoreceptor responses to reveal their role in downstream signaling. Direct tests indicate that this tool is effective, and that it generalizes well across photoreceptors and stimuli. We envision this being useful to causally test how responses of downstream cells or perception are shaped by specific aspects of the photoreceptor responses such as adaptation. We have described in Methods procedures that should help translate this tool to other laboratories.
 
-## Limitations
+### Limitations
 
-## Model validation
+#### Model validation
 
 The procedure that we use to invert the phototransduction cascade is only as good as the model upon which it is based. Thus, a focus of the experiments presented here was to test a range of manipulations for stimuli and photoreceptors that did not contribute to the model fits. We did this by fitting consensus models to recordings from one set of photoreceptors of a given type, and then testing the stimuli generated by these models on different photoreceptors from different retinas. Discrepancies between the predicted and measured responses to these new stimuli reflect both failures of the model inversion and cell-to-cell variability. Systematic differences between predicted and measured responses were relatively small, and most of the differences appear to reflect variability between cells (e.g. due to cell-to-cell differences in sensitivity).
 
-## Focus on phototransduction
+#### Focus on phototransduction
 
 Our model describes the relationship between light inputs and phototransduction currents. We restricted our consideration to photocurrents rather than photoreceptor synaptic output because the latter is shaped by several mechanisms (e.g. electrical coupling between photoreceptors Copenhagen and Owen, 1976; Detwiler and Hodgkin, 1979; Schwartz, 1976 and horizontal feedback Baylor et al., 1971) that are less well understood than phototransduction. A similar approach could be extended beyond phototransduction to include electrical properties of the photoreceptor inner segment and photoreceptor output synapses when additional quantitative information about these mechanisms is available. The models we develop here will be important in such future work, as they will allow isolation of mechanisms operating after phototransduction (e.g. in Figure 10C).
 
-## Photopigment bleaching
+#### Photopigment bleaching
 
 The model that we used does not consider photopigment bleaching and regeneration via the pigment epithelium. We omitted these aspects of photoreceptor function because the experiments to which we fit and test the model require that we remove the pigment epithelium. We restricted total light exposure in these experiments to minimize bleaching, and this limits the range of light levels over which the model is applicable. This is less of a concern for rods, where rod saturation occurs for light levels at which a small fraction of the rod pigment is bleached, and correspondingly our models cover most or all of the range of rod signals. For cones, the model is limited to light levels <50,000 R*/s (similar to or a bit brighter than typical indoor lighting conditions).
 
-## Speeding vs slowing responses
+#### Speeding vs slowing responses
 
 Not all manipulations of the photoreceptor responses are equally easily achieved. Speeding responses is particularly difficult because it requires increasing the amplitude of high temporal frequencies, and the ability to do that is limited by the requirement that light intensities not assume negative values. This means that low-contrast stimuli can be sped more than high-contrast stimuli.
 
-## Calibrations
+#### Calibrations
 
 The accuracy of the model predictions depends critically on accurate light calibrations. We have detailed our procedure in Methods and supplied our calibration code (https://github.com/chrischen2/photoreceptorLinearization, copy archived at Chen, 2024). With consistent calibrations, the approaches we use here should translate directly across laboratories and to in vivo physiological or perceptual studies.
 
-## Applications
+### Applications
 
-## ‘Front end’ for encoding models for downstream responses and perception
+#### ‘Front end’ for encoding models for downstream responses and perception
 
 Two broad classes of encoding models have been used to describe responses of retinal ganglion cells and cells in downstream visual areas. Empirical models take light stimuli as inputs and convert these, through a series of linear and nonlinear elements, to predicted responses (Chichilnisky, 2001; Pillow et al., 2008). Time-dependent nonlinearities are particularly hard to capture in such models, and few existing models account for them. CNN models similarly take light input and convert it, via the learned CNN weights, to predicted neural responses (McIntosh et al., 2016; Turner et al., 2019). Like empirical models, time-dependent nonlinearities such as adaptation are generally not well described by such models. As a result, these models work best when stimulus parameters such as mean light intensity do not change.
 
 The photoreceptor models described here convert light inputs to photoreceptor responses, capturing time-dependent nonlinearities in this process. Empirical or CNN models could then be used to describe the conversion of photoreceptor signals to downstream neural responses. This architecture – a phototransduction model front end followed by an empirical model – should decrease the demand placed on the empirical model and improve the ability to capture responses to stimuli that strongly engage photoreceptor adaptation. Hybrid models of this type indeed show improved performance in predicting retinal ganglion cell responses across light levels (Idrees et al., 2024). Models for visual perception could similarly incorporate a photoreceptor front end, and by doing so directly test which aspects of perception can be explained by phototransduction and which are due to downstream processing.
 
-## ‘Back end’ to decoding models
+#### ‘Back end’ to decoding models
 
 Approaches to decode neural responses and estimate stimulus properties could also benefit from the photoreceptor models. Current decoding approaches either empirically fit response–stimulus relationships or invert encoding models to compute the likelihood of particular stimuli given the neural response (Bialek et al., 1991; Brackbill et al., 2020; Wu et al., 2024). In either case, decoding in the context of stimuli that strongly engage time-dependent nonlinearities has proven difficult.
 
 Incorporating the inverse photoreceptor model into decoding approaches should improve decoding performance. Specifically, existing decoding approaches could be used to estimate the photoreceptor signal from downstream neural responses (e.g. those of retinal ganglion cells), and then the inverse phototransduction model would convert the estimated photoreceptor signals to estimated stimuli. This again could decrease the demand placed on the decoding model. For example, under conditions in which much of retinal adaptation is largely accounted for by adaptation in the photoreceptors, the model used to estimate photoreceptor responses from retinal ganglion cell responses would not need to incorporate adaptive nonlinearities. Instead, this model could be fixed even as mean light levels change, and the inverse photoreceptor model would account for photoreceptor adaptation. A ganglion cell→photoreceptor decoding model should be simpler to fit and hence perform better than a full ganglion cell→stimulus model.
 
-## Complementing genetic approaches
+#### Complementing genetic approaches
 
 Genetic manipulations provide another approach to alter photoreceptor responses and characterize the impact on responses of downstream visual neurons or behavior. Such approaches have the advantage of associating specific molecular components with alterations in vision – for example the role of arrestin (Burns et al., 2006; Xu et al., 1997) and rhodopsin kinase (Arshavsky, 2002; Wilden et al., 1986; Zhao et al., 1995) in specific forms of stationary night blindness (Dryja, 2000; Zeitz et al., 2014). But interpretation of these genetic manipulations can be limited by compensatory changes.
 
 The approach that we introduce here complements genetic manipulations in at least two ways. First, it could be used in conjunction with genetic manipulations – for example to restore normal kinetics in photoreceptors in which the genetic alteration changes response kinetics. Second, the stimulus design approach provides an alternative that provides less detailed mechanistic information, but which allows more specific functional manipulations to be made and does not require genetic access.
 
-## Manipulations of phototransduction currents and identifying nonlinear circuit properties
+#### Manipulations of phototransduction currents and identifying nonlinear circuit properties
 
 The models that we introduce here provide a new tool to causally test the impact of alterations in photoreceptor responses on downstream responses and perception. For example, asymmetries in how increments and decrements in light intensity are processed have been well studied, including responses in retina, cortex, and perception (Bowen et al., 1989; Lu and Sperling, 2012). Parallel On and Off visual pathways are initiated at the cone output synapse, and asymmetries in downstream responses or perception are often attributed to asymmetries in the On and Off retinal circuits conveying photoreceptor signals to the ganglion cells (e.g. Stockman et al., 2014). The implicit assumption is that photoreceptor inputs to On and Off retinal circuits are symmetrical. While this is likely the case for low-contrast stimuli, rapid adaptation in phototransduction means that high-contrast stimuli will often not produce symmetric input to those circuits, and On/Off asymmetries may originate at least in part from asymmetric photoreceptor responses to light increments and decrements (Angueyra et al., 2022; Clark et al., 2013; Endeman and Kamermans, 2010). The ability to invert the phototransduction model permits the design of stimuli that minimize such asymmetries in the photoreceptor responses to test how they contribute to On/Off differences in downstream responses (e.g. Yu et al., 2022).
 
@@ -219,7 +375,87 @@ More generally, the ability to shape photoreceptor responses in predictable ways
 
 ## Methods
 
-## Recordings
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>129S1/SvlmJ</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:002448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Macaca fascicularis)</td>
+      <td></td>
+      <td>Washington Regional Primate Research Center</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Macaca nemenstrina)</td>
+      <td></td>
+      <td>Washington Regional Primate Research Center</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ames</td>
+      <td>MilliporeSigma</td>
+      <td>Cat #A1420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Stage</td>
+      <td>Stage-VSS</td>
+      <td>https://stage-vss.github.io</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Symphony</td>
+      <td>Symphony-DS</td>
+      <td>http://symphony-das.github.io</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Recordings
 
 We performed electrophysiological recordings from primate (Macaca fascicularis, nemestrina, and mulatta, either sex, 2–20 years) and mouse retina (C57/BL6 or sv-129, either sex, 1–12 months) in accordance with the University of Washington Institutional Animal Care and Use Committee. Primate retinas were obtained through the Tissue Distribution Program of the University of Washington Regional Primate Research Center. Primate recordings were all at >20o eccentricity.
 
@@ -227,33 +463,65 @@ Rod responses were recorded with suction electrodes (Field and Rieke, 2002). The
 
 Cones were recorded with whole-cell patch clamp techniques in slice (mouse; Ingram et al., 2019) and whole-mount preparations (primate; Angueyra and Rieke, 2013). We focused on M and S cones in mouse and L and M cones in primate. Data were collected and analyzed from any primate cone with a dark current exceeding 200 pA and any mouse cone with a dark current exceeding 40 pA. Cone responses in these recordings run down quickly due to intracellular dialysis of the cell; hence, responses to only one of the stimuli in Figure 1B were recorded from each cone. All data reported here were collected within 2–3 min of patch rupture and the onset of intracellular dialysis.
 
-## Light calibrations
+### Light calibrations
 
 Optical power was measured at the preparation with a calibrated power meter (Graseby). Power readings were converted to isomerizations per second (R*/s) using the photoreceptor spectral sensitivities, the LED spectral outputs, and collecting areas of rods and cones (1 and 0.37 μm2 for primates, 0.5 and 0.2 μm2 for mouse). This conversion proceeded in three steps: (1) the total calibrated power was converted to a power density (W/μm2) using the size of the illuminated area in the microscope image plane; (2) LED emission spectra were scaled such that their integrals matched the calibrated power density; (3) the resulting calibrated LED emission spectra were converted to R*/s by taking the dot product with the photoreceptor spectral sensitivities (Baylor et al., 1987; Nikonov et al., 2006) and scaling by the collecting area (https://github.com/chrischen2/photoreceptorLinearization, copy archived at Chen, 2024).
 
 Light stimuli from the LEDs were focused on the preparation via the microscope condenser or objective. Stimuli uniformly illuminated a 600-μm diameter spot. LED outputs were carefully checked for linearity. For rod recordings, we used an LED with peak output at 470 nm, near the peak of the rod spectral sensitivity. For cone recordings, we used an LED with peak output at 405 nm, which produced near-equal (within 10%) activation of L and M cones in primate and S and M cones in mouse. Figure 10 used an OLED computer monitor (eMagin) to deliver stimuli; the monitor outputs were calibrated as above for the LEDs.
 
-## Forward model
+### Forward model
 
-The phototransduction cascade was modeled with the set of differential equations illustrated in Figure 1A. This follows previous modeling work in both rods and cones (Angueyra et al., 2022; Nikonov et al., 2000; Pugh and Lamb, 1993; Rieke and Baylor, 1998a; Younger et al., 1996). Our model has 11 parameters. In the first step of the model, the light stimulus (Stim) activates opsin molecules, converting inactive opsin (R) to active opsin (R*). Active opsin decays with a rate constant σ (Figure 1A).:(1)dR(t)/dt=γStim(t)−σR(t)
+The phototransduction cascade was modeled with the set of differential equations illustrated in Figure 1A. This follows previous modeling work in both rods and cones (Angueyra et al., 2022; Nikonov et al., 2000; Pugh and Lamb, 1993; Rieke and Baylor, 1998a; Younger et al., 1996). Our model has 11 parameters. In the first step of the model, the light stimulus (Stim) activates opsin molecules, converting inactive opsin (R) to active opsin (R*). Active opsin decays with a rate constant σ (Figure 1A).:
 
-Next, PDE molecules are activated by active opsin molecules via the G-protein transducin; the resulting PDE activity (P) decays with a rate constant Φ (Figure 1A):(2)dP(t)/dt=R(t)−ΦP(t)+η
+$$
+dR(t)/dt=\gammaStim(t)−\sigmaR(t)
+$$
+
+Next, PDE molecules are activated by active opsin molecules via the G-protein transducin; the resulting PDE activity (P) decays with a rate constant Φ (Figure 1A):
+
+$$
+dP(t)/dt=R(t)−ΦP(t)+η
+$$
 
 We assume that the delay caused by transducin activation is negligible and hence omit this step for simplicity. The opsin decay rate σ and the PDE decay rate Φ were interchangeable (Pugh and Lamb, 1993), and the model output depended only on the smaller of these (i.e. the slower process). Hence, σ and Φ were constrained to be equal.
 
-The concentration of cGMP in the outer segment (G) is determined by the balance of cGMP hydrolysis mediated by PDE and synthesis (S) through guanylate cyclase (GC) (Figure 1A):(3)dG(t)/dt=S(t)−P(t)G(t)
+The concentration of cGMP in the outer segment (G) is determined by the balance of cGMP hydrolysis mediated by PDE and synthesis (S) through guanylate cyclase (GC) (Figure 1A):
 
-For physiological conditions, the outer segment current (I) through cGMP-gated channels depends on a power of the cGMP concentration (Figure 1A; Rieke and Baylor, 1996):(4)I(t)=kGn(t)
+$$
+dG(t)/dt=S(t)−P(t)G(t)
+$$
 
-Calcium enters the outer segment through open cGMP channels and is removed by an exchange protein, with a rate constant β (Figure 1A):(5)dC(t)/dt=qI(t)−βC(t)
+For physiological conditions, the outer segment current (I) through cGMP-gated channels depends on a power of the cGMP concentration (Figure 1A; Rieke and Baylor, 1996):
 
-The calcium concentration (C) regulates the rate of cGMP synthesis (S); this dependence is modeled as a Hill curve (Figure 1A):(6)S=Smax 1+(C/KGC)m
+$$
+I(t)=kG^{n}(t)
+$$
 
-Two model parameters were fixed by steady-state conditions and prior measurements. First, the constant q that relates current and changes in calcium can be expressed in terms of the dark calcium concentration, dark current, and rate constant β for calcium extrusion:q=β⋅CDID
+Calcium enters the outer segment through open cGMP channels and is removed by an exchange protein, with a rate constant β (Figure 1A):
 
-Second, the maximal cyclase rate (Smax) can be written in terms of Φ, η, KGC, m, and the dark calcium (CD) and cGMP concentrations (GD):Smax =GD⋅ηΦ⋅(1+(CD/KGC)m)
+$$
+dC(t)/dt=qI(t)−\betaC(t)
+$$
 
-We fixed the constants k and n that determine the relation between cGMP and current at values measured for rods (e.g. Rieke and Baylor, 1996); modest changes in these parameters produced little or no change in model performance due to compensation by other model parameters. Using these constants, the cGMP concentration in darkness (GD) was estimated from the measured dark current (ID) using Equation 4 (e.g. the response to a saturating light flash) for each recorded cell. We also fixed m for both rods and cones and β for rods based on previous measurements (Field and Rieke, 2002; Koutalos et al., 1995a; Rieke and Baylor, 1996). We assumed a dark calcium concentration (CD) of 1 μM (Gray-Keller and Detwiler, 1994; Sampath et al., 1999); the model was insensitive to this value, as the dependence of the synthesis rate on calcium (KGC) compensated for any change.
+The calcium concentration (C) regulates the rate of cGMP synthesis (S); this dependence is modeled as a Hill curve (Figure 1A):
+
+$$
+S=\frac{S_{max }}{1+(C/K_{GC})^{m}}
+$$
+
+Two model parameters were fixed by steady-state conditions and prior measurements. First, the constant q that relates current and changes in calcium can be expressed in terms of the dark calcium concentration, dark current, and rate constant β for calcium extrusion:
+
+$$
+q=\frac{\beta⋅C_{D}}{I_{D}}
+$$
+
+Second, the maximal cyclase rate (Smax) can be written in terms of Φ, η, KGC, m, and the dark calcium (CD) and cGMP concentrations (GD):
+
+$$
+S_{max }=\frac{G_{D}⋅η}{Φ⋅(1+(C_{D}/K_{GC})^{m})}
+$$
+
+We fixed the constants k and n that determine the relation between cGMP and current at values measured for rods (e.g. Rieke and Baylor, 1996); modest changes in these parameters produced little or no change in model performance due to compensation by other model parameters. Using these constants, the cGMP concentration in darkness $(G_{D})$ was estimated from the measured dark current ($I_{D}$) using Equation 4 (e.g. the response to a saturating light flash) for each recorded cell. We also fixed m for both rods and cones and β for rods based on previous measurements (Field and Rieke, 2002; Koutalos et al., 1995a; Rieke and Baylor, 1996). We assumed a dark calcium concentration (CD) of 1 μM (Gray-Keller and Detwiler, 1994; Sampath et al., 1999); the model was insensitive to this value, as the dependence of the synthesis rate on calcium (KGC) compensated for any change.
 
 This left a total of four free parameters for rod models (γ, η, σ, KGC), and five for cone models (γ, η, β, σ, KGC). These parameters were determined by minimizing the mean-squared difference between the measured responses and model predictions while the remaining model parameters were held fixed. Some combinations of model parameters can trade for each other, resulting in similar model performance (e.g. CD and KGC). Our goal here was to identify a model that captures photoreceptor responses across a range of stimuli, rather than a model in which the fit parameters were predictions of the underlying biochemical parameters.
 
@@ -263,28 +531,103 @@ Parameters of consensus models were determined by simultaneously fitting measure
 
 We evaluated the sensitivity of the model outputs to each fit parameter by identifying parameter ranges that doubled the MSE of the fits. Table 2 includes these parameter ranges. We also tested sensitivity to combinations of parameters using sloppy modeling (see further details below and Brown and Sethna, 2003). This approach identifies specific combinations of parameters that have maximal and minimal impact on model error – in our case the MSE. For cone models, parameters controlling the calcium feedback (β and KGC) could compensate for each other to have relatively minor effects on fit quality. Fit quality was particularly sensitive to changes in the parameters controlling the PDE activation (σ and η). Rod models were relatively insensitive to changes in σ and η and were particularly sensitive to changes in KGC and γ.
 
-## Sloppy modeling
+**Table 2.**
+ Parameter variations that double the mean-squared error of the fits.Error was measured while a single parameter was systematically varied; other parameters were held fixed at the consensus model values.
 
-Sloppy modeling enables us to understand how a model’s cost function depends on the model parameters individually and in combination. We started by computing the Hessian matrix H at a location in parameter space given by the consensus fit parametersHi,j=∂C∂θi⋅∂C∂θj
 
-Here, θi and θj represent different parameters and C is the cost function. The Hessian provides a measure of the curvature of the cost function around the best-fit model parameters. We numerically approximate the Hessian by taking incremental changes in pairs of parameters around the best fit and measuring the changes in MSE. The eigenvectors of the Hessian matrix identify directions in parameter space in which the cost function changes slowly or rapidly.
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Parameter</th>
+      <th rowspan="2">Symbol</th>
+      <th rowspan="2">Units</th>
+      <th colspan="4">Values: optimal [lower, upper]</th>
+    </tr>
+    <tr>
+      <th>Primatecone</th>
+      <th>Mousecone</th>
+      <th>Primaterod</th>
+      <th>Mouserod</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Opsin decay rate const.</td>
+      <td>σ</td>
+      <td>s−1</td>
+      <td>22 [14, 34]</td>
+      <td>9.74 [7.3, 13.1]</td>
+      <td>7.07 [5.8, 8.8]</td>
+      <td>7.66 [6.1, 9.3]</td>
+    </tr>
+    <tr>
+      <td>PDE dark activation rate</td>
+      <td>η</td>
+      <td>s−1</td>
+      <td>2000 [1300, 3300]</td>
+      <td>761 [494, 1218]</td>
+      <td>2.53 [2.1, 3.2]</td>
+      <td>1.62 [1.3, 2.1]</td>
+    </tr>
+    <tr>
+      <td>Ca2+ extrusion rate const.</td>
+      <td>β</td>
+      <td>s−1</td>
+      <td>9 [5, 40]</td>
+      <td>2.64 [1.58, 5.7]</td>
+      <td>N.A.</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <td>Ca2+ GC affinity</td>
+      <td>KGC</td>
+      <td>μM</td>
+      <td>0.5 [0, 0.6]</td>
+      <td>0.4 [0.26 0.46]</td>
+      <td>0.5 [0.44, 0.53]</td>
+      <td>0.4 [0.32, 0.44]</td>
+    </tr>
+  </tbody>
+</table>
 
-## Linear model
+### Sloppy modeling
 
-The linear models used to generate the target response were obtained by fitting a parameterized linear filter to the response of the full model to low-contrast Gaussian noise at a specific mean light level. The linear filter is defined as:(7)L(t)=α(tτD)3⋅exp(−tτR)/(1+(tτD)3)
+Sloppy modeling enables us to understand how a model’s cost function depends on the model parameters individually and in combination. We started by computing the Hessian matrix H at a location in parameter space given by the consensus fit parameters
 
-where α is a scaling factor, and τR and τD are the rising and decay time constants. This model provides good fits to measured low-contrast responses of rods and cones (Angueyra and Rieke, 2013). Photoreceptor responses to low-contrast stimuli depend linearly on the stimulus (Hass et al., 2015), and hence this approach ensured that the linear model matched the full model for such stimuli. The linear filter was convolved directly with the light stimulus to obtain a linear estimate of the responses.
+$$
+H_{i,j}=\frac{∂C}{∂\theta_{i}}⋅\frac{∂C}{∂\theta_{j}}
+$$
 
-## Inverse model
+Here, $\theta_{i}$ and $\theta_{j}$ represent different parameters and C is the cost function. The Hessian provides a measure of the curvature of the cost function around the best-fit model parameters. We numerically approximate the Hessian by taking incremental changes in pairs of parameters around the best fit and measuring the changes in MSE. The eigenvectors of the Hessian matrix identify directions in parameter space in which the cost function changes slowly or rapidly.
 
-The differential equations that comprise our model consist of several time-independent nonlinearities (Equations 4 and 6 in Figure 1), several linear differential equations (Equations 1, 2, and 5 in Figure 1), and one nonlinear differential equation (Equation 3 in Figure 1). The time-independent nonlinearities can be inverted directly as a look-up table – for example the cGMP depends directly on the current as G = (I/k)1/n. The linear differential equations can be solved directly by deconvolution – for example the Fourier transform of the calcium concentration from Equation 5 in Figure 1 is obtained directly from the Fourier transform of the measured current (I(f)) as(8)C(f)=qI(f)β− 2πif
+### Linear model
 
-where f is the temporal frequency. The nonlinear differential equation (Equation 3 in Figure 1) can be reexpressed as an equation for the PDE activity P in terms of the cGMP concentration G and its derivative dG/dt as(9)P(t)=S(t)−dG(t)/dtG(t)
+The linear models used to generate the target response were obtained by fitting a parameterized linear filter to the response of the full model to low-contrast Gaussian noise at a specific mean light level. The linear filter is defined as:
+
+$$
+L(t)=\alpha(\frac{t}{\tau_{D}})^{3}⋅exp(−\frac{t}{\tau_{R}})/(1+(\frac{t}{\tau_{D}})^{3})
+$$
+
+where $\alpha$ is a scaling factor, and $\tau_{R}$ and $\tau_{D}$ are the rising and decay time constants. This model provides good fits to measured low-contrast responses of rods and cones (Angueyra and Rieke, 2013). Photoreceptor responses to low-contrast stimuli depend linearly on the stimulus (Hass et al., 2015), and hence this approach ensured that the linear model matched the full model for such stimuli. The linear filter was convolved directly with the light stimulus to obtain a linear estimate of the responses.
+
+### Inverse model
+
+The differential equations that comprise our model consist of several time-independent nonlinearities (Equations 4 and 6 in Figure 1), several linear differential equations (Equations 1, 2, and 5 in Figure 1), and one nonlinear differential equation (Equation 3 in Figure 1). The time-independent nonlinearities can be inverted directly as a look-up table – for example the cGMP depends directly on the current as G = (I/k)1/n. The linear differential equations can be solved directly by deconvolution – for example the Fourier transform of the calcium concentration from Equation 5 in Figure 1 is obtained directly from the Fourier transform of the measured current (I(f)) as
+
+$$
+C(f)=\frac{qI(f)}{\beta− 2\piif}
+$$
+
+where f is the temporal frequency. The nonlinear differential equation (Equation 3 in Figure 1) can be reexpressed as an equation for the PDE activity P in terms of the cGMP concentration G and its derivative dG/dt as
+
+$$
+P(t)=\frac{S(t)−dG(t)/dt}{G(t)}
+$$
 
 This equation can be solved given G (obtained from the current via Equation 4 in Figure 1), and S (obtained from the calcium concentration C(t) and Equation 6 in Figure 1). These steps in the inversion process are illustrated in Figure 3.
 
 This process results in an exact mapping between responses and stimuli – that is every response I(t) has a corresponding unique stimulus Stim(t). In practice, noise in the measured responses can corrupt the estimated stimuli. This is a general problem in deconvolution of noisy data – for example in microscopy. As indicated in the text, we controlled this noise when necessary by imposing that the power spectrum of our estimated stimulus be equal to the power spectrum of the true stimulus. This constraint was imposed by generating the estimated stimulus as described above, and then reweighting the power spectrum of the estimated stimulus to match the power spectrum of the true stimulus. This constraint was used in generating the estimated stimuli in Figure 4.
 
-## Predictably altering photoreceptor responses
+### Predictably altering photoreceptor responses
 
 Model inversion as described above allowed us to identify stimuli that would produce a desired phototransduction current (which we refer to as a target response). For the applications in Figures 6—10, we generated this response using the linear model of the transduction cascade described above (Equation 7). We passed an initial stimulus (e.g. a sinusoid in Figures 6 and 7) through the linear model to generate the target response. The model inversion process for the full (i.e. nonlinear) phototransduction cascade model then determined the stimulus which, when delivered to the full model, would produce the linear target response. In particular, this allowed us to identify stimuli that negated the impact of adaptation on the photoreceptor responses.

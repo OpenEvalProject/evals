@@ -43,13 +43,93 @@ We found that the spatial resolution of optogenetic silencing is approximately o
 
 ## Results
 
-## Optogenetic inactivation
+### Optogenetic inactivation
 
 We examined eight different optogenetic methods to inactivate cortical activity in awake mice (Table 1, Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48622/elife-48622-fig1-v2.jpg)
 
 **Figure 1.:** (A) Summary of inactivation methods. ChR-assisted photoinhibition was induced by photostimulating excitatory opsins in various GABAergic interneurons. Direct photoinhibition was achieved by photostimulating inhibitory opsins in pyramidal neurons. (B) Cell-type classification based on spike waveform. Left, spike waveforms for putative FS neurons (gray) and putative pyramidal neurons (black) in two different cortical areas. Right, histogram of trough-to-peak spike durations (top) and relationship to baseline spike rate (bottom). Neurons were classified into putative GABAergic fast spiking (FS) neurons and pyramidal neurons based on spike width (Materials and methods). Neurons that could not be classified (brown) were excluded from analysis. (C) Silicon probe recordings during photostimulation in a VGAT-ChR2-EYFP mouse. Top, a putative FS neuron. Bottom, a putative pyramidal neuron. Right, corresponding spike waveforms. (D) Effects of photostimulation on cell types defined by spike waveform. Dots correspond to individual neurons. Spike rates of each neuron during photostimulation were normalized to its baseline (‘relative spike rate’, Materials and methods). Neurons with significant spike rate changes (p<0.05, two-tailed t-test) are highlighted by circles. Gray, putative FS neurons; black, putative pyramidal neurons; brown, neurons that could not be classified. (E) Relative spike rate as a function of laser power for different photoinhibition methods. Pyramidal neurons within 0.4 mm from laser center across all cortical depth. Mean ± s.e.m. across neurons, bootstrap (Materials and methods). Two datasets (lines) are shown for VGAT-ChR2-EYFP: the line spanning 0.5–10.5 mW shows data from barrel cortex, n = 153; the line spanning 0.1–1.5 mW shows data from ALM, n = 188; PV-IRES-Cre x Ai32, data from barrel cortex, n = 16; Sst-IRES-Cre x Ai32, data from barrel cortex, n = 65; two datasets (lines) are shown for PV-IRES-Cre x ReaChR: the line spanning 0.5–10.5 mW shows data from barrel cortex, n = 211; the line spanning 0.3–3 mW shows data from ALM, n = 55; PV-IRES-Cre, ChR2 virus injection, data from barrel cortex, n = 78; Emx1-IRES-Cre x Ai35D, data from barrel cortex, n = 26; Emx1-IRES-Cre x Camk2a-tTA x Ai79, data from barrel cortex, n = 176. (F) Effect of photostimulus profile on photoinhibition. Top, 40 Hz sinusoid photostimulus and constant photostimulus. Bottom, relative spike rate as a function of laser power for ChR-assisted photoinhibition (left) and direct photoinhibition mediated by Arch (right). Pyramidal neurons within 0.4 mm from laser center across all cortical depth. Mean ± s.e.m. across neurons, bootstrap (Materials and methods). 40 Hz sinusoid photostimulus is the standard photostimulus used in this study.
+
+**Table 1.**
+ A list of photoinhibition methods tested in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Methods</th>
+      <th>Mouse (JAX #)</th>
+      <th>Reagents</th>
+      <th>Wavelength</th>
+      <th>Brain region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">ChR-assisted photoinhibition</td>
+    </tr>
+    <tr>
+      <td>ChR2 in all GABAergic neurons</td>
+      <td>VGAT-ChR2-EYFP or Slc32a1-COP4*H134R/EYFP (014548)</td>
+      <td></td>
+      <td>473 nm</td>
+      <td>Somatosensory cortex, ALM</td>
+    </tr>
+    <tr>
+      <td>ChR2 in PV expressing neurons</td>
+      <td>PV-IRES-Cre or Pvalb-IRES-Cre (008069) x Ai32 (012569)</td>
+      <td></td>
+      <td>473 nm</td>
+      <td>Somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>ChR2 in Sst neurons</td>
+      <td>Sst-IRES-Cre (013044) x Ai32 (012569)</td>
+      <td></td>
+      <td>473 nm</td>
+      <td>Somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>ReaChR in PV neurons</td>
+      <td>PV-IRES-Cre (008069) x R26-CAG-LSL-ReaChR-mCit (026294)</td>
+      <td></td>
+      <td>594 nm</td>
+      <td>ALM</td>
+    </tr>
+    <tr>
+      <td>ChR2 virally delivered to local PV neurons</td>
+      <td>PV-IRES-Cre (008069)</td>
+      <td>AAV2/1-CAG-FLEX-ChR2-tdTomato-WPRE (UPenn Viral Core, AV-1-ALL864)</td>
+      <td>473 nm</td>
+      <td>Somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td colspan="5">Direct photoinhibition</td>
+    </tr>
+    <tr>
+      <td>Arch in excitatory neurons</td>
+      <td>Emx1-IRES-Cre (005628) x Ai35D (012735)</td>
+      <td></td>
+      <td>594 nm</td>
+      <td>Somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>Jaws in excitatory neurons</td>
+      <td>Emx1-IRES-Cre (005628) x Ai79D (023529) x Camk2-tTA (003010)</td>
+      <td></td>
+      <td>594 nm</td>
+      <td>Somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>GtACR1 (somatic targeting) (Mahn et al., 2018) in excitatory neurons</td>
+      <td>Emx1-IRES-Cre (005628) x R26-CAG-LNL-GtACR1-ts-FRed-Kv2.1 (033089)</td>
+      <td></td>
+      <td>473 nm, 635 nm</td>
+      <td>Somatosensory cortex, primary motor cortex, ALM</td>
+    </tr>
+  </tbody>
+</table>
 
 For ChR-assisted photoinhibition we photostimulated excitatory opsins in GABAergic interneurons to drive inhibition in nearby pyramidal neurons. We used transgenic mice that expressed ChR2 in GABAergic neurons (VGAT-ChR2-EYFP), or in parvalbumin-positive (PV) interneurons (PV-IRES-Cre X Ai32), or in somatostatin-positive (Sst) interneurons (Sst-IRES-Cre X Ai32). In addition, we photostimulated a red-shifted channelrhodopsin (ReaChR) in PV neurons (PV-IRES-Cre X ReaChR) (Hooks et al., 2015; Lin et al., 2013). We also induced photoinhibition with a Cre-dependent ChR2 virus in PV-IRES-Cre mice. For direct photoinhibition we photostimulated inhibitory opsins in pyramidal neurons, including the ion pumps Archaerhodopsin (Arch, Emx1-IRES-Cre X Ai35D) and Jaws (Emx1-IRES-Cre X Camk2a-tTA X Ai79) (Chow et al., 2010; Chuong et al., 2014; Madisen et al., 2015).
 
@@ -65,7 +145,7 @@ We also photoactivated the Guillardia theta anion channel rhodopsin 1 (GtACR1) t
 
 **Figure 2.:** (A) Top, generation of the Cre-dependent GtACR reporter line. Construct includes loxP sites, and GtACR1-ts-FRed-Kv2.1C with WPRE, driven by CAG promoter targeted to the Rosa26 locus. Bottom, cross to Emx1-IRES-Cre mice. GtACR1 is expressed in cortical excitatory neurons. (B) Confocal images showing dense expression of GtACR1 in cortex and low levels of expression in the corpus callosum, implying low trafficking of GtACR1 to axons. (C) Left, mean peristimulus time histogram (PSTH, 50 ms bin) for pyramidal neurons with blue and red photostimuli. Dashed lines, photostimulus onset and offset. Pyramidal neurons within 0.4 mm from laser center across all cortical depth. Blue light photostimulation, n = 335 neurons from ALM; Red light photostimulation, n = 285 neurons from ALM. Right, relative spike rate as a function of laser power. Mean ± s.e.m. across neurons, bootstrap (Materials and methods). VGAT-ChR2-EYFP, Emx1-IRES-Cre x Ai35D, Emx1-IRES-Cre x Camk2a-tTA x Ai79, data from Figure 1E are replotted here for reference. (D) Left, mean PSTH (1 ms bin) at the onset of the photostimulation. Same data as in (C). Axonal excitation was induced at 0.8 mW laser power for blue light photostimulation. Right, relative spike rate during the first 20 ms of photostimulation onset.
 
-## Spatial profile of light intensity
+### Spatial profile of light intensity
 
 To characterize the spread of inactivation we first measured the spatial profile of the photostimulus, that is, the light intensity in the tissue. At the surface of the brain the photostimulus was a stationary collimated laser beam with an approximately Gaussian profile (diameter at 4σ, 400 µm) (Materials and methods). In the brain, light is scattered and absorbed, primarily by blood. As a substitute for light intensity we measured the three-dimensional profile of photobleaching of fluorescent proteins in transgenic mice. Because neurons are large (100's of micrometers) and fluorescent proteins diffuse rapidly in the cytoplasm (Swaminathan et al., 1997), we used fluorescent proteins targeted to neuronal nuclei. We measured the spatial distribution of fluorescence after prolonged light exposure, which caused pronounced photobleaching at the center of the photostimulus. For blue light (473 nm), we used transgenic mice expressing GFP in the nuclei of cortical excitatory neurons (Rosa-LSL-H2B-GFP crossed to Emx1-IRES-Cre) (He et al., 2012). For orange light (594 nm), we used transgenic mice expressing mCherry (Rosa-LSL-H2B-mCherry crossed to Emx1-IRES-Cre) (Peron et al., 2015).
 
@@ -79,7 +159,7 @@ In contrast to blue light, orange light propagated much further (depth at half m
 
 We note that the photobleaching experiments are relatively noisy and have limited dynamic range (Figure 3B,F). As a result, our measurement likely misses a long tail in light intensity that is still able to activate light gated channels. For example, at high powers FS interneurons can be activated up to 1.5 mm from the laser center, even with blue light (see below and Figure 5B,C,D).
 
-## Spatial profile of optogenetic inactivation
+### Spatial profile of optogenetic inactivation
 
 We measured photoinhibition across cortical layers when photostimulating GABAergic neurons using blue or orange light (Figure 4A–B). Recordings were made from the whisker representation area of the somatosensory cortex (barrel cortex) near the center of the photostimulus. Photostimulation of ChR2 in GABAergic neurons produced nearly uniform inhibition of pyramidal neurons across cortical layers (Figure 4A, VGAT-ChR2-EYFP, Sst-IRES-Cre X Ai32, and PV-IRES-Cre X Ai32), despite limited penetration of blue light in tissue (Figure 3). Photoinhibition removed the majority of spikes (>80%) in a column across a wide range of laser powers (1.5–14 mW), indicating that photoinhibition is an effective method for local inactivation.
 
@@ -117,7 +197,7 @@ We next sought to limit the spatial spread of ChR-assisted photoinhibition by di
 
 **Figure 8.:** Half-max radius of photoinhibition when the activity reduction at laser center is 90%. Data based on Figures 5J, 6B and 7D when relative pyramidal neuron spike rate is 0.1. Error bars show 90% confidence interval, bootstrap (Materials and methods). Estimated radius of light is based on data in Figure 3D and G.
 
-## Strong coupling between cortical neurons and the paradoxical effect
+### Strong coupling between cortical neurons and the paradoxical effect
 
 What underlies the spread of photoinhibition? Cortical neurons are coupled with each other. Activity reduction in a small region in the vicinity of the photostimulus withdraws input to the surrounding regions, reducing activity in the surround. Consistent with this interpretation, in regions surrounding the photostimulation site, a concurrent decrease in activity was observed in both FS neurons and pyramidal neurons, even with ChR-assisted photoinhibition (Figure 9, arrows). Activity decreased in proportion in FS and pyramidal neurons relative to their baseline activity.
 
@@ -133,7 +213,7 @@ We tested this prediction in the somatosensory cortex. In mice expressing ReaChR
 
 **Figure 10.:** (A) Photostimulating PV neurons using orange light. Laser beam diameter, 2 mm (Materials and methods). (B) Relative spike rate as a function of light intensity (<0.4 mm from laser center, all cortical depths). FS neurons (gray) and pyramidal neurons (black). Left, individual neurons (lines). Right, mean ± s.e.m. across neurons, bootstrap. Laser power was divided by the illuminated area to obtain light intensity. FS neurons, n = 10, pyramidal neurons n = 82. (C) Mean peristimulus time histogram for FS neurons (gray) and pyramidal neurons (black). (D) Same as (B) but for relative spike rate at different epochs of photostimulation.
 
-## Temporal profile of optogenetic inactivation
+### Temporal profile of optogenetic inactivation
 
 We examined the dynamics of photoinhibition. For ChR-assisted photoinhibition, the kinetics of ChR determined the dynamics of the interneurons (Figure 11A). For example, in mice expressing ChR2 (VGAT-ChR2-EYFP), FS neuron activity was time-locked to the photostimulus. In mice expressing ReaChR (PV-IRES-Cre x ReaChR), which has slower off kinetics compared to ChR2 (Lin et al., 2012), FS neuron activity was not time-locked to the photostimulus and was strongly attenuated over prolonged photostimulation. Despite the different interneuron dynamics, the photoinhibition of pyramidal neurons was similarly (Figure 11A). A subset of FS neurons were excited throughout the photostimulation (Figure 11B, 0.8–1 s). Other FS neurons were suppressed by photostimulation on average; however, a subset of these inhibited FS neurons were transiently excited by the photostimulus, followed by inhibition (Figure 11B, compare 0–10 ms to 0.8–1 s), implying that these neurons were also expressing ChR. These data suggest that prolonged photostimulation (>20 ms) triggered spikes in a subset of FS interneurons, which in turn reduced activity in other FS neurons and pyramidal neurons.
 
@@ -185,17 +265,17 @@ In many experiments, cell-type-specific manipulations produced multi-phasic netw
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 This study is based on data from 45 mice (age >P60, both male and female mice). 35 transgenic mice were used to characterize photoinhibition, including 14 VGAT-ChR2-EYFP mice, 2 PV-IRES-Cre x Ai32 mice, 3 Sst-IRES-Cre x Ai32 mice, 11 PV-IRES-Cre x R26-CAG-LSL-ReaChR-mCitrine mice, 1 Emx1-IRES-Cre x Ai35D mouse, 2 Emx1-IRES-Cre x Camk2a-tTa x Ai79 mice, and 2 Emx1-IRES-Cre x R26-CAG-LNL-GtACR1-ts-FRed-Kv2.1 mice. 5 PV-IRES-Cre mice were used to drive photoinhibition using Cre-dependent ChR2 virus injections. 1 Emx1-IRES-Cre x Rosa26-LSL-H2B-mCherry mouse and 1 Emx1-IRES-Cre x Rosa-CAG-LSL-H2B-GFP mouse (gift from Josh Huang, Cold Spring Harbor Laboratory) were used for photobleaching experiments.
 
 All procedures were in accordance with protocols approved by the Institutional Animal Care and Use Committees at Baylor College of Medicine (protocol AN7012) and Janelia Research Campus (protocol 14–115). All surgical procedures were carried out aseptically under 1–2% isoflurane anesthesia. Buprenorphine (0.5 mg/kg) or Sustained Release Buprenorphine (1 mg/kg) was used for pre- and post-operative analgesia. Ketoprofen (5 mg/kg) or Sustained Release Meloxicam (4 mg/kg) was used at the time of surgery and post-operatively to reduce inflammation.
 
-## Generation of transgenic GtACR mice
+### Generation of transgenic GtACR mice
 
 Targeting vector, Rosa26-CAG-LNL-GtACR1-ts-FusionRed-Kv2.1C-WPRE-polyA, was derived from AAV.CamKIIa.GtACR1-ts-FRed-Kv2.1.WPRE (Mahn et al., 2018) and a standard Rosa26 backbone (Dymecki and Kim, 2007; Madisen et al., 2012; Soriano, 1999). The targeting vector DNA was electroporated into ES cells and the chimeric mice were generated using successfully targeted ES cell clones. GtACR1 expression was evaluated both by native fluorescence and functional assays. Rosa26-CAG-LNL-GtACR1-ts-FRed-Kv2.1 mice were submitted to The Jackson Laboratory (stock #033089).
 
-## Surgery
+### Surgery
 
 Mice were prepared for photostimulation and electrophysiology with a clear-skull cap (Guo et al., 2014b) and a headpost (Guo et al., 2014a). The scalp and periosteum over the dorsal surface of the skull were removed. A layer of cyanoacrylate adhesive (Krazy glue, Elmer’s Products Inc) was directly applied to the intact skull. A custom made headbar was placed on the skull (approximately over visual cortex) and cemented in place with clear dental acrylic (Lang Dental Jet Repair Acrylic; Part# 1223-clear). A thin layer of clear dental acrylic was applied over the cyanoacrylate adhesive covering the entire exposed skull, followed by a thin layer of clear nail polish (Electron Microscopy Sciences, Part# 72180).
 
@@ -203,7 +283,7 @@ In some PV-IRES-Cre mice ChR2 was introduced by injecting 50 nL of AAV2/5-hSyn1-
 
 For silicon probe recordings, a small craniotomy was made over the recording site in mice already implanted with the clear-skull cap and headpost (see Electrophysiology). The dental acrylic and bone were thinned using a dental drill. The remaining thinned bone was carefully removed using a bent forceps. A separate, smaller craniotomy (diameter, approximately 600 µm) was made through the headpost bar for ground wires.
 
-## Photostimulation
+### Photostimulation
 
 Light from a 473 nm laser (DHOM-M-473–200, UltraLaser) or a 594 nm laser (Cobolt Inc, Colbolt Mambo 100) or a 635 nm laser (MRL-III-635L-100mW, Changchun New Industries Optoelectronics Technology) was controlled by an acousto-optic modulator (AOM; MTS110-A3-VIS, Quanta Tech; extinction ratio 1:2000; 1µs rise time) and a shutter (Vincent Associates), coupled to a 2D scanning galvo system (GVSM002, Thorlabs), then focused onto the brain surface (Guo et al., 2014b). The laser at the brain surface had a Gaussian profile with a beam diameter of 400 µm at 4σ. We tested photoinhibition in barrel cortex (bregma posterior 1.5 mm, 3.5 mm lateral), anterior lateral motor cortex (ALM, bregma anterior 2.5 mm, 1.5 mm lateral) and primary motor cortex (bregma anterior 0.5 mm, 1.5 mm lateral). Photoinhibition was similar across different regions.
 
@@ -213,7 +293,7 @@ The standard photostimulus had a near sinusoidal temporal profile (40 Hz) with a
 
 For photostimulation experiments testing the paradoxical effect (Figure 10), the laser at the brain surface had a diameter of 2 mm at 4σ. We tested paradoxical effect in barrel cortex (bregma posterior 1.5 mm, 3.5 mm lateral). To calculate light intensity (mW/mm2) reported in Figure 10, laser power was divided by the area of the laser beam: light intensity = power/2πr2, where r = 1 mm.
 
-## Photobleaching
+### Photobleaching
 
 We measured photobleaching in vivo to characterize the spatial profile of light intensity at two different wavelengths (473 nm and 594 nm, Figure 3). In transgenic mice expressing GFP (for 473 nm) or mCherry (for 594 nm) in the nuclei of cortical pyramidal neurons, photobleaching was induced by a stationary beam and prolonged (10 min) illumination at different laser powers through the clear-skull cap. Nuclear fluorescence was imaged in fixed tissue sections using a confocal microscope (Zeiss LSM 510). Multiple sections were imaged around each photobleaching site.
 
@@ -221,7 +301,7 @@ GFP or mCherry fluorescence was measured in regions of interest (ROIs) correspon
 
 For best contrast the bleaching close to the center of the laser beam was greater than 50%. We therefore measured ΔF/ F0 near the laser center (within 100 µm for GFP, 400 µm for mCherry) for different light doses (Figure 3C). The relationship between light dose and bleaching in general is exponential, f(r) = −1 +exp(- k I(r) T). The distribution of light intensity was thus computed as I(r) = - constant * ln(f(r) + 1). The constant k was derived from empirical data (Figure 3C), with separate fits for GFP (473 nm light) and mCherry (594 nm light). Figure 3D and G show the distribution of light derived from f(r) at 200 mW x min light dose. We picked this power because of the high contrast (i.e. large ΔF/ F0 near the laser center). Similar spatial profiles were obtained at lower light doses.
 
-## Electrophysiology
+### Electrophysiology
 
 All recordings were carried out while mice were awake but non-behaving. Extracellular spiking activity was recorded using silicon probes. We used NeuroNexus probes with four shanks (at 200 or 400 µm spacing) and recording sites spaced 100 or 200 µm apart (eight sites per shank, P/N A4 × 8–5 mm-100-200-177, A4 × 8–5 mm-100-200-413, A4 × 8–5 mm-200-200-177, A4 × 8–5 mm-200-200-413, and, A4 × 8–5 mm-100-400-177). Silicon probes were connected to a headstage (Intan Technology) that multiplexed the 32-channel voltage recording into two analog signals (fabricated at Janelia Farm Research Campus, Brian Barbarits, Tim Harris). The multiplexed analog signals were recorded on a PCI6133 board at 312.5 kHz (National instrument) and digitized at 14 bit. The signals were demultiplexed into the 32 voltage traces at the sampling frequency of 19531.25 Hz and stored for offline analyses in a custom software spikeGL (C. Culianu, Anthony Leonardo, Janelia Farm Research Campus). For recordings in Emx1-IRES-Cre x R26-CAG-LNL-GtACR1-ts-FRed-Kv2.1 mice, we used 64-channel Cambridge NeuroTech silicon probes (H2 acute probe, 250 µm spacing, 2 shanks). The 64-channel voltage signals were multiplexed, recorded on a PCI6133 board (National Instrument) and digitized at 400 kHz (14 bit). The signals were demultiplexed into 64 voltage traces sampled at 25 kHz and stored for offline analysis. The headstage was mounted on a motorized micromanipulator (MP-285, Sutter Instrument).
 
@@ -229,11 +309,11 @@ A 1 mm diameter craniotomy over the recording site was made prior to the recordi
 
 Prior to each recording session, the tips of the silicon probe were brushed with DiI in ethanol solution and allowed to dry. The surface of the craniotomy was kept moist with saline. The silicon probe was positioned on the surface of the cortex and advanced manually into the brain at ~3 µm/s, normal to the pial surface. The depth of the electrode tip ranged from 749 to 1000 µm below the pial surface. The electrode depth was inferred from manipulator depth and verified with histology. To minimize pulsation of the brain, a drop of silicone gel (3–4680, Dow Corning, Midland, MI) was applied over the craniotomy after the electrode was in position. The tissue was allowed to settle for several minutes before the recording was started.
 
-## Histology
+### Histology
 
 After the conclusion of recording experiments, mice were perfused transcardially with PBS followed by 4% PFA/0.1 M PB. The brains were fixed overnight and sectioned. Coronal sections (100 µm) were cut and images of DiI labeled recording tracks were acquired on a macroscope (Olympus MVX10). Electrode tracks were compared to the manipulator depth readings (Guo et al., 2014b). In Figure 4, the definition of cortical layer boundaries in barrel cortex was based on mouse brain atlas (O'Connor et al., 2010).
 
-## Data analysis
+### Data analysis
 
 The extracellular recording traces were band-pass filtered (300–6 kHz). Events that exceeded an amplitude threshold (four standard deviations of the background) were subjected to manual spike sorting to extract single-units (Guo et al., 2014b).
 
@@ -251,10 +331,10 @@ Bootstrap was also used to evaluate whether ChR2-assisted photoinhibition had si
 
 To quantify rebound activity, for each neuron, we computed spike rate in a 500 ms window after photostimulus offset, subtract the baseline spike rate (computed in a 500 ms time window before photostimulus onset), and normalized this spike rate difference to the baseline spike rate. The rebound activity (i.e. activity increase from baseline) was quantified as the percentage of baseline spike rate. The rebound activity was averaged across the recorded population (Figure 12C–D).
 
-## Statistics
+### Statistics
 
 The electrophysiology sample sizes are similar to sample sizes used in the field: more than 100 units per brain region. No statistical methods were used to determine sample size. All key results were replicated in multiple mice. Mice were allocated into experimental groups according to strain and brain regions tested. Unless stated otherwise, the investigators were not blinded to allocation during experiments and outcome assessment. During spike sorting, experimenters cannot tell photostimulation conditions, so experimenters were blind to conditions. Statistical comparisons using t-tests and bootstrap are described in detail in sections above.
 
-## Data and code availability
+### Data and code availability
 
 Rosa26-CAG-LNL-GtACR1-ts-FRed-Kv2.1 mice are available at The Jackson Laboratory (stock #033089). Electrophysiology data and code used are available at Github (https://github.com/NuoBCM/PhotoinhibitionCharaterization; copy archived at https://github.com/elifesciences-publications/PhotoinhibitionCharaterization).

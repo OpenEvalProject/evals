@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.39648.001 It has been hypothesized that the pleasure of a reward in humans is mediated by an opioidergic system involving the hypothalamus, nucleus accumbens and the amygdala. Importantly, enjoying the pleasure of a reward is distinct from incentive salience induced by cues predicting the reward. We investigated this issue using a within subject, pharmacological challenge design with the opioid receptor antagonist naloxone and fMRI. Our data show that blocking opioid receptors reduced pleasure associated with viewing erotic pictures more than viewing symbols of reward such as money. This was paralleled by a reduction of activation in the ventral striatum, lateral orbitofrontal cortex, amygdala, hypothalamus and medial prefrontal cortex. Crucially, the naloxone induced activation decrease was observed at reward delivery, but not during reward anticipation, indicating that blocking opioid receptors decreases the pleasure of rewards in humans. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+It has been hypothesized that the pleasure of a reward in humans is mediated by an opioidergic system involving the hypothalamus, nucleus accumbens and the amygdala. Importantly, enjoying the pleasure of a reward is distinct from incentive salience induced by cues predicting the reward. We investigated this issue using a within subject, pharmacological challenge design with the opioid receptor antagonist naloxone and fMRI. Our data show that blocking opioid receptors reduced pleasure associated with viewing erotic pictures more than viewing symbols of reward such as money. This was paralleled by a reduction of activation in the ventral striatum, lateral orbitofrontal cortex, amygdala, hypothalamus and medial prefrontal cortex. Crucially, the naloxone induced activation decrease was observed at reward delivery, but not during reward anticipation, indicating that blocking opioid receptors decreases the pleasure of rewards in humans.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -28,11 +28,19 @@ In humans, anticipation and outcome related neuronal effects can reliably be dis
 
 With respect to the task, we aimed for high motivational involvement of the volunteer, which is ideally met by an incentive delay task (Knutson et al., 2000). Consequently, we extended the well-established monetary incentive delay task (Knutson et al., 2000) with erotic pictures, which have been shown to reliably activate the mesolimbic system (Redouté et al., 2000; Beauregard et al., 2001; Arnow et al., 2002; Hamann et al., 2004; Ponseti et al., 2006; Paul et al., 2008; Sescousse et al., 2010; Sescousse et al., 2013). In this task, volunteers were cued with the expectable reward magnitude at the beginning of each trial, characterizing the possible outcome. Erotic pictures evoking low pleasure showed women in swimsuits, whereas highly pleasurable stimuli depicted total nudity (Figure 1). In monetary trials small and large amounts of money served as rewards. As in classical incentive delay tasks, volunteers had to press a button as soon as a neutral target stimulus appeared on the screen (Figure 1). If their response was registered within a defined response window the trial was considered successful and volunteers were shown the reward (erotic picture or picture showing money). Afterwards, they rated the pleasure of viewing the picture in case of reward trials, or how frustrated they were not to be shown the picture in missed reward trials.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig1-v1.jpg)
+
+**Figure 1.:** An initial cue signaled potential gain for each trial (high/low pleasure erotic picture or high/low monetary reward). After a variable delay, a target briefly appeared. Responding during target display yielded the indicated gain, whereas late or early responses yielded no gain. Target durations were adapted to approximate 67% hit rate for each subject. In case of gain trials volunteers could watch the outcome picture (erotic picture or money) for 1.5 s. In case of loss trials a scrambled image was shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Top row: Pleasure and frustration ratings for received and missed monetary rewards. Bottom row: Pleasure and frustration ratings for received and missed erotic picture rewards.
+
 Twenty-one heterosexual, healthy, male volunteers (mean age 25.5 years) took part in the experiment. In monetary trials the amounts of possible monetary rewards were approximately matched for value with the high and low erotic stimuli using a pre-experiment procedure. The order of monetary and erotic trials was randomized and had the same structure, involving high or low possible gains. Volunteers were investigated on two days with either placebo or naloxone. The treatment order was randomized across volunteers. Each erotic stimulus was only presented once and randomized across the placebo and naloxone days.
 
 ## Results
 
-## Behavioral and autonomic data
+### Behavioral and autonomic data
 
 Behavioral mood and side effects ratings did not differ between treatments (Supplementary file 1 & 2). Hedonic ratings in the placebo condition indicated that volunteers perceived high erotic stimuli (total nudity) as more pleasurable compared to low erotic (swimsuit) stimuli (mean high erotic >low erotic: T(18)=7.74; p<0.00001). A similar pattern emerged for high and low monetary rewards (Supplementary file 3). Not receiving an erotic picture reward led to a comparable pattern of frustration ratings (Supplementary file 3). However, absolute ratings for monetary rewards were higher as compared to erotic rewards (Figure 1—figure supplement 1).
 
@@ -50,11 +58,57 @@ In particular, pleasure ratings at the outcome phase of the experiment, that is
 
 **Figure 3.:** Frustration ratings for missed erotic rewards show a stronger decrease by naloxone as compared to monetary rewards (right). (* denotes p<0.05; * between bars denote p<0.05 for the interaction).
 
-## Functional neuroimaging
+### Functional neuroimaging
 
 Based on previous reports (Redouté et al., 2000; Beauregard et al., 2001; Arnow et al., 2002; Sescousse et al., 2010; Sescousse et al., 2013; Morelli et al., 2015; Noori et al., 2016) on activations related to erotic and monetary rewards, we focused our analysis on the ventral striatum, the orbitofrontal cortex, the amygdala, the hypothalamus and the medial prefrontal cortex (see Materials and methods and Supplementary file 6 for the exact definition of these regions of interest based on multiple individual studies and meta-analyses).
 
 Our analysis revealed a reduction of BOLD responses by naloxone to erotic image presentation in bilateral ventral striatum at the outcome phase (right: T(18)=2.99; p=0.004; p(corrected)=0.031; left: T(18)=3.47; p=0.001; p(corrected)=0.011; Figure 4 and Figure 4—figure supplement 1), lateral OFC (right: T(18)=2.84; p=0.006; p(corrected)=0.044; left: T(18)=1.94; p=0.034; p(corrected)=0.275), bilateral amygdalae (right: T(18)=2.85; p=0.005; p(corrected)=0.043; left: T(18)=2.83; p=0.006; p(corrected)=0.044), medial prefrontal cortex (T(18)=3.52; p=0.001; p(corrected)=0.010) and the hypothalamus (T(18)=1.87; p=0.039; p(corrected)=0.309). See Supplementary file 7 for an overview. For the monetary trials no significant effects of naloxone were observed at the outcome phase (Supplementary file 9 and Figure 4—figure supplement 2). Finally, we investigated whether the opioid antagonist has the same effect on activation during the anticipation phase. This analysis revealed only a weak effect of naloxone in the medial prefrontal cortex (T(18)=1.90; p=0.037; p(corrected)=0.294) and right lateral OFC (T(18)=1.82; p=0.042; p(corrected)=0.339) for monetary trials (Supplementary file 9 and Figure 4—figure supplement 3) but not for erotic trials (Figure 4—figure supplement 4). Directly comparing naloxone effects on erotic rewards with its effects on monetary rewards, we observed a stronger effect of naloxone with respect to erotic rewards in all regions of interest (Figure 4 and Supplementary file 8), with the most significant effect in the amygdala (right: T(18)=3.40; p=0.0016; p(corrected)=0.0128; left: T(18)=3.50; p=0.0013; p(corrected)=0.0103). The effects of all conditions in each ROI for saline and naloxone are shown in Figure 4—figure supplements 5–12.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-v1.jpg)
+
+**Figure 4.:** Under naloxone treatment, activation in the ventral striatum, medial prefrontal cortex lateral orbitofrontal cortex, the amygdala and the hypothalamus is significantly reduced. This reduction is larger for erotic rewards as compared to monetary rewards. Activations for high versus low erotic pictures comparing placebo to naloxone at p<0.005 (uncorrected, t-test) are overlaid on a mean structural image also indicating the predefined volumes of interest (light gray) in the ventral striatum, medial prefrontal cortex and lateral orbitofrontal cortex, amygdala and hypothalamus. (** denotes p<0.05 corrected for multiple comparisons; *p<0.05 uncorrected; * or ** between bars denote p values for the interaction).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** **p<0.05 corrected for multiple comparisons; *p<0.05 uncorrected.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp3-v1.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp4-v1.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Error bars represent standard error of the mean.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Error bars represent standard error of the mean.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** Error bars represent standard error of the mean.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp8-v1.jpg)
+
+**Figure 4—figure supplement 8.:** Error bars represent standard error of the mean.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp9-v1.jpg)
+
+**Figure 4—figure supplement 9.:** Error bars represent standard error of the mean.
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp10-v1.jpg)
+
+**Figure 4—figure supplement 10.:** Error bars represent standard error of the mean.
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp11-v1.jpg)
+
+**Figure 4—figure supplement 11.:** Error bars represent standard error of the mean.
+
+![Figure 4—figure supplement 12.](https://cdn.elifesciences.org/articles/39648/elife-39648-fig4-figsupp12-v1.jpg)
+
+**Figure 4—figure supplement 12.:** Error bars represent standard error of the mean.
 
 In addition we investigated whether the individual decrease of pleasure ratings due to naloxone were related to the reduction of brain activation. Using a linear regression analysis (Supplementary file 10), we observed a significant correlation in the hypothalamus (T(17)=3.24; p=0.0024; p(corrected)=0.0194; Figure 5; Supplementary file 10) and a weaker correlation in the left ventral striatum (T(17)=2.09; p=0.0262; p(corrected)=0.2097; Figure 5; Supplementary file 10). This indicates that the BOLD signal difference in the hypothalamus due to naloxone is linearly related to the individual decrease in pleasure ratings.
 
@@ -88,9 +142,13 @@ Our data also sheds light on the emerging clinical application of opioid antagon
 
 ## Materials and methods
 
-## Participants
+### Participants
 
-Currently, no study has investigated the effect of naloxone on pleasure ratings related to erotic stimuli or monetary rewards. For our power calculation, we were therefore guided by the effect sizes reported in a previous study on the effect of naloxone on affective ratings in a monetary gambling task (Petrovic et al., 2008). By careful visual inspection of Figure 1 in Petrovic et al., 2008, we estimated the mean effect of naloxone on ratings (μ-μ0) to −3.53, with a standard deviation (σ) of 6.31. Based on the following equation and setting power (1-β) to 80% and type I error rate (α) to 5% we estimated the sample size (n)n=(σ∙Z1-α+Z1-βμ-μ0)2
+Currently, no study has investigated the effect of naloxone on pleasure ratings related to erotic stimuli or monetary rewards. For our power calculation, we were therefore guided by the effect sizes reported in a previous study on the effect of naloxone on affective ratings in a monetary gambling task (Petrovic et al., 2008). By careful visual inspection of Figure 1 in Petrovic et al., 2008, we estimated the mean effect of naloxone on ratings (μ-μ0) to −3.53, with a standard deviation (σ) of 6.31. Based on the following equation and setting power (1-β) to 80% and type I error rate (α) to 5% we estimated the sample size (n)
+
+$$
+n=(\sigma∙\frac{Z_{1-\alpha}+Z_{1-\beta}}{\mu-\mu_{0}})^{2}
+$$
 
 (http://powerandsamplesize.com) to be 19.75.
 
@@ -98,7 +156,7 @@ Consequently, 21 heterosexual male volunteers (Mean ± SD age, 25.48 ± 4.55
 
 Data for two volunteers could not be used due to technical problems (scanner artefacts), leaving a final sample size of nineteen. The study was conducted in accordance with the Declaration of Helsinki. All subjects gave written informed consent to be part of the study, which was approved by the ethics committee of the Chamber of Physicians, Hamburg, Germany (PV3906). The informed consent also included the consent to publish the data.
 
-## Task
+### Task
 
 Our task extended the classical monetary incentive delay task (MID) (Knutson et al., 2000) by a condition in which erotic pictures were employed instead of money. As in the classical MID task, trials started with a cue phase. The cue indicated the nature and magnitude of the possible reward in this trial: A heart indicated a possible erotic stimulus, whereas a Euro symbol (€) indicated a possible monetary reward. Magnitude of either type of stimulus was indicated by either a single (low) or three (high) horizontal lines. In erotic trials low magnitude was defined as showing female models in swimsuits, whereas high magnitude related to showing completely nude pictures. 110 erotic pictures were selected from the Internet according to two objective criteria: women had to be alone and their face was not displayed. After a variable delay between 1.5 and 4.5 s the target (white square) appeared and volunteers had to indicate this with a button press as quickly as possible. If the response occurred within a response window, the trial was considered successful and volunteers were shown the picture. In a pretest we estimated a time windows so that 67% of all responses were valid. In case of an erotic picture trial they were able to view the picture for 1.5 s, in case of a monetary trial they were shown their monetary gain for the same time period. In case of a non-successful trial a scrambled picture was shown. Immediately afterwards, they rated the pleasure of the outcome (i.e. either viewing the erotic picture or the picture of the monetary reward in gain trials, or how frustrated they felt in missed reward trials). Rating was performed by moving a cursor on a continuous visual analog scale ranging from 0 to 100.
 
@@ -106,21 +164,21 @@ We approximately equated pleasure ratings for the two modalities to be able to u
 
 We then fitted an exponential function to the monetary data. Finally, we took the intersection of the amount of work (clicks) volunteers were willing to spend to see the high and low erotic pictures and the fitted exponential function to identify the monetary equivalent of watching a high or a low erotic picture. In case this procedure could not reveal meaningful amounts, default values of 0.4€ for low and 1.8€ for the high monetary amount were selected. The actual amounts used ranged from 0.1 to 5.6€ (0.85 ± 1.09€; mean ± sd) for the low amount and from 0.8 to 8.1€ (mean ± sd 2.71 ± 1.32€) for the high amount.
 
-## Drug administration
+### Drug administration
 
 Volunteers were investigated in a cross-over design on two days (~48 hr apart) with either the application of naloxone or placebo (order randomized across volunteers). At ~15 min before the start of the experiment, we administered a bolus dose of 0.15 mg/kg naloxone (Naloxon-ratiopharm, Ratiopharm, Ulm, Germany) or the same volume of saline via an intravenous line inserted into the antecubital vein of the left arm. Because naloxone has a relatively short half-life (~70 min in blood plasma; Summary of Product Characteristics, Ratiopharm) and its clinically effective duration of action can be even shorter (Gutstein and Akil, 2006), we additionally administered an intravenous infusion dose of 0.2 mg/kg/h naloxone for the duration of the experiment (diluted in saline) or the same volume of saline, starting shortly after bolus administration. This dosing regime leads to a stable concentration of naloxone in blood plasma over the length of the experiment (Eippert et al., 2009; Schoell et al., 2010) and is sufficient to block central opioid receptors almost completely (Mayberg and Frost, 1990).
 
 Subjects were informed about naloxone, including its pharmacological properties, its general clinical use, and its possible side effects. Subjects were also informed that they would most likely not notice that they had received naloxone, as it generally does not have noticeable effects on mood at this dose (Grevert and Goldstein, 1978; Petrovic et al., 2008; Kut et al., 2011). After each experiment the experimenter (S.M.) recorded mood and possible side effects using a 5-point Likert scale (not at all - very) with 12 items for mood and a 7-point Likert scale (not present - extreme) with seven items for side effects. The mood rating scale included the following items: satisfied, rested, restless, bad, worn out, calm, tired, good, uneasy, cheerful, unwell and relaxed. The seven item side effect scale included the following items: dry mouth, dry skin, blurred vision, lethargy, sickness, dizziness, and headache. Naturally, we could not inform subjects about the true purpose of naloxone administration in this study, which was done during debriefing. The experimenter (S.M.) who interacted with the subjects was blinded as to which drug was given. Blinding and assignment of treatment order by a random number was performed by another experimenter (C.S.). Unblinding occurred after the experiment. In the final sample ten volunteers received saline on day 1 and naloxone on day 2, nine volunteers received naloxone on day 1 and saline on day 2.
 
-## Behavioral data
+### Behavioral data
 
 Pleasure and frustration ratings for each trial type (monetary low, monetary high, erotic low, erotic high) for naloxone and placebo were compared using a repeated measures ANOVA with factors trial type and treatment. Given the strong a priori hypothesis that naloxone would decrease pleasure ratings (Petrovic et al., 2008), we additionally performed planned individual paired one-sided t-tests. Results were corrected for multiple comparisons using a Bonferroni correction.
 
-## Autonomic data
+### Autonomic data
 
 Electrodermal activity was measured during fMRI with MRI-compatible electrodes on the palm of the left hand (thenar and hypothenar sites) connected to carbon leads (Biopac, Lead108). The signal was amplified using an analog amplifier (Biopac, MP150) and sampled at 1000 Hz using CED 1401 analog-digital converter (Cambridge Electronic Design). After temporal smoothing using a Gaussian convolution kernel with a full-width-at-half-maximum of 0.4 s and subsequent downsampling to 10 Hz, we computed the phasic skin conductance drive (SCR) using a deconvolution technique (Benedek and Kaernbach, 2010) as implemented in Ledalab 3.4.8 and used these to assess the autonomic arousal associated with individual stimuli in a time window from 1 to 4 s after stimulus onset (Boucsein et al., 2012). To account for differences in electrode position, skin moisture and other between subject effects (Boucsein et al., 2012), SCR estimates were z-transformed within volunteers and session, and then averaged across sessions. We only analyzed SCR data from the placebo treatment condition, as it has been shown that naloxone suppresses the descending bulbar inhibitory mechanisms on SCR responses (Traore et al., 1998) and thus alters SCR responses. Due to artefacts (i.e. MR gradient switching artefacts, cable movement), skin conductance data was only available from 14 volunteers for the placebo day.
 
-## Imaging
+### Imaging
 
 Scanning was performed with a 3T whole-body magnetic resonance imager (TIM Trio, Siemens, Erlangen, Germany). fMRI data acquisition was divided into four sessions. In each session we acquired between 311 and 332 volumes (depending on response timings) per session with 36 slices in descending order (2 mm slice thickness with 1 mm gap) using a gradient-echo T2*-weighted pulse sequence (EPI). The time to repetition (TR) for volume acquisition was set to 2160 ms and the time to echo (TE) to 25 ms. In-plane resolution was 108 × 108 with a field of view of 216 × 216 mm. For anatomical reference, a 3D magnetization prepared gradient-echo sequence of the whole brain was obtained with TR of 6.8 ms and a TE of 3.2 ms.
 

@@ -43,15 +43,39 @@ Here, we developed a new QPI method for measuring the intracellular density of f
 
 ## Results
 
-## QPI enables high-resolution measurements of intracellular density in growing cells
+### QPI enables high-resolution measurements of intracellular density in growing cells
 
 To measure intracellular density using a standard wide-field microscope, we developed a version of QPI in which the phase shift is retrieved computationally from a z-stack of bright-field images (Bostan et al., 2016). This label-free approach takes advantage of the relationship between the intracellular concentration of biomolecules and the refractive index of the cell interior (Zangle and Teitell, 2014), which can be computed from the light intensity profile along the z-direction using the transport-of-intensity equation (Figure 1A, Materials and methods). To calibrate phase shifts with absolute concentrations (dry-mass/volume), we measured the phase shifts within cells grown in media containing a range of concentrations of a calibration standard (bovine serum albumin, BSA) (Materials and methods); these measurements showed a linear relationship that can be used to extrapolate the intracellular density of cells (Figure 1B). This method provides pixel-scale measurements of density in living cells and can easily be applied during time-lapse imaging with sub-minute time resolution on most wide-field microscopes.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig1-v2.jpg)
+
+**Figure 1.:** (A) QPI method for computing cytoplasmic density from bright-field images. A z-stack of bright-field images of fission yeast cells ±1.5 µm around the mid-plane focal position (top panel) were computationally analyzed by solving the transport-of-intensity equation (Bostan et al., 2016) to retrieve pixel-by-pixel phase-shift maps (bottom left). Cellular dimensions were determined via segmentation and skeletonization (bottom right). (B) QPI phase shifts were calibrated by imaging cells in media supplemented with a range of concentrations of BSA. The retrieved phase shift is linearly related to concentration (dashed line is the linear best fit). (C) Histogram of dry-mass density measurements of exponential-phase fission yeast cells grown at 30°C in YE5S medium. A Gaussian fit (red) yielded a mean (dashed line) density of 282 ± 16 mg/mL (n = 2345 time points, 78 cells). SD, standard deviation. (D) Cell density at the beginning of the cell cycle was inversely correlated to the change in density during the cell cycle, indicative of homeostatic behavior (n = 76 cells). The distribution of density changes was not centered around 0 mg/mL due to a ~ 15 mg/mL density decrease after cell separation (see Figure 2F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) High-density features in QPI co-localize with lipid droplets. Cells were stained with BODIPY dye to identify lipid droplets. QPI density map (left) and the corresponding fluorescence image of a representative BODIPY-stained wild-type fission yeast cell (middle). The fluorescence intensity image was thresholded to identify regions containing lipid droplets (outlines), which overlapped with high-density regions in QPI (right). (B) Coefficient of variation (CV) of intracellular density over the cell cycle. The CV at each specific stage of cell-cycle progression (<5%) was slightly lower than the CV across an entire cell population (6%, Figure 1C), supporting the notion that some population-wide variation arises from cell cycle-dependent density variations. (C) Average cell density varied by less than 10% across temperatures and temperature shifts. Edges of the boxes indicate 25th and 75th percentiles, centerline is the median, and whiskers indicate extreme points not considered outliers. In experiments in which the temperature was shifted up, cells were initially grown at 25°C and then moved to the microscope pre-heated to the indicated temperature for long-term imaging.
+
 Using this methodology, we determined that the mean dry-mass density of an asynchronous population of wild-type S. pombe cells growing at 30°C in rich YE5S medium was 282 ± 16 mg/mL (Figure 1C). There were various sources of intracellular heterogeneities such as lipid droplets (Figure 1—figure supplement 1A) and cell-wall septa, both of which were regions of high signal (Figure 1A). The nucleus was not distinguishable in most phase-shift maps, indicating similar density as the cytoplasm (Figure 1A). Nonetheless, the distribution of densities was remarkably narrow, with a coefficient of variation (CV) of 0.06, despite variability in cell size and cell-cycle stage. For cells within the same cell-cycle stage, the distribution of densities was even narrower (CV <0.05, Figure 1—figure supplement 1B). To determine whether cells could recover from fluctuations in density, we examined the change in density over a cell cycle as a function of initial density at the beginning of the cell cycle. These two quantities were inversely related (Figure 1D), indicating a homeostatic behavior that maintains density. A similar distribution of densities was observed in cells grown at 25°C and after temperature shifts (Figure 1—figure supplement 1C). Together, these results suggest that dry-mass density is robustly maintained, and demonstrate that this QPI approach can precisely measure absolute dry-mass density in living cells with high temporal and spatial resolution.
 
-## Intracellular density follows a characteristic trajectory during the S. pombe cell cycle
+### Intracellular density follows a characteristic trajectory during the S. pombe cell cycle
 
 To determine whether intracellular density changes over the course of the fission yeast cell cycle, we imaged proliferating cells in time-lapse using QPI in a microfluidic device under constant flow of growth medium (Materials and methods; Figure 2A, Figure 2—video 1). Density maps were segmented to extract cellular dimensions, from which volume was computed (Materials and methods; Figure 1A). Total dry mass of each cell was computed from volume and mean density measurements. We imaged cells throughout their entire cell cycle, and then aligned the computed data from each cell by relative cell-cycle progression, from cell birth (first detectable physical separation between daughter cells) until just before cell-cell separation at the end of the cell cycle.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig2-v2.jpg)
+
+**Figure 2.:** (A) Wild-type fission yeast cells in exponential phase were imaged in time lapse in a microfluidic chamber and phase-shift maps were extracted by QPI. Shown are images of a representative cell traversing the cell cycle from (left) cell birth to (right) septation (10 min/frame). (B,C,D) Cell volume (B), density (C), and dry mass (D) of cells aligned by their relative progression in the cell cycle. Curves are mean values and shaded regions represent one standard deviation (n = 78 cells). Mass was estimated from volume and density measurements. (E) SMR-based measurements of fission yeast cells in an asynchronous culture (binned by cell volume) showed a similar decrease in buoyant density at intermediate volume as QPI measurements of dry-mass density (C). (F) Cell density decreases upon cell separation. Left: density measurements of cells just before and just after cell separation (5 min apart). Right: normalized changes in volume and density between the mother and resultant daughter cells. (G) Dry mass grows more exponentially than linearly. The residuals (bottom) of an exponential fit (red) to mass growth (D) were much smaller than a linear fit (blue). See also Figure 2—figure supplement 3A.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) QPI-based dry-mass density measurements of individual cells showed similar variation throughout the cell cycle as the population (Figure 2C). (B) Replicate SMR experiment for data in Figure 2E. Medium-sized cells exhibited lower buoyant density than small and large cells, similar to QPI measurements (Figure 2C). Boxes indicate 25th and 75th percentiles and horizontal line indicates the median. Whiskers indicate the most extreme datapoints not considered outliers. (C) Distribution of the volumes of cells in each bin of the buoyant density measurements in (B). Each bin contains 29 cells sorted by volume. (D) Representative holographic images of cells at an early, middle, and late stage in the cell cycle. (E) Mean refractive index was calculated from holographic images of non-septated cells (blue) and septated cells (red). The negative correlation (Pearson’s correlation coefficient) of refractive index with non-septated cells (dashed line) indicates that refractive index decreases with increasing cell length.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The densities of the mother cell and the associated daughter cells were measured from consecutive QPI density maps (5 min apart) directly before and after cell division, respectively. The daughter cell densities were then averaged. In most cases, the newly born daughter cells were less dense than the mother cell 5 min beforehand. Dashed line indicates y = x.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Mass increases exponentially throughout the cell cycle, as evidenced by the constant rate of normalized growth (1/M dM/dt). The dry mass of individual cells was measured as in Figure 2. Larger cells added more mass per unit time, a characteristic of exponential mass growth. Curves are mean values and shaded regions represent one standard deviation (n = 78 cells). (B) To measure surface area, we took into account the surface area added at the septum during cytokinesis. The dimensions of the growing septum were measured from the QPI images, and the surface area of the septum was calculated by assuming a double-layered structure with a diameter of 4 µm. Curves are mean values and shaded regions represent one standard deviation (n = 78 cells). (C) Surface area to volume (SA/V) ratio increased at the end of the cell cycle, as volume growth slowed and surface area increased due to septum formation. Curves are mean values and shaded regions represent one standard deviation (n = 78 cells). (D) Surface area to mass (SA/M) ratio varied by only ~5%. Curves are mean values and shaded regions represent one standard deviation (n = 78 cells). Thus, SA/M shows less variation than the ratio of volume to mass (the inverse of density).
 
 Intracellular density displayed consistent dynamics during the S. pombe cell cycle. As observed previously (Mitchison and Nurse, 1985), volume measurements showed that cells exhibited steady tip growth in interphase (mostly G2 phase), and then volume growth slowed or halted during mitosis and cytokinesis (defined here as the period starting from septum formation and ending at daughter-cell separation; Figure 2B). Density gradually decreased from the beginning of the cell cycle through G2 phase by ~5%, followed by a steady rise during mitosis and cytokinesis (Figure 2C, Figure 2—figure supplement 1A). By contrast to volume, dry mass increased steadily throughout the cell cycle without any obvious transitions (Figure 2D). These measurements suggest that the density increase during mitosis and cytokinesis is a consequence of continued mass accumulation when volume growth halts.
 
@@ -61,13 +85,13 @@ We also identified an additional change in density at cell birth. At the end of 
 
 Our precision measurements of cellular dimensions and intracellular density provide a quantitative characterization of dry-mass dynamics (biosynthesis) throughout the cell cycle. The absolute rate of dry-mass accumulation steadily increased during the cell cycle (Figure 2D). Dry-mass dynamics were more exponential than linear in nature (Figure 2G, Figure 2—figure supplement 3A), as shown by a comparison of linear versus exponential fits (Figure 2G) and in the dynamics of normalized mass growth (Figure 2—figure supplement 3A). The absolute rate of mass synthesis was therefore higher during mitosis and cytokinesis than at the beginning of the cell cycle, even though the cell slowed in volume growth late in the cycle. Thus, mass production was not tightly coupled to volume growth. These measurements suggest a simple model in which the increase of density in mitosis and cytokinesis arises as consequence of continued mass accumulation when volume growth is halted.
 
-## Cell-cycle perturbations exacerbate cell cycle-dependent density variation
+### Cell-cycle perturbations exacerbate cell cycle-dependent density variation
 
 Our data demonstrate that intracellular density increases during mitosis and cytokinesis as a result of biosynthesis continuing unabated while volume growth slows; conversely, density decreases during interphase because the rate of volume growth surpasses the rate of mass synthesis. However, the origin of these dynamics remains unresolved. One possibility is that the relative rates of mass synthesis and volume growth are not directly coupled; with mass growing exponentially, density variations then arise indirectly as a consequence of cell-cycle regulation of volume expansion, which is controlled by cell polarity programs that redirect the cell wall growth machinery to the middle of the cell for septum formation prior to cytokinesis (Simanis, 2015; Ray et al., 2010; Martin and Arkowitz, 2014). Alternatively, the density at each cell-cycle stage could be directly programmed to specific levels by specific cell-cycle regulators. Another possibility is that density variations may be due to a cell cycle-independent oscillator, such as a metabolic oscillator (Papagiannakis et al., 2017; Liu et al., 2020). To distinguish these models, we examined the consequences of arresting or delaying cells at particular stages of the cell cycle (Figure 3A). If there is no strict control of biosynthesis then when mitosis or cytokinesis is blocked, mass should continue to accumulate and density should reach higher levels than in normal cells, and conversely density should fall below normal in extended interphase. If density is instead regulated at specific levels according to cell-cycle phase, density levels should not change during cell-cycle delays beyond the ranges appropriate for each phase. If a cell cycle-independent oscillator governs density variations, then oscillations could continue even during cell-cycle arrests (Novak and Mitchison, 1986; Mitchison, 2003).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig3-v2.jpg)
 
-**Figure 3.:** S. pombe cell cycle results in cell elongation and decreased intracellular density.(A) Schematic of the fission yeast cell cycle, highlighting the point at which the cdc25 temperature-sensitive mutant delays the G2-M transition. (B) cdc25-22 cells were shifted from the permissive temperature 25°C to the semi-permissive temperature 32°C to extend G2 phase, leading to continued cell elongation. QPI density maps of a representative cell are shown. Note that density decreased during cell elongation. (C) QPI-based measurements of volume (left), density (middle), and dry mass (right) of cdc25-22 cells (red) that grew at least 2.5-fold relative to their birth length before dividing, compared with wild-type cells (blue) under the same conditions. Measurements are aligned from cell birth until elongation rate decreased to 20 nm/min (as an indication of the transition to mitosis). Curves are mean values and shaded regions represent one standard deviation.Figure 3—source data 1.Figure 3 on cdc25 mutant experiment.
+**Figure 3.:** (A) Schematic of the fission yeast cell cycle, highlighting the point at which the cdc25 temperature-sensitive mutant delays the G2-M transition. (B) cdc25-22 cells were shifted from the permissive temperature 25°C to the semi-permissive temperature 32°C to extend G2 phase, leading to continued cell elongation. QPI density maps of a representative cell are shown. Note that density decreased during cell elongation. (C) QPI-based measurements of volume (left), density (middle), and dry mass (right) of cdc25-22 cells (red) that grew at least 2.5-fold relative to their birth length before dividing, compared with wild-type cells (blue) under the same conditions. Measurements are aligned from cell birth until elongation rate decreased to 20 nm/min (as an indication of the transition to mitosis). Curves are mean values and shaded regions represent one standard deviation.
 
 First, we tested whether density would decrease further in S. pombe cells experiencing an extended period of growth during interphase. We delayed cells harboring a temperature-sensitive cdc25-22 mutation (Nurse et al., 1976) in G2 phase by shifting them from room temperature to the semi-permissive temperature (32°C). These cells continued to grow from their tips and formed abnormally elongated cells (Figure 3B,C) before dividing. To focus on cells that remained in G2 phase for an extended interval, we limited our analysis to cells that elongated to >2.5 fold their initial length. In these mutant cells, during their prolonged G2 phase of 2–3 hr, intracellular density decreased further than in wild-type cells (~8% in cdc25-22 cells from 267 ± 19 to 245 ± 6 mg/mL, compared to ~5% in wild-type cells from 267 ± 11 to 250 ± 6 mg/mL) (Figure 3C). No evidence of density oscillations in the prolonged G2 phase was evident, arguing against cell-cycle independent oscillations as the cause of density variations during a normal cell cycle. These data suggest that density falls during G2 phase because the rate of volume growth continues to be slightly faster than the rate of biosynthesis.
 
@@ -75,21 +99,49 @@ Second, we tested whether cells arrested in mitosis displayed increased intracel
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig4-v2.jpg)
 
-**Figure 4.:** S. pombe.(A) Temperature-sensitive mutants cut7-446 (spindle kinesin-5) and cdc16-116 block the cell cycle in mitosis and cytokinesis, respectively. (B) cut7-446 cells were shifted from 25°C to 30°C to delay mitotic progression. QPI of two representative cells delayed in mitosis for ~20 min until the onset of septation (30 min time point). Note that density continued to increase during mitotic arrest. (C) QPI-based measurements of volume (left), density (middle), and dry mass (right) of cut7-446 cells from mitotic entry (t = 0) through initiation of septum formation at cytokinesis. Curves are mean values and shaded regions represent one standard deviation. (D) cdc16-116 cells were shifted from 25°C to 34°C to arrest cells in cytokinesis. QPI of five representative cells are shown. cdc16 cells generally did not complete cell separation and often assembled additional septa without elongating. Note that density increased during this cytokinetic arrest. (E) QPI-based measurements of volume (left), density (middle), and dry mass (right) of cdc16-116 cells from initiation of the first septum (t = 0). Wild-type cells separated after ~20 min (dashed line), and thereafter the behavior of the daughter cells was tracked for comparison with cdc16 cells (volume and dry mass were summed for the two daughter cells). Curves are mean values and shaded regions represent one standard deviation.Figure 4—source data 1.Figure 4 on cdc7 and cdc16 mutant experiment.
+**Figure 4.:** (A) Temperature-sensitive mutants cut7-446 (spindle kinesin-5) and cdc16-116 block the cell cycle in mitosis and cytokinesis, respectively. (B) cut7-446 cells were shifted from 25°C to 30°C to delay mitotic progression. QPI of two representative cells delayed in mitosis for ~20 min until the onset of septation (30 min time point). Note that density continued to increase during mitotic arrest. (C) QPI-based measurements of volume (left), density (middle), and dry mass (right) of cut7-446 cells from mitotic entry (t = 0) through initiation of septum formation at cytokinesis. Curves are mean values and shaded regions represent one standard deviation. (D) cdc16-116 cells were shifted from 25°C to 34°C to arrest cells in cytokinesis. QPI of five representative cells are shown. cdc16 cells generally did not complete cell separation and often assembled additional septa without elongating. Note that density increased during this cytokinetic arrest. (E) QPI-based measurements of volume (left), density (middle), and dry mass (right) of cdc16-116 cells from initiation of the first septum (t = 0). Wild-type cells separated after ~20 min (dashed line), and thereafter the behavior of the daughter cells was tracked for comparison with cdc16 cells (volume and dry mass were summed for the two daughter cells). Curves are mean values and shaded regions represent one standard deviation.
 
 Third, we arrested cells in cytokinesis, again to test for an increase in density (Figure 4A). cdc16-116 mutant cells arrest in cytokinesis at the restrictive temperature, and thus repeatedly make septa without elongating (Minet et al., 1979). Upon a shift from 25°C to the non-permissive temperature (34°C), cells that maintained cytokinetic arrest continued to increase in cytoplasmic density; density after 90 min was 20–30% higher than in cytokinesis-competent wild-type cells (Figure 4D,E). Thus, biosynthesis continues throughout an extended block of mitosis or cytokinesis, leading to abnormally high intracellular density.
 
 Finally, we asked whether inhibition of volume growth is sufficient to increase cytoplasmic density. We previously showed that two treatments that slow volume growth (osmotic oscillations and treatment with brefeldin A) led to an increase in cytoplasmic density (Knapp et al., 2019). However, since these treatments do not completely halt volume growth and/or result in cell death, we treated wild-type cells with the F-actin inhibitor latrunculin A, which causes immediate cessation of tip growth independent of cell-cycle stage (Pan et al., 2014; Mutavchiev et al., 2016). QPI density maps showed that latrunculin A treatment caused all cells to immediately halt tip growth and begin to steadily increase in density, regardless of cell-cycle stage (Figure 5A,B). The mean density increase after 1 hr was ~20% (Figure 5B). Similar increases in density were seen in cells of different sizes (Figure 5—figure supplement 1). However, we noted that in contrast to the mitotic and cytokinesis arrests, mass increases were variable and on average increased more slowly during latrunculin A treatment than during normal growth (Figure 5B, Figure 2D), suggesting a partial slowdown in biosynthesis and/or an increase in degradation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig5-v2.jpg)
+
+**Figure 5.:** (A) Latrunculin A treatment inhibited cell growth and increased intracellular density regardless of cell-cycle stage. Representative QPI density maps of three wild-type cells at different points of the cell cycle treated with 200 μM latrunculin A for the indicated times. As a control, cells were treated with 1% DMSO; growth continued and density remained relatively constant. (B) QPI-based volume (left), density (middle), and dry mass (right) measurements of latrunculin A (LatA)-treated or DMSO-treated wild-type cells from the start of treatment (t = 0). Growth halted and density increased due to continued mass synthesis during treatment. Note that the average density in the DMSO control rose slightly due to the removal of cells within the asynchronous population from analysis after cell division. Curves are mean values and shaded regions represent one standard deviation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Wild-type S. pombe cells were treated with 0.2 mM latrunculin A for 1 hr and density maps were measured using QPI. Density increase over 1 hr normalized to mean density at the first time point was approximately invariant across initial cell sizes. Cells per bin, left to right: 10, 10, 12. Boxes indicate 25th and 75th percentiles and horizontal line indicates the median. Whiskers indicate the most extreme datapoints not considered outliers.
+
 Taken together, these results show that cell density differences are exacerbated during cell cycle arrests and that inhibition of volume growth is sufficient to increase intracellular density. These findings are not consistent with models in which density is set at cell-cycle stage-specific levels or involving cell cycle-independent oscillators. Rather, our results strongly support a model in which the variations in intracellular density arise from cell-cycle-dependent changes in volume growth rate.
 
-## A polarized density gradient is associated with the pattern of tip growth
+### A polarized density gradient is associated with the pattern of tip growth
 
 Fission yeast cells have a well-known pattern of volume growth in which after cell division, the old end initiates tip growth soon after cell birth, and partway through G2, tip growth at the new end begins, but at a slower rate than the old end (or not all) (Mitchison and Nurse, 1985; Chang and Martin, 2009). As expected, our time-lapse data showed that the old and new ends grew over the course of the cycle on average by ~4 and 2 µm, respectively. In QPI density maps, we noted that many cells exhibited a gradient of intracellular density in which the ends that were actively growing appeared less dense than the non-growing ends (Figure 6A). We hypothesized that these subcellular gradients reflected differences in tip growth between the two ends of the cell. In agreement with our hypothesis, the slower-growing new end typically appeared denser than the faster-growing end (Figure 6A). In some cells, the difference in densities between the fast- and slow-growing ends was ~10% of the mean overall density (Figure 6A). The mean density difference between the two ends throughout the cell cycle was ~15 mg/mL, corresponding to ~5% of the mean overall density (Figure 6B). To address the potential for differences in the widths (and hence heights above the coverslip) of old and new ends to influence phase shifts (Figure 6—figure supplement 1A), we constrained our analysis to cells within a narrow range of widths and found that local density and tip growth remained highly correlated (Figure 6—figure supplement 1B). Examples of post-cytokinesis cells with adjacent compartments exhibiting different densities (Figure 7, Figure 7—figure supplement 1) further indicated that these differences could not be explained simply by width differences. We further confirmed the presence of spatial gradients by staining cells for total protein and RNA using the dye fluorescein isothiocyanate (FITC). FITC intensity differed by ~5% between the old and new end of monopolar cells that are growing only from the old end (Figure 6—figure supplement 2), consistent with the gradient in QPI density maps. Since tip growth is regulated by actin-dependent mechanisms (Pan et al., 2014; Mutavchiev et al., 2016; Chang and Martin, 2009), we tested whether maintenance of the gradient is dependent on F-actin or tip growth: we found that in cells treated with latrunculin A, spatial density gradients persisted over time (Figure 6—figure supplement 1C). These results demonstrate that intracellular density gradients are stable and linked to local growth patterns, and that their maintenance does not require active growth or F-actin.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig6-v2.jpg)
+
+**Figure 6.:** (A) Top: QPI of a representative cell displaying an intracellular gradient of density. Middle: Density was measured in slices perpendicular to the long axis. Bottom: The new end (non- or slowly growing) exhibited a higher density than the old (growing) end. (B) Density was substantially different between the new and old ends in many cells. Time-lapse QPI was used to measure the densities in regions within 3 µm of each cell end. Shown is the density difference between the cell poles averaged over the cell cycle. Box extends from 25th to 75th percentile, with the median as a horizontal bar. Whiskers indicate extreme points not considered outliers (n = 78 cells). (C) Mean density and amount of tip growth over an entire cell cycle was measured in 3 µm regions at the old (blue) and new (red) ends. Old ends grew more and exhibited lower mean densities over the course of the cell cycle than new ends. Box and whiskers plot is as described in (B). (D) QPI density map of a representative cell at interphase, the start of septum formation, late in septum formation, and after cell division. The gradient of intracellular density in the interphase cell was maintained over time and passed on to the daughter cells. (E) Asymmetric density patterns are propagated to the next cell cycle. The density difference between the two ends of a mother cell correlated with the density difference between the progeny daughter cells. Shown are Pearson’s correlation coefficient between the density difference of daughter cells and the corresponding halves of the mother cell at 5 min (blue) or 35 min (red) before cell division. The halves of the mother cell exhibited a larger range of density differences at the later time point, when they were more consistent with the density differences between daughter cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The new cell end is wider than the old end. The mean width of the region 1.5–3 µm away from the cell pole was extracted for the new and old ends over time and averaged. The average old end width was ~0.15 µm smaller than that of new ends. Boxes indicate 25th and 75th percentiles and horizontal line indicates the median. (B) To address a caveat that differences in QPI density maps may arise from differences in cellular height, we restricted our measurements of average pole density to poles with similar widths (between 3.9 and 4.1 µm, corresponding to the medians in (A)). Tip growth through the cell cycle and average density at the ends were plotted as in Figure 3C. The negative correlation (Pearson’s correlation coefficient) between pole growth and density observed in Figure 3B persisted, suggesting that the difference in measured density between poles is not due to differences in sample height. (C) The density gradient was stable in latrunculin A-treated cells. Cells were treated with latrunculin A and imaged using QPI as in Figure 5. Normalized QPI density plots along the long axis of two individual cells before and 30 min after treatment with latrunculin A. The density gradient was maintained in the absence of F-actin and tip growth.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Cells were fixed and stained with FITC, a dye that stains total protein and RNA (Materials and methods). RNAse treatment removed the RNA staining, revealing the distribution of total protein. Panel shows bright-field (left) and mid-focal plane confocal images (right) of FITC-stained untreated (top) or RNAse-treated cells (bottom). Arrows in the bright-field images indicate the old end (OE) of monopolar cells selected for analysis. Scale bar: 5 µm. (B) Quantification of FITC intensity along the long axis of individual cells normalized by cell length. Intensities were normalized to the maximal value in each trace. Shown are line profiles for a representative subset of cells. Gray boxes depict the regions used to measure FITC signals corresponding to the new end (NE) and old end (OE). (C) The normalized FITC intensity is higher at the NE than at the OE in both untreated (top, n = 64 cells) and RNAse-treated cells (bottom, n = 69 cells). Results are summed intensities of three z-sections separated by 300 nm around the medial focal plane. Similarly significant differences were also observed using a single medial focal plane or summed z-planes spanning the whole cell (data not shown).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig7-v2.jpg)
+
+**Figure 7.:** (A) Left: QPI density map of mid2∆ cells that are delayed in cell separation showed bent septa and density differences between two daughter-cell compartments. Note that the septa are bent away from the denser compartment in all cells in this image. Right: In multi-septated mid2∆ cells, internal compartments bounded by two septa exhibited higher density than the surrounding compartments; in these situations, both septa typically bent away from the higherdensity compartment. (B) The direction of septum bending was almost always toward the lower density daughter cell. The direction of the bent septum was measured at the time of maximum density difference between daughter-cell compartments. (C) An example of a cell in which the direction of septal bending and the sign of the density difference between daughter-cell compartments fluctuated over time. After the bottom compartment decreased and the top compartment increased in density, the septum bent in the opposite direction, consistent with the correlation between bending and density difference in (B).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64901/elife-64901-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) QPI density maps of mid2∆ cells delayed in cell separation often exhibited differences in density between sister-cell compartments, and in most cases, the septum was bent away from the compartment of higher density. (B) QPI density map of cdc16 cells grown at 25°C and then imaged on a microscope pre-heated to 34°C; image shows t = 3 hr time point. These cells often exhibited an asymmetrically positioned septum, which formed a small cellular compartment that grew very little and increased in density and septum bending (arrows).
+
 We noticed asymmetries in density between daughter cells after cell division, in which one of the daughters was denser than its sister. Time-lapse imaging showed that the intracellular density differences established during interphase were often propagated through cell division and correlated with density differences between the progeny daughter cells after cytokinesis (Figure 6D,E). Thus, subcellular density variations are stable enough to be propagated through generations.
 
-## Cell density differences are linked to intracellular osmotic pressure
+### Cell density differences are linked to intracellular osmotic pressure
 
 Next, we ascertained whether density variations of 5–20% – the magnitude observed within and across cells with normal physiology – have physiological consequences. One variable potentially connected with intracellular density is macromolecular crowding. High concentrations of macromolecules are predicted to produce colloid osmotic pressure that may influence cell mechanics (Mitchison, 2019). As noted above, the densities of daughter compartments in septated cells were often different from each other (Figure 6D,E); these differences were often exacerbated in cells with cell-division defects, such as mid1, mid2, and cdc16 cells. We noted that the septum between these daughter cells generally bent away from the more dense compartment (Figure 7A, Figure 7—figure supplement 1A). A similar situation was observed in multi-septated cells in which the internal cellular compartment, whose volume growth is restricted by two septa, increased in density (Figure 7A, right). Previous studies (Atilgan et al., 2015) reported that the septum is an elastic structure that can be used as a biosensor that reports on osmotic pressure differences between compartments. For instance, when one daughter is lysed by laser microsurgery and loses turgor pressure, the septum bulges away from the intact daughter (Atilgan et al., 2015). Temporal fluctuations in septum bending have been proposed to arise from fluctuations in pressure differences between daughter cells (Muñoz et al., 2013).
 
@@ -113,23 +165,180 @@ Despite these changes in density, as a population cells maintained a relatively 
 
 ## Materials and methods
 
-## Strains and cell culturing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Schizosaccharomyces pombe)</td>
+      <td>Wild-type S. pombe</td>
+      <td>Other</td>
+      <td>FC15, h- wild-type strain 972</td>
+      <td>Figures 1, 2, 3, 4, 5 and 6; Figure 1—figure supplement 1, Figure 2—figure supplement 1, Figure 2—figure supplement 2, Figure 2—figure supplement 3, Figure 5—figure supplement 1, Figure 6—figure supplement 1 FC lab collection; https://www.uniprot.org/taxonomy/284812</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. pombe)</td>
+      <td>cdc25-22 mutant</td>
+      <td>Other</td>
+      <td>FC342, h-cdc25-22</td>
+      <td>Figure 3; FC lab collection; https://www.pombase.org/genotype/cdc25-22-C532Y-amino_acid_mutation-expression-not_assayed</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. pombe)</td>
+      <td>cut7-446 mutant</td>
+      <td>Other</td>
+      <td>FC1455, h-cut7-446 leu1-32</td>
+      <td>Figure 4; FC lab collection; https://www.pombase.org/genotype/cut7-446-I954T-amino_acid_mutation-expression-knockdown</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. pombe)</td>
+      <td>cdc16-116 mutant</td>
+      <td>Other</td>
+      <td>FC13, h-cdc16-116</td>
+      <td>Figure 4; FC lab collection; https://www.pombase.org/genotype/cdc16-116-unknown-unknown-expression-not_assayed</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. pombe)</td>
+      <td>mid2 mutant</td>
+      <td>Other</td>
+      <td>FC881 h-mid2::kanMX ade6 leu1-32 ura4-D18</td>
+      <td>Figure 7; FC lab collection; https://www.pombase.org/genotype/mid2delta</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. pombe)</td>
+      <td>gpd1 mutant</td>
+      <td>Other</td>
+      <td>FC3291, h-gpd1::hphMX6ade6-M216leu1-32 ura4-D18his3-D1</td>
+      <td>Figure 6—figure supplement 2 FC lab collection</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: A3608</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Lectin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: L1395</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RNAse</td>
+      <td>Thermo Scientific</td>
+      <td>Cat. #: EN0531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latrunculin A</td>
+      <td>Abacam</td>
+      <td>Cat. #: ab144290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BODIPY 493/503</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: D3922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FITC</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: F7250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OptiPrep</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: D1556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>R2019a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>https://imagej.net/Fiji/Downloads</td>
+      <td>v. 1.53c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Algorithm to retrieve phase information</td>
+      <td>https://bitbucket.org/kchuanglab/quantitative-phase-imaging/src/master/ Bostan et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morphometrics</td>
+      <td>SimTK: Morphometrics: Project Home Ursell et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellASIC Onix2 microfluidic control system</td>
+      <td>Merck</td>
+      <td>Cat. #: CAX2-S0000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellASIC ONIX microfluidic plates</td>
+      <td>Merck</td>
+      <td>Cat. #: Y04C-02-5PK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optical filter</td>
+      <td>Chroma Technology</td>
+      <td>Cat. #: D680/3m</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and cell culturing
 
 All S. pombe strains used in this study are listed in the Key Resources Table. Methods for propagation and growth of S. pombe cells were as described in Moreno et al., 1991. In general, cultures were grown in 3 mL of YE5S medium at 30°C on a rotating shaker overnight to OD600 ~1, diluted to OD600 ~0.1, and incubated until OD600 ~0.3 for imaging. Temperature sensitive mutant cdc25-22 cells (and wild-type control cells) were first grown at room temperature; 90 min after imaging started, the temperature was increased to 32°C. Temperature-sensitive mutant cdc16-116 cells (and wild-type control cells) were first grown at 25°C, then imaged on the microscope with the temperature-controlled enclosure pre-heated to 34°C. Temperature-sensitive mutant cut7-446 cells (and wild-type control cells) were first grown at 25°C, then imaged on the microscope with the temperature-controlled enclosure pre-heated to 30°C.
 
-## Single-cell imaging
+### Single-cell imaging
 
 Images were acquired with a Ti-Eclipse inverted microscope (Nikon) equipped with a 680 nm bandpass filter (D680/30, Chroma Technology) in the illumination path with a 60X (NA: 1.4) DIC oil objective (Nikon). Before imaging, Koehler illumination was configured and the peak illumination intensity at 10 ms exposure time was set to the middle of the dynamic range of the Zyla sCMOS 4.2 camera (Andor Technology). µManager v. 1.41 (Edelstein et al., 2014) was used to automate acquisition of z-stack bright-field images with a step size of 250 nm from ±3 µm around the focal plane (total of 25 imaging planes) to ensure substantial oversampling that facilitated correcting for potential drift in the z-direction over the course of each experiment at 5- or 10 min intervals at multiple (x,y) positions.
 
-## Microfluidics
+### Microfluidics
 
 Cellasic microfluidic flow cell plates (Millipore, Y04C) controlled by an ONIX or ONIX2 (Millipore) microfluidic pump system were used for imaging. YE5S medium was loaded into all but one of the fluid reservoirs; the remaining well was loaded with 100 mg/mL bovine serum albumin (BSA) (Sigma Aldrich) in YE5S. Liquid was flowed from all six channels for at least 5 min at 5 psi (corresponding to 34.5 kPa), followed by 5 min of flow from YE5S-containing wells to wash out buffer and to fill channels and imaging chambers. The plate was kept in a temperature-controlled enclosure (OkoLab) throughout loading. Cells were then transferred into the appropriate well and loaded into the microfluidic imaging chamber such that a small number of cells were initially trapped, and flow of YE5S was applied. To ensure full exchange of liquid in the chamber during imaging, the flow channel was switched at least 40 s before images were acquired. Every ~2 hr, BSA flow was activated during one time point of imaging to calibrate QPI measurements.
 
-## Image analysis to retrieve phase shifts
+### Image analysis to retrieve phase shifts
 
 To reduce post-processing time, each z-stack was cropped to a square region containing the cell(s) of interest and a border of at least 40 pixels, and the focal plane was identified. This cropping was accomplished first using FIJI v. 1.53c to identify regions of interest (ROIs) within a thresholded standard deviation z-projection image of each brightfield z-stack. Using custom Matlab R2019a (Mathworks) scripts, images were cropped to the ROIs and the standard deviation of the pixels in each ROI was computed. The focal plane was defined based on the image in the stack with the lowest standard deviation. Three images above and three images below the focal plane separated by 500 nm were used to quantify cytoplasmic density. Based on these images, the phase information was calculated using a custom Matlab script implementing a previously published algorithm (Bostan et al., 2016). In brief, this method relates the phase information of the cell to bright-field image intensity changes along the z-direction. Equidistant, out-of-focus images above and below the focal plane are used to estimate intensity changes at various defocus distances. A phase-shift map is reconstructed in a non-linear, iterative fashion to solve the transport-of-intensity equation.
 
-## Cytoplasmic density quantification
+### Cytoplasmic density quantification
 
 Using Matlab, images were background-corrected by fitting a Gaussian to the highest peak of the histogram (corresponding to the background pixels) of the phase-shift map and shifting every pixel so that the background intensity peak corresponded to zero phase shift. These background-corrected phase-shift maps were converted into binary images using watershedding for cell segmentation; where necessary, binary images were corrected manually to ensure accurate segmentation. Binary images were segmented using Morphometrics (Ursell et al., 2017) to generate subpixel-resolved cell outlines.
 
@@ -137,36 +346,36 @@ Each cell outline was skeletonized using custom Matlab code as follows. First, t
 
 To convert the mean intensity of the phase-shift within each cell into absolute concentration (in units of mg/mL), the mean of all cells across all time points was first calculated. Then, the decrease in phase shift induced by a prescribed concentration of BSA (typically 100 mg/mL) was defined as the difference between the mean of the phase shifts before and after the BSA imaging time point and the phase shift during the BSA time point. This difference in intensity established the calibration scaling between phase shift intensity and the concentration of BSA (Figure 1B). The cytoplasmic density of each cell was then calculated by dividing the mean phase shift of the cell by the aforementioned scaling factor. The mass of each cell was inferred from its mean density and volume.
 
-## BSA calibration
+### BSA calibration
 
 Channel slides (µ-Slide VI 0.4, ibidi) were treated with lectin (Sigma-Aldrich, L1395) (0.1 mg/mL in water) for ~5 min, washed with YE5S, and cells were added and incubated for ~5 min to allow for attachment. Unattached cells were removed by washing with YE5S. Solutions of BSA (Sigma-Aldrich, A3608) in YE5S were made fresh. Attached cells in the chamber were first imaged in YE5S medium, then shifted transiently to YE5S containing different concentrations of BSA.
 
-## Lipid droplet staining
+### Lipid droplet staining
 
 Lipid droplets were stained with the dye BODIPY 493/503 (Thermo Fisher, D3922) (Meyers et al., 2016). Aliquots (10 µL) of 100 mM BODIPY in absolute ethanol were prepared. Ethanol was then evaporated in a desiccator under vacuum and dried aliquots were stored at 4°C for long-term storage. For use, an aliquot was redissolved in 10 µL absolute ethanol and 1 µL was added to 1 mL of cell culture in YE5S for each unit of cell density with OD600 = 0.1 and incubated protected from light for ~1 min at room temperature. Cells were then pelleted at 0.4 rcf in a microfuge for 1 min and medium was exchanged with fresh YE5S. Cells were spotted onto agarose pads and imaged with an EM-CCD camera (Hamamatsu) through a spinning-disk confocal system (Yokogawa CSU-10) attached to one of the ports of a Nikon Ti-Eclipse inverted microscope with a 488 nm laser. In parallel, bright-field z-stack images were acquired for QPI.
 
-## Lineage tracking for time-lapse imaging datasets
+### Lineage tracking for time-lapse imaging datasets
 
 First, each cell present at the beginning of the experiment was linked to the closest cell in the next frame based on the distance between centers and the difference in their size (cross-sectional area). A cell was considered the same if the centers between consecutive time points were within 20 pixels (~2 µm) and the cross-sectional area was >70% of the area at the previous time point. This process was iterated to define the lineage until either requirement was violated (usually due to cell division), at which point a new lineage was initialized using the earliest unassigned cell. All lineages were visually inspected and corrected when necessary.
 
-## Polar growth and density quantification
+### Polar growth and density quantification
 
 To separately quantify the growth of the new and old ends, fiduciary markers such as birth scars on the cell outline were identified from which the distance to each pole at the beginning and completion of the cell cycle was measured. The density of each polar region was calculated by extracting the peak of the histogram of density values in the region within 3 µm of the pole at each time point, and then calculating the mean over time points. For FITC staining (Knapp et al., 2019), cells were grown in exponential phase in YE5S liquid cultures at 30°C. One milliliter of cell culture was fixed in 4% formaldehyde (Thermo Scientific, Cat. #28906) for 60 min, washed with phosphate buffered saline (PBS), and stored at 4°C. Two hundred microliters of fixed cells were then split into two separate tubes, one of which them was treated with 0.1 mg/mL RNAse (Thermo Scientific, Cat. #EN0531), and both tubes were incubated with shaking for 2 hr at 37°C. Next, cells were washed in PBS and stained with 50 ng/mL FITC (Sigma, Cat. #F7250) in PBS for 30 min, then washed three times in PBS. Cells were mounted on a PBS + 1% agarose pad and imaged in bright field and with 488 nm laser illumination on a spinning disc confocal microscope. Images were acquired with 300 nm z-steps. Monopolar cells (cells growing only at the old end) were selected manually on the basis of their cell shape, as visualized in bright-field images by a person without access to the fluorescence images. Cells were designated as monopolar based on the position of the birthscar at the new end and the characteristic curvatures of growing and non-growing cell ends. For each selected cell, FITC intensity values were calculated from images of a single medial focal plane, a sum of three medial 300 nm z-slices, or a sum of z-slices encompassing the entire cell. To measure the intensity profile along the long axis, FITC signal was measured in a stripe 1.2 µm in width along the long axis. Background intensity was subtracted, and intensities were normalized to the maximum intensity along the line profile within each cell. For comparison between the old end (OE) and new end (NE), intensities were measured in defined regions near the cell poles at 0.2–0.3 (NE) and 0.7–0.8 (OE) along the normalized cell length.
 
-## Suspended microchannel resonator (SMR) measurements
+### Suspended microchannel resonator (SMR) measurements
 
 SMR-based density and volume measurements were carried out according to a previously reported fluid-switching method (Grover et al., 2011). Briefly, the SMR measures the buoyant mass of a cell by flowing in culture medium through a vibrating cantilever and measuring changes in vibration frequency. The cell is then mixed with a denser medium composed of 50% culture medium and 50% OptiPrep (Sigma-Aldrich), and flowed back through the cantilever to obtain a second buoyant mass measurement 10 s later. Cell volume and density are calculated from the two consecutive buoyant mass measurements based on the known densities of the two fluids (Grover et al., 2011). Each cell is serially flushed into the system in culture medium from a reservoir at 30°C. After every hour of measurement, the reservoir is replenished from an exponential-phase culture.
 
 SMR devices were fabricated at CEA-LETI (Grenoble, France). The physical dimensions and operation of the SMR, as well as data analyses, were identical to those reported in Miettinen et al., 2019; Kang et al., 2019. Briefly, the SMR cantilever was vibrated in the second flexural bending mode using a piezo-ceramic plate underneath the SMR chip. The vibration frequency of the cantilever was measured using piezo-resistors at the base of the cantilever. A digital control platform was used to drive the cantilever in a feedback mode, where the vibration frequency signal acquired from the piezo-resistor was delayed, amplified, and used as the drive signal to actuate the cantilever. Fluid flow was controlled using two electronic pressure regulators and solenoid valves, which were used to pressurize vials containing the culture medium. A typical cell transit time through the cantilever was 150 ms. System temperature was controlled by mounting the SMR and culture-medium vials on copper stands connected to a heated water bath. All SMR operations were controlled using National Instruments control cards and custom LabVIEW (2012) code. Frequency data were analyzed using previously reported custom Matlab code that measures the maximum frequency change during the transit of each cell through the cantilever (Kang et al., 2019). Frequency measurements were calibrated using polystyrene beads and NaCl solutions of known density.
 
-## Holographic refractive index measurements
+### Holographic refractive index measurements
 
 For refractive index measurements, wild-type S. pombe cells grown at 30°C were immobilized on a lectin-coated glass-bottom 35 mm diameter µ-dish (ibidi). Holographic refractive index measurements were acquired with a 3D Cell Explorer system (Nanolive) with a temperature-controlled enclosure set to 30°C. First, sum images of z-stacks of three-dimensional refractive index maps were generated to retrieve cell outlines by watershedding. Cells oriented at an angle to the flat glass bottom dish were ignored. For each remaining cell, the mean refractive index was extracted from each image in the z-stack using Matlab and the highest value (assumed to correspond to the middle plane) was used for further analysis.
 
-## Latrunculin A treatment
+### Latrunculin A treatment
 
 Stock solutions were made by dissolving 100 µg latrunculin A (Abacam, ab144290) in dimethyl sulfoxide (DMSO, Sigma-Aldrich) to a concentration of 20 mM and stored at −20°C in 1 µL aliquots. To prepare agarose pads, 1 µL of 20 mM latrunculin A or 1 µL of DMSO was mixed with 100 µL of YE5S medium containing 2% (w/v) agarose UltraPure agarose (Invitrogen Corporation) kept in a water bath at ~70°C. The mixture was pipetted onto a microscope glass slide and quickly covered with another slide to form flat agarose pads with thickness of ~2 mm. Once pads had solidified, one slide was carefully removed and 1–2 µL of exponential-phase wild-type cells were deposited on the agarose pad. Cells were allowed to settle for 1–2 min before a coverslip was placed on top and sides were sealed with Valap (1:1:1 vaseline:lanolin:paraffin) to prevent evaporation during imaging.
 
-## Statistical analyses
+### Statistical analyses
 
 The magnitude of the correlation between two continuous variables was reported using Pearson’s correlation coefficient. R2 and associated p-values were calculated using the built-in function corrcoef in Matlab R2019a (Mathworks). Experiments are representative of at least two biological replicates with independent data sets.

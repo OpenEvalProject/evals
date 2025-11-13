@@ -17,23 +17,23 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Department of Mathematics, Imperial College London London United Kingdom
-2. https://ror.org/037n2rm85 Amsterdam Institute for Global Health and Development Amsterdam Netherlands
-3. https://ror.org/02w6k4f12 Stichting HIV Monitoring Amsterdam Netherlands
-4. https://ror.org/04gnjpq42 Department of Hygiene, Epidemiology and Medical Statistics, University of Athens Athens Greece
-5. https://ror.org/01cesdt21 Center for Infectious Diseases Prevention and Control, National Institute for Public Health and the Environment (RIVM) Bilthoven Netherlands
-6. https://ror.org/01fm2fv39 Department of Donor Medicine Research, Sanquin Amsterdam Netherlands
-7. https://ror.org/01d02sf11 Department of Medical Microbiology, Onze Lieve Vrouwe Gasthuis Amsterdam Netherlands
-8. https://ror.org/052gg0110 Big Data Institute, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-9. https://ror.org/03t4gr691 Academic Medical Center Amsterdam Netherlands
-10. https://ror.org/05grdyy37 Department of Global Health, Amsterdam University Medical Centers Amsterdam Netherlands
+1. Department of Mathematics, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Amsterdam Institute for Global Health and Development Amsterdam Netherlands ([ROR:037n2rm85](https://ror.org/037n2rm85))
+3. Stichting HIV Monitoring Amsterdam Netherlands ([ROR:02w6k4f12](https://ror.org/02w6k4f12))
+4. Department of Hygiene, Epidemiology and Medical Statistics, University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))
+5. Center for Infectious Diseases Prevention and Control, National Institute for Public Health and the Environment (RIVM) Bilthoven Netherlands ([ROR:01cesdt21](https://ror.org/01cesdt21))
+6. Department of Donor Medicine Research, Sanquin Amsterdam Netherlands ([ROR:01fm2fv39](https://ror.org/01fm2fv39))
+7. Department of Medical Microbiology, Onze Lieve Vrouwe Gasthuis Amsterdam Netherlands ([ROR:01d02sf11](https://ror.org/01d02sf11))
+8. Big Data Institute, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+9. Academic Medical Center Amsterdam Netherlands ([ROR:03t4gr691](https://ror.org/03t4gr691))
+10. Department of Global Health, Amsterdam University Medical Centers Amsterdam Netherlands ([ROR:05grdyy37](https://ror.org/05grdyy37))
 11. Division of Infectious Diseases, Department of Internal Medicine, Amsterdam Infection and Immunity Institute Amsterdam Netherlands
 
 † Corresponding author
 
 ## Abstract
 
-More than 300 cities including the city of Amsterdam in the Netherlands have joined the UNAIDS Fast-Track Cities initiative, committing to accelerate their HIV response and end the AIDS epidemic in cities by 2030. To support this commitment, we aimed to estimate the number and proportion of Amsterdam HIV infections that originated within the city, from Amsterdam residents. We also aimed to estimate the proportion of recent HIV infections during the 5-year period 2014–2018 in Amsterdam that remained undiagnosed. We located diagnosed HIV infections in Amsterdam using postcode data (PC4) at time of registration in the ATHENA observational HIV cohort, and used HIV sequence data to reconstruct phylogeographically distinct, partially observed Amsterdam transmission chains. Individual-level infection times were estimated from biomarker data, and used to date the phylogenetically observed transmission chains as well as to estimate undiagnosed proportions among recent infections. A Bayesian Negative Binomial branching process model was used to estimate the number, size, and growth of the unobserved Amsterdam transmission chains from the partially observed phylogenetic data. Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents, of whom 516 (61%) were estimated to have been infected in 2014–2018. The rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000), and in this sense Amsterdam remained a HIV hotspot in the Netherlands. An estimated 14% [12–16%] of infections in Amsterdan MSM in 2014–2018 remained undiagnosed by 1 May 2019, and 41% [35–48%] in Amsterdam heterosexuals, with variation by region of birth. An estimated 67% [60–74%] of Amsterdam MSM infections in 2014–2018 had an Amsterdam resident as source, and 56% [41–70%] in Amsterdam heterosexuals, with heterogeneity by region of birth. Of the locally acquired infections, an estimated 43% [37–49%] were in foreign-born MSM, 41% [35–47%] in Dutch-born MSM, 10% [6–18%] in foreign-born heterosexuals, and 5% [2–9%] in Dutch-born heterosexuals. We estimate the majority of Amsterdam MSM infections in 2014–2018 originated in transmission chains that pre-existed by 2014. This combined phylogenetic, epidemiologic, and modelling analysis in the UNAIDS Fast-Track City Amsterdam indicates that there remains considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions. The burden of locally acquired infection remains concentrated in MSM, and both Dutch-born and foreign-born MSM would likely benefit most from intensified city-level interventions. This study received funding as part of the H-TEAM initiative from Aidsfonds (project number P29701). The H-TEAM initiative is being supported by Aidsfonds (grant number: 2013169, P29701, P60803), Stichting Amsterdam Dinner Foundation, Bristol-Myers Squibb International Corp. (study number: AI424-541), Gilead Sciences Europe Ltd (grant number: PA-HIV-PREP-16-0024), Gilead Sciences (protocol numbers: CO-NL-276-4222, CO-US-276-1712, CO-NL-985-6195), and M.A.C AIDS Fund.
+Background:More than 300 cities including the city of Amsterdam in the Netherlands have joined the UNAIDS Fast-Track Cities initiative, committing to accelerate their HIV response and end the AIDS epidemic in cities by 2030. To support this commitment, we aimed to estimate the number and proportion of Amsterdam HIV infections that originated within the city, from Amsterdam residents. We also aimed to estimate the proportion of recent HIV infections during the 5-year period 2014–2018 in Amsterdam that remained undiagnosed.Methods:We located diagnosed HIV infections in Amsterdam using postcode data (PC4) at time of registration in the ATHENA observational HIV cohort, and used HIV sequence data to reconstruct phylogeographically distinct, partially observed Amsterdam transmission chains. Individual-level infection times were estimated from biomarker data, and used to date the phylogenetically observed transmission chains as well as to estimate undiagnosed proportions among recent infections. A Bayesian Negative Binomial branching process model was used to estimate the number, size, and growth of the unobserved Amsterdam transmission chains from the partially observed phylogenetic data.Results:Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents, of whom 516 (61%) were estimated to have been infected in 2014–2018. The rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000), and in this sense Amsterdam remained a HIV hotspot in the Netherlands. An estimated 14% [12–16%] of infections in Amsterdan MSM in 2014–2018 remained undiagnosed by 1 May 2019, and 41% [35–48%] in Amsterdam heterosexuals, with variation by region of birth. An estimated 67% [60–74%] of Amsterdam MSM infections in 2014–2018 had an Amsterdam resident as source, and 56% [41–70%] in Amsterdam heterosexuals, with heterogeneity by region of birth. Of the locally acquired infections, an estimated 43% [37–49%] were in foreign-born MSM, 41% [35–47%] in Dutch-born MSM, 10% [6–18%] in foreign-born heterosexuals, and 5% [2–9%] in Dutch-born heterosexuals. We estimate the majority of Amsterdam MSM infections in 2014–2018 originated in transmission chains that pre-existed by 2014.Conclusions:This combined phylogenetic, epidemiologic, and modelling analysis in the UNAIDS Fast-Track City Amsterdam indicates that there remains considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions. The burden of locally acquired infection remains concentrated in MSM, and both Dutch-born and foreign-born MSM would likely benefit most from intensified city-level interventions.Funding:This study received funding as part of the H-TEAM initiative from Aidsfonds (project number P29701). The H-TEAM initiative is being supported by Aidsfonds (grant number: 2013169, P29701, P60803), Stichting Amsterdam Dinner Foundation, Bristol-Myers Squibb International Corp. (study number: AI424-541), Gilead Sciences Europe Ltd (grant number: PA-HIV-PREP-16-0024), Gilead Sciences (protocol numbers: CO-NL-276-4222, CO-US-276-1712, CO-NL-985-6195), and M.A.C AIDS Fund.
 
 ## Introduction
 
@@ -49,25 +49,37 @@ Here, we build on Amsterdam’s combined case and genomic surveillance data to r
 
 ## Materials and methods
 
-## Demographic and clinical cohort data comprising city-level infections
+### Demographic and clinical cohort data comprising city-level infections
 
 Data were obtained from the prospective ATHENA cohort of all people living with HIV (PLHIV) in care in the Netherlands, including patient demographics and longitudinal CD4, HIV viral load, viral sequence, and treatment data (see Appendix 1, Section 2) (Boender et al., 2018). Sequencing methods are described previously (Bezemer et al., 2004). Cohort data are near complete in the sense that 2% of individuals opted out of participating in the ATHENA study, and 5.2% of individuals who entered ATHENA were lost to follow-up (Boender et al., 2018; Sighem et al., 2020). We geolocated diagnosed infections to Amsterdam based on patients’ postcode of residence at time of first registration in ATHENA or the most recent registration update, which includes PLHIV that changed residence to Amsterdam at a registration update (4%), PLHIV that changed residence to another Dutch municipality after first registration (4%), and PLHIV that were consistently resident in Amsterdam (92%).
 
-Participants were stratified by region of birth: MSM (The Netherlands; Western Europe, North America, Oceania; Eastern and Central Europe; South America and the Caribbean; Other), and heterosexual individuals (The Netherlands; South America and the Caribbean; Sub-Saharan Africa; Other), resulting in 9 risk groups in total. Throughout, we denote transmission group (Amsterdam MSM or heterosexuals) by t, and geographic region of birth by r.
+Participants were stratified by region of birth: MSM (The Netherlands; Western Europe, North America, Oceania; Eastern and Central Europe; South America and the Caribbean; Other), and heterosexual individuals (The Netherlands; South America and the Caribbean; Sub-Saharan Africa; Other), resulting in 9 risk groups in total. Throughout, we denote transmission group (Amsterdam MSM or heterosexuals) by $t$, and geographic region of birth by $r$.
 
 We here focus on city-level transmission chains growing in the period from 1 January 2014 to 31 December 2018, which for brevity we refer to as 2014–2018. Available demographic, clinical, and viral sequence data were obtained for HIV diagnoses in Amsterdam from the ATHENA database version closed on 1 May 2019.
 
-## Estimating HIV infection dates and undiagnosed infections
+### Estimating HIV infection dates and undiagnosed infections
 
 Using longitudinal viral load and CD4 count data and further demographic and clinical information, we estimated time from infection to diagnosis for all HIV diagnosed patients with a Bayesian approach (Pantazis et al., 2019). Briefly, data from the CASCADE collaboration on 19,788 observed HIV seroconverters were used to parameterize a bivariate normal linear model of the joint time evolution of HIV viral load and CD4 cell count decline since time of infection in the context of additional covariates (sex, region of origin, mode of infection, age at time of diagnosis). Then we used the trained model to estimate infection times from longitudinal biomarker data for Amsterdam patients, with an average of four viral load observations and six CD4 cell count observations per patient. We next reconstructed characteristic time-to-diagnosis distributions for each of the nine Amsterdam risk groups (MSM/heterosexual, and region of birth) with a Bayesian hierarchical model from the individual-level estimates, modelling the individual-level estimates with a Weibull distribution. To avoid censoring of infection-to-diagnosis times, we focused analyses on the subset of infections in 2010–2012 which were diagnosed by 1 May 2019 since most infections in this window would have been diagnosed by the close of study, and assume as supported by mathematical models that time-to-diagnosis did not change substantially in 2010–2019 (Sighem, 2017; Sighem et al., 2017). The model was implemented with Stan version 2.21 (Carpenter et al., 2017). Full details are provided in Appendix 1, Section 3.
 
-We then calculated the proportion of infections in each year y=2014,...,2018 in each of the 9 Amsterdam risk groups that were not diagnosed by database closure (which we denote by δtry ) from the fitted model. To adjust for trends in incidence over time, the annual estimates were weighted by the estimated number of HIV infections in each year among Amsterdam MSM and heterosexual individuals without stratifiction by inmigrant status, according to the European Centre for Disease Control and Prevention (ECDC) HIV modelling tool for Amsterdam, version 1.3.0 (Stockholm: European Centre for Disease Prevention and Control, 2017) through weights, , (1)ωty= NtyInf-ECDC∑z∈YNtzInf-ECDC
+We then calculated the proportion of infections in each year $y=2014,...,2018$ in each of the 9 Amsterdam risk groups that were not diagnosed by database closure (which we denote by $\delta_{try }$) from the fitted model. To adjust for trends in incidence over time, the annual estimates were weighted by the estimated number of HIV infections in each year among Amsterdam MSM and heterosexual individuals without stratifiction by inmigrant status, according to the European Centre for Disease Control and Prevention (ECDC) HIV modelling tool for Amsterdam, version 1.3.0 (Stockholm: European Centre for Disease Prevention and Control, 2017) through weights,
 
-where y=2014,...,2018 and NtyInf-ECDC are the estimated total number of infections in year y in Amsterdam MSM or heterosexuals. We then obtained an overall estimate of the proportion of undiagnosed infections in 2014–2018, δtr , by applying these weights to the yearly proportions through(2)δtr =∑y∈Yωty δtry
+$$
+\omega_{ty}= \frac{N_{ty}^{Inf-ECDC}}{\sumz\inYN_{tz}^{Inf-ECDC} }
+$$
 
-Recognizing the limitations in applying weights that do not account for differences by place of birth, we used in sensitivity analyses as weights the observed trends in the number of annual HIV diagnoses in the corresponding Amsterdam risk group. The total number of Amsterdam infections in 2014–2018 including the undiagnosed (which we denote by NtrInf) was next estimated by dividing the number of diagnosed Amsterdam infections in 2014–2018 (which we denote by NtrD) with the estimated proportion of diagnosed individuals,(3)NtrInf=NtrD 1-δtr
+where y=2014,...,2018 and $N_{ty}^{Inf-ECDC}$ are the estimated total number of infections in year $y$ in Amsterdam MSM or heterosexuals. We then obtained an overall estimate of the proportion of undiagnosed infections in 2014–2018, $\delta_{tr}$ , by applying these weights to the yearly proportions through
 
-## Phylogenetic reconstruction of transmission chains among Amsterdam residents
+$$
+\delta_{tr }=\sumy\inY\omega_{ty }\delta_{try }
+$$
+
+Recognizing the limitations in applying weights that do not account for differences by place of birth, we used in sensitivity analyses as weights the observed trends in the number of annual HIV diagnoses in the corresponding Amsterdam risk group. The total number of Amsterdam infections in 2014–2018 including the undiagnosed (which we denote by $N_{tr}^{Inf}$) was next estimated by dividing the number of diagnosed Amsterdam infections in 2014–2018 (which we denote by $N_{tr}^{D}$) with the estimated proportion of diagnosed individuals,
+
+$$
+N_{tr}^{Inf}=\frac{N_{tr}^{D} }{1-\delta_{tr }}
+$$
+
+### Phylogenetic reconstruction of transmission chains among Amsterdam residents
 
 To reconstruct distinct HIV transmission chains among Amsterdam residents, we used the first available partial HIV-1 polymerase (pol) sequence from Amsterdam PLHIV, Dutch PLHIV from outside Amsterdam, and ~82,000 pol sequences from non-Dutch PLHIV. The non-Dutch viral sequences were retrieved from the Los Alamos HIV-1 sequence database subject to a length of at least 1300 in the pol gene on March 2, 2020 (www.hiv.lanl.gov). The basic local alignment search tool (BLAST v2.10.0) was used to select the top 20 closest background sequences to any Dutch sequence (Altschul et al., 1990). All sequences were subtyped using Comet v2.3 (Struck et al., 2014). Sequences with an uncertain subtype classification using Comet were analysed with Rega v3.0 (Pineda-Peña et al., 2013). Any remaining sequences for which a subtype could not be resolved were discarded from further analysis (n=122). Subtype-specific alignments were generated with Virulign (Libin et al., 2019) (Appendix 1 Section 4.1) and sequences from other subtypes were added as outgroup for the purpose of phylogenetic rooting. The final alignments were trimmed to positions 2253–3870 in the reference genome HXB2 (Ratner et al., 1985).
 
@@ -77,49 +89,190 @@ In the labelled phylogeny, the lineage labels jump backwards in time, for exampl
 
 We classified phylogenetically reconstructed transmission chains by the infection dates that we estimated from each patient’s diagnosis date, risk group, age, CD4 trajectory and viral load trajectory. Chains were classified as ‘pre-existing’ if at least one of its members had a posterior median infection date before 2014, and as ‘emerging’ if all members had a posterior median infection date after January 1, 2014.
 
-## Virally unsuppressed transmission chains
+### Virally unsuppressed transmission chains
 
 For all pre-existing chains, we determined the number of infectious individuals at the start of 2014 from viral load data. Specifically, we defined patients as suppressed by 2014 if their last viral load measurement before 2014 was below 100 copies/ml, and count for each pre-existing chain its suppressed and unsuppressed members by 2014.
 
-## Estimating the growth of city-level transmission chains
+### Estimating the growth of city-level transmission chains
 
-Because of the large number of late presenters and incomplete sequence coverage in diagnosed patients, the phylogenetically observed transmission chains are incomplete and statistical models were required to estimate the growth and origins of Amsterdam transmission chains. We here extended the Bayesian branching process model of Bezemer et al., 2022 to estimate the growth of pre-existing transmission chains. Specifically, given m=1,...,M index cases of a chain that pre-existed, the final size distribution of stuttering transmission chains is under a Negative Binomial branching process model given by(4)c(i|μm,ϕm)=mm+iNegBin(i|μm,ϕm)
+Because of the large number of late presenters and incomplete sequence coverage in diagnosed patients, the phylogenetically observed transmission chains are incomplete and statistical models were required to estimate the growth and origins of Amsterdam transmission chains. We here extended the Bayesian branching process model of Bezemer et al., 2022 to estimate the growth of pre-existing transmission chains. Specifically, given $m=1,...,M$ index cases of a chain that pre-existed, the final size distribution of stuttering transmission chains is under a Negative Binomial branching process model given by
 
-where NegBin is the Negative Binomial distribution characterised by mean μm and dispersion parameter ϕm, i=0,1,2,... is the number of new cases, and μ < 1. Incomplete sampling of new cases can be accommodated via  (5)cobs(i|m,μ,ϕ,ρ)=∑k=1∞Bin(i|k,p)c(k|m,μ,ρ)=∑k=1∞Bin(i|k,ρ)mm+kNegBin(k|μm,ϕm),
+$$
+c(i|\mum,ϕm)=\frac{m}{m+i}NegBin(i|\mum,ϕm)
+$$
 
-where ρ denotes the probability that a new case in 2014–2018 is diagnosed and has a viral sequence sampled by database closure. In the model, the index cases are assumed to be infectious and defined by the number of unsuppressed members by 2014 in a pre-existing chain, adjusted for the sampling probability of such members. We further capped the infinite sum in (3) in the model, recognizing that the summands rapidly tend to zero. The corresponding equation for emergent transmission chains (since 2014 as defined above) is similar, , (6)c~obs(n|m=1,μ,ϕ,ρ)=∑z=n∞Bin(n|z,ρ)1zNegBin(z−1|μ,ϕ)1−∑z=n∞((1−ρ)z1zNegBin(z−1|μ,ϕ))
+where NegBin is the Negative Binomial distribution characterised by mean $\mum$ and dispersion parameter $ϕm$, $i=0,1,2,...$ is the number of new cases, and μ < 1. Incomplete sampling of new cases can be accommodated via
 
-where n=1,2,... are the total number of observed cases in an emerging chain. We then denote with xs and x∼s respectively the observed growth distributions for the phylogenetically observed, pre-existing and emergent transmission chains in the phylogeny of subtype/ recombinant form, and for either Amsterdam MSM or heterosexuals, which we denote by s. Here, xs is a matrix with rows indicating the number of index cases and columns indicating the number of new cases, and x∼s is a row vector with rows indicating the total number of cases in emerging chains. For ease of reading, we suppress the subscripts where possible from now on. The likelihood then comprises the growth distributions of emerging chains, pre-existing chains that continued to grow, and pre-existing chains with unsuppressed members that did not grow, with the following log-likelihood,(7)l(x,x~|μ,ϕ,ρ)=∑m=1M∑i=0Ixmilogcobs(i|m,μ,ϕ,ρ)+∑n=1Nx~nlogc~obs(n|m=1,μ,ϕ,ρ),
+$$
+c_{obs}(i|m,\mu,ϕ,ρ)=\sum_{k=1}^{∞}Bin(i|k,p)c(k|m,\mu,ρ)=\sum_{k=1}^{∞}Bin(i|k,ρ)\frac{m}{m+k}NegBin(k|\mum,ϕm),
+$$
 
-where M is the largest number of index cases observed across the chains after adjusting for sampling, I is the largest number of new cases observed in pre-existing chains and N is the largest number of new cases observed in emergent chains, including the first case. Pre-existing chains for which all members were suppressed by 2014 and which did not grow were not included, because these chains had no unsuppressed index case. Due to small counts, we grouped the observed growth distributions for the phylogenetically observed transmission chains for non-B subtypes together before fitting the model. We fitted the branching process model under a Bayesian framework with Stan version 2.21 to the observed growth distributions among MSM, borrowing information across subtypes B and non-B, and similarly for heterosexuals. The primary output of the model are posterior predictive distributions on the number, size and growth of the actual transmission chains among Amsterdam residents, both for MSM and heterosexuals, and by viral subtype. This includes emerging chains that were entirely unsampled. Full details are provided in Appendix 1, Section 6.
+where $ρ$ denotes the probability that a new case in 2014–2018 is diagnosed and has a viral sequence sampled by database closure. In the model, the index cases are assumed to be infectious and defined by the number of unsuppressed members by 2014 in a pre-existing chain, adjusted for the sampling probability of such members. We further capped the infinite sum in (3) in the model, recognizing that the summands rapidly tend to zero. The corresponding equation for emergent transmission chains (since 2014 as defined above) is similar,
 
-## Derived statistical estimates
+$$
+c~_{obs}(n|m=1,\mu,ϕ,ρ)=\frac{\sumz=n∞Bin(n|z,ρ)\frac{1}{z}NegBin(z−1|\mu,ϕ)}{1−\sumz=n∞((1−ρ)^{z}\frac{1}{z}NegBin(z−1|\mu,ϕ)) }
+$$
 
-Given estimates of the number and growth of both pre-existing and emergent transmission chains, it is straightforward to derive estimates of the proportion of HIV infections among Amsterdam residents in 2014–2018 that had an Amsterdam resident as source (which we denote by γ and refer to as the proportion of locally acquired infections). This is because all infections originating from an individual living in Amsterdam had a local source, except the index cases in the emerging chains that were introduced from outside of Amsterdam. Ignoring population subgroups for the derivation, we have(8)γ=NI - α NCNI,
+where $n=1,2,...$ are the total number of observed cases in an emerging chain. We then denote with $x_{s}$ and $x∼_{s}$ respectively the observed growth distributions for the phylogenetically observed, pre-existing and emergent transmission chains in the phylogeny of subtype/ recombinant form, and for either Amsterdam MSM or heterosexuals, which we denote by $s$. Here, $x_{s}$ is a matrix with rows indicating the number of index cases and columns indicating the number of new cases, and $x∼_{s}$ is a row vector with rows indicating the total number of cases in emerging chains. For ease of reading, we suppress the subscripts where possible from now on. The likelihood then comprises the growth distributions of emerging chains, pre-existing chains that continued to grow, and pre-existing chains with unsuppressed members that did not grow, with the following log-likelihood,
 
-where NI is the estimated number of new infections between 2014 and 2018 in Amsterdam residents, NC is the estimated number of transmission chains which emerged between 2014 and 2018 and α is the estimated proportion of emergent transmission chains with an Amsterdam origin. Since each transmission chain has one index case, α NC is the estimated number of infections with non-Amsterdam origin, and NI−αNC is the estimated number of infections that had an Amsterdam resident as a source.
+$$
+l(x,x~|\mu,ϕ,ρ)=\sum_{m=1}^{M}\sum_{i=0}^{I}x_{mi}logc_{obs}(i|m,\mu,ϕ,ρ)+\sum_{n=1}^{N}x~_{n}logc~_{obs}(n|m=1,\mu,ϕ,ρ),
+$$
 
-Using Equation 8, we were able to obtain estimates (8) for Amsterdam MSM residents and Amsterdam heterosexual residents, and for each phylogeny, that is stratified further by each of the major subtypes and recombinant forms (which we denote by γs ). To obtain estimates stratified by the nine Amsterdam risk groups of interest (where t denotes transmission group MSM or heterosexual and r denotes geographic region of birth), we calculated weighted averages of the γts  across chains and subtypes, with the weight determined as the proportion of the infected individuals in transmission group t (i.e. either MSM or heterosexuals) from region of birth r that are infected with subtype/recombinant form s. Specifically, , (9)γtr=∑sϵSvtsrγts,
+where $M$ is the largest number of index cases observed across the chains after adjusting for sampling, $I$ is the largest number of new cases observed in pre-existing chains and $N$ is the largest number of new cases observed in emergent chains, including the first case. Pre-existing chains for which all members were suppressed by 2014 and which did not grow were not included, because these chains had no unsuppressed index case. Due to small counts, we grouped the observed growth distributions for the phylogenetically observed transmission chains for non-B subtypes together before fitting the model. We fitted the branching process model under a Bayesian framework with Stan version 2.21 to the observed growth distributions among MSM, borrowing information across subtypes B and non-B, and similarly for heterosexuals. The primary output of the model are posterior predictive distributions on the number, size and growth of the actual transmission chains among Amsterdam residents, both for MSM and heterosexuals, and by viral subtype. This includes emerging chains that were entirely unsampled. Full details are provided in Appendix 1, Section 6.
 
-where the proportions νtsr are for brevity defined in Appendix 1 Section 7. We interpret γtr  as the proportion of Amsterdam infections in transmission risk group t, from geographic region r, that have the potential to be preventable through local interventions.
+### Derived statistical estimates
 
-## Ethics
+Given estimates of the number and growth of both pre-existing and emergent transmission chains, it is straightforward to derive estimates of the proportion of HIV infections among Amsterdam residents in 2014–2018 that had an Amsterdam resident as source (which we denote by $\gamma$ and refer to as the proportion of locally acquired infections). This is because all infections originating from an individual living in Amsterdam had a local source, except the index cases in the emerging chains that were introduced from outside of Amsterdam. Ignoring population subgroups for the derivation, we have
+
+$$
+\gamma=\frac{N^{I} - \alpha N^{C}}{N^{I}},
+$$
+
+where $N^{I}$ is the estimated number of new infections between 2014 and 2018 in Amsterdam residents, $N^{C}$ is the estimated number of transmission chains which emerged between 2014 and 2018 and $\alpha$ is the estimated proportion of emergent transmission chains with an Amsterdam origin. Since each transmission chain has one index case, $\alpha N^{C}$ is the estimated number of infections with non-Amsterdam origin, and $N^{I}−\alphaN^{C}$ is the estimated number of infections that had an Amsterdam resident as a source.
+
+Using Equation 8, we were able to obtain estimates (8) for Amsterdam MSM residents and Amsterdam heterosexual residents, and for each phylogeny, that is stratified further by each of the major subtypes and recombinant forms (which we denote by $\gamma_{s }$). To obtain estimates stratified by the nine Amsterdam risk groups of interest (where $t$ denotes transmission group MSM or heterosexual and $r$ denotes geographic region of birth), we calculated weighted averages of the $\gamma_{ts }$ across chains and subtypes, with the weight determined as the proportion of the infected individuals in transmission group $t$ (i.e. either MSM or heterosexuals) from region of birth $r$ that are infected with subtype/recombinant form s. Specifically,
+
+$$
+\gamma_{tr}=\sum_{sϵS}v_{tsr}\gamma_{ts},
+$$
+
+where the proportions $ν_{tsr}$ are for brevity defined in Appendix 1 Section 7. We interpret $\gamma_{tr }$ as the proportion of Amsterdam infections in transmission risk group $t$, from geographic region $r$, that have the potential to be preventable through local interventions.
+
+### Ethics
 
 As from 2002 ATHENA is managed by Stichting HIV Monitoring, the institution appointed by the Dutch Ministry of Public health, Welfare and Sport for the monitoring of people living with HIV in the Netherlands. People entering HIV care receive written material about participation in the ATHENA cohort and are informed by their treating physician on the purpose of data collection, thereafter they can consent verbally or elect to opt-out. Data are pseudonymised before being provided to investigators and may be used for scientific purposes. A designated data protection officer safeguards compliance with the European General Data Protection Regulation (Boender et al., 2018).
 
 ## Results
 
-## Substantial declines in HIV diagnoses and infections in Amsterdam
+### Substantial declines in HIV diagnoses and infections in Amsterdam
 
 Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents who self-identified as MSM (75%) or heterosexual (20%). Of the remaining diagnoses, 1 (<1%) was among injecting drug users (IDU), 12 (1%) were through other modes of transmission and 30 (3%) had an unknown mode of transmission. A total of 275 (33%) of the diagnoses in MSM and heterosexuals presented with a CD4 count below 350, with late presentation being higher among heterosexuals. All diagnosed patients had biomarker data available to estimate time to diagnosis, and 516 of 846 (61%) were estimated to have been infected between 2014 and 2018 based on the posterior median infection time estimate (Table 1). In the preceding 5-year period 2009–2013, there were 1436 HIV diagnoses in Amsterdam and a similar proportion of these presented late (567, 39%). There were 1128 diagnoses with estimated infection in 2009–2013, suggesting a substantial reduction in infections in 2014–2018. Yet, the rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000), and in this sense Amsterdam remains a HIV hotspot in the Netherlands.
 
-## Nine of ten Amsterdam diagnoses and infections are in MSM
+**Table 1.**
+ HIV infections among Amsterdam residents in 2014-2018.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Risk group</th>
+      <th>Observed HIV diagnoses in Amsterdam residents in 2014-May 2019(n)</th>
+      <th>Observed HIV diagnoses in Amsterdam residents in 2014-May 2019 with CD4 &lt;350(n)</th>
+      <th>Observed HIV diagnoses in Amsterdam residents, estimated to have been infected in 2014–2018(n)</th>
+      <th>Estimated undiagnosed HIV infections in Amsterdam residents until May 2019(%)</th>
+      <th>Estimated HIV infections in Amsterdam residents in 2014–2018(n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>846</td>
+      <td>275</td>
+      <td>516</td>
+      <td>19% [17–21%]</td>
+      <td>636 [620-656]</td>
+    </tr>
+    <tr>
+      <td>MSM (all)</td>
+      <td>671</td>
+      <td>192</td>
+      <td>446</td>
+      <td>14% [12–16%]</td>
+      <td>516 [506-529]</td>
+    </tr>
+    <tr>
+      <td>MSM (Dutch-born)</td>
+      <td>298</td>
+      <td>103</td>
+      <td>190</td>
+      <td>11% [9–13%]</td>
+      <td>214 [209-219]</td>
+    </tr>
+    <tr>
+      <td>MSM (Born in W. Europe, N. America and Oceania)</td>
+      <td>100</td>
+      <td>12</td>
+      <td>80</td>
+      <td>9% [6–14%]</td>
+      <td>88 [85-93]</td>
+    </tr>
+    <tr>
+      <td>MSM (Born in E. and C. Europe)</td>
+      <td>51</td>
+      <td>8</td>
+      <td>32</td>
+      <td>16% [11–24%]</td>
+      <td>38 [36-42]</td>
+    </tr>
+    <tr>
+      <td>MSM (Born in S. America and the Caribbean)</td>
+      <td>124</td>
+      <td>38</td>
+      <td>83</td>
+      <td>17% [13–22%]</td>
+      <td>100 [95-107]</td>
+    </tr>
+    <tr>
+      <td>MSM (Born in any other country)</td>
+      <td>98</td>
+      <td>31</td>
+      <td>61</td>
+      <td>20% [14–27%]</td>
+      <td>76 [71-83]</td>
+    </tr>
+    <tr>
+      <td>Heterosexuals (all)</td>
+      <td>175</td>
+      <td>83</td>
+      <td>70</td>
+      <td>41% [35–48%]</td>
+      <td>119 [107-135]</td>
+    </tr>
+    <tr>
+      <td>Heterosexuals (Dutch-born)</td>
+      <td>51</td>
+      <td>19</td>
+      <td>23</td>
+      <td>30% [21–44%]</td>
+      <td>33 [29-41]</td>
+    </tr>
+    <tr>
+      <td>Heterosexuals (Born in Sub-Saharan Africa)</td>
+      <td>67</td>
+      <td>36</td>
+      <td>17</td>
+      <td>57% [47–67%]</td>
+      <td>40 [32-51]</td>
+    </tr>
+    <tr>
+      <td>Heterosexuals (Born in S. America and the Caribbean)</td>
+      <td>37</td>
+      <td>18</td>
+      <td>21</td>
+      <td>28% [19–42%]</td>
+      <td>29 [26-36]</td>
+    </tr>
+    <tr>
+      <td>Heterosexuals (Born in any other country)</td>
+      <td>20</td>
+      <td>10</td>
+      <td>9</td>
+      <td>40% [25–57%]</td>
+      <td>15 [12-21]</td>
+    </tr>
+  </tbody>
+</table>
+
+_Posterior estimated median time from infection to diagnosis [95% CI]._
+
+### Nine of ten Amsterdam diagnoses and infections are in MSM
 
 A total of 190 (37%) Amsterdam diagnoses with estimated infection in 2014–2018 were in Dutch-born MSM, 256 (50%) in foreign-born MSM, 23 (4%) in Dutch-born men and women identifying as heterosexuals, and 47 (9%) in foreign-born heterosexuals. Thus, the large majority of Amsterdam diagnoses with infection dates between 2014 and 2018 were in foreign-born and Dutch-born MSM, and an important question that we address below is if these diagnoses also likely had an Amsterdam source.
 
 Overall, we find the individual-level time-to-diagnosis estimates varied substantially within each of the 9 Amsterdam risk groups shown in Table 1 (see also Appendix 1—figures 1 and 2). The posterior median time-to-diagnosis estimates among individuals were 14 months longer in heterosexuals than in MSM, 9 months longer in Dutch-born heterosexuals than Dutch-born MSM, and 19 months longer in foreign-born heterosexuals than foreign-born MSM (Appendix 1—figure 3). These substantial diagnosis delays continue to undermine the long-term prognosis of infected individuals and transmission prevention efforts.
 
-## High proportion of infections since 2014 that remained undiagnosed by May 2019
+### High proportion of infections since 2014 that remained undiagnosed by May 2019
 
 Local estimates of the continuum of care indicate that Amsterdam has surpassed the 95-95-95 targets, with an estimated 5% of all people in Amsterdam living with HIV that remained undiagnosed by the end of 2019 (Sighem et al., 2020; UNAIDS, 2019). Based on the time-to-diagnosis estimates in our cohort, we can focus here at the forefront of ongoing transmission chains and quantify the proportion of recent Amsterdam infections in 2014–2018 that remained undiagnosed by 1 May 2019. Figure 2 shows that the estimated undiagnosed proportions are considerably higher when we focus on infections acquired since 2014. Accounting for declining diagnosis and infection trends (see Materials and methods), an estimated 14% [12–16%] of infections in Amsterdan MSM in 2014–2018 remained undiagnosed, and 41% [35–48%] in Amsterdam heterosexuals (Table 1). The highest proportion of undiagnosed Amsterdam infections in 2014–2018 are in heterosexuals born in Sub-Saharan Africa, with 57% [47–67%].
 
@@ -129,7 +282,7 @@ Local estimates of the continuum of care indicate that Amsterdam has surpassed t
 
 While the bivariate model of biomarker data that underpins the individual-level time-to-diagnosis estimates has been validated (Pantazis et al., 2019), our estimates of the proportion of undiagnosed infections in 2014–2018 depend further on the trends in the number of infections in each year as shown in Equation 2. The main analysis is based on trends in HIV infections in Amsterdam MSM and heterosexuals that were estimated with the ECDC HIV Modelling Tool for Amsterdam. The ECDC estimates account for late diagnoses, but aggregate over region of birth. Recognizing this limitation, in sensitivity analyses we used instead trends in directly observed Amsterdam diagnoses, which apply to each Amsterdam risk group but do not account for confounding due to late diagnoses. In the sensitivity analysis, we estimate that 14% [13–17%] of infections in Amsterdam MSM in 2014–2018 remained undiagnosed, and 34% [28–41%] in Amsterdam heterosexuals. Further details are presented in Appendix 1, Section 3.3–3.5.
 
-## More than 1800 distinct transmission chains among Amsterdam residents
+### More than 1800 distinct transmission chains among Amsterdam residents
 
 We next adopted viral phylogenetic methods to understand how the diagnosed Amsterdam infections since 2014 are distributed across Amsterdam’s HIV transmission networks. A total 378 of the 516 (73%) individuals had a pol sequence available, of whom 341 were of the major subtypes or recombinant forms that are circulating in Amsterdam (B, 01AE, 02AG, C, D, G, A1 and 06 cpx). 37 individuals were excluded from further analysis as their subtype identification was inconclusive, or they were associated with other subtypes or recombinant forms with fewer than 50 sequences in Amsterdam. Appendix 1—table 1 summarises the characteristics of the study population, and those with a sequence available. We reconstructed viral phylogenies using the HIV sequence data from these individuals combined with viral sequences from 3647 Amsterdam diagnoses with estimated infection prior to 2014, 6087 diagnosed individuals from the Netherlands outside Amsterdam, and 14,222 viral sequences from outside the Netherlands that were genetically closest to those circulating in the Netherlands (Appendix 1—figures 4–25). Key statistics based on the bootstrap analysis are reported in Appendix 1—Tables 2 and 3.
 
@@ -139,17 +292,461 @@ We identified across the major HIV-1 subtypes and circulating recombinant forms 
 
 **Figure 3.:** (A) All chains. Horizontal lines connect individuals in reconstructed transmission chains in Amsterdam by chains which had no new case since 2014, and those which continued to grow or emerged, among MSM (top) and heterosexuals (bottom), in order of last diagnosis per chain. (B) Subset of chains in which at least one individual was estimated to have been infected since 2014. Data are presented as in subfigure A.
 
-## Growth of the phylogenetically observed parts of city-level transmission chains
+### Growth of the phylogenetically observed parts of city-level transmission chains
 
 Considering growth, 89 (7%) of the 1253 phylogenetically observed pre-existing chains in Amsterdam MSM had at least one new member diagnosed in 2014–2018, and 114 chains emerged (Table 2 and Figure 3). In Amsterdam heterosexuals, 15 (3%) of the 576 phylogenetically observed pre-existing chains had at least one new member diagnosed in 2014–2018, and 26 chains emerged. The emerging chains thus outnumbered the growing pre-existing chains in both Amsterdam MSM and heterosexuals. However, the observed phylogenetic data are challenging to interpret directly because larger proportions of recent infections remain undiagnosed, approximately half of diagnosed individuals did not have a sequence sampled, and small chains are more likely to remain entirely unobserved (see Materials and methods).
 
-## Emerging transmission chains outnumber pre-existing, growing transmission chains
+**Table 2.**
+ Growth distribution of transmission chains among Amsterdam residents in 2014–2018.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">Observed*</th>
+      <th colspan="4">Predicted†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2">Pre-existing chains</td>
+      <td colspan="2">Emerging chains</td>
+      <td colspan="2">Pre-existing chains</td>
+      <td colspan="2">Emerging chains</td>
+    </tr>
+    <tr>
+      <td>Transmission group</td>
+      <td>New cases</td>
+      <td>(N)</td>
+      <td>(%)</td>
+      <td>(N)</td>
+      <td>(%)</td>
+      <td>(N)</td>
+      <td>(%)</td>
+      <td>(N)</td>
+      <td>(%)</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Amsterdam MSM</td>
+      <td>0</td>
+      <td>220</td>
+      <td>71.2%</td>
+      <td>-</td>
+      <td>-</td>
+      <td>198 [175-221]</td>
+      <td>64.1% [56.6–71.5%]</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>59</td>
+      <td>19.1%</td>
+      <td>94</td>
+      <td>82.5%</td>
+      <td>52 [37-69]</td>
+      <td>16.8% [12.0–22.3%]</td>
+      <td>137 [118-158]</td>
+      <td>79.7% [72.3–86.1%]</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>15</td>
+      <td>4.9%</td>
+      <td>11</td>
+      <td>9.6%</td>
+      <td>23 [14-35]</td>
+      <td>7.4% [4.5–11.3%]</td>
+      <td>19 [11-30]</td>
+      <td>11.2% [6.3–17.0%]</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>6</td>
+      <td>1.9%</td>
+      <td>7</td>
+      <td>6.1%</td>
+      <td>13 [6-20]</td>
+      <td>4.2% [1.9–6.5%]</td>
+      <td>7 [2-13]</td>
+      <td>4.1% [1.2–7.6%]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td>1.0%</td>
+      <td>2</td>
+      <td>1.8%</td>
+      <td>7 [3-14]</td>
+      <td>2.3% [1.0–4.5%]</td>
+      <td>3 [0–8]</td>
+      <td>1.8% [0.0–4.3%]</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>0.6%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>4 [1-10]</td>
+      <td>1.3% [0.3–3.2%]</td>
+      <td>2 [0–5]</td>
+      <td>1.1% [0.0–2.9%]</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>3 [0–7]</td>
+      <td>1.0% [0.0–2.3%]</td>
+      <td>1 [0–4]</td>
+      <td>0.6% [0.0–2.1%]</td>
+    </tr>
+    <tr>
+      <td>7+</td>
+      <td>4</td>
+      <td>1.3%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>7 [2-14]</td>
+      <td>2.3% [0.6–4.5%]</td>
+      <td>2 [0–6]</td>
+      <td>1.1% [0.0–3.2%]</td>
+    </tr>
+    <tr>
+      <td>Total that grew</td>
+      <td>89</td>
+      <td></td>
+      <td>114</td>
+      <td></td>
+      <td>111 [88-134]</td>
+      <td></td>
+      <td>172 [154-195]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>309</td>
+      <td></td>
+      <td>114</td>
+      <td></td>
+      <td>309 [309-309]</td>
+      <td></td>
+      <td>172 [154-195]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="10">Amsterdam heterosexual</td>
+      <td>0</td>
+      <td>150</td>
+      <td>90.9%</td>
+      <td>-</td>
+      <td>-</td>
+      <td>138 [123-150]</td>
+      <td>83.6% [74.5–90.9%]</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>13</td>
+      <td>7.9%</td>
+      <td>25</td>
+      <td>96.2%</td>
+      <td>17 [9-28]</td>
+      <td>10.3% [5.5–17.0%]</td>
+      <td>50 [35-72]</td>
+      <td>86.4% [74.1–95.6%]</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>1.2%</td>
+      <td>1</td>
+      <td>3.8%</td>
+      <td>5 [1-11]</td>
+      <td>3.0% [0.6–6.7%]</td>
+      <td>5 [1-12]</td>
+      <td>9.3% [2.0–19.0%]</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>2 [0–6]</td>
+      <td>1.2% [0.0–3.6%]</td>
+      <td>1 [0–5]</td>
+      <td>2.0% [0.0–7.8%]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>1 [0–3]</td>
+      <td>0.6% [0.0–1.8%]</td>
+      <td>0 [0–2]</td>
+      <td>0.0% [0.0–4.3%]</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0 [0–2]</td>
+      <td>0.0% [0.0–1.2%]</td>
+      <td>0 [0–2]</td>
+      <td>0.0% [0.0–2.6%]</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0 [0–2]</td>
+      <td>0.0% [0.0–1.2%]</td>
+      <td>0 [0–1]</td>
+      <td>0.0% [0.0–2.0%]</td>
+    </tr>
+    <tr>
+      <td>7+</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0 [0–3]</td>
+      <td>0.0% [0.0–1.8%]</td>
+      <td>0 [0–1]</td>
+      <td>0.0% [0.0–2.0%]</td>
+    </tr>
+    <tr>
+      <td>Total that grew</td>
+      <td>15</td>
+      <td></td>
+      <td>26</td>
+      <td></td>
+      <td>27 [15-42]</td>
+      <td></td>
+      <td>58 [42-83]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>165</td>
+      <td></td>
+      <td>26</td>
+      <td></td>
+      <td>165 [165-165]</td>
+      <td></td>
+      <td>58 [42-83]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Parts of the actual Amsterdam transmission chains were observed in viral phylogenies of the major subtypes and circulating recombinant forms (B, 01AE, 02AG, C, D, G, A1 or 06 cpx).†Predicted based on the Bayesian branching process growth model and accounting for undiagnosed and unsampled individuals._
+
+### Emerging transmission chains outnumber pre-existing, growing transmission chains
 
 We next used a Bayesian branching process growth model to predict the size and growth of the actual transmission chains (see Materials and methods and Appendix 1, Section 6). Model fit to the observed growth distributions was very good (Appendix 1—figure 27). We estimate that there are substantially more emerging chains in Amsterdam since 2014 than phylogenetically observed, 172 [154-195] in MSM and 58 [42-83] in heterosexuals, reflecting that emergent chains have a high probability to be entirely unobserved when growth is below the epidemic reproduction threshold of one (Table 2). Thus, the estimated actual, emerging chains outnumber the growing pre-existing chains in both Amsterdam MSM and heterosexuals more strongly than the phylogenetic data suggest.
 
 In terms of proportions, an estimated 61% [55–67%] of the growing chains among Amsterdam MSM were emerging, and 69% [56–81%] of the growing chains among Amsterdam heterosexuals. We estimate further that 47% [39–55%] of the estimated infections among Amsterdam MSM in 2014–2018 were in emerging chains, and 61% [45–77%] of the estimated infections among Amsterdam heterosexuals (Table 3). Thus, on average the pre-existing chains contributed more new cases in 2014–2018 to Amsterdam infections than the emerging chains.
 
-## Proportion of locally preventable infections
+**Table 3.**
+ Distribution of Amsterdam infections since 2014 in pre-existing and emerging transmission chains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Observed*</th>
+      <th colspan="5">Predicted†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td colspan="2">In pre-existing chains</td>
+      <td colspan="2">In emerging chains</td>
+      <td>Total</td>
+      <td colspan="2">In pre-existing chains</td>
+      <td colspan="2">In emerging chains</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(N)</td>
+      <td>(N)</td>
+      <td>(%)</td>
+      <td>(N)</td>
+      <td>(%)</td>
+      <td>(N)</td>
+      <td>(N)</td>
+      <td>(%)</td>
+      <td>(N)</td>
+      <td>(%)</td>
+    </tr>
+    <tr>
+      <td>MSM (Dutch)</td>
+      <td>145</td>
+      <td>86</td>
+      <td>59.30%</td>
+      <td>59</td>
+      <td>40.70%</td>
+      <td>254 [202-318]</td>
+      <td>136 [95-188]</td>
+      <td>53.6% [44.1–62.4%]</td>
+      <td>117 [93-147]</td>
+      <td>46.4% [37.6–55.9%]</td>
+    </tr>
+    <tr>
+      <td>MSM (W. Europe, N. America, Oceania)</td>
+      <td>40</td>
+      <td>25</td>
+      <td>62.50%</td>
+      <td>15</td>
+      <td>37.50%</td>
+      <td>68 [49-91]</td>
+      <td>37 [23-56]</td>
+      <td>54.8% [40.5–68.1%]</td>
+      <td>31 [20-43]</td>
+      <td>45.2% [31.9–59.5%]</td>
+    </tr>
+    <tr>
+      <td>MSM (E. &amp; C. Europe)</td>
+      <td>17</td>
+      <td>9</td>
+      <td>52.90%</td>
+      <td>8</td>
+      <td>47.10%</td>
+      <td>29 [18-42]</td>
+      <td>15 [8-25]</td>
+      <td>53.6% [34.2–72.7%]</td>
+      <td>13 [7-21]</td>
+      <td>46.4% [27.3–65.8%]</td>
+    </tr>
+    <tr>
+      <td>MSM (S. America &amp; Caribbean)</td>
+      <td>53</td>
+      <td>24</td>
+      <td>45.30%</td>
+      <td>29</td>
+      <td>54.70%</td>
+      <td>95 [72-126]</td>
+      <td>50 [33-74]</td>
+      <td>52.8% [40.3–64.8%]</td>
+      <td>45 [31-61]</td>
+      <td>47.2% [35.2–59.7%]</td>
+    </tr>
+    <tr>
+      <td>MSM (Other)</td>
+      <td>42</td>
+      <td>14</td>
+      <td>33.30%</td>
+      <td>28</td>
+      <td>66.70%</td>
+      <td>76 [55-103]</td>
+      <td>37 [22-57]</td>
+      <td>48.4% [34.4–61.7%]</td>
+      <td>39 [26-56]</td>
+      <td>51.6% [38.3–65.6%]</td>
+    </tr>
+    <tr>
+      <td>MSM (All)</td>
+      <td>297</td>
+      <td>158</td>
+      <td>53.20%</td>
+      <td>139</td>
+      <td>46.80%</td>
+      <td>523 [427-647]</td>
+      <td>276 [200-377]</td>
+      <td>52.8% [44.6–60.7%]</td>
+      <td>246 [206-300]</td>
+      <td>47.2% [39.3–55.4%]</td>
+    </tr>
+    <tr>
+      <td>Heterosexual (Dutch)</td>
+      <td>14</td>
+      <td>2</td>
+      <td>14.30%</td>
+      <td>12</td>
+      <td>85.70%</td>
+      <td>38 [23-59]</td>
+      <td>14 [5-29]</td>
+      <td>37.8% [17.5–58.9%]</td>
+      <td>23 [13-38]</td>
+      <td>62.2% [41.1–82.5%]</td>
+    </tr>
+    <tr>
+      <td>Heterosexual (Sub-Saharan Africa)</td>
+      <td>11</td>
+      <td>4</td>
+      <td>36.40%</td>
+      <td>7</td>
+      <td>63.60%</td>
+      <td>30 [17-51]</td>
+      <td>10 [3-24]</td>
+      <td>34.3% [11.3–58.6%]</td>
+      <td>20 [11-34]</td>
+      <td>65.7% [41.4–88.7%]</td>
+    </tr>
+    <tr>
+      <td>Heterosexual (S. America &amp; Caribbean)</td>
+      <td>14</td>
+      <td>8</td>
+      <td>57.10%</td>
+      <td>6</td>
+      <td>42.90%</td>
+      <td>35 [20-58]</td>
+      <td>14 [5-33]</td>
+      <td>42.9% [18.6–65.8%]</td>
+      <td>19 [10-34]</td>
+      <td>57.1% [34.2–81.4%]</td>
+    </tr>
+    <tr>
+      <td>Heterosexual (Other)</td>
+      <td>5</td>
+      <td>3</td>
+      <td>60.0%</td>
+      <td>2</td>
+      <td>40.0%</td>
+      <td>13 [6-23]</td>
+      <td>5 [1-12]</td>
+      <td>39.1% [9.1–70.0%]</td>
+      <td>8 [3-15]</td>
+      <td>60.9% [30.0–90.9%]</td>
+    </tr>
+    <tr>
+      <td>Heterosexual (All)</td>
+      <td>44</td>
+      <td>17</td>
+      <td>38.60%</td>
+      <td>27</td>
+      <td>61.40%</td>
+      <td>117 [80-173]</td>
+      <td>45 [22-83]</td>
+      <td>38.7% [22.6–54.9%]</td>
+      <td>71 [49-105]</td>
+      <td>61.3% [45.1–77.4%]</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Parts of the actual Amsterdam transmission chains were observed in viral phylogenies of the major subtypes and circulating recombinant forms (B, 01AE, 02AG, C, D, G, A1 or 06 cpx).†Predicted based on the Bayesian branching process growth model and accounting for undiagnosed and unsampled individuals._
+
+### Proportion of locally preventable infections
 
 From the emerging transmission chains, we can directly estimate the proportion of Amsterdam infections since 2014 that had an Amsterdam source (see Materials and methods). We interpret these infections as locally preventable, because they are within the reach of the HIV prevention efforts in Amsterdam. In Amsterdam MSM, an estimated 67% [60–74%] of infections in 2014–2018 were locally preventable, with little variation by region of birth (Figure 4, proportions next to error bars). In Amsterdam heterosexuals, an estimated 56% [41–70%] of infections in 2014–2018 were locally preventable, with more variation by region of birth, though we caution that the underlying sample sizes were small.
 

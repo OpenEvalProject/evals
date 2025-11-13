@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/019tgvf94 Université Côte d’Azur, CNRS, Inserm, iBV Nice France
+1. Université Côte d’Azur, CNRS, Inserm, iBV Nice France ([ROR:019tgvf94](https://ror.org/019tgvf94))
 
 † Corresponding author
 
@@ -41,9 +41,25 @@ While numerous studies therefore indicate a central role of membrane trafficking
 
 ## Results
 
-## Mindbomb1 regulates convergent extension independently of Notch
+### Mindbomb1 regulates convergent extension independently of Notch
 
 Through its ability to promote Delta ligand endocytosis, the E3 Ubiquitin ligase Mindbomb1 plays an essential role in vertebrate Notch receptor activation (Guo et al., 2016). In the course of experiments that were initially designed to study the role of Notch signaling in the morphogenesis of the zebrafish nervous system (Sharma et al., 2019), we realized that embryos injected with a mib1 morpholino (mib1 morphants) present a reduced axial extension at the end of gastrulation that is indicative of defects in embryonic Convergence Extension (CE) movements (Figure 1A, Figure 1—figure supplement 1A, B). Accordingly, mib1 morphants present a widening of the notochord, somites, and neural plate (Figure 1B, Figure 1—figure supplement 1C). The mib1 exon/intron1 splice site morpholino used in these experiments has been previously validated in different studies (Itoh et al., 2003; Sharma et al., 2019). We further confirmed its specificity by showing that the co-injection of a WT mib1 RNA that is not targetable by the morpholino restores axis extension (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig1-v2.jpg)
+
+**Figure 1.:** (A) Axis extension was quantified at bud stage by measuring the axis extension angle α. Axis extension is reduced in mib1 morphants but restored upon coinjection of WT mib1 RNA. Lateral views of bud stage embryos, anterior up, dorsal to the right. (B) mib1 morphants present a widening of the notochord, somites, and neural plate. Dorsal views of 2 somite stage embryos, anterior up. dlx3 in situ hybridization outlines the neural plate, papc the somites and the adaxial cells lining the notochord. Widths indicated in microns. (C) Mib1 protein variants used in the study. (D) The mib1ta52b mutation has no effect on axis extension. (E) Constitutively activated Notch (NICD) fails to restore mib1 morphant axis extension. (F) mib1ta52b RNA injection restores mib1 morphant axis extension. (G,H) Axis extension is impaired in mib1tfi91 or mib1nce2a null mutants. On the left panel of (G) the mib1 morphant data from (A) are included for comparison. (I) In situ hybridization reveals reduced mib1 transcript levels in n = 27 mib1tfi91 mutant embryos. Dorsal views of bud stage embryos, anterior up. To warrant identical acquisition conditions, two embryos were photographed on a single picture. Scalebars: 200 µm. Boxes in (A,B, D–G) represent mean values ± SD. See Figure 1—source data 1 for complete statistical information.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Axis elongation was quantified at bud stage by measuring the axis extension angle α using the marker genes shhb (A, expressed in the notochord) and foxa3 (B, expressed in notochord and prechordal plate). Axis extension is reduced following injection of mib1 morpholino (MO mib1) or RNAs encoding Mib1ΔRF123 or Mib1ΔRF3. Lateral views of bud stage embryos, anterior up, dorsal to the right. (C) Dorsal views of bud stage embryos stained for foxa3 also reveal a significant widening of the Notochord. Boxes represent mean values ± SD. See Figure 1—source data 1 for complete statistical information.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A,B) Analysis of bud stage axis extension (A) and mib1 in situ hybridization (B) show that the mib1ta52b mutation does not impair Convergent Extension (CE) or mib1 transcript abundance (B, n = 4 mutant embryos analyzed). (C,D) In contrast mib1nce2a mutants present a weak reduction of CE (C) and a loss of mib1 transcripts (D, n = 6 mutant embryos). (E) qPCR analysis of mib1 transcript levels (30 hfp stage). mib1tfi91 and mib1nce2a homozygous mutants present a reduction in mib1 transcripts that is not observed for the mib1ta52b allele. Error bars represent SE from three biological replicates. (F) mib1nce2a mutants present a CrisprCas-induced InDel that causes a frame shift and leads to premature protein truncation. (A,C) depict lateral views of bud stage embryos, anterior up, dorsal to the right. A quantitative analysis of the corresponding data sets is provided in Figure 1D and G. (B,D) Represent dorsal views of bud stage embryos, anterior up. To warrant identical acquisition conditions, two embryos were photographed on a single picture. Scalebars: 200 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Mib1 morphants display reduced convergent extension (quantified through the measure of the axis extension level α) that is not rescued by constitutively activated Notch (NICD). (B) cDNA sequence from wild-type embryos injected with mib1 exon/intron1 splice morpholino. Morpholino injection causes a retention of intron 1. As a consequence, the Mib1 morphant proteins comprises only the first 76 amino acids of WT Mib1 followed by 14 intronically encoded residues and a premature Stop codon. (C) Mib1 morphant axis extension can be restored through the overexpression of Notch-signaling-deficient mib1ta52b. (A,C) depict lateral views of bud stage embryos, anterior up, dorsal to the right. A quantitative analysis of the corresponding data sets is provided in Figure 1E and F. Scalebars: 200 µm.
 
 The mib1ta52b mutation in the C-terminal Mib1 RING finger domain (RF3, Figure 1C) disrupts the ability of the protein to promote Delta ubiquitination (Itoh et al., 2003; Sharma et al., 2019; Zhang et al., 2007a). The Mib1ta52b mutant protein retains however the ability to bind Delta ligands (Itoh et al., 2003; Zhang et al., 2007a). Through this ability to sequester Delta in an enzymatically inactive complex, Mib1ta52b exerts a dominant-negative activity that leads to the appearance of stronger Notch loss of function phenotypes in mib1ta52b point mutants compared to mib1tfi91 null mutants (Mikami et al., 2015; Zhang et al., 2007b). In spite of the strong, antimorphic Notch loss-of-function phenotypes observed in mib1ta52b mutants, axial extension occurs normally in these animals (Figure 1D, Figure 1—figure supplement 2A). This observation raises the question whether Mib1 exerts a Notch-independent function in CE. In accordance with this hypothesis, a constitutively activated form of Notch (NICD) that is able to restore Notch-dependent defects in the nervous system (Sharma et al., 2019) fails to rescue mib1 morphant axis extension (Figure 1E, Figure 1—figure supplement 3A).
 
@@ -53,21 +69,45 @@ As mib1ta52b point mutants show normal CE, we further studied axis extension in 
 
 Zebrafish Mib1 interacts with Epb41l5 to regulate neuronal differentiation (Matsuda et al., 2016) and with Catenin delta1 to control cell migration (Mizoguchi et al., 2017). Both of these activities are disrupted in mib1ta52b mutants (Matsuda et al., 2016; Mizoguchi et al., 2017). Our observation that mib1 morphants (Figure 1A) or mib1 null mutants (Figure 1G) but not mib1ta52b mutants (Figure 1D) present defects in gastrulation stage axial extension identify thereby a novel role of Mib1 in the regulation of zebrafish CE movements.
 
-## Mindbomb1 RING finger domains are required for convergent extension movements
+### Mindbomb1 RING finger domains are required for convergent extension movements
 
 Vertebrate CE requires non-canonical Wnt/PCP signaling (Butler and Wallingford, 2017; Davey and Moens, 2017; Gray et al., 2011; Tada and Heisenberg, 2012). To test whether Mib1 loss-of-function impairs PCP pathway activity in gastrulating zebrafish embryos, we overexpressed the PCP downstream effector RhoA in mib1 morphants. RhoA fully restores axis extension (Figure 2A), suggesting thereby that Mib1 is required for the PCP-dependent control of embryonic CE movements.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig2-v2.jpg)
 
-**Figure 2.:** (A) RhoA overexpression rescues mib1 morphant axis extension. (B,C) Mib1 proteins lacking all (Mib1ΔRF123, B) or only the last (Mib1ΔRF3, C) RING finger impair axis extension in mib1 morphant or WT embryos. Lateral views of bud stage embryos, anterior up, dorsal to the right. Scalebars: 200 µm. Boxes represent mean values ± SD. Figure 2—source data 1 for complete statistical information.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) RhoA overexpression rescues mib1 morphant axis extension. (B,C) Mib1 proteins lacking all (Mib1ΔRF123, B) or only the last (Mib1ΔRF3, C) RING finger impair axis extension in mib1 morphant or WT embryos. Lateral views of bud stage embryos, anterior up, dorsal to the right. Scalebars: 200 µm. Boxes represent mean values ± SD. Figure 2—source data 1 for complete statistical information.
 
 All Mib1 functions known to date require its E3 ubiquitin ligase activity that is dependent of the presence of C-terminal RING finger domains (Guo et al., 2016). In contrast, the N-terminal part of the protein is responsible for the interaction of Mib1 with different substrates (Berndt et al., 2011; Itoh et al., 2003; Zhang et al., 2007a). In the context of Delta/Notch signaling, truncated Mib1 variants that lack all three RING Finger domains sequester Delta ligands without promoting their ubiquitination and thereby exert a dominant-negative effect. Similarly, a truncated Mib1 variant that lacks all three RING Finger domains (Mib1ΔRF123, Figure 1C) enhances the defects of mib1 morphants as well as impairing axis extension in WT animals (Figure 2B, Figure 1—figure supplement 1). The enhanced CE defects of Mib1ΔRF123-injected mib1 morphants are likely due to its capacity to interfere with maternally provided Mib1 protein which is unaffected by our morpholino that only impairs the splicing of zygotically produced mib1 transcripts. A Mib1 variant lacking only the last RING finger (Mib1ΔRF3, Figure 1C) produced similar results (Figure 2C, Figure 1—figure supplement 1).
 
 Our results suggest that the substrate-ubiquitinating Mib1 RING-finger domains are required for PCP. As Ubiquitin-dependent membrane trafficking is important for PCP (Butler and Wallingford, 2017; Devenport, 2014; Feng et al., 2021), we set out to determine whether Mib1 controls CE by regulating the trafficking of a PCP pathway component.
 
-## Convergent extension requires Mindbomb1-dependent Ryk internalization
+### Convergent extension requires Mindbomb1-dependent Ryk internalization
 
 Mammalian Mib1 has been shown to control the ubiquitin-dependent endocytic internalization of the the Wnt co-receptor Receptor like tyrosine kinase Ryk (Berndt et al., 2011). Interestingly, studies in mice, frogs and zebrafish have implicated Ryk in non-canonical Wnt/PCP signaling (Kim et al., 2008; Lin et al., 2010; Macheda et al., 2012). To determine whether Mib1 regulates CE by controlling Ryk internalization, we started by analyzing the effect of Mib1 gain of function on Ryk localization. Ryk localizes to the cell surface as well as intracellular compartments (Figure 3A), 70.7% of which are positive for the early endosomal marker Rab5 (n = 75 cells from eight embryos, Figure 3—figure supplement 1A; Berndt et al., 2011; Kim et al., 2008; Lin et al., 2010). In accordance with a role of Mib1 in promoting Ryk endocytosis, Mib1 overexpression depleted Ryk from the cell cortex and triggered its accumulation in intracellular compartments (Figure 3B) without affecting the localization of the general plasma membrane marker GAP43-RFP (Figure 3—figure supplement 1B, C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) WT mib1 RNA injection triggers Ryk internalization in 20/21 embryos (B) but has no effect on Vangl2 localization (D, n = 23). (E–G) Mib1 morpholino injection reduces the number of Ryk endosomes that are present upon injection of Ryk-GFP RNA. Increasing the dose of Ryk-GFP RNA restores endosome number in mib1 morphants but not in embryos coinjected with Mib1ΔRF123. (H–J) The number of Ryk endosomes that are present upon injection of Ryk-GFP RNA (12 pg) is reduced in mib1 null mutants. mib1 morphant data from panel E are shown again for comparison. (K) Ryk-GFP RNA (12 pg) rescues axis extension in mib1 morphants but not in embryos coinjected with Mib1ΔRF123. (L) Similarly Ryk-GFP injection rescues axis extension in mib1tf91 mutants. (M) Ryk morpholino injection aggravates mib1 morphant axis extension phenotypes. (A–D,F,G,H,I) dorsal views of 90% epiboly stage embryos, anterior up, scalebars 10 µm. (K,L,M) Lateral views of bud stage embryos, anterior up, scalebars 200 µm. In (E,J) each data point represents the mean number of endosomes for 20 cells from a single embryo. For comparison J again includes the mib1 morphant from panel E. Bars represent mean values ± SEM. In (K,L,M) boxes represent mean values ± SD. See Figure 3—source data 1 for complete statistical information.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Coinjection of RNAs encoding Rab5-GFP and Flag-Ryk-Myc reveals that 70.7% of Ryk-expressing intracellular compartments are positive for the early endosomal marker Rab5 (n = 75 cells from eight embryos analyzed). Arrowheads in A’’ indicate compartments that are positive for Rab5 only (green), Ryk only (magenta), or present both markers (white). (B,C) Mib1 overexpression promotes the internalization of Ryk-GFP but not the one of the plasma membrane marker GAP43-RFP (n = 4). (D,E) RNAs encoding Ryk-GFP and Histone2B-mRFP were injected with increasing amounts of mib1 RNA. While a low dose of Mib1 relocalizes Ryk from the plasma membrane to intracellular compartments (n = 6), high amounts of Mib1 cause an overall loss of Ryk signal (n = 6). D’-F’, The Histone2B-mRFP signal was used to ascertain that embryos had received a comparable amount of injected material. (D-F and D’-F’) are sum projections of three consecutive slices from confocal stacks. All pictures depict dorsal views of 90% epiboly stage embryos, anterior up. Scalebars: 10 µm in A-C, 20 µm in D-F.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Microinjection of RNA encoding the Mib1ta52b mutant protein induces Ryk internalisation (B, n = 16/23 embryos) or degradation (C, n = 7/23 embryos) as compared to WT controls (A, n = 21). Dorsal views of 90% epiboly stage embryos, anterior up. The Histone2B-mRFP signal (A’-C’) was used to ascertain that control and Mib1ta52b-expressing embryos had received comparable amounts of injected material. Scalebar: 20 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–D) Mib1 overexpression has no effect on the localization of the Wnt receptors Frizzled2 (Fz2, n = 6) or Frizzled7 (Fz7, n = 8). (E–H) Mib1 overexpression has no effect on the localization of the Wnt-binding receptor tyrosine kinases ROR1 (n = 7) or ROR2 (n = 10). All pictures depict dorsal views of 90% epiboly stage embryos, anterior up. (G,H) are sum projections of three consecutive confocal slices. A’-H’ Display the signal for fluorescently tagged Histone2B constructs that were coinjected to ascertain that control and mib1-expressing embryos had received a comparable amounts of injected material. Scalebars: 20 µm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A,B) mib1 morpholino (MO mib1) injection reduces Ryk endocytosis. (C,D) A more pronounced inhibition of Ryk endocytosis is observed upon coinjection of MO mib1 and RNA encoding dominant-negative Mib1 (mib1DRF123). (E,F) Ryk endocytosis is reduced in mib1tfi91 mutant embryos. All pictures depict dorsal views of 90% epiboly stage embryos, anterior up. A’-F’, The Histone2B-mRFP signal was used to ascertain that control and mib1-depleted embryos had received a comparable amount of injected material. Embryos depicted in A-F were injected with 12 pg Ryk-GFP RNA. (C-F) correspond to the display items also shown in Figure 3F–I. Scalebars: 10 µm.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A,B) vangl2 RNA injection does not rescue axis extension in mib1 morphants. (A) Lateral views of bud stage embryos, anterior up, dorsal to the right. Scalebar 200 µm. In (B) boxes represent mean values ± SD. See Figure 3—source data 1 for complete statistical information.
 
 If Mib1-dependent Ryk endocytosis is important for CE, this process should be unaffected by the mib1ta52b mutation that disrupts Notch signaling (Itoh et al., 2003) but has no effect on gastrulation movements (Figure 1D). In accordance with this hypothesis, Mibta52b misexpression promotes a relocalization of Ryk from the plasma membrane toward intracellular compartments (Figure 3—figure supplement 2A, B), similar to the effect observed upon overexpression of wild-type Mib1 (Figure 3—figure supplement 1B, C).
 
@@ -83,7 +123,15 @@ Why does impaired Ryk endocytosis cause CE defects? The phenotypes of Mib1-deple
 
 If mib1 morphant CE defects are due to a loss of Ryk-positive endosomes, ryk knock-down is expected to further increase the severity of the observed phenotypes. To test this hypothesis, morpholinos directed against mib1 or ryk were injected separately or in combination. The injection of morpholino-insensitive mib1 or ryk RNAs allows to rescue the CE defects that are generated by their respective morpholinos, validating thereby the specificity of the reagents (Figure 1A and Figure 4D, Figure 4—figure supplement 1A). Co-injection of mib1 and ryk morpholinos causes CE defects that are significantly enhanced compared to single morphants (Figure 3M), adding further support to our hypothesis that the CE defect of Mib1-depleted embryos are due to Ryk loss of function.
 
-## Ryk mutants are insensitive to Mindbomb1 loss of function
+![Figure 4.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig4-v2.jpg)
+
+**Figure 4.:** (A) ryknce4g mutants present an 11 base pair insertion in exon 6. The RYK-nce4g mutant protein comprises only part of the extracellular (blue) and lacks the entire transmembrane (yellow) and intracellular (green) domains. (B,C) Accordingly, a C-terminal HA tag that allows to localize WT Ryk (B, n = 12) becomes undetectable upon introduction of the ryknce4g mutation (C, n = 14). Dorsal views of 90% epiboly stage embryos, anterior up. Scalebar 20 µm. (D,E) The Convergent Extension (CE) phenotypes of ryk morphant animals can be rescued using 1.5 pg WT ryk (D) but not ryknce4g mutant (E) RNA. (F) Overexpressing high levels (25 pg) WT ryk RNA causes severe embryonic malformations while no effect is observed using ryknce4g mutant RNA. 32 hpf embryos, anterior to the left, dorsal up (n = 24 embryos/condition). (G) Zygotic (Z) ryk loss of function does not impair CE. (H–J) In contrast, Maternal Zygotic (MZ) ryk mutants present characteristic CE phenotypes such as a reduced axial elongation (H, shhb in situ hybridization) and an increased width of the notochord (I, foxa3 in situ hybridization, see also Figure 4—figure supplement 1F). (J) ryk WT RNA injection allows a significant rescue of MZ ryk mutant CE defects. (K) Similar CE defects are observed in MZ ryk single mutants and MZ ryk; mib1 double mutants. (H,J,K) Lateral views of bud stage embryos, anterior up, dorsal to the right. Scalebars 200 µm. In (D,E,G–K) boxes represent mean values ± SD. See Figure 4—source data 1 for complete statistical information.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A,B) ryk morphants present Convergent Extension (CE) defects that can be rescued by WT ryk (A) but not ryknce4g mutant (B) RNA. (C) CE is similar in Zygotic (Z) ryknce4g mutants and their WT siblings. (D) In situ hybridization reveals that ryk transcript levels are reduced in Z ryknce4g mutants (n = 24) compared to WT siblings (n = 24). 12 somite stage embryos, anterior to the left, dorsal up. To warrant identical acquisition conditions, two embryos were photographed on a single picture. (E–F) foxa3 in situ hybridization shows that Maternal Zygotic (MZ) ryk mutants present a reduced axial elongation (E) and an increased width of the notochord (F, for quantification see Figure 4I). (G) qPCR analysis of bud stage embryos reveals that MZ ryknce4g mutants present reduced ryk transcript levels. (H) In contrast to Z ryknce4g mutants, Maternal Zygotic (MZ) ryknce4g mutants present CE defects. To exclude any defects due to genetic background variation, the parental fish used to obtain the embryos for this experiment were ryk[+/+] and ryk[nce4g/nce4g] siblings obtained from the same incross. ryk WT RNA injection allows to rescue MZ ryknce4g mutant CE defects. (I) ryk morpholino injection has no effect in MZ ryknce4g mutants. Lateral (A,B,C,E,H,I) or dorsal (F) views of bud stage embryos, anterior up. Scalebars 200 µm. Boxes in (E,I) boxes represent mean values ± SD. Error bars in G represent SE from three biological replicates. Quantitative analysis of the data sets displayed in (A,B,C,H) is provided in Figure 4D, E, G and H respectively. See Figure 4—source data 1 for complete statistical information.
+
+### Ryk mutants are insensitive to Mindbomb1 loss of function
 
 The above-mentioned experiment shows that inhibiting Mib1 function enhances the CE defects of animals that present a partial loss of Ryk activity due to morpholino knock-down (Figure 3M). If Mib1 regulates CE by controlling Ryk endocytosis, Mib1 loss of function should, however, have no more enhancing effect in animals that are not only partially, but entirely devoid of Ryk activity. To test this hypothesis, we used Crispr/Cas9 mutagenesis to generate a stable ryk mutant line.
 
@@ -95,9 +143,17 @@ Alternatively, the lack of CE phenotypes in zygotic ryknce4g mutants could be du
 
 To determine the effect of mib1 loss of function in embryos that are totally devoid of Ryk activity, we introduced the mib1tfi91 mutation in the MZ ryknce4g mutant genetic background. MZ ryknce4g;mib1tfi91 double mutants display no significant difference in CE compared to MZ ryknce4g single mutants (Figure 4K). This observation is in agreement with our model that the genetic inactivation of mib1 results in a specific impairment of Ryk activity. Accordingly, Mib1 loss of function has no further consequences on CE in animals that are already devoid of Ryk.
 
-## Mindbomb1 interacts genetically with Wnt5b to control convergence extension
+### Mindbomb1 interacts genetically with Wnt5b to control convergence extension
 
 Previous work in zebrafish showed that Ryk interacts with the PCP ligand Wnt5b to control gastrulation movements (Lin et al., 2010). If Mib1 is required for Ryk-dependent PCP signaling, Mib1 loss of function should be expected to impair Wnt5b/Ryk signaling. To address this issue, a wnt5b morpholino that has been previously used and validated in different studies (Kilian et al., 2003; Lele et al., 2001) was injected into Mib1-depleted embryos. Our experiments show that the injection of a subliminal dose of Wnt5b morpholino that has no effect in wild-type controls is already sufficient to significantly enhance the CE defects of mib1 morphants (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig5-v2.jpg)
+
+**Figure 5.:** (A) Analysis of the axis extension angle α in bud stage embryos reveals that a subliminal dose of wnt5b morpholino (MO wnt5b) that has no effect on Convergent Extension (CE) in WT significantly enhances the defects observed in animals injected with mib1 morpholino (MO mib1). (B,C) wnt5b morpholino injection impairs CE in mib1tfi91 WT siblings (B) and enhances CE defects in mib1tfi91 homozygous mutants (C). (A–C) Lateral views of bud stage embryos, anterior up, dorsal to the right. Scalebars 200 µm. Boxes represent mean values ± SD. See Figure 5—source data 1 for complete statistical information.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71928/elife-71928-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A,B) 17 out of 18 Wnt5b-injected embryos present severely reduced Ryk-GFP signals compared to WT controls (n = 12). (C,D) A similar Wnt5b-dependent decrease of Ryk-GFP levels is observed in mib1tfi91 homozygous mutants that were additionally injected with dominant-negative Mib1ΔRF123 (n = 14 mutant and n = 16 WT control embryos). All pictures depict dorsal views of 90% epiboly stage embryos, anterior up. The Histone2B-mRFP signal (A’-D’) was used to ascertain that control and Wnt5b-expressing embryos had received comparable amounts of injected material. Scalebars: 10 µm.
 
 The existence of functional interactions between mib1 and wnt5b was further confirmed through wnt5b morpholino injections in mib1tfi91 mutants. Interestingly, the same dose of wnt5b morpholino that we showed to have no effect in ABTÜ wild-type controls (Figure 5A) not only decreased CE defects in mib1tfi91 homozygous mutants (Figure 5C), but also had a significant effect on CE in their WT siblings (Figure 5B). This later observation suggests that the reduction of mib1 gene dosage that is already present in these WT sibling embryos is already sufficient to reveal the existence of genetic interactions between mib1 and wnt5b. In accordance with the previously reported function of Wnt5b/Ryk signaling in zebrafish gastrulation (Lin et al., 2010), our findings therefore suggest that through its ability to control Ryk localization, Mib1 may act as a modulator of Wnt5b-dependent CE movements.
 
@@ -133,17 +189,349 @@ Taken together, our findings identify the E3 ubiquitin ligase Mib1 as an essenti
 
 ## Materials and methods
 
-## Crispr/Cas mutagenesis
+**Key resources table**
 
-## Generation of mib1nce2a mutants
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>mib1</td>
+      <td></td>
+      <td>ZDB-GENE-030404–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>Ryk</td>
+      <td></td>
+      <td>ZDB-GENE-070209–277</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>mib1ta52b</td>
+      <td>DOI:10.1016/s1534-5807(02)00409-4</td>
+      <td>ZDB-ALT-980203–1374</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>mib1tfi91</td>
+      <td>DOI:10.1016/s1534-5807(02)00409-4</td>
+      <td>ZDB-ALT-060208–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>mib1nce2a</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>ryknce4g</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Crispr-mib1-166</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Crispr-ryk-59251</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mib1 exon/ intron one splice morpholino</td>
+      <td>DOI:10.1016/s1534-5807(02)00409-4</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ryk morpholino</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>wnt5b morpholino</td>
+      <td>DOI:10.1002/gene.1063.</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mib1ta52b-pCS2+</td>
+      <td>DOI:10.1016/j.jmb.2006.11.096</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mib1ΔRF123-pCS2+</td>
+      <td>DOI:10.1016/j.jmb.2006.11.096</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mib1-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mib1-ΔRF3-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Flag-Ryk-Myc-pCS2+</td>
+      <td>DOI:10.1083/jcb.200912128</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ryk-GFP-pCS2+</td>
+      <td>DOI:10.1083/jcb.200912128</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ryk-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See material and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ryknce4g-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ryk-HA-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ryknce4g-HA-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ryk-GFP-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-Vangl2-pCS2+</td>
+      <td>DOI:10.1083/jcb.201111009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fz2-mCherry-pCS2+</td>
+      <td>DOI:10.1083/jcb.200912128</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fz7-YFP-pCS2+</td>
+      <td>DOI:10.1083/jcb.200606017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ROR1-GFP-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ROR2-mCherry-pCS2+</td>
+      <td>DOI:10.7554/eLife.36953</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-Rab5c-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RhoA-pCS2+</td>
+      <td>DOI:10.1038/ncb2632</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NICD-pCS2+</td>
+      <td>PMID:10357943</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Histone2B-mRFP-pCS2+</td>
+      <td>DOI:10.1038/nature02796</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Histone2B-GFP-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Histone2B-tagBFP-pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Wnt5b-pCS2+</td>
+      <td>DOI:10.1083/jcb.200912128</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mib1 qPCR primer (fwd)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mib1 qPCR primer (rev)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ryk qPCR primer (fwd)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ryk qPCR primer (rev)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>36b4 qPCR primer (fwd)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>36b4 qPCR primer (rev)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA 3F10 (rat monoclonal)</td>
+      <td>Roche</td>
+      <td># 11867423001,RRID:AB_390918</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cMyc 9E10 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td># sc-40, RRID: AB_2857941</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/Fiji</td>
+      <td>https://imagej.net/software/fiji/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>https://www.rstudio.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Crispr/Cas mutagenesis
+
+#### Generation of mib1nce2a mutants
 
 Crispr/Cas9 mutagenesis of zebrafish mib1 was performed using the reverse strand exon 1 target site 5’- GGAGCAGCGGTAATTGGCGGCGG-3’ (bold lettering indicates the PAM motif). gRNA design and in vitro transcription were performed according to reported protocols (Hruscha et al., 2013; Jao et al., 2013). A pre-assembled complex of purified Cas9 protein (NEB) and gRNA was injected and the efficiency of Crispr/Cas9-induced mutagenesis in the F0 generation monitored at 24 hpf using a T7 endonuclease assay (Jao et al., 2013) on a PCR amplicon comprising the Crispr target region (Forward primer: 5’- TGACTGGAAGTGGGGGAAGC-3’, Reverse primer: 5’- TGCAGTATTAGAAACGCGTG-3’). Direct sequencing of the same PCR amplicon was used to identify induced mutations in the F1 generation. This procedure led to the identification of the mib1nce2a mutant allele which introduces a frame shift after amino acid 57 and induces the appearance of a premature stop codon after residue 69.
 
-## Generation of ryknce4g mutants
+#### Generation of ryknce4g mutants
 
 Crispr/Cas9 mutagenesis of zebrafish ryk was performed using the reverse strand exon 5 target site 5’- GGCAGAGTTTTGGGGGGCTCTGG-3’ using the strategy mentioned above. The T7 endonuclease assay in the F0 generation and mutation identification in F1 were performed using the same PCR amplicon (Forward primer: 5’-GTGATGTTAGACTTGCATAC-3’, Reverse primer: 5’-GAAGGTTTACAAGGGCAGAATG-3’). The ryknce4g mutation introduces an 11 bp insertion that causes a frame shift after amino acid 196 and induces the appearance of a premature stop codon after residue 214.
 
-## Fish strains and molecular genotyping
+### Fish strains and molecular genotyping
 
 Unless otherwise specified, experiments were performed in embryos derived from an ABTÜ hybrid wild-type strain. Mutant strains included mib1ta52b (Itoh et al., 2003), mib1tfi91 (Itoh et al., 2003), mib1nce2a (this study) and ryknce4g (this study).
 
@@ -161,7 +549,7 @@ To avoid issues related to variations among genetic backgrounds, the different a
 
 For DNA extraction embryos were lysed 20 min at 95 °C in 28.5 µl 50 mM NaOH, and then neutralized by adding 1.5 µl Tris-HCl pH 7.5. PCR amplifications were carried out using GoTaq G2 polymerase (Promega) at 1.5 mM MgCl2 using the following cycling parameters: 2 min 95 °C - 10 cycles [30 sec 95 °C – 30 sec 65°C to 55°C – 60 sec 72 °C] – 25 cycles [30 sec 95 °C – 30 sec 55 °C – 60 sec 72 °C] – 5 min 72 °C.
 
-## mRNA and Morpholino injections
+### mRNA and Morpholino injections
 
 Microinjections into dechorionated embryos were carried out using a pressure microinjector (Eppendorf FemtoJet). Capped mRNAs were synthesized using the SP6 mMessage mMachine kit (Ambion). RNA and morpholinos were injected together with 0.2% Phenol Red.
 
@@ -169,11 +557,11 @@ Morpholinos were injected at 500 (mib1 5’-GCAGCCTCACCTGTAGGCGCACTGT-3’, Itoh
 
 RNA microinjection was performed using the following constructs and quantities: Mib1ta52b-pCS2+ (12.5–25 pg) and Mib1ΔRF123 (125 pg) (Zhang et al., 2007b). Mib1-pCS2+ (12.5 pg unless otherwise indicated) and MibΔRF3-pCS2+ (125 pg) (this study). Ryk-GFP-pCS2+ (25 pg) and Flag-Myc-Ryk-pCS2+ (50 pg) (Lin et al., 2010). Ryk-pCS2+ (0.75–25 pg), Ryknce4g-pCS2+ (1.5–25 pg), Ryk-HA-pCS2+ (25 pg), Ryknce4g-HA-pCS2+ (25 pg), Ryk-GFP-pCS2+ (3–12 pg) (this study, all constructs have been engineered to abolish ryk morpholino binding without altering the Ryk protein sequence). GFP-Vangl2-pCS2+ (Mahuzier et al., 2012). Fz2-mCherry-pCS2+ (50 pg) (Lin et al., 2010). Fz7-YFP-pCS2+ (25 pg) (Witzel et al., 2006). ROR1-GFP-pCS2+ (25 pg, this study). ROR2-mCherry-pCS2+ (25 pg) (Mattes et al., 2018). GFP-Rab5c-pCS2+ (50 pg, this study). RhoA-pCS2+ (25 pg) (Castanon et al., 2013). NICD-pCS2+ (37.5 pg) (Takke and Campos-Ortega, 1999). GAP43-RFP-pCS2+ (25 pg). Histone2B-mRFP-pCS2+ (12.5 pg) (Gong et al., 2004). Histone2B-GFP (6 pg) and Histone2B-tagBFP (1.5 pg) (this study). Wnt5b (300 pg) (Lin et al., 2010).
 
-## RNA in situ hybridization
+### RNA in situ hybridization
 
 Whole mount RNA in situ hybridizations were performed as previously described (Thisse and Thisse, 2008). The dlx3 probe has been previously described (Kilian et al., 2003). ryk antisense RNA was transcribed from ryk-pBSK (this study). For papc, mib1, shhb and foxa3, in situ probes were transcribed from PCR products that contained a T7 promoter sequence at their 3’end. The papc region amplified from genomic DNA extended from 5’-TCCTTCTGCAGCTCGTCCGACTGGAAG-3’ (forward strand) to 5’-GGTAAACCACCCACAGTTGAC-3’ (reverse). The mib1 probe region amplified from Mib1-pCS2+ extended from 5’-CCCGAGTGCCATGCGTGTGCTGC-3’ (forward) to 5’-CGCCGAATCCTGCTTTAC-3’ (reverse). shhb was amplified using primers 5’-TGTAAAACGACGGCCAGT-3’ (forward) and 5’-CAGGAAACAGCTATGACC-3’ (reverse). foxa3 was amplified using 5’-TGTTTTGGGGAAGCAGGAGTCA-3’ (forward) and 5’-CGTAATACGACTCACTATAGGGAGATCAGTGAAGAACAGAGAGGTCACT-3’ (reverse). shhb-pBSK and foxa3-pSPORT3 were provided by the Thisse lab.
 
-## qPCR analysis
+### qPCR analysis
 
 For each biological replicate total RNA was isolated from 50 embryos using TRI-Reagent (Sigma). Reverse transcription was performed on 2.5 µg of RNA using Superscript III (Invitrogen) to generate cDNA. qPCR was performed using PowerUP SYBR Green Master Mix (Applied Biosystems) in an Applied Biosystems Step-One PCR system.
 
@@ -181,18 +569,18 @@ The following primers were used for the amplification of different transcripts:
 
 Ct values at 40 cycles of qPCR amplification were used for estimating relative gene expression using ΔΔCT method described by Livak and Schmittgen, 2001. Fold changes in gene expression were normalized to the internal control gene 36b4. For each experiment three biological replicates were used. Measurements for each replicate were performed using technical triplicates.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Dechorionated embryos were fixed overnight at 4 °C in PEM (80 mM Sodium-Pipes, 5 mM EGTA, 1 mM MgCl2) - 4% PFA - 0.04% TritonX100. After washing 2 × 5 min in PEMT (PEM - 0.2% TritonX100), 10 min in PEM - 50 mM NH4Cl, 2 × 5 min in PEMT and blocking in PEMT - 5% NGS, embryos were incubated 2 hrs at room temperature with primary antibodies. Following incubation, embryos were washed during 5, 10, 15 and 20 min in PEMT, blocked in PEMT - 5% NGS, and incubated again with secondary antibodies for 2 hrs. Embryos were again washed during 5, 10, 15, and 20 min in PEMT. The following primary antibodies were used: Rat@HA (Roche 11 867 423 001, 1:500). Mouse@c-Myc9E10 (Santa Cruz sc-40, 1:500). Secondary antibodies Goat@Rat-Alexa488 (Invitrogen) and Goat@Mouse-Cy5 (Jackson Immunoresearch) were used at a dilution of 1:500.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 For confocal imaging, embryos were mounted in 0.75% low melting agarose (Sigma) in glass bottom dishes (Mattek). Embryos were imaged on Spinning disk (Andor) or Laser scanning confocal microscopes (Zeiss LSM710, 780 and 880) using 40 x Water or 60 x Oil immersion objectives. The localisation of Ryk and other PCP pathway components were analyzed at 90% epiboly stage in the dorsal epiblast. Bud stage axis extension and in situ gene expression patterns were documented on Leica M205FA-Fluocombi or Leica MZ-FLIII stereomicroscopes coupled to Lumenera color CCDs. Image analysis was performed using ImageJ (http://rbs.info.nih.gov/ij/). Quantifications were performed blindfolded without knowledge of the sample genotype.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using R. Data normality and variance were analyzed using Shapiro-Wilk and Levene’s tests and statistical tests chosen accordingly. Complete informations about sample sizes, numerical values, and tests statistics for all experiments are provided in the Source data files.
 
-## Use of research Animals
+### Use of research Animals
 
 Animal experiments were performed in the iBV Zebrafish facility (authorization #B-06-088-17) in accordance with the guidelines of the ethics committee Ciepal Azur and the iBV animal welfare committee (project authorizations NCE/2013–92, 19944–2019031818528380).

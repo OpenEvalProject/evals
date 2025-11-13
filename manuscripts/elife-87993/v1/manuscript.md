@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04rq5mt64 Department of Microbiology and Immunology and Center for Pathogen Research, University of Maryland, Baltimore Baltimore United States
+1. Department of Microbiology and Immunology and Center for Pathogen Research, University of Maryland, Baltimore Baltimore United States ([ROR:04rq5mt64](https://ror.org/04rq5mt64))
 
 † Corresponding author
 
@@ -37,21 +37,45 @@ Here, we report that EV-D68 infection induces SIRT-1 translocation to the cytoso
 
 ## Results
 
-## EV-D68 infection changes SIRT-1’s subcellular localization
+### EV-D68 infection changes SIRT-1’s subcellular localization
 
 SIRT-1 is proviral in some cases and has previously been reported to regulate autophagy initiation, which is important for EV-D68 infection (Huang et al., 2015; Lee et al., 2008; Weston et al., 2019). But whether SIRT-1 is essential for EV-D68 reproduction is unknown. We first interrogated the effects of SIRT-1 knockdown on EV-D68 titers. SIRT-1 knockdown reduced both the intracellular (Figure 1A) and extracellular (Figure 1B) EV-D68 titers, with the knockdown being more effective in decreasing the extracellular titers than the cell-associated viral titers. Pharmacological inhibition of SIRT-1, through EX527 pretreatment, yielded similar results (Figure 1—figure supplement 1A, B). Next, we assessed the effect of SIRT-1 overexpression on EV-D68 titers. Both wild-type (SIRT-1 WT) and the deacetylase inactive mutant (SIRT-1 H363Y) increased EV-D68 extracellular titers (Figure 1C). Furthermore, overexpression of both wild-type and mutant SIRT-1 constructs partially rescued EV-D68 extracellular titers in SIRT-1 knockdown cells (Figure 1—figure supplement 1C), indicating that the pro-EV-D68 activity of SIRT-1 does not require its deacetylase function.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig1-v1.jpg)
+
+**Figure 1.:** H1HeLa cells were transfected with either scramble control or SIRT-1 siRNAs for 48 hr. The cells were then infected with EV-D68 (multiplicity of infection [MOI = 0.1]) for 5 hr. The intracellular (A) and extracellular (B) particles were collected for plaque assay. (C) Cells were transfected with the indicated plasmids for 24 hr before being infected with EV-D68 (MOI = 0.1) for 5 hr. The extracellular particles were collected and analyzed by a plaque assay. (D) H1HeLa cells were infected for the indicated time points for immunofluorescence analysis (IFA) against SIRT-1. (E) H1HeLa cells were infected (MOI = 30) for 4 hr. Lysates were collected for western blot against SIRT-1. (F) Densitometry quantitation of E. Error bars denote the mean ± standard error of the mean (SEM) of three independent repeats. Unpaired Student’s t-test was used for the statistical analyses (**p < 0.01; *p ≤ 0.05; ns = not significant). Scale bar = 6.2 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** H1HeLa cells were pretreated with 50 µM EX527 for 24 hr, followed by 0.1 MOI enterovirus D68 (EV-D68) infection. The intracellular (A) and extracellular (B) viral titers were determined by a plaque assay. (C) H1HeLa cells were transfected with scramble control or SIRT-1 siRNA for 24 hr, after which the cells were reseeded and transfected with the DNA constructs for 24 hr. The cells were then infected with EV-D68 (MOI = 0.1) for 5 hr. A plaque assay was used to determine the viral titer. (D) Cells were treated as in C for a western blot (E) H1HeLa cells were transfected with either scramble or SIRT-1 siRNA for 48 hr. GFP-LC3 transfection was initiated at 24 hr post-siRNA transfection for 24 hr. The cells were then fixed, and images were acquired with a revolve microscope (**p < 0.01; *p ≤ 0.05; ns = not significant). n = 3 independent experiments. Scale bar = 6 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bar = 6 µm. (A) Cells were left untreated, starved, starved, and then refeed with complete media for 1 hr, or starved and refeed with complete media containing 10 nM leptomycin B for 1 hr. The cells were fixed, and immunofluorescence analysis (IFA) was performed against endogenous TFEB. (B) Cells were pretreated with 50 nM of LMB for 2 hr. The cells were then infected (MOI = 30) for 30 min (adsorption) and incubated with and without LMB until the end of the infection (4 hr) for IFA against SIRT-1. Starvation for 4 hr was included as a control.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** H1HeLa cells were mock-infected or infected with EV-D68 at an MOI of 30 for 4 hr, before subjecting the cells to immunofluorescence analysis (IFA) against RB1CC1. Scale bar = 10 µm.
+
 Given SIRT-1’s proviral role in EV-D68 infection, we asked whether EV-D68 infection alters SIRT-1 protein levels or subcellular localization. We infected H1HeLa cells for various time points before subjecting the cells to immunofluorescence analysis (IFA) against SIRT-1. As indicated in Figure 1D, SIRT-1 is localized to the nucleus in the mock-infected cells. EV-D68 infection, on the other hand, induced translocation of a fraction of SIRT-1 to the cytosol (Figure 1D) beginning at 3 hpi, which coincides with peak viral RNA replication. Interestingly, EV71 has also been reported to induce SIRT-1 relocalization to the cytosol during infection (Han et al., 2016). To understand whether SIRT-1 translocation during EV-D68 infection is dependent on exportin-1, the major mammalian nuclear export protein, we pretreated H1HeLa cells with and without leptomycin-B, a specific exportin-1 inhibitor, followed by EV-D68 infection (Fornerod et al., 1997; Fukuda et al., 1997). Leptomycin-B treatment inhibited transcription factor-EB, the master transcriptional regulator of autophagy translocation upon refeeding, as expected (Figure 1—figure supplement 2A), but it did not obstruct SIRT-1 translocation induced by EV-D68 infection (Figure 1—figure supplement 2B). In some cases, cleavage of nuclear pore proteins by enteroviruses has been shown to cause leakage of proteins from the nucleus during infection (Gustin and Sarnow, 2002; Hanson et al., 2019; Watters et al., 2017). However, we found that the autophagy kinase regulator RB1CC1 does not leave the nucleus during EV-D68 infection, indicating that SIRT-1 is being targeted for translocation (Figure 1—figure supplement 3). We then examined the effect of EV-D68 infection on SIRT-1 protein levels. Results in Figure 1E and its associated densitometry analysis (Figure 1F) revealed that in contrast to starvation, which marginally decreased SIRT-1 protein levels, EV-D68 infection does not significantly impact SIRT-1 protein levels as has been reported for other enteroviruses (Han et al., 2016; Kanda et al., 2015; Xander et al., 2019).
 
-## SIRT-1 promotes autophagy but decreases EV-D68 extracellular titers in autophagy-deficient ATG-7 KO cells
+### SIRT-1 promotes autophagy but decreases EV-D68 extracellular titers in autophagy-deficient ATG-7 KO cells
 
 While SIRT-1 is known to regulate autophagy initiation, whether the cellular histone deacetylase is important for basal and stress-induced autophagy is unclear. SIRT-1 and scramble knockdown H1HeLa cells were starved or treated with carbonyl cyanide m-chlorophenylhydrazone (CCCP) to induce or inhibit autophagy, respectively. As shown in Figure 2A, starvation reduces p62 protein levels, and CCCP treatment increased LC3 lipidation in the scramble control group as expected. In contrast, acute amino acid starvation did not significantly alter p62 protein expression, and CCCP treatment failed to trigger LC3II accumulation in SIRT-1 knockdown cells, confirming the published work that SIRT-1 is essential for basal and starvation-induced autophagy. To further test SIRT-1’s importance for basal autophagy, we knocked down SIRT-1 and performed IFA against endogenous LC3.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig2-v1.jpg)
+
+**Figure 2.:** (A) H1HeLa cells were transfected with scramble or SIRT-1 siRNA for 48 hr. The cells were subsequently starved or treated with CCCP (10 µM) for 4 hr. Lysates were harvested and analyzed by western blot. (B) Cells were transfected with the indicated siRNAs for 48 hr before being fixed and subjected to immunofluorescence analysis (IFA) against endogenous LC3. (C) H1HeLa and ATG-7 KO cells were infected with 0.1 MOI of EV-D68 for 5 hr. The extracellular vesicles were isolated as described in the materials and methods and viral titers were determined by a plaque assay. (D) ATG-7 KO cells were transfected with scramble or SIRT-1 siRNAs for 48 hr and infected as in C, followed by plaque assay-based viral titer determination. (E) H1Hela cells were infected with EV-D68 (MOI = 30) for 4 hr. The cells were fixed and immuno-stained with antibodies against SIRT-1 and ATG-7. Error bars denote the mean ± standard error of the mean (SEM) of three independent repeats. Unpaired Student’s t-test was used for the statistical analyses (***p < 0.001; ns = not significant). Scale bar = 6 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) H1HeLa cells were starved for the indicated periods, fixed, and subjected to immunofluorescence analysis (IFA) against SIRT-1. Scale bar = 6 µm. (B) H1HeLa cells were treated with and without the Axe starvation media for 2 hr. The cells were then fixed and immunostained using antibodies against SIRT-1 and p62. Scale bar = 10 µm.
 
 In contrast to the scramble control, which mainly displayed diffused nuclear-localized LC3, SIRT-1 knockdown provoked endogenous LC3 puncta accumulation near the perinuclear region (Figure 2B). Similar results were observed in GFP-LC3-overexpressing SIRT-1 knockdown cells, wherein knockdown of SIRT triggered GFP-LC3 puncta accumulation (Figure 1—figure supplement 1E). Together, these results show that SIRT-1 is essential for stress-induced and basal autophagy.
 
 Given SIRT-1’s regulation of autophagy, we asked whether SIRT-1’s proviral activity depends on functional autophagy. SIRT-1, which is typically localized to the nucleus in cancer cells, forms a molecular complex with three proteins essential for autophagy initiation: ATG-5, ATG-7, and LC3. SIRT-1 deacetylates these autophagy-related proteins, thereby regulating autophagy induction (Bai and Zhang, 2016; Lee et al., 2008). We first examined whether SIRT-1 colocalizes with ATG-7 during EV-D68 infection. As shown in Figure 2E, EV-D68 induces ATG-7 puncta formation, which partially colocalizes with SIRT-1. We next examined the effect of ATG-7 knockout (ATG-7 KO), which cannot form autophagosomes, on EV-D68 release. ATG-7 KO severely impeded both extracellular and vesicle-mediated release of EV-D68 (Figure 2C), consistent with the importance of autophagy for picornavirus release (Jackson, 2014). We then knocked down SIRT-1 in ATG-7 knockout (ATG-7 KO) cells, then infected these cells with EV-D68. Knockdown of SIRT-1 decreased EV-D68 extracellular titers in ATG-7 KO cells without significantly altering the intracellular titers (Figure 2D), suggesting that the proviral function of SIRT-1 does not require functional autophagy. Since SIRT-1 regulates autophagy through its deacetylase activity, these data are consistent with our findings in Figure 1.
 
-## SIRT-1’s proviral activity is mediated by repressing ER stress
+### SIRT-1’s proviral activity is mediated by repressing ER stress
 
 SIRT-1 has previously been reported to negatively regulate ER stress by deacetylating X-box-binding protein-1 (XBP1) (Wang et al., 2011). To determine whether SIRT-1’s proviral activity is mediated via ER stress, we treated H1HeLa cells with or without TG, a well-known ER stress inducer, for 5 hr after viral adsorption. TG provokes ER stress by inhibiting the Sarco/endoplasmic reticulum Ca2+-ATPase pump (SERCA), which mediates calcium transfer from the cytosol to the lumen of the ER, and is important for maintaining ER homeostasis. While TG treatment only marginally reduced EV-D68 intracellular titers, it markedly decreased the extracellular titers (Figure 3A), similar to what we observed in SIRT-1 knockdown cells (Figure 1A, B). This finding suggests that TG and SIRT-1 may share common cellular targets. To test this hypothesis, we treated scramble and SIRT-1 knockdown cells with and without TG after viral adsorption. TG treatment significantly reduced viral extracellular titers in the scramble control group. In contrast, TG did not significantly alter viral extracellular titers when SIRT-1 is depleted (Figure 3B). We also observed similar results in our genetic epistasis analysis, in which the knockdown of SERCA2A did not further reduce viral titers in SIRT-1-depleted cells (Figure 3C, D). We then examined the effect of SIRT-1 depletion and EV-D68 infection on SERCA2A protein levels by western blot. While EV-D68 infection did not alter SERCA2A levels, the knockdown of SIRT-1 decreases SERCA2A protein levels (Figure 3E), and overexpression of wild-type SIRT-1, not the deacetylase defective mutant, rescued SERCA2A protein levels, suggesting that SIRT-1’s deacetylase activity is essential for SERCA2A stability (Figure 1—figure supplement 1D).
 
@@ -61,7 +85,7 @@ SIRT-1 has previously been reported to negatively regulate ER stress by deacetyl
 
 Since the induction of ER stress, through either SIRT-1 depletion or TG treatment, attenuates EV-D68 egress, we asked whether EV-D68 infection induces ER stress. For this purpose, H1HeLa cells were mock-infected, infected with EV-D68, or treated with TG for western blot against XBP1, which is upregulated upon ER stress. As expected, TG treatment, which was used as a positive control, induced XBP-1 protein levels in H1HeLa cells (Figure 3F). In contrast, EV-D68 infection reduced XBP1 levels compared to the mock-infection control (Figure 3F), indicating that the virus does not trigger ER stress in H1HeLa cells.
 
-## Induction of ER stress impairs EV-D68 release in hSABCi-NS1.1 primary cells
+### Induction of ER stress impairs EV-D68 release in hSABCi-NS1.1 primary cells
 
 To test whether TG could impair EV-D68 non-lytic release in a more physiologically relevant cell line, we infected hSABCi-NS1.1 immortalized small airway cells with and without TG. As shown in Figure 4A, TG treatment significantly reduced EV-D68 extracellular titers without appreciably impacting the intracellular titers, similar to what we observed in H1HeLa cells (Figure 3A). Our western blot data in Figure 4B showed that while TG treatment induced BiP protein levels, indicating the induction of ER stress in hSABCi-NS1.1 cells, EV-D68 infection reduced BiP levels compared to the mock control and impaired TG-induced BiP protein expression, suggesting that EV-D68 reduces ER stress. Next, we examined the impact of EX527 pretreatment on EV-D68 titers in the primary cells. Similar to our observation in H1HeLa cells, EX527 reduced EV-D68 extracellular titers and only marginally decreased EV-D68 intracellular titers (Figure 4C). Finally, we inquired whether EV-D68 infection causes SIRT-1 translocation in these primary cells. As indicated in Figure 4D, SIRT-1 localizes to the nucleus in uninfected cells. In contrast, EV-D68 infection, as shown by VP3 staining, induces SIRT-1 translocation to the cytosol. These findings demonstrate that SIRT-1’s proviral effect in mediating EV-D68 non-lytic release is not cell-type specific.
 
@@ -69,11 +93,19 @@ To test whether TG could impair EV-D68 non-lytic release in a more physiological
 
 **Figure 4.:** (A) hSABCi-NS1.1 cells were infected with 0.1 MOI of EV-D68 for 30 min. The cells were washed and replenished with basal media or media containing 2 µM thapsigargin (TG) for 6 hr. Viral titers were determined by plaque assay. (B) hSABCi-NS1.1 cells were mock-infected, infected with EV-D68, and treated with or without TG for 6 hr, or treated with TG alone for 6 hr. The lysates were harvested and a western blot was performed against the indicated proteins. n = 2 independent experiments. (C) hSABCi-NS1.1 were pretreated with 50 µM EX527 for 48 hr. The cells were then infected with EV-D68 (MOI = 0.1) for 6 hr for a plaque assay. (D) hSABCi-NS1.1 cells were mock-infected or infected with EV-D68 (MOI = 30) for 6 hr. The cells were fixed for immunofluorescence analysis (IFA) against endogenous SIRT-1. Error bars represent mean ± standard error of the mean (SEM) (**p < 0.01; *p ≤ 0.05; ns = not significant). Scale bar = 7.5 µm.
 
-## SIRT-1 reduces PV, not CVB3, titers
+### SIRT-1 reduces PV, not CVB3, titers
 
 We next sought to understand whether SIRT-1 modulates the infection of other medically important enteroviruses, including PV and CVB3. While protective vaccines are available for PV, few vaccine-derived PV infection cases exist. On the other hand, there is no vaccine or treatment against CVB3, a significant cause of myocarditis and neurological disorders in infants. Therefore, identifying host factors that influence the infection of these viruses could help control their infection. We first examined whether PV and CVB3 alter the subcellular localization of SIRT-1. To our surprise, while PV, similar to EV-D68, induces SIRT-1 translocation to the cytosol, CVB3 did not significantly alter SIRT-1’s subcellular localization (Figure 5A). We then examined the impact of SIRT-1 knockdown on PV and CVB3 infection. SIRT-1 knockdown marginally reduced PV intracellular titers but significantly decreased its extracellular titers (Figure 5B, C). In contrast, the knockdown of SIRT-1 did not alter CVB3 intracellular titers but slightly increased CVB3 extracellular titers (Figure 5D, E). To further analyze SIRT-1’s role in PV and CVB3 infection, we pretreated H1HeLa cells with EX527 followed by viral infection. Consistent with siRNA-mediated depletion of SIRT-1, EX527 decreased PV titers, but not CVB3 titers (Figure 5—figure supplement 1). These results indicate that some, but not all, picornaviruses require SIRT-1 for their egress from infected cells.
 
-## Knockdown of SIRT-1 reduces SARS-CoV-2 titers
+![Figure 5.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig5-v1.jpg)
+
+**Figure 5.:** (A) H1HeLa cells were mock-infected or infected with PV or CVB3 for 4 hr. The cells were fixed, and immunofluorescence analysis (IFA) was done against SIRT-1 MOI = 30. (B, C) Cells were transfected with scramble or SIRT-1 siRNAs for 48 hr before being infected with PV (MOI = 0.1) for 5 hr. Viral titers were determined by a plaque assay. (D, E) Cells were transfected and infected with CVB3 as in B. n = 3 independent experiments, and error bars represent mean ± standard error of the mean (SEM) (***p < 0.001; *p ≤ 0.05; ns = not significant). Scale bar = 7.5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** H1HeLa cells pretreated with EX527 (50 µM) for 24 hr were infected with PV and CVB3 (MOI = 0.1) for 5 hr. The intracellular and extracellular titers for PV (A, B) and for CVB3 (C, D) were determined by a plaque assay (**p < 0.01; ns = not significant.). n = 3 independent repeats.
+
+### Knockdown of SIRT-1 reduces SARS-CoV-2 titers
 
 SIRT-1 was previously reported as essential for Middle Eastern respiratory syndrome (MERS) coronavirus infection (Weston et al., 2019). Given the current ongoing SARS-CoV-2 pandemic’s significance and to identify host factors/processes important for SARS-CoV-2 infection, we asked whether SIRT-1 is necessary for SARS-CoV-2 infection. A549-ACE-2 cells were transfected with either scramble or SIRT-1 siRNA for 48 hr (Figure 6B), followed by SARS-CoV-2 infection for 24 hr. As shown in Figure 6C, the knockdown of SIRT-1 impeded SARS-CoV-2 release. We then examined the impact of SARS-CoV-2 infection on SIRT-1’s subcellular localization. As indicated in Figure 6A, SARS-CoV-2 infection triggers SIRT-1 translocation to the cytosol. These results show that, as with MERS-CoV, SIRT-1 is essential for SARS-CoV-2 infection.
 
@@ -81,9 +113,17 @@ SIRT-1 was previously reported as essential for Middle Eastern respiratory syndr
 
 **Figure 6.:** (A) A549-ACE2 cells were infected with SAR-CoV-2 (MOI = 0.5) for 24 hr. The cells were fixed and subjected to immunofluorescence analysis (IFA) against SIRT-1 and SARS-CoV-2 nucleoprotein. (B) A549-ACE2 cells were transfected with SIRT-1 siRNA for 48 hr. Lysates were analyzed by western blot. (C) Cells were transfected as in B and infected (MOI 0.01) for 48 hr before being subjected to a plaque assay for viral titer measurement (**p < 0.01). Scale bar = 30 µm. n = 3 independent experiments.
 
-## SIRT-1 knockdown reduces the extracellular vesicle-mediated release of enveloped EV-D68 viral particles
+### SIRT-1 knockdown reduces the extracellular vesicle-mediated release of enveloped EV-D68 viral particles
 
 Since SIRT-1 knockdown reduces the extracellular EV-D68 titer an order of magnitude more than the intracellular titers, we posit that SIRT-1 proviral activity promotes non-lytic viral release. Multiple members of the Piconarviridae family have been previously reported to be released in an enveloped form, usually with multiple virions per vesicle (Chen et al., 2015; Feng et al., 2013; Robinson et al., 2014; Sin et al., 2017). Hence, we asked whether EV-D68 is similarly released in extracellular vesicles (EVs) and whether SIRT-1 is essential for this process. We knocked down SIRT-1 and isolated EVs for viral titer measurement. As shown in Figure 7A, EV-D68 appears to be released chiefly in EVs compared to the post-spin supernatant (PSS), and SIRT-1 knockdown severely impeded the extracellular vesicle-mediated release of EV-D68. We knocked down SIRT-1 to understand its impact on viral release. We also examined the expression of CD63, the most widely used marker for exosomes/multivesicular bodies, by western blot. As depicted in Figure 7B, SIRT-1 knockdown induced CD63 protein levels compared to the scramble control. Given the increase in CD63 protein levels in SIRT-1 knockdown cells, we hypothesize that the knockdown of SIRT-1 may prevent the release of CD63-positive EVs. To test this, we infected SIRT-1 knockdown cells for 4 hr and isolated the EVs for western blotting against CD63. As shown in Figure 7C, SIRT-1 knockdown increased CD63 levels in the whole-cell lysate. Our IFA analysis in Figure 7D also showed the aggregation of sizable CD63-positive puncta in SIRT-1 knockdown cells, as previously observed (Latifkar et al., 2019). Interestingly, for the extracellular vesicle fraction, we observed that SIRT-1 knockdown decreased the release of CD63-positive EVs during EV-D68 infection compared to the scramble control (Figure 7C). Consistent with the decrease in CD63-positive signal in SIRT-1 knockdown EVs, we detected VP3 only in the scramble control EVs, not EVs purified from SIRT-1 knockdown cells (Figure 7C). Together, these results indicate that SIRT-1 is essential for EV-D68 release in EVs.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig7-v1.jpg)
+
+**Figure 7.:** H1HeLa cells were transfected with SIRT-1 and Scramble siRNAs for 48 hr. (A) Cells were infected with EV-D68 (MOI = 0.1) for 5 hr, and EVs were isolated for viral titer measurement by plaque assay. (B) Cells were transfected as in A, and the whole-cell lysates (WCL) were collected and prepared for western blot against CD63. (C) H1HeLa cells were transfected with the indicated siRNAs for 48 hr. The cells were either left uninfected or infected with MOI 30 of EV-D68 for 4 hr. The EVs and WCL were prepared for western blot against the indicated proteins. (D) Cells were plated on cover slides and transfected with scramble or SIRT-1 siRNA for 48 hr. The cells were then fixed and subjected to immunofluorescence analysis against CD63. Arrows indicate large CD63 puncta. Error bars indicate mean ± standard error of the mean (SEM) of three independent experiments. Unpaired Student’s t-test was used for the statistical analysis (**p < 0.01). Scale bar = 6.5 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87993/elife-87993-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Cells were infected for the indicated time point, fixed, and processed for immunofluorescence analysis (IFA) against SIRT-1 and dsRNA. (B) Cells were infected as in A for IFA against GBF-1, and dsRNA. (C) H1HeLa cells were transfected with scramble or SIRT-1 siRNA for 48 hr. The cells were then infected (MOI = 0.1) for the indicated time point for the quantitative polymerase chain reaction (qPCR) assay. (D, E) Cells were transfected as in B, and virus binding and entry assays were performed as described in the materials and methods (ns = nonsignificant). Scale bar = 6.2 µm.
 
 ## Discussion
 
@@ -113,54 +153,54 @@ In summary, our data show that SIRT-1 is essential for basal- and stress-induced
 
 ## Materials and methods
 
-## Cell culture, plasmids, and viruses
+### Cell culture, plasmids, and viruses
 
 H1HeLa cells were purchased from ATCC (CRL-1958) and cultured in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine saline, 1× penicillin/streptomycin, and 1× sodium pyruvate. The hSABCi-NS1.1 immortalized small airway cells were grown in PneumaCult-Ex Plus Basal Medium supplemented with PneumaCult-Ex Plus 50× supplement, 0.2× hydrocortisone, 1× penicillin/streptomycin, 1.25 µg/ml amphotericin B, and 0.5 mg/ml gentamycin. Cells were regularly tested for mycoplasma and authenticated by short tandem repeat DNA profiling (Genomics Core Lab, University of Maryland, Baltimore). The cells were incubated at 37°C in a 5% CO2 incubator. The wild-type (Flag-SIRT1) and mutant (Flag-SIRT1 H363Y) SIRT-1 plasmids were purchased from Addgene and transfected into cells using Lipofectamine 2000. The transfection complex was replaced with basal media 6 hr post-transfection.
 
 All work with SARS-CoV-2 was performed in a BSL3 laboratory and approved by our Institutional Biosafety Committee (IBC#00005484). Vero E6 cells overexpressing transmembrane serine protease 2 (TMPRSS2) (VeroT) (ATCC CRL-s1586) were cultured in DMEM medium (Quality Biological) supplemented with 10% (vol/vol) heat-inactivated fetal bovine serum (FBS) (Sigma), 1% (vol/vol) penicillin–streptomycin (Gemini Bio-Products) and 1% (vol/vol) L-glutamine (2 mM final concentration; Gibco). A549 cells overexpressing human angiotensin-converting enzyme 2 (hACE2, A549/hACE2) were generously provided by Dr. Brad Rosenberg (Daniloski et al., 2021). They were cultured in DMEM medium (Quality Biological) supplemented with 10% (vol/vol) heat-inactivated FBS (Sigma), and 1% (vol/vol) penicillin–streptomycin (Gemini Bio-Products). For induction of autophagy by starvation before infection, cells were starved for 4 hr with the ‘Axe’ media (an amino acid deficient media that is widely used to induce autophagic flux) (Axe et al., 2008).
 
-## Western blot
+### Western blot
 
 Cells were lysed using radioimmunoprecipitation assay buffer buffer supplemented with cOmplete Tablets Mini Protease Inhibitor Cocktail. The lysates were incubated on ice for at least 30 min before being clarified at 12,000 rpm for 30 min. The supernatants were transferred into Eppendorf tubes, and protein concentrations were determined by Bradford assay. Lysates were then boiled and loaded onto sodium dodecyl sulfate–polyacrylamide gel electrophoresis. Following transfer onto polyvinylidene difluoride (PVDF) membranes, the membranes were blocked in 5% skim milk for 1 hr, washed twice with Tris-buffered saline with 0.1% Tween 20 detergent (TBST), and stained with the following primary antibodies: anti-SQSTM1/p62, anti-LC, anti-β-actin at 1:1000 dilutions, anti-CD63 (1:250), anti-SERCA2A (1:500), and anti-XBP1 (1:500) overnight. The membranes were stained with the secondary antibodies for 1 hr at room temperature and imaged using the Chemidoc machine after two washes.
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 The cells were fixed with 4% paraformaldehyde at room temperature for 20 min and then permeabilized with 0.3% Triton-X for 30 min. The cells were blocked with 3% bovine serum albumin for 1 hr on a shaker and incubated with primary antibodies at 1: 250 dilutions overnight at 4°C. The cells were washed twice with phosphate-buffered saline (PBS), incubated with the secondary antibodies (1:250), rewashed three times, and imaged with an ECHO Revolve fluorescence microscope.
 
-## Extracellular vesicle isolation
+### Extracellular vesicle isolation
 
 Extracellular vesicles were isolated using the Invitrogen Total Exosome Isolation Reagent (from cultured cells). The reagent ties up water molecules and forces less soluble components, such as vesicles, out of the culture media, which can then be pelleted by a short centrifugation. In brief, 1 ml of cell culture supernatants were clarified at 2000 × g for 30 min. The supernatants were then transferred to Eppendorf tubes, and 500 μl of the exosome isolation buffer was added and incubated at 4°C overnight. At the end of the incubation, the tubes were centrifuged for 1 hr at 10,000 × g. The supernatants were transferred to new Eppendorf tubes, and the pellets were resuspended in PBS for western blot or plaque assay.
 
-## RNA isolation and qPCR
+### RNA isolation and qPCR
 
 TRIzol was used to isolate total RNA according to the manufacturer’s instructions, and cDNA was synthesized using the Thermo Scientific RevertAid H Minus First Strand cDNA Synthesis Kit. KiCqStart SYBR qPCR Ready Mix was used to perform qPCR using the Fast Dx Real-Time PCR Instrument (Applied Biosystems). Primers specific to the 5′ untranslated region (5′-TAACCCGTGTGTAGCTTGG-3′ and 5′-ATTAGCCGCATTCAGGGGC-3′) were used to amplify EV-D68, and gene expression was normalized to GAPDH and plotted as relative expression compared to the 0 hr infection-only time point.
 
-## Plaque assay
+### Plaque assay
 
 The cells were washed twice with PBS for cell-associated titer determination and scraped in 1 ml PBS, after which they were subjected to three freeze–thaw cycles and added to H1HeLa cells for 30 min. Cells were then overlaid with a 1:1 ratio of 2× Menimum Essential Medium (MEM) and 2% agar for 48 hr before staining plaques with crystal violet. For extracellular titers, 1 ml of supernatants were collected and treated as the cell-associated titer without being subjected to freeze–thaw cycles.
 
-## siRNA transfections
+### siRNA transfections
 
 siRNAs were transfected into cells using lipofectamine as previously described. In brief, 200 nM of siRNA and 10 µl of Lipofectamine 2000 were separately incubated in Opti-MEM at room temperature for 5 min. The siRNAs and Lipofectamine were mixed and incubated for 20 min before being added to cells that were 40% confluent. The transfection complexes were replaced with growth media at 6 hr post-transfection. The cells were then used for viral infection or western blot for transfection efficiency determination.
 
-## Virus entry assays
+### Virus entry assays
 
 Scramble and SIRT-1 knockdown cells were pre-chilled on ice for 30 min for viral binding assay. The cells were then infected with EV-D68 (MOI = 30) for 1 hr on ice. The inoculum was removed, and the cells were washed twice with PBS, scraped, freeze–thawed three times, and stored at −80°C for plaque assay.
 
 For viral entry, scramble and SIRT-1 knockdown cells were similarly pre-chilled on ice for 30 min and then infected with EV-D68 for 30 min on ice. The unbound viral particles were washed off with PBS before shifting the cells to 37°C, allowing viral entry for 1 hr. The cells were finally washed with PBS, scraped into Eppendorf tubes, and prepared for plaque assay.
 
-## SARS-CoV-2 titer determination by plaque assay
+### SARS-CoV-2 titer determination by plaque assay
 
 Plaque assays were performed as described previously (Coleman and Frieman, 2015). Briefly, 12-well plates were seeded with 2 × 105 VeroT cells/well one day before processing. On the day of processing, media was removed from the 12-well plates, and 200 µl of dilutions of virus stock or collected cell supernatants in DMEM were added to each well. Plates were incubated at 37°C (5% CO2) for 1 hr with rocking every 15 min. Following incubation, 2 ml of plaque assay media, DMEM containing 0.1% agarose (UltraPure) and 2% FBS (Gibco), was added to each well and incubated for 48 hr at 37°C (5% CO2). Following incubation, plates were fixed with 4% paraformaldehyde, stained with 0.25% crystal violet (wt/vol), plaques counted, and titers calculated as plaque-forming units (PFU)/ml.
 
-## siRNA knockdown protocol for SARS-CoV-2 infection
+### siRNA knockdown protocol for SARS-CoV-2 infection
 
 siRNA knockdown assays were performed as described previously (Weston et al., 2020). Briefly, A549/hACE2 cells were seeded in 24-well cell culture plates one day before siRNA treatment. On the day of treatment, 4.4 µl Opti-MEM (Gibco) and 2.2 µl Oligofectamine (Thermo Scientific) were combined and incubated for 5 min at room temperature. This mixture was then added to 35.5 µl Opti-MEM and 0.8 µl of 50 µM siRNA and incubated for 20 min at room temperature. Following incubation, a further 177 µl of Opti-MEM was added to the transfection mixture, media were removed from cells, and 200 µl of transfection mixture was added. After a 4 hr incubation at 37°C/5% CO2, 200 µl of DMEM (+20% FBS) was added to the cells resulting in a final concentration of 10% FBS. Cells were then incubated at 37°C/5% CO2 overnight. Following incubation, cells were infected with SARS-CoV-2 (WA1, MOI = 0.01 for titer, MOI = 0.5 for IFA), and supernatants were collected 24 hr post-infection. SARS-CoV-2 titers from supernatants were determined by plaque assay.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism software (Version 7.03) was used for all statistical analyses, and values represent the mean ± standard error of the mean of at least three independent repeats. Student’s t-test was used for comparison and a p-value of <0.05 was considered statistically significant.
 
-## Materials availability statement
+### Materials availability statement
 
 All materials used are available from the commercial and non-profit suppliers listed. Contact corresponding author for assistance.

@@ -30,23 +30,259 @@ We here examined whole-night sleep Electroencephalography (EEG) recordings from 
 
 **Figure 1.:** Top left: heat map illustrating the position of individual contacts across all patients within the hippocampus overlaid on a sagittal slice of the mean structural MRI. Right and bottom insets show the grand average (± SEM) spindle and sharp-wave ripple waveforms across all patients in neocortex (red, NC) and hippocampus (blue, HIPP).
 
-## Cortical and hippocampal spindles around SW-Rs
+**Table 1.**
+ Sleep architecture.Mean ± SEM proportion of sleep stages S1, S2, slow wave sleep (SWS) and rapid eye movement (REM) sleep relative to the total time spent asleep.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mean</th>
+      <th>SEM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1 (%)</td>
+      <td>22.8</td>
+      <td>4.6</td>
+    </tr>
+    <tr>
+      <td>S2 (%)</td>
+      <td>44.0</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>SWS (%)</td>
+      <td>16.4</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td>REM (%)</td>
+      <td>16.8</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Total sleep time (min)</td>
+      <td>427.6</td>
+      <td>29.0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Properties of sleep spindles and sharp-wave ripples.Patient-specific count and density (events per minute) of algorithmically detected spindles and sharp-wave ripples (SW-Rs) as well as the corresponding mean (± SEM) across participants. Note that event densities reflect number of events relative to artifact-free NREM time, resulting in possibly different densities despite similar event counts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Spindle count</th>
+      <th colspan="2">Spindle density (per min)</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Patient</th>
+      <th>NC</th>
+      <th>HIPP</th>
+      <th>NC</th>
+      <th>HIPP</th>
+      <th>SW-R count</th>
+      <th>SW-R density (per min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1440</td>
+      <td>1296</td>
+      <td>6.3</td>
+      <td>6.4</td>
+      <td>135</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1243</td>
+      <td>571</td>
+      <td>5.5</td>
+      <td>4.3</td>
+      <td>107</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1703</td>
+      <td>1725</td>
+      <td>5.5</td>
+      <td>5.9</td>
+      <td>116</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1074</td>
+      <td>978</td>
+      <td>3.0</td>
+      <td>3.1</td>
+      <td>626</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1427</td>
+      <td>625</td>
+      <td>5.4</td>
+      <td>2.4</td>
+      <td>206</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1001</td>
+      <td>691</td>
+      <td>4.0</td>
+      <td>3.9</td>
+      <td>153</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>903</td>
+      <td>1975</td>
+      <td>3.3</td>
+      <td>6.7</td>
+      <td>403</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1004</td>
+      <td>892</td>
+      <td>4.9</td>
+      <td>4.5</td>
+      <td>400</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2079</td>
+      <td>2038</td>
+      <td>6.2</td>
+      <td>6.0</td>
+      <td>518</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1120</td>
+      <td>840</td>
+      <td>6.3</td>
+      <td>4.3</td>
+      <td>245</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>494</td>
+      <td>739</td>
+      <td>4.7</td>
+      <td>7.0</td>
+      <td>208</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>448</td>
+      <td>417</td>
+      <td>5.6</td>
+      <td>6.3</td>
+      <td>44</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1339</td>
+      <td>406</td>
+      <td>5.6</td>
+      <td>2.0</td>
+      <td>45</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1899</td>
+      <td>1555</td>
+      <td>6.5</td>
+      <td>6.1</td>
+      <td>542</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>1226.7</td>
+      <td>1053.4</td>
+      <td>5.2</td>
+      <td>4.9</td>
+      <td>267.7</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>125.9</td>
+      <td>150.6</td>
+      <td>0.3</td>
+      <td>0.4</td>
+      <td>50.0</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cortical and hippocampal spindles around SW-Rs
 
 To examine whether SW-Rs co-occur not only with spindles in HIPP (Jiang et al., 2019a; Staresina et al., 2015) but also in NC, we first derived time-frequency representations (TFRs) time-locked to discrete HIPP SW-Rs (Figure 2). Results were statistically compared to TFRs obtained from control events, that is, matched ripple-free intervals randomly drawn from NREM sleep. In HIPP, we found an extended cluster of significant power increases encompassing two distinct components (p=0.001, Figure 2A): First, an increase in spindle power (12–18 Hz), peaking at ~300 ms after SW-Rs. Second, a more widespread frequency cluster with a maximum at 3 Hz, likely reflecting the sharp-wave component (Axmacher et al., 2008; Oliva et al., 2018; Staresina et al., 2015). Critically, when locking the TFR in NC to SW-Rs in HIPP (Figure 2B), we again observed significant power increases compared to ripple-free control events. A significant cluster emerged from 11 to 16 Hz (p=0.001), again peaking shortly after SW-Rs. The concurrent spindle power increase in both regions (Figure 2C) around HIPP SW-R might indicate a role of spindles in mediating cortical-hippocampal communication (see next section).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57011/elife-57011-fig2-v2.jpg)
+
+**Figure 2.:** Statistical maps (t-values) contrasting ripple-locked vs. control TFRs within HIPP (A) and NC (B). Hot colors indicate power increases around SW-Rs, whereas cold colors indicate relative power decreases. White contours mark significant clusters obtained from a cluster-based permutation procedure. (C) Significance mask derived from the overlap of significant clusters between NC and HIPP. Color represents the mean t-value from the corresponding statistical masks. Black traces below TFRs illustrate the timing of power changes relative to SW-Rs. Of note, dashed white contours in (A) represent significant clusters based on a highly conservative statistical threshold (cluster alpha-level α = 10−11) to further illustrate the distinct 3 Hz sharp-wave and 12–20 Hz spindle clusters.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57011/elife-57011-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mean (± SEM) SO power (1–1.5 Hz) averaged across ±1 s around ripples (red) or across matched control events from NREM (dark gray) or REM (light gray) sleep for NC (A) and HIPP (B). Statistical assessment consisted of three comparisons: ripple-locked SO power vs. NREM control events (left), ripple-locked SO power vs. REM control events (middle) and NREM control events vs. REM control events (right). *** denote significant differences, p<0.001. Results reveal high levels of SO power during NREM sleep relative to REM sleep, with no additional increase around hippocampal ripples.
 
 Regarding event contingencies,~5% and 7% of all algorithmically detected sleep spindles in NC and HIPP, respectively, occurred within ±1 s of HIPP ripple maxima. Conversely, ~17% and 22% of HIPP ripples exhibited an overlap with NC and HIPP sleep spindles, respectively (see also Staresina et al., 2015). This highlights that only a fraction spindles coincides with HIPP ripples, raising the interesting question whether the remainder of spindles might serve different functions. That said, the precise numbers of event overlap depend on the detection thresholds for spindles and ripples and, for the latter, might have been reduced by the exclusion of physiological ripples coinciding with artifactual, epileptic activity. Moreover, it is likely that a certain amount of NC spindles overlap with ripples emerging in parts of HIPP not captured by our chosen contact.
 
 While theoretical and empirical work also implicates SOs/slow-waves in the hippocampal-neocortical dialogue (Maingret et al., 2016; Sejnowski and Destexhe, 2000; Sirota et al., 2003), our ripple-locked TFR analyses revealed no significant effect at ~1 Hz. However, this might result from our control procedure, which extracts matched NREM epochs without HIPP SW-Rs. That is, the prevalence of SOs throughout NREM sleep (and thus also in control epochs) might obscure SO-related effects aligned to SW-Rs. Corroborating this notion, comparing ripple-locked and NREM control event TFRs with control events from REM sleep confirmed a significant global increase in SO power (1–1.5 Hz) during NREM both in NC and HIPP (ripple-locked vs. REM control events: t(3617) > 11.441, p<0.001; NREM control vs. REM control events: t(3974) > 54.177, p<0.001, Figure 2—figure supplement 1). No difference was seen between ripple-locked events and NREM control events (t(3747) < 1.559, p>0.118). These results suggest that any clustering of SOs around hippocampal ripples might be concealed by the strong prevalence of SOs throughout NREM sleep. That said, these results might also indicate that SOs do not mediate hippocampal-cortical interactions around ripples directly, but indirectly by coordinating sleep spindles (Mölle et al., 2011; Staresina et al., 2015). Indeed, a recent human iEEG study showed that coupling between prefrontal cortex spindles and medial temporal lobe ripples was greater when prefrontal spindles were nested in the up-state of concomitant SOs (Helfrich et al., 2019). Similarly, spindle coupling between neocortex and hippocampus was found to be increased at particular SO-phases (Cox et al., 2020). This coordinating role of SOs notwithstanding, our results emphasize that spindles group around hippocampal ripples above and beyond background NREM spindle activity.
 
-## Cortical-hippocampal spindle coupling around SW-Rs
+### Cortical-hippocampal spindle coupling around SW-Rs
 
 Next, we asked whether the cross-regional co-activation in the spindle band around HIPP SW-Rs may indeed reflect an increase in functional coupling between NC and HIPP. To this end, we calculated ripple-locked spectral coherence between NC and HIPP. Based on the concurrent power increases shown in Figure 2C, we determined coherence specifically for the observed spindle cluster around SW-Rs (for extended time-frequency resolved coherence analysis, see Figure 3—figure supplement 1). As shown in Figure 3A, spindle-band coherence between NC and HIPP was indeed significantly increased compared to control events (z-value = 2.12, p=0.034). Examination of time-resolved 12–16 Hz coherence confirmed a significant increase reaching its maximum shortly after the SW-R (Figure 3B). Identical results were obtained using amplitude- or phase-based connectivity measures (Figure 3—figure supplement 2A–D), that is, orthogonalized power correlation (Hipp et al., 2012) and phase-locking value (Lachaux et al., 1999), which validated the robustness of our coherence-based approach (which is impacted by both amplitude and phase) and - more importantly - ruled out any influence of volume conduction or spurious correlations due to a common referencing scheme. Note though that while power correlations and phase-locking are differentially sensitive to amplitude- and phase covariations, respectively (Siegel et al., 2012), they are not entirely independent (Palva and Palva, 2018; Siems and Siegel, 2020). In any case, these findings corroborate the notion that sleep spindles co-occurring in NC and HIPP around hippocampal ripples reflect an increase in cortical-hippocampal communication.
 
-## Directional influence of cortical to hippocampal spindles prior to SW-Rs
+![Figure 3.](https://cdn.elifesciences.org/articles/57011/elife-57011-fig3-v2.jpg)
+
+**Figure 3.:** (A) HIPP-NC coherence. The red line depicts the observed coherence between HIPP and NC in the cluster of concurrent increases in spindle power around HIPP SW-Rs (see Figure 2C). Histogram depicts the distribution of individual coherence values for 100 sets of control events. (B) Time-resolved HIPP-NC coherence for the 12–16 Hz spindle range transformed into a z-score with respect to the control events. Blue lines indicate standard significance thresholds (z = 1.96). Time 0 denotes HIPP SW-Rs. (C) Partial directed coherence (PDC). Red vertical lines represent directional influence from NC to HIPP (top) or directional influence from HIPP to NC (bottom) in the cluster of concurrent increases in spindle power around HIPP SW-Rs (Figure 2C). Histograms depict distribution of individual PDC values for 100 sets of control events. (D) Time course of difference between z-transformed NC - > HIPP and HIPP - > NC influence in the 12–16 Hz spindle range. Positive values signify a cortical influence in the 12–16 Hz spindle range on HIPP and vice versa for negative values. Black-colored sections correspond to time intervals with significant spectral coherence shown in (B). Blue lines mark standard significance thresholds (z = 1.96). (E) Peri-event histograms of spindle onsets in NC (top) and HIPP (bottom) within a ± 0.5 s time window around SW-Rs (time = 0 s, top trace). Dark colored bars indicate significant time bins, resulting from comparison with ripple-free control events (z > 1.96). (F) Schematic illustrating the hypothesized spindle-mediated cortical-hippocampal dialogue around SW-Rs: First, sleep spindles mediate a top-down influence from NC to HIPP. In HIPP, sleep spindles in turn coordinate the occurrence of SW-Rs on a fine temporal scale. SW-Rs are linked to the reactivation of relevant memory traces, thought to be distributed to neocortical sites for long-term storage (Klinzing et al., 2019).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57011/elife-57011-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Statistical map (z-scores) contrasting ripple-locked and ripple-free control coherence between NC and HIPP from 1 to 20 Hz and −1 to 1 s around SW-Rs. White contour line outlines the significant cluster of concurrent increase in spindle power in NC and HIPP (Figure 2C). Black trace below illustrates the timing relative to HIPP SW-Rs.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57011/elife-57011-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Statistical map (z-scores) contrasting ripple-locked and ripple-free control connectivity based on the orthogonalized power correlation. White contour line outlines the significant cluster of concurrent increase in spindle power in NC and HIPP (Figure 2C). Black trace below illustrates the timing relative to HIPP SW-Rs. (B) Time-resolved NC-HIPP power correlation for the 12–16 Hz spindle range were transformed into a z-score with respect to the control events. Blue lines indicate standard significance thresholds (z = 1.96). Time 0 denotes HIPP SW-Rs. (C) Statistical map (z-scores) contrasting ripple-locked and ripple-free control connectivity assessed via phase-locking value (PLV). White contour line outlines the significant cluster of concurrent increase in spindle power in NC and HIPP (Figure 2C). Black trace below illustrates the timing relative to HIPP SW-Rs. (D) Time-resolved NC-HIPP PLV for the 12–16 Hz spindle range transformed into a z-score with respect to the control events. Blue lines indicate standard significance thresholds (z = 1.96). Time 0 denotes HIPP SW-Rs.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/57011/elife-57011-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Statistical map (z-score), masked with positive spectral coherence (Figure 2—figure supplement 1), depicting the difference in PDC between NC->HIPP and HIPP->NC time-locked to ripples in comparison to control events. Hot colors indicate a top-down influence from NC to HIPP, whereas cold colors indicate a reversed directional influence from HIPP to NC. White contour line outlines the significant cluster of concurrent increase in spindle power in NC and HIPP (Figure 2C). Black trace below illustrates the timing relative to HIPP SW-Rs.
+
+### Directional influence of cortical to hippocampal spindles prior to SW-Rs
 
 After revealing enhanced spindle-mediated coupling between hippocampus and neocortex around HIPP ripples, we asked whether this interaction is directional, that is, do cortical spindles influence hippocampal spindles or vice versa? As a measure of directionality, we used partial directed coherence (PDC). Extending the concept of coherence, that is, an assessment of mutual synchrony based on phase and amplitude, PDC examines the relative timing of these features between two regions of interest. This approach allows quantifying whether the current state of a target region may be influenced by the past of the other region by taking into account the predictive information of both, the past of the other region and the past of the target region itself (Baccalá and Sameshima, 2001). Calculating PDC again for the cluster of concurrent HIPP-NC spindle power increase around SW-Rs (see Figure 2C; for extended time-frequency resolved PDC analysis see Figure 3—figure supplement 3) revealed an increase in directional influence primarily from neocortex to the hippocampus in comparison to control events (Figure 3C, z = 4.76, p<0.001). The inverse directionality (HIPP - > NC) was diminished around SW-Rs in comparison to control events (z = −3.17, p=0.002). The direct comparison of the directional influence between cortical and hippocampal spindles revealed an almost two-fold influence of neocortical spindles on hippocampal spindles than vice versa. Inspecting the temporal dynamics of PDC within the spindle range suggests that the top-down influence sets in before the occurrence of HIPP SW-Rs (Figure 3D). To further pinpoint the origin of the directional influence of NC on HIPP spindles, we extracted the onset latencies of discrete spindles in both regions with respect to HIPP SW-Rs. Note that while the TFR analysis shown in Figure 2 highlighted significant increases in amplitude, this analysis is particularly geared toward discrete spindle events obtained via algorithmic detection methods. One advantage of this approach is that it bypasses some of the temporal ambiguities of TFRs due to filter smearing (Iemi et al., 2017). The histograms of spindle onset times with respect to hippocampal ripples (Figure 3E) revealed a maximum (significantly increased in comparison to control events) in both regions before the SW-Rs. Importantly though, this maximum occurred from −250 to −200 ms prior to the hippocampal ripple in NC and from −100 to −50 ms prior to the ripple in HIPP. Together, these results suggest a directional influence of NC spindles on HIPP spindles prior to the SW-R. It deserves explicit mention though that conclusive evidence for a driving or causal role of NC spindles would require experimental perturbation of the system. Therefore, interpretive caution is warranted for results from directional connectivity analyses as employed here.
 
-## Hippocampal-neocortical coupling emerges preferentially during long-duration ripples
+### Hippocampal-neocortical coupling emerges preferentially during long-duration ripples
 
 Our study is guided by the tacit assumption that ripple-locked hippocampal-neocortical interactions are instrumental for memory consolidation. However, without an explicit pre-sleep learning and post-sleep testing component, this assumption is rather conjectural. Interestingly though, while the critical role of ripples for memory-related processes has been established in rodents (Ego-Stengel and Wilson, 2010; Girardeau et al., 2009), a recent study further demonstrated that longer-duration ripples bear greater relevance for memory-related processes than short-duration ripples (Fernández-Ruiz et al., 2019). That is, replay of newly encoded information was associated with longer duration ripples and experimental ripple prolongation or perturbation of the late ripple component enhanced or diminished memory performance, respectively. We therefore reasoned that if our results reflect hippocampal-neocortical interactions in service of memory consolidation, they should be more pronounced for longer duration compared to shorter duration hippocampal ripples.
 
@@ -72,13 +308,118 @@ To conclude, our findings suggest that – ignited by neocortex - sleep spindles
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 EEG data from 14 patients (35.4 ± 3.0 years of age, seven females) suffering from pharmacoresistant epilepsy were analyzed, which were recorded at the Department of Epileptology, University of Bonn. All patients gave informed consent, the study was conducted according to the Declaration of Helsinki and was approved by the ethics committee of the Medical Faculty of the University of Bonn. Intracranial depth electrodes for presurgical evaluation of seizure onset zones were implanted stereotactically, either via the occipital lobe along the longitudinal axis of the hippocampus or laterally via the temporal lobe. Implantations of depth electrodes were bilateral but only electrodes from the non-pathological hemisphere (according to clinical monitoring) entered the analyses. Intracranial recordings were obtained continuously for the duration of the patient’s stay, but polysomnography was restricted to a single night to mitigate possible discomfort caused application of additional scalp electrodes. We focused our analyses on the posterior hippocampus as functional coupling has been shown between thalamus and posterior, but not anterior hippocampus (Fanselow and Dong, 2010; Poppenk and Moscovitch, 2011; Zarei et al., 2013). Accordingly, increased spindle density and spindle-ripple coupling have been reported for posterior and not anterior hippocampus (Jiang et al., 2019a; Jiang et al., 2019b; Staresina et al., 2015). The selection of the hippocampal contact used for analyses was based on anatomical and functional criteria. First, contacts in posterior hippocampus were marked based on post-surgical MRI scans. If no post-surgical MRIs were available (n = 3), we based our designation to posterior hippocampus on the surgical implantation scheme. Among the resulting posterior hippocampal contacts, we took forward the contact with the highest spindle density, that is total number of algorithmically identified spindle events divided by the amount of artifact-free NREM sleep. Table 3 lists the MNI coordinates for the included contacts.
 
+**Table 3.**
+ MNI coordinates of the included electrode contacts.For three patients, no MRI was available.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">MNI coordinates</th>
+    </tr>
+    <tr>
+      <th>Patient</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>−26</td>
+      <td>−29</td>
+      <td>-8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>26</td>
+      <td>−28</td>
+      <td>-7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>27</td>
+      <td>−29</td>
+      <td>-3</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>−25</td>
+      <td>−28</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>−33</td>
+      <td>−33</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>27</td>
+      <td>−31</td>
+      <td>-9</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>28</td>
+      <td>−35</td>
+      <td>-7</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>−29</td>
+      <td>−38</td>
+      <td>-9</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>29</td>
+      <td>−31</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>32</td>
+      <td>−30</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>−28</td>
+      <td>−34</td>
+      <td>-5</td>
+    </tr>
+  </tbody>
+</table>
+
 Note that although the data analyzed here have been used in previously publications, the current study was guided by different questions and all analyses reported here are novel. Specifically, Staresina et al., 2015 we reported intrahippocampal dynamics between SOs, sleep spindles and ripples, but did not focus on ripple-locked inter-regional dynamics. Cox et al., 2020 and Cox et al., 2019 examined the overall coupling between a wide range of frequencies and regions using phase-based approaches on the continuous signal, rather than on ripple-locked events. In short, none of these previous studies examined functional interactions between hippocampus and neocortex time-locked to SW-Rs, nor the specific role of sleep spindles in mediating these interactions.
 
-## EEG recordings and pre-processing
+### EEG recordings and pre-processing
 
 Depth EEG recordings were referenced to linked mastoids and acquired with a sampling rate of 1 kHz (bandpass filter: 0.01 Hz (6 dB per octave) to 300 Hz (12 dB per octave)). For the sleep recordings, additional electrodes were placed on participants’ scalps at positions Cz, C3, C4 and Oz according to the 10–20 system. Electro-ocular activity (EOG) was recorded at the outer canthi of both eyes and submental electromyographic activity (EMG) was acquired with electrodes attached to the chin. Electrode impedances were all below 5 kΩ.
 
@@ -86,7 +427,7 @@ Sleep stages were determined visually using scalp EEG, EOG, and EMG recordings f
 
 For pre-processing, an automated algorithm was applied to identify three different types of artifacts separately for each sleep stage: First, on a 0.3 to 150 Hz band-pass filtered signal, amplitude-based artifacts were scored as values exceeding ±750 µV based on previous work (Axmacher et al., 2008). Next, we identified gradient artifacts, that is strong deflections in the signal caused in particular by interictal spikes. Based on the 0.3 to 150 Hz band-pass filtered signal we first calculated for each time-point the difference in amplitude to the next time-point. This difference signal was then used to derive an individual threshold determined by its median ±6 * interquartile range across all time points. Accordingly, whenever the difference signal exceeds this threshold a gradient artifact was scored. To identity high-frequency bursts emerging from arousals or movement, the EEG signal was high-pass filtered at 150 Hz and the root mean square (RMS) signal calculated based on a window length of 100 ms. Again, an individual threshold was determined by the median + 4 * interquartile range of the RMS signal and time points were marked as high frequency burst if the RMS signal exceeded the corresponding threshold for at least 100 ms. All detected artifact samples were then padded by ±250 ms. Furthermore, artifact-free intervals shorter than 3 s were also marked as artifacts. The threshold used are based on previous publications (Axmacher et al., 2008; Staresina et al., 2015) and automated detection was followed by a visual inspection.
 
-## Offline detection of discrete spindle and ripple events
+### Offline detection of discrete spindle and ripple events
 
 Discrete spindles and ripples were detected during artifact-free NREM sleep using offline algorithms (Staresina et al., 2015). For spindle detection, the NC- and HIPP-signals were band-pass filtered at 12–16 Hz and the root mean square signal (RMS) was calculated based on a 200 ms windows followed by an additional smoothing with the same window length. A spindle event was identified whenever the smoothed RMS-signal exceed a threshold, defined by the mean plus 1.25 times the standard deviation of the RMS-signal across all NREM data points, for at least 0.4 s but not longer than 3 s. Importantly, time points exceeding an upper threshold determined by the mean RMS-signal plus 5 times its the standard deviation were excluded (Stark et al., 2014). The upward and downward threshold crossings represent the onset and end of a spindle event. Sleep spindles are commonly separated into frontally dominant slow (9–12 Hz) spindles and centro-parietal fast spindles (12–15 Hz) (De Gennaro and Ferrara, 2003). Here, we focus on fast spindles, which have been consistently shown to nest SW-Rs (Jiang et al., 2019a; Jiang et al., 2019b; Staresina et al., 2015) and, specifically in conjunction with SOs, contribute to plastic changes (Niethard et al., 2018) and sleep-dependent memory consolidation (Cairney et al., 2018; Ngo et al., 2013).
 
@@ -94,27 +435,31 @@ Detection of discrete ripple events in the hippocampal depth recordings followed
 
 Finally, to ensure that both spindle and ripple events were not caused by spurious broadband power increases but reflect discrete events within our frequency range of interest, we implemented a routine to discard false positives based on their frequency profile. To this end, we calculated a time-frequency representation time-locked to the maximum of each spindle or ripple event (spindles: frequencies from 9 to 19 Hz in 0.5 Hz steps, time window of ±750 ms in 2 ms steps; ripples: frequencies from 65 to 135 Hz in 2 Hz steps, time window of ±100 ms in 2 ms steps) and extracted the frequency profile by averaging along the time dimension from −0.5 to +0.5 s for spindle events or from −0.05 to +0.05 for ripple events. A spindle/ripple event was rejected as a false positive whenever the frequency profile did not exhibit a prominent peak, that is a decline in amplitude on both sides of at least 20% with respect to its maximum value (determined with the prominence output of the MATLAB function ‘findpeaks’), within the frequency range of interest, that is, between 12 and 16 Hz or 80 and 120 Hz, respectively.
 
-## Ripple-free control events
+### Ripple-free control events
 
 To statistically assess of the dynamics of spectral power and functional connectivity around sharp-wave ripples, we used carefully matched control events in which no ripples were observed but without any restrictions on the occurrence of sleep spindles (see e.g. Cox et al., 2020; Helfrich et al., 2019; Klinzing et al., 2016 for a similar approach). One advantage of this procedure is that it avoids the arbitrary decision of what constitutes a proper pre-ripple baseline period. In particular, for each participant’s n observed ripple events, we derived n non-ripple events, that is artifact-free NREM epochs matching the duration of each individual event including an additional padding of 1.5 s before and after in which our ripple detection algorithm did not indicate the presence of a ripple. Furthermore, to ensure that signal properties are maximally matched between target events and surrogates, control events were only drawn from a 10 min time window before and after the corresponding ripple event. The probability underlying the randomized selection of control events within such a 10 min interval was modulated according to a normal distribution. Epochs once assigned to control events were discarded from subsequent iterations to exclude overlapping non-events. This procedure was repeated 100 times. These 100 sets of matched control events were averaged for power comparisons (Figure 2 and Figure 2—figure supplement 1), that is each empirical ripple event is paired with one control event averaged across the 100 iterations, allowing for paired t-tests. For connectivity metrics, which are derived across events, the 100 iterations were used to build a control event distribution of 100 values against which to compare the empirical value (Figure 3, Figure 3—figure supplements 1–3). Furthermore, it is important to note that the choice of detection criteria influences the absolute number of detected events (see also Staresina et al., 2015), which in turn impacts any subsequent analyses. Using matched control events thus mitigates the potential bias by differences in trial numbers and represent a stringent statistical assessment for functional connectivity measures. Visualization of spindle and sharp-wave ripples waveform as shown in Figure 1 was performed by averaging the EEG signals time-locked to the minimum spindle trough or maximum ripple peak segmented into ±1 s and ±0.5 s epochs, respectively.
 
-## Time-frequency representations
+### Time-frequency representations
 
 Ripple-locked TFRs were calculated on the epoched ripple-events across all patients using Morlet wavelets for frequencies from 1 to 20 Hz with a 0.5 Hz resolution in 20 ms steps. For frequencies ≥ 5 Hz, the number of cycles was set adaptively to half of the corresponding frequency (or rounded up to the next integer value) but at least 5 cycles, resulting in time windows of approximately 500 ms. For frequencies below 5 Hz, that is 1 to 4.5 Hz, cycle numbers were reduced to values ranging from 2 to 4, reducing the window size and thereby increasing availability of artifact-free segments. TFRs on control events were calculated with an identical procedure. Of note, for the fSpindle = 12–16 Hz spindle range, Gaussian-shaped Morlet wavelets are based on ncycles = 6–8 cycles, which corresponds to a temporal resolution of σtt0.167 s on average (σttncycles/(π · fSpindle)) (Tallon-Baudry et al., 1996). Note that assessment of the temporal order of spindle onset times (Figure 3E) is based on spindle events detected with a procedure not involving wavelets (see above).
 
 To correct statistical analysis for multiple comparisons, a cluster-based permutation procedure was applied as implemented in FieldTrip (Oostenveld et al., 2011), using a cluster threshold of p<0.05 and a final threshold for significance of p<0.05.
 
-## Coherence
+### Coherence
 
-Following the region-specific TFR analyses highlighting overall power changes based on an average across all ripple events, we next assessed the degree of functional connectivity between the neocortex and hippocampus around SW-Rs on a trial-by-trial basis by examining spectral coherence. Time-resolved coherence from −1 to +1 centered on ripple events was calculated for frequencies from 1 to 20 Hz using cross-spectral densities from complex time-frequency representations (ft_connectivityanalysis function with method-parameter = ‘coh’ in FieldTrip). Statistical analysis was initially restricted to the concurrent spindle increases in HIPP and NC obtained from the previous TFR analyses, which encompasses a time interval from −220 to 460 ms around the ripple maximum and a frequency range between 11.5 to 18 Hz. To this end, the empirical value for coherence around ripples was obtained by averaging across our window of interest and tested for significance by means of a z-statistics using the mean and standard deviation of the corresponding coherence from the 100 control datasets:z=(Cohripple−mean(Cohcontrol))/std(Cohcontrol)
+Following the region-specific TFR analyses highlighting overall power changes based on an average across all ripple events, we next assessed the degree of functional connectivity between the neocortex and hippocampus around SW-Rs on a trial-by-trial basis by examining spectral coherence. Time-resolved coherence from −1 to +1 centered on ripple events was calculated for frequencies from 1 to 20 Hz using cross-spectral densities from complex time-frequency representations (ft_connectivityanalysis function with method-parameter = ‘coh’ in FieldTrip). Statistical analysis was initially restricted to the concurrent spindle increases in HIPP and NC obtained from the previous TFR analyses, which encompasses a time interval from −220 to 460 ms around the ripple maximum and a frequency range between 11.5 to 18 Hz. To this end, the empirical value for coherence around ripples was obtained by averaging across our window of interest and tested for significance by means of a z-statistics using the mean and standard deviation of the corresponding coherence from the 100 control datasets:
+
+$$
+z=(Coh_{ripple}−mean(Coh_{control}))/std(Coh_{control})
+$$
 
 The z-values were than transformed into p-values, with a significance threshold of z-values greater or smaller than +/- 1.96. Furthermore, to illustrate the temporal dynamics of coherence in the spindle range, we first averaged the resulting coherence representation across the frequency dimension from 12 to 16 Hz to obtain a coherence time series and then performed a z-transformation with the corresponding time series from the control data.
 
-## Partial directed coherence
+### Partial directed coherence
 
 To examine directionality in the cortical-hippocampal communication we calculated partial directed coherence (PDC, ft_connectivityanalysis function with method-parameter = ‘pdc’ in Fieldtrip). PDC extends the concept of coherence of mutual synchrony, by decomposing the underlying temporal relationship into a directional influence between the regions of interest, that is, to what extent does the past of NC predict present activity in HIPP and vice versa. The concept of PDC reflects a frequency-domain representation of Granger causality (Baccalá and Sameshima, 2001). In order to resolve directionality in time, we computed PDC on complex power spectra obtained on 512 ms long intervals shifted from −1 to +1 s around detected ripple events in 20 ms steps. Subsequently, statistical analyses focused on mean PDC values obtained from the significant cluster reflecting the conjoint spindle increases in HIPP and NC. Again, to illustrate the temporal evolution of PDC in the spindle range, we first extracted the corresponding time series by averaging from 12 to 16 Hz and then calculated a z-score with respect to the control data. Finally, we subtracted the resulting z-scores for the two directions, that is NC driving HIPP minus HIPP driving NC. Thus, positive values indicate a directional influence of neocortical on hippocampal spindle activity and vice versa for negative values. Given the ambiguity of any directional influence in the absence of functional coupling, we restrict display and interpretation of PDC to time/frequency bins exhibiting positive spectral coherence in the preceding analysis. Note that PDC calculations employed here follow a non-parametric approach, that is, they are not based on a previous autoregressive (AR) model of the EEG signals but are directly derived from wavelet-based methods. This approach was chosen due to lacking an a priori hypothesis for the AR order, and more importantly, to base all our analyses on the same wavelet framework.
 
-## Amplitude- and phase-based connectivity
+### Amplitude- and phase-based connectivity
 
 Our examination of mutual and directed connectivity based on spectral and partial directed coherence has the advantage that both rely on the same mathematical framework and thus allow for internally consistent statistical assessments (i.e. PDC informing on the directionality of the observed spectral coherence). Nonetheless, we asked to what extend hippocampal-neocortical communication is mediated by cross-regional amplitude or phase-relationships. To disentangle this, we additionally calculated the power-power correlation (Hipp et al., 2012) and phase locking value (PLV, Lachaux et al., 1999) between HIPP and NC during ripples and control events.
 
@@ -122,6 +467,6 @@ It is important to note that connectivity measures are prone to volume conductio
 
 Finally, we examined phase-locking between HIPP and NC (Lachaux et al., 1999). Based on complex TFRs for frequencies from 1 to 20 Hz and between −1 s and +1 s around ripple/control events, the PLV (ft_connectivityanalysis function with method-parameter = ‘plv’ in Fieldtrip) extracts the phase information and evaluates the variation in phase-difference between HIPP and NC for a given frequency and time point across all ripple and control events, respectively.
 
-## Peri-event histograms of spindle onsets
+### Peri-event histograms of spindle onsets
 
 Finally, given our findings on the directional influence between NC- and HIPP-spindles we inspected the timing of spindle onsets within both regions of interest. To this end, we created peri-event histograms (bin size = 50 ms) of the onsets of discrete spindle events time-locked to ripple and control events occurring between −0.5 and +0.5 s. The resulting histograms were normalized by the total number of detected spindle onsets (multiplied by 100). Identical to our previous analyses, statistical comparison with the control data was performed by calculating a z-value with respect to the mean and standard deviation of the control distribution for each region and bin. Note that discrete spindle events may co-occur with more than one SW-R, resulting in multiple inclusion in the peri-event histogram. However, the percentage of such events is ~0.2% and thus negligible.

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02dgjyy92 Department of Psychology, University of Miami Miami United States
+1. Department of Psychology, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
 
 † Corresponding author
 

@@ -39,27 +39,132 @@ Here, we propose that neural oscillations can track pseudo-rhythmic speech by ta
 
 ## Results
 
-## Temporal speech properties
+### Temporal speech properties
 
-## Word frequency influences word duration
+#### Word frequency influences word duration
 
 To extract the temporal properties in naturally spoken speech we used the Corpus Gesproken Nederlands (CGN; [Version 2.0.3; 2014]). This corpus consists of elaborated annotations of over 900 hr of spoken Dutch and Flemish words. We focus here on the subset of the data of which onset and offset timings were manually annotated at the word level in Dutch. Cleaning of the data included removing all dashes and backslashes. Only words were included that were part of a Dutch word2vec embedding (github.com/coosto/dutch-word-embeddings; Nieuwenhuijse, 2018; needed for later modeling) and required to have a frequency of at least 10 in the corpus. All other words were replaced with an <unknown> label. This resulted in 574,726 annotated words with 3096 unique words. Two thousand and forty-eight of the words were recognized in the Dutch Wordforms database in CELEX (Version 3.1) in order to extract the word frequency as well as the number of syllables per word (later needed to fit a regression model). Mean word duration was 0.392 s, with an average standard deviation of 0.094 s (Figure 2—figure supplement 1). By splitting up the data in sequences of 10 sequential words, we could extract the average word, syllable, and character rate (Figure 2—figure supplements 2 and 3). The reported rates fall within the generally reported ranges for syllables (5.2 Hz) and words (3.7 Hz; Ding et al., 2017; Pellegrino and Coupé, 2011).
 
 We predict that knowledge about the language statistics influences the duration of speech units. As such we predict that more prevalent words will have on average a shorter duration (also reported in Monsell et al., 1989). In Figure 2A, the duration of several mono- and bi-syllabic words are listed with their word frequency. From these examples, it seems that words with higher word frequency generally have a shorter duration. To test this statistically we entered word frequency in an ordinary least square regression with number of syllables as control. Both number of syllables (coefficient = 0.1008, t(2843) = 75.47, p<0.001) as well as word frequency (coefficient = −0.022, t(2843) = −13.94, p<0.001) significantly influence the duration of the word. Adding an interaction term did not significantly improve the model (F (1,2843) = 1.320, p=0.251; Figure 2B,C). The effect is so strong that words with a low frequency can last three times as long as high-frequency words (even within mono-syllabic words). This indicates that word frequency could be an important part of an internal model that influences word duration.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-v1.jpg)
+
+**Figure 2.:** (A) Example of mono- and bi-syllabic words of different word frequencies in brackets (van=from, zijn=be, snel=fast, stem=voice, hebben=have, eten=eating, volgend=next, toekomst=future). Text in the graph indicates the mean word duration. (B) Relationship between word frequency and duration. Darker colors mean more values. (C) same as (B) but separately for mono- and bi-syllabic words. (D) Relationship character amount and word duration. The longer the words, the longer the duration (left). The increase in word duration does not follow a fixed number per character as duration as measured by rate increases. (E) same as (D) but for number of syllables. Red dots indicate the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig2-figsupp3-v1.jpg)
+
 The previous analysis probed us to expand on the relationship between word duration and length of the words. Obviously, there is a strong correlation between word length and mean word duration (number of characters 0.824, p<0.001; number of syllables: ρ = 0.808, p<0.001; for number of syllables already shown above; Figure 2D,E). In contrast, this correlation is present, but much lower for the standard deviation of word duration (number of characters: ρ = 0.269, p<0.001; number of syllables: ρ = 0.292, p<0.001). Finding a strong correlation does not imply that for every time unit increase in the word length, the duration of the word also increases with the same time unit, i.e., bi-syllabic words do not necessarily have to last twice as long as mono-syllabic words. Therefore, we recalculated word duration to a rate unit considering the number of syllables/characters of the word. Thus, a 250 ms mono- versus bi-syllabic word would have a rate of 4 versus 8 Hz, respectively. Then we correlated character/syllabic rate with word duration. If word duration increases monotonically with character/syllable length, there should be no correlation. We found that the syllabic rate varies between 3 and 8 Hz as previously reported (Figure 2E, right; Ding et al., 2017; Pellegrino and Coupé, 2011). However, the more syllables there are in a word, the higher this rate (ρ = 0.676, p<0.001). This increase was less strong for the character rate (ρ = 0.499, p<0.001; Figure 2D, right).
 
 These results show that the syllabic/character rate depends on the number of characters /syllables within a word and is not an independent temporal unit (Ghitza, 2013). This effect is easy to explain when assuming that the prediction strength of an internal model influences word duration: transitional probabilities of syllables are simply more constrained within a word than across words (Thompson and Newport, 2007). This will reduce the time it takes to utter/perceive any syllable which is later in a word. In the current model, we focus on words (based on the availability of word2vec embedding used to calculate contextual predictabilities based on a RNN) instead of syllables, so we will not test this prediction for syllables, but instead we can investigate the effect of transitional probabilities and other statistical regularities flowing from internal models across words (see next section and [Jadoul et al., 2016] for statistical regularities in syllabic processing).
 
-## Word-by-word predictability predicts word onset differences
+#### Word-by-word predictability predicts word onset differences
 
 The brain’s internal model likely provides predictions about what linguistic features and representations, and possibly about which specific units, such as words, to expect next when listening to ongoing speech (Martin, 2016; Martin, 2020). As such, it is also expected that word-by-word onset delays are shorter for words that fit the internal model (i.e., those that are expected; Beattie and Butterworth, 1979). To investigate this possibility, we created a simplified version of an internal model predicting the next word using recurrent neural nets (RNN). We trained an RNN to predict the next word from ongoing sentences (Figure 3A). The model consisted of an embedding layer (pretrained; github.com/coosto/dutch-word-embeddings), a recurrent layer with a tanh activation function, and a dense output layer with a softmax activation. To prevent overfitting, we added a 0.2 dropout to the recurrent layers and the output layer. An Adam optimizer was used at a 0.001 learning rate and a batch size of 32. We investigated four different recurrent layers (GRU and LSTM at either 128 or 300 units; see Figure 3—figure supplement 1). The final model we use here includes a LSTM with 300 units. Input data consistent of 10 sequential words (label encoding) within the corpus (of a single speaker; shifting the sentences by one word at a time), and an output consisted of a single word. A maximum of four unknown labeled words (words not included in the word2vec estimations. Four was chosen as it was <50% of the words) was allowed in the input, but not in output. Validation consisted of a randomly chosen 2% of the data.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig3-v1.jpg)
+
+**Figure 3.:** (A) Sequences of 10 words were entered in an RNN in order to predict the content of the next word. Three examples are provided of input data with the label (bold word) and probability output for three different words. The regression model showed a relation between the duration of last word in the sequence and the predictability of the next word such that words were systematically shorter when the next word was more predictable according to the RNN output (illustrated here with the shorted black boxes). (B) Regression line estimated at mean value of word duration and bigram. (C) Scatterplot of prediction and onset difference of data within ± 0.5 standard deviation of word duration and bigram. Note that for (B) and (C), the axes are linear on the transformed values. (D) Regression line for the correlation between logarithm of variance of the prediction and theta power. (E) None-transformed distribution of variance of the predictions (within a sentence). Translation of the sentences in (A) from top to bottom: ‘... that it has for me and while you have no answer [on]’, ‘... the only real hope for us humans is a firm and [sure]’, ‘... a couple of glass doors in front and then it would not have been [in]’.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Probability is defined as the mean of the model output value at the node representing the next word.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** RNN prediction dependent on the current word (left), previous word (middle), or sentence position (right). Words with generally high average RNN prediction were for current words ‘je’,’te’,’ik’,’de’,’van’ (‘you’,’to’,’I’,’the’,’from’) and previous words ‘dan’,’met’,’ook’,’voor’,’op’ (‘than’,’with’,’also’,’for’,’on’). The later the position the stronger the RNN prediction on average.
+
 The output of the RNN reflects a probability distribution in which the values of the RNN sum up to one and each word has its own predicted value (Figure 3A; see Figure 3—figure supplement 2 for differences across words and sentence position). As such we can extract the predicted value of the uttered word and relate the RNN prediction with the stimulus onset delay relative to the previous word. We entered word prediction in a regression using the stimulus onset difference between the current word in the sentence and the previous word (i.e., onset difference of words). We added the control variables bigram (using the NLTK toolbox based on the training data only), frequency of previous word, syllable rate (rate of the full sentence input), and mean duration of previous word (all variables that can account for part of the variance that affects the duration of the last word). We only used the test data (total of 7361 sentences, excluding all words in which the previous word (W-1) was not present in Celex. 4837 sentences). Many of the variables were skewed to the right; therefore, we transformed the data accordingly (see Table 1; results were robust to changes in these transformation).
+
+**Table 1.**
+ Summary of regression model for logarithm of onset difference of words.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Trans</th>
+      <th>B</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+      <th>VIF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>x</td>
+      <td>0.9719</td>
+      <td></td>
+      <td>0.049</td>
+      <td>19.764</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNN prediction</td>
+      <td>x (1/6)</td>
+      <td>−0.3370</td>
+      <td>−0.0862</td>
+      <td>0.047</td>
+      <td>−7.163</td>
+      <td>&lt;0.001</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Bigram</td>
+      <td>log(x)</td>
+      <td>−0.0118</td>
+      <td>−0.0316</td>
+      <td>0.005</td>
+      <td>−2.424</td>
+      <td>0.015</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>Word frequency W-1</td>
+      <td>x</td>
+      <td>0.0049</td>
+      <td>0.0076</td>
+      <td>0.009</td>
+      <td>0.546</td>
+      <td>0.585</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Mean duration W-1</td>
+      <td>log(x)</td>
+      <td>1.1206</td>
+      <td>0.7003</td>
+      <td>0.022</td>
+      <td>50.326</td>
+      <td>&lt;0.001</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Syllable Rate</td>
+      <td>x</td>
+      <td>−0.1033</td>
+      <td>−0.2245</td>
+      <td>0.004</td>
+      <td>−23.014</td>
+      <td>&lt;0.001</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Model R2 = 0.542. Trans = transformation, W-1 = previous word, B = unstandardized coefficient, β = standardized coefficient, SE = standard error, t = t value, p = p value, VIF = variance inflation factor._
 
 All predictors except word frequency of the previous word showed a significant effect (Table 1). The variance explained by word frequency was likely captured by the mean duration variable of the previous word, which is correlated to word frequency. The RNN predictor could capture more variance than the bigram model, suggesting that word duration is modulated by the level of predictability within a fuller context than just the conditional probability of the current word given the previous word (Figure 3B,C). Importantly, it was necessary to use the trained RNN model as a predictor; entering the RNN predictions after the first training cycle (of a total of 100) did not results in a significant predictor (t(4837) = −1.191, p=0.234). Also adding the predictor word frequency of the current word did not add significant information to the model (F(1, 4830) = 0.2048, p=0.651). These results suggest that words are systematically lengthened (or pauses are added. However, the same predictors are also significant when excluding sentences containing pauses) when the next word is not strongly predicted by the internal model. We also investigate whether RNN predictions have an influence on the duration of the word that has to be uttered. We found no effect on the duration (Supporting Table 1).
 
-## Sentence isochrony depends on prediction variance
+#### Sentence isochrony depends on prediction variance
 
 In the previous section, we investigated word-to-word onsets, but did not investigate how this influences the temporal properties within a full sentence. In a regular sentence, predictability values change from word-to-word. Based on the previous results, it is expected that overall sentences with a more stable predictability level (sequential words are equally predictable) should be more isochronous than sentences in which the predictability shifts from high to low. This prediction is based on the observation that when predictions are equal the expected shift is the same, while for varying predictions, temporal shifts vary (Figure 3B,C).
 
@@ -67,15 +172,92 @@ To test this hypothesis, we extracted the RNN prediction for 10 subsequent words
 
 ## Materials and methods
 
-## Speech Tracking in a Model Constrained Oscillatory Network
+### Speech Tracking in a Model Constrained Oscillatory Network
 
 In order to investigate how much of these duration effects can be explained using an oscillator model, we created the model Speech Tracking in a Model Constrained Oscillatory Network (STiMCON). STiMCON in its current form will not be exhaustive; however, it can extract how much an oscillating network can cope with asynchronies by using its own internal model illustrating how the brain’s language model and speech timing interact (Guest and Martin, 2021). The current model is capable of explaining how top-down predictions can influence the processing time as well as provide an explanation for two known temporal illusions in speech.
 
-STiMCON consists of a network of semantic nodes of which the activation A of each level in the model l is governed by:(1)Al,T=Cl-1→l*Al-1,T+Cl+1→l*Al+1,T+inhibTa+osc(T)in which C represents the connectivity patterns between different hierarchical levels, T the time in a sentence, and Ta the vector of times of an individual node in an inhibition function (in milliseconds). The inhibition function is a gate function:(2)inhib(Ta)={−3∗BaseInhib,Ta <l3∗BaseInhib,20≤Ta<100BaseInhib,Ta>100in which BaseInhib is a constant for the base level of inhibition (negative value, set to −0.2). As such nodes are by default inhibited, as soon as they get activated above threshold (activation threshold set at 1) Ta sets to zero. Then, the node will have suprathreshold activation, which after 20 ms returns to increased inhibition until the base level of inhibition is returned. These values are set to reflect early excitation and longer lasting inhibition, which are only loosely related to neurophysiological time scales. The oscillation is a constant oscillator:(3)osc(T)=Am∗e2πiωT+iφin which Am is the amplitude of the oscillator, ω the frequency, and φ the phase offset. As such we assume a stable oscillator which is already aligned to the average speech rate (see Rimmele et al., 2018; Poeppel and Assaneo, 2020 for phase alignment models). The model used for the current simulation has one an input layer (l−1 level) and one single layer of semantic word nodes (l level) that receives feedback from a higher level layer (l+1 level). As such only the word (l) level is modeled according to Equation 1–3 and the other levels form fixed input and feedback connection patterns. Even though the feedback influences the activity at the word level, it does not cause a phase reset as the phase of the oscillation does not change in response to this feedback.
+STiMCON consists of a network of semantic nodes of which the activation A of each level in the model l is governed by:
 
-## Language models influence time of activation
+$$
+A_{l,T}=C_{l-1→l}*A_{l-1,T}+C_{l+1→l}*A_{l+1,T}+inhibTa+osc(T)
+$$
+
+in which C represents the connectivity patterns between different hierarchical levels, T the time in a sentence, and Ta the vector of times of an individual node in an inhibition function (in milliseconds). The inhibition function is a gate function:
+
+$$
+inhib(Ta)={−3∗BaseInhib,Ta <l3∗BaseInhib,20\leqTa<100BaseInhib,Ta>100
+$$
+
+in which BaseInhib is a constant for the base level of inhibition (negative value, set to −0.2). As such nodes are by default inhibited, as soon as they get activated above threshold (activation threshold set at 1) Ta sets to zero. Then, the node will have suprathreshold activation, which after 20 ms returns to increased inhibition until the base level of inhibition is returned. These values are set to reflect early excitation and longer lasting inhibition, which are only loosely related to neurophysiological time scales. The oscillation is a constant oscillator:
+
+$$
+osc(T)=Am∗e^{2\pii\omegaT+i\phi}
+$$
+
+in which Am is the amplitude of the oscillator, ω the frequency, and φ the phase offset. As such we assume a stable oscillator which is already aligned to the average speech rate (see Rimmele et al., 2018; Poeppel and Assaneo, 2020 for phase alignment models). The model used for the current simulation has one an input layer (l−1 level) and one single layer of semantic word nodes (l level) that receives feedback from a higher level layer (l+1 level). As such only the word (l) level is modeled according to Equation 1–3 and the other levels form fixed input and feedback connection patterns. Even though the feedback influences the activity at the word level, it does not cause a phase reset as the phase of the oscillation does not change in response to this feedback.
+
+### Language models influence time of activation
 
 To illustrate how STiMCON can explain how processing time depends on the prediction of internal language models, we instantiated a language model that had only seen three sentences and five words presented at different probabilities (I eat cake at 0.5 probability, I eat nice cake at 0.3 probability, I eat very nice cake at 0.2 probability; Table 2). While in the brain the prediction should add up to 1, we can assume that the probability is spread across a big number of word nodes of the full language model and therefore neglectable. This language model will serve as the feedback arriving from the l+1-level to the l-level. The l-level consists of five nodes that each represent one of the words and receives proportional feedback from l+1 according to Table 2 with a delay of 0.9*ω seconds, which then decays at 0.01 unit per millisecond and influences the l-level at a proportion of 1.5. The 0.9*ω was defined as we hypothesized that onset time would be loosely predicted around on oscillatory cycle, but to be prepared for input slightly earlier (which of course happens for predictable stimuli), we set it to 0.9 times the length of the cycle. The decay is needed and set such that the feedback would continue around a full theta cycle. The proportion was set empirically such to ensure that strong feedback did cause suprathreshold activation at the active node. The feedback is only initiated when supra-activation arrives due to l−1-level bottom-up input. Each word at the l−1-level input is modeled as a linearly function to the individual nodes lasting length of 125 ms (half a cycle, ranging from 0 to 1 arbitrary units). As such, the input is not the acoustic input itself but rather reflects a linear increase representing the increasing confidence of a word representing the specific node. φ is set such that the peak of a 4 Hz oscillation aligns to the peak of sensory input of the first word. Sensory input is presented at a base stimulus onset asynchrony of 250 ms (i.e., 4 Hz).
+
+**Table 2.**
+ Example of a language model.This model has seen three sentences at different probabilities. Rows represent the prediction for the next word, e.g., /I/ predicts /eat/ at a probability of 1, but after /eat/ there is a wider distribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>I</th>
+      <th>Eat</th>
+      <th>Very</th>
+      <th>Nice</th>
+      <th>Cake</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>eat</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.2</td>
+      <td>0.3</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>very</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>nice</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>cake</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 When we present this model with different sensory inputs at an isochronous rhythm of 4 Hz, it is evident that the timing at which different nodes reach activation depends on the level of feedback that is provided (Figure 4). For example, while the /I/-node needs a while to get activated after the initial sensory input, the /eat/-node is activated earlier as it is pre-activated due to feedback. After presenting /eat/, the feedback arrives at three different nodes and the activation timing depends on the stimulus that is presented (earlier activation for /cake/ compared to /very/).
 
@@ -83,7 +265,7 @@ When we present this model with different sensory inputs at an isochronous rhyth
 
 **Figure 4.:** For the supra-threshold activation dark red indicates activation which included input from l+1 as well as l1, orange indicates activation due to l+1 input. Feedback at different strengths causes phase dependent activation (left). Suprathreshold activation is reached earlier when a highly predicted stimulus (right) arrives, compared to a mid-level predicted stimulus (middle).
 
-## Time of presentation influences processing efficiency
+### Time of presentation influences processing efficiency
 
 To investigate how the time of presentation influences the processing efficiency, we presented the model with /I eat XXX/ in which the last word was varied in content (Figure 5A; either /I/, /very/, /nice/, or /cake/), intensity (linearly ranging from 0 to 1), and onset delay (ranging between −125 and +125 ms relative to isochronous presentation). We extracted the time at which the node matching the stimulus presentation reached activation threshold first (relative to stimulus onset and relative to isochronous presentation).
 
@@ -95,19 +277,39 @@ Figure 5B shows the output. When there is no feedback (i.e., at the first word /
 
 When we investigate timing differences in stimulus presentation, it is important to also consider what this means for the timing in the brain. Before, we showed that the amount of prediction can influence timing in our model. It is also evident that the earlier a stimulus was presented the more time it took (relative to the stimulus) for the nodes to reach threshold (more yellow colors for earlier delays). This is a consequence of the oscillation still being at a relatively low excitability point at stimulus onset for stimuli that are presented early during the cycle. However, when we translate these activation threshold timing to the timing of the ongoing oscillation, the variation is strongly reduced (Figure 5C). A stimulus timing that varies between 130 ms (e.g., from −59 to +72 in the /cake/ line; excluding the non-linear section of the line) only reaches the first supra-threshold response with 19 ms variation in the model (translating to a reduction of 53–8% of the cycle of the ongoing oscillation, i.e., a 1:6.9 ratio). This means that within this model (and any oscillating model) the activation of nodes is robust to some timing variation in the environment. This effect seemed weaker when no prediction was present (for the /I/ stimulus this ratio was around 1:3.5. Note that when determining the /cake/ range using the full line the ratio would be 1:3.4).
 
-## Top-down interactions can provide rhythmic processing for non-isochronous stimulus input
+### Top-down interactions can provide rhythmic processing for non-isochronous stimulus input
 
 The previous simulation demonstrate that oscillations provide a temporal filter and the processing at the word layer can actually be closer to isochronous than what can be solely extracted from the stimulus input. Next, we investigated whether dependent on changes in top-down prediction, processing within the model will be more or less rhythmic. To do this, we create stimulus input of 10 sequential words at a base rate of 4 Hz to the model with constant (Figure 6A; low at 0 and high at 0.8 predictability) or alternating word-to-word predictability. For the alternating conditions, word-to-word predictability alternates between low and high (sequences which word are predicted at 0 or 0.8 predictability, respectively) or shift from high to low. For this simulation, we used Gaussian sensory input (with a standard deviation of 42 ms aligning the mean at the peak of the ongoing oscillation; see Figure 6—figure supplement 1 for output with linear sensory input). Then, we vary the onset time of the odd words in the sequence (shifting from −100 up to +100 ms) and the stimulus intensity (from 0.2 to 1.5). We extracted the overall activity of the model and computed the FFT of the created time course (using a Hanning taper only including data from 0.5 to 2.5 s to exclude the onset responses). From this FFT, we extracted the peak activation at the stimulation rate of 4 Hz.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig6-v1.jpg)
+
+**Figure 6.:** (A) We presented the model with repeating (A, B) stimuli with varying internal models. We extracted the power spectra and peak activity at various odd stimulus offsets and stimulus intensities. (B) Strength of 4 Hz power depends on predictability in the stream. When predictability is alternated between low and high, activation is more rhythmic when the predictable odd stimulus arrives earlier and vice versa. (C) Power across different internal models at intensity of 0.8 and 1.0 (different visualization than B). (D) Magnitude spectra at three different odd word offsets at 1.0 intensity. To more clearly illustrate the differences, the magnitude to the power of 20 is plotted.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Conventions of panel A, B are the same as in Figure 6C,D, respectively.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Overall activation for individual nodes and summed activation. (B) Overall summed activation as time course. (C) Power spectra of the different delays and conditions. Dependent on the internal language model, the power is stronger at the -33 ms or 33 ms delay condition.
+
 The first thing that is evident is that the model with no content predictions has overall lowest power, but has the strongest 4 Hz response around isochronous presentation (odd word offset of 0 ms) at high stimulus intensities (Figure 6B–D) following closely the acoustic input. Adding overall high predictability increases the power, but also here the power seems symmetric around zero. The spectra of the alternating predictability conditions look different. For the low to high predictability condition, the curve seems to be shifted to the left such that 4 Hz power is strongest when the predictable odd stimulus is shifted to an earlier time point (low–high condition). This is reversed for the high–low condition. At middle stimulus intensities, there is a specific temporal specificity window at which the 4 Hz power is particularly strong. This window is earlier for the low–high than the high–low alternation (Figure 6C,D and Figure 6—figure supplement 2). The effect only occurs at specific middle-intensity combination as at high intensities the stimulus dominates the responses and at low intensities the stimulus does not reach threshold activation. These results show that even though stimulus input is non-isochronous, the interaction with the internal model can still create a potential isochronous structure in the brain (see Meyer et al., 2019; Meyer et al., 2020). Note that the direction in which the brain response is more isochronous matches with the natural onset delays in speech (shorter onset delays for more predictable stimuli).
 
-## Model validation
+### Model validation
 
-## STiMCON’s sinusoidal modulations of RNN predictions is optimally sensitive to natural onset delays
+#### STiMCON’s sinusoidal modulations of RNN predictions is optimally sensitive to natural onset delays
 
-Next, we aimed to investigated whether STiMCON would be optimally sensitive to speech input timings found naturally in speech. Therefore, we tried to fit STIMCON’s expected word-to-word onset differences to the word-to-word onset differences we found in the CGN. At a stable level of intensity of the input and inhibition, the only aspect that changes the timing of the interaction between top-down predictions and bottom-up input within STiMCON is the ongoing oscillation. Considering that we only want to model for individual words how much the prediction (Cl+1→l*Al+1,T) influences the expected timing we can set the contribution of the other factors from Equation (1) to zero remaining with the relative contribution of prediction:(4)Cl+1→l∗Al+1,T=topdowninfluence=−osc(T)
+Next, we aimed to investigated whether STiMCON would be optimally sensitive to speech input timings found naturally in speech. Therefore, we tried to fit STIMCON’s expected word-to-word onset differences to the word-to-word onset differences we found in the CGN. At a stable level of intensity of the input and inhibition, the only aspect that changes the timing of the interaction between top-down predictions and bottom-up input within STiMCON is the ongoing oscillation. Considering that we only want to model for individual words how much the prediction $(C_{l+1→l}*A_{l+1,T}$) influences the expected timing we can set the contribution of the other factors from Equation (1) to zero remaining with the relative contribution of prediction:
 
-We can solve this formula in order to investigate the expected relative time shift (T) in processing that is a consequence of the strength of the prediction (ignoring that in the exact timing will also depend on the strength of the input and inhibition):(5)relativetimeshift=12πω(arcsin⁡(Cl+1→l∗Al+1,T−Am)−φ)
+$$
+C_{l+1→l}∗A_{l+1,T}=topdowninfluence=−osc(T)
+$$
+
+We can solve this formula in order to investigate the expected relative time shift (T) in processing that is a consequence of the strength of the prediction (ignoring that in the exact timing will also depend on the strength of the input and inhibition):
+
+$$
+relativetimeshift=\frac{1}{2\pi\omega}(arcsin⁡(\frac{C_{l+1→l}∗A_{l+1,T}}{−Am})−\phi)
+$$
 
 ω was set as the syllable rate for each sentence, and Am and φ were systematically varied. We fitted a linear model between the STiMCON’s expected time and the actual word-to-word onset differences. This model was similar to the model described in the section Word-by-word predictability predicts word onset differences and included the predictor syllable rate and duration of the previous word. However, as we were interested in how well non-transformed data matches the natural onset timings, we did not perform any normalization besides Equation (5). As this might involve violating some of the assumptions of the ordinary least square fit, we estimate model performance by repeating the regression 1000 times fitting it on 90% of the data (only including the test data from the RNN) and extracting R2 from the remaining 10%.
 
@@ -117,13 +319,21 @@ Results show a modulation of the R2 dependent on the amplitude and phase offset 
 
 **Figure 7.:** (A) Phase offset and amplitude of the oscillation modulate the fit to the word-to-word onset durations. (B) Histogram of the predictions created by the deep neural net. (C) Histogram of the relative time shift transformation at phase of −0.15π and amplitude of 1.5.
 
-## STiMCON can explain perceptual effects in speech processing
+#### STiMCON can explain perceptual effects in speech processing
 
 Due to the differential feedback strength and the inhibition after suprathreshold feedback stimulation, STiMCON is more sensitive to lower predictable stimuli at phases later in the oscillatory cycle. This property can explain two illusions that have been reported in the literature, specifically, the observation that the interpretation of ambiguous input depends on the phase of presentation (Ten Oever and Sack, 2015; Kayser et al., 2016; Ten Oever et al., 2020) and on speech rate (Bosker and Reinisch, 2015). The only assumption that has to be made is that there is an uneven base prediction balance between the ways the ambiguous stimulus can be interpreted.
 
 The empirical data we aim to model comprises an experiment in which ambiguous syllables, which could either be interpreted as /da/ or /ga/, were presented (Ten Oever and Sack, 2015). In one of the experiments in this study, broadband simuli were presented at specific rates to entrain ongoing oscillations. After the last entrainment stimulus, an ambiguous /daga/ stimulus was presented at different delays (covering two cycles of the presentation rate at 12 different steps), putatively reflecting different oscillatory phases. Dependent on the delay of stimulation participants perceived either /da/ or /ga/, suggesting that phase modulates the percept of the participants. Besides this behavioral experiment, the authors also demonstrated that the same temporal dynamics were present when looking at ongoing EEG data, showing that the phase of ongoing oscillations at the onset of ambiguous stimulus presentation determined the percept (Ten Oever and Sack, 2015).
 
 To illustrate that STiMCON is capable of showing a phase (or delay) dependent effect, we use an internal language model similar to our original model (Table 2). The model consists of four nodes (N1, N2, Nda, and Nga). N1 and N2 represent nodes responsive to two stimulus S1 and S2 that function as entrainment stimuli. N1 activation predicts a second unspecific stimulus (S2) represented by N2 at a predictability of 1. N2 activation predicts either da or ga at 0.2 and 0.1 probability, respectively. This uneven prediction of /da/ and /ga/ is justified as /da/ is more prevalent in the Dutch language as /ga/ (Zuidema, 2010), and it thus has a higher predicted level of occurring. Then, we present STiMCON (same parameters as before) with /S1 S2 XXX/. XXX is varied to have different proportion of the stimulus /da/ and /ga/ (ranging from 0% /da/ to 100% /ga/ in 12 times steps; these reflect relative proportions that sum up to one such that at 30% the intensity of /da/ would be at max 0.3 and of /ga/ 0.7) and is the onset is varied relate to the second to last word. We extract the time that a node reaches suprathreshold activity after stimulus onset. If both nodes were active at the same time, the node with the highest total activation was chosen. Results showed that for some ambiguous stimuli, the delay determines which node is activated first, modulating the ultimate percept of the participant (Figure 8A, also see Figure 8—figure supplement 1A). The same type of simulation can explain how speech rate can influence perception (Figure 8—figure supplement 1B; but see Bosker and Kösem, 2017).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig8-v1.jpg)
+
+**Figure 8.:** (A) Modulations due to ambiguous input at different times. Illustration of the node that is active first. Different proportions of the /da/ stimulus show activation timing modulations at different delays. (B) Summary of the model and the parameters altered for the empirical fits in (C) and (D). (C). R2 for the grid search fit of the full model using the first active node as outcome variable, a model without inhibition (no inhib), without uneven feedback (no fb), or without an oscillation (no os). The right panel shows the fit of the full model on the rectified behavioral data of Ten Oever and Sack, 2015. Blue crossed indicate rectified data and red lines indicate the fit. (D) is the same as (C) but using the average activity instead of the first active node. Removing the oscillation results in an R2 less than 0.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/68066/elife-68066-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Model activation of two example delays for the fitting (Figure 8A). (B) Modulations due to ambiguous input at different speech rates. Illustration of the node that is active first. Different proportions of the /da/ stimulus show activation timing modulations at different speech rates. Conventions are the same as Figure 8.
 
 To further scrutinize on this effect, we fitted our model to the behavioral data of Ten Oever and Sack, 2015. As we used an iterative approach in the simulations of the model, we optimized the model using a grid search. We varied the parameters of proportion of the stimulus being /da/ or /ga/ (ranging between 10:5:80%), the onset time of the feedback (0.1:0.1:1.0 cycle), the speed of the feedback decay (0:0.01:0.1), and a temporal offset of the final sound to account for the time it takes to interpret a specific ambiguous syllable (ranging between −0.05:0.01:0.05 s). Our first outcome variable was the node that show the first suprathreshold activation (Nda = 1, Nga = 0). If both nodes were active at the same time, the node with the highest total activates was chosen. If both nodes had equal activation or never reached threshold activation, we coded the outcome to 0.5 (i.e., fully ambiguous). These outcomes were fitted to the behavioral data of the 6.25 Hz and 10 Hz presentation rate (the two rates showing a significant modulation of the percept). This data was normalized to have a range between 0 and 1 to account for the model outcomes being binary (0, 0.5, or 1). As a second outcome measure, we also extracted the relative activity of the /da/ and /ga/ nodes by subtracting their activity and dividing by the summed activity. The activity was calculated as the average activity over a window of 500 ms after stimulus onset and the final time course was normalized between 0 and 1.
 
@@ -155,10 +365,37 @@ When investigating the pseudo-rhythmicity in speech, it is important to identify
 
 **Figure 9.:** (A) Acoustics signals will be more isochronous when a producer has a weak versus a strong internal model (top right). When the producer’s strong model matches the receiver’s model, the brain response will be more isochronous for less isochronous acoustic input. (B) When a producer realizes the model of the receiver is weak, it might transform its model and thereby their speech timing to match the receiver’s expectations.
 
-## Conclusions
+### Conclusions
 
 We argued that pseudo-rhythmicity in speech is in part a consequence of top-down predictions flowing from an internal model of language. This pseudo-rhythmicity is created by a speaker and expected by a receiver if they have overlapping internal language models. Oscillatory tracking of this signal does not need to be hampered by the pseudo-rhythmicity, but can use temporal variations as a cue to extract content information since the phase of activation parametrically relates to the likelihood of an input relative to the internal model. Brain responses can even be more isochronous to pseudo-rhythmic compared to isochronous speech if they follow the temporal delays imposed by the internal model. This account provides various testable predictions which, we list in Table 3 and Figure 9. We believe that by integrating neuroscientific explanations of speech tracking with linguistic models of language processing (Martin, 2016; Martin, 2020), we can improve to explain temporal speech dynamics. This will ultimately aid our understanding of language in the brain and provide a means to improve temporal properties in speech synthesis.
 
-## Code availability statement
+**Table 3.**
+ Predictions from the current model.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>When there is a flat constraint distribution over an utterance (e.g., when probabilities are uniform over the utterance), the acoustics of speech should naturally be more isochronous (Figures 9A and 3D,E).</td>
+    </tr>
+    <tr>
+      <td>If speech timing matches the internal language model, brain responses should be more isochronous even if the acoustics are not (Figure 9A).</td>
+    </tr>
+    <tr>
+      <td>The more similar the internal language models of two speakers, the more effective they are in ‘entraining’ each other’s brain.</td>
+    </tr>
+    <tr>
+      <td>If speakers suspect their listener to have a flatter constraint distribution than themselves (e.g., the environment is noisy, or the speakers are in a second language context), they adjust to the distribution by speaking more isochronous (Figure 9B).</td>
+    </tr>
+    <tr>
+      <td>One adjusts the weight of the constraint distribution to a hierarchical level when needed. For example, when there is noise, participants adjust to the rhythm of primary auditory cortex instead of higher order language models. As a consequence, they speak more isochronous.</td>
+    </tr>
+    <tr>
+      <td>The theoretical account provides various predictions that are listed in this table.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Code availability statement
 
 Code for the creation of the main figures is available on GitHub (Ten Oever & Martin, 2021; copy archived at swh:1:rev:873a2bf5c79fe2f828e72e14ef74db409d387854).

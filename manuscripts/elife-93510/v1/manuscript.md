@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Life Sciences Institute, University of Michigan Ann Arbor United States
-2. https://ror.org/00jmfr291 Department of Cell and Developmental Biology, University of Michigan Ann Arbor United States
-3. https://ror.org/03x1ewr52 Thermo Fisher Scientific Waltham United States
-4. https://ror.org/00jmfr291 Department of Biophysics, College of Literature, Science and the Arts, University of Michigan Ann Arbor United States
+1. Life Sciences Institute, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Department of Cell and Developmental Biology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+3. Thermo Fisher Scientific Waltham United States ([ROR:03x1ewr52](https://ror.org/03x1ewr52))
+4. Department of Biophysics, College of Literature, Science and the Arts, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
 ## Abstract
 
-Degradation of heparan sulfate (HS), a glycosaminoglycan (GAG) comprised of repeating units of N -acetylglucosamine and glucuronic acid, begins in the cytosol and is completed in the lysosomes. Acetylation of the terminal non-reducing amino group of α-D-glucosamine of HS is essential for its complete breakdown into monosaccharides and free sulfate. Heparan-α-glucosaminide N -acetyltransferase (HGSNAT), a resident of the lysosomal membrane, catalyzes this essential acetylation reaction by accepting and transferring the acetyl group from cytosolic acetyl-CoA to terminal α-D-glucosamine of HS in the lysosomal lumen. Mutation-induced dysfunction in HGSNAT causes abnormal accumulation of HS within the lysosomes and leads to an autosomal recessive neurodegenerative lysosomal storage disorder called mucopolysaccharidosis IIIC (MPS IIIC). There are no approved drugs or treatment strategies to cure or manage the symptoms of, MPS IIIC. Here, we use cryo-electron microscopy (cryo-EM) to determine a high-resolution structure of the HGSNAT-acetyl-CoA complex, the first step in the HGSNAT-catalyzed acetyltransferase reaction. In addition, we map the known MPS IIIC mutations onto the structure and elucidate the molecular basis for mutation-induced HGSNAT dysfunction.
+Degradation of heparan sulfate (HS), a glycosaminoglycan (GAG) comprised of repeating units of N-acetylglucosamine and glucuronic acid, begins in the cytosol and is completed in the lysosomes. Acetylation of the terminal non-reducing amino group of α-D-glucosamine of HS is essential for its complete breakdown into monosaccharides and free sulfate. Heparan-α-glucosaminide N-acetyltransferase (HGSNAT), a resident of the lysosomal membrane, catalyzes this essential acetylation reaction by accepting and transferring the acetyl group from cytosolic acetyl-CoA to terminal α-D-glucosamine of HS in the lysosomal lumen. Mutation-induced dysfunction in HGSNAT causes abnormal accumulation of HS within the lysosomes and leads to an autosomal recessive neurodegenerative lysosomal storage disorder called mucopolysaccharidosis IIIC (MPS IIIC). There are no approved drugs or treatment strategies to cure or manage the symptoms of, MPS IIIC. Here, we use cryo-electron microscopy (cryo-EM) to determine a high-resolution structure of the HGSNAT-acetyl-CoA complex, the first step in the HGSNAT-catalyzed acetyltransferase reaction. In addition, we map the known MPS IIIC mutations onto the structure and elucidate the molecular basis for mutation-induced HGSNAT dysfunction.
 
 ## Introduction
 
@@ -30,61 +30,327 @@ So far, over 70 unique mutations in the HGSNAT (TMEM76) gene have been identifie
 
 ## Results
 
-## Purification of dimeric HGSNAT
+### Purification of dimeric HGSNAT
 
 Two groups have previously reported purification of HGSNAT in varying oligomeric forms (Durand et al., 2010; Fan et al., 2011; Feldhammer et al., 2009b). The first group used non-ionic surfactants, NP-40 and Triton X-100, in their purification experiments and observed dimers and hexamers of HGSNAT. The PEG-based headgroup in these detergents is relatively bulky and yields micelles of variable sizes (45–100 kDa) and has been known to cause sample heterogeneity in eukaryotic membrane proteins (Orwick-Rydmark et al., 2016). The second group purified monomeric HGSNAT using non-ionic detergent DDM, which forms a relatively uniform, albeit large, micelle (98 kDa). However, the purification process involved two overnight incubation steps – the first in 1% and the second in 0.2% DDM. Both groups used transient transfection to express the protein in COS-7 or HeLa cells, respectively. All these factors could impact the monodispersity of purified HGSNAT. To identify the ideal conditions for expression and purification of monodisperse HGSNAT, we transfected HEK293 GnTI- cells with plasmids expressing either N-terminal or C-terminal GFP-fusion of HGSNAT and monitored GFP fluorescence in detergent-solubilized HGSNAT lysates by fluorescence-detection size-exclusion chromatography (FSEC) (Kawate and Gouaux, 2006). We noticed that the position of GFP did not alter the expression of HGSNAT (Figure 1—figure supplement 1A). However, the HGSNAT dimer model predicted using ColabFold suggested that the C-termini of the protomers lie at the dimer interface (Mirdita et al., 2022). Thus, for large-scale production of HGSNAT for structural studies, we expressed N-terminal StrepII-tag-GFP-HGSNAT fusion. Large quantities of GFP-HGSNAT fusion were produced using baculovirus-mediated transduction of HEK293 GnTI- cells (Goehring et al., 2014). We found that reducing the temperature of the suspension cell culture to 32 °C at about 8–10 hr after transduction, or transient transfection, resulted in a better yield than continuing to grow cells at 37 °C (Figure 1—figure supplement 1B). To identify the ideal conditions for the purification of HGSNAT, we screened various detergents. In most of the detergent conditions we tested, HGSNAT was predominantly dimeric (Figure 1—figure supplement 1C–H). Then, we performed a single-point thermal melt test of solubilized cell lysates to compare the relative stability of HGSNAT in different detergents. The rationale is that heating should exacerbate the instability of the protein in a said condition. HGSNAT appeared most stable in digitonin (Figure 1—figure supplement 1I–L). Based on our FSEC analysis of relative thermal stability and homogeneity, we purified HGSNAT in digitonin. We observed a dimer in our chromatography experiments and a band corresponding to a monomer on SDS-PAGE (Figure 1—figure supplement 1M–O).
 
-## Architecture of HGSNAT
+### Architecture of HGSNAT
 
 We solved the structure of HGSNAT in complex with acetyl-CoA (HGSNAT-ACO complex) to a global resolution of 3.26 Å, with the transmembrane domain (TMD) being better resolved than the luminal domain (LD) (Table 1, Figure 1—figure supplement 2, and Figure 1—figure supplement 3A–C). This is the first experimentally determined structure of a member of the protein family (TmAT). Our structure reveals that HGSNAT is a dimer where the protomers are related to each other by twofold rotational symmetry, and the C2 axis of rotation is perpendicular to the plane of the membrane (Figure 1A–C). Each polypeptide of HGSNAT has an N-terminal LD followed by 11 TMs that comprise the TMD, which is ensconced in the lysosomal membrane. We could model all the secondary structure elements of the protein unambiguously except the first 48 amino acids including the N-terminal signal peptide and the cytoplasmic loop 1 (CL1; L183-L236). The regions that are poorly resolved are the β-turn that connects β7 and β8 (N140-E148) the C-terminal half of TM1 (V176-F181) (Figure 1A, and Figure 1—figure supplement 3D and E). The C-terminus of the protein lies at the dimer interface but is unlikely to be directly involved in dimerization as the C-termini of the protomers lie ~25 Å away from each other, pointing towards the central acetyl-CoA binding site (ACOS) (Figure 1B and C).
 
-## Transmembrane domain (TMD)
+**Table 1.**
+ Cryo-EM data collection, processing, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>EMDB-41620 and PDB-8TU9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection and processing</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>105,000 x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Data collection mode</td>
+      <td>Super-resolution</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–1.0 to –2.5</td>
+    </tr>
+    <tr>
+      <td>Physical Pixel size (Å)</td>
+      <td>0.848</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>3,325,732</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>57,739</td>
+    </tr>
+    <tr>
+      <td>Map resolution (unmasked, Å) at FSC 0.143</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>Map resolution (masked, Å) at FSC 0.143</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Local resolution)</td>
+      <td>2.5–4.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>–30</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model composition</td>
+    </tr>
+    <tr>
+      <td>Chains</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Atoms</td>
+      <td>8284 (Hydrogens: 0)</td>
+    </tr>
+    <tr>
+      <td>Residues</td>
+      <td>Protein: 1066 Nucleotide: 0</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>ACO: 2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Bonds (RMSD)</td>
+    </tr>
+    <tr>
+      <td>Length (Å) (#&gt;4sigma)</td>
+      <td>0.008 (0)</td>
+    </tr>
+    <tr>
+      <td>Angles (°) (#&gt;4sigma)</td>
+      <td>1.480 (28)</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>2.32</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot (%)</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>3.59</td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>96.41</td>
+    </tr>
+    <tr>
+      <td colspan="2">Rama-Z (Ramachandran plot Z-score, RMSD)</td>
+    </tr>
+    <tr>
+      <td>whole (N=1058)</td>
+      <td>–0.40 (0.24)</td>
+    </tr>
+    <tr>
+      <td>helix (N=486)</td>
+      <td>1.03 (0.21)</td>
+    </tr>
+    <tr>
+      <td>sheet (N=114)</td>
+      <td>1.69 (0.51)</td>
+    </tr>
+    <tr>
+      <td>loop (N=458)</td>
+      <td>–2.35 (0.23)</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Cβ outliers (%)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td colspan="2">Peptide plane (%)</td>
+    </tr>
+    <tr>
+      <td>Cis proline/general</td>
+      <td>0.0/0.0</td>
+    </tr>
+    <tr>
+      <td>Twisted proline/general</td>
+      <td>0.0/0.0</td>
+    </tr>
+    <tr>
+      <td>Cα BLAM outliers (%)</td>
+      <td>4.38</td>
+    </tr>
+    <tr>
+      <td colspan="2">ADP (B-factors)</td>
+    </tr>
+    <tr>
+      <td>Iso/Aniso (#)</td>
+      <td>8284/0</td>
+    </tr>
+    <tr>
+      <td>Protein (min/max/mean)</td>
+      <td>10.47/125.39/28.58</td>
+    </tr>
+    <tr>
+      <td>Ligand (min/max/mean)</td>
+      <td>16.71/16.71/16.71</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model vs. Data</td>
+    </tr>
+    <tr>
+      <td>CC (mask)</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>CC (box)</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>CC (peaks)</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>CC (volume)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>Mean CC for ligands</td>
+      <td>0.77</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig1-v1.jpg)
+
+**Figure 1.:** Panels (A) and (B) show two different orientations of the HGSNAT dimer that highlight (dashed lines) the LD-TMD interface and dimer interface, respectively. Micelle is displayed in gray. Chain A is displayed as a cartoon and chain B as an orange surface. All the luminal loops (LLs), cytosolic loops (CLs), and the loops that connect β-sheets are shown in black. The top and bottom sheets in the luminal domain (LD) are colored blue and gray, respectively. The twofold rotation axis is displayed as a dashed line with an ellipsoid. (C) Luminal (top) and cytosolic (bottom) views of the protein. The surface representation of chain B suggests that the acetyl-CoA binding site (ACOS) is more accessible from the luminal side (top) than the cytosolic side (bottom). (D) 2D topology of HGSNAT and YeiB family. The helices and strands in the topology are colored similarly to the 3D structure. Transmembrane helices (TMs) 2–5 and 6–9 form two bundles (4+4), highlighted by green parallelograms, that are related to each other by a twofold rotation parallel to the plane of the membrane. TMs 1, 10, and 11 do not seem involved in this internal symmetry, with TM10 being bent in the plane of the membrane into two halves TM10a and TM10b. The relative position of bound ACO and active site H269 of LL1 are indicated. (E) Luminal (top) and cytosolic (bottom) views of the protein topology. TMs 2–5 and TM10 enclose ACOS (red hexagon) and are referred to as catalytic core (blue dashed oval). TMs 6–9 will be referred to as scaffold domain (gray dashed oval). (F) 4+4 bundle formed by TMs 2–5 (black) and TMs 6–9 (gray) are related by a twofold rotation. The last sub-panel (bottom left) shows a superposition of TMs 2–5 on TMs 6–9.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Comparison of expression of N- and C-terminal GFP fusions of Heparan-α-glucosaminide N-acetyltransferase (HGSNAT) in HEK293S GnTI- cell lysates, solubilized in 1% DDM. (B) Comparison of relative overexpression of N-GFP-HGSNAT in cultures grown at 37°C and 32°C, post-transduction. (C–H) Relative solubility and homogeneity comparison in 1% of CHAPS, β-OG, LMNG, DDM, GDN, and digitonin, respectively, prepared in 25 mM Tris-HCl, pH 7.5, 200 mM NaCl, 1 mM PMSF, 0.8 μM aprotinin, 2 μg/mL leupeptin, and 2 μM pepstatin A. (I–L) Comparison of relative thermal stability of detergent solubilized HGSNAT in 1% of LMNG, DDM, GDN, and digitonin, respectively. Samples analyzed after heat treatment at 55 °C for 15 min have been marked with a suffix 55, and samples stored in cold room are marked with a suffix 4. (M) SDS-PAGE (12%) showing purity and monomeric molecular weight of HGSNAT. Although, monomeric molecular weight is ~100 kDa, the full-length GFP fusion of HGSNAT, like most eukaryotic membrane proteins, displays anomalous electrophoretic mobility and runs around 75 kDa. (N) Intrinsic tryptophan fluorescence size-exclusion chromatogram of purified HGSNAT analyzed on Superose 6 Increase 10/300 GL column at 0.5 ml/min flowrate in LMNG-based FSEC running buffer. Red dot on the standard plot (log of protein molecular weight kDa) vs. ratio of the elution volume to the void volume (Ve/Vo) indicates that recombinant N-GFP-HGSNAT elutes at 15.1 ml corresponding to a dimer of ~240 kDa. (O) Representative micrograph imaged on Titan Krios using UltrAuFoil holey-gold 300 mesh 1.2/1.3 μm grid of vitrified N-GFP-HGSNAT at 0.9 mg/ml. The protein (yellow circles) distribution on grids, along with SDS-PAGE and size-exclusion chromatogram shows a monodisperse sample preparation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The data was entirely processed in cryoSPARC. A representative motion-corrected micrograph with single heparan-α-glucosaminide N-acetyltransferase (HGSNAT) particles (yellow circles) is highlighted. A subset of (1.5 million) particles picked by blob picker were extracted and cleaned by 2D classification to generate 2D templates for template-based picking and an ab-initio volume to be used as reference input for subsequent heterogenous refinement jobs (dashed arrows). Particles picked using template picker and blob picker were individually cleaned by 2D classification to remove obvious junk particles and then were pooled and duplicates were removed for sorting by heterogenous refinement, and iterative 2D and 3D classification. Throughout the processing workflow classes with most well-resolved luminal domain was used as input references for the subsequent steps of processing (highlighted by a dashed boxes). A resultant stack of 85,500 particles (representative 2D classes highlighted) was further cleaned up based on CTF fit (<4 Å) to end up with a final particle stack of about 57000 particles. C2 symmetry was applied at this stage and non-uniform and contrast transfer function (CTF) refinements were performed to yield a C2 map at 3.26 Å. This map was used for model building and analyzing the structure of HGSNAT. A C1 map was generated by symmetry expansion of the final particle stack followed by local refinement to compare the quality of data with and without C2 symmetry application. Local refinements with masks focused on luminal domain (LD) and transmembrane domain (TMD) domain were performed separately, and a composite map was generated by combining these local refined maps to improve the density in these regions. The composite map was only used to finalize the fit of LBD side chains in the final model.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Fourier shell coefficient (FSC) curves for cross-validation. The final masked heparan-α-glucosaminide N-acetyltransferase (HSGNAT) (C1: light yellow; C2: dark yellow dashed) and unmasked (C1: light blue; C2: dark blue dashed) refinement maps. Model vs. final C2 map unmasked (green). Gray and black dashed lines indicate FSC = 0.143 and FSC = 0.5 thresholds, respectively. FSC curves were calculated using Mtriage in Phenix. (B) Angular distribution of particles used in the final reconstruction. (C) C2 map colored by estimated local resolution. (D) HGSNAT modeled by ModelAngelo into the C2 map (blue). The fit of the same model in C1 (orange) and composite map (gray) of LD and TMD created in ChimeraX. All maps are displayed at level 0.21 in ChimeraX. (E) Cryo-EM density of all the secondary structure elements, β1-β8 and TMs 1–11, shown in light blue (display level between 0.18–0.25 in ChimeraX). Side chains for almost all the elements could be modeled unambiguously into the density. At places with missing density, the side chains were trimmed to Cβ.
+
+#### Transmembrane domain (TMD)
 
 The TMD of the HGSNAT protomer comprises of a central 4+4 fold, where the TMs 2–5 are related to TMs 6–9 by a twofold rotational pseudo-symmetry with the axis of rotation being perpendicular to the plane of the membrane (Figure 1D–F). TMs 2–5, along with TM10, form a ‘catalytic core’ and enclose the ACOS accessible via the cytosol and lumen along the dimer interface. ACOSs of the protomers lie on either side of the dimer interface axis. TMs 6–9, along with TM11, form a ‘scaffold domain’ separated from the dimer interface by the catalytic core (Figure 1E). The third luminal loop (LL3) connecting TM6 and TM7 forms a lid that limits the access to the cavity between the catalytic core and the scaffold domain from the luminal side (Figure 1A, C and D). The TMD region comprising TM2-TM11 of HGSNAT is predicted to be evolutionarily conserved across HGSNATs from other kingdoms (Figure 2—figure supplement 1A). Owing to the unique architecture we have named this novel fold as the transmembrane N-acetyltransferase (TNAT) fold. Although the resolution for the C-terminal half of TM1 is poor, it is sufficient to position the helix separately from the rest of the TMD (Figure 1A). TM1 is connected to TM2 by ~50 amino acid long CL1 (Figure 1D). LL1-LL3 and LL5 form the boundaries for the luminal entrance of ACOS. The C-terminus, CL2, and a part of CL1 form the boundaries of the cytosolic entrance of ACOS. The ACOS in our structure is relatively more accessible from the luminal side than the cytosolic side, as the nucleoside head group of the bound acetyl-CoA blocks the cytosolic entrance of ACOS (Figure 1C). Thus, the HGSNAT-ACO complex is in a conformation where the active site is readily accessible for the binding of the second substrate from the lysosomal lumen.
 
-## Luminal domain (LD)
+#### Luminal domain (LD)
 
 The LDs of the protomers lie diagonally opposite to each other ~45 Å away from the dimer interface and are not involved in dimerization (Figure 1B). Located between the N-terminal signal peptide and the TM1, LD is a~110 amino acids long β-sandwich made of two beta sheets of four strands each where strands β1, β4, β7, & β8 form the mixed β-sheet on top (Figure 1A–E, blue), and the strands β2, β3, β5, & β6 arrange as bottom anti-parallel β-sheet (Figure 1A–E, gray). The mixed β-sheet is arranged such that the order of the strands is β4-β1-β7-β8, with β1 & β7 being parallel. β8 of LD is connected to TM1 (Figures 1B, D, 2A). LD has two predicted disulfide bonds – one in the β-turn that connects β2 and β3 (C76-C79), and the other between the strands β6 and β8 (C123-C151) holding the two sheets together. The resolution of the LD domain in our structure allows us to model only one (C76-C79) of these unambiguously (Figure 2B). HGSNAT is produced as a pro-protein that is believed to get proteolyzed into two fragments, HGSNAT-α and HGSNAT-β, of unequal sizes, which remain together (Durand et al., 2010; Fan et al., 2011). It is unclear if HGSNAT-α is made of just LD or LD and TM1, and if HGSNAT-β is made of all TMs or only TMs2-11 (Figure 2A and Figure 2—figure supplement 1). While our structure has relatively poor local resolution at the predicted protease sites, making it difficult to map them unambiguously, the FSEC nor the SDS-PAGE analyses of the purified protein indicate that the recombinant HGSNAT is not proteolyzed (Figure 1—figure supplement 1). We believe the relatively low local resolution of LD is because of the flexibility introduced by GFP fused to the N-term of HGSNAT.
 
-## LD-TMD interface
+![Figure 2.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig2-v1.jpg)
+
+**Figure 2.:** (A) HGSNAT is predicted to be proteolyzed into two chains of unequal size - α-HGSNAT (dark magenta cartoon, gray shaded area) and β-HGSNAT (purple cartoon, yellow shaded area). The site for proteolysis remains debated. Based on our structure and prediction of HGSNAT structures from other kingdoms (Figure 2—figure supplement 1), we have represented α- and β-HGSNAT fragments as shown in panel A. The inset (dashed oval) shows the luminal domain (dark magenta) fit to cryo-electron microscopy (cryo-EM) density (blue; display level 0.21 of the composite map in ChimeraX) (Figure 1—figure supplement 3). The lysosomal membrane is shown as a dashed gray line. (B) LD-TMD interface is highlighted (dashed line). Inset highlights the residues that interact at the LD-TMD interface, and cryo-EM density for the same (blue; display level 0.25 of the 3.26 Å C2 refined map in ChimeraX). C76-C79 disulfide of β2-β3 turns is shown as yellow sticks, while the residue sidechains are colored the same as their secondary structure elements, with heteroatoms highlighted. (C) Luminal view of the protein with dimer interface highlighted (dashed line). Inset (dashed rectangle) highlights LL2 and LL5 that line the dimer interface, and the C334-C334 inter-chain disulfide (yellow) between the chains A (purple) and B (orange). The dashed oval inset shows one-half of the dimer interface with LL2 and LL5 of chains A and B, respectively, contributing other hydrophobic interactions that stabilize the dimer interface. The cryo-EM density in panel C is displayed as blue mesh (display level 0.22 of the C2 refine map in ChimeraX).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Superposition of HGSNAT cryo-electron microscopy (cryo-EM) structure (purple) with the AlphaFold models of human (Uniprot: Q68CP4, dark gray), Methanobacterium formicicum (Uniprot: K2QAW2, green), and Arabidopsis thaliana (Uniprot: A0A5S9Y8V3, pink) HGSNATs. Cα RMSDs of the superpositions are 1.34 Å, 1.17 Å, and 1.13 Å respectively, suggesting a conserved HGSNAT fold across different kingdoms. AlphaFold model of HGSNAT shown here is of isoform 1, that has extra 28 residues on the N-term as compared to isoform 2. The structure is of isoform 2. The cryo-EM density did not allow modeling of residues upstream of β1 on the N-terminus and CL1, which have been highlighted yellow in the AlphaFold model. (B) AlphaFold model of acetyltransferase model of Salmonella paratyphi A OafB, an O-antigen modifying transmembrane acetyltransferase of the acyltransferase-3/acetyl-CoA transporter (ATAT) family within the TmAT superfamily (Uniprot: A0A0H2WM30). Despite predicted to be in the same superfamily as HGSNAT, a meaningful alignment and similarity to HGSNAT was not observed, highlighting the diversity of membrane bound acetyltransferases. (C) Comparison of topologies of immunoglobulin (Ig) fold, type-II C2 domain, and transthyretin fold with luminal domain (LD) of HGSNAT. Strands in two sheets are colored blue and gray and conserved helical turn in transthyretin fold is shown in orange. Conserved disulfides are shown as dashed lines. (D) Superposition of structures of Ig fold (PDB: 5A9I), type-II C2 domain (PDB: 6IEJ), transthyretin fold (PDB: 5AMT), and transthyretin-like domain (PDB: 6CZT) onto LD of HGSNAT. Based on the topology and structure superposition, it appears that LD is transthyretin-like domain.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** A 2D depiction of network of interactions (<4.5 Å) between residues at the LD-TMD interface (top, A) and at the dimer interface (bottom, B) generated in LigPlot+. Hydrogen bonds are shown as dashed lines with bond distance. Nonbonded and hydrophobic interactions are shown as dotted lines. Residues involved in nonbonded interactions are displayed as eye lashes. Chain A and chain B residues are shown in blue and orange. Dashed black line indicates the interface. The sulfurs of involved in disulfide bond at the dimer interface are highlighted in yellow.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Ordered density observed in our final cryo-electron microscopy (cryo-EM) map that did not account for protein and ligand has been displayed as yellow density (display level 0.22 of the C2 refine map in ChimeraX) in side-view (A), luminal-view (B), and cytosolic-view (C). We believe these are ordered lipids and detergent molecules that interact with hydrophobic patches of the protein. Towards the cytosolic side (C) we find lipid/detergent density between the two protomers, forming a partition between two acetyl-CoA binding sites (ACOSs). Chain A and chain B are shown in purple and orange. Dashed line indicates dimer interface.
+
+#### LD-TMD interface
 
 LD interacts with TMD at multiple sites via an extensive interaction network that spans ~35 Å, comprised of a salt bridge (D52-H605), hydrogen bonds, and dipole-dipole and hydrophobic interactions (Figure 2B and Figure 2—figure supplement 2A). The N-terminus of TM11 interacts with the N-terminus of β1 and LL1. LL1 also interacts with the N-terminus of TM1 and the β4-β5 turn. The β2-β3 turn, including the C76-C79 disulfide, interacts extensively with LL3 and is a part of LL4. The β2-β3 turn-LL3-LL4 interaction is also stabilized by a 3π-network formed by the stacking of Y77, H78, & F428 side chains. The hydrogen bond network that stabilizes the LD-TMD interaction is formed between the amino acids M51, H78, and S162 of LD with H605 and Q603, D427 and F428, and Y264 of the TMD, respectively (Figure 2B and Figure 2—figure supplement 2A). The LD-TMD interface is separated from the dimer interface by the central catalytic core (Figure 2B and C).
 
-## Dimer interface
+#### Dimer interface
 
 The dimer interface is spread across ~35 Å towards the luminal side of the protein, perpendicular to the C2 rotation axis (Figure 2C). Although the TMs 4, 10, and 11 from both protomers lie on either side of the dimer interface, they do not directly interact to stabilize the dimer interface. The primary mediator of dimerization is the disulfide between C334s within the LL2s of each protomer (Figure 2C, rectangle inset). In addition to the C334-C334 disulfide, the dimer interface is also stabilized by an extensiveπ-π interaction network formed between the aromatic residues of LL2 (332-340) of one protomer and the aromatic residues of LL5 (588-598) of the other protomer (Figure 2C and Figure 2—figure supplement 2B). Notably, the aromatic bulky side chains at the interface are buried in the membrane, and the hydrophilic residues face the lumen (Figure 2C, oval inset). Y333, L338, and S339 of LL2 from one protomer form a series of hydrogen bonds with F593 and K598 of LL5 of the other protomer, which adds to the stabilization of the dimer interface (Figure 2C and Figure 2—figure supplement 2B). In all the detergents we tested, HGSNAT eluted as a dimer, a testimony to the extensive side-chain interaction network. The twofold rotational symmetry between the protomers juxtaposes the ACOSs of protomers connecting them with each other on the cytosolic side (Figures 1 and 2C). This interconnected space is partitioned by lipids, preventing the diffusion of ligands from one active site to the other within a dimer (Figure 2—figure supplement 3). We generated two HGSNAT mutants of residues at the dimer interface – C334A and F593A. C334 from each protomer is linked in a disulfide bond, and F593 forms hydrogen bonds with multiple residues from the opposite protomer (Figure 2C and Figure 2—figure supplement 2B). In both these mutants, the overall expression of HGSNAT was not reduced. In the case of F593A, the stability of the dimer also remained unaffected (Figure 4—figure supplement 1A,H,I and N). While both these mutants still expressed predominantly as dimers even in the presence of 1% digitonin, the C334A mutant eluted as a monomer upon heat treatment (Figure 4—figure supplement 1E,H,I and K). As C334A breaks a covalent disulfide link between the protomers, in the absence of this disulfide, the extensive side-chain interaction network stabilizes the dimer interface. Heating destabilizes these interactions, resulting in a monomeric C334A.
 
-## Acetyl-CoA binding site (ACOS)
+### Acetyl-CoA binding site (ACOS)
 
 We used MOLEonline to predict the presence of a~75 Å pore within the TMD, that begins at the cytosolic side and extends to the luminal side (Pravda et al., 2018; Figure 3—figure supplement 1A). The pore predicted by MOLEonline is lined by highly conserved residues of the TMs 2–5 and TM 10 (Figure 3 and Figure 3—figure supplement 1C). We note that the helix TM10 is bent by ~80o such that the luminal-side 2/3rd (TM10b) of the helix is parallel to TM2 and the cytosolic-side 1/3rd (TM10a) of the helix protrudes between TM2 and TM11 (Figure 3A). The bending of TM10 is aided by P575 and G576, residues are known to induce helix breaks and kinks (Javadpour et al., 1999; Ulmschneider and Sansom, 2001). We find a density in our cryo-EM map overlapping the MOLEonline prediction in both protomers, spanning the entire length of TMD, that allowed us to unambiguously model a single acetyl-CoA, such that the 3’, 5’-ADP nucleoside head group is towards the cytosol and the acetyl group is hydrogen bonded (~3.5 Å) to N258 of TM2 that is located at the luminal entrance of ACOS. On the cytosolic side, the orientation of TM10a between TM2 and TM11 seemed to have allowed the positioning of the 3’, 5’-ADP nucleoside head group in the space created by bending away of TM10a from the central axis of the catalytic core. The catalytic H269, which is predicted to be acetylated during the acetyltransferase reaction, is ~4.5 Å away from the acetyl group of acetyl-CoA, nestled within the negative charge on the luminal opening, and is ergonomically positioned to perform acetyltransferase reaction in the presence of the acetyl group acceptor (Figure 3A). The binding pocket, like the rest of the protein, shows a polarity of charge. As we move from the cytosolic side to the luminal side, the charge changes from positive to neutral to negative (Figure 3B and Figure 3—figure supplement 1A and D). The cytosolic opening of the site is comprised of basic and nonpolar amino acids, making it an ideal pocket for binding the 3’, 5’-ADP head group. The pantothenate group of acetyl-CoA is supported by a network of nonpolar amino acids at the center of the binding pocket (Figure 3—figure supplement 1A and D). A series of conserved salt bridges stabilize the cytosolic and luminal entrances of the pore. The luminal entrance is lined with salt bridges between the residues H269, D279, R344, D469, E471, H586, and E587. The cytosolic entrance is lined with salt bridges between the residues R239, D244, R247, R317, E363, K491, and K634 (Figure 3—figure supplement 1C and D). A portion of CL1 towards the TM2 and C-terminus of the protein also seems to be a part of the cytosolic entrance of the ACOS.
 
-## Conservation and homology
+![Figure 3.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig3-v1.jpg)
+
+**Figure 3.:** (A) Catalytic core (chain A) of heparan-α-glucosaminide N-acetyltransferase (HGSNAT) comprised of transmembrane helices (TMs) 2–5 and TM 10. Luminal loops (LLs) and cytosolic loops (CLs) are shown in black, and the helices are colored as in Figure 1. Acetyl-CoA (ACO) is colored (purple), the same as chain A in Figure 2 with heteroatoms highlighted. The inset (dashed oval) shows acetyl-CoA binding site (ACOS) and highlights the amino acids of HGSNAT that interact with ACO. The amino acids are colored the same as the corresponding TMs, with heteroatoms highlighted. Cryo-electron microscopy (Cryo-EM) density for ACOS is displayed as blue mesh (display level 0.3 of the 3.26 Å C2 refine map in ChimeraX). ACO could be modeled into the densities at chain A and B ACOSs with a mean correlation coefficient (CC) of 0.77. The nucleoside headgroup of ACO plugs in the cytosolic access of ACOS, and the luminal access seems relatively more accessible. (B) Electrostatic potential and surface charge distribution of HGSNAT, with the surface display colored based on the potential contoured from –10 kT (red) to +10 kT (blue). ACO bound at the ACOS is highlighted in golden yellow. Luminal and cytosolic sides of the protein show a conspicuous polarity. The lysosomal membrane is shown as a dashed gray line in both sub-panels.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Surface representation of HGSNAT (chain A), with hydrophobic and hydrophilic amino acids colored in orange and cyan, respectively. Predicted acetyl-CoA access tunnel (yellow) by MOLEonline with a probe radius of ~1.5 Å (Pravda et al., 2018). Acetyl-CoA (ACO) bound at HGSNAT is shown in blue. It is apparent that the nucleoside head group and the acetyl group interact with hydrophilic residues and the pantothenate group is supported by hydrophobic residues. (B) Ligand binding site on luminal domain (LD) (maroon sphere) predicted by DeepSite (Jiménez et al., 2017) (C) acetyl-CoA binding site (ACOS) color coded based on the evolutionary sequence conservation scores obtained from ConSurf server. In the insets are the integral salt-bridges of the luminal (top) and cytosolic (bottom) access of ACOS. The cryo-EM density for the salt-bridges is shown in blue (display level 0.22 of the C2 refine map in ChimeraX). (D) 2D depiction of the network of interactions of ACO modeled at chain A (left) and chain B (right) with HGSNAT residues that lie <4.5 Å away from ACO, generated in LigPlot+. Hydrogen bonds are depicted by dashed lines, and residues that are involved in hydrogen bonds with ACO are shown as ball & stick models. Non-bonded contacts are indicated as eye lashes. The predicted active site H269 is highlighted by dashed circle. In our structure N258 forms weak hydrogen bonds with the acetyl group of ACO. We believe that N258 holds onto ACO until H269 is protonated and ready for catalysis.
+
+### Conservation and homology
 
 Sequence conservation between HGSNAT and other known acetyl-CoA binding proteins or transferases is poor. There are no structural homologs of HGSNAT, and a search within the database of known structures using the HGSNAT TMD by the Dali server resulted in hits with sequence identity of <17% across alignments of <25% sequence length (Holm et al., 2023). Even the search with just the luminal domain, which appeared to be a classic two-sheet β-sandwich, yields hits with <15% identity over alignments of at least 70% sequence lengths (Supplementary file 1, Figure 2—figure supplement 1C and D). We used ModelAngelo, a machine-learning-based de novo automatic model-building algorithm to build the initial HGSNAT model into the cryo-EM density (Jamali et al., 2023). The model built by ModelAngelo into the experimental data superposed well with the HGSNAT model as predicted by AlphaFold with a Cα RMSD of ~1.7 Å over 533 amino acids (Figure 2—figure supplement 1A; Jumper et al., 2021; Varadi et al., 2022). However, unlike the AlphaFold model of Isoform 1, our expression construct lacks the extended signal peptide (N-terminal 28 amino acids). In addition, we do not observe any density in model CL1 that connects TM1 and TM2. HGSNATs of representatives from archaea, bacteria, and plants suggest that LD and TM1 are absent in other kingdoms. These homologs superpose onto the TMD part of HGSNAT, especially TM2-11 with Cα RMSDs of 1–1.4 Å over 350 amino acids (Figure 2—figure supplement 1). TmAT superfamily of membrane proteins consists of two subfamilies of integral membrane proteins consisting of 8–12 TMs – the acyltransferase-3/acetyl-CoA transporter (ATAT) family (TCDB: 9.B.97) and the integral membrane acetyltransferase (YeiB) family (TCDB: 9.B.169). HGSNAT belongs to the YeiB family. A meaningful sequence alignment could not be generated between the members of these two families. ATAT family of transporters seems to have a single extra-membranous domain, like HGSNAT (Figure 2—figure supplement 1B). However, based on AlphaFold prediction, this extra-membranous domain seems to be a α-β-α sandwich with a single 5-stranded β-sheet sandwiched between two helical domains. Incidentally, a bent helix near the predicted acetyl-CoA binding site is also observed in the ATAT family, suggesting that this could be a conserved feature amongst the members of the TmAT superfamily (Newman et al., 2023). We used ConSurf to estimate sequence conservation in HGSNAT based on an automatic sequence alignment algorithm (Ashkenazy et al., 2016). It appears that the LD and TM1 regions have poor sequence conservation compared to the rest of the protein (Figure 4A).
 
-## The basis for mutation-induced dysfunction and destabilization of HGSNAT
+![Figure 4.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig4-v1.jpg)
+
+**Figure 4.:** (A) Evolutionary sequence conservation of heparan-α-glucosaminide N-acetyltransferase (HGSNAT). Amino acids are color-coded according to the conservation scores generated by the ConSurf web server using a Clustal multiple sequence alignment of homologs identified by PSI-BLAST (Ashkenazy et al., 2016). The positions of the mutations - missense (orange), nonsense (black), and polymorphisms (purple) – are indicated on the sequence by triangles. (B) MPS IIIC-causing mutations mapped on the HGSNAT structure. The color coding of the positions is the same as in panel A. Some of the missense mutants are highlighted in the insets (dashed ovals). We grouped them based on their position within the protein – LD-TMD interface, catalytic core, scaffold domain, and other C-terminal mutations. The insets show the 3D environment of the mutant sites on the wild-type HGSNAT color coded as per their evolutionary sequence conservation scores, and the potential disturbance to it caused by the mutation (orange side chains). The coordinates for mutant side chains were generated based on wild-type HGSNAT structure as input in FoldX webserver (Schymkowitz et al., 2005).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A comparison of relative protein expression indicated by total GFP fluorescence in 100,000 HEK293S GnTI- cells expressing HGSNAT and its mutants. A representative of the experiment (n=2) is shown with error bars denoting standard errors of mean calculated from triplicate measurements. (B–H) A comparison of FSEC chromatograms of the HGSNAT mutants (gray chromatograms) with WT HGSNAT (blue chromatogram). C76F and N258I mutants show no peak at HGSNAT dimer position, and the remaining mutants’ peak position is same as dimeric wild-type (WT) HGSNAT. (I–N) Relative stability of HGSNAT mutants analyzed by fluorescence-detection size-exclusion chromatography (FSEC). To estimate relative stability of mutants, the solubilized mutant cell lysates were heated at 65 °C for 15 min (red chromatograms) and the loss of HGSNAT peak in the resultant chromatograms were compared with non-heated samples (blue chromatograms). C334A, the mutant which breaks the disulfide at the dimer interface, results in a monomeric HGSNAT peak upon heating, while all other mutants retain their dimeric status.
+
+### The basis for mutation-induced dysfunction and destabilization of HGSNAT
 
 We mapped the known clinical mutations (missense, nonsense, and polymorphisms) of HGSNAT onto its three-dimensional structure (Canals et al., 2011; Fan et al., 2006; Fedele and Hopwood, 2010; Feldhammer et al., 2009a; Feldhammer et al., 2009b; Hrebícek et al., 2006; Huizing and Gahl, 2020). Almost all the mutations fall within the conserved regions on HGSNAT (Figure 4A). The nonsense mutations seem to be located more on the cytosolic side, and the missense mutations seem to be populated on the luminal side of HGSNAT (Figure 4B). We estimated the extent of destabilization or stabilization introduced by these variants on HGSNAT structure by FoldX, a force field algorithm to evaluate the effect of mutations on the stability and dynamics of proteins (Supplementary file 2; Schymkowitz et al., 2005). We classified these mutations into four groups based on their position on the structure and found that most destabilizing mutations appear to be concentrated near the LD-TMD interface (Figure 4 and Supplementary file 2). Our structure provides the basis for destabilization or dysfunction induced by missense mutations in HGSNAT.
 
-## Catalytic core mutations
+#### Catalytic core mutations
 
 Five missense mutations - E471K (LL3), R344C/R344H (LL2), P283L (TM3), and N258I (TM2) - have been identified in the residues that line the ACOS (Figures 4B and 3A, and Figure 3—figure supplement 1C). E471 is close to the acetyl group of acetyl-CoA, and acidic to basic side chain substitution in an E471K mutation could impact the binding affinity of acetyl-CoA. N258 side chain can act as both hydrogen acceptor or donor and is hydrogen bonded to acetyl-CoA in the structure. N258I mutation could directly impact the binding of acetyl-CoA and acetyltransferase activity. R344 forms salt bridges with E469 and E471 that stabilize the luminal entrance of ACOS. The mutations of R344C/R344H could affect the integrity of the luminal entrance of ACOS. In addition to being involved in acetyl-CoA binding, all these three positions – E471, R344, and N258 – are also highly conserved (Figure 4A and B). P283 is not directly involved in the binding of acetyl-CoA. However, the residues flanking P283 – V281, F282, F285, I288, and M289 – all interact with the pantothenate group of acetyl-CoA (Figure 3A and Figure 3—figure supplement 1D). Proline residues define helix conformation, and mutation of a relatively conserved proline to an aliphatic leucine could alter the TM3 conformation on the luminal side and thus affect acetyl-CoA binding. FoldX prediction indicates that P283L is the most destabilizing of all ACOS mutations perhaps because it impacts the TM3 conformation. In contrast, other catalytic core mutants only show a potential to impact the binding of acetyl-CoA. We generated N258I and R344H mutants to test the effect of these substitutions on the expression and stability of HGSNAT. We noticed that these substitutions did not reduce the overall expression of HGSNAT (Figure 4—figure supplement 1A). R344H mutant, upon solubilization in 1% digitonin, showed slightly enhanced aggregation but the overall stability of R344H mutant was not altered drastically, compared to WT HGSNAT (Figure 4—figure supplement 1F and I, and 1 L). Although the N258I mutant showed expression comparable to WT HGSNAT, as evident by total fluorescence measurements of solubilized cell lysates, we could not observe any peak for N258I nor free GFP in FSEC (Figure 4—figure supplement 1A and C). We hypothesize that N258I substitution directly affected the substrate binding and stability. As a result, upon solubilization followed by ultracentrifugation, the unstable protein got pelleted out of the solution (Figure 4B and Figure 4—figure supplement 1C).
 
-## Mutations at the LD-TMD interface
+#### Mutations at the LD-TMD interface
 
 C76F, G262R, N273K, G423W, and G424S/G424V are all missense mutations that are on the LD-TMD interface, and our FoldX-based analysis indicates these mutations to be the most destabilizing among the ones that we listed. N273K is predicted to be least destabilizing by FoldX, as all these mutations, except N273K, result in charge reversal and drastic change in the side chain size, leading to steric clashes and breakdown of existing interactions (Figures 4B and 2B). Although none of these missense positions at the LD-TMD interface, except C76, are directly involved in LD-TMD interface contacts, the drastic side chain changes in the vicinity of the residues directly involved are expected to destabilize the interaction (Figure 2 and Figure 2—figure supplement 2). For example, the glycine residues (G262, G423, and G424) lie within pockets lined by aromatic side chains containing amino acids, and the substitution of such a residue with a bulky side chain will cause a steric clash, destabilizing those pockets of interaction (Figure 4B). C76F mutation reduces the expression of the protein, suggesting that LD-TMD interaction is essential for proper folding and stability of HGSNAT (Figure 4—figure supplement 1A and B).
 
-## Scaffold domain mutations
+#### Scaffold domain mutations
 
 W403C, M482K, G486E, A489E, S518F, S539C, and S541L are all mutations that occur in the scaffold domain (TM6-TM9) of HGSNAT. FoldX predicts these mutations to be only mildly destabilizing. For example, the change in the charge and size of S539C or W403C mutation is not drastic enough to destabilize TM6 or TM9 helices. Even in the cases where there are large substitutions, for example, G486E or A489E, the substituted side chains face away from the core of the protein and are involved in minimal interactions or clashes (Figure 4B). Corroborating the FoldX prediction, we noticed that W403C was mildly destabilizing. While the overall expression of the W403C mutant was not affected, the thermal stability was reduced compared to WT HGSNAT (Figure 4—figure supplement 1A,G,I and M).
 
-## Other mutations
+#### Other mutations
 
 Mutations in the LD domain, such as L113P, G133A, and L137P, seem to face the lumen and are involved in minimal interactions. Amongst the mutations that we analyzed by FoldX, none of them were on the dimer interface. However, two mutations, P571L and Y627C, towards the cytosolic ends of TM10 and TM11 seem closer to the dimer interface on the cytosolic side. However, they are not directly involved in dimerization. These ring-side chain amino acids are part of an elaborate π-π-network stabilizing TM10a and the C-terminus in positions that make space for the nucleoside head group at the ACOS (Figures 4B and 3A). Drastic mutations in this region could impact acetyl-CoA binding and thereby the conformational stability of the catalytic core.
 
-## Mechanism of acetyltransferase reaction
+### Mechanism of acetyltransferase reaction
 
 HGSNAT, in this report, was purified at pH 7.5. During the purification process, we did not add acetyl-CoA to the buffer. However, we were able to confirm the presence of endogenously bound acetyl-CoA in our cryo-EM sample by LC-MS (Figure 5—figure supplement 1). It has been demonstrated, previously, that acetyl-CoA binding happens on the cytosolic side and is optimal around pH 7.0–8.0, and the acetyl transfer activity happens on the luminal side and is optimal at pH 5.5–6.0. The Km of N-acetyltransferase reaction in the presence of acetyl-CoA as the substrate is in the 0.2–0.6 mM range at pH 5–5.8, and 2.5–20 μM range at pH 7.0, suggesting that HGSNAT has a high affinity for acetyl-CoA at pH >7.0 (Bame and Rome, 1985; Bame and Rome, 1986a; Meikle et al., 1995). The transfer of the acetyl group from acetyl-CoA to the terminal non-reducing amino group of α-D-glucosamine is believed to be catalyzed by H269 located on the luminal entrance of ACOS (Figure 3A and Figure 3—figure supplement 1). It is unclear if H269 gets acetylated and forms a stable acetylated intermediate in the process of acetyl transfer. However, for the H269 to be acetylated or for it to transfer the acetyl group to its putative acceptor, protonation of the imidazole sidechain amine group is necessary. The catalytic H269 is primarily uncharged at pH 7.5, and the acetyl-CoA remains an acetate ion. The carboxamide group of N258 can act as both an acceptor and donor in a hydrogen bond. In our structure, ACOS is more accessible from the luminal side than the cytosolic entrance. We note that the acetyl-CoA is hydrogen-bonded to N258 (Figure 3A and Figure 3—figure supplement 1D). Based on these observations, we conclude that the structure we have is of an acetyl-CoA primed HGSNAT waiting for the protonation of H269 and the availability of an acetyl group acceptor to carry out acetyltransferase reaction (Figure 5A). Because the cytosolic pH is favorable for acetyl-CoA binding and the protein we purified endogenously pulled down acetyl-CoA with it, we believe this is the most stable conformation of HGSNAT in the absence of an acetyl group acceptor. Furthermore, in our FSEC-based analysis, we noticed that H269A substitution did neither alter the expression nor stability of HGSNAT (Figure 4—figure supplement 1A,D and J). However, the N258I mutation completely destabilized HGSNAT (Figure 4—figure supplement 1A and C). We believe N258I instability to be a consequence of lack of substrate binding at the catalytic core, as we see a greater role for N258 in acetyl-CoA binding as opposed to H269 as per our structure (Figure 3A and Figure 3—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig5-v1.jpg)
+
+**Figure 5.:** (A) HGSNAT (I) catalyzes a bisubstrate reaction of transferring acetyl group from cytosolic acetyl-CoA (ACO, red lightning) to terminal non-reducingα-D-Glucosamine (GlcN, blue hexagon) of luminal heparan sulfate (III and IV). After the acetyl group transfer, COA (gray lightning) and acetylated glucosamine (GlcNAc, red hexagon) are believed to be released to cytosol and lumen, respectively (V). Depending on the order of binding and release of substrates and products, enzyme-catalyzed bisubstrate reactions could either be sequential reactions (B and C) or ping pong reactions (D). The mechanism of reaction catalyzed by HGSNAT has been a longstanding debate. We believe that the acetyl-CoA bound HGSNAT structure presented in this work (II, dashed box) is in a cofactor primed conformation which could proceed by any of the bisubstrate reaction mechanisms shown in B–D. The function of luminal domain (LD) is unclear, and we believe it plays essential role in recognition of substrate and its positioning at the active site.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93510/elife-93510-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) LC profile and (B) MS/MS spectrum of acetyl-CoA (ACO) standard, showing the retention time (1.26 min), and precursor (810.1 m/z) and product (303.1 m/z) peaks in single reaction monitoring mode, respectively. (C) and (D) show relative LC peak intensities of endogenously bound ACO identified in purified HGSNAT before and after dialysis of the membranes, respectively.
 
 ## Discussion
 
@@ -104,36 +370,277 @@ The high-resolution structure of HGSNAT reported in this study heralds a new beg
 
 ## Materials and methods
 
-## Cloning and site-directed mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Heparan-α-glucosaminide N-acetyltransferase</td>
+      <td>GenScript</td>
+      <td>NCBI Reference Sequence NM_152419.3UniProt ID: Q68CP4-2</td>
+      <td>Isoform-2 of HGSNAT</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S GnTI-</td>
+      <td>ATCC</td>
+      <td>Cat # ATCC CRL-3022</td>
+      <td>Used for protein expression</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>SF9</td>
+      <td>Gibco</td>
+      <td>Cat # 12659017</td>
+      <td>Used for baculovirus production</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10Bac</td>
+      <td>Thermo Fisher</td>
+      <td>10361012</td>
+      <td>Chemically competent cells for Bacmid production</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>N-Strep-tag-II-GFP-HGSNAT (Isoform-2)</td>
+      <td>GenScript(This study)</td>
+      <td></td>
+      <td>Expression construct used for large-scale protein production</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam (plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid # 160683</td>
+      <td>Expression vector for cloning HGSNAT with an N-terminal GFP tag</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desthiobiotin</td>
+      <td>Iba life sciences</td>
+      <td>Cat # 2-1000-002</td>
+      <td>Modified biotin for Strep-Tactin elution buffer</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CryoSPARC v4.2.1</td>
+      <td>PMID:28165473</td>
+      <td>RRID:SCR_016501</td>
+      <td>https://cryosparc.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ResMap</td>
+      <td>PMID:24213166</td>
+      <td></td>
+      <td>https://resmap.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ModelAngelo</td>
+      <td>PMID:38408488</td>
+      <td></td>
+      <td>https://sbgrid.org/software/titles/modelangelo</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>PMID:31588918</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID:20383002</td>
+      <td>RRID:SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>PMID:37774136</td>
+      <td>RRID:SCR_015872</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FoldX</td>
+      <td>PMID:15980494</td>
+      <td>RRID:SCR_008522</td>
+      <td>https://foldxsuite.crg.eu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ConSurf Database</td>
+      <td>PMID:27166375</td>
+      <td>RRID:SCR_002320</td>
+      <td>http://consurfdb.tau.ac.il/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold</td>
+      <td>PMID:34791371</td>
+      <td>RRID:SCR_023662</td>
+      <td>https://alphafold.ebi.ac.uk/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DALI</td>
+      <td>PMID:36419248</td>
+      <td>RRID:SCR_013433</td>
+      <td>http://ekhidna2.biocenter.helsinki.fi/dali/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TurboFect</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # R0534</td>
+      <td>For transfecting HEK293S GnTI-</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cellfectin II</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 10362100</td>
+      <td>For transfecting Sf9 cells</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM</td>
+      <td>Corning</td>
+      <td>Cat # 10–013-CV</td>
+      <td>For adherent cell culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sf-900 III</td>
+      <td>Gibco</td>
+      <td>Cat # 12658027</td>
+      <td>For Sf9 culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FreeStyle 293</td>
+      <td>Gibco</td>
+      <td>Cat # 12338026</td>
+      <td>For Hek293S GnTI- culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superose 6 Increase 10/300 GL</td>
+      <td>Cytiva</td>
+      <td>Cat # GE29-0915-96</td>
+      <td>Column for size-exclusion chromatography</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chromolith RP-18</td>
+      <td>Supelco</td>
+      <td>Cat # 102129</td>
+      <td>Column for LC-MS</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Strep-Tactin Superflow high-capacity resin</td>
+      <td>Iba life sciences</td>
+      <td>Cat # 2-1208-025</td>
+      <td>Resin for affinity purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CHAPS</td>
+      <td>Anatrace</td>
+      <td>Cat # C316</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>n-octyl-β-D-glucoside</td>
+      <td>Anatrace</td>
+      <td>Cat # O311</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lauryl maltose neopentyl glycol</td>
+      <td>Anatrace</td>
+      <td>Cat # NG310</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>n-dodecyl-β-D-maltooside</td>
+      <td>Anatrace</td>
+      <td>Cat # D310S</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glyco-diosgenin</td>
+      <td>Anatrace</td>
+      <td>Cat # GDN101</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Digitonin</td>
+      <td>Sigma</td>
+      <td>Cat # 300410</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UltrAufoil R 1.2/1.3, 300 mesh, Au holey-gold grids</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat # Q350AR13A</td>
+      <td>Cryo-EM grids</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and site-directed mutagenesis
 
 The codon-optimized gene encoding the isoform 2 of full-length human HGSNAT was synthesized by GenScript. The synthesized gene was then cloned into the pEG BacMam expression vector (Addgene plasmid # 160683) between EcoRI and NotI restriction sites, to be expressed via baculoviral transduction in HEK293S GnTI- cells (ATCC # CRL-3022) as a fusion protein containing an N-terminal Strep-tag-II-GFP. The integrity of the clone was confirmed by Sanger sequencing (Plasmidsaurus, OR). HGSNAT variants discussed in the manuscript were prepared in the pEG BacMam expression vector background by GenScript.
 
-## Cell culturing, transient transfection, and transduction
+### Cell culturing, transient transfection, and transduction
 
 Adherent HEK293S GnTI- cells were grown in Dulbecco’s Modified Eagle Medium (DMEM, Croning) supplemented with 10% fetal bovine serum (FBS, Gibco) at 37 °C. Immediately preceding transfection, the cells were washed with 1 X PBS (Gibco) and supplied with fresh pre-warmed DMEM containing 10% FBS. 1×106 cells were transfected with 1 μg DNA using TurboFect (Thermo Fisher Scientific) suspended in serum-free DMEM as suggested by the manufacturer’s protocol. The transfected cells were grown at 37 °C and 5% CO2 for 8–10 hr. The cell-culture media was then replaced with fresh pre-warmed DMEM containing 10% FBS and 10 mM of sodium butyrate, and the cells were grown at 32 °C and 5% CO2 for an additional 24–36 hr, before harvesting. All transfections were done at 80% confluency. Transfected cells were used to screen for ideal expression and purification conditions.
 
 Baculovirus preparation was done as described by Goehring and colleagues (Goehring et al., 2014). Briefly, DH10Bac cells (Thermo Fisher Scientific) were transformed with an HGSNAT expression vector, and lacZ- colonies were selected on gentamycin-kanamycin-tetracycline LB agar plates for bacmid DNA isolation. 1×106 adherent Sf9 cells (Gibco # 12659017) grown in serum-free Sf-900 III media (Gibco) were transfected with 1 μg of bacmid using Cellfectin II reagent (Gibco) per the manufacturer’s protocol. Transfected cells were grown at 27 °C for 96 hr. The supernatant media from the cells was harvested, filtered through a 0.2 μm filter, and stored as P1 virus. 100 μL of P1 virus was added to 1 L of Sf9 cells at a cell density of 1×106/mL in serum-free Sf-900 III media. The cells were grown at 96 hr at 27 °C while shaking at 120 rpm. The cells were spun down at 4000×g for 20 min, and the supernatant media was filtered through a 0.2 μm filter and stored as P2 baculovirus. P2 baculovirus was used for large-scale transduction of HEK293S GnTI- cells. Large-scale expression of HGSNAT was done by baculoviral transduction of HEK293S GnTI- cells suspended in FreeStyle 293 expression media containing 2% FBS. Mammalian cell culture at a density of 3×106 cells/mL was transduced using P2 baculovirus at a multiplicity of infection of 1.5–2 and was incubated on an orbital shaker at 37 °C and 5% CO2 for 8–10 hr. The cells were supplemented with 10 mM sodium butyrate and were then incubated in a shaker at 32 °C and 5% CO2 for an additional 38–40 hr. The cells were harvested by centrifugation at 4000×g for 10 min, and the cell pellet was stored at –80 °C until further use.
 
-## Protein expression and thermostability analysis
+### Protein expression and thermostability analysis
 
 To identify suitable conditions for large-scale expression and solubilization of HGSNAT, we employed fluorescence-detection size-exclusion chromatography (FSEC) (Kawate and Gouaux, 2006). Briefly, 100,000 transfected cells were solubilized in 500 μl of 1% detergent, 25 mM Tris-HCl, pH 7.5, 200 mM NaCl, 1 mM PMSF, 0.8 μM aprotinin, 2 μg/mL leupeptin, and 2 μM pepstatin A at 4 °C for 1 hr on an end-end rotator. After solubilization, the lysate was centrifuged at 185,000×g for 1 hr at 4 °C. The supernatant was filtered through 0.45 μm filter, and 100 μl filtrate was analyzed on a Superose 6 Increase 10/300 GL column (Cytiva Life Sciences) pre-equilibrated with 0.15 mM LMNG, 25 mM Tris-HCl, pH 7.5, and 200 mM NaCl. GFP fluorescence in the eluate was monitored by a fluorometer (Shimadzu scientific instruments) set at Ex/Em of 485/510 nm. To test the stability of HGSNAT in various conditions, the solubilized samples were heated at 55 °C for 15 min, centrifuged at 10,000 rpm for 10 min, filtered through 0.45 μm filter, and were analyzed again on a Superose 6 Increase 10/300 GL column. To measure the overall relative expression of mutants, 100,000 cells expressing the mutants were solubilized in 100 ul of 1% digitonin, 25 mM Tris-HCl, pH 7.5, 200 mM NaCl, 1 mM PMSF, 0.8 μM aprotinin, 2 μg/mL leupeptin, and 2 μM pepstatin A at 4 °C for 1 hr on an end-end rotator. The solubilized lysates were transferred to Costar 96-well flat bottom clear plates without centrifugation, and GFP fluorescence was monitored at Ex/Em of 480/520 nm in SpectroMax M5 (Molecular Devices) microplate reader. For FSEC analysis, mutants were solubilized in 1% digitonin, but were also centrifuged and filtered before being analyzed on Superose 6 Increase 10/300 GL column. Thermal stability of the mutants was tested by heating solubilized lysates of the mutants and WT HGSNAT at 65 °C for 15 min and analyzing them by FSEC.
 
-## Purification of HGSNAT
+### Purification of HGSNAT
 
 Cell debris from the sonicated lysate of HEK293S GnTI- cells expressing N-terminal GFP fusion of HGSNAT was removed by centrifugation at 2400×g for 10 min. The supernatant from the low-speed centrifugation step was subjected to ultra-centrifugation at 185,000×g for 1 hr at 4 °C to harvest membranes. Membranes were resuspended using a dounce homogenizer in suspension buffer (25 mM Tris-HCl, pH 7.5, 200 mM NaCl, 1 mM PMSF, 0.8 μM aprotinin, 2 μg/mL leupeptin, and 2 μM pepstatin A). To this membrane suspension, an equal volume of 2% digitonin solution prepared in membrane suspension buffer was added. The membrane suspension was solubilized for 90 min. at 4 °C. The solubilized membrane suspension was centrifuged at 185,000×g for 1 hr at 4 °C. The solubilized supernatant was passed through the Strep-Tactin affinity resin (IBA Life Sciences) column at a flow rate of ~0.3–0.5 ml/min. Affinity resin saturated with HGSNAT was washed with 5–6 column volumes of 0.5% digitonin, 25 mM Tris-HCl, pH 7.5, and 200 mM NaCl. The bound protein was eluted using 5 mM D-desthiobiotin prepared in the wash buffer. The purity and homogeneity of purified HGSNAT was confirmed by performing FSEC and SDS-PAGE. The amino acid sequence of purified HGSNAT was verified by peptide mass fingerprinting of the bands on SDS-PAGE. For FSEC experiments, ~10 μL of elution fractions were loaded onto a Superose 6 Increase 10/300 GL column pre-equilibrated with 0.15 mM LMNG, 25 mM Tris-HCl, pH 7.5, and 200 mM NaCl. The elution fractions containing homogeneous and pure protein were pooled and concentrated to 2 mg/mL. The concentrated protein was further purified by size-exclusion chromatography (SEC) using Superose 6 Increase 10/300 GL column pre-equilibrated with 0.5% digitonin, 25 mM Tris-HCl, pH 7.5, and 200 mM NaCl. HGSNAT corresponding to the dimeric peak from the SEC step was pooled and concentrated to 0.9 mg/mL for cryo-EM sample preparation.
 
-## LC-MS analysis of purified HGSNAT
+### LC-MS analysis of purified HGSNAT
 
 To identify the endogenously bound acetyl-CoA in recombinant HGSNAT, the purified protein was loaded onto a Chromolith RP-18 end-capped column (4.6 mm X 100 mm; Supleco) operated at 1 ml/min flow rate and 40 °C. Acetyl-CoA was eluted by a gradient of mobile phase A (5 mM ammonium formate) and mobile phase B (10–90% acetonitrile). The eluted samples were analyzed by a Thermo TSQ-Quantis (Thermo Scientific) in positive mode at 5.5kV capillary voltage while scanning at 1000 Da/s from 200 to 1000 m/z in single reaction monitoring (SRM) mode. The data was analyzed using Thermo FreeStyle 1.6 (Thermo Scientific), using an SRM filtering for acetyl-CoA precursor (810.1 m/z) and product (303.1 m/z). To monitor the specific endogenous binding of acetyl-CoA to HGSNAT, we also purified apo HGSNAT from the membrane suspension dialyzed in membrane suspension buffer for 4 days at 4 °C. Apo HGSNAT was processed for LC-MS analysis in the same fashion as the HGSNAT-ACO complex.
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 UltrAuFoil holey-gold 300 mesh 1.2/1.3 μm size/hole space grids (UltrAuFoil, Quantifoil) were glow discharged, using a PELCO glow discharger, for 1 min at 15 mA current and 0.26 mBar air pressure and were immediately used for sample vitrification. 2.5 μL of HGSNAT at 0.9 mg/ml was applied to the glow-discharged grids, and subsequently blotted for 2 s at 18 °C and 100% humidity using a Vitrobot (mark IV, Thermo Fisher Scientific). Without any wait time, the grids were plunge-frozen in liquid ethane. Movies were recorded on a Gatan K3 direct electron detector in super-resolution counting mode with a binned pixel size of 0.85 Å per pixel using Serial EM on a FEI Titan Krios G4i transmission electron microscope operating at an electron beam energy of 300 KeV with a Gatan Image Filter slit width set to 20 eV. Exposures of ~2 s were dose fractionated into 50 frames, attaining a total dose of ~50 e- Å–2, and the defocus values were varied from –1.0 to –2.5 μm.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 All image processing was done using CryoSPARC (v 4.2.1) unless specified otherwise (Punjani et al., 2017). Briefly, motion correction was carried out on the raw movies, and subsequently, the contrast transfer function (CTF) was estimated using patch-CTF correction on dose-weighted motion-corrected averages within cryoSPARC (Figure 1—figure supplement 2). A total of 15,067 micrographs were collected, of which 10,394 were selected for further processing based on the CTF fit. Both blob picking and template picking were used to pick particles, and duplicates were removed. Particles were extracted initially using a box size of 288 pixels. A subset of the particles picked by the blob picker was used to generate a low-resolution ab initio reconstruction, which was later used as a reference for iterative 3D classification and heterogenous refinement. The pooled particles were subjected to multiple rounds of reference-free 2D classification and heterogenous refinement to get a cleaned subset of particles which resulted in classes with recognizable features. The cleaned particles were re-extracted with a box size of 360 pixels, and a stack of 94,875 good particles was selected and subjected to an initial round of NU refinement using an ab initio model as a reference (Punjani et al., 2020). 86,500 particles resulted in a 3.89 Å map, which had well-resolved luminal domain architecture, and visible secondary structure features of TM helices. To improve the resolution further, only the particles belonging to micrographs with CTF fit <4 Å were selected for subsequent refinements. Both C1 and C2 symmetry-imposed maps overlapped well, and we used C2 symmetry in the final rounds of processing (Figure 1—figure supplements 2 and 3). A final subset of 57,739 particles was used for NU-refinement, yielding a 3.26  Å map (Fourier shell coefficient (FSC) = 0.143 criterion). Symmetry expansion and local refinement with a focused mask on the LD and TMD domains was performed to improve local density in these domains. The map obtained by symmetry expansion was only used to assess the fit of the model to density. A composite map generated by combining these local maps was used to finalize the fit of the side chains during model building and refinement (Figure 1—figure supplement 3D). Local resolutions were estimated using the RESMAP software (Kucukelbir et al., 2014).
 
-## Model building, refinement, and structure analysis
+### Model building, refinement, and structure analysis
 
 ModelAngelo was used to build HGSNAT isoform 2 into the final map, and final refinement was performed in Phenix (Jamali et al., 2023; Liebschner et al., 2019). Coot was used to rebuild certain portions of the protein and to analyze the Ramachandran outliers (Emsley et al., 2010). ChimeraX was used for making the figures (Meng et al., 2023). Ligand binding site prediction on HGSNAT was performed using MOLEonline and DeepSite (Jiménez et al., 2017; Pravda et al., 2018). To analyze the effect of missense mutations on HGSNAT and to calculate free energies indicating the relative mutation-induced destabilization, we used FoldX (Schymkowitz et al., 2005).

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.47405.001 The current view is that eukaryotic replisomes are independent. Here we show that Ctf4 tightly dimerizes CMG helicase, with an extensive interface involving Psf2, Cdc45, and Sld5. Interestingly, Ctf4 binds only one Pol α-primase. Thus, Ctf4 may have evolved as a trimer to organize two helicases and one Pol α-primase into a replication factory. In the 2CMG–Ctf4 3 –1Pol α-primase factory model, the two CMGs nearly face each other, placing the two lagging strands toward the center and two leading strands out the sides. The single Pol α-primase is centrally located and may prime both sister replisomes. The Ctf4-coupled-sister replisome model is consistent with cellular microscopy studies revealing two sister forks of an origin remain attached and are pushed forward from a protein platform. The replication factory model may facilitate parental nucleosome transfer during replication.
+The current view is that eukaryotic replisomes are independent. Here we show that Ctf4 tightly dimerizes CMG helicase, with an extensive interface involving Psf2, Cdc45, and Sld5. Interestingly, Ctf4 binds only one Pol α-primase. Thus, Ctf4 may have evolved as a trimer to organize two helicases and one Pol α-primase into a replication factory. In the 2CMG–Ctf43–1Pol α-primase factory model, the two CMGs nearly face each other, placing the two lagging strands toward the center and two leading strands out the sides. The single Pol α-primase is centrally located and may prime both sister replisomes. The Ctf4-coupled-sister replisome model is consistent with cellular microscopy studies revealing two sister forks of an origin remain attached and are pushed forward from a protein platform. The replication factory model may facilitate parental nucleosome transfer during replication.
 
 ## Introduction
 
@@ -39,79 +39,425 @@ Earlier structure studies of Ctf4 used subassemblies of CMG and Pol α-primase (
 
 ## Results
 
-## CMG–Ctf4 form a stable complex
+### CMG–Ctf4 form a stable complex
 
 To explore how Ctf43 interacts with replisome factors we performed glycerol gradient sedimentation of protein mixtures (Figure 2—figure supplement 1). This method originally revealed that Pol ε binds CMG, forming a CMG–Pol ε complex that sediments faster than either component alone (compare panels c and h with panel d) (Langston et al., 2014). CMG binding to Ctf43 was also readily apparent (compare panels c and g with panel e). It was initially surprising that the CMG–Ctf43 complex migrated heavier than CMG–Pol ε, even though Ctf43 is not quite as large as Pol ε, because studies in the human system indicated there was only room for one CMG on Ctf4 (Kang et al., 2013), consistent with an earlier proposal (Simon et al., 2014) (Figure 2—figure supplement 1, compare panels d and e).
 
 To study the CMG–Ctf43 complex further we mixed Ctf43 and CMG and applied it to a MonoQ ion exchange column; a complex of CMG–Ctf43 eluted at > 400 mM NaCl (Figure 2a). This result indicated CMG−Ctf43 is a stable complex, and is not loose, consistent wth an apparent tighter interaction of GINS complex to Ctf43 compared to the CIP peptide of Sld5 (Simon et al., 2014). The MonoQ isolated CMG–Ctf43 complex was also stable to size-exclusion chromatography (SEC) (Figure 2b). We conclude that CMG is tightly bound and highly stable on the Ctf43 hub. Density scans of fractions within the SEC elution profile indicated a heterogeneous mixture of CMG–Ctf43 complexes, with CMG:Ctf43 ratios ranging from 3:1 to 1:1. We therefore examined different fractions by cryo-EM and found that indeed, more than one CMG can bind Ctf43, as described below.
 
-## Structure of the 1CMG–Ctf43 complex
+![Figure 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig2-v2.jpg)
+
+**Figure 2.:** (a) A mixture of CMG and Ctf43 were applied to ion-exchange chromatography on a MonoQ column. The top panel shows the elution profile of the CMG−Ctf43 complex(s) which elute at approximately 450 mM NaCl. (b) The SDS-PAGE of gel filtration fractions from the MonoQ elution shows the CMG−Ctf4 complex(s) are stable during these chromatography steps. Ratios of CMG:Ctf43 as estimated by the gel density scans are indicated in the histogram. Glycerol gradient centrifugations also reveal a complex of CMG to Ctf43, as well as other complexes (Figure 2—figure supplement 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Glycerol gradient sedimentation of different protein mixtures. Panels a and b (red boxes), compared to panels c-i, indicate that Ctf4 promotes large super-complexes containing CMG and DNA polymerases. Pol ε binds CMG in the absence of Ctf43 (red box, panel d), and Ctf43 binds CMG (red box, panel e) as noted by the significant shift to a higher mw complex. Migration of protein standards, Thyroglobulin (Thy) and IgG, are shown at the top.
+
+### Structure of the 1CMG–Ctf43 complex
 
 To investigate the structural basis underlying the strength of the CMG–Ctf43 complexes, we determined the structure of the 1CMG–Ctf43 complex by cryo-EM to 3.9 Å resolution. In agreement with previous structural studies of CMG (Abid Ali et al., 2016; Yuan et al., 2016), the C-tier AAA+ ring of Mcm2-7 is highly dynamic. By excluding this region in 3D refinement, we improved the 3D map of 1CMG–Ctf43 to 3.8 Å resolution (Figure 3a–c, Table 1, Figure 3—figure supplements 1 and 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig3-v2.jpg)
+
+**Figure 3.:** Cryo-EM density map of the 1CMG−Ctf43 complex in: (a) top view looking down the N-tier view of Mcm2-7. (b) Cartoon representation of the atomic model of 1CMG−Ctf43 in the C-tier AAA+ ring view. (c) Side view. Each subunit is colored differently. The Mcm2-7 AAA+ motor ring is flexible, and thus removed for higher resolution, but its position is shaded in beige. The resolution of this complex was facilitated by focused 3D refinement omitting the AAA+ C-tier of the Mcms in CMG (Figure 3—figure supplements 1 and 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Extensive 2D and 3D classifications led to reconstruction of 3D maps of the 1CMG–Ctf43 complex1 at 3.8 Å resolution, the 2CMG−Ctf43 complex at 5.8 Å resolution, and the3CMG–Ctf43 complex at 7.0 Å resolution.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) A typical raw micrograph. (b) 2D classification reveals the presence of 1, 2 or 3 copies of CMG helicase in complex with Ctf43. (c) Color-coded surface rendering of the 3D map (left panel) and the gold-standard Fourier shell correlation curve (right panel) of the 1CMG–Ctf43 complex masking out the flexible C-tier motor ring of the Mcm2-7. (d) Gold-standard Fourier shell correlation of the atomic model versus the 3d map. (e) Euler angle distribution of the raw particles used in 3D reconstruction.
+
+**Table 1.**
+ Cryo-EM 3D reconstruction and refinement of the three Ctf43–CMG complexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Ctf43−CMG1 (EMD-20471) (PDB 6PTJ)</th>
+      <th>Ctf43−CMG2 (EMD-20472) (PDB 6PTN)</th>
+      <th>Ctf43−CMG3 (EMD-20473) (PDB 6PTO)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>130,000</td>
+      <td>130,000</td>
+      <td>130,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV) Electron dose (e-/Å2)</td>
+      <td>300 50</td>
+      <td>300 50</td>
+      <td>300 50</td>
+    </tr>
+    <tr>
+      <td>Under-focus range (μm)</td>
+      <td>1.5–2.5</td>
+      <td>1.5–2.5</td>
+      <td>1.5–2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.074</td>
+      <td>1.074</td>
+      <td>1.074</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>759,267</td>
+      <td>759,267</td>
+      <td>759,267</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>200,491</td>
+      <td>53,853</td>
+      <td>53,117</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.8</td>
+      <td>5.8</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>3.5–5.0</td>
+      <td>5.0–8.0</td>
+      <td>5.0–8.0</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>3jc5, 4c8h</td>
+      <td>3jc5, 4c8h</td>
+      <td>3jc5, 4c8h</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−146</td>
+      <td>−135</td>
+      <td>−143</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>34,366</td>
+      <td>90,831</td>
+      <td>131,141</td>
+    </tr>
+    <tr>
+      <td>Protein and DNA residues</td>
+      <td>41,92</td>
+      <td>11,221</td>
+      <td>15,710</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angels (°)</td>
+      <td>1.46</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>2.05</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>10.96</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%) Ramachandran plot</td>
+      <td>0.63</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>91.65</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>8.16</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.19</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Based on the density features, as well as previously reported separate structures of Ctf43 and CMG (Simon et al., 2014; Yuan et al., 2016), we built an atomic model (Figures 3 and 4, and Figure 4—figure supplement 1, Video 1). The overall architecture reveals an extensive interface between the helicase and Ctf43, amounting to 1706 Å2 of buried area, larger than the stable contact between Cdc45 and Mcm2-7 (1182 Å2) and between GINS and Mcm2-7 (1583 Å2), explaining the stability of the CMG–Ctf43 complex. Interestingly, there is a wide gap between Ctf4 and the Sld5 subunit of CMG that contains the CIP peptide (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig4-v2.jpg)
+
+**Figure 4.:** (a) 3D map showing the interacting Cdc45–GINS and Ctf43. Different subunits are in different colors as labeled, and the three interacting regions are labeled Interfaces 1 through 3. (b) An open-book view of the interface between Cdc45–GINS and Ctf43, shown in the electrostatic surface view. The three contacting regions between Cdc45−GINS and Ctf4 are marked by three pairs of dashed ellipses. (c–e) Interface one between Cdc45 and Ctf4 (c), interface two between Psf2 and Ctf4 (d), and interface three between Sld5 and Ctf4 (e), shown in cartoon view with several interacting residues shown in sticks. A close-up view of the interfaces is shown in Figure 4—figure supplements 1 and 2. Conservation in the interface region is shown in Figure 4—figure supplement 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) 3D density showing the Ctf43−−Cdc45−GINS, by omitting the Mcm2-7 density in the 3d map, superimposed with the atomic model. Each subunit is colored differently and as labeled. (b–e) Two example regions in Cdc45 (b), Psf2 (c), Sld5 (d), and Ctf4 (e) with several side chains shown as sticks.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The 1CMG−Ctf43 structure viewed from the C-face (a) and side (b) of the Ctf43 disk. Cdc45 and GINS are shown in surface and the Ctf43 in cartoon. The interacting Ctf4 monomer is demarcated by a dashed red curve, and the remaining two non-interacting monomers by dashed black curves. (c) A sketch showing Cdc45 and GINS interact with only one Ctf4 monomer. (d–f) Interfaces between the interacting Ctf4 monomer and Cdc45 (d), Psf2 (e), and Sld5 (f).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Conserved sequences in Cdc45 that contact Ctf4. (b) Conserved sequences in Psf2 that contact Ctf4. (c) Conserved sequences in Cdc45 that contact Psf2 and Cdc45. The asterisks mark the conserved hydrophobic residue at the interface between Psf2 and Ctf4. Sc: Saccharomyces cerevisiae; Sp: Saccharomyces pombe; Dm: Drosophila melanogaster; Mm: Mus musculus; Dr: Danio rerio, Hs: Homo sapiens. Invariant residues are highlighted in green, identical residues in Yellow, and similar residues in cyan.
+
+![Video 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-video1.mp4.jpg)
+
+**Video 1.:** The map and model do not include the C-tier AAA+ motor ring of the Mcm2-7, which was excluded during 3D refinement.
 
 There are three interfaces between CMG and Ctf43, involving three different subunits of CMG with one protomer of Ctf43 (Figure 4c,d,e; Figure 4—figure supplement 2). The two major interfaces are between the β-propeller region of Ctf4 and both the Cdc45 subunit of CMG (Figure 4c) and the Psf2 subunit in the GINS complex of CMG (Figure 4d); these interfaces were previously uncharacterized. The interactions between Cdc45 and the Ctf4 propeller are largely electrostatic, involving several salt bridges and hydrogen bonds. Furthermore, a loop connecting strands β1 and β2 of Psf2, disordered in the CMG structure in the absence of Ctf43 (Yuan et al., 2016), inserts into two blades of the β-propeller and becomes ordered by forming multiple interactions (Figure 4d). The interface between Psf2 and Ctf4 involves H-bonds between Psf2 residues Arg34 and Lys36 with Ctf4 residues Asn850 and Tyr848, respectively, as well as hydrophobic interaction among Ctf4 residues Phe518, Leu770, and Pro771 and Psf2 residues Ile27, Phe28, and Pro29. As expected, the main Ctf4-contacting regions of Cdc45, Psf2 are well conserved across evolution (Figure 4—figure supplement 3). The previously-identified interaction between Ctf4 and the CIP peptide in the Sld5 subunit (Simon et al., 2014) of the GINS complex is actually a minor interaction site in which the N-terminal residues 3–15 of Sld5 form a short helix that bundles with the helical domain of Ctf4, primarily via a hydrophobic interface (Figure 4e). An intervening long peptide (aa 16–53) of Sld5 is disordered. This long flexible linker to the CIP peptide of Sld5 may explain why the CIP peptide of Sld5 is not required to observe CMG binding to Ctf4 in cells, predicting a second tethering point between CMG and Ctf4 (Simon et al., 2014). Therefore the Psf2 and Cdc45 extensive interfaces explain the stable association between Ctf4 and CMG.
 
-## The 2CMG–Ctf43 and 3CMG–Ctf43 complexes
+### The 2CMG–Ctf43 and 3CMG–Ctf43 complexes
 
 Cryo-EM 2D averages of two CMGs bound to Ctf43 show the CMGs are held rigidly, consistent with their stable binding to Ctf43 (Figure 5a). The 3D reconstruction shows each CMG interacts with only one protomer of Ctf43, and the CMG contact is limited to one side of the Ctf43 triangle related by 120° (Figure 5b). While earlier 2D studies of Ctf4 binding the GINS subassembly also observed a similar geometry, it has been thought that only one large CMG holoenzyme could bind Ctf4 (Kang et al., 2013; Simon et al., 2014). However the structure of 2CMG–Ctf43 shows that the large CMGs do not sterically obstruct one another. Therefore, one Ctf43 may organize up to three CMGs. Indeed, we observed 2D class averages that show two or three CMGs per Ctf43, related by the three-fold axis of Ctf43 (Figure 5a, Figure 5—figure supplements 1 and 2). We determined the cryo-EM 3D maps of the 2CMG–Ctf43 complex at 5.8 Å resolution (Figure 5b, Figure 5—figure supplement 1, Video 2) and the 3CMG–Ctf43 complex at 7.0 Å (Figure 5—figure supplement 2), respectively. The interactions between individual CMG helicases and their respective partner Ctf4 protomers in both 2CMG–Ctf43 and 3CMG–Ctf43 complexes are virtually identical, the same as in the 1CMG–Ctf43 complex described above, consistent with no steric clash between the CMGs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig5-v2.jpg)
+
+**Figure 5.:** (a) Selected 2D class averages of cryo-EM images of 2CMG−Ctf43. (b) A side and a bottom view of the 3D map with docked atomic models of Ctf43 and CMG shown in cartoon view. The C-tier AAA+ ring of Mcm2-7 is partially flexible and the density is invisible at the surface rendering threshold used. See also Figure 5—figure supplements 1 and 2 and Video 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Surface-rendered 3D map of 2CMG–Ctf43 in side view (left) and bottom view from the C-face of Ctf43 (right), (b) Color-coded 3D map of 2CMG−Ctf43 according to the local resolution (left) and the gold-standard Fourier shell correlation of the two half maps. (c) Left: Euler angle distribution of raw particles used in 3D reconstruction. Right: Model to map correlation for the 2CMG−Ctf43 complex.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Surface-rendered 3D map of 3CMG−Ctf43 in side (left) and bottom (right, C-face of Ctf43). (b) Color-coded 3D map of 3CMG−Ctf43 according to the local resolution (left) and the gold-standard Fourier shell correlation of the two half maps. (c) Left: Euler angle distribution of raw particles used in 3D reconstruction. Right: Model to map correlation for the 3CMG−Ctf43 complex.
+
+![Video 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-video2.mp4.jpg)
 
 Considering that the 2CMG–Ctf43 complex may be more physiologicaly relevant, as factories consisting of two forks straddling one origin are observed in vivo (Saner et al., 2013), and a 2CMG occupancy of Ctf43 leaves one protomer of Ctf43 for other CIP factors such as Pol α-primase, we continue this report in the context of the 2CMG–Ctf43 complex.
 
 The key insight from the 2CMG–Ctf43 structure is that the two CMGs are held on the same side − the top side, or the N-face of the disc-shaped Ctf43 when the structure is viewed from the side of the Ctf43 disk (Figure 5b). Hence, the two N-tier rings of the Mcm2-7 hexamers – where the dsDNAs approach for dsDNA unwinding (Georgescu et al., 2017; Douglas et al., 2018) – approximately face one another at an angle of 120° and the C-tier motor rings of the two CMGs, where the leading strand Pol ε’s bind (Sun et al., 2015), face outwards and away from each other.
 
-## A 1:1 complex of Ctf43 and Pol α-primase
+### A 1:1 complex of Ctf43 and Pol α-primase
 
 Earlier studies observed only one Pol α-primase bound to Ctf43 (Simon et al., 2014) (see their Figure 4e and Extended data Figures 8 and 9). We wished to understand the basis of this stoichiometry but the interaction of Ctf43 to Pol α-primase was too loose to isolate a complex for cryo-EM analysis, consistent with the dynamic hub model of Ctf43 (Simon et al., 2014; Villa et al., 2016). Thus we directly mixed Pol α-primase and Ctf43 at 1:1 and 3:1 molar ratios followed by cryo-EM analysis to study how Pol α-primase binds Ctf43 in the absence of CMG.
 
 We first examined Pol α-primase alone and found Pol α-primase was flexible when frozen in vitreous ice, and did not generate well-defined 2D class averages. But under negative-stain EM conditions, Pol α-primase was sufficiently stabilized on carbon film to yield a bi-lobed shape with the two lobes ~ 120 Å apart (Figure 6a). This architecture is essentially the same as a previous negative-stain EM study, in which one lobe is assigned to the catalytic NTD of Pol1 (Pol1-NTD) and the other lobe to the CTD of Pol1, plus the B-subunit and the L- and S-subunits of the primase (Núñez-Ramírez et al., 2011). Cryo-EM of Ctf43 alone produced 2D class averages that are consistent with the crystal structure (Figure 6b). Cryo-EM 2D class averages of a 1:1 molar ratio mixture of Ctf43 and Pol α-primase yielded a structure comprised of Ctf43 bound to one catalytic Pol1-NTD of Pol α-primase (Figure 6c, Figure 6—figure supplement 1, Table 2). Increasing the Pol α:Ctf43 ratio to 3:1 did not change the 1:1 binding with Ctf43 (Figure 6—figure supplement 2). The presence of the Pol lobe, but absence of the primase lobe in the 2D class averages is consistent with previous studies showing a high degree of flexibility between the primase and polymerase lobes (Baranovskiy and Tahirov, 2017; Núñez-Ramírez et al., 2011; Perera et al., 2013). The 2D averages reveal two contacts between Ctf43 and Pol1-NTD, but only one of the two contacts is visible in the 3D map (Figure 6c–d). These interactions must be weak and flexible, with one contact becoming averaged out in 3D reconstructions, and accounting for the low 12 Å resolution of the 3D map.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig6-v2.jpg)
+
+**Figure 6.:** (a) Selected 2D class averages of negatively stained images of Pol α-primase showing the enzyme in a similar view with a two-lobed architecture. (b) 2D class averages of cryo-EM images of Ctf43 in three distinct views. (c) Three selected 2D class averages of cryo-EM images of Ctf43−Pol α-primase. Note the primase lobe of Ctf43−Pol α-primase is not visible. (d) Left and middle panels: front and back views of the surface-rendered cryo-EM 3D map of Ctf43−Pol α-primase docked with the crystal structure of Ctf4 in light blue and crystal structure of the catalytic Pol α-NTD in light green. Right panel: atomic model viewed when the Ctf4 trimer is orientated horizontal and on edge. Rigid body docking is further presented in Figure 6—figure supplement 1. The asterisk (*) and double asterisk (**) in (c, d) mark the left and right contacts, respectively, between Ctf43 and Pol α-NTD. The right contact is not visible in the 3D map (d). Increasing the concentration of Pol α-primase did not give additional Pol α-primase bound to Ctf4 (Figure 6—figure supplement 2).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) 2D averages of Ctf43−Pol 1. (b) 2D classification reveals the presence of 1 Pol α bound to Ctf43. Side (left) and end-on (right) views of the 3D reconstruction of Pol1−Ctf43 complex are shown. Only the Pol1 subunit (green) of Pol α-primase is observed with Ctf43 (blue) in the Pol α-primase–Ctf43 3D reconstruction. In the end-on view, Pol1 appears to occlude the C-face of the Ctf4 trimer. The upper left structure shows both low and high thresholds, in gray and in color, respectively. The crystal structures of Pol1-DNA (4FYD) and the C-terminal half of Ctf4 (4C8H) were docked by rigid body docking of the unaltered crystal structures into semi-translucent views of the density at the bottom of panel b. (c, d) The Euler angle distribution and the FSC resolution curve are shown in panels c and d, respectively. (e) Model-to-map Fourier Shell Correlation plot comparing best and second-best docking solutions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Cryo-EM 2D averages of protein mixtures containing Ctf43:Pol α-primase in a 1:3 molar ratio show no more than one Pol α-primase bound to Ctf43.
+
+**Table 2.**
+ Cryo-EM 3D reconstruction of the Ctf43–Pol α-primase complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Ctf43–Polα-primase (EMD-20744)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>120,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV) Electron dose (e-/Å2)</td>
+      <td>200 60</td>
+    </tr>
+    <tr>
+      <td>Under-focus range (μm)</td>
+      <td>1.5–2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>237,688</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>48,414</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>10–15</td>
+    </tr>
+  </tbody>
+</table>
+
 The crystal structures of Ctf43 and Pol1-NTD complexed with a primed DNA-dNTP fit well as two separate rigid-bodies in the upper and lower densities of the Ctf43–apo Pol1-NTD 3D map, respectively. The docking suggests that the primer-template duplex exits the Pol1-NTD from the bottom face (Figure 6d, Figure 6—figure supplement 1). The fact that use of a three-fold excess of Pol α-primase to Ctf43 did not provide more than one molecule of Pol α-primase bound to the Ctf4 trimer (Figure 6—figure supplement 2), is consistent with the previous observations (Simon et al., 2014). The Pol1-NTD occupies most of the bottom C-face of Ctf43 (Figure 6d, Figure 6—figure supplement 1), appearing to sterically occlude additional molecules of Pol α-primase and thus explaining the single Pol α-primase-to-Ctf43 stoichiometry. Notably, in a factory complex with two tightly bound CMGs, there would still remain a vacant CIP site in Ctf43 for binding of dynamic partner proteins, such as Pol α-primase and other CIP factors (see Discussion).
 
-## Reconstitution and characterization of a 2CMG–Ctf43–1Pol α-primase complex
+### Reconstitution and characterization of a 2CMG–Ctf43–1Pol α-primase complex
 
 To investigate complex formation among CMG, Ctf43 and DNA polymerases, we analyzed by densitometry the sedimentation analyses of a mixture of CMG+Ctf43 with DNA Pol α-primase and Pol ε. This protein mixture produced a large super-complex that surpassed the size of CMG–Ctf43 and the Pol ε-CMG complexes (Figure 2—figure supplement 1). Interestingly, the bulk of excess Ctf43 is excluded from the large complex suggesting some type of cooperative assembly. Gel scans indicate a stoichiometry of two CMG–Pol ε, one Ctf43, one Pol α-primase (Figure 7—figure supplement 1), although we can’t exclude a possible mixture of complexes. Upon mixing CMG+Ctf43+Pol α-primase we observed a 2CMG–1Ctf43–1Pol α-primase complex by negative stain EM (Figure 7—figure supplement 2).
 
 We investigated cooperativity of CMG and Pol α-primase binding to Ctf4 by pull-down assays (Figure 7a). Pull-down assays using immobilized Ctf43 showed an 8-fold increase of Pol α-primase retained on Ctf43 when CMG was present, and conversely, more CMG bound to Ctf43 when Pol α-primase was present, suggesting cooperativity (Figure 7a). Cooperativity is consistent with densitometry of CMG–Pol ε–1Ctf43-–1Pol α-primase isolated in a glycerol gradient which excludes most of the Ctf4 trimer (Figure 7—figure supplement 1). Negative stain EM also shows a 2CMG–Ctf43–1Pol α-primase complex (Figure 7—figure supplement 2). The spontaneous and cooperative assembly of this complex in vitro suggests that the complex may also form in cells and possibly underlies the observations that sister replisomes are held together in cells (Chagin et al., 2016; Saner et al., 2013).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig7-v2.jpg)
+
+**Figure 7.:** (a) Streptag-Ctf4 trimer on streptactin magnetic beads was added to either Pol α, CMG or a mixture of Pol α + CMG. Proteins were eluted with biotin and analyzed by SDS-PAGE (upper right). The assay was repeated in triplicate and gel scans were quantitated (below). The error bars show the standard deviation. The cooperativity is consistent with the stoichiometric assembly of 2(CMG–Pol ε)−1Ctf43−1Pol α-primsae while excluding most of the Ctf43 in a glycerol gradient analysis (Figure 7—figure supplement 1). The results are also consistent with negative stain EM of a mixture of CMG+Ctf43+Pol α-primase, showing the presence of a 2CMG−1Ctf43−1Pol α-primase complex (Figure 7—figure supplement 2). (b, c). Both CMGs in the 2CMG−Ctf43 factory are active. (b) Controls for testing CMG−DNA binding time in 0.1 mM ATPγS are in Figure 7—figure supplement 3. Native PAGE analysis of helicase assays upon preincubation of either CMG or CMG + Ctf4 for 2 hr with 0.1 mM ATPγS and a 32P-forked DNA followed by 5 mM ATP to initiate unwinding. Timed aliquots were removed for analysis as indicated in the representative native PAGE gels. The plot represents results of triplicate assays. The mean value is indicated by the symbols and error bars show one standard deviation. (c) Preincubation experiments to determine the time for Pol α-primase to assemble onto the forked DNA are shown in Figure 7—figure supplement 4. Either CMG or CMG+Ctf43 were preincubated with 32P-primed DNA fork and 0.1 mM ATPγS for 115 min, followed by addition of Pol α-primase and a further 5 min incubation before initiating replication/unwinding with 5 mM ATP and 0.1 mM each dNTP. Timed aliquots were removed for analysis as indicated in the representative native PAGE gels. DNAs having CMG bound enable Pol α-primase to extend the DNA to full length. Pol α-primase only extends to the forked junction on DNAs that lack CMG due to inability of Pol α-primase to perform strand displacement synthesis. The plot of full-length products represents results of triplicate assays. The mean value is indicated by the symbols and error bars show one standard deviation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Lane 10 of the SDS-PAGE of Figure 2—figure supplement 1 is shown to the left. The densitometry scan of the SDS gel lane 10 (right) was analyzed using ImageJ and indicates 2CMGE−1Ctf43−1Pol α-primase. The area of the Cdc45 peak was used as a proxy for CMG stoichiometry, and the area of the Cdc45 peak divided by the Cdc45 mw was assigned a value 2.0 because molar areas of Pol1, Pol12, and Ctf43 were about half the molar value of Cdc45. The amount of Ctf43, which overlaps Mcm4, was determined in two steps. First, the area of the Mcm2-7 region was divided by the molecular weight of Mcm2-7. The difference in area was deduced to belong to Ctf43, and calculated based on the molecular weight of a Ctf4 trimer. Calculated values are shown under the peaks. The stoichiometry approximates to 2 Cdc45 (and thus 2 Mcm2-7), 1 Ctf43, 1 Pol α, and 2 Pol ε.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) 2D class averages of negatively stained EM images of CMG plus Ctf4 trimer indicate a 2CMG−Ctf43 complex. (b) The top panels are 2D class averages of negatively stained EM images of a mixture of CMG, Ctf4 trimer and Pol α-primase, which we interpret as a complex of 2CMG﻿−Ctf43−1Pol α-primase. The bottom panels explain the interpretation of the images in the top 2D averages of panel b using yellow to color CMGs, blue to color the Ctf4 trimer, and green to color the Pol1 subunit of Pol α-primase. See text for details.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (a) Scheme of the assay (top) and native PAGE gel analysis (bottom) of CMG helicase activity at different times of preincubating DNA with CMG and 0.1 mM ATPγS, followed by adding 5 mM ATP to initiate unwinding. (b) Quantitation of the gels in panel (a). Minutes of preincubation of CMG, DNA and ATPγS are shown to the right of each line.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (a) Top: scheme of the assay. Reactions containing 20 nM CMG + /- 10 nM Ctf43 were preincubated with 0.5 nM 32-P primed fork DNA and 100 μM ATPγS for a total of 2 hr, and Pol α-primase was added at the times indicated, followed by a 10 min pulse of replication upon using 5 mM ATP and 100 μM each dNTP. Bottom: Reactions were quenched and analyzed by denaturing PAGE. Pol α-primase alone is unable to perform strand displacement, and therefore 32P-primed sites on DNA forks lacking CMG are only extended to the forked junction. (b) Quantitation of the full-length products.
+
 To determine if multimers of CMG bound to Ctf4 retain activity, and thus could operate on two forks at the same time, we performed helicase and replication assays comparing CMG with 2CMG + 1Ctf43 (preincubated to form 2CMG–Ctf43 complex as in Figure 2) (Figure 7b,c). Recent reports indicate that a 2 hr preincubation of CMG + DNA fork with 0.1 mM ATPγS or 0.5 mM ATPγS is necessary for CMG to bind forked DNA (Burnham et al., 2019; Kose et al., 2019). Therefore, we incubated CMG with forked DNA for 2 hr with ATPγS, which gave maximum binding (Figure 7—figure supplement 3). Helicase activity was initiated after the 120 min preincubation by adding 5 mM ATP. The results demonstrate that CMG helicase activity is slightly stimulated by Ctf4 compared to CMG alone (Figure 7b). Stimulation of CMG by Ctf4 was observed in an earlier study using human CMG and Ctf4 (Kang et al., 2013). We cannot distinguish whether Ctf4 stimulates intrinsic CMG helicase activity or enhances DNA binding (or both). Overall, we conclude CMG retains helicase activity while multimerized by Ctf43.
 
 In Figure 7c we tested the effect of Ctf4 on replication activity with CMG and Pol α-primase. We first defined the time of preincubation needed for Pol α-primase to bind CMG + /- Ctf4 on the 32P-primer forked DNA (Figure 7—figure supplement 4). The results indicate Pol α-primase locates the primed site within 1 min and thus we included a 5 min preincubation with Pol α-primase at the end of the 2 hr preincubation with ATPγS, CMG+primed fork DNA (+ /- Ctf4) prior to adding dNTPs and 5 mM ATP (Figure 7c). Comparison of CMG+Pol α-primase with CMG+Ctf43+Pol α-primase showed that CMG retained full replication activity while multimerized by Ctf43, indicating that CMGs multimerized by Ctf43 are functional.
 
-## Atomic model for a replication factory
+### Atomic model for a replication factory
 
 In light of cell-based studies that observe that sister replisomes generated from a bidirectional origin are physically coupled such that the two sister duplexes extrude together away from a point source (Chagin et al., 2016; Saner et al., 2013; Natsume and Tanaka, 2010), and on the basis of our cryo-EM and biochemical analysis, we propose that the observed factory in cells is explained by one Ctf43 that coordinates two CMGs and one Pol α-primase to form a 2CMG–1Ctf43–1Pol α-primase core replisome factory. While we observed this core replisome factory in negative stain EM (Figure 7—figure supplement 2), we were unable to reconstruct the full 2CMG–Ctf43–Pol α-primase by cryo-EM analysis, and therefore we obtained an atomic model for this super-complex factory by superimposing the shared Ctf43 in the atomic model of 2CMG–Ctf43 with that of Pol α–Ctf43 (Figure 8a–b, Figure 8—figure supplement 1, Video 3). The model indicates a factory complex that contains two CMGs on the sides of the Ctf4 disk, and one Pol α-primase on the C-face of the Ctf4 disk. The protein complex consisting of 26 visually observed polypeptides in this > 2 MDa factory model give no steric clash among them. This model may explain why Ctf4 has evolved to assemble a trimer, not a dimer, in order to tightly coordinate two CMG helicases, leaving one Ctf4 protomer to bind transient CIP factors such as Pol α-primase. Such a structure, operating at a level above the individual replisome, may represent the functional unit of a cellular replicon core factory derived from one bidirectional origin as implicated by cellular and microscopy studies (Chagin et al., 2016; Saner et al., 2013). Our dimeric CMG replication factory model suggests possible coordination of the two forks that arise from an origin of replication. As the sister forks grow, the duplicated leading and lagging strands would form loops that push the nascent sister DNAs out from the factory surface in a scenario that resembles the proposed replication factory model based on cellular studies (summarized in Figure 8—figure supplement 2) (Chagin et al., 2016; Saner et al., 2013).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig8-v2.jpg)
+
+**Figure 8.:** (a) A composite atomic model of one Pol α-primase and two CMG helicases organized in a core factory with a Ctf4 trimer. The model is derived by aligning Ctf43 shared between the Ctf43–CMG dimer model and the model of Ctf43–Pol α NTD. The DNA structure is based on the structure of CMG–forked DNA (PDB 5U8S), but the lagging strand outside the CMG channel is modeled. The possible location of the primase module of Pol α-primase is indicated by a green ellipse. (b) A sketch illustrating the leading strand Pol ε at the C-tier face of the CMG helicase and the primase reaches atop the N-face of Ctf43, potentially capable of priming both lagging strands. See text for details. See also Figure 8—figure supplements 1 and 2, and Video 3. Figure Supplements and their legends.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The primase lobe of Pol α-primase is shown as a semi-transparent sphere connected to Pol1 by a flexible linker. Assuming the primase lobe extends past the Ctf43 disk and resides near the CMGs, the black lines indicate a 70° angle to approximate the previously documented range of motion between the Pol and primase lobes (Núñez-Ramírez et al., 2011).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/47405/elife-47405-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (a) Cartoon of the structural model of a core replicon factory from the current report, along with DNA produced from one bidirectional origin. The black arrows indicate the direction of duplicated leading strand DNA propelled from the leading strand Pol ε in the complex, and the red arrows correspond to the direction of lagging strand synthesis during Okazaki fragment extension. Panel (b) is adapted from Figure 1a in Natsume and Tanaka (2010).
+
+![Video 3.](https://cdn.elifesciences.org/articles/47405/elife-47405-video3.mp4.jpg)
+
+**Video 3.:** The final model is rotated 360° around a vertical axis.
 
 ## Discussion
 
 The factors that mediate the association of different replisomes and how a replication factory looks like have been unknown. The cryo-EM and biochemical studies presented here suggest a higher order architecture of the replication machinery beyond an individual replisome and propose that Ctf4 has evolved as a trimer to simultaneously organize two CMGs and one Pol α-primase by forming a 2CMG–Ctf43–1Pol α-primase factory. Our factory model conceptually advances on the previous view in which Ctf43 binds a single CMG of an individual replisome (Figure 1a) (Simon et al., 2014; Villa et al., 2016). However, we note that individual replisomes with 1CMG–Ctf43 and replisome factories with 2CMG−Ctf43 are not mutually exclusive and that until the factory is confirmed to operate inside the cell, the conclusions drawn here should be regarded as preliminary.
 
-## Mechanism of bidirectional replication by a replication factory
+### Mechanism of bidirectional replication by a replication factory
 
 A factory complex containing a stable 2CMG–Ctf43 is consistent with cell-based studies and light microscopy of replicating DNA in S. cerevisiae cells (Conti et al., 2007; Falaschi, 2000; Kitamura et al., 2006; Ligasová et al., 2009; Natsume and Tanaka, 2010), where sister replication forks are shown by super resolution confocal microscopy with fluorescent markers on DNA to be physically associated within a twin fork replication factory at bidirectional origins and that the daughter duplexes are extruded together from a common protein platform (Kitamura et al., 2006; Saner et al., 2013). The model is also consistent with super resolution microscopy of mammalian replication nuclear foci revealing they are comprised of several single replication factories, each of which represents one bidirectional origin replicon (Chagin et al., 2016).
 
 In the 2CMG factory model (Figure 8), the two helicases stand sideways above the Ctf43 disk, with their respective N-tier rings of the two Mcm2-7 hexamers facing appromiately 120° to each other. Previous studies show that the leading strand enters the N-tier of CMG and proceeds through the central channel of CMG to engage the leading strand Pol ε located at the C-tier of CMG (Georgescu et al., 2017; Goswami et al., 2018). Therefore, at the core of the replication factory, the two parental duplexes enter their respective CMGs at the N-tier where each duplex is unwound by steric exclusion (Fu et al., 2011; Georgescu et al., 2017; Langston et al., 2017a; Langston and O'Donnell, 2017b; Goswami et al., 2018; Kose et al., 2019; Eickhoff et al., 2019). In the core replication factory model, two parental duplexes can easily be engaged at the N-tiers of each CMG due to their 120° orientation, and the lagging strand is deflected off the top of the N-tier ring after embrace of the parental duplex by the zinc fingers that encircle dsDNA (Georgescu et al., 2017; Li and O'Donnell, 2018; O'Donnell and Li, 2018; Goswami et al., 2018). Therefore, the unwound leading strands travel through the horizontal central channels of CMGs to exit the left and right sides of the replication factory at their respective CMG C-tier to which the leading Pol ε binds.
 
-## Pol α-primase is flexibly associated in the replisome
+### Pol α-primase is flexibly associated in the replisome
 
 Given the high degree of flexibility between the Pol and primase lobes of Pol α-primase, it seems likely that only one lobe or the other will be observed in the EM depending on which lobe is more ‘fixed’ in place. In an earlier study that contained CMG–Pol ε–Ctf4–Pol α-primase-forked DNA, a density from Pol α-primase was observed at the N-tier of the Mcm ring (Sun et al., 2015). Given that the p48/p58 primase subunits interact with Mcm3, Mcm4, and Mcm6 (You et al., 2013), the Pol α-primase density was most likely the primase lobe. Pol1 of Pol α-primase binds directly to Ctf43 (Simon et al., 2014), and in the present study the Ctf4–Pol α-primase structure is solved in the absence of CMG and DNA. Therefore, it is the Pol1 lobe instead of the primase lobe that is stabilized on Ctf4. Thus, the current study and the earlier study are compatible, but observe different lobes of Pol α-primase. At the time of the earlier work (Sun et al., 2015), the dimeric replisome images were observed but discarded, because we did not know how to interpret those images.
 
-## Either one or more Pol α-primases may prime the two lagging strands of the coupled sister forks
+### Either one or more Pol α-primases may prime the two lagging strands of the coupled sister forks
 
 The lagging strands displaced off the N-tier rings of their respective Mcm2-7 hexamers are near the center between the two CMGs. Such lagging strand positioning allows for and raises the possibility that the single Pol α-primase may prime both lagging strands. The catalytic Pol1 NTD of Pol α-primase binds to the bottom C-face of the Ctf43 disk (Figure 6d, Figure 6—figure supplement 1). The primase lobe is not visible in the 3D map of Ctf43–Pol α-primase of this report, but the Pol1-NTD lobe and primase lobe of the bi-lobed Pol α-primase are known to be separated by a distance of ~ 120 Å and connected via a flexible tether that provides a 70° range of motion between the primase and polymerase lobes, sufficiently long to contact both CMGs in the factory (Figure 8, and Figure 8—figure supplement 1) (Baranovskiy and Tahirov, 2017; Núñez-Ramírez et al., 2011; Perera et al., 2013). Because the primase functions upstream of the Pol1 subunit of Pol α, and binds the Mcms (You et al., 2013), it is likely that the primase lobe extends upwards passing the 45 Å-thick Ctf43 disc to reach past the N-face of Ctf43, placing the primase between the two N-tier rings of the helicases where the two lagging strands are first produced (Figures 1b and 8a,b). Therefore, the primase subunits can come in contact with and thereby prime both lagging strands.
 
 However, we do not expect that only one Pol α-primase molecule functions for both lagging strands in a replication factory for several reasons. First, Pol α-primase is fully competent to prime the lagging strand in the absence of Ctf4 in vitro using pure proteins, and is dependent on CMG not Ctf4 for function (Georgescu et al., 2015b; Yeeles et al., 2015; Yeeles et al., 2017), indicating that Ctf4 is not required for replication fork operations per se. Second, the dynamic binding of Pol α-primase to Ctf4 in the dynamic Ctf4 hub view (Villa et al., 2016), especially given the weak binding of the Pol1 CIP peptide, would only enable a single Pol α-primase to stay bound to Ctf4 for a few seconds or less. Therefore, even individual replisomes containing Ctf4 would utilize numerous Pol α-primase binding events over the time needed to repeatedly prime one lagging strand during replisome progression.
 
-## Multiple CIP factors may still access Ctf4 in the replisome factory
+### Multiple CIP factors may still access Ctf4 in the replisome factory
 
 The currently identified CIP factors include Pol α-primase, CMG, Chl1, Dpb2, Tof2, and Dna2; the Pol α-primase, CMG, Dna2, and Chl1 bind the same consensus CIP site of Ctf4, whereas Tof2 and Dpb2 bind a distinct site on Ctf4 (Samora et al., 2016; Villa et al., 2016). The ability of Ctf43 to bind several different factors is proposed to depend on time-sharing due to weak CIP peptide binding with rapid on/off rates to Ctf4, similar to PCNA binding factors via a conserved PIP (PCNA Interaction Peptide) motif, reviewed in Georgescu et al. (2015a). Given the tight interaction of 2 CMGs to Ctf43, we envision three different pathways for CIP proteins to bind Ctf43 in a replication factory. The first, and simplest, is that the transient binding of Pol α-primase will often vacate one Ctf4 subunit, making it available for other CIP proteins. Indeed, given Pol α-primase still functions in vitro without Ctf4 (Georgescu et al., 2015b; Yeeles et al., 2015; Yeeles et al., 2017), this particular CIP site may often be available for other CIP factors to bind. Second, the Chl1 helicase and Dna2 nuclease are required under particular cellular conditions, during which the replisome may change composition, and this has precedence in the rapid and dynamic rearrangements of proteins in the E. coli replisome (Indiani et al., 2009; Lewis et al., 2017). Third, the structures of this report show that the CIP peptide of CMG (in Sld5) is located across a wide gap between CMG and Ctf4, and the CIP sequence only contacts Ctf4 at the end of a long flexible linker in Sld5. The Kd of the Sld5 CIP peptide to Ctf4 is only 5 μM and can even be deleted without preventing CMG–Ctf4 interaction in living cells (Simon et al., 2014). Given the flexible loop that mediates the Sld5 CIP peptide in the CMG–Ctf4 complex, the Sld5 CIP peptide likely retains the rapid koff implied by the 5 μM Kd and thus can be expected to vacate the Ctf4 CIP site frequently (i.e. milliseconds). While speculative, it is also possible the Sld5 CIP peptide within CMG may be regulated by other proteins, or that other CIP factors that have additional contacts to Ctf4 that can outcompete the weakly bound Sld5 CIP peptide.
 
-## Independent replisomes and the twin CMG factory model are not mutually exclusive
+### Independent replisomes and the twin CMG factory model are not mutually exclusive
 
 The current report demonstrates that two (or three) CMG can bind Ctf4 tightly, that CMGs bound to the Ctf4 trimer retain activity, and that a complex of 2(CMG–Pol ε)–1Ctf43–1Pol α-primase spontaneously assembles in vitro. In vitro single molecule studies in S. cerevisiae extracts and Xenopus extracts demonstrate that individual replisomes can move apart in opposite directions from an origin and contain only one CMG apiece (Duzdevich et al., 2015; Yardimci et al., 2010). While these experiments reveal that replisomes can act individually, these experiments utilize DNA tethered at both ends and thus DNA looping needed in our factory model would not be observed. Thus if factories were present, only when they dissociate to form independent forks would replication forks on doubly tethered DNA be visualized. Alternatively, Xenopus egg extracts may be programmed to replicate a bit differently from normal cells. It is worth noting that neither the model of an individual replisome nor the model of a dimeric replisome factory have been proven to exist inside cells. Because the same proteins are present in both models, they may not be mutually exclusive and may both exist in cells. If true, the different models may even fulfill distict functions. Clearly, cellular studies are needed to untangle these scenarios.
 
-## Implications of a replisome factory on nucleosome distribution.
+### Implications of a replisome factory on nucleosome distribution.
 
 During replication the epigenetic marks on nucleosomes are distributed nearly equally to the two daughter duplexes (Gan et al., 2018; Petryk et al., 2018; Yu et al., 2018). The general view is that the H3H4 tetramer, which carries the bulk of epigenetic marks, binds DNA tightly and is transferred to nascent DNA independent of H2AH2B dimers that are easily displaced and exchanged (Alabert et al., 2017). Two binding sites for H3H4 exist in the replisome: The N-terminal region of Mcm2 binds H3H4 (Huang et al., 2015; Richet et al., 2015), and the Dpb3/4 subunits of Pol ε bind H3H4 at the C-face of CMG (Bellelli et al., 2018; Sun et al., 2015). Recent studies have found specific roles of these H3H4 sites in transfer of parental histones to daughter DNAs during replication (Gan et al., 2018; He et al., 2017; Petryk et al., 2018; Yu et al., 2018; Evrin et al., 2018). Moreover, the N-terminal region of Pol1 (i.e. the DNA Pol of Pol α-primase) binds H2A/H2B, and mutations in either Pol1, Mcm2 or Ctf4 have a negative effect on transfer of parental histone marks to the lagging strand duplex (Evrin et al., 2018; Gan et al., 2018). Hence Mcm2–Ctf4–Pol α forms an ‘axis’ for nucleosome transfer from parental DNA to the lagging daughter DNA (Gan et al., 2018). If only one Pol α-primase exists for two replication forks as in our 2CMG–Ctf4 factory model, during the time for transfer of a parental H3H4 to the lagging strand of one fork, the other fork in the opposite CMG would have progressed the same distance for transfer of another parental H3H4 to the leading strand. In this view, the architecture of our factory model facilitates the observed equal transfer of histones to both leading and lagging strand products (Gan et al., 2018; Petryk et al., 2018; Yu et al., 2018).
 
@@ -121,27 +467,27 @@ Interestingly, Okazaki fragments are sized relative to the nucleosome repeat (Sm
 
 ## Materials and methods
 
-## Reagents
+### Reagents
 
 Radioactive nucleotides were from Perkin Elmer and unlabeled nucleotides were from GE Health-care. Protein concentrations were determined using the Bio-Rad Bradford Protein stain using BSA as a standard. Purification of S. cerevisiae Pol α-primase, Pol ε, CMG, the C-terminal half of Ctf4 (residues 471–927), and full length Ctf4 were purified according to previously published procedures (Georgescu et al., 2014; Langston et al., 2014). The C-terminal half of Ctf4 is necessary and sufficient for Ctf4 binding to CMG and Pol α-primase, as shown previously (Simon et al., 2014). Oligonucleotides were from IDT (Integrated DNA Technologies). ATPγS used for experiments in this report were purchased from Roche (catalog 11162306001). In experiments testing ATPγS from other companies, ATPγS was purchased from Sigma-Aldrich (catalog A1388) and Tocris Bioscience (catalog 4080).
 
-## EM sample preparation of CMG–Ctf43 complexes
+### EM sample preparation of CMG–Ctf43 complexes
 
 CMG (3.36 nmol) was mixed with Ctf43 (1.7 nmol) in a final volume of 1.37 mL of buffer A (20 mM Tris-acetate (pH 7.6), 1 mM DTT, 2 mM magnesium acetate) plus 200 mM KCl. The mixture was incubated on ice for 30 min, then injected onto a 0.25 mL MonoQ column equilibrated in buffer A + 200 mM KCl. The column was eluted with a 20-column linear gradient of buffer A + 200 mM KCl to buffer A + 600 mM KCl. Fractions of 0.25 mL were collected and protein concentration was determined using the Bio-Rad Bradford Protein stain and BSA as a standard. Fractions were analyzed in a Commasie stained 8% SDS-PAGE gel and gel lanes were scanned using a Typhoon 9400 laser imager (GE Healthcare). Scanned gels were analyzed using ImageQuant TL v2005 software and the two peak fractions were pooled and concentrated to 8.5 mg/ml in 79 μL. The sample was mixed with a 4-fold excess of a DNA 20-mer (5’-Cy3-dTdTbiotindT18) oligonucleotide, 0.2 mM AMPPNP (final) which binds CMG. The sample was incubated 2 hr on ice then applied onto a Superose 6 Increase 3.2/300 gel filtration column (GE Healthcare) equilibrated in 20 mM Tris-acetate (pH 7.5), 1 mM DTT, 2 mM magnesium acetate, 60 mM potassium glutamate, 0.1 mM AMPPNP. The Cy3 DNA was added to visualize elution of CMG–Ctf4 at 565 nm, along with monitoring elution at 280 nM. Fractions were analyzed by SDS-PAGE and scanned on a Typhoon 9400 laser imager (GE Healthcare) to estimate the stoichiometry of CMG–to-Ctf4 in each fraction. The samples used for analysis were fraction 37 (0.35 mg/mL), fraction 35 (0.48 mg/mL), fraction 33 (0.42 mg/mL) and fraction 31 (0.35 mg/mL).
 
-## Cryo-EM of Ctf43, Ctf43–Pol α-primase and Ctf43–CMG complexes
+### Cryo-EM of Ctf43, Ctf43–Pol α-primase and Ctf43–CMG complexes
 
 To prepare cryo-EM grids, individual fractions of CMG–Ctf43 from the gel filtration column were dialyzed against buffer A and concentrated to 0.35–0.48 mg/mL. Then 3 μL aliquots were applied to glow-discharged C-flat 1.2/1.3 holey carbon grids, incubated for 10 s at 6°C and 95% humidity, blotted for 3 s then plunged into liquid ethane using an FEI Vitrobot IV. In C-flat R1.2/1.3 holey carbon film grids, the CMG–Ctf43 particles distributed well for each of the samples. The Ctf43–CMG grids were loaded into an FEI Titan Krios electron microscope operated at a high tension of 300 kV and images were collected semi-automatically with EPU under low-dose mode at a nominal magnification of × 130,000 and a pixel size of 1.074 Å per pixel. A Gatan K2 summit direct electron detector was used under super-resolution mode for image recording with an under-focus ranging from 1.5 to 2.5 μm. A Bioquantum energy filter installed in front of the K2 detector was operated in the zero-energy-loss mode with an energy slit width of 20 eV. The dose rate was 10 electrons per Å2 per second and total exposure time was 6 s. The total dose was divided into a 30-frame movie so each frame was exposed for 0.2 s. Approximately 5900 raw movie micrographs were collected.
 
 Analysis of Ctf43 used a sample of Ctf43 at 1.8 mg/ml in 20 mM Tris-acetate (pH 7.5), 1 mM DTT, 2 mM magnesium acetate, 60 mM potassium glutamate. For the Pol α-primase–Ctf4 EM analysis we were unable to isolate a complex between these weak interacting components. Hence, we directly mixed the proteins for EM analysis. The samples contained Ctf43 and Polα-primase complex either at 1:1 molar ratio at a final concentration of 2.25 mg/ml, or at 1:3 molar ratio at a final concentration of 1.75 mg/ml, in 20 mM Tris-Acetate pH 7.5, 0.5 mM EDTA, 100 mM KGlutamate and incubated 20 min on ice. The samples were then applied to grids and plunge fronzen as described above. We collected ~ 1000 raw movie micrographs for each sample on an FEI Talos Arctica operated at 200 kV with a Falcon III direct electron detector. Data was collected semi-automatically with EPU at a nominal magnification of × 120,000 and pixel size of 1.21 Å per pixel. The under-focus value ranged from 1.5 to 2.5 μm. The dose rate was 20 e per Å2 per second and total exposure time was 3 s. The total dose was divided into a 39-frame movie so each frame was exposed for 0.07 s.
 
-## Negative-staining EM of Pol α-primase
+### Negative-staining EM of Pol α-primase
 
 A sample of 2 µL of yeast Pol α-primase at 0.1 mg/mL in 20 mM Tris-Acetate pH 7.5, 0.5 mM EDTA, 100 mM KGlutamate was applied to a glow-discharged carbon-coated copper grid for 30 s. Excess sample was blotted away using Whatman filter paper (Grade 1) with subsequent application of 2 µL of a 2% (w/v) aqueous solution of uranyl acetate. The staining solution was left on the grid for 30 s before the excess was blotted away. The staining solution was applied for a second time, blotted away and left to dry for 15 min before EM. A total of 50 micrographs were collected on a 2 k by 2 k CCD camera in FEI Tecnai G2 Spirit BioTWIN TEM operated at 120 kV at a magnification of × 30,000, corresponding to 2.14 Å per pixel at the sample level. Electron micrographs were processed using Relion 2 (Scheres, 2012). After CTF estimation and correction using Gctf (Zhang, 2016), particles in each micrograph were automatically picked using a Gaussian blob as the template at a threshold of 0.1, leading to a dataset of 24,712 raw particles. 2D classification was run for 25 iterations with the class number assigned to 100, the particle mask diameter set to 256 Å, the regularization parameter T left at the default value of 2, and the maximum number of significant coarse weights restricted to 500.
 
 For observing the CMG–Ctf43–Pol α-primase complex, a sample of 2 µL of the ternary mixture at 0.12 mg/mL was applied to a glow-discharged carbon-coated grid for 1 min, then a 2 µL drop of 2% (w/v) aqueous solution of uranyl acetate was applied to the grid for and addtional 1 min, then blotted away with a piece of filter paper, and the staining step was repeated one more time. The dried EM grid was loaded onto an 120 kV FEI Tecnai G2 Spirit EM with a 2K × 2K CCD camera. A total of 200 micrographs were collected at a magnification of × 30,000, corresponding to 2.14 Å per pixel. After CTF estimation and correction using CTFFIND4, particles were manually picked in Relion 2.1. About 9000 particles were picked for 2D classification. Several 2D averages showed a binary complex of CMG–Ctf43, and the ternary complex of CMG–Ctf43–Pol α-primase complex.
 
-## Image processing and 3D reconstruction
+### Image processing and 3D reconstruction
 
 The movie frames were first aligned and superimposed by the program Motioncorr 2.0 (Zheng et al., 2017). Contrast transfer function parameters of each aligned micrograph were calculated using the program CTFFIND4 (Rohou and Grigorieff, 2015). All the remaining steps, including particle auto selection, 2D classification, 3D classification, 3D refinement, and density map post-processing were performed using Relion-2.1 (Scheres, 2012). For the 1CMG–Ctf43 sample, templates for automatic picking were generated from 2D averages calculated from about ~ 10,000 manually picked particles in different views. Automatic particle selection was then performed for the entire data set, and 759,267 particles were picked. Selected particles were carefully inspected; ‘bad’ particles were removed, some initially missed ‘good’ particles were re-picked, and the remaining good particles were sorted by similarity to the 2D references, in which the bottom 10% of particles with the lowest z-scores were removed from the particle pool. 2D classification of all good particles was performed and particles in the classes with unrecognizable features by visual inspection were removed. A total of 564,011 particles were then divided into two groups containing either a single CMG or two or three copies of CMG for further 3D classification. For 3D reconstruction of the various Ctf43–CMG complexes, the low pass-filtered CMG-apo structure was used as the starting model, leading to the first 3D map of the Ctf43–(CMG)3 complex. We then used Chimera to mask out either one or two CMG densities from the 3D map of Ctf43–(CMG)3 to generate a starting model for 1CMG–Ctf43 and 2CMG–Ctf43 respectively. Four 3D models were derived from each group, and models that appeared similar were combined for final refinement. The models not chosen were distorted and those particles were discarded. The final three datasets that contain single CMG (Ctf43–CMG1), two CMGs (Ctf43–CMG2), and three CMGs (Ctf43–CMG3) were used for final 3D refinement, resulting in three 3D density maps at 3.9 Å, 5.8 Å and 7.0 Å resolution, respectively. The resolution was estimated by the gold-standard Fourier shell correlation, at the correlation cutoff value of 0.143. The 3D density map was sharpened by applying a negative B-factor of −146, –135 and −143 Å2, respectively. Local resolution was estimated using ResMap. In the 1CMG–Ctf43 analysis, the density of the Mcm2-7 CTD motor region was weak and noisy. A mask was used to exclude the CTD ring, and the remaining region composed of Ctf43–Cdc45−GINS−Mcm2-7 N-tier ring had an estimated resolution of 3.8 Å, based on the gold standard Fourier shell correlation curve.
 
@@ -149,26 +495,26 @@ For the Ctf43–Polα-primase dataset,~5000 particles in different views were ma
 
 For the Ctf43 dataset, we picked about 3000 particles in different views to generate the templates. Automatic particle picking was performed for the entire dataset containing abut 500 micrographs, and 113,936 particles were picked in Relion-2.1; then 2D classification was performed to produce a set of well-defined 2D averages. 3D classification and 3D reconstruction were not performed because the crystal structure of Ctf43 is available and our purpose was only to obtain the cryo-EM 2D averages.
 
-## Atomic modeling, refinement, and validation
+### Atomic modeling, refinement, and validation
 
 The modeling of Ctf43–CMG1, Ctf43–CMG2 and Ctf43–CMG3 was based on the structure of CMG (PDB ID 3JC5) and Ctf43 (PDB 4C8H). For Ctf43–CMG1, one CMG and one Ctf4 trimer were directly docked as rigid bodies into the EM map using Chimera (Pettersen et al., 2004). The initial modeling was followed by further manual adjustments using COOT (Emsley et al., 2010), guided by residues with bulky side chains like Arg, Phe, Tyr and Trp. The improved model was then refined in real space against the EM densities using the phenix.real_space_refine module in PHENIX (Adams et al., 2010). For Ctf43–CMG2 and Ctf43–CMG3, Chimera was used to rigid-body dock two or three copies of CMG and one Ctf43 into the corresponding EM map. Due to the low resolution of the latter two maps, the atomic models were not subject to further refinement. Finally, the quality of the refined atomic model of Ctf43–CMG was examined using MolProbity (Chen et al., 2010). For modeling of the Ctf43–Polα-primase 3D map, one Ctf4 trimer (PDB 4C8H) and one Polα-primase catalytic NTD (PDB ID 4FYD) were docked as two separate rigid bodies into the 3D map in Chimera. Due to the low resolution of 3D map, the model was neither manually adjusted nor subjected to refinement. Structural figures were prepared in Chimera and Pymol (https://www.pymol.org).
 
-## Glycerol gradient sedimentation
+### Glycerol gradient sedimentation
 
 To examine complex formation, 0.12 nmol of CMG was mixed with 0.12 nmol Ctf43, 0.12 nmol of Pol ε and 0.12 nmol Pol α-primase in 150 μl of 20 mM Tris-acetate (pH 7.6), 1 mM DTT, 2 mM Mg-OAc, 100 mM NaCl (final) for 30 min at 16°C, and the mixture was layered on top of an 11.2 mL 15–35% (vol/vol) glycerol gradient in 20 mM Tris-acetate (pH 7.6), 1 mM DTT, 2 mM magnesium acetate, 50 mM NaCl and spun at 4°C for 16 hr in a Sorvall 90SE ultracentrifuge using a T-865 rotor. Five drop fractions were collected from the bottom of the centrifuge tubes, and 20 μL samples were analyzed by SDS-PAGE stained with Coomassie Blue. Similar gradient analyses were performed for sub-mixtures of the proteins. A parallel gradient was also performed using protein standards (BioRad 151–1901) in the same buffer. Gels were scanned and quantitated using Image J software and relative moles of protein in each band were calculated, taking into account their native mw. Only subunits the size of Cdc45 or larger were analyzed, as smaller subunit bands were too light for analysis. The full-length Ctf43 was used to enhance its staining capacity, as the small C-half of Ctf43 was not well distinguished above background. The full-length Ctf43 overlapped with Mcm4 and required taking the overlap into account (see legend to Figure 7—figure supplement 1).
 
-## Pull-down assays
+### Pull-down assays
 
 Pull-down assays were performed by mixing 20 pmol of N-terminal labeled streptag-Ctf4 trimer with 60 pmol Pol α-primase (when present) and 60 pmol CMG (when present) at 25°C for 10 min. Then the volume of the protein solution was adjusted to 50 μl with binding buffer (20 mM Tris-Acetate, pH 7.5, 1 mM DTT, 5% glycerol, 2 mM magnesium acetate, 50 mM KGlutamate and 50 mM KCl) before being mixed with 50 μL of a 50% suspension of StrepTactin magnetic beads (Qiagen). The protein-bead mixture was incubated in a Thermomixer at 1250 rpm, 4°C for 1 hr. The beads were then collected with a magnetic separator and the supernatant containing unbound proteins was removed. The beads were washed twice with 100 μL binding buffer and bound proteins were eluted by incubating the beads in 50 μL of the same buffer supplemented with 5 mM biotin at 25°C for 15 min. The eluted proteins were analyzed in an 8% SDS-PAGE gel and scanned and quantitated using a Typhoon 9400 laser imager (GE Healthcare).
 
-## Helicase assays
+### Helicase assays
 
 DNA oligos used to form the forked substrate having a 60 bp duplex stem were ‘leading helicase oligo’: 5'-GGCTCGTTTTACAACGTCGTGCTGAGGTGATATCTGCTGAGGCAATGGGAATTCGCCAACCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*T*T*T 3', and lagging helicase oligo: 5'-GGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGTTGGCGAATTCCCATTGCCTCAGCAGATATCACCTCAGCACGACGTTGTAAAAC*G*A*G-3'. These oligos were identical (Oligo-2) or slightly modified (Oligo-1) from those used in Kose et al. (2019). Asterisks denote thiodiester linkages. The leading helicase oligo was 32P-5’ end-labeled and annealed to its respective lagging helicase oligo to form the forked DNA substrate. The forked DNA was isolated from a native PAGE. In the experiments of Figure 7b, 2CMG–Ctf43 complexes were formed by preincubating 276 nM CMG with 138 nM full length Ctf43 on ice for 15 min. and then 25°C for 10 min. CMG or CMG–Ctf4 complexes were added to reactions to give a final concentration of 24 nM CMG, 0.5 nM forked DNA substrate, 5 mM ATP and, when present, 12 nM Ctf4 (as trimer) in a final buffer of 20 mM Tris-Acetate pH 7.6, 5 mM DTT, 0.1 mM EDTA, 10 mM MgSO4, 30 mM KCl. Reactions were preincubated with 0.1 mM ATPγS (Roche) for 120 min at 30°C with DNA and either CMG or CMG–Ctf4 before initiating unwinding upon adding 5 mM ATP. Reactions were quenched at the times indicated with 20 mM EDTA and 0.1% SDS (final concentrations), and analyzed on a 10% native PAGE in TBE buffer. The assays of Figure 7—figure supplement 3 (i.e. that tested preincubation time with 0.1 mM ATPγS) were performed as in Figure 7b, except reactions were preincubated for different times with ATPγS (Roche) at 30°C before initiating unwinding with 5 mM ATP. Gels were exposed to a phosphor screen then scanned and quantitated on a Typhoon 9400 laser imager (GE Healthcare).
 
-## Replication assays
+### Replication assays
 
 Leading strand replication experiments used a forked DNA substrate having a 60 bp duplex stem formed from the following oligonucleotides: Leading strand template 180mer: 5’-AGGTGTAGATTAATGTGGTTAGAATAGGGATGTGGTAGGAAGTGAGAATTGGAGAGTGTGTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTAAAGGTGAGGGTTGGGAAGTGGAAGGATGGGCTCGAGAGGTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*T*T*T-3’, and lagging strand template 100mer: 5’-GGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCACACACTCTCCAATTCTCACTTCCTACCACATCCCTATTCTAACCACATTAATCTACA*C*C*T-3’. Asterisks are thiodiester linkages. The fork was primed for leading strand DNA replication with a DNA 37mer (5’-32P-CCTCTCGAGCCCATCCTTCCACTTCCCAACCCTCACC-3’). The CMG–﻿Ctf43 complexes were reconstituted by incubating 276 nM CMG with 138 nM Ctf43 on ice for 15 min. and then 25°C for 10 min. For the reactions of Figure 7c, reactions contained 20 nM of CMG, 10 nM Ctf43 (where indicated) 0.5 nM 32P-primed forked substrate (final concentrations) in a buffer consisting of 25 mM Tris-Acetate pH 7.5, 5% glycerol, 2 mM DTT, 10 mM magnesium sulfate, 1 μM dTTP and preincubated with 100 μM ATPγS for 115 min, then 20 nM Pol α-primase was added and 5 min later DNA synthesis was initiated upon adding 5 mM ATP and 100 μM each dNTP. Reactions were stopped at the indicated times by removing aliquots and adding an equal volume of 1% SDS, 40 mM EDTA, 90% formamide. For the preincubation analysis of Figure 7—figure supplement 4, the same procedure was followed as Figure 7c, except the preinubation time with Pol α-primase varied as indicated in the figure. Reaction products were analyzed on 10% PAGE gels containing 6M urea in TBE buffer, then exposed to a phosphorimager screen and imaged with a Typhoon FLA 9500 (GE Healthcare). Gel bands were quantitated with ImageQuant software.
 
-## Accession codes
+### Accession codes
 
 The 3D cryo-EM maps of Ctf43–CMG1, Ctf43–CMG2, and Ctf43–CMG3 at 3.8 Å, 5.8 Å and 7.0 Å resolution have been deposited in the Electron Microscopy Data Bank under accession codes EMD-20471, EMD-20472 and EMD-20473, respectively. The corresponding atomic models have been deposited in the Protein Data Bank under accession codes 6PTJ, 6PTN, and 6PTO, respectively.

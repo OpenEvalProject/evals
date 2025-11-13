@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.38438.001 The principal structural component of a retrovirus particle is the Gag protein. Retroviral genomic RNAs contain a ‘packaging signal’ (‘Ψ') and are packaged in virus particles with very high selectivity. However, if no genomic RNA is present, Gag assembles into particles containing cellular mRNA molecules. The mechanism by which genomic RNA is normally selected during virus assembly is not understood. We previously reported ( Comas-Garcia et al., 2017 ) that at physiological ionic strength, recombinant HIV-1 Gag binds with similar affinities to RNAs with or without Ψ, and proposed that genomic RNA is selectively packaged because binding to Ψ initiates particle assembly more efficiently than other RNAs. We now present data directly supporting this hypothesis. We also show that one or more short stretches of unpaired G residues are important elements of Ψ; Ψ may not be localized to a single structural element, but is probably distributed over >100 bases.
+The principal structural component of a retrovirus particle is the Gag protein. Retroviral genomic RNAs contain a ‘packaging signal’ (‘Ψ') and are packaged in virus particles with very high selectivity. However, if no genomic RNA is present, Gag assembles into particles containing cellular mRNA molecules. The mechanism by which genomic RNA is normally selected during virus assembly is not understood. We previously reported (Comas-Garcia et al., 2017) that at physiological ionic strength, recombinant HIV-1 Gag binds with similar affinities to RNAs with or without Ψ, and proposed that genomic RNA is selectively packaged because binding to Ψ initiates particle assembly more efficiently than other RNAs. We now present data directly supporting this hypothesis. We also show that one or more short stretches of unpaired G residues are important elements of Ψ; Ψ may not be localized to a single structural element, but is probably distributed over >100 bases.
 
 ## Introduction
 
@@ -45,6 +45,81 @@ As discussed above, we have proposed that genomic RNA is selectively packaged be
 
 We first compared the binding to RNA of Δ16–99 Gag with that of Gag. Our previous measurements monitored RNA-binding using the ability of Gag to quench the Cy5 fluorophore on the RNA (Comas-Garcia et al., 2017). However, we found that Δ16–99 Gag does not quench the fluorophore; evidently, the quenching involves the MA domain. Therefore, we used microscale thermophoresis (MST) for monitoring binding by this protein. As shown in Figure 2A, MST and quenching measurements give very similar results for the binding of Δp6 Gag to the Ψ RNA that starts at nt 200; at 0.15 M NaCl the KDs for MST and FCS were 14 and 17 nM, respectively, while at 0.45 M NaCl they were 256 and 302 nM. In all cases the Hill coefficient was greater than 1.0. These data show that MST is able to recapitulate our original FCS results (Comas-Garcia et al., 2017). MST data are presented in more detail in Figure 2—figure supplement 1 and Table 1. Interestingly, Δ16–99 Gag bound relatively weakly to all 3 RNAs at 0.5M NaCl (see Table 1). The implications of this result are now under further investigation.
 
+**Table 1.**
+ Results of MST measurements of binding of Δ16-99 Gag to RNAs at 0.15 and 0.5M NaCl.The Table shows means and standard deviations of replicate measurements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RNA (0.15M NaCl)</th>
+      <th>Kd (nM)</th>
+      <th>Error</th>
+      <th>nH</th>
+      <th>Error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ψ200</td>
+      <td>645</td>
+      <td>16</td>
+      <td>3.2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>MBSM 2nd gen</td>
+      <td>737</td>
+      <td>17</td>
+      <td>3.5</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Rev Comp</td>
+      <td>1042</td>
+      <td>42</td>
+      <td>2.5</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>RNA (0.5M NaCl)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ψ200</td>
+      <td>945</td>
+      <td>267</td>
+      <td>1.4</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>MBSM 2nd gen</td>
+      <td>2200</td>
+      <td>151</td>
+      <td>1.1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Rev Comp</td>
+      <td>2479</td>
+      <td>109</td>
+      <td>1.3</td>
+      <td>0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38438/elife-38438-fig2-v2.jpg)
+
+**Figure 2.:** (A) Comparison of FCS (i.e. Cy5 quenching in FCS apparatus) and MST methods for measurement of binding of Δp6 Gag to dimeric Ψ 200 RNA. The Cy5-tagged RNA was dimerized as described (Comas-Garcia et al., 2017) and diluted into binding buffer B to a concentration of 7 nM. This buffer was composed of 50 mM phosphate, pH 7.0, 0.05% Tween 20, 0.1 mM PMSF, and 1 mM β-mercaptoethanol, together with either 0.15 M or 0.45 M NaCl. The sample was then divided and, after 16 hr at 4°C, used for binding measurements by FCS or MST. Both methods give very similar KDs, although the MST curves suggest somewhat higher cooperativity in the binding than FCS. (B) Binding of Δ16–99 Gag protein to the three RNAs used for the Virus-like-particle (VLP) assembly experiments. Ψ 150 RNA, MBSM second generation RNA, and Reverse Complement RNA were all treated as described (Comas-Garcia et al., 2017) for Ψ dimerization. They were then diluted into Assembly Buffer (20 mM Tris pH 7.5, 0.15M NaCl, 5 mM MgCl2, 1 µM ZnCl2, 0.1% Tween 20, 0.1 mM PMSF, and 1 mM DTT). Binding of Δ16–99 Gag to the RNAs was then measured by MST. The FCS data in Figure 2A was treated as in Figure 1B–D. All MST data results are the means of three independent experiments. Each data-point in each MST experiment is the mean of triplicate measurements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38438/elife-38438-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) and (B) Time traces of change in fluorescence as fluorescent ψ200 RNA diffuses in response to initiation of temperature jump at time 0 in different amounts of protein. (A), 0.15M NaCl; (B), 0.5M NaCl. (C), Superimposed cross-sectional fluorescence profiles in capillaries containing different amounts of protein in addition to the fluorescent RNA. The symmetrical curves indicate that no significant amount of fluorescent RNA is binding to the capillary walls. (D) Cross-sectional fluorescence profiles of the 12 capillaries in 0.15M NaCl, demonstrating that they contain nearly identical RNA concentrations.
+
 We wished to quantitatively compare the different RNAs with respect to their ability to support assembly. It was important that all of the RNA be bound by the Δ16–99 Gag protein in these experiments, so that any differences observed represent differences in support of assembly, not differences in the extent of binding. Figure 2B shows the results of MST binding assays in a buffer closely resembling that used in assembly experiments, yielding KDs of 226, 382, and 568 nM for Ψ (beginning at nt 200), MBSM second Generation (Gen), and Reverse Complement (Rev Comp) RNAs, respectively. Specifically, it is evident that nearly all of each RNA is bound at 1–2 µM Δ16–99 Gag, significantly below the levels used in the assembly experiments (see Figure 3 below).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38438/elife-38438-fig3-v2.jpg)
@@ -55,13 +130,13 @@ Finally, we compared different RNAs with respect to their ability to support ass
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/38438/elife-38438-fig4-v2.jpg)
 
-**Figure 4.:** A-C).Insets: well-formed VLPs at higher magnification.
+**Figure 4.:** Insets: well-formed VLPs at higher magnification.
 
 We also determined the distribution of the Δ16–99 Gag protein in these gradients, by performing immunoblotting on dot blots of aliquots of the gradient fractions (Figure 5). We found that in all cases, the vast majority of the protein remained near the top of the gradient (fractions 2–4), and the presence of 61 nM RNA had little or no significant effect upon the distribution of the protein. The fact that the overall protein profile was not significantly affected by the presence of the RNA is not surprising, as the protein was in 50-fold molar excess over the RNA in these gradients.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38438/elife-38438-fig5-v2.jpg)
 
-**Figure 5.:** Figure 3A–C.Aliquots of the gradient fractions were spotted on membranes and treated as in immunoblotting. A parallel dilution series showed that the measurements were within the linear range of the assay. The values are the means of two independent experiments.
+**Figure 5.:** Aliquots of the gradient fractions were spotted on membranes and treated as in immunoblotting. A parallel dilution series showed that the measurements were within the linear range of the assay. The values are the means of two independent experiments.
 
 In order to quantitatively assess the level of VLP assembly in each of the reactions, we summed the amount of RNA between fractions 10 and 18. The results of this analysis are shown in Figure 6. These data were fitted, using the non-linear least squares Levenberg-Marquardt method, using the equation
 
@@ -69,13 +144,143 @@ In order to quantitatively assess the level of VLP assembly in each of the react
 
 **Figure 6.:** RNA in fractions 10–18 in Figure 3(A–C is summed and plotted vs. the concentration of Δ16–99 Gag protein in the assembly reaction. The points are fitted with a cooperative model.
 
-Yx=11+KXnwhere x is the protein concentration, Y(x) is the fraction of RNA in the bottom half of the tube, and n is a fitting parameter. This equation is analogous to the Hill cooperative model for macromolecular association. Solving for these values yielded the results shown in Table 2.
+$$
+Yx=\frac{1}{1+\frac{K}{X}^{n}}
+$$
+
+where x is the protein concentration, Y(x) is the fraction of RNA in the bottom half of the tube, and n is a fitting parameter. This equation is analogous to the Hill cooperative model for macromolecular association. Solving for these values yielded the results shown in Table 2.
+
+**Table 2.**
+ K and n values and their errors from data shown in Figure 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>K (μM)</th>
+      <th>Error (μM)</th>
+      <th>N</th>
+      <th>Error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HIV Ψ 200</td>
+      <td>3.74</td>
+      <td>±0.56</td>
+      <td>1.2</td>
+      <td>±0.2</td>
+    </tr>
+    <tr>
+      <td>MBSM 2nd Gen</td>
+      <td>9.34</td>
+      <td>±0.58</td>
+      <td>1.0</td>
+      <td>±0.1</td>
+    </tr>
+    <tr>
+      <td>Rev Comp</td>
+      <td>9.94</td>
+      <td>±0.42</td>
+      <td>1.3</td>
+      <td>±0.1</td>
+    </tr>
+  </tbody>
+</table>
 
 The results reveal a striking difference between Ψ RNA and either MBSM second Gen or Rev Comp RNA: particularly at the lower protein levels, Ψ supports assembly far more efficiently than the other RNAs. For example, at 11.25 μM Δ16–99 Gag, approximately ⅘ of the Ψ RNA has been shifted into the bottom half of the gradient, while only about half of the MBSM second Gen or Rev Comp RNA has undergone a similar shift.
 
 These results are in complete concordance with our hypothesis that binding to a packaging signal nucleates assembly with particularly high efficiency (Comas-Garcia et al., 2016; Nikolaitchik et al., 2013). Simulations by Perlmutter and Hagan (Perlmutter and Hagan, 2015) also demonstrate the quantitative plausibility of this hypothesis. The fact that when Gag is limiting, there is more assembly on Ψ than on other RNAs (shown here in a defined system in vitro), has also been demonstrated in vivo (Dilley et al., 2017); our finding that the same result is obtained in a defined in vitro system shows that this is a direct reflection of the interactions between Gag and the RNAs, and that other cellular components do not drive this phenomenon to any significant degree. The second important finding presented here is that the unpaired guanines within the first few hundred bases of HIV-1 RNA make a major contribution to the specific interactions between Gag and Ψ, as manifested in direct binding assays (Figure 1). In fact, the contribution of these clusters of unpaired bases is far more important than that of either SL1 or SL3. Somewhat similar data have been reported by Webb et al. (Webb et al., 2013). Furthermore, these unpaired bases are critical for efficient VLP assembly, under conditions in which the protein binds equally well to all the RNAs tested (Figures 3,6). Altogether, these results support our hypothesis that Ψ promotes selective packaging of the HIV-1 genomic RNA by virtue of its distinctive efficiency in promoting particle assembly. The data suggest that binding to Ψ reduces the activation energy of the assembly process. We believe that this phenomenon explains the selective packaging of gRNA, in preference to other, cellular RNAs, into virions in infected cells. Experiments to identify a hypothetical nucleating complex are now under way.
 
 ## Materials and methods
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Δp6 Gag expression plasmid</td>
+      <td>PMID 9971810</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Δ16–99 Gag expression plasmid</td>
+      <td>PMID 10619849</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ψ150 RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>nt 150–550</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ψ200 RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>nt 200–600</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ΔSL1 RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>nt 150–180 joined to nt 280–650</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ΔSL3 RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>nt 150–305 joined to nt 405–650</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MBSM first generation RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>G224, G226, G240, G241, C243, G270, G272, G273, C274, G275, G289, G290, G292, G310, C312, G318, G320, G328, G239 of Ψ200 replaced with A's</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MBSM second generation RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>G442, G443, G444, C445, G448, C449, G451, G452, G453, G455, C456, G459 of MBSM 1 st generation replaced with A's</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GC loop mutant RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>G442, G443, G444, C445, G448, C449, G451, G452, G453, G455, C456, G459 of Ψ200 replaced with A's</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Reverse Complement RNA</td>
+      <td>GenBank: AF324493.2</td>
+      <td></td>
+      <td>RNA is complementary to Ψ150</td>
+    </tr>
+  </tbody>
+</table>
 
 Except where otherwise specified, all procedures were as previously described (Comas-Garcia et al., 2017). RNAs were produced by in vitro transcription of linearized plasmids containing the T7 promoter. All transcripts were 401 nucleotides long unless indicated otherwise and were ultimately derived from the pNL4-3 molecular clone of HIV-1. Numbering begins with the first nucleotide in the R region, equivalent to nt 454 in the DNA sequence. Specifically, HIV-1 Ψ 150 represents nucleotides 150–550; HIV-1 Ψ 200 contains nt 200–600; ΔSL1 contains nt 150–180 and 280–650; ΔSL3 contains nt 150–305 and 405–650; 1st-generation MBSM was derived from HIV-1 Ψ 200 by replacement of G224, G226, G240, C243, G241, G270, G272, G273, C274, G275, G289, G290, G292, G310, C312, G318, G320, G328, and G329 with adenines (Wilkinson et al., 2008). The RNA transcribed from this HIV Ψ 200-derived plasmid would still contain a highly GC-rich sequence which would quite possibly be unpaired. To eliminate this potential source of unpaired G residues, we also generated the MBSM second-generation, in which the first-generation MBSM was modified by replacing G442, G443, G444, C445, G448, C449, G451, G452, G453, G455, C456, and G459 with adenines. This latter series of changes was also produced in HIV-1 Ψ 200, yielding the ‘HIV-1 GC loop’ plasmid. In some experiments, the negative strand complementary to the HIV-1 Ψ 150 RNA (‘Reverse Complement’) was produced by transcribing a plasmid in which the T7 promoter was at the 3’ end, rather than the 5’ end, of the HIV-1 ψ 200 insert. The inserts in all plasmids were completely verified by sequencing.
 

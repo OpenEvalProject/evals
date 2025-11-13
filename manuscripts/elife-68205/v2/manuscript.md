@@ -32,17 +32,173 @@ Our working hypothesis is that local astrocytes modulate GnRH and/or KNDy neuron
 
 ## Results
 
-## AAV5 bearing GFAP promoter-driven construct effectively targets GFAP-expressing cells
+### AAV5 bearing GFAP promoter-driven construct effectively targets GFAP-expressing cells
 
 To examine the response of the reproductive neuroendocrine system to activation of Gq signaling in GFAP-expressing cells, we injected AAV5 bearing GFAP promoter-driven constructs expressing either the mCherry reporter or Gq- or Gi-coupled DREADDs and mCherry. Table 1 shows the animal models and viruses used in this work and how they are abbreviated in the text; Table 2 shows the primary antibodies. GFAP is expressed in glial cells throughout the body, including, for example, the pancreas and pituitary (Regoli et al., 2000; Redecker and Morgenroth, 1989). We thus used stereotaxic injection to limit manipulations to the region of interest. Bilateral viral injections were made in adult mice into either the POA near GnRH soma (Figure 1A,C), or ARC near KNDy neurons (Figure 1B,D). Successful infection of the area of interest was confirmed by localized expression of mCherry (Figure 1A,B). About 73.3 ± 5.7% of GnRH neurons were surrounded by mCherry in the POA (n=10 mice) and about 90.2 ± 1.7% of kisspeptin neurons were surrounded by mCherry in infected arcuate nuclei (n=13 mice), regardless of virus used. Mice infected unilaterally in the ARC were considered for analysis; it is estimated that 54.7 ± 1.8% of the total population of arcuate kisspeptin neurons (from both nuclei) was surrounded by mCherry in unilateral hit animals (n=3 mice). Dual immunofluorescence for mCherry and either the astroglial cytoplasmic marker S100β (Figure 1E) or the neuronal marker NeuN (Figure 1F) was performed to characterize the infected population. S100β was used to identify astroglia as GFAP was the driving promoter in the viral constructs used. S100β and GFAP are colocalized in most (<90%) cells examined in hypothalamic tissue (Figure 1—figure supplement 1). Data for colocalization of S100β and NeuN with mCherry were similar between ARC and POA and were combined for analysis. Over 90% of mCherry infected cells colocalized with S100β regardless of virus used or region examined (Figure 1G). Of note, a few mCherry-positive cells in the ARC region showed morphological characteristics of alpha tanycytes, which are known to express GFAP (Pellegrino et al., 2018). A small percent of mCherry infected cells colocalized with NeuN and about 2% of mCherry infected cells did not colocalize with either marker. DREADD expression was thus primarily targeted to astrocytes and compatible with in vitro and in vivo approaches. Because of the small percent of neuronal colocalization, all slices for physiology studies were examined for mCherry infection of neurons based on either morphology or NeuN staining. No expression of mCherry was observed in any recorded or imaged GnRH-green fluorescent protein (GFP) or Tac2-GFP neuron, thus cells from which data were directly obtained were likely not infected. Data from mice (for LH measures) or from those brain slices with mCherry signal observed in cells with neuronal morphology (for electrophysiology) were excluded from statistical analyses. For transparency, these data are shown in different colors (magenta for unidentified neurons, cyan for Tac2-expressing neurons) when individual cell data are presented.
 
-## Gq activation in POA but not ARC GFAP-expressing cells increases LH in vivo in male mice
+![Figure 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig1-v2.jpg)
+
+**Figure 1.:** (A,B) Bilateral stereotaxic injection (left) and corresponding infection (right) of the preoptic area (POA) (A) and arcuate nucleus of the hypothalamus (ARC) (B). (C,D) Dual immunofluorescence for green fluorescent protein (GFP) (left) and mCherry (middle) in the POA (C) and ARC (D) reveals GFP-positive neurons surrounded by infected tissue (merge, right). Arrowheads in middle panels of C, D show gaps in mCherry signal where neurons are located; scale bar is the same for (C) and (D). (E) Immunofluorescence for mCherry (left), S100β (middle), and merge (right) showing colocalization of the two signals, white arrowheads identify colocalization between mCherry and S100β staining; dashed box shows area magnified in lower left. (F) Immunofluorescence for mCherry (left), NeuN (middle), and merge (right) showing colocalization of the two signals, white arrowheads identify colocalization between mCherry and NeuN staining; dashed box shows area magnified in upper right. (G) Quantification of infected cells expressing specific markers for each virus type (n=3 mice per group, 5 fields/mouse).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig1-figsupp1-v2.jpg)
+
+**Table 1.**
+ Mouse strains and viruses used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Full name</th>
+      <th>Referred to in text as</th>
+      <th>Reference</th>
+      <th>Supplier catalog #</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse</td>
+      <td>B6;CBATg(Gnrh1-EGFP)51Sumo/J</td>
+      <td>GnRH-GFP</td>
+      <td>Suter et al., 2000</td>
+      <td>JAX 033639</td>
+      <td>IMSR_JAX:033639</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Tg [Tac2-EGFP]381Gsat</td>
+      <td>Tac2-GFP</td>
+      <td>Ruka et al., 2013</td>
+      <td>MMRRC; 015495-UCD/STOCK</td>
+      <td>MMRRC_015495-UCD</td>
+    </tr>
+    <tr>
+      <td>AAV</td>
+      <td>AAV5-GFAP-hM3Dq(Gq)-mCherry</td>
+      <td>AAV-Gq</td>
+      <td>Erickson et al., 2021</td>
+      <td>Addgene; 50478-AAV5</td>
+      <td>Addgene_50478</td>
+    </tr>
+    <tr>
+      <td>AAV</td>
+      <td>AAV5-GFAP-hM4Di(Gi)-mCherry</td>
+      <td>AAV-Gi</td>
+      <td>This paper</td>
+      <td>Addgene; 50479-AAV5</td>
+      <td>Addgene_50479</td>
+    </tr>
+    <tr>
+      <td>AAV</td>
+      <td>AAV5-GFAP104-mCherry</td>
+      <td>AAV-mCherry</td>
+      <td>This paper</td>
+      <td>Addgene; 58909-AAV5</td>
+      <td>Addgene_58909</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Antibodies used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Species</th>
+      <th>Dilution/use</th>
+      <th>Reference</th>
+      <th>Supplier catalog #</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-GFAP</td>
+      <td>Rabbit</td>
+      <td>1:10,000</td>
+      <td>Buckmaster et al., 2017</td>
+      <td>Agilent DAKO z0334</td>
+      <td>RRID:AB_10013382</td>
+    </tr>
+    <tr>
+      <td>Anti-S100β</td>
+      <td>Mouse</td>
+      <td>1:500</td>
+      <td>Nishiyama et al., 2002</td>
+      <td>Sigma S2532</td>
+      <td>RRID:AB_477499</td>
+    </tr>
+    <tr>
+      <td>Anti-mCherry</td>
+      <td>Rat</td>
+      <td>1:3000</td>
+      <td>Zhang et al., 2016</td>
+      <td>Thermo Fisher Scientific M11217</td>
+      <td>RRID:AB_2536611</td>
+    </tr>
+    <tr>
+      <td>Anti-NeuN</td>
+      <td>Rabbit</td>
+      <td>1:3000</td>
+      <td>Li et al., 2016</td>
+      <td>Abcam ab177487</td>
+      <td>RRID:AB_2532109</td>
+    </tr>
+    <tr>
+      <td>Anti-GFP</td>
+      <td>Chicken</td>
+      <td>1:1000</td>
+      <td>Kerman et al., 2006</td>
+      <td>Abcam ab13970</td>
+      <td>RRID:AB_300798</td>
+    </tr>
+    <tr>
+      <td>Anti-bovine LHβ 518B7</td>
+      <td></td>
+      <td>LH assay capture</td>
+      <td>Steyn et al., 2013</td>
+      <td>Janet Roser, UC Davis</td>
+      <td>RRID:AB_2665514</td>
+    </tr>
+    <tr>
+      <td>AFP240580Rb</td>
+      <td>Rabbit</td>
+      <td>LH assay detection</td>
+      <td>Steyn et al., 2013</td>
+      <td>National Hormone and Peptide Program</td>
+      <td>RRID:AB_2665533</td>
+    </tr>
+    <tr>
+      <td>Goat anti-rabbit HRP</td>
+      <td>Goat</td>
+      <td>LH assay enzyme conjugated</td>
+      <td>Steyn et al., 2013</td>
+      <td>Dako D048701-2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Gq activation in POA but not ARC GFAP-expressing cells increases LH in vivo in male mice
 
 To examine the response of the reproductive neuroendocrine system to activation of Gq signaling in GFAP-expressing cells, serial blood samples obtained from gonad-intact males were assayed for LH. Injection of vehicle had no effect on LH release in any group (Figure 2). When AAV-mCherry control virus was targeted to either the POA or the ARC, CNO injection similarly had no effect on circulating LH levels (Figure 2A,D). When AAV-Gq was targeted to the POA, however, CNO induced an abrupt increase in LH by the next 10 min sample (Figure 2B,C; two-way, repeated-measures ANOVA AAV-mCherry vs. AAV-Gq F(1,10)=59, p<0.0001; time F(8,80)=26, p<0.0001; interaction F(8,80)=33, p<0.0001). In marked contrast, neither unilateral nor bilateral hits targeting AAV-Gq to the ARC produced a consistent LH response in the absence of overt neuronal infection (Figure 2E,F; two-way, repeated-measures ANOVA AAV-mCherry vs. AAV-Gq F(1,13)=0.1916, p=0.6688; time F(8,104)=1.597, p=0.1345; interaction F(8,104)=0.9265, p=0.4980).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig2-v2.jpg)
+
+**Figure 2.:** (A,B) LH levels in five mice bilaterally injected in the POA with adeno-associated virus (AAV)-mCherry (A) vs. 10 mice injected with AAV-Gq (B). Magenta lines in A and B show LH in mice rejected based on infection of unidentified neurons. (C) Mean ± SEM LH in mice with no observed neuronal infection *p<0.0001 Bonferroni (n=4–8 mice). (D,E) LH levels in individual mice with unilateral (dashed lines) or bilateral (solid lines) ARC hits in nine mice with AAV-mCherry (D) vs. 14 mice with AAV-Gq (E). Magenta lines in D and E show LH in mice rejected based on infection of unidentified neurons, the cyan line in D indicates a mouse with Tac2 neurons infected. (F) Mean ± SEM LH in mice with no observed neuronal infection (n=6–9 mice). Veh, vehicle.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Left panels show LH levels measured every 6 min for a duration of 210 min from a male injected in the POA with adeno-associated virus (AAV)-mCherry (top) and AAV-G (bottom). CNO was administered intraperitoneally at 90 min, gonadotropin-releasing hormone (GnRH) was administered at 180 min. Right panels show the number of pulses per 90 min detected during the baseline period (base) and after CNO administration (n=3 mice per group).
+
 We examined LH release in preliminary studies in castrated male mice (n=3/group). CNO had no effect on the mean LH levels (AAV-mCherry, control 4.5±0.7, CNO 3.8±0.5; AAV-Gi, control 4.9±0.3, CNO 4.7±0.5; two-way repeated-measures ANOVA AAV-mCherry vs. AAV-Gi F(1,4)=1.4, p=0.2971, control vs. CNO (F(1,4)=6.4, p=0.0631), interaction F(1,4)=1.4, p=0.2971) or LH pulse frequency (Figure 2—figure supplement 1). Although the p-value for CNO approaches the level accepted for significance, it should be noted that this is most likely attributable to values in the AAV-mCherry, not the AAV-Gi group. Because these preliminary results were negative for LH with the Gi-coupled DREADD, further experiments were restricted to the Gq-coupled DREADD.
 
-## Gq activation in GFAP-expressing cells of the POA increases GnRH neuron firing rate in vitro in male mice
+### Gq activation in GFAP-expressing cells of the POA increases GnRH neuron firing rate in vitro in male mice
 
 Extracellular recordings of GFP-identified GnRH neurons were made in brain slices from mice infected in the POA with either AAV-mCherry or AAV-Gq. Bath application of CNO (200 nM) had no effect on firing rate of GnRH neurons from AAV-mCherry control mice (Figure 3A,D). In contrast, CNO increased firing rate of GnRH neurons within the infected area of AAV-Gq mice as identified by mCherry signal (Figure 3B,D, two-way repeated-measures ANOVA mCherry vs. Gq-mCherry F(2,26) = 4.013, p=0.0303). Interestingly, GnRH neurons located outside of the infected region in AAV-Gq mice, easily distinguishable because they were not surrounded by mCherry signal, did not respond to CNO treatment (Figure 3C). This suggests that activation of Gq signaling in GFAP-expressing POA cells can increase the firing rate of GnRH neurons but that the propagation of that signal to GnRH neurons in uninfected areas is limited.
 
@@ -52,7 +208,137 @@ Extracellular recordings of GFP-identified GnRH neurons were made in brain slice
 
 To test if activating Gq signaling in GFAP-expressing cells alters firing rate of Tac-2 GFP neurons, the above studies were repeated after targeting injection to the ARC. In this brain region, infection of cells with neuronal morphology within experimental slices was noted. Some of these neurons expressed GFP indicating that they are Tac2-expressing neurons, which are known to activate one another (Qiu et al., 2016). While these mCherry-expressing neurons were not recorded, they could influence the response within the slice; data from slices with infected neurons were excluded from statistical analyses but are shown in the individual data plots (Figure 3E,F). Neither the type of virus injected (AAV-mCherry vs. AAV-Gq) nor the location of the cell inside or outside the hit affected the firing rate of Tac2-GFP neurons in response to bath application of 200 nM CNO (Figure 3E–H, Table 3). The firing rate of Tac2-GFP neurons tends to increase over time of recording (Phumsatitpong et al., 2020); this was observed as an increase in firing rate during the wash vs. control period.
 
-## CNO-induced increase in GnRH neuron firing rate depends at least in part on activation of PGE2 receptors in male mice
+**Table 3.**
+ Statistical parameters for effects of CNO on neuronal firing rate (Figure 3), p-values <0.05 are in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GnRH-GFP neurons</th>
+      <th>F</th>
+      <th>p</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAV-mCherry vs. AAV-Gq inside hit vs. AAV-Gq outside hit</td>
+      <td>(2,26)=4.013</td>
+      <td>0.0303</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control vs. CNO vs. wash</td>
+      <td>(2,52)=7.711</td>
+      <td>0.0012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>(4,52)=8.590</td>
+      <td>&lt;0.0001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bonferroni</td>
+      <td>Con vs. CNO</td>
+      <td>Con vs. wash</td>
+      <td>CNO vs. wash</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-mCherry</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-Gq in hit</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>0.8009</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-Gq outside hit</td>
+      <td>&gt;0.9999</td>
+      <td>0&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tac2-GFP neurons</td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AAV-mCherry vs. AAV-Gq inside hit vs. AAV-Gq outside hit</td>
+      <td>(2,21)=0,2496</td>
+      <td>0.7814</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control vs. CNO vs. wash</td>
+      <td>(2,42)=6.751</td>
+      <td>0.0029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>(4,42)=1.641</td>
+      <td>0.1819</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bonferroni</td>
+      <td>Con vs. CNO</td>
+      <td>Con vs. wash</td>
+      <td>CNO vs. wash</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-mCherry</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-Gq hit</td>
+      <td>0.7680</td>
+      <td>0.0033</td>
+      <td>0.0707</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-Gq miss</td>
+      <td>0.1342</td>
+      <td>0.0626</td>
+      <td>&gt;0.9999</td>
+    </tr>
+  </tbody>
+</table>
+
+### CNO-induced increase in GnRH neuron firing rate depends at least in part on activation of PGE2 receptors in male mice
 
 The putative gliotransmitter PGE2 is primarily produced by astrocytes in the hypothalamus and can increase GnRH neuron firing rate (Ma et al., 1997; Clasadonte et al., 2011b) by acting on EP1 and EP2 receptors expressed by these neurons (Rage et al., 1997; Jasoni et al., 2005). We hypothesized that the CNO-induced increase in firing in AAV5-Gq mice is PGE2-dependent. We first examined the effects of the stable PGE2 analogue dimethyl-PGE2 (dmPGE2) on firing rate of GnRH and Tac2 neurons. In GnRH-GFP neurons, pretreatment with either DMSO vehicle (0.3%) or a mix of EP1- and EP2-specific antagonists (100 μM SC19220 and 20 μM PF04418948, respectively) had no effect on the firing rate (Figure 4A–C). Consistent with previous studies using PGE2 (Clasadonte et al., 2011b), dmPGE2 increased GnRH neuron firing rate in cells pretreated with vehicle for the antagonists (Figure 4A,C, n=9, p<0.0001 two-way repeated-measures ANOVA/Bonferroni, Table 4). Pretreatment with EP1/EP2 receptor antagonists blocked the effect of dmPGE2 on GnRH neuron firing rate (Figure 4B,C, n=10, Table 5). In contrast to GnRH-GFP neurons, neither pretreatment with methylacetate vehicle nor 200 nM dmPGE2 had an effect on the firing rate of Tac2-GFP neurons (Figure 4D–F, n=9 cells, Friedman test F=5.07, p=0.1671).
 
@@ -60,11 +346,146 @@ The putative gliotransmitter PGE2 is primarily produced by astrocytes in the hyp
 
 **Figure 4.:** (A,B) Representative examples of GnRH neuron firing rate response to dmPGE2 following vehicle pretreatment (A) or EP1/EP2 receptor antagonists (B). (C) Left, mean firing of individual neurons in each period; right, group mean ± SEM, *p<0.05, **p<0.0001, two-way repeated-measure ANOVA/Bonferroni (vehicle n=9 from five mice, EP1/EP2 antag n=10 from five mice). (D) Representative example of Tac2-GFP neuron response to dmPGE2. Note Y-axis is zoomed in compared to A-C. (E) Left, mean firing of individual neurons in each period; right, group mean ± SEM (n=9). (F,G) Representative examples of GnRH neurons from mice injected with AAV-Gq in the POA in which pretreatment with EP1/EP2 receptor antagonists blocked (F) or reduced response (G) to CNO. (H) Left, mean firing of individual neurons in each period, the single magenta line shows a cell in a slice with AAV-Dq infected neurons (n=12 from seven mice), which was omitted from the group mean ± SEM on the right (n=11 from seven mice).
 
+**Table 4.**
+ Statistical parameters for effects of dimethyl-PGE2 (dmPGE2), EP1 and EP2 receptor blockers and CNO on gonadotropin-releasing hormone (GnRH)-green fluorescent protein (GFP) neuron firing rate (Figure 4), p-values <0.05 are in bold font.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GnRH-GFP neurons</th>
+      <th>F</th>
+      <th>p</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vehicle vs. EP1/EP2 antagonist pretreatment</td>
+      <td>F(1,17)</td>
+      <td>0.0229</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Time (baseline vs. pretreatment vs. dmPGE2 vs wash)</td>
+      <td>F(3,51)</td>
+      <td>&lt;0.0001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>(3,51)=11</td>
+      <td>&lt;0.0001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bonferroni</td>
+      <td>Baseline vs. pretreatment</td>
+      <td>Baseline vs. dmPGE2</td>
+      <td>Baseline vs. wash</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vehicle</td>
+      <td>&gt;0.9999</td>
+      <td>&lt;0.0001</td>
+      <td>0.0407</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EP1/EP2 antagonists</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Statistical parameters for effects of CNO on gonadotropin-releasing hormone (GnRH)-green fluorescent protein (GFP) neuron firing rate in diestrous females (Figure 5), p-values <0.05 are in bold font.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GnRH-GFP neurons</th>
+      <th>F</th>
+      <th>p</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAV-mCherry vs. AAV-Gq vs. AAV-Gq in neurons</td>
+      <td>(2,23)=45.50</td>
+      <td>&lt;0.0001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control vs. CNO vs. wash</td>
+      <td>(2,46)=45.50</td>
+      <td>&lt;0.0001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>(4,46)=30.11</td>
+      <td>&lt;0.0001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bonferroni</td>
+      <td>Con vs. CNO</td>
+      <td>Con vs. wash</td>
+      <td>CNO vs. wash</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-mCherry</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-Gq</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-Gq with infected neurons</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>0.0023</td>
+    </tr>
+  </tbody>
+</table>
+
 To test if the CNO-induced increase in firing rate of GnRH neurons in brain slices from mice injected with AAV5-Gq in the POA was dependent upon PGE2 signaling, slices were pretreated with the EP1/2 antagonist mix before exposure to CNO in the continued presence of the antagonists. Pretreatment with antagonists blunted the CNO-induced increase in GnRH neuron firing (Figure 4F–H, n=11 cells, p=0.4327, Friedman statistic 2.74, Friedman test). This suggests that activating Gq signaling in GFAP-expressing cells stimulates GnRH neurons at least in part via a PGE2-dependent mechanism.
 
-## Activating Gq did not affect reproductive neuroendocrine parameters in vivo or in vitro in females but there are caveats
+### Activating Gq did not affect reproductive neuroendocrine parameters in vivo or in vitro in females but there are caveats
 
 To examine if the effects of activating Gq signaling in GFAP-expressing cells is sexually differentiated, females were bilaterally injected in the POA with either AAV-mCherry or AAV-Gq. The survival time post-surgery was longer (3.5–7 vs. 18–22 weeks) because of COVID research shutdown. LH was measured in 10 min samples taken on diestrus. CNO increased LH in mice infected with AAV-Gq, but all mice exhibited infected cells with neuronal morphology and these data were not considered further (Figure 5—figure supplement 1, virus F(1,9)=12, p=0.0069; time F(9,81)=21, p<0.0001; interaction F(9,81)=25, p<0.0001). In brain slices, CNO had no effect on firing rate of GnRH neurons from female mice infected with either virus (Figure 5B,C,E, Table 5), unless infected cells with neuronal morphology were observed within the slice (Figure 5D,E). These data suggest that there may be a sex difference in the regulation of GnRH neurons by GFAP-expressing cells. An important caveat to point out is that these recordings were made in the afternoon (slices made 2:30–3:30 pm, recordings 3:30–9:30 pm), whereas recordings from males were made in the morning (slices 9:30 am–12 pm, recordings 10:30 am–6 pm).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig5-v2.jpg)
+
+**Figure 5.:** (A-C) Firing rate of individual GnRH-green fluorescent protein (GFP) neurons in brain slices from diestrous females injected in the POA with adeno-associated virus (AAV)-mCherry (A, n=12 from five mice) or AAV-Gq (B, n=10 from five mice, C, n=4 from two mice); slices in C had viral infection of cells with neuronal morphology. Green symbols and lines show data in AAV-Gq infected slices without detected contamination by neuronal infection; magenta symbols and lines show data in slices with Gq-infected neurons. (D) Mean ± SEM firing rate during the three periods, *p<0.0001 Bonferroni for cells in slices with Gq-infected neurons vs. the other groups (n=4–12).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68205/elife-68205-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** LH levels in individual mice bilaterally injected in the POA with adeno-associated virus (AAV)-mCherry (left, n=5) and AAV-Gq (right, n=6).
 
 ## Discussion
 
@@ -88,31 +509,31 @@ In summary, the present work defines that activation of Gq signaling in astrocyt
 
 All reagents were purchased from Sigma-Aldrich (St. Louis, MO) unless noted.
 
-## Animals
+### Animals
 
 Mouse strains used for this work are summarized in Table 1. Mice expressing enhanced green fluorescent protein (GFP) under the control of Gnrh promoter (GnRH-GFP mice, JAX 033639) (Suter et al., 2000) or Tac2-GFP BAC transgenic mice (015495-UCD/STOCK Tg [Tac2-EGFP]381Gsat, Mouse Mutant Regional Resource Center http://www.mmrrc.org/) (Ruka et al., 2013) were used to identify GnRH and KNDy neurons for recording, respectively. Tac2 encodes neurokinin B, which is coexpressed with kisspeptin and dynorphin in KNDy neurons. Tac2-GFP-identified cells in brain slices used for recording also express kisspeptin and/or dynorphin at high percentages, supporting their identity as KNDy neurons (Ruka et al., 2013). Mice were held on a 14 hr light/10 hr dark light cycle with lights on at 0300 Eastern Standard Time and had ad libitum access to water and chow (Teklad 2916). Adult gonad-intact males and females were used between 60 and 220 days of age. In females, estrous cycle stage was determined by vaginal lavage and confirmed by uterine mass (≤﻿80 mg for diestrus) (Wagenmaker and Moenter, 2017). Castration efficacy in males was determined by seminal vesicle mass (intact >250 mg, castrate <150 mg). Animals were distributed randomly among groups and, when possible, experiments were performed blinded. The Institutional Animal Care and Use Committee at the University of Michigan approved all procedures.
 
-## Stereotaxic injections
+### Stereotaxic injections
 
 Viruses used in this work are summarized in Table 1. Mice were anesthetized with isoflurane to effect and received 5 mg/kg carprofen before the surgery and 24 hr post-surgery for analgesia. AAV5 carrying a payload encoding the hM3Dq (Addgene 50478) or the hM4Di (Addgene 50479) DREADDs or control AAV (Addgene58909) fused to mCherry under the control of the GFAP promoter were used to introduce DREADDs to regions of interest. AAVs (50–100 nL) were administered by bilateral stereotaxic injection into the POA (AP: −2.27 mm; ML: −0.3 and +0.3 mm; DV: −4.55 mm from frontal vein) or ARC (AP: −1.6 mm; ML: −0.2 and +0.2 mm; DV: −5.95 mm from Bregma). Mice were monitored until fully recovered from anesthesia and surgery sites were examined daily for 10 days. Viral infection was allowed to proceed for 3-6 weeks before experiments.
 
-## Immunohistofluorescence
+### Immunohistofluorescence
 
 Mice were deeply anesthetized with isoflurane and transcardially perfused with 0.9% NaCl (10 mL) then 10% neutral-buffered formalin for 15 min (~50 mL). Brains were placed into 10% formalin for 4 hr and transferred into 20% sucrose in 0.1 M PBS for cryoprotection for at least 48 hr and until sectioning. Four series of 30 μm free-floating sections were obtained with a cryostat (Leica CM3050S) in 0.1 M phosphate-buffered saline (PBS) pH=7.4, then transferred to antifreeze solution (30% ethylene glycol, 20% glycerol in PBS) for storage at −20°C. Sections were washed three times in PBS, incubated in blocking solution (PBS containing 0.4% Triton X-100, 2% normal goat serum, Jackson ImmunoResearch) for 1 hr at room temperature, and incubated in primary antibody (Table 2) diluted in blocking solution for 48 hr at 4°C. Sections were washed three times in PBS and incubated with Alexa-conjugated secondary antibodies for 1.5 hr at room temperature (Molecular Probes and Jackson ImmunoResearch, 1:500). After three washes with PBS, slices were incubated with 300 nM 4’,6-diaminidino-2-phenylindole dihydrochloride in PBS for 10 min at room temperature. Slices were washed three times in PBS, mounted on Superfrost plus slides (Thermo Fisher Scientific) with ProLong Gold antifade reagent (Invitrogen) and coverslipped (VWR International). Primary antibodies and dilutions used are in Table 2. Images were collected on a Zeiss AXIO Imager M2 (lower magnification) or on a Nikon A1 confocal microscope (colocalization studies). The number of mCherry only, mCherry/S100β, and mCherry/NeuN coexpressing cells was counted from confocal pictures (3.49 μm optical sectioning, same exposure for each signal, levels adjusted to represent the signal observed by eye, 5 fields/mouse in the infected region; AAV-mCherry and AAV-Gq n=3 mice each POA and ARC, AAV-Gi n=4 mice POA). Brightness was increased 30% in pictures used for figures. In addition to immuno-identification, all 300 µm slices for imaging and electrophysiology were examined for infection of cells with neuronal morphology. Data from slices or mice in which infection of neuronal cells was detected were eliminated from statistical analysis but individual data are shown for transparency in the figures.
 
-## Tail tip blood collection
+### Tail tip blood collection
 
 To examine the effect of DREADD activation on LH levels, mice were handled daily for 2 weeks before CNO (Tocris) administration studies or 5 weeks before sampling LH pulses and habituated to IP injection of 0.9% saline for the last 3-4 days. The tip of the tail was nicked and 6 μL of blood was collected and mixed immediately with 54 µL of assay buffer (PBS, 0.05%Tween and 0.2% BSA). Sampling regimen and animal models were selected based on postulated LH response to activating Gq or Gi signaling within GFAP-expressing cells. To test the effects of activating Gq, postulated to be activating, gonad-intact males were sampled every 10 min for 2 hr, with IP injection of 0.9% saline vehicle at 30 min, and IP injection of 0.3 mg/kg CNO at 60 min. To test the effect of activating Gi, postulated to be inhibitory, males were castrated to elevate LH release; 1 week after castration, these mice were sampled every 6 min for 3 hr, with IP injection of 0.3 mg/kg CNO at 90 min.
 
-## LH assay
+### LH assay
 
 Tail blood diluted with assay buffer was kept on ice until the end of sampling, then stored at −20°C until LH assay by the University of Virginia Ligand Assay and Analysis Core (Steyn et al., 2013). The capture monoclonal antibody (anti-bovine LHß subunit, 518B7) is provided by Janet Roser, University of California, Davis. The detection polyclonal antibody (rabbit LH antiserum, AFP240580Rb) is provided by the National Hormone and Peptide Program (NHPP). HRP-conjugated polyclonal antibody (goat anti-rabbit) is purchased from DakoCytomation (Glostrup, Denmark; D048701-2). Mouse LH reference prep (AFP5306A; NHPP) is used as the assay standard. The limit of quantitation (functional sensitivity) was 0.016 ng/mL, defined as the lowest concentration that demonstrates accuracy within 20% of expected values. Coefficient of variation (%CV) was determined from serial dilutions of a defined sample pool. Intraassay CV was 2.2%; interassay CVs were 7.3% (low QC, 0.13 ng/mL), 5.0% (medium QC, 0.8 ng/mL), and 6.5% (high QC, 2.3 ng/mL).
 
-## Brain slice preparation
+### Brain slice preparation
 
 All solutions were bubbled with 95% O2/5% CO2 for at least 30 min before exposure to tissue and throughout the experiments. At least 1 week after sampling for LH, brain slices were prepared through the hypothalamus as described (Chu and Moenter, 2005). The brain was rapidly removed and placed in ice-cold sucrose saline solution containing (in mM): 250 sucrose, 3.5 KCl, 26 NaHCO3, 10 D-glucose, 1.25 Na2HPO4, 1.2 MgSO4, and 3.8 MgCl2. Coronal slices (300 μm) were cut with Leica VT1200S (Leica Biosystems, Buffalo Grove, IL). Slices were incubated for 30 min at room temperature (~21–23°C) in 50% sucrose saline and 50% artificial cerebrospinal fluid (ACSF) containing (in mM): 135 NaCl, 3.5 KCl, 26 NaHCO3, 10 D-glucose, 1.25 Na2HPO4, 1.2 MgSO4, 2.5 CaCl2 (pH 7.4), then transferred to 100% ACSF at room temperature for 0.5–4.5 hr before recording. At the end of the recording, slices of interest were fixed with 10% formalin for 40 min, washed three times in PBS, and were processed for immunofluorescence to study the spread of the infected area or examined directly for mCherry signal in cells with neuronal morphology.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Targeted single-unit extracellular recordings were used to minimize impact on the cell’s intrinsic properties (Nunemaker et al., 2003; Alcami et al., 2012). Recording pipettes (2–4 MΩ) were pulled from borosilicate glass (Schott no. 8250; World Precision Instruments, Sarasota, FL) with a Sutter P-97 puller (Sutter Instrument, Novato, CA). Pipettes were filled with HEPES-buffered solution containing (in mM): 150 NaCl, 10 HEPES, 10 D-glucose, 2.5 CaCl2, 1.3 MgCl2, and 3.5 KCl, and low-resistance (6–15 MΩ) seals were formed between the pipette and neuron. Recordings were made in voltage clamp with a 0 mV pipette holding potential, data acquired at 10 kHz, and filtered at 5 kHz using a one amplifier of an EPC10 dual patch clamp amplifier controlled with PatchMaster software (HEKA Elektronic, Lambrecht, Germany).
 
@@ -120,6 +541,6 @@ Slices were transferred to a recording chamber with constant perfusion of carbox
 
 To test the hypothesis PGE2 affects GnRH and KNDy neuron firing, we used 16,16-dimethyl PGE2 (dmPGE2, 200 nM), a stable form of PGE2 (Cayman Chemical 14750) in 0.00076% methyl acetate vehicle. Antagonists for prostaglandin receptor EP1 (SC-19220, 100 μM, Tocris) and EP2 (PF-04418948, 20 μM, Tocris) were diluted into fresh bubbled ACSF (final DMSO concentration 0.3%) and bath applied before CNO treatment. The recording paradigm was a 6 min baseline, 6 min pretreatment with methyl acetate vehicle containing either DMSO vehicle or EP1 and EP2 antagonists, a 6 min treatment that added 200 nM dmPGE2, followed by wash in ACSF. Mean firing rate was calculated for the last 3 min baseline and pretreatment periods, min 5–7 following addition of dmPGE2 for treatment, and min 8–10 after wash began.
 
-## Analysis and statistics
+### Analysis and statistics
 
 Data were analyzed using code written in IgorPro 8 (Wavemetrics). The code is available on GitLab (DeFazio, 2021 copy archived at swh:1:rev:2d400d05d3443defb99bf8c8a9b3c2c846a8b1be). Action currents (events) were detected and confirmed by eye. Statistical analyses were conducted with GraphPad Prism 9. Distribution normality was checked with Shapiro-Wilk; most experiments included one or more groups that were not normally distributed. One-way repeated-measures tests were conducted with the Friedman test. For two-way repeated-measures ANOVA, the Bonferroni post hoc is considered sufficiently rigorous for non-normally distributed data (Underwood, 1997). Statistical tests for each study are specified in the Results section. p<0.05 was considered significant and exact p-values are reported.

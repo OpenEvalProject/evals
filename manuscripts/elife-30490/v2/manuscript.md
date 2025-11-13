@@ -37,7 +37,7 @@
 
 ## Abstract
 
-10.7554/eLife.30490.001 Primary Ovarian Insufficiency (POI) affects ~1% of women under forty. Exome sequencing of two Finnish sisters with non-syndromic POI revealed a homozygous mutation in FANCM, leading to a truncated protein (p.Gln1701*). FANCM is a DNA-damage response gene whose heterozygous mutations predispose to breast cancer. Compared to the mother's cells, the patients’ lymphocytes displayed higher levels of basal and mitomycin C (MMC)-induced chromosomal abnormalities. Their lymphoblasts were hypersensitive to MMC and MMC-induced monoubiquitination of FANCD2 was impaired. Genetic complementation of patient's cells with wild-type FANCM improved their resistance to MMC re-establishing FANCD2 monoubiquitination. FANCM was more strongly expressed in human fetal germ cells than in somatic cells. FANCM protein was preferentially expressed along the chromosomes in pachytene cells, which undergo meiotic recombination. This mutation may provoke meiotic defects leading to a depleted follicular stock, as in Fancm mice. Our findings document the first Mendelian phenotype due to a biallelic -/- FANCM mutation.
+Primary Ovarian Insufficiency (POI) affects ~1% of women under forty. Exome sequencing of two Finnish sisters with non-syndromic POI revealed a homozygous mutation in FANCM, leading to a truncated protein (p.Gln1701*). FANCM is a DNA-damage response gene whose heterozygous mutations predispose to breast cancer. Compared to the mother's cells, the patients’ lymphocytes displayed higher levels of basal and mitomycin C (MMC)-induced chromosomal abnormalities. Their lymphoblasts were hypersensitive to MMC and MMC-induced monoubiquitination of FANCD2 was impaired. Genetic complementation of patient's cells with wild-type FANCM improved their resistance to MMC re-establishing FANCD2 monoubiquitination. FANCM was more strongly expressed in human fetal germ cells than in somatic cells. FANCM protein was preferentially expressed along the chromosomes in pachytene cells, which undergo meiotic recombination. This mutation may provoke meiotic defects leading to a depleted follicular stock, as in Fancm-/- mice. Our findings document the first Mendelian phenotype due to a biallelic FANCM mutation.
 
 ## Introduction
 
@@ -55,33 +55,792 @@ The two POI patients belong to a consanguineous family (Figure 1A) without histo
 
 Proband had menarche at 12 years of age, with irregular cycles (20–60 days). Hormonal contraception was started at the age of 16 years for menorrhagia and stopped four years later, after which menstrual cycles became highly irregular (21–140 days). At 24 years, she had hot flushes for about one year and spaniomenorrhea. Blood hormonal assays and ultrasonographic studies of the ovaries are reported in Table 1. FSH level was high (41 IU/l) and AMH low. POI was diagnosed. At the age of 26, hormonal stimulation was attempted with no response. Soon after that, FSH increased to 120 IU/l and hormonal replacement was initiated.
 
+**Table 1.**
+ Clinical, hormonal and ultrasonography studies of patients with FANCM mutation
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Case</th>
+      <th>Menstrual cycles</th>
+      <th>Age at evaluation</th>
+      <th>BMI (Height cm/ weight Kg)</th>
+      <th>FSH IU/l</th>
+      <th>LH IU/l</th>
+      <th>E2 nmol/l</th>
+      <th>AMH ng/ml</th>
+      <th>T nmol/l</th>
+      <th>PRL mU/l</th>
+      <th>TSH mU/l</th>
+      <th>Ovarian surface (R/L) mm</th>
+      <th>Presence of follicles at US</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient-1</td>
+      <td>Secondary amenorrhea (24 years)</td>
+      <td>24</td>
+      <td>22,27 (160/57)</td>
+      <td>41</td>
+      <td>38</td>
+      <td>0.388</td>
+      <td></td>
+      <td>1.8</td>
+      <td>254</td>
+      <td>2.6</td>
+      <td>20 × 17 cyst/ 16 × 8</td>
+      <td>Yes (2)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>26</td>
+      <td></td>
+      <td>120</td>
+      <td></td>
+      <td>0.053</td>
+      <td>&lt;0.2</td>
+      <td></td>
+      <td>285</td>
+      <td></td>
+      <td>26 × 11/ 18 × 8</td>
+      <td>Yes (1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>28</td>
+      <td></td>
+      <td>65</td>
+      <td>51</td>
+      <td>0.120</td>
+      <td>&lt;0.2</td>
+      <td>0.96</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Patient-2</td>
+      <td>Spanio menorrhea (22 years)</td>
+      <td>22</td>
+      <td>24,46 (163/65)</td>
+      <td>16</td>
+      <td>4</td>
+      <td>0.069</td>
+      <td></td>
+      <td></td>
+      <td>843</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
+      <td></td>
+      <td>16</td>
+      <td></td>
+      <td></td>
+      <td>0.6</td>
+      <td></td>
+      <td>NA</td>
+      <td>1.7</td>
+      <td>18 × 11/ 19 × 10</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+_BMI: body mass index US: ultrasonography; E2: estradiol; T: testosterone; P: progesterone; PRL: prolactin; NA: not available Follicular phase: 3.5-12.5 [FSH (IU/l)], 2.4-12.6 [LH (IU/l)], 0.11-0.22 [E2 (nmol/l)]Ovulatory phase: 4.7-21.5 [FSH (IU/l)], 14-96 [LH (IU/l)], 0.42-1.40 [E2 (nmol/l)]Luteal phase 1.7-7.7 [FSH (IU/l)], 1-11.4 [LH (IU/l)], 0.17-0.79 [E2 (nmol/l)]Menopause 26-135 [FSH (IU/l)], 8-33 [LH (IU/l)], ≤ 0.05 [E2 (nmol/l)]_
+
 Her sister had menarche at 12 years of age, with regular menses (23 days). Hot flushes started at the age of 20 years. At 22, she consulted for hot flushes and spaniomenorrhea. She had elevated FSH (16 IU/l) and low E2 levels (Table 1). Incipient POI was diagnosed. As prolactin was elevated and brain MRI showed a suspected 3 mm adenoma, treatment with Parlodel was initiated. However, FSH remained elevated and AMH low (Table 1). At 23, hormonal stimulation was initiated with poor results. However, about 6 months later, she became spontaneously pregnant and gave birth to a healthy child.
 
-## Identification of a FANCM mutation by whole-exome sequencing and molecular studies
+### Identification of a FANCM mutation by whole-exome sequencing and molecular studies
 
 Both sisters with POI and their mother were studied by whole-exome sequencing, which generated ~45 millions of mapped read pairs per sample (91% of targeted exome at ≥10X). Exome capture, sequencing and data processing were performed as described in (Fauchereau et al., 2016). Variants were filtered according to the following criteria: minimum depth of 5 reads and variant quality of 20, with potential impact on transcript or protein, homozygosity in both affected sisters and heterozygosity in the mother and minor allele frequency (MAF) under 1%. The only variant fulfilling these criteria was the non-sense mutation chr14:45658326 C/T (rs147021911) in exon 20 of FANCM (Figure 1B, Tables 2–3). According to the ExAC database, its MAF is 0.0013, slightly higher in the Finnish population (0.0089), with only one homozygous individual described in the ExAC database. The variant and its segregation in the family were verified by Sanger sequencing of the exon 20 of the FANCM (Figure 1C). This variant leads to the p.Gln1701* truncation at the protein level, which removes the C-terminal endonuclease and the FA associated protein 24 (FAAP24)-interaction domain (Figure 1D). FAAP24 mediates chromatin association of FANCM.
+
+**Table 2.**
+ Whole Exome sequencing metrics in the Finnish family with FANCM Q1701* variant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>WES metrics</th>
+      <th>mother</th>
+      <th>POI 1</th>
+      <th>POI 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gbases</td>
+      <td>6.682</td>
+      <td>7.273</td>
+      <td>6.931</td>
+    </tr>
+    <tr>
+      <td>Number of reads (millions)</td>
+      <td>44.5</td>
+      <td>48.5</td>
+      <td>46.2</td>
+    </tr>
+    <tr>
+      <td>% Alignment</td>
+      <td>97.03</td>
+      <td>97.12</td>
+      <td>97.09</td>
+    </tr>
+    <tr>
+      <td>% Mismatch Rate R1</td>
+      <td>0.19</td>
+      <td>0.19</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>% Mismatch Rate R2</td>
+      <td>0.31</td>
+      <td>0.31</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>%≥Q30 bases</td>
+      <td>96.34</td>
+      <td>96.26</td>
+      <td>96.15</td>
+    </tr>
+    <tr>
+      <td>Mean Quality Score</td>
+      <td>39.4</td>
+      <td>39.4</td>
+      <td>39.4</td>
+    </tr>
+    <tr>
+      <td>Mean Depth (X)</td>
+      <td>68</td>
+      <td>74</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>% of bases covered at 25X</td>
+      <td>83</td>
+      <td>84</td>
+      <td>83</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Whole Exome sequencing Variant filtering in the Finnish family with FANCM Q1701* variant
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variants called in</th>
+      <th>Mother</th>
+      <th>POI 1</th>
+      <th>POI 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>40621</td>
+      <td>40343</td>
+      <td>40561</td>
+    </tr>
+    <tr>
+      <td>SNPs</td>
+      <td>37929</td>
+      <td>37590</td>
+      <td>37859</td>
+    </tr>
+    <tr>
+      <td>Indels</td>
+      <td>2692</td>
+      <td>2753</td>
+      <td>2702</td>
+    </tr>
+    <tr>
+      <td colspan="3">Variant filters</td>
+      <td># of variants</td>
+    </tr>
+    <tr>
+      <td colspan="3">Shared between POI 1 and POI 2</td>
+      <td>32784</td>
+    </tr>
+    <tr>
+      <td colspan="3">in coding sequence or splice</td>
+      <td>17207</td>
+    </tr>
+    <tr>
+      <td colspan="3">in CDS, but not synonymous</td>
+      <td>8855</td>
+    </tr>
+    <tr>
+      <td colspan="3">homozygous in both POI 1 and POI 2</td>
+      <td>4053</td>
+    </tr>
+    <tr>
+      <td colspan="3">and heterozygous in Mother</td>
+      <td>512</td>
+    </tr>
+    <tr>
+      <td colspan="3">MAF &lt; 1% in EVS and 1000G and ExAC</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td colspan="3">&lt;1% in IG exomes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td colspan="3">with high potential functional impact</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 EBV-immortalized cells were obtained from patient 2 and the mother. Immunoblot with an anti-FANCM antibody confirmed the expression of a truncated FANCM protein of ~195 kDa in the cell line derived from the patient, whereas both the wild-type/WT (MW ~235 kDa) and the truncated proteins were present in the heterozygous mother (Figure 1E). The expression level of the truncated protein was significantly reduced compared to the WT, suggesting that the mutation destabilizes either the protein or the corresponding mRNA (i.e., non-sense mediated decay).
 
 No variants were observed in other FANC genes. Indeed, we have exhaustively looked for the presence of variants in a list of FA genes (Table 4). The very good coverage of each gene (80-90X in the POI patients) excludes the possibility of having missed a variant due to a lack of coverage. The presence of heterozygous variants, both in coding regions and elsewhere (UTRs, the covered intronic sequences, etc.), in one or both POI patients, excludes the possibility of hemizygosity due to heterozygous deletions. The ratios of the number of reads of the alleles for these heterozygous variants were unbiased (i.e., close to 1) and argue against gene deletions. The detection of variants outside the coding portions of the exons also argues against the possibility of partial deletions. Exome-based CNV analysis showed that the detected CNVs were unrelated to the disease as they were either not common to the two sisters or were present in the mother. Finally, the total lack of correctly segregating variants (i.e common to both POI patients and heterozygous in the mother) in FA genes excludes the possibility of their involvement in the pathology.
 
-## FANCM is expressed in germ cells of human fetal and adult ovaries
+**Table 4.**
+ Compilation of Whole-Exome-Sequencing data for the genes of the FANC pathway, excluding all the genes except FANCM as potentially harboring a causative variant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene name</th>
+      <th rowspan="2">Alias</th>
+      <th colspan="3">Mean depth in targeted exons (1)</th>
+      <th>Nb variants in</th>
+      <th>Htz variants</th>
+      <th>Mean ratio for htz allelic</th>
+      <th colspan="5">Presence of htz variants (5)</th>
+      <th colspan="2">Nbr of rare variants (6)</th>
+    </tr>
+    <tr>
+      <th>mother</th>
+      <th>POI 1</th>
+      <th>POI 2</th>
+      <th>family (2)</th>
+      <th>in &gt;= 1 sister (3)</th>
+      <th>reads in sisters (4)</th>
+      <th>upstream</th>
+      <th>5'UTR</th>
+      <th>deep intronic</th>
+      <th>3'UTR</th>
+      <th>downstream</th>
+      <th>correct segregation</th>
+      <th>and pathogenic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FANCA</td>
+      <td></td>
+      <td>87.9</td>
+      <td>94.9</td>
+      <td>90.3</td>
+      <td>29</td>
+      <td>yes</td>
+      <td>0.92</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCB</td>
+      <td></td>
+      <td>88.6</td>
+      <td>93.8</td>
+      <td>89.9</td>
+      <td>2</td>
+      <td>yes</td>
+      <td>1.14</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCC</td>
+      <td></td>
+      <td>64.4</td>
+      <td>71.5</td>
+      <td>68.2</td>
+      <td>0 in this family</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FANCD1</td>
+      <td>BRCA2</td>
+      <td>84.6</td>
+      <td>90.5</td>
+      <td>84.5</td>
+      <td>12</td>
+      <td>yes</td>
+      <td>1.01</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCD2</td>
+      <td></td>
+      <td>76.1</td>
+      <td>82.1</td>
+      <td>75.0</td>
+      <td>2</td>
+      <td>yes</td>
+      <td>0.825</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCE</td>
+      <td></td>
+      <td>89.5</td>
+      <td>100.2</td>
+      <td>99.0</td>
+      <td>2</td>
+      <td>yes</td>
+      <td>1.08</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCF</td>
+      <td></td>
+      <td>143.0</td>
+      <td>150.2</td>
+      <td>139.7</td>
+      <td>0 in this family</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FANCG</td>
+      <td></td>
+      <td>123.5</td>
+      <td>139.8</td>
+      <td>130.2</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>1.22</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCI</td>
+      <td></td>
+      <td>75.7</td>
+      <td>80.3</td>
+      <td>76.6</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>0.89</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCJ</td>
+      <td>BRIP1</td>
+      <td>104.2</td>
+      <td>113.0</td>
+      <td>107.7</td>
+      <td>4</td>
+      <td>yes</td>
+      <td>0.76</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCL</td>
+      <td></td>
+      <td>80.2</td>
+      <td>88.5</td>
+      <td>80.7</td>
+      <td>3</td>
+      <td>yes</td>
+      <td>0.96</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCM</td>
+      <td></td>
+      <td>86.9</td>
+      <td>91.3</td>
+      <td>87.8</td>
+      <td>1</td>
+      <td>no</td>
+      <td>/</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FANCN</td>
+      <td>PALB2</td>
+      <td>97.0</td>
+      <td>106.9</td>
+      <td>101.1</td>
+      <td>0 in this family</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FANCO</td>
+      <td>RAD51C</td>
+      <td>92.1</td>
+      <td>103.2</td>
+      <td>94.9</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>0.77</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCP</td>
+      <td>SLX4</td>
+      <td>107.9</td>
+      <td>116.4</td>
+      <td>112.8</td>
+      <td>15</td>
+      <td>yes</td>
+      <td>0.88</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCQ</td>
+      <td>ERCC4</td>
+      <td>91.5</td>
+      <td>98.1</td>
+      <td>90.9</td>
+      <td>2</td>
+      <td>yes</td>
+      <td>1.21</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCR</td>
+      <td>RAD51</td>
+      <td>75.9</td>
+      <td>82.4</td>
+      <td>74.5</td>
+      <td>0 in this family</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FANCS</td>
+      <td>BRCA1</td>
+      <td>87.6</td>
+      <td>94.3</td>
+      <td>86.8</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>0.85</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCT</td>
+      <td>UBE2T</td>
+      <td>53.9</td>
+      <td>63.2</td>
+      <td>52.6</td>
+      <td>2</td>
+      <td>yes</td>
+      <td>0.91</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FANCU</td>
+      <td>XRCC2</td>
+      <td>104.3</td>
+      <td>116.1</td>
+      <td>113.1</td>
+      <td>0 in this family</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FANCV</td>
+      <td>MAD2L2</td>
+      <td>72.6</td>
+      <td>85.4</td>
+      <td>74.3</td>
+      <td>0 in this family</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FAAP100</td>
+      <td>C17orf70</td>
+      <td>69.0</td>
+      <td>66.8</td>
+      <td>69.1</td>
+      <td>7</td>
+      <td>yes</td>
+      <td>0.94</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FAAP24</td>
+      <td>C19orf40</td>
+      <td>58.3</td>
+      <td>64.6</td>
+      <td>59.2</td>
+      <td>2</td>
+      <td>yes</td>
+      <td>0.89</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FAAP20</td>
+      <td>C1orf86</td>
+      <td>57.7</td>
+      <td>62.0</td>
+      <td>59.7</td>
+      <td>3</td>
+      <td>yes</td>
+      <td>1.20</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FAAP16</td>
+      <td>APITD1</td>
+      <td>37.7</td>
+      <td>44.2</td>
+      <td>40.7</td>
+      <td>4</td>
+      <td>yes</td>
+      <td>1.12</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FAAP10</td>
+      <td>STRA13</td>
+      <td>57.3</td>
+      <td>62.1</td>
+      <td>57.8</td>
+      <td>4</td>
+      <td>yes</td>
+      <td>1.18</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FAN1</td>
+      <td></td>
+      <td>101.8</td>
+      <td>112.9</td>
+      <td>102.6</td>
+      <td>4</td>
+      <td>yes</td>
+      <td>0.97</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mean</td>
+      <td>84.0</td>
+      <td>91.7</td>
+      <td>85.9</td>
+      <td>110</td>
+      <td></td>
+      <td>0.99</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_(1) For each gene, the mean depth per exon was averaged over all exons of the gene. The high coverage for all genes excludes the possibility of not detecting a causative variant in other FANC genes.(2) Total number of upstream, downstream, 5' and 3' UTRs, intronic, synonymous, splice site, missense, frameshift and stop variants in each gene.(3) The presence of heterozygous variants in at least one of the patients excludes the possibility of hemizygosity for all genes (with the exception of the variant in FANCM that is homozygous)(4) The ratio between the number of reads for each allele was averaged for all heterozygous variants in the two affected sisters. A ratio close to one for each gene indicates no bias and argues against a possible deletion for the gene.(5) The presence of heterozygous variants in the various genic portions argues against the possibility of partial deletions.(6) Among the 110 variants detected in the genes included in the FANC pathway, only the non-sense variant found in FANCM is homozygous in both patients, is rare (below 1% in ExAC database) and predicted as pathogenic._
+
+### FANCM is expressed in germ cells of human fetal and adult ovaries
 
 FANCM expression was studied in germ cells of human fetal and adult ovaries. Human fetal material was obtained from the Antoine Béclère Hospital (Clamart, France) following legally-induced abortions or therapeutic termination of pregnancy. The identification of meiotic stages was performed in histological pieces that we have previously characterized (Frydman et al., 2017) and based on the chromatin features. qRT-PCR in human fetal ovaries demonstrated that FANCM mRNAs were expressed throughout ovarian development (5–32 weeks post-fertilization, wpf) (Figure 2A). Of note, expression tended to be higher than average in 14 and 17 wpf ovaries that are stages containing the highest proportion of germ cells progressing into meiotic prophase I.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/30490/elife-30490-fig2-v2.jpg)
 
-**Figure 2.:** FANCM expression in human fetal ovaries.(A) Relative FANCM mRNA abundance was measured by RT-qPCR in human fetal ovaries from 5 to 32 weeks post-fertilization (wpf). (B) Germ cells (D2-40+) and somatic cells (D2-40-) were sorted from three ovaries ranging from 8 to 12 wpf and FANCM expression was measured. ACTB was used to normalize FANCM expression in all samples. Dots represent different ovaries and the mean is indicated by the line. (C) Immunohistochemistry of FANCM in human fetal and adult ovaries. Fetal ovaries at 8 and 22 wpf and adult ovaries were studied. FANCM positive cells appear in yellow/brown color (monoclonal FANCM CV5.1 antibody, Novus Biologicals, Abingdon, UK). Ovarian sections were counterstained with hematoxylin (blue staining). Oo, oogonia; Pa, oocyte at the pachytene stage of meiosis I, D, oocyte at the diplotene stage of meiosis I; Pr, oocyte in primordial follicle. (D) Co-staining in 22 wpf ovaries, for FANCM (purple) and DDX4 (brown) confirmed the germ cell identity of FANCM-positive cells (left). Successive staining for FANCM and SYCP3 in the same section (panels a and b). Negative control performed with non-immune mouse IgG (right). Scale bar: 10 μm.
+**Figure 2.:** (A) Relative FANCM mRNA abundance was measured by RT-qPCR in human fetal ovaries from 5 to 32 weeks post-fertilization (wpf). (B) Germ cells (D2-40+) and somatic cells (D2-40-) were sorted from three ovaries ranging from 8 to 12 wpf and FANCM expression was measured. ACTB was used to normalize FANCM expression in all samples. Dots represent different ovaries and the mean is indicated by the line. (C) Immunohistochemistry of FANCM in human fetal and adult ovaries. Fetal ovaries at 8 and 22 wpf and adult ovaries were studied. FANCM positive cells appear in yellow/brown color (monoclonal FANCM CV5.1 antibody, Novus Biologicals, Abingdon, UK). Ovarian sections were counterstained with hematoxylin (blue staining). Oo, oogonia; Pa, oocyte at the pachytene stage of meiosis I, D, oocyte at the diplotene stage of meiosis I; Pr, oocyte in primordial follicle. (D) Co-staining in 22 wpf ovaries, for FANCM (purple) and DDX4 (brown) confirmed the germ cell identity of FANCM-positive cells (left). Successive staining for FANCM and SYCP3 in the same section (panels a and b). Negative control performed with non-immune mouse IgG (right). Scale bar: 10 μm.
 
 Cell-sorting experiments conducted in 8–12 wpf ovaries indicated that FANCM transcripts were predominant in oogonial cells (D2-40-positive) compared to somatic cells (Figure 2B). Immunohistochemical studies in human fetal ovaries show that FANCM protein was present in the nuclei of oogonia but staining was stronger in pachytene stage oocytes (i.e., at 8 and 14 wpf respectively in Figure 2C). Of note, staining localized along the chromosomes in pachytene cells that undergo meiotic recombination. FANCM was also observed in oocytes arrested at the diplotene stage of prophase I during the last trimester of pregnancy and in adults (Figure 2C). The co-staining with Synaptonemal complex protein 3 (SYCP3) or DEAD box protein 4 (DDX4/VASA) confirmed respectively the meiotic and germinal nature of the FANCM-positive cells (Figure 2D).
 
-## The FANCM mutation leads to hypersensitivity to Mitomycin C and altered FANCD2 monoubiquitination in response to DNA interstrand crosslinks but not to replication inhibition
+### The FANCM mutation leads to hypersensitivity to Mitomycin C and altered FANCD2 monoubiquitination in response to DNA interstrand crosslinks but not to replication inhibition
 
 Next, we monitored chromosome breakage in primary lymphocytes from the two patients and their mother. Baseline and DNA-damage induced chromosome breakage and rearrangement were blindly scored on 50 metaphases without treatment or after exposure to Mitomycin C (MMC) for 72 hr. In line with a role of FANCM in the maintenance of genome stability, the occurrence of chromosome breakages and rearrangements was higher in both POI patients than in their mother (Figure 3A and B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/30490/elife-30490-fig3-v2.jpg)
 
-**Figure 3.:** FANCM 5101C > T mutation.(A) Spontaneous and mitomycin C-induced chromosome breakage in primary lymphocytes from the mother and the two POI sisters. Data presented in table are the result of a single experiment. A minimum of 50 metaphases were scored for each sample. (B and B') Examples of untreated and MMC-treated metaphases from patient-2. Arrows indicate breaks and chromosome rearrangements, that is radial figures. (C) Western blot showing FANCD2 expression and monoubiquitination in the same lymphocytes than in A and B. Immunoblot analysis were performed using mouse monoclonal anti-FANCM antibody (CV5.1), mouse monoclonal anti-FANCD2, (Santa-Cruz Biotechnology, Dallas, Texas, USA), rabbit anti-FANCA (Abcam, Cambridge, UK), mouse anti-vinculin (Abcam). Panel present the result of a representative experiment on at least three independent analysis. (D) MMC-induced growth inhibition in lymphoblasts from POI patient-2 and her mother compared to the response of cells from a FANCA (HSC-72), a FANCC (HSC-536), a healthy donor (HSC-93, WT) as well as to the patient cells transduced with a WT FANCM-cDNA. The points on the lines represent the means of 3 to 7 independent experiments ± S.D. *p<0,05, **p<0.01, Unpaired Student's T test. (E) The recovery of the MMC-induced FANCD2-monoubiquitination following FANCM expression in cells from patient 2 is shown. (1) and (2) indicate two independent experiments. Cells were treated with MMC (500 ng/ml) and proteins extracted 24 hr later.10.7554/eLife.30490.010Figure 3—source data 1.Figure 3D.Numbers are the percentage of cell growth in treated samples compared to the untreated cells.
+**Figure 3.:** (A) Spontaneous and mitomycin C-induced chromosome breakage in primary lymphocytes from the mother and the two POI sisters. Data presented in table are the result of a single experiment. A minimum of 50 metaphases were scored for each sample. (B and B') Examples of untreated and MMC-treated metaphases from patient-2. Arrows indicate breaks and chromosome rearrangements, that is radial figures. (C) Western blot showing FANCD2 expression and monoubiquitination in the same lymphocytes than in A and B. Immunoblot analysis were performed using mouse monoclonal anti-FANCM antibody (CV5.1), mouse monoclonal anti-FANCD2, (Santa-Cruz Biotechnology, Dallas, Texas, USA), rabbit anti-FANCA (Abcam, Cambridge, UK), mouse anti-vinculin (Abcam). Panel present the result of a representative experiment on at least three independent analysis. (D) MMC-induced growth inhibition in lymphoblasts from POI patient-2 and her mother compared to the response of cells from a FANCA (HSC-72), a FANCC (HSC-536), a healthy donor (HSC-93, WT) as well as to the patient cells transduced with a WT FANCM-cDNA. The points on the lines represent the means of 3 to 7 independent experiments ± S.D. *p<0,05, **p<0.01, Unpaired Student's T test. (E) The recovery of the MMC-induced FANCD2-monoubiquitination following FANCM expression in cells from patient 2 is shown. (1) and (2) indicate two independent experiments. Cells were treated with MMC (500 ng/ml) and proteins extracted 24 hr later.
 
 We also determined the impact of the FANCM truncating mutation on the sensitivity to Mitomycin C and on FANCD2 monoubiquitination in response to DNA interstrand crosslinks and replication inhibition. In response to MMC, primary lymphocytes from both patients had a reduced capability to monoubiquitinate FANCD2 (Figure 3C). The reduced level of FANCD2 in lymphocytes from POI patients is likely due to a reduced proliferation of their cells in culture conditions. Next, we determined the growth inhibition response of the lymphoblasts from POI patient-2 and her mother in response to MMC (Figure 3D), as previously described (Ridet et al., 1997). The cells from the mother behaved like FANC-pathway proficient cells, while the response of the mutated cells was similar to that of FANCA- and FANCC-deficient lymphoblasts.
 
@@ -89,7 +848,7 @@ Finally, we assessed FANCD2 monoubiquitination in lymphoblastoid cells in respon
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/30490/elife-30490-fig4-v2.jpg)
 
-**Figure 4.:** FANCM 5101C>T mutation leads to altered FANCD2 monoubiquitination in response to DNA damage but not to replication inhibition.Western blot showing FANCD2 monoubiquitination, CHK1 and H2AX phosphorylation in response to MMC (A), or HU or APH (B) in cells from patients 2 and her mother. FANCA (HSC-72) and FANCD2 (GM16756) lymphoblasts were used for comparison. Each panel presents the result of a representative experiment on at least three independent analysis. Proteins were extracted 24 hr after exposure to genotoxins.
+**Figure 4.:** Western blot showing FANCD2 monoubiquitination, CHK1 and H2AX phosphorylation in response to MMC (A), or HU or APH (B) in cells from patients 2 and her mother. FANCA (HSC-72) and FANCD2 (GM16756) lymphoblasts were used for comparison. Each panel presents the result of a representative experiment on at least three independent analysis. Proteins were extracted 24 hr after exposure to genotoxins.
 
 To further validate that the identified bi-allelic mutation in FANCM was responsible for the MMC hypersensitivity observed in the patient's lymphoblasts, we transduced them with a FANCM-WT cDNA-expressing lentiviral vector (see Materials and methods). Transiently genetically complemented cells recovered a significant resistance to MMC (Figure 3D) as well as an improved monoubiquitination of FANCD2 in response to MMC (Figure 3E).
 
@@ -105,33 +864,33 @@ Our results suggest that the cells that harbor biallelic c.5101C>T FANCM mutatio
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 The study was approved by all the institutions involved. All participants gave informed consent for the study and the study was approved by the agence de Biomedecine (reference number PFS12-002).
 
-## Study approval
+### Study approval
 
 Written informed consent was received from participants prior to inclusion in the study and the institutions involved.
 
-## Hormonal assays
+### Hormonal assays
 
 FSH, LH, Prolactin, TSH: Electrochemiluminescence immunoassay ECLIA, cobas kit insert Elecsys and cobas e analyzers (2013–10, V 19), Roche Diagnostics GmbH/Roche Diagnostics GmbH, Sandhofer Strasse 116, D-68305 Mannheim, Germany. Equipment: cobas 8000 e 602, Roche Diagnostics. Estradiol: radioimmunological assay, Spectra kits 125I Coated Tube Radioimmunoassay kit insert, Orion Diagnostica, Espoo, Finland.. Equipment: Gammamaster 1270, Wallac Oy, Turku, Finland. AMH: AMH Gen II ELISA. Equipment: Beckman Coulter, Inc. 250 s. Kraemer Blvd. Brea, CA 92821 U.S.A.
 
-## Cell lines and infection with a lentiviral vector
+### Cell lines and infection with a lentiviral vector
 
 Blood samples were collected for hormonal and genetic studies and for the production of EBV-immortalized lymphoblastoid cell lines, which was performed at the Genopole, Evry, France, following a standard in-house protocol. EBV-immortalized cells were obtained for patient 2 and her mother. HEK293 (Research Resource Identifier/RRID:CVCL_0045) cells and FANC pathway-proficient (HSC-93 (RRID:CVCL_G049)), and -deficient (HSC-72 (RRID:CVCL_G047), HSC-536 (RRID:CVCL_G045) and GM16756 (RRID:CVCL_G041)) cells have been previously described (Bourseguin et al., 2016). HSC-72, HSC-536 and GM16756 bring bi-allelic inactivating mutations in FANCA, FANCC and FANCD2, respectively. Lymphoblastoid cells were cultured in RPMI 1640 medium, supplemented with 12% FCS and antibiotics. Wild-type FANCM cDNA-expressing lentiviral vectors were a gift of M. Bogliolo (Dpt of Genetics and Microbiology, Universitat Autonoma de Barcelona, Spain). Production and titration of lentiviral particles were performed as described (Hamelin et al., 2006). The infection was performed on retronectin-coated plates (TaKaRa Bio, CA, USA) and efficiency was assayed by testing GFP expression using flow cytometry.
 
-## Whole-exome and Sanger sequencing
+### Whole-exome and Sanger sequencing
 
 Library preparation, exome capture, sequencing and data processing were performed by IntegraGen SA (Evry, France) according to their in-house procedures. Data analysis was performed as described in (Fauchereau et al., 2016). Briefly, genomic DNA libraries were prepared from 600 ng of genomic DNA from three individuals (the mother and the two affected sisters) with NEBNext Ultra kit (New England Biolabs). Target capture, enrichment and elution were performed according to manufacturer’s instructions and protocols (SureSelect Human All Exon Kits Version CRE, Agilent) without modification. Libraries were sequenced on an Illumina HiSEQ 2500 as paired-end 75 bp reads. Image analysis and base calling was performed using Illumina Real Time Analysis (RTA 1.18.64) with default parameters. The various metrics of the NGS sequencing are detailed in the Table 2. The sequencing data was analyzed with the Illumina pipeline (CASAVA 1.8.2) for read alignment and variant calling, and an IntegraGen in-house pipeline was used for variant annotation. Annotation of kown variants was performed according to the following databases: dbSNP144 (RRID:SCR_002338), 1000 Genomes Project (release_v3.20101123) (RRID:SCR_008801), Exome Variant Server (ESP6500SI-V2-SSA137) (RRID:SCR_012761), HapMap3 (RRID:SCR_002846), ExAC r3.0 (RRID:SCR_004068), COSMIC 71 (RRID:SCR_002260), ClinVar 201507 (RRID:SCR_006169) and an Integragen internal database (containing 201 control exomes for SNPs and 130 control exomes for Indels). The variants were filtered using IntegraGen ERISv3 platform. The number of called variants and the effect of the various variant filters on the number of remaining candidate variants are shown in Table 3.
 
 The sequence of the exon 20 of the FANCM gene was verified by PCR amplification and Sanger sequencing from the genomic DNA of the available individuals, using the primers FANCM-Forward (5’-AAAACTCGACGTGCAGTAATG-3’) and FANCM-Reverse (5’-GAGGTTTGAAGTCTGAGACTT-3’).
 
-## Collection and processing of human ovaries
+### Collection and processing of human ovaries
 
 Human fetal material was provided by the Department of Obstetrics and Gynecology at the Antoine Béclère Hospital (Clamart, France) following legally induced abortions (first trimester) or therapeutic termination of pregnancy (second and third trimesters). The fetal age was evaluated by measuring the length of limbs and feet as previously described (Evtouchenko et al., 1996). Adult human ovaries were provided by the Laboratory of Pathology of Gustave Roussy Institute (Villejuif, France) following prophylactic removal due to breast cancer. Adult ovaries did not present any pathological aspect, showing corpora lutea at various stages of regression compatible with at least three successive ovulatory cycles. All women provided an informed consent and this study was approved by the Biomedicine Agency (reference number PFS12-002). Tissue was either snap-frozen for RNA analysis of formalin-fixed for immunohistochemistry studies.
 
-## Expression time-course of FANCM transcripts in fetal ovaries
+### Expression time-course of FANCM transcripts in fetal ovaries
 
 Human fetal material was obtained from the Antoine Béclère Hospital (Clamart, France) following legally-induced abortions or therapeutic termination of pregnancy. The fetal age was evaluated as previously described (Evtouchenko et al., 1996). All women provided an informed consent and this study was approved by the Biomedicine Agency (reference number PFS12-002). After collection, fetal ovaries were stored in RNA lysis buffer (RLT) (Qiagen Courtaboeuf, France) for gene expression profiling. For some experiments human gonads were dissociated and germ and somatic cells were sorted using M2A (D240/PODOPLANIN) as previously described (Muczynski et al., 2012). The M2A antigen was first reported as being present in testicular germ cells and germ cell tumors (Marks et al., 1999). It has recently been shown that the M2A antigen is also expressed in female germ cells in the human developing ovary (Frydman et al., 2017). Sorting was performed using a BD-Influx biohazard system (BD Biosciences; San Jose, CA; USA) with the D2-40-positive cells being mostly germ cells. Total RNA from fetal ovaries and sorted cells was extracted using the RNeasy Mini Kit (Qiagen). The 7900HT Fast Real-Time PCR System (Applied Biosystems, Foster City, CA) and SYBR-green labelling were used for quantitative RT-PCR (RT-qPCR). The comparative ΔΔcycle threshold method was used to determine the relative quantities of mRNA using ACTB (ß-actin) mRNA as reference gene for normalization. Each RNA sample was analyzed in duplicate. The sequences of oligonucleotides used for amplification are:
 
@@ -143,19 +902,19 @@ B-ACT Forward: (5’-TGACCCAGATCATGTTTGAGA-3’),
 
 Reverse (5’-TACGGCCAGAGGCGTACAGG-3’).
 
-## In situ detection of FANCM protein by immunohistochemistry
+### In situ detection of FANCM protein by immunohistochemistry
 
 Immunohistochemistry was performed on paraffin-embedded human fetal and adult ovaries as previously described (François et al., 2017). Briefly, human fetal ovaries were fixed in 10% neutral formalin, dehydrated, embedded in paraffin and sectioned (5 μm) as described in by (François et al., 2017). Slides were deparaffinized, rehydrated and heated to 98°C in 0.05% citraconic anhydride, pH 7.4 (Sigma-Aldrich Corp.), for 45 min and then blocked for 1 hr in 10% fetal calf serum at room temperature. After washing in phosphate-buffered saline, slides were incubated overnight with anti-FANCM antibody (CV5.1, Novus biologicals, Abingdon, UK, dilution 1/500) (RRID:AB_2716711). After washing, slides were incubated with goat anti-mouse secondary antibody for 90 min at room temperature and rinsed in phosphate-buffered saline. Slides were then incubated in 3,3′-diaminobenzidene (DAB substrate kit for peroxidase; Vector Laboratories, Burlingame, CA; SK-4100), and after staining development, they were counterstained with hematoxylin and mounted in Eukitt (Sigma). Similarly, for double immunostaining anti-SYCP3 (NB300-232, Novus biological) (RRID:AB_2087193) and anti-DDX4 (ab13840, Abcam) (RRID:AB_443012) antibodies were used and VIP (Vector laboratories) was used as a second substrate.
 
-## Chromosome breakage analysis
+### Chromosome breakage analysis
 
 Primary lymphocytes were cultured under standard conditions for karyotyping. Baseline and DNA damage induced chromosome breakage and rearrangement were scored blinded on 50 metaphases. DNA damage was induced with Mitomycin C (MMC, Sigma) added for 72 hr.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Immunoblots were performed as described (Bourseguin et al., 2016). The antibodies used were: mouse monoclonal anti-FANCM antibody (CV5.1, Novus biologicals, Abingdon, UK) (RRID:AB_2716711), mouse monoclonal anti-FANCD2, (Santa-Cruz Biotechnology, Dallas, Texas, USA, SC-20022) (RRID:AB_2278211), rabbit anti-FANCA (Abcam) (Bethyl Laboratories, Montgomeryn Texas, USA, Cat# A301-980A RRID:AB_1547945), mouse anti-vinculin (Abcam) (RRID:AB_11156698), Rabbit anti-CHK1 antibody from Santa-Cruz Biotechnology (SC-8408) (RRID:AB_627257), mouse monoclonal anti-Phospho-CHK1 (Ser317) antibody from Cell Signaling Technology (#2344) (RRID:AB_331488), monoclonal anti-phospho-H2AX (Ser139) antibody from Millipore (RRID:AB_309864). To transiently deplete FANCM, HEK293 cells (RRID:CVCL_0045) were transfected with 20 nmol/L of small interfering RNA (siRNA) targeting FANCM, 5'-GGC-UAC-GUC-CAG-GAG-CGC-3' with 8 μL INTERFERin (Polyplus) in Opti-MEM. The protein bands were visualized and recorded using an ImageQuant apparatus. Western blot quantifications were performed using densitometry measures and the ImageJ software.
 
-## Growth inhibition analysis
+### Growth inhibition analysis
 
 Measurement of MMC growth inhibition was performed as previously described (Ridet et al., 1997). Measurement of Mitomycin C (MMC, Sigma) growth inhibition was performed as previously described (Bourseguin et al., 2016). Briefly, 5−10 × 105 cells/wells were seeded in 24-wells plate in 1 ml of complete culture medium, and left untreated or exposed to various concentration of MMC. After a growth period of 3–5 days, cells were counted in a Coulter counter. Growth percentage was calculated as follows: % Growth = 100 Xfinal number MMC-treated cells/final number untreated cells.
 

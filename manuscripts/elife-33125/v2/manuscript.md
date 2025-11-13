@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.33125.001 Single-particle tracking (SPT) has become an important method to bridge biochemistry and cell biology since it allows direct observation of protein binding and diffusion dynamics in live cells. However, accurately inferring information from SPT studies is challenging due to biases in both data analysis and experimental design. To address analysis bias, we introduce ‘Spot-On’, an intuitive web-interface. Spot-On implements a kinetic modeling framework that accounts for known biases, including molecules moving out-of-focus, and robustly infers diffusion constants and subpopulations from pooled single-molecule trajectories. To minimize inherent experimental biases, we implement and validate stroboscopic photo-activation SPT (spaSPT), which minimizes motion-blur bias and tracking errors. We validate Spot-On using experimentally realistic simulations and show that Spot-On outperforms other methods. We then apply Spot-On to spaSPT data from live mammalian cells spanning a wide range of nuclear dynamics and demonstrate that Spot-On consistently and robustly infers subpopulation fractions and diffusion constants.
+Single-particle tracking (SPT) has become an important method to bridge biochemistry and cell biology since it allows direct observation of protein binding and diffusion dynamics in live cells. However, accurately inferring information from SPT studies is challenging due to biases in both data analysis and experimental design. To address analysis bias, we introduce ‘Spot-On’, an intuitive web-interface. Spot-On implements a kinetic modeling framework that accounts for known biases, including molecules moving out-of-focus, and robustly infers diffusion constants and subpopulations from pooled single-molecule trajectories. To minimize inherent experimental biases, we implement and validate stroboscopic photo-activation SPT (spaSPT), which minimizes motion-blur bias and tracking errors. We validate Spot-On using experimentally realistic simulations and show that Spot-On outperforms other methods. We then apply Spot-On to spaSPT data from live mammalian cells spanning a wide range of nuclear dynamics and demonstrate that Spot-On consistently and robustly infers subpopulation fractions and diffusion constants.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Here, we introduce an integrated approach to overcome all four biases. The first
 
 ## Results
 
-## Overview of Spot-On
+### Overview of Spot-On
 
 Spot-On is a user-friendly web-interface that pedagogically guides the user through a series of quality-checks of uploaded datasets consisting of pooled single-molecule trajectories. It then performs kinetic model-based analysis that leverages the histogram of molecular displacements over time to infer the fraction and diffusion constant of each subpopulation (Figure 2). Spot-On does not directly analyze raw microscopy images, since a large number of localization and tracking algorithms exist that convert microscopy images into single-molecule trajectories (for a comparison of particle tracking methods, see (Chenouard et al., 2014); moreover, Spot-On can be one-click interfaced with TrackMate (Tinevez et al., 2017), which allows inspection of trajectories before uploading to Spot-On).
 
@@ -45,13 +45,129 @@ Spot-On is a user-friendly web-interface that pedagogically guides the user thro
 
 To use Spot-On, a user uploads their SPT trajectory data in one of several formats (Figure 2). Spot-On then generates useful meta-data for assessing the quality of the experiment (e.g. localization density, number of trajectories etc.). Spot-On also allows a user to upload multiple datasets (e.g. different replicates) and merge them. Spot-On then calculates and displays histograms of displacements over multiple time delays. The next step is model fitting. Spot-On models the distribution of displacements for each subpopulation using Brownian motion under steady-state conditions without state transitions (full model description in Materials and Methods). Spot-On also accounts for localization errors (either user-defined or inferred from the SPT data). Crucially, Spot-On corrects for defocalization bias (Figure 1C) by explicitly calculating the probability that molecules move out-of-focus as a function of time and their diffusion constant (Video 1). In fact, Spot-On uses the gradual loss of freely diffusing molecules over time as additional information to infer the diffusion constant and size of each subpopulation.
 
+![Video 1.](https://cdn.elifesciences.org/articles/33125/elife-33125-video1.mp4.jpg)
+
+**Video 1.:** Illustration of defocalization bias. Illustration of a single-particle tracking experiment with two subpopulations (one ‘immobile’, D = 0.001 µm²/s, the other ‘free’, D = 4 µm²/s with a 1:1 ratio, observed using 20 ms time interval). The red region corresponds to the axial detection range (1 µm) and molecules randomly appear when they photo-activate. For each trajectory, the detected localizations inside the detection range are shown as red spheres and undetected localizations outside the detection range are shown as white spheres. Each particle has a mean lifetime of 15 frames, 25 nm localization error and trajectories consisting of at least two frames are plotted. Epi illumination is assumed. The SPT data was simulated and plotted using simSPT (available at https://gitlab.com/tjian-darzacq-lab/simSPT).
+
 Spot-On considers either 2 or 3 subpopulations. For instance, TFs in nuclei can generally exist in both a chromatin-bound state characterized by slow diffusion and a freely diffusing state associated with rapid diffusion. In this case, a 2-state model is generally appropriate (‘bound’ vs. ‘free’). Spot-On allows a user to choose their desired model and parameter ranges and then fits the model to the data. Using the previous example of TF dynamics, this allows the user to infer the bound fraction and the diffusion constants. Finally, once a user has finished fitting an appropriate model to their data, Spot-On allows easy download of publication-quality figures and relevant data (Figure 2; Full tutorial in Supplementary file 1).
 
-## Validation of Spot-On using simulated SPT data and comparison to other methods
+### Validation of Spot-On using simulated SPT data and comparison to other methods
 
 We first evaluated whether Spot-On could accurately infer subpopulations (Figure 1D) and successfully account for known biases (Figure 1C) using simulated data. We compared Spot-On to a popular alternative approach of first fitting the mean square displacement (MSD) of individual trajectories of a minimum length and then fitting the distribution of estimated diffusion constants (we refer to this as ‘MSDi’) as well as a sophisticated Hidden-Markov Model-based Bayesian inference method (vbSPT) (Persson et al., 2013). Since most SPT data is collected using highly inclined illumination (Tokunaga et al., 2008) (HiLo), we simulated TF binding and diffusion dynamics (2-state model: ‘bound vs. free’) confined inside a 4 µm radius mammalian nucleus under realistic HiLo SPT experimental settings subject to a 25 nm localization error (Figure 3—figure supplement 1). We considered the effect of the exposure time (1 ms, 4 ms, 7 ms, 13 ms, 20 ms), the free diffusion constant (from 0.5 µm²/s to 14.5 µm²/s in 0.5 µm²/s increments) and the bound fraction (from 0% to 95% in 5% increments) yielding a total of 3480 different conditions that span the full range of biologically plausible dynamics (Figure 3—figure supplements 2–3; Appendix 1).
 
 Spot-On accurately inferred subpopulation sizes with minimal error (Figure 3A–B, Table 1), but slightly underestimated the diffusion constant (−4.8%; Figure 3B; Table 1). However, this underestimate was due to particle confinement inside the nucleus: Spot-On correctly inferred the diffusion constant when the confinement was relaxed (Figure 3—figure supplement 4; 20 µm nuclear radius instead of 4 µm). This emphasizes that diffusion constants measured by SPT inside cells should be viewed as apparent diffusion constants. In contrast, the MSDi method failed under most conditions regardless of whether all trajectories were used (MSDi (all)) or a fitting filter applied (MSDi (R2 >0.8); Figure 3A–B; Table 1). vbSPT performed almost as well as Spot-On for slow-diffusing proteins, but showed larger deviations for fast-diffusing proteins (Figure 3—figure supplements 2–3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Simulation results. Experimentally realistic SPT data was simulated inside a spherical mammalian nucleus with a radius of 4 μm subject to highly-inclined and laminated optical sheet illumination (Tokunaga et al., 2008) (HiLo) of thickness 4 μm illuminating the center of the nucleus. The axial detection window was 700 nm with Gaussian edges and particles were subject to a 25 nm localization error in all three dimensions. Photobleaching corresponded to a mean trajectory length of 4 frames inside the HiLo sheet and 40 outside. 3480 experiments were simulated with parameters of DFREE=[0.5;14.5] in steps of 0.5 μm2/s and FBOUND=[0;95% in steps of 5% and the frame rate correspond to Δτ=[1,4,7,10,13,20] ms. Each experiment was then fitted using Spot-On, using vbSPT (maximum of 2 states allowed) (Persson et al., 2013), MSDi using all trajectories of at least five frames (MSDi (all)) or MSDi using all trajectories of at least five frames where the MSD-curvefit showed at least R2 >0.8 (MSDi (R2 >0.8)). (A) shows the distribution of absolute errors in the FBOUND–estimate and (B) shows the distribution of relative errors in the DFREE–estimate. (C) Single simulation example with DFREE = 2.0 µm2/s; FBOUND = 70%; 7 ms per frame. The table on the right uses numbers from CDF-fitting, but for simplicity the fits to the histograms (PDF) are shown in the three plots. (D) Single simulation example with DFREE = 14.0 µm2/s; FBOUND = 50%; 20 ms per frame. Full details on how SPT data was simulated and analyzed with the different methods is given in Appendix 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Trajectories were simulated in a confined volume: a ‘nucleus’ of 8 µm diameter, in which molecules are photoactivated at random and photobleach when located within the HiLo volume (a ~4 µm thick slice). Molecules are detected when they are within the axial detection range of the objective (~700 nm). (B) confinement within the nucleus was achieved by specular reflections against the nuclear envelope: a particle bumping on the nuclear envelope is ballistically reflected inside. (C) axial detection profile used for the simulation (blue): flat-top Gaussian with 600 nm plateau and 100 nm FWHM for the Gaussian edges. (red): approximated axial detection profile assumed by Spot-On (step function with 700 nm width).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Heatmaps showing errors in Spot-On, vbSPT and MSDi estimates of DFREE (A) and FBOUND (B). To comprehensively test Spot-On and alternative analysis methods such as vbSPT and MSDi (Appendix 1), we analyzed 3480 simulations using these methods. The simulations are available for download (see ‘Data availability’) and the code used for the simulations is available at GitLab (https://gitlab.com/tjian-darzacq-lab/simSPT). Briefly, experimentally realistic SPT experiments were simulated assuming 2-state (free or bound) Brownian motion inside a nucleus of 4 µm radius illuminated using HiLo illumination (assuming a HiLo beam width of 4 µm), with an axial detection range of ~700 nm, centered at the middle of the HiLo beam. In (A), the heatmaps show the relative error and in (B) the heatmaps show the absolute error. In a few rare cases (marked by black squares), the MSDi-method failed such that no estimate was possible. Cumulative distribution function (CDF) plots of the relative error in the DFREE–estimate (C) and the absolute error in the FBOUND–estimate (D).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) fits to simulation where DFREE = 2.0 µm2/s; FBOUND = 75%; 1 ms per frame. First column: Spot-On CDF-fit with JumpsToConsider = 4; only CDF-fit at 3Δt is shown. Second column: Spot-On CDF-fit using all jumps; only CDF-fit at 3Δt is shown. Third column: MSDi-CDF-fit to log10(DFREE) considering only trajectories of at least five frames, where the MSD-fit to a single trajectory was good (R2 >0.8). Fourth column: MSDi-CDF-fit to log10(DFREE) considering only trajectories of at least five frames, but without a MSD-fit threshold. Fifth column: table comparing all the four methods as well as vbSPT (2-state) estimates of DFREE and FBOUND to the ground truth used for the simulations. (B) fits to simulation where DFREE = 10.0 µm2/s; FBOUND = 10%; 4 ms per frame. Each column is described in (A). (C) fits to simulation where DFREE = 6.0 µm2/s; FBOUND = 5%; 7 ms per frame. Each column is described in (A). (D) fits to simulation where DFREE = 2.5 µm2/s; FBOUND = 40%; 10 ms per frame. Each column is described in (A). (E) fits to simulation where DFREE = 3.5 µm2/s; FBOUND = 70%; 13 ms per frame. Each column is described in (A). (F) fits to simulation where DFREE = 13.0 µm2/s; FBOUND = 55%; 20 ms per frame. Each column is described in (A).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Heatmaps showing errors in Spot-On, vbSPT and MSDi estimates of DFREE (A) and FBOUND (B). To comprehensively test Spot-On and alternative analysis methods such as vbSPT (Persson et al., 2013) and MSDi (Appendix 1), we analyzed 3480 simulations (described in Figure 3—figure supplement 2) using these methods. In (A), the heatmaps show the relative error and in (B) the heatmaps show the absolute error. In a few rare cases (marked by black squares), the MSDi-method failed such that no estimate was possible. Note that whereas Spot-On would always underestimate DFREE inside a small 4 µm radius nucleus, when the confinement is largely relaxed by considering a 20 µm radius nucleus, Spot-On now shows essentially no bias in its DFREE–estimate. Cumulative distribution function (CDF) plots and summary tables of the relative error in the DFREE–estimate (C) and the absolute error in the FBOUND–estimate (D). Bias refers to the mean error, ‘std’ is the standard deviation and ‘iqr’ is the inter-quartile range (difference between the 75th and 25th percentile).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** In order to determine how important correcting for defocalization bias is, we analyzed the 3480 simulations using Spot-On (all) and exactly the same parameters as in Figure 3A–B except without the defocalization bias correction, ZCORR. Heatmaps show errors in Spot-On (all; with ZCORR) and Spot-On (all; without ZCORR) estimates of DFREE (A) and FBOUND (B). Histogram plots and summary statistics tables of the relative error in the DFREE–estimate (C) and the absolute error in the FBOUND–estimate (D). As can be seen, correcting for defocalization bias slightly improves the DFREE–estimate, but is essential for an accurate FBOUND–estimate. As expected, the longer the lag time, the more important it is to correct for defocalization bias.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Trajectories were simulated using simSPT for a 3-state model. Three representative fractions were picked and for each of them, one state was always bound (DBOUND = 0.001 µm²/s) and the two other states were varied (0.5–11 µm²/s), together with the framerate (1–20 ms), yielding 720 conditions. The simulations were then either fitted with Spot-On or vbSPT constrained to infer up to three states. (A) Distribution of the error of five of the inferred parameters (DSLOW, DFAST, FBOUND, FSLOW, FFAST) with respect to ground truth for Spot-On (red) and vbSPT (blue). The top row shows the distribution and the bottom row the cumulative distribution. (B-G) For each of the three fractions configurations (25/25/50, 25/50/25, 50/25/25%, for B-C, D-E, F-G, respectively), detailed error on five inferred parameters (columns) for different frame rates (rows) and various DSLOW and DFAST (rows and columns of the matrix, respectively). (H) summary table showing the mean error (bias) and standard deviation over all the simulations.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Heatmaps showing errors in Spot-On estimates of DFREE (A) and FBOUND (B) as a function of the axial detection range, Δz. The simulations were as described in Figure 3—figure supplement 2. Rather than an unrealistic step function, the simulated axial detection range has Gaussian edges with FWHM of 700 nm. Spot-On analysis parameters were exactly as for Spot-On (all) in Figure 3—figure supplement 2, except the axial detection range, Δz, was set to either 500 nm, 600 nm, 700 nm, 800 nm or 900 nm. As can be seen, Spot-On is only mildly sensitive to small errors (~100 nm) in the axial detection range estimate. In (A), the heatmaps show the relative error and in (B) the heatmaps show the absolute error. Cumulative distribution function (CDF) plots of the relative error in the DFREE–estimate (C) and the absolute error in the FBOUND–estimate (D) as well as summary tables.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** Heatmaps showing errors in Spot-On estimates of DFREE (A) and FBOUND (B) as a function of the number of time points considered. Note that if TimePoints = n, the number of displacements that will be considered goes from one to (n-1). The simulations were as described in Figure 3—figure supplement 2. Spot-On analysis parameters were exactly as for Spot-On (all) in Figure 3—figure supplement 2, except the TimePoints parameter was set to either 3, 5, 7, 9 or dependent on the frame rate (TimePoints(Δτ)) as in Figure 3—figure supplement 2 and described in Appendix 1. As can be seen, Spot-On is not very sensitive to how many TimePoints were considered. However, when working with small datasets of experimental data, if there is not enough data at higher TimePoints values, noise can make the estimates unreliable. In (A), the heatmaps show the relative error and in (B) the heatmaps show the absolute error. Cumulative distribution function (CDF) plots of the relative error in the DFREE–estimate (C) and the absolute error in the FBOUND–estimate (D) as well as summary tables.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp9-v2.jpg)
+
+**Figure 3—figure supplement 9.:** Heatmaps showing errors in Spot-On and MSDi estimates of DFREE (A) and FBOUND (B). The analysis was performed identically to Figure 3—figure supplement 2 except PDF-fitting was performed instead of CDF-fitting. In (A), the heatmaps show the relative error and in (B) the heatmaps show the absolute error. Cumulative distribution function (CDF) plots of the relative error in the DFREE–estimate (C) and the absolute error in the FBOUND–estimate (D).
+
+![Figure 3—figure supplement 10.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp10-v2.jpg)
+
+**Figure 3—figure supplement 10.:** For six different representative conditions (combinations of DFREE and FBOUND; DBOUND = 0.001 µm²/s; σ = 25 nm), we simulated 100,000 trajectories using simSPT and included state transitions (e.g. transition from bound to free) considering six different lag time (1, 4, 7, 10, 13 and 20 ms) and kON values from 0.1 s−1 to 200 s−1 yielding a total of 396 simulations. The data were analyzed using Spot-On (all) as in Figure 3A–B. (A) For one example parameter set, (A) shows how the histogram of displacements and the goodness of the Spot-On model-fit changes as state transition go from more frequent than the frame rate (left) to very infrequent (right). (B-G), First row: shows sensitivity of the Spot-On estimate of DFREE to the timescale of state transitions. The values of DFREE and FBOUND are shown above the plot. (B-G), Second row: shows sensitivity of the Spot-On estimate of FBOUND to the timescale of state transitions. (B-G), Third row: shows sensitivity of the vbSPT estimate of DFREE to the timescale of state transitions. The values of DFREE and FBOUND are shown above the top plot. (B-G), Fourth row: shows sensitivity of the vbSPT estimate of FBOUND to the timescale of state transitions. As expected, since Spot-On ignores state transitions, the inference breaks down when the timescale of state transitions becomes comparable to the frame rate. Perhaps surprisingly, vbSPT also breaks down when state transitions are frequent despite explicitly modeling this in the Hidden Markov Model. Also as expected, a faster frame rate (e.g. 1 ms in dark blue) can support a faster state transition rate. Nevertheless, as long as the timescale of transitions is at least a few hundred milliseconds, Spot-On is not strongly affected. For comparison, the residence time of most mammalian transcription factors is tens of seconds.
+
+![Figure 3—figure supplement 11.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp11-v2.jpg)
+
+**Figure 3—figure supplement 11.:** For six different representative conditions (combinations of DFREE and FBOUND; DBOUND = 0.001 µm²/s), we simulated 100,000 trajectories using simSPT keeping everything as in Figure 3A–B except varying the localization error (σ) from 10 nm to 75 nm in 5 nm steps and considering six different lag time (1, 4, 7, 10, 13 and 20 ms) yielding a total of 504 simulations. The data were analyzed using Spot-On (all) as in Figure 3A–B except here the localization error was inferred from the fitting. (A-F), top row: show how well the Spot-On inferred the localization error vs. the simulated localization error and the lag times are color coded. The values of DFREE and FBOUND are shown above the plot. (A-F), bottom row: histograms showing the distribution of errors in the localization error estimate across all lag time and σ-values for a given combinations of DFREE and FBOUND. (G) Table showing summary statistics from the fitting in (A-F). We note that in all cases where the bound fraction is significant (>10%), Spot-On robustly infers the localization error (mean error below 1.5 nm), whereas in cases where the bound fraction is small (10% or below), the localization error estimate becomes less robust (mean error ~3–6 nm). This is because Spot-On can most reliably use how the displacement distribution of the bound fraction changes over time to infer the localization error (see also Materials and Methods).
+
+![Figure 3—figure supplement 12.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig3-figsupp12-v2.jpg)
+
+**Figure 3—figure supplement 12.:** (A) Jack-knife data sampling for simulation with DFREE = 2.0 µm2/s; FBOUND = 75%; 1 ms per frame. Simulated data (inside a 4 µm radius nucleus) was used. 100,000 trajectories with a mean photo-bleaching life-time of 4 frames were simulated and then subsampled 50 times without replacement. Sample sizes of either 30, 100, 300, 1,000, 3,000, 10,000, 30,000 or 100,000 trajectories were then fit using Spot-On (all), vbSPT (2-state model) or MSDi (R2 >0.8) as described in the analysis of simulations section. Error bars show standard deviation among the 50 sub-samplings. We note that occasionally, no more than ~5% of the time in the case of 30 trajectories, not a single trajectory of sufficient length for Spot-On or MSDi (R2 >0.8) was found. In these cases, we re-sampled to obtain at least one trajectory of sufficient length. Left plot shows effect of sample size on the DFREE–estimate. Right plot shows effect of sample size on the FBOUND–estimate. The dashed line shows the ground truth used to simulate the SPT data. (A) Jack-knife data sampling for simulation with DFREE = 10.0 µm2/s; FBOUND = 10%; 4 ms per frame. Everything else is as described in (A). (C) Jack-knife data sampling for simulation with DFREE = 3.5 µm2/s; FBOUND = 50%; 7 ms per frame. Everything else is as described in (A). (D) Jack-knife data sampling for simulation with DFREE = 3.5 µm2/s; FBOUND = 70%; 13 ms per frame. Everything else is as described in (A). (E) Jack-knife data sampling for simulation with DFREE = 13.0 µm2/s; FBOUND = 55%; 20 ms per frame. Everything else is as described in (A).
+
+**Table 1.**
+ Summary of simulation results and comparison of methods.The table shows the bias (mean error), ‘std’ (standard deviation) and ‘iqr’ (inter-quartile range: difference between the 75th and 25th percentile) for each method for all 3480 simulations. The left column shows the relative bias/std/iqr for the DFREE-estimate and the right column shows the absolute bias/std/iqr for the FBOUND-estimate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Analysis method</th>
+      <th colspan="3">DFREE</th>
+      <th colspan="3">FBOUND</th>
+    </tr>
+    <tr>
+      <th>bias</th>
+      <th>std</th>
+      <th>iqr</th>
+      <th>bias</th>
+      <th>std</th>
+      <th>iqr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spot-On (all)</td>
+      <td>−4.8%</td>
+      <td>3.3%</td>
+      <td>3.5%</td>
+      <td>−1.7%</td>
+      <td>1.2%</td>
+      <td>1.8%</td>
+    </tr>
+    <tr>
+      <td>vbSPT (2-state)</td>
+      <td>0.8%</td>
+      <td>12.5%</td>
+      <td>6.8%</td>
+      <td>5.0%</td>
+      <td>4.6%</td>
+      <td>6.1%</td>
+    </tr>
+    <tr>
+      <td>MSDi (R2 &gt; 0.8)</td>
+      <td>8.0%</td>
+      <td>28.5%</td>
+      <td>4.9%</td>
+      <td>−20.6%</td>
+      <td>26.4%</td>
+      <td>32.1%</td>
+    </tr>
+    <tr>
+      <td>MSDi (all)</td>
+      <td>−39.6%</td>
+      <td>41.8%</td>
+      <td>19.0%</td>
+      <td>22.0%</td>
+      <td>15.8%</td>
+      <td>17.8%</td>
+    </tr>
+  </tbody>
+</table>
 
 To illustrate how the methods could give such divergent results when run on the same SPT data, we considered two example simulations (Figure 3C–D; more examples in Figure 3—figure supplement 3). First, we considered a mostly bound and relatively slow diffusion case (DFREE: 2.0 µm²/s; FBOUND: 70%; Δτ: 7 ms; Figure 3C). Spot-On and vbSPT accurately inferred both DFREE and FBOUND. In contrast, MSDi (R2 > 0.8) greatly underestimated FBOUND (13.6% vs. 70%), whereas MSDi (all) slightly overestimated FBOUND. Since MSDi-based methods apply two thresholds (first, minimum trajectory length: here five frames; second, filtering based on R2) in many cases less than 5% of all trajectories passed these thresholds and this example illustrate how sensitive MSDi-based methods are to these thresholds. Note that although we show the fits to the probability density function since this is more intuitive (PDF; histogram), we performed the fitting to the cumulative distribution function (CDF). Second, we considered an example with a slow frame rate and fast diffusion, such that the free population rapidly moves out-of-focus (DFREE: 14.0 µm²/s; FBOUND: 50%; Δτ: 20 ms; Figure 3D). Spot-On again accurately inferred FBOUND, and slightly underestimated DFREE due to high nuclear confinement (Figure 3—figure supplement 4). Although vbSPT generally performed well, because it does not correct for defocalization bias (vbSPT was developed for bacteria, where defocalization bias is minimal), vbSPT strongly overestimated FBOUND in this case (Figure 3D). Consistent with this, Spot-On without defocalization-bias correction also strongly overestimates the bound fraction (Figure 3—figure supplement 5). We conclude that correcting for defocalization bias is critical. The MSDi-based methods again gave divergent results despite seemingly fitting the data well. Thus, a good fit to a histogram of log(D) does not necessarily imply that the inferred DFREE and FBOUND are accurate. A full discussion and comparison of the methods is given in Appendix 1. Finally, we extended this analysis of simulated SPT data to three states (one ‘bound’, two ‘free’ states) and compared Spot-On and vbSPT. Spot-On again accurately inferred both the diffusion constants and subpopulation fractions of each population and slightly outperformed vbSPT (Figure 3—figure supplement 6).
 
@@ -59,15 +175,35 @@ Having established that Spot-On is accurate, we next tested whether it was also 
 
 Taken together, this analysis of simulated SPT data suggests that Spot-On successfully overcomes defocalization and analysis method biases (Figure 1C–D), accurately and robustly estimates subpopulations and diffusion constants across a wide range of dynamics and, finally, outperforms other methods.
 
-## spaSPT minimizes biases in experimental SPT acquisitions
+### spaSPT minimizes biases in experimental SPT acquisitions
 
 Having validated Spot-On on simulated data, which is not subject to experimental biases (Figure 1A–B), we next sought to evaluate Spot-On on experimental data. To generate SPT data with minimal acquisition bias we performed stroboscopic photo-activation SPT (spaSPT; Figure 4A), which integrates previously and separately published ideas to minimize experimental biases. First, spaSPT minimizes motion-blurring, which is caused by particle movement during the camera exposure time (Figure 1A), by using stroboscopic excitation (Elf et al., 2007; Frost et al., 2012). We found that the bright and photo-stable dyes PA-JF549 and PA-JF646 (Grimm et al., 2016a) in combination with the HaloTag (‘Halo’) labeling strategy made it possible to achieve a signal-to-background ratio greater than 5 with just 1 ms excitation pulses, thus providing a good compromise between minimal motion-blurring and high signal (Figure 4B). Second, spaSPT minimizes tracking errors (Figure 1B) by using photo-activation (Figure 4A) (Grimm et al., 2016a; Manley et al., 2008). Tracking errors are generally caused by high particles densities. Photo-activation allows tracking at extremely low densities (≤1 molecule per nucleus per frame) and thereby minimizes tracking errors (Izeddin et al., 2014), whilst at the same time generating thousands of trajectories. To consider the full spectrum of nuclear protein dynamics, we studied histone H2B-Halo (overwhelmingly bound; fast diffusion; Figure 4C), Halo-CTCF (Hansen et al., 2017) (largely bound; slow diffusion; Figure 4D) and Halo-NLS (overwhelmingly free; very fast diffusion; Figure 4F) in human U2OS cells and Halo-Sox2 (Teves et al., 2016) (largely free; intermediate diffusion; Figure 4E) in mouse embryonic stem cells (mESCs). We labeled Halo-tagged proteins in live cells with the HaloTag ligands PA-JF549 or PA-JF646 (Grimm et al., 2016a) and performed spaSPT using HiLo illumination (Video 2). To generate a large dataset to comprehensively test Spot-On, we performed 1064 spaSPT experiments across 60 different conditions.
 
-## Validation of Spot-On using spaSPT data at different frame rates
+![Figure 4.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig4-v2.jpg)
+
+**Figure 4.:** (A) spaSPT. HaloTag-labeling with UV (405 nm) photo-activatable dyes enable spaSPT. spaSPT minimizes tracking errors through photo-activation which maintains low densities. (B) Example data. Raw spaSPT images for Halo-CTCF tracked in human U2OS cells at 134 Hz (1 ms stroboscopic 633 nm excitation of JF646). (C–F) Histograms of displacements for multiple Δτ of histone H2B-Halo in U2OS cells (C), Halo-CTCF in U2OS cells (d), Halo-Sox2 in mES cells (E) and Halo-3xNLS in U2OS cells (F). (G–H) Effect of frame-rate on DFREE and FBOUND. spaSPT was performed at 200 Hz, 167 Hz, 134 Hz, 100 Hz, 74 Hz and 50 Hz using the 4 cell lines and the data fit using Spot-On and a 2-state model. Each experiment on each cell line was performed in four replicates on different days and ~5 cells imaged each day. (I) Motion-blur experiment. To investigate the effect of ‘motion-blurring’, the total number of excitation photons was kept constant, but delivered during pulses of duration 1, 2, 4, 7 ms or continuous (cont) illumination. (J–K) Effect of motion-blurring on DFREE and FBOUND. spaSPT data was recorded at 100 Hz and 2-state model-fitting performed with Spot-On. The inferred DFREE (J) and FBOUND (K) were plotted as a function of excitation pulse duration. Each experiment on each cell line was performed in four replicates on different days and ~5 cells imaged each day. Error bars show standard deviation between replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** To determine the axial detection range, mESC C59 Halo-mCTCF (Hansen et al., 2017) and U2OS C32 Halo-hCTCF (Hansen et al., 2017) cells were grown overnight on plasma-cleaned coverslips, labelled with 250 pM JF646, fixed in 4% PFA in PBS for 20 min, washed with PBS and then imaged in PBS with 0.01% (w/v) NaN3. We imaged the fixed cells using longer exposure times and very low 633 nm laser intensity to minimize photo-bleaching and collected a 6 µm z-stack spanning most of a nucleus using 20 nm steps. We optimized the imaging conditions to give near identical signal-to-noise to our spaSPT conditions and the data shown is merged data from at least 15 different cells for each cell line. We then localized and ‘tracked’ molecules to determine the experimental axial detection range. (A-B) show empirical survival probability distribution for PFA-fixed mESC C59 JF646Halo-mCTCF (A) and PFA-fixed U2OS C32 JF646Halo-hCTCF (B). A minimal threshold, τMIN, was set to filter out noise and the left plot shows τMIN=10 frames and the right plot τMIN=15 frames. The raw data is shown in red and a model-fit is overlaid. The estimated axial detection range is also shown. We note that the numbers depend somewhat on the threshold set and differ a bit between U2OS and mES cells. As an approximate average, we used 700 nm here. Importantly, we note that Spot-On is relatively robust to the axial detection range estimate and that changing it by 100 nm only marginally changes the results (Figure 3—figure supplement 7) (C) summary of the model that was fit to the data and the key model parameters. The model assumes that photo-bleaching is a Poisson process and that the axial detection range can be modeled as a Gaussian CDF. Raw data used to plot (A-B) and code for reproducing this figure and the model-fitting is available on GitLab: https://gitlab.com/tjian-darzacq-lab/estimateaxialdetectionrange.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) MSD-fit and Spot-On for U2OS H2B-Halo PA-JF646 spaSPT at 134 Hz. First column: A power law was fit to the time- and –ensemble-averaged mean squared displacement (MSD) and the anomalous diffusion exponent, α, inferred. To calculate the MSD from only the free population, vbSPT with an enforced 2-state model was used to classify trajectories into either bound or free and the MSD calculated from the vbSPT-classified free population. Error bars were obtained from jackknife sampling: random 50% subsamples of the data were taken, the MSD calculated and this repeated 20 times. Error bars show standard deviation among subsamplings. The best-fit α-value as well as 95% confidence intervals (CI) are shown. Second column: Spot-On inferred DFREE and FBOUND from spaSPT experiments at a range of frame rates from 50 Hz to 200 Hz. Despite anomalous diffusion, Spot-On is nevertheless able to estimate reasonably consistent DFREE and FBOUND across a wide range of frame-rates. Third to fifth column: Spot-On (JumpsToConsider = 4; 2-state model) CDF-fits at three selected time-points, showing that even with significant anomalous diffusion and only three fitted parameters, Spot-On can nonetheless fit the data reasonably well. (B) MSD-fit and Spot-On for U2OS C32 Halo-CTCF PA-JF646 spaSPT at 134 Hz. Each column is described in (A). (C) MSD-fit and Spot-On for mESC C3 Halo-Sox2 PA-JF646 spaSPT at 134 Hz. Each column is described in (A). (D) MSD-fit and Spot-On for U2OS Halo-3xNLS PA-JF646 spaSPT at 134 Hz. Each column is described in (A). (E) MSD-fit and Spot-On for simulated data with DFREE = 3.5 µm2/s; FBOUND = 50%; 7 ms per frame.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/33125/elife-33125-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** We re-analyzed the experimental data shown in Figure 4G–K using vbSPT (allowing up to two states) instead of Spot-On. (A-B) Effect of frame-rate on DFREE and FBOUND. spaSPT was performed at 200 Hz, 167 Hz, 134 Hz, 100 Hz, 74 Hz and 50 Hz using the 4 cell lines and the data analyzed using vbSPT (max two states). Each experiment on each cell line was performed in four replicates on different days and ~5 cells imaged each day. Error bars show standard deviation between replicates. (C) Motion-blur experiment. To investigate the effect of ‘motion-blurring’, the total number of excitation photons was kept constant, but delivered during pulses of duration 1, 2, 4, 7 ms or continuous (cont) illumination. (D-E) Effect of motion-blurring on DFREE and FBOUND. spaSPT data was recorded at 100 Hz and the data analyzed using vbSPT (max two states). The inferred DFREE (D) and FBOUND (E) were plotted as a function of excitation pulse duration. Each experiment on each cell line was performed in four replicates on different days and ~5 cells imaged each day. Error bars show standard deviation between replicates. Compared to Spot-On (Figure 4G–K; repeated below), vbSPT generally reports a higher bound fraction (e.g. vbSPT reports a total bound fraction for Halo-Sox2 of ~60–65%, which is much higher than previously reported [Teves et al., 2016]). vbSPT most likely overestimates the bound fraction because it does not account for defocalization bias.
+
+![Video 2.](https://cdn.elifesciences.org/articles/33125/elife-33125-video2.mp4.jpg)
+
+**Video 2.:** Representative raw spaSPT movie (Halo-hCTCF at 134 Hz). spaSPT movie (1 ms of 633 nm laser delivered at the beginning of each frame; 405 nm laser photo-activation pulses delivered in between frames) of endogenously tagged CTCF (C32 Halo-hCTCF) in human U2OS cells imaged at ~134 Hz (7.477 ms per frame). Dye: PA-JF646. One pixel: 160 nm.
+
+### Validation of Spot-On using spaSPT data at different frame rates
 
 First, we studied whether Spot-On could consistently infer subpopulations over a wide range of frame rates. We experimentally determined the axial detection range to be ~700 nm (Figure 4—figure supplement 1) and performed spaSPT at 200 Hz, 167 Hz, 134 Hz, 100 Hz, 74 Hz and 50 Hz using the four cell lines. Spot-On consistently inferred the diffusion constant (Figure 4G) and total bound fraction across the wide range of frame rates (Figure 4H). This is notable since all four proteins exhibit apparent anomalous diffusion (Figure 4—figure supplement 2) and this demonstrates that Spot-On is also robust to anomalous diffusion despite modeling Brownian motion. While the ground-truth is unknown when considering experiments, Spot-On gave biologically reasonable results: histone H2B was overwhelmingly bound and free Halo-3xNLS was overwhelmingly unbound (comparison with vbSPT: Figure 4—figure supplement 3). These results provide additional validation for the bias corrections implemented in Spot-On. We also note that although Spot-On was validated on spaSPT data, SPT data with non-photoactivatable dyes is also suitable for Spot-On analysis provided that the density is sufficiently low to minimize tracking errors (see also Appendix 3: "Which datasets are appropriate for Spot-On?”). Finally, we demonstrated above that just ~3000 short trajectories (mean length ~3–4 frames) were sufficient for Spot-On to accurately infer DFREE and FBOUND (Figure 3—figure supplement 12). Here we obtain well above 3000 trajectories per cell even at ~1 localization/frame. More generally, with spaSPT this should be generally achievable for all but the most lowly expressed nuclear proteins. Thus, this now makes it possible to study biological cell-to-cell variability in TF dynamics.
 
-## Effect of motion-blur bias on parameter estimates
+### Effect of motion-blur bias on parameter estimates
 
 Having validated Spot-On on experimental SPT data, we next applied Spot-On to estimate the effect of motion-blurring on the estimation of subpopulations. As mentioned, since most localization algorithms (Chenouard et al., 2014; Sergé et al., 2008) achieve super-resolution through PSF-fitting, this may cause motion-blurred molecules to be undersampled, resulting in a bias towards slow-moving molecules (Figure 1A). We estimated the extent of the bias by imaging the four cell lines at 100 Hz and keeping the total number of excitation photons constant, but varying the excitation pulse duration (1 ms, 2 ms, 4 ms, 7 ms, constant; Figure 4I). For generality, we performed these experiments using both PA-JF549 and PA-JF646 dyes (Grimm et al., 2016a). We used Spot-On to fit the data and plotted the apparent free diffusion constant (Figure 4J) and apparent total bound fraction (Figure 4K) as a function of the excitation pulse duration. For fast-diffusing proteins like Halo-3xNLS and H2B-Halo, motion-blurring resulted in a large underestimate of the free diffusion constant, whereas the effect on slower proteins like CTCF and Sox2 was minor (Figure 4J). Regarding the total bound fraction, motion-blurring caused a ~2 fold overestimate for rapidly diffusing Halo-3xNLS (Figure 4K), but had a minor effect on slower proteins like H2B, CTCF and Sox2. Similar results were obtained for both dyes for proteins with a significant bound fraction, but we note that JF549 appears to better capture the dynamics of proteins with a minimal bound fraction such as Halo-3xNLS (Figure 4J–K). Finally, we note that the extent of the bias due to motion-blurring will likely be very sensitive to the localization algorithm. Here, using the MTT-algorithm (Sergé et al., 2008), motion-blurring caused up to a 2-fold error in both the DFREE and FBOUND estimates.
 
@@ -81,37 +217,165 @@ Here, we introduce approaches for accounting for both experimental and analysis 
 
 ## Materials and methods
 
-## Spot-On model
+**Key resources table**
 
-Spot-On implements and extends a kinetic modeling framework first described in Mazza et al. (2012) and later extended in Hansen et al. (2017). Briefly, the model infers the diffusion constant and relative fractions of two or three subpopulations from the distribution of displacements (or histogram of displacements) computed at increasing lag time (1Δτ, 2Δτ,. ..). This is performed by fitting a semi-analytical model to the empirical histogram of displacements using non-linear least squares fitting. Defocalization is explicitly accounted for by modeling modeling the fraction of particles that remain in focus over time as a function of their diffusion constant.
 
-Mathematically, the evolution over time of a concentration of particles located at the origin as a Dirac delta function and which follows free diffusion in two dimensions with a diffusion constant D can be described by a propagator (also known as Green’s function). Properly normalized, the probability of a particle starting at the origin ending up at a location r = (x,y) after a time delay, Δτ, is given by:P(r,Δτ)=Nr2DΔτe−r24DΔτ
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Halo-CTCF</td>
+      <td>Hansen et al. eLife 2017;6:e25776; PMID 28467304; doi: 10.7554/eLife.25776</td>
+      <td>U2OS C32 FLAG-Halo-CTCF</td>
+      <td>Previously reported homozygous endogenous knock-in cell line where all endogenous copies of CTCF have been N-terminally tagged with FLAG-HaloTag</td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Halo-3xNLS</td>
+      <td>Hansen et al. eLife 2017;6:e25776; PMID 28467304; doi: 10.7554/eLife.25776</td>
+      <td>U2OS Halo-3xNLS</td>
+      <td>U2OS cell line stably expressing Halo-3xNLS (3 copies of the SV40 Nuclear Localization Signal) generated by G418 selection. Generously provided by David T McSwiggen.</td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>H2B-Halo</td>
+      <td>Hansen et al. eLife 2017;6:e25776; PMID 28467304; doi: 10.7554/eLife.25776</td>
+      <td>U2OS H2B-Halo-SNAP</td>
+      <td>U2OS cell line stably expressing histone H2B-Halo-SNAP generated by G418 selection. Generously provided by David T McSwiggen.</td>
+    </tr>
+    <tr>
+      <td>cell line (Mus musculus)</td>
+      <td>Halo-Sox2</td>
+      <td>Teves et al. eLife 2016;5:e22280; PMID 27855781; doi: 10.7554/eLife.22280</td>
+      <td>mESC JM8.N4 C3 Halo-FLAG-Sox2</td>
+      <td>Previously reported homozygous endogenous knock-in cell line where both endogenous copies of Sox2 have been N-terminally tagged with HaloTag-FLAG. Generously provided by Sheila S Teves.</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Spot-On Matlab</td>
+      <td>this paper</td>
+      <td>Spot-On Matlab</td>
+      <td>Please see Materials and Methods for a full description. Open-source code is freely available at GitLab: : https://gitlab.com/tjian-darzacqlab/spot-on-matlab (copy archived at https://github.com/elifesciences-publications/spot-on-matlab)</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Spot-On Python</td>
+      <td>this paper</td>
+      <td>Spot-On Python</td>
+      <td>Please see Materials and Methods for a full description. Open-source code is freely available at GitLab: https://gitlab.com/tjian-darzacqlab/Spot-On-cli (copy archived at https://github.com/elifesciences-publications/spot-on-cli)</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Spot-On</td>
+      <td>this paper</td>
+      <td>Spot-On</td>
+      <td>Please see Materials and Methods for a full description. The web-interface can be found at https://spoton.berkeley.edu/ and the underlying source-code is freely available at GitLab: https://gitlab.com/tjian-darzacqlab/Spot-On (copy archived at https://github.com/elifesciences-publications/spot-on)</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>simSPT</td>
+      <td>this paper</td>
+      <td>simSPT</td>
+      <td>Code for efficiently simulating experimentally realistic SPT data. Please see Materials and Methods for a full description. Open-source code is freely available at GitLab: https://gitlab.com/tjian-darzacq-lab/simSPT</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MSDi; vbSPT;</td>
+      <td>this paper and Persson et al. Nature Methods 2013; PMID: 23396281; DOI: 10.1038/nmeth.2367</td>
+      <td>MSDi; vbSPT;</td>
+      <td>Supplementary software used for MSDi and vbSPT analysis as well as for generating the simulated data can be found at: https://zenodo.org/record/835171</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>PA-JF549</td>
+      <td>Grimm et al. Nature Methods 2016; PMID 27776112; DOI: 10.1038/nmeth.4034</td>
+      <td>PA-JF549</td>
+      <td>Please contact Luke D Lavis for distribution.</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>PA-JF646</td>
+      <td>Grimm et al. Nature Methods 2016; PMID 27776112; DOI: 10.1038/nmeth.4034</td>
+      <td>PA-JF646</td>
+      <td>Please contact Luke D Lavis for distribution.</td>
+    </tr>
+  </tbody>
+</table>
 
-Here N is a normalization constant with units of length. Spot-On integrates this distribution over a small histogram bin window, Δr, to obtain a normalized distribution, the distribution of displacement lengths to compare to binned experimental data. For simplicity, we will therefore leave out N from subsequent expressions. Since experimental SPT data is subject to a significant mean localization error, σ, Spot-On also accounts for this (Matsuoka et al., 2009):P(r,Δτ)=r2(DΔτ+σ2)e−r24(DΔτ+σ2)
+### Spot-On model
 
-Many proteins studied by SPT can generally exist in a quasi-immobile state (e.g. a chromatin-bound state in the case of transcription factors) and one or more mobile states. We will first consider the 2-state model. Under most conditions, state transitions can be ignored ((Hansen et al., 2017) and Figure 3—figure supplement 10). Thus, the steady-state 2-state model considered by Spot-On becomes:P(r,Δτ)=FBOUNDr2(DBOUNDΔτ+σ2)e−r24(DBOUNDΔτ+σ2)+(1−FBOUND)r2(DFREEΔτ+σ2)e−r24(DFREEΔτ+σ2)
+Spot-On implements and extends a kinetic modeling framework first described in Mazza et al. (2012) and later extended in Hansen et al. (2017). Briefly, the model infers the diffusion constant and relative fractions of two or three subpopulations from the distribution of displacements (or histogram of displacements) computed at increasing lag time (1$Δ\tau$, 2$Δ\tau$,. ..). This is performed by fitting a semi-analytical model to the empirical histogram of displacements using non-linear least squares fitting. Defocalization is explicitly accounted for by modeling modeling the fraction of particles that remain in focus over time as a function of their diffusion constant.
 
-Here, the quasi-immobile subpopulation has diffusion constant, DBOUND, and makes up a fraction, FBOUND, whereas the freely diffusing subpopulation has diffusion constant, DFREE, and makes up a fraction, FFREE=1-FBOUND. To account for defocalization bias (Figure 1C), Spot-On explicitly considers the probability of the freely diffusing subpopulation moving out of the axial detection range, Δz, during each time delay, Δτ. This is important. For example, only ~25% of freely-diffusing molecules will remain in focus for at least five frames (assuming Δτ = 10 ms; Δz=700 nm; one gap allowed; D = 5 µm²/s), resulting in a 4-fold undercounting if uncorrected for. If we assume absorbing boundaries such that any molecule that contacts the edges of the axial detection range located at zMAX=Δz/2 and zMIN=−Δz/2 is permanently lost, the fraction of freely diffusing molecules with diffusion constant, DFREE, that remain at time delay, Δτ, is given by (Carslow and Jaeger, 1959; Kues and Kubitscheck, 2002):Premaining(Δτ,Δz,DFREE)=1Δz∫−Δz/2Δz/2{1−∑n=0∞(−1)n[erfc((2n+1)Δz2−z4DFREEΔτ)+erfc((2n+1)Δz2+z4DFREEΔτ)]}dz
+Mathematically, the evolution over time of a concentration of particles located at the origin as a Dirac delta function and which follows free diffusion in two dimensions with a diffusion constant D can be described by a propagator (also known as Green’s function). Properly normalized, the probability of a particle starting at the origin ending up at a location r = (x,y) after a time delay, $Δ\tau$, is given by:
 
-However, this analytical expression overestimates the fraction lost since there is a significant probability that a molecule that briefly contacted or exceeded the boundary re-enters the axial detection range. The re-entry probability depends on the number of gaps allowed in the tracking (g), Δτ, and Δz and can be approximately accounted for by considering a corrected axial detection range, Δzcorr, larger than Δz: Δzcorr>Δz:Δzcorr(Δz,Δτ,DFREE,g)=Δz+a(Δz,Δτ,g)DFREE+b(Δz,Δτ,g)
+$$
+P(r,Δ\tau)=N\frac{r}{2DΔ\tau}e^{\frac{−r^{2}}{4DΔ\tau}}
+$$
 
-Although Δzcorr depend on the number of gaps (g) allowed in the tracking, we will leave it out for simplicity in the following. We determined the coefficients a and b from Monte Carlo simulations. For a given diffusion constant, D, 50,000 molecules were randomly placed one-dimensionally along the z-axis drawn from a uniform distribution from zMIN=−Δz/2 to zMAX=Δz/2. Next, using a time-step Δτ, one-dimensional Brownian diffusion was simulated along the z-axis using the Euler-Maruyama scheme. For time delays from 1Δτ to 15Δτ, the fraction of molecules that were lost was calculated in the range of D=[1;12] μm2/s. a(Δz,Δτ,g) and b(Δz,Δτ,g) were then estimated through least-squares fitting of Premaining(Δτ,Δzcorr,D) to the simulated fraction remaining. The process was repeated over a grid of plausible values of (Δz,Δτ,g) to derive a grid of 134,865 (a,b) parameter pairs. This pre-calculated library of (a,b) parameters enables Spot-On to perform model fitting on nearly any SPT dataset with minimal overhead.
+Here N is a normalization constant with units of length. Spot-On integrates this distribution over a small histogram bin window, Δr, to obtain a normalized distribution, the distribution of displacement lengths to compare to binned experimental data. For simplicity, we will therefore leave out N from subsequent expressions. Since experimental SPT data is subject to a significant mean localization error, $\sigma$, Spot-On also accounts for this (Matsuoka et al., 2009):
 
-Thus, the 2-state model Spot-On uses for kinetic modeling of SPT data is given by:P2(r,Δτ)=FBOUNDr2(DBOUNDΔτ+σ2)e−r24(DBOUNDΔτ+σ2)+ZCORR(Δτ,Δzcorr,DFREE)(1−FBOUND)r2(DFREEΔτ+σ2)e−r24(DFREEΔτ+σ2)where:ZCORR(Δτ,Δzcorr,DFREE)=1Δzcorr∫−Δzcorr2Δzcorr2{1−∑n=0∞(−1)n[erfc((2n+1)Δzcorr2−z4DFREEΔτ)+erfc((2n+1)Δzcorr2+z4DFREEΔτ)]}dz
+$$
+P(r,Δ\tau)=\frac{r}{2(DΔ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(DΔ\tau+\sigma^{2})}}
+$$
 
-Having derived the 2-state model, generalization to a 3-state model with 1 bound and 2 diffusive states is straightforward. If the three subpopulations have diffusion constants DBOUND, DSLOW, DFAST, and fractions FBOUND, FSLOW, FFAST, such that FBOUND+FSLOW+FFAST=1, then the 3-state model considered by Spot-On becomes:P3(r,Δτ)=FBOUNDr2(DBOUNDΔτ+σ2)e−r24(DBOUNDΔτ+σ2)+ZCORR(Δτ,Δzcorr,DSLOW)FSLOWr2(DSLOWΔτ+σ2)e−r24(DSLOWΔτ+σ2)+ZCORR(Δτ,Δzcorr,DFAST)(1−FBOUND−FSLOW)r2(DFASTΔτ+σ2)e−r24(DFASTΔτ+σ2)
+Many proteins studied by SPT can generally exist in a quasi-immobile state (e.g. a chromatin-bound state in the case of transcription factors) and one or more mobile states. We will first consider the 2-state model. Under most conditions, state transitions can be ignored ((Hansen et al., 2017) and Figure 3—figure supplement 10). Thus, the steady-state 2-state model considered by Spot-On becomes:
 
-Where ZCORR(Δτ,Δzcorr,D) is as described above.
+$$
+P(r,Δ\tau)=F_{BOUND}\frac{r}{2(D_{BOUND}Δ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(D_{BOUND}Δ\tau+\sigma^{2})}}+(1−F_{BOUND})\frac{r}{2(D_{FREE}Δ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(D_{FREE}Δ\tau+\sigma^{2})}}
+$$
 
-## Numerical implementation of models in Spot-On
+Here, the quasi-immobile subpopulation has diffusion constant, $D_{BOUND}$, and makes up a fraction, $F_{BOUND}$, whereas the freely diffusing subpopulation has diffusion constant, $D_{FREE}$, and makes up a fraction, $F_{FREE}=1-F_{BOUND}$. To account for defocalization bias (Figure 1C), Spot-On explicitly considers the probability of the freely diffusing subpopulation moving out of the axial detection range, $Δz$, during each time delay, $Δ\tau$. This is important. For example, only ~25% of freely-diffusing molecules will remain in focus for at least five frames (assuming $Δ\tau$ = 10 ms; $Δz$=700 nm; one gap allowed; D = 5 µm²/s), resulting in a 4-fold undercounting if uncorrected for. If we assume absorbing boundaries such that any molecule that contacts the edges of the axial detection range located at $z_{MAX}=Δz/2$ and $z_{MIN}=−Δz/2$ is permanently lost, the fraction of freely diffusing molecules with diffusion constant, $D_{FREE}$, that remain at time delay, $Δ\tau$, is given by (Carslow and Jaeger, 1959; Kues and Kubitscheck, 2002):
 
-Spot-On calculates the empirical histogram of displacements based on a user-defined bin width. Spot-On allows the user to choose between PDF- and CDF-fitting of the kinetic model to the empirical displacement distributions; CDF-fitting is generally most accurate for smaller datasets and the two are similar for large datasets (Figure 3—figure supplement 9). The integral in ZCORR(Δτ,Δzcorr) was numerically evaluated using the midpoint method over 200 points and the terms of the series computed until the term falls below a threshold of 10−10. Model fitting and parameter optimization was performed using a non-linear least squares algorithm (Levenberg-Marquardt). Random initial parameter guesses are drawn uniformly from the user-specified parameter range. The optimization is then repeated several times with different initialization parameters to avoid local minima. Spot-On constrains each fraction to be between 0 and 1 and for the sum of the fractions to equal 1.
+$$
+P_{remaining}(Δ\tau,Δz,D_{FREE})=\frac{1}{Δz}\int_{−Δz/2}^{Δz/2}{1−\sumn=0∞(−1)^{n}[erfc(\frac{\frac{(2n+1)Δz}{2}−z}{\sqrt{4D_{FREE}Δ\tau}})+erfc(\frac{\frac{(2n+1)Δz}{2}+z}{\sqrt{4D_{FREE}Δ\tau}})]}dz
+$$
 
-## Theoretical characteristics and limitations of the model
+However, this analytical expression overestimates the fraction lost since there is a significant probability that a molecule that briefly contacted or exceeded the boundary re-enters the axial detection range. The re-entry probability depends on the number of gaps allowed in the tracking ($g$), $Δ\tau$, and $Δz$ and can be approximately accounted for by considering a corrected axial detection range, $Δz_{corr}$, larger than $Δz$: $Δz_{corr}>Δz$:
+
+$$
+Δz_{corr}(Δz,Δ\tau,D_{FREE},g)=Δz+a(Δz,Δ\tau,g)\sqrt{D_{FREE}}+b(Δz,Δ\tau,g)
+$$
+
+Although $Δz_{corr}$ depend on the number of gaps (g) allowed in the tracking, we will leave it out for simplicity in the following. We determined the coefficients a and b from Monte Carlo simulations. For a given diffusion constant, D, 50,000 molecules were randomly placed one-dimensionally along the z-axis drawn from a uniform distribution from $z_{MIN}=−Δz/2$ to $z_{MAX}=Δz/2$. Next, using a time-step $Δ\tau$, one-dimensional Brownian diffusion was simulated along the z-axis using the Euler-Maruyama scheme. For time delays from 1$Δ\tau$ to 15$Δ\tau$, the fraction of molecules that were lost was calculated in the range of D=[1;12] μm2/s. $a(Δz,Δ\tau,g)$ and $b(Δz,Δ\tau,g)$ were then estimated through least-squares fitting of $P_{remaining}(Δ\tau,Δz_{corr},D)$ to the simulated fraction remaining. The process was repeated over a grid of plausible values of ($Δz,Δ\tau,g$) to derive a grid of 134,865 (a,b) parameter pairs. This pre-calculated library of (a,b) parameters enables Spot-On to perform model fitting on nearly any SPT dataset with minimal overhead.
+
+Thus, the 2-state model Spot-On uses for kinetic modeling of SPT data is given by:
+
+$$
+P_{2}(r,Δ\tau)=F_{BOUND}\frac{r}{2(D_{BOUND}Δ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(D_{BOUND}Δ\tau+\sigma^{2})}}+Z_{CORR}(Δ\tau,Δz_{corr},D_{FREE})(1−F_{BOUND})\frac{r}{2(D_{FREE}Δ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(D_{FREE}Δ\tau+\sigma^{2})}}
+$$
+
+where:
+
+$$
+Z_{CORR}(Δ\tau,Δz_{corr},D_{FREE})=\frac{1}{Δz_{corr}}\int_{\frac{−Δz_{corr}}{2}}^{\frac{Δz_{corr}}{2}}{1−\sumn=0∞(−1)^{n}[erfc(\frac{\frac{(2n+1)Δz_{corr}}{2}−z}{\sqrt{4D_{FREE}Δ\tau}})+erfc(\frac{\frac{(2n+1)Δz_{corr}}{2}+z}{\sqrt{4D_{FREE}Δ\tau}})]}dz
+$$
+
+Having derived the 2-state model, generalization to a 3-state model with 1 bound and 2 diffusive states is straightforward. If the three subpopulations have diffusion constants $D_{BOUND}$, $D_{SLOW}$, $D_{FAST}$, and fractions $F_{BOUND}$, $F_{SLOW}$, $F_{FAST}$, such that $F_{BOUND}+F_{SLOW}+F_{FAST}$=1, then the 3-state model considered by Spot-On becomes:
+
+$$
+P_{3}(r,Δ\tau)=F_{BOUND}\frac{r}{2(D_{BOUND}Δ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(D_{BOUND}Δ\tau+\sigma^{2})}}+Z_{CORR}(Δ\tau,Δz_{corr},D_{SLOW})F_{SLOW}\frac{r}{2(D_{SLOW}Δ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(D_{SLOW}Δ\tau+\sigma^{2})}}+Z_{CORR}(Δ\tau,Δz_{corr},D_{FAST})(1−F_{BOUND}−F_{SLOW})\frac{r}{2(D_{FAST}Δ\tau+\sigma^{2})}e^{\frac{−r^{2}}{4(D_{FAST}Δ\tau+\sigma^{2})}}
+$$
+
+Where $Z_{CORR}(Δ\tau,Δz_{corr},D)$ is as described above.
+
+### Numerical implementation of models in Spot-On
+
+Spot-On calculates the empirical histogram of displacements based on a user-defined bin width. Spot-On allows the user to choose between PDF- and CDF-fitting of the kinetic model to the empirical displacement distributions; CDF-fitting is generally most accurate for smaller datasets and the two are similar for large datasets (Figure 3—figure supplement 9). The integral in $Z_{CORR}(Δ\tau,Δz_{corr})$ was numerically evaluated using the midpoint method over 200 points and the terms of the series computed until the term falls below a threshold of 10−10. Model fitting and parameter optimization was performed using a non-linear least squares algorithm (Levenberg-Marquardt). Random initial parameter guesses are drawn uniformly from the user-specified parameter range. The optimization is then repeated several times with different initialization parameters to avoid local minima. Spot-On constrains each fraction to be between 0 and 1 and for the sum of the fractions to equal 1.
+
+### Theoretical characteristics and limitations of the model
 
 Although Spot-On performs well on both experimental and simulated SPT data, the model implemented by Spot-On has several limitations. First, the kinetic model assumes diffusion to be ideal Brownian motion, even though it is widely acknowledged that the motion of most proteins inside a cell shows some degree of anomalous diffusion. Nevertheless, Figure 4G–H and Figure 4—figure supplement 2 show that the parameter inference for experimental data of proteins presenting various degrees of anomalous diffusion is quite robust.
 
-Second, Spot-On models the localization error as the static mean localization error and this feature can be used to infer the actual localization error from the data. However, the localization error is affected both by the position of the particle with respect to the focal plane (Lindén et al., 2017) and by motion blur (Deschout et al., 2012). Even though a high signal-to-background ratio and fast framerate/stroboscopic illumination help to mitigate these disparities, it is likely that the localization error of fast moving particles will be higher than the bound/slow-moving particles. In that case, one would expect Spot-On to infer a localization error that is the weighted mean of the ‘bound/static’ localization error and the ‘free’ localization error. However, in many situations DfreeΔτ>> σ2 (even assuming a 2 µm²/s particle imaged at a 5 ms framerate with a ~30 nm localization error, there is still an order of magnitude difference between the two terms). As a consequence, the estimate of σ reflects the static localization error (that is, the localization error of the bound fraction), and the localization error estimate becomes less reliable if the bound fraction is very small (Figure 3—figure supplement 11).
+Second, Spot-On models the localization error as the static mean localization error and this feature can be used to infer the actual localization error from the data. However, the localization error is affected both by the position of the particle with respect to the focal plane (Lindén et al., 2017) and by motion blur (Deschout et al., 2012). Even though a high signal-to-background ratio and fast framerate/stroboscopic illumination help to mitigate these disparities, it is likely that the localization error of fast moving particles will be higher than the bound/slow-moving particles. In that case, one would expect Spot-On to infer a localization error that is the weighted mean of the ‘bound/static’ localization error and the ‘free’ localization error. However, in many situations Dfree$Δ\tau$>> $\sigma^{2}$ (even assuming a 2 µm²/s particle imaged at a 5 ms framerate with a ~30 nm localization error, there is still an order of magnitude difference between the two terms). As a consequence, the estimate of $\sigma$ reflects the static localization error (that is, the localization error of the bound fraction), and the localization error estimate becomes less reliable if the bound fraction is very small (Figure 3—figure supplement 11).
 
 Third, following (Kues and Kubitscheck, 2002) the axial detection profile is assumed to be a step function, which is an approximation. However, all simulations here were performed using a detection profile with Gaussian edges (Figure 3—figure supplement 1) and as shown in Figure 3A–B Spot-On still works quite well and moreover is relatively robust to slight mismatches in the axial detection range (Figure 3—figure supplement 7).
 
@@ -119,15 +383,15 @@ Fourth, unlike the original implementation by Mazza et al. (2012), Spot-On ignor
 
 Fifth and finally, Spot-On ignores correlations between adjacent displacements, although taking such information into account can potentially improve the parameter inference (Vestergaard et al., 2014).
 
-## Cell culture
+### Cell culture
 
 Halo-Sox2 (Teves et al., 2016) knock-in JM8.N4 mouse embryonic stem cells ((Pettitt et al., 2009) Research Resource Identifier: RRID:CVCL_J962; obtained from the KOMP Repository at UC Davis) were grown on plates pre-coated with a 0.1% autoclaved gelatin solution (Sigma-Aldrich, St. Louis, MO, G9391) under feeder free conditions in knock-out DMEM with 15% FBS and LIF (full recipe: 500 mL knockout DMEM (ThermoFisher, Waltham, MA, #10829018), 6 mL MEM NEAA (ThermoFisher #11140050), 6 mL GlutaMax (ThermoFisher #35050061), 5 mL Penicillin-streptomycin (ThermoFisher #15140122), 4.6 μL 2-mercapoethanol (Sigma-Aldrich M3148), 90 mL fetal bovine serum (HyClone Logan, UT, FBS SH30910.03 lot #AXJ47554)) and LIF. mES cells were fed by replacing half the medium with fresh medium daily and passaged every two days by trypsinization. Halo-3xNLS, H2B-Halo-SNAP and knock-in C32 Halo-CTCF (Hansen et al., 2017) Human U2OS osteosarcoma cells (Research Resource Identifier: RRID:CVCL_0042) were grown in low glucose DMEM with 10% FBS (full recipe: 500 mL DMEM (ThermoFisher #10567014), 50 mL fetal bovine serum (HyClone FBS SH30910.03 lot #AXJ47554) and 5 mL Penicillin-streptomycin (ThermoFisher #15140122)) and were passaged every 2–4 days before reaching confluency. For live-cell imaging, the medium was identical except DMEM without phenol red was used (ThermoFisher #31053028). Both mouse ES and human U2OS cells were grown in a Sanyo copper alloy IncuSafe humidified incubator (MCO-18AIC(UV)) at 37°C/5.5% CO2. Cell lines were pathogen tested and authenticated through STR profiling (U2OS) as described previously (Hansen et al., 2017; Teves et al., 2016). All cell lines will be provided upon request.
 
-## Single-molecule imaging
+### Single-molecule imaging
 
 The indicated cell line was grown overnight on plasma-cleaned 25 mm circular no 1.5H cover glasses (Marienfeld, Germany, High-Precision 0117650) either directly (U2OS) or MatriGel coated (mESCs; Fisher Scientific, Hampton, NH, #08-774-552 according to manufacturer’s instructions just prior to cell plating). After overnight growth, cells were labeled with 5–50 nM PA-JF549 or PA-JF646 (Grimm et al., 2016a) for ~15–30 min and washed twice (one wash: medium removed; PBS wash; replenished with fresh medium). At the end of the final wash, the medium was changed to phenol red-free medium keeping all other aspects of the medium the same. Single-molecule imaging was performed on a custom-built Nikon TI microscope (Nikon Instruments Inc., Melville, NY) equipped with a 100x/NA 1.49 oil-immersion TIRF objective (Nikon apochromat CFI Apo TIRF 100x Oil), EM-CCD camera (Andor, Concord, MA, iXon Ultra 897; frame-transfer mode; vertical shift speed: 0.9 μs; −70°C), a perfect focusing system to correct for axial drift and motorized laser illumination (Ti-TIRF, Nikon), which allows an incident angle adjustment to achieve highly inclined and laminated optical sheet illumination (Tokunaga et al., 2008). The incubation chamber maintained a humidified 37°C atmosphere with 5% CO2 and the objective was also heated to 37°C. Excitation was achieved using the following laser lines: 561 nm (1 W, Genesis Coherent, Santa Clara, CA) for PA-JF549; 633 nm (1 W, Genesis Coherent, Pala Alto, CA) for PA-JF646; 405 nm (140 mW, OBIS, Coherent) for all photo-activation experiments. The excitation lasers were modulated by an acousto-optic Tunable Filter (AA Opto-Electronic, France, AOTFnC-VIS-TN) and triggered with the camera TTL exposure output signal. The laser light is coupled into the microscope by an optical fiber and then reflected using a multi-band dichroic (405 nm/488 nm/561 nm/633 nm quad-band, Semrock, Rochester, NY) and then focused in the back focal plane of the objective. Fluorescence emission light was filtered using a single band-pass filter placed in front of the camera using the following filters: PA-JF549: Semrock 593/40 nm bandpass filter; PA-JF646: Semrock 676/37 nm bandpass filter. The microscope, cameras, and hardware were controlled through NIS-Elements software (Nikon).
 
-## spaSPT experiments and analysis
+### spaSPT experiments and analysis
 
 The spaSPT experimental settings for Figure 4G–H were as follows: 1 ms 633 nm excitation (100% AOTF) of PA-JF646 was delivered at the beginning of the frame; 405 nm photo-activation pulses were delivered during the camera integration time (~447 μs) to minimize background and their intensity optimized to achieve a mean density of ≤1 molecule per frame per nucleus. 30,000 frames were recorded per cell per experiment. The camera exposure times were: 4.5 ms, 5.5 ms, 7 ms, 9.5 ms, 13 ms and 19.5 ms.
 
@@ -135,18 +399,18 @@ For the motion-blur spaSPT experiments (Figure 4I–K), the camera exposure was 
 
 spaSPT data was analyzed (localization and tracking) and converted into trajectories using a custom-written Matlab implementation of the MTT-algorithm (Sergé et al., 2008) and the following settings: Localization error: 10-6.25; deflation loops: 0; Blinking (frames): 1; max competitors: 3; max D (μm2/s): 20. The spaSPT trajectory data was then analyzed using the Matlab version of Spot-On (v1.0; GitLab tag 1f9f782b) and the following parameters: dZ = 0.7 µm; GapsAllowed = 1; TimePoints: 4 (50 Hz), 6 (74 Hz), 7 (100 Hz), 8 (134 Hz), 9 (167 and 200 Hz); JumpsToConsider = 4; ModelFit = 2; NumberOfStates = 2; FitLocError = 0; LocError = 0.035 µm; D_Free_2State=[0.4;25]; D_Bound_2State=[0.00001;0.08];
 
-## SPT simulations
+### SPT simulations
 
-We developed a utility to simulate diffusing proteins in a confined geometry (simSPT). Briefly, simSPT simulates the diffusion of an arbitrary number of populations of molecules characterized by their diffusion coefficient, under a steady state assumption. Particles are drawn at random between the populations and their location in the 3D nucleus is initialized following a uniform law within the confinement volume. The lifetime of the particle (in frames) is also drawn following an exponential law of mean lifetime β. Then, the particle diffuses in 3D until it bleaches. Diffusion is simulated by drawing jumps following a normal law of parameters N(0,2DΔτ), where D is the diffusion coefficient and Δτ the exposure time. Finally, a localization error (N0,σ) is added to each (x,y,z) localization in the simulated trajectories.
+We developed a utility to simulate diffusing proteins in a confined geometry (simSPT). Briefly, simSPT simulates the diffusion of an arbitrary number of populations of molecules characterized by their diffusion coefficient, under a steady state assumption. Particles are drawn at random between the populations and their location in the 3D nucleus is initialized following a uniform law within the confinement volume. The lifetime of the particle (in frames) is also drawn following an exponential law of mean lifetime $\beta$. Then, the particle diffuses in 3D until it bleaches. Diffusion is simulated by drawing jumps following a normal law of parameters $N(0,\sqrt{2DΔ\tau})$, where D is the diffusion coefficient and $Δ\tau$ the exposure time. Finally, a localization error ($N0,\sigma$) is added to each (x,y,z) localization in the simulated trajectories.
 
 For comparisons of Spot-On, MSDi and vbSPT using a 2-state scenario, we parameterized simSPT to consider two subpopulations of particles diffusing in a sphere (the nucleus) of 8 µm diameter illuminated using HiLo illumination (assuming a HiLo beam width of 4 µm), with an axial detection range of ~700 nm, centered at the middle of the HiLo beam with Gaussian edges. Molecules are assumed to have a mean lifetime of 4 frames (when inside the HiLo beam) and of 40 frames when outside the HiLo beam. The localization error was set to 25 nm and the simulation was run until 100,000 in-focus trajectories were recorded. More specifically, the effect of the exposure time (1 ms, 4 ms, 7 ms, 13 ms, 20 ms), the free diffusion constant (from 0.5 µm²/s to 14.5 µm²/s in 0.5 µm²/s increments) and the fraction bound (from 0% to 95% in 5% increments) were investigated, yielding a dataset consisting of 3480 simulations. More details on the simulations, including scripts to reproduce the dataset, are available on GitLab as detailed in the ‘Computer code’ section. Full details on how the simulations were analyzed by Spot-On, vbSPT and MSDi are given in Appendix 1.
 
 We also considered a 3-state scenario featuring a bound subpopulation (‘bound’), a relatively slow diffusing free subpopulation (‘slow’) and a relatively faster diffusing free subpopulation (‘free’). In this case, we only compared Spot-On and vbSPT (Figure 3—figure supplement 6), since the MSDi methods did not perform well. As in the 2-state simulations, we parameterized simSPT to consider that three subpopulations of particles diffusing in a sphere (the nucleus) of 8 µm diameter illuminated using HiLo illumination (assuming a HiLo beam width of 4 µm), with an axial detection range of ~700 nm, centered at the middle of the HiLo beam with Gaussian edges. Molecules are assumed to have a mean lifetime of 4 frames (when inside the HiLo beam) and of 40 frames when outside the HiLo beam. The localization error was set to 40 nm and the simulation was run until 100,000 in-focus trajectories were recorded. We considered three different subpopulation conditions: (1) FBOUND = 25%; FSLOW = 25%; FFAST = 50%; (2) FBOUND = 25%; FSLOW = 50%; FFAST = 25%; (3) FBOUND = 50%; FSLOW = 25%; FFAST = 25%. Specifically, for each of these condition, the effect of of the exposure time (1 ms, 4 ms, 7 ms, 10 ms, 13 ms, 20 ms), the slower free diffusion constant (from 0.5 µm²/s to 2.5 µm²/s in 0.5 µm²/s increments) and the faster free diffusion constant (from 4 µm²/s to 11 µm²/s in 1 µm²/s increments) were investigated, yielding a dataset of 720 simulations. Both vbSPT and Spot-On (all) were constrained to three subpopulations. Full details on how the simulations were analyzed by Spot-On and vbSPT are given in Appendix 1.
 
-## Data availability
+### Data availability
 
 All raw 1064 spaSPT experiments (Figure 4) as well as the 3480 simulations (Figure 3) are freely available in Spot-On readable Matlab and CSV file formats in the form of SPT trajectories at Zenodo. The experimental data is available at: https://zenodo.org/record/834781; The simulations are available in Matlab format at: https://zenodo.org/record/835541; The simulations are available in CSV format at: https://zenodo.org/record/834787; And supplementary software used for MSDi and vbSPT analysis as well as for generating the simulated data at: https://zenodo.org/record/835171
 
-## Computer code
+### Computer code
 
 Spot-On is fully open-source. The web-interface can be found at: https://SpotOn.berkeley.edu. All raw code is available at GitLab: https://gitlab.com/tjian-darzacq-lab. The web-interface code can be found at https://gitlab.com/tjian-darzacq-lab/Spot-On; the Matlab command-line version of Spot-On can be found at: https://gitlab.com/tjian-darzacq-lab/spot-on-matlab; the Python command-line version of Spot-On can be found at https://gitlab.com/tjian-darzacq-lab/Spot-On-cli; the SPT simulation code (simSPT) can be found at: https://gitlab.com/tjian-darzacq-lab/simSPT; finally, the ‘TrackMate to Spot-On connector’ plugin, which adds an extra menu to TrackMate which allows one-click upload of datasets to Spot-On can be found at: https://gitlab.com/tjian-darzacq-lab/Spot-On-TrackMate

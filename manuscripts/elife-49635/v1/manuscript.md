@@ -13,4 +13,4 @@
 
 ## Abstract
 
-The transcription factor ztf-11 promotes neuronal differentiation by repressing other cell fates in the nematode worm C. elegans .
+The transcription factor ztf-11 promotes neuronal differentiation by repressing other cell fates in the nematode worm C. elegans.

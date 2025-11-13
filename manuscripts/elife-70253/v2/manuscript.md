@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Animal pigment patterns play important roles in behavior and, in many species, red coloration serves as an honest signal of individual quality in mate choice. Among Danio fishes, some species develop erythrophores, pigment cells that contain red ketocarotenoids, whereas other species, like zebrafish ( D. rerio ) only have yellow xanthophores. Here, we use pearl danio ( D. albolineatus ) to assess the developmental origin of erythrophores and their mechanisms of differentiation. We show that erythrophores in the fin of D. albolineatus share a common progenitor with xanthophores and maintain plasticity in cell fate even after differentiation. We further identify the predominant ketocarotenoids that confer red coloration to erythrophores and use reverse genetics to pinpoint genes required for the differentiation and maintenance of these cells. Our analyses are a first step toward defining the mechanisms underlying the development of erythrophore-mediated red coloration in Danio and reveal striking parallels with the mechanism of red coloration in birds.
+Animal pigment patterns play important roles in behavior and, in many species, red coloration serves as an honest signal of individual quality in mate choice. Among Danio fishes, some species develop erythrophores, pigment cells that contain red ketocarotenoids, whereas other species, like zebrafish (D. rerio) only have yellow xanthophores. Here, we use pearl danio (D. albolineatus) to assess the developmental origin of erythrophores and their mechanisms of differentiation. We show that erythrophores in the fin of D. albolineatus share a common progenitor with xanthophores and maintain plasticity in cell fate even after differentiation. We further identify the predominant ketocarotenoids that confer red coloration to erythrophores and use reverse genetics to pinpoint genes required for the differentiation and maintenance of these cells. Our analyses are a first step toward defining the mechanisms underlying the development of erythrophore-mediated red coloration in Danio and reveal striking parallels with the mechanism of red coloration in birds.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ Red, orange, and yellow coloration is often mediated by the accumulation of caro
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig1-v2.jpg)
 
-**Figure 1.:** Danio species.(A) Examples of major carotenoid types including yellow zeaxanthin, red astaxanthin, and orange β-carotene, with factors required for entry into cells and chemical modification (Main text). (B) Erythrophore presence (red circles) or absence (light gray circles) indicated by direct observation or prior species descriptions (Fang and Kottelat, 2000; Quigley et al., 2005; Engeszer et al., 2007; Kullander and Fang, 2009; Kullander, 2012; Kullander and Norén, 2016; Spiewak et al., 2018; McCluskey et al., 2021). A composite phylogeny based on several molecular evolutionary studies is shown; gray branches indicate lineage placements inferred by morphology alone (Tang et al., 2010; Kullander, 2012; Kullander et al., 2015; McCluskey and Postlethwait, 2015). Gray boxes across branches indicate lineages in which erythrophores are inferred most parsimoniously to have been lost. (C) Anal fin details of zebrafish (rerio) without erythrophores and other species with erythrophores. Cells are shown in their typical native states, with pigment dispersed, and following treatment with epinephrine, which causes pigment to be contracted toward cell centers. Scale bar: 100 μm.
+**Figure 1.:** (A) Examples of major carotenoid types including yellow zeaxanthin, red astaxanthin, and orange β-carotene, with factors required for entry into cells and chemical modification (Main text). (B) Erythrophore presence (red circles) or absence (light gray circles) indicated by direct observation or prior species descriptions (Fang and Kottelat, 2000; Quigley et al., 2005; Engeszer et al., 2007; Kullander and Fang, 2009; Kullander, 2012; Kullander and Norén, 2016; Spiewak et al., 2018; McCluskey et al., 2021). A composite phylogeny based on several molecular evolutionary studies is shown; gray branches indicate lineage placements inferred by morphology alone (Tang et al., 2010; Kullander, 2012; Kullander et al., 2015; McCluskey and Postlethwait, 2015). Gray boxes across branches indicate lineages in which erythrophores are inferred most parsimoniously to have been lost. (C) Anal fin details of zebrafish (rerio) without erythrophores and other species with erythrophores. Cells are shown in their typical native states, with pigment dispersed, and following treatment with epinephrine, which causes pigment to be contracted toward cell centers. Scale bar: 100 μm.
 
 The cellular context for displaying carotenoid-dependent colors differs between endothermic and ectothermic vertebrates. In birds, carotenoids are concentrated in keratinocytes of the skin and displayed either directly or after incorporation into feathers (McGraw, 2006). In ectotherms, carotenoids are concentrated in lipid droplets within pigment cells, chromatophores, visible through the epidermis and dermis. Red chromatophores are known as erythrophores, whereas yellow or orange chromatophores are referred to as xanthophores. Besides accumulating carotenoids, both cell types can produce and retain pteridine pigments that sometimes also contribute to visible coloration (Schartl et al., 2016; Parichy, 2021).
 
@@ -42,19 +42,39 @@ Here, we exploit the presence of erythrophores in a zebrafish relative, the pear
 
 ## Results
 
-## Phylogenetic distribution of erythrophores in Danio and patterning of erythrophores and xanthophores in the anal fin of D. Albolineatus
+### Phylogenetic distribution of erythrophores in Danio and patterning of erythrophores and xanthophores in the anal fin of D. Albolineatus
 
 The adult zebrafish (Danio rerio) pigment pattern includes yellow xanthophores, black melanophores, at least three types of iridescent iridophores, and two types of white cells (melanoleucophores and xantholeucophores) (Hirata et al., 2003; Lewis et al., 2019; Patterson and Parichy, 2019; Gur et al., 2020). Zebrafish does not have red erythrophores. Because erythrophores occur in many other species of teleosts, we surveyed the distribution of these cells across the Danio genus more broadly. Of 17 Danio species assessed, 14 had erythrophores indicating this cell type is common and most likely was present in the common ancestor of all Danio species (Figure 1B–D).
 
 We focused on D. albolineatus since erythrophores are abundant in this species and are separated spatially from other pigment cells, an arrangement likely to facilitate analysis (Goodrich and Greene, 1959). In the anal fin of adults, red erythrophores were located proximally and were separated from the more distal yellow xanthophores by a narrow stripe of melanophores (Figure 2A). Although erythrophores were present in both sexes, the cells were more deeply and consistently red in males than females and we therefore focused on males at stages when sexes were distinguishable (Figure 2—figure supplement 1A). Male fish older than 1 year often lacked fin stripe melanophores, indicating that some pattern remodeling continues even after sexual maturation (Figure 2—figure supplement 1B). As compared to xanthophores, erythrophores occur at lower densities and were more likely to be binucleated (Figure 2B, middle and right panels; Figure 2—figure supplement 1C and D), a characteristic associated with a mature state of differentiation in stripe melanophores of zebrafish (Saunders et al., 2019).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig2-v2.jpg)
+
+**Figure 2.:** (A) Erythrophores were present on the body and were particularly evident on the anal fin (closeup at right), where these cells were found more proximally than yellow xanthophores. (B) At larval stages xanthophore-like cells with a uniform orange coloration occurred across the entire fin (left panels). Later in the adult, proximal red erythrophores and distal yellow xanthophores have distinct colors (middle and right panels). (C) Erythrophores and xanthophores had different spectra under epiflourescence. Erythrophores autofluorescenced in red (displayed in magenta) whereas xanthophores autofluoresced in green. (D) Hue values under brightfield illumination were correlated with ratios of red to green autofluorescence (R2 = 0.92, p < 0.0001). (E) Colors of cells varied across the proximodistal axis of the fin, shown as relative position with fin base at 0 and fin tip at 1. Erythrophores in proximal regions were distinct in both fluorescence ratio and visible hue from xanthophores in distal regions though some intergradation was evident in middle regions, near the melanophore stripe. N = 250 cells from five adult males in D and E. Color fills represent red to green fluorescence ratios. (F) During the larva-to-adult transformation, ratios of red to green autofluorescence diverged between prospective erythrophore and xanthophore regions. Individual red and yellow points correspond to mean values of cells in in proximal and distal regions, respectively, from each of 31 male or female fish (N = 620 cells total) imaged at a range of developmental stages represented by different standard lengths (SL). Scale bars: 5 mm (A, left), 1 mm (A, right); 25 μm (B, C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Erythrophores of female fish were paler than erythrophores of male fish (compare to B and Figure 2A). (B) Melanophores stripes disappeared in older adult males (compared to Figure 2A). (C) Erythrophores (left) although not xanthophores (right) were often binucleated, here revealed by transgenic expression of nuclear-localizing aox5:nucEosFP (see Main text). Red and yellow pigments had been contracted towards cell centers by epinephrine treatment. Multiple nuclei are indicated by arrowheads. (D) Cell densities diverged in proximal and distal regions of the anal fin as fish and fins developed. SL, standard length. Shown are average of cells observed in three regions of 10–2 mm2 prospective erythrophore (proximal) or xanthophore (distal) regions of 31 fish representing a range of stages (N = 620 cells total). Scale bars: 2 mm (A, B); 50 μm (C).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Melanophores were the first pigment cells evident (7.0 mm SL). Subsequently xanthophore-like cells with orange coloration were found across the fin except in distalmost regions that were enriched instead in melanophores (8.4 mm SL). With additional growth and development, proximal and distal cells diverged in cell color and density (13.3 mm SL), whereas melanophores consolidated into a stripe pattern centrally, as described previously (Goodrich and Greene, 1959). Colors of prospective erythrophores and xanthophores were indistinguishable prior to 12 mm SL. Scale bars: 200 μm .
+
 Because subtle differences in color can be difficult to discern, we sought metrics to describe mature and developing cells, under brightfield and fluorescent illumination in which these cells were distinguishable as well: xanthophores displayed green autofluorescence upon excitation with blue-green light (488 nm) owing to the presence of yellow carotenoids (Granneman et al., 2017; Saunders et al., 2019), whereas erythrophores showed only weak autofluorescence at this wavelength but much stronger red autofluorescence upon exposure to green-yellow light (561 nm)(Figure 2C). We then compared hue in brightfield illumination with relative red:green autofluorescence, confirming the differences between erythrophores and xanthophores (Figure 2D and E).
 
 To understand the anatomical context of erythrophore development, we imaged fish during the larva-to-adult transformation. The first pigmented cells in the anal fin were lightly melanized melanophores. Subsequently, orange xanthophore-like cells appear that were pale and had smaller areas of visible pigment than mature erythrophores and xanthophores (Figure 2B, left panel; Figure 2—figure supplement 2). These early orange cells autofluoresced in both red and green channels, consistent with their appearance in brightfield (Figure 2F). During later development, however, cells in proximal regions were increasingly red whereas cells in distal regions were increasingly yellow. Cell densities gradually diverged between proximal and distal regions as well (Figure 2F; Figure 2—figure supplement 1D).
 
-## Fin erythrophores and xanthophores arise from a common progenitor
+### Fin erythrophores and xanthophores arise from a common progenitor
 
 As a first step in dissecting lineage relationships of erythrophores and xanthophores, we sought to determine whether these cells arise from a common early progenitor. Since red and yellow colors were likely carotenoid-based, we reasoned that lineage relationships should be revealed by clones of cells in fish mosaic for scavenger receptor b1 (scarb1), which is essential for carotenoid accumulation in avian integument and zebrafish xanthophores (Toews et al., 2017; Toomey et al., 2017; Saunders et al., 2019). If erythrophores and xanthophores share a lineage, then rare wild-type clones should contain both red and yellow cells in an otherwise colorless background. If erythrophores and xanthophores have distinct lineage origins, however, wild-type clones should often contain only red cells or only yellow cells. In D. albolineatus injected with high efficiency AltR CRISPR/Cas9 reagents targeting scarb1, wild-type clones most often contained both red cells and yellow cells (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig3-v2.jpg)
+
+**Figure 3.:** (A) In fish mosaic for somatically induced mutations in scarb1 most rare, wild-type clones consisted of both erythrophores and xanthophores (8 of 10 presumptive clones in seven fish, with remaining clones only containing one or the other cell type; an additional 56 fish derived from injected embryos either lacked wild-type cells or lacked mutant cells and were thus uninformative). (B) Clonal labeling of xanthophores and erythrophores with aox5:palmEGFP, illustrating flourescence, brightfield, and merged views of the same fields. In the clone shown here, an initial complement of several orange cells at the level of the melanophore stripe (d0, 7.5 mm SL) expanded to include more cells proximally and distally to the melanophore stripe that differentiated as erythrophores and xanthophores, respectively (d36, 15 mm SL; red arrowheads). For these analyses, limiting dilutions of aox5:palmEGFP were injected into ~500 embryos, yielding 271 embryos that exhibited some fluorescence at 3 days post-fertilization that were further sorted at 16 dpf, identifying 27 individuals with patches of expression in the anal fin. Of these 27 fish, one subsequently died and eight were found to have broad expression across the entire fin, likely representing multiple clones of uncertain boundaries, and so were excluded from analysis. The remaining 18 fish exhibited 24 spatially distinct, presumptive clones of aox5:palmEGFP-labeled cells, of which 22 presumptive clones contained both erythrophores and xanthophores as shown here [consistent with mixed clones of melanophores and xanthophores in zebrafish (Tu and Johnson, 2010; Tu and Johnson, 2011)]; one clone contained only erythrophores and one clone contained only xanthophores. (C) When aox5:nucEosFP+ cells on the body were bulk photoconverted before fin development, only unconverted aox5:nucEosFP+ cells (green nuclei) were present in the fin 4 days later (images representative of all N = 3 fish tested). (D) Successive steps in anal fin development and erythrophore/xanthophore lineage specification revealed many cells newly acquiring aox5:nucEosFP expression at daily intervals within the fin (green nuclei). Though some aox5:nucEosFP+ cells were present at the fin base these did not enter into the fin proper (white cells, arrowheads; images shown are from a single individual representative of all N = 7 fish tested in this manner over 23 days each). Scale bars: 200 μm (A, B); 100 μm (C, D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A and B show additional examples of presumptive clones labeled by injection of limiting amounts of aox5:palmEGFP transgene. In each individual (36 days, 15 mm SL), EGFP+ cells were found across proximal to distal regions of the fin, contributing to erythrophore and xanthophore populations, respectively. Additional EGFP+ cells were evident on the body at the base of the fin (e.g. arrowhead in B). Asterisks indicate regions of xanthophore autofluorescence in EGFP channel. Images were assembled computationally from tiled acquisitions. Scale bar: 1 mm.
 
 We further assessed relationships by labeling individual clonal lineages by tol2 transgenesis. We found that orange cells of larvae and both erythrophores and xanthophores of adults expressed transgenes driven by regulatory elements of aldehyde oxidase 5 (aox5) isolated from zebrafish. aox5 functions in the synthesis of pteridines present in xanthophores and erythrophores (see below) and is expressed by xanthophores and their specified precursors in zebrafish (Parichy et al., 2000; McMenamin et al., 2014). When we injected an aox5 reporter transgene at limiting dilutions to express membrane-targeted EGFP, labeled cells were restricted to narrow regions along the anterior–posterior axis, consistent with derivation from single clones observed in other contexts (Tu and Johnson, 2010; Singh et al., 2014; Spiewak et al., 2018). Such cells occurred on the body and fin, and in these presumptive clones, erythrophores and xanthophores were almost always co-labeled (Figure 3B; Figure 3—figure supplement 1), consistent with a common progenitor for erythrophores and xanthophores.
 
@@ -62,15 +82,39 @@ A common progenitor could be specified for erythrophore or xanthophore fates eit
 
 We found that cells on the body had converted and unconverted fluorophore, whereas cells in the fin had only unconverted fluorophore, consistent with initiation of aox5 expression only after progenitors had colonized the fin (Figure 3C). Because it remained possible that some cells had migrated from body to fin and proliferated so extensively that signal of converted nucEosFP was lost by dilution, we repeated these analyses but assessed distributions of cells 1 d after photoconversion; we then photoconverted (or reconverted) all cells on body and fin and repeated this process on successive days. Such labeling failed to reveal cells that translocated from body to fin, although it did reveal numerous cells that acquired aox5 expression when already in the fin (Figure 3D). Together these observations suggest that progenitors migrate to the fin, become specified for erythrophore or xanthophore lineages within the fin, and then contribute to both populations as they proliferate to populate the proximal–distal axis during fin outgrowth.
 
-## Erythrophores and xanthophores arise from fate-restricted and unrestricted precursors in the fin and their fates remain plastic even after differentiation
+### Erythrophores and xanthophores arise from fate-restricted and unrestricted precursors in the fin and their fates remain plastic even after differentiation
 
 Clones identified by scarb1 activity or aox5 transgene expression (Figure 3A and B) likely represented progenitors segregated from other lineages during early development when injected Cas9 is active and transgene integration occurs (e.g., Tryon et al., 2011); these clones presumably also included melanophores or other cell types not revealed by these markers (Tu and Johnson, 2010; Tu and Johnson, 2011; Lewis et al., 2019). We therefore asked whether progeny of such clones that had already colonized the fin were restricted to either erythrophore or xanthophore fates by photoconverting individual nucEosFP+ cells at early stages of fin development (7.0–8.5 mm SL) and then assessing phenotypes of resulting clones 30–36 days later (15.0 mm SL). At 7.0 mm SL, only unpigmented nucEosFP+ cells were present (Figure 4A, top). Preliminary observations indicated that proximally located cells tended to remain in the proximal region where erythrophores develop, so we photoconverted cells in distal regions that might become more broadly distributed. Resulting clones consisted of erythrophores if daughter cells remained relatively proximal as the fin grew out, or both erythrophores and xanthophores if daughter cells became distributed across the proximodistal axis (Figure 4B and C; Figure 4—figure supplement 1A). At 7.5 mm, many nucEosFP+ cells had acquired a pale orange color (Figure 4A, bottom) and so we asked whether these cells had become fate-restricted with the onset of pigmentation. Similar to unpigmented cells, however, initially proximal orange cells generated only erythrophores, whereas initially distal orange cells could generate clones of only erythrophores, both erythrophores and xanthophores, or only xanthophores, depending on where daughter cells were distributed (Figure 4C; Figure 4—figure supplement 1B). Finally, at 8.5 mm we found that still-unpigmented nucEosFP+ cells near the distal fin tip generated distal clones restricted to a xanthophore fate (Figure 4—figure supplement 1C). These results show that individual unpigmented cells and early-developing orange cells in the fin can generate both erythrophores and xanthophores, depending on initial location and where progeny localize.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig4-v2.jpg)
+
+**Figure 4.:** (A) Unpigmented cells of the xanthophore lineage, marked by aox5:nucEosFP transgene expression (see Main text), present at 7.0 mm SL had acquired a pale orange color 1 day later. (Representative of all N = 7 fish examined by repeated imaging during larval development.) Insets show higher magnification images of a corresponding region. (B) Example of a photoconverted, initially unpigmented cell (d0, 7.0 mm SL) that yielded a clone containing both erythrophores and xanthophores (d35, 15.0 mm SL; representative of four of seven clones, with remaining clones containing erythrophores only). Fish were treated with epinephrine to contract pigment before imaging. Arrows indicate erythrophore autofluorescence from red carotenoid pigment, which accumulates adjacent to nuclei following epinephrine treatment; approximate positions of nucEosFP+ nuclei in brightfield images are shown with dashed outlines. Insets, proximal and distal cells in the clone. (C) Percentages of clones containing only erythrophores, only xanthophores, or both cell types. Numbers above bars indicate clone sample sizes examined. In these analyses pigment cells and progenitors stably expressed aox5:nucEosFP (7.5, 8.5 mm SL) or mosaically expressed a different transgene, mitfa:nucEosFP (7.0 mm SL), that had been injected into embryos at the one-cell stage. In zebrafish, mitfa (melanophore-inducing transcription factor a) is expressed by pigment cell progenitors, as well as melanophores and xanthophores (Lister et al., 1999; Budi et al., 2011; Saunders et al., 2019), and we found in D. albolineatus that mitfa:nucEosFP was expressed in these cells as well as orange cells of larvae and erythrophores of adults. mitfa:nucEosFP was used for fate mapping at early stages owing to its more robust expression in unpigmented cells. Scale bar: 50 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative examples of additional classes of clones shown in Figure 4C. (A) An orange cell initially in the proximal fin that generated daughters remaining proximally developing only as erythrophores. Arrow indicates weak autofluorescence of carotenoid pigment, adjacent to nucleus; approximate positions of nucEosFP+ nuclei in brightfield images are shown with dashed outlines. (B) An initially distal cell with pale orange pigmentation (arrowhead) that generated a clone including both proximal erythrophores and distal xanthophores. (C) An unpigmented cell at a later stage of fin development initially distal to the melanophore stripe (Figure 1A), produced only xanthophores. Scale bar: 50 μm.
+
 We further asked whether phenotypes of erythrophores and xanthophores might be plastic even after they differentiate by challenging cells in a regenerative context. To test for erythrophore → xanthophore conversion, we amputated fins through the region containing erythrophores, expecting that regeneration distally might allow for repositioning of erythrophores into regions where regenerative xanthophores would be expected, with conditions favorable to fate conversion, should cells retain such potential. We first assessed the possibility that transfating occurs by repeatedly imaging individual fish in brightfield, to learn whether cells near the amputation plane might lose their red color during regenerate outgrowth. Individual erythrophores could often be reidentified using other cells as well as distinctive features of fin ray bones and joints as landmarks (Figure 5A; Figure 5—figure supplement 1). As regeneration proceeded, small groups of cells having paler red or orange coloration, were sometimes observable where individual cells of deep red coloration had been found, suggestive of proliferation and dilution of pre-existing pigments. Later, only yellow cells were found in these same locations. These observations were consistent with the possibility of erythrophore → xanthophore conversion. To test this idea directly we marked nucEosFP+ erythrophores by photoconversion prior to amputation and followed labeled cells through regeneration (Figure 5B; Figure 5—figure supplement 2A). Many erythrophores divided to replenish their complement in proximally regenerating tissue, and a few erythrophores differentiated from unpigmented precursors, as indicated by the presence, or absence of photoconverted nucEosFP, respectively (Figure 5—figure supplement 2B). Additionally, some initially marked erythrophores came to occupy more distal regions and were indistinguishable from regenerative xanthophores that had developed from unpigmented progenitors even 36–51 days post-amputation (Figure 5C). These findings suggest a reduction in pre-existing red pigment as cells divide, and a failure to accumulate new red pigments once proliferation has ceased. We also sought to determine whether xanthophores can transition to an erythrophore fate by ablating central regions of fin and then assessing whether distal xanthophores can move into the regenerating proximal region. However, these experiments were not informative, as regenerative tissue was colonized by erythrophores or xanthophores differentiated from progenitors rather than pre-existing xanthophores (Figure 5—figure supplement 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig5-v2.jpg)
+
+**Figure 5.:** (A) Brightfield sequence of regeneration illustrating apparent conversion of erythophores to xanthophores (image series representative of all N = 3 fish examined by repeated imaging through regeneration). As fins regenerated, individual erythrophores (circled) near the amputation plane appeared to divide, with presumptive daughter cells having reduced amounts of pigment visible upon contraction with epinephrine and an increasingly yellow–orange color. (B) Schematic of regeneration experiment in C. Fins of Tg(aox5:nucEosFP) fish were photo-converted in toto prior to amputation through the erythrophore region. Fins regenerated over 15 days and pigment pattern had re-formed by 30 days, at which time a new melanophore stripe and distinct regions of erythrophores and xanthophores had developed. (C) Example of cells in regenerative tissue 36 days post-amputation (dpa). Regenerative xanthophores near the plane of amputation often contained photoconverted nucEosFP in a region of fin extending 400 μm from the distalmost red erythrophore into the regenerative xanthophore region (means ± 95% confidence interval; N = 1964 cells in four fish examined). Dashed lines indicate amputation in B and C. Scale bars: 50 μm (A); 100 μm (C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** A region of fin is shown at selected time points between 4 and 35 days post-amputation (dpa). Positions of cells that appear to transition from red to yellow are indicated by white and black ovals; approximate positions at 35 dpa are indicated by dashed lines. Several additional erythrophores are also marked (a–c), as are morphologically distinguishable fin ray joints (1–7). The amputation plane is marked by a dashed line in each image. Cells marked by the black oval, also shown in Figure 5A, become displaced further distally relative to fin ray joints between 6 and 16 dpa. Scale bars: 100 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Prior to regeneration, only erythrophores expressed aox5:nucEosFP in proximal regions; unpigmented aox5:nucEosFP+ cells were not evident, indicating that cells marked by photoconversion post-amputation were derived from previously differentiated erythrophores. Top, brightfield merged with bottom fluorescent image. (B) Brightfield and fluorescence (single channel at bottom, merged top right) showing erthyrophore nuclei adjacent to contracted pigment granules. Some nuclei retained photoconverted nucEosFP (magenta; white arrows), indicating cells were present prior to amputation, whereas other nuclei were labeled only with photoconverted nucEosFP (green; green arrows), indicating de novo differentiation during regeneration. Newly differentiating erythrophores were rare, however, in this example found only in 2 of 10 interray regions of the fish examined and only in relatively proximal locations. Scale bar: 200 μm (A); 50 μm (B).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** When internal sections of fin were excised and xanthophores adjacent to the wound marked by photoconversion, these cells or their progeny remained distally and failed to enter more proximal regions where erythrophores regenerated. Two examples of four total fish are shown. Dashed lines, proximal boundary of xanthophores with converted nucEosFP. Scale bar: 200 μm.
 
 These observations indicate that erythrophores and xanthophores of the adult anal fin share a lineage, that individual progenitor cells within the fin can contribute to both cell types, and that some plasticity in fate persists even after differentiation, with erythrophores able to transition to a yellow-pigmented phenotype when challenged to do so.
 
-## Genetic requirements and biochemical basis for red coloration
+### Genetic requirements and biochemical basis for red coloration
 
 To better understand molecular mechanisms of red coloration we compared gene expression between fin regions containing only erythrophores or only xanthophores. Erythrophores occurred at only ~one-third the density of xanthophores in two dimensional images (Figure 2—figure supplement 1D and see below) and proximal and distal fin regions presumably differ in ways other than chromatophore content. Nevertheless, we reasoned that comparisons of bulk tissue preparations might still identify genes having marked differences in expression between erythrophores and xanthophores, as would be expected for loci functioning in pigment synthesis (Saunders et al., 2019). Mapping D. albolineatus sequencing reads to the zebrafish genome identified 18,050 expressed genes. Transcripts of 162 genes were more abundant in proximal erythrophore-containing tissue, whereas transcripts of 200 genes were more abundant in distal xanthophore-containing tissue (q < 0.05; fold-changes = 0.4–6.8) (Figure 6A and B; Supplementary file 1—Table 1).
 
@@ -81,6 +125,22 @@ To better understand molecular mechanisms of red coloration we compared gene exp
 To identify genes required for red or yellow coloration, we used CRISPR/Cas9 mutagenesis to knock out selected candidates that might have roles in processing of carotenoids, synthesis of other pigments, or fate specification (Supplementary file 1—Tables 2 and 3). We screened mosaic (F0) fish and isolated stable lines of mutant alleles for target genes with pigmentary phenotypes. Of 25 targets derived from RNA-seq, three yielded mutants with defects in pigmentation. To determine which pigments contributed to colors present in wild-type, and which were affected in mutants, we further assayed the carotenoid content of fin regions by HPLC.
 
 In the wild type, fin tissue containing erythrophores was markedly enriched for the red ketocarotenoid astaxanthin; additional peaks had profiles consistent with other ketocarotenoids (Figure 7A, peak 3; Figure 7—figure supplement 1; Supplementary file 1—Table 4). Fin tissue containing xanthophores lacked astaxanthin and instead contained yellow zeaxanthin (peak 10), similar to zebrafish xanthophores (Saunders et al., 2019), as well as additional peaks characteristic of other yellow xanthophyll carotenoids.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig7-v2.jpg)
+
+**Figure 7.:** (A) Wild-type fin and carotenoid profile, showing carotenoid absorbance at 455 nm in adult male proximal tissue (red) and distal tissue (yellow). Numbers indicate different carotenoid species, with the most abundant ketocarotenoid in erythrophore-containing tissue being astaxanthin (peak 3; Figure 1A; Figure 7—figure supplement 1). (B) Homozygous scarb1 mutants lacked red and yellow coloration and carotenoids were not detectable. (C) Homozygous mutant phenotypes of genes targeted from RNA-Seq comparisons. cyp2ae2 and bdh1a mutants were deficient for red color and astaxanthin. bco1 mutants had reduced red and yellow coloration and carotenoids. (D) Ratios of red to green autofluorescence for cells found within proximal erythrophore containing regions (red filled points) and distal xanthophore containing regions (yellow filled points) of wild-type males and females compared to mutant males. In the wild-type, erythrophores and xanthophores were segregated into different populations by R/G fluorescence, although differences in females were less marked. In males of each mutant, R/G ratios of erythrophores were reduced compared to wild-type, and lesser reductions were evident in xanthophores (ANOVA, genotype x region interaction, F4,736=310.82, p < 0.0001, after controlling for significant main effects and variation among individuals; N = 760 cells total from five individuals of each background). Plots show means ±95 % confidence intervals; means of groups not sharing the same letter differed significantly from one another (p < 0.05) in Tukey-Kramer post hoc comparisons. (E) Wild-type males and females, and mutant males, differed in total visible pigment, as measured by diameters of contracted pigment granules following epinephrine treatment (Saunders et al., 2019). (ANOVA, background x region interaction, F4,736=76.25, p < 0.0001, with significant main effects and variation among individuals; diameters were ln-transformed for analysis to control for increasing residual variance with means.). (F) Densities of erythrophores and xanthophores differed across backgrounds ( ANOVA, background x region interaction, F1,35=19.01, p < 0.0001). Each point represents the mean number of cells counted in three regions of 4 × 10–2 mm2 in proximal or distal regions with erythrophores or xanthophores, respectively, in each of 39 total fish. Scale bar: 50 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Representative normalized UV-Vis absorbance spectra of the major peaks in the carotenoid profiles of red and yellow fin portions of wild-type and various mutant D. albolineatus (Figure 7). Peaks 1–6 have a single relatively long-wavelength absorbance peak that is typical of extended conjugated system of C4-ketocarotenoids, including astaxanthin (Peak 3). Peaks 7–12 have multiple smaller peaks characteristic of xanthophyll carotenoids that do not have C4-keto groups contributing the conjugated system, including zeaxanthin (Peak 10).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Alleles induced by CRISPR/Cas9 targeting of candidate genes. gRNA sequences in red. PAM sequences in blue. Dashed lines indicate missing nucleotides. (B) Fish mutant for scarb1 lacked visible red or yellow color but contained pteridines detectable by autoflourescence under ultraviolet illumination following treatment with dilute ammonia (Odenthal et al., 1996). Pteridine autofluorescence was not present in a xanthophore and erythrophore deficient mutant for colony stimulating factor one receptor a (csf1ra) (Lewis et al., 2019), which functions cell-autonomously to promote xanthophore development in zebrafish (Parichy et al., 2000; Parichy and Turner, 2003). (C) Carotenoid pigments were mosaic in F0 fish injected with CRISPR/Cas9 targeting bco1. Patches of presumptively wild-type orange cells are outlined. Scale bar: 200 μm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/70253/elife-70253-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) RT-PCR of isolated pigment cells confirms expression by erythrophores of cyp2ae2, bdh1, and scarb1, and at low levels, bco1 (X, xanthophores; E, erythrophores; M, melanophores; S, skin; RT-, negative control without reverse transcriptase). oacyl and tyrp1b mark xanthophores and melanophores, respectively (Saunders et al., 2019); actb2, control. (B) Genomic context of cyp2ae2 (FO904880.1) in D. rerio GRCz11 (Ensembl Release 103), showing major transcripts (green) and associated coding sequence (tan). (C) Later adult pigment cell and body phenotypes of wild-type compared to cyp2ae2 and bdh1a mutants. Scale bar: 4 mm (top); 200 μm (middle); 50 μm (bottom).
 
 To confirm that carotenoids rather than other pigments are principally responsible for pigmentation, we recovered mutant alleles of scarb1, required for carotenoid uptake and localization (Toomey et al., 2017; Saunders et al., 2019), as residual color in such mutants would suggest a non-carotenoid contribution. We isolated two alleles, scarb1vp38ac1 (V84Δ16X) and scarb1vp38ac2 (V84X), and found that scarb1vp38ac1/vp38ac2 individuals had a phenotype concordant with that of F0 mosaics (Figure 3A): they lacked color in the visible range and lacked carotenoids detectable by HPLC (Figure 7B; Figure 7—figure supplement 2A; Supplementary file 1—Table 4). The absence of residual red or yellow coloration suggested that pteridine pigments do not contribute to visible color in these cells, as they do in some other species (Goodrich et al., 1941; Matsumoto and Obika, 1968; Grether et al., 2001; Weiss et al., 2012; Olsson et al., 2013). Moreover, targeting of differentially expressed genes known to function in pteridine synthesis did not yield visible pigmentation defects in F0 mosaics (erythrophore region: spra, xdh; xanthophore region: aox5; Supplementary file 1—Tables 1 and 4). Pteridine pigments were detectable histologically in erythrophores and xanthophores, however, and could be visible to fish in the UV range (Figure 7—figure supplement 2B).
 
@@ -110,7 +170,125 @@ The diversification of pigment patterns in teleost has been accompanied by a div
 
 ## Materials and methods
 
-## Fish stocks and rearing conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species or resource)*</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. albolineatus)</td>
+      <td>Tg(aox5:nucEos)vp37albTg</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transgenic line. Maintained in Parichy lab. Described in Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. albolineatus)</td>
+      <td>scarb1vp38ac1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-CAS9 knock-out line. Maintained in Parichy lab. Described in Materials and methods, and Figure 7—figure supplement 1.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. albolineatus)</td>
+      <td>scarb1vp38ac2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-CAS9 knock-out line. Maintained in Parichy lab. Described in Materials and methods, and Figure 7—figure supplement 1.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. albolineatus)</td>
+      <td>cyp2ae2vp39ac1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-CAS9 knock-out line. Maintained in Parichy lab. Described in Materials and methods, and Figure 7—figure supplement 1.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. albolineatus)</td>
+      <td>bdh1avp40ac1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-CAS9 knock-out line. Maintained in Parichy lab. Described in Materials and methods, and Figure 7—figure supplement 1.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. albolineatus)</td>
+      <td>bco1vp41ac1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-CAS9 knock-out line. Maintained in Parichy lab. Described in Materials and methods, and Figure 7—figure supplement 1.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. albolineatus)</td>
+      <td>bco1vp41ac2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR-CAS9 knock-out line. Maintained in Parichy lab. Described in Materials and methods, and Figure 7—figure supplement 1.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mitfa:nucEosFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Maintained in Parichy lab. Described in Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>aox5:palmEGFP</td>
+      <td>McMenamin et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JMP Pro 16</td>
+      <td>SAS Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kallisto</td>
+      <td>Bray et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">* Additional oligonucleotides and CRIPSR/Cas9 reagents provided in Supplementary file 1—Table 2 and 5.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fish stocks and rearing conditions
 
 Danio albolineatus were derived from individuals collected in Thailand by M. McClure in 1995 (McClure et al., 2006), provided to the laboratory of S. Johnson, and then maintained in our laboratory from 2000 until the present. Additional species of Danio used for assessing erythrophore complements were obtained directly from the field or through the pet trade [D. aesculapii; D. quagga, D. kyathit (McCluskey et al., 2021) D. nigrofasciatus, D. tinwini (Spiewak et al., 2018); D. kerri; D. choprae; D. margaritatus, D. eythromicron] and maintained subsequently in the lab or were observed in the field [D. meghalayensis, D. dangila (Engeszer et al., 2007)]. Fish were reared under standard conditions to maintain D. rerio (~28 °C; 14 L:10D) with larvae fed initially marine rotifers, derived from high-density cultures and enriched with Rotimac and Algamac (Reed Mariculture), with older larvae and adults subsequently fed live brine shrimp and a blend of flake foods enriched with dried spirulina. Stocks of mutant or transgenic D. albolineatus were: scarb1vp38ac1, scarb1vp38ac2, cyp2ae2vp39ac1, bdh1vp40ac1, bdh1vp40ac2, csf1ravp4ac1, Tg(aox5:nucEosFP)vp43aTg.
 
@@ -118,7 +296,7 @@ CRISPR/Cas9 mutagenesis bdh1avp40ac1 and cyp2ae2vp39ac1 were generated by inject
 
 Transgenesis aox5:nucEosFP and mitfa:nucEosFP plasmids were made by assembling 8 kb aox5 and 5 kb mitfa promoters (Budi et al., 2011; McMenamin et al., 2014) with nuclear-localizing photoconvertible fluorophore EosFP using the tol2 Gateway Kit (Kwan et al., 2007) and were injected at the one-cell stage with tol2 mRNA at 25 pg per embryo (Suster et al., 2009) or 6 pg per embryo for clonal analyses.
 
-## Imaging and image processing
+### Imaging and image processing
 
 Whole fish were euthanized then embedded in 1 % low-melt agarose, and captured on a Nikon D-810 digital single lens reflex camera with MicroNikkor 105 mm macro lens. Anal fin details were imaged using a Zeiss Axio Observer inverted microscope or Zeiss AxioZoom stereomicroscope equipped with Zeiss Axiocam cameras.
 
@@ -126,28 +304,28 @@ Carotenoid autofluorescence was imaged using a Zeiss LSM880 inverted laser confo
 
 Images were captured either as single frames or as tiled sets of larger areas that were then stitched computationally using ZEN Blue software, the Autoblend feature of Adobe Photoshop, or manually in Adobe Photoshop. Color balance and display levels were adjusted manually for entire images as needed, with corresponding transformations applied across matched sets of images (e.g. across genotypes). In some instances, gradients of brightness across fields of view (e.g. proximal to distal) were adjusted by applying inverse density gradients in Adobe Photoshop.
 
-## Fate mapping and lineage analysis
+### Fate mapping and lineage analysis
 
 Photoconversion was performed on Tg(aox5:nucEosFP) or plasmid-injected F0 mitfa:nucEosFP, using a Zeiss LSM 800 scanning laser confocal with a 405  nm laser and ZEN blue software. Fish were subsequently reared in tanks shaded from ambient light to prevent spontaneous photoconversion (McMenamin et al., 2014; Gur et al., 2020). Brightfield images were taken before photoconversion and fish inspected to ensure that no photoconversion had occurred as a result. Subsequent imaging used fluorescence channels only, except for end-point imaging in fluorescence followed by brightfield. Although pigments autofluoresce in the same channels as nucEosFP, treatment with epinephrine allowed contracted pigment granules to be distinguished unambiguously from nuclei.
 
 For amputation experiments, fins were transected through the middle of the erythrophore-containing region, and imaged subsequently in brightfield (Figure 5A) following treatment with epinephrine. Alternatively, Tg(aox5:nucEosFP) adult males were exposed under an external Zeiss HXP 120  V compact light source for 15 min until all nucEosFP+ cells in fins had been converted (Figure 5C). Fish were anesthetized and anal fins amputated through erythrophore regions, then reared in a shaded tank as above. Unconverted controls reared in the same tank did not show any converted nucEosFP signal when examined concurrently at subsequent time points. Sham control (photoconverted without amputation) of regeneration experiment in Figure 5C. Converted nucEosFP signal remained very strong after 41 days. Images were taken 1 day after amputation and at the end point of the experiment. For excisions of middle fin regions (Figure 5—figure supplement 2), internal fin ray and inter-fin ray regions were removed and xanthophores close to the wound photoconverted.
 
-## Reverse transcription polymerase chain reaction (RT-PCR) analysis
+### Reverse transcription polymerase chain reaction (RT-PCR) analysis
 
 Adult male anal fins were dissected and dissociated enzymatically with Liberase (Sigma-Aldrich cat. 5401119001, 0.25 mg/mL in dPBS) at 25°C for 15 min followed by gently pipetting for 5 min. Cell suspensions were then filtered through a 70 µm Nylon cell strainer to obtain a single-cell suspension. Individual cells were then picked manually under Zeiss Axio Observer inverted microscope. Cells were identified by their morphology: red erythrophores, yellow xanthophores, black melanophores and transparent small skin cells. Total RNAs were isolated by RNeasy Protect Mini Kit (Qiagen) and cDNAs synthesized with oligo-dT priming using SuperScript III Cells Direct cDNA Synthesis System (Thermo). Primers pairs were designed to span exon-intron junctions or long introns for assessing genomic contamination, targeting (Supplementary file 1—Table 5). Amplifications were performed using Taq polymerase with 35 cycles of 95°C for 30 s, 56°C for 30 s, 72°C for 15 s.
 
-## Pteridine autofluorescence
+### Pteridine autofluorescence
 
 To assess pteridine content, amputated fins were imaged after exposure to dilute ammonia (pH 10.0), which liberates pteridines from protein carriers resulting in autofluorescence under DAPI illumination.
 
-## RNA-Seq
+### RNA-Seq
 
 Adult male Danio albolineatus were euthanized, anal fins were dissected and tissue collected from proximal erythrophore or distal xanthophore regions in PBS. RNA was extracted using TRIzol and Direct-zol RNA MiniPrep Kit. mRNA was enriched using NEBNext Poly(A) mRNA Magnetic Isolation Module and sequencing libraries were constructed using NEBNext Ultra RNA Library Prep Kit for Illumina and sequenced on an Illumina Nextseq-500. Reads were aligned to Danio rerio reference genome GRCz11 using Kallisto (Bray et al., 2016) and analyzed using DESeq2 (Love et al., 2014). RNA-seq data are available through GEO (accession ID GSE174713).
 
-## Carotenoid analyses
+### Carotenoid analyses
 
 Proximal (erythrophore containing) and distal (xanthophore containing) portions of the anal fin were dissected from nine individuals of each genotype and like samples were combined in pools of three for pigment extraction. The pooled fin tissue was homogenized with zirconia beads in 1.2 ml of 0.9% sodium chloride and protein content was quantified a bicinchoninic acid (BCA) assay (23250, Thermo). Carotenoids were extracted from the homogenates by combining 1 ml methanol, 2 ml distilled water, and 2 ml of hexane:tert-methyl butyl ether (1:1 vol:vol), collecting and drying the resulting solvent fraction under nitrogen. Each sample was then split and saponified with 0.02 M NaOH or 0.2 M NaOH in methanol at room temperature to maximize the recovery of ketocarotenoids or other xanthophylls, respectively (Toomey and McGraw, 2007). The saponified extracts were then injected into an Agilent 1,100 series HPLC fitted with a YMC carotenoid 5.0 µm column (4.6 mm × 250 mm, YMC). Carotenoids were separated with a gradient mobile phase of acetonitrile:methanol:dichloromethane (44:44:12) (vol:vol:vol) through 11 minutes, a ramp up to solvent ratios of 35:35:30 for 11–21 min and isocratic conditions through 35 minutes. The column was maintained at 30°C with a mobile phase flow rate of 1.2 ml min–1 throughout. The samples were monitored with a photodiode array detector at 400, 445, and 480 nm, and carotenoids were identified and quantified by comparison to authentic standards (a gift of DSM Nutritional Products, Heerlen, The Netherlands).
 
-## Statistical analyses
+### Statistical analyses
 
 Analyses of quantitative data were performed in JMP Pro 16 (SAS Institute, Cary NC). Numerical data presented in figures are provided in Supplementary file 1.

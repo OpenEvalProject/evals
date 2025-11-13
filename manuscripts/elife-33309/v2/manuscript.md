@@ -16,13 +16,29 @@
 
 ## Abstract
 
-10.7554/eLife.33309.001 Meiotic cells undergo a single round of DNA replication followed by two rounds of chromosome segregation (the meiotic divisions) to produce haploid gametes. Both DNA replication and chromosome segregation are similarly regulated by CDK oscillations in mitotic cells. Yet how these two events are uncoupled between the meiotic divisions is unclear. Using Saccharomyces cerevisiae , we show that meiotic cells inhibit both helicase loading and helicase activation to prevent DNA replication between the meiotic divisions. CDK and the meiosis–specific kinase Ime2 cooperatively inhibit helicase loading, and their simultaneous inhibition allows inappropriate helicase reloading. Further analysis uncovered two previously unknown mechanisms by which Ime2 inhibits helicase loading. Finally, we show that CDK and the polo–like kinase Cdc5 trigger degradation of Sld2, an essential helicase–activation protein. Together, our data demonstrate that multiple kinases inhibit both helicase loading and activation between the meiotic divisions, thereby ensuring reductive cell division.
+Meiotic cells undergo a single round of DNA replication followed by two rounds of chromosome segregation (the meiotic divisions) to produce haploid gametes. Both DNA replication and chromosome segregation are similarly regulated by CDK oscillations in mitotic cells. Yet how these two events are uncoupled between the meiotic divisions is unclear. Using Saccharomyces cerevisiae, we show that meiotic cells inhibit both helicase loading and helicase activation to prevent DNA replication between the meiotic divisions. CDK and the meiosis–specific kinase Ime2 cooperatively inhibit helicase loading, and their simultaneous inhibition allows inappropriate helicase reloading. Further analysis uncovered two previously unknown mechanisms by which Ime2 inhibits helicase loading. Finally, we show that CDK and the polo–like kinase Cdc5 trigger degradation of Sld2, an essential helicase–activation protein. Together, our data demonstrate that multiple kinases inhibit both helicase loading and activation between the meiotic divisions, thereby ensuring reductive cell division.
 
 ## Introduction
 
 The production of haploid gametes is required for sexual reproduction. These gametes are produced by meiosis, a specialized cell division program during which a single round of DNA replication is followed by two rounds of chromosome segregation (the meiotic divisions), Meiosis I (MI) and Meiosis II (MII). In contrast, mitotically–dividing cells maintain their ploidy by strictly alternating rounds of DNA replication and chromosome segregation. The lack of DNA replication between MI and MII is essential for the reduction in ploidy inherent to meiosis, but it is unclear how the meiotic program differs from mitosis to allow for two sequential chromosome segregation events without an intervening S phase.
 
 In mitotic cells, both DNA replication and chromosome segregation require cyclin-dependent kinase (CDK) activity to oscillate during the cell cycle. A low–CDK state during G1 phase allows both events to initiate, and a high–CDK state is required for their completion. During meiosis, the CDK–oscillation dependence of both events presents a unique problem between MI and MII, a period known as the MI–MII transition (Figure 1A). After MI has been completed, CDK activity decreases, and then increases again upon entry into MII (Carlile and Amon, 2008). This oscillation is required for multiple essential chromosome–segregation events, including duplication of the spindle pole body (SPB, the yeast centrosome) (Buonomo et al., 2003; Fox et al., 2017; Marston et al., 2003). However, the DNA replication program must remain inhibited between MI and MII to achieve the hallmark of meiosis, reductive cell division. Given that an oscillation of CDK activity is sufficient for re–replication of the entire genome in mitotic cells (Dahmann et al., 1995), it is not fully understood how meiotic cells reset the chromosome segregation program while retaining inhibition of the DNA replication program.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig1-v2.jpg)
+
+**Figure 1.:** (A) The DNA replication program and chromosome segregation program are uncoupled during the MI–MII transition. Relative CDK activity at various stages of the meiotic cell cycle are shown (Carlile and Amon, 2008). The dashed boxes highlight the oscillations of low-to-high CDK activity during meiosis, and show the discrepancy between CDK-regulation of SPB duplication and DNA replication. See text for details. (B) ORC is bound to origins of replication throughout the meiotic divisions. The strain yDP71 was put through meiosis. ChIP–qPCR was used to detect ORC binding at the early–firing origin ARS1 (top graph, dark blue), the late–firing origin ARS1413 (top graph, light blue), and at the re–replication prone origins ARS305 (bottom graph, dark blue) and ARS418 (bottom graph, light blue). The time after transfer into sporulation medium and the associated meiotic stages are indicated below each lane. For cell–cycle stage quantification for this experiment, see Figure 1—figure supplement 1A. The peak % of input DNA immunoprecipitated (set to arbitrary unit (A.U.) =1.0) was 9.1% for ARS1, 2.2% for ARS1413, 46.7% for ARS305, and 10.9% for ARS418. (C) Mcm2–7 is bound to origins of replication in G1 phase but does not reassociate with origins during or between the meiotic divisions. The strain yDP71 was put through meiosis. ChIP–qPCR was used to detect Mcm2–7 binding at the early–firing origin ARS1 (top graph, red), the late–firing origin ARS1413 (top graph, orange), and at the re–replication prone origins ARS305 (bottom graph, red) and ARS418 (bottom graph, orange). The time after transfer into sporulation medium and the associated meiotic stages are indicated below each lane. For cell–cycle stage quantification for this experiment, see Figure 1—figure supplement 1B. The peak % of input DNA immunoprecipitated (set to A.U. = 1.0) was 7.4% for ARS1, 5.0% for ARS1413, 35% for ARS305, and 19.5% for ARS418.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cell–cycle stage quantification for Figure 1B. (B) Cell–cycle stage quantification for Figures 1C and 2A. (C) Representative micrographs from a separate experiment showing the peak time point of metaphase I, anaphase I, metaphase II, and anaphase II. Insets show an enlarged cell from that cell-cycle stage. Percent of cells in that stage written above the micrographs (based on counting 100 cells). Top: tubulin, middle: DAPI, bottom: merge (red = tubulin, blue = DAPI).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Enrichment of DNA immunoprecipitated (as a percent of input) was compared at different origins of replication relative to non-origin control DNA (URA3 locus). For ORC, the G2 ChIP was compared between each replication origin and URA3. For Mcm2-7, the G1 ChIP was compared between each replication origin and URA3.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Top: Immunoblots showing that Mcm2, Mcm3, Mcm6, Mcm7, Cdt1, and Orc1 are present at constant levels throughout meiosis (strain yDP71). Pgk1 and Ponceau are shown as loading controls. Bottom: Cell–cycle stage quantification.
 
 Mitotic cells use oscillations of CDK activity to ensure that the genome is replicated exactly once per cell division. During G1 phase, low CDK activity allows for the Mcm2–7 complex, the core enzyme of the replicative helicase, to be loaded onto origins of replication in an inactive state. This event, known as origin licensing or helicase loading, cannot occur in the presence of high CDK activity and requires the cooperative action of three proteins: Cdc6, Cdt1, and the Origin Recognition Complex (ORC) (Evrin et al., 2009; Remus et al., 2009). Upon S–phase entry, S–CDK (CDK bound to S-phase cyclins Clb5/6) is activated and impacts DNA replication in two ways. First, S–CDK phosphorylates two essential proteins, Sld2 and Sld3, that subsequently promote helicase activation, replisome assembly, and chromosome duplication (Masumoto et al., 2002; Tanaka et al., 2007; Zegerman and Diffley, 2007). Second, both S–CDK and M-CDK (CDK bound to mitotic cyclins Clb1-4) inhibit new helicase loading during S, G2, and M phases. These kinases directly phosphorylate Cdc6, Mcm3, and ORC to trigger the proteolytic degradation of Cdc6, the nuclear export of Mcm2–7–Cdt1, and inhibition of ORC helicase–loading activity, respectively (Calzada et al., 2000; Chen and Bell, 2011; Drury et al., 2000; Labib et al., 1999; Nguyen et al., 2000).
 
@@ -34,41 +50,97 @@ We set out to systematically address how DNA replication is inhibited between th
 
 ## Results
 
-## Mcm2–7 loading is the first inhibited step of DNA replication initiation
+### Mcm2–7 loading is the first inhibited step of DNA replication initiation
 
 To address how DNA replication is inhibited between MI and MII, we sought to identify the earliest inhibited step of replisome assembly. During replication initiation, the first proteins to stably associate with replication origins are ORC followed by the Mcm2–7 complex (Bell and Labib, 2016). To analyze ORC and Mcm2–7 binding to origins in populations of cells, it was necessary for us to obtain synchronized cultures of cells undergoing meiosis. To this end, we used a previously–described block–release procedure (Benjamin et al., 2003; Carlile and Amon, 2008). This method allows meiotic cells to proceed through G1 and S phase but arrest in Prophase I (hereafter referred to as G2 phase). Subsequent release from this cell cycle arrest results in cells progressing synchronously through Metaphase I, Anaphase I, Metaphase II, and Anaphase II with >90% of cells completing meiosis (Figure 1—figure supplement 1).
 
 Using ChIP–qPCR, we found that ORC was bound to a representative early–firing (ARS1) and late–firing (ARS1413) replication origin throughout both meiotic divisions (Figure 1B, top). ORC binding to DNA is therefore not limiting for replication initiation during meiosis. In contrast, although Mcm2–7 was present at origins during pre–meiotic G1 phase, this complex did not associate with either ARS1 or ARS1413 throughout MI and MII (Figure 1C, top). We also tested two additional origins, ARS305 and ARS418, that are prone to Mcm2–7 reloading and DNA re–replication in mitotic cells (Green et al., 2006; Nguyen et al., 2001; Tanny et al., 2006). As with the other origins tested, ORC bound to these origins throughout the meiotic divisions but Mcm2–7 loading was not observed after pre–meiotic G1 phase (Figure 1B and C, bottom). Both ORC and Mcm2-7 associated specifically with origin DNA sequences compared to non-origin DNA (Figure 1—figure supplement 2). The lack of Mcm2–7 binding to origins was not due to the absence of Mcm2–7 proteins or the essential helicase–loading protein Cdt1 (Figure 1—figure supplement 3). Thus, Mcm2–7 loading onto origins of replication is inhibited during the MI–MII transition.
 
-## CDK-dependent mechanisms inhibiting Mcm2–7 loading are weakened during the MI–MII transition
+### CDK-dependent mechanisms inhibiting Mcm2–7 loading are weakened during the MI–MII transition
 
 We considered two reasons that Mcm2–7 complexes were not reloaded upon decreased CDK activity during the MI–MII transition: (1) the known CDK-dependent mechanisms remain active enough to completely inhibit helicase loading (the CDK-balance model); or (2) meiosis–specific mechanisms inhibit helicase loading while CDK activity is reduced (the alternative-kinase model). To test the first possibility, we asked whether any of the CDK–dependent mechanisms preventing Mcm2–7 loading in mitotic cells were weakened during the MI–MII transition. In mitotically dividing cells, CDK inhibits helicase loading by three mechanisms: inhibition of ORC function, Cdc6 protein degradation, and Mcm2–7 nuclear export (Arias and Walter, 2007). We found that at least two of these mechanisms were transiently weakened during the MI–MII transition.
 
 Phosphorylation of Orc2 and Orc6 by CDK prevents ORC from facilitating helicase loading (Chen and Bell, 2011; Nguyen et al., 2001). Consistent with robust helicase loading during pre–meiotic G1 phase (Figure 1C), Orc2 and Orc6 were not phosphorylated during G1 when CDK is inactive (Figure 2A and B) (Carlile and Amon, 2008). In contrast, both subunits were phosphorylated throughout MI when CDK is highly active. Interestingly, we observed partial de–phosphorylation of both Orc2 (Figure 2A lane 9) and Orc6 (Figure 2B lane 6) at the MI–MII transition, before returning to a fully phosphorylated state that persisted until the end of MII.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig2-v2.jpg)
+
+**Figure 2.:** (A) Orc2 (strain yDP71) and (B) Orc6 (strain yDP120) are both transiently dephosphorylated during the MI–MII transition. ORC was detected by immunoblot during meiosis. A phosphorylation–dependent shift in electrophoretic-mobility reveals Orc2 and Orc6 phosphorylation states. The time after transfer into sporulation medium and the associated meiotic stages are indicated above each lane. For cell–cycle stage quantification, see Figure 1—figure supplement 1B (Orc2) and Figure 2—figure supplement 1A (Orc6). (C) CDC6 protein and mRNA transiently reaccumulate during the MI–MII transition (strain yDP71). Top: Cdc6 immunoblots (short and long exposures) during meiosis. Bottom: CDC6 mRNA levels were detected by northern blots during meiosis. The time after transfer into sporulation medium and the associated meiotic stages are indicated above each lane. For cell–cycle stage quantification, see Figure 2—figure supplement 1B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cell–cycle stage quantification for Figure 2B. (B) Cell–cycle stage quantification for Figure 2C.
+
 Unlike ORC inhibition, CDK–phosphorylation of Cdc6 targets it for proteolytic degradation (Calzada et al., 2000; Drury et al., 2000) and CDK is also partially responsible for repression of CDC6 transcription (Moll et al., 1991; Piatti et al., 1995). We found that Cdc6 protein was present during pre–meiotic G1 phase but became undetectable in MI when CDK is highly active (Figure 2C). During the MI–MII transition, however, Cdc6 protein partially reaccumulated (Figure 2C lane 8) before decreasing again in MII. As with Cdc6 protein levels, although CDC6 mRNA was low during most of MI and MII, expression increased briefly during the MI–MII transition (Figure 2C lane 7). Taken together, these findings suggested that reduced CDK activity during the MI–MII transition results in a partial but detectable decrease of ORC phosphorylation and a slight reaccumulation of Cdc6.
 
-## Ime2 inhibits the Mcm2–7 complex by an intrinsic mechanism to prevent helicase loading
+### Ime2 inhibits the Mcm2–7 complex by an intrinsic mechanism to prevent helicase loading
 
 The transient weakening of the CDK-dependent inhibitory mechanisms suggested the existence of meiosis–specific mechanisms to inhibit helicase loading. A strong candidate to mediate these potential mechanisms was Ime2, a CDK–related meiosis–specific kinase (Krylov et al., 2003). Previous studies found that Ime2 is active during the meiotic divisions (Berchowitz et al., 2013) and that, like CDK, this kinase can promote Mcm2–7 nuclear export upon completion of meiotic S phase (Holt et al., 2007). However, if Ime2 were replacing CDK–dependent inhibition of helicase loading during the MI–MII transition, we hypothesized that it would inhibit Mcm2–7 loading by more than one mechanism (as CDK is known to do).
 
 To identify additional mechanisms by which Ime2 inhibits Mcm2–7 loading, we asked if Ime2 could inhibit helicase loading in vitro. To this end, we used an assay that reconstitutes helicase loading on origin–containing DNA with four purified proteins (ORC, Cdc6, Cdt1, and Mcm2–7; see reaction scheme in Figure 3A) (Evrin et al., 2009; Remus et al., 2009). We found that pre-treating the helicase-loading proteins with purified Ime2 fully inhibited Mcm2–7 loading (Figure 3B and C). To demonstrate that this inhibition depended on Ime2 kinase activity, we purified an analog–sensitive Ime2 protein (Ime2–AS). Analog–sensitive kinases are active in the presence of ATP but are inhibited by specific bulky ATP analogs (Bishop et al., 2000). In the case of Ime2–AS, addition of the ATP analog 1–NA–PP1 strongly inhibits its kinase activity (Benjamin et al., 2003). In the presence of ATP, Ime2–AS inhibited Mcm2–7 loading to the same extent as wild–type (WT) Ime2 (compare Figure 3—figure supplement 1 to Figure 3C). However, the addition of 1–NA–PP1 to assays treated with Ime2–AS (but not WT Ime2) fully restored helicase loading (Figure 3D lanes 3–10). Consistent with Ime2 phosphorylation being responsible for the inhibition, the extent of helicase-loading inhibition correlated with the extent of phosphorylation of helicase–loading proteins for both WT Ime2 and Ime2–AS, with and without 1–NA–PP1 treatment (Figure 3—figure supplement 2). Taken together, these data demonstrate that Ime2-phosphorylation of one or more helicase-loading proteins directly inhibits origin licensing. Furthermore, because these experiments use only purified proteins, the mechanism preventing helicase loading must be due to the intrinsic inhibition of a specific protein’s function, as opposed to indirect inhibitory mechanisms such as nuclear export or protein degradation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig3-v2.jpg)
+
+**Figure 3.:** (A) Diagram of helicase–loading and OCCM–complex–formation assays. Origin–containing DNA (red) is bound to a magnetic bead. Origin bound ORC–Cdc6 complexes recruit Cdt1–Mcm2–7 heptamers to form the OCCM complex. In ATPγS, the reaction stops at this point, and the whole complex is stable in low–salt washes. In ATP, helicase loading proceeds to completion resulting in Mcm2–7 complexes encircling the DNA that are stable in high–salt washes. (B) Purification of Ime2stable–3XFlag. Asterisk (*) marks a slight contaminant. (C) Pre–incubation of Ime2 with the helicase–loading proteins inhibits Mcm2–7 loading onto replication origins in vitro. Top: Flowchart of experiment. Bottom: Helicase–loading assay at the indicated Ime2 concentration. Reaction lacking Cdc6 (lane 1) shows that Mcm2–7 complex DNA association depends on the helicase–loading reaction. (D) Ime2 inhibition of Mcm2–7 loading depends on its kinase activity. Top: Flowchart of experiment. Bottom: Helicase–loading assay. Purified Ime2–AS (150 nM) can inhibit Mcm2–7 loading (lane 3), and this inhibition can be prevented by increasing 1–NA–PP1 concentration (lanes 3–6). Wild–type Ime2 can inhibit Mcm2–7 loading regardless of 1–NA–PP1 concentration (lanes 7–10). (E) Ime2 cannot inhibit Mcm2–7-Cdt1 recruitment to ORC-Cdc6 in ATPγS. Top: Flowchart of experiment. Bottom: OCCM–complex–formation assay at the indicated Ime2 concentration (lanes 2–5). Mcm2–7-Cdt1 recruitment depends on Cdc6 (lane 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Ime2–AS can inhibit Mcm2–7 loading to a similar extent as wild–type Ime2 (compare to Figure 3C). Top: Flowchart of experiment. Bottom: Helicase–loading assay at the indicated Ime2–AS concentration. Reaction lacking Cdc6 (lane 1) shows that Mcm2–7 DNA association depends on the helicase–loading reaction.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Increased Ime2 concentration causes increased phosphorylation of the helicase–loading proteins. Top: total protein (Krypton stain). Bottom: phosphorylated protein (modified with [γ-32P] ATP). (B) In vitro kinase assay with wild-type Ime2 and Ime2–AS, with a titration of 1–NA–PP1. Ime2–AS kinase activity wasinhibited by increasing 1–NA–PP1 concentration (lanes 7–11), but wild-type Ime2 kinase activity was not (lanes 2–6). Top: total protein (Krypton stain). Bottom: phosphorylated protein (modified with [γ-32P] ATP).
+
 To more precisely elucidate the mechanism of Ime2-inhibition of helicase loading, we sought to determine the step of this reaction that Ime2 inhibits. During helicase loading, origin–bound ORC–Cdc6 complexes recruit Cdt1–Mcm2–7 heptamers to form a short-lived complex called the OCCM (for ORC-Cdc6-Cdt1-Mcm2-7) (Randell et al., 2006; Sun et al., 2013; Ticau et al., 2015; Yuan et al., 2017). After OCCM formation, multiple conformational changes and ATP hydrolysis events are required for the first Mcm2–7 complex to be stably loaded around the DNA and a second Mcm2–7 to be recruited and loaded (Coster and Diffley, 2017; Coster et al., 2014; Kang et al., 2014; Ticau et al., 2017; Yuan et al., 2017; Zhai et al., 2017). To determine whether Ime2 inhibits initial Mcm2–7 recruitment, we conducted in vitro association assays with the slowly hydrolyzable analog ATPγS instead of ATP, stalling helicase loading after OCCM formation (reaction scheme in Figure 3A) (Randell et al., 2006). Prior phosphorylation of the helicase–loading proteins with Ime2 (in the presence of ATP) did not prevent subsequent OCCM formation in the presence of excess ATPγS (Figure 3E). Thus, Ime2 phosphorylation does not block the protein–protein interactions necessary for initial Mcm2–7 recruitment, but instead must inhibit a downstream step during Mcm2–7 loading.
 
 Next, we sought to identify the Ime2-target(s) that result in the inhibition of helicase loading. In vitro kinase assays showed that Ime2 phosphorylates Cdc6, Cdt1, and subunits of both ORC and the Mcm2–7 complex (Figure 4A). To identify which of these phosphorylation events inhibits helicase loading, we used Ime2–AS to phosphorylate each of these proteins separately. We then inhibited Ime2–AS by the addition of 1–NA–PP1 before adding the three remaining, non–phosphorylated proteins and origin DNA to initiate helicase loading. Strikingly, we found that phosphorylation of the Mcm2–7 complex alone resulted in a >90% decrease in helicase loading (Figure 4B and C). In contrast, Ime2 phosphorylation of ORC resulted in a ~50% reduction in loading, whereas reactions with phosphorylated Cdc6 and Cdt1 showed only minor defects (Figure 4B and C). Although CDK also inhibits helicase loading in vitro, the equivalent experiment using CDK confirmed previous results showing that CDK only strongly inhibits ORC activity (Figure 4—figure supplement 1) (Chen and Bell, 2011). Together, these data demonstrate that Ime2 phosphorylation of the Mcm2–7 complex is sufficient to inhibit helicase loading. Furthermore, although Ime2 and CDK both directly inhibit helicase loading, the critical target required for their direct inhibition is distinct.
 
-## CDK and Ime2 cooperate to inhibit Mcm2–7 loading and Cdc6 expression during the MI–MII transition
+![Figure 4.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig4-v2.jpg)
+
+**Figure 4.:** (A) Ime2 can phosphorylate Cdc6, ORC, Cdt1 and Mcm2–7 in vitro. Buffer control (lanes 1, 3, and 5) or 50 nM Ime2 (lanes 2, 4, and 6) were incubated with the indicated substrate proteins. The substrates were purified Cdc6 (lanes 1 and 2), ORC (lanes 3 and 4) or Mcm2–7–Cdt1 (lanes 5 and 6). Asterisk (*) marks Ime2 autophosphorylation. Top: total protein (Krypton stain). Bottom: phosphorylated protein (modified with [γ-32P] ATP). (B) Ime2–phosphorylation of each protein separately shows that the primary target of Ime2–mediated inhibition is the Mcm2–7 complex (compare lanes 7 and 8). Top: Flowchart of experiment. Bottom: Helicase–loading assay after prior Ime2–phosphorylation of indicated protein. (C) Quantification of (B) from three independent experiments. Inhibition ratio was calculated as total Mcm2–7 loading from the +Ime2 reactions divided by amount of loading in the corresponding reaction lacking Ime2. The mean is represented by the height of the bar. Error bars represent the standard deviation of three independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) CDK–phosphorylation of each protein separately shows that the primary target of CDK–mediated inhibition is ORC (compare lane 5 and 6). Top: Flowchart of experiment. Bottom: Helicase–loading assay after prior CDK–phosphorylation of the indicated protein.
+
+### CDK and Ime2 cooperate to inhibit Mcm2–7 loading and Cdc6 expression during the MI–MII transition
 
 A critical question we sought to answer was which kinase inhibits helicase loading during the MI–MII transition in vivo. To address this question, we employed yeast strains with analog–sensitive alleles of CDK (cdk1–as) and Ime2 (ime2–as) in place of their respective wild-type alleles. As cells were entering the MI–MII transition (≥45% of cells in anaphase I; Figure 5—figure supplement 1), we inhibited these kinases and examined Mcm2–7 loading, CDC6 mRNA and protein expression, and ORC phosphorylation. As a control, we confirmed that cells with wild–type CDK1 and IME2 were unaffected by addition of inhibitors (compare Figure 5A to Figures 1 and 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig5-v2.jpg)
+
+**Figure 5.:** Simultaneous inhibition of both CDK and Ime2 is required for robust Mcm2–7 reloading and CDC6 reaccumulation during the MI-MII transition. (A–D): Mcm2–7 loading (ChIP-qPCR), Orc2 phosphorylation (immunoblots), and CDC6 protein and mRNA expression (immunoblots and northern blots) were analyzed in G1 phase as well as at the MI–MII transition. At the MI–MII transition, 10 µM 1–NM–PP1 and 20 µM 1–NA–PP1 were added. Samples were harvested 15 and 30 min after inhibitor addition. (A) Strain yDP71: CDK1, IME2. (B) Strain yDP152: cdk1–as, IME2. (C) Strain yDP176: CDK1, ime2–as. (D) Strain yDP177: cdk1–as, ime2–as. For cell–cycle stage quantification for Figure 5A–5D, see Figure 5—figure supplement 1A–1D, respectively. Mcm2–7 loading was analyzed at ARS305 (red) and ARS418 (orange). The peak % of input DNA immunoprecipitated (set to A.U. = 1.0) was 15.5% for ARS305 and 5.3% for ARS418. (E) Ime2 directly phosphorylates Cdc6 phospho–degron domains. Purified Cdc6 was treated with purified Ime2 or buffer–control in the presence of ATP. Quantitative mass spectroscopy was used to identify Ime2-dependent phosphorylation sites on Cdc6. Phosphorylation sites detected (with >4–fold enrichment upon Ime2 treatment) as well as the location of the Cdc6 phospho–degron domains are illustrated. Yellow markers indicate unique Ime2 sites. Orange markers indicate Ime2 sites that are also CDK sites based on previous work (Calzada et al., 2000; Drury et al., 2000). Phospho-degron domains are based on previous work (Perkins et al., 2001). For phosphorylation–site enrichment values, see Supplementary file 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Cell–cycle stage quantification for Figure 5A–5D, respectively. At the time of treatment with 10 µM 1–NM–PP1 and 20 µM 1–NA–PP1, all strains had ~50% of cells in Anaphase I. The 8 hr 30’ immunofluorescence time point is from cells in this same experiment that did not receive the kinase-inhibitor treatment, 45 min after the other cells did receive the inhibitor treatment. The purpose of this time point is to demonstrate that all four strains would successfully complete meiosis I had they not been received any kinase inhibitor.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Inhibition of CDK in G2/M arrested mitotic cells leads to helicase reloading. Cells from strain A4370 (cdk1-as) were arrested in alpha factor (G1) or nocodazole (G2/M). Nocodazole–arrested cells were treated for 30 min with either DMSO (vehicle control) or 10 µM 1–NM–PP1 +20 µM 1–NA–PP1. Mcm2–7 binding to origin DNA was detected by ChIP–qPCR at ARS305 (red) and ARS418 (orange).
 
 We inhibited CDK and Ime2 separately to determine the impact of each kinase on helicase loading. Inhibition of CDK at the end of MI promoted only limited Mcm2–7 reloading and reaccumulation of CDC6 mRNA and protein, although ORC was substantially dephosphorylated in this condition (Figure 5B). In mitotic cells, CDK-inhibition bypasses all of these inhibitory mechanisms and promotes robust Mcm2–7 reloading (Dahmann et al., 1995; Drury et al., 2000; Nguyen et al., 2001), and we have recapitulated this result with the cdk1–as allele (Figure 5—figure supplement 2). Consequently, there must be CDK–independent mechanisms to inhibit origin licensing and CDC6 expression that are specific to meiosis. To test whether Ime2 fulfills these functions, we inhibited Ime2 as cells were entering the MI–MII transition. Similar to CDK, however, Ime2-inhibition only caused limited Mcm2–7 reloading, although it did promote more significant reaccumulation of CDC6 mRNA and protein than CDK-inhibition (Figure 5C). Therefore, neither CDK nor Ime2 are solely responsible for inhibiting helicase loading during the MI–MII transition.
 
 Do CDK and Ime2 cooperate to repress helicase reloading? Strikingly, simultaneous inhibition of both CDK and Ime2 at the end of MI resulted in much higher levels of Mcm2–7 reloading than we observe with either kinase alone (Figure 5D). Furthermore, co–inhibition of these kinases restored expression of CDC6 mRNA and protein to levels observed in pre–meiotic G1 cells (Figure 5D). Consistent with repression of Cdc6 by both kinases, mass spectrometry analysis showed that Ime2 phosphorylates multiple sites on Cdc6 within its phosphorylation–responsive degron domains in vitro, and two of these sites directly overlap with CDK–sites known to contribute to Cdc6 degradation (Figure 5E, Supplementary file 1) (Calzada et al., 2000; Drury et al., 2000). The transcriptional and proteolytic inhibition of Cdc6 by both CDK and Ime2 illustrates that it is a critical target of inhibition to prevent helicase loading. Thus, neither CDK nor Ime2 is capable of full inhibition of helicase loading but together they are a potent inhibitor of origin licensing and CDC6 expression during the MI–MII transition.
 
-## Cdc5 and CDK promote the degradation of Sld2, an essential helicase–activation protein
+### Cdc5 and CDK promote the degradation of Sld2, an essential helicase–activation protein
 
 We considered the possibility that downstream steps of DNA replication could also be inhibited during the meiotic divisions. Despite the numerous mechanisms inhibiting Mcm2–7 loading, the weakening of ORC– and Cdc6–dependent controls (Figure 2) revealed a degree of leakiness in at least a subset of these mechanisms without any kinase perturbation. Therefore, we analyzed the abundance of proteins required for Mcm2–7 activation, which is the step after Mcm2–7 loading during replication initiation. Most helicase–activation proteins were present throughout the meiotic divisions, including Cdc45, Psf2 (a member of the GINS complex), Sld3, and Dpb11 (Figure 6—figure supplement 1). In contrast, Sld2 was robustly degraded upon entry into MI and did not reaccumulate until the completion of MII (Figure 6A, Figure 6—figure supplement 2). Sld2 is essential for replication initiation (Kamimura et al., 1998; Yeeles et al., 2015) and thus, its degradation represents a robust mechanism to inhibit helicase activation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig6-v2.jpg)
+
+**Figure 6.:** (A) Sld2 protein is degraded upon entry into the meiotic divisions. Immunoblots of Sld2–13myc during meiosis from strain yDP336. The time after transfer into sporulation medium and the associated meiotic stages are indicated above each lane. For cell–cycle synchrony, refer to Figure 6—figure supplement 2A. (B–D) Mutation of either Cdc5– or CDK–phosphorylation sites on Sld2 results in stabilization of Sld2 throughout the meiotic divisions: Immunoblots of Sld2–13myc during meiosis with the following mutations: (B) Cdc5–phosphorylation sites (strain yDP473: 2TA – T122A/T143A), (C) CDK–phosphorylation sites (strain yDP642: 2SA – S128A/S138A), or (D) Cdc5– and CDK–phosphorylation sites (strain yDP644: 4A – T123A/S128A/S138A/T143A). The time after transfer into sporulation medium and the associated meiotic stages are indicated above each lane. For cell–cycle synchrony, refer to Figure 6—figure supplement 2B–2D. (E) Top: Samples from (A–D) with the peak number of cells in G2, Metaphase I, Anaphase I, Metaphase II, and Anaphase II were run side–by–side. Middle: Mean of Sld2 levels normalized to PGK1 levels from three independent experiments. Bottom: Graph of Sld2/PGK1 quantification from three independent experiments. The mean is represented by the height of the bar. Error bars represent the standard deviation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Top: Immunoblots for Cdc45–13myc, Sld3–13myc, Dpb11–3V5, and Psf2–3V5, respectively. The time after transfer into sporulation medium and the associated meiotic stages are indicated above each lane. Bottom: Cell–cycle stage quantification.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) Cell–cycle stage quantification for Figure 6A–D, respectively.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/33309/elife-33309-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Sld2 and Pgk1 western blots have increased intensity with increased input. (B) Quantification of Sld2 and Pgk1 levels is similar to the expected value based on the relative amount of input.
 
 Both CDK and the polo–like kinase Cdc5 were candidates to regulate meiotic Sld2 protein levels (Reusswig et al., 2016). During mitotic divisions, total Sld2 protein levels do not change dramatically until the end of mitosis, at which point CDK– and Cdc5– phosphorylation sites within a phospho–degron domain on Sld2 become important for its degradation. In addition, Cdc5 and the M–phase cyclins Clb1, Clb3, and Clb4 are transcriptionally induced by the meiosis-specific transcription factor Ndt80 (Chu and Herskowitz, 1998), and both Cdc5 and CDK are active during the meiotic divisions (Attner et al., 2013; Benjamin et al., 2003; Carlile and Amon, 2008; Clyne et al., 2003; Dahmann and Futcher, 1995; Lee and Amon, 2003; Sourirajan and Lichten, 2008).
 
@@ -98,31 +170,265 @@ The problem of uncoupling DNA replication and chromosome segregation during meio
 
 ## Materials and methods
 
-## Yeast strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Saccharomyces cerevisiae SK1)</td>
+      <td>yDP71</td>
+      <td>This paper</td>
+      <td>Cdc6-3V5</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 CDC6-3V5::KANMX6/CDC6-3V5::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP120</td>
+      <td>This paper</td>
+      <td>Orc6-3V5</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 ORC6-3V5::KANMX6/ORC6-3V5::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP152</td>
+      <td>This paper</td>
+      <td>cdk1-as, Cdc6-3V5</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 cdc28-as1(F88G)/cdc28-as1(F88G) CDC6-3V5::KANMX6/CDC6-3V5::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae W303)</td>
+      <td>yDP159</td>
+      <td>This paper</td>
+      <td>Ime2 Purification</td>
+      <td>W303 MATa bar1::hisG pep4::unmarked LEU2::pGAL1,10-IME2(1–404)−3xFLAG</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP176</td>
+      <td>This paper</td>
+      <td>ime2-as, Cdc6-3V5</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 ime2-as1(M146G)/ime2-as1(M146G) CDC6-3V5::KANMX6/CDC6-3V5::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP177</td>
+      <td>This paper</td>
+      <td>cdk1-as, ime2-as, Cdc6-3V5</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 cdc28-as1(F88G)/cdc28-as1(F88G) ime2-as1(M146G)/ime2-as1(M146G) CDC6-3V5::KANMX6/CDC6-3V5::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP329</td>
+      <td>This paper</td>
+      <td>Dpb11-3V5</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 DPB11-3V5::KANMX6/DPB11-3V5::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP330</td>
+      <td>This paper</td>
+      <td>Psf2-3V5</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 PSF2-3V5::KANMX6/PSF2-3V5::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP335</td>
+      <td>This paper</td>
+      <td>Cdc45-13myc</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 CDC45-13myc::KANMX6/CDC45-13myc::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP336</td>
+      <td>This paper</td>
+      <td>Sld2-13myc</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 SLD2-13myc::KANMX6/SLD2-13myc::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP337</td>
+      <td>This paper</td>
+      <td>Sld3-13myc</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 SLD3-13myc::KANMX6/SLD3-13myc::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP473</td>
+      <td>This paper</td>
+      <td>Sld2-2TA-13myc</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 SLD2(T122A T143A)−13myc::KANMX6/ SLD2(T122A T143A)−13myc::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae W303)</td>
+      <td>yDP554</td>
+      <td>This paper</td>
+      <td>Ime2-AS Purification</td>
+      <td>W303 MATa bar1::hisG pep4::unmarked LEU2::pGAL1,10-IME2(1–404, M146G)−3xFLAG</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP642</td>
+      <td>This paper</td>
+      <td>Sld2-2SA-13myc</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 SLD2(S128A S138A)−13myc::KANMX6/ SLD2(S128A S138A)−13myc::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yDP644</td>
+      <td>This paper</td>
+      <td>Sld2-4A-13myc</td>
+      <td>SK1 MATa/alpha ura3::pGPD1-GAL4(848). ER::URA3/ura3::pGPD1- GAL4(848).ER::URA3 GAL-NDT80::TRP1/GAL-NDT80::TRP1 SLD2(T122A S128A S138A T143A)−13myc:: KANMX6/SLD2(T122A S128A S138A T143A) −13myc::KANMX6</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae W303)</td>
+      <td>ySK119</td>
+      <td>Lõoke et al, 2017 (PMID: 28270517)</td>
+      <td>Cdk1-Clb5 Purification</td>
+      <td>W303 MATa bar1::hisG pep4::unmarked URA3::pGAL1,10-Cdc28-His,Δ1–95-Clb5-Flag</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae SK1)</td>
+      <td>yST135</td>
+      <td>This paper</td>
+      <td>Mcm2-7 Purification</td>
+      <td>W303 MATa bar1::hisG pep4::unmarked TRP1::pSKM003(pGAL1,10-MCM6,MCM7) HIS3::pSKM004-(pGAL1,10-MCM2,Flag-MCM3) LYS2::pSKM002-(pGAL1,10-MCM4,MCM5)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae W303)</td>
+      <td>yST144</td>
+      <td>Ticau et al. (2015) (PMID: 25892223)</td>
+      <td>Mcm2-7-Cdt1 Purification</td>
+      <td>W303 MATa bar1::hisG pep4::unmarked TRP1::pSKM003(pGAL1,10-MCM6,MCM7) HIS3::pSKM004-(pGAL1,10-MCM2,Flag-MCM3) LYS2::pSKM002-(pGAL1,10-MCM4,MCM5) URA3::pALS1(pGAL1,10-Cdt1,GAL4)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae W303)</td>
+      <td>A4370</td>
+      <td>Angelika Amon</td>
+      <td>cdk1-as</td>
+      <td>W303 MATa bar1::hisG cdc28-as1(F88G)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. cerevisiae W303)</td>
+      <td>ySDORC</td>
+      <td>John Diffley</td>
+      <td>ORC purification</td>
+      <td>W303 MATa bar1::hyg pep4::kanMX TRP1::pGAL1,10-ORC5,ORC6 HIS3::pGAL1,10-ORC3,ORC4 URA3::pGAL1, 10-CBP-TEV-ORC1,ORC2</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>poly ORC (Orc1 and Orc2 western blots and ORC ChIP)</td>
+      <td></td>
+      <td>HM1108 (Bell Lab)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Cdt1</td>
+      <td></td>
+      <td>HM5353 (Bell Lab)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>poly MCM (Mcm3 and Mcm6 western blots)</td>
+      <td></td>
+      <td>UM174 (Bell Lab)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>poly MCM (Mcm2-7 ChIP)</td>
+      <td></td>
+      <td>UM185 (Bell Lab)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mcm2</td>
+      <td></td>
+      <td>Santa Cruz, yN-19 (code sc-6680)</td>
+      <td>RRID:AB_648843</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mcm7</td>
+      <td></td>
+      <td>Santa Cruz, yN-19 (code SC-6688)</td>
+      <td>RRID:AB_647936</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>PGK1</td>
+      <td></td>
+      <td>Invitrogen (catalog #459250)</td>
+      <td>RRID:AB_2532235</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (plasmid)</td>
+      <td>pSKM033</td>
+      <td>Kang et al. (2014) (PMID: 25087876)</td>
+      <td>Cdc6 purification</td>
+      <td>pGEX-GST-3C-FLAG-CDC6</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (plasmid)</td>
+      <td>pALS16</td>
+      <td>This study</td>
+      <td>Cdt1 purification</td>
+      <td>pGEX-GST-3C-CDT1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>1-NM-PP1</td>
+      <td></td>
+      <td>Toronto Research Chemicals (catalog #A603003)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>1-NA-PP1</td>
+      <td></td>
+      <td>Cayman Chemical Co., (catalog #NC1049860)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and plasmids
 
 All S. cerevisiae strains are summarized in the Key Resources Table. Strains used for meiosis were diploids isogenic with SK1 ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, leu2::hisG/leu2::hisG, his3:hisG/his3:hisG, trp1::hisG/trp1::hisG. Other strains were isogenic with W303 ade2–1 trp1–1 leu2–3112 his3–11,15 ura3–1 can1–100. Epitope tagging was done by homologous recombination as previously described (Longtine et al., 1998). Protein expression plasmids are described in the Key Resources Table.
 
-## Meiotic time–courses
+### Meiotic time–courses
 
 Meiotic time courses were done as described (Berchowitz et al., 2013). Briefly, saturated YPD cultures were diluted to an OD600 = 0.25 in BYTA medium and grown for 18–22 hr. Cells were then washed once with water and resuspended to OD600 = 1.9 in Sporulation medium before taking the 0–hour sample. All strains used for meiotic time courses included PGPD–GAL4–ER, PGAL–NDT80. Cultures were shaken at 30°C for 6 hr to allow cells to accumulate at the NDT80 block. Addition of 1 µM β–estradiol (5 mM stock in ethanol [Sigma, E2758]) released cells from the NDT80 block. Protein, RNA, ChIP, and immunofluorescence samples were harvested in parallel at the indicated time points.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Tubulin immunofluorescence was performed as described (Berchowitz et al., 2013). For spindle and nuclei scoring, 100 cells were counted per time point. Metaphase–I cells were defined as having a short, thick, bipolar spindle; Anaphase–I cells as having a long, bipolar spindle; Metaphase–II cells as having two short, thick, bipolar spindles; and Anaphase–II cells as having two long, bipolar spindles. Nuclei were counted as the number of separated DNA masses.
 
-## Immunoblots
+### Immunoblots
 
 Cells were pelleted at 136,000 x g, resuspended in 5% TCA, and left at 4°C overnight. Pellets were washed with acetone, dried, and resuspended in 100 µL of 50 mM Tris [pH = 7.6],1 mM EDTA, 2.75 mM DTT, 1 mM PMSF, and 1x cOmplete Protease Inhibitors (Roche). Cells were lysed three times with glass beads using a FastPrep (MP Biomedicals), and boiled for 5 min after addition of 75 uL 5x sample buffer. Ponceau staining was used as a loading control. Proteins were detected with antibodies recognizing the epitope indicated or with the following antibodies: Orc1 and Orc2 (HM1108), Cdt1 (HM5353), Mcm3 and Mcm6 (UM174), Mcm2 (Santa Cruz, yN–19), Mcm7 (Santa Cruz, yN–19), and PGK1 (Invitrogen).
 
-## Northern blots
+### Northern blots
 
 Total RNA was isolated using a (400 µL:400 µL) mixture of TES buffer (10 mM Tris [pH7.6], 10 mM EDTA, 0.5% SDS) and acid phenol while shaking (Thermomixer, Eppendorf) with glass beads at 65°C for 30 min. After ethanol precipitation and resuspension in DEPC–treated water, equal amounts of RNA (between 10–14 µg) were loaded in each lane. rRNA was used as a loading control and detected with methylene blue. CDC6–specific 32P–labeled probes were made by Klenow extension (GE Healthcare, RPN1605) Template: 3’–end specific CDC6 PCR–product. Primers: random hexamers.
 
-## Helicase loading and OCCM formation assays
+### Helicase loading and OCCM formation assays
 
 Helicase loading was done as described in Kang et al. (2014), except using 200 mM potassium glutamate (KGlut) instead of 300 mM. Briefly, 50 nM ORC, 100 nM Cdc6, 150 nM Mcm2–7/Cdt1 were combined in a 40 µL reaction containing 25 nM bead–bound 1.3 kB DNA including the ARS1 origin. After mixing the proteins and DNA, reactions were shaken at 1,250 rpm at 25°C for 30 min (Thermomixer, Eppendorf), and then washed three times. For helicase–loading experiments, the three washes had buffer containing 300 mM K–Glut, 500 mM NaCl, and 300 mM KGlut respectively. DNA–bound proteins were eluted using DNase, run on SDS–PAGE gels, and detected using Krypton fluorescent stain (Fisher, PI–46629). To monitor OCCM formation, 5 mM ATPγS was used in place of ATP, and only washed with buffers containing 300 mM KGlut. Ime2 or CDK (150 nM or buffer control) was pre–incubated with the four purified proteins for 45 min before adding the bead–bound ARS1 DNA. For experiments examining the effects of phosphorylating individual proteins, 150 nM kinase was pre–incubated with the indicated protein in the ‘+kinase’ reactions, and the other three proteins were mock phosphorylated. After 1 hr, the kinase inhibitor (1–NA–PP1 for Ime2, Sic1 for CDK) was added to both the ‘+kinase’ and ‘–kinase’ reactions, and the kinase itself was then added to the ‘–kinase’ reactions to control for any effects that didn’t depend on kinase activity. Phosphorylated and mock phosphorylated proteins were then combined and added to ARS1 DNA to start the helicase–loading assay.
 
-## Protein purifications
+### Protein purifications
 
 Ime2 (strain yDP159) and Ime2–AS (strain yDP554) were purified from yeast strains containing the PGAL–IME2stable–3xFLAG construct, which expressed amino acids 1–404 of IME2 fused to a 3xFLAG epitope at the C–terminus. The Ime2–AS protein contains a M146G mutation. Eight liters of yeast were grown in YEP–Glycerol to OD600 = 1.0 and induced with 2% galactose for 5 hr. Cells were lysed using a freezer mill in Buffer H (25 mM Hepes [pH = 7.6], 5 mM magnesium acetate [MgAc], 1 mM EDTA, 1 mM EGTA, 10% glycerol) containing 1 M Sorbitol, 0.02% NP–40, 2 mM ATP, 0.5 M KCl, 1x cOmplete Protease Inhibitors (Roche), and PhosSTOP phosphatase inhibitors (Roche). The lysate was clarified by centrifugation at 150,000 x g. KCl concentration was adjusted to 300 mM and the lysate was clarified again by centrifugation at 25,000 x g. Lysate was incubated with 1 mL M2–resin (Sigma, A2220) and washed with Buffer H with 300 mM KGlut and 0.01% NP–40 before elution with 3xFLAG peptide. Eluted protein was concentrated using a spin column (10 kDa cutoff, Vivaspin) and injected onto a Superdex 75 column (GE Healthcare) equilibrated with the same buffer. Peak Ime2–containing fractions were pooled and aliquoted.
 
@@ -130,18 +436,18 @@ Cdt1 (plasmid pALS16) was purified from E. coli Rosetta 2 cells induced overnigh
 
 Clb5–CDK (ySK119) was purified as previously described (Lõoke et al., 2017). Cdc6 (pSKM033), ORC (ySDORC), Mcm2–7 (yST135), and Mcm2–7–Cdt1 (yST144) were purified as previously described (Kang et al., 2014).
 
-## In vivo kinase inhibition
+### In vivo kinase inhibition
 
 For strains containing cdk1–as, the kinase was inhibited with 10 µM 1–NM–PP1 (Toronto Research Chemicals, A603003). For strains containing ime2–as, the kinase was inhibited with 20 µM 1–NA–PP1 (Cayman Chemical Co., NC1049860). For experiments comparing the effects of inhibiting one or both kinases, both inhibitors were added to each strain regardless of genotype to normalize for the effect of the inhibitor without the corresponding analog–sensitive allele. Both inhibitors were prepared from 20 mM stocks in DMSO.
 
-## ChIP–qPCR
+### ChIP–qPCR
 
 Chromatin immunoprecipitations were performed as described with minor modifications (Blitzblau et al., 2012). 10 mL of cells were harvested for each sample, and 4% of the lysate was removed as an input control after sonication. Mcm2–7 was immunoprecipitated with 1.5 µL of UM185 (rabbit polyclonal antibody), whereas ORC was immunoprecipitated with 1 µL HM1108 (rabbit polyclonal antibody). Input and immunoprecipitated DNA from each sample were run in triplicate on a Light Cycler 480 II Real–Time PCR system (Roche). The relative amount of immunoprecipitated DNA vs. input DNA was calculated, and the highest sample, or the average of all G1 samples in Figure 5, was normalized to 1.0 within each experiment. Error bars represent the standard deviation from three PCR replicates.
 
-## In vitro kinase assay
+### In vitro kinase assay
 
 Ime2 was incubated with 100–200 nM of purified substrate protein (Cdc6, ORC, or Mcm2–7/Cdt1) in Buffer H + 200 mM K–Glut, 1 mM ATP, and 5 µCi [γ–32P] ATP. Reactions were terminated after 45 min by boiling in sample buffer. Samples were loaded onto an SDS–PAGE gel, and total protein was visualized by Krypton fluorescent stain. 32P–modified proteins were detected by autoradiography.
 
-## iTRAQ LC–MS/MS
+### iTRAQ LC–MS/MS
 
 All samples were analyzed with two biological replicates. 150 nM Ime2 (or buffer control) was incubated with 400 nM Cdc6 under the same buffer conditions and for the same time as in the helicase–loading assay. Proteins were reduced, alkylated, and digested with trypsin. Peptides were labeled using 4 of the 6 channels from the TMT 6plex kit (Thermo) performed per manufacturer’s instructions. Samples labeled with the four different isotopic TMT reagents were combined and concentrated to completion in a vacuum centrifuge. house, 6 cm of 10 µm C18) and a self–pack 5 µm tip analytical column (12 cm of 5 µm C18, New Objective) over a 140 min gradient before nanoelectrospray using a QExactive Plus mass spectrometer (Thermo). The parameters for the full scan MS were: resolution of 70,000 across 350–2000 m/z, AGC 3e6, and maximum IT 50 ms. The full MS scan was followed by MS/MS for the top 10 precursor ions in each cycle with a NCE of 28 and dynamic exclusion of 30 s. Raw mass spectral data files (.raw) were searched using Proteome Discoverer (Thermo) and Mascot version 2.4.1 (Matrix Science). Mascot search parameters were: 10 ppm mass tolerance for precursor ions; 15 mmu for fragment ion mass tolerance; 2 missed cleavages of trypsin; fixed modification were carbamidomethylation of cysteine and TMT 6plex modification of lysines and peptide N–termini; variable modifications were methionine oxidation, tyrosine phosphorylation, and serine/threonine phosphorylation. TMT quantification was obtained using Proteome Discoverer and isotopically corrected per manufacturer’s instructions, and were normalized to the mean of each TMT channel. Only peptides with a Mascot score greater than or equal to 25 and an isolation interference less than or equal to 30 were included in the data analysis. Mascot peptide identifications, phosphorylation site assignments, and quantification were verified manually with the assistance of CAMV (Curran et al., 2013). Phosphorylation sites were assigned based on having an average enrichment of >4–fold in the Ime2–treated samples compared to control samples.

@@ -39,7 +39,7 @@ We compare the RL-DDM with two RL-EAMs based on a racing accumulator architectur
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig1-v2.jpg)
 
-**Figure 1.:** Bottom graphs visualize how Q-values are linked to accumulation rates. Top panel illustrates the evidence-accumulation process of the DDM (panel A) and racing diffusion (RD) models (panels B and C). Note that in the race models there is no lower bound. Equations 2–4 formally link Q-values to evidence-accumulation rates. In the RL-DDM, the difference  in Q-values is accumulated, weighted by free parameter (Δ), plus additive within-trial white noise W with standard deviation w. In the RL-RD, the (weighted) Q-values for both choice options are independently accumulated. An evidence-independent baseline urgency term, s (equal for all accumulators), further drives evidence accumulation. In the RL-ARD models, the advantages V0 in Q-values are accumulated as well, plus the evidence-independent baseline term (Δ). The gray icons indicate the influence of the Q-value V0sum  on evidence accumulation, which is not included in the limited variant of the RL-ARD. In all panels, bold-italic faced characters indicate parameters. Q1 and QΣ2 are Q-values for both choice options, which are updated according to a delta learning rule (Equation 1 at the bottom of the graph), with learning rate .α
+**Figure 1.:** Bottom graphs visualize how Q-values are linked to accumulation rates. Top panel illustrates the evidence-accumulation process of the DDM (panel A) and racing diffusion (RD) models (panels B and C). Note that in the race models there is no lower bound. Equations 2–4 formally link Q-values to evidence-accumulation rates. In the RL-DDM, the difference $(Δ)$ in Q-values is accumulated, weighted by free parameter $w$, plus additive within-trial white noise W with standard deviation $s$. In the RL-RD, the (weighted) Q-values for both choice options are independently accumulated. An evidence-independent baseline urgency term, $V_{0}$ (equal for all accumulators), further drives evidence accumulation. In the RL-ARD models, the advantages $(Δ)$ in Q-values are accumulated as well, plus the evidence-independent baseline term $V_{0}$. The gray icons indicate the influence of the Q-value sum $Σ$ on evidence accumulation, which is not included in the limited variant of the RL-ARD. In all panels, bold-italic faced characters indicate parameters. Q1 and Q2 are Q-values for both choice options, which are updated according to a delta learning rule (Equation 1 at the bottom of the graph), with learning rate $\alpha$.
 
 For all models, we first test how well they account for RT distributions (central tendency, variability, and skewness of RTs), accuracies, and learning-related changes in RT distributions and accuracies in a typical instrumental learning task (Frank et al., 2004). In this experiment, we also manipulated difficulty, that is, the magnitude of the difference in average reward between pairs of options. In two further experiments, we test the ability of the RL-EAMs to capture key behavioral phenomena in the decision-making and reinforcement-learning literatures, respectively, speed-accuracy trade-off (SAT), and reversals in reward contingencies, again in binary choice. In a final experiment, we show that the RL-ARD extends beyond binary choice, successfully explaining accuracy and full RT distributions from a three-alternative instrumental learning task that manipulates reward magnitude.
 
@@ -55,17 +55,759 @@ Throughout, we summarize RT distributions by calculating the 10th, 50th (median)
 
 We first examine results aggregated over difficulty conditions. The posterior predictives of all four RL-EAMs are shown in Figure 3, with the top row showing accuracies, and the middle and bottom rows correct and error RT distributions (parameter estimates for all models can be found in Table 1). The RL-DDM generally explains the learning-related increase in accuracy well, and if only the central tendency were relevant it might be considered to provide an adequate account of RT, although correct median RT is systematically under-estimated. However, RT variability and skew are severely over-estimated. The RL-RD largely overcomes the RT distribution misfit, but it overestimates RTs in the first trial bins, and while capturing an increase in accuracy over trials, it is systematically underestimated. The RL-ARD models provide the best explanation of all key aspects of the data: except for a slight underestimation of accuracy in early trial bins (largely shared with the RL-DDM), they capture accuracy well, and like the RL-RD, they capture the RT distributions well, but without overpredicting the RTs in the early trials. The two RL-ARD models do not differ greatly in fit, except that the limited version slightly underestimates the decrease in RT with learning.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig3-v2.jpg)
+
+**Figure 3.:** Data (black) and posterior predictive distribution (blue) of the RL-DDM (left column), RL-RD, RL-lARD, and RL-ARD (right column). Top row depicts accuracy over trial bins. Middle and bottom row show 10th, 50th, and 90th RT percentiles for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data are collapsed across participants and difficulty conditions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Data are black dots and lines, posterior predictive distribution are blue. Top row depicts accuracy over trial bins. Middle and bottom row illustrate 10th, 50th, and 90th quantile RT for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data are collapsed across participants and difficulty conditions. The summed BPICs were 7717 (RL-DDM A1), 7636 (RL-DDM A2), 4844 (RL-DDM A3) and 4884 (RL-DDM A4). Hence, the largest improvement of quality of fit of the RL-DDM was obtained by adding $s_{t0}$.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Parameter recovery was done by first fitting the RL-ARD model to the empirical data, and then simulating the exact same experimental paradigm (208 trials, 55 subjects, four difficulty conditions) using the median parameter estimates obtained from the model fit. Subsequently, the RL-ARD was fit to the simulated data. The recovered median posterior estimates (y-axis) are plotted against the data-generating values (x-axis). Pearson’s correlation coefficient r and the root mean square error (RMSE) are shown in each panel. Diagonal lines indicate the identity x = y.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Here, we first fit the RLDDM and RL-ARD to the empirical data of experiment 1, and then simulating 50 full datasets with both models using the exact same experimental paradigm (208 trials, 55 subjects, 4 difficulty conditions), and using the median parameter estimates obtained from the model fits. Hence, in total 100 full datasets (5500 subjects) were simulated. We then fit both the RL-DDM and RL-ARD to all 100 simulated datasets. The matrices visualize the model confusability when using the BPIC (left column) or minimum deviance (right column) as a model comparison metric. The minimum deviance is a measure of quality of fit without a penalty for model complexity. The top row shows the model comparisons per dataset (using the summed BPIC / minimum deviances), bottom row shows the model comparisons per subject. Model comparisons using the BPIC perfectly identified the data-generating model when summing BPICs across subjects. By subject individually, the RL-ARD incorrectly won model comparisons for 82 subjects (3%); the RL-DDM incorrectly won for 4 subjects (0.1%). Interestingly, when using the summed minimum deviances as a model comparison metric (thus not penalizing for model complexity), the across-subject model comparisons perfectly identified the data-generating model. By subject individually, the RL-ARD incorrectly won comparisons for 333 subjects (12%). Combined, this indicates that the RL-ARD, while more complex, is generally not sufficiently flexible to outperform RL-DDM in terms of the quality of fit on data generated by the RL-DDM.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The error RT distributions are shown as negative RTs for visualization. Blue lines represent 100 posterior predictive RT distributions from the RL-ARD model. The grand average is the RT distribution across all trials and subjects, subject-wise RT distributions are across all trials per subject for the first ten subjects, for which the quality of fit was representative for the entire dataset.
+
+**Table 1.**
+ Posterior parameter estimates (across-subject mean and SD of the median of the posterior distributions) for all models and experiments.For models including $s_{t0}$, the non-decision time is assumed to be uniformly distributed with bounds $t0,t0+s_{t0}$.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="10">Experiment 1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RL-DDM</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>BPIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.14 (0.11)</td>
+      <td>1.48 (0.19)</td>
+      <td>0.30 (0.06)</td>
+      <td>3.21 (1.11)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>7673</td>
+    </tr>
+    <tr>
+      <td>RL-RD</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.08)</td>
+      <td>2.16 (0.27)</td>
+      <td>0.10 (0.04)</td>
+      <td>1.92 (0.42)</td>
+      <td>3.09 (1.32)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5613</td>
+    </tr>
+    <tr>
+      <td>RL-lARD</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.12)</td>
+      <td>2.05 (0.24)</td>
+      <td>0.12 (0.05)</td>
+      <td>2.48 (0.43)</td>
+      <td>2.36 (0.95)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4849</td>
+    </tr>
+    <tr>
+      <td>RL-ARD</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.11)</td>
+      <td>2.14 (0.26)</td>
+      <td>0.11 (0.04)</td>
+      <td>2.46 (0.59)</td>
+      <td>2.25 (0.78)</td>
+      <td>0.36 (0.79)</td>
+      <td></td>
+      <td></td>
+      <td>4577</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A1</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>w</td>
+      <td>vmax</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.14 (0.12)</td>
+      <td>1.49 (0.20)</td>
+      <td>0.30 (0.06)</td>
+      <td>3.01 (0.66)</td>
+      <td>2.81 (0.72)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>7717</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A2</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>w</td>
+      <td>sz</td>
+      <td>sv</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.14 (0.11)</td>
+      <td>1.48 (0.19)</td>
+      <td>0.30 (0.06)</td>
+      <td>3.21 (1.12)</td>
+      <td>1.79e−3 (0.4e−3)</td>
+      <td>1.8e−3 (0.4e-3)</td>
+      <td></td>
+      <td></td>
+      <td>7637</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A3</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>w</td>
+      <td>sz</td>
+      <td>sv</td>
+      <td>st0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.12)</td>
+      <td>1.13 (0.19)</td>
+      <td>0.27 (0.06)</td>
+      <td>5.31 (2.04)</td>
+      <td>0.00 (0.00)</td>
+      <td>0.31 (0.13)</td>
+      <td>0.37 (0.13)</td>
+      <td></td>
+      <td>4844</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A4</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>w</td>
+      <td>vmax</td>
+      <td>sv</td>
+      <td>sz</td>
+      <td>st0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.12)</td>
+      <td>1.15 (0.17)</td>
+      <td>0.27 (0.06)</td>
+      <td>2.02 (0)</td>
+      <td>5.16 (1.18)</td>
+      <td>0.55 (0.24)</td>
+      <td>1.57e−3 (0)</td>
+      <td>0.36 (0.13)</td>
+      <td>4884</td>
+    </tr>
+    <tr>
+      <td>RL-ALBA</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td>A</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.11)</td>
+      <td>3.53 (0.53)</td>
+      <td>0.03 (0.00)</td>
+      <td>3.03 (0.57)</td>
+      <td>2.03 (0.59)</td>
+      <td>0.33 (0.78)</td>
+      <td>1.73 (0.43)</td>
+      <td></td>
+      <td>4836</td>
+    </tr>
+    <tr>
+      <td colspan="9">Experiment 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RL-DDM 1</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>w</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.06)</td>
+      <td>1.11 (0.18)/1.42 (0.23)</td>
+      <td>0.26 (0.06)</td>
+      <td>3.28 (0.66)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>979</td>
+    </tr>
+    <tr>
+      <td>RL-DDM 2</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>wspd/wacc</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.05)</td>
+      <td>3.01 (0.63)</td>
+      <td>0.26 (0.06)</td>
+      <td>3.46 (0.79)/3.01 (0.63)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1518</td>
+    </tr>
+    <tr>
+      <td>RL-DDM 3</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>wspd/wacc</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.13 (0.06)</td>
+      <td>1.10 (0.18)/1.44 (0.23)</td>
+      <td>0.26 (0.06)</td>
+      <td>3.11 (0.68)/3.48 (0.72)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>999</td>
+    </tr>
+    <tr>
+      <td>RL-ARD 1</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.45 (0.35)/1.82 (0.35)</td>
+      <td>0.15 (0.07)</td>
+      <td>2.59 (0.50)</td>
+      <td>2.24 (0.53)</td>
+      <td>0.47 (0.34)</td>
+      <td></td>
+      <td></td>
+      <td>−1044</td>
+    </tr>
+    <tr>
+      <td>RL-ARD 2</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td>mv,spd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.83 (0.36)</td>
+      <td>0.12 (0.07)</td>
+      <td>2.52 (0.53)</td>
+      <td>1.83 (0.56)</td>
+      <td>0.32 (0.26)</td>
+      <td>1.31 (0.20)</td>
+      <td></td>
+      <td>−827</td>
+    </tr>
+    <tr>
+      <td>RL-ARD 3</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0,spd/V0,acc</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.83 (0.35)</td>
+      <td>0.12 (0.07)</td>
+      <td>3.37 (0.84)/3.37 (0.54)</td>
+      <td>2.11 (0.52)</td>
+      <td>0.39 (0.30)</td>
+      <td></td>
+      <td></td>
+      <td>−934</td>
+    </tr>
+    <tr>
+      <td>RL-ARD 4</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td>mv,spd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.04 (0.14)/1.82 (0.35)</td>
+      <td>0.15 (0.07)</td>
+      <td>2.59 (0.52)</td>
+      <td>2.21 (0.51)</td>
+      <td>0.44 (0.38)</td>
+      <td>1.04 (0.14)</td>
+      <td></td>
+      <td>−1055</td>
+    </tr>
+    <tr>
+      <td>RL-ARD 5</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>V0,spd/V0,acc</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.59 (0.40)/1.83 (0.32)</td>
+      <td>0.14 (0.06)</td>
+      <td>2.92 (0.65)/2.52 (0.50)</td>
+      <td>2.21 (0.50)</td>
+      <td>0.43 (0.33)</td>
+      <td></td>
+      <td></td>
+      <td>−1071</td>
+    </tr>
+    <tr>
+      <td>RL-ARD 6</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0,spd/V0,acc</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td>mv,spd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.86 (0.35)</td>
+      <td>0.12 (0.07)</td>
+      <td>4.13 (0.98)/2.40 (0.54)</td>
+      <td>2.28 (0.53)</td>
+      <td>0.44 (0.33)</td>
+      <td>0.84 (0.03)</td>
+      <td></td>
+      <td>−897</td>
+    </tr>
+    <tr>
+      <td>RL-ARD 7</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>V0,spd/V0,acc</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td>mv,spd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.61 (0.40)/1.87 (0.32)</td>
+      <td>0.14 (0.06)</td>
+      <td>3.66 (0.74)/2.52 (0.50)</td>
+      <td>2.41 (0.53)</td>
+      <td>0.48 (0.38)</td>
+      <td>0.82 (0.08)</td>
+      <td></td>
+      <td>−1060</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A3 1</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>w</td>
+      <td>sz</td>
+      <td>sv</td>
+      <td>st0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>0.81 (0.16)/1.14 (0.17)</td>
+      <td>0.23 (0.06)</td>
+      <td>4.46 (0.79)</td>
+      <td>0.10 (0.01)</td>
+      <td>0.18 (0.05)</td>
+      <td>0.26 (0.09)</td>
+      <td></td>
+      <td>−862</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A3 2</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>wspd/wacc</td>
+      <td>sz</td>
+      <td>sv</td>
+      <td>st0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>1.03 (0.14)</td>
+      <td>0.24 (0.06)</td>
+      <td>18.4 (23.34)/4.44 (0.84)</td>
+      <td>0.26 (0.07)</td>
+      <td>0.61 (0.50)</td>
+      <td>0.28 (0.10)</td>
+      <td></td>
+      <td>−325</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A3 3</td>
+      <td>α</td>
+      <td>aspd/aacc</td>
+      <td>t0</td>
+      <td>wspd/wacc</td>
+      <td>sz</td>
+      <td>sv</td>
+      <td>st0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.12 (0.05)</td>
+      <td>0.81 (0.16)/1.14 (0.17)</td>
+      <td>0.23 (0.06)</td>
+      <td>4.45 (0.83)/4.45 (0.83)</td>
+      <td>0.07 (0.00)</td>
+      <td>0.17 (0.04)</td>
+      <td>0.26 (0.09)</td>
+      <td></td>
+      <td>−849</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experiment 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Soft-max</td>
+      <td>α</td>
+      <td>β</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.40 (0.14)</td>
+      <td>2.82 (1.1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>23,727</td>
+    </tr>
+    <tr>
+      <td>RL-DDM</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.38 (0.14)</td>
+      <td>1.37 (0.24)</td>
+      <td>0.24 (0.07)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>15,599</td>
+    </tr>
+    <tr>
+      <td>RL-ARD</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.35 (0.15)</td>
+      <td>1.48 (0.34)</td>
+      <td>0.13 (0.08)</td>
+      <td>1.86 (0.51)</td>
+      <td>1.52 (0.63)</td>
+      <td>0.23 (0.25)</td>
+      <td></td>
+      <td></td>
+      <td>11,548</td>
+    </tr>
+    <tr>
+      <td>RL-DDM A3</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>w</td>
+      <td>sz</td>
+      <td>sv</td>
+      <td>st0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.38 (0.14)</td>
+      <td>1.15 (0.22)</td>
+      <td>0.22 (0.07)</td>
+      <td>2.72 (1.16)</td>
+      <td>0.21 (0.09)</td>
+      <td>0.28 (0.15)</td>
+      <td>0.27 (0.17)</td>
+      <td></td>
+      <td>11,659</td>
+    </tr>
+    <tr>
+      <td>Experiment 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RL-ARD (Win-All)</td>
+      <td>α</td>
+      <td>a</td>
+      <td>t0</td>
+      <td>V0</td>
+      <td>wd</td>
+      <td>ws</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.10 (0.04)</td>
+      <td>1.6 (0.33)</td>
+      <td>0.07 (0.05)</td>
+      <td>1.14 (0.22)</td>
+      <td>1.6 (0.36)</td>
+      <td>0.15 (0.26)</td>
+      <td></td>
+      <td></td>
+      <td>36,512</td>
+    </tr>
+  </tbody>
+</table>
+
 Figure 4 shows the data and RL-ARD model fit separated by difficulty (see Figure 4—figure supplement 1 for equivalent RL-DDM fits, which again fail to capture RT distributions). The RL-ARD model displays the same excellent fit as to data aggregated over difficulty, except that it underestimates accuracy in early trials in the easiest condition (Figure 4, bottom right panel). Further inspections of the data revealed that 17 participants (31%) reached perfect accuracy in the first bin in this condition. Likely, they guessed correctly on the first occurrence of the easiest choice pair, repeated their choice, and received too little negative feedback in the next repetitions to change their choice strategy. Figure 4—figure supplement 2 shows that, with these 17 participants removed, the overestimation is largely mitigated. The delta rule assumes learning from feedback, and so cannot explain such high early accuracies. Working memory processes could have aided performance in the easiest condition, since the total number of stimuli pairs was limited and feedback was quite reliable, making it relatively easy to remember correct-choice options (Collins and Frank, 2018; Collins and Frank, 2012; McDougle and Collins, 2020).
 
-## Reward magnitude and Q-value evolution
+![Figure 4.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig4-v2.jpg)
 
-Q-values represent the participants’ internal beliefs about how rewarding each choice option is. The RL-lARD and RL-DDM assume drift rates are driven only by the difference in Q-values (Figure 5), and both underestimate the learning-related decrease in RTs. Similar RL-DDM underestimation has been detected before (Pedersen et al., 2017), with the proposed remedy being a decrease in the decision bound with time (but with no account of RT distributions). The RL-ARD explains the additional speed-up through the increasing sum of Q-values over trials (Figure 5C), which in turn increases drift rates (Figure 5D). In line with observations in perceptual decision-making (van Ravenzwaaij et al., 2020), the effect of the expected reward magnitude on drift rate is smaller (on average, ws=0.36) than that of the Q-value difference (wd=2.25) and the urgency signal (V0=2.45). Earlier work using an RL-DDM (Fontanesi et al., 2019a) showed that higher reward magnitudes decrease RTs in reinforcement learning paradigms. There, the reward magnitude effect on RT was accounted for by allowing the threshold to change as a function of magnitude. However, this requires participants to rapidly adjust their threshold based on the identity of the stimuli, something that is usually not considered possible in EAMs (Donkin et al., 2011; Ratcliff, 1978). The RL-ARD avoids this problem, with magnitude effects entirely mediated by drift rates, and our results show that the expected reward magnitudes influence RTs due to learning even in the absence of a reward magnitude manipulation. Because the sum affects each accumulator equally, it changes RT with little effect on accuracy.
+**Figure 4.:** Column titles indicate the reward probabilities, with 0.6/0.4 being the most difficult, and 0.8/0.2 the easiest condition. Top row depicts accuracy over trial bins. Middle and bottom rows show 10th, 50th, and 90th RT percentiles for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data and fits are collapsed across participants.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Row titles indicate the reward probabilities, with 0.6/0.4 being the most difficult, and 0.8/0.2 the easiest condition. Top row depicts accuracy over trial bins. Middle and bottom row illustrate 10th, 50th, and 90th quantile RT for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data are collapsed across participants.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Row titles indicate the reward probabilities, with 0.6/0.4 being the most difficult, and 0.8/0.2 the easiest condition. Top row depicts accuracy over trial bins. Middle and bottom row illustrate 10th, 50th, and 90th quantile RT for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data are collapsed across participants.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The LBA assumes that, on every trial, two accumulators race deterministically toward a common bound b. Each accumulator i starts at a start point sampled from a uniform distribution [0, A], and with a speed of evidence accumulation sampled from a normal distribution $𝒩v_{i},s_{i}$. In the RL-ALBA model, we used Equation 4 to link Q-values to LBA drift rates $v_{1}$ and $v_{2}$ (excluding the $sW$ term, since the LBA assumes no within-trial noise). Instead of directly estimating threshold b, we estimated the difference B = b-A (which simplifies enforcing b>A). We used the following mildly informed priors for the hypermeans: $V_{0}~𝒩2,5$, $w_{d}~𝒩9,5$ truncated at lower bound 0, $w_{s}~𝒩0,3$, $s_{2}~𝒩1,1$, $A~𝒩1,1$, $B~𝒩3,5$ truncated at lower bound 0, and $t_{0}~𝒩0.3,0.5$, truncated at lower bound 0.025 and upper bound 1. For the hyperSDs, all priors were $Γ(1,1)$. The summed BPIC was 4836, indicating that the RL-ALBA performs slightly better than the RL-DDM with between-trial variabilities (BPIC = 4844), and better than the RL-lARD (BPIC = 4849), but not as well as the RL-ARD (BPIC = 4577).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Column titles indicate the reward probabilities, with 0.6/0.4 being the most difficult, and 0.8/0.2 the easiest condition. Top row depicts accuracy over trial bins. Middle and bottom rows show 10th, 50th, and 90th RT percentiles for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data and fits are collapsed across participants. Error bars depict standard errors.
+
+### Reward magnitude and Q-value evolution
+
+Q-values represent the participants’ internal beliefs about how rewarding each choice option is. The RL-lARD and RL-DDM assume drift rates are driven only by the difference in Q-values (Figure 5), and both underestimate the learning-related decrease in RTs. Similar RL-DDM underestimation has been detected before (Pedersen et al., 2017), with the proposed remedy being a decrease in the decision bound with time (but with no account of RT distributions). The RL-ARD explains the additional speed-up through the increasing sum of Q-values over trials (Figure 5C), which in turn increases drift rates (Figure 5D). In line with observations in perceptual decision-making (van Ravenzwaaij et al., 2020), the effect of the expected reward magnitude on drift rate is smaller (on average, $w_{s}=0.36$) than that of the Q-value difference ($w_{d}=2.25$) and the urgency signal ($V_{0}=2.45$). Earlier work using an RL-DDM (Fontanesi et al., 2019a) showed that higher reward magnitudes decrease RTs in reinforcement learning paradigms. There, the reward magnitude effect on RT was accounted for by allowing the threshold to change as a function of magnitude. However, this requires participants to rapidly adjust their threshold based on the identity of the stimuli, something that is usually not considered possible in EAMs (Donkin et al., 2011; Ratcliff, 1978). The RL-ARD avoids this problem, with magnitude effects entirely mediated by drift rates, and our results show that the expected reward magnitudes influence RTs due to learning even in the absence of a reward magnitude manipulation. Because the sum affects each accumulator equally, it changes RT with little effect on accuracy.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig5-v2.jpg)
 
 **Figure 5.:** A depicts raw Q-values, separate for each difficulty condition (colors). B and C depict the Q-value differences and the Q-value sums over time. The drift rates (D) are a weighted sum of the Q-value differences and Q-value sums, plus an intercept.
 
-## Speed-accuracy trade-off
+### Speed-accuracy trade-off
 
 Speed-accuracy trade-off (SAT) refers to the ability to strategically trade-off decision speed for decision accuracy (Bogacz et al., 2010; Pachella and Pew, 1968; Ratcliff and Rouder, 1998). As participants can voluntarily trade speed for accuracy, RT and accuracy are not independent variables, so analysis methods considering only one of these variables while ignoring the other can be misleading. EAMs simultaneously consider RTs and accuracy and allow for estimation of SAT settings. The classical explanation in the DDM framework (Ratcliff and Rouder, 1998) holds that participants adjust their SAT by changing the decision threshold: increasing thresholds require a participant to accumulate more evidence, leading to slower but more accurate responses.
 
@@ -79,9 +821,33 @@ Next, we compared the RL-DDM and RL-ARD. In light of the multiple psychological 
 
 Formal model comparison (see Table 1 for all BPIC values) indicates that the RL-ARD model combining response caution and urgency effects provides the best explanation of the data, in line with earlier research in non-learning contexts (Katsimpokis et al., 2020; Miletić and van Maanen, 2019; Rae et al., 2014; Thura and Cisek, 2016). The advantage for the RL-ARD was substantial; the best RL-DDM (with only a threshold effect) performed worse than the worst RL-ARD model. The data and posterior predictive distributions of the best RL-DDM model and the winning RL-ARD model are shown in Figure 6. As in experiment 1, the RL-DDM failed to capture the shape of RT distributions, although it fit the SAT effect on accuracy and median RTs. The RL-ARD model provides a much better account of the RT distributions, including the differences between SAT conditions. In Figure 6—figure supplement 1, we show that adding non-decision time variability to the RL-DDM mitigates some of the misfit of the RT distributions, although it still consistently under-predicted the 10th percentile in the accuracy condition. Further, this model was still substantially outperformed by the RL-ARD in formal model selection (ΔBPIC = 209), and non-decision time variability was estimated as much greater than what is found in non-learning contexts, raising the question of its psychological plausibility.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig6-v2.jpg)
+
+**Figure 6.:** Top row depicts accuracy over trial bins. Middle and bottom row show 10th, 50th, and 90th RT percentiles for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas in the middle and right column correspond to the 95% credible interval of the posterior predictive distribution.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The corresponding summed BPIC was -861, an improvement over the RL-DDM, but outperformed by the RL-ARD ($ΔBPIC=232$ in favor of the RL-ARD). Top row depicts accuracy over trial bins. Middle and bottom row illustrate 10th, 50th, and 90th quantile RT for the correct (middle row) and error (bottom row) response over trial bins. Left and right column are speed and accuracy emphasis condition, respectively. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Parameter recovery was done by first fitting the RL-ARD model to the empirical data, and then simulating the exact same experimental paradigm (19 subjects, three difficulty conditions, 2 SAT conditions, 312 trials) using the median parameter estimates obtained from the model fit. Subsequently, the RL-ARD was fit to the simulated data. The median posterior estimates (y-axis) are plotted against the data-generating values (x-axis). Pearson’s correlation coefficient r and the root mean square error (RMSE) are shown in each panel. Diagonal lines indicate the identity x = y.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Block numbers are color-coded. Error bars are 1 SE. Mixed effects models indicated that in experiment 2, RTs decreased with block number (b = −0.04, SE = 6.15*10−3, 95% CI [−0.05,–0.03], p = 6.61*10−10) as well as with trial bin (b = −0.02, SE = 2.11*10−3, 95% CI [−0.02,–0.01], p = 1.68*10−13), and there was an interaction between trial bin and block number (b = 3.61*10−3, SE = 9.86*10−4, 95% CI [0.00, 0.01], p = 2.52*10−4). There was a main effect of (log-transformed) trial bin on accuracy (on a logit scale; b = 0.36, SE = 0.11, 95% CI [0.15, 0.57], p = 7.99*10−4), but no effect of block number, nor an interaction between block number and trial bin on accuracy. In experiment 3, response times increased with block number (b = 0.02, SE = 3.10*10−3, 95% CI [0.01, 0.02], p = 1.21*10−7), decreased with trial bin (b = −4.24*10−3, SE = 1.37*10−3, 95% CI [−6.92*10−3, −1.56*10−3], p = 0.002), but there was no interaction between trial bin and block number (b = −9.15*10−4, SE = 5*10−4, 95% CI [0.00, 0.00], p = 0.067). The bottom left panel suggests that the main effect of block number on RT is largely caused by an increase in RT after the first block. Accuracy decreased with (log-transformed) trial bin (on a logit scale: b = −0.12, SE = 0.05, 95% CI [−0.22,–0.02], p = 0.02), decreased with block number (b = −0.08, SE = 0.03, 95% CI [−0.14,–0.02], p = 0.009), but there was no interaction (b = 0.02, SE = 0.02, 95% CI [−0.02, 0.06], p = 0.276). The decrease in accuracy with trial bin is expected due to the presence of reversals. The combination of an increase in RT and a decrease in accuracy after the first block could indicate that participants learnt the structure of the task (i.e. the presence of reversals) in the first block, and adjusted their behavior accordingly. In line with this speculation, the accuracy in trial bin 6 (in which the reversal occurred) was lowest in the first block, which suggests that participants adjusted to the reversal faster in the later blocks. In experiment 4, response times decreased with block number (b = −0.04, SE = 9.08*10−3, 95% CI [−0.06,–0.02], p = 3.19*10−3) and there was an interaction between block number and trial bin (b = −4.31*10−3, SE = 1.45*10−3, 95% CI = [−0.01, 0.00], p = 0.003), indicating that the decrease of RTs over trial bins was larger for the later blocks. There was no main effect of trial bin on RTs. There was a main effect of (log-transformed) trial bin on accuracy (on a logit scale: b = 0.60, SE = 0.07, 95% CI [0.47, 0.73], p < 10-16), but no main effect of block and no interaction between block and trial bin.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Negative RTs correspond to error RTs. Blue lines represent 100 posterior predictive RT distributions from the RL-ARD model. The grand average is the RT distribution across all trials and subjects, subject-wise RT distributions are across all trials per subject for the first 10 subjects, for which the quality of fit was representative for the entire dataset.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Top row depicts accuracy over trial bins. Middle and bottom row show 10th, 50th, and 90th RT percentiles for the correct (middle row) and error (bottom row) response over trial bins. Shaded areas in the middle and right column correspond to the 95% credible interval of the posterior predictive distribution. Error bars depict standard errors.
+
 Both RL-DDM and RL-ARD models tended to underestimate RTs and choice accuracy in the early trial bins in the accuracy emphasis condition. As in experiment 1, working memory may have contributed to the accurate but slow responses in the first trial bin for the accuracy condition (Collins and Frank, 2018; Collins and Frank, 2012; McDougle and Collins, 2020).
 
-## Reversal learning
+### Reversal learning
 
 Next, we tested whether the RL-ARD can capture changes in accuracy and RTs caused by a perturbation in the learning process due to reversals in reward contingencies. In the reversal learning paradigm (Behrens et al., 2007; Costa et al., 2015; Izquierdo et al., 2017) participants first learn a contingency between choice options and probabilistic rewards (the acquisition phase) that is then suddenly reversed without any warning (the reversal phase). If the link between Q-values and decision mechanisms as proposed by the RL-ARD underlies decisions, the model should be able to account for the behavioral consequences (RT distributions and decisions) of Q-value changes induced by the reversal.
 
@@ -89,7 +855,31 @@ Our reversal learning task had the same general structure as experiment 1 (Figur
 
 Data and the posterior predictive distributions of the RL-DDM and the RL-ARD models are shown in Figure 7. Both models captured the change in choice proportions after the reversal reasonably well, although they underestimate the speed of change. In Figure 7—figure supplement 1, we show that the same is true for a standard soft-max model, suggesting that the learning rule is the cause of this problem. Recent evidence indicates that, instead of only estimating expected values of both choice options by error-driven learning, participants may additionally learn the task structure, estimate the probability of a reversal occurring and adjust choice behavior accordingly. Such a model-based learning strategy could increase the speed with which choice behavior changes after a reversal (Costa et al., 2015; Izquierdo et al., 2017; Jang et al., 2015), but as yet a learning rule that implements this strategy has not been developed.
 
-The change in RT around the reversal was less marked than the change in choice probability. Once again, the RL-DDM overestimates variability and skew. Both models fit the effects of learning and reversal similarly, but the fastest responses for the RL-DDM decrease much too quickly during initial learning and the reduction in speed for the slowest responses due to the reversal is strongly overestimated. The RL-ARD provides a much better account of the shape of the RT distributions, and furthermore captures the increase in entire RT distributions (instead of only the median) after the reversal point. Formal model comparison also very strongly favors the RL-ARD over the RL-DDM (ΔBPIC=4051). Figure 7—figure supplement 2 provides model comparisons to RL-DDMs with between-trial variability parameters, which lead to the same conclusion.
+![Figure 7.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig7-v2.jpg)
+
+**Figure 7.:** Top row: choice proportions over trials, with choice option A defined as the high-probability choice before the reversal in reward contingencies. Bottom row: 10th, 50th, and 90th RT percentiles. The data are ordered relative to the trial at which the reversal first occurred (trial 0, with negative trial numbers indicated trials prior to the reversal). Shaded areas correspond to the 95% credible interval of the posterior predictive distributions.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** As priors, we used $\beta~N(1,5)$ truncated at 0 for the hypermean and $Γ(1,1)$ for the hyperSD. Left panel depicts choice proportions for option over trial bins, where choice A is defined as the high-probability reward choice prior to the reversal. Right column depicts choice proportion over trials, aligned to the trial at which the reversal occurred (trial 0). Shaded areas correspond to the 95% credible interval of the posterior predictive distributions.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The summed BPIC was 11659. This is better compared to the RL-DDM ($ΔBPIC=3940$) but did not outperform the RL-ARD ($ΔBPIC=112$ in favor of the RL-ARD).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Parameter recovery was done by first fitting the RL-ARD model to the empirical data, and then simulating the exact same experimental paradigm (49 subjects, 2 difficulty conditions, 512 trials, including reversals) using the median parameter estimates obtained from the model fit. Subsequently, the RL-ARD was fit to the simulated data. The median posterior estimates (y-axis) are plotted against the data-generating values (x-axis). Pearson’s correlation coefficient r and the root mean square error (RMSE) are shown in each panel. Diagonal lines indicate the identity x = y.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Negative RTs correspond to choices for the option that was correct after the reversal. Blue lines represent 100 posterior predictive RT distributions from the RL-ARD model. The grand average is the RT distribution across all trials and subjects, subject-wise RT distributions are across all trials per subject for the first 10 subjects, for which the quality of fit was representative for the entire dataset.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Top row: choice proportions over trials, with choice option A defined as the high-probability choice before the reversal in reward contingencies. Bottom row: 10th, 50th, and 90th RT percentiles. The data are ordered relative to the trial at which the reversal first occurred (trial 0, with negative trial numbers indicated trials prior to the reversal). Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. Error bars depict standard errors.
+
+The change in RT around the reversal was less marked than the change in choice probability. Once again, the RL-DDM overestimates variability and skew. Both models fit the effects of learning and reversal similarly, but the fastest responses for the RL-DDM decrease much too quickly during initial learning and the reduction in speed for the slowest responses due to the reversal is strongly overestimated. The RL-ARD provides a much better account of the shape of the RT distributions, and furthermore captures the increase in entire RT distributions (instead of only the median) after the reversal point. Formal model comparison also very strongly favors the RL-ARD over the RL-DDM ($ΔBPIC=4051$). Figure 7—figure supplement 2 provides model comparisons to RL-DDMs with between-trial variability parameters, which lead to the same conclusion.
 
 A notable aspect of the data is that choice behavior stabilizes approximately 20 trials after the reversal, whereas RTs remain high compared to just prior to the reversal point for up to ~40 trials. The RL-ARD explains this behavior through relatively high Q-values for the choice option that was correct during the acquisition (but not reversal) phase (i.e. choice A). Figure 8 depicts the evolution of Q-values, Q-value differences and sums, and drift rates in the RL-ARD model. The Q-values for both choice options increase until the reversal (Figure 8A), with a much faster increase for QA. At the reversal QA decreases and QB increases, but as QA decreases faster than QB increases there is a temporary decrease in Q-value sums (Figure 8C). After approximately 10 trials post-reversal, QB is higher than for QA, which flips the sign of the Q-value differences (Figure 8B). However, QA after the reversal remains higher than the QB before the reversal, which causes the (absolute) Q-value differences to be lower after the reversal than before. As a consequence, the drift rates for B after the reversal remain lower than the drift rates for A before the reversal, which increases RT. Clearly, it is important to take account of the sum of inputs to accumulators as well as the difference between them in order to provide an accurate account of the effects of learning.
 
@@ -97,13 +887,13 @@ A notable aspect of the data is that choice behavior stabilizes approximately 20
 
 **Figure 8.:** Left panel depicts raw Q-values, separate for each difficulty condition (colors). The second and third panel depict the Q-value differences and the Q-value sums over time. The drift rates (right panel) are a weighted sum of the Q-value differences and Q-value sums, plus an intercept. Choice A (solid lines) refers to the option that had the high probability of reward during the acquisition phase, and choice B (dashed lines) to the option that had the high probability of reward after the reversal.
 
-## Multi-alternative choice
+### Multi-alternative choice
 
 Finally, we again drew on the advantage framework (van Ravenzwaaij et al., 2020) to extend the RL-ARD to multi-alternative choice tasks, a domain where the RL-DDM cannot be applied. As in the two-choice case, the multi-alternative RL-ARD assumes one accumulator per pairwise difference between choice options. With three choice options (e.g. 1, 2, 3), there are six (directional) pairwise differences (1-2, 1-3, 2-1, 2-3, 3-1, 3-2), and therefore six accumulators (see Figure 9). All accumulators are assumed to race toward a common threshold, with their drift rates determined by the advantage framework’s combination of an urgency, an advantage, and a sum term. Since each response is associated with two accumulators (e.g. for option 1, one accumulating the advantage 1–2, and the other accumulating the advantage 1–3), a stopping rule is required to determine when a commitment to a response is made and evidence accumulation stops. Following Van Ravenzwaaij et al., we used the Win-All stopping rule, which proposes that the first response option for which both accumulators have reached their thresholds wins. RT is the first passage time of the slowest of these two winning accumulators, plus non-decision time.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig9-v2.jpg)
 
-**Figure 9.:** In three-choice settings, there are three Q-values. The multi-alternative RL-ARD has one accumulator per directional pairwise difference, hence there are six accumulators. The bottom graph visualizes the connections between Q-values and drift rates ( is left out to improve readability). The equations formalize the within-trial dynamics of each accumulator. Top panels illustrate one example trial, in which both accumulators corresponding to response option 1 reached their thresholds. In this example trial, the model chose option 1, with the RT determined by the slowest of the winning accumulators (here, the leftmost accumulator). Decision-related parameters V0 are all identical across the six accumulators.V0,wd, ws,a,t0
+**Figure 9.:** In three-choice settings, there are three Q-values. The multi-alternative RL-ARD has one accumulator per directional pairwise difference, hence there are six accumulators. The bottom graph visualizes the connections between Q-values and drift rates ($V_{0}$ is left out to improve readability). The equations formalize the within-trial dynamics of each accumulator. Top panels illustrate one example trial, in which both accumulators corresponding to response option 1 reached their thresholds. In this example trial, the model chose option 1, with the RT determined by the slowest of the winning accumulators (here, the leftmost accumulator). Decision-related parameters $V_{0},w_{d},w_{s},a,t0$ are all identical across the six accumulators.
 
 To test how well the Win-All RL-ARD can explain empirical data, we performed a fourth experiment in which participants were required to repeatedly make decisions between three choice options (Figure 10). Within each of the four blocks, there were four randomly interleaved stimulus triplets that differed in difficulty (defined as the difference in reward probability between target stimulus and distractors) and reward magnitude (defined as the average reward probability): 0.8/0.25/0.25 (easy, high magnitude), 0.7/0.3/0.3 (hard, high magnitude), 0.7/0.15/0.15 (easy, low magnitude), and 0.6/0.2/0.2 (hard, low magnitude). This enabled us to simultaneously test whether the RL-ARD can account for a manipulation of difficulty and mean reward magnitude. Furthermore, we predicted that the requirement to learn 12 individual stimuli (per block) would interfere with the participants’ ability to rely on working memory (Collins and Frank, 2012), and therefore expected that the RL-ARD would provide a better account of accuracy in the early trial bins compared to experiments 1 and 2. After exclusions (see Materials and methods), data from 34 participants (432 trials each) were included in the analyses.
 
@@ -113,11 +903,27 @@ To test how well the Win-All RL-ARD can explain empirical data, we performed a f
 
 Data and posterior predictive distributions of the RL-ARD are shown in Figure 11. The top row represents accuracy, the middle row the RT quantiles corresponding to the correct (target) choice option, and the bottom row the RT quantiles of the incorrect choices (collapsed across the two distractor response options). Compared to experiments 1–3, the task was substantially more difficult, as evidenced by the relatively low accuracies. The RL-ARD model was able to account for all patterns in the data, including the increase in accuracy and decrease in RTs due to learning, the shape of the full RT distributions, as well as the difficulty and magnitude effects. Furthermore, there was a decrease in variance in the error RTs due to learning (the 10th quantile RTs even mildly increased), which was also captured by the model. Note finally that, contrary to experiments 1 and 2, the model did not underestimate the accuracy in early bins in the easy conditions, which suggests that the influence of working memory was, as predicted, more limited than in earlier experiments. A parameter recovery study (Figure 11—figure supplement 1) demonstrated that the model’s parameters could be recovered accurately.
 
-Notably, Figure 11 suggests that the effects of the magnitude manipulation were larger in the hard than in the easy condition. As in previous experiments, we inspected the Q-value evolution (Figure 12) to understand how this interaction arose. As expected, the high magnitude condition led to higher Q-values (Figure 12A) than the low magnitude condition, increasing the Q-value sums (Figure 12C). However, there was a second effect of the increased magnitude: even though the true reward probability differences were equal between magnitude conditions, the Q-value differences for the response accumulators (ΔQT-D; Figure 12B) were larger in the high compared to the low magnitude condition, particularly for harder choices. As a consequence, both the Q-value sum (weighted by median ws=0.15), and the smaller changes in the Q-value difference (weighted by median wd=1.6), increased the drift rates for the response accumulators (vT-D; Figure 12D), which led to higher accuracy and faster responses.
+![Figure 11.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig11-v2.jpg)
+
+**Figure 11.:** Column titles indicate the magnitude and difficulty condition. Top row depicts accuracy over trial bins. Middle and bottom rows show 10th, 50th, and 90th RT percentiles for the correct (middle row) and error (bottom row) response over trial bins. The error responses are collapsed across distractors. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data and fits are collapsed across participants.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** Parameter recovery was done by first fitting the RL-ARD model to the empirical data, and then simulating the exact same experimental paradigm (34 subjects, 4 conditions, 432 trials) using the median parameter estimates obtained from the model fit. Subsequently, the RL-ARD was fit to the simulated data. The median posterior estimates (y-axis) are plotted against the data-generating values (x-axis). Pearson’s correlation coefficient r and the root mean square error (RMSE) are shown in each panel. Diagonal lines indicate the identity x = y.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** Negative RTs correspond to error choices, collapsed across the two distractor choice options. Blue lines represent 100 posterior predictive RT distributions from the RL-ARD model. The grand average is the RT distribution across all trials and subjects, subject-wise RT distributions are across all trials per subject for the first 10 subjects, for which the quality of fit was representative for the entire dataset.
+
+![Figure 11—figure supplement 3.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig11-figsupp3-v2.jpg)
+
+**Figure 11—figure supplement 3.:** Column titles indicate the magnitude and difficulty condition. Top row depicts accuracy over trial bins. Middle and bottom rows show 10th, 50th, and 90th RT percentiles for the correct (middle row) and error (bottom row) response over trial bins. The error responses are collapsed across distractors. Shaded areas correspond to the 95% credible interval of the posterior predictive distributions. All data and fits are collapsed across participants. Error bars depict standard errors.
+
+Notably, Figure 11 suggests that the effects of the magnitude manipulation were larger in the hard than in the easy condition. As in previous experiments, we inspected the Q-value evolution (Figure 12) to understand how this interaction arose. As expected, the high magnitude condition led to higher Q-values (Figure 12A) than the low magnitude condition, increasing the Q-value sums (Figure 12C). However, there was a second effect of the increased magnitude: even though the true reward probability differences were equal between magnitude conditions, the Q-value differences for the response accumulators ($ΔQ_{T-D}$; Figure 12B) were larger in the high compared to the low magnitude condition, particularly for harder choices. As a consequence, both the Q-value sum (weighted by median $w_{s}=0.15$), and the smaller changes in the Q-value difference (weighted by median $w_{d}=1.6$), increased the drift rates for the response accumulators ($v_{T-D}$; Figure 12D), which led to higher accuracy and faster responses.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/63055/elife-63055-fig12-v2.jpg)
 
-**Figure 12.:** Top row corresponds to the low magnitude condition, bottom to the high magnitude condition. Colors indicate choice difficulty. (A) Q-values for target () and distractor stimuli (QT). (QDB) Difference in Q-values, for target – distractor () and between the two distractors (ΔQT-D). The Q-value difference ΔQD-D is omitted from the graph to aid readability (but ΔQD-T). (ΔQD-T=-ΔQT-DC) Sum of Q-values. (D) Resulting drift rates for target response accumulators (), and accumulators for the distractor choice options (vT-D. Note that within each condition, there is a single Q-value trace per choice option, but since there are two distractors, there are two overlapping traces for vD-T, vD-D), ΔQT-D, and for all drift rates.ΣQT+D
+**Figure 12.:** Top row corresponds to the low magnitude condition, bottom to the high magnitude condition. Colors indicate choice difficulty. (A) Q-values for target ($Q_{T}$) and distractor stimuli ($Q_{D}$). (B) Difference in Q-values, for target – distractor ($ΔQ_{T-D}$) and between the two distractors ($ΔQ_{D-D}$). The Q-value difference $ΔQ_{D-T}$ is omitted from the graph to aid readability (but $ΔQ_{D-T}=-ΔQ_{T-D}$). (C) Sum of Q-values. (D) Resulting drift rates for target response accumulators ($v_{T-D}$), and accumulators for the distractor choice options ($v_{D-T},v_{D-D})$. Note that within each condition, there is a single Q-value trace per choice option, but since there are two distractors, there are two overlapping traces for $ΔQ_{T-D}$, $ΣQ_{T+D}$, and for all drift rates.
 
 ## Discussion
 
@@ -137,7 +943,13 @@ It is perhaps surprising that the RL-DDM consistently overestimated RT variabili
 
 In the current work, we chose to use racing diffusion processes over the more often used LBA models for reasons of parsimony: error-driven learning introduces between-trial variability in accumulation rates, which are explicitly modeled in the RL-EAM framework. As the LBA includes between-trial variability in drift rates as a free parameter, multiple parameters can account for the same variance. Nonetheless, exploratory fits (see Figure 4—figure supplement 3) confirmed our expectation that an RL-ALBA (Advantage LBA) model fit the data of experiment one well, although formal model comparisons preferred the RL-ARD. Future work might consider completely replacing one or more sources of between trial variability in the LBA with structured fluctuations due to learning and adaption mechanisms.
 
-The parametrization of the ARD model used in the current paper followed the ALBA model proposed by van Ravenzwaaij et al., 2020. This parametrization interprets the influence on drift rates in terms of advantages and magnitudes. However, as both the weights on Q-value differences and sums (wd and ws) are freely estimated parameters, the equations that define the drift rates can be rearranged as follows:dx1=[V0+weQ1−wiQ2]dt+sWdx2=[V0+weQ2−wiQ1]dt+sWwhere we=wd+ws in the parametrization of Equation 4, and wi=wd−ws. This re-parametrization shows that each drift rate is determined by an excitatory influence we of the Q-value associated with the accumulator, and an inhibitory influence wi  of the Q-value associated with the other accumulator. Turner, 2019 proposed that inhibition plays an important role in learning tasks. Although the locus of inhibition is different in the two models, there are clear parallels that bear further investigation.
+The parametrization of the ARD model used in the current paper followed the ALBA model proposed by van Ravenzwaaij et al., 2020. This parametrization interprets the influence on drift rates in terms of advantages and magnitudes. However, as both the weights on Q-value differences and sums ($w_{d}$ and $w_{s}$) are freely estimated parameters, the equations that define the drift rates can be rearranged as follows:
+
+$$
+dx_{1}=[V_{0}+w_{e}Q_{1}−w_{i}Q_{2}]dt+sWdx_{2}=[V_{0}+w_{e}Q_{2}−w_{i}Q_{1}]dt+sW
+$$
+
+where $w_{e}=w_{d}+w_{s}$ in the parametrization of Equation 4, and $w_{i}=w_{d}−w_{s}$. This re-parametrization shows that each drift rate is determined by an excitatory influence $w_{e}$ of the Q-value associated with the accumulator, and an inhibitory influence $w_{i}$ of the Q-value associated with the other accumulator. Turner, 2019 proposed that inhibition plays an important role in learning tasks. Although the locus of inhibition is different in the two models, there are clear parallels that bear further investigation.
 
 A limitation of the current work is that we collapsed across blocks in analyzing the data of experiments 2, 3, and 4. However, in more detailed explorations (see Figure 6—figure supplement 3) there were indications of second-order changes across blocks. In experiment 2, participants were faster in the first trial bin of the second and third block compared to the first block, suggesting additional practice or adaptation effects at the beginning of the experiment. In experiment 3, participants slowed down, and learned the reversal faster, after the first block. This suggests they learned about the presence of reversals in the first block and applied a different strategy in the later blocks. Although it is known that participants increase their learning rates in volatile environments (Behrens et al., 2007), this by itself does not explain a decrease in response speed. Potentially, if participants understood the task structure after the first block, model-based strategies, such as estimating the probability of a reversal having occurred, also slowed down responses. In experiment 4, participants were slower (but equally accurate) in the first block compared to the later blocks, suggesting again additional practice or adaptation effects. Future experiments should investigate the nature of these additional adaptation effects.
 
@@ -147,13 +959,13 @@ In summary, we believe that the ARD decision mechanism provides a firm basis for
 
 ## Materials and methods
 
-## Experiment 1
+### Experiment 1
 
-## Participants
+#### Participants
 
 61 participants (mean age 21 years old [SD 2.33], 47 women, 56 right handed) were recruited from the subject pool of the department of Psychology, University of Amsterdam, and participated for course credits. All participants had normal or corrected-to-normal vision and gave written informed consent prior to the experiment onset. They did not participate in the other experiments. The study was approved by the local ethics committee.
 
-## Task
+#### Task
 
 The task was an instrumental probabilistic learning task (Frank et al., 2004). On each trial, the subject was presented with two abstract symbols (a ‘stimulus pair’) representing two choice options (see Figure 2A for an example trial). Each choice option had a fixed probability of being rewarded with points when chosen, with one choice option always having a higher probability of being rewarded than the other. The task is to discover, by trial and error, which choice options are most likely to lead to rewards, and thereby to collect as many points as possible.
 
@@ -161,45 +973,75 @@ After a short practice block to get familiar with the task, participants complet
 
 Participants were instructed to earn as many points as possible, and to always respond before the deadline of 2 s. Feedback consisted of two parts: an ‘outcome’ and a ‘reward’. The outcome corresponded to the probabilistic outcome of the choice, whereas the reward corresponded to the actual number of earned points. When participants responded before the deadline, the reward was equal to the outcome. If they were too late, the outcome was shown to allow participants to learn from their choice, but the reward they received was set to 0 to encourage responding in time. Participants received a bonus depending on the number of points earned (maximum +0.5 course credits, mean received +0.24). The task was coded in PsychoPy (Peirce et al., 2019). After this block, participants performed two more blocks of the same task with different manipulations, which are not of current interest.
 
-## Exclusion
+#### Exclusion
 
 Six participants were excluded from analysis: One reported, after the experiment, not to have understood the task, one reported a technical issue, and four did not reach an above-chance accuracy level as determined by a binomial test (accuracy cut-off 0.55, corresponding to p<0.05). The final sample thus consisted of 55 subjects (14 men, mean age 21 years old [SD 2.39], 51 right-handed).
 
-## Cognitive modeling
+#### Cognitive modeling
 
 The main analysis consists of fitting four RL-EAMs to the data and comparing the quality of the fits penalized by model complexity. We compared four different decision models: the DDM (Ratcliff, 1978), a racing diffusion (Boucher et al., 2007; Logan et al., 2014; Purcell et al., 2010; Turner, 2019) model, and two Advantage Racing Diffusion (ARD; van Ravenzwaaij et al., 2020) models (see Figure 1 for an overview). Although the former is a two-sided diffusion process, the latter three models employ a race architecture.
 
-For all models we used the simple delta update rule as a learning model:(1)Qi,t+1=Qi,t+α(rt- Qi,t)where Qi,t is the value representation of choice option i on trial t, α the learning rate, and rt the reward on trial  t. The difference between the actual reward and the value representation of the chosen stimulus, rt- Qi,t, is known as the reward prediction error. The learning rate controls the speed at which Q-values change in response to the reward prediction error, with larger learning rates leading to stronger fluctuations. In this model, only the Q-value of the chosen option is updated.
+For all models we used the simple delta update rule as a learning model:
 
-## RL-EAM 1: RL-DDM
+$$
+Q_{i,t+1}=Q_{i,t}+\alpha(r_{t}-Q_{i,t})
+$$
 
-In the first RL-EAM, we use the DDM (Ratcliff, 1978) as a choice model (Figure 1, left column). The DDM assumes that evidence accumulation is governed by:dx=vdt+sWv is the mean speed of evidence accumulation (the drift rate), and s is the standard deviation of the within-trial accumulation white noise (W). The RL-DDM assumes that the drift rate depends linearly on the difference of value representations:vt=w(Qt,1-Qt,2)w is a weighting variable, and Qt,1 and Qt,2 are the Q-values for both choice options per trial, which change each trial according to Equation 1. Hence,(2)dx=w(Q1-Q2) dt+sW
+where $Q_{i,t}$ is the value representation of choice option $i$ on trial $t$, $\alpha$ the learning rate, and $r_{t}$ the reward on trial $t$. The difference between the actual reward and the value representation of the chosen stimulus, $r_{t}-Q_{i,t}$, is known as the reward prediction error. The learning rate controls the speed at which Q-values change in response to the reward prediction error, with larger learning rates leading to stronger fluctuations. In this model, only the Q-value of the chosen option is updated.
 
-The starting point of evidence accumulation, z, lies between decision boundaries a and -a. Here, as in earlier RL-DDM work (Fontanesi et al., 2019a; Fontanesi et al., 2019b; Pedersen et al., 2017), we assume an unbiased start of the decision process (i.e., z = 0). Evidence accumulation finishes when threshold a or -a is reached, and the decision for the choice corresponding to Q1 or Q2, respectively, is made. The response time is the time required for the evidence-accumulation process to reach the bound, plus an intercept called the non-decision time (t0). The non-decision time is the sum of the time required for perceptual encoding and the time required for the execution of the motor response. Parameter s was fixed to 1 to satisfy scaling constraints (Donkin et al., 2009; van Maanen and Miletić, 2020). In total, this specification of the RL-DDM has 4 free parameters (α, w, a, t0).
+#### RL-EAM 1: RL-DDM
 
-Furthermore, we fit four additional RL-DDMs (RL-DDM A1-A4) with between-trial variabilities in start point, drift rate, and non-decision time, as well as a non-linear link function between Q-values and drift rates (Fontanesi et al., 2019a). RL-DDM A1 uses the non-linear function vt=2vmax1+exp⁡(wQt,1-Qt,2)-vmax to link Q-values to drift rates (Fontanesi et al., 2019b). For the new vmax parameter, 𝒩(2,5) (truncated at 0) and Γ(1,1) were used as priors for the hypermean and hyperSD, respectively. RL-DDM A2 includes between-trial variabilities in both drift rate sv  and start point sz, with 𝒩(0.1,0.1) and 𝒩0.1,0.1 as priors for hypermeans (respectively, both truncated at 0) and Γ(1,1) for the hyperSD. Drift rate variability was estimated as a proportion of the current drift rate, such that sv,t=vt*sv (which allows for higher variability terms for higher Q-value differences, but retains the ratio v/sv). RL-DDM A3 included sv, sz, and also between-trial variability in non-decision time st0, for which 𝒩(0.1,0.1) (truncated at 0) and Γ(1,1) were used as priors for the hypermean and hyperSD, respectively. RL-DDM A4 used all three between-trial variabilities as well as the non-linear link function. The quality of fits of these additional models can be found in Figure 3—figure supplement 1. Foreshadowing the results, the RL-DDM A3 improved the quality of fit compared to the RL-DDM, but required an implausibly high non-decision time variability: The across-subject mean of the median posterior estimates of the t0 and st0 parameters indicate a non-decision time distribution of [0.27 s, 0.64 s]. The range of 0.37 s is very high in light of the literature (Tran et al., 2021), raising the question of its psychological plausibility. For this reason, as well as since the RL-DDM is used most often without st0, we focus on the RL-DDM (without between-trial variabilities) in the main text.
+In the first RL-EAM, we use the DDM (Ratcliff, 1978) as a choice model (Figure 1, left column). The DDM assumes that evidence accumulation is governed by:
 
-## RL-EAM 2: RL-RD
+$$
+dx=vdt+sW
+$$
 
-The RL-RD (Figure 1, middle panel) assumes that two evidence accumulators independently accrue evidence for one choice option each, both racing toward a common threshold a (assuming no response bias). The first accumulator to hit the bound wins, and the corresponding decision is made. For each choice option i, the dynamics of accumulation are governed by:(3)dxi=V0+wQidt+sW
+$v$ is the mean speed of evidence accumulation (the drift rate), and $s$ is the standard deviation of the within-trial accumulation white noise (W). The RL-DDM assumes that the drift rate depends linearly on the difference of value representations:
 
-V0 is a parameter specifying the drift rate in the absence of any evidence, w a weighting parameter, and s the standard deviation of within-trial noise. As such, the mean speed of accumulation (the drift rate vi) is the sum of two independent factors: an evidence-independent baseline speed V0, and an evidence-dependent weighted Q-value, wQi. Since V0 is assumed to be identical across accumulators, and governs the speed of accumulation unrelated to the amount of evidence, we interpret this parameter as an additive urgency signal (Miletić and van Maanen, 2019), with conceptually similar behavioral effects as collapsing bounds (Hawkins et al., 2015). Similar to the DDM, a non-decision time parameter accounts for the time for perceptual encoding and the motor response time. Parameter s was fixed to 1 to satisfy scaling constraints (Donkin et al., 2009; van Maanen and Miletić, 2020). In total, the RL-RD has 5 free parameters (α, w, a, v0, t0).
+$$
+v_{t}=w(Q_{t,1}-Q_{t,2})
+$$
+
+$w$ is a weighting variable, and $Q_{t,1}$ and $Q_{t,2}$ are the Q-values for both choice options per trial, which change each trial according to Equation 1. Hence,
+
+$$
+dx=w(Q_{1}-Q_{2})dt+sW
+$$
+
+The starting point of evidence accumulation, z, lies between decision boundaries $a$ and $-a$. Here, as in earlier RL-DDM work (Fontanesi et al., 2019a; Fontanesi et al., 2019b; Pedersen et al., 2017), we assume an unbiased start of the decision process (i.e., z = 0). Evidence accumulation finishes when threshold $a$ or $-a$ is reached, and the decision for the choice corresponding to $Q_{1}$ or $Q_{2}$, respectively, is made. The response time is the time required for the evidence-accumulation process to reach the bound, plus an intercept called the non-decision time ($t0$). The non-decision time is the sum of the time required for perceptual encoding and the time required for the execution of the motor response. Parameter s was fixed to 1 to satisfy scaling constraints (Donkin et al., 2009; van Maanen and Miletić, 2020). In total, this specification of the RL-DDM has 4 free parameters ($\alpha,w,a,t0$).
+
+Furthermore, we fit four additional RL-DDMs (RL-DDM A1-A4) with between-trial variabilities in start point, drift rate, and non-decision time, as well as a non-linear link function between Q-values and drift rates (Fontanesi et al., 2019a). RL-DDM A1 uses the non-linear function $v_{t}=\frac{2v_{max}}{1+exp⁡(wQ_{t,1}-Q_{t,2})}-v_{max}$ to link Q-values to drift rates (Fontanesi et al., 2019b). For the new $v_{max}$ parameter, $𝒩(2,5)$ (truncated at 0) and $Γ(1,1)$ were used as priors for the hypermean and hyperSD, respectively. RL-DDM A2 includes between-trial variabilities in both drift rate $s_{v}$ and start point $s_{z}$, with $𝒩(0.1,0.1)$ and $𝒩0.1,0.1$ as priors for hypermeans (respectively, both truncated at 0) and $Γ(1,1)$ for the hyperSD. Drift rate variability was estimated as a proportion of the current drift rate, such that $s_{v,t}=v_{t}*s_{v}$ (which allows for higher variability terms for higher Q-value differences, but retains the ratio $v/s_{v})$. RL-DDM A3 included $s_{v}$, $s_{z}$, and also between-trial variability in non-decision time $s_{t0}$, for which $𝒩(0.1,0.1)$ (truncated at 0) and $Γ(1,1)$ were used as priors for the hypermean and hyperSD, respectively. RL-DDM A4 used all three between-trial variabilities as well as the non-linear link function. The quality of fits of these additional models can be found in Figure 3—figure supplement 1. Foreshadowing the results, the RL-DDM A3 improved the quality of fit compared to the RL-DDM, but required an implausibly high non-decision time variability: The across-subject mean of the median posterior estimates of the t0 and $s_{t0}$ parameters indicate a non-decision time distribution of [0.27 s, 0.64 s]. The range of 0.37 s is very high in light of the literature (Tran et al., 2021), raising the question of its psychological plausibility. For this reason, as well as since the RL-DDM is used most often without $s_{t0}$, we focus on the RL-DDM (without between-trial variabilities) in the main text.
+
+#### RL-EAM 2: RL-RD
+
+The RL-RD (Figure 1, middle panel) assumes that two evidence accumulators independently accrue evidence for one choice option each, both racing toward a common threshold $a$ (assuming no response bias). The first accumulator to hit the bound wins, and the corresponding decision is made. For each choice option i, the dynamics of accumulation are governed by:
+
+$$
+dx_{i}=V_{0}+wQ_{i}dt+sW
+$$
+
+$V_{0}$ is a parameter specifying the drift rate in the absence of any evidence, $w$ a weighting parameter, and $s$ the standard deviation of within-trial noise. As such, the mean speed of accumulation (the drift rate $v_{i}$) is the sum of two independent factors: an evidence-independent baseline speed $V_{0}$, and an evidence-dependent weighted Q-value, $wQ_{i}$. Since $V_{0}$ is assumed to be identical across accumulators, and governs the speed of accumulation unrelated to the amount of evidence, we interpret this parameter as an additive urgency signal (Miletić and van Maanen, 2019), with conceptually similar behavioral effects as collapsing bounds (Hawkins et al., 2015). Similar to the DDM, a non-decision time parameter accounts for the time for perceptual encoding and the motor response time. Parameter $s$ was fixed to 1 to satisfy scaling constraints (Donkin et al., 2009; van Maanen and Miletić, 2020). In total, the RL-RD has 5 free parameters $(\alpha,w,a,v0,t0)$.
 
 Each accumulator’s first passage times are Wald (also known as inverted Gaussian) distributed (Anders et al., 2016). In an independent race model, each accumulator’s first passage time distribution is normalized to the probability of the response with which it is associated (Brown and Heathcote, 2008; Turner, 2019).
 
-## RL-EAM 3 and 4: RL-ARD
+#### RL-EAM 3 and 4: RL-ARD
 
-Thirdly, we fit two racing diffusion models based on an advantage race architecture (van Ravenzwaaij et al., 2020). An advantage race model using an LBA has been shown to provide a natural account for multi-alternative choice phenomena such as Hick’s law, as well as stimulus magnitude effects in perceptual decision-making. As in the RL-RD, accumulators race toward a common bound, but the speed of evidence accumulation vi  depends on multiple factors: first, as in the RL-RD, the evidence-independent speed of accumulation V0; second, the advantage of the evidence for one choice option over the other (c.f. the DDM, where the difference between evidence for both choice options is accumulated); and third, the sum of the total available evidence. Combined, for two accumulators in the RL-EAM framework, this leads to:(4)dx1=[V0+wd(Q1−Q2)+ws(Q1+Q2)]dt+sWdx2=[V0+wd(Q2−Q1)+ws(Q1+Q2)]dt+sW
+Thirdly, we fit two racing diffusion models based on an advantage race architecture (van Ravenzwaaij et al., 2020). An advantage race model using an LBA has been shown to provide a natural account for multi-alternative choice phenomena such as Hick’s law, as well as stimulus magnitude effects in perceptual decision-making. As in the RL-RD, accumulators race toward a common bound, but the speed of evidence accumulation $v_{i}$ depends on multiple factors: first, as in the RL-RD, the evidence-independent speed of accumulation $V_{0}$; second, the advantage of the evidence for one choice option over the other (c.f. the DDM, where the difference between evidence for both choice options is accumulated); and third, the sum of the total available evidence. Combined, for two accumulators in the RL-EAM framework, this leads to:
 
-In the original work proposing the advantage accumulation framework (van Ravenzwaaij et al., 2020), it was shown that the wd parameter had a much stronger influence on evidence-accumulation rates than the ws parameter. Therefore, we first fixed the ws parameter to 0, to test whether the accumulation of differences is sufficient to capture all trends in the data. We term this model the RL-lARD (l = limited), which we compare to the RL-ARD in which we fit ws as a free parameter.
+$$
+dx_{1}=[V_{0}+w_{d}(Q_{1}−Q_{2})+w_{s}(Q_{1}+Q_{2})]dt+sWdx_{2}=[V_{0}+w_{d}(Q_{2}−Q_{1})+w_{s}(Q_{1}+Q_{2})]dt+sW
+$$
 
-As previously, parameter s was fixed to 1 to satisfy scaling constraints (Donkin et al., 2009; van Maanen and Miletić, 2020). The RL-ARD also has a threshold, non-decision time, and learning rate parameter, totaling five (α, wd, a, V0, t0) and 6 free parameters (α, wd, ws, a, V0, t0) for the RL-lARD and RL-ARD, respectively. A parameter recovery study (e.g. Heathcote et al., 2015; Miletić et al., 2017; Moran, 2016; Spektor and Kellen, 2018) was performed to confirm that data-generating parameters can be recovered using the experimental paradigm at hand. The results are shown in Figure 3—figure supplement 2.
+In the original work proposing the advantage accumulation framework (van Ravenzwaaij et al., 2020), it was shown that the $w_{d}$ parameter had a much stronger influence on evidence-accumulation rates than the $w_{s}$ parameter. Therefore, we first fixed the $w_{s}$ parameter to 0, to test whether the accumulation of differences is sufficient to capture all trends in the data. We term this model the RL-lARD (l = limited), which we compare to the RL-ARD in which we fit $w_{s}$ as a free parameter.
 
-## Bayesian hierarchical parameter estimation, posterior predictive distributions, model comparisons
+As previously, parameter $s$ was fixed to 1 to satisfy scaling constraints (Donkin et al., 2009; van Maanen and Miletić, 2020). The RL-ARD also has a threshold, non-decision time, and learning rate parameter, totaling five $(\alpha,w_{d},a,V_{0},t0)$ and 6 free parameters $(\alpha,w_{d},w_{s},a,V_{0},t0)$ for the RL-lARD and RL-ARD, respectively. A parameter recovery study (e.g. Heathcote et al., 2015; Miletić et al., 2017; Moran, 2016; Spektor and Kellen, 2018) was performed to confirm that data-generating parameters can be recovered using the experimental paradigm at hand. The results are shown in Figure 3—figure supplement 2.
 
-We estimated group-level and subject-level posterior distributions of each model’s parameter using a combination of differential evolution (DE) and Markov-chain Monte Carlo sampling (MCMC) with Metropolis-Hastings (Ter Braak, 2006; Turner et al., 2013). Sampling settings were default as implemented in the Dynamic Models of Choice R software (Heathcote et al., 2019): The number of chains, D, was three times the number of free parameters. Cross-over probability was set to 2.38/D  at the subject level and U[0, 1] at the group level. Migration probability was set to 0.05 during burn-in only. Convergence was assessed using visual inspection of the chain traces and Gelman-Rubin diagnostic (Brooks and Gelman, 1998; Gelman and Rubin, 1992) (individual and ﻿multivariate potential scale factors < 1.03 in all cases).
+#### Bayesian hierarchical parameter estimation, posterior predictive distributions, model comparisons
 
-Hierarchical models were fit assuming independent normal population (“hyper”) distributions for each parameter. For all models, we estimated the learning rate on a probit scale (mapping [0, 1] onto the real domain), with a normal prior α ∼ Φ(N(−1.6, 5)) (Spektor and Kellen, 2018). Prior distributions for all estimated hyper-mean decision-related parameters were vague. RL-EAMs, the threshold parameter a ~ 𝒩3, 5 truncated at 0, and t0 ~ 𝒩0.3, 0.5 truncated at 0.025 s and 1 s (all estimation was carried out on the seconds scale). For the RL-DDM, w ~ 𝒩(2, 5). For the RL-RD, w ~ 𝒩(9, 5), and for the RL-ARD models, wd ∼ N(9, 5) and ws ∼ N(0, 3). For the hyperSD, a Γ(1,1) distribution was used as prior. Plots of superimposed prior and posterior hyper-distributions confirmed that these prior settings were not influential.
+We estimated group-level and subject-level posterior distributions of each model’s parameter using a combination of differential evolution (DE) and Markov-chain Monte Carlo sampling (MCMC) with Metropolis-Hastings (Ter Braak, 2006; Turner et al., 2013). Sampling settings were default as implemented in the Dynamic Models of Choice R software (Heathcote et al., 2019): The number of chains, D, was three times the number of free parameters. Cross-over probability was set to $2.38/\sqrt{D}$ at the subject level and $U[0,1]$ at the group level. Migration probability was set to 0.05 during burn-in only. Convergence was assessed using visual inspection of the chain traces and Gelman-Rubin diagnostic (Brooks and Gelman, 1998; Gelman and Rubin, 1992) (individual and ﻿multivariate potential scale factors < 1.03 in all cases).
+
+Hierarchical models were fit assuming independent normal population (“hyper”) distributions for each parameter. For all models, we estimated the learning rate on a probit scale (mapping [0, 1] onto the real domain), with a normal prior $\alpha ∼ Φ(N(−1.6, 5))$ (Spektor and Kellen, 2018). Prior distributions for all estimated hyper-mean decision-related parameters were vague. RL-EAMs, the threshold parameter $a~𝒩3,5$ truncated at 0, and $t0~𝒩0.3,0.5$ truncated at 0.025 s and 1 s (all estimation was carried out on the seconds scale). For the RL-DDM, $w~𝒩(2,5)$. For the RL-RD, $w~𝒩(9,5)$, and for the RL-ARD models, $w_{d} ∼ N(9, 5)$ and $w_{s} ∼ N(0, 3)$. For the hyperSD, a $Γ(1,1)$ distribution was used as prior. Plots of superimposed prior and posterior hyper-distributions confirmed that these prior settings were not influential.
 
 In initial explorations, we also freely estimated the Q-values at trial 0. However, in the RL-EAMs, the posterior distributions for these Q-values consistently converged on 0, which was therefore subsequently used as a fixed value for all results reported in this paper.
 
@@ -207,13 +1049,13 @@ To visualize the quality of model fit, we took 100 random samples from the estim
 
 To quantitatively compare the fit of different models, penalized by their complexity, we used the Bayesian predictive information criterion (BPIC; Ando, 2007). The BPIC is an analogue of the Bayesian information criterion (BIC), but (unlike the BIC) suitable for models estimated using Bayesian methods. Compared to the deviance information criterion (Spiegelhalter et al., 2002), the BPIC penalizes model complexity more strongly to prevent over-fitting (c.f. AIC vs. BIC). Lower BPIC values indicate better trade-offs between fit quality and model complexity.
 
-## Experiment 2
+### Experiment 2
 
-## Participants
+#### Participants
 
 23 participants (mean age 19 years old [SD 1.06 years], 7 men, 23 right-handed) were recruited from the subject pool of the Department of Psychology of the University of Amsterdam and participated for course credits. Participants did not participate in the other experiments. All participants had normal or corrected-to-normal vision and gave written informed consent prior to the experiment onset. The study was approved by the local ethics committee.
 
-## Task
+#### Task
 
 Participants performed the same task as in experiment 1, with the addition of an SAT manipulation (Figure 2C). The SAT manipulation included both an instructional cue and a response deadline. Prior to each trial, a cue instructed participants to emphasize either decision speed (‘SPD’) or decision accuracy (‘ACC’) in the upcoming trial, and in speed trials, participants did not earn points if they were too late (>600 ms). As in experiment 1, after each choice participants received feedback consisting of two components: an outcome and a reward. The outcome refers to the outcome of the probabilistic gamble, whereas the reward refers to the number of points participants actually received. If participants responded in time, the reward was equal to the outcome. In speed trials, participants did not earn points if they responded later than 600 ms after stimulus onset, even if the outcome was +100. On trials where participants responded too late, they were additionally informed of the reward that was associated with their choice, had they been in time. This way, even when participants are too late, they still receive the feedback that can be used to learn from their choices.
 
@@ -221,11 +1063,11 @@ The deadline manipulation was added because we hypothesized that instructional c
 
 Participants performed 324 trials divided over three blocks. Within each block, three pairs of stimuli were shown, with associated reward probabilities of 0.8/0.2, 0.7/0.3, and 0.6/0.4. Speed and accuracy trials were randomly interleaved. Figure 2C depicts the sequence of events in each trial. As this experiment also served as a pilot for an fMRI experiment, we added fixation crosses between each phase of the trial, with jittered durations. A pre-stimulus fixation cross lasted 0.5, 1, 1.5, or 2 s; fixation crosses between cue and stimulus, between stimulus and highlight, and between highlight and feedback lasted 0, 0.5, 1, or 1.5 s; and an inter-trial interval fixation cross lasted 0.5, 1, 1.5, 2, 2.5 s. Each trial took 7.5 s. The experiment took approximately 45 min.
 
-## Exclusion
+#### Exclusion
 
 Four participants did not reach above-chance performance as indicated by a binomial test (cut-off 0.55, p<0.05), and were excluded from further analyses. The final sample thus consisted of 19 participants (mean age 19 years old [SD 1.16 years], 6 men, 19 right-handed). For one additional participant, a technical error occurred after the first block. This participant was included in the analyses, since the Bayesian estimation framework naturally down-weighs the influence of participants with fewer trials.
 
-## Manipulation check and across-block differences in behavior
+#### Manipulation check and across-block differences in behavior
 
 We expected an interaction between SAT conditions and learning. In the early trials, participants have not yet learned the reward contingencies, causing a low evidence accumulation rate compared to later trials. With low rates it takes longer to reach the decision threshold, and small changes in the threshold settings or drift rates (by means of an additive urgency signal) can cause large behavioral effects. Therefore, we expected the behavioral effects of the SAT manipulation to become smaller over the course of learning.
 
@@ -233,58 +1075,80 @@ To formally test for the behavioral effects of the SAT manipulation in experimen
 
 Next, we tested for the across block stability of behavior using two mixed effects models. One linear mixed effects model was used to predict RT with block number, trial bin, and their interaction, with a random intercept for participant. A second, logistic mixed effects model was used to test the effect of block, trial bin (log-transformed, as above), and their interaction on choice accuracy. In both models, trial bin is expected to influence the outcome variables, but the assumption of across block stability in behavior is violated if there are main effects of block number and/or interaction effects between block number and trial bin. Mean RT and accuracy by block is shown together with the formal test results in Figure 6—figure supplement 3.
 
-## Cognitive modeling
+#### Cognitive modeling
 
 We fit three RL-DDMs and seven RL-ARDs. The three RL-DDM models varied either threshold, the Q-value weighting on the drift rates parameter (Sewell and Stallman, 2020), or both. The seven RL-ARD allowed all unique combinations of the threshold, urgency, and drift rate parameters free to vary between the speed and accuracy conditions.
 
-For the accuracy condition, we used the same priors as in experiment 1. In the speed condition, the parameters that were free to vary were estimated as proportional differences from the accuracy conditions; specifically: aspd=1+ma,spd*aacc, V0,spd=(1+mV0,spd)∗V0,acc, and vi,spd=(1+mv,spd)∗vi,acc. The prior used was 𝒩(0, 5) for the hypermean and Γ(1, 1) for the hyperSD of all parameters m, truncated at -1.
+For the accuracy condition, we used the same priors as in experiment 1. In the speed condition, the parameters that were free to vary were estimated as proportional differences from the accuracy conditions; specifically: $a_{spd}=1+m_{a,spd}*a_{acc}$, $V_{0,spd}=(1+m_{V_{0,spd}})∗V_{0,acc}$, and $v_{i,spd}=(1+m_{v,spd})∗v_{i,acc}$. The prior used was $𝒩(0,5)$ for the hypermean and $Γ(1,1)$ for the hyperSD of all parameters $m$, truncated at -1.
 
 As in experiment 1, we performed a parameter recovery study to confirm that the data-generating parameters can be recovered, using the winning model and a simulation of the paradigm of experiment 2. The results are shown in Figure 6—figure supplement 2.
 
 Additionally, we performed a second model comparison using three variants of RL-DDM A3 (i.e., including between-trial variabilities in start point, drift rate, and non-decision time), which varied the threshold, the Q-value weighting on the drift rate parameters, and both. The results are shown in Figure 6—figure supplement 1, and lead to the same conclusions as the RL-DDM.
 
-## Experiment 3
+### Experiment 3
 
-## Participants
+#### Participants
 
 Forty-seven participants (mean age 21 years old [SD 2.81 years], 16 men, 40 right-handed) were recruited from the subject pool of the Department of Psychology of the University of Amsterdam and participated for course credits. Participants did not participate in the other experiments. All participants had normal or corrected-to-normal vision and gave written informed consent prior to the experiment onset. The study was approved by the local ethics committee.
 
-## Task
+#### Task
 
 The reversal learning task had the same general task structure as experiment 1. Participants completed four blocks of 128 trials each, totaling 512 trials. Within each block, two pairs of stimuli were randomly interleaved, with associated reward probabilities of 0.8/0.2 and 0.7/0.3. Between trials 61 and 68 (uniformly sampled) of each block, the reward probability switched between stimuli, such that the stimulus with a pre-reversal reward probability of 0.8/0.7 had a post-reversal reward probability of 0.2/0.3 (and vice versa). Participants were not informed of the reversals prior to the experiment, but many reported noticing them.
 
 In addition to the reversal learning task, the experimental session also contained a working memory task that is not of current interest. Thirty participants performed the reversal learning task before the working memory task, and 17 participants afterwards. The entire experiment took approximately one hour.
 
-## Cognitive modeling
+#### Cognitive modeling
 
-We first tested whether a standard soft-max model is able to capture the quick change in choice behavior after the occurrence of a reversal. Soft-max is given by:Pi,t=exp⁡ βQi,t∑jJexp⁡ βQi,twhere Pi,t is the probability of choosing option i on trial t, J is the total number of choice options, and β is a free parameter often called the inverse temperature. The inverse temperature is often interpreted in terms of the exploration/exploitation trade-off (Daw et al., 2006), with higher values indicating more exploitation. In two-choice settings, Equation 5 can be re-written as:P2,t=11+exp⁡β(Q1,t−Q2,t)which highlights that the choice probability is driven by the difference in Q-values, weighted by the inverse temperature parameter. We hierarchically fit the soft-max model using the same parameter estimation methods as in experiment 1. Priors for the hypermean were set to β~ N(1,5) truncated at 0, and for the hyperSD Γ(1,1).
+We first tested whether a standard soft-max model is able to capture the quick change in choice behavior after the occurrence of a reversal. Soft-max is given by:
 
-Then, the RL-DDM and RL-ARD were fit to the data using the same methods as in experiment 1. Again, we performed a parameter recovery study, of which the results are shown in Figure 7—figure supplement 3. Similarly, we also fit RL-DDM A3 to the data. In an initial fit, the MCMC chains for 11 (out of 47) participants got stuck in values for sz of 1 (i.e. sz covered the entire range between both thresholds), which are implausibly high and moreover led to convergence problems. We re-fit this model with the prior on sz~𝒩(0.1,0.1) truncated at 0 and 0.5 (i.e. setting the maximum range of between-trial start point variability to be half the range between the lower and upper threshold), which did converge. The posterior predictives are shown in Figure 7—figure supplement 2. This model led to the same overall conclusions as the standard RL-DDM.
+$$
+P_{i,t}=\frac{exp⁡ \betaQ_{i,t}}{\sumjJexp⁡ \betaQ_{i,t}}
+$$
 
-## Experiment 4
+where $P_{i,t}$ is the probability of choosing option $i$ on trial $t$, J is the total number of choice options, and $\beta$ is a free parameter often called the inverse temperature. The inverse temperature is often interpreted in terms of the exploration/exploitation trade-off (Daw et al., 2006), with higher values indicating more exploitation. In two-choice settings, Equation 5 can be re-written as:
 
-## Participants
+$$
+P_{2,t}=\frac{1}{1+exp⁡\beta(Q_{1,t}−Q_{2,t})}
+$$
+
+which highlights that the choice probability is driven by the difference in Q-values, weighted by the inverse temperature parameter. We hierarchically fit the soft-max model using the same parameter estimation methods as in experiment 1. Priors for the hypermean were set to $\beta~N(1,5)$ truncated at 0, and for the hyperSD $Γ(1,1)$.
+
+Then, the RL-DDM and RL-ARD were fit to the data using the same methods as in experiment 1. Again, we performed a parameter recovery study, of which the results are shown in Figure 7—figure supplement 3. Similarly, we also fit RL-DDM A3 to the data. In an initial fit, the MCMC chains for 11 (out of 47) participants got stuck in values for $s_{z}$ of 1 (i.e. $s_{z}$ covered the entire range between both thresholds), which are implausibly high and moreover led to convergence problems. We re-fit this model with the prior on $s_{z}~𝒩(0.1,0.1)$ truncated at 0 and 0.5 (i.e. setting the maximum range of between-trial start point variability to be half the range between the lower and upper threshold), which did converge. The posterior predictives are shown in Figure 7—figure supplement 2. This model led to the same overall conclusions as the standard RL-DDM.
+
+### Experiment 4
+
+#### Participants
 
 Forty-three participants (mean age 20 years old [SD 4.29 years], 5 men, 36 right-handed) were recruited from the subject pool of the Department of Psychology of the University of Amsterdam and participated for course credits. They did not participate in the other experiments. All participants had normal or corrected-to-normal vision and gave written informed consent prior to the experiment onset. The study was approved by the local ethics committee. Participants performed the task online.
 
-## Task
+#### Task
 
 The three-alternative instrumental learning task had the same general task structure as before. Participants completed three blocks of 144 trials each, totaling 432 trials. Within each block, four triplets of stimuli were randomly interleaved. We used a factorial design to manipulate both difficulty (defined as the difference between the target and distractor reward probability) and reward magnitude (defined as the mean probability of reward per triplet): 0.8/0.25/0.25 (easy, high magnitude), 0.7/0.3/0.3 (hard, high magnitude), 0.7/0.15/0.15 (easy, low magnitude), and 0.6/0.2/0.2 (hard, low magnitude). The entire experiment took approximately 30 min.
 
-## Exclusion
+#### Exclusion
 
 Nine subjects did not reach above-chance accuracy and were excluded from analysis (accuracy cut-off 0.37, corresponding to p<0.05 in a binomial test). The final sample thus consisted of 34 subjects (three men, mean age 20 years old [SD 4.68 years], 28 right-handed).
 
-## Cognitive modeling
+#### Cognitive modeling
 
-A three-alternative RL-ARD with the Win-All stopping rule was fit to the data. The multi-alternative version of the RL-ARD includes one accumulator per directional pairwise difference between choice options, leading to a total of six accumulators (1-2, 1-3, 2-1, 2-3, 3-1, 3-2) for the case of three choice options. Each accumulator is governed by the same evidence-accumulation dynamics as in the two-alternative RL-ARD:(7)dx1−2=[V0+wd(Q1−Q2)+ws(Q1+Q2)]dt+sWdx1−3=[V0+wd(Q1−Q3)+ws(Q1+Q3)]dt+sWdx2−1=[V0+wd(Q2−Q1)+ws(Q2+Q1)]dt+sWdx2−3=[V0+wd(Q2−Q3)+ws(Q2+Q3)]dt+sWdx3−1=[V0+wd(Q3−Q1)+ws(Q3+Q1)]dt+sWdx3−2=[V0+wd(Q3−Q2)+ws(Q3+Q2)]dt+sW
+A three-alternative RL-ARD with the Win-All stopping rule was fit to the data. The multi-alternative version of the RL-ARD includes one accumulator per directional pairwise difference between choice options, leading to a total of six accumulators (1-2, 1-3, 2-1, 2-3, 3-1, 3-2) for the case of three choice options. Each accumulator is governed by the same evidence-accumulation dynamics as in the two-alternative RL-ARD:
 
-Hence, each choice option (e.g. 1) is associated with two accumulators that collect evidence for the advantage of that option over the other two options (1-2, 1-3). The Win-All stopping rule proposes that a final choice is made when two conditions are satisfied: (1) both accumulators corresponding to that choice reached their thresholds, and (2) for each other choice option at least one accumulator has not yet reached the threshold. The corresponding response time is the decision time of the slowest of the two winning accumulators, plus the non-decision time. The probability of response one at time t is then given by van Ravenzwaaij et al., 2020; derivation in their Appendix:p1t=∑I≠1PDF1-It×∏J≠[1,I]CDF1-J(t)×∏I≠11-∏K≠ICDFI-K(t)where I are choice options {2,3}, J is an option in {2,3} that is not I, and K is an option in {1,2,3} that is not I. PDF and CDF refer to the probability density and cumulative density function of the Wald distribution.
+$$
+dx_{1−2}=[V_{0}+w_{d}(Q_{1}−Q_{2})+w_{s}(Q_{1}+Q_{2})]dt+sWdx_{1−3}=[V_{0}+w_{d}(Q_{1}−Q_{3})+w_{s}(Q_{1}+Q_{3})]dt+sWdx_{2−1}=[V_{0}+w_{d}(Q_{2}−Q_{1})+w_{s}(Q_{2}+Q_{1})]dt+sWdx_{2−3}=[V_{0}+w_{d}(Q_{2}−Q_{3})+w_{s}(Q_{2}+Q_{3})]dt+sWdx_{3−1}=[V_{0}+w_{d}(Q_{3}−Q_{1})+w_{s}(Q_{3}+Q_{1})]dt+sWdx_{3−2}=[V_{0}+w_{d}(Q_{3}−Q_{2})+w_{s}(Q_{3}+Q_{2})]dt+sW
+$$
+
+Hence, each choice option (e.g. 1) is associated with two accumulators that collect evidence for the advantage of that option over the other two options (1-2, 1-3). The Win-All stopping rule proposes that a final choice is made when two conditions are satisfied: (1) both accumulators corresponding to that choice reached their thresholds, and (2) for each other choice option at least one accumulator has not yet reached the threshold. The corresponding response time is the decision time of the slowest of the two winning accumulators, plus the non-decision time. The probability of response one at time t is then given by van Ravenzwaaij et al., 2020; derivation in their Appendix:
+
+$$
+p_{1}t=\sumI\neq1PDF_{1-I}t\times\prodJ\neq[1,I]CDF_{1-J}(t)\times\prodI\neq11-\prodK\neqICDF_{I-K}(t)
+$$
+
+where I are choice options {2,3}, J is an option in {2,3} that is not I, and K is an option in {1,2,3} that is not I. PDF and CDF refer to the probability density and cumulative density function of the Wald distribution.
 
 Despite the visual complexity of Figure 9, the three-alternative RL-ARD remains highly constrained by the linking functions of Equation 7 and the Q-value evolution. As only the architecture of the linking between Q-values and accumulators was generalized to accommodate the third choice option, there remains the same number of parameters as in the two-alternative case. Note that the three-alternative Win-All RL-ARD naturally reduces to the two-choice RL-ARD when one of the choice options is removed.
 
 We fit the three-alternative RL-ARD using the same fitting methods (including the same priors) as in experiment 1. We also performed a parameter recovery study using the same methods as in earlier experiments, the results of which are shown in Figure 11—figure supplement 1.
 
-## Code availability statement
+### Code availability statement
 
 All analysis codes are available on OSF (https://osf.io/ygrve/).

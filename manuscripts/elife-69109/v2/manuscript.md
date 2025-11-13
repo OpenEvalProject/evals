@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Dark caves lacking primary productivity can expose subterranean animals to hypoxia. We used the surface-dwelling (surface fish) and cave-dwelling (cavefish) morphs of Astyanax mexicanus as a model for understanding the mechanisms of hypoxia tolerance in the cave environment. Primitive hematopoiesis, which is restricted to the posterior lateral mesoderm in other teleosts, also occurs in the anterior lateral mesoderm in Astyanax , potentially pre-adapting surface fish for hypoxic cave colonization. Cavefish have enlarged both hematopoietic domains and develop more erythrocytes than surface fish, which are required for normal development in both morphs. Laboratory-induced hypoxia suppresses growth in surface fish but not in cavefish. Both morphs respond to hypoxia by overexpressing hypoxia-inducible factor 1 ( hif1 ) pathway genes, and some hif1 genes are constitutively upregulated in normoxic cavefish to similar levels as in hypoxic surface fish. We conclude that cavefish cope with hypoxia by increasing erythrocyte development and constitutive hif1 gene overexpression.
+Dark caves lacking primary productivity can expose subterranean animals to hypoxia. We used the surface-dwelling (surface fish) and cave-dwelling (cavefish) morphs of Astyanax mexicanus as a model for understanding the mechanisms of hypoxia tolerance in the cave environment. Primitive hematopoiesis, which is restricted to the posterior lateral mesoderm in other teleosts, also occurs in the anterior lateral mesoderm in Astyanax, potentially pre-adapting surface fish for hypoxic cave colonization. Cavefish have enlarged both hematopoietic domains and develop more erythrocytes than surface fish, which are required for normal development in both morphs. Laboratory-induced hypoxia suppresses growth in surface fish but not in cavefish. Both morphs respond to hypoxia by overexpressing hypoxia-inducible factor 1 (hif1) pathway genes, and some hif1 genes are constitutively upregulated in normoxic cavefish to similar levels as in hypoxic surface fish. We conclude that cavefish cope with hypoxia by increasing erythrocyte development and constitutive hif1 gene overexpression.
 
 ## Introduction
 
@@ -29,19 +29,23 @@ The present investigation shows that cavefish embryos develop significantly more
 
 ## Results
 
-## Cavefish have more erythrocytes than surface fish
+### Cavefish have more erythrocytes than surface fish
 
 To test the hypothesis that cavefish develop more red blood cells as a response to environmental hypoxia, we compared erythrocytes between surface fish and cavefish embryos in several different ways. First, we conducted direct observations of blood cell numbers after circulation begins in the Duct of Cuvier (DC) at 36 hpf (Figure 1A–D). At this time, the circulatory system is still partially open, and blood cells can be imaged or stained and quantified as they flow across the yolk (Videos 1 and 2 and Figure 1B–D and F). The number of circulating blood cells was quantified in sequential video frames using Image-J analysis software, and the results showed that cavefish have more blood cells than surface fish (Figure 1B–D and F). Second, the number of erythrocytes was quantified in the DC by staining with o-dianisidine (Iuchi and Yamamoto, 1983), and the results revealed that cavefish have more erythrocytes than surface fish (Figure 1E and G). Third, expression of the hbb2 and hbbe2 ß-hemoglobin genes was followed during surface fish and cavefish development by qPCR and in situ hybridization (Figure 2A, B and D–F). The qPCR results revealed significantly higher levels of hbb2 mRNA at 24 hpf and 60 hpf and hbbe2 mRNA at 60 hpf (Figure 2A and B). In situ hybridization also showed more extensive hbb2 staining in cavefish compared to surface fish (Figure 2D–F), which was particularly evident in the yolk mass at 36 hpf (Figure 2E). Fourth, the expression of gfi1aa, which encodes a transcription factor essential for hematopoiesis (Cooney et al., 2013), was compared by qPCR and in situ hybridization (Figure 2C and G). The results indicated that gfi1aa mRNA levels were significantly increased in cavefish compared to surface fish at 24 hpf (Figure 2C and G), prior to detection of the highest levels of hemoglobin transcription (Figure 2A and B). These results provide multiple lines of evidence indicating that red blood cells are increased during cavefish development.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69109/elife-69109-fig1-v2.jpg)
 
-**Figure 1.:** (A) At 36 hpf blood circulates from the heart (H) through the lateral dorsal aorta (LDA), the dorsal aorta (DA) and caudal artery (CA) (blood flow shown in red), and back to the heart through the caudal vein (CV), the posterior cardinal vein (PCV), and the Duct of Cuvier (DC) (blood flow shown in blue). Scale bar is 200 µm. (B–D). Video analysis of circulating blood cells (arrowheads) in a region of interest (ROI, boxes) in the DC of surface fish (SF) and cavefish (CF) larvae at 36 hpf visualized by subtraction of two video frames 0.15 s apart (C, D) and quantified using the plugin TrackMate (ImageJ) (D, purple dots). (E) o-dianisidine staining of red blood cells in the DC of surface fish (SF) and cavefish (CF) larvae at 36 hpf. Boxes: erythrocyte quantification regions. Scale bar in E is 100 µm, B-E are the same magnifications. (F, G). Quantification of blood cells in the DC by video analysis (F) and o-dianisidine staining. Box plots show the median, quartiles, min-max values and outliers (dots). Asterisks: p < 0.05, N = 72 (in F) and p < 0.0001, N = 36 (in G). Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test.Figure 1—source data 1.
+**Figure 1.:** (A) At 36 hpf blood circulates from the heart (H) through the lateral dorsal aorta (LDA), the dorsal aorta (DA) and caudal artery (CA) (blood flow shown in red), and back to the heart through the caudal vein (CV), the posterior cardinal vein (PCV), and the Duct of Cuvier (DC) (blood flow shown in blue). Scale bar is 200 µm. (B–D). Video analysis of circulating blood cells (arrowheads) in a region of interest (ROI, boxes) in the DC of surface fish (SF) and cavefish (CF) larvae at 36 hpf visualized by subtraction of two video frames 0.15 s apart (C, D) and quantified using the plugin TrackMate (ImageJ) (D, purple dots). (E) o-dianisidine staining of red blood cells in the DC of surface fish (SF) and cavefish (CF) larvae at 36 hpf. Boxes: erythrocyte quantification regions. Scale bar in E is 100 µm, B-E are the same magnifications. (F, G). Quantification of blood cells in the DC by video analysis (F) and o-dianisidine staining. Box plots show the median, quartiles, min-max values and outliers (dots). Asterisks: p < 0.05, N = 72 (in F) and p < 0.0001, N = 36 (in G). Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69109/elife-69109-fig2-v2.jpg)
 
-**Figure 2.:** (A–C). qPCR quantification of hhb2, hbbe2, and gfi1aa transcripts in surface fish (SF) and cavefish (CF) larvae at 24 hpf and 60 hpf. Error bars: range of fold change. Asterisks: (A) N = 8. p = 0.0045 for SF vs CF at 24 hpf and p = 0.0254 for SF vs CF at 60 hpf; (B) N = 4. p = 0.0271 for SF vs CF at 60 hpf.; (C) N = 3. p = 0.0413 for SF vs CF at 24 hpf. Statistics by two-way ANOVA followed by Student’s t test. (D–G). In situ hybridizations showing hbb2 staining at 24, 36, and 60 hpf, (D–F) and gfi1aa staining (G) at 24 hpf in CF and SF. AGM: aorta-gonad-mesonephros. PBI: posterior blood island. Scale bars are 200 µm in each frame. Magnifications are the same in SF and CF.Figure 2—source data 1.
+**Figure 2.:** (A–C). qPCR quantification of hhb2, hbbe2, and gfi1aa transcripts in surface fish (SF) and cavefish (CF) larvae at 24 hpf and 60 hpf. Error bars: range of fold change. Asterisks: (A) N = 8. p = 0.0045 for SF vs CF at 24 hpf and p = 0.0254 for SF vs CF at 60 hpf; (B) N = 4. p = 0.0271 for SF vs CF at 60 hpf.; (C) N = 3. p = 0.0413 for SF vs CF at 24 hpf. Statistics by two-way ANOVA followed by Student’s t test. (D–G). In situ hybridizations showing hbb2 staining at 24, 36, and 60 hpf, (D–F) and gfi1aa staining (G) at 24 hpf in CF and SF. AGM: aorta-gonad-mesonephros. PBI: posterior blood island. Scale bars are 200 µm in each frame. Magnifications are the same in SF and CF.
 
-## Hematopoietic domains in surface fish and cavefish embryos
+![Video 1.](https://cdn.elifesciences.org/articles/69109/elife-69109-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/69109/elife-69109-video2.mp4.jpg)
+
+### Hematopoietic domains in surface fish and cavefish embryos
 
 To determine the developmental basis of erythrocyte enhancement, we compared the timing and spatial expression of hbb2, gfi1aa, and other hematopoietic marker genes during primitive hematopoiesis in surface fish and cavefish embryos (Figure 3). As in zebrafish (Brownlie et al., 2003; Wei et al., 2008), hbb2 was expressed in the intermediate cell mass of the PLM during primitive hematopoiesis in Astyanax surface fish and cavefish embryos (Figure 3A). In striking contrast to zebrafish, in which erythropoiesis occurs exclusively in the PLM, hbb2 expression was detected in both the ALM and PLM of Astyanax surface fish and cavefish embryos (Figure 3A). The expression of gfi1aa was also present in the ALM and PLM during Astyanax embryogenesis (Figure 3A). Furthermore, gfi1aa and hbb2 staining were stronger in the cavefish ALM and PLM compared to surface fish (Figure 3A). To further evaluate the primitive erythropoietic domains, we examined expression of the lim domain only 2 (lmo2) gene, a marker of developing blood cells (Patterson et al., 2007), by in situ hybridization. The results confirmed blood cell development in both the ALM and PLM in Astyanax embryos and revealed that both primitive erythropoietic domains are expanded in cavefish embryos (Figure 3C).
 
@@ -53,37 +57,104 @@ In zebrafish, the ALM undergoes myelopoiesis, rather than erythropoiesis, produc
 
 In summary, the results reveal the presence of a novel domain of primitive erythropoiesis in the anterior region of Astyanax embryos and suggest that red blood cells are increased in cavefish due to expansion of both the anterior and posterior primitive erythropoiesis domains.
 
-## Blood cell enhancement is a maternally controlled trait
+### Blood cell enhancement is a maternally controlled trait
 
 Hematopoietic domains develop in the lateral mesoderm of zebrafish embryos during gastrulation (Kimmel et al., 1990), and changes in gastrulation and axis determination are under maternal control in cavefish (Ma et al., 2018; Torres-Paz et al., 2019). Therefore, to determine whether the increase in cavefish blood cells is controlled by maternal or zygotic changes, we conducted reciprocal hybrid crosses (cavefish female x surface male and surface fish female x cavefish male) and quantified blood cells in the DC of F1 hybrid embryos by video imaging (Figure 4). As controls, crosses were also done and blood cell numbers quantified in the offspring of parental cavefish x cavefish and surface fish x surface fish crosses. The F1 hybrid progeny of the cavefish female x surface fish male and the cavefish x cavefish crosses (Figure 4C and D) developed more blood cells than the progeny of surface fish female x cavefish male and surface fish x surface fish crosses (Figure 4A and B), showing that the extent of erythrocyte development is dependent on the source of eggs. These results reveal that the increase in cavefish blood cells is a maternally controlled trait.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69109/elife-69109-fig4-v2.jpg)
 
-**Figure 4.:** Video imaging in the Duct of Cuvier and blood cell quantification at 34 hpf in the F1 progeny of a (A) surface fish (SF) X SF control cross, (B) a SF female X cavefish (CF) male cross, (C) a CF female X SF male cross, and (D) a CF X CF control cross. (A–D) Top row. Representative images of blood cell number aligned with box plots below. Scale Bar is 100 µm; magnifications are the same in each frame. Bottom row. Boxplots of blood cell numbers showing medians, quartiles, min-max values, and outliers (dots). Asterisks: p < 0.05. ns: not significant. N = 20 for each box plot. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair.Figure 4—source data 1.
+**Figure 4.:** Video imaging in the Duct of Cuvier and blood cell quantification at 34 hpf in the F1 progeny of a (A) surface fish (SF) X SF control cross, (B) a SF female X cavefish (CF) male cross, (C) a CF female X SF male cross, and (D) a CF X CF control cross. (A–D) Top row. Representative images of blood cell number aligned with box plots below. Scale Bar is 100 µm; magnifications are the same in each frame. Bottom row. Boxplots of blood cell numbers showing medians, quartiles, min-max values, and outliers (dots). Asterisks: p < 0.05. ns: not significant. N = 20 for each box plot. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair.
 
-## Erythrocytes are required for Astyanax development
+### Erythrocytes are required for Astyanax development
 
 Erythrocytes also develop early in zebrafish embryogenesis, but are not required for oxygen delivery until much later in development (Pelster and Burggren, 1996). Accordingly, we performed experiments to determine whether red blood cells have a role in early Astyanax development. To address this question, we compared the effects of hemolytic anemia in surface fish and cavefish embryos (Figure 5). Hemolysis of red blood cells was induced by treatment with phenylhydrazine (PHZ) (Houston et al., 1988) beginning at 14 hpf (13–17 somite stage), and hbb2 staining, red blood cell number, and post-anal tail length (used as a proxy for normal growth and development) were compared in surface fish and cavefish after 14 hr of PHZ exposure (Figure 5A–C). We found that hbb2 staining and red blood cells were reduced at increasing PHZ concentrations in both surface fish and cavefish embryos (Figure 5A and B). However, at the same PHZ concentration both erythrocyte phenotypes were more strongly affected in surface fish than in cavefish, consistent with more red blood cells in the latter. The results also showed that growth decreased in concert with hemoglobin transcript and erythrocyte reduction in surface fish, and concordant with more red blood cells, no effects on growth were seen in PHZ-treated cavefish (Figure 5B). The PHZ-treated embryos developed axial defects, most notably edemas, twisted notochords, and shortened and ventrally bent tails (Figure 5C), which were more prevalent at lower PHZ concentrations in surface fish than cavefish embryos (Table 1). To address the possibility that reduced tail length was a consequence of abnormal notochord morphogenesis rather than growth suppression, tail length and notochord morphology were investigated at 36 hpf in surface fish exposed to a PHZ concentration that virtually abolished red blood cells (Figure 5D). Under these conditions, post-anal tail growth was significantly reduced, but notochord defects were not detected, suggesting that hemolytic effects on axial growth are related to the absence of red blood cells. The results show that erythrocytes are required during early development in Astyanax and more red blood cells may reduce the sensitivity of cavefish to hemolytic anemia.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69109/elife-69109-fig5-v2.jpg)
 
-**Figure 5.:** (A). In situ hybridization with the hbb2 gene marker in 40 hpf larvae treated with different phenylhydrazine (PHZ) concentrations. Magnification is the same in all frames. (B). Larval tail length (top) and erythrocyte number in the Duct of Cuvier (DC) (bottom) in SF and CF embryos as a function of PHZ concentration. Asterisks in B (top) p < 0.0001. N = 23 for SF 0, 2 mg L–1 and CF 3 mg L–1. N = 24 for SF 1 and 3 mg L–1 and CF 0, 1, and 2 mg L–1. Asterisks in B (bottom) consecutively from left to right: p = 0.0197, p < 0.0001, p = 0.0002, p < 0.0001, and p 0.0102. N = 20 for SF 0, 1, 2 and CF 3 mg L–1. N = 10 for SF 3 mg L–1. N = 19 for CF 0 mg L–1. N = 21 for CF 1 mg L–1. N = 22 CF 2 mg L–1. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair. (C). Axial defects induced by hemolytic anemia in SF and CF embryo. Scale bars are 200 µm; magnifications are the same in top four frames and bottom two frames. Data from B and C were obtained from the same embryos. (D). Effects of a 1 hr. treatment with 5 mg/L PHZ on SF post-anal tail growth (top), erythrocyte number measured in the DC (middle), and axial development (bottom left and right). Scale bars in A, C (upper frame), and D (left frame) are 500 µm. Scale bars in C (lower frame) and D (right frame) are 200 µm. Asterisk (top): p = 0.0115, N = 20. Statistics by Student’s t test. Asterisk (middle): p = 0.0001, N = 10. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair. Box plots in C and D show whiskers ( = 5%), mean (line) and outlier (dot). SF: surface fish. CF: cavefish. Box plots show the median, quartiles, min-max values and outliers (dots).Figure 5—source data 1.
+**Figure 5.:** (A). In situ hybridization with the hbb2 gene marker in 40 hpf larvae treated with different phenylhydrazine (PHZ) concentrations. Magnification is the same in all frames. (B). Larval tail length (top) and erythrocyte number in the Duct of Cuvier (DC) (bottom) in SF and CF embryos as a function of PHZ concentration. Asterisks in B (top) p < 0.0001. N = 23 for SF 0, 2 mg L–1 and CF 3 mg L–1. N = 24 for SF 1 and 3 mg L–1 and CF 0, 1, and 2 mg L–1. Asterisks in B (bottom) consecutively from left to right: p = 0.0197, p < 0.0001, p = 0.0002, p < 0.0001, and p 0.0102. N = 20 for SF 0, 1, 2 and CF 3 mg L–1. N = 10 for SF 3 mg L–1. N = 19 for CF 0 mg L–1. N = 21 for CF 1 mg L–1. N = 22 CF 2 mg L–1. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair. (C). Axial defects induced by hemolytic anemia in SF and CF embryo. Scale bars are 200 µm; magnifications are the same in top four frames and bottom two frames. Data from B and C were obtained from the same embryos. (D). Effects of a 1 hr. treatment with 5 mg/L PHZ on SF post-anal tail growth (top), erythrocyte number measured in the DC (middle), and axial development (bottom left and right). Scale bars in A, C (upper frame), and D (left frame) are 500 µm. Scale bars in C (lower frame) and D (right frame) are 200 µm. Asterisk (top): p = 0.0115, N = 20. Statistics by Student’s t test. Asterisk (middle): p = 0.0001, N = 10. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair. Box plots in C and D show whiskers ( = 5%), mean (line) and outlier (dot). SF: surface fish. CF: cavefish. Box plots show the median, quartiles, min-max values and outliers (dots).
 
-## Cavefish but not surface fish maintain growth in a hypoxic laboratory environment
+**Table 1.**
+ Penetrance of abnormalities in phenylhydrazine-treated surface fish and cavefish embryos.Table 1—source data 1.Penetrance of abnormalities in phenylhydrazine-treated surface fish and cavefish embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Morph</th>
+      <th>PHZ concentration</th>
+      <th>% edema</th>
+      <th>% defective notochord</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SF</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CF</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>1</td>
+      <td>4.1</td>
+      <td>87.5</td>
+    </tr>
+    <tr>
+      <td>CF</td>
+      <td>1</td>
+      <td>0</td>
+      <td>41.7</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>2</td>
+      <td>75.0</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>CF</td>
+      <td>2</td>
+      <td>8.3</td>
+      <td>87.5</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>3</td>
+      <td>95.8</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>CF</td>
+      <td>3</td>
+      <td>25.0</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+_PHZ: phenylhydrazine. SF: surface fish. CF: cavefish. N = 24 for each morph treatment._
+
+### Cavefish but not surface fish maintain growth in a hypoxic laboratory environment
 
 Subterranean waters harboring Astyanax cavefish are low in oxygen (Rohner et al., 2013; Ornelas-García et al., 2018; Boggs and Gross, 2021), which is essential for normal development and growth (Giaccia et al., 2004). Therefore, we hypothesized that cavefish may be more tolerant to the effects of hypoxia on growth than surface fish. To test this hypothesis, 36 hpf surface fish and cavefish were exposed to a hypoxic laboratory environment for 18 hr (Figure 6A and B). The effects on growth were determined by measuring post-anal tail length before and after hypoxia treatment, and the number of erythrocytes was quantified by o-dianisidine staining at the end of the treatment period. The results showed that hypoxia reduced the number of red blood cells in the DC and suppressed growth in surface fish but not cavefish (Figure 6B), showing that cavefish are more resistant to oxygen depletion. Reasoning that eye growth would be especially sensitive to hypoxia because of the energy cost associated with retinal differentiation and maintenance (Wong-Riley, 2010; Moran et al., 2015), eye size was also examined in surface fish and cavefish exposed to normoxia or hypoxia for 18 hr. The results showed that eye size was more sensitive to hypoxia relative to normoxia in surface fish compared to cavefish (Figure 6C). The results suggest that cavefish growth is resistant to hypoxia and development of more erythrocytes may contribute to hypoxia tolerance.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69109/elife-69109-fig6-v2.jpg)
 
-**Figure 6.:** (A). Image of a 36 hpf surface fish larval showing post-anal tail length. Scale Bar is 200 µM. (B). Relative post-anal tail growth (top) and erythrocyte numbers (bottom) of surface fish and cavefish over an 18 hr. period under normoxic and hypoxic (1 mg/L oxygen) conditions. Top frame asterisks from left to right: p < 0.0001, p = 0.002; p < 0.0001, and p = 0.0021. N = 23 for SF-N and SF-H. N = 46 for CF-N. N = 47 for CF-H. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair. Middle frame asterisks from left to right: p = 0.0116, and p = 0.0078. N = 22 for SF-N. N = 21 for SF-H. N = 47 for CF-N, and N = 45 for CF-H. Statistics by one-way ANOVA followed by Student’s t-test. (C) Difference in eye diameters in surface fish and cavefish after 18 hr. of hypoxia or normoxia. Bottom frame asterisks: p = 0.0002 and p < 0.0001. N = 18 for SF-N. N = 14 for SF-H. N = 30 for CF-N. N = 28 for CF-H. Statistics by one-way ANOVA followed by Student’s t-test. Box plots show median, quartiles and min-max values.Figure 6—source data 1.
+**Figure 6.:** (A). Image of a 36 hpf surface fish larval showing post-anal tail length. Scale Bar is 200 µM. (B). Relative post-anal tail growth (top) and erythrocyte numbers (bottom) of surface fish and cavefish over an 18 hr. period under normoxic and hypoxic (1 mg/L oxygen) conditions. Top frame asterisks from left to right: p < 0.0001, p = 0.002; p < 0.0001, and p = 0.0021. N = 23 for SF-N and SF-H. N = 46 for CF-N. N = 47 for CF-H. Statistics by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair. Middle frame asterisks from left to right: p = 0.0116, and p = 0.0078. N = 22 for SF-N. N = 21 for SF-H. N = 47 for CF-N, and N = 45 for CF-H. Statistics by one-way ANOVA followed by Student’s t-test. (C) Difference in eye diameters in surface fish and cavefish after 18 hr. of hypoxia or normoxia. Bottom frame asterisks: p = 0.0002 and p < 0.0001. N = 18 for SF-N. N = 14 for SF-H. N = 30 for CF-N. N = 28 for CF-H. Statistics by one-way ANOVA followed by Student’s t-test. Box plots show median, quartiles and min-max values.
 
-## Differential expression of oxygen-sensitive genes during hypoxia
+### Differential expression of oxygen-sensitive genes during hypoxia
 
 To determine the molecular responses of surface fish and cavefish to hypoxia, we quantified some of the key oxygen sensitive genes by qPCR (Figure 7). Exposure of surface fish or cavefish larvae to hypoxia for 2 hr. resulted in increased transcript levels of the insulin growth factor binding protein 1a (igfbp1a) gene, the HIF1 family genes hif1aa and hif1a-like2, and the HIF1-regulated downstream gene hexokinase 1 (hk1) (Figure 7). In contrast, the hifab and hif1a-like genes were expressed at similar levels in normoxic cavefish and hypoxic surface fish (Figure 7), implying constitutive expression in cavefish. The expression of the glucose-6-phosphate dehydrogenase (g6pd), lactate dehydrogenase a (ldha), and pyruvate dehydrogenase kinase 1 (pdk1) genes were not significantly increased by hypoxia in surface fish or cavefish (Figure 7). The results indicate that igfbp1, hif1a-like2, and hk1 are upregulated by hypoxia in both surface fish and cavefish, whereas hif1aa and hif1a-like are expressed at higher levels in cavefish than in surface fish in either normoxic or hypoxic laboratory conditions. Thus, cavefish exhibit a complex molecular response to hypoxia: some oxygen sensing genes are upregulated, others are not changed, and some of the latter genes may be insensitive to oxygen depletion because they are already expressed at maximal levels in normoxic cavefish.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69109/elife-69109-fig7-v2.jpg)
 
-**Figure 7.:** Bars indicate qPCR fold difference over surface fish in normoxic condition. Error bars: range of fold change. Asterisks from left to right: p < 0.0001, p < 0.0001, p = 0.0044, p = 0.0306, p = 0.453, p = 0.0155, p = 0.0083, p = 0.0306, p = 0.0002, and p = 0.0003. N = 6 for each determination. Statistics by one-way ANOVA followed by Student’s t-test (igfbp1a, hif1ab, hif1a-like, hif1a-like2, hk1, g6pd, ldha, pdk1) or with unequal variance by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair (hif1aa).Figure 7—source data 1.
+**Figure 7.:** Bars indicate qPCR fold difference over surface fish in normoxic condition. Error bars: range of fold change. Asterisks from left to right: p < 0.0001, p < 0.0001, p = 0.0044, p = 0.0306, p = 0.453, p = 0.0155, p = 0.0083, p = 0.0306, p = 0.0002, and p = 0.0003. N = 6 for each determination. Statistics by one-way ANOVA followed by Student’s t-test (igfbp1a, hif1ab, hif1a-like, hif1a-like2, hk1, g6pd, ldha, pdk1) or with unequal variance by Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair (hif1aa).
 
 ## Discussion
 
@@ -109,39 +180,350 @@ In conclusion, the present investigation has revealed two potential adaptations 
 
 ## Materials and methods
 
-## Biological materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Hemoglobin subunit beta-2-like, hbb2</td>
+      <td>NCBI:GeneID 111196758, Ensembl:ENSAMXG00000031275</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Growth factor independent 1 A transcription repressor a, gfi1aa</td>
+      <td>NCBI:GeneID103029320Ensembl:ENSAMXG00000006669</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>LIM domain only 2 (rhombotin-like 1), lmo2</td>
+      <td>NCBI:GeneID111190647 Ensembl:ENSAMXG00000032986</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Lymphocyte cytosolic protein, lcp1</td>
+      <td>NCBI:GeneID103042114Ensembl:ENSAMXG00000012855</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>hbbe2</td>
+      <td>Ensembl:ENSAMXG00005017210</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Ribosomal protein L13a, rpl13a</td>
+      <td>NCBI:geneID:103025160Ensembl:ENSAMXG00000033532</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Guanine nucleotide binding protein (G protein) beta polypeptide 1b, gnb1b</td>
+      <td>NCBI:GeneID103023031 Ensembl:ENSAMXG00000040710</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Hypoxia-inducible factor one subunit alpha a, hif1aa</td>
+      <td>NCBI:GeneID103022448 Ensembl:ENSAMXG00000039550</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Hypoxia-inducible factor one subunit alpha b, hif1ab</td>
+      <td>NCBI:GeneID103033873 Ensembl:ENSAMXG00000019342</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Hypoxia-inducible factor one subunit alpha like, hif1alike, hif1al</td>
+      <td>NCBI:GeneID103027586 Ensembl:ENSAMXG00000008564</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Hypoxia-inducible factor one subunit alpha like 2, hif1alike2, hif1al2</td>
+      <td>NCBI:GeneID103041845 Ensembl:ENSAMXG00000007272</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Hexokinase 1, hk1</td>
+      <td>NCBI:GeneID103028521 Ensembl:ENSAMXG00000012670</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Glucose-6-phosphate dehydrogenase, g6pd</td>
+      <td>NCBI:GeneID103035433 Ensembl:ENSAMXG00000017509</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Lactate dehydrogenase A4, ldha</td>
+      <td>NCBI:GeneID103047177 Ensembl:ENSAMXG00000032467</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Pyruvate dehydrogenase kinase 1, pdk1</td>
+      <td>NCBI:GeneID103033744 Ensembl:ENSAMXG00000039808</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Astyanax mexicanus surface fish)</td>
+      <td>Insulin-like growth factor binding protein 1 a, igfbp1a</td>
+      <td>NCBI:GeneID103033920 Ensembl:ENSAMXG00000009512</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot Top10 chemically competent cells, E. coli</td>
+      <td>Invitrogen</td>
+      <td>Cat# 404,003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Astyanax mexicanus surface fish)</td>
+      <td>Surface fish, SF, Texas</td>
+      <td>Jeffery lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Astyanax mexicanus cave fish)</td>
+      <td>Cavefish, CF, Pachón,</td>
+      <td>Jeffery lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Digoxigenin-AP Fab fragments (sheep, polyclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11093274910</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCRII-TOPO dual promotor vector</td>
+      <td>Invitrogen</td>
+      <td>Cat# 45–0640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K</td>
+      <td>Roche</td>
+      <td>Cat# 03115887001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNaseI I, RNase-free</td>
+      <td>Thermo-Scientific</td>
+      <td>Cat# EN0521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Premix Ex Taq (Tli RNaseH Plus)</td>
+      <td>Takara</td>
+      <td>Cat# RR420L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T7 RNA polymerase</td>
+      <td>Roche</td>
+      <td>Cat#10881767001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SP6 RNA polymerase</td>
+      <td>Roche</td>
+      <td>Cat#10810274001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ReadyMix Taq PCR Reaction Mix</td>
+      <td>Sigma</td>
+      <td>Cat# P4600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dig RNA labelling Mix</td>
+      <td>Roche</td>
+      <td>Cat#11277073910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Blocking reagent</td>
+      <td>Roche</td>
+      <td>Cat# 11096176001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BM Purple AP Substrate, precipitating</td>
+      <td>Roche</td>
+      <td>Cat# 11442074001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First strand synthesis supermix</td>
+      <td>Invitrogen</td>
+      <td>Cat#18080–400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript IV VILO mastermix with ezDNase</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11766050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 15,710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>o-Dianisidine</td>
+      <td>Sigma</td>
+      <td>Cat# D9143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylhydrazine hydrochloride</td>
+      <td>Sigma</td>
+      <td>Cat#114,715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Life Technologies</td>
+      <td>Cat# 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image-J</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JMP Pro 14</td>
+      <td>SAS Institute Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CytoOne 24 well plate</td>
+      <td>USA Scientific</td>
+      <td>Cat# CC76727424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cellstar 12 well cell culture plate</td>
+      <td>Greiner</td>
+      <td>Cat# 665,180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Netwell inserts</td>
+      <td>Corning</td>
+      <td>Cat# 3,478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hypoxia chamber, ProOx Model P110</td>
+      <td>BioSpherix</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Biological materials
 
 Astyanax mexicanus surface fish and cavefish were obtained from laboratory stocks descended from collections in Balmorhea Springs State Park, Texas and Cueva de El Pachón, Tamaulipas, Mexico respectively. Fish were raised in a constant flow culture system as described previously (Jeffery et al., 2000; Ma et al., 2021). Embryos were obtained by natural spawning and reared at 23 °C. Fish handling and husbandry protocols were approved by the University of Maryland Animal Care and Use Committee (IACUC #R-NOV-18–59) (Project 1241065–1) and conformed to National Institutes of Health guidelines.
 
-## Generation of reciprocal crosses
+### Generation of reciprocal crosses
 
 The offspring of reciprocal crosses were generated by placing a female cavefish and a male surface fish or a female surface fish and a male cavefish together in a tank and inducing spawning by increased feeding and water temperature (Ma et al., 2021). Controls were generated by crossing a surface fish male and surface fish female and a cavefish male and cavefish female.
 
-## Quantification of circulating blood cells
+### Quantification of circulating blood cells
 
 The number of circulating blood cells was analyzed in surface fish and cavefish larvae immobilized by treatment with 2 µg ml–1 tricaine buffered with Tris to pH 7.0 (Western Chemical, Inc, Ferndale, WA, USA) at 36 hr post-fertilization (hpf) and placed in water on a concave microscope slide. Blood flow was imaged as cells flowed through the Duct of Cuvier (Isogai et al., 2001) for 10 s using a stereoscope (Olympus SZX12) or a compound microscope (Zeiss, Axioskop2) with ×50 magnification and a 5 MP, Color, AmScope Microscope Eyepiece Camera (MD500). Recordings were captured with Photobooth on a Macbook computer via USB (OS 10.13.6). Videos were rendered into separate frames in Adobe Photoshop (CC2017, Adobe Inc, San Jose, CA, USA) and processed and analyzed in Image-J (Schindelin et al., 2012). After conversion to 32 bit, a data image showing the movement of particles was created by subtracting two frames 0.15 s apart. This data image was used in the plugin TrackMate (Tinevez et al., 2017) to analyze the number of moving blood cells in a region of interest (ROI) covering 50% or more of the blood stream over the yolk (150 × 150 pixels). Using the LoG detector, moving blood cells were automatically detected by setting the “blob diameter” to five and the threshold to 2. An automatic quality threshold was used to obtain the number of circulating blood cells and checked against the recording for accuracy. The blood flow of larvae from at least eight different clutches of eggs per morph were analyzed.
 
-## Staining and quantification of erythrocytes
+### Staining and quantification of erythrocytes
 
 Red blood cells were stained at 36 hpf with 0.6 mg ml–1 o-dianisidine (Sigma-Aldrich, St. Louis, MO, USA), 0.01 M sodium acetate (pH 4.5), 0.65% H2O2 for 15 min in the dark (Iuchi and Yamamoto, 1983). The stained embryos were rinsed in phosphate buffered saline (PBS), fixed in 4% paraformaldehyde (PFA), and imaged as described below for in situ hybridization × 50 magnification. The number of blood cells were counted manually in an ROI (150 × 150 pixels) by hand. Larvae from three separate clutches of eggs were used per morph.
 
-## In situ hybridization
+### In situ hybridization
 
 In situ hybridizations were performed using probes to the hemoglobin subunit beta-2-like (hbb2), growth factor independent 1 A transcription repressor (gfi1aa), LIM domain only 2 (lmo2), or lymphocyte cytosolic protein 1 (lcp1) genes. Genes were cloned from a 24 hpf surface fish cDNA library and 10 hpf, 24 hpf and 30 hpf cavefish cDNA libraries using the pCRII TOPO dual promoter vector (ThermoFisher Scientific, Waltham, MA, USA) transformed into One shot Top10 cells and the following primers: hbb2 (24 hpf SF; ENSAMXG00000031275: 5’-gcaggacaagtagaaacctcaaagtc-3’ and 5’-tttcgtaagggcagagcctaca-3’), gfi1aa (24 hpf CF; ENSAMXG00000006669:5’-gaaggtctgcgctcgtgatatt-3’ and 5’- agttatccgcggtgtgaacag-3’), lmo2 (10 hpf CF; ENSAMXG00000032986: 5’-ggcctctacaatcgagaggaaa-3’ and 5’ taccaagttgccgtttagtttgg-3’), and lcp1 (36 hpf CF; ENSAMXG00000012855: 5’-aggccttcagcaaagttgatgtg-3’ and 5’-ttcaggtcctctgcaccgatatt-3’). DIG-labeled probes were made using SP6 or T7 transcription kits (Roche, Mannheim, Germany) from linearized plasmid or, in the case of gfi1aa, from a PCR product made with the cloned cDNA as template and the above-mentioned primers, after a RNA-polymerase promoter site was added to the 5’ end.
 
 In situ hybridizations were performed as previously described (Ma et al., 2014). Briefly, stored (–20 °C) 4% PFA fixed and methanol dehydrated embryos were rehydrated stepwise into PBS, fixed with 4% PFA, digested with proteinase K, fixed with 4% PFA, and hybridized with probes at 60 °C for 16 hr. Un-hybridized probe was removed by 2 X and 0.2 X SSCT (150 mM sodium chloride; 15 mM sodium citrate; 0.1% Tween 2) stringency washes followed by incubation in MABT blocking solution (Roche) and subsequently with anti-DIG-AP Fab fragments (Roche). Embryos were rinsed in MABT buffer and PBS, equilibrated in AP buffer, and stained with BM-Purple (Roche). The stained embryos were imaged and photographed using a Zeiss Discovery V20 stereoscope with a Zeiss AxioCam HRc camera.
 
-## Induction of hemolytic anemia with phenylhydrazine
+### Induction of hemolytic anemia with phenylhydrazine
 
 Phenylhydrazine hydrochloride (PHZ; Sigma-Aldrich, St. Louis, MO, USA) was used to induce hemolytic anemia (Houston et al., 1988). At 14 hpf, 20 manually de-chorionated embryos were placed in clean fish system-water containing a particular concentration of PHZ or clean fish system water as a control. Embryos were incubated with PHZ for 28 hr when blood circulation was clearly visible over the yolk. Embryos were fixed and used for in situ hybridization with a hbb2 probe. In a separate experiment, embryos were imaged on a Zeiss Axioskop2 microscope with a Axiocam 503 camera and measurements of tail length (the axial length from the posterior end of the yolk mass to the tip of the tail) were made in Image-J. After imaging, PHZ treated embryos and controls were stained with o-dianisidine and imaged for blood cell quantification as described above. Because low numbers of blood cells were present after PHZ treatment, blood cells were counted in a larger area covering the whole anterior side of the yolk in lateral view (400 pixels wide). Larvae of two separate clutches of eggs were used per morph for the latter experiment.
 
 Surface fish larvae were also treated with PHZ at 34 hpf for 1 hr, rinsed extensively for 1 hr, imaged with a microscope as described above, and left for 16 hr before imaging again. At the end of the experiment, larvae were stained with o-dianisidine. The length of the post-anal tail was measured using Image-J and growth determined as the differential between the two time points. Blood cell number was determined by manual counting as described above.
 
-## Laboratory hypoxia treatment and growth determinations
+### Laboratory hypoxia treatment and growth determinations
 
 A hypoxia chamber (ProOx Model P110, BioSpherix, Parish, NY, USA) was used to create a hypoxic laboratory environment in which oxygen was reduced by nitrogen gas (HP, Airgas, Hyattsville, MD, USA). At 30 hpf larvae were exposed to hypoxia (1 mg/L oxygen) for 18 hr or to normoxia (outside of the chamber). Larvae were placed individually in wells of a 24-well plate (CytoOne, USA scientific, Ocala, FL, USA) containing 2 ml clean fish system-water. Twenty-four larvae were used per treatment for surface fish and 48 larvae for cavefish from two separate clutches of eggs per morph. To measure post-anal tail growth, each larva was imaged before placement in a well and again at the end of the treatment using a microscope as described above. Image-J was used to measure post-anal tail length (Figure 6A) and growth determined as the differential between the two time points. To measure eye size, eye diameter was measured after the 18 hr. hypoxia or normoxia treatment with ImageJ. After imaging, larvae were stained with o-dianisidine and blood cells were counted from images as described above.
 
-## RNA isolation and quantitative real-time polymerase chain reactions
+### RNA isolation and quantitative real-time polymerase chain reactions
 
 To compare the extent of early erythropoiesis between cavefish and surface fish, the expression of hemoglobin beta embryonic 2 (hbb2) and hbbe2 (hbbe2 encodes an A. mexicanus embryonic β-hemoglobin most similar to zebrafish hbbe1; Ganis et al., 2012) genes and the gfi1aa gene were quantified at 10, 24 and 60 hpf. Three potential reference genes were evaluated: ribosomal protein L13a (rpl13a), actin alpha 1 (acta1b), and lsm12a. Only rpl13a did not vary over time or between surface and cavefish and was therefore used as the final reference gene. RNA was extracted from 30 embryos with Trizol (ThermoFisher), treated with RNase-free DNase I (ThermoFisher), cleaned and concentrated by phenol/chloroform extraction and precipitated with ammonium acetate and ethanol. Poly(A)-primed cDNA was made with SuperScript III First Strand Synthesis SuperMix (ThermoFisher) and used in qPCR with Takara SYBR Premix Ex Taq (Tli RNaseH Plus) (Takara Bio USA Inc, Mountain View, CA, USA) and LC480 (Roche).
 
@@ -149,8 +531,117 @@ In the laboratory hypoxia experiments, RNA was isolated from 24 larvae placed in
 
 The amounts of hypoxia-inducible factor 1 (hif1aa) and its duplicate gene hif1ab, hypoxia-inducible factor 1-like (hif1alike) and its duplicate gene hif1alike2 (equivalent to hif3a), insulin growth factor binding protein 1a (igfbp1a), hexokinase 1 (hk1), glucose-6-phosphate dehydrogenase (g6pd), lactate dehydrogenase a (ldha), and pyruvate dehydrogenase kinase 1 (pdk1) were quantified by qPCR in surface fish and cavefish larvae exposed to hypoxic or normoxic conditions. We evaluated rpl13a, acta1b, endoplasmic reticulum protein 44 (erp44) and guanine nucleotide binding protein ß polypeptide 1b (gnb1b) as potential reference genes: gnb1b had Ct values closest to the Ct values of the queried genes, did not differ between normoxic and hypoxic surface fish or cavefish, and was chosen as a reference gene. RNA was extracted from 24 embryos and treated with ezDNase and cDNA was made with SuperScript IV VILO mastermix (ThermoFisher). The primers used in qPCR analysis are shown in Table 2.
 
+**Table 2.**
+ Primer sequences used for gene expression analysis with qPCR.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>rpl13a</td>
+      <td>GeneID:103025160</td>
+      <td>ENSAMXG00000033532</td>
+      <td>caagtactgctgggccacaaag</td>
+      <td>aggaaagccaggtacttcaatttgtt</td>
+    </tr>
+    <tr>
+      <td>gfi1aa</td>
+      <td>GeneID:103029320</td>
+      <td>ENSAMXG00000006669</td>
+      <td>agtgtgtgtgatcgaccttcaga</td>
+      <td>ggacattcttcattgtctggtgacg</td>
+    </tr>
+    <tr>
+      <td>hbbe2</td>
+      <td></td>
+      <td>ENSAMXG00005017210*</td>
+      <td>taaatccctctgcagggctctgat</td>
+      <td>cctgatcacctccggattagccataata</td>
+    </tr>
+    <tr>
+      <td>hbb2</td>
+      <td>GeneID:111196758</td>
+      <td>ENSAMXG00000031275</td>
+      <td>gctcacggtgtagttgttctc</td>
+      <td>ggatccacgtgcagtttctc</td>
+    </tr>
+    <tr>
+      <td>gnb1b</td>
+      <td>GeneID:103023031</td>
+      <td>ENSAMXG00000040710</td>
+      <td>ctctgctaaactgtgggatgtg</td>
+      <td>ccgttagggaagaaacagatgg</td>
+    </tr>
+    <tr>
+      <td>hif1aa</td>
+      <td>GeneID:103022448</td>
+      <td>ENSAMXG00000039550</td>
+      <td>cagcaccaacacacacactcaa</td>
+      <td>gtcactgaccaccagtcctaca</td>
+    </tr>
+    <tr>
+      <td>hif1ab</td>
+      <td>GeneID:103033873</td>
+      <td>ENSAMXG00000019342</td>
+      <td>gcatgggccttacacagttt</td>
+      <td>gcaccagcatttccctcatt</td>
+    </tr>
+    <tr>
+      <td>hif1alike</td>
+      <td>GeneID:103027586</td>
+      <td>ENSAMXG00000008564</td>
+      <td>tgcctcacctgcttctaactct</td>
+      <td>agctgtattctcctctggcttga</td>
+    </tr>
+    <tr>
+      <td>hif1alike2</td>
+      <td>GeneID:103041845</td>
+      <td>ENSAMXG00000007272</td>
+      <td>cattctaagttccagcccatcc</td>
+      <td>cattggctgcaccatctctc</td>
+    </tr>
+    <tr>
+      <td>hk1</td>
+      <td>GeneID:103028521</td>
+      <td>ENSAMXG00000012670</td>
+      <td>ctcaatcggctgaaggacaacaa</td>
+      <td>agccgtcgagaatactgtggat</td>
+    </tr>
+    <tr>
+      <td>g6pd</td>
+      <td>GeneID:103035433</td>
+      <td>ENSAMXG00000017509</td>
+      <td>tcctactctgtggtggttgtt</td>
+      <td>gagacggtctgcttcagtatct</td>
+    </tr>
+    <tr>
+      <td>ldha</td>
+      <td>GeneID:103047177</td>
+      <td>ENSAMXG00000032467</td>
+      <td>tgtggtgtccaacccagttgata</td>
+      <td>agcgagctgagtccaagttagt</td>
+    </tr>
+    <tr>
+      <td>pdk1</td>
+      <td>GeneID:103033744</td>
+      <td>ENSAMXG00000039808</td>
+      <td>tcctcaaccagcacactcttct</td>
+      <td>agtgacacgacagtgaggatcaa</td>
+    </tr>
+    <tr>
+      <td>igfbp1a</td>
+      <td>GeneID:103033920</td>
+      <td>ENSAMXG00000009512</td>
+      <td>cccaacagaagctggaagataag</td>
+      <td>ctgcccatccagagttgattc</td>
+    </tr>
+  </tbody>
+</table>
+
+_*blasts to the cavefish genome but also cloned from surface fish in this study._
+
 A ΔCt for each gene was calculated by subtracting the average Ct value of each reference gene. For comparison of gene expression in cavefish to surface fish over time, ΔΔCt was calculated by subtracting the average ΔCt of surface fish at 10 hpf from each ΔCt for each gene. For comparison of gene expression under normoxic and hypoxic conditions, the ΔCt of surface fish under normoxic conditions was subtracted from the ΔCt for each gene. For graphical representation, the fold change was calculated as 2-(ΔΔCt), where values > 1 show an increase and values < 1 a decrease. Variation was expressed as the range of fold change 2- (ΔΔCt+stdevΔΔCt) for the upper value or 2- (ΔΔCt-stdevΔΔCt) for the lowest value.
 
-## Statistics
+### Statistics
 
 Statistics were done using JMP pro 14 (SAS Institute Inc). Normal distribution of data was determined using the Shapiro Wilk test. Comparison of blood cell number was done using Wilcoxon/Kruskal-Wallis Rank Sums test (1 F N = 72, 1 G N = 36; p < 0.05). Expression as ΔΔCt of hbb2, hbbe2, and gfi1aa over time was analyzed per gene with a two-way ANOVA followed by pairwise comparison with Student’s t-test (hbb2 N = 8, hbbe2 N = 4, gfi1aa N = 3; p < 0.05). Comparisons of blood cell number in reciprocal hybridization experiments were analyzed using a Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair (N = 20; p < 0.05). Differences in tail length between surface fish and cavefish at different concentrations of PHZ were analyzed using Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for surface fish (SF) or cavefish (CF) for each pair (SF 0, 2 mg L–1 N = 23, SF 1, 3 mg L–1 N = 24, CF 0, 1, 2 mg L–1 N = 24, CF 3 mg L–1; p < 0.05). Comparison of blood cell number at different concentrations of PHZ were analyzed with Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair (SF 0, 1, 2 and CF 3 mg L–1 N = 20, SF 3 mg L–1 N = 10, CF 0 mg L–1 N = 19, CF 1 mg L–1 N = 21, CF 2 mg L–1 N = 22; P < 0.05). Post-anal tail growth at 0 and 5 mg L–1 PHZ was analyzed with a Student’s t-test (0 mg L–1 N = 19, 5 mg L–1 N = 20; P < 0.05) and cell number with Wilcoxon/Kruskal-Wallis Rank Sums test (N = 10; P < 0.05). Post-anal tail growth under normoxic and hypoxic conditions was analyzed with Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each SF and CF pair (SF-N and SF-H N = 23, CF-N N = 46 and CF-H N = 47; P < 0.05). Cell number under normoxic and hypoxic conditions was analyzed with one-way ANOVA followed by Student’s t-test (SF-N N = 22, SF-H N = 21, CF-N N = 47, CF-H N = 45; P < 0.05). Eye diameters were analyzed by one-way ANOVA followed by Student’s t-test (SF-N N = 18, SF-H N = 14, CF-N N = 30, CF-H N = 28; P < 0.05). Expression as ΔΔCt of genes under normoxic and hypoxic conditions was analyzed per gene by one-way ANOVA followed by Student’s t-test or when variances where unequal with Wilcoxon/Kruskal-Wallis Rank Sums test followed by Wilcoxon for each pair (N = 6; P < 0.05).

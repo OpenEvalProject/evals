@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Department of Medicine, University of California, San Diego San Diego United States
+1. Department of Medicine, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
 ## Abstract
 
-Previously, we showed that propranolol reduces experimental murine cerebral cavernous malformations (CCMs) and prevents embryonic caudal venous plexus (CVP) lesions in zebrafish that follow mosaic inactivation of ccm2 (Li et al., 2021). Because morpholino silencing of the β1 adrenergic receptor ( adrb1 ) prevents the embryonic CVP lesion, we proposed that adrb1 plays a role in CCM pathogenesis. Here, we report that adrb1 zebrafish exhibited 86% fewer CVP lesions and 87% reduction of CCM lesion volume relative to wild type brood mates at 2dpf and 8–10 weeks stage, respectively. Treatment with metoprolol, a β1 selective antagonist, yielded a similar reduction in CCM lesion volume. -/- Adrb1 zebrafish embryos exhibited reduced heart rate and contractility and reduced CVP blood flow. Similarly, slowing the heart and eliminating the blood flow in CVP by administration of 2,3-BDM suppressed the CVP lesion. In sum, our findings provide genetic and pharmacological evidence that the therapeutic effect of propranolol on CCM is achieved through β1 receptor antagonism. -/-
+Previously, we showed that propranolol reduces experimental murine cerebral cavernous malformations (CCMs) and prevents embryonic caudal venous plexus (CVP) lesions in zebrafish that follow mosaic inactivation of ccm2 (Li et al., 2021). Because morpholino silencing of the β1 adrenergic receptor (adrb1) prevents the embryonic CVP lesion, we proposed that adrb1 plays a role in CCM pathogenesis. Here, we report that adrb1-/- zebrafish exhibited 86% fewer CVP lesions and 87% reduction of CCM lesion volume relative to wild type brood mates at 2dpf and 8–10 weeks stage, respectively. Treatment with metoprolol, a β1 selective antagonist, yielded a similar reduction in CCM lesion volume. Adrb1-/- zebrafish embryos exhibited reduced heart rate and contractility and reduced CVP blood flow. Similarly, slowing the heart and eliminating the blood flow in CVP by administration of 2,3-BDM suppressed the CVP lesion. In sum, our findings provide genetic and pharmacological evidence that the therapeutic effect of propranolol on CCM is achieved through β1 receptor antagonism.
 
 ## Introduction
 
@@ -26,31 +26,55 @@ Anecdotal case reports (Moschovi et al., 2010; Reinhard et al., 2016; Goldberg e
 
 ## Results
 
-## β1AR is important in for development of CVP cavernomas
+### β1AR is important in for development of CVP cavernomas
 
 We previously reported that morpholino silencing of adrb1 rescued CVP cavernomas in zebrafish embryos (Li et al., 2021a). Because of morpholinos potential for off target effects (Robu et al., 2007; Eisen and Smith, 2008), we sought to confirm the β1AR’s potential involvement in CCM pathogenesis by inactivating adrb1. We used CRISPR-Cas9 to generate an 8 bp deletion resulting in a premature stop codon at 57 bp (Figure 1A). To exclude potential off-target effects, the top 20 potential off-target sites predicted by Cas-OFFinder (https://www.rgenome.net/cas-offinder) (Supplementary file 2) were sequenced and were not mutated (data not shown). We intercrossed adrb1+/- +/-1 offspring resulting in adrb1-/- zebrafish embryos that displayed reduced cardiac contractility (Videos 1 and 2) and decreased heart rate (Figure 1—figure supplement 1A). Similar to Adrb1-/- mice (Rohrer et al., 1996), adrb1-/- zebrafish exhibited a blunted chronotropic response to a β1AR agonist, isoprenaline hydrochloride (Figure 1B). Adrb1-/- embryos had no obvious defects in vascular development (Figure 1—figure supplement 2) and they survived to adulthood and were fertile.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/99455/elife-99455-fig1-v1.jpg)
+
+**Figure 1.:** (A) The targeted adrb1 allele shows an 8-nucleotide deletion producing a pre-stop codon. Adrb1 null cDNA is predicted to encode truncated adrb1 protein. The wild type adrb1 protein contains 390 amino acids, while the predicted adrb1 null protein would contain 2 missense amino acids (gray bar) and would terminate after amino acid 18. (B) Isoprenaline hydrochloride (50µM) treatment at 72hpf lead to a heart rate increase in zebrafish, while the delta heart rate in adrb1-/- is significantly smaller than that of wild type. Heartbeat was counted in 18 embryos of each group before and immediately after adding the chemical. Paired two-tailed t test, p<0.0001. (C) After ccm2 CRISPR injection, representative bright field and confocal images of 2dpf Tg(fli1:EGFP) embryos show that wild type embryos display CVP dilation, while adrb1-/- embryos were resistant to this defect. Arrowhead and arrows indicate the dilation in CVP. Scale bar: 500 µm (bright field), 100 µm (confocal). (D) Paired two-tailed t test shows that percentage of embryos displaying CVP dilation is significantly smaller on adrb1-/- background than that of control embryos. p=0.0012. 345 adrb1-/- embryos and 237 control embryos from four experiments were examined for CVP cavernoma.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99455/elife-99455-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) adrb1-/- embryos displayed a decrease of heart rate compared to wild type embryos at 28hpf. The heartbeats of 26 adrb1-/- and 25 wild type embryos were counted over a 15-second period. Unpaired two-tailed t test was performed and p<0.0001. (B) adrb1-/- embryos showed significant decrease of RBC velocity compared to wild type embryos. Time-lapses on a single z-plane was performed at the frequency of 160.97ms/frame (372 frames/minute) on Fast Airyscanning. 10 embryos from each group were scanned, and 3 red blood cells were traced from each embryo. The measurement was performed using ImageJ. Unpaired two-tailed t-test, p=0.0346.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/99455/elife-99455-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A and B) Representative bright field pictures of adrb1-/- (A) and wild type (B) embryos at 36hpf. Scale bar: 500 µm. (C and D) Representative confocal pictures of CVP in adrb1-/- (C) and wild type (D) embryos at 36hpf. Red and blue brackets indicate the aorta and CVP respectively. Scale bar:100 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/99455/elife-99455-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/99455/elife-99455-video2.mp4.jpg)
+
 We intercrossed adrb+/- +/-and injected one-cell stage embryos with ccm2 CRISPR and blindly scored the presence of CVP cavernomas at 48hpf. As expected we observed CVP cavernomas in 28% of adrb1+/+ embryos. In sharp contrast only 3% of adrb1-/- embryos exhibited cavernomas (Figure 1C and D) indicating that loss of β1AR prevents CVP cavernomas. these observations demonstrate that the β1AR is required for embryonic CVP cavernoma formation.
 
-## β1AR mediates formation of adult CCM in the brain
+### β1AR mediates formation of adult CCM in the brain
 
 Adult ccm2 CRISPR zebrafish display highly penetrant CCMs throughout the central nervous system (Li et al., 2021b). Brains from adult ccm2 CRISPR fish on adrb1-/- (12 brains) or wild type (13 brains) background were treated with CUBIC (clear, unobstructed brain/body imaging cocktails and computational analysis; Susaki et al., 2015), and these transparent brains were then scanned with light-sheet microscopy and lesions were enumerated and volumes were estimated with NIH ImageJ. While the typical multi-cavern CCMs were observed in brains on wild type background appearing as blood filled dilated vessels (Figure 2A through C), ccm2 CRISPR adrb1-/- fish exhibited an 87% reduction in lesion volume (Figure 2D through G). Thus, genetic inactivation of β1AR prevented CCMs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99455/elife-99455-fig2-v1.jpg)
 
-**Figure 2.:** ccm2 CRISPR zebrafish.(A through F) Representative light sheet microscopy scanning pictures of brains from ccm2 CRISPR adult zebrafish of adrb1 (+/+A through C) and of adrb1 (-/-D through F) onTg(fli1:EGFP) background. Brains from ccm2 CRISPR on wild type background show lesions indicated by arrows (A through C), while brains from ccm2 CRISPR on adrb1 do not show lesions (-/-D through F). Scale bar: 1 mm. (G) Statistical analysis of total lesion volume by unpaired two-tailed t test. p=0.0005. 12 adrb1 brains and 13 -/-adrb1 brains were analyzed.+/+
+**Figure 2.:** (A through F) Representative light sheet microscopy scanning pictures of brains from ccm2 CRISPR adult zebrafish of adrb1+/+ (A through C) and of adrb1-/- (D through F) onTg(fli1:EGFP) background. Brains from ccm2 CRISPR on wild type background show lesions indicated by arrows (A through C), while brains from ccm2 CRISPR on adrb1-/- do not show lesions (D through F). Scale bar: 1 mm. (G) Statistical analysis of total lesion volume by unpaired two-tailed t test. p=0.0005. 12 adrb1-/- brains and 13 adrb1+/+ brains were analyzed.
 
-## A selective β1AR antagonist prevents CCMs
+### A selective β1AR antagonist prevents CCMs
 
 The non-selective β blocker propranolol reduces lesion volume in murine CCM models (Li et al., 2021a; Oldenburg et al., 2021). To ascertain whether propranolol had a similar effect in the zebrafish model, the chemical treatment was started from larval stage at concentration which allows the fish to develop to two months for CCM inspection. We added 12.5 µM propranolol to or vehicle control to fish water of ccm2 CRISPR zebrafish starting at 3 weeks of age. The water was refreshed daily with drug or vehicle until fish were sacrificed and brains were examined as described (Figure 3A). Quantification based on light-sheet scanning of zebrafish brains (Figure 3B) showed that compared to vehicle-treated controls (Figure 3C, D and E), propranolol-treated groups displayed a 94% reduction in CCM lesion volume (Figure 3F, G and H). Similarly, administration of 50 µM racemic metoprolol a β1-selctive antagonist produced a similar (98%) reduction in lesion volume (Figure 3B, I, J and K). Importantly, neither drug at the doses administered reduced the growth of the fish or the volume of their brains. In sum, both genetic and pharmacological loss of β1 adrenergic receptor signaling markedly reduces the lesion burden in the zebrafish ccm2 CRISPR model of CCM.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99455/elife-99455-fig3-v1.jpg)
 
-**Figure 3.:** ccm2 CRISPR zebrafish.(A) A diagram outlines the drug treatment experiment, CUBIC treatment and following recording of CCMs in adult zebrafish brain. The chemical treatment was started from week 3 with 12.5 µM propranolol or 50 µM metoprolol, and increased to 25 µM propranolol and 100 µM metoprolol, respectively from week 5. The fish water with chemicals or vehicle control are refreshed on a daily basis. (B) Statistical analysis of lesion volume by one-way ANOVA followed by Tukey’s multiple comparison test. p<0.01. 12 propranolol treated, 12 metoprolol treated, and 13 vehicle brains were analyzed. (C through K) Representative light sheet microscopy scanning pictures of brains from ccm2 CRISPR adult zebrafish onTg(fli1:EGFP) background. In controls without chemical treatment (C, D, and E) there were vascular anomalies indicated by arrows. Neither propranolol (F, G, and H) nor metoprolol (I, J, and K) treated fish showed vascular lesions in the brain. Scale bar: 1 mm.
+**Figure 3.:** (A) A diagram outlines the drug treatment experiment, CUBIC treatment and following recording of CCMs in adult zebrafish brain. The chemical treatment was started from week 3 with 12.5 µM propranolol or 50 µM metoprolol, and increased to 25 µM propranolol and 100 µM metoprolol, respectively from week 5. The fish water with chemicals or vehicle control are refreshed on a daily basis. (B) Statistical analysis of lesion volume by one-way ANOVA followed by Tukey’s multiple comparison test. p<0.01. 12 propranolol treated, 12 metoprolol treated, and 13 vehicle brains were analyzed. (C through K) Representative light sheet microscopy scanning pictures of brains from ccm2 CRISPR adult zebrafish onTg(fli1:EGFP) background. In controls without chemical treatment (C, D, and E) there were vascular anomalies indicated by arrows. Neither propranolol (F, G, and H) nor metoprolol (I, J, and K) treated fish showed vascular lesions in the brain. Scale bar: 1 mm.
 
-## Loss of β1AR does not prevent increased klf2a expression in ccm2 null embryos
+### Loss of β1AR does not prevent increased klf2a expression in ccm2 null embryos
 
 Inactivation of CCM genes leads to increased endothelial KLF2 expression (Renz et al., 2015; Zhou et al., 2015), a transcription factor important in cavernoma formation (Zhou et al., 2016; Li et al., 2021b). Nevertheless, silencing of adrb1 did not prevent the expected increased endothelial klf2a (Renz et al., 2015) expression in ccm2 morphant Tg(klf2a:H2b-EGFP) fish in which the nuclear EGFP expression is driven by the klf2a promoter (Figure 4A, B and C). We previously reported that mosaic expression of KLF2a occurs in tnnt morphant 2 dpf ccm2 CRISPR embryos, as judged by a widely variable in endothelial klf2a reporter expression (Li et al., 2021b). Nevertheless, combination of tnnt2a morphant with the adrb1 morphant (Figure 4D) or control morphant (Figure 4E) ccm2 CRISPR Tg(klf2a:H2b-EGFP) embryos both displayed a similar widely variable klf2a reporter intensity (Figure 4F) indicative of similar mosaicism. Similarly, merely slowing the heart and reducing contractility with 2,3-butanedione monoxime (BDM; Bartman et al., 2004) also prevented CVP cavernomas (Figure 4G, Figure 4—figure supplement 1). Thus, silencing β1AR does not prevent the generalized increase in endothelial KLF2a in ccm2 morphants nor does it prevent the mosaic KLF2a increase in ccm2 CRISPR zebrafish.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/99455/elife-99455-fig4-v1.jpg)
+
+**Figure 4.:** Tg(klf2a:H2b-EGFP; kdrl:mcherry) embryos were injected and nuclear EGFP signal in mcherry labeled vascular endothelial cells is recorded by confocal. Representative images from each group are shown. (A) Control MO alone injected embryos were used as control. (B and C) Ccm2 morphant embryos co-injected with adrb1 MO (B) or control MO (C) both displayed significant increase of endothelial nuclear EGFP intensity (p<0.0001) compared to that of control (A), and there is no significant difference between them. (D and E) All the ccm2 CRISPR embryos were co-injected with tnnt MO, which are absent of blood flow. Compared to that of control (A), ccm2 CRISPR embryos co-injected with adrb1 MO (D) or control MO (E) both displayed a mosaic increase of nuclear EGFP intensity of vascular endothelial cells compared to control (A) (<0.0001), and there is no significant difference between them. Arrows indicated the endothelial nuclei with significant higher EGFP intensity than those indicated by arrowheads. Scale bar:100 µm. (F) EGFP intensity of endothelial nuclei were quantified with Image J. The number of analyzed nuclei were: 63 from 10 embryos (control MO), 70 from 10 embryos (ccm2 MO + adrb1 MO), 77 from 10 embryos (ccm2 MO + control MO), 93 from 13 embryos (ccm2 CRISPR +adrb1 MO), and 94 from 13 embryos (ccm2 CRISPR +control MO). Statistical analysis is performed by one-way ANOVA followed by Tukey’s multiple comparison test. (G) At 2dpf, 2,3-BDM prevented the CVP cavernoma dramatically. 164 embryos in 2,3-BDM treated group and 177 in control group were used for Two-tailed paired t-test. p=0.0013.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99455/elife-99455-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The heartbeats of 14 embryos treated with 2,3-BDM and 14 vehicle-treated embryos were counted over a 1-minute period. Two-tailed paired t-test was used for statistical analysis. p<0.0001.
 
 ## Discussion
 
@@ -60,40 +84,44 @@ Case reports (Moschovi et al., 2010; Miquel et al., 2014; Reinhard et al., 2016;
 
 Consistent with the Adrb1KO mice (Rohrer et al., 1996), the adrb1-/- zebrafish embryos displayed the decreased chronotropic response to a beta-adrenergic agonist, isoprenaline, and decreased basal heart rate compared to that of adrb1+/+ brood mates; however, CVP morphology of adrb1-/- embryo was not perturbed (Figure 1—figure supplement 2). adrb1-/- embryo also displayed a marked decrease of blood flow in CVP (Videos 3 and 4, and Figure 1—figure supplement 1B), A similar reduction of heart rate and contractility by 2,3-BDM, a cardiac myosin ATPase inhibitor, prevented CVP dilation (Figure 4F). We previously found that arresting blood flow prevents aberrant intussusceptive angiogenesis and the resulted CVP cavernomas in ccm2 CRISPR embryos (Li et al., 2021b). Taken together, these data suggest that reduced blood flow secondary to reduced cardiac function accounts for the protective effect of loss of β1AR signaling on CVP lesions and on CCM. To further confirm that reduced blood flow underlies the role of β1AR antagonism in rescuing these vascular defects, chemicals such as cardiac glycosides or phosphodiesterase inhibitors could be employed to restore cardiac pumping function in adrb1-/- embryos. Importantly, although β1AR are highly expressed in cardiomyocytes and contribute to increased cardiac output (Rohrer et al., 1999), β1ARs are also expressed in other tissues (Osswald and Guimarães, 1983; Guimarães and Moura, 2001) including endothelial cells of vascular anomalies in patients (Stănciulescu et al., 2021). Thus, future studies will be required to delineate the tissue-specific contributions of β1AR signaling to CCM pathogenesis.
 
+![Video 3.](https://cdn.elifesciences.org/articles/99455/elife-99455-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/99455/elife-99455-video4.mp4.jpg)
+
 ## Materials and methods
 
-## Zebrafish lines and handling
+### Zebrafish lines and handling
 
 Zebrafish were maintained and with approval of Institutional Animal Care and Use Committee of the University of California, San Diego. The following mutant and transgenic lines were maintained under standard conditions: Tg(fli1:EGFP)y1 (Lawson and Weinstein, 2002), Tg(klf2a:H2b-EGFP) (Heckel et al., 2015), and Tg(kdrl:mcherry)is5 (Wang et al., 2010). adrb1-/- zebrafish was obtained by co-injection of Cas9 protein (EnGen Spy Cas9 NLS, M0646, NEB) with gRNA targeting adrb1. Genotyping of adrb1-/- was performed with forward primer (5’-AGAGCAGAGCGCGGATGGAA-3’) and reverse primer (5’-GATCCATACATCCAGGCT-3’).
 
-## Plasmids and morpholino
+### Plasmids and morpholino
 
 pCS2-nls-zCas9-nls (47929) and pT7-gRNA (46759) were bought from Addgene. The CRISPR RNA (crRNA) sequences used in this study are as follow: ccm2-1 5’-GGTGTTTCTGAAAGGGGAGA-3’, ccm2-2 5’- GGAGAAGGGTAGGGATAAGA-3’, ccm2-3 5’-GGGTAGGGATAAGAAGGCTC-3’, ccm2-4 5’-GGACAGCTGACCTCAGTTCC-3’, adrb1 5’-GACTCTAAACGCGCCACGG-3’. Target gRNA constructs were generated as described before (Jao et al., 2013). Morpholino sequence used in this study are: adrb1 (5'-ACGGTAGCCCGTCTCCCATGATTTG-3') (Steele et al., 2011), ccm2 (5'-GAAGCTGAGTAATACCTTAA CTTCC-3') (Mably et al., 2006), tnnt2a (5'-CATGTTTGCTCTGATCTGACACGCA-3')(Sehnert et al., 2002), control (5'- CCTCTTACCTCAGTTACAATTTATA-3').
 
-## RNA synthesis
+### RNA synthesis
 
 The pCS2-nls-zCas9-nls plasmid containing Cas9 mRNA was digested with NotI enzyme, followed by purification using a Macherey-Nagel column, serving as the template. The capped nls-zCas9-nls RNA was synthesized using the mMESSAGE mMACHINE SP6 Transcription Kit from ThermoFisher Scientific. The resulting RNA was purified through lithium chloride precipitation, as per the instructions provided in the kit. For gRNA synthesis, the gRNA constructs were linearized using BamHI enzyme and purified using a Macherey-Nagel column. The gRNA was synthesized via in vitro transcription using the MEGAshortscript T7 Transcription Kit from ThermoFisher Scientific. After synthesis, the gRNA was purified by alcohol precipitation, as instructed in the same kit. The concentration of the nls-zCas9-nls RNA and gRNA was measured using a NanoDrop 1000 Spectrophotometer from Thermo Fisher Scientific, and their quality was confirmed through electrophoresis on a 1% (wt/vol) agarose gel.
 
-## Microinjection
+### Microinjection
 
 All injections were performed at 1-cell stage with a volume of 0.5 nl. The final injection concentrations are as follow: Cas9 protein (10 µM), Cas9 mRNA (750 ng/μl), gRNA 120 ng/μl, adrb1 MO (4 ng/µl), ccm2 MO (4 ng/µl), tnnt2a MO (5.3 ng/µl), control MO (4 ng/µl).
 
-## Chemical treatment
+### Chemical treatment
 
 Propranolol (P0995, TCI; 12.5 µM) and metoprolol (M1174, Spectrum; 50 µM) were used to treat the zebrafish larva from Day 21. Beginning from Day 35, adjusted concentration of propranolol (25 µM) or metoprolol (100 µM) were used to treat the juvenile fish. The chemicals were dissolved in fish water, and fish water containing chemicals were refreshed daily. Egg water without above chemicals was refreshed daily for fish used as negative control. 2,3- butanedione monoxime (BDM; 6 mM) was added to egg water of the ccm2 CRISPR embryos at 25hpf, and CVP cavernoma was observed at 2dpf.
 
-## Airyscan imaging and fluorescence intensity analysis
+### Airyscan imaging and fluorescence intensity analysis
 
 To prepare the embryos for imaging, they were first anesthetized using egg water containing 0.016% tricaine (3-amino benzoic acid ethyl ester) from Sigma-Aldrich. Subsequently, the anesthetized embryos were embedded in 1% low melting point agarose obtained from Invitrogen (product number 16520050). The imaging process was carried out using a Zeiss 880 Airyscan confocal microscope, utilizing the standard Airyscan stack mode, with a Plan-Apochromat 20 x/0.8 M27 objective. The scanning setup is as follow: Lasers (Green 488 nm: 26.0%, Red 561 nm: 15.0%), Master Gain (800), Digital Gain (1.00), Scaling X (0.415 µm), Scaling Y (0.415 µm), and Scaling Z (0.800 µm). The intensity of nuclear EGFP (enhanced green fluorescent protein) was quantified using ImageJ software. The selected background area signal was measured by running Analyze >Measure. Then the background value was subtracted by running Process >Math > Subtract. “Freehand selections” button was used for outlining the endothelial nucleus stack by stack along Z-axis. By running Analyze >Measure, the information of “Area” and “IntDen (Integrated Density)” of the selected endothelial nucleus was obtained. The average EGFP intensity of a nucleus equals to the summation of “IntDen” divided by summation of “Area”.
 
-## Heartbeat and blood flow recording
+### Heartbeat and blood flow recording
 
 Heartbeat and blood flow were recorded using Olympus MVX10. The embryos were treated with 0.004% tricaine which does not have effect on heartbeat (Langheinrich et al., 2003; Schwerte et al., 2003).
 
-## Zebrafish brain dissection, CUBIC treatment and lightsheet imaging
+### Zebrafish brain dissection, CUBIC treatment and lightsheet imaging
 
 The dissection of zebrafish brains followed the methodology described in a previous study by Gupta and Mullins, 2010. The CUBIC method was optimized based on the findings from a previous report (Susaki et al., 2015). The brains were fixed in 4% paraformaldehyde (PFA) with a pH of 7.5 for 24 hr and subsequently washed with PBS (phosphate-buffered saline) for an additional 24 hr. Following the PBS wash, the brains underwent CUBICR1 treatment at 37 °C in a water bath for 42 hr. For imaging, the samples were placed in CUBICR2 as the imaging medium and imaged using a ZEISS Lightsheet Z.1 microscope. Scanning was carried out utilizing 5 X dual illumination optics in combination with a 5 X objective.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical analysis was conducted using GraphPad Prism software. p-Values were calculated using an unpaired two-tailed Student’s t-test, unless otherwise specified. The bar graphs display the mean values along with their corresponding SEM (standard error of the mean) error bars.

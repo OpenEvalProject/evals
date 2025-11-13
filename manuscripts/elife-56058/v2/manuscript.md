@@ -36,59 +36,244 @@ Here, we identify the Type-I PDZ domain-containing Membrane-associated Guanylate
 
 ## Results
 
-## ZDHHC14 binds PSD93 in a PDZ ligand-dependent manner
+### ZDHHC14 binds PSD93 in a PDZ ligand-dependent manner
 
 Seven of 24 mouse and eight of 23 human PATs have sequences that terminate in a predicted PDZ ligand (Thomas and Hayashi, 2013a). However, only the sequence of ZDHHC14 terminates in a Type-I PDZ ligand (LSSV [Leu-Ser-Ser-Val-COOH]; Figure 1A). This LSSV sequence is perfectly conserved in vertebrates (Figure 1—figure supplement 1A,B) and might be predicted to bind Type-I PDZ-domain scaffold proteins (Hung and Sheng, 2002), many of which cluster ion channels and receptors at sites of excitability in neurons. We thus hypothesized that ZDHHC14 might use its conserved PDZ ligand to bind interacting partners and potential substrates and hence used this region as ‘bait’ to perform a yeast two-hybrid screen of a rat hippocampal cDNA library (Dong et al., 1997; Thomas et al., 2012; Figure 1A). Three unique ‘hits’ encompassed the third PDZ domain (PDZ3) of the scaffold protein PSD93 (Figure 1—figure supplement 2A). Back-transformation experiments using a shorter ‘prey’ plasmid expressing PSD93-PDZ3 alone revealed that PSD93-PDZ3 directly bound the wild type (LSSV) C-terminus of ZDHHC14 but did not bind a mutant ZDHHC14 C-terminus with a mutated PDZ ligand (LSSE: Figure 1—figure supplement 2B). These findings suggest that the C-terminal PDZ ligand of ZDHHC14 binds PSD93-PDZ3 in yeast.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of ZDHHC14 showing predicted transmembrane domains (TM, gray boxes), DHHC cysteine rich catalytic domain (blue box) and the C-terminal region used for yeast 2-hybrid screening (Bait), including the LSSV motif. (B) HEK293T cells were transfected with the indicated constructs and lysates subjected to GST-pulldown. Eluates from pulldowns were immunoblotted to detect GST (bottom, left) and PSD93 (top, left). Total expression levels of GST-tagged proteins (bottom, right) and PSD93 (top, right) in parent lysates were also determined. Images are representative of three independent experiments. (C) HEK293T cells were transfected with the indicated constructs and palmitoyl-proteins (isolated by ABE; left panels) and total protein levels (in parent lysates; right panels) were assessed by western blotting with the indicated antibodies. Parallel samples processed in the absence of the key ABE reagent hydroxylamine (NH2OH) confirm the specificity of the ABE assay. (D) Quantified PSD93α palmitoyl:total levels from C, normalized to the empty vector condition (Welch’s 1-way ANOVA p=0.0008, W(2,6.98) = 23.80, N = 6; Dunnett’s T3 multiple comparison post hoc test **p<0.01, 95% CI vector versus wtZDHHC14 [−6.91,–1.77], vector versus ZDHHC14 LSSE [−3.10, 0.86], and wtZDHHC14 versus ZDHHC14 LSSE [0.60, 5.83]). (E) Quantified PSD93β palmitoyl:total levels from C, normalized to the empty vector condition (1-way ANOVA p<0.0001, F(2,9)=60.69, N = 4; Bonferroni post hoc test **p<0.01, ***p<0.001, ****p<0.0001, 95% CI vector versus wtZDHHC14 [−6.18,–3.56], vector versus ZDHHC14 LSSE [−3.44,–0.84], and wtZDHHC14 versus ZDHHC14 LSSE [1.44, 4.04]). Uncropped western blot images are in Figure 1—figure supplement 4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematics of domain organization of ZDHHC14 orthologs, including human ZDHHC14 (Homo sapiens; NP_078906.2), mouse ZDHHC14 (Mus musculus; NP_666185.3), rat ZDHHC14 (Rattus norvegicus; NP_001034432.1), western clawed frog ZDHHC14 (Xenopus tropicalis; XP_004914695.1), Zebrafish ZDHHC14 (Danio rerio; XP_005160409.1), sea squirt ZDHHC9 (Ciona intestinalis; XP_002127630.1), fruit fly Approximated (App; Drosophila melanogaster; NP_001137937.1) and roundworm DHHC-2 (Caenorhabditis elegans; NP_0493007.2). Predicted transmembrane domains are shown in gray boxes (TMD) and the DHHC cysteine-rich catalytic domain is shown in a blue box (DHHC-CRD). (B) Sequence alignment of the 10 C-terminal amino acids of ZDHHC14 orthologs from A reveals a PDZ ligand only in vertebrates and simple chordate lineages. PDZ-ligand consensus amino acids are in yellow, completely conserved amino acids are highlighted in dark gray, and functionally conserved amino acids in light gray. C. intestinalis and C. elegans orthologs were identified based on homology of their respective DHHC-CRDs with mammalian ZDHHC14. A more limited version of this alignment was shown in Thomas and Hayashi, 2013a.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of the domain organization of PSD93 showing PDZ domains (yellow boxes), SH3 domain (orange box), and guanylate kinase (GK) domain (light brown). Solid lines: regions of the three unique ‘hit’ PSD93 cDNA clones confirmed by DNA sequencing. Restriction digest analysis suggested that each ‘hit’ insert was approx.1.5kb in length and thus likely extended into the GK region of PSD93. (B) Growth of four re-spotted individual yeast colonies on media selecting for presence of ‘bait’ (pPC97) and ‘prey’ (pPC86) plasmids (Leu- Trp-, upper panel) or presence of ‘bait’ and ‘prey’ plasmids and ‘bait’-‘prey’ protein–protein interaction (Leu- Trp- His-, lower panel), after HF7C yeast were back-transformed with the indicated ‘bait’ vectors and a ‘prey’ vector containing the third PDZ domain (PDZ3) of PSD93. Wild type ZDHHC14 directly interacts with PSD93-PDZ3 but a ZDHHC14 with a mutated PDZ ligand (LSSE) does not.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Quantified PSD93 palmitoyl:total levels from Figure 1C, normalized to the PSD93α empty vector condition (2-way ANOVA: ZDHHC14 p<0.0001 [F(2)=111], isoform p<0.0001 [F(1)=281.7], interaction p<0.0001 [F(2)=48.88]; N = 4–6; Bonferroni post hoc test *p<0.05, **p<0.01, ****p<0.0001; 95% confidence intervals vector versus ZDHHC14 PSD93α [1.14, 7.54], vector versus ZDHHC14 PSD93β [17.81, 25.65], vector vs ZDHHC14 LSSE PSD93α [−2.08, 4.32], vector versus ZDHHC14 LSSE PSD93β [5.62, 13.45], ZDHHC14 versus ZDHHC14 LSSE PSD93α [−6.42,–0.020], ZDHHC14 versus ZDHHC14 LSSE PSD93β [−16.11,–8.28]). In this Figure supplement, data from all HEK cell ABE experiments for ZDHHC14/PSD93 are plotted and analyzed together, while in Figure 1D and E data for the PSD93 alpha and beta subunits are analyzed separately where the N are equal across all conditions (N = 6 and N = 4, respectively).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Bold titles indicate the figure that the uncropped images correspond to, boxes indicate cropped regions, and dashed lines and scissors indicate where membranes were cut prior to immunoblotting.
+
 We next sought to validate the interaction between PSD93 and ZDHHC14 in a mammalian system, using full-length PSD93. A glutathione-S-transferase (GST) fusion of the initial ZDHHC14 bait (GST-ZDHHC14-LSSV [wt], abbreviated as GST-14-LSSV (wt) on Figure) robustly bound each of two previously reported palmitoylated PSD93 isoforms, α and β (Brenman et al., 1996; El-Husseini et al., 2000a) in lysates of co-transfected HEK293T cells (Figure 1B). In contrast, neither PSD93 isoform bound a GST fusion of ZDHHC14 carrying a mutated PDZ ligand (GST-ZDHHC14-LSSE (GST-14-LSSE on figure); Figure 1B). ZDHHC14 and PSD93 are thus bona fide binding partners that interact in a PDZ-ligand-dependent manner.
 
-## ZDHHC14 palmitoylates PSD93 in cotransfected cells
+### ZDHHC14 palmitoylates PSD93 in cotransfected cells
 
 To determine if ZDHHC14 also palmitoylates PSD93, we co-expressed PSD93α or β in HEK293T cells with or without wild type HA-tagged ZDHHC14 (HA-ZDHHC14-LSSV [wt], HA-14-LSSV [wt] on Figure 1C). We then isolated palmitoyl-proteins using the acyl-biotin exchange (ABE) assay, a non-radioactive technique to purify palmitoylated proteins from cell lysates (Roth et al., 2006; Thomas et al., 2012). Palmitoylation of both PSD93α and β was low, though detectable, in the absence of cotransfected HA-ZDHHC14 (Figure 1C,D,E). However, HA-ZDHHC14 robustly increased palmitoylation of both PSD93 isoforms, with PSD93β palmitoylation increased to a much greater extent than that of PSD93α (Figure 1C [lane 2 versus 5], D, E, and Figure 1—figure supplement 3). These data suggest that ZDHHC14 can palmitoylate both PSD93α and β, but more robustly palmitoylates the β isoform. Interestingly, the HA-ZDHHC14-LSSE mutant (HA-14 LSSE on figure) palmitoylated both PSD93 isoforms less effectively than did wild type HA-ZDHHC14 (Figure 1C [lanes 2 versus 3 and 5 versus 6], D, E, and Figure 1—figure supplement 3). This finding suggests that the LSSV PDZ ligand is important, not only for ZDHHC14 to bind PSD93, but also to recognize it as a substrate.
 
-## ZDHHC14 is the major neuronal PAT for PSD93
+### ZDHHC14 is the major neuronal PAT for PSD93
 
 To determine if ZDHHC14 is the major PSD93 PAT in neurons, we transduced cultured rat hippocampal neurons with lentivirus expressing GFP with or without a short hairpin (sh) RNA targeting rat Zdhhc14 mRNA (Zdhhc14 sh#1) on day in vitro (DIV) 9. Robust knockdown of ZDHHC14 protein was achieved one week after infection (>90%; Figure 2A,B), at which point palmitoyl-proteins were isolated from control and Zdhhc14 sh#1-transduced hippocampal neurons using the ABE assay. PSD93 was readily detected in ABE samples and its palmitoylation was decreased by >60% in Zdhhc14 ‘knockdown’ cultures (Figure 2C,D). Total levels of PSD93 were also decreased after Zdhhc14 knockdown, but to a far lesser extent than palmitoylation (Figure 2C,E). In contrast, palmitoylation and levels of another palmitoyl-protein, GAP43, were unaffected by Zdhhc14 knockdown (Figure 2A,C,D). ERK, a non-palmitoylated protein, was not detected in ABE samples, confirming the specificity of the assay (Figure 2C). A second, independent Zdhhc14 shRNA (Zdhhc14 sh#2) also greatly decreased ZDHHC14 levels (Figure 2—figure supplement 1A,B) and PSD93 palmitoylation (Figure 2—figure supplement 1C–E), without affecting GAP43 palmitoylation (Figure 2—figure supplements 1C, D). These findings suggest that ZDHHC14 is the predominant PAT for PSD93 in hippocampal neurons.
 
-## ZDHHC14 is required for targeting of PSD93 to the AIS
+![Figure 2.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cultured hippocampal neurons were transduced with the indicated lentiviruses on day in vitro (DIV) nine and lysed on DIV16. Lysates were blotted with the indicated antibodies. Two ZDHHC14 bands were identified (indicated by arrow heads ‘1’ and ‘2’). (B) Quantified intensities of the indicated ZDHHC14 bands from A, normalized to band ‘1’ in the control virus condition (2-way ANOVA: Virus p<0.0001 [F(1)=618.7], band p<0.0001 [F(1)=72.17], interaction p<0.0001 [F(1)=51.64]; N = 5; Bonferroni posthoc test ****p<0.0001; 95% CI control versus 14sh#1 band 1 [–1.01,–0.81], control versus 14sh#1 band 2 [–0.60,–0.40]). (C) Cultured hippocampal neurons were lentivirally infected and lysed as in A and palmitoyl-proteins (isolated by ABE; left panels) and total protein levels in parent lysates (right panels) were assessed by western blotting with antibodies against PSD93 (top panel), GAP43 (middle panel, positive control palmitoylated protein), and Erk1/2 (bottom, negative control non-palmitoylated protein). (D) Quantified data from C, showing PSD93 (left) and GAP43 (right) palmitoyl/total levels, normalized to the control virus condition (PSD93: unpaired Student’s t-test ****p<0.0001, N = 12, 95% CI [0.44, 0.78]; GAP43: unpaired Student’s t-test p=0.40, N = 12, 95% CI [−0.063, 0.15]). (E) Quantified data from C, showing total PSD93 levels normalized to the control virus condition (unpaired Student’s t-test **p=0.0034, N = 12, 95% CI [0.12, 0.52]). Uncropped western blot images are in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Hippocampal neurons were transduced with control or Zdhhc14 shRNA#2 (14 sh#2) lentivirus to knockdown Zdhhc14 on day in vitro (DIV) 9. Cultures were harvested on DIV16 and levels of ZDHHC14 (two bands, indicated by arrowheads) and GAP43 (loading control) were determined by western blotting. (B) Quantified intensity of the two ZDHHC14 bands from A, normalized to band ‘1’ in the control virus condition (2-way ANOVA: Virus p<0.0001 [F(1)=2614.0], band p<0.0001 [F(1)=114.3], interaction p<0.0001 [F(1)=75.41]; N = 5; Bonferroni post hoc test ****p<0.0001; 95% CI control versus 14sh#2 band 1 [–1.02,–0.90], control versus 14sh#2 band 2 [–0.74,–0.63]). (C) Palmitoyl-proteins (isolated by ABE; left panels) and total protein levels (in parent lysates; right panels) of PSD93 and GAP43, assessed by western blotting with the respective specific antibodies. (D) Quantifications of palmitoylation of PSD93 (left) and GAP43 (right) from C, normalized to the control virus condition (PSD93: unpaired Student’s t-test ****p<0.0001, N = 5, 95% CI [0.47, 0.86]; GAP43: unpaired Student’s t-test p=0.82, N = 5, 95% CI [−0.35, 0.43]). (E) Quantified PSD93 total levels from C, normalized to the control virus condition (unpaired Student’s t-test p=0.83, N = 5, 95% CI [−0.38, 0.31]). Uncropped western blot images are in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Bold titles indicate the figure that the uncropped images correspond to, boxes indicate cropped regions.
+
+### ZDHHC14 is required for targeting of PSD93 to the AIS
 
 Although our results strongly suggested that ZDHHC14 controls PSD93 palmitoylation in neurons, this modification was reported to be dispensable for PSD93 targeting to synapses (Firestein et al., 2000). We therefore hypothesized that palmitoylation instead controls PSD93 targeting to a different subcellular location in neurons. Interestingly, PSD93 was previously reported to be the only MaGUK that also clusters at the AIS (Ogawa et al., 2008), so we asked whether palmitoylation might target PSD93 to this location. Consistent with prior findings, we robustly detected PSD93 at presumptive synapses (Firestein et al., 2000; Kim et al., 1996) and at the AIS (Ogawa et al., 2008; Figure 3—figure supplement 1A) in hippocampal neurons using standard fixation conditions. However, for our investigations of the importance of ZDHHC14, we used a previously described gentle fixation method, which preferentially reveals the AIS-localized pool of PSD93 (Ogawa et al., 2008; Figure 3—figure supplement 1B). Using this method, PSD93 was readily detected at the AIS, defined by enrichment of the master AIS scaffold protein Ankyrin G (AnkG or ANK3; Figure 3A and Figure 3—figure supplement 1B; Huang and Rasband, 2018; Jenkins and Bennett, 2001; Kordeli et al., 1995). However, PSD93 targeting to the AIS was significantly reduced in Zdhhc14 knockdown neurons (Figure 3B,C [mean gray value]). Interestingly, AIS length was also reduced (by approximately 35%) in Zdhhc14 knockdown neurons (Figure 3D). Taking the reduced AIS length into account revealed an even greater reduction of total AIS-localized PSD93 (integrated density) in Zdhhc14 knockdown neurons (Figure 3E). Zdhhc14 shRNA#2 also decreased PSD93 AIS targeting and AIS length (Figure 3—figure supplement 2A–E). Additional examples of reduced AIS targeting of PSD93 after Zdhhc14 knockdown are shown in Figure 3—figure supplement 3. These findings are consistent with the hypothesis that palmitoylation by ZDHHC14 targets PSD93 to the AIS.
 
-## Palmitoyl-site mutation reduces PSD93β AIS targeting
+![Figure 3.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig3-v2.jpg)
+
+**Figure 3.:** Hippocampal neurons transduced with lentivirus to express GFP alone (A; ‘Control’), or together with Zdhhc14 shRNA #1 (B; ‘14 sh#1’) were fixed and immunostained with antibodies against PSD93 (left column and green in merged images on right), AnkG (AIS marker, middle column and magenta in merged images on right), and GFP (marker of infected neurons, blue in merged images, right column). Lower panel images are magnified views of dashed red or white boxed area of top row images and arrowheads indicate additional non-magnified AISs in image. (C) Mean gray value of PSD93 signal within AnkG-defined AIS, normalized to control condition (unpaired Student’s t-test ****p=0.012, N = 3 independent cultures, 95% CI [0.072, 0.32]). (D) Quantified AIS lengths (defined by AnkG staining; unpaired Student’s t-test **p=0.0026, N = 3 independent cultures, 95% CI [8.42, 20.39]). (E) Integrated density of PSD93 signal within AnkG-defined AIS, normalized to control condition (Student’s t-test ***p=0.0008, N = 3 independent cultures, 95% CI [0.32, 0.60]). Scale bar in full and magnified views: 10 μm. Additional example images are provided in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Hippocampal neurons were fixed using a standard fixation method (A) or with a previously reported gentle fixation method (Ogawa et al., 2008) (B) and immunostained with antibodies against PSD93 (left column and green in merged images on right) and AnkG (AIS marker, middle column and magenta in merged images on right). Lower panel images are magnified views of dashed red or white boxed area of top row images and arrowheads indicate additional non-magnified AISs in image. Under standard fixation, PSD93 is visible at the AIS and at presumptive synapses, but gentle fixation highlights AIS-localized PSD93.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Hippocampal neurons were transduced with (A) control or (B) Zdhhc14 sh#2-expressing lentiviruses on DIV9 and fixed on DIV18 to determine PSD93 targeting to the AIS. Neurons were immunostained with antibodies against PSD93 (left column and green in merged images on right), AnkG (AIS marker, middle column and magenta in merged images on right), and GFP (marker of infected neurons, blue in merged images, right column). Lower panel images are magnified views of dashed red or white boxed area of top row images. Arrowheads indicate additional non-magnified AISs in image. (C) Mean gray value of PSD93 signal within AnkG-defined AIS, normalized to control condition (Mann Whitney p=0.99; N = 3 independent cultures, U = 4.00). (D) Quantified AIS lengths (defined by AnkG staining; unpaired Student’s t-test **p=0.0068, N = 3 independent cultures, 95% CI [4.35, 14.55]). (E) Integrated density of PSD93 signal within AnkG-defined AIS, normalized to control condition (unpaired Student’s t-test *p=0.030; N = 3 independent cultures, 95% CI [0.50, 0.59]). Scale bar in full and magnified views: 10 μm. Additional example images are provided in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Hippocampal neurons transduced with lentivirus to express GFP alone (A and C; ‘Control’), or GFP together with Zdhhc14 shRNA #1 (B; ‘14 sh#1’) or Zdhhc14 shRNA #2 (D; ‘14 sh#2’) were fixed and immunostained with antibodies against PSD93 (left column and green in merged images on right), AnkG (AIS marker, middle column, and magenta in merged images on right), and GFP (marker of infected neurons, blue in merged images, right column). Arrowheads indicate AISs in image. Scale bar: 10 μm.
+
+### Palmitoyl-site mutation reduces PSD93β AIS targeting
 
 To more directly assess whether palmitoylation targets PSD93 to the AIS, we determined the extent to which mutation of PSD93’s palmitoyl-cysteines reduces its AIS targeting. As ZDHHC14 more robustly palmitoylates PSD93β (Figure 1C–E), we sought to identify the site(s) on this isoform that are palmitoylated by ZDHHC14. There are five cysteine residues in the N-terminus of PSD93β: C10, C16, C18, C22, and C33 (Figure 4—figure supplement 1A). PSD93β was reported to be predominantly palmitoylated at C16 and C18, but this prior study Firestein et al., 2000 used a truncated PSD93β cDNA lacking C10 and additional N-terminal sequences now ascribed to PSD93 (Rattus norvegicus XP_017445141.1, Homo sapiens NP_001338205.1). We found that ZDHHC14-dependent palmitoylation of full-length PSD93β-myc in which cysteines 16 and 18 were both mutated to non-palmitoylatable serine (C16,18S) was reduced by only 42% (Figure 4—figure supplement 1B,C), suggesting that ZDHHC14 palmitoylates additional sites on PSD93β. Consistent with this notion, mutation of C10 to serine (C10S) reduced ZDHHC14-dependent palmitoylation of PSD93β by 88% (Figure 4—figure supplement 1B,C). However, ZDHHC14–dependent palmitoylation was not completely blocked until all five N-terminal cysteine residues of PSD93β were mutated (Figure 4—figure supplement 1B,C; ‘5CS’ mutant), suggesting that each of these sites can be palmitoylated by ZDHHC14.
 
 To determine if direct palmitoylation of PSD93 is required for its AIS targeting, we compared the subcellular distribution of myc-tagged PSD93β wild type and 5CS mutant (wtPSD93β-myc or PSD93β−5CS-myc, respectively) in hippocampal neurons cotransfected with GFP as a morphology marker. Both wtPSD93β-myc and PSD93β−5CS-myc were targeted to punctate structures in dendrites (Figure 4A,B, respectively), which are likely synapses, in agreement with previous findings (Firestein et al., 2000). However, within the axon, wtPSD93β-myc was enriched at the AIS (Figure 4A) but PSD93β−5CS-myc was more diffusely distributed, extending past the AIS (Figure 4B). When PSD93β axonal distribution was scored as AIS-enriched or diffuse, wtPSD93β-myc was AIS-enriched in 67+/- 5.77% (SD) of transfected neurons whereas PSD93β−5CS-myc was AIS-enriched in only 33%+/- 5.77% (SD) of transfected neurons (Figure 4C). These findings suggest that direct palmitoylation is important, although not essential, for PSD93β targeting to the AIS.
 
-## Developmental expression of ZDHHC14 mirrors that of PSD93 and Kv1 channels
+![Figure 4.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig4-v2.jpg)
+
+**Figure 4.:** Hippocampal neurons were transfected to express GFP and wtPSD93β-Myc (A) or PSD93β−5CS-Myc (B). Neurons were fixed and immunostained with antibodies against Myc (left column and green in merged images), AnkG (AIS marker, second column and magenta in merged images), and GFP (marker of infected neurons, blue in merged images, right column). Magnified views of dashed red or white boxed areas of top row images are shown below and arrowheads indicate the start and end of the AIS. Neurons were scored for Myc distribution in the axon, delineated by the presence of an AnkG-positive AIS, as diffuse axonal distribution (Diffuse) or AIS enriched/restricted distribution (AIS-enriched). (C) Quantified data for axonal images for 10 neurons per condition per experiment transfected as in A-B, from three independent cultures expressed as a percentage per culture (N = 3 independent cultures). Scale bar in full and magnified views: 10 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of PSD93 with expanded N-terminal amino acid sequence unique to the β isoform. Cysteine residues within this N-terminal region are in red. Downstream PDZ (yellow boxes), SH3 (orange box), and guanylate kinase (GK, tan box) domains are marked (B) HEK293T cells were transfected with the indicated constructs and palmitoyl-proteins (isolated by ABE; top set of panels) were assessed by western blotting with Myc (top two panels, high and low exposures, respectively) and HA (third panel) antibodies. Bottom two panels: total protein levels in parent lysates from B, determined by western blotting with the indicated antibodies. The two left panels (all +NH2OH lanes) are a composite from the same western blot image and the two right panels (all −NH2OH lanes) are a composite from another single western blot image. (C) Quantified intensity of low exposure Myc signals from B, normalized to the wtPSD93β plus HA-ZDHHC14 condition (1-way ANOVA p<0.0001, F(4,10)=20.84, N = 3; Bonferroni post hoc test *p<0.05, ***p<0.001, ****p<0.0001, 95% CI WT versus C10S [0.52, 1.23], WT versus C16,18S [0.062, 0.78], WT versus C10,16,18S [0.35, 1.06], WT versus 5CS [0.64, 1.35]). Uncropped western blot images are in Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Bold titles indicate the figure that the uncropped images correspond to, boxes indicate cropped regions, and dashed lines and scissors indicate where membranes were cut prior to immunoblotting.
+
+### Developmental expression of ZDHHC14 mirrors that of PSD93 and Kv1 channels
 
 At the AIS, PSD93 acts as a scaffold to cluster Type-I voltage-gated potassium (Kv1) channels (Ogawa et al., 2008). The Kv1 channel subunits found at the AIS in hippocampal neurons are Kv1.1, Kv1.2, and Kv1.4 (Kole et al., 2007; Ogawa et al., 2008) and prior work from non-neuronal cells suggested that Kv1 clustering by PSD93 likely involves binding of Kv1.1/1.2/1.4 C-termini, each of which terminates in a Type-I PDZ ligand, to PSD93’s second PDZ domain (Kim et al., 1996; Kim et al., 1995). Interestingly, Kv1.1 was reported to be palmitoylated when expressed in non-neuronal cells (Gubitosi-Klug et al., 2005). We realized that the region surrounding the Kv1.1 palmitoyl-cysteine mapped in this prior study is highly conserved in Kv1.1 orthologs, and a homologous cysteine is present in both Kv1.2 and Kv1.4 (Figure 5—figure supplement 1A,B). These findings raised the possibility that Kv1.1, Kv1.2 and/or Kv1.4 might be endogenously palmitoylated in neurons, potentially by ZDHHC14 and, further, that such palmitoylation might control AIS targeting of these Kv1 channels. The decreased AIS length after loss of ZDHHC14 (Figure 3D) is consistent with this notion, because decreased AIS length is a well-known homeostatic response to increased neuronal excitability (Dumitrescu et al., 2016; Grubb and Burrone, 2010; Grubb et al., 2011), as might occur if these Kv1 channels were not properly targeted to the AIS.
 
 As a first step to determine if ZDHHC14 also regulates Kv1 channels, we examined the developmental expression of ZDHHC14, PSD93, Kv1.1, Kv1.2, and Kv1.4 in hippocampal neurons. Strikingly, the developmental profiles of all five of these proteins were almost identical, with each first detectable at DIV8 and steadily increasing to DIV16 (Figure 5A,B). In contrast, expression of the GLUN2B subunit of the synaptic N-methyl-D-aspartate (NMDA) glutamate receptor was already detected at DIV4 and peaked at DIV12 (Figure 5A,B). This coordinated developmental upregulation of ZDHHC14 with PSD93 and Kv1 channels is consistent with a shared function in hippocampal neurons.
 
-## ZDHHC14 is a major neuronal PAT for Kv1.1, Kv1.2, and Kv1.4
+![Figure 5.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig5-v2.jpg)
+
+**Figure 5.:** (A) Hippocampal neurons were harvested at the indicated days in vitro (DIV) and lysates were western blotted with the indicated antibodies. (B) Quantified levels of the indicated proteins from A, relative to Histone H3 and normalized to DIV16 condition, plotted as a function of DIV (N = 3–4). Uncropped western blot images are in Figure 5—figure supplement 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of a generic Kv1 channel subunit with transmembrane domains (purple) and palmitate attached to the palmitoyl-cysteine between transmembrane domains two and three. Residue numbers are indicated for the regions surrounding the palmitoyl-cysteine from rat Kv1.1 (top [Gubitosi-Klug et al., 2005], NP_775118.1). Corresponding regions of rat Kv1.2 and Kv1.4 are shown below (NP_037102.1 and NP_037103.1, respectively). (B) Residue numbers, indicated for the regions surrounding the palmitoyl-cysteine and the 10 C-terminal amino acids from Kv1.1 orthologs, including human Kv1.1 (H. sapiens; NP_000208.2), mouse Kv1.1 (M. musculus; NP_034725.3), rat Kv1.1 (R. norvegicus; NP_775118.1), western clawed frog Kv1.1 (X. tropicalis; XP_004912858.1), Zebrafish Kv1.1 (D. rerio; XP_005163101.1), fruit fly Shaker (Sh; D. melanogaster; NP_523393.3) and roundworm SHK-1 (C. elegans; NP_871935.1). In A and B conserved residues are highlighted in dark gray, functionally conserved residues are in light gray, transmembrane domain residues are outlined in dashed orange lines, and the palmitoyl-cysteine is red. In B PDZ-ligand consensus amino acids are in yellow.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Bold titles indicate the figure that the uncropped images correspond to, boxes indicate cropped regions, and dashed lines and scissors indicate where membranes were cut prior to immunoblotting.
+
+### ZDHHC14 is a major neuronal PAT for Kv1.1, Kv1.2, and Kv1.4
 
 Although our biochemical developmental time course experiment did not differentiate between somal, synaptic, or AIS pools of ZDHHC14, PSD93, and Kv1 channels, it raised the possibility that ZDHHC14 might regulate palmitoylation and/or AIS targeting of not just PSD93, but also Kv1 channels. To investigate this possibility, we assessed Kv1 channel palmitoylation in the absence of ZDHHC14. Consistent with our hypothesis, Zdhhc14 knockdown reduced palmitoylation of Kv1.1, Kv1.2, and Kv1.4 by 35, 31, and 65%, respectively (Figure 6A,B). Zdhhc14 knockdown also reduced total levels of Kv1.2 and Kv1.4, but to a lesser extent than palmitoylation (Figure 6A,C). These findings suggest that ZDHHC14 is a PAT for Kv1 channels in hippocampal neurons.
 
-## ZDHHC14 is required for targeting of Kv1 channels to the AIS
+![Figure 6.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig6-v2.jpg)
+
+**Figure 6.:** (A) Hippocampal neurons were transduced with the indicated lentiviruses on DIV9 and harvested on DIV16 to assess Kv1 channel palmitoylation by ABE. Palmitoyl-proteins (isolated by ABE; left panels) and total protein levels (in parent lysates; right panels) were assessed by western blotting with the indicated antibodies. (B) Quantified palmitoyl:total levels of Kv1.1, Kv1.2, and Kv1.4 from A, normalized to the control virus condition (Kv1.1: unpaired Student’s t-test ***p=0.0003, N = 10, 95% CI [0.18, 0.52]; Kv1.2: unpaired Student’s t-test *p=0.024, N = 10, 95% CI [0.047, 0.58]; Kv1.4: Mann Whitney test ****p<0.0001, N = 11, U = 0.0). (C) Quantified total levels of Kv1.1 (left), Kv1.2 (middle), and Kv1.4 (right) from A, normalized to the control virus condition (Kv1.1: unpaired Student’s t-test *p=0.019, N = 10, 95% CI [0.044, 0.43]; Kv1.2: unpaired Student’s t-test **p=0.0058, N = 9, 95% CI [0.087, 0.43]; Kv1.4: unpaired Student’s t-test ****p<0.0001, N = 11, 95% CI [0.25, 0.49]). Uncropped western blot images are in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Bold titles indicate the figure that the uncropped images correspond to, boxes indicate cropped regions, and dashed lines and scissors indicate where membranes were cut prior to immunoblotting.
+
+### ZDHHC14 is required for targeting of Kv1 channels to the AIS
 
 Given that ZDHHC14 is required for palmitoylation of Kv1 channels and their AIS scaffold, PSD93, we asked whether ZDHHC14 might also regulate AIS targeting of Kv1 channels themselves. All three Kv1 channels were readily detected at the AIS in neurons infected with control lentivirus (Figure 7A,E,I). However, in Zdhhc14 knockdown neurons, AIS targeting of Kv1.1 (Figure 7B,C,D), Kv1.2 (Figure 7F,G,H), and Kv1.4 (Figure 7J,K,L) was reduced. We note that the total amount of AIS-localized Kv1.2 was significantly reduced, even though the reduction in Kv1.2 mean intensity at the AIS did not reach statistical significance (Figure 7G,H). Additional examples of reduced AIS localization of Kv1 channels after Zdhhc14 knockdown are shown in Figure 7—figure supplement 1. These findings suggest that ZDHHC14 is required for AIS targeting of Kv1 channel subunits.
 
-## ZDHHC14 is predominantly a Golgi-localized PAT in hippocampal neurons
+![Figure 7.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig7-v2.jpg)
+
+**Figure 7.:** Hippocampal neurons were transduced on DIV9 with lentiviruses to express GFP without (Control; A) or with Zdhhc14 shRNA#1 (B) and fixed on DIV16 to detect Kv1.1 (left column and green in merged images on right), AnkG (AIS marker, middle column and magenta in merged images on right) and GFP (marker of infected neurons, blue in merged images, right column). Lower panels show magnified view of red or white dashed boxed area in upper panels. (C and D) integrated density and mean gray value, respectively, of Kv1.1 signal within AnkG-defined AIS from images from A, normalized to control condition (C: Mann Whitney test *p=0.020, N = 3 independent cultures, U = 1.00). (D: Mann Whitney test *p=0.020, N = 3 independent cultures, U = 1.00). (E and F) as in A and B, except that antibodies were used to detect Kv1.2, AnkG, and GFP. (G and H) as in C and D but for Kv1.2 AIS targeting from images from E and F (G: Mann Whitney test p=0.029, N = 4 independent cultures, U = 0.00; H: Mann Whitney test p=0.45, N = 4 independent cultures, U = 5.00). (I and J) as in A and B, except that antibodies were used to detect Kv1.4, AnkG, and GFP. (K and L) as in C and D but for Kv1.4 AIS targeting from images from I and J (K: Mann Whitney test *p=0.029, N = 3 independent cultures, U = 0.0; L: Mann Whitney test *p=0.029, N = 3 independent cultures, U = 0.0). Scale bar in full and magnified views: 10 μm. Arrowheads in all panels indicate additional non-magnified AISs in the image. An additional set of example images is provided in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Hippocampal neurons transduced with lentivirus to express GFP alone (Control; A) or with Zdhhc14 shRNA#1 (B) and fixed on DIV16 to detect Kv1.1 (left column and green in merged images on right), AnkG (AIS marker, middle column and magenta in merged images on right) and GFP (marker of infected neurons, blue in merged images, right column). (C and D) as in A and B, except that antibodies were used to detect Kv1.2, AnkG, and GFP. (E and F) as in A and B, except that antibodies were used to detect Kv1.4, AnkG, and GFP. Arrowheads indicate AISs in image. Scale bar: 10 μm.
+
+### ZDHHC14 is predominantly a Golgi-localized PAT in hippocampal neurons
 
 We next asked whether ZDHHC14 more likely palmitoylates PSD93 and/or Kv1 channels directly at the AIS, or palmitoylates them earlier in their trafficking route, for example within the Golgi apparatus, where many PATs are localized (Ernst et al., 2018; Ohno et al., 2006). Interestingly, we found that HA-ZDHHC14 localized predominantly to the somatic Golgi and to punctate structures in dendrites (Figure 8A–C). ZDHHC14 was also detectable in axons but did not enrich at the AIS (Figure 8C). These findings increase the likelihood that ZDHHC14-dependent palmitoylation of PSD93 and Kv1 channels occurs within the Golgi, rather than directly at the AIS.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig8-v2.jpg)
 
-**Figure 8.:** (A) Hippocampal neurons were transfected to express GFP and HA-ZDHHC14. Neurons were then fixed and immunostained with antibodies against HA (left column and green in merged images), GM130 (Golgi marker, second column and magenta in merged images), and GFP (marker of infected neurons, blue in merged, right column). Magnified views of red or white dashed boxed area of top row images are shown below. (B) Graph of the fluorescent intensity profiles of HA-ZDHHC14 (green) and GM130 (red) along the red or yellow dotted line indicated in the lower panels of A. (C) Neurons transfected as in A were immunostained with antibodies against HA (left column and green in merged images), AnkG (AIS marker, second column and magenta in merged images), and GFP (marker of infected neurons, blue in merged, right column). Magnified views of boxed area of top row images are shown below and arrowheads indicate the start and end of the AIS. Scale bar: 10 μm.  Figure 8—source data 1.Figure 8B.
+**Figure 8.:** (A) Hippocampal neurons were transfected to express GFP and HA-ZDHHC14. Neurons were then fixed and immunostained with antibodies against HA (left column and green in merged images), GM130 (Golgi marker, second column and magenta in merged images), and GFP (marker of infected neurons, blue in merged, right column). Magnified views of red or white dashed boxed area of top row images are shown below. (B) Graph of the fluorescent intensity profiles of HA-ZDHHC14 (green) and GM130 (red) along the red or yellow dotted line indicated in the lower panels of A. (C) Neurons transfected as in A were immunostained with antibodies against HA (left column and green in merged images), AnkG (AIS marker, second column and magenta in merged images), and GFP (marker of infected neurons, blue in merged, right column). Magnified views of boxed area of top row images are shown below and arrowheads indicate the start and end of the AIS. Scale bar: 10 μm.
 
-## Loss of ZDHHC14 reduces outward currents and increases action potential firing in hippocampal neurons
+### Loss of ZDHHC14 reduces outward currents and increases action potential firing in hippocampal neurons
 
 Finally, we addressed whether loss of ZDHHC14 alters neuronal physiological function, and the extent to which any such alterations might be consistent with changes in AIS-localized Kv1 channels. Indeed, we found that the density of outward currents, which are likely mediated by voltage-dependent potassium channels, was dramatically decreased in Zdhhc14 knockdown neurons (Figure 9A–C). To determine whether these outward current changes might be linked to changes in AIS function we assessed action potential (AP) generation, and the properties of individual APs, in Zdhhc14 knockdown neurons. Kv1-type channels are low-threshold, fast-activating and thus play an important role at the AIS in modulating AP firing by suppressing generation of, and shortening, APs (Dodson et al., 2002; Goldberg et al., 2008; Yamada and Kuba, 2016). Consistent with a reduced Kv1 number and/or function, Zdhhc14 knockdown neurons fired a markedly greater number of APs in response to injection of a given current (Figure 9D–F). Moreover, the latency to the first action potential, rheobase (the minimum current required to generate an AP), and the rate of AP repolarization were all decreased in Zdhhc14 knockdown neurons (Figure 9D–E,G, Table 1). The overall increased excitability and the individual changes in AP properties are all consistent with a loss of AIS-localized Kv1 channels in the absence of ZDHHC14. We also observed a slightly increased input resistance and a slightly depolarized resting membrane potential in Zdhhc14 knockdown neurons (Table 1). Although also potentially accounted for by direct Kv1 loss, these latter changes could be downstream secondary consequences of Kv1 loss or could be due to alterations in other voltage-dependent channels in the absence of ZDHHC14.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/56058/elife-56058-fig9-v2.jpg)
 
-**Figure 9.:** (A, B) Hippocampal neurons were transduced with AAV to express GFP alone (A) or GFP plus Zdhhc14 shRNA#1 (B) and GFP-positive cells were subjected to whole-cell patch-clamp. Representative traces showing the development of outward currents following voltage steps from −80 to +100 mV (Δ15 mV). (C) Summary graph of outward current density following steps of the indicated voltages for neurons infected with control AAV (gray circles) or Zdhhc14 sh#1 AAV (green squares). Zdhhc14 knockdown reduces outward current density (C) Repeated Measures ANOVA, Virus p=0.18 [F(1)=2.06], membrane potential p<0.0001 [F(12)=73.14], **interaction p=0.0027 [F(12)=2.68]; (N = 7). There was also a significant difference (p<0.0001 [F(4)=8.46]) between conditions when the two curves were fitted with a Boltzmann equation. (D, E) Membrane potential was kept at −60 to −65 mV mV by injecting a small DC current through the recording pipette and voltage responses to the indicated current injection steps were measured. Representative traces from control (D) and Zdhhc14 shRNA#1 (E) transduced neurons in response to the indicated current injection steps are shown. (F, G) Summary graphs of number of action potentials fired (F) and latency to first action potential (AP, G) following injection of the indicated currents for neurons infected with control AAV (gray circles) or Zdhhc14 sh#1 AAV (green squares). Zdhhc14 knockdown increases AP firing (F: Repeated Measures ANOVA, *Virus p=0.020 [F(1)=5.84], injected current p<0.0001 [F(9)=49.31], interaction p=0.0002 [F(9)=3.64]; N = 23) and decreases latency to first AP (G: mixed effects model analysis, ****Virus p<0.0001 [F(1,43)=19.99], injected current p<0.0001 [F(3.35, 116.70)=15.18], interaction p<0.0001 [F(6, 209)=6.30]; N = 23).  Figure 9—source data 1.Figure 9C,F and G.
+**Figure 9.:** (A, B) Hippocampal neurons were transduced with AAV to express GFP alone (A) or GFP plus Zdhhc14 shRNA#1 (B) and GFP-positive cells were subjected to whole-cell patch-clamp. Representative traces showing the development of outward currents following voltage steps from −80 to +100 mV (Δ15 mV). (C) Summary graph of outward current density following steps of the indicated voltages for neurons infected with control AAV (gray circles) or Zdhhc14 sh#1 AAV (green squares). Zdhhc14 knockdown reduces outward current density (C) Repeated Measures ANOVA, Virus p=0.18 [F(1)=2.06], membrane potential p<0.0001 [F(12)=73.14], **interaction p=0.0027 [F(12)=2.68]; (N = 7). There was also a significant difference (p<0.0001 [F(4)=8.46]) between conditions when the two curves were fitted with a Boltzmann equation. (D, E) Membrane potential was kept at −60 to −65 mV mV by injecting a small DC current through the recording pipette and voltage responses to the indicated current injection steps were measured. Representative traces from control (D) and Zdhhc14 shRNA#1 (E) transduced neurons in response to the indicated current injection steps are shown. (F, G) Summary graphs of number of action potentials fired (F) and latency to first action potential (AP, G) following injection of the indicated currents for neurons infected with control AAV (gray circles) or Zdhhc14 sh#1 AAV (green squares). Zdhhc14 knockdown increases AP firing (F: Repeated Measures ANOVA, *Virus p=0.020 [F(1)=5.84], injected current p<0.0001 [F(9)=49.31], interaction p=0.0002 [F(9)=3.64]; N = 23) and decreases latency to first AP (G: mixed effects model analysis, ****Virus p<0.0001 [F(1,43)=19.99], injected current p<0.0001 [F(3.35, 116.70)=15.18], interaction p<0.0001 [F(6, 209)=6.30]; N = 23).
+
+**Table 1.**
+ Electrophysiological properties of control and Zdhhc14 sh#1 (14 sh#1) AAV- infected hippocampal neurons. Table 1—source data 1.Source data for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Control AAV</th>
+      <th>14sh#1 AAV</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vhold (mV)</td>
+      <td>−63.14 +/− 1.53</td>
+      <td>−63.13 +/− 1.30</td>
+      <td>0.67MW</td>
+    </tr>
+    <tr>
+      <td>Rheobase (mA)</td>
+      <td>140.22 +/− 75.84</td>
+      <td>86.96 +/− 39.07</td>
+      <td>**0.0052MW</td>
+    </tr>
+    <tr>
+      <td>Peak amplitude (mV)</td>
+      <td>103.33 +/− 7.66</td>
+      <td>87.41 +/− 10.00</td>
+      <td>****0.00000028</td>
+    </tr>
+    <tr>
+      <td>Half width (ms)</td>
+      <td>2.68 +/− 0.50</td>
+      <td>3.02 +/− 0.94</td>
+      <td>0.18MW</td>
+    </tr>
+    <tr>
+      <td>Max rise slope (mV/ms)</td>
+      <td>154.15 +/− 49.03</td>
+      <td>89.76 +/− 44.78</td>
+      <td>****&lt;0.0001MW</td>
+    </tr>
+    <tr>
+      <td>Max decay scope (mV/ms)</td>
+      <td>−42.21 +/− 8.39</td>
+      <td>−33.16 +/−9.90</td>
+      <td>**0.0017</td>
+    </tr>
+    <tr>
+      <td>Input resistance: −25 pA</td>
+      <td>324.86 +/− 144.03</td>
+      <td>393.27 +/− 189.20</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>−50 pA</td>
+      <td>326.76 +/− 146.95</td>
+      <td>409.55 +/− 160.52</td>
+      <td>0.075</td>
+    </tr>
+    <tr>
+      <td>−75 pA</td>
+      <td>319.91 +/− 132.03</td>
+      <td>411.04 +/− 163.64</td>
+      <td>*0.044</td>
+    </tr>
+    <tr>
+      <td>−100 pA</td>
+      <td>304.48 +/− 113.12</td>
+      <td>397.83 +/− 160.32</td>
+      <td>*0.027</td>
+    </tr>
+    <tr>
+      <td>Peak dV/dt</td>
+      <td>133.62 +/− 40.47</td>
+      <td>85.45 +/− 41.07</td>
+      <td>***0.0002</td>
+    </tr>
+    <tr>
+      <td>Anti-peak dV/dt</td>
+      <td>−37.62 +/− 7.99</td>
+      <td>−32.11 +/− 9.56</td>
+      <td>*0.038</td>
+    </tr>
+    <tr>
+      <td>Resting membrane potential (mV)</td>
+      <td>−60.51 +/− 8.08</td>
+      <td>−54.79 +/− 8.31</td>
+      <td>*0.022</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean +/− SD is shown; N = 23; data were analyzed using unpaired Student’s t-test unless otherwise indicated: MW=Mann Whitney test._
 
 ## Discussion
 
@@ -124,51 +309,670 @@ In summary, our findings that palmitoylation of PSD93 by ZDHHC14 is important fo
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>ZDHHC14</td>
+      <td>GenBank</td>
+      <td>NP_078906.2</td>
+      <td>Protein (Homo sapiens)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZDHHC14</td>
+      <td>GenBank</td>
+      <td>NP_666185.3</td>
+      <td>Protein (Mus musculus)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZDHHC14</td>
+      <td>GenBank</td>
+      <td>NP_001034432.1</td>
+      <td>Protein (Rattus norvegicus)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZDHHC14</td>
+      <td>GenBank</td>
+      <td>XP_004914695.1</td>
+      <td>Protein (Xenopus tropicalis)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZDHHC14</td>
+      <td>GenBank</td>
+      <td>XP_005160409.1</td>
+      <td>Protein (Danio rerio)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZDHHC14</td>
+      <td>GenBank</td>
+      <td>XP_002127630.1</td>
+      <td>Protein (Ciona intestinalis)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>app (approximated)</td>
+      <td>GenBank</td>
+      <td>NP_001137937.1</td>
+      <td>Protein (Drosophila melanogaster)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DHHC-2</td>
+      <td>GenBank</td>
+      <td>NP_0493007.2</td>
+      <td>Protein (Caenorhabditis elegans)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PSD93β (Dlg2 gene product)</td>
+      <td>GenBank</td>
+      <td>XP_017445141.1</td>
+      <td>Protein (R. norvegicus)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PSD93β</td>
+      <td>GenBank</td>
+      <td>NP_001338205.1</td>
+      <td>Protein (H. sapiens)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kv1.1</td>
+      <td>GenBank</td>
+      <td>NP_775118.1</td>
+      <td>Protein (R. norvegicus)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kv1.2</td>
+      <td>GenBank</td>
+      <td>NP_037102.1</td>
+      <td>Protein (R. norvegicus)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kv1.4</td>
+      <td>GenBank</td>
+      <td>NP_037103.1</td>
+      <td>Protein (R. norvegicus)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kv1.1</td>
+      <td>GenBank</td>
+      <td>NP_000208.2</td>
+      <td>Protein (H. sapiens)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kv1.1</td>
+      <td>GenBank</td>
+      <td>NP_034725.3</td>
+      <td>Protein (M. musculus)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kv1.1</td>
+      <td>GenBank</td>
+      <td>XP_004912858.1</td>
+      <td>Protein (X. tropicalis)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kv1.1</td>
+      <td>GenBank</td>
+      <td>XP_005163101.1</td>
+      <td>Protein (D. rerio)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sh (Shaker)</td>
+      <td>GenBank</td>
+      <td>NP_523393.3</td>
+      <td>Protein (D. melanogaster)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SHK-1</td>
+      <td>GenBank</td>
+      <td>NP_871935.1</td>
+      <td>Protein (C. elegans)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-PSD93α-myc</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express R. norvegicus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-PSD93β-myc</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express R. norvegicus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-PSD93β-myc C10S</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express R. norvegicus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-PSD93β-myc C16,18S</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express R. norvegicus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-PSD93β-myc C10,16,18S</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express R. norvegicus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-PSD93β-myc 5CS</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express R. norvegicus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-HA-Zdhhc14</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express M. musculus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FEW-HA-Zdhhc14 LSSE</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transfect (HEK293 cells and rat neurons) and express M. musculus cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUGW</td>
+      <td>Addgene</td>
+      <td>Cat #14883 (RRID:Addgene_14883)</td>
+      <td>Lentiviral construct to transduce rat neurons and express Human UbC-driven EGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUGW H1-Zdhhc14sh#1</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transduce rat neurons and express Human UbC-driven EGFP and H1-driven shRNA (sequence: GCATTCAGAGCACCAAATTCGT)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUGW H1-Zdhhc14sh#2</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Lentiviral construct to transduce rat neurons and express Human UbC-driven EGFP and H1-driven shRNA (sequence: GCCACACTCTCAGACATTAT)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-GFP-Zdhhc14sh#1</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>AAV construct to transduce rat neurons and express EGFP and shRNA Backbone Addgene plasmid #26937</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPC97</td>
+      <td>Dong et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPC97 wild type Zdhhc14 C-term tail</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Zdhhc14 M. musculus gene fragment</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPC97 Zdhhc14 C-term tail LSSE</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Zdhhc14 M. musculus gene fragment</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPC86</td>
+      <td>Dong et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPC86 PSD93 PDZ3</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Dlg2 (Psd93) M. musculus gene fragment</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCIS GST-Zdhhc14 C-term tail</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Zdhhc14 M. musculus gene fragment transfected in HEK293T cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCIS GST-Zdhhc14 C-term tail LSSV</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Zdhhc14 M. musculus gene fragment transfected in HEK293T cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMDLg</td>
+      <td>Addgene</td>
+      <td>Cat #12251 (RRID:Addgene_12251)</td>
+      <td>Lentiviral Gag and Pol expressing plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSV-Rev</td>
+      <td>Addgene</td>
+      <td>Cat #12253 (RRID:Addgene_12253)</td>
+      <td>Lentiviral Rev expressing plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>Cat #12259 (RRID:Addgene_12259)</td>
+      <td>Lentiviral VSV-G envelope expressing plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHelper</td>
+      <td>Agilent</td>
+      <td>Cat #240071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-RC</td>
+      <td>Agilent</td>
+      <td>Cat #240071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>PJ69</td>
+      <td>James et al., 1996</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>HF7C</td>
+      <td>Feilotter et al., 1994</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (R. norvegicus)</td>
+      <td>Primary hippocampal neurons</td>
+      <td>Charles River</td>
+      <td></td>
+      <td>Freshly isolated from embryonic day 18 hippocampi</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSD93 (mouse monoclonal IgG1)</td>
+      <td>NeuroMab</td>
+      <td>Cat #75–057 (RRID:AB_2277296)</td>
+      <td>WB (1:500) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kv1.1 (mouse IgG2b)</td>
+      <td>NeuroMab</td>
+      <td>Cat #75–105 (RRID:AB_2128566)</td>
+      <td>WB (1:500) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kv1.2 (mouse monoclonal IgG2b)</td>
+      <td>NeuroMab</td>
+      <td>Cat #75–008 (RRID:AB_2296313)</td>
+      <td>WB (1:500) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kv1.4 (mouse monoclonal IgG1)</td>
+      <td>NeuroMab</td>
+      <td>Cat #75–010 (RRID:AB_2249726)</td>
+      <td>WB (1:500) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluN2B (mouse monoclonal IgG2b)</td>
+      <td>NeuroMab</td>
+      <td>Cat #75–101 (RRID:AB_2232584)</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AnkG (mouse monoclonal IgG2a)</td>
+      <td>NeuroMab</td>
+      <td>Cat #75–146 (RRID:AB_10673030)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GST (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat #A190-122A (RRID:AB_67419)</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA tag (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #3724 (RRID:AB_1549585)</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Erk1/2 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #4696 (RRID:AB_390780)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #4499 (RRID:AB_10544537)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc tag (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #2278 (RRID:AB_490778)</td>
+      <td>WB (1:5000) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAP43 (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat #NB300-143 (RRID:AB_10001196)</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat #AB16901 (RRID:AB_90890)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td>Cat #A-11122</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep anti-mouse HRP-linked polyclonal</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat #NA931</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit HRP-linked polyclonal</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat #711–0350152</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 488 goat anti-chicken polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-11039 (RRID:AB_142924)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 488 goat anti-rabbit polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-11032 (RRID:AB_2534091)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 568 goat anti-rabbit polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-11011 (RRID:AB_143157)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 568 goat anti-IgG2a polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-21134 (RRID:AB_2535773)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 647 goat anti-IgG2a polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-21241 (RRID:AB_141698)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 647 goat anti-IgG1 polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-21240 (RRID:AB_141658)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 647 goat anti-IgG2b polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #A-21242 (RRID:AB_2535811)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZDHHC14 rabbit polyclonal</td>
+      <td>This paper</td>
+      <td>Source: Thomas Lab</td>
+      <td>Immunogen: CDSLHEDSVRGLVKLSSV WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MMTS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #23011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxylamine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #26103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-HPDP</td>
+      <td>Soltec Ventures</td>
+      <td>Cat #B106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>Abcam</td>
+      <td>Cat #Ab1200017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Abcam</td>
+      <td>Cat #Ab120003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Abcam</td>
+      <td>Cat #Ab120315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein assay</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>High capacity Neutravidin-conjugated beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#29202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutathione Sepharose</td>
+      <td>GE Healthcare</td>
+      <td>#17075601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#11668030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ Fiji</td>
+      <td>Schindelin et al., 2012; Schneider et al., 2012</td>
+      <td>(RRID:SCR_003070)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axograph X version 1.6.4</td>
+      <td>AxoGraph Scientific</td>
+      <td>https://axograph.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism version 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-3216 (RRID:CVCL_0063)</td>
+      <td>The identity of the cell line used in this study was authenticated by ATCC using STR profiling and was found to be an exact match to CRL-3216 (HEK293T) in the ATCC STR database. The cells have been tested for mycoplasma nd are negative.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>AAV-Pro HEK293T</td>
+      <td>Takara Bio</td>
+      <td>Cat #632273</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies
 
 In addition to the commercially available antibodies listed in the Key Resources Table, a ZDHHC14 antibody was raised in rabbits against the peptide CDSLHEDSVRGLVKLSSV (amino acids 473–489 of rat ZDHHC14, plus N-terminal cysteine for conjugation). The resultant antiserum was affinity-purified using the parent immunogenic peptide, and the eluate was then negatively purified using the peptide CLVKLSSV. The resultant flowthrough was dialyzed against PBS and used for experiments.
 
-## Molecular biology and cDNA clones
+### Molecular biology and cDNA clones
 
 Full-length mouse Zdhhc14 cDNA (a kind gift of Dr. M. Fukata) was used as a template to PCR the C-terminal 98 amino acids of ZDHHC14, and the PCR product was subcloned into the yeast expression vector pPC97 for Yeast 2-hybrid experiments. The same PCR product was cloned into pCIS vector 3’ of a GST tag to generate GST fusion protein. The LSSV PDZ ligand was mutated to LSSE by PCR mutagenesis. Mouse Dlg2 cDNA encoding PSD93α was a gift from Dr. Richard Huganir (Johns Hopkins School of Medicine) and was subcloned into FEWmyc (EF1α promoter) vector to tag with myc on the C-terminus. Psd93β cDNA was generated by overhang PCR from Psd93α cDNA and the resultant product was subcloned into FEWmyc vector to tag with myc on the C-terminus. PSD93β cysteine mutants were generated either by gene synthesis (Genewiz) or by conventional PCR-based site directed mutagenesis. Full-length Zdhhc14 cDNA was also cloned into HA-FEW vector downstream of an N-terminal HA epitope tag. LSSE PDZ-mutant Zdhhc14 cDNA was generated by PCR and was also subcloned into FEW-HA vector. Two shRNA sequences targeting rat Zdhhc14 (Zdhhc14sh#2: GCCACACTCTCAGACATTAT and Zdhhc14sh#1 GCATTCAGAGCACCAAATTCGT) were subcloned into FUGW vector (GFP expressing) (Holland et al., 2016; Lois et al., 2002) together with an H1 promotor to drive shRNA expression. ShRNA efficacy was tested in rat hippocampal neurons.
 
 Vector pAAV-hSyn-hChR2(H134R)-eYFP (Addgene plasmid #26973) was cut with MluI and HindIII to replace the hSyn-hChR2(H134R)-eYFP fragment with a cassette (synthesized by Genewiz) containing an H1 promoter and shRNA against the kinase DLK, flanked by PacI restriction sites (Holland et al., 2016) and followed by the human synapsin promoter, an additional PspXI site, Kozak sequence and eGFP cDNA. The resultant vector, termed pAAV-DLKsh-GFP was cut with PacI to excise the H1 promoter plus DLK shRNA. The cut vector was then either directly re-ligated to generate pAAV-GFP or ligated with a cassette (synthesized by Genewiz) containing H1 promoter plus Zdhhc14sh#1 to generate pAAV-GFP-Zdhhc14sh#1.
 
-## Yeast 2-hybrid screen
+### Yeast 2-hybrid screen
 
 Two-hybrid screening using the PJ69 yeast strain was performed as previously described (Thomas et al., 2012). Briefly, a cDNA coding for the C-terminal 98 amino acids of mouse ZDHHC14 was used to screen a rat hippocampal cDNA library. Clones that grew on quadruple deficient plates (Leu-/Trp-/His-/Ade-) were selected and their plasmids isolated and sequenced. Positive clones were confirmed by re-transformation of yeast with purified bait and individual ‘hit’ plasmids and assessing growth on quadruple deficient plates. Back-transformation using a modified prey plasmid coding for the third PDZ domain of PSD93 was performed in HF7C yeast (Feilotter et al., 1994).
 
-## HEK293T cell culture and transfection
+### HEK293T cell culture and transfection
 
 HEK293T (ATCC, CRL-3216) cells were cultured in Dulbecco’s Modified Eagle Medium (DMEM, Thermo Fisher Scientific) supplemented with 10% fetal bovine serum, 1% Penicillin-Streptomycin (Thermo Fisher Scientific), and 1x GlutaMAX Supplement (Thermo Fisher Scientific). A previously described calcium phosphate transfection protocol was used for all HEK293T transfections (Thomas et al., 2005). The identity of this cell line was authenticated by ATCC using STR profiling and was found to be an exact match to CRL-3216 (HEK293T) in the ATCC STR database. The cells have been tested for mycoplasma and are negative.
 
-## Hippocampal neuron culture and transfection
+### Hippocampal neuron culture and transfection
 
 Hippocampal neurons were dissociated from dissected embryonic day 18 rat hippocampi as previously described and cultured in Neurobasal with B27 supplement (Thermo Fisher Scientific) (Thomas et al., 2012). Lipofectamine 2000 was used to transfect hippocampal neurons on coverslips on day in vitro 12–15 (Thomas et al., 2012).
 
-## GST pulldown
+### GST pulldown
 
 Co-precipitation between ZDHHC14 C-terminal tail and PSD93α or β was performed as previously described (Thomas et al., 2012). HEK293T cells were cotransfected with pCIS constructs to express GST-ZDHHC14 WT or LSSE C-terminal tails or GST alone and FEW constructs to express C-terminally myc-tagged PSD93α or β. Cells were lysed 16 hr later in immunoprecipitation buffer (IPB: 1x phosphate buffered saline [PBS], 1% [w/v] Triton X-100, 50 mM NaF, 5 mM Na4P2O7, 1 mM Na3VO4, 1 mM EDTA, and 1 mM EGTA plus protease inhibitor cocktail [PIC, Roche, Indianapolis, IN] and microcystin-LR) and insoluble material was removed by centrifugation and passage through a 0.22 μm Spin-X filter column (#8160, Thermo Fisher Scientific). Supernatants were incubated with Glutathione Sepharose (GE Healthcare, Chicago, Il) for 90 min after which beads were washed with IPB, precipitates eluted with 1x SDS sample buffer (SB: 2% SDS [w/v], 50 mM Tris pH 6.8, 10% [v/v] glycerol, 0.005% [w/v] bromophenol blue, and 1% [v/v] β-mercaptoethanol), and subjected to SDS-PAGE followed by western blot as described below.
 
-## Lenti and AAV virus production and shRNA knockdown
+### Lenti and AAV virus production and shRNA knockdown
 
 VSV-G pseudotyped lentivirus was generated as described (Thomas et al., 2012). HEK293T cells were transfected with FUGW vector (with or without Zdhhc14sh#1 or #2) vector with untagged Zdhhc14 cDNA and VSV-G, pMDLg, and RSV-Rev helper plasmids. Lentivirus was concentrated by ultracentrifugation of HEK293T cell media collected 48- and 72 hr post-transfection and resuspended in Neurobasal media (Thermo Fisher Scientific). Infection of hippocampal neurons with control or Zdhhc14shRNA virus was performed on DIV9. Neurons were lysed for biochemistry on DIV16 or fixed for immunocytochemistry on DIV16-18.
 
 Adeno-associated viruses were made in AAV-Pro HEK293T cells (Takara Bio) by co-transfecting pAAV-GFP or pAAV-GFP-Zdhhc14sh#1 with pAAV2 (pACG2)-RC triple mutant (Y444, 500, 730F) (Petrs-Silva et al., 2011) and pHelper (Stratagene, La Jolla, California) plasmids. Cells were lysed 72 hr post-transfection to release viral particles, which were precipitated using 40% (w/v) polyethylene glycol and purified by cesium chloride density gradient centrifugation. Fractions with refractive index from 1.370 to 1.374 were dialyzed in MWCO 7000 Slide-A-Lyzer cassettes (Thermo Fisher Scientific, Waltham, Massachusetts) overnight at 4°C. AAV titers used for this study were in the range of 1.5–2.5 × 1012 genome copies (GC)/ml determined by real-time PCR.
 
-## Acyl-biotin exchange assay (ABE)
+### Acyl-biotin exchange assay (ABE)
 
 Palmitoylation levels were determined as previously described (Thomas et al., 2012). 8 hr after transfection HEK293T cells were lysed and sonicated in ABE lysis buffer (50 mM HEPES pH 7.0, 2% [w/v] SDS, 1 mM EDTA plus PIC) with 20 mM thiol-reactive methyl-methane thiosulfonate (MMTS, Thermo Fisher Scientific) to block free cysteine residues. Transduced hippocampal neurons were lysed and sonicated in the same lysis buffer on DIV16 and lysates passed through a QIAshredder homogenization column (#79654, Qiagen, Hilden, Germany). HEK293T cell and hippocampal neuron lysates were then incubated at 50°C for 20 min after which protein was precipitated and excess MMTS removed by acetone precipitation. Protein pellets were then dissolved in 4% SDS buffer (4% [w/v] SDS, 50 mM Tris pH 7.5, 5 mM EDTA plus PIC) and the resultant solution wassplit in two and incubated for one hour with either 0.7 M hydroxylamine pH 7.4 (+NH2OH, HAM, Thermo Fisher Scientific), to cleave thioester bonds and remove palmitate groups, or with 50 mM Tris pH 7.4 (buffer control, -NH2OH). Both buffers contained 1 mM biotin-HPDP (Soltec Ventures, Beverly, MA) to biotinylate newly revealed cysteines. Protein was then acetone precipitated again to remove excess hydroxylamine and biotin-HPDP and pellets were re-dissolved in lysis buffer plus PIC without MMTS and then diluted 1:20 in dilution buffer (50 mM HEPES, 1% [v/v] Triton X-100, 1 mM EDTA, 1 mM EGTA, 150 mM NaCl plus protease inhibitors). Biotinylated proteins were then purified using high capacity neutravidin-conjugated beads (Thermo Fisher Scientific) via incubation for three hours at 4°C after which beads were washed extensively in dilution buffer plus 0.5M NaCl. Purified protein was then eluted by HPDP reduction with 1% (v/v) β-mercaptoethanol (Millipore-Sigma) in elution buffer (0.2% [w/v] SDS and 0.25M NaCl in dilution buffer) for 10 min at 37°C. Eluted protein was then denatured in SB and subjected to SDS-PAGE followed by western blot as described below.
 
-## Western blot and quantification
+### Western blot and quantification
 
 For developmental time course experiments hippocampal neurons were lysed and sonicated in ABE lysis buffer with PIC on the indicated DIV. Lysates were passed through a 0.22 μm Spin-X filter column after which total protein amount was determined using the Pierce BCA Protein Assay Kit (#23225, Thermo Fisher Scientific). Equal protein amounts were denatured in SB and subjected to SDS-PAGE. SDS-PAGE gels with GST precipitates, ABE samples, or developmental time course samples were transferred to Immobilon-P PVDF (#IPVH00010, 0.45 μm, Millipore-Sigma) membranes, blocked in 5% (w/v) skim milk/Tris buffered saline (TBS), and immunoblotted with indicated antibodies. HRP conjugated secondary antibodies were used for ECL-mediated visualization (Western Lightening Plus-ECL, #NEL105001EA, Perkin Elmer, Waltham, MA) with film (GeneMate Blue Lite Autorad Film, F-#9024−8 × 10, VWR, Radnor, PA). Independent neuronal cultures or HEK293T transfections from separate passages were considered biological replicates. In both cases individual plates of cells were randomly assigned to the various groups. Uncropped western blot images are shown in the following figure supplements corresponding to the parent figure: Figure 1—figure supplement 4, Figure 2—figure supplement 2, Figure 4—figure supplement 2, Figure 5—figure supplement 2, and Figure 6—figure supplement 1. Quantifications were performed using Image Studio Lite.
 
-## Immunostaining
+### Immunostaining
 
 To determine AIS targeting of endogenous proteins, transduced neurons on coverslips were fixed in 2% (w/v) paraformaldehyde (PFA, Electron Microscopy Sciences, Hatfield, PA) in 1xPBS with 4% (w/v) sucrose for 15 min at 4°C. Transfected neurons were fixed in 4% (w/v) PFA in 1xPBS with 4% (w/v) sucrose for 10 min at room temperature. All coverslips were then washed three times (five minutes per wash) in 1xPBS followed by block and permeabilization with 5% (v/v) normal goat serum (NGS, Southern Biotech) and 0.25% (v/v) Triton X-100 in 1xPBS for 1 hr at room temperature. Coverslips were incubated with indicated primary antibodies overnight at room temperature in permeabilization/block solution, washed with PBS and then incubated with Alexa-Fluor conjugated secondary antibodies for one hour at room temperature before mounting on glass slides with FluorSave Reagent (Millipore-Sigma, #345789). Specificity of anti-PSD93, anti-Kv1.1, anti-Kv1.2, anti-Kv1.4, and anti-ankyrin-G antibodies in immunocytochemical studies was verified by control experiments omitting the primary antibody in question, which, in each case, abolished staining.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Immunostained neurons were imaged using a Nikon C2 inverted confocal microscope with a 60x oil immersion objective (1.4 NA, plan-Apo). Z-stack images were taken with 0.4 μm spacing at 1024 × 1024 resolution and parameters were kept constant between different conditions. In all experiments wells of neurons were randomly assigned to the various groups.
 
@@ -180,10 +984,10 @@ Images of spine-bearing (i.e. presumptive excitatory) PSD93β-myc transfected ne
 
 For illustration purposes images used in figures are maximum intensity projections generated and modified for brightness and contrast using ImageJ Fiji where settings were maintained across each example set of images.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 For electrophysiological experiments, neurons were cultured as described (Moon et al., 2013) and infected at DIV3 with AAVs. At 13–15 days post-infection whole-cell patch-clamp recordings were performed at room temperature. Cells were briefly viewed for EGFP fluorescence to confirm infection (Olympus FITC/GFP filter cube). Whole-cell recordings were obtained using borosilicate glass electrodes (resistance 3–5 MΩ) filled with intracellular solution containing the following (in mM): 130 potassium methylsulfate, 10 KCl, 5 Tris-phosphocreatine, 10 HEPES, 4 NaCl, 4 Mg2ATP, and 0.4 Na4GTP. The pH was adjusted to 7.2 to 7.3 with KOH. The extracellular solution contained the following (in mM): 125 NaCl, 26 NaHCO3, 2.5 KCl, 1 NaH2PO4, 1.3 MgCl2, 2.5 CaCl2, and 12 glucose, saturated with 95% O2 and 5% CO2. NBQX (4 μM), D-AP5 (10 μM), and picrotoxin (100 μM; Abcam) were included in the extracellular medium to block AMPA-, NMDA-, and GABA-mediated synaptic transmission, respectively. For all current-clamp experiments membrane potential was kept between −60 and −65 mV by applying small DC current. For the voltage-clamp experiments we used the same intracellular solution as for the current-clamp recordings. Neurons were held at −70 mV and a series of voltage steps were given from −80 mV to +100 mV in increments of 15 mV. Data were acquired using Multiclamp 700B amplifier (Molecular Devices) and digitized using Digidata 1440A (Molecular Devices). All data were low-pass filtered at 10 kHz and sampled at 50 kHz. Individual neurons were considered biological replicates and wells of neurons were randomly assigned to the various groups. Data were analyzed off-line using Clampfit (Molecular Devices).
 
-## Statistical analysis
+### Statistical analysis
 
 All data were analyzed using GraphPad Prism eight software (GraphPad Software, San Diego, CA). In all graphs the mean is shown and error bars indicate standard deviation of the mean (SD). Shapiro-Wilk normality test was used to determine if data were normally distributed. Statistical test used is indicated in the corresponding figure legend or table column. In cases with two experimental groups, if data were normally distributed unpaired Student’s t-test was used but if data were not normally distributed or variances between groups were unequal (determined by F test) a non-parametric Mann Whitney t-test was used. In cases with more than two experimental groups, all data were normally distributed, thus 1-way ANOVA was used unless variances between groups were unequal (determined by Bartlett’s test), in which case Welch’s 1-way ANOVA was used instead. In cases with more than one independent variable without repeated measures, two-way ANOVA was used. When repeated electrophysiological measurements were taken on individual neurons with increasing current steps, neurons fired 0-X number of action potentials and the resulting data were analyzed using a repeated measures 2-way ANOVA. However, when a neuron did not fire any action potentials at a given current step there was no time value for latency to first action potential resulting in missing values so instead a mixed effects analysis was used.

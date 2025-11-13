@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00hjz7x27 Department of Neuroscience, Georgetown University Medical Center Washington DC United States
-2. https://ror.org/022k4wk35 State Key Laboratory of Cognitive Neuroscience and Learning and IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China
-3. https://ror.org/022k4wk35 Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University Beijing China
-4. https://ror.org/029819q61 Chinese Institute for Brain Research Beijing China
+1. Department of Neuroscience, Georgetown University Medical Center Washington DC United States ([ROR:00hjz7x27](https://ror.org/00hjz7x27))
+2. State Key Laboratory of Cognitive Neuroscience and Learning and IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+3. Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+4. Chinese Institute for Brain Research Beijing China ([ROR:029819q61](https://ror.org/029819q61))
 
 † Corresponding author
 
@@ -34,17 +34,66 @@ Therefore, the goal of the current study is to use brain connectivity to test if
 
 ## Results
 
-## Does AC-FC variability differ between congenitally deaf and hearing individuals?
+### Does AC-FC variability differ between congenitally deaf and hearing individuals?
 
 We first investigated whether deafness causes changes to the individual differences in functional connectivity (FC) from the AC. To achieve this, FC maps were assessed within each group, the deaf and hearing groups, for their voxel-wise variability across individuals. This was accomplished through the implementation of a whole-brain voxel-level test for homogeneity of variance (Brown-Forsythe test, see Methods). We found that multiple regions showed significant intersubject variability differences in FC between the deaf and hearing groups (Figure 1A; see also Supplementary file 1, table S1 for the peaks of this effect). These included areas of the left temporal lobe (superior temporal gyrus [STG] and middle temporal gyrus [MTG], including the auditory association cortex), the bilateral inferior frontal gyrus (IFG, including Broca’s area), paracentral lobe, and a small part of the dorsal visual cortex. The clusters in the STG, MTG, and IFG fall, to a great extent, within classically identified language regions (see white outline in Figure 1A; mapping language areas from Fedorenko et al., 2010). This major effect of deafness on individual differences in FC was uniquely strong for the AC. Replicating this analysis with multiple control regions (all atlas cortex areas not involved in audition or language; Harvard-Oxford Atlas) showed that AC-FC had a much more substantial change in variability due to deafness (X2=2303.18, p<0.0001; Appendix 1—figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96944/elife-96944-fig1-v1.jpg)
+
+**Figure 1.:** (A) Significant differences in the interindividual variability of the AC-FC values between deaf and hearing groups (p<0.05, cluster-corrected for multiple comparisons) are presented on inflated cortical hemispheres. These are found in the left STG (including the auditory association cortex), bilateral IFG (including part of Broca’s area), paracentral lobule, along with the dorsal visual stream. (B) The ratio of the within-group variability of AC-FC between the deaf and hearing groups is presented (within areas showing variability between the groups). Most areas showing a change in variability between the groups display larger individual differences in deafness, including the left auditory association cortex and Broca’s area. (C) Differences in native signing deaf subgroup and hearing group in their interindividual variability of the AC-FC values (p<0.05, cluster-corrected for multiple comparisons) replicate the effect of the mixed deaf group (A). (D) The ratio of the variability of AC-FC between the native signing deaf and hearing (within areas showing variability difference between the groups). No area showed increased individual differences for the hearing group. Native signing deaf participants have higher individual differences, despite having no delay in language acquisition. Anatomical marks: SMA = supplementary motor area; IFG = inferior frontal gyrus; STG = superior temporal gyrus. The regions outlined in white show some of the language-sensitive regions identified by Fedorenko et al., 2010, including the IFG, the anterior and the posterior temporal parcellations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96944/elife-96944-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Differences in delayed signing deaf subgroup and hearing group in their interindividual variability of the AC-FC values (p<0.05, cluster-corrected for multiple comparisons). (B) The ratio of the variability of AC-FC between the delayed signing deaf and hearing (within areas showing variability difference between the groups) replicates the effects seen when comparing the hearing and mixed deaf group. Anatomical marks: SMA = supplementary motor area; IFG = inferior frontal gyrus; STG = superior temporal gyrus.
+
 To determine which group has larger individual differences in these regions (Figure 1B), we computed the ratio of variability between the two groups (deaf/hearing) in the areas that showed a significant difference in variability (Figure 1A). The deaf show variability over twice as large as the hearing in most of the areas that show change to within-group variability, including the STG, MTG, and the IFG. The deaf group showed lower variability in only one cluster in the left early visual cortex. Thus, the findings from this analysis indicate that as in vision, in hearing individuals auditory experience appears to exert a general stabilizing influence on FC, whereas hearing loss leads to greater overall variability between individuals in the connectivity of the AC. A single exception is that the deaf had more consistent connectivity between their early auditory and visual cortices. This suggests that as in vision loss (Sen et al., 2022), individual differences dramatically increase due to deafness.
 
-## Is the increased variability (mainly) explained by hearing loss?
+### Is the increased variability (mainly) explained by hearing loss?
 
 Our sample of deaf individuals was rather homogenous in having severe to profound hearing loss from early life. However, it included a mix of native signers and adults who were deaf children to hearing parents, who were taught to sign later in life, and, in effect, experienced delayed language acquisition. Given that our sample of deaf individuals exhibited varying ages of language acquisition, it raises the question of whether the observed FC variability above is primarily attributable to delayed language acquisition or to hearing loss. To investigate this question, we tested if the increased variability would still be found when comparing native deaf signers to hearing individuals, all of whom had natural language experience (for sign or spoken language, respectively) from birth through their parents. Our results demonstrated a very similar pattern to the one described above, revealing increased variability in temporal, frontal, and medial regions (Figure 1C; see also Table S1). The FC variability is higher in the native signing deaf individuals when compared to the hearing individuals (Figure 1D). Similar findings are seen when comparing the deaf delayed language and hearing groups (e.g. for the IFG, Figure 1—figure supplement 1). This outcome suggests that deafness-related factors, even without delayed language acquisition, are sufficient to generate more diverse FC from the AC between individuals and that auditory experience, regardless of language exposure, exerts a broad stabilizing effect on FC.
 
-## Does AC variability increase especially for areas that reorganize in deafness?
+**Table 1.**
+ Participants’ demographic information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Native deaf signers (N=16)</th>
+      <th>Delayed deaf signers (N=23)</th>
+      <th>Hearing nonsigners (N=33)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age of sign language acquisition</td>
+      <td>0±0</td>
+      <td>6.91±1.62</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>28.50±7.13</td>
+      <td>27.09±5.87</td>
+      <td>21.97±2.54</td>
+    </tr>
+    <tr>
+      <td>Years of education</td>
+      <td>14.13±2.31</td>
+      <td>15.09±1.41</td>
+      <td>15.03±1.93</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>11 M, 5 F</td>
+      <td>12 M, 11 F</td>
+      <td>15 M, 18 F</td>
+    </tr>
+  </tbody>
+</table>
+
+### Does AC variability increase especially for areas that reorganize in deafness?
 
 To test if this change in individual differences stems from variable outcomes of deafness-related plasticity, we tested if areas that show reorganization in FC are especially susceptible to increased individual differences. We computed the change in FC from the AC between the hearing and deaf groups (Figure 2A). Consistent with prior research (e.g. Andin and Holmer, 2022; Ding et al., 2016), deaf individuals showed increased FC to the AC in frontal, temporal, and parietal regions, while for the hearing the connectivity was stronger to sensorimotor areas (Figure 2B). We then explored whether regions that had undergone functional reorganization due to deafness also exhibited high variability within the deaf group. We predicted that if plasticity due to deafness results in higher variability, then areas with overall FC change between the groups would also display heightened variability within the deaf group, leading to a correlation between the two spatial maps. We therefore conducted a correlation analysis between the spatial pattern of variability difference observed between the groups (Figure 1A) and the spatial pattern of the group effect in terms of AC-FC (Figure 2A). The Pearson’s correlation coefficient between these two maps was modest but highly significant (r=0.24, p<0.0001 for both smoothed and unsmoothed permuted data; confirmed through a permutation test shuffling voxel location across 100,000 iterations; Figure 2C). This suggests a moderate link between variability and plasticity: not only is the AC-FC more variable in the deaf, but the variability seems to also be increased in areas that showed reorganization because of deafness. To test which of the regions that had undergone reorganization had particularly variable plasticity across individuals, we inspected the variability ratio between the deaf and hearing groups in the areas that had group-level changes to FC. We found that all the areas that showed changes to FC exhibited either greater variability within the deaf group (mainly in the parietal and right frontal cortex) or similar variability in both groups (Figure 2D). No region showed higher variability in the hearing. Together, this suggests that plasticity FC of the AC in deafness is overall linked to more variable outcomes across individuals.
 
@@ -52,7 +101,7 @@ To test if this change in individual differences stems from variable outcomes of
 
 **Figure 2.:** (A) ANOVA main effect showing which regions are reorganized in deafness (group difference between the deaf and hearing in auditory cortex functional connectivity [AC-FC]) (p<0.05, cluster-corrected for multiple comparisons). (B) Direct comparison of AC-FC between deaf and hearing groups (p<0.05, cluster-corrected for multiple comparisons) broadly replicated previous findings, showing broad reorganization in deafness. (C) Correlation between regions that show increased individual differences (Figure 1A) with the regions that show reorganization in deafness (A) is shown as a red line (r=0.24) compared with a spatial permutation test (distribution in black); the brain patterns of FC reorganization and that of increased individual differences are correlated, suggesting increased individual differences characterizes plasticity in deafness. (D) The ratio of the intragroup variability of AC-FC between the deaf and hearing groups is shown within areas showing reorganization group-level changes to FC. No area showed increased individual differences for the hearing group. Among the areas showing a change in AC-FC in deafness, individual differences are overall increased (red-orange) or stable (uncolored). Anatomical marks: SMA = supplementary motor area; IFG = inferior frontal gyrus; STG = superior temporal gyrus.
 
-## Does delayed language acquisition affect individual differences?
+### Does delayed language acquisition affect individual differences?
 
 Finally, we aimed to investigate the independent impact of language exposure, and whether delayed language acquisition played an additional role in the heightened variability observed among deaf individuals. To address this, we replicated the FC variability analysis by comparing deaf native signers to deaf delayed signers, equating hearing loss. In contrast to the results above, which revealed extensive variability change across multiple brain regions, this analysis only identified significant differences between native and delayed deaf signers in four small clusters (Figure 3A; see also Table S1) in the left posterior middle frontal gyrus (pMFG), close to the precentral gyrus (PreCG), the left posterior supramarginal gyrus (pSMG), left dorsal visual cortex (precuneus and cuneus), and the right anterior inferior frontal gyrus (aIFG). Interestingly, these regions did not all show a consistent effect in their direction, but instead increased variability was attributed to both subgroups for different clusters. FC variability was increased for the deaf delayed signing individuals both in the left MFG and the right aIFG (Figure 3B). In contrast, the deaf native signing individuals showed higher variability in the pSMG and the dorsal stream (precuneus and cuneus) (Figure 3B). Interestingly, the two areas that had increased variability in delayed signers closely corresponded to language-related areas (e.g. pMFG and aIFG). These findings indicate that beyond the broader effects of deafness on individual differences in the FC of the early AC, delayed language acquisition can also affect individual differences, albeit to a lesser extent.
 
@@ -60,7 +109,7 @@ Finally, we aimed to investigate the independent impact of language exposure, an
 
 **Figure 3.:** (A) Differences between delayed and native signing deaf subgroups in their interindividual variability of the AC-FC values (p<0.05, cluster-corrected for multiple comparisons) show changes to individual differences in four specific clusters. (B) The ratio of the variability of AC-FC between the delayed signing and native signing deaf (within areas showing variability between the subgroups) shows that individual differences increase due to delayed language acquisition in the left MFG and right anterior IFG, but that early-onset sign language exposure increases variability in the connectivity between the AC and the left SMG and left dorsal medial visual cortex (cuneus and precuneus). Anatomical marks: PoS = parietooccipital sulcus; IFG = inferior frontal gyrus; SMG = supramarginal gyrus; MFG = middle frontal gyrus.
 
-## Could other individual factors explain individual differences in deafness?
+### Could other individual factors explain individual differences in deafness?
 
 Our results so far suggest that the early lack of hearing experience (i.e. congenital deafness) is the primary factor driving AC-FC variability. However, even congenital deafness is not completely homogenous, and other factors related to partial hearing experience could also contribute to this individual variability among the deaf. For instance, the degree of hearing loss and the use of hearing aids, which provide residual hearing (even if not sufficient for language comprehension in the case of our participants), might also influence individual differences. To test this, we computed the correlation between AC-FC and three factors related to hearing experience: the age when hearing aids were first used, the duration of hearing aid use, and the hearing threshold. At the whole-brain level, we observed that AC-FC to different brain regions, primarily in the occipital lobe, but also in posterior MTG (Appendix 1—figure 2), are influenced by the age at which our deaf participants began using hearing aids, such that higher FC is correlated with older ages of onset. Interestingly, there was no correlation between the duration of hearing aid use and AC-FC with any brain region (no significant clusters, p<0.05, cluster-corrected for multiple comparisons). Last, we tested the correlation between AC-FC and hearing threshold. This analysis was possible only on a subset of our sample (N=23), with the remaining participants only able to report the level of hearing loss (i.e. ‘profound’) rather than specific hearing threshold values, and therefore should be interpreted cautiously. We found that AC-FC to the left fusiform gyrus is correlated with the hearing threshold of deaf participants (Appendix 1—figure 2), indicating that more profound hearing loss is associated with stronger FC between the AC and the fusiform gyrus.
 
@@ -90,7 +139,7 @@ In conclusion, this study demonstrates that the lack of auditory experience resu
 
 ## Methods
 
-## Participants
+### Participants
 
 We recruited 39 congenitally or early deaf adults and 33 hearing college students, all native Mandarin Chinese speakers (15 males, mean age 21.97±2.58 years, range: 18–28 years; see Table 1 for the detailed characteristics of the participants). All of them possessed normal or corrected-to-normal vision, and their majority was right-handed (with the exception of three deaf individuals), as determined by the Edinburgh inventory (Oldfield, 1971). Prior to their involvement in the study, all participants provided written informed consent and received monetary compensation for their participation. The research protocol was reviewed and approved by the Human Subject Review Committee at Peking University (2017-09-01), adhering to the principles outlined in the Declaration of Helsinki.
 
@@ -100,29 +149,29 @@ The deaf participants were divided into two distinct subgroups. The first subgro
 
 The hearing group and the deaf group were matched based on gender and years of education (p>0.15), but there was a significant age difference between these two groups (p<0.05). Given this significant age difference, we used age as a nuisance variable in our FC analyses, and the differences in variability were assessed after statistically accounting for the age variable.
 
-## Image acquisition
+### Image acquisition
 
 Functional and structural MRI data were collected using a Siemens Prisma 3T Scanner with a 64-channel head-neck coil at the Center for MRI Research, Peking University. Functional data were acquired with a simultaneous multi-slice echoplanar imaging sequence supplied by Siemens (62 axial slices, repetition time [TR]=2000 ms, echo time [TE]=30 ms, multiband factor = 2, flip angle [FA]=90°, field of view [FOV]=224 mm×224 mm, matrix size = 112×112, slice thickness = 2 mm, gap = 0.2 mm, and voxel size = 2 mm×2 mm×2.2 mm). A high-resolution 3D T1-weighted anatomical scan was acquired using the magnetization-prepared rapid acquisition gradient echo sequence (192 sagittal slices, TR = 2530 ms, TE = 2.98 ms, inversion time = 1100 ms, FA = 7°, FOV = 224 mm×256 mm, matrix size = 224 × 256, interpolated to 448×512, slice thickness = 1 mm, and voxel size = 0.5 mm×0.5 mm×1 mm).
 
-## Image preprocessing
+### Image preprocessing
 
 We used SPM12 (Welcome Trust Centre for Neuroimaging, London, UK), run in MATLAB R2018b (Mathworks, Inc, Sherborn, MA, USA), for processing and analysis of structural and functional data. For each participant, the first four volumes of each functional run were discarded for signal equilibrium. The remaining functional data were slice-time corrected to the first slice (middle slice in time) and corrected for head motion to the first volume of the first session using 7th degree B-spline interpolation. All participants had head motion less than 2 mm/2°, except for one hearing participant that showed excessive head motion in 2 runs, which were excluded from analysis. Structural images were coregistered to the first functional images. Functional data were then normalized to MNI anatomical space using a 12-parameter affine transformation model in DARTEL (Ashburner, 2007) and resampled to 2 mm3 voxel size prior to applying a 6 mm FWHM Gaussian filter.
 
-## Stimuli and procedure
+### Stimuli and procedure
 
 During the fMRI scanning, the participants performed a semantic task whose predictors were regressed out to focus on the underlying FC patterns. Design-regressed task data have been extensively used in the past to calculate FC (e.g. Amaral et al., 2021; Gratton et al., 2018; Norman-Haignere et al., 2012; Walbrin and Almeida, 2021), and it has been shown that it effectively leads to similar FC estimates as when using resting scans (Fair et al., 2007). Stimuli comprised of a set of 90 written words. This set consisted of 40 concrete/object words and 50 abstract/nonobject words, the latter lacking explicit external referents. Participants were given instructions to visually examine each of these 90 target words, contemplate their meanings, and engage in an oddball one-back semantic judgment task (Wang et al., 2023).
 
 Each participant completed a total of 10 runs of task fMRI scanning, with each run lasting for 360 s. One native signer completed only 8 runs and subsequently withdrew from the study due to discomfort, so we analyzed 8 runs for this subject. In each run, there were 90 target word trials, each lasting for 2.5 s, as well as 14 catch trials, also lasting 2.5 s each. For more details about this experiment, please see Wang et al., 2023. There was no difference in the activation for words across the brain (p<0.05, cluster-corrected for multiple comparisons) between the deaf and hearing participants in this task. Hearing and deaf participants performed differently in terms of accuracy (accdeaf = 74% vs. acchearing = 89%, t(70) = 5.6, p<0.05), but not in terms of reaction time (RTdeaf = 1083 ms vs. RThearing = 1147 ms, t(70) = 1.3, p=0.2). Despite the groups being matched for reaction time, to further control for task performance effects, both task accuracy and reaction time were included as nuisance variables in all analyses (deaf vs. hearing; delayed deaf vs. native deaf).
 
-## FC analysis
+### FC analysis
 
 FC was computed using the CONN toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012). Time courses were extracted from the 10 runs after regressing out the task predictors, and potential confounding effects were estimated and removed separately for each voxel and for each participant and run. In addition, functional data were denoised using a standard denoising pipeline (Nieto-Castanon, 2020) including the regression of potential confounding effects characterized by white matter time series, CSF time series, motion parameters, session and task effects, and simultaneous bandpass frequency filtering of the BOLD time series (Hallquist et al., 2013) between 0.01 Hz and 0.1 Hz.
 
-## Seed ROI
+#### Seed ROI
 
 The seed region for the early AC was defined using the atlas provided by the CONN toolbox (Harvard-Oxford Atlas distributed with FSL; Jenkinson et al., 2012). We extracted the Heschl’s gyrus parcellation (broadly corresponding to the location of the primary AC) for both hemispheres and used it as our seed region for the FC analysis.
 
-## FC variability analysis
+#### FC variability analysis
 
 Seed-based connectivity maps for each subject were estimated characterizing the spatial pattern of FC with the seed area (bilateral Heschl’s gyrus). FC strength was represented by Fisher-transformed bivariate correlation coefficients from a weighted general linear model, modeling the association between their BOLD signal time series. To examine whether there were differences in the interindividual variability of FC values between the two groups, namely the deaf and hearing participants, we conducted the Brown-Forsythe test for equal variance (Figure 1A). The Brown-Forsythe test (Brown and Forsythe, 1974) is a homogeneity of variance test like Levene’s test, conventionally used to test for variability differences, but uses the median instead of the mean, safeguarding against false positives in cases of skewed data distribution (Olejnik and Algina, 1987). The regression of the age variable was implemented in the analyses comparing deaf vs. hearing (given the age difference between these groups), while the regression of task variables (i.e. accuracy and reaction times) was included in all analyses to account for task performance effects. The minimum significance level for all presented results was established at p<0.05, cluster-corrected for multiple comparisons within the gray matter volume using the spatial extent method (a set-level statistical inference correction; Forman et al., 1995; Friston et al., 1994). Correction was based on the Monte Carlo simulation approach, extended to 3D datasets using the threshold size plug-in for BrainVoyager QX (Brain Innovation, Maastricht, Netherlands).
 

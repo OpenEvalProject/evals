@@ -39,9 +39,7 @@ In light of this comment, we measured gonad length of wild type worms at several
 
 6) Is the rescue by V2B and FAD/FMN more effective than rescue by the protease and elt-2 OE (perhaps because the vitamin cofactor is provided)? Figure 5C.
 
-This is also a good question. The answer is yes. To compare them, we aligned all the bar graphs below (Author response image 1), each with the respective control. Relative to wild type fed HK-bacteria, supplementation with VB2, FMN and FAD was more effective in rescuing growth than over expressing proteases or activating TORC1.10.7554/eLife.26243.022Author response image 1.Gonad length of worm under different conditions.DOI: http://dx.doi.org/10.7554/eLife.26243.022
-
-DOI: http://dx.doi.org/10.7554/eLife.26243.022
+This is also a good question. The answer is yes. To compare them, we aligned all the bar graphs below (Author response image 1), each with the respective control. Relative to wild type fed HK-bacteria, supplementation with VB2, FMN and FAD was more effective in rescuing growth than over expressing proteases or activating TORC1.10.7554/eLife.26243.022Author response image 1.Gonad length of worm under different conditions.
 
 7) Does increasing TORC1 activity restore VB2, FAD and/or FMN levels in HK-OP50? I suspect not, but this seems like an important experiment, since growth is improved. (How can growth be improved without Vitamin B2? Same question.)
 

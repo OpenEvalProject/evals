@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.03416.001 Clinically effective antigen-based immunotherapy must silence antigen-experienced effector T cells (Teff) driving ongoing immune pathology. Using CD4 + autoimmune Teff cells, we demonstrate that peptide immunotherapy (PIT) is strictly dependent upon sustained T cell expression of the co-inhibitory molecule PD-1. We found high levels of 5-hydroxymethylcytosine (5hmC) at the PD-1 ( Pdcd1 ) promoter of non-tolerant T cells. 5hmC was lost in response to PIT, with DNA hypomethylation of the promoter. We identified dynamic changes in expression of the genes encoding the Ten-Eleven-Translocation (TET) proteins that are associated with the oxidative conversion 5-methylcytosine and 5hmC, during cytosine demethylation. We describe a model whereby promoter demethylation requires the co-incident expression of permissive histone modifications at the Pdcd1 promoter together with TET availability. This combination was only seen in tolerant Teff cells following PIT, but not in Teff that transiently express PD-1. Epigenetic changes at the Pdcd1 locus therefore determine the tolerizing potential of TCR-ligation. DOI: http://dx.doi.org/10.7554/eLife.03416.001
+Clinically effective antigen-based immunotherapy must silence antigen-experienced effector T cells (Teff) driving ongoing immune pathology. Using CD4+ autoimmune Teff cells, we demonstrate that peptide immunotherapy (PIT) is strictly dependent upon sustained T cell expression of the co-inhibitory molecule PD-1. We found high levels of 5-hydroxymethylcytosine (5hmC) at the PD-1 (Pdcd1) promoter of non-tolerant T cells. 5hmC was lost in response to PIT, with DNA hypomethylation of the promoter. We identified dynamic changes in expression of the genes encoding the Ten-Eleven-Translocation (TET) proteins that are associated with the oxidative conversion 5-methylcytosine and 5hmC, during cytosine demethylation. We describe a model whereby promoter demethylation requires the co-incident expression of permissive histone modifications at the Pdcd1 promoter together with TET availability. This combination was only seen in tolerant Teff cells following PIT, but not in Teff that transiently express PD-1. Epigenetic changes at the Pdcd1 locus therefore determine the tolerizing potential of TCR-ligation.
 
 ## Introduction
 
@@ -39,123 +39,123 @@ In the clinical setting, PIT is required to control activated Teff cells during 
 
 ## Results
 
-## Non-deletional tolerance in response to PIT
+### Non-deletional tolerance in response to PIT
 
-The Ac1-9(4Tyr) peptide of MBP, containing a Lys→Tyr substitution at residue 4 of the peptide, is a potent tolerogen when administered in soluble form either to wildtype (WT) H-2
+The Ac1-9(4Tyr) peptide of MBP, containing a Lys→Tyr substitution at residue 4 of the peptide, is a potent tolerogen when administered in soluble form either to wildtype (WT) H-2u mice or to Tg4 mice expressing a transgenic TCR responsive to this peptide (Liu and Wraith, 1995; Burkhart et al., 1999). To trace a defined antigen-responsive cohort of T cells we adapted these protocols by prior transfer of naïve CD4+ Tg4.CD45.1 T cells into B10.PL (H-2u), or B10.PLxC57BL/6 (H-2u,b) mice. These F1 mice are resistant to EAE induced with the MBP peptide, unless first seeded with a cohort of Tg4 T cells (Ryan et al., 2005). Tracing the presence and function of the transferred Tg4 cells is therefore of direct relevance as they are the pathogenic T cell population in these experiments. A single i.v. injection of the MBP peptide protected against subsequent efforts to induce EAE by immunization (Figure 1A). Donor T cells persisted in the spleen (Figure 1B,C), but there was reduced production of IFN-γ and IL-17, in splenic recall assays amongst PIT-treated mice (Figure 1C and Figure 1—figure supplement 1). Of note, we found no evidence for an elevation in the frequency of Foxp3+ donor Tg4 cells, nor in IL-10 production in response to PIT (Figure 1C). We concluded from these initial studies that a single exposure to the MBP peptide was sufficient for successful PIT, without enhanced induction of cell death, or establishment of Treg-mediated suppression, but rather an intrinsic unresponsiveness in the persisting Tg4 cells.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig1-v2.jpg)
 
-**Figure 1.:** (A, B) B10.PLxC57BL/6 mice received PBS or PIT i.v. 1 day after transfer of naïve CD4+ Tg4 cells. EAE was induced 7 days later by immunization with Ac1-9. (A) Mean clinical scores ± SEM. (B) Frequency of CD4+ Tg4 cells in the spleen at day 19 post-EAE induction (six mice per group, from one of three experiments giving consistent results). (C) Spleens were sampled four and 7 days after PIT/PBS for analysis of CD4+ Tg4 numbers and Foxp3 expression in host and donor CD4+ T cells (3–4 mice per group, from one of three experiments giving consistent results). A separate cohort were immunized on day 7 after PIT/PBS and spleens analyzed 10 days later for CD4+ Tg4 cell numbers and the production of IFN-γ, IL-17 and IL-10 by splenocytes in response to stimulation with 100 μM Ac1-9 (dotted lines represent cytokine levels for unstimulated controls) (four mice per group, from one of three experiments giving consistent results).DOI: http://dx.doi.org/10.7554/eLife.03416.003
+**Figure 1.:** (A, B) B10.PLxC57BL/6 mice received PBS or PIT i.v. 1 day after transfer of naïve CD4+ Tg4 cells. EAE was induced 7 days later by immunization with Ac1-9. (A) Mean clinical scores ± SEM. (B) Frequency of CD4+ Tg4 cells in the spleen at day 19 post-EAE induction (six mice per group, from one of three experiments giving consistent results). (C) Spleens were sampled four and 7 days after PIT/PBS for analysis of CD4+ Tg4 numbers and Foxp3 expression in host and donor CD4+ T cells (3–4 mice per group, from one of three experiments giving consistent results). A separate cohort were immunized on day 7 after PIT/PBS and spleens analyzed 10 days later for CD4+ Tg4 cell numbers and the production of IFN-γ, IL-17 and IL-10 by splenocytes in response to stimulation with 100 μM Ac1-9 (dotted lines represent cytokine levels for unstimulated controls) (four mice per group, from one of three experiments giving consistent results).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of naïve CD4+Tg4 cells. 7 days later mice were immunized and spleens were taken for analysis 10 days after immunization. (A) Percentage and (B) numbers of IL-17+ and IFN-γ+ Tg4 donor cells upon recall stimulation with 20 μM Ac1-9. Data are from one of three experiments giving consistent results (four mice per group).DOI: http://dx.doi.org/10.7554/eLife.03416.004
+**Figure 1—figure supplement 1.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of naïve CD4+Tg4 cells. 7 days later mice were immunized and spleens were taken for analysis 10 days after immunization. (A) Percentage and (B) numbers of IL-17+ and IFN-γ+ Tg4 donor cells upon recall stimulation with 20 μM Ac1-9. Data are from one of three experiments giving consistent results (four mice per group).
 
-## Stable pMHC complexes presented by CD4+ DC after PIT
+### Stable pMHC complexes presented by CD4+ DC after PIT
 
-Splenocytes isolated from mice administered Ac1-9(4Tyr) were potent in vitro stimulators of a Tg4 T cell line (Tg4.TCL) and remained so beyond 72 hr after peptide injection (
+Splenocytes isolated from mice administered Ac1-9(4Tyr) were potent in vitro stimulators of a Tg4 T cell line (Tg4.TCL) and remained so beyond 72 hr after peptide injection (Figure 2A). Splenic populations were MACS-sorted into B cell (CD11c−CD19+) and DC (CD11c+) populations. Whilst DC were more efficient presenters on a per cell basis than unfractionated splenocytes, B cells were very poor presenters (Figure 2A). Although the B cell populations used contained fewer than 2% of CD11c+ cells, it is plausible that this level of contamination accounted for the Tg4.TCL stimulation evident with high numbers of B cells isolated at the 2-hr time-point. The ability of DC to present the peptide-MHC complex in vivo was underlined by immunofluorescent staining showing transferred Tg4 cells in areas of the spleen rich in CD11c+ cells (Figure 2—figure supplement 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig2-v2.jpg)
 
-**Figure 2.:** hiCD4+ DC present tolerogenic pMHC complexes to T cells.(A) B10.PL mice received PIT i.v. and splenocytes were isolated at the indicated times. B cells (CD11c−CD19+) and DC (CD11c+) were MACS-sorted and their ability to stimulate a Tg4.TCL was measured compared to whole splenocytes. Positive controls (solid symbols) show proliferative responses of Tg4.TCL to DC, B cells and splenocytes in the presence of 20 μM Ac1-9. Data are from one of three experiments giving consistent results. (B) Gating strategy for FACS-sorting of DC sub-sets from spleen isolated 1 day after PIT administration. (C) Proliferative responses of Tg4.TCL to increasing numbers of DC. Data are from one of three experiments giving consistent results. (D) Representative histograms of steady state expression of PD-L1, gated on CD11chiCD4+ and CD11chiCD8+ splenic DC. (E) MFI ± SEM of staining with mAb to co-stimulatory and co-inhibitory molecules on steady state splenic APC populations (four mice per group,, from one of two experiments giving consistent results, dotted lines represent MFI of isotype control staining).DOI: http://dx.doi.org/10.7554/eLife.03416.005
+**Figure 2.:** (A) B10.PL mice received PIT i.v. and splenocytes were isolated at the indicated times. B cells (CD11c−CD19+) and DC (CD11c+) were MACS-sorted and their ability to stimulate a Tg4.TCL was measured compared to whole splenocytes. Positive controls (solid symbols) show proliferative responses of Tg4.TCL to DC, B cells and splenocytes in the presence of 20 μM Ac1-9. Data are from one of three experiments giving consistent results. (B) Gating strategy for FACS-sorting of DC sub-sets from spleen isolated 1 day after PIT administration. (C) Proliferative responses of Tg4.TCL to increasing numbers of DC. Data are from one of three experiments giving consistent results. (D) Representative histograms of steady state expression of PD-L1, gated on CD11chiCD4+ and CD11chiCD8+ splenic DC. (E) MFI ± SEM of staining with mAb to co-stimulatory and co-inhibitory molecules on steady state splenic APC populations (four mice per group,, from one of two experiments giving consistent results, dotted lines represent MFI of isotype control staining).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Representative images of immunofluorescent localization of Tg4 cells. CD4+ Tg4 (CD45.1+) cells were transferred into CD45.2+ B10.PLxC57BL/6 hosts 1 day after PIT administration. Spleens were isolated and frozen 48 hr after cell transfer. Frozen sections were stained with CD4 (green), CD11c (white) and CD45.1 (red). Scale bars represent 50 μm.DOI: http://dx.doi.org/10.7554/eLife.03416.006
+**Figure 2—figure supplement 1.:** Representative images of immunofluorescent localization of Tg4 cells. CD4+ Tg4 (CD45.1+) cells were transferred into CD45.2+ B10.PLxC57BL/6 hosts 1 day after PIT administration. Spleens were isolated and frozen 48 hr after cell transfer. Frozen sections were stained with CD4 (green), CD11c (white) and CD45.1 (red). Scale bars represent 50 μm.
 
 Splenic CD11c+ cells from MBP peptide-treated mice were sorted into CD11cintPDCA-1+ (pDC) CD11chiCD4+CD8− (CD4+ DC), CD11chiCD4−CD8+ DC (CD8+ DC) and CD11chiCD4−CD8− populations (Figure 2B). The ability to stimulate the Tg4.TCL was only maintained in the CD4+ DC (Figure 2C). Isolation of splenic macrophage populations from peptide-treated mice provided no evidence that these cells could maintain the pMHC complex (data not shown).
 
-## PIT requires T cell expression of PD-1
+### PIT requires T cell expression of PD-1
 
-The CD4
+The CD4+ DC population is located in the T zone of the spleen and so is ideally placed to present tolerogenic peptide to naive T cells (McLellan et al., 2002). CD4+ DC from steady state mice had particularly high expression of PD-L1 in comparison to other DC populations (Figure 2D,E). Transferred Tg4 T cells expressed high levels of PD-1 in response to PIT, in contrast to those from PBS-treated mice (Figure 3A,B). Addition of an anti-PD-1 blocking antibody to ex vivo rechallenge cultures restored the ability of splenocytes from PIT-treated mice to produce IFN-γ and IL-17 (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig3-v2.jpg)
 
-**Figure 3.:** + Tg4 cells.(A–C) B10.PL mice received PBS/PIT 1 day after transfer of naïve CD4+ Tg4 cells. (A) Representative histograms of PD-1 expression gated on CD4+ Tg4 donor cells in spleen 4 days after PBS/PIT. (B) MFI of PD-1 staining gated on CD4+ Tg4 donor cells in spleen 4 and 7 days after PBS/PIT (4–6 mice per group, from one of three experiments giving consistent results, dotted line represents MFI of isotype control staining). (C) IFN-γ and IL-17 production in response to Ac1-9 by splenocytes isolated 7 days after PIT and cultured in the presence of anti-PD-1 or isotype (four mice per group, from one of three experiments giving consistent results, dotted lines represent cytokine levels for unstimulated cultures). (D) EAE in B10.PLxC57BL/6 mice that received PBS/PIT 1 day after transfer of naïve CD4+ cells from Tg4.PD-1+/+ or Tg4.PD-1−/− donors. EAE was induced 7 days after PBS/PIT by immunization with Ac1-9 (five mice per group, from one of three experiments giving consistent results).DOI: http://dx.doi.org/10.7554/eLife.03416.007
+**Figure 3.:** (A–C) B10.PL mice received PBS/PIT 1 day after transfer of naïve CD4+ Tg4 cells. (A) Representative histograms of PD-1 expression gated on CD4+ Tg4 donor cells in spleen 4 days after PBS/PIT. (B) MFI of PD-1 staining gated on CD4+ Tg4 donor cells in spleen 4 and 7 days after PBS/PIT (4–6 mice per group, from one of three experiments giving consistent results, dotted line represents MFI of isotype control staining). (C) IFN-γ and IL-17 production in response to Ac1-9 by splenocytes isolated 7 days after PIT and cultured in the presence of anti-PD-1 or isotype (four mice per group, from one of three experiments giving consistent results, dotted lines represent cytokine levels for unstimulated cultures). (D) EAE in B10.PLxC57BL/6 mice that received PBS/PIT 1 day after transfer of naïve CD4+ cells from Tg4.PD-1+/+ or Tg4.PD-1−/− donors. EAE was induced 7 days after PBS/PIT by immunization with Ac1-9 (five mice per group, from one of three experiments giving consistent results).
 
 Collectively, the above data indicated that sustained pMHC presentation during PIT can drive high expression of PD-1 in the responding T cells. This, coupled with pMHC presentation specifically by PD-L1hi CD4+ DC renders the T cells unable to produce pro-inflammatory cytokines. To determine the functional importance of PD-1 in this tolerogenic process, we generated Tg4.PD-1−/− mice. Transferred naïve Tg4 cells from these mice were insensitive to PIT, going on to cause a typical course of EAE upon subsequent immunization that was indistinguishable from that induced with Tg4.PD-1+/+ cells that had not been subjected to PIT (Figure 3D). We therefore conclude that PD-1 plays a non-redundant role in this model of CD4+ T cell tolerance.
 
-## PIT abrogates Teff cell function and CNS infiltration
+### PIT abrogates Teff cell function and CNS infiltration
 
-Although PIT can inhibit ongoing EAE (
+Although PIT can inhibit ongoing EAE (Leech et al., 2007), the mechanisms behind this have been less well explored than for the effects of PIT on naïve T cells. We therefore determined the effects of PIT using a previously established passive EAE model in which Teff cells are generated from naïve Tg4 T cells prior to transfer into WT hosts (O'Connor et al., 2010). PIT rendered the host mice profoundly resistant to disease (Figure 4A). As with naïve T cells shown above, the Teff cells persisted after PIT-treatment, but importantly these cells failed to populate the CNS efficiently (Figure 4B). Instead, they were present in the spleen in sufficient numbers to allow detailed analysis following retrieval by FACS-sorting (Figure 4C). PIT did not drive Foxp3-expression in Tg4 Teff cells (Figure 4D), nor was IL-10 production evident (not shown). Rather, within 4 days of PIT, proinflammatory cytokine production by the transferred Teff cells was profoundly diminished (Figure 4E,F). The loss of IFN-γ producing capacity in PIT-exposed Teff was not reflected in any loss in T-bet expression (Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig4-v2.jpg)
 
-**Figure 4.:** (A) EAE in B10.PL mice that received PBS/PIT 1 day after transfer of Tg4 Teff cells (six mice per group, from one of five experiments giving consistent results). (B) Numbers of CD4+ Tg4 donor cells in spleen and CNS of PBS/PIT-treated mice sampled at the peak of EAE (six mice per group, from one of two experiments giving consistent results). (C) Tg4 Teff cells were transferred and spleens were sampled 4 days after PBS/PIT. (D) The frequencies of Foxp3+ cells amongst the donor Tg4 CD4+ Teff cells on day 4 after PBS or PIT. (E) Ac1-9-induced IL-2 and IFN-γ production by retrieved CD4+ Tg4 donor cells (FACS-sorted 4 days after PBS/PIT and cultured with irradiated B10.PLxC57BL/6 splenic APC) (four mice per group, from one of two experiments giving consistent results, dotted lines represent cytokine levels for unstimulated controls). (F) GM-CSF and IFN-γ production following overnight culture of splenocytes with Ac1-9 (gated on CD4+ Tg4 donor cells) (n = 4 per group, from one of four experiments giving consistent results, dotted lines represent cytokine levels for unstimulated controls). (G) Modulation of EAE by anti-PSGL-1 (50 μg given i.v. on alternate days from day 1 after Tg4 Teff cells). Teff cells were also incubated with 20 μg/ml of the relevant antibody for one hour prior to transfer. (n = 10 per group, from one of three experiments giving consistent results). (H) PSGL-1 expression by CD4+ host and Tg4 donor cells 4 days after PBS/PIT (four mice per group, from one of two experiments giving consistent results, dotted line represents MFI of isotype control staining).DOI: http://dx.doi.org/10.7554/eLife.03416.008
+**Figure 4.:** (A) EAE in B10.PL mice that received PBS/PIT 1 day after transfer of Tg4 Teff cells (six mice per group, from one of five experiments giving consistent results). (B) Numbers of CD4+ Tg4 donor cells in spleen and CNS of PBS/PIT-treated mice sampled at the peak of EAE (six mice per group, from one of two experiments giving consistent results). (C) Tg4 Teff cells were transferred and spleens were sampled 4 days after PBS/PIT. (D) The frequencies of Foxp3+ cells amongst the donor Tg4 CD4+ Teff cells on day 4 after PBS or PIT. (E) Ac1-9-induced IL-2 and IFN-γ production by retrieved CD4+ Tg4 donor cells (FACS-sorted 4 days after PBS/PIT and cultured with irradiated B10.PLxC57BL/6 splenic APC) (four mice per group, from one of two experiments giving consistent results, dotted lines represent cytokine levels for unstimulated controls). (F) GM-CSF and IFN-γ production following overnight culture of splenocytes with Ac1-9 (gated on CD4+ Tg4 donor cells) (n = 4 per group, from one of four experiments giving consistent results, dotted lines represent cytokine levels for unstimulated controls). (G) Modulation of EAE by anti-PSGL-1 (50 μg given i.v. on alternate days from day 1 after Tg4 Teff cells). Teff cells were also incubated with 20 μg/ml of the relevant antibody for one hour prior to transfer. (n = 10 per group, from one of three experiments giving consistent results). (H) PSGL-1 expression by CD4+ host and Tg4 donor cells 4 days after PBS/PIT (four mice per group, from one of two experiments giving consistent results, dotted line represents MFI of isotype control staining).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A, B) B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of naïve CD4+ Tg4 cells. (A) Representative histograms of T-bet expression gated on CD4+ host or Tg4 donor cells in spleen 4 days after PBS/PIT. (B) MFI of T-bet staining gated on CD4+ host or Tg4 donors within the spleen 4 days after PBS/PIT (4 mice per group, from one of four experiments giving consistent results, dotted line represents MFI of isotype control staining).DOI: http://dx.doi.org/10.7554/eLife.03416.009
+**Figure 4—figure supplement 1.:** (A, B) B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of naïve CD4+ Tg4 cells. (A) Representative histograms of T-bet expression gated on CD4+ host or Tg4 donor cells in spleen 4 days after PBS/PIT. (B) MFI of T-bet staining gated on CD4+ host or Tg4 donors within the spleen 4 days after PBS/PIT (4 mice per group, from one of four experiments giving consistent results, dotted line represents MFI of isotype control staining).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4 Teff cells. Splenocytes were isolated 4 days after PBS/PIT (n = 6–8 per group). Active PSGL-1 was detected using a P-selectin-hIgG fusion protein, followed by PE-anti-human IgG staining. Events were gated on CD4+ host or Tg4 donor cells. Dotted line represents staining with PE-anti-human IgG alone. Data are from one of two experiments giving consistent results.DOI: http://dx.doi.org/10.7554/eLife.03416.010
+**Figure 4—figure supplement 2.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4 Teff cells. Splenocytes were isolated 4 days after PBS/PIT (n = 6–8 per group). Active PSGL-1 was detected using a P-selectin-hIgG fusion protein, followed by PE-anti-human IgG staining. Events were gated on CD4+ host or Tg4 donor cells. Dotted line represents staining with PE-anti-human IgG alone. Data are from one of two experiments giving consistent results.
 
 The poor accumulation of Tg4 Teff cells within the CNS after PIT (Figure 4B) suggested that their ability to home to the target organ might also have been affected. Although the molecular requirements for T cell entry into the CNS during EAE are complex and controversial (Prendergast and Anderton, 2009), others have described a requirement for P-selectin glycoprotein ligand-1 (PSGL-1) in the pathogenic process (Deshpande et al., 2006). We have also found that encephalitogenic function of Tg4 Teff populations correlates with their elevated expression of PSGL-1 and that an antibody to PSGL-1 can inhibit Tg4 Teff-driven EAE (Figure 4G), presumably by interfering with the interaction of PSGL-1 on the Teff cells with P-selectin and/or E-selectin on the CNS endothelium. Whilst transferred Tg4 Teff cells exposed to PBS showed elevated PSGL-1 expression, their counterparts that had been exposed to PIT showed PSGL-1 expression more comparable with that seen on the EAE-irrelevant CD4+ cells of the host mice (Figure 4H), PSGL-1 glycosylation mediated by 2 β-1,6-N-acetyl glucosaminyltransferase and α(1,3)-fucosyltransferase-VII) is required for functionality (binding to selectins) (Yu et al., 2000; Smithson et al., 2001; Sperandio et al., 2001; Deshpande et al., 2006). Staining with a mouse P-selectin-human IgG fusion protein indicated that active PSGL-1 was also reduced on Tg4 Teff cells in response to PIT (Figure 4—figure supplement 2). These data suggest that one consequence of PIT is disrupted PSGL-1-dependent T cell trafficking.
 
-## Sustained PD-1 expression is required for Teff cells to be silenced by PIT
+### Sustained PD-1 expression is required for Teff cells to be silenced by PIT
 
-We also observed that PD-1 expression was high on Teff cells retrieved from PIT-treated mice compared to PBS-treated controls and that this difference was maintained beyond 2 weeks from peptide administration (
+We also observed that PD-1 expression was high on Teff cells retrieved from PIT-treated mice compared to PBS-treated controls and that this difference was maintained beyond 2 weeks from peptide administration (Figure 5A–C). This was not a consequence of any long-term pMHC presentation in the lymphoid system, because PIT-treated Teff cells that had been retrieved from their first hosts maintained PD-1 (and did not induce EAE) when transferred into secondary hosts that were not exposed to PIT (Figure 5D–F). The tolerant phenotype was therefore stable in T cells exposed to PIT.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-v2.jpg)
 
-**Figure 5.:** (A) Representative histograms of PD-1 expression by CD4+ Tg4 cells sampled as naïve cells, Teff on day of transfer and Teff cells retrieved 4 days after PBS/PIT. (B) PD-1 expression (MFI) gated on CD4+ host cells and Tg4 donor cells from spleen 4 days after treatment (four mice per group, from one of four experiments giving consistent results, dotted line represents MFI of isotype control staining). (C) Time course of PD-1 expression on CD4+ Tg4 donor cells from PBS/PIT-treated mice (four mice per group). (D) B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4 Teff cells. 4 days later CD4+ Tg4 donor cells were FACS-sorted and 2 × 106 were transferred into secondary hosts that were not exposed to PIT (PTX was given on the same day). (E) EAE in secondary hosts (n = 4 for PBS; 21 for PIT, pooled from two experiments). (F) PD-1 expression gated on CD4+ Tg4 donor cells from spleens isolated 16 days after secondary transfer (dotted line represents MFI of isotype control staining). (G) EAE in B10.PLxC57BL/6 mice that received PBS/PIT 1 day after transfer of Teff generated from Tg4.PD-1+/+ or Tg4.PD-1−/− donors (n = 20–36 mice per group, pooled from three experiments).DOI: http://dx.doi.org/10.7554/eLife.03416.011
+**Figure 5.:** (A) Representative histograms of PD-1 expression by CD4+ Tg4 cells sampled as naïve cells, Teff on day of transfer and Teff cells retrieved 4 days after PBS/PIT. (B) PD-1 expression (MFI) gated on CD4+ host cells and Tg4 donor cells from spleen 4 days after treatment (four mice per group, from one of four experiments giving consistent results, dotted line represents MFI of isotype control staining). (C) Time course of PD-1 expression on CD4+ Tg4 donor cells from PBS/PIT-treated mice (four mice per group). (D) B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4 Teff cells. 4 days later CD4+ Tg4 donor cells were FACS-sorted and 2 × 106 were transferred into secondary hosts that were not exposed to PIT (PTX was given on the same day). (E) EAE in secondary hosts (n = 4 for PBS; 21 for PIT, pooled from two experiments). (F) PD-1 expression gated on CD4+ Tg4 donor cells from spleens isolated 16 days after secondary transfer (dotted line represents MFI of isotype control staining). (G) EAE in B10.PLxC57BL/6 mice that received PBS/PIT 1 day after transfer of Teff generated from Tg4.PD-1+/+ or Tg4.PD-1−/− donors (n = 20–36 mice per group, pooled from three experiments).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** −/− Teff cells following PIT.B10.PLxC57BL/6 mice received PBS or PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. (A) Percentage and (B) numbers of CD4+ Tg4 cells within the spleen 4 days after PBS or PIT (12 mice per group), data are pooled from three experiments giving consistent results. (C) Percentage of Ki-67+ cells within the Tg4 CD4+ population (4 mice per group, from one of two experiments giving consistent results).DOI: http://dx.doi.org/10.7554/eLife.03416.012
+**Figure 5—figure supplement 1.:** B10.PLxC57BL/6 mice received PBS or PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. (A) Percentage and (B) numbers of CD4+ Tg4 cells within the spleen 4 days after PBS or PIT (12 mice per group), data are pooled from three experiments giving consistent results. (C) Percentage of Ki-67+ cells within the Tg4 CD4+ population (4 mice per group, from one of two experiments giving consistent results).
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** + Tg4 Teff cells.B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. (A) Percentage and (B) numbers of Foxp3+CD4+ Tg4 cells within the spleen 4 days after PBS/PIT. Data are pooled from three experiments giving consistent results (12 mice per group).DOI: http://dx.doi.org/10.7554/eLife.03416.013
+**Figure 5—figure supplement 2.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. (A) Percentage and (B) numbers of Foxp3+CD4+ Tg4 cells within the spleen 4 days after PBS/PIT. Data are pooled from three experiments giving consistent results (12 mice per group).
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp3-v2.jpg)
 
-**Figure 5—figure supplement 3.:** + Tg4 Teff cells independently of PD-1.B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken 4 days later for analysis (A) Percentage and (B) numbers of IFN-γ+ and GM-CSF+ CD4+ Tg4 cells following recall stimulation with 20 μM Ac1-9. Data are pooled from three experiments giving consistent results (12 mice per group).DOI: http://dx.doi.org/10.7554/eLife.03416.014
+**Figure 5—figure supplement 3.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken 4 days later for analysis (A) Percentage and (B) numbers of IFN-γ+ and GM-CSF+ CD4+ Tg4 cells following recall stimulation with 20 μM Ac1-9. Data are pooled from three experiments giving consistent results (12 mice per group).
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp4-v2.jpg)
 
-**Figure 5—figure supplement 4.:** −/− Teff maintain their ability to produce IL-2.B10.PLxC57BL/6 mice received PBS or PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken for analysis 4 days after PIT for retrieval of CD4+ Tg4 Teff (FACS-sorting). IL-2 production was measured after 48 hr culture with irradiated B10.PLxC57BL/6 splenic APC and MBP peptide, (dotted lines represent IL-2 levels from unstimulated cultures). Data (4 mice per group) are from one of two experiments giving consistent results).DOI: http://dx.doi.org/10.7554/eLife.03416.015
+**Figure 5—figure supplement 4.:** B10.PLxC57BL/6 mice received PBS or PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken for analysis 4 days after PIT for retrieval of CD4+ Tg4 Teff (FACS-sorting). IL-2 production was measured after 48 hr culture with irradiated B10.PLxC57BL/6 splenic APC and MBP peptide, (dotted lines represent IL-2 levels from unstimulated cultures). Data (4 mice per group) are from one of two experiments giving consistent results).
 
 ![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp5-v2.jpg)
 
-**Figure 5—figure supplement 5.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken 4 days later for analysis. CD25 expression within the Tg4 CD4+ population (A) directly ex vivo and (B) 12 hr after recall stimulation with 20 μM Ac1-9.DOI: http://dx.doi.org/10.7554/eLife.03416.016
+**Figure 5—figure supplement 5.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken 4 days later for analysis. CD25 expression within the Tg4 CD4+ population (A) directly ex vivo and (B) 12 hr after recall stimulation with 20 μM Ac1-9.
 
 ![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp6-v2.jpg)
 
-**Figure 5—figure supplement 6.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken 4 days later for analysis. Cells were stimulated for 12 hr with 20 μM Ac1-9, to allow upregulation of CD25, before 15-min exposure to IL-2 and detection of pSTAT5. (A) Representative plots of pSTAT5 staining. (B) Percentage of pSTAT5+ cells within the Tg4 CD4+ population. Data (4 mice per group) are from one of two experiments giving consistent results.DOI: http://dx.doi.org/10.7554/eLife.03416.017
+**Figure 5—figure supplement 6.:** B10.PLxC57BL/6 mice received PBS/PIT 1 day after transfer of Tg4.PD-1+/+ or Tg4.PD-1−/− Teff cells. Spleens were taken 4 days later for analysis. Cells were stimulated for 12 hr with 20 μM Ac1-9, to allow upregulation of CD25, before 15-min exposure to IL-2 and detection of pSTAT5. (A) Representative plots of pSTAT5 staining. (B) Percentage of pSTAT5+ cells within the Tg4 CD4+ population. Data (4 mice per group) are from one of two experiments giving consistent results.
 
 ![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp7-v2.jpg)
 
-**Figure 5—figure supplement 7.:** (A) CD45.1 mice were immunized with pOVA/CFA and Teff cells generated by restimulation of draining lymph node cells with pOVA + cytokines. Teff cells were transferred into C57BL/6 (CD45.2) host mice prior to administration of pOVA or PBS and splenocytes were retrieved on day 4 (B) Gating strategy for identification of CD45.1+ donor cells within the spleen. (C) Representative plots of intracellular detection of GM-CSF, IFN-γ, TNF-α and IL-17 within the donor CD4+CD45.1+ population following recall stimulation with pOVA. (D) Percentage of cytokine+ cells within the donor Teff population. Data (6 mice per group) are from one of two experiments giving consistent results.DOI: http://dx.doi.org/10.7554/eLife.03416.018
+**Figure 5—figure supplement 7.:** (A) CD45.1 mice were immunized with pOVA/CFA and Teff cells generated by restimulation of draining lymph node cells with pOVA + cytokines. Teff cells were transferred into C57BL/6 (CD45.2) host mice prior to administration of pOVA or PBS and splenocytes were retrieved on day 4 (B) Gating strategy for identification of CD45.1+ donor cells within the spleen. (C) Representative plots of intracellular detection of GM-CSF, IFN-γ, TNF-α and IL-17 within the donor CD4+CD45.1+ population following recall stimulation with pOVA. (D) Percentage of cytokine+ cells within the donor Teff population. Data (6 mice per group) are from one of two experiments giving consistent results.
 
 ![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig5-figsupp8-v2.jpg)
 
-**Figure 5—figure supplement 8.:** Splenocytes from host mice as described in Figure 5—figure supplement 6 and analysed on day 4. (A) Representative plots of PD-1 staining on CD4+ donor Teff cells after PIT/PBS. (B) Percentage of PD-1+ cells within the donor CD4+ population. (C) MFI of PD-1 staining within the PD-1+ population. Data (six mice per group) are from one of two experiments giving consistent results.DOI: http://dx.doi.org/10.7554/eLife.03416.019
+**Figure 5—figure supplement 8.:** Splenocytes from host mice as described in Figure 5—figure supplement 6 and analysed on day 4. (A) Representative plots of PD-1 staining on CD4+ donor Teff cells after PIT/PBS. (B) Percentage of PD-1+ cells within the donor CD4+ population. (C) MFI of PD-1 staining within the PD-1+ population. Data (six mice per group) are from one of two experiments giving consistent results.
 
 As was the case with the earlier experiments using naïve T cells (Figure 3D), Tg4.PD-1−/− Teff cells were not tolerized and were able to cause disease in the presence of PIT (Figure 5G), also establishing PD-1 as a required component of tolerance in this more therapeutic setting.
 
-## PD-1 limits Teff cell clonal expansion in response to PIT
+### PD-1 limits Teff cell clonal expansion in response to PIT
 
 To understand how the absence of PD-1 signaling might allow the maintenance of pathogenic function in spite of PIT administration, we further compared the function of Tg4.PD-1+/+ versus Tg4.PD-1−/− Teff cells. There were no gross differences in the numbers or frequencies of donor cells in PBS-treated hosts (Figure 5—figure supplement 1), indicating that PD-1 expression does not constrain the accumulation of donor cells in the absence of PIT. However, the PIT-driven elevation in donor cell numbers seen with Tg4.PD-1+/+ Teff cells was accentuated in Tg4.PD-1−/− Teff cells and a high frequency of these cells showed expression of the cell cycle marker Ki-67 (Figure 5—figure supplement 1). A consequence of this overall increase in the number of Tg4.PD-1−/− Teff cells was increased numbers of Foxp3+ cells as well as cytokine+ cells in this group. However, as seen with Tg4.PD-1+/+ Teff cells, the frequencies of Foxp3+ or cytokine+ Tg4.PD-1−/− Teff cells were reduced following PIT (Figure 5—figure supplements 2,3). In contrast to their reduced effector cytokine production, PIT did not block the ability of Tg4.PD-1−/− Teff cells to produce IL-2 upon ex vivo re-challenge (Figure 5—figure supplement 4). Tg4 Teff cells retrieved from PBS-treated mice had low expression of CD25 and this was absent in their PIT-treated counterparts (Figure 5—figure supplement 5A). After 12 hr culture with MBP peptide, CD25 expression was increased in PBS-exposed Teff cells, irrespective of their PD-1-status, but there was a notable impairment in this upregulation of CD25 in PIT-treated Tg4.PD-1+/+ Teff cells. This impairment was not evident in PIT-exposed Tg4.PD-1−/− Teff cells (Figure 5—figure supplement 5B). The deficit in CD25-upregulation seen in PIT-treated Tg4.PD-1+/+ Teff cells was reflected by a low frequency of cells with phosphorylated STAT5 in response to IL-2. Notably however, PIT-treated Tg4.PD-1−/− Teff cells did not show such abrogated STAT5 phosphorylation (Figure 5—figure supplement 6). We conclude that the ability of PD-1-deficient Teff cells to drive EAE despite administration of PIT is associated with their heightened capacity for clonal expansion.
 
-## PIT-drives PD-1 expression in non-transgenic Teff cells
+### PIT-drives PD-1 expression in non-transgenic Teff cells
 
 To assess whether PIT-driven PD-1 expression was evident in a non-transgenic system, we studied ovalbumin (OVA)-responsive Teff in mice on the C57BL/6 background. Lymph nodes from CD45.1 mice that had been immunized with the OVA(323–339) peptide (pOVA) in CFA provided a source of Teff, which were then transferred into CD45.2 hosts prior to administration of pOVA or PBS (Figure 5—figure supplement 7A,B). Reduced frequencies of cytokine+ donor cells following in vitro restimulation were indicative of PIT-induced unresponsiveness (Figure 5—figure supplement 7C,D). Ex vivo analysis showed clear PD-1hi CD4+ populations in donor cells from the PIT-treated group (Figure 5—figure supplement 8A,B). Focusing on cells within the PD-1+ gate, PIT-exposed donor cells showed higher levels of PD-1 expression than PBS-exposed donor cells (Figure 5—figure supplement 8C). We conclude that elevated expression of PD-1 associates with abrogation of effector function in response to PIT in this non-transgenic system.
 
-## PIT drives demethylation of the Pdcd1 promoter
+### PIT drives demethylation of the Pdcd1 promoter
 
 PD-1 is rapidly upregulated by T cells upon initial TCR stimulation but is then lost over time (Riley, 2009). This is exemplified by the fact that our pathogenic Tg4 Teff cells expressed PD-1 on the day of transfer, but this was lost within 3 days of transfer in PBS-treated hosts (Figure 5A,C). In contrast, PIT drove the long-term expression of PD-1 by potentially pathogenic CD4+ T cells and this was a required component of PIT. Sustained expression of PD-1 is important in another scenario in which T cells develop antigen-unresponsiveness; CD8+ T cell ‘exhaustion’ in the face of chronic viral infection (Barber et al., 2006; Wherry et al., 2007). So, are similar mechanisms, leading to long-term expression of PD-1, at the heart of these two states of T cell unresponsiveness?
 
-Stable gene expression is often associated with a variety of epigenetic changes within promoter regions, including alterations in the levels of active histone post-translational modifications (PTMs) such as trimethylation of H3K4 (H3K4me3), or repressive histone PTMs such as H3K27me3. Indeed, CD8
+Stable gene expression is often associated with a variety of epigenetic changes within promoter regions, including alterations in the levels of active histone post-translational modifications (PTMs) such as trimethylation of H3K4 (H3K4me3), or repressive histone PTMs such as H3K27me3. Indeed, CD8+ Teff cells with low PD-1 expression were reported to have elevated levels of the repressive H3K27me3 PTM at the Pdcd1 promoter, compared to either PD-1− naive cells or PD-1hi CD8+ cells from chronically infected mice (Youngblood et al., 2011). We measured active (H3K4me3) and repressive (H3K27me3) histone marks at the Pdcd1 promoter by ChIP-PCR and did not identify similar changes that could distinguish pathogenic Tg4 Teff, from PIT-tolerized Teff. In naïve Tg4 cells and PBS-treated Tg4 Teff cells (neither of which expressed PD-1), neither modification (H3K27me3 or H3K4me3) was enriched at the two conserved regions, CR-B and CR-C (Youngblood et al., 2011), of the Pdcd1 promoter (Figure 6A,B). In contrast, both the PD-1 expressing groups (Teff on the day of transfer and PIT-treated Teff) exhibited elevated levels of H3K4me3, but no enrichment for H3K27me3 (Figure 6A,B). Importantly, functional (pathogenic) PBS-treated Teff that lacked PD-1 expression did not show elevated levels of the repressive H3K27me3 PTM, thereby distinguishing their behaviour from that reported for PD-1lo CD8+ Teff cells (Youngblood et al., 2011). Moreover, it was not possible to distinguish PD-1hi pathogenic Teff (on the day of transfer) from PD-1hi PIT-tolerized Teff based on their relative abundance of H3K4me3 versus H3K27me3 at the Pdcd1 promoter.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03416/elife-03416-fig6-v2.jpg)
 
-**Figure 6.:** Pdcd1 promoter.CD4+ Tg4 T cells were isolated as naïve cells, Teff on day of transfer and cells retrieved 4 days after either PBS or PIT for analysis of the CR-C and CR-B regions. (A, B) Histone modifications (H3K4me3 and H3K27me3) were analysed at CR-C and CR-B by ChIP and qPCR. Data in (B) show the ratio of H3K4me3 over H3K27me3 fold-enrichment over background and are representative of two independent experiments. (C, D) DNA methylation status determined by pyrosequencing (C) and bisulfite sequencing (D) (data are from two (C) or one (D) bisulfite conversions, four or more mice per group). (D) Methylated (black) and unmethylated (white) CpGs. Vertical columns represent individual CpGs (1–4 for CR-C and 7–14 for CR-B). Horizontal rows represent individual cloned alleles. (E) 5hmC enrichment at CR-C and CR-B as measured by 5hmC DNA Immunoprecipitation and qPCR. Data are from two experiments using pooled samples. (F) Total RNA was extracted from the isolated cell populations and expression levels of TET1, TET2 and TET3 were measured by qPCR. Values are expressed relative to housekeeping gene (GAPDH) and are representative of three experiments.DOI: http://dx.doi.org/10.7554/eLife.03416.020
+**Figure 6.:** CD4+ Tg4 T cells were isolated as naïve cells, Teff on day of transfer and cells retrieved 4 days after either PBS or PIT for analysis of the CR-C and CR-B regions. (A, B) Histone modifications (H3K4me3 and H3K27me3) were analysed at CR-C and CR-B by ChIP and qPCR. Data in (B) show the ratio of H3K4me3 over H3K27me3 fold-enrichment over background and are representative of two independent experiments. (C, D) DNA methylation status determined by pyrosequencing (C) and bisulfite sequencing (D) (data are from two (C) or one (D) bisulfite conversions, four or more mice per group). (D) Methylated (black) and unmethylated (white) CpGs. Vertical columns represent individual CpGs (1–4 for CR-C and 7–14 for CR-B). Horizontal rows represent individual cloned alleles. (E) 5hmC enrichment at CR-C and CR-B as measured by 5hmC DNA Immunoprecipitation and qPCR. Data are from two experiments using pooled samples. (F) Total RNA was extracted from the isolated cell populations and expression levels of TET1, TET2 and TET3 were measured by qPCR. Values are expressed relative to housekeeping gene (GAPDH) and are representative of three experiments.
 
 Stable PD-1 expression in exhausted CD8+ T cells is associated with DNA demethylation within the CR-B and CR-C regions of the Pdcd1 promoter (Youngblood et al., 2011). We retrieved Tg4 cells at various stages of the Teff PIT model for DNA methylation analysis. DNA modification was quantified, after bisulfite conversion, using pyrosequencing to assess individual CpG sites within the whole cell population. Cloning and sequencing after bisulfite conversion provided complementary information on the pattern of DNA methylation at CpG sites across individual cloned alleles (Figure 6C,D). Consistent with previous analyses of naive CD8+ T cells (Youngblood et al., 2011), CpGs within the CR-B region were largely modified (∼80% methylation across most CpG sites) in naïve CD4+ Tg4 cells (Figure 6C–D), whereas DNA methylation levels were considerably lower across the CR-C region. Despite expression of PD-1 by Tg4 Teff cells on the day of transfer (Figure 5A), there were no differences in DNA methylation at the Pdcd1 promoter of these pathogenic cells compared to naïve Tg4 cells (Figure 6C,D), indicating that demethylation is not a pre-requisite for transient PD-1 expression following initial CD4+ T cell activation. As would be expected based on this result, DNA methylation was maintained at CR-B and CR-C in the Teff cells retrieved from PBS-treated hosts, where PD-1 expression had returned to levels observed in naïve T cells (Figure 5A). In marked contrast, PIT-exposed Teff, which had prolonged PD-1 expression (Figure 5A–F), showed complete demethylation at CR-C and significantly reduced DNA methylation at the CR-B region in the Pdcd1 promoter (Figure 6C,D). Therefore only PIT was capable of altering DNA methylation patterns at the Pdcd1 promoter. This enables PD-1hi tolerant cells to be distinguished from fully functional Teff, which only transiently express PD-1.
 
-## The Pdcd1 promoter of naïve CD4+ cells is enriched in 5-hydroxymethylcytosine, which is lost following PIT
+### The Pdcd1 promoter of naïve CD4+ cells is enriched in 5-hydroxymethylcytosine, which is lost following PIT
 
 The precise processes that lead to demethylation of 5-methylcytosine (5mC) are not fully understood, but direct conversion of 5mC to cytosine seems unlikely. Rather, the favoured model is that 5mC is progressively oxidized to generate intermediates, facilitated by the Ten-Eleven-Translocation (TET) proteins, and these intermediates are subsequently converted either by DNA repair or replication dilution to cytosine (Kohli and Zhang, 2013). The first intermediate is 5-hydroxymethylcytosine (5hmC), a stable epigenetic mark with widespread tissue distribution (Kriaucionis and Heintz, 2009; Tahiliani et al., 2009; Song et al., 2011; Nestor et al., 2012; Thomson et al., 2012). Reciprocal changes for both 5mC and 5hmC at gene loci imply that demethylation may be occurring via a 5hmC intermediate (Thomson et al., 2013). Of note, standard bisulfite conversion techniques cannot distinguish 5mC from 5hmC.
 
@@ -185,56 +185,263 @@ We found marked enrichment of 5hmC at the Pdcd1 promoter in naïve CD4+ T cells.
 
 ## Materials and methods
 
-## Mice, antigens and tissue culture medium
+### Mice, antigens and tissue culture medium
 
 C57BL/6 (CD45.1 or CD45.2), B10.PL (CD45.2), B10.PLxC57BL/6 (CD45.2) and Tg4 (CD45.1 or CD90.1) mice (Liu et al., 1995) were used. PD-1−/− mice (kindly provided by Prof Tasuku Honjo, Kyoto University) were crossed with Tg4 (CD90.1) mice to obtain Tg4.PD-1−/− (CD90.1) mice. All mice were bred under specific pathogen-free conditions at the University of Edinburgh. All experiments were approved by the University of Edinburgh Ethical Review Committee and were performed in accordance with UK legislation. Acetylated MBP peptides Ac1-9 (Ac-ASQKRPSQR) and Ac1-9 (4Tyr) (Ac-ASQYRPSQR) and the ovalbumin peptide 323–339 (pOVA) (ISQAVHAAHAEINEAGR) were synthesised with C-terminal amides by Cambridge Research Biochemicals, Billingham, UK. Tissue culture medium (RPMI 1640 medium) was supplemented with 2 mM L-glutamine, 100 U/ml penicillin, 100 µg/ml streptomycin, and 5 × 10−5 M 2-ME (all from Invitrogen Life Technologies, Paisley, UK) and 10% FCS (Sigma, Poole, UK). Cells isolated from immunized mice were cultured in X-VIVO15 serum-free medium (Lonza, Walkersville, MD, USA) supplemented with 2 mM L-glutamine and 5 × 10−5 M 2-ME.
 
-## T cell transfers and retrieval
+### T cell transfers and retrieval
 
 Naïve CD4+ T cells were isolated from Tg4 or Tg4.PD1−/− mice by magnetic activated cell-sorting (MACS) according to manufacturer's instructions (Miltenyi Biotec, Teterow, Germany), and 2 × 106 cells were transferred in 200 µl PBS i.v. Pathogenic MBP-responsive Teff cells were generated by stimulation of Tg4 or Tg4.PD1−/− splenocytes with Ac1-9 in the presence of IL-12, IL-18 and IL-2 as described previously (O'Connor et al., 2010). pOVA-responsive Teff cells were generated by immunization of C57BL/6(CD45.1) mice with pOVA, followed by restimulation of draining lymph node cells with pOVA and the above cytokine cocktail. Cells were harvested after 72 hr culture and 2 × 106 blasts transferred i.v. in 200 µl PBS. For the retrieval of donor Tg4 cells, CD4+ T cells were isolated from splenocytes by MACS and donor cells (CD4+ CD45.1+ or CD90.1+) were identified and isolated by surface staining and FACS using a FACSAria II (Becton Dickinson, Franklin Lakes, NJ, USA).
 
-## Immunizations and administration of tolerogenic peptide
+### Immunizations and administration of tolerogenic peptide
 
 On the day indicated, mice received Ac1-9 or pOVA emulsified in CFA containing 50 μg heat-killed Mycobacterium tuberculosis H37Ra (Sigma) in a total volume of 100 μl injected subcutaneously (s.c.) into the hind legs. For PIT, mice received 200 µg of Ac1-9 (4Tyr), or pOVA, in 200 µl PBS (or PBS alone) i.v. at the indicated time.
 
-## Induction of EAE
+### Induction of EAE
 
 For the induction of active EAE, mice were immunized as above and received 200 ng of pertussis toxin (Health Protection Agency, Dorset, U.K.) in 0.5 ml PBS i.p on the day of immunization and 48 hr later. Clinical signs of EAE were assessed using the following scoring index: 0, no signs; 1, flaccid tail; 2, impaired righting reflex and/or gait; 3, partial hind limb paralysis; 4, total hind limb paralysis; 5, hind limb paralysis with partial front limb paralysis; 6, moribund or dead. For the induction of passive EAE, mice received 2 × 106 Tg4 effector cells via i.v. injection. On the same day, or the day following cell transfer, mice received 200 ng pertussis toxin in 0.5 ml PBS i.p. and clinical signs were assessed as described above. For some experiments, an anti-PSGL-1 antibody (4RA10, rat IgG1, BioXCell, West Lebanon, NH, USA), or purified rat IgG (Sigma) were administered, as indicated.
 
-## Analysis of splenic APC function after PIT
+### Analysis of splenic APC function after PIT
 
 Mice received the Ac1-9(4Tyr) peptide as described above for the induction of PIT. Spleens were isolated at the indicated times, injected with 100 µl of 8 mg/ml of collagenase IV (Worthington Biochemical Corp, Lakewood, NJ, USA) and incubated at 37°C for 20 min before manual disaggregation. In some experiments, APC populations were purified by positive selection using MACS and anti-CD11c beads (DC), or by negative selection with anti-CD11c beads, followed by positive selection using anti-CD19 beads. For isolation of DC populations, CD3+ and CD19+ cells were depleted by MACS prior to staining and FACS for pDC (PDCA-1+CD11cint), CD4+DC (CD11chiPDCA-1−CD4+CD8−), CD8+DC (CD11chiPDCA-1−CD8+CD4−), and CD4−CD8−DC (CD11chiPDCA-1−CD8−CD4−). APC populations were used to stimulate a Tg4 T cell line (Tg4.TCL; generated as previously described [Anderton et al., 1998]), with or without the addition of exogenous Ac1-9 peptide to the cultures. Cells (2 × 104 Tg4.TCL with a range of APC numbers per well) were cultured in flat-bottom 96-well microtitre plates (Becton Dickinson) for 72 hr [3H]thymidine incorporation over the final 16 hr was measured using a liquid scintillation β-counter (LKB Wallac, Turku, Finland).
 
-## Assesment of lymphoid recall assays
+### Assesment of lymphoid recall assays
 
 Splenocyte suspensions were cultured in 96-well flat-bottom microtitre plates (Becton Dickinson) at 8 × 105 spleenocytes/well. For purified donor T cells, 2 × 104 T cells were cultured with 2 × 105 irradiated (30 Gy) splenic APC's/well. Cultures were stimulated with a dose range of Ac1-9 and supernatants were tested for production of IFN-γ and IL-17 at 72 hr by ELISA. Where stated, neutralizing anti-PD-1 antibody (RMP1-14, rat IgG2a), or rat IgG (Sigma) were added to cultures at 10 µg/ml. The RMP1-14 antibody was a gift from Dr Hideo Yagata (Juntendo University, Japan).
 
-## Antibodies and FACS analysis
+### Antibodies and FACS analysis
 
 Cells were stained using the following Abs and isotype controls (all from eBioscience, Hatfield, UK, except where stated); anti-CD4-AF700 (Invitrogen), anti-CD4-eFluor450, anti-CD8-(APC/PE), anti-CD45.1-(FITC/PE), anti-CD90.1-FITC, anti-CD11b-APC, anti-CD11c-PE-Cy7, anti-PDCA-1-eFluor450, anti-PD-1-PE, anti-CD162-PE, anti-CD80 biotin, anti-CD86 PE, anti-PD-L1 APC, anti-PD-L2 APC, anti-OX-40L biotin, andti-CD40 PE, anti-IFN-γ-APC, anti-GM-CSF-PE (Becton Dickinson), anti-Ki-67-PerCP-eFluor710, anti-Foxp3-eFlour450, Streptavidin APC, rat IgG1-(FITC/APC/PerCPCy5.5), rat IgG2a-PE, Rat IgG2a-PerCP-eFluor710, rat IgG2b-(PE/biotin), Armenian hamster IgG-PE. Active PSGL-1 levels were detected by staining cells with a P-Selectin-human IgG fusion protein (BD) and anti-human IgG-PE. Flow cytometric data were acquired using a BD LSRFortessa cell analyzer (Becton Dickinson) and data analysed using FlowJo software (Treestar version 3.2.1, Ashland, OR, USA). For intracellular staining in response to peptide, cells were re-suspended at 8 × 106/ml in the presence or absence of 20 μM Ac1-9, or pOVA, as appropriate. After overnight culture, 1 μl/ml of brefeldin A (eBioscience, 1000× stock) was added for the last four hours of culture. Cells were washed once in FACS buffer (PBS, 2% FCS, 0.01% NaN3) and surface stained prior to processing for intracellular staining using proprietary buffers according to the manufacturer's instructions (e-bioscience for transcription factor staining or Becton Dickinson for cytokine staining). After incubation in fix/perm buffers, cells were stained for intracellular antigens. Detection of pSTAT5 was performed as previously described (Leech et al., 2013) following 12 hr culture in the presence of 20 μM Ac1-9.
 
-## Immunofluorescence
+### Immunofluorescence
 
 4 × 106 Tg4 cells were transferred to mice 1 day after PBS/PIT. Spleens were isolated 48 hr later and embedded and frozen in OCT (Cellpath, Newtown, UK). 6 µm thick sections were fixed in ice-cold acetone. Non-specific binding and endogenous biotin were blocked with 3% BSA (Sigma) and an avidin-biotin blocking kit (Vector Laboratories, Peterborough, UK) respectively. Tissue sections were stained with hamster anti-CD11c-biotin (Biolegend, San Diego, CA, USA), rat anti-CD4-FITC and mouse anti-CD45.1-APC (eBioscience). Biotinylated antibodies were detected with streptavidin-Alexa Fluor 555 (Invitrogen). Sections were mounted in Permafluor mounting medium (Thermo Scientific, Hemel Hempstead, UK). To determine specific binding, secondary antibodies alone or isotype controls (IgG-Biotin [Biolegend], IgG2a-FITC, IgG2a-APC [eBioscience]) were used. Images were acquired with a Leica confocal laser scanning microscope SP5 and LAS AF software (Leica, Wetzlar, Germany) and processed with ImageJ/Fiji software (NIH, Bethesda, MD, USA).
 
-## DNA Methylation analysis
+### DNA Methylation analysis
 
-Genomic DNA was isolated from frozen cell pellets of CD4+ T cells using the DNeasy blood and tissue kit (Qiagen, Crawley, UK) according to manufacturer's instructions, and ≤1 µg of DNA was subjected to bisulfite conversion using the Epi Tect Bisulfite Kit (Qiagen). Primers for Pyrosequencing (Eurofins MWG Operon, Ebersberg, Germany) were designed for conserved regions C and B (CR-C and CR-B) (Table 1) within the Pdcd1 (PD-1 encoding) gene using PyroMark Assay Design 2.0 software (Qiagen). Pyrosequencing was performed using PyroMark reagents with PyroMark Q24 instrumentation, and data were analysed using PyroMark Q24 software 2.0 (all Qiagen). Background non-conversion levels were between 2–3%. For bisulfite sequencing, genomic DNA was subjected to bisulphite conversion using the EZ DNA Methylation Gold Kit (Zymo Research, Irvine, CA, USA). Bisulfite sequencing was conducted as previously described (Hackett et al., 2012; Reddington et al., 2013). Primers specified in Table 2 were used to amplify specific regions of interest with Platinum Taq (Invitrogen). A single band was excised, gel extracted, and cloned into pGEM-T-easy (Promega, Madison, WI, USA) for sequencing.10.7554/eLife.03416.021Table 1.Primer sequences for pyrosequencing analysisDOI: http://dx.doi.org/10.7554/eLife.03416.021PDCD1 regionAssayCpGPCR primers 5′-3′Sequencing primer 5′-3′Product length (bp)CR-C11 and 2F: AGGTATAAAGGAGGTTTTGTAATAGTGAGGTTTTGTAATAGTTAGG186R: CCTCAACCACCCAAATTCAAA-BIO23, 4, 5F: TGGGTGGTTGAGGTAGTTGTTGAGGTAGTTGTTAGAT253R: CACCTCACCTCCTACTTATCTCT-BIO36F: TGTTTATTTTAGGGTGGTGAGATTTATGTTAGGTATTATGTATGTATATAAG221R: TAAAAACCCACCTCACCTCCTACTT-BIOCR-B18, 9, 10, 11F: AAAGGAAGAAAAGTTTTAAGAGAAAGTAAGCTATCCCACATACTCC167R: ACCCAACTATCCCACATACT-BIO212, 13, 14, 15F: GGGTTTTTGTTTTTTAGTAGTAAAGGATTAATTAAGGTATAGTTTAGGGTA164R: AAAACCAAACTCTTATCCCTTTAAAA-BIO316 and 17F: GGTAGGGGAGGGTTTAGTGTTTTGGGAGTTAAGG193R: TCCTCTCCATTTCTAACCCCTCTTATA-BIO47F: AGGGTAGTAGAGTTAGTAAATTTAAGATAAGTAGAGAAAATAGTGAGAT103R: CTCTTAAAACTTTTCTTCCTTTCAAAATAC-BIO10.7554/eLife.03416.022Table 2.Primer sequences for bisulfite sequencing and RT-PCRDOI: http://dx.doi.org/10.7554/eLife.03416.022RegionAssayCpGPCR primers 5′-3′Product length (bp)CR-C*0–4F: ATAAAGGTATAAAGGAGGTTTTG363R: CCTAACTAACTAATCATTTCTCR-C (nested)*1–4F: GAGGGGATTTTTTTAGTTTTTGT289R: AATTTAATCATTCTACTCTCTCR-B*7–14F: GAAAGGAAGAAAAGTTTTAAG332R: AAACTAAAACCAAACTCTTATCCCR-B (nested)*7–14F: GTTTTTTTGAATTTATAGGGGTG276R: ACTCTTATCCCTTTAAAAAATCR-C†13–5F: AGTTGCCAGATGGTTTCCAG154R: CTGGGGCATTCTGATGATTTCR-B†110–14F: CGGGTCCTAGGAAATGTTCA236R: GCCAGACTCTTGTCCCTTTG27–10F: TACAGGGGTGTCTGGAGAGG156R: ATGCCCTGAGCTATGCCTTAGAPDH†F: CCACTCCCCTTCCCAGTT147R: CCTATAAATACGGACTGC*Primer sequences for bisulfite sequencing.†Primer sequences for RT-PCR.
+Genomic DNA was isolated from frozen cell pellets of CD4+ T cells using the DNeasy blood and tissue kit (Qiagen, Crawley, UK) according to manufacturer's instructions, and ≤1 µg of DNA was subjected to bisulfite conversion using the Epi Tect Bisulfite Kit (Qiagen). Primers for Pyrosequencing (Eurofins MWG Operon, Ebersberg, Germany) were designed for conserved regions C and B (CR-C and CR-B) (Table 1) within the Pdcd1 (PD-1 encoding) gene using PyroMark Assay Design 2.0 software (Qiagen). Pyrosequencing was performed using PyroMark reagents with PyroMark Q24 instrumentation, and data were analysed using PyroMark Q24 software 2.0 (all Qiagen). Background non-conversion levels were between 2–3%. For bisulfite sequencing, genomic DNA was subjected to bisulphite conversion using the EZ DNA Methylation Gold Kit (Zymo Research, Irvine, CA, USA). Bisulfite sequencing was conducted as previously described (Hackett et al., 2012; Reddington et al., 2013). Primers specified in Table 2 were used to amplify specific regions of interest with Platinum Taq (Invitrogen). A single band was excised, gel extracted, and cloned into pGEM-T-easy (Promega, Madison, WI, USA) for sequencing.
 
-## 5hmC DNA Immunoprecipitation
+**Table 1.**
+ Primer sequences for pyrosequencing analysis
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PDCD1 region</th>
+      <th>Assay</th>
+      <th>CpG</th>
+      <th>PCR primers 5′-3′</th>
+      <th>Sequencing primer 5′-3′</th>
+      <th>Product length (bp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">CR-C</td>
+      <td rowspan="2">1</td>
+      <td rowspan="2">1 and 2</td>
+      <td>F: AGGTATAAAGGAGGTTTTGTAATAGT</td>
+      <td>GAGGTTTTGTAATAGTTAGG</td>
+      <td>186</td>
+    </tr>
+    <tr>
+      <td>R: CCTCAACCACCCAAATTCAAA-BIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">2</td>
+      <td rowspan="2">3, 4, 5</td>
+      <td>F: TGGGTGGTTGAGGTAGTT</td>
+      <td>GTTGAGGTAGTTGTTAGAT</td>
+      <td>253</td>
+    </tr>
+    <tr>
+      <td>R: CACCTCACCTCCTACTTATCTCT-BIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td rowspan="2">6</td>
+      <td>F: TGTTTATTTTAGGGTGGTGAGATTTAT</td>
+      <td>GTTAGGTATTATGTATGTATATAAG</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>R: TAAAAACCCACCTCACCTCCTACTT-BIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">CR-B</td>
+      <td rowspan="2">1</td>
+      <td rowspan="2">8, 9, 10, 11</td>
+      <td>F: AAAGGAAGAAAAGTTTTAAGAGAAAGTAAG</td>
+      <td>CTATCCCACATACTCC</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td>R: ACCCAACTATCCCACATACT-BIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">2</td>
+      <td rowspan="2">12, 13, 14, 15</td>
+      <td>F: GGGTTTTTGTTTTTTAGTAGTAAAGGATTA</td>
+      <td>ATTAAGGTATAGTTTAGGGTA</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <td>R: AAAACCAAACTCTTATCCCTTTAAAA-BIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td rowspan="2">16 and 17</td>
+      <td>F: GGTAGGGGAGGGTTTAGT</td>
+      <td>GTTTTGGGAGTTAAGG</td>
+      <td>193</td>
+    </tr>
+    <tr>
+      <td>R: TCCTCTCCATTTCTAACCCCTCTTATA-BIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">4</td>
+      <td rowspan="2">7</td>
+      <td>F: AGGGTAGTAGAGTTAGTAAATTTAAGATA</td>
+      <td>AGTAGAGAAAATAGTGAGAT</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>R: CTCTTAAAACTTTTCTTCCTTTCAAAATAC-BIO</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Primer sequences for bisulfite sequencing and RT-PCR
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Assay</th>
+      <th>CpG</th>
+      <th>PCR primers 5′-3′</th>
+      <th>Product length (bp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">CR-C*</td>
+      <td rowspan="2"></td>
+      <td rowspan="2">0–4</td>
+      <td>F: ATAAAGGTATAAAGGAGGTTTTG</td>
+      <td rowspan="2">363</td>
+    </tr>
+    <tr>
+      <td>R: CCTAACTAACTAATCATTTCT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CR-C (nested)*</td>
+      <td rowspan="2"></td>
+      <td rowspan="2">1–4</td>
+      <td>F: GAGGGGATTTTTTTAGTTTTTGT</td>
+      <td rowspan="2">289</td>
+    </tr>
+    <tr>
+      <td>R: AATTTAATCATTCTACTCTCT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CR-B*</td>
+      <td></td>
+      <td rowspan="2">7–14</td>
+      <td>F: GAAAGGAAGAAAAGTTTTAAG</td>
+      <td rowspan="2">332</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R: AAACTAAAACCAAACTCTTATCC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CR-B (nested)*</td>
+      <td></td>
+      <td rowspan="2">7–14</td>
+      <td>F: GTTTTTTTGAATTTATAGGGGTG</td>
+      <td rowspan="2">276</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R: ACTCTTATCCCTTTAAAAAAT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CR-C†</td>
+      <td rowspan="2">1</td>
+      <td rowspan="2">3–5</td>
+      <td>F: AGTTGCCAGATGGTTTCCAG</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>R: CTGGGGCATTCTGATGATTT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">CR-B†</td>
+      <td rowspan="2">1</td>
+      <td rowspan="2">10–14</td>
+      <td>F: CGGGTCCTAGGAAATGTTCA</td>
+      <td rowspan="2">236</td>
+    </tr>
+    <tr>
+      <td>R: GCCAGACTCTTGTCCCTTTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2</td>
+      <td rowspan="2">7–10</td>
+      <td>F: TACAGGGGTGTCTGGAGAGG</td>
+      <td rowspan="2">156</td>
+    </tr>
+    <tr>
+      <td>R: ATGCCCTGAGCTATGCCTTA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GAPDH†</td>
+      <td rowspan="2"></td>
+      <td rowspan="2"></td>
+      <td>F: CCACTCCCCTTCCCAGTT</td>
+      <td rowspan="2">147</td>
+    </tr>
+    <tr>
+      <td>R: CCTATAAATACGGACTGC</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Primer sequences for bisulfite sequencing.†Primer sequences for RT-PCR._
+
+### 5hmC DNA Immunoprecipitation
 
 Genomic DNA was extracted as above, and 1 μg of DNA was sonicated (Bioruptor, Diagenode, Liege, Belgium) to produce fragments 200–500 bp (mean 300 bp) in length. Enrichment of 5hmC DNA was carried out using the Active Motif Hydroxymethyl Collector kit (Active Motif, La Hulpe, Belgium) according to manufacturer's instructions.
 
-## Chromatin immunoprecipitation for histone modification analysis
+### Chromatin immunoprecipitation for histone modification analysis
 
 Cross-linked ChIP was conducted essentially as previously described (Hackett et al., 2012) using 1–3 × 106 cells per IP. In brief; after fixation in 1% formaldehyde, cells were lysed and chromatin was sonicated (Bioruptor, Diagenode) to produce fragment sizes 200–1000 bp in length. Chromatin was pre-cleared by incubation with Protein A magnetic beads (Invitrogen), before incubation with antibody bound beads. Antibodies used were anti-H3K27me3, anti-H3K4me3 and the isotype control rabbit IgG (Merck Millipore, Billerica, MA, USA and Santa Cruz Biotechnology, Dallas, TX, USA, respectively). Beads were washed, DNA was eluted and cross-linking was reversed before DNA was purified using the QIAquick PCR purification kit according to manufacturer's instructions (Qiagen). Eluted DNA was quantified using real-time PCR.
 
-## Quantitative real-time PCR (qPCR) analysis
+### Quantitative real-time PCR (qPCR) analysis
 
 qPCR was conducted on DNA obtained after ChIP or 5hmC enrichment using SYBR Green Real-time PCR master mix (Roche Diagnostics, Burgess Hill, UK) and the primers listed in Table 2. Reactions were performed on the Roche LightCycler 480. For ChIP analysis, fold enrichment of specific enrichment over background was calculated using values normalized to input. For 5hmC analysis, relative enrichment was calculated to a known amount of input DNA and all data normalised to a negative control region at the gapdh promoter. Levels of 5hmC were tested over one region at the CR-C and two at the CR-B which were combined to generate an average value of 5hmC enrichment.
 
 For detection of Tet1, Tet2 and Tet3 mRNA, total RNA was isolated using the RNeasy kit and cDNA was generated using the QuantiTect Reverse Transcription kit (both Qiagen) according to manufacturer's instructions. Quantification of mRNA was conducted by qPCR using pre-designed TaqMan assays from Applied Biosystems (Life technologies, Catalogue no's: Mm01169087_m1, Mm00524395_m1, Mm00805756_m1) as previously described (Drake et al., 2010). Results were normalized to the expression of the housekeeping gene GAPDH (Applied Biosystems gene expression assay Mm99999915_g1).
 
-## Statistics
+### Statistics
 
 Statistical analysis of results was performed using the Mann–Whitney U test or the Kruskal–Wallis with Dunn's post-hoc test (p values: *<0.05, **<0.01, ***<0.005).

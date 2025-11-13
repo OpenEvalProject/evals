@@ -34,22 +34,22 @@
 
 ### Affiliations
 
-1. https://ror.org/05kt9ap64 Department of Neurology, Kindai University Faculty of Medicine Osaka-Sayama Japan
-2. https://ror.org/028vxwa22 Department of Neurology, Kyoto Prefectural University of Medicine Kyoto Japan
-3. https://ror.org/035t8zc32 Department of Neurotherapeutics, Osaka University Graduate School of Medicine Suita Japan
-4. https://ror.org/0254bmq54 Department of Degenerative Neurological Diseases, National Institute of Neuroscience, National Center of Neurology and Psychiatry Tokyo Japan
-5. https://ror.org/051k3eh31 Department of Neurology and Neurological Science, Tokyo Medical and Dental University Tokyo Japan
-6. https://ror.org/0112mx960 School of Life Science and Technology, Tokyo Institute of Technology Yokohama Japan
-7. https://ror.org/035t8zc32 Laboratory of Molecular Biophysics, Institute for Protein Research, Osaka University Osaka Japan
-8. https://ror.org/035t8zc32 Department of Regulatory Bioorganic Chemistry, The Institute of Scientific and28 Industrial Research, Osaka University Osaka Japan
-9. https://ror.org/00bx6dj65 Research Center for Micro-nano Technology, Hosei University Tokyo Japan
-10. https://ror.org/03zzw1w08 Department of Neuroscience, Mayo Clinic Jacksonville United States
-11. https://ror.org/035t8zc32 Department of Psychiatry, Osaka University Graduate School of Medicine Osaka Japan
-12. https://ror.org/02kn6nx58 Department of Chemistry, Keio University Kanagawa Japan
-13. https://ror.org/04ww21r56 Department of Neurology, Clinical Neuroscience Branch, Brain Research Institute, Niigata University Niigata Japan
-14. https://ror.org/05kt9ap64 Life Science Research Institute, Kindai University Osaka Japan
-15. https://ror.org/035t8zc32 Department of Neurology, Osaka University Graduate School of Medicine Osaka Japan
-16. https://ror.org/0112mx960 Cell Biology Center, Institute of Innovative Research, Tokyo Institute of Technology Kanagawa Japan
+1. Department of Neurology, Kindai University Faculty of Medicine Osaka-Sayama Japan ([ROR:05kt9ap64](https://ror.org/05kt9ap64))
+2. Department of Neurology, Kyoto Prefectural University of Medicine Kyoto Japan ([ROR:028vxwa22](https://ror.org/028vxwa22))
+3. Department of Neurotherapeutics, Osaka University Graduate School of Medicine Suita Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+4. Department of Degenerative Neurological Diseases, National Institute of Neuroscience, National Center of Neurology and Psychiatry Tokyo Japan ([ROR:0254bmq54](https://ror.org/0254bmq54))
+5. Department of Neurology and Neurological Science, Tokyo Medical and Dental University Tokyo Japan ([ROR:051k3eh31](https://ror.org/051k3eh31))
+6. School of Life Science and Technology, Tokyo Institute of Technology Yokohama Japan ([ROR:0112mx960](https://ror.org/0112mx960))
+7. Laboratory of Molecular Biophysics, Institute for Protein Research, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+8. Department of Regulatory Bioorganic Chemistry, The Institute of Scientific and28 Industrial Research, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+9. Research Center for Micro-nano Technology, Hosei University Tokyo Japan ([ROR:00bx6dj65](https://ror.org/00bx6dj65))
+10. Department of Neuroscience, Mayo Clinic Jacksonville United States ([ROR:03zzw1w08](https://ror.org/03zzw1w08))
+11. Department of Psychiatry, Osaka University Graduate School of Medicine Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+12. Department of Chemistry, Keio University Kanagawa Japan ([ROR:02kn6nx58](https://ror.org/02kn6nx58))
+13. Department of Neurology, Clinical Neuroscience Branch, Brain Research Institute, Niigata University Niigata Japan ([ROR:04ww21r56](https://ror.org/04ww21r56))
+14. Life Science Research Institute, Kindai University Osaka Japan ([ROR:05kt9ap64](https://ror.org/05kt9ap64))
+15. Department of Neurology, Osaka University Graduate School of Medicine Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+16. Cell Biology Center, Institute of Innovative Research, Tokyo Institute of Technology Kanagawa Japan ([ROR:0112mx960](https://ror.org/0112mx960))
 
 † Corresponding author
 
@@ -69,37 +69,124 @@ Using Drosophila models of C9-ALS/FTD, we here demonstrate the regulatory roles 
 
 ## Results
 
-## Screening for RBPs that suppress G4C2 repeat-induced toxicity in C9-ALS/FTD flies
+### Screening for RBPs that suppress G4C2 repeat-induced toxicity in C9-ALS/FTD flies
 
 We established Drosophila models of C9-ALS/FTD that express pathogenic length 42 or 89 G4C2 repeats [(G4C2)42, or (G4C2)89 flies, respectively] and confirmed that expanded G4C2 repeat sequences induce eye degeneration and motor dysfunction accompanied with the formation of RNA foci and the production of three types of DPRs (Figure 1—figure supplement 1), consistent with previous studies (Freibaum et al., 2015; Goodman et al., 2019; Mizielinska et al., 2014; Xu et al., 2013). We also established Drosophila expressing normal length 9 G4C2 repeats as a control [(G4C2)9 flies] and found that they did not show eye degeneration, motor dysfunction, RNA foci formation, or DPR aggregation (Figure 1—figure supplement 1). We selected 18 RBPs that have been reported to bind to G4C2 repeat RNA (Mori et al., 2013a), as well as TDP-43, an ALS/FTD-linked RBP that does not bind to G4C2 repeat RNA (Xu et al., 2013; Figure 1—source data 1), and examined their roles in neurodegeneration in our C9-ALS/FTD fly models. We found that coexpression of FUS, IGF2BP1, or hnRNPA2B1 strongly suppressed the eye degeneration in both flies expressing (G4C2)42 or 89, which show decreased eye size and loss of pigmentation (Figure 1A–D and Figure 1—source data 2). Coexpression of five RBPs, namely, hnRNPR, SAFB2, SF3B3, hnRNPA1, and hnRNPL, also partially suppressed the eye degeneration, whereas coexpression of the other six RBPs had no effect, and two RBPs enhanced the phenotypes (Figure 1A–D and Figure 1—source data 2). In addition, coexpression of TDP-43 had no effect on the eye degeneration in (G4C2)42 flies and resulted in lethality in (G4C2)89 flies, likely due to the toxicity of TDP-43 expression itself (Figure 1A and D and Figure 1—source data 2). The variation in the effects of these G4C2 repeat-binding RBPs on G4C2 repeat-induced toxicity may be due to their different binding affinities to G4C2 repeat RNA and the different toxicity of overexpressed RBPs themselves. We then analyzed the expression levels of G4C2 repeat RNA in flies coexpressing (G4C2)89 and three RBPs that strongly suppressed eye degeneration. We found that coexpression of IGF2BP1 or hnRNPA2B1 significantly decreased G4C2 repeat RNA levels, whereas they were not altered upon coexpression of FUS (Figure 1E). Although the suppressive effects of IGF2BP1 and hnRNPA2B1 could simply be explained by the decreased levels of G4C2 repeat RNA, the molecular mechanisms by which FUS suppresses G4C2 repeat-induced toxicity remain to be clarified. The suppressive effects of FUS on G4C2 repeat-induced toxicity were confirmed using multiple FUS fly lines, showing the significant suppression of decreased eye size and loss of pigmentation in (G4C2)42 or 89 flies coexpressing FUS (Figure 1—figure supplement 2). Therefore, we decided to further focus on FUS, which is another ALS/FTD-linked RBP, and investigated its mechanism of the suppression of G4C2 repeat-induced toxicity.
 
-## FUS suppresses G4C2 repeat-induced toxicity via its RNA-binding activity
+![Figure 1.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig1-v1.jpg)
+
+**Figure 1.:** (A) Light microscopic images of the eyes in flies expressing both (G4C2)42 or 89 and the indicated RBPs using the GMR-Gal4 driver. Coexpression of FUS, IGF2BP1, or hnRNPA2B suppressed eye degeneration in both (G4C2)42 and (G4C2)89 flies, indicated by ‘Suppression (strong).’ Coexpression of hnRNPR, SAFB2, SF3B3, hnRNPA1, or hnRNPL suppressed eye degeneration in either (G4C2)42 or (G4C2)89 flies, indicated by ‘Suppression (weak)’ (see also Figure 1—source data 2). Scale bar: 100 μm. (B) Quantification of eye size in (G4C2)89 flies coexpressing the indicated RBPs (n = 5). (C, D) Quantification of eye pigmentation in (G4C2)89 flies (C) or (G4C2)42 flies (D) coexpressing the indicated RBPs (n = 5). (E) Expression levels of (G4C2)89 RNA in flies expressing both (G4C2)89 and the indicated RBPs using the GMR-Gal4 driver (five independent experiments, n = 25 flies per genotype). The (G4C2)89(H) fly line expresses (G4C2)89 RNA at a high level (see also Figure 1—figure supplement 1). In (B–E), data are presented as the mean ± SEM; p<0.0001, as assessed by one-way ANOVA; n.s., not significant, *p<0.05, **p<0.01, and ***p<0.001, as assessed by Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 1—source data 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) (G4C2)n constructs used in this study. These constructs do not include an ATG start codon downstream of the UAS sequence, and were expressed in a tissue-specific manner using the GAL4-UAS system. (B) Light microscopic images of the eyes in flies expressing (G4C2)n using the GMR-Gal4 driver. Scale bar: 100 μm. (C) Expression levels of (G4C2)n RNAs in flies expressing (G4C2)n using the GMR-Gal4 driver. Strong eye degeneration with decreased eye size and loss of pigmentation was observed in (G4C2)42 or 89 flies, but not in (G4C2)9 flies. Eye degeneration was confirmed in (G4C2)42 and two (G4C2)89 independent fly lines. Degree of eye degeneration in two (G4C2)89 fly lines was expression-level dependent [(L) vs. (H) in (G4C2)89] (three independent experiments, n = 15 flies per each genotype). Expression of G4C2 repeat RNA of the sense transcripts but not that of the antisense transcripts was confirmed. (D) Climbing ability at 1 d of age in flies expressing (G4C2)n using the elav-Gal4 driver. Flies expressing (G4C2)89(H) in neurons showed lethality. Decreasing climbing ability was observed in (G4C2)42 or 89 flies compared with (G4C2)9 flies (five independent experiments, n = 100 flies per each genotype). (E) Fluorescence in situ hybridization (FISH) analyses of G4C2 repeat RNA in the salivary glands of fly larvae with two copies of GMR-Gal4 and (G4C2)9 or 89 (red: G4C2 RNA; yellow: G2C4 RNA; blue [DAPI]: nuclei). RNA foci formation (arrowheads) of the sense transcripts but not that of the antisense transcripts was confirmed. RNA foci were observed in (G4C2)89 flies, but not in (G4C2)9 flies. Scale bars: 100 μm (low magnification) or 20 μm (high magnification). (F) Immunohistochemical analyses of dipeptide repeat proteins (DPRs) stained with anti-DPR antibodies in the eye imaginal discs of fly larvae with two copies of GMR-Gal4 and (G4C2)9 or 89 (magenta: poly(GR); orange: poly(GA); green: poly(GP); blue [DAPI]: nuclei). Expression and cytoplasmic aggregation (arrowheads) of three DPRs in (G4C2)89 flies, but not in (G4C2)9 flies, were confirmed. Scale bars: 50 μm (low magnification), 10 μm (middle magnification), and 5 μm (high magnification). In (B–F), L: low-expression line; H: high-expression line. In (C, D), data are presented as the mean ± SEM; p<0.0001, as assessed by one-way ANOVA; n.s., not significant, and ***p<0.001, as assessed by Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 1—figure supplement 1—source data 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Light microscopic images of the eyes in flies expressing both (G4C2)42 or 89 and FUS using the GMR-Gal4 driver. FUS-2 and FUS-3 are different strains from that in Figure 1. Scale bar: 100 μm. (B) Quantification of the eye size in (G4C2)89 flies of the indicated genotypes (n = 10). (C, D) Quantification of eye pigmentation in (G4C2)89 flies (C) or (G4C2)42 flies (D) of the indicated genotypes (n = 10). In (B–D), data are presented as the mean ± SEM; p<0.0001, as assessed by one-way ANOVA; ***p<0.001, as assessed by Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 1—figure supplement 2—source data 1.
+
+### FUS suppresses G4C2 repeat-induced toxicity via its RNA-binding activity
 
 We next investigated whether the suppressive effects of FUS on G4C2 repeat-induced toxicity are mediated by its binding to G4C2 repeat RNA, using flies expressing FUS with mutations in the RRM (FUS-RRMmut), which have been reported to eliminate its RNA-binding activity (Daigle et al., 2013). Western blot analysis confirmed that the FUS-RRMmut fly line expresses almost an equivalent level of the FUS proteins to the FUS fly line (Figure 2—figure supplement 1). We found that coexpression of FUS-RRMmut did not restore the eye degeneration in flies expressing (G4C2)89, suggesting that the RNA-binding activity of FUS is essential for its suppressive effects on G4C2 repeat-induced toxicity (Figure 2A–C). We also evaluated the reduced egg-to-adult viability of (G4C2)42 flies and confirmed that this phenotype was rescued by coexpression of FUS, but not by coexpression of FUS-RRMmut (Figure 2D). Expression of G4C2 repeat RNA in the nervous system of flies after eclosion using the elav-GeneSwitch driver induces motor dysfunction, and coexpression of FUS significantly alleviated this motor dysfunction (Figure 2E), indicating that FUS suppresses the neuronal phenotypes of flies expressing G4C2 repeat RNA. It is notable that the motor dysfunction caused by the expression of FUS alone was also alleviated by coexpression of (G4C2)42 (Figure 2E), indicating that the G4C2 repeat RNA conversely suppresses FUS toxicity. This result is consistent with our previous observations in SCA31 flies that UGGAA repeat RNA reduced the aggregation and toxicity of TDP-43 (Ishiguro et al., 2017). Moreover, recent studies demonstrated that RNA buffers the phase separation of TDP-43 and FUS, resulting in the suppression of their aggregation (Maharana et al., 2018; Mann et al., 2019). These findings hence suggest that balancing the crosstalk between repeat RNAs and RBPs neutralizes the toxicities of each other.
 
-## FUS suppresses RNA foci formation and RAN translation from G4C2 repeat RNA
+![Figure 2.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig2-v1.jpg)
+
+**Figure 2.:** (A) Light microscopic images of the eyes in flies expressing both (G4C2)89 and either FUS or FUS-RRMmut using the GMR-Gal4 driver. Scale bar: 100 μm. (B) Quantification of eye size in the flies of the indicated genotypes (n = 10). (C) Quantification of eye pigmentation in the flies of the indicated genotypes (n = 10). (D) Egg-to-adult viability in flies expressing both (G4C2)42 and either FUS or FUS-RRMmut using the GMR-Gal4 driver (>500 flies per genotype). (E) Climbing ability in flies expressing both (G4C2)42 and FUS using the elav-GeneSwitch driver (five independent experiments, n = 100 flies per each genotype). In (B–E), data are presented as the mean ± SEM. In (B, C), p<0.0001, as assessed by one-way ANOVA; n.s., not significant, and ***p<0.001, as assessed by Tukey’s post hoc analysis. In (D), n.s., not significant and ***p<0.001, as assessed by Tukey’s multiple-comparison test using wholly significant difference. In (E), n.s., not significant, *p<0.05, **p<0.01, and ***p<0.001, as assessed by two-way repeated-measures ANOVA with Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot analysis of the FUS and FUS-RRMmut proteins in the heads of adult flies expressing EGFP, FUS, or FUS-RRMmut using the GMR-Gal4 driver, with an anti-FUS antibody. The arrowhead indicates bands from the FUS and FUS-RRMmut proteins, whereas the asterisk indicates bands resulting from nonspecific antibody binding. (B) Quantification of the FUS and FUS-RRMmut proteins from the western blot analysis in (A) (n = 3). In (B), data are presented as the mean ± SEM; n.s., not significant, as assessed by the unpaired t-test. The detailed statistical information is summarized in Figure 2—figure supplement 1—source data 1.
+
+### FUS suppresses RNA foci formation and RAN translation from G4C2 repeat RNA
 
 We next analyzed the effects of FUS expression on RNA foci and DPR production in flies expressing G4C2 repeat RNA. We performed RNA fluorescence in situ hybridization (FISH) of the salivary glands of fly larvae expressing (G4C2)89 and found that coexpression of FUS significantly decreased the number of nuclei containing RNA foci in (G4C2)89 flies, whereas it was not altered by coexpression of FUS-RRMmut (Figure 3A and B). We confirmed that the expression levels of G4C2 repeat RNA in (G4C2)89 flies were not altered by coexpression of FUS or FUS-RRMmut (Figure 3C). These results were in good agreement with our previous study on SCA31 showing the suppressive effects of FUS and other RBPs on RNA foci formation of UGGAA repeat RNA through altering RNA structures and preventing aggregation of misfolded repeat RNA as RNA chaperones (Ishiguro et al., 2017), raising the possibility that FUS has RNA-chaperoning activity also for G4C2 repeat RNA. Immunohistochemistry of the eye imaginal discs of fly larvae expressing (G4C2)89 revealed that coexpression of FUS significantly decreased the number of DPR aggregates in (G4C2)89 flies, whereas coexpression of FUS-RRMmut did not (Figure 3D and E). Quantitative analyses of poly(GP) by immunoassay also demonstrated that poly(GP) levels were greatly decreased in (G4C2)89 flies upon coexpression of FUS, but not FUS-RRMmut (Figure 3F), indicating that FUS suppresses RAN translation from the G4C2 repeat RNA to reduce DPR production. Considering that the 5′ upstream sequence of the G4C2 repeat in the C9orf72 gene is reported to affect RAN translation activity (Green et al., 2017; Tabet et al., 2018), we used flies expressing the G4C2 repeat sequence with the upstream intronic sequence of the C9orf72 gene, namely, LDS-(G4C2)44GR-GFP (Goodman et al., 2019). Since this construct has a 3′-green fluorescent protein (GFP) tag in the GR reading frame downstream of the G4C2 repeat sequence, the GR-GFP fusion protein is produced by RAN translation (Figure 3—figure supplement 1). We confirmed that coexpression of FUS significantly decreased the expression level of GR-GFP, whereas coexpression of FUS-RRMmut had no effect (Figure 3G–I).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig3-v1.jpg)
+
+**Figure 3.:** (A) Fluorescence in situ hybridization (FISH) analyses of G4C2 repeat RNA in the salivary glands of fly larvae expressing both (G4C2)89 and either FUS or FUS-RRMmut using two copies of the GMR-Gal4 driver (red: G4C2 RNA; blue [DAPI]: nuclei). Arrowheads indicate RNA foci. Scale bar: 20 μm. (B) Quantification of the number of nuclei containing RNA foci from the FISH analyses in (A) (n = 10). (C) Expression levels of (G4C2)89 RNA in fly larvae expressing both (G4C2)89 and either FUS or FUS-RRMmut using the GMR-Gal4 driver (10 independent experiments, n = 50 flies per each genotype). (D) Immunohistochemical analyses of dipeptide repeat proteins (DPRs) stained with anti-DPR antibodies in the eye imaginal discs of fly larvae expressing both (G4C2)89 and either FUS or FUS-RRMmut using two copies of the GMR-Gal4 driver (magenta: poly(GR); orange: poly(GA); green: poly(GP)). Arrowheads indicate cytoplasmic aggregates. Scale bars: 20 μm (low magnification) or 5 μm (high magnification). (E) Quantification of the number of DPR aggregates from the immunohistochemical analyses in (D) (n = 14 or 15 [GR], or 10 [GA or GP]). (F) Immunoassay to determine poly(GP) levels in flies expressing both (G4C2)89 and either FUS or FUS-RRMmut using the GMR-Gal4 driver (three independent experiments, n = 30 flies per each genotype). (G) Western blot analysis of the heads of adult flies expressing both LDS-(G4C2)44GR-GFP and any of DsRed, FUS or FUS-RRMmut using the GMR-Gal4 driver, using either an anti-GFP (upper panel) or anti-GR antibody (middle panel). (H, I) Quantification of GR-GFP protein levels from the western blot analysis in (G) (nine independent experiments, n = 90 flies per each genotype). In (B, C, E, F, H, I), data are presented as the mean ± SEM. In (B, E, F), p<0.0001, as assessed by one-way ANOVA; n.s., not significant, *p<0.05, **p<0.01, and ***p<0.001, as assessed by Tukey’s post hoc analysis. In (C), p=0.452, as assessed by one-way ANOVA; n.s., not significant, as assessed by Tukey’s post hoc analysis. In (H), p=0.0148, as assessed by one-way ANOVA; n.s., not significant and *p<0.05, as assessed by Tukey’s post hoc analysis. In (I), p=0.0072, as assessed by one-way ANOVA; n.s., not significant and *p<0.05, as assessed by Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Schema of the LDS-(G4C2)44GR-GFP construct containing the (G4C2)44 sequence and 114 nucleotides of the 5′-flanking region of intron 1 of the human C9orf72 G4C2 repeat sequence. A GFP tag in the GR frame was introduced downstream of the (G4C2)44 repeat sequence.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Light microscopic images of the eyes in DPR-only flies coexpressing either the poly(GR) or poly(GA) protein, and either FUS or FUS-RRMmut using the GMR-Gal4 driver. Overexpression of FUS did not suppress the eye degeneration in flies expressing either (GR)36 or (GR)100. Overexpression of FUS also caused mild eye degeneration in flies expressing EGFP, (GA)36, or (GA)100, likely due to FUS toxicity.
+
 We further excluded the possibility that FUS directly interacts with DPRs, rather than with G4C2 repeat RNA, to decrease DPR levels and exert its suppressive effects. Using DPR-only flies expressing DPRs translated from non-G4C2 RNAs with alternative codons (Mizielinska et al., 2014), we confirmed that FUS did not suppress the eye degeneration in DPR-only flies expressing poly(GR), but rather enhanced their phenotypes, likely due to the additive effects of FUS toxicity (Figure 3—figure supplement 2). Together with the finding that FUS decreases not only DPR expression but also RNA foci formation (Figure 3A and B), these results collectively indicate that FUS indeed interacts with G4C2 repeat RNA and regulates RAN translation from G4C2 repeat RNA in Drosophila models of C9-ALS/FTD.
 
-## Reduction of endogenous caz expression enhances G4C2 repeat-induced toxicity, RNA foci formation, and DPR aggregation
+### Reduction of endogenous caz expression enhances G4C2 repeat-induced toxicity, RNA foci formation, and DPR aggregation
 
 To elucidate the physiological role of FUS on RAN translation, we also investigated the role of endogenous caz, a Drosophila homologue of FUS, on G4C2 repeat-induced toxicity in flies expressing G4C2 repeat RNAs. Coexpression of caz as well as FUS suppressed eye degeneration in flies expressing (G4C2)42 or 89 (Figure 4—figure supplement 1). These data suggest that caz is a functional homologue of FUS. In contrast, knockdown of caz by RNA interference or its hemizygous deletion modestly but significantly enhanced the eye degeneration in (G4C2)89 flies (Figure 4A–D), indicating that reduced caz expression enhances G4C2 repeat-induced toxicity. We next analyzed the effects of caz knockdown on RNA foci formation and DPR production in flies expressing (G4C2)89. FISH analysis of the salivary glands revealed that knockdown of caz significantly increased the number of nuclei containing RNA foci in (G4C2)89 flies (Figure 4E and F). We also confirmed that the expression levels of G4C2 repeat RNA in (G4C2)89 flies were not altered by the knockdown of caz (Figure 4G). Immunohistochemical analysis showed that knockdown of caz significantly increased the number of DPR aggregates in (G4C2)89 flies (Figure 4H and I). These results indicate that the reduction of caz expression enhances RNA foci formation and DPR aggregation, compatible with the results of FUS coexpression in flies expressing (G4C2)89 (Figure 3), and that FUS functions as an endogenous regulator of RAN translation.
 
-## FUS directly binds to and modulates the G-quadruplex structure of G4C2 repeat RNA, resulting in the suppression of RAN translation in vitro
+![Figure 4.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig4-v1.jpg)
+
+**Figure 4.:** (A) Light microscopic images of the eyes in flies expressing (G4C2)89 using the GMR-Gal4 driver, with knockdown of caz. Scale bar: 100 μm. (B) Quantification of eye size in flies of the indicated genotypes shown in (A) (n = 10). (C) Light microscopic images of the eyes in flies expressing (G4C2)89 using the GMR-Gal4 driver, with a hemizygous deletion of caz. Scale bar: 100 μm. (D) Quantification of eye size in the flies of the indicated genotypes shown in (C) (n = 10). (E) Fluorescence in situ hybridization (FISH) analyses of G4C2 repeat RNA in the salivary glands of fly larvae expressing (G4C2)89 using the GMR-Gal4 driver, with knockdown of caz (red: G4C2 RNA; blue [DAPI]: nuclei). Arrowheads indicate RNA foci. Scale bar: 20 μm. (F) Quantification of the number of nuclei containing RNA foci from the FISH analyses in (E) (n = 10). (G) Expression levels of (G4C2)89 RNA in fly larvae expressing (G4C2)89 using the GMR-Gal4 driver, with knockdown of caz (four independent experiments, n = 20 flies per each genotype). (H) Immunohistochemical analyses of DPRs stained with anti-DPR antibodies in the eye imaginal discs of fly larvae expressing (G4C2)89 using two copies of the GMR-Gal4 driver, with the knockdown of caz. (magenta: poly(GR); orange: poly(GA); green: poly(GP)). Arrowheads indicate cytoplasmic aggregates. Scale bars: 20 μm (low magnification) or 5 μm (high magnification). (I) Quantification of the number of DPR aggregates from the immunohistochemical analyses in (H) (n = 10). In (B, D, F, G, I), data are presented as the mean ± SEM. In (B, D), p<0.0001, as assessed by one-way ANOVA; ***p<0.001, as assessed by Tukey’s post hoc analysis. In (F, G, I), n.s., not significant, *p<0.05, **p< 0.01, and ***p<0.001, as assessed by the unpaired t-test. The detailed statistical information is summarized in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Light microscopic images of the eyes in flies expressing both (G4C2)42 or 89 and either caz (FLAG-caz) or FUS-4 (FLAG-FUS) using the GMR-Gal4 driver. FUS-4 is a different strain from those used in Figure 1 and Figure 1—figure supplement 2. Scale bar: 100 μm. (B) Quantification of the eye size in (G4C2)89 flies of the indicated genotypes (n = 10). (C, D) Quantification of eye pigmentation in (G4C2)89 flies (C) or (G4C2)42 flies (D) of the indicated genotypes (n = 10). In (B–D), data are presented as the mean ± SEM; p<0.0001, as assessed by one-way ANOVA; n.s., not significant, *p<0.05, **p<0.01, and ***p<0.001, as assessed by Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 4—figure supplement 1—source data 1.
+
+### FUS directly binds to and modulates the G-quadruplex structure of G4C2 repeat RNA, resulting in the suppression of RAN translation in vitro
 
 We next confirmed the direct interaction of FUS with G4C2 repeat RNA by the filter binding assay. We found that His-tagged FUS binds to the (G4C2)4 RNA in a dose-dependent manner, but not to the control (AAAAAA)4 RNA (Figure 5A), and His-tagged FUS-RRMmut had almost no binding affinity to the (G4C2)4 RNA, consistent with a previous study (Mori et al., 2013a). We also confirmed the interaction of FUS with the G4C2 repeat RNA in our C9-ALS/FTD flies by showing the colocalization of FUS with the RNA foci (Figure 5—figure supplement 1), consistent with a recent study using C9-ALS/FTD patient fibroblasts (Bajc Česnik et al., 2019). Since G4C2 repeat RNA was reported to form both G-quadruplex and hairpin structures (Fratta et al., 2012; Haeusler et al., 2014; Reddy et al., 2013; Su et al., 2014), we next characterized the interactions of FUS with G4C2 repeat RNA having different structures. G4C2 repeat RNA is known to form G-quadruplex structures in the presence of K+, whereas they form hairpin structures in the presence of Na+ (Su et al., 2014). Surface plasmon resonance (SPR) analyses demonstrated that FUS preferentially binds to (G4C2)4 RNA with the G-quadruplex structure in KCl buffer (Table 1, dissociation constant (KD) = 1.5 × 10–8 M) and weakly to (G4C2)4 RNA with the hairpin structure in NaCl buffer (Table 1, KD = 1.3 × 10–7 μM). We also confirmed that FUS has poor binding affinity to (G4C2)4 RNA in LiCl buffer (Table 1, KD = 1.4 × 10–5 μM), which destabilizes the G-quadruplex structure (Hardin et al., 1992), and was an almost similar level to its binding affinity to the negative control (A4C2)4 RNA (not shown). These results suggest the preferential binding of FUS to G4C2 repeat RNA with the G-quadruplex structure, which is consistent with a previous report showing preferential binding of FUS to G-quadruplex structured Sc1 and DNMT RNAs (Ozdilek et al., 2017). Considering that higher-order structures, including G-quadruplex and hairpin structures, are reported to be involved in RAN translation (Mori et al., 2021; Simone et al., 2018; Wang et al., 2019; Zu et al., 2011), we next investigated the effects of FUS on the structure of G4C2 repeat RNA. The circular dichroism (CD) spectrum of (G4C2)4 RNA in KCl buffer was found to exhibit a positive peak at approximately 260 nm and a negative peak at 240 nm (Figure 5B, black line), consistent with previous reports (Fratta et al., 2012; Haeusler et al., 2014; Reddy et al., 2013; Su et al., 2014). Interestingly, upon the addition of FUS, these two peaks were notably shifted to longer wavelengths with substantial CD spectrum changes, indicating a significant structural alteration in (G4C2)4 RNA (Figure 5B, red line). We confirmed that the CD spectrum of FUS alone in the wavelength range of 240–300 nm was almost negligible (Figure 5—figure supplement 2A, green line), indicating that this change in CD spectrum is attributed to structural changes in the (G4C2)4 RNA. We also observed CD spectrum changes to some extent in the (G4C2)4 RNA upon the addition of FUS in NaCl buffer, but not in LiCl buffer, confirming an interaction between FUS and hairpin-structured (G4C2)4 RNA as well (Figure 5C and D). We further analyzed the interaction between FUS and G4C2 repeat RNA by imino proton nuclear magnetic resonance (NMR). In KCl buffer, the NMR signals of the imino proton for the G-quadruplex structure of (G4C2)4 RNA were detected in the region around 10–12 ppm (Figure 5—figure supplement 2D), consistent with previous studies (Fratta et al., 2012; Su et al., 2014). Upon the addition of FUS, the NMR intensities of (G4C2)4 RNA were decreased in an FUS concentration-dependent manner (Figure 5—figure supplement 2D), further supporting the possibility that that FUS interacts with and modulates the G-quadruplex structure of (G4C2)4 RNA. Collectively, these results indicate that FUS directly binds to G4C2 repeat RNA, preferentially to its G-quadruplex form and modulates its higher-order structures. These structural alterations of G4C2 repeat RNAs by FUS did not require ATP or interactions with other proteins, suggesting its role as an RNA chaperone for G4C2 repeat RNA (Rajkowitsch et al., 2007).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig5-v1.jpg)
+
+**Figure 5.:** (A) Analysis of the binding of His-tagged FUS proteins to biotinylated (G4C2)4 RNA by the filter binding assay. The nitrocellulose membrane (left) traps RNA-bound FUS proteins, whereas unbound RNAs are recovered on the nylon membrane (right), and then the RNAs trapped on each of the membranes was probed with streptavidin-horseradish peroxidase (HRP). Biotinylated (AAAAAA)4 and (UUAGGG)4 were used as negative and positive controls, respectively. (B–D) CD spectra of (G4C2)4 RNA incubated with or without FUS in the presence of 150 mM KCl (B), NaCl (C), or LiCl (D). The CD spectrum of FUS alone was subtracted from that of (G4C2)4 RNA incubated with FUS. The original data are shown in Figure 5—figure supplement 2B–2D. (E) Schema of the template RNA containing the (G4C2)80 sequence and 113 nucleotides of the 5′-flanking region of intron 1 of the human C9orf72 G4C2 repeat sequence. A Myc tag in the GA frame was introduced downstream of the (G4C2)80 repeat sequence. (F) Western blot analysis of samples from in vitro translation using rabbit reticulocyte lysate in the presence or absence of increasing concentrations of FUS or FUS-RRMmut. The GA-Myc fusion protein was detected by western blotting using the anti-Myc antibody. (G) Quantification of the GA-Myc fusion protein in (F) (n = 3). In (G), data are presented as the mean ± SEM; *p<0.05, **p<0.01, and ***p<0.001, as assessed by the unpaired t-test. The detailed statistical information is summarized in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Combined fluorescence in situ hybridization (FISH) and immunohistochemical analyses of G4C2 repeat RNA and FUS in the salivary glands of flies expressing both (G4C2)89 and FUS using two copies of the GMR-Gal4 driver. Arrowheads indicate colocalization of FUS with RNA foci. Scale bar: 10 μm (low magnification) and 5 μm (high magnification).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) CD spectra of (G4C2)4 RNA incubated with or without FUS in the presence of 150 mM KCl (A), NaCl (B), or LiCl (C). CD spectra of (G4C2)4 RNA alone (black), FUS alone (green), sum of (G4C2)4 RNA and FUS (blue), and the spectra of their coincubation (magenta) are shown. FUS interacts with (G4C2)4 RNA under KCl or NaCl buffer conditions. (D) Imino proton NMR spectra of (G4C2)4 RNA incubated with increasing amounts of FUS in the presence of 150 mM KCl.
+
+**Table 1.**
+ Association (ka) and dissociation (kd) rate and dissociation constants (KD) between FUS and (G4C2)4 RNA in different buffers as assessed by surface plasmon resonance (SPR) analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Buffer</th>
+      <th>ka (M–1s–1) × 106</th>
+      <th>kd (s–1) × 10–3</th>
+      <th>KD (M)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KCl</td>
+      <td>1.4</td>
+      <td>22</td>
+      <td>1.5 × 10–8</td>
+    </tr>
+    <tr>
+      <td>NaCl</td>
+      <td>0.41</td>
+      <td>54</td>
+      <td>1.3 × 10–7</td>
+    </tr>
+    <tr>
+      <td>LiCl</td>
+      <td>0.0018</td>
+      <td>25</td>
+      <td>1.4 × 10–5</td>
+    </tr>
+  </tbody>
+</table>
+
 To further clarify the direct link between the binding of FUS to G4C2 repeat RNA and its effects on RAN translation, we employed a cell-free in vitro translation assay using rabbit reticulocyte lysate. We designed a reporter construct containing the 80 G4C2 repeat sequence with the 5′ upstream intronic sequence of the C9orf72 gene and the Myc tag sequence in the GA reading frame at the 3′ downstream (Figure 5E). This upstream sequence contained multiple stop codons in each reading frame and lacked AUG initiation codons. We confirmed by western blotting that this reporter system indeed produces GA-Myc by RAN translation, consistent with previous studies (Green et al., 2017; Tabet et al., 2018). Notably, upon the addition to this translation system, FUS suppressed RAN translation efficiently, whereas FUS-RRMmut did not. FUS decreased the expression levels of GA-Myc at as low as 10 nM and nearly eliminated RAN translation activity at 100 nM. At 400 nM, FUS-RRMmut weakly suppressed the GA-Myc expression levels probably because of the residual RNA-binding activity (Figure 5F and G). Taken together, these results indicate that FUS suppresses RAN translation in vitro through direct interactions with G4C2 repeat RNA as an RNA chaperone.
 
-## Identification of G-quadruplex-targeting RBPs that suppress G4C2 repeat-induced toxicity in C9-ALS/FTD flies
+### Identification of G-quadruplex-targeting RBPs that suppress G4C2 repeat-induced toxicity in C9-ALS/FTD flies
 
 Considering that FUS suppresses G4C2 repeat-induced toxicity as an RNA chaperone through its preferential binding to the G-quadruplex structure of G4C2 repeat RNA (Figure 5 and Table 1), we hypothesized that other G-quadruplex-targeting RBPs might have similar suppressive effects on G4C2 repeat-induced toxicity. To investigate this possibility, we selected six representative G-quadruplex-targeting RBPs, all of which are known to bind to G4C2 RNA as well (Cooper-Knock et al., 2014; Haeusler et al., 2014; Mori et al., 2013a; Xu et al., 2013; Figure 6—source data 1). Intriguingly, coexpression of EWSR1, DDX3X, DDX5, or DDX17 significantly suppressed eye degeneration in (G4C2)89 flies without altering G4C2 RNA expression (Figure 6A–D). As expected, these RBPs also decreased the number of poly(GA) aggregates in the eye imaginal discs (Figure 6E and F). Their effects on G4C2 repeat-induced toxicity, repeat RNA expression, and RAN translation were consistent with those of FUS. In support of our results, DDX3X was previously reported to suppress RAN translation and G4C2 repeat-induced toxicity in cell culture in a helicase-activity-dependent manner (Cheng et al., 2019). On the other hand, coexpression of DHX9 or DHX36 suppressed eye degeneration by reducing G4C2 repeat RNA levels (Figure 6A–D). Since G-quadruplex-targeting RBPs have diverse biological functions, including transcription, RNA processing, translation, and RNA stabilization (Dumas et al., 2021), these different effects among G-quadruplex-targeting RBPs on G4C2 repeat RNA expression might be attributed to their different roles in RNA metabolism. Thus, some G-quadruplex-targeting RBPs regulate RAN translation and G4C2 repeat-induced toxicity by binding to and possibly by modulating the G-quadruplex structure of G4C2 repeat RNA.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/84338/elife-84338-fig6-v1.jpg)
 
-**Figure 6.:** 4C2 repeat-induced toxicity in C9-ALS/FTD flies.(A) Light microscopic images of eyes in flies expressing both (G)4C289 and the indicated G-quadruplex-targeting RBPs using the GMR-Gal4 driver. Scale bar: 100 μm. (B) Quantification of eye size in the flies of the indicated genotypes (n = 10). (C) Quantification of eye pigmentation in the flies of the indicated genotypes (n = 10). (D) Expression levels of (G)4C289 RNA in flies expressing both (G)4C289 and the indicated G-quadruplex-targeting RBPs using the GMR-Gal4 driver (five independent experiments, n = 25 flies per each genotype). (E) Immunohistochemical analyses of poly(GA) stained with anti-GA antibody in the eye imaginal discs of fly larvae expressing both (G)4C289 and the indicated G-quadruplex-targeting RBPs using two copies of the GMR-Gal4 driver (orange: poly(GA)). Arrowheads indicate cytoplasmic aggregates. Scale bars: 20 μm (low magnification) or 5 μm (high magnification). (F) Quantification of the number of poly(GA) aggregates from the immunohistochemical analyses in (E) (n = 10). In (B, C, D, F), data are presented as the mean ± SEM; p<0.0001, as assessed by one-way ANOVA; n.s., not significant, *p<0.05 and ***p<0.001, as assessed by Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 6—source data 2.Figure 6—source data 1.Figure 6.Figure 6—source data 2.Figure 6B–D, F.
+**Figure 6.:** (A) Light microscopic images of eyes in flies expressing both (G4C2)89 and the indicated G-quadruplex-targeting RBPs using the GMR-Gal4 driver. Scale bar: 100 μm. (B) Quantification of eye size in the flies of the indicated genotypes (n = 10). (C) Quantification of eye pigmentation in the flies of the indicated genotypes (n = 10). (D) Expression levels of (G4C2)89 RNA in flies expressing both (G4C2)89 and the indicated G-quadruplex-targeting RBPs using the GMR-Gal4 driver (five independent experiments, n = 25 flies per each genotype). (E) Immunohistochemical analyses of poly(GA) stained with anti-GA antibody in the eye imaginal discs of fly larvae expressing both (G4C2)89 and the indicated G-quadruplex-targeting RBPs using two copies of the GMR-Gal4 driver (orange: poly(GA)). Arrowheads indicate cytoplasmic aggregates. Scale bars: 20 μm (low magnification) or 5 μm (high magnification). (F) Quantification of the number of poly(GA) aggregates from the immunohistochemical analyses in (E) (n = 10). In (B, C, D, F), data are presented as the mean ± SEM; p<0.0001, as assessed by one-way ANOVA; n.s., not significant, *p<0.05 and ***p<0.001, as assessed by Tukey’s post hoc analysis. The detailed statistical information is summarized in Figure 6—source data 2.
 
 ## Discussion
 
@@ -115,11 +202,371 @@ In summary, we here provided evidence that FUS modulates the structure of G4C2 r
 
 ## Materials and methods
 
-## Flies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>UAS-(G4C2)n, UAS-FUS-2, UAS-FUS-RRMmut</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See ‘Generation of constructs and transgenic flies’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-RBP(FUS-3; IGF2BP1; hnRNPA2B1; hnRNPR; SAFB2; SF3B3; hnRNPA1; hnRNPL; DHX30; SAFB; DHX15; ILF2; DDX21; hnRNPK; SFPQ; ILF3; NONO; ELAVL1; DDX3X; DDX5; DDX17; DHX9; DHX36)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See ‘Generation of constructs and transgenic flies’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-LDS-(G4C2)44GR-GFP</td>
+      <td>Goodman et al., 2019 (PMID::31110321)</td>
+      <td>FLYB: FBtp0135960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-FUS</td>
+      <td>Ishiguro et al., 2017 (PMID::28343865)</td>
+      <td>FLYB: FBtp0117594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-FUS-4 (UAS-FLAG-FUS)</td>
+      <td>Wang et al., 2011 (PMID::21881207)</td>
+      <td>FLYB: FBtp0070284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-caz (UAS-FLAG-caz)</td>
+      <td>Wang et al., 2011 (PMID:21881207)</td>
+      <td>FLYB: FBtp0070279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>caz2</td>
+      <td>Frickenhaus et al., 2015 (PMID::25772687)</td>
+      <td>FLYB: FBal0323133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-TDP-43</td>
+      <td>Ishiguro et al., 2017 (PMID::28343865)</td>
+      <td>FLYB: FBtp0117592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>GMR-GAL4 driver</td>
+      <td>Yamaguchi et al., 1999 (PMID:10597285)</td>
+      <td>FLYB: FBtp0010074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Elav-GAL4 driver: P{w[+mC]=GAL4-elav.L}2/CyO</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 8765; FLYB: FBst0008765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Elav-GeneSwitch GAL4 driver: y(1) w[*]; P{w[+mC]=elav-Switch.O}GSG301</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 43642; FLYB: FBst0043642</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-EGFP: w[*]; P{w[+mC]=UAS-2xEGFP}AH2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 6874; FLYB: FBst0006874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-DsRed: w[*]; P{w[+mC]=UAS-AUG-DsRed}A</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 6282; FLYB: FBst0006282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-EWSR1: w[1118]; P{w[+mC]=UAS-EWSR1.C}26M</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 79592; FLYB: FBst00079592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-(GR)36: w[1118]; P{{y[+t7.7] w[+mC]=UAS-poly-GR.PO-36}attP40</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 58692; FLYB: FBst00058692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-(GA)36: w[1118]; P{{y[+t7.7] w[+mC]=UAS-poly-GA.PO-36}attP40</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 58693; FLYB: FBst00058693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-(GR)100: w[1118]; P{{y[+t7.7] w[+mC]=UAS-poly-GR.PO-100}attP40</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 58696; FLYB: FBst00058696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-(GA)100: w[1118]; P{{y[+t7.7] w[+mC]=UAS-poly-GA.PO-100}attP40</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 58697; FLYB: FBst00058697</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>RNAi of GFP: w[1118]; P{w[+mC]=UAS-GFP.dsRNA.R}142</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 9330; FLYB: FBst0009330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>RNAi of caz: P{KK107486}VIE-260B</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC: v100291; FLYB: FBst0472165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-poly(GR) antibody (5A2)</td>
+      <td>Millipore</td>
+      <td>Car# MABN778; RRID:AB_2728664</td>
+      <td>IHC(1:1000), WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-poly(GA) antibody (5E9)</td>
+      <td>Millipore</td>
+      <td>Car# MABN889; RRID:AB_2728663</td>
+      <td>IHC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-poly(GA) antibody</td>
+      <td>Cosmo Bio</td>
+      <td>Cat# CAC-TIP-C9-P01</td>
+      <td>IHC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-poly(GP) antibody</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NBP2-25018; RRID:AB_2893239</td>
+      <td>IHC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FUS antibody</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat# A300-302A; RRID:AB_309445</td>
+      <td>IHC(1:1000), WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-EGFP antibody</td>
+      <td>Clontech</td>
+      <td>Cat# 632569</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-actin antibody (AC-40)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A4700; RRID:AB_476730</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-c-Myc antibody (9E10)</td>
+      <td>Wako</td>
+      <td>Cat# 017-21876</td>
+      <td>WB(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5/FRT-C9orf72 intron1-(G4C2)80 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘RNA synthesis for in vitro translation’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>(G4C2)n_F(1)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGAATGGGAGCAGTGGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>(G4C2)n_R(1)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTTGAGAGTCAGCAGTAGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>(G4C2)n_F(2)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCAATCCATATGACTAGTAGATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>(G4C2)n_R(2)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTAGGTAGTTTGTCCAATTATGTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gal4_F</td>
+      <td>Li et al., 2008 (PMID:18449188)</td>
+      <td>PCR primers</td>
+      <td>TTGAAATCGCGTCGAAGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gal4_R</td>
+      <td>Li et al., 2008 (PMID:18449188)</td>
+      <td>PCR primers</td>
+      <td>GGCTCCAATGGCTAATATGCA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-FUS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See ‘Filter binding assay’</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-FUS-RRMmut</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See ‘Filter binding assay’</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FUS (not tagged)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See ‘Preparation of recombinant FUS protein’</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FUS-RRMmut (not tagged)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See ‘Preparation of recombinant FUS protein’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion Cloning system</td>
+      <td>TaKaRa Bio</td>
+      <td>Cat# Z9645N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-Tn5&lt;KAN-2&gt;Insertion Kit</td>
+      <td>Epicentre</td>
+      <td>Cat# EZI011RK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 205314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Flexi Rabbit Reticulocyte Lysate System</td>
+      <td>Promega</td>
+      <td>Cat# L4540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RU486 (mifepristone)</td>
+      <td>Wako</td>
+      <td>M3321; CAS: 84371-65-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formula 4-24 Instant Drosophila medium</td>
+      <td>Wako</td>
+      <td>Cat# 534-20571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN imaging software</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672; https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012 (PMID:22930834)</td>
+      <td>RRID:SCR_003070; https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 8.4.3</td>
+      <td>GraphPad Software Inc.</td>
+      <td>RRID:SCR_002798; https://www.graphpad.com</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Flies
 
 All fly stocks were cultured and crossed at 23°C or 25°C in standard cornmeal-yeast-glucose medium. Male adult flies were used for the climbing assay and GeneSwitch experiments. 3- to 5-day-old female adult flies were used for the evaluation of eye phenotype using a stereoscopic microscope model SZX10 (Olympus). Female third-instar larvae were used for quantitative real-time polymerase chain reaction (PCR), RNA FISH, and immunohistochemistry experiments. The transgenic fly line bearing the GMR-Gal4 transgene has been described previously (Yamaguchi et al., 1999). The transgenic fly lines bearing elav-Gal4 (#8765), elav-GeneSwitch (#43642), UAS-EGFP (#6874), UAS-DsRed (#6282), UAS-GFP-IR (inverted repeat) (#9330), UAS-(GR)36 (#58692), UAS-(GA)36 (#58693), UAS-(GR)100 (#58696), UAS-(GA)100 (#58697), and UAS-EWSR1 (#79592) were obtained from Bloomington Drosophila Stock Center. The transgenic fly line bearing UAS-caz-IR (#100291) was obtained from Vienna Drosophila Resource Center. The fly line with the caz null allele (caz2), UAS-LDS-(G4C2)44GR-GFP, and UAS-caz (UAS-FLAG-caz) and UAS-FUS-4 (UAS-FLAG-FUS) were kind gifts from Dr. Erik Storkebaum (Frickenhaus et al., 2015), Dr. Nancy Bonini (Goodman et al., 2019), and Dr. Brian McCabe (Wang et al., 2011), respectively. Other transgenic fly lines were generated in this study. Full genotypes of the fly lines used in all figures and their cultured temperatures are described in Supplementary file 1.
 
-## Generation of constructs and transgenic flies
+### Generation of constructs and transgenic flies
 
 Artificially synthesized (G4C2)50 sequences flanked at the 5′ end with an EagI recognition site and at the 3′ end with a PspOMI recognition site were subcloned into T-vector pMD20 (Takara Bio). To generate a longer repeat size, the pMD20-(G4C2)50 vector was digested with EagI and PspOMI, followed by ligation into the pMD20-(G4C2)50 vector linearized by digestion with EagI. This vector was digested with EcoRI and HindIII, and subcloned into the pcDNA3.1/myc-His(−)A vector (Thermo Fisher Scientific). We accidentally obtained the pcDNA3.1/myc-His(−)A-(G4C2)9 vector at this step. The pcDNA3.1/myc-His(−)A-(G4C2)n vector was digested with EcoRI and XbaI, and subcloned into the Drosophila pUAST vector. These constructs have no start codon sequence (ATG) upstream of the G4C2 repeat sequence (Figure 1—figure supplement 1A). These pUAST-(G4C2)n vectors were amplified with a recombinase-mutated SURE2 Escherichia coli strain (Agilent Technologies) at 28°C for 72 hr to prevent repeat length contraction. The number of G4C2 repeats in the pUAST-(G4C2)9 or 50 vectors was determined by sequencing. To determine the number of G4C2 repeats in the pUAST-(G4C2)89 vector, transposable element insertional mutagenesis using EZ-Tn5<KAN-2>Insertion Kit (Epicentre) and sequencing were performed. The entire sequence of the insert in the pUAST vector is shown in Figure 1—figure supplement 1—source data 1.
 
@@ -127,79 +574,79 @@ To generate pUAST-FUS or pUAST-TDP-43 vectors, the Gateway Vector Conversion Sys
 
 The number of repeats in UAS-(G4C2)9 or 42 transgenic flies was determined by genomic PCR using the forward (5′-AACCAGCAACCAAGTAAATCAAC-3′) and reverse (5′-TGTTGAGAGTCAGCAGTAGCC-3′) primers, which amplifies a part of the UAS-(G4C2)n sequence, including G4C2 repeat sequence, followed by sequencing using the forward (5′-GCCAAGAAGTAATTATTGA-3′) and/or reverse (5′-TCCAATTATGTCACACC-3′) primers.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was extracted from female third-instar larvae of each genotype using TRIzol reagent (Thermo Fisher Scientific) according to the manufacturer’s instructions. First-strand cDNA was synthesized using QuantiTect Reverse Transcription Kit (QIAGEN). Real-time PCR was performed using SYBR Premix Ex Taq II (Takara Bio) and the Mx3000P Real-time quantitative PCR system (Agilent Technologies) or the CFX96 Real-Time PCR Detection System (Bio-Rad). For G4C2 repeat RNA quantification of flies expressing (G4C2)n in Figure 1—figure supplement 1C, the forward (5′-ATGAATGGGAGCAGTGGTGG-3′) and reverse (5′-TGTTGAGAGTCAGCAGTAGCC-3′) primers were used. For G4C2 repeat RNA quantification of flies expressing (G4C2)89(H) and FUS, FUS-RRMmut, other RNA-binding proteins, or caz-IR in Figures 1E, 3C, 4G and 6D, the forward (5′-CCCAATCCATATGACTAGTAGATCC-3′) and reverse (5′- TGTAGGTAGTTTGTCCAATTATGTCA-3′) primers were used. Both of the abovementioned primer pairs recognize sequences downstream of the G4C2 repeats. For gal4 mRNA quantification, the forward (5′-TTGAAATCGCGTCGAAGGA-3′) and reverse (5′-GGCTCCAATGGCTAATATGCA-3′) primers were used (Li et al., 2008). Data were analyzed using the standard curve method. The amounts of G4C2 repeat transcripts were normalized to those of gal4 transcripts expressed in the same tissue to avoid potential confounding derived from the difference in tissue viability between genotypes. At least three independent biological replicates per genotype were analyzed. Data were normalized by setting the values of the samples from flies expressing (G4C2)89(H) (Figure 1—figure supplement 1C), both (G4C2)89(H) and EGFP (Figures 1E, 3C and 6D), or both (G4C2)89(H) and GFP-IR (Figure 4G) as 100.
 
-## Imaging and quantification of fly eyes
+### Imaging and quantification of fly eyes
 
 Light microscopic images of the eyes of 3- to 5-day-old female flies were taken using a stereoscopic microscope model SZX10 (Olympus) with a CCD camera DP21 (Olympus). Images shown are representative eye phenotypes of the fly crosses. Crosses were performed three times to validate the specific phenotypes. Eye size and pigmentation were quantified as previously reported (Saitoh et al., 2015). 5 or 10 eyes per genotype were analyzed. Data were normalized by setting the values of samples from flies expressing one copy of EGFP (Figure 4D), those expressing two copies of EGFP (Figures 1B–D–2B, C,, 6B and C, Figure 1—figure supplement 2B–D, and Figure 4—figure supplement 1B–D), or those expressing both EGFP and GFP-IR (Figure 4B), as 100.
 
-## Egg-to-adult viability of flies
+### Egg-to-adult viability of flies
 
 Mated female flies were placed on grape juice agar with yeast paste for 24 hr. Eggs were collected from the surface of the grape juice agar, and the number of eggs was counted and placed on new standard fly food. After eclosion, the number of adult flies was counted. Egg-to-adult viability was calculated by dividing the number of adult flies by the number of eggs. More than 500 eggs per genotype were used. Data were normalized by setting the values of samples from flies expressing two copies of EGFP as 100 (Figure 2D).
 
-## Climbing assay
+### Climbing assay
 
 Twenty male flies were gently introduced into a glass vial. After a 5 min adaptation period, the bottom of the vial was gently tapped and the height the flies reached in 10 s was recorded using a digital video camera, and scored as follows: 0 (lower than 2 cm), 1 (from 2 to 3.9 cm), 2 (from 4 to 5.9 cm), 3 (from 6 to 7.9 cm), 4 (from 8 to 9.9 cm), and 5 (higher than 10 cm). Five trials were performed in each experiment at intervals of 20 s. The assay was performed between 8:00 and 10:00. Climbing scores were calculated as an average of five trials.
 
-## GeneSwitch experiments
+### GeneSwitch experiments
 
 Flies were crossed in the absence of RU486 (mifepristone) on standard fly food. 1-day-old adult male flies were transferred to Formula 4-24 Instant Drosophila medium (Wako) with RU486 (100 µg/mL) for the indicated periods. Every 2 or 3 d, flies were transferred to new medium with RU486. Climbing assays were performed at 0, 7, and 14 d after the start of RU486 treatment (Figure 2E).
 
-## RNA fluorescence in situ hybridization
+### RNA fluorescence in situ hybridization
 
 Female third-instar larvae were dissected in ice-cold phosphate-buffered saline (PBS). Salivary glands were fixed with 4% paraformaldehyde (PFA) (pH 7.0) in PBS for 30 min and incubated in 100% methanol. Fixed samples were rehydrated in 75% (v/v), 50%, and 25% ethanol in PBS, and rinsed in PBS and distilled water (DW). Samples were then treated with 0.2 N HCl/DW for 20 min at room temperature (RT) and rinsed in DW. Next, the samples were permeabilized with 0.2% Triton X-100 in PBS for 10 min, rinsed in PBS for 5 min, fixed again in 4% PFA in PBS for 20 min, then washed twice for 5 min each in PBS, and incubated twice for 15 min each in 2 mg/mL glycine/PBS. After the acetylation treatment, samples were incubated for 1 hr at 37°C in hybridization buffer consisting of 50% formamide, 2× saline sodium citrate (SSC), 0.2 mg/mL yeast tRNA, and 0.5 mg/mL heparin. For hybridization, samples were incubated overnight at 80°C with a 5′ end Alexa 594-labeled (G2C4)4 or Alexa 488-labeled (C2G4)4 locked nucleic acid (LNA) probe (5 nM) in hybridization buffer. These LNA probes were synthesized by GeneDesign Inc. After the hybridization, samples were washed once for 5 min in 4× SSC at 80°C, three times for 20 min each in 2× SSC and 50% formamide at 80°C, three times for 40 min each in 0.1× SSC at 80°C, and once for 5 min in PBS containing 0.5% Triton X-100 (PBT) at RT. Nuclei were stained with 4',6-diamidino-2-phenylindole (DAPI) or 2'-(4-ethoxyphenyl)–5-(4-methyl-1-piperazinyl)–2,5'-bi-1-H-benzimidazole, trihydrochloride (Hoechst 33342). Stained samples were mounted in SlowFade Gold antifade reagent (Thermo Fisher Scientific) and observed under a Zeiss LSM710 or LSM880 confocal laser-scanning microscope.
 
 After RNA FISH, samples were scanned using a Zeiss LSM710 or LSM880 confocal laser-scanning microscope along the z-axis direction. One z-stack image was taken per salivary gland using ZEN imaging software (Zeiss). RNA foci-positive nuclei in more than 30 cells per salivary gland were counted, and the percentage of nuclei containing RNA foci in the salivary gland was calculated. Ten salivary glands were analyzed for each genotype.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Female third-instar larvae were dissected in ice-cold PBS. Eye imaginal discs and salivary glands were fixed with 4% PFA in PBS for 30 min and washed three times with PBT. After blocking with 5% goat serum/PBT, the samples were incubated overnight at 4°C with a rat monoclonal anti-poly(GR) antibody (clone 5A2, MABN778, Millipore), a mouse monoclonal anti-poly(GA) antibody (clone 5E9, MABN889, Millipore), a rabbit polyclonal anti-poly(GA) antibody (CAC-TIP-C9-P01, Cosmo Bio), a rabbit polyclonal anti-poly(GP) antibody (NBP2-25018, Novus Biologicals), or a rabbit polyclonal anti-FUS antibody (A300-302A, Bethyl Laboratories) at 1:1000 dilution as the primary antibody. After washing three times with PBT, the samples were incubated with an Alexa 633-conjugated anti-rat antibody (A-21094, Thermo Fisher Scientific), or an Alexa 488-conjugated or Alexa 555-conjugated anti-rabbit antibody (A-11008 or A-21428, respectively, Thermo Fisher Scientific) at 1:500 dilution as the secondary antibody. After washing three times with PBT, nuclei were stained with DAPI or Hoechst 33342. Stained samples were mounted in SlowFade Gold antifade reagent and observed using confocal laser-scanning microscopes (LSM710, LSM880 [Zeiss], and FV3000 [Olympus]).
 
 The number of DPR aggregates in the eye discs was quantitatively measured using ZEN imaging software (Zeiss) and ImageJ (Schneider et al., 2012), as follows: (1) selection of photoreceptor neurons within the 13 developing ommatidia in rows 2 and 3 at the posterior end of the eye discs (Saitoh et al., 2015) by DAPI or Hoechst 33342 staining because these ommatidia are at similar stages of development and can be easily identified; and (2) counting of the number of DPR aggregates with a diameter of larger than 2 µm in the cytoplasm. 10–15 eye discs were analyzed for each genotype.
 
-## Measurement of poly(GP) protein levels
+### Measurement of poly(GP) protein levels
 
 The heads of 5-day-old female flies expressing both (G4C2)89(H) and either EGFP, FUS, or FUS-RRMmut using the GMR-Gal4 driver were collected and stored at –80°C. Samples were prepared using a previously reported method (Tran et al., 2015). Poly(GP) levels were measured by a sandwich immunoassay that uses Meso Scale Discovery electrochemiluminescence detection technology, as described previously (Su et al., 2014). Data were normalized by setting the values of samples from flies expressing (G4C2)89(H) and EGFP (Figure 3F) as 100.
 
-## Western blotting
+### Western blotting
 
 To assess the expression levels of FUS and FUS-RRMmut (Figure 2—figure supplement 1), or GR-GFP (Figure 3G–I), 10 heads of 5-day-old female flies expressing FUS or FUS-RRMmut, or both LDS-(G4C2)44GR-GFP and either FUS or FUS-RRMmut using the GMR-Gal4 driver were homogenized in 100 µL of sodium dodecyl sulfate (SDS) sample buffer using a pestle, boiled for 5 min, and centrifuged at 10,000 × g for 3 min at 25°C. 5 µL of each supernatant were run on a 5–20% gradient polyacrylamide gel (Wako) and then transferred onto an Immun-Blot polyvinylidene fluoride membrane (Bio-Rad). Membranes were blocked with 5% skim milk in PBS containing 0.1% Tween-20 (PBST) or PVDF Blocking Reagent for Can Get Signal (TOYOBO) for 2 hr at RT, and then incubated overnight at 4°C with a rabbit polyclonal anti-FUS antibody (A300-302A, Bethyl Laboratories), a rat monoclonal anti-poly(GR) antibody (clone 5A2, MABN778, Millipore), a Living Colors EGFP mouse monoclonal antibody (632569, Clontech), or a mouse monoclonal anti-actin antibody (clone AC-40, A4700, Sigma-Aldrich) at 1:1000 dilution as the primary antibody. After washing three times with PBST, membranes were incubated for 2 hr at RT with either HRP-conjugated anti-rat, anti-rabbit, or anti-mouse antibody (31470, 31460, or 31430, respectively, Invitrogen) at 1:5000 dilution as the secondary antibody, washed three times with PBST, treated with SuperSignal West Dura chemiluminescent substrate (Thermo Fisher Scientific), and imaged using the LuminoGraphII imaging system (ATTO). Data were normalized by setting the average values of samples from flies expressing FUS (Figure 2—figure supplement 1B) or those expressing both LDS-(G4C2)44GR-GFP and DsRed as 100 (Figure 3H and I).
 
-## Filter binding assay
+### Filter binding assay
 
 For preparation of FUS proteins with an N-terminal His tag (His-FUS and His-FUS-RRMmut), cDNAs of the human FUS protein (wild type or RRM mutant) from pUAST-FUS or pUAST-FUS-RRMmut were cloned into the multiple cloning site (XhoI and BamHI) of the plasmid vector pET-15b (Novagen) (Nomura et al., 2014). After transfection of the plasmids into E. coli BL21 (DE3), the expression of His-FUS proteins was induced by culturing the transformed cells in the presence of 0.5 mM isopropyl β-D-thiogalactopyranoside (IPTG) at 20°C for 20 hr. Cells were lysed by ultrasonication in PBS (pH 7.4) containing 2% (v/v) Triton X-100, 1 M NaCl, DNase I, MgSO4, and ethylenediaminetetraacetic acid-free cOmplete Protease Inhibitor Cocktail (Roche Applied Sciences). After centrifugation at 20,000 × g for 30 min at 4°C, the pellets were redissolved in a buffer (pH 7.0) containing 6 M guanidine hydrochloride (GdnHCl), 50 mM Tris, and 1 M NaCl. His-FUS proteins in the pellets were purified by Ni2+ affinity chromatography. In brief, the His-FUS proteins were mixed with Profinity IMAC Ni2+-charged resin (Bio-Rad) for 30 min at 20°C. Then, FUS proteins bound to the resin were washed with wash buffer (6 M GdnHCl, 50 mM Tris, and 1 M NaCl, pH 7.0), and eluted with elution buffer (6 M GdnHCl, 50 mM Tris, 100 mM NaCl, and 250 mM imidazole, pH 7.0). For preparation of soluble, refolded FUS, FUS proteins (200 μM) in the elution buffer were diluted 20-fold with a buffer (pH 7.0) containing 50 mM Tris, 100 mM NaCl, 10% (v/v) glycerol, and 5 mM Tris (2-carboxyethyl) phosphine (buffer A), which, however, produced significant amounts of precipitate. This insoluble material was removed by centrifugation at 20,000 × g for 10 min at 4°C, resulting in the recovery of soluble FUS proteins in the supernatant fraction. Protein concentrations were spectroscopically determined from the absorbance at 280 nm using the following extinction coefficients: 71,630 cm−1 M−1 for both FUS and FUS-RRMmut.
 
 Biotinylated RNAs were synthesized by GeneDesign Inc. 10 nM biotin-(G4C2)4, 10 nM biotin-(AAAAAA)4, or 10 nM biotin-(UUAGGG)4 (telomeric repeat-containing RNA: TERRA) were incubated with soluble FUS proteins (5, 10, or 50 nM) in buffer A with 0.4 U/µL RNase inhibitor (RNasin Plus RNase Inhibitor, Promega). Biotinylated (AAAAAA)4 and TERRA are negative and positive controls, respectively. After an hour at RT, the mixture was filtered through a nitrocellulose membrane (PROTRAN, 0.2 μm, Amersham Biosciences) overlaid on a nylon membrane (Hybond-N+, 0.45 μm, Schleicher & Schuell) in a 96-well slot-blot apparatus (ATTO) (Furukawa et al., 2011). After extensive washing of the membranes with buffer A, the bound RNAs were crosslinked to the membranes using ultraviolet radiation (254 nm; UV Stratalinker, Stratagene) at an energy level of 0.12 J. After blocking with 3% (w/v) BSA in Tris-buffered saline with 0.1% Tween-20, the membranes were incubated with streptavidin-HRP (1:5000; Nacalai Tesque), and the biotinylated RNAs on the membranes were detected with ImmunoStar LD reagent (Wako).
 
-## Preparation of recombinant FUS protein
+### Preparation of recombinant FUS protein
 
 For preparation of the FUS proteins, the human FUS (WT) and FUS-RRMmut genes flanked at the 5′ end with an NdeI recognition site and at the 3′ end with a XhoI recognition site was amplified by PCR from pUAST-FUS and pUAST- FUS-RRMmut, respectively. PCR fragments were digested with NdeI and XhoI. These fragments were ligated into the cloning sites of the plasmid vector pET-21b (Novagen) between NdeI and XhoI. After transfection of the plasmids into E. coli BL21 (DE3), expression of the FUS protein was induced by culturing the transformed cells in the presence of 0.5 mM IPTG at 37°C for 6 hr. Cells were harvested by centrifugation and suspended with buffer B (10% glycerol, 20 mM 4-(2-hydroxyethyl)–1-piperazineethanesulfonic acid [HEPES]-NaOH [pH 7.0], 300 mM NaCl, 1 mM dithiothreitol [DTT], 1 mM ethylenediaminetetraacetic acid [EDTA], 0.1% Tween-20, and 0.1% benzamidine hydrochloride) containing 1.5 mg/mL lysozyme, and stored for 30 min on ice. Cell lysates were sonicated, and insoluble protein was collected by centrifugation. The pellet was solubilized in buffer C (6 M urea, 10% glycerol, 20 mM HEPES-NaOH [pH 7.0], 1 mM DTT, 1 mM EDTA, and 0.1% benzamidine hydrochloride). After centrifugation, supernatants were loaded onto a DE52 (GE Healthcare) open column. The flow-through fraction was loaded onto a CM52 (GE Healthcare) open column. The flow-through fraction of DE52 was applied to a CAPTO S column (GE Healthcare), and the flow-through fraction was collected using the ÄKTAexplorer 10S/100 system (GE Healthcare). The flow-through fraction was applied to a Mono S column (GE Healthcare). Proteins were fractionated with a 0–500 mM linear gradient of NaCl in buffer D (6 M urea, 10% glycerol, 20 mM HEPES-NaOH [pH 7.0], 1 mM DTT, and 1 mM EDTA) using ÄKTA explorer 10S/100 system. The FUS fraction was eluted at 150–200 mM NaCl. For refolding, the eluted peak fraction was diluted fivefold using refolding buffer (900 mM arginine, 100 mM N-cyclohexyl-2-hydroxyl-3-aminopropanesulfonic acid [pH 9.5], 0.3 mM reduced glutathione, 0.03 mM oxidized glutathione, and 1 mM ZnCl2), and stored overnight at RT. The solution was concentrated using a centrifugal filter (Vivaspin 6–10 kDa; GE Healthcare) to 1–2 mg/mL, and then dialyzed against buffer E (10% glycerol, 20 mM HEPES-NaOH [pH 6.8], 300 mM NaCl, 0.1 mM EDTA, and 10 mM β-cyclodextrin), and stored frozen at −80°C.
 
-## Surface plasmon resonance analyses
+### Surface plasmon resonance analyses
 
 The binding of FUS to (G4C2)4 RNA was analyzed using a Biacore T200 instrument (GE Healthcare). (G4C2)4 RNAs biotinylated at the 5′ end in 10 mM HEPES pH 6.8 and 500 mM MCl (M=K, Na, or Li) was injected over the streptavidin-coated surface of a sensor chip SA (GE Healthcare). The amount of immobilized RNA was as follows: 240 resonance unit (RU) in KCl, 363 RU in NaCl, or 319 RU in LiCl buffer condition. Binding experiments were performed using the single-cycle kinetics method. The running buffer used was 20 mM HEPES (pH 6.8), 1 mM MgCl2, 0.05% Tween-20, and 150 mM KCl, NaCl, or LiCl. FUS was diluted in the running buffer and injected sequentially over the RNA-immobilized sensor surface in increasing concentrations (0.016, 0.031, 0.063, 0.13, or 0.25 µM). Sensorgrams were obtained at 25°C, 30 µL/min flow rate, 60 s of contact time, and 120 s of dissociation time.
 
-## Circular dichroism spectroscopy
+### Circular dichroism spectroscopy
 
 CD spectra were measured at 25°C using a spectropolarimeter model J-820 (JASCO). (G4C2)4 RNA was synthesized by GeneDesign Inc and dissolved in 20 mM HEPES (pH 6.8), 18.75 mM NaCl, 10 mM MgCl2, 0.625% glycerol, 0.625 mM β-cyclodextrin, and 0.0625 mM EDTA with 150 mM KCl, NaCl, or LiCl. RNA samples containing 150 mM KCl were first heated at 95°C for 5 min and then cooled to RT to form the G-quadruplex structure. The other samples were not heated. FUS (1 μM) was added to the RNA sample (4 μM) and mixed before recording the spectrum. CD spectra were recorded at a speed of 50 nm min–1 and a resolution of 1 nm, and 10 scans were averaged.
 
-## Nuclear magnetic resonance spectroscopy
+### Nuclear magnetic resonance spectroscopy
 
 All one-dimensional 1H NMR spectral data were recorded using AVANCE III 800 MHz NMR spectrometers equipped with a TXI cryogenic probe (Bruker BioSpin) at 25°C. (G4C2)4 RNA dissolved in 20 mM HEPES (pH 6.8), 150 mM KCl, 18.75 mM NaCl, 10 mM MgCl2, 0.625% glycerol, 0.625 mM β-cyclodextrin, and 0.0625 mM EDTA was first heated at 95°C for 5 min and then cooled to room temperature to form the G-quadruplex structure. The RNA (10 μM) was mixed with FUS at molar ratios (RNA:FUS) of 1:0, 1:0.2, 1:0.4, and 0:1. The samples were then prepared at a final concentration of 10% D2O before recording their spectra. 1H NMR data were acquired using simple single 90° hard-pulse excitations following solvent signal suppression with a jump-and-return pulse scheme. Free induction decay data (1600 points in total) were collected by repeating the scans (2600 times) with an interscan delay of 2.5 s. All NMR data were processed using Topspin 3.6 software (Bruker BioSpin).
 
-## RNA synthesis for in vitro translation
+### RNA synthesis for in vitro translation
 
 For preparation of the C9-RAN reporter plasmid, the pEF6-C9orf72 intron1-(G4C2)80 vector was digested with HindIII and NotI to obtain the fragment C9orf72 intron1-(G4C2)80 and subcloned into the pcDNA5/FRT vector (Thermo Fisher Scientific). To add the T7 promoter upstream of the C9orf72 intron 1 sequence in this pcDNA5/FRT-C9orf72 intron1-(G4C2)80 vector, a forward primer including T7 promoter sequences with the 5′-terminal region of C9orf72 intron 1 flanked at the 5′ end with an HindIII recognition site, and a reverse primer recognizing the 3′-terminal region of C9orf72 intron 1 sequences including a BssHII recognition site were designed, and used to amplify a fragment containing C9orf72 intron 1 with a T7 promoter by PCR. Then, this fragment was subcloned into the pcDNA5/FRT-C9orf72 intron1-(G4C2)80 vector digested by HindIII and BssHII. In addition to the T7 promoter, the Myc tag in the GA frame downstream of (G4C2)80 was introduced into this vector.
 
 The reporter plasmids were linearized with XbaI. Linearized DNA was in vitro transcribed using mMESSAGE mMACHINE T7 Transcription Kit (Invitrogen) according to the manufacturer’s instructions. T7 reactions were carried out at 37°C for 2 hr, treated with TURBO DNaseI for 15 min at 37°C to remove the DNA template, and then polyadenylated with E. coli Poly-A Polymerase (NEB) for 1 hr at 37°C. Synthesized mRNAs were purified by LiCl precipitation. The size and quality of the synthesized mRNAs were verified on a denaturing RNA gel.
 
-## In vitro translation assay
+### In vitro translation assay
 
 mRNAs of C9orf72 intron1-(G4C2)80 with a Myc tag in the GA frame were in vitro translated with Flexi Rabbit Reticulocyte Lysate System (Promega) according to the manufacturer’s instructions. Translation reactions were performed with 10 ng/μL mRNA and contained 30% rabbit reticulocyte lysate, 10 μM amino-acid mix minus methionine, 10 μM amino-acid mix minus leucine, 0.5 mM MgOAc, 100 mM KCl, and 0.8 U/μL Murine RNAse Inhibitor (NEB). FUS or FUS-RRMmut at each concentration (10, 100, 200, 400, and 1000 nM) was preincubated with mRNA for 10 min to facilitate the interaction between FUS protein and G4C2 repeat RNA, and added for translation in the lysate. Samples were incubated at 30°C for 90 min before termination by incubation on ice. 10 μL of samples were analyzed by 13% SDS-polyacrylamide gel electrophoresis and western blotting using a mouse monoclonal anti-c-Myc antibody (clone 9E10, Wako) as the primary antibody.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical parameters including the definitions and exact values of n (e.g. number of experiments, number of flies, number of eye imaginal discs, etc.), distributions, and deviations are stated in the figures and corresponding figure legends. Multiple-comparison tests using one-way ANOVA with Tukey’s post hoc analysis were performed for Figures 1B–E—4B, D,, 6B–D, F, Figure 1—figure supplement 1C and D, Figure 1—figure supplement 2B–D, and Figure 4—figure supplement 1B–D, multiple-comparison test using two-way repeated measures ANOVA with Tukey’s post hoc analysis was performed for Figure 2E, and the unpaired t-test was used for Figures 4F, G, I, 5G, and Figure 2—figure supplement 1B. Differences in means were considered statistically significant at p<0.05. All statistical analyses were performed using GraphPad Prism version 8.3.4 (GraphPad Software, LLC).
 

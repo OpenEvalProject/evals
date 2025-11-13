@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Department of Molecular Medicine, Aarhus University Hospital Aarhus Denmark
-2. https://ror.org/01aj84f44 Department of Clinical Medicine, Aarhus University Aarhus Denmark
-3. https://ror.org/01aj84f44 Bioinformatics Research Center, Aarhus University Aarhus Denmark
-4. https://ror.org/03dbr7087 Princess Margaret Cancer Centre, University Health Network, Temerty Faculty of Medicine, University of Toronto Toronto Canada
-5. https://ror.org/04py2rh25 Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School Boston United States
-6. https://ror.org/02jzgtq86 Departments of Radiation Oncology and Radiology, Brigham and Women’s Hospital, Dana-Farber Cancer Institute, Harvard Medical School Boston United States
-7. https://ror.org/02jz4aj89 Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University Maastricht Netherlands
+1. Department of Molecular Medicine, Aarhus University Hospital Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. Department of Clinical Medicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+3. Bioinformatics Research Center, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+4. Princess Margaret Cancer Centre, University Health Network, Temerty Faculty of Medicine, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+5. Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School Boston United States ([ROR:04py2rh25](https://ror.org/04py2rh25))
+6. Departments of Radiation Oncology and Radiology, Brigham and Women’s Hospital, Dana-Farber Cancer Institute, Harvard Medical School Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+7. Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
 
 † Corresponding author
 
@@ -35,11 +35,25 @@ In medicine, the interpretability of models is crucial since there is a need for
 
 Here, we present a framework for multi-omics analysis based on a convolutional deep learning network to find hidden, nonlinear patterns in spatially connected feature-rich multi-layered data. The spatial connection of the data is made by transforming the data into a multi-channel image in such a way that spatial connections between genes are captured and analyzed using convolutional layers. Using spatial connections between the data showed superior performance when compared to non-spatially data transformations. Furthermore, the trained model is combined with IG, which allows us to evaluate the relative contribution of individual features and thus decipher the underlying biology that drives the classification provided by the deep learning models. IG is a non-parametric approach that evaluates the trained model relative to input data and output label, resulting in attribution scores for each input with respect to the output label. In other words, IG represent the integral of gradients with respect to inputs along the path from a given baseline. By using IG, we provide an alternative solution to the problem posed by performing multiple independent statistical tests. Here, instead of performing multiple tests, a single analysis is performed by transforming multi-omics data into genome images, training a model, and inspecting it with IG. IG will output an attribution score for every gene included in the genome image. These can be ranked in order to retrieve a subset of the most associated genes relative to the output variable. We named the framework GENIUS (GEnome traNsformatIon and spatial representation of mUltiomicS data), and the methodology may be split into two parts, classification and interpretation. First, the key feature of GENIUS is that for classification, multi-omics data is transformed into multi-channel images where each gene is presented as a pixel in an image that covers the whole genome (Figure 1A, B). We then incorporate multiple types of omics data, such as mutation, expression, methylation, and copy number data, into the image as distinct layers. These layers are then used as input into the deep learning model for training against a binary or continuous outcome variable. Next, for interpretation, an attribution score is assigned to each feature using IG, allowing the user to extract information about which feature or features may drive a specific prediction based on deep learning analysis of input from multiple-omics data sources. In this work, we describe the development of the GENIUS framework and demonstrate its utility in predicting the development of metastatic cancer, patient age, chromosomal instability, cancer type, and as proof of concept, loss of TP53.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig1-v1.jpg)
+
+**Figure 1.:** (A) The study utilized 2332 tumor samples representing six cancer types (bladder, uterine, stomach, ovarian, kidney, and colon) and transformed multi-omics data into images based on chromosome interaction networks. After the model was trained, we validated found genes with two independent cohorts representing early-stage bladder carcinoma (BLCA; UROMOL) and late-stage BLCA (Mariathasan). (B) The validation included looking at the most important genes driving metastatic disease, similar/different methylation patterns between cancer types, latent representation of genome data and looking at survival data. (C) The model architecture where the first part of the network encodes genome data into latent vector, L, followed by decoding where image is reconstructed. Next layers aim to extract information from the reconstructed image, concat it with L and make a final prediction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) HG19 genes were ordered by chromosome and chromosome position. Next, based on gene position, the matrix was filled, where each cell represents a single gene. This was used for a template when creating matrices for every data source included in genome image construction. (B) Example of genome image.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Amplification of a gene was declared when the gene was fully within an amplified segment. (B) Deletion of a gene was declared when the gene was partially within a deleted segment.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig1-figsupp3-v1.jpg)
+
 All predictions are based on multi-omics input through the GENIUS framework. Users may train their own or publicly sourced multi-omics data against a specified endpoint tailored to the user’s choice. The GENIUS framework thus overcomes the issue of multiple hypothesis testing and may provide new insights into the biology behind classification by deep learning models. The GENIUS framework is made available as a GitHub repository and may be used without restrictions to develop stratification models and inform about genome biology using multi-omics input.
 
 ## Methods
 
-## GENIUS model architecture and hyperparameters
+### GENIUS model architecture and hyperparameters
 
 We designed a four-part convolutional neural network with the purpose of extracting the features from multi-dimensional data while minimizing the impact of noise in the data (Figure 1C). The network was implemented using the PyTorch framework. The structure of the network is similar to an autoencoder architecture; however, the reconstruction of the genome image is not penalized. The motivation behind the implemented network structure is to use an encoder in order to learn how to compact genomic information into a small vector, L, forcing the network to extract relevant information from up to five data sources. The next module reconstructs the image from vector L, learns which features are important, reorganizes them optimally, and removes noise. The final module of the network uses a series of convolutions and max-pooling layers in order to extract information from the reconstructed image and, finally, predicts the outcome variable using a fully connected dense network.
 
@@ -47,51 +61,67 @@ The first part of the network is called the encoder, as its purpose is to encode
 
 All models were trained with Adagrad optimizer with the following hyperparameters: starting learning rate = 9.9e−05 (including learning rate scheduler and early stopping), learning rate decay and weight decay = 1e−6, batch size = 256, except for memory-intensive chromosome images where the batch size of 240 was used. Adding chromosome interaction information to the data transformation showed improvement during training; next question was whether we should penalize the reconstruction of genome image during the training process. After multiple training scenarios and hyperparameter exploration, we concluded that by forcing the network to reconstruct genome images in the process of learning, we are limiting network performance. Instead, we used the appropriate loss function for prediction and allowed the network to reconstruct genome images that are optimal for making predictions.
 
-## Evaluating input image design
+### Evaluating input image design
 
 To evaluate the performance of GENIUS with an image-based transformation of input omics data, we tested four different image layouts of the genome. For each layout, we created a set of images where each sample is represented by one multi-channel image and each channel represented a specific type of omics data (gene expression, methylation, mutation, deletion, and amplification) (Figure 1A, Figure 1—figure supplement 1A-B). Each data type was encoded for each gene as a continuous value, where each gene was defined by a single pixel in each layer. We then tested the performance of the deep neural network on four different image layouts. First, we assembled the genome as a square image, measuring 198x198 pixels in total. Here, all genes were placed on the image sequentially according to their chromosomal locations, and individual chromosomes were organized by how close they were oriented in 3D space (Sarnataro et al., 2017). Second, we tested an image organized by 24 × 3760 pixels, with 3760 pixels representing the most gene-rich chromosome, and each chromosome placed below the other on the image following the same order as in 198 × 198 images. Chromosomes containing fewer than 3760 genes had black pixels added to the end to create a rectangular image. Third, we tested a random 2D location, with each gene placed as a random pixel in a 198 × 198 pixel square image. Lastly, we tested an image of a single vector with all genes placed in a randomly ordered sequence. Data transformation we performed and tested:
 
 By using different image layouts, we wanted to investigate the spatial dependency of observations. Images were created by making a matrix for each source of data where each cell was represented by a single gene (Figure 1A, Figure 1—figure supplements 1 and 2). The genes in 198 × 198 and 24 × 3760 images were ordered by position as well as by chromosome interaction coefficients resulting in the following order of chromosomes: 4, X, 7, 2, 5, 6, 13, 3, 8, 9, 18, 12, 1, 10, 11, 14, 22, 19, 17, 20, 16, 15, 21. Finally, newly created observations for each data source were merged as a multi-channel image where each channel represents a single source of data (Figure 1A, Figure 1—figure supplement 1).
 
-## Samples and training data
+### Samples and training data
 
 We obtained gene expression, exome mutation, methylation, and copy number data from six cancer types from the Cancer Genome Atlas (TCGA). These were picked to filter out cancer types with less than 400 samples. Next, cancer types with an extremely high or extremely low proportion of metastatic samples (0.85 < Proportion > 0.15) were removed, resulting in ovarian serous cystadenocarcinoma (OV), colon adenocarcinoma (COAD), uterine corpus endometrial carcinoma (UCEC), kidney renal clear cell carcinoma (KIRC), urothelial bladder carcinoma (BLCA), and stomach adenocarcinoma (STAD) (Figure 1A, Figure 1—figure supplement 3). RNAseq was obtained from the University of California Santa Cruz (UCSC) Toil pipeline (Vivian et al., 2017) and summarized to transcript per million (TPM) on the gene level. SNP6 copy number data were segmented using ASCAT v2.4 (Adzhubei et al., 2010; Raine et al., 2016) and converted into a ploidy and purity normalized log R value by dividing the total copy number with ploidy and taking the log2 value. The weighted genome integrity index (wGII) (Burrell et al., 2013) was calculated on the available segmented copy number data, as previously described. Mutation calls were annotated using Polyphen2 to assess the mutation’s impact on the protein structure. Methylation was summarized by the mean methylation score for each gene.
 
-## Validation cohorts acquisition and processing
+### Validation cohorts acquisition and processing
 
 Two independent cohorts of bladder cancer patients were used for validation. The UROMOL cohort (Zuiverloon et al., 2013; Lindskrog et al., 2021) contains molecular data from 535 tumors from patients with early-stage bladder cancer (Ta and T1) and was included to evaluate the progression to muscle-invasive bladder cancer. The Mariathasan cohort (Mariathasan et al., 2018) contains molecular data from 348 tumors from patients with advanced or metastatic bladder cancer (stages III and IV), treated with checkpoint immunotherapy. This cohort was included to evaluate the ability of the GENIUS framework to predict the likelihood of developing metastatic disease.
 
 For both cohorts, RNAseq data was aligned against hg38 using STAR (Dobin et al., 2013) version 2.7.2 and processed to generate count and TPM expression values with Kallisto (Ayers et al., 2017) version 0.46.2. Whole exome sequence data was processed using GATK (Van der Auwera, 2020) version 4.1.5 and ASCAT version 2.4.2 to obtain mutation and allele-specific copy number, purity, and ploidy estimates.
 
-## Data transformation
+### Data transformation
 
 All mutations were ranked by PolyPhen scores, ranging between 0 and 1. Log R segmented copy number data was analyzed as deletion and amplification separately. Copy number deletion was defined as log R scores <log2 of 0.5/2, copy number amplification was defined as log R scores >log2 of 5/2. All data types were defined on the gene level. For copy number alterations, we defined genes as amplified if the entirety of the gene was found within the amplified DNA segment. Genes were defined as deleted if they were partially or wholly within the deleted DNA segment (Figure 1A, Figure 1—figure supplement 2A, B). Finally, to enable data integration and for more stable training of machine-learning models, we generated mathematically equivalent values for each data source ranging from 0 to 1 through a simple linear transformation (min–max scaling). This enabled comparisons between individual data types, and was performed on each data source.
 
-## Training scenarios
+### Training scenarios
 
 We used the GENIUS framework to make six models predicting the following conditions:
 
 In order to adapt the network for predicting different variables, we simply changed the output layer and loss function for training. Binary classifications and the multi-class classification used softmax as the output layer and the cross entropy loss function. When predicting continuous values, the model used the output from the activation function with the mean squared error loss function. When predicting multi-class labels, the performance measure was defined by the F1 score, a standard measure for multi-class classification that combines the sensitivity and specificity scores and is defined as the harmonic mean of its precision and recall. To evaluate model performance against the binary outcome, ROC analysis was performed, and the area under the curve (AUC) was used as the performance metric.
 
-## Latent representation of genome
+### Latent representation of genome
 
 The purpose of latent vectors is to capture the most significant information from the entire genome data and compress it into a vector of size 128. This vector was later appended into a feed-forward network when making the final prediction. This way, the model had access to extracted information before and after image reconstruction. After successful model training, we extracted the latent representations of each genome and performed the Uniform Manifold Approximation and Projection (UMAP) of the data for the purpose of visual inspection of a model (Figure 2A, B). The UMAP projected latent representations into two dimensions which could then be visualized. In order to avoid modeling noise, this step was used to inspect if the model is distinguishing between variables of interest. We observed that all training scenarios successfully utilized genome images to make predictions with the exception of Age, where no pattern was found from the genomic data, and randomized cancer type, which served as negative control where no pattern was expected (Figure 2B). Information in latent vectors extracted from Age-Model and randomized cancer type showed no obvious patterns, which is likely the cause of poor performance (Figure 2—figure supplement 2A-B).
 
-## Identifying genes relevant to the tested outcome
+![Figure 2.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig2-v1.jpg)
+
+**Figure 2.:** (A) The multi-omics genome data was transformed into four image types: square image organized by chromosome interaction network, chromosome image organized by chromosome interaction network, randomly organized image, and flat vector containing all multi-omics data. (B) The x-axis represents epochs and the y-axis represents area under the curve (AUC) score of fixed 25% data we used for accuracy assessment within the TCGA cohort. All four image types were used in training for metastatic disease prediction and the square image organized by chromosome interaction network resulted in best model performance (green color). The red line shows where the model resulted in the best loss. All curves stopped when the loss started increasing, indicating overfitting. The bar plot shows the proportion of correctly predicted (metastatic disease) in every cancer type included in the study. (C) Two-dimensional representation of vector L using Uniform Manifold Approximation and Projection (UMAP) for each predicted variable. Colors indicate the output variable which was used in the specific run.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** x-axis represents epochs and y-axis represents area under the curve (AUC)/F1 (panels A, C, E). On panels B, D, F, y-axis is switched with loss.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** x-axis represents epochs and y-axis represents Root Mean Squared Error (RMSE). (A) Panel shows RMSE in test cohort when training for Age. (B) Panel shows loss function in test cohort when training for Age. (C) Panel shows RMSE in test cohort when training for weighted genome integrity intex (wGII) . (D) Panel shows loss function in test coohort when training for wGII.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** x-axis represents epochs and y-axis represents F1 (panel A). On panel B, y-axis is switched with loss.
+
+### Identifying genes relevant to the tested outcome
 
 Once the model was trained on the data, the appropriate loss function and output layer, including the model weights, were stored in a .pb file. The model and final weights were analyzed using the IG method implemented by Capture (Sundararajan et al., 2017). IG is an attribution method that assigns an ‘attribution score’ to each feature of the input data based on predictions the model makes. The attribution score is calculated based on the gradient associated with each feature of each image channel with respect to the output of the model. This information indicates to the neural network the extent of weight decrease or increases needed for certain features during the backpropagation process. Next, the created attribution images are used to extract information for each image channel and for every pixel. Since the pixels represent individual genes, this information can be reformatted and filtered to show the most important genes from every data source included in the analysis. All attribution scores were scaled using a min–max scaler for every cancer type to address biological differences between cancer types.
 
-## Code availability
+### Code availability
 
 All code is available on the public GitHub repository (https://github.com/mxs3203/GENIUS; copy archived at Sokač, 2023), where the framework is easily available for analysis of private or public data. The framework provides tools to transform gene-oriented data into an image, train a model using existing model architecture and infer the most informative genes from the model using IG. The GitHub repository contains example data and instructions on how to use the GENIUS framework.
 
-## Computational requirements
+### Computational requirements
 
 In order to train the model, we used the following hardware configuration: Nvidia RTX3090 GPU, AMD Ryzen 9 5950X16 core CPU, and 32 Gb of RAM memory. In our study, we used a batch size of 256, which occupied around 60% of GPU memory. Training of the model was dependent on the output variable. For metastatic disease prediction, we trained the model for approximately 4 hr. This could be changed since we used early stopping in order to prevent overfitting. By reducing the batch size to smaller numbers, the technical requirements are reduced making it possible to run GENIUS on most modern laptops.
 
 ## Results
 
-## Building genome images to utilize spatial connections in genomic data
+### Building genome images to utilize spatial connections in genomic data
 
 We endeavored to present genomic data as an image with genes represented as individual pixels to be processed by our deep learning architecture. To evaluate the relevance of the spatial orientation of the genes relative to model performance, we tested four different image layouts (Methods, Figure 2A): (1) Square image (198 × 198 pixels), each gene represented by one pixel ordered by chromosome position. Chromosomes are ordered by interaction coefficient based on Hi-C sequencing (Yang et al., 2022). (2) Square image (198 × 198 pixels), each gene is represented by one pixel located on the image in random order; thus, the 2D location carries no information. (3) Chromosome image (24 × 3760 pixels), each gene represented by one pixel ordered by chromosome position. Chromosomes are ordered by interaction coefficient based on Hi-C sequencing (Yang et al., 2022). (4) A flat, one-dimensional vector containing all features from the five data sources in random order. To evaluate the image layout, we used each type of layout to train against six biological states: (1) metastatic disease (stage IV vs. I–III), (2) cancer type, (3) burden of copy number alterations (defined by the wGII), (4) patient age, (5) TP53 status (where the TP53 pixel was set to ‘0’ for all samples), and (6) randomized tissue type (negative control) (Figure 2A, Figure 2—figure supplement 1A-E). Every model output variable was trained until we observed no change in loss function or until validation loss values started increasing, indicating overfitting, which we handled by implementing early stopping.
 
@@ -99,25 +129,57 @@ While predicting metastatic disease, we observed that the Square Image data tran
 
 These results suggest that data layout does not play a major role when predicting wGII as the number of events in the genome would be predictive regardless of location. The age prediction model using square image data transformation outperformed other data transformations and obtained a validation RMSE of 0.19. The shuffled image performed the worst, reaching an RMSE of 0.49, while the chromosome-organized image and flat vector of features scored similar RMSE values of 0.38 and 0.31, respectively (Figure 2A, Figure 2—figure supplement 2). Additionally, the flat vector was inconsistent during training, but it did outperform the chromosome image. In the fifth scenario, we predicted the TP53 mutation status but removed the TP53 mutation itself from the data. Square Image performed the best, reaching a validation AUC of 0.83, whereas no major difference could be observed between a flat vector of features and Chromosome Image, reaching a validation AUC of 0.75 (Figure 2A, Figure 2—figure supplement 1). Finally, we tested the framework by predicting randomized cancer types as the negative control. All data transformations had similar and poor results (Figure 2A, Figure 2—figure supplement 3). For each output variable, we trained four different models utilizing the four data transformations. In all cases, the square image (198 × 198, ordered by chromosomes) outperformed the other transformations and was chosen as the layout for the final GENIUS framework, which was used for all subsequent analyses.
 
-## Latent representation of genome captures relevant biology
+### Latent representation of genome captures relevant biology
 
 The model architecture contains an encoder and decoder connected by a latent vector of size 128 (L), which provides the opportunity to inspect model performance (Figure 1C). The L vector is considered the latent representation of the genome data because it extracts and captures the most relevant data with respect to the output variable. This implies that an optimally trained model would show a perfect latent representation of the genome when overlaid with the output variable. Furthermore, this vector was later appended into a feed-forward network when making the final prediction. This way, the model had access to extracted information before and after image reconstruction. In order to visually inspect patterns captured by the model, we extracted the latent representations of each genome and performed the UMAP of the data to project it into two dimensions. We observed that all training scenarios successfully utilized genome images to make predictions that clustered into distinct groups, with the exception of Age. As expected, randomized cancer type, which served as negative control, also performed poorly (Figure 2C). Information in latent vectors extracted from Age-Model and randomized cancer type-model showed no obvious patterns, which is likely the cause of poor performance.
 
-## GENIUS classification identifies tumors likely to become metastatic
+### GENIUS classification identifies tumors likely to become metastatic
 
 To explore the utility of the GENIUS framework to classify tumors from multi-omics data and to interpret the biological drivers behind the classification, we further investigated the GENIUS model trained against metastatic disease using the TCGA datasets (Figure 2B). This analysis included primary tumors from six cancer types, a total of 2307 tumors, with 53% progressing to metastatic disease BLCA (277 metastatic/133 not-metastatic), OV (535 metastatic/47 not-metastatic), COAD (196 metastatic/254 not-metastatic), STAD (230 metastatic/189 not-metastatic), KIRC (208 metastatic/326 not-metastatic), and UCEC (117 metastatic/394 not-metastatic). The omics data types included somatic mutations, gene expression, methylation, copy number gain, and copy number loss. Using holdout type cross-validation, where we split the data into training (75%) and validation (25%), we observed a generally high performance of GENIUS, with a validation AUC of 0.83 for predicting metastatic disease (Figure 2B). The GENIUS framework allows us to explore the attribution of individual data layers to the final prediction. Across the cohort, gene expression and methylation data were generally the most informative data layers when it comes to classifying metastatic disease (Figure 3A). We noted that expression and methylation overall ranked the highest in terms of mean scaled attribution, with the exception of OV, which showed enrichment in methylation followed by copy number gain and loss. The same analysis was performed for cancer type, wGII, patient age, TP53 status, and randomized tissue type (Figure 3A, Figure 3—figure supplements 1 and 2).
 
-## Interpreting the GENIUS model classifying metastatic cancer biology
+![Figure 3.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig3-v1.jpg)
+
+**Figure 3.:** (A) Pieplot showing the relative importance of each data source when predicting metastatic disease for each cancer type included in the study. (B) Top 50 genes for every cancer type scale by cancer type. The star symbol below the gene names indicates that the gene is part of COSMIC gene consensus. The color of the gene name indicates the data source and color of the bar indicates the cancer type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The color represents the relative importance of a specific data source in a specific scenario (x-axis).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The color represents the relative importance of a specific data source in a specific scenario (x-axis) and each panel represents cancer type.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig3-figsupp3-v1.jpg)
+
+### Interpreting the GENIUS model classifying metastatic cancer biology
 
 Analyzing raw attribution scores we concluded the most informative data type overall regarding the development of metastatic disease was methylation (Figure 3A). To identify the individual genes driving the prediction, we pulled the 100 genes with the highest methylation attribution according to the GENIUS classification. We observed that many methylated regions overlapped between the six cancer types. These regions included methylation on specific regions of chromosomes 1, 6, 11, 17, and 19 (Figure 3A, Figure 3—figure supplement 3). Additionally, OV showed a unique methylation pattern spanning most of chromosome 7, while KIRC, COAD, and BLCA displayed regions of overlapping methylation on chromosome 22. We also noticed that mutation data often had a single mutation with a large attribution score while expression and methylation showed multiple genes with high attribution scores. To determine the genes that overall across the multi-omics data analysis contributed the most to the GENIUS classification of metastatic disease, we normalized gene attribution by cancer type and compared the top 50 genes for each cancer type (total of 152 genes, Figure 3B, Supplementary file 1). Unsurprisingly, we observed that TP53 mutations held the highest attribution score, followed by mutations to VHL. Both of these genes are well-established drivers of cancer and were previously reported as enriched in metastatic cancer (Pandey et al., 2021; Christensen et al., 2022), likely representing a more aggressive disease. However, of the 152 top genes, we noted only 11 genes previously reported as either oncogenes or tumor suppressor genes in the COSMIC cancer gene census (Figure 3B, indicated with a star), leaving 141/152 as potentially novel cancer genes. The highest scoring gene not previously associated with cancer was SLC3A1, the expression of which was found to be strongly associated with metastatic disease in clear cell renal cancer. SLC3A1 gene is a protein-coding gene associated with the transportation of amino acids in the renal tubule and intestinal tract, and aberrations in this gene have been associated with cystinuria, a metabolic disorder of the kidneys, bladder, and ureter (Jiang et al., 2017; Woodard et al., 2019). Furthermore, we identified PLVAP, often involved in MAPK cascades as well as in cellular regulatory pathways and the tumor necrosis factor-mediated signaling pathway. In BLCA, one of our most significant findings was increased expression of KRT17, a gene associated with a cytoskeletal signaling pathway, glucocorticoid receptor regulatory network, and MHC class II receptor activity (Wu et al., 2021; Li et al., 2021). KRT17 has previously been reported as a potential cancer gene, but with an uncertain role (Zhang et al., 2022). Across cancer types, TOP3A was found to be commonly methylated in BLCA, COAD, STAD, and UCEC. TOP3A is associated with homology-directed repair and methylation may lead to increased chromosomal instability, a hallmark of cancer (Hanahan and Weinberg, 2011). The top 10 most important events driving the prediction of every output variable included in the study are summarized in Supplementary files 2 and 3.
 
-## Validation of bladder cancer metastasis-associated genes in an independent cohort of advanced and metastatic bladder cancer
+### Validation of bladder cancer metastasis-associated genes in an independent cohort of advanced and metastatic bladder cancer
 
 To investigate if the genes with the highest attribution score in the TCGA bladder cancer analysis were indeed associated with metastatic bladder cancer, we utilized an immunotherapy-treated predominantly late-stage (mainly stage III and IV) bladder cancer cohort with gene expression data available for 348 tumors (Mariathasan et al., 2018). For this analysis, we considered only the methylation and gene-expression-associated genes from the TCGA analysis. For methylation, we restricted the analysis to genes showing a significantly negative correlation between gene expression and gene-specific methylation levels (Figure 4, Figure 4—figure supplement 1). We then combined the methylation and gene-expression-based attribution scores and took the top 10 genes: RBMX, COL7A1, KRT17, JUP, WIPI2, TOP3A, EIF3B, WTAP, POTEI, and MRRF. Next, we implemented 10 multivariate Cox proportional hazard models (one for each gene), including available clinical parameters such as tumor stage, gender, neoantigen burden and baseline performance status (Supplementary file 4). This showed that in multivariate analysis, 7/10 genes had a significant association with outcome (Figure 4A). To evaluate the results of this analysis, we compared it to an identical model run 1000 times, but where the 10 genes were randomly picked. In 1000 runs, not one returned at least 7 significant genes (p < 0.001) (Figure 4A, Figure 4—figure supplement 2). The median percentage of significant genes for each run is reported in Figure 4B. Next, we performed two independent analyses, comparing the expression values of the top 10 genes between either (1) tumors defined as stage IV versus stages I and III, and (2) patients that responded to immunotherapy (CR and PR) versus patients that did not respond to immunotherapy (stable disease [SD] and progressive disease [PD]). Following correction for multiple hypothesis testing, we observed that TOP3A showed significantly increased expression in stage IV tumors, while JUP and KRT17 were significantly increased in stage I–III tumors (Figure 4C, brown dots). When comparing gene expression to response to immunotherapy, TOP3A, RBMX, and WIPI2 were significantly more expressed in complete response (CR)/partial response (PR) while KRT17 and COL7A1 were significantly more expressed in SD/PD. Interestingly, we observed increased expression of TOP3A in stage IV tumors, suggesting a role in metastatic disease, yet we also observed that the same gene was more expressed in tumors that responded to immunotherapy. This suggests that TOP3A is associated with the development of metastatic disease, but its expression may result in the development of a bladder cancer phenotype that is more sensitive to checkpoint immunotherapy.
 
-## Validation of metastasis-associated genes in an independent cohort of early-stage bladder cancer
+![Figure 4.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig4-v1.jpg)
+
+**Figure 4.:** (A) Forest plot showing top 10 expressed/methylated genes in multivariate cox proportional hazard model. X-axis indicates Hazard Rate (HR). Stars indicates significance (* P < 0.05, ** P < 0.01, *** P < 0.001), "ns" indicates not significant. (B) Comparison of median percent of randomly selected genes versus genes picked by GENIUS in cox proportional hazard model. (C) Volcano plot showing top 10 expressed/methylated genes and their enrichment in two comparisons; stages I, II and III versus stage IV and immunotherapy response (CR: complete response, PR: partial response) versus no response (SD: stable disease, PD: progressive disease). Two genes show association in opposite directions, indicated by red lines (KRT17, associated with low stage and poor immunotherapy response, and TOP3A, associated with high stage and improved immunotherapy response).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Red line indicates the number of significant genes found based on the GENIUS analysis.
+
+### Validation of metastasis-associated genes in an independent cohort of early-stage bladder cancer
 
 To investigate if the metastasis-associated genes found through the GENIUS framework also plays a role in the development of aggressive features in early-stage bladder cancer, we acquired the UROMOL dataset (Lindskrog et al., 2021), which includes gene expression data from 535 low-stage tumors. We again investigated the top 10 methylated or expressed genes found in the TCGA analysis of BLCA, using the gene expression data from UROMOL. First, we performed Cox proportional hazard analysis with progression-free survival (PFS) using the top 10 genes found by the GENIUS framework, again creating 10 individual models containing the selected genes and available clinical factors such as age, tumor stage, and sex. This showed that in multivariate analysis, 5/10 genes had a significant association with outcome (Figure 5A). The results were compared with cox proportional hazard models utilizing random sets of 10 genes, repeated 1000 times. Of these, 216 runs showed at least five significant genes (p = 0.216) (Figure 5A, Figure 5—figure supplement 1), indicating that in early-stage bladder cancer, the genes found by GENIUS to be associated with cancer metastasis were not uniquely relevant for disease progression. However, when we computed the median percentage of significant genes and compared it to the top 10 genes picked by the GENIUS framework, by random chance, only 20% of genes overall were found to be significantly associated with PFS compared to 50% of GENIUS genes (Figure 5B). To further investigate the top 10 genes picked by GENIUS, we compared the mean expression of each gene between different clinical risk groups (EORTC, 2017) and tumor grade. In this analysis, six of the 10 genes were significantly associated with EORTC status (Figure 5C, Supplementary file 4), and seven with grade (Figure 5D, Supplementary file 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig5-v1.jpg)
+
+**Figure 5.:** (A) Forest plot showing top 10 expressed/methylated genes picked by GENIUS for BLCA. X-axis indicates Hazard Rate (HR). Stars indicates significance (* P < 0.05, ** P < 0.01, *** P < 0.001), "ns" indicates not significant (B) Comparison of median percent of randomly selected genes versus genes picked by GENIUS in cox proportional hazard model. (C) Volcano plot showing association of the top 10 expressed/methylated genes relative to EORTC-Low and EORTC-High groups. (D) Volcano plot showing association of the top 10 expressed/methylated genes relative to low- and high-grade BLCA tumors.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87133/elife-87133-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Red line indicates the threshold for significant results.
 
 ## Discussion
 
@@ -126,5 +188,82 @@ In this work, we explored multiple options on how to transform multi-omics data 
 The main purpose behind the study was to demonstrate the feasibility of leveraging the power of deep learning techniques optimized for image analysis to interpret genome-derived multi-omics data. A key element of this approach includes the transformation of genomic data into images with genes arranged as pixels organized by chromosomal location. Beyond the readout from multi-omics data, this approach provides spatial information to the deep learning framework, which significantly improves the performance of the models (Figure 2B). To the best of our knowledge, we are the first to demonstrate the utility of spatial information and to provide a ready-to-use framework that incorporates spatial information and deep learning for the analysis of genome-derived multi-omics data. Furthermore, within the GENIUS framework, we facilitate the interpretation of the trained model in order to explore the biology behind the prediction without the need for data preprocessing and multiple hypothesis correction. This was achieved by combining a deep learning network with IG (Sundararajan et al., 2017), allowing us to infer the attribution score for the input, resulting in non-parametric, ready-to-analyze output.
 
 For every cancer type included in the dataset, we listed the top 10 genes driving metastatic disease and investigated in detail genes associated with BLCA metastasis and aggressiveness (Table 1). For this, we used two independent cohorts, one representing late-stage and metastatic cancer, and one representing early-stage cancer. In both cohorts, we tested if methylation and expression of genes found by the GENIUS framework were associated with survival at higher rates than when compared to randomly picked genes. In the late-stage BLCA cohort, seven out of 10 genes were significantly associated with overall survival, while in the early-stage BLCA cohort, we found that five out of 10 were significantly associated with PFS. That the results in the early-stage bladder cancer cohort (UROMOL) are less significant may relate to the model being trained to predict metastatic cancer. It is likely that the drivers of malignancy are different in early relative to late-stage disease, thus the top 10 genes found by GENIUS might not be prognostic in early-stage setting. In this regard, it is also worth noting that two of the top 10 genes (RBMX and KRT17) were associated with poor outcome in late-stage disease, while they were associated with improved outcome in early-stage disease. Interestingly, in the late-stage bladder cancer cohort, we observed that high expression of TOP3A associated with stage IV disease (Figure 4C). However, we also observed that high expression associated with improved response to immunotherapy. It is known that TOP3A has an important role in homology-directed repair and loss may be associated with chromosomal instability, which has shown a positive association with immunotherapy response (Bakhoum and Cantley, 2018; Chen et al., 2022; Sokač et al., 2022), potentially offering a likely explanation for this finding. Similarly, we observed that KRT17 was enriched in stages I–III, suggesting it may be associated with a less aggressive disease type. However, in the immunotherapy-treated cohort, KRT17 is associated with poor response to immunotherapy. In previous studies, KRT17 has been reported as associated with the development of metastatic disease, MHC type II receptor activity and angiogenesis (Zhang et al., 2022; Ji et al., 2021). This indicates that the KRT17 gene plays an important role as tumor suppressor gene in early-stage cancer, and that loss may further promote the development of aggressive, metastatic disease. While further research in this field is required to properly assess the utility of the reported genes, this work provides a framework that unlocks powerful machine-learning for more direct analysis of multi-omics data.
+
+**Table 1.**
+ Summary of BLCA genes in two validation cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Early stage</th>
+      <th>Late stage (immunotherapy)</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TOP3A</td>
+      <td>HR &gt; 0 (PFS), high grade, high EORTC</td>
+      <td>HR = 0 (OS), enriched in stage IV, enriched in CR/PR</td>
+      <td>Catalyses the transient breaking and rejoining of a single strand of DNA, involved in regulation of recombination and homology-directed repair. Positive association to OS in OV (de Nonneville et al., 2022)</td>
+    </tr>
+    <tr>
+      <td>RBMX</td>
+      <td>HR &lt; 0 (PFS), low grade, low EORTC</td>
+      <td>HR &gt; 0 (OS), enriched in CR/PR</td>
+      <td>Associated with translational control and DNA damage pathways. Reported to be negatively correlated with tumor stage, histological grade, and poor patient prognosis in BLCA (Song et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>POTEI</td>
+      <td>HR = 0 (PFS)</td>
+      <td>HR = 0 (OS)</td>
+      <td>POTE family of proteins is associated with apoptotic cells (Yu et al., 2023)</td>
+    </tr>
+    <tr>
+      <td>KRT17</td>
+      <td>HR &lt; 0 (PFS),low grade, low EORTC</td>
+      <td>HR &gt; 0 (OS), enriched in stages I–III, enriched in SD/PD</td>
+      <td>Associated with structural molecule activity and MHC class II receptor activity. Associated with metastasis and angiogenesis in variety of tumor types (Ji et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>WIPI2</td>
+      <td>HR = 0 (PFS), high grade</td>
+      <td>HR &gt; 0 (OS), enriched in CR/PR</td>
+      <td>Component of the autophagy machinery that controls the major intracellular degradation process. WIPI2 is suggested as a biomarker for predicting colorectal cancer prognosis (Yu et al., 2023)</td>
+    </tr>
+    <tr>
+      <td>MRRF</td>
+      <td>HR = 0 (PFS),low grade</td>
+      <td>HR &gt; 0 (OS)</td>
+      <td>Associated with the ribosome recycling factor, which is a component of the mitochondrial translational machinery. High expression is associated with poor outcome in ovarian cancer (Song et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>EIF3B</td>
+      <td>HR = 0 (PFS), high EORTC</td>
+      <td>HR &gt; 0 (OS)</td>
+      <td>Eukaryotic translation initiation factor 3 subunit B is a promoter associated with pancreatic cancer (de Nonneville et al., 2022)</td>
+    </tr>
+    <tr>
+      <td>JUP</td>
+      <td>HR = 0 (PFS)</td>
+      <td>HR &gt; 0 (OS),enriched in stages I–III</td>
+      <td>Common junctional plaque protein. Controversial role in different malignancies. Knockdown of JUP in epithelium-like GC cells causes EMT and promotes GC cell migration and invasion (Chen et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>WTAP</td>
+      <td>HR &lt;0 (PFS), low EORTC,low grade</td>
+      <td>HR = 0 (OS)</td>
+      <td>Wilms’ tumor 1-associating protein is associated to RNA methylation modifications, which regulate biological processes such as RNA splicing, cell proliferation, cell cycle, and embryonic development (Chen et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>COL7A1</td>
+      <td>HR = 0 (PFS)</td>
+      <td>HR &gt; 0 (OS),enriched in SD/PD</td>
+      <td>Associated with metabolism of proteins and integrins in angiogenesis. Aberrant gene expression is associated with distinct tumor environment, metastasis and survival in multiple cancer types (Oh et al., 2021)</td>
+    </tr>
+  </tbody>
+</table>
 
 Taken together, we provide here the GENIUS framework along with analysis demonstrating the utility in multi-omics analysis. While we have focused on cancer analysis here, we believe GENIUS may find utility in a diverse range of genome-based multi-omics analyses. We have provided a git-hub repository that can be used to transform data into images and train the same model predicting variables of user’s interest and inferring the importance of input with respect to the desired output.

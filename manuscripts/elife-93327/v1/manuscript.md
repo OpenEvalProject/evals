@@ -11,16 +11,16 @@
 ### Affiliations
 
 1. Medical Research Council Cognition and Brain Sciences Unit Cambridge United Kingdom
-2. https://ror.org/013meh722 Department of Psychiatry, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/00ayhx656 School of Psychology, University of Sussex Brighton United Kingdom
-4. https://ror.org/013meh722 Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom
-5. https://ror.org/013meh722 Department of Psychology, University of Cambridge Cambridge United Kingdom
+2. Department of Psychiatry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. School of Psychology, University of Sussex Brighton United Kingdom ([ROR:00ayhx656](https://ror.org/00ayhx656))
+4. Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+5. Department of Psychology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
 ## Abstract
 
-Functional compensation is a common notion in the neuroscience of healthy ageing, whereby older adults are proposed to recruit additional brain activity to compensate for reduced cognitive function. However, whether this additional brain activity in older participants actually helps their cognitive performance remains debated. We examined brain activity and cognitive performance in a human lifespan sample ( N = 223) while they performed a problem-solving task (based on Cattell’s test of fluid intelligence) during functional magnetic resonance imaging. Whole-brain univariate analysis revealed that activity in bilateral cuneal cortex for hard vs. easy problems increased both with age and with performance, even when adjusting for an estimate of age-related differences in cerebrovascular reactivity. Multivariate Bayesian decoding further demonstrated that age increased the likelihood that activation patterns in this cuneal region provided non-redundant information about the two task conditions, beyond that of the multiple demand network generally activated in this task. This constitutes some of the strongest evidence yet for functional compensation in healthy ageing, at least in this brain region during visual problem-solving.
+Functional compensation is a common notion in the neuroscience of healthy ageing, whereby older adults are proposed to recruit additional brain activity to compensate for reduced cognitive function. However, whether this additional brain activity in older participants actually helps their cognitive performance remains debated. We examined brain activity and cognitive performance in a human lifespan sample (N = 223) while they performed a problem-solving task (based on Cattell’s test of fluid intelligence) during functional magnetic resonance imaging. Whole-brain univariate analysis revealed that activity in bilateral cuneal cortex for hard vs. easy problems increased both with age and with performance, even when adjusting for an estimate of age-related differences in cerebrovascular reactivity. Multivariate Bayesian decoding further demonstrated that age increased the likelihood that activation patterns in this cuneal region provided non-redundant information about the two task conditions, beyond that of the multiple demand network generally activated in this task. This constitutes some of the strongest evidence yet for functional compensation in healthy ageing, at least in this brain region during visual problem-solving.
 
 ## Introduction
 
@@ -36,11 +36,11 @@ To search for brain regions that might support functional compensation, we condu
 
 ## Results
 
-## Behavioural performance
+### Behavioural performance
 
 As expected from prior studies, behavioural performance decreased with age during the fMRI scan on the modified version of the Cattell task (collapsed across hard and easy conditions; see Methods) (standardised coefficient = −5.65, t(220) = −14, p < 0.001, R2 = 0.48; Figure 1B, upper). There was a high correlation between performance measures from the fMRI version and standard version of the Cattell task when the same people performed the standard Cattell task outside the scanner 1–3 years previously (r = 0.79, p < 0.001; Figure 1B, lower), suggesting that the version modified for fMRI was capturing the same cognitive ability.
 
-## Univariate response
+### Univariate response
 
 The [Hard > Easy] contrast showed bilateral activation across regions generally described as comprising the MDN (e.g., Duncan, 2010; Smith et al., 2021), including the inferior/middle frontal gyri, intraparietal sulcus, anterior insula, and anterior cingulate cortex (Figure 1C). Additional activation was observed bilaterally in the inferior/ventral and lateral occipital temporal cortex (i.e., a cluster around the lateral occipital sulcus that extended anteriorly beyond the anterior occipital sulcus), likely due to the visual nature of the task.
 
@@ -56,7 +56,193 @@ However, the two candidate compensation regions showed different patterns as a f
 
 It has previously been shown that many effects of age on the blood oxygenation level-dependent(BOLD) signal measured by fMRI relate to vascular effects of ageing, rather than necessarily indicating differences in neural activity (Tsvetanov et al., 2021a). We therefore repeated the multiple regressions after scaling the Cattell activation effect by an estimate of the Resting State Fluctuation Amplitude (RSFA) for each ROI from an independent, resting-state scan for each participant. Previous work has shown that RSFA relates to age-related vascular differences (Tsvetanov et al., 2021a), but not neural differences (Tsvetanov et al., 2015; Kumral et al., 2020). Despite this RSFA adjustment, the pattern of effects remained similar in each ROI (Table 1; Figure 2C). This suggests that these effects of age (and the relationship with performance) are neural in origin. This check has not been performed in previous fMRI studies of age-related compensation, which could reflect vascular effects of ageing instead.
 
-## MVB decoding
+**Table 1.**
+ Standardised coefficients in multiple regression predicting functional magnetic resonance imaging (fMRI) activation (Hard − Easy) as a function of Age and Performance for the two regions of interest (ROIs) identified in Figure 2.Note that the p-values for the main effects of Age and Performance are biased by the selection of these voxels. RSFA = scaled by Resting-State Fluctuation Amplitudes (see text).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Coefficient</th>
+      <th>Estimate</th>
+      <th>t value</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cuneal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Constant term</td>
+      <td>−0.06</td>
+      <td>−2.57</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age</td>
+      <td>0.09</td>
+      <td>3.57</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Performance</td>
+      <td>0.08</td>
+      <td>3.21</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sex</td>
+      <td>−0.05</td>
+      <td>−2.59</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age × Performance</td>
+      <td>0.04</td>
+      <td>2.21</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td>Cuneal (RSFA)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Constant term</td>
+      <td>−0.03</td>
+      <td>−2.60</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age</td>
+      <td>0.04</td>
+      <td>3.24</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Performance</td>
+      <td>0.04</td>
+      <td>3.11</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sex</td>
+      <td>−0.02</td>
+      <td>−2.52</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age × Performance</td>
+      <td>0.02</td>
+      <td>1.97</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td>Frontal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Constant term</td>
+      <td>−0.03</td>
+      <td>−2.02</td>
+      <td>0.045</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age</td>
+      <td>0.08</td>
+      <td>4.24</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Performance</td>
+      <td>0.08</td>
+      <td>4.54</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sex</td>
+      <td>&lt;0.001</td>
+      <td>−0.35</td>
+      <td>0.728</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age × Performance</td>
+      <td>&lt;0.001</td>
+      <td>−0.15</td>
+      <td>0.882</td>
+    </tr>
+    <tr>
+      <td>Frontal (RSFA)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Constant term</td>
+      <td>−0.02</td>
+      <td>−1.99</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age</td>
+      <td>0.04</td>
+      <td>4.12</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Performance</td>
+      <td>0.04</td>
+      <td>4.48</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sex</td>
+      <td>0.00</td>
+      <td>−0.37</td>
+      <td>0.709</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age × Performance</td>
+      <td>0.00</td>
+      <td>−0.13</td>
+      <td>0.898</td>
+    </tr>
+  </tbody>
+</table>
+
+### MVB decoding
 
 Next, we examined if these candidate compensation regions showed multivariate evidence of compensation. If their age- and performance-related activation reflects compensation, then multi-voxel analyses should show that this ‘hyper-activation’ carries additional information about the task, over and above that already provided by the regions generally activated by the task (i.e., MDN). To test this, we applied MVB decoding of the [Hard >Easy] contrast.
 
@@ -65,6 +251,201 @@ We first implemented MVB with a ‘joint model’ that contained voxel activatio
 ![Figure 3.](https://cdn.elifesciences.org/articles/93327/elife-93327-fig3-v1.jpg)
 
 **Figure 3.:** (A) Multivariate Bayesian (MVB) decoding. Points represent the difference in log evidence per participant (for the real vs. shuffled model) for the joint model using activation patterns to decode the [Hard > Easy] contrast. (B) Boost likelihood model comparison. Across age, a smoothed density estimate represents the likelihood that there was a boost (of log evidence >3; green) or no difference (grey) to model evidence per participant when decoding models included activation patterns from either of the compensation regions of interest (ROIs) (Figure 2B) in addition to the multiple demand network (MDN) (Figure 1C), relative to a model that sampled only from the MDN. A significant positive linear effect of age on boost likelihood was observed for the cuneal (lower) but not frontal ROI (upper). (C) MVB spread. Points represent the spread (standard deviation) of multivariate responses, showing a reduction with age in frontal cortex. ** denotes p < 0.01.
+
+**Table 2.**
+ Standardised coefficients in multivariate Bayesian (MVB) multiple logistic regression analyses predicting boost likelihood as a function of age or the spread of voxel weights (with Sex and Mean Univariate Activation as covariates).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Model</th>
+      <th>Coefficient</th>
+      <th>Estimate</th>
+      <th>z/t-statistic</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Boost likelihood</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cuneal ROI + Task-network(166 voxels each)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Constant term</td>
+      <td>2.17</td>
+      <td>8.79</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Age</td>
+      <td>0.79</td>
+      <td>3.23</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Sex</td>
+      <td>0.08</td>
+      <td>0.37</td>
+      <td>0.714</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Univariate</td>
+      <td>−0.34</td>
+      <td>−1.59</td>
+      <td>0.112</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Frontal ROI + Task-network(85 voxels each)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Constant term</td>
+      <td>2.20</td>
+      <td>9.30</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Age</td>
+      <td>0.04</td>
+      <td>0.19</td>
+      <td>0.851</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Sex</td>
+      <td>0.26</td>
+      <td>1.13</td>
+      <td>0.257</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Univariate</td>
+      <td>−0.54</td>
+      <td>−2.33</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>Spread (weights)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cuneal ROI</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Constant term</td>
+      <td>&lt;−0.001</td>
+      <td>&lt;0.001</td>
+      <td>&gt;0.999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Age</td>
+      <td>−0.06</td>
+      <td>−0.84</td>
+      <td>0.403</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Sex</td>
+      <td>−0.05</td>
+      <td>−0.64</td>
+      <td>0.521</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Univariate</td>
+      <td>0.01</td>
+      <td>0.09</td>
+      <td>0.932</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Frontal ROI</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Constant term</td>
+      <td>&lt;−0.001</td>
+      <td>&lt;0.001</td>
+      <td>&gt;0.999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Age</td>
+      <td>−0.19</td>
+      <td>−2.89</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Sex</td>
+      <td>−0.09</td>
+      <td>−1.37</td>
+      <td>0.171</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Univariate</td>
+      <td>0.09</td>
+      <td>1.33</td>
+      <td>0.185</td>
+    </tr>
+  </tbody>
+</table>
 
 Having established that the task condition could be decoded from voxels in almost all participants, the critical test was whether age influenced the likelihood that adding voxel activation patterns from the ‘compensatory’ ROIs (i.e., joint model) would boost decoding accuracy relative to that for the MDN-only model. A positive age effect on boost likelihood would indicate that, the older someone was, the more likely that activation patterns in the putative ‘compensation ROI’ would provide additional, non-redundant, task-relevant information, consistent with a compensatory role. In line with this compensation account, there was a significant positive effect of age (Table 2) on the likelihood that model performance was boosted (i.e., log-evidence change >3) by including voxel activation patterns from the cuneal ROI (Figure 3B, lower; odds ratio = 2.21). In other words, the amount of unique task information in the multi-voxel pattern within the cuneal ROI (above that present in the MDN) increased with age. In contrast, this analysis for the model containing the frontal ROI voxel activation patterns showed no effect of age (Table 2; Figure 3B, upper).
 
@@ -96,33 +477,33 @@ In summary, we propose that our results in the cuneus represent the most compell
 
 ## Methods
 
-## Participants
+### Participants
 
 A healthy population-derived adult lifespan human sample (N = 223; ages approximately uniformly distributed from 19 to 87 years; females = 112; 50.2%) was collected as part of the Cam-CAN study (Stage 3 cohort; Shafto et al., 2014). Participants were fluent English speakers in good physical and mental health, based on the Cam-CAN cohort’s exclusion criteria which includes poor mini mental state examination, ineligibility for MRI and medical, psychiatric, hearing, or visual problems. Throughout analyses, age is defined at the Home Interview (Stage 1; Shafto et al., 2014). The study was approved by the Cambridgeshire 2 (now East of England – Cambridge Central) Research Ethics Committee (reference: 10/H0308/50) and participants provided informed written consent. Further demographic information of the sample is reported in Wu et al., 2023 and is openly available (see section: Data availability) with a recent report indicating the representativeness of the sample across sexes (Green et al., 2018).
 
-## Materials and procedure
+### Materials and procedure
 
 A modified version of the odd-one-out subtest of the standardised Cattell Culture Fair Intelligence test (Scale 2; Cattell, 1971; Cattell and Cattell, 1973) was developed for use in the scanner (Woolgar et al., 2013; Samu et al., 2017; Wu et al., 2023). Participants were scanned while performing the problem-solving task where, on each trial, four display panels were presented in a horizontal row (Figure 1A) in the centre of a screen that was viewed through a head-coil mounted mirror. Participants were required to make a button-press response to identify the mismatching panel that was unique in some way from the other three (based on either a figural, spatial, complex, or abstract property).
 
 In a block design, participants completed eight 30-s blocks which contained a series of puzzles from one of two difficulty levels (i.e., four hard and four easy blocks completed in an alternating block order; Figure 1A). The fixed block time allowed participants to attempt as many trials as possible. Therefore, to balance speed and accuracy, behavioural performance was measured by subtracting the number of incorrect from correct trials and averaging over the hard and easy blocks independently (i.e., ((hard correct − hard incorrect) + (easy correct − easy incorrect))/2; Samu et al., 2017). For assessing reliability and validity, behavioural performance (total number of puzzles correct) was also collected from the same participants during a full version of the Cattell task (Scale 2 Form A) administered outside the scanner at Stage 2 of the Cam-CAN study (Shafto et al., 2014). Both the in- and out-of-scanner measures were z-scored. We excluded participants (N = 28; 17 females) who performed at chance level ((correct + incorrect)/incorrect <0.5) on the fMRI task, leading to the same subset as reported in Samu et al., 2017.
 
-## Data acquisition and pre-processing
+### Data acquisition and pre-processing
 
 The MRI data were collected using a Siemens 3T TIM TRIO system with a 32-channel head-coil. A T2*-weighted echoplanar imaging sequence was used to collect 150 volumes, each containing 32 axial slices (acquired in descending order) with slice thickness of 3.0 mm and an interslice gap of 25% for whole-brain coverage (repetition time, RT = 2000 ms; echo time, TE = 30 ms; flip angle = 78°; field of view, FOV = 192 mm × 192 mm; voxel-size 3 × 3 × 3.75 mm). Higher resolution (1 mm × 1 mm × 1 mm) T1- and T2-weighted structural images were also acquired (to aid registration across participants).
 
 MR data pre-processing and univariate analysis were performed with SPM12 software (Wellcome Department of Imaging Neuroscience, London, https://www.fil.ion.ucl.ac.uk/spm/), release 4537, implemented in the AA 4.0 pipeline (Cusack et al., 2014) described in Taylor et al., 2017. Specifically, structural images were rigid-body registered to an MNI template brain, bias corrected, segmented, and warped to match a grey matter template created from the whole Cam-CAN Stage 2 sample using DARTEL (Ashburner, 2007; Taylor et al., 2017). This template was subsequently affine transformed to standard Montreal Neurological Institute (MNI) space. The functional images were spatially realigned, interpolated in time to correct for the different slice acquisition times, rigid-body coregistered to the structural image, transformed to MNI space using the warps and affine transforms from the structural image, and resliced to 3 mm × 3 mm × 3 mm voxels.
 
-## Univariate analysis
+### Univariate analysis
 
 For participant-level modelling, a regressor for each condition was created by convolving boxcar functions of 30-s duration for each block with SPM’s canonical haemodynamic response function, using a general linear model (GLM). Additional regressors were included in each GLM to capture residual movement-related artifacts, including six representing the x/y/z rigid-body translations and rotations (estimated in the realignment stage). Finally, the data were scaled to a grand mean of 100 over all voxels and scans within a session, and the model was fit to the data in each voxel. The autocorrelation of the error was estimated using an AR(1)-plus-white-noise model, together with a set of cosines that functioned to high-pass filter the model and data to 1/128 Hz, that were estimated using restricted maximum likelihood. The estimated error autocorrelation was then used to ‘prewhiten’ the model and data, and ordinary least squares used to estimate the model parameters. The contrast of parameter estimates for the hard and easy conditions, per voxel and participant, was then calculated and combined in a group GLM with independent regressors for age and in-scanner behavioural performance.
 
-## Univaraite region of interest (ROI) analysis
+### Univaraite region of interest (ROI) analysis
 
 All ROIs were defined by selecting activated voxels from a group-level GLM (see Table 2 for number of voxels within ROIs). The two ROIs that were tested as candidate regions for functional compensation (i.e., cuneal cortex and frontal cortex) were defined by contiguous voxels that were significantly positively related to the independent effects of both age and performance (see Figure 2). The MDN was defined by the selecting suprathreshold voxels activated by the [Hard vs. Easy] contrast from the Cattell task. For MVB analysis (see below), a subset of the highest activated voxels within the MDN were taken to match the number of voxels with that of the ‘compensation ROI’ being tested (see Figure 3; Table 2).
 
 For the ROI-based multiple regressions, the activation was averaged across voxels (i.e., mean difference in parameter estimates for Hard – Easy conditions) for each ROI and participant (Figure 2, Table 2). In the case of RSFA-scaled multiple regression, we used RSFA calculated from independent resting-state scans (see Tsvetanov et al., 2015) to scale the task-related BOLD response (by dividing the Hard – Easy difference in parameter estimates for each voxel by the RSFA value at the same voxel).
 
-## Multivariate Bayesian (MVB) analysis
+### Multivariate Bayesian (MVB) analysis
 
 A series of MVB models were fit to assess the information about task condition that was represented in each ROI or combination of ROIs. Each MVB decoding model is based on the same design matrix of experimental variables used in the univariate GLM, but the mapping is reversed; many physiological data features (fMRI activity in multiple voxels) are used to predict a psychological target variable (Friston et al., 2008). This target (outcome) variable is specified as the contrast [Hard > Easy] with all covariates removed from the predictor variables.
 
@@ -136,6 +517,6 @@ For this MVB boost analysis, participants were only included if their data allow
 
 Alongside the MVB boost analysis, we also included an additional measure using the spread (standard deviation) of voxel classification weights (Morcom and Henson, 2018). This measure indexes the absolute amplitude of voxel contributions to the task, reflecting the degree to which multiple voxels carry substantial task-related information. When related to age this can serve as a multivariate index of information distribution, unlike univariate analyses. However, it is worth highlighting that even if an ROI shows an effect of age on this spread measure, such an effect could instead be explained by a non-specific mechanism that represents the same information in tandem across multiple regions (rather than reflecting compensation) as seen previously (Knights et al., 2021; also see Morcom and Johnson, 2015). Thus, it is the MVB boost analysis that is the most compelling assessment of functional compensation because it can directly detect novel information representation.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 Continuous age and behavioural performance variables were standardised and treated as linear predictors in multiple regression throughout the behavioural (Figure 1B), wholebrain voxel-wise (Figures 1C and 2A), univariate (Table 1; Figures 1B and 2B), and MVB (Table 2; Figure 3) analyses. Throughout, sex was included as a covariate. The models, including interaction terms, can be described, according to Wilkinson and Rogers, 1973 notation, as activity ~ age * performance + covariates (which is equivalent to activity ~ age:performance + age + performance + covariates), allowing us to examine the unique variance explained by each predictor (Table 1) and to control for their shared variance. For whole-brain voxel-wise analyses, clusters were estimated using threshold-free cluster enhancement (Smith and Nichols, 2009) with 2000 permutations and the resulting images were thresholded at a t-statistic of 1.97 before interpretation. Bonferroni correction was applied to a standard alpha = 0.05 based on the two ROIs (cuneal and frontal) that were examined. For Bayes factors, interpretation criteria norms were drawn from Jarosz and Wiley, 2014.

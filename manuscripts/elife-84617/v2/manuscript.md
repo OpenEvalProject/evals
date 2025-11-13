@@ -17,20 +17,20 @@
 
 ### Affiliations
 
-1. https://ror.org/03yghzc09 Living Systems Institute, University of Exeter Exeter United Kingdom
-2. https://ror.org/03yghzc09 Faculty of Environment, Science and Economy, University of Exeter Exeter United Kingdom
-3. https://ror.org/03yghzc09 Faculty of Health and Life Sciences, University of Exeter Exeter United Kingdom
-4. https://ror.org/02panr271 Department of Theoretical Biophysics, Max Planck Institute for Biophysics Frankfurt Germany
-5. https://ror.org/03bqmcz70 Malopolska Centre of Biotechnology, Jagiellonian University Kraków Poland
-6. https://ror.org/02g40zn06 Institute of Psychiatry and Neurosciences of Paris, Inserm UMR1266 - Université Paris Cité Paris France
-7. https://ror.org/040pk9f39 GHU Psychiatrie et Neurosciences de Paris Paris France
-8. https://ror.org/03yghzc09 Henry Wellcome Building for Biocatalysis, Biosciences, Faculty of Health and Life Sciences, University of Exeter Exeter United Kingdom
+1. Living Systems Institute, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+2. Faculty of Environment, Science and Economy, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+3. Faculty of Health and Life Sciences, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+4. Department of Theoretical Biophysics, Max Planck Institute for Biophysics Frankfurt Germany ([ROR:02panr271](https://ror.org/02panr271))
+5. Malopolska Centre of Biotechnology, Jagiellonian University Kraków Poland ([ROR:03bqmcz70](https://ror.org/03bqmcz70))
+6. Institute of Psychiatry and Neurosciences of Paris, Inserm UMR1266 - Université Paris Cité Paris France ([ROR:02g40zn06](https://ror.org/02g40zn06))
+7. GHU Psychiatrie et Neurosciences de Paris Paris France ([ROR:040pk9f39](https://ror.org/040pk9f39))
+8. Henry Wellcome Building for Biocatalysis, Biosciences, Faculty of Health and Life Sciences, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
 
 † Corresponding author
 
 ## Abstract
 
-Surface layers (S-layers) are resilient two-dimensional protein lattices that encapsulate many bacteria and most archaea. In archaea, S-layers usually form the only structural component of the cell wall and thus act as the final frontier between the cell and its environment. Therefore, S-layers are crucial for supporting microbial life. Notwithstanding their importance, little is known about archaeal S-layers at the atomic level. Here, we combined single-particle cryo electron microscopy, cryo electron tomography, and Alphafold2 predictions to generate an atomic model of the two-component S-layer of Sulfolobus acidocaldarius . The outer component of this S-layer (SlaA) is a flexible, highly glycosylated, and stable protein. Together with the inner and membrane-bound component (SlaB), they assemble into a porous and interwoven lattice. We hypothesise that jackknife-like conformational changes in SlaA play important roles in S-layer assembly.
+Surface layers (S-layers) are resilient two-dimensional protein lattices that encapsulate many bacteria and most archaea. In archaea, S-layers usually form the only structural component of the cell wall and thus act as the final frontier between the cell and its environment. Therefore, S-layers are crucial for supporting microbial life. Notwithstanding their importance, little is known about archaeal S-layers at the atomic level. Here, we combined single-particle cryo electron microscopy, cryo electron tomography, and Alphafold2 predictions to generate an atomic model of the two-component S-layer of Sulfolobus acidocaldarius. The outer component of this S-layer (SlaA) is a flexible, highly glycosylated, and stable protein. Together with the inner and membrane-bound component (SlaB), they assemble into a porous and interwoven lattice. We hypothesise that jackknife-like conformational changes in SlaA play important roles in S-layer assembly.
 
 ## Introduction
 
@@ -46,7 +46,7 @@ Here, we studied the S. acidocaldarius S-layer and its components using a combin
 
 ## Results
 
-## Structure and N-glycosylation of SlaA30–1069 at acidic pH
+### Structure and N-glycosylation of SlaA30–1069 at acidic pH
 
 To solve the structure of the S. acidocaldarius SLP SlaA, we disassembled the S-layer by changing the pH from acidic to basic and purified the native protein using size-exclusion chromatography. We have previously shown that S. acidocaldarius SlaA purified in this way reforms S-layers upon shifting the pH back to acidic (Gambelli et al., 2019). This demonstrates that after disassembly, SlaA remains in a ‘native’, reassembly competent form.
 
@@ -54,11 +54,53 @@ CryoEM grids with suspensions of the protein were plunge frozen at pH 4, before 
 
 Because SlaA has virtually no homology with other structurally characterised proteins, the cryoEM map was used to build an atomic model de novo (Figure 1a; Figure 1—figure supplement 4b; Video 1). Residues 30–1069 (~70% of the sequence) were clearly defined in the cryoEM map. The N-terminal signal peptide (predicted to be residues 1–24) is cleaved prior to S-layer assembly (Veith et al., 2009). A few N-terminal residues and residues 1070–1424 at the C-terminus were not resolved by SPA, likely due to their high flexibility (Figure 1—figure supplement 5a; Video 2). SlaA30–1069 is a Y-shaped protein. It consists mostly of β-strands and contains only a few short α-helices (Figure 1a, b, Figure 1—figure supplement 4c, d). The polypeptide chain is arranged into four domains (D130–234, D2235–660,701–746, D3661–700,747–914, and D4915–1069), as defined by SWORD (Postic et al., 2017; Figure 1c).
 
+![Video 1.](https://cdn.elifesciences.org/articles/84617/elife-84617-video1.mp4.jpg)
+
+**Video 1.:** The atomic structure is shown in ribbon representation and coloured in cyan–grey–maroon. N-terminus, cyan; C-terminus, maroon. The glycosylated Asn residues are in orange and the glycans are represented as balls and sticks. C, medium blue; N, dark blue; O, red; S, yellow.
+
+![Video 2.](https://cdn.elifesciences.org/articles/84617/elife-84617-video2.mp4.jpg)
+
+**Video 2.:** Sequence of 2D classifications of negatively stained SlaA obtained in Relion 3. D2-4 were aligned, showing the flexibility of D1, D5, and D6.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig1-v2.jpg)
+
+**Figure 1.:** (a, b), SlaA30–1069 atomic model obtained by single-particle cryo electron microscopy (cryoEM) in ribbon representation and cyan–grey–maroon colours (N-terminus, cyan; C-terminus, maroon) with α-helices highlighted in orange. (c, d) SlaA atomic models highlighting six domains: D130–234 (orange), D2235–660,701–746 (purple), D3661–700,747–914 (cyan), D4915–1074 (yellow), D51075–1273 (pink), and D61274–1424 (grey). D5 and D6 were predicted using Alphafold. A flexible hinge exists between D4 and D5. D5 and D6 are thus free to move relative to D1–D4 in the isolated SlaA particle (represented by a curved grey arrow between a stretched (c) and a flapped (d) conformation). Scale bar, 20 Å.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative cryoEM micrographs (from a total of 3687 for (a), 3163 for (b), and 5046 for (c)). (d–f) 2D classification examples of S. acidocaldarius polished SlaA particles at pH 4 (a, d), pH 7 (b, e), and pH 10 (c, f). Scale bars (a–c) 100 nm; (d–f) 50 Å.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Gold-standard Fourier Shell Correlation (FSC) and (b) local resolution estimations for the SlaA map obtained at pH 4, 7, and 10. Red, phase randomised masked; green, unmasked; blue, masked; black, corrected. Scale bar, 20 Å.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) CryoEM map of SlaA30–1069 at 3.1 Å global resolution. (b) Atomic model of SlaA30–1069 (ribbon representation, cyan–grey–maroon colours; N-terminus, cyan; C-terminus, maroon). (c) Fitting of the atomic model (ribbon representation) into the cryoEM map (transparent purple). The loop regions are in grey, α-helices in orange, β-sheets in turquoise, and the disulphide bridge in yellow. (d) Close-ups of three example regions of β-sheets, α-helices, and the disulphide bridge. Locations of the close-ups are labelled in (d) as 1-8 in (c). Scale bar in (a–c) 20 Å.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) 2D classification of negatively stained micrographs of SlaA purified from S. acidocldarius. The white arrowheads point at domains D5 and D6 in different orientations, highlighting the flexibilit of these domains relative to the rest of the protein (D1-4). The arrowheads in the first class highlight D1 (orange), D2 (purple), D3 (cyan), and D4 (yellow). Scale bar, 100 Å. (b) Low-resolution 3D refinement of Saccharolobus solfataricus SlaA (transparent grey; 13.5 Å resolution) superimposed with the atomic model of S. acidocaldarius SlaA (rainbow ribbon). While in the S. solfataricus map, the N-terminus (blue arrowhead) is not resolved (due to flexibility), the C-terminus is visible (red arrowhead) and in a ‘closed’ conformation, reminiscent of the Alphafold predications shown in Figures 1—3, as well as Figure 1—figure supplement 6. (c) Map and model from (b) shown in different orientations.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a–e) SlaA30–1069 is shown in ribbon representation and cornflower blue; glycans are in ball-stick representation and rusty brown. The Alphafold predictions are coloured according to domains, highlighting domains D5 (pink) and D6 (grey). Residues 914–1069 (D4 in yellow) at the C-terminus of SlaA30–1069 were included in the prediction to aid alignment between SlaA30–1069 and D5–D6. The predicted D4 largely overlaps with the cryoEM structure of the SlaA30–1069 N-terminus. The black arrowhead (a) indicates the intramolecular hinge loop. (f) pLDDT (per-residue confidence score) plot showing the per-residue confidence metric of the predicted models. The dashed line marks the threshold of predicted LDDT = 70, above which the structures are expected to be modelled with high confidence. Scale bar, 20 Å.
+
 Of those domains, only D4 shows significant similarity to known structures – the domain 3 of complement C5 (PDB ID: 4E0S) according to DALI (Holm, 2020). A disulphide bond links D3 and D4 (Cys677–Cys1017) (Figure 1—figure supplement 4d), however, the density of this bond is not visible in the cryoEM map, likely due to electron beam damage (Kato et al., 2021).
 
 The structure of the missing C-terminus (SlaA914–1424) was predicted (including D4 to aid alignment) using Alphafold (Jumper et al., 2021) and revealed two additional β-domains, D5 and D6 (Figure 1c, Figure 1—figure supplement 6). Alphafold predicted five different conformations of SlaA914–1424, which differed with regard to the position of D5–D6 relative to D1–D4, suggesting an in-plane flexibility between these two parts of the protein around a hinge (amino acids A1067–L1071) between D4 and D5 (Figure 1c, Figure 1—figure supplement 6). Similar conformations were also observed in 2D classes of our cryoEM dataset (Figure 1—figure supplement 5a, Video 2), as well as a low-resolution 3D refinement of SlaA purified from the related species Saccharolobus solfataricus (Figure 1—figure supplement 5b, c), substantiating the Alphafold predictions in Figure 1—figure supplement 6. The predicted extremes of the conformational space of SlaA are shown in Figure 1c, d. These describe stretched (open) and flapped (closed) conformations. The highly variable positions of D5–D6 seen in the 2D classes, suggest that these domains do not adopt discrete positions, but rather move about freely in the soluble form of the SlaA subunit. It is probable that this jackknife-like flexibility aids SlaA’s assembly into an interwoven S-layer. If some of this flexibility is retained in the assembled S-layer, it will enable it to adopt various degrees of curvature, necessitated by its ability to encapsulate large cells, as well as small exosomes.
 
 SlaA is expected to be highly glycosylated; its sequence contains 31 predicted N-glycosylation sites (Peyfoon et al., 2010). Our cryoEM map of SlaA30–1069 shows 19 glycan densities (Figure 2), largely in agreement with the prediction of 20 sequons located in this portion of the protein (Peyfoon et al., 2010). The 19 glycosylated Asn residues in SlaA30–1069 are listed in Figure 2e. The remaining predicted glycosylation sites reside in domains D5 and D6, in which eight sites were confirmed to be glycosylated by mass spectrometry analysis (Peyfoon et al., 2010). Therefore, the entire SlaA protein contains a total of 27 confirmed glycans.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig2-v2.jpg)
+
+**Figure 2.:** (a) Atomic model of SlaA in ribbon representation. SlaA30–1069 as solved by cryoEM is in cornflower blue; SlaA1070–1424 as predicted by Alphafold is in purple (boxed). 19 Asn-bound N-glycans were modelled into the cryoEM map of in SlaA30–1069 (glycans rusty brown sticks, Asn in orange). In the glycans, O atoms are shown in red, N in blue, and S in yellow. The inset shows the Alphafold model of SlaA1070–1424 (D5 and D6), where eight likely glycosylated Asn residues (Peyfoon et al., 2010) are highlighted as orange sticks. Scale bar, 20 Å. (b–d) Example close-ups of glycosylation sites with superimposed cryoEM map (blue mesh). (b) Shows the full hexasaccharide on Asn377, (c) shows GlcNAc2 on Asn559, and (d) shows a pentasaccharide lacking Glc1 on Asn714. (e) List of glycosylation sites and associated glycans of SlaA30–1069. The schematic glycan representation (f) is equivalent to (Peyfoon et al., 2010). Blue square, N-acetylglucosamine; green circle, mannose; pink circle, 6-sulfoquinovose; blue circle, glucose. (g, h) GlycoSHIELD models (red, orange) showing the glycan coverage of the protein (solid grey). Glycan shields corresponding to glycosylation sites visualised by cryoEM are coloured red, glycan shields with the Alphafold model of the SlaA C-terminus are shown in orange.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Position of N-glycosylated sites and globular domains on SlaA primary structure (upper panel) and changes of the number of possible N-glycan conformers at each glycosylated site (bar graphs). Top, SlaA with stretched (open) vs. flapped D5–D6 domains (closed). Middle, SlaA Y-body predicted by Alphafold v2.2.0 vs. experimental cryo electron microscopy (cryoEM). Bottom, monomer in isolation vs. in the assembled structure. Bar charts show changes of glycan conformer numbers at individual glycosylation sites normalised by global changes for all glycans. Positive and negative values indicate an increase or a decrease of possible glycan conformations, respectively, indicative of favourable and unfavourable entropic contributions. The seven last N-glycans of the protein were not taken into account for the Alphafold–cryoEM comparison plot, changing the scale of the Y axis compared to the two other plots. Green and red arrows on the right side of the figure indicate a total increase or decrease of glycan conformers during the transition between the two conformations of the protein that were compared in each plot, indicative of favourable and unfavourable entropic contributions to the conformation transition.
 
 The N-glycans were modelled into the cryoEM densities based on their known chemical structure (Zähringer et al., 2000). The complete glycan is a tribranched hexasaccharide, containing a 6-sulfoquinovose (QuiS). Not all glycosylation sites had clear density to model the entire hexasaccharide. Instead, several forms of apparently truncated glycans were fitted into the cryoEM map (Figure 2b–d). Most glycans (47 %) were built as pentasaccharides, lacking the glucose bound to QuiS in the mature glycan; 15% of the glycan pool could be modelled with the whole hexasaccharide structure.
 
@@ -66,15 +108,53 @@ As shown for other glycoproteins, such as the spike proteins of coronavirus (Sik
 
 Both closed and open conformations showed a similar number of possible glycan conformers (with the closed slightly more than the open form; Figure 2—figure supplement 1). This signifies that neither SlaA conformation is entropically favoured over the other, which allows for the observed free jackknife movement between D1–4 and D5–6 (Video 2).
 
-## SlaA at different pH conditions
+### SlaA at different pH conditions
 
 SlaA assembly and disassembly are pH-sensitive processes (Gambelli et al., 2019). A pH shift from acidic (~pH 4) to alkaline (~pH 10) induces the disassembly of the lattice into its component subunits, while a reassembly occurs upon shifting the pH back to acidic (Gambelli et al., 2019). Asking whether this pH shift-induced assembly and disassembly mechanism is based on a conformational change or partial unfolding of SlaA, we investigated the structure of SlaA at different pH conditions. Purified SlaA proteins were frozen at pH 7 and 10 and their structure was determined using the SPA pipeline in Relion (Zivanov et al., 2018; Figure 3—figure supplement 1a, b; Supplementary file 1a) and 3.1 (Figure 3—figure supplement 2, Supplementary file 1a; Figure 3—figure supplements 1 and 2). The resulting cryoEM maps had global resolutions of 3.9 Å for SlaA at pH 7 and 3.2 Å for SlaA at pH 10 (Figure 3a; Figure 1—figure supplement 3). As for SlaA at pH 4, domains D5 and D6 were too flexible to be resolved in the cryoEM maps. Strikingly, the cryoEM maps of SlaA30–1069 at the three pH conditions were virtually identical, demonstrating a remarkable pH stability of this protein. The mean r.m.s.d. (root-mean-square deviation) value of C⍺ atoms between the pH 4 and 10 structures was 0.79 Å (min. = 0.02 Å; max. = 2.6 Å) (Figure 3b; Video 3), confirming that SlaA30–1069 maintains its structure unchanged across a surprisingly broad pH range. This suggests that a pH-induced conformational change or unfolding in SlaA30–1069 is not the cause for S-layer disassembly. However, because D5 and D6 were not resolved in our map, a structural rearrangement affecting these domains remains a possibility.
 
+![Video 3.](https://cdn.elifesciences.org/articles/84617/elife-84617-video3.mp4.jpg)
+
+**Video 3.:** Smaller deviations are shown in blue and larger deviations in red, with mean r.m.s.d. = 0.79 Å, as in Figure 3b.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig3-v2.jpg)
+
+**Figure 3.:** (a) SlaA30–1069 cryo electron microscopy (cryoEM) maps at pH 4 (light blue, res. 3.1 Å), pH 7 (orange, res. 3.9 Å), and pH 10 (magenta, res. 3.2 Å). (b) r.m.s.d. (root-mean-square deviation) alignment between SlaA30–1069 atomic models at pH 4 and 10. Smaller deviations are shown in blue and larger deviations in red, with mean r.m.s.d. = 0.79 Å. Electrostatic surface potentials of SlaA at pH 4 (c), pH 7 (d), and pH 10 (e). Models include Alphafold-predicted C-terminal domains (in closed conformation). Surfaces are coloured in red and blue for negatively and positively charged residues, respectively. White areas represent neutral residues. In (c), some areas occupied by glycans are circled; the arrow points at one of the 6-sulfoquinovose residues displaying a negative charge at pH 4. Scale bar, 20 Å.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The image processing pipeline incuded the collection of two datasets (a and b), which were subsequently merged.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Comparison of the SlaA electrostatic surface charge with (left) and without (right) glycans at pH 4 (a), 7 (b), and 10 (c). The glycosylation increases the overall surface negative charge of SlaA, particularly noticeable at pH 7 and 10. Scale bar, 20 Å.
+
 A variation in pH can dramatically affect protein–protein interactions by changing the overall electrostatic surface potential of the protein complex (Jensen, 2008; Zhang et al., 2011). An analysis of the surface charges of SlaA, including the glycans, at pH 4, 7, and 10 revealed that the overall protein charge changes from positive at pH 4 to negative at pH 10 (Figure 3c–e). A comparison of the surface charge between glycosylated and non-glycosylated SlaA (Figure 3—figure supplement 3) showed that the glycans contribute considerably to the negative charge of the protein at higher pH values. This change in electrostatic surface potential may be a key factor in disrupting protein–protein interactions within the S-layer, causing its disassembly at alkaline pH.
 
-## Atomic model of the S. acidocaldarius S-layer
+### Atomic model of the S. acidocaldarius S-layer
 
 In a previous study, we determined the location of SlaA and SlaB within the S-layer lattice by cryoET of whole cells and isolated S-layers (Gambelli et al., 2019). However, due to the limited resolution of the cryoEM maps and the lack of SlaA and SlaB atomic models, the details of the S-layer structure could not be explored. To address this knowledge gap, we performed cryoET and subtomogram averaging (STA) on S. acidocaldarius exosomes with improved imaging conditions and processing techniques. Exosomes are naturally secreted S-layer-encapsulated vesicles, with a diameter of about 90–230 nm (Ellen et al., 2009). To analyse the in situ structure of the S-layer, we performed STA using Warp (Tegunov and Cramer, 2019), Relion 3.1 (Scheres, 2020), and M (Tegunov et al., 2021) and obtained a cryoEM map at 11.2 Å resolution (Figure 4—figure supplements 1 and 2). We fitted our structure of SlaA into the S-layer map, which provided an atomic model of the assembled lattice (Figure 4a, b; Figure 4—figure supplement 1d–i).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig4-v2.jpg)
+
+**Figure 4.:** (a) Extracellular view of assembled SlaA monomers in rainbow colours and surface representation. (b) Extracellular view of assembled SlaA in ribbon representation with SlaA dimers forming a hexagonal pore highlighted in shades of red and yellow. Each dimer spans two adjacent hexagonal pores. (c) Side view of the SlaA lattice (blue, N-terminus; red, C-terminus). It is possible to distinguish an outer zone (OZ) formed by domain D1, D2, D3, and D4, and an inner zone (IZ) formed by domains D5 and D6. (d) One SlaA monomer (surface representation, N-terminus cyan, grey, C-terminus maroon) is highlighted within the assembled array. The long axis of each SlaA monomer (dashed line) is inclined by a 28° relative to the curved surface of the array (solid line). (e) The location of each SlaA domain within the S-layer. (f–h) SlaA glycans modelled with GlycoSHIELD in the assembled S-layer. (f) Shows the extracellular view; (g) shows the intracellular view; (h) shows insets of (f) at higher magnification without (left) and with (right) glycans. Glycans fill gaps unoccupied by the protein and significantly protrude into the lumen of the triangular and hexagonal pores. Scale bars in (a–d, f–h) 10 nm; in (e) 20 Å.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** CryoEM map of the S-layer assembled on exosomes in extracellular (a), intracellular (b), and side (c) views at 11.2 Å resolution. The membrane-distal face of the map is shown in magenta, and the membrane proximal face is shown in cyan. (d–f) Fitting of the SlaA hexamer model into the S-layer map. SlaA is shown in ribbon representation in different colours, the map is depicted in transparent grey. (g–i) Fitting of six SlaA monomers around a triangular pore. Scale bar, 10 nm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) CryoET and STA workflow using Warp–Relion–M. (b) Gold-standard FSC of the STA map.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Side view of the SlaA dimer (ribbon representation; cyan, N-terminus; maroon, C-terminus). Within the dimer, the long axes of two SlaA monomers include an angle of ~160°. The dimer has a height of 9.5 nm and a length of 42 nm. (b–e) CryoEM densities extrapolated from the S-layer map published in 2019 (Gambelli et al., 2019). The purple density in (b) and (c) (side and extracellular views, respectively) contains the SlaA dimer as presented in this work (f, g). The green density in (d) and (e) (side and extracellular views, respectively), represents the SlaA dimer as reported previously (Gambelli et al., 2019). (f, g) show the atomic model of the SlaA dimer in (a) and the cryoEM densities in (b–e) fitting the S-layer cryoEM map (grey mesh) presented in Gambelli et al., 2019. Scale bar, 10 nm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (a) Surface representation of the atomic model of the SlaA dimer, as it occurs in the S-layer. (b) Negative stain electron tomography of isolated SlaA-only S-layer. (c) 1–4 are cut-outs from (b) showing dimeric SlaA with their respective positions marked in (b). (d) Atomic models from (a) scaled and superimposed with the dimers seen in negative stain tomography (c). Scale bar, (b) 200 nm; scale bars, (c, d) 25 nm.
 
 When observed in the direction parallel to the membrane plane, the exosome-encapsulating S-layer displays a positive curvature, with an average curvature radius of ~ 84 nm (Figure 4). SlaA assembles into a sheet with a thickness of 95 Å. The long axes of the SlaA subunits are inclined by an angle of about ~28° with respect to the curved S-layer surface (Figure 4d). As a result of this inclination, effectively two zones in the SlaA assembly can be distinguished: an outer zone consisting of D1, D2, D3, and D4, and an inner zone formed by D5 and D6 (Figure 4c, d).
 
@@ -84,7 +164,37 @@ Modelling of glycan shields in the assembled structure showed that glycans fill 
 
 To get a handle on the structure of the entire S-layer, we used Alphafold v2.2.0 (Jumper et al., 2021) and SymmDock (Schneidman-Duhovny et al., 2005) and predicted the monomeric and trimeric SlaB structure. The predicted structure for one SlaB monomer consists of three N-terminal β-sandwich domains and a 132 amino acid long C-terminal α-helix (Figure 5—figure supplement 1a). As shown by our STA map (Figure 5, figure supplement 3c, d), SlaB forms a trimer. Alphafold v2.2.0 (Jumper et al., 2021) suggests that three SlaB molecules form a trimeric coiled-coil via their C-terminal ⍺-helices, and their N-terminal β-domains fanning out into a propeller-like structure (Figure 5a, b; Figure 5-figure supplement 1b). This domain architecture agrees with the sequence-based molecular modelling described previously (Veith et al., 2009). The TMHMM-2.0 server predicted the C-terminal amino acids 448–470 as transmembrane helix. The hydrophobicity plot (Figure 5—figure supplement 2e) confirms a hydrophobic region corresponding to the predicted transmembrane helix (Figure 5—figure supplement 2a, e). The protein is predicted to have 14 N-glycosylation sites, of which six are located along the C-terminal α-helix (Figure 5—figure supplement 2b–d). The electrostatic surface potential calculated at pH 4 shows that the C-terminal α-helix is mostly neutral (Figure 5—figure supplement 2f). In contrast, the three β-sandwich domains have greater electrostatic potential. While D2 is mostly positive, D3 carries distinct negatively charged patches (Figure 5—figure supplement 2f). These patches may play a role in electrostatic interactions between SlaB’s D3 domain and the mainly positively charged SlaA.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig5-v2.jpg)
+
+**Figure 5.:** (a, b) SlaB trimer (ribbon representation, N-terminus, cyan; C-terminus, maroon) as predicted by Alphafold v2.2.0 (Jumper et al., 2021). (c–e) Ribbon representation of the assembled SlaA and SlaB components of the S-layer. (c), (d), and (e) show the external face, the pseudo-periplasmic face, and a side view, respectively. SlaA proteins around each hexagonal pore are shown in different colours. SlaB trimers are shown in shades of yellow and orange (N-termini are red-orange shades and C-termini are yellow). Scale bar, (a, b) 20 Å; (c–e) 10 nm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a, b) Alphafold v2.2.0 predictions of SlaB monomer and trimer, respectively. The ribbon is coloured by pLDDT (per-residue confidence score) where red indicates low, and blue high confidence. The trimeric coiled coil of the SlaB trimer (b) is truncated at residue 400, and the complete trimeric coiled coil (Figure 5d) was predicted using SymmDock. (c, d) PAE (predicted aligned error) plots for (a) and (b), respectively. Scale bar, 20 Å.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Structure of SlaB as predicted by Alphafold v2.2.0 (ribbon representation, cyan–grey–maroon from N-terminus to C-terminus). Amino acids from 1 to 24 (blue) are predicted as signal peptide by InterPro. Amino acids from 448 to 470 (yellow) are predicted as transmembrane helix by TMHMM-2.0. (b) Putative N-glycosylation sites are labelled as predicted by GlycoPP v1.0. (c) SlaB sequence with predicted N-glycosylated residues in green. (d) Table showing predicted N-glycosylation distribution across four SlaB domains. SlaB trimer (as predicted by Alphafold v2.2.0) surface representation showing hydrophobicity (from most hydrophilic in dark cyan to most hydrophobic in gold) in (e), and electrostatic surface potential (from mostly negative in red, to mostly positive in blue) in (f). The arrow in (e) highlights the predicted hydrophobic transmembrane region. (f) Negatively charged patches (red) in the N-tremini of SlaB may electrostatically interact with the mostly positively charged SlaA. Scale bar, 20 Å.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a–d) SlaA hexamer (cornflower blue) and SlaB trimer (magenta) fitting into the cryoEM map. (d) Cross-section through the boxed region in (c), showing the interaction between SlaA and SlaB. Scale bar, 10 nm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (a–c) Atomic models are shown in ribbon representation in cyan–grey–maroon from the N-terminus to the C-terminus. S. acidocaldarius SlaA (domains D5 and D6 as predicted by Alphafold v 2.2.0) and SlaB (as predicted by Alphafold v.2.2.0) are in (a), H. volcanii csg (PDB ID: 7PTR, http://dx.doi.org/10.2210/pdb7ptr/pdb) is shown in (b), and C. crescentus RsaA (N-terminus PDB ID: 6T72, http://dx.doi.org/10.2210/pdb6t72/pdb, C-terminus PDB ID: 5N8P, http://dx.doi.org/10.2210/pdb5n8p/pdb) is depicted in (c). (d) Atomic model of SlaA from M. sedula (UNIPROT A4YHQ8, as predicted by Alphafold v2.2.0) and PAE (predicted aligned error) plot. The model is shown in ribbon representation coloured by pLDDT (per-residue confidence score) where red indicates very low confidence and blue very high. Scale bar, 20 Å.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (a, c, e) Calculated folded state stability heatmaps for SlaA30–1069 (a), SlaA (c), and SlaB (e), respectively. SlaA30–1069, SlaA, and SlaB predicted to be stable across pH 2–8. (b, d, f) calculated charged heatmaps for SlaA30–1069 (b), SlaA (d), and SlaB (f), respectively. Surface charge shifts from positive to negative for SlaA30–1069 and SlaA from pH 2 to 8, whereas SlaB shows a largely consistent positive charge.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/84617/elife-84617-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (a, c, e) calculated folded state stability heatmaps for C. crescentus S-layer protein RsaA N-terminus (a) and C-terminus (c) domains, and H. volcanii S-layer protein csg (e). The RsaA N-terminus domain is predicted to be largely stable across pH 2–8; the RsaA C-terminus domain is predicted to become unstable at elevated pH and low ionic strength; csg’s stability is aparently greatly affected at neutral and high pH. (b, d, f) calculated charged heatmaps for RsaA N-terminus (b) and C-terminus (d) domains, and csg (f). RsaA’s and csg’s surface charge shifts from positive to negative from pH 2 to 8. Csg shows a dramatic difference in surface charge from pH 3 to 5, becoming negatively charged.
+
 By combining SPA and STA with structural predictions, we built a complete S. acidocaldarius S-layer model (Figure 5c–e; Figure 5—figure supplement 3, Video 4) . The Alphafold predictions of the SlaB trimer superimposed remarkably well into the corresponding densities visible in our STA map at low threshold values, and flexible fitting using Namdinator (Kidmose et al., 2019) further improved the fit (Figure 5—figure supplement 3).
+
+![Video 4.](https://cdn.elifesciences.org/articles/84617/elife-84617-video4.mp4.jpg)
 
 In the assembled lattice, SlaB trimers occupy alternating triangular pores around each hexagonal pore (Gambelli et al., 2019). The SlaB trimer has a tripod-like structure, with its long axis perpendicular to the planes formed by the membrane and SlaA. Three Ig-like domains branch away from the trimer’s symmetry axis and face the SlaA canopy, whereas three α-helices form a coiled coil, which at the predicted transmembrane region insert into the resolved exosome membrane (Figure 5—figure supplement 3c).
 
@@ -118,53 +228,53 @@ S-layers are often necessary for the survival of microorganisms in nature but ca
 
 ## Methods
 
-## S. acidocaldarius strains and growth conditions
+### S. acidocaldarius strains and growth conditions
 
 Cells of S. acidocaldarius strain MW001 were grown in basal Brock medium* at pH 3 (Brock et al., 1972) as previously described (Gambelli et al., 2019). Briefly, cells were grown at 75°C, 150 rpm, until an OD600 of >0.6 was reached. Cells were then centrifuged at 5000 × g (Sorvall ST 8R) for 30 min at 4°C. The cell fraction was stored at −20°C for S-layer isolation, whereas the supernatant was stored at 4°C for exosomes isolation.
 
 *Brock media contain (per l): 1.3 g (NH4)2SO4, 0.28 g KH2PO4, 0.25 g MgSO4·7H2O, 0.07 g CaCl2·2H2O, 0.02 g FeCl2·4H2O, 1.8 mg MnCl2·4H2O, 4.5 mg Na2B4O7·10H2O, 0.22 mg ZnSO4·7H2O, 0.05 mg CuCl2·2H2O, 0.03 mg NaMoO4·2H2O, 0.03 mg VOSO4·2H2O, 0.01 mg CoSO4·7H2O, and 0.01 mg uracil.
 
-## S-layer isolation and disassembly
+### S-layer isolation and disassembly
 
 The S-layer isolation and disassembly were performed as previously described (Gambelli et al., 2019). Briefly, frozen cell pellets from a 50 ml culture were incubated at 40 rpm (Stuart SB3) for 45 min at 37°C in 40 ml of buffer A (10 mM NaCl, 1 mM phenylmethylsulfonyl fluoride, 0.5% sodium lauroylsarcosine), with 10 μg/ml DNase I. The samples were pelleted by centrifugation at 18,000 × g (Sorvall Legend XTR) for 30 min and resuspended in 1.5 ml of buffer A, before further incubation at 37°C for 30 min. After centrifugation at 14,000 rpm for 30 min (Sorvall ST 8R), the pellet was purified by resuspension and incubation in 1.5 ml of buffer B (10 mM NaCl, 0.5 mM MgSO4, 0.5% sodium dodecyl sulfate [SDS]) and incubated for 15 min at 37°C. To remove SlaB from the assembled S-layers, washing with buffer B was repeated three more times. Purified Sla-only S-layers were washed once with distilled water and stored at 4°C. The removal of SlaB was confirmed by SDS/polyacrylamide gel electrophoresis (PAGE) analysis. S-layers were disassembled by increasing the pH to 10 with the addition of 20 mM NaCO3 and 10 mM CaCl2 and incubated for 2 hr at 60°C at 600 rpm (Thermomixer F1.5, Eppendorf).
 
-## SlaA purification
+### SlaA purification
 
 After disassembly, the sample containing SlaA was further purified using gel filtration chromatography. A total of 100 μl containing 10 mg/ml of disassembled protein were loaded onto a Superdex 75 Increase 10/300 GL (GE Healthcare) using 300 mM NaCl for elution. At the end of the run, the fractions containing SlaA were dialysed against 30 mM acetate buffer (0.1 M CHCOOH, 0.1 M CH3COONa) at pH 4, 150 mM Tris–HCl at pH 7, or 20 mM NaCO3 at pH 10, with the aim to compare the SlaA protein structure at different pH values. The purity of the fractions was assessed by SDS/PAGE analysis and negative staining with 1% uranyl acetate on 300 mesh Quantifoil copper grids with continuous carbon film (EM Resolutions).
 
-## CryoEM workflow for SPA
+### CryoEM workflow for SPA
 
-## Grid preparation
+#### Grid preparation
 
 The purified SlaA samples at pH 4 and 10 (3 μl of ~0.1 mg/ml) were applied to 300 mesh copper grids with graphene oxide-coated lacey carbon (EM Resolutions) without glow discharge. Grids were frozen in liquid ethane using a Mark IV Vitrobot (Thermo Fisher Scientific, 4°C, 100% relative humidity, blot force 6, blot time 1 s) with Whatman 597 filter paper. The purified SlaA at pH 7 was applied to glow discharged R 1.2/1.3 300 mesh copper grids with holey carbon. The freezing procedure was kept the same as for the samples at pH 4 and 10 besides the blot time of 2 s.
 
-## Data collection
+#### Data collection
 
 Micrographs were collected on a 200 kV FEI Talos Arctica TEM, equipped with a Gatan K2 Summit direct detector using EPU software (Thermo Fisher Scientific) (Supplementary file 1a). Data were collected in super-resolution at a nominal magnification of ×130,000 with a virtual pixel size of 0.525 Å at a total dose of ~60 e−/Å (Fagan and Fairweather, 2014). A total of 3687 movies (44 fractions each), 3163 movies (44 fractions each), and 5046 movies (60 fractions each), with a defocus range comprised between −0.8 and −2.4 μm, were collected for samples at pH 4, 7, and 10, respectively.
 
-## Image processing
+#### Image processing
 
 Initial steps of motion correction (MotionCor 2; Li et al., 2013) and Contrast Transfer Function (CTF) estimation (CTF-find 4; Rohou and Grigorieff, 2015) were performed in Relion 3.0 (Zivanov et al., 2018) and Relion 3.1 (Scheres, 2020) for datasets at pH 4 and 7, whereas Warp (Tegunov and Cramer, 2019) was used for the pH 10 dataset. Further steps of 2D and 3D classification, refinement, CTF refinement, and polishing were performed using Relion 3.1. For a detailed workflow of the three datasets see Figure 1—figure supplement 1, Figure 3—figure supplements 1 and 2. The refined maps were post-processed in Relion 3.1 as well as using DeepEMhancer (Sanchez-Garcia et al., 2021). The produced maps had a resolution of 3.1, 3.9, and 3.2 Å at pH 4, 7, and 10, respectively, by gold-standard FSC 0.143.
 
-## Model building and validation
+#### Model building and validation
 
 The SlaA atomic model was built de novo using the cryoEM map at pH 4 in Buccaneer (Cowtan, 2006), refined using REFMAC5 (Murshudov et al., 2011) and rebuilt in COOT (Emsley et al., 2010). The glycans were modelled in COOT with the refinement dictionary for the unusual sugar 6-sulfoquinovose prepared using JLigand (Lebedev et al., 2012). This atomic model was then positioned into the cryoEM maps at pH 10 and 7 using ChimeraX (Pettersen et al., 2021) and refined using REFMAC5 and COOT. All models were further refined using Isolde (Croll, 2018) and validated using Molprobity (Chen et al., 2010) in CCP4 (Winn et al., 2011).
 
-## Exosome isolation
+### Exosome isolation
 
 S. acidocaldarius exosomes were isolated from the supernatant obtained after cell growth. The procedure was adapted from Ellen et al., 2009. The supernatant was split into 8 fractions and exosomes were pelleted in two runs of ultracentrifugation (Optima LE-80K, Beckman Coulter) at 125,000 × g for 45 min at 4°C. The pellet was resuspended in 2 ml (per fraction) of the supernatant and ultracentrifuged (Optima MAX-TL, Beckman Coulter) at 12,000 rpm (TLA55 rotor, Beckman Coulter) for 10 min at 4°C. The pellet (containing intact cells and cell debris) was discarded, and the supernatant was ultracentrifuged (Optima MAX-TL, Beckman Coulter) at 42,000 rpm (TLA55 rotor, Beckman Coulter) for 90 min at 4°C. The pellet containing the isolated exosomes was resuspended in MilliQ water at a concentration of 15 mg/ml. The purity of the sample was assessed by negative staining with 1% uranyl acetate on 300 mesh Quantifoil copper grids with continuous carbon film (EM Resolutions).
 
-## CryoEM workflow for STA
+### CryoEM workflow for STA
 
-## Grid preparation
+#### Grid preparation
 
 The isolated exosomes were mixed 1:1 with 10 nm colloidal gold conjugated protein A (BosterBio) and 3 μl droplets were applied four times on glow discharged 300 mesh Quantifoil copper R2/2 grids (EM Resolutions). The grids were blotted with 597 Whatman filter paper for 4 s, using blot force 1, in 95% relative humidity, at 21°C, and plunge-frozen in liquid ethane using a Mark IV Vitrobot (FEI).
 
-## Data collection
+#### Data collection
 
 Micrographs were collected on two microscopes: a 200 kV FEI Talos Arctica TEM, equipped with a Gatan K2 Summit direct detector and a 300 kV Thermo Fisher Titan Krios G3 with a Thermo Fisher Falcon 4i direct detector and SelectrisX energy filter, both using the Tomo 4 package. Tilt series on the Talos/K2 were collected in super-resolution at a nominal magnification of ×63,000 with a virtual pixel size of 1.105 Å at a total dose of ~83 e−/Å2. The tilts were collected from −20° to 60° in 3 degree steps (2 fractions per tilt). Tilt series on the Krios/Falcon 4 were collected as conventional MRC files at 4k × 4k, nominal magnification of ×64,000 and a pixel size of 1.9 A at a total dose of ~83 e−/Å2. Tilts were collected from −60° to 60° in 3 degree steps in a dose-symmetric scheme with groupings of 2 (6 fractions per tilt). A nominal defocus range between −4 and −6 μm was used for both collections. A total of 86 positions were collected, 28 on the Talos and 58 on the Krios.
 
-## Electron cryo-tomography and STA
+#### Electron cryo-tomography and STA
 
 Initial STA was performed using only data collected on the Talos. Motion correction was performed using the IMOD (Kremer et al., 1996) program alignframes. IMOD was also used for the tomogram reconstruction. Initial particle picking on all 28 tomograms was performed using seedSpikes and spikeInit as part of the PEET software package (Nicastro et al., 2006) with a total of 12,010 particles picked. For initial STA, the picked particles were CTF corrected and extracted using the Relion STA pipeline (Bharat and Scheres, 2016). 2D classification, initial model generation, 3D classification and initial refinements were all performed using Relion 3.1 (Scheres, 2020). A resolution of 16.1 Å was reached using 1313 particles and C3 symmetry.
 
@@ -172,7 +282,7 @@ For higher-resolution averaging, the tilt series from both datasets were process
 
 The model of the assembled S-layer was built by initial rigid body fitting the SlaA structure determined by SPA into the subtomogram average using ChimeraX (Pettersen et al., 2021). The C-terminal domains of SlaA that were predicted in Alphafold2 (Jumper et al., 2021) were then added to each SlaA. Hereby, only SlaA in the extended conformation could be reconciled with the map. Next, the SlaB trimers were predicted in Alphafold2 and fitted into the trimeric stalks that connected the S-layer canopy with the membrane. Finally, the model was refined using Namdinator (Kidmose et al., 2019), a molecular dynamics-based flexible fitting software.
 
-## Structure analysis and presentation
+### Structure analysis and presentation
 
 The electrostatic potential of the protein was derived using APBS (Adaptive Poisson-Boltzmann Solver) (Jurrus et al., 2018) based on the PARSE force field for the protein as available through PDB2PQR (Dolinsky et al., 2007). Where available, the charges of the glycans were assigned based on the GLYCAM force field (Kirschner et al., 2008); charges of the hydrogens were combined with their central heavy atom. The charge assignment depends on the bonding topology, that is occupied linkage positions. Supplementary file 1b summarises the mapping of residue from the structure file to GLYCAM residue names. For residue styrene maleic acid or anhydride (SMA), charge assignments are not available from the GLYCAM force field; these were derived based on restrained electrostatic potential (RESP) calculations conducted for the methoxy derivatives on the HF/6-1G*//HF/6-31G* level of theory and employing a hyperbolic restraint equal to 0.010 in the charge fitting step (Breneman and Wiberg, 1990; Dupradeau et al., 2010). The total charge of the newly derived residue was constrained to −0.8060 e and −1 e for the 1-substituted and 1,4-substituted SMA (referred to as SG0 and SG4 in Supplementary file 1c, d), respectively, in agreement with the conventions of the GLYCAM force field. In assembling the final charge assignment, the charge of the linking ND2 atom of the glycosylated Asn residues of the protein was altered to compensate for the polarisation charge of the attached saccharide unit. The electrostatic charge was visualised using VMD (Humphrey et al., 1996) (http://www.ks.uiuc.edu/Research/vmd/).
 
@@ -180,7 +290,7 @@ The structure of S. acidocaldarius SlaA was visualised using UCSF Chimera (Pette
 
 Heatmaps for net charge, and pH and ionic strength-dependent protein stability were obtained using Protein-Sol (https://protein-sol.manchester.ac.uk/) (Hebditch and Warwicker, 2019). For SlaB the signal peptide was predicted using InterPro (Blum et al., 2021), the transmembrane region was predicted using TMHMM-2.0 (Krogh et al., 2001), the N-glycosylation sites (sequons N-X-S/T) were predicted using GlycoPP v1.0 (Chauhan et al., 2012).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Conformation arrays of glycans were grafted on protein structure using GlycoSHIELD (Gecht et al., 2021). In brief, glycan systems (GlcNAc[2],Man[2],QuiS[1],Glc[1] N-linked to neutralised glyc–Asp–gly tripeptides) were modelled in CHARMM-GUI (Jo et al., 2008) and solvated using TIP3P water models in the presence of 150 mM NaCl and configured for simulations with CHARMM36m force fields (Park et al., 2019; Huang et al., 2017). Molecular dynamics simulations were performed with GROMACS 2020.2 and 2020.4-cuda (Abraham et al., 2015) in mixed GPU/CPU environments. Potential energy was first minimised (steepest descent algorithm, 5000 steps) and were equilibrated in the canonical ensemble. 1 fs time steps and Nose–Hoover thermostat were used. Atom positions and dihedral angles were restrained during the equilibration, with initial force constants of 400, 40, and 4 kJ/mol/nm2 for restraints on backbone positions, side-chain positions, and dihedral angles, respectively. The force constants were gradually reduced to 0. Systems were additionally equilibrated in NPT ensemble (Parrinello–Rahman pressure coupling with the time constant of 5 ps and compressibility of 4.5 × 10−5 bar−1) over the course of 10 ns with a time step of 2 fs. Hydrogen bonds were restrained using LINCS algorithm. During the production runs, a velocity-rescale thermostat was used and the temperature was kept at 351 K. Production runs were performed for a total duration of 3 μs and snapshots of atom positions stored at 100 ps intervals.
 

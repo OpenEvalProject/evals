@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.34334.001 Poly(ADP-ribose) polymerases (PARPs) are a family of enzymes that synthesise ADP-ribosylation (ADPr), a reversible modification of proteins that regulates many different cellular processes. Several mammalian PARPs are known to regulate the DNA damage response, but it is not clear which amino acids in proteins are the primary ADPr targets. Previously, we reported that ARH3 reverses the newly discovered type of ADPr (ADPr on serine residues; Ser-ADPr) and developed tools to analyse this modification (Fontana et al., 2017). Here, we show that Ser-ADPr represents the major fraction of ADPr synthesised after DNA damage in mammalian cells and that globally Ser-ADPr is dependent on HPF1, PARP1 and ARH3. In the absence of HPF1, glutamate/aspartate becomes the main target residues for ADPr. Furthermore, we describe a method for site-specific validation of serine ADP-ribosylated substrates in cells. Our study establishes serine as the primary form of ADPr in DNA damage signalling.
+Poly(ADP-ribose) polymerases (PARPs) are a family of enzymes that synthesise ADP-ribosylation (ADPr), a reversible modification of proteins that regulates many different cellular processes. Several mammalian PARPs are known to regulate the DNA damage response, but it is not clear which amino acids in proteins are the primary ADPr targets. Previously, we reported that ARH3 reverses the newly discovered type of ADPr (ADPr on serine residues; Ser-ADPr) and developed tools to analyse this modification (Fontana et al., 2017). Here, we show that Ser-ADPr represents the major fraction of ADPr synthesised after DNA damage in mammalian cells and that globally Ser-ADPr is dependent on HPF1, PARP1 and ARH3. In the absence of HPF1, glutamate/aspartate becomes the main target residues for ADPr. Furthermore, we describe a method for site-specific validation of serine ADP-ribosylated substrates in cells. Our study establishes serine as the primary form of ADPr in DNA damage signalling.
 
 ## Introduction
 
@@ -70,30 +70,278 @@ In conclusion, the discovery of Ser-ADPr as well as the recent discoveries of re
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96, RRID:CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>U2OS ARH3 KO</td>
+      <td>Fontana et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>U2OS HPF1 KO</td>
+      <td>Gibbs-Seymour et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>U2OS PARP1 KO</td>
+      <td>Gibbs-Seymour et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HEK293 HPF1 KO</td>
+      <td>Gibbs-Seymour et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PAR (rabbit polyclonal)</td>
+      <td>Trevigen (Gaithersburg, MD, US)</td>
+      <td>4336-BPC-100, RRID:AB_2721257</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-pan-ADP-ribose (rabbit monoclonal)</td>
+      <td>Millipore (Billerica, MA, US﻿)</td>
+      <td>MABE1016, RRID:AB_2665466</td>
+      <td>WB 1:1500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mono-ADP-ribose (rabbit monoclonal)</td>
+      <td>Millipore (Billerica, MA, US﻿)</td>
+      <td>MABE1076, RRID:AB_2665469</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PARP1 [E102] (rabbit monoclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>ab32138, RRID:AB_777101</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-histone H3, CT, pan (rabbit polyclonal)</td>
+      <td>Millipore (Billerica, MA, US﻿)</td>
+      <td>07–690, RRID:AB_417398</td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-ARH3/ADPRH (rabbit</td>
+      <td>Atlas Antibodies (Stockholm, Sweden)</td>
+      <td>HPA027104, RRID:AB_10601330</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HPF1 (rabbit polyclonal)</td>
+      <td>Gibbs-Seymour et al. (2016)</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Flag HRP-conjugated (mouse monoclonal)</td>
+      <td>Sigma-Aldrich (St. Louis, MO, US)</td>
+      <td>A8592, RRID:AB_439702</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Flag M2 agarose-conjugated (mouse monoclonal)</td>
+      <td>Sigma-Aldrich (St. Louis, MO, US)</td>
+      <td>A2220, RRID:AB_10063035</td>
+      <td>IP</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pDONR221 (Gateway vector)</td>
+      <td>Thermo Fisher Scientific (Waltham, MA, US)</td>
+      <td>12536017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pDEST C3X (Gateway vector)</td>
+      <td>other</td>
+      <td></td>
+      <td>Laboratory of Fumiko Esashi</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-H2B wt (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Progentiors: pDONR221-H2B; Gateway vector:pDEST C3X</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-H3.1 wt (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Progentiors: pDONR221-H3.1; Gateway vector:pDEST C3X</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-H2B S6A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from Flag-H2B wt by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-H3.1 S10A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from Flag-H3.1 wt by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-H3.1 S28A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from Flag-H3.1 wt by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-H3.1 S10A S28A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made from Flag-H3.1 S10A by site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Human PARP1</td>
+      <td>Trevigen (Gaithersburg, MD, US)</td>
+      <td>4668–02 K-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Human PARP1 E988Q</td>
+      <td>Fontana et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Human HPF1</td>
+      <td>Gibbs-Seymour et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Human histone H3 fragment (1-21) wt</td>
+      <td>Bonfiglio et al., 2017a</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Human histone H3 fragment (1-21) S10A</td>
+      <td>Bonfiglio et al., 2017a</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Olaparib</td>
+      <td>Cayman Chemical (Ann Arbor, MI)</td>
+      <td>10621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>ADP-HPD, dihydrate, ammonium salt</td>
+      <td>Calbiochem (La Jolla, CA)</td>
+      <td>118415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Hydrogen peroxide</td>
+      <td>Sigma-Aldrich (St. Louis, MO, US)</td>
+      <td>H1009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Methyl methanesulfonate</td>
+      <td>Sigma-Aldrich (St. Louis, MO, US)</td>
+      <td>129925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Hydroxilamine</td>
+      <td>Sigma-Aldrich (St. Louis, MO, US)</td>
+      <td>438227</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies
 
 Anti-PAR polyclonal antibody (4336-BPC-100, RRID:AB_2721257; rabbit) was purchased from Trevigen (Gaithersburg, MD﻿, ﻿U﻿S﻿) and used at 1:1000 dilutions. Monoclonal anti-pan-ADPr (MABE1016, RRID:AB_2665466), monoclonal anti-mono-ADPr (MABE1076, RRID:AB_2665469) and polyclonal anti-histone H3 (07–690, RRID:AB_417398) rabbit antibodies were purchased from Millipore (Billerica, MA, US﻿) and used at 1:1500, 1:1000 and 1:2000 dilutions, respectively. Rabbit polyclonal anti-ARH3/ADPRHL2 (HPA027104, RRID:AB_10601330) was purchased from Atlas Antibodies (Stockholm, Sweden) and used at 1:1000 dilution. Rabbit monoclonal anti-PARP1 (ab32138, RRID:AB_777101) was purchased from Abcam (Cambridge, UK) and used at 1:1000 dilution. Custom-made rabbit polyclonal HPF1 antibody was used as described (1:1000) (Gibbs-Seymour et al., 2016). Anti-Flag M2 agarose affinity gel (A2220, RRID:AB_10063035) and anti-Flag HRP-conjugated (A8592, RRID:AB_439702; used at 1:5000 dilution) mouse monoclonal antibodies were purchased from Sigma-Aldrich (St. Louis, MO, US). Immunoblots were performed as previously described (Fontana et al., 2017).
 
-## Cell lines
+### Cell lines
 
 Human U2OS osteosarcoma (ATCC HTB-96, RRID:CVCL_0042) and HEK293 (ATCC CRL-3216, RRID:CVCL_0063) cells were acquired from ATCC, identity was confirmed by STR profiling, and absence of mycoplasma contamination confirmed by MycoAlert Mycoplasma Detection Kit. Cells were cultured as previously described (Fontana et al., 2017). Generation of KO cell lines was previously described (Gibbs-Seymour et al., 2016; Fontana et al., 2017).
 
-## Plasmid constructs
+### Plasmid constructs
 
 Full-length human histones H2B and H3.1 cDNA were cloned into the pDONR221 vector (Thermo Fisher Scientific; Waltham, MA, US). Ser to Ala point mutations were produced in pDONR221-H2B and pDONR-H3.1 by site directed mutagenesis. Mammalian expression constructs expressed H2B and H3.1 proteins with the C-terminal 3xFlag tag.
 
-## Transfection
+### Transfection
 
 Transient DNA transfections in HEK293 cells were performed with Polyfect (QIAGEN; Venlo, Netherlands) for 24 hr.
 
-## Induction of DNA damage, preparation of cell extracts
+### Induction of DNA damage, preparation of cell extracts
 
 For MMS treatment, cells were damaged with 2 mM MMS (Sigma-Aldrich; St. Louis, MO, US) for 1 hr. In case of H2O2, cells were damaged with 2 mM H2O2 (Sigma-Aldrich; St. Louis, MO, US) for 10 min. Cells were lysed as previously described (Fontana et al., 2017) in the following buffer: 50 mM Tris-HCl pH 8.0, 100 mM NaCl, and 1% Triton X-100. Immediately before lysing the cells, the lysis buffer was supplemented with 5 mM MgCl2, 1 mM DTT, proteases and phosphatases inhibitors (Roche; Basel, Switzerland), 1 μM ADP-HPD (Calbiochem, La Jolla, CA), and 1 μM Olaparib (Cayman Chemical, Ann Arbor, MI). After the cell pellet was resuspended in the supplemented lysis buffer, Benzonase (Sigma-Aldrich; St. Louis, MO, US) was added (Fontana et al., 2017).
 
-## Hydroxylamine experiments
+### Hydroxylamine experiments
 
 Cell pellets were resuspended in SDS lysis buffer (10 mM HEPES pH 8.0, 2 mM MgCl2, 1% SDS, 250 U Universal Nuclease (Pierce; Waltham, MA, US), 1 x protease inhibitor (Roche; Basel, Switzerland) and briefly sonicated. BCA assay (Pierce; Waltham, MA, US) was used to determine the protein concentration. 30 µg damaged or 50 µg non-damaged cell were treated with 1 M NH2OH (hydroxylamine; Sigma-Aldrich; St. Louis, MO, US) for 3 hr at room temperature or left untreated. After the treatment, extracts were neutralized with 0.3% HCl and mixed with 4x SDS Loading buffer (Invitrogen; Calrsbad, CA, US) containing 100 mM DTT, followed by immunoblotting as described above.
 
-## In vitro ADP-ribosylation and detection by autoradiography
+### In vitro ADP-ribosylation and detection by autoradiography
 
 In vitro ADP-ribosylation reactions were performed as previously described (Bonfiglio et al., 2017a; Palazzo et al., 2017b). Reactions were stopped by Olaparib (2 μM final concentration) and then incubated with or without 1 M NH2OH for 3 hr before being detected by autoradiography. The molarity of HPF1 proteins used in the reactions were 1 μM, PARP1 was 0.1 μM and PARP1 E988Q 4 μM. The synthetic H3 peptide substrates were 3 μg per condition.

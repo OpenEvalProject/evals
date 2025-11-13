@@ -33,15 +33,220 @@ Breathing behaviors and OIRD severity differ between strains of mice (Bubier et 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62552/elife-62552-fig1-v3.jpg)
 
-**Figure 1.:** Arrb2 genotype.(A) Breeding scheme to generate F2 Arrb2+/+, +/-, and -/- littermates. (B), Whole body plethysmography experimental scheme. On Day 1, recordings were performed 15 min after IP saline injection. Day 2, recordings 15 min after IP morphine (20 mg/kg). Recordings were first conducted under normoxic conditions (21% O2, 0% CO2) and then at least one week later under hypercapnic conditions (21% O2, 5% CO2). (C), Example analysis of a single breath. The approximated airflow (mL/s) was used to identify inspiration (insp. <0 mL/s) and expiration (expir. >0 mL/s). Instantaneous frequency (Hz, s–1) defined as the interval between inspiration onset and expiration offset. PIF, peak inspiratory airflow. These two parameters were used to define OIRD.
+**Figure 1.:** (A) Breeding scheme to generate F2 Arrb2+/+, +/-, and -/- littermates. (B), Whole body plethysmography experimental scheme. On Day 1, recordings were performed 15 min after IP saline injection. Day 2, recordings 15 min after IP morphine (20 mg/kg). Recordings were first conducted under normoxic conditions (21% O2, 0% CO2) and then at least one week later under hypercapnic conditions (21% O2, 5% CO2). (C), Example analysis of a single breath. The approximated airflow (mL/s) was used to identify inspiration (insp. <0 mL/s) and expiration (expir. >0 mL/s). Instantaneous frequency (Hz, s–1) defined as the interval between inspiration onset and expiration offset. PIF, peak inspiratory airflow. These two parameters were used to define OIRD.
 
 In the normoxic condition, the morphology of single breaths, respiratory rate, and peak inspiratory airflow after IP saline appeared similar in Abbr2+/+ and -/- mice (Figure 2A–B, Table 1 contains mean ± SEM and 95% CI). As expected for OIRD, IP morphine decreased the frequency and PIF, but the breathing characteristics remained indistinguishable in Abbr2+/+ versus -/- mice (Figure 2A–B, Table 1). Consistently, histograms of the instantaneous frequency and PIF for each breath after IP morphine showed overlapping distributions from Arrb2+/+ (combined from n = 5 mice), +/- (n = 6), and -/- (n = 7) animals (Figure 2C,E). We quantified OIRD as the ratio of the average instantaneous frequency or PIF after IP morphine normalized to IP saline. As expected from the raw data, OIRD was similar among the genotypes (rate decreased 60% and PIF by 40%, Figure 2D and F, Table 2 contains 95% CI for each mean and the comparisons). In fact, there was a small attenuation of respiratory rate depression in Arrb2+/+ compared to Arrb2-/- and +/- mice, inconsistent with the hypothesis that Arrb2 mutation attenuates OIRD. These data lead us to conclude that OIRD in normoxic conditions is not diminished in Arrb2-/- mice.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62552/elife-62552-fig2-v3.jpg)
 
-**Figure 2.:** Arrb2 littermates in normoxic conditions.(A) Example breathing trace in normoxic conditions (21% O2, 0% CO2) following IP saline (left) and morphine (right) for Arrb2+/+. (B), Example breathing traces from Arrb2-/-. (C), Histogram of instantaneous respiratory frequency (Hz) for all breaths in morphine from Arrb2-/- (red, combined from n = 7 animals), Arrb2+/- (blue, n = 6), and Arrb2+/+ (black, n = 5). PDF, probability density function. Top, mean (circle)± standard deviation (bars). Values of respiratory measurements are reported in Table 1. (D), OIRD defined as the ratio of average respiratory frequency in morphine to saline for Arrb2-/-, Arrb2+/-, and Arrb2+/+. Mean (circle)± standard deviation (bars). Data values included in Table 2. Note, Arrb2+/+ mice have less OIRD when compared to Arrb2+/- and -/-. (E–F), Analysis of peak inspiratory airflow (PIF) displayed as in C–D. Note, PIF in Arrb2±mice shows more OIRD when compared to Arrb2+/+ and -/-. There is no statistically significant difference between Arrb2+/+ and -/-. Single and Two Factor ANOVA and unpaired t-test statistics reported in Table 2. *, indicates the post-hoc single factor ANOVA comparisons with p-value < 0.05. Statistics were not corrected for multiple comparisons to maximize the possibility of identifying differences between Arrb2 genotypes.Figure 2—source data 1.This source data corresponds to Figure 2 and Table 1 and Table 2.
+**Figure 2.:** (A) Example breathing trace in normoxic conditions (21% O2, 0% CO2) following IP saline (left) and morphine (right) for Arrb2+/+. (B), Example breathing traces from Arrb2-/-. (C), Histogram of instantaneous respiratory frequency (Hz) for all breaths in morphine from Arrb2-/- (red, combined from n = 7 animals), Arrb2+/- (blue, n = 6), and Arrb2+/+ (black, n = 5). PDF, probability density function. Top, mean (circle)± standard deviation (bars). Values of respiratory measurements are reported in Table 1. (D), OIRD defined as the ratio of average respiratory frequency in morphine to saline for Arrb2-/-, Arrb2+/-, and Arrb2+/+. Mean (circle)± standard deviation (bars). Data values included in Table 2. Note, Arrb2+/+ mice have less OIRD when compared to Arrb2+/- and -/-. (E–F), Analysis of peak inspiratory airflow (PIF) displayed as in C–D. Note, PIF in Arrb2±mice shows more OIRD when compared to Arrb2+/+ and -/-. There is no statistically significant difference between Arrb2+/+ and -/-. Single and Two Factor ANOVA and unpaired t-test statistics reported in Table 2. *, indicates the post-hoc single factor ANOVA comparisons with p-value < 0.05. Statistics were not corrected for multiple comparisons to maximize the possibility of identifying differences between Arrb2 genotypes.
+
+**Table 1.**
+ Mean and confidence interval for normoxic condition raw respiratory frequency and peak inspiratory airflow after saline and morphine intraperitoneal injection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Arrb2 -/- mean ± SEM</th>
+      <th>Arrb2 -/-95% CI</th>
+      <th>Arrb2+/- mean ± SEM</th>
+      <th>Arrb2 +/-95% CI</th>
+      <th>Arrb2 +/+ mean ± SEM</th>
+      <th>Arrb2 +/+95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Freq. saline (Hz)</td>
+      <td>7.05 ± 0.34</td>
+      <td>6.38 → 7.72</td>
+      <td>7.51 ± 0.41</td>
+      <td>6.71 → 8.31</td>
+      <td>6.93 ± 0.32</td>
+      <td>6.30 → 7.56</td>
+    </tr>
+    <tr>
+      <td>Freq. morphine</td>
+      <td>2.67 ± 0.16</td>
+      <td>2.36 → 2.98</td>
+      <td>2.83 ± 0.14</td>
+      <td>2.56 → 3.10</td>
+      <td>3.27 ± 0.16</td>
+      <td>2.96 → 3.58</td>
+    </tr>
+    <tr>
+      <td>PIF saline(mL/s)</td>
+      <td>–3.17 ± 0.15</td>
+      <td>–2.88 → –3.46</td>
+      <td>–4.03 ± 0.25</td>
+      <td>–3.54 → –4.52</td>
+      <td>–3.5 ± 0.23</td>
+      <td>–3.04 → –3.95</td>
+    </tr>
+    <tr>
+      <td>PIF morphine</td>
+      <td>–2.09 ± 0.09</td>
+      <td>–1.91 → –2.23</td>
+      <td>–2.19 ± 0.10</td>
+      <td>–1.99 → –2.39</td>
+      <td>–2.33 ± 0.10</td>
+      <td>–2.13 → –2.53</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ OIRD values of respiratory frequency and peak inspiratory airflow in normoxic conditions and the several types of statistical tests.The respiratory frequency OIRD in Arrb2+/+ is larger than Arrb2+/- and -/-. The PIF OIRD for Arrb2+/- is smaller than Arrb2+/+ and -/-.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Arrb2 -/-OIRD mean (95% CI)</th>
+      <th>Arrb2+/- mean (95% CI)</th>
+      <th>Arrb2 +/+ mean (95% CI)</th>
+      <th>Arrb2 -/- vs. Arrb2 +/+ (t-test)</th>
+      <th>Arrb2 -/- vs. Arrb2 +/+(t-test 95% CI)</th>
+      <th>One-way anova</th>
+      <th>Tukey HSD/Kramer Arrb2 -/- vs. +/+</th>
+      <th>Two-way anova regression(interaction)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Freq.</td>
+      <td>0.38 (0.35→0.41)</td>
+      <td>0.38 (0.35→0.41)</td>
+      <td>0.47 (0.44→0.50)</td>
+      <td>P = 0.001</td>
+      <td>0.05→0.14</td>
+      <td>0.002</td>
+      <td>0.003</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>PIF</td>
+      <td>0.66 (0.61→0.71)</td>
+      <td>0.55 (0.48→0.56)</td>
+      <td>0.68 (0.63→0.71)</td>
+      <td>P = 0.83</td>
+      <td>–0.13→0.16</td>
+      <td>0.03</td>
+      <td>0.96</td>
+      <td>0.05</td>
+    </tr>
+  </tbody>
+</table>
 
 These same breathing assays and analysis were also performed in a hypercapnic state. Hypercapnia eliminates any changes in breathing rate and depth that are simply due to variation in behavioral state, like sniffing versus calm sitting. Thus, although breathing when hypercapnic is faster and deeper (like in Figure 3A, Table 3), the reduced variability minimizes any chance that the conclusions in the normoxic condition are due to additional effects of opioids on behaviors such as sedation and locomotion, or non-opioid-related differences in arousal. Importantly, OIRD is still robustly observed in the hypercapnic state (Figure 3A, Table 4). As anticipated, the opioid depression of instantaneous frequency (by ~30%) and PIF (by ~30%) were the same among all three genotypes (Figure 3C–F, Table 4). Therefore, OIRD is not diminished in Arrb2-deficient mice in two independent breathing assays.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62552/elife-62552-fig3-v3.jpg)
+
+**Figure 3.:** (A) Example breathing trace in hypercapnic conditions (21% O2, 5% CO2) following IP saline (left) and morphine (right) for Arrb2+/+. (B), Example breathing traces from Arrb2-/-. (C), Histogram of instantaneous respiratory frequency (Hz) for all breaths in morphine from Arrb2-/- (red, combined from n = 7 animals), Arrb2+/- (blue, n = 6), and Arrb2+/+ (black, n = 5). PDF, probability density function. Top, mean (circle)± standard deviation (bars). Respiratory measurements for saline and morphine are reported in Table 3. (D), OIRD defined as the ratio of average respiratory frequency in morphine to saline for Arrb2-/-, Arrb2+/-, and Arrb2+/+. Mean (circle)± standard deviation (bars). Data included in Table 4. (E–F), Analysis of peak inspiratory airflow (PIF) as in C–D. but for peak inspiratory airflow. Single and Two Factor ANOVA and unpaired t-test statistics reported in Table 4. Statistics were not corrected for multiple comparisons to maximize the possibility of identifying differences between Arrb2 genotypes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62552/elife-62552-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** A power analysis was conducted with the hypothetical mean frequency and peak inspiratory airflow (PIF) of Arrb2+/+ compared to the measured mean from Arrb2-/-. The power analysis used the cohort size and measured standard deviation of Arrb2+/+ and -/-. Displayed is the percent difference in OIRD between Arrb2-/- and +/+ (y-axis) at each power (x-axis). Respiratory frequency (Freq, black). Peak inspiratory airflow (PIF, red). Right, Normoxic condition. Left, Hypercapnic condition. Gray dashed line, power of 0.8.
+
+**Table 3.**
+ Mean and confidence interval for hypercapnic condition raw respiratory frequency and peak inspiratory airflow after saline and morphine intraperitoneal injection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Arrb2 -/- mean ± SEM</th>
+      <th>Arrb2 -/-95% CI</th>
+      <th>Arrb2+/- mean ± SEM</th>
+      <th>Arrb2 +/-95% CI</th>
+      <th>Arrb2 +/+ mean ± SEM</th>
+      <th>Arrb2 +/+95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Freq. saline (Hz)</td>
+      <td>7.68 ± 0.19</td>
+      <td>7.31 → 8.05</td>
+      <td>7.69 ± 0.16</td>
+      <td>7.38 → 8.00</td>
+      <td>7.77 ± 0.39</td>
+      <td>7.01 → 8.53</td>
+    </tr>
+    <tr>
+      <td>Freq. morphine</td>
+      <td>5.20 ± 0.10</td>
+      <td>5.00 → 5.40</td>
+      <td>4.79 ± 0.19</td>
+      <td>4.42 → 5.16</td>
+      <td>5.38 ± 0.18</td>
+      <td>5.02 → 5.73</td>
+    </tr>
+    <tr>
+      <td>PIF saline (mL/s)</td>
+      <td>–5.34 ± 0.27</td>
+      <td>–4.81 → –5.87</td>
+      <td>–5.75 ± 0.25</td>
+      <td>–5.26 → –6.24</td>
+      <td>–5.71 ± 0.20</td>
+      <td>–5.32 → –6.10</td>
+    </tr>
+    <tr>
+      <td>PIF morphine</td>
+      <td>–3.54 ± 0.16</td>
+      <td>–3.22 → –3.85</td>
+      <td>–3.86 ± 0.15</td>
+      <td>–3.57 → –4.15</td>
+      <td>–3.93 ± 0.24</td>
+      <td>–3.46 → –4.40</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ OIRD values of respiratory frequency and peak inspiratory airflow in hypercapnic conditions and the several types of statistical tests.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Arrb2 -/-OIRD median or mean (95% CI)</th>
+      <th>Arrb2+/- mean (95% CI)</th>
+      <th>Arrb2 +/+ mean (95% CI)</th>
+      <th>Arrb2 -/- vs. Arrb2 +/+ (Mann-Whitney or unpaired t-test, two tail)</th>
+      <th>Arrb2 -/- vs. Arrb2 +/+(95% CI)</th>
+      <th>Kruskal-Wallis orOne-way anova</th>
+      <th>Two-way Anova - regression(interaction)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Freq.</td>
+      <td>0.66</td>
+      <td>0.63 (0.55→0.71)</td>
+      <td>0.70 (0.60→0.80)</td>
+      <td>P = 0.52 (MW)</td>
+      <td>–0.11→0.15</td>
+      <td>0.16 (KW)</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>PIF</td>
+      <td>0.66 (0.64→0.68)</td>
+      <td>0.68 (0.61→0.77)</td>
+      <td>0.69 (0.64→0.72)</td>
+      <td>P = 0.46 (t)</td>
+      <td>–0.04→0.08</td>
+      <td>0.86 (anova)</td>
+      <td>0.96</td>
+    </tr>
+  </tbody>
+</table>
 
 To understand the confidence of these results, we determined the extent that Arrb2+/+ breathing parameters must be depressed (compared to Arrb2-/-) in order to produce a significant test statistic more than 80 % of the time, that is, power analysis. Given our cohort sizes and the observed variation in breathing parameters from Arrb2+/+ and -/- littermates, we plotted the relationship between power (0–1) and percent difference between the Arrb2-/- and hypothetical Arrb2+/+ means (see methods). When comparing the Arrb2-/- measured and Arrb2+/+ hypothetical means, we could confidently distinguish these mean breathing frequencies so long as they differed by at least ~12–20%, and mean PIFs by more than ~10%–22% (Figure 3—figure supplement 1). Thus, our experimental approach enabled us to only detect mild to large differences in OIRD between Arrb2+/+ and -/- littermates, if they had occurred. It remains possible that a small effect, much smaller than previously reported, was not identified in our study.
 
@@ -49,7 +254,7 @@ The most important site for OIRD is the preBötC (Bachmutsky et al., 2020). So, 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62552/elife-62552-fig4-v3.jpg)
 
-**Figure 4.:** Arrb2 littermates.A, Neonatal medullary preBötC slice preparation. PreBötC inspiratory activity is measured via the hypoglossal nerve rootlet (∫CNXII, arbitrary units). Example twenty minute recordings from an Arrb2+/+ slice where the rhythm is recorded at baseline (0 nM DAMGO), then 20 nM and 50 nM DAMGO, and then with the addition of 100 nM Naloxone. (B), As in A, but example recording from an Arrb2-/- littermate. (C), The preBötC frequency (Hz) for each slice from Arrb2+/+ (black, n = 5), +/- (blue, n = 20), and -/- (red, n = 6) littermates at each DAMGO dose. Average frequency (bursts per second) is measured during the last five minutes of each recording. (D), Mean ± SEM for normalized frequency for each genotype at each DAMGO dose. *, p-value < 0.05 for Kruskal-Wallis test. p-Values for pairwise Mann-Whitney: 0.10 for +/+ vs -/-, 0.45 for +/+ vs +/-, 0.02 for±vs -/-.Figure 4—source data 1.The data contains raw and normalized data and corresponding statistical tests for each Arrb2 genotype.
+**Figure 4.:** A, Neonatal medullary preBötC slice preparation. PreBötC inspiratory activity is measured via the hypoglossal nerve rootlet (∫CNXII, arbitrary units). Example twenty minute recordings from an Arrb2+/+ slice where the rhythm is recorded at baseline (0 nM DAMGO), then 20 nM and 50 nM DAMGO, and then with the addition of 100 nM Naloxone. (B), As in A, but example recording from an Arrb2-/- littermate. (C), The preBötC frequency (Hz) for each slice from Arrb2+/+ (black, n = 5), +/- (blue, n = 20), and -/- (red, n = 6) littermates at each DAMGO dose. Average frequency (bursts per second) is measured during the last five minutes of each recording. (D), Mean ± SEM for normalized frequency for each genotype at each DAMGO dose. *, p-value < 0.05 for Kruskal-Wallis test. p-Values for pairwise Mann-Whitney: 0.10 for +/+ vs -/-, 0.45 for +/+ vs +/-, 0.02 for±vs -/-.
 
 ## Discussion
 
@@ -63,18 +268,77 @@ The core premise for the development of MOR biased agonists is that Arrb2-depend
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>Arrb2-/-</td>
+      <td>The Jackson Laboratory</td>
+      <td>011130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>C57Bl/6 J</td>
+      <td>The Jackson Laboratory</td>
+      <td>000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DAMGO</td>
+      <td>Abcam</td>
+      <td>Ab12067</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Morphine sulfate</td>
+      <td>Henry Schein</td>
+      <td>057202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Naloxone</td>
+      <td>Sigma Aldrich</td>
+      <td>N7758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td>https://github.com/YackleLab/Opioids-depress-breathing-through-two-small-brainstem-sites</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Arrb2 -/- mice (Bohn et al., 1999) were bred to C57BL/6 to generate heterozygous F1. The F1 littermates were then crossed to make Arrb2-/-, Arrb2-/+, and Arrb2+/+ (F2). Mice were housed in a 12 hour light/dark cycle with unrestricted food and water. Mice were given anonymized identities for experimentation and data collection. All animal experiments were performed in accordance with national and institutional guidelines with standard precautions to minimize animal stress and the number of animals used in each experiment. Institutional Animal Care and Use Committee approval number AN181239.
 
-## Plethysmography and respiratory analysis
+### Plethysmography and respiratory analysis
 
 Plethysmography and respiratory analysis were performed as in Bachmutsky et al., 2020. Briefly, on the first recording day, adult (6–12 weeks) Arrb2-/-, Arrb2-/+, and Arrb2+/+ mice were administered IP 100 µL of saline and placed in an isolated recovery cage for 15 min. After, individual mice were then monitored in a 450 mL whole animal plethysmography chamber at room temperature (22°C) in 21% O2 balanced with N2 (normoxic condition) or 21% O2, 5% CO2 balanced with N2 (hypercapnic condition). After 1 day, the same protocol was used to monitor breathing after IP injection of morphine (20 mg/kg, Henry Schein 057202). The morphine recordings under normoxic and hypercapnic conditions were separated from saline recordings by at least 3 days. Each breath was automatically segmented based on airflow crossing zero as well as quality control metrics. Respiratory parameters (e.g. peak inspiratory flow, instantaneous frequency) for each breath, as well as averages, were then calculated. Reported airflow in mL/sec. is an approximate of true volumes. The analysis was performed with custom Matlab code available on Github with a sample dataset (https://github.com/YackleLab/Opioids-depress-breathing-through-two-small-brainstem-sites). All animals in the study were included in the analysis and cohorts including all these genotypes were run together.
 
-## Statistics
+### Statistics
 
 A power analysis was performed using the reported effect size from Raehal et al. In this case, 1–4 mice were necessary to observe a statistically significant result. Each cohort (Arrb2+/+, +/-, -/-) exceeded 4. Statistical tests were performed on the ratio of IP morphine to IP saline for instantaneous respiratory frequency and peak inspiratory flow separately for normoxic and hypercapnic conditions. A Shapiro Wilks test was first done to determine if the data was normally distributed (Figure 2—source data 1, Figure 3—source data 1). If normal, a single factor ANOVA was performed to determine any differences among the three genotypes (alpha <0.05). In the instance the p-value was <0.05, the Tukey HSD post-hoc test was done to determine which of the pairwise comparisons were statistically different (alpha <0.05). Additionally, one-way unpaired parametric T-tests were used to compare Arrb2 +/+ and -/- genotypes (alpha <0.05). If the data failed to pass the Shapiro Wilks test, then the non-parametric Kruskal-Wallis test was used to determine if any differences (alpha <0.05). And the Mann-Whitney U test was used to compare Arrb2+/+ and -/- genotypes (alpha <0.05). A two-way ANOVA with regression was used to determine interactions between each of the genotypes IP saline and IP morphine values. To determine the power of our data, we compared hypothetical Arrb2+/+ and measured Arrb2-/- means. The power calculation included our cohort size and the measured standard deviation of the two genotypes. A similar statistical approach was used to analyze the in vitro data (Figure 4—source data 1). All the above statistics were performed using the publicly available Excel package ‘Real Statistics Functions’ SPSS and Matlab.
 
-## Slice electrophysiology
+### Slice electrophysiology
 
 Rhythmic 550–650 μm-thick transverse medullary slices which contain the preBötC and cranial nerve XII (XIIn) from neonatal Arrb2 -/-, +/-, +/+ mice (P0-5) were prepared as described (Bachmutsky et al., 2020). Slices were cut in ACSF containing (in mM): 124 NaCl, 3 KCl, 1.5 CaCl2, 1 MgSO4, 25 NaHCO3, 0.5 NaH2PO4, and 30 D-glucose, equilibrated with 95% O2 and 5% CO2 (4 °C, pH = 7.4). Recordings were performed in 9 mM at a temperature of 27°C. Slices equilibrated for 20 min before experiments were started. The preBötC neural activity was recorded from CNXII rootlet. Activity was recorded with a MultiClamp700A or B using pClamp9 at 10,000 Hz and low/high pass filtered at 3/400 Hz. After equilibration, baseline activity and then increasing concentrations of DAMGO (ab120674) were bath applied (20 nM, 50 nM). After the rhythm was eliminated, 100 nM Naloxone (Sigma Aldrich N7758) was bath applied to demonstrate slice viability. The rate was determined from the last 5 min of each 20-min recording and rhythmic activity was normalized to the first control recording for dose response curves.

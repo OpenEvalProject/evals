@@ -19,13 +19,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0030f2a11 Institut für Klinische Mikrobiologie, Immunologie und Hygiene, Universitätsklinikum Erlangen, Friedrich-Alexander Universität Erlangen-Nürnberg Erlangen Germany
-2. https://ror.org/02kkvpp62 Institut für Medizinische Mikrobiologie, Immunologie und Hygiene, Center for Global Health, Technische Universität München Munich Germany
-3. https://ror.org/02kkvpp62 Center for Global Health, Technical University Munich Munich Germany
-4. https://ror.org/0030f2a11 Infektionsbiologische Abteilung, Universitätsklinikum Erlangen, Friedrich-Alexander Universität Erlangen-Nürnberg Erlangen Germany
-5. https://ror.org/0417ye583 Adjuvant Research, Department of Infectious Disease Immunology, Statens Serum Institut Copenhagen Denmark
+1. Institut für Klinische Mikrobiologie, Immunologie und Hygiene, Universitätsklinikum Erlangen, Friedrich-Alexander Universität Erlangen-Nürnberg Erlangen Germany ([ROR:0030f2a11](https://ror.org/0030f2a11))
+2. Institut für Medizinische Mikrobiologie, Immunologie und Hygiene, Center for Global Health, Technische Universität München Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+3. Center for Global Health, Technical University Munich Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+4. Infektionsbiologische Abteilung, Universitätsklinikum Erlangen, Friedrich-Alexander Universität Erlangen-Nürnberg Erlangen Germany ([ROR:0030f2a11](https://ror.org/0030f2a11))
+5. Adjuvant Research, Department of Infectious Disease Immunology, Statens Serum Institut Copenhagen Denmark ([ROR:0417ye583](https://ror.org/0417ye583))
 6. Cellular Microbiology, Forschungszentrum Borstel, Leibniz Lung Center Borstel Borstel Germany
-7. https://ror.org/0030f2a11 Medizinische Klinik 1, Universitätsklinikum Erlangen, Friedrich-Alexander Universität Erlangen-Nürnberg Erlangen Germany
+7. Medizinische Klinik 1, Universitätsklinikum Erlangen, Friedrich-Alexander Universität Erlangen-Nürnberg Erlangen Germany ([ROR:0030f2a11](https://ror.org/0030f2a11))
 
 † Corresponding author
 
@@ -49,35 +49,35 @@ Here, we have investigated the functional impact of IL-4 and helminth infection 
 
 ## Results
 
-## IL-4 impairs upregulation of MINCLE and other DECTIN-2 family CLR in macrophages stimulated with BCG
+### IL-4 impairs upregulation of MINCLE and other DECTIN-2 family CLR in macrophages stimulated with BCG
 
 In previous work, we observed that IL-4 and IL-13 downregulate expression of MINCLE, MCL, and DECTIN-2 when macrophages were stimulated with the MINCLE ligand TDB, but not after triggering TLR4 with LPS (Hupfer et al., 2016). Since mycobacteria contain multiple ligands for CLR and TLR, we were interested whether IL-4 has any impact on changes in DECTIN-2 family CLR expression in macrophages stimulated with M. bovis BCG (Figure 1). Stimulation of bone marrow-derived macrophages (BMM) with BCG caused the strongest induction of MINCLE (up to 400-fold after 48 hr) and was reduced significantly by IL-4 (Figure 1A). A similar pattern of inducibility and regulation by IL-4 was observed for DECTIN-2 and MCL, albeit the increases at the mRNA level were more moderate (e.g. 50-fold for DECTIN-2 and 8-fold for MCL after stimulation with BCG) (Figure 1B and C). IL-4 did not inhibit, but actually increased expression of DECTIN-1 (Figure 1D), confirming a selective impact on DECTIN-2 family CLR. The inhibitory effect of IL-4 on BCG-induced expression of MINCLE and DECTIN-2 was also evident at the protein level, when analysed by flow cytometry (Figure 1E and F). Regulation of MCL could not be validated at the protein level because no antibody for flow cytometry was available. DECTIN-1 surface protein levels were increased by IL-4 (Figure 1G) consistent with the quantitative real time PCR (qRT-PCR) data and previously published results (Willment et al., 2003).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/72923/elife-72923-fig1-v1.jpg)
 
-**Figure 1.:** (A–D) C57BL/6 bone marrow-derived macrophages (BMM) were stimulated as indicated in presence or absence of IL-4 for 6, 24, or 48 hr. BCG was used at MOI 10. MINCLE (A), DECTIN-2 (B), MCL (C), and DECTIN-1 (D) mRNA expression was determined by quantitative real-time PCR (qRT-PCR) shown as fold change calibrated to unstimulated control. Data are depicted as mean + SD from two independent experiments performed in biological duplicates. (E–G) BMM were stimulated with BCG at the indicated MOI in the presence or absence of IL-4 for 24 hr, followed by staining for MINCLE (E), DECTIN-2 (F), or DECTIN-1 (G) expression. Representative stainings are shown as histogram overlay (left panel), for quantification (right panel) the median fluorescence intensity of the isotype control staining was subtracted from the respective CLR signal to obtain the ΔMFI. Each point represents one mouse, pooled from at least two independent experiments. *p<0.05, **p<0.01, ***p<0.001 in Wilcoxon signed rank test.Figure 1—source data 1.Figure 1 (qRT-PCR and flow cytometry analysis of CLR in macrophages).
+**Figure 1.:** (A–D) C57BL/6 bone marrow-derived macrophages (BMM) were stimulated as indicated in presence or absence of IL-4 for 6, 24, or 48 hr. BCG was used at MOI 10. MINCLE (A), DECTIN-2 (B), MCL (C), and DECTIN-1 (D) mRNA expression was determined by quantitative real-time PCR (qRT-PCR) shown as fold change calibrated to unstimulated control. Data are depicted as mean + SD from two independent experiments performed in biological duplicates. (E–G) BMM were stimulated with BCG at the indicated MOI in the presence or absence of IL-4 for 24 hr, followed by staining for MINCLE (E), DECTIN-2 (F), or DECTIN-1 (G) expression. Representative stainings are shown as histogram overlay (left panel), for quantification (right panel) the median fluorescence intensity of the isotype control staining was subtracted from the respective CLR signal to obtain the ΔMFI. Each point represents one mouse, pooled from at least two independent experiments. *p<0.05, **p<0.01, ***p<0.001 in Wilcoxon signed rank test.
 
-## IL-4 does not affect phagocytosis of BCG, but inhibits cytokine production
+### IL-4 does not affect phagocytosis of BCG, but inhibits cytokine production
 
 Several CLR, including DECTIN-2 and MCL, are phagocytic receptors (Ifrim et al., 2014; Graham et al., 2012). Therefore, we next measured phagocytosis of fluorescent BCG (expressing DsRed) by flow cytometry in the presence or absence of IL-4 (Figure 2A). BMM infected with BCG-DsRed in different MOI dose-dependently ingested the mycobacteria, IL-4 had no impact on phagocytosis after 6 and 24 hr (Figure 2A). We next determined whether phagocytosis of BCG requires MINCLE or FcRγ, the common adapter protein of the CLR MINCLE, DECTIN-2, and MCL. Uptake of fluorescent BCG was comparable to WT cells in Clec4e-/- and Fcer1g-/- BMM (Figure 2B). In contrast, the high levels of the cytokines G-CSF and TNF in supernatants of BMM infected with BCG were significantly reduced by co-treatment with IL-4 (Figure 2B), extending our previous results for TDB (Hupfer et al., 2016) to the response induced by whole mycobacteria. Stimulation of BMM deficient in MINCLE or in the FcRγ chain with BCG led to a reduced production of TNF and G-CSF, confirming the contribution of this receptor to macrophage activation by mycobacteria (Ishikawa et al., 2009; Schoenen et al., 2010; Figure 2B). Of interest, the inhibitory effect of IL-4 was still visible in MINCLE-deficient BMM for G-CSF but not for TNF; in addition, it was much less pronounced than in WT BMM (Figure 2B), indicating that downregulation of MINCLE is a prominent mechanism of IL-4-induced impairment of macrophage cytokine production to mycobacteria. Reduced cytokine production in Clec4e-/- and Fcer1g-/- BMM was not due to a defect in the uptake of BCG (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/72923/elife-72923-fig2-v1.jpg)
 
-**Figure 2.:** (A) C57BL/6 bone marrow-derived macrophages (BMMs) were infected with different MOI of fluorescent BCG-Dsred co-treated with IL-4 or not as indicated. Phagocytic uptake was measured via flow cytometry. (A) Representative histograms show phagocytosis of BCG by detection of fluorescent DsRed signal in BMMs. Quantitative analysis of phagocytosis based on percentage of BCG-positive cells at 6 and 24 hr post infection. Data is depicted from two to three independent experiments performed in biological duplicates. (B) C57BL/6 (WT), MINCLE knockout (Clec4e), and FcRγ (-/-Fcer1g) BMM were stimulated with BCG for 24 hr. Production of G-CSF and TNF was measured from cell culture supernatants via ELISA. No significant cytokine production was detected from non-stimulated BMM. Data is depicted from three independent experiments performed in biological duplicates. (-/-C) Phagocytosis of fluorescent BCG is unaltered in BMM deficient in MINCLE (Clec4e) or FcRγ (-/-Fcer1g). Mean percentages of one representative experiment out of two (-/-Fcer1g) and three (-/-Clec4e) performed. *p<0.05, **p<0.01, ***p<0.001.-/-Figure 2—source data 1.Figure 2 (phagocytosis and cytokine production).
+**Figure 2.:** (A) C57BL/6 bone marrow-derived macrophages (BMMs) were infected with different MOI of fluorescent BCG-Dsred co-treated with IL-4 or not as indicated. Phagocytic uptake was measured via flow cytometry. (A) Representative histograms show phagocytosis of BCG by detection of fluorescent DsRed signal in BMMs. Quantitative analysis of phagocytosis based on percentage of BCG-positive cells at 6 and 24 hr post infection. Data is depicted from two to three independent experiments performed in biological duplicates. (B) C57BL/6 (WT), MINCLE knockout (Clec4e-/-), and FcRγ (Fcer1g-/-) BMM were stimulated with BCG for 24 hr. Production of G-CSF and TNF was measured from cell culture supernatants via ELISA. No significant cytokine production was detected from non-stimulated BMM. Data is depicted from three independent experiments performed in biological duplicates. (C) Phagocytosis of fluorescent BCG is unaltered in BMM deficient in MINCLE (Clec4e-/-) or FcRγ (Fcer1g-/-). Mean percentages of one representative experiment out of two (Fcer1g-/-) and three (Clec4e-/-) performed. *p<0.05, **p<0.01, ***p<0.001.
 
-## Overexpression of IL-4 inhibits MINCLE expression after intraperitoneal infection with BCG
+### Overexpression of IL-4 inhibits MINCLE expression after intraperitoneal infection with BCG
 
 Given the impact of IL-4 on BCG-induced MINCLE expression in vitro, we next used intraperitoneal infection of mice with BCG for analysis of MINCLE regulation by IL-4 in vivo. Hydrodynamic injection of minicircle DNA encoding IL-4 was used to overexpress IL-4 from hepatocytes in vivo (Suda and Liu, 2007). Serum levels of IL-4 after injection of 0.25 and 0.5 µg IL-4-encoding minicircle DNA ranged between 1 and 2 ng/ml, whereas IL-4 was not detectable in control mice (Figure 3A). Peritoneal lavage cells were obtained 24 hr after i.p. infection with 4×107 CFU BCG and MINCLE expression on Ly6Chi monocytes and Ly6G+ neutrophils was analysed by flow cytometry (Figure 3B, gating strategy). Compared to the PBS control mice, MINCLE cell surface expression increased after BCG infection in monocytes and in neutrophils, which was abrogated by IL-4 overexpression specifically in monocytes but not neutrophils (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/72923/elife-72923-fig3-v1.jpg)
 
-**Figure 3.:** Nippostrongylus brasiliensis impair MINCLE upregulation on peritoneal monocytes but does not reduce phagocytosis upon bacille Calmette-Guerin (BCG) infection.(A) IL-4 concentration in serum of mice injected with IL-4 minicircle. C57BL/6 mice were hydrodynamically injected with 0.25 or 0.5 µg of IL-4 plasmid (i.v.) or Ringer solution. Five days (0.5 µg) or 7 days later (0.25 µg) mice were sacrificed and serum IL-4 levels were determined via ELISA (n=5–6 mice per group). n.d.=not detectable. (B, C) 0.25 µg of IL-4 plasmid or Ringer solution was hydrodynamically injected into C57BL/6 wildtype mice. Two days later mice were infected i.p. with 40×106 CFU of Mycobacterium bovis BCG. (B) Generic gating strategy for flow cytometry data. Monocytes were characterized as lineage-CD11b+SiglecF-Ly6C+ cells. Neutrophils were characterized as lineage-CD11b+SiglecF-Ly6G+ cells. Lineage marker: CD3, CD19, NK1.1. (C) Histograms depict MINCLE surface expression on Ly6Chi monocytes and neutrophils 24 hr p.i. analysed via flow cytometry. Quantitative analysis of MINCLE surface expression shown as median fluorescence intensity (MFI). Fluorescence minus one control (FMO) was substracted. Infected MINCLE-/- mice were used as staining controls to exclude unspecific binding of 4A9 antibody. Data is depicted from two independent experiments (2–7 mice per group in total, each dot corresponding to one mouse). **p0.01; ns = not significant. (D–E) C57BL/6 mice were s.c. infected with N. brasiliensis or left uninfected followed by M. bovis BCG-Dsred infection (40×106 CFU/mouse) on day 10 p.i. Twenty-four hr later mice were sacrificed. (D) Representative histograms of eosinophil population of BCG-infected and N. brasiliensis co-infected mouse. Bar graphs show relative percentage of myeloid cell populations as indicated. (E) MINCLE surface expression was analysed on peritoneal Ly6Chi monocytes and neutrophils via flow cytometry. Quantitative analysis of MINCLE surface expression shown as MFI normalized to BCG-infected mice. FMO was substracted. Data is depicted from three independent experiments (11–13 mice per group in total). *p<0.05, ** p<0.01, ***p<0.001. (F) C57BL/6 mice were s.c. infected with N. brasiliensis followed by M. bovis BCG-Dsred infection (40×106 CFU/mouse) or non-fluorescent BCG (nf) on day 10 p.i. Twenty-four hr after BCG infection, phagocytosis was measured by detection of PE signal in monocytes or neutrophils. Quantitative analysis of the percentage of BCG-positive monocytes.Figure 3—source data 1.Figure 3 (cytokine and flow cytometry data).
+**Figure 3.:** (A) IL-4 concentration in serum of mice injected with IL-4 minicircle. C57BL/6 mice were hydrodynamically injected with 0.25 or 0.5 µg of IL-4 plasmid (i.v.) or Ringer solution. Five days (0.5 µg) or 7 days later (0.25 µg) mice were sacrificed and serum IL-4 levels were determined via ELISA (n=5–6 mice per group). n.d.=not detectable. (B, C) 0.25 µg of IL-4 plasmid or Ringer solution was hydrodynamically injected into C57BL/6 wildtype mice. Two days later mice were infected i.p. with 40×106 CFU of Mycobacterium bovis BCG. (B) Generic gating strategy for flow cytometry data. Monocytes were characterized as lineage-CD11b+SiglecF-Ly6C+ cells. Neutrophils were characterized as lineage-CD11b+SiglecF-Ly6G+ cells. Lineage marker: CD3, CD19, NK1.1. (C) Histograms depict MINCLE surface expression on Ly6Chi monocytes and neutrophils 24 hr p.i. analysed via flow cytometry. Quantitative analysis of MINCLE surface expression shown as median fluorescence intensity (MFI). Fluorescence minus one control (FMO) was substracted. Infected MINCLE-/- mice were used as staining controls to exclude unspecific binding of 4A9 antibody. Data is depicted from two independent experiments (2–7 mice per group in total, each dot corresponding to one mouse). **p0.01; ns = not significant. (D–E) C57BL/6 mice were s.c. infected with N. brasiliensis or left uninfected followed by M. bovis BCG-Dsred infection (40×106 CFU/mouse) on day 10 p.i. Twenty-four hr later mice were sacrificed. (D) Representative histograms of eosinophil population of BCG-infected and N. brasiliensis co-infected mouse. Bar graphs show relative percentage of myeloid cell populations as indicated. (E) MINCLE surface expression was analysed on peritoneal Ly6Chi monocytes and neutrophils via flow cytometry. Quantitative analysis of MINCLE surface expression shown as MFI normalized to BCG-infected mice. FMO was substracted. Data is depicted from three independent experiments (11–13 mice per group in total). *p<0.05, ** p<0.01, ***p<0.001. (F) C57BL/6 mice were s.c. infected with N. brasiliensis followed by M. bovis BCG-Dsred infection (40×106 CFU/mouse) or non-fluorescent BCG (nf) on day 10 p.i. Twenty-four hr after BCG infection, phagocytosis was measured by detection of PE signal in monocytes or neutrophils. Quantitative analysis of the percentage of BCG-positive monocytes.
 
-## Co-infection with N. brasiliensis impairs MINCLE upregulation on peritoneal monocytes, but does not reduce phagocytosis, upon BCG infection
+### Co-infection with N. brasiliensis impairs MINCLE upregulation on peritoneal monocytes, but does not reduce phagocytosis, upon BCG infection
 
 Infection with the hookworm N. brasiliensis induces a strong Th2 response characterized by high levels of IL-4. We therefore asked whether pre-existing infection with N. brasiliensis interferes with MINCLE expression on myeloid cells during mycobacterial infection. The peritoneal cavity of N. brasiliensis-infected mice contained a much higher proportion of SiglecF+ eosinophils (nearly 40% compared to 10% in controls), whereas the fraction of Ly6Chi monocytes was reduced (from 30% to 20%), and the low percentage of resident monocytes/macrophages was not altered by helminth infection (Figure 3D). Eosinophils were negative for MINCLE surface staining. MINCLE staining on inflammatory monocytes from BCG-infected mice was significantly reduced when co-infected with N. brasiliensis compared to control mice infected only with BCG (Figure 3E). In contrast, the cell surface expression of MINCLE on neutrophils was not altered by underlying N. brasiliensis infection (Figure 3E). The use of fluorescent BCG-DsRed enabled us to determine the cell types and percentages of peritoneal cells that had ingested mycobacteria 24 hr after injection (Figure 3F). While on average 12% of Ly6Chi monocytes contained BCG-DsRed, no specific signal was measurable for the peritoneal neutrophils. Co-infection with N. brasiliensis did not change the phagocytosis of BCG by inflammatory monocytes in the peritoneal cavity (Figure 3F).
 
-## Co-infection with N. brasiliensis or with S. mansoni suppresses Th1/Th17 induction by a MINCLE-dependent adjuvant in the spleen
+### Co-infection with N. brasiliensis or with S. mansoni suppresses Th1/Th17 induction by a MINCLE-dependent adjuvant in the spleen
 
 Downregulation of MINCLE expression on monocytes of mice with N. brasiliensis infection led us to ask whether vaccination responses to protein antigen induced by a MINCLE-dependent adjuvant would be inhibited by helminth infections. We investigated this question in chronic (non-transient) S. mansoni and acute (transient) N. brasiliensis infection models. Infected and control mice were immunized with the recombinant fusion protein H1, comprising the MTB antigens Ag85B and ESAT-6, adsorbed to the adjuvant CAF01 (a combination of the MINCLE ligand TDB incorporated into cationic liposomes) (Agger et al., 2008). We and others previously showed that subcutaneous injection of the CAF01 adjuvant with H1 induces robust antigen-specific production of IFNγ and IL-17 by CD4+ T cells (Desel et al., 2013; Lindenstrøm et al., 2009; Lindenstrøm et al., 2012). Similar results were obtained for the combination of CAF01 with the chlamydial antigen CTH522 (Nguyen et al., 2020).
 
@@ -85,7 +85,7 @@ S. mansoni causes a chronic infection in mice, with fertile, adult worms residin
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72923/elife-72923-fig4-v1.jpg)
 
-**Figure 4.:** Schistosoma mansoni (S.m.) suppresses Th1/Th17 induction by a MINCLE-dependent adjuvant in the spleen but not in the draining lymph node.(A) Scheme of experimental procedure. Cercariae of S.m. were injected s.c. into C57BL/6 mice. Eight to 9 weeks p.i. mice were immunized with CAF01 (B, C, D) or CpG ODN (E, F). Seven days after immunization, mice were sacrificed and inguinal lymph node cells and spleen cells were re-stimulated with H1 in vitro. Draining inguinal lymph node cells or splenocytes were re-stimulated with H1 or anti-CD3 for 96 hr. IL-17, IFNγ, IL-10, and IL-4 production was measured from cell culture supernatants by ELISA. Data is shown from three independent experiments (n=18 mice per group in total) for IFNγ, IL-17, and IL-10 (C, D) and from two independent experiments (n=13 mice) for IL-4 (B). (E, F) Data is shown from one experiment (n=5 mice per group in total). *p<0.05, **p<0.01, ***p<0.001. Dashed horizontal lines indicate the limit of detection for each cytokine.Figure 4—source data 1.Figure 4 (cytokine results).
+**Figure 4.:** (A) Scheme of experimental procedure. Cercariae of S.m. were injected s.c. into C57BL/6 mice. Eight to 9 weeks p.i. mice were immunized with CAF01 (B, C, D) or CpG ODN (E, F). Seven days after immunization, mice were sacrificed and inguinal lymph node cells and spleen cells were re-stimulated with H1 in vitro. Draining inguinal lymph node cells or splenocytes were re-stimulated with H1 or anti-CD3 for 96 hr. IL-17, IFNγ, IL-10, and IL-4 production was measured from cell culture supernatants by ELISA. Data is shown from three independent experiments (n=18 mice per group in total) for IFNγ, IL-17, and IL-10 (C, D) and from two independent experiments (n=13 mice) for IL-4 (B). (E, F) Data is shown from one experiment (n=5 mice per group in total). *p<0.05, **p<0.01, ***p<0.001. Dashed horizontal lines indicate the limit of detection for each cytokine.
 
 To determine whether S. mansoni-induced inhibition of antigen-specific immune responses by splenocytes, but not draining lymph node cells, was specific for the MINCLE-dependent adjuvant CAF01, we immunized mice with H1 together with the TLR9 ligand CpG ODN 1826 as adjuvant. Using the same protocol as before for H1/CAF01, we observed, as demonstrated previously (Werninghaus et al., 2009), strong induction of IFNγ-producing T cells but a lack of IL-17 production upon re-stimulation of draining lymph node cells or splenocytes (Figure 4E and F). Thus, it was not possible to compare inhibition of Th17 responses by helminth infection between adjuvants. However, S. mansoni did not generally downregulate IL-17 production from T cells, as the levels after anti-CD3 stimulation were unaffected (Figure 4E and F). Similar to the impact on immunization with CAF01, S. mansoni infection strongly reduced antigen-specific and non-specific IFNγ secretion by splenocytes but not by draining lymph node cells (Figure 4E and F). Thus, S. mansoni infection caused a general suppression of the splenic Th1 response to immunization, regardless whether the MINCLE-dependent adjuvant CAF01 was used or the TLR9-dependent CpG ODN 1826.
 
@@ -93,7 +93,7 @@ To address the effect of transient helminth infection, mice were injected subcut
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/72923/elife-72923-fig5-v1.jpg)
 
-**Figure 5.:** Nippostrongylus brasiliensis suppresses Th1/Th17 induction by a MINCLE-dependent adjuvant in the spleen but not in the draining lymph node.(A) Scheme of experimental procedure. C57BL/6 mice were infected subcutaneously in the flank with 500 L3 larvae of N. brasiliensis in 200 µl PBS. Five days p.i. mice were immunized with H1/CAF01 (B–F) or H1/G3D6A (G). Seven days after immunization, mice were sacrificed, and inguinal and popliteal lymph node cells and spleen cells were re-stimulated with H1 in vitro. (B) Footpad swelling was measured over a period of 1 week after immunization with H1/CAF01 until mice were sacrificed (day 7 after immunization). The increase in footpad swelling is shown as mean + SD for the indicated time points (n=10–11 mice for each data point). (C) Absolute cell number of draining inguinal and popliteal lymph node cells (LN) and spleen on day 7 after H1/CAF01. (D–G) Draining inguinal and popliteal lymph node cells or splenocytes were re-stimulated with H1, anti-CD3, or left untreated (mock) for 96 hr, followed by cytokine determination by ELISA. (D) IL-4 levels produced by draining lymph node cells (left) or splenocytes (right). (E, F) IL-17, IFNγ, and IL-10 cytokine production by draining lymph node cells (E) and splenocytes (F). (G) Immunization of C57BL/6 mice with H1 in G3D6A adjuvant. Seven days after immunization mice were sacrificed and splenocytes were treated as described in (D, E). All data is shown from two (B–F) or three (G) independent experiments (n=9–14 mice per group in total). p<0.05, **p<0.01, ***p<0.001. Dashed horizontal lines indicate the limit of detection for each cytokine.Figure 5—source data 1.Figure 5 (cytokine results).
+**Figure 5.:** (A) Scheme of experimental procedure. C57BL/6 mice were infected subcutaneously in the flank with 500 L3 larvae of N. brasiliensis in 200 µl PBS. Five days p.i. mice were immunized with H1/CAF01 (B–F) or H1/G3D6A (G). Seven days after immunization, mice were sacrificed, and inguinal and popliteal lymph node cells and spleen cells were re-stimulated with H1 in vitro. (B) Footpad swelling was measured over a period of 1 week after immunization with H1/CAF01 until mice were sacrificed (day 7 after immunization). The increase in footpad swelling is shown as mean + SD for the indicated time points (n=10–11 mice for each data point). (C) Absolute cell number of draining inguinal and popliteal lymph node cells (LN) and spleen on day 7 after H1/CAF01. (D–G) Draining inguinal and popliteal lymph node cells or splenocytes were re-stimulated with H1, anti-CD3, or left untreated (mock) for 96 hr, followed by cytokine determination by ELISA. (D) IL-4 levels produced by draining lymph node cells (left) or splenocytes (right). (E, F) IL-17, IFNγ, and IL-10 cytokine production by draining lymph node cells (E) and splenocytes (F). (G) Immunization of C57BL/6 mice with H1 in G3D6A adjuvant. Seven days after immunization mice were sacrificed and splenocytes were treated as described in (D, E). All data is shown from two (B–F) or three (G) independent experiments (n=9–14 mice per group in total). p<0.05, **p<0.01, ***p<0.001. Dashed horizontal lines indicate the limit of detection for each cytokine.
 
 Together, these results indicate that underlying N. brasiliensis infection attenuated cell expansion in the draining lymph node, yet the differentiation toward Th1/Th17 at this site was not affected. In contrast, hookworm infection did interfere with antigen-specific IFNγ and IL-17 production by splenic T cells, correlating with strongly enhanced production of IL-4 by splenocytes (but not draining lymph node cells). The inhibitory effect of infection on IFNγ appears to be general, antigen- and adjuvant-non-specific, because it was also observed after polyclonal T cell stimulation and independent of the pattern recognition receptor pathway triggered by the adjuvant used. In contrast, the impairment of Th17 induction in the spleen by N. brasiliensis was specific for the MINCLE-dependent CAF01. Taken together, immunization experiments in two helminth infection models demonstrated organ-specific inhibition of Th responses in the spleen, with antigen-specific inhibition of CAF01-induced, MINCLE-dependent IL-17 production.
 
@@ -101,7 +101,7 @@ Finally, we employed mice deficient in IL-4 and IL-13 (designated here as 4-13ko
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/72923/elife-72923-fig6-v1.jpg)
 
-**Figure 6.:** Nippostrongylus brasiliensis infection depends on IL-4 or IL-13.C57BL/6 or of Il4 mice were infected with -/-Il13-/-N. brasiliensis or not as indicated and immunized s.c. with H1/CAF01 5 days later. On day 7 after immunization, mice were sacrificed and splenocytes were re-stimulated with H1 or anti-CD3 for 96 hr. Cytokines were measured by ELISA. (A) IFNγ, (B) IL-17, (C) IL-10, (D) IL-4. Data shown is pooled from four independent experiments (n=15–17 mice per group in total). p<0.05, **p<0.01, ***p<0.001. Dashed horizontal lines indicate the limit of detection for each cytokine.Figure 6—source data 1.Figure 6 (cytokine results).
+**Figure 6.:** C57BL/6 or of Il4-/-Il13-/- mice were infected with N. brasiliensis or not as indicated and immunized s.c. with H1/CAF01 5 days later. On day 7 after immunization, mice were sacrificed and splenocytes were re-stimulated with H1 or anti-CD3 for 96 hr. Cytokines were measured by ELISA. (A) IFNγ, (B) IL-17, (C) IL-10, (D) IL-4. Data shown is pooled from four independent experiments (n=15–17 mice per group in total). p<0.05, **p<0.01, ***p<0.001. Dashed horizontal lines indicate the limit of detection for each cytokine.
 
 ## Discussion
 
@@ -125,56 +125,346 @@ More generally, downregulation of other PRR in addition to DECTIN-2 family CLR d
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 mice</td>
+      <td>Charles River or Preclinical Experimental Animal Center University Hospital Erlangen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>MINCLE knockout mice</td>
+      <td>Consortium for Functional Glycomics</td>
+      <td>Clec4e-/-</td>
+      <td>Wells C et al. 2007J Immunol PMID:18490740</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>FcRγ knockout mice</td>
+      <td>Prof. Dr Falk Nimmerjahn, Erlangen, Germany</td>
+      <td>Fcer1g-/-</td>
+      <td>Takai T et al. 1994Cell PMID:8313472</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>4-13ko mice</td>
+      <td>Prof. AN McKenzie, Cambridge, UK</td>
+      <td>Il4-/- Il13-/-</td>
+      <td>McKenzie et al., 1999 J Exp Med PMID:10330435</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse Mincle (# 4A9)Unlabeled</td>
+      <td>MBL</td>
+      <td>MBL-D292-3</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal IgG1 Isotype unlabeled</td>
+      <td>eBioscience</td>
+      <td>17-4812-82</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD3-APC-eF780</td>
+      <td>eBioscience</td>
+      <td>47-0031-82</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD19-APC-eF780</td>
+      <td>eBioscience</td>
+      <td>47-0193-82</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse NK1.1-APC-eF780</td>
+      <td>eBioscience</td>
+      <td>47-5941-82</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD11b-FITC</td>
+      <td>Biolegend</td>
+      <td>101206</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse SiglecF-BV421</td>
+      <td>BD</td>
+      <td>562681</td>
+      <td>1:400 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse Ly6C-PerCP-Cy5.5</td>
+      <td>Biolegend</td>
+      <td>128012</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse Ly6G-PE-Cy7</td>
+      <td>Biolegend</td>
+      <td>127618</td>
+      <td>1:400 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human monoclonal anti-mouse Dectin1-APC</td>
+      <td>Miltenyi</td>
+      <td>130-102-250</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human monoclonal anti-mouse Dectin2-APC</td>
+      <td>Miltenyi</td>
+      <td>130-116-911</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human IgG1 APC (Isotype for Dectin2, Dectin1)</td>
+      <td>Miltenyi</td>
+      <td>130-113-446</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mouse Fixable viability dye eF506</td>
+      <td>eBioscience</td>
+      <td>65-0866-18</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat IgG1 APC</td>
+      <td>eBioscience</td>
+      <td>17-4301-81</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat IgG1 APC Iso k</td>
+      <td>eBioscience</td>
+      <td>14-4301-82</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mincle Primer(qRT-PCR)</td>
+      <td>Metabion</td>
+      <td></td>
+      <td>For: gctcacctggtggttatcgRev: aggttttgtgcgaaaaagga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mcl Primer (qRT-PCR)</td>
+      <td>Metabion</td>
+      <td></td>
+      <td>For: agtaacgtgcatccgagaggRev: taacaggacagcaggtccaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dectin2 Primer(qRT-PCR)</td>
+      <td>Metabion</td>
+      <td></td>
+      <td>For: cagtgaagggactatggtgtcaRev: ggagccaaatgacttccagt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dectin1 Primer(qRT-PCR)</td>
+      <td>Metabion</td>
+      <td></td>
+      <td>For: atggttctgggaggatggatRev: atggttctgggaggatggat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hprt Primer(qRT-PCR)</td>
+      <td>Metabion</td>
+      <td></td>
+      <td>For: tcctcctcagaccgcttttRev: cctggttcatcatcgctaatc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mincle Probe</td>
+      <td>Roche</td>
+      <td>Roche Universal Probe Library (UPL)</td>
+      <td>#15</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mcl Probe</td>
+      <td>Roche</td>
+      <td>Roche UPL</td>
+      <td>#1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dectin2 Probe</td>
+      <td>Roche</td>
+      <td>Roche UPL</td>
+      <td>#89</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dectin1 Probe</td>
+      <td>Roche</td>
+      <td>Roche UPL</td>
+      <td>#60</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hprt Probe</td>
+      <td>Roche</td>
+      <td>Roche UPL</td>
+      <td>#95</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Minicircle DNA encoding IL-4</td>
+      <td>Dr Stefan Wirtz, Erlangen, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (bacteria)</td>
+      <td>Mycobacterium bovis BCG DsRed Danish</td>
+      <td>Dr Anca Dorhoi, Friedrich Löffler Institute, Greifswald, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (helminth)</td>
+      <td>Nippostrongylus brasiliensis</td>
+      <td>Dr David Vöhringer, Erlangen, Germany</td>
+      <td></td>
+      <td>500 L3 larvae per mouse s.c.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (helminth)</td>
+      <td>Schistosoma mansoni</td>
+      <td>Dr Clarissa Prazeres da Costa, Munich, Germany</td>
+      <td>NMRI strain</td>
+      <td>100 cercariae per mouse s.c.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CpG ODN1826</td>
+      <td>TIB MOLBIOL</td>
+      <td>180000237</td>
+      <td>0.5 μM (in vitro); 10 nmol per mouse in vivo</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CAF01 (TDB+DDA liposomes)</td>
+      <td>Dr Dennis Christensen, Statens Serum Institute, Copenhagen, Denmark</td>
+      <td></td>
+      <td>Adjuvant, 50 µl injected s.c. together with H1 protein</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>G3D6A liposomal formulation</td>
+      <td>DrChristian Alexander, Research CenterBorstel</td>
+      <td></td>
+      <td>Adjuvant, 50 µl injected s.c. together with H1 protein</td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant protein</td>
+      <td>H1 Mycobacterial antigen</td>
+      <td>Dr Dennis Christensen, Statens Serum Institute, Copenhagen, Denmark</td>
+      <td></td>
+      <td>H1 is a fusion protein of Ag85B and ESAT-6.2 µg H1 in 100 μl CAF01 for immunization and 1 μg/ml for re-stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant protein</td>
+      <td>Recombinant murine IL-4</td>
+      <td>PeproTech</td>
+      <td>214–14 B</td>
+      <td>10 μg/ml for in vitro stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant protein</td>
+      <td>Purified anti-CD3 e</td>
+      <td>Biolegend</td>
+      <td>100302</td>
+      <td>0.5 μg/ml re-stimulation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 wildtype, MINCLE knockout (Clec4e-/-), FcRγ knockout (Fcer1g-/-), and Il4-/- Il13-/- mice were bred under specific pathogen-free conditions at the ‘Präklinische Experimentelle Tierzentrum’ (PETZ) of the Medical Faculty in Erlangen. Clec4e-/- mice were generated by the Consortium for Functional Glycomics (Wells et al., 2008) and used with permission. Fcer1g-/- mice (Takai et al., 1994) were kindly provided by Dr Falk Nimmerjahn. Il4-/- Il13-/- were originally provided by AN McKenzie (MRC Laboratory of Molecular Biology, Cambridge, UK) and backcrossed to CD45.1_C57BL/6 background for more than 10 generations (McKenzie et al., 1999). C57BL/6N mice were purchased from Charles River Laboratories. All mouse experiments were approved by the ‘Regierung von Unterfranken’ (protocol number 55.2.2-2532-543) and the ‘Regierung of Oberbayern’ (protocol number ROB-55.2 Vet_02-17-145). Male mice between 8 and 12 weeks of age were used for in vivo experiments.
 
-## Bacteria
+### Bacteria
 
 M. bovis (BCG) was grown in Middlebrook 7H9 broth supplemented with 10% OADC-enrichment medium and 0.05% Tween 80 in small cell culture flasks constantly shaking at 125 rpm at 37°C to an OD600 ~1–2. Prior to in vitro stimulation, BCG were washed with PBS and diluted in cDMEM.
 
-## Hydrodynamic injection of IL-4 minicircle DNA
+### Hydrodynamic injection of IL-4 minicircle DNA
 
 To investigate IL-4-derived effects on immunization responses or BCG infections in mice, we utilized a technique that leads to a systemic overexpression of IL-4. A minicircle DNA vector that encodes the gene for IL-4, but lacks further bacterial elements in comparison to conventional plasmids, was hydrodynamically injected intravenously in the tail vein of 5-week-old male mice (Liu et al., 1999); 0.5 µg of IL-4 was injected in 2 ml Ringer solution in under 10 s per mouse.
 
-## Helminth infections
+### Helminth infections
 
 All S. mansoni infection experiments were performed at TU Munich. C57BL/6 mice were infected subcutaneously as described previously (Bhattacharjee et al., 2019) with 100 cercariae from the NMRI strain (originally from Puerto Rico) of S. mansoni in 100 µl PBS shed by infected Biomphalaria glabrata snails, provided by the NIAID Schistosomiasis Resource Center of Biomedical Research Institute (Rockville, MD) through NIH-NIAID Contract HHSN272201700014I for distribution through BEI Resources. Mice were vaccinated after 8 weeks of infection, when parasite egg-induced Th2 immune responses begin to peak.
 
 The N. brasiliensis life cycle was maintained in rats. N. brasiliensis larvae were cultured in a mixture of charcoal and feces of infected rats in petri dishes for 15–40 days at room temperature. Subsequently, third-stage (L3) larvae were harvested with 10 ml of 0.9% saline and transferred to a Baermann apparatus. Within 1 hr larvae descended to the bottom of the funnel. Larvae were then transferred to a fresh 50 ml tube and extensively washed by repeating steps of sedimentation and exchange of saline. C57BL/6 mice were infected subcutaneously with 500 L3 larvae in 200 µl PBS in the flank of each mouse using a 25 G needle. All worms were expelled completely within 10 days.
 
-## BCG infection of mice
+### BCG infection of mice
 
 Ten days after N. brasiliensis infection, or 2 days after hydrodynamic injection of IL-4 minicircle DNA, mice were infected intraperitoneally with 40×106 CFU of M. bovis BCG in a volume of 200 µl PBS using a 27 G needle. PBS-injected mice as well as completely naïve mice were used as controls. Mice were sacrificed 24 hr post infection.
 
-## Immunizations
+### Immunizations
 
 Mice were immunized subcutaneously with 50 µl of a mixture of 1 µg H1, a fusion protein of the MTB antigens Ag85B and ESAT-6, and the respective adjuvants (CAF01, CpG ODN 1826, or G3D6A) in the footpads of the hind legs or in the flank as indicated in the figure legends. CAF01 is composed of TDB and cationic dimethyldioctadecylammonium (DDA) liposomes and has been described in detail before (Agger et al., 2008). CpG ODN 1826 is a phosphorothioate-protected oligonucleotide and was synthesized by TIB MOLBIOL (Berlin, Germany). G3D6A is a liposomal adjuvant formulation. It is comprised of the synthetic TLR4 ligand 3-O-de-acyl-hexaacyl-monophoshoryl lipid A (3D-6A-SMPLA, 3D(6-acyl)-PHAD) manufactured as cGMP product by Avanti Polar Lipids Inc (Alabaster, AL, USA) and embedded in a matrix of 1,2-dimyristoyl-sn-glycero-3-phosphocholine, 1,2-dimyristoyl-sn-glycero-3-phosphoglycerol and cholesterol (molar ration: 9:1:7.5) in an aqueous suspension buffered with PBS. Footpad swelling was monitored regularly and measured prior to immunization as well as every second day post immunization. On day 7 post immunization, inguinal and popliteal lymph nodes were analysed.
 
-## Isolation and culture of BMM
+### Isolation and culture of BMM
 
 Bone marrow cells were differentiated to BMM for 6–7 days in complete Dulbecco’s modified Eagle medium containing 10% FCS, 50 μM β-mercaptoethanol, and penicillin/streptomycin (cDMEM) supplemented with 10% L929 cell-conditioned medium as a source of M-CSF.
 
-## Stimulation of BMM
+### Stimulation of BMM
 
 BMM were stimulated with plate-coated TDB (Polar Avanti, 5 µg/ml), using isopropanol as a mock control, as described (Werninghaus et al., 2009), LPS (Escherichia coli serotype O55:B5, Sigma, 10 ng/ml), CpG ODN 1826 (TIB MOLBIOL, 0.5 µM), or with BCG at the indicated MOI.
 
-## Re-stimulation of lymph node cells
+### Re-stimulation of lymph node cells
 
 Inguinal and popliteal lymph nodes were collected and meshed through a 70 µm nylon filter to get a single-cell suspension. 5×105 cells were stimulated in 96-well U-bottom plates with H1 (1 µg/ml), soluble anti-CD3 (0.5 µg/ml), or left untreated (mock) for 96 hr.
 
-## mRNA expression of CLR
+### mRNA expression of CLR
 
 RNA was isolated using Trifast (Peqlab) and transcribed to cDNA (High capacity cDNA Reverse Transcription Kit, Applied Biosystems). Expression of the house keeping gene Hprt and of the genes of interest was analysed by qRT-PCR. All primers and probes were selected from the Roche Universal Probe Library. Ct values of the target genes were normalized to Hprt, calibrated to unstimulated cells, and depicted as fold change.
 
-## Cytokine ELISA
+### Cytokine ELISA
 
 Secreted cytokines were analysed by ELISA (R&D Systems) from cell culture supernatants of stimulated BMM or lymph node cells.
 
-## Flow cytometry
+### Flow cytometry
 
 Cell surface expression of MINCLE was analysed by flow cytometry. Cells were blocked with anti-mouse CD16/32, stained with the primary antibody anti-MINCLE (clone 4A9, MBL, 1 µg/ml), followed by anti-rat IgG1-APC (eBioscience). FACS data were acquired on an LSRFortessa (BD) and analysed using the software FlowJo (v10).
 
-## Statistics
+### Statistics
 
 GraphPad Prism software (version 8) was used for statistical analysis. Statistical significance was calculated using Mann-Whitney U-test to compare two non-paired groups or Wilcoxon signed rank test for paired groups. *p<0.05, **p<0.01, ***p<0.001, ns p>0.05.

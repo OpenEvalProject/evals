@@ -14,9 +14,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Molecular Cell Biology, Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/020rzx487 ENTIRE – Endocrine Neoplasia Translational Research Center, Division of Endocrinology, Diabetes and Metabolism, Chaim Sheba Medical Center, and Gray Faculty of Medical and Health Sciences, Tel Aviv University Ramat Gan Israel
-3. https://ror.org/0316ej306 Department of Immunology and Regenerative Biology, Weizmann Institute of Science Rehovot Israel
+1. Department of Molecular Cell Biology, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. ENTIRE – Endocrine Neoplasia Translational Research Center, Division of Endocrinology, Diabetes and Metabolism, Chaim Sheba Medical Center, and Gray Faculty of Medical and Health Sciences, Tel Aviv University Ramat Gan Israel ([ROR:020rzx487](https://ror.org/020rzx487))
+3. Department of Immunology and Regenerative Biology, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
 
 † Corresponding author
 
@@ -38,19 +38,33 @@ In this study, we sought to investigate the molecular characteristics of SiNETs 
 
 ## Results
 
-## Single-cell and single-nuclei RNA-seq profiling of SiNETs
+### Single-cell and single-nuclei RNA-seq profiling of SiNETs
 
 To understand the tumor ecosystem of low-grade SiNETs, we generated scRNA-seq profiles for ten primary tumor samples from eight patients using 10 x Chromium (Supplementary file 1). We profiled single cells from three fresh surgical samples (SiNET1-3) and single nuclei from the remaining seven frozen samples (SiNET4-10). After initial quality controls, we retained 29,198 cells from the ten samples (see Methods). For comparison, we also profiled one fresh small intestine adenocarcinoma (SiAdeno) and included it in our analyses.
 
 We identified clusters of cells in each tumor and annotated them based on the expression of known marker genes as neuroendocrine (NE) cells, and as tumor microenvironment cells (TME) including T cells, B/plasma cells, macrophages, fibroblasts, endothelial cells, epithelial cells and natural killer (NK) cells (Supplementary file 2). While NK cells were detected only in one sample, the other six types of TME cells were each detected in multiple samples, and these exactly correspond to the TME cell types that are commonly detected in scRNA-seq analyses of other cancer types (Gavish et al., 2023). The clustering and marker expression of two exemplary SiNETs are shown in Figure 1A–D, and the remaining tumors are shown in Figure 1—figure supplement 1. Cell type proportions varied considerably between tumors (Figure 1E). In five tumors, NE cells were the most frequent, while other tumors had the highest frequency of other cell types, such as endothelial, fibroblast, epithelial, or T cells. The unique composition of each tumor sample likely reflects a combination of tumor-specific biology with spatial sampling within the tumor. Technical effects (e.g. single-cell analysis of fresh samples vs. frozen single nuclei analysis of frozen samples) could also impact the capture of distinct cell types, although we did not observe a clear pattern of such bias.
 
-## Shared NE-specific genes define an SiNET transcriptomic signature
+![Figure 1.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) UMAP plots showing the diversity of single cells from SiNET2 (A) and SiNET5 (B), colored by their cluster assignment. (C, D) Cluster annotations (top bar) in SiNET2 (C) and SiNET5 (D) are supported by the expression of canonical cell type markers (rows). Also shown are three cell cycle markers (bottom rows). (E) Cell type frequencies in each of the 10 SiNETs that we profiled, along with one SiAdeno sample.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–I) UMAP plots showing the diversity of single cells from each sample, colored by their clustering.
+
+### Shared NE-specific genes define an SiNET transcriptomic signature
 
 We next focused on the NE cells and defined both their common and their variable expression profiles across patients. To this end, we examined the eight samples (one per patient) in which we identified NE cells. We first compared NE cells from each tumor to non-NE cells from the same tumor and identified all genes that are highly upregulated in NE cells. Twenty-six genes were consistently upregulated in NE cells from most tumors (n>5) and hence were defined as common NE-specific genes (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig2-v1.jpg)
+
+**Figure 2.:** (A) Bar plot showing the number of upregulated genes against a common threshold, number of genes (y-axis) vs number of tumors (x-axis). (B) Heat map showing a list of 25 representative genes that define SiNET signature of our single-nuclei RNA sequencing (scRNA-seq) cohort used to cluster neuroendocrine tumor (NET) samples from a bulk-seq dataset (Alvarez et al., 2018). Type of NET is color-coded on the top panel, with P-NET and RE-NET referring to pancreatic and rectal NETs. (C) Heatmap representing clustering of SiNET samples in our cohort based on genes that were differentially expressed and shared between 2–5 samples, showing two major variable gene programs. (D) Correlation heat map between the NET samples. (E) Heatmap showing average expression of epithelial and neuronal gene sets (rows) in the neuroendocrine and epithelial cells from our SiNET samples (columns). Epithelial gene sets include signatures of multiple cell types from the small intestine (Haber et al., 2017), and neuronal gene sets include three clusters of neurons (Mahalingam et al., 2020). (F) Heatmap of the SiNET-dominated cluster from the bulk dataset (Alvarez et al., 2018) was subjected to differential expression analysis using the same set of genes as (C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig2-figsupp1-v1.jpg)
+
 The common NE-specific genes could potentially serve as a transcriptomic signature for SiNETs. However, they may also include generic markers of NETs that are not unique to SiNETs. To examine the specificity of this signature, we examined their relative expression in a bulk RNA-seq dataset that contains NETs of the small intestine, pancreas, and rectum (Alvarez et al., 2018). Almost all signature genes were preferentially upregulated in NETs of the small intestine compared to the other NETs, suggesting that they reflect an efficient SiNET signature (Figure 2B, Supplementary file 3). The signature genes include known markers of SiNET (Andersson et al., 2016) as well as of enterochromaffin cells (Haber et al., 2017), such as CHGA, CHGB, and TPH1. While some of these markers are not unique to SiNETs, the bulk RNA-seq data suggests that, at least at the mRNA level, they are higher expressed in SiNETs than in other NETs. These genes were most significantly enriched with gene sets associated with neuroendocrine-related functions such as exocytosis, neurosecretory vesicle, and serotonergic synapse (all with adjusted p<0.001).
 
-## Heterogeneity of NE cells reveals two SiNET subtypes
+### Heterogeneity of NE cells reveals two SiNET subtypes
 
 However, many more genes were found as upregulated in NE cells of only a few of the SiNETs, and these were separated into tumor-specific (n=1, see Figure 2—figure supplement 1) and subset-specific (between 2 and 5 tumors). Subset-specific genes may help to uncover functionally distinct subtypes of SiNETs and, therefore, we investigated them further. These genes exhibited nine distinct expression patterns across eight SiNET samples from eight distinct patients (Figure 2C, Supplementary file 3). Notably, pattern #1, which was associated with the largest number of genes (n=26), was highly expressed in three tumors that had low expression of all other eight patterns. In contrast, the other five tumors highly expressed genes from multiple patterns and had low expression of pattern #1 genes. This analysis highlighted a division of the eight SiNETs into two primary subtypes based on pattern #1 vs. all other patterns. Notably, the same subtype division was clearly detected by clustering of the SiNETs based on the global expression profiles of NE cells in each tumor (Figure 2D).
 
@@ -60,9 +74,17 @@ To examine this possibility, we evaluated the expression of other cell type sign
 
 To validate the existence of these two SiNET subtypes, we turned to analyze an external bulk RNA-seq dataset of SiNETs (Alvarez et al., 2018). The signal of NE cells is diluted in bulk RNA-seq due to the profiling of entire tumor samples, and especially given the wide diversity of cell type compositions that we observe in single-cell analysis (see Figure 1E). However, we wondered whether we would still be able to detect the two subtypes when directly analyzing the subset-specific genes defined above. Indeed, the 81 SiNET bulk profiles could be separated into the epithelial-like and neuronal-like subtypes based on expression of pattern #1 genes vs. the genes of the other patterns (Figure 2F). Moreover, the proportion of the two subtypes (20% vs 80%) was comparable to those seen in our single-cell cohort (30% vs 70%). This analysis supports the generality of the two SiNET subtypes and their independence from the potential confounding effects of fresh vs. frozen samples in our data, which do not affect the bulk RNA-seq dataset.
 
-## Heterogeneity in the SiNET tumor microenvironment
+### Heterogeneity in the SiNET tumor microenvironment
 
 Next, we examined the diversity of cellular states within each non-NE cell type of the tumor microenvironment (TME). For each cell type, we analyzed the diversity within each tumor, searching for distinguishable subpopulations of cells, their occurrence across tumors, and their potential functional implications (see Figure 3). Below, we briefly describe the three most notable cases of diversity within cell types that we observed.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig3-v1.jpg)
+
+**Figure 3.:** For each of the three non-malignant cell types, the diversity of that cell type is shown in one exemplary tumor: fibroblast heterogeneity in SiNET8 is shown in (A–C), endothelial cell heterogeneity in SiNET5 is shown in (D–F), and B-cell heterogeneity in SiNET2 is shown in (G–I). For each cell type, three panels depict three types of analyses. The first panel (A, D, G) is a UMAP plot of the respective tumor, where only the respective cell type is colored, and distinct colors highlight the clusters of that cell type. The second panel (B, E, H) shows differential expression analysis between the first two clusters using heatmaps, with labeling of selected genes. The third panel (C, F, I) shows clustering of cells from that cell type (columns) based on their relative expression of previously defined (Gavish et al., 2023) signatures of diversity in that cell type (rows); the top panel shows assignment of cells to clusters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** For each of three non-malignant cell types, the diversity of that cell type is shown in one exemplary tumor: fibroblast heterogeneity in SiNET3 is shown in (A, B), fibroblast cell heterogeneity in SiNET5 is shown in (C, D), and endothelial heterogeneity in SiNET2 is shown in (E, F). For each cell type, panels depict types of analyses. The first panel (A, C, E) is a UMAP plot of the respective tumor, where only the respective cell type is colored, and distinct colors highlight the clusters of that cell type. The second panel (B, D) shows differential expression analysis between the first two clusters using a heatmap, with labeling of selected genes. The third panel (F) shows clustering of cells from that cell type (columns) based on their relative expression of previously defined (Haber et al., 2017) signatures of diversity in that cell type (rows); the top panel shows assignment of cells to clusters.
 
 Among fibroblasts, we found the highest diversity in SiNET8, with three distinguishable subpopulations (Figure 3A). To understand their differences, we both conducted a differential expression analysis (Figure 3B) and compared their profiles to recently described fibroblast signatures (Gavish et al., 2023; Figure 3C). This analysis indicated that cluster 1 resembles other cancer-associated fibroblasts (CAFs), while clusters 2 and 3 are distinguished by specific expression profiles. Cluster 3 cells were primarily distinguished by expression of MHC-II genes and are thus consistent with previous observations of antigen-presenting CAFs (Elyada et al., 2019). Cluster 2 cells upregulate several programs of pericytes and myofibroblasts but are further distinguished by upregulation of four ABC-transporters (ABCA6, ABCA8, ABCA9, and ABCA10). To our knowledge, such consistent upregulation of multiple ABC transporters was not observed in previous analysis of CAF heterogeneity (Lavie et al., 2022; Luo et al., 2022). Yet, in our data, upregulation of ABC transporters was also detected in a subset of CAFs from SiNET3 and SiNET5 (Figure 3—figure supplement 1A–D). These results suggest a unique feature of CAFs in a subset of SiNETs, possibly due to the unique microenvironment of SiNETs.
 
@@ -70,17 +92,29 @@ Among endothelial cells, we found two highly distinct subpopulations in SiNET5 (
 
 Among B cells, two distinct populations were found in SiNET2 (Figure 3G). Differential expression showed that the small B cell subpopulation is distinguished by upregulation of many cell cycle genes, including canonical markers (MKI67, TOP2A, CDK1), reflecting proliferating B cells (Figure 3H–I). Moreover, we noticed that, among all SiNET2 cells, the canonical cell cycle markers are expressed in B cells more than in all other cell types, including the malignant NE cells (Figure 1C). This observation prompted us to turn our attention to cell cycle patterns across all cell types within the SiNETs.
 
-## Proliferation of NE and immune cells in SiNETs
+### Proliferation of NE and immune cells in SiNETs
 
 Most SiNETs are low-grade tumors with a low mitotic index, but the exact identity of proliferating cells in SiNETs is unknown. We used previously defined signatures of the cell cycle to identify all cycling cells. Notably, as we and others demonstrated previously (Gavish et al., 2023; Puram et al., 2023; Kowalczyk et al., 2015), cell cycle involves the consistent upregulation of dozens of canonical genes and, therefore, the cycling cells can be robustly detected by scRNA-seq along with their phase along the cell cycle (Figure 4—figure supplement 1).
 
 Surprisingly, extremely few cycling cells were observed among the malignant NE cells (0.246% on average) (Figure 4A). This fraction is considerably lower than what we detect in other cancer types (Puram et al., 2023), and as an extreme example from the same dataset, in the SiAdeno sample, we find ~13% of cycling epithelial cells using the same method (Figure 4—figure supplement 1). Notably, the fraction of SiNET cycling cells was lower for NE cells than for all other cell types identified in the SiNET ecosystem (Figure 4A; see also Figure 1C and D). Relatively high fractions of cycling cells (>10%) were found only in epithelial or in B/plasma cells. Epithelial cells were only detected in two tumors, and of those only in one tumor they have a high fraction of cycling cells. In contrast, B/plasma cells were detected more commonly – in eight tumors – and in three of those, they had a high fraction of cycling cells. The other cell types all had low-to-intermediate fractions of cycling cells across all SiNETs, but even those fractions were consistently higher than for the NE cells.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig4-v1.jpg)
+
+**Figure 4.:** (A) Bars show the percentage of cycling cells (y-axis) per cell type and per tumor (x-axis). Tumors are color-coded, the two subtypes, epithelial-like and neuronal-like, are differentiated by distinct shapes, represented as square and circle, respectively. Information regarding the presence of cell types with zero percentage of cycling cells is provided along the x-axis. Horizontal lines indicate average percentages of cycling cells per cell type. (B) Correlation between cell type and cell-cycle program as computed from an SiNET bulk RNA-seq dataset (Alvarez et al., 2018). Score for each cell type is represented at the top of individual panels. (C) Boxplot depicting the expression of migration inhibitory factor (MIF) in each SiNET cell type, for each of the two SiNET subtypes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The annotated cell types include epithelial cells, macrophages, T cells, and fibroblasts that were sampled for illustrative purposes.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/101153/elife-101153-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** In SiNET1 and SiNET2, we observe high correlation between cell cycle and germinal centers (GC) score, but not in SiNET9.
+
 Thus, at least in our SiNET cohort, proliferation is associated with the tumor microenvironment rather than with the NE cells. Notably, both the low proliferation of NE cells and the much higher proliferation of immune cells (especially B/plasma cells, but also T cells and macrophages) were consistently observed in both fresh samples analyzed by single-cell RNA-seq (SiNET1 and 2) and frozen samples analyzed by single nuclei RNA-seq (SiNET9) and, therefore, are independent of platform and the potential biases in capture of specific cell types. This result raises intriguing questions regarding the manner by which SiNETs grow, and the meaning of their mitotic index (see Discussion).
 
 Next, to ensure that this result is not unique to our cohort, we reanalyzed bulk RNA-seq data of 81 SiNET samples (Alvarez et al., 2018). We reasoned that if NE cells are a major source of proliferation, then cell cycle signatures should correlate with the expression of NE marker genes across bulk SiNET samples. Similarly, if other cell types, such as B cells or T cells, are more proliferative than the NE cells, then their markers should correlate with the cell cycle signature. As expected from the single-cell analysis, we found that the cell cycle signature significantly correlates positively with B cell markers, and to a more limited degree with T cell markers, but not with NE markers (Figure 4B), supporting the broader relevance of our results.
 
-## B cell proliferation and MIF upregulation in the epithelial-like SiNET subtype
+### B cell proliferation and MIF upregulation in the epithelial-like SiNET subtype
 
 One potential explanation for the high proliferation of B cells is that our SiNET samples may have included germinal centers (GC), in which B cells are expected to proliferate. To assess this possibility, we scored the B cells for a previously defined GC signature (Brescia et al., 2018). While two tumors with high B cell proliferation also had high GC scores, this was not the case for the third tumor (Figure 4—figure supplement 2). Thus, the inclusion of GCs may partially explain the unusual proliferation of B cells.
 
@@ -88,7 +122,7 @@ An alternative possibility is that B cells proliferate in response to particular
 
 This analysis highlighted Macrophage Migration Inhibitory Factor (MIF) as a prominent marker of the epithelial-like subtype that could potentially drive the proliferation of B/plasma cells. First, MIF was one of the top markers of the epithelial-like subtype in our analysis of NE cells (Figure 2C), and a closer inspection reveals an extreme degree of differential expression, with almost no detected reads in the neuronal-like subtype and a consistently high expression in the epithelial-like subtype (Figure 4C). Second, upregulation of MIF in the epithelial-like subtype was also detected in all other cell types, although the effect was strongest in NE cells (Figure 4C). Such consistent upregulation across six different cell types is not seen for any other genes, highlighting the unique upregulation of MIF in the ecosystem of the epithelial SiNETs and supporting its potential causal effect in driving other phenotypes such as B/plasma cell proliferation. Third, MIF is an important cytokine that binds CD74 and was previously shown to regulate B cell proliferation by multiple studies (Gore et al., 2008; Noe and Mitchell, 2020).
 
-## Putative progenitors in mixed tumors
+### Putative progenitors in mixed tumors
 
 Apart from our focus on SiNETs, we were intrigued by the phenomena of MiNEN and aimed to profile such tumors by single-cell RNA-seq. Due to their rarity and the difficulty of recognizing mixed tumors prior to their surgery, we were so far able to profile only one such tumor. This tumor was a Large Cell Neuroendocrine Carcinoma of the lung (LCNEC), mixed with a squamous cell carcinoma. While this tumor is highly different from SiNETs, we believe that this N-of-1 case study is of interest and raises important questions that might also be of relevance for SiNET and other NENs, and hence we describe its analysis below.
 
@@ -114,13 +148,13 @@ In summary, single-cell profiling of SiNETs revealed two distinct subtypes that 
 
 ## Methods
 
-## Human samples
+### Human samples
 
 The study was approved by the Institutional Review Board of Sheba Medical Center (Ethical Approval Identifier: SMC-18–5674). Informed consent was obtained from each patient prior to any study-related procedures. Patients received a comprehensive explanation of the study’s objectives and methods, were given ample time to consider their participation, and had the opportunity to ask questions and receive thorough answers before signing the consent form. Following the consent process, all samples and data were fully anonymized. Each participant was assigned a unique code, which was used throughout the study and was kept separate from any identifying information. As a result, the dataset is fully anonymized, and its use and publication do not require additional consent.
 
 For tissue preparation for immunohistochemistry, flash-frozen SiNETs were stored at −80 °C until cutting. Blocks were prepared in OCT followed by freezing and sectioning. Frozen tissue was sectioned using a −20 °C temperature on a cryostat (Leica CM3050 S) onto microscopic slides (Thermo, Superfrost Plus).
 
-## Tumor dissociation and library preparation
+### Tumor dissociation and library preparation
 
 Fresh tumors were collected directly from the operating room at the time of surgery. Tumors were washed in ice-cold HBSS, minced using a pair of Noyes spring scissors (Fine Science Tools) and then enzymatically dissociated using a tumor dissociation kit (Miltenyi Biotec) in a GentleMACS Octo-dissociator on low speed settings (Tirosh et al., 2016). Single-cell suspension was obtained by passing dissociated slurry through a 60–100 micron cell strainer (Miltenyi) and the filtrate was subjected to RBC removal using a RBC lysis buffer (Roche). Dead cell removal (Miltenyi) was performed on cell suspension following the manufacturer’s protocol, and cells were assessed for viability and density. 5  µl of Trypan blue (Thermo Fisher Scientific) was mixed with 5 µl of the sample and loaded onto a chip disposable automated hemocytometer (Countess II). Cell concentration was adjusted such that a total of 8000–10,000 cells were loaded onto each channel of the 10 x Genomics Single-Cell Chromium Controller.
 
@@ -130,7 +164,7 @@ The Chromium Next GEM Single-Cell 3′ GEM, Library & Gel Bead Kit v3.1, Chromiu
 
 As per the standardized protocol of creating 10 x libraries, single cells, reagents, and single gel beads containing barcoded oligonucleotides were emulsified and encapsulated into nanoliter-sized droplets followed by reverse transcription (RT). Following the manufacturer’s recommendations, RT samples were subjected to cDNA amplification, fragmentation, adapter, and sample index attachment. Libraries from two 10 x channels were pooled together and sequenced on one lane of an Illumina NovaSeq-6000, using an sp-100 kit or 4 were pooled together on two lanes with an S1-100 kit, with paired end reads as follows: read 1, 26 nt; read 2, 55 nt; index 1, 8 nt; index 2, 0 nt.
 
-## Sample normalization, filtering, and annotations
+### Sample normalization, filtering, and annotations
 
 Four samples (SiAdeno, SiNETs 1–3) underwent single nuclei sequencing, while the remaining samples (SiNETs 4–10 and the LCNEC sample) were subjected to scRNA-seq. To facilitate comparative analysis, we converted counts of unique molecular identifier (UMI) counts to transcripts per million (TPM) values, which were divided by 10 since the actual complexity of cells is assumed to be in the realm of ~100,000 transcripts and not 1 million as implied by the TPM measures. The resulting values were added to 1 and log2-transformed. Finally, to derive relative expression, we centered the value of each gene in each tumor, except in the analysis, where we were interested in absolute expression levels.
 
@@ -138,28 +172,28 @@ To ensure data quality, we excluded low-quality cells based on the number of det
 
 For further downstream analyses, we have avoided the use of integration methods as we believe that they tend to distort the data and decrease tumor-specific signals. Instead, we primarily analyzed one tumor at a time and never directly compared cell profiles across distinct tumors but only compared the differences between subpopulations in a given tumor; specifically, as described below, we normalized the expression of NE cells by subtracting the expression of reference non-NE cells from the same tumor as a method to decrease batch effects.
 
-## Neuroendocrine cell signatures and their classification
+### Neuroendocrine cell signatures and their classification
 
 To identify NE-specific genes, we performed a differential expression analysis between NE cells and a reference group consisting of Macrophages, Fibroblasts, and Endothelial cells. For each sample, we sampled 50 NE cells along with 50 cells from the reference group. Differentially expressed (DE) genes were defined as those with a fold change greater than 8 and a p-value lower than 0.05. False discovery rate (FDR) correction was applied to the p-values of individual genes to account for multiple comparisons. In samples that had insufficient reference cells (SiNET7 and SiNET8), we sampled the reference cells from a different sample that exhibited the highest correlation with the given sample. Samples that did not contain NE cells (SiNET3 and SiAdeno) or had too few NE cells (SiNET6), based on a defined threshold of 100 cells, were excluded from this analysis. Accordingly, SiNET9 was included in the analysis due to its high absolute number of profiled cells (130), which resulted in a sufficient count of NE cells, despite having a relatively small fraction of NE cells.
 
 We classified the DE genes into three groups: Common genes, Subset-specific genes, and Sample-specific genes. Common genes were defined as those differentially expressed in at least six samples, Subset-specific genes were those differentially expressed in 2–5 samples, and Sample-specific genes were differentially expressed only in one sample.
 
-## Clustering of subset-specific NE genes into nine patterns
+### Clustering of subset-specific NE genes into nine patterns
 
 We divided the subset-specific NE genes based on their expression pattern across the eight tumors that contained enough NE cells. To this end, we first considered all potential binary patterns, in which a gene is considered as either expressed (1) or not expressed (0) in each tumor. This defines 28=256 theoretical patterns. Next, for each gene, we calculated the correlation between its relative expression across the eight samples, and each of the 256 binary patterns; the gene was then assigned to the pattern with the highest correlation. This uncovered nine patterns that were each assigned to >5 genes (Figure 2C,Supplementary file 3).
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 To investigate the cell cycle dynamics within the dataset, we utilized a canonical cell cycle gene set (Tirosh et al., 2016). Each cell in every sample was scored based on the expression of these cell cycle genes. To identify cycling cells, we established a threshold based on the distribution of scores within each sample. We chose a relatively lenient threshold (log2 fold change of 1.5), and further verified that our main claims are qualitatively maintained when using a more strict threshold of twofold. In particular, NE cells had an extremely low fraction of cycling cells (0.127%), while B and plasma cells had a high fraction of cycling cells in epithelial-like SiNETs (32.25%) but not in neuronal-like SiNETs (0.178%).
 
-## Within cell-type analysis
+### Within cell-type analysis
 
 In each tumor, we examined clusters that were annotated as the same cell type but were not grouped together in the initial clustering analysis. For each such pair of clusters, we defined differential expression (with fold change greater than 3 and p-value lower than 0.05) and analyzed the expression of previously defined meta-programs associated with the corresponding cell type. FDR correction was applied to the p-values of individual genes to account for multiple comparisons.
 
-## Comparing gene expression between SiNET subtypes across cell types
+### Comparing gene expression between SiNET subtypes across cell types
 
 We performed a comparative gene expression analysis, examining epithelial-like and neuronal-like subtypes of SiNETs. The significance threshold for gene selection was established at an uncorrected p-value <0.05. Due to the limited sample size, we did not apply an FDR correction but added a second strict criterion of fold change >4. Additionally, we extended this analysis to bulk data, where each sample was assigned to the subtype for which the signature score was higher.
 
-## Cell cycle correlations with cell type signatures in bulk SiNET samples
+### Cell cycle correlations with cell type signatures in bulk SiNET samples
 
 From GSE98894, we used the 81 SiNET samples. Counts were converted to TPM, and log2-transformed with an offset of 1. We then averaged the marker genes of epithelial, T cells, B cells, NE cells, and cell cycle to create scores of their expression. Few outlier samples with very low NE scores were excluded from further analysis. Finally, we calculated the Pearson correlation between the cell-type scores and the cell cycle score.

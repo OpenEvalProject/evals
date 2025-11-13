@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.34862.001 How producers of public goods persist in microbial communities is a major question in evolutionary biology. Cooperation is evolutionarily unstable, since cheating strains can reproduce quicker and take over. Spatial structure has been shown to be a robust mechanism for the evolution of cooperation. Here we study how spatial assortment might emerge from native dynamics and show that fluid flow shear promotes cooperative behavior. Social structures arise naturally from our advection-diffusion-reaction model as self-reproducing Turing patterns. We computationally study the effects of fluid advection on these patterns as a mechanism to enable or enhance social behavior. Our central finding is that flow shear enables and promotes social behavior in microbes by increasing the group fragmentation rate and thereby limiting the spread of cheating strains. Regions of the flow domain with higher shear admit high cooperativity and large population density, whereas low shear regions are devoid of life due to opportunistic mutations.
+How producers of public goods persist in microbial communities is a major question in evolutionary biology. Cooperation is evolutionarily unstable, since cheating strains can reproduce quicker and take over. Spatial structure has been shown to be a robust mechanism for the evolution of cooperation. Here we study how spatial assortment might emerge from native dynamics and show that fluid flow shear promotes cooperative behavior. Social structures arise naturally from our advection-diffusion-reaction model as self-reproducing Turing patterns. We computationally study the effects of fluid advection on these patterns as a mechanism to enable or enhance social behavior. Our central finding is that flow shear enables and promotes social behavior in microbes by increasing the group fragmentation rate and thereby limiting the spread of cheating strains. Regions of the flow domain with higher shear admit high cooperativity and large population density, whereas low shear regions are devoid of life due to opportunistic mutations.
 
 ## Introduction
 
@@ -43,15 +43,37 @@ After setting up the stage for naturally forming social groups, we present our c
 
 The mechanism of action is that shear distortion enhances the fragmentation of cooperative clusters, thereby increasing the group fragmentation rate and limiting the spread of cheaters. If the shear is large enough that groups are torn apart at a larger rate than the mutation rate, then cooperation will prevail. Otherwise, groups will become dominated by cheaters, and eventually die out (Figure 2, Videos 1–3).
 
+![Video 1.](https://cdn.elifesciences.org/articles/34862/elife-34862-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/34862/elife-34862-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/34862/elife-34862-video3.mp4.jpg)
+
 ## Results
 
 We study a physically realistic spatial model of microorganisms, where fluid dynamical forces contribute significantly to the evolution of their social behavior. Our analysis consists of simulations and analytical formulas.
 
 We simulate microbes as discrete particles subject to stochastic physical and evolutionary forces, and the compounds secreted by microbes as continuous fields. In contrast, our analytical expressions are derived from analogous equations that are entirely continuous and deterministic. In general, we should not expect the discrete simulations to perfectly be described by the continuous set of partial differential equations. Nevertheless, the continuous system of equations do allow us to obtain relevant quantities such as group size and group fragmentation rate to a good approximation (cf. appendix 1 and Figure 3).
 
-In our model, the microorganisms secrete two types of diffusive molecules that influence each other’s fitness (Figure 1). The first molecule, the concentration of which is denoted by c1(x,t), is a beneficial public good that increases the fitness of those exposed, whereas the second, c2(x,t), is a waste compound or toxin that has the opposite effect, and effectively acts as a volumetric carrying capacity. The continuous equations that represent our system are(1)∂n∂t=db∇2n−v⋅∇n+n[ α1c1c1+k1−α2c2c2+k2−β1s1 ]+μδ2∂s12n,(2)∂c1∂t=d1∇2c1−v⋅∇c1+∫0∞ ns1ds1−λ1c1,(3)∂c2∂t=d2∇2c2−v⋅∇c2+s2∫0∞ nds1−λ2c2.
+In our model, the microorganisms secrete two types of diffusive molecules that influence each other’s fitness (Figure 1). The first molecule, the concentration of which is denoted by $c_{1}(x,t)$, is a beneficial public good that increases the fitness of those exposed, whereas the second, $c_{2}(x,t)$, is a waste compound or toxin that has the opposite effect, and effectively acts as a volumetric carrying capacity. The continuous equations that represent our system are
 
-Here n is a shorthand for n(x,t,s1), the number density of microbes at time t and position x that produce the public good at a rate of s1. These microbes pay a fitness cost of β1s1 per unit time. The production rate of waste s2 on the other hand, is assumed constant for all, and has no fitness cost. Waste limits the number of individuals that a unit volume can carry. Microbes secreting public goods at a rate s1 replicate to produce others with the same secretion rate. This reproduction rate is given by the square bracket. However, the production rate s1 can change due to mutations. This is described by the last term of Equation 1. Mutations can be thought as diffusion in s1 space.
+$$
+\frac{\partialn}{\partialt}=d_{b}\nabla^{2}n−v⋅\nablan+n[\alpha_{1}\frac{c_{1}}{c_{1}+k_{1}}−\alpha_{2}\frac{c_{2}}{c_{2}+k_{2}}−\beta_{1}s_{1}]+\mu\frac{\delta^{2}}{\partials_{1}^{2}}n,
+$$
+
+
+
+$$
+\frac{∂c_{1}}{∂t}=d_{1}∇^{2}c_{1}−v⋅∇c_{1}+\int_{0}^{∞} ns_{1}ds_{1}−\lambda_{1}c_{1},
+$$
+
+
+
+$$
+\frac{∂c_{2}}{∂t}=d_{2}∇^{2}c_{2}−v⋅∇c_{2}+s_{2}\int_{0}^{∞} nds_{1}−\lambda_{2}c_{2}.
+$$
+
+Here $n$ is a shorthand for $n(x,t,s_{1})$, the number density of microbes at time $t$ and position $x$ that produce the public good at a rate of $s_{1}$. These microbes pay a fitness cost of $\beta_{1}s_{1}$ per unit time. The production rate of waste $s_{2}$ on the other hand, is assumed constant for all, and has no fitness cost. Waste limits the number of individuals that a unit volume can carry. Microbes secreting public goods at a rate $s_{1}$ replicate to produce others with the same secretion rate. This reproduction rate is given by the square bracket. However, the production rate $s_{1}$ can change due to mutations. This is described by the last term of Equation 1. Mutations can be thought as diffusion in $s_{1}$ space.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/34862/elife-34862-fig1-v2.jpg)
 
@@ -59,7 +81,7 @@ Here n is a shorthand for n(x,t,s1), the number density of microbes at time t an
 
 In all three equations the first two terms describe diffusion and advection, while the last two terms of Equation 2 and Equation 3 describe the production and decay of chemicals. The first two terms in the square bracket describe the effect of the secreted compounds on fitness. This saturating form is experimentally established and well understood (Monod, 1949). The crucial third term in the square bracket describes the cost of producing the public good, which increases linearly.
 
-## Social groups as turing patterns
+### Social groups as turing patterns
 
 Diffusion can cause an instability that leads to the formation of intriguing patterns (Turing, 1990), which among other fields, have been investigated in ecological context (Tian et al., 2011; Camara, 2011; Baurmann et al., 2007; Wilson et al., 2003). These so called Turing patterns typically form when an inhibiting agent has a diffusion length greater than that of an activating agent. For our model system, the waste compound and public good play the role of inhibiting and activating agents, and patterns manifest as cooperating microbial clusters Figure 2. The size and reproduction rate of these clusters, in terms of system parameters, can be estimated from a Turing analysis (cf. appendix 1). Figure 3 shows the values of diffusion constants that gives rise to Turing patterns, as well as the size of the groups.
 
@@ -69,7 +91,7 @@ Diffusion can cause an instability that leads to the formation of intriguing pat
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34862/elife-34862-fig3-v2.jpg)
 
-**Figure 3.:** The top-left figure, (A) shows the group size  as obtained by our theoretical analysis (appendix); whereas the bottom figure, (2π/kfastB) shows the same for continuous simulations, and the top-right figure, (C) is for agent based simulations. The black line in (B) divides parameters that give rise to striped patterns, and those that give rise to spots, corresponding images are shown to the left and right of (B). Due to the discreteness of the agent based simulations, Turing patterns are not always stable where they might be in the continuous analogue. We see that the discrete simulations cut off around where we would see stripes in the continuous case, and do not see striped patterns in the discrete case. For different sets of parameters, we can also see Turing patterns in the discrete-stochastic case where they might not occur in the continuous case. For the region where Turing patterns are stable, the continuous theory gives a good prediction of group size and group reproduction rate. The Matlab code and data for this figure is provided in Figure 3—source data 1.10.7554/eLife.34862.009Figure 3—source data 1.Figure 3.
+**Figure 3.:** The top-left figure, (A) shows the group size $2\pi/k_{fast}$ as obtained by our theoretical analysis (appendix); whereas the bottom figure, (B) shows the same for continuous simulations, and the top-right figure, (C) is for agent based simulations. The black line in (B) divides parameters that give rise to striped patterns, and those that give rise to spots, corresponding images are shown to the left and right of (B). Due to the discreteness of the agent based simulations, Turing patterns are not always stable where they might be in the continuous analogue. We see that the discrete simulations cut off around where we would see stripes in the continuous case, and do not see striped patterns in the discrete case. For different sets of parameters, we can also see Turing patterns in the discrete-stochastic case where they might not occur in the continuous case. For the region where Turing patterns are stable, the continuous theory gives a good prediction of group size and group reproduction rate. The Matlab code and data for this figure is provided in Figure 3—source data 1.
 
 In the homogeneous phase, the system is evolutionarily very unstable, since as soon as one cheating mutant emerges, it quickly takes over the entire population, ultimately causing the population to go extinct (Video 1). The group phase tolerates cheaters better, since once a cheater emerges it will take over and compromise the fitness of only one group, while the others will live on. However, in the absence of group fragmentation, novel cheating mutations will ultimately emerge in all groups, and annihilate the population one group at a time (Video 2).
 
@@ -77,41 +99,79 @@ The main contribution of this paper is to demonstrate that stable social coopera
 
 It is well known that evolutionary outcomes can depend on individuals being discrete (Durrett and Levin, 1994). In our model, having a continuous population density can allow for the existence of ‘micro-mutant populations’ which can spread easier between adjacent groups. The discreteness further separates the clusters of microbes from each other, since there cannot exist fractional individuals. In reality microbes are quantized, and we thus expect a discrete simulation to better model the biology. In Figure 3 we present the phase diagram of the system, as obtained by analytical theory, discrete agent based simulations (where microbes are discrete, self-replicating brownian particles), and continuous simulations (where Equations 1,2,3 are solved numerically). In order not to obfuscate the biology, we report our detailed mathematical treatment in the appendix.
 
-## Effect of shear on groups
+### Effect of shear on groups
 
 We quantitatively determine the effect of different flow velocity profiles on the social evolution of the system. A constant fluid flow merely amounts to a change in reference frame, which of course, does not change the evolutionary fate of the population. However, we find that velocity gradients cause significant changes to the social structure, both spatially and temporally. Specifically, we find that large shear rate causes microbial groups to distort and fragment, which in turn facilitates group reproduction. To investigate this effect in detail, we ran simulations for three fluid velocity distributions: Couette flow, Hagen-Poiseuille flow, and Rankine vortex.
 
-## Evolution of sociality in constant shear for a binary phenotype
+### Evolution of sociality in constant shear for a binary phenotype
 
 We first look at a simplified system with just two phenotypes, cheater and altruist, to gain a basic understanding of the mechanism involved. Mutations can cause a switch in social behavior.
 
-To see the effect of shear on social evolution, we introduced Couette flow to the microbial habitat. In this case, the flow velocity takes the formv(x)=vmaxrRz^,where R is the radius of the pipe, and z^ is the longitudinal direction.
+To see the effect of shear on social evolution, we introduced Couette flow to the microbial habitat. In this case, the flow velocity takes the form
 
-The shear rate is the derivative of the flow velocity and is related to the maximum flow rate vmax,σ=dvdr=vmaxR.
+$$
+v(x)=v_{max}\frac{r}{R}z^,
+$$
+
+where $R$ is the radius of the pipe, and $z^$ is the longitudinal direction.
+
+The shear rate is the derivative of the flow velocity and is related to the maximum flow rate $v_{max}$,
+
+$$
+\sigma=\frac{dv}{dr}=\frac{v_{max}}{R}.
+$$
 
 We ran simulations for various shear rates and diffusion constants and observed that shear does not significantly influence the region of parameter space that gives rise to cooperating groups. However if the system parameters are conducive to the formation of groups, shear tears groups apart and increases the rate at which spatially distinct cooperative clusters form.
 
-We find that the group fragmentation rate ω(σ), depends linearly on the shear rate σ (Figure 4)ω(σ)=mσ+ω0,where ω0 is the fragmentation rate solely due to microbial diffusion and can approximately be given by the Turing eigenvalue ω0≈Λmax (see appendix). The constant of proportionality m is given empirically from our simulations and depends on diffusion lengths and group density. This holds in the low density regime. Once the population density becomes large, group-group interactions slow the group reproduction rate and the population saturates.
+We find that the group fragmentation rate $\omega(\sigma)$, depends linearly on the shear rate $\sigma$ (Figure 4)
+
+$$
+\omega(\sigma)=m\sigma+\omega_{0},
+$$
+
+where $\omega_{0}$ is the fragmentation rate solely due to microbial diffusion and can approximately be given by the Turing eigenvalue $\omega_{0}≈Λ_{max}$ (see appendix). The constant of proportionality $m$ is given empirically from our simulations and depends on diffusion lengths and group density. This holds in the low density regime. Once the population density becomes large, group-group interactions slow the group reproduction rate and the population saturates.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34862/elife-34862-fig4-v2.jpg)
 
-**Figure 4.:** (A) Group fragmentation rate versus shear rate. We see that the group fragmentation rate increases linearly with the shear rate. (B) Group population versus shear rate. As the shear distorts and elongates the group, the average group population also increases linearly with shear. (C) Average population versus shear rate for different mutation rates. Simulations were run for a time of  s and averaged over 10 runs for each shear rate and mutation rate. Error bars correspond to one standard deviation. Here, a mutation corresponds to a full cheater, with no public good secretion. The population goes extinct under larger mutation rates unless the shear rate is above the critical value. The critical shear values for different mutation rates are roughly obtained by 10 and are shown by the vertical dashed lines corresponding to curves of the same color. The Matlab code and data for this figure is provided in 5.0×105Figure 4—source data 1.10.7554/eLife.34862.011Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Group fragmentation rate versus shear rate. We see that the group fragmentation rate increases linearly with the shear rate. (B) Group population versus shear rate. As the shear distorts and elongates the group, the average group population also increases linearly with shear. (C) Average population versus shear rate for different mutation rates. Simulations were run for a time of $5.0\times10^{5}$ s and averaged over 10 runs for each shear rate and mutation rate. Error bars correspond to one standard deviation. Here, a mutation corresponds to a full cheater, with no public good secretion. The population goes extinct under larger mutation rates unless the shear rate is above the critical value. The critical shear values for different mutation rates are roughly obtained by 10 and are shown by the vertical dashed lines corresponding to curves of the same color. The Matlab code and data for this figure is provided in Figure 4—source data 1.
 
-Larger shear corresponds to a faster rate of group fragmentation, thus enabling or enhancing social behavior in the microbial population. Given the group size and fragmentation rate as a function of shear, we can calculate roughly where the critical shearrate is for sociality. We also find that the group population N increases linearly with shear,N(σ)=nσ+N0.where n and N0 are the slope and intercept of the line in Figure 4B. This also influences where the critical shear rate will be.
+Larger shear corresponds to a faster rate of group fragmentation, thus enabling or enhancing social behavior in the microbial population. Given the group size and fragmentation rate as a function of shear, we can calculate roughly where the critical shearrate is for sociality. We also find that the group population $N$ increases linearly with shear,
 
-Cooperation is stable if a group is able to fragment before a cheating strain emerges and proliferates in the group. Therefore, for stability, we need the take-over time to exceed the time it takes for a group to reproduce. A mutant emerges at a rate of μN(σ) (we emphasize that μ is not the generic mutation rate, but the rate at which a particular social gene mutates). Once a mutant emerges, it takes some time τd to spread to where the daughter group forms. τd will depend on where the mutant first emerges. Assuming a uniform distribution, and taking the diffusion time in two dimensions as a function of radius r, τd(r)=r2/4db, we obtain<τd>=∫0R r24db2rR2dr=R28db,where R is the group radius. The take-over rate is then given by taking the inverse of the total take-over time, and the critical shear rate σc necessary for social cooperation is given by equating the take-over rate with the reproduction rate,(4)ω(σc)=[ 1μN(σc)+<τd> ]−1.
+$$
+N(\sigma)=n\sigma+N_{0}.
+$$
 
-The critical shear rate σc above which the system can maintain stable cooperation is then given by the positive root,(5)σc=−bσ+bσ2−4aσcσ2aσwhere aσ=<τd>μmn,bσ=<τd>μnω0+<τd>μmN0+m−μn, and cσ=<τd>μN0ω0+ω0−μN0.
+where $n$ and $N_{0}$ are the slope and intercept of the line in Figure 4B. This also influences where the critical shear rate will be.
 
-The values obtained from Equation 5 is indicated by the vertical dashed lines in Figure 4 and agrees with the computationally observed critical shear reasonably well. It may be possible to improve this formula further by taking into account additional factors, such as the non-uniform spatial distribution of population within a group and the elongation of groups with shear. Furthermore, as the mutants increase in numbers it becomes more likely that one of them crosses over the daughter group, thereby reducing further the expected <τd>. We see better agreement with analytical theory and simulations at lower mutation rates, since these corrections are mainly to the diffusion time <τd>, and become more significant at higher mutation rates, where <τd>≫1/μN, (cf. Equation 4).
+Cooperation is stable if a group is able to fragment before a cheating strain emerges and proliferates in the group. Therefore, for stability, we need the take-over time to exceed the time it takes for a group to reproduce. A mutant emerges at a rate of $\muN(\sigma)$ (we emphasize that $\mu$ is not the generic mutation rate, but the rate at which a particular social gene mutates). Once a mutant emerges, it takes some time $\tau_{d}$ to spread to where the daughter group forms. $\tau_{d}$ will depend on where the mutant first emerges. Assuming a uniform distribution, and taking the diffusion time in two dimensions as a function of radius $r$, $\tau_{d}(r)=r^{2}/4d_{b}$, we obtain
+
+$$
+<\tau_{d}>=\int0R \frac{r^{2}}{4d_{b}}\frac{2r}{R^{2}}dr=\frac{R^{2}}{8d_{b}},
+$$
+
+where $R$ is the group radius. The take-over rate is then given by taking the inverse of the total take-over time, and the critical shear rate $\sigma_{c}$ necessary for social cooperation is given by equating the take-over rate with the reproduction rate,
+
+$$
+\omega(\sigma_{c})=[\frac{1}{\muN(\sigma_{c})}+<\tau_{d}>]^{−1}.
+$$
+
+The critical shear rate $\sigma_{c}$ above which the system can maintain stable cooperation is then given by the positive root,
+
+$$
+\sigma_{c}=\frac{−b_{\sigma}+\sqrt{b_{\sigma}^{2}−4a_{\sigma}c_{\sigma}}}{2a_{\sigma}}
+$$
+
+where $a_{\sigma}=<\tau_{d}>\mumn,b_{\sigma}=<\tau_{d}>\mun\omega_{0}+<\tau_{d}>\mumN_{0}+m−\mun,$ and $c_{\sigma}=<\tau_{d}>\muN_{0}\omega_{0}+\omega_{0}−\muN_{0}$.
+
+The values obtained from Equation 5 is indicated by the vertical dashed lines in Figure 4 and agrees with the computationally observed critical shear reasonably well. It may be possible to improve this formula further by taking into account additional factors, such as the non-uniform spatial distribution of population within a group and the elongation of groups with shear. Furthermore, as the mutants increase in numbers it becomes more likely that one of them crosses over the daughter group, thereby reducing further the expected $<\tau_{d}>$. We see better agreement with analytical theory and simulations at lower mutation rates, since these corrections are mainly to the diffusion time $<\tau_{d}>$, and become more significant at higher mutation rates, where $<\tau_{d}>≫1/\muN$, (cf. Equation 4).
 
 If shear is below the critical value (Equation 5), the system will be in a non-social state. Ultimately, cheaters will take over, and wipe out all groups. When shear is increased above the critical value however, the system will transition to a stable social state, thereby maintaining its fitness and dense population indefinitely. Figure 4 shows the long-time population of the system versus the shear rate. The population goes extinct under larger mutation rates unless the shear rate is above the critical value.
 
-When is shear necessary, and when is it just a sufficient condition for cooperation? By setting σc=0 in Equation 5 and solving for μ we can also obtain the critical mutation rate above which shear is necessary in order to have social cooperation. We get μc=6.9×10−7 analytically and our simulations show a critical mutation rate around μc=5.5×10−7.
+When is shear necessary, and when is it just a sufficient condition for cooperation? By setting $\sigma_{c}=0$ in Equation 5 and solving for $\mu$ we can also obtain the critical mutation rate above which shear is necessary in order to have social cooperation. We get $\mu_{c}=6.9\times10^{−7}$ analytically and our simulations show a critical mutation rate around $\mu_{c}=5.5\times10^{−7}$.
 
-## Evolution of sociality in constant shear for a continuum of phenotypes
+### Evolution of sociality in constant shear for a continuum of phenotypes
 
-As we will see, we obtain similar results when the available phenotypes include a continuum of social behaviors. In this case, a mutation changes the secretion rate of a microbe by a uniformly chosen random number between 0 and 1 s−1.
+As we will see, we obtain similar results when the available phenotypes include a continuum of social behaviors. In this case, a mutation changes the secretion rate of a microbe by a uniformly chosen random number between 0 and 1 $s^{−1}$.
 
 We observe from our simulations, that mutations that increase the secretion rate of a microbe do not fixate, since the microbe now pays a higher cost and is less fit than its neighbors. However, once a mutation that lowers the secretion rate of a microbe occurs within a group, it quickly takes over the entire group, leaving individual groups homogeneous in secretion rate.
 
@@ -121,31 +181,45 @@ Groups with different secretion rates reproduce at different rates. Groups with 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34862/elife-34862-fig5-v2.jpg)
 
-**Figure 5.:** Individual groups are essentially homogeneous in secretion space, whereas the meta-population contains a distribution of groups with different secretion rates (Appendix 1—figure 1). (A) Groups that have a higher secretion rate reproduce quicker than those of lower secretion rate. Shear works to increase the reproduction rate of groups. (B) Just as in the two phenotype case, the population of the system increases with shear, since groups are able to split apart quicker than novel cheating mutations occur. (C) The average secretion rate of the entire population generally increases with shear and saturates around where the group reproduction rate is sufficient to maintain the population. Simulations were run for a time of  s and averaged over 80 runs for each shear rate and under a mutation rate of 2.0×105. Error bars correspond to one standard deviation. The Matlab code and data for this figure is provided in μ=1.6×10−6s−1Figure 5—source data 1.10.7554/eLife.34862.013Figure 5—source data 1.Figure 5.
+**Figure 5.:** Individual groups are essentially homogeneous in secretion space, whereas the meta-population contains a distribution of groups with different secretion rates (Appendix 1—figure 1). (A) Groups that have a higher secretion rate reproduce quicker than those of lower secretion rate. Shear works to increase the reproduction rate of groups. (B) Just as in the two phenotype case, the population of the system increases with shear, since groups are able to split apart quicker than novel cheating mutations occur. (C) The average secretion rate of the entire population generally increases with shear and saturates around where the group reproduction rate is sufficient to maintain the population. Simulations were run for a time of $2.0\times10^{5}$ s and averaged over 80 runs for each shear rate and under a mutation rate of $\mu=1.6\times10^{−6}s^{−1}$. Error bars correspond to one standard deviation. The Matlab code and data for this figure is provided in Figure 5—source data 1.
 
 We therefore have the same qualitative result as in the two phenotype case, if shear is below some critical value, the system will be in a non-social state. Ultimately, cheaters will take over, and wipe out all groups. As before, the social state of the population can transition from a non-cooperative state to a cooperative one with increased flow shear.
 
-## Evolution of sociality in a flowing pipe
+### Evolution of sociality in a flowing pipe
 
-We now further generalize our results by looking at laminar flow with fixed boundaries, and with a continuum of public good secretion rates. For Hagen-Poiseuille flow, the shear rate varies linearly with the radius, taking its maximum value adjacent to the boundaries, when r=R. The flow and shear profiles are given as,v=vmax(1−r2R2),dvdr=−2vmaxrR2.
+We now further generalize our results by looking at laminar flow with fixed boundaries, and with a continuum of public good secretion rates. For Hagen-Poiseuille flow, the shear rate varies linearly with the radius, taking its maximum value adjacent to the boundaries, when $r=R$. The flow and shear profiles are given as,
+
+$$
+v=v_{max}(1−\frac{r^{2}}{R^{2}}),\frac{dv}{dr}=−2v_{max}\frac{r}{R^{2}}.
+$$
 
 We therefore expect to see groups fragment quicker at the boundary, leading to larger cooperation, higher average secretion rate, and larger population, which is indeed what we do see (Figure 6, Video 4).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34862/elife-34862-fig6-v2.jpg)
 
-**Figure 6.:** The top row gives simulation snapshots of the system in a Hagen-Poiseuille flow in a pipe (A) and of the system in a Rankine vortex (B). The middle row gives the average microbial population and the shear rate magnitude versus distance from the center of the pipe (C) and the center of the Rankine vortex (D). Since shear is spatially dependent, the population is localized in regions of large shear. For Hagen-Poiseuille flow, we see that the population is larger at the boundaries, where the shear is also larger (C). This is because groups fragment quicker at the boundaries and are able to overcome take-over by mutation, whereas near the center they cannot. For the Rankine vortex we also see that the population follows very closely to the shear (D), which suggests that the growth is proportional to shear. We caution that this holds in the low density limit. At higher densities the population saturates and is no longer proportional to shear. The bottom row gives the average public good secretion rates of the entire population for Hagen-Poiseuille flow (E) and for Rankine vortex flow (F). Again, regions of larger shear admit more cooperative populations with larger public good secretion rates. Simulations were run for a duration of  s under a mutation rate of 2.0×105 and data was averaged over 200 runs. The undulations observed in the population plots are due to the finite size of the groups. Groups form layers of width equal to the group diameter. The population curve therefore shows undulations of width equal to the group width. Simulation videos of Hagen-Poiseuille flow and Rankine vortex flow are provided in μ=2×10−6s−1Videos 4, 5 and Matlab code and data for (C)-(F) is given in Figure 6—source data 1.10.7554/eLife.34862.015Figure 6—source data 1.Figure 6.
+**Figure 6.:** The top row gives simulation snapshots of the system in a Hagen-Poiseuille flow in a pipe (A) and of the system in a Rankine vortex (B). The middle row gives the average microbial population and the shear rate magnitude versus distance from the center of the pipe (C) and the center of the Rankine vortex (D). Since shear is spatially dependent, the population is localized in regions of large shear. For Hagen-Poiseuille flow, we see that the population is larger at the boundaries, where the shear is also larger (C). This is because groups fragment quicker at the boundaries and are able to overcome take-over by mutation, whereas near the center they cannot. For the Rankine vortex we also see that the population follows very closely to the shear (D), which suggests that the growth is proportional to shear. We caution that this holds in the low density limit. At higher densities the population saturates and is no longer proportional to shear. The bottom row gives the average public good secretion rates of the entire population for Hagen-Poiseuille flow (E) and for Rankine vortex flow (F). Again, regions of larger shear admit more cooperative populations with larger public good secretion rates. Simulations were run for a duration of $2.0\times10^{5}$ s under a mutation rate of $\mu=2\times10^{−6}s^{−1}$ and data was averaged over 200 runs. The undulations observed in the population plots are due to the finite size of the groups. Groups form layers of width equal to the group diameter. The population curve therefore shows undulations of width equal to the group width. Simulation videos of Hagen-Poiseuille flow and Rankine vortex flow are provided in Videos 4, 5 and Matlab code and data for (C)-(F) is given in Figure 6—source data 1.
+
+![Video 4.](https://cdn.elifesciences.org/articles/34862/elife-34862-video4.mp4.jpg)
 
 Earlier studies have proposed and shown that shear trapping due to the interaction between bacterial motility and fluid shear can result in preferential attachment to surfaces, (Rusconi et al., 2014; Berke et al., 2008; Li et al., 2011). In a similar spirit, we suggest that inhabiting surfaces may have the additional advantage of enhanced sociality, due to shear driven group fragmentation and dispersal.
 
-## Evolution of sociality in vortices
+### Evolution of sociality in vortices
 
 In a vortex, the region above the critical shear value constitutes an annulus. Thus, we expect social behavior to be localized. Any point in the fluid outside this annulus will be taken over and destroyed by cheaters. In our simulations, at steady state we indeed see clusters whirling around exclusively within annulus, neither too near, nor too far from the vortex core (Video 5). Life cannot exist outside this annulus, as cheaters kill these groups.
 
-The Rankine vortex in two dimensions is characterized by a vortex radius R and a rotation rate Γ. The shear rate acting on a group acts tangential to the flow. The velocity profile and shear magnitude are given as,v={Γr2πR2θ^,r≤RΓ2πrθ^,r>Rσ={0,r≤RΓ2πr2,r>Rwhere r2=x2+y2.
+![Video 5.](https://cdn.elifesciences.org/articles/34862/elife-34862-video5.mp4.jpg)
 
-The shear rate is then a maximum at the minimum value of r which occurs at the vortex radius R. We therefore expect to see the largest concentration of groups at the vortex radius, which is what we observe in our simulations (Figure 6).
+The Rankine vortex in two dimensions is characterized by a vortex radius $R$ and a rotation rate $Γ$. The shear rate acting on a group acts tangential to the flow. The velocity profile and shear magnitude are given as,
 
-## Limitations
+$$
+v={\frac{Γr}{2\piR^{2}}\theta^,r\leqR\frac{Γ}{2\pir}\theta^,r>R\sigma={0,r\leqR\frac{Γ}{2\pir^{2}},r>R
+$$
+
+where $r^{2}=x^{2}+y^{2}$.
+
+The shear rate is then a maximum at the minimum value of $r$ which occurs at the vortex radius $R$. We therefore expect to see the largest concentration of groups at the vortex radius, which is what we observe in our simulations (Figure 6).
+
+### Limitations
 
 While we paid close attention to physical realism, we also made important simplifying assumptions which under certain circumstances, may lead to incorrect conclusions. We caution the reader by enumerating the limitations of our model. First, since many microorganisms live in a low Reynolds number environment, we have chosen to neglect the inertia of microorganisms. However in reality, the microorganisms influence the flow around them. This effect will be particularly significant for a dense microbial population, especially when the microbes stick onto one other, or integrate via extracellular polymers. A more sophisticated model would include the coupling of the microbes to the flow. Secondly, the finite size and shapes of the microorganisms have been neglected. Instead, we have treated microbes as point particles, which will also invalidate our model in the dense population limit. Lastly, real microbes display a large number of complex behaviors such as biofilm formation and chemotactic migration. Here we have ignored the active response of microorganisms to the chemical gradients that surround them and to the surfaces they might attach and migrate. Instead, we took them as simple Brownian particles.
 
@@ -161,6 +235,92 @@ In our physics-based model, groups emerge from individual-level dynamics and sel
 
 ## Materials and methods
 
-The analytical conclusions we derive from our system (Equations 1,2,3) has been guided and supplemented by an agent based stochastic simulation. Videos of simulations are provided in Videos 1–5. Our simulation algorithm is as follows: at each time interval, Δt, the microbes (1) diffuse by Brownian motion, with step size δ derived from the diffusion constant and a bias dependent on the flow velocity, δ=4dbΔt+vΔt, (2) secrete chemicals locally that then diffuse and advect using a finite difference scheme, and (3) reproduce or die with a probability dependent on their local fitness given by f=Δt[ α1c1c1+k1−α2c2c2+k2−β1s1 ]. If f is negative, the microbes die with probability 1, if f is between 0 and 1 they reproduce with probability f, and if f is larger than 1, they produce number of offspring given by the integer part of f and another with probability given by the decimal part of f. Upon reproduction, random mutations may alter the secretion rate of the public good –and thus the reproduction rate– of the microbes. Mutations occur with probability μ and can change the secretion rate by a random number between 0 and s1. The secretion rate is assumed to be heritable, and constant in time. Numerical simulations for figures were performed by implementing the model described above using the Matlab programming language and simulated using Matlab (Mathworks, Inc.). The source code for discrete simulations is provided in Source code 1 and the source code for continuous simulations used in Figure 3B is provided in Source code 2.
+The analytical conclusions we derive from our system (Equations 1,2,3) has been guided and supplemented by an agent based stochastic simulation. Videos of simulations are provided in Videos 1–5. Our simulation algorithm is as follows: at each time interval, $Δt$, the microbes (1) diffuse by Brownian motion, with step size $\delta$ derived from the diffusion constant and a bias dependent on the flow velocity, $\delta=\sqrt{4d_{b}Δt}+vΔt$, (2) secrete chemicals locally that then diffuse and advect using a finite difference scheme, and (3) reproduce or die with a probability dependent on their local fitness given by $f=Δt[\alpha_{1}\frac{c_{1}}{c_{1}+k_{1}}−\alpha_{2}\frac{c_{2}}{c_{2}+k_{2}}−\beta_{1}s_{1}]$. If $f$ is negative, the microbes die with probability 1, if $f$ is between 0 and 1 they reproduce with probability $f$, and if $f$ is larger than 1, they produce number of offspring given by the integer part of $f$ and another with probability given by the decimal part of $f$. Upon reproduction, random mutations may alter the secretion rate of the public good –and thus the reproduction rate– of the microbes. Mutations occur with probability $\mu$ and can change the secretion rate by a random number between $0$ and $s_{1}$. The secretion rate is assumed to be heritable, and constant in time. Numerical simulations for figures were performed by implementing the model described above using the Matlab programming language and simulated using Matlab (Mathworks, Inc.). The source code for discrete simulations is provided in Source code 1 and the source code for continuous simulations used in Figure 3B is provided in Source code 2.
 
 A summary of the system parameters is given in Table 1, along with typical ranges for their values used in the simulations. The relevant ratios of parameters are consistent with those observed experimentally (Kim, 1996; Ma et al., 2005).
+
+**Table 1.**
+ Summary of system parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Definition</th>
+      <th>Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>db</td>
+      <td>Microbial diffusion constant</td>
+      <td>0.3906×10−6cm2s−1</td>
+    </tr>
+    <tr>
+      <td>d1</td>
+      <td>Public good diffusion constant</td>
+      <td>(1to60)×10−6cm2s−1</td>
+    </tr>
+    <tr>
+      <td>d2</td>
+      <td>Waste diffusion constant</td>
+      <td>(1to50)×10−6cm2s−1</td>
+    </tr>
+    <tr>
+      <td>v</td>
+      <td>Flow velocity</td>
+      <td>(0to100)×10−5cms−1</td>
+    </tr>
+    <tr>
+      <td>λ1</td>
+      <td>Public good decay constant</td>
+      <td>5.0×10−3s−1</td>
+    </tr>
+    <tr>
+      <td>λ2</td>
+      <td>Waste decay constant</td>
+      <td>1.5×10−3s−1</td>
+    </tr>
+    <tr>
+      <td>k1</td>
+      <td>Public good saturation</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>k2</td>
+      <td>Waste saturation</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>s1</td>
+      <td>Public good secretion rate</td>
+      <td>(0to1.0)s−1</td>
+    </tr>
+    <tr>
+      <td>s2</td>
+      <td>Waste secretion rate</td>
+      <td>(0to1.0)s−1</td>
+    </tr>
+    <tr>
+      <td>α1</td>
+      <td>Benefit of public good</td>
+      <td>7.5×10−3s−1</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>Harm of waste compound</td>
+      <td>8.0×10−3s−1</td>
+    </tr>
+    <tr>
+      <td>β1</td>
+      <td>Cost of secretion</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>Mutation rate</td>
+      <td>(6.0to20.0)×10−7s−1</td>
+    </tr>
+  </tbody>
+</table>

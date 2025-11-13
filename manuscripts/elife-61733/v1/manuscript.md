@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Organ laterality refers to the left-right asymmetry in disposition and conformation of internal organs and is established during embryogenesis. The heart is the first organ to display visible left-right asymmetries through its left-sided positioning and rightward looping. Here, we present a new zebrafish loss-of-function allele for tbx5a , which displays defective rightward cardiac looping morphogenesis. By mapping individual cardiomyocyte behavior during cardiac looping, we establish that ventricular and atrial cardiomyocytes rearrange in distinct directions. As a consequence, the cardiac chambers twist around the atrioventricular canal resulting in torsion of the heart tube, which is compromised in tbx5a mutants. Pharmacological treatment and ex vivo culture establishes that the cardiac twisting depends on intrinsic mechanisms and is independent from cardiac growth. Furthermore, genetic experiments indicate that looping requires proper tissue patterning. We conclude that cardiac looping involves twisting of the chambers around the atrioventricular canal, which requires correct tissue patterning by Tbx5a.
+Organ laterality refers to the left-right asymmetry in disposition and conformation of internal organs and is established during embryogenesis. The heart is the first organ to display visible left-right asymmetries through its left-sided positioning and rightward looping. Here, we present a new zebrafish loss-of-function allele for tbx5a, which displays defective rightward cardiac looping morphogenesis. By mapping individual cardiomyocyte behavior during cardiac looping, we establish that ventricular and atrial cardiomyocytes rearrange in distinct directions. As a consequence, the cardiac chambers twist around the atrioventricular canal resulting in torsion of the heart tube, which is compromised in tbx5a mutants. Pharmacological treatment and ex vivo culture establishes that the cardiac twisting depends on intrinsic mechanisms and is independent from cardiac growth. Furthermore, genetic experiments indicate that looping requires proper tissue patterning. We conclude that cardiac looping involves twisting of the chambers around the atrioventricular canal, which requires correct tissue patterning by Tbx5a.
 
 ## Introduction
 
@@ -39,9 +39,17 @@ To identify novel factors and mechanisms that drive cardiac looping, we have per
 
 ## Results
 
-## Tbx5a is required for cardiac looping and patterning
+### Tbx5a is required for cardiac looping and patterning
 
 We have performed several forward genetic screens to identify genes that regulate LR patterning and heart looping morphogenesis (Noël et al., 2013; Smith et al., 2011a; Tessadori et al., 2015; Wienholds et al., 2003). In short, embryos were screened around 28 hpf for correct formation and asymmetry of the cardiac tube, and at 50 hpf to assess cardiac looping. In one of these screens, the recessive and lethal oudegracht (oug) mutation was identified, named after the stretched S-shaped canal in the city centre of Utrecht (NL). The oug mutants displayed cardiac edema, defective cardiac looping at 50 hpf (Figure 1A–C) and reduced heartbeat rate (not shown). LR patterning was unaffected in oug embryos since the direction of cardiac jogging was predominantly leftward and the laterality of the visceral organs was not affected (Figure 1C). Morphologically, oug mutants grow normally, although importantly they lack development of the pectoral fin buds (Figure 1B). Using positional cloning and direct sequencing, we determined that oug mutants carry a point mutation resulting in a premature truncation of the Tbx5a transcription factor (Figure 1D–F; ENSDARG00000024894). The oug mutation is a recessive, fully phenotypically penetrant mutation as crossing of heterozygous oug carriers yielded approximately 25% progeny displaying a cardiac looping defect and absence of fin buds (Figure 1G), conforming to the corresponding Mendelian inheritance pattern. To confirm that oug affects the tbx5a locus (NM_130915), we carried out a complementation test with a previously identified tbx5a mutant allele, heartstrings (hst) which was also reported to display cardiac looping and fin bud formation defects (Garrity et al., 2002). Crossing of heterozygous oug and hst carriers yielded about 25% embryos in which both of these phenotypes were present, thereby confirming that the heart and fin phenotypes observed in oug embryos are caused by a mutation in tbx5a (Figure 1G).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig1-v1.jpg)
+
+**Figure 1.:** (A) Lateral view of wt and oug mutant embryos at 52 hpf. Note the cardiac edema in oug. (B) At 72 hpf dorsal observation of oug mutant embryos reveals absence of lateral fins. (C) Two dpf oug mutant embryos display defective cardiac looping but normal asymmetric positioning of the internal organs. L, liver; P, pancreas (D) Mapping and genomic position of the oug mutation (indicated by the asterix). (E) A single-nucleotide substitution in tbx5a (G to A) resulting in a tryptophan (Trp; TGG) to stop (TGA) mutation segregates with the oug phenotype. (F) Tbx5a is truncated at amino acid 147 in oug, in its T-Box domain. The hst allele (Q316X; Garrity et al., 2002) is included for comparison (G) Complementation test. Outcross of oug+/- to hst+/- fails to complement the oug cardiac and pectoral fin bud phenotype. (H) Gene patterning is affected in oug hearts at 2dpf. Expression of nppa is reduced in the cardiac chambers while expression of bmp4 and tbx2b is expanded in the AV canal. Cardiac cushion markers has2 and versican also show expanded expression domains. ISH for hst is shown for comparison: while bmp4 and has2 display expanded expression domains as in oug, tbx2b is barely detectable. Transcripts for tbx5a are detected in wt and oug mutants. (I) Transcripts for tbx5a can be detected evenly in transversal sections through the entire 2 dpf heart tube. (J) Luciferase assay establishes that oug retains virtually no activity. Mean values ± SEM are shown. Scale bars (A,B,C,H): 100 µm; (I): 50 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** ISH for the cardiomyocyte marker myl7 in 48 hpf embryos. A wild-type heart which has completed dextral looping is shown for comparison in (A). (B) Representative images of oug mutant hearts at 48 hpf. All hearts display mild dextral looping (compare with (A)). (C) Looping phenotypes in the hst mutant range from substantial dextral looping (left panels) to moderate sinistral looping (right panels). Scale bar: 100 µm.
 
 Embryos homozygous for the oug/tbx5a allele display consistent reduced dextral looping (Figure 1—figure supplement 1), especially noticeable when compared to the relative variability in the looping defect of hst (Figure 1—figure supplement 1).
 
@@ -51,41 +59,97 @@ The oug/tbx5a allele (hereafter, and throughout the manuscript referred to as ou
 
 To address whether the difference in AV canal phenotype (i.e. expression of tbx2b) between oug and hst mutants could be due to differences in activity of the perspective Tbx5a mutations, we carried out an in vitro test for Tbx5a activity (Figure 1J). Tbx5 activity was measured using a regulatory region of the nppa gene that contains a T-box-binding site driving luciferase expression. Our results show that while Tbx5a with the oug mutation causes an almost complete loss of luciferase expression, Tbx5a with the hst mutation retained a significantly higher capacity to induce luciferase expression (Figure 1J). Hence, the defect in cardiac gene patterning and accompanying failure to complete cardiac looping in oug mutant embryos are the result of loss of Tbx5a function.
 
-## Time-lapse imaging reveals twisting of the chambers around the AV canal
+### Time-lapse imaging reveals twisting of the chambers around the AV canal
 
 Cardiac looping in zebrafish can be observed from 28 hpf and is considered to be completed, including chamber ballooning, at around 55 hpf. During this process, the heart tube not only changes position with respect to the overall geometry of the embryo (Figure 2—figure supplement 1) but also seemingly undergoes flat bending (or planar buckling) along its anterior-posterior axis (Figure 2—figure supplement 1). To get more insight into this transformation, we have defined a left-right and a superior-inferior axis of the heart tube at 28 hpf (Figure 2A) and we followed the movements of individual cardiomyocytes approximately from 28 hpf to 38 hpf (Figure 2A; Figure 2—figure supplement 2; Figure 2—video 1) in hearts in which cardiac contractions were suppressed (Sehnert et al., 2002). At this early stage, the embryonic zebrafish heart displays normal heart morphogenesis in the absence of heartbeat (Noël et al., 2013). Individual cardiomyocytes were tracked (Figure 2B) and the start and end point of each trace was used to obtain the individual track displacement, hence quantifying the displacement of each tracked cardiomyocyte and representing it as a vector (Figure 2C; Figure 2—figure supplement 2; Figure 2—video 2). Based on the starting location at the beginning of their corresponding track, cardiomyocytes were categorized in three regions: ventricle, atrium, and AV canal (Figure 2D). Visual inspection of these ‘displacement maps’ revealed coherent cellular movements within the heart chambers (Figure 2E–F). Comparison of the displacement tracks in the superior and inferior sides of the heart tube revealed large differences. Most strikingly, the vectors in the superior and inferior sides of the atrium pointed in different directions (Figure 2E–F). If planar buckling was the principal contributor to the transformation, the expected displacement vectors for the superior and inferior sides of each chamber would be similar. Instead, in the atrium these vectors pointing in near opposite directions suggested that the atrium rotates during cardiac looping. This impression was corroborated by the presence of cardiomyocyte tracks with major Z-displacement at the outer (Figure 2G; asterisks) and inner (Figure 2H; arrowheads) curvatures of the atrium, both compatible with a rotational transformation of the chamber. To more precisely quantify rotation of the cardiac chambers, we subjected all time-lapse movies to the following procedure: first, we stabilized residual drift of the heart tube by rooting the centroid (for definition see Appendix 1-Supplementary Methods) of the AV canal at the origin (0,0,0) of the coordinate system throughout all timepoints (Figure 2I). Second, we identified two axes: the first running from the AV canal centroid to the centroid of the ventricle, the other running from the AV canal to the centroid of the atrium. For each timepoint, we unfolded the axis by rotating the positions of the entire atrium and ventricle, with the AV canal acting as a ‘hinge’ rooted at the origin, to make the axes overlap with their respective position at the start of the timelapse (Figure 2I’). After this ‘computational unfolding’ only the rotation of the cardiomyocytes around either the atrium axis or the ventricle axis remained in the dataset. Third, to quantify this rotation, we measured the angle α subtended between the starting and ending cellular positions at consecutive time points (Figure 2I’’; Figure 2—video 3). The rotational velocity ω of the cells is given by this angle divided by the time ∆t between two timepoints (Supplementary Equation 17 in Supplementary Methods). By integrating the average of all cells’ rotational velocity to time (i.e. cumulative addition of the average rotation angles at consecutive timepoints to obtain the total angle traveled), we obtain the rotation of each chamber around each of the axes (Figure 2J; for detailed explanation see Appendix 1-Supplementary Methods). We observed that the absolute value of the average total rotation steadily increases for both the ventricle and the atrium in all hearts (n = 5), with clearly separating values for the ventricle (negative) and atrium (positive) (Figure 2J), indicating that the chambers rotate in opposite directions. Values for cells in the AV canal displayed a much more erratic behavior, with variability in positive and negative total rotation angle values between and within the tracks (Figure 2—figure supplement 2). During cardiac looping, the angular velocities of the ventricle (negative) and atrium (positive) differ consistently from one another (Figure 2K), while the AV canal hardly rotates (Figure 2—figure supplement 2). Altogether these observations show that rotation of the ventricle and the atrium in opposite directions around the AV canal twists the heart tube during development.
 
-## Genetic tracing of left and right cardiac fields reveals twisting of the cardiac tube
+![Figure 2.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig2-v1.jpg)
+
+**Figure 2.:** (A) Time-lapse imaging is carried out on tg(myl7:Gal4FF; UAS:H2A-GFP) embryos. In the 28 hpf panel, the dashed line indicates the position of the transversal section shown in the bottom left corner, in which the superior (S), inferior (I), right (R) and left (L) sides of the heart tube are defined. One representative heart is shown. A: anterior; P: posterior. (B) Total tracks (Ventral View). Each track is color-coded and is assigned an ID number. (C) Track displacement vectors for each single trace. (D) Track displacement vectors to be analyzed are selected, categorized by visual inspection and color-labeled accordingly. (E) Cardiac displacement vectors on the superior side of the ventricle and atrium and (F) on the inferior side of the cardiac chambers. (G) Displacement of cardiomyocytes at the outer curvature (asterisks) and (H) at the inner curvature (arrowheads) of the atrium are compatible with rotation of the chamber. (I–I’’') Computational unfolding and angular velocity measurement. (I-I'') Steps 1 and 2 (I, I') taken to computationally unfold the heart tube, resulting in the vector map shown in I''. The angular velocity of the cardiomyocytes is then calculated in the plane perpendicular to the axis (I'''). A detailed description of the methodology is available in the SI (J) Cumulative rotation angle for the ventricle (shades of red) and atrium (shades of blue) in wild-type hearts. Note the opposite direction of rotation of the two chambers. Positive values represent anti-clockwise rotation and negative values represent clockwise rotation with respect to the outflow of the heart. (K) Comparison of the average angular velocity for each replicate per 1.5 hr time window displayed by the chambers analyzed in (J). Horizontal bars: mean values. Scale bars: 100 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Explanatory cartoons illustrating the change in orientation of the heart in the zebrafish embryo between 28 hpf and 48 hpf. (A) Lateral (left) view of the embryo at 28 hpf. The heart tube has completed cardiac jogging. It has elongated leftwards (see dorsal view in A’) and roughly has a conical shape, with a narrow opening at the anterior pole (AP) and a broader opening at the venous pole (VP) (see also C). Note that the venous pole is located anteriorly in relation to the arterial pole (B–B’) As development proceeds, the heart tube shifts forward with respect to the general anterior-posterior axis of the embryo (compare A and B) and positions itself ventrally (B’) with respect to such axis. Hence, from an unchanged position (eye cartoon in A and B) the heart tube position flips with respect to the axis of the embryo. Note that by 48 hpf the venous pole is now located posteriorly in relation to the arterial pole (C) Representative Z-stack projections of tg(myl7:Gal4FF; UAS:RFP) hearts at 28 hpf, 30 hpf, 32 hpf, 36 hpf, 40 hpf, and 48 hpf. VP: Venous Pole; AP: Arterial Pole; Atr.: Atrium; Ventr.:Ventricle; IF: Inflow; OFT: Outflow Tract; AV canal: Atrio-Ventricular Canal. Scale bar: 100 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Track displacement vectors for wildtype hearts wt2, wt3, wt4, and wt5. (A’) Vector maps for wildtype hearts wt2, wt3, wt4 and wt5 after computational unfolding. Ventricle (red), Atrium (blue/cyan) and AV canal (white) vectors are reported as for wt1 in Figure 2. For all hearts presented in this figure supplement: timelapses for tg(myl7:Gal4FF; UAS:H2A-GFP) are available as Figure 2—videos 4–7; displacement vectors (360° rotation) as Figure 2—videos 8–11; computational processing of heart timelapses as Figure 2—videos 12–15. (B) Left panel: Total cumulative rotation angle for the AV canal in the analyzed wildtype hearts. Right panel: average angular velocity per 1.5 hr time window displayed by the AV canal (AVC) of the hearts analyzed in the left panel. Scale bar: 100 µm.
+
+### Genetic tracing of left and right cardiac fields reveals twisting of the cardiac tube
 
 During linear heart tube formation the cardiac disc rotates in a clockwise direction (from a dorsal view), while at the same time invagination of the right- and posterior sides results in a three-dimensional cone (Baker et al., 2008; Rohr et al., 2008; Smith et al., 2008; de Campos-Baptista et al., 2008). As a consequence of this rotation and folding, the cardiomyocytes originating from the left cardiac field form the superior side of the tube, while cells originating from the right cardiac field form the inferior side at approximately 24 hpf (Bakkers et al., 2009). A model has been proposed in which this clockwise rotation is followed by a counterclockwise rotation just before or during looping, which would restore the original left-right orientation of the cardiac cells (Baker et al., 2008). This two-rotation model would not be compatible with our observations from the cell tracking of ventricular cardiomyocytes. In an attempt to resolve this, we generated a new transgenic line that would allow an accurate tracing of cells derived from the left and right cardiac fields. The transgenic line, referred to as tg(0.2Intr1spaw:GFP) (Figure 3—figure supplement 1) was made by using a highly conserved 0.2 kb sequence in the first intron of the Nodal-related gene spaw, which acts as an asymmetric enhancer (ASE; Fan et al., 2007; Norris and Robertson, 1999). This ASE sequence drives GFP expression in the left lateral plate mesoderm (LPM) during somatogenesis. While spaw mRNA is no longer detectable in the left heart field beyond 30 hpf, the stability of the fluorescent protein allows us to follow left-derived GFP-positive cells up to 2 dpf. This line could therefore be used in combination with a myl7 fluorescent reporter to trace cells originating from the left and right cardiac fields during cardiac looping stages and address how these cells behave during cardiac looping morphogenesis.
 
 We first wanted to test whether we could confirm the clockwise rotation during linear heart tube formation, which results in left-derived cells occupying the superior side and right-originating cells occupying the inferior side of the tube (Rohr et al., 2008; Smith et al., 2008). Indeed, this clockwise rotation is also observed in vivo, in tg(myl7:Gal4FF; UAS:RFP; 0.2Intr1spaw:GFP) zebrafish embryos as localization of 0.2Intr1spaw:GFP expressing cells is confined to the superior side of the tube (Figure 3A,A’). We then proceeded to use these transgenic lines to analyze the localization of the left- and right-originating cells in the looped heart. Interestingly, at this stage, left-originating cells localizing to the superior side of the heart tube are now located ventrally with respect to the inferior side of the heart tube, which is due to an extension of the embryo and a 180 degrees flip of the heart tube (Figure 3B and Figure 2—figure supplement 1). In addition, in cross-sections we observed left-originating cells at the outer curvatures of both chambers, reaching, especially visible in the ventricle, the inferior side of the heart (Figure 3B, arrowheads). Concomitantly, the region at the inner curvature of the atrium is only RFP-positive, indicating the right origin of these cardiomyocytes (Figure 3B). To confirm these observations, we used an additional reporter line in which the regulatory sequences of the lefty2 gene drive expression of Gal4FF (Asakawa et al., 2008), referred to as tg(lft2BAC:Gal4FF)(Derrick et al., 2021). This line, when combined with a UAS fluorescent reporter line, recapitulated endogenous lefty2 expression in the cardiac disc (Figure 3—figure supplement 2). Analysis of the localization of the left- and right-originating cells in the looped heart in tg(lft2BAC:Gal4FF) by fluorescence immunolabeling (Figure 3—figure supplement 2) corroborated our results obtained with tg(0.2Intr1spaw:GFP). Together, these observations are consistent with those from our time-lapse imaging and cell tracing. Furthermore, they confirm our conclusion that cardiac chambers twist around the AV canal in opposing directions resulting in torsion of the heart tube.
 
-## Tbx5a is required for the twisting of the cardiac chambers
+![Figure 3.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig3-v1.jpg)
+
+**Figure 3.:** (A) At 28 hpf, as cardiac jogging towards the anterior left side of the embryo is completed, (A’) the tg(0.2Intr1spaw:GFP) labels cardiomyocytes localizing to the superior side of the cardiac tube (section). (B) By 48 hpf cardiac looping morphogenesis is accompanied by displacement in opposite directions of left-originating cardiomyocytes toward the outer curvatures of the ventricle and the atrium (arrowheads in the section and surface view panels). (C) At 48 hpf, the oug mutant heart tube fails to display any constriction at the AV canal and left-originating cardiomyocytes are not visible in the region around the outer curvatures of the cardiac chambers (asterisk; ventricle). Legends: R: Right; L: Left; S: Superior side; I: Inferior side. Scale bars: 50 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) An approximately 0.2 kb conserved sequence located in Intron 1 of the spaw genomic locus, hereafter called 0.2Intr1spaw, was used to drive expression of GFP. (B) ISH on spaw and GFP at 18 somites confirms the validity of the tg(0.2Intr1spaw:eGFP) reporter expression pattern. (C) GFP fluorescence at 28 hpf illustrates the left LPM reporter use of the 0.2Intr1spaw:eGFP line. (D) At the cardiac disc stage (23 som), the tg(0.2Intr1spaw:eGFP) reporter is expressed in cardiomyocytes exclusively belonging to the left half of the cardiac disc. Arrowhead indicates arterial pole of the heart tube. Legends: R: Right; L: Left. Scale bar: 100 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A,B) Double-color ISH shows GFP transcripts in the left half of the cardiac disc at the 23 somites stage (arrowheads in magnification in (A) and left lateral view in (B)). Asterisks denote absence of GFP ISH signal in the right halve of the cardiac disc. Staining at the midline is extracardiac and ascribed to Gal4/UAS system. (C) At 28 hpf, left- and right-originating cardiomyocytes (lft2:GFP+ and lft2;GFP- respectively) are organized in a superior-inferior manner, as reported previously (Smith et al., 2008). (D) As cardiac looping progresses, left-originating cells are displaced towards the outer curvatures of the ventricle and atrium. Conversely, at the inner curvature of the atrium only right-originating cells can be observed. (E) After completion of cardiac looping, left-originating cells are located at the outer curvatures of the ventricle and atrium, as also observed in the 0.2Intr1spaw:GFP line. (F) In the oug heart at 48 hpf left-originating cardiomyocytes (magenta) remain absent from the outer curvature of the ventricle. Legends: R: Right; L: Left; S: Superior side; I: Inferior side. Scale bar: 50 µm.
+
+### Tbx5a is required for the twisting of the cardiac chambers
 
 To address the role of Tbx5a in the observed twisting of the cardiac chambers, we first crossed the oug mutation into the tg(myl7:Gal4FF; UAS:RFP; 0.2Intr1spaw:GFP). Contrary to observations in wild-type hearts, we observed that the outer curvature of both the ventricle and atrium in oug mutant hearts are largely devoid of left-originating GFP+ cells (Figure 3C). In transversal sections of the ventricle, left-originating cells remain largely localized to the superior side of the heart tube (Figure 3C). The domain occupied by left-originating cells remained virtually unchanged when compared to the situation at the end of cardiac jogging, suggesting a lack of twisting and the absence of torsion in hearts lacking Tbx5a.
 
 Next, we time-lapsed and analyzed cardiomyocyte displacements in five oug mutant embryos in the same manner as we did for siblings using the tg(myl7:Gal4FF; UAS:H2A-GFP) line (Figure 4A–E; Figure 4—figure supplement 1; Figure 4—videos 1–3). Cardiomyocyte tracks on the superior and inferior sides of the cardiac chambers did not display the visible difference in rotation direction (Figure 4D–E) that was observed in the wild-type situation. Moreover, we did not observe major retreating or advancing Z-displacements at the outer and inner curvature, respectively (Figure 4F–G). This suggests that, while some bending of the cardiac tube happens during cardiac looping in oug/tbx5a, rotation of the chambers is strongly reduced if present at all. Plotting the average total rotation angle for the mutant ventricles and atria (Figure 4H), did not result in a clear separation of the tracks for each chamber type, as was the case for the wild type (compare with Figure 2J). Many of the tracks successively display positive and negative rotation angle values, which would indicate that during the time-lapse acquisition time, there is little concerted movement of the cardiomyocytes in the chambers. Furthermore, the absence of separation of the ventricular and atrial tracks indicates that the twisting of the heart tube (i.e. the opposite rotation of atrium and ventricle) is largely absent in oug. Comparison of the mean ventricular and atrial angular velocity values yielded no significant difference (Figure 4I), with values for both chambers distributed in the positive and negative halves of the plot. These observations confirm that the strong reduction in reverse rotation of the chambers in oug embryos underlies the reduced cardiac looping. In fact, the values obtained for the chamber cardiomyocytes in oug are similar to those of the AV canal (compare Figure 4—figure supplement 1 and Figure 4H,I), further supporting the lack of heart tube twisting in absence of tbx5a.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig4-v1.jpg)
+
+**Figure 4.:** (A) Total tracks (Ventral View) obtained from a time-lapse movie of cardiac looping in an oug mutant. Each track is colour-coded and is assigned an ID number. (B) Track displacement vectors for each trace drawn in (A). (C) Track displacement vectors to be analyzed are selected, categorized by visual inspection and colour-labeled accordingly. (D) Detail of the track displacement vectors on the superior cardiac side and (E) on the inferior cardiac side. (F), (G) Lateral views of the selected tracks reveal no major displacement along the Z-axis. (H) Cumulative rotation angle for the ventricle (shades of red) and atrium (shades of blue) in oug hearts. Compare with Figure 2F; the chambers do not show separation. With the outflow of the heart as viewpoint, positive values represent anti-clockwise rotation and negative values represent clockwise rotation. (I) Comparison of the average angular velocity for each replicate per 1.5 hr time window displayed by the chambers analyzed in (H). Horizontal bars: mean values. (J–L) Twisting of the heart tube during cardiac looping. (J) Plot of the twisting angle (as defined in the main text and in Appendix 1- Supplementary Methods) in time. The looping defect in oug is due to a reduced twisting of the heart tube. Solid lines: Mean; shaded area: standard deviation. (K) Average twisting angle for the sample hearts 9 hr after the start of the timelapse (37 hpf). Horizontal bars: mean values. (L) The twisting velocity in 1.5 hr windows in the wt samples is significantly higher than in oug. Horizontal bars: mean values. Scale bars: (A–C): 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Track displacement vectors for oug hearts oug2, oug3, oug4, and oug5. (A’) Vector maps for oug hearts oug2, oug3, oug4 and oug5 after computational unfolding. Ventricle (red), Atrium (blue/cyan) and AV canal (white) vectors are reported as for oug1 in Figure 4. For all hearts presented in this figure supplement: timelapses for tg(myl7:Gal4FF; UAS:H2A-GFP) are available as Figure 4—videos 4–7; displacement vectors (360° rotation) as Figure 4—videos 8–11; computational processing of heart timelapses as Figure 4—videos 12–15. (B) Left panel: Total cumulative rotation angle for the AV canal in the analyzed oug hearts. Right panel: average angular velocity per 1.5 hr time window displayed by the AV canal (AVC) of the hearts analyzed in the left panel. Scale bar: 100 µm.
+
 To assess the extent of the transformation in wild type and oug hearts, we calculated the twisting angle as the difference between rotation angles of the ventricle and the atrium from 28 to 38 hpf (Figure 4J, Supplementary Equation 20). Both the average twisting angle after 37 hpf (Figure 4K) and twisting velocity throughout the time-lapse (Figure 4L) are significantly higher in wild type compared to oug hearts. From these results, we conclude that twisting of the chambers around the AV canal is a tbx5a-dependent process.
 
-## A tissue intrinsic mechanism, and not cell addition to the embryonic cardiac poles, is required for torsion of the heart tube
+### A tissue intrinsic mechanism, and not cell addition to the embryonic cardiac poles, is required for torsion of the heart tube
 
 Next, we asked which mechanisms could be driving the observed opposite twisting of the chamber around the AV canal during heart looping. During mouse heart morphogenesis, asymmetric contributions at the poles drive a helical rotation of the tube (Le Garrec et al., 2017). Although the zebrafish heart does not form a helix, we considered that the opposite chamber rotation could be driven by a similar mechanism. Previous work has demonstrated that also in zebrafish cells from the second heart field (SHF) are added to the poles of the heart tube concomitantly with cardiac looping (de Pater et al., 2009; Lazic and Scott, 2011; Zhou et al., 2011). To test whether cardiomyocyte addition from the SHF is required for the correct progression of cardiac looping, we abolished it in two independent manners prior to the onset of cardiac looping: (1) by treating embryos with the FGF inhibitor SU5402 (de Pater et al., 2009) and (2) by explanting linear heart tubes and culturing them ex vivo for 24 hr, as previously described (Noël et al., 2013). Treatment with SU5402 was efficient, as we counted reduced numbers of ventricular cardiomyocytes, confirming previous reports (de Pater et al., 2009; Figure 5—figure supplement 1). Cardiac looping was however not strongly affected, as SU5402-treated hearts displayed a clear S shape at 48 hpf, and left-originating cardiomyocytes could be observed at the outer curvature of the ventricle (Figure 5A). Moreover, quantification of the looping angle did not reveal any significant difference with the control condition (Figure 5B). In explanted cultured tg(lft2BAC:Gal4FF; UAS:RFP; myl7:GFP) hearts (Figure 5C,D), we also observed convincing cardiac looping (Figure 5D, upper panels). The use of the lft2 reporter allowed us to orient the explanted heart tubes and observe that left-originating cardiomyocytes locate to the outer curvatures of the ventricle and atrium. We also exposed explanted heart tubes to SU5402 during culture and still observed satisfactory looping morphogenesis (Figure 5D, lower panels). From these observations, we concluded that heart tubes ex vivo not only retain their capacity to loop dextrally (Noël et al., 2013), but also that the cardiac torsion is still occurring.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig5-v1.jpg)
+
+**Figure 5.:** Representative SU5402-treated and DMSO Control (explanted) hearts are shown. (A) 48 hpf tg(myl7:Gal4FF; UAS:RFP; 0.2Intr1spaw-GFP) hearts. In SU5402-treated hearts, dextral looping is completed and left-originating cardiomyocytes (green) can be observed at the ventricle outer curvature, similar to the control condition (arrowheads). (B) Quantification and comparison of AV canal angles in SU5402-treated and DMSO Control embryos. AV canal angle measurement is exemplified in the upper left panel. (C) Heart explant procedure: as cardiac jogging is completed (26 hpf) heart tubes are explanted and put into culture for approximately 24 hpf during which chemical treatments can be carried out. At 48 hpf, the hearts are imaged. (D) Heart tubes explanted at 26 hpf and subsequently cultured in liquid medium for 24 hr display normal formation of a ventricle, atrium and atrioventricular canal. The lft2 reporter allows visualization of left-originating cells at the outer curvature of both ventricle and atrium, in control (DMSO) and treatment (SU5402) conditions. For (B) mean values ± SEM are shown. Legends: R: Right; L: Left; S: Superior side; I: Inferior side. Scale bars: 100 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunofluorescence with atrium-specific S46 antibody allows distinction of the cardiac chambers. (B) Quantification of ventricular and atrial cardiomyocytes in DMSO Control and SU5402-treated embryos at 2 dpf. Treatment between pf and 2dpf with SU5402 only affects ventricular cardiomyocyte number; three embryos per condition were quantified. Legends: D: DMSO Control; S: SU5402 Treatment.
 
 Consistent with our observation that addition of SHF cells to the poles of the heart tube is dispensable for opposite chamber rotation and cardiac looping, we observed no changes in cardiomyocyte numbers in the ventricle (or atrium) of oug mutants (Figure 6A,B). To reject the possibility that the looping phenotype displayed by oug mutants is secondary to fluid pressure caused by the cardiac edema appearing by 2 dpf, we explanted oug tg(myl7:Gal4FF; UAS:RFP; 0.2Intr1spaw:GFP) heart tubes at 28 hpf. Indeed, after 24 hr in vitro culturing, oug mutant hearts failed to loop, indicating that the morphogenesis defect was not related to changes in physical properties of oug mutant embryos (Figure 6C). From the above results, we conclude that cardiomyocyte addition from the SHF is dispensable for cardiac looping.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig6-v1.jpg)
 
-**Figure 6.:** oug mutants is not due to reduced cardiomyocyte number or embryonic environment.(A) Immunofluorescence with atrium-specific S46 antibody allows distinction of the cardiac chambers. (B) Quantification of ventricular and atrial cardiomyocytes in wt and oug mutant embryos at 2dpf. (C) Explanting oug mutant hearts and culturing them in vitro, ex-embryo does not rescue defective looping. (B): Horizontal bars: mean value ± SEM. Legends: R: Right; L: Left; S: Superior side; I: Inferior side . Scale bars: 100 µm.Figure 6—source data 1.
+**Figure 6.:** (A) Immunofluorescence with atrium-specific S46 antibody allows distinction of the cardiac chambers. (B) Quantification of ventricular and atrial cardiomyocytes in wt and oug mutant embryos at 2dpf. (C) Explanting oug mutant hearts and culturing them in vitro, ex-embryo does not rescue defective looping. (B): Horizontal bars: mean value ± SEM. Legends: R: Right; L: Left; S: Superior side; I: Inferior side . Scale bars: 100 µm.
 
-## Reduced anisotropic growth in oug cardiomyocytes
+### Reduced anisotropic growth in oug cardiomyocytes
 
 Epithelial remodeling is an important driver for asymmetric rotation of the Drosophila gut tube or looping of the chick midgut and heart tube (Taniguchi et al., 2011; Ray et al., 2018; Davis et al., 2008). In the zebrafish heart tube changes in cardiomyocyte shape and cell boundaries occur during looping morphogenesis as well (Merks et al., 2018; Auman et al., 2007; Lombardo et al., 2019). Hence, we next proceeded by assessing the shape of GFP+ ventricular cardiomyocytes between 30 hpf and 42 hpf (Figure 7A; for wt: Figure 7—videos 1–4; for oug: Figure 7—videos 5–7). Indeed, we could determine that the progression of the left-originating cardiomyocytes is concomitant to anisotropic growth of these cardiomyocytes, which results in a reduced roundness (Figure 7B). Analysis of the positioning of cardiomyocytes at the border between left- (green) and right- (magenta) originating cardiac regions confirmed this change in cell shape (Figure 7C–D; for wt: Figure 7—videos 8–11; for oug: Figure 7—videos 12–15), possibly suggesting involvement of cell intercalation. In oug mutant embryos, we observed that ventricular cells retain their higher cell roundness throughout the analysis window and display a much straighter left/right boundary in the ventricle. We therefore conclude that our results are consistent with the proposed model in which tissue-intrinsic properties drive opposite chamber rotation and cardiac looping (Noël et al., 2013; Merks et al., 2018) and indicate that Tbx5a activity is required for this to occur.
 
-## Cardiac looping is reestablished in Tbx5a-defective hearts by suppression of Tbx2b activity
+![Figure 7.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig7-v1.jpg)
+
+**Figure 7.:** (A) Outline of ventricular cardiomyocytes assessed for assessed for cell roundness. Representative images of the data quantified in (B) are shown for wt (upper row) and oug (lower row). (B) Quantification of cell roundness as observed in (A) and comparison between values for wt and oug mutants. (C) Upper panels: surface rendering of tg(myl7:Gal4FF; UAS:RFP; 0.2Intr1spaw-GFP) in 48 hpf hearts allows clear definition of a boundary between Left-originating cardiomyocytes (LCMs, green) and right-originating cardiomyocytes (RCMs, magenta). This allows calculation of the straightness index of the left/right boundary (white) of the ventricle (lower panels, respective viewpoint indicated in upper panels). The straightness index is calculated as the ratio between distance between start and end point of left/right boundary at (straight dotted line) and length of left/right boundary measured on the ventricular surface. (D) Quantification of the straightness index is indicative of the level of anisotropic growth in wt and oug mutant hearts. (B) and (D): Horizontal bars: mean value ± SEM. Legends: R: Right; L: Left; S; Superior side; I: Inferior side. Scale bars: (A) 20 µm; (C) 100 µm.
+
+### Cardiac looping is reestablished in Tbx5a-defective hearts by suppression of Tbx2b activity
 
 AV canal versus chamber specification is tightly regulated by a balance in gene activation and repression by Tbx5 and Tbx2, respectively (Chi et al., 2008; Christoffels et al., 2004a, reviewed in Greulich et al., 2011). As we observed an expansion of tbx2b expression in oug mutant hearts (Figure 1D), we first tested whether the myocardial patterning defect in oug mutants could be rescued by reducing Tbx2b activity. To do so, we used the tbx2b mutant from beyond (fby) (Snelson et al., 2008). Analysis of cardiac markers by ISH and transgenic reporters revealed that fby/tbx2b-/- embryos display robust cardiac looping and a properly patterned heart (Figure 8 and Figure 8—figure supplement 1). In tbx5a-/-;tbx2b-/- (oug/fby) double mutant background, ISH indicated rescue of the constriction at the AV canal (Figure 8A), reestablishment of nppa expression in the cardiac chambers, while bmp4 expression remained similar to that of tbx5a-/- hearts (Figure 8—figure supplement 1). Analysis of tg(nppaBAC:mCitrine) in vivo confirmed the rescue of nppa expression in the atrium of tbx5a-/-;tbx2b-/- double mutants, which was absent in oug embryos (Figure 8B). Next, we investigated how the rescue in cardiac patterning affects heart looping morphogenesis. Along with the reestablishment of myocardial patterning, we also observed a significant rescue of the looping phenotype by measuring the looping angle (Figure 8C). Consistently with these observations, analysis of tg(myl7:Gal4FF; UAS:RFP; 0.2Intr1spaw-GFP) in tbx5a-/-;tbx2b-/- embryonic hearts revealed the presence of GFP+ left-originating cardiomyocytes on the inferior side of the ventricle (Figure 8D–D’’’), indicating substantial rescue of the twisting of the heart tube. Additionally, we observed that while pectoral fin development was not rescued in tbx5a-/-;tbx2b-/- double mutants, these fish hardly developed a cardiac edema, as compared to oug mutants (Figure 8—figure supplement 2). Altogether, these results indicate that heart looping morphogenesis is the result of proper tissue patterning and requires a finely balanced Tbx5a and Tbx2b activity.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig8-v1.jpg)
+
+**Figure 8.:** (A) ISH for myl7 at 50 hpf in wild type siblings, oug mutants and tbx5a;tbx2b double mutants. (B) Confocal maximum projections of 2dpf tg(nppa:mCitrine) hearts. In the tbx5a;tbx2b double mutants, atrial expression of nppa, which was lost in oug mutants, is re-instated. (C) Quantification and comparison of AV canal angles in wild-type siblings, tbx5a mutants and tbx5a;tbx2b double mutants. Quantification of AV canal angle is carried out as reported in Figure 5D. (D–D’’’) 48 hpf tg(myl7:Gal4FF; UAS:RFP; 0.2Intr1spaw-GFP) hearts. Wt (D) and tbx5-/- (D’) are shown for comparison. tbx2b-/- hearts (D’’) display robust dextral looping and left-originating cardiomyocytes (green) at the ventricle outer curvature, similar to wt (arrowheads in D; Figure 3B). In double homozygous mutants tbx5a-/-; tbx2b-/- (D’’’) rescue of cardiac looping is observed, accompanied by presence of left-originating cardiomyocytes at the ventricle OC (Compare with D, D’’). (C): Horizontal bars: mean value ± SEM. Legends: R: Right; L: Left; S: Superior side; I: Inferior side. Scale bars: 100 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** ISH probes used are myl7 (all cardiomycytes), nppa (cardiac chambers), bmp4 (AV canal and IFT), and tbx2b (AV canal). Scale bar: 100 µm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/61733/elife-61733-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Arrowheads indicate presence of pectoral fins in wt (sib) (A) and tbx2b-/- (B) larvae, asterisks indicate absence of pectoral fins in tbx5a-/- (C) and tbx5a-/-; tbx2b-/- (D) larvae. The severe general oedemic phenotype displayed by tbx5a-/- larvae is rescued in the tbx5a-/-; tbx2b-/- double mutant. Scale bar: 500 µm.
 
 ## Discussion
 
@@ -109,63 +173,290 @@ In oug mutants, nppa expression was reduced while tbx2b expression was expanded 
 
 ## Materials and methods
 
-## Zebrafish lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>tbx5a</td>
+      <td>NA</td>
+      <td>ZDB-GENE-991124–7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tübingen Long Fin (TL)</td>
+      <td>ZIRC</td>
+      <td>ZDB-GENO-990623–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>oug/tbx5a</td>
+      <td>This paper</td>
+      <td></td>
+      <td>More info on generation of this line can be found in the Materials and Methods section.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>hst/tbx5a</td>
+      <td>ZIRC</td>
+      <td>ZDB-ALT-030627–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>fby/tbx2b</td>
+      <td>ZIRC</td>
+      <td>ZDB-ALT-070117–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tg(myl7:Gal4FF)</td>
+      <td>DOI: 10.1242/dev.113894</td>
+      <td>ZDB-ALT-151008–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tg(lft2BAC:Gal4FF)</td>
+      <td>DOI: 10.1093/cvr/cvab004</td>
+      <td>Not available</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tg(UAS:RFP)</td>
+      <td>DOI: 10.1073/pnas.0704963105</td>
+      <td>ZDB-ALT-080528–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tg(UAS:H2A-GFP)</td>
+      <td>DOI: 10.1242/dev.113894</td>
+      <td>ZDB-ALT-151008–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tg(myl7:dsRed)s879Tg</td>
+      <td>DOI: 10.1101/gad.1629408</td>
+      <td>ZDB-FISH-150901–3078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tg(mCitrine:nppa)</td>
+      <td>DOI: 10.7554/eLife.50163</td>
+      <td>ZDB-ALT-201116–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Chlorocebus aethiops)</td>
+      <td>kidney fibroblast-like cell line (SV 40 transformed, Adult)</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1651; RRID:CVCL_0224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Chlorocebus aethiops)</td>
+      <td>pGL3-Basic (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat# E1751; Genbank: U47295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Chlorocebus aethiops)</td>
+      <td>phRG-TK Renilla (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat# E6291; Genbank: AF362551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Living Colors anti-DsRed (Rabbit polyclonal)</td>
+      <td>Takara Bio</td>
+      <td>Cat# 101004; RRID:AB_10013483</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Myosin heavy chain, slow developmental (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# s46, RRID:AB_528376</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1010, RRID:AB_2307313</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Digoxigenin-AP, Fab fragments (Sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11093274910, RRID:AB_2734716</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fluorescein-AP, Fab fragments (Sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11426338910, RRID:AB_2734723</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>E1b-GFP-Tol2-Gateway</td>
+      <td>DOI: 10.1101/gr.133546.111 Obtained from Addgene</td>
+      <td>RRID:Addgene_37846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Start site morpholino: tnnt2a</td>
+      <td>DOI: 10.1038/ng875</td>
+      <td>ZDB-MRPHLNO-060317–4</td>
+      <td>5' - CATGTTTGCTCTGATCTGACACGCA - 3' 2 ng / embryo</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NBT/BCIP Stock solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11681451001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>INT/BCIP Stock solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11681460001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SU5402</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 572630; CAS 215543-92-3</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phenylthourea</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P7629; CAS103-85-5</td>
+      <td>0,003%(v/v)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc/</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity 3D Image Analysis Software</td>
+      <td>Perkin Elmer</td>
+      <td>RRID:SCR_002668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 9.0</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td>V9.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris data visualization software</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td>V9.3.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>heartbending.py</td>
+      <td>Source or reference: custom software, available in public repository: https://github.com/rmerks/heartbending (copy archived at swh:1:rev:149f05441e06f875faa3f9ab21101619bce25e93;  Tsingos, 2021)</td>
+      <td>commit 149f054</td>
+      <td>Code for transforming cell track data and for statistical analysis of cell rotation around the heart segment axes.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines
 
 All animal experiments were conducted under the guidelines of the animal welfare committee of the Royal Netherlands Academy of Arts and Sciences (KNAW). Adult zebrafish (Danio rerio) were maintained and embryos raised and staged as previously described (Aleström et al., 2020; Westerfield, 1993).
 
 The zebrafish lines used in this study are Tübingen longfin (wild type), hst/tbx5a (Garrity et al., 2002), fby/tbx2b (Snelson et al., 2008), tg(myl7:Gal4FF) (Strate et al., 2015); tg(lft2BAC:Gal4FF) (Derrick et al., 2021); tg(UAS:RFP) (Asakawa et al., 2008); tg(UAS:H2A-GFP) (Strate et al., 2015); tg(myl7:DsRed) (Mably et al., 2003); tg(mCitrine:nppa) (Honkoop et al., 2019).
 
-## Positional cloning of oudegracht/tbx5a
+### Positional cloning of oudegracht/tbx5a
 
 The oudegracht/tbx5ahu6499 allele was identified in a ENU mutagenesis screen performed as described in Wienholds et al., 2003. The oudegracht/tbx5ahu6499 was mapped using standard simple sequence length polymorphisms (SSLPs)-based meiotic mapping with SSLP primer sequences as pictured in Figure 4. The oudegracht/tbx5ahu6499 mutation introduces a G to A substitution in Exon 4 of tbx5a (ENSDARG00000024894) resulting in the introduction of a premature stop codon. The mutation is identified by PCR amplification from genomic DNA using primers FKK106: 5’-GCGCATCAGGTCTGTGAC-3’ and FKK108: 5’-CCAAATACAAGTCCTCAAAGTG-3’ followed by BtscI restriction of the PCR product. The oudegracht/tbx5ahu6499 mutation removes a BtscI restriction site.
 
-## Generation of the tg(0.2Intr1spaw:GFP) transgenic line
+### Generation of the tg(0.2Intr1spaw:GFP) transgenic line
 
 A 228 bp conserved sequence located in intron 1 of spaw (ENSDARG00000014309) was amplified by PCR using primers FT294 5’-AGTCAAGCATCTCGGGAAGA-3’ and FT295 5’-AGGTCCTGTCAGAGCAGATG-3’. The resulting PCR product was subsequently cloned in the E1b-GFP-Tol2-Gateway construct (Addgene #37846; Birnbaum et al., 2012) by Gateway cloning. The resulting construct was co-injected with 25 ng/μl Tol2 RNA in 1 cell zebrafish TL embryos. Founder fish (F0) were identified by outcrossing and the progeny (F1) was grown to establish the transgenic line.
 
-## Microinjection of antisense morpholino
+### Microinjection of antisense morpholino
 
 The tnnt2a morpholino oligonucleotide targeting the translation start site (5' - CATGTTTGCTCTGATCTGACACGCA - 3') was used to block heart beat (Sehnert et al., 2002). We injected approximately 2 ng of the oligo morpholino in one-cell stage embryos.
 
-## Chemical treatments
+### Chemical treatments
 
-## SU5402 treatment
+#### SU5402 treatment
 
 Embryos were dechorionated and treated with SU5402 (Sigma-Aldrich) at a concentration of 10 μM in E3 embryo medium from 24 hpf until 48 hpf at 28.5°C. Control embryos were treated with the corresponding DMSO concentration.
 
-## Phenylthiourea
+### Phenylthiourea
 
 Addition of phenylthiourea (PTU) at a concentration of 0.003% (v/v) to the E3 embryonic medium after shield stage (8 hpf) blocked pigmentation for improved confocal analysis.
 
-## Heart explants
+### Heart explants
 
 Zebrafish heart tubes were manually dissected from 26 hpf embryos using forceps and placed into supplemented L15 culture medium (Gibco-BRL; 15% fetal bovine serum, 0.8 mM CaCl2, 50 μg/ml penicillin, 0.05 mg/ml streptomycin, 0.05 mg/ml gentomycin) essentially as described in Noël et al., 2013. Explants were incubated at 28.5°C for 24 hr and fixed in 4% PFA overnight. Chemical treatment of the explants was carried out in an identical way as for the embryos. Explanted hearts were mounted in Vectashield (Vector Laboratories) before imaging.
 
-## Immunofluorescent labeling
+### Immunofluorescent labeling
 
 Zebrafish embryos at the appropriate developmental stage were fixed overnight in 2% paraformaldehyde (PFA) in PBS at 4°C. After washing with 1 × PBS–Triton X-100 (0.1%; PBS-T) and blocking in 10% goat serum in 1 × PBST (blocking buffer;BB), embryos were incubated overnight at 4°C with rabbit anti-DsRed (1:500 in BB; Takara Bio 632496), mouse anti-Myh6 antibody (1:200 in BB, DSHB, S46), or chicken anti-GFP (1:500 in BB, Aves Labs, GFP-1010). After washing in PBST, the embryos were incubated overnight at 4°C in Cy3-conjugated goat anti-rabbit antibody (1:500 in BB; Jackson Immunoresearch, 111-165-144), Alexa488-conjugated goat anti-mouse (1:500 in BB, Invitrogen, A21133) or Alexa488-conjugated goat-anti-chicken (1:500 in BB; Invitrogen, A11039). Embryos were washed in PBST before imaging.
 
-## Whole mount mRNA in situ hybridization (ISH)
+### Whole mount mRNA in situ hybridization (ISH)
 
 Fixation of the embryos was carried overnight in 4% paraformaldehyde (PFA). Embryos were subsequently stored in methanol (MeOH) at −20°C. Rehydration was carried out in PBST (PBS plus 0.1% Tween-20) and, depending on the stage, embryos were treated with 1 µg ml-1 Proteinase K (Promega) between 1 and 20 min. Embryos were then rinsed in PBST, post-fixed in 4% PFA for 20 min, washed repeatedly in PBST and pre-hybridized for at least 1 hr in Hyb-buffer. Digoxigenin-labeled and fluorescein-labeled RNA probes were diluted in Hyb-buffer supplemented with transfer RNA (Sigma-Aldrich) and heparin (Sigma-Aldrich), and incubated with the embryos overnight at 70°C. After removal of the probe, embryos were washed stepwise from Hyb- to 2xSSCT, and subsequently from 0.2xSSCT to PBST. Embryos were blocked for at least 1 hr at room temperature (RT) in PBST supplemented with sheep serum and BSA before being incubated overnight at 4°C with an anti-digoxygenin-AP antibody (1:5000; Cat: 11093274910; Roche). After removal of the antibody, embryos were washed in PBST before being transferred to TBST. The embryos were subsequently incubated in the dark on a slow rocker in dilutions of Nitro-blue tetrazolium/5-bromo-4-chloro-3-inodyl phosphate (NBT/BCIP; Cat: 11093274910; Roche) in TBST. After development of the staining, embryos were washed extensively in PBST and fixed overnight in 4% PFA at 4°C. Before imaging, embryos were cleared in MeOH and mounted in benzylbenzoate:benzylalcohol (2:1). For two-colour detection, after development of the NBT/BCIP staining embryos were briefly washed in PBST and 0.1 M Glycin-HCl pH = 2.2 and incubated overnight at 4°C with an anti-fluorescein antibody-AP (1:5000; Cat: 11426338910; Sigma-Aldrich). After PBST and TBST washing, ISH signal was detected with Iodonitrotetrazolium INT/BCIP (1:5000; Cat:11681460001; Sigma-Aldrich). Imaging was carried out after mounting in 100% glycerol. Cryosectioning was carried out on tbx5a ISH embryos previously frozen in OCT (Leica Microsystems) on dry ice at a thickness of 10 µm before slide mounting and imaging.
 
 Accession numbers of the genes assayed by ISH: myl7 (NM_131329), amhc (NM_198823), foxa3 (NM_131299), nppa (NM_198800), tbx2b (NM_131051), bmp4 (NM_131342), has2 (NM_153650), versican (NM_001326557), and tbx5a (NM_130915).
 
-## In vitro tbx5a activity assay
+### In vitro tbx5a activity assay
 
 COS7 cells, grown in 12-well plates in DMEM supplemented with 10% FCS (Gibco-BRL) and glutamine, were transfected using polyethylenimine 25 kDa (PEI, Brunschwick) at a 1:3 ratio (DNA:PEI). Standard transfections were performed using 1.4 μg pGL3-Basic reporter vector (Promega) containing −638/+70 bp rNppa promoter (reporter construct), which was co-transfected with 3 ng phRG-TK Renilla vector (Promega) as normalization control. Zebrafish tbx5a wild type (wt) and mutant (hst and oug) open-reading frames were cloned into a pCS2+ vector and 300 ng of each construct was transfected along with the reporter constructs and normalization control. Experiments were performed in triplo, each with hextuplicate biological replicates. Isolation of cell extracts and subsequent luciferase assays were performed 48 hr after transfection using Luciferase Assay System according to the protocol of the manufacturer (Promega). Luciferase measurements were performed using a Promega Turner Biosystems Modulus Multimode Reader luminometer. Mean luciferase activity and standard deviation were plotted as fold activation compared to the promoter-reporter plasmid. All data was statistically validated using a one-way ANOVA for all combinations.
 
-## Imaging
+### Imaging
 
 In vivo phenotypic assessment and imaging was carried out on a Leica M165FC stereomicroscope or a Zeiss StemiSV6 stereomicroscope (Carl Zeiss AG, Oberkochen, Germany). Embryos were sedated if necessary with 16 mg/ml tricaine (MS222; Sigma-Aldrich) in E3 medium. ISH imaging was performed using a Zeiss Axioplan microscope (Carl Zeiss AG). Images were captured with a DFC420 digital microscope camera (Leica Microsystems). Confocal imaging was carried out on a Leica SPE or SP8 confocal microscope (Leica Microsystems). Multiphoton imaging was carried out on a Leica SP5 or SP8 confocal microscope (Leica Microsystems). Time-lapse imaging was carried out on sedated, PTU-treated, tnnt2a morpholino oligo-injected and dechorionated embryos mounted in 0.25% agarose in E3 medium. Images were acquired using a Leica SP5 or SP8 multiphoton microscope and stacks were acquired approximately every 10 min for about 16 hr.
 
 Acquisition resolution of the images (x; y; z) in µm per pixel: Confocal timelapses: 0.889; 0.889; 2.000; Confocal live imaging (still): 0.604; 0.604; 1.000; Confocal fluorescent immunolabeling: 0.284; 0.284; 1.000.
 
-## Outer and inner curvature definition
+### Outer and inner curvature definition
 
 Throughout the study, we defined the inner- and outer curvatures of the chambers as the long and short contours respectively visible in the ventral view of the 48 hpf heart. In the ventricle, the outer curvature is on the left of the chamber and the inner curvature on the right, and vice-versa for the atrium. The boundary in-between the inner and outer curvatures was not defined as additional markers were not available to us.
 
-## Image analysis
+### Image analysis
 
 Time-lapse: Imaris software (Oxford Imaging) was used to generate time-lapse movies and automated cell tracking in 3D, followed by manual inspection of individual tracks.
 
@@ -179,7 +470,7 @@ Straightness Index: The straightness index is defined as the ratio between the l
 
 Details of the cell trajectory analyses are given in Appendix 1-Supplementary Methods.
 
-## Statistics
+### Statistics
 
 Statistical assays were carried out in Graphpad Prism 9.0 (GraphPad Software). Statistical analysis for average total rotation angle, angular velocities, and twisting angle were performed with the Python packages scipy (Virtanen et al., 2020) and statsmodels (Seabold and Perktold, 2010).
 
@@ -201,7 +492,7 @@ Figure 7D: Two-tailed, non-paired Student’s t-test; p values and significance 
 
 Figure 8C: One-way ANOVA with Tukey’s multiple comparison test; p values and significance levels are reported in the figure panel.
 
-## Data collection
+### Data collection
 
 Figure 1 (C) and (H): representative pictures of a minimum of three independent experiments. Numbers of samples are reported in the figure.
 

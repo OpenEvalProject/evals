@@ -16,65 +16,174 @@
 
 ## Abstract
 
-10.7554/eLife.05564.001 During outbreaks of high-consequence pathogens, airport screening programs have been deployed to curtail geographic spread of infection. The effectiveness of screening depends on several factors, including pathogen natural history and epidemiology, human behavior, and characteristics of the source epidemic. We developed a mathematical model to understand how these factors combine to influence screening outcomes. We analyzed screening programs for six emerging pathogens in the early and late stages of an epidemic. We show that the effectiveness of different screening tools depends strongly on pathogen natural history and epidemiological features, as well as human factors in implementation and compliance. For pathogens with longer incubation periods, exposure risk detection dominates in growing epidemics, while fever becomes a better target in stable or declining epidemics. For pathogens with short incubation, fever screening drives detection in any epidemic stage. However, even in the most optimistic scenario arrival screening will miss the majority of cases. DOI: http://dx.doi.org/10.7554/eLife.05564.001
+During outbreaks of high-consequence pathogens, airport screening programs have been deployed to curtail geographic spread of infection. The effectiveness of screening depends on several factors, including pathogen natural history and epidemiology, human behavior, and characteristics of the source epidemic. We developed a mathematical model to understand how these factors combine to influence screening outcomes. We analyzed screening programs for six emerging pathogens in the early and late stages of an epidemic. We show that the effectiveness of different screening tools depends strongly on pathogen natural history and epidemiological features, as well as human factors in implementation and compliance. For pathogens with longer incubation periods, exposure risk detection dominates in growing epidemics, while fever becomes a better target in stable or declining epidemics. For pathogens with short incubation, fever screening drives detection in any epidemic stage. However, even in the most optimistic scenario arrival screening will miss the majority of cases.
 
 ## Introduction
 
 International air travel drove the spread of SARS in 2003 and influenza A/H1N1p in 2009 (Brockmann and Helbing, 2013), and has since led to imported cases of influenza A/H7N9 (William et al., 2015), MERS-CoV (Cauchemez et al., 2014) and Ebola virus infection (McCarthy, 2014). Traveller screening policies, including fever screening and/or questionnaires at point of departure and/or arrival, have been proposed to limit the geographic spread of infection (Malone et al., 2009; World Health Organization, 2009; Cowling et al., 2010; Khan et al., 2013; Bogoch et al., 2015; Centers for Disease Control and Prevention, 2014a). Fever screening at point of arrival has been criticized, however, because long incubation periods and imperfect efficacy of fever screening devices reduce the probability of detecting symptoms in infected arriving passengers (Pitman et al., 2005; Bitar et al., 2009; Mabey et al., 2014). As the effectiveness of integrated screening programs will depend both on the pathogen-specific natural history of infection and epidemiological knowledge of exposure risk, as well as travel time and efficacy of screening methods, it is important to understand how these different factors contribute to screening effectiveness at departure and arrival.
 
-During screening initiatives for influenza A/H1N1p, MERS-CoV, SARS-CoV and Ebola virus, large numbers of travellers were detained for in-depth assessment, but few or no cases were ultimately detected (Table 1). Although fever is the symptom most commonly measured during screening, it might not be detected in all infected individuals for several reasons. First, those with recent exposure may not yet have progressed to a symptomatic stage (Pitman et al., 2005; Mabey et al., 2014). Second, travellers might be symptomatic but not febrile; the probability a symptomatic patient will have a fever varies by pathogen (Donnelly et al., 2004; Cao et al., 2009; Louie et al., 2009; Assiri et al., 2013; Cowling et al., 2013; Gao et al., 2013; Gong et al., 2014; Sun et al., 2014; WHO Ebola Response Team, 2014). Third, the sensitivity of non-contact infrared thermometers (the devices most often used for airport fever screening) is limited, so passengers with fever may pass through symptom screening undetected (Hausfater et al., 2008; Bitar et al., 2009; Nishiura and Kamiya, 2011). Fourth, passengers may conceal fever and other symptoms during screening using antipyretic drugs (Nishiura and Kamiya, 2011). At the same time, fever is notoriously non-specific as a symptom, leading to high opportunity costs from detaining travellers with non-target illnesses (Anderson et al., 2004; Gunaratnam et al., 2014; Mabey et al., 2014).10.7554/eLife.05564.003Table 1.Airport screening measures during past disease outbreaksDOI: http://dx.doi.org/10.7554/eLife.05564.003PathogenDateLocationDirectionScreenedDetainedPositiveSourceInfluenza A/H1N1p27 April–22 June 2009Auckland, New ZealandInbound456,5184064(Hale et al., 2012)28 April–18 June 2009Sydney, AustraliaInbound625,14758453(Gunaratnam et al., 2014)28 April–18 June 2009Tokyo, JapanInbound471,73380515(Nishiura and Kamiya, 2011)SARS Co-V5 April–16 June 2003AustraliaInbound1,840,0007940(Samaan et al., 2004)31 March–31 May 2003SingaporeInbound442,9731760(Wilder-Smith et al., 2003)14 May–5 July 2003Toronto, CanadaInbound349,75412640(St John et al., 2005)14 May–5 July 2003Toronto, CanadaOutbound495,4924110(St John et al., 2005)MERS Co-V24 September 2012–15 October 2013EnglandInboundNR772(Thomas et al., 2014)Ebola virusAugust–September 2014Guinea, Liberia, Sierra LeoneOutbound36,000770(Centers for Disease Control and Prevention, 2014a)11 October–22 October 2014United StatesInbound76230(Apuzzo and Fernandez, 2014; CBS, 2014)
+During screening initiatives for influenza A/H1N1p, MERS-CoV, SARS-CoV and Ebola virus, large numbers of travellers were detained for in-depth assessment, but few or no cases were ultimately detected (Table 1). Although fever is the symptom most commonly measured during screening, it might not be detected in all infected individuals for several reasons. First, those with recent exposure may not yet have progressed to a symptomatic stage (Pitman et al., 2005; Mabey et al., 2014). Second, travellers might be symptomatic but not febrile; the probability a symptomatic patient will have a fever varies by pathogen (Donnelly et al., 2004; Cao et al., 2009; Louie et al., 2009; Assiri et al., 2013; Cowling et al., 2013; Gao et al., 2013; Gong et al., 2014; Sun et al., 2014; WHO Ebola Response Team, 2014). Third, the sensitivity of non-contact infrared thermometers (the devices most often used for airport fever screening) is limited, so passengers with fever may pass through symptom screening undetected (Hausfater et al., 2008; Bitar et al., 2009; Nishiura and Kamiya, 2011). Fourth, passengers may conceal fever and other symptoms during screening using antipyretic drugs (Nishiura and Kamiya, 2011). At the same time, fever is notoriously non-specific as a symptom, leading to high opportunity costs from detaining travellers with non-target illnesses (Anderson et al., 2004; Gunaratnam et al., 2014; Mabey et al., 2014).
+
+**Table 1.**
+ Airport screening measures during past disease outbreaks
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pathogen</th>
+      <th>Date</th>
+      <th>Location</th>
+      <th>Direction</th>
+      <th>Screened</th>
+      <th>Detained</th>
+      <th>Positive</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Influenza A/H1N1p</td>
+      <td>27 April–22 June 2009</td>
+      <td>Auckland, New Zealand</td>
+      <td>Inbound</td>
+      <td>456,518</td>
+      <td>406</td>
+      <td>4</td>
+      <td>(Hale et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>28 April–18 June 2009</td>
+      <td>Sydney, Australia</td>
+      <td>Inbound</td>
+      <td>625,147</td>
+      <td>5845</td>
+      <td>3</td>
+      <td>(Gunaratnam et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>28 April–18 June 2009</td>
+      <td>Tokyo, Japan</td>
+      <td>Inbound</td>
+      <td>471,733</td>
+      <td>805</td>
+      <td>15</td>
+      <td>(Nishiura and Kamiya, 2011)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">SARS Co-V</td>
+      <td>5 April–16 June 2003</td>
+      <td>Australia</td>
+      <td>Inbound</td>
+      <td>1,840,000</td>
+      <td>794</td>
+      <td>0</td>
+      <td>(Samaan et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>31 March–31 May 2003</td>
+      <td>Singapore</td>
+      <td>Inbound</td>
+      <td>442,973</td>
+      <td>176</td>
+      <td>0</td>
+      <td>(Wilder-Smith et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>14 May–5 July 2003</td>
+      <td>Toronto, Canada</td>
+      <td>Inbound</td>
+      <td>349,754</td>
+      <td>1264</td>
+      <td>0</td>
+      <td>(St John et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>14 May–5 July 2003</td>
+      <td>Toronto, Canada</td>
+      <td>Outbound</td>
+      <td>495,492</td>
+      <td>411</td>
+      <td>0</td>
+      <td>(St John et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>MERS Co-V</td>
+      <td>24 September 2012–15 October 2013</td>
+      <td>England</td>
+      <td>Inbound</td>
+      <td>NR</td>
+      <td>77</td>
+      <td>2</td>
+      <td>(Thomas et al., 2014)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ebola virus</td>
+      <td>August–September 2014</td>
+      <td>Guinea, Liberia, Sierra Leone</td>
+      <td>Outbound</td>
+      <td>36,000</td>
+      <td>77</td>
+      <td>0</td>
+      <td>(Centers for Disease Control and Prevention, 2014a)</td>
+    </tr>
+    <tr>
+      <td>11 October–22 October 2014</td>
+      <td>United States</td>
+      <td>Inbound</td>
+      <td>762</td>
+      <td>3</td>
+      <td>0</td>
+      <td>(Apuzzo and Fernandez, 2014; CBS, 2014)</td>
+    </tr>
+  </tbody>
+</table>
 
 Self-reporting of symptoms or potential recent exposure to infection via mandatory questionnaires is also a common component of traveller screening programs (St John et al., 2005; Nishiura and Kamiya, 2011; Hale et al., 2012; Centers for Disease Control and Prevention, 2014a; Cho and Yoon, 2014; Gunaratnam et al., 2014). Because information about risk factors does not depend on the presence of detectable symptoms at the time of screening, there is potential to identify a broader set of exposed travellers. However, epidemiological knowledge on factors linked to risk of infection is limited for some pathogens—particularly for novel emerging pathogens that are often the focus of screening programs. Even for pathogens with well-characterized routes of transmission, not all cases will necessarily have a known source of exposure (Lau et al., 2004; Cao et al., 2009; Tuite et al., 2010; Cowling et al., 2013; Gao et al., 2013; Gong et al., 2014; Sun et al., 2014; WHO Ebola Response Team, 2014). Thus, the contribution of questionnaires to the overall effectiveness of traveller screening programs is unclear.
 
-Screening initiatives have also been implemented both at points of departure and arrival. It has been suggested that departure screening is more efficient than entry screening because it needs to be implemented in only a few airports rather than globally (
+Screening initiatives have also been implemented both at points of departure and arrival. It has been suggested that departure screening is more efficient than entry screening because it needs to be implemented in only a few airports rather than globally (Khan et al., 2013; Bogoch et al., 2015), but there is often local political pressure for arrival screening as well. To understand how departure and arrival screening combine with pathogen natural history, epidemiological knowledge, efficacy of screening methodology, and human behavioral factors to determine overall screening outcomes, we developed a general modelling framework (Figure 1) for the screening process. We used this framework to assess outcomes for six pathogens of current or recent concern: influenza A/H7N9, influenza A/H1N1p, SARS-CoV, MERS-CoV, Ebola virus, and Marburg virus. By separating the contribution of different factors to the probability of detecting infectious travellers, we evaluated pathogen-specific strengths and weaknesses of different screening strategies. We considered scenarios in which the source epidemic is growing or stable, as epidemic phase influences the distribution of times since exposure in potential travellers. We also identified factors that could improve the effectiveness of screening programs for future emerging pathogens.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig1-v1.jpg)
 
-**Figure 1.:** (A) Upon airport arrival, passengers passed through screening for fever, followed by screening for risk factors. We assumed a one-strike policy: passengers identified as potentially infected by any single screening test were detained. (B) Passengers who did not present with fever would always pass through symptom screening, but could still be identified during questionnaire screening. (C) Passengers who were not aware of exposure risk would always pass through questionnaire screening. (D) Passengers with neither fever nor knowledge of exposure would go undetected.DOI: http://dx.doi.org/10.7554/eLife.05564.013
+**Figure 1.:** (A) Upon airport arrival, passengers passed through screening for fever, followed by screening for risk factors. We assumed a one-strike policy: passengers identified as potentially infected by any single screening test were detained. (B) Passengers who did not present with fever would always pass through symptom screening, but could still be identified during questionnaire screening. (C) Passengers who were not aware of exposure risk would always pass through questionnaire screening. (D) Passengers with neither fever nor knowledge of exposure would go undetected.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Each case represents a different detectability class. Travellers are assigned to detectability classes with probabilities f (presence of fever) and g (awareness of exposure risk). Values for f and g are given in Table 2. θ(d) describes the infection age distribution (times since exposure) in individuals attempting travel. δ(d) is the incubation period cumulative distribution function, which describes the probability that travellers have progressed to symptom onset at the time of attempted travel. ε describes the efficacy of each respective screening module. S is the probability that travellers develop symptoms in flight, given that they did not yet have symptoms at departure.DOI: http://dx.doi.org/10.7554/eLife.05564.014
+**Figure 1—figure supplement 1.:** Each case represents a different detectability class. Travellers are assigned to detectability classes with probabilities f (presence of fever) and g (awareness of exposure risk). Values for f and g are given in Table 2. θ(d) describes the infection age distribution (times since exposure) in individuals attempting travel. δ(d) is the incubation period cumulative distribution function, which describes the probability that travellers have progressed to symptom onset at the time of attempted travel. ε describes the efficacy of each respective screening module. S is the probability that travellers develop symptoms in flight, given that they did not yet have symptoms at departure.
 
 ## Results
 
-For each pathogen, the natural history of infection and state of epidemiological knowledge determined the potential for successful screening at various points in the process. For all six emerging pathogens considered here, the majority of identified cases exhibited a fever (
+For each pathogen, the natural history of infection and state of epidemiological knowledge determined the potential for successful screening at various points in the process. For all six emerging pathogens considered here, the majority of identified cases exhibited a fever (Figure 2A). However, the proportion of confirmed cases who were aware of their exposure risk varied greatly. Influenza A/H1N1p, which can have generic symptoms and can be transmitted via the airborne route, had the lowest reported proportion; Ebola virus, which requires close contact with infected individuals who have conspicuous symptoms, had the highest. Influenza A/H7N9, Marburg virus and SARS-CoV had similar proportions of cases that present with fever, and that had knowledge of exposure risk. We excluded MERS-CoV from the natural history space in Figure 2A because there are no established risk factors for exposure. Moreover, there was limited information available for the fever parameter for MERS-CoV: in a hospital outbreak of MERS-CoV, 20 out of 23 cases presented with fever at onset (Assiri et al., 2013); the small size of this sample means there is greater uncertainty surrounding the estimate for proportion of cases that exhibit fever.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig2-v1.jpg)
 
-**Figure 2.:** (A) Proportion of infected individuals who report known exposure risk and show fever at onset. Point shows median estimate, using data in Tables 2, 3; circle shows joint 95% binomial confidence interval. Red, influenza A/H7N9; purple influenza A/H1N1p; blue, MERS; green, SARS; orange, Ebola; black, Marburg. (B) Incubation period and fever at onset. Point shows median estimate, circle shows joint 95% CI, generated using a binomial distribution for fever symptoms and fitted parametric distributions given by references in Table 3 for incubation period.DOI: http://dx.doi.org/10.7554/eLife.05564.004
+**Figure 2.:** (A) Proportion of infected individuals who report known exposure risk and show fever at onset. Point shows median estimate, using data in Tables 2, 3; circle shows joint 95% binomial confidence interval. Red, influenza A/H7N9; purple influenza A/H1N1p; blue, MERS; green, SARS; orange, Ebola; black, Marburg. (B) Incubation period and fever at onset. Point shows median estimate, circle shows joint 95% CI, generated using a binomial distribution for fever symptoms and fitted parametric distributions given by references in Table 3 for incubation period.
 
 The mean and variance of the incubation period have been recognized as key drivers of the effectiveness of fever screening at arrival, since shorter incubation periods mean a greater likelihood that travellers will progress to symptoms during travel (Pitman et al., 2005; Al-Tawfiq et al., 2014; Mabey et al., 2014). There was considerable variability in incubation period among different pathogens (Figure 2B). Influenza A/H7N9 and A/H1N1p have the shortest incubation periods, while Ebola virus and Marburg virus have the longest. For some pathogens, the estimated variance in incubation period could increase with the addition of more data, which would improve characterization of the tails of the distribution. For instance, the incubation period distribution for Marburg virus was estimated from just five cases with a single exposure opportunity (Martini, 1973); observing more cases might give rise to a right-skewed distribution as seen for Ebola virus. Similarly, the incubation period distribution for MERS-CoV is determined using data from only 23 confirmed cases, and its variance might also expand with the addition of more data. The possibility of a lengthy incubation period presents challenges for symptom screening.
 
-Our focus on the natural history and epidemiology of infection revealed the crucial influence of the time between exposure and the departing flight. When we included the natural history parameters in the model, (see ‘Materials and methods’) we found that the contributions of each component of a screening program depend strongly on the time between exposure to infection and intended departure from the airport (
+Our focus on the natural history and epidemiology of infection revealed the crucial influence of the time between exposure and the departing flight. When we included the natural history parameters in the model, (see ‘Materials and methods’) we found that the contributions of each component of a screening program depend strongly on the time between exposure to infection and intended departure from the airport (Figure 3). Individuals with more recent exposure were less likely to display symptoms at the time of screening, and hence less likely to be identified by fever screening at departure. For pathogens with long incubation periods, the marginal value of fever screening at arrival was also lower. Note, however, that the 70% efficacy of non-contact infrared thermoscanners means that arrival screening can contribute by catching symptomatic cases missed at departure. Thus, the bulk of the contribution of arrival fever screening is mediated by equipment efficacy rather than natural history.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig3-v1.jpg)
 
-**Figure 3.:** Expected fraction of passengers detected by fever and risk factor screening, at arrival and departure, as a function of the time between an individual’s exposure and the departure leg of their journey. We assume a 70% probability that fever screening will identify febrile patients, and a 25% probability that a traveller with a known history of risky exposure will report it on a questionnaire. We assume 24 hr travel time. The white lines denote the point at which travellers board their flight; the black dashed line shows the median time from exposure to hospitalization for each pathogen.DOI: http://dx.doi.org/10.7554/eLife.05564.005
+**Figure 3.:** Expected fraction of passengers detected by fever and risk factor screening, at arrival and departure, as a function of the time between an individual’s exposure and the departure leg of their journey. We assume a 70% probability that fever screening will identify febrile patients, and a 25% probability that a traveller with a known history of risky exposure will report it on a questionnaire. We assume 24 hr travel time. The white lines denote the point at which travellers board their flight; the black dashed line shows the median time from exposure to hospitalization for each pathogen.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.05564.006
-
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig3-figsupp2-v1.jpg)
-
-**Figure 3—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.05564.007
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.05564.008
-
 Shortly after exposure, we found that detection was typically possible only by risk factor questionnaire screening, as most cases had not yet progressed to symptoms and were undetectable by fever screening (Figure 3). (Again, questionnaire screening at arrival contributes by catching some individuals who did not disclose their exposure risk at departure.) The duration of this phase depended on the incubation period, which is shortest for influenza A/H7N9 and A/H1N1p, and longest for Ebola and Marburg viruses; for MERS-CoV, despite a mid-length incubation period, questionnaire screening contributes nothing due to our ignorance of risk factors. As time since exposure elapsed, fever screening made a greater contribution to case detection, with pathogen natural history factors (i.e., incubation period, and fraction presenting with fever) becoming the primary determinants of screening effectiveness. We found similar qualitative patterns when we assumed reduced efficacy for fever screening devices (Figure 3—figure supplement 1), questionnaire reporting (Figure 3—figure supplement 2), or both tests (Figure 3—figure supplement 3).
 
-The striking patterns in
+The striking patterns in Figure 3 highlight the important role of the ‘infection age structure’ (i.e., the distribution of times from exposure to departure) of the traveller population. As a basic consideration, cases are more likely to have progressed to severe disease or death as time since exposure increases, so the population of infected individuals able to attempt air travel will be skewed toward more recent exposures (i.e., younger infections). The distribution of time since exposure will be influenced by the epidemic phase in the source population (Figure 4, Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig4-v1.jpg)
 
-**Figure 4.:** (A) Proportion of 50 infected travellers that would be missed by both departure and arrival screening in a growing epidemic. Figure shows three possible screening methods: fever screen, exposure risk questionnaire, or both. Lines show 95% bootstrapped CI. (B) Proportion of infected travellers missed by both departure and arrival screening in a stable epidemic. (C) Proportion of infected individuals who fly that are missed by arrival screening in a stable epidemic. (D) Proportion of infected arrivals missed by point of entry screening in a stable epidemic. We assume 25% probability traveller will report if they know exposure and 70% probability screening with identify visibly febrile patients. We assume R0 = 2 and a 24 hr travel time.DOI: http://dx.doi.org/10.7554/eLife.05564.009
+**Figure 4.:** (A) Proportion of 50 infected travellers that would be missed by both departure and arrival screening in a growing epidemic. Figure shows three possible screening methods: fever screen, exposure risk questionnaire, or both. Lines show 95% bootstrapped CI. (B) Proportion of infected travellers missed by both departure and arrival screening in a stable epidemic. (C) Proportion of infected individuals who fly that are missed by arrival screening in a stable epidemic. (D) Proportion of infected arrivals missed by point of entry screening in a stable epidemic. We assume 25% probability traveller will report if they know exposure and 70% probability screening with identify visibly febrile patients. We assume R0 = 2 and a 24 hr travel time.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/05564/elife-05564-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Red, influenza A/H7N9; purple influenza A/H1N1p; blue, MERS; green, SARS; orange, Ebola; black, Marburg. (A) Growing epidemic with R0 = 1.5. (B) Stable situation.DOI: http://dx.doi.org/10.7554/eLife.05564.010
+**Figure 4—figure supplement 1.:** Red, influenza A/H7N9; purple influenza A/H1N1p; blue, MERS; green, SARS; orange, Ebola; black, Marburg. (A) Growing epidemic with R0 = 1.5. (B) Stable situation.
 
 Overall screening effectiveness was greater in stable than growing epidemics (Figure 4A–B). These gains were driven by increased potential for fever detection in stable epidemics, where cases are less likely to be recently exposed and asymptomatic. In contrast, exposure risk detection does not vary with epidemic phase because exposure risk awareness does not depend on the infection age distribution. Regardless of epidemic phase, the full screening program fails to detect at least 25% of infected travellers, despite our optimistic assumptions. Focusing on the contribution made by screening at point of arrival, our projections suggest that arrival screening will still miss half to three-quarters of infected travellers that manage to complete their flights (Figure 4C–D). For pathogens with short incubation periods (i.e., influenza virus) fever detection was responsible for the majority of case identification in all epidemic phases. However, for pathogens with longer incubation periods (i.e., Ebola, Marburg, and SARS-CoV), exposure risk screening was responsible for half or more of case detection in growing epidemics. For these pathogens, fever detection was dominant only in stable epidemics (Figure 4).
 
@@ -112,29 +221,274 @@ Screening policies have been implemented during several recent epidemics (Samaan
 
 ## Materials and methods
 
-## Natural history and screening efficacy
+### Natural history and screening efficacy
 
-Using previously published studies of influenza A/H7N9, influenza A/H1N1p, SARS-CoV, MERS-CoV, Ebola virus, and Marburg virus, we assembled a set of four parameters describing the natural history and epidemiology of each pathogen. To describe epidemiology we established the proportion of cases that had a known source of exposure, and for natural history we established the proportion of symptomatic cases that exhibited fever (Table 2). For pathogen natural history we also gathered estimates for incubation period (i.e., time from exposure to onset of symptoms), and the time from onset to hospitalization (Table 3), which we use to approximate the period after which most exposed individuals have progressed to severe illness and will not attempt travel (details in ‘Appendix’). To estimate the proportion of individuals with known source of exposure for a particular pathogen, we identified the fraction of confirmed cases in descriptive epidemiological studies who reported contact with a known source of infection (e.g., poultry for influenza A/H7N9; close contact with an infected human for SARS-CoV, influenza A/H1N1p, Marburg and Ebola). As we could not find published estimates for the proportion of MERS-CoV cases with known source of exposure outside a hospital setting (Assiri et al., 2013), we assumed that exposure risk would not typically be known for MERS-CoV cases; this is consistent with recent publications highlighting the crucial knowledge gap in risk factors for MERS-CoV infection (Al-Tawfiq et al., 2014; Zumla et al., 2014).10.7554/eLife.05564.011Table 2.Natural history parameters: f is the proportion of cases with fever, g is the proportion of cases aware of exposure riskDOI: http://dx.doi.org/10.7554/eLife.05564.011PathogenParameterMeanSample sizeReferenceA/H7N9f0.7985(Cowling et al., 2013)f1.0046(Gong et al., 2014; Sun et al., 2014)f1.00111(Gao et al., 2013)g0.75123(Cowling et al., 2013)g0.56111(Gao et al., 2013)g0.7846(Gong et al., 2014; Sun et al., 2014)A/H1N1f0.67426(Cao et al., 2009)f0.891088(Louie et al., 2009)g0.29426(Cao et al., 2009)SARSf0.941452(Donnelly et al., 2004)g0.291192(Lau et al., 2004)MERSf0.8723(Assiri et al., 2013)g010,000(Cauchemez et al., 2014)Ebolaf0.871151(WHO Ebola Response Team, 2014)g0.86142(Pattyn, 1978)Marburgf0.93129(Bausch et al., 2006)f0.4715(Bausch et al., 2003)g0.6739(Roddy et al., 2010)10.7554/eLife.05564.012Table 3.Time from exposure to onset (i.e., incubation period) and onset to hospitalization for different pathogensDOI: http://dx.doi.org/10.7554/eLife.05564.012PathogenTime fromMean (days)ReferenceInfluenza A/H7N9Exposure-to-onset4.3(Cowling et al., 2013)Onset-to-hospitalization5(Gao et al., 2013; Sun et al., 2014)Influenza A/H1N1Exposure-to-onset4.3(Tuite et al., 2010)Exposure-to-onset2.05(Ghani et al., 2009)Onset-to-recovery7(Tuite et al., 2010)SARS-CoVExposure-to-onset6.4(Donnelly et al., 2003)Onset-to-hospitalization4.85(Donnelly et al., 2003)MERS-CoVExposure-to-onset5.2(Assiri et al., 2013)Exposure-to-onset5.5(Cauchemez et al., 2014)Onset-to-hospitalization5(Assiri et al., 2013)EbolaExposure-to-onset9.1(WHO Ebola Response Team, 2014)Onset-to-hospitalization5(WHO Ebola Response Team, 2014)MarburgExposure-to-onset6.8(Martini, 1973)Onset-to-hospitalization5**As there was limited data for onset-to-hospitalization for Marburg, we assumed the same value as for Ebola.
+Using previously published studies of influenza A/H7N9, influenza A/H1N1p, SARS-CoV, MERS-CoV, Ebola virus, and Marburg virus, we assembled a set of four parameters describing the natural history and epidemiology of each pathogen. To describe epidemiology we established the proportion of cases that had a known source of exposure, and for natural history we established the proportion of symptomatic cases that exhibited fever (Table 2). For pathogen natural history we also gathered estimates for incubation period (i.e., time from exposure to onset of symptoms), and the time from onset to hospitalization (Table 3), which we use to approximate the period after which most exposed individuals have progressed to severe illness and will not attempt travel (details in ‘Appendix’). To estimate the proportion of individuals with known source of exposure for a particular pathogen, we identified the fraction of confirmed cases in descriptive epidemiological studies who reported contact with a known source of infection (e.g., poultry for influenza A/H7N9; close contact with an infected human for SARS-CoV, influenza A/H1N1p, Marburg and Ebola). As we could not find published estimates for the proportion of MERS-CoV cases with known source of exposure outside a hospital setting (Assiri et al., 2013), we assumed that exposure risk would not typically be known for MERS-CoV cases; this is consistent with recent publications highlighting the crucial knowledge gap in risk factors for MERS-CoV infection (Al-Tawfiq et al., 2014; Zumla et al., 2014).
+
+**Table 2.**
+ Natural history parameters: f is the proportion of cases with fever, g is the proportion of cases aware of exposure risk
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pathogen</th>
+      <th>Parameter</th>
+      <th>Mean</th>
+      <th>Sample size</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">A/H7N9</td>
+      <td>f</td>
+      <td>0.79</td>
+      <td>85</td>
+      <td>(Cowling et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>1.00</td>
+      <td>46</td>
+      <td>(Gong et al., 2014; Sun et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>1.00</td>
+      <td>111</td>
+      <td>(Gao et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0.75</td>
+      <td>123</td>
+      <td>(Cowling et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0.56</td>
+      <td>111</td>
+      <td>(Gao et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0.78</td>
+      <td>46</td>
+      <td>(Gong et al., 2014; Sun et al., 2014)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">A/H1N1</td>
+      <td>f</td>
+      <td>0.67</td>
+      <td>426</td>
+      <td>(Cao et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>0.89</td>
+      <td>1088</td>
+      <td>(Louie et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0.29</td>
+      <td>426</td>
+      <td>(Cao et al., 2009)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SARS</td>
+      <td>f</td>
+      <td>0.94</td>
+      <td>1452</td>
+      <td>(Donnelly et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0.29</td>
+      <td>1192</td>
+      <td>(Lau et al., 2004)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MERS</td>
+      <td>f</td>
+      <td>0.87</td>
+      <td>23</td>
+      <td>(Assiri et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0</td>
+      <td>10,000</td>
+      <td>(Cauchemez et al., 2014)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ebola</td>
+      <td>f</td>
+      <td>0.87</td>
+      <td>1151</td>
+      <td>(WHO Ebola Response Team, 2014)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0.86</td>
+      <td>142</td>
+      <td>(Pattyn, 1978)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Marburg</td>
+      <td>f</td>
+      <td>0.93</td>
+      <td>129</td>
+      <td>(Bausch et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>0.47</td>
+      <td>15</td>
+      <td>(Bausch et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>0.67</td>
+      <td>39</td>
+      <td>(Roddy et al., 2010)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Time from exposure to onset (i.e., incubation period) and onset to hospitalization for different pathogens
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pathogen</th>
+      <th>Time from</th>
+      <th>Mean (days)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Influenza A/H7N9</td>
+      <td>Exposure-to-onset</td>
+      <td>4.3</td>
+      <td>(Cowling et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Onset-to-hospitalization</td>
+      <td>5</td>
+      <td>(Gao et al., 2013; Sun et al., 2014)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Influenza A/H1N1</td>
+      <td>Exposure-to-onset</td>
+      <td>4.3</td>
+      <td>(Tuite et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Exposure-to-onset</td>
+      <td>2.05</td>
+      <td>(Ghani et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>Onset-to-recovery</td>
+      <td>7</td>
+      <td>(Tuite et al., 2010)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SARS-CoV</td>
+      <td>Exposure-to-onset</td>
+      <td>6.4</td>
+      <td>(Donnelly et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>Onset-to-hospitalization</td>
+      <td>4.85</td>
+      <td>(Donnelly et al., 2003)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">MERS-CoV</td>
+      <td>Exposure-to-onset</td>
+      <td>5.2</td>
+      <td>(Assiri et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Exposure-to-onset</td>
+      <td>5.5</td>
+      <td>(Cauchemez et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Onset-to-hospitalization</td>
+      <td>5</td>
+      <td>(Assiri et al., 2013)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ebola</td>
+      <td>Exposure-to-onset</td>
+      <td>9.1</td>
+      <td>(WHO Ebola Response Team, 2014)</td>
+    </tr>
+    <tr>
+      <td>Onset-to-hospitalization</td>
+      <td>5</td>
+      <td>(WHO Ebola Response Team, 2014)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Marburg</td>
+      <td>Exposure-to-onset</td>
+      <td>6.8</td>
+      <td>(Martini, 1973)</td>
+    </tr>
+    <tr>
+      <td>Onset-to-hospitalization</td>
+      <td>5*</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*As there was limited data for onset-to-hospitalization for Marburg, we assumed the same value as for Ebola._
 
 A review of studies of non-contact infrared thermometer efficacy, when applied to forehead (as is typical for airport screening), suggested that the scanners had an average efficacy of 70% (Bitar et al., 2009). In our main analysis, we therefore assumed that the probability that febrile travellers would be detected by fever screening was 70%. This is an optimistic estimate, ignoring possible challenges in implementation in outbreak-affected regions and oversights made by device operators in arrival sites where risk may seem remote.
 
 Another important parameter is the fraction of travellers who will report honestly about known exposure to risk factors in a screening questionnaire. This quantity is intrinsically difficult to measure, and to our knowledge it has not been estimated before. We estimate an upper bound on this quantity by drawing on information from studies of influenza A/H1N1p. As summarized in Table 1, one study from the early phase of the pandemic in China showed that 29% (95% binomial CI: 25–33%) of cases were aware of their exposure to earlier cases (Cao et al., 2009). Studies of influenza A/H1N1p screening in New Zealand (Hale et al., 2012) and Australia (Gunaratnam et al., 2014) estimated that self-reported exposure screening identified 3/45 and 4/69 infected passengers respectively. Assuming the lower limit of the CI, that is, 25% of the infected passengers knew about their exposure history, the New Zealand and Australia studies suggest that a proportion 3/(0.25 × 45) = 0.27 and 4/(0.25 × 69) = 0.23 of infected travellers who knew their exposure history reported so on the questionnaire. Based on this, in our main analysis we assumed a 25% probability of honest self-reporting of exposure risk in each questionnaire. The assumption of independent decisions on each questionnaire is optimistic: it allows travellers who did not report honestly at departure to report honestly at arrival. The estimated probability is also optimistic, since we used a low-end estimate of the fraction of travellers who knew their exposure history: if more travellers were aware of their exposure, our estimate for the proportion who reported correctly would have been lower.
 
-## Model
+### Model
 
 We used a probabilistic model to assess the influence of pathogen natural history and epidemiological factors on screening outcomes. Upon airport arrival, we assumed that passengers pass through screening for fever, followed by screening for risk factors (Figure 1A). We assumed a one-strike policy: infected passengers who were identified by any single screening test were successfully caught by the screening program. We used the incubation period distribution to estimate the proportion of passengers who progressed to symptom onset in flight.
 
 The number of opportunities to detect each infected traveller varied depending on whether they displayed the symptom of fever and whether they knew their exposure history. We assumed passengers who did not present with fever would always pass through symptom screening, but could still be identified during questionnaire screening (Figure 1B). Passengers who are not aware of exposure risk will always pass through questionnaire screening (Figure 1C), and passengers with neither fever nor knowledge of exposure will go undetected (Figure 1D). The model is described in full in Figure 1—figure supplement 1. Source code for model analyses can be found in Source Code 1. This should be a citation for the source code file.
 
-## Time from exposure to departure during growing epidemic and stable scenarios
+#### Time from exposure to departure during growing epidemic and stable scenarios
 
-Here we define the distribution of times from exposure to airport departure (i.e., the ‘infection age distribution’ for the traveller population). First, we consider a stable scenario, when the epidemic in the source population is neither growing nor shrinking. We assume that individuals are equally likely to depart at any point during the time period between exposure and hospitalization (when they would likely be too ill to fly) or death. Thus the infection age distribution of travellers will mirror that of the non-hospitalized case population. To model time to hospitalization we assume a simple case, in which all individuals progress to hospitalization after a fixed period of time; the probability density function for exposure-to-hospitalization is therefore represented by a delta function centered at the average time from exposure to hospitalization in days derived from empirical studies, denoted D. Hence the time from exposure to departure has probability density function:(1)g(x)={1Dif 0≤x≤D0else.
+Here we define the distribution of times from exposure to airport departure (i.e., the ‘infection age distribution’ for the traveller population). First, we consider a stable scenario, when the epidemic in the source population is neither growing nor shrinking. We assume that individuals are equally likely to depart at any point during the time period between exposure and hospitalization (when they would likely be too ill to fly) or death. Thus the infection age distribution of travellers will mirror that of the non-hospitalized case population. To model time to hospitalization we assume a simple case, in which all individuals progress to hospitalization after a fixed period of time; the probability density function for exposure-to-hospitalization is therefore represented by a delta function centered at the average time from exposure to hospitalization in days derived from empirical studies, denoted D. Hence the time from exposure to departure has probability density function:
 
-Next, we consider the distribution during the exponential growth phase of an epidemic. We assume the basic reproduction number, defined as the average number of secondary cases generated by each infectious case in the early period of the outbreak, is R0 and that the serial interval of the infection is D as above. The rate at which the number of infected individuals in the population changes is therefore given by:(2)dIdt=R0ID.(3)⇒I(t)= eR0tD.
+$$
+g(x)={\frac{1}{D}if 0\leqx\leqD0else.
+$$
 
-If as before, we assume that no individual flies after time D, we have that the distribution of time from exposure to airport departure is:(4)f(x)={1−eR0tD1−eR0if 0≤x≤D0else.
+Next, we consider the distribution during the exponential growth phase of an epidemic. We assume the basic reproduction number, defined as the average number of secondary cases generated by each infectious case in the early period of the outbreak, is R0 and that the serial interval of the infection is D as above. The rate at which the number of infected individuals in the population changes is therefore given by:
 
-## Detailed model formulation
+$$
+\frac{dI}{dt}=\frac{R_{0}I}{D}.
+$$
+
+
+
+$$
+⇒I(t)= e^{\frac{R_{0t}}{D}}.
+$$
+
+If as before, we assume that no individual flies after time D, we have that the distribution of time from exposure to airport departure is:
+
+$$
+f(x)={\frac{1−e^{\frac{R_{0}t}{D}}}{1−e^{R_{0}}}if 0\leqx\leqD0else.
+$$
+
+#### Detailed model formulation
 
 The model considers a population of travellers, and only considers those travellers that are infected with the pathogen of interest. The probability density functions derived above are used to describe the distribution of times since exposure of individuals attempting travel, which we denote θ(d). Individuals of a given infection age are classified as symptomatic or asymptomatic at the time of intended departure using the cumulative distribution function of the incubation period distribution, denoted δ(d).
 
@@ -142,7 +496,11 @@ Following symptom classification, travellers are assigned to one of four detecta
 
 Travellers subsequently pass through fever screening, followed by risk factor screening, but are not affected by screening phases that are incompatible with their detectability class. For each phase of the screening process, the probability of detecting a case (given that the case has fever or risk factor, and hence could be detected by that screening modality) is modulated by an efficacy parameter, ε. The efficacy parameters have two subscripts: the first subscript is f, denoting fever screening, or g, denoting exposure risk screening; the second subscript is d, denoting departure screening, or a, denoting arrival screening.
 
-After departure screening for symptoms and risk factors, cleared passengers board the flight and some progress to symptoms during travel. Passengers who were symptomatic at departure but were not detected by screening remain symptomatic with probability 1. Passengers who were not symptomatic at departure develop symptoms in flight with probability S:(5)S=δ(d)−δ(d+Δd)1−δ(d).
+After departure screening for symptoms and risk factors, cleared passengers board the flight and some progress to symptoms during travel. Passengers who were symptomatic at departure but were not detected by screening remain symptomatic with probability 1. Passengers who were not symptomatic at departure develop symptoms in flight with probability S:
+
+$$
+S=\frac{\delta(d)−\delta(d+Δd)}{1−\delta(d)}.
+$$
 
 Finally, passengers pass through arrival screening using the same framework described above, using the appropriate efficacy parameters.
 

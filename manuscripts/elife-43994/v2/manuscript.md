@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.43994.001 The contribution of sensory and decisional processes to perceptual decision making is still unclear, even in simple perceptual tasks. When decision makers need to select an action from a set of balanced alternatives, any tendency to choose one alternative more often—choice bias—is consistent with a bias in the sensory evidence, but also with a preference to select that alternative independently of the sensory evidence. To decouple sensory from decisional biases, here we asked humans to perform a simple perceptual discrimination task with two symmetric alternatives under two different task instructions. The instructions varied the response mapping between perception and the category of the alternatives. We found that from 32 participants, 30 exhibited sensory biases and 15 decisional biases. The decisional biases were consistent with a criterion change in a simple signal detection theory model. Perceptual decision making, thus, even in simple scenarios, is affected by sensory and decisional choice biases.
+The contribution of sensory and decisional processes to perceptual decision making is still unclear, even in simple perceptual tasks. When decision makers need to select an action from a set of balanced alternatives, any tendency to choose one alternative more often—choice bias—is consistent with a bias in the sensory evidence, but also with a preference to select that alternative independently of the sensory evidence. To decouple sensory from decisional biases, here we asked humans to perform a simple perceptual discrimination task with two symmetric alternatives under two different task instructions. The instructions varied the response mapping between perception and the category of the alternatives. We found that from 32 participants, 30 exhibited sensory biases and 15 decisional biases. The decisional biases were consistent with a criterion change in a simple signal detection theory model. Perceptual decision making, thus, even in simple scenarios, is affected by sensory and decisional choice biases.
 
 ## Introduction
 
@@ -32,6 +32,16 @@ Unlike choice history biases, some choice biases are related to the overall idio
 
 In Experiment 1, the orientation of a grating centered on a fixation point was chosen randomly on each trial from a range centered around the horizontal orientation. Seventeen participants judged whether the grating was pointing down or up (by pressing the down or up arrow keys on a keyboard) relative to a reference that we asked participants to imagine placed on the right at the same height of the fixation point (Figure 1A; later we will discuss Figure 1B). Down and up choices correspond to clockwise and counterclockwise orientations relative to horizontal.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43994/elife-43994-fig1-v2.jpg)
+
+**Figure 1.:** (A) Illustration of a trial in which the participant was asked to imagine a reference on the right (the green dotted circumference was not displayed during the experiment; in Materials and methods we described the exact message displayed on the screen). (B) Illustration of a trial in which the participant was asked to imagine a reference on the left. (C–F) Choice behavior for four representative participants. (G) Decisional and sensory biases. For each participant, the circles correspond to the gratings presented around the horizontal orientation (Figure 1A–B) and the triangles to the gratings presented around the vertical orientation (illustrations of the stimuli not shown). The color indicates the best model assessed using likelihood ratio tests (see Materials and methods). (H) Across participants, the absolute value of the sensory and the decisional biases was significantly different (t(33) = 4.8, p=3.1×10−5). The crossbars display the mean and the 95% t-test confidence intervals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43994/elife-43994-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43994/elife-43994-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Choice behavior for the one reference per block and two references per block conditions for all participants in Experiment 2. (B) Decisional and sensory biases for each participant. The color indicates the best model. (C) Across the participants of Experiment 2, a two-way repeated measures ANOVA for the absolute value of the biases indicated no significant effect of number of references per block (one reference per block or two references per block; (F(1,14) = 3.7; p=0.073), a significant effect of the type of biases (sensory or decisional; F(1,14) = 8.7; p=0.010) and no significant interaction (F(1,14) = 3.6; p=0.078). The graph shows the biases from Experiment 1 (also shown in Figure 1H) and Experiment 2 (collapsed across number of references per block). The crossbars display the mean and the 95% t-test confidence intervals. For Experiment 2, the sensory and the decisional biases is significantly different (t(29) = 3.13, p=0.0040). Across experiments, the sensory biases is not significantly different (t(47) = 0.92, p=0.3619), but the decisional biases is significantly different (t(44) = 2.0, p=0.048).
+
 We first describe the results of four representative participants that illustrate the four types of choice behaviors that we found (Figure 1C–F). The crosses in Figure 1C–F show the probability of clockwise responses (pressing the down key) as a function of the orientation of the grating and the curves show the psychometric fits (see Models; Figure 1—figure supplement 1 shows the results for all participants). Participant 12 (Figure 1C) did not show asymmetries in choice behavior—no global choice bias was present (to see how we assessed that the bias was not significant, see Materials and methods). Participant 2 (Figure 1D) and 4 (Figure 1F) had a tendency to give a response consistent with clockwise orientation (pressing the down key)—that shifts the psychometric curve leftwards— and participant 9 (Figure 1E) had a tendency to give a response consistent with counterclockwise orientation (pressing the up key)—that shifts the psychometric curve rightwards.
 
 The biases could reflect that the perceived horizontality of the grating corresponds to different orientations for different participants (sensory bias) or that under uncertainty participants had a tendency to select either the down or up alternative (decisional bias). It could also be that biases include a sensory and a decisional component.
@@ -43,6 +53,12 @@ For each participant, we quantified the magnitude of the sensory and decisional 
 The slope of the psychometric fits provides a measure of precision. This precision affects the significance level of the biases. For example, for participant 7 (performing orientation judgments around the vertical; Figure 1—figure supplement 1), the slope is not very steep. This imprecision explains why the estimated biases for this participant, despite being of certain magnitude (the gray triangle more rightwards and upwards in Figure 1G), are not statistically significant.
 
 The task described could be considered symmetric because the evidence supporting clockwise or counterclockwise choices should be similar when the stimulus has the same magnitude but different sign relative to the neutral point. Given this symmetry, it could be argued that what we have described as sensory biases might be a more complex form of decisional biases than the one we tested: participants might not prefer the down or up alternative (or right and left), but instead biased to choose the alternative consistent with clockwise or counterclockwise orientation. In this case, the sensory biases that we found should not remain when the same stimuli are presented, but the task has two choices unrelated to the clockwise and counterclockwise alternatives. To assess this prediction, in some other trials—intermixed with the previous trials—we asked participants to imagine a reference on the right or on the left (or bottom and top) and perform a two-alternative asymmetric choice task that consisted in indicating whether the grating was aligned or not with the imagined reference (Figure 2A–B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43994/elife-43994-fig2-v2.jpg)
+
+**Figure 2.:** (A) Illustration of a trial in which the participant was asked to imagine a reference on the right. (B) Illustration of a trial in which the participant was asked to imagine a reference on the left. (C–F) Choice behavior for four representative participants. (G) Decisional and sensory biases. (H) Across participants, the absolute value of the sensory and the decisional biases was significantly different (t(31) = 5.4, p=6.0×10−6). The crossbars display the mean and the 95% t-test confidence intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43994/elife-43994-fig2-figsupp1-v2.jpg)
 
 To illustrate the choice behaviors on this task, we first describe the results of four representative participants (Figure 2C–F). The symbols in Figure 2C–F show the probability of responding aligned as a function of the orientation of the grating and the curves show the psychometric fits for the two possible locations of the reference (see Supplementary Models; Figure 2—figure supplement 1 shows the results for all participants). The arrows in Figure 2F illustrates the estimation of the magnitude of the sensory and decisional bias (see Supplementary Models). For participant 14 (Figure 2C), the probability of responding aligned was centered around 0 and did not depend on the location of the reference (no bias). For participant 3 (Figure 2D), the probability of responding aligned was not centered around 0, but did not depend on the location of the reference (sensory bias). For participant 1 (Figure 2E), the probability of responding aligned was not centered around 0 and depended on the location of the reference, but the tendency to respond aligned more often for one location did not affect where the psychometric fit was centered (sensory bias with a symmetric decisional bias, see Supplementary Models). Finally, for participant 16 (Figure 2F), the probability of responding aligned was not centered around 0 and depended on the location of the reference, but in this case this tendency affected where the psychometric fits were centered (sensory bias with an asymmetric decisional bias, see Supplementary Models).
 
@@ -58,29 +74,95 @@ Across trials we intermixed four locations of the reference and two tasks (symme
 
 Taking into account Experiment 1 and 2, we have found that from the 32 participants, 30 (94%) had significant global choice biases. From these 30, the sensory contribution was significant in all of them (that is, 94% of participants had sensory bias) and the decisional contribution was significant in 15 (that is, 47% of participants had decisional biases).
 
-## Models
+### Models
 
-On a given trial of the symmetric task (the model for the asymmetric task is described in Supplementary Models) a grating with orientation θi that could be clockwise or counterclockwise, is presented and the participant decides whether its orientation is consistent with clockwise acw or counterclockwise accw orientation. A simple standard signal detection theory (SDT) model assumes that: (1) the sensory evidence s associated to the stimulus is a random variable normally distributed with variance σ2 centered on μcw when θi is clockwise and centered on μccw when θi is counterclockwise; (2) to make choices, the participant sets a criterion β, computes the log likelihood ratio log⁡Λ of s under the hypothesis that μ=μcw and the hypothesis that μ=μccw(1)log⁡Λ(s)=log⁡(p(s|μ=μcw)p(s|μ=μccw))=log⁡((2πσ2)−1/2e−(s−μcw)22σ2(2πσ2)−1/2e−(s−μccw)22σ2)and chooses the action acw when log⁡Λ(s)>β .
+On a given trial of the symmetric task (the model for the asymmetric task is described in Supplementary Models) a grating with orientation $\theta_{i}$ that could be clockwise or counterclockwise, is presented and the participant decides whether its orientation is consistent with clockwise $a_{cw}$ or counterclockwise $a_{ccw}$ orientation. A simple standard signal detection theory (SDT) model assumes that: (1) the sensory evidence $s$ associated to the stimulus is a random variable normally distributed with variance $\sigma^{2}$ centered on $\mu_{cw}$ when $\theta_{i}$ is clockwise and centered on $\mu_{ccw}$ when $\theta_{i}$ is counterclockwise; (2) to make choices, the participant sets a criterion $\beta$, computes the log likelihood ratio $log⁡Λ$ of $s$ under the hypothesis that $\mu=\mu_{cw}$ and the hypothesis that $\mu=\mu_{ccw}$
 
-In standard SDT models the origin and scale of the sensory evidence is arbitrary (Wickens, 2001; Green and Swets, 1966). A typical choice is (Wickens, 2001; Green and Swets, 1966)(2)μcw=d′2μccw=−d′2σ=1which results in log⁡Λ(s)=d′s . That is, one can use directly the evidence as a decision variable and choose acw when s>c=β/d′ (Wickens, 2001; Green and Swets, 1966).
+$$
+log⁡Λ(s)=log⁡(\frac{p(s|\mu=\mu_{cw})}{p(s|\mu=\mu_{ccw})})=log⁡(\frac{(2\pi\sigma^{2})^{−1/2}e^{−\frac{(s−\mu_{cw})^{2}}{2\sigma^{2}}}}{(2\pi\sigma^{2})^{−1/2}e^{−\frac{(s−\mu_{ccw})^{2}}{2\sigma^{2}}}})
+$$
 
-The probability of choosing clockwise when θi is clockwise is(3)P(a=acw;μ=μcw)=12π∫c∞e−(s−μcw)22ds=Φ(μcw−c)where Φ is the standard cumulative normal function. To relate this probability to the magnitude of the stimulus, this standard SDT could be extended to include how the stimulus is transduced into sensory evidence (García-Pérez and Alcalá-Quintana, 2013; Schneider and Bavelier, 2003; García-Pérez and Peli, 2014; Schneider and Komlos, 2008). Adding the transduction provides a meaningful origin and scale to the sensory evidence. Assuming that the transduction is linear(4)μcw=aθi+bthe probability of choosing clockwise as a function of θi becomes(5)P(a=acw;θi)=Φ(aθi+b−c)=Φ(θi−(δD−δS)σ)
+and chooses the action $a_{cw}$ when $log⁡Λ(s)>\beta$ .
 
-Where(6)δS=ba=sensorybiasδD=ca=decisionalbiasσ=1awhich corresponds to a psychometric function centered on δD−δS with slope given by σ.
+In standard SDT models the origin and scale of the sensory evidence is arbitrary (Wickens, 2001; Green and Swets, 1966). A typical choice is (Wickens, 2001; Green and Swets, 1966)
 
-Consider the trials in which the grating is presented in orientations around the horizontal orientation and the reference is on the right (the reasoning that follows also holds for vertical orientations). If the orientation of the grating can take M different values, each value is presented n times and ki is the number of times that the participant pressed the down key (clockwise), then the probability density function that defines statistical model for these trials is(7)f(k1,…,kM;δS,δD,σ)=∏i=1M(nki)Φ(θi−(δD−δS)σ)ki(1−Φ(θi−(δD−δS)σ))n−ki
+$$
+\mu_{cw}=\frac{d^{′}}{2}\mu_{ccw}=−\frac{d^{′}}{2}\sigma=1
+$$
 
-Given that f depends on δD−δS, it is not possible to distinguish sensory from decisional biases (Witt et al., 2015; Schneider and Komlos, 2008; García-Pérez and Alcalá-Quintana, 2013).
+which results in $log⁡Λ(s)=d^{′}s$ . That is, one can use directly the evidence as a decision variable and choose $a_{cw}$ when $s>c=\beta/d^{′}$ (Wickens, 2001; Green and Swets, 1966).
 
-Consider now the trials for the left reference. A criterion c associated to a bias to choose responses consistent with clockwise orientation for the right reference corresponds to a criterion −c for the left reference. The statistical model that incorporates responses for the two locations of the reference is(8)f(k1,…,k2M;δS,δD,σ)=∏i=1M(nki)(1−ΦR)n−ki∏i=M+12M(nki)ΦLki(1−ΦL)n−kiwhere(9)ΦR=Φ(θi−(δD−δS)σ)ΦL=Φ(θi−(−δD−δS)σ)and the index i larger than M refers to the trials for the left reference. Now, by fitting two psychometric functions conjointly, δD and δs are not degenerated and could be estimated. This is the exact model that we fitted for 17 of the 34 groups (17 participants that discriminate orientations around the horizontal and the vertical orientation in Experiment 1). For the rest of the groups, we also fitted this basic model, but adding some extra features that significantly improved the quality of the fit (using likelihood ratio tests, see Materials and methods).
+The probability of choosing clockwise when $\theta_{i}$ is clockwise is
 
-The first feature is related to the variability of the sensory evidence σ. The basic model considers that this variability does not depend on where the participants imagined the reference, which results in the two psychometric functions having the same slope. We found this to be the case in 28 of the 34 fits, but in six groups we found that considering different variabilities (σ1 and σ2) for the two locations of the reference was better. It might be that orienting attention to different parts of the visual field might change the uncertainty in the sensory evidence for some participants.
+$$
+P(a=a_{cw};\mu=\mu_{cw})=\frac{1}{\sqrt{2\pi}}\int_{c}^{∞}e^{\frac{−(s−\mu_{cw})^{2}}{2}}ds=Φ(\mu_{cw}−c)
+$$
 
-The other feature that we added consisted in adding lapses, which are responses that are incorrect independently of the sensory evidence (Kingdom and Prins, 2016; Gold and Ding, 2013). This might occur, for example, when the participant misses the stimulus because of blinking or a loss of attention. To incorporate lapses into the basic model, ΦR need to be replaced by λ1+(1−λ1−λ2)ΦR and ΦL by λ1′+(1−λ1′−λ2′)ΦL (Kingdom and Prins, 2016). From the 34 groups, adding lapses improved the fit in 14 cases. From those, three fits required the four lapse parameters, 4 fits required two lapse parameters (one for each psychometric function, λ1=λ2 ; λ1′=λ2′) and 7 fits required one lapse rate (λ1=λ2=λ1′=λ2′). Importantly, including a lapse rate parameter λ∗ placed on the right asymptote for the right reference(10)λ1+λ∗+(1−λ1−λ1−λ∗)ΦRand placed on the left asymptote for the left reference(11)λ2+(1−λ2−λ2−λ∗)ΦLdid not improve significantly the fit for any group, which indicates that decisional biases cannot be explained by a tendency of participants to select one alternative completely independently of the sensory evidence.
+where $Φ$ is the standard cumulative normal function. To relate this probability to the magnitude of the stimulus, this standard SDT could be extended to include how the stimulus is transduced into sensory evidence (García-Pérez and Alcalá-Quintana, 2013; Schneider and Bavelier, 2003; García-Pérez and Peli, 2014; Schneider and Komlos, 2008). Adding the transduction provides a meaningful origin and scale to the sensory evidence. Assuming that the transduction is linear
 
-Perceptual tasks with two symmetric alternatives have been also modeled using a high threshold model, called the indecision model (García-Pérez and Alcalá-Quintana, 2013; García-Pérez and Peli, 2014). This model is similar to the SDT model described, but divides the sensory axis in three regions delimited by c1 and c2. When the sensory evidence is lower than c1 the participant chooses accw and when is larger than c2, chooses acw. Critically, when the sensory evidence lies between c1 and c2—called interval of uncertainty—the model assumes that the observer is undecided and guesses the response (choosing accw with probability ξ). The probability of choosing clockwise when θi is clockwise and the reference is on the right is(12)P(a=acw;μ=μcw)=12π∫c2∞e−(s−μcw)22ds+ξ12π∫c1c2e−(s−μcw)22ds=Φ(μcw−c2)+ξ(Φ(c2−μcw)−Φ(c1−μcw))
+$$
+\mu_{cw}=a\theta_{i}+b
+$$
 
-For the left reference, assuming that c1 and c2 do not change, ξ should be replaced by 1−ξ. We fitted this model to the 19 groups with significant decisional biases and found that for all of them (except for participant eight for the vertical condition in Experiment 1) the SDT model was better using the Akaike information criterion (Burnham and Anderson, 2004). Given that the indecision model has two parameters more than the SDT model (c is replaced by c1 and c2 and ξ is introduced), we also compared the SDT model to a simplified version of the indecision model with symmetric boundaries c1=−c2 (García-Pérez and Alcalá-Quintana, 2013; García-Pérez and Peli, 2014). In this case, the SDT model was better for all the groups.
+the probability of choosing clockwise as a function of $\theta_{i}$ becomes
+
+$$
+P(a=a_{cw};\theta_{i})=Φ(a\theta_{i}+b−c)=Φ(\frac{\theta_{i}−(\delta_{D}−\delta_{S})}{\sigma})
+$$
+
+Where
+
+$$
+\delta_{S}=\frac{b}{a}=sensorybias\delta_{D}=\frac{c}{a}=decisionalbias\sigma=\frac{1}{a}
+$$
+
+which corresponds to a psychometric function centered on $\delta_{D}−\delta_{S}$ with slope given by $\sigma$.
+
+Consider the trials in which the grating is presented in orientations around the horizontal orientation and the reference is on the right (the reasoning that follows also holds for vertical orientations). If the orientation of the grating can take $M$ different values, each value is presented $n$ times and $k_{i}$ is the number of times that the participant pressed the down key (clockwise), then the probability density function that defines statistical model for these trials is
+
+$$
+f(k_{1},…,k_{M};\delta_{S},\delta_{D},\sigma)=\prodi=1M(nk_{i})Φ(\frac{\theta_{i}−(\delta_{D}−\delta_{S})}{\sigma})^{k_{i}}(1−Φ(\frac{\theta_{i}−(\delta_{D}−\delta_{S})}{\sigma}))^{n−k_{i}}
+$$
+
+Given that $f$ depends on $\delta_{D}−\delta_{S}$, it is not possible to distinguish sensory from decisional biases (Witt et al., 2015; Schneider and Komlos, 2008; García-Pérez and Alcalá-Quintana, 2013).
+
+Consider now the trials for the left reference. A criterion $c$ associated to a bias to choose responses consistent with clockwise orientation for the right reference corresponds to a criterion $−c$ for the left reference. The statistical model that incorporates responses for the two locations of the reference is
+
+$$
+f(k_{1},…,k_{2M};\delta_{S},\delta_{D},\sigma)=\prodi=1M(nk_{i})(1−Φ_{R})^{n−k_{i}}\prodi=M+12M(nk_{i})Φ_{L}^{k_{i}}(1−Φ_{L})^{n−k_{i}}
+$$
+
+where
+
+$$
+Φ_{R}=Φ(\frac{\theta_{i}−(\delta_{D}−\delta_{S})}{\sigma})Φ_{L}=Φ(\frac{\theta_{i}−(−\delta_{D}−\delta_{S})}{\sigma})
+$$
+
+and the index $i$ larger than $M$ refers to the trials for the left reference. Now, by fitting two psychometric functions conjointly, $\delta_{D}$ and $\delta_{s}$ are not degenerated and could be estimated. This is the exact model that we fitted for 17 of the 34 groups (17 participants that discriminate orientations around the horizontal and the vertical orientation in Experiment 1). For the rest of the groups, we also fitted this basic model, but adding some extra features that significantly improved the quality of the fit (using likelihood ratio tests, see Materials and methods).
+
+The first feature is related to the variability of the sensory evidence $\sigma$. The basic model considers that this variability does not depend on where the participants imagined the reference, which results in the two psychometric functions having the same slope. We found this to be the case in 28 of the 34 fits, but in six groups we found that considering different variabilities ($\sigma_{1}$ and $\sigma_{2}$) for the two locations of the reference was better. It might be that orienting attention to different parts of the visual field might change the uncertainty in the sensory evidence for some participants.
+
+The other feature that we added consisted in adding lapses, which are responses that are incorrect independently of the sensory evidence (Kingdom and Prins, 2016; Gold and Ding, 2013). This might occur, for example, when the participant misses the stimulus because of blinking or a loss of attention. To incorporate lapses into the basic model, $Φ_{R}$ need to be replaced by $\lambda_{1}+(1−\lambda_{1}−\lambda_{2})Φ_{R}$ and $Φ_{L}$ by $\lambda_{1}′+(1−\lambda_{1}′−\lambda_{2}′)Φ_{L}$ (Kingdom and Prins, 2016). From the 34 groups, adding lapses improved the fit in 14 cases. From those, three fits required the four lapse parameters, 4 fits required two lapse parameters (one for each psychometric function, $\lambda_{1}=\lambda_{2}$ ; $\lambda_{1}^{′}=\lambda_{2}^{′}$) and 7 fits required one lapse rate ($\lambda_{1}=\lambda_{2}=\lambda_{1}^{′}=\lambda_{2}^{′}$). Importantly, including a lapse rate parameter $\lambda^{∗}$ placed on the right asymptote for the right reference
+
+$$
+\lambda_{1}+\lambda^{∗}+(1−\lambda_{1}−\lambda_{1}−\lambda^{∗})Φ_{R}
+$$
+
+and placed on the left asymptote for the left reference
+
+$$
+\lambda_{2}+(1−\lambda_{2}−\lambda_{2}−\lambda^{∗})Φ_{L}
+$$
+
+did not improve significantly the fit for any group, which indicates that decisional biases cannot be explained by a tendency of participants to select one alternative completely independently of the sensory evidence.
+
+Perceptual tasks with two symmetric alternatives have been also modeled using a high threshold model, called the indecision model (García-Pérez and Alcalá-Quintana, 2013; García-Pérez and Peli, 2014). This model is similar to the SDT model described, but divides the sensory axis in three regions delimited by $c_{1}$ and $c_{2}$. When the sensory evidence is lower than $c_{1}$ the participant chooses $a_{ccw}$ and when is larger than $c_{2}$, chooses $a_{cw}$. Critically, when the sensory evidence lies between $c_{1}$ and $c_{2}$—called interval of uncertainty—the model assumes that the observer is undecided and guesses the response (choosing $a_{ccw}$ with probability $ξ$). The probability of choosing clockwise when $\theta_{i}$ is clockwise and the reference is on the right is
+
+$$
+P(a=a_{cw};\mu=\mu_{cw})=\frac{1}{\sqrt{2\pi}}\int_{c_{2}}^{∞}e^{\frac{−(s−\mu_{cw})^{2}}{2}}ds+ξ\frac{1}{\sqrt{2\pi}}\int_{c_{1}}^{c_{2}}e^{\frac{−(s−\mu_{cw})^{2}}{2}}ds=Φ(\mu_{cw}−c_{2})+ξ(Φ(c_{2}−\mu_{cw})−Φ(c_{1}−\mu_{cw}))
+$$
+
+For the left reference, assuming that $c_{1}$ and $c_{2}$ do not change, $ξ$ should be replaced by $1−ξ$. We fitted this model to the 19 groups with significant decisional biases and found that for all of them (except for participant eight for the vertical condition in Experiment 1) the SDT model was better using the Akaike information criterion (Burnham and Anderson, 2004). Given that the indecision model has two parameters more than the SDT model ($c$ is replaced by $c_{1}$ and $c_{2}$ and $ξ$ is introduced), we also compared the SDT model to a simplified version of the indecision model with symmetric boundaries $c_{1}=−c_{2}$ (García-Pérez and Alcalá-Quintana, 2013; García-Pérez and Peli, 2014). In this case, the SDT model was better for all the groups.
 
 ## Discussion
 
@@ -102,38 +184,38 @@ We found a good agreement between the sensory biases estimated from the symmetri
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 The study was approved by the ethical committee of the University of Barcelona and followed the requirements of the Helsinki convention. The participants, who did not know the hypothesis of the experiments, provided written consent to perform the experiments. Twenty-one participants were recruited for Experiment 1 and sixteen for Experiment 2.
 
-## Stimuli and tasks
+### Stimuli and tasks
 
 Stimuli were generated using PsychoPy (Peirce, 2007), displayed on a Sony G520 CRT screen (40 cm width and 30 cm height; 60 Hz refresh rate) and viewed from a distance of 57 cm in a dark room. They consisted in a Gabor patch (standard deviation (sd) of the Gaussian envelope: 1.33 degrees of visual angle (dva); maximum luminance: 79 cd/m2) and a red Gaussian blob (sd: 0.1 dva; maximum luminance: 19 cd/m2) on top of it that participants were asked to fixate during the experiment. Stimuli were presented against a uniform circular grey background (diameter: 25 dva; luminance: 43 cd/m2) that was displayed in a black background (luminance: 0.2 cd/m2). The verticality of the Gabor was calibrated using a pendulum.
 
-## Experiment 1
+#### Experiment 1
 
 Participants performed 6 blocks of 360 trials. In each block, eight conditions were randomly intermixed across trials. On each trial, before the Gabor was presented, a text message informed participants about the condition. A right: up or down? message instructed participants to imagine a reference on the right (at the same height of the fixation point) and respond whether the Gabor was pointing down (clockwise) or up (counterclockwise) relative to it. A left: up or down? message instructed participants to imagine a reference on the left and respond whether the Gabor was pointing down (counter-clockwise) or up (clockwise). For these conditions, the orientation of the Gabor was chosen randomly from a range centred around horizontal orientation (from −2 to 2 deg in steps of 0.5 deg) according to the method of constant stimuli (Kingdom and Prins, 2016). The up: right or left? and the down: right or left? messages provided parallel instructions for imaginary references on top and at the bottom. For these conditions the orientation was centered around vertical orientation. Participants used the arrow keys to respond. A right? message instructed participants to imagine a reference on the right and respond whether the Gabor was aligned with it (pressing m key) or not (pressing n key). A left?, up? and down? provided parallel instructions for references in other locations. The messages were available until participants pressed the spacebar. The Gabor was presented for 100 ms, 500 ms after the keypress.
 
-## Experiment 2
+#### Experiment 2
 
 Experiment 2 was like Experiment 1, but included only the symmetric task and orientations around vertical. Participants performed 4 blocks of 270 trials. Half of the participants performed first two blocks in which they were asked to imagined the reference always in the same location within a block and, then, two blocks in which they were asked to imagine the reference at one location that changed randomly across trials. For the other half of participants, the block order was inverted.
 
-## Instructions
+### Instructions
 
 Before the experiments, to facilitate the understanding of the instructions, a reference (a green gaussian luminance profile; sd: 0.1 dva; maximum luminance: 29 cd/m2) was displayed for 5 to 10 trials at the corresponding cardinal location at a distance of 6 dva from the center of the fixation point.
 
-## Analysis
+### Analysis
 
 The data and the code to do the statistical analysis and create the figures is available at https://github.com/danilinares/2018LinaresAguilarLopezmoliner (Linares, 2019; copy archived at https://github.com/elifesciences-publications/2018LinaresAguilarLopezmoliner). The model fitting, goodness of fit and model selection (likelihood ratio test and Akaike information criterion) was performed using the R package quickspy (Linares and López-Moliner, 2016), which under the development version allows fitting several psychometric functions conjointly.
 
-## Experiment 1 (symmetric task)
+#### Experiment 1 (symmetric task)
 
-For four of the twenty-one participants, a preliminary analysis revealed that the responses were inverted or not modulated by the orientation of the grating and were not analyzed further. For each participant and condition of overall orientation (horizontal or vertical), we fitted the model in Equation (8) with all the extra features (2 slopes and four lapses, see Models; parameters: δs, δD , σ1, σ2, λ1, λ2, λ1′, λ2′) using maximum likelihood estimation. Then, using consecutive likelihood ratio tests performed using the χ2 distribution and a significance level of 0.05 (Prins and Kingdom, 2018), we reduced model complexity to select for each participant and condition of orientation the simplest model that captured the data and incorporated at least the parameters δs, δD and σ. The first two parameters correspond to the sensory and decisional biases plotted in Figure 1G. To assess, for each participant and condition of orientation, which was the best bias model, we performed further likelihood ratio tests with simpler models. The best bias model was described as Sensory bias if a simpler model with δD=0 provided a better fit; Decisional bias if a model with δs=0 was better; No bias if a model with δD=δS=0 was better; and Sensory + decisional bias if the complexity of the original model could not be further reduced. When we compared the models with lapse parameters with the models without lapses, we used a lapse rate of 0.01 instead of zero because this resulted in better fits (Prins, 2012).
+For four of the twenty-one participants, a preliminary analysis revealed that the responses were inverted or not modulated by the orientation of the grating and were not analyzed further. For each participant and condition of overall orientation (horizontal or vertical), we fitted the model in Equation (8) with all the extra features (2 slopes and four lapses, see Models; parameters: $\delta_{s}$, $\delta_{D}$ , $\sigma_{1}$, $\sigma_{2}$, $\lambda_{1}$, $\lambda_{2}$, $\lambda_{1}^{′}$, $\lambda_{2}^{′}$) using maximum likelihood estimation. Then, using consecutive likelihood ratio tests performed using the $χ^{2}$ distribution and a significance level of 0.05 (Prins and Kingdom, 2018), we reduced model complexity to select for each participant and condition of orientation the simplest model that captured the data and incorporated at least the parameters $\delta_{s}$, $\delta_{D}$ and $\sigma$. The first two parameters correspond to the sensory and decisional biases plotted in Figure 1G. To assess, for each participant and condition of orientation, which was the best bias model, we performed further likelihood ratio tests with simpler models. The best bias model was described as Sensory bias if a simpler model with $\delta_{D}=0$ provided a better fit; Decisional bias if a model with $\delta_{s}=0$ was better; No bias if a model with $\delta_{D}=\delta_{S}=0$ was better; and Sensory + decisional bias if the complexity of the original model could not be further reduced. When we compared the models with lapse parameters with the models without lapses, we used a lapse rate of 0.01 instead of zero because this resulted in better fits (Prins, 2012).
 
-## Experiment 1 (asymmetric task)
+#### Experiment 1 (asymmetric task)
 
 For one of the participants that could perform the symmetric task, the responses were not modulated by the orientation of the grating for the asymmetric task and the data was not analyzed. To estimate sensory and decisional biases and assess which bias model was better, we used the same procedure described for the symmetric task.
 
-## Experiment 2
+#### Experiment 2
 
 The data were analyzed as it is described for the symmetric task in Experiment 1.

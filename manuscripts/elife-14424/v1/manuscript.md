@@ -18,7 +18,7 @@ Correlation does not imply causation. If two variables, say A and B, are correla
 
 ## Codon usage optimality and gene expression
 
-Let’s first consider the often-observed correlation between the codon usage of a gene and its protein expression level (
+Let’s first consider the often-observed correlation between the codon usage of a gene and its protein expression level (Sharp and Li, 1987). Scientists who wish to overexpress a gene in a heterologous system know that they need to “codon-optimize” their gene. That is to say, they must alter its coding sequence so that it is the best match for the codon usage of the most highly expressed genes in the host genome. These are often the codons that correspond to abundant tRNAs in that species. Indeed the effects of codon optimization of gene expression are most pronounced in heterologous expression systems (see Gustafsson et al., 2004). Yet also for the natural genes in a genome, the most codon-optimized genes are often most highly used and expressed (Sharp and Li, 1987; Man and Pilpel, 2007). This may lead to the conclusion that optimal codon usage is a cause of high protein expression for natural genes too. In other words, codon optimization is a proximate cause for protein expression level.
 
 ![Figure](https://cdn.elifesciences.org/articles/14424/elife-14424-fig1-v1.jpg)
 

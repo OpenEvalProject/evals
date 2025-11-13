@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Integrative Immunobiology, Duke University School of Medicine Durham United States
-2. https://ror.org/00py81415 Department of Molecular Genetics and Microbiology, Duke University School of Medicine Durham United States
-3. https://ror.org/00py81415 Department of Cell Biology, Duke University School of Medicine Durham United States
-4. https://ror.org/0130frc33 Department of Microbiology and Immunology, University of North Carolina at Chapel Hill Chapel Hill United States
-5. https://ror.org/00py81415 Department of Biomedical Engineering, Duke University Pratt School of Engineering Durham United States
-6. https://ror.org/04vmvtb21 Department of Pathology and Laboratory Medicine, Tulane University School of Medicine New Orleans United States
+1. Department of Integrative Immunobiology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Department of Molecular Genetics and Microbiology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+3. Department of Cell Biology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+4. Department of Microbiology and Immunology, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+5. Department of Biomedical Engineering, Duke University Pratt School of Engineering Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+6. Department of Pathology and Laboratory Medicine, Tulane University School of Medicine New Orleans United States ([ROR:04vmvtb21](https://ror.org/04vmvtb21))
 
 † Corresponding author
 
@@ -44,47 +44,95 @@ We previously demonstrated that during this SPI2-driven intracellular phase, S. 
 
 ## Results
 
-## FliCON S. Typhimurium activates apoptotic backup pathways in vitro
+### FliCON S. Typhimurium activates apoptotic backup pathways in vitro
 
 We first investigated the relative contribution of these backup pathways (Figure 1A) during FliCON infection by examining in vitro infections in bone marrow-derived macrophages (BMMs) from various knockout mice. We wished to focus on the intracellular SPI2-driven phase of infection. To ensure SPI1-genes were not expressed, we grew S. Typhimurium in SPI2 inducing media prior to infection (Miao et al., 2002). As an additional measure, we used S. Typhimurium that were deficient for flagellin and SPI1 (flgC and ΔprgH-K) so that NLRC4 could only be activated by the engineered FliCON system (Figure 1B). As a negative control, Nlrc4–/– BMMs did not activate either pyroptotic or backup apoptotic pathways (Figure 1C–D). Casp1–/– BMMs retain the ASC to caspase-8 pathway; and indeed, we observed weak caspase-8, BID, and caspase-3 cleavage at 4 hr post-infection (hpi) (Figure 1D), indicating that this pathway is relatively slow. In contrast, Gsdmd–/– BMMs remain competent for both the ASC to caspase-8 and the caspase-1 to BID pathways; and indeed, we observed stronger cleavage of BID, caspase-9, and caspase-3 (Figure 1D). We also noticed stronger caspase-8 cleavage in the Gsdmd–/– BMMs compared to the Casp1–/– BMMs (Figure 1D), perhaps due to the ability of active caspase-3 and –7 to cleave caspase-8, in a feed-forward loop (Inoue et al., 2009; McComb et al., 2019). Further, only Gsdmd–/– BMMs displayed release of cytochrome c from the mitochondria to the cytosol during infection (Figure 1C), as expected by faster signaling from caspase-1 to BID. Indeed, we also observed cleaved BID (tBID) localization to the mitochondria (Figure 1C). Compared to Gsdmd–/– BMMs, Pycard/Gsdmd–/– BMMs and Bid/Gsdmd–/– BMMs had slightly reduced cleavage of caspase-8,–9, and –3 (Figure 1—figure supplement 1A) as expected due to the loss of only one of the two apoptotic pathways in each double knockout. Interestingly, WT BMMs, which are competent for all apoptotic and pyroptotic pathways showed strong cleavage of gasdermin D but only showed weak cleavage of BID and caspase-7, and lacked cleavage of caspase-9 and –3 (Figure 1D, Figure 1—figure supplement 1A), suggesting that completion of pyroptosis precludes the apoptotic signaling pathway.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cell death pathways activated by FliCON S. Typhimurium. (B) Schematic of engineered FliCON construct. (C–F) Bone marrow-derived macrophages (BMMs) were infected with indicated SPI2-induced S. Typhimurium strains. (C) Western blot analysis of cytosolic and mitochondrial fractions at 5 hpi. Representative image from three independent experiments. (D) Western blot analysis of whole cell lysates at 4 hpi. Representative image from three independent experiments. (E) Lactate dehydrogenase (LDH) release at 1–8 hpi. Results representative of three independent experiments. Data are represented as mean ± SD of three technical replicates. (F–G) Immunofluorescence and brightfield. Cells were stained with PI, cleaved caspase-3/7, and Hoechst. (F) Representative image from two (brightfield, PI) or one (cleaved caspase-3/7) independent experiments at 4 hpi. 60 x magnification, scale bar 20 µm. Arrows, pyroptotic cells. Carrots, apoptotic cells. (G) Z-stack slices from Figure 1—video 1. Gsdmd–/– BMMs infected with FliCON imaged at 6 hpi. Representative Z-stack from three (brightfield, PI) or one (cleaved caspase-3/7) independent experiments. 60 x magnification, Z-slices 11, 18, 21, and 26 shown. Carrots; selected examples of apoptotic bodies.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–E) Bone marrow-derived macrophages (BMMs) were infected with indicated SPI2-induced S. Typhimurium strains. (A) Western blot analysis of whole cell lysates at 4 hpi. Results from one experiment. (B) Lactate dehydrogenase (LDH) release at 1–8 hpi. Results representative of three independent experiments. Data are represented as mean ± SD of three technical replicates. Data performed at the same time as Figure 1E, graphed separately for visualization. (C) LDH release at 1–8 hpi. Results from one experiment. Data are represented as mean ± SD of three technical replicates. (D–E) Immunofluorescence and brightfield at 4 hpi. Cells were stained with PI, cleaved caspase-3/7, and Hoechst. Representative image from two (brightfield, PI) or one (cleaved caspase-3/7) independent experiments. Data performed at the same time as Figure 1F. (D) 60 x magnification, scale bar 20 µm. (E) 20 x stitched image, scale bar 500 µm.
 
 We next assessed viability of WT, Nlrc4–/–, Casp1–/–, and Gsdmd–/– BMMs during FliCON infection using a lactate dehydrogenase (LDH) assay (Figure 1E, Figure 1—figure supplement 1B). WT BMMs showed rapid release of LDH consistent with pyroptosis. In accordance with our western blot data (Figure 1C–D), Nlrc4–/– BMMs infected with FliCON did not show toxicity over time (Figure 1E). While Casp1–/– BMMs did show weak caspase-3 cleavage by 4–6 hpi (Figure 1D), they do not show much LDH release over the course of 8 hpi (Figure 1E). As before, Gsdmd–/– BMMs showed early signs of loss of viability when compared to Casp1–/– BMMs (Figure 1E), agreeing with prior publications with different agonists (Doerflinger et al., 2020; Tsuchiya et al., 2019). Pycard/Gsdmd–/– BMMs and Bid/Gsdmd–/– BMMs showed reduced LDH release compared to Gsdmd–/– BMMs (Figure 1E, Figure 1—figure supplement 1C). Vector control infections showed no LDH release over time (Figure 1—figure supplement 1B–C). These data indicate that the several backup pathways that remain in a Gsdmd–/– BMM cause LDH release, albeit slower than pyroptosis.
 
 Finally, we used propidium iodide (PI) and cleaved caspase-3/7 staining to visualize pyroptotic and apoptotic cells in vitro (Figure 1F and Figure 1—figure supplement 1D–E). As expected, both WT and Gsdmd–/– BMMs infected with FliCON for 4 hr showed strong PI staining, whereas neither Nlrc4–/– nor Casp1–/– BMMs had a high number of PI positive cells (Figure 1F, Figure 1—figure supplement 1E). Brightfield images of BMMs infected with FliCON showed clear pyroptotic morphology in WT BMMs, whereas Gsdmd–/– BMMs showed clear apoptotic blebbing that co-stained for cleaved caspase-3 (Figure 1F, Figure 1—figure supplement 1E). These apoptotic bodies are more clearly visualized in the form of a Z-stack (Figure 1—video 1, Figure 1G). Casp1–/– BMMs cellular morphology showed early signs of rounding but no apoptotic bodies, whereas Nlrc4–/– BMMs infected with FliCON have no difference in cellular morphology from the controls (Figure 1F, Figure 1—figure supplement 1D). Therefore, engineered FliCON S. Typhimurium activates the apoptotic backup pathways in vitro in BMMs.
 
-## Backup apoptosis fails to clear FliCON S. Typhimurium in the spleen
+### Backup apoptosis fails to clear FliCON S. Typhimurium in the spleen
 
 We next investigated whether the apoptotic backup pathways cleared S. Typhimurium during in vivo systemic infection in mice. We used a competitive index infection model (Beuzón and Holden, 2001), where a single mouse is infected with a vector control WT S. Typhimurium mixed with FliCON S. Typhimurium at a 1:1 ratio, each marked with a different antibiotic resistance (Figure 2A and Figure 2—figure supplement 1A–B). We use this competitive index method throughout this study. FliCON was progressively cleared in WT mice at a rate of ~10 fold per day compared to WT S. Typhimurium (Figure 2B–C), consistent with our prior publications that pyroptosis is sufficient to clear FliCON (Jorgensen et al., 2016b; Miao et al., 2010a). FliCON was not cleared in Nlrc4–/– mice, as expected (Figure 2B and D). However, FliCON was also not cleared in Casp1–/– mice (Figure 2B and E), even though they are sufficient for the ASC to caspase-8 apoptotic backup pathway (Miao et al., 2010a). Furthermore, FliCON was not cleared in Gsdmd–/– mice that retain caspase-1 to BID, caspase-1 to caspase-7, and ASC to caspase-8 backup pathways (Figure 2B and F). Finally, FliCON was not cleared in Pycard/Gsdmd–/– or Bid/Gsdmd–/– mice that retain fewer backup pathways (Figure 2—figure supplement 1C–D). This lack of clearance also held true in a higher dose 105 total CFU infection (Figure 2G–H). When examining only the burdens of the vector control, we observed trending, but not statistically significant increases in Casp1–/– and Gsdmd–/– mice, which may reflect incomplete evasion of NLRC4 and NLRP3 (Broz et al., 2010a; Man et al., 2014), but this detection of vector-containing WT S. Typhimurium is much less effective in clearance compared to FliCON engineered bacteria (Figure 2C–F). Therefore, the apoptotic backup pathways are not sufficient to clear either a high or low dose S. Typhimurium infection from the spleen when pyroptotic signaling is blocked.
 
-## Engineered BIDON S. Typhimurium activates apoptosis in vitro
+![Figure 2.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of competitive index infection model. (B–H) Mice were infected with a 1:1 ratio of FliCON and a vector control S. Typhimurium. Bacterial burdens in the spleen were determined at the indicated timepoints. (B) Timecourse of competitive index infection in indicated mice. Mice were infected with 5 × 102 CFU of each strain. Ratio of vector to FliCON is graphed. Data representative of three (WT, Gsdmd–/–) or two (Nlrc4–/–, Casp1–/–) independent experiments. Line connects mean, n=3–4 mice per genotype per timepoint. Two-way ANOVA n.s. p>0.05; ***p<0.001. (C–F) Individual burdens of vector and FliCON from (B). Paired vector and FliCON data from each mouse are connected by a line. Two-way repeated measure ANOVA. n.s. p>0.05, *p<0.05, **p<0.01 (G) Mice were infected with 5 × 104 CFU of each strain. Bacterial burdens in the spleen were determined at 48 hpi. Ratio of vector to FliCON is graphed. Combined two independent experiments, line representing mean ± SD, n=7–13 mice per genotype. Kruskal-Wallis n.s. p>0.05; ***p<0.001, ****p<0.0001. (H) Individual burdens from (G). Paired vector and FliCON data from each mouse are connected by a line. Two-way repeated measure ANOVA. n.s. p>0.05, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Mice were infected with a 1:1 ratio of pWSK129 (‘vector’) and pWSK29 (backbone of FliCON and BIDON plasmids) S. Typhimurium. Mice were infected with 5 × 102 CFU of each strain. Bacterial burdens in the spleen were determined at the indicated timepoints. (A) Timecourse competitive index infection in WT mice. Ratio of vector to pWSK29 is graphed. Data from one independent experiment, line connects means, n=4–6 mice per timepoint. (B) Individual burdens of vector and pWSK29 from (A). Paired vector and pWSK29 data from each mouse are connected by a line. Two-way ANOVA n.s. p<0.05 (C–D) Mice were infected with a 1:1 ratio of FliCON and a vector control S. Typhimurium. Mice were infected with 5 × 102 CFU of each strain. Bacterial burdens in the spleen were determined at 48 hpi. (C) Competitive index infection in indicated mice. Data from one independent experiment, line representing mean ± SD, n=3–4 mice per genotype. One-way ANOVA n.s. p>0.05; ****p<0.0001. (D) Individual burdens of vector and FliCON from (C). Paired vector and FliCON data from each mouse are connected by a line. Two-way repeated measure ANOVA. n.s. p>0.05, ****p<0.0001.
+
+### Engineered BIDON S. Typhimurium activates apoptosis in vitro
 
 Apoptosis is more commonly activated by intrinsic cellular signaling than backup pathways branching from pyroptosis. To trigger intrinsic apoptosis, we engineered S. Typhimurium to directly induces BID-dependent apoptosis. We fused the pro-apoptotic BH3 domain of murine BID to the T3SS secretion signal of SspH1 via an HA tag (Figure 3A). This SspH1SS-HA-BIDBH3 protein was expressed from a SPI2 promoter; we refer to these bacteria as BIDON (Figure 3A). The BH3 domain of BID is sufficient to activate BAX/BAK to cause MOMP, which should lead to intrinsic apoptosis (Figure 3B). BIDON bacteria grew normally in LB media (Figure 3—figure supplement 1A). In WT BMMs, BIDON caused caspase-3 cleavage, while a negative vector control without the BIDBH3 domain did not (Figure 3C). The weaker HA band in SspH1SS-HA-BIDBH3 compared to SspH1SS-HA could be due to caspase-3 cleaving after aspartates within the HA tag, which can efficiently destroy the HA epitope. The fused SspH1SS-HA-BIDBH3 protein is detectable by western blot with both α-HA and α-BID antibodies (Figure 3C–D). Coincidentally, SspH1SS-HA-BIDBH3 is similar in length to full-length endogenous BID (predicted 21 kDa and 20 kDa, respectively), and resolved as a thicker band or sometimes as a doublet at ~20 kDa (Figure 3D–E, Figure 3—figure supplement 1B). BIDON induced release of cytochrome c from the mitochondria, followed by weak caspase-9 cleavage, resulting in both cleaved caspase-3 and –7, and weak caspase-8 cleavage (Figure 3E–F). As expected, BIDON did not result in cleaved gasdermin D (Figure 3E), indicating that these timepoints are too early to observe the inactivating cleavage of gasdermin D by caspase-3 (Chen et al., 2019). Morphologically, BIDON infected BMMs showed classic apoptotic blebbing between 4–6 hpi (Figure 3G), which is best visualized via a Z-stack (Figure 3—video 1, Figure 3H). Therefore, S. Typhimurium can be engineered to trigger cell intrinsic apoptosis in vitro in BMMs.
 
-## Apoptosis is induced slower than pyroptosis
+![Figure 3.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of engineered BIDON construct. (B) Pathway model showing how BIDON leads to intrinsic apoptosis. (C–G) Bone marrow-derived macrophages (BMMs) were infected with indicated SPI2-induced S. Typhimurium strains. (C–E) Western blot analysis of whole cell lysates at 6 hpi. Data representative of two (C) or three (D–E) independent experiments. (F) Western blot analysis of cytosolic and mitochondrial fractions at 4 hpi. Data representative from three independent experiments. (G) Brightfield at 6 hpi. Data representative of three independent experiments. 60 x magnification, scale bar 20 µm, carrot, apoptotic blebs. (H) Z-stack slices from Figure 3—video 1. WT BMMs infected with BIDON imaged at 6 hpi. Representative Z-stack from three (brightfield, PI) or one (cleaved caspase-3/7) independent experiments. 60 x magnification, Z-slices 11, 19, 22, and 24 shown. Carrots; selected examples of apoptotic bodies.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) OD600 growth curve in LB media. Results are combined from two independent experiments, represented as mean ± SD. (B) Bone marrow-derived macrophages (BMMs) were infected with SPI2-induced S. Typhimurium. Western blot analysis of whole cell lysates at 6 hpi. Double band of endogenous full-length BID and sspH1SS-HA-BIDBH3 resolved.
+
+### Apoptosis is induced slower than pyroptosis
 
 Above we described two engineered strains, FliCON and BIDON, which can be used to initiate three different cell death pathways: (1) FliCON in WT BMMs causes pyroptosis, (2) FliCON in Gsdmd–/– BMMs causes backup apoptosis, and (3) BIDON in WT BMMs causes intrinsic apoptosis. We compared the kinetics and signaling of these three models to determine whether the different engineering methods induced cell death at different rates. We detected gasdermin D cleavage from FliCON infection in as little as 1–2 hpi (Figure 4A). However, cleaved caspase-3 from FliCON in Gsdmd–/– BMMs was not detected until 3 hpi, and was pronounced only after 4 hpi (Figure 4A). BIDON induced apoptosis slower still, with cleaved caspase-3 only weakly detected at 4 hpi, and not pronounced until 5 or 6 hpi (Figure 4A). The difference between the kinetics of these apoptotic pathways is likely due to the efficient detection of FliC by the NAIP/NLRC4 inflammasome, which has a theoretical sensitivity to detect a single flagellin protein molecule (Hu et al., 2015; Zhang et al., 2015). On the other hand, BIDBH3 signaling is buffered by the cellular BCL family proteins, which are expected to delay the initiation of the BAK/BAX pore. Overall, both ways of achieving apoptosis are successful in vitro, but with slightly different kinetics.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Bone marrow-derived macrophages (BMMs) were infected with indicated SPI2-induced S. Typhimurium strains. (A) Western blot analysis of whole cell lysates. Representative of five independent experiments. (B) Immunofluorescence and brightfield. Cells were stained with PI, cleaved caspase-3/7, and Hoechst and imaged at indicated timepoints. Representative image from three (brightfield, PI) or one (cleaved caspase-3/7) independent experiments. Z-stack of the 6 hr timepoint is represented in Figure 1—video 1 and Figure 3—video 1. Z-stack slice 19 (FliCON in Gsdmd–/–) and slice 20 (BIDON in WT) shown here. 60 x magnification, scale bar 20 µm. Arrows, pyroptotic cells. Carrots, apoptotic cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Bone marrow-derived macrophages (BMMs) were infected with indicated SPI2-induced S. Typhimurium strains. Cells were stained with PI, cleaved caspase-3/7, and Hoechst and imaged at indicated timepoints. Representative image from three (brightfield, PI) or one (cleaved caspase-3/7) independent experiments. Data performed at the same time as Figure 4B. (A) 60 x magnification, scale bar 20 µm. (B) 20 x stitched image, scale bar 500 µm.
+
 These kinetics were also apparent visually, as we observed pyroptotic cells in WT BMMs infected with FliCON at 2 hpi, whereas we did not see any apoptotic blebbing or cleaved caspase-3/7 in Gsdmd–/– BMMs infected with FliCON or BMMs infected with BIDON until 6 hpi (Figure 4B, Figure 4—figure supplement 1A–B, Figure 1—video 1, Figure 3—video 1). Correspondingly, we observed strong PI staining in WT BMMs infected with FliCON at both 2 and 6 hpi (Figure 4B, Figure 4—figure supplement 1B). In contrast, Gsdmd–/– BMMs infected with FliCON showed no PI staining at 2 hpi, and were only PI positive later at 6 hpi. BIDON infected BMMs were similarly delayed, with slightly weaker PI staining (Figure 4B), again consistent with somewhat slower kinetics in the BIDON infection.
 
-## Intrinsic apoptosis does not clear engineered S. Typhimurium in the spleen
+### Intrinsic apoptosis does not clear engineered S. Typhimurium in the spleen
 
 Next, we wanted to determine whether BIDON was cleared in vivo using the competitive index assay, where, again, mice are co-infected with engineered bacteria and a vector control. Whereas FliCON was cleared in WT mice, BIDON was not (Figure 5A–B). FliCON clearance is progressive over 48 hpi, whereas BIDON burdens increased in ratios equivalent to vector control S. Typhimurium over this period (Figure 5B). We also compared our two apoptosis-inducing models, and found that both FliCON in Gsdmd–/– mice and BIDON in WT mice were statistically equal in their lack of clearance (Figure 5C–D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig5-v1.jpg)
+
+**Figure 5.:** (A–D) Mice were infected with a 1:1 ratio of either FliCON or BIDON and a vector control S. Typhimurium. Mice were infected with 5 × 102 CFU of each strain. Bacterial burdens in the spleen were determined at the indicated timepoints. (A) Timecourse competitive index infection in WT mice. Ratio of vector to either FliCON or BIDON is graphed. Data is combined from three independent experiments, line connects means, n=13–14 mice per condition. Two-way ANOVA *** p<0.001, ****p<0.0001. (B) Individual burdens of vector and FliCON or BIDON from (A). Paired vector and FliCON or BIDON data from each mouse are connected by a line. Two-way repeated measure ANOVA n.s. p>0.05; ***p<0.001, ****p<0.0001. (C) Competitive index infection of indicated mice infected with either FliCON or BIDON. Ratio of vector to either FliCON or BIDON is graphed. Bacterial burdens in the spleen were determined at 48 hpi. Data is combined from three independent experiments, line representing mean ± SD, n=10–12 mice per condition. One-way ANOVA n.s. p>0.05, ****p<0.0001. (D) Individual burdens of vector and FliCON or BIDON from (C). Paired vector and StrainON data from each mouse are connected by a line. Two-way repeated measure ANOVA n.s. p>0.05, ****p<0.0001. (E) Schematic of triple competitive index model. (F–G) Mice were infected simultaneously with three strains, 5 × 102 CFU each of CamR vector, KanR FliCON, and AmpR BIDON S. Typhimurium. Bacterial burdens in the spleen were determined at 48 hpi. (F) Triple competitive index infection of WT mice. Ratio of CamR vector to KanR FliCON or AmpR BIDON is graphed. Data is combined from three independent experiments, line representing mean ± SD, n=15. Unpaired two-tailed t-test ****p<0.0001. (G) Individual burdens of CamR vector, KanR FliCON, and AmpR BIDON from (F). Paired vector, FliCON, and BIDON data from each mouse are connected by a line. One-way repeated measure ANOVA **p<0.01, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Mice were infected simultaneously with three strains, 5 × 102 CFU each of pWSK229 (‘vector (Cam),’ Cam), pWSK129 (Kan), and pWSK29 (Amp) S. Typhimurium. Bacterial burdens in the spleen were determined at 48 hpi. (A) Triple competitive index infection of WT mice. Ratio of vector (Cam) to pWSK129 and vector to pWSK29 is graphed. Data representative of three experiments. Data represented by line at mean ± SD, n=5. Unpaired two-tailed t-test n.s. p>0.05. (B) Individual burdens of vector (Cam), pWSK129, and pWSK29 from (A). Paired vector, pWSK129, and pWSK29 data from each mouse are connected by a line. Repeated measures one-way ANOVA n.s. p>0.05.
+
 Pyroptosis is pro-inflammatory, whereas apoptosis itself does not inherently promote inflammation. We hypothesized that specific inflammatory signals such as IL-1β, IL-18, or other cytosolic molecules released by pyroptosis might be required to promote bacterial clearance after RCD. These would be produced during FliCON infection in WT mice, but should be absent during BIDON infection. To include pyroptosis-induced inflammatory signals during a BIDON infection, we created a triple competitive index model, wherein a single mouse is infected with equal ratios of vector control, FliCON, and BIDON simultaneously (Figure 5E, Figure 5—figure supplement 1A–B). We show that even in the presence of FliCON, BIDON cannot be cleared from the spleen to the same degree as FliCON (Figure 5F–G). Therefore, FliCON does not create a proinflammatory environment in the spleen that alters the failure of BIDON to be cleared. We noted a slight reduction in BIDON burdens compared to the vector control in this triple competitive index model that is likely an early manifestation of non-specific attenuation due to S. Typhimurium engineering that will be described in another manuscript (Abele et al., 2023). This suggests that the ability of RCD to lead to clearance of engineered S. Typhimurium is linked to the specific mode of RCD for that host cell.
 
-## Pyroptosis clears FliCON from myeloid cells
+### Pyroptosis clears FliCON from myeloid cells
 
 In the spleen, S. Typhimurium is established to primarily infect macrophages (Salcedo et al., 2001). To validate that clearance after induction of pyroptosis, but not backup apoptosis, was coming from the macrophage compartment, we infected cell-type specific Casp1fl/fl mice. We crossed these mice with either Lyz2-cre (also known as LysM-cre), which deletes caspase-1 from myeloid cells, or Mrp8-cre, which deletes caspase-1 efficiently from neutrophils and does not efficiently delete caspase-1 in monocytes and macrophages (Abram et al., 2014). We compared these cell-type-specific knockouts to caspase-1 sufficient littermate controls. We again used a competitive index model, and found that Casp1fl/fl Mrp8-cre mice retained the ability to clear FliCON, whereas Casp1fl/fl Lyz2-cre mice lost the ability to clear FliCON (Figure 6A–B). This is in contrast to our prior data, where we show that caspase-11 within the neutrophil compartment is necessary for clearance of Burkholderia thailandensis (Kovacs et al., 2020). Therefore, when macrophages have caspase-1, FliCON S. Typhimurium is successfully cleared from the spleen. However, when caspase-1 is deleted from macrophages, FliCON is no longer cleared. These data indicate that pyroptosis clears FliCON from the macrophage compartment, whereas backup apoptosis fails to clear FliCON from this compartment.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig6-v1.jpg)
 
-**Figure 6.:** ON from myeloid compartment in vivo.(A) Mice were infected with 5 × 104 CFU of each strain. Bacterial burdens in the spleen were determined at 48 hpi. Ratio of vector to FliCON is graphed. Combined two independent experiments, line representing mean ± SD, n=6 mice per genotype. One-way ANOVA n.s. p>0.05; ****p<0.0001. (B) Individual burdens from (A). Paired vector and FliCON data from each mouse are connected by a line. Two-way repeated measure ANOVA. n.s. p>0.05, ****p<0.0001.Figure 6—source data 1.Figure 6A–B.
+**Figure 6.:** (A) Mice were infected with 5 × 104 CFU of each strain. Bacterial burdens in the spleen were determined at 48 hpi. Ratio of vector to FliCON is graphed. Combined two independent experiments, line representing mean ± SD, n=6 mice per genotype. One-way ANOVA n.s. p>0.05; ****p<0.0001. (B) Individual burdens from (A). Paired vector and FliCON data from each mouse are connected by a line. Two-way repeated measure ANOVA. n.s. p>0.05, ****p<0.0001.
 
-## Apoptotic pathways clear engineered S. Typhimurium during intestinal infection
+### Apoptotic pathways clear engineered S. Typhimurium during intestinal infection
 
 The apoptotic backup pathways have previously been shown to successfully clear non-engineered WT S. Typhimurium infection downstream of NLRC4 in intestinal epithelial cells (IECs) (Rauch et al., 2017). This is in disagreement with our results above using engineered S. Typhimurium during systemic infection in the myeloid compartment of the spleen. Given this, we decided to test the utility of the apoptotic backup pathways during oral infection. During infection with non-engineered WT S. Typhimurium, the bacteria naturally express both flagellin, SPI1 rod, and SPI1 needle in the gut lumen. Among these NLRC4 agonists, flagellin accounts for the vast majority of NLRC4 activation, and SPI1 rod and needle protein are relatively inefficiently detected (Miao et al., 2006). FliCON engineering does not prevent the bacteria from expressing these endogenous genes. To create an infection model where the majority of NLRC4 activation arises only from the engineered FliCON, we used a flgB mutant background to ablate endogenous flagellin expression and used a competitive index vs vector control bacteria. In the streptomycin-pretreated oral infection model, the IEC compartment can be assessed by examining gentamicin protected bacterial burdens in the cecum (Rauch et al., 2017), and from the same mice the myeloid compartment can be assessed in the draining mesenteric lymph nodes (MLN).
 
 As a control, FliCON burdens were equal to the vector control within the fecal samples, where no selective pressure should exist (Figure 7A–B). FliCON was cleared from MLN after oral infection of WT mice (Figure 7A–B), which agrees with our above data from the spleen after intraperitoneal infection. FliCON was also cleared in the gentamicin-protected cecal compartment in WT mice (Figure 7A–B), suggesting that the pyroptotic pathway leads to clearance from both IEC and macrophage compartments. Surprisingly, when we examined the apoptotic backup pathway by infecting Gsdmd–/– mice with FliCON, we observed different results in the two compartments. There was no clearance of FliCON in the MLN of Gsdmd–/– mice (Figure 7A–B), in agreement again with our data from the spleen. However, FliCON was cleared in the gentamicin-protected cecal compartment of Gsdmd–/– mice with efficiencies that were equal to that seen in WT mice (Figure 7A–B). As a control, Nlrc4–/– mice were unable to clear FliCON S. Typhimurium from any compartment (Figure 7—figure supplement 1A–B). Interestingly, Casp1–/– mice that retain only the ASC to caspase-8 backup pathway had reduced clearance of FliCON S. Typhimurium from the cecum (Figure 7—figure supplement 1A–B). This suggests that the apoptotic backup pathways are specifically useful in IECs, in agreement with the data from Rauch et al., however, these same pathways fail in myeloid compartments in the lymph nodes or spleen.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig7-v1.jpg)
+
+**Figure 7.:** (A–D) Mice were orally treated with 20 mg streptomycin, and 24 hr later orally infected with 1 × 107 CFUs total bacteria comprised of a 1:1 ratio of the indicated ampicillin-resistant strain and kanamycin-resistant vector (pWSK129) control S. Typhimurium, all on a flgB mutant background. Bacterial burdens in the cecum, mesenteric lymph nodes (MLN), and fecal samples were determined at 48 hpi. (A) Competitive index is graphed as a ratio of vector to either pWSK29 or FliCON. Data is combined from two (cecum, fecal) or one (MLN) independent experiments (MLN was not harvested in the first experiment, where we harvested the spleen, which had negligible burdens; one additional representative experiment is shown in Figure 7—figure supplement 1A–B), line representing mean ± SD, n=10 (cecum, fecal) or 5 (MLN) mice per condition. Two-way repeated measure ANOVA n.s. p>0.05, ****p<0.0001. (B) Individual burdens of vector and pWSK29 or FliCON from (A). Paired vector and StrainON data from each mouse are connected by a line. Two-way repeated measure ANOVA n.s. p>0.05, *p<0.05, ***p<0.001, ****p<0.0001. (C) Competitive index infection of WT mice infected with either SspH1SS-HA or BIDON. Ratio of vector to either SspH1SS-HA or BIDON is graphed. Data is combined from two independent experiments, line representing mean ± SD, n=10 mice per condition. Two-way repeated measure ANOVA n.s. p>0.05, ****p<0.0001. (D) Individual burdens of vector and SspH1SS-HA or BIDON from (C). Paired vector and StrainON data from each mouse are connected by a line. Two-way repeated measure ANOVA n.s. p>0.05, **p<0.01, ****p<0.0001. (E) Schematic demonstrating the ability of pyroptotic or apoptotic signaling to lead to clearance of engineered S. Typhimurium in either intestinal epithelial cells (IECs) or macrophages.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/89210/elife-89210-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) Mice were orally treated with 20 mg streptomycin, and 24 hr later orally infected with 1 × 107 CFUs total bacteria comprised of a 1:1 ratio of FliCON and vector control S. Typhimurium, all on a flgB mutant background. Bacterial burdens in the cecum, mesenteric lymph nodes (MLN), and fecal samples were determined at 48 hpi. (A) Competitive index is graphed as a ratio of vector to FliCON. Data from one independent experiment, line representing mean ± SD, n=3–5 mice per condition. Two-way repeated measure ANOVA n.s. p>0.05, *p<0.05, **p<0.01, ****p<0.0001. (B) Individual burdens of vector and FliCON from (A). Paired vector and FliCON data from each mouse are connected by a line. Two-way repeated measure ANOVA n.s. p>0.05, ****p<0.0001.(C–D) Mice were infected with a 1:1 ratio of KanR BIDON and SspH1SS-HA vector control S. Typhimurium. Mice were infected with 5 × 102 CFU of each strain. Bacterial burdens in the spleen were determined at 48 hpi. (C) Competitive index infection of WT mice infected with KanR BIDON. Ratio of SspH1SS-HA vector to KanR BIDON is graphed. Data is combined from two independent experiments, line representing mean ± SD, n=10 mice. (D) Individual burdens of SspH1SS-HA vector and KanR BIDON from (C). Paired SspH1SS-HA vector and KanR BIDON data from each mouse are connected by a line. Paired t-test **p<0.01.
 
 We also investigated BIDON S. Typhimurium during oral infection again on a flgB background and found BIDON was also cleared from the cecum (Figure 7C–D). In agreement with our in vitro data showing that BIDON-induced apoptosis is slower and less efficient than the apoptotic backup pathways induced by FliCON in Gsdmd–/– BMMs (Figure 4A), clearance of BIDON in the cecum was less efficient than clearance of FliCON in Gsdmd–/– mice (Figure 7A–D). Interestingly, in the MLN compartment, BIDON appears to have a slight advantage versus the vector control S. Typhimurium (Figure 7C–D). This matches a weak, but repeatable trend seen in the splenic compartment in previous infections (Figure 5A–B, Figure 7—figure supplement 1C–D). Therefore, cell-intrinsic apoptotic pathways can also clear engineered S. Typhimurium from the IEC compartment, but not from lymph nodes or the spleen (Figure 7E).
 
@@ -104,40 +152,453 @@ Here, we show that clearance of engineered S. Typhimurium after RCD is dependent
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Mus musculus)</td>
+      <td>Bid</td>
+      <td>NCBI</td>
+      <td>NM_007544.4</td>
+      <td>AA79-102 (BH3 domain) used for plasmid construction</td>
+    </tr>
+    <tr>
+      <td>gene (Salmonella enterica serovar Typhimurium)</td>
+      <td>SspH1</td>
+      <td>GenBank</td>
+      <td>ACY87967.1</td>
+      <td>AA1-137 (secretion signal) used for plasmid construction</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Salmonella enterica serovar Typhimurium, 14028s)</td>
+      <td>WT</td>
+      <td>Gift from Samuel I. Miller</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Salmonella enterica serovar Typhimurium, SL1344)</td>
+      <td>flgB</td>
+      <td>Gift from Kelly T. Hughes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Salmonella enterica serovar Typhimurium, CS401)</td>
+      <td>flgC ΔprgH-K</td>
+      <td>Gift from Kelly T. Hughes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>WT</td>
+      <td>Jax and Miao lab colony, Jax stock No. 000664</td>
+      <td></td>
+      <td>Colony bred WT mice were always used in experiments with colony bred knockout mice. Jax-purchased mice were only used in experiments having only WT mice from Jax.</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Mrp8-cre</td>
+      <td>Miao lab colony, Jax stock No. 021614</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Lyz2tm1(cre)Ifo (common name LysM-cre)</td>
+      <td>Miao lab colony, Jax stock No. 004781</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Casp1fl/fl</td>
+      <td>Miao lab colony, Hu et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Casp1–/–</td>
+      <td>Miao lab colony, Rauch et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Casp1–/– Casp11129mt/129mt (referred to as Casp1/11–/–)</td>
+      <td>Miao lab colony, Kuida et al., 1995</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Gsdmd–/–</td>
+      <td>Miao lab colony, Rauch et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Nlrc4–/–</td>
+      <td>Miao lab colony, Mariathasan et al., 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Bid–/–</td>
+      <td>Miao lab colony, Yin et al., 1999</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Il1b/Il18–/–</td>
+      <td>Miao lab colony, Shornick et al., 1996; Takeda et al., 1998</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Pycard–/–Gsdmd–/– (referred to as Pycard/Gsdmd–/–)</td>
+      <td>Miao lab colony, crossed in this paper</td>
+      <td></td>
+      <td>Produced by crossing Pycard–/– (also known as Asc–/–) (Mariathasan et al., 2004) and Gsdmd–/– mice</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Bid–/–Gsdmd–/– (referred to as Bid/Gsdmd–/–)</td>
+      <td>Miao lab colony, crossed in this paper</td>
+      <td></td>
+      <td>Produced by crossing Bid–/–and Gsdmd–/– mice</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti- cytochrome c monoclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>11940</td>
+      <td>Western blot 1:750 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-GAPDH polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>Ab9485</td>
+      <td>Western blot 1:10,000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-VDAC monoclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>4661</td>
+      <td>Western blot 1:750 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-cleaved caspase-8 monoclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>8592</td>
+      <td>Western blot 1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rat anti-BID monoclonal antibody</td>
+      <td>R&amp;D</td>
+      <td>MAB860</td>
+      <td>Western blot 1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-caspase-9 monoclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>9508</td>
+      <td>Western blot 1:750 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-cleaved caspase-7 polyclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>9491</td>
+      <td>Western blot 1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-cleaved caspase-3 polyclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>9661</td>
+      <td>Western blot 1:750 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-gasdermin D monoclonal antibody</td>
+      <td>Abcam</td>
+      <td>Ab209845</td>
+      <td>Western blot 1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-HA.11 monoclonal antibody</td>
+      <td>Biolegend</td>
+      <td>MMS-101R</td>
+      <td>Western blot 1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-rabbit polyclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>7074</td>
+      <td>Western blot secondary 1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-rat polyclonal antibody</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>112-035-062</td>
+      <td>Western blot secondary 1:10,000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-mouse polyclonal antibody</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>115-035-062</td>
+      <td>Western blot secondary 1:10,000 dilution</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pWSK29 (“Vector”)</td>
+      <td>Wang and Kushner, 1991</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pWSK129 (“Vector”)</td>
+      <td>Wang and Kushner, 1991</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pDM001 (“FliCON”)</td>
+      <td>Miao et al., 2010a</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pTA007 (“BIDON”)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pTA021 (“SspH1SS-HA”)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pWSK229 (“CamR Vector”)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pTA015 (“KanR FliCON”)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pTA016 (“KanR BIDON”)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See “Materials and methods, Table 1”</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Pierce ECL</td>
+      <td>ThermoFisher Scientific</td>
+      <td>32106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>SuperSignal West Pico PLUS ECL</td>
+      <td>ThermoFisher Scientific</td>
+      <td>34580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>SuperSignal West Femto ECL</td>
+      <td>ThermoFisher Scientific</td>
+      <td>34095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>CytoTox 96 LDH assay</td>
+      <td>Promega</td>
+      <td>G1780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>ThermoFisher</td>
+      <td>H3570</td>
+      <td>Immuno-flourescence, used at 2 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium Iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4864</td>
+      <td>Immuno-flourescence, used at 1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NucView-488</td>
+      <td>Biotium</td>
+      <td>10402</td>
+      <td>Immuno-flourescence, used at 5 µM</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 1.**
+ Plasmids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmids</th>
+      <th>Alias</th>
+      <th>Resistance</th>
+      <th>Notes</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pWSK29</td>
+      <td>Vector</td>
+      <td>Amp</td>
+      <td>Low copy vector</td>
+      <td>Wang and Kushner, 1991</td>
+    </tr>
+    <tr>
+      <td>pWSK129</td>
+      <td>Vector</td>
+      <td>Kan</td>
+      <td>Low copy vector</td>
+      <td>Wang and Kushner, 1991</td>
+    </tr>
+    <tr>
+      <td>pDM1</td>
+      <td>FliCON</td>
+      <td>Amp</td>
+      <td>pWSK29 expressing fliC fliS from sseJ promotor</td>
+      <td>Miao et al., 2010a</td>
+    </tr>
+    <tr>
+      <td>pTA007</td>
+      <td>BIDON or AmpR BIDON</td>
+      <td>Amp</td>
+      <td>pWSK29 expressing sspH1SS-HA-mBIDBH3 from sseJ promotor</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pTA021</td>
+      <td>SspH1SS-HA</td>
+      <td>Amp</td>
+      <td>pWSK29 expressing sspH1SS-HA from sseJ promotor</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pWSK229</td>
+      <td>CamR Vector</td>
+      <td>Cam</td>
+      <td>Low copy vector</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pTA015</td>
+      <td>KanR FliCON</td>
+      <td>Kan</td>
+      <td>pWSK129 expressing fliC fliS from sseJ promotor</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pTA016</td>
+      <td>KanR BIDON</td>
+      <td>Kan</td>
+      <td>pWSK129 expressing sspH1SS-HA-mBIDBH3 from sseJ promotor</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 pTA007 (BIDON) was created by fusing the BH3 domain of murine BID (AA79-102) to the S. Typhimurium T3SS secretion signal of SspH1(AA1-137) via an HA tag. This fused SspH1SS-HA-mBIDBH3 was put under the control of sseJ promotor and inserted into pWSK29. pTA021 (PsseJ sspH1SS-HA) was created using the same strategy as pTA007, but did not include the murine BIDBH3 domain. pTA015 (KanR FliCON) was created by digesting PsseJ fliC fliS from FliCON and inserting the fragment into pWSK129. pTA016 (KanR BIDON) was created by digesting the PsseJ sspH1SS-HA-BIDBH3 from BIDON and inserting into pWSK129. pWSK229 was created by replacing the ampicillin resistance cassette of pWSK29 with a chloramphenicol resistance cassette cloned from pTwist Chlor MC from Twist Biosciences (South San Fransisco, CA).
 
-## Bacterial strains and culture conditions
+### Bacterial strains and culture conditions
 
 All Salmonella enterica serovar Typhimurium strains were derived from ATCC 14028s or SL1344. In vivo systemic infections were performed in 14028s with the indicated plasmids. In vivo oral infections were performed in SL1344 on a flgB mutant background with the indicated plasmids. In vitro infections were performed using flgC ΔprgH-K S. Typhimurium on the CS401 derivative of 14028s (used for the genetic deletion system) to eliminate flagellin and SPI1 T3SS expression from chromosomal loci. To eliminate flagellin expression from chromosomal loci during mouse infections, flgB 14028s S. Typhimurium were used for Figure 2G–H , and of three replicates of Figure 5A–B. However, we found that experimental results were identical using wild-type S. Typhimurium, therefore, wild type 14028s S. Typhimurium were used for all other systemic mouse infections. Plasmids are listed in Table 1. All strains were grown in 2 mL Miller’s LB Broth (Apex Bioresearch Products, Houston, TX, Cat. 11–120) with appropriate antibiotics overnight at 37 °C with aeration. For the growth curve, a 1:1000 dilution of overnight culture into 50 ml LB broth was put at 37 °C with aeration. A 1 ml sample was removed and OD600 analyzed via spectrophotometer every hour until growth stabilized. An OD600 of 1 ≈ 1 × 109 CFU was used.
 
-## Macrophage culture and infection
+### Macrophage culture and infection
 
 BMMs were isolated as described (Gonçalves and Mosser, 2015) and confirmed mycoplasma negative via PCR. BMM media consisted of DMEM (ThermoFisher Scientific, Waltham, MA, Cat. 11995073) with 10% FBS and 15% LCM or 10 ng/ml M-CSF. Penicillin and streptomycin were added to the media during differentiation and thawing but withheld during seeding and infection. flgC ΔprgH-K S. Typhimurium was induced to express SPI2 by back diluting an overnight culture to OD600=0.026 in 3 mL SPI2-inducing media, then grown 16–20 hr in a 37 °C shaker (Miao et al., 2002). SPI2-induced bacteria were washed once with PBS prior to calculating MOI. For all BMM infections, ‘Vector’ control is pWSK29. Macrophages were infected with MOI 25, centrifuged for 5 min at 200 × g, incubated for 1 hr, then gentamicin (30 µg/ml) was added to the medium to kill any extracellular bacteria. Lipopolysaccharide (50 ng/ml) was added to normalize TLR activation for mock infected cells.
 
-## Western blot analysis
+### Western blot analysis
 
 For whole-cell lysates, macrophages were seeded at 2 × 105 cells/well in 24 well tissue culture treated plates the day before infection. Macrophages infected as described above. At indicated timepoints, media was aspirated, and 60 µl 1 x Laemmli Sample Buffer was added to lyse the cells. Samples were boiled for 5 min at 95 °C and frozen at –80 °C until analyzed. 12 µl sample was loaded into a 4–12% polyacrylamide TGX Stain-Free gel (Bio-Rad, Hercules, CA, Cat. 4568086) and run for 1 hr 15 min at 15 mA per gel. Gel was UV-activated in order to visualize the total protein. Protein was then transferred onto a 0.45 µm PVDF membrane (Millipore, Burlington, MA, Cat. IPFL85R), blocked with 5% non-fat dried milk in TBS plus 0.01% Tween (TBST) for 1 hr at room temperature, and incubated overnight at 4 °C with mild agitation in 5% milk in TBST plus indicated antibody: cytochrome c (1:750, rabbit, Cell Signaling Technology, Danvers, MA, Cat. 11940), GAPDH (1:10,000, rabbit, abcam, Cambridge, UK, Cat. Ab9485), VDAC (1:750, rabbit, Cell Signaling Technology, Cat. 4661), cleaved caspase-8 (1:1000, rabbit, Cell Signaling Technology, Cat. 8592), BID (1:500, rat, R&D Systems, Minneapolis, MN, Cat. MAB860), caspase-9 (1:750, mouse, Cell Signaling Technology, Cat. 9508), cleaved caspase-7 (1:1000, rabbit, Cell Signaling Technology, Cat. 9491), cleaved caspase-3 (1:750, rabbit, Cell Signaling Technology, Cat. 9661), gasdermin D (1:1000, rabbit, abcam, Cat. ab209845), or HA (1:2000, mouse, Biolegend, San Diego, CA, Cat. MMS-101R). Membranes were incubated for 1 hr at room temperature with appropriate secondary antibodies: goat anti-rabbit (1:2000, Cell Signaling Technology, Cat. 7074), goat anti-rat (1:10,000, Jackson ImmunoResearch, West Grove, PA, Cat. 112-035-062), or goat anti-mouse (1:10,000, Jackson ImmunoResearch, Cat. 115-035-062). ECLs used include Pierce ECL (ThermoFisher Scientific, Cat. 32106), SuperSignal West Pico PLUS (ThermoFisher Scientific, Cat. 34580), and SuperSignal West Femto (ThermoFisher Scientific, Cat. 34095). Images were taken using an Azure 500 Infrared Imaging System. For cell lysates, blots were probed in the following order: cleaved caspase-3, cleaved caspase-7, cleaved caspase-8, caspase-9, gasdermin D, BID, HA. For cytosolic and mitochondrial fractions, blots were probed in the following order: cytochrome c, VDAC, GAPDH, BID. Blots were stripped using a mild stripping buffer protocol (Abcam, 2023), then re-blocked with 5% milk. The p43 fragment of cleaved caspase-8 did not always fully strip in the apoptotic signaling conditions, leading to a faint p43 fragment seen in the gasdermin D blot even in Gsdmd–/– BMMs. Therefore, we do not believe this faint fragment represents an inactivating cleavage event of gasdermin D by caspase-3.
 
-## Cytosolic and mitochondrial fraction isolation
+### Cytosolic and mitochondrial fraction isolation
 
 Macrophages were seeded at 1 × 106 cells/well in 6-well non-TC treated plates (Genesee Scientific, Morrisville, NC, Cat. 25–100). Cells were infected as described above. At indicated timepoints, media was aspirated off and cells were lifted using 1 ml PBS +1 mM EDTA. Cells were spun down and washed 2x with sterile PBS at 300 × g for 5 min. Cell pellets were permeabilized in 30 µl MOMP buffer (20 mM HEPES pH 7.4, 250 mM sucrose, 1 mM EDTA, 75 mM KCL, 2.5 mM MgCl2, 0.05% digitonin) for 5 min on ice. Samples then spun at 15,000 × g for 10 min at 4 °C. Supernatant was collected as a ‘cytosolic’ fraction. The pellet washed once in 30 µl PBS, and spun down again at 15,000 × g for 10 min at 4 °C. Wash was discarded, and pellets lysed in 30 µl RIPA buffer on ice for 20 min. Samples spun final time at 18,000 × g for 10 min at 4 °C, and supernatant was collected as a ‘mitochondrial’ fraction. 10 µl of 4x Laemmeli’s Sample Buffer was added per sample, and then boiled at 95 °C for 5 min. Samples frozen at –80 °C until analyzed by SDS-PAGE and Western blot, described above. Protocol adapted from Mahajan et al., 2014.
 
-## Cytotoxicity assay
+### Cytotoxicity assay
 
 Macrophages were seeded at 5 × 104 cells/well in a 96-well TC-treated plate. Cells were infected as described above. Supernatant was collected at indicated timepoints and frozen at –80 °C until analyzed. Cytotoxicity was determined by lactate dehydrogenase assay (CytoTox 96, Promega, Madison, WI, Cat. G1780). All samples and reagents were brought to room temperature before analyzing.
 
-## Immunofluorescence and live cell microscopy
+### Immunofluorescence and live cell microscopy
 
 For microscopy experiments, bone marrow-derived macrophages were plated on 8 well chamber coverslips (ThermoFisher, Cat. 155409) at a density of 2.85 x 105 cells/cm2. At the time of adding gentamicin 1 hr after initiating infection, the following immunofluorescent dyes were added. Dyes were used at the following concentrations: Hoechst 33342 at 2 μg/ml (ThermoFisher, Cat. H3570), Propidium Iodide at 1 μg/ml (Sigma-Aldrich, St. Louis, MO, Cat. P4864), and NucView-488 at 5 μM (Biotium, Fremont, CA, Cat. 10402). NucView-488 was selected to visualize activation of Caspase-3 in apoptosis, and Caspase-7 via Caspase-1 in pyroptosis. Images were captured using a Keyence BZ-X810 All-in-One Fluorescence Microscope using 20 x and 60 x objectives. For 20 x image stitching, 15 fields were captured and stitched using BZ-X 800 Image Analyzer 1.1.1.8 software.
 
-## Mice and mouse infections
+### Mice and mouse infections
 
 All mouse strains were bred and housed at Duke University in a pathogen-specific free facility. For infection mice were transferred to a BSL2 infection facility within Duke University, and mice allowed to acclimate for at least two days prior to infection. Wild type C57BL/6 J (Jackson Laboratory #000664), Mrp8-cre (Jackson Laboratory #021614), Lyz2-cre (Jackson Laboratory #004781), Casp1fl/fl (Hu et al., 2016), Casp1–/–Casp11129mt/129mt (referred to as Casp1/11–/–) (Kuida et al., 1995), Gsdmd–/– (Rauch et al., 2017), Nlrc4–/– (Mariathasan et al., 2004), Casp1–/– (Rauch et al., 2017), Bid–/– (Yin et al., 1999), Il1b/Il18–/– (Shornick et al., 1996; Takeda et al., 1998). Pycard–/–Gsdmd–/– (referred to as Pycard/Gsdmd–/–) were created by crossing Pycard–/– (also known as Asc–/–) (Mariathasan et al., 2004) and Gsdmd–/– mice together. Bid–/–Gsdmd–/– (referred to as Bid/Gsdmd–/–) were created by crossing Bid–/– and Gsdmd–/– mice together. Animal protocols were approved by the Institutional Animal Care and Use Committee (IACUC) at the University of North Carolina at Chapel Hill (under protocols 18–175.0 and 19–166.0) or by the IACUC at Duke University (under protocols A018-23-01 and A043-20-02) and met guidelines of the US National Institutes of Health for the humane care of animals. Details of sample size determination, randomization, and blinding can be found in the MDAR.
 
 For competitive index infections, inoculum was composed equally of the vector control (pWSK129) and experimental strain (FliCON or BIDON, as indicated). For triple competitive index, the inoculum was composed equally of 5 × 102 CFU chloramphenicol-resistant vector control (pWSK229), KanR FliCON, and AmpR BIDON for 1.5 × 103 total CFU. For systemic infection, mice were infected intraperitoneally with a total of 1 × 103 CFU (low dose) or 1 × 105 CFU (high dose) S. Typhimurium. Spleens were harvested at indicated timepoints and homogenized in a 2 ml homogenizer tube (Fisher Brand, Cat. 14-666-315) containing 1 ml sterile PBS and one 5 mm stainless steel bead (QIAGEN, Hilden, Germany, Cat. 69989). For oral infection, mice were first fasted for 4 hr and then orally inoculated with 20 mg of streptomycin sulfate (Sigma-Aldrich, Cat. 59137) which was filter sterilized using 0.22 µm filter (Genesee, Cat. 25–244). The next day, mice were again fasted for 4 hr and then orally infected with a total of 1 × 107 CFU S. Typhimurium. Food was returned 2 hr post-infection. At 48 hpi, the cecum, mesenteric lymph nodes, and a fecal sample were isolated. The fecal sample was homogenized under the same condition as spleens, described above. The MLN was homogenized using a 2 mL homogenizer tube (OMNI International, Kennesaw, GA, Cat. 19–649) containing 1 ml sterile PBS and 7–10 2.4 mm stainless steel beads (OMNI International, Cat. 19-640-3). The cecum was first washed in PBS, then incubated on a room temperature rocker at 25 rpm in 400 ug/ml gentamycin (ThermoFisher, Cat. 15750060) for 30 min, then washed in fresh PBS for another 30 min. Caeca were then homogenized under the same conditions as MLNs. Spleens and fecal samples homogenized using a Retsch MM400 homogenizer for 5 min at 30 Hz. Fecal samples were spun down for 30 s and 5000 rpm after homogenizing. Cecum and MLNs were homogenized using a Fisherbrand Bead Mill 24 homogenizer at speed 4 for four cycles of 1 min homogenizing with 30 s dwell time. After homogenization, lysates were serially diluted 1:5 in sterile PBS and plated on LB plates containing appropriate antibiotics. Plates were incubated overnight at 37 °C and colony-forming units counted. If after harvest, zero CFUs were collected for all bacterial strains used in the inoculum, that a single mouse was considered ‘uninfected,’ which could occur due to experimental error, and was excluded from the study. If even one CFU was present for any of the bacterial strains used in the inoculum, that mouse was considered ‘infected’ and included in the study data. A total of four mice were excluded using these criteria: one Nlrc4–/– D1 mouse in Figure 2B and D, one D3 mouse from Figure 2—figure supplement 1A–B, and two mice from a single independent experiment in Figure 5A–B (one D2 BIDON mouse and one D1 FliCON mouse). Competitive index results are presented as vector CFU/experimental CFU, normalized to the ratio of plated inoculum.
 
-## Statistics
+### Statistics
 
 All statistical analysis was performed with GraphPad Prism 9. Discrete data was first assessed for normal distribution using a Shapiro-Wilk normality test. Data with normal distribution was analyzed with either an unpaired two-tail t-test (two groups) or a one-way ANOVA (three or more groups). Discrete data that did not have a normal distribution was analyzed with a Mann-Whitney (two groups) or Kruskal-Wallis (three or more groups). Experiments with two factors were analyzed with a two-way ANOVA. Detailed results for the statistical analyses are included as part of the Source Data file for each figure.

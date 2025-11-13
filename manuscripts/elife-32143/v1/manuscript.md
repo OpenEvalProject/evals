@@ -70,7 +70,7 @@
 
 ## Abstract
 
-10.7554/eLife.32143.001 Current non-invasive approaches for detection of urothelial cancers are suboptimal. We developed a test to detect urothelial neoplasms using DNA recovered from cells shed into urine. UroSEEK incorporates massive parallel sequencing assays for mutations in 11 genes and copy number changes on 39 chromosome arms. In 570 patients at risk for bladder cancer (BC), UroSEEK was positive in 83% of those who developed BC. Combined with cytology, UroSEEK detected 95% of patients who developed BC. Of 56 patients with upper tract urothelial cancer, 75% tested positive by UroSEEK, including 79% of those with non-invasive tumors. UroSEEK detected genetic abnormalities in 68% of urines obtained from BC patients under surveillance who demonstrated clinical evidence of recurrence. The advantages of UroSEEK over cytology were evident in low-grade BCs; UroSEEK detected 67% of cases whereas cytology detected none. These results establish the foundation for a new non-invasive approach for detection of urothelial cancer.
+Current non-invasive approaches for detection of urothelial cancers are suboptimal. We developed a test to detect urothelial neoplasms using DNA recovered from cells shed into urine. UroSEEK incorporates massive parallel sequencing assays for mutations in 11 genes and copy number changes on 39 chromosome arms. In 570 patients at risk for bladder cancer (BC), UroSEEK was positive in 83% of those who developed BC. Combined with cytology, UroSEEK detected 95% of patients who developed BC. Of 56 patients with upper tract urothelial cancer, 75% tested positive by UroSEEK, including 79% of those with non-invasive tumors. UroSEEK detected genetic abnormalities in 68% of urines obtained from BC patients under surveillance who demonstrated clinical evidence of recurrence. The advantages of UroSEEK over cytology were evident in low-grade BCs; UroSEEK detected 67% of cases whereas cytology detected none. These results establish the foundation for a new non-invasive approach for detection of urothelial cancer.
 
 ## Introduction
 
@@ -100,13 +100,505 @@ A schematic of the approach used in this study is provided in Figure 1. A flow d
 
 **Figure 2.:** Cytology was performed on only a subset of the patients (see main text).
 
-## BC early detection cohort
+### BC early detection cohort
 
-## Cohort characteristics
+#### Cohort characteristics
 
 A total of 570 patients were included in the early detection cohort, each with one urine sample analyzed. 90% of the patients had hematuria, 3% had lower urinary tract symptoms (LUTS), and 9% had other indications suggesting they were at risk for BC. The median age of the participants was 58 years (range 5 to 89 years; Table 1a). As expected from prior studies of patients at risk for BC, 70% of the patients were male (Siegel et al., 2017; Wein et al., 2012). Patients (n = 175; 31%) developed BC after a median follow-up period of 18 months (range 0 to 40 months). For each patient who developed BC, we selected two other patients who presented with similar symptoms but did not develop BC during the follow-up period. By design, the fraction of cases in this cohort developing BC was higher than the fraction (5%) of patients with similar presentations who would have developed BC in standard clinical practice. The characteristics of the tumors developing in the 570 patients are summarized in Table 1a and detailed in Supplementary file 2.
 
-## Genetic analysis
+**Table 1.**
+ Demographic, clinical and genetic features of the early detection cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gender</th>
+      <th>n</th>
+      <th>%</th>
+      <th>Ten-gene multiplex positive</th>
+      <th>TERT positive</th>
+      <th>Aneuploidy positive</th>
+      <th>UroSEEK positive</th>
+      <th>Cytology positive*</th>
+      <th>Uroseek or cytology positive*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="9">Table 1a. Demographic, clinical and genetic features of the early detection cohort</td>
+    </tr>
+    <tr>
+      <td>Males without recurrence</td>
+      <td>172</td>
+      <td>59%</td>
+      <td>3 (2%)</td>
+      <td>10 (6%)</td>
+      <td>2 (1%)</td>
+      <td>13 (8%)</td>
+      <td>0 (0%)</td>
+      <td>13 (8%)</td>
+    </tr>
+    <tr>
+      <td>Males with recurrence</td>
+      <td>32</td>
+      <td>11%</td>
+      <td>26 (81%)</td>
+      <td>21 (66%)</td>
+      <td>19 (59%)</td>
+      <td>29 (91%)</td>
+      <td>16 (50%)</td>
+      <td>30 (94%)</td>
+    </tr>
+    <tr>
+      <td>Females without recurrence</td>
+      <td>81</td>
+      <td>28%</td>
+      <td>2 (2%)</td>
+      <td>2 (2%)</td>
+      <td>1 (1%)</td>
+      <td>5 (6%)</td>
+      <td>0 (0%)</td>
+      <td>5 (6%)</td>
+    </tr>
+    <tr>
+      <td>Females with recurrence</td>
+      <td>9</td>
+      <td>3%</td>
+      <td>4 (44%)</td>
+      <td>4 (44%)</td>
+      <td>3 (33%)</td>
+      <td>6 (67%)</td>
+      <td>1 (11%)</td>
+      <td>6 (67%)</td>
+    </tr>
+    <tr>
+      <td>Indication</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hematuria without recurrence</td>
+      <td>346</td>
+      <td>61%</td>
+      <td>6 (2%)</td>
+      <td>15 (4%)</td>
+      <td>5 (1%)</td>
+      <td>22 (6%)</td>
+      <td>0 (0%)</td>
+      <td>17 (5%)</td>
+    </tr>
+    <tr>
+      <td>Hematuria with recurrence</td>
+      <td>163</td>
+      <td>29%</td>
+      <td>108 (66%)</td>
+      <td>90 (55%)</td>
+      <td>76 (47%)</td>
+      <td>134 (82%)</td>
+      <td>18 (11%)</td>
+      <td>32 (2%)</td>
+    </tr>
+    <tr>
+      <td>LUTS without recurrence</td>
+      <td>11</td>
+      <td>2%</td>
+      <td>0 (0%)</td>
+      <td>2 (18%)</td>
+      <td>0 (0%)</td>
+      <td>2 (18%)</td>
+      <td>0 (0%)</td>
+      <td>2 (18%)</td>
+    </tr>
+    <tr>
+      <td>LUTS with recurrence</td>
+      <td>3</td>
+      <td>1%</td>
+      <td>2 (67%)</td>
+      <td>1 (33%)</td>
+      <td>0 (0%)</td>
+      <td>2 (67%)</td>
+      <td>1 (33%)</td>
+      <td>2 (67%)</td>
+    </tr>
+    <tr>
+      <td>Other without recurrence</td>
+      <td>38</td>
+      <td>7%</td>
+      <td>1 (3%)</td>
+      <td>0 (0%)</td>
+      <td>1 (3%)</td>
+      <td>2 (5%)</td>
+      <td>0 (0%)</td>
+      <td>2 (5%)</td>
+    </tr>
+    <tr>
+      <td>Other with recurrence</td>
+      <td>9</td>
+      <td>2%</td>
+      <td>9 (100%)</td>
+      <td>8 (89%)</td>
+      <td>5 (56%)</td>
+      <td>9 (100%)</td>
+      <td>2 (22%)</td>
+      <td>9 (100%)</td>
+    </tr>
+    <tr>
+      <td>Detected Tumor Diagnosis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PUNLMP</td>
+      <td>2</td>
+      <td>1%</td>
+      <td>0 (0%)</td>
+      <td>1 (50%)</td>
+      <td>0 (0%)</td>
+      <td>1 (50%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+    </tr>
+    <tr>
+      <td>CIS</td>
+      <td>7</td>
+      <td>5%</td>
+      <td>4 (57%)</td>
+      <td>4 (57%)</td>
+      <td>1 (14%)</td>
+      <td>6 (86%)</td>
+      <td>3 (43%)</td>
+      <td>6 (86%)</td>
+    </tr>
+    <tr>
+      <td>LGTCC</td>
+      <td>31</td>
+      <td>21%</td>
+      <td>15 (48%)</td>
+      <td>18 (58%)</td>
+      <td>9 (29%)</td>
+      <td>22 (71%)</td>
+      <td>0 (0%)</td>
+      <td>4 (13%)</td>
+    </tr>
+    <tr>
+      <td>HGTCC</td>
+      <td>49</td>
+      <td>33%</td>
+      <td>34 (69%)</td>
+      <td>28 (57%)</td>
+      <td>26 (53%)</td>
+      <td>40 (82%)</td>
+      <td>4 (8%)</td>
+      <td>11 (22%)</td>
+    </tr>
+    <tr>
+      <td>INTCC</td>
+      <td>61</td>
+      <td>41%</td>
+      <td>48 (79%)</td>
+      <td>36 (59%)</td>
+      <td>35 (57%)</td>
+      <td>57 (93%)</td>
+      <td>9 (15%)</td>
+      <td>16 (26%)</td>
+    </tr>
+    <tr>
+      <td>Cytology diagnosis*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Positive</td>
+      <td>21</td>
+      <td>6%</td>
+      <td>16 (76%)</td>
+      <td>12 (57%)</td>
+      <td>16 (76%)</td>
+      <td>20 (95%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Atypical</td>
+      <td>105</td>
+      <td>30%</td>
+      <td>21 (20%)</td>
+      <td>21 (30%)</td>
+      <td>12 (11%)</td>
+      <td>30 (29%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td>221</td>
+      <td>64%</td>
+      <td>4 (2%)</td>
+      <td>9 (4%)</td>
+      <td>1 (0.4%)</td>
+      <td>12 (5%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="9">Table 1b. Demographic, clinical and genetic features of the Surveillance cohort.</td>
+    </tr>
+    <tr>
+      <td>Males without recurrence</td>
+      <td>59</td>
+      <td>30%</td>
+      <td>3 (5%)</td>
+      <td>8 (14%)</td>
+      <td>3 (5%)</td>
+      <td>10 (17%)</td>
+      <td>0 (0%)</td>
+      <td>8 (14%)</td>
+    </tr>
+    <tr>
+      <td>Males with recurrence</td>
+      <td>90</td>
+      <td>45%</td>
+      <td>45 (50%)</td>
+      <td>53 (59%)</td>
+      <td>20 (22%)</td>
+      <td>59 (66%)</td>
+      <td>20 (22%)</td>
+      <td>53 (59%)</td>
+    </tr>
+    <tr>
+      <td>Females without recurrence</td>
+      <td>17</td>
+      <td>9%</td>
+      <td>5 (29%)</td>
+      <td>3 (18%)</td>
+      <td>0 (0%)</td>
+      <td>6 (35%)</td>
+      <td>0 (0%)</td>
+      <td>6 (35%)</td>
+    </tr>
+    <tr>
+      <td>Females with recurrence</td>
+      <td>33</td>
+      <td>17%</td>
+      <td>15 (45%)</td>
+      <td>19 (58%)</td>
+      <td>11 (33%)</td>
+      <td>33 (100%)</td>
+      <td>6 (18%)</td>
+      <td>19 (58%)</td>
+    </tr>
+    <tr>
+      <td>Original Tumor Diagnosis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PUNLMP</td>
+      <td>12</td>
+      <td>4%</td>
+      <td>5 (42%)</td>
+      <td>2 (17%)</td>
+      <td>1 (8%)</td>
+      <td>6 (50%)</td>
+      <td>0 (0%)</td>
+      <td>2 (17%)</td>
+    </tr>
+    <tr>
+      <td>CIS</td>
+      <td>25</td>
+      <td>8%</td>
+      <td>11 (44%)</td>
+      <td>13 (52%)</td>
+      <td>6 (24%)</td>
+      <td>14 (56%)</td>
+      <td>5 (20%)</td>
+      <td>10 (40%)</td>
+    </tr>
+    <tr>
+      <td>LGTCC</td>
+      <td>107</td>
+      <td>35%</td>
+      <td>27 (25%)</td>
+      <td>34 (32%)</td>
+      <td>8 (7%)</td>
+      <td>41 (38%)</td>
+      <td>0 (0%)</td>
+      <td>59 (55%)</td>
+    </tr>
+    <tr>
+      <td>HGTCC</td>
+      <td>62</td>
+      <td>20%</td>
+      <td>22 (36%)</td>
+      <td>24 (39%)</td>
+      <td>10 (16%)</td>
+      <td>30 (49%)</td>
+      <td>4 (7%)</td>
+      <td>16 (26%)</td>
+    </tr>
+    <tr>
+      <td>INTCC</td>
+      <td>104</td>
+      <td>34%</td>
+      <td>39 (38%)</td>
+      <td>47 (45%)</td>
+      <td>29 (28%)</td>
+      <td>54 (52%)</td>
+      <td>20 (19%)</td>
+      <td>34 (33%)</td>
+    </tr>
+    <tr>
+      <td>Original Tumor Stage</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pTis</td>
+      <td>25</td>
+      <td>8%</td>
+      <td>11 (44%)</td>
+      <td>13 (52%)</td>
+      <td>6 (24%)</td>
+      <td>14 (56%)</td>
+      <td>5 (20%)</td>
+      <td>10 (40%)</td>
+    </tr>
+    <tr>
+      <td>pTa</td>
+      <td>181</td>
+      <td>58%</td>
+      <td>54 (30%)</td>
+      <td>60 (33%)</td>
+      <td>19 (19%)</td>
+      <td>77 (43%)</td>
+      <td>4 (2%)</td>
+      <td>77 (43%)</td>
+    </tr>
+    <tr>
+      <td>pT1</td>
+      <td>71</td>
+      <td>23%</td>
+      <td>28 (39%)</td>
+      <td>35 (49%)</td>
+      <td>22 (31%)</td>
+      <td>39 (55%)</td>
+      <td>14 (20%)</td>
+      <td>23 (32%)</td>
+    </tr>
+    <tr>
+      <td>pT2</td>
+      <td>23</td>
+      <td>7%</td>
+      <td>9 (9%)</td>
+      <td>9 (39%)</td>
+      <td>7 (30%)</td>
+      <td>12 (52%)</td>
+      <td>5 (22%)</td>
+      <td>10 (43%)</td>
+    </tr>
+    <tr>
+      <td>pT3</td>
+      <td>9</td>
+      <td>3%</td>
+      <td>1 (11%)</td>
+      <td>2 (22%)</td>
+      <td>0</td>
+      <td>2 (22%)</td>
+      <td>1 (11%)</td>
+      <td>1 (11%)</td>
+    </tr>
+    <tr>
+      <td>pT4</td>
+      <td>1</td>
+      <td>0.3%</td>
+      <td>1 (100%)</td>
+      <td>1 (100%)</td>
+      <td>0</td>
+      <td>1 (100%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Routine cytology diagnosis*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Positive</td>
+      <td>30</td>
+      <td>15%</td>
+      <td>21 (21%)</td>
+      <td>25 (83%)</td>
+      <td>20 (67%)</td>
+      <td>27 (90%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Atypical</td>
+      <td>95</td>
+      <td>48%</td>
+      <td>38 (40%)</td>
+      <td>43 (45%)</td>
+      <td>18 (19%)</td>
+      <td>50 (53%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td>71</td>
+      <td>36%</td>
+      <td>12 (17%)</td>
+      <td>13 (18%)</td>
+      <td>3 (4%)</td>
+      <td>19 (27%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Cytology was available on only a subset of cases.N/A Not Available._
+
+#### Genetic analysis
 
 We performed three separate tests for genetic abnormalities that might be found in urinary cells derived from BC (Figure 1). First, we evaluated mutations in selected regions of ten genes that have been shown to be frequently altered in urothelial tumors (Figure 3 and Supplementary file 3). For this purpose, we designed a specific set of primers that allowed us to detect mutations in as few as 0.03% of urinary cells (Supplementary file 4). The capacity to detect such low-mutant fractions was a result of the incorporation of molecular barcodes in each of the primers, thereby substantially reducing the artifacts associated with massively parallel sequencing (Kinde et al., 2011). Second, we evaluated TERT promoter mutations. A singleplex PCR was used for this analysis because the unusually high GC-content of the TERT promoter precluded its inclusion in the multiplex PCR design. Third, we evaluated the extent of aneuploidy using a technique in which a single PCR is used to co-amplify ~38,000 members of a subfamily of long interspersed nucleotide element-1 retrotransposons (L1 retrotransposons, also called LINEs). L1 retrotransposons, like other human repeats, have spread throughout the genome via retrotransposition and are found on all 39 non-acrocentric autosomal arms (Kinde et al., 2012).
 
@@ -118,13 +610,13 @@ Mutations in the TERT promoter were detected in 57% of the 175 urinary cell samp
 
 Aneuploidy was detected in 46% (95% CI, 39% to 54%) of the 175 urinary cell samples from the patients who developed BC during the course of the study (Table 1a and Supplementary file 7). The most commonly altered chromosome arms were 5q, 8q, and 9p. These three chromosome arms harbor well-known oncogenes and tumor suppressor genes that have been shown to undergo copy number alterations in many cancers, including BC (Vogelstein et al., 2013). Aneuploidy was detected in 1.5% of the urinary cell samples from the 395 patients who did not develop BC during the course of the study, but it was not detected in any of the 188 urinary samples from healthy individuals.
 
-## Comparison with primary tumors
+#### Comparison with primary tumors
 
 DNAs from resected or biopsied tumor samples from 102 of the patients enrolled in the BC early detection cohort were available for comparison and were examined with the same three assays used to probe the urinary cell samples. In 91 (89%) of these 102 cancers, at least one mutation in the eleven genes studied was present (in the 10-gene panel or the TERT promoter). Moreover, at least one of the mutations identified in the urine samples from these 102 patients was also identified in 83% of the corresponding primary BC samples (Supplementary files 5 and 6).
 
 Analysis of these tumors also shed light on the basis for ‘false negatives,’ the urine samples with no detectable mutations from patients who ultimately developed BC. We attributed false negatives to the possibility that the corresponding BC either did not harbor a mutation in any of these 11 genes or the fraction of neoplastic cells in the urine sample was insufficient to allow detection with the assays used. We identified a mutation in at least one of the 11 genes in 62% of the primary tumors from patients with false negative urine tests (Supplementary file 3 and 8). We concluded that 62% of the 29 false negative tests were due to insufficient cancer cells in the urine while the remaining 38% were due to the absence of any of the queried mutations in the primary tumor tissue.
 
-## UroSEEK: biomarkers in combination
+#### UroSEEK: biomarkers in combination
 
 The ten-gene multiplex assay, the TERT singleplex assay, and the aneuploidy assays yielded 68%, 57%, and 46% sensitivities, respectively, when used separately (Table 1a and Supplementary files 5, 6, and 7). Sensitivity was increased when the three assays were performed on each urine cell sample. In samples without TERT promoter mutations (n = 45), mutations in one of the other ten genes were detected (Figure 4 and Supplementary file 5). Conversely, 35 samples negative for mutations in the multiplex assay were detected by virtue of TERT promoter mutations (Figure 4 and Supplementary file 6). Finally, ten of the urinary cell samples without any detectable mutations in the 11 genes were positive for aneuploidy (Figure 4 and Supplementary file 7). Thus, when the three assays were used together (test termed ‘UroSEEK’), and a positive result in any one of the assays was sufficient to score a sample as positive, the sensitivity rose to 83% (95% CI, 76% to 88%). Only one of the 188 samples from healthy individuals was scored positive by UroSEEK (specificity 99.5%, CI 97% to 100%). Twenty-six (6.5%) of the 395 patients in the BC early detection cohort who did not develop BC during the course of the study scored positive by the UroSEEK test (specificity 93%, CI 91% to 96%). On average, UroSEEK positivity preceded the diagnosis of BC by 2.3 months, and in eight cases, by >one year (Figure 5 and Supplementary file 2).
 
@@ -134,19 +626,352 @@ The ten-gene multiplex assay, the TERT singleplex assay, and the aneuploidy assa
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32143/elife-32143-fig5-v1.jpg)
 
-**Figure 5.:** A) BC early detection and (B) BC surveillance cohorts.
-
-## UroSEEK plus cytology
+#### UroSEEK plus cytology
 
 As both cytology and UroSEEK are non-invasive tests and can be performed on the same urine sample, we assessed their performance in combination. Cytology was available for 347 patients in the BC early detection cohort (Table 1a and Supplementary file 2). Among the 40 patients who developed biopsy-proven cancer in this cohort, cytology was positive in 17 cases (43% sensitivity), and UroSEEK was positive in 100% of these cancer patients. UroSEEK was also positive in 95% of 23 cancer patients whose urines were negative by cytology. Thus, in combination, UroSEEK plus cytology achieved 95% (95% CI, 83% to 99%) sensitivity, a 12% increase over UroSEEK and a 52% increase over cytology. Finally, none of the 299 patients who did not develop cancer over the course of the study were positive by cytology (100% specificity), but 20 (6.6%) were positive by UroSEEK, giving the combination of UroSEEK and cytology a specificity of 93% (95% CI, 90% to 96%).
 
-## UTUC cohort
+### UTUC cohort
 
-## Cohort characteristics
+#### Cohort characteristics
 
 The gender distribution of this cohort, 32 females and 24 males, is atypical of UTUC patients in Western countries where males predominate (Shariat et al., 2011), but is consistent with earlier epidemiologic studies of Taiwanese individuals with known exposures to AA (summary in Table 2; individual data in Supplementary file 9)(Chen et al., 2012). Tobacco use was reported by 18% in this cohort and were all males. Based on estimated glomerular filtration rate (eGFR) values, renal function was unimpaired (chronic kidney disease (CKD) stage 0–2) in 45% of the subjects, while mild-to-moderate renal disease (CKD stage 3) or severe disease (CKD stages 4–5) was noted for 43% and 12% of the cohort, respectively (Table 2). Tumors were confined to a single site along the upper urinary tract in the majority of cases (38% renal pelvis; 39% ureter), while multifocal tumors affecting both renal pelvis and ureter occurred in 23% of the patients. Synchronous bladder cancer (diagnosed within 3 months prior to nephroureterectomy) was present in 38% of patients. Tumors were classified as high grade in 89% of the cases, with the majority categorized as muscle-invasive (T2-T4, 66%; Table 2).
 
-## Genetic analysis
+**Table 2.**
+ Demographic, clinical and genetic features of the UTUC cohort stratified by UroSEEK results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>%</th>
+      <th>Ten-gene multiplex positive</th>
+      <th>TERT positive</th>
+      <th>Aneuploidy positive</th>
+      <th>UroSEEK positive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All subjects</td>
+      <td>56</td>
+      <td>100%</td>
+      <td>64%</td>
+      <td>29%</td>
+      <td>39%</td>
+      <td>75%</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>24</td>
+      <td>43%</td>
+      <td>71%</td>
+      <td>33%</td>
+      <td>54%</td>
+      <td>83%</td>
+    </tr>
+    <tr>
+      <td>Females</td>
+      <td>32</td>
+      <td>57%</td>
+      <td>59%</td>
+      <td>25%</td>
+      <td>28%</td>
+      <td>69%</td>
+    </tr>
+    <tr>
+      <td>CKD stage</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0–2</td>
+      <td>25</td>
+      <td>45%</td>
+      <td>68%</td>
+      <td>36%</td>
+      <td>44%</td>
+      <td>76%</td>
+    </tr>
+    <tr>
+      <td>3A</td>
+      <td>14</td>
+      <td>25%</td>
+      <td>50%</td>
+      <td>21%</td>
+      <td>43%</td>
+      <td>71%</td>
+    </tr>
+    <tr>
+      <td>3B</td>
+      <td>10</td>
+      <td>18%</td>
+      <td>80%</td>
+      <td>20%</td>
+      <td>40%</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>7%</td>
+      <td>25%</td>
+      <td>50%</td>
+      <td>0%</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>5%</td>
+      <td>100%</td>
+      <td>0%</td>
+      <td>33%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Tumor grade</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>6</td>
+      <td>11%</td>
+      <td>67%</td>
+      <td>50%</td>
+      <td>17%</td>
+      <td>67%</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>50</td>
+      <td>89%</td>
+      <td>64%</td>
+      <td>26%</td>
+      <td>42%</td>
+      <td>76%</td>
+    </tr>
+    <tr>
+      <td>Tumor stage</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ta</td>
+      <td>11</td>
+      <td>20%</td>
+      <td>73%</td>
+      <td>55%</td>
+      <td>45%</td>
+      <td>82%</td>
+    </tr>
+    <tr>
+      <td>T1</td>
+      <td>8</td>
+      <td>14%</td>
+      <td>50%</td>
+      <td>0%</td>
+      <td>38%</td>
+      <td>75%</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>10</td>
+      <td>18%</td>
+      <td>80%</td>
+      <td>20%</td>
+      <td>10%</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>24</td>
+      <td>43%</td>
+      <td>67%</td>
+      <td>33%</td>
+      <td>54%</td>
+      <td>79%</td>
+    </tr>
+    <tr>
+      <td>T4</td>
+      <td>3</td>
+      <td>5%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Upper urinary tract tumor site</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower ureter</td>
+      <td>17</td>
+      <td>30%</td>
+      <td>76%</td>
+      <td>18%</td>
+      <td>35%</td>
+      <td>76%</td>
+    </tr>
+    <tr>
+      <td>Upper ureter</td>
+      <td>1</td>
+      <td>2%</td>
+      <td>100%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Ureterovesical junction</td>
+      <td>2</td>
+      <td>4%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Lower ureter and upper ureter</td>
+      <td>2</td>
+      <td>4%</td>
+      <td>100%</td>
+      <td>50%</td>
+      <td>50%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Renal pelvis</td>
+      <td>21</td>
+      <td>38%</td>
+      <td>57%</td>
+      <td>38%</td>
+      <td>38%</td>
+      <td>76%</td>
+    </tr>
+    <tr>
+      <td>Renal pelvis and lower ureter</td>
+      <td>4</td>
+      <td>7%</td>
+      <td>75%</td>
+      <td>25%</td>
+      <td>50%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Renal pelvis and upper ureter</td>
+      <td>5</td>
+      <td>9%</td>
+      <td>40%</td>
+      <td>40%</td>
+      <td>60%</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>Renal pelvis, lower ureter, upper ureter</td>
+      <td>4</td>
+      <td>7%</td>
+      <td>75%</td>
+      <td>25%</td>
+      <td>50%</td>
+      <td>75%</td>
+    </tr>
+    <tr>
+      <td>Synchronous bladder cancer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Present</td>
+      <td>21</td>
+      <td>38%</td>
+      <td>52%</td>
+      <td>29%</td>
+      <td>33%</td>
+      <td>62%</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>35</td>
+      <td>63%</td>
+      <td>71%</td>
+      <td>29%</td>
+      <td>43%</td>
+      <td>83%</td>
+    </tr>
+    <tr>
+      <td>UTUC risk factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Aristolactam-DNA adducts present</td>
+      <td>54</td>
+      <td>96%</td>
+      <td>65%</td>
+      <td>30%</td>
+      <td>39%</td>
+      <td>74%</td>
+    </tr>
+    <tr>
+      <td>Smoking history</td>
+      <td>10</td>
+      <td>18%</td>
+      <td>70%</td>
+      <td>30%</td>
+      <td>60%</td>
+      <td>70%</td>
+    </tr>
+    <tr>
+      <td>CKD, chronic kidney disease.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### Genetic analysis
 
 The multiplex assay detected at least one mutation in 36 of the 56 urinary cell samples from UTUC patients (64%, 95% CI, 51% to 76%; Table 2 and Supplementary file 10). A total of 57 mutations were detected in nine of the ten target genes (Figure 3). The median MAF in the urinary cells was 5.6% and ranged from 0.3% to 80%. The most commonly altered genes were TP53 (n = 33, 58% of the 57 mutations) and FGFR3 (n = 9, 16% of the 57 mutations; Figure 3).
 
@@ -154,7 +979,7 @@ Mutations in the TERT promoter were detected in 16 of the 56 urinary cell sample
 
 Aneuploidy was detected in 22 of the 56 urinary cell samples from UTUC patients (39%, 95% CI, 28% to 52%, Supplementary file 12 and 13). The most commonly altered chromosome arms were 1q, 7q, 8q, 17 p, and 18q.
 
-## Comparison with primary tumors
+#### Comparison with primary tumors
 
 The distribution of mutant genes in primary tumors (Supplementary file 14) was consistent with findings from some (Hoang et al., 2013; Lee et al., 2018; Yuan et al., 2016) but not all (Moss et al., 2017; Sfakianos et al., 2015), exome-wide and targeted sequencing studies of UTUCs. In the present study, TP53 mutations were found only in high-grade UTUCs, while FGFR3 mutations dominated in low-grade tumors (present in 5/6). Such mutational patterns have been previously reported by others (Sfakianos et al., 2015). However, the overall frequency of FGFR3 mutations in our UTUC cohort (21%) was relatively low compared to values reported by Moss et al. (2017) (74%) and Sfakianos et al. (2015) (54%), but was comparable to values reported by Hoang et al. (2013) (8%) and Lee et al. (2018) (13%). We attribute this difference to the race/ethnicity profile of the cohorts under comparison, as FGFR3 mutation levels are relatively low in UTUCs from Han Chinese patients (3–9%) compared to Western patients (36–60%), as reported by Yuan et al. (2016). Our cohort was Taiwanese and principally of Han Chinese descent, as were the Hoang et al. (2013) (Taiwanese) and Lee et al. (2018) (Korean) cohorts, whereas Western patients were examined in the Sfakianos et al. (2015) and Moss et al. (2017) studies.
 
@@ -164,13 +989,13 @@ The tumor data also helped to establish why 17 of the 56 urinary cell samples f
 
 Aneuploidy was observed in 22 of the urinary cell samples (Supplementary file 12). Overall, 96% of the chromosomal gains or losses observed in the urinary cells were also observed in the primary tumors (Supplementary file 13). Conversely, aneuploidy was not observed in 34 of the urinary cell samples. Evaluation of the corresponding 56 tumors with the same assay demonstrated that all but three were aneuploid. Therefore, as with mutations, the main reason for failure of the aneuploidy assay was insufficient neoplastic DNA in the urinary cells.
 
-## UroSEEK: biomarkers in combination
+#### UroSEEK: biomarkers in combination
 
 The ten-gene multiplex assay, the TERT singleplex assay, and the aneuploidy assays yielded 64%, 29%, and 39% sensitivities, respectively, when used separately in the UTUC cohort (Table 2). Mutations in one of the other ten genes were detected in 23 samples without TERT promoter mutations (Figure 4). Conversely, three samples without detectable mutations in the multiplex assay scored positive for TERT promoter mutations (Figure 4). Furthermore, three of the urinary cell samples without any detectable mutations were positive for aneuploidy (Figure 4). Thus, when the three assays were used together, and a positive result in any one assay was sufficient to score a sample as positive, the sensitivity rose to 75% (95% CI 62.2% to 84.6%).
 
 To determine the basis for the increased sensitivity afforded by the combination assays, we evaluated data from the primary tumors of the three patients whose urinary cell samples exhibited aneuploidy but did not harbor detectable mutations. We found that these three tumors did not contain any mutations in the 11 queried genes, which explained why these same assays were negative when applied to the urinary cell DNAs. These three tumors were aneuploid, thus enabling their detection through copy number variations in the urinary cell samples.
 
-## Correlation with clinical features
+#### Correlation with clinical features
 
 The most clinically desirable biomarkers are those associated with early stage tumor development as they enable surgical removal of lesions before widespread metastasis. In UTUC, ten-year cancer specific survival rates show that 91% of patients with stage T1 malignancies are expected to be cured by surgery, compared to only 78%, 34% and 0% of patients with stage T2, T3, or T4 tumors, respectively (Li et al., 2008). In our cohort, UroSEEK was equally sensitive for detecting early and late UTUCs. The test was positive in 15 (79%) of 19 patients with stage Ta/T1 tumors and 27 (73%) of 37 patients with stage T2-T4 tumors (Table 2). Sensitivity was comparable across gender, tumor grade, tumor location and risk factors for developing UTUC (Table 2), indicating that the assay was suitable for evaluation of diverse patient populations. UroSEEK performance was also comparable in UTUC cohorts with and without synchronous BC (Table 2).
 
@@ -178,17 +1003,17 @@ UroSEEK was also considerably more sensitive than urine cytology in the UTUC coh
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/32143/elife-32143-fig6-v1.jpg)
 
-## Aristolochic acid exposure
+#### Aristolochic acid exposure
 
 The activated metabolites of AA bind covalently to the exocyclic amino groups in purine bases, with a preference for dA, leading to characteristic A > T transversions (Hollstein et al., 2013; Moriya et al., 2011). To determine whether individuals in the UTUC cohort had been exposed to AA, we quantified renal cortical DNA adducts using mass spectrometry (Yun et al., 2012). All but two of the 56 patients had detectable aristolactam (AL)-DNA adducts (Table 2) with levels ranging from 0.4 to 68 dA-AL-I adducts per 108 nucleotides. Moreover, the A > T signature mutation (Hoang et al., 2013) associated with AA was highly represented in the mutational spectra of TP53 (18/32 A > T) and HRAS (2/2 A > T) found in urinary cells (Supplementary file 10).
 
-## BC surveillance cohort
+### BC surveillance cohort
 
-## Cohort characteristics
+#### Cohort characteristics
 
 Our strategy for BC surveillance was different than for early detection of BC. In these patients, a BC was surgically excised for treatment and diagnosis. Tumor tissue was thus generally available, and in most such tumors, a mutation was identified. For example, we found during the course of this study that a mutation in at least one of the 11 queried genes was present in 95.2% of BCs evaluated. We evaluated a total of 322 patients with a BC tumor containing a mutation in at least one of the 11 genes and a urine sample collected within 0–5 years after surgery. We determined whether a single urine sample taken a relatively short time following surgical excision of the BC could reveal residual disease in these 322 patients, as evidenced by later recurrence. In 187 (58%) of the 322 patients, clinically evident BC developed after a median follow-up period of 10.7 months (range 0 to 51 months). The histopathologic types and tumor stages of these patients are summarized in Table 1b and detailed in Supplementary file 16. The median age of the participants was 62 years (range 20 to 93), and 75% of the patients were male as expected from the demographics of BC.
 
-## Genetic analysis
+#### Genetic analysis
 
 The multiplex assay detected mutations in 52% of the urinary cell samples from patients who developed recurrent BC during the study interval (95% CI, 45% to 60%; Supplementary file 16 and Supplementary file 17). The median MAF in the urinary cells with detectable mutations was 7% (6.89%). The most commonly altered genes were FGFR3 (43% of the 134 mutations) and TP53 (30% of the 134 mutations; Figure 3). Some cases were however considered to be false positives; 7% of the 135 patients who did not develop recurrent BC during the course of the study had a detectable mutation in their urinary cell sample (see Discussion). The mean interval between a positive multiplex assay test and the diagnosis of recurrent BC was 7 months (range 0 to 51 months).
 
@@ -196,13 +1021,13 @@ Mutations in the TERT promoter were detected in 57% of the urinary cell samples 
 
 Aneuploidy was detected in 28% (95% CI 24% to 37%) of the urinary cell samples from the patients who developed recurrent BC during the course of the study (Table 1b and Supplementary file 19). The most commonly altered chromosome arms were 8 p, 8q, and 9 p, as in the early detection cohort. In this assay, only 2% of the 135 patients who did not develop recurrent BC during the course of the study exhibited aneuploidy in at least one of their urinary cell samples.
 
-## UroSEEK: biomarkers in combination
+#### UroSEEK: biomarkers in combination
 
 The ten-gene multiplex assay, the TERT singleplex assay, and the aneuploidy assays yielded 52%, 57%, and 28% sensitivities, respectively, when used separately on the BC surveillance cohort (Table 1b and Supplementary file 17, 18 and 19). Thirty-two samples without TERT promoter mutations were detected by mutations in one of the other ten genes (Figure 4 and Supplementary file 17). Conversely, 41 samples without detectable mutations in the multiplex assay had TERT promoter mutations. Finally, aneuploidy was detected in three of the urinary cell samples without mutations in any of the 11 genes. Thus, the sensitivity of UroSEEK was 68% (95% CI, 59% to 73%; Table 1b). Twenty percent of the 135 patients in this cohort who did not develop BC during the course of the study scored positive by the UroSEEK test, yielding a specificity of 80% (95% CI, 77% to 91%). On average, UroSEEK positivity preceded the diagnosis of BC by 7 months, and in 47 cases, by >one year (Figure 4 and Supplementary file 16).
 
 Cytology was available for 196 patients in the BC surveillance cohort (Supplementary file 16). Among the 120 patients who developed recurrent BC in this cohort, 30 (25%) were positive by cytology. Conversely, no positive cytology results were observed in patients without recurrent tumors. UroSEEK was positive in 90% of the recurrent BC patients with urines positive by cytology and in 61% of the 90 recurrent BC patients with urines negative by cytology. Thus, in combination, UroSEEK plus cytology achieved 71% sensitivity (95% CI, 61.84% to 78.77; Figure 2 and Supplementary files 17, 18, 19). Among the 76 patients with cytology who did not develop recurrent BC during the course of the study, 18% scored as positive by either cytology or UroSEEK, which yielded a specificity of 82% (95% CI, 71% to 90%; see Discussion).
 
-## Low- vs. high-grade urothelial neoplasms (both BC cohorts)
+### Low- vs. high-grade urothelial neoplasms (both BC cohorts)
 
 The advantage of UroSEEK over cytology was particularly evident in low-grade BC (Papillary urothelial neoplasms of low malignant potential and non-invasive low-grade papillary urothelial carcinomas). Cytology was available for 49 low-grade tumors evaluated in this study (six from the early detection cohort and 43 from the Surveillance cohort). None of these low-grade tumors, however, were detected by cytology (0% sensitivity; 95% CI, 0.0% to 6.7%). In contrast, UroSEEK detected 67% (95% CI 51% to 81%) of the low-grade tumors (identical rate of 67% in both cohorts; Supplementary file 20 and Figure 6). Cytology was also available for 102 high-grade tumors (in situ urothelial carcinoma, non-invasive high-grade papillary urothelial carcinoma or infiltrating high-grade urothelial carcinoma) evaluated in this study (early detection cohort, n = 34, and BC Surveillance cohort, n = 68). Cytology was positive in 45% of these patients (50% and 41% in the early detection and BC surveillance cohorts, respectively) while UroSEEK was positive in 80% (100% and 71% in the early detection and surveillance cohorts, respectively; Supplementary file 2 and 16).
 
@@ -228,25 +1053,25 @@ We envision that the first application of UroSEEK would be patients such as thos
 
 ## Materials and methods
 
-## Patients and samples
+### Patients and samples
 
-## BC early detection and BC surveillance cohorts
+#### BC early detection and BC surveillance cohorts
 
 Urine samples were collected prospectively from patients in four participating institutions, including Johns Hopkins Hospital, Baltimore, MD, USA; A.C. Camargo Cancer Center, Sao Paulo, Brazil; Osaka University Hospital, Osaka, Japan; and Hacettepe University Hospital, Ankara, Turkey. The study was approved by the Institutional Review Boards of Johns Hopkins Hospital and all other participating institutions. Material transfer agreements were obtained. Patients with a known history of malignancy other than BC were excluded from the study. The BC early detection cohort comprised patients who were referred to a urology clinic in one of the above hospitals because of hematuria or lower urinary tract symptoms (570 patients; Supplementary file 2). The other cohort (322 patients) represented patients with prior established diagnosis of BC who are on surveillance for disease recurrence (BC surveillance cohort). As noted in the main text, the primary tumors from these patients harbored mutations in at least one of the 11 genes assessed through the multiplex or singleplex assays. A minimum of 12 months of follow-up from the date of urine collection was required in cases with no evidence of incident (BC early detection cohort) or recurrent tumors (BC Surveillance cohort) to be included in the study. Urine samples were collected before any procedures, such as cystoscopy, were performed during patient visits. A total of 892 urine samples were analyzed and composed of two types of samples. The first was residual urinary cells after processing with standard BD SurePath liquid-based cytology protocols (Becton Dickinson and Company; Franklin Lakes, NJ, USA). To allow for standard-of-care, residual SurePath fluids were kept refrigerated for 6–8 weeks before submission for DNA purification to allow for any potential need for repeat cytology processing of the same sample. The second sample type was composed of bio-banked fresh urine samples in which 15–25 mL of voided urine samples were stored at 4˚C for up to 60 min prior to centrifugation (10 min at 500 g) and the pellets stored at minus 80˚C before DNA purification.
 
 Formalin-fixed, paraffin-embedded (FFPE) tumor tissue samples from trans-urethral resections (TURB) or cystectomies were collected in 413 of the 892 cases. When several different tumors from the same patient were available (because of recurrences), the earliest tumor tissue obtained following donation of the urine sample was used in the early detection cohort. In the Surveillance cohort, tumors obtained before the donation of the urine sample were used in 146 of the 322 patients. In the other 176 Surveillance cases, the earliest tissue obtained following the donation of the urine sample was used. A genitourinary pathologist reviewed all histologic slides to confirm the diagnosis and select a representative tumor area with as high tumor cellularity as possible for that case. Corresponding FFPE blocks were cored with a sterile 16-gauge needle. One to three cores were obtained per tumor and placed in 1.5 mL sterile tubes for DNA purification, as previously described (Kinde et al., 2013). Electronic medical records were reviewed to obtain medical history and follow up data in all patients.
 
-## UTUC cohort
+#### UTUC cohort
 
 Sequential patients with UTUC scheduled to undergo a radical unilateral nephroureterectomy at National Taiwan University Hospital, Taipei Taiwan, in 2012 - 2016 were asked to participate in the study. All patients provided informed consent using the consent form and study design reviewed and approved by the Institutional Review Boards at National Taiwan University and Stony Brook University. A total of 56 UTUC patients were enrolled in the study after excluding four patients with gross hematuria and one patient with a tumor-urine DNA mismatch by identity testing (see below).
 
 UTUC patients provided urine samples (12 hr collection (n = 10); spot urines (n = 41); spot and 12 hr collection (n = 4); bladder wash (n = 1)) one day prior to surgery. Urinary cells were isolated by centrifugation at 581 g for 10 min at room temperature, washed three times in saline using the same centrifugation conditions, and stored frozen until DNA was isolated using a Qiagen kit #937255 (Germantown, MD). DNA was purified from fresh-frozen resected samples of upper tract tumors and renal cortex by standard phenol-chloroform extraction procedures (Chen et al., 2012; Jelaković et al., 2012). One upper urinary tract tumor per patient was analyzed; for cases with tumors at multiple sites, renal pelvic tumors were preferentially selected whenever available. FFPE tumor samples were staged and graded by a urologic pathologist, and the presence of one or more UTUC was confirmed by histopathology for each enrolled individual. Pertinent clinical and demographic data were obtained by a chart review of each individual. eGFR was calculated with the MDRD equation (Levey et al., 2006) and used to determine CKD stage (Levey et al., 2005).
 
-## DNA adduct analysis
+### DNA adduct analysis
 
 AL-DNA adduct (7-(deoxyadenosin-N6-yl) aristolactam I; dA-AL-I) levels in 2 µg of DNA from the normal renal cortex of UTUC patients were quantified with ultra-performance liquid chromatography–electrospray ionization/multistage mass spectrometry (UPLC-ESI/MSn) with a linear quadrupole ion trap mass spectrometer (LTQ Velos Pro, Thermo Fisher Scientific, San Jose, CA) as described previously (Yun et al., 2012).
 
-## Mutation analysis
+### Mutation analysis
 
 Three separate assays were used to search for abnormalities in urinary cell DNA. First, a multiplex PCR was used to detect mutations in regions of ten genes commonly mutated in urologic malignancies: CDKN2A, ERBB2, FGFR3, HRAS, KRAS, MET, MLL, PIK3CA, TP53, and VHL (Cancer Genome Atlas Research Network, 2014; Lin et al., 2010; Mo et al., 2007; Netto, 2011; Sarkis et al., 1995; Sarkis et al., 1994; Sarkis et al., 1993; Wu, 2005). The 57 primer pairs used for this multiplex PCR were divided in a total of three multiplex reactions, each containing non-overlapping amplicons (Supplementary file 4). These primers were used to amplify DNA in 25 µL reactions as previously described (Kinde et al., 2011), except that 15 cycles were used for the initial amplification. Second, the TERT promoter region was evaluated. A single amplification primer was used to amplify a 73 bp segment containing the region of the TERT promoter known to harbor mutations in BC and UTUC (Killela et al., 2013; Kinde et al., 2013). The conditions used to amplify it were the same as those used in the multiplex reactions described above except that Phusion GC Buffer (Thermo-Fisher) rather than HF buffer was used, and 20 cycles were used for the initial amplification. The TERT promoter region was not included in the multiplex PCR because of its high GC content.
 
@@ -254,18 +1079,18 @@ PCR products were purified with AMPure XP beads (Beckman Coulter, PA, USA) and 0
 
 To evaluate the statistical significance of putative mutations, we assessed DNA from white blood cells (WBCs) of 188 unrelated healthy individuals. A variant observed in the samples from the BC or UTUC cohorts was only scored as a mutation if it was observed at a much higher MAF than observed in normal WBCs. Specifically, the classification of a sample’s DNA status was based on two complementary criteria applied to each mutation: 1) the difference between the average MAF in the sample of interest and the corresponding maximum MAF observed for that same mutation in a set of controls; and 2) the Stouffer’s Z-score obtained by comparing the MAF in the sample of interest to a distribution of normal controls. To calculate the Z-score, the MAF in the sample of interest was normalized based on the mutation-specific distributions of MAFs observed among all controls. Following this mutation-specific normalization, a P-value was obtained by comparing the MAF of each mutation in each well with a reference distribution of MAFs built from normal controls where all mutations were included. The Stouffer’s Z-score was then calculated from the P-values of two wells, weighted by their number of UIDs. The sample was classified as positive if either the difference or the Stouffer’s Z-score of its mutations was above the thresholds determined from the normal WBCs. The threshold for the difference parameter was defined by the highest MAF observed in any normal WBCs. The threshold for the Stouffer's Z-score was chosen to allow one false positive among the 188 normal urine samples studied (see below).
 
-## Analysis of aneuploidy
+### Analysis of aneuploidy
 
 Aneuploidy was assessed with FastSeqS, which uses a single primer pair to amplify ~38,000 loci scattered throughout the genome (Kinde et al., 2012). After massively parallel sequencing, gains or losses of each of the 39 chromosome arms covered by the assay were determined using a bespoke statistical learning method described in Douville et al., 2018. A support vector machine (SVM) was used to discriminate between aneuploid and euploid samples. The SVM was trained using 3150 low neoplastic cell fraction synthetic aneuploid samples and 677 euploid peripheral WBC samples. Samples were scored as positive when the genome-wide aneuploidy score was >0.7, and there was at least one gain or loss of a chromosome arm.
 
-## Identity checks
+### Identity checks
 
 A multiplex reaction containing 26 primers detecting 31 common SNPs on chromosomes 10 and 20 was performed using the amplification conditions described above for the multiplex PCR. The 26 primers used for this identity evaluation are listed in Supplementary file 21.
 
-## Normal control samples
+### Normal control samples
 
 Urine samples from 188 healthy volunteers (19–60 years; mean age 26 years) were obtained and processed identically to the bio-banked fresh urine samples as described above. Urinary cell DNA from these 188 samples was used to assess the specificity of the UroSEEK test. WBC DNA from 94 normal individuals was used to evaluate the technical specificity of the PCR analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Performance characteristics of urine cytology, UroSEEK and its three components were calculated using MedCalc statistical software, online version (https://www.medcalc.org/calc/diagnostic_test.php). Confidence intervals (95%) were determined with an online GraphPad Software Inc. statistical calculator (https://www.graphpad.com/quickcalcs/confInterval1/) using the modified Wald method.

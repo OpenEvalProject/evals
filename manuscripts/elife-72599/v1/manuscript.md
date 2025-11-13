@@ -17,19 +17,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 The Solomon H. Snyder Department of Neuroscience, Center for Sensory Biology, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/00hj8s172 Mortimer B. Zuckermann Mind Brain Behavior Institute, Columbia University New York United States
-3. https://ror.org/02der9h97 Physiology & Neurobiology Department, University of Connecticut Mansfield United States
-4. https://ror.org/00f54p054 Department of Computer Science, Stanford University Stanford United States
-5. https://ror.org/013meh722 Drosophila Connectomics Group, Department of Zoology, University of Cambridge Cambridge United Kingdom
-6. https://ror.org/00tw3jy02 Neurobiology Division, MRC Laboratory of Molecular Biology Cambridge United Kingdom
-7. https://ror.org/00f54p054 Department of Biology, Howard Hughes Medical Institute, Stanford University Stanford United States
+1. The Solomon H. Snyder Department of Neuroscience, Center for Sensory Biology, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Mortimer B. Zuckermann Mind Brain Behavior Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Physiology & Neurobiology Department, University of Connecticut Mansfield United States ([ROR:02der9h97](https://ror.org/02der9h97))
+4. Department of Computer Science, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. Drosophila Connectomics Group, Department of Zoology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+6. Neurobiology Division, MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
+7. Department of Biology, Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
 ## Abstract
 
-Drosophila melanogaster olfactory neurons have long been thought to express only one chemosensory receptor gene family. There are two main olfactory receptor gene families in Drosophila , the odorant receptors (ORs) and the ionotropic receptors (IRs). The dozens of odorant-binding receptors in each family require at least one co-receptor gene in order to function: Orco for ORs, and Ir25a , Ir8a , and Ir76b for IRs. Using a new genetic knock-in strategy, we targeted the four co-receptors representing the main chemosensory families in D. melanogaster ( Orco, Ir8a, Ir76b, Ir25a ). Co-receptor knock-in expression patterns were verified as accurate representations of endogenous expression. We find extensive overlap in expression among the different co-receptors. As defined by innervation into antennal lobe glomeruli, Ir25a is broadly expressed in 88% of all olfactory sensory neuron classes and is co-expressed in 82% of Orco+ neuron classes, including all neuron classes in the maxillary palp. Orco , Ir8a , and Ir76b expression patterns are also more expansive than previously assumed. Single sensillum recordings from Orco-expressing Ir25a mutant antennal and palpal neurons identify changes in olfactory responses. We also find co-expression of Orco and Ir25a in Drosophila sechellia and Anopheles coluzzii olfactory neurons. These results suggest that co-expression of chemosensory receptors is common in insect olfactory neurons. Together, our data present the first comprehensive map of chemosensory co-receptor expression and reveal their unexpected widespread co-expression in the fly olfactory system.
+Drosophila melanogaster olfactory neurons have long been thought to express only one chemosensory receptor gene family. There are two main olfactory receptor gene families in Drosophila, the odorant receptors (ORs) and the ionotropic receptors (IRs). The dozens of odorant-binding receptors in each family require at least one co-receptor gene in order to function: Orco for ORs, and Ir25a, Ir8a, and Ir76b for IRs. Using a new genetic knock-in strategy, we targeted the four co-receptors representing the main chemosensory families in D. melanogaster (Orco, Ir8a, Ir76b, Ir25a). Co-receptor knock-in expression patterns were verified as accurate representations of endogenous expression. We find extensive overlap in expression among the different co-receptors. As defined by innervation into antennal lobe glomeruli, Ir25a is broadly expressed in 88% of all olfactory sensory neuron classes and is co-expressed in 82% of Orco+ neuron classes, including all neuron classes in the maxillary palp. Orco, Ir8a, and Ir76b expression patterns are also more expansive than previously assumed. Single sensillum recordings from Orco-expressing Ir25a mutant antennal and palpal neurons identify changes in olfactory responses. We also find co-expression of Orco and Ir25a in Drosophila sechellia and Anopheles coluzzii olfactory neurons. These results suggest that co-expression of chemosensory receptors is common in insect olfactory neurons. Together, our data present the first comprehensive map of chemosensory co-receptor expression and reveal their unexpected widespread co-expression in the fly olfactory system.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ The fly uses two olfactory appendages to detect odorants: the antennae and maxil
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig1-v1.jpg)
 
-**Figure 1.:** Drosophila melanogaster.(A) The adult fly head (left) has two olfactory organs: the antennae and the maxillary palps (arrows). Olfactory neurons from these organs project to the fly brain (D), to the first center involved in processing of olfactory information, the antennal lobes (E). (B) The olfactory organs are covered by sensory hairs called sensilla (left). Each sensillum contains between one and four olfactory sensory neurons (two example neurons are shown in gray). The dendrites of these neurons extend into the sensilla, and the axons target discrete regions of the antennal lobes called glomeruli (E). Neuronal compartments (dendrites, cell body, axon, axon terminals) are labeled in (C). ( C) Left: in the periphery, each olfactory sensory neuron is traditionally thought to express chemosensory receptors from only one of three gene families on its dendrites: ionotropic receptors (IRs, pink and purple), odorant receptors (ORs, teal and green), or gustatory receptors (GRs, light and dark blue). IRs and ORs require obligate co-receptors (dotted box outline) to form functional ion channels. All ORs utilize a single co-receptor, Orco (teal), while IRs can utilize one (or a combination) of three possible co-receptors (purple): Ir8a, Ir25a, or Ir76b. The two GRs form a functional carbon dioxide detecting channel expressed in only one class of neurons. All other olfactory neurons express one of the four co-receptors. Right: olfactory sensory neurons expressing ORs, IRs, and GRs are thought to project to mutually exclusive glomeruli in the antennal lobe (AL) of the central brain, forming the olfactory map shown in (E). (D) Fly brain stained with anti-brp synaptic marker (nc82), with left AL outlined by the dotted white box. (E) AL map with glomeruli color-coded by the chemosensory receptors (ORs, IRs, or GRs) expressed in the olfactory sensory neurons projecting to them. Only one glomerulus (VC3, striped) receives inputs from neurons expressing chemoreceptors from multiple gene families (ORs and IRs). Compass: D = dorsal, L = lateral, P = posterior.
+**Figure 1.:** (A) The adult fly head (left) has two olfactory organs: the antennae and the maxillary palps (arrows). Olfactory neurons from these organs project to the fly brain (D), to the first center involved in processing of olfactory information, the antennal lobes (E). (B) The olfactory organs are covered by sensory hairs called sensilla (left). Each sensillum contains between one and four olfactory sensory neurons (two example neurons are shown in gray). The dendrites of these neurons extend into the sensilla, and the axons target discrete regions of the antennal lobes called glomeruli (E). Neuronal compartments (dendrites, cell body, axon, axon terminals) are labeled in (C). ( C) Left: in the periphery, each olfactory sensory neuron is traditionally thought to express chemosensory receptors from only one of three gene families on its dendrites: ionotropic receptors (IRs, pink and purple), odorant receptors (ORs, teal and green), or gustatory receptors (GRs, light and dark blue). IRs and ORs require obligate co-receptors (dotted box outline) to form functional ion channels. All ORs utilize a single co-receptor, Orco (teal), while IRs can utilize one (or a combination) of three possible co-receptors (purple): Ir8a, Ir25a, or Ir76b. The two GRs form a functional carbon dioxide detecting channel expressed in only one class of neurons. All other olfactory neurons express one of the four co-receptors. Right: olfactory sensory neurons expressing ORs, IRs, and GRs are thought to project to mutually exclusive glomeruli in the antennal lobe (AL) of the central brain, forming the olfactory map shown in (E). (D) Fly brain stained with anti-brp synaptic marker (nc82), with left AL outlined by the dotted white box. (E) AL map with glomeruli color-coded by the chemosensory receptors (ORs, IRs, or GRs) expressed in the olfactory sensory neurons projecting to them. Only one glomerulus (VC3, striped) receives inputs from neurons expressing chemoreceptors from multiple gene families (ORs and IRs). Compass: D = dorsal, L = lateral, P = posterior.
 
 The receptors within each chemosensory gene family form heteromeric ion channels (receptor complexes) (Abuin et al., 2011; Butterwick et al., 2018; Sato et al., 2008). The ORs require a single co-receptor, Orco, to function (Figure 1C, middle row; Benton et al., 2006; Larsson et al., 2004; Vosshall and Hansson, 2011). The ligand-binding OrX confers odorant specificity upon the receptor complex, while the co-receptor Orco is necessary for trafficking of the OrX to the dendritic membrane and formation of a functional ion channel (Benton et al., 2006; Larsson et al., 2004). Likewise, the ligand-binding IrXs require one or more IR co-receptors: Ir8a, Ir25a, and/or Ir76b (Figure 1C, top row). The IR co-receptors (IrCos) are similarly required for trafficking and ion channel function (Abuin et al., 2011; Abuin et al., 2019; Ai et al., 2013; Vulpe and Menuz, 2021). The GR gene family generally encodes receptors involved in taste, which are typically expressed outside the olfactory system (such as in the labella or the legs) (Dunipace et al., 2001; Park and Kwon, 2011; Scott, 2018; Scott et al., 2001); however, Gr21a and Gr63a are expressed in one antennal OSN neuron class and form a complex sensitive to carbon dioxide (Figure 1C, bottom row; Jones et al., 2007; Kwon et al., 2007).
 
@@ -51,11 +51,369 @@ In this paper, we implement an efficient knock-in strategy to target the four ma
 
 ## Results
 
-## Generation and validation of co-receptor knock-in lines
+### Generation and validation of co-receptor knock-in lines
 
 We previously developed the HACK technique for CRISPR/Cas9-mediated in vivo gene conversion of binary expression system components, such as the conversion of transgenic Gal4 to QF2 (Brand and Perrimon, 1993; Jinek et al., 2012; Lin and Potter, 2016a; Lin and Potter, 2016b; Potter et al., 2010; Riabinina et al., 2015; Xie et al., 2018). Here, we adapt this strategy for the efficient generation of targeted knock-ins (see Table 1 and Table 1—source data 1 for details). We chose to target the four chemosensory co-receptor genes to examine unmapped patterns of co-receptor expression in D. melanogaster. We inserted a T2A-QF2 cassette and mCherry selection marker before the stop codon of the four genes of interest (Figure 2A, Figure 2—figure supplement 1). By introducing the T2A ribosomal skipping peptide, the knock-in will produce the full-length protein of the gene being targeted as well as a functional QF2 transcription factor (Figure 2A, protein products). This approach should capture the endogenous expression pattern of the gene under the control of the gene’s native regulatory elements while retaining the gene’s normal function (Baena-Lopez et al., 2013; Bosch et al., 2020; Chen et al., 2020; Diao et al., 2015; Diao and White, 2012; Du et al., 2018; Gnerer et al., 2015; Gratz et al., 2014; Kanca et al., 2019; Lee et al., 2018; Li-Kroeger et al., 2018; Lin and Potter, 2016a; Vilain et al., 2014; Xue et al., 2014). We found that T2A-QF2 knock-ins were functional with some exceptions (see Figure 2—figure supplement 2 and Figure 2—source data 1). For example, Orco-T2A-QF2 knock-in physiology was normal, while a homozygous Ir25a-T2A-QF2 knock-in exhibited a mutant phenotype. This suggests that the addition of the T2A peptide onto the C-terminus of Ir25a might interfere with its co-receptor function.
 
+**Table 1.**
+ Summary of HACK knock-in efficiency (related to Figure 2).Table 1—source data 1.HACK knock-in screen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Approach</th>
+      <th>mCherry+</th>
+      <th>mCherry-</th>
+      <th>Total</th>
+      <th>Efficiency (%)</th>
+      <th>Founders producing knock-in (#/total)</th>
+      <th>Knock-ins sampled</th>
+      <th>False positives</th>
+      <th>Confirmed</th>
+      <th>Correct (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Orco</td>
+      <td>Direct injection</td>
+      <td>180</td>
+      <td>365</td>
+      <td>545</td>
+      <td>33</td>
+      <td>43% (3/7)</td>
+      <td>30</td>
+      <td>0</td>
+      <td>30</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Direct injection</td>
+      <td>53</td>
+      <td>609</td>
+      <td>662</td>
+      <td>8</td>
+      <td>20% (4/20)</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Ir76b</td>
+      <td>Direct injection</td>
+      <td>79</td>
+      <td>184</td>
+      <td>263</td>
+      <td>30</td>
+      <td>100% (2/2)</td>
+      <td>10</td>
+      <td>0</td>
+      <td>10</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Ir25a</td>
+      <td>Direct injection</td>
+      <td>82</td>
+      <td>268</td>
+      <td>350</td>
+      <td>23</td>
+      <td>40% (2/5)</td>
+      <td>6</td>
+      <td>0</td>
+      <td>6</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Orco</td>
+      <td>Cross</td>
+      <td>37</td>
+      <td>96</td>
+      <td>133</td>
+      <td>28</td>
+      <td>100% (3/3)</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Ir25a</td>
+      <td>Cross</td>
+      <td>30</td>
+      <td>95</td>
+      <td>125</td>
+      <td>24</td>
+      <td>100% (2/2)</td>
+      <td>30</td>
+      <td>5</td>
+      <td>25</td>
+      <td>83</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of HACK knock-in approach. Top: two double-stranded breaks are induced on either side of the target gene stop codon with gRNAs (blue) expressed from the QF2X-HACK construct (middle) in the presence of Cas9. The construct includes T2A-QF2 and a floxed 3XP3-mCherry marker. The knock-in introduces a transcriptional stop (yellow T) after QF2. Bottom: the knock-in produces two protein products (right) from the targeted mRNA: target X and the QF2 transcription factor (Diao and White, 2012). The X-T2A-QF2 knock-in can be crossed to a reporter (e.g., QUAS-GFP) to examine the endogenous expression pattern of the target gene. (B) Orco-T2A-QF2 driving QUAS-GFP in adult fly head. GFP expression is found in the antennae (filled arrow) and maxillary palps (hollow arrow), as previously reported (Larsson et al., 2004). (C) Whole-mount anti-Orco antibody staining in Orco-T2A-QF2>GFP maxillary palps reveals a high degree of overlap of Orco+ and GFP+ cells. N = 3. (D) Ir8a-T2A-QF2 drives GFP in the antennae (arrow), as previously reported (Abuin et al., 2011). (E) Anti-Ir8a antibody staining of Ir8a-T2A-QF2>GFP antennal cryosections shows high correspondence between Ir8a+ and GFP+ cells. N = 7. (F) Ir76b-T2A-QF2 drives GFP expression in the antennae (filled arrow) and labella (hollow arrow), reflecting Ir76b’s role in olfaction and gustation, respectively (Benton et al., 2009; Zhang et al., 2013). (G) In situs on Ir76b-T2A-QF2>GFP antennal cryosections to validate that the knock-in faithfully recapitulates the endogenous expression pattern. N = 3. (H) Ir25a-T2A-QF2 drives GFP in the antennae (filled arrow) and labella (hollow arrow), which has been reported previously (Benton et al., 2009; Croset et al., 2010). Expression in the maxillary palps (arrowhead) has not been previously reported. (I) Whole-mount maxillary palp staining with an anti-Ir25a antibody in Ir25a-T2A-QF2>GFP flies. The knock-in and Ir25a antibody co-labeled the majority of olfactory neurons in the palps. N = 5. Scale bars = 25 µm. In (D) and (F), the 3XP3-mCherry knock-in marker can be weakly detected in the eyes and ocelli (red spot) of both Ir8a-T2A-QF2 and Ir76b-T2A-QF2. See also Figure 2—figure supplements 1–4, Tables 1 and 2, Table 1—source data 1, Figure 2—source data 1, and Materials and methods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of the direct injection method to generate a HACK knock-in. The HACK KI construct is injected into a germline Cas9-expressing embryo (both Act5C-Cas9 and Vas-Cas9 yielded successful knock-ins; see Materials and methods for more details). This approach requires one genetic cross to generate a knock-in: injected founder flies (G0) are individually crossed to balancer flies, and progeny (G1) are screened for the mCherry knock-in marker. Each mCherry+ G1 represents an independent knock-in event; thus, single mCherry+ flies are used to establish knock-in lines. (B) Details of the genetic crosses used to establish knock-in lines for each target gene using the direct injection approach. For genes on autosomes (Orco and Ir76b, third chromosome; Ir25a, second chromosome), a Cas9 line on the X chromosome was used, and mCherry+ male progeny selected to remove the Cas9 after successful HACKing. For Ir8a on the X chromosome, a Cas9 line on the third chromosome was used, which was marked with GFP to facilitate its removal in subsequent generations. In addition to mCherry marker screening, PCR genotyping, and sequencing, knock-in lines were confirmed by crossing to a QUAS reporter line and checking brain expression, either at the G2 stage, or by crossing G0 flies to balanced reporter lines to immediately check G1 brain expression. (C) Details of using the crossing method to generate HACK knock-ins. This involves the creation of donor lines, in which the HACK targeting construct is inserted into the genome, such as through P-element insertion or ΦC31 integration. Donor lines are crossed to a germline Cas9 line (Parental). The progeny, F1, have all the components necessary for a knock-in to occur (gRNAs, Cas9, HDR cassette). An additional cross is required to select germline HACKing events at the F2 generation. Because the donor lines also express mCherry, as do the knock-ins, the target chromosome must be marked with a different marker (such as w+) for knock-in selection (see chromosome schematics at the right, illustrating the locations of the genetic elements in the F1 and F2 generations). F2 knock-ins will have both markers (in this case, mCherry+w+), while donor flies will only have one (mCherry+w-). The cross approach was tested with two of the four genetic targets (Orco and Ir25a) and successfully produced knock-in lines for both. However, the cross approach can produce false positives (see Table 1 and Table 1—source data 1) and is more time consuming. The direct injection approach is recommended for the generation of targeted knock-ins. (D) Knock-in screening can be performed at the larval (left) and pupal (right) stages. (E) The 3XP3-mCherry marker is expressed throughout the adult fly brain and ventral nerve cord. Nc82 channel has been pseudo-colored blue for clarity. (F) The marker cassette is flanked by loxP sites and can be removed through Cre recombination (see Materials and methods for details) (Siegal and Hartl, 1996). The 3XP3-mCherry marker does not affect knock-in expression. Ir25a-T2A-QF2-driven GFP expression in the brain was similar before (top row) and after (bottom row) Cre-mediated removal of the mCherry marker. (G) No difference was found in the expression patterns of Ir25a-T2A-QF2 knock-in lines generated by the two HACK methods, genetic cross (top) and direct injection (bottom). For (F) and (G): N = 5 for direct injection; N = 4 for cross, mCherry+; N = 3 for cross, mCherry-. Expression patterns were comparable across all three groups. See also Table 1 and Table 1—source data 1. Scale bars: 100 µm in (E), 50 µm in (F, G).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Orco knock-in single sensillum recording (SSR) experiments were performed in ab2 sensilla. Responses to 10 odorants plus mineral oil control were compared in wildtype and homozygous Orco-T2A-QF2 sensilla. Shown are example responses to 1% ethyl acetate. (B) ab2 sensilla contain two neurons: A (left) and B (right). No differences were found in the responses of these neurons between the two genotypes across all odorants tested (Mann–Whitney U test, p>0.05). A small difference in baseline (pre-stimulus) activity was observed, which can be seen in (A). Fewer stimuli are shown for ab2B because odorants strongly activating the A neuron obscured the B neuron responses. N = 5 for wildtype, N = 6 for Orco-T2A-QF2. MO: mineral oil; EA: ethyl acetate; PA: pentyl acetate; EB: ethyl butyrate; MS: methyl salicylate; HEX: hexanol; OCT: 1-octen-3-ol; E2: e2-hexenal; BUT: 2,3-butanedione; GA: geranyl acetate; HEPT: 2-heptanone. (C–H) IrCo knock-in SSR experiments were performed in ac2 sensilla. Responses to eight odorants were compared in wildtype and homozygous knock-in flies. (C) Example responses to 1% acetic acid in Ir8a-T2A-QF2 and wildtype sensilla. (D) There was a small but significant difference in responses between the two genotypes to hexanol (Mann–Whitney U test, p=0.0286) and cadaverine (Mann–Whitney U test, p=0.0106), which are not typically considered to be Ir8a-dependent odorants (Silbering et al., 2011). Responses to all other stimuli were not significantly different between genotypes. N = 7 for wildtype, N = 8 for Ir8a-T2A-QF2. (E) Example responses to 1% acetic acid in Ir76b-T2A-QF2 and wildtype flies. (F) There were small but significant differences in responses to phenethylamine (Mann–Whitney U test, p=0.012) and acetic acid (Mann–Whitney U test, p=0.0087) between Ir76b-T2A-QF2 and wildtype flies. Responses to the other stimuli were not significantly different between genotypes. N = 7 for wildtype, N = 8 for Ir76b-T2A-QF2. (G) Homozygous Ir25a-T2A-QF2 flies lost responses to most amines, recapitulating an Ir25a mutant phenotype (Abuin et al., 2011; Silbering et al., 2011). Heterozygous Ir25a-T2A-QF2 flies with one wildtype copy of Ir25a had normal responses. Shown are example responses to 1% cadaverine in homozygous Ir25a-T2A-QF2, heterozygous Ir25a-T2A-QF2, and wildtype ac2 sensilla. (H) Homozygous Ir25a-T2A-QF2 flies had strongly reduced or abolished responses to phenethylamine (Mann–Whitney U test, p=0.039), ammonia (Mann–Whitney U test, p=0.0338), 1,4-diaminobutane (Mann–Whitney U test, p=0.0012), cadaverine (Mann–Whitney U test, p=0.0025), and 2,3-butanedione (Mann–Whitney U test, p=0.0472). Responses to the other stimuli were not significantly different between genotypes. N = 6 for wildtype, N = 7 for homozygous Ir25a-T2A-QF2. PO: paraffin oil; HEX: hexanol; PHEN: phenethylamine; AMM: ammonia; PROP: propanal; DIA: 1,4-diaminobutane; CAD: cadaverine; BUT: 2,3-butanedione; AC: acetic acid. See Figure 2—source data 1 for all U and p-values.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) The HACK 3XP3-mCherry marker is expressed in the eyes and broadly throughout the fly nervous system and is subject to positional effects in expression. (B) Each knock-in line is generated by CRISPR-Cas9-mediated homology-directed insertion of a T2A-QF2 cassette marked by mCherry in front of the translational stop codon of the target gene. The 5′ homology arm (5′HA) is ~1 kb of the gene just before the stop codon. Successful knock-in lines were confirmed using forward primers upstream of the 5′HA (FOR), and a reverse primer within the QF2 sequence (REV). Amplification of an ~1.6–2 kb sequence occurs only if a knock-in is present. See Figure 2A for target and donor construct schematics. (C) PCR genotyping using the primers shown in (B) confirms successful knock-in of the four targeted genes. (D) Knock-ins were confirmed with sequencing of the targeted genomic site. For each co-receptor, the first line shows the target sequence (based on the FlyBase reference genome) (Thurmond et al., 2019), and the second line shows the verified sequence of the knock-in. The stop codon (red) has been replaced with the HACK T2A-QF2 cassette. The portion shown here includes the MluI restriction site used for cloning the 5′HA (gray), as well as the start of the T2A sequence (orange). In each knock-in construct, synonymous substitutions (blue) have been made to prevent the gRNA/Cas9 from cutting the donor construct. Successful knock-in ensures substitution of the gRNA recognition sequences and protects the genomic DNA from further gRNA/Cas9 targeting. Each knock-in construct was designed with three substitutions. The underlined base pair in the Ir76b knock-in is an SNP discovered in the lab wildtype stock and considered when designing the knock-in construct. (E.–H) Antibody and in situ probe validation. (E) No anti-Orco expression in Orco2 mutant palps. elav is used as a pan-neuronal counterstain. (F) No anti-Ir8a expression in Ir8a1 mutant antennae. DAPI is used as a cellular counterstain. (G) No Ir76b probe signal in Ir76b1 mutant antennae. DIC used to visualize tissue. (H) No anti-Ir25a expression in Ir25a2 mutant palps (elav counterstain). Scale bars = 25 µm. See also Table 2.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** In the larval stage, Orco-T2A-QF2 (first row) appears to drive expression only in the dorsal organs (zoom panel 1), as previously described (Larsson et al., 2004); Ir8a-T2A-QF2 (second row) does not appear to drive GFP expression in the larva (although very weak expression may not be visible at this magnification); and both Ir76b-T2A-QF2 (third row) and Ir25a-T2A-QF2 (fourth row) drive GFP expression in the larval head as well as throughout the body wall (zoom panel 2 for Ir76b; zoom panels 3 and 4 for Ir25a), reflecting the role of these genes in additional, non-olfactory modalities. Weak red fluorescence from the 3XP3-mCherry knock-in marker can be detected in the Ir8a-T2A-QF2 and Ir76b-T2A-QF2 larvae. This is due to channel bleed-through and is not seen in the other knock-in lines (Orco-T2A-QF2 and Ir25a-T2A-QF2) that have had the marker removed (see Materials and methods for details).
+
 We examined the expression of the co-receptor knock-in lines in the adult olfactory organs by crossing each line to the same 10XQUAS-6XGFP reporter (Figure 2B–I). Orco-T2A-QF2-driven GFP expression was detected in the adult antennae and maxillary palps (Figure 2B), as previously described (Larsson et al., 2004). We validated the Orco-T2A-QF2 knock-in line with whole-mount antibody staining of maxillary palps (Figure 2C) and found a high degree of correspondence between anti-Orco antibody staining and knock-in driven GFP in palpal olfactory neurons (quantified in Table 2; see also Figure 2—figure supplement 3A–D for PCR and sequencing validation of all knock-in lines). We confirmed the specificity of the anti-Orco antibody by staining Orco2 mutant palps and found no labeling of olfactory neurons (Figure 2—figure supplement 3E).
+
+**Table 2.**
+ Validation of T2A-QF2 knock-in expression in the antennae and maxillary palps (related to Figure 2).To verify that the knock-in lines recapitulate the endogenous expression patterns of the target genes, antennae or maxillary palps of flies containing the knock-ins driving GFP expression were co-stained with the corresponding antibody (Ab) (anti-Orco, anti-Ir8a, or anti-Ir25a). The overlap of Ab+ and GFP+ cells was examined, and a high correspondence between antibody staining and knock-in driven GFP was found. WM: whole-mount; cryo: cryosection. See also Figure 2—figure supplement 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Knock-in</th>
+      <th>Sample</th>
+      <th>Antibody (Ab)</th>
+      <th>Ab+ cells</th>
+      <th>GFP+ cells</th>
+      <th>Double-labeled cells</th>
+      <th>Total cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Orco</td>
+      <td>Palp 1 (WM)</td>
+      <td>Anti-Orco</td>
+      <td>125</td>
+      <td>127</td>
+      <td>125</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <td>Orco</td>
+      <td>Palp 2 (WM)</td>
+      <td>Anti-Orco</td>
+      <td>112</td>
+      <td>111</td>
+      <td>108</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td>Orco</td>
+      <td>Palp 6 (WM)</td>
+      <td>Anti-Orco</td>
+      <td>125</td>
+      <td>126</td>
+      <td>123</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total across samples:</td>
+      <td>362</td>
+      <td>364</td>
+      <td>356</td>
+      <td>370</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Proportion of Ab+ cells that are GFP+:</td>
+      <td>Proportion of GFP+ cells that are Ab+:</td>
+      <td>Proportion of all cells that are double labeled:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.98</td>
+      <td>0.98</td>
+      <td>0.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Antenna 1 (cryo)</td>
+      <td>Anti-Ir8a</td>
+      <td>20</td>
+      <td>21</td>
+      <td>20</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Antenna 2 (cryo)</td>
+      <td>Anti-Ir8a</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Antenna 6 (cryo)</td>
+      <td>Anti-Ir8a</td>
+      <td>40</td>
+      <td>43</td>
+      <td>40</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Antenna 7 (cryo)</td>
+      <td>Anti-Ir8a</td>
+      <td>12</td>
+      <td>13</td>
+      <td>12</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Antenna 8 (cryo)</td>
+      <td>Anti-Ir8a</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Antenna 9 (cryo)</td>
+      <td>Anti-Ir8a</td>
+      <td>42</td>
+      <td>42</td>
+      <td>41</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Ir8a</td>
+      <td>Antenna 10 (cryo)</td>
+      <td>Anti-Ir8a</td>
+      <td>41</td>
+      <td>40</td>
+      <td>40</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total across samples:</td>
+      <td>195</td>
+      <td>199</td>
+      <td>193</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Proportion of Ab+ cells that are GFP+:</td>
+      <td>Proportion of GFP+ cells that are Ab+:</td>
+      <td>Proportion of all cells that are double labeled:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.99</td>
+      <td>0.97</td>
+      <td>0.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ir25a</td>
+      <td>Palp 1 (WM)</td>
+      <td>Anti-Ir25a</td>
+      <td>107</td>
+      <td>105</td>
+      <td>104</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>Ir25a</td>
+      <td>Palp 2 (WM)</td>
+      <td>Anti-Ir25a</td>
+      <td>86</td>
+      <td>85</td>
+      <td>85</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>Ir25a</td>
+      <td>Palp 3 (WM)</td>
+      <td>Anti-Ir25a</td>
+      <td>111</td>
+      <td>111</td>
+      <td>110</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>Ir25a</td>
+      <td>Palp 4 (WM)</td>
+      <td>Anti-Ir25a</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Ir25a</td>
+      <td>Palp 5 (WM)</td>
+      <td>Anti-Ir25a</td>
+      <td>83</td>
+      <td>83</td>
+      <td>81</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total across samples:</td>
+      <td>481</td>
+      <td>478</td>
+      <td>474</td>
+      <td>485</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Proportion of Ab+ cells that are GFP+:</td>
+      <td>Proportion of GFP+ cells that are Ab+:</td>
+      <td>Proportion of all cells that are double labeled:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Unlike Orco, Ir8a expression has previously been localized only to the antenna, to olfactory neurons found in coeloconic sensilla and in the sacculus (Abuin et al., 2011). As expected, the knock-in line drove GFP expression only in the antenna (Figure 2D). To validate the Ir8a-T2A-QF2 knock-in line, we performed antibody staining on antennal cryosections and found the majority of cells to be double labeled (Figure 2E, Table 2). There was no anti-Ir8a staining in control Ir8a1 mutant antennae (Figure 2—figure supplement 3F).
 
@@ -65,9 +423,705 @@ Of the four D. melanogaster co-receptor genes, Ir25a has been implicated in the 
 
 We also examined co-receptor knock-in expression in D. melanogaster larvae. As in the adult stage, larval GFP expression was broadest in the Ir25a-T2A-QF2 and Ir76b-T2A-QF2 knock-in lines, with GFP labeling of neurons in the head and throughout the body wall (Figure 2—figure supplement 4). The Orco-T2A-QF2 knock-in line labeled only the olfactory dorsal organs in the larva, while the Ir8a-T2A-QF2 knock-in line did not have obvious expression in the larval stage (Figure 2—figure supplement 4). All subsequent analyses focused on the adult olfactory system.
 
-## Expanded expression of olfactory co-receptors
+### Expanded expression of olfactory co-receptors
 
 We next examined the innervation patterns of the four co-receptor knock-in lines in the adult central nervous system: the brain and ventral nerve cord (VNC) (Figure 3). Only two of the four lines (Ir25a and Ir76b) showed innervation in the VNC, consistent with the role of these genes in gustation in addition to olfaction (Figure 3—figure supplement 1A). In the brain, we compared the expression of each knock-in line (Figure 3A–D, green) to the corresponding transgenic Gal4 line (Figure 3A–D, orange) to examine the differences in expression to what has previously been reported. Reporter-alone controls for these experiments are shown in Figure 3—figure supplement 1B. All four knock-in lines innervated the ALs, and the Ir25a-T2A-QF2 and Ir76b-T2A-QF2 lines additionally labeled the subesophageal zone (SEZ), corresponding to gustatory axons from the labella (Figure 3C and D, arrowheads; Hussain et al., 2016; Zhang et al., 2013). The co-labeling experiments revealed that all four knock-ins label more glomeruli than previously reported (see Figure 3—source data 1 for AL analyses, Figure 3—source data 2 for traced examples of newly identified glomeruli in each knock-in line, and Table 3 for a summary of glomerular expression across all knock-in lines). Some glomeruli were not labeled consistently in all flies, which we define as variable expression (found in <50% of brains examined).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) Comparing knock-in innervation patterns of the antennal lobe (AL) with what has previously been reported for each co-receptor. Co-labeling experiments with each co-receptor knock-in line driving QUAS-GFP (green) and the corresponding transgenic co-receptor Gal4 line driving UAS-mCD8::RFP (anti-CD8, orange). The nc82 antibody labels synapses (magenta) and is used as a brain counterstain in these and all subsequent brain images. (A) The Orco-T2A-QF2 knock-in labels more glomeruli than the Orco-Gal4 line. Top: maximum intensity projection of full z-stack showing two additional glomeruli labeled by the knock-in, VM4 (Ir8a+/Ir76b+/Ir25a+) and VL2a (Ir8a+). Middle: subset of z-stack with a box around the V glomerulus. Bottom: zoom of boxed region showing sparse innervation of the V glomerulus (Gr21a+/Gr63a+) by the knock-in but not the Gal4 line. Asterisk indicates antennal nerve that is outside the V glomerulus. In the sub z-stack and zoom panel, gain has been increased in the GFP channel to visualize weak labeling more clearly. (B) The Ir8a-T2A-QF2 knock-in also drives GFP expression in more glomeruli than previously reported, including the outlined VL1 glomerulus (Ir25a+). (C) In the brain, Ir76b-T2A-QF2>GFP olfactory neurons innervate the ALs, while gustatory neurons from the labella innervate the subesophageal zone (SEZ, arrowhead). Top: both the Ir76b knock-in and transgenic Gal4 line label more glomeruli than previously reported, including VL1 (Ir25a+) and DP1l (Ir8a+). Bottom: the Ir76b-T2A-QF2 knock-in labels several Orco+ glomeruli, such as DC3 and VC4 (outlined). In the subset, gain has been increased in the GFP channel to visualize weakly labeled glomeruli more clearly. (D) The Ir25a-T2A-QF2 knock-in drives GFP expression broadly in the antennal lobes and SEZ (arrowhead). Ir25a+ neurons innervate many Orco+ glomeruli, such as those outlined. The transgenic Ir25a-Gal4 line labels a subset of the knock-in expression pattern. N = 3–10 for co-labeling experiments, N = 5–15 for additional analyses of the knock-in lines alone. Scale bars = 25 µm, except zoom panel scale bar = 10 µm. See also Figure 3—figure supplements 1 and 2, Table 3, and Figure 3—source data 1 and Figure 3—source data 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) In adult flies, two of the four knock-ins (Ir76b-T2A-QF2, third row, and Ir25a-T2A-QF2, fourth row) drive GFP expression in neurons innervating the VNC. This likely reflects the role of these co-receptors in gustation. There is weak GFP expression in the reporter control (bottom row) in the abdominal neuromere (filled arrow), as well as the accessory mesothoracic neuropil (empty arrow), which can be seen in the two other knock-ins (Orco-T2A-QF2, first row, and Ir8a-T2A-QF2, second row). This nonspecific expression is likely from the reporter itself rather than driven by the two knock-ins. (B) Control brains showing the QUAS-GFP reporter alone (top) and the UAS-mCD8::RFP reporters alone (middle and bottom). These reporters were used for all brain images in Figures 3—5. The QUAS reporter weakly labels the mushroom bodies. The VNC from the fly in (A, fourth row) is also used in Figure 2—figure supplement 1E. Scale bars: 100 µm in (A), 50 µm in (B).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–E) Transgenic co-receptor Gal4 lines crossed to a strong UAS reporter reveal expression in some, but not all, of the additional glomeruli labeled by the respective knock-ins. Some discrepancies between the Gal4 and knock-in lines are enumerated here, but do not represent a comprehensive list. (A) Orco-Gal4 drives weak GFP expression in VL2a and VM4 glomeruli (outlined), but lacks expression in DL2, V, and VL1 glomeruli, which are labeled by the knock-in. (B) Ir8a-Gal4>GFP labels VC3 and VL1 (outlined), but lacks expression in the VM4 and VA3 glomeruli, which are labeled in the knock-in. (C) Ir76b-Gal4 labels the VL1 and VL2a glomeruli (outlined), but lacks expression in the VA5 and DC3 glomeruli that are consistently labeled in the knock-in. Additionally, it drives GFP expression in Orco+ glomeruli not seen in the knock-in (outlined). (D) Ir25a-Gal4 labels some Orco+ glomeruli (outline includes DA2, DA3, DA4m, and DA4l), but is lacking expression in many glomeruli labeled by the knock-in. (E) The UAS-GFP control line has weak leaky expression in the subesophageal zone (SEZ) but no expression in the antennal lobe (AL). (A) shows single slice to visualize weakly labeled glomeruli; (B–E) are maximum intensity projections of z-stacks. Scale bar = 50 µm. See also Figure 3—source data 1.
+
+**Table 3.**
+ Summary of expression patterns for all knock-in lines (related to Figures 3—5).Summarized here are all of the olfactory sensory neuron (OSN) classes innervating the 58 antennal lobe glomeruli†; their corresponding sensilla and tuning receptors; the previously reported (original) co-receptors they express; and whether or not each of the co-receptor knock-in lines labels those glomeruli. Variable indicates that the glomerulus was labeled in <50% of brains examined in the given knock-in line. Sensilla or glomeruli that have been renamed or reclassified have their former nomenclature listed in parentheses. Question marks indicate expression that has been reported but not functionally validated. * See also Figure 3—source data 1 and Figure 3—source data 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Glomerulus†</th>
+      <th>Sensillum</th>
+      <th>Tuning receptor(s)</th>
+      <th>Original co-receptor(s)</th>
+      <th>Orco-T2A-QF2</th>
+      <th>Ir8a-T2A-QF2</th>
+      <th>Ir76b-T2A-QF2</th>
+      <th>Ir25a-T2A-QF2</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D</td>
+      <td>Ab9A</td>
+      <td>Or69aA, Or69aB</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>Variable</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DA1</td>
+      <td>At1A</td>
+      <td>Or67d</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Variable</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005; Kurtovic et al., 2007</td>
+    </tr>
+    <tr>
+      <td>DA2</td>
+      <td>Ab4B</td>
+      <td>Or56a, Or33a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DA3</td>
+      <td>Ai2B (At2B)</td>
+      <td>Or23a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005; Lin and Potter, 2015</td>
+    </tr>
+    <tr>
+      <td>DA4l</td>
+      <td>Ai3C (At3C)</td>
+      <td>Or43a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005; Lin and Potter, 2015</td>
+    </tr>
+    <tr>
+      <td>DA4m</td>
+      <td>Ai3B (At3B)</td>
+      <td>Or2a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Lin and Potter, 2015</td>
+    </tr>
+    <tr>
+      <td>DC1</td>
+      <td>Ai3A (At3A)</td>
+      <td>Or19a, Or19b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005; Lin and Potter, 2015</td>
+    </tr>
+    <tr>
+      <td>DC2</td>
+      <td>Ai1A (Ab6A)</td>
+      <td>Or13a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005; Lin and Potter, 2015</td>
+    </tr>
+    <tr>
+      <td>DC3</td>
+      <td>Ai2A (At2A)</td>
+      <td>Or83c</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Variable</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005; Lin and Potter, 2015</td>
+    </tr>
+    <tr>
+      <td>DL1</td>
+      <td>Ab1D</td>
+      <td>Or10a, Gr10a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DL3</td>
+      <td>At4B</td>
+      <td>Or65a, Or65b, Or65c</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DL4</td>
+      <td>Ab10B</td>
+      <td>Or49a, Or85f</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DL5</td>
+      <td>Ab4A</td>
+      <td>Or7a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Variable</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>DM1</td>
+      <td>Ab1A</td>
+      <td>Or42b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DM2</td>
+      <td>Ab3A</td>
+      <td>Or22a, Or22b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DM3</td>
+      <td>Ab5B</td>
+      <td>Or47a, Or33b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DM4</td>
+      <td>Ab2A</td>
+      <td>Or59b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>DM5</td>
+      <td>Ab2B</td>
+      <td>Or85a, Or33b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>DM6</td>
+      <td>Ab10A</td>
+      <td>Or67a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>VA1d</td>
+      <td>At4C</td>
+      <td>Or88a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VA1v</td>
+      <td>At4A</td>
+      <td>Or47b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VA2</td>
+      <td>Ab1B</td>
+      <td>Or92a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VA3</td>
+      <td>Ab9B</td>
+      <td>Or67b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VA4</td>
+      <td>Pb3B</td>
+      <td>Or85d</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>VA5</td>
+      <td>Ai1B (Ab6B)</td>
+      <td>Or49b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Lin and Potter, 2015</td>
+    </tr>
+    <tr>
+      <td>VA6</td>
+      <td>Ab5A</td>
+      <td>Or82a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VA7l</td>
+      <td>Pb2B</td>
+      <td>Or46a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VA7m</td>
+      <td>UNK</td>
+      <td>UNK</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Variable</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>VC1</td>
+      <td>Pb2A</td>
+      <td>Or33c, Or85e</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VC2</td>
+      <td>Pb1B</td>
+      <td>Or71a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VC4</td>
+      <td>Ab7B</td>
+      <td>Or67c</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>VM2</td>
+      <td>Ab8A</td>
+      <td>Or43b</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>VM3</td>
+      <td>Ab8B</td>
+      <td>Or9a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>VM5d</td>
+      <td>Ab3B</td>
+      <td>Or85b?, Or98b?</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>Variable</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005</td>
+    </tr>
+    <tr>
+      <td>VM5v</td>
+      <td>Ab7A</td>
+      <td>Or98a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VM7d</td>
+      <td>Pb1A</td>
+      <td>Or42a</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Endo et al., 2007; Fishilevich and Vosshall, 2005</td>
+    </tr>
+    <tr>
+      <td>VM7v (1)</td>
+      <td>Pb3A</td>
+      <td>Or59c</td>
+      <td>Orco</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Endo et al., 2007</td>
+    </tr>
+    <tr>
+      <td>VC3</td>
+      <td>Ac3B</td>
+      <td>Or35a</td>
+      <td>Orco, Ir76b</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Fishilevich and Vosshall, 2005; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>Ab1C</td>
+      <td>Gr21a, Gr63a</td>
+      <td>N/A</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Couto et al., 2005; Jones et al., 2007; Kwon et al., 2007</td>
+    </tr>
+    <tr>
+      <td>DC4</td>
+      <td>Sacculus, chamber III</td>
+      <td>Ir64a</td>
+      <td>Ir8a</td>
+      <td>Variable</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Ai et al., 2013; Ai et al., 2010; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>DL2d</td>
+      <td>Ac3A</td>
+      <td>Ir75b</td>
+      <td>Ir8a</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Prieto-Godino et al., 2017; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>DL2v</td>
+      <td>Ac3A</td>
+      <td>Ir75c</td>
+      <td>Ir8a</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Prieto-Godino et al., 2017; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>DP1l</td>
+      <td>Ac2</td>
+      <td>Ir75a</td>
+      <td>Ir8a</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>DP1m</td>
+      <td>Sacculus, chamber III</td>
+      <td>Ir64a</td>
+      <td>Ir8a</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Ai et al., 2013; Ai et al., 2010; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VL2a</td>
+      <td>Ac4</td>
+      <td>Ir84a</td>
+      <td>Ir8a</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VL2p</td>
+      <td>Ac1</td>
+      <td>Ir31a</td>
+      <td>Ir8a</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VC5</td>
+      <td>Ac2</td>
+      <td>Ir41a</td>
+      <td>Ir8a, Ir25a, Ir76b</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Hussain et al., 2016; Min et al., 2013; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VM1</td>
+      <td>Ac1</td>
+      <td>Ir92a</td>
+      <td>Ir8a, Ir25a, Ir76b</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Min et al., 2013; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VM4</td>
+      <td>Ac4</td>
+      <td>Ir76a</td>
+      <td>Ir8a, Ir25a, Ir76b</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Benton et al., 2009; Min et al., 2013; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VL1</td>
+      <td>Ac1, Ac2, Ac4</td>
+      <td>Ir75d</td>
+      <td>Ir25a</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VM6v (VM6)</td>
+      <td>Ac1</td>
+      <td>Rh50, Amt</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>Yes (weak)</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Chai et al., 2019; Li et al., 2016; Schlegel et al., 2021; Vulpe et al., 2021,this paper</td>
+    </tr>
+    <tr>
+      <td>VM6m (new)</td>
+      <td>Sacculus, chamber III</td>
+      <td>Rh50, Amt</td>
+      <td>N/A (this paper)</td>
+      <td>No</td>
+      <td>Yes (weak)</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Chai et al., 2019; Li et al., 2016; Schlegel et al., 2021; Vulpe et al., 2021,this paper</td>
+    </tr>
+    <tr>
+      <td>VM6l*(new)</td>
+      <td>Sacculus, chamber III</td>
+      <td>Rh50, Amt</td>
+      <td>N/A (this paper)</td>
+      <td>No</td>
+      <td>Yes (strong)</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Chai et al., 2019; Li et al., 2016; Schlegel et al., 2021; Vulpe et al., 2021,this paper</td>
+    </tr>
+    <tr>
+      <td>VP1d</td>
+      <td>Sacculus, chamber II</td>
+      <td>Ir40a, Ir93a</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Enjin et al., 2016; Frank et al., 2017; Knecht et al., 2017; Knecht et al., 2016; Marin et al., 2020; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VP1l</td>
+      <td>Sacculus, chamber I</td>
+      <td>Ir21a, Ir93a</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Frank et al., 2017; Knecht et al., 2017; Knecht et al., 2016; Marin et al., 2020; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VP1m</td>
+      <td>Sacculus, chamber I</td>
+      <td>Ir68a, Ir93a</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Frank et al., 2017; Knecht et al., 2017; Knecht et al., 2016; Marin et al., 2020; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VP2</td>
+      <td>Arista</td>
+      <td>Gr28b.d, Ir93a</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Enjin et al., 2016; Frank et al., 2017; Marin et al., 2020; Miwa et al., 2018; Ni et al., 2013</td>
+    </tr>
+    <tr>
+      <td>VP3</td>
+      <td>Arista</td>
+      <td>Ir21a, Ir93a</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Budelli et al., 2019; Enjin et al., 2016; Frank et al., 2017; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VP4</td>
+      <td>Sacculus, chambers I + II</td>
+      <td>Ir40a, Ir93a</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Enjin et al., 2016; Frank et al., 2017; Knecht et al., 2017; Knecht et al., 2016; Marin et al., 2020; Silbering et al., 2011</td>
+    </tr>
+    <tr>
+      <td>VP5</td>
+      <td>Sacculus, chamber II</td>
+      <td>Ir68a, Ir93a</td>
+      <td>Ir25a</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Frank et al., 2017; Knecht et al., 2017; Marin et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
+_*VM6l was initially named VC6 in version 1 of our pre-print (Task et al., 2020) but was reclassified using additional data from EM reconstructions in the antennal lobe (AL) and immunohistochemical experiments in the periphery (see Figure 5).†The VM6 subdivisions (VM6v, VM6m, VM6l) are separated in this table for clarity but counted together as one glomerulus in accordance with Schlegel et al., 2021._
 
 Orco-T2A-QF2 labels seven ‘non-canonical’ glomeruli consistently, and one sporadically. These include VM4 and VL2a, which correspond to Ir76b+ and Ir8a+ OSN populations, respectively (Figure 3A, outlines). We also found that the Orco knock-in sparsely but consistently labels the V glomerulus, which is innervated by Gr21a+/Gr63a+ neurons (Figure 3A, box and zoom panel). Orco-T2A-QF2 also labels one Ir25a+ glomerulus consistently (VL1), three additional Ir8a+ glomeruli consistently (DL2d, DL2v, DP1l), and one variably (DC4). Surprisingly, when we crossed the transgenic Orco-Gal4 line (Larsson et al., 2004) to a stronger reporter (Shearin et al., 2014), we found that several of these additional glomeruli were weakly labeled by the transgenic line (Figure 3—figure supplement 2A). This suggests that there are OSN populations in which Orco is expressed either at low levels or in few cells, which might be why this expression was previously missed. We found this to be the case with the IrCo knock-ins, as well (described below).
 
@@ -77,9 +1131,17 @@ Of the four chemosensory co-receptor genes, the previously reported expression o
 
 Ir25a-T2A-QF2 innervation of the AL was the most expanded compared to what has previously been reported. In addition to the novel expression we identified in the palps (Figure 2H), we found that the Ir25a knock-in innervates many Orco+ glomeruli receiving inputs from the antennae (Figure 3D). The extensive, dense innervation of the AL by Ir25a+ processes made identification of individual glomeruli difficult and necessitated further experiments to fully characterize this expression pattern (described in greater detail below). While it was previously reported that the transgenic Ir25a-Gal4 line labels only a subset of Ir25a+ neurons (compared to anti-Ir25a antibody staining), it was assumed that neurons not captured by the transgenic line would reside in coeloconic sensilla, the arista, or sacculus (the original locations for all IR+ OSNs) (Abuin et al., 2011). When we crossed Ir25a-Gal4 to a strong reporter, we found labeling of a few Orco+ glomeruli (Figure 3—figure supplement 2D), but this was a small fraction of those labeled by the knock-in. To further examine Ir25a expression and the potential co-expression of multiple co-receptors in greater detail, we employed a combination of approaches, including single-nucleus RNAseq (snRNAseq), immunohistochemistry, and optogenetics.
 
-## Confirmation of co-receptor co-expression
+### Confirmation of co-receptor co-expression
 
 The innervation of the same glomeruli by multiple co-receptor knock-in lines challenges the previous view of segregated chemosensory receptor expression in D. melanogaster and suggests two possible explanations: either the same olfactory neurons express multiple co-receptors (co-expression) or different populations of olfactory neurons expressing different receptors converge upon the same glomeruli (co-convergence). These scenarios are not necessarily mutually exclusive. To examine these possibilities in a comprehensive, unbiased way, we analyzed snRNAseq data from adult fly antennae (McLaughlin et al., 2021). Figure 4A shows the expression levels of the four co-receptor genes in 20 transcriptomic clusters (tSNE plots [Van der Maaten and Hinton, 2008], top row), which were mapped to 24 glomerular targets in the brain (AL maps, bottom row). The proportion of cells in each cluster expressing the given co-receptor gene is indicated by the opacity of the glomerular fill color, normalized to maximum expression for that gene (see Materials and methods and Figure 4—source data 1 for details on expression normalization). The OSN classes to which these clusters map include Orco+ neurons (Figure 4A, right column, teal), Ir25a+ neurons (Figure 4A, right column, purple), Ir8a+ neurons (Figure 4A, right column, pink), and GR+neurons (Figure 4A, right column, dark blue). They also include example OSNs from all sensillar types (basiconic, intermediate, trichoid, coeloconic) as well as from the arista and sacculus. The snRNAseq analyses confirmed expanded expression of all four co-receptor genes into OSN classes not traditionally assigned to them. For example, Orco and Ir25a are expressed in cluster 1, which maps to the V glomerulus (Gr21a+/Gr63a+). Similarly, Ir8a and Ir76b are expressed in cluster 19 (VL1 glomerulus, Ir25a+), and Ir25a is expressed in multiple Orco+ clusters (such as 15/VA2, 16/DL3, and 8/DC1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig4-v1.jpg)
+
+**Figure 4.:** (A) snRNAseq of adult fly antennae (McLaughlin et al., 2021) confirms expanded expression of olfactory co-receptors. Top: tSNE plots show expression of each co-receptor in 20 decoded olfactory sensory neuron (OSN) clusters. Bottom: clusters were mapped to 24 glomeruli. Opacity of fill in each glomerulus indicates the proportion of cells in that cluster expressing the given co-receptor, normalized to total expression for that co-receptor gene (see Figure 4—source data 1). Right column: clusters color-coded according to original chemoreceptor gene family. Compass: D = dorsal; L = lateral. (B) Anti-Orco antibody staining in antennal cryosections (top) and whole-mount palps (bottom) confirms co-expression of Orco and Ir25a in the periphery (genotype: Ir25a-T2A-QF2>GFP). Right panels show cells pseudo-colored gray with specific single- or double-labeled cells indicated by colored cell markers (GFP+ only in blue, GFP+Orco+ in orange, Orco+ only in red). (C) Co-labeling experiments with various transgenic Gal4 lines driving mCD8::RFP (orange) and the Ir25a-T2A-QF2 knock-in driving GFP (green). Ir25a-T2A-QF2 labels glomeruli innervated by both antennal (top) and palpal (bottom) OSNs. (D) Verification of Ir25a expression in antennal ab3 sensilla using optogenetics. Single sensillum recordings (SSR) from ab3 Orco+ neurons in Ir25a-T2A-QF2>QUAS-CsChrimson flies. Representative traces from ab3 using 1.5 V of 627 nm LED light (red box) to activate CsChrimson. Bottom trace is control animal, which has the same genotype as the experimental animal but was not fed the required all-trans retinal cofactor (-ATR). Spikes from the ab3A and ab3B neurons are indicated by blue and green dots, respectively. Right: quantification of neuronal activity in response to light at various LED intensities (N = 7–12). These optogenetic experiments support Ir25a expression in both ab3A neurons (Or22a/b, top; corresponding to DM2 glomerulus) and ab3B neurons (Or85b, bottom; corresponding to VM5d glomerulus). Scale bars = 25 µm. See also Figure 4—figure supplement 1, Table 3, Figure 4—source data 1, Figure 4—source data 2, and Figure 4—source data 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Confirmation of Ir25a expression in ab2 and ab9 sensilla using optogenetic stimulation. CsChrimson expression is driven by Ir25a-T2A-QF2, and recordings are performed in neurons previously determined to express only Orco. In all optogenetic experiments, control animals have the same genotypes as the corresponding experimental animals but have not been fed all-trans retinal. (A) Representative single sensillum recording (SSR) traces from ab2 using 1.5 V of a 627 nm LED light (red box) to activate CsChrimson. Bottom trace is control animal, which was not fed the necessary cofactor all-trans retinal (-ATR). ab2 has two neurons: blue dots indicate A neuron spikes, while green dots indicate B neuron spikes (genotype: Ir25a-T2A-QF2; QUAS-CsChrimson). (B) Quantification of neuronal activity in response to light stimulation at various intensities (N = 7–12). Optogenetic experiments confirm Ir25a expression in ab2A (expressing Or59b, top; DM4 glomerulus) but not ab2B (expressing Or85a and Or33b, bottom; DM5 glomerulus). (C) Combination of optogenetics and fluorescent-guided SSR (Lin and Potter, 2015) to examine Ir25a expression in ab9 sensilla (genotype: Ir25a-T2A-QF2; QUAS-CsChrimson/Or67b-Gal4, 15XUAS-IVS-mcd8::GFP). Representative traces from ab9 in response to 3 V of 627 nm LED light (red box). As in (A), -ATR indicates the inactive CsChrimson control; blue dots indicate A neuron spikes, green dots indicate B neuron. (D) Quantification of activity in response to light stimulation verified that Ir25a is expressed in ab9B (Or67b, bottom; VA3 glomerulus) but not in ab9A neurons (Or69aA/aB, top; D glomerulus). N = 5.
 
 The snRNAseq analyses confirm transcript co-expression in olfactory neurons in the periphery. To demonstrate protein co-expression in OSNs, we performed anti-Orco antibody staining on Ir25a-T2A-QF2>GFP antennae and palps (Figure 4B). In the antennae, we found examples of Orco+ GFP+ double-labeled cells, as well as many cells that were either GFP+ or Orco+ (Figure 4B, top-right panel). Interestingly, in the palps the vast majority of cells were double labeled. We found a small population of palpal neurons that were only Orco+, and no neurons that were only GFP+ (Figure 4B, bottom-right panel). These results are consistent with our anti-Ir25a staining experiments in the palps (Figure 2I), which showed that most of the ~120 palpal OSNs express Ir25a protein.
 
@@ -87,11 +1149,150 @@ The snRNAseq data from the antennae and peripheral immunohistochemical experimen
 
 For some OSN classes not included in the snRNAseq dataset for which co-labeling experiments yielded ambiguous results, we employed an optogenetic approach. We used the Ir25a-T2A-QF2 knock-in to drive expression of QUAS-CsChrimson, a red-shifted channelrhodopsin (Klapoetke et al., 2014), and performed single sensillum recordings (SSR) from sensilla previously known to house only Orco+ neurons. If these neurons do express Ir25a, then stimulation with red light should induce neuronal firing. We recorded from ab3 sensilla, which have two olfactory neurons (A and B; indicated with blue and green dots, respectively, in Figure 4D). Ab3A neurons innervate DM2 and ab3B neurons innervate VM5d. Both neurons responded to pulses of 627 nm light at various intensities in a dose-dependent manner, confirming Ir25a expression in these neurons. No light-induced responses were found in control flies, which had the same genotype as experimental flies but were not fed all-trans retinal (-ATR), a necessary co-factor for channelrhodopsin function (see Materials and methods). We used similar optogenetic experiments to examine Ir25a expression in OSN classes innervating DM4 (ab2A, Or59b+) and DM5 (ab2B, Or85a/Or33b+) (Figure 4—figure supplement 1A and B), as well as D (ab9A, Or69aA/aB+) and VA3 (ab9B, Or67b+) (Figure 4—figure supplement 1C and D). These experiments indicated that Ir25a is expressed in ab2A (DM4) and ab9B (VA3) neurons, but not ab2B (DM5) or ab9A (D) neurons (see also Figure 4—source data 2 and Figure 4—source data 3). Results of these experiments are summarized in Table 3.
 
-## Identification of new OSN classes
+### Identification of new OSN classes
 
 The co-receptor knock-ins allowed us to analyze the olfactory neuron innervation patterns for all AL glomeruli. Interestingly, the Ir8a-T2A-QF2 and Ir25a-T2A-QF2 knock-ins strongly labeled a previously uncharacterized posterior region of the AL. By performing a co-labeling experiment with Ir41a-Gal4, which labels the VC5 glomerulus, we narrowed down the anatomical location of this region and ruled out VC5 as the target of these axons (Figure 5A). While both knock-ins clearly labeled VC5, they also labeled a region lateral and slightly posterior to it (Figure 5A, outline). We performed additional co-labeling experiments with Ir8a-T2A-QF2 and various Gal4 lines labeling all known posterior glomeruli to confirm that this AL region did not match the innervation regions for other previously described OSN populations (Figure 5—figure supplement 1). We recognized that this novel innervation pattern appeared similar to a portion of the recently identified Rh50+ ammonia-sensing olfactory neurons (Vulpe et al., 2021). Co-labeling experiments with Rh50-Gal4 and Ir8a-T2A-QF2 confirmed that they indeed partially overlapped (Figure 5B). We determined that these Rh50+ olfactory neurons mapped to a portion of the VM6 glomerulus, with the strongly Ir8a+ region innervating the ‘horn’ of this glomerulus. The difference in innervation patterns between Ir8a+ and Rh50+ neurons in this AL region suggested at least two different subdivisions or OSN populations within this VM6 glomerulus. In fact, in between the main body of VM6 and the Ir8a+ horn there appeared to be a third region (Figure 5B, horn outlined in white, other two regions outlined in blue). We designated these subdivisions VM6l, VM6m, and VM6v (for lateral, medial, and ventral). We coordinated the naming of this glomerulus with recent connectomics analyses of the entire fly AL (Schlegel et al., 2021). In this connectomics study, dendrites of olfactory projection neurons were found to innervate the entire region described here as VM6l, VM6m, and VM6v. No projection neurons were identified to innervate only a subdomain. As such, the new VM6 nomenclature reflects this unique subdivision of a glomerulus by OSNs but not second-order projection neurons.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig5-v1.jpg)
+
+**Figure 5.:** (A) Co-labeling experiments with Ir41a-Gal4 show that both Ir25a-T2A-QF2 and Ir8a-T2A-QF2 label the VC5 glomerulus (orange), and also a previously unidentified antennal lobe (AL) region (outline). (B) The new innervation pattern corresponds to the ‘horn’ (white outline) of the VM6 glomerulus labeled by Rh50+ neurons (orange). One portion of VM6 is strongly Ir8a+ (VM6l), while two other portions show little to no Ir8a expression (VM6m and VM6v, blue outlines). (C) Rh50-Gal4>GFP labels neurons in the sacculus (sac) and antennal coeloconic ac1 sensilla. (D) In the sacculus, all Rh50+ neurons appear to be Ir25a+ (top), and a subset are Ir8a+ (bottom, arrowheads). (E) Top: Rh50+ neurons in the sacculus do not overlap with Ir64a+ neurons. Bottom: there are two distinct populations of Ir8a+ neurons in the sacculus – those that are Ir64a+ and those that are Ir64a- (arrows). The latter likely correspond to Rh50+ neurons. (F) EM reconstructions of VM6 OSNs in a full brain volume (Dorkenwald et al., 2020) reveal three distinct subpopulations. (G) Model of OSN innervation of the VM6 region. VM6 can be subdivided into three OSN populations based on anatomical location in the periphery and chemoreceptor expression: VM6v (blue) OSNs originate in ac1, strongly (s) express Rh50 and Ir25a, and weakly (w) or infrequently express Ir8a; VM6m (orange) neurons originate in the sacculus and have a similar chemoreceptor expression profile to VM6v; VM6l (green) OSNs originate in the sacculus but strongly express Ir8a in addition to Rh50 and Ir25a. Compass: D = dorsal, L = lateral. Scale bars: 20 µm in (A–C) and (F), 10 µm in (D, E). N = 9–11 for (C–E). See also Figure 5—figure supplement 1 and Tables 3 and 4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Co-labeling experiments with Ir8a-T2A-QF2>GFP (green) and various Gal4 lines driving mCD8::RFP (orange) confirm that the outlined region does not correspond to any of the VP glomeruli nor to VM4. Scale bar: 50 µm.
+
 We sought to determine the identity of the olfactory neurons that might be innervating these three VM6 subdivisions. Rh50+ neurons can be found in two regions of the antenna: ac1 coeloconic sensilla and the sacculus (Figure 5C; Vulpe et al., 2021). The shape of the VM6v subdomain most closely matches the glomerulus described as VM6 by previous groups (e.g., Couto et al., 2005; Endo et al., 2007), which had been suggested to be innervated by coeloconic sensilla (Chai et al., 2019; Li et al., 2016). In addition, antibody staining had previously shown that Rh50+ ac1 neurons broadly co-express Ir25a but generally not Ir8a (Vulpe et al., 2021). This suggested that the other VM6 subdomains might be innervated by the Rh50+ sacculus olfactory neurons. Antibody staining in Rh50-Gal4>GFP antennae confirmed co-expression with both Ir25a protein (broad overlap) and Ir8a protein (narrow overlap) in the third chamber of the sacculus (Figure 5D; quantified in Table 4). Most sacculus neurons appear to be Ir25a+, and in contrast to the Ir8a knock-in, the three VM6 subdivisions are all strongly innervated by the Ir25a knock-in (Figure 5A). Two previously described OSN populations in the third chamber of the sacculus had been characterized to express Ir8a along with Ir64a and innervate the DP1m and DC4 glomeruli (Ai et al., 2013; Ai et al., 2010). To demonstrate that the Rh50+ Ir8a+ sacculus neurons represented a distinct olfactory neuron population, we performed immunohistochemistry experiments in Rh50-Gal4>GFP antennae with an anti-Ir64a antibody (Figure 5E, top), and in Ir64a-Gal4>GFP antennae with an anti-Ir8a antibody (Figure 5E, bottom). These experiments confirmed a new, distinct population of Ir8a+ Ir64a- cells in the sacculus.
+
+**Table 4.**
+ Co-expression of Rh50 and Ir8a in the sacculus (related to Figure 5).Antennal cryosections of Rh50-Gal4>GFP flies were stained with an anti-Ir8a antibody, and the overlap of Ir8a+ and GFP+ cells was quantified in the sacculus. 22% of Ir8a+ cells expressed Rh50, 35% of Rh50+ cells expressed Ir8a, and 16% of all cells were double labeled. N = 11.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Sample</th>
+      <th>Ir8a+ cells</th>
+      <th>GFP+ cells</th>
+      <th>Double-labeled cells</th>
+      <th>Total cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210226 a1</td>
+      <td>18</td>
+      <td>9</td>
+      <td>2</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210226 a2</td>
+      <td>22</td>
+      <td>15</td>
+      <td>4</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210226 a3</td>
+      <td>41</td>
+      <td>22</td>
+      <td>7</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210226 a4</td>
+      <td>41</td>
+      <td>14</td>
+      <td>5</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210129 a1</td>
+      <td>26</td>
+      <td>20</td>
+      <td>9</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210129 a2</td>
+      <td>32</td>
+      <td>24</td>
+      <td>7</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210129 a3</td>
+      <td>29</td>
+      <td>19</td>
+      <td>7</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210216 a1</td>
+      <td>26</td>
+      <td>21</td>
+      <td>8</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210216 a2</td>
+      <td>30</td>
+      <td>18</td>
+      <td>7</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210216 a3</td>
+      <td>34</td>
+      <td>23</td>
+      <td>8</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>Rh50-Gal4&gt;GFP</td>
+      <td>20210216 a4</td>
+      <td>34</td>
+      <td>23</td>
+      <td>9</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total across samples:</td>
+      <td>333</td>
+      <td>208</td>
+      <td>73</td>
+      <td>468</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Proportion of Ir8a+ cells that are GFP+:</td>
+      <td>Proportion of GFP+ cells that are Ir8a+:</td>
+      <td>Proportion of all cells that are double labeled:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0.22</td>
+      <td>0.35</td>
+      <td>0.16</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 The VM6l olfactory projections are difficult to identify in the hemibrain connectome (Scheffer et al., 2020) due to the medial truncation of the AL in that dataset (see Schlegel et al., 2021 for additional details). Here, we used FlyWire (Dorkenwald et al., 2020), a recent segmentation of a full adult fly brain (FAFB) (Zheng et al., 2018), to reconstruct the VM6 OSN projections in both left and right ALs. Synapse-based hierarchical clustering (syNBLAST) (Buhmann et al., 2021) of the VM6 OSNs demonstrated the anatomical segregation into three distinct subpopulations: VM6l, VM6m, and VM6v (Figure 5F). This subdivision was subsequently confirmed in a reanalysis of the VM6 glomerulus in the hemibrain dataset (Schlegel et al., 2021). Olfactory neurons innervating VM6l were strongly Ir8a+, while olfactory neurons innervating VM6m and VM6v were weakly and sparsely Ir8a+ (see Figure 3—source data 2, page 3). This pattern may be due to Ir8a expression in only one or a few cells.
 
@@ -99,11 +1300,27 @@ Based on the EM reconstructions, genetic AL analyses, and peripheral staining ex
 
 Table 3 summarizes the chemosensory receptor expression patterns for all four co-receptor knock-in lines across all OSNs, sensillar types, and glomeruli. For clarity, this summary considers the newly identified OSN populations described here separately. We find that Orco-T2A-QF2 consistently labels 45 total glomeruli out of 58 (7 more than previously reported); Ir8a-T2A-QF2 consistently labels 18 glomeruli (8 more than previously identified); Ir76b-T2A-QF2 consistently labels 15 glomeruli (11 more than previously identified); and Ir25a-T2A-QF2 consistently labels 51 glomeruli (39 more than previously identified).
 
-## Co-receptor contributions to olfactory neuron physiology
+### Co-receptor contributions to olfactory neuron physiology
 
 How might the broad, combinatorial co-expression of various chemosensory families affect olfactory neuron function? To begin to address this question, we examined olfactory responses in neuronal populations co-expressing just two of the four chemosensory receptor families (Orco and Ir25a). We chose to test eight OSN classes previously assigned to the Orco+ domain that we found to have strong or intermediate Ir25a expression – two in the antennae and six in the maxillary palps. The two antennal OSN classes are found in the same ab3 sensillum (ab3A, Or22a/b+, DM2 glomerulus; and ab3B, Or85b+, VM5d glomerulus). The six palpal OSN classes represent the entire known olfactory neuron population of the maxillary palps (pb1A, Or42a+, VM7d; pb1B, Or71a+, VC2; pb2A, Or33c/Or85e+, VC1; pb2B, Or46a+, VA7l; pb3A, Or59c+, VM7v; pb3B, Or85d+, VA4). In both the antennae and the palps, we compared the olfactory responses of OSNs to a panel of 13 odorants in three genotypes: wildtype, Ir25a2 mutant, and Orco2 mutant flies. This panel included odorants typically detected by ORs, such as esters and aromatics, and odorants typically detected by IRs, such as acids and amines (Silbering et al., 2011). In the previously accepted view of olfaction in D. melanogaster, Orco+ neurons express only Orco/OrX receptors, and all olfactory responses in the neurons can be attributed to these receptors. Thus, in an Ir25a2 mutant background, there should be no difference in olfactory responses from wildtype if either (a) Ir25a is not expressed in these neurons or (b) Ir25a is expressed, but is not playing a functional role in these neurons. In an Orco2 mutant background, there would be no trafficking of Orco/OrX receptors to the dendritic membrane, and no formation of functional ion channels (Benton et al., 2006; Larsson et al., 2004). Thus, in the traditional view of insect olfaction, Orco2 mutant neurons should have no odor-evoked activity. However, in the new co-receptor co-expression model of olfaction, if Ir25a is contributing to olfactory responses in Orco+ neurons, then mutating this co-receptor might affect the response profiles of these neurons. Similarly, Orco2 mutant neurons that co-express Ir25a might retain some odor-evoked activity.
 
 We first examined olfactory responses in palp basiconic sensilla. In the palps, three types of basiconic sensilla (pb1, pb2, and pb3) contain two neurons each (A and B) (Figure 6A), for a total of six OSN classes (Couto et al., 2005; de Bruyne et al., 1999; Fishilevich and Vosshall, 2005; Goldman et al., 2005; Ray et al., 2008; Ray et al., 2007). We found robust responses to several odorants in our panel in both the wildtype and Ir25a2 mutant flies, including odorants like 1-octen-3-ol typically considered as an OR ligand (Figure 6B), and IR ligands like pyrrolidine. Neither odor-evoked nor spontaneous activity was detected in the Orco2 mutant (Figure 6B, bottom row; see also Figure 6—figure supplement 1A). This was true of all sensilla tested in the palps. The SSR experiments in Figure 6A–D were performed at 4–8 DPE. We recently discovered that neurodegeneration of Orco2 mutant olfactory neurons occurs in the palps by ~6 DPE (Task and Potter, 2021), which could potentially confound our interpretation. We repeated the experiments in young (1–3 DPE) flies but similarly detected neither odor-evoked activity nor spontaneous activity in Orco2 mutant palpal neurons (Figure 6—figure supplement 1B). There was also no spontaneous or odor-evoked activity in an Ir25a2; Orco2 double mutant (Figure 6—figure supplement 1C). This suggests one of three possibilities: first, Orco2 mutant neurons in the palps could already be dysfunctional at this early stage, despite not yet showing cell loss, and Ir25a-dependent activity is not sufficient to maintain either baseline or stimulus-induced activity; second, Ir25a function may be Orco-dependent in these cells, or act downstream of Orco, such that loss of Orco function affects Ir25a function; third, we did not stimulate neurons with an Ir25a-dependent odorant. The latter possibility would not, however, explain why there is no spontaneous activity in these cells. Future experiments will be needed to address these possibilities. Given the lack of neuronal activity in the Orco2 mutant, we focused subsequent analyses in the palps on the two other genotypes: wildtype and Ir25a2.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig6-v1.jpg)
+
+**Figure 6.:** (A–I) Single sensillum recording (SSR) experiments were performed in three genetic backgrounds: wildtype, Ir25a2 mutant, and Orco2 mutant flies. A panel of 13 odorants was tested. In all box plots, *p<0.05, **p<0.01, and ***p<0.001. (A) Cartoon of a fly head, zooming in on a single sensillum in the palp. Each palpal sensillum (pbX) contains two neurons, A and B. An electrode is inserted into the sensillum, and neuronal activity is recorded in response to odorants. Activity of the A and B neurons can be distinguished based on their spike amplitudes (top). (B) Representative traces from recordings in palp basiconic pb1 sensilla in the three genotypes in response to 1% 1-octen-3-ol. Sensilla were identified based on responses to reference odorants (de Bruyne et al., 1999; see Materials and methods). The Orco2 mutant did not exhibit odor-evoked activity nor spontaneous activity, making it difficult to determine the identity of the recorded sensillum. Orco2 mutant sensilla are thus denoted pbX. (C) Quantification of responses to the panel of odorants in wildtype (blue; N = 5–9 flies) and Ir25a2 mutant (orange; N = 6–10 flies) pb1A neurons. Responses were higher in the Ir25a2 mutant than in the wildtype for 1-octen-3-ol and methyl salicylate, and lower in the Ir25a2 mutant for ethyl acetate. Mann–Whitney U tests indicated these differences were statistically significant: 1-octen-3-ol: MdnIr25amut = 50, Mdnwildtype = 28, U(NIr25amut = 8, Nwildtype = 5) = 0, p=0.0016; methyl salicylate: MdnIr25amut = 5, Mdnwildtype = 2, U(NIr25amut = 7, Nwildtype = 5) = 3, p=0.0177; ethyl acetate: MdnIr25amut = 63.5, Mdnwildtype = 83.5, U(NIr25amut = 8, Nwildtype = 6) = 4, p=0.008. (D) Summary of differences in responses across all six neuron classes in the palps between wildtype and Ir25a2 mutant flies. Comparisons were made using Mann–Whitney U tests. Orange indicates higher response in Ir25a2 mutant, blue indicates higher response in wildtype. Gray is no difference between genotypes, X indicates no response to the given stimulus, and N.D. is no data (strong A neuron response obscured B neuron spikes preventing quantification). In the wildtype, for one sensillum-odorant combination (pb2 and benzaldehyde), it could not be distinguished if responses arose from the A or B neuron or both (indicated by a question mark). (E) Fly head cartoon, zooming in on a single sensillum in the antenna. We recorded from antennal ab3 sensilla, each of which contains two neurons, A and B. As in the palps, responses from these neurons can be distinguished based upon their spike amplitude (top). (F) Representative traces from recordings in antennal basiconic ab3 sensilla in the three genotypes in response to 1% 1-octen-3-ol. In Orco2 mutant ab3 sensilla spontaneous activity was observed, but there was no significant odor-evoked activity. Wildtype N = 7 sensilla from five flies; Ir25a2 mutant N = 10 sensilla from five flies. (G) Quantification of responses in wildtype (blue; N = 7) and Ir25a2 mutant (orange; N = 9) ab3A neurons. Responses were significantly higher in wildtype compared to Ir25a2 mutant ab3A neurons for four odorants (Mann–Whitney U results in parentheses; all Nwildtype = 7 and NIr25amut = 9): propionic acid (Mdnwildtype = 21, MdnIr25amut = 7, U = 12.5, p=0.0441); 1-octen-3-ol (Mdnwildtype = 67, MdnIr25amut = 29, U = 1.5, p=0.0004); phenylacetaldehyde (Mdnwildtype = 10, MdnIr25amut = 3, U = 9, p=0.015); and pentyl acetate (Mdnwildtype = 118, MdnIr25amut = 77, U = 9, p=0.0164). Difference between wildtype and Ir25a2 mutant to phenylacetaldehyde is significant even with the large wildtype outlier removed (p=0.0336). (H) Summary of differences in responses in the two neuron classes in ab3 between wildtype and Ir25a2 mutant flies. Comparisons were made using Mann–Whitney U tests. Orange indicates higher response in Ir25a2 mutant, blue indicates higher response in wildtype, gray is no difference between genotypes, and X is no response to the given stimulus. One Ir25a2 mutant fly was excluded from analyses as it had high responses to the mineral oil control (40–53 Δ spikes/s), not seen in any other animal of any genotype. (I) Weak responses in Orco2 mutant flies to certain stimuli (≤10 Δ spikes/s) were occasionally detected. While there were some statistically significant differences from mineral oil control (pentyl acetate p=0.0109, propionic acid p=0.0434, ethyl acetate p=0.0434, 1,4-diaminobutane p=0.0109, p-cresol p=0.0021), these were not deemed biologically significant due to very small Δ spike values relative to zero. For more details, see Materials and methods. N = 5 flies. See also Figure 6—figure supplements 1–3 and Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Single sensillum recordings (SSR) in Orco2 mutant palpal sensilla show neither baseline nor odor-evoked activity in response to a panel of odorants in 5-day-old flies. N = 20 sensilla, four animals (three males, one female). (B) Young Orco2 mutant palpal neurons also do not have spontaneous or odor-evoked activity. (C) Ir25a2; Orco2 double mutant palpal sensilla show neither baseline nor odor-evoked activity. N = 42 sensilla from five animals (three males, two females). (D) Antennal ab3 sensilla do occasionally show baseline activity in the Orco2 mutant, but generally do not show odor-evoked activity (N = 5 flies; see also Figure 6). Gray box indicates the time of stimulus delivery. See also Figure 6—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The recent fly cell atlas (Li et al., 2021) was used to identify potential IrX tuning receptors in the palps. In situ experiments did not reveal strong expression of any of these target genes. Orco (bottom) was used as a positive control. See also Appendix 1—key resources table. Scale bars = 25 µm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A–C) Palpal single sensillum recordings (SSR) in wildtype and Ir25a2 mutant sensilla. (D) Ab3 SSR in wildtype and Ir25a2 mutant sensilla. The data from these and other recordings are represented by the blue (responses higher in wildtype) and orange (responses higher in Ir25a2 mutant) boxes in Figure 6D (pb sensilla) and Figure 6H (ab3). (A) pb1B neurons have higher responses to phenylacetaldehyde and phenethylamine in wildtype compared to Ir25a mutant sensilla (top two rows), while pb1A mutant neurons have higher responses to methyl salicylate (third row), and lower responses to ethyl acetate (fourth row). (B) pb2A wildtype neurons have higher responses to 1,4-diaminobutane (first row) and ethyl butyrate (third row) compared to Ir25a mutants. pb2B neurons have higher responses to pentyl acetate (second row) and 2,3-butanedione (fourth row) in the Ir25a mutant. (C) pb3A Ir25a mutant neurons show stronger responses to 1-octen-3-ol (top) and 2,3-butanedione (bottom), while pb3B mutant neurons show weaker responses to 2,3-butanedione (middle) compared to wildtype. (D) In ab3 sensilla, both the A and B neurons respond more strongly to propionic acid in the wildtype compared to the Ir25a mutant (top); the A neuron also has a higher response to phenylacetaldehyde in the wildtype compared to the Ir25a mutant (middle). The response to pentyl acetate (bottom) is mixed: the A neuron responds more strongly in the wildtype, but the B neuron responds more strongly in the Ir25a mutant.
 
 The response in the pb1A neuron to 1-octen-3-ol was significantly higher in the Ir25a2 mutant compared to the wildtype (Mann–Whitney U test, p=0.0016), as was the response to methyl salicylate (p=0.0177), while the response to ethyl acetate (EA) was higher in wildtype (p=0.008) (Figure 6C; see Figure 6—source data 1 for results of all statistical analyses). The differences in responses across all six OSN classes in the palps between wildtype and Ir25a2 mutant flies are summarized in Figure 6D. In each neuron class, we found 1–3 odorants whose response profiles differed between the two genotypes. However, the specific stimuli eliciting different responses, and the directionality of those responses, varied. For example, 2,3-butanedione elicited higher responses in the Ir25a2 mutant in both pb2B and pb3A neurons, but lower responses in the mutant (higher in the wildtype) in pb3B. Interestingly, when we examined a list of candidate IrX tuning receptors (Li et al., 2021) in the palps using in situs, we did not find expression (see Figure 6—figure supplement 2 and Appendix 1—key resources table). This suggests that Ir25a may not be functioning as a traditional co-receptor in Orco+ olfactory neurons in the palps (an expanded role for Ir25a beyond co-reception has previously been suggested; see Budelli et al., 2019; Chen et al., 2015).
 
@@ -111,21 +1328,264 @@ We next examined olfactory responses in antennal basiconic ab3 sensilla in wildt
 
 As in the palps, we found significant differences in the responses of both ab3A and ab3B neurons to some odorants between the two genotypes. A comparison of all ab3A responses between the wildtype and Ir25a2 mutant genotypes is shown in Figure 6G, and results from both the A and B neurons are summarized in Figure 6H (Mann–Whitney U, as in Figure 6A–C; see Figure 6—source data 1 for all analyses). In the ab3A neuron, the wildtype showed higher responses to propionic acid (p=0.0441), 1-octen-3-ol (p=0.0004), phenylacetaldehyde (p=0.015), and pentyl acetate (p=0.0164). Interestingly, two of these four odorants are typically associated with IRs (propionic acid and phenylacetaldehyde). In the ab3B neuron, only two odorants elicited significantly different responses between the wildtype and Ir25a2 mutant: propionic acid (response higher in wildtype, as with ab3A; p=0.0388), and pentyl acetate (response higher in mutant, in contrast to ab3A; p=0.0385). While responses to propionic acid are small in both ab3 neurons, they are abolished in the Ir25a2 mutant background (Kruskal–Wallis with uncorrected Dunn’s comparing odorant responses to mineral oil control; ab3A p=0.3957; ab3B p=0.5184), suggesting that propionic acid detection in ab3 may be Ir25a-dependent.
 
-## Co-receptor co-expression in other insect olfactory organs
+### Co-receptor co-expression in other insect olfactory organs
 
 To determine if co-receptor co-expression might exist in other insects besides D. melanogaster, we used RNA in situ hybridization to examine expression of Orco and Ir25a orthologues in the fly D. sechellia and in the mosquito A. coluzzii (Figure 7). D. melanogaster and D. sechellia diverged approximately 5 million years ago (Hahn et al., 2007), while the Drosophila and Anopheles lineages diverged nearly 260 million years ago (Gaunt and Miles, 2002; Figure 7A). Because co-receptor sequences are highly conserved, we could use our D. mel. Orco and Ir25a in situ probes (Figure 7B) to examine the expression of these genes in the maxillary palps of D. sechellia. We found widespread co-expression of Orco and Ir25a (63% of all cells were double labeled), consistent with our findings in D. melanogaster (Figure 7C). For A. coluzzii mosquitoes, we designed Anopheles-specific Orco and Ir25a probes, and examined co-receptor co-expression in antennae (Figure 7D) and maxillary palps (Figure 7E). We observed broad co-expression of AcOrco and AcIr25a in the maxillary palp capitate peg sensilla (47% of all cells were double labeled), and narrower co-expression in the antennae (25% double labeled). Co-expression results for all tissues examined are summarized in Figure 7F, and cell counts can be found in Table 5. These results suggest that Orco and Ir25a co-receptor co-expression extends to other Drosophilid species as well as mosquitoes (see also Ye et al., 2021; Younger et al., 2020).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig7-v1.jpg)
 
-**Figure 7.:** Orco and Ir25a are co-expressed in Drosophila sechellia and Anopheles coluzzii olfactory organs.(A) Phylogenetic tree based on the Orco sequences from the five insects shown (D. = Drosophila, A. coluzzii = Anopheles coluzzii, A. pisum = Acyrthosiphon pisum). Evolutionary history was inferred using the Maximum Likelihood method and Tamura–Nei model (Tamura and Nei, 1993). Pea aphid image A was reproduced from PLoS Biology Issue Image (2010). (B) The Drosophila melanogaster Orco in situ probe set, which covers the entire Orco coding sequence (top, magenta), was used to examine Orco expression in the maxillary palps of other Drosophila fly species. We designed a new probe set covering the most conserved portion of D. mel. Ir25a (bottom) as determined by analyzing the Ir25a sequences from multiple fly species and comparing them to the various Drosophila melanogaster Ir25a isoforms (three of which are illustrated in green). (C) Many olfactory sensory neurons (OSNs) in the Drosophila sechellia maxillary palps co-express both Orco and Ir25a, as revealed by in situ experiments (four example cells indicated with arrows). N = 5. (D) In situs in Anopheles coluzzii antennae reveal a small proportion of cells expressing both co-receptors (arrows). N = 7. (E) In situs in Anopheles coluzzii maxillary palps show many cells express both Orco and Ir25a (four examples indicated with arrows). N = 7. (F) Summary of co-expression analyses in (C–E). For each olfactory organ examined, we divided the number of Orco+ Ir25a+ double-labeled cells by the total number of cells labeled by either probe. We found that 63% of D. sec. palpal OSNs express both Orco and Ir25a (blue), 25% of A. col. antennal OSNs express both co-receptors (pink), and 47% of A. col. palpal OSNs are double labeled (orange). (C–E) are maximum intensity projections of partial z-stacks. See also Table 5, and Appendix 1—key resources table.
+**Figure 7.:** (A) Phylogenetic tree based on the Orco sequences from the five insects shown (D. = Drosophila, A. coluzzii = Anopheles coluzzii, A. pisum = Acyrthosiphon pisum). Evolutionary history was inferred using the Maximum Likelihood method and Tamura–Nei model (Tamura and Nei, 1993). Pea aphid image A was reproduced from PLoS Biology Issue Image (2010). (B) The Drosophila melanogaster Orco in situ probe set, which covers the entire Orco coding sequence (top, magenta), was used to examine Orco expression in the maxillary palps of other Drosophila fly species. We designed a new probe set covering the most conserved portion of D. mel. Ir25a (bottom) as determined by analyzing the Ir25a sequences from multiple fly species and comparing them to the various Drosophila melanogaster Ir25a isoforms (three of which are illustrated in green). (C) Many olfactory sensory neurons (OSNs) in the Drosophila sechellia maxillary palps co-express both Orco and Ir25a, as revealed by in situ experiments (four example cells indicated with arrows). N = 5. (D) In situs in Anopheles coluzzii antennae reveal a small proportion of cells expressing both co-receptors (arrows). N = 7. (E) In situs in Anopheles coluzzii maxillary palps show many cells express both Orco and Ir25a (four examples indicated with arrows). N = 7. (F) Summary of co-expression analyses in (C–E). For each olfactory organ examined, we divided the number of Orco+ Ir25a+ double-labeled cells by the total number of cells labeled by either probe. We found that 63% of D. sec. palpal OSNs express both Orco and Ir25a (blue), 25% of A. col. antennal OSNs express both co-receptors (pink), and 47% of A. col. palpal OSNs are double labeled (orange). (C–E) are maximum intensity projections of partial z-stacks. See also Table 5, and Appendix 1—key resources table.
 
-## The co-receptor co-expression map of olfaction in D. melanogaster
+**Table 5.**
+ Co-expression of Orco and Ir25a in non-melanogaster insect olfactory organs (related to Figure 7).Whole-mount palps from Drosophila sechellia flies, and whole-mount antennae and palps from Anopheles coluzzii mosquitoes, were examined using fluorescence in situ hybridization with probe sets against Orco and Ir25a. Co-expression between Orco and Ir25a co-receptors was observed in both insects, with D. sec. palps having the highest degree of co-expression (63% of cells double labeled) and A. col. antennae having the lowest (25% of cells double labeled). N = 5 for D. sec. and 7 for A. col.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Sample</th>
+      <th>Orco+ cells</th>
+      <th>Ir25a+ cells</th>
+      <th>Double-labeled cells</th>
+      <th>Total cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Drosophila sechellia</td>
+      <td>Palp 1</td>
+      <td>70</td>
+      <td>44</td>
+      <td>44</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Drosophila sechellia</td>
+      <td>Palp 2</td>
+      <td>64</td>
+      <td>48</td>
+      <td>42</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Drosophila sechellia</td>
+      <td>Palp 3</td>
+      <td>63</td>
+      <td>39</td>
+      <td>39</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Drosophila sechellia</td>
+      <td>Palp 4</td>
+      <td>78</td>
+      <td>38</td>
+      <td>35</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>Drosophila sechellia</td>
+      <td>Palp 5</td>
+      <td>86</td>
+      <td>75</td>
+      <td>74</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total across samples:</td>
+      <td>361</td>
+      <td>244</td>
+      <td>234</td>
+      <td>371</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Proportion of Orco+ cells that are Ir25a+:</td>
+      <td>Proportion of Ir25a+ cells that are Orco+:</td>
+      <td>Proportion of all cells that are double labeled:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0.65</td>
+      <td>0.96</td>
+      <td>0.63</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Antenna 1</td>
+      <td>52</td>
+      <td>17</td>
+      <td>12</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Antenna 2</td>
+      <td>47</td>
+      <td>24</td>
+      <td>17</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Antenna 3</td>
+      <td>57</td>
+      <td>20</td>
+      <td>13</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Antenna 4</td>
+      <td>50</td>
+      <td>27</td>
+      <td>14</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Antenna 5</td>
+      <td>62</td>
+      <td>30</td>
+      <td>18</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Antenna 6</td>
+      <td>53</td>
+      <td>21</td>
+      <td>17</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Antenna 7</td>
+      <td>49</td>
+      <td>26</td>
+      <td>16</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total across samples:</td>
+      <td>370</td>
+      <td>165</td>
+      <td>107</td>
+      <td>428</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Proportion of Orco+ cells that are Ir25a+:</td>
+      <td>Proportion of Ir25a+ cells that are Orco+:</td>
+      <td>Proportion of all cells that are double labeled:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0.29</td>
+      <td>0.65</td>
+      <td>0.25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Palp 1</td>
+      <td>34</td>
+      <td>30</td>
+      <td>23</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Palp 2</td>
+      <td>30</td>
+      <td>36</td>
+      <td>22</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Palp 3</td>
+      <td>26</td>
+      <td>35</td>
+      <td>19</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Palp 4</td>
+      <td>35</td>
+      <td>34</td>
+      <td>19</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Palp 5</td>
+      <td>32</td>
+      <td>39</td>
+      <td>22</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Palp 6</td>
+      <td>31</td>
+      <td>35</td>
+      <td>21</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Anopheles coluzzii</td>
+      <td>Palp 7</td>
+      <td>30</td>
+      <td>37</td>
+      <td>23</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total across samples:</td>
+      <td>218</td>
+      <td>246</td>
+      <td>149</td>
+      <td>315</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Proportion of Orco+ cells that are Ir25a+:</td>
+      <td>Proportion of Ir25a+ cells that are Orco+:</td>
+      <td>Proportion of all cells that are double labeled:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0.68</td>
+      <td>0.61</td>
+      <td>0.47</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### The co-receptor co-expression map of olfaction in D. melanogaster
 
 Co-receptor co-expression of insect chemosensory receptors suggests that multiple receptors may influence the response properties of an olfactory neuron, as we have shown in ab3 and palpal sensilla. To aid future investigations of co-receptor co-expression signaling, we synthesized our results (Table 3) into a comprehensive new map of the AL. Figure 8 summarizes the expression patterns of all the co-receptor knock-in lines and presents a new model for chemosensory receptor expression in D. melanogaster. In Figure 8A, the expression pattern of each knock-in line is presented separately (see also Figure 3—source data 1). The new AL map is updated with the recent reclassification of VP1 into three glomeruli (Marin et al., 2020) and indicates the new VM6 subdivisions. In Figure 8A, the original glomerular innervation pattern for each co-receptor is shown in green, with new innervation revealed by the T2A-QF2 knock-in lines color coded by intensity: strongly labeled glomeruli are in orange, intermediate glomeruli in yellow, and weakly labeled glomeruli are in pink. Glomeruli labeled in <50% of brains examined are designated variable (gray), and glomeruli not labeled by the given knock-in are in white. The new VM6v, VM6m, and VM6l subdivisions are labeled with gray stripes.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/72599/elife-72599-fig8-v1.jpg)
 
-**Figure 8.:** Drosophila melanogaster.(A) Summary of antennal lobe (AL) expression for all co-receptor knock-in lines (from all brains examined in Figures 3—5; Orco N = 8, Ir8a N = 15, Ir76b N = 11, Ir25a N = 15). The previously reported innervation pattern for each co-receptor is shown in green; new innervation reported here is color-coded according to strength of glomerular labeling, from strong (orange), to intermediate (yellow), to weak (pink). Glomeruli labeled in <50% of brains examined for a given knock-in line are designated variable (gray); glomeruli not labeled are white. The novel VM6 glomerular subdivisions reported here are indicated by gray stripes. (B) Overlap of chemosensory modalities in the AL. In the Venn diagram (left), IR co-receptors are color-coded in shades of purple, while Orco is in teal, as in Figure 1. Numbers indicate how many glomeruli are found in the given intersection of co-receptors out of 58 total glomeruli. Variably labeled glomeruli were excluded from these analyses. The table lists the names of the glomeruli in each section of the Venn diagram. The new glomerular subdivisions are indicated with an asterisk. (C) New view of olfaction in Drosophila. Left: in the periphery, all four co-receptors are expressed in the antenna (top), while palpal neurons express Orco and Ir25a (bottom). Middle: many different classes of olfactory sensory neurons (OSNs) express various combinations of chemosensory receptors and co-receptors. While some neurons express only IrCos (purple, #1) or Orco (teal, #2), many neurons co-express these chemoreceptors (indicated with striped fill, #3 and 4). Within the latter group, there may be OSN populations in which IRs are the dominant receptors, and OR expression is sparse (#3), and other populations where ORs are the primary receptors and IR expression is infrequent (#4). GR+ neurons (dark blue) also express Ir25a (#5, dark blue and purple striped fill), and some of these neurons additionally express Orco (#5, dark blue, purple, and teal striped fill). Question marks indicate potential instances of co-convergence of different subtypes of OSNs onto the same glomeruli. Right: a comprehensive map of the antennal lobe shows that most glomeruli are innervated by OSNs that co-express multiple chemoreceptors. Compass in (A) and (C): D = dorsal, L = lateral, P = posterior. See also Table 3 and Figure 3—source data 1 and Figure 3—source data 2.
+**Figure 8.:** (A) Summary of antennal lobe (AL) expression for all co-receptor knock-in lines (from all brains examined in Figures 3—5; Orco N = 8, Ir8a N = 15, Ir76b N = 11, Ir25a N = 15). The previously reported innervation pattern for each co-receptor is shown in green; new innervation reported here is color-coded according to strength of glomerular labeling, from strong (orange), to intermediate (yellow), to weak (pink). Glomeruli labeled in <50% of brains examined for a given knock-in line are designated variable (gray); glomeruli not labeled are white. The novel VM6 glomerular subdivisions reported here are indicated by gray stripes. (B) Overlap of chemosensory modalities in the AL. In the Venn diagram (left), IR co-receptors are color-coded in shades of purple, while Orco is in teal, as in Figure 1. Numbers indicate how many glomeruli are found in the given intersection of co-receptors out of 58 total glomeruli. Variably labeled glomeruli were excluded from these analyses. The table lists the names of the glomeruli in each section of the Venn diagram. The new glomerular subdivisions are indicated with an asterisk. (C) New view of olfaction in Drosophila. Left: in the periphery, all four co-receptors are expressed in the antenna (top), while palpal neurons express Orco and Ir25a (bottom). Middle: many different classes of olfactory sensory neurons (OSNs) express various combinations of chemosensory receptors and co-receptors. While some neurons express only IrCos (purple, #1) or Orco (teal, #2), many neurons co-express these chemoreceptors (indicated with striped fill, #3 and 4). Within the latter group, there may be OSN populations in which IRs are the dominant receptors, and OR expression is sparse (#3), and other populations where ORs are the primary receptors and IR expression is infrequent (#4). GR+ neurons (dark blue) also express Ir25a (#5, dark blue and purple striped fill), and some of these neurons additionally express Orco (#5, dark blue, purple, and teal striped fill). Question marks indicate potential instances of co-convergence of different subtypes of OSNs onto the same glomeruli. Right: a comprehensive map of the antennal lobe shows that most glomeruli are innervated by OSNs that co-express multiple chemoreceptors. Compass in (A) and (C): D = dorsal, L = lateral, P = posterior. See also Table 3 and Figure 3—source data 1 and Figure 3—source data 2.
 
 In the previous model of olfaction in Drosophila, the Orco/OR domain primarily occupied the anterior AL, while the IR domains innervated more posterior glomeruli. While the former is still, for the most part, accurate (Figure 8A, Orco), the latter is not: both Ir8a-T2A-QF2 and Ir76b-T2A-QF2 label several more anterior glomeruli (such as VA3 or VA6), and Ir25a-T2A-QF2 labels the majority of glomeruli throughout the anterior to posterior axis (Figure 8A, Ir25a). The expansion of the Ir25a+ domain is the most dramatic of the four co-receptors: previously, Ir25a+ glomeruli accounted for 21% of the AL (12/58 glomeruli) (Enjin et al., 2016; Frank et al., 2017; Marin et al., 2020; Silbering et al., 2011); the Ir25a-T2A-QF2 knock-in consistently labels 88% of the AL (51/58 glomeruli, excluding variable). This represents a greater than fourfold expansion. Similarly, the number of Ir76b+ glomeruli increased more than threefold, from 7% of the AL (4/58 glomeruli) (Silbering et al., 2011) to 26% (15/58, excluding variable). The Ir8a+ domain has nearly doubled, from 17% of the AL originally (10/58 glomeruli) (Silbering et al., 2011) to 31% (18/58 glomeruli, excluding variable). The most modest increase in reported expression is in the Orco+ domain: from 66% of the AL (38/58 glomeruli) (Couto et al., 2005; Fishilevich and Vosshall, 2005) to 78% (45/58, excluding variable).
 
@@ -157,31 +1617,31 @@ D. melanogaster often serves as a model for many other insect olfactory systems,
 
 ## Materials and methods
 
-## Key resources table
+### Key resources table
 
 See Appendices 1 and 2.
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Christopher J. Potter (cpotter@jhmi.edu).
 
-## Materials availability
+### Materials availability
 
 Fly lines generated in this study have been deposited to the Bloomington Drosophila Stock Center.
 
-## Data and code availability
+### Data and code availability
 
 The snRNAseq dataset analyzed in this paper is published in McLaughlin et al., 2021. Sequencing reads and preprocessed sequencing data are available in the NCBI Gene Expression Omnibus (GSE162121). Python code for generating figures is publicly available on GitHub (https://github.com/colleen-mclaughlin/ORN_seq/). VM6 reconstructions using FlyWire can be viewed at https://flywire.ai/#links/Task2021a/all. Raw data used to generate each figure is available at Dryad (https://doi.org/10.5061/dryad.9w0vt4bgp).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Fly husbandry
+#### Fly husbandry
 
 Fly stocks were maintained at 20–25°C on standard cornmeal-agar food. Male and female flies used for experiments were 3–11 days old, unless otherwise noted.
 
-## Fly stocks
+#### Fly stocks
 
 Fly lines used in this paper can be found in the Appendix 1—key resources table.
 
@@ -189,11 +1649,11 @@ While performing co-labeling experiments, we discovered that several OrX-Gal4 li
 
 D. sechellia flies (strain: Cousin Island, Seychelles; SKU: 14021-0248.25) were obtained from the National Drosophila Species Stock Center (Cornell College of Agriculture and Life Sciences) and reared according to our D. melanogaster protocol.
 
-## Mosquito husbandry
+### Mosquito husbandry
 
 A. gambiae mosquitoes were reared as previously described (Riabinina et al., 2016). The wildtype N’Gousso strain was a gift from the Insect Transformation Facility in Rockville, Maryland.
 
-## Generation of QUAS-CsChrimson
+### Generation of QUAS-CsChrimson
 
 The sequence of CsChrimson.Venus was PCR amplified from the genomic DNA of UAS-CsChrimson.mVenus flies (Klapoetke et al., 2014) and cloned into the 10XQUAS vector (Addgene #163629). A fly line was established through random P-element insertion. Cloning was confirmed with Sanger sequencing (Genewiz) before being sent for injection (Rainbow Transgenic Flies, Inc). Primers used for PCR amplification and In-Fusion cloning:
 
@@ -205,7 +1665,7 @@ EcoRI-SV40-REV:
 
 GCTTACGTCAGAATTCAGATCGATCCAGACATGATAAGA
 
-## Generation of HACK knock-in lines
+### Generation of HACK knock-in lines
 
 The HACK knock-in approach requires two components: a donor construct and Cas9 (Lin and Potter, 2016a). The donor includes gRNAs specific to the target gene, as well as the template for HDR-mediated insertion of T2A-QF2 into the genome (Figure 2A, middle row). This template includes ~1 kb homology arms directly up- and downstream of the gene’s stop codon flanking a cassette containing T2A-QF2 and a 3XP3-mCherry fluorescent eye marker (see Figure 2—figure supplement 1D and E and Figure 2—figure supplement 3A and B). Outside of these homology arms, the construct has two RNA polymerase III U6 promoters driving independent expression of two gRNAs specific to the region around the target gene’s stop codon (Port et al., 2014). Two gRNAs were used to increase the probability of successfully inducing double-stranded breaks in the target (Port et al., 2014). The knock-in construct replaces the target gene’s stop codon (Figure 2A, bottom row) and introduces a transcriptional stop at the end of QF2.
 
@@ -217,31 +1677,31 @@ Information on plasmid construction can be found in the ‘Method details’ sec
 
 To investigate the effect of T2A-QF2 knock-in on gene function, we performed SSR on homozygous flies for each co-receptor knock-in (Figure 2—figure supplement 2), comparing their responses to wildtype flies to panels of Orco- and Ir-dependent odorants (Abuin et al., 2011; de Bruyne et al., 2001; Lin and Potter, 2015). In ab2 basiconic sensilla, Orco-T2A-QF2 knock-in flies had slightly lower baseline activity as compared to wildtype (Figure 2—figure supplement 2A); however, there were no significant differences in odor-evoked activity between these two genotypes across all stimuli tested (Figure 2—figure supplement 2B). In ac2 coeloconic sensilla, responses of Ir8a-T2A-QF2 knock-in flies to hexanol and cadaverine were slightly lower than wildtype (Figure 2—figure supplement 2D); however, these are not typically considered Ir8a-dependent odorants. Responses of the Ir8a-T2A-QF2 knock-in to Ir8a-dependent odorants (Abuin et al., 2011) were similar to wildtype controls (example trace in Figure 2—figure supplement 2C, quantification in Figure 2—figure supplement 2D). Responses of Ir76b-T2A-QF2 knock-in ac2 neurons to phenethylamine and acetic acid differed slightly from wildtype controls (Figure 2—figure supplement 2E and F). The reasons for this are unclear. The largest difference in responses between a knock-in and wildtype were for Ir25a-T2A-QF2 (Figure 2—figure supplement 2G and H); the knock-in has significantly reduced or abolished responses to Ir25a-dependent odorants, recapitulating an Ir25a mutant phenotype (Abuin et al., 2011; Silbering et al., 2011; see also Figure 2—source data 1).
 
-## Method details
+### Method details
 
-## Plasmid construction
+#### Plasmid construction
 
 The construction of QF2X-HACK knock-in plasmids requires three steps of cloning, as previously described (Lin and Potter, 2016a). All knock-in constructs were created using the pHACK-QF2 plasmid (Addgene #80274) as the backbone. The backbone was digested with the following enzymes for cloning: MluI for the 5′ homology arms; SpeI for the 3′ homology arms; and BbsI for the gRNAs. All cloning was performed using In-Fusion Cloning (Clontech #639645). The homology arms were PCR-amplified from genomic DNA extracted from wildtype flies using the DNeasy Blood and Tissue Kit (QIAGEN #69506), while the gRNAs were PCR-amplified using the pHACK-QF2 backbone as a template, with the primers themselves containing the gRNA target sequences. All homology arms were approximately 1 kb (Orco: 5HA = 1012 bp, 3HA = 1027 bp; Ir8a: 5HA = 1027 bp, 3HA = 1079 bp; Ir76b: 5HA = 997 bp, 3HA = 956 bp; Ir25a: 5HA = 1119 bp, 3HA = 990 bp). gRNAs were selected by analyzing the region around the stop codon of each gene using an online tool (https://flycrispr.org/ Gratz et al., 2014). When possible, gRNAs were chosen to minimize potential off-target cleavage sites (zero predicted for Orco, Ir8a, and Ir76b; one predicted for Ir25a, discussed below). They were selected such that one gRNA targeted upstream of the stop codon, within the last exon of the gene; the second gRNA targeted downstream of the stop codon, within the 3′UTR; and the two gRNAs were <100 bp apart. In order to prevent the gRNAs from targeting the homology arms, three synonymous nucleotide substitutions were made in each homology arm. The final knock-in lines did not always have all three substitutions (see Figure 2—figure supplement 3D), possibly due to PCR or HDR error. Note that due to the way the primers are designed, each targeted gene loses a small portion of its native 3′UTR (Orco = 72 bp, Ir8a = 31 bp, Ir76b = 27 bp, Ir25a = 24 bp). Cloning was confirmed with Sanger sequencing (Genewiz) before being sent for injection (Rainbow Transgenic Flies, Inc). Below are the gRNAs used for each gene, with the PAM sequence in parentheses.
 
-## Primers
+#### Primers
 
 Italics = In-Fusion Cloning 15 bp overhang; bold = gRNA; lowercase = adding back restriction site; underline = synonymous substitution to prevent Cas9 targeting of donor construct.
 
-## PCR primers for cloning
+#### PCR primers for cloning
 
-## Checking for off-target effects
+### Checking for off-target effects
 
 One of the gRNAs for QF2Ir25a-HACK had one predicted potential off-target cut site in the genome, in the tetraspanin 42ej (Tsp42Ej) gene. We sequenced this locus in the Ir25a-T2A-QF2 knock-in line and compared the sequence to our wildtype lab stock. We found no evidence of indels in the knock-in line. Primers used:
 
-## HACK marker screening
+### HACK marker screening
 
 Adult flies were anesthetized on a CO2 pad and screened in one of two ways: either with a Nightsea Stereo Microscope Fluorescence Adapter with the green SFA-GR LED light source (Nightsea LLC, Lexington, MA) and viewed with a Zeiss Stemi SV6 stereo microscope; or illuminated with an X-Cite 120Q excitation light source and viewed with a Zeiss SteREO Discovery V8 microscope equipped with a ds-Red filter.
 
-## Whole-animal imaging
+### Whole-animal imaging
 
 Whole adults were anesthetized on ice before imaging. Whole larvae, pupae, or freshly dissected adult heads were affixed to slides with clear nail polish before imaging. All animals were imaged on an Olympus SZX7 microscope equipped with GFP and RFP filters. Animals were illuminated with an X-Cite Series 120Q light source. Images were acquired using a QImaging QIClick Cooled digital CCD camera and Q-Capture Pro 7 software. Multiple images were taken at different focal planes and then merged in Photoshop (CS6). Gain was adjusted in Fiji. Images appear in the following figures/panels: Figure 2B, D, F and H; Figure 2—figure supplement 1D; Figure 2—figure supplement 3A; and Figure 2—figure supplement 4. For Figure 7, D. melanogaster, D. sechellia, D. virilis, and A. coluzzii animals were immobilized with clear nail polish and imaged on a Zeiss SteREO Discovery V8 microscope. Images were acquired with a smartphone camera attached to the microscope ocular and processed in Photoshop (CS6) to remove background.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 All flies were used at 3–11 days old. Apart from the cryosection protocols and portions of the antennal whole-mount protocol, all immunostaining steps were done on a nutator. All steps involving or following the addition of fluorescently conjugated secondary antibodies were done in the dark.
 
@@ -255,7 +1715,7 @@ The cryosection protocol was adapted from Spletter et al., 2007. Fly heads were 
 
 For sacculus staining, 7- to 10-day-old flies were placed in an alignment collar. Their heads were encased in OCT (Tissue-Plus Fisher) in a silicone mold, frozen on dry ice, and snapped off. The head blocks were stored in centrifuge tubes at –80°C. A Leica cryostat was used to collect 20 µm sections of antennae. Immunohistochemical staining was carried out by fixing tissue in 4% paraformaldehyde for 10 min, followed by three 5 min washes in 1× PBS. The tissue was washed in 1× PBS containing 0.2% Triton-X (PBST) for 30 min to permeabilize the cuticle. Lastly, the tissue was washed in PBST containing 1% bovine serum albumin (BSA) to block nonspecific antibody binding. Primary antibody solution was made in PBST + 1% BSA, 200 µL was pipetted onto each slide under bridged coverslips, and slides were placed at 4°C overnight to incubate. The following day, the primary antibody was removed, and the slides were washed three times for 10 min each in PBST. Secondary antibody solution was made in PBST + 1% BSA, 200 µL was pipetted onto each slide under bridged coverslips, and left at RT in a dark box to incubate for 2 hr. After the 2 hr incubation, the slides were washed three times for 5 min each in PBST. After the last wash, the slides were allowed to dry in the dark staining box for ~30 min before being mounted in Vectashield, coverslipped, and stored at 4°C. Primary antibodies: rabbit anti-Ir25a (gift from Richard Benton, University of Lausanne, 1:100), guinea pig anti-Ir8a (gift from Richard Benton, University of Lausanne, 1:100), and rabbit anti-Ir64a (gift from Greg Suh, NYU/KAIST, 1:100). Secondary antibodies: Jackson Immuno Cy3 conjugated AffiniPure 568 goat anti-rabbit (111-165-144, 1:500) and Alexa Fluor 568 goat anti-guinea pig (A11075, 1:500).
 
-## In situ HCR
+### In situ HCR
 
 Cryosectioning for antennal in situs was performed as described above. The HCR protocol was adapted from Molecular Instruments HCR v3.0 protocol for fresh frozen or fixed frozen tissue sections (Choi et al., 2018). Slides were fixed in ice-cold 4% PFA in PBT for 15 min at 4°C, dehydrated in an ethanol series (50% EtOH, 70% EtOH, 100% EtOH, 100% EtOH, 5 min each step), and air dried for 5 min at RT. The slides were then incubated in proteinase K solution in a humidified chamber for 10 min at 37°C, rinsed twice with PBS and dried, then pre-hybridized for 10 min at 37°C in a humidified chamber. The slides were then incubated in probe solution (0.4 pmol Ir76b probe) overnight in the 37°C humidified chamber. On day 2, the slides were washed with a probe wash buffer/SSCT series (75% buffer/25% SSCT, 50% buffer/50% SSCT, 25% buffer/75% SSCT, 100% SSCT, 15 min each) at 37°C, then washed for 5 min at RT with SSCT and dried. The slides were pre-amplified for 30 min at RT in the humidified chamber while hairpins were snap cooled (6 pmol concentration). The slides were incubated in fresh amplification buffer with hairpins overnight in a dark humidified chamber at RT. On day 3, the slides were rinsed in SSCT at RT (2 × 30 min, 1 × 10 min with 1:10,000 DAPI, 1 × 5 min) and mounted in SlowFade Diamond (Thermo Fisher S36972). For the overnight steps, the slides were covered with HybriSlips (Electron Microscopy Sciences 70329-62) to prevent solution evaporation.
 
@@ -265,7 +1725,7 @@ Anopheles in situs were performed essentially as described above, with the follo
 
 For two-color in situs, we used the Molecular Instruments B2 amplifier conjugated to Alexa 647 for Orco and the B4 amplifier conjugated to Alexa 488 for Ir25a. For single-color in situs (Orco, Ir76b or tuning IrXs), we used the B2 amplifier conjugated to Alexa 647.
 
-## Confocal imaging and analysis
+### Confocal imaging and analysis
 
 Brains, VNCs, antennae, maxillary palps, and antennal cryosections were imaged on a Zeiss LSM 700 confocal microscope equipped with Fluar 10×/0.50 air M27, LCI Plan-Neofluar 25×/0.8 water Korr DIC M27, Plan-Apochromat 40×/1.3 Oil DIC M27, and C-Apochromat 63×/1.2 water Korr M27 objectives. Images were acquired at either 512 × 512 or 1024 × 1024-pixel resolution with 0.43, 0.58, 2.37, or 6.54 µm z-steps. For illustration purposes, confocal images were processed in Fiji/ImageJ to collapse Z-stacks into a single image using maximum intensity projection. Where noted, single slices or partial z projections were used as opposed to full stacks. For co-labeling experiments, Fiji was used to convert red Look-Up Tables (LUTs) to orange for a colorblind-friendly palette. Similarly, in Figure 2—figure supplement 1E, Fiji was used to convert magenta LUT to blue for clarity. For Figure 4B, Fiji was used to convert the two-channel maximum intensity projection to a gray LUT, and the cell-counting plug-in was used in separate channels to identify single- and double-labeled cells. Fiji was also used to adjust the gain in separate channels in all figures/images; no other image processing was performed on the confocal data. For Figure 8A, glomeruli were assigned to the categories strong, intermediate, and weak by visual inspection of the strength of their innervation compared to the previously reported glomeruli for each respective knock-in line. Strong glomeruli generally have similar brightness/intensity of GFP signal as most of the originally reported glomeruli for the given knock-in line.
 
@@ -275,33 +1735,33 @@ Magnification used:
 
 Note regarding Ir8a knock-in expression: in the ALs, we found that the sparse Ir8a+ expression in olfactory neurons targeting VM6m and VM6v could potentially be sexually dimorphic. Male brains generally had stronger and more frequent Ir8a+ innervation in these two glomeruli compared to female brains, as shown in Figure 3—source data 2 (see Figure 3—source data 1 for a summary of AL analyses). However, we did not find corresponding evidence for sexual dimorphism in Ir8a+ expression in the periphery. The reason for this discrepancy is currently unclear, and future work will be needed to determine whether there are functional male/female differences in Ir8a+ neurons.
 
-## Basiconic single sensillum recordings
+### Basiconic single sensillum recordings
 
 Flies were immobilized and visualized as previously described (Lin and Potter, 2015). Basiconic sensilla were identified either using fluorescent-guided SSR (for ab3 sensilla) or using the strength of the A and B neuron responses to the reference odorants 1% ethyl acetate (EA) (Sigma #270989) and 1% pentyl acetate (PA) (Sigma #109584) (for ab2 and pb1-3 sensilla) (de Bruyne et al., 1999; Lin and Potter, 2015). For example, pb1A has strong responses to both odorants, while pb3A does not respond to EA. Similarly, ab2 sensilla were distinguished from ab3 based on the A neuron responses: ab2A responds strongly to EA and weakly to PA, while ab3A neurons have the reverse response (weak EA and strong PA response). The glass recording electrode was filled with Beadle–Ephrussi Ringer’s solution (7.5 g of NaCl + 0.35 g of KCl + 0.279 g of CaCl2-2H2O in 1 L H2O). Extracellular activity was recorded by inserting the glass electrode into the shaft or base of the sensillum of 3- to 10-day-old flies (unless otherwise specified in the young Orco2 mutant experiments). A tungsten reference electrode was inserted into the fly eye. Signals were amplified 100× (USB-IDAC System; Syntech, Hilversum, the Netherlands), input into a computer via a 16-bit analog-digital converter, and analyzed offline with AUTOSPIKE software (USB-IDAC System; Syntech). The low cutoff filter setting was 50 Hz, and the high cutoff was 5 kHz. Stimuli consisted of 1000 ms air pulses passed over odorant sources. The Δ spikes/s was calculated by counting the spikes in a 1000 ms window from ~500 ms after odorant stimuli were triggered, subtracting the spikes in a 1000 ms window prior to each stimulation. For ab3 recordings from wildtype, Orco2 mutant, and Ir25a2 mutant flies, spikes were counted in a 500 ms window from the start of the response and multiplied by 2. Then, the spikes in the 1000 ms window prior to stimulation were subtracted from this to calculate the Δ spikes/s. Stimuli used: mineral oil (Sigma CAS# 8042-47-5), EA (Sigma CAS# 141-78-6), PA (Sigma CAS# 628-63-7), benzaldehyde (Sigma CAS# 100-52-7), ethyl butyrate (Sigma CAS# 105-54-4), hexanol (Sigma CAS# 111-27-3), e2-hexenal (Sigma CAS# 6728-26-3), geranyl acetate (Sigma CAS# 105-87-3), 2-heptanone (Sigma CAS# 110-43-0), 1-octen-3-ol (Sigma CAS#3391-86-4), 2,3-butanedione (Sigma CAS#431-03-8), phenylacetaldehyde (Sigma CAS# 122-78-1), phenethylamine (Sigma CAS# 64-04-0), propionic acid (Sigma CAS# 79-09-4), 1,4-diaminobutane (Sigma CAS# 110-60-1), pyrrolidine (Sigma CAS# 123-75-1), p-cresol (Sigma CAS# 106-44-5), and methyl salicylate (Sigma CAS# 119-36-8). Odorants were dissolved in mineral oil at a concentration of 1%, and 20 µL of solution was pipetted onto filter paper in a glass Pasteur pipette. Stimuli were delivered by placing the tip of the Pasteur pipette through a hole in a plastic pipette (Denville Scientific Inc, 10 mL pipette) that carried a purified continuous air stream (8.3 mL/s) directed at the antenna or maxillary palp. A solenoid valve (Syntech) diverted delivery of a 1000 ms pulse of charcoal-filtered air (5 mL/s) to the Pasteur pipette containing the odorant dissolved on filter paper. Fresh odorant pipettes were used for no more than five odorant presentations. Ir25a2 and Orco2 mutant fly lines were outcrossed into the w1118 wildtype genetic background for at least five generations. Full genotypes for ab3 fgSSR were Pin/CyO;Or22a-Gal4,15XUAS-IVS-mcd8GFP/TM6B (wildtype), Ir25a2;Or22a-Gal4,15XUAS-IVS-mcd8GFP/TM6B (Ir25a2 mutant), and Or22a-Gal4/10XUAS-IVS-mcd8GFP (attp40);Orco2 (Orco2 mutant). These stocks were made from the following Bloomington Stocks (outcrossed to the Potter lab w1118 genetic background): BDSC# 9951, 9952, 23130, 32186, 32193, and 41737.
 
-## Coeloconic single sensillum recordings
+### Coeloconic single sensillum recordings
 
 Coeloconic SSR was performed similarly as for basiconic sensilla. Three- to five-day-old female flies were wedged in the tip of a 200 µL pipette, with the antennae and half the head exposed. A tapered glass electrode was used to stabilize the antenna against a coverslip. A BX51WI microscope (Olympus) was used to visualize the prep, which was kept under a 2000 mL/min humidified and purified air stream. A borosilicate glass electrode was filled with sensillum recording solution (Kaissling and Thorson, 1980) and inserted into the eye as a reference electrode. An aluminosilicate glass electrode was filled with the same recording solution and inserted into individual sensilla. Different classes of coeloconic sensilla were identified by their known location on the antenna and confirmed with their responses to a small panel of diagnostic odorants: in wildtype flies, ac2 sensilla were identified by their strong responses to 1,4-diaminobutane and 2,3-butanedione. The absence of a strong response to ammonia was used to rule out ac1 sensilla, the absence of a hexanol response was used to rule out ac3 sensilla, and the absence of a phenethylamine response was used to rule out ac4 sensilla. In Ir25a mutant flies in which amine responses were largely abolished, ac2 and ac4 sensilla were distinguished based on anatomical location, as well as the strong response of ac2 to 2,3-butanedione and the moderate response to propanal (both absent in ac4). ac1 and ac3 sensilla were excluded similarly in the mutant and wildtype flies. No more than four sensilla per fly were recorded. Each sensillum was tested with multiple odorants, with a rest time of at least 10 s between applications. The odorants used were acetic acid (Fisher, 1%, CAS# 64-19-7), ammonium hydroxide (Fisher, 0.1%, CAS# 7664-41-7), cadaverine (Sigma-Aldrich, 1%, CAS# 462-94-2), hexanol (ACROS Organics, 0.001%, CAS# 111-27-3), 2,3-butanedione (ACROS Organics, 1%, CAS# 431-03-8), phenethylamine (ACROS Organics, 1%, CAS# 64-04-0), propanal (ACROS Organics, 1%, CAS# 123-38-6), and 1,4-diaminobutane (ACROS Organics, 1%, CAS# 110-60-1). Odorants were diluted in water or paraffin oil. Odorant cartridges were made by placing a 13 mm antibiotic assay disc (Whatman) into a Pasteur pipette, pipetting 50 µL odorant onto the disc, and closing the end with a 1 mL plastic pipette tip. Each odorant cartridge was used a maximum of four times. The tip of the cartridge was inserted into a hole in the main airflow tube, and odorants were applied at 500 mL/min for 500 ms. Delivery was controlled via LabChart Pro v8 software (ADInstruments), which directed the opening and closing of a Lee valve (02-21-08i) linked to a ValveBank 4 controller (AutoMate Scientific). Extracellular action potentials were collected with an EXT-02F amplifier (NPI) with a custom 10X head stage. Data were acquired and AC filtered (300–1700 Hz) at 10 kHz with a PowerLab 4/35 digitizer and LabChart Pro v8 software. Spikes were summed in coeloconic recordings due to their similar sizes, and they were counted over a 500 ms window, starting at 100 ms after stimulus onset.
 
-## Optogenetics
+### Optogenetics
 
 Ir25a-T2A-QF2 was crossed to QUAS-CsChrimson #11C and double balanced to establish a stable stock (Ir25a-T2A-QF2/CyO; QUAS-CsChrimson #11C/TM6B). Newly eclosed flies (age <1 day old) were transferred to fly vials containing 0.4 mM all trans-retinal in fly food (Sigma-Aldrich #R2500, dissolved in pure DMSO with stock concentration of 0.4 M). Vials with flies were kept in the dark for at least 4 days before experiments. 627 nm LED light source (1-up LED Lighting Kit, Part# ALK-1UP-EH-KIT) powered by an Arduino Uno (https://docs.arduino.cc/hardware/uno-rev3/) was used to activate CsChrimson. By setting the voltage to 2 V and the distance of the light source to 20 cm between the LED and the fly antenna, the light intensity was equivalent to 1.13 W/m2. The antenna was stimulated for 500 ms followed by 5 s of recovery period for the total recording length of 20 s (three stimulations). The identity of ab2 and ab3 sensilla were first verified with 1% EA (Sigma #270989) and 1% PA (Sigma #109584) before optogenetic experiments. Identification of ab9 sensilla was assisted by fluorescence-guided SSR (fgSSR) (Lin and Potter, 2015) using Or67b-Gal4 (BDSC #9995) recombined with 15XUAS-IVS-mCD8::GFP (BDSC #32193). The Δ spikes/s was calculated as for other basiconic SSR. For all optogenetic experiments, the control flies were of the same genotype as experimental flies but had not been fed all-trans retinal.
 
-## Single-nucleus RNA-sequencing analyses
+### Single-nucleus RNA-sequencing analyses
 
 Dataset analyzed in this paper was published in McLaughlin et al., 2021. The expression levels for the Ir co-receptors across all OSNs were lower than for Orco, even for their corresponding ‘canonical’ glomeruli. To account for these differences and facilitate comparisons, we performed within-gene normalization in Figure 4—source data 1 and used the normalized values to generate the AL maps in Figure 4A. The normalization was performed as follows: first, we determined the fraction of cells within each cluster expressing the given co-receptor (read counts per million, CPM threshold ≥3). The cluster with the highest fraction value was taken as the maximum. Then, the fraction for each cluster was divided by this maximum value. The normalized value shows the relative strength of expression within each cluster for the given co-receptor gene.
 
-## EM neuron reconstruction
+### EM neuron reconstruction
 
 VM6 OSNs (Figure 5F and G) were reconstructed in the FAFB EM volume (Zheng et al., 2018) using FlyWire (https://flywire.ai/; Dorkenwald et al., 2020). Initial candidates were selected based on either being upstream of the VM6 (previously called VC5 in Bates et al., 2020) projection neurons or based on co-fasciculation with already identified VM6 OSNs. Analyses were performed in Python using the open-source packages navis (https://github.com/schlegelp/navis) and fafbseq (https://github.com/flyconnectome/fafbseg-py). OSNs were clustered using FAFB synapse predictions (Buhmann et al., 2021) for a synapse-based NBLAST (‘syNBLAST,’ implemented in navis). The reconstructions can be viewed at https://flywire.ai/#links/Task2021a/all.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 D. melanogaster, D. sechellia, and D. virilis Orco sequences were compared using the FlyBase (https://flybase.org/) BLAST tool (reference sequences examined: XM_002038370.1, XM_032721743.1, XM_002056720.3). The A. coluzzii Orco sequence was downloaded from VectorBase (https://vectorbase.org/) (sequence reference UniProtKB/TrEMBL;Acc:A0A182LER8). The pea aphid Orco sequence was acquired from the European Nucleotide Archive (https://www.ebi.ac.uk/ena/browser/view/AQS60741) (sequence reference ENA|AQS60741|AQS60741.1). Sequences were aligned using MUSCLE in MEGA11 software. This alignment was used to generate the phylogenetic tree shown in Figure 7A. The tree with the highest log likelihood (–6037.19) was used. Initial trees for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using the Tamura–Nei model, and then selecting the topology with superior log likelihood value. The tree in Figure 7A is drawn to sale, with branch lengths measured in the number of substitutions per site (scale bar = 0.1). Codon positions included were 1st + 2nd + 3rd + Noncoding. There were a total of 1488 positions in the final dataset. Evolutionary analyses were conducted in MEGA11 (Tamura et al., 2021). The tree is rooted to the pea aphid (Acyrthosiphon pisum) outgroup, thought to represent one of the most evolutionarily ancient examples of functional Orco/Or complexes (Missbach et al., 2014; Smadja et al., 2009; Soffan et al., 2018).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Cell counting
+#### Cell counting
 
 To quantify knock-in co-expression with the corresponding antibodies (Figure 2), the 3D reconstruction software Amira (FEI, OR) was used to manually mark individual cell bodies throughout the z-stack in each channel (antibody in far red channel, knock-in in green channel), and the cell markers between channels were compared. We also used Amira for the D. sechellia palp cell counts (Figure 7C). Cells were first marked in the far red (Orco) channel, then subsequently in the green (Ir25a) channel.
 
@@ -311,7 +1771,7 @@ For Anopheles cell counts (Figure 7D and E), cells were counted in the Zeiss sof
 
 All cell count data were gathered in Excel and analyzed for percent colocalization.
 
-## Statistics
+### Statistics
 
 Statistical analyses on SSR data were done in GraphPad Prism (version 8), except for optogenetic experiments, which were analyzed in Microsoft Excel. Box plots were made using GraphPad Prism; bar graphs were made in Excel. For all analyses, significance level α = 0.05. The following analyses were performed on all SSR data (excluding optogenetics): within genotype, Kruskal–Wallis test with uncorrected Dunn’s to determine which odorant responses were significantly different from mineral oil or paraffin oil control; between genotype, Mann–Whitney U to compare responses of two genotypes to the same odorant (e.g., wildtype vs. Ir25a2 mutant, or wildtype vs. Orco-T2A-QF2 knock-in). Summary tables in Figure 6 are filled in based on the following criteria: no response means neither wildtype nor Ir25a2 mutant odor-evoked activity for given odorant was significantly different from its respective mineral oil control, nor was the difference between the genotypes statistically significant; no difference means that either wildtype or mutant or both had a significantly different odor-evoked response to the stimulus compared to mineral oil control, but the difference between the two genotypes was not statistically significant; higher response (in either wildtype or mutant) means that there was a statistically significant difference between genotypes for the given odorant. This could mean that (a) one genotype did not have a response, while the other did; (b) both genotypes had a response, and one was higher; (c) responses are different from each other, but not from their respective mineral oil controls; or (d) neural activity was inhibited by the odorant in one genotype compared to mineral oil control, and either not inhibited in the other genotype or inhibited to a lesser degree. Nonparametric tests were chosen due to small sample sizes and/or data that were not normally distributed.
 

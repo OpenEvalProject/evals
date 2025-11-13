@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Cancer cells undergo lineage switching during natural progression and in response to therapy. NKX2-1 loss in human and murine lung adenocarcinoma leads to invasive mucinous adenocarcinoma (IMA), a lung cancer subtype that exhibits gastric differentiation and harbors a distinct spectrum of driver oncogenes. In murine BRAF V600E -driven lung adenocarcinoma, NKX2-1 is required for early tumorigenesis, but dispensable for established tumor growth. NKX2-1-deficient, BRAF V600E -driven tumors resemble human IMA and exhibit a distinct response to BRAF/MEK inhibitors. Whereas BRAF/MEK inhibitors drive NKX2-1-positive tumor cells into quiescence, NKX2-1-negative cells fail to exit the cell cycle after the same therapy. BRAF/MEK inhibitors induce cell identity switching in NKX2-1-negative lung tumors within the gastric lineage, which is driven in part by WNT signaling and FoxA1/2. These data elucidate a complex, reciprocal relationship between lineage specifiers and oncogenic signaling pathways in the regulation of lung adenocarcinoma identity that is likely to impact lineage-specific therapeutic strategies.
+Cancer cells undergo lineage switching during natural progression and in response to therapy. NKX2-1 loss in human and murine lung adenocarcinoma leads to invasive mucinous adenocarcinoma (IMA), a lung cancer subtype that exhibits gastric differentiation and harbors a distinct spectrum of driver oncogenes. In murine BRAFV600E-driven lung adenocarcinoma, NKX2-1 is required for early tumorigenesis, but dispensable for established tumor growth. NKX2-1-deficient, BRAFV600E-driven tumors resemble human IMA and exhibit a distinct response to BRAF/MEK inhibitors. Whereas BRAF/MEK inhibitors drive NKX2-1-positive tumor cells into quiescence, NKX2-1-negative cells fail to exit the cell cycle after the same therapy. BRAF/MEK inhibitors induce cell identity switching in NKX2-1-negative lung tumors within the gastric lineage, which is driven in part by WNT signaling and FoxA1/2. These data elucidate a complex, reciprocal relationship between lineage specifiers and oncogenic signaling pathways in the regulation of lung adenocarcinoma identity that is likely to impact lineage-specific therapeutic strategies.
 
 ## Introduction
 
@@ -39,25 +39,65 @@ We have sought to dissect the role of NKX2-1 in Braf-mutant LUAD using a GEMM of
 
 ## Results
 
-## Activation of oncogenic BRAF in the absence of NKX2-1 from the pulmonary alveolar epithelium leads to the development of invasive mucinous adenocarcinoma
+### Activation of oncogenic BRAF in the absence of NKX2-1 from the pulmonary alveolar epithelium leads to the development of invasive mucinous adenocarcinoma
 
 To dissect the role of NKX2-1 in mutant BRAF-induced lung adenocarcinoma, we utilized two established mouse strains bearing recombinase-activatable alleles of BrafV600E. In the first mouse model, Cre-sensitive conditional alleles of BrafLSL-V600E (Dankort et al., 2007), Trp53f/f (Jonkers et al., 2001), Rosa26LSL-tdTomato (Madisen et al., 2010), and Nkx2-1f/f (Kusakabe et al., 2006) were recombined in the mouse lung epithelium upon intratracheal delivery of virus expressing Cre recombinase. Recombination of these alleles simultaneously activates BRAFV600E and tdTomato expression while eliminating p53 and NKX2-1 expression. Mice of the genotype BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/+;Rosa26LSL-tdTomato/LSL-tdTomato are hereafter referred to as BP mice and mice with the genotype BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato are hereafter referred to as BPN mice. Initial evaluation of histological (H and E) and molecular features revealed mucin production and gastrointestinal differentiation state in Nkx2-1-deficient tumors, including expression of HNF4A, PDX1, Gastrokine 1, Cathepsin E, and Galectin-4 (Figure 1A, Figure 1—figure supplement 1A). In lung tumors, NKX2-1 is required for sustained expression of pulmonary state marker genes such as those encoding the surfactant proteins (Sftpb and Sftpc Snyder et al., 2013) and the cell surface protein CD36 (Camolotto et al., 2018). Accordingly, immunohistochemical analysis showed that mucinous NKX2-1-negative tumors in BPN mice lack expression of pro-surfactant proteins B and C as well as CD36 (Figure 1—figure supplement 1B). Overall, NKX2-1-negative tumors in the BrafLSL-V600E/+ model bore a close resemblance to those previously seen in the KRASG12D GEMM and human IMA (Snyder et al., 2013).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig1-v3.jpg)
+
+**Figure 1.:** (A) Representative photomicrographs of lung neoplasia arising 8 weeks after initiation with PGK-Cre lentivirus (5 × 103 pfu/mouse). BP mice are BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/+;Rosa26LSL-tdTomato/LSL-tdTomato. BPN mice are BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato. Hematoxylin and eosin (H and E), Alcian Blue stain for mucin production, and immunohistochemistry (IHC) for NKX2-1, plus, markers of gastrointestinal differentiation. Scale bar: 100 µm. (B) Quantitation of lung tumor burden 8 weeks after initiation with PGK-Cre lentivirus (5 × 103 pfu/mouse) in indicated genotypes of mice: BP (n = 8), BPN (n = 9). *p=0.019 by Student’s t-test. (C) Long-term survival after tumor initiation with Ad5-CMV-Cre adenovirus (2.5 × 107 pfu/mouse) in mice of indicated genotypes. p<0.0001 by Log-rank test. (D) Histopathologic assessment of the percentage of tumors of indicated grade for mice enrolled in survival study (C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Histologic phenotype of lung neoplasia arising 8 weeks after initiation with PGK-Cre lentivirus (5 × 103 pfu/mouse) in BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/+;Rosa26LSL-tdTomato/LSL-tdTomato (BP) and BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato (BPN) mice. Immunostaining for markers of gastrointestinal (A) and pulmonary (B) differentiation. Scale bar: 100 µm. (C) Low-magnification images of H and Es for representative BP and BPN tumor-bearing lungs. Scale bar: 1000 µm. (D) H and E and NKX2-1 IHC of a representative high-grade BPN lung tumor. Scale bar: 100 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Graph represents mean ± S.D.
 
 Despite similar morphologic phenotypes in the BRAFV600E and KRASG12D models, Nkx2-1 deletion at tumor initiation had a profoundly distinct effect when combined with either of these oncogenes. Whereas Nkx2-1 deletion augmented tumorigenesis initiated by KRASG12D (Snyder et al., 2013), it significantly impaired the early stages of BRAFV600E-driven tumorigenesis. Nkx2-1 deletion led to a lower tumor burden 8 weeks after initiation (Figure 1B, Figure 1—figure supplement 1C) and significantly prolonged overall survival (Figure 1C). We also quantitated tumor grade to better characterize tumor progression in this study and determine the predominant tumor type at the time of euthanasia. For BP tumors, we utilized the grading criteria described in Winslow et al., 2011. Almost all tumors were grade 1–2 (average ~98% of overall tumor burden), and grade three tumors were rare (Figure 1D). As BPN tumors are morphologically distinct from BP tumors, we needed to develop a grading scheme specifically for the cellular morphologies observed in this genotype. Accordingly, we characterize endpoint BPN tumors as ‘low grade’ if they are essentially identical to BPN tumors at early timepoints: tumor cells contain abundant intracellular mucin, low nuclear to cytoplasmic ratio, and small nuclei with minimal pleomorphism (Figure 1A). In contrast, we consider BPN tumors to be ‘high grade’ if they have diminished or absent mucin production, increased nucleus to cytoplasm ratio, and increased nuclear size and pleomorphism (Figure 1—figure supplement 1D). Based on these grading criteria, we found that high-grade BPN tumors comprised a much greater proportion of the NKX2-1-negative tumor burden than low-grade BPN tumors (~74% vs. 26%) (Figure 1D). Of note, a small minority of tumor burden (~4% on average) was NKX2-1-positive, indicative of a low rate of incomplete recombination (Figure 1—figure supplement 2). Thus, in this model, loss of NKX2-1 is compatible with tumor progression to a high-grade state, despite its impairment of tumor initiation. These data suggest that BP mice succumb primarily to an abundance of low-grade tumors. In contrast, the lower initial tumor burden in BPN mice provides more time for tumors to grow and progress to a high-grade state before compromising pulmonary function.
 
 In the KRASG12D model, we previously showed that inducing loss of lineage specifiers in established neoplasms can have distinct consequences when compared to lineage specifier loss at the time of tumor initiation (Camolotto et al., 2018). Models that enable gene manipulation in established tumors may be more physiologically relevant to tumor progression than models in which all genetic perturbations are present during tumor initiation. We therefore used a dual recombinase system in the present study to assess the role of NKX2-1 in the established BRAFV600E lung adenocarcinomas. Mice harboring FlpO-recombinase-sensitive alleles of BrafFSF-V600E (Shai et al., 2015), Trp53frt/frt (Lee et al., 2012), and Rosa26FSF-CreERT2 (Schönhuber et al., 2014) were transduced with FlpO expressing adenovirus to recombine the above Flp-sensitive alleles and establish BRAFV600E-induced lung lesions. After 3 or 6 weeks of tumor growth, Nkx2-1f/f alleles underwent Cre-based recombination upon injection of mice with tamoxifen (Figure 2A). To generate NKX2-1-positive controls, a cohort of mice with the same genotype were injected with vehicle (corn oil). In contrast to vehicle controls, Nkx2-1 deletion drove transition of established tumors to invasive mucinous adenocarcinoma (IMA) (Figure 2B, Figure 2—figure supplement 2A). Collectively, these results and previous work from other labs indicate that Nkx2-1 deletion promotes a cell lineage switch in LUAD driven by either KRASG12D or BRAFV600E (Maeda et al., 2012; Snyder et al., 2013).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig2-v3.jpg)
+
+**Figure 2.:** (A–C) All mice are BrafFSF-V600E/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2. Viral FlpO-recombinase expression simultaneously activated BRAFV600E and CreERT2 and deleted Trp53 by excision of Frt sites. Three weeks post-tumor initiation, mice were injected with corn oil (as vehicle control) or with tamoxifen to recombine LoxP-sites within Nkx2-1 alleles by CreERT2 recombinase. Lungs were harvested 3 weeks thereafter. (A) Experimental scheme. (B) H and E, Alcian Blue, NKX2-1 and HNF4A staining of lung neoplasia arising 6 weeks after initiation with Ad5CMV-FlpO adenovirus (2 × 107 pfu/mouse). Scale bar: 100 µm. (C) Quantitation of tumor burden at 3 weeks (n = 4 mice), and at 6 weeks after initiation, following corn oil treatment (n = 10 mice) or tamoxifen injections (n = 8 mice). Tamoxifen administration consisted of six intraperitoneal doses over 9 days. Graphs represent mean ± S.D. p Values are not statistically significant. (D) Mice are KrasFSF-G12D/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 and were administered with corn oil (n = 6 mice) or tamoxifen (n = 6 mice) injections as described in (A). Shown is the quantitation of tumor burden at 3 weeks and at 6 weeks post-initiation. Graphs represent mean ± S.D. **p=0.0014 by Student’s t-test. (E) Survival of BrafFSF-V600E/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 mice that were treated with tamoxifen or vehicle starting at 3 weeks following tumor initiation. Tamoxifen administration consisted of six intraperitoneal doses over 9 days, followed by tamoxifen-containing chow for 1 month.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunostaining for indicated mucin/gastric markers in NKX2-1-positive and -negative LUADs. Lung tumor sections were obtained from corn oil or tamoxifen treated BrafFSF-V600E/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 mice 6 weeks post-initiation with Ad5CMV-FlpO adenovirus (2 × 107 pfu/mouse). Scale bar: 100 µm. (B, C) Quantitation of MCM2-positive cells in lung tumors at 6 weeks after initiation, and following corn oil/tamoxifen injections at 3 weeks. Lung neoplasia was initiated with Ad5CMV-FlpO adenovirus (2 × 107 pfu/mouse) in BrafFSF-V600E/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 and KrasFSF-G12D/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 mice. Graphs represent mean ± S.D. Multiple tumors in BrafFSF-V600E/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 oil (n = 7 mice); tamoxifen administered (n = 5 mice); KrasFSF-G12D/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 oil (n = 4 mice) and tamoxifen administered (n = 5 mice) were analyzed. (D) Representative images of high-grade tumors obtained from a BrafFSF-V600E/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 mouse that had received tamoxifen injections. Scale bar: 100 µm. (E) Grades for individual tumors based on criteria described for Figure 1D. Histopathologic assessment was performed for mice enrolled in survival study (Figure 2E).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Graph represents mean ± S.D.
+
 We next evaluated the effect of NKX2-1 loss on the growth of established BRAFV600E -driven tumors. At early timepoints (3 weeks after tamoxifen treatment), Nkx2-1 deletion had no significant effect on tumor burden (Figure 2C). In contrast, Nkx2-1 deletion in established KRASG12D-expressing cells at the same time point greatly enhanced tumor burden, as described previously (Figure 2D; Snyder et al., 2013; Young et al., 2011). At this same timepoint, we also compared proliferation rates using MCM2 positivity in tumors and found that depletion of NKX2-1 did not impact cell proliferation (Figure 2—figure supplement 1B,C). Long-term survival analysis revealed no significant difference between tumor-bearing mice treated with tamoxifen and controls (Figure 2E). Histopathologic analysis of the survival study revealed that control mice harbored predominantly non-mucinous NKX2-1-positive tumors, whereas tamoxifen-treated mice harbored predominantly NKX2-1-deficient tumors, many of which were high grade, further supporting the notion that NKX2-1 loss is permissive for malignant progression in BRAF-driven lung neoplasia (images and quantitation in Figure 2—figure supplement 1D,E). (A minority of tumor burden ~18% on average) was NKX2-1-positive in the survival study (Figure 2—figure supplement 2). These data show that loss of NKX2-1 in established BRAFV600E lung adenocarcinoma is tolerated but does not augment tumor growth, in contrast to NKX2-1 loss KRASG12D-driven tumors. This likely explains why KRAS mutations are enriched in IMA (relative to LUAD overall), whereas BRAF mutations are diminished in frequency, but not excluded altogether like EGFR mutations.
 
-## Loss of NKX2-1 stimulates MAPK signaling downstream of mutant BRAF
+### Loss of NKX2-1 stimulates MAPK signaling downstream of mutant BRAF
 
 We have previously shown that Nkx2-1 deletion augments ERK activity in KRASG12D-driven lung adenocarcinoma (Snyder et al., 2013), and feedback inhibition of the MAPK pathway is known to be rate-limiting for the growth of KRASG12D-driven tumors in vivo (Shaw et al., 2007). We therefore asked whether the Nkx2-1 deletion also alters MAPK activity in BRAFV600E-driven lung tumors. We initially hypothesized that pERK levels would be similar in BP and BPN tumors, thus explaining the fact that Nkx2-1 deletion does not augment BRAFV600E-driven lung tumorigenesis. Surprisingly, Nkx2-1 deletion in both the concomitant and sequential tumor models led to increased MAPK signaling downstream of oncogenic BRAF as assessed by IHC. Whereas NKX2-1-positive (BP) tumors generally exhibited weak, patchy staining for phosphorylated ERK1 and ERK2 (pERK), we observed strong pERK staining in NKX2-1-negative (BPN) tumors (Figure 3A, Figure 3—figure supplement 1A). In contrast, phosphorylated levels of MEK1/2 were similar in BP and BPN tumors, suggesting that activation of ERK1/2 in BPN tumors is largely due to regulation downstream of MEK1/2 activity (Figure 3A). Moreover, in BPN tumors, we found increased phosphorylation of p90RSK (a direct target of active ERK) and 4E-BP1 and S6 proteins - downstream targets of mTORC1, through which mTORC1 stimulates protein synthesis and cell growth (Carriere et al., 2011; Mendoza et al., 2011; Roux et al., 2007; Figure 3A,B; Figure 3—figure supplement 1B). We confirmed differences in degree of pathway activation between BP and BPN tumors by IHC quantitation (Figure 3C, Figure 3—figure supplement 1B). Therefore, BPN tumors exhibit hyperactivation of both MAPK and mTORC1 oncogenic pathways. Importantly, several of these distinguishing features observed in vivo, such as the association between low NKX2-1 and high pERK levels are conserved in vitro in primary tumor spheroid cultures from autochthonous BP and BPN tumors (Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig3-v3.jpg)
+
+**Figure 3.:** (A, B) IHC for indicated proteins in lung neoplasia present at 8 weeks post-initiation in BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/+;Rosa26LSL-tdTomato/LSL-tdTomato and BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato mice. (C) IHC quantitation of phosphoproteins in indicated tumor types (n = 2–4 mice/genotype). Each dot represents one tumor. Error bars indicate mean ± S.D. ****p<0.0001, ***p<0.001, ns = not significant by Mann-Whitney test. (D) Representative staining of phospho-ERK in human non-mucinous (NKX2-1-positive, n = 51) and mucinous (NKX2-1-negative, n = 17) lung tumors. Scale bar: 500 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) IHC for indicated phospho-proteins in NKX2-1-positive and -negative LUADs. Lung tumor sections were obtained from corn oil or tamoxifen-treated BrafFSF-V600E/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 mice 6 weeks post-initiation with Ad5CMV-FlpO. (B) IHC quantitation of phosphoproteins in indicated tumor types. Error bars indicate mean ± S.D. ****p<0.0001, ***p<0.001, *p<0.05 by Mann-Whitney test. At least 10 tumors across 2–3 mice were analyzed. (C) Long-term 3D cultures of primary mouse LUAD cells isolated from BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/+;Rosa26LSL-tdTomato/LSL-tdTomato (BP) and BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato (BPN) mice 8 weeks post-initiation. Shown are representative IHC photomicrographs. Scale bar: 100 µm. (D) Quantitation of phospho-ERK levels in human lung tumors relative to NKX2-1 expression/histologic subtype.
+
 Finally, we performed IHC for pERK on a panel of mucinous (n = 17, see Materials and methods for inclusion criteria) and NKX2-1-positive primary human lung adenocarcinomas (n = 51). Strong pERK staining was detectable in the majority of mucinous tumors (14/17). Among positive cases, seven tumors exhibited diffuse staining (>90% of tumor cells positive), and another seven exhibited partial positivity (20–90% of tumor cells positive). In contrast, NKX2-1-positive LUAD showed a trend toward lower pERK staining than the mucinous adenocarcinomas. Only 20% of NKX2-1-positive tumors were diffusely positive (vs. 41% of mucinous tumors), and 35% of NKX2-1-positive tumors were negative for pERK (vs. 18% of mucinous tumors). Quantitation and representative pictures are shown in Figure 3D, Figure 3—figure supplement 1D. The ERK phosphorylation site is more labile than epitopes recognized by antibodies that detect total protein levels. Therefore, staining patterns likely reflect both biologic heterogeneity and variable processing of clinical specimens. Nevertheless, these data show that the high levels of pERK in IMA mouse models can be observed in many cases of human IMA.
 
-## Response of NKX2-1-positive and NKX2-1-negative tumors to RAF/MEK inhibition
+### Response of NKX2-1-positive and NKX2-1-negative tumors to RAF/MEK inhibition
 
 The increase in MAPK activity we observed in both in vivo and in vitro models led us to ask whether NKX2-1 status influenced response to MAPK pathway inhibition. To investigate this, we directly compared the effect of RAF/MEK inhibitors on the growth and proliferation of autochthonous BP and BPN lung tumors. We chose dual inhibition of MEK and BRAF because this combination is the standard of care for BRAFV600E-mutant human lung adenocarcinoma (Planchard et al., 2016) and because in other genetically engineered mouse models driven by BRAFV600E example for thyroid cancer (McFadden et al., 2014), the combination of the two inhibitors is more effective than either one alone at inhibiting the MAPK pathway in vivo. We found that administration of BRAFV600E inhibitor (PLX4720) in combination with MEK inhibitor (PD0325901) effectively suppressed ERK phosphorylation in lung tumors of both genotypes (Figure 4A). Combined BRAF/MEK inhibition led to a dramatically lower tumor burden in both BP and BPN mice when assessed after 2 weeks (Figure 4B) and 4 weeks (Figure 4C) of MAPKi treatment. The decrease in tumor burden in BPN mice was greater by two-fold compared to that in BP mice, suggesting that BPN tumors were overall more sensitive to MAPK inhibition. In fact, we noted that residual MAPK-inhibited BPN tumors resembled hyperplasia induced by Nkx2-1 deletion alone with respect to both morphology and low pERK levels (Figure 4A). NKX2-1-positive, BRAFV600E-driven lung tumors have been shown to regress when treated with MEK inhibitor, but regrow rapidly after drug cessation (Trejo et al., 2012). We therefore asked whether drug-treated residual BP and BPN cells retain tumorigenic potential. Histopathologic analysis of BP and BPN tumors treated for 4 weeks with BRAF/MEK inhibitor followed by drug removal showed that the residual cells readily grew back over the course of 1–4 weeks, adopting a morphology similar to untreated tumors (Figure 4—figure supplement 1A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig4-v3.jpg)
+
+**Figure 4.:** (A) Representative H and E and phospho-ERK1/2 immunostaining photomicrographs of paraffin-embedded lung sections from BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/+;Rosa26LSL-tdTomato/LSL-tdTomato and BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato mice that were treated with control chow (BP C/BPN C) or chow containing PLX4720 (200 mg/kg) and PD0325901 (7 mg/kg) inhibitors (BP Tx/BPN Tx) for 2 weeks starting at 6 weeks post-tumor initiation with PGK-Cre lentivirus (5 × 103 pfu/mouse). Scale bar: 100 µm. (B, C) Quantitation of tumor burden in BP and BPN mice that were fed control chow or chow containing MAPK inhibitors starting at 6 weeks post-tumor initiation with PGK-Cre lentivirus (5 × 103 pfu/mouse). Graphs represent mean ± S.D. (B) Chow treatment lasted 2 weeks and lungs were harvested at the 8-week timepoint. BP C (n = 8), BP Tx (n = 8), BPN C (n = 9), BPN Tx (n = 9). *p<0.05 by Student’s t-test. Numbers indicated above graphs represent the fold reduction in tumor burden upon inhibitor-chow administration. (C) Chow treatment lasted 4 weeks and lungs were harvested at the 10-week timepoint. BP C (n = 6), BP Tx (n = 9), BPN C (n = 8), BPN Tx (n = 8). **p<0.01, ***p<0.001 by Student’s t-test. Numbers indicated above graphs represent the fold reduction in tumor burden with inhibitor-chow administration. (D) Global gene expression analyses were performed on RNAs from FACS-sorted tdTomato+ BP C (n = 5), BP Tx (n = 3), BPN C (n = 4), and BPN Tx (n = 5) murine lung tumor cells isolated at 7 weeks following initiation with Ad5-Spc-Cre adenovirus (5 × 108 pfu/mouse for BP and 8 × 108 pfu/mouse for BPN mice). Control and MAPK-inhibitor chow treatments were given for 1 week at 6 weeks post-adenoviral instillation. Shown is the principal-component analysis (PCA) plot of the top 500 most variable genes showing that the four experimental groups of lung tumors, BP C, BP Tx, BPN C, and BPN Tx, had distinct global patterns of gene expression. (E) UMAP plots showing relatedness of high-quality, tumor cell scRNA-seq profiles from BPN control (n = 2) and BPN MAPKi-treated (n = 2) mice. Tumor cluster designations are indicated (left). Control and treated cells indicated (middle). Nkx2-1 expression in scRNA-seq data indicating that clusters 4–8 represent incomplete recombinants (right). Single tumor cells were obtained by FACS-sorting tdTomato+ cells isolated at 7 weeks following initiation with Ad5-Spc-Cre adenovirus (8 × 108 pfu/mouse). Control and MAPK-inhibitor chow treatments were given for 1 week at 6 weeks post- adenoviral instillation. (F) Beeswarm plots of single cell sequencing data showing expression levels of Nkx2-1, Sftpc and Aurkb transcripts in tumor clusters 1–8.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative histology of BP and BPN tumors after 4 weeks of combined BRAFV600E and MEK inhibitor chow treatment, as well as at different timepoints following drug withdrawal demonstrating rapid tumor relapse. (B) Graphs comparing absolute expression levels of direct NKX2-1 targets (Sftpc and Sftpb) as well as the gastrointestinal marker Pdx1 in BP (n = 8) and BPN (n = 9) tumors, data obtained from RNA sequencing from whole tumors. (C) Whole-tumor RNA-seq analyses of BP and BPN tumors via Illumina Correlation Engine indicating that HNF4A-binding site geneset three becomes significantly enriched upon loss of Nkx2-1. (D) Volcano plots of whole-tumor RNA sequencing data from control and MAPK inhibitor-treated BP tumors (left) and BPN tumors (right) indicating differentially expressed genes (EdgeR) (see also Supplementary file 2, 3). Select highly differentially expressed genes are highlighted. (E) Left- UMAP visualization of single cell transcriptome relatedness indicating 14 distinct clusters. Right- Relative expression of stromal marker genes and feature complexity score used in selecting high complexity tumor clusters that lack stromal marker gene expression for further analysis (red box). * Lower than average complexity. Note that the cluster ID labels for tumor cell clusters used in Figure 4E (post-stromal cell exclusion) and E are different. (F) Sashimi plots visualizing raw RNA-seq densities along Nkx2-1 exons and splice junction for Nkx2-1-positive and Nkx2-1-negative single tumor cells from their alignment data. Exon 1a-2 junctions and exon two reads are only detected in cells expressing Nkx2-1 to variable degree indicating that these are incomplete recombinants (BP cells). (G) UMAP visualization of Hmga2 expression in tumor clusters 1–8. (H) Quantitation of MAPK activation levels in single cell RNA sequencing data using Mek18 transcriptional signature (Dry et al., 2010). BP indicates cells from clusters 4–8; BPN indicates cells from clusters 1–3 (see Figure 4E, F). (C) Control, Tx = BRAFi/MEKi treatment.
 
 To gain insights into the mechanisms of drug response in each model, we performed transcriptome profiling by sequencing RNA from whole tumors and single-cell RNA sequencing. Using the Cre-activated tdTomato reporter (Madisen et al., 2010) in the BrafLSL-V600E/+ model, we enriched tdTomato-positive tumor cells via fluorescence activated cell sorting (FACS). Tumor cells were isolated from mice of both genotypes (BP and BPN) that had been placed on BRAF/MEK inhibitor-diet or control chow for one week.
 
@@ -67,9 +107,17 @@ Despite these differences, NKX2-1 targets (e.g. Sftpc) were detected at higher l
 
 We characterized the transcriptome of 5065 control and 5563 MAPKi drug-treated single BPN cells (Figure 4—figure supplement 1E). In our initial analysis, rare non-tumor cells clustered separately from tumor cells, and their identity was further validated by the expression of well-known stromal markers including Vim, Ptprc, Trpm5, Pecam1, Mgp, Cd79a, Itgam, Adgre1, Cd3g, and Marco. Filtering against contaminating stromal, endothelial, hematopoietic, and low-quality cells reduced the dataset to a total of 6807 high-quality tumor cells for further analysis (Figure 4—figure supplement 1E). We visualized these cells in reduced dimensionality using UMAPs and identified eight major tumor clusters (Figure 4E, Supplementary file 3). The majority of these cells (70%) fell into three NKX2-1-low clusters (1-3) and expressed multiple gastric markers (Figure 4F, Supplementary file 3, 4). Examination of bam files confirmed that the rare Nkx2-1 transcript counts in Clusters 1–3 correspond to residual flanking sequences from complete recombinants at the Nkx2-1 locus and did not contain reads mapping to splice junctions of Cre-deleted exons in the Nkx2-1 gene (Figure 4—figure supplement 1F). Cluster three exhibited high expression of Aurkb, Plk1, and other genes that suggest that these cells are in G2/M phase (Figure 4F and see Figure 5 for more detail). Cluster 1 and cluster 2 overwhelmingly contain cells from control and drug-treated mice, respectively.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig5-v3.jpg)
+
+**Figure 5.:** (A, B) Immunostaining for and quantitation of the proliferation marker MCM2 in tumors from BP and BPN mice at 8 weeks post-initiation. Control or MAPK-inhibitor infused chow feeding started at 6 weeks and was maintained for 2 weeks. BP C (25 tumors from four mice), BP Tx (15 tumors from three mice), BPN C (20 tumors from three mice), BPN Tx (20 tumors from three mice). Scale bar: 100 µm. Graphs represent mean ± S.D. ****p<0.0001 by Student’s t-test. (C, D) Lists of the top-scoring Gene Ontology pathway terms of differentially expressed genes between control- and MAPKi drug-chow-treated BP (C) or BPN (D) tumors, as determined by Illumina Correlation Engine analyses of whole-tumor RNA-seq data. UP = enriched in control relative to treated samples. (E) Analysis of cell cycle score in single-cell RNA sequencing data using Seurat package. Utilized cell cycle genes as defined by Mizuno et al., 2009. ****p<0.0001 by Wilcox test. BP C = clusters 4, 5, 8; BP Tx = clusters 6, 7; BPN C = clusters 1, 3control; BPN Tx = clusters 2, 3treated (see Figure 4E). (F) Diffusion map of cell cycle phase signatures in scRNA-seq data showing coherent enrichment for phase specific signatures at specific graphical regions. > 80% of cells are disturbed in the box that correlates with G0 and G1 signatures and along which we fit a principle curve to model likely depth of quiescence (Q-depth). (G) Positioning of scRNA-seq profiles from the indicated cell clusters along the Q-depth curve. BPN control = cluster 1; BPN treated = cluster 2; BP control = cluster 4+5; BP treated = cluster 6+7. (H) Graph comparing absolute expression levels of Ccnd1 and Ccnd2, data obtained from RNA sequencing of whole tumors. (I) Quantitation of phospho-RB-positive tumor cells in the indicated tumor types at 8 weeks post-initiation. Control or MAPK-inhibitor chow feeding started at 6 weeks and was maintained for 2 weeks. Graphs represent mean ± S.D. Multiple lesions per mouse, for five mice in each cohort, were analyzed. ***p<0.001 by Student’s t-test. (J) Effect of knocking down CyclinD2 on MCM2 marker expression. A BPN organoid line was stably transduced with control or Ccnd2-targeting shRNA constructs followed by subcutaneous transplantation and MAPK-inhibitor chow treatment after 8 weeks of growth. Subcutaneous tumors were harvested after 1 month of drug treatment. MCM2 quantitation was confined to glandular structures that most closely resemble autochthonous BPN tumors. Graphs are mean ± S.D. ***p<0.001, **p<0.01 by Student’s t-test. N = 5 mice per cohort.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Detection of proliferation markers, BrdU incorporation and phospho-histone H3 Ser10, by IHCs in neoplasia arising 8 weeks after tumor initiation with PGK-Cre lentivirus (5 × 103 pfu/mouse). At the 6 week timepoint, BP and BPN mice were given control or PLX4720 plus PD0325901 inhibitor chow for 2 weeks. Scale bar: 100 µm. (B) Quantitation of BrdU-positive tumor cells from mice treated as in (A). Graphs represent mean ± S.D. BP C (34 tumors from three mice), BP Tx (23 tumors from three mice), BPN C (39 tumors from three mice), BPN Tx (40 tumors from three mice) were analyzed. ****p<0.0001 by Student’s t-test. (C) Quantitation of phospho-HH3-positive tumor cells from mice treated as in (A). Graphs represent mean ± S.D. BP C (23 tumors from two mice), BP Tx (24 tumors from two mice), BPN C (34 tumors from two mice), BPN Tx (34 tumors from two mice) were analyzed. **p=0.0058 by Student’s t-test. (D) Graphs showing how the trajectory for Q-depth was set. Top is a flattened version of the diffusion map based on arithmetic combination of the first three diffusion components with a principal curve to the resulting two dimensional graph and bottom plot is a pseudotime trajectory based on lambda values of the principal curve referred to here as Quiescence depth and shown on the x-axis. (E) Relative abundance of Ccnd1 and Ccnd2 transcripts in scRNA-seq data on a cell-by-cell basis for clusters 1 and 2. (F, G) Representative IHC images for Cyclin D1 and Cyclin D2 immunostaining on tumors from BP and BPN mice at 8 weeks post-initiation. Control or MAPK-inhibitor chow was administered for 2 weeks. Scale bar: 100 µm. (H) Efficiency of CyclinD2 knockdown by control versus Ccnd2-targeting short hairpins in stably transduced 988 organoids as assessed by qRT-PCR. ****p<0.0001, ***p<0.001, ns = not significant by Student’s t-test.
+
 In contrast, the remaining cells (30%) exhibited frequent and abundant Nkx2-1 expression, including splicing from Cre-target exons indicating a failure to recombine (Figure 4F, Figure 4—figure supplement 1F). These cells also frequently expressed the NKX2-1 target Sftpc (Figure 4F). We interpret these cells, which fall into clusters 4–8, to be the incomplete recombinants that we have directly observed microscopically and inferred from RNA-seq data from whole tumors. The variable levels of Nkx2-1 and Sftpc in clusters 4–8 (Figure 4F) suggests that some of these cells represent higher grade tumor cells that stochastically lose NKX2-1 activity and expression, as has been documented in KRASG12D-driven GEMMs (Snyder et al., 2013; Winslow et al., 2011). For example, we noted that cluster 5 cells express high levels of the embryonic marker Hmga2, a previously characterized marker of high-grade tumor cells (Figure 4—figure supplement 1G). Similar to cluster 3, cluster 8 exhibited high expression of Aurkb, Plk1, and other genes that suggest that these NKX2-1-positive tumor cells are in G2/M phase. In contrast to cluster 3, we note that cluster 8 is comprised almost exclusively of untreated cells, consistent with cell cycle exit of MAPKi-treated cells that retain NKX2-1 (Figure 4E,F and see Figure 5 for further analysis). We quantified differences in MAPK pathway activation between BP and BPN tumors in our single-cell sequencing data by applying the MEK activity transcriptional signature published in Dry et al., 2010. This analysis substantiates our conclusions that BPN tumors display higher MAPK signaling than BP tumors (Figure 4—figure supplement 1H). Furthermore, using the Dry et al. signature, we find that RAF/MEK inhibition reduces pathway output in both genotypes (Figure 4—figure supplement 1H).
 
-## NKX2-1 status influences cell cycle response to RAF/MEK inhibition
+### NKX2-1 status influences cell cycle response to RAF/MEK inhibition
 
 The MAPK pathway regulates proliferation by multiple mechanisms, including activating expression of the D-type cyclins, which can drive cells out of quiescence and into the cell division cycle (Lavoie et al., 1996; Tuveson et al., 2004). We therefore evaluated the impact of MAPKi drug treatment on cell cycle status of BP and BPN lung tumors using IHC for cell cycle markers as well as analysis of RNA-seq datasets. We first evaluated drug response by IHC for MCM2, a helicase detectable throughout the cell cycle but not in quiescence (G0). In BP tumors, 2 weeks of MAPKi treatment led to a significant decline in the percentage of MCM2-positive cells (Figure 5A,B). Additional IHC analysis showed a decline in the percentage of BP cells positive for BrdU incorporation and phospho-histone H3 (pHH3, M phase marker) (Figure 5—figure supplement 1A–C). Taken together, these data show that MAPKi treatment of BP tumors blocks proliferation and induces cell cycle exit, thereby increasing the proportion of cells in quiescence.
 
@@ -87,9 +135,21 @@ To evaluate specifically the potential role of Cyclin D2 in the cell cycle respo
 
 Taken together, these data show that NKX2-1 status has a profound effect on the cell cycle response of BRAFV600E-driven lung tumors to targeted therapy. We propose that Cyclin D2 helps maintain CDK4/6 activity and RB phosphorylation in MAPKi-treated BPN tumors, thus preventing cell cycle exit. The inability of residual BPN cells to exit the cell cycle suggests that distinct therapeutic strategies may be needed to eliminate BP versus BPN tumor cells after MAPK inhibition.
 
-## MAPK pathway regulates identity of NKX2-1-negative mucinous adenocarcinoma within the gastric lineage
+### MAPK pathway regulates identity of NKX2-1-negative mucinous adenocarcinoma within the gastric lineage
 
 Further analysis of gene expression changes in BPN tumors revealed surprising switch-like changes in the expression of lineage markers associated with specific gastric cell types. BPN tumor cells normally express high levels of transcripts that mark surface mucous cells in the stomach, such as Muc5ac and Gkn1. We find that these surface mucous cell markers decline significantly upon MAPK pathway inhibition (Figure 6A). In parallel, two of the most highly upregulated genes in RAF/MEK inhibitor-treated BPN tumor cells were Pgc and Cym (Figure 6A, Figure 4—figure supplement 1D), which encode digestive enzymes normally expressed in chief cells found at the base of the stomach gland (Han et al., 2019; Leushacke et al., 2017; McCracken et al., 2017). Additional markers of murine gastric chief cells including Pga5 and Clps were also induced by MAPK inhibition in these tumors (Figure 6A). Cym is expressed predominantly during the neonatal phase of mouse stomach development (Chen et al., 2001; Fernandez Vallone et al., 2016), suggesting that these MAPKi-treated tumor cells may adopt an immature chief cell-like phenotype. MAPK inhibition in NKX2-1-negative tumor cells was also associated with induction of several markers of chemosensory tuft cells, including the lineage specifier Pou2f3 (Kaji and Kaunitz, 2017) as well as Gfi1b and Gnat3 (Figure 6A). We next utilized gene set enrichment analysis (GSEA) to compare the transcriptome of drug treated BPN tumors to published/curated gene expression datasets for gastric epithelial cell types and tuft cells (Haber et al., 2017; Leushacke et al., 2017; Montoro et al., 2018; Ting and von Moltke, 2019; Zhang et al., 2019; Supplementary file 7, 8). GSEA showed that signatures of both Lgr5-expressing gastric chief cells as well as tuft cells were significantly enriched in MAPK-inhibited BPN cells (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig6-v3.jpg)
+
+**Figure 6.:** (A) Transcriptome analysis comparing control BPN cells with MAPKi-treated BPN tumor cells. Heatmap depicts gastric surface mucous cell markers whose expression diminished versus gastric chief cell or tuft cell markers whose expression increased in MAPK-inhibitor-treated BPN cells relative to untreated. adjP <0.05 for each comparison. RNA-seq data was derived from tdTomato-expressing tumor cells FACS-sorted from BPN mice. Six weeks after tumor initiation, mice were treated for 1 week with control chow (n = 4) or chow containing BRAFV600E inhibitor plus MEK inhibitor (n = 5). (B) GSEA against chief and tuft cell signatures. (C) Violin plots of single-cell sequencing data showing expression levels of Gkn1, Tff1, Tff2, Cym, Pgc, Pga5, and Pou2f3 transcripts in BPN tumor clusters 1–3 and highlighting key drug-mediated cell-identity changes. (D) IHC for a gastric chief cell marker (Pepsinogen C) and a tuft cell marker (POU2F3) on LUAD sections derived 7 weeks following tumor initiation with PGK-Cre lentivirus (5 × 103 pfu/mouse). At 6 weeks, BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/+;Rosa26LSL-tdTomato/LSL-tdTomato and BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato mice were given control or MAPK-inhibitor chow for 1 week. Also shown are sections of normal stomach epithelium as positive controls. Note that in hyperplasia that arise from Nkx2-1 deletion in distal lung without concomitant oncogenic activation also upregulate these lineage-restricted markers. Nkx2-1f/f mice were infected with Ad5-Spc-Cre (109 pfu/mouse). Lungs were harvested 16 weeks later. Scale bar: 100 µm. (E) Chief cell markers are rapidly induced in tumor organoids treated with 50 nM Cobimetinib. qRT-PCR analysis of chief cell markers Cym and Pgc on RNA isolated from drug/DMSO-treated organoids for the indicated times. Data are mean ± S.D. ****p<0.0001, ***p<0.001, **p<0.01, ns = not significant by Student’s t-test. A representative experiment of three is shown. Bottom plot: Measurement of viability in organoid cultures treated with vehicle or Cobimetinib using 3D CellTiter-Glo Luminescent cell viability assay at the indicated timepoints. Data are mean ± S.D. A representative experiment of three is shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) IHC for detection of the surface neck mucous marker, GKN1, and Alcian Blue staining in control BPNs and BPN tumors that were treated with drug chow for 2 weeks. Scale bar: 100 µm. (B) IHC for the tuft cell marker, POU2F3, in human non-mucinous lung adenocarcinoma and IMA tumors. Scale bar: 100 µm. (C) Percentage of NKX2-1-positive and NKX2-1-negative human lung adenocarcinomas that contain POU2F3-positive tumor cells. (D) Immunostaining for tdTomato on BPN and KPN organoid FFPE sections indicating that primary spheroid cultures contain only tumor-derived epithelial cells. (E-G) qRT-PCR determination of the expression levels of select stomach epithelium lineage markers in multiple lung tumor organoid lines. Spheroid cultures were established from BrafLSL-V600E/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato mice (for BPN lines: 988, 989, 1242 and 1243), or for the KPN lines from KrasLSL-G12D/+;Trp53f/f;Nkx2-1f/f;Rosa26LSL-tdTomato/LSL-tdTomato mice (for 1268), and from tamoxifen-treated KrasFSF-G12D/+;Trp53frt/frt;Nkx2-1f/f;Rosa26FSF-CreERT2/FSF-CreERT2 mice (for 577). Spheroids were subsequently cultured long term in 50% L-WRN conditioned media. For experiments, organoids were seeded (day 0) and allowed to recover overnight in the absence of DMSO/inhibitors. In each case, data are presented as fold change (mean + S.D.) compared with DMSO control values. (E, F) RNA derived from indicated BPN and KPN organoid lines that had been treated with DMSO or Cobimetinib for 72 hr. (E) qRT-PCR for detection of markers of gastric gland base cell types. (F) qRT-PCR for detection of tuft cell-specific transcripts. Data shown for each marker are representative of least three independent experiments. (G) Chief cell marker, Cym, is significantly induced in organoids treated with additional MAPK-pathway inhibitors for 24 hr: GDC-0994 (ERKi), PD0325901 (MEKi), and PLX4720 (BRAFi). Data is representative of three independent experiments. (E–G) ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns = not significant by Student’s t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** IHC for indicated markers, plus Alcian Blue staining, on BPN tumors from mice treated with BRAF/MEK inhibitor chow for 1 month. Tumors were harvested 2 weeks after drug cessation. Scale bar: 100 µm.
 
 A shift in expression of gastric lineage markers was also evident at the single-cell level. Our single-cell transcriptomics confirmed that gastric surface mucous markers like Gkn1 and Tff1 are downregulated in NKX2-1-negative cells by BRAF/MEK inhibitors (Figure 6C), whereas chief markers were induced. Many BRAF/MEK inhibitor-treated BPN cells have higher levels of chief markers (Cym, Pgc, Pga5) than the control BPN cells. This suggests true induction of transcription rather than simple selection for a pre-existing population of chief-high cells (Figure 6C). In contrast, MAPK inhibition appears to increase the fraction of cells positive for the tuft cell marker Pou2f3, rather than the absolute levels of transcript per cell (though expression of this marker is low and somewhat sporadically detected in our single cell RNA-seq data) (Figure 6C). Tff2 transcripts, which mark progenitors located in the isthmus of the normal stomach (Quante et al., 2010), were also increased in BPN cells after MAPKi treatment (Figure 6C).
 
@@ -99,11 +159,23 @@ We also examined POU2F3 by IHC in a panel of primary human LUAD tissues (Figure 
 
 We next asked whether regulation of gastric lineage by the MAPK pathway is a general feature of IMA, or limited to BRAFV600E-driven tumors. To address this question, we generated organoids from autochthonous IMA models driven by KRASG12D (KPN) or BRAFV600E (BPN). IHC for the tdTomato reporter on sections of primary organoid cultures (Figure 6—figure supplement 1D) showed that all cultures examined are ~90–100% positive for tdTomato. Rare tdTomato-negative organoids have an exclusively epithelial morphology, and thus are unlikely to represent stromal cell contamination in these cultures. We treated BPN and KPN organoids with a MEK inhibitor (Cobimetinib) for 3 days and found that this was sufficient to stimulate the expression of chief (Cym, Gif, Pgc) and tuft (Pou2f3 and Gfi1b) cell markers in both KPN and BPN organoid cultures (Figure 6—figure supplement 1E,F). Furthermore, induction of chief cell markers in BPN organoids occurred rapidly following MEK inhibition (2 hr for Cym and 6 hr for Pgc), before any change in cell number occurred (Figure 6E). Thus, the kinetics of Cym induction in vitro are more consistent with a true lineage switch rather than selection for a pre-existing Cym-high cells, and are also consistent with our interpretation of single-cell data from tumors in vivo. Finally, we treated BPN organoids with additional drugs that target MAPK signaling including the ERK-inhibitor GDC-0994, MEK inhibitor PD0325901, and the BRAF inhibitor PLX4720, all of which induce Cym (Figure 6—figure supplement 1G). In aggregate, our data show that drug-induced tumor phenotypic changes are not dependent on the non-specific effects of any one inhibitor. Thus, the MAPK pathway modulates gastric lineage in IMA cells driven by distinct oncogenes (KRAS and BRAF) and in distinct settings (i.e. in vivo and in vitro).
 
-## MAPK inhibition leads to an increase in canonical WNT activity in NKX2-1 negative lung adenocarcinoma
+### MAPK inhibition leads to an increase in canonical WNT activity in NKX2-1 negative lung adenocarcinoma
 
 LGR5 marks a subset of normal murine chief cells that can function as facultative stem cells (Leushacke et al., 2017). Lgr5 is also a canonical WNT target gene, and WNT signaling is thought to promote the regenerative capacity of LGR5-positive chief cells. Given that MAPK inhibitors led to an enrichment for the signature of LGR5-positive chief cells in BPN mice, we evaluated our gene expression data to determine whether this was indicative of a general increase in WNT signaling.
 
 We examined a set of WNT pathway genes derived from the ‘WNT signaling’ ontology category on AmiGO (Carbon et al., 2009) in our whole-tumor RNA sequencing of BP and BPN tumors. Several of these genes have previously been identified as direct transcriptional targets of canonical WNT signaling, including Axin2, Lgr5, Wnt11, Fzd, Fgf9, Notum, Sox9, Lrp1, Sox4, Znrf3, Wnt3a (‘positive regulation of canonical WNT signaling’ category on AmiGO, Carbon et al., 2009) and were significantly activated in MAPK-inhibited BPN tumors (Figure 7A). Indeed, applying Ingenuity Pathway Analysis (IPA) Upstream Regulator detection to RNA-seq data from whole tumors identified β-catenin as the second top upstream regulator underlying the gene expression changes between control and drug-treated BPN tumors (Figure 7—figure supplement 1A). The activation z-score suggests an activated state of β-catenin due to MAPK-inhibition and a more inhibited state in control BPN tumors. Consistent with this, Regulatory Motif analysis in Illumina Correlation Engine uncovered significant differences in TCF1 binding site genesets between control and MAPKi-treated BPN tumors (Figure 7—figure supplement 1B). WNT targets such as Axin2 (Jho et al., 2002) and Lgr5 (Barker et al., 2007) were also induced in our single-cell analysis (Figure 7—figure supplement 1C). Although their raw values are at the detection limit in our scRNA-seq data, imputation analysis to recover false negatives further supports a robust increase in Axin2 and Lgr5 levels after BRAF/MEK inhibition (Figure 7—figure supplement 1D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig7-v3.jpg)
+
+**Figure 7.:** (A) Transcriptome analysis of genes comprising the canonical WNT pathway gene ontology (AmiGO) in RNA purified from FACS-sorted BPN tumor cells 1 week post- treatment with PLX4720+PD0325901 or control chow. adjP <0.05 for each comparison. Color key indicates normalized expression levels (Log10). (B) Analysis of WNT pathway activity in scRNA-seq data using a WNT activation signature. BP indicates cells from clusters 4–8; BPN indicates cells from clusters 1–3 (see Figure 4E, F). C : control, Tx = drug treatment. (C) Kinetics of WNT signaling induction following MAPK-inhibitor treatment as indicated by qRT-PCR analysis of the canonical WNT signaling markers, Axin2 and Lgr5, on RNA isolated from drug/DMSO treated organoids for the indicated times. Data are mean ± S.D. A representative experiment of three is shown. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05 by Student’s t-test. (D, E) WNT-low cells can give rise to WNT-high cells. BPN organoid lines, 988 shown here, were stably transduced with a WNT-reporter construct (7TGP, Addgene Plasmid #24305) and FACS-sorted to isolate cells with undetectable WNT activity (pink gate) (D). (E) Dynamics of sorted WNT-low cells when cultured in WNT rich spheroid media (50% LWRN vs. 5% LWRN) or in the presence of MEK-inhibitor. Numbers shown are the percentage of live tdTomato+GFP+ cells in each culture as quantified by flow cytometry (FlowJo). Data shown is a representative of two independent sorting experiments.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) List of the top-scoring genes in IPA Upstream Regulator analysis when comparing differentially expressed genes between control- and BRAFi/MEKi-chow treated BPN tumors in whole-tumor RNA sequencing data. (B) Regulator Motif analysis by Illumina Correlation Engine identifies significant differences in TCF1 binding site genesets between control and treated BPN tumors. (C, D) Plots of normalized raw and imputed expression values for Lgr5 and Axin2 transcripts in scRNA-seq data as readouts of canonical WNT activation levels in indicated clusters. (E) Candidate mechanisms by which a cross-talk between ERK and WNT pathways can occur as evaluated by immunoblotting. Representative western blot image and quantitation of band intensity (ImageJ) from two independent experiments is provided. None of the changes in protein abundance between control and drug-treated (24 hr) organoid samples are statistically significant. Graphs indicate mean ± S.D.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** Relative expression values for all Wnt genes in tumor and stromal cells from BP and BPN tumors profiled by scRNA-seq. Values were derived as follows: first, raw gene expression values in each cluster were logged. Then, the average value of each cluster was divided by the maximum value to calculate relative expression. Cluster ID labels correspond to nomenclature used in Figure 4—figure supplement 1E.
 
 Intriguingly, the pattern of induction was distinct for these two WNT target genes (Figure 7—figure supplement 1C,D). Cells with the highest levels of Lgr5 are found only in treated BPN tumors, a pattern consistent with our observations of chief cell markers (Figure 6C). In contrast, we identified cells with high levels of Axin2 in both control and treated BPN groups, despite the fact that overall Axin2 levels are higher in treated BPN. This raises the question of whether WNT-high cells pre-exist in control BPN tumors, or whether MAPK inhibition leads to induction of WNT target genes in WNT-low cells. We therefore developed a WNT13 transcriptional signature (see Materials and methods for derivation) that integrates the WNT target genes induced by MAPK inhibitors in BPN tumors. Scoring of cells in scRNA-seq using this WNT13 signature showed a pattern more similar to Axin2 than Lgr5 (Figure 7B). Taken together, these data suggest that WNT-high cells can be detected in control BPN tumors, at least as defined by a WNT13 signature or Axin2 levels. However, Lgr5-high cells are not detectable pre-treatment, showing that even WNT-high cells lack high level expression of certain target genes. This further supports our observations from analysis of gastric lineage markers that MAPK inhibition modulates the transcriptional cell state of BPN tumor cells (including WNT target genes), and does not purely select for pre-existing populations.
 
@@ -113,9 +185,21 @@ Previous studies in other cancer types have documented negative feedback loops b
 
 To identify potential sources of WNT production, we analyzed the levels of Wnt transcripts in all cell clusters identified in scRNA-seq, including stromal cells (see Figure 4—figure supplement 1E). As presented in Figure 7—figure supplement 2, several Wnt genes were induced by MAPKi treatment in BPN tumor cells, including Wnt2b, Wnt4, Wnt8b, and Wnt10b. Additional Wnt ligands such as Wnt2, Wnt5b and Wnt6 were more highly expressed in stromal cells that were co-isolated during lung tumor preparation. Thus, there are multiple potential in vivo sources of WNT ligand, including both treated BPN tumor cells and the tumor stroma.
 
-## WNT signaling and FoxA1/2 contribute to lineage switching and cell cycle response in NKX2-1-negative lung adenocarcinoma treated with RAF/MEK inhibitor
+### WNT signaling and FoxA1/2 contribute to lineage switching and cell cycle response in NKX2-1-negative lung adenocarcinoma treated with RAF/MEK inhibitor
 
 WNT/β-catenin signaling plays an essential role in gastric epithelial patterning during embryogenesis and promotes chief cell differentiation (McCracken et al., 2017). We therefore asked whether the WNT pathway played a role in the lineage switch induced by MAPK inhibition in IMA. We used two different approaches to modulate WNT signaling in organoid cultures. First, we cultured organoids in 5% conditioned media (L-WRN), corresponding to a 10 fold reduction in the amount of exogenous WNT3A and R-spondin three in the culture media relative to standard, 50% L-WRN, conditions. Second, we used the small molecule LGK-974, which blocks Porcupine-mediated posttranslational modification of WNT ligands that is required for their secretion and paracrine signaling. Levels of Axin2 and Lgr5 were lower in organoids cultured in 5% L-WRN than 50% L-WRN, and treatment with LGK-974 led to a further reduction in these transcripts suggesting endogenous WNT ligand production and signaling complements L-WRN media in these cultures (Figure 8—figure supplement 1A). Consistent with prior analyses (Figure 7C), MEK inhibitor stimulated canonical WNT signaling in BPN and KPN organoids as indicated by increased expression of the Axin2 and Lgr5 transcripts within the first 24 hr (Figure 8—figure supplement 1A). The relative effect of this stimulation (i.e. fold induction) was similar whether the organoid media composition contained high or low levels of exogenous WNT3A. Induction of chief markers (Cym, Pgc, Gif) by Cobimetinib was partially impaired when WNT signaling was reduced by using 5% L-WRN media alone or in combination with LGK-974 (Figure 8A). Levels of some chief markers (e.g. Cym) were responsive to WNT signaling levels even in the absence of MEK inhibitor. In contrast, tuft cell markers (Pou2f3 and Gfi1b) were largely unaffected by modulation of WNT signaling. These data show that one component of lineage switching (induction of chief cell markers) is partially WNT-dependent, whereas another component (tuft cell marker induction) is largely WNT-independent.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig8-v3.jpg)
+
+**Figure 8.:** (A) Analyses of indicated gene expression levels in BPN (1243 and 988) and KPN (1268) tumor organoid lines by qRT-PCR at 24 hr and under different treatment conditions. Organoids were cultured in 50% L-WRN (a, b) or reduced 5% L-WRN media (c, d, e, f) and treated with DMSO (a, c), single agent Cobimetinib (b, d) or the Porcupine inhibitor, LGK-974 (e), and both inhibitors (f). Graphs indicate mean ± S.D. [p values are for a-b; c-d; or e-f comparisons]. Experiment was reproducibly performed three times. (B) qRT-PCR analysis of the expression levels of indicated cell identity markers in the 22E organoid line under four different conditions. 22E (derived from a lung tumor in a KrasFSF-G12D/+;Trp53frt/fr+;Foxa1f/f; Foxa2f/f;Rosa26FSF-CreERT2/FSF-CreERT2 mouse) lacks NKX2-1 expression and harbors conditional alleles of Foxa1 and Foxa2. Tamoxifen treatment induces CreERT2-mediated Foxa1/Foxa2 deletion. Data are mean ± S.D and a pool of two independent experiments. (C) Quantitation of the proliferation marker MCM2 in 10 week autochthonous BPN lung tumors under four different treatment conditions: (1) control (n = 7); (2) MAPK-inhibitor chow (n = 7); (3) LGK-974 (n = 7); and (4) MAPK-inhibitor chow and LGK-974 (n = 8). (D, E) Abundance of MCM2 or phospho-RB-positive cells in 10-week autochthonous lung tumors from BPN mice under the indicated conditions. Vehicle or drug treatments were administered at 6 weeks post tumor initiation for 4 weeks. Multiple tumors from n = 3 mice/group were quantitated. (A – E) ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns = not significant by Student’s t-test. (F) Graphical depiction of the molecular and pharmacological regulation of differentiation programs in LUAD (BioRender). Here, we investigated genotype-specific drug response. Cancer therapy triggers two alternative fates in drug-treated tumors of both genotypes: either regression or survival in a drug tolerant state. Molecularly, the drug tolerant state appears distinct in BP versus BPN tumors and can be exploited pharmacologically by targeting the cell cycle and/or drug-induced signaling pathways.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Analyses of indicated gene expression levels in BPN (1243 and 988) and KPN (1268) tumor organoid lines by qRT-PCR at 24 hr and under different treatment conditions. Organoids were cultured in 50% L-WRN (a, b) or reduced 5% L-WRN media (c, d, e, f) and treated with DMSO (a, c), single agent Cobimetinib (b, d) or the Porcupine inhibitor, LGK-974 (e), and both inhibitors (f). Graphs indicate mean±S.D. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns = not significant by Student’s t-test. [p values are for a-b; c-d; or e-f comparisons]. Experiment was reproducibly performed three times. (B) qRT-PCR analysis of indicated gene expression in 22E organoid line under MEK inhibition (Cobimetinib) and/or tamoxifen induced Foxa1 and Foxa2 deletion. Data are mean ± S.D and a representative of two independent experiments. ****p<0.0001, ***p<0.001, ns = not significant by Student’s t-test. (C) Density plots and correlation values for a MEK activation signature (x-axis left two panels) and a WNT signature (x-axis right two panels) versus Ccnd1 and Ccnd2 transcript levels as indicated based on scRNA-seq. (D) Quantitation of lung tumor burden 10 weeks post-initiation in BPN mice under four different treatment conditions: (1) control (n = 7); (2) MAPK-inhibitor chow (n = 7); (3) LGK-974 (n = 7); and (4) MAPK-inhibitor chow and LGK-974 (n = 8). (E) Overall survival of BPN tumor bearing mice that were enrolled in six different treatment conditions for 4 weeks. Vehicle (n = 5), MAPK-inhibitor chow (n = 5), Palbociclib (n = 5), LGK-974 (n = 4); MAPK-inhibitor chow + Palbociclib (n = 7), and MAPK-inhibitor chow + LGK-974 (n = 7). **p=0.0017 by Log-rank test.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/66788/elife-66788-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** (A, B) Active (unphosphorylated on T41, S37, S33 residues) and total β-catenin staining in tumors under indicated treatment conditions. For BPN tumors, see Figure 8C for experimental details. BP tumors are 8-week autochthonous lung tumors from mice that received control or MAPK-inhibitor chow for 2 weeks (See Figure 1A for more experimental details). Small intestine: positive control for detection of active β-catenin. Scale bar: 100 µm.
 
 Previously, our lab reported that FoxA1 and FoxA2 are required for gastric differentiation in mouse models of IMA, including surface mucous cell marker expression (Camolotto et al., 2018). Here, using a novel NKX2-1-negative organoid line that harbors conditional alleles of Foxa1 and Foxa2, we show that Foxa1/2 deletion abrogates the induction of chief cell markers (but not tuft cell markers) upon MEK inhibition (Figure 8B, Figure 8—figure supplement 1B). Thus, the surface to chief gastric lineage switch is driven by both WNT signaling and FoxA1/2 activity.
 
@@ -153,7 +237,605 @@ In summary, this study characterizes the context-dependent role of NKX2-1 in LUA
 
 ## Materials and methods
 
-## Mice, tumor initiation, and drug treatment in vivo
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>BrafLSL-V600E/+</td>
+      <td>Dankort et al., 2007 PMID:17299132</td>
+      <td>MGI:3711771</td>
+      <td>Dr. Martin McMahon (HCI, Salt Lake City, Utah); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>BrafFSF-V600E/+</td>
+      <td>Shai et al., 2015 PMID:26001956</td>
+      <td></td>
+      <td>Dr. Martin McMahon (HCI, Salt Lake City, Utah); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Trp53f/f</td>
+      <td>Jonkers et al., 2001 PMID:11694875</td>
+      <td>MGI:1931011</td>
+      <td>Dr. Anton Berns, University of Amsterdam; Jackson Laboratories (Bar Harbor, Maine); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Trp53frt/frt</td>
+      <td>Lee et al., 2012 PMID:22228755</td>
+      <td>MGI:5306612</td>
+      <td>Dr. David G Kirsch (Duke University Medical Center, Durham, North Carolina); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>KrasLSL-G12D/+</td>
+      <td>Jackson et al., 2001 PMID:11751630</td>
+      <td>MGI:2429948</td>
+      <td>Dr. Tyler Jacks (MIT, Cambridge, Massachusetts); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>KrasFSF-G12D/+</td>
+      <td>Young et al., 2011 PMID:21512139</td>
+      <td>MGI:5007794</td>
+      <td>Dr. Tyler Jacks (MIT, Cambridge, Massachusetts); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Nkx2-1f/f</td>
+      <td>Kusakabe et al., 2006 PMID:16601074</td>
+      <td>MGI: 3653706</td>
+      <td>Dr. Shioko Kimura (NCI, NIH, Bethseda, Maryland); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26LSL-tdTomato Ai14</td>
+      <td>Madisen et al., 2010 PMID:20023653</td>
+      <td>MGI: 4436847</td>
+      <td>Jackson Laboratories (Bar Harbor, Maine); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26FSF-CreERT2</td>
+      <td>Schönhuber et al., 2014 PMID:25326799</td>
+      <td>MGI: 5616874</td>
+      <td>Dr. Dieter Saur (Technische Universitat Munchen, Munchen, Germany); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Foxa1f/f</td>
+      <td>Gao et al., 2008 PMID:19141476</td>
+      <td>MGI: 3831163</td>
+      <td>Dr. Klaus H. Kaestner (Univ. of Pennsylvania School of Medicine, Philadelphia, PA); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Foxa2f/f</td>
+      <td>Sund et al., 2000 PMID:10866673</td>
+      <td>MGI: 2177357</td>
+      <td>Dr. Klaus H. Kaestner (Univ. of Pennsylvania School of Medicine, Philadelphia, PA); mixed C57BL/6J × 129SvJ background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>NOD/SCID-gamma chain deficient (NSG)</td>
+      <td>The Jackson Laboratory</td>
+      <td>005557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>DuPage et al., 2009 PMID:19561589</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>L-WRN</td>
+      <td>ATCC</td>
+      <td>CRL-3276</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>d8.9 (plasmid)</td>
+      <td>DuPage et al., 2009 PMID:19561589</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VSV-G (plasmid)</td>
+      <td>DuPage et al., 2009 PMID:19561589</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>7TGP (plasmid)</td>
+      <td>Addgene</td>
+      <td>24305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma Aldrich</td>
+      <td>T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen supplemented chow</td>
+      <td>Envigo</td>
+      <td>TD.130858</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PLX4720 supplemented chow</td>
+      <td>Plexxikon/ Research Diets</td>
+      <td></td>
+      <td>Tsai et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD0325901 supplemented chow</td>
+      <td>Plexxikon/ Research Diets</td>
+      <td></td>
+      <td>Trejo et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PLX4720</td>
+      <td>Selleckchem</td>
+      <td>S1152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD0325901</td>
+      <td>Selleckchem</td>
+      <td>S1036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDC-0994</td>
+      <td>Genentech</td>
+      <td></td>
+      <td>Blake et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cobimetinib GDC-0973</td>
+      <td>Genentech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Palbociclib</td>
+      <td>LC Laboratories</td>
+      <td>P-7744</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LGK-974</td>
+      <td>Selleckchem</td>
+      <td>S7143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NKX2-1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab76013</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DUSP6 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab76310</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SPRY2 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab180527</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pERK (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4370</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERK (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4696</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pRSK S380 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 11989</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p4EBP1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2855</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pS6 S235/236 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4858</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pS6 S240/244 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5364</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pMEK S221 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2338</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PGC (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# HPA031718</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-POU2F3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# HPA019652</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pRB S807/S811 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8516</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD36 (Rat monoclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# MAB25191</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-proSPB (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB3430</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-proSPC (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB3786</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gastrokine 1 (Mouse monoclonal)</td>
+      <td>Abnova</td>
+      <td>Cat# H00056287-M01</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Muc5AC (Mouse monoclonal)</td>
+      <td>Abnova</td>
+      <td>Cat# MAB13117</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 phospho-Ser10 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab5176</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HNF4A (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3113</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MCM2 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab108935</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDX1 (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# F109-D12</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP (Rabbit polyclonal)</td>
+      <td>Rockland Immunochemicals</td>
+      <td>Cat# 600-401-379</td>
+      <td>(1:1200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 610153</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Non-phospho β-catenin (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8814</td>
+      <td>(1:1600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vinculin (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab129002</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-tubulin (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# E7</td>
+      <td>(1:15,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Axin1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2087</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCF4 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2569</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pFAK Y397 (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# SAB4504403</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Galectin 4 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF2128</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cathepsin E (Rabbit polyclonal)</td>
+      <td>Lifespan Biosciences</td>
+      <td>Cat# LSB523</td>
+      <td>(1:12,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU (Rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6326</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CyclinD1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab137875</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CyclinD2 (Mouse monoclonal)</td>
+      <td>NeoMarkers</td>
+      <td>Cat# MS-213-P1ABX</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PGK-Cre</td>
+      <td>DuPage et al., 2009 PMID:19561589</td>
+      <td></td>
+      <td>Lentivirus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5CMVFlpo</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-U of Iowa-530HT</td>
+      <td>Adenovirus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5CMVCre</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-U of Iowa-5-HT</td>
+      <td>Adenovirus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5SpcCre</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-Berns- 1168</td>
+      <td>Adenovirus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dusp6</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00518185_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pgc</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00482488_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cym</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm01204823_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Axin2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00443610_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lgr5</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00438890_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gif</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00433596_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ppia</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm02342429_g1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gfi1b</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00492318_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pou2f3</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00478293_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ccnd1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00432359_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ccnd2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00438070_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Foxa1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00484713_m1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Foxa2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm01976556_s1</td>
+      <td>TaqMan Gene Expression Assay (FAM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RBC Lysis Buffer</td>
+      <td>eBioscience</td>
+      <td>00-4333-57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagenase type I</td>
+      <td>Thermofisher Scientific</td>
+      <td>17100017</td>
+      <td>Enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dispase</td>
+      <td>Corning</td>
+      <td>354235</td>
+      <td>Enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Deoxyribonuclease I</td>
+      <td>Sigma Aldrich</td>
+      <td>DN25</td>
+      <td>Enzyme</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice, tumor initiation, and drug treatment in vivo
 
 All animal work was done in accordance with a protocol approved by the University of Utah Institutional Animal Care and Use Committee. The following mouse strains were used. BrafLSL-V600E/+ (Dankort et al., 2007), BrafFSF-V600E/+ (Shai et al., 2015), Trp53f/f (Jonkers et al., 2001), Trp53frt/frt (Lee et al., 2012), KrasLSL-G12D/+ (Jackson et al., 2001), KrasFSF-G12D/+ (Young et al., 2011), Nkx2-1f/f (Kusakabe et al., 2006), Rosa26LSL-tdTomato (Madisen et al., 2010), Rosa26FSF-CreERT2 (Schönhuber et al., 2014), Foxa1f/f (Gao et al., 2008), Foxa2f/f (Sund et al., 2000). All animals were maintained on a mixed C57BL/6J × 129SvJ background. Tumors were generated by administering mice with PGK-Cre lentivirus at 5 × 103 plaque forming units (pfu)/mouse, Ad5CMVFlpO at 2 × 107 pfu/mouse; Ad5CMVCre 2.5 × 107 pfu/mouse, Ad5SpcCre 5–8 × 108 pfu/mouse. Adenovirus was obtained from University of Iowa Viral Vector Core.
 
@@ -161,61 +843,61 @@ Rodent Lab Diet (AIN-76A) was formulated with the vemurafenib-related compound P
 
 LGK-974 and Palbociclib (Selleck Chemicals) were delivered to mice via oral gavage. LGK-974 was formulated in 0.5% (w/v) methylcellulose/0.5% (v/v) Tween-80 solution and given at 7.5 mg/kg dose with 5 days ON/2 days OFF schedule for 2 weeks (Figure 8C, S8D) or 4 weeks (Figure 8D and E, S8E). Weights were monitored once or twice weekly and no toxicity was observed in mice. Palbociclib was formulated in 50 mM Sodium Lactate and initially given at 120 mg/kg dose with 5 days ON/2 days OFF schedule. Weights were monitored once or twice weekly. Due to weight loss in female mice receiving Palbociclib + MAPK-inhibitor chow combination, the following modifications were made for all mice receiving Palbociclib as single or dual agent. On week 2: 120 mg/kg dose with 4 days ON/3 days OFF schedule; week 3: Palbociclib was skipped altogether; week 4: 100 mg/kg dose with 4 days ON/3 days OFF schedule.
 
-## Tamoxifen administration
+### Tamoxifen administration
 
 Tumor-specific activation of CreERT2 nuclear activity was achieved by intraperitoneal injection of tamoxifen (Sigma) dissolved in corn oil at a dose of 120 mg/kg. Mice received a total of six injections over the course of 9 days. For survival experiments, mice were additionally given pellets supplemented with 500 mg/kg tamoxifen (Envigo).
 
-## Cell lines and cell culture
+### Cell lines and cell culture
 
 HEK-293T cells were cultured in DMEM/High Glucose medium (Gibco). L-WRN cells (ATCC) were cultured in DMEM/High Glucose medium containing G418 (Sigma) and Hygromycin (InvivoGen) media. All media contained 10% FBS (Sigma). To eliminate mycoplasma contamination, cell lines were treated with 25 µg/mL Plasmocin (InvivoGen) for 2–3 weeks. To maintain cultures mycoplasma free, media were supplemented with 2.5 µg/mL Plasmocin. Cell line identity was authenticated using STR analysis at the University of Utah DNA Sequencing Core.
 
-## Establishing primary lung organoids
+### Establishing primary lung organoids
 
 Eight to 10 weeks after tumor initiation with PGK-Cre, tumor bearing mice were euthanized and lungs were isolated. Lungs were then minced under sterile conditions and digested at 37°C for 30 mins with continuous agitation in a solution containing the enzymes, Collagen Type I (Thermo Fisher Scientific, at 450 U/ml final); Dispase (Corning, at 5 U/ml); DNaseI (Sigma, at 0.25 mg/ml) and Antibiotic-Antimycotic solution (Gibco). The digested tissue was passed through an 18 or 20-gauge syringe needle. Enzyme reactions were then stopped by addition of cold DMEM/F-12 with 10% FBS and the cell suspension was dispersed through 100 µm, 70 µm, and 40 µm series of cell strainers to obtain single-cell suspension. Subsequently, cell pellets were treated with erythrocyte lysis buffer (eBioscience). Finally, cell pellets were reconstituted in Advanced DMEM/F-12 (Gibco) supplemented with L-glutamine, 10 mM HEPES, and Antibiotic-Antimycotic. Thereafter, 100,000 tumor cells were mixed with 50 µl of Matrigel (Corning) at 1 to 10 ratio and plated in 24-well plates. For the first week of organoid initiation, Matrigel droplets were overlaid with recombinant organoid medium (Advanced DMEM/F-12 supplemented with 1X B27 (Gibco), 1X N2 (Gibco), 1.25 mM nAcetylcysteine (Sigma), 10 mM Nicotinamide (Sigma), 10 nM Gastrin (Sigma) and containing growth factors (100 ng/ml EGF [Peprotech], 100 ng/ml R-spondin1 [Peprotech], 100 ng/ml Noggin [Peprotech], 100 ng/ml FGF10 [Peprotech], as well as the ROCK inhibitor Y27632 [R and D Systems] and the TGF-β type I receptor-inhibitor SB431542 [R and D Systems]) as described in Barker et al., 2010; Sato et al., 2009).
 
 After the initial spheroid culture propagation, organoids were switched to 50% L-WRN conditioned media generated as detailed in Miyoshi and Stappenbeck, 2013. Briefly, L-WRN cells (ATCC) seeded and maintained in 10% FBS, DMEM high glucose containing 500 µg/ml G418 (Sigma) and 500 µg/ml Hygromycin (InvivoGen) media until confluency. Once confluent, L-WRN cells were switched to Advanced DMEM/F-12 containing 20% FBS, 2 mM L-glutamine, 100 U/ml penicillin, 0.1 mg/ml streptomycin. Daily, conditioned supernatant medium was collected from L-WRN cultures, filtered through 0.2 µm vacuum filters and saved at −20°C as stock (100%) L-WRN medium. To use for culturing spheroids, stock L-WRN was diluted with equal volume Advanced DMEM/F-12 (final concentration 50%). Where specified, stock L-WRN media was diluted with Advanced DMEM/F-12 to a final concentration of 5% while still keeping FBS concentration at 10% as described in VanDussen et al., 2015. For drug studies, organoid media was supplemented with Cobimetinib (GDC-0973), GDC-0994 (Genentech), LGK-974, PD0325901, PLX-4720 (Selleck Chemicals) at indicated concentrations. Drug containing media was refreshed every 48–72 hr.
 
-## Lentiviral production and transduction
+### Lentiviral production and transduction
 
 HEK293T cells were transfected with CRE-encoding lentiviral vector, d8.9 packaging vector and VSV-G envelope vector mixed with TransIT-293 (Mirus Bio). Virus containing supernatant was collected at 36, 48, 60, and 72 hr after transfection. Ultracentrifugation at 25,000 r.p.m. for 2 hr was necessary to concentrate virus for in vivo infection (DuPage et al., 2009).
 
 For stable transduction of organoids, organoid cultures were first prepared into single cell suspensions by subjecting them to successive incubations with Cell Recovery Solution (Corning) and TrypLE (Gibco). Cells were then resuspended in a 1:1 mixture, by volume, of 50% L-WRN and lentivirus containing supernatant. After supplementation with 8 µg/ml polybrene, cells were incubated for 2 hr. Cells were then pelleted, mixed back with Matrigel, and seeded. 72 hr later, Puromycin selection for 1 week was performed to achieve stable lines.
 
-## Flank tumor transplantation
+### Flank tumor transplantation
 
 For subcutaneous allograft experiments, 3 × 105 single-cell suspension of 988 BPN organoid cells stably expressing either the Mission pLKO.1-puro Non Target shRNA control (shscr) or one of the validated Ccnd2 Mission shRNAs, TRCN0000054764 (#64) or TRCN0000054766 (#66), were mixed with in 1:1 vol with 50 μl Matrigel. Cells were injected subcutaneously into the right or left flanks of NOD/SCID-gamma chain deficient (NSG) mice. Tumor dimensions were measured with calipers. Tumor volume was calculated using the (L x W2)/2 formula. When the majority of the tumors reached ~200 mm3, mice were randomized into control or drug groups, the latter of which received RAF/MEK inhibitor compounded chow for 4 weeks. Tumor volume measurements were not reliable as the tumors formed from organoid cultures became fluid-filled cysts rather than solid. At end of treatment period, tumors were removed and processed for histological analyses.
 
-## Real-time PCR
+### Real-time PCR
 
 Total RNA was isolated using TRIzol followed by PureLink RNA Mini Kit (Thermo Fisher Scientific). RNA was treated with RNase-Free DNAse I (Invitrogen) on-column. For low cell numbers (e.g. after FACS), Animal Tissue RNA Purification Kit (Norgen Biotek) was used instead. RNA was converted to cDNA using iScript Reverse Transcription Supermix (BioRad). cDNA was analyzed either by SYBR green real-time PCR with SsoAdvanced Universal SYBR Green Supermix (BioRad) or by Taqman real-time PCR with SsoAdvanced Universal Probes Supermix (BioRad) using a CFX384 Touch Real-Time PCR Detection System (BioRad). Gene expression was calculated relative to Ppia (loading control) using the 2-(dCt.x-average(dCt.control)) method and normalized to the control group for graphing. Primer sequences and TaqMan Assays used in this study are listed below.
 
-## Cell viability and growth assay
+### Cell viability and growth assay
 
 For organoids, cells were seeded at a density of 2000 cells per 15 µl Matrigel dome, four domes per line per time point, each dome in a single well of a 96-well plate. After overnight culture, organoids were treated with different concentrations of the indicated inhibitors and incubated at 37°C for indicated times. Subsequently, the relative number of viable cells was measured by by CellTiter-Glo 3D Cell Viability Assay (Promega), according to the manufacturer’s instructions. Luminescence was then measured by a microplate reader (EnVision 2105 Multimode Plate Reader, PerkinElmer). Replicate values for each experimental group were averaged and all values were normalized to control treatment group for each line.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Cells were lysed on ice using RIPA buffer (50 mM HEPES, 140 mM NaCl, 1 mM EDTA, 1% triton X-100, 0.1% sodium deoxycholate and 0.1% SDS) supplemented with protease and phosphatase inhibitor cocktails (Roche). Protein extracts were clarified and concentrations were measured with Pierce Coomassie Plus Protein Assay reagent (Thermo Fisher Scientific). Lysates were then resolved on SDS-PAGE gels (BioRad), and transferred to Nitrocellulose blots. Membranes were probed with primary antibodies against AXIN1 (2087, CST), TCF4 (2569, CST) pFAK Y397 (SAB4504403, Sigma), DUSP6 (EPR129Y, Abcam), SPRY2 (EPR4318(2)(B), Abcam), pERK (4370, CST), tERK (4696, CST), Vinculin (EPR8185, Abcam), and β-tubulin (E7, DSHB). Blots were subsequently incubated with HRP conjugated secondary antibodies. For signal development, Supersignal West Femto Substrate kit (Thermo Fisher Scientific) was used, followed by image acquisition using darkroom development. ImageJ was used for band intensity quantitation.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Lung tissues were fixed overnight in 10% neutral buffered formalin, processed through 70% ethanol, embedded in paraffin, and sectioned at 4 µm thickness. Staining of hematoxylin and eosin, as well as detection of mucin by Alcian Blue were carried out at the HCI Research Histology Shared Resource. Immunohistochemistry was performed manually as detailed in Camolotto et al., 2018. The following primary antibodies were used. BrdU (BU1/75, Abcam), Cathepsin E (LS-B523, Lifespan Biosciences), Galectin 4 (AF2128, R and D Systems), Gastrokine 1 (2E5, Abnova), Histone H3 pSer10 (ab5176, Abcam), HNF4A (C11F12, CST), MCM2 (ab31159, Abcam), Muc5AC (SPM488, Abnova), NKX2-1 (EP1584Y, Abcam), PDX1 (F109-D12, DSHB), RFP (600-401-379, Rockland Immunochemicals), pERK1/2 (D13.14.4E, CST), pRSK S380 (D3H11, CST), p4EBP1 T37/46 (2855, CST), pS6 S235/236 (D57.2.2E, CST), pS6 S240/244 (D68F8, CST), pMEK1/2 S221 (166F8, CST), Pepsinogen C (HPA031718, Sigma), POU2F3 (HPA019652, Sigma), pRB S807/811 (8516, CST), Cyclin D1 (SP4, Abcam), Cyclin D2 (DCS-3.1, NeoMarkers), CD36 (324205, R and D Systems), pro-SPB (AB3430, Millipore), pro-SPC (AB3786, Millipore), β-catenin (610153, BD Biosciences), active β-catenin (D13A1, CST). To visualize Cyclin D2 signal, IHC was performed using the CSA II, Biotin-Free Catalyzed Amplification System (Dako) following manufacturer’s instructions. Pictures were taken on a Nikon Eclipse Ni-U microscope with a DS-Ri2 camera and NIS-Elements software. Tumor quantitation was performed on hematoxylin and eosin-stained or IHC-stained slides using NIS-Elements software. All histopathologic analyses were performed by a board-certified anatomic pathologist (E.L.S.).
 
-## Primary human tumors
+### Primary human tumors
 
 De-identified formalin fixed, paraffin-embedded (FFPE) tumors were obtained from the Intermountain Biorepository, which collects samples in accordance with protocols approved by the Intermountain Healthcare Institutional Review Board. Mucinous tumors were included in the study based on the following criteria: 1. Diagnosis of invasive mucinous adenocarcinoma; OR 2. Diagnosis of mucinous bronchioloalveolar carcinoma (older diagnostic term for IMA); OR 3. Mucinous lung adenocarcinoma with strong morphologic features of IMA, such as abundant intracellular mucin. Colloid adenocarcinomas were excluded, as these are considered to be a discrete subtype of lung cancer.
 
-## Fluorescence-activated cell sorting (FACS) for in vivo tumors and in vitro organoid cultures
+### Fluorescence-activated cell sorting (FACS) for in vivo tumors and in vitro organoid cultures
 
 Tumor bearing lungs were isolated in ice-cold PBS. Lungs were enzymatically digested as described above in the procedure for establishing primary organoids. Once single-cell suspensions were obtained, cells were reconstituted in phenol red-free DMEM/F-12 with HEPES containing 2% FBS, 2% BSA and DAPI. Cells were sorted using BD FACS Aria for tdTomato-positive and DAPI-negative cells into DMEM/F-12% and 30% serum. After sorting, cells were pelleted and flash frozen or resuspended TRIzol then frozen at −80°C.
 
 To study the dynamics of WNT signaling in vitro, BPN organoids were stably transduced with the β-catenin/TCF-dependent GFP reporter lentiviral construct 7TGP (Addgene plasmid #24305). Single cells were isolated from Matrigel using Cell Recovery Solution and TrypLE incubations. Cells were analyzed on BD LSRFortessa or BD FACSAria and sorted on BD FACSAria. Events first passed through a routine light-scatter and doublet discrimination gates, followed by exclusion of DAPI-positive dead cells. Viable tumor organoids were further identified as tdTomato-high cells. 7TGP organoids grown in 5% L-WRN media for 2–3 days were used as control for setting the GFP-negative gate. This gating strategy was applied to 7TGP organoids that were cultured in standard 50% L-WRN media in order to identify and sort for the WNT-reporter-low fraction. This fraction was collected in 50% L-WRN and expanded for ~1 week. After expansion, sorted 7TGP organoids were seeded and treated with 50% L-WRN (± Cobimetinib) or 5% L-WRN (± Cobimetinib) for 24 hr, 48 hr, and 72 hr. Then, the fraction of WNT-reporter-high population under the above four conditions was analyzed. Flow cytometric data analyses was performed using FlowJo software.
 
-## RNA sequencing from whole tumors
+### RNA sequencing from whole tumors
 
 Library preparation was performed using the TruSeq Stranded mRNA Library Preparation Kit with poly(A) selection (Illumina). Purified libraries were qualified on an Agilent Technologies 2200 TapeStation using a D1000 ScreenTape assay. The molarity of adapter-modified molecules was defined by quantitative PCR using the Kapa Biosystems Kapa Library Quant Kit. Individual libraries were normalized to 5 nM and equal volumes were pooled in preparation for Illumina sequence analysis. Libraries were sequenced on Illumina HiSeq 2500 (50 cycle single-read sequencing v4).
 
-## Whole-tumor RNA-seq analysis
+### Whole-tumor RNA-seq analysis
 
 Adapters in raw FASTQ files containing 50 bp single-end reads were trimmed with cutadapt. QC metrics were generated for each sample with FastQC and Picard’s CollectRnaSeqMetrics after aligning reads to genome with STAR (Dobin et al., 2013). QC metrics were summarized by MultiQC. From this QC analysis, one sample (id 14489 × 13) did not group with other samples in the MultiQC report. It was later confirmed that very limited starting material was a contributing factor to its difference from the others. This sample was removed from downstream analysis because the noise in the sample was likely a larger negative trade-off than the gains from increasing biological replicates for that condition.
 
@@ -227,47 +909,47 @@ Differential gene expression modeling with EdgeR for volcano plots used package 
 
 Gene set enrichment analysis (GSEA) was carried out on RNA-seq data from whole tumors (and single cell data (below)) by comparing gene expression profiles with archived gene sets from Hallmarks [ftp.broadinstitute.org://pub/gsea/gene_sets/h.all.v7.0.symbols.gmt] and Oncogenic signatures [ftp.broadinstitute.org://pub/gsea/gene_sets/c6.all.v7.0.symbols.gmt] as well as with the cell type specific genes sets described in Haber et al., 2017; Leushacke et al., 2017; Montoro et al., 2018; Zhang et al., 2019.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 All protocols to generate scRNA-seq data on 10x Genomics Chromium platform including library prep, instrument and sequencing setting can be found at: https://support.10xgenomics.com/single-cell-gene-expression.
 
 The Chromium Single Cell Gene Expression Solution with 3’ chemistry, version 3 (PN-1000075) was used to barcode individual cells with 16 bp 10x Barcode and to tag cell specific transcript molecules with 10 bp Unique Molecular Identifier (UMI) according to the manufacturer’s instructions. The following protocol was performed at High-Throughput Genomics Shared Resources at Huntsman Cancer Institute, University of Utah. First, FACS sorted single-cell suspensions of tdTomato-positive lung tumors were resuspended in phosphate buffered saline with 0.04% bovine serum albumin. The cell suspension was filtered through 40 micron cell strainer. Viability and cell count were assessed on Countess I (Thermo Scientific). Equilibrium to targeted cell recovery of 6,000 cells, along with 10x Gel Beads and reverse transcription reagents were loaded to Chromium Single Cell A (PN-120236) to form Gel Beads-in emulsions (GEMs), the nano-droplets. Within individual GEMs, cDNA generated from captured and barcoded mRNA was synthesized by reverse transcription at the setting of 53°C for 45 min followed by 85°C for 5 min. Subsequent A tailing, end repair, adaptor ligation and sample indexing were performed in bulk according to the manufacturer’s instructions. he resulting barcoding libraries were qualified on Agilent D1000 ScreenTape on Agilent Technology 2200 TapeStation system and quantified by quantification PCR using KAPA Biosystems Library Quantification Kit for Illumine Platforms (KK4842). Multiple libraries were then normalized and sequenced on NovaSeq 6000 with 2 × 150 PE mode.
 
-## Single-cell RNA-seq analysis
+### Single-cell RNA-seq analysis
 
-## Demultiplexing and data alignment
+#### Demultiplexing and data alignment
 
 Single-cell RNA-seq data were demultiplexed with 10x cellranger mkfastq version 3.1.0 to create fastq files with the I1 sample index, R1 cell barcode+UMI and R2 sequence. Reads were aligned to the mouse genome (mm10 with custom tdTomato reference) and feature counts were generated using cellranger count 3.1.0 with expected-cells set to 6000 per library. QC reporting, clustering, dimension reduction, and differential gene expression analysis were performed in 10x Genomics’ Cell Loupe Browser (v3.1.1). For the BPN control sample, we captured 5065 cells and obtained 46,894 mean reads per cell; 3544 median genes per cell. For the BPN treated sample, we captured 5563 cells and obtained 37,488 mean reads per cell; 2771 median genes per cell. For further details of the primary Cell Ranger data processing, see https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/.
 
-## Visualization and expression analysis
+#### Visualization and expression analysis
 
 Single-cell expression data was analyzed using Seurat (3.1.0) (Butler et al., 2018; Stuart et al., 2019) and visualized in Loupe browser (3.1.1). Alternatively, single-cell data was processed mostly in R (3.5.1). Cells with unique feature counts over 7500 or less than 200 and more than 20% mitochondrial counts have been filtered out. For visualization, the umap-learn package, from Seurat (McInnes et al., 2018), was used to reduce the dimensionality of the data.
 
-## Clustering
+#### Clustering
 
 The Seurat package clustering method was used to designate cluster membership of single cell transcriptomics profiles. Seurat clustering is heavily inspired by Levine et al., 2015 and Xu and Su, 2015, which has two steps in the first step, the findNeighbors function is employed to embed single-cell profiles in a K-nearest neighbor (KNN) graph based euclidean distance in a (20 PCs) PCA space, followed by refining the edge weights based on jaccard similarity (https://satijalab.org/seurat/v3.0/pbmc3k_tutorial.html). In the second step, the FindClusters function employs Louvain algorithm modularity optimization techniques to iteratively group cells together (https://satijalab.org/seurat/v3.0/pbmc3k_tutorial.html).
 
-## Stromal cell designations
+#### Stromal cell designations
 
 Clusters of cells sharing highly similar positions in dimensionality reduced UMAP-space were examined for differential expression using Loupe browser’s built-in differential expression calculator, and genes showing significant cluster specific expression were screened manually against the literature for markers of known cell types. Those clusters representing minority populations that were highly distinct in Umap-space from the bulk of cells in the analysis and which bear distinctive expression of stromal marker genes were considered as stromal contaminants and removed from subsequent, tumor-specific Umap data visualization and cluster specific gene expression level analysis.
 
-## Differential gene expression using seurat
+#### Differential gene expression using seurat
 
 For the DEG test the ‘FindMarkers’ function from the Seurat package with default setting was used, including Wilcoxon Rank Sum test, and Bonferroni multi-testing correction based on the total number of genes in the dataset.
 
-## Cell cycle phase modeling
+#### Cell cycle phase modeling
 
 We calculated cell cycle scores of control and treated tumor cells in scRNA-seq data using the Seurat package and the cell cycle genes defined by Mizuno et al., 2009. The Seurat package uses the scoring strategy described in Tirosh et al., 2016 and assigns scores for cells based on the expression of G2/M and S phase marker genes, with low scoring cells defaulting to G1. In an alternative approach, we modeled cell cycle phase by determining mean expression per cell of each phased cell cycle signature described in Mizuno et al., 2009. A matrix of these values was then graphed as a diffusion map using the Destiny package (Angerer et al., 2016) in R. A coherent cell cycle loop through three dimensional space using the first three diffusion components was projected onto two dimensions using an heuristic arithmetic, diffusion component combination. To this graph a principal curve was fit using Princurve (Hastie and Stuetzle, 1989) and tangents for each point (lambdas) were used as cellular positions along a trajectory designated as Q-depth based on the observed position of G0-signature enriched cells (an indicator related to quiescence) at the extreme distal to cells enriched in G1 signatures or the S and G2/M signatures.
 
-## MEK activation signature and WNT signature expression
+### MEK activation signature and WNT signature expression
 
 Average expression of an 18 gene signature from Dry et al., 2010 was determined per cell across the single cell data set to model MEK activation state. Enrichment for the WNT13 signature described above was similarly examined across the single-cell dataset.
 
-## Data imputation
+#### Data imputation
 
 We used a novel data imputation approach to model the expression of low-detection genes in single-cell data (https://github.com/TheSpikeLab/FIESTA; Mehrabad et al., 2021a; Mehrabad et al., 2021b). Briefly, a weighted non-negative matrix factorization was carried out on the single-cell data matrix using machine-learning-based factor optimization. Subsequently, optimized factors were used to reconstruct an idealized completed matrix with values recommended for many gene nodes that were originally below the detection threshold.
 
-## Recombination fidelity
+#### Recombination fidelity
 
 Cluster-specific BAM files were parsed from the concatenated scRNA-Seq BAM files using subset-bam tool (https://github.com/10XGenomics/subset-bam, 10xGenomics, 2020). The presence of select splice junctions was visualized using IGV (version 2.7.2) (Robinson et al., 2011) against mouse genome version (mm10).
 

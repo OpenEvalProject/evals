@@ -25,6 +25,18 @@ Social preference behaviour, the drive for individuals to identify and approach 
 
 Prolonged periods of social isolation are particularly detrimental to humans during early development. However, even brief periods of social isolation have been shown to impact mental and physical health. We therefore tested two models of social isolation, Full (fish raised completely without social interaction) and Partial (fish isolated for 48 hr prior to behavioural testing). Each experiment comprised two sessions, 15 min of acclimation to the chamber followed by 15 min of exposure to two size matched sibling fish that were not isolated. To quantify social preference, we calculated a visual preference index (VPI) that compares the amount of time fish spend in the chamber nearest the conspecifics versus the opposite chamber where they are visually isolated from social cues (see Materials and methods). Full social isolation (Fi) caused a significant decrease in social preference relative to normally raised sibling controls (C) (Figure 1A, left and middle panel: C vs Fi, p=8.3e−8, Mann-Whitney). Specifically, there was an increase in the number of individuals that had a large negative VPI. We therefore decided to divide the fish into three sociality groups: a) anti-social (-S) fish with VPIs below −0.5; b) pro-social (+S) fish with VPIs above +0.5; c) non-social fish with −0.5 < VPI < +0.5. Fish that underwent Partial isolation (Pi), exhibited an intermediate, yet highly significant, change in social preference (Figure 1A, right panel: C vs Pi, p=2.5e−8, Mann-Whitney).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55863/elife-55863-fig1-v2.jpg)
+
+**Figure 1.:** (A) Histograms of all the VPIs during the social cue period across different conditions: controls (C, left), full isolation (Fi, middle), and partial isolation (Pi, right). For visual clarity, red bars highlight strong pro-social fish (+S, VPIs > 0.5), blue bars anti-social fish(-S, VPIs < -0.5), and gray non-social fish (ns, -0.5 < VPI < +0.5). (B) Swarm plots comparing the activity levels of fish during the acclimation period expressed as percent time moving (C, n=380; Fi, n=47; Pi, n=157). Mean and standard errors are shown. (C) Swarm plots comparing the activity levels of anti-social (left) and social (fish) fish during visual social cue exposure for each rearing condition (C (-S), n=39; Fi (-S), n=21; Pi (-S), n=53) or (C (+S), n=193; Fi, n=11; Pi (+S), n=57). (D) Time projection through the video of a pro-social control, C(+S), and a fully isolated, Fi(+S), fish during social cue exposure. The dashed lines mark the division between the social cue side (SC) and the side without social cues (No SC) that was used to calculate VPI.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55863/elife-55863-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Swarm plots comparing the activity levels of fish during the social period expressed as percentage time moving for each rearing condition (C, n = 380; Fi, n = 47; Pi, n = 157). Mean and standard errors are shown. (B) Swarm plots comparing the activity levels of anti-social (-S) and pro-social (+S) fish during visual social cue exposure for each rearing condition (anti-social C n = 39; Fi n = 21; Pi n = 53) or social (C n = 193; Fi n = 11; Pi n = 57). (C) (Left) Swarm plots comparing freezes (movement pauses longer than 3 s) for the same groups in A during the acclimation period expressed as percentage time freezing for each rearing condition. (Right) Swarm plots comparing freezes for the separated anti-social (-S) and pro-social (+S) groups in B during the acclimation period. (D) Same presentation as C for the social cue period.
+
+![Video 1.](https://cdn.elifesciences.org/articles/55863/elife-55863-video1.mp4.jpg)
+
+**Video 1.:** Two minutes of behaviour is shown in 20 s (6x playback acceleration). The control fish shows a strong social preference for the social cue and has a stereotypical social phenotype (left). The test fish spends most of its time watching the social cue with a 45-degree angle and synchronizing its bout motion with the other two conspecifics. The fully isolated fish spends long periods of time as well on the side of the conspecifics. Its behaviour, however, its characterized by long pauses while watching the conspecifics (right).
+
 As previously reported (Zellner et al., 2011), we found that fish raised in isolation were significantly less active than their normally raised siblings during the acclimation period (Figure 1B: C vs Fi, p=9.0e−6; C vs Pi, p=2.8e-9 Mann-Whitney) and during the social viewing session (Figure 1—figure supplement 1A: left C vs Fi, p=0.0001; C vs Pi, p=0.004 Mann-Whitney). We then divided fish into groups based on their social preference. Interestingly, anti-social fully and partially isolated fish showed very similar movement activity compared to anti-social controls during the acclimation (Figure 1C left: C (-S) vs Fi (-S), p=0.17 Mann-Whitney; C (-S) vs Pi (-S) p=0.23 Mann-Whitney) and during the social viewing session (Figure 1—figure supplement 1B left: C (-S) vs Fi (-S), p=0.48 Mann-Whitney; C (-S) vs Pi (-S) p=0.10 Mann-Whitney). The pro-social isolated fish, which also exhibited a reduction in activity relative to controls during the acclimation session (Figure 1C right: C (-S) vs Fi (-S), p=8.0e−5 Mann-Whitney; C (-S) vs Pi (-S) p=1.0e−7 Mann-Whitney), instead showed similar activity relative to controls during social viewing (Figure 1—figure supplement 1B right: C (-S) vs Fi (-S), p=0.02 Mann-Whitney; C (-S) vs Pi (-S) p=0.14 Mann-Whitney). In addition, we noticed that all isolated fish behaved qualitatively differently, exhibiting prolonged periods of quiescence (freezing) even when observing conspecifics (Figure 1D and Video 1).
 
 Freezing is a hallmark of anxiety-like behaviour observed in many species, and reported in zebrafish exposed to stressors (Giacomini et al., 2015; Shams et al., 2018), including periods of social isolation (Egan et al., 2009; Shams et al., 2017). In order to quantify freezing behaviour, we measured the percentage of time spent in continuous periods (>3 s) without motion (Figure 1—figure supplement 1C-D). We found that both fully and partially isolated fish exhibited significantly more freezing than controls during the acclimation period (Figure 1—figure supplement 1C left: C vs Fi, p=3.4e−16 Mann-Whitney; C vs Pi, p=2.8e−5 Mann-Whitney), and that this increase relative to controls persisted for fully isolated fish during social viewing, but was reduced in partially isolated fish, perhaps representing some recovery during the 15 min of social interaction (Figure 1—figure supplement 1D left: C vs Fi, p=6.3e−13 Mann-Whitney; C vs Pi, p=0.03 Mann-Whitney). When we compared freezing behaviour of groups with similar social preference, we found, as expected, that anti-social fish exhibited increased freezing during social viewing regardless of rearing condition. However, pro-social fully isolated fish also showed increased freezing during social viewing, suggesting that they were not engaged in typical social interaction, but rather remained immobile on the side with the conspecifics (Figure 1—figure supplement 1D right).
@@ -59,17 +71,140 @@ To test our hypothesis that reducing anxiety could reverse the anti-social behav
 
 We first tested the effects of acute exposure to Buspirone in control fish, and, as expected, we observed a small significant increase in social preference relative to untreated controls, however, a population of ~10% anti-social fish remained (Figure 4—figure supplement 1; C (no drug) vs C (30 µM), p=0.01, Mann-Whitney). We then treated partially isolated fish with 30 µM and 50 µM (Figure 4—figure supplement 1, n = 46, n = 72 fish) of Buspirone. Remarkably, the acute drug treatment was sufficient in both concentrations to reverse the anti-social phenotype caused by isolation (Figure 4A; Pi vs Pi (Buspirone 30 µM and 50 µM combined), p=2.56 e-05, Mann-Whitney).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55863/elife-55863-fig4-v2.jpg)
+
+**Figure 4.:** (A) Histogram of VPIs during the social cue period in partially isolated (Pi) fish treated with 30 μM and 50 μM of Buspirone (combined). For visual clarity, the bars are colored as in Figure 1. (B) VPI values calculated in one-minute time bins for controls (C, black line, n=380), partial isolated (Pi, blue line, n=157), and Pi treated with Buspirone (Pi+B, green line, n=118). Note how Buspirone treated fish recover normal social preference within the first 5 minutes. (C) Percentage of time moving calculated in one-minute bins for the same fish as B, thin lines indicate standard error.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55863/elife-55863-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Histograms of VPIs during the social cue period in control fish treated with 30 μM of Buspirone and in partially isolated fish treated with 30 μM and 50 μM of Buspirone. The bars are coloured as in Figure 1. (B) VPI values calculated in one-minute time bins for controls treated with 30 μM of Buspirone, Pi fish treated with 30 μM, and Partially isolated fish treated with 50 μ M of Buspirone, thin lines indicate standard error.
+
 When we then compared the time course of this phenotype reversal by computing the VPIs for each minute throughout the 15 min of the behavioural experiment (Figure 4B). We found that the isolated fish treated with Buspirone, while initially anti-social, would rapidly recover normal social preference behaviour within the first 5 min of exposure to social cues (Figure 4B: C vs Pi (Buspirone), p=0.016, first minute; p=0.37, fourth minute, Mann-Whitney). In contrast, the VPIs of untreated isolated fish remained significantly lower than controls throughout the entire session. We next compared the time course of movement activity (Figure 4C), and found that it generally increased quickly throughout the first 5 min of the social viewing session. Notably, the activity of isolated fish treated with Buspirone was already at the level of controls from the start of the social viewing session (Figure 4B: C vs Pi (Buspirone), p=0.31, first minute, Mann-Whitney), which suggests that the recovery of normal movement activity, possibly as a result of reduced anxiety, precedes the recovery of normal social preference. Therefore, Buspirone’s impact on the rate of recovery of social preference indicates that it may do so by reducing anxiety, perhaps at the level of the preoptic and/or caudal hypothalamic area, allowing circuit plasticity to down-regulate the hypersensitivity to social stimuli acquired during the isolation period.
 
 In summary, our results demonstrate that lonely fish, which have been isolated from social cues and show anti-social behaviour, have a completely different functional response to social stimuli than loner fish, anti-social fish found in the normal population. In addition, the functional changes caused by social deprivation are consistent with an increase in anxiety resulting from hyper-sensitization to social stimuli, similar to the effects of isolation on humans. We could reverse isolation’s effects in zebrafish with an existing anxiolytic drug that acts on the monoaminergic system. Zebrafish will thus provide a powerful new tool for studying the impact of loneliness (isolation) on brain function and exploring different strategies for reducing, or even reversing, its harm.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- digoxigenin-POD, sheep, polyclonal Fab fragments</td>
+      <td>Sigma-Aldrich, Rouche</td>
+      <td>Roche, Cat# 11207733910, RRID:AB_514500</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cFos _F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCGATACACTGCAAGCTGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cFos_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATTGCAGGGCTATGGAAGTG</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P6556-10MG</td>
+      <td>2 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>TSA Plus Cyanine three system</td>
+      <td>Sigma-Aldrich, Perkin Elmer</td>
+      <td>Cat# NEL74401KT</td>
+      <td>Dilution 1:50</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buspirone hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B7148-1G</td>
+      <td>30 uM and 50 uM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Anaconda, Spyder</td>
+      <td>Anaconda (https://www.anaconda.com/)</td>
+      <td>Spyder, RRID:SCR_017585</td>
+      <td>Version 4.0.1</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>NIH (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ANTs- Advanced Normalisation Tools</td>
+      <td>http://stnava.github.io/ANTs/</td>
+      <td>RRID:SCR_004757</td>
+      <td>Version 2.1.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI staining</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9564-10MG</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Slc6a4b RNA probe</td>
+      <td>Norton et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAT RNA probe</td>
+      <td>Filippi et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Th1 RNA Probe</td>
+      <td>Filippi et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Th2 RNA probe</td>
+      <td>Filippi et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 AB strain zebrafish maintenance and breeding was performed at 28.5C with a 14 hr:10 hr light-dark cycle. Isolated fish were housed in custom chambers (length = 15 cm, width = 5 cm, height = 10 cm) made of opaque white acrylic with translucent lids, either from fertilization (full isolation) or for 48 hr prior to the behavioural experiment (partial isolation). All experiments were performed according to protocols approved by local ethical committee (AWERB Bloomsbury Campus UCL) and the UK Home Office.
 
-## Behavioural assay and analysis
+### Behavioural assay and analysis
 
 Experimental details and image acquisition were performed as described previously (Dreosti et al., 2015). Fish were positioned in custom-built behavioural arenas (Figure 1D) made of white acrylic, and illuminated with visible light using a laser light projector (Microvision, ShowwX+, US). The videography system comprised a high-speed camera (Flea3, PointGrey, CA), an infrared light (Advanced Illumination, US, 880 nm), an IR filter (R70, Hoya, JP), and a vari-focal lens (Fujinon, JP). Experiments were recorded using custom written workflows in Bonsai (Langen et al., 2015). Test fish were positioned in the main C-shape compartment of the arena by pipetting, and left for 15 min to acclimate. A social cue, two fish of same age and similar size, was then introduced into one of the two adjacent chambers randomly. Test fish could see the social cue through a glass window. Each fish was run only once in the behavioural assay.
 
@@ -77,15 +212,15 @@ Images were analysed using custom written computer vision scripts in Python base
 
 The visual preference index (VPI) was calculated by subtracting the number of frames in which the fish was located on the side of the arena nearest the social stimulus (Social cue (SC) side in Figure 1B) by the number of frames located on the opposite side of the arena (nsc (No SC) side). This difference was then divided by the total number of frames recorded [VPI = (SC – No SC)/Total frames]. The percent time moving was calculated by counting each frame with detectable changes in the fish image relative to the previous frame (i.e. motion), and dividing by the total number of frames. The percent time freezing was calculated by detecting contiguous sequences without motion longer than 3 s, counting all frames that are part of such sequences, and dividing by the total number of frames.
 
-## Whole mount in situ hybridisation
+### Whole mount in situ hybridisation
 
 Fluorescent in situ hybridizations using digoxigenin-labelled c-fos were performed on dissected juvenile zebrafish with few modification to the original method (Brend and Holley, 2009). After overnight fixation in 4% PFA, protein K treatment (2 mg/ml 20 min of incubation), inactivation of endogenous peroxidase with H2O2 (22% v/v for 30 min at room temperature), additional fixation (30 min at room temperature) and 3 hr of incubation with the hybridisation buffer, fish were incubated with the c-fos probe (courtesy from Ricardo N. Silva (Forward CCGATACACTGCAAGCTGAA and Reverse ATTGCAGGGCTATGGAAGTG), or with dopamine transporter (DAT), tyrosine hydroxylase 1 (Th1), tyrosine hydroxylase (Th2) (Filippi et al., 2010), or the 5‐HT transporter, solute carrier family 6 member 4b (Slc6a4b) probes (Norton et al., 2008). C-fos, DAT and Slc6a4b probes were detected with anti-Digoxigenin-POD, Fab fragments (Roche, 1:3000) and TSA Plus Cyanine 3 System (Perkin Elmer, 1:50). Nuclear staining was obtained using DAPI (Sigma-Aldrich, 1: 500). Fish were then mounted for imaging in low melting point agarose (2.5% Agarose, 0.8% glycerol, PBS-Tween) and imaged.
 
-## Imaging and registration
+### Imaging and registration
 
 A custom built two-photon microscope (INSS) was used for image acquisition of whole-brain in situs. Both DAPI and Cy3 Images were collected with a 10x objective (Olympus, W Plan-Apochromat 10x/0.5 M27 75 mm) using a ‘Chameleon’ titanium–sapphire laser tuned to 1030 nm (Coherent Inc, Santa Clara, CA, US) and controlled using custom written software in LabView. Registration of in-situ images was performed using ANTs (Advanced Normalisation Tools) version 2.1.0 running on the UCL Legion compute cluster. Images were down-sampled to 512*512 and parameters were slightly modified from Marquart et al. (2017) fixed registration:antsRegistration -d 3 --float 1 -o [Registered_Image_, Registered_Image _warped.nii.gz] --interpolation WelchWindowedSinc --use-histogram-matching 0 r [reference_Image, Registered_Image,1] -t rigid[0.1] -m MI[reference_Image, Registered_Image _0.nii,1,32,Regular,0.25] -c [1000 × 500×250 × 100,1e-8,10] --shrink-factors 12 × 8×4 × 2 s 4 × 3×2 × 1 t Affine[0.1] -m MI[reference_Image, Registered_Image,1,32,Regular,0.25] -c [1000 × 500×250 × 100,1e-8,10] --shrink-factors 12 × 8×4 × 2 s 4 × 3×2 × 1 t SyN[0.1,6,0] -m CC[reference_Image, Registered_Image _0.nii,1,2] -c [1000 × 500×500x250 × 100,1e-7,10] --shrink-factors 12 × 8×4x2 × 1 s 4 × 3×2x1 × 0 antsApplyTransforms -d 3 v 0 --float -n WelchWindowedSinc -i Registered_Image _1.nii -r reference_Image -o Registered_Image _warped_red.nii.gz -t Registered_Image _1Warp.nii.gz -t Registered_Image _0GenericAffine.mat
 
-## Intensity normalisation
+### Intensity normalisation
 
 The registered image stacks were then normalised to adjust for intensity variations between imaging sessions caused by a variety of sources (staining efficiency, laser power fluctuations, light detector sensitivity, etc.). Normalisation was accomplished by computing an intensity histogram for each fish brain’s volume (with 10000 discrete intensity bins spanning the range −4000.0 to 70000.0) for all 512*512*273 voxels. The minimum value bin (with at least 100 voxels) was used as the bias offset, and subtracted from all voxel values. The mode value, minus the bias, provided a robust estimate of the background/baseline fluorescence and was thus used to normalise voxel values for the entire volume. Therefore, after normalisation, an intensity value of 1 reflected the background level while two indicates fluorescence level that is twice the background, and so on. Histogram normalisation was performed for each individual fish’s brain volume prior to any region or voxel-based analysis.
 
@@ -93,14 +228,14 @@ Figures 2B and 3A Reconstruction of cross section images were obtained by using 
 
 Figures 2D Percentages of c-fos activation were calculated for each of the six different areas highlighted in Figures 2B and 3A, using custom written Python functions, in the following way. A 3D mask for each area was generated by using the ‘Segmentation Editor’ plugin Fiji (https://imagej.net/Segmentation_Editor). C-fos percentage values for each condition (C (+S), C (-S), Fi (-S), Pi (-S)) were obtained by subtracting and then dividing each c-fos average value of the mask by the basal c-fos average value calculated in control fish No Social Cue.
 
-## Statistics
+### Statistics
 
 Statistical analysis was performed using Python scipy stats libraries. Since VPI, percent time moving/freezing, and c-fos activity distributions were generally not normally distributed, we used the non-parametric Mann-Whitney U-test of independent samples for hypothesis testing throughout the manuscript.
 
-## Drug treatment
+### Drug treatment
 
 Juvenile fish were treated with 30 µM or 50 µM Buspirone (Buspirone HCl, Sigma) for 10 min prior the experiment. After washing, fish were run through the behavioural assay. Each fish was used only once.
 
-## Data availability
+### Data availability
 
 All the images, video, protocols, analysis scripts, and data that support the findings of this study are available from this website (http://www.dreo-sci.com/resources/), or our GitHub repository (https://github.com/Dreosti-Lab/Lonely_Fish_2020; Dreosti, 2020; copy archived at https://github.com/elifesciences-publications/Lonely_Fish_2020), or from the corresponding author upon request.

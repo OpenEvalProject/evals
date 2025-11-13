@@ -22,7 +22,7 @@
 
 ## Abstract
 
-KCNMA1 forms the pore of BK K + channels, which regulate neuronal and muscle excitability. Recently, genetic screening identified heterozygous KCNMA1 variants in a subset of patients with debilitating paroxysmal non-kinesigenic dyskinesia, presenting with or without epilepsy (PNKD3). However, the relevance of KCNMA1 mutations and the basis for clinical heterogeneity in PNKD3 has not been established. Here, we evaluate the relative severity of three KCNMA1 patient variants in BK channels, neurons, and mice. In heterologous cells, BK N999S and BK D434G channels displayed gain-of-function (GOF) properties, whereas BK H444Q channels showed loss-of-function (LOF) properties. The relative degree of channel activity was BK N999S > BK D434G >WT > BK H444Q . BK currents and action potential firing were increased, and seizure thresholds decreased, in Kcnma1 N999S/WT and Kcnma1 D434G/WT transgenic mice but not Kcnma1 H444Q/WT mice. In a novel behavioral test for paroxysmal dyskinesia, the more severely affected Kcnma1 N999S/WT mice became immobile after stress. This was abrogated by acute dextroamphetamine treatment, consistent with PNKD3-affected individuals. Homozygous Kcnma1 D434G/D434G mice showed similar immobility, but in contrast, homozygous Kcnma1 H444Q/H444Q mice displayed hyperkinetic behavior. These data establish the relative pathogenic potential of patient alleles as N999S>D434G>H444Q and validate Kcnma1 N999S/WT mice as a model for PNKD3 with increased seizure propensity.
+KCNMA1 forms the pore of BK K+ channels, which regulate neuronal and muscle excitability. Recently, genetic screening identified heterozygous KCNMA1 variants in a subset of patients with debilitating paroxysmal non-kinesigenic dyskinesia, presenting with or without epilepsy (PNKD3). However, the relevance of KCNMA1 mutations and the basis for clinical heterogeneity in PNKD3 has not been established. Here, we evaluate the relative severity of three KCNMA1 patient variants in BK channels, neurons, and mice. In heterologous cells, BKN999S and BKD434G channels displayed gain-of-function (GOF) properties, whereas BKH444Q channels showed loss-of-function (LOF) properties. The relative degree of channel activity was BKN999S > BKD434G>WT > BKH444Q. BK currents and action potential firing were increased, and seizure thresholds decreased, in Kcnma1N999S/WT and Kcnma1D434G/WT transgenic mice but not Kcnma1H444Q/WT mice. In a novel behavioral test for paroxysmal dyskinesia, the more severely affected Kcnma1N999S/WT mice became immobile after stress. This was abrogated by acute dextroamphetamine treatment, consistent with PNKD3-affected individuals. Homozygous Kcnma1D434G/D434G mice showed similar immobility, but in contrast, homozygous Kcnma1H444Q/H444Q mice displayed hyperkinetic behavior. These data establish the relative pathogenic potential of patient alleles as N999S>D434G>H444Q and validate Kcnma1N999S/WT mice as a model for PNKD3 with increased seizure propensity.
 
 ## Introduction
 
@@ -30,13 +30,25 @@ KCNMA1-linked channelopathy encompasses an array of neurological symptoms associ
 
 KCNMA1 encodes the ‘Big K+’ (BK) channel, activated by voltage and intracellular Ca2+ (Figure 1). BK currents are prominent in the central nervous system and smooth muscle (Bailey et al., 2019; Contet et al., 2016; Latorre et al., 2017). Neuronal BK channels regulate action potential repolarization and fast afterhyperpolarizations (fAHP) to set firing rates (Gu et al., 2007; Montgomery and Meredith, 2012; Sah and Faber, 2002; Shao et al., 1999) and neurotransmission (Golding et al., 1999; Raffaelli et al., 2004; Sailer et al., 2006; Tazerart et al., 2022). KCNMA1 knockout mice (Kcnma1‒/‒) show prominent smooth muscle, neurobehavioral, and locomotor deficits, associated with widespread alterations in cellular excitability (MGI:99923; Bailey et al., 2019; Meredith et al., 2004; Sausbier et al., 2005; Sausbier et al., 2004). However, Kcnma1‒/‒ mice do not overtly exhibit KCNMA1-linked channelopathy symptoms. Moreover, the largest cohort of clinically distinguishable patients harbor gain-of-function (GOF), rather than loss-of-function (LOF), alleles with respect to BK channel activity (Miller et al., 2021).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig1-v1.jpg)
+
+**Figure 1.:** (A) KCNMA1 forms the homotetrameric BK channel. Each α subunit is comprised of seven transmembrane domains (S0‒S6) and an intracellular gating ring with hydrophobic segments (S7–S10, black). Pore (+) opening and closing is regulated by voltage-sensitive residues in S2‒S4 (VSD), the AC domain (βA to αC), and two Regulators of Conductance of Potassium (RCK) domains in the gating ring (gray), each containing a Ca2+ binding site (green) (Yang et al., 2015; Giraldez and Rothberg, 2017). (B) BK channel structure showing two opposing subunits with Ca2+ bound in the gating ring (PDB 6V38). H444Q (purple) and D434G (blue) are located within the βB-αB and αA and βB of the AC domain, respectively, a region within RCK1 affecting Ca2+-dependent gating (Du et al., 2005; Tao and MacKinnon, 2019). N999S (red) is located at the helix bend in the middle of the S10 domain within RCK2 (Tao and MacKinnon, 2019). (C) Representative inside-out patch-clamp recordings from BKWT, BKN999S, BKD434G, BKH444Q channels expressed in HEK293 cells. Macroscopic BK currents were recorded in symmetrical K+ and 1 μM intracellular Ca2+ by holding patches at −100 mV, stepping from −100 to 250 mV for 30 ms, followed by a tail step −100 mV for 15 ms. Scale bars: 1 nA, 5 ms. (D) Normalized conductance-voltage (G-V) relationships fit with Boltzmann functions (solid lines). There was no change in the slope factor (z) for any of the variants (p=0.06, one-way ANOVA). BKWT (n=12), BKN999S (n=9), BKD434G (n=12), and BKH444Q (n=12). (E) Voltage of half-maximal activation (V1/2) obtained from Boltzmann fits for individual patches. *p<0.0001. One-way ANOVA with Dunnett’s post hoc. (F) Activation time constants (τact). BKN999S and BKD434G channels had decreased τact compared to BKWT, either across all voltage steps (mixed effects model for repeated measures with Bonferroni post hoc, p<0.01) or above 120 mV (p<0.05), respectively. At lower voltages, BKD434G channels were more steeply voltage dependent, but did not exceed the fast activation time constants of BKN999S channels. BKH444Q channels had increased τact compared to BKWT between 160 and 250 mV (p<0.05). Inset: Representative current traces from 170 mV step, scaled to the maximal current to illustrate activation timecourse (x-axis scale bar: 10 ms). τact for BKWT currents was 3.8±0.3 ms, while BKN999S and BKD434 currents activated faster (0.9±9.1 and 1.8±0.1 ms, respectively) and BKH444Q activated slower (6.5±0.5 ms). (G) Deactivation time constants (τdeact). BKN999S and BKD434G channels had increased τdeact compared to BKWT, across all voltage steps (mixed effects model for repeated measures with Bonferroni post hoc, p<0.01), with the exception of ‒160 (p>0.05), respectively. BKH444Q channels had decreased τdeact compared to BKWT between ‒190 mV and between ‒140 and ‒20 mV (p<0.05). Inset: Representative current traces from ‒20 mV step, scaled to the maximal current to illustrate deactivation timecourse (x-axis scale bar: 10 ms). τdeact for BKWT currents was 0.7±0.01 ms, while BKN999S and BKD434 currents deactivated slower (4.5±0.7 and 1.5±0.1 ms, respectively) and BKH444Q deactivated more quickly (0.4±0.01 ms). Data are presented as mean ± SEM. Additional data on the effects of stimulants on BKWT and BKN999S channels appears in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Kcnma1N999S/WT mice were generated by introducing a non-synonymous mutation within the codon AAT→ AgT (red boxes) in exon 25. WT sequence is C57BL/6J. Underlined nucleotides are the gRNA sequence. Lowercase letters denote mutations. Chromatogram from an N1 heterozygous mouse. (B) Kcnma1D434G/WT mice were generated by mutation within the codon GAT→ GgT in exon 10. Chromatogram from a founder mouse. (C) Kcnma1H444Q/WT mice were generated by mutation within the codon CAC → CAg in exon 10 (same guide RNA as D434G). Chromatogram from a founder mouse.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** D-amp and lis, a prodrug of D-amphetamine and L-lysine, have been reported to treat paroxysmal non-kinesigenic dyskinesia (PNKD) episodes in six children harboring N999S variants, as well as one child harboring another gain-of-function (GOF) variant (Miller et al., 2021; Zhang et al., 2020). To test if either drug has a direct effect on BK currents in heterologous cells, as has been suggested for methamphetamine (Lin et al., 2016; Fu et al., 2021; Tatro et al., 2013; Wang et al., 2013), d-amp and lis were applied to patches from HEK293 cells expressing BKWT or BKN999S. Macroscopic BK currents were evaluated after perfusion of each drug and compared to pre-drug control current levels. Normalized data presented as the proportion of the maximal current (I/Imax) for each patch, before (control) and after drug application. Neither 155 ng/ml lis (BKN999S: n=7, p=0.98; one-way ANOVA) nor 155 ng/ml d-amp (BKWT: n=4, p=0.99; one-way ANOVA and BKN999S: n=6, p=0.15; one-way ANOVA) produced a decrease in BK current levels. However, the BK channel inhibitor paxilline (pax, 100 nM), applied as a control, fully abrogated BKWT or BKN999S currents at the end of each experiment (p<0.001; one-way ANOVA for all). Data are presented as mean ± SEM.
+
 Two GOF KCNMA1 variants, D434G and N999S, account for half of the patient population (Bailey et al., 2019; Miller et al., 2021). Both variants cause BK channel activation at more negative membrane potentials, speed activation, and slow deactivation (Diez-Sampedro et al., 2006; Du et al., 2005; Li et al., 2018; Moldenhauer et al., 2020a; Wang et al., 2009; Yang et al., 2010). The majority of individuals harboring D434G and N999S variants present with paroxysmal non-kinesigenic dyskinesia (PNKD type 3; OMIM #609446), characterized by varying degrees of negative motor phenomena described as dystonia, hypotonia, non-narcoleptic cataplexy, and akinesia. PNKD3 episodes manifest as postural lapses with immobility (‘drop attacks’) that occur with short duration and high frequency, often hundreds of times per day (Du et al., 2005; Heim et al., 2020; Keros et al., 2022; Li et al., 2018; Wang et al., 2017; Zhang et al., 2015). Just under half of patients experience seizure of varying types, including absence, atonic, myoclonic, and generalized tonic-clonic (GTC). However, epilepsy and PNKD are not consistently co-morbid (Du et al., 2005; Miller et al., 2021). Individuals with putative LOF variants report additional movement disorders including dyskinesia, axial hypotonia, tremor, or ataxia, in addition to various seizure types (Du et al., 2020; Liang et al., 2019; Rodrigues Bento et al., 2021; Tabarki et al., 2016; Yeşil et al., 2018). It is not yet clear whether variations in symptomatic presentation result from incomplete or inconsistent clinical evaluations, or genuine genotype-phenotype differences within either GOF or LOF cohorts.
 
 We address these questions through heterologous, neuronal, and neurobehavioral validation for three patient-associated KCNMA1 variants in mouse models. The GOF BKN999S and BKD434G channels produced increased neuronal BK currents and firing as heterozygous alleles in transgenic mice, while heterozygous LOF BKH444Q channels were insufficient to alter neuronal properties. Mice were evaluated in a series of spontaneous and evoked seizure and locomotor assays. N999S propagated the largest symptomatic burden with chemoconvulsant challenge and stress-triggered dyskinesia, supporting the conclusion that this variant has the greatest monogenic pathogenicity, followed by D434G, Kcnma1‒/‒, and H444Q. The results identify Kcnma1N999S/WT mice as a PNKD3 model with the highest phenotypic similarity to patients harboring KCNMA1 GOF variants, including symptomatic resolution with acute dextroamphetamine treatment. Our findings further establish the stress-induced PNKD assay to delineate distinct symptomatic manifestations between GOF and LOF alleles, supporting its utility in a battery of neurobehavioral evaluations to define KCNMA1-linked channelopathy models.
 
 ## Results
 
-## Patient variants confer GOF (N999S and D434G) and LOF (H444Q) properties on BK channel activity
+### Patient variants confer GOF (N999S and D434G) and LOF (H444Q) properties on BK channel activity
 
 A comparative assessment for three dyskinesia-associated patient variants (N999S, D434G, and H444Q) was performed within the human BK channel (Figure 1). BK channel function was assessed using inside-out patch-clamp recordings in HEK293 cells. Patches from cells expressing BKWT, BKN999S, BKD434G, BKH444Q channels were activated with depolarizing voltage steps, and the voltage dependence of activation and kinetics were assessed from macroscopic currents (Figure 1C). Conductance versus voltage (G-V) relationships (Figure 1D) were assessed by the voltage of half-maximal activation (V1/2; Figure 1E).
 
@@ -44,13 +56,13 @@ BKWT currents had a V1/2 of 125±2 mV. Introduction of N999S and D434G mutations
 
 In contrast, introduction of the H444Q variant shifted the G-V relationship to more positive potentials (V1/2: BKH444Q 155±4 mV), consistent with LOF effects. H444Q produced changes in channel opening and closing further consistent with LOF effects, slowing activation and speeding deactivation (Figure 1D–G). H444Q produced a smaller difference from WT than either GOF variant (ΔV1/2 = 30 mV), identifying H444Q as a comparatively mild variant. The results indicate that N999S produces the strongest effect on BK channel activation in the GOF direction, followed by D434G (GOF) and H444Q (LOF).
 
-## Generation of N999S, D434G, and H444Q mouse models
+### Generation of N999S, D434G, and H444Q mouse models
 
 Correlation between patient genotype and phenotype has only been established for a single KCNMA1 variant so far, D434G, an autosomal dominant that co-segregates with PNKD and epilepsy in a multi-generation pedigree (Du et al., 2005). D434G pathogenicity is further corroborated by mouse and fly models, which show alterations in neuronal excitability, brain and motor function (Dong et al., 2021; Kratschmer et al., 2021). In contrast, N999S and H444Q lack this direct evidence due to the absence of familial transmission among the children that carry these variants (Miller et al., 2021). N999S is the most common de novo KCNMA1 variant (~17% of all patients), found as heterozygous in every case. About half of individuals harboring N999S alleles are diagnosed with seizure, PNKD, or both (Keros et al., 2022; Li et al., 2018; Wang et al., 2017; Zhang et al., 2015), suggesting a strong potential to be causative in channelopathy symptoms. H444Q is found in a single case and is one of several putative LOF variants where affected individuals have dyskinesia-like paroxysms (Miller et al., 2021). This proband had a history of abnormal EEG, unresolved with respect to the diagnosis of epilepsy, but also harbors three additional genetic findings (ALM unpublished data).
 
 To establish genotype-phenotype correlations, heterozygous mice replicating the patient genotypes were first evaluated. Each variant was introduced as a single nucleotide mutation into the mouse Kcnma1 gene using CRISPR base-editing (Figure 1—figure supplement 1). In all animal experiments, investigators were blinded to genotype during data collection and analysis, and WT controls were compared to transgenic littermates within individual transgenic lines. Kcnma1N999S/WT, Kcnma1D434G/WT, and Kcnma1H444Q/WT mice were grossly behaviorally and morphologically normal with no notable spontaneous paroxysms, gait abnormalities, or visually detectable seizures during home cage observation. Kcnma1D434G/WT and Kcnma1H444Q/WT intercrosses produced homozygous progeny that were also visually normal. However, Kcnma1N999S/WT intercrosses produced no homozygous pups (see Materials and methods). The absence of homozygous N999S progeny is similar to Tg-BKR207Q mice harboring another strong GOF mutation that showed lethality in the homozygous allele configuration (Montgomery and Meredith, 2012). Given the inability to generate homozygous N999S mice, gene expression was analyzed from hippocampus and cerebellum of Kcnma1N999S/WT and WT littermates (n=3 mice each genotype and tissue). No significant differences were found in the levels of Kcnma1 (1.07-fold change, p=0.79, FDR = 0.99, ANOVA with eBayes test), or BKβ subunits expressed in brain: Kcnmb1 (−1.07, p=0.14), Kcnmb2 (1.00, p=0.84), and Kcnmb4 (−1.03, p=0.46). The results show no gross up- or down-regulation of BK channel components in either the hippocampus or cerebellum of Kcnma1N999S/WT neurons. However, since the microarray-based probe set does not distinguish between the WT and N999S Kcnma1 transcripts, no further conclusion can be made regarding the specific expression ratio of each allele.
 
-## N999S and D434G increase BK current in hippocampal neurons
+### N999S and D434G increase BK current in hippocampal neurons
 
 From heterologous cells, we predicted that the variants would have a strong (N999S), intermediate (D434G), or weak (H444Q) potential to alter neuronal BK current levels in transgenic mice. However, heterozygous patient genotypes create the possibility for hetero-tetramer channel formation (Geng et al., 2021), necessitating understanding the relative GOF and LOF effects in vivo from BK current levels in heterozygous transgenics compared to WT littermates. Recordings were made in the dentate gyrus of the hippocampus, where BK channels are highly expressed, regulate neuronal excitability, and where changes in BK channel properties are associated with seizure (Kaufmann et al., 2010; Knaus et al., 1996; Misonou et al., 2006; Sailer et al., 2006; Sausbier et al., 2005; Sausbier et al., 2006, Trimmer, 2015). In dentate granule cells, excitability is sensitive to changes in BK current in both directions, assessed using pharmacological inhibition as well as deletion of the β4 subunit (Brenner et al., 2005; Mehranfard et al., 2014; Mehranfard et al., 2015). Loss of β4 creates GOF BK channels by speeding BK channel kinetics, and Kcnmb4‒/‒ knockout mice have temporal lobe seizures (Jaffe and Brenner, 2018; Petrik et al., 2011; Wang et al., 2016; Whitmire et al., 2017).
 
@@ -58,15 +70,27 @@ BK currents from Kcnma1WT/WT neurons activated at ‒40 mV, increasing to 21‒2
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig2-v1.jpg)
 
-**Figure 2.:** Kcnma1N999S/WT and Kcnma1D434G/D434G granule neurons.Whole-cell macroscopic BK currents were recorded in 1 μM tetrodotoxin (TTX) and 2 mM 4-aminopyridine (4-AP), isolated with 10 μM paxilline, and normalized to cell capacitance. Activating voltage steps were applied from Vh of ‒90 mV, stepping from ‒100 to +30 mV for 150 ms, and back to ‒90 mV for 130 ms. (A‒C) Peak BK current density versus voltage relationships. Data are presented as mean ± SEM. * and †, p<0.05, two-way repeated measures ANOVA with Bonferroni post hoc. Insets: Representative BK current traces at 30 mV. Scale bars: 500 pA, 5 ms. (A) BK current density was larger in Kcnma1N999S/WT neurons (n=16 neurons, 5 mice) compared to Kcnma1WT/WT (n=14 neurons, 4 mice) at ‒30 mV (p=0.0114), ‒20 (p=0.0210), ‒10 (p=0.0426) voltage steps (indicated with *). (B) BK current density was larger in Kcnma1 D434G/D434G neurons (n=12 neurons, 3 mice) compared to Kcnma1WT/WT (n=10 neurons, 4 mice) at density at ‒40 mV (p=0.0112), ‒30 (p=0.0026), ‒20 (p=0.0031), ‒10 (p=0.0038), 0 (p=0.0078), 10 (p=0.0068), 20 (p=0.0071), 30 (p=0.0088) voltage steps (*). Kcnma1D434G/WT mice (n=9 neurons, 3 mice) had higher BK current density compared to Kcnma1WT/WT at ‒30 mV only (†p=0.0321). (C) BK current density was not different in Kcnma1H444Q/WT neurons (n=7 neurons, 2 mice) compared to Kcnma1WT/WT (n=6 neurons, 3 mice).Figure 2—source data 1.Figure 2A–C.
+**Figure 2.:** Whole-cell macroscopic BK currents were recorded in 1 μM tetrodotoxin (TTX) and 2 mM 4-aminopyridine (4-AP), isolated with 10 μM paxilline, and normalized to cell capacitance. Activating voltage steps were applied from Vh of ‒90 mV, stepping from ‒100 to +30 mV for 150 ms, and back to ‒90 mV for 130 ms. (A‒C) Peak BK current density versus voltage relationships. Data are presented as mean ± SEM. * and †, p<0.05, two-way repeated measures ANOVA with Bonferroni post hoc. Insets: Representative BK current traces at 30 mV. Scale bars: 500 pA, 5 ms. (A) BK current density was larger in Kcnma1N999S/WT neurons (n=16 neurons, 5 mice) compared to Kcnma1WT/WT (n=14 neurons, 4 mice) at ‒30 mV (p=0.0114), ‒20 (p=0.0210), ‒10 (p=0.0426) voltage steps (indicated with *). (B) BK current density was larger in Kcnma1 D434G/D434G neurons (n=12 neurons, 3 mice) compared to Kcnma1WT/WT (n=10 neurons, 4 mice) at density at ‒40 mV (p=0.0112), ‒30 (p=0.0026), ‒20 (p=0.0031), ‒10 (p=0.0038), 0 (p=0.0078), 10 (p=0.0068), 20 (p=0.0071), 30 (p=0.0088) voltage steps (*). Kcnma1D434G/WT mice (n=9 neurons, 3 mice) had higher BK current density compared to Kcnma1WT/WT at ‒30 mV only (†p=0.0321). (C) BK current density was not different in Kcnma1H444Q/WT neurons (n=7 neurons, 2 mice) compared to Kcnma1WT/WT (n=6 neurons, 3 mice).
 
 In contrast, BK currents in Kcnma1H444Q/WT neurons were not significantly different compared to WT littermates at any voltage (Kcnma1WT/WT 10.9±1.0 pA/pF and Kcnma1H444Q/WT 9.5±1.9 pA/pF at ‒10 mV; ‒13% change; Figure 2C). This establishes an allelic series of Kcnma1D434G/D434G >> Kcnma1D434G/WT ≈ Kcnma1N999S/WT >Kcnma1H444Q/WT with respect to BK current magnitude and supports the potential for N999S and D434G to cause neurobehavioral changes. The detrimental potential for Kcnma1H444Q/WT is less clear and may require additional factors or mechanisms to support pathogenicity (i.e., other Ca2+ conditions, cell types, or gene interactions).
 
 These dentate granule whole-cell recordings represent an initial evaluation of the potential for each variant to affect BK currents under physiological conditions. For Kcnma1N999S/WT, the increased BK current is not associated with higher transcript expression. Although the ratio of WT and N999S transcripts could not be individually determined from the microarray probe set, the single nucleotide mutations introduced into coding exons provide no obvious mechanism to alter the allelic expression ratios. Assuming both alleles are expressed normally, it would suggest functional changes underlie the BK current increase. However, how the properties identified from homotetramic channels (Figure 1C–G) contribute to the increased current in neurons is unknown. The apparent voltage dependence of activation was not different between N999S, D434G, H444Q, and their respective WT control currents in neurons (data not shown). Several factors that could mitigate differences in V1/2 recorded from homotetramers are undefined in the neurons, including the α (WT:mutant) and β subunit stoichiometry, splice variant background, and intracellular Ca2+. Limited data is available to consider the impact of these on heterozygous variants. Co-expression of WT and mutant (GOF) BK channel cDNAs supports the assumption that heterotetramers are the predominant channel type produced by 1:1 transcript ratios in Xenopus oocytes (Geng et al., 2021). A few studies have shown that N999S and D434G confer similar ΔV1/2 onto different splice variants (Figure 1C–G; Li et al., 2018; Moldenhauer et al., 2020a; Wang et al., 2009) and maintain left-shifted V1/2 values compared to WT in the presence of the β4 subunit (Berkefeld and Fakler, 2013; Li et al., 2018; Wang et al., 2009). This data is not available for H444Q, which produced smaller effects. Yet even with D434G, less of a difference is found ±β4 above 10 μM Ca2+ (Wang et al., 2009), which could be significant in granule neurons given the widespread abundance of β4.
 
-## N999S and D434G increase intrinsic neuronal excitability
+### N999S and D434G increase intrinsic neuronal excitability
 
 Intrinsic excitability was next assessed in dentate granule neurons as an independent validation for neuronal pathogenicity. Both GOF and LOF BK channel mutations have the ability to alter neuronal activity in either direction, depending on the context (Bailey et al., 2019; Brenner et al., 2005; Montgomery and Meredith, 2012; Gu et al., 2007; Sausbier et al., 2004). Dentate granule cell input-output firing relationships were assessed in current-clamp mode (Figure 3). Firing rates increased with current injection in each Kcnma1WT/WT littermate control dataset, reaching a peak of ~40 Hz between 240 and 260 pA and then decreasing with higher current injections (Figure 3A–B). Kcnma1N999S/WT firing was greater than Kcnma1WT/WT littermate neurons in several key places. First, across the whole current injection range, firing was significantly increased in the middle portion (160–240 pA), ranging from 25% to 30% higher than WT (Figure 3Ai, Bi). After reaching the maximum, the firing still decreased instead of remaining higher through the full range of current injections. In addition, the initial slope of firing (0–160 pA) was greater in Kcnma1N999S/WT neurons (0.22±0.01 Hz/pA) compared to Kcnma1WT/WT (0.18±0.01 Hz/pA, Figure 3Ci). Lastly, the maximal firing was 9.6±1.8 Hz (125%) higher in Kcnma1N999S/WT neurons versus Kcnma1WT/WT (Figure 3Di). Taken together, Kcnma1N999S/WT neurons respond to stimulation with higher firing and a shift in the input-output relationship.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig3-v1.jpg)
+
+**Figure 3.:** In current-clamp mode, step currents from 0 to 400 pA were applied to dentate granule neurons under the same ionic conditions used to record BK currents. (Ai–Aiii) Representative AP trains elicited from the 200 pA current injection step in WT and transgenic neurons. Scale bar: 20 mV, 100 ms. (Bi–Biii) Input-output relationship for firing frequency versus step current injection. Data are presented as mean ± SEM. *p<0.05, two-way repeated measures ANOVA with Bonferroni post hoc. (Bi) Kcnma1N999S/WT (n=23 neurons, 5 mice) firing was higher than Kcnma1WT/WT (n=16 neurons, 5 mice) at 160 pA (p=0.0426), 180 pA (p=0.0143), 200 (p=0.0068), 220 pA (p=0.0009), and 240 pA (p=0.0337) current steps. (Bii) Kcnma1D434G/WT (n=27 neurons, 5 mice) firing was higher than Kcnma1WT/WT (n=22 neurons, 5 mice) at 260 pA (p=0.0452), 280 (p=0.0314), 300 (p=0.0351), 320 (p=0.0177), 340 (p=0.0309), 360 (p=0.0358), 380 (p=0.0312), and 400 (p=0.0444) current steps. Kcnma1D434G/D434G (n=19 neurons, 4 mice) firing was higher than Kcnma1WT/WT at 40 pA (p=0.0266), 60 (p=0.0233), 80 (p=0.0277), 100 (p=0.0130), 120 (p=0.0074), 140 (p=0.0119), 160 (p=0.0084), 180 (p=0.0063), 200 (p=0.0059), and 220 (p=0.0261) current steps. (Biii) Kcnma1H444Q/WT (n=8 neurons, 2 mice) and Kcnma1H444Q/H444Q (n=11 neurons, 2 mice) firing was not different than Kcnma1WT/WT (n=7 neurons, 1 mouse) at any current step (p=0.3222). (Ci–Ciii) Initial slope for the firing rate gain between 0 and 160 pA current injections. Data are presented as mean ± SEM, with individual data points. (Ci) Kcnma1N999S/WT firing slope was increased compared to WT (*p=0.0034; t-test). (Cii) Kcnma1 D434G/D434G firing slope was increased compared to WT (*p=0.0051; one-way ANOVA), Kcnma1 D434G/WT slopes were unchanged (p=0.9774). (Ciii) Kcnma1H444Q/WT and/or Kcnma1H444Q/H444Q firing slopes were not different than WT (p=0.9658). (Di–Diii) Maximum firing frequency. Data are presented as mean ± SEM. (Di) Maximal firing from Kcnma1N999S/WT neurons was increased compared to WT (*p<0.0001; t-test). (Dii) Maximal firing from Kcnma1 D434G/WT and Kcnma1 D434G/D434G neurons was increased compared to WT (*p=0.0387 and p=0.0111, respectively; one-way ANOVA). (Diii) Maximal firing from Kcnma1H444Q/WT and/or Kcnma1H444Q/H444Q neurons was not different than WT (p=0.4625; one-way ANOVA). Passive membrane properties for this dataset appear in Figure 3—figure supplement 1. Action potential waveform analysis for this dataset appears in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Data are presented as mean ± SEM. Resting membrane potential (RMP) was ‒80 to ‒82 mV across WT controls. No significant depolarizations were observed between littermate controls and Kcnma1N999S/WT, Kcnma1D434G/D434G, Kcnma1H444Q/WT, and Kcnma1H444Q/H444Q dentate granule neurons (p>0.05, unpaired t-test and one-way ANOVA, respectively). Similarly, the range for input resistance (Ri) was 320–364 MΩ for WT neurons and was not different in any transgenic condition. These results are consistent with previous studies in dentate granule cells finding no effect of BK channel inhibition on RMP or Ri (Bock and Stuart, 2016; Brenner et al., 2005). The only condition showing a difference from the respective WT control was a greater membrane capacitance (Cm) in Kcnma1D434G/WT neurons (*p=0.0036). An explanation for this change in Cm is unclear from the data. However, this difference could have the potential to reduce the firing gain at lower current injections, preventing the Kcnma1D434G/WT input-output curve from looking similar to Kcnma1N999S/WT (Figure 3Bi, Bii).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Superimposed Kcnma1N999S/WT and Kcnma1WT/WT waveforms from the 10th action potential at the 200 pA current injection from data in Figure 3. (B) Action potential half-width (t1/2) was not different in Kcnma1N999S/WT neurons versus WT controls (p=0.6617; Mann-Whitney test). (C) Fast afterhyperpolarizations (fAHP) amplitude was not different in Kcnma1N999S/WT neurons versus WT controls (p=9214; Mann-Whitney test). (D) AHP decay 3 ms after the peak was faster in Kcnma1N999S/WT neurons (Kcnma1N999S/WT 0.60±0.03 mV/ms) compared to WT controls (0.41±0.03 mV/ms, *p=0.0002; t-test). In panels B-D, Kcnma1N999S/WT (n = 23 neurons) and Kcnma1WT/WT (n = 16 neurons). (E) Superimposed Kcnma1D434G/D434G, Kcnma1D434G/WT, and Kcnma1WT/WT waveforms from the 10th action potential at the 200 pA current injection from data in Figure 3. (F) t1/2 was different in Kcnma1D434G/WT (*p=0.0002; Kruskal-Wallis test), but not Kcnma1D434G/D434G neurons (p=0 > 0.9999). (G) fAHP amplitudes were comparable in Kcnma1D434G mice (p=0.3441; Kruskal-Wallis test). (H) AHP decay 3 ms after the peak was faster in Kcnma1D434G/D434G neurons (0.69±0.04 mV/ms) compared to WT controls (0.46±0.04 mV/ms, *p=0.0002), but not in Kcnma1D434G/WT (0.56±0.02 mV/ms, p=0.0620; one-way ANOVA). In panels F-H, Kcnma1D434G/D434G (n = 19 neurons), Kcnma1D434G/WT (n = 27 neurons), and Kcnma1WT/WT (n = 22 neurons). Data are presented as mean ± SEM, with individual data points.
 
 Increased firing was also observed in Kcnma1D434G/WT neurons, but the shape of the input-output alteration was different than that observed in Kcnma1N999S/WT. Firing was 18–67% greater than WT controls at higher current injections only, from 260 to 400 pA (Figure 3Aii,Bii). Despite the increase at the higher end of the range, Kcnma1D434G/WT firing still decreased after reaching a maximum, while remaining higher than Kcnma1WT/WT. The initial firing rate slope was not different from Kcnma1WT/WT (Figure 3Cii). However, the maximal firing rate was 5.5±2.2 Hz greater (113%) for Kcnma1D434G/WT compared to Kcnma1WT/WT (Figure 3Dii). This increase was shifted to higher current injections and occurred over a wider range of voltages than that observed for Kcnma1N999S/WT.
 
@@ -78,7 +102,7 @@ We conclude that both the N999S and D434G GOF variants have pathogenic potential
 
 The mechanism by which GOF BK channels facilitate AHP decay is not revealed in this study. Though the N999S and D434G variants both slow deactivation in heterologous cells, the deactivation rate remains to be defined in Kcnma1N999S/WT and Kcnma1D434G/D434G neurons under repetitive firing conditions with dynamic Ca2+. In dentate gyrus, the GOF variants share some similarity to BK currents and action potential waveforms recorded from neurons lacking the β4 subunit (Brenner et al., 2005; Jaffe and Brenner, 2018; Wang et al., 2016). Kcnmb4‒/‒ neurons have increased BK current and increased firing associated with accelerated an AHP decay. Like Kcnmb4‒/‒, GOF BK currents may speed AHP decay rate indirectly by affecting another current, most likely SK current due to the lack of change in the AHP amplitudes. GOF variants in the context of β4 deletion would be predicted more severe than either alone, potentially speeding repolarization and further shortening the AHP.
 
-## N999S and D434G reduce seizure thresholds in mice
+### N999S and D434G reduce seizure thresholds in mice
 
 Neuronal hyperexcitability is coincident with establishment of an epileptic network, and about half of all individuals with KCNMA1 channelopathy, including those with N999S, D434G, and H444Q variants, report a history of seizures or epilepsy (Bailey et al., 2019; Miller et al., 2021). Individuals harboring the D434G variant primarily have absence seizures, if present (Du et al., 2005). Dentate gyrus hyperexcitability can both contribute to, and result from, epileptiform activity (Dengler et al., 2017; Krook-Magnuson et al., 2015; Mehranfard et al., 2015; Scharfman, 2019). In β4‒/‒ mice, increased granule neuron firing is found in the setting of hippocampal epileptiform discharges, non-convulsive seizures, and lower chemoconvulsant-induced seizure thresholds (Brenner et al., 2005; Whitmire et al., 2017). We hypothesized that Kcnma1N999S/WT and Kcnma1D434G/WT mice would show increased number, duration, or severity of seizure events compared to WT controls. However, since half of those harboring LOF variants also report seizures (Liang et al., 2019; Miller et al., 2021), including the H444Q and individuals with putative truncation alleles, Kcnma1H444Q/WT and Kcnma1‒/‒ mice were assessed in parallel. No seizures have been previously reported in two established Kcnma1‒/‒ mouse models (Bailey et al., 2019; ALM unpublished data), but spontaneous epilepsy was reported in a Kcnma1-exon4 frameshift mouse line (Yao et al., 2021).
 
@@ -88,13 +112,17 @@ Human epilepsy variants in rodent models without spontaneous abnormalities often
 
 Kcnma1N999S/WT mice developed PTZ-induced seizures that were distinguishable from Kcnma1WT/WT littermates in several parameters. Behaviorally, most Kcnma1N999S/WT mice displayed tonic-clonic activity (9/13 mice modified Racine 3 or 4), with two reaching status epilepticus (2/13 mice; modified Racine 5). The latency to first seizure after PTZ injection was reduced to 75±15 s, compared to WT littermates (294±99 s; Figure 4Ai,C-D). EEG power, an estimation of seizure severity, showed a broader range with Kcnma1N999S/WT mice, although the differences were not significant (Figure 4Bi,C-D). Interestingly despite these observations, mice exhibiting electrographic seizures did not look strikingly behaviorally different from control mice. One reason may be the movement suppression that developed in Kcnma1N999S/WT mice after PTZ injection, quantified by EMG. After PTZ, Kcnma1WT/WT mice had infrequent bouts of sustained quiescent EMG activity, with average lengths of 45±7 s (n=16). However, the inactive bouts were longer for Kcnma1N999S/WT mice (311±126, n=10, p<0.0001, Mann-Whitney test) and were visually apparent (Figure 4—video 4‒2). The movement suppression exhibited by Kcnma1N999S/WT mice under PTZ does not have a correlate in individuals harboring N999S variants, although a few report absence seizures among other types (Miller et al., 2021). Since no spontaneous EEG+/EMG— events were observed in the baseline EEG recording period of these mice, it remains to be determined whether the PTZ-elicited movement suppression is related to an absence-like seizure manifestation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig4-v1.jpg)
+
+**Figure 4.:** (Ai–Aiv) Latency to initial seizure after PTZ injection. Data are individual mice with median and inter-quartile range. (Ai) Latency was decreased in Kcnma1N999S/WT mice (n=13) compared to Kcnma1WT/WT (n=18, *p=0.0006; Mann-Whitney test). (Aii) Latency was decreased in Kcnma1D434G/WT mice (n=7) compared to Kcnma1WT/WT (n=11, *p=0.0041; Mann-Whitney test). (Aiii) Seizure latency was comparable between Kcnma1H444Q/WT (n=7) and Kcnma1WT/WT (n=4, p=0.5273; Mann-Whitney test). (Aiv) No differences were found in seizure latency between Kcnma1‒/‒ (n=9) and Kcnma1+/+ mice (n=13, p=0.2282; Mann-Whitney test). (Bi–iv) Total EEG power after PTZ injection (y-axis in µV2/Hz × 102). Data are individual mice with median and inter-quartile range. (Bi) EEG power was not different between Kcnma1N999S/WT (n=7) and Kcnma1WT/WT (n=11, p=0.0619; t-test). (Bii) Kcnma1D434G/WT (n=4) was not different from Kcnma1WT/WT (n=6, p=0.7563; t-test). (Biii) Kcnma1H444Q/WT (n=6) was not different from Kcnma1WT/WT (n=4, p=0.9641; t-test). (Biv) Kcnma1‒/‒ (n=10) was not different from Kcnma1+/+ (n=9, p=0.2134; t-test). (C) Representative EEG traces over 45 min at baseline and after PTZ injection (red line). (D) Expanded EEG traces for the first seizure indicated with the red boxes in (C). Representative videos for this dataset appear in Figure 4—videos 1–4.
+
 Within the D434G family, there is an intermediate penetrance for epilepsy (56%), the most frequent diagnosis being absence (Du et al., 2005; Miller et al., 2021). Like N999S, Kcnma1D434G/WT mice also showed a reduced latency to first seizure (101±27 s) compared to Kcnma1WT/WT mice (209±35 s; Figure 4Aii,C-D). However, this reduction was not as large as the difference between Kcnma1N999S/WT mice and their respective controls. Total EEG power from Kcnma1D434G/WT mice was not different from WT controls (Figure 4Bii). Therefore, the D434G variant also increased the propensity for seizure in the transgenic model, consistent with its ability to alter neuronal excitability, but was less severe than the N999S variant. The phenotype assessed here for Kcnma1D434G/WT is also less severe than reported in a knock-in mouse model with the D434G mutation introduced in the context of a Cre/lox cassette. Those mice showed spontaneous spike-wave discharges in both the heterozygous and homozygous configuration with complete penetrance (Dong et al., 2021), a phenotype that appears more severe than reported in the D434G pedigree, in which only half experience seizures (Du et al., 2005).
 
 Although no patients have a homozygous D434G genotype, a limited number of Kcnma1D434G/D434G mice were available for EEG analysis. We tested whether Kcnma1D434G/D434G mice, producing only mutant BK channel homotetramers, had a more severe phenotype. These mice showed a trend toward the shortest latencies to seizure, with thresholds comparable to the lowest among the Kcnma1D434G/WT cohort (48, 58, and 69 s). Kcnma1D434G/D434G mice had EEG power overlapping with WT and heterozygous littermates (2172, 4237, and 3627). While not conclusive and requiring substantiation in a larger cohort, the Kcnma1D434G/D434G seizure data raise the possibility of a gene dosage effect with D434G that qualitatively differs from an independently generated D434G mouse model (Dong et al., 2021).
 
 For LOF transgenics, changes in seizure threshold in both directions were considered. Approximately the same proportion of individuals with LOF variants report seizure as those with GOF variants (Miller et al., 2021), a finding validated in one Kcnma1‒/‒ mouse model (Yao et al., 2021). Yet paradoxically, acute inhibition of BK channels has anti-seizure effects in other rodent models (Dong et al., 2021; Kuebler et al., 2001; Sheehan et al., 2009). However, no differences were observed in latency to first seizure or total EEG power in Kcnma1H444Q/WT or Kcnma1‒/‒ mice (Figure 4Aiii-Aiv,Biii-Biv, C-D; Figure 4—video 4). For H444Q, this data suggests the lack of change in dentate granule neuron BK currents and excitability may be consistent with other areas of the brain, producing no change in seizure propensity indicative of widespread hyperexcitability. Overall, alterations in BK current and firing detected concurrently with lowered seizure threshold suggests that the GOF variants N999S and D434G have the potential to contribute to seizure risk by changing neuronal activity in a mouse model. However, partial (H444Q) or total (Kcnma1‒/‒) loss of BK channel function does not support the same potential in seizure etiology under equivalent conditions.
 
-## N999S and D434G cause paroxysmal dyskinesia in mice
+### N999S and D434G cause paroxysmal dyskinesia in mice
 
 One of the most recognizable symptoms in KCNMA1 channelopathy is a distinctive type of dyskinesia manifesting as sudden, brief paroxysms of axial hypotonia (PNKD3). These episodes sometimes resemble the immobility in non-narcoleptic cataplexy, but have preservation of some muscle tone that varies among individuals (Du et al., 2005; Heim et al., 2020; Keros et al., 2022; Miller et al., 2021; Wang et al., 2017; Zhang et al., 2015). Patients may slump or fall over but can often maintain position if appropriately supported, and consciousness is maintained. Normal activity is recovered relatively quickly without persistent impairment (see patient videos in Braverman, 2019; Sanders, 2018). PNKD3 episodes are not initiated by movement or exertion (non-kinesigenic), but rather by negative and positive triggers such as strong emotion (stress and excitement), cold, fatigue, or alcohol. The events are not associated with epileptiform activity on EEG and are generally unresponsive to anti-seizure medications (Keros et al., 2022; Miller et al., 2021). PNKD3 is associated with substantial morbidity due to its high frequency, with hundreds of episodes per day. All three variants tested in this study are associated with PNKD, with 75% of individuals harboring N999S and D434G carrying the diagnosis but also observed at lower incidence with LOF variants or VUS (variant of uncertain significance) (Miller et al., 2021).
 
@@ -103,6 +131,14 @@ There are currently no standardized behavioral assays for either PNKD3 or non-KC
 To test whether restraint stress would produce paroxysmal dyskinesia, mice were subjected to an acute stereotypical manual restraint protocol by an experienced handler. After restraint, mice were placed into a beaker, a novel-constrained environment proposed to enhance stress (Lee et al., 2012). Mice with PNKD-like characteristics were predicted to show restraint-triggered hypokinetic episodes. Mice were scored for abnormal movement (time immobile, circling/hyperactivity, twisting/chorea or limb-clasping, tonic-clonic movement, flattened/dystonic posturing, tremor, listing and falling) in the beaker under video observation. Stereotypical behaviors such as grooming were also recorded. WT mice from all groups showed normal exploratory behavior including sniffing, grooming, and rearing with coordinated movements.
 
 Kcnma1N999S/WT mice and WT littermates placed in the beaker without prior restraint did not show any dyskinetic movements or collapsing behavior (paws no longer touching the ground). There was no significant difference in the time spent immobile between these groups (Figure 5A). Next, restrained mice were placed in the beaker. Since mice increase grooming when released from stress Shirley et al., 2008, Jones and Mormède, 2000, this behavior was used as a control to indicate the presence of stress. Kcnma1N999S/WT mice and WT littermates both showed an increase in grooming events after restraint compared to their non-restraint controls (Figure 5B), confirming both genotypes responded to stress with an increase in stereotypical behavior.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig5-v1.jpg)
+
+**Figure 5.:** (A) Control: Without restraint stress, there was no difference in the time spent immobile between Kcnma1WT/WT (n=10) and Kcnma1N999S/WT mice (n=6, p>0.9999; two-way ANOVA with Bonferroni post hoc). Restraint stress: Immobility time was longer for restrained Kcnma1N999S/WT mice (n=11) compared to Kcnma1WT/WT (n=7, *p=0.0001; one-way ANOVA), and between restrained Kcnma1N999S/WT mice (n=11) compared to unrestrained Kcnma1N999S/WT mice (n=6, *p<0.0001). In contrast, unrestrained Kcnma1WT/WT mice (n=10) had no differences from restrained Kcnma1WT/WT mice (n=7, p=0.1174). (B) Grooming behavior increased in restrained Kcnma1WT/WT mice (n=7) compared to unrestrained Kcnma1WT/WT mice (n=10, *p=0.0300; t-test), and in restrained Kcnma1N999S/WT mice (n=11) compared to unrestrained Kcnma1N999S/WT mice (n=6, *p=0.0174; t-test). (C) Immobility time was longer for saline-treated Kcnma1N999S/WT mice (n=7) compared to Kcnma1WT/WT (n=7, *p=0.0018) and d-amp-treated Kcnma1N999S/WT mice (n=6, *p=0.0053; two-way ANOVA with Bonferroni post hocs). There was no difference between d-amp-treated Kcnma1WT/WT mice (n=7), d-amp-treated Kcnma1N999S/WT mice (n=6, p>0.9999), and saline-treated Kcnma1WT/WT mice (n=7, p>0.9999). (D) After restraint, Kcnma1D434G/D434G mice (n=7) spent more time immobile compared to Kcnma1WT/WT mice (n=14, *p=0.0166; one-way ANOVA). However, Kcnma1D434G/WT mice were not different (n=18, p=0.7174). (E) Immobility time was shorter in restrained Kcnma1H444Q/H444Q mice (n=8) compared to Kcnma1H444Q/WT mice (n=11, *p=0.0081; t-test). Kcnma1WT/WT mice were not included in the statistical analysis due to small sample size (n=3). (F) Kcnma1–/– mice (n=8) had reduced immobility compared to Kcnma1–/+ mice (n=8) and Kcnma1+/+ mice (n=11, p=0.0535; Kruskal-Wallis test). Data are individual mice with median and inter-quartile range. Representative videos for this dataset appear in Figure 5—video 5‒1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Unrestrained WT C57BL6J-background mice were used to test for any baseline effects of the injection procedures (saline) or d-amp (0.5 mg/kg) on immobility in the beaker assay, assessed 30 min after injection. No difference between saline (n=5) and d-amp-injected mice (n=5, p=0.1429, Mann-Whitney test) was observed. (B) Unrestrained WT C57BL6J-background mice were used to test for any baseline effects of d-amp (0.5 mg/kg) on locomotor wheel running activity. Normalized activity after injection was comparable between saline (n=3) and d-amp-injected mice (n=3, p=0.7000, Mann-Whitney test). (C) Kcnma1WT/WT and Kcnma1N999S/WT mice used in the restraint-induced immobility assay in main Figure 5C were scored for grooming behavior after d-amp treatment. No significant differences were present between saline-injected Kcnma1WT/WT mice (n=7), saline-injected Kcnma1N999S/WT mice (n=7, p=0.1456), and d-amp-injected Kcnma1WT/WT mice (n=7, p>0.9999, two-way ANOVA with Bonferroni post hoc). Additionally, d-amp-injected Kcnma1N999S/WT mice (n=6) were not different from d-amp-injected Kcnma1WT/WT mice (n=7, p>0.9999) and saline-injected Kcnma1N999S/WT mice (n=7, p=0.1461). (D) Center point movement parameters were calculated using automated analysis (EthoVision software) from the same videos of restraint stress-induced immobility in main Figure 5C. Immobility time was longer for saline-injected Kcnma1N999S/WT mice (n=7) compared to Kcnma1WT/WT (n=7, *p=0.0077) and d-amp-injected Kcnma1N999S/WT mice (n=6, *p=0.0223; two-way ANOVA with Bonferroni post hoc). In contrast, d-amp-injected Kcnma1N999S/WT mice (n=6) were not different from d-amp-injected Kcnma1WT/WT mice (n=7, p>0.9999) or saline-injected Kcnma1WT/WT mice (n=7, p>0.9999). All data are median and inter-quartile range.
 
 After stress, Kcnma1WT/WT mice had exploratory behavior and spent less than a minute immobile in the beaker (51±10 s). Although the range was wider, their time spent immobile did not differ significantly from the unrestrained baseline. In contrast, Kcnma1N999S/WT mice were immobile for more than twice as long after stress (120±12 s) (Figure 5A, Figure 5—video 1). After episodes of immobility, both genotypes resumed normal exploratory behavior or grooming.
 
@@ -117,6 +153,18 @@ Under the restraint stress paradigm, saline-injected Kcnma1WT/WT mice showed nor
 D-amp-injected Kcnma1N999S/WT exhibited little immobility compared to saline-injected Kcnma1N999S/WT mice (3-fold less). These mice had normal exploratory behavior with shorter, more frequent episodes of grooming. However, when present, the shorter immobility bouts were associated with hunched posture. After d-amp treatment, there was no statistically significant difference in immobility between Kcnma1N999S/WT mice and WT littermates (Figure 5C). Automated analysis of the assays by an additional blinded experimenter replicated the finding of abrogation of immobility with d-amp treatment in Kcnma1N999S/WT mice (Figure 5—figure supplement 1D). In conclusion, these data show that d-amp treatment of Kcnma1N999S/WT mice rescues stress-induced immobility at therapeutically relevant doses.
 
 Taken together, these data suggest that the presence of a stressor (restraint) produces a new behavioral state in Kcnma1N999S/WT mice (immobility) that was not observed in the absence of the trigger or in WT littermates. If the immobility behavior resulted from stress-induced atonic or absence seizures, these events would likely have been observed during baseline EEG recordings given the number of occurrences in the 5 min beaker assay. However, seizure would not be expected to resolve with low-dose d-amp. Alternatively, if stress-induced immobility resulted from general hypoactivity or altered fear response, open field testing might show a difference in motor exploratory behavior between Kcnma1N999S/WT and WT littermates. This was not observed (Figure 6B). Kcnma1N999S/WT mice were also able to achieve the same peak speed as WT littermates during voluntary wheel running (Figure 6Aii). In addition, there is no evidence from patients for correlation of PNKD3 with increased anxiety, depression, or hypoactivity (Miller et al., 2021). We conclude that stress-induced immobility, which occurs in brief episodes that are instantaneously recovered, is responsive to d-amp, and occurs without other hyperkinetic or tonic-clonic manifestations, is consistent with the reversible triggered hypokinetic behavioral state in PNKD3-affected individuals (Heim et al., 2020; Keros et al., 2022).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig6-v1.jpg)
+
+**Figure 6.:** (A) Locomotor wheel running parameters calculated from average activity counts over 48 hr from singly housed mice with free access to wheels. (Ai) Distance covered was reduced for Kcnma1N999S/WT (n=12) compared to Kcnma1WT/WT mice (n=11, *p=0.0411; t-test). (Aii) Maximum speed was comparable between Kcnma1N999S/WT (n=11) and Kcnma1WT/WT mice (n=12, p=0.3618; t-test). (Aiii) Duration of time off wheels (gap duration) was comparable between Kcnma1N999S/WT (n=11) and Kcnma1WT/WT mice (n=12, p=0.8281; t-test). (Aiv) Number of times the mouse was off the wheel (gap events) was higher for Kcnma1N999S/WT (n=12) compared to Kcnma1WT/WT mice (n=11, *p=0.0040; t-test). (B) Open field assay. Kcnma1N999S/WT mice (n=8) covered the same distance as Kcnma1WT/WT mice (n=8) in a 15 min trial (p=0.6973; t-test). (C) Acute muscle strength was tested by hanging mice from a stationary platform (cage lid) for 120 s. Fall latency was lower in Kcnma1N999S/WT (n=11) compared to Kcnma1WT/WT mice (n=10, *p=0.0014; Mann-Whitney test) indicating weaker grip strength. (D) Rotarod assay. Fall latency was lower for Kcnma1N999S/WT mice (n=11) on day 2 (*p=0.0045) and day 7 (*p=0.0124) compared to Kcnma1N999S/WT mice (n=12). Motor learning was observable as an improvement in fall latency times across the three trials on each day (data not shown), suggesting the overall impairment was related to motor coordination and not learning. Data are presented as individual data points with median and inter-quartile range (A–C) and mean ± SEM (D). Results for these assays with Kcnma1D434G, Kcnma1H444Q, and Kcnma1–/– mice appear in Figure 6—figure supplements 1 and 2. For these assays, the baseline motor coordination severity fell in the series Kcnma1‒/‒>Kcnma1D434G/D434G > Kcnma1N999S/WT>Kcnma1H444Q/H444Q.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (Ai) Distance was comparable between Kcnma1D434G/WT (n=11) and Kcnma1WT/WT mice (n=12, p=0.8118; t-test). (Aii) Distance was comparable between Kcnma1H444Q/H444Q (n=7) and Kcnma1H444Q/WT (n=6, p=0.4880; t-test). Kcnma1WT/WT mice were not included in statistical analysis in panels Aii–Dii due to small sample size. (Aiii) Distance was reduced for Kcnma1–/– (n=10) compared Kcnma1+/+ (n=9, *p=0.0032), but not for Kcnma1–/+ mice (n=15, p=0.9057; one-way ANOVA). (Bi) Maximum speed was lower for Kcnma1D434G/WT (n=11) compared to Kcnma1WT/WT mice (n=12, *p=0.0085; t-test). (Bii) Maximum speed was comparable between Kcnma1H444Q/H444Q (n=7) and Kcnma1H444Q/WT (n=6, p=0.3634; t-test). (Biii) Maximum speed was lower for Kcnma1–/– (n=10) compared to Kcnma1+/+ (n=9, *p=0.0024), but not for Kcnma1–/+ mice (n=15, p=0.9871; one-way ANOVA). (Ci) Gap duration was reduced for Kcnma1D434G/WT (n=11) compared to Kcnma1WT/WT mice (n=12, *p=0.0467; t-test). (Cii) Gap duration was comparable between Kcnma1H444Q/H444Q (n=7) and Kcnma1H444Q/WT mice (n=6, p=0.8326; t-test). (Ciii) Gap duration was higher in Kcnma1–/– (n=10) compared to Kcnma1+/+ mice (n=9, *p=0.0026), but not for Kcnma1–/+ mice (n=15, p=0.8987; one-way ANOVA). (Di) Gap events were comparable between Kcnma1D434G/WT (n=11) and Kcnma1WT/WT mice (n=12, p=0.7425; t-test). (Dii) Gap events were comparable between Kcnma1H444Q/H444Q (n=7) and Kcnma1H444Q/WT (n=6, p=0.9341; t-test). (Diii) Gap events were comparable for Kcnma1–/– (n=10), Kcnma1–/+ (n=15), and Kcnma1+/+ mice (n=9, p=0.3047; one-way ANOVA). All data are presented as individual data points with median and inter-quartile range.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77953/elife-77953-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (Ai-iii) Hanging wire assay. Data are presented as individual data points with median and inter-quartile range. (Ai) Fall latency was comparable for Kcnma1D434G/D434G (n=4), Kcnma1D434G/WT (n=11), and Kcnma1WT/WT mice (n=11, p=0.8329; Kruskal-Wallis test), providing no evidence for acute differences in strength. (Aii) Fall latency was reduced for Kcnma1H444Q/H444Q (n=8) compared to Kcnma1H444Q/WT mice (n=14, *p=0.0465; Mann-Whitney test). Kcnma1WT/WT mice were not included in the statistical analysis due to small sample size (n=3). (Aiii) Fall latency times were lower for Kcnma1‒/‒ mice (n=10) compared to Kcnma1+/+ mice (n=10, *p=0.0036), but not for Kcnma1‒/+ mice (n=17, p>0.9999; Kruskal-Wallis test). No Kcnma1‒/‒ mouse had the ability to hang on longer than 60 s, consistent with previous reports (Meredith et al., 2004; Sausbier et al., 2004; Wang et al., 2020; Yao et al., 2021). (Bi-iii) Time to fall in rotarod assay. Data are presented as mean ± SEM. (Bi) Fall latency was lower for Kcnma1D434G/D434G mice (n=4) on day 2 (p<0.0001), day 4 (p=0.0030), day 6 (p<0.0001), and day 7 (p=0.0009) compared to Kcnma1WT/WT mice (n=21), but were comparable in Kcnma1D434G/WT mice (n=18; *p<0.05, repeated measures ANOVA with Bonferroni post hoc). (Bii) Fall latency was not different between Kcnma1H444Q/H444Q (n=7) and Kcnma1H444Q/WT (n=10; repeated measures ANOVA with Bonferroni post hoc); however, performance was highly variable, reducing the ability to make a firm conclusion from this data. Kcnma1WT/WT mice were not included in the statistical analysis due to small sample size (n=2). (Biii) Fall latency was lower for Kcnma1‒/‒ mice (n=6) on day 1 (p=0.0277), day 2 (p=0.0056), day 3 (p=0.0122), day 4 (p=0.0081), day 5 (p=0.0166), day 6 (p=0.0071), and day 7 (p=0.0168) compared to Kcnma1+/+ mice (n=6), but were comparable in Kcnma1‒/+ mice (n=13; *p<0.05, repeated measures ANOVA with Bonferroni post hoc).
 
 To further characterize this mouse model for PNKD3, additional motor assays were conducted. Besides stress, PNKD3 episodes can be triggered by positive emotions or excitement, similar to cataplexy in patients with narcolepsy (Dauvilliers et al., 2014; Miller et al., 2021; Kelley, 2001Sun et al., 2019a). Related to the reward and arousal effects in mice, cataplexy can be provoked in narcoleptic orexin-deficient (Hcrt‒/‒) mice by wheel running (España et al., 2007; Mahoney et al., 2017; Novak et al., 2012). We also assessed this positive trigger to determine if voluntary wheel running could produce a PNKD-like behavior in the setting of a more complex motor task. In this assay, Kcnma1N999S/WT mice covered a shorter distance compared to their WT littermates (Figure 6Ai). The reduction in running distance was not due to a decrease in the maximum speed the mice could achieve, but instead occurred as a result of increased gaps in activity (Figure 6Aii–iv). These gaps could be consistent with, but not exclusively attributable to, cessation of running during a PNKD-like immobility. However, we cannot rule out the reduced distance as a result of a baseline dyskinesia or muscle weakness, since Kcnma1N999S/WT mice also show decreased time to fall in the rotarod and hanging wire assays (Figure 6C–D).
 
@@ -146,7 +194,395 @@ Changes in BK channel function and/or KCNMA1 expression are associated with a gr
 
 ## Materials and methods
 
-## HEK cell patch-clamp electrophysiology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BKN999S</td>
+      <td>This paper</td>
+      <td>MG279689 with rs886039469</td>
+      <td>BK channel expression construct in pcDNA3.1+ (Figure 1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BKD434G</td>
+      <td>This paper</td>
+      <td>MG279689 with rs137853333</td>
+      <td>BK channel expression construct in pcDNA3.1+ (Figure 1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BKH444Q</td>
+      <td>This paper</td>
+      <td>MG279689 with c.1332C&gt;G, p.H444Q</td>
+      <td>BK channel expression construct in pcDNA3.1+ (Figure 1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BKWT</td>
+      <td>Genbank</td>
+      <td>hBKQEERLMG279689</td>
+      <td>BK channel expression construct in pcDNA3.1+ (Figure 1)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Gibco, Life Technologies Corp</td>
+      <td>Cat. #11995-065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #4135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin/streptomycin</td>
+      <td>Mediatech Inc</td>
+      <td>Cat. #30-002 Cl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamine</td>
+      <td>Mediatech Inc</td>
+      <td>Cat. #25-005 Cl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trans-IT LT1</td>
+      <td>Mirius Biological</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-lysine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #P4832</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextroamphetamine sulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #1180004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Kcnma1</td>
+      <td>Gene Bank; Ensembl</td>
+      <td>ID: 16531; ENSMUSG00000063142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock #000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Kcnma1N999S</td>
+      <td>This paper</td>
+      <td>Gene ID:16531 with rs886039469</td>
+      <td>Mouse line maintained in A. Meredith’s lab (Figure 1—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Kcnma1D434G</td>
+      <td>This paper</td>
+      <td>Gene ID:16531 with rs137853333</td>
+      <td>Mouse line maintained in A. Meredith’s lab (Figure 1—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Kcnma1H444Q</td>
+      <td>This paper</td>
+      <td>Gene ID:16531 with c.1332C&gt;G, p.H444Q</td>
+      <td>Mouse line maintained in A. Meredith’s lab (Figure 1—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>N999S gRNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>CTGTATGAAGTTACTGTTAT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>D434G/H444Q gRNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>GGACCGGGATGATGTCAACG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>N999S donor</td>
+      <td>Integrated DNA Technologies</td>
+      <td>AGATACTAAGAAAAGTTGTAATTTGGACATCAATTGTGATTTTCGGTGTTGGCTTAAGAATGCTTCTCTTCTACCTTCTTT CTCCAGACATAtTTCAgTGACAATATtCTCACCCTAATACGGACCCTGGTGACAGGAGGAGCCACACCA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>D434G donor</td>
+      <td>Integrated DNA Technologies</td>
+      <td>CTCTGGAGAGTGTCTCTAACTTCCTGAAGGACTTTCTGCACAAGGACCGtGgTGATGTCAACGTtGAGATTGTCTTT CTTCACAAGTAAGAGCCCCCTGCTGCCACCAGACCCTGCCACC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>H444Q donor</td>
+      <td>Integrated DNA Technologies</td>
+      <td>CTCAGAGAGAAGCATGAGTTTAGGTGGCAGGGTCTGGTGGCAGCAGGGGGCTCTTACTTcTGcAGAAAGACgAT CTCgACGTTGACATCATCCCGGTCCTTGTGCAGAAAGTCCTTCAGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>N999S genotyping primer (F)</td>
+      <td>Transnetyx, Inc</td>
+      <td>TCGGTGTTGGCTTAAGAATGCTT</td>
+      <td>Kcnma1N999S</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>N999S genotyping primer (R)</td>
+      <td>Transnetyx, Inc</td>
+      <td>CCTCAGCTATTAGAGCCTCGAGCTC</td>
+      <td>Kcnma1N999S</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>WT genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>CAGACATACTTCAATGACAATAT</td>
+      <td>Kcnma1N999S</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>N999S genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>CAGACATATTTCAGTGACAATAT</td>
+      <td>Kcnma1N999S</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>D434G genotyping primer (F)</td>
+      <td>Transnetyx, Inc</td>
+      <td>CTCTAACTTCCTGAAGGACTTTCTGCACA</td>
+      <td>Kcnma1D434G</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>D434G genotyping primer (R)</td>
+      <td>Transnetyx, Inc</td>
+      <td>CAGAGAGAAGCATGAGTTTAGGTGGCA</td>
+      <td>Kcnma1D434G</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>WT genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>ACCGGGATGATGTCA</td>
+      <td>Kcnma1D434G</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>D434G genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>ACCGTGGTGATGTCAA</td>
+      <td>Kcnma1D434G</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>H444Q genotyping primer (F)</td>
+      <td>Transnetyx, Inc</td>
+      <td>CTGTGGACACATTACTCTGGAGAGTG</td>
+      <td>Kcnma1H444Q</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>H444Q genotyping primer (R)</td>
+      <td>Transnetyx, Inc</td>
+      <td>GGGTCTGGTGGCAGCA</td>
+      <td>Kcnma1H444Q</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>WT genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>TCTTACTTGTGAAGAAAG</td>
+      <td>Kcnma1H444Q</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>H444Q genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>CTCTTACTTCTGCAGAAAG</td>
+      <td>Kcnma1H444Q</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Kcnma1‒/+</td>
+      <td>PMID:15184377 DOI: 10.1074/jbc.M405621200or available from the Jackson Laboratories</td>
+      <td>Slo1‒/‒ (Meredith Lab) or Stock #035902 (B6.129(FVB)-Kcnma1tm1Rwa/J, Jackson Laboratories)</td>
+      <td>Breeder to generate Kcnma1‒/‒</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>WT genotyping primer (F)</td>
+      <td>Transnetyx, Inc</td>
+      <td>CATCATACCGGTGACCATGGA</td>
+      <td>Kcnma1‒/‒</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>WT genotyping primer (R)</td>
+      <td>Transnetyx, Inc</td>
+      <td>CCAAGAAAGCCCACCACATG</td>
+      <td>Kcnma1‒/‒</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>WT genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>CCCGGCTGTCGCACG</td>
+      <td>Kcnma1‒/‒</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>Neomycin genotyping primer (F)</td>
+      <td>Transnetyx, Inc</td>
+      <td>GGGCGCCCGGTTCTT</td>
+      <td>Kcnma1‒/‒</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>Neomycin genotyping reporter</td>
+      <td>Transnetyx, Inc</td>
+      <td>CCTCGTCCTGCAGTTCATTCA</td>
+      <td>Kcnma1‒/‒</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotides)</td>
+      <td>Neomycin genotyping primer (R)</td>
+      <td>Transnetyx, Inc</td>
+      <td>ACCTGTCCGGTGCCC</td>
+      <td>Kcnma1‒/‒</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>miRNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #217004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Mouse Clariom D Assay</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #902514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paxilline</td>
+      <td>alomone labs</td>
+      <td>Cat. #P-450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Aminopyridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #275875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTX</td>
+      <td>alomone labs</td>
+      <td>Cat. #T-550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentylenetetrazol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #P6500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp10.7</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Transcriptome Analysis Console Software</td>
+      <td>ThermoFisher Scientific</td>
+      <td>TAC version 4.0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sirenia Acquisition software</td>
+      <td>Pinnacle Technology Inc</td>
+      <td>Version 2.2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sirenia Seizure Pro software</td>
+      <td>Pinnacle Technology Inc</td>
+      <td>Cat. #9037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism Software</td>
+      <td>GraphPad (Dotmatics)</td>
+      <td>Prism version 9.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision Software</td>
+      <td>Noldus Information Technology</td>
+      <td>Ethovision XT version 11.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### HEK cell patch-clamp electrophysiology
 
 The N999S (rs886039469; also numbered as N995S, N1036S, and N1053S in other reference sequences), D434G(rs137853333), and H444Q mutations were introduced into wild-type (WT) human hBKQEERL cDNA sequence (MG279689) in the pcDNA3.1+ mammalian expression vector. Mutations were verified by sequencing. Channel constructs contained an N-terminal Myc tag and an EYFP tag in regulators of conductance of potassium 2 (RCK2) domain.
 
@@ -160,7 +596,7 @@ Activation time constants were obtained from the same patches in Figure 1. τact
 
 For experiments with dextroamphetamine and lisdexamfetamine, BK currents were recorded in inside-out patches in physiological K+ and 10 μM intracellular Ca2+ as described in Moldenhauer et al., 2020a. In voltage-clamp mode, patches were held at –150 mV, stepped from –150 to +150 mV for 30 ms (10 mV increments), and stepped back to –150 mV. Lisdexamfetamine dimesylate (catalog L-026, Supelco Millipore-Sigma) and dextroamphetamine (catalog 1180004, Millipore Sigma) were applied at 155 ng/ml, and paxilline (#2006; Tocris, Bristol, UK) was applied at 100 ng/ml. Current levels were assessed at baseline and 5 min after drug application and were normalized to control current levels for each patch.
 
-## Generation of Kcnma1N999S, Kcnma1D434G, and Kcnma1H444Q mouse lines
+### Generation of Kcnma1N999S, Kcnma1D434G, and Kcnma1H444Q mouse lines
 
 Heterozygous founders introducing N999S (AAT→ AGT, exon 25), D434G (GAT→ GGT, exon 10), and H444Q (CAC → CAG, exon 10) mutations into the mouse Kcnma1 gene (Gene ID:16531) were generated with CRISPR/Cas9 homologous recombination methods in the C57BL/6J strain (Figure 1—figure supplement 1). Kcnma1D434G/WT and Kcnma1H444Q/WT mice were generated at the Transgenic Mouse Core at John Hopkins University (Baltimore, MD). Kcnma1N999S/WT mice were generated at the Jackson Laboratory (Bar Harbor, ME). Transgenic mice were validated with Kcnma1 sequencing, and founders without additional non-synonymous mutations were bred with C57BL/6J for N1 progeny at The University of Maryland School of Medicine. Genotyping was performed at Transnetyx, Inc (Cordova, TN) using primers described in ‘Genotyping of Kcnma1N999S, Kcnma1D434G, Kcnma1H444Q, and Kcnma1−/− mouse lines’ section. Transgenic lines were backcrossed with C57BL/6J up to four generations (N4) for experimental cohorts with heterozygous progeny.
 
@@ -168,21 +604,21 @@ N2-N4 heterozygous mice were intercrossed to produce homozygous progeny. Transge
 
 Kcnma1‒/‒ (Slo KO) mice were maintained on a C57BL/6J background (>N12 generation). Littermates of each genotype were produced from heterozygous Kcnma1+/‒ × Kcnma1+/‒ breeding pairs, as described previously (Meredith et al., 2004) using primer sequences described in ‘Genotyping of Kcnma1N999S, Kcnma1D434G, Kcnma1H444Q, and Kcnma1−/− mouse lines’ section. For all lines, male and female mice were separated by sex and group housed on a 12 hr light/12 hr dark cycle. Chow and water were provided ad libitum. Kcnma1N999S/WT breeders were fed with high fat chow supplement to enhance breeding. All experiments were conducted in accordance with the University of Maryland School of Medicine Animal Care and Use Guidelines and approved by the Institutional Animal Care and Use Committee (Protocol #1120011). Sex-matched WT and transgenic littermates of both sexes were used for experimental procedures at the indicated ages. Experimenters were blinded to animal genotype at data collection and analysis.
 
-## Genotyping of Kcnma1N999S, Kcnma1D434G, Kcnma1H444Q, and Kcnma1−/− mouse lines
+### Genotyping of Kcnma1N999S, Kcnma1D434G, Kcnma1H444Q, and Kcnma1−/− mouse lines
 
 Genotyping was performed tail snips by TaqMan real-time PCR at Transnetyx, Inc (Cordova, TN) using the following: Kcnma1N999S (Kcnma1-9 MUT probe set: (F) TCGGTGTTGGCTTAAGAATGCTT; (R) CCTCAGCTATTAGAGCCTCGAGCTC; WT reporter: CAGACATACTTCAATGACAATAT; N999S reporter: CAGACATATTTCAGTGACAATAT), Kcnma1D434G (Kcnma1-8 MUT probe set: (F) CTCTAACTTCCTGAAGGACTTTCTGCACA; (R) CAGAGAGAAGCATGAGTTTAGGTGGCA; WT reporter: ACCGGGATGATGTCA; D434G reporter: ACCGTGGTGATGTCAA), and Kcnma1H444Q (Kcnma1-7 MUT probe set: (F) CTGTGGACACATTACTCTGGAGAGTG; (R) GGGTCTGGTGGCAGCA; WT reporter: TCTTACTTGTGAAGAAAG; H444Q reporter: CTCTTACTTCTGCAGAAAG).
 
 Kcnma1‒/‒ (Slo KO) mice were genotyped using the WT primer set (F) CATCATACCGGTGACCATGGA; (R) CCAAGAAAGCCCACCACATG; WT Reporter: CCCGGCTGTCGCACG and Neomycin primer set (F) GGGCGCCCGGTTCTT; (R) CCTCGTCCTGCAGTTCATTCA; Neo Reporter: ACCTGTCCGGTGCCC.
 
-## Patient data
+### Patient data
 
 Patient phenotype and genetics data cited as ‘data not shown’ was exempt under University of Maryland School of Medicine Institutional Review Board (IRB) Non-Human Subjects Research (NHSR) Protocols HP-00083221, HP-00086440, and HP-00092434.
 
-## Gene expression
+### Gene expression
 
 Unilateral hippocampus and the medial portion of cerebellum were extracted from 4-month-old mice, and directly put them in 1.0 mm diameter zirconium beads with 750 µl of trizol for bead homogenization. RNA was extracted using the miRNeasy Mini Kit (Qiagen, Valencia, CA) following the manufacturer’s protocol. To assess the RNA quality, RNA was quantified via RNA-40 nanodrop and OD 260/280 ratio of all samples were between 1.94 and 2.05. Integrity of RNA was examined via Agilent 2100 Bioanalyzer (Agilent Technologies, Palo Alto, CA). RNA integrity number of all samples were >9. For transcriptome analysis, mouse Clariom D Assay (Applied Biosystems, Waltham, MA) was used following the manufacturer’s instruction. RNA extraction and array processing were done at the Genomics Core Facility, University of Maryland, Baltimore, MD. The raw microarray profiling data was preprocessed and quartile-normalized using the Transcriptome Analysis Console Software (version 4.0.1) (accessed on December 1, 2021). All samples passed array quality control evaluation. Data normalization, differential expression, and hierarchical clustering analysis was performed with default parameters by an experimenter blinded to genotype and brain region.
 
-## Hippocampal slice electrophysiology
+### Hippocampal slice electrophysiology
 
 Three- to 4-week-old mice were anesthetized with isoflurane, and brains were removed and placed into ice-cold sucrose dissection solution (in mM): 10 MgCl2, 26 NaHCO3, 1.25 Na2HPO4, 3.5 KCl, 0.05 CaCl2, 10 glucose, 200 sucrose, 1.2 sodium pyruvate, and 0.4 vitamin C, bubbled with 95% O2 and 5% CO2. The brain slices were cut coronally at 300 μm on a VT1000S vibratome (Leica Microsystems, Wetzlar, Germany) at 3–4°C. Slices containing hippocampus were incubated at 32°C for 30 min and kept at the room temperature in oxygenated artificial cerebrospinal fluid (ACSF) containing (in mM): 125 NaCl, 1.7 MgCl2, 26 NaHCO3, 1.25 Na2HPO4, 3.5 KCl, 2 CaCl2, 10 glucose, 1.2 sodium pyruvate, and 0.4 vitamin C.
 
@@ -192,43 +628,43 @@ In current-clamp recordings, the resting membrane potential was measured without
 
 In voltage-clamp recordings, Rs was compensated at least 60%. BK currents were measured by subtracting currents with 10 μM paxilline from the total current in the presence of 1 μM tetrodotoxin (TTX) and 2 mM 4-aminopyridine (Montgomery and Meredith, 2012). Cells were held at −90 mV, 150 ms voltage step of ‒100 to +30 mV in 10 mV increments was applied and stepped back to ‒90 mV for 130 ms. Three current traces were averaged for analysis, and leak currents were subtracted using the P/4 method with a subsweep holding potential of −90 mV. Paxilline was applied to the slice using a local perfusion pencil for at least 10 min prior to the second recording. BK current levels were obtained from the peak and normalized to cell capacitance. No paxilline-sensitive current was present in Kcnma1−/− dentate granule neurons (n=2).
 
-## Action potential waveform analysis
+### Action potential waveform analysis
 
 Action potential amplitude was defined as the difference between the peak and threshold. Half width (t1/2) was the width of action potential at 50% of the peak amplitude from the action potential threshold. The amplitude of fAHP was defined as the voltage change from the action potential threshold to the most negative voltage (AHP anti-peak) after repolarization. The fAHP decay was measured as the depolarization rate from the AHP anti-peak over the first 3 ms (∆V/3 ms). Action potential thresholds, defined as the membrane potential where the first derivative reached 10 mV/ms, were not different between genotypes for any mouse line (data not shown).
 
-## EEG and EMG recordings
+### EEG and EMG recordings
 
 Behavioral observations, surgeries, EEG and EMG recordings and data analyses were performed blinded to experimental condition and genotype. After daily monitoring of behavioral signs of seizures, 2- to 4-month-old mice were implanted with dural electrodes, with or without EMG lead implantation at the dorsal clavotrapezious neck muscles behind the base of the skull Pinnacle Technology 4 channel EEG system, Lawrence, KS (Iffland et al., 2020). Following a minimum of 72 hr of recovery period, video-EEG recordings were obtained using Pinnacle Technology Sirenia Acquisition software for 24 hr at a sampling rate of 2 kHz. Mice were visually monitored during seizures and behavioral responses were scored using modified Racine criteria: (1) raised tail and/or abnormal posturing; (2) myoclonic movement of a limb, favoring one side; (3) brief tonic-clonic convulsive episodes (approx. 1–5 s); (4) tonic-clonic seizures associated with rearing or jumping; and (5) status epilepticus (Lüttjohann et al., 2009; Van Erum et al., 2019). Continuous EEGs were manually reviewed for interictal epileptiform discharges and/or spontaneous seizures. Interictal epileptiform discharges were defined as discrete and sharply contoured discharges (e.g., spike and wave). Seizures were defined as at least 10 s of sharply contoured and rhythmic bursts of activity.
 
 Seizure thresholds were defined in response to a single chemoconvulsant challenge in naïve animals. A baseline 15 min video-EEG recording was obtained, followed by injection of 40 mg/kg of PTZ (Sigma, Cat. #P6500, 10 mg/ml stock in sterile saline) and an additional 30 min recording after injection. Thirty minutes post-PTZ injection, the experiment was terminated, and mice were euthanized by CO2 asphyxiation and thoracotomy. Video-EEG and EMG data were analyzed using Sirenia Seizure Pro (Pinnacle Technology, Lawrence, KS). Experimenters were blinded to experimental group during PTZ-induced seizure, observation, and data analysis. Seizures were defined as 10 continuous seconds of sharply contoured and rhythmic discharges with a clear onset, offset, and evolution. Seizure threshold was defined as the latency to first seizure after PTZ injection. Total EEG power was reported as the sum of all frequency bands. EEG traces were examined visually for significant artifacts, and EEGs resulting in anomalous power data were excluded from the analysis, defined as EEGs with high amplitude movement artifacts (>16,000 µV2/Hz) or low amplitude signals (<750 µV2/Hz). EMG data were analyzed by manual review and the longest durations of attenuated EMG activity were scored. Attenuated EMG activity was defined as at least 1 s of EMG activity that was lower in amplitude than pre-PTZ injection baseline.
 
-## Stress-induced dyskinesia assays
+### Stress-induced dyskinesia assays
 
 Two- to 3-month-old mice were used in all assays for N999S and D434G cohorts. Two- to 8-month-old mice were used for Kcnma1−/− cohorts due to breeding difficulties (Meredith et al., 2004). For acute stress-induced dyskinesia evaluation, the total restraint time was 5 min. Mice were restrained for 2.5 min by hand, clasping the dorsal cervical aspect between the index finger and thumb and the tail with the pinky finger, with the mouse dorsal side flat against the palm in a vertical upright position. Afterward, the tail was released, leaving only the upper body restrained for 2.5 min. In separate experiments, dextroamphetamine (d-amp) was administered via intraperitoneal (IP) injection at 0.5 mg/kg, or an equivalent volume of saline, to a final volume of 5 ml/kg. Syringes were prepared by a second blinded experimenter. Thirty minutes after injection, mice were restrained in a plexiglass tube (MH-100, IBI Scientific, Dubuque, IA) for 5 min.
 
 After restraint, mice were placed in a transparent 1000 ml beaker under video recording for 5 min. Behavioral parameters were modified from stereotypic behavioral scoring (Kelley, 2001) and prior dyskinesia mouse models (Khan et al., 2004; Khan and Jinnah, 2002; Sebastianutto et al., 2016; Shirley et al., 2008) and were manually scored from side-view videos totaled for grooming time, or the number of occurrences of rearing, sniffing, circling/hyperactivity, twisting/choreiform movement, tonic-clonic movement, flattened/dystonic posturing, tremoring, listing, and falling. Immobility/behavioral arrest was defined as lack of positional and translational movement from the body, limbs, and head, excluding involuntary movement from respiration. Episodes were cumulatively timed to obtain the total immobility in 5 min. Videos from d-amp-injected mice were additionally subjected to automated analysis (EthoVision XT 11.5, Noldus) by a third blinded experimenter. Movement tracking was calibrated from side-view video to beaker dimensions: rim = 11.110 cm, base = 10.795 cm, and height = 15.875 cm. Immobility time was obtained from the center point movement parameter with automated body detection. Mice were considered mobile with center point velocities exceeding 0.151 cm/s, and immobility time was obtained from intervals where the center point velocity was below 0.050 cm/s.
 
-## Open field activity
+### Open field activity
 
 Mice were acclimated in the testing room 1 hr prior to assays. Each mouse was placed in the open arena (70 × 30 × 25 cm3, Cover et al., 2019) for 15 min. Mouse movement and total distance was analyzed in EthoVision XT (Noldus).
 
-## Wheel running activity
+### Wheel running activity
 
 Mice were placed in housing cages with running wheels (Coulbourn Instruments) on a standard 12:12 hr light-dark cycle for 48 hr with ad libitum access to food and water. Wheel activity was measured via magnetic switches and recorded using ClockLab software (Actimetrics). Individual mouse wheel rotation counts were then quantified in 1 min bins in ClockLab software running in Matlab v6.1 (Mathworks). The following parameters were calculated for the 12 hr dark phase as average measurements: speed, maximum speed, number of activity gaps (defined as consecutive 1 min bins registering 0 rpm), activity gap duration, and maximum activity gap duration. All parameters were calculated by a custom python script (code provided as a source data file).
 
 In separate mice, baseline wheel activity recording was collected (30 min), followed by 0.5 mg/kg d-amp or saline injections as described in the previous section. Thirty minutes after injection, each mouse’s post-treatment activity count (30 min) was normalized to the baseline.
 
-## Rotarod
+### Rotarod
 
 Motor coordination was tested by rotarod over 7 days of trials on an accelerating rod. Mice were acclimated to the testing environment in their normal housing cages for 1 hr prior to testing. Mice were trialed three times a day for 7 consecutive days under video capture. Body weight was measured on days 1 and 7. After placement on the rotarod (IITC Life Science Inc, Rat Mouse Rotarod), mice were acclimated on the apparatus for 30 s prior to first trial. During the acclimation, mice were allowed to fall off up to two times. Rod acceleration was 4–40 rpm over 5 min for each trial. Mice were given a 2 min inter-trial interval. ‘Fall’ was called when the mice fell off from the rod or made a 360 degree revolution around the rod. Three trials per day were averaged for each mouse.
 
 Hypotonia and PNKD-like paroxysms would be expected to produce extremely short latencies to fall, since a single major loss of tone would be catastrophic for coordination. Alternately, baseline coordination could be impaired in the absence of immobility. Among the individual mice, there was no explicit evidence for individual trials with extremely short fall latencies that would be consistent with the triggering of sudden hypotonic events. However, partial loss of tone might be compensated for by the high level of attention induced in this assay. Compared to the voluntary running wheel activity, successful navigation of the rod’s surface and rotation requires a higher degree of attention to motor coordination than the wider home cage wheel. Thus, mice fall off the rotarod at lower speeds than the maximum speeds achieved on the voluntary running wheel.
 
-## Hanging wire
+### Hanging wire
 
 Acute muscle strength was tested by hanging mice using their limbs. Mice were acclimated to the testing environment in their home cages for 1 hr prior, and body weights were measured prior to the start of testing. Three consecutive trials were then performed in 1 day. Mice were placed right-side-up on a standard cage lid with parallel metal bars, the lid was gently shaken three times to provoke grasping the bars, then the lid was slowly inverted to put mice in the hanging position. Trial duration maximum was 120 s. A 10 s inter-trial interval was given after falling. Mice remaining hanging up to the maximum time were inverted to right-side-up on the lid and given a 10 s interval before the next trial. Most WT mice can hang on for several minutes before losing grip and falling (Jones and Mormède, 2000), although each WT control cohort exhibited a wide range of latency to fall values. No sudden hypotonia was observed, and there was a spread in the range of Kcnma1N999S/WT values. This observation suggests it unlikely that the hanging wire assay was a significant trigger for PNKD-like immobility in Kcnma1N999S/WT mice, potentially due to the short duration compared to the full restraint stress used in Figure 5.
 
-## Statistics
+### Statistics
 
 Sample sizes were determined based on prior datasets, except the stress-induced behavioral assay where power calculation based on pilot data indicated sample sizes of 5 animals per group (effect size d=2.29 at 0.8 power with 0.05 α; G*power 3.1). Electrophysiology and behavioral data were tested for normality with Shapiro-Wilk normality test and either parametric or non-parametric statistics were analyzed in GraphPad Prism v9.02 (San Diego, CA). Outliers were determined by the ROUT method and were included in all datasets. Data are plotted as either mean ± SEM, or individual data points with median and inter-quartile range, as indicated in figure legends. The statistical test used for each dataset is indicated in the figure legend, and p<0.05 was considered significant. p-Values in figure legends are reported for post hoc tests when the main effect was p<0.05, or reported for the main effect, if p>0.05. Groups with three or fewer data points were not included in statistical analysis, as noted in legends. For parametric data, two-tailed, unpaired t-tests were performed with Welch’s correction for unequal variance. For multiple comparisons, one-way ANOVAs were performed with Welch’s correction followed by Dunnett’s T3 post hoc test. Two-way repeated measures ANOVAs were performed with Geisser-Greenhouse correction followed by Bonferroni post hoc test for multiple comparisons (comparisons between genotypes across voltages). Mann-Whitney or Kruskal-Wallis followed by Dunn’s multiple comparisons were used for non-parametric data.
 

@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05gq02987 MCB department, Brown University Providence United States
-2. https://ror.org/05gq02987 CCMB department, Brown University Providence United States
-3. https://ror.org/00za53h95 Biology department, Johns Hopkins University Baltimore United States
+1. MCB department, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+2. CCMB department, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+3. Biology department, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -39,19 +39,41 @@ Next, we analyzed the effects of depleting the maternal transcription factor CLA
 
 ## Results
 
-## Sex-specific AS is present at the earliest stages of Drosophila development
+### Sex-specific AS is present at the earliest stages of Drosophila development
 
 To define when SSS begins during development, we analyzed RNA-sequencing data that we generated from male and female embryos at two-time points: 0–2 hr (pre-MZT) and 2–4 hr (post-MZT) (Rieder et al., 2017) (#GSE102922). We were able to produce homogeneous populations of male or female embryos prior to ZGA using a novel meiotic drive system that produces sperm with either only X or only Y chromosomes in which SSS had never been analyzed (Rieder et al., 2017). Next, we quantified AS in these samples using a new pipeline that we developed for this analysis and made publicly available called time2splice (https://github.com/ashleymaeconard/time2splice; copy archived at Ray, 2023). Time2splice implements the commonly used SUPPA2 algorithm (Trincado et al., 2018) to identify splice variants and provides additional modules to integrate time, sex, and chromatin localization data (Materials and methods) (Figure 1—figure supplement 1). SUPPA2 measures the PSI (percent spliced in) for each exon and calculates the differential AS between samples, reported as ΔPSI (Trincado et al., 2018). Therefore, SUPPA2 is specifically designed to identify AS events.
 
 From our RNA-seq data, we used time2splice to analyze 66,927 exons associated with 17,558 genes and classified the AS events into one of seven classes (diagrammed in Figure 1A). We found that 16–18% of the exons are alternatively spliced in early embryos (Figure 1B) and fall into one of the seven AS classes (Figure 1C–D). Of these seven classes, AF (alternative first exon) is the most common type, constituting almost one-fourth of total AS (~24–26%), and AL (alternative last exon) is the least common type (~3%). The AS transcript distribution across classes was similar between the two time points and the two sexes (Figure 1B–D). Next, we asked which type of AS is most affected by depleting maternal CLAMP using our validated RNAi method. The overall distribution of transcripts into the seven AS classes remains mostly unaffected in the absence of maternal CLAMP. However, at the 0–2 hr (pre-MZT) stage, loss of maternal CLAMP results in a more substantial decrease in mutually exclusive exon (MXE) splicing in both males and females compared with all of the other types of splicing (males: p-value <3.21e-21; females: p-value <6.26e-87 Chi-squared test) (Figure 1D). At the 2–4 hr/post-MZT stage, only male embryos have a significant percentage of MXE splicing events mis-regulated in the absence of maternal CLAMP (p-value <1.95e-137 Chi-squared test) (Figure 1D). Therefore, the depletion of maternal CLAMP mis-regulates AS and has a stronger effect on MXE splicing than other types of splicing.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagrams showing seven different types of AS. The constitutive exons are depicted as white rectangles, whereas the alternatively spliced exons are in shades of gray and different colors rectangles according to type of AS. (B) Percentage of genes with AS in male and female early Drosophila embryos at the 0–2 hr/pre-MZT (maternal to zygotic transition) and 2–4 hr/post-MZT stages. (C) Table showing the number of exons in each AS category in control sexed embryos at the 0–2 hr/pre-MZT and 2–4 hr/post-MZT stages. (D) Bar plot showing the distribution of different types of AS (colored according to A) at 0–2 hr/pre-MZT and 2–4 hr/ post-MZT for female and male embryos in the presence (MTDGAL4>UAS-GFPRNAi) and absence (MTDGAL4>UAS-CLAMPRNAi) of maternal CLAMP (chromatin-linked adapter for MSL proteins). A Chi-square test was performed to determine if there is a significant difference between the percentage of each type of AS including mutually exclusive exon (MXE) splicing (black bar) in the presence vs. absence of CLAMP in each class of sample: female and male 0–2 hr/pre-MZT and 2–4 hr/post-MZT embryos. Statistically significant differences (p<0.001 marked by ***) were found between categories connected by solid black lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig1-figsupp1-v2.jpg)
+
 During MXE splicing, one isoform of the transcript retains one of the alternative exons and excludes another exon, which is retained by another isoform (schematic in Figure 1A). Interestingly, MXE AS occurs in many transcripts that encode components of the sex determination pathway (Brooks et al., 2015). Furthermore, CLAMP has a sex-specific role in dosage compensation (Urban et al., 2017a; Rieder et al., 2019). Therefore, we defined SSS events in the early embryo. We identified SSS events in 0–2 hr embryos (pre-MZT) (Figure 2—figure supplement 1A, N=92) and in 2–4 hr embryos (post-MZT) (Figure 2—figure supplement 1B, N=138) and categorized them as known SSS events. Overall, we determined that sex-specific AS occurs earlier in development than ever shown previously in any species.
 
-## Depleting maternal CLAMP alters sex-specific AS in early Drosophila embryos
+### Depleting maternal CLAMP alters sex-specific AS in early Drosophila embryos
 
 We hypothesized that the loss of CLAMP alters sex-specific AS in early embryos for the following reasons: (1) CLAMP is a maternally deposited pioneer transcription factor with sex-specific functions that is enriched at intronic regions in addition to promoters Kaye et al., 2018; Duan et al., 2021; (2) proteomic data identified a physical association between spliceosome components and CLAMP Urban et al., 2017c; and (3) CLAMP binding sites evolved from polypyrimidine tracts that regulate splicing (Quinn et al., 2016). We tested our hypothesis in early stage sexed embryos by measuring differences in AS from RNA-seq data generated from male and female 0–2 hr/pre-MZT and 2–4 hr/post-MZT embryos with and without maternal CLAMP (Rieder et al., 2017). The maternal triple driver GAL4 (MTD-GAL4) was used to drive UAS-CLAMPRNAi[val22] which strongly reduces maternal CLAMP levels as validated by qPCR and western blot conducted in parallel with mRNA-seq data collection (Rieder et al., 2017).
 
 First, we asked whether CLAMP alters AS and we found 200–400 transcripts at which AS requires CLAMP, based on the time point and sex (Figure 2—figure supplement 1C–F and Figure 2A and B). To determine whether CLAMP-dependent AS events are enriched for SSS events, we first identified all of the CLAMP-dependent AS events in female (Figure 2—figure supplement 1C, D) and in male (Figure 2—figure supplement 1E, F) 0–2 hr and 2–4 hr embryos (Materials and methods). We measured AS using an exon-centric approach to quantify individual splice junctions by measuring PSI for a particular exon using the established SUPPA algorithm within the time2Splice pipeline (Trincado et al., 2018). Exon inclusion is represented as positive PSI, and exon exclusion events are defined as negative PSI (equation in Materials and methods). By comparing the CLAMP-dependent AS events in females and males, we identified CLAMP-dependent SSS events in female and male 0–2 hr and 2–4 hr embryos (Figure 2A and B and Supplementary file 1a-h).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig2-v2.jpg)
+
+**Figure 2.:** (A) Bar graph showing the percentage of transcripts (raw values noted at the top of each bar) compared with total AS events or sex-specific splicing (SSS) events within parentheses listed at the top of each bar: number of splicing events regulated by CLAMP/total number of splicing events. We quantified transcripts whose splicing is regulated by maternal CLAMP at the 0–2 hr/pre-MZT (maternal to zygotic transition) and 2–4 hr/post-MZT stages in females (red bars) and males (blue bars). A Fisher’s exact test was performed with significance shown at p<0.001. (B) Bar plot showing the total number of splicing events undergoing CLAMP-dependent AS (N) in females and males at 0–2 hr/pre-MZT and 2–4 hr/post-MZT embryonic stages. Alternatively, spliced genes are divided into non-sex-specific (gray) and sex-specific (orange shades) sub-categories. CLAMP-dependent female and male SSS genes are divided into known (sex-specific in control samples: darker orange) and new (sex-specific only after depleting CLAMP: lighter orange) sub-categories identified from 0 to 2 hr/pre-MZT and 2–4 hr post-MZT/embryos. (C). Percentage of new female (red) and male (blue) CLAMP-dependent SSS genes in 0–2 hr/pre-MZT and 2–4 hr/post-MZT embryos that were not identified as different between males and females in control samples. (D). Female (red) and male (blue) CLAMP-dependent SSS genes compared with maternal genes (green, NC9-10 stage, N=3525; syncytial blastoderm stage, N=2644; cellular blastoderm stage, N=48) at 0–2 hr/pre-MZT (female, N=119 and male, N=98) and 2–4 hr/ post-MZT stages (female, N=207 and male, N=106). (E). Gene Ontology (GO) results for genes showing CLAMP-dependent female SSS in embryos at the 0–2 hr/pre-MZT stage and for genes exhibiting CLAMP-dependent female and male SSS in embryos at the 2–4 hr/post-MZT stage, using ShinyGO v0.75c: Gene Ontology Enrichment Analysis with an FDR cutoff of 0.05. We compared the gene list with a background of all protein-coding genes in the D. melanogaster genome. The number of genes in each group (N) listed at the top of each dot plot. Number of genes involved in each GO category noted as the size of the circle and GO biological processes plotted according to degree of fold enrichment along the x-axis. The size of the circle increases as the number of genes in that category increases. The color of the circle represents significance (p-value, -log10FDR). GO categories for male embryos at the 0–2 hr/pre-MZT stage are not shown because the gene set is small and therefore no enriched GO categories were identified.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Volcano plots showing log10_pvalues for significant differences between percent spliced in (PSI) values for splicing events at early embryonic stages in female and male embryos 0–2 hr (A, C, E) and 2–4 hr (B, D, F). Significant changes are labeled as blue dots (p<0.05 and PSI minimum ±0.2). For example, PSI of +0.8 means 80% of the transcripts retained the exon, while negative PSI values mean reduced inclusion of the alternative exon.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Box plot showing ΔPSI values for known (different between females and males in control samples) and new (not different in males and females in control samples) CLAMP-dependent sex-specific spliced events at 0–2 hr/pre-MZT and 2–4 hr/post-MZT female and male embryos. N denotes the total number of splicing events in each category, and p-values for groups showing significant differences are noted at the bottom of the line connecting the compared groups.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–C) Schematic showing alternative splicing events resulting in different isoforms of the same gene which are regulated by CLAMP and the position of primers (dotted arrows) used to detect these isoforms in RT-PCR assays. (D–F) Inverted agarose electrophoretic gel images show the expression level of each isoform detected using primers in the RT-PCR assays noted in (A–C) in male (M) and female (F) early embryos under control GFPRNAi as well as CLAMPRNAi conditions. (G–I). Bar plots showing the change in levels of specific isoforms resulting from alternative splicing events in male (blue) and female (red) early embryos under control GFPRNAi (deeper shade of blue and red) and CLAMPRNAi (lighter shade of blue and red) conditions. The isoform transcript levels are normalized by the levels of gapdh housekeeping gene transcript. p-Values (paired Student’s t-test) for groups showing significant differences (*) are noted at the top of the line connecting the compared groups (four replicates for each gene). (J–M). Schematic showing alternative splicing events resulting in different isoforms of the same gene which are regulated by CLAMP and the position of primers (dotted arrows) used to detect these isoforms by qRT-PCR analysis. (N–R) Bar plot showing fold changes in transcript levels of the isoform detected using primers shown in (J–M) of respective genes by qRT-PCR (three replicates) in the MTD-GAL4>CLAMPRNAi genotype when compared to the control (MTD-GAL4>GFPRNAi) genotype, in 0–2 hr/pre-MZT and 2–4 hr/post-MZT sexed embryos. Fold changes for each transcript differ significantly between males (blue) and females (red) (p≤0.05, Student’s t-test).
 
 When we measured the percentage of total alternatively spliced and SSS transcripts that require CLAMP in males and females at both pre- and post-MZT stages, we found that while only 2–3% of total AS exons are CLAMP-dependent, ~30–60% of SSS exons are CLAMP-dependent (Figure 2A). Therefore, the function of CLAMP in AS is highly enriched for SSS events. We then divided all CLAMP-dependent AS events into two categories: (1) SSS events and (2) non-SSS events (Figure 2B).
 
@@ -65,7 +87,7 @@ To understand the classes of genes whose splicing requires CLAMP, we performed G
 
 In order to validate our genomic splicing analysis from time2splice for individual target genes (Figure 2E), we randomly selected eight genes at which we determined that CLAMP regulates splicing and measured AS using qRT-PCR or RT-PCR (Figure 2—figure supplement 3). Our RT-PCR results indicate that we are able to validate the function of CLAMP in regulating splicing of genes which we identified genomically with time2splice (Figure 2—figure supplement 3). We summarized the functions of the validated target genes at which splicing is regulated by CLAMP (Supplementary file 2). iab4, one of the target genes that we validated, has known functional links to CLAMP because CLAMP regulates its chromatin accessibility suggesting that we have identified relevant target genes (Urban et al., 2017c; Duan et al., 2021; Gutierrez-Perez et al., 2019). Furthermore, many of the validated target genes are themselves involved in splicing and chromatin regulation including those with known isoforms that specifically regulate AS such as fus, pep, and sc35 (Supplementary file 2). In summary, loss of maternal CLAMP causes aberrant SSS of the majority of SSS zygotic transcripts including many that encode regulators of AS.
 
-## Loss of zygotic CLAMP alters sex-specific AS during Drosophila development
+### Loss of zygotic CLAMP alters sex-specific AS during Drosophila development
 
 Next, we asked whether in addition to maternal CLAMP, zygotic CLAMP influences SSS. Therefore, we analyzed total RNA-seq data from wild type control and clamp2 null mutant (Urban et al., 2017a) third instar larvae (L3) and identified CLAMP-dependent SSS events (Supplementary file 3a-c). Similar to embryos, CLAMP-dependent AS events in male and female L3 larvae were largely sex-specific: females 139/189 (73.5%); males 161/211 (76.3%) (Supplementary file 3a, Columns H–J).
 
@@ -77,23 +99,31 @@ Zygotic CLAMP is also present in male and female cell lines derived from embryos
 
 Overall, there are fewer splicing events altered in the absence of CLAMP in cell lines compared with embryos consistent with cell lines remaining alive in the absence of CLAMP (Soruco et al., 2013) while embryos depleted for maternal CLAMP do not survive past ZGA and L3 clamp null larvae do not undergo pupation (Duan et al., 2021). In summary, there is zygotic CLAMP-dependent SSS in larvae and embryonically derived cell lines.
 
-## Loss of CLAMP mis-regulates splicing and transcription at largely different sets of target genes in embryos and partially overlapping sets of targets genes in larvae
+### Loss of CLAMP mis-regulates splicing and transcription at largely different sets of target genes in embryos and partially overlapping sets of targets genes in larvae
 
 Because CLAMP regulates transcription in addition to splicing, we compared transcription and splicing target genes to each other and found that 84.3% (343/407) of genes which require CLAMP for their SSS in early embryos are not regulated by CLAMP at the transcription level as determined by comparing our differentially spliced genes with our published differential gene expression analysis (Rieder et al., 2017; Figure 3B). We also compared CLAMP-dependent differentially expressed genes (Supplementary file 5a-b) in third instar larvae with our list of CLAMP-dependent SSS genes (Supplementary file 3b-c). In third instar larvae, 60% (151/253) of CLAMP-dependent SSS genes are also regulated at the level of transcription in contrast to 15.7% (64/407) of SSS genes in embryos (Figure 3B and C). Therefore, the genes that are regulated by CLAMP at the level of transcription and splicing are largely different in embryos and more similar in larvae.
 
 Furthermore, in embryonic cell lines (Kc [female] and S2 [male] cells) almost all CLAMP-dependent spliced genes were regulated by CLAMP at the level of splicing and not transcription and many more genes are regulated at the level of splicing than transcription (Figure 3D). While 100 genes (112 splicing events) show CLAMP requirement for splicing in S2 cells, only 12 genes exhibit CLAMP-dependent differential gene expression. Similarly, in Kc cells, 42 genes (45 splicing events) show CLAMP requirement for splicing and only 18 genes show CLAMP-dependent expression (Figure 3D). Thus, the relative influence of the loss of CLAMP on splicing compared with transcription at target genes differs across different cellular contexts.
 
-## CLAMP is highly enriched along gene bodies of genes at which SSS is mis-regulated by CLAMP depletion unlike genes at which transcription is mis-regulated
+### CLAMP is highly enriched along gene bodies of genes at which SSS is mis-regulated by CLAMP depletion unlike genes at which transcription is mis-regulated
 
 How does the loss of CLAMP alter SSS? We hypothesized that CLAMP would directly bind to DNA near the intron-exon boundaries of the genes where the loss of CLAMP alters splicing in contrast to genes where it regulates transcription. Therefore, we compared and contrasted the binding pattern of CLAMP at the CLAMP-dependent SSS genes and CLAMP-dependent transcriptionally regulated sex-biased genes in sexed embryos using CLAMP ChIP-seq data (#GSE133637). We found that the following percentages of all CLAMP-dependent SSS genes are bound by CLAMP across sexes and time points: 24.4% (29/119) in 0–2 hr female embryos, 8.3% (8/96) in 0–2 hr male embryos, 70.5% (146/207) in 2–4 hr female embryos, and 63.5% (66/104) in 2–4 hr male embryos (Supplementary file 6a-b). The increase in the percentage of genes bound by CLAMP in 2–4 hr embryos compared with 0–2 hr embryos is consistent with the known increased number and occupancy level of CLAMP binding sites at the later time point (Duan et al., 2021).
 
 Next, we generated average profiles for CLAMP occupancy at CLAMP-dependent SSS genes in females (red lines) and in males (blue lines) at 0–2 hr (pre-MZT) (Figure 4A and C) and 2–4 hr (post-MZT) (Figure 4B and D) in females (Figure 4A and B) and males (Figure 4C and D). We found that CLAMP occupies the gene bodies of many SSS genes that require CLAMP for their splicing.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Average profiles for CLAMP binding at pre-MZT and post-MZT embryonic stages in females (A, C) and males (B, D) for genes spliced female-specifically (red line) and male-specifically (blue line) during the pre-MZT (A, B) and post-MZT (C, D) stages. (E–H) Average profiles for CLAMP binding to genes expressed in a sex-biased manner in females (red line) and males (blue line) during pre-MZT (E, F) and post-MZT (G, H) stage. Green lines in (A–H) represent CLAMP binding at a random set of active genes used as a control (see Materials and methods for details). Stippled regions in (A, C) (female, 0–2 hr pre-MZT) denote chromatin around the transcription start site (TSS) with more CLAMP binding in female sex-specifically spliced genes vs. male sex-specifically spliced genes. The dotted boxes in (A–H) highlight the gene body regions in CLAMP-dependent sex-specifically spliced genes and genes with CLAMP-dependent sex-biased expression. Number of genes in each group denoted as N.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Notched box plots representing distance between CLAMP peaks in sex-specifically spliced and sex-biased genes with the nearest splice junction in female (A, C) and male (B, D) 0–2 hr (A, B) and 2–4 hr (C, D) embryos. p-Values (Mann-Whitney test) for each group are noted at the top and those with significant differences and the compared groups are connected with a solid black line with an asterisk at the top *. t-Tests and KS-tests were also performed and showed the same results. (E–H) Notched box plots representing distance between CLAMP peaks in introns of the sex-specifically spliced and sex-biased genes and the nearest splice junction in female (E, G) and male (F, H) 0–2 hr (E, F) and 2–4 hr (G, H) embryos. p-Values (Mann-Whitney test) for each group are noted at the top for those with significant differences and the compared groups are connected with a solid black line with an asterisk at the top *. t-Test and KS-test were also performed and showed the same results.
+
 Then, we compared the average CLAMP binding pattern at SSS genes (Figure 4A–D) to the CLAMP binding pattern at genes whose transcription but not splicing is both sex-biased and dependent on CLAMP (Figure 4E–H). In contrast to SSS genes where CLAMP occupies gene bodies, at genes that are expressed but not spliced in a CLAMP-dependent and sex-biased manner, CLAMP is enriched at the transcription start site (TSS) and transcription end site (TES) (area within the rectangular box is bounded by the TSS and TES in Figure 4B, F, D, and H). Furthermore, CLAMP binding is also modestly enriched at the TSS of female-biased expressed genes in females, consistent with enhanced CLAMP occupancy at the TSS of expressed genes (Soruco et al., 2013). As a control, we used a random set of active genes that are not regulated by CLAMP (green lines in Figure 4A–H) and we observed lower occupancy than at CLAMP-dependent genes. Overall, we found preferential binding of CLAMP along the gene bodies of genes that have CLAMP-dependent splicing in both females and males in contrast to TSS and TES binding at genes where transcription but not splicing requires CLAMP.
 
 To determine whether the binding of CLAMP to gene bodies occurs close to splice junctions, we measured the distance between CLAMP peaks and the nearest splice junction (Figure 4—figure supplement 1). We found that CLAMP peaks are most frequently within 200–400 bp of either the start or the end of a splice junction, especially in SSS genes. The resolution of these measurements is limited by sonication and therefore it is possible that binding occurs even closer to splice junctions. We also found that CLAMP binds to chromatin closer to splice junctions at CLAMP-dependent SSS genes compared to genes with CLAMP-dependent sex-biased transcription in 2–4 hr female embryo samples which have the most target genes and CLAMP binding events which improves statistical robustness. The results were similar for all CLAMP peaks at SSS genes (Figure 4—figure supplement 1C) compared to peaks only present in introns (Figure 4—figure supplement 1G). Therefore, the binding pattern of CLAMP at splicing target genes is consistent with the loss of CLAMP altering SSS and is different from the binding pattern at genes where CLAMP regulates transcription.
 
-## The loss of CLAMP alters splicing of sex determination pathway component genes
+### The loss of CLAMP alters splicing of sex determination pathway component genes
 
 Next, we asked whether the loss of CLAMP regulates known key regulators of SSS. In Drosophila, sex-specific AS is regulated by the sex determination pathway. Sex-lethal (Sxl) is the master regulator of sex determination (Salz and Erickson, 2010) which drives subsequent SSS in females (Bell et al., 1991) of downstream effector genes giving rise to female-specific effector proteins that regulate female-specific splicing. Functional Sxl protein is only produced in females (Salz and Erickson, 2010; Moschall et al., 2019) because exon 3 in the sxl transcript contains a premature stop codon which is spliced out in females but retained in males (Haussmann et al., 2016). The absence of functional Sxl protein in males results in formation of male-specific effector proteins that regulate male-specific splicing. Therefore, we asked whether the loss of CLAMP affects AS of the sxl transcript.
 
@@ -101,7 +131,7 @@ To test whether CLAMP regulates sxl AS, we designed an RT-PCR assay to distingui
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig5-v2.jpg)
 
-**Figure 5.:** sxl transcript and Sxl protein levels is modulated by CLAMP (chromatin-linked adapter for MSL proteins) in females.(A) RT-PCR electrophoresis gel images (inverted colors) showing splicing of sxl transcripts in 0–2 and 2–4 hr sexed embryos in the presence and absence of maternal CLAMP with a representative schematic of the splicing event at the top of the gel image. The arrow indicates the male-specific sxl transcript (number of replicates = 2). (B) Electrophoresis gel image (inverted colors) showing splicing of sxl transcripts in third instar larvae of females and males of genotypes listed in the key (a–g) with a representative schematic at the top of the gel image. (C) IGV browser image showing CLAMP ChIP-seq peaks (rectangular boxes in light blue) at the genomic locus for the sxl gene in male and female 3 hr embryos. For each sample, the narrow peak file is shown which is generated after peak calling. Arrow in C indicates region of sxl gene where CLAMP differentially bind in females and not in males. (D) Western blot showing the level of Sxl protein in genotypes (three replicates for each) mentioned below each lane. Tubulin levels were used as a protein loading control. Below the blot is the relative quantification of Sxl protein levels compared with Tubulin and each genotype is represented by separately colored bars. (E) Western blot for CLAMP in cytoplasmic and nuclear protein fractions from Kc (female) and S2 (male) cells after IP (immunoprecipitation) using mouse anti-FMRP. IgG-mouse was used as negative control (lanes 4, 5 and lanes 11 and 12).Figure 5—source data 1.Figure 5A, sxl and gapdh transcript levels.Figure 5—source data 2.Figure 5B, sxl transcript level.Figure 5—source data 3.Figure 5D, Sxl protein level.Figure 5—source data 4.Figure 5D, Tubulin protein level.Figure 5—source data 5.Figure 5E, western blot for detecting CLAMP (chromatin-linked adapter for MSL proteins) in IP-FMRP samples in cytoplasmic cellular fractions (lanes 1–7).Figure 5—source data 6.Figure 5E, western blot for detecting CLAMP (chromatin-linked adapter for MSL proteins) in IP-FMRP samples in cytoplasmic cellular fractions (lanes 8–14).
+**Figure 5.:** (A) RT-PCR electrophoresis gel images (inverted colors) showing splicing of sxl transcripts in 0–2 and 2–4 hr sexed embryos in the presence and absence of maternal CLAMP with a representative schematic of the splicing event at the top of the gel image. The arrow indicates the male-specific sxl transcript (number of replicates = 2). (B) Electrophoresis gel image (inverted colors) showing splicing of sxl transcripts in third instar larvae of females and males of genotypes listed in the key (a–g) with a representative schematic at the top of the gel image. (C) IGV browser image showing CLAMP ChIP-seq peaks (rectangular boxes in light blue) at the genomic locus for the sxl gene in male and female 3 hr embryos. For each sample, the narrow peak file is shown which is generated after peak calling. Arrow in C indicates region of sxl gene where CLAMP differentially bind in females and not in males. (D) Western blot showing the level of Sxl protein in genotypes (three replicates for each) mentioned below each lane. Tubulin levels were used as a protein loading control. Below the blot is the relative quantification of Sxl protein levels compared with Tubulin and each genotype is represented by separately colored bars. (E) Western blot for CLAMP in cytoplasmic and nuclear protein fractions from Kc (female) and S2 (male) cells after IP (immunoprecipitation) using mouse anti-FMRP. IgG-mouse was used as negative control (lanes 4, 5 and lanes 11 and 12).
 
 Next, we assayed the function of zygotic CLAMP in sxl splicing in three previously described fly lines: (1) our recessive clamp null mutant clamp2 line (Urban et al., 2017a); (2) the heterozygous mutant clamp2 /CyO-GFP line; (3) our rescue line which is homozygous for the clamp2 allele and contains a rescue construct which is an insertion of wild type CLAMP gene at an ectopic genomic location. We measured CLAMP-dependent changes in AS of sxl and found that in homozygous clamp2 female animals, there is a small but detectable amount of the longer male-specific sxl transcript (Figure 5B, lane c). This mis-regulation of sxl splicing is rescued by our CLAMP-containing rescue construct (Figure 5B, lane d). Furthermore, our L3 RNA-seq data demonstrate that CLAMP affects sxl splicing in females (Supplementary file 3b) and not sxl transcription (Supplementary file 5b). Consistent with the ChIP-seq binding pattern of CLAMP at the sxl locus on chromatin (Figures 3 and 5C) which shows enhanced binding in 2–4 hr embryos compared with 0–2 hr embryos, the loss of CLAMP alters splicing more strongly at the 2–4 hr time point compared with the 0–2 hr time point.
 
@@ -113,7 +143,7 @@ Also, 88/407 (21.6%) of the CLAMP-dependent SSS genes are Sxl targets (Supplemen
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/87865/elife-87865-fig6-v2.jpg)
 
-**Figure 6.:** (A) The sex determination pathway in Drosophila is regulated by master regulator sex lethal (SXL). (B–C) RT-PCR electrophoresis gel images from 0 to 2 hr embryonic RNA samples (lanes 2–5 and 7–10) showing splicing of dsx (B) and msl2 (C) transcripts in females (lanes 3, 5, 8, 10) and males (lanes 2, 4, 7, 9). Embryos were laid by MTD-GAL4>GFP RNAi control (lanes 4, 5, 9, 10) and MTD-GAL4>CLAMP RNAi (lanes 2, 3, 7, 8) females. The schematic above each gel image shows the female and male splice variants of the dsx (B) and msl2 (C) transcripts. (D) IGV browser screen shot showing CLAMP peaks (rectangular boxes in light blue) at the genomic locus for the dsx genes in male and female 0–2 hr/pre-MZT (maternal to zygotic transition) and 2–4 hr/ post-MZT embryos. The bigwig file (upper track) and the corresponding narrow peak file (lower track) are both shown. (E–F) Electrophoresis gel image from third instar larval samples (a–g) showing splicing of dsx (E) and msl2 (F) transcripts in females (lanes a–d) and males (lanes e–g). a–g genotypes are the same as in panel (A). The schematics at the top of each gel image show female and male splice variants of dsx (E) and msl2 (F) transcripts. (G) Fluorescent microscopy images of polytene chromosomes from the third instar salivary gland in the genotypes listed to the left of each panel (heterozygous control and clamp null) show the distribution of CLAMP (green) and MSL2 (red) on chromatin (blue, DAPI). (2H) IGV browser screen shot showing CLAMP peaks (rectangular boxes in light blue) at the genomic locus for the  in male and female 0–2 hr/pre-MZT and 2–4 hr/post-MZT embryos. The bigwig file (upper track) and the corresponding narrow peak file (lower track) are both shown.msl-2Figure 6—source data 1.Figure 6B, dsx transcript level (lanes 1–5).Figure 6—source data 2.Figure 6B, dsx transcript level (lanes 6–10).Figure 6—source data 3.Figure 6C, msl-2 transcript level (lanes 1–5).Figure 6—source data 4.Figure 6D, dsx transcript level in L3 female (lanes a–g, top row).Figure 6—source data 5.Figure 6D, dsx transcript level in L3 male (lanes a–g, bottom row).Figure 6—source data 6.Figure 6E, msl-2 transcript level (lanes a–g).
+**Figure 6.:** (A) The sex determination pathway in Drosophila is regulated by master regulator sex lethal (SXL). (B–C) RT-PCR electrophoresis gel images from 0 to 2 hr embryonic RNA samples (lanes 2–5 and 7–10) showing splicing of dsx (B) and msl2 (C) transcripts in females (lanes 3, 5, 8, 10) and males (lanes 2, 4, 7, 9). Embryos were laid by MTD-GAL4>GFP RNAi control (lanes 4, 5, 9, 10) and MTD-GAL4>CLAMP RNAi (lanes 2, 3, 7, 8) females. The schematic above each gel image shows the female and male splice variants of the dsx (B) and msl2 (C) transcripts. (D) IGV browser screen shot showing CLAMP peaks (rectangular boxes in light blue) at the genomic locus for the dsx genes in male and female 0–2 hr/pre-MZT (maternal to zygotic transition) and 2–4 hr/ post-MZT embryos. The bigwig file (upper track) and the corresponding narrow peak file (lower track) are both shown. (E–F) Electrophoresis gel image from third instar larval samples (a–g) showing splicing of dsx (E) and msl2 (F) transcripts in females (lanes a–d) and males (lanes e–g). a–g genotypes are the same as in panel (A). The schematics at the top of each gel image show female and male splice variants of dsx (E) and msl2 (F) transcripts. (G) Fluorescent microscopy images of polytene chromosomes from the third instar salivary gland in the genotypes listed to the left of each panel (heterozygous control and clamp2 null) show the distribution of CLAMP (green) and MSL2 (red) on chromatin (blue, DAPI). (H) IGV browser screen shot showing CLAMP peaks (rectangular boxes in light blue) at the genomic locus for the msl-2 in male and female 0–2 hr/pre-MZT and 2–4 hr/post-MZT embryos. The bigwig file (upper track) and the corresponding narrow peak file (lower track) are both shown.
 
 In addition, we found that the loss of maternal and zygotic CLAMP mis-regulates splicing of the male-specific lethal-2 (msl-2) transcript (Figure 6A), which is male-specific because Sxl regulates its splicing, transcript stability, mRNA export, and translation in females (Graindorge et al., 2013; Figure 6E and F, lane c). To determine whether splicing defects are correlated with dysregulation of MSL-2 protein expression and localization to chromatin, we performed polytene immunostaining from female clamp2 mutant salivary glands. In the absence of CLAMP, ectopic MSL2 protein (in red) is present at several locations on female chromatin in contrast to heterozygous females (clamp2/CyO-GFP) where the male-specific MSL-2 protein is not present on female chromatin as expected (Figure 6G). Similar to dsx, the msl-2 gene is also bound by CLAMP (Figure 6H) and regulated by Sxl and, therefore, could be regulated through both direct and indirect mechanisms. Together, these data suggest that the loss of CLAMP affects the splicing of multiple components of the sex determination pathway.
 
@@ -141,37 +171,187 @@ Overall, our data show that the loss of maternal and zygotic CLAMP affects sex-s
 
 ## Materials and methods
 
-## Fly stocks and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MTD-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:31777; FLYB:FBtp0001612; RRID:BDSC_31777</td>
+      <td>FlyBase symbol: P{GAL4-nos.NGT}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CLAMPRNAi[val22]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: #57008;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>B[s]/Dp(2:y)CB25–4, y+, Rsp[s]B[s]; SPSD/CyO</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: #64332;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>+; SD72/CyO</td>
+      <td>Cynthia Staber, Stowers Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>19–3, yw, Rsp[s]-</td>
+      <td>Cynthia Staber, Stowers Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y1, w 1118; clamp2 /CyO</td>
+      <td>Urban et al., 2017a</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>DrosophilaGenomic Resource Center(DGRC)</td>
+      <td>FBtc0000181</td>
+      <td>Cell line maintained in N. Perrimon lab; FlyBase symbol: S2-DRSC</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>Kc167</td>
+      <td>DrosophilaGenomic Resource Center(DGRC)</td>
+      <td>FBtc0000001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CLAMP (Rabbit polyclonal)</td>
+      <td>Erica Larschan</td>
+      <td>RRID: AB_2195548</td>
+      <td>IF (1:1000), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tubulin (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab52866, RRID: AB_869989</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SXL (Mouse monoclonal)</td>
+      <td>Fatima Gebauer</td>
+      <td></td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MSL2 (Rat monoclonal)</td>
+      <td>Peter Becker</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FMRP (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>5B6RRID:AB_528253</td>
+      <td>IP-1:10</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Anti-mouse IgG M-280 Dynabeads</td>
+      <td>Invitrogen, USA</td>
+      <td>Catalog number: 11202D</td>
+      <td>Magnetic Beadsfor IP</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Cell line RNA-seq</td>
+      <td>NCBI, GEO(This paper)</td>
+      <td>#GSE220439</td>
+      <td>RNA sequencing data</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Third instar larvae (L3) RNA-seq</td>
+      <td>NCBI, GEO(This paper)</td>
+      <td>#GSE220455</td>
+      <td>RNA sequencing data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>SUPPA</td>
+      <td>Trincado et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>time2splice</td>
+      <td>This paper</td>
+      <td>https://github.com/ashleymaeconard/time2splice</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>deeptools</td>
+      <td>Ramírez et al., 2014</td>
+      <td>http://deeptools.ie-freiburg.mpg.de</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and husbandry
 
 D. melanogaster fly stocks were maintained at 24°C on standard corn flour sucrose media. Fly strains used: MTD-GAL4 (Bloomington, #31777), UAS-CLAMPRNAi[val22] (Bloomington, #57008), Meiotic drive fly stocks +; SD72/CyO and 19–3, yw, Rsp[s]-B[s]/Dp(2:y)CB25-4, y+, Rsp[s]B[s]; SPSD/CyO (Bloomington, #64332) (both gifts from Cynthia Staber). These were crossed to obtained male and female embryo of desired genotypes according to Rieder et al., 2017.
 
-## Cell culture
+### Cell culture
 
 Kc and S2 cells were maintained at 25°C in Schneider’s media supplemented with 10% fetal bovine serum and 1.4× Antibiotic-Antimycotic (Thermo Fisher Scientific, USA). Cells were passaged every 3 days to maintain an appropriate cell density. Both Schneider’s Line S2 FBtc0000181 (S2-DRSC) and Kc (Kc167) FBtc0000001 cell lines used are of D. melanogaster embryonic origin from Drosophila Genomic resource center (DGRC). Both modENCODE line authenticated with no mycoplasma contamination and not from the list of commonly misidentified cell lines.
 
-## Sample collection and western blotting
+### Sample collection and western blotting
 
 Salivary glands from third instar larvae were dissected in cold PBS and samples frozen in liquid nitrogen. Total protein from the samples was extracted by homogenizing tissue in the lysis buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl, 1% SDS, 0.5× protease inhibitor) using a small pestle. After a 5 min incubation at room temperature, cleared the samples by centrifuging at room temperature for 10 min at 14,000×g. To blot for CLAMP and Actin, 5 µg of total protein was run on a Novex 10% Tris-Glycine precast gel (Life Technologies). To measure Sex-lethal protein levels, 20 µg of total protein was run on a Novex 12% Tris-Glycine precast gel (Life Technologies). Protein was transferred to PVDF membranes using the iBlot transfer system (Thermo Fisher Scientific) and probed the membranes for CLAMP (1:1000, SDIX), Tubulin (1:5000, Abcam), and SXL (1:500, a gift from Fatima Gebauer) antibodies using the Western Breeze kit following the manufacturer’s protocol (Thermo Fisher Scientific). We quantified the relative expression of protein for SXL using the gel analysis tool in ImageJ software following the website’s guidelines (Schneider et al., 2012). For each genotype, we first internally normalized the amount of SXL protein to Actin. Next, we determined the protein’s relative expression by comparing the Tubulin normalized quantities to y[1], w[1118] female samples.
 
-## Polytene chromosome squashes and immunostaining
+### Polytene chromosome squashes and immunostaining
 
 Polytene chromosome squashes were prepared as previously described in Rieder et al., 2017. We stained polytene chromosomes with rabbit anti-CLAMP (1:1000, SDIX) and rat anti-MSL2 (1:500, gift from Peter Becker) antibodies. For detection, we used all Alexa Fluor secondary antibodies against rabbit and mouse at a concentration of 1:1000 and visualized slides at 40× on a Zeiss Axioimager M1 Epifluorescence upright microscope with the AxioVision version 4.8.2 software.
 
-## Splicing assays for male- and female-specific transcripts
+### Splicing assays for male- and female-specific transcripts
 
 To test for the male and female splice forms of sex-lethal, transformer, doublesex, and msl2, total RNA was extracted from 10 third instar larvae from each genotype. We reverse-transcribed 2 µg of total RNA using the SuperScript VILO cDNA Synthesis Kit (Life Technologies) following the manufacturer’s protocol. We amplified target sequences by PCR using primers designed to span alternatively spliced junctions. AS primer sequences for sxl FP-TGCAACTCACCTCATCATCC, sxl RP- GATGGCAGAGAATGGGACAT, for tra FP- TGAAAATGGATGCCGACAG, tra RP- CTCTTTGGCGCAATCTTCTC, for dsx female transcript dsxFFP-CTATCCTTGGGAGCTGATGC, dsxF RP- TCGGGGCAAAGTAGTATTCG, for dsx male transcript dsxM FP- CAGACGCCAACATTGAAGAG, dsxM RP- CTGGAGTCGGTGGACAAATC, for msl2 FP- GTCACACTGGCTTCGCTCAG and msl2 RP- CCTGGGCTAGTTACCTGCAA were used.
 
-## Validation of splicing results from time2Splice using qRT-PCR and RT-PCR assays
+### Validation of splicing results from time2Splice using qRT-PCR and RT-PCR assays
 
 Total RNA was extracted from fifty 0–2 hr and 2–4 hr female and male embryos expressing MTD-GAL4>GFPRNAi (con) and MTD-GAL4>CLAMPRNAi (CLAMP depleted). Sexed embryos were obtained as described in Rieder et al., 2017. We reverse-transcribed 1 µg of total RNA using the SuperScript VILO cDNA Synthesis Kit (Life Technologies, USA) following the manufacturer’s protocol. We amplified target sequences by PCR using primers designed to span alternatively spliced junctions (Figure 2—figure supplement 3) listed in Supplementary file 7b and Quick load Taq 2X Master mix (#M0271L, NEB, USA) according to the manufacturer’s protocol (28 cycles). 10 µL of PCR product of each replicate for each gene was loaded in separate wells in 2% agarose gels and imaged using a ChemiDoc MP Imaging System (Bio-Rad, USA). All replicates for each gene were loaded on the same gel. The gel images were inverted and then quantified using the densitometry steps with the Fiji image analysis tool. qRT-PCR was carried out using 2X Azura Quant Green (#AZ-2120, Azura Genomics, USA) according to the manufacturer’s instructions. Fold change between samples for each transcript was calculated the ΔCT method (Schmittgen and Livak, 2008). Student’s t-tests were performed to determine significant difference between groups (two samples at a time). Three replicates for qRT-PCR samples and four replicates for RT-PCR samples were performed.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
-## Nuclear and cytoplasmic extract preparation
+#### Nuclear and cytoplasmic extract preparation
 
 Male (S2) and female (Kc) cells were grown to a cell concentration of 2×106 cells/mL in T25 tissue culture flasks. Cells were scraped from the flask, centrifuged for 5 min at 2500 rpm at 4°C. Supernatant was removed and cell pellets were washed twice in 5 mL of cold PBS. The washed cell pellets were then re-suspended in 5× volume of Buffer A (10 mM HEPES pH 7.9, 1.5 mM MgCl2, 10 mM KCl, 0.5 mM DTT, 1× protease inhibitors). Cells were incubated on ice for 15 min before dounce homogenization with an A pestle. Cytoplasmic fraction was collected after centrifugation at 4°C for 20 min at 700×g. The remaining nuclear pellet was re-suspended in three times volume in Buffer B (20 mM HEPES pH 7.9, 20% glycerol, 0.5% NP 40, 200 mM KCl, 0.5 mM EDTA, 1 mM EGTA, 1× protease inhibitors). Nuclei after re-suspension were dounce homogenized with a B pestle. Nuclear debris was then pelleted by centrifugation at 10,000×g for 10 min at 4°C. 1 mL aliquots of both cytoplasmic and nuclear fractions were prepared in 1.5 mL Protein LoBind Eppendorf tubes and flash-frozen in liquid nitrogen for storage at –80°C.
 
-## Immunoprecipitation
+#### Immunoprecipitation
 
 Magnetic anti-CLAMP beads were prepared to a final concentration of 10 mg/mL by coupling rabbit anti-CLAMP antibody (SDIX) to magnetic beads, according to Dynabeads Antibody coupling kit (Thermo Fisher Scientific) instructions. Similarly, magnetic anti-FMRP beads were prepared using mouse anti-FMRP (5B6, DSHB, USA). Prepared anti-CLAMP, anti-FMRP, and purchased anti-IgG (anti-rabbit IgG M-280 and anti-mouse IgG M-280 Dynabeads raised in sheep, Invitrogen, USA) were blocked to reduce background the night before the immunoprecipitation. First, the beads were washed three times for 5 min in 500 L Tris-NaCl wash (50 mM Tris, 500 mM NaCl, 0.1% NP-40) by rotating at 4°C. The beads were next suspended in block buffer (3.3 mg/mL of yeast tRNA extract prepared in 20 mM HEPES, pH 7.9, 20% glycerol, 0.5% NP-40, 200 mM KCl, 1 mM EDTA, and 2 mM EGTA) and rotated overnight at 4°C. The next day, beads were washed three times for 5 min in the block buffer without yeast tRNA by rotating at 4°C. After the final wash, beads were re-suspended in the same amount of block buffer as the starting volume.
 
@@ -179,25 +359,25 @@ To 1 mL of previously prepared nuclear extract, 100 µL of blocked anti-CLAMP, a
 
 CLAMP was detected in IP-FMRP and IgG-mouse samples using rabbit anti-CLAMP (1:1000).
 
-## RNA-sequencing
+### RNA-sequencing
 
-## RNA-seq in cell lines
+#### RNA-seq in cell lines
 
 15 µg each of clamp dsRNA and GFP dsRNA used for clamp RNAi and GFPRNAi (con), respectively, per T25 flask. Cells (Kc and S2) incubated with dsRNA in FBS minus media for 45 min and allowed to grow in media supplemented with 10% FBS for 6 days before harvesting. dsRNA targeting gfp (control) and clamp for RNAi have been previously validated and described (Hamada et al., 2005; Larschan et al., 2012). PCR products were used as a template to generate dsRNA using the T7 Megascript kit (Ambion, Inc, USA), followed by purification with the QIAGEN RNeasy kit (QIAGEN, USA). RNA was harvested using RNeasy mini plus kit (QIAGEN, USA). Two µg of total RNA was used for the construction of sequencing libraries. RNA libraries for RNA-seq were prepared using Illumina TruSeq V2 mRNA-Seq Library Prep Kit following the manufacturer’s protocols. Hi-seq paired end 100 bp mRNA-seq performed. Data was submitted to the GEO repository (#GSE220439). For gene expression analysis, the DESeq2 pipeline was used. For identifying CLAMP-dependent splicing, our new time2plice pipeline was used.
 
-## RNA-seq in third instar larvae (L3)
+#### RNA-seq in third instar larvae (L3)
 
 Total RNA was extracted from control (yw) and clamp mutant (yw, clamp2 ) male and female third instar larvae (three each) using Trizol (Invitrogen, USA). Messenger RNA was purified from total RNA using poly-T oligo-attached magnetic beads. After fragmentation, the first strand cDNA was synthesized using random hexamer primers followed by the second strand cDNA synthesis. The library was ready after end repair, A-tailing, adapter ligation, size selection, amplification, and purification followed by paired-end RNA-seq in Illumina Novaseq 6000. The sequencing data was run through a SUPPA-based time2splice pipeline to identify CLAMP-dependent SSS events. Data was submitted to the GEO repository (#GSE220455).
 
-## Computational methods
+### Computational methods
 
-## Time2splice tool
+#### Time2splice tool
 
 Time2splice is a new pipeline to identify temporal and sex-specific AS from multi-omics data that relies on the existing validated SUPPA method to identify differentially spliced isoforms (Trincado et al., 2018). This pipeline combines SUPPA with several additional scripts to identify SSS genes and sex-biased genes at different time points.
 
 Importantly, these scripts are partitioned into separate script files to enable the user to use only the scripts that they need for their analysis. Figure 1—figure supplement 1 describes the published methods and new scripts which we used in our analysis. Where boxes are numbered, the output from each step can be used as input for the subsequent step. Step D can be performed in any order depending on user needs. You can also see the README here: https://github.com/ashleymaeconard/time2splice for a detailed description of the methods.
 
-## Tutorial section for time2splice
+##### Tutorial section for time2splice
 
 Preprocess (scripts/preprocess): Retrieve raw data, quality control, trimming, alignment. Perform steps as needed.
 
@@ -237,7 +417,7 @@ Runs one or more of these three aligners (Bowtie2, BWA, or HISAT2) on.fastq data
 
 Plot the alignments from either one or two different aligners (Bowtie2 or HISAT2).
 
-## Temporal expression analysis (scripts/rna)
+##### Temporal expression analysis (scripts/rna)
 
 1_run_salmon.sh
 
@@ -283,7 +463,7 @@ Alternative code base to plot transcript expression using PSI and DTU measures.
 
 Plot AS genes within categories (all females, all males, females sex specific, male sex specific, female all rest, male all rest, female non-sex specific, male non-sex specific, female new sex specific, male new sex specific) over time.
 
-## Temporal protein-DNA analysis (scripts/protein_dna)
+##### Temporal protein-DNA analysis (scripts/protein_dna)
 
 1_run_picard_markduplicates.sh
 
@@ -297,7 +477,7 @@ Runs MACS2 to call peaks for all.sorted.bam files in a given directory.
 
 Generate signal track using MACS2 to profile transcription factor modification enrichment levels genome-wide.
 
-## Temporal multi-omics integration (scripts/multio_analysis)
+##### Temporal multi-omics integration (scripts/multio_analysis)
 
 Note, there is no order to these scripts. Each analysis/results exploration is independent. More analysis scripts to come.
 
@@ -317,7 +497,7 @@ alt_splicing_chi_squared.ipynb
 
 Perform Chi-squared test on AS categories. MXE used in this example.
 
-## Identification of sex-specifically splicing events
+##### Identification of sex-specifically splicing events
 
 We quantified the amount of AS using an exon-centric approach to quantify individual splice junctions by measuring PSI for a particular exon using SUPPA within time2splice.
 
@@ -325,14 +505,14 @@ PSI = IR (included reads)/IR+ER (excluded reads)
 
 The difference in PSI values (ΔPSI) between samples implies differential inclusion or exclusion of alternative exons among the two sample types. For example, a positive ΔPSI of 0.8 for an exon skip event means the exon is included in 80% of transcripts in the sample whereas a negative ΔPSI value implies reduced inclusion of the alternative exon. First, we determined significant differences in ΔPSI values for splicing events between the control female and male samples in 0–2 hr embryo (Figure 2—figure supplement 1A) and 2–4 hr embryo (Figure 2—figure supplement 1D) samples to identify CLAMP-independent SSS differences between males and females. We have included volcano plots to show how we defined significant differences with a p-value cutoff of p-value <0.05. Next, we determined the splicing events which are significantly affected by clamp RNAi in female and male samples (Figure 2—figure supplement 1B–C, E–F). Lastly, we compared the lists of CLAMP-independent to CLAMP-dependent SSS events identify the following categories of splicing events: (1) splicing events that differ between wild type males and wild type females and are also dependent on CLAMP; (2) CLAMP-dependent new SSS events: Splicing events that were not different when comparing wild type males and wild type females but do show sex-specific differences in the absence of CLAMP (Figure 2B and C and Supplementary file 1a-h).
 
-## SSS event analysis
+##### SSS event analysis
 
 RNA-seq data from Rieder et al., 2017 (#GSE102922), Kc and S2 cell line, and third instar larval data generated by us were analyzed using time2splice to determine sex-specifically splicing events. dmel-all-r6.29.gtf from BDGP6 in genomes (DePristo et al., 2011) was used to map each transcript identifier (ID) to gene ID and symbol, for .bed creation data for the associated chromosome, TSS and TES, and strand information were imported from Illumina (https://support.illumina.com/sequencing/sequencing_software/igenome.html). From the raw data after quality control, that is, FastQC (Andrews, 2010), Salmon (Patro et al., 2017) was used to quantify transcript expression for treatment and control samples. Calculated transcripts per million (TPM) values from SUPPA (Trincado et al., 2018) were used for all four replicates of female and male controls at both time points (before and after MZT). Each sample was filtered to include transcripts where the mean value is less than or equal to 3 TPMs per gene. The number of transcripts included at various thresholds was plotted from 1 to 10 and the fraction of genes filtered out begins to plateau around threshold 3. The PSI transcripts between females and males were compared at both 0–2 hr (pre-MZT) and 2–4 hr (post-MZT); Kc and S2 cells; and third instar larval stage, L3 (p-value of 0.05), thereby resulting in ΔPSI values and p-values for each transcription in each experimental condition comparison. Given these resulting delta transcript PSI values, significantly alternatively splice genes (p-value 0.05) were found between females vs. males 0–2 hr (pre-MZT) controls to show which genes are normally SSS pre-MZT. The same process was followed at 2–4 hr (post-MZT), in cell lines and third instar larvae. To then determine the SSS genes, the female RNAi experiment compared with the control ΔPSI gave the number of total alternative spliced transcripts pre-MZT, then considering those that are not shared with males, and are only expressed in females normally, this defined our sex specifically spliced set of genes for females pre-MZT. This process was also performed for males pre-MZT, for post-MZT sample; for S2 and Kc cell lines and for female and male L3.
 
-## GO analysis
+##### GO analysis
 
 GO analysis was performed using the ShinyGO v0.75c: Gene Ontology Enrichment Analysis with an FDR cutoff of 0.05. However, specifically, in time2splice’s script enrichment analysis, we provide R tool Clusterprofiler (Wu et al., 2021) for GO analysis. r implements GO analysis given an input gene set as a .txt file with a new line delimiter between genes. Given this input, it is converted to a vector of genes. The enrich GO function will return the enrichment GO categories after FDR correction. The FDR correction used is Benjamini-Hochberg to account for the expected proportion of false positives among the variables (i.e. genes) for which we expect a difference. This was chosen over other methods such as the common Bonferroni method, as the Bonferroni correction controls the familywise error rate, where we are interested to account for false discoveries. The actual over-representation test itself is implemented in enrich GO according to Yu et al., 2015, where they calculate a p-value using the hypergeometric distribution (Boyle et al., 2004) and then perform multiple hypothesis correction. Importantly, while there are many tools to perform GO analysis, Cluster profiler was chosen due to its superior visuals and ability to handle multiple-omics types. This thus enables diverse additional analyses to be integrated into time2splice in the future such as ATAC-seq.
 
-## ChIP-seq: data analysis
+### ChIP-seq: data analysis
 
 We used preprocessed ChIP-seq data from Rieder et al., 2019 (#GSE133637), specifically the .bw and.broadPeak.gz files in our analysis using ChIPseeker (Yu et al., 2015) and deeptools (Ramírez et al., 2014). Specifically, when plotting the average profiles using deeptools, we achieved a baseline signal representing genome-wide binding taking into consideration the number of genes in other groups by the following procedure: of all genes that are on (no zero read-count genes), we sampled the number of the largest other group (to which we are comparing), and ran compute matrix on that subset. This process was repeated 500 times and the resulting 500 matrices were averaged to produce a representative signal. For motif analysis MEME (Bailey et al., 2015) suite was used.

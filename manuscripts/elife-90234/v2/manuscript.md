@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Fred Hutchinson Cancer Center Seattle United States
+1. Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
 
 † Corresponding author
 
@@ -30,29 +30,101 @@ The role of integrin-activated tyrosine phosphorylation in focal adhesion dynami
 
 ## Results
 
-## Cas clusters are precursors for vinculin clusters
+### Cas clusters are precursors for vinculin clusters
 
 Cas has the potential to serve as a signaling hub that may be critical for focal adhesion assembly. However, we are only aware of one study where Cas recruitment kinetics were measured relative to other focal adhesion proteins. The results showed that Cas and paxillin are recruited simultaneously during adhesion assembly in migrating fibroblasts (Donato et al., 2010). Another study using endothelial cells showed that tyrosine phosphorylation precedes paxillin recruitment (Zaidel-Bar et al., 2003). These two studies suggest that tyrosine phosphorylation may start before Cas is recruited. However, the kinetics of tyrosine phosphorylation, Cas recruitment, and adhesion assembly may vary according to cell type, integrin, or ECM. Therefore, we evaluated the kinetics of Cas recruitment and tyrosine phosphorylation relative to focal adhesion assembly, making use of the immortalized, normal, mammary epithelial line MCF10A (Debnath and Brugge, 2005). Since Cas over-expression can stimulate cell migration (Klemke et al., 1998; Yano et al., 2000), we tagged Cas by editing the Cas gene, inserting an artificial exon encoding mScarlet (mSc) and a linker sequence into the first intron and selecting a polyclonal population of mScarlet fluorescent cells (Figure 1A, Figure 1—figure supplement 1). Western blotting revealed similar levels and phosphorylation of Cas and CasmSc proteins, indicating that most cells are heterozygous (Figure 1B). This intron tagging approach avoided the need for single-cell cloning that can select for variants (see Methods). To monitor focal adhesions, the CasmSc cells were transduced to express near-endogenous levels of YFP-tagged vinculin (VCL). Imaging using total internal reflection (TIRF) microscopy revealed that CasmSc and YFP-VCL substantially co-localized, as expected (Figure 1C). Staining with Cas and vinculin antibodies revealed that tagging Cas and vinculin did not alter focal adhesion number or structure (Figure 1—figure supplement 2A, B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cas wildtype and CasmSc genomic organization and CasmSc mRNA structure. An artificial exon encoding mScarlet (mSc) and a 8-residue linker were inserted in intron 1. (B) Representative immunoblot showing the pY410Cas, total Cas and vinculin (VCL) in control (Ctrl) and CasmSc MCF10A cells. (C) CasmSc co-localization with YFP-VCL. CasmSc MCF10A cells expressing YFP-VCL were plated on COLI for 30 min and visualized by total internal reflection (TIRF) microscopy. (D–H) CasmSc clusters form before vinculin clusters. TIRF microscopy of CasmSc YFP-VCL cells. Individual time frames and kymographs from (D) spreading or (E) migrating cells. Arrowheads indicate a CasmSc clusters (magenta) that are later joined by YFP-VCL (green). (F) Pipeline for tracking regions of interest (ROIs). Upper panels: raw images. Lower panels: masks showing tracked ROIs, color coded by time of onset. (G) Median Δt1/2 (VCL-Cas) of multiple ROIs from n = 19 spreading cells. Error bars show mean (43.8 s) and standard error of the mean (SEM) (3 s). (H) Median Δt1/2 (VCL-Cas) of multiple ROIs from n = 13 spreading cells. Error bars show mean (68.5 s) and SEM (7 s).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Overview of modified pORANGE-based approach for N-terminal tagging endogenous Cas by inserting an artificial exon. T, target sequence; PAM, protospacer adjacent motif; SA, splice acceptor; SD, splice donor, SpCas9, Streptococcus pyogenes Cas9; linker, GGMDELYK. (B) Primer positions and PCR products amplified from CasWT and CasmSc genomic DNA. (C) Sanger sequencing of CasWT (amplified with primers a+b) and 5′ and 3′ junctions of CasmSc (amplified with a+d and c+b, respectively) genomic DNA from the polyclonal population of mScarlet-expressing cells isolated by fluoresecence-activated cell sorter (FACS). Note poor sequencing and inserted base indicative of varied indels at the insertion site. (D) Primer positions and PCR products amplified from CasWT and CasmSc cDNA. (E) Sanger sequencing of reverse transcriptase (RT)-PCR amplified products from exon–exon junctions of CasWT (primers a+b) and CasmSc (primers a+d and c+b, respectively) cDNA. Note in-frame mSc sequence between Cas codons 4 and 5, showing that splicing has corrected indels at the insertion site.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative images (ventral section) of control and CasmSc MCF10A cells fixed and stained with pY410Cas and vinculin antibodies after 30 min of spreading. (B) Quantification of mean cell area, cluster area, mean pY410Cas intensity, and mean vinculin intensity of individual Cas and vinculin clusters. Error bars show mean and standard error of the mean (SEM) for n = 13–68 cells from three biological repeats. ns, non-significant; by Kruskal–Wallis followed by Dunn’s multiple comparison test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Normalized intensity profiles of multiple YFP-VCL and CasmSc regions of interest (ROIs) tracked over 30 min of spreading in a single cell. Frame interval ~20 s. Each line tracks mean intensity of an ROI ≥20 pixels (0.5 μm2) in area. (B) Paired intensity profiles for YFP-VCL and CasmSc in a single tracked ROI. Δt1/2 for each ROI was calculated by subtracting t1/2 of normalized intensity for YFP-VCL from t1/2 for CasmSc. (C) Δt1/2 (VCL-Cas) for 90 ROIs in a single spreading CasmSc YFP-VCL MCF10A cell. Error bars indicate median (54.8 s) and 95% CI (23–105 s). (D) Δt1/2 (VCL-Cas) for 73 ROIs in a single migrating CasmSc YFP-VCL MCF10A cell. Error bars indicate median (58.1 s) and 95% CI (23–105 s). (E) Δt1/2 (VCL-Cas) for 37 ROIs in a single spreading CasmSc YFP-VCL HeLa cell. Error bars indicate median (66.2 s) and 95% CI (21–114 s). (F) Median Δt1/2 (VCL-Cas) for n = 13 spreading CasmSc YFP-VCL HeLa cells. Error bar indicates mean (48.06 s) and standard error of the mean (SEM) (9 s).
+
 To compare CasmSc and YFP-VCL dynamics, we performed dual-channel time-lapse TIRF imaging as cells attached and spread on collagen I (COLI). CasmSc formed clusters at the first points of cell–substrate contact and moved outwards with the spreading edge (Figure 1D, Video 1). Vinculin joined these clusters later, and remained after Cas departed (note transition from magenta to white to green in kymographs). Similar patterns of Cas and vinculin clustering were observed under spontaneous lamellipodial protrusions generated by fully spread cells (Figure 1E, Video 2). These results together suggest that Cas clusters are precursors of vinculin clusters during spreading and migration.
+
+![Video 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-video1.mp4.jpg)
+
+**Video 1.:** 15 s time intervals.
+
+![Video 2.](https://cdn.elifesciences.org/articles/90234/elife-90234-video2.mp4.jpg)
+
+**Video 2.:** 15 s time intervals.
 
 To quantify the dynamics of cluster formation and avoid possible selection bias, we developed a computational pipeline to delineate regions of interest (ROIs) in which Cas, vinculin, or both Cas and vinculin intensities exceeded thresholds that were automatically set for each frame (see Methods). ROIs were tracked over time and quantified if they exceeded 20 pixels (0.5 μm2) in area and persisted for three or more frames (>40 s) (Figure 1F, Video 3). These thresholds exclude the smallest, shortest-lived nascent adhesions but include larger focal complexes (Kanchanawong and Calderwood, 2022). The mean intensity of each channel in each ROI was then quantified over the duration of the recording and the intensities smoothed and normalized to a range of 0–1 (Figure 1—figure supplement 3A). For each ROI, we defined Δt1/2 (VCL-Cas) as the time interval between Cas and vinculin reaching half-maximal intensity (Figure 1—figure supplement 3B). This metric showed wide variability in time interval across different ROIs in an individual cell. However, non-parametric analysis showed that the median Δt1/2 (VCL-Cas) was significantly greater than zero (i.e., Cas clustering preceded vinculin clustering) (median Δt1/2 54.8 s, 95% CI 23–105 s, for 90 ROIs in the cell shown) (Figure 1—figure supplement 3C). Averaging the median time delay across multiple spreading cells in several experiments yielded a mean Δt1/2 (VCL-Cas) 43.8 ± 3 s (mean and standard error of the mean [SEM], n = 19 cells) (Figure 1G). Similar results were obtained quantifying Cas and vinculin intensities under lamellipodia generated by migrating cells (Figure 1—figure supplement 3D). Averaging the median time delay across multiple migrating cells in several experiments yielded a mean Δt1/2 (VCL-Cas) 68.5 ± 7 s (mean and SEM, n = 13 cells) (Figure 1H). A similar experiment using CasmSc YFP-VCL HeLa cells also showed vinculin clustering after Cas (median Δt1/2 (VCL-Cas) 48.1 ± 9 s, mean and SEM, n = 13 cells) (Figure 1—figure supplement 3E, F).
 
+![Video 3.](https://cdn.elifesciences.org/articles/90234/elife-90234-video3.mp4.jpg)
+
+**Video 3.:** MCF10A CasmSc YFP-VCL MCF10A cell spreading on collagen. (Left) Raw data. (Right) Regions of interest defined as regions of 20 pixels (0.5 μm2) or greater in which either or both channel intensities exceed threshold in three consecutive frames. Regions are color coded according to the first frame in which the region is first detected, from cyan to magenta. 20 s time intervals.
+
 Overall, these results show a strong tendency for Cas to form clusters at the edge of spreading or migrating epithelial cells, 45–60 s before vinculin recruitment. For comparison, the time interval between arrival of talin, vinculin, and paxillin in nascent adhesions of CHO-K1 cells migrating on fibronectin (FN) is ~14 or ~2 s for non-maturing or maturing adhesions, respectively (Han et al., 2021). The replacement of Cas clusters by vinculin clusters suggests that Cas may spatially coordinate vinculin clustering and adhesion assembly in both spreading and migrating MCF10A and HeLa cells.
 
-## Cas clusters are precursors of integrin clusters
+### Cas clusters are precursors of integrin clusters
 
 To determine when integrins cluster relative to Cas, we transduced MCF10A CasmSc cells with a lentiviral vector encoding β1Ecto-pH, a recombinant integrin β1 with a pH-sensitive pHluorin tag inserted in the extracellular domain (Huet-Calderwood et al., 2017). This integrin is cell-surface expressed, localizes to adhesions, exhibits normal integrin activation, and restores adhesion in integrin β1 knockout MEFs (Huet-Calderwood et al., 2017). Live dual-color TIRF imaging of β1Ecto-pH in CasmSc MCF10A cells revealed that β1Ecto-pH localized to Cas clusters, but, like YFP-VCL, β1Ecto-pH kinetics were significantly delayed relative to Cas, with median Δt1/2 (β1-Cas) 57.7 ± 6.7 s (mean and SEM, n = 19 cells) (Figure 2A–C, Video 4 left).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig2-v2.jpg)
+
+**Figure 2.:** (A) CasmSc MCF10A cells were transduced to express β1Ecto-pH, plated on COLI and imaged 30 min by total internal reflection (TIRF) microscopy. Upper panels: individual time frames. Arrowheads indicate a CasmSc cluster (magenta) that is later joined by β1Ecto-pH (green). Lower panels: kymographs. (B) Median Δt1/2 (β1-Cas) of multiple regions of interest (ROIs) from 19 spreading CasmSc β1Ecto-pH MCF10A cells. Error bars show mean (57.7 s) and standard error of the mean (SEM) (6.7 s). (C) Upper panels: raw images. Lower panels: masks showing tracked ROIs, color coded by time of onset. (D) ITGB1 wildtype and ITGB1GFP genomic organization and ITGB1GFP mRNA structure. An artificial exon encoding the ITGB1 C-terminus, linker, GFP, and polyA signal was inserted in intron 15. (E) Immunoblot showing expression of ITGB1GFP protein in CasmSc ITGB1GFP HeLa cells. (F) CasmSc clusters form before ITGB1GFP clusters. TIRF microscopy of CasmSc ITGB1GFP HeLa cells. Upper panels: individual time frames. Arrowheads indicate a CasmSc cluster (magenta) that is later joined by ITGB1GFP (green). Lower panels: kymographs. (G) Median Δt1/2 (ITGB1-Cas) of multiple ROIs from 15 spreading CasmSc ITGB1GFP HeLa cells. Error bars show mean (61.06 s) and standard error of the mean (SEM) (5.4 s). (H) Upper panels: raw images. Lower panels: masks showing tracked ROIs, color coded by time of onset.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Overview of approach for C-terminal tagging endogenous ITGB1 by inserting an artificial exon and 3′ poly A signal. T, target sequence; PAM, protospacer adjacent motif; SA, splice acceptor; SD, splice donor; SpCas9, Streptococcus pyogenes Cas9; pA, SV40 poly A signal sequence; linker, 18-residue sequence from Parsons et al., 2008. (B) Primer positions and PCR products amplified from ITGB1WT and ITGB1GFP genomic DNA. (C) Sanger sequencing of ITGB1WT (amplified with primers a+b) and 5′ and 3′ junctions of ITGB1GFP (amplified with a+d and c+b, respectively) genomic DNA. Note poor sequencing and deletion indicative of indels at insertion site. (D) Primer positions and PCR products amplified from ITGB1WT and ITGB1GFP cDNA. (E) Sanger sequencing of RT-PCR amplified product from exon–exon junction of ITGB1GFP (primers a′+b′) cDNA. Note in-frame ITGB1 sequence between exon 15 and the introduced exon 16-GFP fusion.
+
+![Video 4.](https://cdn.elifesciences.org/articles/90234/elife-90234-video4.mp4.jpg)
+
+**Video 4.:** Cas (magenta) and integrin (green) dynamics during attachment and spreading. Left: CasmScβ1Ecto-pH MCF10A cell (20 s time intervals). Right: CasmSc ITGB1GFP HeLa cell (15 s time intervals).
+
 As an independent approach to measure integrin clustering without ectopic expression, we tagged ITGB1 by inserting an artificial exon into the ITGB1 gene in HeLa CasmSc cells, adding an optimized linker (Parsons et al., 2008) and GFP tag to the C-terminus (Figure 2D, Figure 2—figure supplement 1). Western blotting showed a fusion protein of the expected mobility (Figure 2D). Live imaging CasmSc ITGB1GFP cells revealed integrin clustering after Cas with median Δt1/2 (ITGB1-Cas) 61.1 ± 5.4 s (mean and SEM, n = 15 cells) (Figure 2F–H, Video 4 right). Thus, integrin β1 clusters about a minute after Cas in MCF10A and HeLa cells, at approximately the same time as vinculin.
 
-## Initial Cas clusters contain Crk
+### Initial Cas clusters contain Crk
 
 Tyrosine phosphorylation is the earliest event during nascent adhesion formation in migrating fibroblasts (Zaidel-Bar et al., 2003). To determine when Cas is phosphorylated, we analyzed the recruitment of Crk, which binds to phosphorylated but not non-phosphorylated Cas and initiates downstream signaling (Chodniewicz and Klemke, 2004). We edited the CRK gene in CasmSc HeLa cells, adding a linker and mGreenLantern (mGL) to the C terminus (Figure 3A, Figure 3—figure supplement 1). Western blotting showed approximately equal expression of CrkmGL and Crk, suggesting most cells are heterozygous (Figure 3B). Imaging CasmSc CrkmGL cells during attachment and spreading revealed rapid recruitment of CrkmGL on CasmSc clusters (Video 5 left, Figure 3C–E). The median time delay, Δt1/2 (Crk-Cas), was 5.7 ± 2.5 s (mean and SEM, n = 21 cells) (Figure 3D), much shorter than the time for vinculin or integrin recruitment. Crk recruitment was significantly delayed by treatment with eCF506, which inhibits all SFKs but not other kinases (Fraser et al., 2016), indicating that Crk recruitment requires phosphorylation (Figure 3E, Video 5 right). Together these results suggest Cas is activated immediately as it first clusters, when integrin and vinculin density is still low.
 
-## Spatial distribution of adhesion proteins in Cas–vinculin clusters
+![Figure 3.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig3-v2.jpg)
+
+**Figure 3.:** (A) CrkWT and CrkmGL genomic organization and CrkmGL mRNA structure. An artificial exon encoding the Crk C-terminus, linker, mGreenLantern (mGL), and polyA signal was inserted in intron 2. (B) Immunoblot showing expression of CrkmGL protein in CasmSc CrkmGL HeLa cells. (C) CrkmGL clusters form shortly after CasmSc clusters. Total internal reflection (TIRF) micrographs of CasmSc CrkmGL HeLa cells. Upper panels: individual time frames. Arrowheads indicate a CasmSc cluster (magenta) that is rapidly joined by CrkmGL (green). Lower panels: kymographs. (D) Median Δt1/2 (Crk-Cas) of multiple regions of interest (ROIs) from 10 to 21 spreading CasmSc CrkmGL HeLa control and eCF506-treated cells. Error bars show mean and standard error of the mean (SEM). ***,p < 0.001 by Mann–Whitney U-test. (E) Upper panels: raw images. Lower panels: masks showing tracked ROIs, color coded by time of onset.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Overview of approach for C-terminal tagging endogenous Crk by inserting an artificial exon and 3′ poly A signal. T, target sequence; PAM, protospacer adjacent motif; SA, splice acceptor; SD, splice donor, SpCas9, Streptococcus pyogenes Cas9; pA, SV40 poly A signal sequence; linker, GGGS sequence. (B) Primer positions and PCR products amplified from CrkWT and CrkmGL genomic DNA. (C) Sanger sequencing of CrkWT (amplified with primers a+b) and 5′ and 3′ junctions of CrkmGL (amplified with a+d and c+b, respectively) genomic DNA. Note poor sequencing and deletion indicative of imprecise insertion. (D) Primer positions and PCR products amplified from CrkWT and CrkmGL cDNA. (E) Sanger sequencing of RT-PCR amplified product from exon–exon junction of CrkmGL (primers a′+b′) cDNA. Note in-frame Crk sequence between exon 2 and the introduced exon 3 mGL fusion.
+
+![Video 5.](https://cdn.elifesciences.org/articles/90234/elife-90234-video5.mp4.jpg)
+
+**Video 5.:** Cas (magenta) and Crk (green) dynamics during attachment and spreading of CasmSc CrkmGL HeLa cells in presence of dimethylsulfoxide (DMSO) (left) or SFK inhibitor eCF506 (right). 20 s time intervals.
+
+### Spatial distribution of adhesion proteins in Cas–vinculin clusters
 
 Time-lapse imaging of spreading CasmSc YFP-VCL cells showed that CasmSc is continuously added to the outer edge of Cas–vinculin clusters while YFP-VCL is added later, farther from the edge (Figure 4A). We confirmed this distribution by quantifying mScarlet and YFP intensity profiles along the axis of multiple, 4-μm-long Cas–vinculin clusters in several cells (Figure 4B). CasmSc peaked ~0.75 μm and YFP-VCL peaked ~1.5 μm from the edge, reflecting their temporal order of recruitment. Similar profiles were obtained for endogenous Cas and vinculin when parental MCF10A cells were fixed and immunostained after 30 min of spreading (Figure 4—figure supplement 1). Thus, we reasoned that we could estimate the temporal order of arrival and departure of other adhesion proteins from their spatial distribution within Cas–vinculin clusters. To this end, spreading cells were fixed, immunostained with various combinations of antibodies, and imaged. Normalized intensity profiles were plotted and aligned using endogenous Cas or CasmSc as a fiducial marker. Results are presented as heat maps in Figure 4C and sample images in Figure 4—figure supplements 2 and 3.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative image of spreading CasmSc YFP-VCL MCF10A cells illustrating quantification approach. Inset shows 4 × 0.8 μm region of interest (ROI) used to quantify intensity against distance from cell edge. (B) Normalized intensity profiles of CasmSc and YFP-VCL across ≥20 ROIs from several cells. Error bars indicate mean and standard error of the mean (SEM). (C) Heat map of normalized intensity profiles for various antigens in CasmSc cell adhesions stained with indicated antibodies. (D) Normalized intensity profiles using conformation-sensitive integrin β1 antibodies; AIIB2, total integrin β1; mAb13, bent closed (BC) and extended closed (EC) conformations; 9EG7, EC and extended open (EO) conformations; 12G10, EO conformation. (E) Model showing inferred progression from nascent adhesions or focal complexes containing high levels of pY410Cas, inactive integrin and pY861FAK, to focal adhesions containing low levels of Cas and high levels of active integrin, vinculin, pY397FAK, F-actin, talin, paxillin, and kindlin.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Parental MCF10A cells stained for pY410Cas and total Cas (left), or pY410Cas and vinculin (right). (B) Heat map of normalized mean immunofluorescence intensity against distance pY410Cas, Cas and vinculin in parental MCF10A.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) CasmSc MCF10A cell stained for pY410Cas, Total integrin β1 (AIIB2), and F-actin. (B) CasmSc YFP-VCL MCF10A cell stained for pY410Cas and EC + EO integrin β1 (9EG7). (C) CasmSc MCF10A cells stained for EO integrin β1 (12G10) and BC + EC integrin β1 (mAb13).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) CasmSc MCF10A cell stained for CrkL. (B) CasmSc MCF10A cell stained for Yes1. (C) CasmSc MCF10A cell stained for Paxillin. (D) CasmSc MCF10A cell stained for p397FAK, FAK, p861FAK. (E) CasmSc MCF10A cell stained for Talin1. (F) CasmSc MCF10A cell stained for Kindlin2.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A, B) Representative results from two independent experiments. Western blots of total (T), supernatant (S), and adhesome (A) fractions from cells plated on different extracellular matrix (ECM) for 60 min were probed with the indicated antibodies. PDL, poly-D-lysine; COLI, collagen-I. (C) Quantification of multiple independent experiments. Proportion adhesome was calculated from A/(S + A). Error bars indicate mean and standard deviation (SD).
 
 The intensity profiles show several important features. First, Cas phosphorylation, detected with pY410 Cas antibody, is maximal at the head of the cluster, ~0.5 μm from the cell edge (Figure 4C). We were unable to detect Crk with available antibodies but the Crk paralog CrkL peaked at the head of the cluster, consistent with high levels of phospho-Cas and rapid recruitment of Crk during adhesion assembly (Figure 3C). The head of the cluster also contained the Cas SH3-binding protein FAK, phosphorylated at Y861, an SFK phosphorylation site (Eliceiri et al., 2002). This population of FAK is unlikely to be active since it has low levels of autophosphorylation at Y397, a site required for kinase activity (Le Coq et al., 2022). This suggests that the head of the cluster is the peak of SFK activity.
 
@@ -62,35 +134,83 @@ Finally, the distribution of integrin β1 varied according to the antibody used.
 
 Overall, while differential antibody access may affect immunofluorescent staining profiles, the spatial patterns suggest a temporal sequence of events in which active phosphorylated Cas and Crk/CrkL initially cluster with inactive integrin β1 and SFK phosphorylated but kinase-inactive FAK. Since integrin β1 is in its BC conformation it is probably not attached to the ECM. Later, phosphorylated and total Cas levels decrease as integrin β1 recruits talin and kindlin, adopts the EO conformation, and able to bind ECM. Mechanical forces from the actin cytoskeleton then expose binding sites for vinculin and a mature focal adhesion is formed (model, Figure 4E).
 
-## Phosphorylated Cas is enriched in the adhesome
+### Phosphorylated Cas is enriched in the adhesome
 
 Even though many imaging studies have detected Cas in focal adhesions, Cas is not routinely detected in the adhesome, as defined by proteomics or proximity biotinylation (Kanchanawong and Calderwood, 2022). However, low abundance proteins may be significantly enriched in the adhesome yet escape detection. We used Western blotting to estimate the proportion of Cas and selected other adhesion proteins in the adhesome relative to the non-adhesome (supernatant) fraction. Cells were seeded on polylysine or COLI for 60 min and incubated with protein–protein cross-linking reagents before lysis and separation of adhesome and supernatant fractions as described (Humphries et al., 2009; Schiller et al., 2011). We then reversed the cross-links and performed Western blotting on the adhesome and supernatant samples. We found that the adhesome contained ~20–27% of total cellular integrin β1, talin, vinculin, paxillin, and total and autophosphorylated (pY397) FAK, but only ~7% of a control protein, ERK (Figure 4—figure supplement 4). The adhesome fraction also contained ~25% of total cellular Cas, suggesting it is as enriched in adhesions as bona fide adhesome proteins. Moreover, the adhesome also contained ~73% of phospho-Cas, detected with pY410 or pY249 antibodies, and pY861 FAK. This suggests that pY410 Cas, pY249 Cas, and pY861 FAK are significantly enriched in the adhesome fraction relative to their non-phosphorylated (or in the case of FAK, pY397 phosphorylated) forms. This suggests that these phosphorylations occur locally within adhesions and are rapidly lost when Cas or FAK dissociate. In contrast, autophosphorylated pY397 FAK remains active in the cytosol.
 
-## Cas, Crk, and SFKs regulate vinculin recruitment and focal adhesion assembly
+### Cas, Crk, and SFKs regulate vinculin recruitment and focal adhesion assembly
 
 The early arrival of Cas at sites of future focal adhesions suggests Cas may nucleate adhesion assembly. To test this possibility, we depleted Cas from CasmSc cells using siRNA (Figure 5—figure supplement 1A). Cas-depleted cells were non-migratory and their adhesions were immobile (Figure 5—figure supplement 1B, Video 6). Initial cell attachment and spreading were strongly inhibited, with significant decreases in cell area. Cas depletion inhibited focal adhesion formation, and Cas and vinculin intensity in remaining adhesions were inhibited to a similar degree (Figure 5A, B). Immunostaining of other focal adhesion proteins including talin1, kindlin2, and FAK in the remaining adhesions was also reduced (Figure 5—figure supplement 1C). By way of comparison, we treated cells with vinculin siRNA. Vinculin depletion was inefficient (Figure 5—figure supplement 1A), but significantly reduced vinculin intensity in adhesions (Figure 5A, B). However, there was no reduction in cell spreading, the number of Cas clusters, or the intensity of Cas in vinculin-depleted cells. This suggests that Cas regulates vinculin recruitment but vinculin does not regulates Cas recruitment, consistent with their order of assembly.
+
+![Video 6.](https://cdn.elifesciences.org/articles/90234/elife-90234-video6.mp4.jpg)
+
+**Video 6.:** 20 s time intervals.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative images (ventral section) of CasmSc MCF10A cells treated with control, Cas, or vinculin siRNA and fixed and stained with vinculin antibodies after 30 min of spreading on COLI. (B) Quantification of mean cell area and the number and mean intensities of Cas and/or vinculin clusters. Error bars show mean and standard error of the mean (SEM) for n = 10–50 cells from three biological repeats. (C) Median Δt1/2 (VCL-Cas) of multiple regions of interest (ROIs) from 8 to 20 spreading CasmSc YFP-VCL MCF10A cells treated with Ctrl, Crk, CrkL, and Crk + CrkL siRNA. Error bars show mean and SEM. (D) Median Δt1/2 (VCL-Cas) from 13 to 16 time-lapse dual-color total internal reflection (TIRF) micrographs of spreading CasmSc YFP-VCL MCF10A cells treated with DMSO or SFK inhibitor eCF506. (E) Mean cluster intensity of pY410Cas, CasmSc and YFP-VCL in CasmSc YFP-VCL MCF10A cells treated with control, Src, Fyn, or Yes1 siRNA and fixed after 30 min of spreading. Error bars show mean and SEM from n = 7–10 cells from three biological repeats. (F) Cas requirement for outside-in signaling. YFP-VCL MCF10A cells were treated with control or Cas siRNA and allowed to attach in the absence or presence of Mn2+ for 30 min. Graphs show the mean cell spread area and mean intensity of YFP-VCL clusters. Error bars show mean and SEM for n = 6–20 cells from two biological repeats. ns, not significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 by Kruskal–Wallis followed by Dunn’s multiple comparison test (A–E) or pairwise Mann–Whitney U-tests (F).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoblot of cell lysates harvested from CasmSc MCF10A cells treated with control, Cas, or VCL siRNA. (B) Wind-rose plots depicting total path traveled (12 hr) for cells treated with control or Cas siRNA. (C) Representative images (ventral section), of CasmSc YFP-VCL MCF10A cells treated with control or Cas siRNA and stained with indicated antibodies.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) MCF10A cells were transduced to express mCherry-VCL and wildtype (WT) YFP-mouse (m) Cas, were plated on COLI, and imaged. (A) Individual time frames and kymographs. (B) Median Δt1/2 (VCL-Cas) of multiple regions of interest (ROIs) from 20 spreading cells. Error bar shows mean (44.6 s) and standard error of the mean (SEM) (4 s). (C) Representative images. Upper panels: raw images. Lower panels: masks showing tracked ROIs, color coded by time of onset. (D) mCas rescues Cas knockdown depending on the YxxP sites. Representative images of mCherry-VCL MCF10A cells re-expressing vector (−) or wildtype (WT) or 15F mutant YFP-mCas treated with control or Cas siRNA. Quantification of mean cell area, cluster number and area, mean mCherry-VCL intensity, and mean YFP-mCas intensity of individual clusters. Error bars show mean and SEM for n = 16–30 cells from three biological repeats. ns, non-significant; **p < 0.01; ***p < 0.001; ****p < 0.0001 by Kruskal–Wallis followed by Dunn’s multiple comparison test.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–C) Crk/CrkL knockdown. (A) Representative immunoblots, (B) images, and (C) quantification of Cas–vinculin cluster area, number, and mean intensity following treatment with control, Crk, CrkL, or Crk/CrkL siRNA. Error bars show mean and standard error of the mean (SEM) for n = 9–15 cells from three biological repeats. (D–F) SFK knockdown. (D) Representative immunoblots, (E) images, and (F) quantification following treatment with control, Src, Fyn, or Yes1 siRNA. ns, non-significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 by Kruskal–Wallis followed by Dunn’s multiple comparison test.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A–C) FAK knockdown. (A) Representative immunoblots, (B) images, and (C) quantification of cell area, Cas and vinculin mean intensity, and median time delay between Cas and vinculin recruitment for cells treated with control, Cas, or FAK siRNA. 9–27 cells were analyzed in three biological replicates. (D–F) Talin1 and Kindlin2 knockdown. (D) Representative immunoblots, (E) images, and (F) quantification of cell area, Cas and vinculin mean intensity, and median time delay between Cas and vinculin recruitment for cells treated with control, talin1, or kindlin2 siRNA. 5–34 cells were analyzed in three biological replicates. ns, non-significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 by Kruskal–Wallis followed by Dunn’s multiple comparison test.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** mCherry-VCL MCF10A cells expressing vector, YFP-mCasWT or 15F as indicated were treated with control or human-specific Cas siRNA and plated on COLI for 30 min in the presence of absence of Mn2+. (A) Images. (B) Immunoblot. (C) Mean cell area and mean number, area, and intensities of Cas–vinculin clusters of 7–29 cells in two biological repeats. ns, not significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 by Kruskal–Wallis followed by Dunn’s multiple comparison test.
 
 To control for possible non-specific effects of Cas siRNA, we transduced MCF10A cells to express tagged wildtype or mutant mouse Cas, and knocked down endogenous Cas with human Cas-specific siRNA. As shown in Figure 5—figure supplement 2, wildtype mouse Cas (mCasWT) rescued cell spreading and adhesion formation and was recruited approximately a minute before vinculin. However, mutant mouse Cas (mCas15F), lacking the fifteen YxxP phosphorylation sites in the SD, did not rescue cell spreading or adhesion formation.
 
 We investigated whether Crk/CrkL and SFKs are required for Cas-dependent focal adhesion assembly. We used siRNA to deplete Crk, CrkL, or both and measured the time lag between Cas and vinculin recruitment. Depleting Crk and CrkL together but not separately slowed vinculin recruitment significantly, suggesting functional overlap (Figure 5C, Figure 5—figure supplement 3A–C, Video 7). Inhibiting SFKs with the pan-SFK inhibitor eCF506 also significantly delayed vinculin recruitment (Figure 5D, Video 7 bottom panels). To test whether a specific SFK is required, we knocked down each of the major SFKs – Src, Fyn, and Yes1 – and measured adhesion and spreading. Remarkably, cell spreading, adhesion number, vinculin intensity, and Cas phosphorylation were all inhibited by depletion of Yes1 but not Src or Fyn, while Cas cluster formation was normal (Figure 5E, Figure 5—figure supplement 3D–F). This implies that Yes1 may have a special role in phosphorylating Cas and recruiting Crk/CrkL to stimulate adhesion assembly in MCF10A cells spreading.
 
-## FAK, kindlin, and talin are not required for Cas clustering
+![Video 7.](https://cdn.elifesciences.org/articles/90234/elife-90234-video7.mp4.jpg)
+
+**Video 7.:** CasmSc YFP-VCL MCF10A cells treated with siCtrl (upper left), siCrk, siCrkL, or siCrkL/CrkL (upper right) or with DMSO (bottom left) or eCF506 (bottom right). 20 s time intervals.
+
+### FAK, kindlin, and talin are not required for Cas clustering
 
 We found that Cas and FAK cluster together early during adhesion assembly (Figure 4C), raising the possibility that FAK recruits Cas, as reported in spreading fibroblasts (Zhang et al., 2014). Therefore, we tested whether FAK is required for Cas clustering by depleting FAK with siRNA. Depleting FAK had no effect on MCF10A cell spreading, the intensity of Cas or vinculin clusters, or the median time delay between Cas and vinculin recruitment (Figure 5—figure supplement 4A–C). Kindlin2 and talin1 directly bind integrin tails and play important roles in integrin adhesion in fibroblasts, with kindlin2 interacting with paxillin and talin1 recruiting vinculin and providing attachment for actin, enabling force generation, adhesion maturation and cell spreading (Bachmann et al., 2023). Kindlin2 or talin1 siRNA had no effect on Cas clustering, but depleting talin1 decreased cell spreading and the intensity of vinculin clusters, and depleting either kindlin2 or talin1 increased the time delay between Cas and vinculin recruitment (Figure 5—figure supplement 4D–F). This suggests a sequence of events where Cas regulates cell spreading and recruitment of talin1 and kindlin2, and talin1 and kindlin2 are required to recruit vinculin.
 
-## Cas regulates ‘outside-in’ integrin activation
+### Cas regulates ‘outside-in’ integrin activation
 
 Integrins can be activated ‘inside-out’ by proteins binding to their cytoplasmic tails, or ‘outside-in’ by interactions with the ECM or with molecules or ions that stabilize the active open conformation (Hynes, 2002). We tested whether Cas is required for outside-in adhesion assembly by treating control or Cas-depleted cells with Mn2+, which stabilizes the active integrin conformation (Gailit and Ruoslahti, 1988; Lenter et al., 1993). While Mn2+ increased the spread area of control cells, it did not increase spreading of Cas siRNA-treated cells and did not rescue the intensity of vinculin clusters (Figure 5F). As a control for potential off-target effects of Cas siRNA we found that expression of mCasWT but not mCas15F rescued outside-in signaling by Mn2+ (Figure 5—figure supplement 5A–C). This suggests that phosphorylation of Cas is rate limiting for outside-in as well as inside-out integrin activation.
 
-## Cas regulates focal adhesion assembly on different ECM, in different cell types, and through different integrins
+### Cas regulates focal adhesion assembly on different ECM, in different cell types, and through different integrins
 
 Our finding that Cas and SFKs are required for adhesion assembly conflicts with previous results (Bockholt and Burridge, 1995; Webb et al., 2004). However, the previous studies used mutant fibroblasts spreading on FN while we used epithelial cells on COLI. This raises the possibility that Cas may be dispensable for adhesion formation in certain cell types or ECM. To investigate further, we depleted Cas from MCF10A cells and plated them on FN or COLI. Cas depletion inhibited cell spreading and the number, area and vinculin intensity of adhesions on both substrates (Figure 6A). Moreover, time-lapse imaging showed that Cas preceded vinculin clustering by a similar time interval on FN as on COLI (Figure 6B, Video 8). Therefore, Cas plays a similar role in adhesion assembly when epithelial cells attach to either FN or COLI.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig6-v2.jpg)
+
+**Figure 6.:** (A) MCF10A cells plated for 30 min on COLI- or fibronectin (FN)-coated surfaces after control or Cas siRNA treatment. Mean cell area, mean VCL intensity, mean cluster area and number of 7–41 cells in two biological repeats. (B) Median Δt1/2 (VCL-Cas) of CasmSc YFP-VCL MCF10A cells spreading on FN or COLI. Error bars indicate mean and standard error of the mean (SEM). n = 23–25. ns, non-significant by Mann–Whitney test. (C) HFF cells plated for 30 min on COLI- or FN-coated surface after control or Cas siRNA treatment. Mean cell area, mean VCL intensity, mean cluster number, and area, of 6–9 cells in two biological repeats. ns, non-significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001 by Kruskal–Wallis followed by Dunn’s multiple comparison test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative immunoblots of cell lysates from human foreskin fibroblast (HFF) cells treated with control and Cas siRNA (upper panels), and of CasmSc YFP-VCL MCF10A cells treated with control and ITGB1 siRNA (bottom panels). Images of CasmSc YFP-VCL MCF10A or HFF cells treated with control or ITGB1 (B) and control or ITGAV (C) siRNA. Bottom panels show knockdown efficiency.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/90234/elife-90234-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Identification of β1 integrins required for attachment to fibronectin (FN) and COLI. CasmSc MCF10A cells were treated with blocking antibodies α5β1 (P8D4) and α2β1 (P1E6) during spreading on FN- or COLI-coated glass for 30 min. Cells were then fixed and stained with phalloidin to visualize F-actin. Areas of 19–28 cells. ns, non-significant; ****p < 0.0001 by Kruskal–Wallis followed by Dunn’s multiple comparison test. (B) Organization of β1 and αv integrin adhesions on FN. Human foreskin fibroblast (HFF) cells were plated on FN for 30 min, fixed, and stained as indicated.
+
+![Video 8.](https://cdn.elifesciences.org/articles/90234/elife-90234-video8.mp4.jpg)
+
+**Video 8.:** Cas (magenta) and vinculin (green) dynamics during attachment and spreading on COLI (left) and fibronectin (FN; right). 20 s time intervals.
 
 To test whether Cas also regulates adhesion assembly in fibroblasts, we depleted Cas from human foreskin fibroblasts (HFFs) and plated them on FN or COLI. As with epithelial cells, Cas depletion inhibited HFF cell spreading and adhesion formation on both ECMs (Figure 6C, Figure 6—figure supplement 1A).
 
 Proteomic analysis of MCF10A cells reveals expression of a variety of α and β integrin chains (Ly et al., 2018). However, all α chains that are expressed can heterodimerize with β1, and all the β chains that are expressed can heterodimerize with αv (Hynes, 2002). We tested the roles of β1 and αv heterodimers in Cas-dependent adhesion of epithelial and fibroblast cells using siRNA. On COLI, β1 depletion strongly inhibited spreading and recruitment of vinculin to Cas clusters, while depleting αv had smaller effects. In contrast, on FN, both β1 and αv were required for spreading and vinculin recruitment (Figure 6—figure supplement 1B, C). Thus, Cas regulates β1-dependent adhesion assembly on COLI, and β1- or αv-dependent adhesion assembly FN. To further identify the specific integrins regulated by Cas, we noted that MCF10A cells express α chains α2, 3, 5, and v at 10-fold higher level than other α chains, while β3 is under-expressed relative to β1 and β6 (Ly et al., 2018). This makes α2β1 a strong candidate to bind COLI and α5β1 and αvβ6 strong candidates to bind FN. Indeed, integrin α2β1-blocking mAb P1E6 (Carter et al., 1990; Tuckwell et al., 1995) prevented COLI binding while integrin α5β1-blocking monoclonal antibody (mAb) P8D4 (Alfandari et al., 2003; Davidson et al., 2002) prevented FN binding (Figure 6—figure supplement 2A). The exact αv integrin regulated by Cas is unclear, but immunofluorescence of HFFs spreading on FN did not reveal any αv clusters that do not also contain β1 (Figure 6—figure supplement 2B). Early β1 clusters at the edge lack αv. Taken together, these results suggest that Cas nucleates α2β1 and α5β1 adhesions on COLI and FN, respectively, and is also required for subsequent recruitment of αv on FN.
 
-## SFK–Cas–Crk–Rac1 signaling regulates adhesion assembly
+### SFK–Cas–Crk–Rac1 signaling regulates adhesion assembly
 
 SFK–Cas–Crk/CrkL signaling is mediated by Crk/CrkL effectors including DOCK180, a Rac1 GEF (Chodniewicz and Klemke, 2004). Rac1 is known to regulate lamellipodia protrusion by binding to the WAVE regulatory complex (WRC) and driving Arp2/3 complex-mediated actin polymerization (Takenawa and Suetsugu, 2007). Transient activation of Rac1 also induces formation of nascent adhesions at the cell edge, although the specific mechanism is unclear (Nobes and Hall, 1995; Zaidel-Bar et al., 2003). We used a Forster resonance energy transfer (FRET) biosensor (Rac1-2G) to measure Rac1 activity during MCF10A cell adhesion (Fritz et al., 2015). Rac1-2G FRET activity was stimulated around the periphery of cells attaching to collagen and was inhibited by the Rac1-specific inhibitor EHT1864 (Onesto et al., 2008; Figure 7A). EHT1864 also inhibited cell spreading and reduced and delayed vinculin clustering but had no effect on Cas clustering (Figure 7B, Video 9 top). Importantly, depleting Cas or Yes1 inhibited Rac1 (Figure 7C, D), consistent with Rac1 activation by the SFK–Cas–Crk/CrkL pathway (Chodniewicz and Klemke, 2004). Together, these results suggest that early clustering of phosphorylated Cas with Crk and inactive integrins activates Rac1 to trigger both cell spreading and assembly of vinculin-containing focal adhesions.
 
@@ -98,7 +218,11 @@ SFK–Cas–Crk/CrkL signaling is mediated by Crk/CrkL effectors including DOCK1
 
 **Figure 7.:** (A) Allosteric inhibitor EHT1864 inhibits Rac1 activation during cell attachment. FRET ratio images (left) and quantification (right) of Rac1-2G MCF10A cells treated with DMSO or EHT1864 and imaged after 30 min attachment. (B) Cell spreading and vinculin but not Cas recruitment requires Rac1. Images and quantification of spreading CasmSc YFP-VCL MCF10A cells treated with DMSO or EHT1864. Error bars show mean and standard error of the mean (SEM) of 8–20 cells in three biological repeats. (C, D) Rac1 activation requires Cas and Yes1. FRET ratio images (left) and quantification (right) of Rac1-2G MCF10A cells treated with (C) control or Cas, or (D) control or Yes1 siRNA. Error bars show mean and SEM from >30 cells from three biological replicates. ns, not significant; *p < 0.05; ***p < 0.001; ****p < 0.0001 by Mann–Whitney U-tests.
 
-## Linkage between cell spreading and adhesion assembly through positive and negative feedback
+![Video 9.](https://cdn.elifesciences.org/articles/90234/elife-90234-video9.mp4.jpg)
+
+**Video 9.:** CasmSc YFP-VCL MCF10A cells treated with DMSO (top left) or EHT1864 (top right) or with DMSO (bottom left) or diphenylamineiodonium (DPI) (bottom right). 20 s time intervals.
+
+### Linkage between cell spreading and adhesion assembly through positive and negative feedback
 
 If the sole function of Cas in focal adhesion assembly is to activate Rac1, then Rac1 activation may bypass the need for Cas. To test this possibility, we over-expressed either wildtype or constitutively active GFP-Rac1Q61L in MCF10A CasmSc cells by transient transfection and examined cells during attachment to collagen. As expected, GFP-Rac1Q61L cells spread more than GFP-Rac1WT cells (Figure 8A). Surprisingly, Cas depletion prevented Rac1-induced spreading (Figure 8A). This suggests that, even though Cas requires Rac1 to support normal spreading and adhesion formation, active Rac1 requires Cas to induce spreading, raising the possibility of a positive feedback loop from Rac1 back to Cas.
 
@@ -109,6 +233,10 @@ If the sole function of Cas in focal adhesion assembly is to activate Rac1, then
 We investigated which Rac1 effector may be involved in positive feedback on Cas. Rac1 stimulates localized production of ROS by the Nox1 NADPH-dependent oxidase by binding p47phox (Ushio-Fukai, 2006). ROS are short-range signaling molecules, rapidly reacting with and inhibiting protein-tyrosine phosphatases (PTPs) and increasing local tyrosine phosphorylation of various substrates including Cas, SFKs, and p190RhoGAP (Garton et al., 1996; Giannoni et al., 2005; Nimnual et al., 2003; Tonks, 2005). Thus, Rac1 potentially activates Cas through a Rac1–ROS–PTP–SFK–Cas pathway. Such a positive feedback loop, where the output signal is fed back as input, can amplify the signal, enhancing the outcome (Brandman and Meyer, 2008). To test whether ROS are involved in positive feedback and adhesion assembly in MCF10A cells, we inhibited Nox1 with diphenylamineiodonium (DPI) (Reis et al., 2020). DPI inhibited Rac1 (Figure 8B), inhibited cell spreading, and delayed vinculin recruitment to Cas clusters (Figure 8C, Video 9). This suggests that positive feedback through ROS amplifies and sustains SFK–Cas–Crk/CrkL–Rac1 activity that recruits vinculin.
 
 Positive feedback loops require negative feedback to avoid runaway amplification (Brandman and Meyer, 2008). Phosphorylation-dependent signaling can be inhibited by PTPs or phosphorylation-dependent proteolysis. Cas signaling is inhibited by negative feedback through the CRL5SOCS6 ubiquitin ligase complex, which targets activated Cas for proteasomal degradation (Teckchandani and Cooper, 2016; Teckchandani et al., 2014). We tested whether CRL5SOCS6 regulates focal adhesion assembly during MCF10A cell attachment. Either SOCS6 depletion or a Cullin inhibitor, MLN4924, shortened Δt1/2 (VCL-Cas) during cluster assembly, consistent with CRL5SOCS6 interfering with focal adhesion formation by negative feedback on phospho-Cas signaling (Figure 8D, Video 10).
+
+![Video 10.](https://cdn.elifesciences.org/articles/90234/elife-90234-video10.mp4.jpg)
+
+**Video 10.:** CasmSc YFP-VCL MCF10A cells treated with control (left) or SOCS6 (right) siRNA. 15 s time intervals.
 
 Together, these results suggest a model in which nascent clusters of inactive integrin β1, phosphorylated Cas, active SFKs and Crk stimulate Rac1 and generate ROS, creating positive feedback that strengthens and maintains signaling, fine-tuned by negative feedback from CRL5SOCS6. Subsequently, integrin β1 is activated and talin1, kindlin2, vinculin, and other mechanosensing proteins assemble to form a focal adhesion (Figure 8E).
 
@@ -126,11 +254,11 @@ Our studies also raise the question of how phospho-Cas induces integrin β1 clus
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 pMSCV-Puro-EYFP-vinculin, pMSCV-Puro-EYFP-mCasWT, pMSCV-Puro-EYFP-mCas15F, and pBabe-Puro-mCherry-mVCL were described previously (Teckchandani and Cooper, 2016). EGFP-Rac1WT and EGFP-Rac1Q61L were provided by K. Wennerberg, University of North Carolina, Chapel Hill, NC (Arthur et al., 2004). The following vectors were gifts from the indicated investigators: pmScarlet-i_C1 (Dorus Gadella, Addgene plasmid # 85044), pORANGE cloning template vector (Harold MacGillavry, Addgene # 131471), pCE-mp53DD (Shinya Yamanaka, Addgene # 41856), pLenti-Rac1-2G (Olivier Pertz, Addgene # 66111), pcDNA3.1-mGreenLantern (Gregory Petsko, Addgene # 161912) (Campbell et al., 2020), pMD2.G and psPAX2 (Didier Trono, Addgene #12259 and 12260). pLenti Ecto-pHluorin β1 integrin with 4-residue linkers was kindly provided by David A. Calderwood (Yale University School of Medicine, USA) (Huet-Calderwood et al., 2017).
 
-## Gene editing
+### Gene editing
 
 We inserted fluorescent protein tags into endogenous genes by homology-independent intron targeting, with modifications (Serebrenik et al., 2019; Zhong et al., 2021). Intron targeting has several advantages over exon targeting. First, the exact position of artificial exon within the intron is unimportant, allowing insertion at the single guide RNA (sgRNA) SpCas9 target site with highest predicted efficiency. Second, the exon does not need to be inserted precisely, since errors should be corrected by RNA splicing. Thus, homology arms are unnecessary, shortening the donor sequence. Third, by inserting a fluorescent protein open-reading frame lacking an initiation codon, the majority of fluorescent cells should be correctly targeted and can be isolated by FACS without need for single-cell cloning.
 
@@ -142,13 +270,218 @@ For C-terminal tagging of ITGB1 and Crk, the donor contained: (1) the SA sequenc
 
 The targeting vectors were transiently transfected with Lipofectamine 2000 into MCF10A epithelial cells or HeLa cells together with pCE-mp53DD, an episomal plasmid encoding a dominant-negative mutant of TP53, to avoid apoptosis due to DNA damage responses (Haapaniemi et al., 2018; Ihry et al., 2018). Two weeks after transfection, fluorescent cells were checked visually on a Leica Stellaris 5 confocal microscope and selected by FACS.
 
-## Oligonucleotides for Cas gene editing
+### Oligonucleotides for Cas gene editing
 
-## Oligonucleotides and gBlocks for Crk gene editing
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence and notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cas sgRNA</td>
+      <td>BbsI-TARGET</td>
+    </tr>
+    <tr>
+      <td>Cas gRNA Fw</td>
+      <td>caccgATCAGCGGTGTTCACTCAAG</td>
+    </tr>
+    <tr>
+      <td>Cas gRNA Rv</td>
+      <td>aaacCTTGAGTGAACACCGCTGATc</td>
+    </tr>
+    <tr>
+      <td>Cas mScarlet PCR</td>
+      <td>HindIII-TARGET-PAM-SPLICE ACCEPTOR-mScarlet</td>
+    </tr>
+    <tr>
+      <td>mSc Donor HindIII Fw</td>
+      <td>ataaagcttATCAGCGGTGTTCACTCAAGGGGCTAATCTCCTCTCTTCTCCTCTCTCCAGgtgagcaagggcgaggcagt</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XhoI-PAM-TARGET-SPLICE DONOR-mScarlet_linker</td>
+    </tr>
+    <tr>
+      <td>mSc Donor XhoI Rv</td>
+      <td>atactcgagCCCCTTGAGTGAACACCGCTGATAACCAATACTTACcttgtacagctcgtccatgcc</td>
+    </tr>
+    <tr>
+      <td>Cas Genomic PCR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>CACCTCTACATTCTAGCCTGGG</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>GAACCTGCAACCCAAAACAC</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>GCCCCGTAATGCAGAAGAAG</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>GCATGAACTCCTTGATCACTGC</td>
+    </tr>
+    <tr>
+      <td>Cas cDNA PCR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>TCGGAGCCCCGAGGGCACGCG</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>CACGATGCCCTGGCGCCCATG</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>CCGCGGCACCAACTTCCCTCC</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>CGGGGATGTCGGCGGGGTGCT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Oligonucleotides and gBlocks for ITGB1 gene editing
+### Oligonucleotides and gBlocks for Crk gene editing
 
-## Cell lines, transfection, and infection
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence and notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crk sgRNA</td>
+      <td>BbsI-TARGET</td>
+    </tr>
+    <tr>
+      <td>Crk gRNA Fw</td>
+      <td>CACCGCCCTGCGGCTGGACTTACGT</td>
+    </tr>
+    <tr>
+      <td>Crk gRNA Rv</td>
+      <td>AAACACGTAAGTCCAGCCGCAGGGC</td>
+    </tr>
+    <tr>
+      <td>Crk Genomic PCR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>TGACCCATACAGTGACTTCAGG</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>TTATGCATCTGGGCTTGTACTG</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>GAGCAAAGACCCCAACGAGAA</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>GCTGAACTTGTGGCCGTTTAC</td>
+    </tr>
+    <tr>
+      <td>Crk cDNA PCR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a’</td>
+      <td>CTGATTGGAGGTAACCAGGAG</td>
+    </tr>
+    <tr>
+      <td>b’</td>
+      <td>GCAGATGAACTTCAGGGTCAG</td>
+    </tr>
+    <tr>
+      <td>CrkmGL gBlock (Donor)</td>
+      <td>HindIII-PAM-TARGET-SPLICE ACCEPTOR-3’ORF-GGGS-mGL-stop-spacer-SV40polyA-PAM-TARGET-BamHI</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>agcataaagcttCCAACGTAAGTCCAGCCGCAGGGCTAATCTCCTCTCTTCTCCTCTCTCCAGGTCGGTGAGCTGGTAAAGGTTACGAAGATTAATGTGAGTGGTCAGTGGGAAGGGGAGTGTAATGGCAAACGAGGTCACTTCCCATTCACACATGTCCGTCTGCTGGATCAACAGAATCCCGATGAGGACTTCAGCggcgctagcatggtgagcaagggcgaggagctgttcaccggggtggtgcccatcctggtcgagctggacggcgacgtaaacggccacaagttcagcgtgtccggcgagggcgagggcgatgccacctacggcaagctgaccctgaagttcatctgcaccaccggcaagctgcccgtgccctggcccaccctcgtgaccaccctgacctacggcgtgcagtgcttcagccgctaccccgaccacatgaagcagcacgacttcttcaagtccgccatgcccgaaggctacgtccaggagcgcaccatcttcttcaaggacgacggcaactacaagacccgcgccgaggtgaagttcgagggcgacaccctggtgaaccgcatcgagctgaagggcatcgacttcaaggaggacggcaacatcctggggcacaagctggagtacaactacaacagccacaacgtctatatcatggccgacaagcagaagaacggcatcaaggtgaacttcaagatccgccacaacatcgaggacggcagcgtgcagctcgccgaccactaccagcagaacacccccatcggcgacggccccgtgctgctgcccgacaaccactacctgagcacccagtccgccctgagcaaagaccccaacgagaagcgcgatcacatggtcctgctggagttcgtgaccgccgccgggatcactctcggcatggacgagctgtacaagtaaagcgctccatggcccAACTTGTTTATTGCAGCTTATAATGGTTACAAATAAAGCAATAGCATCACAAATTTCACAAATAAAGCATTTTTTTCACTGCATTCTAGTTGTGGTTTGTCCAAACTCATCAATGTATCTTATCATGTCTGGATCTCCCAACGTAAGTCCAGCCGCAGGGggatcctatgca</td>
+    </tr>
+  </tbody>
+</table>
+
+### Oligonucleotides and gBlocks for ITGB1 gene editing
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence and notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ITGB1 sgRNA</td>
+      <td>BbsI-TARGET</td>
+    </tr>
+    <tr>
+      <td>ITGB1 gRNA Fw</td>
+      <td>CACCGGCGCCTTCTGTTCACGATAA</td>
+    </tr>
+    <tr>
+      <td>ITGB1 gRNA Rv</td>
+      <td>AAACTTATCGTGAACAGAAGGCGC</td>
+    </tr>
+    <tr>
+      <td>ITGB1 Genomic PCR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>AGTAACTTCCGTAGGAGACCCC</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>CATTCTTGAGTCCTTCCTCCAC</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>AACGGCATCAAGGTGAACTTC</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>GTAGGTCAGGGTGGTCACGAG</td>
+    </tr>
+    <tr>
+      <td>ITGB1 cDNA PCR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a’</td>
+      <td>GTGTGGTTGCTGGAATTGTTC</td>
+    </tr>
+    <tr>
+      <td>b’</td>
+      <td>GTAGGTCAGGGTGGTCACGAG</td>
+    </tr>
+    <tr>
+      <td>ITGB1GFP gBlock (Donor)</td>
+      <td>HindIII-PAM-TARGET-SPLICE ACCEPTOR-3’ORF-linker-GFP-stop-spacer-SV40polyA-PAM-TARGET-BamHI</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>agcataaagcttCCTTTATCGTGAACAGAAGGCGCCTAATCTCCTCTCTTCTCCTCTCTCCAGGGTGAAAATCCTATTTATAAGAGTGCCGTAACAACTGTGGTCAATCCGAAGTATGAGGGAAAAggaggggggggggcccggaggcggggggaggcgggggatccaccggtcgccaccatggtgagcaagggcgaggagctgttcaccggggtggtgcccatcctggtcgagctggacggcgacgtaaacggccacaagttcagcgtgtccggcgagggcgagggcgatgccacctacggcaagctgaccctgaagttcatctgcaccaccggcaagctgcccgtgccctggcccaccctcgtgaccaccctgacctacggcgtgcagtgcttcagccgctaccccgaccacatgaagcagcacgacttcttcaagtccgccatgcccgaaggctacgtccaggagcgcaccatcttcttcaaggacgacggcaactacaagacccgcgccgaggtgaagttcgagggcgacaccctggtgaaccgcatcgagctgaagggcatcgacttcaaggaggacggcaacatcctggggcacaagctggagtacaactacaacagccacaacgtctatatcatggccgacaagcagaagaacggcatcaaggtgaacttcaagatccgccacaacatcgaggacggcagcgtgcagctcgccgaccactaccagcagaacacccccatcggcgacggccccgtgctgctgcccgacaaccactacctgagcacccagtccgccctgagcaaagaccccaacgagaagcgcgatcacatggtcctgctggagttcgtgaccgccgccgggatcactctcggcatggacgagctgtacaagtaaagcgctCCATGGCCCAACTTGTTTATTGCAGCTTATAATGGTTACAAATAAAGCAATAGCATCACAAATTTCACAAATAAAGCATTTTTTTCACTGCATTCTAGTTGTGGTTTGTCCAAACTCATCAATGTATCTTATCATGTCTGGATCTCCCTTTATCGTGAACAGAAGGCGCggatcctatgca</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines, transfection, and infection
 
 MCF10A cells were originally obtained from Dr. J. Brugge (Harvard Medical School) and confirmed by short tandem repeat (STR) profiling. Cells were cultured in Dulbecco’s modified Eagle medium, DMEM/F12 growth media (Thermo Fisher Scientific) supplemented with 5% horse serum (Thermo Fisher Scientific), 10 μg/ml insulin (Thermo Fisher Scientific), 0.1 μg/ml cholera toxin (EMD Millipore), 0.5 μg/ml hydrocortisone (Sigma-Aldrich), and 20 ng/ml epidermal growth factor (EGF) (Thermo Fisher Scientific), and passaged using trypsin/ethylenediaminetetraacetic acid (EDTA) or Accutase (Sigma-Aldrich A6964). For experiments, cells were detached with Accutase and resuspended in assay media (DMEM/F12, 2% horse serum, 0.1 μg/ml cholera toxin, 10 μg/ml insulin, 0.5 μg/ml hydrocortisone, and 0 ng/ml EGF).
 
@@ -158,37 +491,156 @@ HFFs were originally from Dr. Denise Galloway, Fred Hutchinson Cancer Center (Pa
 
 Retro- and lentiviruses were generated by transfecting 293FT cells with viral vector, pMD2.G and psPAX2 in 2:1:2 ratio with PolyJet transfection reagent (SignaGen Laboratories). Media were harvested 2 days later and added to recipient cells with 1 μg/ml polybrene (Sigma) for 8–16 hr. Expressing cells were checked visually using a Leica Stellaris 5 confocal microscope and selected using 1 μg/ml puromycin or FACS, depending on the vector.
 
-## Antibodies
+### Antibodies
 
 Following antibodies were used: mouse anti-Cas (610271) (BD Biosciences); rabbit-phospho-Y410Cas (4011S) and phospho-Y249Cas (4014S) (Cell Signaling Technology); mouse anti-vinculin (V9131, Sigma-Aldrich); mouse anti-Crk (610035) (BD Transduction labs); mouse anti-CrkL (05-414) (Upstate); sheep anti-paxillin (AF4259, R and D Systems); rabbit anti-pY31 paxillin (44-720G, Biosource); rat anti-integrin-β1 (9EG7, 553715) and mouse anti-paxillin (610051) (BD Biosciences); rabbit anti-Talin1 (A14168-1-AP), rabbit-anti Kindlin2 (11453-1-AP), and mouse anti-FAK (66258-1-Ig) (Proteintech); rat anti-integrin-β1 (mAB13, MABT821), rabbit anti-integrin β1 (AB1952P), mouse anti-integrin β1 (12G10, MAB2247) (Millipore); rabbit-anti-integrin-β3 (A2542), rabbit-anti-integrin-αv (A2091) (abclonal); rat anti-integrin-β1 (AIIB2), mouse anti-integrin α5β1 (P8D4), and mouse anti-integrin α2β1 (P1E6) (Developmental Studies Hybridoma Bank); AlexaFluor 488 goat anti-rabbit IgG (H+L), AlexaFluor 488 goat anti-mouse IgG (H+L), AlexaFluor 647 goat anti-mouse IgG (H+L), AlexaFluor 647 goat anti-sheep IgG (H+L), and AlexaFluor 633 goat anti-rat IgG (H+L) (Invitrogen); IRDye 680RD goat anti-mouse and IRDye 800CW goat anti-rabbit (LI-COR).
 
-## Inhibitors
+### Inhibitors
 
-## siRNA transfection
+<table>
+  <thead>
+    <tr>
+      <th>Inhibitor</th>
+      <th>Source</th>
+      <th>Concentration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DPI</td>
+      <td>EMD Millipore, Cat: 300260-10MG</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>eCF506</td>
+      <td>Cayman Chemical, Cat: 19959</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>EHT1864</td>
+      <td>ApexBio, Cat: B5487</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>MLN4924</td>
+      <td>Fisher, Cat: 50161353</td>
+      <td>5 μM</td>
+    </tr>
+  </tbody>
+</table>
+
+### siRNA transfection
 
 Cells were suspended in growth media and added to dishes with 50 pmol pooled siRNA and RNAiMAX (Invitrogen) as per the manufacturer’s instructions. Transfection was repeated 2 days later and cells analyzed after a further 2 days.
 
-## Cell lysis and immunoblotting
+<table>
+  <thead>
+    <tr>
+      <th>Negative control siRNA</th>
+      <th>QIAGEN, Cat: 1027280</th>
+      <th>AAT TCT CCG AAC GTG TCA CGT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siFyn</td>
+      <td>Dharmacon, Cat: L-003140-00-0005</td>
+      <td>J-003140-11: CGG AUU GGC CCG AUU GAU AJ-003140-12: GGA CUC AUA UGC AAG AUU GJ-003140-13: GAA GCC CGC UCC UUG ACA AJ-003140-14: GGA GAG ACA GGU UAC AUU C</td>
+    </tr>
+    <tr>
+      <td>siCrk</td>
+      <td>Dharmacon, Cat: M-010503-03-0005</td>
+      <td>D-010503-02: GGA GAC AUC UUG AGA AUC CD-010503-03: UCC CUU ACG UCG AGA AGU AD-010503-04: GGA CAG CGA AGG CAA GAG AD-010503-19: GGG ACU AUG UGC UCA GCG U</td>
+    </tr>
+    <tr>
+      <td>siCrkL</td>
+      <td>Dharmacon, Cat: M-012023-02-0005</td>
+      <td>D-012023-01: CCG AAG ACC UGC CCU UUA AD-012023-02: GAA GAU AAC CUG GAA UAU GD-012023-05: AAU AGG AAU UCC AAC AGU UD-012023-18: AGU AAA ACU UAA CGG ACU U</td>
+    </tr>
+    <tr>
+      <td>siSOCS6</td>
+      <td>QIAGEN, Cat: GS9306</td>
+      <td>SI03068359: CAG CTG CGA TAT CAA CGG TGASI00061383: TAG AAT CGT GAA TTG ACA TAASI00061376: CGG GTA CAA ATT GGC ATA ACASI00061369: TTG ATC TAA TTG AGC ATT CAA</td>
+    </tr>
+    <tr>
+      <td>siYes1</td>
+      <td>QIAGEN, Cat: GS7525</td>
+      <td>SI02223942: GAG GCT CCT GCT TAT TTA TAASI02223935: CCA GCC TAC ATT CAC TTC TAASI00302218: AAT CCC TCC ATG AAT TGA TGASI02635206: AAG TAT AAT GCA GTA CAT TAA</td>
+    </tr>
+    <tr>
+      <td>siBCAR1(Cas)</td>
+      <td>QIAGEN, Cat: GS9564</td>
+      <td>SI02757741: AAG CAG TTT GAA CGA CTG GAASI02757734: CTG GAT GGA GGA CTA TGA CTASI04438280: CCA GGA ATC TGT ATA TAT TTASI04438273: CAA CCT GAC CAC ACT GAC CAA</td>
+    </tr>
+    <tr>
+      <td>Human-specific siBCAR1(Cas)</td>
+      <td>QIAGEN</td>
+      <td>SI00106876: TTGACTAAGAGTCTCCATTTASI03065874: CAGCATCACGCGGCAGGGCAASI04438273: CAACCTGACCACACTGACCAASI04438280: CCAGGAATCTGTATATATTTA</td>
+    </tr>
+    <tr>
+      <td>siSrc</td>
+      <td>QIAGEN, Cat: GS6714</td>
+      <td>SI02664151: CTC CAT GTG CGT CCA TAT TTASI02223928: CGG CTT GTG GGT GAT GTT TGASI02223921: AAG CAG TGC CTG CCT ATC AAASI03041605: ACG GCG CGG CAA GGT GCC AAA</td>
+    </tr>
+    <tr>
+      <td>siVinculin</td>
+      <td>Dharmacon, Cat: L-009288-00-0005</td>
+      <td>J-009288-05: UGA GAU AAU UCG UGU GUU AJ-009288-06: GAG CGA AUC CCA ACC AUA AJ-009288-07: GCC AAG CAG UGC ACA GAU AJ-009288-08: CAG CAU UUA UUA AGG UUG A</td>
+    </tr>
+    <tr>
+      <td>siPTK2 (FAK)</td>
+      <td>Dharmacon, Cat: L-003164-00-0005</td>
+      <td>J-003164-13: GCG AUU AUA UGU UAG AGA UJ-003164-14: GGG CAU CAU UCA GAA GAU AJ-003164-15: UAG UAC AGC UCU UGC AUA UJ-003164-16: GGA CAU UAU UGG CCA CUG U</td>
+    </tr>
+    <tr>
+      <td>siPaxillin</td>
+      <td>Dharmacon, Cat: L-005163-00-005</td>
+      <td>J-005163-05: CAA CUG GAA ACC ACA CAU AJ-005163-06: GGA CGU GGC ACC CUG AAC AJ-005163-07: CCA AAC GGC CUG UGU UCU UJ-005163-08: UGA CGA AAG AGA AGC CUA A</td>
+    </tr>
+    <tr>
+      <td>siFERMT2 (Kindlin2)</td>
+      <td>Dharmacon, Cat: L-012753-00-0005</td>
+      <td>J-012753-05: GCC CAG GAC UGU AUA GUA AJ-012753-06: CUA CAU AUU UCU CUC AAC AJ-012753-07: GAA CUG AGU GUC CAU GUG AJ-012753-08: AAU GAA AUC UGG CUU CGU U</td>
+    </tr>
+    <tr>
+      <td>siTalin1</td>
+      <td>Dharmacon, Cat: L-012949-00-005</td>
+      <td>J-012949-05: GAA GAU GGU UGG CGG CAU UJ-012949-06: GUA GAG GAC CUG ACA ACA AJ-012949-07: UCA AUC AGC UCA UCA CUA UJ-012949-08: GAG AUG AGG AGU CUA CUA U</td>
+    </tr>
+    <tr>
+      <td>siITGB1</td>
+      <td>Santa Cruz, Cat: sc-35674</td>
+      <td>sc-35674A: GAGAUGAGGUUCAAUUUGATTsc-35674B: GAUGAGGUUCAAUUUGAAATTsc-35674C: GUACAGAUCCGAAGUUUCATT</td>
+    </tr>
+    <tr>
+      <td>siITGAV</td>
+      <td>Santa Cruz, Cat: sc-29373</td>
+      <td>sc-29373A: GCAUCUAUCUUGAAAGUAATTsc-29373B: CUGGUUUGAACGAUAGAAATTsc-29373C: GAAGCUGUGUAGUAUAUCATT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lysis and immunoblotting
 
 Cells were harvested after 30 min of attachment. Cells were washed three times with cold phosphate-buffered saline (PBS) followed by lysis in radioimmunoprecipitation assay (RIPA) buffer (1% Triton X-100, 1% sodium deoxycholate, 0.1% sodium dodecyl sulfate [SDS], 20 mM Tris–HCl pH 7.4, 150 mM NaCl, 5 mM ethylene glycol tetraacetic acid (EGTA)) with freshly added protease and phosphatase inhibitors (10 µg/ml Aprotinin, 1 mM phenylmethylsulfonyl fluoride (PMSF), 1 mM sodium vanadate) on ice. The lysates were collected after 30 min of incubation on ice and centrifuged at 12,000 rpm for 10 min at 4°C. Supernatants were collected and adjusted to equal protein concentration using the Pierce BCA protein assay kit.
 
 Lysates were adjusted to SDS sample buffer, heated at 95°C, and resolved on SDS–polyacrylamide gel electrophoresis (PAGE) using 15% polyacrylamide/0.133% bis-acrylamide or 12.5% acrylamide/0.1% bis-acrylamide gels, and transferred on to nitrocellulose membrane. Blocking was performed in Odyssey blocking buffer (LI-COR Biosciences) supplemented with 5% bovine serum albumin (BSA) for 30 min. After blocking, membrane was probed with the primary antibody overnight, washed in Tris-buffered saline 0.1% Tween 20, followed by incubation for 45 min with IRDye 800CW goat anti-rabbit or 680RD goat anti-mouse-conjugated secondary antibodies. Images were collected using the Odyssey Infrared Imaging System (LI-COR Biosciences) and quantified using ImageJ.
 
-## Cell spreading and migration assays
+### Cell spreading and migration assays
 
 Cells were treated with siRNA using the double transfection method as described above. Cells were starved overnight in assay media (MCF10A) or DMEM (HeLa), then detached with Accutase and resuspended in assay media or DMEM. Cells were incubated for 60 min in 5% CO2 at 37°C in suspension before adding to glass-bottom dishes (FluoroDish, FD35-100, World Precision Instruments) or 12 mm diameter coverslips (Fisherbrand 1254580) that had been previously coated with 50 μg/ml collagen-I (Advance Biomatrix, #5056) or 5 μg/ml FN (Sigma, #F1141) for at least 3 hr at 37°C and washed with PBS. Pharmacological agents were added just before seeding cells for imaging.
 
-## Live imaging
+### Live imaging
 
 Dual-color imaging of live cells was performed for a 30-min time period, either immediately after plating the cells, to record attachment and spreading, or approximately 24 hr after plating, to record spontaneous lamellipodia formation. Images were recorded in 4–5 fields of view on a fully automated TIRF microscope (Nikon Ti, ×100/1.49 CFI Apo TIRF oil immersion objective) equipped with Perfect Focus, motorized x–y stage, fast piezo z stage, stage-top incubator with temperature and CO2 control, and Andor iXon X3 EMCCD camera with 512 × 512-pixel chip (16 µm pixels). The images were acquired using Nikon NIS Elements software and processed using ImageJ. Frame rate varied between 15 and 20 s depending on the number of fields of view recorded. Slight drift in the dual color time-lapse images was corrected using ImageJ registration tool Image Stabilizer.
 
 Cell migration was imaged once every 15 min for 12 hr using phase-contrast microscopy on an IncuCyte S3 and analyzed using ImageJ.
 
-## Immunofluorescence imaging
+### Immunofluorescence imaging
 
 MCF10A CasmSc cells, either expressing YFP-vinculin or not, were plated on glass-bottom dishes or coverslips and allowed to attach for 30 min before fixation with 4% paraformaldehyde in PBS for 15 min. Cells were permeabilized with 0.1% Triton X-100 in PBS for 5 min, and blocked for an hour in 5% normal goat serum, 2% BSA in PBS, all at room temperature. The cells were incubated with different combinations of primary antibodies (1:200 dilution) for either 2–3 hr at room temperature or overnight at 4°C, then washed gently three times. Alexa Fluor-conjugated secondary antibodies were added at 1:200 dilution for 1 hr at room temperature. Alexa Fluor 488- or 647-conjugated phalloidin was used for F-actin. Glass-bottom dishes were left in PBS for TIRF microscopy as above. Coverslips were mounted in ProLong Gold (Invitrogen) for confocal microscopy using a Dragonfly 200 High-speed Spinning disk confocal imaging platform (Andor Technology Ltd) on a Leica DMi8 microscope stand equipped with a ×100/1.4 oil immersion objective, iXon EMCCD and sCMOS Zyla cameras and Fusion Version 2.3.0.36 (Oxford Instruments) software together with Imaris simultaneous deconvolution. The most ventral plane was used for quantification.
 
-## Immunofluorescence quantification
+### Immunofluorescence quantification
 
 Macros were written in ImageJ for uniform image processing and analysis. Backgrounds were subtracted and intensities adjusted equally across each image set.
 
@@ -196,7 +648,7 @@ For analysis of the spatial distribution of the proteins and phosphoproteins wit
 
 To analyze the number and intensity of clusters containing either Cas or vinculin, or both, images were first spit into individual channels and then summed using the ‘Image calculator’ command in ImageJ. This summed image was used to generate a binary image mask by applying manual threshold through the Yen method. ROIs >20 pixels (0.52 μm2) were then counted and their mean areas and mean Cas and vinculin intensities quantified. Cell area was quantified either manually by drawing around the cell or from a binary mask created by thresholding through the Triangle method, setting minimum size as 50 pixels.
 
-## Quantification of cluster kinetics from two-color TIRF videos
+### Quantification of cluster kinetics from two-color TIRF videos
 
 TIRF image datasets were exported as two-channel time-series hyperstacks in TIF format. Quantification of the time shift between red (CasmSc) and green (YFP-VCL, β1-EctopH, ITGB1GFP or CrkmGL) cluster formation was performed in MATLAB (R2021b). The pipeline involves the following steps: drift correction, image preprocessing and denoising, focal adhesion segmentation and tracking, intensities extraction and normalization, and signal analysis.
 
@@ -204,14 +656,14 @@ Drifts between time frames were corrected by registering the image of one frame 
 
 To calculate the time shift between the red and green channel intensity profiles for each tracked cluster, average mean intensity traces were rescaled to the [0 1] value range, and after smoothing the signal by applying a moving average filter, the time at which the rescaled intensity reaches 0.5 (t1/2) was interpolated. The time shift was finally calculated by subtracting red (Cas) t1/2 from green (vinculin, integrin, or Crk) t1/2.
 
-## Adhesome isolation
+### Adhesome isolation
 
 Adhesome samples were isolated as described with minor modifications (Schiefermeier et al., 2014). MCF10A cells were detached from near-confluent 5 cm plates, resuspended in assay media, incubated in suspension for 30 min, then re-seeded onto an equal number of 5 cm plates that had been precoated with 50 μg/ml collagen. After 1 hr at 37°C, one dish was washed and lysed in 400 μl RIPA buffer to provide a sample of total protein (T) and the other dishes were washed gently with room temperature PBS and incubated with 2 ml freshly diluted 0.5 mM dithiobis(succinimidyl propionate) (EMD Millipore 322133) 0.05 mM (1,4-di [3′-(2′-pyridyldithio)propionamido] butane) (Sigma 16646) in PBS for 5 min at room temperature. Cross-linking was terminated by washing twice with 50 mM Tris 140 mM NaCl pH 7.4 before transferring to ice. 400 μl RIPA buffer was added and the plates were rocked at 4°C for 1 hr. Supernatants (S) were collected in a 2-ml microtube (Axygen MCT-200-L-C). The plates were washed twice with PBS, drained, and 400 μl RIPA buffer added. 2-Mercaptoethanol was added to 2% concentration to all samples, and all microtubes and dishes were sealed and incubated at 50°C for 1 hr. After cooling to room temperature, the dish was scraped and the adhesome (A) fraction was transferred to a 2 ml microtube. Total, supernatant, and adhesome fractions were sonicated (10 s, microtip) to shear DNA and the proteins were precipitated by adding 1.6 ml acetone and placing at −20°C for 1 hr. After centrifugation (10 min, 14,000 rpm), pellets were drained, dried in a stream of air, and incubated with 25 μl 5× concentrated SDS sample buffer at 95°C for 5 min, then 100 μl RIPA buffer was added to all tubes. Samples were centrifuged and equal volumes analyzed by SDS–PAGE, typically on 10% acrylamide/0.13% bisacrylamide gels, followed by Western blotting. The procedure was scaled up as needed to run replicate blots for probing with different antibody combinations. On occasion, dilutions of the T sample were loaded to estimate detection sensitivity.
 
-## Ratiometric FRET imaging
+### Ratiometric FRET imaging
 
 The Rac1-2G reporter was expressed in MCF10A cells by lentiviral transduction. After siRNA treatment, cells were allowed to attach to collagen for 30 min in the absence or presence of various inhibitors, then fixed and mounted. Coverslips were imaged on a Leica SP8 confocal microscope using Leica HCX Plan Apo ×63/1.40 oil immersion objective. Excitation and emission wavelengths as follows: donor (mTFP1) excitation 440 nm, emission 450–510 nm: FRET excitation 440 nm, emission 515–600 nm; acceptor (mVenus) excitation 514 nm, emission 515–600 nm. All channels were collected on the HyD detectors. Images were processed with the Lightening deconvolution (Leica LASX software) and the FRET ratio in the most ventral plane was quantified using ImageJ as described (Kardash et al., 2011).
 
-## Statistics
+### Statistics
 
 Data were analyzed using GraphPad Prism. Median and 95% confidence intervals were calculated for non-normal distributions of measurements from single cells. Data from multiple cells or biological replicates were assumed to follow normal distributions allowing calculation of mean and SEM in cases where data from multiple cells in biologically independent experiments were combined. Pairwise comparisons between control and experimental populations testing independent hypotheses were made using the non-parametric Mann–Whitney U-test. Experiments testing alternative hypotheses were analyzed using the non-parametric Kruskal–Wallis analysis of variance followed by Dunn’s multiple comparison test.

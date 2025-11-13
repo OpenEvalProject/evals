@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Planar cell polarity (PCP) and neural tube defects (NTDs) are linked, with a subset of NTD patients found to harbor mutations in PCP genes, but there is limited data on whether these mutations disrupt PCP signaling in vivo. The core PCP gene Van Gogh ( Vang ), Vangl1 /2 in mammals, is the most specific for PCP. We thus addressed potential causality of NTD-associated Vangl1 /2 mutations, from either mouse or human patients, in Drosophila allowing intricate analysis of the PCP pathway. Introducing the respective mammalian mutations into Drosophila Vang revealed defective phenotypic and functional behaviors, with changes to Vang localization, post-translational modification, and mechanistic function, such as its ability to interact with PCP effectors. Our findings provide mechanistic insight into how different mammalian mutations contribute to developmental disorders and strengthen the link between PCP and NTD. Importantly, analyses of the human mutations revealed that each is a causative factor for the associated NTD.
+Planar cell polarity (PCP) and neural tube defects (NTDs) are linked, with a subset of NTD patients found to harbor mutations in PCP genes, but there is limited data on whether these mutations disrupt PCP signaling in vivo. The core PCP gene Van Gogh (Vang), Vangl1/2 in mammals, is the most specific for PCP. We thus addressed potential causality of NTD-associated Vangl1/2 mutations, from either mouse or human patients, in Drosophila allowing intricate analysis of the PCP pathway. Introducing the respective mammalian mutations into Drosophila Vang revealed defective phenotypic and functional behaviors, with changes to Vang localization, post-translational modification, and mechanistic function, such as its ability to interact with PCP effectors. Our findings provide mechanistic insight into how different mammalian mutations contribute to developmental disorders and strengthen the link between PCP and NTD. Importantly, analyses of the human mutations revealed that each is a causative factor for the associated NTD.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ The importance of PCP during vertebrate development and disease has also become 
 
 ## Results
 
-## Mutations associated with mammalian NTD can be found throughout the C-terminal tail of Vangl genes
+### Mutations associated with mammalian NTD can be found throughout the C-terminal tail of Vangl genes
 
 The mammalian core PCP genes Vangl1/2, and Vang in Drosophila, play essential roles in planar polarity signaling. Vang interacts genetically with each PCP core gene. It has further been demonstrated that it also can physically interact with all other members of the PCP complex, and the interaction sites with the cytoplasmic PCP core factors have been mapped to its C-terminal domain (Bastock et al., 2003; Darken et al., 2002; Das et al., 2004; Humphries and Mlodzik, 2018; Jenny et al., 2005).
 
@@ -46,13 +46,21 @@ A number of C-terminal mutations have been discovered to date in both mice and h
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic showing the location of investigated mutations along the C-terminal tail of Vang. Mutations highlighted in yellow were originally identified in the mouse, mutations highlighted in orange were found in human NTD patients (see supplement for references). (B) Table displaying information concerning the selected mutations from mouse (top) and human patients (below). Details include: original mammalian mutation, nature of the mutational change (e.g. D to E is listed as conservative as both are acidic residues), equivalent residue in Drosophila Vang, whether the mutated residue is conserved among species, and whether the respective mutated Vangl protein was able to retain binding to the effector protein Dishevelled (Dvl).Figure 1—source data 1.Vangl/VANGL genes.
+**Figure 1.:** (A) Schematic showing the location of investigated mutations along the C-terminal tail of Vang. Mutations highlighted in yellow were originally identified in the mouse, mutations highlighted in orange were found in human NTD patients (see supplement for references). (B) Table displaying information concerning the selected mutations from mouse (top) and human patients (below). Details include: original mammalian mutation, nature of the mutational change (e.g. D to E is listed as conservative as both are acidic residues), equivalent residue in Drosophila Vang, whether the mutated residue is conserved among species, and whether the respective mutated Vangl protein was able to retain binding to the effector protein Dishevelled (Dvl).
 
-## Drosophila provides a sensitive system for investigating the effect of mutations on PCP
+### Drosophila provides a sensitive system for investigating the effect of mutations on PCP
 
 To compare mutations in vivo in Drosophila, we took advantage of the Gal4/UAS system to allow for regulated expression of our transgenes (Brand and Perrimon, 1993). We also included a Flagx3-tag and an attB (bacterial attachment) site. To enable site-specific recombination, constructs were then introduced into a fly strain containing an attP (phage attachment) docking site, along with PhiC31 integrase activity to mediate integration between the attB and P sites (Bischof et al., 2013; Bischof et al., 2007). Thus, by using the same attP docking site, we ensured insertion of the transgenes at a constant genetic locus and thus equivalent expression for accurate comparison. We chose to introduce mutations into the Drosophila Vang gene, rather than use mouse Vangl2 or human VANGL1/2, to preserve native signaling and to reduce genetic complexity. As the equivalent residues have different numbers in Vang, as compared to the mouse or human orthologues, the mutations we investigated are referred by their numbers in Drosophila, here and throughout the paper, and are as follows: D317E, R321L, R332H, V391T, K418C and K577H (see Figure 1B for comparison to mammalian residue numbers).
 
 In order to first test the contribution of individual mutations, we performed an overexpression experiment. Driving expression of wild-type (wt-)Vang with actin-Gal4 (ac >WT) led to a moderate hair reorientation phenotype (Figure 2C and D). This allowed us to compare whether mutations showed a gain- or loss-of-function phenotype with respect to the positive (wt-Vang) and negative (Vang-/-) control. A change or an increase in phenotype quality or strength as compared to wt-Vang overexpression could suggest a dominant negative effect or a gain-of-function in activity, while a decrease in strength would suggest a reduction in protein function or stability.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig2-v2.jpg)
+
+**Figure 2.:** (A) Overview of an adult wing highlighting the analyzed regions of hair reorientation. (B) Quantification of the percentage of actin hairs oriented within a specific angle range upon actin-Gal4 driven overexpression (ac>) of the different Vang mutant proteins and wild-type Vang. Also included for comparison is Vang-/- and w1118 (a genetically wild-type wing that displays no phenotype). Graph is shown for region 1 (upper) and region 2 (lower). Angles from three independent wings were combined, and data binned to allow analysis using a Chi-squared test. * indicates p<0.001 (C) Example images of hair reorientation in region 1 in the indicated genotypes. Top panel shows adult wing, bottom panel shows the corresponding angles of hair orientation visualized through color (see 360 degree color scale, bottom right). Angles were determined using the Fuji plugin FijiWingsPolarity (Dobens et al., 2018). (D) Example images of hair reorientation in region 2. Left panel shows adult wing, and right panel the corresponding angles of hair orientation. (E) Western blot of wing disc lysates from the indicated genotypes. While similar levels of expression are observed, a difference in Vang mobility is notable for D317E, R321L and K577H, as indicated by blue arrows.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Graphs showing the percentage of hairs in each 30 degree segment within region 1 (above) and region 2 (below) after overexpression of wild-type Vang, Vang carrying the different mutations, or in control wings (color scheme as in Figure 2). (B) Schematic representation of changes to hair orientation in indicated conditions. Representative image of a ROI (region of interest) within an adult wing is shown next to the schematic. (C) Western blot showing changes to Vang mobility after introduction of the indicated mutations and after phosphatase treatment where indicated, arrows highlight differences. Samples were extracted from wing discs of the indicated genotypes (left) or after S2 cell transfection (right).
 
 Upon overexpression of wt-Vang, we observed consistent hair reorientation in specific regions of the wing. We therefore chose two regions that would be suitable for qualitative and quantitative analyses of the different mutants, with region 1 showing a more severe PCP phenotype as compared to region 2 (Figure 2A). Different mutations displayed different patterns of hair reorientation within these regions, confirming the system had an appropriate degree of sensitivity for this type of analysis. In region 1, D317E, R321L and K577H showed a distinct phenotype as compared to wt-Vang (over)expression. In fact, their hair pattern was more similar to that of Vang-/- wings or a genetically wild-type wing (w1118), included as a reference control that has no phenotype. In contrast, R332H, V391T and K418C all showed hair reorientation patterns similar to the gain-of-function (GOF) effect of wt-Vang overexpression (Figure 2C and Figure 2—figure supplement 1B). We also observed comparable changes in hair reorientation within region 2. In this case, D317E and K577H mirrored the phenotype of Vang-/-, while R321L showed similarity to the reference control (w1118). R332H, V391T and K418C again showed similar patterns to the GOF overexpression of wt-Vang (Figure 2D and Figure 2—figure supplement 1B).
 
@@ -60,9 +68,17 @@ To quantify hair patterns, we utilized FijiWingsPolarity (Dobens et al., 2018), 
 
 We confirmed that similar levels of protein expression were observed for each transgene (due to our experimental design). However, interestingly, D317E, R321L and K577H all showed a notable change in protein mobility (Figure 2E). This mobility shift was also observable in samples from Vang-/- tissue and in transfection experiments in S2 cells (Figure 2—figure supplement 1C and Figure 4C). It has previously been demonstrated that Vang is phosphorylated leading to a mobility change and associated band shift on gels (Kelly et al., 2016; Strutt et al., 2019). Accordingly, phosphatase treatment altered wt-Vang mobility, but it did not impact any of the mutants suggesting that their phosphorylation is reduced or lost (Figure 2—figure supplement 1C). As Vang phosphorylation is associated with membrane localization and function, this suggests that the D317E, R321L and K577H mutants are defective in one or both of these regards (Kelly et al., 2016; Strutt et al., 2019).
 
-## Dominant behavior and protein localization defects in the majority of mutations
+### Dominant behavior and protein localization defects in the majority of mutations
 
 To further investigate the effect of the respective mutation in the overexpression system, we analyzed protein localization in the pupal wing at ~25 hr APF, by which time wt-Vang is predominantly localized to the plasma membrane (Figure 3B). Besides comparing the localization of the mutants themselves, we also assessed any dominant effects by examining their effect on the localization of co-expressed wt-Vang. We expressed wt-Vang directly via the actin promoter (ac-Vang-GFP) within physiological levels throughout the whole wing blade/animal and simultaneously used engrailed(en)-Gal4 to overexpress the transgenes in the posterior compartment of the wing (Figure 3A and Figure 3—figure supplement 1A). This allowed for comparison of the localization of wt-Vang-GFP in the anterior (control) vs. posterior (transgene expression) compartments.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic showing regions of expression of different transgenes along the Drosophila wing blade. A direct actin-promoter driven (ac-Vang-GFP) construct is expressed at homeostatic levels throughout the wing blade, engrailed-Gal4 drives expression of wild-type Vang-Flag or each of the associated mutant proteins in the posterior compartment of the wing. (B) Representative immunofluorescence images of regions from the anterior and posterior regions of a pupal wing overexpressing wild-type Vang-Flag in the posterior region. Note recruitment of Vang-Flag to the membrane in the posterior region (blue), and concomitant reduction in membrane localization of Vang-GFP in the posterior (blue) vs. anterior (red) compartment. The junctional marker PatJ shows consistent membrane labeling in both regions. (C) Representative immunofluorescence images of regions from the posterior compartment of pupal wings overexpressing the indicated Vang-Flag constructs. Note differences in localization of Vang-Flag mutants as compared to wild-type Vang (B), as well as altered wt-Vang-GFP localization. The junctional marker PatJ was unaffected in each case. (D) Regions of adult wing showing hair reorientation phenotypes in the indicated genotypes. Note the similarity in pattern between overexpression of WT, R332H, V391T and K418C mutants (swirls, cf. GOF in Figure 2—figure supplement 1), as compared to R321L (wild-type orientation), and D317E and K577H (downwards reorientation, cf. LOF in Figure 2—figure supplement 1) in posterior region of the wing. Color range is same as in Figure 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Image of adult wing expressing a direct driven ac-Vang-GFP transgene. Note that no hair reorientation defects are observed confirming that expression is within the homeostatic range. (B) Representative immunofluorescence images of regions from the anterior compartment of wings, the region of the wing in which engrailed-Gal4 driven constructs are not expressed. Note similarity in staining between Vang-GFP and PatJ in each condition. (C) Schematic of adult wing showing hair reorientation phenotypes in the indicated genotypes. Arrows show general flow of hair reorientation, note the similarity in pattern between overexpression of WT, R332H, V391T and K418C mutants (swirls, cf. GOF in Figure 2—figure supplement 1), as compared to R321L (wild-type orientation), and D317E and K577H (downwards reorientation, cf. LOF in Figure 2—figure supplement 1) in posterior region of the wing.
 
 Overexpression of wt-Vang in the posterior compartment showed distinct membrane localization (as expected), visualized through Flag staining, while no signal was observed in the anterior compartment (Figure 3B). Vang-GFP (expressed from ac-Vang-GFP) also showed distinct membrane staining with levels reduced in the posterior compartment as compared to the anterior, suggestive of competition from the overexpressed Vang-Flag for membrane recruitment (Figure 3B). The junctional marker PatJ was unaffected by Vang expression (Figure 3B).
 
@@ -70,23 +86,39 @@ Consistent with their overexpression phenotypes, a number of changes to localiza
 
 Overall, the localization data is consistent with our observed hair reorientation phenotypes, as well as protein mobility data (Figure 2). D317E and K577H behave like dominant negative, antimorph alleles. They cause hair reorientation patterns similar to Vang-/- (Figure 3D and Figure 3—figure supplement 1B). The similarity in pattern to Vang-/- can be explained, as in these like in Vang-/- the protein is lacking from the membrane (Figure 3C). However, these mutants do not represent ‘simple’ LOF alleles, as they are dominantly affecting the localization of wt-Vang. R321L also displayed changes to protein mobility but did not lead to significant hair reorientation when overexpressed; its largely normal membrane localization and lack of effect on wt-Vang-GFP suggest it is a hypomorphic allele with reduced protein function (Figures 2 and 3C). R332H and K418C also appear to act in a dominant fashion, but in this case the protein is recruited to the membrane, where it could have a dominant effect on signaling (Figure 3C). In contrast, the staining of V391T and slight increase in accompanying Vang-GFP membrane localization suggest it may act as a mild GOF to enhance Vang signaling (Figure 3C).
 
-## Mutants show altered membrane localization in rescue conditions
+### Mutants show altered membrane localization in rescue conditions
 
 To confirm that the localization of the mutant proteins was not due to interference from endogenous Vang, we next assayed its localization in a Vang-/- background. Here, we used actin-Gal4 driven expression with which, due to the higher than endogenous expression levels of the transgenes (via the Gal4 amplification), we observed a gain-of-function phenotype with wt-Vang (Figure 4A). Despite this effect, we observed hair reorientation patterns in the absence of endogenous Vang that were consistent with the experiments described above. D317E and K577H displayed hair reorientation patterns similar to Vang-/-, while R332H, V391T and K418C showed a similar phenotype of hair orientation swirls as compared to overexpressed wt-Vang. Furthermore, R321L showed a more ‘complete rescue’, supporting its behavior as a hypomorph in protein function and thus a ‘weaker GOF’ phenotype, which resembles a better rescue of the Vang-/- background (Figure 4A and Figure 4—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig4-v2.jpg)
+
+**Figure 4.:** (A) Regions 1 and 2 of the adult wing (see Figure 2A) showing hair reorientation phenotypes in the indicated genotype. Note similarity in pattern between WT, R332H, V391T and K418C mutants (swirls, cf. GOF in Figure 2—figure supplement 1), as compared to R321L (wild-type orientation), and D317E and K577H (downwards reorientation, cf. LOF in Figure 2—figure supplement 1). Color range is same as in Figure 2. (B) Representative immunofluorescence images of pupal wings upon expression of Vang-Flag or indicated mutant Vang proteins using actin-Gal4 driver. Note changes to Vang localization as shown through Flag staining (red), and the degree of overlap with actin (stained with Phalloidin, green) which marks the membrane (C) Western blot of wing discs from the indicated genotypes. Note that all transgenes were expressed at similar levels. Differences in mobility are also observed as in Figure 2 and Figure 2—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Regions 1 and 2 of the adult wing (see Figure 2A) showing hair reorientation phenotypes in the indicated genotype. Arrows show general flow of hair reorientation; note similarity in pattern between WT, R332H, V391T and K418C mutants (swirls, cf. GOF in Figure 2—figure supplement 1), as compared to R321L (wild-type orientation), and D317E and K577H (downwards reorientation, cf. LOF in Figure 2—figure supplement 1).
 
 Analysis of Flag staining for the transgenes revealed similar localization patterns as compared to the overexpression experiment in a wt control background (Figure 3). Wt-Vang localized distinctly at the membrane, indicated by an overlap with cortical actin stain (Figure 4B), while R321L and V391T showed slightly reduced and enhanced membrane localization, respectively. Furthermore, R332H and K418C displayed a diffuse membrane localization, and D317E and K577H failed to localize to the membrane (Figure 4B). We again confirmed that expression levels of each transgene were equivalent, and expected changes in protein mobility were detectable (Figure 4C).
 
 Taken together, our data are consistent with the conclusions that D317E and K577H act as dominant-negative mutations with reduced membrane localization, while R332H and K418C act as dominant mutations that exert their effect at the membrane. R321L behaves like a hypomorph with reduced protein function, and V391T is a mild GOF enhancing protein function.
 
-## Rescue experiments in the eye confirm loss-of-function and gain-of-function behavior
+### Rescue experiments in the eye confirm loss-of-function and gain-of-function behavior
 
 To confirm and further refine the suggested mechanistic effects of mutations in altering Vang function, we analyzed their phenotype in the absence of endogenous Vang in an additional tissue. For this, we used the Drosophila eye, which shows generally weaker GOF effects with high expression levels of Vang as compared to the wing.
 
 For consistency, we used actin-Gal4 (ac >Vang) to express the transgenes, and we also performed experiments with sep-Gal4, an eye specific driver related to and based on the sevenless/sev enhancer and promoter, that gives lower levels and spatially restricted expression (Fanto et al., 2000). PCP phenotypes in the eye are characterized by changes in ommatidial chirality as well as orientation (Figure 5A). Introduction of ac >Vang Flag in the Vang-/- background resulted in a near perfect rescue with very minor chirality and orientation defects. As this phenotype was trending toward an overexpression phenotype of Vang, this suggested that the levels were just marginally too high for a complete rescue (Figure 5B). In contrast, due to its weaker expression sep >Vang Flag showed only a partial rescue (Figure 5B). By comparing phenotypes with both Gal4 drivers, we were thus able to better ascertain how the mutants affected Vang function.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of the chiral forms of ommatidial clusters within the Drosophila eye. Dorsal chirality is represented by black arrows, ventral chirality by red arrows, and symmetrical (achiral) clusters by green arrows. The varying degree to which each cluster rotated during development is denoted by the angle of each arrow. (B) Quantification of the percentage of different chiral forms of clusters in the indicated genotypes (top). These include wild-type (WT), a flipped chiral form (Flip), or a symmetrical cluster (Sym.). Quantification of the percentage of misrotated clusters in the associated genotypes (bottom). Misrotation was split into three categories, mild is wild-type +/- 10 degrees, moderate is +/- 10–30 degrees from wild-type, and severe is +/- > 30 degrees misrotation from wild-type. Note that rescue with actin-Gal4 results in a mild overexpression phenotype due to the expression strength with this driver, (also Figure 5—figure supplement 1), while sep-Gal4 shows a weaker rescue due to its weaker and restricted (not all R-cells) expression. (C) Tangential eye sections of the region flanking the dorso-ventral midline (equator) in the indicated genotypes after rescue with actin-Gal4 driver, anterior is left and dorsal is up. (D) Quantification of percentage of different chiral forms of clusters in the indicated genotypes (left). Quantification of percentage of misrotated clusters in the indicated genotypes (right). Data were analyzed using a Chi-squared test: * indicates p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53532/elife-53532-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Tangential eye sections of region flanking the equator in the indicated genotypes upon rescue with sep-Gal4, anterior is left and dorsal is up. (B) Quantification of the percentage of different chiral forms of clusters in the indicated genotypes (left). Quantification of percentages of misrotated clusters in the indicated genotypes (right). Data were analyzed using a Chi-squared test: * indicates p<0.001.
+
 With both drivers, D317E and K577H showed very limited rescue in regards to chirality and only partial rescue in orientation, overall displaying a similar phenotype to Vang-/- (Figure 5C,D and Figure 5—figure supplement 1). This is consistent with their antimorphic nature; however, the partial rescue we observe suggests the mutants retain some activity. With actin-Gal4, R321L displayed a significantly better rescue of chirality (as compared to wt-Vang control), while with sep-Gal4 the rescue was less efficient both in terms of chirality and orientation (Figure 5C,D and Figure 5—figure supplement 1). Together this confirmed that R321L is a mild hypomorphic LOF allele and that the better rescue level observed with ac-Gal4, as compared to wt-Vang, is due to the higher expression levels. R332H showed a significant enhancement in chiral defects, as compared to control wt-Vang, with the actin-driver, as well as more significant orientation defects with the sep-driver. K418C showed a phenotype similar to wt-Vang (Figure 5C,D and Figure 5—figure supplement 1). While, V391T trended towards more severe chiral defects with the actin-driver, with a significantly better rescue of orientation with the sep-driver (Figure 5C,D and Figure 5—figure supplement 1). Taken together with the wing data, this supports the notion that V391T is a mild hypermorph with GOF activity.
 
-## Mutations associated with reduced membrane localization or loss in protein function disrupt effector binding
+### Mutations associated with reduced membrane localization or loss in protein function disrupt effector binding
 
 Due to the defects associated with the different mutants, we wished to determine how they might affect effector binding. As many of the mammalian studies have focused on the interaction between Dishevelled (Dvl) and Vangl, we first examined the binding between Dsh and Vang, the Drosophila orthologues. We expressed wt-Vang-Flag and mutant constructs in S2 cells and tested for their interaction with Dsh-GFP by pull-down. D317E, R321L and K577H all showed a reduced ability to interact with Dsh-GFP (Figure 6A), while normal binding, comparable to wt-Vang, was observed for R332H, V391T and K418C (Figure 6B). Next we tested binding between the different Vang mutants and Prickle (Pk), the main effector and cytoplasmic interaction partner of Vang in vivo. The same pattern of binding was observed, with a reduction in binding to D317E, R321L and K577H, but no change with R332H, V391T and K418C (Figure 6C and D). This is consistent with the affected membrane association of the first three Vang mutations and our previous functional and phenotypic assertions (summarized in Figure 6E).
 
@@ -100,7 +132,7 @@ Furthermore, these interaction data suggest a trend whereby D317E, R321L and K57
 
 Our analyses revealed a differential and causative behavior for the NTD-associated Vangl mutants. Drosophila provides unprecedented depth to the analysis of PCP in the respective mutations through its well-established and detailed in vivo PCP features, the possibilities to study the NTD-mutations in an otherwise wild-type background as well as in the Vang-/- context, and both quantitative and qualitative nature of the assays for PCP. Taken together, our data revealed that the mutations analyzed fall into different functional categories and that all patient derived mutations tested are indeed causative of PCP defects, and hence likely causative of NTD in the patients.
 
-## Functional definition of both dominant negative and gain-of-function mutations
+### Functional definition of both dominant negative and gain-of-function mutations
 
 The detailed analyses of the NTD-associated mutations revealed specific functional features. For example, the R321L mutation (all numbers refer to the residues in Drosophila Vang, see Figure 1 for the respective numbers in mouse and human, unless otherwise indicated) behaves like a mild hypomorphic LOF allele, as demonstrated largely by a lack of phenotype upon over-expression and through the level of rescue observed. This is consistent with data from the Vangl2Lp-R259L mouse, where only mild NTD defects were observed, along with no difference in membrane localization or levels (Guyot et al., 2011). In our system, besides reduced membrane localization, we also observed its aberrant mobility in western blot assays, an indication that functionality of the protein was decreased, as well as diminished ability to bind effectors. Differences in protein mobility, localization, and effector binding were also observed for D317E and K577H. In contrast to R321L, however, both mutants failed to localize to the membrane, which was reflected in a hair orientation phenotype reminiscent of a Vang-/- wing. Furthermore, both mutants showed largely no rescue in the respective assays. D317E displayed a stronger phenotype as compared to K577H, which correlated with the severity of subcellular mislocalization, highlighting the sensitivity and accuracy of the Drosophila assays.
 
@@ -110,7 +142,7 @@ The patient derived K577H mutation had not previously been investigated. Here, w
 
 Finally, we obtained data suggestive of V391T functioning as a mild hypermorph GOF. Although in the majority of assays V391T behaved similarly to R332H and K418C, its membrane localization appeared more robust, and rescue experiments were suggestive of the mutation leading to a milder GOF, and not dominant behavior, as was seen with R332H and K418C. Nonetheless, the data for this human mutation is again consistent with it also being causative of NTD.
 
-## Drosophila as model to define causative nature of human mutations
+### Drosophila as model to define causative nature of human mutations
 
 While there are caveats of using any specific system, including Drosophila, the ability to phenocopy and refine results suggested from the mouse, for example in the case of the original Vangl2Lp, and to demonstrate sensitivity through quantitative analyses, highlights its utility in exploring the functionality and potential causative nature of human NTD-associated mutations. In fact, our assays were both able to reveal additional functional insight into mutations that had been studied previously by other means and to define functional and mechanistic behavior of previously unstudied human mutations. A popular system to investigate the different mutations is to analyze their localization in MDCK cells. In this assay, the mouse Vangl2Lp allele, D255E, was detected within the ER, and showed reduced stability and proteosomal degradation, echoing phenotypes from the mouse (Gravel et al., 2010). The same assay also showed defective localization for S464N, R259L and R274Q (equivalent to R332H in our assay), with all mutations displaying very similar phenotypes (Iliescu et al., 2014; Iliescu et al., 2011). While a useful assay to reveal potentially damaging effects upon Vangl1/2, it does not capture the true nature of the mutation as our in vivo assays do. For example, R259L is milder in phenotype as compared to S464N and displays membrane localization in vivo, which is not captured in the MDCK assay. In contrast, our assays capture these features in the Drosophila in vivo system. Furthermore our results define that R274Q/R270H in hVANGL1/2, respectively (R332H in Drosophila), likely has dominant negative activity. The result in MDCK cells for both R259L and R274Q is also at odds with experiments performed in zebrafish. Both mutants behaved similarly to wild-type protein in overexpression and rescue experiments (Guyot et al., 2011; Reynolds et al., 2010). The lack of phenotype from the zebrafish experiments suggests that, while suitable for mutations that have a strong pathological effect, this system may not be sensitive enough to reveal phenotypic and functional insight with milder mutations.
 
@@ -120,13 +152,457 @@ As discussed above, our data set reveals graded phenotypes in vivo, with differe
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Vang</td>
+      <td>Pubmed ID: 35922</td>
+      <td>Dmel_CG807, CG8075, Dmel\CG8075, Stbm, Strabismus, Van Gogh</td>
+      <td>Chromosome 2R, NT_033778.4 (9103238…9106796)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>w[1118]</td>
+      <td>FlyBase ID: FBal0018186</td>
+      <td></td>
+      <td>Reference control</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6]</td>
+      <td>BloomingtonDrosophilaStock Center</td>
+      <td>6918</td>
+      <td>Null allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Vang- Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Insertion into BDSC stock 9752 - PBAC{yellow[+]-attP-3B}VK00037 Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Vang-D317E-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Insertion into BDSC stock 9752 - PBAC{yellow[+]-attP-3B}VK00037 Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Vang-R321L-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Insertion into BDSC stock 9752 - PBAC{yellow[+]- attP-3B}VK00037 Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Vang-R332H-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Insertion into BDSC stock 9752 - PBAC{yellow[+]-attP-3B}VK00037 Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Vang- V391T-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Insertion into BDSC stock 9752 - PBAC{yellow[+]-attP-3B}VK00037 Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Vang-K418C-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Insertion into BDSC stock 9752 - PBAC{yellow[+]-attP-3B}VK00037 Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Vang-K577H-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Insertion into BDSC stock 9752 - PBAC{yellow[+]-attP-3B}VK00037 Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6],UAS-Vang-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Recombined stock Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6],UAS-Vang-D317E-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Recombined stock Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6],UAS-Vang-R321L-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Recombined stock Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6],UAS-Vang-R332H-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Recombined stock Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6],UAS-Vang-V391T-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Recombined stock Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6],UAS-Vang-K418C-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Recombined stock Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Vang[6],UAS-Vang-K577H-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Recombined stock Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>actin-Gal4</td>
+      <td>BloomingtonDrosophilaStock Center</td>
+      <td>3954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>ac-Vang-GFP</td>
+      <td>Gift from David Strutt, University of Sheffield, UK</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>en-Gal4</td>
+      <td>BloomingtonDrosophilaStock Center</td>
+      <td>1973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>sep-Gal4</td>
+      <td>(Fanto et al., 2000)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila melanogaster)</td>
+      <td>S2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>69007</td>
+      <td>Stock tested for contamination, characterized by isozyme and karyotype analysis</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pUAS-Vang-Flagx3</td>
+      <td>This Paper (Bischof et al., 2007)</td>
+      <td>pUASTattB vector</td>
+      <td>Cloned using NotI-XbaI Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pUAS-Vang-D317E-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Made using SDM Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pUAS-Vang- R321L-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Made using SDM Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pUAS-Vang- R332H-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Made using SDM Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pUAS-Vang-V391T-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Made using SDM Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pUAS-Vang-K418C-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Made using SDM Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pUAS-Vang-K577H-Flagx3</td>
+      <td>This Paper</td>
+      <td></td>
+      <td>Made using SDM Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-Gal4</td>
+      <td>Gift from Andreas Jenny, AECOM, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-Dsh-GFP</td>
+      <td>(Simons et al., 2009)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-Myc-Pk</td>
+      <td>Gift from Andreas Jenny, AECOM, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-HA-Dgo</td>
+      <td>Gift from Andreas Jenny, AECOM, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pTub-Tctn-GFP</td>
+      <td>This Paper</td>
+      <td>pCaSpeRTubGFP vector with pUAST MCS</td>
+      <td>Cloned using BglII-XhoI Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-Flagx3</td>
+      <td>Gift from Andreas Jenny, AECOM, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-Flag-Vang</td>
+      <td>This Paper</td>
+      <td>pAc5.1-Flag vector</td>
+      <td>Cloned using NotI-XbaI Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-Flag- Vang 1–323</td>
+      <td>This Paper</td>
+      <td>pAc5.1-Flag vector</td>
+      <td>Cloned using NotI-XbaI Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila melanogaster)</td>
+      <td>pAc5.1-Flag-Vang-1–303</td>
+      <td>This Paper</td>
+      <td>pAc5.1-Flag vector</td>
+      <td>Cloned using NotI-XbaI Can be obtained from Mlodzik Laboratory, ISMMS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag</td>
+      <td>Sigma Aldrich</td>
+      <td>M2</td>
+      <td>1:5000 IB/I:50 IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gamma- Tubulin</td>
+      <td>Sigma Aldrich</td>
+      <td>GTU-88</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>Roche</td>
+      <td>7.1 and 13.1</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>Invitrogen</td>
+      <td>A11122</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PatJ</td>
+      <td>Gift from Jun Wu, ISMMS, USA</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Myc</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>9E10</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA</td>
+      <td>Roche</td>
+      <td>3F10</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>D317E</td>
+      <td>GATCATTCGCTCCCCGGAAGGCGTTTCGCGCTCCTAC</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R321L</td>
+      <td>GACGGCGTTTCGCTCTCCTACATGTTG</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>R332H</td>
+      <td>GTCAGCTGAGCATCCAACATGCGGCTGTGTGGGTGCTAC</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>V391T</td>
+      <td>CCAGAGTCGAGCAACTCTAGCAGCCAACG</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>K418C</td>
+      <td>GTACGAACGTCGTGTGTGTAAACGGCGTGCCCGTC</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>K577H</td>
+      <td>AAGCAACAAATTTGTTCTTCACTTGAACTCCGAAACATCC</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TCTN-f</td>
+      <td>GGAAGATCTATGAAGGAAGTG</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TCTN-r</td>
+      <td>CCGCTCGAGGCAAAGTTG</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vang-f</td>
+      <td>TATGCGGCCGCTCATGGAAAACGAATCCGTC</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vang-584-r</td>
+      <td>ATATCTAGATTATACGGATGTTTCGGAGTT</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vang-323-r</td>
+      <td>ATATCTAGATTAGTAGGAGCGCGAAACGCC</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vang-303-r</td>
+      <td>ATATCTAGATTAGTGTCGCAGCTCTAGTAA</td>
+      <td></td>
+      <td>PCR primer</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Effectene</td>
+      <td>Qiagen</td>
+      <td>301427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GFP-Trap Agarose</td>
+      <td>Chromotek</td>
+      <td>gta</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FijiWingsPolarity</td>
+      <td>(Dobens et al., 2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lambda Protein Phosphatase</td>
+      <td>NEB</td>
+      <td>P0753S</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 Flies were raised on standard medium, and maintained at 25°C unless otherwise stated. To generate UAS-Vang-Flagx3 transgenic flies, Vang-Flagx3 (Kelly et al., 2016) was PCR-amplified using phusion high-fidelity DNA polymerase (Thermo Scientific) and cloned into the pUAST-attB vector (Bischof et al., 2007) using NotI-XbaI sites. Point mutants were created using site-directed mutagenesis, the primers used can be found in the key resources table.
 
 Plasmids were verified by Sanger sequencing (GENEWIZ) and sent to BestGene Inc for insertion into BDSC stock number 9752 - PBAC{yellow[+]-attP-3B}VK00037.
 
-## S2 culture, pull-downs, and immunoblotting
+### S2 culture, pull-downs, and immunoblotting
 
 S2 cells were grown according to standard procedures in Schneider’s Medium (Gibco) supplemented with 10% heat-inactivated Fetal Bovine Serum (Gibco). Effectene (QIAGEN) was used to transfect plasmids into S2 cells according to manufacturer’s protocols. For details of constructs used please refer to the key resources table. Cells were transfected for ~48 hr before lysis in buffer containing 50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM EDTA and 1% Triton-X-100.
 
@@ -134,18 +610,326 @@ For pull-down experiments with Flag, 10 μl of anti-Flag M2 affinity gel was use
 
 Lysates were resolved by polyacrylamide gel electrophoreses and transferred to nitrocellulose membrane. The primary antibodies and concentration used for immunoblotting can be found in the key resources table. HRP conjugated secondary antibodies were used at 1:5000 (Jackson ImmunoResearch Laboratories).
 
-## Drosophila dissection and immunohistochemistry
+### Drosophila dissection and immunohistochemistry
 
 Adult wings were collected in PBS containing 0.1% Triton-X-100 (PBST) and incubated for 1 hr at room temperature before mounting in 80% glycerol in PBS. Pupal wings were dissected and fixed in 4% paraformaldehyde containing 0.1% Triton-X-100 for 45 mins–1 hr. Tissue was washed with PBST twice and incubated in 5% donkey or goat serum containing PBST for 15 min. Primary antibodies were added and tissue incubated overnight at 4°C. Tissue was washed three times with PBST before incubation with fluorescent secondary antibodies and phalloidin diluted in 5% serum PBST for 2–4 hr at room temperature. Samples were washed four times with PBST and mounted in Vectashield media (Vector Labs). Primary antibodies used are listed in the key resources table. Secondary antibodies were from Jackson ImmunoResearch Laboratories (1:200) and Phalloidin from Molecular Probes (1:1000). Eye sections were prepared as previously described (Gaengel and Mlodzik, 2008), and eyes were sectioned near the equatorial region for analysis.
 
-## Imaging, quantification and statistical analysis
+### Imaging, quantification and statistical analysis
 
 Imaging of adult wings and eye sections was performed on a Zeiss Axioplan microscope, imaging of pupal wings was carried out on either a Leica SP5 or Zeiss 880 confocal microscope. Hair reorientation angles were quantified using the FijiWingsPolarity plugin, details of which can be found in Dobens et al. (2018). To perform the quantification, equivalent regions were cropped from three wings in each genotype. Angles of polarity were determined utilizing the plugin and the angles from each genotype combined. For statistical analysis, angles were divided into three categories: anterior reorientation, wild-type, and posterior reorientation. This satisfied the conditions of a valid Chi-squared test. Adult eye sections were assigned chirality by hand and orientation angle was defined using ImageJ. For statistical analysis, a Chi-squared test was performed.
 
-## Experimental design
+### Experimental design
 
 In all cases, experiments were performed on at least 3 distinct occasions to ensure technical replication. To ensure biological replication for experiments involving Drosophila tissue, 3–10 individual flies were examined for phenotypic similarity. All images and blots within the study were selected as the most representative of the population or findings after this analysis. This approach and sample size is consistent with previous studies performed in our laboratory that have generated reproducible data.
 
-## Statistical analysis
+### Statistical analysis
 
 In all cases, unless otherwise stated a Chi-square test was performed. This analysis was performed as it is an accepted test for differences between binned distributions as is the case for our data, and so our analysis examined whether we could disprove to a certain level of significance, the null hypothesis that two data sets are drawn from the same population distribution function. For analysis of actin rotation due to the low values in the medium and severe categories these categories were combined and a Fisher’s exact test was performed. The Fisher’s exact test was performed in place of the Chi-square test as the low sample size in specific categories meant conditions of the latter would not be satisfied leading to inaccurate analysis. All analyses were done using Prism software and N value and p values are detailed in tables below.
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 2B - Region 1</th>
+      <th>p value</th>
+      <th>Figure 2B - Region 2</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; D317E</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; D317E</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; R321L</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; R321L</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; R332H</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; R332H</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; V391T</td>
+      <td>0.1083</td>
+      <td>ac &gt; WT vs. ac &gt; V391T</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; K418C</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; K418C</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; K577H</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; K577H</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 2B</th>
+      <th>Region 1 N</th>
+      <th>Region 2 N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vang -/-</td>
+      <td>188</td>
+      <td>739</td>
+    </tr>
+    <tr>
+      <td>W1118</td>
+      <td>118</td>
+      <td>507</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>204</td>
+      <td>588</td>
+    </tr>
+    <tr>
+      <td>D317E</td>
+      <td>111</td>
+      <td>581</td>
+    </tr>
+    <tr>
+      <td>R321L</td>
+      <td>167</td>
+      <td>609</td>
+    </tr>
+    <tr>
+      <td>R332H</td>
+      <td>142</td>
+      <td>658</td>
+    </tr>
+    <tr>
+      <td>V391T</td>
+      <td>157</td>
+      <td>619</td>
+    </tr>
+    <tr>
+      <td>K418C</td>
+      <td>150</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <td>K577H</td>
+      <td>117</td>
+      <td>648</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 5D- Chirality</th>
+      <th>p value</th>
+      <th>Figure 5D - Rotation</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; D317E</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; D317E</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; R321L</td>
+      <td>0.0267</td>
+      <td>ac &gt; WT vs. ac &gt; R321L</td>
+      <td>0.3948</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; R332H</td>
+      <td>0.0004</td>
+      <td>ac &gt; WT vs. ac &gt; R332H</td>
+      <td>0.2055</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; V391T</td>
+      <td>0.068</td>
+      <td>ac &gt; WT vs. ac &gt; V391T</td>
+      <td>0.2481</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; K418C</td>
+      <td>0.2935</td>
+      <td>ac &gt; WT vs. ac &gt; K418C</td>
+      <td>0.0017</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; K577H</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; K577H</td>
+      <td>0.0015</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 5D</th>
+      <th>Chirality - N</th>
+      <th>Rotation - N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vang -/-</td>
+      <td>526</td>
+      <td>177</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>226</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>D317E</td>
+      <td>354</td>
+      <td>151</td>
+    </tr>
+    <tr>
+      <td>R321L</td>
+      <td>491</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>R332H</td>
+      <td>218</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>V391T</td>
+      <td>812</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>K418C</td>
+      <td>667</td>
+      <td>143</td>
+    </tr>
+    <tr>
+      <td>K577H</td>
+      <td>768</td>
+      <td>171</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 5—figure supplement 1B - Chirality</th>
+      <th>p value</th>
+      <th>Figure 5—figure supplement 1B - Rotation</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; D317E</td>
+      <td>&lt;0.0001</td>
+      <td>ac &gt; WT vs. ac &gt; D317E</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; R321L</td>
+      <td>0.0225</td>
+      <td>ac &gt; WT vs. ac &gt; R321L</td>
+      <td>0.0048</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; R332H</td>
+      <td>0.1896</td>
+      <td>ac &gt; WT vs. ac &gt; R332H</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; V391T</td>
+      <td>0.2827</td>
+      <td>ac &gt; WT vs. ac &gt; V391T</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; K418C</td>
+      <td>0.1779</td>
+      <td>ac &gt; WT vs. ac &gt; K418C</td>
+      <td>0.5566</td>
+    </tr>
+    <tr>
+      <td>ac &gt; WT vs. ac &gt; K577H</td>
+      <td>0.0043</td>
+      <td>ac &gt; WT vs. ac &gt; K577H</td>
+      <td>0.0267</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 5—figure supplement 1B</th>
+      <th>Chirality - N</th>
+      <th>Rotation - N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vang -/-</td>
+      <td>365</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>325</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>D317E</td>
+      <td>312</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>R321L</td>
+      <td>203</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>R332H</td>
+      <td>234</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <td>V391T</td>
+      <td>266</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <td>K418C</td>
+      <td>428</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>K577H</td>
+      <td>348</td>
+      <td>118</td>
+    </tr>
+  </tbody>
+</table>

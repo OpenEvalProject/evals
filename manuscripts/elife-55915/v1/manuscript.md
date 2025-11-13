@@ -71,6 +71,57 @@ To unleash the motivation for a cultural change evident in discussions between t
 
 More information about the different activities that these communities could undertake are given in Table 1. Researchers, educators and trainees are best placed to collaborate on new tools, share best practices, and promote rigorous research in their local scientific communities. Societies are in a position to advocate for widespread policy changes, while funders and journals have important gatekeeping roles (Collins and Tabak, 2014; McNutt, 2014; Cressey, 2015; PLOS Biology, 2018). The recently established UK Reproducibility Network (Munafò et al., 2020) and the PREMIER project (Dirnagl et al., 2018), both of which aim to improve scientific practices, may serve as models for these communities.
 
+**Table 1.**
+ Activities for communities of rigor champions to promote the principles of rigorous research.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Community</th>
+      <th>Intra-organizational activities</th>
+      <th>Inter-organizational activities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Trainees</td>
+      <td>• Promote transparency and other rigorous practices among colleagues and mentors • Advocate for resources to facilitate rigorous research practices</td>
+      <td>• Share institutional resources and practices in education and training • Call for changes in institutional culture and policies</td>
+    </tr>
+    <tr>
+      <td>Researchers</td>
+      <td>• Transparently report all experiments, including neutral outcomes • Promote rigorous practices among colleagues and trainees • Call for changes to institutional culture, policies, and infrastructure</td>
+      <td>• Share effective training practices and useful laboratory resources • Coordinate with the broader scientific community to promote better incentive structures</td>
+    </tr>
+    <tr>
+      <td>Educators</td>
+      <td>• Suggest improvements to available resources that address rigor • Integrate rigorous research principles into all coursework</td>
+      <td>• Share resources and educational best practices • Share effective learning evaluation methods</td>
+    </tr>
+    <tr>
+      <td>Institutional Leaders</td>
+      <td>• Enact policies and support infrastructure to incentivize transparency and other rigorous research practices • Explicitly incorporate mentoring, collaboration, and rigorous research practices into promotion procedures • Initiate and share outcomes from piloted educational resources</td>
+      <td>• Support and promote communities of rigor champions • Disseminate policy changes, new initiatives, educational successes, and implementation strategies • Develop tangible outcome measures to evaluate impact</td>
+    </tr>
+    <tr>
+      <td>Journal Editors and Reviewers</td>
+      <td>• Promote thorough review of research practices in publications • Explicitly support research transparency and neutral outcomes • Educate reviewers on which scientific practices are valued by the journal</td>
+      <td>• Collaborate to implement best practices consistently across different publishers</td>
+    </tr>
+    <tr>
+      <td>Scientific Societies and Organizations</td>
+      <td>• Support the founding of communities of rigor champions • Compile and encourage best practices used by the scientific community • Host workshops and educational materials for members</td>
+      <td>• Promote and maintain communities of rigor champions • Encourage institutional policies that promote research quality and effective education</td>
+    </tr>
+    <tr>
+      <td>Funding Organizations</td>
+      <td>• Emphasize attention to rigor in peer review • Reward rigorous research practices and outstanding mentorship • Support infrastructure for transparent and rigorous science • Support educational resources and initiatives</td>
+      <td>• Support and promote communities of rigor champions • Share best practices for incentivizing rigorous research and educating scientists • Develop partnerships to support better training and facilitate cultural changes</td>
+    </tr>
+  </tbody>
+</table>
+
 NINDS, for example, has proactively sought effective approaches to support greater transparency in reporting. An NINDS meeting with publishers led to changes in journal policies regarding transparency of reporting at various journals (Nature, 2013; Kelner, 2013). Recommendations for greater transparency at scientific meetings stemmed from an NINDS roundtable with conference organizing bodies (Silberberg et al., 2017) and are being piloted by the Federation of American Societies for Experimental Biology (FASEB). To recognize outstanding mentors, NINDS established the Landis Mentoring Award, and by providing greater stability to meritorious scientists though the NINDS R35 Program, it is anticipated that the pressures to rush studies to publication will be mitigated.
 
 In particular we hope that leaders at academic institutions – such as department chairs, deans, and vice-presidents of research – will become involved because they are uniquely placed to shape the culture and social norms of institutions (Begley et al., 2015). For example, faculty evaluation criteria should be modified to place greater emphasis on data sharing, methods transparency, demonstrated rigor, collaboration, and mentoring, with less emphasis on the number of publications and journal impact factors (Casadevall and Fang, 2012; Moher et al., 2018; Bertuzzi and Jamaleddine, 2016; Lundwall, 2019; Strech et al., 2020; Casci and Adams, 2020; see also https://sfdora.org/read). When publications are being evaluated, rigorously obtained null results should be valued as highly as positive findings. Institutional leaders are also uniquely placed to ensure that scientific rigor is properly taught to trainees and incorporated into day-to-day lab work (Casadevall et al., 2016; Begley et al., 2015; Bosch, 2018; Button et al., 2020). Moreover, evaluations of trainees should emphasize experimental and analytic skills rather than where papers are published.
@@ -83,6 +134,57 @@ The establishment of communities of rigor champions will set the stage for the c
 
 **Figure 1.:** We envision a comprehensive resource that can be used by scientists at all stages of their career to explore the principles of rigorous research at various levels of detail. We envision modules on a range of topics (such as reducing cognitive biases), each of which contains a number of topics (such as blinding), each of which contains a number of lessons (such as practical examples).
 
+**Table 2.**
+ Key elements of teaching and learning to include in an educational resource on the principles of rigorous research.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Key element</th>
+      <th>Teaching and learning principle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clear learning objectives</td>
+      <td>Define the learning objectives upfront, identify ways to measure achievement of these objectives, and then design activities to support learning (Bradforth et al., 2015).</td>
+    </tr>
+    <tr>
+      <td>Inquiry-based learning</td>
+      <td>Encourage students to pose their own questions, apply commonly used tools and methods to actively explore their questions, and provide evidence when explaining phenomena (Bradforth et al., 2015; Corwin et al., 2015; Minner et al., 2010; Handelsman et al., 2004).</td>
+    </tr>
+    <tr>
+      <td>Relevance</td>
+      <td>Provide feedback on real-world experiments, whether in the classroom or the laboratory, as a way to demonstrate relevance and stimulate interest. Opportunities for personalized application and discussion in the local setting with the help of a facilitator’s guide are particularly critical, as adults typically learn most effectively when given the opportunity for immediate personal utility and value (Walkington and Bernacki, 2018). Emphasize the ability to contribute to a larger purpose or gain social standing (Yeager et al., 2014).</td>
+    </tr>
+    <tr>
+      <td>Individuality</td>
+      <td>Include a range of approaches to teaching and learning to accommodate different levels of knowledge and skills, motivations, and senses of self-efficacy (Walkington and Bernacki, 2018; Raman, 2014).</td>
+    </tr>
+    <tr>
+      <td>Self-efficacy</td>
+      <td>Allow individuals to gain self-efficacy by experiencing a feeling of progress, being challenged in low-stakes environments, and working through confusing concepts successfully (D’Mello et al., 2014). This is more effective when the person feels psychologically safe to take risks and fail in front of their local scientific community.</td>
+    </tr>
+    <tr>
+      <td>Belonging</td>
+      <td>Facilitate learning, foster collaboration, and recognize diverse perspectives in order to encourage learners to gain agency and forge a connection with the intellectual community (Bjork et al., 2013; Brown and Adler, 2008).</td>
+    </tr>
+    <tr>
+      <td>Recognition of complexity</td>
+      <td>Include complexity and inconsistencies in training examples rather than simplification for the sake of a persuasive story (Howitt and Wilson, 2014; Coleman, 1987). This counteracts the drive to smooth over inconvenient but potentially important details and highlights the importance of confounding variables, potential artefactual influences, reproducibility, and robustness of the findings.</td>
+    </tr>
+    <tr>
+      <td>Cultivation of growth</td>
+      <td>Nurture positive behaviors, like acknowledging and learning from mistakes, rather than penalize imperfect practices (Alberts et al., 2015). Mentors at all career stages are encouraged to model these positive behaviors and to share their own failures, the drudgery and frustrations of science, and their approaches to coping emotionally and growing intellectually while maintaining rigorous research practices.</td>
+    </tr>
+    <tr>
+      <td>Assessment of behavioral change</td>
+      <td>Measure success via gains in learner competency and changes to their real-world approaches to research. Changes in laboratory practice could be assessed by user self-reports, by analysis of research presented at meetings (Silberberg et al., 2017) and in publications (MacLeod et al., 2015), or by querying scientists on whether discussions with their mentors and colleagues led to changes in laboratory and institutional culture. Collaborate from the beginning with individuals who specialize in assessment design in higher education settings (Bradforth et al., 2015).</td>
+    </tr>
+  </tbody>
+</table>
+
 We envision the platform being developed via a hub-and-spoke approach as discussed at a recent National Advisory Neurological Disorders and Stroke Council meeting. A centralized mechanism (the 'hub') will provide financial and infrastructural support and guidance (possibly via a steering committee) and facilitate sharing and coordination between groups, while rigor champions will come together to design specific modules (spokes) for the platform by using existing resources or designing new ones from scratch as needed. We envision worldwide teams of experts collaborating on building and testing the resource. Rigor champions with experience in defining clear learning objectives, building curricula, and evaluating success, for example, will collaborate with content experts to design topics needed in the resource. Importantly, potential users will be involved from the beginning of the development stage, and onwards through the design and implementation stages, to provide feedback about effectiveness and usability.
 
 Given the importance of being able to measure the effectiveness (or otherwise) of the platform (Table 2), individual components should be released publicly as they are completed to allow educators and users to iteratively test and improve the resource as it unfolds. As with science itself, the developers will need to experiment with content and delivery. If the resource does not improve the comprehension and research practice of individuals, or add value to the research community, rigorous approaches should be applied to improve it.
@@ -91,6 +193,6 @@ Once a functioning and effective resource has been built, it will be essential t
 
 Setting up and supporting communities of rigor champions and developing educational resources on rigorous research will be complex and likely require multiple sources of support. However, with the participation of all sectors of the scientific enterprise, the actions proposed herein should, within a decade, lead to improvements in the culture of science as well as improvements in the design, conduct, analysis, and reporting of biomedical research. The result will be a healthier and more effective scientific community.
 
-## Disclaimer
+### Disclaimer
 
 The content of this publication does not necessarily reflect the views or policies of the Department of Health and Human Services, nor does mention of trade names, commercial products, or organizations imply endorsement by the US Government.

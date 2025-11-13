@@ -19,21 +19,21 @@
 
 ### Affiliations
 
-1. https://ror.org/00wjc7c48 Department of Bioscience, University of Milan Milan Italy
-2. https://ror.org/028qa3n13 Indian Institute of Science Education and Research Pune Pune India
-3. https://ror.org/01220jp31 Institute of Molecular and Translational Cardiology, IRCCS, Policlinico San Donato Milan Italy
-4. https://ror.org/05bxb3784 Institute of Biological Chemistry, Academia Sinica Taipei Taiwan
-5. https://ror.org/00wjc7c48 Department of Pathophysiology and Transplantation, University of Milan Milan Italy
-6. https://ror.org/00s6t1f81 Department of Molecular Medicine, University of Pavia Pavia Italy
-7. https://ror.org/05w1q1c88 Amyloidosis Research and Treatment Center, Fondazione IRCCS Policlinico San Matteo Pavia Italy
-8. https://ror.org/05bqach95 Institute of Biochemical Sciences, National Taiwan University Taipei Taiwan
-9. https://ror.org/03t78wx29 International Institute for Sustainability with Knotted Chiral Meta Matter (SKCM 2 ), Hiroshima University Higashi-Hiroshima Japan
+1. Department of Bioscience, University of Milan Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))
+2. Indian Institute of Science Education and Research Pune Pune India ([ROR:028qa3n13](https://ror.org/028qa3n13))
+3. Institute of Molecular and Translational Cardiology, IRCCS, Policlinico San Donato Milan Italy ([ROR:01220jp31](https://ror.org/01220jp31))
+4. Institute of Biological Chemistry, Academia Sinica Taipei Taiwan ([ROR:05bxb3784](https://ror.org/05bxb3784))
+5. Department of Pathophysiology and Transplantation, University of Milan Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))
+6. Department of Molecular Medicine, University of Pavia Pavia Italy ([ROR:00s6t1f81](https://ror.org/00s6t1f81))
+7. Amyloidosis Research and Treatment Center, Fondazione IRCCS Policlinico San Matteo Pavia Italy ([ROR:05w1q1c88](https://ror.org/05w1q1c88))
+8. Institute of Biochemical Sciences, National Taiwan University Taipei Taiwan ([ROR:05bqach95](https://ror.org/05bqach95))
+9. International Institute for Sustainability with Knotted Chiral Meta Matter (SKCM 2 ), Hiroshima University Higashi-Hiroshima Japan ([ROR:03t78wx29](https://ror.org/03t78wx29))
 
 † Corresponding author
 
 ## Abstract
 
-Both immunoglobulin light-chain (LC) amyloidosis (AL) and multiple myeloma (MM) share the overproduction of a clonal LC. However, while LCs in MM remain soluble in circulation, AL LCs misfold into toxic-soluble species and amyloid fibrils that accumulate in organs, leading to distinct clinical manifestations. The significant sequence variability of LCs has hindered the understanding of the mechanisms driving LC aggregation. Nevertheless, emerging biochemical properties, including dimer stability, conformational dynamics, and proteolysis susceptibility, distinguish AL LCs from those in MM under native conditions. This study aimed to identify a 2 conformational fingerprint distinguishing AL from MM LCs. Using small-angle X-ray scattering (SAXS) under native conditions, we analyzed four AL and two MM LCs. We observed that AL LCs exhibited a slightly larger radius of gyration and greater deviations from X-ray crystallography-determined or predicted structures, reflecting enhanced conformational dynamics. SAXS data, integrated with molecular dynamics simulations, revealed a conformational ensemble where LCs adopt multiple states, with variable and constant domains either bent or straight. AL LCs displayed a distinct, low-populated, straight conformation (termed H state), which maximized solvent accessibility at the interface between constant and variable domains. Hydrogen-deuterium exchange mass spectrometry experimentally validated this H state. These findings reconcile diverse experimental observations and provide a precise structural target for future drug design efforts.
+Both immunoglobulin light-chain (LC) amyloidosis (AL) and multiple myeloma (MM) share the overproduction of a clonal LC. However, while LCs in MM remain soluble in circulation, AL LCs misfold into toxic-soluble species and amyloid fibrils that accumulate in organs, leading to distinct clinical manifestations. The significant sequence variability of LCs has hindered the understanding of the mechanisms driving LC aggregation. Nevertheless, emerging biochemical properties, including dimer stability, conformational dynamics, and proteolysis susceptibility, distinguish AL LCs from those in MM under native conditions. This study aimed to identify a2 conformational fingerprint distinguishing AL from MM LCs. Using small-angle X-ray scattering (SAXS) under native conditions, we analyzed four AL and two MM LCs. We observed that AL LCs exhibited a slightly larger radius of gyration and greater deviations from X-ray crystallography-determined or predicted structures, reflecting enhanced conformational dynamics. SAXS data, integrated with molecular dynamics simulations, revealed a conformational ensemble where LCs adopt multiple states, with variable and constant domains either bent or straight. AL LCs displayed a distinct, low-populated, straight conformation (termed H state), which maximized solvent accessibility at the interface between constant and variable domains. Hydrogen-deuterium exchange mass spectrometry experimentally validated this H state. These findings reconcile diverse experimental observations and provide a precise structural target for future drug design efforts.
 
 ## Introduction
 
@@ -49,11 +49,94 @@ Here, building on this previous work as well as on our previous experience on β
 
 ## Results
 
-## SAXS suggests differences in the conformational dynamics of amyloidogenic and non-amyloidogenic LC
+### SAXS suggests differences in the conformational dynamics of amyloidogenic and non-amyloidogenic LC
 
 SAXS data were acquired either in bulk or in line with size-exclusion chromatography (SEC) for a set of six LCs previously described (Table 1 and ‘Materials and methods’). Four of these LCs (referred to as H3, H7, and H18 in Oberti et al., 2017 and AL55 in Swuec et al., 2019) were identified in multiple AL patients (AL-LC), while two (referred to as M7 and M10 in Oberti et al., 2017) were identified in MM patients (MM-LC). These LCs cover multiple germlines, with H18 and M7 belonging to the same germline (Table 1). The sequence identity is the largest for H18 and M7 (91.6%), while it is the lowest for AL55 and M7 (75.2%). A table showing the statistics for all pairwise sequence alignments is provided in Supplementary file 1a. For H3, H7, and M7, a crystal structure was previously determined (Oberti et al., 2017), while for H18, AL55, and M10, we obtained a model using either homology modeling (H18 and AL55) or AlphaFold2 (M10). Qualitatively, the SAXS curves in Figure 1 did not reveal any macroscopic deviation of the solution behavior with respect to the crystal or model conformation. For each LC, we compared the experimental and theoretical curves calculated from the LC structures (Table 1) analyzing the residuals and the associated χ2. The analysis indicated a discrepancy between the model conformation and the data in the case of the AL-LCs, which was instead not observed in the case of the MM-LCs. For AL-LC, residuals deviate from normality in the low q region, suggesting some variability in the global size of the system. Additionally, a weak trend distinguishing AL-LC from MM-LCs could be identified in the radius of gyration (Rg) as derived from the Guinier approximation (Table 1). H3, H7, H18, and AL55 have an Rg that is 0.5–0.8 Å larger than M7 and M10, a small but statistically significant difference (p-value<10–5). Overall, the SAXS measurements point to less compact and more structurally heterogeneous AL-LCs compared with more compact and structurally homogeneous MM-LCs.
 
-## MD simulations reveal a conformational fingerprint for amyloidogenic light chains
+![Figure 1.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig1-v1.jpg)
+
+**Figure 1.:** Kratky plots of for amyloidosis (AL) and multiple myeloma (MM) LCs. The experimental (orange) and theoretical (black) curves (top panels) and the associated residuals (bottom panels) indicate that AL-LC solution behavior deviates from reference structures more than MM-LC. SAXS was measured as follows: H3 measured in bulk (Hamburg), 3.4 mg/ml; H7 measured in bulk (Hamburg), 3.4 mg/ml; H18 measured by size-exclusion chromatography (SEC)-SAXS (ESRF [European Synchrotron radiation facility]) with the injection concentration of at 2.8 mg/ml; AL55 measured in bulk (ESRF), 2.6 mg/ml; M7 measured in bulk (Hamburg), 3.6 mg/ml; and M10 measured by SEC-SAXS with the injection concentration of 6.7 mg/ml (ESRF). Theoretical SAXS curves were calculated using crysol (Manalastas-Cantos et al., 2021). Log-log plots are shown in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The name of each protein is labeled above their corresponding profile. The obtained molecular weight (MW) is highlighted in red.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Selected frames for buffer and sample are reported together with the analysis of the estimated Rg values, indicating that the selection corresponds to homogeneous conformations.
+
+**Table 1.**
+ LC systems studied in this work.The table includes information about the germline, phenotype, method to obtain structure, the SAXS curves, and the radius of gyration derived from the SAXS data for all the model proteins studied in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>LC</th>
+      <th>Germline</th>
+      <th>Phenotype</th>
+      <th>Structure</th>
+      <th>SAXS χ2 q &lt; 0.5 Å (q &lt; 0.3)</th>
+      <th>Rg (SAXS) (nm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H3</td>
+      <td>IGLV1-44*01</td>
+      <td>AL</td>
+      <td>5MTL</td>
+      <td>1.6 (1.9)</td>
+      <td>2.57 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>H7</td>
+      <td>IGLV1-51*01</td>
+      <td>AL</td>
+      <td>5MUH</td>
+      <td>2.8 (4.0)</td>
+      <td>2.56 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>H18</td>
+      <td>IGLV3-19*01</td>
+      <td>AL</td>
+      <td>Homology</td>
+      <td>1.6 (1.9)</td>
+      <td>2.56 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>AL55</td>
+      <td>IGLV6-57*02</td>
+      <td>AL</td>
+      <td>Homology</td>
+      <td>5.1 (7.8)</td>
+      <td>2.58 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>M7</td>
+      <td>IGLV3-19*01</td>
+      <td>MM</td>
+      <td>5MVG</td>
+      <td>1.2 (1.2)</td>
+      <td>2.50 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>M10</td>
+      <td>IGLV2-14*03</td>
+      <td>MM</td>
+      <td>AF2</td>
+      <td>1.2 (1.2)</td>
+      <td>2.51 ± 0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_AL, amyloidosis; LC, light chain; MM, multiple myeloma; SAXS, small-angle X-ray scattering._
+
+### MD simulations reveal a conformational fingerprint for amyloidogenic light chains
 
 To investigate the conformational dynamics of the six LCs, we performed metadynamics metainference (M&M) MD simulations employing the SAXS curves (q < 0.3 Å) as restraints (‘Materials and methods’; Bonomi et al., 2016b; Bonomi et al., 2016a; Paissoni et al., 2020; Paissoni and Camilloni, 2021). Metainference is a Bayesian framework that allows the integration of experimental knowledge on-the-fly in MD simulations, improving the latter while accounting for the uncertainty in the data and their interpretation. Metadynamics is an enhanced sampling technique that is able to speed up the sampling of the conformational space of complex systems. The combination of SAXS and MD simulations has been shown to be effective for multidomain proteins, as well as for intrinsically disordered proteins (Saad et al., 2021; Ahmed et al., 2021; Thomasen and Lindorff-Larsen, 2022).
 
@@ -63,19 +146,231 @@ For each LC, we performed two independent M&M simulations coupled by the SAXS re
 
 **Figure 2.:** (A) Kratky plots and associated residuals (bottom panels) comparing experimental (orange), and theoretical (black) curves obtained by averaging over the metainference ensemble for H3, H7, H18, AL55, M7, and M10, respectively. Theoretical SAXS curves were calculated using crysol (Manalastas-Cantos et al., 2021). (B) Residue-wise root mean square fluctuations (RMSFs) obtained by averaging the two metainference replicates and the two equivalent domains for the six systems studied. The top panel shows data for the variable domains, while the bottom panel shows data for the constant domain. Residues are reported using Chothia and Lesk numbering (Al-Lazikani et al., 1997). (C) Schematic representation of two global collective variables used to compare the conformational dynamics of the different systems, namely the distance between the center of mass of the variable domain (VL) and constant domain (CL) dimers and the angle describing the bending of the two domain dimers.
 
+**Table 2.**
+ Metainference simulations performed in this work for the six systems.For each metainference simulation, the simulation time per replica with the number of replicas is reported; the χ2 of the resulting conformational ensemble with the experimental SAXS curve, the range q < 0.3 Å is the one used as restraint in the simulation; the average radius of gyration with error estimated by block averaging.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>LC code</th>
+      <th>Simulation</th>
+      <th>Length per replica (ns) (# replicas)</th>
+      <th>SAXS χ2 q &lt; 0.5 Å (q &lt; 0.3)</th>
+      <th>Average Rg (nm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">H3</td>
+      <td>M&amp;M 1</td>
+      <td>1530 (60)</td>
+      <td>1.2 (1.1)</td>
+      <td>2.56 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>M&amp;M 2</td>
+      <td>1520 (60)</td>
+      <td>1.2 (1.1)</td>
+      <td>2.56 ± 0.02</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H7</td>
+      <td>M&amp;M 1</td>
+      <td>1627 (60)</td>
+      <td>1.1 (1.2)</td>
+      <td>2.54 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>M&amp;M 2</td>
+      <td>1545 (60)</td>
+      <td>1.1 (1.2)</td>
+      <td>2.54 ± 0.05</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H18</td>
+      <td>M&amp;M 1</td>
+      <td>1643 (60)</td>
+      <td>1.4 (1.6)</td>
+      <td>2.53 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>M&amp;M 2</td>
+      <td>1529 (60)</td>
+      <td>1.4 (1.7)</td>
+      <td>2.54 ± 0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="2">AL55</td>
+      <td>M&amp;M 1</td>
+      <td>1545 (60)</td>
+      <td>2.7 (3.0)</td>
+      <td>2.59 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>M&amp;M 2</td>
+      <td>1591 (60)</td>
+      <td>2.5 (2.7)</td>
+      <td>2.58 ± 0.05</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M7</td>
+      <td>M&amp;M 1</td>
+      <td>1623 (60)</td>
+      <td>1.2 (1.2)</td>
+      <td>2.52 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>M&amp;M 2</td>
+      <td>1530 (60)</td>
+      <td>1.1 (1.2)</td>
+      <td>2.52 ± 0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M10</td>
+      <td>M&amp;M 1</td>
+      <td>987 (60)</td>
+      <td>1.1 (1.1)</td>
+      <td>2.53 ± 0.07</td>
+    </tr>
+    <tr>
+      <td>M&amp;M 2</td>
+      <td>995 (60)</td>
+      <td>1.1 (1.1)</td>
+      <td>2.54 ± 0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+_LC, light chain; M&M, metadynamics metainference; SAXS, small-angle X-ray scattering._
+
 In Figure 3, we report the free energy surfaces (FESs) obtained from the processing of the two replicates of each LC as a function of the elbow angle and the CL-VL distance calculated from their center of mass. The visual inspection of the FES indicates converged simulation: in all cases, the replicates explore a comparable free-energy landscape with comparable features. All six LC FESs share common features: a relatively continuous low free energy region along the diagonal, spanning configurations where the CL and VL are bent and close to each other (state LB), and configurations where the CL and VL domains are straight and at relative distance between 3.4 and 4.1 nm (state LS). A subset of LCs, namely H18, M7, and AL55, display conformations where the domains are straight in line (elbow angle >2.5 rad) and in close vicinity, with a relative distance between the center of mass of <3.4 nm (state G). Of note, H18 and M7 belong to the same germline, letting us speculate that this state G may be germline specific. Most importantly, only the AL-LCs display configurations with CL and VL straight in line but well separated at relative distances >4.1 nm; this state H seems to be a fingerprint specific for AL-LCs. A set of configurations exemplifying the four states is reported in Figure 3. The estimates of the populations for the four states LB, LS, G, and H are reported in Table 3. The quantitative analysis indicates that, within the statistical significance of the simulations, states LB and LS represent in all cases most of the conformational space. In the case of H18, AL55, and M7, the compact state G is also significantly populated (10–34%). The state H, associated with amyloidogenic LCs, is populated between 5 and 10% in H3, H7, H18, and AL55 and <1% in M7 and M10.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig3-v1.jpg)
 
 **Figure 3.:** For each system, the simulations are performed in duplicate. The x-axis represents the elbow angle, indicating the relative bending of the constant and variable domains (in radians), while the y-axis represents the distance in nm between the center of mass of the constant domain (CL) and variable domain (VL) dimers. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol. On each FES are represented four regions (green, LB state; red, LS state; blue, H state; and black, G state), highlighting the main conformational states. For each region, a representative structure is reported in a rectangle of the same color.
 
+**Table 3.**
+ Populations of the four states shown in Figure 3 resulting from the two independent metadynamics metainference simulations performed for each of the six LCs.The population of the H state, which is supposed to be a fingerprint specific for AL-LCs, is in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>%</th>
+      <th>H3</th>
+      <th>H7</th>
+      <th>H18</th>
+      <th>AL55</th>
+      <th>M7</th>
+      <th>M10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LB</td>
+      <td>62.0 ± 0.4</td>
+      <td>72.3 ± 2.5</td>
+      <td>22.9 ± 2.8</td>
+      <td>48.3 ± 0.1</td>
+      <td>46.8 ± 0.1</td>
+      <td>48.4 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>33.0 ± 0.2</td>
+      <td>15.2 ± 2.7</td>
+      <td>38.4 ± 2.1</td>
+      <td>32.5 ± 2.0</td>
+      <td>35.0 ± 0.1</td>
+      <td>49.1 ± 1.5</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>0.2 ± 0.1</td>
+      <td>0.8 ± 0.4</td>
+      <td>33.8 ± 3.8</td>
+      <td>10.5 ± 1.4</td>
+      <td>17.6 ± 0.1</td>
+      <td>1.8 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>4.8 ± 0.5</td>
+      <td>11.7 ± 0.5</td>
+      <td>5.0 ± 1.0</td>
+      <td>8.7 ± 0.5</td>
+      <td>0.6 ± 0.2</td>
+      <td>0.8 ± 0.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_AL, amyloidosis; LC, light chain._
+
 To identify additional differences between the conformations observed in state H and the rest of the conformational space, we focused our attention on the VL-VL and CL-CL dimerization interfaces. In Figure 4, we showed the free energy as a function of the distance between the CL domains versus the distance between the VL domains for each of the four states for one of the two simulations performed on H3; the same analysis for all other simulations is shown in Figure 4—figure supplements 1–6. From the comparison of the FESs, it is clear that only in the conformations corresponding to the state H do the CL-CL dimers display an alternative configuration. In the case of H3, the CL-CL domains in the H state are characterized by a shift toward the configurations characterized by a larger distance; the same is observed in the case of H18 and AL55, while in the case of H7, the H state is characterized by a smaller distance between the CL domains.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig4-v1.jpg)
+
+**Figure 4.:** The x-axis shows the distance between the centers of mass of the constant domains, while the y-axis shows the distance between the centers of mass of the variable domains. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol. See also Figure 4—figure supplements 1–6 for the same analysis on the other simulations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The x-axis shows the distance between the centers of mass of the constant domains, while the y-axis shows the distance between the centers of mass of the variable domains. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The x-axis shows the distance between the centers of mass of the constant domains, while the y-axis shows the distance between the centers of mass of the variable domains. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The x-axis shows the distance between the centers of mass of the constant domains, while the y-axis shows the distance between the centers of mass of the variable domains. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The x-axis shows the distance between the centers of mass of the constant domains, while the y-axis shows the distance between the centers of mass of the variable domains. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The x-axis shows the distance between the centers of mass of the constant domains, while the y-axis shows the distance between the centers of mass of the variable domains. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** The x-axis shows the distance between the centers of mass of the constant domains, while the y-axis shows the distance between the centers of mass of the variable domains. The free energy is shown with color and isolines every 2kBT corresponding to 5.16 kJ/mol.
 
 Our conformational ensembles allowed us to hypothesize a conformational fingerprint for AL proteins, namely the presence of a weakly but significantly populated state (H) characterized by a more extended quaternary structure, with VL and CL dimers well separated, and with perturbed CL-CL interfaces.
 
-## HDX independently validates the amyloidogenic LC conformational fingerprint
+### HDX independently validates the amyloidogenic LC conformational fingerprint
 
 To gain further molecular insight into how the dynamics of the tertiary and quaternary structures can be differentiated in AL- and MM-LCs, HDX-MS was performed on our set of proteins. HDX-MS probes the protein dynamics by monitoring the hydrogen-to-deuterium uptake over time and the obtained data well complement structural, biophysical, and computational data. Four LCs from our set (H3, H7, AL55, and M10) yielded good peptide sequence coverages of 98.6, 92.5, 98.6, and 99.1%, respectively, with a redundancy of >4.0 (Figure 5—figure supplements 1–4 and Supplementary file 1b). H18 and M7 were not included in this analysis due to their poor sequence coverage and were not further investigated. Due to sequence heterogeneity among our proteins, the common peptide analyses were not performed. Therefore, the relative deuterium exchange at different HDX time points of 0.5–240 min with respect to zero exchange time was used to compare the dynamics of individual proteins. The average uptake at different time points for selected regions including residues 34–50 and 152–180 is included in Figure 5—figure supplement 5. The individual peptide mapping at all HDX time points is given in Figure 5—figure supplement 6. The deuterium uptakes at 30 min HDX time showed the most pronounced differences between different proteins, which were chosen to illustrate the key structural features in the main figure panel (Figure 5 and Figure 5—videos 1–4).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig5-v1.jpg)
+
+**Figure 5.:** (A) The top panel represents the simplified presentation of the primary structure of a light chain, including variable domain (VL) and constant domain (CL). The location of β-strands according to Chothia and Lesk (Al-Lazikani et al., 1997). (B) The structural mapping and butterfly plot of relative deuterium uptake (Da) of H3. Chain A of H3 structure is colored in a gradient of blue–white–red for an uptake of 0–30% at an exchange time of 30 min. Chain B is shown in gray (right-hand panel). The butterfly plot showing relative deuterium uptake at all time points from 0.5 to 240 min on a gradient of light to dark blue (left-hand panel). (C–E) are the figures corresponding to H7, AL55, and M10, respectively, with the same color coding as in (B). The overall sequence coverage for all proteins was >90%, with a redundancy of >4.0. The VL-VL domains interface peptides covering amino acid residues 34–50 are labeled in orange, while the CL-CL interface region containing 152–180 amino acids is labeled in magenta. Collectively, they form VL-CL interface, which is important to define the H state.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Peptide coverage map of protein H3. The total number of peptides is 61, with a coverage of 98.6% and a redundancy of 4.16. (B) As shown on the left, heat map as a function of hydrogen-deuterium exchange-time at different time points. The relative deuterium uptake is color-coded from blue-to-white-to-red for 0–30% as indicated by the scale bar below.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Peptide coverage map of protein H7. The total number of peptides is 50, with a coverage of 92.5% and a redundancy of 4.01. (B) Heat map as a function of hydrogen-deuterium exchange-time at different time points as shown on the left. The relative deuterium uptake is color-coded from blue-to-white-to-red for 0–30% as shown by the scale bar below.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Peptide coverage map of protein AL55. The total number of peptides is 57, with a coverage of 98.6% and a redundancy of 4.06. (B) Heat map as a function of hydrogen-deuterium exchange-time at different time points as shown on the left. The relative deuterium uptake is color-coded from blue-to-white-to-red for 0–30% as shown by the scale bar below.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Peptide coverage map of protein M10. The total number of peptides is 62, with a coverage of 99.1% and a redundancy of 4.69. (B) As shown on the left, heat map as a function of hydrogen-deuterium exchange-time at different time points. The relative deuterium uptake is color-coded from blue-to-white-to-red for 0–30% as indicated by the scale bar below.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** The colors corresponding to each protein H3 (blue), H7 (green), AL55 (light green), and M10 (orange) are shown in the first panel. The residue numbers corresponding to the individual peptides are shown in the upper-left corner of the individual panels. The panels for peptides containing residues 34–50 and 152–180 highlighted in bold are of our interest in this study.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** The color gradient is from blue–white–red. Blue means no exchange, and red means an exchange of 30%. The protein name is written on the right-hand side of each panel. Chain B is colored in gray.
 
 HDX-MS analysis revealed subtle structural dynamics of the individual proteins. The most significant difference between the AL and MM-LCs is observed for residues 34–50, which are part of both the VL-VL dimerization interface and, more importantly in the context of this work, the CL-VL interface. These residues show significantly higher deuterium uptakes in all H-proteins, with H3 being the highest, implying that AL-LCs dimeric interfaces (VL-VL and CL-VL) are more dynamic and hence significantly more destabilized than in M10 (Figure 5 and Figure 5—figure supplement 5). The highly dynamic VL-VL interface of H3 also correlates well with its open VL-VL interface in a crystal structure (PDB: 8P89), which houses two nanobodies interacting with each VL in a dimeric structure (Broggini et al., 2023). On the other hand, residues 54–70, which are not part of either interface, show a higher deuterium uptake and hence more dynamics in M10 protein, which may be a result of redistribution of dynamics in the regions away from the rigid VL-VL interface to stabilize the overall structure as also observed for other proteins previously (Puri and Hsu, 2022; Ko et al., 2019; Figure 5 and Figure 5—figure supplement 5). In contrast, the VL-CL hinge regions (residues 110–120) show homogeneously high flexibility in all the proteins except H7, indicating their higher accessible surface areas (Figure 5). As expected, the CL domains from residues 170–200 also show a similar pattern of average deuterium uptakes and hence flexibility in AL- and MM-LCs, with a minor difference contributed by the rigid VL-CL interface containing residues 165–180 (Figure 5—figure supplements 1 and 4B). This region shows significantly less deuterium uptake (rigid) in both AL and MM proteins compared with other peptides in the CL domain (Figure 5—figure supplements 1–4B). However, comparing the average uptake for this region (residue 152–180) between AL and MM proteins shows that H3 and AL55 have higher uptake than M10. In contrast, H7 is an exception with the lowest deuterium uptake in this region (Figure 5—figure supplement 5, panel 152–180). These data are particularly interesting in the light of our simulations. The dimeric conformations identified in the H state (Figure 3) are characterized by higher accessibility for the CL-VL interface, which is in agreement with the increased accessibility for the regions 34–50 on the VL and 159–180 in the CL observed in the HDX-MS analysis. Notably, the H state of H7 is the only one in which the CL-CL interface is remarkably compact (see Figure 4—figure supplement 2), consistent with the lower HDX for residues 152–180 observed in H7. Overall, the HDX-MS data provide an independent validation of the H state predicted from our conformational ensembles.
 
@@ -87,22 +382,267 @@ Having established a conformational fingerprint for AL-LC proteins, it would be 
 
 In conclusion, our study provides a novel, complementary, perspective on the determinants of the misfolding propensity of AL-LCs that we schematize in Figure 6. The identification of a high-energy state, with perturbed CL dimerization interfaces, extended linkers, and accessible regions in both the VL-CL and VL-VL interfaces, may be the common feature interplaying with specific properties shown by previous work, including the direct or indirect destabilization of both the VL-VL and CL-CL dimerization interfaces (Rottenaicher et al., 2021; Rennella et al., 2019; Rottenaicher et al., 2023; Garofalo et al., 2021; Pradhan et al., 2023; Peterson et al., 2010; Kazman et al., 2020). Our conformational fingerprint is also consistent with the observation that protein stability does not fully correlate with the tendency to aggregate, whereas susceptibility to proteolysis and conformational dynamics may better capture the differences between AL-LC and MM-LC. In this context, our data allow us to rationally suggest that targeting the constant domain region at the CL-VL interface, which is more labile in the H state, may be a novel strategy to search for molecules against LC aggregation in AL.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-v1.jpg)
+
+**Figure 6.:** We propose that the H state is the conformational fingerprint distinguishing amyloidosis (AL) LCs from other LCs, which, together with other features, contributes to the amyloidogenicity of AL LCs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The multiple sequence alignment for M7, H18, and their germline sequence (IGLV3-19*01 for the VL and IGLC2*02 for the CL) is reported below.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The three complementarity-determining regions and the linker region are highlighted in light blue and orange, respectively. The red circles indicate residues for which the left alpha is the most populated region in the Ramachandran plot. Free energy surfaces (in kJ/mol) representing the Ramachandran plot for the indicated residues are reported in the bottom panels.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** The three complementarity-determining regions and the linker region are highlighted in light blue and orange, respectively. The red circles indicate residues for which the left alpha is the most populated region in the Ramachandran plot. Free energy surfaces (in kJ/mol) representing the Ramachandran plot for the indicated residues are reported in the bottom panels.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The three complementarity-determining regions and the linker region are highlighted in light blue and orange, respectively. The red circles indicate residues for which the left alpha is the most populated region in the Ramachandran plot. Free energy surfaces (in kJ/mol) representing the Ramachandran plot for the indicated residues are reported in the bottom panels.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** The three complementarity-determining regions and the linker region are highlighted in light blue and orange, respectively. The red circles indicate residues for which the left alpha is the most populated region in the Ramachandran plot. Free energy surfaces (in kJ/mol) representing the Ramachandran plot for the indicated residues are reported in the bottom panels.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** The three complementarity-determining regions and the linker region are highlighted in light blue and orange, respectively. The red circles indicate residues for which the left alpha is the most populated region in the Ramachandran plot. Free energy surfaces (in kJ/mol) representing the Ramachandran plot for the indicated residues are reported in the bottom panels.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/102002/elife-102002-fig6-figsupp7-v1.jpg)
+
+**Figure 6—figure supplement 7.:** The three complementarity-determining regions and the linker region are highlighted in light blue and orange, respectively. The red circles indicate residues for which the left alpha is the most populated region in the Ramachandran plot. Free energy surfaces (in kJ/mol) representing the Ramachandran plot for the indicated residues are reported in the bottom panels.
+
 ## Materials and methods
 
-## LC production and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>NEB 5-alpha</td>
+      <td>Cat# C2987H</td>
+      <td>Chemical competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3)</td>
+      <td>NEB</td>
+      <td>Cat# C2527H</td>
+      <td>Chemical competent cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H3</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H7</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AL55</td>
+      <td>Puri et al., 2025</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H18</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M7</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M10</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pET21b(+)-H3</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pET21b(+)-H7</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pET21b(+)-AL55</td>
+      <td>Puri et al., 2025</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pET21b(+)-H18</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pET21b(+)-M7</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pET21b(+)-M10</td>
+      <td>Oberti et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PLGS</td>
+      <td>Waters</td>
+      <td>RRID:SCR_016664</td>
+      <td>Section ‘Hydrogen-deuterium mass exchange spectrometry’http://www.waters.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DynamX</td>
+      <td>Waters</td>
+      <td></td>
+      <td>Section ‘Hydrogen-deuterium mass exchange spectrometry’http://www.waters.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrodinger LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>Section ‘Hydrogen-deuterium mass exchange spectrometry’http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Section ‘Hydrogen-deuterium mass exchange spectrometry’http://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ATSAS 3 package</td>
+      <td>Manalastas-Cantos et al., 2021</td>
+      <td>RRID:SCR_015648</td>
+      <td>Section ‘Small-angle X-ray scattering’http://www.embl-hamburg.de/biosaxs/atsas-online/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS 2019</td>
+      <td>Abraham et al., 2015</td>
+      <td>RRID:SCR_014565</td>
+      <td>Section ‘Molecular dynamics simulations’https://www.gromacs.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PLUMED2 v2.9</td>
+      <td>Tribello et al., 2014</td>
+      <td>RRID:SCR_021952</td>
+      <td>Section ‘Molecular dynamics simulations’https://www.plumed.org/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hi prep QFF- 20 ml column</td>
+      <td>Cytiva</td>
+      <td>Product code 28936543</td>
+      <td>Section ‘Protein production and purification’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 10/300 increase</td>
+      <td>Cytiva</td>
+      <td>Cat# 28990946</td>
+      <td>Section ‘Protein production and purification’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 7510/300 GL</td>
+      <td>Cytiva</td>
+      <td>Cat# 17517401</td>
+      <td>Section ‘Protein production and purification’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilized pepsin digestion column</td>
+      <td>Waters</td>
+      <td>(Waters Enzymate BEH Pepsin, 2.1 × 30 mm)</td>
+      <td>Section ‘Hydrogen-deuterium mass exchange spectrometry’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Isopropyl-β-d-thiogalactopyranoside (IPTG)</td>
+      <td>Himedia</td>
+      <td>RM2578</td>
+      <td>Section ‘Protein production and purification’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Guanidinium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>G3272-10KG</td>
+      <td>Section ‘Protein production and purification’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>D2O</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 7789-20-0</td>
+      <td>Section ‘Hydrogen-deuterium mass exchange spectrometry’</td>
+    </tr>
+  </tbody>
+</table>
+
+### LC production and purification
 
 Recombinant AL- (H3, H7, H18, and AL5) and M- (M7, M10) proteins were produced and purified from the host Escherichia coli strain BL21(DE3). First, the competent BL21(DE3) cells were transformed with plasmid pET21(b+), which contains genes encoding H3, H7, H18, AL55, M7, and M10 proteins. The transformed cells were selected for each plasmid by growing them on LB agar plates containing the antibiotic ampicillin at a final concentration of 100 µg/ml. For overexpression of protein, one colony was picked from each plate and grown overnight in 20 ml of LB broth containing ampicillin at a final concentration of 100 µg/ml. The overnight-grown cells were then used to inoculate a secondary culture in 1 l of LB broth. The cells were grown until the turbidity (OD600nm) reached between 0.6 and 0.8 and protein expression was subsequently induced by adding 0.5 mM isopropyl-β-d-thiogalactopyranoside for 4 h. The bacterial cells containing overexpressed LCs were then harvested using a Backman Coulter centrifuge at 6000 rpm for 20 min at 4°C. All the proteins were overexpressed as inclusion bodies. For protein purification, the inclusion bodies were isolated by cell lysis induced by sonication. The purification of inclusion bodies was performed by washing them with buffer containing 10 mM Tris (pH 8) and 1% triton X 100. The purified inclusion bodies were unfolded with buffer containing 6.0M guanidinium chloride (GdnHCl) for 4 h at 4°C. The unfolded LCs were then refolded in a buffer containing reduced and oxidized glutathione to assist in disulfide bond formation. The refolded proteins were subjected to anion exchange and SEC steps for final purification. The level of protein purity was checked on 12% sodium dodecyl sulfate-polyacrylamide gel electrophoresis gels. The final protein concentration was measured using molecular weight and extinction coefficient of individual proteins. The purified proteins were stored at –20°C for further use. Size exclusion coupled multiangle light scattering confirmed the dimeric assembly of purified proteins (Figure 1—figure supplement 2), which were used for SAXS and HDX-MS experiments mentioned below.
 
-## Small-angle X-ray scattering
+### Small-angle X-ray scattering
 
 For SAXS analysis, H3 was diluted to 3.4 mg/ml, H7 was diluted to 3.4 mg/ml, H18 was diluted to 2.8 mg/ml, AL55 was diluted to 2.6 mg/ml, M7 was diluted to 3.6 mg/ml, in 20 mM Tris-HCl, 150 mM NaCl, pH 8. H3, H7, and M7 batch data were collected at the P12 BioSAXS beamline of the EMBL Hamburg Synchrotron (Blanchet et al., 2015), while AL55 batch data and H18 and M10 SEC data were collected at the BM29 BioSAXS beamline of the ESRF, Grenoble (Pernot et al., 2010). For SEC-SAXS, H18 and M10 were injected into a superdex 200 increase 10/300 GL column previously equilibrated in 20 mM Tris-HCl, 150 mM NaCl, pH 8, at a concentration of 2.8 mg/ml and 6.7 mg/ml, respectively (see also Figure 1—figure supplement 3). SAXS data were processed using programs PRIMUS and GNOM within the ATSAS package (Manalastas-Cantos et al., 2021). Data are deposited in the SASBDB (Valentini et al., 2015) and available with accession codes SASDVL4, SASDVM4, SASDVN4, SASDVK4, SASDVP4, and SASDVQ4.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 The available crystallographic structures of H3, H7, and M7 (PDB: 5mtl, 5muh, and 5mvg, respectively; Oberti et al., 2017) were used as starting conformations, using Modeller to add missing residues (Webb and Sali, 2016). H18 and AL55 were modeled by homology modeling using SwissModel (Waterhouse et al., 2018), while M10 was modeled using AF2 (Jumper et al., 2021). Simulations were performed using GROMACS 2019 (Abraham et al., 2015) and the PLUMED2 software (Tribello et al., 2014; Bonomi and Camilloni, 2017; Bonomi, 2019), using AMBER-DES force field and TIP4P-D water (Piana et al., 2020; Piana et al., 2015). During in-vacuum minimization, RMSD (Root mean square deviation)-restraints were imposed to enhance the symmetry between the two constant and the two variable domains. The systems were solvated in a periodic dodecahedron box, initially 1.2 nm larger than the protein in each direction, neutralized with Na and Cl ions to reach a salt concentration of 10 mM, then minimized and equilibrated at the temperature of 310 K and pressure of 1 atm using the Berendsen thermostat and barostat. Two independent 900-ns-long plain MD simulations were run to generate reliable and independent starting conformations for the M&M simulations (Bonomi et al., 2016b; Bonomi et al., 2016a; Löhr et al., 2017). Also, 30 conformations were extracted from each simulation and duplicated by inverting the two chains to obtain 60 starting conformations symmetrically distributed with respect to chain inversion.
 
 M&M production simulations were run in duplicate using 60 replicas, each replica evolved for ~1 μs (Table 2). Simulations were performed in the NPT ensemble maintaining the temperature at 310 K with the Bussi thermostat (Bussi et al., 2007) and the pressure of 1 atm with the Parrinello–Rahman barostat Parrinello and Rahman, 1981; the electrostatic was treated using the particle mesh Ewald scheme with a short-range cut‐off of 0.9 nm, and van der Waals interaction cut‐off was set to 0.9 nm. To reduce the computational cost, the hydrogen mass repartitioning scheme was used (Hopkins et al., 2015): the mass of heavy atoms was repartitioned into the bonded hydrogen atoms using the heavyh flag in the pdb2gmx tool, and the LINCS algorithm was used to constraint all bonds, allowing to use a time step of 5 fs. In these simulations, Parallel Bias Metadynamics (Pfaendtner and Bonomi, 2015) was used to enhance the sampling, combined with well-tempered metadynamics and the multiple-walker scheme, where Gaussians with an initial height of 1.0 kJ/mol were deposited every 0.5 ps using a bias factor of 10. Five CVs(Collective Variable) were biased, including combinations of phi/psi dihedral angles of the linker regions (i.e., residues connecting variable and constant domains) in the two chains, combinations of chi dihedral angles of the linker regions in the two chains, combination of inter-domain contacts between the variable and the constant domains. The width of the Gaussians was 0.07, 0.12, and 120 for the combination of phi/psi, of chi dihedral angles and combination of contacts, respectively. Metainference was used to include SAXS restraints, using the hySAXS hybrid approach described in Paissoni et al., 2020, Paissoni and Camilloni, 2021, and Ballabio et al., 2023. A set of 13 representative SAXS intensities at different scattering angles, ranging between 0.015 Å−1 and 0.25 Å−1 and equally spaced, was used as restraints. These intensities were extracted from experimental data after performing regularization with the Distance Distribution tool of Primus, based on Gnom (Manalastas-Cantos et al., 2021). Metainference was applied every five steps using a single Gaussian noise per data point and sampling a scaling factor between experimental and calculated SAXS intensities with a flat prior between 0.5 and 1.5. The aggregate sampling from the 60 replicas was reweighted using the final metadynamics bias to obtain a conformational ensemble where each conformation has an associated statistical weight (Branduardi et al., 2012). Convergence and error estimates were assessed by the inspection of the two replicated M&M run. SAXS data were then recalculated using crysol (Manalastas-Cantos et al., 2021). All relevant simulation data are available on Zenodo (cf. Dataset S1 in Supplementary file 1).
 
-## Hydrogen-deuterium mass exchange spectrometry
+### Hydrogen-deuterium mass exchange spectrometry
 
 SYNAPT G2-HDMS system (Waters Corporation, USA) equipped with a LEAP robotic liquid handler was used to perform HDX-MS measurements in a fully automated mode as described previously (Puri and Hsu, 2022; Ko et al., 2019; Masson et al., 2019; Puri et al., 2022). The data collection was carried out by a 20-fold dilution of H3, H7, AL55, and M10 proteins (100 µM) with the labeling buffer 1× phosphate-buffered saline prepared in D2O (pD 7.4) to trigger HDX for 0, 0.5, 1,10, 30, 120, and 240 min at 25°C in technical triplicates. Each reaction was quenched by mixing the labeled protein with quench buffer (50 mM sodium phosphate, 250 mM TCEP(tris(2-carboxyethyl)phosphine), 3.0 M GdnHCl [pH 2]) in a 1:1 ratio at 0°C. Online digestion was then performed using an immobilized pepsin digestion column (Waters Enzymate BEH Pepsin, 2.1 × 30 mm). The digested peptides were trapped using a C18 trapping column (Acquity BEH VanGuard 1.7 µm, 2.1 × 5.0 mm) and separated by a linear acetonitrile gradient of 5–40%. Protein Lynx Global Server (PLGS) and DynamX (Waters Corporation) were used to identify the individual peptides, and subsequently, data processing using parameters: maximum peptide length of 25, the minimum intensity of 1000; minimum ion per amino acid of 0.1; maximum MH+ error of 5 ppm; and a file threshold of 3. A reference molecule [(Glu1)-fibrinopeptide B human (CAS# 103213-49-6, Merck, USA)] was used to lock mass with an expected molecular weight of 785.8426 Da. The obtained peptide coverage of H3, H7, AL55, and M10 was 98.6, 92.5, 98.6, and 99.1%, respectively, with a redundancy of >4.0. Backbone amide groups exhibited a relative deuterium uptake (with respect to the zero exchange time data) of 0–30% within 4 h of exchange time. The relative deuterium uptake data at different HDX times were then used to generate heat maps for each amino acid. The obtained data were mapped on individual protein structures in a gradient of blue–white–red showing 0–30% of uptake, respectively (DeLano, 2025). Red denotes the dynamic peptides, while peptide colors in blue are rigid. The common peptide analysis between different model LCs was not performed in this analysis as they all generate different peptides due to both sequence heterogeneity in LCs, especially in the VL domain, and non-specific cleavage of pepsin enzyme used to generate peptides after deuterium exchanged for MS analysis. Therefore, all interpretation was done on individual relative exchange data.

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.36405.001 The earliest developmental origins of dysmorphologies are poorly understood in many congenital diseases. They often remain elusive because the first signs of genetic misregulation may initiate as subtle changes in gene expression, which are hard to detect and can be obscured later in development by secondary effects. Here, we develop a method to trace back the origins of phenotypic abnormalities by accurately quantifying the 3D spatial distribution of gene expression domains in developing organs. By applying Geometric Morphometrics to 3D gene expression data obtained by Optical Projection Tomography, we determined that our approach is sensitive enough to find regulatory abnormalities that have never been detected previously. We identified subtle but significant differences in the gene expression of a downstream target of a Fgfr2 mutation associated with Apert syndrome, demonstrating that these mouse models can further our understanding of limb defects in the human condition. Our method can be applied to different organ systems and models to investigate the etiology of malformations.
+The earliest developmental origins of dysmorphologies are poorly understood in many congenital diseases. They often remain elusive because the first signs of genetic misregulation may initiate as subtle changes in gene expression, which are hard to detect and can be obscured later in development by secondary effects. Here, we develop a method to trace back the origins of phenotypic abnormalities by accurately quantifying the 3D spatial distribution of gene expression domains in developing organs. By applying Geometric Morphometrics to 3D gene expression data obtained by Optical Projection Tomography, we determined that our approach is sensitive enough to find regulatory abnormalities that have never been detected previously. We identified subtle but significant differences in the gene expression of a downstream target of a Fgfr2 mutation associated with Apert syndrome, demonstrating that these mouse models can further our understanding of limb defects in the human condition. Our method can be applied to different organ systems and models to investigate the etiology of malformations.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Here, we present precise phenotyping of the limbs of newborn and embryonic speci
 
 ## Results
 
-## Apert syndrome mice present limb malformations at birth
+### Apert syndrome mice present limb malformations at birth
 
 Previous studies have reported that most Apert syndrome mice do not show obvious abnormalities of the limbs (Chen et al., 2003), and thus focused their molecular analyses on the skull (Wang et al., 2010). Histopathological analyses in Apert syndrome mice revealed overall limb shortening resulting from abnormal osteogenic differentiation, but no signs of limb disproportion or syndactyly (Wang et al., 2005; Wang et al., 2010). Syndactyly has only been reported in three specimens of an outbred knock-in Fgfr2+/P253R model (Yin et al., 2008), but no experimental analyses were performed to further explain why the FGFR2 mutation did not affect limb development in all the specimens within the sample.
 
@@ -52,19 +52,241 @@ As a further test of whether or not the Fgfr2 P253R mutation affects limb develo
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig1-v2.jpg)
 
-**Figure 1.:** Fgfr2 newborn mice (+/P253RP0) and unaffected littermates.(A) Mouse skeleton at P0. 3D isosurface reconstruction of the skeleton of an unaffected littermate obtained from a high-resolution µCT scan. (B–F) Anatomical landmarks recorded on microCT scans of Apert syndrome mice at P0. (B) Autopod (hand). Landmarks were recorded at the midpoint of the proximal and distal tips of the distal, mid and proximal phalanges (P1–P28) and the metacarpals (P29–P38). Proximal phalanx I, middle phalanx V, and metacarpal I are not displayed because these bones have not yet mineralized at P0 and could not be visualized in many specimens. (C) Zeugopod. Landmarks were recorded at the midpoint of the proximal and distal tips of the radius (R1–R2) and ulna (U1–U2). (D) Stylopod. Landmarks were recorded at the midpoint of the proximal and distal tips of the humerus (H1–H2), as well as at the tip of the deltoid process (H3) (Figure 1—source data 1). (E) Scapula. Landmarks were recorded at the most superior and inferior lateral points of the scapula (S1–S2), the most posterior point of the spine (S3), the most antero-medial point of the acromion process (S4) and the medial, superior and inferior points of the glenoid cavity (S5–S7) (Figure 1—source data 2). (F) Clavicle. Landmarks were recorded at the medial point of the sternal and the acromial ends (C1–C2). (G) Length and volume differences in the forelimbs of Apert syndrome mouse models. Schematic representation of the forelimb of a P0 mouse showing, in different colors, statistically significant differences in bone length and volume (as measured by two-tailed one-way ANOVA or Mann-Whitney U-test) in Fgfr2 mice and unaffected littermates, as specified in +/P253RTable 1. Longer/shorter refers to length, whereas larger/smaller refers to volume. (H, I) Shape differences in the forelimbs of Apert syndrome mouse models. Scatterplots of PC1 and PC2 scores based on Procrustes analysis of anatomical landmark locations representing the shape of the left humerus (H) and the left scapula (I) of unaffected (N = 10) and mutant (N = 12) littermates of Apert syndrome mouse models (Figure 1—source data 1 and Figure 1—source data 2). Convex hulls represent the range of variation within each group of mice.10.7554/eLife.36405.004Figure 1—source data 1.This zip archive contains the i) raw landmark coordinates registered to capture the shape of the humerus, as defined in Figure 1D; ii) the estimated centroid size and long-centroid size; iii) the Procrustes coordinates after Generalized Procrustes analysis (GPA); and iv) the PC scores resulting from the Principal Component Analysis (PCA) displayed in Figure 1H.10.7554/eLife.36405.005Figure 1—source data 2.This zip archive contains the (i) raw landmark coordinates registered to capture the shape of the scapula, as defined in Figure 1E; (ii) the estimated centroid size and long-centroid size; iii) the Procrustes coordinates after Generalized Procrustes Analysis (GPA); and iv) the PC scores resulting from the Principal Component Analysis (PCA) displayed in Figure 1I.
+**Figure 1.:** (A) Mouse skeleton at P0. 3D isosurface reconstruction of the skeleton of an unaffected littermate obtained from a high-resolution µCT scan. (B–F) Anatomical landmarks recorded on microCT scans of Apert syndrome mice at P0. (B) Autopod (hand). Landmarks were recorded at the midpoint of the proximal and distal tips of the distal, mid and proximal phalanges (P1–P28) and the metacarpals (P29–P38). Proximal phalanx I, middle phalanx V, and metacarpal I are not displayed because these bones have not yet mineralized at P0 and could not be visualized in many specimens. (C) Zeugopod. Landmarks were recorded at the midpoint of the proximal and distal tips of the radius (R1–R2) and ulna (U1–U2). (D) Stylopod. Landmarks were recorded at the midpoint of the proximal and distal tips of the humerus (H1–H2), as well as at the tip of the deltoid process (H3) (Figure 1—source data 1). (E) Scapula. Landmarks were recorded at the most superior and inferior lateral points of the scapula (S1–S2), the most posterior point of the spine (S3), the most antero-medial point of the acromion process (S4) and the medial, superior and inferior points of the glenoid cavity (S5–S7) (Figure 1—source data 2). (F) Clavicle. Landmarks were recorded at the medial point of the sternal and the acromial ends (C1–C2). (G) Length and volume differences in the forelimbs of Apert syndrome mouse models. Schematic representation of the forelimb of a P0 mouse showing, in different colors, statistically significant differences in bone length and volume (as measured by two-tailed one-way ANOVA or Mann-Whitney U-test) in Fgfr2+/P253R mice and unaffected littermates, as specified in Table 1. Longer/shorter refers to length, whereas larger/smaller refers to volume. (H, I) Shape differences in the forelimbs of Apert syndrome mouse models. Scatterplots of PC1 and PC2 scores based on Procrustes analysis of anatomical landmark locations representing the shape of the left humerus (H) and the left scapula (I) of unaffected (N = 10) and mutant (N = 12) littermates of Apert syndrome mouse models (Figure 1—source data 1 and Figure 1—source data 2). Convex hulls represent the range of variation within each group of mice.
+
+**Table 1.**
+ Quantitative comparison of mean bone lengths and volumes.Means were computed as the average lengths or volumes of the right and the left bones for Fgfr2+/P253R mutant (N = 12) and Fgfr2+/+ unaffected (N = 10) mice. Data for proximal phalanx I, middle phalanx V, and metacarpal I are not listed because these bones were not present in all of the specimens, as they may not yet be developed at P0. Statistically significant differences as determined by two-tailed one-way ANOVA or Mann-Whitney U-tests are marked with * (P-value<0.05). Statistically significant differences after Bonferroni correction are indicated with **.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Mean bone length (mm ± SD)</th>
+      <th></th>
+      <th colspan="2">Mean bone volume (mm3 ± SD)</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Bone</th>
+      <th>Fgfr2+/+</th>
+      <th>Fgfr2+/P253R</th>
+      <th>P-value</th>
+      <th>Fgfr2+/+</th>
+      <th>Fgfr2+/P253R</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="16">Autopod</td>
+      <td>Distal phalanx I</td>
+      <td>0.11 ± 0.03</td>
+      <td>0.13 ± 0.02</td>
+      <td>0.004**</td>
+      <td>0.0015 ± 0.0008</td>
+      <td>0.0015 ± 0.0008</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>Distal phalanx II</td>
+      <td>0.22 ± 0.03</td>
+      <td>0.21 ± 0.03</td>
+      <td>0.128</td>
+      <td>0.0021 ± 0.0007</td>
+      <td>0.0022 ± 0.0008</td>
+      <td>0.659</td>
+    </tr>
+    <tr>
+      <td>Middle phalanx II</td>
+      <td>0.004 ± 0.003</td>
+      <td>0.01 ± 0.004</td>
+      <td>0.336</td>
+      <td>0.00002 ± 0.00002</td>
+      <td>0.00003 ± 0.00002</td>
+      <td>0.759</td>
+    </tr>
+    <tr>
+      <td>Proximal phalanx II</td>
+      <td>0.15 ± 0.01</td>
+      <td>0.14 ± 0.01</td>
+      <td>0.057</td>
+      <td>0.0054 ± 0.0011</td>
+      <td>0.0053 ± 0.0014</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Distal phalanx III</td>
+      <td>0.26 ± 0.006</td>
+      <td>0.24 ± 0.01</td>
+      <td>0.068</td>
+      <td>0.0034 ± 0.0008</td>
+      <td>0.0033 ± 0.0017</td>
+      <td>0.796</td>
+    </tr>
+    <tr>
+      <td>Middle phalanx III</td>
+      <td>0.10 ± 0.006</td>
+      <td>0.10 ± 0.006</td>
+      <td>0.243</td>
+      <td>0.0019 ± 0.0009</td>
+      <td>0.0022 ± 0.0013</td>
+      <td>0.436</td>
+    </tr>
+    <tr>
+      <td>Proximal phalanx III</td>
+      <td>0.204 ± 0.02</td>
+      <td>0.18 ± 0.03</td>
+      <td>0.001**</td>
+      <td>0.0087 ± 0.0003</td>
+      <td>0.0073 ± 0.0004</td>
+      <td>0.016*</td>
+    </tr>
+    <tr>
+      <td>Distal phalanx IV</td>
+      <td>0.24 ± 0.006</td>
+      <td>0.19 ± 0.02</td>
+      <td>0.061</td>
+      <td>0.0024 ± 0.0009</td>
+      <td>0.0024 ± 0.0014</td>
+      <td>0.923</td>
+    </tr>
+    <tr>
+      <td>Middle phalanx IV</td>
+      <td>0.06 ± 0.009</td>
+      <td>0.07 ± 0.01</td>
+      <td>0.338</td>
+      <td>0.0009 ± 0.0002</td>
+      <td>0.0014 ± 0.0002</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Proximal phalanx IV</td>
+      <td>0.20 ± 0.01</td>
+      <td>0.20 ± 0.02</td>
+      <td>0.412</td>
+      <td>0.0080 ± 0.0016</td>
+      <td>0.0075 ± 0.0021</td>
+      <td>0.358</td>
+    </tr>
+    <tr>
+      <td>Distal phalanx V</td>
+      <td>0.09 ± 0.01</td>
+      <td>0.08 ± 0.01</td>
+      <td>0.832</td>
+      <td>0.0005 ± 0.00007</td>
+      <td>0.0006 ± 0.0001</td>
+      <td>0.769</td>
+    </tr>
+    <tr>
+      <td>Proximal phalanx V</td>
+      <td>0.14 ± 0.01</td>
+      <td>0.15 ± 0.02</td>
+      <td>0.027*</td>
+      <td>0.0031 ± 0.0007</td>
+      <td>0.0036 ± 0.0012</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td>Metacarpal II</td>
+      <td>0.39 ± 0.02</td>
+      <td>0.41 ± 0.02</td>
+      <td>0.034*</td>
+      <td>0.0270 ± 0.0028</td>
+      <td>0.0265 ± 0.0034</td>
+      <td>0.586</td>
+    </tr>
+    <tr>
+      <td>Metacarpal III</td>
+      <td>0.49 ± 0.03</td>
+      <td>0.52 ± 0.03</td>
+      <td>0.004*</td>
+      <td>0.0398 ± 0.0043</td>
+      <td>0.0382 ± 0.0062</td>
+      <td>0.342</td>
+    </tr>
+    <tr>
+      <td>Metacarpal IV</td>
+      <td>0.43 ± 0.02</td>
+      <td>0.45 ± 0.03</td>
+      <td>0.011*</td>
+      <td>0.0312 ± 0.0033</td>
+      <td>0.0291 ± 0.0048</td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td>Metacarpal V</td>
+      <td>0.22 ± 0.01</td>
+      <td>0.22 ± 0.02</td>
+      <td>0.571</td>
+      <td>0.0120 ± 0.0019</td>
+      <td>0.0124 ± 0.0023</td>
+      <td>0.458</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Zeugopod</td>
+      <td>Radius</td>
+      <td>2.29 ± 0.02</td>
+      <td>2.22 ± 0.01</td>
+      <td>0.003*</td>
+      <td>0.3187 ± 0.0292</td>
+      <td>0.3558 ± 0.0334</td>
+      <td>0.001**</td>
+    </tr>
+    <tr>
+      <td>Ulna</td>
+      <td>2.76 ± 0.08</td>
+      <td>2.64 ± 0.07</td>
+      <td>0.000**</td>
+      <td>0.4999 ± 0.0417</td>
+      <td>0.5366 ± 0.0766</td>
+      <td>0.010*</td>
+    </tr>
+    <tr>
+      <td>Stylopod</td>
+      <td>Humerus</td>
+      <td>1.65 ± 0.01</td>
+      <td>1.62 ± 0.007</td>
+      <td>0.007*</td>
+      <td>0.9950 ± 0.0764</td>
+      <td>1.1444 ± 0.0649</td>
+      <td>0.001**</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Not derived from limb bud</td>
+      <td>Scapula</td>
+      <td>2.69 ± 0.08</td>
+      <td>2.75 ± 0.06</td>
+      <td>0.013*</td>
+      <td>1.0757 ± 0.0733</td>
+      <td>1.2184 ± 0.0777</td>
+      <td>0.001**</td>
+    </tr>
+    <tr>
+      <td>Clavicle</td>
+      <td>2.47 ± 0.06</td>
+      <td>2.34 ± 0.09</td>
+      <td>0.001**</td>
+      <td>0.2214 ± 0.0147</td>
+      <td>0.2811 ± 0.0232</td>
+      <td>0.001**</td>
+    </tr>
+  </tbody>
+</table>
 
 The Principal Components Analysis (PCA) based on the shape of the humerus did not show marked shape differences between unaffected and Fgfr2+/P253R Apert syndrome mice (Figure 1H). However, the PCA of the scapula indicated a clear morphological differentiation between these two groups (Figure 1I). The scapula of Fgfr2+/P253R Apert syndrome mice presented a more robust phenotype, with wider and longer scapulae, in comparison to that of their unaffected littermates.
 
 Overall, these size and shape differences demonstrate that Fgfr2+/P253R Apert syndrome mice present widespread and significant limb dysmorphologies at P0 that were not previously reported and would not have been revealed without microCT scanning and quantitative statistical testing. Some defects, such as shoulder anomalies and short humeri, have a direct correspondence with the human phenotype (Park et al., 1995). In newborn mice, however, we did not detect any clear sign of syndactyly, which is the most prominent limb defect in people with Apert syndrome (Cohen and Kreiborg, 1995; Holten et al., 1997). As the forelimb of mice is not yet completely ossified at P0 and because Fgfr2+/P253R mutant littermates die shortly after birth, we could not assess whether other limb abnormalities might appear later in development.
 
-## A quantitative morphometric method to assess embryonic gene expression patterns
+### A quantitative morphometric method to assess embryonic gene expression patterns
 
 To determine the earliest developmental basis of the limb anomalies quantified in newborn mice, we developed a quantitative method to explore early embryonic limb development. First, to visualize the expression pattern of a downstream target of Fgfr2, we obtained OPT scans of Fgfr2+/P253R Apert syndrome mouse embryos that had been analyzed with WMISH to reveal Dusp6 expression (Figure 2). Qualitative assessment of the 3D reconstructions showed that Dusp6 was widely expressed throughout the embryo from embryonic day (E)10.5 to E11.5, with highest intensity in the limbs, the head and the somites (Figure 2). Dusp6 was also expressed in the heart with moderate intensity. By comparing the distribution of the Dusp6 gene expression pattern visually, it was possible to distinguish between embryos at the E10.5 and the E11.5 stages of development. At E10.5, Dusp6 was prominently expressed in the facial prominences and in the forming somites along most of the craniocaudal segment, whereas at E11.5, the expression of Dusp6 was more widespread in the brain and restricted to the caudal somites. Focusing on the limbs, the expression of Dusp6 at the two different stages was also readily distinguishable, with Dusp6 expression domains thinning into a more extended domain along the limb outline as the limb buds grow from E10.5 to E11.5 (Figure 2). The limb bud expression patterns of Fgfr2+/P253R mutant and unaffected littermates were not distinguishable because of the large amount of developmental variation within litters (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig2-v2.jpg)
 
-**Figure 2.:** Dusp6 gene expression in unaffected and Fgfr2 mouse embryos at E10.5 and E11.5.+/P253ROPT scans of embryos WMISH stained for Dusp6 revealed the anatomical location of Dusp6 gene expression (shown in yellow). For each stage, the main expression domains are highlighted on the left for anatomical reference on a lateral view of a 3D reconstruction of a Fgfr2 unaffected embryo (fb, forebrain; fl, forelimb; hb, hindbrain; hl, hindlimb; ht, heart; is, isthmus; lnp, lateral nasal process; md, mandibular prominence; mnp, medial nasal process; mx, maxillary prominence; so, somites). On the right, 3D reconstructions of three unaffected and three +/+Fgfr2 mutant embryos from the same litter are displayed to represent the high degree of variation in developmental age within litters. Embryos are not to scale. Original 2D images of the +/P253RDusp6 WMISH experiments are available in Figure 2—source data 1.10.7554/eLife.36405.008Figure 2—source data 1.Dusp6 WMISH experiments.This zip archive contains pictures, taken using a Leica MX16F microscope, of the right and left sides of the mouse embryos that underwent Dusp6 WMISH. Folders are organized by developmental stage and genotype.
+**Figure 2.:** OPT scans of embryos WMISH stained for Dusp6 revealed the anatomical location of Dusp6 gene expression (shown in yellow). For each stage, the main expression domains are highlighted on the left for anatomical reference on a lateral view of a 3D reconstruction of a Fgfr2+/+ unaffected embryo (fb, forebrain; fl, forelimb; hb, hindbrain; hl, hindlimb; ht, heart; is, isthmus; lnp, lateral nasal process; md, mandibular prominence; mnp, medial nasal process; mx, maxillary prominence; so, somites). On the right, 3D reconstructions of three unaffected and three Fgfr2+/P253R mutant embryos from the same litter are displayed to represent the high degree of variation in developmental age within litters. Embryos are not to scale. Original 2D images of the Dusp6 WMISH experiments are available in Figure 2—source data 1.
 
 Quantitative testing was thus required to allow the more accurate evaluation of limb alterations that are potentially associated with Apert syndrome but visually undetectable. We developed a method for 3D shape analysis of the limb and the associated gene expression pattern of Dusp6 (Figure 3). This protocol enabled us to determine differences in limb size and shape between genotype groups and to assess whether these phenotypic differences are associated with altered gene expression patterns (Figure 3). Our approach uses GM methods to measure directly the limb anatomy and gene expression domains segmented from the 3D reconstructions of the embryo OPT scans. As expression of Dusp6 showed a fuzzy spatial gradient, multiple thresholding was used to define a consistently high gene expression pattern (Figure 3, steps from 1 to 5). After manual and semiautomatic recording of the 3D coordinates of landmarks on the surfaces of the limb and the gene expression domains blinded to group allocation (Figure 3, step 6; Video 1), multivariate statistical analyses were performed to explore shape and size variation and covariation patterns for the limb morphology and the Dusp6 domain (Figure 3, steps 7 and 8).
 
@@ -72,17 +294,358 @@ Quantitative testing was thus required to allow the more accurate evaluation of 
 
 **Figure 3.:** Mouse embryos between E10.5 and E11.5 were analyzed with WMISH to reveal the expression of Dusp6 (1), and then cleared with BABB, and OPT scanned using both fluorescence and transmission light (2). The external surface of the embryo was obtained from the 3D reconstruction of the fluorescence scan (2). Multiple thresholding of the transmission scan by choosing different levels of grey values as shown by the histogram allowed the visualization of gene expression patterns at different intensities (3). Moderate gene expression (shown in green) was displayed as the isosurface obtained using a threshold of the grey value computed as 2/3 of the last grey value showing the Dusp6 expression domain (3). High gene expression (shown in yellow) was displayed as the isosurface obtained using a threshold of the grey value computed as 1/3 of the last grey value showing the Dusp6 expression domain (3). From the whole mouse embryo isosurfaces, all four limb buds were segmented (5A). From the high gene expression isosurface, the Dusp6 domains from all of the available limbs were segmented (5B). Maximum curvature patterns were displayed to optimize landmark recording (5). For each limb, we captured the shape and size of the limb bud (6A) and the underlying high Dusp6 gene expression pattern (6B), recording the 3D coordinates of anatomical landmarks (yellow dots), curve semi-landmarks (red dots) and surface semi-landmarks (pink dots). Anatomical and curve landmarks were recorded manually on each limb. Surface landmarks were recorded on one template limb and interpolated onto target limbs (Video 1). Landmark coordinates were the input for Geometric Morphometric (GM) quantitative shape analysis (7, 8) that was used to superimpose the landmark data (GPA, Generalized Procrustes Analysis), to compute limb size (centroid size), and to explore both shape variation within limbs and gene expression domains within litters by Principal Component Analysis (PCA). Finally, the covariation patterns for the shape of the limb and the shape of the gene expression domain were also explored using the Partial Least Squares (PLS) method.
 
-## The first signs of limb dysmorphology in Apert syndrome
+![Video 1.](https://cdn.elifesciences.org/articles/36405/elife-36405-video1.mp4.jpg)
+
+**Video 1.:** In this video, we show a superimposed view of a fluorescent and a transmission OPT scan of the same E11.5 mouse embryo, which was analyzed with WMISH to reveal the gene expression of Dusp6, a downstream target of Fgf signaling. The surface of the mouse embryo rotating around its central axis was obtained from the 3D reconstruction of an OPT scan based on fluorescence light. The expression pattern of the Dusp6 gene was segmented from the transmission OPT scan using multiple thresholding. The imaging revealed the anatomical location of regions of high Dusp6 gene expression (shown in purple). To compare unaffected and Fgfr2+/P253R mouse embryos and to detect statistically significant differences between them, we collected landmarks along the surface of the gene expression domain (yellow dots) and the limb bud (green dots), which capture the size and shape of the limb and the underlying gene expression domain to a highly accurate level of detail. Further quantitative analyses provided insight into the origins of limb malformations in Apert syndrome.
+
+### The first signs of limb dysmorphology in Apert syndrome
 
 As gene expression patterns are highly dynamic and rapidly change in size, shape and position within a few hours as development progresses (Martínez-Abadías et al., 2016), individual limb buds from Fgfr2+/P253R mutant embryos and their unaffected littermates aged between E10.5 and E11.5 were staged using a fine-resolution staging system (https://limbstaging.embl.es) (Musy et al., 2018). The staging results showed that the analyzed limbs represent a temporal continuum throughout development, with no significant differences between the staging of unaffected and mutant littermates of the same litter (Figure 4). We partitioned the time span from E10 to E11.5 into four periods, each one approximately representing 12 hr of development (see Table 2 and 'Materials and methods' for further details on sample composition).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig4-v2.jpg)
 
-**Figure 4.:** All of the limbs were individually staged using our publicly available web-based staging system (https://limbstaging.embl.es). The stage of the limb bud was estimated after alignment and shape comparison of the spline with an existing dataset with a reproducibility of ±2 hr. As both Litter 1 and Litter 2 comprised limbs between E10 and E10.5, we pooled these limbs into the 'Early' period. Litter 3, comprising limbs between E10 and E11, represented the 'Mid' developmental period. And finally, Litter 4, which included limbs between E11 and E11.5, was considered as the 'Late' period. In subsequent analyses, forelimbs and hindlimbs were analyzed separately, as specified in Table 2. Increasing color intensities in dots represent an increasing number of limbs with the same staging result. Individual scores are available in Figure 4—source data 1.10.7554/eLife.36405.012Figure 4—source data 1.Table containing the individual scores obtained from the staging system and used to produce the graph in Figure 4.
+**Figure 4.:** All of the limbs were individually staged using our publicly available web-based staging system (https://limbstaging.embl.es). The stage of the limb bud was estimated after alignment and shape comparison of the spline with an existing dataset with a reproducibility of ±2 hr. As both Litter 1 and Litter 2 comprised limbs between E10 and E10.5, we pooled these limbs into the 'Early' period. Litter 3, comprising limbs between E10 and E11, represented the 'Mid' developmental period. And finally, Litter 4, which included limbs between E11 and E11.5, was considered as the 'Late' period. In subsequent analyses, forelimbs and hindlimbs were analyzed separately, as specified in Table 2. Increasing color intensities in dots represent an increasing number of limbs with the same staging result. Individual scores are available in Figure 4—source data 1.
+
+**Table 2.**
+ Sample composition by genotype and period.Fgfr2+/+: unaffected littermates; Fgfr2+/P253R: Apert syndrome mutant littermates. Developmental periods were defined according to limb staging, as shown in Figure 4. Hindlimbs and forelimbs were analyzed separately because, in the same embryo, hindlimbs are delayed in development in comparison to forelimbs by about 6–8 hr. We thus presented in the main text the results from groupings highlighted in color, including those for the hindlimbs from the early and mid groups, as well as those for the forelimbs from the mid and the late groups. This represents a continuous time span of limb development, from E10 to E11.5, divided into four periods of 12 hr each. Results from the complete dataset that considers hindlimbs and forelimbs from each litter separately are available in Figures 5 and 6 (Figure 5—figure supplement 2, Figure 5—figure supplement 3, Figure 6—figure supplement 1 and Figure 6—figure supplement 2).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Genotype</th>
+      <th rowspan="2">Period</th>
+      <th rowspan="2">N limb</th>
+      <th rowspan="2">N gene</th>
+      <th colspan="4">LIMB</th>
+    </tr>
+    <tr>
+      <th colspan="2">Hindlimb (N = 34)</th>
+      <th colspan="2">Forelimb (N = 46)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">Early (~E10)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Limb</td>
+      <td>Gene</td>
+      <td>Limb</td>
+      <td>Gene</td>
+    </tr>
+    <tr>
+      <td>Fgfr2+/+</td>
+      <td rowspan="3">EARLY: E10-E10.5</td>
+      <td>30</td>
+      <td>24</td>
+      <td>13</td>
+      <td>9</td>
+      <td>17</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Fgfr2+/P253R</td>
+      <td>16</td>
+      <td>15</td>
+      <td>11</td>
+      <td>9</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Subtotal</td>
+      <td>46</td>
+      <td>39</td>
+      <td>24</td>
+      <td>18</td>
+      <td>22</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">Mid early (~E10.5)</td>
+      <td colspan="2">Mid late (~E11)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Limb</td>
+      <td>Gene</td>
+      <td>Limb</td>
+      <td>Gene</td>
+    </tr>
+    <tr>
+      <td>Fgfr2+/+</td>
+      <td rowspan="3">MID: E10.5-E11</td>
+      <td>15</td>
+      <td>10</td>
+      <td>7</td>
+      <td>3</td>
+      <td>8</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Fgfr2+/P253R</td>
+      <td>16</td>
+      <td>9</td>
+      <td>8</td>
+      <td>3</td>
+      <td>8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Subtotal</td>
+      <td>31</td>
+      <td>19</td>
+      <td>15</td>
+      <td>6</td>
+      <td>16</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">Late (~E11.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Limb</td>
+      <td>Gene</td>
+      <td>Limb</td>
+      <td>Gene</td>
+    </tr>
+    <tr>
+      <td>Fgfr2+/+</td>
+      <td rowspan="3">LATE: E11-E11.5</td>
+      <td>8</td>
+      <td>8</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Fgfr2+/P253R</td>
+      <td>15</td>
+      <td>14</td>
+      <td>7</td>
+      <td>6</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Subtotal</td>
+      <td>23</td>
+      <td>22</td>
+      <td>11</td>
+      <td>10</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td>100</td>
+      <td>80</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We first focused on analyzing limb dysmorphology, aiming to determine the youngest stage at which there were morphological differences between mutant and unaffected limbs. To find the earliest moment when differences arise, we traced limb development backwards in time using Geometric Morphometric methods, starting first with embryos from the oldest period (as the differences would be easier to find) and from there proceeding towards the earlier (younger) periods. In this way, we should be able to identify confidently the initiation of limb dysmorphogenesis associated with the Fgfr2 P253R mutation.
 
 During the 'Late' period, we detected that Fgfr2+/P253R limb buds were already clearly separated from those of their unaffected littermates in the morphospace defined by the Principal Component Analysis (PCA) (Figure 5A, Figure 5—figure supplement 1). Relative to those of their unaffected littermates, the limbs of Fgfr2+/P253R mice presented subtle phenotypic limb differences: limbs were shorter and thicker, with limited development of the wrist (Figure 5A). Quantitative comparison of limb size showed that the limbs of mutant mice were also significantly smaller than those of their unaffected littermates (Table 3 and Figure 6A). Interestingly, in this 'Late' period the limbs of mutant mice were smaller than unaffected littermates (although this was not the case in earlier periods). Overall, these results confirmed that the Fgfr2 P253R Apert syndrome mutation has an effect on limb development, altering both the size and shape of the limbs. These subtle but significant phenotypic differences would most probably have remained undetected by a qualitative approach. Our quantitative approach revealed their statistical significance and pointed to the origin of the Apert syndrome limb malformation prior to E11.5, before the 'Late' period.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig5-v2.jpg)
+
+**Figure 5.:** Principal Component Analysis based on the Procrustes-based semi-landmark analysis was used to assess the shape of the limbs and the corresponding Dusp6 expression domains for each developmental period (Figure 5—figure supplement 1). Each period was analyzed separately for the shape of the limb (A–D) and the Dusp6 expression domain (E–H), as specified in the 'Materials and methods' and in Table 2. Scatterplots of PC1 and PC2 axes with the corresponding percentages of total morphological variation explained are displayed for each analysis, along with the morphings associated with the negative, mid and positive values of the PC axis that separates mutant and unaffected littermates (PC1 or PC2, as highlighted in bold black letters in the corresponding axis). Morphings are displayed in grey tones when the analysis showed no differentiation between mutant and unaffected littermates. Morphings are displayed in color when the analysis revealed differentiation between mouse groups (blue: unaffected littermates; pink: mutant littermates). Limb buds and Dusp6 domains are not to scale and are oriented with the distal aspect to the left, the proximal aspect to the right, the anterior aspect at the top and the posterior aspect at the bottom of all images. Convex hulls represent the ranges of variation within each group of mice. Individual scores are available in Figure 5—source data 1. Results from the complete dataset analyzing hindlimbs (Figure 5—figure supplement 2, Figure 5—figure supplement 2—source data 1) and forelimbs (Figure 5—figure supplement 3, Figure 5—figure supplement 3—source data 1) from each litter separately are also available.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** In the limb, we manually recorded the 3D coordinates of five anatomical landmarks (A): L1–L2, the most medial points on the anterior and the posterior sides of wrist, collected along the curve that divides the limb on the dorsal and ventral sides; L3, the most distal point of the limb, collected along the curve that divides the limb on the dorsal and ventral sides; and L4–L5, the most superior and inferior points on the dorsal and ventral sides of the limb. We also recorded between 25 and 60 points along the curve that divides the limb on the dorsal and ventral sides to define an outline spline of the limb. Using Viewbox 4, we obtained the 3D coordinates of 19 equidistant points along the outline spline that were considered in further comparative shape analyses to be curve semi-landmarks (LC1–LC19) (B). Finally, we recorded 52 surface semi-landmarks on the dorsal and ventral sides of the limb interpolating the points from a reference limb to each target limb, using the five anatomical landmarks manually recorded as matching points and by minimizing the bending energy (LS1–LS52) (C). In the gene, we manually recorded the 3D coordinates of four anatomical landmarks (D): G1–G2, the points at the most anterior and posterior tips of the gene expression domain; G3-G4, the points at the maximum curvature of the proximal side of the gene expression domain, on the dorsal and the ventral sides (D). (We also recorded 10–30 points along the distal and proximal curves of the gene expression domain at the sagittal plane, and 30–60 points along the outline of the gene expression domain, on its proximal side.) Using Viewbox 4, we obtained the 3D coordinates of eleven equidistant points along the spline of the distal and proximal curves of the gene expression domain (GCd1–GCd11 and GCp1–GCp11) (E and F), and 19 equidistant points along outline of the gene expression domain, on its proximal side (GCo1–GCo19) (G) that were considered in further comparative shape analyses as curve semi-landmarks, and are displayed simultaneously in (H).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Scatterplots of PC1 and PC2 axes with the corresponding percentage of total morphological variation explained are displayed for each analysis, along with morphings associated with the negative, mid and positive values of the PC axis that separates mutant and unaffected littermates (PC1 or PC2, as highlighted in bold black letters in the corresponding axis). Morphings are displayed in grey tones when the analysis shows no differentiation between unaffected and mutant littermates. Morphings are displayed in color when the analysis reveals differentiation between the mouse groups (blue: unaffected littermates; pink: mutant littermates). Limb buds and Dusp6 domains are not to scale and are oriented distally to the left, proximally to the right, anteriorly to the top and posteriorly to the bottom. Convex hulls represent the ranges of variation within each group of mice, as defined in Table 2 and Figure 4. Individual scores are available in Figure 5—figure supplement 2—source data 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Scatterplots of PC1 and PC2 axes with the corresponding percentage of total morphological variation explained are displayed for each analysis, along with morphings associated with the negative, mid and positive values of the PC axis that separates mutant and unaffected littermates (PC1 or PC2, as highlighted in bold black letters in the corresponding axis). Morphings are displayed in grey tones when the analysis shows no differentiation between unaffected and mutant littermates. Morphings are displayed in color when the analysis reveals differentiation between the mouse groups (blue: unaffected littermates; pink: mutant littermates). Limb buds and Dusp6 domains are not to scale and are oriented distally to the left, proximally to the right, anteriorly to the top and posteriorly to the bottom. Convex hulls represent the ranges of variation within each group of mice, as defined in Table 2 and Figure 4. Individual scores are available in Figure 5—figure supplement 3—source data 1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Comparison of limb bud size and Dusp6 volume in unaffected and Fgfr2+/P253R mutant littermates across development (Table 3). Limb size was measured as limb centroid size (A), whereas the size of the Dusp6 expression was measured as the volume of the gene domain (B), as specified in the 'Materials and methods' and in Table 2. Statistically significant differences as revealed by two-tailed t-tests are marked with asterisks, representing the degree of significance: *P-value=0.03, **P-value=0.01. Results from hindlimbs and forelimbs are separately available in Figure 6—figure supplement 1. The association between the size of the limbs and the volume of the Dusp6 domain was assessed separately for forelimbs (C) and hindlimbs (D). Individual scores for all of these analyses are available in Figure 6—source data 1. (E) Time course assessing the morphological integration pattern between the limb phenotype and the shape of the gene expression pattern using partial least squares analyses. Associated shape changes from late to early limb development are shown from morphings associated with the negative, mid and positive values of PLS1, which accounted for almost all of the covariation (97.6% in forelimbs and 99.5% in hindlimbs) between the limb buds and the Dusp6 gene expression domains (Figure 6—figure supplement 2). Limb buds and Dusp6 domains are not shown to scale and are oriented distally to the left, proximally to the right, anteriorly to the top and posteriorly to the bottom. On the right, representing the positive extreme of PLS1 axis, typical early limb buds showed a protruding shape (i.e. short in the proximo-distal axis and symmetrical in the antero-posterior axis) associated with a flat-bean shaped Dusp6 expression zone localized in the distal limb region, underlying the apical ectodermal ridge and spreading proximally towards the dorsal and ventral sides of the limb. On the left, representing the negative extreme of the PLS1 axis, limb buds were elongated in the proximal axis and asymmetric on the antero-posterior axis, with an expansion of the distal limb region and a contraction of the proximal region, at the wrist level. This limb shape, which is typical of more developed limbs, was associated with a Dusp6 expression that was extended underneath the apical ectodermal ridge towards the anterior and the posterior ends of the gene expression zone, but reduced on the dorsal and ventral sides of the limb. Individual scores for all of these analyses are available in Figure 6—figure supplement 2—source data 1. Legends for supplementary figures.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Comparison in hindlimbs (A, C) and forelimbs (B, D) at each developmental period, as defined in Table 2 and Figure 4. Limb size was measured in terms of limb centroid size (μm), whereas the size of the Dusp6 expression zone was measured as the volume of the gene expression domain (μm3). Statistical significant differences as revealed by two-tailed t-tests are marked with asterisks: *P-value<0.05. Individual scores are available in Figure 6—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36405/elife-36405-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Results display the morphings associated with the negative, mid and positive values of PLS1 for hindlimbs (A) and forelimbs (B), which accounted for more than 95% of the covariation between the limb buds and the Dusp6 gene expression domains. Separate PLS analyses for hindlimbs (C) and forelimbs (D) for each developmental group, as defined in Table 2 and Figure 4, are also shown. Formal testing of differences in the intensity of the integration patterns in unaffected and Fgfr2+/P253R mutant mice at each stage was not possible because of sample size limitations, as specified in 'Materials and methods' and in Table 2. Individual scores are available in Figure 6—figure supplement 2—source data 1. Rich media.
+
+**Table 3.**
+ Quantitative comparison of limb size (μm) and Dusp6 volume (μm3) in Fgfr2+/P253R mutant and Fgfr2+/+ unaffected mice.Results from two-sided t-tests are provided separately for forelimbs and hindlimbs and for each developmental group, as defined in Table 2 and Figure 4. Statistically significant differences are marked with * (P-value<0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="5">EARLY</th>
+      <th colspan="5">MID</th>
+      <th colspan="5">LATE</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Fgfr2+/+</th>
+      <th>Fgfr2+/P253R</th>
+      <th>t</th>
+      <th>df</th>
+      <th>P-value</th>
+      <th>Fgfr2+/+</th>
+      <th>Fgfr2+/P253R</th>
+      <th>t</th>
+      <th>df</th>
+      <th>P-value</th>
+      <th>Fgfr2+/+</th>
+      <th>Fgfr2+/P253R</th>
+      <th>t</th>
+      <th>df</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Forelimb</td>
+      <td>Limb size</td>
+      <td>2041.63</td>
+      <td>2274.15</td>
+      <td>6.99</td>
+      <td>18.98</td>
+      <td>&lt;0.0001</td>
+      <td>2728.24</td>
+      <td>2579.69</td>
+      <td>−1.70</td>
+      <td>7.74</td>
+      <td>0.13</td>
+      <td>3311.66</td>
+      <td>3097.72</td>
+      <td>−3.57</td>
+      <td>5.39</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Dusp6 volume</td>
+      <td>18160720</td>
+      <td>18387239</td>
+      <td>0.13</td>
+      <td>13.03</td>
+      <td>0.89</td>
+      <td>23002206</td>
+      <td>27432909</td>
+      <td>1.78</td>
+      <td>9.64</td>
+      <td>0.11</td>
+      <td>24792568</td>
+      <td>29875554</td>
+      <td>2.47</td>
+      <td>9.72</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="5">EARLY</td>
+      <td colspan="5">MID</td>
+      <td colspan="5">LATE</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Fgfr2+/+</td>
+      <td>Fgfr2+/P253R</td>
+      <td>t</td>
+      <td>df</td>
+      <td>P-value</td>
+      <td>Fgfr2+/+</td>
+      <td>Fgfr2+/P253R</td>
+      <td>t</td>
+      <td>df</td>
+      <td>P-value</td>
+      <td>Fgfr2+/+</td>
+      <td>Fgfr2+/P253R</td>
+      <td>t</td>
+      <td>df</td>
+      <td>P-value</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Hindlimb</td>
+      <td>Limb size</td>
+      <td>2280.36</td>
+      <td>2489.62</td>
+      <td>2.68</td>
+      <td>15.76</td>
+      <td>0.02</td>
+      <td>2769.51</td>
+      <td>2589.95</td>
+      <td>−1.74</td>
+      <td>3.03</td>
+      <td>0.18</td>
+      <td>3191.12</td>
+      <td>2955.91</td>
+      <td>−3.44</td>
+      <td>6.73</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Dusp6 volume</td>
+      <td>16294103</td>
+      <td>16277958</td>
+      <td>−0.01</td>
+      <td>15.36</td>
+      <td>0.99</td>
+      <td>23920390</td>
+      <td>23131303</td>
+      <td>−0.19</td>
+      <td>2.45</td>
+      <td>0.86</td>
+      <td>41802827</td>
+      <td>45608477</td>
+      <td>0.52</td>
+      <td>4.14</td>
+      <td>0.63</td>
+    </tr>
+  </tbody>
+</table>
 
 During the 'Mid late' period, the limbs of Fgfr2+/P253R mutant mice were still distinguishable from those of unaffected mice in the morphospace of the PCA (Figure 5B). At this period, the limbs of Fgfr2+/P253R mice lacked the antero-posterior asymmetry and the narrowing of the wrist region more typical of unaffected littermates. Instead, Fgfr2+/P253R mice showed a limb phenotype that was elongated in the proximo-distal axis and thickened in the dorso-ventral axis (Figure 5B), resembling the limb shape of younger unaffected embryos. This shape difference coincided with reduced growth in Fgfr2+/P253R mice, as the limbs of Fgfr2+/P253R mice tended to be smaller than unaffected limbs (Table 3 and Figure 6A). Therefore, significant differences between unaffected and mutant limbs could still be detected during the 'Mid late' period of development and the origins of limb defects associated with Apert syndrome should be sought earlier in development.
 
@@ -90,7 +653,7 @@ The first period during which no significant differences could be detected betwe
 
 Consistent with the above, no further sign of limb shape dysmorphology was detected during the 'Early' period of development (Figure 5D). During this period, there was a great range of developmental variation, with unaffected and Fgfr2+/P253R mutant mice completely overlapping in the morphospace and with all limbs displaying similar incipient bud shapes (Figure 5D). The limbs of Fgfr2+/P253R mice were significantly larger than the limbs of their unaffected littermates (Table 3 and Figure 6A), suggesting that at this early time point, there is a significant effect of the Fgfr2 P253R mutation on limb size but not on limb shape (Figure 6A).
 
-## Fgfr2 Apert syndrome mutation leads to aberrant overexpression of Dusp6 domains
+### Fgfr2 Apert syndrome mutation leads to aberrant overexpression of Dusp6 domains
 
 We next sought to obtain direct evidence of altered genetic regulation that could explain the observed limb phenotype by analyzing the shape dynamics of the expression of Dusp6, a direct target gene of Fgf signaling. As in the limb shape analysis described above, we chose to work backwards in developmental time, first examining the gene expression of Dusp6 in the embryos from the latest period. We found that in the 'Late' period, Dusp6 expression was already different in Fgfr2+/P253R mutant mice and unaffected littermates. The differences were significant both in shape (Figure 5E) and size (Table 3 and Figure 6B). In the limbs of unaffected mice, the Dusp6 expression domain appeared as a thin domain underlying the apical ectodermal ridge, whereas in Fgfr2+/P253R mutant mice, the shape of the Dusp6 domain was expanded in all directions (Figure 5E). Accordingly, the volume of the Dusp6 expression domain was significantly larger in Apert syndrome mice (Table 3 and Figure 6B), even when these mice had significantly smaller limbs (Figure 6A). The Dusp6 expression domain thus grew disproportionately in the limbs of Fgfr2+/P253R mutant mice in the latest period of development (Figure 5E), which is consistent with reports of whole-body size reduction in Fgfr2+/P253R Apert mice and of the over-activation of Fgfr2 signaling by the Apert syndrome mutation (Yu and Ornitz, 2001; Ibrahimi et al., 2001).
 
@@ -100,7 +663,7 @@ During the 'Mid early' period, the separation between unaffected and Fgfr2+/P253
 
 The 'Early' period was the only time point when we did not detect a significant difference between unaffected and Fgfr2+/P253R mice (Figure 5H). The PCA showed variation in the expression domains of Dusp6, with similar gene expression patterns in terms of both shape (Figure 5H) and size (Table 3 and Figure 6B) across all mice. Therefore, the first observation of an alteration in the gene expression pattern (Figure 5G) occurred earlier than the change in the limb shape (Figure 5B). Our analyses provide evidence that differences in the Dusp6 gene expression pattern first occurred during the 'Mid early period', preceding the phenotypic limb differentiation, which occurred a few hours later during the 'Mid late period'. Overall, the time courses showing the dynamics of limb shape and gene expression pattern changes throughout development (Figure 5 and Figure 6) confirmed that the Fgfr2 Apert syndrome mutation causes an aberrant overexpression of Dusp6 early in development, which could later lead to significant limb malformations.
 
-## Altered Dusp6 expression and limb dysmorphology are highly associated
+### Altered Dusp6 expression and limb dysmorphology are highly associated
 
 Finally, we explored the patterns of correlation between the limb phenotype and gene expression to further explore how altered Fgf signaling relates to the limb malformations induced by the Apert syndrome Fgfr2 P253R mutation. First, we assessed the relationship between the size of the limbs and the volume of the Dusp6 expression domain, pooling all the forelimbs and hindlimbs and assessing the correlation between these two traits (Figure 6C,D). The trend line showed that for the same limb size, Fgfr2+/P253R mutant mice showed larger Dusp6 expression domains, both in forelimbs (R2 = 0.4) and hindlimbs (R2 = 0.6). If the extension of the Dusp6 expression depended only on limb growth, and the gene domain passively became larger by just following limb tissue growth, a higher correlation between the size of the limb and the gene expression would be expected. However, the moderate correlation found here suggests that the size of the Dusp6 gene expression zone is not solely dependent on limb growth but might be controlled by further genetic regulatory factors.
 
@@ -128,15 +691,151 @@ Through its increased quantitative sensitivity, our method has allowed us to rev
 
 ## Materials and methods
 
-## Mouse model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgfr2+/P253R</td>
+      <td>Wang et al., 2010; doi: 10.1186/1471 -213X-10–22</td>
+      <td></td>
+      <td>Laboratory of Dr. Richtsmeier (Pennsylvania State University); inbred mouse model on a C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PBST</td>
+      <td>Sigma-Aldrich</td>
+      <td>P3563</td>
+      <td>Phosphate-buffered saline, 0.1% tween 20</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>paraformaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>P6148</td>
+      <td>4% in PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>methanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>494437–2L-D</td>
+      <td>Methanol for protein sequencing, bioReagent,99.93%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>digoxigenin-UTP</td>
+      <td>Sigma-Aldrich</td>
+      <td>11277073910</td>
+      <td>DIG RNA Labeling Mix (Roche)</td>
+    </tr>
+    <tr>
+      <td>Sequence -based reagent</td>
+      <td>Dusp6</td>
+      <td>Dickinson et al. (2002) doi:10.1016/S0925 -4773 (02)00024–2</td>
+      <td></td>
+      <td>m Mkp3-pCVM.sport6</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DIG-AP (sheep polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>11093274910</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NBT</td>
+      <td>Sigma-Aldrich</td>
+      <td>11585029001</td>
+      <td>4-nitro blue tetrazolium chloride, crystals (Roche)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BCIP</td>
+      <td>Sigma-Aldrich</td>
+      <td>11383221001</td>
+      <td>4-toluidine salt (Roche)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BABB</td>
+      <td>Sigma-Aldrich</td>
+      <td>402834; W213802</td>
+      <td>(one benzyl alcohol:two benzyl benzoate)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>agarose</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9414</td>
+      <td>Agarose low gelling temperature</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>The MathWorks, Inc</td>
+      <td>RRID:SCR_001622</td>
+      <td>https://es.mathworks.com/products/matlab.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R, CRAN</td>
+      <td>R Development Core Team, 2014</td>
+      <td>RRID:SCR_003005</td>
+      <td>http://www.R-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira 6.3</td>
+      <td>FEI</td>
+      <td>RRID:SCR_014305</td>
+      <td>https://www.fei.com/software/amira-3d-for-life-sciences/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Viewbox</td>
+      <td>dHAL software, Kifissia, Greece</td>
+      <td>RRID:SCR_016481</td>
+      <td>http://www.dhal.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geomorph</td>
+      <td>Adams and Otárola-Castillo, 2013; doi: 10.1111/2041-210X.12035</td>
+      <td>RRID:SCR_016482</td>
+      <td>https://cran.r-project.org/web/packages/geomorph/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MorphoJ</td>
+      <td>Klingenberg (2011): doi: 10.1111/j.1755 –0998.2010.02924.x</td>
+      <td>RRID:SCR_016483</td>
+      <td>http://www.flywings.org.uk/morphoj_page.htm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse model
 
 We analyzed the Fgfr2+/P253R Apert syndrome mouse model, an inbred model backcrossed on the C57BL/6J genetic background for more than ten generations, which carries a mutation that in humans with Apert syndrome is associated with more severe syndactyly. This gain-of-function mutation, which is embryonically lethal in homozygosis, involves a proline to arginine amino acid change at position 253 of the Fgfr2 protein, which alters the ligand-binding specificity of the receptor and causes stronger receptor signaling. Further details of the mouse model and on the generation of targeting construct can be found elsewhere (Wang et al., 2010). All the experiments were performed in compliance with the animal welfare guidelines approved by the Pennsylvania State University Animal Care and Use Committees (IACUC46558, IBC46590).
 
-## Micro-CT imaging
+### Micro-CT imaging
 
 High-resolution micro-computed tomography (μCT) scans were acquired by the Center for Quantitative Imaging at the Pennsylvania State University (www.cqi.psu.edu) using the HD-600 OMNI-X high-resolution X-ray computed tomography system (Varian Medical Systems, Palo Alto, CA). Pixel sizes ranged from 0.01487 to 0.01503 mm, and all slice thicknesses were 0.016 mm. Image data were reconstructed on a 1024 × 1024 pixel grid as a 16-bit TIFF. To reconstruct forelimb morphology from the μCT images, isosurfaces were produced with median image filter using the software package Avizo 6.3 (Visualization Sciences Group, VSG) (Figure 1A–F).
 
-## Morphometrics in P0 mice
+### Morphometrics in P0 mice
 
 We assessed forelimb morphology at P0 using unaffected (N = 10) and mutant (N = 12) littermates of Apert syndrome mouse models. A selection of 54 landmarks was collected on the left forelimb of all P0 mice, as shown in Figure 1B–F, following anatomical criteria selected to best describe the size and shape of forelimb bones in a reliable and reproducible manner. Landmarks at the proximal and distal tips of the phalanges, metacarpals, radius, ulna and clavicle were collected to represent the simple tubular shape of these bones. Additional landmarks were collected in anatomical structures of the humerus and scapula to better represent their complex 3D shapes (Figure 1B–F). To minimize measurement error, each landmark was collected twice by the same observer, restricting the deviations between the two trials to 0.05 mm.
 
@@ -144,7 +843,7 @@ At P0, we estimated the dimensions of the long bones of the forelimbs using the 
 
 Shape information was extracted using a Generalized Procrustes Analysis (GPA) (Rohlf and Slice, 1990), in which configurations of landmarks are superimposed by shifting them to a common position, rotating and scaling them to a standard size until a best fit of corresponding landmarks is achieved (Dryden and Mardia, 1998). The resulting Procrustes coordinates from the GPA were the input for further statistical analysis to compare the shape of the bones in unaffected and Fgfr2+/P253R mice. A Principal Component Analysis (PCA) was used to explore the morphological variation within each bone. PCA performs an orthogonal decomposition of the data and transforms variance covariance matrices into a smaller number of uncorrelated variables called Principal Components (PCs), which successively account for the largest amount of variation in the data (Hallgrimsson et al., 2015). Each specimen is scored for every Principal Component and the specimens can be plotted using these scores along the morphospace defined by the principal axes.
 
-## WMISH and OPT scanning
+### WMISH and OPT scanning
 
 To examine early embryonic mouse limb development in Apert syndrome mice, we bred four litters of the Fgfr2+/P253R Apert syndrome mouse model and collected them between E10.5 and E11.5. In total, 32 mouse embryos were harvested and classified by PCR genotyping into unaffected (N = 16) and mutant (N = 16) littermates (see Table 2 and Figure 4 for further details on sample size and composition). We analyzed the maximum number of samples that we could process simultaneously within the same WMISH batch, as explained next.
 
@@ -152,11 +851,11 @@ Dusp6 gene expression was assessed by whole-mount-in-situ hybridization (WMISH).
 
 After embedding in agarose, dehydrating in methanol and chemically clearing the samples with benzyl alcohol and benzyl benzoate (BABB), the stained whole embryos were scanned with both fluorescence and transmission light with a cyan fluorescent protein (CFP) filter using our home-built OPT imaging system mounted on a Leica MZ 16 FA microscope (Sharpe et al., 2002). The embryos were 3D-reconstructed from the resulting 2D images using Matlab (The MathWorks, Inc.) and visualized using Amira 6.3 (Visualization Sciences Group, FEI). From the OPT fluorescence scans, we produced 3D reconstructions of the embryo surface and we dissected the available right and left fore- and hindlimbs of each specimen, resulting in a sample of 100 embryonic limbs (Table 2). From the OPT transmission scans, we recovered the Dusp6 expression domain. As Dusp6 is expressed in a fuzzy spatial gradient, as already shown by other genes (Martínez-Abadías et al., 2016), we used 3D multiple thresholding to visualize the gene expression domain at different intensities (Figure 3). To analyze the gene expression domains comparatively across the samples, we inspected the whole range of threshold values under which the gene expression could be visualized for each limb, from the threshold showing its first appearance to the threshold under which it disappeared and was no longer detectable. We analyzed the 3D reconstruction on the basis of a threshold computed as 1/3 that of the last grey value showing the Dusp6 expression domain, which displayed a Dusp6 domain at high gene expression (Figure 3, step 3). Finally, we obtained 80 limbs (46 forelimbs and 34 hindlimbs) with associated gene expression patterns for Dusp6. Limbs or gene expression domains that were damaged during experimental manipulation or which showed obvious artifacts resulting from altered staining or imaging were discarded from the analyses. Outlier points were detected following standard protocols in GM that are based on squared Procrustes distance, and landmark misplacements were fixed whenever possible.
 
-## Embryo staging
+### Embryo staging
 
 To account for breeding and developmental variation, individual limb buds were staged using our publicly available web-based staging system (https://limbstaging.embl.es) (Musy et al., 2018). Considering the spline curve along the outline of the limb, this tool provides a stage estimate with a reproducibility of ±2 hr. According to the staging results, the different mouse litters were ordered following a continuous temporal sequence from E10 to E11.5 (Table 2 and Figure 4). To minimize high developmental variation within and among litters of mice, hindlimbs and forelimbs from each litter were analyzed separately, except for those from two litters from the earliest stage that were pooled into the same group because their temporal distribution completely overlapped, as shown in Figure 4.
 
-## Morphometrics from E10 to E11.5
+### Morphometrics from E10 to E11.5
 
 To capture the size and shape of the limbs and the expression domains of Dusp6, we collected a set of anatomical landmarks as well as curve and surface semi-landmarks (Figure 5—figure supplement 1), as recommended in structures devoid of homologous landmarks. Semi-landmarks are mathematical points located along a curve (Bookstein, 1997) or a surface (Gunz et al., 2005) within the same object that can be slid to corresponding equally spaced locations across the sample. Only five anatomical landmarks were discernible in the limb, and four in the Dusp6 expression pattern (Figure 5—figure supplement 1). We defined several curves and surfaces over the limb as well as gene expression structures with a relatively low number of semi-landmarks in order to minimize the high dimensionality of the data while providing an adequate shape coverage that precisely captured the subtle morphological changes associated with the Apert syndrome mutation. We used Amira 6.3 (Visualization Sciences Group, FEI) to record the anatomical landmarks and Viewbox 4 (dHAL software, Kifissia, Greece) to construct a limb template of surface and curve semi-landmarks and to interpolate them onto each target shape (Figure 5—figure supplement 1).
 

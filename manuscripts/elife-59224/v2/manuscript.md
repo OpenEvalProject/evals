@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Drosophila male courtship is controlled by the male-specific products of the fruitless ( fru ) gene and its expressing neuronal circuitry. M fru is considered a master gene that controls all aspects of male courtship. By temporally and spatially manipulating M fru expression, we found that M fru is required during a critical developmental period for innate courtship toward females, while its function during adulthood is involved in inhibiting male–male courtship. By altering or eliminating M fru expression, we generated males that are innately heterosexual, homosexual, bisexual, or without innate courtship but could acquire such behavior in an experience-dependent manner. These findings show that M fru is not absolutely necessary for courtship but is critical during development to build a sex circuitry with reduced flexibility and enhanced efficiency, and provide a new view about how M fru tunes functional flexibility of a sex circuitry instead of switching on its function as conventionally viewed. M
+Drosophila male courtship is controlled by the male-specific products of the fruitless (fruM) gene and its expressing neuronal circuitry. fruM is considered a master gene that controls all aspects of male courtship. By temporally and spatially manipulating fruM expression, we found that fruM is required during a critical developmental period for innate courtship toward females, while its function during adulthood is involved in inhibiting male–male courtship. By altering or eliminating fruM expression, we generated males that are innately heterosexual, homosexual, bisexual, or without innate courtship but could acquire such behavior in an experience-dependent manner. These findings show that fruM is not absolutely necessary for courtship but is critical during development to build a sex circuitry with reduced flexibility and enhanced efficiency, and provide a new view about how fruM tunes functional flexibility of a sex circuitry instead of switching on its function as conventionally viewed.
 
 ## Introduction
 
@@ -31,9 +31,29 @@ That FRUM functions as a transcription factor to specify development and/or phys
 
 ## Results
 
-## fruM is required during pupation for regular neuronal development and female-directed courtship
+### fruM is required during pupation for regular neuronal development and female-directed courtship
 
 To specifically knockdown fruM expression, we used a microRNA targeting fruM (UAS-fruMi at attp2 or attp40) and a scrambled version as a control (UAS-fruMiScr at attp2) as previously used (Chen et al., 2017; Meissner et al., 2016). Driving the fruM microRNA by fruGAL4 specifically knocked down mRNA of fruM, but not the common form of fru (Figure 1—figure supplement 1A–C). We firstly tested male courtship without food in the behavioral chamber. Knocking down fruM in all the fruGAL4-labeled neurons eliminated male courtship toward females (courtship index [CI], which is the percentage of observational time that males displayed courtship, is nearly 0) (Figure 1A), consistent with previous findings that fruM is required for innate male–female courtship (Demir and Dickson, 2005; Pan and Baker, 2014). As fruGAL4 drives expression throughout development and adulthood (Figure 1—figure supplement 1D–K), we set out to use a temperature-dependent tub-GAL80ts transgene to restrict UAS-fruMi expression (e.g., at 30°C) at different developmental stages. We raised tub-GAL80 ts/+; fruGAL4/UAS-fruMi flies at 18°C (permissive for GAL80ts that inhibits GAL4 activity) and transferred these flies to fresh food vials every 2 days. In this way, we generated tub-GAL80 ts/+; fruGAL4/UAS-fruMi flies at nine different stages from embryos to adults and incubated all flies at 30°C to allow fruM knockdown for 2 days, then placed all flies back to 18°C until courtship test (Figure 1B). We found that males with fruM knocked down at stage 5 for 2 days, matching the pupation phase, rarely courted (CI < 10%), and none successfully mated, while males with fruM knocked down near this period (stages 4 and 6) showed a partial courtship or mating deficit, and males with fruM knocked down at earlier or later stages showed strong courtship toward females and successful mating (Figure 1C,D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig1-v2.jpg)
+
+**Figure 1.:** (A) Knocking down fruM using RNAi throughout development and adulthood eliminated male courtship toward virgin females. n = 24 for each. ***p<0.001, unpaired t-test. (B) A schematic of genetic strategy to knockdown fruM at different developmental stages for 2 days. Stages 1–9 refer to specific developmental stages from embryos to newly eclosed adults with interval of 2 days. (C and D) Courtship indices of males with fruM knocked down at specific developmental stages as indicated above toward virgin females. Males with fruM knocked down at stage 5 for 2 days (a period of pupation from stage 5 to 6, see above picture) rarely courted virgin females (C), and none successfully mated (D). Knocking down fruM at stages near 5 (e.g., stage 4 or 6) also partially impairs courtship and mating success. Knocking down fruM at earlier or later stages has no obvious effect on courtship and mating. n = 24 for each. Error bars indicate SEM. (E–H) Two day heat shock at 30°C effectively knocks down fruM expression during development. Anti-V5 and anti-FruM signals are dramatically decreased after heat shock at stage 5 (E and F) or 7 (G and H) in tub-GAL80ts/UAS-fruMi; fruGAL4/fruV5 males. Scale bars, 100 μm. Representative of five samples each.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The structure of the fruitless gene and designed primers against P1 and P4 transcripts. (B and C) The fruM microRNA significantly reduced fruM mRNA (B), but not common fru mRNA from the P4 promotor (C). n = 4 for each, ***p<0.001, n.s., not significant, Mann–Whitney U test. Error bars indicate SEM. (D–K) Expression pattern of fruGAL4 in different developmental stages. Scale bars, 50 μm. Representative of three samples each.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Knock-in line. (A–D) The anti-FruM antibody shows intensive male-specific signals (A), and several pairs of false-positive neurons in females (B) as well as in fruM mutants (C and D). (E and F) Anti-V5 signals indicate male-specific FruM expression in fruV5/+ males. Scale bars, 100 μm. Representative of five samples each.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–J) tub-GAL80ts/UAS-fruMi; fruGAL4/fruV5 males were heat shocked at 30°C for 2 days at each developmental stage (stages 1–9) and dissected at adulthood to check FruM expression using anti-V5 (left) and anti-FruM (middle) antibodies. Note that the anti-V5 signals were relatively stronger than the anti-FruM signals. Adult fruM expression was effectively restored if heat shocked at earlier stages (stages 1–5), but only partially restored if heat shocked at later stages (stages 6–9). Scale bars, 100 μm. Representative of five samples each.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A and B) GFP expression driven by fruGAL4 under regular condition (A) and restricted condition using GAL80ts at 18°C (B). Note that GAL80ts suppresses the majority but not 100% of fruGAL4 expression. (C) Labeling and morphological changes of the GRNs innervating VNC in males with fruM knocked down during specific developmental periods. The fruM-positive GRNs were only labeled if tub-GAL80ts/UAS-mCD8GFP; fruGAL4/UAS-fruMi males were heat shocked after stage 4 (yellow arrows). For those males heat shocked after stage 4, white arrows indicate whether there is midline crossing in these GRNs innervating VNC. (D) Percentage of males heat shocked at different developmental stages showed defect of midline crossing of the GRNs. Knocking down fruM at stages 5 and 6, but not later stages including adulthood, results in defect of midline crossing of the GRNs. Genotypes as indicated. Scale bars, 100 μm. Representative of five samples each.
 
 To validate efficiency of fruM knockdown during specific developmental periods, we generated an antibody against FruM as well as a V5 knock-in into the fru gene (fruV5) to visualize FruM expression. Both tools successfully labeled male-specific FruM proteins (Figure 1—figure supplement 2), and there is almost perfect overlap of the two markers (Figure 1E,G). Note that the anti-FruM antibody also labeled several pairs of false-positive neurons in both wild-type and fruM mutants (Figure 1—figure supplement 2), indicating the strong but not perfect specificity of this antibody (Figure 1—figure supplement 2B–D). To test whether 2 day heat shock at 30°C is sufficient to knockdown fruM expression, we dissected brains of tub-GAL80ts/UAS-fruMi; fruGAL4/fruV5 males immediately after 2 day heat shock at stage 5 or 7 and found that anti-V5 and anti-FruM signals were both dramatically decreased, such that only a small fraction of neurons could be weakly labeled; in contrast, control males with the same age but raised at 18°C have regular anti-V5 and anti-FruM signals (Figure 1E–H). These results indicate that induction of fruM microRNA during development for 2 days could effectively knockdown fruM expression.
 
@@ -41,17 +61,37 @@ As induced fruM microRNA may not be degraded immediately and has longer effect, 
 
 We reasoned that fruM function during pupation may be involved in neuronal development for circuit construction. Thus we set out to examine the morphology of a subset of fruM-positive gustatory receptor neurons (GRNs) innervating the ventral nerve cord (VNC) in tub-GAL80ts/UAS-mCD8GFP; fruGAL4/UAS-fruMi males that have been heat shocked for 2 days in different developmental stages, as it has been found that fruM is required for the male-specific midline crossing of these GRNs (Mellert et al., 2010). We found that these GRNs were only labeled in males that have been heat shocked after stage 4, probably because these GRNs were developed after stage 4 (Figure 1—figure supplement 4A–C), consistent with a previous study (Mellert et al., 2012). Interestingly, we found that all males heat shocked at stage 5 for 2 days showed defect of midline crossing in these GRNs, and 60% of males heat shocked at stage 6 for 2 days showed defect of midline crossing, while all males heat shocked after stage 6 showed regular midline crossing (Figure 1—figure supplement 4C,D). Males heat shocked for 4 days during adulthood also have regular midline crossing (Figure 1—figure supplement 4C,D). These results clearly showed a critical developmental period during pupation where FruM functions to ensure regular development of GRNs and enable innate male courtship toward females.
 
-## fruM function during adulthood inhibits male–male courtship
+### fruM function during adulthood inhibits male–male courtship
 
 As knocking down fruM at stage 9 when flies were newly eclosed did not affect male courtship (CI > 80%) and mating success (Figure 1C,D), we further tested the role of fruM in adulthood using different approaches. We set out to express the female-specific transformer (traF) gene (Baker and Ridge, 1980; McKeown et al., 1988) to feminize all fruGAL4 labeled neurons, in addition to the above fruM RNAi experiments. We express UAS-traF or UAS-fruMi in all the fruGAL4-labeled neurons specifically during adulthood for 4 days before test (see procedure above each figure) for single-pair male–female, male–male, and male chaining (in groups of eight males) behaviors. We found that overexpression of traF in all fruGAL4 labeled neurons during adulthood for 4 days did not affect male–female courtship (Figure 2A), but slightly increased male–male (Figure 2B) and male chaining behaviors (Figure 2C). Furthermore, knocking down fruM in all fruGAL4-labeled neurons during adulthood for 4 days did not affect male–female (Figure 2A) or male–male courtship (Figure 2B), but significantly increased male chaining behaviors (Figure 2C). We also checked FruM expression in males that have been heat shocked for 4 days during adulthood using anti-V5 and anti-FruM antibodies, and found that FruM expression was almost eliminated, while control males have regular FruM expression (Figure 2D,E). These results indicate that although fruM function during adulthood is dispensable for female-directed courtship, it is involved in inhibiting male–male courtship behaviors. Thus, FruM has distinct functions during development and adulthood for male courtship behaviors.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig2-v2.jpg)
 
-**Figure 2.:** fru functions during adulthood to inhibit male–male courtship behaviors.M(A–C) Courtship behaviors performed by males that express traF or fruMi specifically during adulthood for 4 days. For male–female courtship (A), n = 17, 26, 23, 23, 24, 27, 24, and 28, respectively (from left to right), n.s., not significant, unpaired t-test. For single-pair male–male courtship (B), n = 18 for each. n.s., not significant, *p<0.05, unpaired t-test. For male chaining among eight males as a group (C), n = 8, 8, 8, 10, 8, 18, 8, and 18, respectively (from left to right). n.s., not significant, *p<0.05, **p<0.01, ***p<0.001, Mann–Whitney U test. Error bars indicate SEM. Genotypes as indicated. (D and E) Anti-V5 and anti-FruM signals are dramatically decreased after heat shock during adulthood for 4 days in tub-GAL80 males. Scale bars, 100 μm. Representative of five samples each.ts/UAS-fruMi; fruGAL4/fruV5  Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A–C) Courtship behaviors performed by males that express traF or fruMi specifically during adulthood for 4 days. For male–female courtship (A), n = 17, 26, 23, 23, 24, 27, 24, and 28, respectively (from left to right), n.s., not significant, unpaired t-test. For single-pair male–male courtship (B), n = 18 for each. n.s., not significant, *p<0.05, unpaired t-test. For male chaining among eight males as a group (C), n = 8, 8, 8, 10, 8, 18, 8, and 18, respectively (from left to right). n.s., not significant, *p<0.05, **p<0.01, ***p<0.001, Mann–Whitney U test. Error bars indicate SEM. Genotypes as indicated. (D and E) Anti-V5 and anti-FruM signals are dramatically decreased after heat shock during adulthood for 4 days in tub-GAL80ts/UAS-fruMi; fruGAL4/fruV5 males. Scale bars, 100 μm. Representative of five samples each.
 
-## fruM expression determines courtship modes
+### fruM expression determines courtship modes
 
 The above results indicate crucial roles of fruM during pupation for female-directed courtship in adult males. We reasoned that fruM function during pupation may specify the construction of courtship circuitry and affects female-directed courtship as well as other courtship behaviors, especially given our previous findings that fruM null males were able to acquire courtship behavior after group-housing (Pan and Baker, 2014). Thus, we set out to compare courtship behaviors in males with distinct fruM expression modes, such as with wild-type fruM, systemic low level of fruM, spatially low level of fruM, or completely without fruM function. We tested one-time single-pair male–female and male–male courtship (single housed before test) as well as male chaining in groups of eight males over 3 days on food for better comparison of these courtship assays, as courtship by fruM null males largely depends on food presence (Pan and Baker, 2014). We found that male–male courtship in fruM knocked down males is higher if tested on food, consistent with a courtship promoting role by food (Grosjean et al., 2011; Pan and Baker, 2014), while courtship in wild-type males on food or without food is not changed in our assays (Figure 3—figure supplement 1). We found that wild-type males performed intensive courtship behavior toward virgin females (CI > 80%) and rarely courted males (CI ~0) (Figure 3A). Furthermore, these control males did not show any chaining behavior after grouping from 3 hr to 3 days (ChI = 0) (Figure 3B). In striking contrast, fruM null mutant males rarely courted either females or males (Figure 3C, Figure 3—figure supplement 2A, C, and E); however, these males developed intensive chaining behavior after grouping for 1–3 days (Figure 3D, Figure 3—figure supplement 2B, D, and F). These observations replicated previous findings that there exists a fruM-independent experience and dsxM-dependent courtship pathway (Pan and Baker, 2014; Figure 3E). To compare behavioral differences by fruM null males and fruM RNAi knocked down males that have systemic low level of fruM, we firstly quantified to how much extent the microRNA against fruM (UAS-fruMi at attp40) worked. We found that the fruM mRNA level was reduced to ~40% of that in control males (Figure 3F). Interestingly, while males with fruM knocked down in all fruM neurons rarely courted females (CI ~5%, Figure 3G), they displayed a high level of male–male courtship behavior (CI > 50%, Figure 3G) and constantly high level of male chaining (Figure 3H), dramatically different from fruM null males. These results reveal distinct roles of low fruM (RNAi) and high fruM (wild-type) in regulating male–male and male–female courtship (Figure 3I).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig3-v2.jpg)
+
+**Figure 3.:** (A and B) Wild-type males courted intensively toward virgin females (A, left bar), but rarely courted males (A, right bar) or displayed chaining behavior in groups of eight males (B). n = 24, 24, 8, respectively. ***p<0.001, unpaired t-test. (C) FruLexA/fru4-40 (fruM null) males rarely courted either females or males. n = 24 for each, **p<0.01, Mann–Whitney U test. (D) FruLexA/fru4-40 males did not show chaining behavior after 3 hr group-housing, but developed intensive chaining behavior after1-3 days. n = 8. (E) A summary of courtship acquisition independent of fruM. (F) RNAi against fruM efficiently decreased but not fully eliminated fruM expression. n = 4. ***p<0.001, Mann–Whitney U test. (G) Knocking down fruM in all fruGAL4 neurons generated males that have reversed sexual orientation such that they rarely courted females but intensively courted males. n = 24 and 19, respectively. ***p<0.001, unpaired t-test. (H) Males with fruM knocked down in all fruGAL4 neurons showed intensive chaining behavior at all time points (from 3 hr to 3 days upon group-housing). n = 7. (I) Distinct roles of low fruM (RNAi) and high fruM (wild-type) in regulating male–male and male–female courtship. (J) Males with fruM knocked down in fruGAL4 neurons in the brain had a lower level of courtship toward females, but their sexual orientation was not changed. n = 24 and 23, respectively. ***p<0.001, unpaired t-test. (K) Males with fruM knocked down in fruGAL4 neurons in brain showed low male chaining behavior initially but increasing levels of chaining behavior over 1–3 days. n = 6. (L) A summary of the role of fruM in brain in promoting male–female courtship and suppressing the experience-dependent acquisition or progression of male chaining behavior. (M) Males with fruM knocked down in fruGAL4 neurons outside brain generated bisexual males that have intensive male–female and male–male courtship. n = 24 for each. n.s., not significant, unpaired t-test. (N) Males with fruM knocked down in fruGAL4 neurons outside brain showed high male chaining behavior initially, but decreased levels of chaining behavior over 1–3 days. n = 8. (O) A summary of the role of fruM outside brain in suppressing male–male courtship behavior. Error bars indicate SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Male–male courtship in fruM knocked down males is higher in the presence of food. n = 15, 17, 15, 18, 18, 18, 18, and 18 from left to right, respectively. ***p<0.001, unpaired t-test. Error bars indicate SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A and B) Control fru4-40/+ males courted intensively toward virgin females (A, left bar) but rarely courted males (A, right bar), and hardly displayed male chaining behavior in groups of eight males during a 3 day test (B). n = 12, 12, and 8, respectively. ***p<0.001, Mann–Whitney U test. (C–F) fru4-40/ fruSat15 (C and D) and fru4-40/ fruAJ96u3 (E and F) males rarely courted either females or males but developed intensive male chaining behavior after 1–3 days. n = 12, 12, 8, 12, 12, and 8, respectively. ***p<0.001, Mann–Whitney U test. Error bars indicate SEM.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Expression pattern of the fruM circuitry revealed by fruGAL4 driving UAS-mCD8GFP (green), co-stained with nc82 (magenta). (B and C) Restricted fruGAL4 expression in brain (B) or outside brain (C) using a genetic strategy to divide fruGAL4 neurons into two parts. (D and E) Expression pattern of fruGAL4 driving UAS-mCD8GFP in forelegs (D, scale bars, 100 mm) and antennae (E, scale bars, 50 mm) in males with indicated genotypes. (F–I) FruM expression in spatially restricted knockdown of fruM revealed by anti-V5 signals. Genotypes as indicated. Scale bars, 100 μm. Representative of three samples each.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Knocking down fruM in P1 neurons did not affect male courtship behavior toward either females or males. n = 18 of each. n.s., not significant, Mann–Whitney U test. (B) Knocking down fruM in P1 neurons did not significantly affect male–male chaining behavior. n = 8 for each. ***p<0.001, n.s., not significant, Mann–Whitney U test. (C) Knocking down fruM in ppk23-expressing neurons did not affect male courtship toward females, but mildly increased male–male courtship. n = 18 of each. n.s., not significant, ***p<0.001, Mann–Whitney U test. (D) Knocking down fruM in ppk23-expressing neurons did not significantly affect male–male chaining behavior. n = 8 for each. *p<0.05, n.s., not significant, Mann–Whitney U test. Error bars indicate SEM.
 
 To further reveal the role of fruM expression patterns in determining male courtship modes, we tried to spatially knockdown fruM expression using a simple way: fruM in brain and fruM outside brain. We used Otd-Flp expressing FLP specifically in the central brain (Asahina et al., 2014) to divide fruGAL4 expression (Figure 3—figure supplement 3A) into two parts: fruM- and Otd-positive neurons (specifically in brain) in Otd-Flp/UAS-mCD8GFP; fruGAL4/tub>GAL80> males (Figure 3—figure supplement 3B) and fruM-positive but Otd-negative neurons (theoretically outside brain, but still with few in brain) in Otd-Flp/UAS-mCD8GFP; fruGAL4/tub>stop>GAL80 males (Figure 3—figure supplement 3C). We also checked GFP expression in peripheral nervous system in these males and found a few GFP-positive cells in antennae and forelegs in Otd-Flp/UAS-mCD8GFP; fruGAL4/+ males, but rare expression in Otd-Flp/UAS-mCD8GFP; fruGAL4/tub>stop>GAL80 or Otd-Flp/UAS-mCD8GFP; fruGAL4/tub>GAL80> males (Figure 3—figure supplement 3D,E). Thus, we successfully divided fruGAL4 expression into two categories: one with GAL4 expressed in fru+Otd+ neurons in brain and the other with GAL4 expressed in fru+Otd− neurons outside brain. We then used the above intersectional strategy to specifically knockdown fruM expression in or outside brain. To validate such strategy, we used anti-V5 to visualize FruM expression in these males (together with fruV5) and found effective, if not perfect, knockdown of FruM expression spatially (Figure 3—figure supplement 3F–I). We found that males with fruM knocked down specifically in brain had a reduced level of courtship toward females (CI = 56.61 ± 5.86%), but their sexual orientation was not changed as they courted males in a much lower level (CI = 15.94 ± 3.26%, Figure 3J). Furthermore, males with fruM knocked down in brain showed low male chaining behavior initially but increasing levels of chaining behavior over 1–3 days (ChI [3 hr] = 9.35 ± 5.40%, ChI[3d] = 68.82 ± 5.53%, Figure 3K). Knocking down fruM only in a subset of male-specific P1 neurons driven by P1-splitGAL4 in the brain that are important for courtship initiation (Clowney et al., 2015; Kallman et al., 2015; Kimura et al., 2008; Pan et al., 2012; Wu et al., 2019) failed to decrease male–female courtship or induce male chaining behavior (Figure 3—figure supplement 4A,B). These results indicate that fruM function in brain promotes male–female courtship and inhibits acquisition or progression of the experience-dependent chaining behavior (Figure 3L). In contrast, males with fruM knocked down outside brain showed equally intensive male–female and male–male courtship (CI [male–female] = 85.62 ± 1.42%, CI [male–male] = 82.89 ± 2.76%, Figure 3M), indicating an inhibitory role of fruM in these neurons for male–male courtship (Figure 3O). These males performed a high level of male chaining behavior initially (ChI [3 hr] = 92.90 ± 3.08%), but decreased levels of chaining behavior over 1–3 days (ChI [3d] = 20.01 ± 3.75%, Figure 3N), consistent with the above finding that fruM function in the brain which is intact in these males inhibits acquisition or progression of male chaining behavior (Figure 3L). Knocking down fruM in a subset of gustatory receptor neurons expressing ppk23 that respond to female-specific pheromones (Lu et al., 2012; Thistle et al., 2012; Toda et al., 2012) mildly enhanced male–male courtship but did not induce male chaining behavior (Figure 3—figure supplement 4C,D), suggesting a moderate role of fruM in these neurons for inhibiting male–male courtship, although its roles in these neurons during development or adulthood were not yet discriminated.
 
@@ -59,7 +99,7 @@ Taken together, the above results demonstrate distinct roles of fruM expression 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59224/elife-59224-fig4-v2.jpg)
 
-**Figure 4.:** fru function in male courtship.M(A) Fru is required during pupation for neuronal development and possibly circuit wiring that builds the potential for innately female-directed courtship, while its function during adulthood is involved in inhibiting male–male courtship. Anti-V5 signals indicate FruMM expression in larva, pupa and adult males (from left to right). Scale bars, 100 μm. (B) The sex circuitry without fru or with different levels/patterns of Mfru has different properties such that males would have experience-dependent courtship acquisition, or innate courtship but with different sexual orientation (heterosexual, homosexual, or bisexual). Such flexibility of the sex circuitry is tuned by different Mfru expression. Triangles and circles represent corresponding Mfru levels and courtship levels (triangles: male–female courtship; circles: male–male courtship). Gray indicates systemic low level of Mfru; green and magenta indicate spatially low level of Mfru.M
+**Figure 4.:** (A) FruM is required during pupation for neuronal development and possibly circuit wiring that builds the potential for innately female-directed courtship, while its function during adulthood is involved in inhibiting male–male courtship. Anti-V5 signals indicate FruM expression in larva, pupa and adult males (from left to right). Scale bars, 100 μm. (B) The sex circuitry without fruM or with different levels/patterns of fruM has different properties such that males would have experience-dependent courtship acquisition, or innate courtship but with different sexual orientation (heterosexual, homosexual, or bisexual). Such flexibility of the sex circuitry is tuned by different fruM expression. Triangles and circles represent corresponding fruM levels and courtship levels (triangles: male–female courtship; circles: male–male courtship). Gray indicates systemic low level of fruM; green and magenta indicate spatially low level of fruM.
 
 ## Discussion
 
@@ -71,19 +111,239 @@ Most importantly, we revealed striking flexibility of the fly sex circuitry by m
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Bruchpilot antibody (nc82)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# nc82, RRID:AB_2314866</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-Rabbit, Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21206, RRID:AB_2535792</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-Mouse, Alexa Fluor 555</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-31570, RRID:AB_2536180</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-V5-Tag:DyLight550</td>
+      <td>Bio-Rad</td>
+      <td>Cat# MCA1360D550GA, RRID:AB_2687576</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FruM</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>pCFD4</td>
+      <td>Addgene</td>
+      <td># 49411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>pHD-DsRed</td>
+      <td>Addgene</td>
+      <td># 51434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>pET-28a</td>
+      <td>Sigma–Aldrich</td>
+      <td># 69864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Goat Serum (NGS)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Code# 005-000-121 RRID:AB_2336990</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde (PFA)</td>
+      <td>Sigma–Aldrich</td>
+      <td>CAS# 30525-89-4</td>
+      <td>4% PFA in 1× PBS</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fruV5</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described below</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8GFP; fruGAL4</td>
+      <td>Stockinger et al., 2005</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-fruMi</td>
+      <td>Meissner et al., 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-fruMiScr</td>
+      <td>Meissner et al., 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fruLexA</td>
+      <td>Mellert et al., 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fru4-40</td>
+      <td>Pan and Baker, 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fruSat15</td>
+      <td>Pan and Baker, 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fruAJ96u</td>
+      <td>Pan and Baker, 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk23-GAL4</td>
+      <td>Thistle et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Otd-Flp</td>
+      <td>Asahina et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub-GAL80ts</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_7019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub&gt;GAL80&gt;</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_38881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub&gt;stop&gt;GAL80</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_39213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-traF</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_4590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R15A01-AD</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_68837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R71G01-DBD</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_69507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 Flies were maintained at 22 or 25°C in a 12 hr:12 hr light:dark cycle. Canton-S flies were used as the wild-type strain. Other stocks used in this study include the following: fruGAL4 (Stockinger et al., 2005), fruV5 (this study), UAS-fruMi (attp40), UAS-fruMi (attp2), and UAS-fruMiScr (attp2) (Meissner et al., 2016), fruLexA, fru4-40, fruAJ96u3, and fruSat15 (Pan and Baker, 2014), ppk23-GAL4 (Thistle et al., 2012), P1-splitGAL4 (R15A01-AD; R71G01-DBD) (Zhang et al., 2018), and Otd-Flp (Asahina et al., 2014). UAS-traF (BL#4590), tub-GAL80ts (BL#7019), tub>GAL80> (BL#38881), and tub>stop>GAL80 (BL#39213) were from Bloomington Drosophila Stock Center.
 
-## Generation of fruV5
+### Generation of fruV5
 
 fruV5 was generated by fusing V5 tag in frame with the start codon of fruP1. To generate the fruV5 knock-in line, two gRNAs (gRNA1: 5′-GCCATTAGTGTCGCGGTGCG-3′; gRNA2: 5′-GCGGCCGCGCGAGTCGCCGC-3′) against fru were inserted into pCFD4 vector (Addgene #49411) to induce DNA break near the start codon of fruP1. Then, ~2.1 kb 5′ homologous arm was incorporated into the 5′ MCS of pHD-DsRed (Addgene #51434) through Gibson assembly (digested with NheI and NdeI). To insert V5 tag after the start codon of fruP1, ~2.4 kb 3′ homologous arm was divided into two fragments and amplified separately. These two fragments including the V5 sequence were then subcloned into the 3′ MCS of pHD-DsRed (containing the above 5′ homologous arm) through Gibson assembly (digested with BglII and XhoI). The modified pCFD4 and pHD-DsRed plasmids were injected into vas-cas9 embryos. Successful knock in was selected by 3xP3-DsRed (DsRed-positive eyes) and confirmed by PCR followed by sequencing. The verified knock-in line was balanced and crossed to hs-Cre flies to remove the 3xP3-DsRed marker.
 
-## Generation of anti-FruM antibody
+### Generation of anti-FruM antibody
 
 The rabbit polyclonal antibody against FruM was generated by ABclonal (Wuhan, China). In brief, the fragment of fru gene encodes the N-terminal 101 amino acids, starting with MMATSQDYFG and ending in SPRYNTDQGA, was cloned into expression vector pET-28a (Sigma–Aldrich, #69864). The 101 amino acids are only present in male-specific Fru proteins (FruM) from fruP1. A SUMO-tagged FruM fusion antigen was synthesized from bacteria, purified, and used to immunize a rabbit. The anti-FruM antibody was affinity purified.
 
-## Courtship and chaining assays
+### Courtship and chaining assays
 
 For the single-pair courtship assay, the tester males and target flies (4–8 days old) were gently aspirated into round two-layer chambers (diameter: 1 cm; height: 3 mm per layer) and were separated by a plastic transparent barrier that was removed ~30 min later to allow courtship test. Courtship index (CI), which is the percentage of observation time a fly performs any courtship step, was used to measure courtship to female targets or between two males. Paired male–male courtship used two males of the same genotype but focused on the male fly that first initiated courtship (courtship of the initiator to the other). All tester flies were single housed if not otherwise mentioned. Each test was performed for 10 min.
 
@@ -91,14 +351,14 @@ For male chaining assay, tester males (4–8 days old) were loaded into large ro
 
 To generate males with fruM knocked down only for 2 days during development or adulthood, we raised tub-GAL80 ts/+; fruGAL4/UAS-fruMi flies at 18°C and transferred these flies to fresh food vials every 2 days. In this way, we generated tub-GAL80 ts/+; fruGAL4/UAS-fruMi flies at nine different stages from embryos (stage 1) to newly eclosed adults (stage 9), with wandering larvae at stage 5 and early pupas at stage 6. We then transferred all these flies to a 30°C incubator allowing fruM knockdown for 2 days, then placed all flies back to 18°C until courtship test at adult.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was extracted from ~15 male flies with TRIzol (15596026, Invitrogen), according to the manufacturer’s instructions. The cDNA was synthesized using Prime Script reagent kit (18091050, Invitrogen). Quantitative PCR was performed on LightCycler 96 Real-Time PCR System (Roche) using AceQ qPCR SYBR Green Master Mix (Q121-02, Vazyme). Actin was used as control for normalization. The primers used were as follows: Actin (forward: 5′- CAGGCGGTGCTTTCTCTCTA-3′; reverse: 5′-AGCTGTAACCGCGCTCAGTA-3′), fru P1 promotor (forward: 5′-GTGTGCGTACGTTTGAGTGT-3′; reverse: 5′-TAATCCTGTGACGTCGCCAT-3′), and fru P4 promotor (forward: 5′-TGTATAGCGGCAACTGAACC-3′; reverse: 5′-CCGGTCAAATTTGTGGGATG-3′).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 We dissected brains and ventral nerve cords of males in defined developmental stages (e.g., Figure 1E–H) or 5–7 days old males in Schneider’s insect medium (Thermo Fisher Scientific, Waltham, MA) and fixed in 4% paraformaldehyde in phosphate-buffered saline (PBS) for 30 min at room temperature. After washing four times in 0.5% Triton X-100% and 0.5% bovine serum albumin [BSA] in PBS (PAT), tissues were blocked in 3% normal goat serum (NGS) for 60 min, then incubated in primary antibodies diluted in 3% NGS for ~24 hr at 4°C, washed (4× 15 min) in PAT at room temperature, and incubated in secondary antibodies diluted in 3% NGS for ~24 hr at 4°C. Tissues were then washed (4× 15 min) in PAT and mounted in Vectorshield (Vector Laboratories, Burlingame, CA) for imaging. Primary antibodies used were rabbit anti-FruM (1:200; this study), mouse anti-V5-Tag:DyLight550 (1:500; MCA1360D550GA, Bio-Rad, Hercules, CA), rabbit anti-GFP (1:1000; A11122, Invitrogen, Waltham, MA), and mouse anti-Bruchpilot (1:50; nc82, Developmental Studies Hybridoma Bank, Iowa City, IA). Secondary antibodies used were donkey anti-mouse IgG conjugated to Alexa 555 (1:500, A31570, Invitrogen) and donkey anti-rabbit IgG conjugated to Alexa 488 (1:500, A21206, Invitrogen). Samples were imaged at 10× or 20× magnification on a Zeiss 700 confocal microscope and processed with ImageJ.
 
-## Statistics
+### Statistics
 
 Experimental flies and genetic controls were tested at the same condition, and data are collected from at least two independent experiments. Statistical analysis is performed using GraphPad Prism and indicated inside each figure legend. Data presented in this study were first verified for normal distribution by D’Agostino–Pearson normality test. If normally distributed, Student’s t test is used for pairwise comparisons, and one-way ANOVA is used for comparisons among multiple groups, followed by Tukey’s multiple comparisons. If not normally distributed, Mann–Whitney U test is used for pairwise comparisons, and Kruskal–Wallis test is used for comparisons among multiple groups, followed by Dunn’s multiple comparisons.

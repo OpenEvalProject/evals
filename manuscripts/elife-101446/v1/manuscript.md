@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02r3e0967 Department of Chemical Biology and Therapeutics, St. Jude Children’s Research Hospital Memphis United States
+1. Department of Chemical Biology and Therapeutics, St. Jude Children’s Research Hospital Memphis United States ([ROR:02r3e0967](https://ror.org/02r3e0967))
 
 † Corresponding author
 

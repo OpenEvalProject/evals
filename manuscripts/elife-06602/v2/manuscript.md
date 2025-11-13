@@ -88,7 +88,7 @@
 
 ## Abstract
 
-10.7554/eLife.06602.001 Defective primary ciliogenesis or cilium stability forms the basis of human ciliopathies, including Joubert syndrome (JS), with defective cerebellar vermis development. We performed a high-content genome-wide small interfering RNA (siRNA) screen to identify genes regulating ciliogenesis as candidates for JS. We analyzed results with a supervised-learning approach, using SYSCILIA gold standard, Cildb3.0, a centriole siRNA screen and the GTex project, identifying 591 likely candidates. Intersection of this data with whole exome results from 145 individuals with unexplained JS identified six families with predominantly compound heterozygous mutations in KIAA0586 . A c.428del base deletion in 0.1% of the general population was found in trans with a second mutation in an additional set of 9 of 163 unexplained JS patients. KIAA0586 is an orthologue of chick Talpid3 , required for ciliogenesis and Sonic hedgehog signaling. Our results uncover a relatively high frequency cause for JS and contribute a list of candidates for future gene discoveries in ciliopathies. DOI: http://dx.doi.org/10.7554/eLife.06602.001
+Defective primary ciliogenesis or cilium stability forms the basis of human ciliopathies, including Joubert syndrome (JS), with defective cerebellar vermis development. We performed a high-content genome-wide small interfering RNA (siRNA) screen to identify genes regulating ciliogenesis as candidates for JS. We analyzed results with a supervised-learning approach, using SYSCILIA gold standard, Cildb3.0, a centriole siRNA screen and the GTex project, identifying 591 likely candidates. Intersection of this data with whole exome results from 145 individuals with unexplained JS identified six families with predominantly compound heterozygous mutations in KIAA0586. A c.428del base deletion in 0.1% of the general population was found in trans with a second mutation in an additional set of 9 of 163 unexplained JS patients. KIAA0586 is an orthologue of chick Talpid3, required for ciliogenesis and Sonic hedgehog signaling. Our results uncover a relatively high frequency cause for JS and contribute a list of candidates for future gene discoveries in ciliopathies.
 
 ## Introduction
 
@@ -104,29 +104,29 @@ Our focus was to identify novel genes involved in JS, by applying a functional g
 
 ## Results
 
-## Generation of SEMG cell line
+### Generation of SEMG cell line
 
-The ciliated stable cell line, human telomerase reverse transcriptase (hTERT)-retinal pigment epithelial 1 (RPE1) Smo-EGFP (
+The ciliated stable cell line, human telomerase reverse transcriptase (hTERT)-retinal pigment epithelial 1 (RPE1) Smo-EGFP (Kim et al., 2010), in which Smoothened–tagged EGFP is stably integrated in the polarized human RPE1 cells, reliably reports a single primary cilium upon serum withdrawal in 60–80% of cells. This line was stably transfected with mCherry-tagged Geminin (Sakaue-Sawano et al., 2008), a nuclear marker for S/G2/M cell cycle phases, to produce the Smo-EGFP-mCherry-Geminin/hTERT-RPE1 (SEMG) line, enabling differential analysis of ciliogenesis as a function of the cell cycle. Cells lacking a cilium (i.e., absent ciliary-localized EGFP fluorescence) were divided into those in G2/M phase (should normally not display a cilium) and those in G0/G1 (most should display a cilium; Figure 1A,B). The incorporation of mCherry-Geminin increased the specificity of the screen by filtering siRNAs leading to cell cycle arrest as the primary reason for absent cilia.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig1-v2.jpg)
 
-**Figure 1.:** (A) High-content small interfering RNA (siRNA) cell-based screen using reverse transfection of the library in media containing serum for 72 hr, followed by 24 hr serum starvation, fixation and DAPI staining. Subsequent fluorescent imaging and algorithmic analysis performed for all pooled siRNAs. To assess ciliary candidates for the positive training, we used SYSCILIA gold standard (SCGSv1) and for the negative training the human metabolome database (HMDB 3.0) as well as a manually curated housekeeping gene data set. FDR, false discovery rate. (B) Segmentation algorithm for cytoplasm and cilia detection: (1) detected nuclei from DAPI channel, (2) nuclear automated segmentation, (3) cell outline automated using cytoplasm_detection_D of the program Acapella, and (4) cilia automated detection and segmentation. Images have been modified for illustration purposes. Scale bar: 10 μm. (C) Representative images of serum-starved SEMG cells without siRNA showing basal ciliation (small green rods in EGFP channel). Red (mCherry) marks cells in S/G2/M phase of the cycle, green (EGFP) marks cilia, blue (DAPI) marks nuclei. siRNAs used as positive controls: KIF3A interferes with ciliation but not cell cycle. ACTR3 shows increased length of cilia (Kim et al., 2010). CRNKL1 implicated in cell cycle progression (Zhang et al., 1991) and showed increased mCherry nuclei and reduced ciliation. Scale bar: 10 μm. (D) Receiver operating characteristic (ROC) for the classifier, which used features from three data sources. Dashed line: theoretical random classifier. (E) Precision-recall curve for the final classifier. (F) Median value (red center bar) and interquartile ranges (blue box) box plot of the classifier scores for the corresponding number of supporting number of evidences (NOEs) in Cildb and the genes used as negative and positive training examples. The indicated contrasts were found significant(*) with a highest value of p < 1.03 × 10−4 (one-tailed Wilcoxon's Rank sum test). (G) Same as (F), limited to the NOEs from humans only. The indicated contrasts were found significant(*) with a highest value of p < 1.43 × 10−10 (one-tailed Wilcoxon's Rank sum test). See Figure 1—figure supplement 1, 2 for the prediction score on the gold standard and candidates as well as the visible improvement of the ROC curve and precision–recall curve.DOI: http://dx.doi.org/10.7554/eLife.06602.003
+**Figure 1.:** (A) High-content small interfering RNA (siRNA) cell-based screen using reverse transfection of the library in media containing serum for 72 hr, followed by 24 hr serum starvation, fixation and DAPI staining. Subsequent fluorescent imaging and algorithmic analysis performed for all pooled siRNAs. To assess ciliary candidates for the positive training, we used SYSCILIA gold standard (SCGSv1) and for the negative training the human metabolome database (HMDB 3.0) as well as a manually curated housekeeping gene data set. FDR, false discovery rate. (B) Segmentation algorithm for cytoplasm and cilia detection: (1) detected nuclei from DAPI channel, (2) nuclear automated segmentation, (3) cell outline automated using cytoplasm_detection_D of the program Acapella, and (4) cilia automated detection and segmentation. Images have been modified for illustration purposes. Scale bar: 10 μm. (C) Representative images of serum-starved SEMG cells without siRNA showing basal ciliation (small green rods in EGFP channel). Red (mCherry) marks cells in S/G2/M phase of the cycle, green (EGFP) marks cilia, blue (DAPI) marks nuclei. siRNAs used as positive controls: KIF3A interferes with ciliation but not cell cycle. ACTR3 shows increased length of cilia (Kim et al., 2010). CRNKL1 implicated in cell cycle progression (Zhang et al., 1991) and showed increased mCherry nuclei and reduced ciliation. Scale bar: 10 μm. (D) Receiver operating characteristic (ROC) for the classifier, which used features from three data sources. Dashed line: theoretical random classifier. (E) Precision-recall curve for the final classifier. (F) Median value (red center bar) and interquartile ranges (blue box) box plot of the classifier scores for the corresponding number of supporting number of evidences (NOEs) in Cildb and the genes used as negative and positive training examples. The indicated contrasts were found significant(*) with a highest value of p < 1.03 × 10−4 (one-tailed Wilcoxon's Rank sum test). (G) Same as (F), limited to the NOEs from humans only. The indicated contrasts were found significant(*) with a highest value of p < 1.43 × 10−10 (one-tailed Wilcoxon's Rank sum test). See Figure 1—figure supplement 1, 2 for the prediction score on the gold standard and candidates as well as the visible improvement of the ROC curve and precision–recall curve.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A–C) Box plot reporting median value (red center bar) and interquartile ranges (blue box) of the classifier scores for gold standard positive and negative genes (out of bag performance, that is, for every gene the score excludes trees where the gene was used for training), also included are boxes for a set of ciliopathy candidate genes (SYSCILIA candidate genes) and genes not annotated to be ciliopathy related (Unknown), which were not used in the training. (A) Classifier based on cilia siRNA screen features only. (B) Classifier based on cilia siRNA screen and centriole siRNA screen features only. (C) Classifier including all siRNA and GTex project expression signature based features. In all cases, the median value for positive set or candidate genes differed significantly from the negative set or unknown set of genes (One-tailed Wilcoxon rank sum test).DOI: http://dx.doi.org/10.7554/eLife.06602.004
+**Figure 1—figure supplement 1.:** (A–C) Box plot reporting median value (red center bar) and interquartile ranges (blue box) of the classifier scores for gold standard positive and negative genes (out of bag performance, that is, for every gene the score excludes trees where the gene was used for training), also included are boxes for a set of ciliopathy candidate genes (SYSCILIA candidate genes) and genes not annotated to be ciliopathy related (Unknown), which were not used in the training. (A) Classifier based on cilia siRNA screen features only. (B) Classifier based on cilia siRNA screen and centriole siRNA screen features only. (C) Classifier including all siRNA and GTex project expression signature based features. In all cases, the median value for positive set or candidate genes differed significantly from the negative set or unknown set of genes (One-tailed Wilcoxon rank sum test).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) ROC for classifiers trained on different partitions of the feature space (blue: final set, magenta: excluding centriole biogenesis siRNA based features, red: including only features from the whole genome siRNA screen performed in this study). The dashed black line corresponds to a theoretical random classifier. (B) As in A but showing precision-recall curve for each classifier.DOI: http://dx.doi.org/10.7554/eLife.06602.005
+**Figure 1—figure supplement 2.:** (A) ROC for classifiers trained on different partitions of the feature space (blue: final set, magenta: excluding centriole biogenesis siRNA based features, red: including only features from the whole genome siRNA screen performed in this study). The dashed black line corresponds to a theoretical random classifier. (B) As in A but showing precision-recall curve for each classifier.
 
 Using this approach, we first optimized seeding density, serum withdrawal conditions, and imaging parameters using a siRNA positive control for cilia (i.e., no known effect on the cell cycle but blocking ciliogenesis) of KIF3A, and for cell cycle (i.e., no direct effect on ciliogenesis but traps cells in G2/M phase of the cell cycle or the effect described above) of ACTR3 and CRNKL1, and verified reporters were robust (Figure 1C).
 
-## Cell-based screen and validation of whole-genome siRNA data set
+### Cell-based screen and validation of whole-genome siRNA data set
 
 We conducted a high-throughput siRNA knockdown study for 18,045 genes of the human genome performed in duplicate, using 4–5 unique pooled siRNAs per gene. After siRNA transfection, ciliation was induced by serum starvation, then fixed and imaged in 384-well plates in three channels (see ‘Materials and methods’). 18 non-overlapping cellular features reflecting nuclear, cytoplasm and ciliary state, combined into 31 parameters (Supplementary file 1), yielding 559,395 values across the screen (Supplementary file 2).
 
-## Development of the CILIOGENESIS data set
+### Development of the CILIOGENESIS data set
 
 The rationale of our whole-genome siRNA screen with SEMG cells was to obtain data allowing for identification of genes as potential candidates as a cause of JS by using a supervised learning approach. We trained a Random Forest classifier using known ‘ciliary genes’ as a positive training set, derived from the SYSCILIA consortium gold standard (SCGSv1) composed of 303 confirmed factors (van Dam et al., 2013). The negative set incorporated genes not involved in any currently known ciliary processes and included 5445 genes annotated in the human metabolome database (HMDB 3.0) (Wishart et al., 2013), as well as a manually curated set of 666 housekeeping genes. To ensure accurate annotation of gene sets used in the classifier training, all genes were cross checked with Cildb V3.0, a database of ‘ciliary genes’ (i.e., genes with presumed ciliary function) based on high-throughput studies across multiple species (Arnaiz et al., 2009, 2014). Based on this resource, we removed genes with conflicting annotation from both the positive and negative sets, leaving a final list of high-confidence positive (n = 244) and negative (n = 1802) cilia candidates.
 
@@ -136,57 +136,240 @@ Next, classifier performance was evaluated by examination of the area under the 
 
 Cildb is a multispecies knowledge base constructed through integration of high-throughput screens aimed at identifying ciliary or ciliary-related genes. Cildb outputs two integers for each gene in the knowledge base, referring to independent experimental ‘number of evidences’ (NOEs, i.e., publications) indicating ciliary association, with one for NOE in human studies and one for NOE in ‘any species’. We compared gene-specific classifier score (excluding any genes used in training) with the Cildb NOE output. Significant positive trends were observed when comparing to increasing NOE in both the multi-species and human-only sets (Jonckheere–Terpstra test, see methods, p < 3.04 × 10−29 and p < 6.50 × 10−42, Figure 1F,G). Moreover, we also observed a significant difference when comparing scores in any of the NOE bins to the zero NOE bin in both the multi-species and human sets (p < 1.03 × 10−4 and p < 1.43 × 10−10, respectively, one-tailed Wilcoxon rank sum).
 
-## Enrichment analysis of the CILIOGENESIS data set
+### Enrichment analysis of the CILIOGENESIS data set
 
 To identify possible candidates for ciliopathies, we performed a gene ontology (GO)-term enrichment analysis on the high-confidence gene list, with functional annotation clustering using DAVID (Huang da et al., 2009a; Huang da et al., 2009b). We used a GO-enrichment cutoff of FDR <0.05 (Benjamini–Hocheberg test). To ascertain the novelty of genes included in the CILIOGENESIS data set, we excluded SCGSv1 genes used in the training, leaving 1,177 genes. GO enrichment resulted in several significant terms including non-membrane bound organelle, microtubule cytoskeleton/centrosome, spermatogenesis, and microtubule cytoskeleton organization demonstrating an agreement with previous annotations for cilia associations (Supplementary file 3C). The involvement of ciliary processes in the CILIOGENESIS data set was supported by MsigDB analysis showing gene enrichment among others for the recruitment of mitotic centrosome proteins and complexes, microtubule/cytoskeleton and centrosome (Supplementary file 3D,E) (Subramanian et al., 2005). Enrichment validation suggested that the CILIOGENESIS data set may be enriched for ciliopathy disease genes.
 
-## Intersection of CILIOGENESIS with unsolved JS cases highlights KIAA0586
+### Intersection of CILIOGENESIS with unsolved JS cases highlights KIAA0586
 
 Previous whole-exome sequencing in 287 cases of JS left ∼50% without a genetic explanation (Akizu et al., 2014), suggesting additional causes remain to be identified. Of these, 75% displayed parental consanguinity, suggesting that causative variants might be homozygous. In about half of the remaining cases, sequencing on at least one parent was available, enabling phasing of identified alleles. From these 145 individuals, we tabulated 5485 variants containing 2348 homozygous variants and 3137 potentially compounds heterozygous variant pairs. We prioritized variants occurring within the coding region and canonical splice sites of any of the 591 CILIOGENESIS genes, and identified 179 variants including 106 homozygous and 73 potentially compound heterozygous variant pairs, or a 96.7% reduction in variants to be considered. Collectively, variants were identified in 112 of the 591 CILIOGENESIS genes, respectively. The only gene with more than two families displaying variants was KIAA0586, prompting further analysis.
 
+KIAA0586 (i.e., the orthologue of chicken and mouse Talpid3) is composed of 34 exons with at least six major transcripts (Figure 2A). From these 145 sequenced probands (written informed consent provided), there were four displaying putative compound heterozygous and two displaying homozygous potentially deleterious variants. Interestingly, in each of the four compound heterozygous probands, there was a shared frameshift mutation, (chr14:58899157del; c.428del, p.Arg143Lysfs*4), which we refer to as M1 (mutation 1). Each of the four carried a single additional potentially deleterious variant, including mutations in a canonical acceptor splice site (chr14:58915212G>A; c.1120+1G>A, p.Thr323Hisfs*3; M2), a canonical donor splice site (chr14:58923419G>C; c.1413-1G>C; p.Phe472Alafs*5; M3), and a missense affecting the start codon of two transcripts (chr14:58896138T>C; c.293T>C; p.Met98Thr; M4; T1; or c.2T>C; p.Met1?; T4-T5, where T refers to transcript number). Implementing an algorithm to identify copy number variants from exome-sequencing data (Fromer et al., 2012), we additionally identified a deletion of 15.5 kilobases (Kb) spanning exon 10–17 (chr14:?_58923420_58938997_?del; c.1413-?_2793+?del; p.?; M5) in one patient. These mutations were all confirmed with Sanger sequencing or quantitative PCR, and all segregated according a strict recessive mode of inheritance in all available family members (Figure 2B, Figure 2—figure supplement 1, Figure 2—figure supplement 2). We conclude that compound heterozygous variants in KIAA0586 contribute to JS. Each patient carrying the M1 mutation had a demonstrable second mutation on the other allele, suggesting a recessive mode of inheritance.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig2-v2.jpg)
 
-**Figure 2.:** KIAA0586.(A) Genomic structure and mRNA transcripts of KIAA0586. Transcript 1 (T1): full-length isoform with 34 exons. T2–T4 have different initiation sites, lack exon 5, and T3 lacks exon 14. T5 starts at the same position as T4 and incorporates exon 6. The shortest transcript (T6) initiates in exon 7, lacks exon 32 and 33, and terminates using an alternative exon, which is not incorporated in the other transcripts. Gray boxes represent alternative exons. UTR's are represented by half-height boxes. The location of the mutations is indicated by M1–M7. (B) Pedigrees of the Joubert syndrome (JS) families with ancestries of USA (MTI-233 and MTI-103), Mexico (MTI-165), Turkey (MTI-1944 and COR354), and Syria (MTI-505), respectively, demonstrating the segregation of the compound heterozygous mutations in non-consanguineous families and homozygous mutations in consanguineous families. Inferred genotype is italicized. M, mutation; T, transcript. See Figure 2—figure supplement 1 for the chromatograms of the mutations in KIAA0586. Figure 2—figure supplement 2 shows the results of the quantitative PCR confirming the large heterozygous mutation in MTI-1944.DOI: http://dx.doi.org/10.7554/eLife.06602.006
+**Figure 2.:** (A) Genomic structure and mRNA transcripts of KIAA0586. Transcript 1 (T1): full-length isoform with 34 exons. T2–T4 have different initiation sites, lack exon 5, and T3 lacks exon 14. T5 starts at the same position as T4 and incorporates exon 6. The shortest transcript (T6) initiates in exon 7, lacks exon 32 and 33, and terminates using an alternative exon, which is not incorporated in the other transcripts. Gray boxes represent alternative exons. UTR's are represented by half-height boxes. The location of the mutations is indicated by M1–M7. (B) Pedigrees of the Joubert syndrome (JS) families with ancestries of USA (MTI-233 and MTI-103), Mexico (MTI-165), Turkey (MTI-1944 and COR354), and Syria (MTI-505), respectively, demonstrating the segregation of the compound heterozygous mutations in non-consanguineous families and homozygous mutations in consanguineous families. Inferred genotype is italicized. M, mutation; T, transcript. See Figure 2—figure supplement 1 for the chromatograms of the mutations in KIAA0586. Figure 2—figure supplement 2 shows the results of the quantitative PCR confirming the large heterozygous mutation in MTI-1944.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** KIAA0586 gene.The chromatograms of the mutations in identified in KIAA0586 of individuals with JS. A) M1, B) M2, C) M3, D) M4, E) M6, F) M7.DOI: http://dx.doi.org/10.7554/eLife.06602.007
+**Figure 2—figure supplement 1.:** The chromatograms of the mutations in identified in KIAA0586 of individuals with JS. A) M1, B) M2, C) M3, D) M4, E) M6, F) M7.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Using quantitative PCR on genomic DNA of the large deletion with unknown specific boundaries was confirmed to segregate in MTI-1944. By analyzing two primer sets outside the presumed heterozygous deletions spanning exon 12 to 20 and two within the deletion absence of approximately half the product in the mother and affected child was shown. Input of genomic DNA was normalized against GAPDH. C, control; F, father; M, Mother; A, affected child.DOI: http://dx.doi.org/10.7554/eLife.06602.008
+**Figure 2—figure supplement 2.:** Using quantitative PCR on genomic DNA of the large deletion with unknown specific boundaries was confirmed to segregate in MTI-1944. By analyzing two primer sets outside the presumed heterozygous deletions spanning exon 12 to 20 and two within the deletion absence of approximately half the product in the mother and affected child was shown. Input of genomic DNA was normalized against GAPDH. C, control; F, father; M, Mother; A, affected child.
 
 Two consanguineous families each showed a homozygous mutation in KIAA0586. One was predicted to alter splicing in a constitutively incorporated exon (c.2414-1G>C; p.?; M6). The other was a single base-pair deletion (c.74del; p.Lys25Argfs*6; M7), in an exon incorporated into only three of the six annotated transcripts, all of which are ubiquitously expressed. We conclude that homozygous mutations in KIAA0586 can also contribute to JS.
 
 The common frameshift variant M1 was identified in all four families with compound heterozygous mutations. Evaluation of M1 in the Exome Variant Server (NHLBI GO Exome Sequencing Project (ESP), Seattle, WA, URL: http://evs.gs.washington.edu/EVS/ [May, 2015]) identified in 25/7,757 European American alleles and 3/3511 African American alleles, all in a heterozygous state, presumably all in healthy individuals. Exome Aggregation Consortium (ExAC, Cambridge, MA, URL: http://exac.broadinstitute.org [May, 2015]) showed an overall frequency of 244/120,680 M1 alleles. Combining these with the 1000 Genomes data suggests an allele frequency of 0.0036 in the general population. We conclude that M1 is a relatively common allele in the general population, found in about 1/300 individuals. The M1 variant was found in individual of varying ancestry, but we cannot exclude a common founder mutation.
 
-## Evaluation of KIAA0586 as a candidate gene in other JS cohorts
+### Evaluation of KIAA0586 as a candidate gene in other JS cohorts
 
-We speculated that M1 was likely to represent a common mutation among JS patients. Thus, we screened an additional cohort of 163 classical JS patients with a proven ‘molar tooth sign’ collected primarily from Mediterranean regions. The M1 allele was surprisingly identified in 17 of 326 alleles (5.21%), of which one was homozygous (
+We speculated that M1 was likely to represent a common mutation among JS patients. Thus, we screened an additional cohort of 163 classical JS patients with a proven ‘molar tooth sign’ collected primarily from Mediterranean regions. The M1 allele was surprisingly identified in 17 of 326 alleles (5.21%), of which one was homozygous (Figure 3 individual NG2872). Ethnically matched Mediterranean controls showed 2/536 M1 alleles (0.37%, p < 0.0001, odds ratio 13.51). In the remaining 15 individuals, we attempted comprehensive Sanger sequencing of the entire KIAA0586 transcript, eventually identifying a pathogenic variant in eight individuals (57%), all leading to predicted splice, stop or frameshift changes, again consistent with recessive inheritance. In the other seven JS patients, a second mutation was not yet identified (Table 1, Table 1—source data 1). Although it is possible that one or more of these individuals carries M1 by chance, it is most likely that a second mutation exists, not yet uncovered.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig3-v2.jpg)
 
-**Figure 3.:** KIAA0586 mutations.Magnetic resonance imaging (MRI) in a healthy individual and patients with KIAA0586 mutations showing thickened and mal-oriented superior cerebellar peduncle (upper, red ‘arrowheads’), deepened interpeduncular fossa and constituting the ‘molar tooth sign’ (red circle). In COR-354-2-3, the molar tooth sign was very mild, possibly due to suboptimal image averaging. Figure 3—figure supplement 1 shows the imaging phenotype of affected JS individual MTI-1944-2-1.DOI: http://dx.doi.org/10.7554/eLife.06602.009
+**Figure 3.:** Magnetic resonance imaging (MRI) in a healthy individual and patients with KIAA0586 mutations showing thickened and mal-oriented superior cerebellar peduncle (upper, red ‘arrowheads’), deepened interpeduncular fossa and constituting the ‘molar tooth sign’ (red circle). In COR-354-2-3, the molar tooth sign was very mild, possibly due to suboptimal image averaging. Figure 3—figure supplement 1 shows the imaging phenotype of affected JS individual MTI-1944-2-1.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** KIAA0586 mutations.MRI of individual MTI-1944 affected by KIAA0586 mutations causing JS. For the affected individuals, the diagnosis of JS was confirmed by the deepened interpeduncular fossa and abnormal superior cerebellar peduncles, showing the ‘molar tooth sign’ (red circle).DOI: http://dx.doi.org/10.7554/eLife.06602.010
+**Figure 3—figure supplement 1.:** MRI of individual MTI-1944 affected by KIAA0586 mutations causing JS. For the affected individuals, the diagnosis of JS was confirmed by the deepened interpeduncular fossa and abnormal superior cerebellar peduncles, showing the ‘molar tooth sign’ (red circle).
+
+**Table 1.**
+ All alleles identified in KIAA0586 causative for Joubert syndromeTable 1—source data 1.Chromatograms of mutations in the KIAA0586 gene identified in the additional cohort of Mediterranean individuals with Joubert syndrome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th colspan="3">Allele 1 (based on T1)</th>
+      <th colspan="3">Allele 2 (based on T1)</th>
+    </tr>
+    <tr>
+      <th>Patient ID</th>
+      <th>Genotype</th>
+      <th>Genomic</th>
+      <th>DNA</th>
+      <th>Protein</th>
+      <th>Genomic</th>
+      <th>DNA</th>
+      <th>Protein</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MTI-233</td>
+      <td>M1/M2</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58915212G&gt;A</td>
+      <td>c.1120+1G&gt;A</td>
+      <td>p.Thr323Hisfs*3</td>
+    </tr>
+    <tr>
+      <td>MTI-103</td>
+      <td>M1/M3</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58923419G&gt;C</td>
+      <td>c.1413-1G&gt;C</td>
+      <td>p.Arg472Serfs*2</td>
+    </tr>
+    <tr>
+      <td>MTI-165</td>
+      <td>M1/M4</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58896138T&gt;C</td>
+      <td>c.2T&gt;C (based on T4-T5)</td>
+      <td>p.Met1? (based on T4-T5)</td>
+    </tr>
+    <tr>
+      <td>MTI-1944</td>
+      <td>M1/M5</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.?_58923420_58938997_?del</td>
+      <td>c.1413-?_2793+?del</td>
+      <td>p.?</td>
+    </tr>
+    <tr>
+      <td>MTI-505</td>
+      <td>M6/M6</td>
+      <td>g.58934452G&gt;C</td>
+      <td>c.2414-1G&gt;C</td>
+      <td>p.?</td>
+      <td>g.58934452G&gt;C</td>
+      <td>c.2414-1G&gt;C</td>
+      <td>p.?</td>
+    </tr>
+    <tr>
+      <td>COR354</td>
+      <td>M7/M7</td>
+      <td>g.58895020del</td>
+      <td>c.74del</td>
+      <td>p.Lys25Argfs*6</td>
+      <td>g.58895020del</td>
+      <td>c.74del</td>
+      <td>p.Lys25Argfs*6</td>
+    </tr>
+    <tr>
+      <td colspan="8">Mediterranean cohort analysis</td>
+    </tr>
+    <tr>
+      <td>NG2872</td>
+      <td>M1/M1</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+    </tr>
+    <tr>
+      <td>NG4158</td>
+      <td>M1/M8</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58909503C&gt;T</td>
+      <td>c.649C&gt;T</td>
+      <td>p.Gln217*</td>
+    </tr>
+    <tr>
+      <td>NG2326</td>
+      <td>M1/M9</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58910790_58910791del</td>
+      <td>c.863_864del</td>
+      <td>p.Gln288Argfs*7</td>
+    </tr>
+    <tr>
+      <td>NG1776</td>
+      <td>M1/M9</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58910790_58910791del</td>
+      <td>c.863_864del</td>
+      <td>p.Gln288Argfs*7</td>
+    </tr>
+    <tr>
+      <td>NG3928</td>
+      <td>M1/M10</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58915097C&gt;T</td>
+      <td>c.1006C&gt;T</td>
+      <td>p.Gln336*</td>
+    </tr>
+    <tr>
+      <td>NG2458</td>
+      <td>M1/M11</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58924613_58924616delinsAAA</td>
+      <td>c.1658_1661delinsAAA</td>
+      <td>p.Val553Glufs*79</td>
+    </tr>
+    <tr>
+      <td>NG2286</td>
+      <td>M1/M12</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58925263G&gt;A</td>
+      <td>c.1815G&gt;A</td>
+      <td>p.= / p.?</td>
+    </tr>
+    <tr>
+      <td>NG1485</td>
+      <td>M1/M13</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58927869C&gt;T</td>
+      <td>c.2209C&gt;T</td>
+      <td>p.Arg737*</td>
+    </tr>
+    <tr>
+      <td>NG3758</td>
+      <td>M1/M14</td>
+      <td>g.58899157del</td>
+      <td>c.428del</td>
+      <td>p.Arg143Lysfs*4</td>
+      <td>g.58953883del</td>
+      <td>c.3462del</td>
+      <td>p.Gly1155Glufs*40</td>
+    </tr>
+  </tbody>
+</table>
+
+_M; mutation; T; transcript. Table 1—Source data 1 shows chromatograms belonging to the identified mutations in the Mediterranean cohort._
 
 To evaluate the effect of predicted splicing mutations in KIAA0586, we generated mRNA from cultured fibroblasts of an affected and unaffected member of family MTI-233 and MTI-103, displaying an M1 compounded with a splice mutation (M2 or M3, respectively). Sanger sequencing of poly-A primed mRNA showed that the mutation M2 led to the skipping of exon 9 and mutation M3 led to utilization of a cryptic splice acceptor located 16 bp downstream (i.e., 3′), resulting in a frameshifted transcript (Figure 2—figure supplement 1B,C), suggesting partial or complete loss-of-function.
 
 Loss-of-function mutations in Talpid3 result in a short-rib polydactyly-like phenotype in chicken and mouse, with a vascular defect and early lethality, all attributable due to defective ciliogenesis (Bangs et al., 2011; Davey et al., 2014). Our patients presented classical features of JS including the MTI of varying severity (Figure 3, Figure 3—figure supplement 1), without lethality or demonstrable excessive fetal wasting in affected families. Most cases displayed hypotonia, ataxia, developmental delay, and intellectual disability without skeletal or limb malformations. Breathing abnormalities, seizures, macrocephaly, and ophthalmological defects were found in a subset of the cases (Supplementary file 4A). The affected child of MTI-165 passed away at the age of 18 months from apnea, and no imaging was available. The results support the involvement of KIAA0586 in the pathogenesis of JS.
 
-## Mutated KIAA0586 results in absence of detectable protein in patient cells
+### Mutated KIAA0586 results in absence of detectable protein in patient cells
 
-RT-PCR analysis with primers spanning various transcripts showed ubiquitous
+RT-PCR analysis with primers spanning various transcripts showed ubiquitous KIAA0586 expression in various tissues (Figure 4—figure supplement 1A). To determine the effect of mutations on KIAA0586 protein level, we analyzed patient fibroblasts of family MTI-103 and MTI-233 by Western analysis using a KIAA0586-specific antibody (Kobayashi et al., 2014). The level of KIAA0586 protein in patient samples was below detection, whereas both carriers showed reduced but detectable expression compared with control (Figure 4). In human RPE1 cells transfected with KIAA0586 siRNA, we documented reduced protein levels, supporting antibody specificity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig4-v2.jpg)
 
-**Figure 4.:** Immunoblot analysis of KIAA0586 in fibroblasts from family MTI-103 and MTI-233. Lysates from RPE1 cells transfected with scrambled or KIAA0586 siRNA were used as control. M, unaffected carrier (mother); A, affected child. RPE1, retinal pigment epithelial-1 cell line. Figure 4—figure supplement 1A represents an expression analysis of the KIAA0586 gene.DOI: http://dx.doi.org/10.7554/eLife.06602.013
+**Figure 4.:** Immunoblot analysis of KIAA0586 in fibroblasts from family MTI-103 and MTI-233. Lysates from RPE1 cells transfected with scrambled or KIAA0586 siRNA were used as control. M, unaffected carrier (mother); A, affected child. RPE1, retinal pigment epithelial-1 cell line. Figure 4—figure supplement 1A represents an expression analysis of the KIAA0586 gene.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/06602/elife-06602-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** KIAA0586 gene.RT-PCR analysis showing differential expression levels of the KIAA0586 transcripts amongst various ciliated and non-ciliated tissues was observed. Co, colon; Ce, cerebellum; K, kidney; L, liver; MQ, MilliQ; T, testis; T1-T5 transcript number corresponding to Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.06602.014
+**Figure 4—figure supplement 1.:** RT-PCR analysis showing differential expression levels of the KIAA0586 transcripts amongst various ciliated and non-ciliated tissues was observed. Co, colon; Ce, cerebellum; K, kidney; L, liver; MQ, MilliQ; T, testis; T1-T5 transcript number corresponding to Figure 2A.
 
 ## Discussion
 
@@ -208,21 +391,21 @@ Because the mutations affect only exons incorporated in a subset of transcripts 
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 hTERT-transformed RPE1 cells were cultured in DMEM/F12 medium supplemented with 10% fetal bovine serum (FBS), under standard conditions (37°C, 5% CO2). Plasmid DNAs harboring mouse Smo-EGFP and mCherry-Geminin (1–110aa) fusion genes were transfected to hTERT-RPE1 cells and the stable cell line; Smo-EGFP-mCherry-Geminin/hTERT-RPE1 (SEMG) was established by G418 selection. To induce ciliogenesis, the cells were serum starved on serum-free DMEM/F12 media for 24–48 hr prior to fixation.
 
-## Whole-genome siRNA library screen
+### Whole-genome siRNA library screen
 
-## Primary screen
+#### Primary screen
 
 An arrayed library containing pooled siRNAs targeting 18,045 human genes (Dharmacon, Lafayette, CO) was screened in duplicate. Assay plates (384-well plate with optical bottom; Greiner Bio-One, Monroe, NC) were spotted with 1 μl of 0.5 μM siRNA using the Velocity 11-Bravo Pipette with a 384 ST head. Reverse transfection was performed using Lipofectamine RNAiMAX: final siRNA concentration was 10 nM. SEMG cells were suspended in DMEM/F12 supplemented with 10% FBS and seeded onto assay plates using the Matrix-Well Mate (2,000 cells in 40 μl medium for each well). Culture medium was replaced with DMEM 24 hr after transfection using the TiterTek-MAP-C, and cells were incubated for additional 48 hr before fixation in 4% PFA and subsequent staining with DAPI.
 
-## Imaging and image analysis
+#### Imaging and image analysis
 
 Image acquisition of the siRNA screen was performed on the Opera QEHS system (PerkinElmer, Waltham, MA). All cells were imaged with a 20× objective in a standardized manner using the Opera QEHS system (Perkin Elmer, Waltham, MA). The nuclei were stained with DAPI and exposed for ∼10 ms using the non-confocal light path at 365-nm excitation with an and a 450/50-nm emission filter. The green fluorescence for expression of Smo was acquired at 488-nm excitation using the confocal system. The expression of Geminin was measured at 561-nm laser line using the confocal system. Each well was imaged in triplicate. Acapella 2.0 software (PerkinElmer, Waltham, MA) was used to perform image segmentation and cytometry with similar algorithms previously described (Kim et al., 2010). 31 output parameters were obtained by an algorithm generated for segmentation of the nucleus, cytoplasm, and primary cilium in the SEMG cells (Figure 1A–C, Supplementary file 1). The algorithm applied for segmentation of the nucleus, cytoplasm, and primary cilium in SEMG was confirmed by the manual imaging analysis in both serum positive and negative conditions.
 
-## Random Forest classification of cilia genes
+#### Random Forest classification of cilia genes
 
 Data generated by whole-genome siRNA high-content screen were quantile normalized across batches to facilitate cross validation. The SYSCILIA gold standard (SCGSv1) of known ciliary components (van Dam et al., 2013) was used as positive training examples. The SCGSv1 included 303 genes curated by the SYSCILIA consortium associated to a ciliopathy, ciliary localization, or function in ciliogenesis (van Dam et al., 2013). An additional list which included 419 candidate ciliopathy associated genes, which accompanied the gold standard, was used to benchmark the performance of our classifier and was excluded from training. As non-ciliary examples, we used two non-ciliary sets, the metabolome consisting of 5,445 genes (Wishart et al., 2013) and a manually created list of housekeeping genes of 666 genes. To further hone the positive and negative training sets, we use Cildb (V3.0) a comprehensive resource aggregating experimental evidence from 15 model organisms including humans (Arnaiz et al., 2009, 2014). Genes appearing in the Cildb list with any evidence of involvement in ciliary related processes were excluded (n = 9,073) from our negative training set, and in similar ways, genes in the positive training set were removed if evidence of ciliary involved was not seen in Cildb. The final positive training set composed of 244 genes, whereas in the negative training sets 1,802 genes remain. To prioritize candidate genes for ciliopathies, a Random Forest classifier was trained to accurately classify positive from negative samples based on features from data generated by our whole-genome siRNA screen, data from centriole formation from Balestra et al., and patterns of gene expression signatures across tissue from the GTEx project (GTEx Consortium, 2013).
 
@@ -230,42 +413,42 @@ First, the classifier was trained on the first replicate data set of the whole-g
 
 Classification was performed using the Random Forest approach (Breiman, 2001); trees were grown from bootstrapped samples of genes selected with replacement such that the number of negative samples matches the number of positive ones (randomized under sampling) (Seiffert et al., 2010). In each iteration, the square root the number of features was used (mtry, as suggested by Brieman et al.). Each forest is comprised of 5,000 trees trained as above (ntree). All predicted scores reported throughout our analysis are based on out-of-bag prediction scores (i.e., Random-Forest cross-validation scores).
 
-## Gene set functional annotation clustering with DAVID
+#### Gene set functional annotation clustering with DAVID
 
 Functional annotation clustering of the CILIOGENESIS data set was performed with the online web tool DAVID (Huang da et al., 2009b). A set of 591 high scoring genes from the final joined classifier are used for the analysis (FDR < 0.1). CILIOGENESIS was tested for enrichment of GO FAT, KEGG, and Reactome pathway categories using the medium stringency setting of DAVID. As a background set, we use all genes, which have a full feature sets in all three data sources (16,810 genes; Supplementary file 3C).
 
-## Gene set enrichment analysis with MsigDB
+#### Gene set enrichment analysis with MsigDB
 
 Gene set enrichment was performed by comparison against a collection of gene sets selected from the MsigDB (v5.0) database (Hallmark set, GO set, KEGG set, and Reactome set) (Subramanian et al., 2005). As a background set, we used all genes, which have a full feature sets in all three data sources (16,431). Sets larger than 400 or smaller than 5 were excluded, and only sets with a minimal overlap of three genes were included from the tested list in the p-value calculation. Enrichment p-value was calculated using a hypergeometric test of enrichment, and are only sets with FDR <0.1 are reported (estimated with B&H procedure).
 
-## Jonckheere–Terpstra test of trend
+#### Jonckheere–Terpstra test of trend
 
 When considering any type of evidence, the trend is tested for each individual bin (0, 1, 2, 3, 4, 5, 6, 7, >8). For ‘human only’ evidence, the trend was tested for bins of (0, 1, 2, 3, >4) (Bewick et al., 2004).
 
-## Genetic analysis
+### Genetic analysis
 
-## Patient Recruitment
+#### Patient Recruitment
 
 Families were recruited for study based upon the presentation of JS in at least one member of the family. This study was approved by the institutional review boards of the participating centers. All subjects provided written informed consent (including consent to publish) prior to participation in the study. Sampling of blood for this study was performed on the proband and all affected and unaffected available genetically informative siblings and parents consistent with IRB guidelines or for skin biopsies from the proband and one parent when available. All patients were evaluated directly by one of the co-authors with specialty training in neurology, child neurology and/or clinical genetics, and in accordance with local medical practices. Detailed pedigree information, symptomatology, detailed general and neurological evaluations, brain/spine imaging and electrodiagnostic workup were performed in all affected members as well as clinically suspected members of each family, along with videos documenting the neurological examination in most cases.
 
-## Exome sequencing
+#### Exome sequencing
 
 We performed WES in 145 families with affected(s) displaying features consistent with JS. Blood was acquired from informed, consenting individuals according to institutional guidelines, and DNA extracted using established protocols. In solution, exome capture was performed using the SureSelect Human All Exome 50 Mb Kit (Agilent Technologies, Santa Clara, CA) with 150-bp paired-end read sequences generated on a HiSeq2000 (Illumina, San Diego, CA). Sequences were aligned to hg19 and variants identified through the GATK pipeline (DePristo et al., 2011). Variations were annotated with in-house software and the SeattleSeq server (Dixon-Salazar et al., 2012).
 
-## Systematic whole exome data analysis and variant identification
+#### Systematic whole exome data analysis and variant identification
 
 Initially, we systematically filtered for segregating (when WES of family member was present) autosomal variants with a total allele frequency <1% in Exome Variant Server (EVS; version ESP6500SIV2). Furthermore, all variants (except frame shifts variants) had a combined annotation dependent depletion_phred score ≥10 (CADD) (Kircher et al., 2014). All possible single nucleotide variants CADD scores were downloaded and provide a score to prioritize functional, deleterious and pathogenic variants across many functional categories, effect sizes and genetic architectures was unmatched by any current single-annotation method. Frameshift variants were included with a GERP-score ≥4.0 (Cooper et al., 2005). Homozygous variants were filtered out when present in unaffected individuals from our in-house database (n = 1,081), and compound heterozygous variants were removed when both were present in unaffected individuals. After performance of this script, we focused on the gene set of 591 genes of FDR <0.1 by applying a filter on the previous analysis. Variants in KIAA0586 were analyzed for pathogenesis on the six largest transcripts (Supplementary file 4B) and segregation with disease within family members by regular PCR reaction. Primers for variant analysis and whole-gene scanning were designed using Primer3 (http://biotools.umassmed.edu/bioapps/primer3_www.cgi) (Supplementary file 5A).
 
-## mRNA and gDNA analysis by RT-PCR
+#### mRNA and gDNA analysis by RT-PCR
 
 Quantitative PCR on genomic DNA was performed to confirm a the large deletion of unknown specific boundaries in MTI-1944. By analyzing two primer sets outside the deletion spanning exon 12 to 20 and two primer sets within the deletion quantity of PCR product was analyzed. Quantitative PCRs were performed using the C1000 Touch Thermocycler (Bio-Rad, Hercules, CA) in 96 micro-well plates. All samples were run in triplicate using iTaq Universal SYBR Green Supermix (Bio-Rad, Hercules, CA) mastermix, exonic primers (Supplementary file 5B) and template DNA. Input of genomic DNA was normalized against internal control gene GAPDH.
 
 Total RNA was isolated from cultured fibroblasts from affected individual MTI-233-2-1 and MTI-103-2-2 and unaffected MTI-233-1-2 and MTI-103-1-2 according to manufacturer's protocol (Invitrogen, Carlsbad, CA). Reverse transcription with SuperScript III First-Strand Synthesis System (Invitrogen, Carlsbad, CA) was performed on 1 μg of total RNA. RT-PCR experiments were performed using 2.5 μl cDNA with primers in exons 8 and 10 (M2) and 10 and 12/13 (M3; intron spanning) (Supplementary file 5B) (35 cycles) followed by Sanger sequencing using a 3730 ABI DNA Analyzer.
 
-## RNAi
+#### RNAi
 
 Synthetic siRNA oligonucleotides were obtained from Dharmacon. Transfection of siRNAs using Lipofectamine 2000 or Lipofectamine RNAiMAX (Invitrogen, Carlsbad, CA) was performed according to the manufacturer's instructions. The 21-nucleotide siRNA sequence for the non-specific control was 5′-AATTCTCCGAACGTGTCACGT-3′. The 21-nucleotide siRNA sequence for human Talpid3 is 5′-CAAAGTTACCTACGTGTTATT-3′.
 
-## Western blotting
+#### Western blotting
 
 Fibroblasts were grown in DMEM supplemented with 10% FBS, grown to confluence, and subsequently serum starved for 72 hr to induce cilium growth. Cells were lysed with ELB buffer (50 mM Hepes pH 7, 150 mM NaCl, 5 mM Ethylenediaminetetraacetic acid (EDTA)/pH 8, 0.1% NP-40, 1 mM Dithiothreitol (DTT) DTT, 0.5 mM 4- benzenesulfonyl fluoride hydrochloride (AEBSF), 2 μg/ml leupeptin, 2 μg/ml aprotinin, 10 mM NaF, 50 mM ß-glycerophosphate, and 10% glycerol) at 4°C for 30 min. 100 μg of lysate per sample in sample buffer was loaded on SDS-PAGE gels. Proteins were transferred to a polyvinylidene difluoride (PVDF) membrane (GE Healthcare, Little Chalfont, UK) and blocked in 3% non-fat milk in Phosphate-buffered saline (PBS). Rabbit polyclonal antibody against Talpid3 (dilution 1:1,000) (Kobayashi et al., 2014) and a mouse monoclonal antibody against α-tubulin (Sigma–Aldrich, dilution 1:5,000) were incubated overnight at 4°C.

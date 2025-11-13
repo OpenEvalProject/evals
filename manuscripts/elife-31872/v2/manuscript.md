@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.31872.001 The evaluation of protein localization changes on a systematic level is a powerful tool for understanding how cells respond to environmental, chemical, or genetic perturbations. To date, work in understanding these proteomic responses through high-throughput imaging has catalogued localization changes independently for each perturbation. To distinguish changes that are targeted responses to the specific perturbation or more generalized programs, we developed a scalable approach to visualize the localization behavior of proteins across multiple experiments as a quantitative pattern. By applying this approach to 24 experimental screens consisting of nearly 400,000 images, we differentiated specific responses from more generalized ones, discovered nuance in the localization behavior of stress-responsive proteins, and formed hypotheses by clustering proteins that have similar patterns. Previous approaches aim to capture all localization changes for a single screen as accurately as possible, whereas our work aims to integrate large amounts of imaging data to find unexpected new cell biology.
+The evaluation of protein localization changes on a systematic level is a powerful tool for understanding how cells respond to environmental, chemical, or genetic perturbations. To date, work in understanding these proteomic responses through high-throughput imaging has catalogued localization changes independently for each perturbation. To distinguish changes that are targeted responses to the specific perturbation or more generalized programs, we developed a scalable approach to visualize the localization behavior of proteins across multiple experiments as a quantitative pattern. By applying this approach to 24 experimental screens consisting of nearly 400,000 images, we differentiated specific responses from more generalized ones, discovered nuance in the localization behavior of stress-responsive proteins, and formed hypotheses by clustering proteins that have similar patterns. Previous approaches aim to capture all localization changes for a single screen as accurately as possible, whereas our work aims to integrate large amounts of imaging data to find unexpected new cell biology.
 
 ## Introduction
 
@@ -40,11 +40,208 @@ We present, to our knowledge, the first quantitative integrative cluster analysi
 
 ## Results
 
-## An unsupervised analysis of protein localization changes in more than 280,000 images
+### An unsupervised analysis of protein localization changes in more than 280,000 images
 
 In this work, we sought to understand protein localization changes across a wide range of perturbations. To achieve this, we made use of datasets that are available in the CYCLoPs database (Koh et al., 2015): 15 image-based screens of the yeast GFP-fusion collection (Huh et al., 2003). These images show protein localization in untreated wild-type cells (three replicates), in an rpd3Δ deletion strain (three replicates), and three time-points each of wild-type cells subjected to rapamycin (RAP), hydroxyurea (HU), and α-factor (αF) treatment (Chong et al., 2015; Kraus et al., 2017). We also included data from two independent screens of the GFP-fusion collection in strains deleted for IKI3, a component of the elongator complex and a histone acetyltransferase that functions as part of the RNA polymerase II holoenzyme (Wittschieben et al., 1999). Altogether, this dataset encompasses 4143 individual yeast GFP-fusion proteins for a total of 281,724 images and a total of 15.5 million cells used.
 
 Figure 1 summarizes our method for representing protein localization changes across image screens. First, we start with two sets of micrographs of yeast cells, one of cells under untreated wild-type conditions and another under perturbation, where the protein of interest has been tagged with GFP, and where a cytosolic RFP has been expressed to facilitate cell identification. These images have been segmented into single cells (Figure 1(i)). We bin single cells into five bins by their stage in the cell cycle (Figure 1(ii)), and then by whether the cell is a mother or a bud cell (Figure 1(iii)), resulting in 10 independent bins in total; this binning strategy allows us to determine whether protein localization changes are dependent on cell cycle or type.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig1-v2.jpg)
+
+**Figure 1.:** In step (i), we segment micrographs into single cells. We divide single cells into 10 bins in step (ii), first into five bins by cell cycle stage, and then by mother or bud cell type. We calculate five features for all single cells in step (iii), and report the truncated average of each bin for each feature to form the protein localization profile (see Materials and methods). To compare the untreated wild-type protein localization profile to the perturbation protein localization profile, we apply an unsupervised localization change detection algorithm in step (iv), which outputs a protein localization change profile comprised of a z-score for each feature in the protein localization profile, reporting how significant the difference between the wild-type and perturbation is relative to expectation for each feature. Finally, we concatenate different protein localization change profiles with each other in step (v) to integrate profiles from different image screens. Steps (i) to (iv) are previously published methods, and are described in the Materials and methods section. We represent profiles as heat maps in this work (see the Figure 2 legend for details).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Comparison of the two replicates of the rpd3Δ perturbation. (B) Comparison of the two replicates of the iki3Δ perturbation. (C) Comparison of one replicate of the rpd3Δ perturbation with 160 min of hydroxyurea treatment, and (D) comparison of one replicate of the rpd3Δ perturbation with 220 min of rapamycin treatment. The squared correlation coefficient for each scatterplot is shown in the bottom right corner. Proteins that have localization changes previously detected by Chong et al. (2015) for the rpd3Δ perturbation are shown as red points in (A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig2-v2.jpg)
+
+**Figure 2.:** The right panel shows the 1159 protein change profiles with the strongest values, grouped by similarity. In this visualization, rows represent the protein change profiles for individual proteins, whereas columns represent feature measurements, with each set of 50 measurements corresponding to an image screen. Positive values are blue, whereas negative values are yellow, with the intensity of color corresponding to the magnitude of the value, as shown in the color bar. Grey values are missing data. The headers indicate the image screens that sets of features correspond to, abbreviated using WT to indicate the untreated wild-type screens, ΔRPD3 for the rpd3Δ replicates, RAP for time points of the rapamycin treatment, HU for time points of the hydroxyurea treatment, αF for time points of the α-factor treatment, and ΔIKI for the iki3Δ replicates. The dendrogram depth shows similarity between connected protein profiles or groups of profiles. We highlight examples of strong patterns of protein change profiles in yellow, with some clusters that we have annotations for labelled from A to T, with labels and enrichments for some clusters presented in Table 1. In the four boxes on the left, we show examples of localization changes found in our clusters of protein change profiles. The images are representative cropped micrographs of yeast cells, where the protein named in the top left corner of each box has been tagged with GFP (shown as the green channel). The blue lines in the images show the boundaries drawn between cells by our single-cell segmentation algorithm, the small white circles between cells indicate mother-bud relations, and the white meshed regions indicate areas that have been ignored by our image analysis because they are likely to be artifacts or mis-segmented cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** For each cluster, we show the protein localization change profile for a perturbation screen in which the proteins are predicted to change, and the associated transcript and abundance change profiles for that perturbation. We label the corresponding proteins on the right of the heat maps. Proteins for which we could manually confirm a localization change by evaluating the images are annotated with an asterisk (*). The color bar scales on the far right show the scaling of the pixels in the heat map; note that each profile is scaled differently.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** For (A), we show the protein localization change profiles resulting from 160 min of hydroxyurea perturbation, and label the corresponding protein on the right of the heat map. The scale for the heat map is shown to the left of the map. Proteins for which we could confidently annotate a localization change after evaluating the images are annotated with an asterisk (*). For (B), we show cropped micrographs of yeast cells where the labeled protein has been fused with GFP (green) for untreated cells versus 160 min of hydroxyurea perturbation. Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** For (A), we show the protein localization change profiles resulting from 180 min of alpha factor perturbation, and label the corresponding protein on the right of the heat map. The scale for the heat map is shown to the left of the heat map. Proteins for which we could confidently annotate a localization change after evaluation of the images are annotated with an asterisk (*). For (B), we show cropped micrographs of yeast cells where the labeled protein has been fused with GFP (green) for untreated cells versus 180 min of alpha factor perturbation. Cropped micrographs labelled with a plus sign (+) have had their image intensities clipped at their higher range to allow better visualization of protein localization.
+
+**Table 1.**
+ Annotations for some labelled clusters presented in Figure 1.The letter in the cluster column corresponds to the letters assigned to clusters in Figure 2. Selected significant gene ontology enrichments are listed with their respective GO accession numbers and p-values, as well as some arbitrarily chosen examples of proteins. Clusters that are not associated with a GO accession number are manual annotations. Under the ‘Proteins with annotation’ column, we report the number of proteins with the GO annotation versus the total number of proteins in that cluster. Table 1—source data 1.A spreadsheet containing lists of the proteins in each cluster highlighted in Figure 2, and the GO enrichments of these clusters.For GO enrichments, we report the enriched term, the p-value, all proteins in the cluster annotated with the term, and the GO accession number.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cluster</th>
+      <th>Perturbation(s)</th>
+      <th>Annotation</th>
+      <th>P-value</th>
+      <th>Proteins with annotation</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">A</td>
+      <td rowspan="2">α-factor, iki3Δ</td>
+      <td>Cytoskeleton-dependent cytokinesis [GO:0061640]</td>
+      <td>3.77E–07</td>
+      <td>8/12</td>
+      <td rowspan="2">Bud3, Bud4, Cdc10, Cdc11, Hof1, Myo1</td>
+    </tr>
+    <tr>
+      <td>Cell cycle [GO:0007049]</td>
+      <td>9.21E–05</td>
+      <td>11/12</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Hydroxyurea</td>
+      <td>Cell cycle</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Cdc28, Cdc7, Clb2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">E</td>
+      <td rowspan="2">Rapamycin, hydroxyurea</td>
+      <td>RNA metabolic process [GO:0016070]</td>
+      <td>6.70E–04</td>
+      <td>15/18</td>
+      <td>Msn2, Dot6, Rtg1, Rtg3, Enp1, Tsr1, Stb3, Utp20</td>
+    </tr>
+    <tr>
+      <td>Stress-responsive transcription factors</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Msn2, Dot6, Rtg1, Rtg3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">F</td>
+      <td rowspan="2">Hydroxyurea, α-factor</td>
+      <td>Extrinsic component of vacuolar membrane [GO:0000306]</td>
+      <td>0.028823</td>
+      <td>3/19</td>
+      <td>Iml1, Vac14, Tco89</td>
+    </tr>
+    <tr>
+      <td>DNA replication</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Pol12, Mcm7, Ctf18</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G</td>
+      <td rowspan="2">rpd3Δ, hydroxyurea</td>
+      <td>Triglyceride lipase activity [GO:0004806]</td>
+      <td>0.029239</td>
+      <td>2/6</td>
+      <td>Tgl4, Tgl5</td>
+    </tr>
+    <tr>
+      <td>Metabolic activity</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Tgl4, Tgl5, Rnr3, Gdb1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H</td>
+      <td rowspan="2">Rapamycin</td>
+      <td>Negative regulator of hydrolase activity [GO:0051346]</td>
+      <td>2.70E-04</td>
+      <td>4/9</td>
+      <td rowspan="2">Stf1, Inh1, Yhr138c, Pbi2</td>
+    </tr>
+    <tr>
+      <td>Enzyme inhibitor activity [GO:0004857]</td>
+      <td>0.001441</td>
+      <td>4/9</td>
+    </tr>
+    <tr>
+      <td>J</td>
+      <td>rpd3Δ</td>
+      <td>Annotated by Chong et al. (2015) to localize away from cytoplasm in rpd3Δ</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Acs1, Rad7, Mni1, Yjr008w, Ycr061w, Pab1, Pus4, Yor292c</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>iki3Δ</td>
+      <td>Ribosomal subunits</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Rps9a, Rpl13b, Rps0b</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M</td>
+      <td rowspan="2">Rapamycin</td>
+      <td>Cytosolic ribosome [GO:0022626]</td>
+      <td>0.010879</td>
+      <td>4/5</td>
+      <td rowspan="2">Rpl23a, Rpl40a, Rpl40b, Rps10a</td>
+    </tr>
+    <tr>
+      <td>Ribosomal subunits</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Q</td>
+      <td rowspan="2">α-factor</td>
+      <td>Golgi vesicle transport</td>
+      <td>0.005435</td>
+      <td>5/7</td>
+      <td>Apl2, Avl9, Gyl1, Bch1, Gyp5</td>
+    </tr>
+    <tr>
+      <td>Cellular bud tip</td>
+      <td>9.28E–06</td>
+      <td>5/7</td>
+      <td>Rgd2, Yhr182w, Avl9 Gyl1, Gyp5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R</td>
+      <td rowspan="2">rpd3Δ, rapamycin, iki3Δ</td>
+      <td>Vacuole [GO:0005773]</td>
+      <td>9.39E–05</td>
+      <td>7/7</td>
+      <td rowspan="2">Bap2, Itr1, Hxt2, Aqr1, Dip5</td>
+    </tr>
+    <tr>
+      <td>Ion transmembrane transporter activity [GO:0015075]</td>
+      <td>0.020585</td>
+      <td>5/7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S</td>
+      <td rowspan="2">Rapamycin, hydroxyurea</td>
+      <td>Bounding membrane of organelle [GO:0098588]</td>
+      <td>0.027761</td>
+      <td>8/12</td>
+      <td>Ams1, Kch1, Ymd8, Pho91, Mnn2, Och1, Kre2, Gnt1</td>
+    </tr>
+    <tr>
+      <td>Protein glycosylation [GO:0006486]</td>
+      <td>0.020786</td>
+      <td>4/12</td>
+      <td>Mnn2, Och1, Kre2, Gnt1</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>α-factor</td>
+      <td>Cellular response to pheromone [GO:0071444]</td>
+      <td>5.37E–04</td>
+      <td>5/9</td>
+      <td>Fus1, Kar4, Ste2, Aga2, Crz1</td>
+    </tr>
+  </tbody>
+</table>
 
 For each single cell, we measure a set of five interpretable features (Figure 1[iv]) that describe the average distribution of GFP-tagged proteins relative to certain cell landmarks such as the cell center or cell edge (Handfield et al., 2013). We average these measurements for single cells within each of the ten bins described above, resulting in a 50-feature vector that we term the ‘protein localization profile’. As the name suggests, the protein localization profile represents the average localization of the GFP-tagged protein inside of a cell for a given image screen.
 
@@ -56,7 +253,7 @@ Finally, we grouped proteins by clustering our concatenated protein change profi
 
 We manually evaluated images for localization changes predicted by our protein change profiles for five distinct clusters and recorded the proportion of proteins with localization changes visible to a human evaluator (Supplementary file 1). In general, we observed that clusters that had strong signals in their protein change profiles had a higher ratio of visible localization changes; Clusters E and J in Figure 2 have an average protein change profile magnitude of 33.5 and 34.5 for the perturbations that are predicted to change their localization, and contain 9/17 and 18/25 visible localization changes, respectively. Proteins that did not have visible localization changes within these clusters tended to have weaker signals (proteins without an asterisk in Figure 2—figure supplement 1). By contrast, clusters with more moderate signals in their protein change profiles contain fewer localization changes that are visible to the human eye, or more ambiguous or borderline protein localization changes. Cluster F in Figure 2 has an average protein change profile magnitude of 14.3, and contains 2/19 visible localization changes, with a further 9/19 localization changes being too ambiguous to determine. The localization changes within this cluster were visually subtle, involving changes from a round nuclear phenotype in the untreated wild-type to an irregular ‘fluffy’ nuclear phenotype in the perturbation (Tma16 and Ysh1 in Figure 2—figure supplement 2B).
 
-## Clustering of multi-perturbation z-score vectors reveals shared and specific localization changes that are supported by the literature
+### Clustering of multi-perturbation z-score vectors reveals shared and specific localization changes that are supported by the literature
 
 To investigate the hypothesis that our clusters of protein localization change profiles contain proteins that are linked functionally, we evaluated clusters that showed strong signals for perturbations. We ignored clusters that had strong signals in the other untreated wild-type screens (WT3 and WT1 in Figure 2), as these proteins were predicted to change localization between untreated wild-type screens. These localization changes can occur for a variety of reasons, including inherent protein variability (Handfield et al., 2015), day-to-day variation, or strain-specific variation; because localization changes for these proteins may not be specifically caused by the perturbation, we exclude them from our analysis. Table 1 shows GO ontology enrichments for clusters from Figure 2. In this section, we provide examples in which our clustering reveals known biology.
 
@@ -70,17 +267,17 @@ In addition to clusters that have patterns that are shared between multiple pert
 
 A list of proteins that change for each perturbation is available in Supplementary file 2, curated by selecting clusters of protein change profiles that have strong coordinated signals from the heat map in Figure 2.
 
-## Clustering of protein localization changes reveals new patterns of protein relocalization and enables development of hypotheses about protein function
+### Clustering of protein localization changes reveals new patterns of protein relocalization and enables development of hypotheses about protein function
 
 The extent to which we can interpret our clusters within known information from the literature varies. For example, while the mating response is well-studied and provides a clear basis to validate localization changes predicted by our method, other clusters of predictions were relatively novel. By integrating the observations made possible by our exploratory analysis of protein change profiles with a closer qualitative analysis of images of the proteins implicated in these clusters, the data can be mined to develop informed hypotheses for experimental follow-up. In this section, we describe three examples of this process.
 
-## Stress-responsive transcription factors that exhibit stochastic pulsatility may be controlled by the same mechanism
+#### Stress-responsive transcription factors that exhibit stochastic pulsatility may be controlled by the same mechanism
 
 We observed a small cluster of three transcription factors, Msn2, Dot6, and Rtg3, with patterns shared between the hydroxyurea and rapamycin perturbations. All three proteins exhibited a protein change profile that indicates that they were becoming more compact in distribution and closer to the cell center following both hydroxyurea and rapamycin treatment (Figure 3A). Evaluating the images (Figure 3B) confirmed that these proteins moved from the cytoplasm to the nucleus following these perturbations. The import of Msn2, Dot6, and Rtg3 into the nucleus is expected, as previous work has shown that all three move to the nucleus following inhibition of TORC1 kinase by rapamycin treatment (Loewith and Hall, 2011). Furthermore, Msn2 and Dot6 were found to localize to the nucleus in previous manual assessment of images following hydroxyurea exposure (Tkach et al., 2012).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig3-v2.jpg)
 
-**Figure 3.:** A) Heat map of the protein change profiles and (B) cropped micrographs of the GFP collections strains for stress-responsive transcription factors Msn2, Dot6, and Rtg3.Refer to Figure 2 for information on the heat map visualization of the protein change profiles and micrograph images. In (B), we show cropped micrographs of yeast cells in which Msn2, Dot6, and Rtg3 have been fused with GFP (green), under standard medium (WT2), rapamycin treatment for 60 min (RAP 60m) and 220 min (RAP 220m), and hydroxyurea treatment for 80 min (HU 80m) and 160 min (HU 160m). Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
+**Figure 3.:** Refer to Figure 2 for information on the heat map visualization of the protein change profiles and micrograph images. In (B), we show cropped micrographs of yeast cells in which Msn2, Dot6, and Rtg3 have been fused with GFP (green), under standard medium (WT2), rapamycin treatment for 60 min (RAP 60m) and 220 min (RAP 220m), and hydroxyurea treatment for 80 min (HU 80m) and 160 min (HU 160m). Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
 
 We detected interesting coordinated time dependencies in these responses. All three transcription factors were localized to the nucleus throughout all three time points of hydroxyurea perturbation, but strongly localized to the nucleus at the first time point of rapamycin perturbation before returning closer to the phenotype for untreated cells in later time points. Although there were subtle differences between the localization patterns of the three proteins (for example, Msn2 only diminishes in relative localization to the nucleus rather than returning fully to the cytoplasm as we see in the other proteins), the general trend was preserved.
 
@@ -92,31 +289,39 @@ We observed Rtg3-GFP protein pulses (in both the GFP-collection strain and in an
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig4-v2.jpg)
 
-**Figure 4.:** A) a cell with frequent oscillations between the nucleus and cytoplasm, representative of typical untreated cells, and for (B) a cell with a single prolonged pulse, representative of typical rapamycin-treated cells.(C) A histogram of the average duration of nuclear localization of Rtg3 for single cells treated with rapamycin versus untreated cells. For rapamycin-treated cells, rapamycin is added at 0 min. To quantify the localization of Rtg3-GFP in single cells, we compute a localization score (expected nuclear intensity, see Materials and methods), which is higher when there is more nuclear-localized protein and lower when there is more cytoplasmic protein. We track these scores for each single cell over each frame of our movie to track the cells over time. Plots show the localization score over time. We show cropped stills from the time-lapse movie showing the state of the cell at various timepoints (labels show the timepoint in minutes).
+**Figure 4.:** (C) A histogram of the average duration of nuclear localization of Rtg3 for single cells treated with rapamycin versus untreated cells. For rapamycin-treated cells, rapamycin is added at 0 min. To quantify the localization of Rtg3-GFP in single cells, we compute a localization score (expected nuclear intensity, see Materials and methods), which is higher when there is more nuclear-localized protein and lower when there is more cytoplasmic protein. We track these scores for each single cell over each frame of our movie to track the cells over time. Plots show the localization score over time. We show cropped stills from the time-lapse movie showing the state of the cell at various timepoints (labels show the timepoint in minutes).
 
-## Sets of ribosomal subunits exhibit perturbation-specific responses
+#### Sets of ribosomal subunits exhibit perturbation-specific responses
 
 We found evidence of localization changes for many ribosomal subunits, with their protein change profiles predicting that subsets of ribosomal proteins may respond specifically to one perturbation. As an example, we show a set of ribosomal protein subunits in Figure 5 that had a pattern of strong signals in its protein change profile in the last two timepoints following rapamycin treatment, with some proteins showing a redistribution from the nucleus to the cytoplasm in the images. These perturbation-specific localization changes for particular ribosomal protein subunits contrast with the more general transcriptional response to stress of ribosomal protein genes (Gasch et al., 2000).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig5-v2.jpg)
 
-**Figure 5.:** A) Heat map showing protein change profiles, and (B) cropped micrographs for ribosomal subunits belonging to a cluster that responded specifically in rapamycin.Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs where the labelled protein has been respectively fused with GFP (green), in standard media (WT2) and after 220 min of rapamycin treatment for the proteins highlighted in blue in (A). Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
+**Figure 5.:** Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs where the labelled protein has been respectively fused with GFP (green), in standard media (WT2) and after 220 min of rapamycin treatment for the proteins highlighted in blue in (A). Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
 
 A growing body of research suggests that specific ribosomal subunits may have extra-ribosomal functions ranging from ribosomal biogenesis to DNA repair and adhesive growth (Lu et al., 2015). For example, Rpl40a and Rpl40b are ubiquitin-ribosomal protein fusions that contribute to Rps27b pre-rRNA maturation in the nucleolus by the cleaving of the ubiquitin-fusion precursor and to Rps60 maturation by export of the protein into the cytoplasm (Fernández-Pevida et al., 2012). We found that Rpl40a and Rpl40b both redistributed from the nucleus to the cytoplasm following prolonged rapamycin treatment (Rpl40a is shown as an example in Figure 4b), which may reflect the reduction in ribosomal biogenesis and rRNA synthesis and the processing activity caused by rapamycin (Stauffer and Powers, 2015).
 
-## Membrane proteins exhibit a reciprocal pattern of localization changes following hydroxyurea or rapamycin treatment
+#### Membrane proteins exhibit a reciprocal pattern of localization changes following hydroxyurea or rapamycin treatment
 
 We observed a cluster of proteins that had strong protein change profile patterns in both the rapamycin and hydroxyurea perturbations, but with different patterns in each perturbation. Following rapamycin treatment, the direction of localization changes indicated that the proteins were becoming closer to the cell center and further from the cell edge relative to those in the untreated cell, whereas in following hydroxyurea treatment, the same proteins were predicted to relocalize further from the cell center and closer to the cell edge. Evaluation of the images of cells expressing these proteins (Figure 6) showed that most were either plasma-membrane- or Golgi-localized proteins. In untreated cells, these proteins were localized to both the membrane or Golgi and the vacuole; following hydroxyurea treatment, the distribution of protein shifts towards the membrane, whereas following rapamycin treatment, the distribution shifted towards the vacuole, confirming the prediction of our protein change profiles.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig6-v2.jpg)
 
-**Figure 6.:** A) Heat map of the protein change profiles and (B) cropped micrographs for a cluster of proteins with reciprocal protein change profiles between hydroxyurea and rapamycin treatment.Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs of yeast cells in which Tat2, Och1, and Flc1 (highlighted in blue in [A]) have been tagged with GFP (green), after 220 min of rapamycin treatment (RAP 220m), growth in standard media (WT2), and after 160 min of hydroxyurea treatment (HU 160m). Cropped micrographs labelled with an asterisk (*) or a plus sign (+) have had their image intensities clipped at their lower range or higher range, respectively, to remove noise and to better visualize protein localization.
+**Figure 6.:** Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs of yeast cells in which Tat2, Och1, and Flc1 (highlighted in blue in [A]) have been tagged with GFP (green), after 220 min of rapamycin treatment (RAP 220m), growth in standard media (WT2), and after 160 min of hydroxyurea treatment (HU 160m). Cropped micrographs labelled with an asterisk (*) or a plus sign (+) have had their image intensities clipped at their lower range or higher range, respectively, to remove noise and to better visualize protein localization.
 
-## Cluster associations found by our unsupervised exploration of localization changes are complementary to other high-throughput experiments
+### Cluster associations found by our unsupervised exploration of localization changes are complementary to other high-throughput experiments
 
 Next, we explored the relationship between our protein change profile clusters and other high-throughput datasets.
 
 First, we compared the associations between proteins found in our protein localization change analysis to those found in transcript and protein abundance data, by comparing the protein profile similarities in each data source. We expect our clusters to overlap partially with the clusters retrieved from these other datasets, such as in cases where protein localization changes are being driven by or forming a feedback loop with transcript and abundance changes, but we anticipated that at least some protein localization changes are an independent layer of regulation. We constructed profiles for transcript changes and protein abundance changes for the perturbations that we tested in Figure 2, and compared the pairwise distance between proteins for these profiles with those for our protein localization change profiles. Figure 7A and Figure 7B show scatterplots of the transcript and protein abundance profilesimilarities, respectively, against the protein localization change profile similarity.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig7-v2.jpg)
+
+**Figure 7.:** We show protein–protein pairs between all proteins that had strong signals in either profile (see Materials and methods for details). Protein–protein pairs are shown as grey dots, and we circle all protein–protein pairs that belonged to a cluster identified in Figure 2. Some circled protein–protein pairs are color-coded depending on the cluster they belonged to, for some clusters of interest (refer to legend in figures). For the transcript profile similarity scatterplot in (A), we also visualize all protein–protein pairs between ribosomal subunits as blue dots.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The first replicate of rpd3Δ. (B) 220 min of rapamycin treatment. (C) 160 min of hydroxyurea treatment. (D) 180 min of alpha factor treatment. See Materials and methods for details on how protein abundance change is calculated.
 
 We found little correlation between protein localization change profile similarity and transcript profile similarity (Figure 7A). Some clusters had more proteins with relatively small changes (low distances) in their transcription change profiles. Cluster T, which is enriched in proteins involved in the pheromone response (Table 1), had several protein–protein pairs with low localization change profile and transcript change profile distances (orange circles in Figure 7A), possibly due to the induction of these genes or proteins as a specific response to α-factor treatment. By contrast, Cluster S, which contains membrane and Golgi proteins with reciprocal localization changes, had higher transcription change profile distances for all pairs of proteins (purple circles in Figure 7A), suggesting that the concerted protein localization change behavior of these proteins may not occur at the transcriptional level. Finally, because we had previously detected unusual nuclear localizations for ribosomal subunits under specific perturbations, we decided to evaluate specifically the ribosomal subunits in this comparison (blue points in Figure 7A). In general, most pairs of ribosomal subunits have similar transcript change profiles, consistent with the transcriptional downregulation of ribosomal subunits globally as part of the environmental stress response (Gasch et al., 2000). By contrast, very few pairs of ribosomal subunits have low protein localization change profile distances, supporting our suggestion that localization changes in ribosomal subunits may be a more specific layer of regulation.
 
@@ -128,13 +333,13 @@ Next, we asked whether our clusters of protein localization change profiles were
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig8-v2.jpg)
 
-**Figure 8.:** A) Comparison of protein localization change profile clusters with physical protein–protein interactions and (B) localization in untreated wild-type cells.(A) The enrichment of each protein localization change profile cluster that we identified in Table 1 for physical interactions in the BIOGRID and the STRING databases, measured as z-scores indicating degree of enrichment relative to null expectation. (B) The distribution of manually annotated subcellular localization for untreated wild-type proteins for proteins in Clusters A, E, F, J, S, and T.
+**Figure 8.:** (A) The enrichment of each protein localization change profile cluster that we identified in Table 1 for physical interactions in the BIOGRID and the STRING databases, measured as z-scores indicating degree of enrichment relative to null expectation. (B) The distribution of manually annotated subcellular localization for untreated wild-type proteins for proteins in Clusters A, E, F, J, S, and T.
 
 Finally, we evaluated the degree to which proteins in our clusters of protein change profiles shared subcellular localizations in untreated wild-type cells. Previously, we observed a cluster of proteins in different compartments that exhibited similar behavior in response to perturbation: in the cluster of proteins that had strong protein change profile patterns in both the rapamycin and hydroxyurea perturbations, despite proteins being localized to the cell membrane and Golgi respectively, these proteins all move towards the vacuole under rapamycin treatment, and more to their specific localization under hydroxyurea treatment. These results suggested to us that our analysis was grouping proteins on the basis of shared trends in protein movement rather than simply grouping co-localized proteins moving from one compartment to another. To investigate the prevalence of clusters formed of proteins with different untreated wild-type localizations, we show the distribution of protein localization in the untreated wild-type for several clusters as pie graphs in Figure 8B, using manual annotations for localization classes for yeast proteins (Huh et al., 2003).
 
 We find that clusters vary in their degree of heterogeneity in untreated wild-type localization. Some clusters are homogeneous: Cluster A, which was enriched for cell-cycle proteins, consists primarily of bud-neck localized proteins, and Cluster E, which included stress-responsive transcription factors (Table 1), consists primarily of proteins localized to the cytoplasm, nucleus, or cytoplasm or nucleus. As expected, Cluster S, which included the membrane and Golgi proteins that had strong protein change profile patterns in both the rapamycin and hydroxyurea perturbations, is highly heterogeneous. Cluster J, which contains proteins that change localization specifically in the Δrpd3 perturbation, is also highly heterogeneous. We also observed that Cluster T, enriched for proteins involved in pheromone response, consisted of an even mix of nuclear- and vacuole-localized proteins; this result reflects the biological process of mating, which includes both proteins that mediate the initial transcriptional response to pheromone, such as Kar4, as well as downstream factors such as Fus1, a cell fusion protein that facilitates vacuole mixing (Nolan et al., 2006), which is a later step in the mating process.
 
-## Exploratory analysis of kinase deletion mutant screens identifies new patterns of localization change
+### Exploratory analysis of kinase deletion mutant screens identifies new patterns of localization change
 
 Because the regulation of cellular processes by protein kinases is an area of major research focus in cell biology, we created a new set of image screens for seven kinase deletion mutants: elm1Δ, hal5Δ, hsl1Δ, kin1Δ, kin2Δ, mck1Δ, and vhs1Δ. Phosphorylation is a well-characterized mechanism for regulating protein localization (Bauer et al., 2015), so we anticipated that we would identify localization changes in these mutants. We found technical challenges in this dataset. First, the screens did not proliferate well, resulting in the inclusion of fewer cells (the average number of cells used for these screens was ~630,000, compared to an average of 1.1 million cells for the perturbed screens in our previous analysis), and the elm1Δ showed a dramatic morphologic change, such that cells grew in long chains (Edgington et al., 1999). Second, we did not collect replicates for these screens, making it more challenging to confirm the reproducibility of the signals that we observed. However, we were still able to find clusters containing proteins of interest, and we highlight two such clusters below. Data for all protein localization change profiles for the kinase deletion screens can be found in Supplementary file 3.
 
@@ -142,13 +347,13 @@ We found a cluster of proteins predicted to have localization changes for elm1Δ
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig9-v2.jpg)
 
-**Figure 9.:** A) Heat map showing protein change profiles, and (B) cropped micrographs for proteins in a cluster that responded specifically in elm1Δ.Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs in which the labelled protein has been respectively fused with GFP (green), and the elm1Δ mutant for proteins Apj1, Gre3 and Pph21. Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
+**Figure 9.:** Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs in which the labelled protein has been respectively fused with GFP (green), and the elm1Δ mutant for proteins Apj1, Gre3 and Pph21. Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
 
 A cluster of proteins predicted to change localization predominantly in hal5Δ (Figure 10A) included some ribosomal subunits. Parallel to the observation described above in which we found that some ribosomal subunits showed specialized behavior in response to rapamycin treatment, we find that a different set of ribosomal subunits exhibit a stronger localization in the nucleus under hal5Δ perturbation relative to wild-type. Rps23a and Rpl7b are shown as examples in Figure 9B. We also observed that some nuclear transporters increased in their distribution to the nucleus specifically in the hal5Δ perturbation. Syo5 specifically facilitates the nuclear import of Rpl5 and Rpl11 (Kressler et al., 2012), whereas Nmd5 imports various proteins into the nucleus, including the transcription factors TFIIS (Albertini et al., 1998) and Crz1 (Polizotto and Cyert, 2001); both are shown as examples in Figure 10B.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/31872/elife-31872-fig10-v2.jpg)
 
-**Figure 10.:** hal51Δ.Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs in which the labelled protein has been fused with GFP (green), and the hal5Δ mutant for proteins Rps23a, Rpl7b, Syo1, and Nmd5. Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
+**Figure 10.:** Refer to Figure 2 for information on the heat map representation of the protein change profiles and micrograph images. In (B), we show cropped micrographs in which the labelled protein has been fused with GFP (green), and the hal5Δ mutant for proteins Rps23a, Rpl7b, Syo1, and Nmd5. Cropped micrographs labelled with an asterisk (*) have had their image intensities clipped at their lower range to remove noise.
 
 Taken together, these results show that our integrative approach can be applied in a case in which there is little prior biological knowledge, and there are morphological differences between cells. This highlights the generalizability of the approach to a more realistic exploratory data analysis situation.
 
@@ -182,7 +387,7 @@ Integrative proteomic analyses of image screens should become increasingly possi
 
 ## Materials and methods
 
-## Experimental strains and image acquisition
+### Experimental strains and image acquisition
 
 Image data for untreated wild-type GFP-tagged yeast cells, in addition to the rpd3Δ, rapamycin, hydroxyurea, and α-factor perturbations, were taken from the CYCLoPs database (Koh et al., 2015).
 
@@ -196,7 +401,7 @@ To produce time-lapse movies of the Rtg3 strains, cells were dosed with 200 ng/m
 
 To ensure that the consistency of protein abundance across screens was controlled, we measured the correlation of GFP-intensity across all screens. All screens have R2 >0.79 with the untreated reference wild-type.
 
-## Image analysis and quantification of localization changes
+### Image analysis and quantification of localization changes
 
 To quantify the patterns of GFP in the cells in our images, we used the single-cell segmentation and feature extraction program as described by Handfield et al. (2013), specialized for the segmentation and measurement of GFP-tagged yeast cells. This method estimates the cell-cycle stage of cells using the size of the bud as a heuristic, and describes a series of 10 bins of equidistant cell-stage keypoints; for this work, we reduced the number of bins from 10 to 5 by merging adjacent bins to have more cells in each bin.
 
@@ -208,13 +413,13 @@ The unsupervised change detection method requires a parameterization for the num
 
 Our unsupervised localization change detection method reports proteins that change from not being expressed (or being expressed at a level too low to confidently assign a localization) in one screen to being expressed in a recognizable localization in the other screen as localization changes. We elected to retain these signals. This strategy is consistent with previous work that has generally considered these cases to be localization changes (Chong et al., 2015; Tkach et al., 2012).
 
-## Clustering and visualization of protein change profile
+### Clustering and visualization of protein change profile
 
 The protein change profile for individual perturbations is concatenated into a concatenated profile. We clustered these profiles using the open-source Cluster 3.0 package (de Hoon et al., 2004), with hierarchical agglomerative clustering with uncentered correlation distance and average linkage. This operation can be performed on the entire set of profiles, but for the heat map that we present in Figure 2, we reduced the number of profiles visualized to just the strongest signals prior to clustering. We required that the concatenated vector have at least three z-scores over an absolute value of 5.0 and greater than 80% of data present, resulting in 1159 proteins displayed in Figure 2. 46% of the proteins among the 1159 strongest localization change patterns are among the brightest 50% of proteins in the collection, indicating that the proteins with strong patterns of localization change are not simply the strongest or weakest GFP signals.
 
 To visualize these resultant clustered matrices as heat maps, we used Java Treeview (Saldanha, 2004). Blue values indicate positive z-scores and yellow values indicate negative z-scores, with the intensity of the color indicating the magnitude. Grey values indicate missing data.
 
-## Comparison with other high-throughput data sources
+### Comparison with other high-throughput data sources
 
 Enrichment analyses of the clusters in Table 1 were conducted using the 1159 proteins visualized in Figure 2 as the background population. We looked for gene ontology-enriched terms (Gene Ontology Consortium, 2015) in biological process, cellular component, and molecular function, with Benjamini-Hochberg correction (Benjamini and Hochberg, 1995) at a 0.05 FDR, using the YeastMine tool (Balakrishnan et al., 2012) on the Saccharomyces Genome Database. We report a sample of the significant terms that we found for some clusters in Table 1; full lists of enrichment for each cluster can be found in Table 1—source data 1.
 

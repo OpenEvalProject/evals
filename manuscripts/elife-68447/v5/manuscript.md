@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Breast cancer heterogeneity in histology and molecular subtype influences metabolic and proliferative activity and hence the acid load on cancer cells. We hypothesized that acid-base transporters and intracellular pH (pH i ) dynamics contribute inter-individual variability in breast cancer aggressiveness and prognosis. We show that Na + ,HCO 3 – cotransport and Na + /H + exchange dominate cellular net acid extrusion in human breast carcinomas. Na + /H + exchange elevates pH i preferentially in estrogen receptor-negative breast carcinomas, whereas Na + ,HCO 3 – cotransport raises pH i more in invasive lobular than ductal breast carcinomas and in higher malignancy grade breast cancer. HER2-positive breast carcinomas have elevated protein expression of Na + /H + exchanger NHE1/SLC9A1 and Na + ,HCO 3 – cotransporter NBCn1/SLC4A7. Increased dependency on Na + ,HCO 3 – cotransport associates with severe breast cancer: enlarged CO 2 /HCO 3 – -dependent rises in pH i predict accelerated cell proliferation, whereas enhanced CO 2 /HCO 3 – -dependent net acid extrusion, elevated NBCn1 protein expression, and reduced NHE1 protein expression predict lymph node metastasis. Accordingly, we observe reduced survival for patients suffering from luminal A or basal-like/triple-negative breast cancer with high SLC4A7 and/or low SLC9A1 mRNA expression. We conclude that the molecular mechanisms of acid-base regulation depend on clinicopathological characteristics of breast cancer patients. NBCn1 expression and dependency on Na + ,HCO 3 – cotransport for pH i regulation, measured in biopsies of human primary breast carcinomas, independently predict proliferative activity, lymph node metastasis, and patient survival.
+Breast cancer heterogeneity in histology and molecular subtype influences metabolic and proliferative activity and hence the acid load on cancer cells. We hypothesized that acid-base transporters and intracellular pH (pHi) dynamics contribute inter-individual variability in breast cancer aggressiveness and prognosis. We show that Na+,HCO3– cotransport and Na+/H+ exchange dominate cellular net acid extrusion in human breast carcinomas. Na+/H+ exchange elevates pHi preferentially in estrogen receptor-negative breast carcinomas, whereas Na+,HCO3– cotransport raises pHi more in invasive lobular than ductal breast carcinomas and in higher malignancy grade breast cancer. HER2-positive breast carcinomas have elevated protein expression of Na+/H+ exchanger NHE1/SLC9A1 and Na+,HCO3– cotransporter NBCn1/SLC4A7. Increased dependency on Na+,HCO3– cotransport associates with severe breast cancer: enlarged CO2/HCO3–-dependent rises in pHi predict accelerated cell proliferation, whereas enhanced CO2/HCO3–-dependent net acid extrusion, elevated NBCn1 protein expression, and reduced NHE1 protein expression predict lymph node metastasis. Accordingly, we observe reduced survival for patients suffering from luminal A or basal-like/triple-negative breast cancer with high SLC4A7 and/or low SLC9A1 mRNA expression. We conclude that the molecular mechanisms of acid-base regulation depend on clinicopathological characteristics of breast cancer patients. NBCn1 expression and dependency on Na+,HCO3– cotransport for pHi regulation, measured in biopsies of human primary breast carcinomas, independently predict proliferative activity, lymph node metastasis, and patient survival.
 
 ## Introduction
 
@@ -35,6 +35,14 @@ Breast cancer heterogeneity is a challenge in clinical practice and calls for ex
 Accelerated intermediary metabolism in breast cancer tissue (Voss et al., 2020) burdens the molecular pathways for acidic waste product elimination. In solid cancer tissue, extracellular pH (pHo) can reach as low as 6.5 (Voss et al., 2020; Vaupel et al., 1989), which is distinct from corresponding normal tissue with pHo around 7.3–7.4. The acidity of the extracellular tumor microenvironment challenges intracellular pH (pHi) homeostasis as it inhibits cellular net acid extrusion (Bonde and Boedtkjer, 2017). The changes in metabolic profile and proliferative rate of cancer cells contribute to the acidity of the tumor microenvironment, are important determinants of the malignant phenotype, and shape breast cancer progression (Parks et al., 2017; Persi et al., 2021; Boedtkjer and Pedersen, 2020).
 
 Cells generally eliminate their metabolic acid load via membrane proteins that mediate H+ extrusion (e.g., Na+/H+ exchange, H+-ATPase activity) or HCO3– uptake (e.g., Na+,HCO3– cotransport) (Aalkjaer et al., 2014; Xu et al., 2018; Stransky et al., 2016; see Figure 1B). Tissue relying partly on fermentative glycolysis can also eliminate acidic waste products from metabolism through coupled transport of H+ and lactate via monocarboxylate transporters (Pérez-Escuredo et al., 2016). In human and murine breast cancer tissue analyzed without stratification by molecular subtype, Na+,HCO3– cotransport activity is elevated and protein expression of the Na+,HCO3– cotransporter NBCn1 (SLC4A7) and monocarboxylate transporters MCT1 (SLC16A1) and MCT4 (SLC16A3) are upregulated compared to normal breast tissue (Boedtkjer, 2019; Boedtkjer et al., 2013; Lee et al., 2016; Lee et al., 2018; Lee et al., 2015). Protein expression of the Na+/H+ exchanger NHE1 (SLC9A1) is more variable in primary breast cancer tissue showing unchanged or only moderately elevated levels (Lee et al., 2016; Lee et al., 2015) when compared to normal breast tissue as one unstratified group.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig1-v5.jpg)
+
+**Figure 1.:** Moreover, steady-state intracellular pH (pHi) and the capacity for net acid extrusion are elevated in human breast cancer tissue compared to normal breast tissue. (A) Exemplar fluorescence images of 2',7'-bis-(2-carboxyethyl)-5-(and-6)-carboxyfluorescein (BCECF)-loaded organoids freshly isolated from human breast cancer tissue (lower panel) and normal breast tissue (upper panel). The scale bars represent 100 µm. (B) Illustration of the experimental procedure for acute enzymatic isolation of organoids from human breast biopsies and a schematic showing the acid-base transporters involved in pHi control in breast cancer cells. The image was generated with Biorender.com. CA, carbonic anhydrase. (C,D) Traces of NH4+-prepulse-induced pHi dynamics in human breast cancer tissue (C, n=75–76) and normal breast tissue (D, n=48–49). The time scale within the dotted rectangles is expanded in order to improve resolution during the pHi recovery phase. (E) Cellular net acid extrusion activities in presence and nominal absence of CO2/HCO3– were calculated in the pHi range 6.5–6.6 for human breast cancer tissue and normal breast tissue (n=48–76). Figure 1—figure supplement 1 provides a detailed analysis of the net acid extrusion capacity as function of pHi. (F) Initial steady-state pHi in human breast cancer tissue (n=79–80) and normal breast tissue (n=49–50) in presence and nominal absence of CO2/HCO3–. (G–I) Representative immunohistochemical images (G) and summarized pathologist-scored protein expression data for NHE1 (H, n=79) and NBCn1 (I, n=79) in human breast carcinomas. The size bars represent 100 µm. Data in panels E and F were compared by mixed-effects analyses followed by Sidak’s multiple comparisons test. ‘Interaction’ reports whether the effect of CO2/HCO3– varies between breast cancer and normal breast tissue. *p<0.05, ***p<0.001 vs. normal breast tissue under similar conditions. Figure 1—source data 1 contains the data pertaining to this figure and the de-identified clinicopathological information used to stratify data in Figure 2, 3, 4, 5, 7 and 8 and Figure 2—figure supplement 1; this information is combined in the multiple linear and logistic regression analyses illustrated in Figure 6.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig1-figsupp1-v5.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Primary breast cancer tissue (n=75–76). (B) Normal breast tissue (n=48–49). Figure 1—figure supplement 1—source data 1 provides the data pertaining to this figure and used for stratification in the figure supplements relating to Figures 2, 3, 4, 5, 7, and 8.
 
 Net acid extrusion from cancer cells elevates the cytosolic pH and acidifies the outer cell surface and interstitial space. In various model systems, acid-base transporters can modify carcinogenesis and the behavior of cancer cells including cancer cell proliferation, migration, and invasion (Boedtkjer and Pedersen, 2020; Amith and Fliegel, 2017; Stock and Pedersen, 2017). Although detailed molecular mechanisms are not yet established, elevated pHi maintains metabolic activity (Parks et al., 2013), increases DNA and protein synthesis (Pedersen, 2006), and accelerates cell cycle progression (Flinck et al., 2018) in cultured cell lines. In accordance, mice with disrupted expression of NBCn1 show delayed tumor development and decelerated tumor growth when tested using models of carcinogen- and ErbB2-induced breast cancer (Lee et al., 2016; Lee et al., 2018).
 
@@ -46,7 +54,206 @@ Despite the molecular and mechanistic insights from human cultured cell lines an
 
 We sampled human tissue biopsies from an extensive cohort of 110 women with breast cancer (Table 1) and evaluated pHi dynamics based on organoids freshly isolated from the breast cancer tissue and corresponding normal breast tissue (Figure 1). Within this patient population, we stratified the pHi dynamics and the NHE1 and NBCn1 expression levels by histopathology (Figure 2 and Figure 2—figure supplement 1), malignancy grade (Figure 3), estrogen receptor status (Figure 4), and HER2 status (Figure 5); and adjusted for variation in other clinical and pathological characteristics (Figure 6). We then explored how the pHi dynamics and the NHE1 and NBCn1 protein expression levels relate to cancer cell proliferation (Figure 7) and lymph node metastasis (Figure 8). Finally, we evaluated how variation in expression levels for acid-base transporters influence patient survival within individual breast cancer molecular subtypes (Figures 9 and 10, and Figure 10—figure supplements 1 and 2).
 
-## The elevated net acid extrusion capacity is Na+- and partly CO2/HCO3–-dependent in human breast cancer tissue
+![Figure 2.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig2-v5.jpg)
+
+**Figure 2.:** (A,B) Traces of NH4+-prepulse-induced pHi dynamics in human invasive lobular (A, n=8–9) and ductal (B, n=60–62) breast carcinomas. The time scale within the dotted rectangles is expanded in order to improve resolution during the pHi recovery phase. (C) Cellular net acid extrusion activities in presence and nominal absence of CO2/HCO3– were calculated in the pHi range 6.5–6.6 for human invasive lobular and ductal breast carcinomas (n=8–62). Figure 2—figure supplement 2 provides a detailed analysis of the net acid extrusion capacity as function of pHi. (D) Initial steady-state pHi in human invasive lobular (n=9) and ductal (n=64–65) breast carcinomas in presence and nominal absence of CO2/HCO3–. Data in panels C and D were compared by mixed-effects analyses. ‘Interaction’ reports whether the effect of CO2/HCO3– varies between human invasive lobular and ductal breast carcinomas. (E,F) Summarized pathologist-scored, immunohistochemistry-based protein expression data for NHE1 (E) and NBCn1 (F) in human invasive lobular (n=8) and ductal (n=65) breast carcinomas. Protein expression in human invasive lobular and ductal breast carcinomas was compared by χ2 tests for trend. Figure 2—figure supplement 1 provides data from mucinous adenocarcinomas.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig2-figsupp1-v5.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Traces of NH4+-prepulse-induced pHi dynamics in human mucinous adenocarcinomas (n=5). The time scale within the dotted rectangle is expanded in order to improve resolution during the pHi recovery phase. (B,C) Cellular net acid extrusion activities in human mucinous adenocarcinomas plotted as functions of pHi (B) and calculated for the pHi range 6.5–6.6 (C) in presence and nominal absence of CO2/HCO3– (n=5). (D) Initial steady-state pHi in human mucinous adenocarcinomas (n=5) in presence and nominal absence of CO2/HCO3–.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig2-figsupp2-v5.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Invasive lobular primary breast carcinomas (n=8–9). (B) Invasive ductal primary breast carcinomas (n=60–62).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig3-v5.jpg)
+
+**Figure 3.:** (A–C) Traces of NH4+-prepulse-induced pHi dynamics in human invasive ductal breast carcinomas of malignancy grades I (A, n=12–14), II (B, n=34), and III (C, n=14). The time scale within the dotted rectangles is expanded in order to improve resolution during the pHi recovery phase. (D) Cellular net acid extrusion activities in presence and nominal absence of CO2/HCO3– were calculated in the pHi range 6.5–6.6 for human invasive ductal breast carcinomas of malignancy grades I, II, and III (n=12–34). Figure 3—figure supplement 1 provides a detailed analysis of the net acid extrusion capacity as function of pHi. (E) Initial steady-state pHi in human invasive ductal breast carcinomas of malignancy grades I (n=14–15), II (n=35), and III (n=15) in presence and nominal absence of CO2/HCO3–. Data in panels D and E were compared by mixed-effects analyses and repeated-measures one-way ANOVA with post-test for linear trend. ‘Interaction’ reports whether the effect of CO2/HCO3– varies between human breast carcinomas of malignancy grades I, II, and III. (F, G) Summarized pathologist-scored, immunohistochemistry-based protein expression data for NHE1 (F, n=65) and NBCn1 (G, n=65) in human invasive ductal carcinomas stratified by malignancy grade. Protein expression in human breast carcinomas of malignancy grades I, II, and III was compared by χ2 tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig3-figsupp1-v5.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Primary breast carcinomas of malignancy grade I (n=12–14). (B) Primary breast carcinomas of malignancy grade II (n=34). (C) Primary breast carcinomas of malignancy grade III (n=14).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig4-v5.jpg)
+
+**Figure 4.:** (A,B) Traces of NH4+-prepulse-induced pHi dynamics in human breast carcinomas stratified by estrogen receptor status (A: negative, n=6; B: positive, n=63–64). The time scale within the dotted rectangles is expanded in order to improve resolution during the pHi recovery phase. (C) Cellular net acid extrusion activities in presence and nominal absence of CO2/HCO3– were calculated in the pHi range 6.5–6.6 for human breast carcinomas stratified by estrogen receptor status (n=6–64). Figure 4—figure supplement 1 provides a detailed analysis of the net acid extrusion capacity as function of pHi. (D) Initial steady-state pHi in human estrogen receptor-negative (0–15% ER+, n=7–8) and -positive (90–100% ER+, n=66–67) breast carcinomas. Data in panels C and D were compared by mixed-effects analyses. ‘Interaction’ reports whether the effect of CO2/HCO3– varies between estrogen receptor-negative and -positive breast carcinomas. (E,F) Pathologist-scored, immunohistochemistry-based protein expression levels for NHE1 (E) and NBCn1 (F) in human breast carcinomas (n=73) stratified by estrogen receptor status. Protein expression in human estrogen receptor-negative and -positive breast carcinomas was compared by χ2 tests for trend.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig4-figsupp1-v5.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Estrogen receptor-negative primary breast carcinomas (n=6). (B) Estrogen receptor-positive primary breast carcinomas (n=63–64).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig5-v5.jpg)
+
+**Figure 5.:** (A,B) Traces of NH4+-prepulse-induced intracellular pH (pHi) dynamics in human HER2-positive (A, n=9–11) and HER2-normal (B, n=58–61) breast carcinomas. The time scale within the dotted rectangles is expanded in order to improve resolution during the pHi recovery phase. (C) Cellular net acid extrusion activities in the presence and nominal absence of CO2/HCO3– were calculated in the pHi range 6.5–6.6 for human breast carcinomas stratified by HER2 status (n=9–61). Figure 5—figure supplement 1 provides a detailed analysis of the net acid extrusion capacity as function of pHi. (D) Initial steady-state pHi in HER2-positive (n=10–11) and -normal (n=63) human breast carcinomas. Data in panels C and D were compared by mixed-effects analyses. ‘Interaction’ reports whether the effect of CO2/HCO3– varies between HER2-positive and -normal breast carcinomas. (E,F) Summarized pathologist-scored, immunohistochemistry-based protein expression data for NHE1 (E) and NBCn1 (F) in human breast carcinomas (n=73) stratified by HER2 status. Protein expression in human HER2-positive and -normal breast carcinomas was compared by χ2 tests for trend.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig5-figsupp1-v5.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HER2-positive primary breast carcinomas (n=9–11). (B) HER2-normal primary breast carcinomas (n=58–61).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig6-v5.jpg)
+
+**Figure 6.:** (A–D) Multiple linear regression analyses show the independent influences of patient age, tumor size, histology, malignancy grade, and expression of estrogen and HER2 receptors on steady-state pHi and net acid extrusion capacity in human breast cancer tissue (n=78). Data were adjusted for inter-investigator variation. Figure 6—figure supplement 1 provides plots of steady-state pHi and net acid extrusion as functions of tumor size and patient age. (E,F) Ordinal logistic regression analyses show the independent influences of patient age, tumor size, histology, malignancy grade, and expression of estrogen and HER2 receptors on protein expression levels for NHE1 (E) and NBCn1 (F) in human breast cancer tissue (n=73).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig6-figsupp1-v5.jpg)
+
+**Figure 6—figure supplement 1.:** Statistical relationships among the variables were tested by Spearman’s correlation analyses.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig7-v5.jpg)
+
+**Figure 7.:** (A,B) Traces of NH4+-prepulse-induced pHi dynamics in breast carcinomas with high (A, 35–90% Ki67+, n=19–20) and low (B, 0–30% Ki67+, n=49–51) Ki67 index. The time scale within the dotted rectangles is expanded in order to improve resolution during the pHi recovery phase. (C) Cellular net acid extrusion activities in presence and nominal absence of CO2/HCO3– were calculated in the pHi range 6.5–6.6 for human breast carcinomas stratified by Ki67 index (n=19–51). Figure 7—figure supplement 1 provides a detailed analysis of the net acid extrusion capacity as function of pHi. (D) Initial steady-state pHi in breast carcinomas with high (n=20) and low (n=53–54) Ki67 index. Data in panels C and D were compared by mixed-effects analyses. ‘Interaction’ reports whether the effect of CO2/HCO3– varies between breast carcinomas with high and low Ki67 index. (E,F) Summarized pathologist-scored, immunohistochemistry-based protein expression levels for NHE1 (E) and NBCn1 (F) in human breast carcinomas (n=73) stratified by Ki67 index. Protein expression in human breast carcinomas of low and high Ki67 index was compared by χ2 tests for trend. (G) Results of binominal logistic regression analyses where the influence of the acid-base parameters and transporter expression levels on cellular proliferation was adjusted for patient age, tumor size, histology, malignancy grade, estrogen receptor status, HER2 status, and inter-investigator variation (n=73–78). Odds ratios (OR) are given for variables showing statistically significant association.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig7-figsupp1-v5.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Primary breast carcinomas with high proliferative index (35–90% Ki67+ cells; n=19–20). (B) Primary breast carcinomas with low proliferative index (0–30% Ki67+ cells; n=49–51).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig8-v5.jpg)
+
+**Figure 8.:** (A,B) Traces of NH4+-prepulse-induced intracellular pH (pHi) dynamics in primary breast carcinomas from patients with (A, n=25–28) and without (B, n=42–44) axillary lymph node metastases. Time scales within the dotted rectangles are expanded to improve resolution during the pHi recovery. (C) Cellular net acid extrusion activities in presence and absence of CO2/HCO3– calculated in the pHi range 6.5–6.6 for primary breast carcinomas stratified by axillary lymph node status (n=25–44). Figure 8—figure supplement 1 provides detailed analysis of net acid extrusion capacities as function of pHi. (D) Initial steady-state pHi in primary breast carcinomas from patients with (n=28) and without (n=45–46) lymph node metastases. Data in panels C and D were compared by mixed-effects analyses. ‘Interaction’ reports whether the effect of CO2/HCO3– varies between breast carcinomas from patients with and without lymph node metastases. (E,F) Summarized pathologist-scored, immunohistochemistry-based protein expression levels for NHE1 (E) and NBCn1 (F) in primary breast carcinomas from patients with (n=24) and without (n=49) lymph node metastases. Protein expression data were compared by χ2 tests for trend. (G) Results of binominal logistic regression analyses where influences of acid-base parameters and transporter expression levels on lymph node metastasis were adjusted for patient age, tumor size, histology, malignancy grade, estrogen receptor status, HER2 status, and inter-investigator variation (n=73–78). Odds ratios (OR) are given for variables showing statistically significant association.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig8-figsupp1-v5.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Primary breast carcinomas from patients with lymph node metastases (n=25–28). (B) Primary breast carcinomas from patients with no lymph node metastases (n=42–44).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig9-v5.jpg)
+
+**Figure 9.:** (A) Variation in SLC9A1 mRNA levels among patients with different breast cancer subtypes (n=135–344). Expression data were compared by one-way ANOVA followed by Tukey’s post-test. Figure 9—figure supplement 1 provides data on mRNA expression of ESR1, PGR, ERBB2, MKI67, LDHA, PECAM1, and CD34 in breast cancer tissue of the different molecular subtypes. Figure 9—source data 1 provides results from correlation analyses between SLC9A1 mRNA expression and the mRNA levels for ESR1, PGR, ERBB2, SLC4A7, SLC16A1, and SLC16A3. *p<0.05, ***p<0.001. (B–G) Survival curves stratified by SLC9A1 mRNA levels in patients with different breast cancer subtypes. The ticks on the curves represent censored subjects. Survival data were compared by Mantel-Cox and Gehan-Breslow-Wilcoxon tests. HR, hazard ratio.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig9-figsupp1-v5.jpg)
+
+**Figure 9—figure supplement 1.:** We observe systematic differences in mRNA levels for estrogen (A: ESR1, n=135–344), progesterone (B: PGR, n=162–438), and HER2 (C: ERBB2, n=162–438) receptors, the proliferative marker Ki67 (D: MKI67, n=135–344), lactate dehydrogenase (E: LDHA, n=135–344) involved in fermentative glycolysis, and the angiogenic markers PECAM1/CD31 (F: PECAM1, n=162–438) and CD34 (G: CD34, n=162–438).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig10-v5.jpg)
+
+**Figure 10.:** (A) Variation in SLC4A7 mRNA levels among patients with different breast cancer subtypes (n=135–344). Expression data were compared by one-way ANOVA followed by Tukey’s post-test. *p<0.05, ***p<0.001. Figure 10—source data 1 provides results from correlation analyses between SLC4A7 mRNA expression and the mRNA levels for ESR1, PGR, ERBB2, SLC9A1, SLC16A1, and SLC16A3. (B–G) Survival curves stratified by SLC4A7 mRNA levels in patients with different breast cancer molecular subtypes. The ticks on the curves represent censored subjects. Survival data were compared by Mantel-Cox and Gehan-Breslow-Wilcoxon tests. HR, hazard ratio. Figure 10—figure supplement 1 provides results on the expression and survival consequences of SLC16A1 mRNA. Figure 10—figure supplement 2 provides results on the expression and survival consequences of SLC16A3 mRNA.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig10-figsupp1-v5.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Variation in SLC16A1 mRNA levels among patients with different breast cancer subtypes (n=162–438). Expression data were compared by one-way ANOVA followed by Tukey’s post-test. Figure 10—figure supplement 1—source data 1 provides results from correlation analyses between SLC16A1 mRNA expression and the mRNA levels for ESR1, PGR, ERBB2, SLC4A7, SLC9A1, and SLC16A3 . (B–G) Survival curves stratified by SLC16A1 mRNA levels in patients with different breast cancer subtypes. The ticks on the curves represent censored subjects. Survival data were compared by Mantel-Cox and Gehan-Breslow-Wilcoxon tests. HR, hazard ratio. *p<0.05, ***p<0.001.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/68447/elife-68447-fig10-figsupp2-v5.jpg)
+
+**Figure 10—figure supplement 2.:** (A) Variation in SLC16A3 mRNA levels among patients with different breast cancer subtypes (24–141). Expression data were compared by one-way ANOVA followed by Tukey’s post-test. Figure 10—figure supplement 2—source data 1 provides results from correlation analyses between SLC16A3 mRNA expression and the mRNA levels for ESR1, PGR, ERBB2, SLC4A7, SLC9A1, and SLC16A1. (B–G) Association of SLC16A3 mRNA expression level with survival in patients with different breast cancer subtypes. The ticks on the curves represent censored subjects. Survival data were compared by Mantel-Cox and Gehan-Breslow-Wilcoxon tests. HR, hazard ratio. *p<0.05, ***p<0.001.
+
+**Table 1.**
+ Clinical and pathological characteristics of the patient cohort investigated for intracellular pH (pHi) dynamics and protein expression.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Number of patients</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>Patient age (years; median, interquartile range)</td>
+      <td>64.5 (56–74)</td>
+    </tr>
+    <tr>
+      <td>Tumor size (mm; median, interquartile range)</td>
+      <td>18 (14–26)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Histological type</td>
+    </tr>
+    <tr>
+      <td>Invasive ductal carcinomas</td>
+      <td>92 (84%)</td>
+    </tr>
+    <tr>
+      <td>Invasive lobular carcinomas</td>
+      <td>10 (9%)</td>
+    </tr>
+    <tr>
+      <td>Mucinous adenocarcinomas</td>
+      <td>5 (5%)</td>
+    </tr>
+    <tr>
+      <td>Tubular carcinoma</td>
+      <td>2 (2%)</td>
+    </tr>
+    <tr>
+      <td>Pleomorphic lobular carcinoma</td>
+      <td>1 (1%)</td>
+    </tr>
+    <tr>
+      <td colspan="2">HER2 receptor status</td>
+    </tr>
+    <tr>
+      <td>Normal</td>
+      <td>95 (86%)</td>
+    </tr>
+    <tr>
+      <td>Overexpression or gene amplification</td>
+      <td>15 (14%)</td>
+    </tr>
+    <tr>
+      <td>Estrogen receptor status</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>90–100% ER+ cells</td>
+      <td>99 (90%)</td>
+    </tr>
+    <tr>
+      <td>0–15% ER+ cells</td>
+      <td>11 (10%)</td>
+    </tr>
+    <tr>
+      <td>Malignancy grade</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>31 (28%)</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>52 (47%)</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>22 (20%)</td>
+    </tr>
+    <tr>
+      <td>Not graded</td>
+      <td>5 (5%)</td>
+    </tr>
+    <tr>
+      <td>Axillary lymph node status</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td>69 (63%)</td>
+    </tr>
+    <tr>
+      <td>Isolated tumor cells</td>
+      <td>15 (14%)</td>
+    </tr>
+    <tr>
+      <td>Micro-metastases</td>
+      <td>5 (5%)</td>
+    </tr>
+    <tr>
+      <td>Macro-metastases</td>
+      <td>21 (19%)</td>
+    </tr>
+    <tr>
+      <td>Ki67 index</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0–30% Ki67+ cells</td>
+      <td>82 (75%)</td>
+    </tr>
+    <tr>
+      <td>35–90% Ki67+ cells</td>
+      <td>28 (25%)</td>
+    </tr>
+  </tbody>
+</table>
+
+### The elevated net acid extrusion capacity is Na+- and partly CO2/HCO3–-dependent in human breast cancer tissue
 
 We freshly isolated organoids from human breast biopsies by partial collagenase digestion (Figure 1A,B). We prepared the organoids in immediate continuation of the breast-conserving surgery and investigated them directly after isolation without culture in order to avoid phenotypic changes. We previously confirmed that organoids freshly isolated from breast tissue biopsies consist predominantly of cytokeratin-19-positive epithelial cells with few smooth muscle α-actin-positive myofibroblasts (Lee et al., 2016; Lee et al., 2015).
 
@@ -58,7 +265,7 @@ The pHi traces (Figure 1C,D) recorded from freshly processed breast tissue biops
 
 In congruence with the functional observations, we identified prominent protein expression of NHE1 and NBCn1 in the human breast cancer tissue and considerable inter-individual variation within the evaluated patient population (Figure 1G–I).
 
-## Na+,HCO3– cotransport is more pronounced in invasive lobular than ductal breast carcinomas
+### Na+,HCO3– cotransport is more pronounced in invasive lobular than ductal breast carcinomas
 
 Breast cancer is histopathologically diverse, but invasive ductal and lobular breast carcinomas are most frequent (Table 1). We evaluated whether the mechanisms of net acid extrusion differ between tumors of separate histopathologies (Figure 2 and Figure 2—figure supplement 1). Invasive lobular (Figure 2A and Figure 2—figure supplement 2A) and ductal (Figure 2B and Figure 2—figure supplement 2B) breast carcinomas both showed dual dependency on Na+/H+ exchange and Na+,HCO3– cotransport for pHi regulation. We observed a tendency toward greater relative capacity for net acid extrusion via Na+,HCO3– cotransport during intracellular acidification in invasive lobular than ductal breast carcinomas (Figure 2C). This increased influence of Na+,HCO3– cotransport in invasive lobular carcinomas was more pronounced with respect to steady-state pHi control where it reached statistical significance both before (Figure 2D) and after (Figure 6B) we adjusted for variation in other clinicopathological characteristics (i.e., patient age, tumor size, malignancy grade, estrogen receptor expression, and HER2 status).
 
@@ -66,13 +273,13 @@ Expression of NHE1 and NBCn1 protein was generally moderate in invasive lobular 
 
 Although our functional data cover too few patients with mucinous adenocarcinomas (n=5) to perform a formal comparison with the other histopathologies, the pattern of pHi regulation (Figure 2—figure supplement 1A) was similar to that observed in invasive lobular and ductal breast carcinomas (Figure 2A,B). Notably, the net acid extrusion capacity (Figure 2—figure supplement 1B,C) and steady-state pHi (Figure 2—figure supplement 1D) in mucinous adenocarcinomas confirmed the dual dependency on Na+/H+ exchange and Na+,HCO3– cotransport.
 
-## Na+,HCO3– cotransport elevates pHi more in breast carcinomas of high malignancy grade
+### Na+,HCO3– cotransport elevates pHi more in breast carcinomas of high malignancy grade
 
 Malignancy grading of breast cancer tissue provides valuable prognostic information (Rakha et al., 2010), and we show here that the malignancy grade is also reflected in the pHi dynamics of the breast cancer tissue (Figure 3A–C). We observed a tendency toward a greater net acid extrusion capacity in higher malignancy grade breast carcinomas (Figure 3D, Figure 3—figure supplement 1, and Figure 6D). More prominently, we found that the Na+,HCO3– cotransport activity established an increasingly elevated steady-state pHi in breast carcinomas with higher malignancy grade, and this effect reached statistical significance both before (Figure 3E) and after (Figure 6B) adjustment for other clinicopathological characteristics.
 
 Protein expression levels for NHE1 and NBCn1 did not significantly differ between breast cancer tissue of different malignancy grades (Figures 3F,G and 6E,F).
 
-## Na+/H+ exchange elevates pHi more in breast carcinomas with low estrogen receptor expression
+### Na+/H+ exchange elevates pHi more in breast carcinomas with low estrogen receptor expression
 
 Estrogen receptors play important roles in mammary gland development (Shyamala, 1997). The expression of estrogen receptors in breast cancer tissue varied considerably between patients: as shown in Table 1, there was a clear distinction between a large group of patients with tumors showing widespread estrogen receptor expression (≥90% positive cells) and a smaller subset of patients with tumors showing very limited estrogen receptor expression (≤15% positive cells). Previous studies have found that estrogen receptors are expressed in around 10% of the cells in normal breast epithelium (Oh et al., 2017).
 
@@ -80,7 +287,7 @@ We detected no obvious effect of estrogen receptor expression on the net acid ex
 
 The protein expression levels for NHE1 and NBCn1 were not significantly influenced by estrogen receptor status (Figures 4E,F and 6E,F).
 
-## HER2 receptors increase expression of NBCn1 and NHE1 protein
+### HER2 receptors increase expression of NBCn1 and NHE1 protein
 
 Growth factor input facilitates cancer cell proliferation and the malignant phenotype of cancer cells; and the functional implications of HER2 receptors are amplified by overexpression or gene amplification in 10–20% of breast cancer patients (Table 1) and less commonly by activating somatic mutations (Connell and Doherty, 2017).
 
@@ -88,11 +295,11 @@ HER2 receptor status did not significantly influence the net acid extrusion capa
 
 The protein expression levels of NHE1 as well as NBCn1 were elevated in breast carcinomas with HER2 overexpression or gene amplification both before (Figure 5E,F) and after (Figure 6E,F) adjustment for other clinicopathological characteristics.
 
-## Patient age and tumor size
+### Patient age and tumor size
 
 We next plotted steady-state pHi levels (Figure 6—figure supplement 1A,B) and capacities for net acid extrusion during intracellular acidification (Figure 6—figure supplement 1C,D) as functions of tumor size (Figure 6—figure supplement 1A,C) and patient age (Figure 6—figure supplement 1B,D). The CO2/HCO3–-independent net acid extrusion capacity decreased as function of patient age before (Figure 6—figure supplement 1D) but not after (Figure 6C) adjustment for other clinicopathological characteristics, whereas none of the other plots revealed significant correlations (Figure 6A–D and Figure 6—figure supplement 1A–D).
 
-## Clinicopathological characteristics independently predict acid-base dynamics and expression of acid-base transporters
+### Clinicopathological characteristics independently predict acid-base dynamics and expression of acid-base transporters
 
 The patient groups illustrated in Figures 2–5 are stratified by individual clinicopathological parameters. We next performed multiple linear and logistic regression analyses to control for multiple comparisons, take into account unbalanced distributions within individual groups, and identify clinical and pathological characteristics that independently predict steady-state pHi (Figure 6A,B), net acid extrusion capacity (Figure 6C,D), or acid-base transporter expression (Figure 6E,F).
 
@@ -102,7 +309,7 @@ None of the tested clinical or pathological parameters (i.e., patient age, tumor
 
 The NHE1 and NBCn1 protein expression levels in the human breast cancer tissue were independently elevated by HER2 overexpression or gene amplification (Figure 6E,F).
 
-## Elevated pHi predicts high proliferative activity
+### Elevated pHi predicts high proliferative activity
 
 The accentuated metabolism of cancer cells supplies chemical intermediates and energy for cell proliferation. However, the accelerated metabolism also leads to a higher cellular acid load and risk of intracellular acidification, which can limit further cell proliferation (Boedtkjer and Pedersen, 2020).
 
@@ -110,7 +317,7 @@ When we stratified the patient cohort by expression of proliferative markers (Fi
 
 We demonstrated elevated NBCn1 protein expression in the patient group with high compared to low Ki67 index (Figure 7F) although this effect was not quite significant after we adjusted for other clinicopathological characteristics (Figure 7G). We found no difference in NHE1 protein expression between tumors with high and low Ki67 index (Figure 7E).
 
-## Increased Na+,HCO3– cotransport capacity and NBCn1 expression predict lymph node metastasis
+### Increased Na+,HCO3– cotransport capacity and NBCn1 expression predict lymph node metastasis
 
 Breast cancer prognosis critically depends on the invasive potential of the cancer cells, and acid-base transporters are implicated in key metastatic steps including cell migration and extracellular matrix degradation (Boedtkjer and Pedersen, 2020). Thus, we evaluated whether expression and function of acid-base transporters varied between primary breast cancer tissue from patients with and without lymph node metastases (Figure 8 and Figure 8—figure supplement 1). We compared primary breast cancer tissue from patients without detectable tumor cells in the axillary lymph nodes to primary breast cancer tissue from patients with axillary lymph nodes containing macro-metastases, micro-metastases, or isolated tumor cells.
 
@@ -118,7 +325,7 @@ The initial CO2/HCO3–-dependent pHi recovery from NH4+-prepulse-induced intrac
 
 In congruence with the enhanced Na+,HCO3– cotransport activity, we identified increased NBCn1 protein expression in primary breast cancer tissue from patients with lymph node metastases (Figure 8F). Thus, elevated NBCn1 protein expression was an independent predictor of lymph node metastasis with an odds ratio of 1.72 for a single-unit step increase on the applied 6-point expression scale (Figure 8G). The selective importance of Na+,HCO3– cotransport and NBCn1 expression was supported by our finding that NHE1 protein expression was reduced in primary breast cancer tissue from patients with lymph node metastases (Figure 8E) and qualified as an independent predictor negatively related to metastatic risk with an odds ratio of 0.60 (Figure 8G).
 
-## mRNA expression levels for acid-base transporters predict patient survival
+### mRNA expression levels for acid-base transporters predict patient survival
 
 We next evaluated whether the biological implications of acid-base transporters in breast cancer tissue have consequences for patient prognosis. We used transcriptomics data to stratify a patient cohort of nearly 1500 breast cancer patients by their mRNA expression levels for acid-base transporters. We then studied how the survival proportions developed over time in the entire patient population and in subpopulations with well-defined molecular subtypes (i.e., normal-like, luminal A and B, HER2-enriched, and basal-like breast cancer). We expect no straightforward proportionality between mRNA, protein, and function when comparing across molecular subtypes or clinicopathological characteristics driven by different carcinogenic mechanisms. This should be kept in mind particularly when interpreting survival analyses performed across the whole unstratified patient population (Figures 9B and 10B, and Figure 10—figure supplements 1B and 2B). Focusing on individual molecular subtypes, the relationship from mRNA to protein and function is likely much simpler, and our emphasis is therefore on the survival analyses performed after molecular subtype stratification (Figure 9C–G, Figure 10C–G, and Figure 10—figure supplements 1C–G and 2C–G).
 
@@ -170,15 +377,116 @@ In conclusion, we identify distinct patterns of pHi dynamics as well as mRNA and
 
 ## Materials and methods
 
-## Human breast biopsies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC4A7</td>
+      <td>GenBank</td>
+      <td>Gene ID: 9497</td>
+      <td>Encodes NBCn1</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC9A1</td>
+      <td>GenBank</td>
+      <td>Gene ID: 6548</td>
+      <td>Encodes NHE1</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC16A1</td>
+      <td>GenBank</td>
+      <td>Gene ID: 6566</td>
+      <td>Encodes MCT1</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC16A3</td>
+      <td>GenBank</td>
+      <td>Gene ID: 9123</td>
+      <td>Encodes MCT4</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Surgical breast biopsies</td>
+      <td>Regionshospitalet Randers, Denmark</td>
+      <td>This study cohort</td>
+      <td>Cancer and matched normal tissue</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type 3</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Cat. #: LS004182</td>
+      <td>450 IU/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BCECF-AM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: B1170</td>
+      <td>3 µM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NBCn1 (Rabbit polyclonal)</td>
+      <td>Jeppe Praetorius, Aarhus University, Denmark Damkier et al., 2006</td>
+      <td>Reference</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NHE1 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-136239; RRID:AB_2191254</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>OptiView DAB IHC detection kit</td>
+      <td>Roche Diagnostics</td>
+      <td>RRID:AB_2833075</td>
+      <td>Goat anti-rabbit and anti-mouse</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 9.1.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human breast biopsies
 
 Viable tissue biopsies of human breast cancer tissue and matched normal breast tissue were obtained from breast-conserving lumpectomies at the Department of Surgery, Regionshospitalet Randers, Denmark, essentially as previously described (Boedtkjer et al., 2013; Lee et al., 2015). We collected samples only from primary breast cancer resections, that is, no samples were acquired from recurrent tumors or metastatic sites. None of the included patients had received pre-operative radiation or chemotherapy. The studies included women, who were at least 18 years of age and presented with operable primary breast cancer (>10 mm) diagnosed by triple test including clinical examination, mammography combined with ultrasonography, and fine-needle aspiration cytology and/or core-needle biopsy. Table 1 summarizes the clinical and pathological characteristics of the 110 included patients. We obtained information regarding patient age, tumor size, histology, malignancy grade, expression of estrogen receptors, HER2 overexpression or gene amplification, Ki67 index, and lymph node metastasis from the medical records of the standard diagnostic care.
 
-## Preparation of freshly isolated organoids
+### Preparation of freshly isolated organoids
 
 We freshly isolated epithelial organoids—multicellular conglomerates of approximately 150 µm diameter dominated by cytokeratin-19-positive epithelial cells (Lee et al., 2016; Lee et al., 2018; Lee et al., 2015)—from breast cancer tissue and normal breast tissue through partial collagenase digestion of the collected breast biopsies (Figure 1A,B). The tissue samples were first cut into 1 mm pieces in phosphate-buffered saline and then transferred to Tissue Culture Flat Tubes (Techno Plastic Products AG, Switzerland) containing advanced DMEM/F12 culture medium (Life Technologies, Denmark) added 10% fetal bovine serum (Biochrom AG, Germany), 1% GlutaMAX (Thermo Fisher Scientific, Denmark) and 450 IU/mL collagenase type 3 (Worthington Biochemical Corporation, Lakewood, NJ). After continuous overnight shaking at 60 rpm in an incubator with 5% CO2 at 37°C, the isolated organoids sedimented for 20 min by gravitational forces and were then used directly for experiments without culture in order to best retain the functional characteristics of the sampled breast tissue.
 
-## pHi measurements
+### pHi measurements
 
 We studied pHi dynamics in epithelial organoids—freshly isolated from human breast cancer tissue and normal breast tissue—loaded with the pH-sensitive fluorophore 2',7'-bis-(2-carboxyethyl)-5-(and-6)-carboxyfluorescein (BCECF). We added 3 µM acetoxymethyl ester form of BCECF to a physiological saline solution containing 0.1% dimethyl sulfoxide, and loaded the organoids at 37°C for approximately 20 min before they were investigated on the stage of a Nikon Diaphot 200 microscope (Nikon, Japan) equipped with an SRV CCD Retiga camera (QImaging, Canada) and VisiView software (Visitron Systems, Germany). Emission light was collected at 530 nm during alternating excitation at 440 and 495 nm. After background subtraction, the F495/F440 BCECF fluorescence ratio was calibrated to pHi using the high-[K+] nigericin technique (Thomas et al., 1979).
 
@@ -186,22 +494,22 @@ Intracellular acidification was induced with the NH4+-prepulse technique (Boron 
 
 The CO2/HCO3–-containing physiological saline solution contained (in mM): 119 NaCl, 22 NaHCO3, 10 HEPES, 1.2 MgSO4, 2.82 KCl, 5.5 glucose, 1.18 KH2PO4, 0.03 EDTA, 1.6 CaCl2. CO2/HCO3–-free solutions were produced by substitution of HCO3– with Cl–, whereas Na+-free solutions were produced by substitution of Na+ with N-methyl-D-glucammonium (NMDG+), except for the NaHCO3 that was substituted with choline-HCO3. All solutions contained 5 mM probenecid to inhibit the organic anion transporter and avoid extrusion of BCECF from the cancer cells (Lee et al., 2015). The buffer solutions were aerated with 5% CO2/balance air (for CO2/HCO3–-containing solutions) or nominally CO2-free air (for CO2/HCO3–-free solutions) and pH adjusted to 7.40 at 37°C.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Histological sections were prepared from paraffin-embedded tissue blocks and immunohistochemically stained on a BenchMark ULTRA automated staining system (Roche Diagnostics, Indianapolis, IN). After deparaffinization, slides were heated to 100°C and pretreated using BenchMark ULTRA CC1 conditioning solution (Roche Diagnostics). The slides were then incubated with primary antibody diluted 1:100 in Dako REAL Antibody Diluent (S2022; Agilent Technologies, Inc, Santa Clara, CA) for 32 min. The rabbit anti-NH2-terminal NBCn1 antibody was generously provided by Dr Jeppe Praetorius (Damkier et al., 2006). The mouse anti-NHE1 antibody (#sc-136239, RRID:AB_2191254) was from Santa Cruz Biotechnology (Dallas, TX). Finally, endogenous peroxidase activity was inhibited, and bound antibody was detected with the OptiView DAB IHC detection kit (Roche Diagnostics, RRID:AB_2833075). Stained slides were imaged with a Hamamatsu NanoZoomer S60 digital slide scanner (Japan). Staining intensity was scored by an experienced breast pathologist.
 
 Information on estrogen receptor, HER2, and Ki67 expression was obtained from the standard diagnostic procedures. We observed a clear distinction between one group with very high estrogen receptor expression (≥90% positive cells) and another group with low estrogen receptor expression (≤15% positive cells) similar to values (median of 10%) previously reported for normal breast tissue (Oh et al., 2017). The absence of intermediate expression levels provided a clear and obvious separation between the groups. As previously noted by others (Coates et al., 2015), Ki67 expression displays a continuous distribution with no clear separation between groups of high and low expression. The median Ki67 index was 20% in our study cohort as a whole and also in the patient group with estrogen receptor-positive disease (see Figure 1—source data 1). Therefore, we followed the guidelines of the 2015 St Gallen International Expert Consensus recommending a cut-off setting of 30% for identification of patients with a clearly high Ki67 index (Coates et al., 2015).
 
-## Transcript levels and survival data in human breast cancer
+### Transcript levels and survival data in human breast cancer
 
 We retrieved seven normalized microarray datasets from studies by van de Vijver and co-workers (van de Vijver et al., 2002), Guo and co-workers (Guo et al., 2005), Calza and co-workers (Calza et al., 2006), and from the Gene Expression Omnibus series: GSE1992 (Hu et al., 2006), GSE2034 (Wang et al., 2005), GSE11121 (Schmidt et al., 2008), and GSE3143 (Bild et al., 2006). These studies collectively cover 1457 breast cancer patients with information on our genes of interest. The majority of the studies measure gene expression with multiple probes per gene; and therefore, we collapsed the multiple expression values by gene symbol using the maximum mean probe intensity. Next, we assigned each sample to one of the five well-defined breast cancer molecular subtypes (normal-like, luminal A, luminal B, HER2-enriched, and basal-like) identified in previous studies (Sørlie et al., 2001; Perou et al., 2000) using the PAM50 Breast Cancer Intrinsic Classifier (Parker et al., 2009).
 
 To conduct a meta-analysis, we cross-sample standardized each dataset separately, and then combined all seven datasets into one expression matrix that was subjected to a second round of cross-sample standardization. We used this standardized expression matrix to compare and test for differential gene expression levels of CD34, ESR1, HER2, LDHA, MKI67, PECAM1, PGR, SLC4A7, SLC9A1, SLC16A1, and SLC16A3 between the five molecular subtypes and for survival analyses. Kaplan-Meier survival curves were constructed for groups with high and low mRNA expression defined by z-scores above 0.5 and below –0.5, respectively. In cases where either the group of high or low mRNA expression included less than 10 deaths, we used z-score cut-off thresholds of 0.3 and –0.3. For z-score calculation, the difference between the raw score and the population mean was divided by the population standard deviation.
 
-## Statistics
+### Statistics
 
 Data are given as mean ± SEM unless otherwise specified; n equals number of patients (i.e., biological replicates) and experiments were performed one time for each experimental condition. No explicit power calculations were performed. Within the study periods, tissue was sampled from all patients, who fulfilled the inclusion criteria, and allocated to the appropriate groups based on information from the standard diagnostic procedures. The investigators were blinded during the experiments and analyses, as the clinicopathological information was not collected until later. We considered p-values smaller than 0.05 as statistically significant. Acid-base transport activities and steady-state pHi values were compared between groups by mixed-effects analyses followed by Sidak’s multiple comparisons test. We compared categorical protein expression levels by χ2-tests for trend. mRNA expression data were compared between multiple groups by one-way ANOVA followed by Tukey’s post-test. Relationships between patient age, tumor size, acid-base transport activity, and steady-state pHi were tested by Spearman’s correlation analyses. We identified associations between multiple clinical and pathological independent variables and continuous dependent variables based on multiple linear regression analyses, whereas we identified associations with dichotomous and ordered categorical dependent variables using binomial and ordinal logistic regression analyses, respectively. Kaplan-Meier survival curves were compared by Mantel-Cox and Gehan-Breslow-Wilcoxon tests. We tested pairwise correlations between mRNA expression of acid-base transporters, angiogenic markers, and sex hormone and growth factor receptors based on Pearson and partial correlation analyses. Statistical analyses were performed with GraphPad Prism 9.0.0 (RRID:SCR_002798) and IBM SPSS Statistics (RRID:SCR_002865) software.
 
-## Study approval
+### Study approval
 
 All participants gave written informed consent. The Mid-Jutland regional division of the Danish Committee on Health Research Ethics (M-20100288) and the Danish Data Protection Agency (1-16-02-191-16) approved the procedures for tissue sampling and data handling, respectively.

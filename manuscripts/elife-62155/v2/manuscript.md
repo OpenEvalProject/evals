@@ -35,63 +35,137 @@ Here, we used CRISPR-Cas9 mutagenesis of ccm2 to recapitulate the mosaic inactiv
 
 ## Results
 
-## ccm2 CRISPR zebrafish embryos display segmental dilation of the caudal venous plexus
+### ccm2 CRISPR zebrafish embryos display segmental dilation of the caudal venous plexus
 
 As noted above, although null mutations of krit1 and ccm2 result in cardiac dilation and some vascular abnormalities, CCMs have not been observed in zebrafish (Mably et al., 2006; Renz et al., 2015). We reasoned because humans with CCM are mosaic for homozygous inactivation of CCM1 or CCM2, that induction of such mosaicism using a CRISPR-Cas9 system (Ablain et al., 2015) could result in lesion formation. To create a mosaic animal, we co-injected Cas9 mRNA and gRNAs targeting the ccm2 gene in zebrafish embryos (Figure 1—figure supplement 1A, Supplementary file 2). As expected, both genomic DNA sequencing and whole mount in situ hybridization showed that ccm2 was targeted in a variable mosaic pattern affecting all tissues (Figure 1—figure supplement 1B and C). About half of these mosaic embryos displayed lethal cardiovascular defects.
 
 The most prevalent lethal phenotype, observed in ~30% of 2 dpf ccm2 CRISPR embryos, was localized dilatation of the caudal venous plexus (CVP) associated with erythrocyte accumulation and sluggish blood flow (Figure 1A and B, Video 1). This phenotype was clearly demonstrated in Tg(fli1:EGFP)y1 and Tg(gata1:DsRed)sd2 embryos in which erythrocytes are labeled with DsRed and endothelial cells with EGFP (Figure 1C and D). Examination of the dilated CVP revealed multiple large blood-filled chambers separated by thin-walled partitions that bore a resemblance to Stage 2 human multi-cavernous CCM (Figure 1C) in contrast to the normal architecture of control embryos (Figure 1D). In addition, ~5% of ccm2 CRISPR embryos also displayed dilated cranial vessels (CV) (Figure 1E). We also noted expected phenotypes previously reported in ccm2 morphants and mutants (Mably et al., 2006; Renz et al., 2015), a small proportion (~10%) of ccm2 CRISPR embryos exhibited both heart dilation at 2 dpf and increased branching of the subintestinal vein (SIV) at 3 dpf (Figure 1—figure supplement 2). Co-administration of ccm2 mRNA prevented both CVP dilation and heart dilation in ccm2 CRISPR embryos (Figure 1G) confirming that both phenotypes are due to ccm2 loss. Notably, the dilated heart and CVP dilation appeared to be mutually exclusive, that is, in over 200 embryos analyzed, we never observed both phenotypes in a single ccm2 CRISPR embryo. Thus, the localized CVP dilation was the most prevalent phenotype observed in 2 dpf ccm2 CRISPR embryos in comparison to the cardiac and SIV phenotypes that characterize ccm2 null and ccm2 morphant embryos (Figure 1H; Mably et al., 2006; Renz et al., 2015).
 
-## Abortive intussusceptive angiogenesis in the dilated CVP of ccm2 CRISPR embryos
+![Figure 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig1-v2.jpg)
+
+**Figure 1.:** Endothelial cells and red blood cells were labeled by EGFP and DsRed respectively in double transgenic Tg(fli1:EGFP)y1;Tg(gata1:DsRed)sd2 embryos. (A) Red blood cells accumulate in dilated segments of the caudal vein of ccm2 CRISPR fish at 2 days post fertilization (dpf). (B) cas9 mRNA-injected control embryo. (C) ccm2 CRISPR embryos showed accumulation of red blood cells and intraluminal endothelial cells in a dilated segment of caudal vein in contrast to a control embryo. Note: In this and all succeeding sagittal views, anterior is to the left (D). (E) ccm2 CRISPR embryos occasionally showed dilations of cerebral veins, whereas control embryos (F) showed normal development of cerebral veins (F). MCeV: mid-cerebral vein, PMBC: primordial midbrain channel, PHBC: primordial hindbrain channel. (G) The dilated caudal venous plexus (CVP) and heart of ccm2 CRISPR embryos were rescued by ccm2 mRNA injection. p=0.0336 (dilated CVP), 0.0037 (dilated heart). p-Values were calculated using an unpaired two-tailed Student’s t-test. (H) Phenotypic distribution of dilated heart, CVP, and cerebral veins (CV) in ccm2 CRISPR embryos at 2 dpf. p=0.0078 (dilated CVP), 0.0268 (dilated heart), 0.0041 (dilated CV). p-Values were calculated using a paired two-tailed Student’s t-test. Error bars indicate SD. Scale bar: 1 mm in A and B, and 100 µm in C through F.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Outline of the experiment: cas9 mRNA and gRNAs targeting ccm2 were co-injected into one-cell stage zebrafish embryos. (B) Sequencing showed that the Cas9 together with designed gRNA could successfully target ccm2 and produce indels. PAM sequence (5’-AGG-3’) is indicated in a rectangle. Though the wild-type sequence is the top read in each downstream position, indicating existence of wild-type allele, multiple reads emerged downstream of the PAM in ccm2 CRISPR embryos. (C) Whole mount in situ hybridization of 2 days post fertilization (dpf) embryos showed ccm2 CRISPR embryos displaying patchy loss of CCM2 expression.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Microinjection was performed on Tg(fli1:EGFP) embryos. (A and B) Both atrium and ventricle were dilated in ~10% of ccm2 CRISPR embryos on 2 days post fertilization (dpf) (A) compared with normal heart in control (B). The heart was outlined by dash lines. (C and D) Increased branch points were observed on 3 dpf in ~10% of ccm2 CRISPR embryos indicated by arrows. Scale bar: 100 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-video1.mp4.jpg)
+
+**Video 1.:** Blood flow was slowed down in the lesion area that contained retained blood cells.
+
+### Abortive intussusceptive angiogenesis in the dilated CVP of ccm2 CRISPR embryos
 
 We used confocal microscopy and three-dimensional (3D) reconstruction of the dilated area of the CVP in Tg(fli1:EGFP;gata1:DsRed) zebrafish to explore their underlying structural defect. We noted intraluminal endothelial pillars that partitioned the lumen (Figure 2A through C) of the dilated CVP. In contrast, as expected, a completely patent caudal and ventral vein lumen formed in control embryos (Figure 2D through F). Furthermore, the ventral vein, which normally forms by a combination of sprouting and intussusceptive angiogenesis (Karthik et al., 2018), was lost in the dilated area of the CVP (Figure 2A through F). Importantly, examination of 3D reconstructions of the vessel revealed that these pillars were associated with pits on the external surface of the dilated CVP (Figure 2G arrows), a hallmark of the initial phase of intussusceptive angiogenesis (Djonov et al., 2003). In contrast to normal intussusceptive angiogenesis, wherein transluminal pillars ultimately fuse to divide vessels longitudinally into new daughter vessels (Djonov et al., 2003), the intussusceptions observed in ccm2 CRISPR embryos were not coordinately formed and failed to fuse resulting in a honeycombed lumen. This honeycombing created a lumen with multiple chambers filled with red blood cells (RBCs) associated with sluggish blood flow (Figure 2I through K, Videos 2 and 3), whereas patent lumens and normal blood flow were observed in control embryos (Video 4). Thus, in these mosaic ccm2 null zebrafish, an expanded region of the CVP is formed by multiple dilated erythrocyte-filled chambers and is associated with evidence of incomplete intussusceptive angiogenesis.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig2-v2.jpg)
 
-**Figure 2.:** ccm2 CRISPR embryos.(A–F) XZ planes and three-dimensional (3D) projection along Y axis of Airyscan images revealed intraluminal endothelial pillars at 2 days post fertilization (dpf) (A–C), whereas Cas9-injected control embryos displayed a normal patent lumen in both a dorsal and ventral caudal vein (D–F). Endothelial cells were labeled by EGFP in Tg(fli1:EGFP) embryos. Arrow, arrowhead, and asterisk indicated the dorsal aorta, dorsal vein, and ventral vein, respectively. (G and H) Ventral view of 3D reconstruction show the irregular surface of the dramatically dilated caudal vein segment in ccm2 CRISPR embryo (G) and normal ventral vein (H). Arrows in G indicate small pits where the endothelial pillars originate. (I–K) Intraluminal view of 3D reconstruction of ccm2 CRISPR embryo reveals the intraluminal pillars honeycombing the lumen and the accumulated red blood cells (I). Erythrocytes were not imaged in J to reveal pillars and the area within the box in (J) was magnified in (K), and arrowhead indicates the intravascular pillar. Endothelial cells and red blood cells were labeled by EGFP or DsRed respectively in Tg(fli1:EGFP) embryos. Scale bar: 20 µm.y1;Tg(gata1:DsRed)sd2
+**Figure 2.:** (A–F) XZ planes and three-dimensional (3D) projection along Y axis of Airyscan images revealed intraluminal endothelial pillars at 2 days post fertilization (dpf) (A–C), whereas Cas9-injected control embryos displayed a normal patent lumen in both a dorsal and ventral caudal vein (D–F). Endothelial cells were labeled by EGFP in Tg(fli1:EGFP) embryos. Arrow, arrowhead, and asterisk indicated the dorsal aorta, dorsal vein, and ventral vein, respectively. (G and H) Ventral view of 3D reconstruction show the irregular surface of the dramatically dilated caudal vein segment in ccm2 CRISPR embryo (G) and normal ventral vein (H). Arrows in G indicate small pits where the endothelial pillars originate. (I–K) Intraluminal view of 3D reconstruction of ccm2 CRISPR embryo reveals the intraluminal pillars honeycombing the lumen and the accumulated red blood cells (I). Erythrocytes were not imaged in J to reveal pillars and the area within the box in (J) was magnified in (K), and arrowhead indicates the intravascular pillar. Endothelial cells and red blood cells were labeled by EGFP or DsRed respectively in Tg(fli1:EGFP)y1;Tg(gata1:DsRed)sd2 embryos. Scale bar: 20 µm.
 
-## Ablation of intravascular pillars reverts the dilated CVP phenotype
+![Video 2.](https://cdn.elifesciences.org/articles/62155/elife-62155-video2.mp4.jpg)
+
+**Video 2.:** Note pits on the surface and that the CVP is partitioned into several dilated areas.
+
+![Video 3.](https://cdn.elifesciences.org/articles/62155/elife-62155-video3.mp4.jpg)
+
+**Video 3.:** Note the endothelial pillars within the lumen and accumulated red blood cells.
+
+![Video 4.](https://cdn.elifesciences.org/articles/62155/elife-62155-video4.mp4.jpg)
+
+### Ablation of intravascular pillars reverts the dilated CVP phenotype
 
 The multiple dilated compartments and sluggish blood flow suggested that this phenotype could be due to obstruction of free flow of erythrocytes by the meshwork of intravascular pillars. In support of this idea, we observed that spontaneous regression of an existing pillar was accompanied by reduced dilation of the CVP (Figure 3A through D). In addition, the trapped erythrocytes began to circulate freely. This rapid relief of both vessel dilation and blood stagnation suggested that the aberrant pillars may form a physical barrier thus resulting in accumulation of erythrocytes in dilated cavernous structures. To directly test the role of obstruction by intravascular pillars in dilation, we used targeted short pulses of near-infrared laser light to sever the pillars, a technique that generates negligible heat transfer and collateral damage to neighboring tissues (Nishimura et al., 2006). There was near instantaneous reduction of the dilated vessel diameter (93.4 µm) to near-normal dimensions (69.4 µm) in the example shown (Figure 3E and F, Video 5). In three such independent experiments, severing these pillars resulted in a 29 ± 4% reduction in vessel diameter (p=0.0004, two-tailed t-test). Thus, the pillars are an underlying cause of the CVP dilation observed in ccm2 CRISPR embryos.
 
-## Blood flow and red blood cells are required for CVP dilation
+![Figure 3.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig3-v2.jpg)
+
+**Figure 3.:** (A through D) Time lapse images reveal spontaneous retraction of an intravascular pillar leading to re-entry of blood cells into circulation and reduced dilation of the caudal vein. Endothelial cells were labeled by mCherry, and their nucleus and some red blood cells were labeled by EGFP in the Tg(fli1:nEGFP)y7;Tg(kdrl:mcherryras)s896 embryos. The retracted pillar is outlined by dotted lines for emphasis. Note that pillar retraction and vessel dilation were temporally correlated. (E and F) Laser ablation of pillar reduced caudal venous plexus (CVP) diameter. The diameter of the dilated vein (E) was reduced after ablation (F). Note the pillars indicated by arrows in (E) are gone after ablation in (F). Dashed line indicates the diameter of the vein before and after ablation. Scale bar: 50 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A ccm2-/- embryo displayed heart dilation but no CVP dilation (A, A’, and A”) compared with a ccm2+/- embryo (B, B’, and B”). A ccm2 morphant displayed heart dilation but no CVP dilation (C, C, and C”) compared with a control morphant (D, D, and D”). Scale bar: 500 µm (A, B, C, and D), 200 µm (A’, B’, C’, and D’), 50 µm (A”, B”, C”, and D”).
+
+![Video 5.](https://cdn.elifesciences.org/articles/62155/elife-62155-video5.mp4.jpg)
+
+### Blood flow and red blood cells are required for CVP dilation
 
 The importance of the pillars in CVP dilation suggested that obstruction of blood flow was responsible for the phenotype. Consistently, as noted above, ccm2 CRISPR embryos displaying CVP dilation did not show heart dilation. Conversely, segmental CVP dilation was absent in ccm2 null mutants or ccm2 morphants that exhibit characteristic heart dilation (Figure 3—figure supplement 1). These observations suggest that a normally pumping heart and thus normal blood flow is required for CVP dilation. To investigate the role of blood flow, we took advantage of the capacity of zebrafish embryos to obtain sufficient oxygen by diffusion to survive temporarily in the absence of circulating blood. We induced a silent heart phenotype by using a troponin T (tnnt) morpholino, resulting in ~65% reduction in the frequency of CVP dilation (Figure 4A). We also reasoned that the meshwork of pillars would not obstruct fluid flow but would present a barrier to free passage of erythrocytes. Reduction of erythrocytes using morpholinos directed against gata1(Galloway et al., 2005) or tif1-γ (Monteiro et al., 2011) transcription factors produced a similar dramatic reduction in the CVP dilation (Figure 4A). These data indicate that the meshwork of pillars obstructs the passage of erythrocytes in flowing blood resulting in multiple erythrocyte-filled cavernous chambers that dilate the CVP.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig4-v2.jpg)
+
+**Figure 4.:** Morpholinos targeting tnnt, gata1, tif1gamma, or a control morpholino were co-injected with ccm2 guide and Cas9 RNA. (A) Reduction of blood flow in tnnt morphants (A, B, C) resulted in reduced caudal venous plexus (CVP) dilation (A) and intravascular honeycombing (B, C) in 2 days post fertilization (dpf) ccm2 CRISPR Tg(fli1:EGFP) embryos. Arrows indicate intussusceptions. Scale bar: 100 µm. (A) Loss of erythrocytes in gata1 or tif1gamma morphant ccm2 CRISPR embryos also reduced the incidence of CVP dilation. p-Values were calculated using one-way ANOVA. **p<0.01. Error bars indicate SD. (D and E) At 23 hpf, ccm2 CRISPR Tg(klf2a:H2b-EGFP) embryos displayed a mosaic increase of EGFP expression in endothelial cells in the CVP (D), compared with cas9 mRNA control embryos (E). Scale bar: 25 µm. (F) Quantification of the EGFP fluorescence intensity using ImageJ. A total of 20 nuclei were analyzed from ccm2 CRISPR embryos, and 16 nuclei were analyzed from control embryos. Note that 11 nuclei in CRISPR embryo displayed intensity above 3000, while all of the nuclei in control embryo are below 3000. (G) ccm2 CRISPR and tnnt morpholino-injected Tg(klf2a:H2b:EGFP 2 dpf) embryos displayed a mosaic increase of endothelial nuclear EGFP expression in dorsal vein. Scale bar: 50 µm. In A through C, EGFP expression was driven by klf2a promoter in Tg(klf2a:H2b:EGFP) embryo, and endothelial cells were labeled by mcherry in Tg(kdrl:mcherry) transgenic line. Arrows indicated the endothelial nuclei with increased EGFP, and arrowheads indicated the other endothelial nuclei along the ventral wall of dorsal vein.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A and A’) A ccm2 morphant displayed an increase of endothelial nuclear EGFP KLF2a reporter expression, whereas a tnnt morphant displayed a decrease of endothelial nuclear EGFP KLF2a reporter expression compared with a control morpholino-injected embryo (C and C’). EGFP expression was driven by klf2a promoter in Tg(klf2a:H2b-EGFP), and endothelial cells were labeled by mcherry in Tg(kdrl:mcherry). Arrows indicated the endothelial cell nucleus. Scale bar: 50 µm.
 
 As shown in Figure 2, the sprouts that form the ventral vein are lost in the dilated region of the CVP. Because CVP development in tnnt morphants is nearly normal (Choi et al., 2011), we inspected the regions of the CVP displaying loss of ventral sprouting in tnnt morphant ccm2 CRISPR embryos. In 11 such embryos, in spite of the defective ventral sprouting and ventral vein formation, we observed no intravascular pillars. This result suggests that blood flow, in addition to causing the CVP dilation, is required for intussusceptive pillar formation (Figure 4B and C) as it is for normal CVP arborization (Karthik et al., 2018).
 
 Inactivation of either ccm1 or ccm2 markedly upregulates expression of KLF2, a flow-regulated transcription factor required for normal cardiovascular development and for CCM formation (Renz et al., 2015; Zhou et al., 2015; Zhou et al., 2016). In situ hybridization revealed that klf2a was also upregulated in the CVP of ccm2 CRISPR embryos (Figure 4—figure supplement 1). We used a klf2a reporter line, Tg(klf2a:H2AEGFP), together with an endothelial cell-specific marker line (Tg(kdrl:mcherry)is5) to observe the activity of the klf2a promoter. Ccm2 morphants displayed a generalized increase in klf2a reporter expression (Figure 4—figure supplement 2A and A’), whereas the absence of blood flow in the tnnt morphant caused much reduced reporter expression in endothelial cells (Figure 4—figure supplement 2B and B’; Figure 4—figure supplement 2C and C’). Consistent with previous reports (Parmar, 2006; Renz et al., 2015), these opposing changes confirm that ccm2 and flow can regulate expression of KLF2a. In 23 hpf ccm2 CRISPR embryos, examined prior to onset of blood flow, a patchy increase in klf2a reporter expression was observed in ccm2 CRISPR endothelial cells (Figure 4D), whereas reporter expression was uniformly low in control embryos at the same stage (Figure 4E). A quantitative analysis revealed a subpopulation of high KLF2a-expressing endothelial cells in ccm2 CRISPR embryos that was absent in control embryos (Figure 4F). Furthermore, in tnnt morphant 2 dpf ccm2 CRISPR embryos, there was also a striking mosaic increase in endothelial klf2a reporter expression (Figure 4G). Thus, dilation was associated with the patchy upregulation of a flow-sensitive transcription factor, KLF2, in the ccm2 CRISPR CVP. Taken together, these results suggest that patchy KLF2 expression in combination with blood flow leads to formation of these dilated RBC-filled multi-cavernous lesions in the CVP.
 
-## Mosaic upregulation of KLF2a is sufficient for cavernoma formation in CVP
+### Mosaic upregulation of KLF2a is sufficient for cavernoma formation in CVP
 
 The patchy increase in KLF2a expression in the CVP endothelial cells of ccm2 CRISPR embryos and requirement for blood flow suggested the possibility that these two factors led to the formation of cavernomas in the CVP. To address the role of KLF2, we injected klf2a and klf2b morpholinos and observed reversal of both CVP dilation and heart dilation in the ccm2 CRISPR embryos (Figure 5A). Furthermore, ccm2 CRISPR treatment of klf2a-/- embryos caused no CVP dilation (Figure 5—figure supplement 1). Thus, klf2a is required for the CVP dilation phenotype.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig5-v2.jpg)
+
+**Figure 5.:** (A) Both the CVP dilation and heart dilation were rescued by injection of klf2 morpholinos in 2 days post fertilization (dpf) ccm2 CRISPR embryos. **p<0.01. Error bars indicate SD. (B) pCS2-KLF2a linearized DNA-injected 2.5 dpf embryos displayed CVP dilation, whereas injection of a DNA fragment containing a DNA binding domain deleted ΔKLF2a mutant showed normal development. Arrow indicates the CVP dilation and retained erythrocytes. Scale bar: 1 mm. (C) Quantification of the prevalence of CVP dilation following KLF2a or ΔKLF2a overexpression. The mean and SD are shown. (D) Representative images show the honeycombed lumen and dilated CVP in 1.5 dpf KLF2a-injected embryo and normal CVP of ΔKLF2a-injected embryo. Arrow indicates honeycombing. Scale bar: 100 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Total number of embryos in each group is indicated on the graph. ***p<0.0001. Two-tailed Fisher’s exact test was used for comparisons.
+
 In ccm2 CRISPR embryos, KLF2a was both upregulated in a mosaic fashion and required for CVP dilation; we therefore asked whether mosaic upregulation of KLF2a expression per se causes cavernoma formation. Mosaic overexpression was accomplished by injecting a plasmid encoding KLF2a into Tg(fli1:EGFP)y1 embryos; ~6% of such embryos displayed CVP dilation compared to control embryos injected with ΔKLF2a plasmid expressing KLF2a with a deleted DNA binding domain (Oates et al., 2001; Figure 5B and C). Affected embryos exhibited intussusceptions within the CVP lumen accompanied by dilation (Figure 5D). These observations show that mosaic upregulation of KLF2a expression is sufficient for cavernoma formation when blood is flowing.
 
-## Mosaic expression of ccm2 causes KLF2a-dependent cavernoma formation
+### Mosaic expression of ccm2 causes KLF2a-dependent cavernoma formation
 
 ccm2 CRISPR caused mosaic inactivation of ccm2 and the dilated CVP phenotype, whereas global inactivation of ccm2 in ccm2 null mutants or ccm2 morphants does not. We therefore questioned whether mosaicism, per se, played a role in the CVP dilation. To test this idea, we globally reduced ccm2 expression by co-injecting a sublethal dose of ccm2 morpholino with the ccm2 gRNA CRISPR mixture. The chosen morpholino dose did not increase the frequency of observable heart defects; however, the percentage of embryos displaying CVP dilation decreased dramatically (Figure 6A). We then reasoned that because ccm2 acts as a scaffold connecting krit1 to ccm3 (Stahl et al., 2008), the overexpression of ccm2 might have a dominant negative effect. Indeed, when we injected linearized DNA containing ccm2 fused to m-Orange, ccm2 mosaic overexpression led to CVP dilation and aberrant intussusceptions similar to those observed in ccm2 CRISPR embryos in ~8% of embryos (Figure 6B and B’). In sharp contrast, injection of a plasmid encoding a loss of krit1 binding function ccm2(L197R) mutant (Kleaveland et al., 2009) resulted in of embryos displaying a normal vascular development (Figure 6C and C’). Importantly, mosaic overexpression of ccm2 caused significantly less CVP dilation in klf2a-/- embryos (Figure 6—figure supplement 1). Thus, mosaicism for ccm2 expression causes klf2a-dependent formation of multi-cavernous erythrocyte-filled structures in the CVP. Combined with the capacity of mosaic expression of klf2a to cause CVP dilation, these results show that mosaic expression of CCM2 leads to mosaic KLF2a expression and abortive intussusceptive angiogenesis that obstructs the lumen to form these cavernoma-like lesions.
 
-## CCMs in adult zebrafish
+![Figure 6.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig6-v2.jpg)
+
+**Figure 6.:** (A) Low-dose ccm2 morpholino reduced the incidence of CVP dilation but did not significantly increase heart dilation in ccm2 CRISPR embryos. (B and C) Mosaic ccm2 but not inactive ccm2(L197E) overexpression caused CVP dilation. Arrows indicate pillars in the CVP. (B’ and C’) Mosaic expression of mOrange-tagged ccm2 or ccm2(L197E). Scale bar: 100 µm. Error bars are ± SD.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The 200 ng/μl linearized DNA fragment containing CMV promoter, ccm2 coding sequence, and SV40 was injected into one-cell stage embryos. Total number of embryos in each group is indicated on the graph. The klf2a-/-embryos exhibited a significant (p=0.0218) reduction in CVP dilation. Two-tailed Fisher’s exact test was used for comparisons.
+
+### CCMs in adult zebrafish
 
 The foregoing data indicated that mosaic inactivation of ccm2 results in a multi-cavernous lesion in the embryonic CVP that resembles mammalian CCM in gross architecture and dependence on KLF2. We then asked if authentic CCM would develop in the ~50% of ccm2 CRISPR embryos that developed with a normal gross morphology and survived to adulthood. Brain vascular lesions were observed in virtually all of these adult ccm2 CRISPR zebrafish (Figure 7A and C) and not in control fish (Figure 7E and G). In order to image the lesions at the whole brain level, clear, unobstructed brain imaging cocktails and computational analysis (CUBIC) was applied to these brains, and the transparent brains were scanned by light sheet microscopy (Figure 7B,D,F and H). The distribution of lesions included cerebrum, cerebellum, brain stem, and, in some fish, the spinal cord (Figure 7I). This distribution pattern is similar to that found in patients (Goldstein and Solomon, 2017). Hematoxylin and eosin stained sections showed dilated multi-cavernous vascular channels filled with nucleated erythrocytes and lacking mature vessel wall angioarchitecture (Figure 7J). Perl’s Prussian blue staining indicated prior hemorrhage adjacent to the lesions (Figure 7K). These histological findings were absent in control fish (Figure 7L and M) and resemble those in CCM patients (Figure 7N and O; Cox et al., 2017). A dramatic reduction in CCM was seen in ccm2 CRISPR in klf2a-/- zebrafish (Steed et al., 2016; Figure 7P) consistent with previous murine studies in which inactivation of Klf2 prevented CCM formation (Zhou et al., 2016). In addition, similar to humans, these adult zebrafish also developed extracranial lesions (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig7-v2.jpg)
+
+**Figure 7.:** The ~50% of ccm2 CRISPR fish that survived developed highly penetrant CCMs (A and C). Arrows indicate superficial lesions on dorsal (A) and ventral (C) surface of the brain. Note hemorrhage into the ventricles. Lesions are absent in control embryos (E and G). Clear, unobstructed brain imaging cocktails and computational analysis (CUBIC) clearing (B, D, F, H) enables visualization of CCM burden by light sheet microscopy. Arrows indicate the lesions that corresponded to those seen in bright field, and arrowhead indicates a deeper lesion. L: left, R: right. Scale bar: 1 mm. (I) Cavernomas were dispersed throughout the central nervous system including cerebrum, cerebellum, brain stem, and spinal cord. (J) Hematoxylin and eosin (H&E) stained brain section reveals nucleated erythrocytes filling a dilated vessel with adjacent Prussian blue stained iron deposition (K) in ccm2 CRISPR fish and the absence of lesions or iron deposition in control fish (L, M). (N, O) A CCM from a patient stained with H&E (N) or Prussian blue (O). Note similar appearance to the zebrafish lesion shown in (J, K). Arrow indicates dilated vessel. Scale bar: 50 µm. (P) CCMs were significantly reduced in ccm2 CRISPR adult fish on klf2a-/- background compared to that on klf2a+/+ background. Total number of embryos in each group is indicated. p=0.0076. Two-tailed Fisher’s exact test was used for comparison.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Casper fish embryos were injected with ccm2 CRISPR and raised to 2.5 months. Arrows indicated the dilated vessels in the body wall. Scale bar: 1 cm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/62155/elife-62155-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** At 24 hpf, ccm2 CRISPR embryos were treated with 45 μM Y-27632(Tocris) in egg water as described by Uehata et al. (Nature: 389 (1997) pp. 990–994) and controls were treated with 1% DMSO. At 2 days post fertilization (dpf), in contrast to DMSO-treated embryos, no embryos treated with Y-27632 exhibited CVP dilation (**p=0.0098) or other obvious developmental anomalies. Total number of embryos in each group is indicated above the bars. Two-tailed Fisher’s exact test was used for comparisons.
 
 ## Discussion
 
 Familial CCM lesions form as a consequence of mosaic complete inactivation of CCM1, -2, or -3. Here, we have used Cas9-CRISPR mutagenesis to create such a mosaicism for ccm2 in zebrafish and show that surviving adult ccm2 CRISPR animals develop brain and extracranial lesions that closely resemble those observed in humans with CCM. In ~30% of embryos, we observed a novel phenotype, the formation of segmental dilatation of the caudal vein associated with slowed blood flow and formation of multiple markedly dilated blood-filled chambers, resembling a multi-cavernous CCM. These lesions are caused by intussusceptive intraluminal pillars that obstruct the passage or erythrocytes resulting in the development of multiple dilated blood-filled chambers. These pillars form as a consequence of a combination of blood flow and mosaic overexpression of a flow-dependent transcription factor, KLF2a, leading to aberrant flow sensing in the developing CVP. In sum, our studies describe a zebrafish model for CCM and provide a new mechanism that can explain the formation of the characteristic multi-cavernous lesions seen in humans.
 
-## The role of blood flow in CVP dilation
+### The role of blood flow in CVP dilation
 
 The segmental dilation of the CVP is due to intussusceptive pillars that fail to fuse normally, thus honeycombing the vein lumen and obstructing the free flow of erythrocytes. Evidence for the role of obstruction includes the marked slowing of blood flow within the lesions, dependence of dilation on blood flow and erythrocytes, and the relief of dilation by spontaneous or induced regression of the pillars. Intussusceptive angiogenesis differs from sprouting angiogenesis by splitting the existing vessel intraluminally as a response to increased blood flow (Djonov et al., 2003; Egginton et al., 2001). Recent elegant studies have shown that localized reduction in fluid shear stress occurs adjacent to intussusceptive pillars and is associated with the formation of new pillars that align with existing pillars (Karthik et al., 2018). These observations suggested that these blood flow patterns are responsible for the formation of the aligned pillars required for orderly fusion to split the vessel in two (Karthik et al., 2018). Similar to physiological intussusceptive angiogenesis, the hallmark pits and intraluminal pillars were also observed in the CVP of ccm2 CRISPR embryos; however, these pillars failed to undergo orderly fusion to split the vessel. We propose that this failure to undergo orderly fusion and CVP arborization is due to mosaic overexpression of klf2a, a flow-sensitive transcription factor, thus disrupting the required orderly flow signaling (Karthik et al., 2018). The meshwork formed by these intraluminal endothelial pillars partitions the patent lumen into multiple blood-filled chambers (Figure 3I and J, Videos 2 and 3). As more and more RBCs accumulate, the CVP becomes dilated (Video 1).
 
 In contrast to the necessity of blood flow for formation of the multi-cavernous CVP lesions, in ccm2 CRISPR zebrafish, blood flow suppresses endothelial proliferation and simple vessel dilation in krit1 global null zebrafish (Rödel et al., 2019). As shown here, vessels mosaic for expression of a CCM gene require blood flow to form the intravascular pillars that obstruct blood flow and cause multi-cavernous lesions. Previous studies termed dilated capillaries Stage 1 CCM and multi-cavernous lesions Stage 2 CCM (Zeineddine et al., 2019). The differential flow requirements for formation of dilated vessels and multi-cavernous lesions in zebrafish suggest that the Stage 1 and Stage 2 forms of CCM can employ distinct pathogenetic mechanisms.
 
-## Ccm2 mosaicism causes multi-cavernous malformations
+### Ccm2 mosaicism causes multi-cavernous malformations
 
 Initially we ascribed the absence of segmental CVP dilation in ccm2 null fish (Mably et al., 2006; Renz et al., 2015) solely to the reduced blood flow caused by the dilated heart. This explanation is insufficient because rescue of the heart phenotype in global krit1 (ccm1) null fish was not reported to cause segmental CVP dilation or CCMs (Rödel et al., 2019). Normal intussusceptive angiogenesis requires an orderly patterning of high and low flow signaling (Karthik et al., 2018). Ccm2 mosaicism causes a random upregulation of klf2a, a key effector of flow signaling, thereby disrupting this orderly patterning of flow signaling. In contrast, the global knockout uniformly upregulates klf2a so that the patterning of other flow-sensitive signals can guide the completion of the intussusceptive arborization.
 
 The dilated multi-cavernous CVP lesions described here resemble multi-cavernous CCM (McDonald et al., 2011) and their formation required mosaicism. Recent studies found that multi-cavernous murine CCMs are mosaic for inactivation of Ccm3 (Detter et al., 2018; Malinverno et al., 2019). The mouse studies emphasized that simply dilated vessels are not mosaic and contained only Ccm3 null endothelial cells (Detter et al., 2018; Malinverno et al., 2019). Mosaicism in multi-cavernous murine CCM was ascribed to recruitment of wild-type cells to the clonal CCM (Detter et al., 2018; Malinverno et al., 2019). Importantly, the mouse studies did not address the mechanism by which multi-cavernous lesions form. Here, we have shown that mosaicism is a prerequisite for formation of multi-cavernous CVP lesions because it disorganizes the flow signaling required for orderly sprouting and intussusceptive angiogenesis that remodel the CVP.
 
-## Ccm2 CRISPR zebrafish are an authentic CCM model
+### Ccm2 CRISPR zebrafish are an authentic CCM model
 
 As in humans (Akers et al., 2009; McDonald et al., 2011), the fish CCM lesions arise as a consequence of mosaic inactivation of CCM genes. Second, as in humans, chronic bleeding leads to iron deposition; this finding contrasts with the lack of iron deposition seen in acute mouse CCM models (Zeineddine et al., 2019). Third, similar to humans, histologically typical lesions are distributed throughout the CNS in contrast to the hindbrain-restricted lesions in acute mouse models (Zeineddine et al., 2019). Fourth, as is true in mouse models (Cuttano et al., 2016; Zheng et al., 2014), the development of CCM depends on klf2a, the orthologue of murine Klf2 and paralogue of Klf4, indicating that they form by the same pathogenetic mechanism. That said, in contrast to the KLF2 dependence of CVP dilation, injection of a KLF4 morpholino (Li et al., 2011) did not rescue this lesion (our unpublished data). There are chronic sensitized mouse models which do exhibit hemosiderin deposits and lesions throughout the CNS (McDonald et al., 2011); however, these models require cumbersome breeding schemes and mice of more than 3 months of age. That said, a recent report that postnatal induction of brain endothelial cell-specific ablation of the Ccm2 gene using the inducible Slco1c1-CreERT2 mouse results in iron deposits around CCM throughout the murine brain at 3 months of age has great promise (Cardoso et al., 2020). In contrast to existing mouse models, the present model uses CRISPR-Cas9 to generate highly penetrant typical lesions throughout the CNS, requires about 2 months, and can be induced in mutant strains without additional breeding. Thus, this model should be a useful tool in future studies to assess the effect of the many genetic manipulations possible in zebrafish (Gore et al., 2018) on the pathogenesis of CCM and to provide a complement to pharmacological screens directed at the dilated heart phenotype of ccm1 or ccm2 mutant fish (Otten et al., 2018).
 
@@ -99,40 +173,246 @@ In sum, the present work reveals a new embryonic vascular malformation, a multi-
 
 ## Materials and methods
 
-## Zebrafish lines and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>ccm2</td>
+      <td>http://www.ensembl.org/</td>
+      <td>ENSDARG00000013705</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>klf2a</td>
+      <td>http://www.ensembl.org/</td>
+      <td>ENSDARG00000042667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>ccm2m201</td>
+      <td>zfin.org</td>
+      <td>ZDB-ALT-980203–523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>klf2aig4</td>
+      <td>zfin.org</td>
+      <td>ZDB-ALT-161103–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1:EGFP)y1</td>
+      <td>zfin.org</td>
+      <td>ZDB-ALT-011017–8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(gata1:dsred)sd2</td>
+      <td>zfin.org</td>
+      <td>ZDB-ALT-051223–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(klf2a:H2b-EGFP)</td>
+      <td>zfin.org</td>
+      <td>ZDB-ALT-161017–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1:negfp)y7</td>
+      <td>zfin.org</td>
+      <td>ZDB-ALT-060821–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(kdrl:mcherry)is5</td>
+      <td>zfin.org</td>
+      <td>ZDB-ALT-110127–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-nls-zCas9-nls</td>
+      <td>addgene.org</td>
+      <td>47929</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT7-gRNA</td>
+      <td>addgene.org</td>
+      <td>46759</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE SP6 Transcription Kit</td>
+      <td>Thermo Fisher Scientific Wlatham, MA</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAshortscript T7 Transcription kit</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>AM1333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>crRNA-1</td>
+      <td>This paper</td>
+      <td>ccm2 gRNA</td>
+      <td>GGTGTTTCTGAAAGGGGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>crRNA-2</td>
+      <td>This paper</td>
+      <td>ccm2 gRNA</td>
+      <td>GGAGAAGGGTAGGGATAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>crRNA-3</td>
+      <td>This paper</td>
+      <td>ccm2 gRNA</td>
+      <td>GGGTAGGGATAAGAAGGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>crRNA-4</td>
+      <td>This paper</td>
+      <td>ccm2 gRNA</td>
+      <td>GGACAGCTGACCTCAGTTCC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ccm2-MO</td>
+      <td>zfin.org</td>
+      <td>ZDB-MRPHLNO-060821–3</td>
+      <td>GAAGCTGAGTAATACCTTAACTTCC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tnnt-MO</td>
+      <td>zfin.org</td>
+      <td>ZDB-MRPHLNO-060317–4</td>
+      <td>CATGTTTGCTCTGATCTGACACGCA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>gata1-MO</td>
+      <td>zfin.org</td>
+      <td>ZDB-MRPHLNO-050208–10</td>
+      <td>CTGCAAGTGTAGTATTGAAGATGTC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tif1γ -MO</td>
+      <td>afin.org</td>
+      <td>ZDB-MRPHLNO-110321–1</td>
+      <td>GCTCTCCGTACAATCTTGGCCTTTG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>klf2a-MO</td>
+      <td>afin.org</td>
+      <td>ZDB-MRPHLNO-100610–8</td>
+      <td>GGACCTGTCCAGTTCATCCTTCCAC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>klf2b-MO</td>
+      <td>zfin.org</td>
+      <td>ZDB-MRPHLNO-150427–1</td>
+      <td>AAAGGCAAGGTAAAGCCATGTCCAC</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Volocity</td>
+      <td>PerkinElmer Waltham, MA</td>
+      <td>Volocity</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ZEN</td>
+      <td>Zeiss, Oberkochen, German</td>
+      <td>ZEN 2.3 SP1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>Prism five for Windows</td>
+      <td>Version 5.01</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines and husbandry
 
 Zebrafish were maintained and with approval of Institutional Animal Care and Use Committee of the University of California, San Diego. The following mutant and transgenic lines were maintained under standard conditions: ccm2m201 (Mably et al., 2006), klf2aig4 (Steed et al., 2016), Tg(fli1:EGFP)y1 (Lawson and Weinstein, 2002), Tg(gata1:dsred)sd2 (Traver et al., 2003), Tg(fli1:negfp)y7 (Roman et al., 2002), Tg(klf2a:H2b-EGFP) (Heckel et al., 2015), Tg(kdrl:mcherry)is5 (Jin et al., 2005), and casper (White et al., 2008). See Expanded Materials and Methods for morpholino injections. Morpholinos sequences are shown in Supplementary file 1 (Morpholino sequences).
 
 Plasmids pCS2-nls-zCas9-nls (47929) and pT7-gRNA (46759) were bought from Addgene. Crispr RNA (crRNA) sequences were listed in Supplementary file 2 (crRNA sequences for zebrafish ccm2). Target gRNA constructs were generated as described before (Jao et al., 2013). PCS2-morangeccm2, pCS2-morangeccm2 mutant(L197R), pCS2-morangeklf2a, pCS2-morangeΔklf2a were cloned by infusion (Clontech) as follows: mOrange was cloned into ClaI, and linker sequence (5’-ggcagcgcgggcagcgcggcgggcagcggcgaattt-3’) between ClaI and EcoRI. Then ccm2, L197R mutant, klf2a or Δklf2a sequence were cloned into EcoRI, respectively. These plasmids were then double-digested by SalI and NotI (NEB), and the fragment containing CMV promoter and coding sequence were purified and 0.5 nl of a 200 ng/μl solution was injected into single cell embryos. Primer sequences are listed in Supplementary file 3 (Primers for template DNA synthesis).
 
-## RNA synthesis
+### RNA synthesis
 
 For cas9 mRNA, pCS2-nls-zCas9-nls was digested by NotI and then purified by column (Macherey-Nagel) as template. Capped nls-zCas9-nls RNA was synthesized using mMESSAGE mMACHINE SP6 Transcription Kit (Thermo Fisher Scientific) and purified through lithium chloride precipitation described in the same kit. For gRNA synthesis, gRNA constructs were linearized by BamHI digestion and purified by column (Macherey-Nagel). gRNA was synthesized by in vitro transcription using MEGAshortscript T7 Transcription kit (Thermo Fisher Scientific) and purified by alcohol precipitation described in the same kit. The concentration of nls-zCas9-nls RNA and gRNA were measured by NanoDrop 1000 Spectrophotometer (Thermo Fisher Scientific), and their quality was confirmed by electrophoresis through a 1% (wt/vol) agarose gel. The final concentrations for RNA injection are as follows: cas9 750 ng/μl, gRNA 120 ng/μl, and injection volume is 0.5 nl.
 
-## Whole mount in situ hybridization
+### Whole mount in situ hybridization
 
 Zebrafish embryos were collected at 48 hpf and fixed with 4% paraformaldehyde overnight. In situ hybridization was performed as described before (Thisse and Thisse, 2008). The hybridization temperature is 68°C, and the probe concentration is 1 ng/μl. For primers used to amplify the template DNA for probe synthesis, see Expanded Materials and Methods. The images for in situ hybridization were captured by Olympus MVX10, Macro-view.
 
-## Airyscan imaging and 3D reconstruction
+### Airyscan imaging and 3D reconstruction
 
 Embryos for imaging were anesthetized with egg water containing 0.016% tricaine (3-amino benzoic acid ethyl ester, Sigma-Aldrich) and then embedded in 1% low melting point agarose (Invitrogen 16520050). Imaging was performed with Zeiss 880 Airyscan confocal under the standard Airyscan mode, and a 20×/NA 0.8 objective was used. Maximum projection was performed with ZEN (Zeiss). 3D reconstruction was performed with Volocity (PerkinElmer).
 
-## Laser ablation of intravascular pillars
+### Laser ablation of intravascular pillars
 
 Laser ablation of intravascular pillars was performed using targeted ultrafast laser pulses that were generated with a multi-pass Ti:Al2O3 amplifier of local construction that followed a previously published design (Nishimura et al., 2006) and operated at a 5 kHz pulse rate. The ablation beam and the imaging beam were combined with a polarizing beamsplitter (Nishimura et al., 2006) prior to the microscope objective. The two beams were focused in the same focal plane and the ablation beam was centered in the area that is raster-scanned by the imaging beam so that ablation occurred at the center of the TPLSM imaging field. The energy per pulse of the ablation beam was tuned with neutral density filters and the quantity of pulses was controlled by a mechanical shutter (Uniblitz LS3Z2 shutter and VMM-D1 driver; Vincent). The energy and number of pulses was adjusted based on damage evaluated from the real-time TPLSM images and ranged between 0.2 and 0.4 μJ.
 
-## Live imaging of endothelial pillar ablation
+### Live imaging of endothelial pillar ablation
 
 Live images of the fish vessels were obtained with a two-photon laser scanning microscope of local design (Nishimura et al., 2006), which was adapted to include an ablation beam. Low-energy, 100 fs, 76 MHz pulses for TPLSM were generated by a Titanium:Sapphire laser oscillator (Mira F-900; Coherent Inc) that was pumped by a continuous wave laser (Verdi V-10 Nd:YVO4 laser; Coherent Inc). The imaging laser pulses were scanned in a raster pattern by galvanometric mirrors that are relay-imaged to the rear aperture of the objective. The two-photon excited fluorescence is reflected by a dichroic mirror and transmitted to a photomultiplier tube. To produce laser pulses for ablation while imaging, we employed a Pockels cell (QS-3 with NVP-525D driver and DD1 timing circuit; Quantum Technologies) to reroute 1 in 76,000 pulses from the oscillator pulse train to seed a multipass Titanium:Sapphire amplifier that is pumped by a Q-switched laser (Corona; Coherent). A half-wave plate (λ/2) rotates the polarization of the amplified pulses to lie perpendicular to that of the laser oscillator and thus permits both the ablation beam and the imaging beam to be routed to the microscope objective with a polarizing beamsplitter. We used a 25×/NA 0.95, water immersion objective (Olympus) for imaging and ablation.
 
-## Histology
+### Histology
 
 Hematoxylin and eosin stain and Perl’s Prussian blue stain were performed as described (Zeineddine et al., 2019).
 
-## Zebrafish brain dissection, CUBIC treatment, and light sheet imaging
+### Zebrafish brain dissection, CUBIC treatment, and light sheet imaging
 
 Zebrafish brain dissection was performed as previously described (Gupta and Mullins, 2010). CUBIC was optimized on the basis of previous report (Susaki et al., 2015). The brains were fixed with pH 7.5 4% PFA for 24 hr and then washed with PBS for 24 hr. After PBS wash, CUBICR1 treatment was then performed at 37°C in water bath for 42 hr. Samples were imaged in CUBICR2 as medium with ZEISS Lightsheet Z.1. Scanning was performed with 5× dual illumination optics and 5× objective.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with GraphPad Prism. p-Values were calculated by paired two-tailed Student’s t-test unless otherwise specifically indicated. The mean and SD were shown in the bar graphs.

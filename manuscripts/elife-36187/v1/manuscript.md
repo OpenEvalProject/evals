@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.36187.001 Vascular endothelial cell (EC) function depends on appropriate organ-specific molecular and cellular specializations. To explore genomic mechanisms that control this specialization, we have analyzed and compared the transcriptome, accessible chromatin, and DNA methylome landscapes from mouse brain, liver, lung, and kidney ECs. Analysis of transcription factor (TF) gene expression and TF motifs at candidate cis -regulatory elements reveals both shared and organ-specific EC regulatory networks. In the embryo, only those ECs that are adjacent to or within the central nervous system (CNS) exhibit canonical Wnt signaling, which correlates precisely with blood-brain barrier (BBB) differentiation and Zic3 expression. In the early postnatal brain, single-cell RNA-seq of purified ECs reveals (1) close relationships between veins and mitotic cells and between arteries and tip cells, (2) a division of capillary ECs into vein-like and artery-like classes, and (3) new endothelial subtype markers, including new validated tip cell markers.
+Vascular endothelial cell (EC) function depends on appropriate organ-specific molecular and cellular specializations. To explore genomic mechanisms that control this specialization, we have analyzed and compared the transcriptome, accessible chromatin, and DNA methylome landscapes from mouse brain, liver, lung, and kidney ECs. Analysis of transcription factor (TF) gene expression and TF motifs at candidate cis-regulatory elements reveals both shared and organ-specific EC regulatory networks. In the embryo, only those ECs that are adjacent to or within the central nervous system (CNS) exhibit canonical Wnt signaling, which correlates precisely with blood-brain barrier (BBB) differentiation and Zic3 expression. In the early postnatal brain, single-cell RNA-seq of purified ECs reveals (1) close relationships between veins and mitotic cells and between arteries and tip cells, (2) a division of capillary ECs into vein-like and artery-like classes, and (3) new endothelial subtype markers, including new validated tip cell markers.
 
 ## Introduction
 
@@ -42,9 +42,41 @@ Here, we explore transcriptome, chromatin, and DNA methylation differences among
 
 ## Results
 
-## Tissue-specific endothelial cell gene expression
+### Tissue-specific endothelial cell gene expression
 
 To characterize the genetic basis of inter-tissue heterogeneity among ECs, we set out to acquire a broad view of their genomic and epigenomic differences. Toward this end, we isolated ECs from four different murine tissues - brain, liver, lung, and kidney - at postnatal day 7 (P7) and performed RNA-seq, MethylC-seq (Lister et al., 2008), and ATAC-seq (Buenrostro et al., 2013) to generate an atlas of transcript abundances, single-base resolution DNA methylation, and accessible chromatin, respectively (Supplementary file 1). The data are available for public exploration as the Vascular Endothelial Cell Trans-omics Resource Database (VECTRDB) at https://markfsabbagh.shinyapps.io/vectrdb/ and https://github.com/mfsabbagh/EC_Genomics. To visualize the data on a genome browser, see http://neomorph.salk.edu/Endothelial_cell_methylome.php. At P7, the vasculature is still growing but it has also, presumably, acquired tissue-specific properties to support organ function. To isolate ECs, we harvested organs from Tie2-GFP (the Tie2 gene is also known as Tek) mice, which specifically express green fluorescent protein (GFP) in ECs (Motoike et al., 2000), enzymatically dissociated the tissues into single-cell suspensions, and then purified ECs using fluorescence-activated cell sorting (FACS) (Figure 1—figure supplement 1A). This approach to EC isolation was optimized and validated by Daneman et al., 2010). We note that Tie2-GFP is not expressed in all ECs. For example, we could not detect GFP in the capillaries of renal glomeruli by immunostaining (yellow arrows in Figure 1—figure supplement 1B). Each high-throughput sequencing experiment was performed on two or more independent biological replicates, and these exhibited high pairwise correlations (Figure 1A and far right panel of Figure 1B; Figure 1—figure supplements 2, 3 and 4A; Figure 2A; Figure 2—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig1-v1.jpg)
+
+**Figure 1.:** (A) Genome browser images showing CG methylation (top) and RNA expression (bottom) for two genes: Slc2a1, a glucose transporter expressed in brain ECs, and Fabp4, a fatty acid binding protein expressed in liver and kidney ECs. For DNA methylation, the mCG/CG ratio is shown, with the height of each bar indicating the fractional methylation (range: 0 to 1). For RNA-seq, histograms of the number of aligned reads are shown. For this and all other genome browser images, the heights of all the tracks of a given sequencing experiment are the same across samples. For both genes, tissue-specific gene expression is associated with tissue-specific hypomethylation near the TSS. Red arrows indicate illustrative examples of differential hypomethylation. Br, brain; Li, liver; Lu, lung; Ki, kidney. R1 and R2, biological replicates. Black arrows beneath this and all other genome browser images indicate the direction of transcription. (B) Scatter plots comparing cross-sample normalized RNA-seq read counts of EC-expressed protein-coding genes from brain versus liver, lung, and kidney, showing only those transcripts with TPM >10 for each of the two RNA-seq replicates. Colored symbols indicate transcripts with FDR < 0.05 and enrichment >2 fold for the indicated tissue comparison. Right, comparison of cross-sample normalized RNA-seq read counts for protein-coding genes between the two brain EC replicates. Values depicted are the log2 transformation of cross-sample normalized counts + 1. (C) Heatmaps depicting transcript abundances for 739 Endothelial Cell Tissue-Specific Genes (ECTSGs). Left, log2 transformation of TPM +1. Right, z-scores for the TPMs. (D) Principal component analysis of all EC-enriched transcripts from brain, liver, lung, and kidney. The two symbols for each sample represent biological replicates. In this and all other figures, tissue type is indicated by color: Br, brain, blue; Li, liver, cyan; Lu, lung, magenta; Ki, kidney, green.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A representative flow cytometry profile of ECs sorted from Tie2-GFP kidneys. The thresholds used to define GFP-positive CD11b-negative ECs (top left), singlets (top right), and viable propidium iodide-negative (bottom) ECs are outlined in black. (B) Immunostaining of brain, liver, lung, and kidney from P7 Tie2-GFP mice. Anti-GFP (green) staining in the top row reveals accumulation of GFP in CD31-positive (magenta) blood vessels. Yellow arrows indicate renal glomerular capillaries, which are GFP-negative. Scale bar: 100 um.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Heatmap indicating pairwise Pearson correlations for RNA-seq TPMs for protein-coding genes. Total indicates sequencing performed on total dissociated tissue, GFPneg indicates sequencing performed on GFP-negative FACS-sorted cells, and GFPpos indicates sequencing performed on GFP-positive FACS-sorted cells. R1 and R2 indicate biological replicates. (B) Expression levels (TPMs) based on RNA-seq for the indicated genes. The top row of genes are known EC-expressed genes. EC-specific transcripts comprise ~15% of total lung transcripts. The middle row of genes are known immune or mural cell-expressed genes. The bottom row of genes are known abundant parenchymal-expressed genes. In this and subsequent figures, cell or tissue fractions are indicated by the following symbols: GFP-negative, circle; GFP-positive, triangle; Total, square. GFP-positive represents FACS-purified ECs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Examples of liver gene expression to assess purity of FACS-sorted fractions. Expression levels (TPMs) based on RNA-seq for genes known to be expressed in Kupffer cells (top row) or cholangiocytes (bottom row). (B) Examples of lung gene expression to assess purity of FACS-sorted fractions. RNA-seq expression plots for genes known to be pan-EC (Cdh5, Kdr, Pecam1, and Tek), lung epithelial-specific [Cftr and genes coding for surfactant proteins (Sftp)], and lung EC-specific (Ace). Scn3b and Scn7a match the lung EC-specific expression pattern.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Scatter plots comparing cross-sample normalized RNA-seq read counts of protein-coding genes for pairs of biological replicates from liver ECs, lung ECs, and kidney ECs. (B) Scatter plots comparing cross-sample normalized RNA-seq read counts of EC-expressed protein-coding genes from liver versus lung, liver versus kidney, and lung versus kidney, showing only those transcripts with TPM >10 for each of the two RNA-seq replicates. Colored symbols indicate transcripts with FDR < 0.05 and enrichment >2 fold for the indicated tissue comparison. Values depicted are the log2 transformation of cross-sample normalized counts + 1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig2-v1.jpg)
+
+**Figure 2.:** (A) Scatter plots comparing the mean fraction of CG methylation in a 5 kb window immediately 3’ of the TSS for protein-coding genes from brain ECs versus liver, lung, and kidney ECs. Colored symbols indicate transcripts with FDR < 0.05 and enrichment >2 fold for the indicated tissue comparison. These plots show a positive correlation between EC tissue-specific gene expression and tissue-specific hypo-methylation. Right, comparison of CG methylation between the two brain EC biological replicates. (B) Heatmap indicating the percentage of each row that overlaps with differentially expressed genes. A significant proportion of ECTS-large hypo-DMRs overlap differentially expressed genes for the same EC-subtype relative to the other EC subtypes. Black stars indicate statistical significance at q < 1×10−10. (C) Heatmap indicating the percentage of each row that overlaps with either ECTS-large hypo-DMRs or DMVs. DMVs exhibit more overlap between EC subtypes than large hypo-DMRs. (D) Genome browser images showing methylation as in Figure 1A at various TF genes. Colored bars indicate DMVs. Each genome browser image is at the same scale.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scatter plots comparing the mean fraction of CG methylation in a 5 kb window immediately 3’ of the TSS for protein-coding genes for each of the peripheral EC biological replicates. (B) Scatter plots comparing the mean fraction of CG methylation in a 5 kb window immediately 3’ of the TSS for protein-coding genes from liver versus lung, liver versus kidney, and lung versus kidney. Colored symbols indicate transcripts with FDR < 0.05 and enrichment >2 fold for the indicated tissue comparison. These plots show a positive correlation between EC-tissue-specific gene expression and tissue-specific hypo-methylation. (C) Barplot indicating the distribution of UMRs, LMRs, and DMRs in relation to gene TSSs. (D) Heatmap indicating percentage of overlap among UMRs and LMRs. There is more overlap between UMRs of different EC subtypes than between LMRs. (E) Gene ontology categories (McLean et al., 2010) related to TFs are strongly enriched for the genes that overlap DMVs shared by all four EC subtypes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Genome browser images showing CG methylation at differentially expressed TF genes. Colored bars indicate DMVs. Red arrows indicate illustrative examples of differential hypermethylation. (B) Barplot indicating the mean fraction of CG methylation at DMVs overlapping the indicated TF genes. To compare the degree of methylation between EC subtypes at DMVs overlapping differentially expressed TF genes, we applied the following steps: (1) within each EC subtype, all DMVs in a 20 kb window 5’ to the TSS of the gene of interest were joined into a single contiguous block, (2) overlapping DMVs between EC subtypes were merged to generate a genomic interval that spanned the greatest extent of all the DMVs, (3) within the merged interval, the fraction mCG methylation was calculated for each EC subtype. This scheme is illustrated by the translucent orange box shown at the Irx3 locus in (A). (C) Expression levels (TPMs) based on RNA-seq for the TF genes shown in (B). Values for independent replicates are shown.
 
 To filter out non-EC transcripts that derive from lysed parenchymal cells, we also conducted RNA-seq on GFP-negative FACS-sorted cells, and, for completeness, total dissociated tissue. By comparing the expression profiles of GFP-positive cells to GFP-negative cells, we determined a union set of 4117 protein-coding and non-coding EC-enriched transcripts from each tissue for further analysis (Supplementary file 2; see the RNA-seq section under Materials and methods for the three criteria applied in this comparison). Importantly, this list contains many known EC markers, including Pecam1, Kdr, Cdh5, and Tek (also known as Tie2). Notably absent from the list are the pan-leukocyte marker Ptprc/Cd45, the macrophage/microglia marker Csf1r, the vascular smooth muscle cell marker Acta2, the pericyte marker Cspg4, and various abundant parenchyma-specific markers such as Syt11 (brain), Alb (liver), Sftpc (lung), and Umod (kidney) (Figure 1—figure supplement 2B). The GFP-negative fraction of dissociated liver was unexpectedly depleted for hepatocyte-specific transcripts suggesting that hepatocytes were lost during cell dissociation and/or flow cytometry. This fraction was enriched for transcripts associated with Kupffer cells (Cd68, Cd80, and Cd86) and cholangiocytes (Epcam, Pkhd1l1, and St14; Li et al., 2017) (Figure 1—figure supplement 3A). Based on the retention of known EC-specific transcripts and the removal of known parenchyma-specific transcripts, we conclude that the EC-enrichment criteria selected for bona fide EC-specific transcripts.
 
@@ -52,7 +84,90 @@ Focusing only on the 3853 protein-coding EC-enriched transcripts, scatter plots 
 
 Transcripts from 2392 genes exhibited >2 fold differential abundance between one or more pairs of EC subtypes, with 739 exhibiting >2 fold differential expression in a comparison of ECs from one tissue versus ECs from each of the other three tissues (Figure 1C; Supplementary file 2; see Materials and methods). We will refer to these 739 genes as ‘EC-tissue-specific genes’ or ‘ECTSGs’. For reference, this abbreviation and those that follow are summarized and defined in Table 1. Of the 739 ECTSGs, 685 are protein-coding and 54 are non-coding. Gene ontology (GO) enrichment analysis (Ashburner et al., 2000; The Gene Ontology Consortium, 2017; The Gene Ontology Consortium, 2017) of the four sets of ECTSGs was consistent with tissue-specific specializations of each vascular bed. For example, brain ECTSGs were enriched for GO terms such as ‘neutral amino acid transport’ and ‘drug transmembrane transport’ whereas liver ECTSGs were enriched for GO terms such as ‘scavenger receptor activity’ and ‘vesicle-mediated transport’ (Supplementary file 3). Consistent with the known role of Wnt signaling in brain endothelium development, brain ECTSGs were also enriched for the GO term ‘negative regulation of canonical Wnt signaling pathway’ (Supplementary file 3). Principal component analysis (PCA) of the four EC transcriptomes showed that the transcriptional signatures of brain ECs and liver ECs are substantially distinct from each other and from those of lung ECs and kidney ECs (Figure 1D), broadly consistent with earlier studies of embryonic and adult ECs (Daneman et al., 2010; Hupe et al., 2017).
 
-## Identification of distinct classes of hypomethylated regions in endothelial cells
+**Table 1.**
+ Abbreviations used throughout the text
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Abbreviation</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATAC</td>
+      <td>Assay for Transposase Accessible Chromatin</td>
+    </tr>
+    <tr>
+      <td>BBB</td>
+      <td>Blood-brain barrier</td>
+    </tr>
+    <tr>
+      <td>CRE</td>
+      <td>Cis-regulatory element</td>
+    </tr>
+    <tr>
+      <td>DEG</td>
+      <td>Differentially expressed gene</td>
+    </tr>
+    <tr>
+      <td>DMR</td>
+      <td>Differentially methylated region</td>
+    </tr>
+    <tr>
+      <td>DMV</td>
+      <td>DNA methylation valley (UMR &gt; 3 kb)</td>
+    </tr>
+    <tr>
+      <td>EC</td>
+      <td>Endothelial cell</td>
+    </tr>
+    <tr>
+      <td>ECTS-hypo-DMR</td>
+      <td>Endothelial cell tissue-specific hypo-DMR</td>
+    </tr>
+    <tr>
+      <td>ECTSAP</td>
+      <td>Endothelial cell tissue-specific ATAC-seq peak</td>
+    </tr>
+    <tr>
+      <td>ECTSG</td>
+      <td>Endothelial cell tissue-specific gene</td>
+    </tr>
+    <tr>
+      <td>GO</td>
+      <td>Gene ontology</td>
+    </tr>
+    <tr>
+      <td>LMR</td>
+      <td>Low-methylated region (hypomethylated, CG-poor)</td>
+    </tr>
+    <tr>
+      <td>PCA</td>
+      <td>Principal component analysis</td>
+    </tr>
+    <tr>
+      <td>scRNA-seq</td>
+      <td>Single-cell RNA-seq</td>
+    </tr>
+    <tr>
+      <td>TF</td>
+      <td>Transcription factor</td>
+    </tr>
+    <tr>
+      <td>TSS</td>
+      <td>Transcription start site</td>
+    </tr>
+    <tr>
+      <td>UMR</td>
+      <td>Unmethylated region (hypomethylated, CG-rich)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Identification of distinct classes of hypomethylated regions in endothelial cells
 
 Low cytosine DNA methylation (mCG) immediately downstream of transcriptional start sites (TSSs) typically correlates with increased gene expression (Schultz et al., 2015). In visually comparing EC methylation profiles to transcription profiles, we find that differentially expressed genes are often associated with tissue-specific hypomethylation starting at the TSS and extending into the gene body (Figure 1A). As a result, plotting the mean fraction of mCG methylation in a five kilobase (kb) window downstream of the TSS for all protein-coding genes reveals an inverse relationship between methylation and gene expression among differentially expressed EC-enriched genes (Figure 2A; Figure 2—figure supplement 1B). However, these differences in methylation at differentially expressed genes occur in the context of highly similar global methylation patterns, as seen by correlation coefficients between different EC subtypes (0.95–0.97) that are nearly indistinguishable from the correlation coefficients between biological replicates (0.95–0.98; Figure 2A; Figure 2—figure supplement 1A).
 
@@ -68,19 +183,47 @@ Previously identified DMVs in embryonic stem cells (ESCs) remain hypomethylated 
 
 At genes coding for TFs that are differentially expressed among EC subtypes, DMVs show EC subtype-specific differences in boundary locations and degree of methylation, with a broad trend of increased methylation 5’ of the TSS in the EC subtype(s) that express the TF gene as seen for Foxf1, Foxf2, and Zic3 in brain; Tbx3 in brain, lung, and kidney; Tbx2, Gata6, Meis1, and Meis2 in liver, lung, and kidney; Gata4 in liver; and Irx3 in kidney (Figure 2—figure supplement 2A–C). This observation is consistent with a proposed model in which cell-type-specific expression of important TF regulators of lineage identity results in nearby hypermethylation (Li et al., 2018). We note that FOXF1, a lung EC-enriched TF implicated in pulmonary vascular development (Kalinichenko et al., 2001; Cai et al., 2016; Dharmadhikari et al., 2016), represents an exception to this methylation pattern, due to demethylation at the adjacent lung EC-expressed lncRNA gene, Fendrr (Figure 2—figure supplement 2A).
 
-## HOX gene expression and DNA methylation: correlation with anterior-posterior position
+### HOX gene expression and DNA methylation: correlation with anterior-posterior position
 
 Some of the largest regions of hypomethylation are found in the HOX gene clusters. HOX genes do not exhibit the classic relationship between methylation and gene expression (Laurent et al., 2010; Bock et al., 2012; Xie et al., 2013). Among the four EC subtypes, HOX cluster DNA methylation is lowest in brain ECs, intermediate in liver and lung ECs, and highest in kidney ECs (Figure 3A and C; Figure 3—figure supplement 1). This pattern of methylation correlates with the anterior/posterior position of the brain, liver, lung, and kidney – as well as with their embryonic primordia - along the body axis: the brain is most anterior, the lungs and liver are intermediate (and are derived from the primitive foregut), and the kidneys are the most posterior (and are derived from the ureteric bud and surrounding mesenchyme). For all four HOX clusters, the ATAC-seq patterns are similar for liver, lung, and kidney ECs, but the peak intensities are greatly reduced in brain ECs (Figure 3A; Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig3-v1.jpg)
+
+**Figure 3.:** (A) Genome browser image showing CG methylation (top) and accessible chromatin (bottom) at the HOX-A gene cluster. HOX genes in this cluster are expressed in an anterior-posterior gradient corresponding to their position in the cluster, with genes near the 3’ end of the cluster expressed more anteriorly and genes near the 5’ end expressed more posteriorly. The degree of EC methylation is: brain <liver ~ lung<kidney. The degree of EC accessible chromatin is: brain <liver < lung~kidney. Colored bars indicate DMVs or ATAC-seq peaks. Red arrows pointing down indicate illustrative examples of differential hypomethylation. Red arrows pointing up indicate illustrative examples of differential hypermethylation. (B) Expression levels (TPMs) based on RNA-seq for each gene in the HOX-A cluster. (C) Heatmap depicting mean fraction of methylated CG across each HOX cluster for each EC subtype. (D) Heatmaps depicting log2(TPM +1) or mean fraction of methylated CG in the gene body for genes within each of the four HOX clusters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Genome browser images showing CG methylation (top) and accessible chromatin (bottom) at the (A) HOX-B gene cluster, the (B) HOX-C gene cluster, and the (C) HOX-D gene cluster. HOX genes in each cluster are expressed in an anterior-posterior gradient corresponding to their position in the cluster, with genes near the 3’ end of the cluster expressed more anteriorly and genes near the 5’ end expressed more posteriorly. Colored bars indicate DMVs or ATAC-seq peaks. Red arrows pointing down indicate illustrative examples of differential hypomethylation. Red arrows pointing up indicate illustrative examples of differential hypermethylation.
+
 In the HOX clusters, there is a roughly co-linear relationship between each gene’s position along the chromosome and the anterior/posterior territory along the body axis where that HOX gene is expressed: genes that are named with low numbers (e.g. Hoxa1) are expressed more anteriorly and genes that are named with high numbers (e.g. Hoxa13) are expressed more posteriorly (Lewis, 1978; reviewed in Papageorgiou, 2012). Based on the EC subtype-specific RNA-seq data, we found that patterns of HOX gene expression correlate with the anterior/posterior position of each organ and its corresponding EC subtype (Figure 3B and D). In the HOX-A cluster, brain ECs express none of the Hoxa genes; liver ECs express Hoxa2–Hoxa5; lung ECs express Hoxa2–Hoxa5 and Hoxa7; and kidney ECs express Hoxa5 and Hoxa7-Hoxa10, with lower levels of expression in Hoxa2-Hoxa4. (Figure 3B and D). Interestingly, there does not appear to be a strong relationship between gene expression and gene body methylation (compare top and bottom heatmaps in Figure 3D). Rather, like other developmentally important TFs, the trend is that expression of a HOX gene correlates with increased methylation in the neighborhood of the gene body. For example, Hoxa5 which is expressed in liver, lung, and kidney ECs but not brain ECs exhibits a hypomethylated gene body in all ECs but a hypermethylated promoter region only in peripheral ECs (Figure 3A). Similarly, the regions in and adjacent to Hoxa10 are hypermethylated only in kidney ECs, which are the only ECs in this set that express Hoxa10 (Figure 3A). For each of the four organs, the patterns of EC and parenchymal cell expression of Hoxa genes are closely matched (Figure 3B). These data confirm and extend two earlier studies: (1) a microarray transcriptome meta-analysis showing a correlation between patterns of HOX gene expression and the tissue-of-origin for a collection of human EC lines (Toshner et al., 2014) and (2) a transgenic mouse study showing that Hoxa3 and Hoxc11 reporter expression in murine vasculature roughly corresponds to the positional identity specified by the HOX code (Pruett et al., 2008). Taken together, the patterns of HOX gene expression and DNA methylation suggest that ECs in different organs ‘know’ their anterior-posterior position within the body.
 
-## Comparisons between accessible chromatin and hypomethylation landscapes
+### Comparisons between accessible chromatin and hypomethylation landscapes
 
 As a second and complimentary approach to defining candidate EC CREs, we analyzed regions of accessible chromatin. In our initial analysis, we used the full range of ATAC-seq fragment lengths and identified a total of 51,740 discrete regions of accessible chromatin (i.e. ATAC-seq peaks; median length 656 bp) among the four EC subtypes (Supplementary file 6). Across replicates, the percent of mapped reads found in called peaks ranged between 16 and 34% (Figure 4—figure supplement 1A). Calling peaks on subsamples of total mapped reads for each ATAC-seq replicate indicates that, with this sequencing depth, the data is approaching an asymptote (Figure 4—figure supplement 1B). In deriving a consensus EC-tissue-specific peakset, we adopted a conservative approach by requiring each peak to be called in 2/2 or 2/3 replicates (Figure 4—figure supplement 1C).
 
 For a quantitative assessment of open chromatin, we restricted our analyses to ATAC-seq fragments of <100 bp, as previous work suggested that these correspond to nucleosome-free regions of the genome (Buenrostro et al., 2013). Using <100 bp fragments, we identified a total of 39,987 ATAC-seq peaks (median length 508 bp) among the four EC subtypes (Supplementary file 6). [Hereafter, the phrase ‘ATAC-seq peaks’ refers to <100 bp fragments unless otherwise stated.] Of the 31,358 brain EC, 18,926 liver EC, 24,970 lung EC, and 21,694 kidney EC ATAC-seq peaks, 35% are shared across all four EC subtypes, but only 1–16% are EC subtype-specific (6381 brain, 632 liver, 755 lung, and 397 kidney EC-tissue-specific ATAC-seq peaks, referred to hereafter as ‘ECTSAPs’) (Figure 4—figure supplement 2B).
 
 We observed multiple ECTSAPs near ECTSGs, as illustrated in Figure 4A using the full range of ATAC-seq fragment lengths. As indicated by the translucent orange bars in Figure 4A, ECTS-hypo-DMRs generally co-localize with ECTSAPs. For example, near brain EC-specific genes Slc2a1 and Mfsd2a, multiple ECTSAPs and ECTS-hypo-DMRs co-localize (Figure 4A, upper two panels; Figure 4—figure supplement 2A). Similarly, the genomic region encompassing Clec4g, a liver EC-specific gene, contains co-localized ECTSAPs and ECTS-hypo-DMRs upstream and downstream of the gene body (Figure 4A, right bottom panel; Figure 4—figure supplement 2A). A region ~200 kb upstream of Foxf1 contains two ECTSAPs that colocalize with ECTS-hypo-DMRs (Figure 4A, left bottom panel; Figure 4—figure supplement 2A), suggestive of a long-range enhancer. This region also includes a lncRNA gene, Gm26878, that is expressed specifically in lung ECs (Figure 4—figure supplement 2A). In Figure 4A, regions of chromatin accessibility and hypomethylation that are shared across more than one EC subtype are indicated by translucent gray bars.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig4-v1.jpg)
+
+**Figure 4.:** (A) Genome browser images showing CG methylation (top) and accessible chromatin (bottom) around ECTSGs. Colored bars under mCG tracks mark UMRs (upper row) and LMRs (lower row). For accessible chromatin, histograms of ATAC-seq reads are shown. Colored bars under ATAC tracks indicate the called ATAC-seq peaks. Vertical orange bars highlight co-localizing cell-type-specific open chromatin and differentially hypomethylated DNA. Vertical gray bars highlight shared regions of open chromatin in at least three EC subtypes. The ATAC-seq reads shown here represent the full range of ATAC-seq fragment sizes. (B) Scatter plots of normalized ATAC-seq read density (N) within ATAC-seq peaks called from <100 bp fragments. Values shown are log2(N + 1). Colored symbols correspond to peaks for which the closest annotated TSS is a differentially expressed EC-enriched gene from the indicated tissue. Lower right, comparison between two brain EC ATAC-seq biological replicates. (C) Pairwise Pearson correlation heatmaps for ATAC-seq read density within ATAC-seq peaks at promoter-proximal (<2 kb from TSS; upper left) or promoter-distal (>2 kb from TSS; upper right) and percent CG methylation in UMRs (lower left) and LMRs (lower right).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The fraction of mapped and properly paired reads within called peaks for each ATAC-seq replicate. (B) Peak saturation analysis for each ATAC-seq replicate. From the total number of mapped and properly paired reads, the indicated number was subsampled from each replicate and peaks were called on each subset using the standard peak calling parameters. The plot shows the number of called peaks as a function of the absolute number of fragments. (C) Genome browser image of accessible chromatin for the three brain EC replicates. Top six tracks show histograms of all ATAC-seq fragments along with the corresponding called peaks. The next six tracks show histograms using <100 bp ATAC-seq fragments along with the corresponding called peaks. The bottom two tracks show consensus called peaks using the full range of ATAC-seq fragment lengths or <100 bp ATAC-seq fragments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Expression levels (TPMs) based on RNA-seq for the genes shown in Figure 4A. (B) Heatmap depicting the percent of <100 bp ATAC-seq peaks (APs) that overlap between EC subtypes. Many of the regions of accessible chromatin overlap more than one EC subtype. ‘All APs’ refers to all ATAC-seq peaks identified in the indicated sample. ‘All differential APs’ refers to differential ATAC-seq peaks identified in the indicated sample versus any of the other three EC subtypes. ‘ECTSAPs’ refers to ATAC-seq peaks present in the indicated EC subtype but absent from the other three EC subtypes. (C) Heatmap depicting the percentage of each epigenetic feature (rows) that is found within 100 kb of ECTSGs. Tissue-specific EC candidate CREs are significantly enriched within 100 kb of ECTSGs from the same EC subtype relative to the other EC subtypes. Black stars indicate statistical significance at q < 1×10−5. ‘All hypo-DMRs’ refers to hypomethylated DMRs identified in the indicated sample versus any of the other three EC subtypes. ‘ECTS-hypo-DMRs’ refers to hypomethylated DMRs identified in the indicated samples versus all of the other three EC subtypes. (D) Heatmap depicting the percentage of either promoter-proximal or promoter-distal ATAC-seq peaks (APs) that overlap between EC subtypes. EC subtypes share more regions of accessible chromatin associated with promoters than regions of accessible chromatin that are distal to TSSs. (E) Pairwise Pearson correlation heatmaps for ATAC-seq read density at UMRs and LMRs (left pair) and percent CG methylation in promoter-proximal (<2 kb from TSS; right pair, left panel) or promoter-distal (>2 kb from TSS; right pair, right panel) ATAC-seq peaks.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Scatter plots of normalized ATAC-seq read density (N) within ATAC-seq peaks called from <100 bp fragments between biological replicates. (B) Scatter plots of normalized ATAC-seq read density (N) within ATAC-seq peaks called from <100 bp fragments for liver ECs versus lung ECs, liver ECs versus kidney ECs, and lung ECs versus kidney ECs. Colored symbols correspond to peaks for which the closest annotated TSS is a differentially expressed EC-enriched gene from the indicated EC subtype. Values shown are log2(N + 1).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Heatmap depicting the percentage of various epigenetic features that overlap between EC subtypes. More UMRs are shared between EC subtypes than LMRs. A larger fraction of UMRs are accessible compared to LMRs. ~ 50% of ATAC-seq peaks (APs) overlap either a UMR or an LMR. Differential ATAC-seq peaks exhibit a higher overlap with LMRs compared to UMRs. (B) Line plots showing lower mean methylation at ATAC-seq peaks (APs) compared to random size-matched genomic regions. (C) Line plots showing higher upper quartile normalized mean ATAC-seq signal at UMRs, LMRs, and ECTS-hypo-DMRs compared to random-size matched genomic regions. Each line has been translated vertically so that the value at position −1500 bp is 0.
 
 In scatter plots of normalized ATAC-seq read densities, ECTSAPs for each tissue type are enriched near differentially expressed EC-enriched genes for that tissue (Figure 4B), and broad differences are apparent between EC subtypes (r = 0.75–0.92), whereas biological replicates of the same subtype are highly similar (r = 0.93–0.97, Figure 4B; Figure 4—figure supplement 3). Additionally, a larger proportion of ECTSAPs and ECTS-hypo-DMRs are within 100 kb of ECTSGs that are expressed in the corresponding EC subtype relative to ECTSGs expressed in the other EC subtypes, a difference that is highly significant statistically (Figure 4—figure supplement 2C). This enrichment implies a role for these candidate CREs in EC subtype-specific gene expression.
 
@@ -90,11 +233,23 @@ In all four EC subtypes, >80% of ATAC-seq peaks overlap with UMRs or LMRs (Figu
 
 Interestingly, there are many more LMRs than ATAC-seq peaks, and therefore only a minority of LMRs overlap with ATAC-seq peaks:<10% of liver EC and kidney EC LMRs and <20% of brain and lung EC LMRs overlap with ATAC-seq peaks (Figure 4—figure supplement 4A). In contrast, >75% of UMRs overlap with ATAC-seq peaks in all four EC subtypes. In comparing ECTS-hypo-DMRs and ECTSAPs, <5% of liver EC, lung EC, and kidney EC hypo-DMRs overlap with their respective ATAC-seq peaks, whereas 13% of brain EC hypo-DMRs overlap with brain ATAC-seq peaks. As two explanations for this numerical difference, we suggest either (1) that many distal enhancer regions may not exhibit a sufficient degree of chromatin accessibility to permit insertion by two transposon complexes, the requisite event for detection of DNA accessibility by ATAC-seq, or (2) that distal enhancer regions may have greater variance in their occupancy across the population of cells, resulting in a general decrease in average accessibility.
 
-## Tissue-specific EC transcription factors and their DNA targets
+### Tissue-specific EC transcription factors and their DNA targets
 
 If LMRs and ATAC-seq peaks mark CREs, then they should be enriched for the DNA binding motifs of the TFs that control the distinct transcriptional, chromatin, and DNA methylation landscapes observed in ECs from different tissues. Current models of transcriptional regulation posit that TFs act in a combinatorial fashion, co-localizing at CREs to give rise to cell-type-specific transcription (Heinz and Glass, 2011; Heinz et al., 2015). These models predict that CREs in different EC subtypes should (1) share motifs corresponding to TFs that orchestrate patterns of gene expression common to all ECs, and (2) exhibit subtype-specific motifs corresponding to TFs that orchestrate patterns of gene expression distinctive to each EC subtype.
 
 To investigate these models, we used Hypergeometric Optimization of Motif EnRichment (HOMER), a suite of tools for discovering enriched motifs in genomic sequences (Heinz et al., 2010). The HOMER de novo motif detection strategy parses genomic sequences under consideration into all possible k-mers of a desired motif length and searches for enrichment of each k-mer, a strategy that is not dependent on existing biochemical definitions of TF motifs (Figure 5A). The results of the k-mer analysis are then compared to a compendium of known TF motifs. HOMER also directly searches the genomic sequences under consideration for known TF motifs (Figure 5B). In general, we found the two approaches to be in good agreement.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig5-v1.jpg)
+
+**Figure 5.:** (A) HOMER-identified enriched motifs in ECTS-hypo-DMRs. Frequency of the indicated motif as a function of distance from the center of ECTS-hypo-DMRs. Shown above each individual plot is the position weight matrix (PWM) of the enriched nucleotide sequence. The TF family that most closely matches the motif is indicated below the PWM. (B) Heatmap showing the fold enrichment for the indicated TF motifs (% ECTSAPs or ECTS-hypo-DMRs containing the motif divided by % GC-matched background genomic regions containing the motif). Representative members of TF families that exhibited a significant enrichment (FDR < 0.001) are shown. (C) Heatmap showing TPMs for the four EC subtypes for a subset of TFs with the motifs shown in (A). Values shown are log2(TPM +1). (D) ECTS-hypo-DMRs were centered on the motif for ERG, a member of the ETS family, and the frequencies of the indicated motifs were plotted as a function of distance from the ERG motif with a bin size of 1 bp. Black arrow: the ZIC motif ends with the sequence AGG and the ERG motif begins with the sequence AGG, thereby generating a frequency spike in all four EC subtypes at position −5 bp that represents the overlap of the two sites. Red arrow: the frequency spike for the ZIC motif at +11 bp is only present in one orientation and only in brain ECTS-hypo-DMRs centered on the ERG motif. (E) PWM for the consensus sequence of the paired ETS:ZIC motif. (F) Representative instances of the paired ETS:ZIC motif from brain ECTS-hypo-DMRs. Each instance is represented by a black rectangle. The bottom strand of the sequence in (F) matches the consensus sequence shown in (E).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HOMER-identified enriched motifs in EC-only LMRs and ATAC-seq peaks shared between all four EC subtypes. Frequency of the indicated motif as a function of distance from the center of these LMRs (top) or these ATAC-seq peaks (APs) (bottom). Shown above each individual plot is the position weight matrix (PWM) of the enriched nucleotide sequence. The TF family that most closely matches the motif is indicated below the PWM. (B) Heatmap depicting the percentage of ECTS-hypo-DMRs within 100 kb of ECTSGs that contain the indicated motif. Motifs that are enriched in ECTS-hypo-DMRs (Figure 5A) are also enriched in ECTS-hypo-DMRs within 100 kb of ECTSGs. Black stars indicate statistical significance at p<1×10−5. (C) Heatmap depicting the percentage of ECTSAPs within 100 kb of ECTSGs that contain the indicated motif. Black stars indicate statistical significance at p<1×10−5. (D) ECTS-hypo-DMRs were centered on the motif for ERG, a member of the ETS family, and the frequencies of the indicated motifs were plotted as a function of distance from the ERG motif with a bin size of 1 bp. Red arrows: frequency spikes for FOX and HOX motifs are only seen in ECTS-hypo-DMRs centered on the ERG motif in lung ECs and kidney ECs, respectively. Black arrows: the sequence AGG in the TCF/LEF and ERG motifs overlap, thereby generating a frequency spike in all four EC subtypes. (E) Heatmap depicting the percentage of ECTS-hypo-DMRs or ECTSAPs that contain the paired ETS:ZIC motif. Brain EC candidate CREs show the greatest enrichment for the paired ETS:ZIC motif relative to the other three EC subtypes. Black stars indicate statistical significance at p<1×10−5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Genome browser images showing CG methylation (top) and accessible chromatin (bottom) around Zic3, a brain EC-specific TF. (B–F) Genome browser images showing (from top to bottom): ECTS-hypo-DMRs (colored bars; four tracks), ECTSAPs (colored bars; four tracks), and locations of six TF motifs in the regions encompassed by ECTS-hypo-DMRs or ECTSAPs (thin vertical black lines). The genomic region in (B) corresponds to the region shown in (A), and the genomic regions in (C–F) correspond to the regions shown in Figure 4A. The patterns of EC expression are: (A,B) Zic3 – brain ECs; (C) Slc2a1 – brain ECs; (D) Foxf1 - lung and brain ECs; Fendrr – lung ECs; (E) Msfd2a – brain ECs; and (F) Clec4g – liver ECs.
 
 To address the first prediction, we first identified LMRs and ATAC-seq peaks that are not present in photoreceptors and brain neurons (Mo et al., 2015; Mo et al., 2016). This should filter out CREs associated with ‘housekeeping’ genes, thereby enriching for CREs that reflect the EC regulatory landscape. This procedure identified 56,755 LMRs and 12,200 ATAC-seq peaks that are relatively EC-specific (Supplementary files 4 and 6). From this subset, 8035 LMRs and 899 ATAC-seq peaks were common to all four EC subtypes. Analyzing this common subset using HOMER revealed a highly significant (LMRs: p-value=10−1691; ATAC-seq peaks: p-value=10−148) enrichment over random GC-matched genomic regions for a sequence that resembles the binding motif of class 1 members of the ETS family of TFs, which includes ERG, FLI1, ETV2, and ETS1 (Wei et al., 2010; Hollenhorst et al., 2011); Figure 5—figure supplement 1A). The finding of a common enriched class 1 ETS family motif is not unexpected given the large body of data supporting a role for class 1 ETS TFs in EC development and function (McLaughlin et al., 2001; Pham et al., 2007; Meadows et al., 2011; Oh et al., 2015; Sumanas and Choi, 2016). We also detected k-mers matching the SOX (p-value=10−101) and GATA (p-value=10−94) binding motifs in shared EC-only LMRs and - unexpectedly - a k-mer matching the telomere sequence TTAGGG (p-value=10−123) in shared EC-only ATAC-seq peaks (Figure 5—figure supplement 1A).
 
@@ -112,7 +267,7 @@ Significantly, HOMER identified several EC subtype-specific enriched motifs (Fig
 
 If the enriched motifs play a role in regulating EC subtype-specific gene expression, then one might expect an enrichment for the same motifs in candidate EC subtype-specific CREs near ECTSGs in one EC subtype relative to candidate CREs near ECTSGs in other EC subtypes. Consistent with this expectation, ECTS-hypo-DMRs found within 100 kb of ECTSGs exhibit statistically significant enrichment for most of the motifs in Figure 5A (Figure 5—figure supplement 1B). ECTSAPs within 100 kb of ECTSGs were also significantly enriched for several of these motifs (Figure 5—figure supplement 1C). Figure 5—figure supplement 2 shows five examples of individual ECTSGs and their nearby candidate CREs with tissue-specific TF and ETS motifs marked in the regions encompassed by ECTS-hypo-DMRs and ECTSAPs (Figure 5—figure supplement 2C–F; data are shown for Zic3 and for the four genes shown in Figure 4A).
 
-## Identification of a paired ETS and ZIC motif with precise spacing and orientation
+### Identification of a paired ETS and ZIC motif with precise spacing and orientation
 
 If ETS TFs, which are expressed in all ECs, cooperate with tissue-specific EC TFs to control expression of ECTSGs, then there might be a non-random spatial relationship between ETS motifs and motifs for tissue-specific TFs. To test this idea, we compiled all of the ECTS-hypo-DMRs containing an ERG (i.e. ETS family) motif, aligned these ECTS-hypo-DMRs on the ERG motif, and then generated, for each of the four EC subtypes, motif frequency histograms with a 1 bp bin size for the lung EC-enriched FOXF1 motif, the liver EC-enriched GATA4 motif, the kidney EC-enriched HOXC9 motif, the brain EC-enriched ZIC3 and TCF/LEF motifs as a function of distance from the center of the ERG motif (Figure 5D; Figure 5—figure supplement 1D).
 
@@ -120,17 +275,37 @@ From this analysis, two general patterns emerged. One pattern is exemplified by 
 
 The proximity, precise spacing, and orientation of the ERG and ZIC3 motifs in brain ECTS-hypo-DMRs suggests that these two transcription factors form a ternary complex by binding to this larger DNA element. To determine a consensus for this element, we repeated the HOMER analysis on brain ECTS-hypo-DMRs with longer motifs. This analysis revealed a consensus motif that we will refer to as the paired ETS:ZIC motif (Figure 5E; Supplementary file 7). Strikingly, identically spaced ETS and ZIC motifs lead to robust enhancer activity in the ascidian Ciona, implying an ancient and conserved role for the cooperation of ETS factors and ZIC factors in transcriptional regulation (Farley et al., 2016). Genome-wide, there are only 1944 instances of the paired ETS:ZIC motif, and this paired motif is significantly enriched in candidate brain EC CREs (both hypo-DMRs and ATAC-seq peaks) relative to random GC-matched genomic regions (DMR p-value=10−45; ATAC peak p-value=10−17) and to peripheral EC CREs (DMR p-value=10−74; ATAC peak p-value=10−7; Figure 5F; Figure 5—figure supplement 1E). Interestingly, 81% of the brain EC CREs that contain one or more paired ETS:ZIC motifs overlap the long terminal repeats (LTRs) of the mouse-specific endogenous retrovirus (ERV) family RLTR45/ERVB4_2. Transposable elements, especially LTR retrotransposons, provide a rich genomic substrate for the evolution of non-coding regulatory elements (Emera and Wagner, 2012; Chuong et al., 2013; Chuong et al., 2016); reviewed in Thompson et al., 2016). We speculate that RLTR45/ERVB4_2 may represent an example of a transposable element family that is being co-opted into host gene regulatory networks that utilize ETS and ZIC factors.
 
-## Canonical Wnt signaling in CNS ECs versus non-CNS ECs
+### Canonical Wnt signaling in CNS ECs versus non-CNS ECs
 
 At present, it is not known whether CNS EC-specific effects of canonical Wnt signaling reflect a spatial restriction on Wnt signaling - perhaps reflecting the spatial distribution of the relevant ligands - or whether canonical Wnt signaling occurs throughout the vasculature but has different downstream consequences in CNS and non-CNS tissues. To address this question, we visualized canonical Wnt signaling at cellular resolution in CNS and non-CNS vasculature using an EC-specific Cre recombinase (Tie2-Cre) and a Cre-dependent Wnt reporter (R26-Tcf/Lef-LSL-H2B-GFP-6xMYC). With this combination of genetic elements, Cre-mediated excision of a loxP-flanked transcription stop cassette allows the multimerized LEF/TCF motifs, together with a minimal promoter, to report canonical Wnt signaling by controlling production of a nuclear-localized histone H2B-GFP-6xMYC fusion protein specifically in ECs (Cho et al., 2017).
 
 In coronal sections of E13.5 embryos, the pan-EC TF ERG and the pan-EC plasma membrane protein ICAM2 mark all ECs (Figure 6A and A’). At this stage, BBB development is already underway, as judged by the accumulation of the glucose transporter GLUT1/SLC2A1, a BBB marker, specifically in CNS and perineural ECs (Figure 6B and B’). At E13.5, ZIC3 accumulation in the vasculature is also limited to CNS and perineural ECs (Figure 6C and C’; Figure 6—figure supplement 1), a distribution that closely matches that of GLUT1/SLC2A1. Outside of the vasculature, ZIC3 accumulates in developing neurons in the ventral CNS. Similarly, vascular accumulation of LEF1, which is both a mediator and a marker of canonical Wnt signaling, is limited to CNS and perineural ECs (Figure 6—figure supplement 2A and A’). Visualizing the accumulation of the Wnt reporter, H2B-GFP-6xMYC, with anti-MYC immunostaining shows a neural and perineural distribution, closely matching that of SLC2A1, ZIC3, and LEF1 (Figure 6; Figure 6—figure supplement 1). We note that cells positive for the Wnt reporter occur outside of the CNS, yet their rounded morphology and lack of association with blood vessels suggests that these cells are macrophages or other immune cells, consistent with the specificity of Tie2-Cre. At P7, H2B-GFP-6xMYC accumulates in CNS ECs, as well as ECs in the renal medulla (Figure 6—figure supplement 2B–E), and ZIC3 and SLC2A1 are restricted to the CNS vasculature (data not shown). These protein distributions are consistent with the CNS EC-specific expression of Lef1 and Zic3 found by RNA-seq (Figure 5C) and the CNS EC-enrichment of TCF/LEF and ZIC3 motifs in ECTS-hypo-DMRs (Figure 5A and B). Taken together, these data imply that, among ECs, canonical Wnt signaling is largely confined to the CNS, with a corresponding restriction in the expression of TFs that mediate (LEF1) and respond to (LEF1 and ZIC3) canonical Wnt signaling.
 
-## Single-cell RNA-seq reveals heterogeneity among brain ECs
+![Figure 6.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Coronal sections of E13.5 Tie2-Cre;R26-Tcf/Lef-LSL-H2B-GFP-6xMYC embryos near the cephalic flexure. The markers are: ICAM2 (pan-EC membrane protein), MYC (the canonical Wnt reporter), ERG (pan-EC TF), SLC2A1 (the glucose transporter GLUT1; a BBB marker), ZIC3, and DAPI. (A’–C’) Higher magnification of the boxed regions in (A–C). The boundary between CNS and peripheral tissue is marked on the DAPI image with red circles. The nuclear MYC signal reveals canonical Wnt signaling in CNS ECs (yellow arrows) but not in peripheral ECs (yellow arrowheads). ZIC3 is present in CNS ECs (yellow arrows) but not in peripheral ECs (yellow arrowheads), and in developing neurons in the ventral CNS. Scale bars in A, B, and C: 200 um. Scale bars in A’, B’, and C’: 50 um.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantification of Figure 6A. The values shown are the ratio of MYC +nuclei (i.e. Wnt reporter+) to ERG + nuclei. (B) Quantification of Figure 6C. The values shown are the number of either MYC +or ZIC3 +nuclei normalized for vessel length. For (A) and (B), each dot represents the quantification of a region (410 um high x 355 um wide) from the image shown in either Figure 6A or Figure 6C, within the CNS or outside of the CNS (i.e. non-CNS). For each plot, standard error of the mean is shown. p-Values are calculated with Student’s t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Coronal sections of E13.5 Tie2-Cre;R26-Tcf/Lef-LSL-H2B-GFP-6xMYC embryos near the cephalic flexure, immunostained for the indicated markers: ICAM2, MYC, LEF1, and DAPI. (A’) Higher magnification of the boxed region in (A). The boundary between CNS and peripheral tissues is marked on the DAPI image with red circles. The nuclear MYC signal reveals canonical Wnt signaling in CNS ECs (yellow arrows) but not in peripheral ECs (yellow arrowheads). LEF1 is present in CNS ECs (yellow arrows) but not in peripheral ECs (yellow arrowheads). LEF1 is also present in developing neurons in the ventral CNS. Scale bar in A: 200 um. Scale bar in A’: 50 um. (B–E) Sections of P7 Tie2-Cre;R26-Tcf/Lef-LSL-H2B-GFP-6xMYC brain (B), liver (C), lung (D), and kidney (E). Immunostaining as in Figure 6. The nuclear MYC signal reveals canonical Wnt signaling uniformly in CNS ECs and in a subset of renal vessels (yellow arrows). LEF1 levels are below the limit of detection in all or nearly all ECs in liver and lung and in the majority of ECs in the kidney. The sparse MYC-positive nuclei in liver and lung correspond to non-ECs, most likely tissue macrophages, based on the specificity of the Tie2-Cre transgene (yellow arrowheads). Scale bar in (B–E): 50 um.
+
+### Single-cell RNA-seq reveals heterogeneity among brain ECs
 
 Up to this point, the focus has been on EC heterogeneity between tissues. Here, we address the question of intra-tissue EC heterogeneity. It is well established that arterial, venous, and capillary ECs represent distinct subtypes based on morphology, function, and gene expression profiles (Aird, 2007a; Potente and Mäkinen, 2017), but it is not clear whether or to what extent these EC subtypes can be further subdivided. It is also not clear how developing EC subtypes, such as tip cells and proliferating cells, are related to the more mature EC subtypes. To address these questions, we assessed EC gene expression in the developing CNS at single-cell resolution by performing single-cell RNA-seq (scRNA-seq) on 3,946 FACS-purified GFP-positive ECs from a P7 Tie2-GFP mouse brain.
 
 scRNA-Seq data were processed and analyzed using a modified dpFeature approach as described in the Monocle R/Bioconductor package (Trapnell et al., 2014). t-Distributed Stochastic Neighbor Embedding (t-SNE) of cells revealed a single interconnected distribution of gene expression profiles suggesting a continuity of transcriptional identity across brain ECs at this developmental time point consistent with the observed zonation of EC subtypes along the vasculature. Subsequent clustering analysis identified six EC clusters (Figure 7A) that could be assigned as tip, mitotic, venous, or arterial cells (one cluster each) or capillary cells (two adjacent clusters) based on known EC subtype marker gene expression (Figure 7B). One of the capillary clusters is enriched for cells expressing DOPA Decarboxylase (Ddc), a gene known to be expressed in ECs in bovine aorta (Sorriento et al., 2012). The ECs in the high-Ddc cluster also express multiple genes that are characteristic of arterial ECs and this cluster was therefore named ‘capillary-A’ (capillary-arterial). The second capillary cluster was relatively deficient in Ddc-expressing cells, and it was enriched for cells that express genes characteristic of venous ECs. The second cluster was therefore named ‘capillary-V’ (capillary-venous). Mitotic ECs express multiple genes that are also expressed in capillary-V and venous ECs (Figure 7C), which is consistent with the observation that proliferating cells arise from veins during sprouting angiogenesis (Ehling et al., 2013; Xu et al., 2014; Hasan et al., 2017; Pitulescu et al., 2017). Capillary-A ECs express multiple genes that are also expressed in tip cells and arterial ECs, but tip cells and arterial ECs show less mutual similarity (Figure 7C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig7-v1.jpg)
+
+**Figure 7.:** (A) t-SNE plot of 3946 P7 brain ECs showing six clusters corresponding to tip cells, and mitotic, venous, capillary-venous (Capillary-V), capillary-arterial (Capillary-A), and arterial ECs. (B) The t-SNE plot from (A) showing expression of three marker genes with enriched expression for each EC cluster. Cells with no RNA-seq reads are shown in light blue; darker blue represents greater number of reads. (C) Heatmap showing scaled expression (z-scores) for the 25 most enriched marker genes for each EC cluster. Supplementary file 8 lists the genes plotted in (C). Rows represent genes and columns represent cells.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–F) Coronal section of a P7 C57BL/6 brain stained for either GS lectin (green) to mark blood vessels or DOPA decarboxylase (DDC; magenta). Rightmost column shows merged images. Images are from the same brain section and correspond to cortex (A and B), striatum (C and D), and basal forebrain (E and F). DDC immunoreactivity is observed in blood vessels and in axon terminals, and in the latter it appears as distinct puncta in the cortex or more concentrated staining in the striatum. Yellow arrows in (C) indicate a large vein. Str, striatum; Ctx, cortex; AC, anterior commissure; Scale bar: 50 um.
 
 The distribution of DDC was examined by immunostaining of P7 WT mouse brain (Figure 7—figure supplement 1). DDC was localized to puncta, most likely corresponding to axon terminals of dopaminergic neurons; this pattern was particularly concentrated in the striatum, a brain region receiving dense dopaminergic innervation (Figure 7—figure supplement 1C and D). Most interestingly, we detected both fine- and coarse-grained heterogeneity in DDC immunostaining in GS Lectin-positive capillaries in different anatomic structures within the same brain sections, as seen by comparing the intensity of the general EC marker GS-Lectin and anti-DDC immunoreactivity. Larger vessels showed minimal DDC immunoreactivity (yellow arrows in Figure 7—figure supplement 1C). The heterogeneity in DDC immunoreactivity among capillary ECs likely corresponds to the differential capillary-A versus capillary-V gene expression patterns defined by scRNA-seq.
 
@@ -144,6 +319,14 @@ To independently assess the expression of candidate tip cell genes, we performed
 
 To describe the relationships between the six EC clusters, the scRNA-seq data were used to construct a cell trajectory map (Figure 9A). This analysis produced a map with two branch points and four terminal states [mitotic (M), venous (V), arterial (A), and tip cell (T)]. Capillary-V and capillary-A ECs populate the regions adjacent to the first and second branch points, respectively. The first branch point represents a choice between the venous state and the arterial and tip-cell states, implying that, at the transcriptome level, tip cells are more closely related to arterial ECs than to venous ECs. As examples of gene expression patterns that support this model, Hey1 is more highly expressed in arterial ECs and tip cells than in venous ECs, whereas Nr2f2 is more highly expressed in mitotic and venous ECs than in arterial ECs or tip-cells (Figure 9B). The second branch point represents a choice between the arterial state and the tip-cell state. Fbln2 and Plaur are examples of genes that are more highly expressed in arterial ECs and tip-cells, respectively (Figure 9B).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig9-v1.jpg)
+
+**Figure 9.:** (A) Plot showing the position of cells in each EC cluster on the constructed cell trajectory. (B) Summary of the two branch points (labeled ‘1’ and ‘2’) in the cell trajectory analysis. M, mitotic; V, venous; A, arterial; T, tip cells. Examples of markers that show differential expression as cells diverge from branch points 1 and 2. Cells with no RNA-seq reads are shown in light blue; dark blue represents greater number of reads. Hey1 is enriched in arterial and tip cells (i.e. the products of the right side of branchpoint 1); Nr2f2 is enriched in venous ECs; Fbln2 is enriched in arterial ECs; and Plaur is enriched in tip cells.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/36187/elife-36187-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) t-SNE plot from Figure 7A showing expression of several interesting genes. Cyclin-dependent kinase inhibitor Cdkn1a was enriched in mitotic cells, tip cells and capillary-A ECs, Cdkn1c was enriched in artery and vein ECs. Smad6 and Smad7 were enriched in the capillary-A and arterial EC clusters. Tgfb2 was widely expressed and Ltbp4 expression was concentrated in the arterial cluster. Cxcr4 was expressed in tip cells, capillary-A ECs, and arterial ECs. Cxcl12 was expressed in arterial ECs. (B) Cell trajectory analysis of genes shown in (A).
+
 Among the transcripts with intriguing differences between EC clusters were several coding for cyclin-dependent kinase (CDK) inhibitors. In particular, Cdkn1c/p57 expression was enriched in artery and vein ECs; Cdkn1a/p21 expression was enriched in mitotic cells, tip cells, and capillary-A ECs; and Cdkn2b/p15 expression was enriched in capillary-A ECs (Figure 9—figure supplement 1A). Cdkn1a/p21 expression suggests that these ECs have exited the cell cycle (Spencer et al., 2013). Interestingly, TGF-beta2 (Tgfb2) was widely expressed but Latent TGF-beta-binding protein 4 (Ltbp4) expression was concentrated in arterial ECs, which utilize TGF-beta signaling to coordinate vascular smooth muscle cell development (ten Dijke and Arthur, 2007); Figure 9—figure supplement 1A). Transcripts coding for SMAD6 and SMAD7, two inhibitory SMADs induced by TGF-beta signaling (Afrakhte et al., 1998), were enriched in the capillary-A and arterial EC clusters (Figure 9—figure supplement 1A). Both CDKN1A and CDKN2B are known to mediate TGF-beta-induced cell cycle arrest (Hannon and Beach, 1994; Datto et al., 1995), consistent with a role for TGF-beta signaling in CNS EC development.
 
 We also observed enrichment of transcripts coding for the chemokine receptor CXCR4 in tip cell, capillary-A, and arterial EC clusters, consistent with the role of this receptor in mediating angiogenic sprouting and artery formation (Strasser et al., 2010; Bussmann et al., 2011; Ehling et al., 2013; Xu et al., 2014; Hasan et al., 2017; Pitulescu et al., 2017); Figure 9—figure supplement 1A). Transcripts coding for CXCL12, the ligand for CXCR4, were highly enriched in the arterial EC cluster, suggesting that tip cells in the developing brain vasculature may receive a CXCL12 signal from arterial ECs. CXCL12 is expressed in pulmonary and coronary arterial ECs, where it mediates patterning of arterial vasculature (Chang et al., 2017; Kim et al., 2017). Cell trajectory representations of CDK inhibitor, TGF-beta signaling, and CXCR4/CXCL12 transcripts are shown in Figure 9—figure supplement 1B.
@@ -152,7 +335,7 @@ We also observed enrichment of transcripts coding for the chemokine receptor CXC
 
 The experiments and analyses presented here define the transcriptome, accessible chromatin, and DNA methylome landscapes for ECs from brain, liver, lung, and kidney, and they relate differences in those landscapes to the regulatory programs that control tissue-specific EC heterogeneity. The resulting genome-wide analysis of candidate CREs, TF motifs, and TF expression reveal the distinctive gene regulatory architecture of each EC subtype. Using scRNA-seq, we define the relationships among developing and mature EC subtypes within the brain based on an unbiased clustering of gene expression profiles. In comparing CNS versus non-CNS ECs, the most prominent differences in TF motifs and TF expression include CNS EC-specific utilization of TCF/LEF and ZIC3 motifs and CNS EC-specific expression of TCF/LEF factors and ZIC3, implying a prominent role for canonical Wnt signaling and ZIC3 DNA binding in CNS EC-specific gene expression.
 
-## The DNA methylation landscape as a guide to current and past gene expression
+### The DNA methylation landscape as a guide to current and past gene expression
 
 The relationship between patterns of mammalian DNA methylation and gene expression has been an object of inquiry for more than 40 years (Riggs, 1975; Razin and Riggs, 1980; Ambrosi et al., 2017). The discovery of diverse methyl CG binding proteins (Shimbo and Wade, 2016) and the more recent characterization of DNA methylation effects on the binding affinities of diverse TFs (Hu et al., 2013; Kribelbauer et al., 2017; Yin et al., 2017) imply that DNA methylation/demethylation can play a causal role in the control of chromatin state and the utilization of enhancers and promoters via its effects on protein binding. Reciprocally, changes in chromatin state and gene transcription can alter the accessibility of DNA to the enzymatic machinery of methylation and demethylation, leading to changes in DNA methylation (Stroud et al., 2017).
 
@@ -162,7 +345,7 @@ Previous work has linked DNA demethylation of promoter-distal regions with enhan
 
 Rod photoreceptors exhibit a similar discrepancy in the number of promoter-distal hypomethylated features and accessible chromatin, and Mo et al., 2016 suggested that the degree of chromatin compaction associated with the extremely small nuclei of rods could restrict access of DNA methyltransferases to DNA. As they mature, EC nuclei flatten and elongate (Cao et al., 1998; Merks et al., 2006; Parsa et al., 2011), which enhances chromatin compaction (Versaevel et al., 2012). Hence, it is not inconceivable that one of the explanations for the EC discordance between hypomethylated features and accessible chromatin may be EC nuclear structure.
 
-## Organ-specific regulatory circuits for EC gene expression
+### Organ-specific regulatory circuits for EC gene expression
 
 Current evidence suggests that all ECs differentiate from hemangioblasts, a common precursor to both the vascular EC and hematopoietic lineages. Restricted expression of lineage determining TFs directs a population of mesodermal cells away from the blood cell fate and toward the EC fate, giving rise to EC progenitors that express the vascular endothelial growth factor (VEGF) receptor KDR (Marcelo et al., 2013; Park et al., 2013). In particular, the ETS factor ETV2 and the forkhead box factor FOXC2 cooperate to establish KDR +hemangioblasts (De Val et al., 2008; Sumanas and Lin, 2006; Sumanas et al., 2008; Park et al., 2013). Continued expression of ETV2 and other ETS factors, including ERG, FLI1, and ETS1, together with GATA2 and FOXC2, commits these progenitors to the EC lineage (Pimanda et al., 2007; Liu and Patient, 2008).
 
@@ -170,7 +353,7 @@ Arterial-venous differentiation represents the earliest observable differentiati
 
 In the present study, we provide transcriptional and epigenomic evidence for TFs that likely control tissue-specific specialization of ECs. For example, liver sinusoidal ECs exhibit differential expression of Gata4 and Maf with a corresponding enrichment of GATA and MAF binding motifs in candidate CREs. Liver EC-specific deletion of Gata4 leads to a conversion of sinusoidal endothelium to continuous endothelium similar to that found in brain vasculature (Géraud et al., 2017), and deletion of Maf globally results in a defective erythropoietic microenvironment in the liver (Kusakabe et al., 2011). Kidney ECs appear to utilize transcriptional networks that depend on homeobox TFs as seen by the enrichment of a HOX motif in kidney EC-specific CREs. Our observation that kidney ECs differentially express Hoxa7, Pbx1, and Meis2 is consistent with a role for PBX and MEIS proteins as cofactors for HOX proteins (Choe et al., 2014; Longobardi et al., 2014; De Kumar et al., 2017). PBX1 is also essential in the developing renal mesenchyme (Schnabel et al., 2003), and its deletion in renal vascular mural cells leads to disrupted renal vascular development (Hurtado et al., 2015). The data presented here imply that PBX1 also plays a role in kidney ECs. Similarly, Irx3 - another kidney EC-specific homeobox TF - was previously identified as a regulator of nephron segment identity in Xenopus (Reggiani et al., 2007), and the data presented here imply that it also plays a role in kidney ECs. These observations suggest that shared expression of TFs in parenchymal cells and ECs in the same organ may be a not uncommon pattern.
 
-## Inter- and intra-tissue heterogeneity of vascular endothelial cells
+### Inter- and intra-tissue heterogeneity of vascular endothelial cells
 
 The inter-tissue heterogeneity of EC structure and function has long been recognized as a central component of organ specialization (Aird, 2007a; Aird, 2007b). For example, in secondary lymphoid organs, leukocyte trafficking from the intravascular compartment to the surrounding parenchyma is mediated by leukocyte adhesion molecules on the luminal face of ECs in high endothelial venules (HEVs); in the kidney, serum filtration is controlled by ECs in renal glomeruli with a high density of fenestrations and a luminal glycocalyx that functions as a charge filter; in the liver, efficient detoxification of xenobiotics requires rapid equilibration of serum contents with hepatocytes, a process that is facilitated by ECs with large trans-cellular fenestrae; and in the lung, regulation of systemic blood pressure is controlled by EC expression of angiotensin-converting enzyme (Bakhle and Vane, 1974).
 
@@ -180,7 +363,7 @@ The present genomic approach complements these foundational observations. Analys
 
 Until recently, the study of intra-organ EC heterogeneity has generally been limited to a comparison of large artery, large vein, and microvascular ECs, as these distinctions correspond to the vessel classes that can be physically separated (Chi et al., 2003). This technical limitation is circumvented by scRNA-seq, which provides a broad sampling of the EC population that is independent of vessel size and structure, enabling an unbiased clustering of cell classes based only on gene expression profiles. A recent scRNA-seq study of adult mouse brain vasculature provided the first molecular profile of vascular zonation along the arteriovenous axis (Vanlandewijck et al., 2018). The data and analyses presented here both corroborate the concept of an EC continuum and extend the findings of Vanlandewijck and colleagues to the early postnatal brain vasculature. In particular, the present work provides strong support for a model in which proliferative ECs are more closely related to venous ECs and tip cells are more closely related to arterial ECs. The data also reveal an unexpected heterogeneity among capillary ECs, with distinct subpopulations that reflect a more venous-like or more arterial-like transcriptional signature. The molecular mechanisms that orchestrate the development of these EC properties remain largely unknown.
 
-## A genomic view of canonical Wnt signaling and CNS vascular development
+### A genomic view of canonical Wnt signaling and CNS vascular development
 
 The earliest evidence for parenchymal signaling to CNS ECs came from embryonic transplantation experiments in which coelomic cavity ECs acquired BBB characteristics when they invaded pieces of transplanted brain, and brain ECs lost BBB characteristics when they invaded pieces of transplanted mesoderm (Stewart and Wiley, 1981; Risau et al., 1986). Subsequent co-culture experiments showed that astrocytes, which send end-foot processes to contact ECs and pericytes, can induce BBB properties in non-CNS ECs and can maintain BBB properties in long-term cultures of CNS-derived ECs (Hayashi et al., 1997); reviewed in Helms et al., 2016).
 
@@ -192,57 +375,270 @@ In summary, we have dissected from a set of candidate CREs common to many cell t
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus; Male)</td>
+      <td>Tie2-GFP</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 003658; RRID:IMSR_JAX:003658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus; Male)</td>
+      <td>Tie2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 008863</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus; Male)</td>
+      <td>R26-Tcf/Lef-LSL- H2B-GFP-6xMYC</td>
+      <td>PMID: 28803732</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD11b BV421 (rat monoclonal)</td>
+      <td>Biolegends</td>
+      <td>Cat No: 101235; RRID:AB_10897942</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ICAM2 (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat No: 553326</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-6xMYC (chicken polyclonal)</td>
+      <td>PMID: 24411735</td>
+      <td></td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GLUT1 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RB-9052</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ERG (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>A7L1G</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-dopa decarboxylase (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF3564</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZIC3 (rabbit polyclonal)</td>
+      <td>PMID: 23217714</td>
+      <td></td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 594-conjugated GS Lectin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L21416</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Tn5 transposase</td>
+      <td>Illumina</td>
+      <td>FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Worthington Papain Dissociation Kit</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>LK003160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rneasy Micro Plus Kit</td>
+      <td>Qiagen</td>
+      <td>74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dneasy Blood and Tissue Kit</td>
+      <td>Qiagen</td>
+      <td>69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinElute GelExtraction Kit</td>
+      <td>Qiagen</td>
+      <td>28604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agencourt AMPure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>A63880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ DNA Methylation-Direct Kit</td>
+      <td>Zymo</td>
+      <td>D5021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM</td>
+      <td>PMID: 21816040</td>
+      <td>RRID:SCR_013027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>PMID: 25516281</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>PMID: 22388286</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>PMID: 18798982</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DiffBind</td>
+      <td>PMID: 22217937</td>
+      <td>RRID:SCR_012918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools</td>
+      <td>PMID: 27079975</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>PMID: 20513432</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle</td>
+      <td>PMID: 24658644</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Methylpy</td>
+      <td>PMID: 26030523</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDTools</td>
+      <td>PMID: 20110278</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 P7 homozygous Tie2-GFP mice (Motoike et al., 2000); JAX 003658) were used for isolation of tissue-specific ECs. To visualize Wnt activity in ECs, homozygous Tie2-Cre mice (Kisanuki et al., 2001); JAX 008863) were crossed to homozygous R26-Tcf/Lef-LSL-H2B-GFP-6xMYC mice (Cho et al., 2017). To control for the possibility of sex-dependent differences, male mice were used for RNA-seq, ATAC-seq, and MethylC-seq. All mice were housed and handled according to the approved Institutional Animal Care and Use Committee (IACUC) protocol MO16M367 of the Johns Hopkins Medical Institutions.
 
-## EC isolation
+### EC isolation
 
 ECs were isolated as previously described with some modifications (Daneman et al., 2010; Zhang et al., 2014). Reagents used included the Worthington Papain Dissociation System (LK003160, Worthington Biochemical Corporation, Lakewood, NJ), Dulbecco’s PBS (DPBS, 14287072, Thermo Fisher Scientific, Waltham, MA), trehalose (T0167-10G, MilliporeSigma, Burlington, MA), bovine serum albumin (A7906, Sigma-Aldrich, Burlington, MA), 20 um cell strainers (CellTrics, Sysmex Partec, Gorlitz, Germany), and anti-CD11b BV421 (101235, Biolegends, San Diego, CA). For liver, lung, and kidney, a single P7 Tie2-GFP mouse typically yielded enough tissue for FACS sorting. For P7, two mice were used. Mice were euthanized and tissues of interest were rapidly placed into Dulbecco’s PBS (DPBS), minced using a razor blade, and enzymatically dissociated in 2.5 ml of papain solution (20 units papain per ml; 1 mM L-cysteine; 0.5 mM EDTA; 5% trehalose; 100 units of DNase per ml) for 1 hr at 37° Celsius. Following this incubation, ovomucoid inhibitor/BSA solution reconstituted at 10 mg per ml was added at 1:10 dilution. The dissociated tissue was gently triturated to form a single-cell suspension. This suspension was then layered on top of a solution consisting of 5 mg per ml ovomucoid inhibitor/BSA and 5% trehalose and centrifuged at 70 x g for 5 min at room temperature. The cell pellet was resuspended in 0.02% BSA and 5% trehalose solution (FACS buffer) and subsequently filtered through a 20 um mesh filter. After another round of centrifugation at 300 x g for 5 min, the cells were resuspended in FACS buffer. Cells were incubated with anti-CD11b BV421 (a macrophage marker) at 1:1000 dilution for 30 min at room temperature. Following antibody staining, cells were pelleted at 300 x g and washed twice with 1 ml of FACS buffer.
 
 Cells were sorted using a MoFlo XDP Sorter (Beckman Coulter, Brea, CA). Viable ECs were defined as GFP positive, propidium iodide negative, and CD11b BV421 negative. For RNA-seq, viable ECs (GFP-positive) and viable parenchymal cells (GFP-negative) were sorted directly into QIAGEN Buffer RLT Plus. For single-cell RNA-seq, ATAC-seq, and MethylC-seq, viable ECs were sorted into FACS buffer for downstream sample preparation.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 E13.5 embryos were immersion fixed in 4% paraformaldehyde (PFA) overnight at 4° Celsius. For P7 brain, liver, lung, and kidneys, mice were deeply anesthetized and then the tissues were fixed by intracardiac perfusion with PBS followed by 4% PFA in PBS. Tissues were further fixed by immersion in 4% PFA in PBS overnight at 4°C. Embryos and tissues were embedded in 3% low-melting point agarose and vibratome sectioned at a thickness of 120 um. The following reagents were used: DAPI, rat anti-ICAM2 (1:300; 553326, BD BioSciences, San Jose, CA), chicken anti-6xMYC (1:10,000; Wu et al., 2014), rabbit anti-GLUT1 (1:500; RB-9052, Thermo Fisher Scientific), rabbit anti-ERG (1:500; A7L1G, Cell Signaling Technology, Danvers, MA), goat anti-dopa decarboxylase (1:500; AF3564, R and D Systems, Minneapolis, MN), Alexa Fluor 594-conjugated GS Lectin (1:200; L21416; Thermo Fisher Scientific), rabbit anti-ZIC3 (1:50; Wang et al., 2012). For the images in Figure 6A and C, the unit for quantification was a rectangle 410 um high x 355 um wide, and quantifications were performed using three adjacent rectangles overlying the CNS and three adjacent rectangles overlying the mesoderm (i.e. non-CNS) region. Within each rectangle, the number of MYC+, ERG+, or ZIC3 +nuclei were counted and the vasculature was traced in Adobe Illustrator and the lengths of the traced lines were quantified by using ImageJ to count the resulting pixels.
 
-## Whole mount retina in situ hybridization
+### Whole mount retina in situ hybridization
 
 Flat-mount retina ISH was performed as previously described (Rattner et al., 2013). Briefly, enucleated eyes were fixed in 2% PFA for 5 min at room temperature and then transferred to hypertonic PBS (2x PBS) for 5 min at room temperature. Retinas were dissected and four radial incisions were made. With the vitreal surface facing up, buffer was slowly removed until retinas were flat. In order to fix the flattened retinas, methanol cooled to −20°C was added dropwise. For ISH, fixed retinas were first transferred to 4% PFA for 5 min at room temperature, then washed three times with RNAase-free PBS with 0.1% Tween-20 (PBST), digested with 20 ug/mL Proteinase K (P2308, Sigma-Aldrich) for 15 min at room temperature, fixed in 0.2% glutaraldehyde with 4% PFA, washed three times with PBST, and finally transferred to hybridization solution (50% formamide, 5x saline-sodium citrate buffer, 5 mM EDTA, 2% Blocking Reagent (11096176001, Sigma-Aldrich), 50 ug/mL yeast RNA, 100 ug/mL heparin, 0.5% CHAPS, and 0.1% Triton X-100) at 65°C. After 2 hr of prehybridization, digoxigenin-labeled riboprobes were added, and hybridization proceeded overnight at 65°C. After a series of washes (Rattner et al., 2013), retinas were blocked for 2 hr at room temperature in maleic acid buffer with 0.1% Tween-20 (MABT), 2% Blocking Reagent, and 10% normal goat serum. Then, retinas were incubated with anti-digoxigenin-AP Fab fragments (1:1000; 11093274910, Sigma-Aldrich) overnight at 4°C. The following day, retinas were washed four times for 1 hr each at room temperature and then overnight at 4°C in MABT. Retinas were washed three times in AP buffer with 0.1% Tween-20 for 5 min at room temperature, and then they were stained for 1–4 hr with AP buffer and nitro-blue tetrozolium (NBT; 350 ug/mL) and 5-bromo-4-chloro-3-indolyl phosphate (BCIP; 175 ug/mL). After staining, retinas were washed twice with PBST, post-fixed for 5 min with 4% PFA, washed twice with PBST, and stained with Alexa Fluor 594-conjugated GS Lectin (1:100) overnight at 4°C. For imaging, retinas were dehydrated by transferring the retinas between increasing concentrations of ethanol (25% in PBST, 50% in PBST, 75% in PBST, and 100%). Finally, retinas were cleared in benzyl benzoate:benzyl alcohol (2:1). For presentation, the purple ISH signal was converted to green, and the GS Lectin signal was converted to magenta.
 
-## Microscopy
+### Microscopy
 
 Confocal images were captured with an LSM700 (Zeiss, Jena, Germany) microscope. ISH images were captured with a Zeiss Imager Z1 Microscope using Zeiss AxioVision 4.6 software. Image processing was performed using FIJI (Schindelin et al., 2012).
 
-## RNA and DNA sample preparation
+### RNA and DNA sample preparation
 
 RNA was extracted from an aliquot of dissociated tissue prior to filtering and antibody staining and from GFP-positive and GFP-negative FACS sorted cells using the RNeasy Micro Plus kit (74034, QIAGEN, Venlo, Netherlands). DNA for MethylC-seq was prepared from GFP-positive FACS-sorted cells using the DNeasy Blood and Tissue kit (69504, QIAGEN). For ATAC-seq,~50,000 GFP-positive FACS-sorted cells were resuspended in ice-cold lysis buffer (0.25 M sucrose, 25 mM KCl, 5 mM MgCl2, 20 mM Tricine-KOH, 0.1% Igepal CA-630) and immediately centrifuged at 500 x g for 10 min at 4°C to prepare nuclei. The resulting nuclear pellet was resuspended in a 50 ul reaction volume in Tn5 transposase and transposase reaction buffer (FC-121–1030, Illumina Inc., San Diego, CA) and the tagmentation reaction was incubated at 37°C for 30 min.
 
-## Library preparation and sequencing
+### Library preparation and sequencing
 
 Each RNA-seq, ATAC-seq, and MethylC-seq analysis was conducted on two biological replicates except for brain EC ATAC-seq, which was conducted on three biological replicates. Single-cell RNA-seq was conducted with a single sample. Libraries for RNA-seq and ATAC-seq were prepared as previously described, with minor modifications (Buenrostro et al., 2015; Lister et al., 2013; Mo et al., 2015; Mo et al., 2016). For RNA-seq, total RNA was converted to cDNA and amplified (Ovation Ultralow System V2-32, 0342HV, NuGEN Technologies, San Carlos, CA). Amplified cDNA was fragmented, end-repaired, linker-adapted, and single-end sequenced for 75 cycles on a NextSeq500 (Illumina Inc.). Tagmented DNA was purified using QIAGEN MinElute GelExtraction kit (28604, Qiagen). ATAC-seq libraries were PCR amplified for 11 cycles. Agencourt AMPure XP beads (A63880, Beckman Coulter) were used to purify ATAC-seq libraries, which were then paired-end sequenced for 36 cycles on a NextSeq500. MethylC-seq library preparation discussed below.
 
-## Data analysis
+### Data analysis
 
 Most data analysis was performed as previously described (Mo et al., 2016). For basic data processing, exploration, and visualization, we used deepTools (Ramírez et al., 2016), BEDTools (Quinlan and Hall, 2010), RStudio (Team RS, 2016), the tidyverse collection of R packages (Wickham, 2017), ggplot2 (Wickham, 2009), pheatmap (Kolde, 2015), and custom scripts. Reads were aligned to the mm10 genome using Bowtie2 (Langmead and Salzberg, 2012). The Integrative Genomics Viewer (IGV) was used to visualize bigwig files generated by deepTools bamcoverage (Robinson et al., 2011; Thorvaldsdóttir et al., 2013).
 
-## RNA-seq
+### RNA-seq
 
 Three different sets of RNA-seq data were generated from papain dissociated P7 Tie2-GFP brain, liver, lung, and kidney: (1) total tissue; (2) GFP-negative FACS-sorted cells; and (3) GFP-positive FACS-sorted cells. RSEM version 1.3.0 (Li and Dewey, 2011) was used to align reads with Bowtie2 to the mm10/GRCm38 genome and calculate transcript expression using Ensembl annotation (rsem-calculate-expression --bowtie2 --estimate-rspd --append-names --output-genome-bam --sort-bam-by-coordinate). Differentially expressed genes were identified using EBSeq version 1.18.0 (Leng and Kendziorski, 2015). To filter out background transcripts from surrounding parenchymal cells, we determined a set of EC-enriched transcripts for each tissue by comparing GFP-positive and GFP-negative sorted cells. A transcript was considered EC-enriched if it met the following three criteria: (1) a minimum two-fold enrichment in GFP-positive compared to GFP-negative samples; (2) a posterior probability of differential expression (PPDE) greater than or equal to 0.95 [PPDE = (1 - false discovery rate)]; (3) relative expression greater than or equal to 10 transcripts per million (TPM) in both biological replicates. A gene was considered to be differentially expressed between EC subtypes if it met the following criteria: (1) EC-enriched with minimum of two-fold enrichment between one subtype and all three other subtypes; (2) a PPDE greater than or equal to 0.95; (3) a TPM value greater than or equal to 10 in both biological replicates. Principal component analysis was performed on ‘regularized log’-transformed data using the DESeq2 rlog and plotPCA function (Love et al., 2014). Gene ontology enrichment analysis was performed on EC tissue-specific genes using the online enrichment analysis tool (Mi et al., 2017) from the Gene Ontology Consortium.
 
-## ATAC-seq
+### ATAC-seq
 
 We aligned ATAC-seq data using Bowtie2 (Version 2.3.2 t -X 2000 --no-mixed --no-discordant) and then removed duplicate reads (picard MarkDuplicates). Peaks were called using MACS2 (Version 2.1.1.20160309 callpeak --nomodel --keep-dup all --shift −100 --extsize 200 --call-summits) (Zhang et al., 2008). Peaks were then filtered for fold-change >2 and -log(qvalue)>2. ATAC-seq peaks visualized on the browser were called using all fragment sizes. To determine the fraction of mapped reads in called peaks, we used deepTools multiBamSummary (BED-file --outRawCounts --samFlagInclude 64). Samtools view (-s) was used to subsample reads. For all downstream analyses, ATAC-seq peaks were called using paired-end sequencing fragments < 100 bp in length, which are enriched for nucleosome-free regions.
 
 To identify differential ATAC-seq peaks between ECs isolated from brain, liver, lung, and kidney, we used DiffBind (Stark and Brown, 2011; Ross-Innes et al., 2012) with both DESEQ2 and EdgeR (Robinson et al., 2010; McCarthy et al., 2012) methods. DiffBind was used to develop a set of consensus peaks between replicates using the requirement that peaks must be in at least two thirds of the replicates (minOverlap = 0.66). From this new set of peaks, a consensus peakset was generated corresponding to the discrete set of peaks identified between all samples being compared (minOverlap = 1). Log2 transformed normalized read counts in each sample are then tabulated over each peak region and plotted. To retrieve a set of high-confidence, cell type-enriched peaks, differential peak analysis was carried out using DESEQ2 and EdgeR. From both sets of analysis, we filtered for peaks with an absolute fold difference >2 and FDR < 0.05. In R, the union of these two sets of peaks was used to generate a final set of differentially enriched peaks for each sample. Principal component analysis was performed on ‘regularized log’-transformed data using the DESeq2 rlog and plotPCA function.
 
-## Methylome sequencing
+### Methylome sequencing
 
 DNA methylome libraries were prepared using a modified snmC-seq protocol adapted for bulk DNA samples (Luo et al., 2017). 20 ng of purified genomic DNA with 0.5% unmethylated lambda DNA spike-in (D1521, Promega) was bisulfite converted using the EZ DNA Methylation-Direct Kit (D5021, Zymo) following the product manual and was eluted in 10 µl M-Elution buffer. 9 µl converted DNA was mixed with 1 µl P5L_random oligo (5 µM,/5SpC3/TTCCCTACACGACGCTCTTCCGATCTNNNNNNNNN, IDT) followed by heat denaturing at 95°C for 3 min using a thermocycler. The samples were chilled on ice for 2 min and mixed with 10 µl enzyme mix containing 2 µl of Blue Buffer (B0110, Enzymatics), 1 µl of 10 mM dNTP (N0447L, NEB), 1 µl of Klenow exo- (50 U/µl, P7010-HC-L, Enzymatics) and 6 µl H2O. The samples were incubated using a thermocycler with the following program: 4°C for 5 min, ramp up to 25°C at 0.1°C/s, 25°C for 5 min, ramp up to 37°C at 0.1°C/s, 37°C for 60 min, 4°C. A 3 µl enzyme mix containing 2 µl of Exonuclease 1 (20U/µl, X8010L, Enzymatics) and 1 µl of Shrimp Alkaline Phosphatase (rSAP, M0371L, NEB) was added to the samples. The samples were incubated at 37°C for 30 min using a thermocycler. Samples were cleaned-up using 0.8x SPRI beads and eluted with 10 µl M-Elution buffer. Eluted samples were heated at 95°C for 3 min using a thermocycler and were chilled on ice for 2 min. Samples were mixed with 10.5 µl Adaptase master mix containing 2 µl Buffer G1, 2 µl Regent G2, 1.25 µl Reagent G3, 0.5 µl Enzyme G4, 0.5 µl Enzyme G5 and 4.25 µl M-Elution buffer (Accel-NGS Adaptase Module for Single Cell Methyl-Seq Library Preparation, 33096, Swift Biosciences). Samples were incubated at 37°C for 30 min, 95°C for 2 min and 4°C using a thermocycler. 1 µl 30 µM P5 indexing primer and 5 µl 10 µM P7 indexing primer and 25 µl KAPA HiFi HotStart ReadyMix, (KK2602, KAPA BIOSYSTEMS) were added into each sample followed by thermocycling using the following program - 95°C for 2 min, 98°C for 30 s, 10 cycles of (98°C for 15 s, 64°C for 30 s, 72°C for 2 min), 72°C for 5 min and then 4°C. PCR products were cleaned up using 0.8x SPRI beads twice. Methylome libraries were sequenced using an Illumina HiSeq 4000 instrument with 5% PhiX DNA spike-in.
 
 Adaptor sequences were trimmed from sequencing reads using Cutadapt 1.11 with parameters -f fastq -q 20 m 50 -a AGATCGGAAGAGCACACGTCTGAAC -A AGATCGGAAGAGCGTCGTGTAGGGA. We further trimmed 10 bp from both 5’- and 3’- ends of both R1 and R2 reads with parameters -f fastq -u 10 u −10 m 30. Trimmed R1 and R2 reads were mapped to the mm10 reference genome as single-end reads using bismark 0.14.4 with parameter --bowtie2. --pbat option was used for mapping R1 reads. Mapped reads were sorted using Samtools 1.3 followed by removing duplicate reads using Picard 1.141 MarkDuplicates with parameter REMOVE_DUPLICATES = true. Reads were further filtered by MAPQ > 20 using samtools view with parameter -bhq20. Methylation level at each cytosine was summarized using call_methylated_sites from Methylpy package (https://github.com/yupenghe/methylpy/).
 
-## Methylome analysis and identification of ECTS-hypo-DMRs, UMRs, LMRs, and large hypomethylation features
+### Methylome analysis and identification of ECTS-hypo-DMRs, UMRs, LMRs, and large hypomethylation features
 
 DMRs were identified as previously described in (Mo et al., 2015) using DMRfind from the Methylpy package with parameters num_sims = 3000, num_sig_tests = 100, use_mc_status = False, dmr_max_dist = 250, sig_cutoff = 0.01. DMRs showing hypo-methylation in both biological replicates were used for further analyses.
 
@@ -250,18 +646,18 @@ UMRs and LMRs were identified using MethylSeekR (Burger et al., 2013) with m (me
 
 For MethylC-seq scatterplots in Figure 2A and Figure 2—figure supplement 1, multiBigwigSummary (BED-file --outRawCounts) of deepTools was used to compute the mean fraction of mCG in a 5 kb window 3’ of the TSS of protein-coding genes. Gene ontology analysis of shared DMVs was performed using Genomic Regions Enrichment of Annotations Tool (GREAT) (McLean et al., 2010). To compare the degree of methylation between EC subtypes at DMVs overlapping differentially expressed TF genes, we applied the following steps: (1) within each EC subtype, all DMVs in a 20 kb window 5’ to the TSS of the gene of interest were joined into a single contiguous block, (2) overlapping DMVs between EC subtypes were merged to generate a genomic interval that spanned the greatest extent of all the DMVs, (3) within the merged interval, the fraction mCG methylation was calculated for each EC subtype. Computation was performed using multiBigwigSummary. In Figure 4—figure supplement 3B and C, computeMatrix (reference-point --referencePoint center) was used to compute either the degree of methylation at ATAC-seq peaks or the ATAC-seq signal at UMRs, LMRs, and DMRs as a function of distance from the center of regions. Then the deepTools function plotProfile was used to generate output data in table form for plotting in R. The ATAC-seq signal at hypomethylated features was upper quartile normalized using the uqua function of the R package NOISeq (Tarazona et al., 2011; Tarazona et al., 2015). For Figure 4—figure supplement 3C, each line was translated vertically so that the value at position −1500 bp is 0.
 
-## Feature overlap analysis
+### Feature overlap analysis
 
 Bedtools intersect (-u) was used to determine features that overlapped with other features by greater than or equal to 1 bp. Bedtools window (-w 100000) was used to identify CREs within 100 kb of ECTSGs. For Figure 2B, statistically significant enrichment was tested by hypergeometric distribution using MATLAB hygecdf function as previously described in Mo et al., 2015. For Figure 4—figure supplement 2C, statistically significant enrichment was tested with hygecdf(number of category i feature overlapping with category j DEG, sample size of either all hypo-DMRs and ECTS-hypo-DMRs or all differential APs and ECTSAPs, number of features (either DMRs or APs) that overlap with category j DEG, sample size of category i feature, ‘upper’).
 
-## Transcription factor DNA binding motif enrichment analysis
+### Transcription factor DNA binding motif enrichment analysis
 
 TF binding motifs in candidate regulatory regions (ECTSAPs and ECTS-hypo-DMRs) were identified and analyzed using the HOMER suite of tools for motif discovery (Heinz et al., 2010), in particular, findMotifsGenome.pl (-size given). HOMER searches for enriched motifs using a de novo strategy of looking for enriched k-mers in target regions compared to a set of random background genomic regions. HOMER also maintains a custom database of known motifs based on published ChIP-Seq data sets. From the set of known motifs, we filtered for motifs exhibiting a q-value <0.001 and a fold enrichment (defined as the % of target regions with the motif divided by the % of background regions with the motif) >2 for each sample. These were considered to be statistically significant. De novo-enriched motifs could typically be matched to a motif from the list of enriched known motifs. Because many members of a TF family share a similar core motif, we chose one representative member of each TF family motif to display in motif heatmaps (Figures 5B and F). AnnotatePeaks.pl (-m -size 1000 -hist 5) was used to generate histograms of enriched motifs, and annotatePeaks.pl (-center -size given -multi) was used to center candidate regions on instances of motifs. To identify the number of features containing a given motif, we used annotatePeaks.pl (-m -nomotifs -noann -nogene). To determine statistically significant enrichment of a motif (as in Figure 5—figure supplement 1B,C and E), we used hygecdf(number of category i feature overlapping with category j motif, sample size of either ECTS-hypo-DMRs or ECTSAPs within 100 kb of ECTSGs, number of features (either DMRs or APs) that contain category j motif, sample size of category i feature, ‘upper’).
 
-## Droplet-based single-cell RNA-seq of brain ECs
+### Droplet-based single-cell RNA-seq of brain ECs
 
 FACS purified GFP-postive P7 brain ECs from a Tie2-GFP mouse were processed through the GemCode Single Cell Platform using the GemCode Gel Bead, Chip, and Library Kits (10X Genomics, Pleasanton, CA) as per the manufacturer’s protocol. In brief, papain-dissociated ECs were sorted into 0.4% BSA–DPBS, and approximately 10,000 FACS-purified singlet brain ECs were added to the channel with a final recovery rate of 4,257 cells. ECs were then partitioned into gel beads in emulsion in the GemCode instrument for cell lysis and barcoded oligo-DT priming and reverse transcription of poly-adenylated RNA. This was followed by PCR amplification, shearing, and 5′ adaptor and sample index attachment. Libraries were sequenced on an Illumina HiSeq 2500.
 
-## Analyses of single EC transcriptomes
+### Analyses of single EC transcriptomes
 
 scRNA-seq data were pre-processed using the cellranger pipeline (v2.0; 10x Genomics) with default settings. The normalized geneXcell matrix was used as input for the Monocle R/Bioconductor package (Trapnell et al., 2014). Log-normalized expression estimates (with a pseudocount of 1) were used as input for a modified dpFeature analysis (Monocle). Briefly, high-dispersion genes were identified as those genes with a residual greater than 1 * the estimated mean-variance split using the `estimateDispersions` method in Monocle. Non-endothelial-specific transcripts in the high-dispersion gene set, defined as transcripts enriched >2 fold by bulk RNA-seq in the FACS-purified GFP-negative fraction compared to the GFP-positive fraction, likely derived from high-abundance transcripts released and solubilized by lysis of non-ECs during the preparation of the single-cell suspension. 311 non-EC specific genes were excluded from the high-dispersion gene set and removed from subsequent analyses. For preliminary cell clustering, principal component analysis (PCA) was performed on the high-variance genes and components 2–10 were visualized in two dimensions using t-Distributed Stochastic Neighbor Embedding (t-SNE) (Van Der Maaten and Hinton, 2008; Krijthe, 2015; Macosko et al., 2015). Component one was excluded as it was determined to primarily reflect capture efficiency (num_genes_expressed). Initial clusters were identified from the 2D embedding using Mclust. To refine the list of genes contributing to the initial clustering, we performed a Monocle differential gene test with respect to cluster assignment, accounting for total mRNAs in both full and reduced models as well. The top 1200 genes with significant differential expression across clusters were then selected and used as input for a second PCA and components 2–8 were reduced into two dimensions using tSNE. Final cluster assignments were determined using Mclust on the updated 2D embedding. Clusters were annotated based on the expression of canonical EC subtype markers and a differential gene test between the subtypes was performed using the R package Monocle. The final six EC clusters conformed well to the expression patterns of known markers for arterial, venous, tip, capillary and mitotic cells. Cell trajectory analyses were carried out in Monocle on the same 1200 differentially expressed genes used for the second PCA.

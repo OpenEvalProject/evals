@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/04nz0wq19 Genome Sequencing Center, HudsonAlpha Institute for Biotechnology Huntsville United States
-2. https://ror.org/02jbv0t02 Joint Genome Institute, Lawrence Berkeley National Laboratory Berkeley United States
-3. https://ror.org/04qw24q55 Biosystematics Group, Wageningen University and Research Wageningen Netherlands
-4. https://ror.org/03efmqc40 Center for Evolution and Medicine, School of Life Sciences, Arizona State University Tempe United States
-5. https://ror.org/02v80fc35 Department of Crop, Soil, and Environmental Sciences, Auburn University Auburn United States
-6. https://ror.org/052gg0110 Oxford University Oxford United Kingdom
+1. Genome Sequencing Center, HudsonAlpha Institute for Biotechnology Huntsville United States ([ROR:04nz0wq19](https://ror.org/04nz0wq19))
+2. Joint Genome Institute, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
+3. Biosystematics Group, Wageningen University and Research Wageningen Netherlands ([ROR:04qw24q55](https://ror.org/04qw24q55))
+4. Center for Evolution and Medicine, School of Life Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+5. Department of Crop, Soil, and Environmental Sciences, Auburn University Auburn United States ([ROR:02v80fc35](https://ror.org/02v80fc35))
+6. Oxford University Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Integrating synteny and collinearity into comparative genomics pipelines also ph
 
 ## Results and discussion
 
-## GENESPACE syntenic orthology methods to compare multiple complex genomes
+### GENESPACE syntenic orthology methods to compare multiple complex genomes
 
 Comparative genomics across the complex evolutionary histories of eukaryotes typically requires equally varied input and analytical pipelines depending on researchers’ goals and study systems. For example, synteny between closely related haploid assemblies is often inferred by exploring only 1:1 reciprocal best-scoring hits with MCScanX (Wang et al., 2012). Alternatively, polyploid genomes are typically split into subgenomes so that homeologs are viewed by clustering algorithms like OrthoFinder (Emms and Kelly, 2019; Emms and Kelly, 2015) as orthologous and not paralogous. While expert knowledge that informs these analytical decisions can dramatically improve precision, this knowledge is not available in many systems. These issues boil down to a simple circular problem: a priori knowledge of gene copy number is needed to effectively infer orthology and synteny, yet measures of synteny and orthology are needed to infer copy number between a pair of sequences.
 
@@ -51,13 +51,110 @@ Given GENESPACE’s reliance on syntenic regions between genomes, errors in synt
 
 **Figure 1.:** (A, grey panel) GENESPACE runs and parses OrthoFinder results into a synteny-constrained pan-genome annotation. (B, purple panel) Chromosome, gene rank order, and orthogroup membership are added to BLAST hits, which allows direct integration between estimates of orthology and synteny. The three dotplots present the efficacy of GENESPACE syntenic blocks by exploring a particularly challenging region on human (x-axis) and chimpanzee (y-axis) chr. 6. Each point is a BLAST hit rank-order position, colored by syntenic block; colors are recycled if there are more than eight blocks. (C, green panel) Synteny-constrained orthogroups and optionally non-syntenic orthologs are decomposed into a pan-genome annotation where each orthogroup is placed at its inferred syntenic position.
 
+**Table 1.**
+ Comparison of synteny and orthogroup methods.To test the precision of GENESPACE syntenic orthogroups estimates, we contrasted seven pairs of haploid genome assemblies. We present the percent of genes that were found in an orthogroup that hit a single chromosome per genome from the default OrthoFinder and GENESPACE runs. The precision of syntenic block breakpoint estimates was calculated similarly, where the percentage of genes that are placed in a single syntenic block per genome are presented for MCScanX run on all hits, those where both the query and target genes are in the same orthogroup (‘OG’) or via the GENESPACE pipeline.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">(a) % genes in single-copy OGs</th>
+      <th colspan="3">(b) % genes in single-copy syntenic blocks</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Age (~M ya)</th>
+      <th>OrthoFinder</th>
+      <th>GENESPACE</th>
+      <th>MCScanX</th>
+      <th>MCScanX OG</th>
+      <th>GENESPACE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B73 vs. B97 maize*</td>
+      <td>&lt;0.01</td>
+      <td>51.5</td>
+      <td>73.6</td>
+      <td>50.8</td>
+      <td>79.0</td>
+      <td>93.4</td>
+    </tr>
+    <tr>
+      <td>Human Hg38 vs. T2T</td>
+      <td>0–0.1</td>
+      <td>87.7</td>
+      <td>95.9</td>
+      <td>81.1</td>
+      <td>95.0</td>
+      <td>97.7</td>
+    </tr>
+    <tr>
+      <td>Cotton*,+</td>
+      <td>0.5</td>
+      <td>35.6</td>
+      <td>85.7</td>
+      <td>2.7</td>
+      <td>14.1</td>
+      <td>96.2</td>
+    </tr>
+    <tr>
+      <td>HAL2 vs. FIL2 panicgrass*</td>
+      <td>1.1</td>
+      <td>74.8</td>
+      <td>83.2</td>
+      <td>62.3</td>
+      <td>89.3</td>
+      <td>92.0</td>
+    </tr>
+    <tr>
+      <td>Human-chimpanzee</td>
+      <td>7</td>
+      <td>81.1</td>
+      <td>90.2</td>
+      <td>78.6</td>
+      <td>91.2</td>
+      <td>93.3</td>
+    </tr>
+    <tr>
+      <td>Sorghum-Brachypodium*</td>
+      <td>50</td>
+      <td>46.7</td>
+      <td>50.2</td>
+      <td>49.3</td>
+      <td>67.4</td>
+      <td>76.3</td>
+    </tr>
+    <tr>
+      <td>Human-chicken</td>
+      <td>310</td>
+      <td>66.7</td>
+      <td>68.5</td>
+      <td>66.4</td>
+      <td>71.2</td>
+      <td>73.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The plant genomes all have one or more WGDs that predate divergence of the genomes,.+Cotton species Gossypium barbadense and G. darwinii have the most recent WGD of ~1.6 M ya, which causes a large number of blocks to be included as two copies; to avoid confusion between subgenomes, blkSize, and nGaps parameters were increased from 5 (default) to 10 genes._
+
 For every pair of genomes, GENESPACE produced a greater percentage of single-copy syntenic blocks and genes in single chromosome orthogroups than either OrthoFinder or MCScanX in isolation. GENESPACE also outperformed simple integration between the two methods through MCScanX on orthogroup-constrained hits. The improved performance of GENESPACE synteny-constrained orthogroups was most subtle between highly diverged haploid animal assemblies. For example, in the comparison between human and chicken, GENESPACE resolved 2% and 1.8% more single-copy orthogroups and syntenic blocks than default OrthoFinder and orthogroup-constrained MCScanX, respectively. In contrast, the benefits of GENESPACE were most pronounced in recently diverged genomes with a history of WGDs. Single-copy orthogroups between two meso-tetraploid cotton species that share a WGD that predated speciation by ~1 M ya, were uncommon in the default OrthoFinder run (35.6%) but far more prevalent in GENESPACE syntenic orthogroups (85.7%). Similarly, homeologs derived from the cotton WGD impacted estimates of syntenic blocks: only 14% of the genomes were single-copy syntenic in orthogroup-constrained MCScanX but 96.2% were single copy in GENESPACE syntenic blocks. Combined, these results demonstrate significant flexibility and utility of GENESPACE across a range of evolutionary histories and divergence.
 
 It is important to note that some evolutionary processes, including small-scale translocations, can cause true orthologs to exist outside of syntenic regions. Closely related genomes without a history of WGDs tend to have few non-syntenic orthologs. For example, there are 1096 non-syntenic orthologs (6.3% of all orthologs) between human and chimpanzee. In contrast, the 50 M ya diverged Sorghum and Brachypodium genomes have 9002 non-syntenic orthologs, many of which are the result of over-retained Rho WGD-derived paralogs (see below). Since the non-syntenic orthologs can be important in some situations, GENESPACE embraces this complexity by including and flagging non-syntenic orthologs within the pan-genome annotation (Figure 1).
 
-## Synteny-anchored exploration of vertebrate sex chromosomes
+### Synteny-anchored exploration of vertebrate sex chromosomes
 
 GENESPACE facilitates the exploration and analysis of sequence evolution across multiple genomes within regions of interest (e.g., quantitative trait loci [QTL] intervals, see the next section). One particularly instructive example comes from the origin and evolution of the mammalian XY and avian ZW sex chromosome systems. To explore these chromosomes, we ran GENESPACE on 15 haploid avian and mammalian genome assemblies, spanning most major clades of birds, placental mammals, monotremes, and marsupials with available chromosome-scale annotated reference genomes (See Materials and methods). We also included two reptile genomes as outgroups to the avian genomes. The heteromorphic chromosomes (Y and W) are often unassembled, or, where assemblies exist, lack sufficient synteny to provide a useful metric for comparative genomics. As such, we chose to focus on the homomorphic X and Z chromosomes, which have remained surprisingly intact over the >100 M years of independent mammalian (Murphy et al., 1999) and avian evolution (Zhou et al., 2014; Figure 2, Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78526/elife-78526-fig2-v1.jpg)
+
+**Figure 2.:** The plot was generated by the plot_riparian GENESPACE function. Genomes are ordered vertically to minimize the number of translocations between each pairwise combination. Chromosomes are ordered horizontally to maximize synteny with the human chromosomes [X, 1–22]. Regions containing syntenic orthogroup members to the mammalian X (gold) or avian Z (blue) chromosomes are highlighted. All sex chromosomes are represented by red segments while autosomes are white. Chromosome segment sizes are scaled by the total number of genes in syntenic networks and positions of the braids are the gene order along the chromosome sequence. See Figure 2—figure supplement 1 for the full synteny graph including autosomes and chromosome labels.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78526/elife-78526-fig2-figsupp1-v1.jpg)
 
 While the same or similar genomic regions often recurrently evolve into sex chromosomes, perhaps due to ancestral gene functions involved in gonadogenesis, evidence about the nonrandomness of sex chromosome evolution is still contentious (Kratochvíl et al., 2021). Given our analysis, the avian Z chromosome clearly did not evolve from either of the two reptile Z chromosomes sampled here, but instead likely arose from autosomal regions or unsampled ancestral sex chromosomes. The situation in mammals is less clear, in part because both reptile genomes are more closely related to avian than mammalian genomes, which makes ancestral state reconstructions between the two groups less accurate. Nonetheless, the mammalian X and sand lizard Z chromosomes partially share syntenic orthology, an outcome that would be consistent with common descent from a shared ancestral sex chromosome or autosome containing sex-related genes. The shared 91.7 M bp region between the human X and sand lizard Z represents 59.0% of the human X chromosome genic sequence. The remaining 64.0 M bp of human X linked sequences are syntenic with autosomes in the sand lizard and garter snake genomes (Figure 2).
 
@@ -67,11 +164,17 @@ Similarly, the chicken Z chromosome is retained in its entirety across all five 
 
 In contrast to conserved eutherian and avian sex chromosomes, the complex monotreme XnYn sex chromosomes are only partially syntenic between the two sampled genomes. Only the first X chromosomes are ancestral to both echidna and platypus (Rens et al., 2007), and all are unrelated to the mammalian X chromosomes (Figure 2—figure supplement 1), consistent with their independent evolution (Rens et al., 2007). Interestingly, the entirety of the echidna X4 and 47.6 M bp (67.9%) of the genic region of the platypus X5 chromosomes are syntenic with the avian Z chromosome (Figure 2). The phylogenetic scale of the genomes presented here precludes evolutionary inference about the origin of these shared sex chromosome sequences; however, the possibility of parallel evolution of sex chromosomes between such diverged lineages may prove an interesting future line of inquiry.
 
-## Exploiting synteny to track candidate genes in grasses
+### Exploiting synteny to track candidate genes in grasses
 
 The Poaceae grass plant family is one of the best studied lineages of all multicellular eukaryotes and includes experimental model species (Brachypodium distachyon; Panicum hallii; Setaria viridis) and many of the most productive (Zea mays – maize/corn; Triticum aestivum – wheat, Oryza sativa – rice) and emerging (Sorghum bicolor – sorghum; Panicum virgatum – switchgrass) agricultural crops. Despite the tremendous genetic resources of these and other grasses, genomic comparisons among grasses are difficult, in part because of an ancient polyploid origin (see the next section), and because subsequent WGDs are a feature of most clades of grasses. For example, maize is an 11.4 M ya paleo-polyploid (Gaut and Doebley, 1997), allo-tetraploid switchgrass formed 4–6 M ya (Lovell et al., 2021b), and allo-hexaploid bread wheat arose about 8 k ya (Haas et al., 2019). In some cases, homeologous gene duplications from polyploidy have generated genetic diversity that can be targeted for crop improvement; however, in other cases the genetic basis of trait variation may be restricted to sequences that arose in a single subgenome. Thus, it is crucial to contextualize comparative–quantitative genomics and explicitly explore only the orthologous or homeologous regions of interest when searching for markers or candidate genes underlying heritable trait variation — a significant challenge in the complex and polyploid grass genomes.
 
 To help overcome this challenge and provide tools for grass comparative genomics, we conducted a GENESPACE run and built an interactive viewer hosted on Phytozome (Goodstein et al., 2012). Owing to its use of within-block orthology and synteny constraints (Figure 1), GENESPACE is ideally suited to conduct comparisons across species with diverse polyploidy events. Default parameters produced a largely contiguous map of synteny even across notoriously difficult comparisons like the paleo-homeologs between the maize subgenomes (Figure 3A). Furthermore, the sensitive synteny construction pipeline implemented by GENESPACE effectively masks additional paralogous regions like those from the Rho duplication that gave rise to all extant grasses.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78526/elife-78526-fig3-v1.jpg)
+
+**Figure 3.:** (A) The GENESPACE syntenic map (‘riparian plot’) of orthologous regions among eight grass genomes. Chromosomes are ordered horizontally to maximize synteny with rice and ribbons are color coded by synteny to rice chromosomes. Genomes are ordered vertically by general phylogenetic positions. (B) The upper bars display the proportion of maize gene models without syntenic orthologs (‘absent’) in each genome, split by the full background (dark colors) and 86 C3/C4 genes (light colors). (C) The proportion of absent genes is higher in the C3 genomes (green bars), even when controlling for more global gene absences (lower odds ratios). (D) Syntenic orthologs, excluding homeologs among the 26 maize nested association mapping (NAM) founder genomes, with two quantitative trait loci (QTL) intervals highlighted on chromosome 3 (‘Chr3’) and chromosome 6 (’Chr6’). (E) Focal QTL regions that affect productivity in drought where only the genome that drives the QTL effect (middle), the top (B73) and bottom (Tzi8) genomes are presented and the region plotted is restricted to the physical B73 QTL interval and a 25 M bp buffer on either side. Note that the Chr3 QTL disarticulates into two intervals. Due to a larger number of potential candidate genes, the larger Chr3 region, flagged with **, is explored separately in Figure 3—figure supplement 1. (F) Presence–absence and copy number variation are presented for two of the three intervals as heatmaps where each row is a genome (order following panel D), each column is a pan-genome entry (see Figure 1), and the color of each tile indicates absence (gray), single copy (light blue), and multicopy (dark blue). PAV/CNV of the focal genome is outlined. For each interval, the estimated QTL allelic effect relative to B73 of each genome is plotted as bars to the right of the heatmap.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78526/elife-78526-fig3-figsupp1-v1.jpg)
 
 Breeders and molecular biologists can take two general approaches to understand the genetic basis of complex traits: studying variation caused by a priori-defined genes of interest or determining candidate genes from genomic regions of interest. As an example of the exploration of lists of a priori-defined candidate genes, we analyzed PAV of 86 genes shown to be involved in the transition between C3 and C4 photosynthesis (Ding et al., 2015), the latter permitting ecological dominance in arid climates and agricultural productivity under forecasted increased heat load of the next century. To conduct this analysis, we built pan-genome annotations across the seven grasses anchored to C4 maize, which was the genome in which these genes were discovered. This resulted in 159 pan-genome entries: nearly always two placements for each gene in the paleo-tetraploid maize genome. Given that many of these genes were discovered in part because of sequence similarity to genes in Arabidopsis and other diverged plant species, it is not surprising that PAV among C3/C4 genes was lower than the background (9.7% vs. 38.2%, odds ratio = 5.7, p < 1 × 10−16; Figure 3B). However, these ratios were highly variable among genomes, particularly among the C3 species (wheat, rice, B. distachyon), which had far more absences than the C4 species (15.3% vs. 5.5%, odds ratio = 3.1, p = 6.25 × 10−8, Figure 3B). This effect is undoubtedly due in part to the increased evolutionary distance between maize and the C3 species compared to the other C4 species. However, when controlling for the elevated level of absent genes globally in C3 species, the effect was still very strong: the odds of C3 species having more of these C3/C4 genes at syntenic pan-genome positions than the background was always lower than the C4 species (Figure 3C). Despite these interesting patterns, given only a single C3/C4 phylogenetic split in this dataset, it is not possible to test evolutionary hypotheses regarding the causes of such PAV. Nonetheless, this result suggests a possible role of gene loss or gain as an evolutionary mechanism for drought- and heat-adapted photosynthesis.
 
@@ -81,7 +184,7 @@ To explore this possibility, we built a single-copy synteny map across all 26 NA
 
 In addition to this chromosomal mutation and sequence variation between the parents and B73 (Li et al., 2016), we sought to define candidate genes from the patterns of presence–absence and copy number variation, explicitly looking for genes that were private to the focal genome. Two genes in the smaller Chr3 and one gene in the larger Chr3 interval were private to Mo18W, and four genes in three pan-genome entries (one two-member array) were private to Ki11 in the Chr6 interval (Figure 3F, Figure 3—figure supplement 1). While these genes do not have functional annotations relating to drought, this method provides additional candidates that would not have been discovered by B73-only candidate gene exploration.
 
-## Studying the WGD that led to the diversification of the grasses
+### Studying the WGD that led to the diversification of the grasses
 
 Like most plant families (Barker et al., 2016; Stebbins, 1950; One Thousand Plant Transcriptomes Initiative, 2019), but unlike nearly all animal lineages (Muller, 1925), the grasses radiated following a whole-genome duplication: the ~70 M ya Rho WGD. The resulting gene family redundancy and gene-function subfunctionalization is hypothesized to underlie the tremendous ecological and morphological diversity of grasses (Preston et al., 2009; Preston and Kellogg, 2006; Wu et al., 2008).
 
@@ -89,31 +192,308 @@ To explore sequence variation among Rho-derived paralogs, we used GENESPACE to b
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78526/elife-78526-fig4-v1.jpg)
 
-**Figure 4.:** Rho WGD.(A) BLAST hits between P. hallii and S. viridis where the target and query genes were in the same orthogroup are plotted and color coded by sequence similarity. Two over-retained regions are highlighted in the red and yellow boxes. (B) The protein identity of S. viridis chromosome 8 primary orthologous (blue line) hits against P. hallii chromosome 8 and the secondary hits (orange line) against P. hallii chromosome 3 demonstrate sequence conservation heterogeneity. The region between the two red vertical lines corresponds to the red-boxed over-retained primary block in panel A. (C) The two boxed regions in panel A were tracked from P. hallii chromosomes 3 (red) and 8 (yellow); 50% transparency of the braids means that overlapping regions appear orange.
+**Figure 4.:** (A) BLAST hits between P. hallii and S. viridis where the target and query genes were in the same orthogroup are plotted and color coded by sequence similarity. Two over-retained regions are highlighted in the red and yellow boxes. (B) The protein identity of S. viridis chromosome 8 primary orthologous (blue line) hits against P. hallii chromosome 8 and the secondary hits (orange line) against P. hallii chromosome 3 demonstrate sequence conservation heterogeneity. The region between the two red vertical lines corresponds to the red-boxed over-retained primary block in panel A. (C) The two boxed regions in panel A were tracked from P. hallii chromosomes 3 (red) and 8 (yellow); 50% transparency of the braids means that overlapping regions appear orange.
 
 It is interesting to note that all syntenic over-retained regions were at the extreme termini of the chromosomes outside of maize, B. distachyon and wheat; further, the only genome with complete segregation of the two paralogs, wheat, also retains these regions in the center of all six chromosomes (Figure 4C). These results are consistent with the proposed evolutionary mechanism (Wang et al., 2011) where concerted evolution and ‘illegitimate’ homeologous recombination may have homogenized these paralogous regions. This process would be less effective in pericentromeric regions than the chromosome tails, where a single crossover event would be sufficient to homogenize two paralogous regions.
 
-## Conclusions
+### Conclusions
 
 Combined, the historical abundance of genetic mapping studies and ongoing proliferation of genome resources provides a strong foundation for the integration of comparative and quantitative genomics to accelerate discoveries in evolutionary biology, medicine, and agriculture. The incorporation of synteny and orthology into comparative genomics and quantitative genetics pipelines offers a mechanism to bridge these disparate disciplines. Here, we presented the GENESPACE R package as a framework to help bridge the current gaps between comparative and quantitative genomics, especially in complex evolutionary systems. We hope that the examples presented here will inspire further work to leverage the powerful genome-wide annotations that are coming online, both within and among species.
 
 ## Materials and methods
 
-## GENESPACE pipeline and analysis overview
+### GENESPACE pipeline and analysis overview
 
 GENESPACE operates on gff3-formatted annotation files and accompanying peptide fasta files for primary gene models. There are convenience functions for reformatting the gff and peptide files to simplify the naming scheme and reduce redundant gene models to the primary longest transcript. With these data in hand, GENESPACE calculates BLAST-like hits from DIAMOND2 and runs OrthoFinder (Emms and Kelly, 2019) to infer orthogroups and orthologues. GENESPACE then extracts syntenic regions from the hits using a combination of graph- and cluster-based approaches, producing syntenic orthogroups for each unique (not reciprocal) pair of genomes. Syntenic orthogroups are then collapsed into a pan-genome annotation, which is a matrix of positions against a reference genome (rows) and unique gene models in each syntenic orthogroup for each genome (columns). Detailed step-by-step pipeline methods can be found below.
 
 All analyses were performed in R 4.1.2 on macOS Big Sur 10.16. The following R packages were used for visualization or within GENESPACE v0.9.3 (February 11, 2022 release): data.table v1.14.0 (Dowle and Srinivasan, 2021), dbscan v1.1-8 (Hahsler et al., 2019), igraph v1.2.6 (Csardi and Nepusz, 2006), Biostrings v2.58.0 (Pagès et al., 2020), and rtracklayer v1.50.0 (Lawrence et al., 2009). GENESPACE also calls the following third party software: DIAMOND v2.0.8.146 (Buchfink et al., 2021), OrthoFinder v2.5.4 (Emms and Kelly, 2019), and MCScanX no version installed on October 23, 2021 (Wang et al., 2012). All results were generated programmatically; the accompanying scripts and key output are available on github: jtlovell/GENESPACE_data. Minor adjustments to figures to improve clarity were accomplished in Adobe Illustrator v26.01. A full description of each step in GENESPACE is provided in the documentation that accompanies the package source code on github (jtlovell/GENESPACE).
 
-## Description of the vignettes
+### Description of the vignettes
 
 Publicly available genome annotations were downloaded on or before October 8, 2021. See Table 2 for data sources, citations, and metadata. All GENESPACE runs used default parameterization, with the following exceptions: (1) the Rho grass run allowed a single secondary hit (default is 0, this is how the paralogs are explicitly searched for) and maximum number of gaps in secondary regions of 10 (default is 5, relaxed to reduce ancient paralogous block splitting), and (2) the maize run used the ‘fast’ OrthoFinder method since all genomes are closely related and haploid. Some maize genomes contained small alternative haplotype scaffolds, which were dropped for all analyses.
+
+**Table 2.**
+ Raw data sources.A list of the genomes used in analyses here. Genome version IDs are taken from those posted on the respective data sources and may not reflect the name of the genome in the publication. Where multiple haplotypes are available, only the primary was used for these analyses. All polyploids presented here have only a primary haplotype assembled into chromosomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Species</th>
+      <th>Genome version</th>
+      <th>Data source</th>
+      <th>Ploidy*</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>garter snake</td>
+      <td>Thamnophis elegans</td>
+      <td>rThaEle1.pri</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>sand lizard</td>
+      <td>Lacerta_agilis</td>
+      <td>rLacAgi1.pri</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>chicken</td>
+      <td>Gallus gallus</td>
+      <td>mat.broiler.GRCg7b</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>https://www.ncbi.nlm.nih.gov/grc</td>
+    </tr>
+    <tr>
+      <td>hummingbird</td>
+      <td>Calypte anna</td>
+      <td>bCalAnn1_v1.p</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>budgie</td>
+      <td>Melopsittacus undulatus</td>
+      <td>bMelUnd1.mat.Z</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Unpublished VGP</td>
+    </tr>
+    <tr>
+      <td>swan</td>
+      <td>Cygnus olor</td>
+      <td>bCygOlo1.pri.v2</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>zebra finch</td>
+      <td>Taeniopygia guttata</td>
+      <td>bTaeGut1.4.pri</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>echidna</td>
+      <td>Tachyglossus aculeatus</td>
+      <td>mTacAcu1.pri</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Zhou et al., 2021</td>
+    </tr>
+    <tr>
+      <td>platypus</td>
+      <td>Ornithorhynchus anatinus</td>
+      <td>mOrnAna1.pri.v4</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Zhou et al., 2021</td>
+    </tr>
+    <tr>
+      <td>brushtail possum</td>
+      <td>Trichosurus vulpecula</td>
+      <td>mmTriVul1.pri</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>opossum</td>
+      <td>Monodelphis domestica</td>
+      <td>MonDom5</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Mikkelsen et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Tasmanian devil</td>
+      <td>Sarcophilus harrisii</td>
+      <td>mSarHar1.11</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>human (Hg38)</td>
+      <td>Homo sapiens</td>
+      <td>GRCh38.p13</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>https://www.ncbi.nlm.nih.gov/grc</td>
+    </tr>
+    <tr>
+      <td>human (t2t)</td>
+      <td>Homo sapiens</td>
+      <td>CHM13-T2T v2.1</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Nurk et al., 2022</td>
+    </tr>
+    <tr>
+      <td>chimpanzee</td>
+      <td>Pan troglodytes</td>
+      <td>Clint_PTRv2</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Chimpanzee Sequencing and Analysis Consortium, 2005</td>
+    </tr>
+    <tr>
+      <td>mouse</td>
+      <td>Mus musculus</td>
+      <td>GRCm39</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>https://www.ncbi.nlm.nih.gov/grc</td>
+    </tr>
+    <tr>
+      <td>dog</td>
+      <td>Canis lupus familiaris</td>
+      <td>Dog10K_Boxer_Tasha</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Jagannathan et al., 2021</td>
+    </tr>
+    <tr>
+      <td>sloth</td>
+      <td>Choloepus didactylus</td>
+      <td>mChoDid1.pri</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>horseshoe bat</td>
+      <td>Rhinolophus ferrumequinum</td>
+      <td>mRhiFer1_v1.p</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Rhie et al., 2021</td>
+    </tr>
+    <tr>
+      <td>dolphin</td>
+      <td>Tursiops truncatus</td>
+      <td>mTurTru1.mat.Y</td>
+      <td>NCBI</td>
+      <td>1</td>
+      <td>Unpublished VGP</td>
+    </tr>
+    <tr>
+      <td>P. hallii</td>
+      <td>Panicum hallii var. hallii</td>
+      <td>HAL2_v2.1</td>
+      <td>Phytozome</td>
+      <td>1</td>
+      <td>Lovell et al., 2018</td>
+    </tr>
+    <tr>
+      <td>P. hallii (FIL)</td>
+      <td>Panicum hallii var. filipes</td>
+      <td>FIL2_v3.1</td>
+      <td>Phytozome</td>
+      <td>1</td>
+      <td>Lovell et al., 2018</td>
+    </tr>
+    <tr>
+      <td>switchgrass</td>
+      <td>Panicum virgatum</td>
+      <td>AP13_v5.1</td>
+      <td>Phytozome</td>
+      <td>2</td>
+      <td>Lovell et al., 2021b</td>
+    </tr>
+    <tr>
+      <td>S viridis</td>
+      <td>Setaria viridis</td>
+      <td>v2.1</td>
+      <td>Phytozome</td>
+      <td>1</td>
+      <td>Mamidi et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Sorghum</td>
+      <td>Sorghum bicolor</td>
+      <td>BTx623_v3.1</td>
+      <td>Phytozome</td>
+      <td>1</td>
+      <td>Paterson et al., 2009</td>
+    </tr>
+    <tr>
+      <td>maize</td>
+      <td>Zea mays</td>
+      <td>B73_refgen_v5</td>
+      <td>NCBI</td>
+      <td>*2</td>
+      <td>Hufford et al., 2021</td>
+    </tr>
+    <tr>
+      <td>rice</td>
+      <td>Oryza sativa cv ‘kitaake’</td>
+      <td>kitaake_v2.1</td>
+      <td>Phytozome</td>
+      <td>1</td>
+      <td>Jain et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Brachypodium</td>
+      <td>Brachypodium distachyon</td>
+      <td>Bd21_v3.1</td>
+      <td>Phytozome</td>
+      <td>1</td>
+      <td>International Brachypodium Initiative, 2010</td>
+    </tr>
+    <tr>
+      <td>wheat</td>
+      <td>Triticum aestivum</td>
+      <td>V4 (Chinese Spring)</td>
+      <td>NCBI</td>
+      <td>3</td>
+      <td>Zhu et al., 2021</td>
+    </tr>
+    <tr>
+      <td>G barbadense</td>
+      <td>Gossypium barbadense</td>
+      <td>v1.1</td>
+      <td>Phytozome</td>
+      <td>2</td>
+      <td>Chen et al., 2020</td>
+    </tr>
+    <tr>
+      <td>G. darwinii</td>
+      <td>Gossypium darwinii</td>
+      <td>v1.1</td>
+      <td>Phytozome</td>
+      <td>2</td>
+      <td>Chen et al., 2020</td>
+    </tr>
+    <tr>
+      <td>26 NAM parents</td>
+      <td>Zea mays</td>
+      <td>see data on NCBI</td>
+      <td>NCBI</td>
+      <td>*1</td>
+      <td>Hufford et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Ploidy indicates how the genome was treated in the analyses. All values match the ploidy of the primary assembly haplotype except maize, where the refgen_v5 was treated as diploid (to match both homeologs) in the multispecies run, but as haploid in the nested association mapping (NAM) founder population to track only meiotic homologs across the population. This parameterization is to match the phylogenetic position of the whole-genome duplication (WGD) in the terminal branch of the grass-wide analysis, but ancestral in the 26-NAM analysis._
 
 The publicly available C3/C4 gene lists and QTL intervals were generated against the v2 maize assembly. To make this comparable to the across grass and NAM parent GENESPACE runs, we also accomplished a fast GENESPACE run between v2 and the two v5 versions used here. The orthologs and syntenic mapping between these versions are included as text files in the data repository.
 
 All statistics presented here were calculated within R. To compare nonnormal distributions (e.g., sequence identity), we used the nonparametric signed Wilcoxon ranked sum test. To measure sequence divergence, we calculated ungapped percent peptide sequence identity from pairwise Needleman–Wunsch global alignments, implemented in Biostrings (Pagès et al., 2020). To determine single outliers from a unimodal distribution, we applied the Grubbs test implemented in the outliers R package (Komsta, 2011). Some figures were constructed outside of GENESPACE using base R plotting routines and ggplot2 v3.3.3 (Wickham, 2016). Some color palettes were chosen with RColorBrewer (Neuwirth, 2014) and viridis (Garnier et al., 2021).
 
-## GENESPACE pipeline: estimating syntenic orthogroups
+### GENESPACE pipeline: estimating syntenic orthogroups
 
 GENESPACE relies on high-confidence homologs, which are typically defined as members of the same orthogroup via OrthoFinder. In addition to the original method, which clusters genes and builds a graph from closely related genes based on BLAST scores (Emms and Kelly, 2015), OrthoFinder can also use gene trees to split orthogroups into pairwise orthologs (Emms and Kelly, 2019), which represent a stricter definition of orthology. GENESPACE attempts to merge the benefits of each of these methods by first only considering orthogroups for synteny, which allows users to optionally include paralogs in the scan, then including non-syntenic gene tree-inferred orthologs into the pan-genome annotation during its final steps (Figure 1, see pan-genome pipeline description below). The initial orthogroups are inferred ‘globally’ using pairwise reciprocal hits, either using the default OrthoFinder specification or ‘fast’ by only looking at unique pairs of genomes. Depending on the ploidy and user specifications, orthogroups can be re-estimated within syntenic regions. These three steps are detailed below.
 
@@ -121,9 +501,47 @@ Method 1: default global orthogroups. The default behavior of GENESPACE is to ru
 
 Method 2: fast orthogroup estimation. GENESPACE offers a ‘fast’ orthofinderMethod (Table 3), which performs only one-way DIAMOND2 searches, where the genome annotation with more gene models serves as the query and the smaller annotation is the target. The hits then are mirrored, and each stored as OrthoFinder-formatted BLAST text files. OrthoFinder is then run to the orthogroup step on the precomputed BLAST files. This method results in significant speed improvements with little loss of fidelity among closely related haploid genomes. The user can also specify the sensitivity of DIAMOND2 via the diamondMode parameter during GENESPACE initialization.
 
+**Table 3.**
+ Comparison of GENESPACE setting performance.The mirrored ‘fast’ method significantly speeds up OrthoFinder runs by calling DIAMOND2 on each nonredundant pairwise combination of genomes. However, this approach is less sensitive than the default performance and is suggested for only closely related haploid genomes, as the recall of 2:2:2 OGs is less sensitive than the default specification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Default OrthoFinder</th>
+      <th>GENESPACE ‘fast’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n.1:1:1 OGs</td>
+      <td>22,050</td>
+      <td>22,444</td>
+    </tr>
+    <tr>
+      <td>n.2:2:2 OGs</td>
+      <td>13,793</td>
+      <td>13,511</td>
+    </tr>
+    <tr>
+      <td>n.tandem arrays</td>
+      <td>10,597 (4433)</td>
+      <td>10,599 (4426)</td>
+    </tr>
+    <tr>
+      <td>*Run time (min)</td>
+      <td>59.95</td>
+      <td>12.45</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Run time is for ortholog/orthogroup inference (not the GENESPACE pipeline as a whole) using the three cotton genomes, running on 6 2 Gb cores._
+
 Method 3: orthogroups within syntenic blocks. In addition to the above global OrthoFinder runs, GENESPACE can rerun OrthoFinder (only through the -og step) in syntenic regions between pairs of genomes. This is accomplished through four additional steps in the synteny pipeline: (1) syntenic hits are split by large syntenic regions; (2) hits from each syntenic region are passed to OrthoFinder; (3) the within-block orthogroups assignments are aggregated into a single vector across all genomes; and finally, (4) the synteny pipeline (see below) is rerun using the newly defined combined syntenic and inBlkOG vector. While using significant computational resources, this process can improve the sensitivity of orthogroup discovery in paralogous or homeologous regions; however, it is not clear that this offers much improvement over global orthogroups between purely haploid genomes. As such, the default behavior of GENESPACE is to only use orthofinderInBlk when any genome has a ploidy >1.
 
-## GENESPACE pipeline: extracting syntenic blast hits
+### GENESPACE pipeline: extracting syntenic blast hits
 
 The GENESPACE function ‘synteny’ accepts several user-defined parameters, which allow for flexibility; however, the defaults are sufficient for most high-quality genomes and evolutionary scenarios. For example, we used the same default parameters for 300 M years of vertebrate evolution, 50 M years and multiple WGDs of grasses, and 10 k years of Maize divergence. For a full list of parameters, see documentation of the GENESPACE function ‘set_syntenyParams’, but here, we will discuss (1) the minimum number of unique hits within a syntenic block (‘blkSize’, default = 5), (2) the maximum number of gaps within a block alignment (‘nGaps’, default = 5), and (3) the radius around a syntenic anchor for a hit to be considered syntenic (‘synBuff’, default = 100). Synteny begins by processing all gene annotations (steps 1–3), then proceeds to process blast hits for each unique pair of genomes (steps 4–7).
 
@@ -143,7 +561,7 @@ Step 7: flag anchors, syntenic region hits, and block coordinates. With the fina
 
 Modifications: steps 5–7 are modified depending on whether the BLAST hit file is intra- or inter-genomic, the ploidy of the query and target genome, and the user-defined number of ‘secondary hits’. These modifications are as follows. (1) step 5–7(1): [if necessary] syntenic regions are called for self blast hits within haploid genomes. This is the simplest case where the steps are ignored and syntenic anchors are defined as self hits between tandem array representatives. Block and region IDs are chromosome IDs. (2) Modification step 5–7(2): [if necessary] syntenic regions are called for self blast hits within genomes with ploidy >1. Here, the modified syntenic hits from 5-7(1) are specified in maskTheseHits with a synBuff radius of 500 genes. This excludes potentially problematic large tandem arrays in some genomes. The number of hits after masking is set to ploidy – 1. Then the standard step 5–7 processes are run. (3) Modification step 5–7(3): [if necessary] syntenic regions are called for blast hits where nSecondaryHits >0. Here, the methods for syntenic hit calculation from 5-7(2) (if intragenomic) or 5-7 (as a mask of the rerun if intergenomic) are conducted except that the parameters specified are given as those ending in ‘Second’.
 
-## GENESPACE pipeline: constructing pan-genome annotations
+### GENESPACE pipeline: constructing pan-genome annotations
 
 The GENESPACE function ‘pangenome’ decodes pairwise syntenic orthologs into a multigenome pan-annotation. The output is a long-formatted text file, where each gene is given a reference genome syntenic position and chromosome, and flags that are described below. In addition, pangenome also returns a wide-formatted data.table (R object) where each row is a pan-genome entry with positional information and each column is a list of genes by genome (e.g., Figure 1).
 
@@ -155,7 +573,7 @@ Step 3: determine the reference mapping positions of each syntenic orthogroup. I
 
 Step 4: add and flag other forms of orthogroups. The reference pan-genome built in step 3 only acts on direct syntenic blast hits (edges), which allows for strict construction of interpolated positions without the potential polluting positional effects of orthogroups in minor or miss-assembled syntenic blocks. GENESPACE fixes these and other complexities of syntenic orthogroups through a four step pipeline to finalize the pan-genome annotation: (1) ‘indirect syntenic’ orthogroup members are added back into the initial pan-genome annotation by parsing the gff-like text file that contains a vector of syntenic orthogroups; (2) syntenic orthogroups that are missing all interpolated positions are added and given NA positions; (3) tandem array members that are not representative genes are added into the pan-genome annotation; (4) if available, orthologues from the initial OrthoFinder run that are not present in the pan-genome annotation are added and flagged. Note that if OrthoFinder was run using the ‘fast’ orthofinderMethod, orthologs will not be produced nor added into the pan-genome annotation.
 
-## Additional considerations for comparative genomics parameterization
+### Additional considerations for comparative genomics parameterization
 
 There are several factors to consider when constructing your GENESPACE run, generating syntenic block breakpoints, or looking at comparative genomics through protein similarity estimates like OrthoFinder. We detail two of these below:
 

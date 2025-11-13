@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.28875.001 The cutaneous wound-healing program is a product of a complex interplay among diverse cell types within the skin. One fundamental process that is mediated by these reciprocal interactions is the mobilization of local stem cell pools to promote tissue regeneration and repair. Using the ablation of epidermal caspase-8 as a model of wound healing in Mus musculus , we analyzed the signaling components responsible for epithelial stem cell proliferation. We found that IL-1α and IL-7 secreted from keratinocytes work in tandem to expand the activated population of resident epidermal γδT-cells. A downstream effect of activated γδT-cells is the preferential proliferation of hair follicle stem cells. By contrast, IL-1α-dependent stimulation of dermal fibroblasts optimally stimulates epidermal stem cell proliferation. These findings provide new mechanistic insights into the regulation and function of epidermal cell–immune cell interactions and into how components that are classically associated with inflammation can differentially influence distinct stem cell niches within a tissue.
+The cutaneous wound-healing program is a product of a complex interplay among diverse cell types within the skin. One fundamental process that is mediated by these reciprocal interactions is the mobilization of local stem cell pools to promote tissue regeneration and repair. Using the ablation of epidermal caspase-8 as a model of wound healing in Mus musculus, we analyzed the signaling components responsible for epithelial stem cell proliferation. We found that IL-1α and IL-7 secreted from keratinocytes work in tandem to expand the activated population of resident epidermal γδT-cells. A downstream effect of activated γδT-cells is the preferential proliferation of hair follicle stem cells. By contrast, IL-1α-dependent stimulation of dermal fibroblasts optimally stimulates epidermal stem cell proliferation. These findings provide new mechanistic insights into the regulation and function of epidermal cell–immune cell interactions and into how components that are classically associated with inflammation can differentially influence distinct stem cell niches within a tissue.
 
 ## Introduction
 
@@ -38,9 +38,41 @@ Epidermal keratinocytes are a rich source of IL-1α, which is released upon tiss
 
 ## Results
 
-## Impact of IL-1 signaling on the proliferative phase of the wound-healing response
+### Impact of IL-1 signaling on the proliferative phase of the wound-healing response
 
 As we previously observed, IL-1-dependent signaling is crucial for a normal wound-healing response as mice deficient in the interleukin-1 receptor type 1 (IL1R KO) displayed a 2-day delay in wound closure (Lee et al., 2009; Werner and Smola, 2001). Interestingly, a closer analysis of the delay in wound-closure kinetics reveals a defect that manifests itself significantly at day 3 post-wounding, suggesting a role for IL-1 signaling in the proliferative phase of the wound-healing response (Figure 1—figure supplement 1). This observation is consistent with previous findings that IL-1 mediates a double paracrine signaling loop wherein keratinocyte–fibroblast crosstalk generates growth factors that stimulate epidermal stem cell proliferation (Lee et al., 2009; Werner and Smola, 2001). Extending upon this concept, we observed that the interfollicular stem cell proliferation induced by a wound is significantly impaired in the absence of IL-1 signaling (Figure 1A and Figure 1—figure supplement 2). In light of these observations, we investigated whether other epithelial stem cell pools that are mobilized upon wounding were likewise dependent upon IL-1 signaling. In particular, we focused on the hair follicle stem cells (HFSCs) residing in their niche within the hair follicle known as the bulge. These bulge stem cells are responsible for the cyclical regeneration of the hair under homeostatic conditions, but are stimulated to proliferate and migrate into the epidermis following a cutaneous wound (Ito et al., 2005). We found that CD34+ HFSCs were highly proliferative (as noted by Ki67+/CD34+ cells) in hair follicles proximal to the wound (Figure 1B), but were relatively quiescent in follicles distal to the wound site (Figure 1—figure supplement 3). Interestingly, this increase in HFSC proliferation was also significantly dependent upon IL-1 signaling. As shown in Figure 1B, there was a substantial decrease in the number of CD34+ HFSCs that were expressing the proliferating antigen Ki67 3 days post-wounding. Upon tracking the status of HFSC proliferation over the course of the wound-healing program, we observed that there was a quantitative decrease in proliferating HFSCs as early as one day post-wounding (Figure 1C and Figure 1—figure supplement 4). This decrease in HFSC proliferation perdured throughout the proliferative phase of the wound-healing program. Given the contribution of epithelial stem cell proliferation to the repair of the epidermis, we examined whether the impairment of both IFE stem cell and HFSC proliferation in the IL-1R KO background would manifest as a hindrance to the expansion of the epidermis upon wounding. As shown in Figure 1D (and Figure 1—figure supplement 5), the epidermal region proximal to the wound is hyperplastic, but this response is diminished in the absence of IL-1 signaling.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-v1.jpg)
+
+**Figure 1.:** (A) Quantification of proliferating cells in the interfollicular epidermis (IFE) of the skin from WT or IL1R-KO 8-week-old mice 3 days post-wound. The proximal area of measurement was restricted to the first three hair follicles adjacent to the wound edge. The cell count from a region 2 cm away from the wound centre was considered to be distal. (B) Immunostaining of day 3 wound proximal skin sections from 8-week-old WT or IL-1R KO mice for CD34 (green) and Ki67 (red) to mark proliferating hair follicle stem cells (HFSCs). Nuclei were stained with DAPI (blue). Scale bar = 50 μm. The dotted lines represent the epidermal–dermal interface. The inset shows the magnified view of a hair follicle with proliferating cells near the wound. (C) Quantification of proliferating HFSCs present near the wound in WT or IL-1R-deficient mice compared to unwounded mice. (D) The epidermal thickness was quantified by measuring the distance between the keratin-5+ basal layer and the loricrin+ granular layer, starting from the region with keratin-5 expression in the wound. Each bar in the graph is a mean of three data points obtained from 50-μm-wide windows. (E) H&E staining of postnatal day 4 (P4) skin showing epidermal thickness (denoted by white lines) between the various genotypes, WT = wildtype, C8CKO = caspasecKO and C8/IL1R = caspase-8/IL1R dKO. The dotted black lines represent the basement membrane separating the epidermis (epi) and the dermis (der). hf denotes hair follicle. Scale bar = 50 μm. Quantitation of epidermal thickness is represented in the histogram as the average ±SEM. (F) Hyperproliferation of P4 epidermis in the KO skin is revealed by increased expression of Ki67 (green) and is reduced in the caspase-8/IL1R dKO. K5 = keratin 5 (red). (G) Quantitation of proliferating interfollicular epidermal cells is shown as the average ± SEM relative to WT levels. (H) Proliferation of hair follicle stem cells. The data shown are the fold difference in different genotypes relative to WT levels that are set to 1. The data shown in E–H are from six different mice per genotype. **p<0.001, ***p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** 5 mm excisional wounds were made on 8-week-old IL1R KO and WT control males. Wound closure was determined as the percentage size reduction compared to day 0.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Immunostaining of day 3 wound distal skin sections from 8-week-old WT or IL-1R KO mice for CD34 (green) and Ki67 (red) to mark proliferating HFSCs. Nuclei were stained with DAPI (blue). Scale bar = 50 µm. Boxes are windows taken for quantification of Figure 1A.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Immunostaining of day 3 wound distal skin sections from 8-week-old WT or IL-1R KO mice for CD34 (green) and Ki67 (red) to mark proliferating HFSCs. Nuclei were stained with DAPI (blue). Scale bar = 50 µm. The dotted lines represent the epidermal–dermal interface.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Skin sections from 8-week-old WT and IL1R KO mice were stained for keratin 5 (K5) (green), Ki67 (red) and DAPI (blue), for 1, 3, and 5 days postwounding. White dotted lines represent the basement membrane that separates the epidermis from the underlying dermis. Scale bar = 50 μm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Skin sections from 8-week-old WT and IL1R KO mice were stained for keratin 5 (K5) (red), loricrin (Lor) (green) and DAPI (blue) 3 days postwounding. Epidermal thickness was calculated by taking 50-μm windows starting from the wound edge (the beginning of K5 staining), and measuring the thickness between the bottom of K5 and the top of Lor.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Skin sections from 8-week-old WT, IL1R KO, and γδT-cell KO mice were stained for Sox9 (red) to mark HFSCs and DAPI (blue) 3 days postwounding. White dotted lines denote the basement membrane separating the epidermis from the underlying dermis. Boxed regions are shown as a magnified image in the inset. Scale bar = 50 μm.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** WT or IL-1RKO HFSCs were plated on the top of a transwell chamber with conditioned media from WT, caspase-8 conditional KO (Casp8 cKO), caspase-8 conditional KO/gdTCRKO (Casp8 cKO/Tcrd-/-) or with recombinant human IL-1 (rhIL-1) in the lower chamber. HFSC migration to the lower side of the membrane was quantified after 24 hr. Results are presented as fold change relative to WT migration level, which was set at 1.
 
 A major obstacle in dissecting the signaling pathways that regulate the wound response is the limited amount of cells that respond to the trauma. The heterogeneous response of cells up to 200 μm from the wound site makes it difficult to identify the extracellular cytokines and intracellular signaling pathways that orchestrate the wound-healing response in this physiological system. We addressed this constraint by employing a genetic wound-healing model based on the epidermal ablation of caspase-8 (Casp8 cKO) that converts the entire skin to a wound-like state (Lee et al., 2009; Li et al., 2010). Similar to the observations made with excisional wounds, the Casp8 cKO mouse model of wound healing displayed a thicker epidermis compared to the skin of WT mice (Figure 1E). Interestingly, desensitization of the cells to IL-1 signaling (via the removal of the IL-1 receptor) significantly reduced this epidermal thickening. These results confirm our previous finding that one mechanism through which epidermal stem cell proliferation is achieved is through IL-1α-mediated induction of keratinocyte proliferation factors from dermal fibroblasts (Lee et al., 2009). The thickened epidermal phenotype was partly due to enhanced proliferation of Keratin-5+ IFE cells, which is elevated in the Casp8 cKO skin and reduced in the absence of IL-1 signaling (Figure 1F and G).
 
@@ -48,9 +80,41 @@ In order to determine whether HFSCs were also contributing to the epidermal thic
 
 An important contributor to wound-closure kinetics during the proliferative phase of wound healing is cell migration. Moreover, it has previously been reported that IL-1α can stimulate epidermal keratinocyte migration (Chen et al., 1995). We therefore explored whether IL-1α can similarly serve as a chemoattractant to stimulate HFSC emigration from the bulge to the wound site. To separate the effect of IL-1α on HFSC migration from proliferation unambiguously, we reconstituted the migration in a transwell assay (Figure 1—figure supplement 7). When treated with conditioned media (CM) from the Casp8 cKO epidermis, primary mouse HFSCs showed a >3 fold increase in chemotaxis relative to cells exposed to CM from wild-type epidermis. Interestingly, HFSCs lacking the IL-1R remained responsive to the chemotactic cue in the Casp8 cKO CM. This finding is consistent with the observation that recombinant IL-1 was incapable of inducing the transwell migration of HFSCs. Altogether, this provides evidence that IL-1α is neither necessary nor sufficient to induce HFSC migration.
 
-## Loss of γδT-cells phenocopies the deficiency of IL-1 signaling in the epithelial compartment of the wound-like skin
+### Loss of γδT-cells phenocopies the deficiency of IL-1 signaling in the epithelial compartment of the wound-like skin
 
 As IL-1 signaling is classically associated with the establishment of localized inflammation, we interrogated the inflammatory response in the wound lacking the IL-1R. Among the earliest inflammatory cells that respond to injury are macrophages and granulocytes, which are known to enhance the proliferation of epidermal stem cells (Martin, 1997). In the Casp8 cKO skin, the numbers of macrophages and granulocytes were increased and a marked reduction in the numbers of these cells was observed in the absence of IL-1 signaling (Figure 2A). Similarly, other well-established contributors to the wound-healing program are epidermal resident γδT-cells, also known as dendritic epidermal T-cells (DETCs). Following a stress signal such as wounding, γδT-cells become activated and promote epidermal stem cell proliferation by secreting keratinocyte growth factor (KGF, also known as FGF7) (Jameson and Havran, 2007). Wound healing is impaired in γδT-cell deficient mice, which underscores the important role of these immune cells in the repair process (Jameson et al., 2002). Furthermore, γδT-cells play an important role in the recruitment of other immune cells such as macrophages during wound healing (Jameson et al., 2005). In the Casp8 cKO/Tcrd−/− (γδT-cell KO) mouse, the number of granulocytes and macrophages were decreased (Figure 2A). This impairment of immune cell recruitment is similar to the effect observed upon removal of IL-1 signaling in the Casp8 cKO (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunofluorescence of mouse skin sections from different genotypes. Staining for keratin 5 (K5, red) and macrophages (Mac1, green) or for granulocytes (Gr-1, green) reveals a reduction in innate immune cell infiltration in the caspase-8 conditional knockout (C8 KO) skin in the absence of IL-1 signaling (C8/IL1R dKO) or γδT-cells (C8/γδTCR dKO). Scale bar = 50 µm, the white dotted lines denote basement membrane. (B) Immunofluorescence of γδT-cells (green) and keratin 5 (K5, red) in the skin of mice from different genotypes identified in the figure. The histogram shows that there is an increase in the amount of γδT-cells in the C8KO skin relative to the wild-type control, and this is reduced in the absence of IL-1 signaling (C8/IL1R dKO). (C) H&E staining of P4 skin showing epidermal thickness differences denoted by the white lines. The dotted line denotes the basement membrane separating epidermis (epi) and dermis (der), hf denotes a hair follicle. Scale bar = 50 μm. The quantified data from three mice per genotype are shown in the histogram. (D) Detection of proliferating cells by EdU labeling (green). The bulge region where HFSCs reside (shown as a box along the hair follicle) was marked by smooth muscle actin staining (red) of the arrectorpilli muscle. Nuclei were stained by DAPI (blue). The dotted line represents the epidermal–dermal interface. The asterisk marks the non-specific immunofluorescence from DAPI channel; the inset shows the magnified view of the hair bulge. (E) Quantification of the proliferating interfollicular epidermal cells (IFE) and hair follicle stem cells (HFSC) from (D). Data shown in B, C, and E are from six different mice per genotype. **p<0.001, ***p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Immunofluorescence images of day 3 wound proximal and distal skin sections from 8-week-old WT or γδT-deficient mice. Sections were labelled with anti-SMA antibody to mark the hair-bulge region (red) and with EdU to detect actively proliferating cells. Nuclei were stained with DAPI (blue). Scale bar = 50 µm. The dotted line represents the epidermal–dermal interface.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The cell counts of Edu+ proliferating interfollicular epidermal (IFE) cells in skin wounds of WT and γδT-cell-deficient mice. The proximal area of measurement was restricted to the first three hair follicles adjacent to the wound edge. The cell counts from a region 2 cm away from wound centre was considered to be distal.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Quantification of EdU+ hair follicle stem cell (HFSC) proliferation in the first three hair follicles adjacent to wounds in mice from the labeled genotypes.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The epidermal thickness was quantified by measuring the distance between the Keratin-5+ basal layer and the loricrin+ granular layer, starting from the region with keratin-5 expression in the wound of WT and γδT-deficient mice. Each bar in the graph is a mean of three data points obtained from a 50-μm wide region of interest.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Unpermeabilized skin sections from wild type, caspase 8 conditional knockout, and caspase-8 conditional knockout/γδT-cell KO mice were stained for extracellular IL-1α. Scale bar = 50 μm.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Wounded 5-mm punch biopsies from WT and γδT-cell KO mice were used to condition media. ELISA for IL1α was performed on the conditioned media. Analysis was performed on 6 hr and 24 hr post-wounding samples. Differences between the secreted IL1α levels were not statistically significant (ns).
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** Unpermeabilized skin sections from WT or γδT-cell KO mice were stained for extracellular IL-1α. Regions shown are proximal to the wound and 2 cm distal to the wound site. The secondary control comprises sections stained only with secondary antibody. Boxed regions are shown as magnified images in the inset. White dotted lines denote the basement membrane that separates the epidermis from the underlying dermis. Scale bar = 50 μm.
 
 On the basis of their shared effect on immune cell recruitment, we investigated whether there is an epistatic relationship between IL-1 signaling and γδT-cell activity. Interestingly, γδT-cell numbers are increased in the Casp8 cKO mice (Lee et al., 2009), but in the absence of IL-1 signaling, there is a dramatic reduction of the numbers of these cells in the skin (Figure 2B). Given the ability of γδT-cells to stimulate epidermal stem cell proliferation, we hypothesized that the removal of these cells would reduce the epidermal hyperplasia in the Casp8 cKO mouse as does the loss of IL-1 signaling. We found that the epidermal thickness in the Casp8 cKO/Tcrd−/− mouse was significantly reduced in comparison to that in the Casp8 cKO mouse (Figure 2C).
 
@@ -58,17 +122,57 @@ We then assessed the status of HFSCs in the Casp8 cKO background and its depende
 
 We also tested the possibility that IL-1 signaling exerts its effect separately from γδT-cells. We thus examined whether the expression of IL-1α is affected in the absence of γδT-cells. As shown in Figure 2—figure supplement 5, the amount of extracellular IL-1α was comparable in Casp8 cKO skin and Casp8 cKO/Tcrd−/− skin. This was verified by quantitation of IL-1 secretion in wounded samples from wild-type and Tcrd−/− skin, wherein the IL-1α levels were not significantly different (Figure 2—figure supplements 6–7). These data point to the fact that, despite normal levels of IL-1α in the wound, active γδT-cells are necessary to elicit the early stimulation of HFSC proliferation. Altogether, these observations suggest that IL-1 signaling converges upon γδT-cells to mediate epithelial stem cell proliferation in the skin.
 
-## Activation of γδT-cells by IL-1
+### Activation of γδT-cells by IL-1
 
 As IL-1 signaling elicits many of the same effects as activated γδT-cells, we then focused on interrogating whether there is a direct relationship between IL-1 signaling and γδT-cell function. The remarkable ability of γδT-cells to perform a variety of effector functions depends on their ability to recognize stress signals coming from keratinocytes (Jameson and Havran, 2007). Unlike αβ T-cells, which recognize protein fragments processed by antigen presenting cells, the effector function of γδT-cells depends on a combination of a yet unknown antigen recognized by the γδ-TCR and a variety of co-stimulatory molecules (Witherden et al., 2010). In particular, keratinocytes that are stressed during wound healing increase the expression of the coxsakie and adenovirus receptor (CAR), which acts as a co-stimulatory ligand that is recognized by the junctional adhesion molecule-like protein (JAML) on the surface of γδT-cells (Witherden et al., 2010, Witherden and Havran, 2011). Upon activation by a wound, γδT-cells undergo a variety of changes that are hallmarks of an activated cell, including the loss of dendritic extensions, increased proliferation and secretion of cytokines and growth factors that are essential for wound healing (Jameson and Havran, 2007). Among the functional consequences of γδT-cell activation is enhanced proliferation of epidermal stem cells (Jameson et al., 2002) and, as shown in Figure 2E, a stronger effect on HFSC proliferation. As epithelial stem cell proliferation was decreased in the caspase-8/IL1R dKO (Figure 1H), we hypothesized that IL-1 signaling is required for optimal activation of γδT-cell, which, in turn, promotes the proliferation of cutaneous epithelial stem cells.
 
 Using the Casp8 cKO and caspase-8/IL1R dKO mice, we investigated whether a parameter of γδT-cell activation, namely proliferation, is dependent upon IL-1 signaling. We assayed γδT-cell proliferation and found that the number of proliferating γδT-cells was increased three-fold in the Casp8 cKO skin compared to WT controls, whereas a significant decrease was observed in the absence of IL-1 signaling (Figure 3A). Similarly, in excisional wounds, elevated γδT-cell proliferation is dependent on IL-1 signaling (Figure 3—figure supplements 1 and 2). It is noteworthy, however, that γδT-cells in the caspase-8/IL1R dKO still displayed increased proliferation compared to wild-type cells, which may reflect the redundancy in this system. We also observed increased γδT-cell activation in the caspase-8/IL1R dKO mice, as observed by TNFα expression (Figure 3B and C). The frequency of these activated γδT-cells was markedly reduced in the absence of IL-1 signaling. In the newborn thymus, IL-1 signaling has been shown to have a synergistic effect with IL-7 in enhancing the proliferation of γδT-cells (Lynch and Shevach, 1992). Epidermal keratinocytes constitutively express IL-7 and this expression is required for γδT-cell development (Jameson and Havran, 2007). In the Casp8 cKO, IL-7 expression is upregulated and this is not affected by the absence of IL-1 signaling (Figure 3—figure supplement 3). Similarly, IL-7 expression is not affected in Casp8 cKO skin or excisional wounds that lack γδT-cells (Figure 3—figure supplements 4 and 5). On the basis of this observation, we hypothesized that IL-1α released from the keratinocytes in the Casp8 cKO mouse can act synergistically with IL-7 to enhance γδT-cell proliferation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig3-v1.jpg)
+
+**Figure 3.:** (A) Quantification of γδT-cell proliferation. The numbers of γδT-cells are reported as the fold difference from WT, which was normalized to 1. **p<0.001. (B) Detection of activated γδT-cells. γδT-cell (green) activation was monitored by expression of TNFα (red) via immunofluorescence. Nuclei (blue) are stained with DAPI. Arrowheads mark some of the activated γδT-cells. (C) Quantification of activated γδT-cells per square millimeter. Scale bar = 50 µm, ***p<0.0001. (D) Recapitulation of γδT-cell proliferation in vitro. Primary γδT-cells were isolated from the skin of either wild type (WT) or IL1R knockout mice (IL1R−/− γδT-cell), primed with anti-CD3 and anti-JAML and treated with conditioned media from WT (WT CM) or caspase-8 conditional knockout (C8 KO CM) skins. Inhibitory antibody against IL-7 or recombinant human IL-1α or IL-7 were added as indicated. The histogram shows the fold difference in γδT-cell numbers relative to numbers of WT CM-treated γδT-cells, which are normalized to 1. Data are representative of at least three independent experiments performed in triplicate. **p<0.001, ***p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Skin sections from 8-week-old wild-type (WT) or IL1R KO mice were stained for γδT-cells (green) and Ki67 (red) 3 days post wounding. Boxed regions are shown as magnified images in the insets. White dotted lines denote the basement membrane that separates the epidermis from the underlying dermis. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The number of total γδT-cells and proliferating γδT-cells based on the images in Figure 3—figure supplement 1. Panel I shows quantitation of a region proximal to the wound bed. Panel II shows quantitation of a region 2 cm distal from the wound bed.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Data are the fold difference ± SEM of three samples per genotype analyzed in triplicate. The p-values comparing C8CKO and C8/IL1R dKO are not statistically significant (N.S.).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** qPCR measurements of levels of IL-7 expression by keratinocytes. Data are the fold difference ± SEM of three samples per genotype analyzed in triplicate. The levels of IL-7 in the γδT-cell KO wounded skin are higher than those in the wounded wild-type skin. **p<0.001.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Data are the fold difference ± SEM of three samples per genotype analyzed in triplicate. The levels of IL-7 in the caspase-8 cKO and the caspase-8 cKO/γδT-cell KO at postnatal day six skin are not statistically different (ns).
+
 In order to validate the contributions of IL-1 and IL-7 signaling to γδT-cell proliferation, we established short-term γδT-cell in vitro cultures from WT mice (Witherden et al., 2010). The use of this in vitro approach allowed us to reconstitute the different components required to stimulate γδT-cell proliferation. We collected conditioned media (CM) from WT and Casp8 cKO keratinocytes (Lee et al., 2009), applied them to WT or IL1R–/– γδT-cells and monitored the proliferation rates of these cells. γδT-cells were cultured in activating conditions using anti-CD3 and anti-JAML as previously described (Witherden et al., 2010), and then incubated for 2 days in the presence of CM, recombinant human IL-1α (rhIL-1α), recombinant human IL-7 (rhIL-7), or an IL-7 inhibitory antibody. The number of γδT-cells increased 2.5-fold when they were treated with Casp8 cKO CM rather than WT CM (Figure 3D). Conversely, removing IL-1 signaling by treating IL1R−/− γδ T-cells with Casp8 cKO CM resulted in significantly reduced proliferation. Similarly, blocking IL-7 signaling in the Casp8 cKO CM with an anti-IL-7 inhibitory antibody blocked γδT-cell proliferation. This effect was enhanced when both IL-1 and IL-7 signaling were perturbed in tandem. As epidermal keratinocytes constitutively secrete IL-7, we predicted that adding recombinant human IL-1α (rhIL1α) to WT CM would be sufficient to cause an increase in γδT-cell proliferation. Consistent with this hypothesis, the addition of rhIL-1α to WT CM elicited an increase in γδT-cell proliferation comparable to the effect seen with Casp8 cKO CM. In fact, simply adding recombinant IL-1 and IL-7 to normal growth media is sufficient to reconstitute the γδT-cell proliferation observed in the Casp8 cKO CM (Figure 3D). Altogether, these results support the model in which IL-1 and IL-7 signaling, in conjunction with γδT-cell activation, amplifies the proliferation of these cells in response to stresses that alter epidermal homeostasis.
 
-## Contributions of keratinocyte–fibroblast and keratinocyte–γδT-cell interactions to stem cell proliferation
+### Contributions of keratinocyte–fibroblast and keratinocyte–γδT-cell interactions to stem cell proliferation
 
 We have demonstrated that stem cells residing in distinct niches of the skin (i.e. the interfollicular epidemis and the hair follicle bulge region) are modulated by IL-1 signaling in a wound-like environment. The data presented to date and reported previously (Lee et al., 2009) suggest that the effect of IL-1 signaling on different stem cell pools is mediated through the dichotomous activation of dermal fibroblasts and γδT-cells. However, in the skin, where multiple cellular interactions are occurring simultaneously in an intricate manner, it is difficult to resolve the direct effects of IL-1 signaling on each subset of stem cells. As IL-1 signaling can stimulate different pools of epithelial stem cells in the skin, we sought to interrogate whether activated fibroblasts and γδT-cells can induce proliferation within distinct epithelial stem cell niches. Owing to a lack of definitive markers to distinguish IFE cells from HFSCs, assaying the proliferation of these cells within the skin is a challenge. On the other hand, in vitro cultures of IFE cells or HFSC are well established, and grafting experiments have shown that these cells maintain their progenitor properties even after several passages in vitro (Blanpain et al., 2004; Ghazizadeh and Taichman, 2005). In order to delineate the contributions of keratinocytes–fibroblast interactions to epithelial stem cell proliferation, we activated dermal fibroblasts (df) with Casp8 cKO CM or rhIL-1α, as evidenced by their expression of FGF7 and GM-CSF (Figure 4A). CM was collected from these activated df and applied to IFE cells or HFSC to test their effect on the proliferation of these two different epithelial stem cells. Treatment with CM from activated df caused a dramatic increase in the proliferation of IFE cells and a modest increase in HFSC proliferation (Figure 4B). In the absence of IL-1 signaling, however, the proliferation of both IFE cells and HFSCs was reduced to that of control levels (Figure 4B, Figure 4—figure supplement 1). These observations suggest that IFE cells preferentially respond to signals from mesenchymal cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig4-v1.jpg)
+
+**Figure 4.:** (A) Activation of dermal fibroblasts (df). df were treated with conditioned media (CM) as noted in the figure and the expression of the growth factors FGF7 and GM-CSF were assessed by qPCR. (B) Effect of activated df on stem cell proliferation. The proliferation rates of isolated interfollicullar epidermal (IFE) and hair follicle stem cells (HFSC) were determined by cell counting with trypan blue exclusion following treatment with the CM from dermal fibroblasts. Dermal fibroblasts were first activated as described in the figure legend prior to conditioning fresh medium with them. Cell numbers were determined daily over four days. (C) Potentiation of γδT-cell activation by CM. WT or IL1R–/– γδT-cells were treated with CM as described in the figure, and the markers for γδT-cell activation, FGF7 and TNFα, were assessed by qPCR. (D) Effect of activated γδT-cells on stem cell proliferation. The proliferation rates of isolated IFE and HFSC were determined by trypan blue exclusion cell counting. IFE and HFSC were incubated for four days with CM from γδT-cells. (E) Combinatorial effect of activated df and γδT-cells on stem cell proliferation. The proliferation rates of isolated IFE and HFSC were determined by trypan blue exclusion cell counting. IFE and HFSC were incubated for four days with CM from df and γδT-cells that were first treated as described in the figure. Data in (A) and (C) were obtained from triplicates of at least three independent experiments and are represented as the fold difference ± SEM. The data shown in (B), (D) and (E) are the averages ± SEM of three independent experiments analyzed in triplicate. **p<0.001, ***p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Proliferation rates of IFE (panel I) and HFSC cells (panel II) determined by trypan blue exclusion cell counting after treatment with CM from γδT-cells treated as indicated in the key.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** qPCR of P4 dermis from the different genotypes represented as the fold difference ± SEM. Data were collected from five mice per genotype.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/28875/elife-28875-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** qPCR of short-term γδT-cell cultures. The data shown are averagesfrom three independent experiments.
 
 The treatment of primary γδT-cell cultures with Casp8 cKO CM resulted in their activation, as demonstrated by their increased expression of FGF7 and TNFα (Figure 4C). Moreover, abrogating IL-1 or IL-7 signaling was able to reduce FGF7 and TNFα expression, whereas rhIL-1α or rhIL-7 was sufficient to induce maximal FGF7 expression. Exposure of HFSCs to CM from activated γδT-cells caused a significant increase in the proliferation of the HfSC (Figure 4D). Although activated γδT-cells can also stimulate IFE cell proliferation, the numbers of these cells were 40% smaller than those of HFSCs. Similarly, CM from rhIL-1α- or rhIL-7-treated γδT-cells was sufficient to recapitulate the increased proliferation of the HFSCs (Figure 4D).
 
@@ -94,39 +198,205 @@ There is an emerging paradigm that signals classically associated with immune ce
 
 ## Materials and methods
 
-## Generation of caspase-8 conditional knockout mice (Casp8 cKO)
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Casp8 fl/fl mice (Casp8 cKO)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 027002</td>
+      <td>Animals were originally purchased from Jackson Laboratory but were bred for &gt;5 generations at UCSD and later bred in the NCBS animal facility for &gt;5 generations</td>
+    </tr>
+    <tr>
+      <td>IL1R KO mice</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 028398</td>
+      <td>Animals were originally purchased from Jackson Laboratory (Stock No. 000664) but were bred for &gt; 5 generations in the NCBS animal facility</td>
+    </tr>
+    <tr>
+      <td>Tcrd–/– mice (γδTCR KO)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 003448</td>
+      <td>Animals were originally purchased from Jackson Laboratory (Stock No. 000664) but were bred for &gt; 5 generations in the NCBS animal facility</td>
+    </tr>
+    <tr>
+      <td>Krt14-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 018964</td>
+      <td>Animals were originally purchased from Jackson Laboratory (Stock No. 000664) but were bred for &gt; 5 generations in the NCBS animal facility</td>
+    </tr>
+    <tr>
+      <td>C57Bl6/JNcbs</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 000664</td>
+      <td>Animals were originally purchased from Jackson Laboratory (Stock No. 000664) but were bred for &gt; 10 generations in the NCBS animal facility</td>
+    </tr>
+    <tr>
+      <td>anti-CD34</td>
+      <td>Ebioscience</td>
+      <td>11-0341-82</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-Ki67</td>
+      <td>abcam</td>
+      <td>ab16667</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-alpha-smooth muscle actin (a-SMA)</td>
+      <td>Abcam</td>
+      <td>ab5694</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-gamma delta TCR</td>
+      <td>BD Bioscience</td>
+      <td>GL3</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-CD3</td>
+      <td>e-biosciences</td>
+      <td>14-0032-85</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-JAML</td>
+      <td>eBioscience</td>
+      <td>clone eBio4E10</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-IL-7 inhibitory antibody (Clone M25)</td>
+      <td>BioXCell</td>
+      <td>BE0048</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-IL-1 alpha</td>
+      <td>Invitrogen</td>
+      <td>14-7011-81</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-Keratin 5</td>
+      <td>Jamora Lab generated</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>anti-Loricrin</td>
+      <td>Jamora Lab generated</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>anti-Sox9</td>
+      <td>Abcam</td>
+      <td>ab185230</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-Mac1</td>
+      <td>Thermo-fisher scientific</td>
+      <td>MA1-10080</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-Gr1</td>
+      <td>R&amp;D Systems</td>
+      <td>MAB1037-500</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>anti-TNFalpha</td>
+      <td>eBiosciences</td>
+      <td>14–7321</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Alexa 488- or 555- secondaries</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>DAPI</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>rhIL-1 alpha</td>
+      <td>R&amp;D Systems</td>
+      <td>200-LA-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ELISA kit for IL-1 alpha</td>
+      <td>eBiosciences</td>
+      <td>88501986</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Click-iT EdU Imaging Kit</td>
+      <td>Thermo-fischer scientific</td>
+      <td>C10340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GraphPad</td>
+      <td>Prism</td>
+      <td></td>
+      <td>For statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of caspase-8 conditional knockout mice (Casp8 cKO)
 
 Epidermis-specific knockouts were obtained by crossing mice carrying the floxed caspase-8 allele (Casp8 fl/fl) (Beisner et al., 2005) to Krt14-Cre mice (Vasioukhin et al., 1999). IL1R–/– mice were purchased from Jackson Laboratory. γδTCR–/– mice have been described previously (Jameson et al., 2002). All animals were on a C57BL/6 background. Animal work carried out at UCSD was approved and adhered to the guidelines of the Institutional Animal Care and Use Committee. Animal work conducted in the NCBS/inStem Animal Care and Resource Center was approved by the inStem Institutional Animal Ethics Committee following norms specified by the Committee for the Purpose of Control and Supervision of Experiments on Animals, Government of India.
 
-## Histology, immunohistochemistry and quantification
+### Histology, immunohistochemistry and quantification
 
 Mouse skin samples were processed and immunohistochemistry was performed as described previously (Du et al., 2010; Lee et al., 2009). Ki67 quantification was performed as described previously (Arwert et al., 2010).At least 12 frames per sample from four mice per genotype were used in counts.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Epidermis and dermis from WT (n = 6), caspase-8 cKO (n = 9), caspase-8/IL1R dKO (n = 7) and caspase-8/γδT dKO (n = 5) P4 mice were separated with dispase treatment for 1 hr at 37°C and RNA was isolated using Trizol reagent (Invitrogen) according to manufacturer’s instructions. cDNA was synthesized by reverse transcription using the iScript kit (Biorad), and real-time quantitative PCR analysis was performed using the Ssofast EvaGreen mix in a Biorad CFX96 system with the primers listed in the supplemental section. Experiments were carried out in triplicate with cDNA isolated from five different animals. Data are presented as the fold difference ± SEM.
 
-## Wound-closure kinetics
+### Wound-closure kinetics
 
 8-week-old male IL1R–/– and WT control (C57Bl/6) mice were anesthesized by intraperitoneal injections with pentobarbital at 50 mg/kg. 5 mm punch biopsies were used to make full-thickness excisional wounds. Each day, images of the wounds were taken and analyzed using ImageJ software to measure wound area.
 
-## In vivo labeling of proliferating cells with EdU
+### In vivo labeling of proliferating cells with EdU
 
 Postnatal day 6 (P6) mice were injected intraperitoneally with 50 µg/body weight EdU (5-ethynyl-2´-deoxyuridine, Invitrogen) dissolved in sterile PBS. Skins were collected 4 hr afterwards, embedded and frozen in OCT. 10 µm thick sections were fixed in 4% paraformaldehyde for 10 min, blocked in donkey serum for 1 hr and stained overnight with primary antibodies, followed by 30 min incubation with secondary antibodies. Proliferating HFSCs are recognized by co-staining CD34 and Ki67. However, CD34 is not expressed in skin at P6. Therefore, the location of HFSCs in the bulge region in P6 skin is marked by smooth muscle actin (SMA)-positive arrector pilli muscle, which joins the hair follicle at the bulge region where HFSCs reside (Poblet et al., 2002). γδT-cells were detected with anti-γδTCR (GL3, BD Biosciences).
 
-## γδT-cell proliferation assays
+### γδT-cell proliferation assays
 
 Short-term cultures of WT and IL1R–/– γδT-cells were established and 30,000 cells were plated in 96-well plates coated with 0.1 μg/ml anti-CD3 and 10 μg/ml anti-JAML (eBioscience, clone eBio4E10) as described previously (Witherden et al., 2010). Cells were treated with conditioned media from WT and caspase 8 cKO keratinocytes collected in RPMI medium. γδT-cells were treated with KO CM or KO CM with 4 μg/ml anti-IL-7 inhibitory antibody (R&D Systems) or IL1R–/– γδT-cells were treated with KO CM. γδT-cells were incubated with WT CM, WT CM treated with 300 pg/ml rhIL-1α, or media supplemented with rhIL-1α and 2 ng/ml rhIL-7. Cell numbers were assessed by cell counting using trypan blue exclusion.
 
-## Epidermal stem-cell proliferation assays
+### Epidermal stem-cell proliferation assays
 
 Unipotent interfollicular epidermal (IFE) stem cells were isolated as described previously Lee et al., 2009. Hair follicle stem cells were generated by DrsEve Kandyba and Krzysztof Kobielak at USC and prepared as described previously (Blanpain et al., 2004). Dermal fibroblasts were isolated from 6-week-old C57bl/6 WT and IL1R–/– mice. The hairs were removed by shaving and treatment with a hair removal agent (Nair, Church and Dwight Co., Princeton, NJ, USA). Epidermis and dermis were separated after overnight incubation with trypsin solution at 4°C. Dermal portions were then incubated in collagenase IV for 1 hr at 37°C with shaking, and collagenase was neutralized with 2 mM EDTA. Cell suspensions were filtered through a 70 µm cell strainer and pelleted by centrifugation at 400 x g for 10 min at 25°C. The cells were then plated in DMEM with 10% FBS, 1% penicillin/streptomycin and 2 mM L-glutamine. WT and IL1R–/– dermal fibroblasts were treated with WT and caspase 8 KO CM in the presence of rhIL-7, rhIL-1α or anti-IL-7 inhibitory antibody for 24 hr. 5000 IFE and HF stem cells were plated in 48-well plates and incubated with CM from treated dermal fibroblasts for 4 days. Cell counts were assessed by trypan blue exclusion.
 
-## Activated γδT-cell assay in vivo
+### Activated γδT-cell assay in vivo
 
 P4 WT, caspase 8 cKO and caspase 8/IL1R dKO mice were injected with 0.2 mg of Brefeldin A (BFA, Sigma-Aldrich, St. Louis, MO, USA) subcutaneously and samples collected after 5 hr. Skins were frozen with OCT compound (Tissue-Tek) and 10 μm sections were made. Tissues were fixed for 10 min in 4% PFA, blocked (in 2.5% goat serum, 2.5% donkey serum, 1% BSA, and 0.3% triton-X in PBS) and incubated for 1 hr at 25°C with antibodies against γδTCR-FITC (GL3, BD Biosciences) and TNFα-PE (eBiosciences, San Diego, CA). Images were obtained as described previously (Du et al., 2010).
 
-## Oligos used for qPCR
+### Oligos used for qPCR
 
 TCRVγ3-F: GCAGCTGGAGCAAACTGAAT
 
@@ -156,11 +426,11 @@ IL7-F: TGGAATTCCTCCACTGATCC
 
 IL7-R: TGGTTCATTATTCGGGCAAT
 
-## ELISA
+### ELISA
 
 8-week-old WT (C57BL6) and IL1R−/− mice were used for wounding and conditioning of epidermal stem cell media lacking serum. 5 mm punch biopsies was used to make full-thickness excisional wounds. Wound samples were collected from an 8-mm biopsy surrounding the wound. 200 μl of epidermal stem cell media lacking serum was added to the wound samples and incubated at 37°C for 1 hr. The medium was replaced with another 200 μl of epidermal stem cell media lacking serum and incubated at 37°C for 16 hr, and this was used as conditioned media. Conditioned media was collected and stored at −80°C after snap-freezing in liquid N2. IL1α ELISA was performed using the mouse IL1-alpha ELISA kit (eBiosciences, San Diego, CA, USA) according to the manufacturer’s protocol. Conditioned media from wounds were diluted 1:5 and 1:15 to detect IL1α secretion. Absorbance was detected using the Infinite 200 Pro (Tecan, Männedorf, Switzerland) microplate reader. Total IL1α secretion was estimated by comparing the absorbance values of samples to the standard curve.
 
-## Statistical analysis
+### Statistical analysis
 
 All in vivo experiments were done on three mice per genotype and samples in in vitro assays were run in triplicate. Results were generated by average ± SEM from three independent experiments. For comparison of means between two groups, Student t test was performed. For multigroup comparisons, ANOVA test with a Bonferroni’s multiple comparison correction was used. All p-values < 0.05 were considered significant.
 

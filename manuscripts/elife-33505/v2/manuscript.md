@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.33505.001 The adipokine leptin acts on the brain to regulate energy balance but specific functions in many brain areas remain poorly understood. Among these, the preoptic area (POA) is well known to regulate core body temperature by controlling brown fat thermogenesis, and we have previously shown that glutamatergic, long-form leptin receptor (Lepr)-expressing neurons in the POA are stimulated by warm ambient temperature and suppress energy expenditure and food intake. Here we further investigate the role of POA leptin signaling in body weight regulation and its relationship to body temperature regulation in mice. We show that POA Lepr signaling modulates energy expenditure in response to internal energy state, and thus contributes to body weight homeostasis. However, POA leptin signaling is not involved in ambient temperature-dependent metabolic adaptations. Our study reveals a novel cell population through which leptin regulates body weight.
+The adipokine leptin acts on the brain to regulate energy balance but specific functions in many brain areas remain poorly understood. Among these, the preoptic area (POA) is well known to regulate core body temperature by controlling brown fat thermogenesis, and we have previously shown that glutamatergic, long-form leptin receptor (Lepr)-expressing neurons in the POA are stimulated by warm ambient temperature and suppress energy expenditure and food intake. Here we further investigate the role of POA leptin signaling in body weight regulation and its relationship to body temperature regulation in mice. We show that POA Lepr signaling modulates energy expenditure in response to internal energy state, and thus contributes to body weight homeostasis. However, POA leptin signaling is not involved in ambient temperature-dependent metabolic adaptations. Our study reveals a novel cell population through which leptin regulates body weight.
 
 ## Introduction
 
@@ -43,33 +43,81 @@ In the current study, we investigated the role of POA leptin signaling by select
 
 ## Results
 
-## LeprPOA neurons respond heterogeneously to leptin
+### LeprPOA neurons respond heterogeneously to leptin
 
 First, we directly measured the effect of leptin on membrane potential of LeprPOA neurons using whole-cell patch clamp recordings in LeprEGFP reporter mice. In the absence of synaptic transmission blockers, a puff application of leptin depolarized most LeprPOA neurons (56%), while less neurons were hyperpolarized (22%) or did not change the membrane potential (22%)(Figure 1A,C). We obtained a similar result using a bath application of leptin (Figure 1—figure supplement 1). Leptin treatment in the presence of synaptic transmission blockers (1 μM TTX +30 μM AP5 +30 μM CNQX +50 μM bicuculline) reduced the portion of depolarized neurons by 20%, indicating possible inputs from presynaptic Lepr neurons onto LeprPOA neurons (Figure 1B,D). The percentage of hyperpolarized neurons remained unaffected. These results show that LeprPOA neurons represent a heterogeneous population that responds differentially to leptin.
 
-## POA leptin signaling transiently suppresses food intake
+![Figure 1.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Representative whole-cell current clamp recordings of LeprPOA neurons showing three different responses to puff application of leptin in the absence (A) and the presence (B) of synaptic transmission blockers. (C–D) Membrane potential changes of individual LeprPOA neurons in response to puff application of leptin in the absence (C, n = 23) and the presence (D, n = 25) of synaptic transmission blockers and the pie charts showing percetages of depolarization, hyperpolarization, and no change.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Membrane potential changes of individual LeprPOA neurons in response to bath application of leptin in the absence of synaptic transmission blockers and the pie chart showing percentages of depolarization, hyperpolarization, and no change (n = 12).
+
+### POA leptin signaling transiently suppresses food intake
 
 We tested next how stimulating POA Lepr affects food intake or energy expenditure. To this end, we chronically implanted a guide cannula in the POA to enable local delivery of leptin (Figure 2A, Figure 2—figure supplement 1A). First, we tested the effect of intra-POA leptin (0.05 or 0.5 pg) (Ishihara et al., 2004; O'Doherty and Nguyen, 2004; Page-Wilson et al., 2013) on normal dark cycle feeding (injections done 1 hr before the dark cycle) and measured food intake overnight (Figure 2B). Leptin significantly suppressed food intake in a dose-dependent manner during the first 3 hr after injection (Figure 2C). However, this leptin effect was transient and did not significantly affect total overnight food intake (Figure 2D–E). We confirmed that this leptin effect was not due to the leptin leakage to other areas, especially the arcuate nucleus of the hypothalamus (ARC), by staining for the phosphorylation of signal-transducer-and-activator-of-transcription-3 (pSTAT3), a marker for functional Lepr signaling (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram showing the implantation of a chronic cannula in the POA of LeprEGFP mice and a representative histological image showing the placement of the cannula. (B) Experimental scheme of testing POA leptin effect on food intake with BioDAQ. (C) Leptin injection into the POA suppressed dark-onset food intake for the first 3 hr after the injection (n = 8). There was a significant treatment effect during this period (repeated measures ANOVA, p=0.001). (D) POA leptin effect on food intake lasted only for the first 3 hr after the injection (n = 8). Bars with different letters denote statistical significance at p<0.05 (repeated measures ANOVA, p=0.017). (E) Overnight food intake was similar between treatments (n = 8; repeated measures ANOVA, p=0.374). 3V, third ventricle; ac, anterior commissure; MnPO, median preoptic nucleus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Injection sites for all mice used for the intra-POA leptin injection study. Injection sites were determined retrospectively by histological analysis (group 1, n = 8; group 2, n = 10). (B) pSTAT3 (black dots) comparisons between injection conditions for the POA and the ARC. Positive pSTAT3 staining around the cannula track is due to activation of inflammatory pathways. 3V, third ventricle; ac, anterior commissure; ARC, arcuate hypothalamic nucleus; AVPV, anteroventral periventricular nucleus; DMH, dorsomedial hypothalamic nucleus; HDB, nucleus of the horizontal limb of the diagonal band; MnPO, median preoptic nucleus; VMH, ventromedial hypothalamic nucleus. Scale bar = 200 μm.
 
 In the same mice, we investigated the role of POA leptin signaling (0.5 pg) during temperature-dependent metabolic adaptations using indirect calorimetry. Energy expenditure was compared between treatments at three different ambient temperatures (22, 30, and 10°C) during the light phase. While acute cold and warm exposure caused expected increases and decreases in energy expenditure, respectively, intra-POA leptin did not affect energy expenditure at any temperature condition tested (Figure 3A–D). Similarly, food intake increased during 6 hr of cold exposure and decreased during 6 hr of warm exposure but intra-POA leptin injection had no significant effect on temperature-dependent food intake adjustment (Figure 3E). These data collectively indicate that POA leptin signaling suppresses dark-onset food intake but is not involved in acute metabolic adaptations to ambient temperature changes.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig3-v2.jpg)
 
-**Figure 3.:** (A–C) 24 hr energy expenditure from PBS and leptin injections (5 ng/ml, total 0.5 pg) are overlaid for RT (22°C), warm (30°C), and cold (10°C) (n = 8 each). Temperature was changed for 6 hr from 9 am to three pm. (D) 6 hr mean energy expenditure was compared between treatment conditions (paired t-test between PBS and leptin at each temperature). (E) Total food intake during the same 6 hr as in (D).10.7554/eLife.33505.009Figure 3—source data 1.Figure 3A,B,C and D; and food intake data used to generate Figure 3E.
+**Figure 3.:** (A–C) 24 hr energy expenditure from PBS and leptin injections (5 ng/ml, total 0.5 pg) are overlaid for RT (22°C), warm (30°C), and cold (10°C) (n = 8 each). Temperature was changed for 6 hr from 9 am to three pm. (D) 6 hr mean energy expenditure was compared between treatment conditions (paired t-test between PBS and leptin at each temperature). (E) Total food intake during the same 6 hr as in (D).
 
-## POA leptin signaling is necessary for fasting-induced metabolic adaptations
+### POA leptin signaling is necessary for fasting-induced metabolic adaptations
 
 We then studied cell autonomous leptin function in LeprPOA neurons by selective knockdown of Lepr in the POA (LeprPOA KD). We injected Cre-expressing adeno-associated virus (AAV-GFP:Cre) or green fluorescent protein-expressing control AAV (AAV-GFP) in the POA of Leprflox/flox mice (Figure 4A)(McMinn et al., 2004). Retrospective histological analysis of pSTAT3 revealed that we obtained about 80% Lepr KD in the POA (Figure 4B, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig4-v2.jpg)
+
+**Figure 4.:** (A) A schematic diagram showing bilateral viral injection into the POA of Leprflox/flox mice. (B) AAV-GFP:Cre injection resulted in about 80% reduction of pSTAT3+ cell numbers in the POA (n = 6 for AAV-GFP, n = 9 for AAV-GFP:Cre; independent t-test, p<0.001). (C–E) Body weight, food intake, and energy expenditure were similar between groups throughout the study (repeated measures ANOVA followed by Bonferroni pairwise comparisons, p>0.05). (F) Energy expenditure comparison between ad lib fed (n = 10), fasted +saline (n = 5), fasted +leptin (n = 5; 5 mg/kg, i.p.), and 2-week-long HFD feeding (n = 5). Leptin injection attenuated fasting-induced hypometabolism while HFD increased the metabolic rate. Bars with different letters denote statistical significance at p<0.05 (one-way ANOVA followed by Bonferroni pairwise comparisons). (G) In LeprPOA KD mice, fasting did not decrease energy expenditure, thus leptin failed to attenuate fasting-induced hypometabolism (repeated measures ANOVA followed by Bonferroni pairwise comparisons, *p<0.05, **p<0.01).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative histological images showing virus spread (GFP) and pSTAT3 (black dots) in the POA between AAV-GFP and AAV-GFP:Cre injections. Note relative absence of pSTAT3 in areas of high AAV-GFP:Cre expression (i.e. left side vs right side along the 3V) while AAV-GFP expression did not affect pSTAT3. Dotted box areas are enlarged at upper right corners in each column. (B) Virus spread of all 9 LeprPOA KD mice used in the chow diet experiment. 3V, third ventricle; AVPV, anteroventral periventricular nucleus; MnPO, median preoptic area; VOLT, vascular organ of the lamina terminalis. Scale bar = 200 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–F) Body weight, food intake, and energy expenditure did not show sex-specific differences between mice injected with AAV-GFP and AAV-GFP:Cre in the POA (repeated measures ANOVA followed by Bonferroni pairwise comparisons).
 
 Mice were fed regular chow diet (13.5 kcal% fat) and body weight and food intake were measured weekly for 3 weeks before viral injection and 10 weeks post-injection. Throughout the study, body weight and food intake did not differ between groups (Figure 4C,D). Energy expenditure was measured once before and three times after the viral injection but did not show any group difference at any stage (Figure 4E). Temperature-dependent changes in energy expenditure and food intake at cold (10°C) or warm (30°C) ambient temperature were also unaffected by POA Lepr KD, similar to POA Lepr stimulation (data not shown). We also did not see sex differences in any measurement (Figure 4—figure supplement 2A–F). Together, the results suggest that POA Lepr is not required for body weight homeostasis or ambient temperature-dependent metabolic adaptations.
 
 However, based on leptin’s well-known ability to inhibit fasting-induced hypometabolism in mice (Figure 4F)(Döring et al., 1998; Geiser et al., 1998) and weight-reduced humans (Rosenbaum and Leibel, 2010), we further tested whether POA Lepr is involved in exogenous leptin effects on energy expenditure during a state of negative energy balance. Leptin was unable to prevent fasting-induced hypometabolism in LeprPOA KD mice contrary to control mice. This was primarily due to a failure to properly lower energy expenditure in response to a negative energy state during fasting (Figure 4G). As a result, there was no leptin-induced recovery of energy expenditure in LeprPOA KD mice.
 
-## POA leptin signaling is involved in body weight regulation under high fat diet
+### POA leptin signaling is involved in body weight regulation under high fat diet
 
 The above data suggested that POA Lepr may be important for adjusting metabolic rate in response to internal energy state. To test this possibility, we used HFD because this diet results in a positive energy balance that leads to body weight gain despite increased energy expenditure, the opposite outcome of fasting (Figure 4F). In a new cohort of mice, we repeated the same experiment but the diet was switched from chow to HFD (58 kcal% fat) following viral injections. At the end of this study, we verified about 50% Lepr KD based on pSTAT3 immunohistochemical analysis (Figure 5—figure supplement 1).
 
 Mice injected with AAV-GFP:Cre in the POA gained about twice as much weight as mice injected with AAV-GFP by 15 weeks after viral injection (Figure 5A). This increase in body weight was mainly due to increased fat mass, as shown by a trend for increased adiposity (Figure 5B, Figure 5—figure supplement 2A,B). The level of pSTAT3 in the POA varied significantly in mice injected with AAV-GFP:Cre due to inherent variability of viral injections, which may explain the large standard errors for this group in Figure 5A–B. Thus, we correlated the body weight change at week 15 and the adiposity index at week 13 to POA pSTAT3+ cell numbers across all mice, and both parameters showed significant negative correlation with POA pSTAT3+ cell numbers (Figure 5C,D). These analyses imply that POA Lepr signaling is important for body weight control under HFD conditions. The increase in body fat and weight was not due to increased food consumption because mice from both groups ate the same amount of food throughout the study (Figure 5E, Figure 5—figure supplement 2C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig5-v2.jpg)
+
+**Figure 5.:** (A) LeprPOA KD mice gained greater body weight than control mice over 15 weeks on HFD (repeated measures ANOVA followed by Bonferroni pairwise comparisons, *p<0.05, **p<0.01). (B) There was a trend of higher adiposity index (fat mass/lean mass) in LeprPOA KO mice (the effect of virus type on adiposity index was tested by repeated measures ANOVA, p=0.141). (C–D) Body weigh change at week 15 and adiposity index at week 13 are negatively correlated with POA pSTAT3+ cell numbers (Pearson correlation). (E) Cumulative food intake during the entire study was similar between groups (repeated measures ANOVA followed by Bonferroni pairwise comparisons). (F) Energy expenditure is compared between time points within each group. Bars with different letters denote statistical significance at p<0.05 (repeated measures ANOVA followed by Bonferroni pairwise comparisons). (G) Cumulative energy efficiency (body weight gain/food intake) showed a significant interaction between week and virus type (F(11,319) = 2.518, p<0.01, repeated measures ANOVA followed by Bonferroni pairwise comparisons, *p<0.05). (H) Total plasma T3 levels were not significantly different between groups (independent t-test, p=0.267). (I) Total plasma T3 levels showed a significant positive correlation with POA pSTAT3+ cell numbers (Pearson correlation).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative histological images showing virus spread (GFP) and pSTAT3 in the POA for mice used in the HFD study. AAV-GFP:Cre injection resulted in about 50% reduction of pSTAT3+ cell numbers in the POA (independent t-test, **p<0.01). (B) Viral spread of all 16 LeprPOA KD mice used in the HFD experiment. Scale bar = 200 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) LeprPOA KD mice showed a trend of higher % fat mass and lower % lean mass than control mice (repeated measures ANOVA followed by Bonferroni pairwise comparisons, p>0.05). (C) 24 hr food intake at week 10 showed no correlation with POA pSTAT3+ cell numbers (Pearson correlation, p=0.865). (D) Energy expenditure compared between groups at three different time points showed no significant differences (repeated measures ANOVA followed by Bonferroni pairwise comparisons, p>0.05). (E) Energy expenditure change from week −3 to week 10 showed bigger reduction in LeprPOA KD mice (independent t-test, p=0.137). (F) Baseline energy expenditure (24 hr average at RT) at week 10 showed no significant correlation with POA pSTAT3+ cell numbers (Pearson correlation, p=0.251). (G) Cumulative energy efficiency at week 15 was negatively correlated with POA pSTAT3+ cell numbers (Pearson correlation). (H) Expression of BAT-related genes, Ucp1, Ppargc1a, and Dio2 were not significantly different between groups (independent t-test for each gene; Ucp1, p=0.31; Ppargc1a, p=0.31, Dio2, p=0.45). (I) The total number of estrous cycles during 19 days was similar between groups (independent t-test, p=0.297).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Analyses of BAT morphology, lipid area (independent t-test, p=0.21), and UCP1 expression (brown). Scale bar = 50 μm. (B) The intra-POA leptin injection (5 ng/ml, total 0.5 pg, three times) in fasted mice did not significantly increase the total plasma T3 level (n = 5 for each treatment; independent t-test, p=0.37).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/33505/elife-33505-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Representative image of viral EGFPf expression in the POA in LeprCre mouse that had been injected with Ad-iZ/EGFPf in the POA. (B) Fibers of EGFPf-expressing LeprPOA neurons in the PVH and their proximity to TRH neuron cell bodies. Dotted boxes are magnified in B’, b1 and b2. (C) Representative image of viral WGAGFP expression in the POA in LeprCre mouse that had been injected with Ad-iN/WED in the POA. (D) PVH neurons that express WGAGFP are shown. In the middle panel, one WGAGFP-expressing cell co-expresses TRH and is enlarged in d. 3V, third ventricle; AVPV, anteroventral periventricular nucleus; fx, fornix; MnPO, median preoptic nucleus; VOLT, vascular organ of the lamina terminalis.
 
 Energy expenditure, measured once before and twice after viral injection, showed no significant group difference at any time point (Figure 5—figure supplement 2D). However, there was a trending decrease of energy expenditure in LeprPOA KD mice from week −3 to week 10 (Figure 5F), which resulted in a bigger energy expenditure reduction from week −3 to week 10, compared to control mice (Figure 5—figure supplement 2E). Still, these comparisons were not statistically significant, and the baseline energy expenditure at week 10 and POA pSTAT3+ cell number did not show a significant correlation (Figure 5—figure supplement 2F). A main caveat of the cross-sectional measurement of energy expenditure is that it is prone to miss a very small difference over a long period of time. Therefore, we used a more longitudinal measure that can reflect changes in energy expenditure, that is an energy efficiency expressed as body weight gain divided by food intake, cumulated throughout the entire study (Figure 5G). Energy efficiency also showed a weak but significant negative correlation with POA pSTAT3+ cell number (Figure 5—figure supplement 2G), suggesting that LeprPOA KD mice spent less energy per unit food consumed.
 
@@ -93,15 +141,144 @@ Our study is the first to link POA leptin signaling to body weight control. HFD 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (M. Musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 000664; RRID: IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M. Musculus)</td>
+      <td>LeprEGFP</td>
+      <td>Dr. Martin G. Myers, Jr., University of Michigan; PMID: 17021368</td>
+      <td></td>
+      <td>Full nomenclature: LeprCre/Cre; Gt(ROSA)26Sortm2Sho/tm2Sho</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M. Musculus)</td>
+      <td>Leprflox/flox</td>
+      <td>Dr. Streamson C. Chua, Jr., Albert Einstein College of Medicine; PMID: 15389315</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Adeno-associated virus)</td>
+      <td>AAV-GFP (AAV5-hSyn-EYFP)</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>UNC: AV4836</td>
+      <td>Titer: 4.0 × 10Exp12 vg/ml</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Adeno-associated virus)</td>
+      <td>AAV-GFP:Cre (AAV5-hSyn-GFP:Cre)</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>UNC: AV6446</td>
+      <td>Titer: 5.1 × 10Exp12 vg/ml</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-pSTAT3 (Tyr705, rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling: 9131RRID: AB_331586</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam: ab13970; RRID: AB_300798</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TRH (rabbit polyclonal)</td>
+      <td>Dr. Eduardo A. Nillni, Brown University</td>
+      <td>EAN: pYE26</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-UCP1</td>
+      <td>Abcam</td>
+      <td>Abcam: ab209483 RRID: AB_2722676</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit IgG-biotin (donkey polyclonal)</td>
+      <td>ImmunoResearch Laboratories</td>
+      <td>IRL: 711-065-152; RRID: AB_2340593</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-chicken IgY-DyLight 488 (donkey polyclonal)</td>
+      <td>ImmunoResearch Laboratories</td>
+      <td>IRL: 703-486-155 discontinued</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit AlexaFluor 594 (donkey polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>TFS: A-21207; RRID: AB_141637</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>leptin (mouse recombinant)</td>
+      <td>National Hormone and Peptide Program</td>
+      <td></td>
+      <td>http://www.humc.edu/hormones</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Milliplex Map Kit (plasma T3)</td>
+      <td>Millipore Sigma</td>
+      <td>Millipore Sigma: RTHYMAG-30K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Vectastain ABC kit</td>
+      <td>Vector Laboratories</td>
+      <td>Vecotr Laboratories: PK-6100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>HFD (high fat diet for mouse)</td>
+      <td>Research Diets</td>
+      <td>Research Diets: D12331</td>
+      <td>58 kcal% fat</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All experiments were approved by the Institutional Animal Care and Use Committee at Pennington Biomedical Research Center, Baylor College of Medicine, and Tulane University. Mice were housed at 22–24°C with a 12:12 light:dark cycle. Laboratory rodent diet (5001, LabDiet) and water were available ad libitum unless otherwise stated. LeprEGFP and LeprCre mice were kindly provided by Dr. Martin G. Myers, Jr., University of Michigan (Leshan et al., 2010; Leshan et al., 2006) and Leprflox/flox mice by Dr. Streamson C. Chua, Jr., Albert Einstein College of Medicine (McMinn et al., 2004). C57BL/6J mice were obtained from the Jackson Laboratory (stock #000664).
 
-## Electrophysiology
+### Electrophysiology
 
 LeprEGFP mice were used for all neuronal activity recordings. Mice were deeply anesthetized with isoflurane and transcardially perfused with a modified ice-cold artificial cerebral spinal fluid (aCSF: 10 mM NaCl, 25 mM NaHCO3, 195 mM Sucrose, 5 mM Glucose, 2.5 mM KCl, 1.25 mM NaH2PO4, 2 mM Na-pyruvate, 0.5 mM CaCl2, 7 mM MgCl2) (Cao et al., 2014). The mice were then decapitated, and the entire brain was removed. Brains was quickly sectioned in ice-cold aCSF solution (126 mM NaCl, 2.5 mM KCl, 1.2 mM MgCl2, 2.4 mM CaCl2, 1 mM NaH2PO4, 5.0 mM Glucose, and 21.4 mM NaHCO3) saturated with 95% O2 and 5% CO2. Coronal sections containing the POA (250 µm) was cut with a Microm HM 650V vibratome (Thermo Scientific). Then the slices were recovered in the aCSF at 34°C for 1 hr. Whole-cell patch clamp recordings were performed in the GFP-labelled mature POA neurons visually identified by an upright microscope (Eclipse FN-1, Nikon) equipped with IR-DIC optics (Nikon 40x NIR). Signals were processed using Multiclamp 700B amplifier (Axon Instruments), sampled using Digidata 1440A and analyzed offline on a PC with pCLAMP 10.3 (Axon Instruments). The slices were bathed in oxygenated aCSF (32–34°C) at a flow rate of approximately 2 ml/min. Patch pipettes with resistances of 3–5 MΩ were filled with solution containing 126 mM K-gluconate, 10 mM NaCl, 10 mM EGTA, 1 mM MgCl2, 2 mM Na-ATP and 0.1 mM Mg-GTP (adjusted to pH7.3 with KOH). Current clamp was engaged to test neural firing frequency and resting membrane potential (RM) at the baseline and after puff application of leptin (300 nM, 1 s). In some experiments, the aCSF solution also contained 1 μM tetrodotoxin (TTX) and a cocktail of fast synaptic inhibitors, namely bicuculline (50 μM, a GABA receptor antagonist), DAP-5 (30 μM, an NMDA receptor antagonist) and CNQX (30 μM, an AMPA receptor antagonist) to block the majority of presynaptic inputs. The values for RM and firing frequency were averaged within 2 min bin at the baseline or after leptin puff. The RM values were calculated by Clampfit 10.3. A neuron was considered depolarized or hyperpolarized if a change in membrane potential was at least 2 mV in amplitude and this response was observed after leptin application and stayed stable for at least 1 min.
 
-## Viruses and stereotaxic surgeries
+### Viruses and stereotaxic surgeries
 
 Stereotaxic injection of AAV was performed as previously described (Rezai-Zadeh et al., 2014). Briefly, 12–14 week-old Leprflox/flox mice were placed on a stereotaxic alignment system (1900, David Kopf Instruments) and maintained anesthetized by 2% isoflurane during surgeries. For the selective deletion of Lepr in the POA, AAV5-hSyn-EYFP (AAV-GFP, 4.0 × 1012 vg/ml) or AAV5-hSyn-GFP:Cre (AAV-GFP:Cre, 5.1 × 1012 vg/ml) was injected into the POA (AP:+0.6 mm, ML:±0.4 mm, DV: −5.2 mm; 200 nl or 400 nl total at 20 nl/30 s) bilaterally using a bilateral guide cannula and injector set (C235G, Plastics One). Both viruses were obtained from the vector core of the University of North Carolina at Chapel Hill and injection coordinates were based on the Paxinos mouse brain atlas (Paxinos and Franklin, 2004).
 
@@ -109,7 +286,7 @@ Stereotaxic injection of Ad-iZ/EGFPf (Leshan et al., 2009; Leinninger et al., 20
 
 For chronic cannulation in the POA, unilateral guide cannulas (C315GA, Plastics One) were implanted (AP:+0.58 mm, ML:±0 mm, DV: −4.2 mm). The guide cannulas were secured to the skull with dental cement and inserted with dummy cannulas (C315DC, Plastics One) to prevent contamination or clogs. 3-month-old male LeprEGFP mice (n = 8) were used for group 1 and 3-month-old male C57BL/6J mice (n = 10) were used for group 2. Mice recovered for a week before being used for experiments.
 
-## POA leptin injection
+### POA leptin injection
 
 Eight male LeprEGFP mice (group 1) with intra-POA cannulas were acclimated to intra-POA injections for 4 days by injecting 100 nl saline (20 nl/20 s) once per day. The injection was carried out with a 1 μl Hamilton syringe (#80100, Hamilton Company) that was connected to an injector (C315IA, Plastics One) that project 1 mm from the tip of the guide cannula. Thus, the injection depth was 5.2 mm from the bregma. During the acclimation, body weight of the mice was monitored daily and we ensured stabilization of the body weight before using mice for experiments.
 
@@ -121,9 +298,9 @@ On the final experimental day of group one mice, 100 nl of 5 ng/ml leptin was in
 
 For group 2, mice were fasted for 24 hr from CT 3 hr and injected with 100 nl PBS (n = 5) or leptin (5 ng/ml; n = 5) in the POA. Injections were done three times during this period at CT 3, 11, and 3 hr next day, and brains and trunk blood were harvested 1.5 hr after the final injection.
 
-## Selective Lepr KD in the POA
+### Selective Lepr KD in the POA
 
-## Study with regular chow diet
+#### Study with regular chow diet
 
 About 3-month-old Leprflox/flox mice were injected with AAV-Cre:GFP (5 males and four females) or AAV-GFP (4 males and two females) in the POA as described above. Weekly body weight was measured from 3 weeks before viral injections to 10 weeks post-injections. Weekly food intake was measured from 2 weeks before viral injections to 8 weeks post-injections. Food intake was measured by weighing food in the food hopper at the beginning and the end of each week. Big crumbs of food pellets on the cage floor were added to hopper pellets for measuring remaining food at the end of a week. Food intake was not measured when mice were in Comprehensive Laboratory Animal Monitoring System (CLAMS; Columbus Instruments) for indirect calorimetry during week −3, week 3, week 5 and week 10 to measure energy expenditure, locomotor activity, and respiratory exchange ratio (RER). Mice were maintained on regular chow diet (13.5 kcal% fat, 5001, LabDiet) throughout the study.
 
@@ -131,7 +308,7 @@ During the week five calorimetry study, leptin’s effect on preventing fasting-
 
 At the end of the study, leptin (5 mg/kg, i.p) was injected 1 hr before tissue harvest for immunohistochemical analysis of leptin receptor signaling in the POA (Laque et al., 2015). We did not observe gender differences in any measurement, and thus presented combined data between males and females throughout the paper.
 
-## Study with high fat diet
+#### Study with high fat diet
 
 3-month-old Leprflox/flox mice were injected with AAV-Cre:GFP (6 males and 10 females) or AAV-GFP (6 males and nine females) in the POA. Food was switched from regular chow to high fat diet (58 kcal% fat, D12331, Research Diets) right after viral injections. Weekly body weight and food intake were measured from week −3 to week 15. Weekly food intake measurement was interrupted while mice were in TSE for indirect calorimetry at week −3, week 4 and week 10. Body composition was measured at week −3, week 1, week 4, week 7, week 10 and week 13 (Minispec LF110, Bruker). Adiposity index was calculated from fat mass divided by lean mass.
 
@@ -141,28 +318,28 @@ We checked the estrous cycle of female mice, starting at week 5 for 19 days by c
 
 On the day of tissue harvest, mice were fasted for 4 hr before leptin (5 mg/kg, i.p.) was injected 1 hr prior to tissue harvest. Brain, liver, BAT, inguinal WAT, gonadal WAT, calf muscle, and trunk blood were collected for each mouse except for one male that was found dead in week 14. Collected peripheral tissues were sliced into multiple pieces and instantly frozen with dry ice.
 
-## Effect of systemic leptin injection and HFD on energy expenditure
+### Effect of systemic leptin injection and HFD on energy expenditure
 
 Female C57BL/6J mice were used to test the effect of leptin during fasting or HFD on energy expenditure with CLAMS. For the fasting experiment, food was removed from the cage at CT 3.5 hr and leptin (5 mg/kg, i.p.; n = 5) or saline (n = 5) were injected at the same time. Average energy expenditure between the injection time and the end of the light cycle was compared between conditions (ad lib fed vs fasting +saline vs fasting +leptin). Energy expenditure after 2 weeks of HFD feeding was measured with female C57Bl/6J mice (n = 5).
 
-## Immunohistochemistry and histological analysis
+### Immunohistochemistry and histological analysis
 
 Brains were sliced at 30 μm thickness into four series with a sliding microtome. pSTAT3 was visualized by diaminobenzene (DAB; 34065, ThermoFisher Scientific) following treatment with Vectastain ABC kit (PK-6100, Vector Laboratories) after incubation with a biotinylated secondary antibody. BAT was formalin fixed, paraffin processed, and sectioned at 5 μm for staining with hematoxylin and eosin (H and E) or with UCP1. UCP1 staining was visualized by DAB using Bond Polymer Refine Detection kit (DS9800, Leica). Stained slides were scanned using a NanoZoomer slide scanner (Hamamatsu) and lipid droplet area was computed on H and E images using a custom app within Visiopharm version 2017.7 (Visiopharm). Primary antibodies used in this study are rabbit anti-pSTAT3 (Tyr705, 9131, Cell Signaling; 1:500) and chicken anti-GFP (ab13970, Abcam; 1:1000), rabbit anti-TRH (Dr. Eduardo A Nillni, Brown University; 1:1000), and rabbit anti-UCP1 (ab209483, Abcam, 1:4000). Secondary antibodies are donkey anti-rabbit IgG-biotin (711-065-152, Jackson ImmunoResearch Laboratories; 1:1000) and donkey anti-chicken IgY-DyLight 488 (703-486-155, Jackson ImmunoResearch Laboratories; 1:200), and donkey anti-rabbit Alexa Fluor 594 (A-21207, ThermoFisher Scientific; 1:200).
 
-## Gene expression analysis
+### Gene expression analysis
 
 BAT RNA from the POA Lepr ablation study with HFD was purified with TRIzol Reagent (15596, ThermoFisher Scientific) and cDNA was synthesized with SuperScript VILO cDNA synthesis kit (11754050, ThermoFisher Scientific). The amount of transcripts for Ucp1, Ppcargc1a, and Dio2 were measured using Taqman assays (ThermoFisher Scientific) by real-time PCR (7900HT, ThermoFisher Scientific), and Gapdh was used as a reference gene for relative quantification.
 
-## Total plasma T3 measurement
+### Total plasma T3 measurement
 
 Collected trunk blood from the POA Lepr ablation study was immediately mixed with 80 μl of 0.5 M EDTA and then with 15 μl of a protease inhibitor mixture (5 μl of protease inhibitor cocktail (p8340, Millipore Sigma)+5 μl of DPP IV inhibitor (DPP4, Millipore Sigma)+5 μl of 0.5 mg/ml Pefabloc (11429868001, Millipore Sigma)). Blood was centrifuged at 4°C for 10 min at 3000 rpm and then the upper plasma layer was collected and stored at −80°C. The total plasma T3 level was measured with Milliplex Map Kit (RTHYMAG-30K, Millipore Sigma).
 
 Plasma of group two mice (n = 10) from the intra-POA leptin study was similarly prepared and the total T3 was measured the same way.
 
-## POA pSTAT3+ cell counting
+### POA pSTAT3+ cell counting
 
 To determine the level of Lepr signaling in the POA of Leprflox/flox mice injected with AAV-GFP or AAV-GFP:Cre, the total number of POA pSTAT3+ cells were counted. For each mouse, we pre-selected brain sections that contain rostral, medial, or caudal parts of the median preoptic areas that together encompass bregma 0.62–0.26 mm based on the Paxinos mouse brain atlas (Paxinos and Franklin, 2004). For distribution of Lepr neurons in the POA, refer to our previous study (Yu et al., 2016). pSTAT3+ cells were counted by the count tool in Adobe Photoshop CS6 (Adobe Systems). Please note that pSTAT3+ cell numbers are only estimates because the POA areas used for cell counting are slightly different between mice in spite of our best effort to minimize the variability. The estimated pSTAT3+ cell numbers in the POA were correlated to various measurements (e.g. body weight).
 
-## Statistical analysis
+### Statistical analysis
 
 Data are represented as mean ± SEM. All statistical analyses were done with SPSS 22/24 (IBM) and p<0.05 was considered statistically significant. In all graphs, *p<0.05, **p<0.01, and ***p<0.001. Some bar graphs used letters to indicate statistical significance between comparisons. For more detailed information, see results and figure legends.

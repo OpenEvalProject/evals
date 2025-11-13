@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/009eqmr18 Laboratory of Neurobiology and Appetite, Department of Pharmacology, CINVESTAV Mexico City Mexico
+1. Laboratory of Neurobiology and Appetite, Department of Pharmacology, CINVESTAV Mexico City Mexico ([ROR:009eqmr18](https://ror.org/009eqmr18))
 
 † Corresponding author
 

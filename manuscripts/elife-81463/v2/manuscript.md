@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05tkyf982 Department of Physiology and Cell Biology, Faculty of Health Sciences, Ben-Gurion University of the Negev Beer Sheva Israel
-2. https://ror.org/04gyf1771 Departments of Pediatrics and Physiology and Biophysics, University of California, Irvine Irvine United States
-3. https://ror.org/04t5xt781 Department of Pharmaceutical Sciences, Northeastern University Boston United States
+1. Department of Physiology and Cell Biology, Faculty of Health Sciences, Ben-Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))
+2. Departments of Pediatrics and Physiology and Biophysics, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+3. Department of Pharmaceutical Sciences, Northeastern University Boston United States ([ROR:04t5xt781](https://ror.org/04t5xt781))
 
 † Corresponding author
 
 ## Abstract
 
-Voltage-gated sodium channels located in axon initial segments (AIS) trigger action potentials (AP) and play pivotal roles in the excitability of cortical pyramidal neurons. The differential electrophysiological properties and distributions of Na V 1.2 and Na V 1.6 channels lead to distinct contributions to AP initiation and propagation. While Na V 1.6 at the distal AIS promotes AP initiation and forward propagation, Na V 1.2 at the proximal AIS promotes the backpropagation of APs to the soma. Here, we show the small ubiquitin-like modifier (SUMO) pathway modulates Na + channels at the AIS to increase neuronal gain and the speed of backpropagation. Since SUMO does not affect Na V 1.6, these effects were attributed to SUMOylation of Na V 1.2. Moreover, SUMO effects were absent in a mouse engineered to express Na V 1.2-Lys38Gln channels that lack the site for SUMO linkage. Thus, SUMOylation of Na V 1.2 exclusively controls I NaP generation and AP backpropagation, thereby playing a prominent role in synaptic integration and plasticity.
+Voltage-gated sodium channels located in axon initial segments (AIS) trigger action potentials (AP) and play pivotal roles in the excitability of cortical pyramidal neurons. The differential electrophysiological properties and distributions of NaV1.2 and NaV1.6 channels lead to distinct contributions to AP initiation and propagation. While NaV1.6 at the distal AIS promotes AP initiation and forward propagation, NaV1.2 at the proximal AIS promotes the backpropagation of APs to the soma. Here, we show the small ubiquitin-like modifier (SUMO) pathway modulates Na+ channels at the AIS to increase neuronal gain and the speed of backpropagation. Since SUMO does not affect NaV1.6, these effects were attributed to SUMOylation of NaV1.2. Moreover, SUMO effects were absent in a mouse engineered to express NaV1.2-Lys38Gln channels that lack the site for SUMO linkage. Thus, SUMOylation of NaV1.2 exclusively controls INaP generation and AP backpropagation, thereby playing a prominent role in synaptic integration and plasticity.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Here, we tested the hypothesis that SUMOylation regulates the excitability of co
 
 ## Results
 
-## SUMO1 increases the excitability of layer 5 cortical neurons
+### SUMO1 increases the excitability of layer 5 cortical neurons
 
 Previously, we showed that the effects of SUMOylation and deSUMOylation of neuronal ion channels underlying IDR, IKso, and INa could be assessed by including purified SUMO1 or SENP1 polypeptides, respectively, in the recording pipette solution (Plant et al., 2011; Plant et al., 2012; Plant et al., 2016). To characterize the effects of the SUMO pathway on the excitability of layer 5 cortical pyramidal neurons, we made whole-cell, current-clamp recordings from these cells using pipettes filled with a solution containing SUMO1 or SENP1 polypeptides at 1000 and 250 pmol/l, respectively. We have previously shown that polypeptides at these concentrations produce maximal effects on KV, K2P, and NaV channels in cultured rat hippocampal neurons, cerebellar granule neurons, human ventricular cardiomyocytes derived from iPS cells, and on channels expressed in heterologous cell systems (Plant et al., 2010; Plant et al., 2011; Plant et al., 2012; Plant et al., 2016; Plant et al., 2020).
 
@@ -56,29 +56,124 @@ The effect of SUMO1 and SENP1 on repetitive firing may reflect the action of the
 
 To test our hypothesis that SUMOylation of NaV1.2 channels can regulate the excitability of L5 cortical neurons, we used CRISPR/Cas9 to engineer a mouse model carrying NaV1.2-Lys38Gln, a mutation that removes the only SUMO-conjugation site in NaV1.2 channels (Plant et al., 2016). The genotype of the mice was verified by PCR screening and sequencing analysis (Figure 3—figure supplement 1). Comparison of passive and active electrophysiological characteristics of WT and NaV1.2-Lys38Gln mutant layer 5 pyramidal neurons revealed no significant difference (Table 1), indicating that the functional consequences of the mutation are largely compensated. Using whole-cell current-clamp recordings from L5 neurons from the NaV1.2-Lys38Gln mutant mice, we first sought to find out whether SUMO1 and SENP1 dialysis affect the F-I relationship (Figure 3a). As in WT neurons, SUMO1 dialysis enhanced the frequency of repetitive firing for a given amplitude of the current pulse, whereas the SENP1 dialysis had the opposite effect. Thus, the mean instantaneous firing frequency in response to a 0.3 nA current injection increased from 18.7 ± 2.6 Hz immediately after the break-in to 24.0 ± 2.4 Hz (n = 6, p=0.013, paired t-test) after 35 min of SUMO1 dialysis. In contrast, the mean instantaneous firing frequency decreased from 13.1 ± 1.9 Hz immediately after the break-in to 2.9 ± 1.7 Hz (n = 7, p=0.0005, paired t-test) after 35 min of SENP1 dialysis.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig3-v2.jpg)
+
+**Figure 3.:** (a) Current-clamp, whole-cell recordings from L5 Nav1.2-Lys38Gln mutant neurons immediately after the break-in (black) and following SUMO1 (blue) or SENP1 (green) dialysis. Voltage responses were elicited by injecting 400-ms-long current pulses, which started at –0.15 nA and incremented by 50 pA. (b) The F-I characteristic of Nav1.2-Lys38Gln mutant neurons obtained immediately after the break-in (black open circles) and following SUMO1 (n = 6, blue) or SENP1 (n = 7, green) dialysis via the whole-cell pipette. Notice the opposite effects of SUMO1 and SENP1 on the position of the F-I curve over the current axis. Both treatments had little to no effect on the slope of the F-I curve. (c) The Rin increased over time in SUMO1 dialyzed Nav1.2-Lys38Gln mutant neurons, whereas it decreased in SENP1 dialyzed cells. The lines connect the paired Rin values obtained from the same individual neuron at 2 min and 35 min of recording with SUMO1 (blue), SENP1 (green). (c) Apparent input resistance (Rin) increases in SUMO1 dialyzed neurons, whereas it decreases in SENP1 dialyzed cells. The lines connect the paired Rin values obtained from the same individual neuron at 2 min and 35 min of recording with SUMO1 (blue) and SENP1 (green) containing solution. Box plots represent the 25–75% interquartile range of values obtained from neurons dialyzed with SUMO1 (n = 6) and SENP1 (n = 7) solution; the whiskers expand to the 5–95% range. A horizontal line inside the box represents the median of the distribution, and the mean is represented by a cross symbol (X). p-Values were calculated using Student’s t-test for paired data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) PCR screening. Results of eight pups are shown (lanes 1–8). The CRISP-targeted Scn2a locus was amplified from genomic DNA isolated from mouse tails using two gene-specific primers (Scn2a-F: 5’-CCGCCAGGACCTGACAGCTTC-3’;Scn2a-R: 5’-CATGCCCCCTTGCAGGATGCC-3’). The PCR products were separated by gel electrophoresis on a 2% agarose gel. The expected amplicon size is 457 bp for all wide type, heterozygous, and homozygous samples. No band was observed in the non-template control (lane 9). (b) Representative sequencing of PCR amplicon of the wide-type sample. Lys38, encoded by the AAA codon, was shown in the wild-type allele. (c) Representative sequencing of PCR amplicon of the heterozygous sample. Double peaks of A and C nucleotides evidenced the integration of the Lys38Gln mutation in the genome (codon AAA = lysine → CAA = glutamine). (d) Representative sequencing of PCR amplicon of the homozygous sample. Glutamine, encoded by the CAA codon, confirmed the replacement of Lys38 in the genome.
+
+**Table 1.**
+ Comparison of electrophysiological characteristics of WT and NaV1.2-Lys38Gln mutant layer 5 pyramidal neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Wild type</th>
+      <th>NaV1.2-Lys38Gln mutant</th>
+      <th>Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input resistance (MΩ)</td>
+      <td>127.4 ± 11.5(n = 28)</td>
+      <td>134.9 ± 13.6(n = 13)</td>
+      <td>NS, p=0.701</td>
+    </tr>
+    <tr>
+      <td>Membrane time constant, τm (ms)</td>
+      <td>20.4 ± 1.3(n = 30)</td>
+      <td>24.0 ± 2.3(n = 13)</td>
+      <td>NS, p=0.149</td>
+    </tr>
+    <tr>
+      <td>Voltage threshold (mV)*</td>
+      <td>–57.4 ± 1.4(n = 17)</td>
+      <td>–57.5 ± 0.6(n = 13)</td>
+      <td>NS, p=0.956</td>
+    </tr>
+    <tr>
+      <td>Current threshold (pA)†</td>
+      <td>448 ± 30(n = 18)</td>
+      <td>514 ± 32(n = 12)</td>
+      <td>NS, p=0.151</td>
+    </tr>
+    <tr>
+      <td>AP peak (mV)</td>
+      <td>+36.5 ± 1.4(n = 17)</td>
+      <td>+37.1 ± 1.3(n = 13)</td>
+      <td>NS, p=0.729</td>
+    </tr>
+    <tr>
+      <td>AP dV/dtmax (V/s)</td>
+      <td>268 ± 25(n = 17)</td>
+      <td>271 ± 20(n = 13)</td>
+      <td>NS, p=0.937</td>
+    </tr>
+    <tr>
+      <td>AP half-width (ms)</td>
+      <td>1.19 ± 0.13(n = 17)</td>
+      <td>1.06 ± 0.10(n = 12)</td>
+      <td>NS, p=0.486</td>
+    </tr>
+    <tr>
+      <td>F-I characteristics slope (Hz/nA)</td>
+      <td>91.0 ± 4.0(n = 30)</td>
+      <td>94.5 ± 7.0(n = 13)</td>
+      <td>NS, p=0.653</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are presented as mean ± SE; WT and mutant neurons are compared using the Student’s t-test for unpaired data.*Voltages were corrected for liquid junction potential of –13 mV (recording temperature of 32°C). Data were collected within 2 min after breaking into the whole-cell configuration.†The current threshold was defined as the minimum amplitude of a 10-ms-long current step that elicited an AP._
+
 Both treatments, however, affected the position of the F-I curve relative to the current axis while little to no effect on its slope was observed (Figure 3b), consistent with the hypothesis that, in NaV1.2-Lys38Gln neurons, SUMOylation primarily affects passive neuronal properties. Indeed, in NaV1.2-Lys38Gln mutant neurons, SUMO1 dialysis increased the apparent Rin (from 144.2 ± 19.8 MΩ to 171.6 ± 21.1 MΩ, n = 6, p<0.005) whereas dialysis with SENP1 had an opposite effect (from 126.8 ± 19.6 MΩ to 79.8 ± 8.6 MΩ, n = 7, p<0.01) (Figure 3c).
 
-## SUMO1 and SENP1 have the opposite effect on the voltage dependence of INaP
+### SUMO1 and SENP1 have the opposite effect on the voltage dependence of INaP
 
 In cortical pyramidal neurons, the persistent sodium current operates at a subthreshold range of voltages and is one of the main factors influencing the frequency of repetitive firing, thereby modifying the neuronal gain (Stuart and Sakmann, 1995; Astman et al., 2006). We have recently shown that in pyramidal cells, most of the whole cell INaP is generated by somatodendritic Na+ channels (Fleidervish et al., 2010; Shvartsman et al., 2021). However, because the steady-state activation curve of the AIS channels is shifted to the left by 7–9 mV, most of INaP at functionally critical subthreshold voltages is axonal. The immunohistochemical evidence indicates that soma, dendrites, and proximal AIS of L5 pyramidal neurons are populated predominately by the NaV1.2 channels whose activation and inactivation gating is sensitive to SUMOylation (Hu et al., 2009; Grubb et al., 2011; Plant et al., 2016; Liu et al., 2022). In contrast, the distal AIS membrane and the Ranvier nodes contain NaV1.6 channels, which are not subject to SUMOylation (Plant et al., 2016). To find out how SUMO1 and SENP1 affect the persistent sodium current in different neuronal compartments, we combined whole-cell, voltage-clamp recordings from L5 neurons with high-speed fluorescence imaging of a Na+ sensitive dye, SBFI. A comparison of the voltage ramp-elicited Na+ fluxes revealed that SUMO1 dialysis induces a left shift in the voltage dependence of INaP activation in soma, proximal apical dendrite, and in the AIS of L5 neurons (Figure 4a). Thus, at a voltage of –50 mV, the relatively small fluorescence change in the soma and apical dendrites was significantly increased by SUMO1 dialysis, whereas the amplitude of the Na+ signal in the AIS was less markedly increased (Figure 4b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig4-v2.jpg)
+
+**Figure 4.:** (a) Left: WT L5 pyramidal neuron filled with SBFI-containing, Cs+-based solution via a somatic patch pipette, as seen during the fluorescence imaging experiment with a NeuroCCD-SMQ camera. Right: INaP and normalized somatic (black), axonal (red), and dendritic (cyan) ΔF transients elicited by 2-s-long voltage ramp from –70 mV to 0 mV immediately after the break-in and following 10 min of dialysis with SUMO1. Notice the leftward shift in voltage dependence of INaP activation in soma, dendrite, and to a lesser extent, in axon initial segments (AIS). Capacitive and leakage currents were not subtracted. (b) Pseudocolor maps of the ramp elicited ΔF changes between the times marked by the arrowheads in (a). Top: voltage ramp from −70 to −50 mV produced Na+ elevation mostly in the AIS. Bottom: following the SUMO1 dialysis, voltage ramp from −70 to –50 mV elicited large Na+ signals also in the soma and dendrites.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Box plots represent the 25–75% interquartile range of INaP V1/2 activation values obtained in 10 cells; the whiskers expand to the 5–95% range. A horizontal line inside the box represents the median of the distribution, and the mean is represented by a cross symbol (X). p-Values were calculated using Student’s t-test for paired data. The lines connect the paired V1/2 values obtained from the same individual neuron after the break-in and following 10 min of dialysis with SUMO1. V1/2 difference plots show a change in INaP half-activation voltage elicited by SUMO1 in individual neurons (open circles); dashed lines show mean V1/2 values.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Box plots represent the 25–75% interquartile range of INaP V1/2 activation values obtained in six cells; the whiskers expand to the 5–95% range. A horizontal line inside the box represents the median of the distribution, and the mean is represented by a cross symbol (X). p-Values were calculated using Student’s t-test for paired data. The lines connect the paired V1/2 values obtained from the same individual neuron after the break-in and following 10 min of dialysis with SUMO1. V1/2 difference plots show a change in INaP half-activation voltage elicited by SUMO1 in individual neurons (open circles); dashed lines show mean V1/2 values.
 
 Measurements of half-activation voltage (V½) revealed that SUMO1 dialysis causes a significant leftward shift in the voltage dependence of activation of both somatic and axonal channels in WT neurons (Figure 4—figure supplement 1). However, the application of SUMO1 produced no effect on the voltage dependence of INaP in neurons from NaV1.2-Lys38Gln mice (Figure 4—figure supplement 2). Intracellular application of SENP1 resulted in an opposite effect on the voltage dependence of INaP. Thus, a small but significant rightward shift in the V½ of INaP was observed in the soma and AIS of neurons from WT but not NaV1.2-Lys38Gln mice (Figure 5). These findings indicate that in cortical neurons a portion of the NaV1.2 channels is SUMOylated under control conditions.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig5-v2.jpg)
 
-**Figure 5.:** NaP in pyramidal cells from wild-type but not from Nav1.2-Lys38Gln mutant mice.Box plots represent the 25–75% interquartile range of INaP V1/2 activation values in the soma (black), and axon initial segments (AIS) (red) of WT (top, n = 9) and Nav1.2-Lys38Gln mutant (bottom, n = 7) pyramidal neurons immediately after the break-in and following 10 min of dialysis with SENP1; the whiskers expand to the 5–95% range. A horizontal line inside the box represents the median of the distribution, and the mean is represented by a cross symbol (X). p-Values were calculated using Student’s t-test for paired data. The lines connect the paired V1/2 values obtained from the same individual neuron after the break-in and following 10 min of dialysis with SENP1. V1/2 difference plots show a change in INaP half-activation voltage elicited by SENP1 in individual neurons (open circles); dashed lines show mean V1/2 values in WT (n = 9) and Nav1.2-Lys38Gln mutant (n = 7) cells.
+**Figure 5.:** Box plots represent the 25–75% interquartile range of INaP V1/2 activation values in the soma (black), and axon initial segments (AIS) (red) of WT (top, n = 9) and Nav1.2-Lys38Gln mutant (bottom, n = 7) pyramidal neurons immediately after the break-in and following 10 min of dialysis with SENP1; the whiskers expand to the 5–95% range. A horizontal line inside the box represents the median of the distribution, and the mean is represented by a cross symbol (X). p-Values were calculated using Student’s t-test for paired data. The lines connect the paired V1/2 values obtained from the same individual neuron after the break-in and following 10 min of dialysis with SENP1. V1/2 difference plots show a change in INaP half-activation voltage elicited by SENP1 in individual neurons (open circles); dashed lines show mean V1/2 values in WT (n = 9) and Nav1.2-Lys38Gln mutant (n = 7) cells.
 
-## SUMOylation of Na+ channels affects voltage-dependent amplification of EPSPs in pyramidal neurons
+### SUMOylation of Na+ channels affects voltage-dependent amplification of EPSPs in pyramidal neurons
 
 Changes in the amplitude of INaP at subthreshold voltages are expected to influence the spatial and temporal summation of synaptic potentials (Deisz et al., 1991; Stuart and Sakmann, 1995; Stuart, 1999). Therefore, we studied the effect of SUMOylation on the amplitude and duration of excitatory postsynaptic potentials (EPSPs) elicited in the pyramidal neuron by brief synaptic stimuli. The EPSPs were measured immediately after break-in to the whole-cell configuration and following 30 min of intracellular dialysis with SUMO1 in WT and NaV1.2-Lys38Gln neurons. SUMO1 did not change the duration of small EPSPs of less than 10 mV in amplitude (Figure 6a). In contrast, SUMO1 prolonged the decay time constant of EPSPs greater than 10 mV in amplitude in WT but not NaV1.2-Lys38Gln neurons. In pooled EPSPs obtained from six neurons in each experimental group, SUMO1 dialysis enhanced the steepness of the slope of EPSP integral-to-peak relationship (Figure 6b) in WT neurons, whereas SUMOylation had no effect on this relationship for NaV1.2-Lys38Gln cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig6-v2.jpg)
 
-**Figure 6.:** v1.2-Lys38Gln mutant mice.(a) Comparison of small and large EPSPs evoked in WT and Nav1.2-Lys38Gln mutant pyramidal neurons immediately after the break-in (black) and following the SUMO1 dialysis (blue). Notice the slower decay time constant of larger EPSP following SUMO1 dialysis in WT neuron. (b) The mean EPSP integral as a function of peak EPSP amplitude after the brake-in (black) and following the SUMO1 dialysis (blue) of the WT (n = 6) and Nav1.2-Lys38Gln mutant (n = 6) pyramidal neurons. Notice the amplification of larger EPSPs in SUMO1 dialyzed WT cells.
+**Figure 6.:** (a) Comparison of small and large EPSPs evoked in WT and Nav1.2-Lys38Gln mutant pyramidal neurons immediately after the break-in (black) and following the SUMO1 dialysis (blue). Notice the slower decay time constant of larger EPSP following SUMO1 dialysis in WT neuron. (b) The mean EPSP integral as a function of peak EPSP amplitude after the brake-in (black) and following the SUMO1 dialysis (blue) of the WT (n = 6) and Nav1.2-Lys38Gln mutant (n = 6) pyramidal neurons. Notice the amplification of larger EPSPs in SUMO1 dialyzed WT cells.
 
-## SUMOylation differentially affects the speed of forward- and back-propagating action potentials
+### SUMOylation differentially affects the speed of forward- and back-propagating action potentials
 
 In cortical pyramidal neurons, the NaV1.2 channels are predominantly localized in somatic, dendritic, and proximal AIS membrane, where they are responsible for the propagation of action potentials back into the dendritic tree (Hu et al., 2009; Grubb et al., 2011). The NaV1.6 channel subtype is present in the distal AIS and in the nodes of Ranvier, and it is responsible for the forward propagation of action potentials into the axonal arbor (Hu et al., 2009). Because NaV1.2 and NaV1.6 channels respond differentially to SUMOylation, with the former being susceptible and the latter resistant to SUMO1, we hypothesized that this neuromodulation could differentially affect the speed of forward and backpropagation of the spikes. Seeking to test this hypothesis directly, we measured the velocity of forward and backpropagation using paired, whole-cell, loose patch recordings to detect the times of the spike arrival from multiple sites along the axo-somatic axis in sequence (Figure 7; Baranauskas et al., 2013; Lezmy et al., 2017). In order to distinguish the axon from other thin processes emerging from the cell body and facilitate the distance measurements between the somatic and axonal pipettes, we filled the neurons for at least 15 min with the Na+-sensitive dye SBFI. Because of this and the relatively long time it takes to obtain action currents from multiple axonal locations, we were not able to measure the propagation velocity upon break-in to whole-cell configuration. Thus, we compared the propagation velocities in WT neurons dialyzed with control or SUMO1-containing intracellular solution. As an additional control, the same measurements were taken from the NaV1.2-Lys38Gln neurons dialyzed with SUMO1.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig7-v2.jpg)
+
+**Figure 7.:** (a) Left: normalized averaged action currents (n = 500) elicited by a single AP at the axonal regions indicated by arrows to demonstrate the difference in the delay of their onset. The dashed vertical line corresponds to the time of dV/dtmax of the somatic action potential. Right: distance from the edge of the soma as a function of delay of spike initiation plotted. Note that AP initiates in a region between the pink and brown arrows and propagates with an apparent conduction velocity of ∼0.32 and ~0.10 m/s forward and backward, respectively. (b) In SUMO1 dialyzed neurons, there was little difference in apparent conduction velocity of forward- and back-propagating action potential (~0.27 vs. 0.23 m/s, respectively). (c) In a representative neuron from Nav1.2-Lys38Gln mutant animal, the velocity of backpropagation was not affected by SUMO1 dialysis (~0.26 vs. 0.12 m/s for forward and backpropagation, respectively). (d) SUMOylation causes a significant increase in the back/forward propagation velocity ratio. Each dot represents the velocity ratio obtained by measurements in individual control WT (n = 6, black), SUMO1 dialyzed WT (n = 6, blue), and SUMO1 dialyzed Nav1.2-Lys38Gln mutant (n = 5, blue) axon. Box plots represent the 25–75% interquartile range of velocity ratios, and the whiskers expand to the 5–95% range. A horizontal line inside the box represents the median of the distribution, and the mean is represented by a cross symbol (X). p-Values were calculated using Student’s t-test for unpaired data.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/81463/elife-81463-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Left: schematic drawing of L5 pyramidal neuron with Nav1.2 (red) present in the soma and proximal axon initial segments (AIS) and Nav1.6 (green) localized in the distal AIS and nodes of Ranvier. Right: the delays of action potential (AP) initiation plotted against distance from the edge of the soma in the model of a neuron under control conditions (black) and following the SUMO1 dialysis. Straight lines are linear fits of the linear portions of the delay–distance relationship with their slopes representing the velocities of back- and forward- propagation velocities. Note that SUMOylation of Nav1.2 channels selectively enhances the velocity of backpropagating AP.
 
 As demonstrated by a representative untreated WT cell (Figure 7a), backpropagation velocity (0.10 m/s) was significantly lower than the velocity of forward propagation (0.32 m/s). Dialysis with SUMO1, however, speeded the backpropagation, such that its velocity became almost equal to the speed of forward propagation, ~0.27 vs. 0.23 m/s for forward and backpropagation, respectively (Figure 7b). This effect of SUMO1 was not observed in NaV1.2-Lys38Gln neurons, in which the backpropagation was still significantly slower than forward propagation, ~0.26 vs. 0.12 m/s for forward and backpropagation, respectively (Figure 7c). Comparison of the ratios of backward and forward propagation velocities revealed a significant increase in WT neurons dialyzed with SUMO1 compared with untreated WT or SUMO1-treated NaV1.2-Lys38Gln cells (Figure 7d). To find out whether the leftward shift in voltage dependence of NaV1.2 activation could increase the backpropagation velocity, we studied the dynamics of AP propagation in a simplified compartmental model in which we distributed the NaV1.2 and NaV1.6 channels in accordance with immunohistochemical data (Hu et al., 2009). In good agreement with our experimental results, a 6 mV leftward shift in half-activation voltage of NaV1.2 caused an about twofold increase in AP backpropagation velocity (Figure 7—figure supplement 1), whereas the forward propagation remained almost unaffected. Thus, our data indicates that in cortical pyramidal neurons SUMOylation of NaV1.2 channels could provide a ‘switch’ allowing differential regulation of the AP invasion into the dendritic tree and synaptic plasticity, whereas the ongoing neuronal activity that relies on SUMO-resistant, Nav1.6-mediated, spike forward propagation, would not be affected.
 
@@ -100,21 +195,66 @@ Our results demonstrate that SUMOylation of Nav1.2 channels significantly increa
 
 ## Materials and methods
 
-## Lead contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human SUMO1</td>
+      <td>R&amp;D Systems</td>
+      <td>UL-740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human SENP1</td>
+      <td>R&amp;D Systems</td>
+      <td>E-700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: C57BL/6N-Scn2aK38QMut/+</td>
+      <td>Biocytogen</td>
+      <td>EGE-ZY-016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON 8.1</td>
+      <td>Yale University</td>
+      <td>SCR_005393</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 Further Information and requests for resources and reagents should be directed to the lead contacts. Materials generated through this work are available from the lead contact upon reasonable request.
 
-## Method details
+### Method details
 
-## Animals
+#### Animals
 
 The C57BL/6N-Nav1.2-K38QMut/+ mice were generated by and obtained from Biocytogen (Wakefield, MA). The Nav1.2-K38QMut/+ mice backcrossed against C57BL/6N for five generations. Both male and female mice were used without bias. This study was carried out at the Ben-Gurion University of the Negev in accordance with the recommendations of guidelines for the welfare of experimental animals. Animal experiments were approved by the Institutional Animal Care and Use Committee of Ben-Gurion University.
 
-## Generation of the Scn2aK38Q knock in mice model
+#### Generation of the Scn2aK38Q knock in mice model
 
 The Scn2a-K38Q mutation knock-in mice were generated using a CRISPR/Cas9-based approach. Briefly, two sgRNAs were designed using the CRISPR design tool (http://www.sanger.ac.uk/) to target the region of the exon 1 of the Scn2a gene locus, then screened for on-target activity using a Universal CRISPR Activity Assay (UCATM, Biocytogen Pharmaceuticals Co., Ltd). The T7 promoter sequence was added to the Cas9 or sgRNA template by PCR amplification in vitro. Different concentrations of the donor vector and the purified, in vitro-transcribed Cas9 mRNA and sgRNA were mixed and co-injected into the cytoplasm of one-cell stage-fertilized egg from a C57BL/6N mouse. The injected zygotes were transferred into the oviducts of Kunming pesudopregnant females to generate F0 mice. PCR and sequencing verified founder pups harboring the intended mutation were then crossed with wild-type mice for germline transmission. The germline sequence was confirmed by PCR, sequencing, and Southern blot analysis.
 
-## Slice preparation and whole-cell recording
+#### Slice preparation and whole-cell recording
 
 Experiments were performed on L5 pyramidal neurons in 300-µm-thick mouse cortical sagittal slices using previously described techniques (Fleidervish et al., 2010; Katz et al., 2018). The P18-P24 mice of either sex (Envigo, Israel) were anesthetized with isoflurane, decapitated, and the brains were placed in cold (4–8°C) oxygenated (95% O2–5% CO2) artificial cerebrospinal fluid (aCSF). The composition of the aCSF was (in mM) 124 NaCl, 3 KCl, 2 CaCl2, 2 MgSO4, 1.25 NaH2PO4, 26 NaHCO3, and 10 glucose (all chemicals obtained from Sigma-Aldrich); pH was 7.4 when bubbled with 95% O2/CO2. Slices were cut on a vibratome (VT1200, Leica) and placed in a holding chamber containing oxygenated aCSF at room temperature; they were transferred to a recording chamber after at least 30 min of incubation.
 
@@ -124,23 +264,23 @@ EPSP were elicited by delivering brief (0.1 ms) current pulses using optically c
 
 SUMO (1 nM) and SENP (0.25 nM) were delivered to the neurons intracellularly via the whole-cell recording pipette.
 
-## Measuring propagation speed
+#### Measuring propagation speed
 
 To measure AP propagation velocity, we performed simultaneous recordings from soma and axon of L5 pyramidal neurons. The whole-cell current-clamp somatic recordings were obtained, and the neurons were filled for 15 min with Na+ indicator, SBFI (2 mM), as described above. Trains of five APs were elicited by delivering brief current steps via the somatic pipette, and axons were identified by their characteristic Na+ signals. Another pipette filled with the extracellular solution supplemented with SBFI (2 mM), with a resistance of 15–20 MΩ, was positioned at different points along the axon in a loose-patch configuration. At each point along the axon, 100 single APs were elicited by delivering brief current pulses via the somatic electrode, and axonal action currents were simultaneously recorded. Both pipettes were coated within ∼100 μm of the tip with Parafilm (Sigma-Aldrich) to minimize stray capacitance. Currents were low-pass-filtered at 100 kHz (−3 dB, four-pole Bessel filter) and digitized at 200 kHz. To identify the time delays between the somatic and the axonal signals, they were aligned to the times of maximal rate of rise of the somatic APs and averaged. Then, the differences between the times of peak of the axonal action currents and times of maximal rate of rise of the somatic APs were calculated.
 
-## Sodium imaging
+#### Sodium imaging
 
 Imaging experiments were performed as described previously (Baranauskas et al., 2013; Shvartsman et al., 2021). SBFI fluorescence was excited by using a high-intensity LED device (385 ± 4 nm; Prizmatix), and the emission was collected by using a modified Olympus U-MNU2 filter set (400 nm dichroic mirror; 420 nm long-pass emission filter). The fluorescent response of SBFI was recorded using a back-illuminated 80 × 80 pixel cooled camera (NeuroCCDSMQ; RedShirt Imaging) at 500 frames/s acquisition speed controlled by Neuroplex software. Indicator bleaching was corrected by subtracting an equivalent blank trace without electrical stimulation.
 
-## Data analysis
+#### Data analysis
 
 Data analysis was accomplished using pCLAMP10 software (Molecular Devices) and Origin 6.0 (OriginLab). If not otherwise noted, values are given as mean ± SE. Student’s t test was used for statistical analysis.
 
-## Modeling
+#### Modeling
 
 Numerical simulations were performed in the NEURON simulation environment (Hines and Carnevale, 1997). Unless otherwise stated, electrophysiological parameters and dynamic [Na+]i changes were studied in a simplified compartmental model encompassing the fundamental morphological and electrical features of layer 5 pyramidal neurons as described previously (Baranauskas et al., 2013; Shvartsman et al., 2021).
 
-In the model, the 1.2-μm-thick AIS extended over the first 40–50 μm of the axon. The subsequent segment (length, 50 μm; diameter, 1.2 μm) was myelinated. The nodes were 1 µm long and had a diameter of 1.2 µm, and the myelinated internodes were 2 µm long and had a diameter of 1.2 µm. In addition to the axon, the soma (length 35 μm, diameter: 23 μm) gave rise to the apical dendrite (length 350 μm, diameter 3.5 μm) and two basal dendrites (length 200 μm, diameter 1.2 μm). For spatial precision, all compartments were divided into 1-µm-long isopotential segments.
+In the model, the 1.2-μm-thick AIS extended over the first 40–50 μm of the axon. The subsequent segment (length, 50 μm; diameter, 1.2 μm) was myelinated. The nodes were 1 µm long and had a diameter of 1.2 µm, and the myelinated internodes were 2 µm long and had a diameter of 1.2 µm. In addition to the axon, the soma (length 35 $\mum$, diameter: 23 $\mum$) gave rise to the apical dendrite (length 350 $\mum$, diameter 3.5 $\mum$) and two basal dendrites (length 200 $\mum$, diameter 1.2 $\mum$). For spatial precision, all compartments were divided into 1-µm-long isopotential segments.
 
 The passive electrical properties Rm, Cm, and Ri were set to 25,000 Ω cm2, 1 μF cm−2, and 150 Ω cm, respectively, uniformly. The myelinated internode had Cm of 0.5 μF·cm−2. The resting membrane potential at the soma was set to −75 mV.
 

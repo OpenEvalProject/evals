@@ -20,11 +20,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02n0bts35 Department of Internal Medicine, Medical University of Graz Graz Austria
-2. https://ror.org/056d84691 Department of Physiology and Pharmacology, Karolinska Institute Stockholm Sweden
-3. https://ror.org/01tm6cn81 Centre for Bone and Arthritis Research, Department of Internal Medicine and Clinical Nutrition, Sahlgrenska Academy, University of Gothenburg Gothenburg Sweden
-4. https://ror.org/04vgqjj36 Department of Drug Treatment, Sahlgrenska University Hospital, Region Västra Götaland Gothenburg Sweden
-5. https://ror.org/056d84691 Department of Microbiology, Tumor and Cell Biology, Karolinska Institute Stockholm Sweden
+1. Department of Internal Medicine, Medical University of Graz Graz Austria ([ROR:02n0bts35](https://ror.org/02n0bts35))
+2. Department of Physiology and Pharmacology, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+3. Centre for Bone and Arthritis Research, Department of Internal Medicine and Clinical Nutrition, Sahlgrenska Academy, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+4. Department of Drug Treatment, Sahlgrenska University Hospital, Region Västra Götaland Gothenburg Sweden ([ROR:04vgqjj36](https://ror.org/04vgqjj36))
+5. Department of Microbiology, Tumor and Cell Biology, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
 
 † Corresponding author
 
@@ -46,15 +46,301 @@ Here, we demonstrate that AR activation is a direct modulator of B cell frequenc
 
 ## Results
 
-## Androgens are associated with altered B cell frequencies and immunoglobulin M increase in women with PCOS
+### Androgens are associated with altered B cell frequencies and immunoglobulin M increase in women with PCOS
 
 As alterations of B cell frequencies have previously been shown in women with PCOS (Xiao et al., 2019), we first characterized main B cell lineages and subpopulations based on pan B cell surface marker CD19 in the serum of 15 hyperandrogenic women with PCOS and of 22 women without PCOS (controls). Women with PCOS fulfilled all three Rotterdam Criteria, displaying oligo-/amenorrhea, hirsutism, and PCOM. Women with PCOS were younger than controls, with median ages of 26 and 36, respectively, with no difference in body mass index (BMI), but with significantly higher total testosterone and androstenedione, elevated total triglycerides, and reduced HDL-cholesterol (Table 1). CD19+ B cell memory populations were phenotypically analyzed based on surface markers IgD and CD27. Our initial assessment showed a remodeling of B cell repertoire in women with PCOS compared to controls. The frequency of age-associated DN B memory cells lacking surface expression of CD27 and IgD was significantly higher in women with PCOS (Figure 1a), with declined ‘innate-like’ unswitched CD27+IgD+ B memory cells (Figure 1b). While naïve B cells populations did not differ among study groups (Figure 1c), switched CD27+ IgD– were increased in women with PCOS (Figure 1d), which may directly affect unswitched B cells frequency variance. We did not find direct evidence of activation of DN B cells among women affected by PCOS. Analysis of surface marker CD38, generally expressed on antibody-secreting plasma cells, proved similar values in both groups (Figure 1e). Expression of CD86, a co-stimulatory molecule that usually is upregulated following activation of B cells and in turn can activate T cells, did not differ significantly either (Figure 1f). When assessing circulating serum antibodies, immunoglobulin M (IgM) were higher in hyperandrogenic women with PCOS (Figure 1g) exhibiting high testosterone and increased free androgen index (Figure 1h and i) compared to controls with similar BMI (Figure 1j). Interestingly, no differences were noted for circulating IgG while IgA titers were lower in women with PCOS (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86454/elife-86454-fig1-v2.jpg)
+
+**Figure 1.:** (a) Total CD19+ double-negative (DN) B cells (CD27- IgD-). (b) Total unswitched B cells (CD27+IgD+ ). (c) Total naive B cells (CD27- IgD+). (d) Total switched B cells (CD27+IgD-). (a–d) Total CD19+ populations (controls n = 22; PCOS n = 15). (e, f) Expression on double-negativeDN B cells respectively of the surface markers CD38 and CD86. (g) Circulating IgM titers. (h) Total testosterone. (i) Free androgen index (FAI). (j) Body mass index (BMI). (g–j) Controls n = 18; PCOS n = 15. All bars indicate means, error bars SD, circles represent human individuals. In the case of missing values due to lack of measurement, individuals were excluded from the analysis report for that variable. Unpaired Student’s t-test for analysis of naive, unswitched, and DN CD86+ B cells, total testosterone, and BMI. Mann–Whitney test for all other B cell frequencies, antibody titers, and FAI. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86454/elife-86454-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Circulating immunoglobulin G (IgG) titers. (b) Circulating immunoglobulin A (IgA) titers in women without PCOS (controls n = 18) and in women with PCOS (n = 15). All bars indicate means, circles represent human individuals. Mann–Whitney U-test for analysis of antibody titers.
+
+**Table 1.**
+ Clinical characteristics of women with polycystic ovary syndrome (PCOS) and women without the syndrome used for characterization of main B cell lineages and subpopulations based on pan B cell surface marker CD19.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Controls(n = 22)</th>
+      <th>PCOS(n = 15)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>36.3 (21-50)</td>
+      <td>26.4 (24-38)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anthropometry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>22.18 (18.31–32.15)</td>
+      <td>24.39 (19.16–39.89)</td>
+      <td>0.128</td>
+    </tr>
+    <tr>
+      <td>Waist-to-hip-ratio</td>
+      <td>0.8 (0.74–0.91)</td>
+      <td>0.82 (0.71–0.92)</td>
+      <td>0.237</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Endocrine measure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Free testosterone (ng/mL)</td>
+      <td>0.25 (0,06–0.49)</td>
+      <td>0.43 (0.02–0.88)</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>Total testosterone (ng/mL)</td>
+      <td>0.86 (0.8–1.74)</td>
+      <td>1.49 (0.07–3.05)</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>Free androgen index (FAI)</td>
+      <td>1.2 (0.22–2.48)</td>
+      <td>2.6 (0.11–20.34)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Androstenedione (ng/mL)</td>
+      <td>2.8 (1.17–5.99)</td>
+      <td>3.9 (2.27–6.53)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Metabolic measures</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cholesterol (mg/dL)</td>
+      <td>177 (128–217)</td>
+      <td>180 (135–214)</td>
+      <td>0.469</td>
+    </tr>
+    <tr>
+      <td>HDL (mg/dL)</td>
+      <td>67 (46–87)</td>
+      <td>51 (36–90)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>LDL (mg/dL)</td>
+      <td>97.3 (45.8–115.8)</td>
+      <td>108.6 (78.6–160.4)</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>65.5 (44-97)</td>
+      <td>82 (56–124)</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Glucose (mg/dL)</td>
+      <td>88 (76–104)</td>
+      <td>91 (77–111)</td>
+      <td>0.491</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are median ± range. Comparisons between groups were made using Mann–Whitney U-test.BMI, body mass index; HDL, high-density lipoprotein; LDL, low-density lipoprotein._
+
 These data support the hypothesis that women with PCOS and hyperandrogenemia have an altered B cell frequency linked to alterations in IgM antibody production. However, higher disease activity was not explained by increased double-negative (DN) B lymphopoiesis.
 
-## Transfer of human-derived IgG antibodies results in increased body weight in WT female mice
+### Transfer of human-derived IgG antibodies results in increased body weight in WT female mice
 
 Clusters of pro-inflammatory age-associated DN B memory cells lacking surface expression of CD27 and immunoglobulin D (IgD) have been associated with plasma cell differentiation fate, and while not increasing significantly in numbers, produce higher amounts of IgG on a per cell basis relative to switched memory B cells (Jenks et al., 2018). Hence, to assess whether PCOS may have an underlying autoimmunological effector component, we investigated a possible role for IgG in PCOS systemic inflammation. IgG antibody extracted from serum of four women with PCOS diagnosed as phenotype A fulfilling all three Rotterdam Criteria, displaying oligo-/amenorrhea, hirsutism, and PCOM and of healthy controls (Table 2), were purified and pooled, then transferred intraperitoneally (i.p.) into wild-type (WT) mice. Following the same procedure, IgG deriving from four hormonally healthy women was equally purified, then pooled and transferred into similar age and weight-matched WT mice. Both groups of donors were age-homogeneous with no significant differences in BMI or circulating androgen levels (Table 2). Among the recipient mice, there were no differences in ovulatory cycles between controls (Figure 2a) and mice receiving PCOS IgG (Figure 2b). Three weeks post IgG transfer, mice receiving IgG from women with PCOS increased in body weight compared to controls (Figure 2c). Body composition assessment showed no difference in proportion of fat or lean mass between the groups (Figure 2d). Interestingly, as an effect of human PCOS IgG transfer, recipient mice had also altered subsets of B lymphocytes in blood, ovary, and visceral adipose tissue (VAT). Circulating DN B memory cells were increased (Figure 2e) while blood-naïve cells were reduced (Figure 2f), resembling the B cell distribution described in donor women with PCOS. Among the DN B cells, DN1 CD21+ subset was the main circulating subpopulation in the blood of mice that received IgG from women with PCOS (Figure 2g). VAT tissue had higher frequencies of effector IgM+IgD+CD27+ ‘double positive’ unswitched B cells (Figure 2h) while activated switched IgM+IgD-CD27+ were increased in ovarian tissue (Figure 2i). Analyzing circulating sex steroids in these mice, estrogens were altered with an increase in estrone (Figure 2j) and a trend of higher estradiol (Figure 2k) with no difference in androgens or progesterone (Figure 2l–n).
+
+**Table 2.**
+ Clinical characteristics of immunoglobulin G (IgG) donors, women with polycystic ovary syndrome (PCOS) and women without the syndrome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Controls(n = 4)</th>
+      <th>PCOS(n = 4)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>27 (22–31)</td>
+      <td>25 (23–35)</td>
+      <td>&gt;0.999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anthropometry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>26 (19.4–29.8)</td>
+      <td>25 (21.3–28.2)</td>
+      <td>&gt;0.999</td>
+    </tr>
+    <tr>
+      <td>Waist-to-hip-ratio</td>
+      <td>1 (0.79–0.91)</td>
+      <td>1 (0.70–0.91)</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Endocrine measure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LH (mU/mL)</td>
+      <td>7 (4.40–11.40)</td>
+      <td>10 (5.19–38.60)</td>
+      <td>0.343</td>
+    </tr>
+    <tr>
+      <td>FSH (mU/mL)</td>
+      <td>4 (2.74–6.91)</td>
+      <td>7 (5.59–8.61)</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td>Progesterone (ng/mL)</td>
+      <td>10 (0.20–13.60)</td>
+      <td>1 (0.60–1.05)</td>
+      <td>0.343</td>
+    </tr>
+    <tr>
+      <td>Free testosterone (ng/mL)</td>
+      <td>2 (0.84–2.68)</td>
+      <td>3 (0.29–3.03)</td>
+      <td>0.685</td>
+    </tr>
+    <tr>
+      <td>Total testosterone (ng/mL)</td>
+      <td>0 (0.17–0.40)</td>
+      <td>0 (0.30–0.40)</td>
+      <td>0.228</td>
+    </tr>
+    <tr>
+      <td>Androstenedione (ng/mL)</td>
+      <td>3.11 (1.21–4.56)</td>
+      <td>4 (1.98–4.69)</td>
+      <td>0.685</td>
+    </tr>
+    <tr>
+      <td>SHBG (nmol/L)</td>
+      <td>63 (52.8–88.8)</td>
+      <td>62 (43.9–105)</td>
+      <td>0.952</td>
+    </tr>
+    <tr>
+      <td>Free androgen index (FAI)</td>
+      <td>0 (0.3–0.6)</td>
+      <td>1 (0.5–0.7)</td>
+      <td>0.171</td>
+    </tr>
+    <tr>
+      <td>AMH (ng/mL)</td>
+      <td>4 (2.40–4.66)</td>
+      <td>8 (4.97–9.96)</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Metabolic measures</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cholesterol (mg/dL)</td>
+      <td>160 (132–184)</td>
+      <td>153 (146–172)</td>
+      <td>0.686</td>
+    </tr>
+    <tr>
+      <td>HDL (mg/dL)</td>
+      <td>77 (42–80)</td>
+      <td>62 (49–71)</td>
+      <td>0.343</td>
+    </tr>
+    <tr>
+      <td>LDL (mg/dL)</td>
+      <td>75 (66–89)</td>
+      <td>74 (67–107)</td>
+      <td>0.828</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>71 (43–91)</td>
+      <td>74 (68–82)</td>
+      <td>0.885</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are median ± range. Comparisons between groups were made using Mann–Whitney U-test.AMH, anti-Müllerian hormone; HDL, high-density lipoprotein; LDL, low-density lipoprotein; SHBG, sex hormone-binding globulin; FSH, follicle-stimulating hormone; LH, luteinizing hormone._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86454/elife-86454-fig2-v2.jpg)
 
@@ -62,7 +348,7 @@ Clusters of pro-inflammatory age-associated DN B memory cells lacking surface ex
 
 As B cell functions are influenced by other lymphocyte populations, especially T cells, and vice versa, we aimed to assess whether T cells are modulating this inflammatory effect deriving from IgG-induced disease. Human IgG deriving from PCOS and control cohorts was first purified, then pooled into separate groups, and transferred into 10-week-old Rag1 KO-/- mice, which lack mature T- and B cells. Three weeks post i.p. IgG transfer, RAG1 KO-/- mice failed to develop any PCOS-like phenotype, contrasting previous transfer into WT mice, suggesting that the pathophysiological mechanism inducing immune and metabolic disruption such as body weight alteration may necessarily involve other lymphocytes to fully promote impairment of metabolic parameters.
 
-## Altered B cell frequencies are replicated in a DHT-induced PCOS-like mouse model and seen in reproductive, metabolic, and immunological tissues
+### Altered B cell frequencies are replicated in a DHT-induced PCOS-like mouse model and seen in reproductive, metabolic, and immunological tissues
 
 To investigate androgen-mediated regulation of B cell phenotypes, in particular DN B memory cells as well as circulating antibody titers, in tissues other than blood, we used the well-established peripubertal DHT-induced PCOS mouse model (Stener-Victorin et al., 2020). Peripubertal female mice were subcutaneously implanted with a silastic pellet containing 4 mm of DHT and develop PCOS-like traits with reproductive and metabolic dysfunction without increase in fat mass (Xue et al., 2018). Control mice received an empty, blank implant. To investigate whether any phenotypic differences are driven by AR activation, a third group received, in addition to the DHT implant, a continuously releasing flutamide pellet, an AR antagonist. Two separate cohorts of these three experimental groups were phenotypically characterized at 13 and 16 weeks of age, respectively.
 
@@ -80,13 +366,21 @@ At 16 weeks of age, DHT-exposed mice with a PCOS-like phenotype have an equally 
 
 Frequencies of B memory cells in 13-week-old DHT-exposed mice were disrupted compared to controls, particularly in blood. Circulating CD19+ DN memory cells were lower compared to controls (Figure 5a). CD19+-naïve B cells were increased in the blood of DHT-exposed mice (Figure 5b). When analyzing B cell distribution at 20 weeks of age, CD19+ DN B cells were increased in the spleen of DHT-exposed mice (Figure 5c) while frequencies of naïve B cells were decreased (Figure 5d), an effect that was reversed when co-treated with flutamide. Overall, ovarian tissue was the most affected tissue. DHT-exposed mice had decreased proportions of both DN and naïve B cells within the ovaries (Figure 5e and f), a similar trend as seen in blood-deriving cells of mice at 13 weeks of age. Ovaries of DHT-exposed mice were characterized by an increased frequency of IgM+IgD+CD27+ ‘double positive’ unswitched B cells (Figure 5g). Among the DN cells, DHT-exposed mice displayed a trend, suggesting an increase of DN CD21+ populations in the ovaries compared with controls and mice co-treated with flutamide (Figure 5h), an effect previously observed in the blood of mice receiving IgG from women with PCOS. A similar increase was noted among naïve B cells of DHT-exposed mice, with a trend suggesting increased proportions of CD19+-naïve B cells expressing CD21+ in the ovaries (Figure 5i) and endometrium (Figure 5j), as well as spleen (Figure 5k) and VAT (Figure 5l). These trends were reversed by co-treatment with flutamide in ovary and endometrium.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/86454/elife-86454-fig5-v2.jpg)
+
+**Figure 5.:** (a) Blood double-negative (DN) B cells in 13-week-old mice. (b) Blood naive B cells in 13-week-old mice. (a, b) 13-week-old WT control mice (n = 10), mice receiving DHT pellet implant (n = 11), and mice receiving DHT pellet and flutamide implant (n = 10). (c) Spleen DN B cells in 20-week-old mice. (d) Spleen naive B cells in 20-week-old mice. (e) Ovary DN B cells in 20-week-old mice. (f) Ovary naive B cells in 20-week-old mice. (g) Ovary unswitched B cells in 20-week-old mice. (h) Ovary DN CD21+ B cells in 20-week-old mice. (i) Ovary naive CD21+ B cells in 20-week-old mice. (j) Visceral adipose tissue (VAT) naive CD21+ B cells in 20-week-old mice. (k) Spleen naive CD21+ B cells in 16-week-old mice. (l) Endometrium naive CD21+ B cells in 20-week-old mice. (m) Circulating IgG titers in 20-week-old mice. (n) Circulating IgM titers in 20-week-old mice. (c–n) 16–20-week-old WT control mice (n = 10), mice receiving DHT pellet implant (n = 9), and mice receiving DHT pellet and flutamide implant (n = 10). All bars indicate means, circles represent individual mice. In the case of missing values due to lack of measurement, mice were excluded from the analysis report for that variable. One-way ANOVA for multiple-comparisons of normally distributed data, Kruskal–Wallis test for data that is not normally distributed. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86454/elife-86454-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Circulating IgG1 titers in control (n = 8), DHT (n = 7), and DHT+ flutamide (n = 6) exposed mice. (b) Circulating IgG3 titers in control (n = 8), DHT (n = 8), and DHT+ flutamide (n = 6) exposed mice. All bars indicate means, circles represent individual mice. Mann–Whitney U-test for analysis of antibody titers.
+
 Collectively, these results point to an inflammatory activity ongoing in the DHT-exposed mice presenting a PCOS-like phenotype, with B cell alterations being a consequence of AR activation as proven by the preventive effect of flutamide co-treatment. There are noticeable differences within the single tissues, which require further investigations.
 
-## DHT-induced PCOS-like mice show a distinct IgG profile
+### DHT-induced PCOS-like mice show a distinct IgG profile
 
 In addition to functions deriving from T cell interaction, B cells regulate immune function via antibody production. Given the altered titers of IgM in women with PCOS, circulating IgM levels, as well as IgG isotypes, were analyzed in the peripubertal PCOS-like mouse model. DHT-exposed mice, exhibiting elevated levels of circulating testosterone and androstenedione, display reduced levels of IgG2b and IgG2c isotypes (Figure 5m), while no significant differences in IgM levels could be seen (Figure 5n). No differences were found for IgG1 nor in IgG3 titers (Figure 5—figure supplement 1).
 
-## B cell transfer from DHT-induced PCOS-like mice into B cell-deficient mice does not induce a PCOS-like phenotype
+### B cell transfer from DHT-induced PCOS-like mice into B cell-deficient mice does not induce a PCOS-like phenotype
 
 To discern the role of B cells in the etiology of PCOS and the development of associated metabolic comorbidities, it was assessed whether transfer of B cells alone from DHT-exposed mice could induce a PCOS-like phenotype in B cell-deficient muMt- mice. Splenic B cells from DHT-exposed mice were transferred i.p. in to 6-week-old muMt- Bnull mice as they do not produce mature B cells due to the knockout of the mu heavy chain. It is important to note that they have, however, a fully functional T cell compartment. Control muMt- mice received an equal amount of splenic B cells deriving from a control donor group. Two weeks after transfer, the DHT-exposed B cells recipient muMt- mice failed to develop PCOS-like traits. Overall, B cell transfer did not affect the estrous cyclicity (Figure 6a and b), nor the anogenital distance (Figure 6c). Total body weight did not differ (Figure 6d), nor fat or lean mass (Figure 6e). Fasting glucose was not affected (Figure 6f) nor was glucose tolerance in oGTT testing (Figure 6g). The lack of a PCOS-like phenotype in a B cell reconstituted model with conserved T cell function was not explained by the presence of B cells alone to a hyperandrogenic environment and must therefore be driven by a peripheral mechanism that necessarily also affects function and properties of other immune cells.
 
@@ -94,7 +388,7 @@ To discern the role of B cells in the etiology of PCOS and the development of as
 
 **Figure 6.:** (a) Estrous cycles in 13-week-old muMt- mice receiving control B cells. (b) Estrous cycles in 13-week-old muMt- mice receiving DHT exposed B cells. (c) Normalized anogenital distance in 13-week-old muMt- recipient mice. (d) Weekly body weight (BW) in 13-week-old muMt- recipient mice. (e) EchoMRI record of fat and lean body composition in 13-week-old muMt- recipient mice. (f) Fasting glucose levels. (g) Oral glucose tolerance test (OgTT) in 13-week-old muMt- recipient mice. (a–g) 13-week-old muMt- mice receiving control B cells (n = 8), 13-week-old muMt- mice receiving DHT-exposed B cells (n = 9). All bars indicate means, circles represent individual mice. In the case of missing values due to lack of measurement, mice were excluded from the analysis report for that variable. Unpaired Student’s t-test for analysis of anogenital distance difference between groups, as well as EchoMRI results and fasting glucose; two-way ANOVA with Sidak’s post hoc test for analysis of weekly BW recordings and blood glucose throughout the study; *p<0.05, **p<0.01, ***p<0.001.
 
-## B cell deficiency does not protect from the induction of a PCOS-like phenotype by DHT exposure
+### B cell deficiency does not protect from the induction of a PCOS-like phenotype by DHT exposure
 
 To finally assess whether B cell deficiency provides a protective effect, 28-day/4-week-old muMt- mice, lacking mature B cells, were implanted with a silastic implant containing continuously releasing low-dose DHT. Control mice received a blank pellet. Four weeks after implantation, DHT-exposed Bnull muMt- developed a clear reproductive PCOS-like phenotype, exhibiting a disrupted estrous cycle (Figure 7a and b), arrested in the diestrus phase, along with longer anogenital distance (Figure 7c). Furthermore, while no difference in body weight was noted amongst the groups at implantation (Figure 7d), DHT-exposed muMt- mice gain higher body weight compared to controls already after 1 wk following implantation (Figure 7e), with increase both in total fat and lean mass (Figure 7f). When challenged to oGTT, DHT-exposed muMt- mice exhibited impaired glucose homeostasis, with higher fasting glucose levels (Figure 7g) and higher blood glucose score 90 min after administration compared to control (Figure 7h).
 
@@ -122,55 +416,331 @@ In conclusion, our study uncovers a previously unrecognized regulation via AR si
 
 ## Materials and methods
 
-## Human case–control explanatory study cohort
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6JRj</td>
+      <td>Janvier Labs</td>
+      <td></td>
+      <td>Female mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.129S7-Rag1,C57BL/6JRj</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR_JAX:002216</td>
+      <td>Breeding pairs, homozygous for Rag1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.129S2-Ighm, C57BL/6JRj</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR_JAX:002288</td>
+      <td>Breeding pairs, homozygous for Ighm</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD19-VioGreen,(clone REA675) (human monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_2726202</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human anti-IgD-VioBlue (clone IgD26)(mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_2659773</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD27-APC (clone M-T271)(mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_1036201</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD86-PE-Vio770 (clone FM95) (mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_275113</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD38-FITC (clone IB6) (mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_615091</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human anti-IgM-PE (clone PJ2-22H3) (mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>AB_1036088</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alkaline phosphatase (AP)-labeled (goat polyclonal) anti-human IgM</td>
+      <td>μ-chain specific; Sigma-Aldrich</td>
+      <td>n/a</td>
+      <td>1:50,000 in TBS BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alkaline phosphatase (AP)-labeled (goat polyclonal) anti-human IgG</td>
+      <td>γ-chain specific; Sigma-Aldrich</td>
+      <td>n/a</td>
+      <td>1:50,000 in TBS BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alkaline phosphatase (AP)-labeled (goat polyclonal) anti-human IgA</td>
+      <td>α-chain specific; Sigma-Aldrich</td>
+      <td>n/a</td>
+      <td>1:50,000 in TBS BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgD-Pacific Blue (clone 11–26c.2a) (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>AB_1937245 ( Cat#. 405711); AB_1937244 (Cat# 405712)</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19-BV480 (clone 1D3) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_2739509</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19-PE/Cyanine7 (clone 6D5) (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>AB_313654 (Cat# 115519); AB_313655 (Cat# 115520)</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45R/B220-FITC (clone RA3-6B2)(rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_394618</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD21/CD35-PE-CF594 (clone 7G6)(rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_2738511</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD138-PE/Cyanine7 Syndecan-1 (clone 281-2) (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>AB_2562197 (Cat# 142513);AB_2562198 (Cat# 142514)</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD27-APC (clone LG.3A10) (Armenian hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_1727455</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgM-APC/Cyanine7 (clone RMM-1) (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>AB_10690815 (Cat# 406515);AB_10660305 (Cat# 406516)</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD86-BV510 (clone GL1) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 563077;RRID:AB_2737991</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgM (μ-chain specific) (goat polyclonal M8644)</td>
+      <td>Sigma</td>
+      <td>MFCD00145913</td>
+      <td>2 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 RMG1-1 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>AB_315060 (Cat# 406601);AB_315061 (Cat# 406602)</td>
+      <td>2 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG2b (clone R9-91) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_394834</td>
+      <td>3 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG2c (STAR135) (goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>AB_1102666</td>
+      <td>1 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG3 (clone R2-38) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_394841</td>
+      <td>4 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgA (clone C10-3) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_396541</td>
+      <td>3 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 (clone A85-1) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>AB_393553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG2b (clone R12-3) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouseAffiniPure anti-mouse IgG, Fcγ subclass 2c specific, (goat polyclonal)</td>
+      <td>Jackson</td>
+      <td>JIR 115-065-208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG3 (clone R40-82) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgA (clone C10-1) (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiTrap Protein G HP purification column</td>
+      <td>Bio-Sciences AB</td>
+      <td>GE17-0404-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amicon Ultra-15 Centrifugal Filters</td>
+      <td>Merck Millipore</td>
+      <td>30 kDa MWCO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Automated chemiluminescence immunoassay</td>
+      <td>ADVIA Centaur XP</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ELISA kit</td>
+      <td>Crystal Chem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lumi-Phos</td>
+      <td>Lumigen</td>
+      <td></td>
+      <td>33% solution in water</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human case–control explanatory study cohort
 
 For our first aim, to evaluate B cell frequencies and particularly the distribution of DN B cells among women with PCOS, from September 2019 to March 2021, 42 women, all Caucasian ethnicity, were screened for a PCOS diagnosis at the Medical University Clinics in Graz (Austria) for either of the two main PCOS hyperandrogenic phenotypes. Phenotype A: clinical hyperandrogenemia, oligo- anovulation, and PCOM; or phenotype B: clinical hyperandrogenemia and oligo- anovulation. Clinical hyperandrogenism was assessed using the modified Ferriman–Gallwey (FG) score, with a self-reported score of 8 or higher indicating hirsutism (Yildiz et al., 2010). For total testosterone, a cut-off of 0.6 ng/mL (2.1 nmol/L) was used based on previously published data from a representative population sample (Lindheim et al., 2017). Oligo-/anovulation was defined as menstrual cycles with a duration >35 d or the absence of menstruation for three or more consecutive months. PCOM, diagnosed by a gynecological ultrasound, was assessed based on medical history. Thyroid disorder, congenital adrenal hyperplasia, Cushing’s syndrome, hyperprolactinemia, androgen-secreting tumors, and pregnancy were excluded by laboratory measurements of thyroid-stimulating hormone (TSH), 17-hydroxyprogesterone (17OH-P), cortisol, prolactin, pregnancy test, and clinical examination. Exclusion criteria considered multiple factors affecting participants’ immune and hormonal profiles, such as neoplastic, infectious, and autoimmune diseases as well as currently used hormonal contraceptives or immunomodulating drugs. The final analyses of fasting blood samples for B cell frequencies were performed from a group of 15 women with PCOS and 22 controls. Antibody variation titers were examined in the same cohort of women specifically in 15 PCOS and in 18 of the 22 controls. In the case of missing values due to lack of measurement, patients were excluded from the analysis report for that variable. All recruitment took place at the endocrinological Outpatient Clinic of the University Hospital Graz by routine doctors, and nurses involved in the project. All participants provided oral and written informed consent after a positive vote of the Ethics Committee of the Medical University Graz (EK 31-560 ex 18/19). The work here described has been carried out in accordance with The Code of Ethics of the World Medical Association (Declaration of Helsinki) for experiments involving humans. For the extraction of IgG, from February 2020 to October 2020, a second cohort of 10 women were randomly recruited to voluntarily participate in the study for transfer of purified antibodies. Seven women were diagnosed with PCOS, one did not fulfill the inclusion criteria and two decided to drop out, leaving four women with PCOS and four healthy donors. The diagnosis was conducted at the Medical University Clinics in Graz (Austria) according to the aforementioned criteria.
 
-## Clinical examination, blood sampling, and biochemical measurements
+### Clinical examination, blood sampling, and biochemical measurements
 
 Anthropometric measures included weight, height, waist circumference, and BMI, which was calculated as weight (kg)/height (m) (Gaberšček et al., 2015) and waist-to-hip circumference. Baseline fasting blood samples were drawn for each participant in serum, EDTA, and lithium heparin tubes. Hormonal levels were assessed in fasting serum samples: total and free testosterone, androstenedione, and progesterone were measured by liquid chromatography–tandem mass spectrometry as described elsewhere (Lindheim et al., 2017); sex hormone-binding globulin (SHBG), anti-Müllerian hormone (AMH), and insulin were measured by automated chemiluminescence immunoassay (ADVIA Centaur XP, Roche, Rotkreuz, Switzerland); serum luteinizing hormone (LH) and follicle-stimulating hormone (FSH) were measured by enzyme-linked immunosorbent assay (ELISA, DIAsource Immunoassay, Belgium); plasma total cholesterol, high-density lipoprotein (HDL) cholesterol, triglycerides, and glucose were measured by automated enzymatic colorimetric assay (Cobas, Roche, Germany). The area under the curve (AUC) for glucose and insulin was calculated from the oGTT using the trapezoidal method. Serum SHBG and testosterone were used to calculate the free androgen index as serum testosterone/SHBG ×100.
 
-## Chemiluminescent ELISA
+### Chemiluminescent ELISA
 
 Chemiluminescent ELISA of human samples was performed as described elsewhere (Hendrikx et al., 2016) for total IgM, IgG, and IgA. In brief, purified anti-human IgM, IgG, and IgA (BD Pharmingen, San Jose, CA) at concentrations of 5 μg/mL in 50 μL phosphate-buffered saline (PBS)-EDTA were added to each well of a 96-well white, round-bottom microtitration plate (MicrofluorII round-bottom; Thermo, Rochester, NY) and incubated overnight at 4°C. After washing and blocking with Tris-buffered saline (TBS) with or without EDTA (pH 7.4, containing 1% bovine serum albumin [BSA], 30 min at room temperature [RT]), the plate was incubated with plasma samples in their respective dilutions in 1% BSA in TBS with EDTA (pH 7.4) for 2 hr at RT or overnight at 4°C. Alkaline phosphatase (AP)-labeled goat anti-human IgM (μ-chain specific; Sigma-Aldrich, Vienna, Austria; 1:50,000 in TBS BSA), AP-labeled goat anti-human IgG (γ-chain specific; Sigma-Aldrich, Vienna, Austria; 1:50,000 in TBS BSA), and AP-labeled goat anti-human IgA (α-chain specific; Sigma-Aldrich, Vienna, Austria; 1:50,000 in TBS BSA) were used for detection. AP-conjugated secondary reagents were detected using Lumi-Phos (Lumigen, Southfield, MI; 33% solution in water) and a Synergy 2 Luminometer (BioTek, Winooski, VT). Washing steps were performed on an ELx405 Select Deep Well Microplate Washer (BioTek) with PBS or PBS-EDTA. Internal controls were included on each microtiter plate to detect potential variations between microtiter plates. The intra-assay coefficients of variation for all assays were 5–15%.
 
-## Lymphocyte phenotyping of human samples
+### Lymphocyte phenotyping of human samples
 
 Blood samples from the baseline visit were processed within 4 hr for analysis by flow cytometry as previously described (Schulz et al., 2021). Briefly, for B-cell phenotyping, PBMCs were isolated from lithium heparin whole blood by Ficoll gradient density centrifugation. One million PBMCs were incubated with the following antibodies: CD19-VioGreen (clone REA675), anti-IgD-VioBlue (clone IgD26), CD27-APC (clone M-T271), CD86-PE-Vio770 (clone FM95), CD38-FITC (clone IB6), and anti-IgM-PE (clone PJ2-22H3, all purchased from Miltenyi Biotec, Bergisch Gladbach, Germany). Samples were measured using a FACSLyric flow cytometer (BD Biosciences, Franklin Lakes, NJ). Data were analyzed using the FACSSuite (BD Biosciences).
 
-## Animals and study design
+### Animals and study design
 
 All mice experiments were carried out in compliance with the ARRIVE guidelines in accordance with the U.K. Animals (Scientific Procedures) Act, 1986, and associated guidelines, EU Directive 2010/63/EU for animal experiments. All animal experiments were approved by the Stockholm Ethical Committee for animal research (20485-2020) in accordance with the Swedish Board of Agriculture’s regulations and recommendations (SJVFS 2019:9) and controlled by Comparative Medicine Biomedicum at the Karolinska Institutet in Stockholm, Sweden. Mice were maintained under a 12 hr light/dark cycle and in a temperature-controlled room with ad libitum access to water and a diet. All mice were on female on C57BL/6J background. For the transfer of human IgG 24 five-week-old female C57BL/6JRj mice were obtained from Janvier Labs. Rag1 KO-/- were generated by breeding 10 male and 10 female B6.129S7-Rag1 (homozygous for Rag1) breeding pairs from Jackson Laboratory. For immune characterization of the peripubertal DHT-induced PCOS mice, 30 three-week-old female C57BL/6JRj mice were obtained from Janvier Labs and left to acclimatize for 1 wk. For the B cell reconstitution, 10 three-week-old female C57BL/6JRj mice were obtained from Janvier Labs to develop the peripubertal DHT-induced PCOS model. This peripubertal DHT-induced PCOS mouse model was developed by implanting a 5 mm silastic implant containing 2.0–2,5 mg of continuously releasing DHT according to previously published protocol (Xue et al., 2018), which was implanted subcutaneously in the neck region of 28–29-day-old C57BL/6JRj female mice. Surgery was performed under light anesthesia with isoflurane. Control mice were implanted with an empty, blank implant. To investigate androgen receptor activation, a third group received, in addition to the DHT implant, a 4.5 mm continuously releasing pellet containing 25 mg of flutamide (releasing time 90 d, Innovative Research of America, Cat# NA-152), an androgen receptor antagonist. Mice were randomly allocated to one of these three groups: control, DHT, and DHT-flutamide. A PCOS-like phenotype was fully developed after 3 weeks of exposure. MuMt- mutant mice were generated from 10 male and 10 female B6.129S2-Ighm (homozygous for Ighm) breeding pairs from Jackson Laboratory. No mice received further monthly implants.
 
-## Purification and transfer of IgG
+### Purification and transfer of IgG
 
 IgG from human sera was purified utilizing a HiTrap Protein G HP purification column (Bio-Sciences AB) according to the vendor’s instructions. Briefly, samples were centrifuged at 3000 RCF for 5 min at 4°C and supernatant was diluted 5× with binding buffer. The final elution containing IgG was dialyzed overnight at 4°C against endotoxin-free PBS and further filtered to obtain sterile antibody solution. IgG concentration in each sample was measured by QUBIT (Thermo Scientific) according to the vendor’s instructions and stored at –20°C. Samples from the serum of PCOS-affected women cohort or serum of the control group were separately pooled. The day before injection, samples were filtered and concentrated using Amicon Ultra-15 Centrifugal Filters (30 kDa MWCO – 15 mL sample volume) according to the vendor’s instructions (Merck Millipore). Briefly, samples were thawed and kept at 4°C the night before concentration; after filtering samples through sterile 0.22 µm syringe filter, desired concentration was obtained by spinning multiple times at 1000 × g/4°C until reaching final concentration of 4 mg/mL of IgG antibody in a total volume of 450 µL at injection days 1 and 3, and 365 µL at injection day 10 of endotoxin-free PBS. Final IgG concentration was measured once again by QUBIT (Thermo Scientific). 7-week-old female C57BL/6JRj mice, randomly divided into two study groups of six mice each, received purified human IgG (>98% pure) via i.p. injection in endotoxin-free PBS on days 1, 3, and 10. To assess the role of T cells mediating the response to IgG, the same procedure was repeated utilizing age-matched in-house bred mutant Rag1 KO-/- mice.
 
-## Assessment of reproductive phenotype
+### Assessment of reproductive phenotype
 
 In all groups, anogenital distance, a biomarker for androgen exposure, was measured at baseline and at sacrifice. For the transfer of human IgG, anogenital distance was measured 1 wk after first i.p. injection in both WT and RAG1 KO-/- mice. For immune characterization, anogenital distance was measured 3 wk after DHT/flutamide implantation. For B cell reconstitution, anogenital distance in reconstituted muMt- mice was measured 2 wk after reconstitution. Estrous cyclicity was assessed by daily vaginal smear for 12 consecutive days (three ovulatory cycles).
 
-## Assessment of metabolic phenotype
+### Assessment of metabolic phenotype
 
 Body weight development was recorded weekly. Body composition was assessed by magnetic resonance imaging (EchoMRI-100 system, Houston, TX) to measure total fat and lean mass in conscious mice. Glucose metabolism was measured by oGTT after a 5 hr fast. Mice received 2 mg per gram body weight of D-glucose (20% glucose in 0.9% NaCl) administrated by orally by gavage. Blood glucose was measured at baseline and at 15, 30, 60, and 90 min following glucose administration (Free Style Precision). Blood was collected in EDTA-coated capillary tubes at baseline and 15 min for insulin measurement by tail bleeding. Plasma separation is obtained by spinning the samples at 2000 × g for 10 min at 4°C and stored at – 20°C. Based on the study design for individual project objectives, for the transfer of human IgG as well as B cell reconstitution, mice were first assessed for oGTT when the expected effects from the transfer on glucose metabolism were most likely at their peak, followed by EchoMRI evaluation. For project characterization of DHT-induced PCOS-like mouse model as well as the characterization of androgen-exposed muMt- mouse model, mice were first screened through EchoMRI to measure total fat and lean mass and then subjected to an oGTT evaluation.
 
-## Biochemical assessment of insulin and sex steroids in mice
+### Biochemical assessment of insulin and sex steroids in mice
 
 Plasma insulin from oGTT was analyzed by an ELISA kit (Crystal Chem). Testosterone, androstenedione, estradiol, estrone, and progesterone were measured in serum using a high-sensitivity liquid chromatography–tandem mass spectrometry assay as previously described (Ohlsson et al., 2022).
 
-## Tissue collection and cell isolation
+### Tissue collection and cell isolation
 
 For the transfer of human IgG, C57BL/6JRj WT mice were sacrificed at 13–14 weeks of age. Rag1 KO-/- receiving human IgG were sacrificed at 16–17 weeks of age. For immune characterization of the peripubertal DHT-induced PCOS model, two independent experiments were conducted to evaluate separate timepoints: a first cohort of C57BL/6JRj mice were sacrificed at 20–22 weeks of age, while in a following assessment DHT-exposed C57BL/6JRj mice were sacrificed at 13–14 weeks of age. For the reconstitution of Bnull muMt- mice with splenic B cells following DHT exposure, a cohort of C57BL/6JRj mice were sacrificed at 8 weeks of age, 4 weeks after DHT implant, for the retrieval of spleen B cells. The B cell reconstituted muMt- mice were sacrificed at 11–12 weeks of age. For characterization of DHT-exposed MuMt- model, mice were sacrificed at 13–14 weeks of age. All mice were sacrificed based on their ovulatory cycle stage in metestrus or diestrus, assessed by vaginal smears less than 2 hr prior sacrifice. Mice were fasted for 2 hr and anesthetized with isoflurane (Isoflo vet, Orion Pharma Animal Health). Blood was drawn by cardiac puncture using a 21G needle; an aliquot of 150 µL was directly transferred to EDTA-coated tube, and placed on ice for FACS analysis. The remaining amount of blood was transferred to microvette capillary tubes (Sarstedt) for serum separation. After dissection, spleen and lymph nodes were kept on ice in PBS without Ca2+ and Mg2+ (DPBS). Ovaries, endometrium, and VAT tissues were maintained in RPMI containing 2% FBS on ice for cell isolation. For analysis of sex steroid, serum in aliquots of 250 µL was separated by centrifugation at 5000 × g for 10 min at 4°C.
 
-## Comprehensive B lymphocyte phenotyping of mice tissues
+### Comprehensive B lymphocyte phenotyping of mice tissues
 
 To obtain single cells, spleen and inguinal and retroperitoneal lymph nodes were directly passed through a nylon wool sieve (100 µm cell strainer). After centrifugation at 300 RCF at 4°C for 5 min, erythrocytes (in spleen) were hemolyzed in 1 mL red blood cell lysis buffer (RBC lyse buffer; 0.16 M NH4Cl, 0.13 mM EDTA, and 12 mM NaHCO3 in H2O), followed by a wash in 2 mL of FACS buffer (×2 the volume of RBC lysis). After a second centrifugation at 300 RCF at 4°C for 5 min, cells were resuspended in flow cytometry buffer (2% fetal bovine serum and 2 mM EDTA in PBS). Ovarian and uterus tissues were transferred into a 1 mL and 3 mL digestive mix (1 mg/mL collagenase type I from 210 U/mg, 0.8 U DNase I, RPMI, 2% FBS), respectively, minced by fine scissors and digested by gentle shaking for 15 and 20 min, respectively, at 37°C. To inactivate the enzymatic activity, 2 mL and 6 mL, respectively, of cold flow cytometry buffer was added to ovaries and uterus and placed on ice before grinding tissues through a 100 µm cell strainer. Samples were spun at 1000 × g for 7 min at 4°C and resuspended in flow cytometry buffer. VAT was minced by fine scissors in 5 mL digestive buffer based on RMPI containing 2% of FBS and 1 mg/mL collagenase type IV (type D, 0.15 U/mg) and digested by gentle shaking for 20–25 min at 37°C. To inactivate the enzymatic activity, 10 mL of cold flow cytometry buffer was added and placed on ice before filtering suspensions through 100 μm filter and further spinning at 500 × g for 5 min. The resuspended cell pellet was left for 30 s at RT in 500 µL RBC lyse buffer, then washed in 1 mL of FACS buffer (×2 the volume of RBC lysis) and centrifuged at 500 × g for 5 min at 4°C. Blood volume of approximately 120 µL was placed twice in 1 mL of RT RBC lysis buffer (for an approximate proportion of 1:10) for 5 and 2 min, respectively, each time diluted in 2 mL of flow cytometry buffer and spun at 380 × g for 5 min at 4°C. All tissue-deriving cells were plated on 96-well round-bottom plates and stained (Sarstedt, 83.3925.500) with FC-blocking antibody surface antigen staining (CD16/32, clone 2.4G2, BD Biosciences) diluted 1:100 in flow cytometry buffer, followed by incubation with the following antibodies: IgD-Pacific Blue (clone 11-26c.2a, BioLegend), CD19-BV480 or PE/Cyanine7 (clone 1D3, BD Biosciences, or clone 6D5, BioLegend, respectively), CD45R/B220-FITC (clone RA3-6B2, BD Biosciences), CD21/CD35-PE-CF594 (clone 7G6, BD Biosciences), CD138-PE/Cyanine7 (Syndecan-1, clone 281-2, BioLegend), CD27-APC (clone LG.3A10, BD Biosciences), IgM-APC/Cyanine7 (clone RMM-1, BioLegend), and CD86-BV510 (clone GL1, BD Biosciences). Samples were measured using a FACS Canto II flow cytometer (BD Biosciences). Data were analyzed using FlowJo (BD Biosciences).
 
-## Total antibody quantification in plasma by ELISA
+### Total antibody quantification in plasma by ELISA
 
 Chemiluminescent ELISA was performed as described elsewhere (Tsiantoulas et al., 2021). Total IgM, IgG1, IgG2b, IgG2c, IgG3, and IgA antibodies in plasma were measured by ELISA. In brief, 96-well white round-bottomed MicroFluor microtiter plates (Thermo Lab Systems) or immunoGrade, 96-well, PS Standard plates (781724; Brand) were coated with an anti-mouse IgM (Sigma; M8644; at 2 μg/mL), anti-mouse IgG1 (BioLegend; RMG1-1; at 2 μg/mL), anti-mouse IgG2b (BD Biosciences; R9-91; at 3 μg/mL), anti-mouse IgG2c (STAR135; at 1 μg/mL), anti-mouse IgG3 (BD Biosciences; R2-38; at 4 μg/mL), or anti-mouse IgA (BD Biosciences; C10-3; at 3 μg/mL) in PBS overnight and then washed three times with PBS and blocked with Tris-buffered saline containing 1% BSA (TBS/BSA) for 1 hr at RT. Then wells were washed with either PBS (plates for IgM, IgG2b, and IgG2c) or PBS supplemented with 0.05% Tween (plates for IgG1, IgG3, and IgA), and diluted mouse plasma was added in TBS/BSA to the wells and incubated overnight at 4°C. Plates were washed, and bound Igs were detected with an anti-mouse IgM antibody conjugated to alkaline phosphatase (Sigma; A9688), the biotinylated forms of anti-mouse IgG1 (BD Biosciences; A85-1) or anti-mouse IgG2b (BD Biosciences; R12-3), anti-mouse IgG2c (JIR 115-065-208), anti-mouse IgG3 (BD Biosciences; R40-82), or anti-mouse IgA (BD Biosciences; C10-1). Wells were washed again as before and neutravidin conjugated to alkaline phosphatase was added where appropriate. Then, wells were washed again as before and rinsed once with distilled water, and 25 μL of a 30% LumiPhos Plus solution in dH2O (Lumigen Inc) was added. After 75 min, the light emission was measured with a Synergy 2 luminometer (BioTek) and expressed as RLU per 100 ms.
 
-## Statistics
+### Statistics
 
 For statistical evaluation, Prism (version 9; GraphPad Software) and SPSS (version 28.0; SPSS) were used. All continuous data were screened for normality by Shapiro–Wilk test and equality of variance. Normally distributed data were compared using unpaired Student’s t-tests, and when not normally distributed differences between groups were compared using Mann–Whitney U-test. Differences between more than two groups were determined by ANOVA followed by Tukey’s post hoc test. Differences were considered statistically significant at p<0.05. One patient or one animal was considered a biological replicate. In the case of missing values, patients or animals were excluded from the analysis for that variable.
 

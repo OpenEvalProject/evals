@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.48630.001 Insulin signaling controls metabolic homeostasis. Here, we report the cryo-EM structure of full-length insulin receptor (IR) and insulin complex in the active state. This structure unexpectedly reveals that maximally four insulins can bind the ‘T’-shaped IR dimer at four distinct sites related by 2-fold symmetry. Insulins 1 and 1’ bind to sites 1 and 1’, formed by L1 of one IR protomer and α-CT and FnIII-1 of the other. Insulins 2 and 2’ bind to sites 2 and 2’ on FnIII-1 of each protomer. Mutagenesis and cellular assays show that both sites 1 and 2 are required for optimal insulin binding and IR activation. We further identify a homotypic FnIII-2–FnIII-2 interaction in mediating the dimerization of membrane proximal domains in the active IR dimer. Our results indicate that binding of multiple insulins at two distinct types of sites disrupts the autoinhibited apo-IR dimer and stabilizes the active dimer.
+Insulin signaling controls metabolic homeostasis. Here, we report the cryo-EM structure of full-length insulin receptor (IR) and insulin complex in the active state. This structure unexpectedly reveals that maximally four insulins can bind the ‘T’-shaped IR dimer at four distinct sites related by 2-fold symmetry. Insulins 1 and 1’ bind to sites 1 and 1’, formed by L1 of one IR protomer and α-CT and FnIII-1 of the other. Insulins 2 and 2’ bind to sites 2 and 2’ on FnIII-1 of each protomer. Mutagenesis and cellular assays show that both sites 1 and 2 are required for optimal insulin binding and IR activation. We further identify a homotypic FnIII-2–FnIII-2 interaction in mediating the dimerization of membrane proximal domains in the active IR dimer. Our results indicate that binding of multiple insulins at two distinct types of sites disrupts the autoinhibited apo-IR dimer and stabilizes the active dimer.
 
 ## Introduction
 
@@ -31,11 +31,132 @@ Here, we report the cryo-EM structure of the full-length human IR–insulin comp
 
 ## Results
 
-## Overall structure of full-length human IR bound to insulin
+### Overall structure of full-length human IR bound to insulin
 
 We expressed and purified the full-length human insulin receptor (IR) using human HEK293F cells as the expression system (Figure 1—figure supplement 1A,B).), and reconstituted the IR–insulin complex in vitro. To improve the expression yield, we introduced several mutations in the intracellular domain of IR, including the D1120N mutation that inactivates its kinase activity and the Y960F mutation that has been shown to reduce clathrin-mediated endocytosis of IR (White et al., 1988; Choi et al., 2019). To exclude the possibility that the detergent micelles could affect insulin binding, we performed in vitro insulin binding assays. Recombinant IR isolated with detergent binds insulin with high affinity and displays strong negative cooperativity (Hill coefficients of ~0.62), comparable to our and other’s cell-based insulin-binding results (Figure 1—figure supplement 1C,D) (De Meyts et al., 1973).
 
 During cryo-EM image processing, initial 3D classification was produced without any symmetry imposed. All the resolved 3D reconstructions, however, exhibited almost perfect 2-fold symmetry (Figure 1—figure supplement 2), suggesting that insulins bind to the majority of IR in a symmetrical manner. The final refinement and reconstruction of the entire complex was thus performed with 2-fold symmetry applied, and was determined at an overall resolution of 3.2 Å (Figure 1A, and Figure 1—figure supplement 3, and Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig1-v3.jpg)
+
+**Figure 1.:** (A) 3D reconstruction of the IR dimer with four insulins bound (left) and the corresponding ribbon representation of this complex (right). (B) 3D reconstruction of IR dimer with four insulins bound after forced 3D refinement (left) and the corresponding ribbon representation (right).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A representative size-exclusion chromatogram of IR. The peak fractions were visualized on SDS–PAGE by Coomassie staining, in the absence or presence of DTT. Most of IR was processed into α-chain and β-chain. (B) Domain organization of IR. Regions that are not built in the model are drawn with dashed lines. C647 and C860 make an intra-protomer α/β disulfide bond. C524–C524 and C683–C683 make inter-protomer disulfide bonds. (C) Binding of insulin labeled with Alexa Fluor 488 to purified IR WT or IR site two mutant (Mean ± SD). Each experiment was repeated three times. Significance calculated using two-tailed student t-test; between WT and mutants; ****p<0.0001. (D) Representative western blot images of the amount of IR in C.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig1-figsupp2-v3.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative electron micrograph and 2D class averages of the IR–insulin complex. (B) Unsharpened cryo-EM map colored by local resolution. (C) The gold-standard Fourier shell correlation curve for the cryo-EM map shown in Figure 1B. (D) FSC curves for the refined model versus the summed map (black curve), the refined model versus half map 1 (red curve), and the refined model versus half map two that was not used for refinement (green curve). (E) Euler angle distribution of particles used in the final 3D reconstructions.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative densities of the cryo-EM map of each domain of IR, insulins 1 and 2 are shown. (B) Cryo-EM density of the transmembrane (TM) domain. Inset, close-up view of the TM domain. The TM sequence was not assigned due to the lack of clear side-chain densities.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Symmetry expanded focused classification on insulin two with signal subtraction of IR. (B) The classification resulted three types of insulin occupancies of IR with different populations.
+
+**Table 1.**
+ Cryo-EM data collection and model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>IR-insulin complex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>46,730</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>1.5 – 3</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td>Final particle number</td>
+      <td>235,707</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Map Sharpening B factor</td>
+      <td>−100</td>
+    </tr>
+    <tr>
+      <td>Model Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rms deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Angels (°)</td>
+      <td>0.885</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.66</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>3.36</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>90.52</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>9.33</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.15</td>
+    </tr>
+  </tbody>
+</table>
 
 To further improve the resolution, we performed a focused refinement (as described in our previous work, Wong et al., 2014) for the top part of the IR–insulin complex, including the L1, CR, L2, and FnIII-1 domains of IR as well as all the bound insulins. As a result, the resolution for the top part of the complex was improved to 3.1 Å (Figure 1B), allowing us to build a nearly complete atomic model for this region (Figure 1B, Figure 1—figure supplements 2 and 4). The cryo-EM densities for the FnIII-2 and FnIII-3 domains were less well resolved, presumably due to structural flexibility. Nevertheless, the crystal structures of FnIII-2 and FnIII-3 domains can be unambiguously docked into the cryo-EM density (Figure 1A), based on clear secondary structural features (Figure 1—figure supplement 4A). The cryo-EM density for the transmembrane domain (TM) can only be visualized after further 3D classification with local angular search (Figure 1—figure supplements 2 and 4B), but cannot be modeled due to the lack of side-chain densities. The densities of kinase domains were completely unresolved in the cryo-EM map.
 
@@ -49,7 +170,7 @@ Insulin has a molecular weight of ~6 kDa, which is much smaller than that of IR
 
 During the revision of this manuscript, another study deposited in the preprint server bioRxiv also showed a low-resolution cryo-EM map of the IR extracellular domain with four insulins bound at sites 1 and 2 (Gutmann et al., 2019). The 3:1 or 4:1 stoichiometry of insulin binding to the IR dimer and the two types of binding sites are consistent with previous IR–insulin binding assays that indicated the coexistence of high- and low-affinity insulin-binding sites (Schäffer, 1994). Those results were, however, interpreted with a binding equilibrium of 2:1 stoichiometry, and in light of our findings here may need to be reexamined.
 
-## A tripartite interface between insulin 1 and site 1 stabilizes the active IR dimer
+### A tripartite interface between insulin 1 and site 1 stabilizes the active IR dimer
 
 Insulin 1 binds mainly through the primary site formed by the L1 domain and α-CT (Figure 2A, left panel). Based on our cryo-EM map, we cannot distinguish whether the α-CT is from the same protomer or the neighboring one, as the density of the linker between L1 domain and α-CT is completely missing in our structure. Nevertheless, based on previous biochemical and structural results (Chan et al., 2007), IR is an intertwined domain-swapped homodimer. Thus, the two elements that constitute this primary site, the L1 domain and α-CT, are from two different IR protomers. This primary insulin–IR interface is nearly identical to that observed in the crystal structure of the IR extracellular domain bound to insulin (Menting et al., 2013), and will not be described in detail. To confirm that insulin binding to this site is essential for IR activation, we introduced R14E (Whittaker and Whittaker, 2005) and F714A mutations into IR to disrupt this interface, and showed that both IR R14E and F714A mutants, when expressed in human 293 cells, exhibited deficient insulin-dependent IR activation (Figure 2B, and 2C).
 
@@ -65,15 +186,50 @@ To test the functional relevance of site 1b, we mutated the residue Phe497 of IR
 
 Taken together, binding of insulin 1 to IR site 1 involves a tripartite interface: insulin–L1/α-CT (site 1a), insulin–FnIII-1 loop (site 1b), and α-CT–FnIII-1 loop (site 1b). Thus, insulin 1 simultaneously engages site 1a and 1b to bridge the two IR protomers. We propose that this strong tripartite interaction is critical for the formation of the ‘T’-shaped active IR dimer by driving the rearrangement of the two IR protomers. Conceptually, the binding mode of insulin 1 is reminiscent of the ‘crosslinking’ model proposed previously, except that this insulin crosslinks two sub-sites of site 1, as opposed to sites 1 and 2.
 
-## Insulin 2 binds to a novel binding site on the FnIII-1 domain of IR
+### Insulin 2 binds to a novel binding site on the FnIII-1 domain of IR
 
 We have identified a novel insulin-binding site for insulin 2 binding, which is located on the back side of a major β sheet of the FnIII-1 domain (Figure 3A, and 3C). Residues from both A and B chains of insulin 2 contribute to this interaction (Figure 3B). These residues are located on the side of insulin opposite to that involved in the binding to site 1, and largely overlap with those in the insulin hexamer interface (Table 2) (Weiss, 2009). Several basic residues from IR FnIII-1, including Arg479, Lys484, Arg488, and Arg554, participate in this interaction (Figure 3B). In addition, hydrophobic residues from IR FnIII-1, such as Leu486, Leu552, and Pro537, pack tightly against residues Leu A13, Tyr A14, Leu A16, Leu B6, Ala B14, Leu B17, and Val B18 in insulin (Figure 3B, and Table 2). Many site 2 residues are conserved in vertebrate IR proteins, but some are not conserved in the IGF1R (Figure 3—figure supplement 1). We superimposed the model of receptor-bound insulin 2 onto that of free insulin, which was previously determined by X-ray crystallography (PDB: 1MSO) (Smith et al., 2003). This comparison revealed no major structural differences between the free and bound insulin.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig3-v3.jpg)
+
+**Figure 3.:** (A) Overall view of the two distinct insulin-binding sites. (B) Close-up view of insulin-binding site 2. (C) Cartoon representation of the IR–insulin complex depicting the two distinct types of insulin-binding sites (total of 4 sites per IR dimer related by 2-fold symmetry). (D) Insulin-induced IR autophosphorylation in 293FT cells expressing IR wild-type (WT) or the indicated site 2 mutants, assessed by quantitative western blotting with a phospho-tyrosine (pY) IRβ antibody. Kinase dead mutant (D1120A) was used as a negative control. Expression levels of IRβ are monitored by anti-Myc blotting against the C-terminal Myc-tag. (E) Quantification of the western blot data shown in D (Mean ± SD). Each experiment was repeated three times. Significance calculated using two-tailed students t-test; between WT and mutants, *p<0.05, **p<0.01, and ****p<0.0001. (F) Dose-responsive curves of the insulin-stimulated autophosphorylation of wild-type (WT) IR or IR mutants (Mean ± SD). Site 1 mutant, R14E; site 2 mutant K484E/L552A; site 1/2 mutant, R14E/K484E/L552A. Significance calculated using One-way ANOVA with Brown-Forsythe test; between WT and mutants, p<0.0001. See Figure 3—figure supplement 2A. (G) Binding of insulin labeled with Alexa Fluor 488 to 293FT cells expressing IR WT or IR mutants (Mean ± SD). Significance calculated using One-way ANOVA with Brown-Forsythe test; between WT and site 2 mutant, p<0.0001. Symbols are the same as in F. (H) Binding of insulin labeled with Alexa Fluor 488 to 293FT cells expressing IR WT or IR mutants at 800 pM concentration of insulin. Significance calculated using two-tailed students t-test; between WT and mutants, **p<0.01, and ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The insulin-binding site residues are marked.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Western blots of insulin-dependent IR autophosphorylation in 293FT cells expressing Myc-tagged IR wild-type (WT), site 1 mutant (R14E), site 2 mutant (K484E/L552A), or site 1/2 mutant (R14E/K484E/L552A). Expression levels of IR were monitored by the anti-Myc blots of the C-terminal Myc-tag. This results were used to generate Figure 3F. (B) Coomassie blue-stained SDS-PAGE gel of IR WT and site 2 mutant proteins under reducing conditions (+DTT). (C) Binding of insulin labeled with Alexa Fluor 488 to purified IR WT or IR site 2 mutant in the indicated conditions (Mean ± SD). Each experiment was repeated three times. Significance calculated using two-tailed students t-test; between WT and mutants, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48630/elife-48630-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative images of IR WT and mutants. 239FT cells were transfected with Myc-tagged IR WT or mutants, serum starved, and stained with anti-Myc (IR; red) antibody and DAPI (blue). Scale bars, 5 μm. (B) Quantification of the ratios of plasma membrane (PM) and intracellular compartment (IC) IR-Myc signals of cells in A (mean ± SD; ****p<0.0001).
+
+**Table 2.**
+ Summary of the insulin and IR residues involved in site 2 binding.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Insulin residues</th>
+      <th>IR residues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ile A10, Ser A12, Leu A13, Tyr A14, Leu A16, Glu A17, Gln B4, Leu B6, His B10, Glu B13, Ala B14, Leu B17, Val B18, Glu B21</td>
+      <td>Tyr477, Arg479, Ser481, Asp483, Lys484, Leu486, Arg488, Asp535, Pro537, Asn547, Pro549, Gly550, Trp551, Leu552</td>
+    </tr>
+  </tbody>
+</table>
 
 Most of the insulin residues involved in the binding to site 2, which include Ile A10, Ser A12, Leu A13, Glu A17, His B10, Glu B13, and Leu B17, have been correctly mapped by alanine scanning mutagenesis in the previous work (De Meyts, 2015; Kristensen et al., 1997), and these insulin site 2 mutations markedly reduced receptor-binding affinity (De Meyts, 2015; Kristensen et al., 1997). Importantly, most of these previously defined site 2 residues of insulin do not contact IR at site 1b. Thus, the previous study (Scapin et al., 2018) has incorrectly assigned site 1b as site 2. Our structure of the IR–insulin complex has revealed the authentic site 2 of IR–insulin binding and represents the first structure of the fully liganded, active IR.
 
 Next, we introduced multiple mutations in IR (Y477A, R479E, K484E, R488E, P536A, P537A, L552A, and R554E) designed to weaken this insulin 2-binding interface. Consistent with our structure-based predictions, all these IR mutants showed decreased insulin-dependent activation (Figure 3D, and 3E). Among them, the K484E and L552A mutants were the most defective. In a dose-response assay, the IR K484E/L552A double mutant (site 2 mutant) was defective in insulin-dependent activation in a wide range of insulin concentrations (Figure 3F and Figure 3—figure supplement 2A), although the effect of this site 2 mutation was not as severe as that of the site 1 R14E mutation. Furthermore, both cell-based and in vitro insulin-binding assays showed that the IR site 2 K484E/L552A mutant indeed exhibited much weaker insulin-binding affinity, as compared to wild-type IR, particularly at the physiological concentrations of insulin (Figure 3G and H, Figure 1—figure supplement 1C, Figure 3—figure supplement 2B and C). Moreover, all site 2 IR mutants can localize to the plasma membrane, similar to wild-type IR (Figure 3—figure supplement 3), suggesting that the introduced mutations are unlikely to induce protein mis-localization or misfolding. These results validate the importance of insulin 2 binding to site 2 of IR in insulin-dependent activation of IR.
 
-## Hinge motions of IR protomers upon insulin binding
+### Hinge motions of IR protomers upon insulin binding
 
 The structures of the L1/CR segment and the FnIII-1/-2/-3 segment of insulin-bound IR can be superimposed perfectly onto those of apo-IR, suggesting that no domain rotations occur in these two structural segments during insulin binding. However, the overall structure of the IR protomer with insulin bound is more compacted, as a result of two large hinge motions around the L2 domain (Figure 4A, B and C). Such rigid-body rotations have been previously described (Scapin et al., 2018), but the structural details of these rearrangement cannot be elucidated due to the moderate resolution and incompleteness of the active IR dimer in that study.
 
@@ -89,7 +245,7 @@ The α-CT domain plays a critical role in stabilizing the active conformation of
 
 Finally, we have identified a homotypic interaction between the FnIII-2 domains of the two active IR protomers. The FnIII-2–FnIII-2 interaction is mediated by residues 647–653 in an extended loop (Figure 2D). Due to the lack of the side chain densities, the details of this interaction are unclear. This interaction is likely to be functionally important, however, as mutation of Lys649, which is located in the center of this dimer interface, diminished IR activation, whereas mutation of Lys652, which is at the periphery of this interface, had no effect (Figure 2E, and 2F). Similar homotypic interactions between membrane-proximal domains have been found in other RTKs (Yuzawa et al., 2007). These interactions are thought to precisely position the two stalk domains at the cell membrane and help to bring the two intracellular kinase domains into proximity for trans-autophosphorylation.
 
-## Mechanism of IR activation by multi-site insulin binding
+### Mechanism of IR activation by multi-site insulin binding
 
 Our mutagenesis results have shown that optimal IR activation requires the binding of multiple insulins to both sites 1 and 2 (Figure 3F and G, Figure 1—figure supplement 1C and Figure 3—figure supplement 2). In addition, our 3D classification results further suggest that binding of at least one insulin to the two site 2 s is required for the formation of the ‘T’-shaped dimer. According to the cryo-EM structure, formation of the active IR dimer is mainly driven by the tripartite interface formed by insulin 1, L1, α-CT, and FnIII-1 at site 1. This raises the interesting question why insulin 2 promotes IR activation.
 
@@ -121,7 +277,437 @@ We also do not know for certain how many insulins are required for IR activation
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot Stbl3 Chemically Competent E .coli</td>
+      <td>Life Technologies</td>
+      <td>C7373-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10Bac bacteria</td>
+      <td>Thermo Fisher</td>
+      <td>10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>293FT, Human embryonic kidney</td>
+      <td>Invitrogen</td>
+      <td>R70007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293 GnTI--, Human embryonic kidney</td>
+      <td>ATCC</td>
+      <td>CRL-3022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293, Human embryonic kidney</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor WT-MYC</td>
+      <td>Choi et al., 2016</td>
+      <td></td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor R14E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay, In vivo insulin-binding assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor P495A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor D496K-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor F497A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor D1120A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor R498E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor K703A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor F714A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor K649E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor K652E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor Y477A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor R479E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor K484E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor R488E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor P536A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor P537A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor L552A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor R554E-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor K484E,L552A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay, In vivo insulin-binding assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor R345A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor E697A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor E695A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin receptor R14E,K484E,L552A-MYC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay, In vivo insulin-binding assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pCS2-human Insulin recetor Y960F, S962A, R1333A, I1334A, L1335A, L1337A-Myc</td>
+      <td>Choi et al., 2016</td>
+      <td></td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pEZT-BM-human Insulin receptor (Y960F, S962A, D1120N, R1333A, I1334A, L1335A, L1337A)−3C-Tsi3-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay, In vivo insulin-binding assay</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pEZT-BM-human Insulin receptor (K484E, L552A, Y960F, S962A, D1120N, R1333A, I1334A, L1335A, L1337A)−3C-Tsi3-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods, subsection: Insulin receptor activation assay, In vivo insulin-binding assay</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-IR-pY1150/1151</td>
+      <td>Cell signaling</td>
+      <td>19H7</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-MYC</td>
+      <td>Roche</td>
+      <td>Clone 9E10</td>
+      <td>WB (1:1000), IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG (H+L) (Dylight 800 conjugates)</td>
+      <td>Cell signaling</td>
+      <td>5151</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (H+L) (Dylight 680 conjugates)</td>
+      <td>Cell signaling</td>
+      <td>5470</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Micro BCA Protein Assay Kit</td>
+      <td>Thermo Scientific</td>
+      <td>23235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 488</td>
+      <td>Thermo Scientific</td>
+      <td>A10235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 site directed mutagenesis kit</td>
+      <td>NEB</td>
+      <td>E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>NEB</td>
+      <td>E2611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>5056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosSTOP</td>
+      <td>Roche</td>
+      <td>4906837001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BMS536924</td>
+      <td>Tocris</td>
+      <td>4774</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CytExpert 2.1</td>
+      <td>Beckman Coulter</td>
+      <td></td>
+      <td>https://www.beckman.com/flow-cytometry/instruments/cytoflex/software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protparam</td>
+      <td>ExPASy</td>
+      <td></td>
+      <td>https://web.expasy.org/protparam/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sepharose 4B resin</td>
+      <td>GE Healthcare</td>
+      <td>17012001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superose 6 Increase 10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>29091596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 75 increase 10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>29148721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G</td>
+      <td>Invitrogen</td>
+      <td>10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM, high glucose</td>
+      <td>Thermo Fisher</td>
+      <td>11965–118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce NHS-Activated Agarose, Dry</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>26197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon Ultra-15 Centrifugal Filter Units</td>
+      <td>Milliporesigma</td>
+      <td>UFC9100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon Ultra-0.5 Centrifugal Filter Units</td>
+      <td>Milliporesigma</td>
+      <td>UFC5100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil R 1.2/1.3 grid Au300</td>
+      <td>quantifoil</td>
+      <td>Q37572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold Antifade reagent with DAPI</td>
+      <td>Invitrogen</td>
+      <td>P36935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cellfectin</td>
+      <td>Invitrogen</td>
+      <td>10362100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human Insulin</td>
+      <td>Sigma</td>
+      <td>I2643</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 The amino acid numbering for IR starts after the signal peptide. For the activation assay, the short isoform of human insulin receptor (IR) was cloned into pCS2-MYC as described previously (Choi et al., 2016). For structural studies, a cDNA fragment encoding human IR with seven mutations (Y960F, S962A, D1120N, R1333A, I1334A, L1335A, L1337A), followed by the Human Rhinovirus 3C recognition site, affinity purification tag Tsi3 (T6SS secreted immunity protein three from Pseudomonas aeruginosa) and His8 tag, was cloned into the pEZT-BM vector (Morales-Perez et al., 2016). The mutations were designed to prevent IR endocytosis.
 
@@ -129,11 +715,11 @@ This plasmid was transformed into the DH10Bac bacteria (Thermo Fisher, 10361012)
 
 IR was firstly purified by affinity purification using the strong binding between the T6SS effector Tse3 and its immunity protein Tsi3 (Lu et al., 2014) and further polished by gel filtration chromatography. Briefly, Cells were harvested, resuspended in buffer A [20 mM Hepes pH 7.5, 400 mM NaCl, 5% glycerol and one tablet of cOmplete Protease Inhibitor Cocktail (Roche)] and lysed by sonication. Lysate was centrifuged for 60 min at 45,000 g to pellet the membranes. The pellet containing the membrane fraction was resuspended in the buffer A containing 1% n-Dodecyl-β-D-Maltopyranoside (DDM) and 0.1% Cholesteryl Hemisuccinate (CHS) (D310-CH210 Anatrace). After incubation at 4°C for 3 hr on the bottle roller, the insoluble parts were removed by centrifugation for 60 min at 45,000 g. The supernatant was supplemented with 2 mM CaCl2 and loaded on to the Tse3-conjugated sepharose 4B resin (GE heathcare). The resin was washed with buffer A containing 2 mM CaCl2, 0.03% DDM, and 0.003% CHS. The HRV3C protease was added to the resin in the washing buffer and incubated for 12 hr at 4°C. Untagged IR was eluted from the resin and applied to the size exclusion chromatography (Superose 6 Increase 10/300 GL GE Health care) in the final buffer [20 mM Hepes pH 7.5, 200 mM NaCl, 0.03% DDM, and 0.003% CHS]. The peak fractions were mixed with human insulin (I2643, Sigma) in a 1:2 molar ratio and concentrated with Amicon Ultra concentrator 100 kD cut off (Millipore) to approximately 7 mg/ml. two additional molar equivalents of insulin were added to the final sample to saturate the binding.
 
-## EM data acquisition
+### EM data acquisition
 
 The cryo-EM grid was prepared by applying 3 μl of protein samples to glow-discharged Quantifoil R1.2/1.3 300-mesh gold holey carbon grids (Quantifoil, Micro Tools GmbH, Germany). Grids were blotted for 5.0 s under 100% humidity at 4°C before being plunged into liquid ethane using a Mark IV Vitrobot (FEI). Micrographs were acquired on a Titan Krios microscope (FEI) operated at 300 kV with a K2 Summit direct electron detector (Gatan), using a slit width of 20 eV on a GIF-Quantum energy filter. EPU software (FEI) was used for automated data collection following standard FEI procedures. A calibrated magnification of 46,730X was used for imaging, yielding a pixel size of 1.07 Å on images. The defocus range was set from −1.5 μm to −3 μm. Each micrograph was dose-fractionated to 30 frames under a dose rate of 4 e-/pixel/s, with a total exposure time of 15 s, resulting in a total dose of about 50 e-/Å2.
 
-## Image processing
+### Image processing
 
 The detailed image processing statistics are summarized in Figure 1—figure supplements 2 and 3, and Table 1. Motion correction was performed using the MotionCorr2 program (Zheng et al., 2017), and the CTF parameters of the micrographs were estimated using the GCTF program (Zhang, 2016). Initially,~2000 particles were picked with EMAN2 from a few micrographs (Tang et al., 2007). All other steps of image processing were performed using RELION (Scheres, 2012a; Scheres, 2012b). Class averages representing projections in different orientations selected from the initial 2D classification were used as templates for automatic particle picking from the full datasets. Extracted particles were binned three times and subjected to 2D classification. Particles from the classes with fine structural features were selected for 3D classification. Approximately 20,000 particles were selected to generate the initial model in RELION. Particles from the 3D classes showing good secondary structural features were selected and re-extracted into the original pixel size of 1.07 Å. 3D refinements with C2 symmetry imposed resulted in 3D reconstructions to 3.2 Å resolution. To improve the resolution, we performed another round of 3D refinement with a soft mask around the top part of complex, leading to improved resolution for this region. Moreover, we classified the refined particles set by using local search in combination with small angular sampling, resulting a new class showing improved density for TM domain.
 
@@ -141,28 +727,28 @@ To separate the particles with different insulin occupancies, we performed focus
 
 All resolutions were estimated by applying a soft mask around the protein density using the gold-standard Fourier shell correlation (FSC) = 0.143 criterion (Scheres and Chen, 2012c).
 
-## Model building and refinement
+### Model building and refinement
 
 Model building of the IR–insulin complex was initiated by docking each individual domain derived from the crystal structures of IR (PDB ID: 4ZXB; Croll et al., 2016) and insulin (PDB ID: 1MSO; Smith et al., 2003) into the high-resolution map from the focused refinement in the program Chimera (Pettersen et al., 2004). The model was manually adjusted in Coot (Emsley et al., 2010) and refined against the map by using the real space refinement module with secondary structure and non-crystallographic symmetry restraints in the Phenix package (Adams et al., 2010). To check for potential model overfitting, the coordinates in the model were refined against one of the half maps calculated from half of the dataset in RELION. The FSC curve from this model and map was only slightly worse than that calculated from the refined model and the summed map, suggesting no overfitting. The crystal structures of FnIII-2/3 domains were rigid-body fitted into the cryo-EM density in Chimera (Pettersen et al., 2004), showing good agreement. Model geometries were assessed by using Molprobity as a part of the Phenix validation tools and summarized in Table 1.
 
-## Insulin receptor activation assay
+### Insulin receptor activation assay
 
 293FT cells (R70007, Invitrogen) were cultured in high-glucose DMEM supplemented with 10% (v/v) FBS, 2 mM L-glutamine, and 1% penicillin/streptomycin. Cells were free from mycoplasma contamination. Plasmid transfection was performed with LipofectamineTM 2000 (Invitrogen). After 1 day, the cells were serum starved for 14 hr and treated with 10 nM of human insulin (I2643, Sigma) or the indicated concentrations for 5 min. The cells were washed with cold PBS and incubated with the cell lysis buffer [50 mM Hepes pH 7.4, 150 mM NaCl, 10% (v/v) Glycerol, 1% (v/v) Triton X-100, 1 mM EDTA, 100 mM sodium fluoride, 2 mM sodium orthovanadate, 20 mM sodium pyrophosphate, 0.5 mM dithiothreitol (DTT), 2 mM phenylmethylsulfonyl fluoride (PMSF)] supplemented with cOmplete Protease Inhibitor Cocktail (Roche) and PhosSTOP (Roche) on ice for 1 hr. After centrifugation at 20,817 g at 4°C for 20 min, the concentrations of cell lysate were measured using Micro BCA Protein Assay Kit (Thermo Scientific). Cell lysates (50 µg total proteins) were analyzed by SDS-PAGE and Western blotting. Anti-IR-pY1150/1151 (19H7, Cell signaling; labeled as pY IRβ) and anti-MYC (9E10, Roche; labeled as IRβ) were used as primary antibodies. For quantitative Western blots, anti-rabbit immunoglobulin G (IgG) (H+L) (Dylight 800 conjugates) and anti-mouse IgG (H+L) (Dylight 680 conjugates) (Cell signaling) were used as secondary antibodies. The membranes were scanned with the Odyssey Infrared Imaging System (LI-COR, Lincoln, NE). Levels of pY IRβ were normalized to total IRβ levels and shown as intensities relative to that of IR WT in untreated cells.
 
-## In vivo insulin-binding assay
+### In vivo insulin-binding assay
 
 To conjugate insulin with Alexa Fluor 488 (A10235, Thermo Scientific), human insulin (I2643, Sigma) was dissolved in 20 mM Hepes pH 7.5, 100 mM NaCl, and 2 mM EDTA, and Alexa Fluor 488 NHS Ester was dissolved in dimethylsulfoxide (DMSO). Insulin and the dye were mixed in a molar ratio of 1:2 and incubated for 12 hr at 4°C. Labeled Insulin was separated from the free dye by size exclusion chromatography (Superdex 75 increase 10/300 GL, GE Healthcare) in the buffer containing 20 mM Hepes pH 7.5, 100 mM NaCl, and 2 mM EDTA. The insulin-binding assay was performed as described previously with slight modifications (Murphy et al., 1982). Briefly, plasmid transfection was performed with LipofectamineTM 2000 into 293FT cells. After 1 day, the cells were serum starved for 14 hr. To inhibit insulin receptor endocytosis, the plates were then changed to serum free DMEM containing the IR/IGF1R inhibitor BMS536924 (1 μM; Tocris) for an additional 1 hr before insulin treatment. The medium was replaced with serum-free DMEM containing Alexa Fluor 488-labeled insulin at the indicated concentrations. After 5 min of incubation in CO2 incubators at 37°C, the medium was removed and the plates were washed with cold PBS. Cells were dissociated in 0.5 mM EDTA in PBS at 37°C for 5 min, transferred into conical tubes, centrifuged for 5 min at 200 g at 4°C. After two more washes with cold PBS, the cells were resuspended in 300 μl of cold PBS and transferred into tubes for FACS analysis. Samples were kept on ice and analyzed within 30 min. The samples were analyzed on a Cytoflex Flow Cytometer (Beckman Coulter). At least 10,000 cells were analyzed for each sample. Mean fluorescence intensities were calculated with the software CytExpert 2.1 (Beckman Coulter). Nonspecific binding was measured in untransfected control cells and subtracted from the data.
 
-## In vitro insulin-binding assay
+### In vitro insulin-binding assay
 
 For in vitro insulin-binding assay, cDNA fragments encoding human IR with seven mutations (Y960F, S962A, D1120N, R1333A, I1334A, L1335A, L1337A; insulin binding site wild-type) and nine mutations (K484E, L552A, Y960F, S962A, D1120N, R1333A, I1334A, L1335A, L1337A; insulin binding site two mutant), followed by the human Rhinovirus 3C recognition site, affinity purification tag Tsi3 and His8 tag, were cloned into the pEZT-BM vector. Protein was expressed with suspension-adapted HEK293 cells as described in Protein expression and purification.
 
 40 μg of anti-IRβ antibody (sc-57342; Santa Cruz Biotechnology) was added to 12 mg of Dynabeads Protein G (Invitrogen) in 400 μl PBS, and incubated for 1 hr at room temperature. After a single wash, the beads were resuspended in 400 μl of binding buffer [20 mM Hepes pH 7.5, 200 mM NaCl, 0.03% DDM, and 0.003% CHS]. The indicated amount of IR Alexa Fluor 488 labeled insulin, and 100 nM of BSA were incubated in 200 μl of binding buffer containing cOmplete protease inhibitor Cocktail (Roche) for 2 hr on ice. 10 μl beads were added and incubated on a rotator for 30 min at room temperature. The beads were washed two times with the binding buffer. The bound proteins were eluted with 50 μl of binding buffer containing 2% SDS for 10 min at 50°C. The samples were diluted with 150 μl of binding buffer. The fluorescence intensities were measured in a microplate reader (CLARI0star; BMG LABTECH). Nonspecific binding was measured in samples of Alexa Fluor 488 labeled insulin and 100 nM of BSA without IR, and subtracted from the data. The samples were analyzed by SDS-PAGE and Western blotting. IR concentration was estimated using molecular weight 305,276.92 Da in the dimeric receptor as calculated by Protparam (ExPASy).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Indirect immunofluorescence microscopy was performed on cells grown on chamber slides and fixed in cold methanol at −20°C for 10 min. The fixed cells were washed with cold acetone twice and incubated with PBS for 30 min and blocking buffer [3% BSA and 0.1% (v/v) TritonX-100 in PBS] for 1 hr, and then treated with diluted antibodies in blocking buffer at 4°C overnight. After being washed, cells were incubated with fluorescent secondary antibodies and mounted in ProLong Gold Antifade reagent with DAPI (Invitrogen). Images were acquired and analyzed as previously described (Choi et al., 2016).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The number of independent experiment, the method used in statistical test, and the statistical significance are indicated in each figure legend and source manuscript files.

@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04dese585 Centre for Neuroscience & Department of Electrical Communication Engineering, Indian Institute of Science Bangalore India
+1. Centre for Neuroscience & Department of Electrical Communication Engineering, Indian Institute of Science Bangalore India ([ROR:04dese585](https://ror.org/04dese585))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Many visual tasks involve looking for specific objects or features, such as a fr
 
 To start with, these tasks appear completely different, at least in the way we describe them verbally. Even theoretical studies have considered visual search (Verghese, 2001; Wolfe and Horowitz, 2017), same-different judgments (Nickerson, 1969; Petrov, 2009) and symmetry detection (Wagemans, 1997; Bertamini and Makin, 2014) as conceptually distinct tasks. However, we note that at a deeper level, these tasks are similar because they all involve discriminating between items with repeating features from those without repeating features. We reasoned that if images with repeating features are somehow represented differently in the brain, this difference could be used to solve all such tasks without requiring separate computations for each task.
 
-## Key predictions
+### Key predictions
 
 Our key predictions are summarized in Figure 2. Consider an oddball search task where participants have to indicate if a display contains an oddball target (Figure 2A) or not (Figure 2B). According to the well-known principle of divisive normalization in high-level visual cortex (Zoccolan et al., 2005; Agrawal et al., 2020; Katti and Arun, 2022), the neural response to multiple objects is the average of the single object responses. Accordingly, the response to an array of identical items will be the same as the response to the single item. Similarly, the response to an array containing a target among distractors, being a mix of images, would lie along the line joining the target and distractor in underlying representational space. These possibilities are shown for all possible arrays made from three objects in Figure 2C. It can be seen that the homogeneous (target-absent) arrays naturally stand apart since they contain repeating items, whereas the heterogeneous (target-present) arrays come closer to each other since they contain a mixture of items. Since displays with repeating items are further away from the center of this space, this distance can be used to discriminate them from heterogeneous displays (Figure 2C, inset). While this decision process may not capture all types of visual search, we reasoned that it could potentially guide the initial stages of target selection.
 
@@ -40,7 +40,7 @@ We define this distance from the center for each image as its visual homogeneity
 
 Second, if VH is encoded by a dedicated brain region, then brain activity in that region will be positively correlated with VH (Figure 2H). Such a positive correlation cannot be explained easily by cognitive processes linked to response time such as attention or task difficulty, since response times will have zero correlation with the mean activity of this region.
 
-## Overview of this study
+### Overview of this study
 
 The above predictions are based on computing distances in an underlying neural representation that is the basis for a variety of visual tasks. We drew upon the principle that object representations in high-level visual cortex match strongly with perceived dissimilarity measured in visual search (Sripati and Olson, 2010; Zhivago and Arun, 2014; Agrawal et al., 2020). We therefore asked whether distance-to-center or visual homogeneity computations, performed on object representations estimated empirically from dissimilarity measurements, could explain the behavior and brain imaging predictions laid out in the preceding section (Figure 2).
 
@@ -50,7 +50,7 @@ We performed two sets of experiments to test our key predictions. In the first s
 
 In Experiments 1–2, we investigated whether visual homogeneity computations could explain decisions about targets being present or absent in an array. Since visual homogeneity requires measuring distance in perceptual space, we set out to first characterize the underlying representation of a set of natural objects using measurements of perceptual dissimilarity.
 
-## Measuring perceptual space for natural objects
+### Measuring perceptual space for natural objects
 
 In Experiment 1, 16 human participants viewed arrays made from a set of 32 grayscale natural objects, with an oddball on the left or right (Figure 3A), and had to indicate the side on which the oddball appeared using a key press. Participants were highly accurate and consistent in their responses during this task (accuracy, mean ± sd: 98.8 ± 0.9%; correlation between mean response times of even- and odd-numbered participants: r=0.91, p<0.0001 across all 32C2=496 object pairs). The reciprocal of response time is a measure of perceptual distance (or dissimilarity) between the two images (Arun, 2012). To visualize the underlying object representation, we performed a multidimensional scaling analysis, which embeds objects in a multidimensional space such that their pairwise dissimilarities match the experimentally observed dissimilarities (see Materials and methods). The resulting two-dimensional embedding of all objects is shown in Figure 3B. In the resulting plot, nearby objects correspond to hard searches, and far away objects correspond to easy searches. Such representations reconstructed from behavioural data closely match population neural responses in high-level visual areas (Op de Beeck et al., 2001; Sripati and Olson, 2010). To capture the object representation accurately, we took the multidimensional embedding of all objects and treated the values along each dimension as the responses of an individual artificial neuron. We selected the number of dimensions in the multidimensional embedding so that the correlation between the observed and embedding dissimilarities matches the noise ceiling in the data. Subsequently, we averaged these single object responses to obtain responses to larger visual search arrays, as detailed below.
 
@@ -58,7 +58,7 @@ In Experiment 1, 16 human participants viewed arrays made from a set of 32 grays
 
 **Figure 3.:** (A) Example search array in an oddball search task (Experiment 1). Participants viewed an array containing identical items except for an oddball present either on the left or right side, and had to indicate using a key press which side the oddball appeared. The reciprocal of average search time was taken as the perceptual distance between the target and distractor items. We measured all possible pairwise distances for 32 grayscale natural objects in this manner. (B) Perceptual space reconstructed using multidimensional scaling performed on the pairwise perceptual dissimilarities. In the resulting plot, nearby objects represent hard searches, and far away objects represent easy searches. Some images are shown at a small size due to space constraints; in the actual experiment, all objects were equated to have the same longer dimension. The correlation on the top right indicates the match between the distances in the 2D plot with the observed pairwise distances (**** is p<0.00005). (C) Example display from Experiment 2. Participants performed this task inside the scanner. On each trial, they had to indicate whether an oddball target is present or absent using a key press. (D) Predicted response to target-present and target-absent arrays, using the principle that the neural response to multiple items is the average of the individual item responses. This predicts that target-present arrays become similar due to mixing of responses, whereas target-absent arrays stand apart. Consequently, these two types of displays can be distinguished using their distance to a central point in this space. We define this distance as visual homogeneity, and it is obtained by finding the optimum center that maximizes the difference in correlations with response times (see Methods). (E) Mean visual homogeneity relative to the optimum center for target-present and target-absent displays. Error bars represent s.e.m across all displays. Asterisks represent statistical significance (**** is p<0.00005, unpaired rank-sum test comparing visual homogeneity for 32 target-absent and 32 target-present arrays). (F) Response time for target-present searches in Experiment 2 plotted against visual homogeneity calculated from Experiment 1. Asterisks represent statistical significance of the correlation (**** is p<0.00005). Note that a single model is fit to find the optimum center in representational space that predicts the response times for both target-present and target-absent searches. (G) Response time for target-absent searches in Experiment 2 plotted against visual homogeneity calculated from Experiment 1. Asterisks represent statistical significance of the correlation (**** is p<0.00005).
 
-## Visual homogeneity predicts target present/absent judgments (Experiments 1-2)
+### Visual homogeneity predicts target present/absent judgments (Experiments 1-2)
 
 Having characterized the underlying perceptual representation for single objects, we set out to investigate whether target present/absent responses during visual search can be explained using this representation. In Experiment 2, 16 human participants viewed an array of items on each trial, and indicated using a key press whether there was an oddball target present or not (Figure 3C). This task was performed inside an MRI scanner to simultaneously observe both brain activity and behaviour. Participants were highly accurate and consistent in their responses (accuracy, mean ± sd: 95 ± 3%; correlation between average response times of even- and odd-numbered participants: r=0.86, p<0.0001 across 32 target-present searches, r=0.63, p<0.001 across 32 target-absent searches).
 
@@ -66,7 +66,7 @@ Next we set out to predict the responses to target-present and target-absent sea
 
 We denoted the distance of each display to the optimized center as the visual homogeneity. As expected, the visual homogeneity of target-present arrays was significantly smaller than target-absent arrays (Figure 3E). The resulting model predictions are shown in Figure 3F–G. The response times for target-present searches were positively correlated with visual homogeneity (r=0.68, p<0.0001; Figure 3F). By contrast, the response times for target-absent searches were negatively correlated with visual homogeneity (r=–0.71, p<0.0001; Figure 3G). This is exactly as predicted if visual homogeneity is the underlying decision variable (Figure 2G). We note that the range of visual homogeneity values for target-present and target-absent searches do overlap, suggesting that visual homogeneity contributes but does not fully determine task performance. Rather, we suggest that visual homogeneity provides a useful and initial first guess at the presence or absence of a target, which can be refined further through detailed scrutiny.
 
-## Confirming the generality of visual homogeneity
+### Confirming the generality of visual homogeneity
 
 We performed several additional analysis to confirm the generality of our results, and to reject alternate explanations.
 
@@ -82,23 +82,23 @@ Fifth, the above results are based on taking the neural response to oddball arra
 
 Finally, we performed several additional experiments on a larger set of natural objects as well as on silhouette shapes. In all cases, present/absent responses were explained using visual homogeneity (Appendix 3).
 
-## Conclusions
+### Conclusions
 
 These findings are non-trivial for several reasons. First, we have shown that a specific decision variable, computed over an underlying object representation, can be used to make target present/absent judgements, without necessarily knowing the precise features of the target or distractor. Second, we have identified a specific image property that explains why target-absent response times vary so systematically. If target-distractor dissimilarity were the sole determining factor in visual search, it would predict no systematic variation in target-absent searches since the target-distractor dissimilarity is zero. Our results elucidate this puzzle by showing that visual homogeneity varies systematically across images, and that this explains systematic variation in target-absent response times. To the best of our knowledge, our model provides for the first time a unified explanation to explain how target present/absent judgements might be made in a generic visual search task.
 
 In sum, we conclude that visual homogeneity can explain oddball target present/absent judgements during visual search.
 
-## Visual homogeneity predicts same/different responses
+### Visual homogeneity predicts same/different responses
 
 We have proposed that visual homogeneity can be used to solve any task that requires discriminating between homogeneous and heterogeneous displays. In Experiments 1–2, we have shown that visual homogeneity predicts target present/absent responses in visual search. We performed an additional experiment to assess whether visual homogeneity can be used to solve an entirely different task, namely a same-different task. In this task, participants have to indicate whether two items are the same or different. We note that instructions to participants for the same/different task (‘you have to indicate if the two items are same or different’) are quite different from the visual search task (‘you have to indicate whether an oddball target is present or absent’). Yet both tasks involve discriminating between homogeneous and heterogeneous displays. We therefore predicted that ‘same’ responses would be correlated with target-absent judgements and ‘different’ responses would be correlated with target-present judgements. Remarkably, this was indeed the case (Appendix 4), demonstrating that same/different responses can also be predicted using visual homogeneity.
 
-## Visual homogeneity is independent of experimental context
+### Visual homogeneity is independent of experimental context
 
 In the above analyses, visual homogeneity was calculated for each display as its distance from an optimum center in perceptual space. This raises the possibility that visual homogeneity could be modified depending on experimental context since it could depend on the set of objects relative to which the visual homogeneity is computed. We performed a number of experiments to evaluate this possibility: we found that target-absent response times, which index visual homogeneity, are unaffected by a variety of experimental context manipulations (Appendix 5).
 
 We therefore propose that visual homogeneity is an image-computable property that remains stable across tasks. Moreover, it can be empirically estimated as the reciprocal of the target-absent response times in a visual search task.
 
-## A localized brain region encodes visual homogeneity (Experiment 2)
+### A localized brain region encodes visual homogeneity (Experiment 2)
 
 So far, we have found that target present/absent response times had opposite correlations with visual homogeneity (Figure 3F–G), suggesting that visual homogeneity is a possible decision variable for this task. Therefore, we reasoned that visual homogeneity may be localized to specific brain regions, such as in the visual or prefrontal cortices. Since the task in Experiment 2 was performed by participants inside an MRI scanner, we set out to investigate this issue by analyzing their brain activations.
 
@@ -112,15 +112,15 @@ To ensure that the high match between visual homogeneity and neural activations 
 
 To confirm that neural activations in VH region are not driven by other cognitive processes linked to response time, such as attention, we performed a whole-brain searchlight analysis using response times across both target-present and target-absent searches. Proceeding as before, we calculated the correlation between mean activations to the target-present, target-absent and all displays with the respective response times. The resulting maps show that mean activations in the VH region are uncorrelated with response times overall (Appendix 6). By contrast, activations in EVC and LO are negatively correlated with response times, suggesting that faster responses are driven by higher activation of these areas. Finally, mean activation of parietal and prefrontal regions were strongly correlated with response times, consistent with their role in attentional modulation (Appendix 6).
 
-## Object representations in LO match with visual search dissimilarities
+### Object representations in LO match with visual search dissimilarities
 
 To investigate the neural space on which visual homogeneity is being computed, we performed a dissimilarity analysis. Since target-absent displays contain multiple instances of a single item, we took the neural response to target-absent displays as a proxy for the response to single items. For each pair of objects, we took the neural activations in a 3 x 3 × 3 neighborhood centered around a given voxel and calculated the Euclidean distance between the two 27-dimensional response vectors (averaged across participants). In this manner, we calculated the neural dissimilarity for all 32C2=496 pairs of objects used in the experiment, and calculated the correlation between the neural dissimilarity in each local neighborhood and the perceptual dissimilarities for the same objects measured using oddball search in Experiment 1. The resulting map is shown in Figure 4B. It can be seen that perceptual dissimilarities from visual search are best correlated in the lateral occipital region, consistent with previous studies (Figure 4E). To compare these trends across key visual regions, we performed this analysis for early visual cortex (EVC), area V4, LO and for the newly identified region VH (average MNI coordinates (x, y, z): (−48,–59, –6) with 111 voxels in the left hemisphere; (49, -56, -7) with 60 voxels in the right hemisphere). Perceptual dissimilarities matched best with neural dissimilarities in LO compared to the other visual regions (Figure 4E). We conclude that neural representations in LO match with perceptual space. This is concordant with many previous studies (Haushofer et al., 2008; Kriegeskorte et al., 2008; Agrawal et al., 2020; Storrs et al., 2021; Ayzenberg et al., 2022).
 
-## Equal weights for target and distractor in target-present array responses
+### Equal weights for target and distractor in target-present array responses
 
 In the preceding sections, visual homogeneity was calculated using behavioural experiments assuming a neural representation that gives equal weights to the target and distractor. We tested this assumption experimentally by asking whether neural responses to target-present displays can be predicted using the response to the target and distractor items separately. The resulting maps revealed that target-present arrays were accurately predicted as a linear sum of the constituent items, with roughly equal weights for the target and distractor (Appendix 6).
 
-## Visual homogeneity predicts symmetry perception (Experiments 3-4)
+### Visual homogeneity predicts symmetry perception (Experiments 3-4)
 
 The preceding sections show that visual homogeneity predicts target present/absent responses as well same/different responses. We have proposed that visual homogeneity can be used to solve any task that involves discriminating homogeneous and heterogeneous displays. In Experiments 3 and 4, we extend the generality of these findings to an entirely different task, namely symmetry perception. Here, asymmetric objects are akin to heterogeneous displays whereas symmetric objects are like homogeneous displays.
 
@@ -138,7 +138,7 @@ To confirm that the above model fits are not due to overfitting, we performed a 
 
 In sum, we conclude that visual homogeneity can predict symmetry perception. Taken together, these experiments demonstrate that the same computation (distance from a center) explains two disparate property-based visual tasks: symmetry perception and visual search.
 
-## Visual homogeneity is encoded by the VH region during symmetry detection
+### Visual homogeneity is encoded by the VH region during symmetry detection
 
 If visual homogeneity is a decision variable for symmetry detection, it could be localized to specific regions in the brain. To investigate this issue, we analyzed the brain activations of participants in Experiment 4.
 
@@ -160,11 +160,11 @@ Finally, we compared neural dissimilarities and perceptual dissimilarities in ea
 
 In sum, our results suggest that visual homogeneity is encoded by the VH region, using object representations present in the adjoining LO region.
 
-## Target-absent responses predict symmetry detection
+### Target-absent responses predict symmetry detection
 
 So far, we have shown that visual homogeneity predicts target present/absent responses in visual search as well as symmetry detection responses. These results suggest a direct empirical link between these two tasks. Specifically, since target-absent response time is inversely correlated with visual homogeneity, we can take its reciprocal as an estimate of visual homogeneity. This in turn predicts opposite correlations between symmetry detection times and reciprocal of target-absent response time: in other words, we should see a positive correlation for asymmetric objects, and a negative correlation for symmetric objects. We confirmed these predictions using additional experiments (Appendix 9). These results reconfirm that a common decision variable, visual homogeneity, drives both target present/absent and symmetry judgements.
 
-## Visual homogeneity explains animate categorization
+### Visual homogeneity explains animate categorization
 
 Since visual homogeneity is always calculated relative to a location in perceptual space, we reasoned that shifting this center towards a particular object category would make it a decision variable for object categorization. To test this prediction, we reanalyzed data from a previous study in which participants had to categorize images as belonging to three hierarchical categories: animals, dogs or Labradors (Mohan and Arun, 2012). By adjusting the center of the perceptual space measured using visual search, we were able to predict categorization responses for all three categories (Appendix 10). We further reasoned that, if the optimum center for animal/dog/Labrador categorization is close to the default center in perceptual space that predicts target present/absent judgements, then even the default visual homogeneity, as indexed by the reciprocal of target-absent search time, should predict categorization responses. Interestingly, this was indeed the case (Appendix 10). We conclude that, at least for the categories tested, visual homogeneity computations can serve as a decision variable for object categorization.
 
@@ -172,7 +172,7 @@ Since visual homogeneity is always calculated relative to a location in perceptu
 
 Here, we investigated three disparate visual tasks: detecting whether an oddball is present in a search array, deciding if two items are same or different, and judging whether an object is symmetric/asymmetric. Although these tasks are superficially different in the way we describe them, our key insight is that they all involve discriminating between homogeneous and heterogeneous displays. We defined a new image property computable from the underlying perceptual representation, namely visual homogeneity, that can be used to solve these tasks. Visual homogeneity predicted response times in all three tasks. Finally, visual homogeneity estimated from behavior was best correlated with mean activations in a region anterior to the lateral occipital cortex. This finding strongly suggests a specific function to this part of the high-level visual cortex. Below we discuss these findings in relation to the existing literature.
 
-## Visual homogeneity unifies visual search, same-different and symmetry tasks
+### Visual homogeneity unifies visual search, same-different and symmetry tasks
 
 Our main finding, that a single decision variable (visual homogeneity) can be used to solve three disparate visual tasks (visual search, same/different and symmetry detection) is novel to the best of our knowledge. This finding is interesting and important because it establishes a close correspondence between all three tasks, and explains some unresolved puzzles in each of these tasks, as detailed below.
 
@@ -182,13 +182,13 @@ Second, with regards to same-different tasks, most theoretical accounts use sign
 
 Third, with regard to symmetry detection, most theoretical accounts assume that symmetry is explicitly detected using symmetry detectors along particular axes (Wagemans, 1997; Bertamini and Makin, 2014). By contrast, our findings indicate an indirect mechanism for symmetry detection that does not invoke any special symmetry computations. We show that visual homogeneity computations can easily discriminate between symmetric and asymmetric objects. This is because symmetric objects have high visual homogeneity since they have repeated parts, whereas asymmetric objects have low visual homogeneity since they have disparate parts (Pramod and Arun, 2018). In a recent study, symmetry detection was explained by the average distance of objects relative to other objects (Pramod and Arun, 2018). This finding is consistent with ours since visual homogeneity is correlated with the average distance to other objects (Appendix 1). However, there is an important distinction between these two quantities. Visual homogeneity is an intrinsic image property, whereas the average distance of an object to other objects depends on the set of other objects on which the average is being computed. Indeed, we have confirmed through additional experiments that visual homogeneity is independent of experimental context (Appendix 4). We speculate that visual homogeneity can explain many other aspects of symmetry perception, such as the relative strength of symmetries.
 
-## Visual homogeneity in other visual tasks
+### Visual homogeneity in other visual tasks
 
 Our finding that visual homogeneity explains property-based visual tasks has several important implications for visual tasks in general. First, we note that visual homogeneity can be easily extended to explain other property-based tasks such as delayed match-to-sample tasks or n-back tasks, by taking the response to the test stimulus as being averaged with the sample-related information in working memory. In such tasks, visual homogeneity will be larger for sequences with repeated compared to non-repeated stimuli, and can easily be used to solve the task. Testing these possibilities will require comparing systematic variations in response times in these tasks across images, and measurements of perceptual space for calculating visual homogeneity.
 
 Second, we note that visual homogeneity can also be extended to explain object categorization, if one assumes that the center in perceptual space for calculating visual homogeneity can be temporarily shifted to the center of an object category. In such tasks, visual homogeneity relative to the category center will be small for objects belonging to a category and large for objects outside the category, and can be used as a decision variable to solve categorization tasks. This idea is consistent with prevalent accounts of object categorization (Stewart and Morin, 2007; Ashby and Maddox, 2011; Mohan and Arun, 2012). Indeed, categorization response times can be explained using perceptual distances to category and non-category items (Mohan and Arun, 2012). By reanalyzing data from this study, we have found that, at least for the animate categories tested, visual homogeneity can explain categorization responses (Appendix 9). However, this remains to be tested in a more general fashion across multiple object categories.
 
-## Neural encoding of visual homogeneity
+### Neural encoding of visual homogeneity
 
 We have found that visual homogeneity is encoded in a specific region of the brain, which we denote as region VH, in both visual search and symmetry detection tasks (Figures 4D and 5D). This finding is consistent with observations of norm-based encoding in IT neurons (Leopold et al., 2006) and in face recognition (Valentine, 1991; Rhodes and Jeffery, 2006; Carlin and Kriegeskorte, 2017). However, our findings are significant because they reveal a dedicated region in high-level visual cortex for solving property-based visual tasks.
 
@@ -204,13 +204,13 @@ Second, previous studies have reported larger brain activations for symmetric ob
 
 Finally, our results are consistent with the greater activity observed for objects with shared features observed in ventral temporal cortex during naming tasks (Taylor et al., 2012; Tyler et al., 2013). Our study extends these observations by demonstrating an empirical measure for shared feature (target-absent times in visual search) and encoding of this empirical measure into a localized region in object selective cortex across many tasks. We speculate that visual homogeneity may at least partially explain semantic concepts such as those described in these studies.
 
-## Relation to image memorability and saliency
+### Relation to image memorability and saliency
 
 We have defined a novel image property, visual homogeneity, which refers to the distance of a visual image to a central point in the underlying perceptual representation. It can be reliably estimated for each image as the inverse of the target-absent response time in a visual search task (Figure 3) and seems to be an intrinsic image property that is unaffected by the immediate experimental context (Appendix 4).
 
 At the outset, the way we have defined visual homogeneity suggests that it could be related to other empirically measured quantities such as image memorability, or saliency. It has long been noted that faces that are rated as being distinctive or unusual are also easier to remember (Murdock, 1960; Valentine and Bruce, 1986a; Valentine and Bruce, 1986b; Valentine, 1991). Recent studies have elucidated this observation by showing that there are specific image properties that predict image memorability (Bainbridge et al., 2017; Lukavský and Děchtěrenko, 2017; Rust and Mehrpour, 2020). However, image memorability, as elegantly summarized in a recent review (Rust and Mehrpour, 2020), could be driven by a number of both intrinsic and extrinsic factors. Likewise, saliency is empirically measured as the relative proportion of fixations towards an image, and could be driven by top-down as well as by bottom-up factors (Eimer, 2014; Peelen and Kastner, 2014). Since visual homogeneity, image memorability and saliency are all empirically measured in different tasks, it would be interesting to compare how they are related on the same set of images.
 
-## Conclusions
+### Conclusions
 
 Taken together, our results show that many property-based visual tasks can be solved using visual homogeneity as a decision variable, which is localized to a specific region anterior to the lateral occipital cortex. While this does not explain all possible variations of these tasks, our study represents an important first step in terms of demonstrating a quantitative, falsifiable model and a localized neural substrate. We propose further that visual homogeneity computations might contribute to a variety of other visual tasks as well, and these would be interesting possibilities for future work.
 
@@ -218,114 +218,114 @@ Taken together, our results show that many property-based visual tasks can be so
 
 All participants had a normal or corrected-to-normal vision and gave informed consent to an experimental protocol approved by the Institutional Human Ethics Committee of the Indian Institute of Science (IHEC # 6–15092017). Participants provided written informed consent before each experiment and were monetarily compensated.
 
-## Experiment 1. Oddball detection for perceptual space (natural objects)
+### Experiment 1. Oddball detection for perceptual space (natural objects)
 
-## Participants
+#### Participants
 
 A total of 16 participants (8 males, 22±2.8 years) participated in this experiment.
 
-## Stimuli
+#### Stimuli
 
 The stimulus set comprised a set of 32 grayscale natural objects (16 animate, 16 inanimate) presented against a black background.
 
-## Procedure
+#### Procedure
 
 Participants performed an oddball detection task with a block of practice trials involving unrelated stimuli followed by the main task. Each trial began with a red fixation cross (diameter 0.5°) for 500ms, followed by a 4x4 search array measuring 30° x 30° for 5 s or until a response was made. The search array always contained one oddball target and 15 identical distractors, with the target appearing equally often on the left or right. A vertical red line divided the screen equally into two halves to facilitate responses. Participants were asked to respond as quickly and as accurately as possible using a key press to indicate the side of the screen containing the target ('Z' for left, M’ for right). Incorrect trials were repeated later after a random number of other trials. Each participant completed 992 correct trials (32C2 object pairs x 2 repetitions with either image as target). The experiment was created using PsychoPy (Peirce et al., 2019) and ported to the online platform Pavlovia for collecting data.
 
 Since stimulus size could vary with the monitor used by the online participants, we equated the stimulus size across participants using the ScreenScale function (https://doi.org/10.17605/OSF.IO/8FHQK). Each participant adjusted the size of a rectangle on the screen such that its size matched the physical dimensions of a credit card. All the stimuli presented were then scaled with the estimated scaling function to obtain the desired size in degrees of visual angle, assuming an average distance to screen of 60 cm.
 
-## Data analysis
+#### Data analysis
 
 Response times faster than 0.3 s or slower than 3 s were removed from the data. This step removed only 1.25% of the data and improved the overall response time consistency, but did not qualitatively alter the results.
 
-## Characterizing perceptual space using multidimensional scaling
+#### Characterizing perceptual space using multidimensional scaling
 
 To characterize the perceptual space on which present/absent decisions are made, we took the inverse of the average response times (across trials and participants) for each image pair. This inverse of response time (i.e. 1/RT) represents the dissimilarity between the target and distractor (Arun, 2012), indexes the underlying salience signal in visual search (Sunder and Arun, 2016) and combines linearly across a variety of factors (Pramod and Arun, 2014; Pramod and Arun, 2016; Jacob and Arun, 2020). Since there were 32 natural objects in the experiment and all possible (32C2=496) pairwise searches in the experiment, we obtained 496 pairwise dissimilarities overall. To calculate target-present and target-absent array responses, we embedded these objects into a multidimensional space using multidimensional scaling analysis (mdscale function; MATLAB 2019). This analysis finds the n-dimensional coordinates for each object such that pairwise distances between objects best matches with the experimentally observed pairwise distances. We then treated the activations of objects along each dimension as the responses of a single artificial neuron, so that the response to target-present arrays could be computed as the average of the target and distractor responses.
 
-## Experiment 2. Target present-absent search during fMRI
+### Experiment 2. Target present-absent search during fMRI
 
-## Participants
+#### Participants
 
 A total of 16 subjects (11 males; age, mean ± sd: 25±2.9 years) participated in this experiment. Participants with history of neurological or psychiatric disorders, or with metal implants or claustrophobia were excluded through screening questionnaires.
 
-## Procedure
+#### Procedure
 
 Inside the scanner, participants performed a single run of a one-back task for functional localizers (block design, object vs scrambled objects), eight runs of the present-absent search task (event-related design), and an anatomical scan. The experiment was deployed using custom MATLAB scripts written using Psychophysics Toolbox (Brainard, 1997).
 
-## Functional localizer runs
+#### Functional localizer runs
 
 Participants had to view a series of images against a black background and press a response button whenever an item was repeated. On each trial, 16 images were presented (0.8 s on, 0.2 s off), containing one repeat of an image that could occur at random. Trials were combined into blocks of 16 trials each containing either only objects or only scrambled objects. A single run of the functional localizers contained 12 such blocks (6 object blocks and 6 scrambled-object blocks). Stimuli in each block were chosen randomly from a larger pool of 80 naturalistic objects with the corresponding phase-scrambled objects (created by taking the 2D Fourier transform of each image, randomly shuffling the Fourier phase, and performing the Fourier inverse transform). This is a widely used method for functional localization of object-selective cortex. In practice, however, we observed no qualitative differences in our results upon using voxels activated during these functional localizer runs to further narrow down the voxels selected using anatomical masks. As a result, we did not use the functional localizer data, and all the analyses presented here are based on anatomical masks only.
 
-## Visual search task
+#### Visual search task
 
 In the present-absent search task, participants reported the presence or absence of an oddball target by pressing one of two buttons using their right hand. The response buttons were fixed for a given participant and counterbalanced across participants. Each search array had eight items, measuring 1.5° along the longer dimension, arranged in a 3x3 grid, with no central element to avoid fixation biases (as shown in Figure 3C). The entire search array measured 6.5°, with an average inter-item spacing of 2.5°. Item positions were jittered randomly on each trial according to a uniform distribution with range ±0.2°. Each trial lasted 4 s (1 s ON time and 3 s OFF time), and participants had to respond within 4 s. Each run had 64 unique searches (32 present, 32 absent) presented in random order, using the natural objects from Experiment 1. Target-present searches were chosen randomly from all possible searches such that all 32 images appeared equally often. Target-absent searches included all 32 objects. The location of the target in the target-present searches was chosen such that all eight locations were sampled equally often. In this manner, participants performed 8 such runs of 64 trials each.
 
-## Data acquisition
+#### Data acquisition
 
 Participants viewed images projected on a screen through a mirror placed above their eyes. Functional MRI (fMRI) data were acquired using a 32-channel head coil on a 3T Skyra (Siemens, Mumbai, India) at the HealthCare Global Hospital, Bengaluru. Functional scans were performed using a T2*-weighted gradient-echo- planar imaging sequence with the following parameters: repetition time (TR)=2 s, echo time (TE)=28ms, flip angle = 79°, voxel size = 3 × 3×3 mm3, field of view = 192 × 192 mm2, and 33 axial-oblique slices for whole-brain coverage. Anatomical scans were performed using T1-weighted images with the following parameters: TR = 2.30 s, TE = 1.99ms, flip angle = 9°, voxel size = 1 × 1×1 mm3, field of view = 256 × 256×176 mm3.
 
-## Data preprocessing
+#### Data preprocessing
 
 The raw fMRI data were preprocessed using Statistical Parametric Mapping (SPM) software (Version12; Welcome Center for Human Neuroimaging; https://www.fil.ion.ucl.ac.uk/spm/software /spm12/), running on MATLAB 2019b. Raw images were realigned, slice-time corrected, co-registered to the anatomical image, segmented, and normalized to the Montreal Neurological Institute (MNI) 305 anatomical template. Repeating the key analyses with voxel activations estimated from individual subjects yielded qualitatively similar results. Smoothing was performed only on the functional localizer blocks using a Gaussian kernel with a full-width half-maximum of 5 mm. Default SPM parameters were used, and voxel size after normalization was kept at 3×3 × 3 mm3. The data were further processed using GLMdenoise (Kay et al., 2013). GLMdenoise improves the signal-to-noise ratio in the data by regressing out the noise estimated from task-unrelated voxels. The denoised time-series data were modeled using generalized linear modeling in SPM after removing low-frequency drift using a high-pass filter with a cutoff of 128 s. In the main experiment, the activity of each voxel was modeled using 79 regressors (64 stimuli +1 fixation +6 motion regressors +8 runs). In the localizer block, each voxel was modeled using 10 regressors (2 stimuli +1 fixation +6 motion regressors +1 run).
 
-## ROI definitions
+#### ROI definitions
 
 The regions of interest (ROI) of Early Visual Cortex (EVC) and Lateral Occipital (LO) regions were defined using anatomical masks from the SPM anatomy toolbox (Eickhoff et al., 2005). All brain maps were visualized on the inflated brain using Freesurfer (https://surfer.nmr.mgh.harvard.edu/fswiki/).
 
-## Behavioral data analysis
+#### Behavioral data analysis
 
 Response times faster than 0.3 s or slower than 3 s were removed from the data. This step removed only 0.75% of the data and improved the overall response time consistency, but did not qualitatively alter the results.
 
-## Model fitting for visual homogeneity
+### Model fitting for visual homogeneity
 
 We took the multi-dimensional embedding returned by the perceptual space experiment (Experiment 1) in 5 dimensions as the responses of 5 artificial neurons to the entire set of objects. For each target-present array, we calculated the neural response as the average of the responses elicited by these 5 neurons to the target and distractor items. Likewise, for target-absent search arrays, the neural response was simply the response elicited by these 5 neurons to the distractor item in the search array. To estimate the visual homogeneity of the target-present and target-absent search arrays, we calculated the distance of each of these arrays from a single point in the multidimensional representation. We then calculated the correlation between the visual homogeneity calculated relative to this point and the response times for the target-present and target-absent search arrays. The 5 coordinates of this center point was adjusted using constrained nonlinear optimization to maximize the difference between correlations with the target-present and target-absent response times, respectively. This optimum center remained stable across many random starting points, and our results were qualitatively similar upon varying the number of embedding dimensions.
 
 Additionally, we performed a leave-one-out cross-validation analysis to validate the number of dimensions or neurons used for the multidimensional scaling analysis in the visual homogeneity model fits. For each choice of number of dimensions, we estimated the optimal centre for visual homogeneity calculations while leaving out all searches involving a single image. We then calculated the visual homogeneity for all the target-present and target-absent searches involving the left-out image. Compiling these predictions by leaving out all images by turn results in a leave-one-out predicted visual homogeneity, which we correlated with the target-present and target-absent response times. We found that the absolute sum of the correlations between visual homogeneity and present/absent reaction times increased monotonically from 1 to 5 neurons, remained at a steady level from 5 to 9 neurons and decreased beyond 9 neurons. Furthermore, the visual homogeneity using the optimal center is highly correlated for 5–9 neurons. We therefore selected 5 neurons or dimensions for reporting visual homogeneity computations.
 
-## Searchlight maps for mean activation (Figure 4A, Figure 6A)
+### Searchlight maps for mean activation (Figure 4A, Figure 6A)
 
 To characterize the brain regions that encode visual homogeneity, we performed a whole-brain searchlight analysis. For each voxel, we took the voxels in a 3x3 × 3 neighborhood and calculated the mean activations across these voxels across all participants. To avoid overall activation level differences between target-present and target-absent searches, we z-scored the mean activations separately across target-present and target-absent searches. Similarly, we calculated the visual homogeneity model predictions from behaviour, and z-scored the visual homogeneity values for target-present and target-absent searches separately. We then calculated the correlation between the normalized mean activations and the normalized visual homogeneity for each voxel, and displayed this as a colormap on the inflated MNI brain template in Figures 3A and 5A.
 
 Note that the z-scoring of mean activations and visual homogeneity removes any artefactual correlation between mean activation and visual homogeneity arising simply due to overall level differences in mean activation or visual homogeneity itself, but does not alter the overall positive correlation between the visual homogeneity and mean activation across individual search displays.
 
-## Searchlight maps for neural and behavioural dissimilarity (Figure 4B, Figure 6B)
+### Searchlight maps for neural and behavioural dissimilarity (Figure 4B, Figure 6B)
 
 To characterize the brain regions that encode perceptual dissimilarity, we performed a whole-brain searchlight analysis. For each voxel, we took the voxel activations in a 3x3 × 3 neighborhood to target-absent displays as a proxy for the neural response to the single image. For each image pair, we calculated the pair-wise Euclidean distance between the 27-dimensional voxel activations evoked by the two images, and averaged this distance across participants to get a single average distance. For 32 target-absent displays in the experiment, taking all possible pairwise distances results in 32C2=496 pairwise distances. Similarly, we obtained the same 496 pairwise perceptual dissimilarities between these items from the oddball detection task (Experiment 1). We then calculated the correlation between the mean neural dissimilarities at each voxel with perceptual dissimilarities, and displayed this as a colormap on the flattened MNI brain template in Figures 3B and 5B.
 
-## Experiment 3. Oddball detection for perceptual space (Symmetric/Asymmetric objects)
+### Experiment 3. Oddball detection for perceptual space (Symmetric/Asymmetric objects)
 
-## Participants
+#### Participants
 
 A total of 15 participants (11 males, 22.8±4.3 years) participated in this experiment.
 
-## Paradigm
+#### Paradigm
 
 Participants performed an oddball visual search task. Participants completed 4032 correct trials (64C2 shape pairs x 2 repetitions) as two sessions in 2 days. We used a total of 64 baton shapes (32 symmetric and 32 asymmetric), and all shapes were presented against a black background. We created 32 unique parts with the vertical line as part of the contour. We created 32 symmetric by joining the part and its mirror-filled version, and 32 asymmetric objects were created by randomly pairing the left part and mirror flipped version of another left part. All parts were occurring equally likely. All other task details are the same as Experiment 1.
 
-## Experiment 4. Symmetry judgment task (fMRI and behavior)
+### Experiment 4. Symmetry judgment task (fMRI and behavior)
 
-## Participants
+#### Participants
 
 A total of 15 subjects participated in this study. Participants had normal or corrected to normal vision. Participants had no history of neurological or psychiatric impairment. We excluded participants with metal implants or claustrophobia from the study.
 
-## Paradigm
+#### Paradigm
 
 Inside the scanner, participants performed two runs of one-back identity task (functional localizer), eight runs of symmetry judgment task (event-related design), and one anatomical scan. We excluded the data from one participant due to poor accuracy and long response times.
 
-## Symmetry task
+#### Symmetry task
 
 On each trial, participants had to report whether a briefly presented object was symmetric or not using a keypress. Objects measured 4° and were presented against a black background. Response keys were counterbalanced across participants. Each trial lasted 4 s, with the object displayed for 200ms followed by a blank period of 3800ms. Participants could respond at any time following appearance of the object, up to a time out of 4 s after which the next trial began. Each run had 64 unique conditions (32 symmetric and 32 asymmetric).
 
-## 1-back task for functional localizers
+#### 1-back task for functional localizers
 
 Stimuli were presented as blocks, and participants reported repeated stimuli with a keypress. Each run had blocks of either silhouettes (asymmetric/symmetric), dot patterns (asymmetric/symmetric), combination of baton and dot patterns (asymmetric/symmetric) and natural objects (intact/scrambled).
 
-## Data analysis
+### Data analysis
 
-## Noise removal in RT
+#### Noise removal in RT
 
 Very fast (<100ms) reaction times were removed. We also discarded all reaction times to an object if participant’s accuracy was less than 80%. This process removed 3.6% of RT data.
 
-## Model fitting for visual homogeneity
+#### Model fitting for visual homogeneity
 
 We proceeded as before by embedding the oddball detection response times into multidimensional space with three dimensions. For each image, the visual homogeneity was defined as its distance from an optimum center. We then calculated the correlation between the visual homogeneity calculated relative to this optimum center and the response times for the target-present and target-absent search arrays separately. This optimum center was estimated using a constrained nonlinear optimization to maximize the difference between the correlations for asymmetric object response times and symmetric object response times. Other details were the same as in Experiment-2.

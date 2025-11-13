@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.37762.001 Thermal biology predicts that vector-borne disease transmission peaks at intermediate temperatures and declines at high and low temperatures. However, thermal optima and limits remain unknown for most vector-borne pathogens. We built a mechanistic model for the thermal response of Ross River virus, an important mosquito-borne pathogen in Australia, Pacific Islands, and potentially at risk of emerging worldwide. Transmission peaks at moderate temperatures (26.4°C) and declines to zero at thermal limits (17.0 and 31.5°C). The model accurately predicts that transmission is year-round endemic in the tropics but seasonal in temperate areas, resulting in the nationwide seasonal peak in human cases. Climate warming will likely increase transmission in temperate areas (where most Australians live) but decrease transmission in tropical areas where mean temperatures are already near the thermal optimum. These results illustrate the importance of nonlinear models for inferring the role of temperature in disease dynamics and predicting responses to climate change.
+Thermal biology predicts that vector-borne disease transmission peaks at intermediate temperatures and declines at high and low temperatures. However, thermal optima and limits remain unknown for most vector-borne pathogens. We built a mechanistic model for the thermal response of Ross River virus, an important mosquito-borne pathogen in Australia, Pacific Islands, and potentially at risk of emerging worldwide. Transmission peaks at moderate temperatures (26.4°C) and declines to zero at thermal limits (17.0 and 31.5°C). The model accurately predicts that transmission is year-round endemic in the tropics but seasonal in temperate areas, resulting in the nationwide seasonal peak in human cases. Climate warming will likely increase transmission in temperate areas (where most Australians live) but decrease transmission in tropical areas where mean temperatures are already near the thermal optimum. These results illustrate the importance of nonlinear models for inferring the role of temperature in disease dynamics and predicting responses to climate change.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ Mechanistic models synthesize how environmental factors like temperature influen
 
 Here, we build the first mechanistic model for temperature-dependent transmission of RRV and ask whether temperature explains seasonal and geographic patterns of disease. We use data from laboratory experiments with two important vector species (Culex annulirostris and Aedes vigilax) to parameterize the model with unimodal thermal responses. We then use sensitivity and uncertainty analyses to determine which traits drive the relationship between temperature and transmission potential and identify key data gaps. Finally, we illustrate how temperature currently shapes patterns of disease transmission across Australia. The model correctly predicts that RRV disease is year-round endemic in tropical, northern Australia with little seasonal variation due to temperature, and seasonally epidemic in temperate, southern Australia. These results provide a mechanistic explanation for idiosyncrasies in RRV temperature responses observed in previous studies (Hu et al., 2004; Gatton et al., 2005; Bi et al., 2009; Werner et al., 2012; Koolhof et al., 2017). A population-weighted version of the model (assuming a two-month lag between temperature and human cases based on mosquito and disease development times) also accurately predicts the seasonality of human cases nationally. Thus, from laboratory data on mosquito and parasite thermal responses alone, this simple model mechanistically explains broad geographic and seasonal patterns of disease.
 
-## Natural history of RRV
+### Natural history of RRV
 
 The natural history of RRV is complex: transmission occurs across a range of climates (tropical, subtropical, and temperate) and habitats (urban and rural, coastal and inland) and via many vertebrate reservoir and vector species (Claflin and Webb, 2015). Marsupials are generally considered the critical reservoirs for maintaining the virus between human outbreaks, but recent work has argued that placental mammals and birds may be equally important in many locations (Stephenson et al., 2018). The virus has been isolated from over 40 mosquito species in nature, and 10 species transmit it in laboratory studies (Harley et al., 2001; Russell, 2002). However, four species are responsible for most transmission to humans (Culex annulirostris, Aedes [Ochlerotatus] vigilax, Ae. [O.] notoscriptus, and Ae. [O.] camptorhynchus), with two additional species implicated in outbreaks (Ae. [Stegomyia] polynesiensis and Ae. [O.] normanensis).
 
@@ -37,9 +37,9 @@ The vectors differ in climate and habitat niches, leading to geographic variatio
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig1-v1.jpg)
 
-**Figure 1.:** Map of specific mosquito species identified as important vectors based on collected field specimens. Grid (right) shows data availability of trait thermal responses for the five Australian species. Data sources listed in Figure 1—source data 1. Trait parameters are biting rate (a), fecundity (as eggs per female per day, EFD), mosquito development rate (MDR), the proportion surviving from egg-to-adulthood (p), adult mosquito mortality (μ = 1/EAlifespan), vector competence (bc), and parasite development rate (PDR).10.7554/eLife.37762.004Figure 1—source data 1.Location and year of RRV disease outbreaks and mosquito species identified as likely vectors based on the collection of field specimens. Only the six most important mosquito species are included. Citation key: A: Biggs and Mottram, 2008; B: Brokenshire et al., 2000; C: Campbell et al., 1989; D: Dhileepan, 1996; E: Frances et al., 2004; F: Harley et al., 2000; G: Harley et al., 2001; H: Jacups et al., 2008b; I: Kelly-Hope et al., 2004b; J: Lau et al., 2017; K: Yang et al., 2009; L: Lindsay et al., 1993b; M: Lindsay et al., 1993a; N: Lindsay et al., 1996; O: Lindsay et al., 2007; P: McDonnell et al., 1994; Q: McManus et al., 1992; R: Merianos et al., 1992; S: Ritchie et al., 1997; T: Rosen et al., 1981; U: Russell et al., 1991; V: Russell, 1994; W: Russell, 2002; X: Ryan et al., 2000; Y: Schmaedick et al., 2008; Z: Whelan et al., 1992; AA: Whelan et al., 1995; AB: Whelan et al., 1997.
+**Figure 1.:** Map of specific mosquito species identified as important vectors based on collected field specimens. Grid (right) shows data availability of trait thermal responses for the five Australian species. Data sources listed in Figure 1—source data 1. Trait parameters are biting rate (a), fecundity (as eggs per female per day, EFD), mosquito development rate (MDR), the proportion surviving from egg-to-adulthood (pEA), adult mosquito mortality (μ = 1/lifespan), vector competence (bc), and parasite development rate (PDR).
 
-## General modeling approach
+### General modeling approach
 
 Transmission depends on a suite of vector, pathogen, and human traits, including mosquito density (M). Our main model (‘full R0 Model,’ Equation 1) assumes temperature drives mosquito density and includes the relevant life history trait thermal responses (Parham and Michael, 2009; Mordecai et al., 2013; Mordecai et al., 2017). We initially compare this model to an alternative (‘constant M model,’ Equation 2) where mosquito density does not depend on temperature. We make this comparison because many transmission models do not include the thermal responses for mosquito density, assuming it depends primarily on habitat availability.
 
@@ -47,27 +47,55 @@ Here, we focus on the relative influence of temperature on transmission potentia
 
 ## Results
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig2-v1.jpg)
+
+**Figure 2.:** Mosquito life history traits (A, C, E, F, G, H, I) are from Cx. annulirostris. Virus-mosquito infection traits (B, D) are from Ae. vigilax. Functions were fit using Bayesian inference with priors fit using data from other mosquito species and viruses. Black solid lines are posterior distribution means; dashed red lines are 95% credible intervals. (E, C) Points are data means; error bars are standard error. Data sources and function parameter estimates given in Figure 2—source data 1. Data sources and function parameter estimates for priors given in Figure 2—source data 2. Thermal responses fit with uniform priors given in Figure 2—figure supplement 1. Thermal responses for alternative vectors and virus given in Figure 2—figure supplements 2, 3 and 4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig2-figsupp4-v1.jpg)
+
 Vector and pathogen traits that drive transmission consistently responded to temperature (Figure 2), though data were sparse (McDonald et al., 1980; Mottram et al., 1986; Russell, 1986; Rae, 1990; Kay and Jennings, 2002). Although we exhaustively searched for experiments with trait measurements at three or more constant temperatures in the Australian vector species (Cx. annulirostris, Ae. vigilax, Ae. camptorhynchus, Ae. notoscriptus, and Ae. normanensis), no species had data for all necessary traits (Figure 1). Thus, we combined traits from two species to build composite R0 models. We used mosquito life history traits measured in Cx. annulirostris: fecundity (as eggs per female per day, EFD), egg survival (as the proportion of rafts that hatch, pRH, and the number of larvae emerging per viable raft, nLR), the proportion surviving from larvae-to-adulthood (pLA), mosquito development rate (MDR), adult mosquito lifespan (lf), and biting rate (a). We used infection traits measured in Ae. vigilax: vector competence (bc) and parasite development rate (PDR). For comparison, we also fit traits for other mosquito and virus species: MDR and pLA from Ae. camptorhynchus and Ae. notoscriptus, and PDR and bc from Murray Valley encephalitis virus (another important pathogen transmitted by these mosquitoes in Australia) in Cx. annulirostris (Figure 2—figure supplements 2, 3 and 4) (Kay et al., 1989; Barton and Aberton, 2005; Williams and Rau, 2011). We used sensitivity analyses to evaluate the potential impact of this vector mismatch. However, all spatial and temporal predictions of R0 (Figures 5–7) use the full R0 model parameterized with mosquito life history traits from Cx. annulirostris and infection traits from Ae. vigilax (as shown in Figure 2).
 
 Thermal optima ranged from 23.4°C for adult lifespan (lf) to 33.0°C for parasite development rate (PDR; Figure 2). The data supported unimodal thermal responses for most traits, though declines at high temperatures were not directly observed for biting rate (a) and parasite development rate. Data from other mosquito species and ectotherm physiology theory imply these traits must decline at very high temperatures, so we used strong priors to make them decline near ~40°C. Because our approach is designed to identify which traits constrain transmission at thermal limits, this choice is conservative since it means R0 will be limited by other traits with better data. Accordingly, in the absence of data we preferred to overestimate upper thermal limits and underestimate lower thermal limits rather than vice versa.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig3-v1.jpg)
+
+**Figure 3.:** (A) Posterior means across temperature for the full R0 model (Equation 1, dark blue) and constant M model (Equation 2, light blue). Predicted mosquito density (M) shown for comparison (red). The y-axis shows relative R0 (or M) rather than absolute values, which would require additional information. Histograms of posterior distributions for (B) critical thermal minimum, (C) thermal optimum, and (D) critical thermal maximum temperatures for both models (same colors as in A). Additional R0 model results given in Figure 3—figure supplement 1. Sensitivity and uncertainty analyses given in Figure 3—figure supplement 2. Example comparison of mean and median results given in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig3-figsupp3-v1.jpg)
 
 Transmission potential (relative R0 from the full R0 model) peaked at 26.4°C, and was positive from 17.0–31.5°C (Figure 3). Removing the temperature-dependence of mosquito density [M] did not substantially affect the peak, because the optima for transmission and mosquito density were closely aligned (constant M model: 26.6°C, M: 26.2°C). By contrast, the range of temperatures suitable for transmission is much larger when mosquito density does not depend on temperature because M(T) constrains transmission at the thermal limits (constant M model positive from 12.9–33.7°C). The thermal constraints that mosquito density imposes on transmission are important because, although demographic traits are well-known to vary with temperature in the laboratory, many temperature-dependent transmission models do not assume that temperature influences mosquito density (Martens et al., 1997; Craig et al., 1999; Paull et al., 2017; Caminade et al., 2017; Hamlet et al., 2018, but see Parham and Michael, 2009; Mordecai et al., 2013, Mordecai et al., 2017; Johnson et al., 2015). The moderate optimal temperature for RRV (26–27°C) fits within the range of thermal optima found for other diseases: malaria transmission by Anopheles spp. at 25°C, and dengue and other viruses by Ae. aegypti and Ae. albopictus at 29 and 26°C, respectively (Figure 4) (Mordecai et al., 2013; Mordecai et al., 2017).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig4-v1.jpg)
 
-**Figure 4.:** R0 for RRV and other diseases.Malaria (blue, optimum = 25.2°C), Ross River virus (black, optimum = 26.4°C), dengue virus in Ae. albopictus (orange, optimum = 26.4°C), and dengue virus in Ae. agypti (red, optimum = 29.1°C). Results for all diseases use the full R0 model.
+**Figure 4.:** Malaria (blue, optimum = 25.2°C), Ross River virus (black, optimum = 26.4°C), dengue virus in Ae. albopictus (orange, optimum = 26.4°C), and dengue virus in Ae. agypti (red, optimum = 29.1°C). Results for all diseases use the full R0 model.
 
 At the upper thermal limit fecundity (EFD) and adult lifespan (lf) constrain R0, while at the lower thermal limit fecundity, larval survival (pLA), egg survival (raft viability [pRH] and survival within rafts [nLR]), and adult lifespan constrain R0 (Figure 3—figure supplement 2). All of these traits (except adult lifespan) only occur in, and adult lifespan is quantitatively more important in, the full R0 model, illustrating the importance of incorporating effects of temperature on vector life history. Correspondingly, uncertainty in these traits generated the most uncertainty in R0 at the respective thermal limits (Figure 3—figure supplement 2C). The optimal temperature for R0 was most sensitive to the thermal response of adult lifespan. Near the optimum, most uncertainty in R0 was due to uncertainty in the thermal responses of biting rate and egg raft viability. For comparison, substituting larval traits from alternative vectors or infection traits for Murray Valley Encephalitis virus did not substantially alter the R0 thermal response, since Cx. annulirostris life history traits strongly constrained transmission (Figure 3—figure supplement 1).
 
 Temperature suitability for RRV transmission varies seasonally across Australia, based on the full R0 model (Equation 1) using monthly mean temperatures from WorldClim. In subtropical and temperate locations (Brisbane and further south), low temperatures force R0 to zero for part of the year (Figures 5A and 6). Monthly mean temperatures in these areas fall along the increasing portion of the R0 curve for the entire year, so thermal suitability for transmission increases with temperature. By contrast, in tropical, northern Australia (Darwin and Cairns), the temperature remains suitable throughout the year (Figures 5 and 6). Darwin is the only major city where mean temperatures exceed the thermal optimum, and thereby depress transmission. Because most Australians live in southern, temperate areas, country-scale transmission is strongly seasonal. Using the average (1992–2013) seasonal incidence at the national scale, human cases peak two months after population-weighted R0(T), matching our a priori hypothesized time lag between temperature suitability and human cases (based on empirical work in other mosquito-borne disease systems, see Materials and methods and Discussion; Figure 7).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig5-v1.jpg)
+
+**Figure 5.:** Color indicates number of months where (A) relative R0 >0 and (B) relative R0 >0.5. Predictions are based on the posterior median of the full R0 model (Equation 1) parameterized with trait thermal responses shown in Figure 2. Points indicate selected cities (Figure 5), scaled by the percentage of total Australian population residing in each city. Maps with 2.5% and 97.5% credible intervals are given in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig5-figsupp1-v1.jpg)
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig6-v1.jpg)
 
-**Figure 6.:** R0 in Australian cities.The selected cities span a latitudinal and temperature gradient (Darwin = dark red, Cairns = red, Brisbane = dark orange, Perth = light orange, Sydney = aqua, Melbourne = blue, Hobart = dark blue). The x-axis begins in July and ends in June (during winter). (A) Mean monthly temperatures. Shaded areas show temperature thresholds where R0 >0 for: outer 95% CI (light grey), median (medium grey), and inner 95% CI (dark grey). Dashed line shows median R0 optimal temperature. (B) Temperature-dependent R0. Predictions are based on the posterior median of the full R0 model (Equation 1) parameterized with trait thermal responses shown in Figure 2.
+**Figure 6.:** The selected cities span a latitudinal and temperature gradient (Darwin = dark red, Cairns = red, Brisbane = dark orange, Perth = light orange, Sydney = aqua, Melbourne = blue, Hobart = dark blue). The x-axis begins in July and ends in June (during winter). (A) Mean monthly temperatures. Shaded areas show temperature thresholds where R0 >0 for: outer 95% CI (light grey), median (medium grey), and inner 95% CI (dark grey). Dashed line shows median R0 optimal temperature. (B) Temperature-dependent R0. Predictions are based on the posterior median of the full R0 model (Equation 1) parameterized with trait thermal responses shown in Figure 2.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/37762/elife-37762-fig7-v1.jpg)
 
-**Figure 7.:** R0 and RRV infections.Human cases aggregated nationwide from 1992 to 2013 (bars). Temperature-dependent R0 weighted by population (line), calculated from Australia’s 15 largest cities (76.6% of total population). Predictions are based on the posterior median of the full R0 model (Equation 1) parameterized with trait thermal responses shown in Figure 2. The x-axis begins in July and ends in June (during winter). Cases peak two months after R0, the a priori expected lag between temperature and reported cases.
+**Figure 7.:** Human cases aggregated nationwide from 1992 to 2013 (bars). Temperature-dependent R0 weighted by population (line), calculated from Australia’s 15 largest cities (76.6% of total population). Predictions are based on the posterior median of the full R0 model (Equation 1) parameterized with trait thermal responses shown in Figure 2. The x-axis begins in July and ends in June (during winter). Cases peak two months after R0, the a priori expected lag between temperature and reported cases.
 
 ## Discussion
 
@@ -89,9 +117,19 @@ Nonlinear thermal responses are particularly important for predicting how transm
 
 ## Materials and methods
 
-## Temperature-Dependent R0models
+### Temperature-Dependent R0models
 
-The ‘full R0 model’ (Equation 1) assumes temperature drives mosquito density and includes vector life history trait thermal responses (Parham and Michael, 2009; Mordecai et al., 2013; Mordecai et al., 2017). The ‘constant M model’ (Equation 2) assumes mosquito density (M) does not depend on temperature (Dietz, 1993). There is disagreement in the literature over whether the equation for R0 should contain the square root (Dietz, 1993; Heffernan et al., 2005; Smith et al., 2012). We use the version derived from the next-generation matrix method (Dietz, 1993) in order to be consistent with our previous work in other mosquito-borne disease systems (Mordecai et al., 2013; Mordecai et al., 2017; Johnson et al., 2015).R0(T)=(a(T)2bc(T)e− μ(T)PDR(T)EFD(T)pEA(T)MDR(T)N r μ(T)3)1/2R0(T)=(a(T)2bc(T)e− μ(T)PDR(T)MN r μ(T))1/2
+The ‘full R0 model’ (Equation 1) assumes temperature drives mosquito density and includes vector life history trait thermal responses (Parham and Michael, 2009; Mordecai et al., 2013; Mordecai et al., 2017). The ‘constant M model’ (Equation 2) assumes mosquito density (M) does not depend on temperature (Dietz, 1993). There is disagreement in the literature over whether the equation for R0 should contain the square root (Dietz, 1993; Heffernan et al., 2005; Smith et al., 2012). We use the version derived from the next-generation matrix method (Dietz, 1993) in order to be consistent with our previous work in other mosquito-borne disease systems (Mordecai et al., 2013; Mordecai et al., 2017; Johnson et al., 2015).
+
+$$
+R_{0}(T)=(\frac{a(T)^{2}bc(T)e^{− \frac{\mu(T)}{PDR(T)}}EFD(T)p_{EA}(T)MDR(T)}{N r \mu(T)^{3}})^{1/2}
+$$
+
+
+
+$$
+R_{0}(T)=(\frac{a(T)^{2}bc(T)e^{− \frac{\mu(T)}{PDR(T)}}M}{N r \mu(T)})^{1/2}
+$$
 
 In both equations, (T) indicates that a parameter depends on temperature, a is mosquito biting rate, bc is vector competence (proportion of mosquitoes becoming infectious post-exposure), µ is adult mosquito mortality rate (adult lifespan, lf = 1/µ), PDR is parasite development rate (PDR = 1/EIP, the extrinsic incubation period), N is human density, and r is the recovery rate at which humans become immune (all rates are measured in days−1). The latter two terms do not depend on temperature. In the full R0 model, mosquito density (M) depends on fecundity (EFD, eggs per female per day), proportion surviving from egg-to-adulthood (pEA), and mosquito development rate (MDR), divided by the square of adult mortality rate (µ) (Parham and Michael, 2009). We calculated pEA as the product of the proportion of egg rafts that hatch (pRH), the number of larvae per raft (nLR, scaled by the maximum at any temperature to calculate proportional egg survival within-rafts), and the proportion of larvae surviving to adulthood (pLA).
 
@@ -101,27 +139,49 @@ Our data did not include declining trait values at high temperatures for biting 
 
 Bayesian inference produces estimated posterior distributions rather than a single estimated value. Because these distributions can be non-normal and asymmetric, we report and apply medians rather than means, since medians are less sensitive to outlying values in extended tails. However, we plot mean values in the figures because they show a smoother and more visually intuitive representation of where trait and R0 thermal responses go to zero at the upper thermal limit. The means and medians are not substantially different, except at this thermal limit (see example in Figure 3—figure supplement 3).
 
-## Sensitivity and uncertainty analyses
+### Sensitivity and uncertainty analyses
 
 We conducted sensitivity and uncertainty analyses of the full R0 model (Equation 1) to understand how trait thermal responses shape the thermal response of R0. We examined the sensitivity of R0 two ways. First, we evaluated the impact of each trait by setting it constant while allowing all other traits to vary with temperature. Second, we calculated the partial derivative of R0 with respect to each trait across temperature (∂R0/∂X · ∂X/∂T for trait X and temperature T; Equations 3-6). To understand what data would most improve the model, we also calculated the proportion of total uncertainty in R0 due to each trait across temperature. First, we propagated posterior samples from all trait thermal response distributions through to R0(T) and calculated the width of the 95% highest posterior density interval (HPD interval; a type of credible interval) of this distribution at each temperature: the ‘full R0(T) uncertainty’. Next, we sampled each trait from its posterior distribution while setting all other trait thermal responses to their posterior medians, and calculated the posterior distribution of R0(T) and the width of its 95% HPD interval across temperature: the ‘single-trait R0(T) uncertainty’. Finally, we divided each single-trait R0(T) uncertainty by the full R0(T) uncertainty.
 
-The partial derivatives are given below for all traits (x) that appear only once in the numerator of R0 (bc, EFD, pRH, nLR, pLA, MDR; Equation 3), biting rate (a, Equation 4), parasite development rate (PDR, Equation 5), and lifespan (lf, Equation 6).(3)∂R0∂x= R02x(4)∂R0∂a= R0a(5)∂R0∂PDR= R02 lf PDR2(6)∂R0∂lf= R0(1+3PDR)2 PDR lf2
+The partial derivatives are given below for all traits (x) that appear only once in the numerator of R0 (bc, EFD, pRH, nLR, pLA, MDR; Equation 3), biting rate (a, Equation 4), parasite development rate (PDR, Equation 5), and lifespan (lf, Equation 6).
 
-## Field observations: seasonality of temperature-dependent R0across Australia
+$$
+\frac{∂R_{0}}{∂x}= \frac{R_{0}}{2x}
+$$
+
+
+
+$$
+\frac{∂R_{0}}{∂a}= \frac{R_{0}}{a}
+$$
+
+
+
+$$
+\frac{∂R_{0}}{∂PDR}= \frac{R_{0}}{2 lf PDR^{2}}
+$$
+
+
+
+$$
+\frac{∂R_{0}}{∂lf}= \frac{R_{0}(1+3PDR)}{2 PDR lf^{2}}
+$$
+
+### Field observations: seasonality of temperature-dependent R0across Australia
 
 We took monthly mean temperatures from WorldClim for seven cities spanning a latitudinal and temperature gradient (from tropical North to temperate South: Darwin, Cairns, Brisbane, Perth, Sydney, Melbourne, and Hobart) and calculated the posterior median R0(T) for each month at each location. We also compared the seasonality of a population-weighted R0(T) and nationally aggregated RRV cases. We used 2016 estimates for the fifteen most populous urban areas, which together contain 76.6% of Australia’s population (Australian Bureau of Statistics, 2017). We calculated R0(T) for each location (as above) and estimated a population-weighted average. We compared this country-scale estimate of R0(T) with data on mean monthly human cases of RRV nationwide from 1992 to 2013 obtained from the National Notifiable Diseases Surveillance System.
 
 We expected a time lag between temperature and reported human cases as mosquito populations increase, bite humans and reservoir hosts, acquire RRV, become infectious, and bite subsequent hosts; after an incubation period, hosts (potentially) become symptomatic, seek treatment, and report cases. Empirical work on dengue vectors in Ecuador identified a six-week time lag between temperature and mosquito oviposition (Stewart Ibarra et al., 2013). Subsequent mosquito development and incubation periods in mosquitoes and humans likely add another 2–4 week lag before cases appear, resulting in an 8–10 week lag between temperature and observed cases (Hu et al., 2006; Jacups et al., 2008b; Mordecai et al., 2017). With monthly case data, we hypothesize a two-month time lag between R0(T) and RRV disease cases.
 
-## Mapping temperature-dependent R0 across Australia
+### Mapping temperature-dependent R0 across Australia
 
 To illustrate temperature suitability for RRV transmission across Australia, we mapped the number of months for which relative R0(T) >0 and >0.5 for the posterior median, 2.5 and 97.5% credibility bounds (Figure 5—figure supplement 1) for the full R0 model (Equation 1). We calculated R0(T) at 0.2°C increments and projected it onto the landscape for monthly mean temperatures from WorldClim data at a 5 min resolution (approximately 10 km2 at the equator). Climate data layers were extracted for the geographic area, defined using the Global Administrative Boundaries Databases (GADM, 2012). We performed map calculations and manipulations in R with packages ‘raster’ (Hijmans, 2016), ‘maptools’ (Bivand and Lewin-Koh, 2017), and ‘Rgdal’ (Bivand et al., 2017), and rendered GeoTiffs in ArcGIS version 10.3.1.
 
-## Mosquito nomenclature
+### Mosquito nomenclature
 
 In 2000 there was a proposed shift in mosquito taxonomy: several subgenera within the genus Aedes were elevated to genus status (Wilkerson et al., 2015). This change affected Aedes vigilax and Aedes camptorhynchus, which were called Ochlerotataus vigilax and Ochlerotatus camptorhynchus for a time by some researchers. More recently, there has been a consensus to return to the previous naming system, so we use Aedes here, although many of the papers we cite use Ochlerotatus instead.
 
-## Additional methods for digitizing trait data
+### Additional methods for digitizing trait data
 
 The fecundity and adult survival data in McDonald et al. (1980) were published as time series of one experimental population at each temperature. The resulting data needed to be transformed to fit the corresponding trait thermal responses.
 

@@ -19,20 +19,20 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Oncology, University of Oxford Oxford United Kingdom
-2. https://ror.org/052gg0110 Experimental Medicine Division, University of Oxford Oxford United Kingdom
-3. https://ror.org/052gg0110 University of Oxford Medical School Oxford United Kingdom
-4. https://ror.org/052gg0110 Department of Biochemistry, University of Oxford Oxford United Kingdom
-5. https://ror.org/03h2bh287 Oxford University Hospitals NHS Foundation Trust Oxford United Kingdom
-6. https://ror.org/03pv69j64 CRUK Beatson Institute Glasgow United Kingdom
-7. https://ror.org/00vtgdb53 School of Cancer Sciences, University of Glasgow Glasgow United Kingdom
-8. https://ror.org/052gg0110 Nuffield Department of Surgical Sciences, University of Oxford Oxford United Kingdom
+1. Department of Oncology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Experimental Medicine Division, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. University of Oxford Medical School Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. Department of Biochemistry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+5. Oxford University Hospitals NHS Foundation Trust Oxford United Kingdom ([ROR:03h2bh287](https://ror.org/03h2bh287))
+6. CRUK Beatson Institute Glasgow United Kingdom ([ROR:03pv69j64](https://ror.org/03pv69j64))
+7. School of Cancer Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+8. Nuffield Department of Surgical Sciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
 ## Abstract
 
-The immunosuppressive microenvironment in pancreatic ductal adenocarcinoma (PDAC) prevents tumor control and strategies to restore anti-cancer immunity (i.e. by increasing CD8 T-cell activity) have had limited success. Here, we demonstrate how inducing localized physical damage using ionizing radiation (IR) unmasks the benefit of immunotherapy by increasing tissue-resident natural killer (trNK) cells that support CD8 T activity. Our data confirms that targeting mouse orthotopic PDAC tumors with IR together with CCR5 inhibition and PD1 blockade reduces E-cadherin positive tumor cells by recruiting a hypoactive NKG2D -ve NK population, phenotypically reminiscent of trNK cells, that supports CD8 T-cell involvement. We show an equivalent population in human single-cell RNA sequencing (scRNA-seq) PDAC cohorts that represents immunomodulatory trNK cells that could similarly support CD8 T-cell levels in a cDC1-dependent manner. Importantly, a trNK signature associates with survival in PDAC and other solid malignancies revealing a potential beneficial role for trNK in improving adaptive anti-tumor responses and supporting CCR5 inhibitor (CCR5i)/αPD1 and IR-induced damage as a novel therapeutic approach.
+The immunosuppressive microenvironment in pancreatic ductal adenocarcinoma (PDAC) prevents tumor control and strategies to restore anti-cancer immunity (i.e. by increasing CD8 T-cell activity) have had limited success. Here, we demonstrate how inducing localized physical damage using ionizing radiation (IR) unmasks the benefit of immunotherapy by increasing tissue-resident natural killer (trNK) cells that support CD8 T activity. Our data confirms that targeting mouse orthotopic PDAC tumors with IR together with CCR5 inhibition and PD1 blockade reduces E-cadherin positive tumor cells by recruiting a hypoactive NKG2D-ve NK population, phenotypically reminiscent of trNK cells, that supports CD8 T-cell involvement. We show an equivalent population in human single-cell RNA sequencing (scRNA-seq) PDAC cohorts that represents immunomodulatory trNK cells that could similarly support CD8 T-cell levels in a cDC1-dependent manner. Importantly, a trNK signature associates with survival in PDAC and other solid malignancies revealing a potential beneficial role for trNK in improving adaptive anti-tumor responses and supporting CCR5 inhibitor (CCR5i)/αPD1 and IR-induced damage as a novel therapeutic approach.
 
 ## Introduction
 
@@ -48,25 +48,57 @@ Given the negative prognosis associated with high CCL5 serum levels in human pat
 
 ## Results
 
-## CCL5 is a negative prognostic marker in pancreatic cancer
+### CCL5 is a negative prognostic marker in pancreatic cancer
 
 We previously identified serum CCL5 as a bona fide negative prognostic marker for pancreatic cancer (Willenbrock et al., 2021, and found that, in two independent PDAC cohorts, CPTAC3 [Cao et al., 2021] and TCGA [Uhlen et al., 2017]), higher CCL5 expression associates with poor overall and disease-free survival, confirming the negative implication of elevated levels of CCL5 in pancreatic cancer (Figure 1A). To understand the cause of CCL5-mediated reduced survival in PDAC, we hypothesized that immune cells responsive to a CCL5 chemotactic gradient (through expression of the cognate receptors CCR5, CCR3, or CCR1) could be potential contributors to an adverse tumor immune environment (Figure 1B, Figure 1—figure supplement 1A). scRNA-seq of human tumors has revealed genetic signatures for myeloid-derived suppressor cells of polymorphonuclear (PMN-MDSC) or monocytic origin (Alshetaiwi et al., 2020), TAMs (Wang et al., 2021), CD4 Tregs (Mijnheer et al., 2021), and NK cells (Smith et al., 2020), but none of these immune populations have yet been implicated as a causative agent in the poor outcome associated with high CCL5 expression in PDAC (Figure 1C). Notably, exploration of individual genes within these signatures indicated stark opposing correlations within each signature pool - particularly for genes associated with MDSCs (S100P vs ARG2) and NK cells (CD56 vs CD16) (Figure 1C, Figure 1—figure supplement 1B). CD56 (NCAM1) is a key marker that represents functionally distinct subpopulations of NK cells where CD56bright NK cells represent immature states that move to CD56dim upon maturation to full cytotoxic potential, whereas conversely CD16+ expression marks activation and CD16- immature or quiescent NK cells (Poli et al., 2009). Thus, these distinct subtypes may differentially contribute to survival, e.g., association of CD16 with poor survival may implicate a detrimental role of CD56dimCD16+ NK cells, whereas the strong positive prognosis associated with CD56 expression could indicate benefit of CD56brightCD16- NK cells. The benefit of CD56 can be attributed to NK cells over neuronal expression as the neuronal cell-specific homolog NCAM2 has no prognostic value (Figure 1—figure supplement 1C).
 
-## CCR5i modulates Treg infiltration in a murine orthotopic pancreatic tumor model
+![Figure 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overall and disease-free Kaplan-Meier survival plots of pancreatic ductal adenocarcinoma (PDAC) patients segregated into high or low CCL5 gene expression levels within pancreatic tumors. Data are derived from CTPAC3 and TCGA cohorts and optimal cut-off values were calculated using the max-stat method for each respective cohort. (B) Schematic overview of CCL5-responsive immune cells and corresponding CCL5 receptor repertoire expression. (C) Correlation between overall and single-cell gene signatures of CCL5-responsive immune cells with overall PDAC prognosis. Color depicts positive (green), negative (red), or neutral (black) prognostic outcomes (*p<0.05, **p<0.01, ***p<0.005). Data are derived from the Pathology Dataset of the Human Protein Atlas and based on human tissue micro arrays and correlated log-rank p-value for Kaplan-Meier analysis αPD1/CCR5i/IR (n=8).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Human Protein Atlas-derived single-cell RNA-seq data of immune cells and relative CCL5 receptor expression. (B) Overall Kaplan-Meier survival curves of pancreatic ductal adenocarcinoma (PDAC) patients (derived from TCGA cohorts) correlated to single specific immune gene signatures with the most opposing correlations (as shown in Figure 1C). Color depicts positive (green) or negative (red) correlations. (C) Normalized expression of NCAM1, encoding neural cell adhesion molecule 1 (more commonly known as CD56); and NCAM2, encoding neural cell adhesion molecule 2, in different cells from the brain and immune cells. Data are derived from the Human Protein Atlas-derived single-cell RNA sequencing dataset (left). Overall Kaplan-Meijer survival curve of PDAC does not significantly correlate with NCAM2 expression (right).
+
+### CCR5i modulates Treg infiltration in a murine orthotopic pancreatic tumor model
 
 We next employed a syngeneic orthotopic pancreatic cancer model where cells derived from KrasG12D, Trp53R172H, Pdx1-Cre (KPC) tumor bearing mice are injected into the pancreas of wildtype C57BL/6 mice, thereby recapitulating a human pancreatic cancer microenvironment (Matzke-Ogi et al., 2016). From a selection of independently isolated KPC-derived cell lines, we first determined the cell line KPC-F as an appropriate model for human PDAC tumor based on the expression of epithelial (E-cadherin), mesenchymal (vimentin), and stromal (Collagen I, αSMA) markers as well as displaying growth kinetics (determined by MRI) amenable for the study and expression of high levels of CCL5 (Figure 2A, Figure 2—figure supplement 1A and B). To address which immune subsets are involved in CCL5 signaling in pancreatic cancer, we developed a 17-color spectral flow cytometry panel to monitor the tumor-infiltrating immune microenvironment in parallel (Figure 2—figure supplement 1C) and employed a specific CCR5i (maraviroc), to block CCR5, the most widespread and highest-affinity receptor for CCL5 expressed on Tregs (Figure 1—figure supplement 1A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig2-v1.jpg)
+
+**Figure 2.:** (A) Three different lineages of KPC pancreatic tumor cells (derived from KrasG12Dp53R172HPdx1-Cre mice) were obtained and stained for DAPI (blue; nucleus), E-cadherin (green; epithelial), and vimentin (red; mesenchymal). Growth curve of orthotopically injected KPC-F cells (500cells) into the pancreas of wildtype C57BL/6 over time in weeks. Tumor volume was measured using MRI. Representative MRI images over time are displayed, white arrow denotes tumor mass. (B) Timeline of maraviroc (CCR5 inhibitor [CCR5i]) treatment regimen. A total of 12 days post-orthotopic injection, tumor-bearing mice were treated daily with maraviroc (10 mg/kg via intraperitoneal injection) for 6 days and followed for up to 30 days after starting treatment. Frequencies of pancreatic tumor-infiltrating immune cells harvested at day 30 with or without maraviroc using spectral flow cytometry are shown. Data are represented as mean percentage positive cells of Live/CD45+ cells ± SD. For Tregs, the mean percentage positive cells of Live/CD45+ CD3+ cells ± SD are shown. Significance was tested using the Welch and Brown-Forsythe ANOVA for parametric data or Kruskal-Wallis test for non-parametric data. Mock (n=6), IR (n=3), aPD1 (n=8), aPD1+IR (n=8), CCR5i (n=3), CCR5i+IR (n=8), aPD1+CCR5i (n=5), αPD1/CCR5i/IR (n=8). *p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative H&E staining of pancreatic tumors derived from orthotopically injected KPC-A, KPC-F, and KPC-G cells 30 days post-injection (left). Representative immunofluorescence of KPC_A, KPC_F, and KPC_G in vitro cultured cells stained with DAPI (blue; nucleus) and stromal markers (Collagen I; red, αSMA; cyan). (B) Chemiluminescent cytokine array for KPF_F cell line. (C) Optimized panel for immune profiling using multispectral flow cytometry (Aurora Cytek) and gating strategy of respective cells as shown in Figure 2B.
+
 Pilot experiments injecting 500 KPC-F cells yielded robust and replicative growth kinetics (indicated by matching volumes of ±100 mm3 at the beginning of exponential growth), permitting direct comparisons of infiltrating immune cells across different treatment groups (Figure 2A). Next, tumors were allowed to reach 50 mm3 (approx. 12 days) before initiation of treatment with daily administration of CCR5i for 7 days. Mice were culled 30 days post-treatment for the characterization of infiltrating immune cells (Figure 2B). Mice in the CCR5i-treated group showed a trend toward reduction in NK cells and all T-cell subsets with a significant reduction in Treg (Live/CD45+CD3+CD4+FOXP3+) infiltration, indicating the active recruitment of CCR5+ Tregs in PDAC (Figure 2B). Given the enhanced effect of CCR5i on tumor growth kinetics (Figure 3A), however, standalone inhibition of CCR5 is unlikely to clinically benefit PDAC progression.
 
-## Combination immunotherapy following localized damage alters tumor immune composition
+![Figure 3.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig3-v1.jpg)
+
+**Figure 3.:** (A) Timeline of triple treatment regimen (maraviroc, αPD1, and radiotherapy) following orthotopic injection of KPC-F cells. A total of 12 days post-orthotopic injection of 500 KPC-F cells in the pancreas of wildtype C57BL/6 mice, mice were treated as follows: 7 consecutive days of 10 mg/kg intraperitoneal injection of maraviroc and 4 alternating days of 10 mg/kg intraperitoneal injection of αPD1. Mice were followed for up to 30 days following the start of the treatment regimen. Tumor volumes were measured by MRI and growth curves of individual treatment groups are plotted with or without radiotherapy as measured by MRI. Average growth curves ± SD are depicted in bold, individual mice are shaded (without IR; dashed, with IR; solid). Insert: expanded view of triple combination to show ‘responders’ display a significant benefit over RT alone. (B) Quantification of pancreatic tumors derived from (A) stained by IHC for p53. (C) Quantification of necrotic areas in pancreatic tumors derived from (A) based on H&E staining. (D) Quantification of infiltrating CD8 T-cells in pancreatic tumors derived from (A) by flow cytometry. (E) Profiling of infiltrating immune cells in pancreatic tumors derived from (A) by flow cytometry as in Figure 2B. Single, live cells were included for analysis and are represented as frequencies of Live/CD45+ cells or total CD3+ for FoxP3+ Tregs. Significance was tested using the Welch and Brown-Forsythe ANOVA for parametric data. #p<0.05, ##p<0.01, or Kruskal-Wallis test for non-parametric data #p<0.01; pairwise comparisons (Student’s t-test). *p<0.05, **p<0.01, ***p<0.005, ****p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images of cross-sectional anatomy of a mouse abdomen, obtained through respiratory gated MRI (left), SARRP (center; labeled CT), and an overlay of the MRI and CT images for tumor-specific dosage of 4 Gy (right). (B) Gross tumor volume at day 30 post-treatment as measured by MRI of mice as treated in Figure 3A. Data are represented as mean tumor volume ± SD. (C) Quantitative measurement of DAPI+ cells based on H&E staining of mice treated as in Figure 3A. (D) Percentage of αSMA+ cells based on IHC. (E) Quantification of IHC slides showing the percentage of CD8+ T-cell infiltrating the tumor (left). Tumor borders are marked as dashed lines. T=tumor, NT=non-tumor (right). (F) Profiles of infiltrating immune cells in pancreatic tumors by all treatments including single control treatments as measured by Aurora Cytek. Single, live cells were included for analysis and represented as frequencies of CD45+ cells in percentage. *p<0.05, **p<0.01, ***p<0.005.
+
+### Combination immunotherapy following localized damage alters tumor immune composition
 
 Induction of a localized inflammatory microenvironment with IR can drive anti-tumor responses, but there is limited evidence for clinical benefit of radiotherapy in combination with immune checkpoint inhibitors in PDAC (ClinicalTrials.gov identifier: NCT04098432) (Chen et al., 2022). Therefore, we next examined whether the addition of CCR5i to tumor-targeted IR could improve this by further modulating immune cell migration, in particular by reducing Treg involvement (Figure 3A, Figure 3—figure supplement 1A). As expected, radiotherapy (3×4 Gy) produced a strong effect on gross tumor volume, significantly reducing volumes over standalone treatment with αPD1, CCR5i, or CCR5i+αPD1 (Figure 3A). Responses to combination of IR with CCR5i, αPD1, or CCR5i+αPD1 (IR+IT) showed larger variations compared to IR alone, implying mixtures of ‘responders’ and ‘non-responders’ to immune-modulatory treatments. Moreover, IR/CCR5i/αPD1-treated tumor sections had significantly reduced DAPI+ and p53+ KPC cells compared to all other conditions, suggesting significantly more loss of tumor cells by triple combination treatment (Figure 3B, Figure 3—figure supplement 1B and C). Tumor sections from the triple combination treatment also presented with increased loss of active stroma (αSMA staining, Figure 3—figure supplement 1D) and increased necrotic areas over standalone radiotherapy (Figure 3C). In line with apparent increased tumor control, the triple combination treatment demonstrated infiltration of CD8+ T-cells (Figure 3D), supporting greater penetration of CD8+ T-cells into the center of tumors (Figure 3—figure supplement 1E). These results support improved tumor control with combination of IR/CCR5i/αPD1 over standalone radiotherapy or IR in combination with αPD1 and CCR5i alone. To elucidate the immune mechanisms behind this control, we analyzed the immune infiltrate of pancreatic tumors. In line with the results above, the triple combination reduced Treg infiltration, enhanced CD8+ T-cell infiltration, and supported a moderate increase in CD4+ T helper cells (Figure 3E, Figure 3—figure supplement 1F).
 
 Interestingly, no alteration was seen in the myeloid compartment, except for a reduced infiltration of PMN-MDSCs, whereas a significant infiltration of NK and NKT cells could be observed in pairwise comparisons between IR+αPD1 vs IR+CCR5i or IR/CCR5i/αPD1 (Figure 3E, Figure 3—figure supplement 1F). These results collectively support the notion that IR/CCR5i/αPD1 combination treatment alters immune infiltration by reducing Tregs and increasing NK and CD8 T-cells, thereby resulting in greater local tumor control.
 
-## CD8 T- and NKG2D- NK cells correlate with increased tumor control
+### CD8 T- and NKG2D- NK cells correlate with increased tumor control
 
 To derive more granularity on the potential roles of NK cell and T-cell populations in tumor control, tissue sections were stained using an optimized multiplex immunofluorescence panel and analyzed by HALO AI software to identify tumor cells (E-cadherin+ - blue), CD8+ T-cells (CD3+CD8+ - orange), CD4+ T-cells (CD3+CD8- - green), and NK cells (CD3-CD8-NK1.1+ - red) (Figure 4A, Figure 4—figure supplement 1A). As observed with flow cytometric and immunohistochemical analyses, multiplex staining of tumor sections also revealed a significant increase of CD8+ T-cells per mm3 when IR was used in combination with CCR5i or CCR5i+αPD1 (Figure 4—figure supplement 1B). Notably, despite having responders and non-responders in the combination groups (Figure 4A), a significant overall reduction in E-cadherin+ tumor cells as a percentage of total DAPI+ cells was observed (Figure 4—figure supplement 1C), supporting a decrease in cellularity and an increase in tumor necrosis with the IR/CCR5i/αPD1 combination (Figure 3B and C). The increase in CD8+ T-cells with combination treatment appears independent of tumor area and is matched by a similar increase in NK cells (Figure 4—figure supplement 1B and C). To correlate immune infiltration against loss of tumor cells (a measure of local tumor control), we determined relationships between CD4 T-, CD8 T-, and NK cell populations and E-cadherin+ cells across all tumor sections (independent of treatment) and found a significant inverse correlation for both CD8 T- and NK cells (r2=−0.3, p=0.038 and r2=−0.33, p=0.026, respectively), but not CD4 T-cells (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig4-v1.jpg)
+
+**Figure 4.:** (A) Spatial plots of individual cells identified using HALO software of scanned multiplex immunofluorescence murine orthotopic pancreatic tumor slices. Positive staining is identified as the marker of interest and DAPI+ (nucleus stain) signal. Responders and non-responders to treatment are based on loss of E-cadherin staining. (B) Correlations of total CD4 T (CD3+CD8-), CD8 T (CD3+CD8+), and NK cells (CD3-NK1.1+) plotted against %positive E-cadherin+ cells as derived from (A). (C) Correlation of %positive segregated NK cells plotted against %positive E-cadherin+ cells as derived from (A). K cells were segregated based on expression of NKG2D; NKActive; NK1.1+NKG2D+; NKNKG2D-ve; NK1.1+NKG2D-. (D) Intra-tumoral immune cells of stratified pancreatic tumors based on low or high E-cadherin percentage (cut-off: 20%). Significance was tested for p<0.05 with a two-tailed Student’s t-test. *Censored non-responder. (E) Proportion of infiltrating tissue-resident NK (trNK) (Live/CD45+CD3-CD19-NK1.1+CD103+CD49a+), conventional NK cells (Live/CD45+CD3-CD19-NK1.1+CD103-CD49a-), CD103+ NK, and CD49a+ NK cells isolated from orthotopic pancreatic tumors of mice treated with the IR+IT regimen and controls, as a percentage of CD45+ cells. Significance was tested for p<0.05 with a Student’s t-test. (F) Comparative surface expression of activation marker (CD69), activating receptors (NKp46, NKG2D), and exhaustion marker (TIM-3) on conventional NK (cNK) cells and trNK cells isolated from orthotopic pancreatic tumors. Significance was tested for p<0.05 with a Student’s t-test. *p<0.05, ***p<0.005, ****p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative image of a multiplex immunofluorescence staining of a pancreatic tumor. (B) Quantification of CD8+ cells (identified as DAPI+CD3+CD8+) across the different treatment groups. Markers are as indicated. Significance was tested for p<0.05 with a two-way ANOVA, *p>0.05, ***p>0.005. (C) Percentages of total DAPI+ immune cells (left) and E-cadherin+ tumor cells (right) derived from Figure 4A following treatment. Significance was tested using two-way ANOVA with Tukey multiple comparison (blue significance lines), or one-way ANOVA with Tukey multiple comparison (yellow significance lines) using a p<0.05. (D) Percentage of NKG2D+ and NKG2D- cells as a proportion of NK1.1+ cells as derived from Figure 4A. (E) Uniform manifold approximation and projection (UMAP) of intra-tumoral natural killer (NK) cells (NK1.1+CD3-CD19-) in mice treated with the IR/CCR5i+αPD1 combination. (F) Representative example of gating strategy for the identification of tissue-resident (CD103+CD49a+) and conventional (CD103-CD49a-) NK cells. (G) Proportion of trNK, conventional NK (cNK), CD103+ NK, and CD49a+ NK in mice treated with the IR+IT regimen and control (mock), as a fraction of total NK cells.
 
 We next wondered whether the association between NK cells and tumor control was due to cytotoxicity of functionally active NK cells by focusing our analysis on the NKG2D+ NK cell population, given that this is one of the major activating receptors on NK cells and is required for the lysis of target cells (Bryceson and Ljunggren, 2008). Surprisingly, the proportion of infiltrating CD3-NK1.1+NKG2D+ cells (NKActive) in stained tissue sections was reduced under IR/CCR5iαPD1 combination treatment, implying a decrease in total NK cell cytotoxic capacity (Figure 4—figure supplement 1D). The reduced NKG2D expression on NK cells may be a result of the prolonged engagement by ligands expressed on tumor cells, followed by ligand-induced endocytosis and degradation (Quatrini et al., 2015), or the shedding of NKG2D ligands by tumor cells (Kaiser et al., 2007). In both instances, receptor downregulation causes a reduction in cytotoxicity and impairs NK cell responsiveness to tumor cells, potentially contributing to exhaustion (Groh et al., 2002). Moreover, circulating NK cells from PDAC patients show reduced NKG2D levels compared to healthy controls (Peng et al., 2013) supporting the notion that chronic exposure to NKG2D ligands expressed or shed by PDAC cells might cause NKG2D down-modulation and a hypo-responsive phenotype. Indeed, the reciprocal CD3-NK1.1+NKG2D- population increases upon triple combination treatment (Figure 4—figure supplement 1D). Surprisingly, the correlation of NK cells with decreased frequency of E-cadherin+ cells was completely abrogated with selection for more functionally competent NK cells (NKActive), implying that the opposite hypoactive NKG2D- NK population (NKNKG2D-ve) is responsible for correlation of NK cells with E-cadherin loss and indeed, a superior inverse correlation is observed for NKNKG2D-ve and E-cadherin compared to NKActive or NKTotal (r2=0.52, p=0.003) (Figure 4C). To explore this association is relation to tumor control, sections were split into either E-cadherinhigh or E-cadherinlow and the extent of immune involvement was represented as a percentage of total DAPI+. While CD8 T-cells significantly segregated with E-cadherinlow, implying a contribution to tumor control, the association of NKNKG2D-ve was vastly more significant (Figure 4D).
 
@@ -74,25 +106,53 @@ To further dissect the association between NK cells and loss of tumor cells, we 
 
 We then compared these two clusters and found that trNK were less likely to be activated and expressed significantly lower levels of the activating receptors NKG2D and NKp46, as well as significantly higher levels of the inhibitory receptor TIM-3 (Figure 4F). In line with our multiplex IF data (Figure 4—figure supplement 1D), these data indicate that NK cells infiltrating tumors of mice treated with the IR/CCR5i/αPD1 combination were predominantly tissue resident and hypoactive, with a minority displaying a more conventional, fully active phenotype.
 
-## Heterogenous subsets of NK cells in PDAC exhibit differential inhibitory and activating signatures
+### Heterogenous subsets of NK cells in PDAC exhibit differential inhibitory and activating signatures
 
 To extrapolate our findings to the human setting, we explored scRNA-seq data from isolated NK and T-cells derived from human pancreatic cancer patients. A total of 51,561 cells were catalogued into 17 distinct cell lineages annotated with canonical gene signatures as described in Steele et al. using unsupervised clustering (Steele et al., 2020; Figure 5—figure supplement 1). UMAP of the lymphocyte compartment did not delineate NK subpopulations and showed overlap with CD8 T-cells (Figure 5—figure supplement 1). Therefore, we focused on UMAP of the CD8 and NK compartment alone, which led to three clear NK subpopulations that are distinct from CD8 T-cells and clearly separate out in clusters of hypoactive (NK_C1), fully active (NK_C2), and cytotoxic (NK_C3) NK cells from T-cells (Figure 5A). In agreement with downregulation of circulating NKG2D+ in PDAC patients, NKG2D (KLRK1) expression was below detection across all CD8 and NK subpopulations retrieved from patient tumors (Groh et al., 2002). As expected, CD16high (FCGR3a) cytolytic NK cells (NK_C3) cluster separately from CD16- NK cells (NK_C1) which are more enriched for genes related to cytokine secretion than cytolytic function (Figure 5D, Figure 5—figure supplement 1). The NK_C1 cluster correlates best with the tissue-resident, hypoactive NK phenotype observed in mice as they similarly displayed reduced cytolytic (reduced NKG7, NKp80, GZMA, and PRF1) with additional expression of tissue residency markers CD103, CD49a, and the adaptive activating receptor NKG2C (KLRC2) (Figure 5B and C). While adaptive NK cells in the peripheral circulation are associated with a CD56dimCD16+ phenotype, adaptive-like (i.e. NKG2C+) CD56brightCD16dim trNK cells have been identified in other epithelial sites such as the lungs (Brownlie et al., 2021), therefore, our pancreatic tissue NK_C1 cells could comprise, at least in part, adaptive-like trNK cells. Downstream UMAP analysis of the NK cell population distinguishes these three subsets of NK cells (NK_C1, NK_C2, and NK_C3) based on 41 differentially expressed genes (Figure 5D and E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig5-v1.jpg)
+
+**Figure 5.:** (A) Uniform manifold approximation and projection (UMAP) of the CD8+ T and natural killer (NK) sub-clusters from Steele et al. (B) Dot plot showing the expression of exhaustion-related genes across CD8+ T- and NK cell sub-clusters. (C) Dot plot showing highly expressed genes for each sub-cluster. (D) UMAP of the three NK sub-clusters (left), and violin plots comparing the expression of NK subtype-associated genes between the sub-clusters (right). (E) Dot plot showing the different gene expression programs across the three NK sub-clusters. (F) Heatmap showing the top 15 upregulated markers for each NK sub-cluster compared against total NK cluster.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) of the main cell types from the integrated single-cell RNA sequencing (scRNA-seq) Steele dataset (left) and dot plot showing canonical marker expression for each respective cell type (right). Color indicates average normalized expression; dot size represents percentage of cells of each cell type expressing the respective gene. (B) UMAP plot of lymphocyte sub-clusters from the Steele dataset (left) and their marker expressions (dot plot, right). (C) Violin plots showing NK-related gene signatures for each NK sub-cluster. (D) UMAP plot of lymphocyte sub-clusters from the Peng dataset, with the arrows representing the proposed functional development. (E) UMAP showing the expression levels of CD16(FCGR3a), CD56 (NCAM1), CD103 (ITGAE), and CD49a (ITGA1) across the NK sub-clusters. (F) Dot plot showing the different gene expression programs across the NK sub-clusters from the Peng dataset.
+
 Given that CD56 expression correlates with increased survival in PDAC patients (Figure 1C), we were intrigued to notice that the hypoactive NK_C1 cluster is enriched for CD56 but not CD16 expression (Figure 5D). These data suggest that the NK_C1 cluster represents a subset of NK cells in PDAC that display tissue residency markers (ITGAE, CD103 and ITGA1, CD49a) and have an immune-secretory phenotype (XCL1) as opposed to cytotoxic phenotype (NK_C2 CD16+, NKG7+) (Figure 5E). Furthermore, we defined a core signature gene set to distinguish NK_C1 from other NK subpopulations (Figure 5F). Verification of the NK_C1 population as trNK cells in a second scRNA-seq pancreatic cancer dataset of Peng et al., 2013, further supports the existence of these hypoactive cells in an independent PDAC cohort (Figure 5—figure supplement 1E and F).
 
-## trNK cells in PDAC show differential communication
+### trNK cells in PDAC show differential communication
 
 The NK_C1 population had the highest expression of the chemokines XCL1 and XCL2, which have been demonstrated to attract cDC1 (Böttcher et al., 2018) and thereby increase cross-presentation to CD8+ T-cells. We next explored myeloid populations in the Steele et al. scPDAC dataset (Figure 6—figure supplement 1A) and identified cDC1 cells as XCR1+ enriched compared to other DC subsets (Figure 6A, Figure 6—figure supplement 1B). As XCR1 is the receptor for XCL1/2, this suggests that one of the main directions of communication from NK_C1 cells in PDAC is to cDC1 (Figure 6B). We next employed the R package ‘CellChat’ (Jin et al., 2021) to further dissect the crosstalk between NK_C1 and other cells found in the pancreatic tumor microenvironment. We again observed that NK_C1-derived XCL1/2 is the strongest signal to XCR1+ cDC1s (Figure 6C), supporting active crosstalk between NK_C1 and cDC1. Analysis of specific ligand-receptor pairs between NK_C1 and 24 other cell groups yielded 32 significant interactions, of which the TNFSF14 (LIGHT)-TNFRSF14 pair was the most universal intercellular interaction, whereas CD74 (or MIF) signaling showed the highest communication probability (Figure 6—figure supplement 1C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig6-v1.jpg)
+
+**Figure 6.:** (A) Uniform manifold approximation and projection (UMAP) of the dendritic cell sub-clusters from the Steele dataset. (B) Violin plot showing the expression of XCL1, XCL2, and XCR1 across all cell types. (C) Circle plots showing interactions across all cell types (top left), signals coming from the tissue-resident natural killer (trNK) cells (top right), the XCL1-XCR1 interaction (bottom left), and the XCL2-XCR1 interaction (bottom right). The width of edges represents the communication strength. (D) Heatmap showing the summary of secreted signaling communications of outgoing (left) and incoming (right) signals. The color bar represents the communication strength, and the size of the bars represents the sum of signaling strength for each pathway or cell type. (E) Schematic overview of the trNK to type 1 conventional dendritic cell (cDC1) and cDC1 to CD8 T-cell communication axis (top). Circle plots of all outgoing signals from cDC1 (bottom left) and the CXCL16-CXCR6 signaling (bottom right). (F) Correlation of HALO data on total NKNKG2D-ve NK cells (CD3-NK1.1+NKG2D-) with CD8 T-cells (CD3+CD8+) from stained sections of treated KPC_F orthotopic tumors, R2 and p-values indicate positive correlation across all tumors (gray, n=15) or limited to mock, CCR5i+IR and IR/CCR5i/αPD1 combination (red, n=9). (G) Correlation of trNK signature with CD8A (left) or CD8B (right) in bulk RNA-seq from TCGA_PAAD and binned into quartiles based on extent of cDC1 involvement as assumed by cDC1 signature (Figure 6—source data 1).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) of the myeloid cell types from the Steele dataset (top) and the dot plot showing the canonical cell markers (bottom). (B) Heatmap of the top 15 markers for each DC sub-cluster. (C) Dot plot showing the estimated outgoing secreted signals from the natural killer (NK) C1 cell population. (D) Dot plot showing the estimated secreted and cell-cell contact signals from the type 1 conventional dendritic cell (cDC1) cell population. Color of the dots represents the communication probability, and the size of the dot represents the significance level.
 
 Within the immune cell compartment, communication signals between NK_C1 and macrophages were the most abundant and diverse, followed by cDCs (cDC2 and cDC1) and Tregs (Figure 6—figure supplement 1C). Similarly, cDC1 in these PDAC samples also seem capable of presenting MHC class I peptides to CD8+ T-cells, but surprisingly also MHC class II to CD4+ Tregs (Figure 6—figure supplement 1D). Next, significant receptor-ligand interactions were segregated as ‘outgoing’ or ‘incoming’ signals to understand directionality of communication. Among the outgoing signals from different cell types, NK_C1 cells contributed the highest IL-16, CSF, LIGHT (TNFSF14), FASLG, and MIF signals in tumors (Figure 6D). IL-16 is mainly known as a chemoattractant for CD4+ T-cells, however CD4+ dendritic cells have also been demonstrated to be recruited by IL-16 (Bialecki et al., 2011; Kaser et al., 1999; Vremec et al., 2000). IL-16 has also been described to increase HLA-DR levels in CD4+ T-cells and eosinophils, indicating that it has the potential to induce MHC antigen presentation in CD4+ cells (Cruikshank et al., 1987; Rand et al., 1991). Taken together, these interactions support the hypothesis that trNK cells may improve tumor control via recruitment of cDC1 via XCR1, while promoting DC maturation via LIGHT-CD86 signaling (Zou and Hu, 2005) and supporting DC antigen presentation to both CD4+ and CD8+ T-cells via MIF-CD74 signaling (Basha et al., 2012; Figure 6E). On the other hand, dendritic cell-secreted BAG6 could promote both survival and cytokine release of NK cells by binding to NKp30 (Simhadri et al., 2008) and directly signal to CD8 T-cells via CXCL16-CXCR6 (Di Pilato et al., 2021; Vella et al., 2021), thereby generating an anti-tumor feedforward loop (Figure 6E). IL-16 also communicates to CD4+ Tregs, which could contribute to immunosuppression via enhanced Treg migration and expansion (Figure 6D; McFadden et al., 2007). However, Tregs may also be susceptible to Fas-mediated cell death due to NK_C1 expression of Fas ligand (Figure 6D). This could enhance immune cell infiltration and revoke the immunosuppressive environment, ultimately contributing to increased tumor control.
 
 These results so far suggest the presence of immunoregulatory trNK cells in PDAC that are involved in an intricate immune communication network with DCs and CD8 T-cells to enhance anti-tumor immunity. To support this hypothesis, we explored the correlation between trNK and CD8 T infiltration in our murine orthotopic tumor model and found a highly significant positive association (R²=0.6571, p=0.003), which was strengthened when we focused on untreated (Mock) vs IR+IT combinations where trNK cells are evident (R²=0.9223, p=0.0004) (Figure 6F). To ascertain if this also holds true in human PDAC, we first specified the NK_C1 signature as a 14-gene signature that was specific for our trNK cells over all other cells to interrogate these cells in bulk datasets (Figure 6—source data 1). We next explored the CD8 T:trNK cell relationship in PAAD_TCGA and, as the model in Figure 6E predicts, this interaction to be cDC1 dependent, binned the PAAD_TCGA cohort into quartiles based on differential cDC1 signature expression to test dependence of CD8 T:trNK on cDC1 levels (Figure 6G). PDAC patient tumors with the lowest evidence for cDC1 involvement had a weak correlation of trNK_C1 with CD8A and CD8B (p=0.047; p=0.045, respectively) which rises to a strong highly significant correlation when the highest levels of cDC1s are present (R=0.55, trNK_C1 vs CD8A p=0.0001; R=0.58, trNK_C1 vs CD8B p=0.000047) (Figure 6G).
 
-## NK cell signature correlates with improved survival
+### NK cell signature correlates with improved survival
 
 As the presence of trNK and correlation with CD8 T-cells appears boosted by IR, we next further explored our original finding that CD56 correlates with highly significant survival in PDAC (Figure 1, Figure 1—figure supplement 1). We hypothesized that tumors with a high NCAM1/CD56 signature may reflect a greater indication of NK cell recruitment, including a high proportion of trNK (CD56brightCD16low), whereas tumors with a low CD56 signature might have a lower proportion of infiltrating (tr)NK cells and, therefore, could benefit from IR. Indeed, separating PAAD_TCGA patients into those who received radiotherapy (RTx) vs those that did not showed that the benefit in overall survival of PDAC patients is only apparent in the CD56low patient group (log-rank p<0.0001, Figure 7). We next explored whether CD56-associated survival is specifically due to the presence of trNK cells using our NK_C1 signature (Figure 6—source data 1). Analysis of primary PDAC tumors from the TCGA (TCGA_PAAD) demonstrates that patients with tumors enriched for the trNK cell (NK_C1) gene signature were associated with improved PDAC survival compared to patients without trNK involvement (Figure 7, Figure 7—figure supplement 1A). Similarly to CD56low patients, we find that patients with trNKlow benefit from RTx (log-rank p<0.005, Figure 7). Notably, we find that despite an overall poor prognosis, CCL5high patients (TCGA and CPTAC3) are significantly enriched for the trNK_C1 gene signature (Figure 7), potentially due to strong CCR5 or CCR1-mediated recruitment (Figure 1—figure supplement 1A). However, as CCL5 also recruits MDSCs, TAMs, Tregs, and conventional NK cells via CCR5, CCR5i could prevent a tumor suppressive microenvironment, both directly and indirectly by retaining trNK cells that remove Tregs through FASL (Figure 7—figure supplement 1). Therefore, we would expect that patients with CCL5high NK_C1low would perform significantly worse than patients with CCL5highNK_C1high. Indeed, CCL5high patients enriched for the NK_C1 signature or CD56 had significantly improved overall and disease-free survival (Figure 7). This also supports a model where CCL5-mediated recruitment of NK cells can be beneficial in the absence of CCL5-CCR5 recruitment, likely via CCR1 signaling (Ajuebor et al., 2007; Figure 7—figure supplement 1, Figure 1—figure supplement 1A). These results suggest that despite high CCL5 levels and an overall poor prognostic outcome, the presence of trNK cells significantly improves survival and provides an opportunity for intervention with the IR+IT combination.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig7-v1.jpg)
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Tissue-resident natural killer (trNK) cell (NK_C1) signature and overall survival in pancreatic ductal adenocarcinoma (PDAC) using the CPTAC3 dataset. (B) Schematic overview of proposed mode of action of CCL5 gradients: CCL5 leads to the recruitment of CCR5+ immune cells, including regulatory T-cells (Tregs). Blockade of the CCL5-CCR5 axis, however by CCR5 antagonists, allows recruitment of trNK cells via CCL5-CCR1 signaling while Tregs recruited into the microenvironment are killed off via FasL-mediated trNK killing.
+
 Finally, we explored whether the NK_C1 gene signature could be a prognostic marker in solid malignancies other than PDAC by expanding our TCGA analysis. The majority of cancers with enriched expression of our NK_C1 gene signature showed improved survival (Figure 8) (apart from endometrium and prostate) as a continuous variable or as a high vs low in a univariate Cox regression (Figure 8—figure supplement 1). The latter result supports our hypothesis that enrichment of trNK cells is a protective factor across most solid malignancies. Moreover, the ability to enrich for this population with IR+IT combinatorial strategies supports the idea that trNK cells generally improve overall survival though improving CD8 T-cell activity in solid cancers.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig8-v1.jpg)
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92672/elife-92672-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Cox regression of tissue-resident natural killer cell signature vs overall survival and disease-free survival across indicated malignancies as a continuous variable (B) or segregated into low/high NK_C1.
 
 ## Discussion
 
@@ -108,56 +168,297 @@ Strikingly, using our trNK signature we find that elevated involvement of trNKs 
 
 ## Materials and methods
 
-## Mice and cell culture
+### Mice and cell culture
 
 Female wildtype C57BL/6 mice (6–8 weeks) were purchased from Charles River (Kent, UK) and maintained in accordance with the UK Animal Law (Scientific Procedures Act 1986). Animal procedures were carried out under local ethics approval. NKPCB-NBC12.1F (KPC-F) cells, derived from a KPC mouse (LSL-KrasG12D; LSL-Trp53R172H; Pdx1Cre) derived from a CD57BL/6 background were cultured in DMEM (Gibco) supplemented with 10% FBS, 2 mM glutamine, 100 U/mL penicillin, 100 µg/mL streptomycin and maintained under 5% CO2, 37°C. The cells were kindly donated by Jennifer Morton (Beatson Institute, Glasgow) and stocks were generated to keep cells at low passage numbers and checked regularly for mycoplasma contamination (Lonza).
 
-## Orthotopic surgery
+### Orthotopic surgery
 
 A total of 500 KPC-F cells (passages 9–11) were injected into female C57BL/6 mice in a volume of 5 µL in a mixture of 94% Matrigel and 6% DMEM (Gibco) using a 26-gauge syringe (Hamilton). Following anesthesia of the mice using 4% isoflurane/oxygen and clipping of hair, an incision of 2 cm was made in the left abdominal site. The spleen and pancreas were exteriorized using forceps and KPC-F cells were injected in the tail of the pancreas. Successful injection was verified by the appearance of a wheal at the injection site with no leakage through the pancreatic capsule. Spleen and pancreas were gently moved back into the peritoneal cavity; the peritoneum was sutured with absorbable 4.0 Vicryl suture (Ethicon) and the skin was closed using a 7 mm wound clip.
 
-## In vivo drug treatments and radiation
+### In vivo drug treatments and radiation
 
 Animals were randomized to different treatment groups following orthotopic implementation. For radiation, mice were anesthetized and locally irradiated with 4 Gy using a combination of MRI and the small animal radiation research platform. The CCR5i maraviroc (R&D) was administered intraperitoneally (10 mg/kg in PBS) from day 0 until day 6. Monoclonal Ultra-LEAF purified anti-PD1 antibody (BioLegend) was administered (5 mg/kg in PBS) via IP injection on alternate days from day 1 until day 7. Mice were culled at 30 days or if maximum tumor volume was reached.
 
-## Monitoring of tumor growth via MRI
+### Monitoring of tumor growth via MRI
 
 Mice were anesthetized using 1.5–3% isoflurane, positioned into a custom-made, 3D printed, multimodality cradle and scanned using a 4.7 T 310 mm horizontal bore Biospec AVANCE III HD preclinical imaging system equipped with 114 nm bore gradient insert (Bruker BioSpin GmbH, Germany). Respiration was maintained at 40–60 breaths/min and monitored using a pneumatic balloon (VX010, Viomedex Ltd, UK) coupled to a pressure transducer and placed against the chest. A threshold-based respiration gating control signal was generated on a custom-built gating device, which allows efficient multi-slice MRI scanning with limited interference of respiratory motion (Kinchesh et al., 2019). Tumor volumes were calculated using ITK-SNAP (Yushkevich and Gerig, 2016).
 
-## Blood and tissue collection
+### Blood and tissue collection
 
 Following reaching (humane) endpoints, mice were euthanized by approved Schedule 1 methods. Blood (≤1 mL) was collected via cardiac puncture under anesthesia (3–3.5% isoflurance/oxygen) using a 25-gauge syringe (Thermo Fisher Scientific) coated with anticoagulant ACD buffer (0.5 M glucose, 0.5 M trisodium citrate, 0.5 M citric acid; 100 µL). A total of 700 µL of blood was lysed with 12 mL of 1× RBC Lysis buffer and incubated for 10–15 min on a rotor, centrifuged, and washed with buffer (2% FBS, 1 mM EDTA in PBS). Three transverse sections of orthotopic tumors were taken and used for flow cytometry or fixed and stored in 10% neutral buffered formalin. Tumors were disassociated using a mixture of collagenase I, II, and IV (Worthington) and DNAse (Thermo Fisher Scientific) in HBSS (Gibco), and continuously mixed at 850 rpm for 45 min at 37°C, followed by rigors pipetting and additional dissociation for 50 min at 850 rpm and 37°C. The disassociated tissue was strained through a 70 µm cell strainer and neutralized with DMEM+10% FBS prior to incubation with flow antibodies.
 
-## Multicolor spectral flow cytometry
+### Multicolor spectral flow cytometry
 
 A total of 1×106 cells for blood and disassociated tissue were surface stained in a 100 µL volume at 4°C in the dark (see Table 1 for list of antibodies and optimized dilutions). Cells and reference controls were centrifuged at 500×g for 2 min at room temperature and fixed and permeabilized using the FOXP3 Fixation/Permeabilization kit (Thermo Fisher Scientific). Samples were intracellularly stained at 4°C in the dark, washed, re-suspended in buffer and stored at 4°C in the dark prior to acquisition. Samples were acquired on a 4-laser Aurora (Cytek) with SpectroFlo software (Cytek, v2). A minimum of 10,000 events for reference control samples and 100,000 of CD45-gated events were recorded. Samples were acquired on a 3-laser (42-channel, V-16, B-16, R-10) or 4-laser (58-channel, UV-16, V-16, B-16, R-10) Cytek Aurora.
 
-## Immunohistochemistry
+**Table 1.**
+ Aurora spectral panel and antibodies list.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Clone</th>
+      <th>Fluorochrome</th>
+      <th>Company, catalogue number</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Live/dead</td>
+      <td>–</td>
+      <td>Blue</td>
+      <td>Thermo Fisher, L23105</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>30-F11</td>
+      <td>AF532</td>
+      <td>Thermo Fisher, 58-0451-80</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>1D3</td>
+      <td>SB436</td>
+      <td>Thermo Fisher, 62-0193-80</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>17A2</td>
+      <td>eF450</td>
+      <td>BioLegend, 48-0032-80</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>NK1.1</td>
+      <td>PK136</td>
+      <td>BV650</td>
+      <td>BioLegend, 108735</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>CD8a</td>
+      <td>53–6.7</td>
+      <td>BV570</td>
+      <td>BioLegend, 100739</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>CD4</td>
+      <td>RM4-5</td>
+      <td>BV510</td>
+      <td>BD Biosciences, 100553</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>CD25</td>
+      <td>7D4</td>
+      <td>AF647</td>
+      <td>BD Biosciences, 563598</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>FOXP3</td>
+      <td>FJK-16s</td>
+      <td>PE</td>
+      <td>Thermo Fisher, 12-5773-80</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>CD206</td>
+      <td>C068C2</td>
+      <td>BV785</td>
+      <td>BD Biosciences, 141729</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>F4/80</td>
+      <td>T45-2342</td>
+      <td>BV480</td>
+      <td>BD Biosciences, 565635</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>CD80</td>
+      <td>REA983</td>
+      <td>APC</td>
+      <td>Miltenyi Biotech, 130-116-46</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>CD279 (PD-1)</td>
+      <td>J43</td>
+      <td>PE-Cy7</td>
+      <td>Thermo Fisher, 25-9985-82</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>CD195 (CCR5)</td>
+      <td>REA354</td>
+      <td>VB-FITC</td>
+      <td>Miltenyi Biotech, 30-105-141</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>CD11b</td>
+      <td>M1/70</td>
+      <td>AF700</td>
+      <td>BioLegend, 101222</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Ly6C</td>
+      <td>HK1.4</td>
+      <td>PE-Dazzle</td>
+      <td>BioLegend, 128043</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Ly6G</td>
+      <td>1A8</td>
+      <td>BV421</td>
+      <td>BioLegend, 127627</td>
+      <td>1:25</td>
+    </tr>
+  </tbody>
+</table>
+
+### Immunohistochemistry
 
 A total of 24 hr post-fixation at room temperature, tissues were transferred to 70% ethanol and stored overnight at 4°C. Fixed tissues were overnight processed using the STP120 Spin Tissue Processor (Thermo Fisher Scientific) and embedded the next day in paraffin wax. Tissues were cut into 4 µm sections using a Leica RM215 microtome and adhered onto SuperFrost Ultra Plus Adhesion slides (Thermo Fisher Scientific) before being dried overnight in a 37°C incubator.
 
-## Multiplex immunofluorescence
+### Multiplex immunofluorescence
 
 Multiplex immunofluorescence staining was carried out on 4-µm-thick FFPE sections by the Translation Histopathology Laboratory (THL, University of Oxford). In brief, sections were stained using the OPAL protocol (AKYOA Biosciences) on a Leica BOND RXm Auto-Stainer (Leica, Microsystems). Six consecutive staining cycles were performed using primary antibody-Opal fluorophore pairings detailed in Table 2. Primary antibodies were incubated for 30 min and detected using the BOND Polymer (Lecia Biosystems) as per the manufacturer’s instructions. In brief, sections were baked, dewaxed with BOND dewax solution, rehydrated with alcohol, and incubated with Epitope Retrieval Solution 1 or 2 (ER1, ER2) (Lecia Biosystems) at 100°C for 20 min. Sections were washed X3 with BOND wash, blocked with peroxidase block (3–4% [vol/vol] hydrogen peroxide) for 5 min and subsequently washed 3× with BOND wash. Primary antibodies were incubated for 30 min, washed as before, and incubated with Anti-Rabbit Poly-HRP IgG for 8 min. Sections were washed twice in BOND wash, once in deionized water prior to Opal antibody incubation for 10 min. Sections were washed three times in deionized water and finally incubated with spectral DAPI (Akoya Biosciences) and slides mounted with VECTASHIELD Vibrance Antifade Mounting Medium (Vector Laboratories). Whole slide multispectral images were obtained on the AKOYA Bioscience Vectra Polaris (scanned at ×20 magnification). Batch analysis and spectral unmixing of the tissues was performed with inForm 2.4.11 software. Batch analyzed multispectral images were fused in HALO AI to produce a spectrally unmixed reconstructed whole tissue image.
 
-## Data analysis and statistics
+**Table 2.**
+ Multiplex IF panel.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Coupled to</th>
+      <th>Company, catalogue number</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NKG2D</td>
+      <td>Opal 520</td>
+      <td>Abcam, ab203353</td>
+      <td>1:600</td>
+    </tr>
+    <tr>
+      <td>CD161/NK1.1</td>
+      <td>Opal 620</td>
+      <td>Abcam, ab234107</td>
+      <td>1:20,000</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>Opal 480</td>
+      <td>Abcam, ab5690</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>Opal 570</td>
+      <td>Cell Signaling, 98941</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>E-cadherin</td>
+      <td>Opal 780</td>
+      <td>Cell Signaling, 3195</td>
+      <td>1:500</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data analysis and statistics
 
 Flow cytometry data was analyzed using FlowJo software. HALO AI software was used for analysis of multiplex immunofluorescence. Due to variations in staining, thresholds for individual colors were manually determined for individual tissue sections and analysis was carried out blinded fashion.
 
-## Bulk RNA-seq analysis
+### Bulk RNA-seq analysis
 
 Gene expression and clinical data were obtained via the TCGAbiolinks (2.24.3) R package for TCGA-PAAD (‘Integrated Genomic Characterization of Pancreatic Ductal Adenocarcinoma’, 2017), and GDC data portal (https://portal.gdc.cancer.gov/analysis_page?app=Downloads) for CPTAC-3 (Cao et al., 2021). Raw read counts were transformed to counts-per-million (CPM) and log-CPM using the ‘edgeR’ Bioconductor package (3.38.0). Inter-sample variation was normalized using the trimmed mean of M-values (TMM) method of ‘edgeR’. The ‘GSVA’ package (1.44.0) was used to generate the trNK signature (Figure 6—source data 1) score for individual patients. Gene signature scores and gene expressions were transformed to categorical groups via the maximally selected rank statistics (maxstat) method of the ‘survival’ package. Kaplan-Meier plots were performed using the ‘survival’ (3.3-1), and ‘survminer’ (0.4.9) R packages and the log-rank test was used to statistically compare survival estimates between groups.
 
-## TCGA pan-cancer analysis
+### TCGA pan-cancer analysis
 
 For the pan-cancer TCGA survival analysis, gene expression and clinical data were obtained via the UCSC Xena platform. The trNK signature was analyzed for the individual cancer types for Kaplan-Meier survival similar to above. Univariate COX regression of the NK signature for both overall survival and disease-free survival was performed using the ‘ezcox’ (1.0.2) package.
 
-## Analysis of human scRNA-seq data
+### Analysis of human scRNA-seq data
 
 Raw scRNA-seq data from the Steele dataset (Steele et al., 2020) were obtained from the NIH GEO database by using the accession number GSE155698. The samples included 16 treatment naïve primary tumors (6 surgical resections and 10 fine-needle biopsy specimens) and 3 non-malignant pancreas samples. All analysis was performed using the ‘Seurat’ (4.3.0) package. Cells with low number of detected genes (<200), high number of mitochondrial genes (>25%), and high number of gene counts (>100,000) were filtered out from further analysis. Data were integrated to remove batch effects using a reciprocal principal component analysis (rPCA) based on the developer’s pipeline (https://satijalab.org/seurat/articles/integration_rpca.html). Following integration, data were scaled, and visualized using UMAP on the top 40 principal components. Cell clusters were identified using the ‘FindNeighbors’ and ‘FindClusters’ Seurat functions and annotated based on canonical cell markers. Gene expression differences across cell clusters were visualized using the ‘DotPlot’ and ‘DoHeatmap’ Seurat functions. Curated gene sets were calculated using the ‘AddModuleScore’ and compared using violin plots with the ‘VlnPlot’ function.
 
-## Inference of cell-cell interactions
+### Inference of cell-cell interactions
 
 The ‘CellChat’ (1.6.1) R package was used to identify and visualize significant cell-cell interactions based on curated ligand-receptor pairs for both secreted signaling and cell-cell contact categories (Jin et al., 2021). Network centrality scores were calculated with the ‘netAnalysis_computeCentrality’ function and global communication patterns were visualized using the ‘netAnalysis_signalingRole_heatmap’. Specific interactions of cells of interest were visualized by circle and dot plots by using the ‘netVisual_circle’ and ‘netVisual_bubble’ functions, respectively.
 
-## Packages/tools used for analysis
+### Packages/tools used for analysis
+
+<table>
+  <thead>
+    <tr>
+      <th>Package (version)</th>
+      <th>Repository</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TCGABiolinks 2.24.3</td>
+      <td>Bioconductor</td>
+      <td>https://bioconductor.org/packages/TCGAbiolinks/; Colaprico et al., 2008</td>
+    </tr>
+    <tr>
+      <td>edgeR 3.38.0</td>
+      <td>Bioconductor</td>
+      <td>https://bioconductor.org/packages/edgeR/; Chen et al., 2016</td>
+    </tr>
+    <tr>
+      <td>GSVA 1.44.0</td>
+      <td>Bioconductor</td>
+      <td>https://bioconductor.org/packages/GSVA/; Castelo et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Survival 3.3-1</td>
+      <td>CRAN</td>
+      <td>https://cran.r-project.org/package=survival; Therneau et al., 2022</td>
+    </tr>
+    <tr>
+      <td>Survminer 0.4.9</td>
+      <td>CRAN</td>
+      <td>https://cran.r-project.org/package=survminer; Kassambara et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Ezcox 1.0.2</td>
+      <td>CRAN</td>
+      <td>https://cran.r-project.org/package=ezcox ; Wang, 2021</td>
+    </tr>
+    <tr>
+      <td>Seurat 4.3.0</td>
+      <td>CRAN</td>
+      <td>https://cran.r-project.org/package=Seurat; Butler et al., 2022</td>
+    </tr>
+    <tr>
+      <td>CellChat 1.6.1</td>
+      <td>GitHub</td>
+      <td>https://github.com/sqjin/CellChat; Jin, 2023</td>
+    </tr>
+    <tr>
+      <td>Tidyverse 2.0.0</td>
+      <td>CRAN</td>
+      <td>https://cran.r-project.org/package=tidyverse; Wickham, 2023</td>
+    </tr>
+  </tbody>
+</table>

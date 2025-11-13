@@ -18,12 +18,12 @@
 
 ### Affiliations
 
-1. https://ror.org/024hnwe62 Sorbonne Université, Centre National de la Recherche Scientifique (CNRS UMR7622), Institut de Biologie Paris-Seine (IBPS), Developmental Biology Laboratory Paris France
-2. https://ror.org/02sps6z09 Sorbonne Université, Centre National de la Recherche Scientifique (CNRS UMR8246), Inserm U1130, Institut de Biologie Paris-Seine (IBPS), Neuroscience Paris Seine (NPS) Paris France
-3. https://ror.org/01c2cjg59 Imaging Facility, Institut de Biologie Paris-Seine (IBPS) Paris France
-4. https://ror.org/02y2c2646 Sorbonne Université, Centre National de la Recherche Scientifique (CNRS UMR8256), Institut de Biologie Paris-Seine (IBPS), Adaptation Biologique et Vieillissement Paris France
-5. https://ror.org/02en5vm52 Sorbonne Université, INSERM, CNRS, Institut de la Vision Paris France
-6. https://ror.org/02vjkv261 Institut National de la Santé et de la Recherche Médicale (INSERM) Paris France
+1. Sorbonne Université, Centre National de la Recherche Scientifique (CNRS UMR7622), Institut de Biologie Paris-Seine (IBPS), Developmental Biology Laboratory Paris France ([ROR:024hnwe62](https://ror.org/024hnwe62))
+2. Sorbonne Université, Centre National de la Recherche Scientifique (CNRS UMR8246), Inserm U1130, Institut de Biologie Paris-Seine (IBPS), Neuroscience Paris Seine (NPS) Paris France ([ROR:02sps6z09](https://ror.org/02sps6z09))
+3. Imaging Facility, Institut de Biologie Paris-Seine (IBPS) Paris France ([ROR:01c2cjg59](https://ror.org/01c2cjg59))
+4. Sorbonne Université, Centre National de la Recherche Scientifique (CNRS UMR8256), Institut de Biologie Paris-Seine (IBPS), Adaptation Biologique et Vieillissement Paris France ([ROR:02y2c2646](https://ror.org/02y2c2646))
+5. Sorbonne Université, INSERM, CNRS, Institut de la Vision Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+6. Institut National de la Santé et de la Recherche Médicale (INSERM) Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))
 
 † Corresponding author
 
@@ -47,7 +47,7 @@ Here, we provide a detailed characterisation of Laminin expression during the co
 
 ## Results
 
-## The developing OP and brain tissues are surrounded by Laminin-containing BMs
+### The developing OP and brain tissues are surrounded by Laminin-containing BMs
 
 We first analysed Laminin distribution during early OP morphogenesis. It has been proposed that the zebrafish OP contains a transient population of pioneer neurons in the ventro-medial region of the OP: their axons are the first to grow out of the OP at 22–24 hpf, and ablation experiments suggest that they act as a scaffold for the growth of the axons of the later born olfactory sensory neurons (OSNs), located in the rosette forming in the dorso-lateral region of the OP (Whitlock and Westerfield, 1998). Madelaine et al., 2011 further showed that the first neurons to differentiate in the OP (the early olfactory neurons or EONs) express the Tg(neurog1:GFP) transgene (Blader et al., 2003). However, as discussed in Madelaine et al., 2011, neurog1:GFP+ neurons appear much more numerous than the previously described pioneer neurons, and may thus include pioneers but also other neuronal subtypes (Whitlock and Westerfield, 1998; Madelaine et al., 2011).
 
@@ -55,37 +55,81 @@ Between 14 and 22 hpf, in a process referred to as OP coalescence, cell movement
 
 To analyse Laminin expression at these coalescence stages, we performed immunostainings with a Laminin polyclonal antibody on Tg(neurog1:GFP) embryos. Consistent with previous observations (Torres-Paz and Whitlock, 2014; Torres-Paz et al., 2021), we first noticed the appearance of a fairly continuous (with only tiny interruptions) Laminin-rich BM surrounding the brain from 17 to 18 hpf, while around the OP, only discrete Laminin spots were detected at this stage (Figure 1A and A’). By contrast, at the end of coalescence (22 hpf), two distinct BMs were clearly visible, one around the brain and the other one partially enveloping the OP on its basal side (Figure 1B and B’), suggesting that the Laminin-rich BM of the OP starts to assemble between 18 and 22 hpf, during the late phase of OP coalescence.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig1-v1.jpg)
+
+**Figure 1.:** (A–D) Immunostaining for Laminin magenta on Tg(neurog1:GFP) embryos (green) at 18 and 22 hpf (A-B’, dorsal views), and on Tg(omp:meYFP) embryos (green) at 28 and 36 hpf (C-D’, frontal views). In A, white arrowheads = BM like Laminin staining around the brain, grey arrowheads = spotty Laminin accumulation around the OP. In C, D, asterisks = interruptions in the OP’s and brain’s BM where the YFP+ axons exit the OP and enter the brain. arrows = distalmost extremity of the YFP+ axon bundle, which is in close contact with the internal side of the brain’s BM. In (C’, D’), white arrowheads = ventro-medial unipolar neurons labelled by the Tg(omp:meYFP) line (see Miyasaka et al., 2005). All the images are single z-sections. (E–J) Images extracted from confocal live imaging on TgBAC(lamC1:lamC1-sfGFP); Tg(cldnb:Gal4; UAS:RFP) embryos (frontal view, except for J), dorsal view. LamC1-sfGFP expression in green, and RFP expression (OP cells and peridermal skin cells) in magenta. Arrowheads = OP cells with cytoplasmic LamC1-sfGFP accumulation. Asterisks in F and H=axon exit point and entry point, respectively. Arrows in H and I=distalmost extremity of the RFP+ axon bundle, located close to the brain’s BM. In J, double headed arrow = gap in the LamC1-sfGFP observed at the interface with the periderm, where the nostril orifice opens in the skin, as previously reported (Baraban et al., 2023). All the images are single z-sections. (K) Schematic representation of Laminin-containing BM (magenta) assembly during OP coalescence (a, b) of the formation of the exit/entry points, which often appear as zones with several, small BM interruptions (b, d) and the associated axonal behaviours: retrograde axon extension and lateral movement in the OP (a, b, grey arrows), growth as a fasciculated bundle, initially between the BMs of the OP and the brain (c), and then migration of the axonal tips along the internal side of the brain’s BM (d) Scale bar: 50 µm.
+
 To further analyse the dynamics of Laminin γ1 expression and BM assembly during OP coalescence, we took advantage of the TgBAC(lamC1:lamC1-sfGFP) line, in which Laminin γ1 is tagged with superfolder GFP and expressed under the control of its own promoter (Yamaguchi et al., 2022). To co-label OP cells, we used the Tg(cldnb:Gal4; UAS:RFP) line (Breau et al., 2013), which expresses RFP in all OP cells and in the periderm from around 16 hpf. RFP expression is initially weak and mosaic (Figure 1E) and becomes progressively stronger and more widespread in the OP (Figure 1F). Using confocal live imaging (n=4 imaged embryos, 2 independent experiments), we confirmed the progressive BM-like accumulation of LamC1-sfGFP around the OP, with a gradual increase of the BM fluorescence during OP coalescence (Figure 1E–F’ and Figure 1—video 1). From 17 hpf, mesenchymal cells exhibiting cytoplasmic Laminin-sfGFP were seen to migrate anteriorly around the OP (Figure 1—video 1). According to the literature, these cells could represent neural crest cells (NCC; Bryan et al., 2020; Harden et al., 2012; Torres-Paz and Whitlock, 2014) and/or mesodermally derived cells of the periocular mesenchyme (Vöcking et al., 2023). A subset of RFP+ OP cells also displayed cytoplasmic Laminin-sfGFP (Figure 1E–H’ and Figure 1—video 1). Altogether, these live imaging experiments suggest that Laminin γ1 around the OP starts to be deposited mostly during late coalescence stages, from at least a subset of OP cells and surrounding mesenchymal cells. Telencephalic cells also exhibited cytoplasmic Laminin-sfGFP expression throughout OP coalescence (Figure 1—video 2), suggesting that the forebrain contributes to the deposition of its own Laminin γ1-containing BM at these stages.
 
 To analyse whether the BMs of the brain and OP tissues are maintained at later stages, we used Laminin immunostaining on Tg(omp:meYFP) embryos. The Tg(omp:meYFP) line labels ciliated OSNs in the dorso-lateral rosette, but also a subset of ventral, unipolar neurons (Miyasaka et al., 2005, see Figure 1C’ and D’). We also used confocal live imaging with the LamC1-sfGFP reporter in the Tg(cldnb:Gal4; UAS:RFP) background. Using both approaches, we observed a strong, continuous BM-like signal enveloping the brain and the OP at these stages, except (i) where the olfactory axons leave the OP and enter the brain (defined respectively as the exit and entry points, see below) and, as we previously reported (Baraban et al., 2023), (ii) above the neuronal rosette assembling in the dorso-lateral OP, where the nostril orifice opens in the skin (Figure 1C–D’ and F–J). Thus, the OP and adjacent brain tissues are ensheathed by BMs from early stages of olfactory system assembly (as depicted in Figure 1K), suggesting these BMs could play a role in their morphogenesis or the maintenance of their shape during development.
 
-## Laminin distribution suggests a role in olfactory axon development
+### Laminin distribution suggests a role in olfactory axon development
 
 To investigate the distribution of Laminin in relation with axonal development, we used the Tg(omp:meYFP) line to visualise olfactory axons including, as described above, the axons of the ciliated OSNs and of a subset of unipolar, ventral neurons (Sato et al., 2005; Miyasaka et al., 2005; Miyasaka et al., 2007). Previous time-course studies using this line showed that following OP coalescence, the YFP+ axons leave the OP from 22 to 24 hpf through a restricted region in the ventro-medial OP (the exit point), grow dorsally as a fasciculated bundle until around 32 hpf, then start defasciculating in the presumptive olfactory bulb region in the brain (reviewed in Breau and Trembleau, 2023; Miyasaka et al., 2005; Miyasaka et al., 2007; Sato et al., 2007). Immunostaining for Laminin revealed local disruptions in the BMs ensheathing the OP and the brain, precisely where the YFP+ axons exit the OP (exit point) and enter the brain (entry point) (Figure 1C–D’). Once into the brain, from around 28 hpf, the most distal extremity of the YFP+ axon bundle (but not the axon shafts) was systematically in close contact with the Laminin-labelled BM of the brain (Figure 1C–D’), suggesting that the growth cones use it as a substrate to migrate towards the olfactory bulb.
 
 To better understand when and how the gaps of the exit and entry points form in the BMs, we took advantage of our live imaging experiments performed on TgBAC(lamC1:lamC1-sfGFP); Tg(cldnb:Gal4; UAS:RFP) embryos (n=4 embryos, 2 independent experiments). By the end of the coalescence, when the BM starts to assemble around the OP, we noticed that small interruptions of the BM were already present near the RFP+ axon tips, along the ventro-medial wall of the OP (Figure 1—video 2). This was confirmed by live imaging on TgBAC(lamC1:lamC1-sfGFP); Tg(cldnb:Gal4; UAS:lyn-TagRFP) embryos (n=2 embryos), in which OP neurons/axons are mosaically labelled with membrane TagRFP, allowing the visualisation of individual axons (Figure 1—video 3). This suggests that the exit point does not open through local perforation of a pre-existing BM around the OP but through incomplete BM synthesis/assembly in this area. The entry point was slightly more dorsal than the exit point (of about 10–20 µm), and the initial dorsal growth of the RFP+ axons thus occurred between the two BMs (Figure 1F–H’). This difference in the z position of the exit and entry points was not clearly seen on fixed embryos (Figure 1C–D’), which we interprete as being a consequence of cell/tissue shape changes due to the fixation process. The opening of the entry point through the brain BM was concomitant with the arrival of the RFP+ axons, suggesting that the axons degrade or displace BM components to enter the brain (Figure 1G–H’ and Figure 1—video 2). This was also observed by live imaging on TgBAC(lamC1:lamC1-sfGFP); Tg(cldnb:Gal4; UAS:lyn-TagRFP) embryos (n=2 embryos) showing a sparse labelling of OP neurons/axons (Figure 1—video 3). Note that, as for the exit points, the entry points often appeared as regions with several, small BM interruptions, rather than as a unique hole in the BM (Figure 1—video 4). Once in the brain, as observed in fixed embryos, the distal tip of the RFP+ axons (but not the axon shaft) migrated in close proximity with the brain’s BM (Figure 1HI, Figure 1—videos 2 and 4). Overall our observations indicate that the axons first grow dorsally for a short distance between the BMs of the OP and the brain, then their distal tips migrate along the internal side of the brain’s BM (Figure 1K). We thus hypothesise that the Laminin-rich BMs serve as a migratory path for the axons during their journey from the OP to the olfactory bulb.
 
-## The integrity of BMs around the brain and the OP is affected in the sly mutant
+### The integrity of BMs around the brain and the OP is affected in the sly mutant
 
 We used the sly mutant to analyse the function of Laminin γ1 in the development of the zebrafish olfactory system. As previously observed (Dolez et al., 2011; Parsons et al., 2002; Stemple et al., 1996; Wiellette et al., 2004), Laminin BM-like accumulation could not be detected in sly -/- mutants (referred to as sly mutants) at all the analysed stages, from 16 to 36 hpf, while heterozygous sly +/- embryos displayed an expression pattern that was similar to sly +/+ embryos (Figure 2A–C’). This indicates that that there is likely no residual/maternal Laminin at the onset of OP coalescence. Since Laminins are essential for BM assembly in other contexts (Lee and Gross, 2007; Li et al., 2005; Miner and Yurchenco, 2004; Smyth et al., 1999; Urbano et al., 2009), we further checked the presence and structure of the BMs in sly mutants. We carried out immunostaining for two other BM components, Collagen IV and Nidogen, at 22, 28 and 36 hpf. Nidogen was present in BM-like structures around the OP and the brain in control siblings, with a pattern resembling that of Laminin, while in sly mutants no BM staining could be detected around the two tissues (Figure 2D–F’). In controls, Collagen IV was present in the linear BMs around the OP and the brain, and, with a more fibrous distribution, in the mesenchymal tissues surrounding the OP. In sly mutants, Collagen IV immunoreactive pattern was dramatically disrupted, but not totally abolished: the BM-like linear staining was absent, but discrete patches of fibrous expression remained around the OP, at various locations (Figure 2G–I’).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig2-v1.jpg)
+
+**Figure 2.:** (A–I) Immunostaining for Laminin (A–C), Nidogen (D–F) and Collagen IV (G–I) (magenta) on sly mutants and control siblings at 22 (dorsal view), 28, and 36 hpf (frontal view). For Laminin and Nidogen, the linear, BM-like staining seen in controls around the OP and brain tissues is not detected in sly mutants. In G, white arrowheads = BM like linear Collagen IV staining, grey arrowheads = fibrous staining around the OP. In sly mutants, the linear Collagen IV pattern is dramatically disrupted, with, however, remaining fibrous patches of Collagen IV in some discrete areas located at the margin of the OP and/or between the OP and brain (arrows in G’, H’, I’) Scale bar: 50 µm. (J, K). Examples of EM images of the intercellular space between NCC and the OP in control siblings (J, K) and the OP and the brain in sly mutants (J’, K’), at 24 (J, J’) and 32 hpf (K, K’). Arrows = plasma membranes. The pictures were taken in the areas depicted with red boxes in L, L’. (L) Schematic view of the brain/OP boundary and of the areas (red boxes) where the pictures were taken in controls (L) and sly mutants (L’). OP, brain and NCC were identified by their position and shape: migrating NCC showed an elongated morphology along the AP axis, which differed from the round OP cell bodies and from brain neuroepithelial cells elongated along the ML axis. (M, N) Thickness of the intercellular space in sly mutants (between OP and brain cells) and control siblings (between NCC and brain or OP cells) at 24 hpf (n=3 controls; n=3 mutants) and 32 hpf (n=2 controls; n=3 mutants). For 24 hpf, unpaired, two-tailed t test. For 32 hpf, Mann-Whitney test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** A, A’ and C, C’ Examples of images of the intercellular space located between OP cells in control siblings (A, C) and in sly mutants (A’, C’), at 24 and 32 hpf. Arrows = plasma membranes. (B, D) Thickness of the intercellular space in the OP tissue in sly mutants and control siblings at 24 (n=2 controls; n=3 mutants) and 32 hpf (n=2 controls; n=2 mutants). (E, E’ and G, G’) Examples of images of the intercellular space located between brain cells in control siblings (A, C) and in sly mutants (A’, C’), at 24 and 32 hpf. Arrows = plasma membranes. (F, H) Thickness of the intercellular space in the brain tissue in sly mutants and control siblings at 24 (n=3 controls; n=3 mutants) and 32 hpf (n=2 controls; n=3 mutants). Mann Whitney tests except for F: unpaired, two-tailed t-test.
+
 We next used electron microscopy (EM) to analyse the ultrastructure of BMs in sly mutants and control siblings. We focused on the interface between the forebrain and the OP, where NCC are known to migrate during OP coalescence (Bryan et al., 2020; Harden et al., 2012; Torres-Paz and Whitlock, 2014). NCC, OP, and brain cells could be identified on the large field EM images by their position and morphology (Figure 2L and L’). At 24 hpf in controls, the plasma membranes of NCC were separated from those of adjacent OP and brain cells by a 120 nm-wide gap containing electron dense ECM material (Figure 2J and M). This material likely represents the BMs of the two tissues, with morphological features resembling those of BMs found in other tissues of zebrafish embryos at similar stages (Bryan et al., 2020; Yamaguchi et al., 2022). In sly mutants, almost no NCC could be detected, suggesting that NCC development is affected. In this mutant context, the plasma membranes of OP and brain cells were separated by a 40 nm-wide gap, which was significantly smaller than in controls. This gap was most often devoid of electron dense material (only rare spots could be detected, Figure 2J, J’ and M). A similar trend was detected at 32 hpf (Figure 2K, K’ and N). By contrast, the thickness of the intercellular gaps within the OP or the brain was not affected in mutants (Figure 2—figure supplement 1). The integrity of the OP and brain BMs is thus strongly affected in sly mutants, as previously reported in other tissues of Laminin γ1 mutants (Urbano et al., 2009; Yamada et al., 2022). We next analysed the consequences on the development of the olfactory system components (placode, brain, olfactory axons).
 
-## OP coalescence still occurs in the sly mutant
+### OP coalescence still occurs in the sly mutant
 
 To study the role of Laminin γ1-dependent BMs in OP coalescence, we first measured the dimensions of the Tg(neurog1:GFP)+ OP cell clusters at 22 hpf (end of coalescence) on fixed sly mutants and control siblings. While no difference was found for anteroposterior (AP) and dorsoventral (DV) dimensions, the mediolateral (ML) dimension was increased in mutants (Figure 3A–E). This could be the consequence of an increased number of GFP+ cells; however, no difference was found in the number of mitotic cells in the OPs of sly mutants and control siblings at 16 and 21 hpf (Figure 3—figure supplement 1A, B, E, F) and, as previously reported in other tissues (Parsons et al., 2002), we observed a tendency for the sly mutants to exhibit increased apoptosis (Figure 3—figure supplement 1I, J, M, N). The higher ML dimension could also be due to increased lateral movements of OP cell bodies in the absence of the BM surrounding the OP. To test this, we performed live imaging on sly mutants and control siblings carrying the Tg(neurog1:GFP) transgene, mounted in a dorsal view (n=5 mutants and n=5 controls; Figure 3F–I and Figure 3—video 1). Individual nuclei of GFP+ OP and brain cells were tracked using widespread expression of H2B-RFP, obtained through mRNA injection. From the cell trajectories, we extracted the 3D Mean Square Displacements (MSD), a measure of the volume explored by a cell in a given period of time. No significant difference was observed for the MSD of OP cells between controls and sly mutants, but the MSD was higher for brain cells in the mutants (Figure 3J and K). Direction wise, surprisingly OP cells did not show any change in their total ML displacement (Figure 3L), nor in their DV displacement (Figure 3M). Differences, although not statistically significant, could be detected along the AP axis for anterior, central, and posterior OP cells: in the mutants the anterior cohort of cells tended to migrate less posteriorly, while central and posterior cells migrated more anteriorly, as if the final cell positions were all shifted towards more anterior locations (Figure 3N–P). In conclusion, while the movements of brain cells are increased in the absence of BMs at coalescence stages, overall the OP cell movements occur with normal parameters and allow the condensation of OPs into compact neuronal clusters in the sly mutants. It is possible however that the position of the OP along the AP axis is shifted anteriorly at the end of OP coalescence.
 
-## Role of Laminin γ1-dependent BMs during the forebrain flexure
+![Figure 3.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Images (dorsal views, 1 z-section) of representative OPs from a Tg(neurog1:GFP); sly -/- mutant (right) and a control Tg(neurog1:GFP) sibling (left) at the end of OP coalescence (22 hpf). The Tg(neurog1:GFP)+ OP clusters are surrounded by dotted lines. (C–E) Graphs showing the anteroposterior (AP, in C), the mediolateral (ML, in D), and dorsoventral (DV, in E) dimensions of the Tg(neurog1:GFP)+ OP clusters in sly mutants (pink) and control siblings (blue) at 22 hpf (n=62 controls and n=32 mutants from two independent experiments). Ectopic fluorescent cells (cells that are physically separated from the main cluster) were not taken into account for the measurement of OP dimensions. Unpaired, two-tailed t test. (F-F’’ and H-H’) Images extracted from confocal live imaging on Tg(neurog1:GFP) control (F-F’’) and sly mutant (H-H’’) embryos during OP coalescence, dorsal view, average projection. Only the left side of the embryo is shown. (G, I) Examples of 2D tracks (ML along X and AP along Y) of Tg(neurog1:GFP)+ OP cells (red) and Tg(neurog1:GFP)+ brain cells (green) in a control (G) and a sly mutant embryo (I) Only the left side of the embryo is shown. The time is colour-coded: light colours at the beginning of the trajectory (17 hpf) towards dark colours for the end of the track (600 min later). (J, K) MSD analysis for OP cells (J) and brain cells (K) in sly mutants and control siblings (n=5 controls and n=5 mutants from three independent experiments, 10–14 cells analysed in each tissue). (L, M) Graphs showing the total lateral (L) and ventral (M) displacement of OP cells, starting at 17 hpf and during 600 min of time lapse (n=5 control placodes and n=5 mutant placodes from three independent experiments, 10–14 cells per placode, unpaired, two-tailed t test). (N–P) Graphs showing the total anterior displacement of anterior, central and posterior OP cells (as defined in Breau et al., 2017), starting at 17 hpf and during 600 min of time lapse (n=5 control placodes and n=5 mutant placodes from three independent experiments, mean calculated from 1 to 12 cells per placode, unpaired, two-tailed t test). Note that in some of the OPs we could not find any trackable (i.e. expressing H2B-RFP) posterior OP cell, which explains why there are only 4 control points and 3 mutant points in the graph showing the anterior displacement of posterior cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A-D’) Immunostaining for Phospho-histone H3 (magenta) to label dividing cells on Tg(neurog1:GFP) embryos (green) at 16 hpf and 21 hpf (A-B’ show images at 21 hpf, dorsal view), and on Tg(omp:meYFP) embryos (green) at 28 and 36 hpf (C-D’ show images at 36 hpf, frontal view). In A-B’ the OP is surrounded by a dotted line. Arrows = instances of Phospho-histone H3 positive cells in the placodal Tg(neurog1:GFP)+ or Tg(omp:meYFP)+ clusters. (E–H) Number of Phospho-histone H3 positive cells in the OP at 16 hpf (n=19 controls; n=8 mutants), 21 hpf (n=21 controls; n=6 mutants), 28 hpf (n=8 controls; n=7 mutants) and 36 hpf (n=9 controls; n=9 mutants) in control embryos and sly mutants. Unpaired, two-tailed t test. (I-L’) Immunostaining for Activated Caspase 3 (magenta) to label apoptotic cells/debris on Tg(neurog1:GFP) embryos (green) at 16 hpf and 21 hpf (I-J’ show images at 21 hpf, dorsal view), and on Tg(omp:meYFP) embryos (green) at 28 and 36 hpf (K-L’ show images at 36 hpf, frontal view). In I-J’ the OP is surrounded by a dotted line. Arrows = instances of Activated Caspase 3 positive cells or debris in the OP or in contact with the placodal Tg(neurog1:GFP)+ or Tg(omp:meYFP)+ clusters. (M–P) % of left OPs with zero, one or two and more Activated Caspase 3 positive cells or debris in the OP or very close to the OP at 16 hpf (n=25 controls; n=9 mutants), 21 hpf (n=25 controls; n=9 mutants), 28 hpf (n=8 controls; n=10 mutants) and 36 hpf (n=10 controls; n=10 mutants) in control embryos and sly mutants. Chi2 test. (Q, R) Total number of YFP+ cells in control and mutant Tg(omp:meYFP)+ OPs at 28 hpf (Q) and 36 hpf (R) (n=3 control placodes; n=3 mutant placodes for each stage). Unpaired, two-tailed t test.
+
+### Role of Laminin γ1-dependent BMs during the forebrain flexure
 
 Following OP coalescence, the forebrain flexure, a major morphogenetic process which is essential for the final folded shape of the vertebrate brain, starts to remodel the head tissues (Chapman et al., 2005; Garcia et al., 2017; Hauptmann and Gerster, 2000; Tropepe and Sive, 2003). In zebrafish, the bending of the forebrain has been reported to occur between 24 and 48 hpf through the observation of fixed samples (Ross et al., 1992; Hauptmann and Gerster, 2000). We set out to investigate the role of the brain and OP BMs during the forebrain flexure. The Tg(omp:meYFP) transgene expression was used to quantify the dimensions of the YFP+ cluster in the OP at various stages of the flexure (24, 28, 32, and 36 hpf). While no change could be detected in the AP and ML dimensions of the YFP+ cluster (except for the ML dimension at 28 hpf), its DV dimension was significantly increased in sly mutants at all the analysed stages (Figure 4A-E, Figure 4—figure supplement 1A-I). This higher DV dimension is unlikely to result from an increase in the number of cells, since YFP+ mitotic cells were not more numerous in sly mutants (Figure 3—figure supplement 1C, D, G, H), and YFP+ OP clusters displayed increased apoptosis, as observed at earlier stages (Figure 3—figure supplement 1K-P). Counting the YFP+ cells on high-magnification images of three mutant and three control OPs at 28 and 36 hpf further confirmed that the YFP+ cell number is unchanged (Figure 3—figure supplement 1Q, R). In addition to the DV elongation of the OP tissue, isolated, ectopic (mispositioned) YFP+ cells were observed all around the YFP+ cluster in the sly mutants (Figure 4F–H and Figure 4—video 2). The rosette structure appeared to form normally on the dorso-lateral region of the OP in sly mutants (Figure 4—video 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Images (frontal view, 1 z-section) of representative placodes from a Tg(omp:meYFP); sly -/- mutant (right) and a control Tg(omp:meYFP) sibling (left) at 36 hpf. Laminin immunostaining in magenta. (C–E) Graphs showing the anteroposterior (AP, in C), the mediolateral (ML, in D), and dorsoventral (DV, in E) dimensions of the Tg(omp:meYFP)+ OP clusters in sly mutants (pink) and control siblings (blue) at 36 hpf (n=15 controls and n=9 mutants from four independent experiments). Ectopic fluorescent cells (cells that are physically separated from the main cluster) were not taken into account for the measurement of OP dimensions. Unpaired, two-tailed t test. Similar measurements performed at younger stages are shown in Figure 4—figure supplement 1A–L. (F, G) Examples of images used for the analysis of ectopic cells, defined as Tg(omp:meYFP)+ cells being physically separated from the main YFP+ cluster. Arrowheads show instances of ectopic cells in a sly mutant. (H) Table showing the % of control and mutant embryos with at least one ectopic cell located dorsally, ventrally, laterally, and medially to the main YFP+ cluster. The numbers of analysed embryos are indicated in the table. (I-I’’ and K-K’’) Images extracted from confocal live imaging on Tg(omp:meYFP) control (I-I’’) and sly mutant (K-K’’) embryos during the forebrain flexure, from 22 hpf and over 1080 min, frontal view, maximum projection. Only the left side of the embryo is shown. (J, L) Examples of 2D tracks (ML along X and DV along Y) of Tg(omp:meYFP)+ OP cells (red) and adjacent brain cells (green) in a control (J) and a sly mutant (L). The time is colour-coded: light colours at the beginning of the trajectory (22 hpf) towards dark colours for the end of the track (1080 min later). Only the left side of the embryo is shown. (M, N) 3D MSD analysis of OP (M) and brain cells (N) in sly mutants and control siblings (n=4 controls and n=3 mutants from five independent experiments, 10–14 cells analysed in each tissue). (O) Rose plots indicating the orientation of the movement for control and mutant left OP cells (data pooled from n=4 controls and n=3 mutants from five independent experiments). Numbers = number of cells. Dorsal to the top, lateral to the left. There is a statistical difference in cell track orientations between controls and mutants (circular analysis of variance based on the likelihood ratio test: p=1.233e-09 for the left OPs, and p=3.439e-08 for the right OPs, the graphs for the rigth OPs are not shown).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A-L) Analysis of OP dimensions at 24, 28, and 32 hpf. (A, A’, E, E’ and I, I’) Images (frontal views, 1 z-section) of representative OPs from Tg(omp:meYFP); sly -/- mutants (right) and control Tg(omp:meYFP) siblings (left) at 24 (A, A’), 28 (E, E’) and 32 hpf (I, I’). B–D Graphs showing the AP, ML, and DV dimensions of the Tg(omp:meYFP)+ OP clusters in sly mutants and control siblings at 24 hpf (n=10 controls and n=10 mutants from three independent experiments). Ectopic fluorescent cells (cells that are physically separated from the main cluster) were not taken into account for the measurement of OP dimensions. Unpaired, two-tailed t test. (F–H). Similar quantifications at 28 hpf (n=13 controls and n=10 mutants from two independent experiments). Unpaired, two-tailed t tests. (J–L). Similar quantifications at 32 hpf (n=17 controls and n=13 mutants from two independent experiments). Unpaired, two-tailed t tests. Quantifications performed at 36 hpf are shown in Figure 4C–E. (M, N) Examples of 2D tracks plotted in a lateral view (AP along X and DV along Y) of Tg(omp:meYFP)+ OP cells (red) and adjacent brain cells (green) in a control (M) and a sly mutant embryo (N). The time is colour-coded: light colours at the beginning of the trajectory (22 hpf) towards dark colours for the end of the track (1080 min later).
+
 To better understand the origin of these phenotypes, we analysed the dynamic behaviours of brain and OP cells occurring during the forebrain flexure, which had not been characterised so far. We carried out live imaging from 22 to 40 hpf on Tg(omp:meYFP) sly mutants and control siblings injected with H2B-RFP mRNA to label all nuclei, and tracked YFP+ OP cells and adjacent brain cells (n=4 mutants and n=4 controls) (Figure 4I–L and Figure 4—video 1). From 24 to 26 hpf we observed a marked anterior and ventral departure of brain cells in control embryos, representing the onset of the flexure movement. Strikingly, OP cells also moved anteriorly and ventrally from these stages, in coordination with the brain, revealing that the OPs are also subjected to the flexure movement (Figure 4J, Figure 4—figure supplement 1M, Figure 4—video 1). The flexure movements were also visible in the brain and OPs of sly mutants (Figure 4L, Figure 4—figure supplement 1N, Figure 4—video 1), with OP cells moving with a higher MSD than in controls (Figure 4M). A similar trend was observed for brain cells, but was not statistically significant (Figure 4N). Moreover, upon visualisation of the cell trajectories in a lateral (YZ) view, we noticed that in 4/4 mutant embryos, brain and OP cells exhibited curved trajectories, moving first anteriorly and ventrally, then turning posteriorly, while this phenomenon occurred in only 1/4 control sibling during the duration of our movies (Figure 4—figure supplement 1M, N). This reinforces the idea that brain and OP cells are subjected to an accelerated or enhanced forebrain flexure remodelling in the sly mutants, and suggests that in the wild type situation the BMs allow the tissues, and in particular the OP, to resist to the morphogenetic movements associated with the flexure. Altogether, our findings show that the Laminin γ1-containing BMs are required to prevent OP cell scattering, maintain OP shape and dampen OP cell movements during the forebrain flexure.
 
-## Laminin γ1-dependent BMs are required to define a robust boundary between the OP and the brain
+### Laminin γ1-dependent BMs are required to define a robust boundary between the OP and the brain
 
 OP cells undergo anterior and ventral movements during the forebrain flexure. We noticed that, while in control siblings OP cells also display a lateral displacement, they rather move in the medial direction in sly mutants, towards the brain, as if the two OPs were progressively converging towards each other (Figure 4J, L and O). This prompted us to image OP and brain tissues in 3D to visualise the boundary between the two tissues and analyse the width of the brain. To do so, we first performed immunostainings at 28 and 36 hpf for the pan-neuronal marker HuC to visualise neurons in the OP and brain on Tg(cldnb:Gal4; UAS:RFP) embryos, in which RFP is expressed in the OP. Qualitative observations of these z-stacks revealed that OPs in sly mutants are partially embedded within the brain tissue and display a curved and irregular boundary with the brain, while the frontier between the two tissues appears as a straight line in control siblings (Figure 5A, A’, Figure 5—figure supplement 1A, A’, and Figure 5—video 1). To quantify the width of the brain, we used the Tg(eltC:GFP) line (Stedman et al., 2009), which expresses GFP in forebrain cells, and crossed it with the Tg(cldnb:Gal4; UAS:RFP) line to label the OPs (Figure 5B, B’, Figure 5—figure supplement 1B, B’). We measured the width of the forebrain in three distinct AP levels and three distinct DV levels in between the two OPs (as depicted in Figure 5B, B’, Figure 5—figure supplement 1B, B’ for the DV levels). The width of the forebrain in sly mutants was smaller than in controls, in particular in anterior and dorsal areas (Figure 5B-D, Figure 5—figure supplement 1B-D). Proliferation was unchanged in the brain of sly mutants, while apoptosis was only sligtly increased (Figure 5—figure supplement 1E–L), suggesting that the smaller brain width is due to a local distortion of the tissue rather than a decreased number of cells. Next, we quantitatively analysed the straightness of the brain/OP boundary. Note that the Tg(eltC:GFP) line could not be used for that purpose because a few cells in the OP also express the transgene. In addition, Tg(cldnb:Gal4; UAS:RFP) expression is mosaic in the OP, preventing the use of this line to assess the shape of the brain/OP boundary. To perform such a quantification we thus turned to immunostainings for Dlx3b, a transcription factor specifically expressed in OP (and skin) cells (Torres-Paz and Whitlock, 2014). We used deep learning to segment the 3D z-stacks of Dlx3b-immunostaining in control and sly mutant embryos at 36 hpf (Figure 5E–F’), and quantified the distortion of the OP/brain frontier at various z levels. This analysis demonstrated that the OP/brain boundary is less straight in sly mutants as compared with controls (Figure 5G and H). Thus, our analyses of cell tracks, brain size and proliferation/apoptosis, and of the shape of the brain/OP boundary suggest that the forebrain is smaller and distorted in sly mutants, possibly due to the inward convergence of the two OPs. A non-mutually alternative hypothesis is that the brain fails to form in the normal size and shape in sly mutants. These findings suggest that the Laminin γ1-dependent BMs serve to establish a straight brain/OP boundary preventing local intermixing and the late convergence of the two OPs towards each other during the flexure movement.
 
-## Role of Laminin γ1-dependent BMs in olfactory axon development
+![Figure 5.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig5-v1.jpg)
+
+**Figure 5.:** (A, A’) Immunostaining for HuC (cyan) at 36 hpf on Tg(cldnb:Gal4; UAS:RFP) (magenta) control and sly mutant embryos (frontal view). Similar immunostainings performed at 28 hpf are shown in Figure 5—figure supplement 1A, A’. (B, B’). Images of Tg(elementC:gfp); Tg(cldnb:Gal4; UAS:RFP) control and mutant embryos at 36 hpf (frontal view), similar images acquired at 28 hpf are shown in Figure 5—figure supplement 1B, B’. GFP (green) is expressed by the forebrain and a few OP cells. Arrows indicate where the brain width was measured (in three distinct positions along the DV axis). Measurements were also carried out at three distinct AP levels (through the z-stack). (C, D) Width of the forebrain in 36 hpf controls and sly mutants, at three different DV and three different AP levels (n=9 controls and n=8 mutants from four independent experiments, unpaired, two-tailed t test). Quantifications for the 28 hpf stage are shown in Figure 5—figure supplement 1C, D. (E-F’) Immunostaining for the OP marker Dlx3b (cyan) was performed on 36 hpf sly mutants and control siblings (frontal view). The signal was segmented using deep learning approaches (white signal), and the distortion index (see Materials and methods) of the OP/brain boundary was calculated in the regions outlined with red boxes. (G, H) Graphs showing the distortion indexes in controls and mutants at 36 hpf, for the left and right OPs (n=3 controls and n=3 mutants). ANOVA test (mixed models, with animals as random effect and genotype and side as fixed effects).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, A’) Immunostaining for HuC (cyan) at 28 hpf performed on Tg(cldnb:Gal4; UAS:RFP) (magenta) control and sly mutant embryos (frontal view). Similar immunostainings performed at 36 hpf are shown in Figure 5A and A’. (B, B’). Images of Tg(elementC:gfp); Tg(cldnb:Gal4; UAS:RFP) control and mutant embryos at 28 hpf (frontal view), similar images acquired at 36 hpf are shown in Figure 5B and B’. GFP (green) is expressed by the forebrain, and a few OP cells. Arrows indicate where the thickness of the forebrain was measured (in three distinct positions along the DV axis). Measurements were also carried out at three distinct AP levels (through the z-stack). (C, D) Width of the forebrain in 28 hpf controls and sly mutants, at three different DV and three different AP levels (n=17 controls and n=17 mutants from five independent experiments, unpaired, two-tailed t tests except for anterior and posterior zones, for which a Mann-Whitney test was applied). Quantifications for the 28 hpf stage are shown in Figure 5C and D. (E–H) Number of Phospho-histone H3 positive cells in the brain at 16, 21, 28, and 36 hpf in control embryos and sly mutants. Unpaired, two-tailed t test. (I–L) % of embryos with zero, one, or two and more Activated Caspase 3 positive cells or debris in the brain at 16, 21, 28, and 36 hpf in control embryos and sly mutants. Chi2 test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A, A’) In situ hybridisation for the NCC marker crestin on 32 hpf controls and sly mutants. Arrowheads = crestin-positive NCC cluster at the OP/brain interface, which is absent in sly mutants. (B) Table reporting our observations from live imaging of cranial NCC migration in sly mutants and control siblings (see Figure 5—video 2). Confocal live imaging was performed from 16 to 32 hpf on sly mutant and control Tg(neurog1:GFP);Tg(UAS:RFP) embryos injected with the sox10(7.2):KalTA4 plasmid, allowing a mosaïc labelling of NCC.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A, B) In situ hybridisation for the NCC marker crestin on 32 hpf controls and foxd3 mutants. Arrowheads = crestin-positive NCC cluster at the OP/brain interface, which is absent in foxd3 mutants. (C, D). Images (frontal view, maximum projection) of representative OPs of Tg(omp:meYFP); foxd3 -/- mutants and control siblings. (C’, D’) Laminin immunostaining (1 z-section) on the same embryos. (E–H) OP dimensions and length of the axon bundle at 28 hpf in foxd3 mutants and control siblings (n=31 controls and n=13 mutants from two independent experiments). (I–L) OP dimensions and length of the axon bundle in foxd3 mutants and control siblings at 36 hpf (n=21 controls and n=4 mutants from two independent experiments). Unpaired, two-tailed t tests for E, I, J, L and Mann-Whitney tests for F, G, H, K.
+
+### Role of Laminin γ1-dependent BMs in olfactory axon development
 
 The growth of the olfactory axons starts with the retrograde axon extension of their proximal portions during OP coalescence, from 14 to 22 hpf (Breau et al., 2017), followed by the dorsal growth from the brain/OP boundary to the olfactory bulb from 22 to 32 hpf (Figure 1K). Laminin has been reported to orient the emergence of axons (Randlett et al., 2011; Moore et al., 2022). Do the Laminin γ1-dependent BMs play any role in axon emergence or anchoring during retrograde axon extension? To test this, we performed live imaging experiments during OP coalescence on Tg(cldnb:Gal4; UAS:RFP) embryos injected with the neurog1:GFP plasmid (Blader et al., 2003), allowing a sparse labelling of neurog1:GFP+ axons (n=4 mutants and n=4 controls, 2 independent experiments). Several instances of retrograde extension were seen both in controls and mutants (Figure 6—figure supplement 1A, B), indicating that retrograde axon extension occurs normally for at least some of the neurog1:GFP+ neurons/axons in sly mutants. In addition, on fixed Tg(omp:meYFP) sly mutants at 24 hpf, numerous YFP+ neurons had their proximal axonal portion formed and attached to the brain surface (Figure 6—figure supplement 1C–F), suggesting that retrograde axon extension also occurs normally for at least some of the YFP+ OP neurons. Although we cannot rule out that retrograde axon extension is affected in a subset of OP neurons, for instance in ectopic cells, the presence of a BM around the OP and/or the brain appears not to be an absolute requirement for the attachment of axon tips to the ventro-medial wall of the OP during retrograde extension.
 
@@ -93,7 +137,15 @@ Are Laminin γ1-dependent BMs important for the growth or navigation of the axon
 
 So far, the growth of the zebrafish olfactory axons from the OP to the bulb has been mostly characterised using fixed samples or live imaging with long time intervals (Dynes and Ngai, 1998; Miyasaka et al., 2007). To analyse the dynamic behaviour of the axons, we performed live imaging from 22 hpf on sly mutant and control embryos injected with the omp:meYFP plasmid, in order to obtain a mosaic labelling of the YFP+ neurons and their axons (n=5 mutants and n=5 controls, Figure 6A and B). We tracked individual YFP+ growth cones, as well as the YFP+ cell bodies in the OP, during consecutive periods of 200 min each, with a time interval of 10 min. We substracted the average movement of OP cell bodies from the growth cone tracks, in order to remove the contribution of the global flexure remodelling and analyse specifically the behaviours of the axons with respect to the surrounding cells/tissue. In controls, as expected, growth cones overall showed a dorsal and medial migration, except at the end of the movie, which likely corresponds to their arrival and stalling in the presumptive olfactory bulb. By contrast, growth cones in the sly mutants did not display a directional migration towards the bulb, during the whole movie duration (Figure 6C, F1 and L). They were motile and explored the environment, as shown by speed and persistence measurements, but moved on short distances and/or without preferential direction, resulting in a perturbed axon growth (Figure 6C–N). These live imaging analyses confirm that the migration of the olfactory axons is impaired in sly mutants. Altogether, our results show that Laminin γ1-dependent BMs are essential for the growth and navigation of the axons from the OP to the olfactory bulb.
 
-## Sly mutants display cranial NCC defects but this does not contribute to the late olfactory system phenotypes
+![Figure 6.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) Images extracted from confocal live imaging on control (A-A’’’’) and sly mutant (B-B’’’’) embryos injected with the omp:meYFP plasmid to obtain a mosaic labelling of OP neurons and their axons (frontal view, maximum projections). The OP neurons and their axons were imaged every 10 min over 1000 min from 22 hpf. Here, only the 200–400 min time window is shown as an example. Arrowheads = positions of individual growth cones over time. (C–N). Individual YFP+ growth cones, as well as YFP+ cell bodies in the OP, were tracked during 4 consecutive periods of 200 min each (from 200 min of imaging, since before no growth cone could be detected, n=5 mutants and n=5 controls from six independent experiments). The mean movement of OP cell bodies was substracted from the growth cone tracks to get rid of the global flexure movement. 200–400 min: 6 growth cones in controls, 4 in mutants; 400–600 min: 15 growth cones in controls, 4 in mutants; 600–800 min: 18 growth cones in controls, 4 in mutants; 800–1000 min: 16 growth cones in controls, 7 in mutants. (C, F, I, L) Tracks of the growth cones merged at their origin for the 4 consecutive periods of 200 min. For each time window, the difference in the orientation of the tracks was analysed using the circular analysis of variance based on the likelihood ratio test. (D, G, J, M) Mean speed of the growth cones. Unpaired, two-tailed t tests. (E, H, K, N) Persistence of the growth cones, defined as the distance between the initial and final positions of the growth cones divided by the total length of their trajectory. Unpaired, two-tailed t tests, except for the analysis of the persistence at 400–600 min, and for the speed and persistence at 600–800 min, where Mann-Whitney tests were performed.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92004/elife-92004-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Images extracted from confocal live imaging experiments performed during OP coalescence on Tg(cldnb:Gal4; UAS:RFP) embryos injected with the neurog1:GFP plasmid, allowing a sparse labelling of neurog1:GFP +neurons/axons. The pictures illustrate instances of retrograde axon extension/cell body mediolateral movement occuring in a sly mutant and a control sibling. Arrows = proximal portions of the axons extending in the OP. Dotted line = brain/OP boundary (identified with the RFP signal which is not shown here). op = olfactory placode, b=brain. Scale bar: 20 µm. (C–F) Images (frontal view, 1 z-section) of representative OPs from Tg(omp:meYFP); sly -/- mutant (E, F) and control Tg(omp:meYFP) siblings (C, D) at 24 hpf. Arrows = instances of proximal portions of the axons in the OP. (G) Table describing the % of control and sly mutant Tg(omp:meYFP) embryos with a proper axonal bundle (left column), with at least one ventral projection (middle column) and with at least one medial projection (right column) at 24, 28, 32 and 36 hpf. The numbers of embryos analysed at each stage are indicated in the table. The schematic view under the table illustrates the phenotypes assessed in each column. Note that in the mutants, as shown on the schematics, when a proper axon bundle is observed (left column), the exit point of the axons is more dorsal than in controls (see Figure 4A, B, Figure 4—figure supplement 1E’ for instance).
+
+### Sly mutants display cranial NCC defects but this does not contribute to the late olfactory system phenotypes
 
 Cranial NCC migration is concomitant with OP coalescence. From 14 hpf, NCC progressively populate the gaps between the OP and the eye and brain tissues (Harden et al., 2012; Torres-Paz and Whitlock, 2014; Bryan et al., 2020). Our electron microscopy observations suggested that NCC are absent at the brain/OP interface of sly mutants. In situ hybridisation for the NCC marker crestin (Luo et al., 2001) revealed that, while a clear NCC cluster can be seen at the brain/OP interface in controls at 32 hpf, crestin-labelled NCC are absent from this area in sly mutants (Figure 5—figure supplement 2A, A’). This suggests that Laminin γ1-dependent BMs are important for NCC migration or survival in this region of the embryo.
 
@@ -105,7 +157,7 @@ To test whether the phenotypes observed in sly mutants are linked to NCC defects
 
 Our study highlights key roles of Laminin γ1-dependent BMs in critical aspects of the development of the zebrafish olfactory system, revealed here through the detailed analysis of the Laminin γ1 loss-of-function mutant sly. During the late development of the OP, Laminin γ1-dependent BMs turned out to be essential to maintain its shape and proper position, and to establish a robust brain/placode boundary. In addition, Laminin-dependent BMs also appeared to be instrumental to ensure a proper growth and pathfinding of the olfactory axons towards the developing olfactory bulb. In the following paragraphs, we will discuss these new roles assigned to BMs in the context of the development of the zebrafish olfactory system, in light of the literature.
 
-## The BM of the OP acts as a ‘shell’ maintaining its shape and proper position in the face of forebrain flexure movements
+### The BM of the OP acts as a ‘shell’ maintaining its shape and proper position in the face of forebrain flexure movements
 
 Our data document a mild perturbation of cell movements during OP coalescence, which suggests that Laminin γ1-dependent BMs are overall dispensable for the OP to acquire its initial shape. However, our observation that the OP of the sly mutant becomes significantly elongated in the DV dimension and is surrounded by ectopic cells during the forebrain flexure provides strong evidence for a role of the BMs in preventing OP deformation and scattering during this major remodelling of the head tissues. We discovered, along our live imaging observations, a joint anterior and ventral movement of the OPs and forebrain during the flexure time period in the control animals, as if the OPs were dragged along in the same antero-ventral movement as the forebrain. We thus propose that the BM of the OP prevents its deformation in response to the mechanical forces generated by the morphogenetic movement of the neighbouring brain.
 
@@ -115,7 +167,7 @@ BMs were for long considered as inert and passive biological material, unable to
 
 A dramatic consequence of the absence of proper OP and brain BMs in the sly mutant is the irregular and undefined frontier between the brain and OP, with placodal cells tending to locally intermingle with brain cells, and vice versa, along the OP/brain interface. This highlights a key role of these BMs in establishing a robust and straight boundary between the OP and the brain. Tissue intermixing has also been observed in the pharynx of Laminin mutants in C. elegans (Huang et al., 2003) and in the Xenopus notochord upon loss-of-function of the Dystroglycan, a major Laminin receptor (Buisson et al., 2014). The absence of a clear boundary between the OP and the brain in the sly mutant is accompanied by an apparent distortion of the brain, with notable reduced dimension in its medio-lateral axis. This phenotype, possibly due to the inward migration of the placodes that become partially embedded in the brain, illustrates an additional and unexpected role of the OP and brain BMs, in preventing late convergence of the two placodes towards each other during the flexure movement.
 
-## BMs act as cues participating to the pathfinding of olfactory axons along their journey from the OP to the olfactory bulb
+### BMs act as cues participating to the pathfinding of olfactory axons along their journey from the OP to the olfactory bulb
 
 The early development of zebrafish olfactory axons begins with their retrograde extension, involving the attachment of the tips of the axonal protrusions to the brain’s surface, followed by a lateral movement of the OP cell bodies in the opposite direction (Breau et al., 2017). This initial step appears not to be affected in the sly mutant. These results suggest that Laminin-dependent BMs are dispensable for this retrograde axon extension and, more specifically, that Laminin γ1 itself or other components of the BMs are unlikely to play a role in the anchoring of those axon tips onto the brain’s surface, which is a prerequisite for their retrograde extension.
 
@@ -129,52 +181,307 @@ In conclusion, our findings indicate that the boundary between the sensory and c
 
 ## Materials and methods
 
-## Zebrafish lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>Zebrafish wild-type hybrid(TL x AB) strains</td>
+      <td>IBPS aquatic facility, Paris</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>slywi390 (sly/lamc1)</td>
+      <td>Wiellette et al., 2004; PMID:15593329</td>
+      <td>ZDB-ALT-050317–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>foxd3zdf10</td>
+      <td>Stewart et al., 2006; PMID:16499899</td>
+      <td>ZDB-ALT-060519–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>Tg(–8.4neurog1:GFP)sb1</td>
+      <td>Blader et al., 2003; PMID:12559493</td>
+      <td>ZDB-ALT-030904–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>Tg(–2.0ompb:gapYFP)rw032</td>
+      <td>Sato et al., 2007; PMID:17301169</td>
+      <td>ZDB-ALT-050513–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>Tg(–4.0cldnb:GalTA4, cry:RFP)nim11</td>
+      <td>Breau et al., 2013; PMID:24082091</td>
+      <td>ZDB-ALT-130822–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>Tg(14XUAS:mRFP,Xla.Cryg:GFP)tpl2</td>
+      <td>Balciuniene et al., 2013; PMID:24034702</td>
+      <td>ZDB-ALT-131119–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>TgBAC(lamc1:lamc1-sfGFP,cryaa:Cerulean)sk116Tg</td>
+      <td>Yamaguchi et al., 2022; PMID:35165417</td>
+      <td>ZDB-ALT-241010–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>Tg(eltC:GFP)zf199Tg</td>
+      <td>Stedman et al., 2009; PMID:19152797</td>
+      <td>ZDB-ALT-101103–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain(Danio rerio)</td>
+      <td>Tg(UAS:lyn-tagRFP)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Lab of Filippo Del Bene,Institut de la Vision, Paris</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Laminin polyclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# L9393; RRID:AB_477163</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Nidogen polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab14511, RRID:AB_301290</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Collagen IV polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab6586, RRID:AB_305584</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-GFP polyclonal</td>
+      <td>Aves labs</td>
+      <td>Cat# GFP-1020, RRID:AB_10000240</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-DsRed polyclonal</td>
+      <td>Takara Bio</td>
+      <td>Cat# 632496; RRID:AB_10013483</td>
+      <td>1/300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti phospho-Histone H3polyclonal</td>
+      <td>Millipore</td>
+      <td>Cat# 06–570; RRID:AB_310177</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Caspase 3, active form polyclonal</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF835; RRID:AB_2243952</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-HuC/HuD clone 16A11</td>
+      <td>ThermoFisher scientific</td>
+      <td>Cat# A-21271, RRID:AB_221448</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Dlx3b monoclonal</td>
+      <td>ZIRC</td>
+      <td>Cat# anti-DLX3b, RRID:AB_10013771</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>10XUAS:lyn-tagRFP plasmid</td>
+      <td>This study</td>
+      <td></td>
+      <td>Gateway cloning,Lab of Filippo Del Bene,Institut de la Vision, Paris</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>–2.0ompb:gapYFP plasmid</td>
+      <td>Miyasaka et al., 2005; PMID:15716341</td>
+      <td>ZDB-TGCONSTRCT-070117–121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>sox10(7.2):KalTA4 plasmid</td>
+      <td>Almeida and Lyons, 2015; PMID:26485616</td>
+      <td>ZDB-TGCONSTRCT-170418–9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>FW genotyping primer for slywi390</td>
+      <td>This study</td>
+      <td>CATGACGGCAAAGTTGGTGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RV1 genotyping primer for slywi390</td>
+      <td>This study</td>
+      <td>CCATGCCTTGCAAAATGGCGTTA CTTAA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RV2 genotyping primer for slywi390</td>
+      <td>This study</td>
+      <td>TGTAGGAGAGAAGTCGCGAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>crestin PCR amplification for ISH probe synthesisFW primer</td>
+      <td>This study</td>
+      <td>AAGCCCTCGAAACTCACCTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>crestin PCR amplification for ISH probe synthesisRV primer</td>
+      <td>This study</td>
+      <td>CCACTTGATTCCCACGAGCT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Multisite Gateway system kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# 12537–023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>LASX</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji/Downloads</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Ilastik</td>
+      <td>https://www.ilastik.org/</td>
+      <td>RRID:SCR_015246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad https://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Numpy library, Python</td>
+      <td>Harris et al., 2020</td>
+      <td>RRID:SCR_008633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Matlab</td>
+      <td>The Mathworks, Inc.https://fr.mathworks.com/products/matlab.html</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines
 
 Wild-type, transgenic and mutant zebrafish embryos were obtained by natural spawning. In the text, the developmental times in hpf indicate hours post-fertilisation at 28 °C. To obtain the 14–22 hpf stages, embryos were collected at 10 am, incubated for 2 hr at 28 °C before being placed overnight in a 23 °C incubator to slow down development. Using this protocol, the embryos were at 14 hpf in the following morning at 10 am. We used the following lines (the simplified names are used in the figures and their legends): the zebrafish slywi390 (sly/lamc1) mutant (referred to as the sly mutant, Wiellette et al., 2004), the foxd3zdf10 mutant (referred to as the foxd3 mutant, Stewart et al., 2006), Tg(–8.4neurog1:GFP)sb1 (referred to as Tg(neurog1:GFP), Blader et al., 2003) to label the EONs at coalescence stages, Tg(–2.0ompb:gapYFP)rw032 (a gift from Nobuhiko Miyasaka, RIKEN Institute, National Bioresource Project of Japan, referred to as Tg(omp:meYFP), Sato et al., 2007) to label ompb-expressing OP neurons and their axons from 22 hpf, Tg(–4.0cldnb:GalTA4, cry:RFP)nim11 (referred to as Tg(cldnb:Gal4), Breau et al., 2013) combined with Tg(14XUAS:mRFP,Xla.Cryg:GFP)tpl2 (referred to as Tg(UAS:RFP), Balciuniene et al., 2013) to label all cells of the OP and their axons, TgBAC(lamC1:lamC1-sfGFP; Yamaguchi et al., 2022) to visualise the expression of LamC1-sfGFP under the control of the lamC1 promoter, and Tg(eltC:GFP)zf199Tg (referred to as Tg(elementC:gfp), Stedman et al., 2009) to label the forebrain. To generate the Tg(UAS:lyn-tagRFP) line, a 10XUAS:lyn-tagRFP plasmid was synthesised by Gateway cloning (Multisite Gateway system kit, Invitrogen, 12537–023, final destination vector: pDest:tol2) and co-injected with Tol2 mRNA (25 ng/µL of plasmid and 25 ng/µL of Tol2 mRNA) in 1 cell-stage wild type embryos. All our experiments were made in agreement with the European Directive 210/63/EU on the protection of animals used for scientific purposes, and the French application decree ‘Décret 2013–118’. The fish facility has been approved by the French ‘Service for animal protection and health’, with the approval number B-75-05-25.
 
-## Genotyping
+### Genotyping
 
 The slywi390 mutant allele and the wild type locus were genotyped by PCR with the following primers: FW: 5’-CATGACGGCAAAGTTGGTGA-3’; RV1: 5’-CCATGCCTTGCAAAATGGCGTTA CTTAA-3’; RV2: 5’-TGTAGGAGAGAAGTCGCGAG-3’. To detect the slywi390 allele (which is an insertion mutant allele, Wiellette et al., 2004), the FW and RV1 were used to amplify a PCR product of 554 bp. The wild type allele was detected with the FW and RV2 primers to amplify a PCR product of 617 bp. The foxd3zdf10 allele was genotyped with the CAPS (Cleaved Amplified Polymorphic Sequences) technique (Neff et al., 2002) using the SspI restriction enzyme (NEB, R132S), as described in Bryan et al., 2020.
 
-## Immunostainings
+### Immunostainings
 
 For Laminin, Nidogen and Collagen IV immunostainings, embryos were fixed in 4% paraformaldehyde (PFA, in PBS), dehydrated in methanol/PBS series and stored in methanol at −20 °C. Embryos were rehydrated in methanol/PBS series, washed in PBS and treated with 10 µg/mL proteinase K (embryos at 24 hpf or younger: 1 min 30 s of incubation, later stages: 3 min of incubation). Embryos were then whashed in glycin 2 mg/mL, post-fixed in 4% PFA and washed in PBS. For the other immunostainings, embryos were simply fixed in 4% PFA and washed in PBS. Embryos were then blocked in 3% goat serum and 0.3% triton in PBS for 2 hr at room temperature or overnight at 4 °C and incubated overnight at 4 °C with primary and secondary antibodies.
 
 The following primary antibodies were used: anti-Laminin (rabbit, 1/200, L-9393, Sigma), anti-Nidogen (rabbit, 1/200, ab14511, Abcam), anti-Collagen IV (rabbit, 1/200, ab6586, Abcam), anti-GFP (chicken, 1/200, GFP-1020, Aves labs), anti-DsRed (rabbit, 1/300, 632496, Takara), anti-phospho-Histone H3 (rabbit, 1/200, 06–570, Millipore), anti-activated Caspase 3 (rabbit, 1/200, AF835, R and D systems), anti-HuC/D (mouse, 1/200, clone 16A11, A-21271, Thermo Fisher Scientific) and anti-Dlx3b (mouse, 1/500, ZIRC).
 
-## In situ hybridisation
+### In situ hybridisation
 
 Partial cDNA sequences for the NCC crestin marker were amplified by PCR using the 5’-AAGCCCTCGAAACTCACCTG-3’ (FW) and 5’-CCACTTGATTCCCACGAGCT-3’ (RV) primers. PCR products were subcloned in pGEM-T-easy (Promega) and sequenced. The Digoxigenin(DIG)-labelled riboprobe was synthetised from PCR templates. Embryos were fixed in 4% PFA in PBS and stored in methanol at − 20 °C. Embryos were then rehydrated in methanol/PBS series, permeabilised 1 min 30 s with proteinase K (10 mg/mL), pre-hybridised, and hybridised overnight at 65 °C in hybridisation mixture (50% formamide, 5 X standard saline citrate (SSC), 0.1% Tween 20, 100 µg/mL heparin, 100 µg/mL tRNA in water). The embryos were subjected to a series of washes in 50% SSC/formamide and SSC/PBST, and were then incubated in the blocking solution (0.2% Tween 20, 0.2% Triton X-100, 2% sheep serum in PBST) for 1 hr and overnight at 4 °C with alkaline phosphatase-conjugated anti-DIG antibodies (Roche) diluted at 1/4000 in the blocking solution. Embryos were then washed in PBST, soaked in staining buffer (TMN: 0.1 M NaCl, 0.1 M Tris-HCl, pH 9.5, 0.1% Tween 20 in water) and incubated in NBT/BCIP (nitroblue tetrazolium/5-bromo-4-chloro-3-indolyl phosphate) solution (Roche).
 
-## DNA injection
+### DNA injection
 
 To achieve mosaic labelling, the –8.4neurog1:GFP plasmid (Blader et al., 2003), the omp:meYFP plasmid (Miyasaka et al., 2005) and the sox10(7.2):KalTA4 plasmid (Almeida and Lyons, 2015) were injected respectively at 10, 5 and 15 ng/µL in one-cell stage embryos.
 
-## Image acquisition
+### Image acquisition
 
 For live imaging, embryos were dechorionated manually and mounted at 14 hpf in 0.5% low melting agarose in 1 X E3 medium. For movies on Tg(neurog1:GFP) embryos at coalescence stages, the embryos were imaged directly after the mounting, using a dorsal view, from 14 to 22 hpf (or 14–32 hpf for embryos in which NCC were mosaically labelled). For movies on Tg(omp:meYFP) embryos, the embryos were placed at 33 °C just after the mounting, and imaged from 22 hpf with a frontal view. Movies were recorded at 28 °C on a Leica TCS SP8 MPII upright multiphoton microscope using a 25 X (numerical aperture (NA) 0.95) water lens. For fixed embryos, immunostained embryos were mounted in 0.5% low melting agarose in PBS and imaged on a Leica TCS SP5 AOBS upright confocal microscope using a 63 X (NA 0.9) water lens or on a Zeiss 980 FAST Airyscan with a 20 X (NA 1.0) water lens.
 
 For electron microscopy, the zebrafish embryos were fixed in 2% glutaraldehyde and 2% PFA in 0.1 M sodium cacodylate buffer pH 7.2 overnight at 4 °C. Samples were washed in 0.1 M cacodylate buffer, incubated for 1 hr in 1% osmium tetroxide in 0.1 M cacodylate buffer, washed with deionised water, incubated 1 hr in 1% Uranyl Acetate and washed again with deionised water. To facilitate their orientation for sectionning, the zebrafish embryos were embedded in 4% agarose before being dehydrated through graded concentration of ethanol (50-70-95–100%). Samples were pre-embedded with graded concentration of anhydrous acetone and EPON epoxy resin mix (3:1 – 1:1 – 1:3) and embedded with 100% EPON. Finally, the embryos were mounted on silicon flat mold and polymerised at 60 °C for 72 hr. Ultrathin sections (80 nm) were prepared with an Ultracut ultramicrotome (UCT, Leica microsystems). They were deposited on silicon wafers, and contrasted with 2.5% uranyl acetate and 2% lead citrate. The wafers were stuck on aluminum stubs, plasma-cleaned, and observed at 1.5 kV, with a 30 µm aperture diameter and high current mode, at 2 mm WD, with SE and BSE in column detectors, in high vacuum in a Field-Emission SEM (Gemini 500, Zeiss). Images were automatically acquired with Atlas 5 (Fibics), with a pixel dwell time of 12.8 μs, a line averaging of 5, with a 8192x8,192 definition and a pixel size fixed at 2.5 nm (corresponding to an image size of 20.5×20.5 μm), and an overlap of 16% between images. To obtain final mosaics, LookUp Table were inverted, SE and BSE signals were mixed, and manual stitching was made.
 
-## Image analysis
+### Image analysis
 
-## OP and brain dimensions
+#### OP and brain dimensions
 
 The ML dimension of the OP represents the distance between the most medial and the most lateral GFP+ or YFP+ cells in Tg(neurog1:GFP) or Tg(omp:meYFP) embryos, respectively. Ectopic fluorescent cells (cells that are physically separated from the main cluster) were not taken into account for this measurement. The same method was applied to quantify the AP and DV dimensions of the OP tissue. The width of the brain was measured along the ML axis using the GFP forebrain expression in Tg(elementC:gfp) embryos, at three different AP positions and three different DV positions.
 
-## Thickness of the intercellular space in EM images
+#### Thickness of the intercellular space in EM images
 
 Analyses were performed on 1000 pixel-long rectangular regions at the interface between NCC and brain or OP cells in controls, and at the brain/OP interface in sly mutants (from 3 to 7 regions per embryo). In each region, the thickness of the intercellular space was manually measured every 100 pixels using Fiji (10 measurements/region). The average thickness per region and then per embryo was computed and plotted.
 
-## Manual cell tracking
+#### Manual cell tracking
 
 Individual cells from the OP (expressing Tg(neurog1:GFP) or Tg(omp:meYFP)) and the adjacent brain were tracked in 3D using the Manual Tracking plugin in ImageJ/Fiji. For tracking on Tg(neurog1:GFP) embryos, tracked cells from the brain and the OP expressed Tg(neurog1:GFP) at least at the end of the movie. For tracking on Tg(omp:meYFP) embryos, we followed forebrain cells located between the two OPs. For growth cone tracking, individual growth cones were followed in 3D using the same plugin in embryos injected with the omp:meYFP plasmid, over periods of 200 min each. The orientation of the trajectories represents the angle between the track and the vertical DV axis. 2D colour coded trajectories and rose plots were generated in Matlab (Mathworks, US). The 3D MSD was computed using the Numpy library in Python (Harris et al., 2020). Plots representing cell tracks merged at their origin were produced with Microsoft Excel.
 
-## Segmentation and analysis of the brain/OP boundary
+#### Segmentation and analysis of the brain/OP boundary
 
 The segmentation of Dlx3b+ OP cells was performed using a two-step workflow in Ilastik and Fiji softwares. First, to achieve pixel classification, 3 representative images of controls and of sly mutants were loaded into the data input menu and used to train the algorithm. After the training the pixel features and feature size (sigma) were selected. All features on all sigma scales were selected. This allowed pixels to be classified based on gray intensity, resemblance to an edge, and texture. Next, the supervised training was performed. 3 examples of each object were labelled; then, the classifier was allowed to update to observe the results. Using the uncertainty overlay, areas of high uncertainty were labelled iteratively until the prediction layer showed satisfactory identification of the pixels. This process was repeated for all three images. The trained classifier was then run on all images, and the pixel classification data were saved as segmented images. In the second step, a ‘region of interest’ (ROI) containing the brain/OP boundary was manually defined using Fiji. The edge detection was applied in that ROI and allowed the delineation of the boundary between segmented OP cells and brain cells. The data were exported as CSV files to be used for analysis. The distortion index is defined as the total length of the boundary, divided by the distance between the dorsalmost and ventralmost positions along the analysed boundary region.
 
-## Statistical analysis
+### Statistical analysis
 
 Most graphs show means ± sem, overlayed with all individual data points. These plots were generated with the GraphPad Prism software. For all graphs, we checked for normality of the data distribution before performing parametric, unpaired, two tailed t tests. When the data were not normally distributed, a Mann-Whitney test was used. A Chi2 test was performed on the data presented in Figure 3—figure supplement 1M-P and Figure 5—figure supplement 1I-L. For the segmentation of the brain/OP boundary (Figure 5G and H), the data were analyzed through an ANOVA test (mixed models, with animals as random effect and genotype and side as fixed effects). The orientation of cell and growth cone trajectories were treated as circular variables and analysed between groups using the circular analysis of variance based on the likelihood ratio test (Figures 4O, 6C, F1 and L). The p values correspond to *p0.05, **p<0.01, ***p<0.001. No statistical method was used to estimate sample size and no randomisation was performed.

@@ -13,19 +13,19 @@
 
 ### Affiliations
 
-1. https://ror.org/008x57b05 Centre for Health Economic Research and Modelling Infectious Diseases, University of Antwerp Antwerp Belgium
-2. https://ror.org/04nbhqj75 Interuniversity Institute of Biostatistics and statistical Bioinformatics, Data Science Institute, Hasselt University Hasselt Belgium
-3. https://ror.org/02qqh1125 INSERM, Sorbonne Université, Pierre Louis Institute of Epidemiology and Public Health Paris France
-4. https://ror.org/0112mx960 Tokyo Tech World Research Hub Initiative (WRHI), Tokyo Institute of Technology Tokyo Japan
+1. Centre for Health Economic Research and Modelling Infectious Diseases, University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
+2. Interuniversity Institute of Biostatistics and statistical Bioinformatics, Data Science Institute, Hasselt University Hasselt Belgium ([ROR:04nbhqj75](https://ror.org/04nbhqj75))
+3. INSERM, Sorbonne Université, Pierre Louis Institute of Epidemiology and Public Health Paris France ([ROR:02qqh1125](https://ror.org/02qqh1125))
+4. Tokyo Tech World Research Hub Initiative (WRHI), Tokyo Institute of Technology Tokyo Japan ([ROR:0112mx960](https://ror.org/0112mx960))
 5. Department of Infectious Diseases, Liège University Hospital Liège Belgium
-6. https://ror.org/006e5kg04 Artificial Intelligence Lab, Department of Computer Science, Vrije Universiteit Brussel Brussels Belgium
-7. https://ror.org/03w5j8p12 KU Leuven, Department of Microbiology and Immunology, Rega Institute for Medical Research, University of Leuven Leuven Belgium
+6. Artificial Intelligence Lab, Department of Computer Science, Vrije Universiteit Brussel Brussels Belgium ([ROR:006e5kg04](https://ror.org/006e5kg04))
+7. KU Leuven, Department of Microbiology and Immunology, Rega Institute for Medical Research, University of Leuven Leuven Belgium ([ROR:03w5j8p12](https://ror.org/03w5j8p12))
 
 † Corresponding author
 
 ## Abstract
 
-SARS-CoV-2 remains a worldwide emergency. While vaccines have been approved and are widely administered, there is an ongoing debate whether children should be vaccinated or prioritized for vaccination. Therefore, in order to mitigate the spread of more transmissible SARS-CoV-2 variants among children, the use of non-pharmaceutical interventions is still warranted. We investigate the impact of different testing strategies on the SARS-CoV-2 infection dynamics in a primary school environment, using an individual-based modelling approach. Specifically, we consider three testing strategies: (1) symptomatic isolation , where we test symptomatic individuals and isolate them when they test positive, (2) reactive screening , where a class is screened once one symptomatic individual was identified, and (3) repetitive screening , where the school in its entirety is screened on regular time intervals. Through this analysis, we demonstrate that repetitive testing strategies can significantly reduce the attack rate in schools, contrary to a reactive screening or a symptomatic isolation approach. However, when a repetitive testing strategy is in place, more cases will be detected and class and school closures are more easily triggered, leading to a higher number of school days lost per child. While maintaining the epidemic under control with a repetitive testing strategy, we show that absenteeism can be reduced by relaxing class and school closure thresholds.
+SARS-CoV-2 remains a worldwide emergency. While vaccines have been approved and are widely administered, there is an ongoing debate whether children should be vaccinated or prioritized for vaccination. Therefore, in order to mitigate the spread of more transmissible SARS-CoV-2 variants among children, the use of non-pharmaceutical interventions is still warranted. We investigate the impact of different testing strategies on the SARS-CoV-2 infection dynamics in a primary school environment, using an individual-based modelling approach. Specifically, we consider three testing strategies: (1) symptomatic isolation, where we test symptomatic individuals and isolate them when they test positive, (2) reactive screening, where a class is screened once one symptomatic individual was identified, and (3) repetitive screening, where the school in its entirety is screened on regular time intervals. Through this analysis, we demonstrate that repetitive testing strategies can significantly reduce the attack rate in schools, contrary to a reactive screening or a symptomatic isolation approach. However, when a repetitive testing strategy is in place, more cases will be detected and class and school closures are more easily triggered, leading to a higher number of school days lost per child. While maintaining the epidemic under control with a repetitive testing strategy, we show that absenteeism can be reduced by relaxing class and school closure thresholds.
 
 ## Introduction
 
@@ -49,6 +49,83 @@ We note that the high NSDL associated with repetitive testing, renders this test
 
 **Figure 2.:** The epidemic is simulated for 100 days. This experiment shows that when repetitive testing is in place, a higher class closure threshold has little effect on the attack rate, yet it significantly reduces the NSDL (Table 1).
 
+**Table 1.**
+ Median and 95% Quantile Interval - Class closure threshold scenario.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Class Closure Threshold</th>
+      <th>Summary Measure</th>
+      <th>Median</th>
+      <th>95% Quantile Interval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>Attack Rate</td>
+      <td>0.08</td>
+      <td>[0.07,0.11]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Attack Rate</td>
+      <td>0.09</td>
+      <td>[0.07,0.12]</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Attack Rate</td>
+      <td>0.09</td>
+      <td>[0.07,0.12]</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Attack Rate</td>
+      <td>0.09</td>
+      <td>[0.07,0.12]</td>
+    </tr>
+    <tr>
+      <td>No Threshold</td>
+      <td>Attack Rate</td>
+      <td>0.09</td>
+      <td>[0.07,0.11]</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>NSDL</td>
+      <td>9.5</td>
+      <td>[7.86, 11.16]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>NSDL</td>
+      <td>3.6</td>
+      <td>[2.50, 4.81]</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>NSDL</td>
+      <td>2.01</td>
+      <td>[1.46, 2.83]</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>NSDL</td>
+      <td>1.71</td>
+      <td>[1.36, 2.17]</td>
+    </tr>
+    <tr>
+      <td>No Threshold</td>
+      <td>NSDL</td>
+      <td>1.61</td>
+      <td>[1.39, 1.91]</td>
+    </tr>
+  </tbody>
+</table>
+
 In order to challenge some of the assumptions of this study, we conduct a series of sensitivity analyses. We show these results in the Supplementary Information and briefly report the main findings here. We investigate the impact of the amount of weekly introductions, by seeding 1 and 10 cases on a weekly basis, next to the baseline scenario of 5 cases. We note that the impact of additional seeding cases amplifies the attack rate, but overall repetitive testing proved to be robust in regard of this parameter (Appendix 1—figure 1). Futher, we notice that a higher attack rate is detected in school with smaller sizes when the seeding number is kept the same (Appendix 1—figure 17). When introducing a number of seeds proportional to the school size, the attack rate and NSDL are similar, but a higher stochasticity is observed for the smaller school size (Appendix 1—figure 18). Furthermore, the high efficacy of repetitive testing is also observed when varying the level of contact reduction between classes, when considering different levels of immunity in children and adults, in a low prevalence setting and when a high probability of symptomatic infections is considered (Appendix 1—figures 5–7, 12 and 13). Next, we assume that asymptomatic individuals are as infectious as symptomatic individuals, as recently observed by Meuris et al., 2021. Also in this case, the trends of attack rate and number of school days lost among the different testing strategies are consistent with the baseline scenarios reported above (Appendix 1—figure 8). Repetitive testing and reactive screening are less effective when the turnaround time is increased (Appendix 1—figure 15). While reactive screening performs similar to symptomatic isolation for a turnaround time of 3 days, repetitive screening is still the strategy that is most successful to reduce the number of infections. In addition, testing strategies show a lower performance when a shorter incubation period is considered (Appendix 1—figure 14). We also consider a repetitive testing scenario where we test the entire school population twice per week, which shows that such a strategy squashes a highly contagious epidemic such as driven by the Delta VoC (Appendix 1—figures 2 and 3) and reduces the attack rate of an immune-evasive VoC with shorter incubation period, as the Omicron VoC (Appendix 1—figure 21). In addition, we noticed a decrease in the NSDL when assumptions on school and class closure are relaxed for the Delta VoC (Appendix 1—figure 3) compared to a single repetitive testing strategy. However, when school and class thresholds are present and the Delta Voc considered (Appendix 1—figure 2), or when the thresholds are relaxed and the Omicron VoC assumed (Appendix 1—figure 21), the NSDL increases if testing twice per week. Considering a repetitive testing strategy, we also tested the compliance to testing, showing that attack rate decreases and NSDL increases when compliance is increased (Appendix 1—figure 16). Interestingly, in our experimental setting, a compliance of 60% leads to a similar attack rate than a compliance of 100%.
 
 ## Discussion
@@ -69,15 +146,15 @@ In the baseline scenario, we assume perfect compliance by school individuals for
 
 ## Methods
 
-## Individual-based primary school model
+### Individual-based primary school model
 
 We construct an individual-based model to describe COVID-19 outbreaks in a primary school setting, which we briefly introduce in this section We refer to the Supplementary Information for a full description of the model. Children are assigned to classes and we simulate interactions among children both within and between classes. Teachers are allocated to specific classes and are assumed to interact only with individuals with whom they share the same class. We assume that symptomatic individuals develop symptoms at the peak of their infectiousness, at which they can be detected and placed in isolation for 10 days. We implement three testing policies aimed at mitigating school outbreaks:
 
 All testing policies will close a class when the number of infections in this class exceeds two cases. Analogously, all testing policies will close the school when the number of infections over all classes exceeds 20 cases. When the class, or school, threshold is triggered, the respective class, or the entire school, is closed for 10 days. The length of isolation and of class/school closure is set according to viral clearance observations (Chang et al., 2020b), and in line with isolation policies in place in European countries in the first half of 2021. Infection counts are recorded in a 14-day time window to determine class and school closures. We assumed a weekly screening as the baseline scenario because a strategy based on a single test can be more easily applied at a national level when a high amount of tests need to be quickly analyzed. However, we also consider a repetitive screening strategy based on twice weekly testing. The assumptions on class and school thresholds, and on the frequency of weekly testing are challenged in a sensitivity analysis, which we discuss in the Results section.
 
-## Experimental framework
+### Experimental framework
 
-Model parameters are set to describe COVID-19 spreading. We represent both the Wuhan strain of SARS-CoV-2 and the Delta variant by setting different transmission potentials given a contact, informing such values from the literature (Li et al., 2020; Burki, 2021). We consider a distinct detection probability of symptoms pD for children (pD=0.3) and adults (pD=0.5), as children typically exhibit mild symptoms that are easily overlooked (Sinha et al., 2020). Children are set to be halve as susceptible as adults (Davies et al., 2020). We assume that 30% of school children are immune due to prior infection, and that 90% of the teachers are immune, due to their vaccination status or due to prior infection (Sciensano, 2022).
+Model parameters are set to describe COVID-19 spreading. We represent both the Wuhan strain of SARS-CoV-2 and the Delta variant by setting different transmission potentials given a contact, informing such values from the literature (Li et al., 2020; Burki, 2021). We consider a distinct detection probability of symptoms $p_{D}$ for children ($p_{D}=0.3$) and adults ($p_{D}=0.5$), as children typically exhibit mild symptoms that are easily overlooked (Sinha et al., 2020). Children are set to be halve as susceptible as adults (Davies et al., 2020). We assume that 30% of school children are immune due to prior infection, and that 90% of the teachers are immune, due to their vaccination status or due to prior infection (Sciensano, 2022).
 
 The simulated testing procedure accounts for the use of PCR tests on saliva or throat washing samples. The sensitivity of such tests is set to 86%, and there is a one day delay in reporting the result (Butler-Laporte et al., 2021). Recent reports show that the performance of saliva sampling in combination with PCR testing is on par with nasopharyngeal swab sampling in combination with PCR testing (Wyllie et al., 2020). We assume full compliance to testing, that could potentially be reached since saliva sampling is less invasive compared to other specimen collection procedures. Infectious individuals become PCR detectable 2 days after infection, as previously assumed (Torneri et al., 2020; Torneri et al., 2021). For the reactive screening testing policy, we assume that there is a one day screening delay.
 

@@ -9,17 +9,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03bnmw459 Institute of Physics and Astronomy, University of Potsdam Potsdam Germany
-2. https://ror.org/03rmrcq20 Department of Mathematics, University of British Columbia Vancouver, BC Canada
-3. https://ror.org/0316ej306 Department of Chemical and Biological Physics, Weizmann Institute of Science Rehovot Israel
-4. https://ror.org/05tkyf982 Swiss Institute for Dryland Environmental and Energy Research, Blaustein Institutes for Desert Research, Ben-Gurion University of the Negev, Sede Boqer Campus Midreshet Ben-Gurion Israel
-5. https://ror.org/05tkyf982 Department of Physics, Ben-Gurion University of the Negev Be’er Sheva Israel
+1. Institute of Physics and Astronomy, University of Potsdam Potsdam Germany ([ROR:03bnmw459](https://ror.org/03bnmw459))
+2. Department of Mathematics, University of British Columbia Vancouver, BC Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+3. Department of Chemical and Biological Physics, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+4. Swiss Institute for Dryland Environmental and Energy Research, Blaustein Institutes for Desert Research, Ben-Gurion University of the Negev, Sede Boqer Campus Midreshet Ben-Gurion Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))
+5. Department of Physics, Ben-Gurion University of the Negev Be’er Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))
 
 † Corresponding author
 
 ## Abstract
 
-Actin dynamics in cell motility, division, and phagocytosis is regulated by complex factors with multiple feedback loops, often leading to emergent dynamic patterns in the form of propagating waves of actin polymerization activity that are poorly understood. Many in the actin wave community have attempted to discern the underlying mechanisms using experiments and/or mathematical models and theory. Here, we survey methods and hypotheses for actin waves based on signaling networks, mechano-chemical effects, and transport characteristics, with examples drawn from Dictyostelium discoideum , human neutrophils, Caenorhabditis elegans , and Xenopus laevis oocytes. While experimentalists focus on the details of molecular components, theorists pose a central question of universality: Are there generic, model-independent, underlying principles, or just boundless cell-specific details? We argue that mathematical methods are equally important for understanding the emergence, evolution, and persistence of actin waves and conclude with a few challenges for future studies.
+Actin dynamics in cell motility, division, and phagocytosis is regulated by complex factors with multiple feedback loops, often leading to emergent dynamic patterns in the form of propagating waves of actin polymerization activity that are poorly understood. Many in the actin wave community have attempted to discern the underlying mechanisms using experiments and/or mathematical models and theory. Here, we survey methods and hypotheses for actin waves based on signaling networks, mechano-chemical effects, and transport characteristics, with examples drawn from Dictyostelium discoideum, human neutrophils, Caenorhabditis elegans, and Xenopus laevis oocytes. While experimentalists focus on the details of molecular components, theorists pose a central question of universality: Are there generic, model-independent, underlying principles, or just boundless cell-specific details? We argue that mathematical methods are equally important for understanding the emergence, evolution, and persistence of actin waves and conclude with a few challenges for future studies.
 
 ## Introduction
 
@@ -63,13 +63,257 @@ In this section, we will summarize the large body of work on actin wave models t
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87181/elife-87181-fig2-v1.jpg)
 
-**Figure 2.:** Most actin wave models are based on local nonlinear processes that involve positive and negative feedbacks between interacting species (A). In an extended system with spatial coupling, such as diffusive transport (B), this may give rise to propagating waves (C), where  is the wave propagation (group) speed. Examples of actin waves and models in vD. discoideum (D–F) and Xenopus oocytes (G–I) showing kymographs of the experimentally observed waves (D, G), model schematics (E, H), and simulations (F, I). The models proposed by Arai et al., 2010; Shibata et al., 2012; Shibata et al., 2013 consider active PTEN, PIP2, and PIP3, and assume conservation of PTEN. The models in Goryachev et al., 2016; Michaud et al., 2022 are based on Rho (RD, RT) and its GAP (RGA-3/4) interacting with F-actin (F). (D–F) were modified from Arai et al., 2010, Figures 1D, 5A and D, respectively. (G–I) were modified from Michaud et al., 2022, Figures 2C, 7A and E, respectively.
+**Figure 2.:** Most actin wave models are based on local nonlinear processes that involve positive and negative feedbacks between interacting species (A). In an extended system with spatial coupling, such as diffusive transport (B), this may give rise to propagating waves (C), where $v$ is the wave propagation (group) speed. Examples of actin waves and models in D. discoideum (D–F) and Xenopus oocytes (G–I) showing kymographs of the experimentally observed waves (D, G), model schematics (E, H), and simulations (F, I). The models proposed by Arai et al., 2010; Shibata et al., 2012; Shibata et al., 2013 consider active PTEN, PIP2, and PIP3, and assume conservation of PTEN. The models in Goryachev et al., 2016; Michaud et al., 2022 are based on Rho (RD, RT) and its GAP (RGA-3/4) interacting with F-actin (F). (D–F) were modified from Arai et al., 2010, Figures 1D, 5A and D, respectively. (G–I) were modified from Michaud et al., 2022, Figures 2C, 7A and E, respectively.
 
-## Reaction-diffusion-type models
+**Table 1.**
+ Representative mathematical models with their main variables, additional components, and methods of study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Model</th>
+      <th>NPF</th>
+      <th>F</th>
+      <th>I</th>
+      <th>PI</th>
+      <th>Other components</th>
+      <th>Study methods</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>RD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✔</td>
+      <td>PIP2, PIP3, PTEN</td>
+      <td>SIM, linear BIF</td>
+      <td>Shibata et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>RD</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Arp2/3, Coronin, Rac, WASP, etc.</td>
+      <td>SIM</td>
+      <td>Khamviwath et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>RD, PF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✔</td>
+      <td>PIP2, PIP3, PTEN, PI3K</td>
+      <td>SIM, linear BIF</td>
+      <td>Taniguchi et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>RD</td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td>Monomers, Coronin</td>
+      <td>SIM</td>
+      <td>Wasnik and Mukhopadhyay, 2014</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>SRD, PF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✔</td>
+      <td>PIP3, PTEN</td>
+      <td>SIM</td>
+      <td>Knoch et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>RD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>✔</td>
+      <td>Ras, PTEN, GAP, PIP3</td>
+      <td>SIM</td>
+      <td>Fukushima et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>SRD, LSM</td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>PIP2, Ras/Rap, PKBs, Rac, Coronin</td>
+      <td>SIM</td>
+      <td>Miao et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium</td>
+      <td>SRD, PF</td>
+      <td></td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Cell edge, cytofission</td>
+      <td>SIM</td>
+      <td>Flemming et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Echinoderm</td>
+      <td>RD</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td>Rho, Ect2</td>
+      <td>SIM</td>
+      <td>Bement et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Xenopus</td>
+      <td>RD</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td>Rho, Ect2</td>
+      <td>SIM</td>
+      <td>Michaud et al., 2022; Michaud et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Cell extracts</td>
+      <td>RD</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td>Rho, Ect2</td>
+      <td>SIM</td>
+      <td>Landino et al., 2021</td>
+    </tr>
+    <tr>
+      <td>C. elegans</td>
+      <td>ODE</td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Rho, RGA3/4</td>
+      <td>SIM</td>
+      <td>Michaux et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Neutrophil</td>
+      <td>ABM, ODE</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td>Hem1</td>
+      <td>SIM</td>
+      <td>Weiner et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Fibroblast</td>
+      <td>RD</td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td>Cortical actin/stress fibers, cell edge</td>
+      <td>SIM, linear BIF</td>
+      <td>Bernitt et al., 2017</td>
+    </tr>
+    <tr>
+      <td>General</td>
+      <td>SRD</td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td>F-actin orientation</td>
+      <td>SIM</td>
+      <td>Whitelam et al., 2009</td>
+    </tr>
+    <tr>
+      <td>General</td>
+      <td>ABM</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td>Filament network</td>
+      <td>SIM</td>
+      <td>Carlsson, 2010</td>
+    </tr>
+    <tr>
+      <td>General</td>
+      <td>RD</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td>Elasticity, cell edge</td>
+      <td>SIM</td>
+      <td>Doubrovinski and Kruse, 2011</td>
+    </tr>
+    <tr>
+      <td>General</td>
+      <td>RD</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td>GTPases for nucleation</td>
+      <td>SIM, LPA</td>
+      <td>Holmes et al., 2012</td>
+    </tr>
+    <tr>
+      <td>General</td>
+      <td>SRD, PF</td>
+      <td></td>
+      <td>✔</td>
+      <td></td>
+      <td></td>
+      <td>Cell edge, cell-to-cell variability</td>
+      <td>SIM</td>
+      <td>Alonso et al., 2018</td>
+    </tr>
+    <tr>
+      <td>General</td>
+      <td>RD</td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+      <td></td>
+      <td>G-actin</td>
+      <td>SIM, nonlinear BIF</td>
+      <td>Yochelis et al., 2022</td>
+    </tr>
+  </tbody>
+</table>
+
+_NPF, actin nucleation promoting factor; F, F-actin; I, inhibitor; PI, phosphoinositides; SIM, simulations via numerical integration; BIF, bifurcation analysis; ABM, agent-based model; ODE, ordinary differential equations; RD, reaction-diffusion system; PF, phase field equations; SRD, stochastic-reaction-diffusion system; LPA, local perturbation analysis; LSM, level set method._
+
+### Reaction-diffusion-type models
 
 Most actin wave models describe the interactions of molecular players using traditional chemical reaction kinetics localized at the cell cortex or/and the membrane (local dynamics, see Figure 2A). In addition, spatial coupling is assumed, typically based on diffusive transport of the species involved (see Figure 2B). Such models can be mathematically expressed as reaction-diffusion (RD) systems, composed of reaction terms that represent the local intracellular kinetics and a diffusion term, accounting for the diffusive transport of all or some of the species. The reaction terms involve nonlinear interactions between the reacting species that are often assumed to be of Michaelis–Menten type (saturating) or switch-like (sigmoidal, a.k.a. ‘Hill function’ type). While the number of interacting species can be large, it is often possible, under certain assumptions, to reduce the number of variables in an RD model to three, two, or even a single dynamic variable in the case of minimal phenomenological models, as briefly discussed in Box 2. Due to the large body of such works, here we survey them according to different cell types (species).
 
-## Models of actin waves in Dictyostelium
+#### Models of actin waves in Dictyostelium
 
 Reduced mechanistic models of actin waves critically depend on identifying the core wave generator of the system. Here, we will present examples from D. discoideum to demonstrate how the list of key components can be narrowed down by combining experimental and modeling studies. In 2010, traveling waves of PIP3 and PTEN were reported from cells treated with Latrunculin A, a drug that inhibits actin polymerization (Arai et al., 2010), demonstrating that neither F-actin nor the chemoattractant cAMP are needed for wave generation (only later it was argued that F-actin could play a stabilizing role in wave dynamics; see Nishikawa et al., 2014). These observations inspired a model in which the key dynamics is maintained via PIP2/PIP3 signaling (see Figure 2D–F; Arai et al., 2010; Shibata et al., 2012). The model is based on assuming that PIP3 negatively regulates membrane association of PTEN, while PIP2 helps to activate PTEN, thus effectively providing a positive feedback from PTEN to itself. PI3K was taken to be independent of PIP2 and PIP3, and constant in the absence of chemoattractants. PTEN was assumed to be well-mixed in the cytosol and non-diffusive on the membrane originally, but diffusion was included in a later variant of the model (Shibata et al., 2013). Numerical simulations reproduced the experimentally observed signaling waves and some analysis was also performed (Nakamura and Shibata, 2015), including a ‘local perturbation analysis’ (LPA) (Holmes, 2014).
 
@@ -77,13 +321,13 @@ Subsequent experiments demonstrated that excitable behavior can also be present 
 
 Reaction-diffusion models of intracellular waves in D. discoideum were also studied inside deforming model cells. The dynamic phase field approach represents cell shape by a function that takes on distinct values (e.g., 1 or 0) inside versus outside of the cell with a smooth interface connecting these values along the cell boundary (e.g., see Shao et al., 2010; Camley et al., 2017). This approach has been used, for example, in a study focusing on the dynamics of phase singularities in a variant of the PIP2/PIP3 model (Taniguchi et al., 2013). A phase field model for the dynamics of PIP3 and PTEN has also been extended by a noisy excitable module to account for the observations of transient ‘holes’ in the PTEN distribution (Knoch et al., 2014). In Ghabache et al., 2021, different distributions of actin and myosin were prescribed within the phase field domain to account for different motility modes. Finally, with further reduction, generic wave generators (a.k.a. ‘toy’ models) have been combined with a dynamic phase field to qualitatively address a wide range of experimental observations in D. discoideum. Even though the relation of these models to individual molecular players in the cell often remains vague, they successfully captured observations of cell-to-cell variability (Alonso et al., 2018), of different motility phenotypes (Cao et al., 2019b; Moreno et al., 2020; Moldenhawer et al., 2022), and of wave-mediated cell division events (Flemming et al., 2020). In combination with an F-actin orientation field, a noisy FitzHugh-Nagumo-type model also explains how actin spots become mobile and form traveling actin waves (Whitelam et al., 2009).
 
-## Models of actin waves in oocytes
+#### Models of actin waves in oocytes
 
 In cell division, signals from the mitotic spindle set up waves of Rho and F-actin along the cortex, which are funneled to the cell’s equator, where the contractile ring eventually splits the mother cell into its two daughter cells. In immature oocytes of frogs (X. laevis) and starfish (Patiria miniata), where the cortex is quiescent, vibrant dynamic wave patterns of Rho and F-actin can be induced by expressing two regulators of Rho (the GEF Ect2 and the GAP RGA3/4) at various ratios (Michaud et al., 2021; Michaud et al., 2022). Here, waves of F-actin are observed to follow closely behind waves of activity of the GTPase Rho. A model of this system was proposed taking into account diffusively mobile active and inactive Rho, stationary F-actin, an autocatalytic coupling of Rho to itself via the Rho-GEF Ect2, as well as inactivation of Rho by F-actin, see Figure 2G–I (Goryachev et al., 2016; Michaud et al., 2021). Recent experiments have confirmed that the core circuit of F-actin, Ect2, and the Rho-GAP RGA-3/4, which was identified as the negative regulator correlated with F-actin feedback, controls the dynamics of patterns in the cortex of oocytes (Michaud et al., 2022). Based on extracts of Xenopus oocytes and artificial lipid membranes, the Rho and F-actin wave patterns could even be reconstituted in vitro (Landino et al., 2021). Traveling waves were observed that emerge from random foci and expand as target waves that annihilate upon collision. Surprisingly, even diluted extracts displayed similar robust dynamics. Inhibiting Rho or actin polymerization destroyed the dynamics, proving that both components are essential for the waves. In the abovementioned models of actin waves in X. oocytes, the role of myosin in cortical contraction is not modeled explicitly.
 
 Disordered wave patterns in the starfish oocyte system have also been analyzed from the viewpoint of spiral wave turbulence (Tan et al., 2020). Comparing the experimental observations to the complex Ginzburg–Landau (CGL) equation, which describes the dynamics of any reaction-diffusion system close to the onset of oscillations, suggests that the observed spiral wave properties are generic (model independent) features. However, while this model is based on the creation/annihilation dynamics of topological defects (intrinsically arising dislocations in the phase field) at the cores of the Rho spiral vortices, it is only indirectly related to the specific underlying biological mechanisms.
 
-## Models of actin waves in various other species
+#### Models of actin waves in various other species
 
 In neutrophils, the dynamics of the Hem-1 component of the SCAR/WAVE complex gives rise to actin waves that correlate with cell edge protrusions (Weiner et al., 2007). As demonstrated in this pioneering work, Hem-1 can self-activate and is negatively regulated by F-actin (via an unknown mechanism), as shown in Figure 3A. Assuming a constant total pool of actin that polymerizes in a Hem-1-dependent fashion, a simple model that includes only Hem-1 and F-actin was proposed that produced waves resembling the experimental observations (Weiner et al., 2007). Rather than local coupling by diffusion (associated with nearest-neighbor interactions), the authors used a nonlocal kernel (integral convolution with a Gaussian) to model actin-dependent autoactivation of Hem-1 over some spatial neighborhood.
 
@@ -95,9 +339,9 @@ In summary, Figure 3 displays several circuits associated with actin waves in va
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87181/elife-87181-fig3-v1.jpg)
 
-**Figure 3.:** .Green (red) arrows correspond to positive (negative) feedback signaling (red arrows promote inactivation in A–C, E–F or inhibit actin assembly in D). Black arrows represent interconversions, and dark (light) colors of shapes correspond to active (inactive) forms of signaling agents. (A) The Hem1 complex was identified as a central component in neutrophils as modeled in Weiner et al., 2007. (B) A generic model for actin waves based on the interactions of F-actin with a nucleation promoting factor (NPF) (Doubrovinski and Kruse, 2011; Dreher et al., 2014; Holmes et al., 2012; Mata et al., 2013). A similar filament model by Carlsson, 2010 left out the autocatalysis and failed to produce well-structured waves. (C) The assembly of F-actin by the formin mDia was investigated in embryos of C. elegans (Michaux et al., 2018), where RGA3/4 was identified as the GAP. In oocytes of Xenopus and starfish, Ect2 was found to be the GEF, and RGA3/4 is recruited by F-actin (Bement et al., 2015; Goryachev et al., 2016; Michaud et al., 2021). The circuit was modeled in Goryachev et al., 2016. (D) A model for F- and G-actin and a polymerization inhibitor was proposed by Yochelis et al., 2020; Yochelis et al., 2022. There are also similar, yet more detailed versions, that identified coronin as the inhibitor (Wasnik and Mukhopadhyay, 2014) or that incorporated cortical actin/stress fibers (Bernitt et al., 2017). (E) A slightly distinct model structure for phosphoinositides and PTEN as proposed in Shibata et al., 2012. (F) Essential structure of models (A–D): The key variable is autocatalytic and promotes an effector that exerts at least one (slow) negative feedback. The circuits have been drawn to emphasize similarities in the structures and connectivities. In (B–D), the total amount of the main agent (RhoA, GTPase, or actin) was assumed to be constant.
+**Figure 3.:** Green (red) arrows correspond to positive (negative) feedback signaling (red arrows promote inactivation in A–C, E–F or inhibit actin assembly in D). Black arrows represent interconversions, and dark (light) colors of shapes correspond to active (inactive) forms of signaling agents. (A) The Hem1 complex was identified as a central component in neutrophils as modeled in Weiner et al., 2007. (B) A generic model for actin waves based on the interactions of F-actin with a nucleation promoting factor (NPF) (Doubrovinski and Kruse, 2011; Dreher et al., 2014; Holmes et al., 2012; Mata et al., 2013). A similar filament model by Carlsson, 2010 left out the autocatalysis and failed to produce well-structured waves. (C) The assembly of F-actin by the formin mDia was investigated in embryos of C. elegans (Michaux et al., 2018), where RGA3/4 was identified as the GAP. In oocytes of Xenopus and starfish, Ect2 was found to be the GEF, and RGA3/4 is recruited by F-actin (Bement et al., 2015; Goryachev et al., 2016; Michaud et al., 2021). The circuit was modeled in Goryachev et al., 2016. (D) A model for F- and G-actin and a polymerization inhibitor was proposed by Yochelis et al., 2020; Yochelis et al., 2022. There are also similar, yet more detailed versions, that identified coronin as the inhibitor (Wasnik and Mukhopadhyay, 2014) or that incorporated cortical actin/stress fibers (Bernitt et al., 2017). (E) A slightly distinct model structure for phosphoinositides and PTEN as proposed in Shibata et al., 2012. (F) Essential structure of models (A–D): The key variable is autocatalytic and promotes an effector that exerts at least one (slow) negative feedback. The circuits have been drawn to emphasize similarities in the structures and connectivities. In (B–D), the total amount of the main agent (RhoA, GTPase, or actin) was assumed to be constant.
 
-## Models with dynamic actin network structure
+### Models with dynamic actin network structure
 
 Unlike typical reaction-diffusion models, where the actin is treated as a density variable, models have been proposed that describe the microscopic actin network structure and dynamics in greater detail. Some of these models keep track of polarity fields associated with the actin filament density and orientation (Dreher et al., 2014), or maintain separate densities for the plus (polymerizing) and minus (depolymerizing) ends of the filaments (Doubrovinski and Kruse, 2011). In these models, actin waves are affected by the internal flow of polar actin filaments due to treadmilling along the substrate-attached cell surface. However, the actual wave-generating mechanism turns out to be a combination of cooperative binding of nucleation promoting factors (NPFs) and negative feedback due to inactivation by the local actin filament density, as depicted in Figure 3B. In addition, this model includes the distribution of forces along the cell edge resulting from pushing by actin plus ends, boundary deformation, and dissipative forces. Altogether, this leads to shape changes and net motion of the ‘model cell.’ Note that a similar wave generator based on cooperative nucleator activation and negative feedback from actin (in a classical reaction-diffusion framework with a scalar actin density) was implemented in a simpler cellular Potts model representation of cell shape and motion (Liu et al., 2021).
 
@@ -109,7 +353,7 @@ Detailed models at the filament level were also proposed for lateral propagation
 
 On the one hand, models that describe the details of the actin network at the level of individual filaments, branching, capping, and cross-linking proteins have the obvious advantage of providing a description that is much closer to the experimental system than the more simplified, reduced models. This includes, for example, the lateral dynamics of the branched network in response to the local topography of the membrane and the effects of bundling (nematic) interactions. On the other hand, tracking details of the actin network components significantly increases the model size and requires greater computational resources. Also, such detailed models are not amenable to mathematical analysis from which insights about the dynamic mechanisms can be obtained.
 
-## Membrane confinement, deformations, and mechano-chemical feedback
+### Membrane confinement, deformations, and mechano-chemical feedback
 
 The reaction-diffusion approach has also been extended to incorporate the impact of mechanics and membrane deformation. Unlike molecular players, which may be cell-type specific, most of the physical mechanisms reviewed here apply to all cell types.
 
@@ -139,13 +383,13 @@ The advantage of simple models with few core building blocks is that they are am
 
 Previously, we reviewed different modeling approaches. In what follows, our aim is to introduce methods from the so-called bifurcation theory of nonlinear PDEs that provide a framework to identify the core building blocks of complex biological models. Through examples from the field of actin waves, we also demonstrate the methodology’s strength. We emphasize that the purpose is to provide a descriptive picture rather than a rigorous mathematical review, while organizing the more technical details, for math-inclined readers, in focused boxes.
 
-## Mathematical methodology for actin waves
+### Mathematical methodology for actin waves
 
 In the 18th century, Laplace was convinced that Newtonian mechanics is a sufficient methodology to uncover the ‘secrets’ of the universe, “Give me the positions and velocities of all the particles in the universe, and I will predict the future.” It took, however, another century until Poincaré demonstrated the inherent limitation of Newtonian (linear) mechanics arising already in the (nonlinear) motion of three interacting particles. In contrast to Laplace’s philosophy, Poincaré showed that such motion cannot be predicted (Poincaré, 1885), laying the foundations of what was to become the so-called chaotic dynamics as well as bifurcation theory, in general.
 
 The essential difference between linear and nonlinear systems is the number of possible solutions: While linear models have only one solution, nonlinear models may admit coexisting solutions, which can be uniform or may vary in space and time. Furthermore, the stability properties of solutions are important as they affect sensitivity to initial conditions and to perturbations as the system evolves in time. However, uncovering the evolution of multivariable nonlinear PDEs is a paramount and ongoing mathematical challenge. Thus, in many cases, we rely on in silico simulations to describe complex systems (e.g., biological, chemical, and ecological). These simulations are numerical experiments rather than theoretical frameworks. In what follows, we briefly survey and exemplify the bifurcation methodology that is, to date, the most powerful approach to analyze the solutions of nonlinear PDE systems.
 
-## Fundamentals of bifurcation theory at a glance
+#### Fundamentals of bifurcation theory at a glance
 
 Bifurcation theory has been developed to analyze dynamical systems described by ODEs (Strogatz, 2018). The term ‘bifurcation’ stems from Latin and describes a branching or splitting. In the context of dynamical systems, it was introduced by Henri Poincaré and refers to the branching of solutions (Poincaré, 1885). Mathematically, a bifurcation point corresponds to a sudden qualitative change in the system’s behavior that is related to a transition between different states of the system or to an exchange of a state’s stability, as a control parameter is varied.
 
@@ -173,19 +417,19 @@ Next, we elaborate on the key role of global bifurcations in identifying robust 
 
 **Figure 5.:** Left panel: Three classes of propagating (time-dependent) patterns: Oscillatory waves, an excitable pulse, and a front wave (a.k.a. a traveling front); orange and black colors correspond to maximal and minimal values of the solutions, respectively. Right panel: The spatial variation of key variables across a wave (e.g., the variation in fluorescence intensity from front to back) can be represented by a trajectory in some high-dimensional ‘phase space’ spanned by the model variables (here simplified to a 2D cartoon) connecting the back state to the front state (see text), or varying periodically across the wave. Dots correspond to steady states and arrows describe flows in their vicinity. Classification of the associated local/global bifurcations through which such solutions form. Note that in phase space various oscillatory solutions all have the same geometric flow, described by a limit cycle (periodic orbit).
 
-## Bifurcations and waves in spatially extended systems
+#### Bifurcations and waves in spatially extended systems
 
 After describing the basic ideas underlying the bifurcation theory of ODE systems, we now take into account space dependence that may arise due to transport and mechanical coupling. Mathematically, this is reflected in PDE-type model equations that inherently have infinite degrees of freedom due to spatial modes and dependence on boundary conditions. There are several rigorous methodologies for PDE analysis (e.g., multiple timescale reduction and singular perturbation theory). However, similarly to the phase-space method, also other advanced reduction methods can be efficiently applied in a few simple cases of two-variable toy models expressed via polynomial-type terms that mimic the realistic interactions, such as in the FitzHugh–Nagumo, Schnakenberg, and Gray–Scott reaction-diffusion systems. More involved and detailed models of actin dynamics are typically studied by direct numerical integration. Consequently, lacking theory, it is difficult to determine which of the solutions are sensitive to model details and which are robust (structurally stable).
 
-Even though bifurcation theory for spatially extended systems is significantly less advanced than for ODEs (Cross and Hohenberg, 1993; Sandstede and Scheel, 2000; Pismen, 2006; Meron, 2015), in some cases, mathematics can still provide valuable insights. Such cases often rely on specific properties of solutions such as traveling waves or pulses, where PDEs can be reduced to ODEs that describe the (fixed) shape of a solution along a transformed coordinate (say ξ), instead of the spatiotemporal dependence (e.g., using a comoving frame transformation such as ξ=x±v⁢t, where v is the wave speed). One then seeks bifurcations that depict the onset and demise of such wave patterns. Following these ideas, most of the propagating actin patterns can be classified (using phase-space reduction) according to their oscillatory, excitable, or bistable properties (cf. Allard and Mogilner, 2013). Figure 5 summarizes these three classes; note that we exclude here the transient actin polymerization dynamics that converge to steady-state patterns, as discussed in Bhattacharya et al., 2020.
+Even though bifurcation theory for spatially extended systems is significantly less advanced than for ODEs (Cross and Hohenberg, 1993; Sandstede and Scheel, 2000; Pismen, 2006; Meron, 2015), in some cases, mathematics can still provide valuable insights. Such cases often rely on specific properties of solutions such as traveling waves or pulses, where PDEs can be reduced to ODEs that describe the (fixed) shape of a solution along a transformed coordinate (say $ξ$), instead of the spatiotemporal dependence (e.g., using a comoving frame transformation such as $ξ=x\pmv⁢t$, where $v$ is the wave speed). One then seeks bifurcations that depict the onset and demise of such wave patterns. Following these ideas, most of the propagating actin patterns can be classified (using phase-space reduction) according to their oscillatory, excitable, or bistable properties (cf. Allard and Mogilner, 2013). Figure 5 summarizes these three classes; note that we exclude here the transient actin polymerization dynamics that converge to steady-state patterns, as discussed in Bhattacharya et al., 2020.
 
 However, these classifications do not resolve the origin and the mechanisms of the emerging actin waves. For example, many of the observed actin patterns are of a spiral form. Yet, since spirals share universal properties (Sandstede and Scheel, 2020) and can form in oscillatory, excitable, and bistable systems, it is difficult to decipher to which dynamic class the system belongs. Moreover, there are also basic subtleties that are frequently overlooked when relying on ODE classifications, such as secondary (space-dependent) instabilities (Cross and Hohenberg, 1993). This directly impacts attempts to determine the lowest number of variables needed to describe a certain phenomenon in a qualitative (generic) manner. For example, as has been shown in Figure 4B, in ODEs a steady state can lose stability to oscillations via the so-called Hopf bifurcation while in PDEs, oscillations can arise via two different mechanisms, leading to three qualitatively different patterns. The first type is the natural extension to homogeneous oscillations (HO), a.k.a. Hopf bifurcation with a zero wavenumber (infinite wavelength since a wavenumber is proportional to the inverse of a wavelength). As for ODEs, also for PDEs the minimal setting is a two-variable system. The second type is a Hopf bifurcation with a finite wavenumber (or finite wavelength), where the resulting oscillations are counter-propagating traveling waves (TW) and standing waves (SW); for more details, see Knobloch, 1986. In Figure 5, we display these three oscillatory patterns (HO, TW, SW) in a spatially extended system. In contrast to the zero wavenumber Hopf bifurcation, the finite wavenumber Hopf bifurcation requires a three-variable system (Yochelis et al., 2008; Stich et al., 2009; Anma et al., 2012; Hata et al., 2014; Villar-Sepúlveda and Champneys, 2023). In Box 4, we provide additional heuristic details about the richness of the primary finite wavenumber Hopf bifurcation. More advanced related topics, mixed-mode solutions, secondary instabilities, and conserved quantities are detailed in Knobloch, 1986; Knobloch, 1992.
 
 To summarize, while the bifurcation theory of PDEs is still a developing field, especially in nonlinear regimes, it has matured to study some of the actin wave phenomena, as will be briefly demonstrated by examples in the following. Yet, further extensions are needed, especially in the broad context of mechano-chemical feedback (e.g., see Ben Isaac et al., 2013), where nonlocal interactions, advective flows, and changing geometries are coupled to reaction-diffusion dynamics.
 
-## Insights obtained using bifurcation theory
+### Insights obtained using bifurcation theory
 
-## Linking cell responses to model mechanism
+#### Linking cell responses to model mechanism
 
 In recent years, new tools have been developed for prodding, stimulating, and manipulating cell behavior, such as optogenetics, where light signals activate one or another regulator in a highly localized manner inside a cell (see O’Neill and Gautam, 2014; O’Neill et al., 2016; Meshik et al., 2018; Hadjitheodorou et al., 2021). This has resulted in rich data sets connecting the strength, size, and timing of the stimulus to resultant cell responses.
 
@@ -197,7 +441,7 @@ The question is how to understand cell responses from such data sets, and what s
 
 To date, a full PDE bifurcation analysis has not yet been applied to most biochemically regulated actin wave models. The shortcut of LPA has been used to explore how parameters such as basal GTPase activation rate (GEF activity) and F-actin negative feedback (GAP activity) affect the formation of various dynamic patterns (Holmes et al., 2012; Mata et al., 2013). One example of a two-parameter LPA bifurcation diagram from Liu et al., 2021 is shown in Figure 6B. In principle, these predictions can be tested against data that inhibits/overexpresses an F-actin-associated GAP (like RGA3/4) or similarly manipulates the corresponding GEF.
 
-## Identification of circular dorsal ruffles as front phenomena
+#### Identification of circular dorsal ruffles as front phenomena
 
 As has been shown throughout this review, actin waves are abundant in cells and arise in a wide variety of forms. However, since in experiments these waves are fully developed, that is, the instability at the onset of wave formation is typically not observed, there is an inherent difficulty to classify them and determine whether they arise via the same generic mechanism or whether there are fundamentally different coexisting classes of wave patterns that are generated via distinct biochemical circuits (cf. Michaud et al., 2022).
 

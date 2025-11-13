@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.40580.001 Severe forms of α-thalassaemia, haemoglobin H disease and haemoglobin Bart’s hydrops fetalis, are an important public health concern in Southeast Asia. Yet information on the prevalence, genetic diversity and health burden of α-thalassaemia in the region remains limited. We compiled a geodatabase of α-thalassaemia prevalence and genetic diversity surveys and, using geostatistical modelling methods, generated the first continuous maps of α-thalassaemia mutations in Thailand and sub-national estimates of the number of newborns with severe forms in 2020. We also summarised the current evidence-base for α-thalassaemia prevalence and diversity for the region. We estimate that 3595 (95% credible interval 1,717–6,199) newborns will be born with severe α-thalassaemia in Thailand in 2020, which is considerably higher than previous estimates. Accurate, fine-scale epidemiological data are necessary to guide sustainable national and regional health policies for α-thalassaemia management. Our maps and newborn estimates are an important first step towards this aim. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Severe forms of α-thalassaemia, haemoglobin H disease and haemoglobin Bart’s hydrops fetalis, are an important public health concern in Southeast Asia. Yet information on the prevalence, genetic diversity and health burden of α-thalassaemia in the region remains limited. We compiled a geodatabase of α-thalassaemia prevalence and genetic diversity surveys and, using geostatistical modelling methods, generated the first continuous maps of α-thalassaemia mutations in Thailand and sub-national estimates of the number of newborns with severe forms in 2020. We also summarised the current evidence-base for α-thalassaemia prevalence and diversity for the region. We estimate that 3595 (95% credible interval 1,717–6,199) newborns will be born with severe α-thalassaemia in Thailand in 2020, which is considerably higher than previous estimates. Accurate, fine-scale epidemiological data are necessary to guide sustainable national and regional health policies for α-thalassaemia management. Our maps and newborn estimates are an important first step towards this aim.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -42,7 +42,7 @@ The aims of this study are therefore three-fold: i) to compile a geodatabase of 
 
 ## Results
 
-## The database
+### The database
 
 Our keyword searches yielded a total of 868 unique potential sources of data on α-thalassaemia prevalence and/or genetic diversity in 10 Southeast Asian countries: Brunei Darussalam, Cambodia, Indonesia, Lao People’s Democratic Republic, Malaysia, Myanmar, Philippines, Singapore, Thailand and Vietnam (Figure 1—figure supplement 1). A further 74 potential data sources were identified by one of the authors (SE) from local Thai journals and independently double-checked for inclusion into the study (CH). Of all these sources, 75 met our inclusion criteria and were included in the final database. Due to some sources reporting estimates for more than one population, data were available for 106 individual population samples: 58 from the online literature search and 48 from the local literature. A detailed description of the database is provided in Appendix 5.
 
@@ -50,21 +50,49 @@ Forty-six surveys provided data on α-thalassaemia gene frequency alone, two pro
 
 Prevalence surveys varied considerably with regards to the α-thalassaemia alleles and/or genotypes that were tested for or reported upon; whilst some reported allele frequencies for α0-, α+- and αND-thalassaemia, others provided data for only one or two of these. To maximise use of the available allele frequency data, whilst avoiding the incorporation of potentially biased estimates for overall α-thalassaemia allele frequency, we generated separate maps for each of the three major forms of α-thalassaemia – that is, α0-, α+- and αND-thalassaemia (Figure 1A,B and C, respectively). α0-thalassaemia was the most extensively studied form (n = 97), followed by αND-thalassaemia (n = 49) and then α+-thalassaemia (n = 47).
 
-## Continuous allele frequency maps for Thailand
+![Figure 1.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-v1.jpg)
+
+**Figure 1.:** (A) α0-thalassaemia, (B) α+-thalassaemia and (C) αND-thalassaemia. A spatial jitter of up to 0.30 latitude and longitude decimal degree coordinates was applied to allow visualisation of spatially duplicated data points. Colour intensity indicates allele frequency; circle size represents the size of the survey size. Surveys that could only be mapped at the national level are indicated by a black star.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Here, we defined the Southeast Asian region according to the member states of the Association of Southeast Asian Nations (ASEAN) (http://asean.org/asean/asean-member-states/).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** In both panels, the shape of the data points indicates the type of data provided by the survey, the colour indicates whether the survey was found in our online literature search or in local journals, and size represents the sample size of the survey. In (A) a spatial jitter of up to 0.30 latitude and longitude decimal degree coordinates was applied to allow visualisation of spatially duplicated data points.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Only the most common variants for α+-thalassemia (-α3.7and -α4.2) and α0-thalassemia (--MED and --SEA) are shown for each region. The variants that appear in parentheses are those for which the data used to make this map are limited.
+
+### Continuous allele frequency maps for Thailand
 
 Data for Thailand and its neighbouring countries (Cambodia, Lao PDR, Malaysia and Myanmar) formed the evidence-base for a Bayesian geostatistical model and are presented in Figure 2—figure supplement 1. The total number of data points available for α0-, α+- and αND-thalassaemia was 88, 37 and 42, respectively. The data were used to generate 1 km x 1 km maps of allele frequencies of α0-, α+- and αND-thalassaemia in Thailand (Figure 2). One hundred realisations of the model were performed to generate a posterior predictive distribution (PPD) for each 1 km x 1 km pixel. The mean of the PPD is displayed, along with the 95% credible interval as a measure of model uncertainty.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig2-v1.jpg)
+
+**Figure 2.:** Panels A to C display the mean of the posterior predictive distribution (PPD) of 100 realisations of the geostatistical model. Panels D to F display the 95% credible interval of the PPD. Each row corresponds to a different α-thalassaemia form: α0-thalassaemia (A and D); α+-thalassaemia (B and E) and αND-thalassaemia (C and F). Figure 2—figure supplement 1 shows the observed data used to construct the models and Figure 2—figure supplement 2 displays the province names for reference.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) α0-thalassaemia, (B) α+-thalassaemia and (C) αND-thalassaemia. A variable spatial jitter was applied to allow visualisation of spatially duplicated data points. Colour intensity indicates allele frequency.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The Bangkok Metropolitan Region, which includes Bangkok City and surrounding provinces, is shaded in red, with Bangkok City shaded a darker red.
 
 The maps for α0- and α+-thalassaemia indicate clear spatial heterogeneity in allele frequencies, with ranges of 0.57–4.46% and 2.43–15.03%, respectively (Figure 2A,B). Heterogeneity is greatest in the north of the country. For α0-thalassaemia, while large parts of the northernmost provinces of Chiang Rai, Phayao and Nan have predicted allele frequencies of up to 2%, allele frequencies for the neighbouring provinces of Chiang Mai, Lampang and Phrae are often twice as high (see Figure 2—figure supplement 2 for a reference map of Thailand provinces). The allele is also predicted at frequencies of up to 4% in the northeast of the country, along a belt across most of the north of the country and in Chonburi and Rayong provinces in central Thailand. Allele frequencies below 1% are predicted throughout the southern zone. α+-thalassaemia has its highest predicted allele frequencies across the whole of the north and northeastern zones. Predicted allele frequencies of αND-thalassaemia range between 1.57% and 1.65% only.
 
 Model uncertainty is greatest in areas where data are scarce (e.g. southern Thailand and along the border with Myanmar) or where there is heterogeneity in the available data (e.g. in Chiang Mai and the surrounding area). Overall, uncertainties are higher for α+-thalassaemia than for α0-thalssaemia or αND-thalassaemia, which is partly due to the wider range of observed frequencies for this form. For α0-thalassaemia, the highest level of uncertainty is 9% and is found in Chumphon and Ranong provinces in southern Thailand and Kanchanaburi and Tak in the westernmost part of the country. For α+-thalassaemia, the highest uncertainty (up to 23%) is observed in the northeastern zone and in the north. Uncertainty for αND-thalassaemia is patchy and ranged from 1.5% in central and northern Thailand to 2.5% in southern and northeastern Thailand. The results of the 10-fold cross-validation procedure reveal an average mean absolute error of the predictions of 0.93%, 4.10% and 2.30%, for α0-, α+- and αND-thalassaemia, respectively. The average correlation between the observed and predicted values is 0.74 (0.62–0.83), 0.71 (0.49–0.85) and 0.47 (0.17–0.69), respectively.
 
-## Estimates of number of affected newborns in Thailand
+### Estimates of number of affected newborns in Thailand
 
 Estimates of the number of newborns born with a severe form of α-thalassaemia (i.e. Hb Bart’s hydrops fetalis and HbH disease) in Thailand in 2020 were generated by pairing our allele frequency predictions to high-resolution demographic data for the country. We estimate that the number of Hb Bart’s hydrops fetalis births in the country will be 423 (CI: 184–761) in 2020. The number of new cases of HbH disease is estimated to be 3,172, including 2674 (CI: 1,296–4,491) deletional and 498 (CI: 237–947) non-deletional cases. The highest absolute burden of hydrops fetalis is predicted in Bangkok City (57 [CI: 13–151]) (Figure 2—figure supplement 2), with its high population density, and Udon Thani (23 [CI: 6–66]) in the northeastern zone, where some of the highest α0-thalassaemia allele frequencies are predicted. Other provinces with a comparatively high burden include: Chiang Mai in the north of the country; Khon Kaen, Sakon Nakhon and Ubon Ratchathani in the northeast; and Chon Buri, Samut Prakan and Nonthaburi close to Bangkok City. The estimated number of hydrops fetalis births in these provinces range between 10 and 19. For HbH disease, the highest burden is predicted in northeast Thailand for both the deletional and non-deletional forms. Bangkok City is predicted to have the highest burden of HbH disease (301 [CI: 94–639] for deletional HbH disease and 68 [CI: 25–148] for non-deletional HbH disease).
 
 To directly compare estimates generated using our methodology with those previously published by Modell and Darlison, we also calculated estimates using population and birth rate data for 2003 (Appendix 3). Modell and Darlison estimated 1017 and 2515 births to be affected by Hb Bart’s hydrops fetalis and HbH disease, respectively, in 2003. Using population data from the same year paired with our model-based maps, and assuming no consanguinity, we estimate 709 and 5469 newborns to be born with Hb Bart’s hydrops fetalis and HbH disease in the country. As Modell and Darlison included a population coefficient of consanguinity (F) in their calculations, we examined the effect that this would have on our estimates. We found that they do not change considerably (951 and 5,409), when a value of F of 0.1, a high value for the region (www.consang.net), is incorporated. Our estimates are therefore consistent with those by Modell and Darlison for Hb Bart’s hydrops fetalis. However, they suggest that the burden of HbH disease in Thailand may have previously been underestimated. Moreover, whilst Modell and Darlison did not estimate the burden of non-deletional forms of HbH disease, our estimates suggest that 15% of the 5469 neonatal cases were of non-deletional types, which are usually associated with more severe phenotypes.
 
-## Overall distribution of α-thalassaemia across Southeast Asia
+### Overall distribution of α-thalassaemia across Southeast Asia
 
 In our database for all of Southeast Asia, the number of surveys that tested for all three forms of α-thalassaemia was 40. Amongst these, the overall α-thalassaemia gene frequency ranged from 0% in populations from peninsular Malaysia to 35.4% in Preah Vihar, Cambodia (Munkongdee et al., 2016). A higher allele frequency of 49% was also reported in the So ethnic group from Khammouane Province in Lao PDR, although the sample size for this study was small (n = 50) (Sengchanh et al., 2005). Appendix 5—table 2 shows the range of allele frequencies observed for the different α-thalassaemia forms (α0-, α+- and αND-thalassaemia) in each country.
 
@@ -74,25 +102,25 @@ For α0-thalassaemia, the highest allele frequencies were observed in Thailand (
 
 The observed allele frequency of αND-thalassaemia ranged between 0% in various locations across Malaysia and 16.25% in central Peninsular Malaysia (Figure 1C, Figure 1—source data 3). Within Thailand, the highest reported allele frequencies of around 7% were observed in Khon Kaen in the northeast and Chachoengsao in central Thailand. In Cambodia and Vietnam, αND-thalassaemia allele frequencies of up to 8% and 14.3% were reported, respectively, in surveys in which α0-thalassaemia was found to be absent, whilst in other parts of these countries, the two forms were found to co-exist at similar allele frequencies (e.g. around 2.5% in Binh Phuoc and Khanh Hoa provinces in Vietnam).
 
-## Genetic diversity of α-thalassaemia across Southeast Asia
+### Genetic diversity of α-thalassaemia across Southeast Asia
 
 Maps of the genetic diversity of α-thalassaemia across Southeast Asia are shown in Figures 3–6. Figure 3 (Figure 3—source data 1) displays surveys that included all three α-thalassaemia forms (α0-, α+- and αND-thalassaemia), allowing relative proportions of each of the forms to be calculated without giving specific variant details. Figures 4–6 (Figure 4—source data 1, Figure 5—source data 1, Figure 6—source data 1) display surveys that provided information on the frequencies of specific α-thalassaemia variants (e.g. --SEA, -α3.7, etc.). For these, the variants that were tested for differ between surveys. Some surveys are included in both Figure 3 and Figures 4–6. For the latter figures, the region has been divided to improve visualisation of the data.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig3-v1.jpg)
 
-**Figure 3.:** 0-, α+- and αND-thalassaemia in Southeast Asia.Three surveys were mapped at the national level (indicated by a white star). The size of the pie charts reflects survey size.10.7554/eLife.40580.015Figure 3—source data 1.Figure 3, a map showing the proportions of α0-, α+- and αND-thalassaemia in Southeast Asia.Reported allele frequencies (converted to percentages here) and sample size were used to calculate the number of chromosomes bearing each form of α-thalassaemia. Sample size was multiplied by two to obtain the total number of chromosomes in the study sample. In total, 40 surveys included genetic diversity information for the three α-thalassaemia forms.
+**Figure 3.:** Three surveys were mapped at the national level (indicated by a white star). The size of the pie charts reflects survey size.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig4-v1.jpg)
 
-**Figure 4.:** Given the high number of surveys in northeast Thailand, this region has been magnified. The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. α0-thalassaemia mutations are shown in red, α+-thalassaemia mutations in blue and αND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line.10.7554/eLife.40580.017Figure 4—source data 1.Figure 4, a map showing the proportions of specific α-thalassaemia variants in Thailand.'NA' indicates those variants that were not tested for in the survey. In Thailand, 29 surveys included genetic diversity information for specific α-thalassaemia variants.
+**Figure 4.:** Given the high number of surveys in northeast Thailand, this region has been magnified. The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. α0-thalassaemia mutations are shown in red, α+-thalassaemia mutations in blue and αND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig5-v1.jpg)
 
-**Figure 5.:** The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. α0-thalassaemia mutations are shown in red, α+-thalassaemia mutations in blue and αND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line. Data points are coloured by country, using the same colour scale as that in Figure 1—figure supplement 1.10.7554/eLife.40580.013Figure 5—source data 1.Figure 5, a map showing the proportions of specific α-thalassaemia variants in Cambodia, Lao PDR, Myanmar and Vietnam.'NA' indicates those variants that were not tested for in the survey. In total, 13 surveys included genetic diversity information for specific α-thalassaemia variants in these countries.
+**Figure 5.:** The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. α0-thalassaemia mutations are shown in red, α+-thalassaemia mutations in blue and αND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line. Data points are coloured by country, using the same colour scale as that in Figure 1—figure supplement 1.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig6-v1.jpg)
 
-**Figure 6.:** The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. α0-thalassaemia mutations are shown in red, α+-thalassaemia mutations in blue and αND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line. Data points are coloured by country, using the same colour scale as that in Figure 1—figure supplement 1.10.7554/eLife.40580.019Figure 6—source data 1.Figure 6, a map showing the proportions of specific α-thalassaemia variants in Indonesia, Malaysia and Singapore.'NA' indicates those variants that were not tested for in the survey. In total, 14 surveys included genetic diversity information for specific α-thalassaemia variants in these countries.
+**Figure 6.:** The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. α0-thalassaemia mutations are shown in red, α+-thalassaemia mutations in blue and αND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line. Data points are coloured by country, using the same colour scale as that in Figure 1—figure supplement 1.
 
 α+-thalassaemia most consistently constituted the highest proportion of α-thalassaemia, although there were some surveys in which αND-thalassaemia was the predominant form (e.g. central Vietnam and in parts of Malaysia). In Figure 3, areas where the observed relative proportion of α0-thalassaemia was greatest include: Chiang Mai and Phayao provinces in north Thailand, Kalasin in northeast Thailand, Vientiane in Lao PDR, Kuala Lumpur and Selangor in Malaysia, Singapore and Jakarta in Indonesia. The α0-thalassaemia allele was absent in the survey from Malaysian Borneo as well as in central Vietnam and central Lao PDR. In certain areas, α0- and αND-thalassaemia together accounted for the majority of α-thalassaemia (e.g. ~75% in Kalasin in Thailand,~60% in Kuala Lumpur and Jakarta and ~53% in Khon Kaen and Chachoensao in Thailand and Vientiane in Lao PDR). Some of these areas also correspond to where the highest allele frequencies of these alleles are found, for example, northeast Thailand and the Thailand-Lao PDR border.
 
@@ -104,7 +132,7 @@ Throughout the region, --SEA was the dominant α0-thalassaemia mutation, and in 
 
 α-thalassaemia is a neglected public health problem whose burden has, to date, been largely overlooked, but for which morbidity is expected to increase in the coming decades as a result of the epidemiological transition, whereby acute infectious disease is replaced by chronic disease as the predominant cause of morbidity and mortality (Piel and Weatherall, 2014; Weatherall, 2011). Moreover, country reports (e.g. from Malaysia) indicate a shift in the age distribution of thalassaemia patients towards older ages (Ibrahim, 2012). As the burden increases, there will be greater demand for resources, including healthcare facilities and staff, genetic counselling and drugs, to treat and manage affected patients. This is particularly true for countries in Southeast Asia as well as the Mediterranean, where severe forms of α-thalassaemia (i.e. α0-thalassaemia) are found.
 
-## Comparison with existing maps and population estimates
+### Comparison with existing maps and population estimates
 
 The model-based maps for Thailand presented here are, to our knowledge, the first spatially continuous maps of the distribution of α-thalassaemia in any country. Our newborn estimates represent the first evidence-based estimates of specific forms of α-thalassaemia disease amongst newborns since 2003 (although the study in which they were reported was published in 2008) (Modell and Darlison, 2008) and the first estimates at sub-national level. Importantly, whilst there are currently no estimates of the number of stillbirths that will occur in Thailand in 2020, our estimate of the number of Hb Bart’s hydrops fetalis births represents more than 10% of the 3697 stillbirths estimated for 2015 (Blencowe et al., 2016).
 
@@ -116,13 +144,13 @@ Our descriptive maps represent the first detailed cartographic representations o
 
 The maps are broadly consistent with early narrative reviews of the gene frequency of α-thalassaemia in the region (Fucharoen and Winichagoon, 1987), showing a clear north-to-south trend of decreasing allele frequencies of α0- and α+-thalassaemia and a patchier distribution of αND-thalassaemia. However, our maps also demonstrate a severe lack of data on the allele frequency of α-thalassaemia across large parts of Southeast Asia, including in Myanmar, northern Lao PDR, northern Vietnam, Indonesia, Philippines and Brunei. This impedes our ability to assess the fine-scale burden of α-thalassaemia, making efficient public health planning for its control difficult, and limits our ability to track progress in the prevention and management of the disorder.
 
-## Patterns of genetic variation and their public health implications
+### Patterns of genetic variation and their public health implications
 
 The pattern of genetic diversity observed in this study indicates variable distributions of mild and severe α-thalassaemia forms. Reasons for this are unclear. However, high variant heterogeneity has been observed for other genetic disorders (e.g. G6PD deficiency) in Southeast Asia, (Howes et al., 2013) which might suggest a similar underlying cause. In their global study, Howes et al. noted that G6PD variants were most diverse in East Asia and the West Pacific, where P. falciparum parasites show strong population structure with lower genetic relatedness between populations in the region. Indeed, P. falciparum has been shown to display genetically structured populations within Thailand alone. (Pumpaibool et al., 2009) It is possible that the evolutionary dynamics between P. falciparum and haemoglobin variants, including α-thalassaemia, are more complex than we currently appreciate.
 
 The observed spatial distributions of the different α-thalassaemia forms and variants has important implications for the design of newborn screening programmes with regards to the preferred diagnostic algorithm and allocation of treatment and management service provision. Areas with the highest proportions of co-occurring severe α-thalassaemia forms (i.e. α0-thalassaemia and αND-thalassaemia) may experience a higher prevalence of the severe non-deletional form of HbH disease. Furthermore, the predominance of Hb CS in surveys from Malaysia and Vietnam suggests that the health burden of α-thalassaemia in these areas may be greater than previously thought. Hb CS is a mutation at the termination codon of the α2-globin gene, which, in a normal individual, accounts for three-quarters of overall α-globin production (Liebhaber and Kan, 1981; Orkin et al., 1981). As a result, α2-globin gene mutations, such as Hb CS, tend to cause a more severe phenotype (Chui, 2005).
 
-## Model strengths and limitations
+### Model strengths and limitations
 
 The reliability of the model-based maps is intrinsically linked to the quality, quantity and spatial coverage of the data upon which the models are based. We were unable to generate continuous maps for the whole of the Southeast Asian region as data were sparse in large areas. Whilst we are aware that unpublished surveys are likely to be available for most countries of the region, obtaining local data for all of the countries was beyond the scope of this study. Nevertheless, we have demonstrated that substantial additional survey data can be identified in locally published sources and, as a result, highlighted the enormous value of future collaborations to collate local data in other regions.
 
@@ -134,7 +162,7 @@ It is likely that other factors influence the allele frequencies of the differen
 
 Whilst we have calculated the burden of α-thalassaemia in terms of the number newborns born with severe forms in 2020, there are other aspects of the disease burden that would be worth considering pending the availability of more data, for example, milder-forms and their coinheritance with β-thalassaemia, DALY losses from α-thalassaemia, maternal complications (some of which can be life-threatening) (Chui, 2005; Ratanasiri et al., 2009), psychological effects and, in the case of HbH disease, survival data allowing the calculation of all-age population estimates. Furthermore, the estimates presented here do not include compound disorders, such as EA Bart’s and EF Bart’s diseases (HbH disease with heterozygous and homozygous forms of βE, another clinically important structural β-globin variant, respectively), and therefore remain underestimates of the overall burden of α-thalassaemia disorders in Thailand (Galanello, 2013). Finally, the visualisation of our burden estimates are subject to the modifiable area unit problem, whereby the presentation of estimates at the province level likely masks pockets of high burden (Wong, 2009).
 
-## Future prospects and conclusions
+### Future prospects and conclusions
 
 The allele frequency, distribution and genetic variant profile of α-globin forms is only a part of their epidemiological complexity. An improved understanding of the natural history of α-thalassaemia and the factors that modify its clinical outcome will be imperative for establishing better estimates of its burden. This is particularly pertinent in the Southeast Asian region, where the disorder co-exists with β-thalassaemia, including the commonest haemoglobin variant, Hb E. Many studies have shown a positive epistatic interaction between α- and β-thalassaemia, whereby their co-inheritance results in the amelioration of the associated blood disorder (Fucharoen and Weatherall, 2012; Viprakasit et al., 2004).
 
@@ -142,7 +170,7 @@ A detailed assessment of current knowledge on the allele frequency of α-thalass
 
 ## Materials and methods
 
-## Compiling a geodatabase of α-thalassaemia allele frequency and genetic diversity
+### Compiling a geodatabase of α-thalassaemia allele frequency and genetic diversity
 
 A comprehensive search of three major online bibliographic databases (PubMed, ISI Web of Knowledge and Scopus) was performed to identify published surveys of α-thalassaemia prevalence and/or genetic diversity in Southeast Asia (Figure 7). The 10 member states of the Association of Southeast Asian Nations (ASEAN) were used to define the region under study and include: Brunei Darussalam, Cambodia, Indonesia, Lao PDR, Malaysia, Myanmar, Philippines, Singapore, Thailand and Vietnam (Figure 1—figure supplement 1). In addition, for Thailand, articles published in national journals (in Thai) – not included in international bibliographic databases – were manually searched for local surveys. Consistent and pre-defined sets of inclusion criteria for prevalence/allele frequency data and genetic diversity data, outlined in the Appendix 1, were used to identify relevant surveys. Data extracted from Thai journals were independently validated against the inclusion criteria by two of the authors (SE and CH).
 
@@ -150,22 +178,63 @@ A comprehensive search of three major online bibliographic databases (PubMed, IS
 
 **Figure 7.:** Pink diamonds indicate the database and input data; green boxes denote model processes and data visualisation steps; blue rods represent study outputs. .
 
-## Modelling continuous maps of α-thalassaemia allele frequency in Thailand
+### Modelling continuous maps of α-thalassaemia allele frequency in Thailand
 
 We employed a Bayesian geostatistical framework to model the allele frequencies of α0-, α+- and αND-thalassaemia, respectively, in Thailand, where a substantially higher number of surveys were identified. We included data from Thailand and its neighbouring countries (Myanmar, Lao PDR, Cambodia and Malaysia) in order to preclude the possibility of a border effect. Three surveys that were reported only at the national level (one in Thailand and two in Malaysia) were excluded for this part of the analysis. Only geographical location was included as a predictor of α-thalassaemia allele frequency (Figure 7).
 
 For each of the three main forms of α-thalassaemia, a model was fitted using a Bayesian Stochastic Partial Differential Equation (SPDE) approach with Integrated Nested Laplace Approximation (INLA) algorithms developed by Rue et al. (Rue et al., 2009), available in an R-package (www.r-inla.org). The observed allele frequency data were transformed through an empirical logit to facilitate approximation by the Gaussian likelihood. The fitted model was then used to generate predictions at a resolution of 1 km x 1 km for α-thalassaemia allele frequencies for all unsampled locations in Thailand. Uncertainty estimates, measured as the 95% credible interval, for the predictions were calculated using 100 conditionally simulated realisations of the model to generate a posterior predictive distribution (PPD) for each 1 km x 1 km pixel. Full details of the modelling process and model validation procedures, which involved a 10-fold cross validation, are provided in Appendix 2.
 
-## Refining estimates of the annual number of neonates affected by severe disease forms
+### Refining estimates of the annual number of neonates affected by severe disease forms
 
-To generate estimates of the annual number of newborns affected by Hb Bart’s hydrops fetalis syndrome (--/--) and deletional and non-deletional HbH disease (-α/-- and ααND/--, respectively) in Thailand in 2020, we paired the predicted allele frequency maps generated using our Bayesian geostatistical framework with high-resolution birth count data. First, we combined the three allele frequency maps to estimate the frequency of each genotype in each pixel, assuming Hardy-Weinberg proportions for a four-allele system (Equation 1 and Table 1) (Hardy, 1908; Weinberg, 1908).(1)p2+2pq+2pr+q2+2qr+2qs+r2+2rs+s2=1where, p is the allele frequency of α a0-thalassaemia (--), q is the allele frequency of α+-thalassaemia (-α), r is the allele frequency of αND-thalassaemia (ααND) and s is the allele frequency of the wild-type α-globin haplotype (αα).
+**Table 1.**
+ A breakdown of the genotypes for the three clinically important forms of α-thalassaemia – Hb Bart’s hydrops fetalis, deletional HbH disease and non-deletional HbH disease – and the Hardy-Weinberg equilibrium (HWE) proportions used for their calculation.To compare our model output with previous newborn estimates for Hb Bart’s hydrops fetalis and deletional HbH disease, we paired our allele frequency maps with 2003 demographic and birth data and included a measure of consanguinity in our calculations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Disorder</th>
+      <th>HWE proportions</th>
+      <th>Inclusion of population coefficient of consanguinity (F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>--/--</td>
+      <td>Hb Bart’s hydrops fetalis</td>
+      <td>p2</td>
+      <td>p2 + Fp(1 p)</td>
+    </tr>
+    <tr>
+      <td>-α/--</td>
+      <td>Deletional HbH disease</td>
+      <td>2pq</td>
+      <td>2pq(1 F)</td>
+    </tr>
+    <tr>
+      <td>ααND/--</td>
+      <td>Non-deletional HbH disease</td>
+      <td>2pr</td>
+      <td>2pr(1 F)</td>
+    </tr>
+  </tbody>
+</table>
+
+To generate estimates of the annual number of newborns affected by Hb Bart’s hydrops fetalis syndrome (--/--) and deletional and non-deletional HbH disease (-α/-- and ααND/--, respectively) in Thailand in 2020, we paired the predicted allele frequency maps generated using our Bayesian geostatistical framework with high-resolution birth count data. First, we combined the three allele frequency maps to estimate the frequency of each genotype in each pixel, assuming Hardy-Weinberg proportions for a four-allele system (Equation 1 and Table 1) (Hardy, 1908; Weinberg, 1908).
+
+$$
+p^{2}+2pq+2pr+q^{2}+2qr+2qs+r^{2}+2rs+s^{2}=1
+$$
+
+where, p is the allele frequency of α a0-thalassaemia (--), q is the allele frequency of α+-thalassaemia (-α), r is the allele frequency of αND-thalassaemia (ααND) and s is the allele frequency of the wild-type α-globin haplotype (αα).
 
 To calculate birth counts, the 2015–2020 crude birth rate for Thailand was downloaded from the 2017 United Nations (UN) world population prospects (World population prospects, 2017) and multiplied with a high-resolution predicted 2020 population surface, adjusted to UN population estimates, obtained from the WorldPop project (www.worldpop.org.uk, last accessed 23 January 2018) (Tatem, 2017). The predicted genotype frequencies were then paired with the birth count data over 100 conditionally simulated realisations of the geostatistical model and areal estimates at province level calculated, together with 95% credible intervals; their calculation is described in Appendix 3. We also applied our maps to 2003 demographic data, and incorporated consanguinity into our calculations (Table 1), (Vieira et al., 2013) in order to more directly compare estimates generated using our method with previous estimates (Modell and Darlison, 2008). We used the online global database of consanguinity estimates (www.consang.net) to identify an upper limit for the coefficient of consanguinity for Thailand (F = 0.1) (Bittles and Black, 2015). However, due to important variations of this coefficient between ethnic groups and the lack of reliable or high-resolution data for consanguinity, we chose not to include it in our main calculations.
 
-## Summarising the current evidence-base for α-thalassaemia gene frequency in Southeast Asia
+### Summarising the current evidence-base for α-thalassaemia gene frequency in Southeast Asia
 
 Cartographic representations of the identified prevalence surveys were generated using ArcGIS 10.4.1 (ESRI Inc, Redlands, CA, USA). The descriptive maps reflect the spatial distribution of the prevalence surveys, along with their respective sample sizes and observed α0-, α+- and αND-thalassaemia allele frequencies. Other features of the database, including the temporal distribution of the surveys, the identity of the populations studied (e.g. community, pregnant women, newborns, etc.) and the contribution of local Thai surveys to the evidence-base, were also examined.
 
-## Mapping α-thalassaemia genetic diversity
+### Mapping α-thalassaemia genetic diversity
 
 Maps of the genetic diversity of α-thalassaemia across Southeast Asia were also generated (Figure 6). Given the heterogeneity in the reporting of different α-thalassaemia genotypes, we divided the genetic diversity data into two subtypes: (i) those surveys that only distinguished between the different α-thalassaemia forms (α0-, α+-, and αND-thalassaemia), and (ii) those surveys that contained detailed count data for a range of common mutations. We focused on the 11 mutations that are most commonly reported in Southeast Asia or are part of standard multiplex polymerase chain reaction (PCR) methods: -α3.7, -α4.2, --SEA, --THAI, --MED, --FIL, -(α)20.5, Hb Adana (HBA2:c.179G > A), Hb CS (HBA2:c.427T > C). Hb Paksé (HBA2:c.429A > T), Hb Quong Sze (HbA2:c.377T > C) (Liu et al., 2000). An ‘Other’ category was used for other, rarer α-thalassaemia mutations. For the first data subtype, only surveys that tested for all three α-thalassaemia forms were mapped and the relative proportions of the different forms in the study sample were displayed using pie charts. For the latter, the same approach to that used in Howes et al. (2013) was used; the variant proportions were displayed using bar charts in which all variants that were explicitly tested for were included on the x-axis (Howes et al., 2013). This allowed information regarding the suite of variants that were tested for in the survey to be displayed as well as unambiguous representation of the absence of a variant in the study sample.

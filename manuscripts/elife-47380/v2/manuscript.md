@@ -31,17 +31,33 @@ To identify potential sources of variation that govern phenotypic discordance, w
 
 ## Results
 
-## Embryos with dramatically reduced embryonic length still proceed with normal development
+### Embryos with dramatically reduced embryonic length still proceed with normal development
 
 Scaling is one of the most astonishing features of embryonic patterning in dipteran insects. The expression boundaries of the early patterning genes reside at conserved relative positions among closely related dipteran species, although they differ dramatically in egg size (Gregor et al., 2005). Such inter-species scaling can be attributed to the Bcd gradient of a conserved characteristic length (Gregor et al., 2008). Within the Drosophila species, individual embryos of different size also exhibit scaled pattern as a consequence of adapted Bcd production and degradation rate (Cheung et al., 2011; Cheung et al., 2014). We propose here that another macroscopic variable that the patterning system needs to adapt to in order to ensure scaling is the geometry, or shape of the egg. Given a defined embryonic volume, the embryos can vary significantly in their aspect ratio (AR = embryonic length/embryonic width, Figure 1A). Since Bcd molecules diffuse mainly at the cortical region of the embryo (Gregor et al., 2007b), varying embryonic geometry affects the effective diffusion area, and thus the length and time scales of the morphogen gradient formation (Grimm et al., 2010). Therefore, we first examined how altering embryonic geometry affects embryonic patterning.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig1-v2.jpg)
+
+**Figure 1.:** (A) Distribution of embryonic length in wild type (n = 239) and fat2RNAi (n = 364) embryos. (B) Distribution of embryonic width in wild type (n = 239) and fat2RNAi (n = 364) embryos. (C) Aspect ratio (EL/EW) against embryonic length for each embryo. Black dots denote expected aspect ratio if embryonic volume is conserved (assuming ellipsoidal geometry). (D) Number of nuclei along the AP axis plotted against embryonic length in wild type and fat2RNAi embryos. Line indicates linear regression of all data. (E) En expression in fat2RNAi embryos showing defective dorsal closure (left) or normal morphogenesis (right). Arrows indicate locations of defects. Green dots indicate En stripes. (F) Midsagittal plane of ctrl (top) and fat2RNAi (bottom) embryos expressing eGFP::Bcd in mid n.c. 14. (G) eGFP::Bcd profiles of both ctrl and fat2RNAi embryos plotted as a function of absolute distance from the anterior pole (left) or scaled AP position (right). Each dot represents the average concentration in a single nucleus. Colormap indicates the absolute AP length of each individual. (H) Mean and standard deviation of nuclear intensity within each 2% EL were computed for group of embryos longer (red, n = 27) and shorter (blue, n = 17) than 450 µm. Inset is close-up of profile near embryo midpoint to show the intersection of the two curves. (I) Representative fluorescent in situ hybridization (FISH) against bcd mRNA in wild type (top) and fat2RNAi (bottom) in n.c. 11 embryos. Scale bar, 50 μm. (J) Fluorescent intensity profile of FISH assay along AP axis in n.c. 4 (top) and n.c. 11 (bottom). Normalization to measured fluorescence signal in the region 120 μm from anterior. n = 5, 2 (n.c. 4) and n = 2,2 (n.c. 11) for wild type (red) and fat2RNAi (blue) respectively. Error bars show standard deviation. (K) Fitting of SDD model to experimentally measured Bcd gradient. All parameters, as outlined in Materials and methods, are kept constant, with only change being embryonic geometry. See Materials and methods for details. Lower panel shows intensity difference in experimental measurements and predicted profiles along the AP-axis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Embryonic width plotted vs. embryonic length in three genotypes. (B) Embryo aspect ratio (length/width) for OreR and fat2RNAi embryos measured from live and fixed embryos (n > 200 in all conditions). Error bars, standard deviation. (C) Comparison of mean embryo length and width for OreR (red) and fat2RNAi (blue) embryos collected from live and fixed embryos. Error bars, standard deviation. n > 200 in all conditions. (D) Rate of embryonic hatching, puparation and adult emergence in wild type, fat2RNAi individuals longer or shorter than 400 µm, 6xbcd and 10xbcd embryos. (E) Max projection of Dapi staining in wild type and fat2RNAi embryos. Scale bar, 100 µm. (F) Representative images of in situ against bcd in wild type and fat2RNAi embryos at n.c. 4, 8 and 12. (G) Effect of protein folding time on gradient profiles in SDD model. Predicted functional Bcd concentration in fat2RNAi (blue) and ctrl (red) embryos with fast folding (assuming immediate folding, dashed line) or slow folding (~50 min, solid line) plotted against absolute distance from anterior (top panel) or relative AP positions (mid panel). Same normalization is used as in Figure 1K. The concentration difference in the fast folding scenario at each relative AP position is plotted in the lower panel. Scale bars, 50 µm.
+
 The geometry of each embryo is predetermined during oogenesis when the follicle cells surrounding the egg chamber transform the developing egg from a sphere to an ellipse (Haigo and Bilder, 2011; He et al., 2010b). This process is mediated by the planar cell polarity of the follicle cells and the elliptical shape of the embryos remains unchanged throughout embryogenesis. Here, we used maternal ShRNA to knockdown one of the planar cell polarity core components, atypical cadherin Fat2 specifically in the follicle cells (Horne-Badovinac et al., 2012), and we henceforth refer to these as fat2RNAi embryos. As Fat2 expression is only inhibited within the somatic cells of the egg chamber using traffic jam (tj) >Gal4 driver, the fertilized eggs produced by this perturbation remain genetically intact. This reduces the embryonic length from 510 ± 17 (s.d.) µm in wild type to 432 ± 40 µm in fat2RNAi embryos (Figure 1A), with some embryos as short as 320 μm. Meanwhile, the perturbed embryos show an increased embryonic width (EW) along the dorso-ventral (DV) axis (Figure 1B, 196 ± 5 µm in wild type and 202 ± 11 µm in fat2RNAi). Together, these geometrical variations lead to only a slight reduction of ~8% in the embryonic volume (assuming an ellipsoidal geometry) compared to wild type embryos (Figure 1C; Figure 1—figure supplement 1A–C). The round eggs are fertilizable and continue with proper embryogenesis (Figure 1—figure supplement 1D; Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/47380/elife-47380-video1.mp4.jpg)
+
+**Video 1.:** Wide field movies of wild type (top) and fat2RNAi (bottom) embryos from the onset of gastrulation until hatching.
 
 We examined the nuclear distribution in the blastoderm embryos, as nuclei are the basic units interpreting positional information, and an altered nuclear distribution may affect patterning outcomes. We found that nuclear number along the AP axis decreases proportionally to embryonic length, leaving the inter-nuclear distance unchanged (Figure 1D; Figure 1—figure supplement 1E). In other words, the number of nuclei to interpret AP positional information reduces from 85 ± 4 in wild type to 65 ± 5 in fat2RNAi embryos.
 
 Despite the significant changes in embryonic geometry, the fat2RNAi embryos show invariably eleven Engrailed (En) stripes, demarcating the posterior boundary of each body segment including three thoracic (T1 ~T3) and eight abdominal segments (A1 ~A8; Figure 1E). We noticed that fat2RNAi embryos shorter than 400 µm developed morphological defects in late embryogenesis, where abnormal dorsal closure leads to mismatch between the two lateral sides of the ectoderm (Figure 1E, arrows; Figure 1—figure supplement 1D). However, such local morphological abnormality is likely due to defective tissue morphogenesis as a consequence of limited physical space, rather than patterning errors (Video 2).
 
-## Developmental reproducibility is preserved with a minor impact on scaling under geometrical perturbations
+![Video 2.](https://cdn.elifesciences.org/articles/47380/elife-47380-video2.mp4.jpg)
+
+**Video 2.:** Confocal movies of fat2RNAi embryos expressing en >mCD8::GFP from germband retraction to dorsal closure stages. Two embryos in the movie represent individuals with EL shorter (top) and longer (bottom) than 400 µm. The dashed box indicates mismatch between opposing ectodermal tissue during dorsal closure. The numbers indicate the EL of each embryo.
+
+### Developmental reproducibility is preserved with a minor impact on scaling under geometrical perturbations
 
 Before tackling the consequences of decanalization, we next ask how the AP patterning network, from the initial morphogen gradient formation to gap gene readout, is altered under large geometric perturbations. First, we focus on Bcd, which provides AP positional information in the early embryo. To compare the spatial Bcd concentration profile in different embryonic geometry, we live-imaged eGFP-Bcd fusion protein in both control and fat2RNAi backgrounds, and measured the nuclear Bcd intensity along the AP axis at mid nuclear cycle (n.c.) 14 (Figure 1F). We found that the absolute Bcd concentration is lower in the anterior half of the embryo in fat2RNAi individuals compared to that of control (Figure 1G and H) (p<10−3, two-sided t-test comparing intensity in region 5–15% EL). Further, Bcd profiles from different individuals intersect near the mid region of the embryo, with shorter embryos showing higher Bcd concentration in the posterior region (Figure 1G and H) (p<10−3, two-sided t-test comparing intensity in region 65–75% EL).
 
@@ -49,7 +65,11 @@ The formation of the Bcd gradient depends on the amount and the spatial distribu
 
 Given that the bcd mRNA distribution does not appear substantially different between the wild type and fat2RNAi embryos, what is the cause of the spatial shift in the Bcd profile? We used theoretical modeling to test whether the geometrical changes alone (Umulis and Othmer, 2012) are sufficient to explain the altered Bcd profile. The synthesis , diffusion , degradation (SDD) model of Bcd gradient formation provides an excellent description of the Bcd gradient (Gregor et al., 2007b; Durrieu et al., 2018; Little et al., 2011). A one-dimensional description generally works well for modelling the Bcd gradient (Gregor et al., 2007b; Durrieu et al., 2018). However, the full three-dimensional geometry of the embryo can be important (Mogilner and Odde, 2011), such as in interpreting FRAP (Castle et al., 2011) measurements and explaining differences in the gradient between dorsal and ventral sides of the embryo (He et al., 2010a; Hengenius et al., 2011). Here, we perform our modeling in three-dimensions as our experimental perturbation affects the three-dimension geometry of embryos.
 
-Considering the Bcd concentration [Bcd], Bcd diffusion (D), Bcd degradation rate (μ) and Bcd production rate (J), the SDD model is described by∂tBcd=D∇2Bcd-μBcd+Jfx
+Considering the Bcd concentration [Bcd], Bcd diffusion (D), Bcd degradation rate (μ) and Bcd production rate (J), the SDD model is described by
+
+$$
+\partial_{t}Bcd=D\nabla^{2}Bcd-\muBcd+Jfx
+$$
 
 We use Bcd dynamic parameters D = 4 μm2s−1 and μ = 0.0005 s−1 consistent with the most recent estimates for Bcd dynamics (Durrieu et al., 2018). Note these parameters are based on an one-dimensional SDD model, as such models are typically a reasonable approximation to the formation of the Bcd gradient (Little et al., 2011). f(x) is defined such that little Bcd production occurs greater than 50 μm from the anterior pole (Materials and methods). We solve for [Bcd] on the surface of an ellipsoid, as Bcd transport through the yolk appears to be limited (Gregor et al., 2007b). For each simulation, we keep all dynamic parameters fixed and only change the embryo geometry. In particular, we assume that the Bcd production rate is unchanged in fat2RNAi embryos. Since the embryo volume does not markedly change, this means that the total amount of Bcd is similar in the model for both wild-type and fat2RNAi embryos. We change the width to maintain the experimentally measured aspect ratios (Figure 1C) and account for eGFP folding time (~50 min) (Liu et al., 2013). See Materials and methods for detailed description.
 
@@ -63,25 +83,33 @@ Does the change of the Bcd concentration profile in fat2RNAi embryos impact on t
 
 Using immunofluorescence, we next investigated the impact of geometrical perturbations on the expression domains of other gap genes. In agreement with our results for Hb, the boundary positions of all four gap genes displayed slight shifts in the posterior direction in fat2RNAi embryos (Figure 2C–F). However, the inter-individual variation remains comparable to that of the wild type (Figure 2C–F, bottom row). We conclude that when we manipulate the embryonic geometry to an extent beyond that naturally observed, the reproducibility of the patterning outcomes is preserved. Therefore, the intact early embryonic patterning network is highly robust to variations in embryonic geometry.
 
-## Embryonic length predetermines patterning outcomes in decanalized conditions of increased bcd dosage
+### Embryonic length predetermines patterning outcomes in decanalized conditions of increased bcd dosage
 
 We have demonstrated that fat2RNAi embryos provide an excellent system for testing the role of geometry on patterning networks. Taking advantage of the availability of genetic manipulations in Drosophila, we now use this tool to explore the role of geometric constraints in determining phenotypic outcomes in decanalized conditions: first, in embryos with increased maternal bcd gene dosage; and second in embryos with depleted maternal bcd.
 
 Phenotypic discordance has been observed previously as a consequence of artificially altered maternal bcd dosage. Gradual increase of the maternal bcd gene copies leads to a larger proportion of individuals showing defective patterning (Namba et al., 1997). We wanted to test our hypothesis that the embryonic geometry predetermines patterning outcomes of these individuals. To efficiently increase the Bcd gradient amplitude, we generated a tandem bcd construct, where two copies of the bcd gene are linked by the P2A self-cleaving peptide (Figure 3A). Two transgenic fly lines with two and four genomic insertions of this construct deposit bcd mRNA into embryos at ~3 (6x bcd) and ~5 (10x bcd) fold wild-type amounts, respectively (Figure 3B; Figure 3—figure supplement 1A–C). As Bcd protein counts scale linearly with that of its mRNA, the corresponding amplitude of the Bcd gradient are expected to show the same fold changes (Petkova et al., 2014), as manifested by the posterior displacement of cephalic furrow position (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic illustration of tandem bcd construct. (B) Embryos expressing 2x (wild type), 6x and 10x of maternal bcd fixed at the onset of gastrulation and stained with Phalloidin. Green arrowheads indicate the positions of cephalic furrow (CF) formation. (C) Distribution of defective cuticular segments in non-hatched 10xbcd (top), fat2RNAi, 6xbcd (mid) and fat2RNAi (bottom) embryos. Colormap indicates the frequency of defects in each segmental region. (D) Bar plots showing the distribution of defective cuticular segments in three genotypes. (E) En expression patterns in 4x (top), 6x (mid) and 10x (bottom) bcd embryos with different EL. Green dots, normal En stripes; red dots, defective En stripes; A, anterior; P, posterior. (F) Representative 6xbcd embryos with different EL expressing en >mCD8::GFP. Numbers indicate En stripe identities and red mask indicate defective segmental regions. Scale bar, 100 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Expression level of maternally loaded bcd mRNA in fat2RNAi, 6xbcd and 10xbcd relative to wild type. (B) FISH against bcd in wild type (top) and 10xbcd (bottom) embryos at n.c. 8. Scale bars, 50 µm. (C) Normalized FISH intensity plotted vs. distance from the anterior for wild type, fat2RNAi and 10xbcd embryos at n.c.4 (top) and 11 (bottom). Normalization to measured signal at 120 μm into embryo. (D–E) Representative cuticle patterns of 10xbcd (D) and fat2RNAi﻿, 6xbcd (E) embryos. Red arrowheads indicate defective regions. M, mouthparts and T, thoracic segments.
+
 The ~5 fold bcd overexpression compromises viability to adulthood (Figure 1—figure supplement 1D) and the non-hatched embryos displayed a plethora of defective patterning phenotypes (Figure 3C; Figure 3—figure supplement 1D). Individuals with mild defects frequently displayed missing or fused denticle belts in the fourth abdominal (A4) segment (Figure 3C–D), a positional bias that has been reported previously (Namba et al., 1997). More severe phenotypes showed defects in a spreading region centered about the A4 segment. Meanwhile, embryos show high rate of mouth defects as a consequence of significantly increased local Bcd concentration in the most anterior region (Figure 3C–D; Figure 3—figure supplement 1D). Patterning defects were rarely seen in 3-fold bcd over-expression embryos unless fat2RNAi knockdown is further introduced into this genetic background (Figure 3C–D; Figure 3—figure supplement 1E). A large percentage of these individuals showed abdominal patterning defects, with A4 showing the highest defective frequency (Figure 3C–D). Interestingly, a similar distribution of defective abdominal segments is also seen in the small proportion of non-hatched fat2RNAi individuals (Figure 3C–D).
 
 To understand if embryonic geometry predetermines the severity of phenotypic defects in individuals, we characterized the patterning outcomes using En expression in embryos with various bcd copy number and embryonic length. Individuals with 2-fold bcd overexpression (single insertion of tandem bcd), within the natural range of embryonic geometry, showed intact En expression. However, shorter embryos (<450 µm) frequently presented patterning defects, most commonly in the 6th En stripe (Figure 3E, top panel). Interestingly, this position corresponds to the A4 segment in the cuticle pattern. Comparatively, patterning defects become more pervasive in 3-fold bcd over-expression individuals when embryonic length reduced below 470 µm. The range of defective segments gradually expands from the 6th En stripe to both anterior and posterior regions with decreasing embryonic length (Figure 3E, middle panel and 3F). Further, increasing bcd dosage 5-fold renders patterning processes exceedingly susceptible to reduced embryonic length. Defects are observed in comparatively shorter individuals within the natural range and recurringly the 6th En stripe is the most frequent breaking point in the patterning (Figure 3E, bottom panel).
 
-## The A4 segment is a weak point in the gap gene network due to repression of eve stripe five in short embryos
+### The A4 segment is a weak point in the gap gene network due to repression of eve stripe five in short embryos
 
 The defective abdominal patterning that we observe here is an intuitive result, as both the posterization of gap gene boundaries due to increased bcd dosage and reduced embryonic length lead to reduced number of nuclei along the AP axis in the trunk region. When the number of nuclei falls short of the minimal requirement to fulfill all the different cell identities along the AP axis, certain cell fates become lost. It is surprising, however, that this defect originates at and expands from the same position in all defective embryos, the A4 segment. This positional bias is also reflected in the segmentation gene pattern at the blastoderm stages. While the gap gene boundaries remain roughly at the same scaled positions across different geometries (Figure 4A), the absolute distance between neighboring gap gene expression peaks decreases in response to reduced embryonic length (Figure 4B). This in turn changes the combinatorial inputs to activate downstream pair-rule genes, for example even-skipped (eve). The expression peaks of Kni and Gt are brought into proximity with gradually reducing embryonic length (Figure 4B–C). As Kni and Gt confine the boundaries of eve stripe 5 (Fujioka et al., 1999), the expression of this eve stripe is over-repressed (Figure 4C, asterisk). This results in the loss of correct cell fate at this position, corresponding to the future A4 segment. With further reduced embryonic length, a larger percentage of individuals fail to activate Kni and Gt in the trunk region (Figure 4B, green crosses; Figure 4C, arrowhead), leading to defects across a broader range.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig4-v2.jpg)
 
-**Figure 4.:** bcd overexpression.(A–B) Embryonic length of 6xbcd individuals plotted against the scaled (A) or absolute (B) AP position of four gap gene boundaries (Hb, blue; Gt, magenta; Kr, red and Kni, green). Data from every 30 µm EL interval were binned to compute mean and s.d. and the colored areas are generated by connecting mean values of different EL ranges. Dashed line indicates posterior boundary of individuals; green and magenta crosses overlapping the dashed line indicate individuals with corresponding EL not expressing Kni and Gt, respectively. (C) Representative segmentation gene expression in 6xbcd embryos with different EL. Asterisk indicates repressed Eve stripe five and arrowhead indicates failed activation of Kni. Scale bar, 100 µm.
+**Figure 4.:** (A–B) Embryonic length of 6xbcd individuals plotted against the scaled (A) or absolute (B) AP position of four gap gene boundaries (Hb, blue; Gt, magenta; Kr, red and Kni, green). Data from every 30 µm EL interval were binned to compute mean and s.d. and the colored areas are generated by connecting mean values of different EL ranges. Dashed line indicates posterior boundary of individuals; green and magenta crosses overlapping the dashed line indicate individuals with corresponding EL not expressing Kni and Gt, respectively. (C) Representative segmentation gene expression in 6xbcd embryos with different EL. Asterisk indicates repressed Eve stripe five and arrowhead indicates failed activation of Kni. Scale bar, 100 µm.
 
-## AP patterning of bcd mutants correlates with embryonic length
+### AP patterning of bcd mutants correlates with embryonic length
 
 We have shown that embryonic geometry predicts individual patterning outcomes under increased bcd dosage. To understand if embryonic geometry is a general factor underlying phenotypic discordance in decanalized conditions, we asked how geometrical perturbation influences phenotypic outputs in the absence of Bcd inputs. This question is motivated by the significant phenotypic variation observed among embryos derived from females carrying the same bcd null allele (Frohnhöfer and Nüsslein-Volhard, 1986; Frohnhofer and Nusslein-Volhard, 1987). For example, the individuals derived from bcdE1 homozygous females show highly variable pattern in the perspective A1 to A5 segments, manifesting in either fusion or depletion of various number of denticle belts.
 
@@ -89,13 +117,45 @@ To systematically understand the inter-individual phenotypic variation among bcd
 
 The cuticular pattern of the bcdKO allele qualitatively recapitulates that of bcdE1 (Figure 5—figure supplement 1A–C). While the anterior embryonic patterning is entirely defective, the patterning defects in posterior regions are more variable. The number of normal abdominal denticle belts in each embryo ranges from three (A6 - A8) to seven (A2 - A8), with four intact abdominal segments (A5 –A8) being the most frequently observed phenotype (Figure 5A). Structures indicating partially differentiated abdominal segments can be observed in the anterior regions of the bcdKO embryos. However, these structures do not recapitulate any of the wild-type denticle belts (Figure 5—figure supplement 1B). Further, we observed and classified the variable phenotypes of the duplicated posterior spiracles according to the completeness of the organ morphogenesis (Figure 5B; Figure 5—figure supplement 1D). Interestingly, the fully developed ectopic spiracle organ (Figure 5—figure supplement 1D (i)) is only observed in embryos showing less than six intact abdominal segments, while most frequently observed in individuals with three intact abdominal segments (Figure 5A, dashed bar area). This indicates correlation between the patterning outcomes of the abdominal regions and the ectopic spiracles.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig5-v2.jpg)
+
+**Figure 5.:** (A) Phenotypic frequency showing different number of normal abdominal segments in bcdKO mutant individuals (n = 202). Dashed area indicates proportion of embryos showing fully developed ectopic spiracles (see Figure 5—figure supplement 1D(i)). (B) Phenotypic frequency of different ectopic spiracle morphology as shown in Figure 5—figure supplement 1D (n = 168). (C) Variation of gap gene boundary positions in wild type vs. bcdKO embryos. Error bars are computed by bootstrapping with data shown in Figure 5—figure supplement 1E–H. (D) Representative cuticle patterns of fat2RNAi, bcdKO embryos within different ranges of embryonic length, from left to right, 330–360, 360–390, 390–420, 420–450, and 450–480 µm. Stars indicate normal abdominal segments. (E) Number of normal abdominal segments plotted against EL range of each individual. (F) En expression in wild type embryo. Green dots indicate En stripes. (G) Representative images of fat2RNAi, bcdKO embryos showing different number of En stripes. Magenta dots indicate En stripes. Scale bar, 100 µm. (H) Number of En stripes plotted vs. EL in individuals from three genotypes. Magenta triangles indicate individuals showing defective morphogenesis at the end of dorsal closure; cyan triangles indicate normal morphogenesis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative cuticle pattern of wild type individual. Black asterisks highlight normally formed denticle belts. (B) Representative cuticle patterns in bcdKO mutant individuals. Blue asterisks denote aberrant denticle belts. (C) Representative cuticle patterns in bcdE1 mutant individuals. (D) Various phenotypes of ectopic posterior spiracle observed in the anterior region of the bcdKO embryos. Arrows point to ectopic spiracles showing complete morphogenesis (i), partial morphogenesis (ii), only primordial structures (iii), and no ectopic spiracle differentiation (iv). Letter h indicates spiracular hair; fk, filzkörper and st, stigmatophore. (E–H) Gap gene expression by the end of blastoderm stage in wild type (upper panel) and bcdKO (lower panel). Dashed lines mark the boundary of expression domains, and the scaled boundary positions of individuals are plotted in the graphs below (wild type in blue and bcdKO in green). In (H), asterisk indicates weak transcriptional activation of anterior Gt domain.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Comparison of bcdKO individuals showing different expression patterns of Kr (A) and Gt (B). Solid triangle indicates anterior Gt domain and dashed triangles indicate failed activation of Kr or anterior Gt. (C–D) Phenotypic frequency of cuticle patterns and ectopic spiracles in individuals generated by a single bcdKO female crossed to a single male and raised in constant environments. C and D show two independent single-cross experiments. n = 23 (C) and n = 42 (D).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–E) En expression at the end of head involution stage in ctrl (A) and bcdKO (B–E) embryos. Dots indicate En stripes (ctrl, green; bcdKO, magenta) and the numbers indicate embryonic length. (F) Number of En stripes as function of embryo length for ctrl and bcdKO embryos.
+
 The wide spectrum of bcdKO phenotypes can be attributed to variations in patterning gene expression during the blastoderm stage. By the end of the blastoderm stage, the relative boundary positions of all gap gene expression domains show significant anterior shift compared to those in the wild-type embryos (Figure 5—figure supplement 1E–H). Importantly, the absence of Bcd activity results in significantly increased variation in gap gene boundary positions (Figure 5C, p<0.01 for all measured boundaries to have increased error randomly). Occasionally we detected no Krüppel (Kr) nuclear intensity in the presumed expression region in bcdKO individuals (2 out of 15 individuals), indicating the failure of Kr gene activation in these embryos (Figure 5—figure supplement 2A). The anterior Gt domain shows similar inter-individual variation, with the majority of the embryos failing to properly activate anterior Gt expression (8 out of 10 individuals). Instead only a thin stripe of diminished cytoplasmic signal can be detected (Figure 5—figure supplement 1H, asterisk; Figure 5—figure supplement 2B). It is noteworthy that embryos derived from a single pair of bcdKO parents raised in constant environmental conditions show equivalent phenotypic variation (Figure 5—figure supplement 2C–D), suggesting that the inter-individual variation observed cannot be attributed to differences in either environment or genetic background.
 
 Next, we introduced the fat2RNAi knockdown into a bcdKO background to see how embryonic patterning is affected. The cuticle pattern of embryos derived from fat2RNAi, bcdKO females resembles that of bcdKO alone, but the number of properly patterned abdominal denticle belts reduces with decreasing embryonic length. Moreover, novel phenotypes showing only one or two abdominal segments were observed when the embryonic length drops beyond the natural range (Figure 5D and E). All of the fat2RNAi, bcdKO embryos showed duplicated spiracles with fully developed morphology (see Figure 5—figure supplement 1D (i)), consistent with our previous result that such spiracles prevail in embryos with shorter AP length. We observed similar behavior in the pattern of En expression. In contrast to invariable eleven En stripes in control embryos (Figure 5F), the number of En stripes shows positive linear correlation with embryonic length in bcdKO embryos, both in individuals with natural embryonic geometry (Figure 5—figure supplement 3; Video 3) and fat2RNAi knockdown (Figure 5G and H).
 
-## Embryonic length dictates gap gene expression patterns in the absence of bcd
+![Video 3.](https://cdn.elifesciences.org/articles/47380/elife-47380-video3.mp4.jpg)
+
+**Video 3.:** Live imaging of bcdKO embryogenesis from onset of gastrulation to the end of dorsal closure. Embryos express H2Av::mCh (red) and en>mCD8::GFP (green). Dots indicate En stripes and the numbers on top of the embryos indicate the AP length of each individual.
+
+### Embryonic length dictates gap gene expression patterns in the absence of bcd
 
 What underlies the correlation between embryonic length and phenotypes of bcdKO embryos? We next focus on variation in gap gene expression patterns in bcdKO embryos of varying geometry. Figure 6A shows representative expression patterns of four gap genes in bcdKO and bcdKO, fat2RNAi mutants. The gene network shows qualitative differences in behavior within different ranges of embryonic length. Without the long-range gradient of Bcd, zygotic hb transcription is activated by the termini system mediated by the terminal gap gene, tailless (Margolis et al., 1995; Figure 6—figure supplement 1A). As a result, two Hb stripes form near the anterior and posterior poles of the embryo, spanning a width of ~10 and 15 nuclei, respectively. In embryos with extremely large aspect ratio (range 1, EL within 330–360 µm), the two Hb expression domains are in close proximity. This inhibits the expression of Kni, which is strongly repressed by Hb, in the central region of the embryo (Hülskamp et al., 1990). Meanwhile, Gt is activated by uniformly distributed maternal Cad protein, and in turn inhibits Kr expression (Kraut and Levine, 1991; Rivera-Pomar et al., 1995; Figure 6A–C, range 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative gap gene expression patterns within different range of EL. Range1, 330–360 µm; range2, 390–420 µm; and range3, 510–540 µm. (B) Embryonic length of bcdKO individual plotted vs. boundary position of four gap genes shown as absolute distance from the anterior pole (Hb, blue; Gt, magenta; Kr, red and Kni, green). Data from every 30 µm EL interval were binned to compute mean and s.d. and the colored areas are generated by connecting mean values of different EL ranges. Dashed boxes indicate ranges of EL corresponding to (A). Dashed line indicates posterior boundary of individual embryos; red and green crosses overlapping the dashed line indicate individuals with corresponding EL not expressing Kr and Kni, respectively. (C) Schematic illustration of positional information transfer from maternal systems to gap gene expression in bcdKO embryos within different range of embryonic length. Scale bar, 100 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Embryos of wild type (left), bcdKO (mid) and tll (right) fixed at the end of the blastoderm stage and stained for Tll (magenta) and Hb (cyan). The symmetric expression of Hb and Tll in bcdKO and the absence of posterior Hb stripes in tll embryos indicate that Tll is necessary for the activation of this Hb domain. (B) Embryos of wild type, bcdKO, fat2RNAi, and fat2RNAi, bcdKO fixed at presyncytial stages (around n.c. 8) and stained with Dapi and Hb antibody. The Hb intensity at these stages represent maternal Hb expression. (C) Mean and s.d. of normalized Hb profiles from four genotypes, respectively, were plotted vs. scaled AP position. (D) Mean and s.d. of maternal Hb boundary positions in four genotypes. *p<0.01. (E) Representative images of bcdKO embryos within different EL ranges (corresponding to Figure 6A) fixed at the end of blastoderm stage and stained for Gt (magenta) and Eve (cyan). Scale bar, 100 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47380/elife-47380-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) Relative boundary positions of Hb (A), Gt (B), Kni (C) and Kr (D) plotted vs. embryonic length in bcdKO and bcdKO, fat2RNAi individuals. Lines indicate linear regression of each gap gene boundary.
 
 In individuals with moderately increased embryonic length (range 2, EL within 390–420 µm), Hb stripes in the terminal regions separate further apart, permitting Kni expression in the middle region (Figure 6A–C, range 2). This Kni stripe is sandwiched by two Gt expression domains, a thin anterior stripe and a wider posterior one. The anterior Gt stripe in bcd mutants has been observed before (Staller et al., 2015) but its regulatory interactions remain elusive. Potentially it is activated by the remnant anterior determinants such as the maternal Hb, distributed in the anterior half of the embryo (Irish et al., 1989). Comparatively shorter embryos show phenotypically higher degree of symmetry in both cuticle and gene expression patterns, conceivably due to stronger repression of maternal Hb in shorter individuals (Figure 6—figure supplement 1B–D; Figure 6—figure supplement 2).
 
@@ -117,7 +177,7 @@ In conclusion, embryonic geometry was identified as a source of variation in add
 
 ## Materials and methods
 
-## Fly stocks and genetics
+### Fly stocks and genetics
 
 The bcd knockout allele (bcdKO) used in this study was generated by CRISPR-mediated insertion of a MiMIC cassette into the first intron of the bcd gene (Huang et al., 2017; Venken et al., 2011) The cuticle phenotype of bcdKO was compared to that of the classic bcdE1 allele (Frohnhöfer and Nüsslein-Volhard, 1986) To generate embryos with artificially reduced aspect ratio, we expressed RNA interference against the fat2 gene using a maternal traffic jam (tj) >Gal4 driver (Barlan et al., 2017) Both UAS > fat2 RNAi and tj >Gal4 were either crossed to or recombined with the bcdKO allele, so that the females carrying all three alleles produce bcd null embryos with wide range of aspect ratio.
 
@@ -129,7 +189,7 @@ These two fragments and the digested vector were then assembled using Gibson Ass
 
 Other fly lines used in this study include a laboratory OreR strain raised in 25°C (the wild-type control); en >mCD8 GFP (to visualize dynamic en expression pattern); egfp-bcd line (for quantification of Bcd gradient profile); mat >eGFP; hb >LlamaTag (gift from Hernan Garcia’s lab); Df(3R)tllg (BL#2599).
 
-## Measurement of embryonic geometry
+### Measurement of embryonic geometry
 
 To compare the geometrical parameters between OreR, bcdKO and fat2RNAi populations, embryos were dechorionated and aligned laterally on an agar plate and imaged under a stereoscope (Nikon SMZ18). Images were then segmented to extract the embryo contour and fitted to elliptic shapes. The long and short axes of fitted ellipses were taken as the measurement of embryonic length and width, respectively. The approximate embryonic volume is calculated using the measured length and width, assuming embryos are ellipsoids in shape. For each strain, more than 200 individuals were measured.
 
@@ -137,60 +197,136 @@ For confocal live imaging, embryonic length was measured as the longest distance
 
 We checked our assumption of isotropic shrinkage upon fixation (Figure 1C and Figure 1—figure supplement 1A). Comparing embryos from live imaging and fixed embryos, we did not observe significant anisotropy in the embryo geometry (Figure 1—figure supplement 1B–C).
 
-## Immunostaining
+### Immunostaining
 
 Embryos at desired stages were dechorionated by household bleach and fixed in heptane saturated by 37% paraformaldehyde (PFA) for 1 hr. The vitelline membrane was subsequently manually removed. Prior to incubation with primary antibodies, embryos were blocked with 10% BSA in PBS. Antibodies used were guinea pig anti-Hb (1:2000), rabbit anti-Gt (1:800), guinea pig anti-Kr (1:800), guinea pig anti-Kni (1:800), guinea pig anti-Eve (1:800). Primary antibodies were detected with Alexa Fluor-labelled secondary antibodies (1:500; LifeTech). Embryos were co-stained with Phalloidin conjugated with Alexa Fluor for staging purpose or visualizing cephalic furrow position. Short incubation of Dapi dye was carried out during the last wash prior to mounting to visualize presyncytial nuclei. Embryos were mounted in AquaMount (PolySciences, Inc) and imaged on a Zeiss LSM710 microscope with a C-Apochromat 40x/1.2 NA water-immersion objective. Hb, Gt, Kr, Kni and Eve antibodies were gifts from Johannes Jaeger.
 
-## Cuticle preparation
+### Cuticle preparation
 
 Embryos of various genotypes were collected during the blastoderm stages and allowed to develop at 25°C until the end of embryogenesis. The embryos were then dechorionated, fixed, devitellinized and incubated into a mixture of Hoyer’s medium and Lactic acid in a 1:1 ratio at 65°C between an imaging slide and a cover slip. For an exhaustive description of the method used see Alexandre (2008).
 
-## Measurement of bcd profile
+### Measurement of bcd profile
 
 For measurement of Bcd gradient profile, we followed the protocols detailed in Gregor et al. (2007a). Embryos expressing eGFP-Bcd either with or without fat2RNAi were dechorionated and mounted laterally on a confocal microscope (Zeiss LSM710). The images were acquired at the midsagittal plane of embryos at early n.c. 14. Data acquired in Figure 1F–H for different individuals (including eGFP:Bcd and eGFP:Bcd; tj >Gal4,UAS > fat2 RNAi) were co-mounted on the same glass-bottom dish and taken with identical microscope settings. For each image, nuclear centers along the dorsal edge of the embryo were manually selected and the corresponding circular area was used to compute the average fluorescent intensity. Nuclear intensity was then plotted against either absolute distance from the anterior or scaled AP position. To compare average profiles between control and fat2RNAi embryos, all nuclei from embryos either longer or shorter than 450 µm are binned in 50 bins along the scaled AP axis over which the mean and standard deviation were computed.
 
-## Fluorescence in situ hybridization
+### Fluorescence in situ hybridization
 
-## Probe synthesis
+#### Probe synthesis
 
 A 471 bp region of bcd transcript was amplified from early embryo cDNA using primer pairs:
 
 5’-cccggatccCTCAAATAGCAGAGCTGGAGC-3’ and 5’-cccggtaccGCTGCTGCTGGAAGAACTG-3’ and subcloned into the pSP18 vector. Further, the vector was linearized by BamHI restriction digestion and DIG-labeled ‘anti-sense’ RNA was synthesized with T7 RNA polymerase using DIG RNA Labeling Kit [Roche-11175025910]. Synthesized RNA probes were then precipitated by adding 75 µl pre-chilled ethanol, 1.3 µl LiCl (7.5 M) and 1 µl yeast tRNA (25 mg/ml) to the labeling reaction. Precipitation takes overnight at −20°C. After centrifuging at 4°C full speed for 30 min, the precipitated RNA probes were washed with 70% ethanol (in DEPC water) and re-suspended in 100 µl Hyb-A buffer (50% formamide, 5XSSC buffer, 100 µg/ml salmon DNA [BDL F012], 50 µg/ml heparin [Sigma-Aldrich H4784], 0.1% tween-20 in DEPC water). The synthesized RNA probes were stored in −20°C.
 
-## Pre-hybridization
+#### Pre-hybridization
 
 Embryos at stages within 2 hr after fertilization were collected, dechorionated and fixed in 1:1 solution of heptane and 4% formaldehyde in PBS for 20 min. After that, lower phase of the solution was replaced by methanol with the same volume. The solution was vortexed for 20 s to remove the vitelline membrane, and the embryos at the bottom of the lower phase were collected and rinsed three times with methanol. Embryos were then rehydrated by washing them in sequentially increasing percentage of PBT (PBS+0.1%Tween-20) in methanol. Next, embryos were post-fixed in 4% formaldehyde in PBT for 20 min and washed 5 times in PBT. Embryos were then washed in Hyb-B buffer (50% formamide, 5XSSC in DEPC water). Finally, pre-hybridization was carried out by placing the embryos in Hyb-A buffer at 65°C for 3.5 hr.
 
-## Hybridization
+#### Hybridization
 
 5 µl of RNA probes was diluted in 250 µl Hyb-A buffer. The probe mix was heated at 80°C for 10 min and placed on ice for 5 min. The probe mix was added to the embryos and hybridization was carried out at 65°C for 18 hr. The embryos were washed at 65°C in Hyb-B buffer for 6 times, 30 min each wash. After, the embryos were washed sequentially in the following solution at room temperature: 4:1 Hyb-B:PBT, 1:1 Hyb-B:PBT, 1:4 Hyb-B:PBT and PBT, 5 min each wash. Embryos were incubated with blocking solution (4:1 PBT:Western blocking reagent (Roche- 11921673001)) for 1 hr. For primary staining against DIG-labeled RNA probes, embryos were incubated with sheep anti-DIG [Sigma-Aldrich 11333089001] with 1:400 dilution in the blocking solution at 4°C overnight. After washing in PBT for 6 times with 20 min each wash, embryos were stained with the secondary antibody donkey anti-sheep Alexa 555 [Thermo Fisher Scientific A21436] with 1:500 dilution in PBT for 1 hr at room temperature. Finally, after washing in PBT for 6 times, embryos were mounted on microscopy slides with Aqua-Poly/Mount [Polysciences, Inc- 18606].
 
-## Microscopy imaging and image analysis
+#### Microscopy imaging and image analysis
 
 Slides were imaged on a Zeiss confocal LSM880 using 40X water immersion lens. For each embryo, Z-stack images were taken covering the region from surface to the midsagittal plane, and the neighbouring planes were separated by 3 µm. Following that, a projected maximum intensity image was generated. The outside of the embryo was segmented using thresholding in Matlab after using rolling ball background subtraction. A 10μm-thick mask was defined around the embryo perimeter in order to avoid effects from yolk autofluorescence. Finally, the average signal intensity at each position along the AP axis was taken from the mask. The signal from each embryo varies significantly, making a rigorous quantitative comparison challenging. The signal from each embryo was normalized by the intensity around 200 μm from the anterior pole.
 
-## Simulation of SDD (Synthesis, Diffusion, Degradation) model
+### Simulation of SDD (Synthesis, Diffusion, Degradation) model
 
 We use COMSOL Multiphysics 5.3 to simulate diffusion along the surface of prolate ellipsoids of varying sizes to account for the geometries of wild type and fat2RNAi embryos.
 
 We consider steady state equations for the concentration of Bcd in the unfolded (U) and folded (F) states. These take the form:
 
-∂tU=D∇2U-(μ+α)U+Jfx.∂tF=D∇2F+αU-μF,where: ∇2 represents the Laplacian on the ellipsoid surface; α is the GFP folding rate; µ is the decay rate of Bcd in both the unfolded and folded forms; and Jf(x) corresponds to a production rate of unfolded Bicoid, which we suppose to depend only on the distance to anterior (x-axis corresponds to AP direction). We consider a step-like production function:fx=1-tanh⁡x-λδ,where λ is the AP-axis extension of a region of approximatively constant production; δ is a smoothing parameter. We have checked that the simulations weakly depend on the value of δ as long as δ<< λ.
+$\partial_{t}U=D\nabla^{2}U-(\mu+\alpha)U+Jfx$.
+
+$$
+\partial_{t}F=D\nabla^{2}F+\alphaU-\muF,
+$$
+
+where: $\nabla^{2}$ represents the Laplacian on the ellipsoid surface; α is the GFP folding rate; µ is the decay rate of Bcd in both the unfolded and folded forms; and Jf(x) corresponds to a production rate of unfolded Bicoid, which we suppose to depend only on the distance to anterior (x-axis corresponds to AP direction). We consider a step-like production function:
+
+$$
+fx=1-tanh⁡\frac{x-\lambda}{\delta},
+$$
+
+where λ is the AP-axis extension of a region of approximatively constant production; δ is a smoothing parameter. We have checked that the simulations weakly depend on the value of δ as long as δ<< λ.
 
 Physical parameters were fixed based on previous literature, see Table below. Quantitative fits were obtained by using a L2-measure with a window-type weight function for data-points within the rescaled length range x/L∈[0.2,0.8].
 
 The solution for folded Bcd is not flat is the vicinity of z = 0 (i.e. near the head); this is due to the projection into the Cartesian coordinates, leading to a singular integration measure near its extremal value z = 0. Similarly, we disregard the experimentally measured values of Bcd intensity within the first microns form the anterior pole as these are prone to large errors.
 
-ParameterValuesReferenceDDiffusion coefficient of folded and unfolded bcd4 µm2s−1Durrieu et al., 2018λProduction region50 µmin situ data in this study and Little et al., 2011δWidth of decay of the production region5 µmin situ data in this studyµProtein decay rate1/ (35*60) sDurrieu et al., 2018αFolding rate1/ (50*60) sDurrieu et al., 2018 and Liu et al., 2013aWTWT type length, dorso-ventral axis100 µmSee Figure 1cWTWT type length, anterio-posterior axis250 µmSee Figure 1afat2fat2RNAi type length, dorso-ventral axis115 µmSee Figure 1cfat2fat2RNAi type length, anterio-posterior axis175 µmSee Figure 1
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Parameter</th>
+      <th>Values</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D</td>
+      <td>Diffusion coefficient of folded and unfolded bcd</td>
+      <td>4 µm2s−1</td>
+      <td>Durrieu et al., 2018</td>
+    </tr>
+    <tr>
+      <td>λ</td>
+      <td>Production region</td>
+      <td>50 µm</td>
+      <td>in situ data in this study and Little et al., 2011</td>
+    </tr>
+    <tr>
+      <td>δ</td>
+      <td>Width of decay of the production region</td>
+      <td>5 µm</td>
+      <td>in situ data in this study</td>
+    </tr>
+    <tr>
+      <td>µ</td>
+      <td>Protein decay rate</td>
+      <td>1/ (35*60) s</td>
+      <td>Durrieu et al., 2018</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>Folding rate</td>
+      <td>1/ (50*60) s</td>
+      <td>Durrieu et al., 2018 and Liu et al., 2013</td>
+    </tr>
+    <tr>
+      <td>aWT</td>
+      <td>WT type length, dorso-ventral axis</td>
+      <td>100 µm</td>
+      <td>See Figure 1</td>
+    </tr>
+    <tr>
+      <td>cWT</td>
+      <td>WT type length, anterio-posterior axis</td>
+      <td>250 µm</td>
+      <td>See Figure 1</td>
+    </tr>
+    <tr>
+      <td>afat2</td>
+      <td>fat2RNAi type length, dorso-ventral axis</td>
+      <td>115 µm</td>
+      <td>See Figure 1</td>
+    </tr>
+    <tr>
+      <td>cfat2</td>
+      <td>fat2RNAi type length, anterio-posterior axis</td>
+      <td>175 µm</td>
+      <td>See Figure 1</td>
+    </tr>
+  </tbody>
+</table>
 
 As the equations are solved on a closed surface, there are no explicit boundary conditions.
 
-## Gap gene boundary quantification
+### Gap gene boundary quantification
 
 Confocal Z-stack images were Z-projected (maximum intensity) in Fiji (RRID:SCR_002285) for further analysis. The images of laterally oriented embryos were rotated so that the anterior is to the left and dorsal to the up. A line with the width of 100 pixels crossing the center of the embryo was drawn to extract average intensity along the AP axis. The intensity profile was shown as a function of percent embryonic length (%EL). We determined the background intensity Imin and maximum intensity Imax of each embryo; Imin was subtracted from the intensity profile and the resulting curve was rescaled by 1/(Imax-Imin). The boundary position is defined where rescaled intensity profile equals to 0.5.
 
 To estimate the variation of boundary position, we performed bootstrapping using the Matlab function bootstrp. We performed 1000 simulation runs to infer the variability on the boundary precision. In each run, a random data set was generated by sampling from the known experimental data. In this procedure, each data point can be included multiple times within each random sample. As the number of samples per boundary was small, we did not test for significant changes in the precision of boundary specification for a single boundary between wild-type and bcdKO embryos. However, pooling the data from the different boundaries, we observe that precision in all the measured boundaries decreases (i.e. the error increases) in bcdKO embryos. We calculated the p-value using the paired sample t-test across all boundaries.
 
-## Quantification of maternal bcd transcripts
+### Quantification of maternal bcd transcripts
 
 To compare the relative amount of maternally loaded bcd transcripts in different genotypes, we extracted total mRNA from presyncytial embryos (within 1 hr after egg deposition) generated by OreR, fat2RNAi, tdBcd(III) or tdBcd(II);tdBcd(III) females and reverse transcribed to cDNA. We performed qRT-PCR with bcd-specific primer pair using SYBR Green (Thermo Fisher) protocol and the housekeeping gene rpl32 was used as internal reference. The relative bcd mRNA amount was normalized to that of OreR. Three independent measurements were carried out over which the mean and standard deviation was calculated.

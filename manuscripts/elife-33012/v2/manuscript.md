@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.33012.001 The development of neurons in the peripheral nervous system is dependent on target-derived, long-range retrograde neurotrophic factor signals. The prevailing view is that target-derived nerve growth factor (NGF), the prototypical neurotrophin, and its receptor TrkA are carried retrogradely by early endosomes, which serve as TrkA signaling platforms in cell bodies. Here, we report that the majority of retrograde TrkA signaling endosomes in mouse sympathetic neurons are ultrastructurally and molecularly defined multivesicular bodies (MVBs). In contrast to MVBs that carry non-TrkA cargoes from distal axons to cell bodies, retrogradely transported TrkA + MVBs that arrive in cell bodies evade lysosomal fusion and instead evolve into TrkA + single-membrane vesicles that are signaling competent. Moreover, TrkA kinase activity associated with retrogradely transported TrkA + MVBs determines TrkA + endosome evolution and fate. Thus, MVBs deliver long-range retrograde NGF signals and serve as signaling and sorting platforms in the cell soma, and MVB cargoes dictate their vesicular fate.
+The development of neurons in the peripheral nervous system is dependent on target-derived, long-range retrograde neurotrophic factor signals. The prevailing view is that target-derived nerve growth factor (NGF), the prototypical neurotrophin, and its receptor TrkA are carried retrogradely by early endosomes, which serve as TrkA signaling platforms in cell bodies. Here, we report that the majority of retrograde TrkA signaling endosomes in mouse sympathetic neurons are ultrastructurally and molecularly defined multivesicular bodies (MVBs). In contrast to MVBs that carry non-TrkA cargoes from distal axons to cell bodies, retrogradely transported TrkA+ MVBs that arrive in cell bodies evade lysosomal fusion and instead evolve into TrkA+ single-membrane vesicles that are signaling competent. Moreover, TrkA kinase activity associated with retrogradely transported TrkA+ MVBs determines TrkA+ endosome evolution and fate. Thus, MVBs deliver long-range retrograde NGF signals and serve as signaling and sorting platforms in the cell soma, and MVB cargoes dictate their vesicular fate.
 
 ## Introduction
 
@@ -32,41 +32,93 @@ Here, we demonstrate that molecularly and ultrastructurally defined MVBs carry 
 
 ## Results
 
-## Ultrastructural analysis of retrograde Flag-TrkA endosomes
+### Ultrastructural analysis of retrograde Flag-TrkA endosomes
 
 We investigated the vesicular nature, molecular composition, maturation, and signaling dynamics of TrkA+ signaling endosomes using a Ntrk1Flag knockin mouse line, which expresses Flag epitope-tagged TrkA from the endogenous TrkA locus, and an in vitro compartmentalized microfluidic sympathetic neuron culture system to monitor internalization, sorting and retrograde trafficking of Flag-TrkA+ endosomes (Figure 1—figure supplement 1A) (Sharma et al., 2010; Harrington et al., 2011). We first sought to define the ultrastructural features of retrogradely transported TrkA+ endosomes. To accomplish this, compartmentalized Ntrk1Flag sympathetic neurons and an anti-Flag antibody pre-conjugated to Protein A-5nm gold were used to visualize retrogradely transported Flag-TrkA+ endosomes by electron microscopy (EM). While application of neither the primary antibody nor Protein A-5nm gold alone to distal axons of compartmentalized Ntrk1Flag neurons yielded electron-dense structures detectable by EM, application of anti-Flag antibody that was pre-conjugated to Protein A-5nm gold to Ntrk1Flag neurons, but not wild-type neurons, labeled electron dense structures in axons that were readily apparent by EM (Figure 1A). This antibody labeling strategy did not perturb normal internalization and endocytic trafficking of TrkA receptors; Gold-labeled TrkA receptors did not compromise survival or retrograde signaling (data not shown), nor did it affect the subcellular and ultrastructural localization of P-TrkA, visualized by either light microscopy or EM (see below, Figures 4 and 6).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig1-v2.jpg)
+
+**Figure 1.:** (a,b) The Flag-TrkA transport assay was performed in compartmentalized sympathetic neurons using pre-conjugated anti-Flag antibody with Protein A-5 nm gold. Cells were fixed 1 hr post-NGF application and processed for EM. The percentage of Flag-TrkA gold particles localized to MVBs, single-membrane vesicles (SVs) or lysosomes was quantified (c). Note the presence of the Flag epitope on both the membrane of the intraluminal vesicles (white arrows) and the limiting membrane of the MVB (yellow arrows). High-magnification images of the boxed areas are shown in the bottom panels. (c) The Flag-TrkA assay was performed using pre-conjugated primary antibody and Protein A-5nm gold, or primary antibody or Protein A-5nm only. Cells were fixed 1 hr post-NGF stimulation and the number of gold particles per EM section was counted (n = 4). Scale bar: 100 nm. Data are represented as mean ± standard error of the mean (SEM) (a) or presented in box plot (c). In box plots, the top and the bottom of the central rectangle represents the 75th and 25th percentile value, respectively, and the line inside represents the median; the whisker on either side extends to the data point that is within the range of variation (1.5×(75th percentile – 25th percentile)) and data points beyond that range are plotted as individual dots. ***p<0.001 by one-way ANOVA with a Tukey’s post-hoc test. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic of the Flag-TrkA endosome transport assay. DA: distal axons. PA: proximal axons. See also Materials and methods. (b) Newly internalized Flag-TrkA is sorted into early endosomes in distal axons. The Flag-TrkA assay was performed in compartmentalized sympathetic neurons using pre-conjugated anti-Flag antibody with Protein A-5 nm gold. Cells were fixed 5 min post-NGF application and processed for EM. White arrows denote Flag-TrkA gold particles within an endosome. n = 3. Scale bar: 100 nm. (c) Additional EM images of Flag-TrkA in axons. Sympathetic neurons grown in compartmentalized cultures were subjected to the pulse-block Flag transport assay and fixed at indicated time points. Flag-TrkA in distal and proximal axons were visualized by EM. Arrows denote individual Flag-TrkA complexes. Scale: 100 nm.
+
 As expected, newly internalized, gold-labeled TrkA receptors in distal axons were found in single-membrane vesicular structures in close proximity to the plasma membrane, which is a defining feature of early endosomes (Figure 1—figure supplement 1B). Surprisingly, and in stark contrast, retrogradely transported TrkA receptors in proximal axons and cell bodies were found mainly in MVBs (87.9 ± 5.0%) and, to a much lesser extent, single-membrane vesicles (SVs, 9.5 ± 2.8%) or lysosomes (2.6 ± 1.3%; Figure 1B, Figure 1—figure supplement 1B,C). The gold-labeled Flag-TrkA receptors were localized both to the limiting membrane and intraluminal vesicles (ILVs) of MVBs (Figure 1B). Therefore, following NGF treatment of distal axons, newly internalized TrkA in distal axons is associated with early endosomes, whereas following retrograde transport to proximal axons and cell bodies TrkA is predominantly associated with MVBs.
 
-## Internalized TrkA is sorted into both early endosomes and MVBs in distal axons, and the majority of retrogradely transported TrkA+ endosomes are MVBs
+### Internalized TrkA is sorted into both early endosomes and MVBs in distal axons, and the majority of retrogradely transported TrkA+ endosomes are MVBs
 
 To complement the EM analyses and to define molecular features of TrkA signaling endosomes in sympathetic neuron axons, we next used the Flag-TrkA transport assay to visualize TrkA+ endosomes and determine the extent to which they are associated with markers of distinct types of vesicular compartments. Consistent with the EM observations, following application of NGF exclusively to distal axons, newly internalized TrkA receptors in distal axons were mainly associated with Rab5-labeled early endosomes (Figure 2A). However, the fraction of total internalized Flag-TrkA colocalized with Rab5 in distal axons decreased during the next hour, coincident with an increase of Flag-TrkA colocalized with Rab7, a small GTPase that regulates the functions of MVBs and late endosomes (LEs) (Figure 2—figure supplement 1A) (Vanlandingham and Ceresa, 2009; Lebrand et al., 2002). Strikingly, Flag-TrkA punctae within proximal axons, which represent mature, retrogradely transported endosomes, were mainly associated with MVB/LE markers, including Rab7, Hrs (Henne et al., 2011) and CD63 (Pols and Klumperman, 2009) and, to a much lesser extent, with markers of early endosomes (Rab5), recycling endosomes (Rab11) and lysosomes (Lamp1) (Figure 2A,B; Figure 2—figure supplement 1B,C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig2-v2.jpg)
+
+**Figure 2.:** (a,b) The Flag-TrkA endosome transport assay was performed in sympathetic neurons grown in compartmentalized microfluidic culture and infected with a lentivirus expressing EGFP-Rab7. The percentage of Flag-TrkA punctae (magenta) colocalized with the MVB marker EGFP-Rab7 or the EE marker Rab5 (green) in distal axons (DA) 10 min post NGF application or in axons proximal to cell bodies (PA) 3 hr post NGF application was quantified (n = 5). For DA experiments, cells were washed with NaCl/acetic acid to remove surface bound Flag signal prior to fixation. Scale bar: 5 μm. (c–e) Sympathetic neurons grown in compartmentalized culture were infected with lentivirus expressing EGFP-Rab7 or EGFP-Rab5. The Flag-TrkA assay was performed using pre-conjugated anti-Flag antibody and Alexa Fluoro secondary antibody during the 4◦C incubation step. Flag-TrkA (magenta) and EGFP (green) were then imaged consecutively in axons. Representative time-lapse images of each type of TrkA endosomes are shown (top panel). Kymographs of time-lapse images are shown in the bottom panel. Arrowheads denote individual endosomes. Scale bar: 10 μm; 1 min. The percentage of Flag-TrkA punctae co-transported with either marker was quantified (d). Note that not every axon expresses the endosomal marker fusion proteins and therefore Flag-TrkA in these axons was not always observed to be associated with fluorophore-tagged endosomal markers. The directionality of retrograde TrkA MVBs and EEs are shown in (e). A total of 168 (Rab5) and 207 (Rab7) endosomes were scored in four independent experiments for each condition. Data are presented in box plot (b) or dot plot (d). In dot plots, individual data points (dots) and the mean (red line) are shown. ***p<0.001 by two tailed unpaired Student’s t test. See also Figure 2—figure supplement 1 and Videos 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Colocalization of Flag-TrkA endosomes with EGFP-Rab5 or EGFP-Rab7 in distal axons post internalization over time was quantified (n = 3). (b,c) Colocalization between Flag-TrkA (magenta) and CD63-EGFP, RFP-Hrs, Rab11 and Lamp1 (green) in distal and proximal axons of compartmentalized sympathetic neurons. For distal axon experiments, cells were fixed 10 mins post-NGF application and were stripped with NaCl/acetic acid to remove surface Flag antibody. For proximal axon experiments, cells were incubated for 3 hr post-NGF application (n = 3). Scale bar: 10 μm. (d) Compartmentalized sympathetic neurons were infected with a virus expressing an empty vector, EGFP-Rab5 or EGFP-Rab7, and neuronal survival was assessed. Expression of EGFP-Rab5 or EGFP-Rab7 did not affect retrograde NGF-dependent survival of sympathetic neurons (n = 3). (e) Sympathetic neurons grown in compartmentalized culture were infected with lentivirus expressing CD63-EGFP. The Flag-TrkA assay was performed using pre-conjugated anti-Flag antibody and Alexa Fluoro secondary antibody during the 4◦C incubation step. Flag-TrkA (magenta) and EGFP (green) were then imaged consecutively in axons. Representative time-lapse images of each type of TrkA endosomes are shown (top panel). The kymograph of time-lapse images are shown in the bottom panel. Arrowheads denote individual endosomes. Scale bar: 10 μm; 1 min. The percentage of Flag-TrkA punctae co-transported with CD63-EGFP was quantified. A total of 173 endosomes were scored in four independent experiments for each condition. ***p<0.001 by two tailed unpaired Student’s t test. Data are represented as mean ± SEM (a,c,d) or presented in dot plot (e). See also Video 3.
+
 We next directly visualized axonal transport of TrkA endosomes in real time by imaging Ntrk1Flag neurons expressing fluorophore-tagged endosomal proteins using a modified Flag-TrkA assay (Figure 2C–E). In this live cell imaging paradigm, anti-Flag antibody pre-conjugated with fluorescent secondary antibody was applied to distal axons of Ntrk1Flag neurons. This live cell Flag-TrkA imaging assay enabled specific visualization of Flag-TrkA endosomes because fluorescent signals were undetectable in axons of wild-type neurons (data not shown). We expressed in TrkAFlag neurons EGFP-tagged Rab5 or Rab7 using a lentiviral delivery system. These constructs did not compromise NGF-dependent survival of sympathetic neurons (Figure 2—figure supplement 1D). Live cell imaging of EGFP-Rab5-expressing Ntrk1Flag neurons revealed that the majority of EGFP-Rab5+/Flag-TrkA endosomes in distal axons are stationary or move bi-directionally for only a short distance (Figure 2C, yellow arrow heads). Consistent with this, only few of the EGFP-Rab5+/Flag-TrkA+ punctae were co-transported retrogradely into proximal axons of the cell body compartment (Figure 2C–E; Video 1). In contrast, the majority of retrogradely transported Flag-TrkA+ endosomes observed within proximal axons were associated with EGFP-Rab7 (Figure 2C, white arrow heads). Furthermore, unlike EGFP-Rab5+/Flag-TrkA+ endosomes, the majority of EGFP-Rab7+ TrkA endosomes exhibited processive movement in the retrograde direction; very few were stationary or moved bi-directionally (Figure 2C–E; Video 2). The percentages of Flag-TrkA punctae co-transported with either EGFP-Rab5 or EGFP-Rab7 were similar to the percentages of colocalization observed in the fixed cell immunolabeling experiments. Similar results were obtained using a different MVB marker, CD63 (Figure 2—figure supplement 1E; Video 3). These observations, taken together, demonstrate that the majority of retrograde Flag-TrkA+ endosomes are associated with markers of MVBs or LEs, and not early endosomes.
 
-## Rab7 mediates retrograde TrkA transport and signaling in vivo and in vitro
+![Video 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-video1.mp4.jpg)
+
+**Video 1.:** Time lapses of EGFP-Rab5 (cyan, bottom panel) and Flag-TrkA (magenta, middle panel) trafficking (merged channel, top panel) in distal axons of sympathetic neurons grown in compartmentalized cultures. Notice a stationary EGFP-Rab5+ Flag-TrkA endosome (#1) and three retrogradely transported EGFP-Rab5- Flag-TrkA endosomes (#2–4). Retrograde is to the right. The video was acquired at 2 fps (frames per second) and played at 15 fps.
+
+![Video 2.](https://cdn.elifesciences.org/articles/33012/elife-33012-video2.mp4.jpg)
+
+**Video 2.:** Time lapses of EGFP-Rab7 (cyan, bottom) and Flag-TrkA (magenta, middle) trafficking (merged channel, top) in axons in the middle grooves of microfluidic chambers adjacent to the distal axon compartment. Shown are three retrogradely transported EGFP-Rab7+ Flag-TrkA endosome (#1–3). Retrograde is to the right. The video was acquired at 2 fps (frames per second) and played at 15 fps.
+
+![Video 3.](https://cdn.elifesciences.org/articles/33012/elife-33012-video3.mp4.jpg)
+
+**Video 3.:** Time lapses of CD63-EGFP (cyan, bottom) and Flag-TrkA (magenta, middle) trafficking in axons (merged channel, top) in the middle grooves of microfluidic chambers adjacent to the distal axon compartment. Shown are two retrogradely transported CD63-EGFP+ Flag-TrkA endosome (#1–2). Retrograde is to the right. The video was acquired at two fps (frames per second) and played at 15 fps.
+
+### Rab7 mediates retrograde TrkA transport and signaling in vivo and in vitro
 
 We previously found that Rab7, a small GTPase that regulates functions of MVBs and LEs (Vanlandingham and Ceresa, 2009; Lebrand et al., 2002), is associated with immunopurified TrkA+ endosomes (Harrington et al., 2011). Moreover, Rab7 is a major regulator of vesicular trafficking (Wandinger-Ness and Zerial, 2014). In motor neurons, retrograde transport of a modified tetanus toxin is mediated by Rab7+ endosomes and is dependent on Rab7’s GTPase activity (Deinhardt et al., 2006). Therefore, we asked whether Rab7 mediates long-range retrograde TrkA trafficking and signaling in sympathetic neurons using a combination of in vivo and in vitro analyses. Mice harboring a Th2a-CreER knock-in allele (Abraira et al., 2017) and a conditional allele of Rab7 (Roy et al., 2013) were generated to examine the role of Rab7 in sympathetic neurons in vivo (Figure 3A–D). To ask whether Rab7 plays a role in NGF-dependent survival signaling in sympathetic neurons during early stages of development, Th2a-CreER; Rab7f/f mice were treated with tamoxifen at E14, resulting in a partial loss of Rab7 protein during the critical period of NGF-dependent sympathetic neuron survival (Figure 3—figure supplement 1A). Superior cervical ganglia (SCGs) were harvested at P7 and the number of sympathetic neurons was counted. Compared to Th2a-CreER; Rab7+/+ littermate controls, Th2a-CreER; Rab7f/f animals exhibited ~60% neuronal cell loss (Figure 3A,B). To address the role of Rab7 in TrkA signaling in sympathetic neuronal soma and dendrites postnatally, Th2a-CreER; Rab7f/f mice were treated with tamoxifen at P7 and P8 and SCGs were harvested at P14, a time following the period of NGF-dependent survival of sympathetic neurons. TrkA signaling in sympathetic neurons was assessed using antibodies that specifically recognize the phosphorylated TrkA tyrosine residues 490 or 785; these phosphorylation events are indicative of the active form of TrkA. Interestingly, a marked reduction of P-TrkA punctae was observed in sympathetic ganglia of Th2a-CreER; Rab7f/f mice compared to Th2a-CreER; Rab7f/+ controls (Figure 3C). Moreover, in the absence of Rab7, a decrease in both pre- and post-synaptic specializations visualized using antibodies against the vesicular acetylcholine transporter (VAChT) and Homer1, respectively, was observed (Figure 3C,D). Therefore, Rab7 functions in sympathetic neurons in vivo to support NGF-dependent survival and synapse formation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig3-v2.jpg)
+
+**Figure 3.:** (a,b) Neuronal cell counts of SCGs from Rab7+/+; Th2a-CreER, Rab7f/+; Th2a-CreER and Rab7f/f; Th2a-CreERmice at P7. Tamoxifen was administered at E14 (0.5 mg) to induce Cre expression (n = 3). Scale bar: 100 μm. (c,d) Rab7+/+; Th2a-CreER and Rab7f/f; Th2a-CreERmice were treated with 1 mg tamoxifen at P7 and SCGs were harvested at P14. TrkA signaling was assessed by P-Trk Y490 and Y785 staining. Synaptic organization was assessed by VAChT (green) and Homer (magenta) staining, and VAChT/Homer colocalization (n = 3). (e–g) Sympathetic neurons harvested from P0 Rab7f/f pups were grown in microfluidic chambers and infected with a lentivirus expressing the Cre recombinase. Cells were incubated with NGF in the distal axon compartment and anti-NGF and the caspase inhibitor, BAF, in the cell body compartment for 48 hr, and TrkA signaling was assessed in axons and cell soma was assessed by P-Trk Y785 immunostaining (e,f). Alternatively, retrograde NGF-dependent neuronal survival was assessed (g) (n = 3). (h,i) The Flag-TrkA transport assay was performed in sympathetic neurons infected with lentivirus expressing either a control shRNA or an shRNA against Rab7. The accumulation of Flag-TrkA punctae in cell bodies, which represent retrogradely transported TrkA, was assessed (n = 3). Scale bar: 10 μm (c,e,h). Data are presented in dot plots (b,d,i) or box plots (f,g). *p<0.05, **p<0.01 and ***p<0.001 by one-way ANOVA with a Tukey’s post-hoc test (b,g) or a two tailed unpaired Student’s t test (d,f,i). See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Rab7+/+; Th2a-CreER and Rab7f/f; Th2a-CreERmice were treated with tamoxifen at E14 to induce Cre expression. SCGs were harvested at P0 or P7 and levels of Rab7 protein were assessed by immunoblot. (b) Sympathetic neurons grown in mass culture were infected with a virus expressing either a control shRNA or an shRNA against Rab7. Cells were harvested 72 hr post-infection and levels of Rab7 were assessed by immunoblot. Rab7 shRNA expression led to ~80% decrease in Rab7 protein levels. Rab7+/+; Th2a-CreER and Rab7f/f; Th2a-CreERmice were treated with tamoxifen at E14 to induce Cre expression. SCGs were harvested at P0 or P7 and levels of Rab7 protein were assessed by immunoblot. (c) Sympathetic neurons grown in compartmentalized chambers were infected with lentivirus expressing: a control shRNA, an shRNA against Rab7, Rab7 shRNA and human Rab7, or Rab7 shRNA and mouse Rab7. Cells were then grown either in the presence of NGF only in the distal axon compartment, or with NGF in both the distal axon and the cell body compartments. 72 hr later, the Flag-TrkA endosome transport assay was performed and accumulation of retrogradely transported Flag-TrkA punctae within cell bodies was assessed (n = 3). (d) Compartmentalized sympathetic neurons were infected with the same four combinations of virus as in (c). Cell survival was assessed 36–48 hr later (n = 3). (e,f) DRG primary sensory neurons grown in compartmentalized cultures were infected with lentivirus expressing either a control shRNA or an shRNA against Rab7. 72 hr later, retrograde TrkA transport (e) or survival (f) was assessed in TrkA+ neurons (n = 3). (g) Mitochondrial movement is not perturbed by Rab7 knockdown. Sympathetic neurons grown in compartmentalized culture were infected with either control or Rab7 shRNA. Movement of mitochondria in axons was monitored in real time using mitotracker. Scale: 10 um; 1 min. (h,i) Colocalizaton of Flag-TrkA (green) and CD63-mCherry (magenta) in distal axons 60 min post-NGF stimulation is comparable between neurons expressing control shRNA or Rab7 shRNA. Quantification is shown in (g). (j) Colocalizaton of Flag-TrkA and Rab5 in distal axons 60 min post-NGF stimulation is comparable between neurons expressing control shRNA or Rab7 shRNA. (k) Colocalization between RILP-EGFP and CD63-mCherry+ Flag-TrkA MVBs in distal axons (60 min post-NGF application) in compartmentalized neurons expressing a control shRNA or an shRNA against Rab7. White arrowheads denote RILP/CD63/Flag triple positive endosomes in control axons (left) or CD63/Flag double-positive endosomes that are RILP negative (right). Yellow arrowheads show one RILP/CD63/Flag triple positive endosome in Rab7 knockdown axons. (l) RILP-EGFP (green) co-transport with retrograde Flag-TrkA (magenta) endosomes. Arrowheads denote individual double-labeled endosomes. (m) Rate of movement of RILP-EGFP+ TrkA or EGFP-Rab5+ TrkA endosomes. (n) Percentage of co-transport of RILP-EGFP and TrkA or EGFP-Rab5 and TrkA. (o) Accumulation of retrograde Flag-TrkA endosomes in cell soma in compartmentalized neurons expressing a control shRNA or shRNA against RILP. (p) Kymograph of Flag-TrkA movement in distal axons in compartmentalized neurons expressing a control shRNA or shRNA against RILP. Data are presented in dot plot (c,d) or represented as mean ± SEM (e,f). *p<0.05, **p<0.01 and ***p<0.001 by one-way ANOVA with a Tukey’s post-hoc test.
+
 We next investigated the role of Rab7 in retrograde survival signaling in sympathetic neurons under in vitro conditions in which the time of application of NGF exclusively to distal axons is controlled. Rab7 was ablated in Rab7f/f sympathetic neurons grown in compartmentalized chambers by infecting them with a lentivirus expressing Cre recombinase, or in wild-type compartmentalized sympathetic neurons infected with a lentivirus expressing an shRNA against Rab7, which greatly reduced Rab7 protein levels (Figure 3—figure supplement 1B). NGF was then applied exclusively to distal axons to evaluate the role of Rab7 in retrograde TrkA signaling. Consistent with the in vivo analysis, retrograde TrkA signaling (Figure 3E,F) and survival (Figure 3G; Figure 3—figure supplement 1D) were compromised in neurons lacking Rab7 in vitro. This was not due to a non-specific or global effect on neuronal survival, since addition of NGF directly to cell bodies and proximal axons of neurons lacking Rab7 supported their survival (Figure 3G; Figure 3—figure supplement 1D). Also, Rab7 knockdown did not affect mitochondria movement in axons (Figure 3—figure supplement 1G). To ask whether Rab7 is necessary for retrograde TrkA transport, we performed the Flag-TrkA endosome transport assay in sympathetic neurons expressing Rab7 shRNA. Using this assay, we found that expression of the Rab7 shRNA in sympathetic neurons virtually abolished retrograde transport of Flag-TrkA+ endosomes (Figure 3H,I). On the other hand, Rab7 depletion did not affect TrkA internalization in distal axons (Figure 3H, DA). To assess the specificity of the Rab7 shRNA treatment, we used two Rab7 replacement constructs, one encoded by a human Rab7 cDNA that is resistant to the shRNA and another encoded by a mouse Rab7 cDNA that is the target of the shRNA. Expression of hRab7, but not mRab7, in sympathetic neurons treated with the Rab7 shRNA restored both retrograde TrkA transport and survival (Figure 3—figure supplement 1C,D). Similar observations were found using TrkA+ DRG sensory neurons, suggesting that Rab7 is a general mediator of retrograde TrkA transport and survival across different neuronal types (Figure 3—figure supplement 1E,F). Taken together, these findings indicate that Rab7 mediates retrograde TrkA transport and signaling both in vivo and in vitro.
 
-## Recruitment of RILP to TrkA MVBs mediated by Rab7 is required for retrograde TrkA transport
+### Recruitment of RILP to TrkA MVBs mediated by Rab7 is required for retrograde TrkA transport
 
 Rab7 has been implicated in the early-to-late endosome transition as well as the function and maturation of late endosomes (Vanlandingham and Ceresa, 2009; Lebrand et al., 2002; Rink et al., 2005). To define the step at which Rab7 functions in the context of TrkA endosome maturation, we tested the necessity of Rab7 for formation of TrkA EEs and MVBs in distal axons of sympathetic neurons. Interestingly, comparable levels of Rab5+ or CD63-mCherry+ Flag-TrkA endosomes were found in neurons expressing control or Rab7 shRNA, suggesting that Rab7 is not required for formation of TrkA EEs and MVBs in distal axons (Figure 3—figure supplement 1H–J).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig4-v2.jpg)
+
+**Figure 4.:** (a,b) The Flag-TrkA endosome transport assay was performed in compartmentalized sympathetic neurons expressing CD63-EGFP. The extent of CD63-EGFP+ Flag-TrkA (green/magenta) punctae in proximal axons colocalized with P-Trk Y490 and Y785, P- PLCγ Y783 and Lamp1 (blue) was quantified (b) (n = 3). Scale bar: 10 μm. (c) Sympathetic neurons grown in mass culture were NGF-deprived for 16 hr and were then stimulated with NGF for 1 hr in the presence of DMSO (vehicle control) or K252a (200 nM), a Trk kinase inhibitor. P-TrkA and P-PLCγ signals in cell bodies were assessed by pre-embed immunogold labeling (n = 3). Insets: high-magnification images of the boxed areas. (d,e) The Flag-TrkA assay was performed in compartmentalized sympathetic neurons using pre-conjugated anti-Flag antibody with a 5-nm gold secondary antibody in the presence of DMSO or K252a in the cell body compartment. Neurons were fixed 1 hr post NGF stimulation and P-TrkA and P-Plcγ signals were revealed by immunogold labeling (10 nm). The extent of Flag-TrkA gold particles associated with P-TrkA or P-PLCγ in cell bodies was assessed (n = 3). Scale bar: 100 nm. Data are represented as mean ± SEM (b) or presented in dot plot (e). *p<0.05 and **p<0.01 by one-way ANOVA with a Tukey’s post-hoc test (b) or a two tailed unpaired Student’s t test (e). See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Compartmentalized sympathetic neurons were NGF- and serum-deprived for 6 hr and then stimulated with NGF in the presence of either DMSO or K252a for 20 min in distal axons. Cells were then immunostained for P-Trk Y490, P-Trk Y785 and P-PLCγ (n = 3). (b) The Flag-TrkA assay was performed in compartmentalized sympathetic neurons. Cells were fixed 3 hr post-NGF application and colocalization between Flag-TrkA (green) with P-Trk Y490, P-Trk Y785, P-PLCγ Y783 (Magenta) or lysosomes (blue) in cell bodies was assessed (n = 3). Lysosomes were labeled by pre-loading the cells with Dextran (blue) for 2 hr prior to the Flag assay. Yellow circles denote CD63-mCherry+ Flag-TrkA endosomes. Scale bar: 10 μm. (c) The Flag-TrkA assay was performed in sympathetic neurons in mass culture. Cells were fixed 30 s post-NGF application and colocalization between Flag-TrkA (10 nm gold) with P-Trk Y785 (5 nm gold) on plasma membrane was assessed (n = 3). 63.4 ± 3.5% Flag-TrkA were associated with P-TrkA. Scale bar: 100 nm. Data are represented as mean ± SEM.
+
 Next, we sought to determine whether Rab7 is required for TrkA MVBs to become transport competent. We focused on one Rab7 effector protein, RILP, because it mediates late endosome positioning and dynein-dependent movement along microtubules (Jordens et al., 2001; Johansson et al., 2007). We found that RILP-EGFP was co-localized and co-transported with retrograde Flag-TrkA endosomes in proximal axons of compartmentalized sympathetic neurons (Figure 3—figure supplement 1K–N). Moreover, while RILP-EGFP was associated with CD63-mCherry+ Flag-TrkA endosomes in distal axons, Rab7 depletion abolished this association, suggesting that recruitment of RILP to TrkA+ MVBs is Rab7 dependent (Figure 3—figure supplement 1K). Moreover, in neurons expressing an shRNA directed against RILP, retrograde TrkA transport was markedly compromised (Figure 3—figure supplement 1O,P). Taken together, these findings suggest a Rab7-RILP module associated with TrkA MVBs mediates long-range retrograde transport of TrkA.
 
-## Retrogradely transported TrkA MVBs are signaling competent
+### Retrogradely transported TrkA MVBs are signaling competent
 
 In the canonical ligand-receptor endocytic pathway, after receptor tyrosine kinase (RTK) activation and internalization, ligand-receptor complexes follow an endocytic route from early endosomes to MVBs and finally to LEs and lysosomes (Bergeron et al., 2016). The prevailing view is that signals from activated RTKs emanate primarily from the inner leaflet of the plasma membrane, and then, following internalization, form early endosomes (Cosker et al., 2008; Harrington and Ginty, 2013; Delcroix et al., 2003; Sorkin and von Zastrow, 2009; Zoncu et al., 2009). In this model, sorting of RTKs into MVBs is mainly considered in the context of signal deactivation and ligand/receptor degradation. Alternatively, MVBs may function to promote signaling by mediating sorting and degradation of negative regulators (Taelman et al., 2010). To ask whether retrogradely transported TrkA+ MVBs have signaling capacity, we monitored their association with effectors of NGF/TrkA signaling. NGF-induced TrkA dimerization and autophosphorylation, particularly on tyrosine residues 490 and 785, signifies receptor activation and functions to trigger downstream signaling cascades, including the Ras/ERK, PLCγ, and PI3K pathways, by recruiting signaling pathway effector proteins to the membrane (Figure 4—figure supplement 1A) (Huang and Reichardt, 2001; Sofroniew et al., 2001; Watson et al., 2001). Indeed, both TrkA+ early endosomes and MVBs within axons contain P-TrkA Y490 and Y785, indicative of an active TrkA signaling state (Figure 4A,B). Moreover, most TrkA+ MVBs in axons and cell bodies were observed in association with the active form of a key TrkA effector, PLCγ phosphorylated on tyrosine residue 783, suggesting an ability of TrkA MVBs to recruit and activate core TrkA signaling pathway effectors (Figure 4A,B; Figure 4—figure supplement 1B).
 
 To identify membrane compartments in which retrograde TrkA receptors are capable of signaling, we performed immuno-gold labeling of neurons using the Flag-TrkA retrograde transport assay, in conjunction with antibodies against both P-TrkA and P-PLCγ. Many P-TrkA- and P-PLCγ-labeled structures in cell bodies were observed to be associated with membranes, and the extent of labeling was greatly diminished following treatment of K252a, a Trk kinase inhibitor, thus confirming the specificity of the immuno-gold labeling strategy (Figure 4C). When NGF was applied to cell bodies, co-localization of Flag-TrkA with P-TrkA or P-PLCγ was observed at the plasma membrane as well as associated with early endosomes (Figure 4—figure supplement 1C and data not shown). In contrast, when NGF was applied exclusively to distal axons, both P-Trk and P-PLCγ were observed co-localized with retrogradely transported Flag-TrkA on the limiting membrane and intraluminal vesicles (ILVs) of MVBs in cell bodies in a K252a-dependent manner (Figure 4D,E), which is consistent with findings of the immunocytochemical experiments. The immediate juxtaposition of the small (5 nm) and large (10 nm) gold particles used to simultaneously visualize Flag-TrkA and P-TrkA, respectively, also confirms that the gold-conjugated anti-Flag antibody remains associated with Flag-TrkA throughout the course of these experiments. We also assessed the extent of co-localization between TrkA+ MVBs and the lysosomal marker Lamp1 in axons and cell bodies. While over 50% of CD63 punctae in both distal and proximal axons were Lamp1+, very few CD63/Flag-TrkA double-labeled punctae were associated with lysosomes in axons and cell bodies (8.5 ± 2.2%; Figure 4a,b; Figure 4—figure supplement 1B). Taken together, both TrkA+ early endosomes and MVBs recruit NGF/TrkA signaling effector proteins, suggesting that both are capable of TrkA effector signaling, and retrograde TrkA+ MVBs are uniquely not degradative.
 
-## Retrogradely transported TrkA+ endosomes in cell bodies evolve from MVBs into simple, single-membrane vesicle structures and evade lysosomal sorting
+### Retrogradely transported TrkA+ endosomes in cell bodies evolve from MVBs into simple, single-membrane vesicle structures and evade lysosomal sorting
 
 From the ultrastructural analysis of retrogradely transported Flag-TrkA+ endosomes in cell bodies, we observed that the majority of TrkA receptors are localized to the membrane of intraluminal vesicles (ILVs) of TrkA+ MVBs while a smaller subset is present on the MVB limiting membrane (Figure 1). Based on principles of MVB formation (Hanson and Cashikar, 2012; Katzmann et al., 2002), previous ultrastructural studies of other RTKs (Futter et al., 1996), and our immuno-EM analysis, the topology of TrkA receptors associated with ILVs indicate that its catalytic domain and phosphotyrosine residues are located within the ILV lumen (Figure 4D). TrkA receptors in such a configuration are presumably unable to transmit NGF pro-survival signaling cascades to the cytoplasm and nucleus due to the restricted localization of their effector domains. TrkA receptors on the limiting membrane, in contrast, are in a signaling accessible position with their signaling domains facing the cytoplasm. Therefore, we asked whether the membrane localization of TrkA receptors changes to a position favorable for cytoplasmic signaling following MVB entry into cell bodies.
 
 In order to assess the maturation of retrograde TrkA+ MVBs in cell bodies over time, we developed a pulse-block TrkA labeling strategy based on the Flag-TrkA EM assay (Figure 5A). For this assay, retrograde TrkA transport was allowed to proceed for 25 min. Then, all subsequent TrkA axonal transport from distal axons into cell bodies was blocked by applying nocodazole to the distal axon compartment to disrupt microtubules, and thus microtubule-dependent axonal transport in that compartment. The distribution of Flag-TrkA receptors in different membrane compartments within cell bodies was then assessed by EM at different time points following nocodazole application. The blockade of retrograde transport in distal axons by nocodazole was highly effective since it completely blocked accumulation of newly formed Flag-TrkA endosomes within the cell body compartment (Figure 5—figure supplement 1B). In addition, live cell imaging experiments revealed that retrograde axonal movement of Flag-TrkA+ endosomes in distal axons ceased within 15 to 20 min of nocodazole application (Figure 5—figure supplement 1C). Moreover, nocodazole treatment at 25 min post-NGF application to distal axons resulted in sparse accumulation of retrograde TrkA endosomes in cell bodies at the 1 hr time point post-NGF treatment and a relatively low, but stable number of TrkA receptors were observed over the subsequent several hours (Figure 5B). In contrast, neurons without axonal transport blockade exhibited a dramatic increase in the number of retrograde Flag-TrkA+ vesicles appearing in cell bodies during the 1 hr time period (Figure 5B). Furthermore, nocodazole application to distal axons did not affect microtubule-dependent endosome maturation and trafficking within the cell body compartment (Figure 5—figure supplement 1D,E), indicating effective compartmentalization of transport blockade. These findings indicate that any change in TrkA+ endosome ultrastructure in cell bodies at times following addition of nocodazole to distal axons is the result of maturation or evolution of existing endosomes that had arrived prior to nocodazole application, and not newly trafficked endosomes. Thus, this pulse-block Flag-TrkA EM paradigm allowed us to define the dynamics of membrane localization of retrogradely transported TrkA receptors following their arrival to the cell body.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig5-v2.jpg)
+
+**Figure 5.:** (a) Schematic of the pulse-block assay. The Flag-TrkA assay is performed in Ntrk1Flag sympathetic neurons cultured in compartmentalized microfluidic chambers as in Figure 1—figure supplement 1A using pre-conjugated anti-Flag antibody and Protein A-5 nm gold. Nocodazole is applied to distal axons 25 min post-NGF application to block retrograde transport. Neurons are fixed at indicated time points and processed for EM. (b) The Flag-TrkA assay was performed in WT neurons, Ntrk1Flag neurons treated with either DMSO or nocodazole in distal axons (25 min post NGF). Cells were fixed at indicated time points and processed for EM. The number of gold particles per section per cell was quantified (n = 3, Results were pooled from over 150 Flag-gold particles). (c) The pulse-block assay was performed as in (a), and membrane topology of the Flag epitope was assessed. A schematic of the inner- or outer-leaflet position for membrane of ILVs, the limiting membrane and SVs is shown on the right. (d,e) The pulse-block assay was performed and the distribution of retrogradely transported Flag-TrkA gold particles in MVBs, single-membrane vesicle structures (SVs) and lysosomes within the cell body over time was assessed (e) Results were pooled from over 150 Flag-gold particles from four samples for each time point. Representative images of retrograde Flag-TrkA in each of the three membrane compartments are shown in (d). (f) Sympathetic neurons in compartmentalized cultures were incubated with transferrin-gold (6 nm) in distal axons and the pulse-block assay was performed. The distribution of retrograde transferrin-gold in MVBs, SVs and lysosomes was assessed by EM. For (d–f), over 150 endosomes were counted for each condition at each time point in four independent experiments. Scale bar: 100 nm. Data are represented as mean ± SEM. ***p<0.001 by two-way ANOVA with a Tukey’s post-hoc test (e) or a two-tailed unpaired Student’s t test (c). See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Quantification of retrograde Flag-TrkA localization in MVB, SV and lysosome in cell bodies over time (n = 4,>200 gold particles scored for each time point). Data for the 1 hr time point is the same as in Figure 1C. (b) The Flag-TrkA assay was performed in compartmentalized sympathetic neurons with DMSO or nocodazole (10 μM) applied at the time of NGF application in DA. Accumulation of Flag-TrkA punctae in cell bodies and distal axons was assessed 3 hr post-NGF application (n = 3). Compared to the vehicle control, very few, if any, Flag punctae were observed in nocodazole treated cells. Scale bar: 20 μm. (c) The Flag-TrkA assay was performed in compartmentalized sympathetic neurons with nocodazole (10 μM) applied 25 min post-NGF application in DA. Movement of retrograde Flag-TrkA endosomes was monitored by live imaging in the middle grooves of microfluidic chambers (n = 3). A representative kymograph is shown (left panel). The rate of movement of individual Flag-TrkA endosomes in distal axons at the time of nocodazole application and 20 min afterwards was measured (Right panel). Retrograde movement halted ~15 min post-nocodazole application. Scale bar: 20 μm; 5 min. (d,e) Alexa-488-labeled CTB was applied to the cell body compartment of compartmentalized neuronal culture in the presence of nocodazole either in the cell body or distal axon compartment. The endocytic trafficking of CTB-Alexa488 to lysosomes (c) and axonal movement of CTB (d) were assessed. Scale bar: 10 μm (c). 10 μm; 1 min (d). **p<0.01 using a two-tailed paired Student’s t test.
 
 Using this pulse-block TrkA labeling assay, the majority of TrkA receptors observed in cell bodies by EM were found to be associated with one of three types of membrane structures: MVBs, single-membrane vesicles (SVs), and lysosomes (Figure 5D). Moreover, the membrane localization of the Flag epitope was in agreement with the principle of endocytosis: the Flag epitope was found on the outer leaflet of ILV membranes and the inner leaflet of limiting membranes and SVs (Figure 5C and Figure 1B). Consistent with our previous experiments, 1 hr after NGF application to distal axons, and following blockade of newly arriving endosomes, the majority (92.8 ± 3.6%) of retrograde TrkA+ endosomes were MVBs (Figure 5E, left panel). Among the MVB-resident TrkA receptors, 68.3 ± 2.6% were localized to ILVs and 24.5 ± 4.7% to the limiting membrane (Figure 5E, right panel). Strikingly, the fraction of total cell body Flag punctae found associated with MVBs decreased during the next several hours, and this decrease was coincident with the emergence of Flag-TrkA+ SVs, which peaked (42.4 ± 8.2%) at ~5 hr post-NGF treatment (Figure 5E). Moreover, the fraction of Flag-TrkA+ puncta associated with lysosomes remained low during the first 8 hr of blocking the arrival of new endosomes, and by 24 hr post-NGF the majority of Flag-TrkA receptors were found associated with lysosomes (Figure 5E).
 
@@ -74,7 +126,7 @@ Because the transport blockade prevented TrkA+ endosomes from entering cell bodi
 
 To ask whether the MVB-to-SV transition and delayed lysosomal sorting occurs for MVBs carrying other types of cargoes, we next assessed the fate of retrogradely transported endosomes carrying transferrin, a ‘non-signaling’ cargo. Transferrin was internalized in distal axons in a dynamin-dependent manner and colocalized with the transferrin receptor (Figure 6—figure supplement 1A,B). The majority of newly internalized transferrin and Flag-TrkA were co-localized within distal axons, suggesting that they can be sorted into the same early endosomes (Figure 6—figure supplement 1C). Interestingly, the level of co-localization decreased over time, indicating that these cargoes were later sorted into different vesicular compartments (Figure 6—figure supplement 1C). Moreover, retrogradely transported Flag-TrkA and transferrin remained segregated upon their arrival into cell bodies (Figure 6—figure supplement 1D). Consistent with this, in EM experiments in which transferrin and Flag-TrkA were labeled with different size gold particles, we found that retrogradely transported transferrin and TrkA were localized to distinct MVBs (Figure 6—figure supplement 1E). In addition, in contrast to the observed emergence of TrkA+ SVs in cell bodies, we did not observe SVs containing transferrin (Figure 5F). Instead, the majority of retrogradely transported transferrin proteins were observed in lysosomes, beginning as early as the 2 hr time point, when TrkA was mostly associated with MVBs and SVs. Similar results were found with MVBs containing Cholera toxin subunit B (CTB) or Bovine serum albumin (BSA) (See below, Figure 7B,C; Figure 7—figure supplement 1F,G). Therefore, transferrin and TrkA are retrogradely transported in distinct MVBs populations, and TrkA+ MVBs are unique in that they give rise to SVs and evade lysosomal fusion.
 
-## TrkA+ single vesicles in cell bodies are signaling competent and not associated with the early endosome marker Rab5
+### TrkA+ single vesicles in cell bodies are signaling competent and not associated with the early endosome marker Rab5
 
 We next asked whether TrkA+ SVs that emerge in cell bodies are poised for signaling and associated with signaling effectors. SVs were visualized using immuno-gold labeling of P-TrkA and P-PLCγ in the pulse-block Flag-TrkA EM paradigm. Indeed, 5 hr following NGF application to distal axons, Flag-TrkA receptors localized to the membrane of SVs were observed co-localized with P-TrkA and P-PLCγ, with the Flag epitope oriented on the luminal side of the SV membrane and the phospho-tyrosine residues on the cytoplasmic side (Figure 6A). These observations suggest that TrkA+ SVs derived from MVBs are signaling competent and capable of transducing TrkA signals within the cell body.
 
@@ -82,13 +134,29 @@ We also sought to define molecular features of TrkA+ SVs in cell bodies. To dete
 
 Endocytic pathways downstream of MVBs, other than the well-described degradation pathway, include the recycling pathway and the retromer-dependent transport pathway to the Golgi apparatus (Katzmann et al., 2002; Cullen and Korswagen, 2011). Since TrkA+ SVs in cell bodies are derived from TrkA+ MVBs, the TrkA endocytic pathway in cell bodies might engage one or both of these routes. Indeed, we observed some TrkA + SVs in close proximity to Golgi, while others were close to the plasma membrane and exhibited a tubular shape resembling recycling endosomes (Figure 6—figure supplement 1H). To more directly test these possibilities, we assessed the extent of Flag-TrkA co-localization with Rab11 and Vps35, key components of recycling endosomes and the retromer complex, respectively (Figure 6F). At the 5 hr time point of the pulse-block Flag-TrkA assay, Flag-TrkA+ endosomes were associated with Vps35 (39.8 ± 12.5%) and to a lesser extent Rab11 (13.0 ± 6.6%, Figure 6D,F). Interestingly, nearly all Rab11+ Flag-TrkA endosomes were also Vps35+(10.3 ± 5.7%, Figure 6D,F). We confirmed the Vps35 identity of TrkA+ SVs by APEX2-Vps35/Flag EM double labeling (58.9 ± 8.3% of total Flag-TrkA SVs, Figure 6G; Figure 6—figure supplement 1G). Therefore, a substantial portion of TrkA+ SVs exhibit a molecular feature of retromer complexes, and a subset may include Rab11+ recycling endosomes.
 
-## TrkA kinase activity directs the fate of retrogradely transported TrkA+ endosomes
+![Figure 6.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig6-v2.jpg)
+
+**Figure 6.:** (a) The pulse-block assay was performed in compartmentalized sympathetic neurons using pre-conjugated anti-Flag antibody with 5 nm gold secondary antibody. Cells were fixed 5 hr post-NGF application and immunogold-labeled for P-Trk or P-PLCγ (10 nm). Shown are representative images of an MVB and SV containing retrograde Flag-TrkA gold particles that are juxtaposed to P-Trk or P-PLCγ. High magnification images of the boxed areas are shown in the bottom panel. The percentage of these signaling competent MVBs and SVs in cell bodies was quantified (n = 6). Scale bar: 100 nm. (b,d) The pulse-block assay was performed in compartmentalized sympathetic neurons and colocalization between Flag-TrkA (green) and Rab5 (magenta) in cell bodies was assessed 5 hr post-NGF application. Insets show magnification of the boxed areas. Quantification is shown in (d) (n = 4). Scale bar: 5 μm and 1 μm (inset). (c,e) Sympathetic neurons grown in mass culture were infected with a virus expressing APEX2-Rab5. The Flag-TrkA assay was performed using pre-conjugated anti-Flag antibody with Protein A-5 nm gold secondary antibody and cells were fixed 5 min post-NGF stimulation. DAB staining was performed and cells were processed for EM. The extent of gold particles associated with APEX2+ endosomes in cell bodies was assessed. APEX2+ endosomes were identified based on the dark staining associated with endosomal membranes (arrowheads), compared to the lack of contrast in non-infected cells (left panel). In the right panel, the pulse-block assay was performed in compartmentalized sympathetic neurons expressing APEX2-Rab5. Cells were fixed 5 hr post-NGF stimulation and the extent of gold particles resided in APEX2+ endosomes was assessed. Arrows denote endosomes containing Flag-TrkA and arrowheads denote APEX2+ endosomes. Quantification is shown in (e) (n = 3). Scale bar: 100 nm. (f) The pulse-block assay was performed in compartmentalized sympathetic neurons and colocalization between Flag-TrkA (green), Vps35 (magenta) and Rab11 (blue) in cell bodies was assessed at 5 hr post-NGF application. Insets show magnification of the boxed areas. Quantification is shown in (d) (n = 4). Scale bar: 5 μm and 1 μm (inset). (g) The pulse-block assay was performed in compartmentalized sympathetic neurons expressing APEX2-Vps35. Cells were fixed 5 hr post-NGF stimulation and the extent of gold particles resided in APEX2+ endosomes was assessed (n = 3). Shown is a representative EM image. Scale bar: 100 nm. Data are presented in dot plot (a,e,h) or box plot (d). ***p<0.001 by one-way ANOVA with a Tukey’s post-hoc test (d) or a two-tailed unpaired Student’s t test (e,g). See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Internalized transferrin-Alexa 546 was co-localized with transferrin receptor in distal axons of compartmentalized sympathetic neurons. Scale: 10 μm. (b) Internalization of transferrin-Alexa 546, but not BSA, in distal axons of compartmentalized sympathetic neurons was abolished with treatment of Dyngo, a dynamin inhibitor, exclusively to distal axons. Scale: 10 μm. (c) Internalized transferrin-Alexa 546 and Flag-TrkA were co-localized in distal axons of compartmentalized sympathetic neurons after 5 min, but not 30 min, NGF stimulation. Scale: 10 μm. (d) Retrogradely transported Flag-TrkA and transferrin-Alexa 546 were not co-localized in cell bodies. Distal axons of compartmentalized sympathetic neurons were incubated with Flag antibody and transferrin-Alexa 546. The pulse-block assay was performed. Cells were fixed 1 hr or 5 hr post-NGF application and assessed by immunostaining. (e) Distal axons of compartmentalized sympathetic neurons were incubated with Flag antibody conjugated to Protein A-10nm gold and transferrin-5nm gold. The pulse-block assay was performed. Cells were fixed 1 hr post-NGF application assessed by EM. (e,f) Characterization of APEX2-Rab5 and APEX2-Vps35. Sympathetic neurons in mass culture were infected with a virus expressing APEX2-Rab5 or APEX2-Vps35. 48 hr post-infection, cells were fixed, subjected to DAB staining and processed for EM. For each construct, a representative EM micrograph is shown with an infected cell and an adjacent non-infected cell. Insets show higher magnification of the boxed areas. No overt abnormality with respect to cellular organization and vesicle morphology and localization was observed. Notice the overall higher contrast exhibited in cells expressing APEX2. APEX2 signals were enriched around endosomal membranes as seen from the images with higher magnification. Scale bar: 5 μm; 100 nm (inset). (g) The pulse-block assay was performed in compartmentalized sympathetic neurons. Cells were fixed 5 hr post-NGF application and processed for EM. Shown are examples of Flag-TrkA+ single vesicles that have distinct morphology, subcellular localization and organelle association. Left to right: a tubular shaped TrkA SV that is close to the plasma membrane (white dashed contour); a circular shaped TrkA SV that is close to the plasma membrane (white dashed contour); a circular shaped TrkA SV that is associated with an MVB; and a tubular shaped TrkA SV that is associated with a Golgi apparatus. Magnified images of boxed areas are shown in the lower panel. Scale bar: 100 nm.
+
+### TrkA kinase activity directs the fate of retrogradely transported TrkA+ endosomes
 
 How are MVB, SV and lysosome membrane dynamics regulated following arrival of TrkA+ MVBs in cell bodies, and to what extent does TrkA signaling control this process? To address this, we used a chemical genetic strategy to manipulate TrkA kinase signaling in a compartmentalized manner. For this purpose, we generated a Flag-TrkB/A-F592A expression construct (Figure 7—figure supplement 1A). This construct encodes a chimeric receptor consisting of the TrkB extracellular domain and the TrkA transmembrane and intracellular domains so that BDNF rather than NGF can activate TrkA intracellular signaling in transduced cells (Figure 7—figure supplement 1A). Moreover, the TrkB/A fusion protein contains the Flag epitope tag for detecting retrogradely transported receptors by both light microscopy and EM, as done using neurons harvested from Ntrk1Flag mice. In addition, the construct contains the F592A point mutation within the TrkA kinase domain ATP binding pocket, which renders TrkA catalytic activity sensitive to inhibition by the small molecule 1NMPP1 (Figure 7—figure supplement 1A) (Chen et al., 2005).
 
 As expected (Atwal et al., 2000), expression of Flag-TrkB/A-F592A enabled survival of sympathetic neurons treated with BDNF acting exclusively on distal axons (Figure 7—figure supplement 1C). Furthermore, exposure of Flag-TrkB/A-F592A infected neurons to BDNF in the absence of NGF was sufficient to promote the generation and transport of Flag-TrkB/A-F592A+ signaling endosomes, as seen by an increase in P-Trk immunoreactivity by both light microscopy and EM (Figure 7—figure supplement 1D,E). Importantly, Flag-TrkB/A-F592A autophosphorylation was eliminated upon exposing neurons to 1NMPP1 (Figure 7—figure supplement 1D,E). The elimination of P-Trk signaling in the context of BDNF stimulation also confirmed the lack of activation of endogenous TrkA receptors, which are insensitive to 1NMPP1. Therefore, the Flag-TrkB/A-F592A construct enables both immunodetection of retrogradely transported Flag-TrkB/A-F592A+ endosomes and precise temporally and spatially restricted manipulation of its associated TrkA kinase activity.
 
 To test whether TrkA kinase activity is required for membrane redistribution of retrogradely transported TrkA receptors following TrkA+ endosome entry into cell bodies, we used the pulse-block Flag-TrkA assay and sympathetic neurons that express either Flag-TrkB/A-F592A or Flag-TrkB/A-WT (lacking 1NMPP1 sensitivity) and treated with either 1NMPP1 or the vehicle DMSO applied exclusively to the cell body compartment (Figure 7—figure supplement 1B). Distal axons of these neurons were exposed to BDNF for 5 hr, and the extent of lysosomal localization of retrogradely transported receptors was then assessed by Flag/Lamp1 co-localization (Figure 7A). Interestingly, in cells expressing Flag-TrkB/A-F592A and treated with 1NMPP1 applied to their cell bodies, we observed a dramatic increase in Lamp1+ Flag endosomes compared to the three control conditions (Figure 7A,B). These findings indicate that TrkA kinase signaling in cell bodies prevents precocious sorting of retrograde TrkA+ endosomes to lysosomes.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig7-v2.jpg)
+
+**Figure 7.:** (a) Compartmentalized WT sympathetic neurons were infected with a virus expressing either Flag-TrkB/A-WT or Flag-TrkB/A-F592A. The pulse-block kinase assay was performed as in Figure 5a, with BDNF instead of NGF stimulation in distal axons and with the cell body compartment treated with DMSO or 500 nM 1NMPP1 during the course of the experiments. Cells were fixed 5 hr post-BDNF application, and colocalization between Flag-TrkA (green) and the lysosome marker Lamp1 (magenta) was assessed (n = 3). Scale bar: 10 μm. (b,c) The pulse-block kinase assay was performed in sympathetic neurons expressing Flag-TrkB/A-F592A using pre-conjugated anti-Flag antibody with Protein A-5 nm gold or a transferrin-gold tracer (6 nm). Cells were fixed at indicated time points and the number of Flag-TrkB/A-F592A or transferrin-gold particles associated with MVBs, SVs and lysosomes was scored (c) (n = 3). Shown in (b) are representative EM micrographs of retrogradely transported Flag-TrkA and transferrin-gold in MVBs or lysosomes at the 3 hr time point. Scale bar: 100 nm. (d) The pulse-block kinase assay was performed as in (b) with either the presence or absence of NGF in the cell body compartment during the course of experiments. The extent of lysosomal Flag-TrkA or transferrin-gold was assessed 3 hr post-BDNF application (n = 3). Data are presented in dot plot (a) or represented as mean ± SEM (c,d). *p<0.05, **p<0.01 and ***p<0.001 by two-way ANOVA with Tukey’s post-hoc test (a) or three-way ANOVA with Tukey’s post-hoc test (c,d). See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33012/elife-33012-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Schematic of the Flag-TrkB/A-F592A construct. See also Materials and methods. (b) Schematic of the pulse-block kinase assay. See also Materials and methods. (c) Compartmentalized sympathetic neurons expressing Flag-TrkB/A-F592A were cultured in conditions in which distal axons were exposed to BDNF or NGF while the cell body compartment was neurotrophin-deprived. Neuronal survival was assessed 48 hr later. Neurons expressing Flag-TrkB/A-F592A can rely on BDNF applied to distal axons as the sole source of survival signal, indicating that the modified receptor can be activated by BDNF and the retrograde survival signal can be transmitted to cell bodies (n = 3). (d) WT neurons in mass culture expressing Flag-TrkB/A-F592A virus were serum- and neurotrophin-starved overnight and then incubated with no neurotrophin, BDNF and DMSO, or BDNF and 500 nM 1NMPP1. 20 min later, cells were salt/acid stripped and Flag-TrkB/A-F592A internalization and activation was assessed by Flag (magenta) and P-Trk Y785 (green) immunostaining (n = 3). The lack of P-Trk signals in the BDNF/1NMPP1-treated cells suggest that 1NMPP1 treatment is efficacious in inhibiting TrkA F592A kinase activity and BDNF stimulation does not lead to activation of endogenous TrkA receptors, whose kinase activity is 1NMPP1 insensitive. Scale bar: 10 μm. (e) WT neurons in mass culture expressing Flag-TrkB/A-592A were serum- and neurotrophin-starved overnight and subsequently stimulated with BDNF in the presence of DMSO or 1NMPP1 for 20 min. Cells were then fixed and processed for P-Trk Y785 immunogold labeling. 1NMPP1 treatment eliminated the majority of P-Trk signal as seen in the EM micrograph. Scale bar: 1 μm. (f,g) The pulse-block kinase assay was performed in sympathetic neurons expressing Flag-TrkB/A-F592A using CTB-gold, BSA-gold or transferrin-gold (6 nm). Cells were fixed at indicated time points and the number of gold particles associated with MVBs, SVs and lysosomes was scored for each condition (g) (n = 3). Shown in (f) are representative EM micrographs of retrogradely transported CTB-gold, BSA-gold and transferrin-gold in MVBs or lysosomes. Scale bar: 100 nm. Data are represented as mean ± SEM. Statistical analysis was done using one-way ANOVA with a Tukey’s post-hoc test.
 
 To further explore the role of TrkA kinase activity in endosome sorting within cell bodies, we analyzed the relative amounts of retrogradely transported Flag-TrkB/A-F592A in association with MVBs, SVs and lysosomes by EM (Figure 7B,C). Neurons expressing Flag-TrkB/A-F592A and treated with either DMSO or 1NMPP1 in the cell body compartment exhibited a similar pattern of TrkA membrane localization at the 1 hr time point, with the majority of Flag-TrkB/A-F592A associated with MVBs (Figure 7C). However, at later time points, neurons exposed to 1NMPP1 on cell bodies exhibited a much lower fraction of Flag-TrkB/A-F592A+ MVBs, virtually no Flag-TrkB/A-F592A+ SVs, and a much higher percentage of Flag-TrkB/A-F592A+ lysosomes, compared to DMSO control-treated neurons (Figure 7B,C). These observations indicate that TrkA kinase activity is necessary for the proper distribution of retrogradely transported TrkA within MVBs and SVs and the prevention of premature lysosomal sorting following endosome arrival to cell bodies.
 
@@ -108,13 +176,13 @@ The present findings cause us to reconsider a long-held view in neuronal cell bi
 
 Our in vivo findings demonstrate that Rab7 participates in TrkA signaling, survival and synaptogenesis of sympathetic neurons. In vitro, Rab7 is associated with, and necessary for retrograde transport of TrkA+ signaling endosomes. Moreover, Rab7 is required for neuronal survival when NGF is applied exclusively to distal axons. The sympathetic neuron survival defect in Rab7 mutant SCGs in vivo is, however, considerably less dramatic than that in SCGs of either Ntrk1 or Ngf null mice in vivo (Smeyne et al., 1994; Crowley et al., 1994). This discrepancy may be attributed to the incomplete ablation of Rab7 between E14 and P0 (Figure 3—figure supplement 1A). Alternatively, a fraction of NGF survival signaling may occur via Rab7-independent MVB transport mechanism, NGF acting directly on cell bodies, or through early endosomes or another retrograde signal carrier that compensates for loss of Rab7 at embryonic times. Although a more complete depletion of Rab7 was achieved at P7 (Figure 3—figure supplement 1A), sympathetic neurons are less dependent on NGF signaling for survival at this postnatal period. Ablation of Rab7 postnatally, during a period of NGF-dependent synaptogenesis, resulted in a dramatic loss of synaptic structures in sympathetic ganglia, showing that Rab7 is required for transmitting retrograde NGF synaptogenic signals. It is possible that a neuronal survival defect occurring between P7 and P14 contributes to the apparent loss of synaptic markers, or the extent of their colocalization, in the in vivo experiments. Future work will be needed to more rigorously test whether there is a survival-independent role of Rab7 during the establishment of sympathetic neuron connectivity. Nevertheless, a role for Rab7 during retrograde TrkA transport, survival and synapse formation provides additional support for the notion that MVBs are major carriers of retrograde NGF signals. Molecularly, one mechanism by which Rab7 mediates axonal transport of TrkA endosome is through its effector protein RILP, which also binds to dynein. In at least one reported case, the Rab7-RILP-dynein interaction facilitates movement of late endosomes on microtubules and maintains their perinuclear localization (Jordens et al., 2001; Johansson et al., 2007). Consistent with this, we found that RILP is recruited to TrkA+ MVBs in a Rab7-dependent manner and is required for retrograde TrkA transport. Therefore, we suggest that Rab7 controls maturation and transport competency of TrkA+ MVBs through recruitment of RILP.
 
-## Multivesicular bodies as sorting and signaling platforms in neuronal soma
+### Multivesicular bodies as sorting and signaling platforms in neuronal soma
 
 A long-standing view is that MVBs either repress signaling via receptor downregulation or, in some cases, facilitate signaling by degrading negative regulators (Taelman et al., 2010; Katzmann et al., 2002). Our findings provide evidence that MVBs can promote growth factor signal transduction directly. A signaling role for MVBs is supported by the presence of P-Trk phospho-tyrosine residues and P-PLCγ associated with retrograde TrkA+ MVBs in cell bodies. Moreover, our pulse-block EM experiments revealed that MVBs give rise to, either directly or indirectly, a new type of endosome that has a single membrane structure that does not associate with Rab5 and that exhibits a topology of TrkA receptors in which the kinase domain is oriented toward the cytoplasm and thus poised for RTK signaling within the cytoplasm. MVBs can fuse with the plasma membrane and release intraluminal vesicles as exosomes. Therefore, theoretically, the TrkA+ SVs we observed within cell bodies could be formed via exosome fusion with the cell body plasma membrane and subsequent receptor internalization. However, both our immunocytochemical and APEX2 EM findings indicate a lack of Rab5+ Flag-TrkA endosomes in cell bodies within the time frame of our measurements (Figure 6 and Figure 6—figure supplement 1). Therefore, it is unlikely that the Flag-TrkA+ single vesicle population we observed in the pulse-block EM experiments is derived from an exosome route.
 
 To our knowledge, an MVB-to-SV maturation step has been observed in only two other examples. First, in naive dendritic cells, MHC II receptor proteins are stored within intraluminal compartments of MVBs. Upon stimulation, these receptors can translocate from MVBs to the plasma membrane via an endosome intermediate (Kleijmeer et al., 2001; Turley et al., 2000). In a second case, Ebola virus, upon cellular entry, becomes enriched in Rab7+late endosomes and this is an obligatory step for infection (Saeed et al., 2010; Spence et al., 2016). The virus can later exit late endosomes and re-enter the cytoplasm. The virus is not sorted into ILVs, but its envelope, a single-pass membrane structure, is thought to be fused with the MVB limiting membrane through Niemann–Pick disease, type C proteins NPC I (Carette et al., 2011). These studies, together with the present work, indicate that MVBs are dynamic, versatile structures that, depending on the nature of their cargoes, function in cargo transport, sorting, degradation, and signaling. Moreover, we suggest that TrkA receptors localized to both SVs and the limiting membrane of MVBs provides a potential platforms for recruitment and activation of downstream effector proteins following retrograde the period of TrkA+ MVB transport to cell bodies. Determining the mechanisms by which TrkA+ MVBs give rise to SVs within the cell body, and defining the relative contributions of TrkA receptors on MVB limiting membranes and SV membranes for cell body TrkA signaling will be important future directions of this work.
 
-## TrkA signaling directs the maturation and fate of retrogradely transported MVBs
+### TrkA signaling directs the maturation and fate of retrogradely transported MVBs
 
 While the existence of signaling endosomes following receptor endocytosis is well documented, mechanisms that underlie their maturation and metabolism have remained unclear, as has the significance of receptor activity and signaling from endosomal platforms in general (Sorkin and Von Zastrow, 2002). This is at least partly due to the close spatial and temporal proximity between endosomal signaling events and signals emanating from the plasma membrane, which are difficult to distinguish in cells with a simple morphology. Studies of target-derived growth factor signaling in neurons provide a unique opportunity to address mechanisms of endosome maturation, metabolism and signaling because the plasma membrane of distal axons is physically well separated from retrogradely transported endosomes that reside within the soma. Our pulse-block paradigm, which takes advantage of the separation between the site of plasma membrane signaling and endosome formation (distal axons) and a distant site of endosome signaling, maturation and degradation (cell bodies), allowed us to monitor stages of TrkA+ endosome maturation and degradation in cell bodies in a synchronized fashion. Our findings that TrkA+ SVs emerge from MVBs within cell bodies and that delayed lysosomal sorting occurs for retrograde TrkA+ MVBs, but not transferrin-, BSA-, or CTB-containing MVBs, suggest that the emergence of SVs from MVBs is under the control of some unique feature of TrkA+ MVBs. Indeed, we found that inhibition of TrkA kinase activity in cell bodies using a selective chemical genetic approach caused TrkA+ MVBs to behave similarly to transferrin+, BSA+, and CTB+ MVBs, which do not give rise to SVs but instead rapidly sort to lysosomes. Moreover, cell-body-generated NGF signals partially rescued the rapid lysosomal fate observed for signaling-deficient TrkA+ MVBs while TrkA signals emanating from the cell body had no effect on the behavior of MVBs carrying non-TrkA cargoes, suggesting that NGF/TrkA signaling can function both in cis and in trans to influence maturation of retrograde TrkA MVBs. Therefore, active TrkA signaling is required for the emergence of TrkA+ SVs from MVBs and the prevention of precocious lysosomal sorting, both of which, we suggest, promote further TrkA signaling.
 
@@ -122,7 +190,278 @@ One effector protein preferentially associated with TrkA+ endosomes in cell bodi
 
 ## Materials and methods
 
-## Molecular cloning, transfection and lentiviral infection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ntrk1Flag</td>
+      <td>(Sharma et al., 2010) PMID: 20696380</td>
+      <td></td>
+      <td rowspan="3">Mice were handled and housed in accordance with Harvard Medical School and Johns Hopkins University IACUC guidelines</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Th2a-CreER</td>
+      <td>(Abraira et al., 2017) PMID: 28041852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rab7flox</td>
+      <td>(Roy et al., 2013) PMID: 23615463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NeuN</td>
+      <td rowspan="4">Abcam (Cambridge, MA)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rab5</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rab7</td>
+      <td></td>
+      <td>1:200 for ICC; 1:1000 for immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Lamp1</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-Trk Y490</td>
+      <td rowspan="3">Cell signaling(Danvers, MA)</td>
+      <td></td>
+      <td rowspan="2">1:2000; 1:100 for immunoEM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-Trk Y785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-PLCγ</td>
+      <td></td>
+      <td>1:500; 1:50 for immunoEM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VAChT</td>
+      <td>Enzo Life Sciences (Farmingdale, NY)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Homer1</td>
+      <td>Synaptic Systems (Germany)</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag</td>
+      <td>Sigma (St. Louis, MO)</td>
+      <td></td>
+      <td>1 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa conjugated secondary antibodies (488, 555, 647)</td>
+      <td>Thermo Fisher Scientific (Waltham, MA)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG F(ab’)2–6 nm/10 nm gold secondary antibodies</td>
+      <td>Aurion (Netherlands)</td>
+      <td></td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Protein A-5nm/10 nm gold</td>
+      <td>Made by The Harvard Medical School EM Facility</td>
+      <td></td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW</td>
+      <td>(Lois et al., 2002) PMID: 11786607</td>
+      <td></td>
+      <td>Addgene 14882</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>APEX2</td>
+      <td>(Lam et al., 2015) PMID: 25419960</td>
+      <td></td>
+      <td>Addgene 49385</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-EGFP-Rab5</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-EGFP-Rab7</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-CD63-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-CD63-mCherry</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-RILP-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-APEX2-Rab5</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-APEX2-Vps35</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-Flag-TrkB/A-WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td rowspan="2">The TrkB/A chimeric receptor comprises the extracellular domain of TrkB (nucleotide 1–1242) and the transmembrane and intracellular domains of TrkA (nucleotide 1156–2400)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUW-Flag-TrkB/A-F592A</td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for genotypingTh2a-CreER</td>
+      <td></td>
+      <td></td>
+      <td>CATGCCCATATCCAATCTCC and CTGGAGCGCATGCAGTAGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for genotyping Rab7flox</td>
+      <td></td>
+      <td></td>
+      <td>CTCACTCACTCCTAAATGG and TTAGGCTGTATGTATGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNAs for Rab7</td>
+      <td></td>
+      <td></td>
+      <td>GAAGTTCAGTAACCAGTACAA; GCGGCAGTATTCTGTACAGTA; GCCCTTAAACAGGAAACAGAA; TGAACCCATCAAACTGGACAA; TGCTGTGTTCTGGTGTTTGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNAs for RILP</td>
+      <td></td>
+      <td></td>
+      <td>CAGCTATGCAGGAGGCTTAAC; AGATCAAGGCCAAGATGTTAG; CCAGAATTTCTTTGGCTTATG; TTCAGCAGGGAAGAGCTTAAG; AGGAGCGGAATGAGCTCAAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scrambled shRNA</td>
+      <td></td>
+      <td></td>
+      <td>CCTAAGGTTAAGTCGCCCTCG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>K252a</td>
+      <td rowspan="3">EMD Millipore (Billerica, MA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1NMPP1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Saponin</td>
+      <td rowspan="2">MP Biomedicals (Santa Ana, CA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3.3’-Diaminobenzidine (DAB)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6 nm gold-conjugated transferrin, CTB, BSA</td>
+      <td>Electron Microscopy Sciences (Hatfield, PA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning, transfection and lentiviral infection
 
 cDNAs of mouse Rab5, Rab7, CD63 and Hrs and human Rab7 were purchased from GE Healthcare. A plasmid containing the APEX2 cDNA was a gift from Alice Ting (Addgene plasmid # 49385). Individual cDNAs or fusion transgenes were cloned into the lentiviral vector FUW by In-Fusion cloning kit (Takara). Sequences of 21mer siRNAs against mouse Rab7 or RILP were obtained from TRC library (Moffat et al., 2006). shRNA oligos were synthesized, annealed and cloned into the lentiviral pLLX vector as described (Zhou et al., 2006).
 
@@ -130,44 +469,44 @@ DNA plasmids were transfected into neuronal cells on DIV three using Lipofectami
 
 Lentivirus was generated, harvested and concentrated as previously described (Salmon and Trono, 2007). Neuronal cultures were infected on DIV three and experiments were performed 48 ~ 72 hr later.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Superior cervical ganglia (SCG) were dissected, fixed in 4% PFA at room temperature for 1 hr, and cryoprotected in 30% sucrose at 4◦C overnight. Individual ganglion was embedded in OCT (Tissue Tek) and sectioned at 10 μm. Tissue sections were rehydrated in PBS, blocked 5% serum and 0.05% TritonX-100 for 1 hr and incubated with primary antibodies at 4◦C overnight. The next day, sections were washed and incubated with fluorescent secondary antibodies for 1 hr at room temperature. After extensive wash, sections were mounted. Images were acquired by laser scanning confocal microscopy (Zeiss LSM 700).
 
-## Neuronal cell culture
+### Neuronal cell culture
 
 Sympathetic neurons were cultured as described previously (Sharma et al., 2010; Harrington et al., 2011). Briefly, SCGs harvested from P0-P4 mice were dissociated and plated in mass cultures or compartmentalized microfluidic devices. Neuronal cultures were maintained in DMEM supplemented with 10% FBS and NGF (50 ng/ml). Cytosine β-D-arabinofuranoside (AraC) was added from DIV 1–3 to eliminate proliferating fibroblast and glia cells. DRG sensory neurons were cultured as previously described (Huang et al., 2015).
 
-## The Flag-TrkA endosome transport assay
+### The Flag-TrkA endosome transport assay
 
 The Flag-TrkA assay was conducted as follows: an anti-Flag antibody was applied to the distal axon compartment (DA) of the microfluidic chamber and cells were incubated for 45 min at 4◦C. Axons were washed extensively to remove unbound antibody and NGF was applied to the DA side. Cells were then incubated at 37◦C for indicated times to allow Flag-TrkA internalization, maturation and trafficking. To visualize internalized Flag-TrkA in distal axons, the DA compartment was washed with 0.5M NaCl/0.2M acetic acid to remove surface bound antibody prior to fixation.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 To visualize proteins associated endosomes, a 0.025% saponin wash was performed first for 2 min. Cells were then fixed with 4% PFA for 10 min, blocked in 0.05% saponin and 2% serum, and subjected to antibody staining. TrkA+ neurons in DRG cultures were identified by TrkA immunostaining and only those neurons were counted for quantification. 16 bit Images were acquired at resolution 1024*1024 by laser scanning confocal microscopy (Zeiss LSM 700).
 
-## Live cell imaging
+### Live cell imaging
 
 To track Flag-TrkA endosome movement in real time, an anti-Flag antibody pre-conjugated to Alexa Fluoro secondary antibody was applied to the distal axon compartment during the 4◦C incubation step of the Flag-TrkA assay. Prior to imaging, culture medium was replaced by artificial cerebrospinal fluid (ACSF) that is phenol red free and CO2 independent. Axons and cell bodies were imaged by spinning disk microscopy (Zeiss) at 37◦C in an environmental chamber at two frames per second (512 × 512 pixels) using a 63X oil immersion objective (1.40 NA). Time-lapse images were imported to ImageJ (NIH) and individual vesicles were tracked manually and analyzed by the MtrackJ plugin (Meijering et al., 2012).
 
-## Electron microscopy and APEX2 detection
+### Electron microscopy and APEX2 detection
 
 To detect retrogradely transported Flag-TrkA, transferrin, CTB or BSA, an anti-Flag antibody pre-conjugated to Protein A-5 nm gold secondary antibody, transferrin-gold (6 nm), CTB-gold (6 nm) or BSA-gold (6 nm) was applied to distal axons during the 4◦C incubation step of the Flag-TrkA assay, respectively. After the transport assay, cells were fixed in 2.5% glutaraldehyde in 0.1M cacodylate buffer for 30 min at room temperature. Cells were then post-fixed with 1% osmium tetroxide, stained with 2% uranyl acetate and 2% tannic acid to enhance membrane contrast, dehydrated in series of ethanol followed by embedding in EPON resin. The next day, coverslips were removed and areas containing cells were randomly selected and mounted. Ultrathin sections (70 nm) were collected, stained with lead citrate, and were examined on a JOEL electron microscope.
 
 To detect protein localization by APEX2 reaction, diaminobenzidine (DAB) staining was performed as described previously (Lam et al., 2015): after fixation, cells were incubated in a Tris buffer containing DAB (0.7 mg/ml) and H2O2 (0.7 mg/ml) for 15–40 min until the development of brown reaction product. Cells were then washed extensively to prevent further reaction. Samples were subjected to EM procedures as above. Staining with uranyl acetate, tannic acid and lead citrate was omitted to maximize EM contrast generated by DAB staining.
 
-## Immunoelectron microscopy
+### Immunoelectron microscopy
 
 Flag-TrkA assay was performed as above. Cells were fixed in 4% PFA and 0.15% glutaraldehyde for 30 min. Cells were then washed with 0.1% sodium borohydride for 30 min at room temperature to quench excessive free aldehyde and blocked in PBS with 10% serum, 0.05% saponin and 0.5% gelatin for 2 hr. Cells were incubated in primary antibodies in blocking solution overnight. After extensive washing, cells were incubated with 10 nm gold secondary antibodies overnight and washed again. Cells were then processed for EM.
 
-## The pulse-block assay
+### The pulse-block assay
 
 The Flag-TrkA assay was performed as above. Nocodazole (10 μM) was added to distal axons at indicated time points post-NGF application. Cells were fixed at indicated time points and processed for ICC, EM or immunogold labeling as described in previous sections.
 
-## The pulse-block kinase assay
+### The pulse-block kinase assay
 
 Compartmentalized sympathetic neurons were infected with lentivirus expressing either Flag-TrkB/A-F592A or Flag-TrkB/A-WT. The Flag-TrkA assay was performed as described with the following modification: cells were stimulated with BDNF instead of NGF, and either DMSO or the TrkA F592A kinase activity inhibitor 1NMPP1 (500 nM) was applied to the cell body compartment at varying time points as indicated during the course of the experiment. The cells were then subjected to ICC or TEM as above.
 
-## Image analysis
+### Image analysis
 
 For all quantifications, axon segments or cell body areas were randomly selected. Images were first background subtracted by the Rolling Ball method (Sternberg, 1983) and then smoothed before further analyses in ImageJ. Colocalization was assessed by Pearson’s correlation.

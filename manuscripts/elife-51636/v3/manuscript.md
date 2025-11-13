@@ -41,45 +41,181 @@ We have shown previously that SIRT6 is one of the earliest factors recruited to
 
 ## Results
 
-## SIRT6 arrives at sites of damage independently of other sensors or signaling
+### SIRT6 arrives at sites of damage independently of other sensors or signaling
 
 First, we set out to investigate the relationship between SIRT6 and the three known DSB sensors, PARP1, MRE11 (of the MRN complex), and Ku80 (of the Ku complex). PARP proteins are among the fastest known enzymes to arrive at DSBs, and their absence is known to impair the recruitment of DSB repair enzymes such as MRE11, NBS1 and Ku80 (Haince et al., 2008; Yang et al., 2018). We inhibited PARP activity by supplementing cells with Olaparib, and tracked SIRT6 recruitment to sites of laser induced damage (LID) by live-cell imaging. Interestingly, SIRT6 recruitment was found to be independent of PARP activity. SIRT6 arrived at the damage sites even when PARP proteins were inhibited, while the recruitment of the macro-H2A macro domain, which was used as a control, depended entirely on PARylation (Figure 1A–C, Figure 1—figure supplement 1A–C).
 
 Subsequently, we silenced MRE11 and observed impaired NBS1 recruitment but no effect on SIRT6 (Figure 1D–F, Figure 1—figure supplement 1D–F). Ku80 silencing resulted in the expected defects in Ku70 recruitment, but did not impair SIRT6 arrival, in fact even larger amounts of SIRT6 were recruited to the site of damage (Figure 1D–F, Figure 1—figure supplement 1 G-I). Moreover, when we tested the effect of SIRT6-KO (Figure 1—figure supplement 1J) on the recruitment of MRE11 and Ku80, we found that while MRE11 recruitment was defective (Figure 1G–I), Ku80 was not affected by the lack of SIRT6 (Figure 1J–L). This suggests that SIRT6 may have a role in MRN recruitment or residency at DSB, but that the Ku complex is independent of it. Next, we silenced ATM and H2AX, which are both involved in DDR signaling (Figure 1—figure supplement 2A). Even though this produced defective signaling, as shown by decreased DDR signaling (Figure 1—figure supplement 2B–D), SIRT6 arrived at the sites of damage independently of these factors (Figure 1—figure supplement 2E–G).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig1-v3.jpg)
+
+**Figure 1.:** (A–C) Imaging and AUC for SIRT6-GFP in cells with or without Olaparib. (A) Live imaging recruitment upon UV laser-induced damage (LID) shown by SIRT6-GFP in U2OS +/– Olaparib. Representative experiment examining SIRT6 recruitment to LID (n[+Ola]=23, n[–Ola]=23). (B) SIRT6 accumulation in same experiment as panel (A). (C) Average area under the curve (AUC) for cells +/– Olaparib in three replicate experiments. Error bars are the standard error of the mean (SEM) (n[+Ola]=38, n[–Ola]=39, p>0.05). (D–F) Imaging and AUC for SIRT6-GFP accumulation in shControl, shKu80 or shMRE11 Hela cells. (D) Average AUC from three experiments. Error bars are the SEM (shControl: n = 50; shKu80: n = 50, p<0.0005; shMRE11: n = 52, p>0.05). Accumulation of SIRT6-GFP (E) and imaging (F) from a representative experiment examining SIRT6 recruitment after LID (n[shControl]=28; n[shKu80]=30, n[shMRE11]=30). (G–I) MRE11-Cherry accumulation in response to LID in SIRT6 WT and KO U2OS cells. MRE11-Cherry imaging (G) and accumulation (H) in a representative experiment (n[WT]=20, n[KO]=16). (I) Mean AUC for three replicate experiments. Error bars are the SEM (n[WT]=36, n[KO]=33, p<0.0005). (J–L) Ku80-GFP accumulation in response to LID in SIRT6 WT and KO U2OS cells. Ku80-GFP imaging (J) and accumulation (K) in a representative experiment (n[WT]=17, n[KO]=17). (L) Mean AUC for three replicate experiments. Error bars are the SEM (n[WT]=33, n[KO]=33, p>0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Effect of LID on Macro-domain mKate2 in U2OS +/- Olaparib. (n[+Ola]=10, n[-Ola]=10). (C) Average AUC of Macro-mKat2 in U2OS +/- Olaparib for three replicated experiments (error bars are SEM) (n[+Ola]=25, n[–Ola]=25, p<0.0005). (D) Blot of shControl and shMRE11 Hela cells. (E) Effect of LID on NBS1-Cherry in shControl (n = 10) and shMRE11 Hela cells (n = 10). (F) Average AUC for three replicate experiments +/- SEM (n[shControl]=29, n[shMRE11]=30, p<0.005)). (G) Protein blot of shControl and shKu80 Hela cells. (H) Effect of LID on Ku70-GFP accumulation in shControl (n = 10) and shKu80 Hela cells (n = 10). (I) Average AUC for three replicate experiments. Error bars are SEM (n[shControl]=33, n[shKu80]=31, p<0.0001). (J) Blot of WT and SIRT6KO cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Blot of shATM, shH2AX and shcControl Hela cells. (B) Immunofluorescence of γH2AX in sh-Hela cells upon irradiation (IR). (C) Quantification of γH2AX foci in Control (n[–IR]=283, n[+IR]=301), shH2AX (n[–IR]=284, n[+IR]=322) and shATM (n[–IR]=299, n[+IR]=385) Hela cells. The bar chart shows the percentages of cells with 0–3, 4–10 or more than 10 foci per nucleus (+/- IR, average of six experiments). (D) Statistical analysis of the γH2AX foci quantification experiment depicted in panel (C) (*, p < 0.05; **, p <0.005, ***, p < 0.0005). (E,F) Representative experiment showing SIRT6-GFP accumulation in response to LID in shH2AX (n = 10), shATM (n = 10) or shControl (n = 10) cells. (G) Average AUC for three replicate experiments. Error bars are SEM (shControl: n = 30; shH2AX: n = 30, p>0.05; shATM: n = 30, p>0.05).
+
 These results indicate that SIRT6 recruitment is independent of known DSB sensors and is upstream of ATM and H2AX phosphorylation. To understand whether SIRT6 is recruited through by signaling initiated at the sites of damage themselves, we tested whether it can be recruited by the initiation of a DNA damage response in the absence of actual DNA damage (lack of DSBs). To answer this question we took advantage of a tethering assay in which we used U2OS cells containing 256x lactose operator (LacO) repeats in their genome (Shanbhag et al., 2010; Tang et al., 2013). We transfected these cells with chimeric proteins containing lactose repressor (LacR) conjugated to known DDR-initiating repair enzymes (scheme in Figure 2A; Soutoglou and Misteli, 2008). In this system, the mere presence of ATM (ATM-LacR-Cherry) on chromatin initiates the DDR, as shown by H2AX ser-139 phosphorylation (γH2AX) (Figure 2—figure supplement 1A–B; Soutoglou and Misteli, 2008). However, in this system with no actual DNA damage, ATM failed to recruit SIRT6 to the LacO site, even though signaling was taking place and H2AX was phosphorylated (Figure 2B–C). As a control, we showed that known interactors such as SNF2H and Ku80 (McCord et al., 2009; Toiber et al., 2013) did recruit SIRT6 to the tethering sites (Figure 2B–C, Figure 2—figure supplement 1C–D). Moreover, MRE11 and NBS1 also recruited SIRT6 to the LacO site (Figure 2—figure supplement 1C–D), suggesting that there is either direct interaction between these sensors and SIRT6 or that they work together in a DDR complex.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig2-v3.jpg)
+
+**Figure 2.:** (A) Schematic representation of the ‘Tethering assay’. Recruitment can occur through DDR signaling (ATM-LacR-Cherry) or through direct protein–protein interaction (SNF2H-LacR-GFP). (B, C) Recruitment of SIRT6-GFP/SIRT6-Cherry to LacO sites by ATM-LacR-Cherry (n = 30, p>0.05), SNF2H-LacR-GFP (n = 85, p<0.005) and GFP-LacR (n = 85). The bar chart in panel (B) depicts averages for3–6 experiments. Error bars are SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Initiation of DDR by ATM-LacR-Cherry (n = 33, p<0.005), NBS1-LacR-Cherry (n = 82, p<0.05), MRE11-LacR-Cherry (n = 136, p<0.005) and Ku80-LacR-GFP (n = 52, p>0.05) in the tethering system. Co-localization percentage with γH2AX (compared to GFP-LacR (n = 310)) (A) and immunofluorescence (B) are shown. (C, D) Recruitment of SIRT6-GFP/SIRT6-Cherry to LacO sites by NBS1-LacR-Cherry (n = 87, p<0.0005), MRE11-LacR-Cherry (n = 31, p<0.005), Ku80-LacR-GFP (n = 45, p<0.005) and GFP-LacR (n = 85). Co-localization percentage with SIRT6 (compared to GFP-LacR (C) and immunoflorescence (D) are shown. Averages are for 3–5 experiments. Error bars show the SEM.
 
 Taken together, these results indicate that SIRT6 arrives at the sites of damage independently of MRE11, Ku80 and PARP activity, and that signaling itself is not sufficient to bring SIRT6 to the damage sites in the absence of actual DNA damage.
 
-## SIRT6 binds DNA DSBs directly
+### SIRT6 binds DNA DSBs directly
 
 The findings described so far suggest that SIRT6 responds selectively to the actual damage, and that silencing or inhibiting key factors in the DDR do not affect its fast recruitment. Therefore, we tested whether SIRT6 could detect the actual DNA break on its own. We first measured SIRT6 capacity to bind naked DNA by electrophoretic mobility shift assay (EMSA). We found that SIRT6 was able to bind naked DNA without preference for a sequence (we tested different oligos and restricted sites, see Table 1) (Figure 3A–B, Figure 3—figure supplement 1A). We studied the preference of SIRT6 for several DNA damage structures, including dsDNA with blunt or overhanging ends as well as RNA. SIRT6 has the ability to bind them all, but it binds RNA with much lower affinity (Figure 3—figure supplement 1B). SIRT6 exhibits the highest affinity towards ssDNA (Kd = 1.39 μM), showing binding affinity values similar to those for MRE11 (Kd ~1 μM) (Williams et al., 2008) and Ku80 (Kd = 0.4 μM) (Arosio et al., 2002). Interestingly, on the basis of the curve fitting, SIRT6 seems to bind ssDNA at one site as a monomer. By contrast, there seems to be a cooperative effect when testing blunt and sticky-end DNA (Hill Slope greater than 1), suggesting that for open-ended dsDNA, two molecules of SIRT6 participate in binding, each SIRT6 molecule binding one DNA strand (Figure 3A–B, Figure 3—figure supplement 1A, scheme in Figure 3C). As all of the DNAs used in the EMSA were open-ended, we developed an additional DNA-binding assay based on the co-immuno-precipitation of a plasmid (IP-qPCR).
 
+**Table 1.**
+ DNA sequences used in the EMSA assay.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">DNA sequences used in the EMSA assays</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ssDNA</td>
+      <td>5′</td>
+      <td>GGGAAAGTTGACGGGAGGGTATTGGAGGTTAGTGGAGGTGAGTGG</td>
+      <td>3′</td>
+    </tr>
+    <tr>
+      <td>ssDNA</td>
+      <td>5′</td>
+      <td>CCACTCACCTCCACTAACCTCCAATACCCTCCCGTCAACTTTCCC</td>
+      <td>3′</td>
+    </tr>
+    <tr>
+      <td>dsDNA-Blunt</td>
+      <td>5′</td>
+      <td>CCACTCACCTCCACTAACCTCCAATACCCTCCCGTCAACTTTCCC</td>
+      <td>3′</td>
+    </tr>
+    <tr>
+      <td>dsDNA-recessed</td>
+      <td>5′</td>
+      <td>CCACTCACCTCCACTAACCTCCAATACCCTCCCGTCAAC</td>
+      <td>3′</td>
+    </tr>
+    <tr>
+      <td>dsDNA-recessed</td>
+      <td>5′</td>
+      <td>ACCTCCACTAACCTCCAATACCCTCCCGTCAACTTTCCC</td>
+      <td>3′</td>
+    </tr>
+    <tr>
+      <td>dsDNA-Blunt</td>
+      <td>5′</td>
+      <td>AAGGTCGACACCACCTTTGAGAGCGCGCGGCCCACGCAGACCCACATGGCGCTGGTGCAGCTGGAGCGCGTGGGCCTCCTCCGCTTCCTGGTCAGCCAGAACGTCGACAAA</td>
+      <td>3′</td>
+    </tr>
+    <tr>
+      <td>dsDNA-recessed</td>
+      <td>5′</td>
+      <td>TCGACACCACCTTTGAGAGCGCGCGGCCCACGCAGACCCACATGGCGCTGGTGCAGC TGGAGCGCGTGGGCCTCCTCCGCTTCCTGGTCAGCCAGAACG</td>
+      <td>3′</td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>5′</td>
+      <td>GCGAAGUCUUCGU</td>
+      <td>3′</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig3-v3.jpg)
+
+**Figure 3.:** (A–B) Gel retardation assay of 32 P-5' end-labeled single-strand DNAs and sticky ended dsDNAs as a function of increasing concentrations of SIRT6-His (ssDNA, Kd = 1.48 ± 0.52; sticky dsDNA, Kd = 3.59 ± 0.17). (C) Suggested model of SIRT6 binding to ssDNA as a monomer or open ssDNA ends of dsDNA as a dimer. (D) Ability of SIRT6-Flag to bind to the DNA of circular, blunt-ended and sticky-ended cleaved plasmids. The bar chart depicts averages for three replicate experiments (error bars show SEM), after logarithmic transformation. (E) SIRT6-Flag DNA-binding ability for an open-ended +plasmid +/- NAD. Data are averages from four experiments, with error bars representing SEM (after logarithmic transformation). (F, G) Dimerization of SIRT6 at the LacO site, represented by the recruitment of SIRT6-Cherry by SIRT6-LacR-GFP (n = 181, p<0.005) or GFP-LacR (n = 104). Data are averages from four experiments, with error bars representing SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Gel retardation assay of 32 P-5′ end-labeled dsDNAs with blunt ends as a function of increasing concentrations of SIRT6-His. (B) Gel retardation assay of 32 P-5′ end-labeled RNAs as a function of increasing concentrations of SIRT6-His. Kd could not have been calculated with a 95% confidence interval (CI). (C) DNA-binding ability of SIRT6-Flag, MRE11-Flag and NBS1-Flag for circular and linear plasmids, assessed by a DNA-binding assay. Data are means for 3–9 experiments (with error bars representing SEMs) after logarithmic transformation. (D) SIRT6-Flag DNA-binding ability for plasmids with a 3′ over-hang and a 5′ over-hang assessed by a DNA-binding assay. Log of averages of three experiments (with error bars representing SEMs). (E) Relative amount of NAD+ remaining after consumption by SIRT6 in the presence of DNA alone or with an acetylated peptide (H3K56ac). (F, G) Protection of sticky-ended and blunt-ended plasmids by BSA, SIRT6 and MRE11 against Exonuclease 1 in different time points. Data in panel (G) are means (with error bars showing +/- SEM) from three experiments. (H) Statistical analysis of the end protection: amounts of uncleaved DNA remaining in the presence of SIRT6 or MRE11 compared to BSA (as a control) after 0, 10 or 20 min (*, p <0.05; **, p <0.005; ***, p <0.0005).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) SEC-MALS analysis of SIRT6 or of SIRT6 with a dsDNA 10-bp oligo with 3-bp overhanging ends on both sides. For SIRT6: Peak1 protein mass (calculated by UV) = 66.7 ± 3.3 kDa, protein mass (calculated by RI) = 70.7 ± 3.5 kDa; Peak2 protein mass (calculated by UV) = 114.3 ± 5.7 kDa, protein mass (calculated by RI) = 103.8 ± 4.9 kDa; Peak3 protein mass (calculated by UV) = 609.7 ± 14.6 kDa, protein mass (calculated by RI) = 833.6 ± 16.4 kDa. For SIRT6 +DNA: Peak1 protein mass (calculated by UV) = 52.5 ± 3.1 kDa, protein mass (calculated by RI) = 55.7 ± 3.2 kDa; Peak2 protein mass (calculated by UV) = 99.4 ± 3.8 kDa, protein mass (calculated by RI) = 94.6 ± 3.5 kDa; Peak3 protein mass (calculated by UV) = extremely high, protein mass (calculated by RI) = 9224 ± 258 kDa. (B) X-ray scattering profile (right) and the distance distribution function (left) of SIRT6 (blue) and SIRT6 bound to dsDNA (red). (C) Overall parameters for small angle X-ray scattering of SIRT6 alone and of SIRT6 bound to dsDNA determined from the distance distribution function P(r). Rg is the radius of gyration, and Dmax is the maximum dimension of the particle. (D) SAXS structure of SIRT6 (grey surface). Ab initio models were reconstructed from SAXS data using the computer program DAMMIN (Svergun, 1999) and were averaged by the computer program DAMAVER (Volkov and Svergun, 2003). The crystal structure of SIRT6 tetramer (grey spheres) was extracted from the crystal structure of SIRT6 (pdb id: 3PKI) and compared with the obtained SAXS model in PyMOL (http://www.pymol.org).
+
 In brief, flag-tagged repair proteins were purified and incubated with DNA, then immunoprecipitated along with the DNA that they bound. The DNA was later purified and its enrichment was measured by qPCR. Proteins were incubated either with a circular plasmid or with the same plasmid presenting blunt or sticky ends. As expected, NBS1, which does not bind DNA by itself (Myler et al., 2017), did not bind either plasmid (open or closed ends). By contrast, SIRT6 and MRE11 had high affinity to liner DNA, but they showed almost no binding to closed plasmids (Figure 3—figure supplement 1C). Moreover, SIRT6 exhibited a higher affinity for sticky ends, structures that show a high resemblance to DSBs, over blunt ends (Figure 3D). In addition, it did not distinguish between 3' or 5' overhangs (Figure 3—figure supplement 1D). These assays indicate that SIRT6 does not function by binding intact DNA or a particular sequence, but rather by binding to open DNA ends, and particularly to ssDNA. It is important to note that this capacity is independent of the presence of NAD+, the known cofactor of SIRT6 (Figure 3E), and the binding of DNA per se, does not activate SIRT6 catalytic activity (Figure 3—figure supplement 1E). Moreover, SIRT6 was able to protect the open ends of DNA from exonuclease activity (ExoI), preventing exonuclease cleavage just as in the case of MRE11 and implying that SIRT6 specifically binds to DNA ends (Figure 3—figure supplement 1F–H).
 
-## SIRT6 binds DNA ends as a dimer
+### SIRT6 binds DNA ends as a dimer
 
 Our EMSA results indicate that SIRT6 binds ssDNA with no cooperativity, suggesting a single binding site. By contrast, when the substrates were dsDNA oligos, we found the Hill coefficient to be greater than 1, indicating cooperativity (Figure 3A–B, Figure 3—figure supplement 1A). These results suggest that a single molecule of SIRT6 binds ssDNA. Even so, given two ssDNAs, such as would be present at an open-ended DSB, one SIRT6 molecule will interact with another, allowing a dimer of SIRT6 to bind a single molecule of dsDNA that has two open ends on a single side, 5′ and 3′ (see schematic Figure 3C). Together, the two SIRT6 molecules show cooperativity.
 
 Interestingly, the known crystal structure of SIRT6 presents a dimer conformation (Jiang et al., 2013; You et al., 2017). To further characterize the structure of SIRT6 in a solution, we used size exclusion chromatography-multi-angle light scattering (SEC-MALS) and small-angle X-ray scattering (SAXS). Importantly, both methods showed that SIRT6 tends to aggregate; however, when using SEC-MALS, we noted that the aggregation was significantly reduced by the presence of DNA oligomers (Figure 3—figure supplement 2A), which suggests that SIRT6 is stabilized by (and favors) DNA interactions. SAXS data provide a low-resolution structure of SIRT6, presumably corresponding to a tetramer (Figure 3—figure supplement 1B–D), supporting the model suggested by the EMSA results (with dimers at the 5′ and 3′, a tetramer). The result obtained by SAXS does not exclude the presence of SIRT6 dimers or trimers in solution (see Table 2). Last, we measured dimerization in vivo by taking advantage of SIRT6-LacR-GFP localization at LacO sites and the recruitment of SIRT6-RFP, observing a significant co-localization of both SIRT6 molecules (Figure 3F–G), indicating that the bound SIRT6-GFP recruits the soluble SIRT6-RFP.
 
+**Table 2.**
+ Theoretical Rg (Å) derived from the SAXS data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Theoretical Rg (Å)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SIRT6 dimer</td>
+      <td>27.14</td>
+    </tr>
+    <tr>
+      <td>SIRT6 tetramer</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>SIRT6 hexamer</td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>
+
 Overall, our predictions suggest that the SIRT6-DNA complex is organized in dimers, probably at each end of the DNA oligomers. Moreover, on the basis of the reconstructed SAXS structure, we show a compaction of SIRT6 in the presence of DNA, suggesting a conformational change (Figure 3—figure supplement 1B–D).
 
-## SIRT6 binds ssDNA through its core domain, which forms a ‘tunnel-like’ structure
+### SIRT6 binds ssDNA through its core domain, which forms a ‘tunnel-like’ structure
 
 SIRT6 has not been previously reported in the literature to be a DNA binding protein, so we aimed to identify the domain involved in ssDNA binding. To this end, we first analyzed the SIRT6 structure to find a potential DNA-binding domain. We found a region within the core domain (28 a.a.) that had potential to bind DNA (Figure 4A–C). We purified full-length SIRT6 (SIRT6 FL) and a fragment of the core domain alone (core: from a.a. 34 to 274). Both were able to bind DNA with similar affinities, indicating that the core domain is the main domain responsible for DNA binding (Figure 4D).
 
 To understand which amino acids could be involved in the DSB binding, we mapped them to the known structure of SIRT6 (http://dnabind.szialab.org/). The model points to a subset of amino acids that are more likely to be involved in DNA binding. Surprisingly, these amino acids are concentrated near a physical structure that resembles a tunnel (Figure 4A). This tunnel is narrow and could accommodate ssDNA (Figure 4E), but not larger dsDNA. Without an open end, normal undamaged DNA could not enter this tunnel, but broken DNA ends could. Therefore, we hypothesized that the destruction or disruption of the tunnel would impair SIRT6 DNA-binding capacity. To test this hypothesis, we generated several point mutations of the amino acids in the tunnel-like structure of SIRT6 (Figure 4—figure supplement 1A–B). Purified SIRT6-MBP point-mutants were tested by EMSA to estimate their DNA-binding ability. As predicted, single point mutations in key amino acids at the tunnel (including the catalytic dead mutant H133Y) impaired the DNA- binding capacity (Figure 4F–G). The only mutant that showed no effect on binding was D63Y, in which the mutated amino acid did not impair the charge as strongly as the D63H mutation. Interestingly, mutations in D63 had previously been reported to provoke the loss of SIRT6 function in cancer, and have recently been shown to be lethal in humans (Ferrer et al., 2018; Kugel et al., 2015).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig4-v3.jpg)
+
+**Figure 4.:** (A) Predicted DNA-binding site based on the published SIRT6 structure, (http://dnabind.szialab.org/). Highlighted in yellow are the predicted DNA-binding amino acids in the SIRT6 core domain; red highlights show the tunnel-forming amino acids that were mutated. (B) Schematic representation of the SIRT6 core domain. (C) List of amino acids that are predicted to participate in the ‘tunnel-like’ structure. (D) DNA binding of an open-ended plasmid by full-length SIRT6 (p<0.0005) and by the SIRT6-core domain (p<0.005). Data are the log of averages from three experiments (with error bars respresenting SEMs). (E) SIRT6 ssDNA-binding prediction, based on the known SIRT6 structure with bound ssDNA. (F, G) Gel retardation assay of 32 P-5′ end-labeled ssDNAs with SIRT6-MBP mutants. Data are averages from three experiments (with error bars representing SEMs). (H) Ability of Flag-tagged mammalian Sirtuins to bind the DNA of circular and linear plasmids. Data are averages from 4–7 experiments (with error bars representing SEMs) (*, p <0.05; **, p <0.005; ***, p <0.0005).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) List of generated SIRT6 point mutations in the SIRT6 tunnel structure. (B) Ponceau staining of SIRT6-MBP point mutants. (C) Catalytic activity of SIRT6-MBP mutants, assessed by H3K9 de-myristolation in a FLUOR DE LYS assay. (D) Ability of His-tagged mammalian Sirtuins to bind the DNA circular and linear plasmids. Data are logs of the averages from 4–7 experiments (with error bars representing SEMs) (*, p<0.05; **, p<0.005; ***, p<0.0005).
+
 As our prediction shows that the SIRT6 DNA-binding domain is in close proximity to its catalytic domain, we set out to examine how these mutations would affect SIRT6 catalytic activity. We performed a Fluor-de-lys assay to assess the mutant deacylation activity, using a H3K9-myristolatted peptide. Most mutants showed a decrease in SIRT6 activity compared to SIRT6-WT; however, A13W mutation showed increased SIRT6 activity (Figure 4—figure supplement 1C). This finding indicates that DSB binding and SIRT6 deacylation activity are not completely linked. However, given the close proximity of the two domains, they may share some of their functions because of the similarity of ssDNA and NAD+ molecules (ssDNA is a polymer of nucleotides; NAD+ consists of two nucleotides joined through their phosphate groups).
 
-## DNA binding ability is conserved among other Sirtuins
+### DNA binding ability is conserved among other Sirtuins
 
 The core domain of SIRT6, where its DNA-binding domain is located, is conserved among all Sirtuins. Therefore, we tested whether other mammalian Sirtuins could bind DSB as well. Our results indicate that all Sirtuins have some capacity to bind broken-ended DNA, but some do it with a significantly lower affinity (Figure 4H, Figure 4—figure supplement 1D). Only SIRT7 showed binding capacity towards circular DNA, as previously described (Gil et al., 2013). It is also important to note that we tested mouse and human SIRT6 (mSIRT-Flag, hSIRT6-His) and found that both bind linear, but not circular DNA (Figure 4H, Figure 4—figure supplement 1D).
 
-## SIRT6 can initiate DNA damage response
+### SIRT6 can initiate DNA damage response
 
 As shown above, SIRT6 directly recognizes DNA breaks and arrives at the sites of damage independently of DDR signaling. Nonetheless, DNA damage recognition per se cannot activate the DDR. Therefore, we set out to examine whether SIRT6 also has the capacity to initiate the DDR through downstream signaling. To that aim, we took advantage of the previously described tethering assay using SIRT6-LacR-GFP/Cherry chimeras. Remarkably, SIRT6 has the same ability to induce the activation of the DDR as MRE11, measured by its capacity, compared to that of LacR-GFP/Cherry, to activate the phosphorylation of H2AX at the LacO site. Interestingly, the SIRT6 catalytic mutant SIRT6-HY was also able to initiate the DDR, raising the possibility that SIRT6 DDR initiation capacity is independent of its catalytic activity (Figure 5A–B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig5-v3.jpg)
+
+**Figure 5.:** (A, B) Initiation of the DDR, measured by co-localization of MRE11-LacR-Cherry (n = 136, p<0.005), SIRT6-LacR-GFP (n = 243, p<0.0001) or SIRT6 HY-LacR-GFP (n = 71, p<0.0001), compared to GFP-LacR (n = 310). Data are means for 4–9 experiments (error bars are SEMs). (C, D) Live imaging upon laser-induced damage (LID) of SIRT6-WT-GFP (n = 20) or SIRT6-HY-GFP (n = 20) in SIRT6 KO U2OS cells (n = 20). (D) Accumulation over time in 3 s intervals. (E) Average area under the curve of for three LID experiments (error bars are SEMs) (n[S6-WT]=40, n[S6-HY]=39, p<0.0001). (F) Initiation of DDR by full-length SIRT6-LacR-GFP (n = 127, p<0.005), Core-LacR-GFP (n = 66, p>0.05) or GFP-LacR (n = 64). Data are averages from 3–4 experiments (error bars show SEMs). (G) Initiation of DDR by SIRT6-LacR-GFP (n = 127, p<0.05), SIRT1-LacR-GFP (n = 44, p>0.05), SIRT2-LacR-GFP (n = 67, p<0.005), SIRT7-LacR-GFP (n = 68, p<0.005) or GFP-LacR (n = 64). Data are averages from 3–10 experiments (error bars show SEMs).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot of nuclear protein fraction of LacO containing U2OS cells after 12 or 24 hr treatment with 0, 5 or 10 mM nicotinamide (NAM) added to their media. (B) Co-localization percentage with γH2AX of SIRT6 HY-LacR-GFP and GFP-LacR after 24 hr of treatment with NAM at three concentrations (*, p<0.05; **, p<0.005; ***, p<0.0005). (C) Immunofluorescence (IF) of co-localization of Core-LacR-GFP (n = 66, p>0.05). Experiment quantification appears in Figure 5C. (D) IF of co-localization of SIRT1-LacR-GFP (n = 44, p>0.05), SIRT2-LacR-GFP (n = 67, p<0.005) and SIRT7-LacR-GFP (n = 68, p<0.005). Experiment quantification appears in Figure 5D.
 
 Nevertheless, because SIRT6 can generate dimers, endogenous SIRT6 could dimerize in the cells with SIRT6-HY-LacR, allowing the activation of the DDR. To test this possibility, we used nicotinamide (NAM) to inhibit endogenous SIRT6 activity (Figure 5—figure supplement 1A). However, even when the endogenous SIRT6 was inhibited (shown by the increase in H3K56ac), LacR-SIRT6-HY was still able to activate the DDR, supporting the evidence of DDR initiation that is independent of SIRT6 catalytic activity (Figure 5—figure supplement 1B).
 
@@ -94,6 +230,22 @@ Taken together, these experiments indicate that although SIRT6 binds DNA through
 Last, we tested whether SIRT6 could recruit repair factors of the DDR cascade and whether it shows a preference for a certain repair pathway. Although we observed a more prominent effect of SIRT6 on the recruitment of the HR initiator MRE11 rather than that of the NHEJ initiator Ku80 (Figure 1G–L), it was previously reported that SIRT6 affects both repair pathways (Chen et al., 2017; Mao et al., 2011; McCord et al., 2009; Tian et al., 2019; Toiber et al., 2013). Indeed, we noticed that SIRT6 deficiency results in impaired recruitment of both 53BP1 and BRCA1 to the sites of laser-induced DSBs, suggesting impaired activation of both NHEJ and HR (Figure 6—figure supplement 1A).
 
 In order to test SIRT6's ability to recruit these and other DDR factors to the sites of damage, we took advantage of the tethering system once more. Our results show that SIRT6 can recruit proteins that are involved in HR, such as MRE11, NBS1, ATM and BRCA1, as well as proteins that are involved in NHEJ, such as Ku80, Ku70 and 53BP1 (Figure 6A–B). As a control, we tested co-localization with CDT1, a nuclear protein that does not participate in the DDR. As expected, CDT1 was neither recruited by SIRT6 nor by GFP alone.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig6-v3.jpg)
+
+**Figure 6.:** (A, B) Percentage repair enzymes that are co-localized with SIRT6-LacR-GFP/Cherry at LacO sites. IF with Flag antibody. Data are averages for 3–6 experiments (with error bars representing SEMs) (*, p<0.05; **, p<0.005; ***, p<0.0005; ****, p<0.00005).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Laser-induced damage imaged by IF 30 min after damage. The images show recruitment of p-ATM, 53BP1 or BRCA1 in shControl or shSIRT6 U2OS.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) Co-localization of 53BP1 and BRCA1 with SIRT6-LacR-GFP (53BP1: n = 247, p<0.005; BRCA1: n = 223, p<0.005) and HY-LacR-GFP (53BP1: n = 113, p<0.005; BRCA1: n = 122, p<0.005), compared with GFP-LacR (53BP1: n = 130; BRCA1: n = 157). The data shown in panel (B) are averages from 3–5 experiments (error bars are SEMs). (C, D) Comparison of co-localization of endogenous 53BP1 (n = 247) and BRCA1 (n = 223) and transfected 53BP1-Flag (n = 111) and BRCA1-Flag (n = 146) with SIRT6-LacR-GFP, assessed by IF.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/51636/elife-51636-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Schematic representation of the Tethering assay with inhibition of signaling using Wortmannin. (B–D) Co-localization of γH2AX (B), 53BP1 (C), and BRAC1 (D) with SIRT6-LacR-GFP or GFP/Cherry-LacR after 24 hr with or without Wortmannin. Data are averages for three experiments (error bars are SEMs). (B) Co-localization with γH2AX (0 μM: n[SIRT6] = 43, n[GFP] = 41; 1 μM: (n[SIRT6] = 42, n[GFP] = 42; 10 μM: (n[SIRT6] = 42, n[GFP]=41). (C) Co-localization with 53BP1 (0 μM: n[SIRT6] = 32, n[GFP] = 32; 1 μM: n[SIRT6] = 30, n[GFP] = 32; 10 μM: n[SIRT6] = 33, n[GFP] = 31). (D) Co-localization with BRCA1 (0 μM: n[SIRT6] = 30, n[GFP] = 32; 1 μM: n[SIRT6] = 31, n[GFP] = 31; 10 μM: n[SIRT6] = 32, n[GFP] = 31). (E) Co-localization of Ku80-Flag or MRE11-Flag with SIRT6-LacR-GFP or GFP/Cherry-LacR after 24 hr with or without Wortmannin. Data are averages for three experiments (error bars are SEMs). For Ku80-Flag — 0 μM: n[SIRT6] = 45, n[Cherry] = 53; 10 μM: n[SIRT6] = 45, n[Cherry] = 58. For MRE11-Flag — 0 μM: n[SIRT6] = 50, n[Cherry] = 56; 10 μM: n[SIRT6] = 60, n[Cherry] = 51. *, p<0.05; **, p<0.005; ***, p<0.0005; ****, p<0.00005).
 
 As SIRT6 DDR activation is independent of its catalytic activity, we further examined whether it is needed for DDR protein recruitment. Taking advantage of the tethering assay, we observed that both SIRT6-WT and SIRT6-HY recruited 53BP1 and BRCA1, meaning that the recruitment is independent of SIRT6 catalytic activity (Figure 6—figure supplement 2A–B).
 
@@ -129,7 +281,500 @@ In conclusion, we have demonstrated that SIRT6 has a role as an independent DNA 
 
 ## Materials and methods
 
-## Cell cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ATM-LacR-Cherry</td>
+      <td>Soutoglou and Misteli, 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CDT1-TagRFP</td>
+      <td>ThermoFisher</td>
+      <td>P36237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV-Flag</td>
+      <td>Toiber et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MRE11-Flag</td>
+      <td>Wu et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MRE11-LacR-Cherry</td>
+      <td>Soutoglou and Misteli, 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mRFP-SIRT6</td>
+      <td>Kaidi et al., 2010 - retracted</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NBS1-Flag</td>
+      <td>Wu et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td></td>
+      <td>NBS1-LacR-Cherry</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1(+)Flag-His-ATM-WT</td>
+      <td>Addgene</td>
+      <td>31985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5-FRT/T0-Flag-53BP1</td>
+      <td>Addgene</td>
+      <td>52507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST 3x Flag-pcDNA5-FRT/T0-BRCA1</td>
+      <td>Addgene</td>
+      <td>52504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1-FLAG-Ku70</td>
+      <td>Addgene</td>
+      <td>46957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1-FLAG-Ku80</td>
+      <td>Addgene</td>
+      <td>46958</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1-FLAG-XRCC4</td>
+      <td>Addgene</td>
+      <td>46959</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP- SIRT6</td>
+      <td>Kaidi et al., 2010 - retracted</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28 hSIRT6-His</td>
+      <td>Gertman et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHPRT-DRGFP</td>
+      <td>Addgene</td>
+      <td>26476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-WT</td>
+      <td>Gertman et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-A13W</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-D63H</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-D63Y</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-H133Y</td>
+      <td>Gertman et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-D188A</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-D190W</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMal-C2-hSIRT6-I217A</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-Cherry-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-SIRT6 Core-GFP-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-GFP-LacR</td>
+      <td>Addgene</td>
+      <td>59418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-KU80-GFP-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-mSIRT6-Cherry-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-mSIRT6-GFP-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-mSIRT6-H133Y-GFP-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-SIRT1-GFP-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-SIRT2- GFP-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIP-SIRT7- GFP-LacR</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT1-Flag</td>
+      <td>Zhong et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT2-Flag</td>
+      <td>Addgene</td>
+      <td>13813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT3-Flag</td>
+      <td>Addgene</td>
+      <td>13814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT4-Flag</td>
+      <td>Addgene</td>
+      <td>13815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT5-Flag</td>
+      <td>Addgene</td>
+      <td>13816</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT6 Core</td>
+      <td>Tennen et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mSIRT6-WT-Flag</td>
+      <td>Zhong et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT7-Flag</td>
+      <td>Addgene</td>
+      <td>13818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SNF2H-WT-GFP-LacR</td>
+      <td>Klement et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 AffiniPure Donkey Anti-Rabbit IgG (H+L)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>711-545-152</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 AffiniPure Donkey Anti-Rabbit IgG (H+L)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>711-585-152</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 AffiniPure Donkey Anti-Mouse IgG (H+L)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>715-545-150</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 AffiniPure Goat Anti-Mouse IgG (H+L)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>115-585-062</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>53 BP1</td>
+      <td>Snata-Cruz Biotechnology</td>
+      <td>sc-22760</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BRCA1</td>
+      <td>Snata-Cruz Biotechnology</td>
+      <td>sc-7298</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804</td>
+      <td>IF (1:900), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag Beads</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td>IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gamma H2A.X (phospho s139)</td>
+      <td>abcam</td>
+      <td>ab2893</td>
+      <td>IF(1:3000), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit IgG H and L (HRP)</td>
+      <td>abcam</td>
+      <td>ab6721</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Histone H3</td>
+      <td>abcam</td>
+      <td>ab1791</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Histone H3 (acetyl K56)</td>
+      <td>abcam</td>
+      <td>ab76307</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSC 70</td>
+      <td>Snata-Cruz Biotechnology</td>
+      <td>sc-7298</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ku80</td>
+      <td>Cell Signaling</td>
+      <td>#2180</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MRE11</td>
+      <td>abcam</td>
+      <td>ab214</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>phospho-ATM (Ser1981)</td>
+      <td>Cell Signaling</td>
+      <td>#5883</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>phospho-Histone H2A.X (Ser139)</td>
+      <td>Millipore</td>
+      <td>05–636</td>
+      <td>IF (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Mouse IgG H and L (HRP)</td>
+      <td>abcam</td>
+      <td>ab97046</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SIRT6</td>
+      <td>abcam</td>
+      <td>ab62739</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tubulin</td>
+      <td>Merck</td>
+      <td>MAB1637</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SIRT1 Human</td>
+      <td>PROSPEC</td>
+      <td>PRO-1909</td>
+      <td>DNA binding assay</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SIRT3 Human</td>
+      <td>PROSPEC</td>
+      <td>PRO-462</td>
+      <td>DNA binding assay</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SIRT5 Human</td>
+      <td>PROSPEC</td>
+      <td>PRO-1774</td>
+      <td>DNA binding assay</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SIRT6 Human</td>
+      <td>PROSPEC</td>
+      <td>PRO-282</td>
+      <td>DNA binding assay</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell cultures
 
 All cells were cultured in DMEM and 4.5 g/l glucose, supplemented with 10% fetal bovine serum, 1% penicillin and streptomycin cocktail and 1% L-glutamine. Cells were cultured with 5% CO2 at 37°C.
 
@@ -137,7 +782,7 @@ All lines were confirmed to be Mycoplasma-free using a hylabs Hy-mycoplasma Dete
 
 Cells were authenticated by the Biochemical Core Facility of the Genomics Center at the Technion-Israel Institute of Technology.
 
-## Plasmids and transfections
+### Plasmids and transfections
 
 To prepare pQCXIP-msirt6-GFP-LacR, mouse sirt6 without a stop codon was amplified by PCR and introduced in frame with GFP-LacR into the AgeI site of plasmid pQCXIP-GFP-LacR (Addgene, 59418).
 
@@ -159,11 +804,11 @@ pMal-C2-hSIRT6 A13W, D63H, D63Y, W188A, D190Wand I217A were prepared by Quick Ch
 
 All PCRs were performed with Hot start, KAPA HiFi #KM 2605 or abm Kodaq #G497-Dye proofreading polymerases. All clones were sequenced for validation, and expression of the fluorescent fusion proteins were checked by transfection into cells. All transfections were performed using PolyJet In Vitro Transfection (SignaGen, SL100688), according to the manufacturer's instructions.
 
-## Immunofluorescence
+### Immunofluorescence
 
 U2OS cells were washed with PBS and fixed with 2% paraformaldehyde for 15 min at room temperature, followed by an additional wash. Quenching was then performed with 100 mM glycine for 5 min at room temperature (RT). Cells were permeabilized (0.1% sodium citrate, 0.1% Trition X-100 [pH 6], in deionized distilled water [DDW]) for 5 min and washed again. After 1 hr blocking (0.5% BSA, 0.1% Tween-20 in PBS), cells were incubated with primary antibody diluted in blocking buffer over night at 4°C. The next day, cells were washed three times with wash buffer (0.25% BSA, 0.1% Tween-20 in PBS), incubated for 1 hr with secondary antibody (diluted in blocking buffer 1:200) at RT and washed three more times. Cells were then DAPI stained for three minutes at RT and washed with PBS twice before imaging.
 
-## Tethering assay
+### Tethering assay
 
 U2OS cells containing 256X LacO sequence repeats in their genome were transfected with plasmids of chimeric LacR-DDR enzyme-GFP/Cherry proteins. Cells were either co-transfected with a second plasmid of a fluorescent/Flag-tagged protein or immuno-stained (see 'Immunofluorescence') for an endogenic protein.
 
@@ -173,21 +818,21 @@ Notes: the pQCXIP-Ku80-GFP-LacR plasmid used in this assay contains Ku80 that w
 
 The pQCXIP-SIRT1-GFP-LacR plasmid used in this assay contains SIRT1 that was obtained from the Mostoslavsky lab (Zhong et al., 2010). This protein variant is lacking 79 amino acids in the N-terminus.
 
-## Immunoprecipitation (IP)
+### Immunoprecipitation (IP)
 
 Flag-tagged proteins were purified from transfected HEK293T cells. Cells were collected and washed with PBS. Cell disruption was performed in lysis buffer (0.5M KCl, 50 mM Tris-HCl [pH 7.5], 1% NP40, 0.5M DTT, 200 mM TSA and protease and phosphatase inhibitors in DDW) by 10 min rotation at 4°C. Cell debris were sedimented by 15 min centrifugation at 21,000 g. Lysate was collected and added to ANTI-FLAG M2 Affinity Gel (Sigma-Aldrich, A2220) beads for 2 hr rotation at 4°C. Beads were then washed three times with lysis buffer and once with SDAC buffer (50 mM Tris-HCl [pH 9], 4 mM MgCl, 50 mM NaCl, 0.5 mM DTT, 200 mM TSA and protease and phosphatase inhibitors in DDW). Proteins were released by flag-peptide.
 
-## Expression and purification of recombinant SIRT6 in Escherichia coli
+### Expression and purification of recombinant SIRT6 in Escherichia coli
 
 Expression and purification of His-tagged and MBP-tagged proteins in E. coli were performed as previously described by Gertman et al. (2018).
 
-## Fluorescence recovery after photobleaching (FRAP)
+### Fluorescence recovery after photobleaching (FRAP)
 
 FRAP experiments (laser-induced damage) were performed as previously described by Toiber et al. (2013). In brief, cells were plated in Ibidi µ-Slide eight-well glass bottom plates (Cat. No.: 80827) and transfected with the desired fluorescent plasmid. Pre-sensitization with Hoechst (1 mM) was done for 10 min before the experiment. FRAP experiments were carried out using a Leica SP5 microscope (German Cancer Research Center (DKFZ) and BioQuant, Heidelberg, Germany) or using a LSM880 microscope (Ben Gurion University, Be’er Sheva, Israel) with a 63X oil immersion objective. Images were acquired in a 512 × 512 format with a scan speed of 1,400 Hz. Circular bleach spots of 2 µm diameter were positioned either at a damage site or at a distant reference site. Spots were bleached with an argon laser of 488 nm with a power of 1 mW in the back aperture of the objective. Images were taken at 3 s intervals, with three baseline images taken before bleaching. Acquisition before bleaching was used for normalization of each cell intensity (average of the baseline intensity of the whole cell nucleus prior to DNA damage). Images analysis and fluorescence assessment were performed using ImageJ 1.52i software.
 
 To assess protein amounts and to compare between the different conditions, area under the curve was calculated using a MATLAB pipeline.
 
-## DNA-binding assay
+### DNA-binding assay
 
 Open-ended plasmids were prepared in advance by incubating DR-GFP plasmids with EcoRV for blunt ends, KpnI for 3' over hang or SalI for 5' over hang according to manufacture instructions. Circular plasmids were subjected to the same conditions with no restriction enzyme.
 
@@ -205,35 +850,35 @@ Notes: the SIRT1-Flag used in this assay was obtained from the Mostoslavsky l
 
 The SIRT1-His used in this assay was acquired from PROSPEC (https://www.prospecbio.com/sirt1_human). This SIRT1 is a 280 aa poly-peptide (aa 254–495).
 
-## DNA isolation
+### DNA isolation
 
 1:1 vol of phenol:chloroform:isoamyl alcohol (25:24:1) was added to the eluted DNA from the DNA binding assay, vortexed and centrifuged at RT for 5 min at 17,000 g. The top aqueous layer was then isolated and washed with 1 vol of chloroform: isoamyl alcohol (24:1). Samples were then centrifuged under the same conditions, and the top aqueous layer was isolated. 1/10 vol 3M NaOAc, 30 μg glycogen and 2.5 volumes ice cold 100% EtOH were added to each sample, followed by incubation for at least 30 min at −80°C. After incubation, DNA was precipitated by centrifugation at max. speed for 30 min at 4°C, supernatant was discarded and the pellet was washed with 500 µl 70% ice-cold EtOH. Samples were then centrifuged at max. speed for 30 min at 4°C, before the supernatant was discarded and the DNA pellet was air dried before re-suspension with ultra-pure water.
 
-## Quantitative PCR
+### Quantitative PCR
 
 For relative quantification of the DNA isolated from all of the DNA-binding assays performed, qPCR was performed using SsoAdvanced Universal SYBER Green Supermix (BIO-RAD, 172–5274) according to the manufacturer's instructions.
 
 Primers used for DR-GFP plasmid amplification:
 
-## Exonuclease assay
+### Exonuclease assay
 
 DR-GFP plasmid was cut with restriction enzymes generating linear DNA with blunt (EcoRV) or overhanging ssDNA (SalI or KpnI). DNA cleavage was confirmed by agarose gel electrophoresis. 10 µg of the restricted DNA was incubated with BSA, NBS1, MRE11 or SIRT6 purified proteins in NEB exonuclease buffer for 0 to 20 min. ExoI was then added to the samples. Samples of each reaction were taken at 0, 10 and 20 min. DNA was purified using a Qiagen PCR purification kit. The purified DNA was run on 0.8% agarose gel, and the amount of DNA was assessed by image analysis using ImageJ 1.52i software and normalized to the amount of the DNA at the 0′ time point.
 
-## Fluor de lys (FDL) activity assay
+### Fluor de lys (FDL) activity assay
 
 Fluor de lys assay with SIRT6-point mutant-MBP proteins was performed as previously described by Gertman et al. (2018).
 
-## NAD+ consumption assay
+### NAD+ consumption assay
 
 Purified SIRT6-Flag was incubated at 37 °C for 3 hr with either PstI digested pDR-GFP (DSB), ssDNA or a H3K56 acetylated peptide with 2.5 mM NAD+ and HEPES buffer (50 mM HEPES [pH 7.5], 100 mM KCl, 20 mM MgCl2, and 10% glycerol). After incubation, samples were supplemented with 1 μM 1,3-propanediol dehydrogenase (1,3-PD) and 170 mM 1,3-propanediol for an additional 3 hr incubation. NAD+ consumption by SIRT6 was assessed by NADH levels produced by 1,3-PDase activity, by measuring its absorption at 340 nm. To monitor spontaneous NAD+ consumption in the presence of PstI digested pDR-GFP, ssDNA or H3K56 acetylated peptide, the assay was conducted without SIRT6, and each treatment was normalized to its control.
 
-## EMSA
+### EMSA
 
 SIRT6 in storage buffer (20 mM Tris-HCl [pH 7.4], 150 mM NaCl and 50% glycerol) was equilibrated with DNA (or RNA) for 20 min on ice. The buffer composition of EMSA was optimized to obtain the maximum resolution for resolving DNA/RNA. Reactions (final volume 10 μL) were resolved by electrophoresis at 4°C through native gel containing 5% (for blunt-end and sticky-end DNA), 8% (for ssDNA) and 10% (for RNA) polyacrylamide (29:1 acrylamide: bisacrylamide) in 1X TBE buffer. Autoradiographs of the dried gels were analyzed by densitometry using Fujifilm PhosphorImager. The signal was quantified by ImageQuant TL.
 
 GraphPad Prism 7 was used to estimate apparent Kd value for ssDNA (one site, specific binding fit, y = Bmax[SIRT6]/(Kd + [SIRT6]) and for blunt-end and sticky-end DNA (specific binding with Hill slope, y = Bmax[SIRT6]h/(Kdh + [SIRT6]h).
 
-## SAXS
+### SAXS
 
 SAXS data were collected at BioSAXS beamline BM29 (ESRF, Grenoble, France), possessing a Pilatus 1M detector. The scattering intensity was recorded in the interval 0.0035 < q < 0.49 Å−1. The measurements were performed at 20°C. SIRT6 (alone or in the presence of dsDNA) was measured at a concentration of 0.5 mg/ml, as it tends to aggregate at higher concentrations. The scattering of the buffer was also measured and subtracted from the scattering of the samples by using Primus (Konarev and Svergun, 2018).
 
@@ -241,7 +886,7 @@ Konarev and Svergun (2018) PyMOL (https://pymol.org/) was used to extract the s
 
 Values for the radius of gyration (Rg) and the maximum particle dimension (Dmax) were derived from distance distribution function P(r), using in-house script (Akabayov et al., 2010). This script was designed to perform an automatic search for the best fitting parameters in GNOM (Svergun, 1992). In the end, DAMMIN (Svergun, 1999) was used to reconstruct the molecular envelope on the basis of the best GNOM fit (obtained from the script analysis and refined manually). E models were calculated and averaged using DAMMAVER (Volkov and Svergun, 2003).
 
-## SEC-MALS
+### SEC-MALS
 
 A miniDAWN TREOS multi-angle light scattering detector, with three detector angles (43.6°, 90° and 136.4°) and a 658.9 nm laser beam (Wyatt Technology, Santa Barbara, CA), with a Wyatt QELS dynamic light scattering module for determination of hydrodynamic radius and an Optilab T-rEX refractometer (Wyatt Technology), were used in-line with a size exclusion chromatography analytical column, Superdex 200 Increase 10/300 GL (GE, Life Science, Marlborough, MA) equilibrated in buffer (50 mM tris, 150 mM NaCl and 4 mM MgCl2 [pH 8.0]).
 
@@ -249,7 +894,7 @@ Experiments were performed using an AKTA explorer system with a UV-900 detector 
 
 Data collection and mass calculation by SEC-MALS analysis were performed with ASTRA 6.1 software (Wyatt Technology). The refractive index of the solvent was defined as 1.331 and the viscosity was defined as 0.8945 cP (common parameters for PBS buffer at 658.9 nm). dn/dc (refractive index increment) value for all samples was defined as 0.185 mL/g (a standard value for proteins). For the SIRT6 experiment, 150 ul 4.5 mg/ml human-SIRT6-His was injected. For SIRT6+DNA, 200 μl human-SIRT6-His + 50 ul DNA was injected after 1 hr incubation at 37°C.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was done using GraphPad Prism 7. Analysis included either one-way or two-way ANOVA followed by a post-hoc Dunnet test or a Tukey test, respectively. Significance was set at p<0.05.
 

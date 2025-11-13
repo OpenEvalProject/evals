@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.38314.001 Leukemia stem cells (LSCs) are regarded as the origins and key therapeutic targets of leukemia, but limited knowledge is available on the key determinants of LSC ‘stemness’. Using single-cell RNA-seq analysis, we identify a master regulator, SPI1, the LSC-specific expression of which determines the molecular signature and activity of LSCs in the murine Pten -null T-ALL model. Although initiated by PTEN-controlled β-catenin activation, Spi1 expression and LSC ‘stemness’ are maintained by a β-catenin-SPI1-HAVCR2 regulatory circuit independent of the leukemogenic driver mutation. Perturbing any component of this circuit either genetically or pharmacologically can prevent LSC formation or eliminate existing LSCs. LSCs lose their ‘stemness’ when Spi1 expression is silenced by DNA methylation, but Spi1 expression can be reactivated by 5-AZ treatment. Importantly, similar regulatory mechanisms may be also present in human T-ALL.
+Leukemia stem cells (LSCs) are regarded as the origins and key therapeutic targets of leukemia, but limited knowledge is available on the key determinants of LSC ‘stemness’. Using single-cell RNA-seq analysis, we identify a master regulator, SPI1, the LSC-specific expression of which determines the molecular signature and activity of LSCs in the murine Pten-null T-ALL model. Although initiated by PTEN-controlled β-catenin activation, Spi1 expression and LSC ‘stemness’ are maintained by a β-catenin-SPI1-HAVCR2 regulatory circuit independent of the leukemogenic driver mutation. Perturbing any component of this circuit either genetically or pharmacologically can prevent LSC formation or eliminate existing LSCs. LSCs lose their ‘stemness’ when Spi1 expression is silenced by DNA methylation, but Spi1 expression can be reactivated by 5-AZ treatment. Importantly, similar regulatory mechanisms may be also present in human T-ALL.
 
 ## Introduction
 
@@ -41,29 +41,118 @@ Using the Pten-null T-ALL model, we identify a master regulator, SPI1, and a β-
 
 ## Results
 
-## Redefine heterogeneous LSCs at single-cell resolution
+### Redefine heterogeneous LSCs at single-cell resolution
 
 We reported previously that the LSC-enriched Lin-CD3+KITmid subpopulation in the Pten-null T-ALL model contains heterogeneous cells, of which 30% are MYC low, rapamycin- and JQ1 (a BRD4 inhibitor)-resistant, and relatively quiescent in terms of cell cycle (Guo et al., 2008; Schubbert et al., 2014) (Figure 1—figure supplement 1A). To further define this heterogeneous subpopulation, we isolated LSC-enriched and blast subpopulations for RNA-seq analysis (Figure 1—figure supplement 1B, upper panel) and identified one module with a LSChigh-Blast0 expression pattern by Weighted Gene Co-expression Network Analysis (WGCNA) (Zhang and Horvath, 2005) (Figure 1A, yellow module). Approximately, 45% of the genes in this module encode membrane proteins such as Havcr2 (HAVCR2) and Itgax (ITGAX) (Figure 1B–C). Although Havcr2 and Itgax are only expressed in the LSC-enriched subpopulation, the expression levels of these genes vary among different isolates (Figure 1C), which may reflect the heterogeneity of the LSC-enriched subpopulation. The cell surface expression of HAVCR2 and ITGAX, as measured by FACS analysis, are highly correlated and can further separate the previously identified Lin-CD3+KITmid LSC-enriched subpopulation into several subgroups (Figure 1D, upper panel), among which the HAVCR2high or HAVCR2high ITGAXhigh subgroups are most abundant in the thymus, the critical organ for T cell development and T-ALL initiation (Guo et al., 2008;Guo et al., 2011) (Figure 1D, lower panel).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig1-v2.jpg)
+
+**Figure 1.:** The yellow module contains 220 genes that are preferentially expressed in the LSC-enriched subpopulation (LSChigh-Blast0); (B) Gene Ontology (GO) analysis of LSC-enriched genes in the yellow module; (C) Havcr2 and Itgax are specifically expressed in LSC-enriched (red) but not in leukemic blast (blue) subpopulations isolated from the indicated hematopoietic organs of M1-M4 Pten-null T-ALL mice; (D) Upper panel: FACS plots are overlaid to show the differential expression of HAVCR2 and ITGAX in the LSC and blast subpopulations. The previously defined Lin-CD3+KITmid LSC-enriched subpopulation (in the red box in the left panel) can be further separated into several subgroups based on the expression of the cell-surface markers HAVCR2 and ITGAX. The Lin-CD3+KIT- leukemic blast subpopulation (in the blue box in the left panel) does not express HAVCR2 or ITGAX. Lower panel: Quantitative measurement of the HAVCR2high, HAVCR2mid and HAVCR2low subgroups in different hematopoietic organs from Pten-null T-ALL mice (n = 5; *, p<0.05). The HAVCR2high subgroup is enriched in the thymus; (E) PCA analysis of the single-cell transcriptome shows four subgroups, labeled in different colors. Cells from two independent mice are indicated by different shapes; (F) Pseudotime analysis shows the expression profiles of T-ALL cells in 2-D component space. The solid black line shows the main differentiation path from HAVCR2high (purple) to blasts (dark green); (G) Pseudotemporal ordering of single cells based on Havcr2 or Itgax expression.BM: bone marrow.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Heterogenous properties of LSC-enriched and leukemic blast subpopulations. (B) Schematic illustrations of the procedures used for the isolation of LSC-enriched and leukemic blast subpopulations and the bulk (upper panel) and single-cell (lower panel) RNA-seq analyses.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cell numbers used for single-cell RNA-seq. The numbers in parenthesis represent the number of cells that passed the quality control and were used for further analyses; (B–C) Boxplots of the average numbers of transcripts (B) and genes (C) detected in each subgroup; (D) Mapping ratio of the raw reads in each subgroup.
+
 To determine whether these heterogeneous groups are organized hierarchically from LSCs to blasts during T-ALL development, we conducted single-cell RNA-seq analysis and identified four subgroups (Figure 1E; Figure 1—figure supplement 1B, lower panel; Figure 1—figure supplement 2). Pseudotime analysis (Trapnell et al., 2014) further indicates that LSCs follow a continuous developmental path towards blasts, progressing from HAVCR2high through HAVCR2mid and HAVCR2low to blasts (Figure 1F), which can also be visualized by pseudotime analysis of Havcr2 and Itgax expression (Figure 1G). Collectively, these results confirm the heterogeneity of the previously identified LSC-enriched subpopulation and provide fate mapping of LSC differentiation into blasts at single-cell resolution.
 
-## The HAVCR2high subgroup contains the vast majority of LSC activity
+### The HAVCR2high subgroup contains the vast majority of LSC activity
 
 Single-cell transcriptome analysis indicates that the HAVCR2high subgroup is enriched in the hematopoietic stem cell/late progenitor pathways and is relatively quiescent, while the blast subpopulation is enriched in Myc lymphoma pathways and active in the cell cycle (Figure 2A). Consistent with this observation, the HAVCR2high subgroup also has the lowest c-MYC level among the four subgroups (Figure 2B), suggesting that the HAVCR2high subgroup may contain the MYClow cells within the previously defined Lin-CD3+KITmid LSC-enriched subpopulation (Guo et al., 2008; Schubbert et al., 2014).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig2-v2.jpg)
 
-**Figure 2.:** high subgroup are in a quiescent cell cycle state.(A) Left panel: GSEA analysis shows signaling pathways enriched in the HAVCR2high and blast subpopulations. Right panel: Percentage of cells in each phase of the cell cycle based on single-cell RNA-seq; (B) Intracellular FACS analyses of MYC levels in the HAVCR2high，HAVCR2mid, HAVCR2low and blast subgroups. Gray line: isotype control.
+**Figure 2.:** (A) Left panel: GSEA analysis shows signaling pathways enriched in the HAVCR2high and blast subpopulations. Right panel: Percentage of cells in each phase of the cell cycle based on single-cell RNA-seq; (B) Intracellular FACS analyses of MYC levels in the HAVCR2high，HAVCR2mid, HAVCR2low and blast subgroups. Gray line: isotype control.
 
 To determine whether HAVCR2high cells are true LSCs, we performed limiting dilution and bone marrow transplantation analyses using 10 to 1000 bone marrow cells from the Lin-CD3+KITmid, Lin-CD3+KITmidHAVCR2high, and Lin-CD3+KITmidHAVCR2low subgroups (Figure 3A). Cells from the HAVCR2high subgroup have the highest leukemia-initiating capacity—nearly every Lin-CD3+KITmidHAVCR2high cell is capable of inducing T-ALL development, compared to 1/14 of the cells in the Lin-CD3+KITmid subgroup and 1/28 of the cells in the Lin-CD3+KITmidHAVCR2low subgroup (Figure 3B). Consistent with these findings, cells from the HAVCR2high subgroup can also induce T-ALL lethality much earlier than cells from the other two subgroups (Figure 3C). Thus, HAVCR2 is a novel surface marker for the isolation of pure LSCs, and the HAVCR2high subgroup represents the true LSC population in the Pten-null T-ALL model (Table 1).
 
+**Table 1.**
+ The biological properties of the newly defined HAVCR2high LSC subgroup in comparison to other subgroups in the Pten-null T-ALL model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>HAVCR2High</th>
+      <th>HAVCR2mid and HAVCR2low</th>
+      <th>Blasts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYC</td>
+      <td>low</td>
+      <td>high</td>
+      <td>high</td>
+    </tr>
+    <tr>
+      <td>Rapamycin</td>
+      <td>resistance</td>
+      <td>sensitive</td>
+      <td>sensitive</td>
+    </tr>
+    <tr>
+      <td>JQ1</td>
+      <td>resistance</td>
+      <td>sensitive</td>
+      <td>sensitive</td>
+    </tr>
+    <tr>
+      <td>BrdU</td>
+      <td>low</td>
+      <td>high</td>
+      <td>high</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Surface marker</td>
+      <td colspan="2">KIT mid</td>
+      <td>KIT -</td>
+    </tr>
+    <tr>
+      <td>HAVCR2high/ITGAXhigh</td>
+      <td>HAVCR2mid/low/ITGAXmid/low</td>
+      <td>HAVCR2-/ITGAX-</td>
+    </tr>
+    <tr>
+      <td>β-catenin activity</td>
+      <td>high</td>
+      <td>medium</td>
+      <td>low</td>
+    </tr>
+    <tr>
+      <td>LIC activity</td>
+      <td>1/1</td>
+      <td>1/28</td>
+      <td>1/104–105</td>
+    </tr>
+    <tr>
+      <td>Pathway</td>
+      <td>Stem/progenitor</td>
+      <td></td>
+      <td>Myc/lymphoma</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig3-v2.jpg)
 
-**Figure 3.:** high subgroup contains the vast majority of LSC activity.(A) Schematic illustrating the cell isolation, limiting dilution and transplantation procedures used for testing LSC activity as described in Guo et al. (Guo et al., 2008); (B) LSC frequencies were calculated for each subgroup according to Hu et al. (Hu and Smyth, 2009);(C) Survival curves showing LSC activity in each of the sorted subgroups upon transplantation (n = 4). Student’s t-test was used to calculate the p-value.
+**Figure 3.:** (A) Schematic illustrating the cell isolation, limiting dilution and transplantation procedures used for testing LSC activity as described in Guo et al. (Guo et al., 2008); (B) LSC frequencies were calculated for each subgroup according to Hu et al. (Hu and Smyth, 2009);(C) Survival curves showing LSC activity in each of the sorted subgroups upon transplantation (n = 4). Student’s t-test was used to calculate the p-value.
 
-## SPI1 is the master regulator of LSC signature genes
+### SPI1 is the master regulator of LSC signature genes
 
 The identification of HAVCR2high cells as the true LSC population allows us to define the key determinant for LSC ‘stemness’. We used network component analysis (Tran et al., 2012), in which the activity of transcription factors can be deduced based on the expression levels of their target genes. Among the predicted transcription factors (Liberzon et al., 2011) that may control the expression of HAVCR2high LSC signature genes, SPI1 scores the highest (data not shown). Importantly, approximately 70% of the HAVCR2high LSC signature genes overlap with SPI1 target genes identified during T cell development (Zhang et al., 2012)(Figure 4A). Therefore, we decided to focus our subsequent analysis on SPI1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig4-v2.jpg)
+
+**Figure 4.:** (A) Nearly 70% of the genes highly expressed in the HAVCR2high subgroup—the LSC signature genes—are potential SPI1 target genes (purple);(B) Pseudotemporal ordering of single cells based on Spi1 or Myc expression; (C) FACS analysis shows the correlation of HAVCR2 cell surface expression and intracellular SPI1 and c-MYC levels in the LSC-enriched (Lin-CD3+KITmid; red) and blast (Lin-CD3+KIT-; blue) subpopulations. Gray, isotype control; (D–E) ChIP-qPCR analysis identifies SPI1 binding regions in the HAVCR2 promoter (left) and Tcra/d enhancer A(EA) region (right), using Blast-SPI1 cells; (F) ChIP analysis identifies a SPI1 binding site in the endogenous Myc enhancer;(G) q-PCR shows the fold changes in Havcr2, Itgax, Lmo2 and Myc expression between Blast-SPI1 cells (red) and Blast-EGFP cells (blue); (H) Western blotting shows the SPI1, HAVCR2 and c-Myc protein levels in WT thymus, Blast-EGFP and Blast-SPI1 cells. The fold changes relative to expression in the WT thymus are shown above each lane; (I) q-PCR analysis shows the fold changes in HAVCR2, ITGAX, LMO2 and MYC expression in control shRNA (blue) and shSPI1 knockdown human T-ALL KE-37 cells (red); (D–I) All experiments were performed at least three independent times, and the data in D, E, F, G, and I are the means ± S.Ds; *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Upper, a schematic illustration for establishing blast lines expressing the EGFP or EGFP-Spi1 vector; lower, FACS for intracellular SPI1 expression in blast cells infected with the empty EGFP retroviral vector (Blast-EGFP; blue) or the vector with EGFP-Spi1 cDNA (Blast –SPI1; red).
 
 Since the HAVCR2high MYClow phenotype signifies LSCs, we first examined the correlation of Spi1, Havcr2 and Myc expression in HAVCR2high and blast cells. The pseudotemporal ordering of the single-cell RNA-seq data and the FACS analyses demonstrate that Spi1 expression is highest in the HAVCR2high subgroup, which is opposite to the differential expression of Myc (Figure 4B–C).
 
@@ -71,61 +160,69 @@ We further investigated whether SPI1 could transcriptionally regulate Havcr2 and
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig5-v2.jpg)
 
-**Figure 5.:** SPI1 expression is positively correlated with HAVCR2, ITGAX and LMO2 expression in human T-ALL.Correlation of SPI1 expression with HAVCR2, ITGAX and LMO2 expression in two different cohorts of human T-ALL samples， ρ: Spearman’s rank correlation coefficient, p-value: p-value of Spearman’s rank correlation test.
+**Figure 5.:** Correlation of SPI1 expression with HAVCR2, ITGAX and LMO2 expression in two different cohorts of human T-ALL samples， ρ: Spearman’s rank correlation coefficient, p-value: p-value of Spearman’s rank correlation test.
 
-## SPI1 is essential for LSCs ‘stemness’ and T-ALL development
+### SPI1 is essential for LSCs ‘stemness’ and T-ALL development
 
 SPI1 is an ETS domain-containing transcription factor critical for early T cell progenitor function (Zhang et al., 2012), and its overexpression or translocation induces T progenitor cell proliferation and blocks differentiation (Anderson et al., 2002; Seki et al., 2017), similar to the effects we observed in the Pten-null T-ALL model. To functionally determine the role of SPI1 in LSC ‘stemness’ and T-ALL development, we conditionally deleted Spi1 in the Pten-null T-ALL model. Kaplan-Meier survival analysis shows that the lethality caused by T-ALL is delayed proportionally to the numbers of Spi1 allele that are deleted (Figure 6A). The tissue architectures of the thymus and spleen appear normal, and no infiltrating leukemia cells can be detected in the liver of the mutant mice (dKO) (Figure 6B). FACS analyses also show the absence of HAVCR2high LSCs and CD3+ blasts in the thymus, spleen and bone marrow (BM) of the dKO mice (Figure 6C–D). Spi1 deletion can also restore spleen weight and organ morphology (Figure 6B; Figure 6E). Notably, the lethality seen in the compound homozygotes after 3 months is at least partially due to myeloid abnormalities, a known phenotype associated with SPI1 loss in the myeloid lineage (Dakic et al., 2007; Rosenbauer et al., 2004; Steidl et al., 2006)(data not shown).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig6-v2.jpg)
 
-**Figure 6.:** (A) Survival curves for Cdh5-Cre T-ALL model mice (blue line) with heterozygous (+;PtenL/LCdh5-Cre; green line) or homozygous (+;PtenL/L;Spi1L/+Cdh5-Cre; red line) +;PtenL/L;Spi1L/LSpi1 conditional deletion; (B) HE-stained images of thymus, spleen and liver tissue from 2-month-old mice with the indicated genotypes;(C–D) Comparison of the absolute number of HAVCR2high and blast cells in each organ in 2-month-old Cdh5-Cre (blue bars) and +;PtenL/LCdh5-Cre (red bars) mice;(+;PtenL/L;Spi11L/LE) Comparison of spleen weights in the mice in B-C; (F) Representative FACS plots show CD3-positive T cells in the thymus of WT, Pten-null T-ALL and Pten/Spi1 double knockout mice. WT and Pten/Spi1 double knockout mice were 3 months old, and Pten-null T-ALL mice were 2 months old. n = 3; (G) FACS-Gal analysis of T cell development in the thymus of Pten/Spi1 double knockout mice. LacZ+ cells (red dots) and LacZ−cells (blue dots) from the same sample are overlaid. C-D, the data are presented as the means ± S.Ds; *p≤0.05; **p≤0.01; ***p≤0. 001.The bars in the HE images and inserts represent 1000 μM and 50 μM, respectively.
+**Figure 6.:** (A) Survival curves for Cdh5-Cre+;PtenL/L T-ALL model mice (blue line) with heterozygous (Cdh5-Cre+;PtenL/L;Spi1L/+; green line) or homozygous (Cdh5-Cre+;PtenL/L;Spi1L/L; red line) Spi1 conditional deletion; (B) HE-stained images of thymus, spleen and liver tissue from 2-month-old mice with the indicated genotypes;(C–D) Comparison of the absolute number of HAVCR2high and blast cells in each organ in 2-month-old Cdh5-Cre+;PtenL/L (blue bars) and Cdh5-Cre+;PtenL/L;Spi11L/L (red bars) mice;(E) Comparison of spleen weights in the mice in B-C; (F) Representative FACS plots show CD3-positive T cells in the thymus of WT, Pten-null T-ALL and Pten/Spi1 double knockout mice. WT and Pten/Spi1 double knockout mice were 3 months old, and Pten-null T-ALL mice were 2 months old. n = 3; (G) FACS-Gal analysis of T cell development in the thymus of Pten/Spi1 double knockout mice. LacZ+ cells (red dots) and LacZ−cells (blue dots) from the same sample are overlaid. C-D, the data are presented as the means ± S.Ds; *p≤0.05; **p≤0.01; ***p≤0. 001.The bars in the HE images and inserts represent 1000 μM and 50 μM, respectively.
 
 To confirm that the absence of T-ALL in dKO mice is not due to a block in T cell development in the Pten; Spi1-null T progenitor cells (Champhekar et al., 2015; Spain et al., 1999), we first quantified CD3+ T cells in the WT, Pten-null and dKO mice and found relatively normal numbers of CD3+ cells in the dKO thymus (Figure 6F). We then crossed dKO mice with mice of the Rosa26loxp-stop-loxp-LacZ reporter line so that LacZ expression could be used to trace the behavior of cells with Cre-mediated deletion of Pten and Spi1 (Guo et al., 2008; Guo et al., 2011). Our FACS-Gal analysis shows that like LacZ- WT cells (blue), LacZ+ dKO cells (red) in the same animals can undergo differentiation to become CD4+CD8+ double-positive T cells (Figure 6G). These results suggest that PI3K activation can rescue the T cell developmental block in Spi1-null T cell progenitors (Champhekar et al., 2015; Spain et al., 1999), similar to the findings in our previous report on Pten;Rag-null mice (Guo et al., 2011).Therefore, SPI1 is essential for Pten-null LSC ‘stemness’ and T-ALL development.
 
-## Spi1 is upregulated at the ETP/DN1 stage during T cell development
+### Spi1 is upregulated at the ETP/DN1 stage during T cell development
 
 The essential role of SPI1 in regulating LSC signature genes and ‘stemness’ prompted us to investigate how Spi1 is regulated in the Pten-null T-ALL model. During T cell development, Spi1, with other T progenitor cell factors and growth factor receptors such as Bcl11a, Lmo2, Flt3 and Kit, is highly expressed at the early T progenitor (ETP) and double-negative 1 (DN1) stage and is then immediately downregulated during T cell commitment (Zhang et al., 2012) (Figure 7A, upper panel). Interestingly, our pseudotemporal ordering of the single-cell RNA-seq data indicates that the expression patterns of Spi1 and these factors and receptors are largely unchanged in the Pten-null T-ALL model compared to normal T cell development (Figure 7A, lower panels). Furthermore, these factors and receptors are highly expressed in the HAVCR2high subgroup and downregulated in the HAVCR2mid and HAVCR2low subgroups, suggesting that HAVCR2highSPI1high LSCs may be generated at the ETP/DN1 stage (Figure 7A, low panels). Indeed, when we crossed Spi1-GFP reporter mice (Nutt et al., 2005) to Pten-null T-ALL model mice, we found that Spi1-GFP expression is significantly upregulated at the ETP/DN1 stage (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig7-v2.jpg)
 
-**Figure 7.:** Spi1 is upregulated at the ETP/DN1 stage during T cell development.(A) Upper panel: Diagram of progenitor cell factors and growth factor receptors involved in early T cell development, modified from (Rothenberg et al., 2016); lower panels: pseudotemporal ordering of single cells based on Spi1, Bcl11a, Lmo2, Flt3 and Kit expression; (B) Spi1-GFP expression is upregulated in ETP/DN1progenitor cells from Cdh5-Cre null (red line), compared to that in +;PtenL/L;Spi1GFP/+PtenCdh5-Cre WT (gray line), -;Pten+/L;Spi1+/+Cdh5-Cre heterozygous (purple line) and +;Pten+/L;Spi1GFP/+PtenCdh5-Cre WT GFP-;Pten+/L;Spi1GFP/++ (green line) mice.
+**Figure 7.:** (A) Upper panel: Diagram of progenitor cell factors and growth factor receptors involved in early T cell development, modified from (Rothenberg et al., 2016); lower panels: pseudotemporal ordering of single cells based on Spi1, Bcl11a, Lmo2, Flt3 and Kit expression; (B) Spi1-GFP expression is upregulated in ETP/DN1progenitor cells from Cdh5-Cre+;PtenL/L;Spi1GFP/+Pten null (red line), compared to that in Cdh5-Cre-;Pten+/L;Spi1+/+ WT (gray line), Cdh5-Cre+;Pten+/L;Spi1GFP/+Pten heterozygous (purple line) and Cdh5-Cre-;Pten+/L;Spi1GFP/+ WT GFP+ (green line) mice.
 
-## A β-catenin-SPI1-HAVCR2 regulatory circuit is required for Spi1 upregulation and LSC ‘stemness’
+### A β-catenin-SPI1-HAVCR2 regulatory circuit is required for Spi1 upregulation and LSC ‘stemness’
 
 β-Catenin is an important transcription factor regulating Spi1 expression in the T cell lineage (Rosenbauer et al., 2006). Previous works by us and others suggest that β−catenin is critical for LSC self-renewal (Guo et al., 2008) and RAG-dependent aberrant TCR rearrangement (Dose et al., 2014; Guo et al., 2011), a mechanism underlying the reoccurring Tcra/d -Myc translocation caused by PTEN loss or β−catenin activation observed in T-ALLs (Guo et al., 2008 Kaveri et al., 2013). Indeed, the overexpression of β-catenin in a human T-ALL cell line leads to the significantly increased expression of SPI1 from its endogenous promoter and subsequently promotes the expression of its target gene HAVCR2 but downregulates MYC expression (Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig8-v2.jpg)
 
-**Figure 8.:** Spi1 expression is maintained by β-catenin-SPI1-HAVCR2 regulatory circuit.(A) q-PCR analysis of SPI1 and SPI1-regulated HAVCR2 and c-MYC expressions after the overexpression of active β-catenin in the Jurkat T-ALL cell line (red bars). The data are normalized to that of empty plasmid controls (blue bars); (B–E) Upper panels: quantitative intracellular FACS analyses of P-GSK-3β, non-phospho-β-catenin, P-p65 and SPI1 levels in the HAVCR2high, HAVCR2low and blast subgroups; lower panels: representative intracellular FACS analysis of P-GSK-3β, non-phospho-β-catenin, P-p65 and SPI1 levels in the HAVCR2high, HAVCR2low and blast subgroups. Gray line, isotype control;(F) FACS analysis shows cells in the HAVCR2high subgroup at the ETP/DN1 stage, which are absent in WT and dKO mice; (G) Representative FACS plots show the number of cells in the HAVCR2high subgroup in the different drug treatment groups. The data in A, B, C, D and E are the means ± S.Ds of 3 independent tests; *p≤0.05; **p≤0.01; ***p≤0.001.
+**Figure 8.:** (A) q-PCR analysis of SPI1 and SPI1-regulated HAVCR2 and c-MYC expressions after the overexpression of active β-catenin in the Jurkat T-ALL cell line (red bars). The data are normalized to that of empty plasmid controls (blue bars); (B–E) Upper panels: quantitative intracellular FACS analyses of P-GSK-3β, non-phospho-β-catenin, P-p65 and SPI1 levels in the HAVCR2high, HAVCR2low and blast subgroups; lower panels: representative intracellular FACS analysis of P-GSK-3β, non-phospho-β-catenin, P-p65 and SPI1 levels in the HAVCR2high, HAVCR2low and blast subgroups. Gray line, isotype control;(F) FACS analysis shows cells in the HAVCR2high subgroup at the ETP/DN1 stage, which are absent in WT and dKO mice; (G) Representative FACS plots show the number of cells in the HAVCR2high subgroup in the different drug treatment groups. The data in A, B, C, D and E are the means ± S.Ds of 3 independent tests; *p≤0.05; **p≤0.01; ***p≤0.001.
 
 PTEN loss or PI3K/AKT activation is known to activate β−catenin by phosphorylating GSK-3β and preventing GSK-3β-mediated β−catenin degradation (Dan et al., 2008; Kikushige et al., 2015; Persad et al., 2001). Although the HAVCR2high, HAVCR2low and blast subgroups have similar levels of P-GSK-3β due to PTEN loss (Figure 8B, upper and lower panels), the HAVCR2high subgroup has a much higher level of non-phospho-β−catenin (the active form of β−catenin) and SPI1 than HAVCR2low and blast subgroups in vivo (Figure 8C and E, upper and lower panels), suggesting that SPI1-mediated LSC formation may depend on mechanisms other than the oncogenic driver mutation PTEN loss.
 
 HAVCR2 signaling can activate NFκB and β−catenin and promote AML LSC formation and self-renewal (Kikushige et al., 2015). Since we identified HAVCR2 as the SPI1 target gene, we hypothesized that HAVCR2 signaling may in turn activate Spi1 expression and promote T-ALL LSC formation. Intracellular FACS analyses show that among the four subgroups, the HAVCR2high subgroup, which has the highest Spi1 expression, also has the highest level of both phospho-p65 and non-phospho-β−catenin (Figure 8D–E, upper and lower panels), indicating that HAVCR2 signaling must play an important role in the hyperactivation of NFκB and β−catenin. Consistent with this hypothesis, the genetic deletion of Spi1 can prevent both HAVCR2high LSC formation at the ETP/DN1 stage and T-ALL development (Figure 8F). The pharmacological inhibition of β−catenin activation by the novel tankyrase inhibitor BAY6060, but not the inhibition of PI3K activity by BAY1082439 alone (Hill et al., 2017), can also significantly reduce the number of HAVCR2high LSCs in vivo in late-stage T-ALL (Figure 8G). Together, these results suggest that although Spi1 upregulation is initiated by PTEN loss, SPI1-mediated LSC formation and ‘stemness’ are maintained by the β−catenin–SPI1-HAVCR2 regulatory circuit.
 
-## LSCs loses their ‘stemness’ when Spi1 expression is silenced by DNA methylation
+### LSCs loses their ‘stemness’ when Spi1 expression is silenced by DNA methylation
 
 How cancer stem cells lose ‘stemness’ and whether this process is unidirectional or reversible are currently unknown. Since Spi1 expression is drastically reduced from the HAVCR2high stage to the HAVCR2low stage (Figure 7A, lower panel), we hypothesized that a Spi1 silencing mechanism may explain the loss of LSC ‘stemness’ during differentiation. DNA methylation is one of the major epigenetic mechanisms in regulating gene expression during normal development. Although the global methylation patterns across the LSC signature and blast signature genes are similar (Figure 9A–B), the Spi1 promoter is significantly hypomethylated in LSCs compared to blasts and normal T cell controls (Figure 9C). Consistently, the 4 CpG islands on the Spi1 promoter (Fernández-Nestosa et al., 2013) are not methylated in the HAVCR2high subgroup but gradually become methylated in the HAVCR2mid and HAVCR2low subgroups and are completely methylated in blasts (Figure 9D), which may explain the trend in Spi1 expression and Spi1-controlled Havcr2 and Itgax expression (Figure 4B, upper panel; Figure 1G). Conversely, treating leukemic blasts with the DNMT inhibitor 5-AZ can increase the expression of Spi1 and its regulated LSC signature genes in vitro (Figure 9E) and induces the SPI1+ and MYClow subgroups in vivo (Figure 9F), demonstrating that Spi1 expression is reversibly regulated by DNA methylation, which in turn regulates LSC signature gene expression.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig9-v2.jpg)
 
-**Figure 9.:** Spi1 expression is controlled by DNA methylation(A) Schematic illustrating the procedures involved in cell isolation and RRBS analysis; (B) DNA methylation status of genes specifically expressed in the leukemic blast (left) and LSC-enriched (right) subpopulations; (C) Spi1 promoter methylation status in normal T cells, LSC-enriched cells and blast-enriched cells.
+**Figure 9.:** (A) Schematic illustrating the procedures involved in cell isolation and RRBS analysis; (B) DNA methylation status of genes specifically expressed in the leukemic blast (left) and LSC-enriched (right) subpopulations; (C) Spi1 promoter methylation status in normal T cells, LSC-enriched cells and blast-enriched cells.
 
 To test the relevance of our findings to human T-ALL, we used two human T-ALL cell lines, KE-37 and CEM (Burger et al., 1999; Tatetsu et al., 2007). KE-37 expresses SPI1 and HAVCR2, while CEM does not (Figure 10A), consistent with the methylation status of the SPI1 promoter (Figure 10B). 5-AZ treatment can upregulate the expression of SPI1 and its target HAVCR2 but downregulate c-MYC expression in CEM cells, similar to the effects of our blast treatment, while no change can be detected in KE-37 cells (Figure 10C), demonstrating that SPI1 expression is also regulated by DNA methylation in human T-ALL. To test whether the leukemogenic activity could be modulated by SPI1 expression in human T-ALL cell lines, we injected placebo- or 5-AZ-treated CEM cells and monitored the T-ALL development induced by these cells in vivo. 5-AZ treatment significantly accelerated T-ALL development (Figure 10D). However, cell lines are not the best model system for studying LSC activity, and the essential role of SPI1 in regulating LSC activity in human T-ALL needs to be determined using patient samples and PDX models.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig10-v2.jpg)
 
-**Figure 10.:** SPI1 expression is silenced by DNA methylation(A) FACS analysis shows the surface expression of HAVCR2 and the intracellular level of SPI1 in the human T-ALL cell lines KE-37 and CEM.(B) Methylation status of CpG islands in the SPI1 promoter in the human T-ALL cell lines KE-37 and CEM; (C) q-PCR analysis of SPI1, HAVCR2 and Myc expression in KE-37 and CEM cells without (blue) and with(pink and red) 5-AZ treatment in vitro; (D) Survival curves show T-ALL development by CEM cells without (blue) and with (red) 5-AZ treatment upon transplantation (n = 4; t-test). The data in Care the means ± S.Ds of 3 independent tests; *p≤0.05; **p≤0.01; ***p≤0.001.
+**Figure 10.:** (A) FACS analysis shows the surface expression of HAVCR2 and the intracellular level of SPI1 in the human T-ALL cell lines KE-37 and CEM.(B) Methylation status of CpG islands in the SPI1 promoter in the human T-ALL cell lines KE-37 and CEM; (C) q-PCR analysis of SPI1, HAVCR2 and Myc expression in KE-37 and CEM cells without (blue) and with(pink and red) 5-AZ treatment in vitro; (D) Survival curves show T-ALL development by CEM cells without (blue) and with (red) 5-AZ treatment upon transplantation (n = 4; t-test). The data in Care the means ± S.Ds of 3 independent tests; *p≤0.05; **p≤0.01; ***p≤0.001.
 
-## Cotargeting oncogenic driver mutations and LSC ‘stemness’ maintenance circuit
+### Cotargeting oncogenic driver mutations and LSC ‘stemness’ maintenance circuit
 
 We previously reported that treating Pten-null T-ALL model mice with a PI3K inhibitor is effective only at the preleukemia stage, not after leukemia has developed (Guo et al., 2011; Blackburn et al., 2014), suggesting the importance of cotargeting the LSC ‘stemness’ maintenance pathway once LSCs have been generated. Since SPI1 is essential for LSC formation and SPI1 expression is regulated and maintained by the β-catenin-SPI1-HAVCR2 regulatory circuit, we hypothesized that cotargeting any component of this circuit with an anti-PI3K inhibitor may effectively eliminate existing T-ALL cells.
 
 To test this hypothesis, we first treated age-matched leukemia-stage Pten-null T-ALL mice with DB1976 (Figure 11—figure supplement 1A–B), a compound known to specifically disrupt the interactions between SPI1 and its targets (Antony-Debré et al., 2017; Munde et al., 2014; Stephens et al., 2016). DB1976 can significantly inhibit the expression of Havcr2 and other SPI1 target genes in vitro (Figure 11A) and reduce the number of HAVCR2high LSCs in vivo (Figure 11B, left panel), confirming that SPI1 is not only important for LSC formation but also for LSC maintenance. However, only when combined with a debulking anti-PI3K agent such as rapamycin (Guo et al., 2008) could DB1976 significantly reduce the leukemia burden, as demonstrated by the nearly complete absence of leukemic blasts in the hematopoietic organs (Figure 11B, right panel). Consequently, combination treatment can markedly prolong the animal lifespan (Figure 11C), restore the spleen weight and morphology, and eliminate infiltrating leukemic cells in the lung, kidney and liver without a significant change in animal body weight (Figure 11D–E; Figure 11—figure supplement 1C). Similar results were obtained when we replaced DB1976 and rapamycin with BAY6060 and BAY1082439, respectively (Figure 11D–E; Figure 11—figure supplement 1D). BAY1082439 can inhibit PI3Kδ, which is essential for Pten-null leukemia (Subramaniam et al., 2012), at nanomolar concentrations (Antony-Debré et al., 2017). The inhibition of tankyrase by BAY6060 can significantly reduce β-catenin activity and consequently decrease Spi1 expression and the number of HAVCR2high LSCs in vivo (Figure 12A). In combination, BAY6060 and BAY1082439 could significantly prolong the animal lifespan and almost completely eliminate LSCs and blasts (Figure 12B, Figure 11E and Figure 8G).
 
+![Figure 11.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig11-v2.jpg)
+
+**Figure 11.:** (A) q-PCR analysis of Spi1 and Spi1-regulated Havcr2, Itgax and Lmo2 expression after 24 hr of DB1976 treatment (blue bars). The data are normalized to that of the untreated controls (red bars); (B) A comparison of the absolute number of HAVCR2high and blast cells in the untreated (gray bars) and differently treated groups; (C) Survival curve of Cdh5-Cre+;PtenL/L model mice treated with DB1976 and rapamycin alone and in combination; (D) A comparison of the spleen weights of 2-month-old WT mice, untreated Cdh5-Cre+;PtenL/L mice, and combination-treated mice upon euthanasia; (E) HE-stained images of spleen, lung, kidney and liver tissue from2-month-old WT, untreated and combination-treated mice. A, B and D: the data are presented as the means ± S.Ds; ***p≤0.001; the bars in the HE images and inserts represent 1000 μM and 50 μM, respectively.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** (A) Table showing all inhibitors used in this study, including their targets, in vivo dosages and references. (B) Schematic illustration of the different treatment cohorts and analyses; (C– E) Lack of general body weight loss in each treatment cohort.
+
 ![Figure 12.](https://cdn.elifesciences.org/articles/38314/elife-38314-fig12-v2.jpg)
 
-**Figure 12.:** (A) Comparison of the HAVCR2high subgroup population (left panel) and of the levels of non-phosphorylated β-catenin (middle panel) and SPI1 (right panel) within the HAVCR2high subgroup without (upper panels) and with BAY6060 treatment (low panels); (B) Survival curve for Cdh5-Cre mice treated with BAY6060 and BAY1082439 alone and in combination; (+;PtenL/LC) Survival curve for Cdh5-Cre mice treated with rapamycin in combination with either an IgG control antibody or an anti-HAVCR2 antibody.+;PtenL/L
+**Figure 12.:** (A) Comparison of the HAVCR2high subgroup population (left panel) and of the levels of non-phosphorylated β-catenin (middle panel) and SPI1 (right panel) within the HAVCR2high subgroup without (upper panels) and with BAY6060 treatment (low panels); (B) Survival curve for Cdh5-Cre+;PtenL/L mice treated with BAY6060 and BAY1082439 alone and in combination; (C) Survival curve for Cdh5-Cre+;PtenL/L mice treated with rapamycin in combination with either an IgG control antibody or an anti-HAVCR2 antibody.
 
 Compared with β-catenin and SPI1, HAVCR2 may be a better therapeutic target as it is normally not expressed in hematopoietic stem and progenitor cells (Kikushige et al., 2010), and inhibition of HAVCR2 would therefore be less toxic. An anti-HAVCR2 antibody has been used clinically in immunotherapy and in targeting AML LSCs (Kikushige et al., 2010; Koyama et al., 2016). When combined with rapamycin, the anti-HAVCR2 antibody showed a therapeutic effect similar to that seen for DB1976/rapamycin and BAY6060/BAY1082439 combinations (Figure 11D–E and Figure 12C; Figure 11—figure supplement 1E). Together, these results suggest that inhibiting any component in the β-catenin-SPI1-HAVCR2 regulatory circuit will inhibit LSC ‘stemness’ maintenance and lead to the effective elimination of HAVCR2-positive T-ALL cells in the presence of an effective debulking agent targeting the PI3K pathway, such as rapamycin or BAY1082439.
 
@@ -145,72 +242,334 @@ PTEN and the PI3K/AKT/mTOR pathway controlled by PTEN are critical for the etiol
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Cdh5-Cre+; PtenloxP/loxP; Rosa26floxedSTOP-LacZ+</td>
+      <td>(Guo et al., 2008)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Spi1loxP/loxP</td>
+      <td>(Dakic et al., 2005)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Spi1-GFP</td>
+      <td>(Nutt et al., 2005)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pten/Spi1 double KO</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>KE-37</td>
+      <td>Deutsche Sammlung von Mikroorganismen und Zellkulturen (DSMZ)</td>
+      <td>ACC-46, RRID:CVCL_1327</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat</td>
+      <td>(Schubbert et al., 2014)</td>
+      <td></td>
+      <td>Received Drs. G. Cheng at UCLA</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>CEM</td>
+      <td>(Schubbert et al., 2014)</td>
+      <td></td>
+      <td>Received C. Radu at UCLA</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293T</td>
+      <td>American Type Culture Collection (ATCC)</td>
+      <td>CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>HE001</td>
+      <td>(Schubbert et al., 2014).</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TER119- APC-Cy7</td>
+      <td>Biolegend</td>
+      <td>116223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>B220-APC-Cy7</td>
+      <td>Biolegend</td>
+      <td>103224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45-PE</td>
+      <td>Biolegend</td>
+      <td>103108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3-PE-Cy7</td>
+      <td>Biolegend</td>
+      <td>100320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Kit-APC</td>
+      <td>Biolegend</td>
+      <td>105812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HAVCR2-PE</td>
+      <td>Biolegend</td>
+      <td>134004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ITGAX-FITC</td>
+      <td>Biolegend</td>
+      <td>117306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mac-1-PB</td>
+      <td>Biolegend</td>
+      <td>101224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gr-1-APC</td>
+      <td>Biolegend</td>
+      <td>108412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SPI1-PE</td>
+      <td>Biolegend</td>
+      <td>681308</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MYC</td>
+      <td>Cell Signaling Technology</td>
+      <td>5605S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nonphospho (active)-β- catenin</td>
+      <td>Cell Signaling Technology</td>
+      <td>70034 s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>3900 s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho- NF-κB p65</td>
+      <td>Cell Signaling Technology</td>
+      <td>3033 s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SPI1</td>
+      <td>Cell Signaling Technology</td>
+      <td>2258 s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho- GSK-3β</td>
+      <td>Cell Signaling Technology</td>
+      <td>5558 s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HAVCR2</td>
+      <td>Abcam</td>
+      <td>ab185703</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HAVCR2</td>
+      <td>BioxCell</td>
+      <td>RMT3-23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG</td>
+      <td>BioxCell</td>
+      <td>2A3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fluorescein (FITC) AffiniPure Fab Fragment Donkey Anti-Rabbit IgG (H + L)</td>
+      <td>Jackson Immuno Research</td>
+      <td>711-097-003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LC laboratories</td>
+      <td>R-5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DB1976</td>
+      <td>(Belver and Ferrando, 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-AZ</td>
+      <td>Selleck</td>
+      <td>S1782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAY10 82439</td>
+      <td>(Hill et al., 2017)</td>
+      <td></td>
+      <td>Provided by Bayer Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAY 6060</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by Bayer Pharmaceuticals</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The Cdh5-Cre+;PtenloxP/loxP;Rosa26floxedSTOP-LacZ+ floxedSTOP-LacZ line was described previously (Guo et al., 2008; Guo et al., 2011; Schubbert et al., 2014). The Spi1loxP/loxP and Spi1-GFP mouse lines were kindly provided by Dr. Stephen L. Nutt. Mouse genotypes were determined by genomic PCR analyses with the primer sets listed in Supplementary File 1. Animal housing, breeding, and surgical procedures were approved by the Ethics Committee under ID LSC-WuH-1 and conducted in accordance with the regulations of the Division of Laboratory Animal Medicine at Peking University.
 
-## Cell lines
+### Cell lines
 
-The KE-37 human T-ALL cell line was purchased from DMSZ, CEM and Jurkat cell lines were generously provided by C. Radu and Drs. G. Cheng at UCLA, respectively. All of the human T-ALL cell lines were maintained in 1640 (Life Technologies) supplemented with 10% FBS, penicillin, and streptomycin. The Pten-null T-ALL cell line (HE001) was generated previously reported, and cultured in DMEM (Life Technologies) added with 20% FBS(Omega Scientific), 10 ng/mL IL-2, and 10 ng/mL IL-7 (both Invitrogen), 10 mmol/L HEPES, nonessential amino acids, sodium pyruvate, glutamine, penicillin, and streptomycin (Life Technologies), and 2-mercaptoethanol (β-ME; Sigma)(Schubbert et al., 2014). All cell lines were maintained according to the manufacturer recommendations or previous publications. CEM, Jurkat, HEK293, and KE-37 cells were authenticated by the providers and independently authenticated (via Hi-C, WES and RNAseq analyses for genome-wide alteration, mutation signatures and gene expression profiles) in the lab. All lines tested negative for mycoplasma.
+The KE-37 human T-ALL cell line was purchased from DMSZ, CEM and Jurkat cell lines were generously provided by C. Radu and Drs. G. Cheng at UCLA, respectively. All of the human T-ALL cell lines were maintained in 1640 (Life Technologies) supplemented with 10% FBS, penicillin, and streptomycin. The Pten-null T-ALL cell line (HE001) was generated previously reported, and cultured in DMEM (Life Technologies) added with 20% FBS(Omega Scientific), 10 ng/mL IL-2, and 10 ng/mL IL-7 (both Invitrogen), 10 mmol/L HEPES, nonessential amino acids, sodium pyruvate, glutamine, penicillin, and streptomycin (Life Technologies), and 2-mercaptoethanol ($\beta$-ME; Sigma)(Schubbert et al., 2014). All cell lines were maintained according to the manufacturer recommendations or previous publications. CEM, Jurkat, HEK293, and KE-37 cells were authenticated by the providers and independently authenticated (via Hi-C, WES and RNAseq analyses for genome-wide alteration, mutation signatures and gene expression profiles) in the lab. All lines tested negative for mycoplasma.
 
-## Fluorescence-activated cell sorting (FACS) analyses
+### Fluorescence-activated cell sorting (FACS) analyses
 
 FACS analyses were performed on BD LSR Fortessa or Influx system from BD Biosciences. The numbers of leukemia blasts, LSC-enriched subpopulations, and HAVCR2/ITGAX subgroups, as well as intracellular protein levels, were analyzed as described previously (Guo et al., 2008; Guo et al., 2011; Schubbert et al., 2014).
 
-## Bulk RNA-seq analysis
+### Bulk RNA-seq analysis
 
 For bulk RNA-seq analysis, total RNA was extracted from FACS-sorted cells using a RNeasy Micro Kit (Qiagen, 74004). Strand-specific libraries were generated using an NEBNext Ultra RNA Library Prep Kit (NEB, E7530) following the manufacturer’s protocol. Libraries of 350±20 bp were obtained, and the quality was determined using a Fragment Analyzer system (Advanced Analytical).
 
 Barcoded libraries were subjected to 150 bp paired-end sequencing on an Illumina HiSeq 2500, and the paired-end reads were aligned to the mouse reference genome (Version mm9 from UCSC) using Tophat (v2.0.13)(Trapnell et al., 2009). The expression value was generated as the number of fragments per kilobase of transcript per million mapped reads (FPKM) using Cufflinks (v2.2.1) (Trapnell et al., 2012).
 
-## Single-cell RNA-seq analysis
+### Single-cell RNA-seq analysis
 
 For single-cell RNA-seq analysis, we essentially followed a published protocol (Li et al., 2017). Raw reads were processed as previously reported (Li et al., 2017; Trapnell et al., 2009) to generate expression values. Low-quality cells with less than 10,000 reads or less than 3000 covered genes were filtered out. Genes with a mean expression (TPM) value of less than one were discarded, leaving 276 cells and 12972 genes for further analysis. The unique gene set was then used for PCA, t-SNE, and pseudotime analyses (Qiu et al., 2017a; Qiu et al., 2017b; Trapnell et al., 2014). Differentially expressed genes were identified by SCDE (Fan et al., 2016; Kharchenko et al., 2014), and genes with Z > 4 were selected. Gene Ontology analysis was performed by Cluster Profiler (Yu et al., 2012), followed by Gene Set Enrichment Analysis (GSEA)(Subramanian et al., 2005) to identify gene sets that show significant differences between the blast and HAVCR2highsubgroups.
 
-## Transplantation assay
+### Transplantation assay
 
 Pten-null T-ALL cells harvested from primary Pten-null T-ALL mice were FACS-sorted and diluted before transplantation, as described previously (Guo et al., 2008). Leukemia development was monitored daily by physical appearance, and weekly by peripheral blood smear and FACS analysis.. T-ALL was confirmed if the bone marrow or peripheral blood contained 20% leukemic blasts (Guo et al., 2008).
 
 For human T-ALL cell transplantation, CEM cells were treated with 5 μM 5-AZ or PBS for 6 days in vitro, and an equal number of untreated and treated cells were then transplanted by tail vein injection into NSG recipients.
 
-## Real-time PCR
+### Real-time PCR
 
 Total RNA was isolated using the RNeasy Micro Kit (Qiagen, 74004) and was reverse transcribed into cDNA using a HiScript II Q RT SuperMix for qPCR Kit (Vazyme, R223-01). Gene expression levels were measured with quantitative real-time PCR using a HiScript II One Step RT-PCR Kit (Vazyme, P611-01) and a CFX Real-Time PCR detection system (Bio-Rad). All expression data were normalized toβ-actin expression, and the relative expression levels were derived from the delta-delta Ct values using CFX software (Bio-Rad). For the primer sequences used, please see Supplementary File 2.
 
-## Plasmid construction
+### Plasmid construction
 
 The full-length Spi1 sequence was PCR-amplified from cDNAs generated from HAVCR2high cells (primers: EcoRI-SPI1-Forward 5’-GAATTCATGTTACAGGCGTGCAAAATGGAAG-3’ and XhoI-SPI1-Reverse 5’-CTCGAGTCAGTGGGGCGGGAGGCG-3’). The PCR products were purified and cloned into the MSCV-IRES-EGFP vector, generously provided by Dr. Owen Witt of UCLA, and the sequence was confirmed. The pll3.7-shSPI1 and control constructs were kindly provided by Dr. Junwu Zhang of the Chinese Academy of Medical Sciences and Peking Union Medical College, PLVX-IRES-RFP plasmid and PLVX-active-β-catenin (S33A, S37A, S45A) plasmid were kindly provided by Dr. Wei Guo of Tsinghua University.
 
-## Western blot analysis
+### Western blot analysis
 
 To quantify the protein levels of MYC and SPI1, Western blotting was performed as described previously (Schubbert et al., 2014) and the membranes were probed with antibodies against MYC (5605s),and SPI1(2258s) from Cell Signaling Technology, using HAVCR2 (ab185703) antibody from abcam, β-actin (7210,Santa Cruz) as a loading control.
 
-## Inhibitor and antibody treatments
+### Inhibitor and antibody treatments
 
 Two-month-old Pten-null T-ALL leukemic mice were treated with 1) a daily dose of rapamycin (4 mg/kg, i.p; LC laboratories), DB1976 (2.5 mg/kg, oral; synthesized by Dr. Lei’s laboratory), or a combination of the two drugs; 2) a daily dose of BAY1082439 (75 mg/kg, oral; provided by Bayer Company), BAY6060(10 mg/kg, oral; provided by Bayer Company), or a combination of the two drugs; and 3) a daily dose of rapamycin (4 mg/kg, i.p; LC Laboratories) with twice weekly IgG (200 µg, i.p; 2A3,BioxCell) control or monoclonal anti-HAVCR2 (200 µg, i.p; RMT3-23,BioxCell) antibody. The durations of the treatments are indicated in Figure 11—figure supplement 1. HE and immunohistochemical(IHC) analyses were performed as described (Guo et al., 2008).
 
 For 5-AZ (S1782, Selleck) treatment, 6-week-old Pten-null T-ALL mice were treated with either vehicle or 5-AZ (1.25 mg/kg, i.p.; 3 days per week) for 2 weeks before intracellular FACS analysis.
 
-## RRBS library preparation
+### RRBS library preparation
 
 Blast- and LSC-enriched subpopulations were collected by FACS sorting, and genomic DNA was extracted using a DNA micro kit or a DNA mini kit (Qiagen). The RRBS library was prepared according to a previous publication (Smallwood and Kelsey, 2012). Genomic DNA was digested with MspI (Fermentas), followed by end repair, adapter ligation and bisulfite modification (Qiagen, #59104). The converted DNA library was sequenced on a HiSeq 4000 (Illumina) after two-round PCR amplification and size selection.
 
-## DNA methylation analysis
+### DNA methylation analysis
 
 BS-seq reads were aligned to the reference genome (mm9) by BS-Seeker2 (Guo et al., 2013). The lollipop plot and region-specific distribution profiles were generated by CGmap Tools (Guo et al., 2018). The methylation status of murine and human SPI1 promoter CpG islands was determined according to (Fernández-Nestosa et al., 2013).
 
-## Conventional bisulfite sequencing
+### Conventional bisulfite sequencing
 
 For bisulfite conversion, genomic DNA was treated with an EZ-DNA Methylation-Direct Kit (D5021, Zymo Research) according to the manufacturer’s protocol. The converted DNA was subjected to PCR amplification and cloned into a pEASY-T1 Simple cloning vector (Transgene Biotech). The bisulfite primers for the mouse and human promoters were described previously (Fernández-Nestosa et al., 2013; Tatetsu et al., 2007)(Table S2). Individual clones were sequenced by Sanger sequencing, and the data were analyzed by the online software Quma (http://quma.cdb.riken.jp).
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 Approximately 5 × 106 Blast-EGFP and Blast-SPI1 cells were used, and ChIP analysis was performed using a Zymo-Spin ChIP Kit (D5210, Zymo Research). The antibodies used for the ChIP assays were anti-SPI1 (sc-352, Santa Cruz) and normal rabbit IgG (2729, Cell Signaling Technology). The enriched regions were quantified by qPCR using the primers described in Supplementary File 2.
 
-## Data access
+### Data access
 
 All the Bulk RNA-seq, Single cell RNA-seq and BiSulfite-seq data for this study are deposited in NCBI Gene Expression Omnibus (GEO; accession # GSE115356; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115356).
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism software was used to calculate the means and standard deviations (SDs). The t-test or two-way ANOVA was used to determine statistical significance, and p<0.05 was considered statistically significant. The data are presented as the means ± SDs.

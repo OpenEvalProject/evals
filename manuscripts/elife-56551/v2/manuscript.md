@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Defective primary cilia cause a range of diseases known as ciliopathies, including hearing loss. The etiology of hearing loss in ciliopathies, however, remains unclear. We analyzed cochleae from three ciliopathy mouse models exhibiting different ciliogenesis defects: Intraflagellar transport 88 ( Ift88 ), Tbc1d32 (a.k.a. bromi ), and Cilk1 (a.k.a. Ick ) mutants. These mutants showed multiple developmental defects including shortened cochlear duct and abnormal apical patterning of the organ of Corti. Although ciliogenic defects in cochlear hair cells such as misalignment of the kinocilium are often associated with the planar cell polarity pathway, our results showed that inner ear defects in these mutants are primarily due to loss of sonic hedgehog signaling. Furthermore, an inner ear-specific deletion of Cilk1 elicits low-frequency hearing loss attributable to cellular changes in apical cochlear identity that is dedicated to low-frequency sound detection. This type of hearing loss may account for hearing deficits in some patients with ciliopathies.
+Defective primary cilia cause a range of diseases known as ciliopathies, including hearing loss. The etiology of hearing loss in ciliopathies, however, remains unclear. We analyzed cochleae from three ciliopathy mouse models exhibiting different ciliogenesis defects: Intraflagellar transport 88 (Ift88), Tbc1d32 (a.k.a. bromi), and Cilk1 (a.k.a. Ick) mutants. These mutants showed multiple developmental defects including shortened cochlear duct and abnormal apical patterning of the organ of Corti. Although ciliogenic defects in cochlear hair cells such as misalignment of the kinocilium are often associated with the planar cell polarity pathway, our results showed that inner ear defects in these mutants are primarily due to loss of sonic hedgehog signaling. Furthermore, an inner ear-specific deletion of Cilk1 elicits low-frequency hearing loss attributable to cellular changes in apical cochlear identity that is dedicated to low-frequency sound detection. This type of hearing loss may account for hearing deficits in some patients with ciliopathies.
 
 ## Introduction
 
@@ -37,15 +37,39 @@ In this study, to better understand the role of primary cilia in the cochlea, we
 
 ## Results
 
-## Primary cilia are required for SHH signal transduction in the inner ear primordium
+### Primary cilia are required for SHH signal transduction in the inner ear primordium
 
 To investigate the role of primary cilia in inner ear development, we first examined whether primary cilia are present in the otocyst, or inner ear primordium, at embryonic day (E) 10.5 (Figure 1). Primary cilia were visualized by immunostaining with antibodies against ARL13B and γ-tubulin, which are localized to the ciliary membrane and basal body, respectively (Cantagrel et al., 2008). Primary cilia were observed in otic epithelium projecting toward the lumen of the otocyst (Figure 1B, Ba, C) and in the periotic mesenchyme (Figure 1Bb). The abundance of primary cilia appeared to be proportional to the thickness of the otic epithelium, higher in the ventral and medial regions than in the dorsolateral region (Figure 1B,C; Figure 1—figure supplement 1). SHH target genes including Ptch1 and Gli1 are most strongly expressed in the ventral and medial regions, closer to the SHH sources such as the floor plate and notochord (Figure 1G’), than in the dorsal and lateral regions (Figure 1G–I). Interestingly, the abundance of ciliated cells in each otic region is generally correlated with the expression levels of SHH target genes (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) In E10.5 wild-type embryos, primary cilia visualized by ARL13B and γ-tubulin immunostaining were observed in the otic epithelium (B, Ba, C) and periotic mesenchyme (Bb). (D–F) In Ift88 cKO embryos, primary cilia were disappeared in the otic epithelium (E, Ea, F) but not in periotic mesenchyme (Eb). (G–I, L–N) Shh is expressed in the floor plate (G, G’, L, L’; black arrowheads) and notochord (G, G’, L, L’; black arrows) in both E10.5 wild-type and Ift88 cKO embryos. Yellow arrows and arrowheads indicate the endolymphatic duct and vertical pouch, respectively. The sonic hedgehog (SHH) target genes, Ptch1 and Gli1, are expressed in a graded pattern, stronger in the ventral and medial regions and weaker in the dorsolateral region of the otocyst in wild-type embryos (H, I), but dramatically decreased in Ift88 cKO embryos (M, N; red arrows). (J, K) In E11.5 wild-type otocysts, Otx2 is expressed in the lateral side of the developing cochlea and Msx1 is expressed in the apical tip of the cochlea (K; arrowhead). (O, P) In Ift88 cKO otocysts, while Otx2 expression appears normal, Msx1 expression is completely downregulated (P; red asterisk). nt, neural tube; ot, otocyst. In all images, dorsal is up and lateral is right. Scale bar in A, 200 μm, also applies to D; scale bar in B, 20 μm, also applies to C, E, F; scale bar in Ba, 3 μm, also applies to Bb, Ea, Eb; scale bar in G, 200 μm, also applies to H–P.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The otocyst is divided into four regions: ventromedial (VM), ventrolateral (VL), dorsomedial (DM), and dorsolateral (DL), which are numbered 1, 2, 3, and 4, respectively. The number of lumenal cilia was counted in the areas indicated by yellow lines (80 µm in length). (B) Quantification of the number of cilia in control and Ift88 cKO otocysts. The number of cilia is higher in the ventral otic regions than the dorsal regions in controls, while nearly no cilia are observed in Ift88 cKO otocysts (n = 3 for wild type, n = 3 for Ift88 cKO). (C,D) Quantification of the signal intensity for in situ hybridization of Ptch1. The strongest intensity among all measurements was set as 100%, and the relative signal intensity of otic epithelium and periotic mesenchyme in each region of wild-type and Ift88 cKO otocysts are plotted (n = 3 for wild types, n = 3 for Ift88 cKO). Values and error bars represent the mean ± standard deviation. Statistical comparisons were made using two-way ANOVA with Bonferroni correction for multiple comparisons (*p<0.05 **p<0.01, ***p<0.001).
+
 To examine the role of primary cilia in the otocyst, we ablated primary cilia in the otic epithelium by crossing Ift88fl/fl mice with Pax2-Cre mice. IFT88 is an IFT-B component that is essential for anterograde transport along the cilia (Pazour et al., 2000), and Pax2-Cre mice induce Cre-mediated recombination in the otic placode as early as six to seven somite stages (Ohyama and Groves, 2004). In E10.5 Pax2-Cre; Ift88fl/fl (Ift88 conditional knockout [cKO]) embryos, primary cilia were specifically ablated in the otic epithelium (Figure 1Ea), but not in the periotic mesenchyme (Figure 1Eb), compared to controls (Figure 1A–C). Although Shh expression in the ventral midline structures, floor plate and notochord, was not downregulated in Ift88 cKO embryos (Figure 1G,L; black arrowhead and arrow), SHH target genes including Ptch1 and Gli1 were significantly downregulated in the otic epithelium but not in the periotic mesenchyme (Figure 1H,I,M,N; Figure 1—figure supplement 1). The dorsal otocyst showed relatively normal morphology with the endolymphatic duct and vertical pouch (Figure 1G,L; yellow arrow and arrowhead); however, the ventral tip of the cochlear primordium was not as prominent as that in wild-type embryos (Figure 1H,I,M,N; black and red arrows). Consistent with these results, expression of Msx1 at the tip of apical cochlea, which requires strong SHH signaling (Figure 1K, arrowhead, Son et al., 2015), was not detected in Ift88 cKO embryos at E11.5 (Figure 1P; red asterisk). In contrast, expression of Otx2, which requires a relatively lower level of SHH signaling than Msx1 (Bok et al., 2007; Morsli et al., 1999; Riccomagno et al., 2002), was comparable between Ift88 cKO and wild-type embryos (Figure 1J,O). These results suggest that primary cilia are required for normal SHH signal transduction in the inner ear primordium, particularly the strong SHH activity required for apical cochlear patterning.
 
-## Cochlear phenotypes in three different types of ciliary mutants
+### Cochlear phenotypes in three different types of ciliary mutants
 
 Next, we examined the role of primary cilia in cochlear development and HC differentiation by analyzing the cochlear phenotypes of three different types of ciliary mutants, whose ciliogenesis phenotypes have been characterized in other tissues: (1) Pax2-Cre; Ift88fl/fl (Ift88 cKO) mutant lacking primary cilia (Haycraft et al., 2007; Jones et al., 2008), (2) Tbc1d32bromi mutant, generated by ENU-mutagenesis and exhibiting defective ciliary morphology such as swollen or bulbous cilia (Ko et al., 2010), and (3) Cilk1 (also called Ick) knockout mutant exhibiting abnormal ciliary length (Moon et al., 2014). Cochleae were dissected at E18.5 and stained with phalloidin and anti-ARL13B antibody to visualize stereociliary bundles and primary cilia, respectively (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram of E18.5 organ of Corti. OHC, outer hair cell; IHC, inner hair cell; DC, Deiter’s cell; OPC, outer pillar cell; IPC, inner pillar cell. (B–E) In E18.5 wild-type cochlea, stereociliary bundles and primary cilia were visualized by staining with phalloidin (red fluorescence) and immunostaining with anti-ARL13B antibody (green fluorescence), respectively. Images of organ of Corti from 10% (base), 75% (mid-apex), and 90% (apex) cochlear positions from the basal end show a progression of HC differentiation from base to apex based on overall organization and stereociliary bundles in the hair cells (HCs). White brackets indicate one row of IHCs and three or more rows of OHCs. Magnified images show kinocilia of OHCs (Ca, Cb, Ea; yellow arrows) and primary cilia of Deiters’ cells (Ca; white arrows) and pillar cells (Cb; white arrowheads). (F–J) In Ift88 cKO mutants, cochlea shows a severe shortening (F), premature HC differentiation (G–I), and multiple extra rows of OHCs in the apex (H, I). Both kinocilia and primary cilia are absent from most HCs and supporting cells (SCs) (Ga, Gb; asterisks). Ectopic vestibule-like HCs are present in the Kölliker’s organ (J). (K–O) In Tbc1d32bromi mutants, cochlea shows a severe shortening (K), premature HC differentiation (L–N), and multiple rows of OHCs in the apex (M, N). Kinocilia of HCs are present (La; yellow arrow) but primary cilia in the SCs are missing (La, Lb; asterisks). Ectopic vestibule-like HCs are present adjacent to inner HCs (M; yellow arrowheads) and in the Kölliker’s organ (O). (P–S) In Cilk1 KO mutants, cochlea shows a slight shortening (P), slightly premature HC differentiation (Q–S), and increased OHCs in the apex (S). Both kinocilia and primary cilia are abnormally elongated (Qa, Qb) and primary cilia are often absent from SCs (Qa; asterisk). Scale bar in B, 500 μm, also applies to F, K, P; scale bar in C, 10 μm, also applies to D, E, G–I, L–N, Q–S; scale bar in Ca, 2 μm, also applies to Cb, Ea, Ga, Gb, La, Lb, Qa, Qb; scale bar in J, 2 μm, also applies to O. (T–V) Quantification of ciliary lengths (T; measured from at least 100 cells from three or more embryos for each genotype), cochlear lengths (U; n = 5–7 embryos for each genotype), and HC numbers (V; n = 3–5 embryos for each genotype). Values and error bars represent the mean ± standard deviation. Statistical comparisons were made using the two-tailed Student’s t-test (**p<0.01, ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Scanning electron micrographs of OHCs of wild-type and Tbc1d32bromi mutants at E17.5. Tbc1d32bromi mutants exhibit abnormally elongated kinocilia with swollen tips more frequently compared to wild types (B; red arrow). (E, F) The frequency of swollen kinociliary tips and their diameters are quantified from at least 100 HCs in each region of wild-type (n = 3) and Tbc1d32bromi mutants (n = 3). Values and error bars represent the mean ± standard deviation. Statistical comparisons were made using the two-way ANOVA with Bonferroni correction for multiple comparisons (**p<0.01, ***p<0.001). (G–L) Section immunofluorescent images of the organ of Corti of E17.5 wild-type and Tbc1d32bromi cochleae. HCs are stained with anti-MYO7A antibody (red) and supporting cells (SCs) are stained with anti-SOX2 antibody (green). Extra rows of HCs and SCs are displayed in the middle and apical cochlear section of Tbc1d32bromi mutants. (M–R) Whole mount immunofluorescent images of the organ of Corti of E18.5 wild-type and Tbc1d32bromi cochleae, stained with phalloidin and anti-FZD6 antibody. Scale bar in A, 1 μm, also applies to B; scale bar in C, 4 μm, also applies to D; scale bar in G, 20 μm, also applies to H–L; scale bar in M, 10 μm, also applies to N–R.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic diagram showing the relative cochlear lengths of wild-type and ciliary mutant cochlea. The basal cochlear end is set to 0%, and the apical end is set to 100%. The absolute distance of the 90% position of Tbc1d32bromi, Ift88, or Cilk1 mutant cochlea corresponds to 52%, 58%, or 75% of wild-type cochlea. (B–E) Stereocilia and primary cilia were visualized by staining with phalloidin (red fluorescence) and immunostaining with anti-ARL13B antibody (green fluorescence). HCs located at 90% position of Tbc1d32bromi (B, B’), Ift88 (C, C’), or Cilk1 (D, D’) mutant cochlea were compared with wild-type HCs located at the same distance from the base. Scale bar in B, 10 μm, also applies to all panels; scale bar in the inset in B, 2 μm, also applies to all insets.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) Atoh1 and Pou4f3 are expressed in the base, mid-base, and mid-apex (black arrows), but not in the apex (asterisks), of wild-type cochlea at E17.5. (C–H) Atoh1 and Pou4f3 are expressed in the entire cochlear duct including the apex (red arrows) in E17.5 ciliary mutants. Scale bar in B, 200 μm, also applies to A–G.
 
 In wild-type mice, the cochlear length reached one and a three-quarter turns by E18.5 (Figure 2B), and the organ of Corti showed a progression of HC differentiation from base to apex, with morphologically more organized mature HCs at the base (Figure 2C), compared to less organized immature HCs toward the apex (Figure 2D,E). Kinocilia were present at the vertex of V-shaped stereociliary bundles in mature HCs at the base (Figure 2Ca, Cb; yellow arrows) and in the center of immature HCs at the apex (Figure 2Ea; yellow arrows). Primary cilia were found in SCs, such as Deiters’ cells (Figure 2Ca; white arrows) and pillar cells (Figure 2Cb; white arrowheads).
 
@@ -61,57 +85,246 @@ Premature HC differentiation in ciliary mutants was further confirmed by examini
 
 These analyses revealed that there are several common cochlear phenotypes among the three ciliary mutants (Table 1). First, all three mutants showed defective cochlear elongation with varying severity, with Tbc1d32bromi and Ift88 cKO more severe than Cilk1 KO mutants (Figure 2U). Second, total HC number decreased in proportion to the severity of cochlear shortening (Figure 2V). Third, there were multiple rows of HCs in the apical cochlea, with Tbc1d32bromi and Ift88 cKO mutants more severe than Cilk1 KO mutants (Figure 2), which could be related to the shortened cochlea. Fourth, all three mutant cochleae showed premature HC differentiation, with Tbc1d32bromi and Ift88 cKO mutants more severe than Cilk1 KO mutants (Figure 2). Fifth, ectopic vestibule-like HCs were present in the non-sensory region of the Kölliker’s organ in Tbc1d32bromi and Ift88 cKO mutants (Figure 2J,O). These common cochlear phenotypes of ciliary mutants closely resembled phenotypes observed in mutants with impaired SHH signaling (Table 1; Bok et al., 2005; Bok et al., 2007; Bok et al., 2013; Brown and Epstein, 2011; Driver et al., 2008; Riccomagno et al., 2002; Tateya et al., 2013), suggesting that most cochlear defects observed in ciliary mutants may be due to abnormal SHH signaling.
 
-## SHH signaling is impaired in the developing cochlea of ciliary mutants
+**Table 1.**
+ Comparisons of cochlear phenotypes of ciliary mutants and sonic hedgehog (SHH) pathway mutants*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="5">Impaired SHH signaling</th>
+      <th colspan="3">Defective primary cilia</th>
+    </tr>
+    <tr>
+      <th>Loss of SHH from both midline and ganglion sources1</th>
+      <th>Defective GLI2</th>
+      <th>Loss of SHH from ganglion source3</th>
+      <th>Loss of SMO after cochlear specification4</th>
+      <th>All combined</th>
+      <th>No cilia (Ift88 cKO)</th>
+      <th>Abnormal morphology (Tbc1d32bromi)</th>
+      <th>Abnormal length (Cilk1 KO)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complete loss of cochlea</td>
+      <td>+++</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+++</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Shortened cochlea</td>
+      <td>n.a.</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Reduced HC number</td>
+      <td>n.a.</td>
+      <td>n.d.</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Premature HC differentiation</td>
+      <td>n.a.</td>
+      <td>n.d.</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Multiple rows of HCs in the apex</td>
+      <td>n.a.</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>−</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Ectopic vestibule-like HCs</td>
+      <td>n.a.</td>
+      <td>+</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Reversed HC differentiation wave</td>
+      <td>n.a.</td>
+      <td>n.d.</td>
+      <td>+++</td>
+      <td>−</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Defective apical identity</td>
+      <td>n.a.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>n.d.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Low-frequency hearing loss</td>
+      <td>n.a.</td>
+      <td>+#</td>
+      <td>n.d.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Impaired SHH signaling</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>n.d.</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Defective hair bundle polarity</td>
+      <td>n.a.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+++</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This table summarizes cochlear phenotypes of ciliary mutant mice (this study) and SHH signaling mutant mice (previous reports).+sign indicates the presence of defective phenotype. ‘+++” indicates that the phenotype is severe, ‘++” intermediate, and ‘+” mild.−sign indicates the absence of defective phenotypes.n.a. not applicable due to embryonic lethality or structural loss.n.d. not determined.1(Bok et al., 2007; Brown and Epstein, 2011; Riccomagno et al., 2002).2(Bok et al., 2007; Driver et al., 2008).3(Bok et al., 2013; Son et al., 2015).4(Tateya et al., 2013).#Hearing data are obtained from human patients with Pallister–Hall syndrome (Driver et al., 2008)._
+
+### SHH signaling is impaired in the developing cochlea of ciliary mutants
 
 We examined whether SHH signaling is impaired in ciliary mutant cochleae at E14.5, an age when SHH signaling is active with an apical-to-basal gradient and regulates various essential cochlear developmental processes (Bok et al., 2013; Liu et al., 2010). SHH signaling was determined by analyzing SHH target genes, including Ptch1 and Gli1, by in situ hybridization and quantitative real-time PCR (qPCR) (Figure 3). To visualize expression gradients along the cochlea, we semi-quantified the intensity of in situ hybridization signals in all cochlear sections (Figure 3—figure supplement 1). The strongest intensity among all wild-type sections was set to 100%, and the relative intensity of each section (Y-axis) was plotted according to the section number starting from the base to the apex (X-axis). Consistent with the shortened cochlear lengths (Figure 2), the number of cochlear sections of ciliary mutants was much less than that of wild-type controls (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) In E14.5 wild-type cochlea, SHH target genes Ptch1 and Gli1 are expressed in a graded pattern of stronger in the apex (A, B; arrows) and weaker toward the base. Atoh1 expression representing HC differentiation is observed in the base and middle cochlear turns but not in the apical turn (C; arrows), whereas Sox2 expression representing prosensory domain is observed in all cochlear turns (D). (E–H) In Ift88 cKO cochlea, Ptch1 and Gli1 are greatly downregulated (E, F; asterisks). Atoh1 is ectopically expressed in the apex (G; red arrow) but not in the base (G; red asterisk). (J–M) In Tbc1d32bromi mutant cochlea, Ptch1 and Gli1 are greatly downregulated (J, K; asterisks). Atoh1 is ectopically expressed in the apex (L; red arrow) but not in the base (L; red asterisk). (O–R) In Cilk1 KO cochlea, Ptch1 and Gli1 are downregulated (O, P; asterisks). Unlike Ift88 cKO and Tbc1d32bromi mutants, Atoh1 is expressed in the base and middle turns (Q; arrows). (I, N, S) Quantitative real-time PCR analyses to determine expression levels of Ptch1 and Gli1 in the cochleae of Ift88 cKO (n = 4), Tbc1d32bromi (n = 3), and Cilk1 KO (n = 4) mutants relative to wild-type controls (n = 3). Values and error bars represent the mean ± standard error. Statistical comparisons were made using two-tailed Student’s t-test (*p<0.05, **p<0.01). (T–V) E14.5 whole cochlear images stained with phalloidin and anti-MYO7A antibody. In wild-type controls, MYO7A immunofluorescence is detected in the basal cochlea region (T, Ta; 25% from basal end) but not in the apical region (Tb; 75% from basal end). In Tbc1d32bromi and Ift88 cKO mutants, MYO7A immunofluorescence is detected in the apical cochlear region (Ub, Vb; 75% from basal end) but not in the basal region (Ua, Va; 25% from basal end). Scale bar in A, 100 μm, also applies to B–R; scale bar in T, 500 μm, also applies to U and V; scale bar in Ta, 20 μm, also applies to Tb, Ua, Ub, Va, and Vb.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** In situ hybridization signal intensity was measured from all cochlear sections of wild-type and ciliary mutant cochlea. For each gene, the strongest signal intensity among all wild-type cochlear sections was set to 100%, and the relative signal intensity (Y-axis) of each cochlear section of wild-type and ciliary mutant cochlea is plotted from the base to apex (X-axis). Arrows indicate the apical end of the shortened cochlear duct of each mutant. Gray boxes below 0% in each graph indicate background signals. Representative measurement graphs from one wild-type and one mutant cochlea for each gene are shown.
+
 In wild-type controls, direct targets of SHH signaling such as Ptch1 and Gli1 are expressed in a graded pattern, stronger in the apex and gradually weaker toward the base (Figure 3A,B). In Ift88 cKO and Tbc1d32bromi mutants, expression levels of Ptch1 and Gli1 were dramatically decreased in the shortened cochlea and lost the typical apical-to-basal gradients (Figure 3E,F,J,K; Figure 3—figure supplement 1). In Cilk1 KO mutants, expression levels of Ptch1 and Gli1 were also reduced, but to a lesser extent than in Tbc1d32bromi and Ift88 cKO mutants (Figure 3O,P; Figure 3—figure supplement 1). Our qPCR results confirmed that expression levels of Ptch1 and Gli1 were significantly reduced in all three ciliary mutant cochleae, and Tbc1d32bromi and Ift88 cKO mutants showed a much greater reduction than Cilk1 KO mutants (Figure 3I,N,S). These results indicate that SHH signaling is compromised at varying degrees in all three ciliary mutants.
 
-## Defective ciliogenesis causes a reversal of HC differentiation wave
+### Defective ciliogenesis causes a reversal of HC differentiation wave
 
 In the developing cochlea, the terminal mitosis of HC precursors starts from the apical region and spreads toward the basal direction, but HC differentiation occurs in an opposite wave from base to apex (Chen et al., 2002; Lee et al., 2006). Thus, HC precursors in the apex exit from the cell cycle first, but they are the last to differentiate. This unique basal-to-apical wave of HC differentiation is known to be controlled by an apex to base gradient of SHH signaling, which inhibits HC differentiation (Bok et al., 2013). We questioned whether the impaired SHH signaling observed in the ciliary mutants would disrupt this unique HC differentiation pattern. In E14.5 wild-type cochlea, the master regulator of HC differentiation, Atoh1, was expressed in Sox2-positive pro-sensory domains of the basal and middle, but not the apical turns, representing a basal-to-apical wave of HC differentiation (Figure 3C,D; Chen et al., 2002). Notably, in Ift88 cKO and Tbc1d32bromi mutants, Atoh1 was expressed in apical, but not basal cochlea (Figure 3G,L; red arrow and asterisk), suggesting a reversal of the HC differentiation wave. By contrast, Atoh1 expression wave was not reversed, showing the typical basal-to-apical wave in Cilk1 KO mutants (Figure 3Q). These results suggest that HC differentiation wave is affected differently depending on the degree of SHH defects in ciliary mutants.
 
 The reversed apical-to-basal wave of HC differentiation in Ift88 cKO and Tbc1d32bromi mutants was confirmed by myosin 7a (MYO7a) immunostaining to visualize differentiating HCs and phalloidin staining to visualize filamentous actin bundles (Figure 3T–V). In E14.5 wild-type controls, MYO7A immunoreactivity was observed in the basal cochlea (Figure 3T and Ta), but not in the apex (Figure 3Tb). In contrast, in Tbc1d32bromi (Figure 3U–Ub) and Ift88 cKO (Figure 3V–Vb) mutants, MYO7A immunoreactivity was detected in the apical cochlea, but not in the base. Such reversal of the HC differentiation wave has only been reported in mutants in which SHH signaling is disrupted (Bok et al., 2013). Thus, we speculate that the reversal of HC differentiation wave observed in ciliary mutants is most likely due to dysregulation of SHH signaling caused by defective ciliogenesis.
 
-## Ciliary frequency in the developing cochlea is correlated with the severity of cochlear defects
+### Ciliary frequency in the developing cochlea is correlated with the severity of cochlear defects
 
 To better assess the correlation between deficits in SHH signaling and defects in primary cilia in the three mutants, we examined the mutant cochleae at E14.5, when SHH signaling is active in the cochlea (Bok et al., 2013; Son et al., 2015). In E14.5 wild-type cochlea, IHCs had begun differentiation at the base, based on the cortical actin condensation (Figure 4B; bracket and arrowheads), and primary cilia were present in almost all precursor cells in the cochlear epithelium, regardless of cell types and stages of differentiation (Figure 4A–D,Q). In contrast, in E14.5 Ift88 cKO cochlea, primary cilia were absent due to the loss of IFT88, which is required for ciliogenesis (Figure 4E–H,Q), but cortical condensation was apparent in both IHCs and OHCs along the entire length of the cochlea (Figure 4F–H; brackets). Unexpectedly, in E14.5 Tbc1d32bromi cochlea, most precursor cells lacked primary cilia (Figure 4I–L,Q). This phenotype is different from E18.5 Tbc1d32bromi cochlea, which showed a selective absence of primary cilia in the SCs only (Figure 2L–N). These results suggest that HCs acquire kinocilia, but not SCs, in Tbc1d32bromi mutants at least by E18.5. Cortical condensation was present in both IHCs and OHCs in the apex (Figure 4L; brackets), but only in IHCs in the middle and base (Figure 4J,K; brackets and arrowheads), indicating a reversed apical-to-basal wave of HC differentiation. In E14.5 Cilk1 KO cochlea, abnormally elongated primary cilia were present in 60–80% of the cells depending on the cochlear region (Figure 4M–P,R). These results show that Ift88 cKO and Tbc1d32bromi mutants, which are unciliated in most cochlear cells at E14.5, exhibit more severe cochlear defects than the ciliated Cilk1 KO mutants. These results are consistent with the hypothesis that SHH mediates its effects via primary cilia.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig4-v2.jpg)
 
-**Figure 4.:** Immunofluorescent staining of primarily cilia with anti-ARL13B antibody (green) and cell boundaries with phalloidin (red) of 14.5 cochleae from wild-type (A–D), Ift88 cKO (E–H), Tbc1d32 (bromiI–L), and Cilk1 KO (M–P) mice. Brackets indicate IHC and OHC rows, and arrowheads indicate cells with cortical actin condensation. Higher magnification images showing the lack of abnormally elongated cilia are displayed for each genotype (Ba, Fa, Ja, Na). Scale bar in A, 500 μm, also applies to E, I, and M; scale bar in B, 10 μm, also applies to C, D, F–H, J–L, and N–P. (Q) Percentages of ciliated cells are quantified in basal, middle, and apical regions of the cochlea from each genotype. The presence or absence of primary cilia is determined from at least 150 cells per region (at least 450 cells per embryo) from three different embryos for each genotype embryos. (R) Quantification of ciliary lengths measured from at least 100 cells from wild-type (n = 3) and Cilk1 KO (n = 3) embryos. Values and error bars represent the mean ± standard deviation. Statistical comparisons were made using the two-way ANOVA with Bonferroni correction for multiple comparisons (**p<0.01, ***p<0.001).Figure 4—source data 1.Figure 4.
+**Figure 4.:** Immunofluorescent staining of primarily cilia with anti-ARL13B antibody (green) and cell boundaries with phalloidin (red) of 14.5 cochleae from wild-type (A–D), Ift88 cKO (E–H), Tbc1d32bromi (I–L), and Cilk1 KO (M–P) mice. Brackets indicate IHC and OHC rows, and arrowheads indicate cells with cortical actin condensation. Higher magnification images showing the lack of abnormally elongated cilia are displayed for each genotype (Ba, Fa, Ja, Na). Scale bar in A, 500 μm, also applies to E, I, and M; scale bar in B, 10 μm, also applies to C, D, F–H, J–L, and N–P. (Q) Percentages of ciliated cells are quantified in basal, middle, and apical regions of the cochlea from each genotype. The presence or absence of primary cilia is determined from at least 150 cells per region (at least 450 cells per embryo) from three different embryos for each genotype embryos. (R) Quantification of ciliary lengths measured from at least 100 cells from wild-type (n = 3) and Cilk1 KO (n = 3) embryos. Values and error bars represent the mean ± standard deviation. Statistical comparisons were made using the two-way ANOVA with Bonferroni correction for multiple comparisons (**p<0.01, ***p<0.001).
 
-## Hair bundle polarity is mildly affected in Tbc1d32bromi and Cilk1 mutants, unlike Ift88 mutants
+### Hair bundle polarity is mildly affected in Tbc1d32bromi and Cilk1 mutants, unlike Ift88 mutants
 
 Defective PCP signaling is also associated with shortened cochlea and multiple rows of HCs in the apex (Etheridge et al., 2008; Montcouquiol et al., 2003). Accordingly, we examined whether PCP signaling is disrupted in the ciliary mutants by analyzing the basal body positioning as a proxy for hair bundle orientation, which is regulated by PCP signaling (Jones et al., 2008). Deviation of basal body positioning was determined by measuring the angle between a line connecting the basal body to the HC center and a line connecting the centers of three adjacent HCs (Figure 5A; Copley et al., 2013; Yin et al., 2012). When the basal body was positioned at the abneural (lateral) pole, the angle was defined as 0°. In E18.5 wild-type cochlea, basal body deviation was generally less than 30° in either clockwise or counterclockwise directions in IHCs and all three rows of OHCs (OHC1, OHC2, and OHC3) (Figure 5F). We thus considered a basal body deviation <30° as a normal range, although OHC3 often showed deviation >30° probably due to immaturity of apical and middle cochlear regions at this stage. Figure 5F illustrates the distribution of basal body angles from combined HCs in the base, middle, and apex of cochleae, whereas results from individual regions are shown in Figure 5—figure supplement 1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig5-v2.jpg)
+
+**Figure 5.:** (A) Diagram showing how to measure the deviation of basal body position. When the basal body is positioned at the abneural side of HCs, the angle was defined as 0°. The basal position was determined by measuring angles deviated from the abneural side. (B–E) Whole mount cochlear images of WT and the three ciliary mutants stained with phalloidin to visualize F-actin (red) and anti-γ-tubulin antibody to visualize basal bodies (green). (F) Percentages of HCs showing the degrees of basal body deviation in each genotype. Angles are measured from at least 100 hair cells per embryo from at least three different embryos for each genotype. Scale bar in B, 20 μm, also applies to C–E.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Percentages of HCs showing the angles of basal body position in the base (A), middle (B), and apex (C) of wild-type, Tbc1d32bromi, and Cilk1 KO mutant cochleae. Angles are measured from at least 30 hair cells per region from at least three different embryos for each genotype. Red arrows indicate basal body positioning deviated more than wild types. (D) The percentage of HCs with >30° deviations is significantly higher in all regions in Ift88 cKO mutants, compared to wild-type cochlea. In contrast, Cilk1 and Tbc1d32bromi mutants show no significant difference in all cochlear regions, compared to wild types, except for the basal OHCs in Tbc1d32bromi mutants. Values and error bars represent the mean ± standard deviation. Statistical significance was determined using the unpaired Student’s t-test (n.s. nonsignificant, *p<0.05, ***p<0.001).
 
 In Ift88 cKO mutants, basal body positioning was significantly deviated from controls especially in OHCs: 71.5% of OHCs showed deviations >30°, compared to 12.6% in wild-type controls, and deviations extend to ±180° (Figure 5F; Figure 5—figure supplement 1). These results confirmed the severe polarity defects reported in the Ift88 cKO mutants (Jones et al., 2008). In contrast, only 23.0% of OHCs in Tbc1d32bromi mutants exhibited deviations of >30° and 9.94% in Cilk1 KO mutants (Figure 5F; Figure 5—figure supplement 1), and the deviations were seldom greater than 60°. These results indicate that unlike Ift88 cKO, basal body positioning is only mildly affected in Tbc1d32bromi and Cilk1 KO mutants.
 
 It was previously reported that Cilk1 KO cochleae show greater deviation of kinocilia positioning in the middle but not basal turn (Okamoto et al., 2017). We also observed similar results, in which basal body deviations >30° in OHCs of Cilk1 KO cochleae were more common in the middle (13.4%) than basal (5.8%) and apical (10.0%) regions (Figure 5—figure supplement 1). In Tbc1d32bromi mutants, OHCs with deviations >30° were more common in all cochlear regions (base 23.8%, middle 22.0%, and apex 22.9%), compared to those in wild-type controls (base 2.9%, middle 19.0%, and apex 17.8%) (Figure 5—figure supplement 1). These results indicate that deviations of basal body positioning in Cilk1 KO and Tbc1d32bromi mutants are much milder than those of Ift88 cKO mutants (base 71.0%, middle 75.4%, and apex 67.9%), suggesting that PCP defects based on kinocilia alignment are fairly mild in Tbc1d32bromi and Cilk1 KO mutants. Moreover, it has been reported that the localization of core PCP proteins is unaffected in the cochlea of ciliary mutants, including Ift88 and Cilk1 mutants (Jones et al., 2008; Okamoto et al., 2017). We also observed normal localization of FZD6 in Tbc1d32bromi mutants (Figure 2—figure supplement 1). Together, these results suggest that PCP defects in the otic epithelium are unlikely to be a primary cause of cochlear shortening defects in ciliary mutants.
 
-## Apical cochlear specification is affected in ciliary mutants
+### Apical cochlear specification is affected in ciliary mutants
 
 In addition to cochlear extension and HC differentiation, a gradient of SHH signaling plays a crucial role in specifying regional cochlear identity along the cochlea duct that prefigures tonotopic organization (Son et al., 2015), which based on differences in HC morphology and physiology, allows HCs at the basal cochlea to tune to high frequency sounds and those at the apex to lower frequencies. We wondered whether defective ciliogenesis leads to changes in regional cochlear identity. This was accomplished by analyzing expression patterns of genes, expressed in either a basal-to-apical or apical-to-basal gradient along the developing cochlea (Figure 6A–P; Son et al., 2015).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig6-v2.jpg)
 
-**Figure 6.:** (A–P) Gene expression patterns of basal cochlear markers (A2m, Inhba) and apical cochlear markers (Msx1, Fst) in cochleae of E14.75 ciliary mutants. (A–D) In wild-type controls, A2m and Inhba are expressed in the basal cochlear turn (A, B; arrows), whereas Msx1 and Fst are expressed in the apical cochlear turns (C, D; arrows). (E–P) In Ift88 cKO, Tbc1d32, and bromiCilk1 KO mutants, basal genes (A2m and Inhba) are generally unaffected and maintained in the basal cochlear turns (E, F, I, J, M, N; arrows). In contrast, Msx1 is greatly downregulated in apical turns (G, K, O; red asterisks), and Fst is reduced and more restricted in the apical turns (H, L, P; black arrows for strong expression and arrowheads for weak expression). (Q) Relative signal intensity of in situ hybridization for A2m, Inhba, Msx1, and Fst along the cochlear duct of wild-type and ciliary mutants. For each gene, the strongest signal intensity among all wild-type cochlear sections is set to 100%, and the relative signal intensity (Y-axis) of each cochlear section of wild-type and ciliary mutants is plotted from the base to apex (X-axis). Arrows indicate the apical end of the shortened cochlear duct of each mutant. Gray boxes below 0% in each graph indicate background signals. Representative measurement graphs from one wild-type and one mutant cochlea for each gene are shown. Scale bar in A, 100 μm, also applies to B–P.Figure 6—source data 1.Figure 6Q.
+**Figure 6.:** (A–P) Gene expression patterns of basal cochlear markers (A2m, Inhba) and apical cochlear markers (Msx1, Fst) in cochleae of E14.75 ciliary mutants. (A–D) In wild-type controls, A2m and Inhba are expressed in the basal cochlear turn (A, B; arrows), whereas Msx1 and Fst are expressed in the apical cochlear turns (C, D; arrows). (E–P) In Ift88 cKO, Tbc1d32bromi, and Cilk1 KO mutants, basal genes (A2m and Inhba) are generally unaffected and maintained in the basal cochlear turns (E, F, I, J, M, N; arrows). In contrast, Msx1 is greatly downregulated in apical turns (G, K, O; red asterisks), and Fst is reduced and more restricted in the apical turns (H, L, P; black arrows for strong expression and arrowheads for weak expression). (Q) Relative signal intensity of in situ hybridization for A2m, Inhba, Msx1, and Fst along the cochlear duct of wild-type and ciliary mutants. For each gene, the strongest signal intensity among all wild-type cochlear sections is set to 100%, and the relative signal intensity (Y-axis) of each cochlear section of wild-type and ciliary mutants is plotted from the base to apex (X-axis). Arrows indicate the apical end of the shortened cochlear duct of each mutant. Gray boxes below 0% in each graph indicate background signals. Representative measurement graphs from one wild-type and one mutant cochlea for each gene are shown. Scale bar in A, 100 μm, also applies to B–P.
 
 In wild-type controls, expression patterns of A2m and Inhba were strongest in the basal end and gradually weakened toward the apex (Figure 6A,B,Q), whereas expression patterns of Msx1 and Fst were the opposite, being strongest in the apical end and gradually weaker toward the base (Figure 6C,D,Q; Son et al., 2015). In Ift88 cKO mutants, while A2m and Inhba basal expression gradients were generally normal (Figure 6E,F, Qa, Qb), Msx1 expression was greatly decreased and barely detectable in a few apical sections (Figure 6G; red asterisk, and Qa; arrow). Fst expression was also reduced in the mid-cochlea (Figure 6H; arrowhead) and its apical expression domain was reduced (Figure 6Qb; arrow). Similarly, Tbc1d32bromi mutant cochlea showed relatively normal basal expression gradients of A2m and Inhba (Figure 6I,J, Qc, Qd), whereas apical expression domains of Msx1 and Fst were decreased (Figure 6K,L; asterisk and arrowhead, and Qc, Qd). Cilk1 KO mutants also showed decreases in apical expression gradients of Msx1 and Fst to a lesser extent than Ift88 cKO and Tbc1d32bromi mutants (Figure 6O,P; red asterisk and arrowhead, and Qe, Qf), while there was no evidence of changes in basal expression gradients of A2m and Inhba (Figure 6M,N, Qe, Qf). Based on the changes in the expression gradients of these regional markers (Figure 6Q), all three ciliary mutants appeared to have apically truncated cochleae due to abnormal specification of apical cochlea, consistent with a deficit in SHH signaling (Bok et al., 2007; Son et al., 2015), which may account for the cochlear shortening in these ciliary mutants.
 
-## Cilk1 mutants exhibit low frequency hearing loss
+### Cilk1 mutants exhibit low frequency hearing loss
 
 We next examined whether abnormal apical cochlear specification during development leads to tonotopic changes in the mature cochlea, resulting in low frequency hearing loss. Because all three ciliary mutants are embryonic lethal, we generated an inner ear-specific conditional knockout of the Cilk1 gene by crossing Foxg1Cre/+ mice with Cilk1fl/fl mice. The Foxg1Cre/+; Cilk1fl/fl mutant (Cilk1 cKO) mice can survive until adulthood and reproduce the same cochlear phenotypes of Cilk1 KO mutants, including abnormal elongation of the cilia, disruption of SHH signaling, shortening of the cochlea, and abnormal apical cochlear specification (Figure 7—figure supplements 1, 2, and 3). Cilk1 cKO hearing function was examined at 4 weeks by measuring the thresholds of auditory brainstem responses (ABRs) in response to the click stimuli of broadband mixed sounds (Figure 7A) or pure tone sounds at individual frequencies (Figure 7B–D). ABR thresholds for click stimuli were slightly increased in Cilk1 cKO mice, but the threshold shift was not statistically significant (Figure 7A). In contrast, ABR thresholds for pure tone stimuli were significantly elevated in lower frequencies ranging from 4 to 8 kHz but not in higher frequencies (Figure 7B), indicating a low frequency-specific hearing loss. The elevated ABR thresholds could be a result of a failure of IHCs to stimulate spiral ganglion neurons or OHCs to function as a cochlear amplifier, or both. The ABR wave I amplitudes, which reflect the summed responses of auditory nerve fibers, were not significantly different between wild-type and Cilk1 cKO mice at low (8 kHz) or high (18 kHz) frequency sounds (Figure 7C,D). In contrast, the thresholds for distortion product otoacoustic emissions (DPOAEs), which indicate cochlear amplifier function of OHCs, were specifically elevated in response to lower frequencies at 6 and 8 kHz, but not to higher frequencies (Figure 7E). The input/output function of DPOAE amplitudes confirmed that DPOAE production was significantly decreased in response to a low frequency (8 kHz), but not to a high frequency (18 kHz), sound in Cilk1 cKO mice (Figure 7F,G). Together, these results indicate that Cilk1 cKO mutants suffer from low frequency-specific hearing loss, most likely due to defective OHC function in response to low frequencies.
 
-## Hair bundle morphology is altered to adopt more basal cochlear properties in Cilk1 mutants
+![Figure 7.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig7-v2.jpg)
+
+**Figure 7.:** (A–D) Auditory brainstem response (ABR) thresholds of wild-type and Cilk1 cKO mice are not significantly different in response to click stimuli (A) but are significantly increased in low frequency pure tone stimuli at 4, 6, and 8 kHz but not in higher frequencies in Cilk1 cKO mice (B). Input/output function analyses of wave I amplitudes show no significant differences between wild-type and Cilk1 cKO mice at 8 and 18 kHz (C, D). (E–G) 2f1-f2 distortion product otoacoustic emission (DPOAE) thresholds are significantly increased in low frequencies at 6 and 8 kHz but not in higher frequencies in Cilk1 cKO mice (E). DPOAE input/output function analyses of 2f1-f2 DPOAE levels show a significant reduction at 8 kHz (F) but not at 18 kHz (G) in Cilk1 cKO mice. Values and error bars are mean ± standard error. Statistical comparisons were determined using the two-way ANOVA with Bonferroni correction for multiple comparisons (n.s., non-significant, *p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Stereocilia and primary cilia are visualized by staining with phalloidin (red fluorescence) and immunostaining with anti-ARL13B antibody (green fluorescence). In Cilk1 cKO mutants, cochlea exhibits slight shortening (E, I), and both kinocilia in HCs and primary cilia in supporting cells (SCs) are abnormally elongated (F–H, J). Values and error bars (I, J) represent the mean ± standard deviation. Statistical significance was determined using the unpaired Student’s t-test (***p<0.001).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** SHH target genes Ptch1 and Gli1, expressed in a graded pattern in E14.5 wild-type cochlea (A, B), are downregulated in Cilk1 cKO cochlea (E, F). Atoh1 and Sox2 expression patterns are similar between wild-type and Cilk1 cKO mutant cochlea (C, D, G, H). (I) qPCR confirms a significant reduction in Ptch1 and Gli1 in Cilk1 cKO cochlea. Values and error bars (I) represent the mean ± standard error. Statistical significance was determined using the unpaired Student’s t-test (n = 6, **p<0.01, ***p<0.0001). (J) Relative signal intensities of in situ hybridization for Ptch1, Gli1, Atoh1, and Sox2 along the cochlea of wild-type and Cilk1 cKO mutants. Arrows indicate the apical end of Cilk1 cKO cochlea. Gray boxes below 0% in each graph indicate background signals. Representative measurement graphs from one wild-type and one mutant cochlea for each gene are shown. Scale bar in A, 100 μm, also applies to B–H.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** In Cilk1 cKO mutants, expressions of basal genes (A2m and Inhba) are generally unaffected and maintained in the basal cochlear turns (A, B, E, F; arrows). In contrast, Msx1 expression is severely downregulated in apical turns (C, G; red asterisk), and Fst expression is reduced and more restricted in the apical turn (D, H; black arrows for strong expression and arrowheads for weak expression). (I, J) Relative signal intensity of in situ hybridization for A2m, Inhba, Msx1, and Fst along the ducts of wild-type and Cilk1 cKO mutant cochlea. Scale bar in A, 100 μm, also applies to B–H.
+
+### Hair bundle morphology is altered to adopt more basal cochlear properties in Cilk1 mutants
 
 The low frequency hearing loss due to OHC dysfunction prompted us to examine OHC morphology in the mature cochlea of 4-week-old Cilk1 cKO mutants. Scanning electron micrographs lacked evidence of IHC and OHC degeneration in Cilk1 cKO cochlea (Figure 8A–F), indicating that the low frequency hearing loss is not due to HC loss in the apical cochlea. We thus examined whether the tonotopic properties of stereocilia were altered in 4-week-old Cilk1 cKO cochlea. It is well known that stereocilia lengths are shorter at the base and gradually elongate toward the apex (Wright, 1984). We measured the stereocilia lengths of OHCs in wild-type and Cilk1 cKO cochleae from five different tonotopic locations based on a percentage of the overall length. Wild-type cochlea showed an increasing gradient of stereocilia lengths from base to apex (Figure 8G,I,K,M). Interestingly, in Cilk1 cKO cochlea, stereocilia lengths were significantly decreased across all cochlear regions while maintaining the increasing gradient (Figure 8H,J,L,M). Since the cochlear ducts were shorter in Cilk1 cKO mutants, we compared stereociliary lengths at the same distance from the base in wild-type and Cilk1 cKO mutants (Figure 8—figure supplement 1). Interestingly, stereociliary lengths in the apical regions of Cilk1 cKO mutants were comparable to those in the middle or mid-apical region of wild-type controls, indicating a loss (or truncation) of the apical cochlea (Figure 8—figure supplement 1). These results are consistent with the downregulation of apical cochlear markers in ciliary mutants (Figure 6). These results suggest that the tonotopic gradient of stereocilia lengths is shifted to adopt more basal features due to a failure of apical cochlea specification in Cilk1 cKO cochlea, resulting in low frequency-specific hearing loss (Figure 7).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig8-v2.jpg)
+
+**Figure 8.:** (A–L) Scanning electron micrographs of the organ of Corti of wild-type and Cilk1 cKO mutants. There is no obvious HC degeneration in the base, middle, and apex of the cochlea (A–F). Higher magnification images show that OHC stereociliary lengths are decreased in the basal, middle, and apical cochlea of Cilk1 cKO mutants (G–L; brackets). (M) Quantification of stereociliary lengths of OHCs demonstrate significant decreases along the cochlear duct position in Cilk1 cKO mutants. Stereociliary lengths were measured from at least 30 OHCs per each region from three animals per each genotype. Data are displayed as box plots. Individual dots represent individual data values, the boxes represent a range of 25–75%, the horizontal lines in the boxes represent the median, the whiskers represent the 5% and 95% values, and the points outside the whiskers represent outliers. Scale bar in A, 5 μm, also applies to B–F; scale bar in G, 1 μm, also applies to H–L. ***p<0.001, as determined by two-way ANOVA with Bonferroni correction for multiple comparisons.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56551/elife-56551-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Schematic diagram showing the relative lengths of wild-type and Cilk1 cKO mutant cochlea. Numbers 1 through 6 represent locations at the same absolute distance from the basal end in wild-type and Cilk1 cKO mutant cochlea. Since the cochlear length of Cilk1 cKO mutant is shorter than that of wild-type controls, the apical region (82–90%) of Cilk1 cKO mutants corresponds to the mid-apical region (68–75%) of wild-type controls. (B) Quantification of stereociliary lengths of OHCs located at the same distance from the basal end. Stereociliary length was measured from a minimum of 30 OHCs per each region from three animals per each genotype. The data are presented as box plots. Individual dots represent individual data values, boxes represent the 25–75% range, horizontal lines in boxes represent median values, whiskers represent 5% and 95% values, and points outside the whiskers represent outliers. Statistical significance was determined by two-way ANOVA with Bonferroni correction for multiple comparisons (n.s. nonsignificant, **p<0.01, ***p<0.001).
 
 ## Discussion
 
 In the current study, we investigated the role of primary cilia in the cochlea to provide insights into the mechanism of hearing loss in ciliopathies. In addition to the essential role of kinocilia in determining hair bundle polarity (Jones et al., 2008; May-Simera et al., 2015; Sipe and Lu, 2011), primary cilia are present in the inner ear primordium long before kinocilia emerge in differentiating HCs and control multiple cochlear developmental events by mediating SHH signaling (Table 1). Notably, ciliary mutants mouse models exhibit low frequency hearing loss resulting from abnormal apical cochlear specification due to impaired SHH signaling.
 
-## Impaired SHH signaling accounts for most cochlear phenotypes of ciliary mutants
+### Impaired SHH signaling accounts for most cochlear phenotypes of ciliary mutants
 
 Research has shown that there are two distinct sources of SHH signaling contributing to inner ear development. SHH signaling from the ventral midline sources, the floor plate and notochord, specifies the dorsoventral otic identity that determines vestibular and cochlear fates and also confers the apicobasal cochlear identity that prefigures the tonotopic axis (Bok et al., 2007; Brown and Epstein, 2011; Son et al., 2015). In contrast, SHH signaling from the spiral ganglion neurons located in the apical cochlea promotes cochlear elongation and determines the timing and wave of HC differentiation (Bok et al., 2013; Liu et al., 2010; Son et al., 2015; Tateya et al., 2013). Both sources provide an SHH activity gradient that is higher in the ventral inner ear (or apical cochlea) and gradually lower toward the dorsal inner ear (or basal cochlea), and this is mediated by a balance between GLI activator and repressor activities (Bok et al., 2007; Bok et al., 2013; Driver et al., 2008; Son et al., 2015).
 
@@ -119,15 +332,223 @@ Thus, inner ear defects may differ depending on when and where SHH signaling bec
 
 Our analyses of ciliary mutants, summarized in Table 1, revealed that cochlear phenotypes induced by ciliary defects encompass all of the defects resulting from impaired SHH signaling described above, except for a complete loss of the cochlea observed in Shh-/- mutants. Although primary cilia are not essential for cochlear fate specification, these results demonstrate that primary cilia are required to mediate a multitude of spatiotemporally distinct processes regulated by SHH signaling in the developing cochlea, which are crucial for building a mature cochlea with normal auditory function.
 
-## Temporally distinct roles of primary cilia in the developing cochlea
+### Temporally distinct roles of primary cilia in the developing cochlea
 
 In addition to SHH signaling, primary cilia have been shown to be associated with PCP signaling, which is important for hair bundle polarity and cochlear extension (Jones et al., 2008; May-Simera et al., 2015; Wallingford, 2010). However, the polarity defects are not always associated with cochlear extension phenotypes such as inner ears that lack Bbs8, Tmem67, or Vangl2 (Abdelhamed et al., 2015; Copley et al., 2013; May-Simera et al., 2015). Instead, cochlear shortening in ciliary mutants appears to be tightly associated with SHH signaling defects (Table 2). For example, in ciliopathy models exhibiting both cochlear shortening and polarity defects, including Ift88, Kif3a, Ift27, Cilk1, and Tbc1d32bromi mutants (Figure 2; Jones et al., 2008; May-Simera et al., 2015; Sipe and Lu, 2011), SHH signaling is impaired (Table 2; Bangs and Anderson, 2017; Eguether et al., 2018; Huangfu et al., 2003). In contrast, in ciliopathy models displaying polarity defects but normal cochlear length, including Alms1, Gmap210, Ift25, and Tmem67 mutants (Abdelhamed et al., 2015; Leightner et al., 2013; May-Simera et al., 2015), SHH signaling is unaffected (Table 2; Chen et al., 2017; Keady et al., 2012; Chen et al., 2017; Smits et al., 2010). These results indicate that cochlear shortening is observed in ciliary mutants if SHH signaling is impaired regardless of polarity defects (Table 2), suggesting that primary cilia regulate cochlear extension and hair bundle polarity in a temporally and spatially distinct manner. Furthermore, our results suggest that during early cochlear development, primary cilia act as the signaling center for SHH signaling to control multiple developmental steps, including cochlear elongation (Figures 2 and 3). Later on, in differentiating HCs, the polarized localization of kinocilia, which reflects the role of the basal body as a microtubule organizing center, determines hair bundle polarity (Jones et al., 2008; May-Simera et al., 2015; Sipe and Lu, 2011).
 
-## Distinct ciliogenesis mechanisms between primary cilia and kinocilia
+**Table 2.**
+ Cochlear phenotypes of ciliary mutant mice*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mutants</th>
+      <th>Primary cilia (kinocilia) in the cochlea</th>
+      <th>Impaired SHH signaling</th>
+      <th>Shortened cochlear duct</th>
+      <th>Multiple rows of HCs</th>
+      <th>Hair bundle polarity defect</th>
+      <th>Hair bundle morphology defect</th>
+      <th>Core PCP protein localization defect</th>
+      <th>Hearing loss (HL)</th>
+      <th>Refs.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Ciliopathy models with impaired SHH signaling</td>
+      <td>Ift88</td>
+      <td>Absent</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>− (Vangl2/Fzd3)</td>
+      <td>n.a.</td>
+      <td>This study and Jones et al., 2008; May-Simera et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Kif3a</td>
+      <td>Absent</td>
+      <td>++#</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>− (Dvl2/Fzd3)</td>
+      <td>n.a.</td>
+      <td>Huangfu et al., 2003; Sipe and Lu, 2011</td>
+    </tr>
+    <tr>
+      <td>Ift20</td>
+      <td>Absent</td>
+      <td>n.d.</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+ (Vangl2)</td>
+      <td>n.a.</td>
+      <td>May-Simera et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Ift27</td>
+      <td>Present</td>
+      <td>++#</td>
+      <td>+</td>
+      <td>++</td>
+      <td>−</td>
+      <td>+</td>
+      <td>− (Vangl2)</td>
+      <td>n.a.</td>
+      <td>Eguether et al., 2018; May-Simera et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Cilk1 (Ick)</td>
+      <td>Elongated</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+/-</td>
+      <td>+/-</td>
+      <td>− (Vangl2)</td>
+      <td>HL (1 month) low freq.</td>
+      <td>This study and Okamoto et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Tbc1d32 (bromi)</td>
+      <td>Malformed(HC); absent(SC)</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+/-</td>
+      <td>+/-</td>
+      <td>n.d.</td>
+      <td>n.a.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Mks1</td>
+      <td>Present</td>
+      <td>++#</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>Cui et al., 2011 Weatherbee et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Cep290 (Nphp6)</td>
+      <td>Elongated</td>
+      <td>++#</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>n.d.</td>
+      <td>HL (3–4 months) all freq.</td>
+      <td>Hynes et al., 2014; Rachel et al., 2012</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Ciliopathy models with normal SHH signaling (or unknown)</td>
+      <td>Alms1</td>
+      <td>Present</td>
+      <td>−#</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>++</td>
+      <td>+</td>
+      <td>n.d.</td>
+      <td>Normal hearing (1 month); HL (6–8 month)</td>
+      <td>Chen et al., 2017; Collin et al., 2005; Jagger et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Gmap210 (Trip11)</td>
+      <td>Present</td>
+      <td>−#</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>− (Vangl2)</td>
+      <td>n.d.</td>
+      <td>May-Simera et al., 2015; Smits et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Tmem67 (Mks)</td>
+      <td>Present(HC); absent(SC)</td>
+      <td>−#</td>
+      <td>−</td>
+      <td>−</td>
+      <td>++</td>
+      <td>++</td>
+      <td>− (Vangl2)</td>
+      <td>n.d.</td>
+      <td>Abdelhamed et al., 2015; Lee et al., 2017; Leightner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Ift25 (Hspb11)</td>
+      <td>Present</td>
+      <td>+(E9.5); −(E10.5)#</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>− (Vangl2)</td>
+      <td>n.a.</td>
+      <td>Keady et al., 2012; May-Simera et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Bbs8 (Ttc8)</td>
+      <td>Present</td>
+      <td>n.d.</td>
+      <td>−</td>
+      <td>n.d.</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+ (Vangl2/Gαi3)</td>
+      <td>Normal hearing (2 months)</td>
+      <td>May-Simera et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Bbs4</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>Ross et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Bbs6 (Mkks)</td>
+      <td>Present or absent</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>− (Vangl2); + (Gαi3)</td>
+      <td>HL (3 months) in ~50% tested</td>
+      <td>Ezan et al., 2013; May-Simera et al., 2015; Rachel et al., 2012; Ross et al., 2005</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This table summarizes cochlear phenotypes of ciliary mutant mice from this and previous studies.+sign indicates the presence of defective phenotype. ‘+” and ‘++” indicate mild and severe phenotypes, respectively.−sign indicates the absence of defective phenotype.n.a. not applicable due to embryonic lethality.n.d. not determined.#SHH signaling data are obtained from other tissues (e.g. neural tube, limb) or in vitro assay systems._
+
+### Distinct ciliogenesis mechanisms between primary cilia and kinocilia
 
 An interesting observation in E18.5 Tbc1d32bromi mutants was the selective loss of primary cilia in SCs but not kinocilia in HCs (Figure 2), suggesting that TBC1D32/BROMI proteins are necessary for ciliogenesis in primary cilia, but not for kinocilia. Consistent with this, primary cilia are absent from nearly all precursor cells of Tbc1d32bromi mutant cochlea at E14.5, when HC differentiation has just begun and kinocilia have not yet appeared (Figure 4). A similar phenotype has been reported in Tmem67 mutant cochlea, where primary cilia are selectively lost in SCs but not HCs (Abdelhamed et al., 2015). These results indicate that primary cilia in SCs and kinocilia in HCs utilize distinct ciliogenesis mechanisms, and these results further suggest that molecular constituents and ciliary function are different between primary cilia and kinocilia. This speculation is consistent with the distinct roles of primary cilia as SHH signaling center in the developing cochlea and of kinocilia as a regulator of hair bundle polarity in differentiating HCs.
 
-## Possible etiology of hearing loss in ciliopathy models
+### Possible etiology of hearing loss in ciliopathy models
 
 Based on comparative analysis of our results and previous studies (Table 2), we propose that cochlear phenotypes of ciliopathy mutants can be categorized into two groups: a group associated with impaired SHH signaling and the other group without SHH-associated defects.
 
@@ -139,38 +560,451 @@ In the current study, we show that primary cilia play multiple essential roles i
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ift88fl (B6.129P2-Ift88tm1Bky/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>022409; RRID:IMSR_JAX:022409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cilk1tm1a/tm1a</td>
+      <td>Moon et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tbc1d32bromi</td>
+      <td>Ko et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pax2-Cre (Tg(Pax2-cre)1Akg/Mmnc)</td>
+      <td>MMRRC</td>
+      <td>10569; RRID:MMRRC_010569-UNC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxg1-Cre (129(Cg)-Foxg1tm1(cre)Skm/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>004337; RRID:IMSR_JAX:004337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6;SJL-Tg(ACTFLPe)9205Dym/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>003800; RRID:IMSR_JAX:003800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ARL13B (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MyoVIIa (Rabbit polyclonal)</td>
+      <td>Proteus Biosciences</td>
+      <td>25–6790; RRID:AB_10015251</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Frizzled6 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF1526; RRID:AB_354842</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γ tubulin (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>T3195; RRID:AB_261651</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sox2 (Goat polyclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-17320; RRID:AB_2286684</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>F-actin probe</td>
+      <td>Alexa Fluor568 Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>A12380</td>
+      <td>1:80</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>D1306; RRID:AB_2629482</td>
+      <td>1 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pax2 (Plasmid)</td>
+      <td>Morsli et al., 1999</td>
+      <td>In situ hybridization probe</td>
+      <td>pBluescript II (KS) backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Otx2 (Plasmid)</td>
+      <td>Morsli et al., 1999</td>
+      <td>In situ hybridization probe</td>
+      <td>pBluescript II (KS) backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ptch1_243 (plasmid)</td>
+      <td>Son et al., 2015</td>
+      <td>In situ hybridization probe</td>
+      <td>pBluescript II (KS) backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ptch1_617 (plasmid)</td>
+      <td>Son et al., 2015</td>
+      <td>In situ hybridization probe</td>
+      <td>pBluescript II (KS) backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Gli1 (plasmid)</td>
+      <td>Son et al., 2015</td>
+      <td>In situ hybridization probe</td>
+      <td>pBluescript II (KS) backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Atoh1 (plasmid)</td>
+      <td>Bok et al., 2013</td>
+      <td>In situ hybridization probe</td>
+      <td>pBluescript II (KS) backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Sox2 (plasmid)</td>
+      <td>Son et al., 2015</td>
+      <td>In situ hybridization probe</td>
+      <td>pCRII-TOPO</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Msx1 (plasmid)</td>
+      <td>Son et al., 2015</td>
+      <td>In situ hybridization probe</td>
+      <td>pCRII-TOPO</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>A2m_F</td>
+      <td>Son et al., 2015</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TCC AGT CCT CTC TGC AGC AT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>A2m_R</td>
+      <td>Son et al., 2015</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>AGT GAG CCC TTT ACC GGT TT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>A2m_T7</td>
+      <td>Son et al., 2015</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TAA TAC GAC TCA CTA TAG GGA GAC TTG GAT CTT GGC ATT CAC A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Inhba_F</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>CCA AGG AAG GCA GTG ACC TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Inhba_R</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TGG GTC TCA GCT TGG TGG GC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Inhba_T7</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TAA TAC GAC TCA CTA TAG GGA GAG GGG CTG TGA CCC CTC ATG C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fst_F</td>
+      <td>Son et al., 2012</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>CCTCCTGCTGCTGCTACTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fst_R</td>
+      <td>Son et al., 2012</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>GCAGCGGGGTTTATTCTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fst_T7</td>
+      <td>Son et al., 2012</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TAATACGACTCACTATAGGGAGATTCTTCTTGTTCATTCGACATTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pou4f3_F</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>CGACTTACTTGAGCACATCTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pou4f3_R</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TTAGGCTCTCCAGGCTCCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pou4f3_T7</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TAATACGACTCACTATAGGGAGAGAACCAGACCCTCACCACAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gfi1_F</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TCTGCTCATTCACTCGGACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gfi1_R</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TCCACAGCTTCACCTCCTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gfi1_T7</td>
+      <td>This paper</td>
+      <td>PCR primers for in situ hybridization probe</td>
+      <td>TAATACGACTCACTATAGGGAGACAGCAGTCTCCCCAGAAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ptch1_F</td>
+      <td>PrimerBank</td>
+      <td>qPCR primers : 6679519a1</td>
+      <td>AAAGAACTGCGGCAAGTTTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ptch1_R</td>
+      <td>PrimerBank</td>
+      <td>qPCR primers : 6679519a1</td>
+      <td>CTTCTCCTATCTTCTGACGGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gli1_F</td>
+      <td>PrimerBank</td>
+      <td>qPCR primers : 6754002a1</td>
+      <td>CCAAGCCAACTTTATGTCAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gli1_R</td>
+      <td>PrimerBank</td>
+      <td>qPCR primers : 6754002a1</td>
+      <td>AGCCCGCTTCTTTGTTAATTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pax2-Cre_F</td>
+      <td>MMRRC</td>
+      <td>Genotyping primer for ID # 10569</td>
+      <td>GCC TGC ATT ACC GGT CGA TGC AAC GA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pax2-Cre_R</td>
+      <td>MMRRC</td>
+      <td>Genotyping primer for ID # 10569</td>
+      <td>GTG GCA GAT GGC GCG GCA ACA CCA TT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ift88 lox_F</td>
+      <td>The Jackson laboratory</td>
+      <td>Genotyping primer for ID #16967</td>
+      <td>GAC CAC CTT TTT AGC CTC CTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ift88 lox_R</td>
+      <td>The Jackson laboratory</td>
+      <td>Genotyping primer for ID #16969</td>
+      <td>AGG GAA GGG ACT TAG GAA TGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cilk1tm1a_F</td>
+      <td>Moon et al., 2014</td>
+      <td>Genotyping primer</td>
+      <td>CGC GTC GAG AAG TTC CTA TT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cilk1tm1a_R</td>
+      <td>Moon et al., 2014</td>
+      <td>Genotyping primer</td>
+      <td>ATC ATC CCG ATC AAG TCA GC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxg1-Cre_F</td>
+      <td>The Jackson Laboratory,</td>
+      <td>Genotyping primer for ID oIMR1084</td>
+      <td>GCG GTC TGG CAG TAA AAA CTA TC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxg1-Cre_R</td>
+      <td>The Jackson Laboratory,</td>
+      <td>Genotyping primer for ID oIMR1085</td>
+      <td>GTG AAA CAG CAT TGC TGT CAC TT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cilk1 WT_F</td>
+      <td>This paper</td>
+      <td>Genotyping primer</td>
+      <td>GCTGACTTGATCGGGATGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cilk1 WT_R</td>
+      <td>This paper</td>
+      <td>Genotyping primer</td>
+      <td>TGGCCAGGCTGGAACTCACTATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cilk1 lox_F</td>
+      <td>This paper</td>
+      <td>Genotyping primer</td>
+      <td>CACTGTGGGCAGAATCACCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cilk1 lox_R</td>
+      <td>This paper</td>
+      <td>Genotyping primer</td>
+      <td>CCGCCTACTGCGACTATAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbc1d32/bromi_F</td>
+      <td>Ko et al., 2010</td>
+      <td>Genotyping primer</td>
+      <td>AAT TTA GTC TCT GGG CAC AAC AA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbc1d32/bromi_R</td>
+      <td>Ko et al., 2010</td>
+      <td>Genotyping primer</td>
+      <td>TCA TCA GCT TTC ATA GCT TCA CA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 8.0</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Inner ear-specific Ift88 conditional knockout (Ift88 cKO) mice were generated by crossing Ift88fl/fl mice (JAX) with Pax2-Cre transgenic mice (Ohyama and Groves, 2004). The generation of Tbc1d32bromi mutant (Ko et al., 2010) and Cilk1tm1a/tm1a knockout (Cilk1 KO) mice (Moon et al., 2014) was previously described. Cilk1fl/fl mice were generated by crossing Cilk1tm1a/+ heterozygote mice with transgenic mice expressing a FLP1 recombinase gene under the control of the ACTB promoter (B6;SJL-Tg(ACTFLPe)9205Dym/J; JAX). Inner ear-specific Cilk1 conditional knockout (Cilk1 cKO) mice were generated by crossing Cilk1fl/fl mice with Foxg1Cre mice (Hébert and McConnell, 2000). Cilk1tm1a/+ heterozygous mice, Cilk1fl/fl mice, and Ift88fl/fl mice were maintained in a C57BL/6N background and Tbc1d32bromi mutant mice in a C57BL/6J background. All animal protocols were approved (No. 2018–0023) by the Institutional Animal Care and Use Committee at Yonsei University College of Medicine.
 
-## Immunofluorescent staining and measurement of HC number and ciliary length and number
+### Immunofluorescent staining and measurement of HC number and ciliary length and number
 
 Immunofluorescent staining was performed as previously described (Son et al., 2015). Primary antibodies used were anti-ARL13B (1:3000, generated from rabbit) (Moon et al., 2014), anti-MYO7A (1:200; Proteus biosciences, 256790), anti-acetylated tubulin (1:200, Sigma, T7451), anti-γ-tubulin (1:500, Sigma, T3195), anti-FZD6 (1:200, R and D Systems, AF1526), and anti-SOX2 (1:500, Santa Cruz Biotechnology, dc-17320). Secondary antibodies used were Alexa Fluor 488 antibodies (1:200, Thermo Fisher Scientific, A11008, A11055, A11001) and Alexa Fluor 568 Phalloidin (1:100, Thermo Fisher Scientific, A12380). Immunolabeled cochlear tissues were mounted with ProLong Gold Antifade Mountant (Thermo Fisher Scientific, P36930). All immunofluorescent images are representative of at least three different samples in two or more independent experiments, and all measurements were performed with at least three different samples.
 
-## Basal body positioning
+### Basal body positioning
 
 To analyze basal body positioning, the organ of Cori was immunolabeled with anti-γ-tubulin antibody (γ-tubulin, 1:500, Sigma, T3195) and Alexa Fluor 568 Phalloidin (1:100, Thermo Fisher Scientific, A12380). The deviation of basal body position was determined by measuring the angle between a line connecting the basal body and the center of HC and a line connecting the centers of three adjacent HCs using ImageJ software (Figure 5A; Copley et al., 2013; Yin et al., 2012). When the basal body was located at the abneural pole of HCs, the angle was defined as 0° (Figure 5A). The angles were measured from at least 30 HCs in each row of IHC, OHC1, OHC2, and OHC3+ from each cochlear region (base, middle, and apex).
 
-## In situ hybridization and measurement of signal intensities
+### In situ hybridization and measurement of signal intensities
 
 Inner ears dissected from E14.5 embryos were fixed in 4% paraformaldehyde overnight and embedded in Tissue-Tek optimum cutting temperature (OCT) compound. Inner ear tissues were sectioned at a 12 μm thickness using a cryostat (Thermo Fisher Scientific). Serial cochlear sections were collected from the base to the apex onto Superfrost Plus microscope slides (Thermo Fisher Scientific) and subjected to in situ hybridization as previously described (Son et al., 2015). Antisense RNA probes for Shh, Ptch1, Gli1, Otx2, Msx1, Atoh1, Sox2, Fst, A2m, and Inhba were prepared as previously described (Ankamreddy et al., 2019; Son et al., 2015; Son et al., 2012). Images of in situ hybridization were acquired using a Leica DM2700 optical microscope.
 
-To visualize expression gradients along the cochlear duct, in situ hybridization signal intensities were measured using Multi Gauge software (FUJIFILM). Images of all cochlear sections were collected and numbered from the base to the apex. The number of cochlear sections were around 35–42 in wild-type cochlea, and less for ciliary mutants, between 26 and 31. To measure signal intensities in cochlear section, a rectangle (15 × 4.5 μm for A2m, Inhba, Msx1, Ptch1, Gli1, Atoh1, and Sox2 and 20 × 6 μm for Fst) was positioned on the cochlear epithelial region that shows hybridization signals for the gene of interest (e.g. the lesser epithelial ridge area for Msx1), and the signal intensity within the rectangle was measured as a quantum level (Q). Then, the same size rectangle was positioned in a nearby epithelial region that is not expressing the gene of interest to measure background level (B). The intensity of in situ hybridization signal in each cochlear section was calculated by subtracting the background level (B) from the quantum level (Q) and designated as QB. Cochlear sections that were obliquely sectioned due to the coil structure, such as the curvature of the spiral, were excluded from the analysis. For each gene, the lowest QB value among all sections with positive signals from a cochlea was set as ‘the threshold QB’, and the relative signal intensity of each section was calculated as follows:%intensityofasection=(QB value of a section)−(the threshold QB value)(the highest QB value among all sections)−(the threshold QB value)
+To visualize expression gradients along the cochlear duct, in situ hybridization signal intensities were measured using Multi Gauge software (FUJIFILM). Images of all cochlear sections were collected and numbered from the base to the apex. The number of cochlear sections were around 35–42 in wild-type cochlea, and less for ciliary mutants, between 26 and 31. To measure signal intensities in cochlear section, a rectangle (15 × 4.5 μm for A2m, Inhba, Msx1, Ptch1, Gli1, Atoh1, and Sox2 and 20 × 6 μm for Fst) was positioned on the cochlear epithelial region that shows hybridization signals for the gene of interest (e.g. the lesser epithelial ridge area for Msx1), and the signal intensity within the rectangle was measured as a quantum level (Q). Then, the same size rectangle was positioned in a nearby epithelial region that is not expressing the gene of interest to measure background level (B). The intensity of in situ hybridization signal in each cochlear section was calculated by subtracting the background level (B) from the quantum level (Q) and designated as QB. Cochlear sections that were obliquely sectioned due to the coil structure, such as the curvature of the spiral, were excluded from the analysis. For each gene, the lowest QB value among all sections with positive signals from a cochlea was set as ‘the threshold QB’, and the relative signal intensity of each section was calculated as follows:
+
+$$
+%intensityofasection=\frac{(QB value of a section)−(the threshold QB value)}{(the highest QB value among all sections)−(the threshold QB value)}
+$$
 
 The in situ hybridization signal with the highest QB value among all cochlear sections from a wild type was designated as 100% intensity and the signal with the threshold QB value as 0% intensity. The percent intensities of each section from wild-type and mutant cochleae (Y-axis) were plotted according to the section number starting from the base to the apex (X-axis). Each graph shown in figures is a representative result conducted on a single sample of wild type and mutant obtained from the same experiment.
 
-## Scanning electron microscopy (SEM) and measurement of stereociliary lengths
+### Scanning electron microscopy (SEM) and measurement of stereociliary lengths
 
 Cochlear samples from 4-week-old Cilk1 cKO mice were prepared for SEM analysis as previously described (Son et al., 2015). Platinum coated specimens were mounted on a stub holder and imaged using a cold field emission scanning electron microscope (JSM-7001F; JEOL). SEM images of HCs were taken from the lateral side so that the tallest stereocilia of each HC could be easily visible for analysis. For measurements of stereociliary lengths along the cochlear duct, SEM images obtained from entire cochlear regions were combined using Adobe Photoshop software, and the cochlear regions were divided into five regions 10–18%, 28–36%, 46–54%, 64–72%, and 82–90% from the basal end to represent base, mid-base, mid, mid-apex, and apex of the cochlea, respectively. We excluded 0–10% (basal end) and 90–100% (apical end) regions from measurement because of irregular stereociliary morphology often found in these regions. The lengths of the three tallest stereocilia were measured from at least 30 HCs in each region from three wild-type and three Cilk1 cKO mice using ImageJ software (NIH). Averages of the three tallest stereocilia in each HC were plotted as a box plot using Prism 8.0 software (GraphPad, USA). In the box plot, individual dots represent individual data values, the box represents a range of 25–75%, the horizontal lines in the boxes represent the median, the whiskers represent 5% and 95% values, and the points outside the whiskers represent outliers.
 
-## Auditory brainstem response
+### Auditory brainstem response
 
 ABR thresholds were measured in a sound-proof chamber using Tucker-Davis Technologies (TDT) RZ6 digital signal processing hardware and the BioSigRZ software package (Alachua, FL, USA). Sub-dermal needles (electrodes) were positioned at the vertex and ventrolateral to the right and left ear of the anesthetized mice. Calibrated click stimulus (10-µs duration) or tone burst stimuli (5 ms duration) at 4, 6, 8, 10, 12, 18, 24, 30, and 42 kHz were produced using the SigGenRZ software package and an RZ6 digital signal processor and delivered to the ear canal through a multi-field 1 (MF1) magnetic speaker (TDT). The stimulus intensity was increased from 10 to 95 dB SPL in 5 dB SPL increments. The ABR signals were fed into a low-impedance Medusa Biological Amplifier System (RA4LI, TDT), which then was used to deliver the signal to the RZ6 digital signal processing hardware. The recorded signals were filtered using a 0.5–1 kHz band-pass filter, and the ABR waveforms in response to 512 tone bursts were averaged. The ABR thresholds for each frequency were determined using the BioSigRZ software package. Wave I amplitudes were determined at two specific frequencies (8 and 18 kHz) by calculating P1-N1 peak amplitudes (in μV) as input/output (I/O) functions with stimulus levels increased from 50 to 90 dB SPL in 10 dB SPL increments.
 
-## Distortion product otoacoustic emission
+### Distortion product otoacoustic emission
 
 DPOAEs were measured using a combined TDT microphone-speaker system. Primary stimulus tones were produced using an RZ6 digital signal processor and the SigGenRZ software package and delivered through a custom probe containing an ER 10B+ microphone (Etymotic, Elk Grove Village, IL, USA) with MF1 speakers positioned in the ear canal. The primary tones were set at a frequency ratio (f2/f1) of 1.2 with target frequencies at 6, 8, 10, 12, 16, 18, 24, and 30 kHz. The f1 and f2 intensities were set at equal levels (L1 = L2) and increased from 20 to 80 dB SPL in 5 dB SPL increments. The resultant sounds in response to the primary tones were received by the ER 10B+ microphone in the custom probe and recorded using the RZ6 digital signal processor. The input/output (I/O) functions for the DPOAEs were determined at two specific frequencies (8 and 18 kHz). The intensity levels of the primary tones were increased from 20 to 80 dB SPL in 5 dB SPL increments. At each primary tone for each intensity for the I/O functions, the fast Fourier transform (FFT) was performed using the BioSigRZ software package to determine the average spectra of the two primaries, the 2f1-f2 distortion products, and the noise floors.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical comparisons were made using two-way analysis of variance (ANOVA) with Bonferroni corrections for multiple comparisons for ABRs, DPOAEs, and stereociliary length, and with Student’s t-tests (two-tailed) for ciliary length, cochlear length, HC number, and ciliary frequency using Prism 8.0 (GraphPad, San Diego, CA, USA) and SPSS (IBM Institute). All graphs with statistical analysis are expressed as the mean ± standard error. Statistical significance is indicated in the figures as n.s., non-significant (p>0.05), *p<0.05, **p<0.01, ***p<0.001.

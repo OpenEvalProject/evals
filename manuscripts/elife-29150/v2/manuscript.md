@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.29150.001 Ankyrins together with their spectrin partners are the master organizers of micron-scale membrane domains in diverse tissues. The 24 ankyrin (ANK) repeats of ankyrins bind to numerous membrane proteins, linking them to spectrin-based cytoskeletons at specific membrane microdomains. The accessibility of the target binding groove of ANK repeats must be regulated to achieve spatially defined functions of ankyrins/target complexes in different tissues, though little is known in this regard. Here we systemically investigated the autoinhibition mechanism of ankyrin-B/G by combined biochemical, biophysical and structural biology approaches. We discovered that the entire ANK repeats are inhibited by combinatorial and quasi-independent bindings of multiple disordered segments located in the ankyrin-B/G linkers and tails, suggesting a mechanistic basis for differential regulations of membrane target bindings by ankyrins. In addition to elucidating the autoinhibition mechanisms of ankyrins, our study may also shed light on regulations on target bindings by other long repeat-containing proteins.
+Ankyrins together with their spectrin partners are the master organizers of micron-scale membrane domains in diverse tissues. The 24 ankyrin (ANK) repeats of ankyrins bind to numerous membrane proteins, linking them to spectrin-based cytoskeletons at specific membrane microdomains. The accessibility of the target binding groove of ANK repeats must be regulated to achieve spatially defined functions of ankyrins/target complexes in different tissues, though little is known in this regard. Here we systemically investigated the autoinhibition mechanism of ankyrin-B/G by combined biochemical, biophysical and structural biology approaches. We discovered that the entire ANK repeats are inhibited by combinatorial and quasi-independent bindings of multiple disordered segments located in the ankyrin-B/G linkers and tails, suggesting a mechanistic basis for differential regulations of membrane target bindings by ankyrins. In addition to elucidating the autoinhibition mechanisms of ankyrins, our study may also shed light on regulations on target bindings by other long repeat-containing proteins.
 
 ## Introduction
 
@@ -37,13 +37,182 @@ In this study, we systematically investigated the autoinhibition mechanisms of A
 
 ## Results
 
-## A segment in AnkB C-terminal tail binds to the N-terminal of ANK repeats
+### A segment in AnkB C-terminal tail binds to the N-terminal of ANK repeats
 
 Ankyrin MBD can be inhibited by its CT regulatory domain in both AnkR and AnkB (Abdi et al., 2006; Davis et al., 1992), and previously we have biochemically and structurally characterized the intramolecular interaction between the 48-residue AnkR CT regulatory domain with all three MBDs from the ankyrin family members (Wang et al., 2014). Moreover, our analysis illustrated that the MBDs of AnkR/B/G are highly conserved and share essentially the same binding properties to diverse binding partners (Wang et al., 2014). In the structure of AnkB_MBD in complex with AnkR_CT, AnkR_CT adopts an extended conformation lining the inner groove of ANK repeats 1 ~ 14 of AnkB_MBD (Wang et al., 2014). Although AnkB and G do not contain AnkR_CT like sequences in their tails, more thorough sequence analysis revealed that both AnkB and G contain a 13-residue segment (denoted as ‘AI-a’ for the AutoInhibition segment-a, Figure 1A) that share a similar sequence pattern with the last 13-residue fragment of AnkR_CT and several MBD ‘site-1’ binding targets such as Na+ and K+-channels (Figure 1B). This 13-resdiue AI-a fragment is almost completely conserved in AnkB and AnkG among vertebrates (alignments not shown). Importantly, a Glu residue corresponding to Glu1622 in AnkR_CT and Glu1112 in Nav1.2, which has been shown to be absolutely required for AnkR_CT and Nav1.2 to bind to ANK repeats (Mohler et al., 2004b; Wang et al., 2014), is also invariant in AnkB and G (Figure 1B). We found that a peptide encompassing this AnkB_AI-a segment binds to AnkB ANK repeats with a dissociation constant (Kd) ~7.3 μM based on a fluorescence polarization binding assay (Figure 1C). Point mutations of the positively charged residues in the repeat 1 (R1) of ANK repeats (37RAAR40 to 37EAAE40) of AnkB significantly decreased its binding to the AI-a peptide (Figure 1C), consistent with our previous structural analysis that the positively charged residues in the ANK repeat R1 play a role in binding to the negatively charged residues from the ‘site-1’-binding peptides.
 
 We attempted to elucidate the molecular basis governing the AnkB ANK repeats/AI-a interaction by solving the complex structure using a similar fusion strategy as we used earlier for the Nav1.2 peptide (Wang et al., 2014); i.e. by fusing ANK repeats R1-20 to the C-terminal tail of AnkB AI-a. However, this effort was not successful. As an alternative approach, we replaced the corresponding sequence of AnkR_CT with that of AnkB_AI-a and produced an AnkR/B_CT Chimera (Figure 1D). Isothermal titration calorimetry (ITC) experiments detected a strong interaction between this chimera peptide and AnkB_MBD, with a Kd value comparable to that of AnkR_CT with AnkB_MBD (Figure 1E). This chimera peptide was fused to the N-terminus of AnkB_MBD for crystallization trials as we have demonstrated for AnkR_CT. With this strategy, we successfully obtained crystals of the AnkR/B_CT Chimera/AnkB_repeats_R1-20 fusion protein, and the crystals were diffracted up to 3.3 Å. The structure of the fusion protein was determined by the molecular replacement method using the AnkB_repeats_R1-24 structure as the model (Wang et al., 2014) (Table 1). Consistent with the biochemical analysis, the structure showed that the AnkB_AI-a segment binds to ‘site-1’ of AnkB_MBD (repeats_R1-5) using essentially the same binding mode as we observed in the AnkR_CT/AnkB_MBD and Nav1.2_ABD/AnkB_R1-9 complex structures (Wang et al., 2014) (Figure 1F). In particular, Glu1630 from AnkB_AI-a occupies the identical position as Glu1622 in AnkR or Glu1112 in Nav1.2 on AnkB_R1-5, by forming strong hydrogen bonds with Thr94 and Asn98 in the R2-R3 finger loop (Figure 1F). Additionally, hydrophobic interactions between ‘PPIV’ from AI-a and hydrophobic residues (including the two critical Phe residues, Phe131 and Phe164, from R4 and R5; see Wang et al., 2014) from R3-R5 also contribute to the binding (Figure 1F).
 
-## Two discrete segments from the linker connecting AnkB MBD and SBD bind to the middle and C-terminal parts of ANK repeats respectively
+**Table 1.**
+ Statistics of X-ray Crystallographic Data Collection and Model refinement
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Data collection</th>
+    </tr>
+    <tr>
+      <th>Data sets</th>
+      <th>RB-Chimera/AnkB_R1-20</th>
+      <th>AI-b/AnkB_R8-M14</th>
+      <th>AI-c/AnkB_R13-24</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>R32</td>
+      <td>P6522</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.979</td>
+      <td>0.979</td>
+      <td>0.979</td>
+    </tr>
+    <tr>
+      <td>Unit Cell parameters (Å)</td>
+      <td>a = b = 179.79, c = 227.10 α=β=90°, γ = 120°</td>
+      <td>a = b = 186.09, c = 75.35 α=β=90°, γ = 120°</td>
+      <td>a = 29.30, b = 127.80, c = 257.55 α=β=γ=90°</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>50–3.3 (3.36–3.30)</td>
+      <td>50–2.35 (2.39–2.35)</td>
+      <td>50–1.95 (1.98–1.95)</td>
+    </tr>
+    <tr>
+      <td>No. of unique reflections</td>
+      <td>20949 (1025)</td>
+      <td>31971 (1562)</td>
+      <td>68019 (3163)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>5.3 (5.5)</td>
+      <td>4.1 (3.8)</td>
+      <td>3.1 (3.2)</td>
+    </tr>
+    <tr>
+      <td>I/σ</td>
+      <td>25.5 (3.3)</td>
+      <td>17.0 (2.0)</td>
+      <td>22.8 (2.4)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>97.6 (98.9)</td>
+      <td>97.5 (97.9)</td>
+      <td>94.4 (92.2)</td>
+    </tr>
+    <tr>
+      <td>Rmerge* (%)</td>
+      <td>10.3 (72.1)</td>
+      <td>11.4 (89.3)</td>
+      <td>8.2 (70.3)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Structure refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–3.3 (3.42–3.30)</td>
+      <td>50–2.35 (2.42–2.35)</td>
+      <td>50–1.95 (2.02–1.95)</td>
+    </tr>
+    <tr>
+      <td>Rcryst†/Rfree‡ (%)</td>
+      <td>18.27/22.96 (25.40/31.06)</td>
+      <td>19.21/23.25 (24.28/28.57)</td>
+      <td>18.38/21.98 (24.40/29.34)</td>
+    </tr>
+    <tr>
+      <td>Rmsd bonds (Å)/angles (°)</td>
+      <td>0.007/1.011</td>
+      <td>0.008/0.955</td>
+      <td>0.009/0.996</td>
+    </tr>
+    <tr>
+      <td>Average B factor §</td>
+      <td>102.8</td>
+      <td>46.3</td>
+      <td>30.9</td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein atoms</td>
+      <td>5019</td>
+      <td>3421</td>
+      <td>6128</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>64</td>
+      <td>274</td>
+    </tr>
+    <tr>
+      <td>Other molecules</td>
+      <td>50</td>
+      <td>102</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Working set</td>
+      <td>18953</td>
+      <td>30384</td>
+      <td>64519</td>
+    </tr>
+    <tr>
+      <td>Test set</td>
+      <td>1980</td>
+      <td>1540</td>
+      <td>3357</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot regions §</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>95.2</td>
+      <td>98.0</td>
+      <td>98.7</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>4.8</td>
+      <td>2.0</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Numbers in parentheses represent the value for the highest resolution shell.* Rmerge = Σ |Ii - < I > | / ΣIi, where Ii is the intensity of measured reflection and <I > is the mean intensity of all symmetry-related reflections.b† Rcryst=Σ||Fcalc| – |Fobs||/ΣFobs, where Fobs and Fcalc are observed and calculated structure factors.c‡ Rfree= ΣT||Fcalc| – |Fobs||/ΣFobs, where T is a test data set of about 5% or 10% of the total unique reflections randomly chosen and set aside prior to refinement.d§ B factors and Ramachandran plot statistics are calculated using MOLPROBITY (Chen et al., 2010)._
+
+### Two discrete segments from the linker connecting AnkB MBD and SBD bind to the middle and C-terminal parts of ANK repeats respectively
 
 Though the conservation among the three isoforms is limited, the amino acid sequences of the linker connecting MBD and SBD within each isoform of ankyrins are highly conserved (Figure 1A). The crystal structure of AnkR MBD C-terminal 12 ANK repeats (PDB ID: 1N11, referred to as AnkR_C12) contains a 14-residue fragment of the linker that folds back and binds to the last five repeats (R20-24) of MBD (Michaely et al., 2002) (also see below for more details). Recently, the linker region of AnkB was reported to directly interact with MBD, thus preventing AnkB from localizing to plasma membranes (He et al., 2013). These studies suggest that, besides the AI-a in their CT, the linker regions of ankyrins also play important autoinhibitory roles in regulating functions of MBDs.
 
@@ -53,9 +222,80 @@ We chose AnkB to investigate the detailed mechanism governing the linker region-
 
 **Figure 2.:** (A) Schematic diagram showing the three autoinhibitory segments (AI-a, b, c) located at the linker and CT regions of AnkB. (B) ITC derived binding affinities showing that including longer linker region or the AI-a segment to the AnkB MBD weakened its bindings to targets including Nav1.2, NF186/L1CAM, and E-cadherin. (C) Bar graph showing the levels of target binding decreases resulted by the autoinhibitory segments based on the binding data in Panel B. (D–F) ITC profiles showing direct interactions between the entire linker region of AnkB and different versions of AnkB MBD (D: 28–827, no linker, measured in buffer containing 500 mM NaCl due to poor quality of this protein in 100 mM NaCl buffer; E: 28–847, short linker roughly comparable to the AnkR_C12 structure; F: 28–873, longer linker containing the entire AI-c).
 
+**Table 2.**
+ Constructs of ankyrins used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>AnkB</th>
+      <th>AnkG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AI-a</td>
+      <td>1623–1635</td>
+      <td>1596–1608</td>
+    </tr>
+    <tr>
+      <td>AI-b</td>
+      <td>865–896</td>
+      <td>875–903</td>
+    </tr>
+    <tr>
+      <td>AI-c</td>
+      <td>828–852</td>
+      <td>837–858</td>
+    </tr>
+    <tr>
+      <td>Linker (contains AI-c + AI b)</td>
+      <td>828–965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AI-c + AI-b</td>
+      <td>828–896</td>
+      <td>837–920</td>
+    </tr>
+    <tr>
+      <td>Linker ΔAI-c</td>
+      <td></td>
+      <td>861–920</td>
+    </tr>
+    <tr>
+      <td>MBD + partial AI-c</td>
+      <td>28–847</td>
+      <td>38–855</td>
+    </tr>
+    <tr>
+      <td>MBD + full AI-c</td>
+      <td>28–873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBD + AI c+AI-b</td>
+      <td>28–965</td>
+      <td>38–903</td>
+    </tr>
+    <tr>
+      <td>ΔZZUD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBD</td>
+      <td>28–827</td>
+      <td>38–837</td>
+    </tr>
+  </tbody>
+</table>
+
 We confirmed the direct interaction between the entire linker (aa 828–965) with the AnkB ANK repeats only (aa 28–827) using an ITC-based binding assay, and data showed a strong binding (Kd about 0.044 μM, Figure 2D). The entire linker (aa 828–965) was found to bind to AnkB 28–847 with a Kd ~4.2 μM (Figure 2E), further indicating that a fragment within residues 848–965 can directly bind to AnkB_MBD. Another version of extended MBD, AnkB 28–873 interacts with the entire linker (aa 828–965) with a similar affinity as AnkB 28–847 does (Figure 2F), suggesting that residue 848–873 has marginal impact on the AnkB autoinhibition. Taken together, the above biochemical mapping experiments suggested that the AnkB linker region contains two discrete autoinhibitory segments: one segment within the region 848–965 binding to middle repeats of AnkB_MBD (denoted as AI-b), and the other within residues 828–847 overlapping with the short 14-residue segment observed in the AnkR_C12 structure (denoted as AI-c) (Figure 2A; and see below for further detailed mapping).
 
-## Structural basis of the AnkB AI-b/ANK repeats interaction
+### Structural basis of the AnkB AI-b/ANK repeats interaction
 
 To delineate the mechanism governing the AI-b/MBD interaction, we set out to solve the complex structure. First, we mapped the minimal regions of AI-b and the corresponding repeats from MBD responsible for the interaction. Using the scheme described in Figure 2E as the assay, we mapped AI-b to a 32-aa fragment (aa 865–896) from the linker (Figure 3A). Using a similar approach combined with truncations of various repeats, we mapped the AI-b binding regions to R6-14 of MBD (Figure 3B).
 
@@ -67,7 +307,7 @@ We determined the crystal structure of AnkB repeats 8–14 fused to the C-termin
 
 The electron densities of the MBD_R8-14 bound AI-b only allowed us to trace residues spanning Gly883-Glu892 (Figure 3C). Although residues Glu865-Asp882 could not be traced in the crystal structure, this segment also directly participates in binding to MBD_R8-14, as deletion of residues from 865 to 873 significantly weakened AI-b’s binding to AnkB_MBD (Figure 3A). The structure of the MBD_R8-14/AI-b complex reveals their binding details: Tyr886 forms a hydrogen bond with His374 and hydrophobic interactions with Phe399 and Ile404; Met884 inserts into a hydrophobic pocket formed by Lys407, Val437, Phe440 and Met441; and Arg888 forms a number of hydrogen bonds with the sidechain of Tyr365 and backbone of Leu363 as well as charge-charge interaction with Asp364 (Figure 3D). ITC results showed that single point substitution of Tyr886 from AI-b with Ala significantly decreased its binding to MBD, and Met884Ala, Tyr886Ala double mutations totally abolished the AI-b’s autoinhibition (Figure 3E). It is noted that Met884 in AI-b occupies the same hydrophobic pocket as Ile1588 in AnkR_CT does, although the two ‘site-3’ binding fragments share very little amino acid sequence similarity (Figure 3F), further highlighting the remarkable capacity of ANK repeats in binding to targets with diverse amino acid sequences (Wang et al., 2014).
 
-## Biochemical and structural characterization of the AnkB AI-c/ANK repeats interaction
+### Biochemical and structural characterization of the AnkB AI-c/ANK repeats interaction
 
 The AnkR_C12 structure contains a 14-residue linker region (aa 832–845 in mouse AnkR), and 11 residues (aa 835–845) are defined in the folded back structure (Michaely et al., 2002). A longer region of the linker (i.e. 828–849 in human AnkB) is highly conserved in all three isoforms of ankyrins (Figure 6A). We speculated that the autoinhibitory AI-c segment of ankyrins may be longer than the 11-residue fragment seen in the structure of AnkR_C12. To ensure that we do not miss any possible residues forming the AI-c binding segment, we prepared a C-terminal 12 ANK repeats of AnkB followed by a 46-residue linker (aa 430–873), which covers a small part of AI-b (Figure 3A), and solved the crystal structure of the protein at 1.95 Å resolution (Table 1). The overall structure of our AnkB C-terminal 12 repeats-linker is very similar to that of AnkR_C12 (RMSD of 1.04 Å, Figure 4A). However, our structure contains a longer linker folded back binding to the AnkB ANK repeats. A 20-residue linker (from Thr828 to Asp847 instead of 11 residues in AnkR_C12) is clearly defined, and this 20-residue linker extends to the repeat R18 (Figure 4A). Moreover, we observed a prominently positive-charged surface in the inner groove of R16-18 right next to Asp847, and the five residues following Asp847 are highly negatively charged and conserved (847DEEGDD852) (Figure 4B). We anticipate that this stretch of negatively charged residues is part of AI-c and involved in binding to MBD (likely R16-17 based on the length of the segment) (Figure 4B). This idea is supported by the data from an earlier study showing that substitution of ‘848EEGDDT853’ with ‘NAAIRS’ in AnkB led to increased membrane localization presumably due to the mutation-induced weakened autoinhibition (He et al., 2013). In the AI-c folded-back structure, residues from AI-c form extensive hydrogen bonds with the residues in finger loops of ANK repeats (Figure 4C). Perturbations of these hydrogen bonding interactions (e.g. the Asn834Lys substitution in AI-c or the Asn595Ala mutation in one of the ANK repeats finger loop) led to a few fold decreases in their bindings (Figure 4D). Hydrophobic interactions also contribute to the AI-c autoinhibition. Met839 is buried in the hydrophobic pocket formed by Leu668 and Leu701; Leu843 interacts with sidechains of Leu597, Tyr630, and Ile635 (Figure 4C). Individually mutating these two hydrophobic residues to polar Gln weakened the binding by several folds (Figure 4D).
 
@@ -77,7 +317,7 @@ The AnkR_C12 structure contains a 14-residue linker region (aa 832–845 in mous
 
 An ideal result would be to obtain structures of MBD of ankyrins binding to two or even all three of these autoinhibitory segments. We have extensively tried such experiments, by fusing the inhibitory fragments combining with the different strategies used in the study. Unfortunately, these extensive efforts have not resulted fruition likely due to the conformational dynamics of the elongated protein complexes.
 
-## The autoinhibition segments inhibit AnkB’s plasma membrane localization
+### The autoinhibition segments inhibit AnkB’s plasma membrane localization
 
 In epithelial cells, AnkG clusters on plasma membranes whereas AnkB largely localizes to intracellular compartments (Figure 5A and B and He et al., 2013). Autoinhibition of the MBD by the linker region can modulate AnkB’s membrane vs cytosol distributions in epithelial cells (He et al., 2013). We made use of this assay as a functional readout to verify the autoinhibited structures determined in this study and to provide a preliminary glance at the role of AnkB’s autoinhibition. Consistent with the previous report (He et al., 2013), WT AnkB mainly localizes in the cytosol, whereas WT AnkG mainly associates with the plasma membranes in polarized MDCK cells (Figure 5A and B). We constructed two mutants in the linker region of AnkB, one weakens the AI-b’s binding to MBD (the Met884Ala, Tyr886Ala double point mutations, denoted as AnkB 2M) and the other weakens both AI-b and AI-c’s bindings to MBD (the Met884Ala, Tyr886Ala, Asn834Lys triple mutations, denoted as AnkB 3M), and assayed their membrane vs cytosol distributions in polarized MDCK cells. We observed that the AnkB 2M and 3M mutants show a higher ratio of plasma membrane localization (Figure 5A and B), consistent with releases of the autoinhibition induced by the two mutations. Finally, we deleted essentially the entire linker region encompassing the complete AI-b and AI-c segments (AnkB ΔLinker, with aa 828–943 deleted), and found that this deletion mutant is near completely membrane localized (Figure 5A and B), suggesting that both AI-b and AI-c can regulate AnkB’s membrane localization presumably by modulating its MBD’s binding to membrane-anchored target(s). We have also performed NF186-mediated plasma membrane recruitments of AnkB, and compared the impacts of the 2M and 3M mutations on AnkB’s membrane localizations in HeLa cells which lack endogenous NF186 expression. Co-expression of NF186 partially recruited WT AnkB to the plasma membranes (Figure 5C). The 2M, 3M, and ΔLinker of AnkB mutants displayed sequentially increasing amount of NF186-mediated membrane recruitments in this assay system (Figure 5C and D). Similar as observed in MDCK cells, WT AnkG is better recruited to plasma membranes by NF186 than WT AnkB is (Figure 5C and D).
 
@@ -85,7 +325,7 @@ In epithelial cells, AnkG clusters on plasma membranes whereas AnkB largely loca
 
 **Figure 5.:** (A) Representative fluorescent images of transiently expressed GFP-tagged AnkG, AnkB or its linker mutants in polarized MDCK cells with nuclei stained with DAPI (blue): A1, WT AnkB; A2, WT AnkG; A3, AnkB_2M; A4, AnkB_3M; A5, AnkB ΔLinker. (B) Quantification of the immunofluorescence intensity ratio of plasma membrane vs cytosolic GFP signals. Data are presented as means ± SEM from>100 cells (except for AnkB ΔLinker with 41 cells due to its very clear membrane localizations) and analyzed using one way ANOVA followed by Dunnett’s multiple comparisons test to WT AnkB, ****p<0.0001. (C) Representative fluorescent images of HeLa cells transiently co-expressing HA-tagged NF186 (red) and GFP-tagged AnkG, AnkB or its linker mutants (green), with nuclei stained with DAPI (blue): C1, WT AnkB; C2, WT AnkG; C3, AnkB_2M; C4, AnkB_3M; C5, AnkB ΔLinker. (D) Quantification of the immunofluorescence intensity ratio of plasma membrane vs cytosolic GFP signals (representing AnkB/G level). Data are presented as means ± SEM from~20 cells and analyzed using one way ANOVA followed by Dunnett’s multiple comparisons test to WT AnkB, ****p<0.0001. The protein expression levels of all constructs in both cell lines are comparable as indicated by the quantified total fluorescence intensities of each groups in this experiment.
 
-## AnkG and AnkB share a similar autoinhibition mechanism
+### AnkG and AnkB share a similar autoinhibition mechanism
 
 It is not known whether AnkG also contains auto-regulatory segments. Amino acid sequence alignment analysis reveals that residues corresponding to the AnkB AI-c are essentially the same in AnkG, indicating that AnkG also contains an autoinhibitory AI-c segment (Figure 6A). Curiously, the N-terminal half of AnkB AI-b can be nicely aligned with a fragment in the AnkG linker following AI-c, but residues in the C-terminal half of AnkB AI-b that are critical for its binding to MBD (e.g. Met884 and Tyr886) are missing in AnkG (Figure 6A). We hypothesized that AnkG may contain a different autoinhibitory AI-b segment from that of AnkB. Using a similar binding assay developed to discover AI-b in AnkB, we found that elongating the linker from residue 855 to 903 in the extended AnkG MBD (compare aa 38–855 vs aa 38–903) weakened the bindings of Nav1.2, E-cadherin and NF186 to AnkG by 6 ~ 74 folds (Figure 6B), indicating that AnkG linker indeed contains an AI-b segment. We also detected direct interaction between AnkG MBD-AI-c protein (aa 38–855, containing the AI-c segment) and an AnkG’s long linker (aa 837–920) or a shorter version of the linker (aa 861–920, lacking AI-c) (Figure 6C and D). Binding affinity-guided mapping revealed that residues 875 to 903 encompass the complete AI-b of AnkG (Figure 6E). It is noted that AnkG AI-b contains a stretch of highly charged residues in its N-terminal half, and these residues are not found in AnkB, revealing a different binding mechanism of AI-b to MBD in AnkB and G. We found that increasing salt concentrations in the binding buffer significantly weakened the interaction between AnkG_AI-b and AnkG_MBD, supporting the charge-charge interactions between AI-b and AnkG_MBD (data not shown). We substituted three charged residues with neutral or charge reverse residues (Asp887Ala, Asp889Ala and Lys890Glu, indicated with black triangles in Figure 6A) from the AnkG linker (861-920) and found that the mutant completely lost its ability to bind AnkG_MBD (Figure 6F), further supporting the critical roles of the charged residues in AnkG AI-b in its autoinhibition.
 
@@ -97,7 +337,7 @@ We attempted to map the AI-b’s binding site on AnkG’s ANK repeats by a simil
 
 ## Discussion
 
-## Features of the AnkB and G autoinhibition
+### Features of the AnkB and G autoinhibition
 
 Ankyrins are master scaffold proteins assembling very diverse signaling microdomains beneath membrane bilayers. This is achieved by their MBD-mediated bindings to numerous trans-membrane proteins and SBD-mediated anchoring of the protein complex to spectrin-based cytoskeletal meshwork. Formation of a highly elongated and malleable target binding groove by the 24 ANK repeats with multiple semi-independent target binding sites provides a mechanistic explanation to how ankyrin MBD, via combinatorial usages of its target binding sites, can bind to many distinct membrane targets with high specificity (Figure 7A; and Wang et al., 2014). A key unanswered question is how MBD-mediated recognitions of membrane targets of ankyrins are regulated. Autoinhibition by C-terminal segment(s) to the ANK repeats has been suggested to be one of such regulation mechanisms (Abdi et al., 2006).
 
@@ -109,7 +349,7 @@ In this study, we characterized the autoinhibition of AnkB and G in detail and d
 
 Since each target protein normally occupies a few of the total five proposed binding sites along the entire 24 ANK repeats (Figure 7A), the use of multiple semi-independent autoinhibitory segments lining the entire target binding groove of MBD can provide a mechanism for selected release of a few target binding sites (e.g. sites-1 and 3 for sodium channels) while keeping other sites closed (e.g. site-5), thus allowing selected engagements of MBD to certain target proteins at any given membrane microdomains. The combinatorial usage of multiple binding sites by target proteins appears to be a rather common strategy for many long repeat-containing proteins (Chook and Blobel, 2001; Conti et al., 1998; Graham et al., 2000; Huber and Weis, 2001; Kobe, 1999; Xu et al., 2010; Zhu et al., 2011). Autoinhibition of an elongated repeats domain by multiple intrinsically disordered segments from the same protein are rather uncommon, and only a few cases have been reported. Kap60p, a karyopherin family protein, adopts a somewhat similar autoinhibition mode as ankyrins do. In this case, two NLS recognition sites on the armadillo repeats were shown to be autoinhibited by two consecutive segments from Kap60p’s N-terminal unstructured region (Matsuura and Stewart, 2004). In another case, two NLS binding sites of importin-α are inhibited by the same fragment from its N-terminal unstructured region at a 1:2 stoichiometry instead of multiple segments with different sequences as found in ankyrins and Kap60p (Catimel et al., 2001). Other autoinhibition mechanisms found in long repeat-containing proteins include the HEAT repeats of karyopherin-β2 occupied by an internal long loop from the middle region of the HEAT repeats (Chook and Blobel, 1999; Lee et al., 2006a), the HEAT repeats of exportin chromosome region maintenance 1 (CRM1) autoinhibited by a C-terminal α helix immediately following the HEAT repeats (Saito and Matsuura, 2013), and the armadillo repeats of Diaphanous-related formins (Drfs) autoinhibited by a short α helix from its distal C-terminal region (Lammers et al., 2005). It will be interesting to investigate whether the autoinhibition by multiple discrete segments as observed in ankyrins here might also be used by other long repeat-containing proteins capable of binding to diverse targets in the future.
 
-## Functional implications and potential regulations of ankyrin autoinhibition
+### Functional implications and potential regulations of ankyrin autoinhibition
 
 Ankyrin MBDs are versatile membrane target binders and many of these ankyrin binding membrane proteins are located in specific membrane microdomains (e.g. ion-channels in the axon initial segments of neurons as well as specifically patterned membrane domains in cardiomyocytes) playing vital physiological roles. Defects of interactions between ankyrins and their membrane targets are frequently linked to human diseases including hereditary spherocytosis, cardiac arrhythmia, and several types of psychiatric disorders (Eber et al., 1996; Mohler et al., 2004b; Van Camp et al., 1996). In view of the vital physiological roles of the interactions between ankyrins and these membrane targets, a priori assumption is that such ankyrin-mediated membrane target bindings must be regulated. For example, the membrane target binding groove of MBDs is likely to be closed, via the autoinhibition mechanism elucidated in this study, during biogenesis and trafficking processes of ankyrins. Upon reaching each specific membrane domain, certain mechanisms are likely existing to release a few selected target binding sites for specific assembly of ankyrin/membrane target complexes. The existence of multiple semi-independent inhibitory sequences in the tail of ankyrins suggests that these sequence may be regulated in a combinatorial fashion so that ankyrins can scaffold many different target proteins in different cellular settings and in different tissues.
 
@@ -121,28 +361,28 @@ In summary, we systemically studied the autoinhibition mechanisms of the 24 ANK 
 
 ## Materials and methods
 
-## Constructs, protein expression and purification
+### Constructs, protein expression and purification
 
 The coding sequences of the AnkR constructs were PCR amplified from a mouse muscle cDNA library. The coding sequences of AnkB and AnkG constructs were PCR amplified from the full-length human 220 kDa AnkB template or the full-length rat 270 kDa AnkG template respectively (both templates as well as the HA tagged full length NF186 construct are generous gifts from Dr. Vann Bennett). E-cadherin (aa 734–884), NF186 (aa 1187–1214), L1CAM (aa 1206–1233) and Nav1.2 (aa 1035–1129) coding sequences were PCR amplified from mouse brain or muscle cDNA libraries. All of the constructs that used for protein expression were cloned onto a home-modified pET32a vector. All truncation mutations of ANK repeats constructs were made with the same strategy as described in our previous study (Wang et al., 2014). The fusion constructs of AnkR/B_CT Chimera/AnkB_repeats_R1-20 and AnkB_AI-b/AnkB_R8-M14 were made by standard two-step PCR with a coding sequence of ‘GSLVPRGSGS’ as the flexible linker (M14 means replacing the αB of R14 with a capping sequence corresponding to the αB of R24 for protein stabilization as we used earlier). The same strategy was used in making other fusion constructs described in this study. All point mutations were created using the Quick Change site-directed mutagenesis kit and confirmed by DNA sequencing. Protein expression and purification protocols are the same as previously described (Wang et al., 2012; 2014). Recombinant proteins were expressed in BL21 (DE3) Escherichia coli cells with induction of 0.25 mM IPTG at 16°C. The N-terminal Trx-his6-tagged proteins were purified using Ni2+-NTA agarose affinity column followed by size-exclusion chromatography (Superdex 200 column from GE Healthcare, Little Chalfont, UK) in the final buffer containing 50 mM Tris-HCl, 1 mM DTT, and 1 mM EDTA, pH 7.8 with either 100 mM NaCl or 500 mM NaCl as required.
 
 For simplicity, we use human 220 kDa AnkB (NM_020977.3), rat AnkG (MBD-UPA: NM_001033984.1 and DD-CT: NM_031805.1) and mouse AnkR (NM_001110783.3) for the amino acid numbering throughout the manuscript. The various constructs of ankyrins used in this study are listed in Table 2.
 
-## Isothermal titration calorimetry assay and fluorescence assay
+### Isothermal titration calorimetry assay and fluorescence assay
 
 Isothermal titration calorimetry (ITC) assays and fluorescence assays were carried out with the same protocol as described earlier (Wang et al., 2014). Briefly, isothermal titration calorimetry assays were performed on a VP-ITC MicroCal calorimeter (MicroCal, Northampton, MA) at 25°C and data were analyzed and fitted using the program Origin7.0 (Microcal). Fluorescence-based binding assays were performed on a PerkinElmer LS-55 fluorimeter equipped with an automated polarizer at 25°C. The Kd values were obtained by fitting the titration curves with the classical one-site binding model.
 
-## Crystallography
+### Crystallography
 
 All crystals were obtained by hanging drop or sitting drop vapor diffusion methods at 16°C. Crystals of AnkR/B_CT Chimera/AnkB_repeats_R1-20 were grown in solution containing 4 M ammonium acetate and 0.1 M Bis-Tris propane (pH 7.0). Crystals of AnkB_AI-b/AnkB_R8-M14 were grown in solution containing 0.1 M HEPES (pH 7.0), 1 M ammonium sulfate and 0.5% w/v PEG 8,000. Crystals of AnkB_AI-c/AnkB_R13-24 were grown in solution containing 0.2 M CaCl2, 0.1 M HEPES (pH 7.5) and 28% v/v PEG 400. Crystals were soaked in crystallization solution containing additional 20% glycerol for cryoprotection. All datasets were collected at the Shanghai Synchrotron Radiation Facility at 100 K. Data were processed and scaled using HKL2000 (Otwinowski and Minor, 1997).
 
 Structures were solved by molecular replacement using PHASER (McCoy et al., 2007) with fragments of the entire 24 ANK repeats (PDB: 4RLV) as the searching models. Peptides were manually built according to Fo-Fc difference maps in COOT (Emsley et al., 2010). Further manual model adjustment and refinement were completed iteratively using COOT (Emsley et al., 2010) and PHENIX (Adams et al., 2010). The final models were validated by MolProbity (Chen et al., 2010) and statistics are summarized in Table 1. All structure figures were prepared by PyMOL (http://www.pymol.org). The coordinates of the structures reported in this work have been deposited to PDB under the accession codes of 5Y4D, 5Y4E and 5Y4F for the RB-Chimera/AnkB_R1-20, AI-b/AnkB_R8-M14 and AI-c/AnkB_R13-24 structures, respectively.
 
-## Cell culture, transfection and immunostaining
+### Cell culture, transfection and immunostaining
 
 MDCK cells were seeded on 35 mm dishes with 10 mm diameter uncoated glass bottom (MatTek, Ashland, MA) and grown in 10% FBS supplemented DMEM at 37°C incubator with 5% CO2. After around 20 hr, when the confluency reached 30 ~ 40%, cells were transfected with 300 ng plasmids using Lipofectamine 2000 transfection reagent (Invitrogen, Carsbad, CA) following the protocol suggested by the manufacturer. After transfection, MDCK cells were grown in 10% FBS supplemented DMEM until they were fully polarized. HeLa cells were cultured in the same media and culture condition as used for MDCK cells. HeLa cells were co-transfected with 400 ng HA tagged NF186 plasmids and 500 ng ankyrin constructs using Viafect transfection reagent (Promega, Madison, WI) when the confluency reached 20 ~ 30%. Then cells were grown in 10% FBS supplemented DMEM for 24 hr and fixed. HeLa (RRID: CVCL_0030) and MDCK (RRID: CVCL_0422) cells were originated from ATCC. These cells were not individually authenticated and not found to be on the list of commonly misidentified cell lines (International Cell Line Authentication Committee). Cells were tested negative for mycoplasma contamination by cytoplasmic DAPI staining.
 
 The MDCK or HeLa cells were fixed with 4% paraformaldehyde at room temperature for 15 min, and permeabilized with 0.2% Triton X-100 at room temperature for 15 min followed by a 60 min blocking in PBS buffer containing 5% bovine serum albumin. For immunostaining, cells were then incubated with primary antibodies (goat anti GFP, ab6658, Lot: GR206330-6, RRID: AB_305631; Rabbit anti HA, Sigma, H6908, RRID: AB_260070) at 4°C overnight. The next day, cells were washed with PBS buffer three times and then incubated with fluorescence-conjugated secondary antibodies (Alexa Fluor 488 or 594) at room temperature for 2 hr, followed by incubating with 500 nM DAPI for 5 min to stain nucleus. Then cells were washed with PBS before imaging.
 
-## Microscopy and data analysis
+### Microscopy and data analysis
 
 All the cell culture images were captured by a Zeiss LSM 880 laser-scanning confocal microscope. The MDCK cell and HeLa cell images were captured using a 40 × 1.4 oil objective with pinhole setting to 1 Airy unit. Fluorescence intensity were analyzed with ImageJ software (https://imagej.nih.gov/ij/) and statistically analyzed with GraphPad Prism five using one-way ANOVA followed by Dunnett’s multiple comparisons test.

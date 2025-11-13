@@ -20,17 +20,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 Institute of Medical Microbiology, University of Zürich Zürich Switzerland
-2. https://ror.org/05a28rw58 Institute of Molecular Biology and Biophysics, ETH Zürich Zürich Switzerland
-3. https://ror.org/02kkvpp62 Bavarian NMR Center - Structural Membrane Biochemistry, School of Natural Sciences, Technical University of Munich Garching Germany
-4. https://ror.org/00r1edq15 Institute of Microbiology, University of Greifswald Greifswald Germany
-5. https://ror.org/051escj72 UMR5294, LPHI, CNRS, INSERM, University of Montpellier Montpellier France
+1. Institute of Medical Microbiology, University of Zürich Zürich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+2. Institute of Molecular Biology and Biophysics, ETH Zürich Zürich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+3. Bavarian NMR Center - Structural Membrane Biochemistry, School of Natural Sciences, Technical University of Munich Garching Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+4. Institute of Microbiology, University of Greifswald Greifswald Germany ([ROR:00r1edq15](https://ror.org/00r1edq15))
+5. UMR5294, LPHI, CNRS, INSERM, University of Montpellier Montpellier France ([ROR:051escj72](https://ror.org/051escj72))
 
 † Corresponding author
 
 ## Abstract
 
-The amoeba-resistant bacterium Legionella pneumophila causes Legionnaires’ disease and employs a type IV secretion system (T4SS) to replicate in the unique, ER-associated Legionella -containing vacuole (LCV). The large fusion GTPase Sey1/atlastin is implicated in ER dynamics, ER-derived lipid droplet (LD) formation, and LCV maturation. Here, we employ cryo-electron tomography, confocal microscopy, proteomics, and isotopologue profiling to analyze LCV-LD interactions in the genetically tractable amoeba Dictyostelium discoideum . Dually fluorescence-labeled D. discoideum producing LCV and LD markers revealed that Sey1 as well as the L. pneumophila T4SS and the Ran GTPase activator LegG1 promote LCV-LD interactions. In vitro reconstitution using purified LCVs and LDs from parental or Δ sey1 mutant D. discoideum indicated that Sey1 and GTP promote this process. Sey1 and the L. pneumophila fatty acid transporter FadL were implicated in palmitate catabolism and palmitate-dependent intracellular growth. Taken together, our results reveal that Sey1 and LegG1 mediate LD- and FadL-dependent fatty acid metabolism of intracellular L. pneumophila .
+The amoeba-resistant bacterium Legionella pneumophila causes Legionnaires’ disease and employs a type IV secretion system (T4SS) to replicate in the unique, ER-associated Legionella-containing vacuole (LCV). The large fusion GTPase Sey1/atlastin is implicated in ER dynamics, ER-derived lipid droplet (LD) formation, and LCV maturation. Here, we employ cryo-electron tomography, confocal microscopy, proteomics, and isotopologue profiling to analyze LCV-LD interactions in the genetically tractable amoeba Dictyostelium discoideum. Dually fluorescence-labeled D. discoideum producing LCV and LD markers revealed that Sey1 as well as the L. pneumophila T4SS and the Ran GTPase activator LegG1 promote LCV-LD interactions. In vitro reconstitution using purified LCVs and LDs from parental or Δsey1 mutant D. discoideum indicated that Sey1 and GTP promote this process. Sey1 and the L. pneumophila fatty acid transporter FadL were implicated in palmitate catabolism and palmitate-dependent intracellular growth. Taken together, our results reveal that Sey1 and LegG1 mediate LD- and FadL-dependent fatty acid metabolism of intracellular L. pneumophila.
 
 ## Introduction
 
@@ -52,27 +52,51 @@ Given the role of LDs as lipid storage organelles regulated by atlastins, we set
 
 ## Results
 
-## Palmitate-induced LDs interact with LCVs in D. discoideum
+### Palmitate-induced LDs interact with LCVs in D. discoideum
 
 To initially explore whether fatty acids and/or LDs play a role for intracellular replication of L. pneumophila, we fed D. discoideum strain Ax3 with palmitate, and assessed intracellular replication of the L. pneumophila wild-type strain JR32 or the mutant strain ΔicmT, which lacks a functional T4SS and is defective for effector protein secretion. Feeding with 200 µM palmitate overnight significantly promoted the intracellular growth of L. pneumophila, while higher concentrations of palmitate had a negative effect on growth (Figure 1A). This growth reduction was not owing to fatty acid toxicity for D. discoideum, as up to 800 µM palmitate were not toxic for the amoeba (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig1-v2.jpg)
+
+**Figure 1.:** (A) D. discoideum Ax3, untreated (LoFlo medium) or treated with increasing concentrations of sodium palmitate (100–800 µM, 3 hr), were infected (MOI 10) with GFP-producing L. pneumophila wild-type JR32 or ΔicmT (pNT28). The GFP-fluorescence was measured with a microtiter plate reader at 1 hr, 24 hr, and 48 hr p.i. Data show the relative fluorescence increase between 1 hr and 24 hr or 48 hr p.i. (JR32: black/grey bar; ΔicmT: white/dotted bar). Data represent means ± SD of three independent experiments (*p<0.05). (B) Representative cryotomograms of D. discoideum Ax3, fed (3 hr) with 200 µM sodium palmitate and infected (MOI 100) with L. pneumophila JR32 for 30 min (top) or 3 hr (bottom). Intimate LCV-LD interactions are clearly visible (red arrows). Reconstruction of LCV-LD interaction observed at 30 min p.i. (top; right). OM, outer membrane; IM, inner membrane; LCV, Legionella-containing vacuole (limiting membrane); ER, endoplasmic reticulum; LD, lipid droplet; cyt, L. pneumophila cytoplasm; Hcyt, host cell cytoplasm. Scale bars: 100 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) D. discoideum Ax3 or Δsey1, untreated, treated with 70% ethanol (EtOH, 1 hr) or with increasing concentrations of sodium palmitate (100–800 µM, overnight), were stained with Zombie Aqua dye, fixed with PFA and analyzed by flow cytometry to assess cell viability (nevents = 10,000). Data represent means ± SD of three independent experiments (*p<0.05; ***p<0.001).
+
 To assess whether the growth-promoting effect of palmitate might involve LDs, we thought to visualize the possible interactions between LCVs and LDs. To this end, D. discoideum strain Ax3 was fed with palmitate, infected with the L. pneumophila wild-type strain JR32 and subjected to cryo-electron tomography (cryoET). The obtained cryotomograms clearly show an intensive interaction between LCVs and LDs (Figure 1B). Upon contact with the LCV, the LDs tightly interact with the limiting membrane of the pathogen vacuole and even appear to integrate into the LCV limiting membrane. We did not observe tethering of LDs to the LCV with the LD lipid monolayer and the LCV lipid bilayer spanning a discrete, short distance in the nm range. Hence, LDs undergo robust and intimate interactions with LCVs in infected D. discoideum.
 
-## Sey1 promotes LD recruitment to intact LCVs in D. discoideum
+### Sey1 promotes LD recruitment to intact LCVs in D. discoideum
 
 Given that large GTPases of the atlastin family are implicated in LD formation in mammalian cells (Klemm et al., 2013), we next assessed whether Sey1 affects early LCV-LD interactions in D. discoideum. To this end, we used dually fluorescence-labelled D. discoideum producing the LCV marker P4C-GFP and the LD marker mCherry-Plin. The D. discoideum parental strain Ax3 or Δsey1 mutant amoeba were fed overnight with 200 µM palmitate, stained with LipidTOX Deep Red and infected with mCerulean-producing L. pneumophila JR32. Within the first hour of infection, the dynamic interactions of single LCVs with LDs were recorded for 60 s each at different time points (Figure 2A, Figure 2—figure supplement 1). As the LCVs matured over the course of 1 hr post infection (p.i.), the overall LCV-LD contact time gradually increased in D. discoideum Ax3, while it remained lower in Δsey1 mutant amoeba (Figure 2B). Moreover, the retention time of individual LDs on LCVs was also signficantly higher in strain Ax3 than in Δsey1 mutant amoeba (Figure 2C). Taken together, these real-time data indicate that Sey1 promotes the dynamics of LCV-LD interactions during the course of LCV maturation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative fluorescence micrographs of D. discoideum Ax3 or Δsey1 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with mCerulean-producing L. pneumophila JR32 (pNP99). Infected cells were recorded for 60 s each at the times indicated. Examples are shown for contact between LDs and the LCV membrane (white arrowheads). Scale bars: 0.5 µm. (B) Quantification of (A), total contact time of LDs with the LCV recorded for 60 s at the indicated time points p.i. (nLCV-LD contacts > 30). Data represent means ± SD of three independent experiments (*p<0.05). (C) Quantification of (A), retention time of single LDs with the LCV recorded for 60 s at the indicated time points p.i. (nLCV-LD contacts > 30). Data represent means ± SD of three independent experiments (*p<0.05, **p<0.01; ***p<0.001). (D) Representative fluorescence micrographs of D. discoideum Ax3 or Δsey1 producing P4C-GFP (pWS034) and cytosolic mCherry (pDM1042), fed overnight with 200 µM sodium palmitate and infected (MOI 10, 1 hr) with mCerulean-producing L. pneumophila JR32 (pNP99), fixed with PFA and stained with LipidTOX Deep Red. Examples are shown for contact between LDs and the LCV membrane (white arrowheads). Scale bars: overview (2 µm), inset (1 µm). (E) Quantification of (D), mean number of LDs contacting a single LCV (nLCVs >102). Data represent means ± SD of three independent experiments (***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative fluorescence micrographs of D. discoideum Ax3 or Δsey1 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with mCerulean-producing L. pneumophila JR32 (pNP99). Infected cells were recorded for 60 s each at the time indicated. Single fluorescence channels of the 60 min p.i. recordings (Figure 2A) are shown. Scale bars: 0.5 µm.
+
 To assess the integrity of the LCVs during their interaction with LDs, we used D. discoideum Ax3 or Δsey1 producing P4C-GFP and cytoplasmic mCherry (Figure 2D). The production of cytoplasmic mCherry allows to assess the integrity of pathogen vacuoles in the course of D. discoideum infection (Koliwer-Brandl et al., 2019). The D. discoideum strains were fed overnight with 200 µM palmitate, infected with mCerulean-producing L. pneumophila JR32, and LDs were stained with LipidTOX Deep Red. This approach revealed that 1 hr post infection, all LCVs formed in either D. discoideum Ax3 or Δsey1 mutant amoeba were impermeable to cytoplasmic mCherry, and therefore, LCV membrane integrity was not compromised (Figure 2D). In addition, these experiments confirmed that LCVs in D. discoideum Ax3 are decorated with approximately twice as many LDs as LCVs in the Δsey1 strain (Figure 2E).
 
-## The L. pneumophila T4SS promotes Sey1-dependent LCV-LD interactions
+### The L. pneumophila T4SS promotes Sey1-dependent LCV-LD interactions
 
 Next, we sought to validate that Sey1 promotes LCV-LD interactions in palmitate-fed, fixed D. discoideum and to test if the process also depends on the L. pneumophila Icm/Dot T4SS. To this end, we used D. discoideum producing mCherry-Plin and AmtA-GFP, a probe localizing to vacuoles containing either wild-type strain JR32 or ΔicmT mutant bacteria (Figure 3A). This approach indicated that the mean number of LDs localizing to LCVs harboring strain JR32 was more than twice as high in D. discoideum Ax3 as compared to the Δsey1 mutant amoeba, and the effect was of similar magnitude, when the number of LDs per LCV area was calculated (Figure 3B). Contrarily, Sey1 did not promote the interaction of vacuoles harboring ΔicmT mutant bacteria with LDs, and overall, significantly fewer LDs associated with these vacuoles (Figure 3B). Taken together, these studies using fixed D. discoideum amoeba reveal that Sey1 promotes LCV-LD interactions and the Icm/Dot T4SS is required for LD accumulation on LCVs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative fluorescence micrographs of D. discoideum Ax3 or Δsey1 producing AmtA-GFP (pHK121) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate and infected (MOI 10, 1 hr) with mCerulean-producing L. pneumophila JR32 (top) or ΔicmT (bottom) (pNP99), fixed with PFA and stained with LipidTOX Deep Red. Examples are shown for contact between LDs and the LCV membrane (white arrowheads) or no contact (red arrowhead). Scale bars: overview (2 µm), inset (1 µm). (B) Quantification of (A), mean number of LDs contacting a single LCV (left) and ratio of LD number contacting one LCV divided by the LCV area (right) (nLCVs = 30). Data represent means ± SD of three independent experiments. (n.s., not significant; *p<0.05; **p<0.01).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of LD number (left) (ncells >30) or LD area (right) (nLDs >250) in unstimulated or sodium palmitate-stimulated (200 µM, overnight) D. discoideum Ax3 or Δsey1 producing AmtA-GFP (pHK121) and mCherry-Plin (pHK102), uninfected or infected with mCerulean-producing L. pneumophila JR32 or ΔicmT (pNP99), fixed with PFA and stained with LipidTOX Deep Red. Data represent means ± SD of three independent experiments (n.s., not significant; *p<0.05; **p<0.01; ***p<0.001). (B) Quantification of mean number of LDs contacting a single LCV (left) (nLCVs >80) or ratio of LD number contacting one LCV divided by the LCV area (right) (nLCVs >80). Analysis was performed in unstimulated or sodium palmitate-stimulated (200 µM, overnight) D. discoideum Ax3 or Δsey1 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), infected (MOI 10, 1 hr or 2 hr) with mCerulean-producing L. pneumophila JR32 (pNP99), fixed with PFA and stained with LipidTOX Deep Red. Data represent means ± SD of three independent experiments (n.s., not significant; *p<0.05; **p<0.01; ***p<0.001).
 
 Atlastins regulate the number and size of LDs in mammalian cells (Klemm et al., 2013). Hence, we assessed the role of Sey1 for the number and size of LDs in D. discoideum. D. discoideum producing the LD marker mCherry-Plin and the phagosome marker AmtA-GFP were left untreated or fed with 200 µM palmitate overnight, fixed and stained with LipidTOX Deep Red, and the number and size of LDs were quantified. D. discoideum Ax3 or ∆sey1 amoeba were found to harbor approximately 10 LDs per cell, regardless of whether they were uninfected or infected with L. pneumophila wild-type JR32 or ∆icmT (Figure 3—figure supplement 1). Palmitate feeding did not significantly change the size of the LDs. Upon feeding D. discoideum with 200 µM palmitate overnight, uninfected or ∆icmT-infected amoeba contained significantly more LDs (ca. eightfold), and amoeba infected with L. pneumophila JR32 contained only ca. fourfold more LDs (Figure 3—figure supplement 1). Taken together, feeding with palmitate increased the number but not the size of LDs in D. discoideum, and infection with wild-type L. pneumophila reduced the LDs number compared to uninfected or ∆icmT-infected amoeba. However, in apparent contrast to mammalian cells, Sey1 did not seem to affect the number and size of LDs in D. discoideum.
 
 We also quantified the ratio of LDs per LCV and LDs per LCV area in D. discoideum Ax3 or ∆sey1 mutant amoeba, which were unstimulated or fed with 200 µM palmitate overnight (Figure 3—figure supplement 1). In unstimulated as well as in palmitate-fed D. discoideum, the number of LDs per LCV and the number of LDs per LCV area was significantly larger in the parental D. discoideum strain Ax3 as compared to Δsey1 mutant amoeba. Therefore, feeding with palmitate does not affect the stimulation of LCV-LD interactions by Sey1. However, in agreement with an increased overall number of LDs per cell, the overall number of LDs per LCV or LDs per LCV area increased upon feeding the amoeba with palmitate (Figure 3—figure supplement 1). Taken together, these results indicate that while feeding D. discoideum with palmitate increases the total number of LDs in amoeba and on LCVs, palmitate feeding does not change the positive effect of Sey1 on LCV-LD interactions also seen in unstimulated amoeba.
 
-## Proteomics analysis of purified LDs identifies RanA GTPase and RanBP1
+### Proteomics analysis of purified LDs identifies RanA GTPase and RanBP1
 
 To gain further insights into the possible role of Sey1 for LD composition, we performed a comparative proteomics analysis of LDs from D. discoideum. To this end, LDs were harvested from palmitate-fed mCherry-Plin-producing D. discoideum Ax3 or Δsey1 mutant amoeba, purified by sucrose gradient centrifugation (Figure 4—figure supplement 1), and subjected to tandem mass spectrometry. This approach revealed 144 differentially produced proteins (log2 fold change > |0.8|), including some enzymes implicated in lipid metabolism (phospholipase PldA, phosphatidylinositol phosphate kinase Pik6/PIPkinA, sterol methyl transferase SmtA, acetoacetyl-CoA hydrolase) (Supplementary file 1, Figure 4—figure supplement 1). Among the differentially produced proteins, 7 or 22 were exclusively detected in LDs isolated from strain Ax3 or Δsey1, respectively. Sey1 was identified on LDs isolated from strain Ax3, but as expected not on LDs isolated from Δsey1 mutant amoeba. Contrarily, the phospholipase PldA, the ER protein calnexin (CnxA) and the protein SCFD1/SLY1 implicated in ER to Golgi transport were identified only on LDs isolated from the Δsey1 strain (Supplementary file 1). The 50 most highly abundant proteins, which were not significantly different on LDs isolated from Ax3 or Δsey1 mutant amoeba, included perilipin (Plin, PlnA), which is involved in the formation and maintenance of LDs (Du et al., 2013), as well as – to our surprise – the small GTPase RanA (Du et al., 2013) and its effector RanBP1 (Supplementary file 1). Intriguingly, RanA is activated in L. pneumophila-infected cells and implicated in microtubule stabilization and LCV motility (Rothmeier et al., 2013; Swart et al., 2020c).
 
@@ -80,15 +104,43 @@ To assess the localization of Sey1 with regard to LDs, we used D. discoideum Ax3
 
 To assess the localization of RanA and RanBP1 to LDs, we used D. discoideum Ax3 producing either RanA-mCherry or RanBP1-GFP and GFP-Plin or mCherry-Plin and further stained LDs with LipidTOX Deep Red (Figure 4—figure supplement 1). Under these conditions, ectopically produced RanA-mCherry or RanBP1-GFP localized to membranous structures in the cell, including to Plin- and LipidTOX Deep Red-positive LDs. In summary, comparative proteomics of LDs isolated from D. discoideum Ax3 or Δsey1 revealed that the phospholipase PldA is present exclusively in the mutant amoeba, and Plin, RanA as well as RanBP1 are detected in LDs from both D. discoideum strains.
 
-## L. pneumophila LegG1 promotes Sey1-dependent LCV-LD interactions
+### L. pneumophila LegG1 promotes Sey1-dependent LCV-LD interactions
 
 Next, we sought to identify L. pneumophila effector proteins, which possibly determine LCV-LD interactions. The RCC1 repeat domain effector LegG1 activates the small GTPase RanA, which in its active, GTP-bound form interacts with RanBP1 and promotes microtubule stabilization (Rothmeier et al., 2013; Swart et al., 2020c). Since we found that LDs harbor RanA and RanBP1 (Supplementary file 1), we tested the hypothesis that LegG1 is implicated in LCV-LD dynamics. To this end, we infected palmitate-fed D. discoideum Ax3 or Δsey1 producing P4C-GFP and mCherry-Plin with mCerulean-producing L. pneumophila JR32 or ΔlegG1 and additionally stained LDs with LipidTOX Deep Red (Figure 4A, Videos 1–4). At 1 hr or 2 hr p.i., the overall LCV-LD contact time was lowered by ca. 50% upon infection with ΔlegG1 (compared to JR32) or in Δsey1 mutant D. discoideum (compared to strain Ax3) (Figure 4B). Intriguingly, the overall LCV-LD contact time was further significantly reduced upon infection of Δsey1 mutant amoeba with ΔlegG1 mutant bacteria (Figure 4B). Similar results were obtained by quantifying the retention time of individual LDs on LCVs (Figure 4B). The defects of the ΔlegG1 mutant strain regarding the duration of LCV-LD contacts were complemented by providing the legG1 gene on a plasmid (Figure 4C). In summary, these results indicate that the host large GTPase Sey1, as well as the L. pneumophila Ran GTPase activator LegG1 promote and additively affect the dynamics of LCV-LD interactions.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative fluorescence micrographs of D. discoideum Ax3 or Δsey1 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with L. pneumophila JR32 or ΔlegG1 producing mCerulean (pNP99). Infected cells were recorded for 60 s each at the times indicated. Examples are shown for contact between LDs and the LCV membrane (white arrowheads) or no contact (red arrowheads). Scale bars: 0.5 µm. (B) Quantification of (A), total contact time of LDs with the LCV (left) or retention time of single LDs with the LCV (right) recorded for 60 s at the indicated time points p.i. (nLCV-LD contacts > 30). Data represent means ± SD of three independent experiments (n.s., not significant; *p<0.05; ***p<0.001). (C) Quantification of total contact time of LDs with the LCV (left) or retention time of single LDs with the LCV (right) recorded for 60 s at 120 min p.i. (nLCV-LD contacts > 30). D. discoideum Ax3 or Δsey1 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with L. pneumophila JR32 or ΔlegG1 producing DsRed (pSW001), or ΔlegG1 producing DsRed and M45-LegG1 (pER005; ΔlegG1::legG1) were analysed. Data represent means ± SD of three independent experiments (n.s., not significant; *p<0.05; **p<0.01; ***p<0.001). (D) Representative fluorescence micrographs of D. discoideum Ax3 or Δsey1 producing GFP-tubulin A (pLS110) and P4C-mCherry (pWS032), fed overnight with 200 µM sodium palmitate and infected (MOI 10, 1 hr) with L. pneumophila JR32, ΔicmT or ΔlegG1 producing DsRed (pSW001), or ΔlegG1 producing DsRed and M45-LegG1 (pER005; ΔlegG1::legG1), fixed with PFA and stained with LipidTOX Deep Red. Scale bars: 2 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Qualitative analysis of LDs purification. Representative fluorescence micrographs of intact D. discoideum Ax3 producing mCherry-Plin (pHK102), cell homogenate or purified LDs. Scale bars: 10 µm. (B) Voronoi treemaps displaying abundance of proteins on isolated LDs from D. discoideum Ax3 and Δsey1. The treemaps were generated by taking into account proteins exclusively identified on LDs from Ax3 or Δsey1, or proteins showing significant difference in abundance between the two samples. Additionally, the 50 most abundant proteins in each sample were also included. The mosaic tiles are represented as (top) single proteins or (bottom) grouped in functional domains, which in turn are assembled according to general function (black frames). Individual iBAQ values of proteins on D. discoideum Ax3 LDs are represented by the area of the mosaic tiles (large tiles: more abundant, small tiles: less abundant). Comparison of abundances of proteins on Ax3 LDs with Δsey1 LDs is represented by the color gradient of the mosaic tiles (orange: more abundant on Ax3 LDs, grey: equally abundant on Ax3 and Δsey1 LDs, blue: more abundant on Δsey1 LDs). ND, not defined. Representative data for three independent experiments. (C) Representative fluorescence micrographs of intact or homogenized D. discoideum Ax3 or Δsey1 producing GFP-Sey1 (pBS001) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate and stained with LipidTOX Deep Red. Scale bars: intact cells (2 µm, inset: 1 µm), homogenate (0.5 µm). (D) Representative fluorescence micrographs of D. discoideum Ax3 producing RanA-mCherry (pLS221) and GFP-Plin (pHK101) (top) or RanBP1-GFP (pLS222) and mCherry-Plin (pHK102) (bottom), fed overnight with 200 µM sodium palmitate and stained with LipidTOX Deep Red. Scale bars: overview (2 µm), inset (1 µm).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Representative fluorescence micrographs of D. discoideum Ax3 or Δsey1 producing GFP-LegG1 (pLS117) and P4C-mCherry (pWS032), fed overnight with 200 µM sodium palmitate and infected (MOI 5, 2 hr) with mCerulean-producing L. pneumophila JR32 (pNP99), fixed with PFA and stained with LipidTOX Deep Red. Scale bars: overview (2 µm), inset (1 µm).
+
+![Video 1.](https://cdn.elifesciences.org/articles/85142/elife-85142-video1.mp4.jpg)
+
+**Video 1.:** Representative movie of D. discoideum Ax3 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with mCerulean-producing L. pneumophila JR32 (pNP99). Infected cells were recorded for 60 s each at the times indicated.
+
+![Video 2.](https://cdn.elifesciences.org/articles/85142/elife-85142-video2.mp4.jpg)
+
+**Video 2.:** Representative movie of D. discoideum Ax3 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with mCerulean-producing L. pneumophila ΔlegG1 (pNP99). Infected cells were recorded for 60 s each at the times indicated.
+
+![Video 3.](https://cdn.elifesciences.org/articles/85142/elife-85142-video3.mp4.jpg)
+
+**Video 3.:** Representative movie of D. discoideum Δsey1 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with mCerulean-producing L. pneumophila JR32 (pNP99). Infected cells were recorded for 60 s each at the times indicated.
+
+![Video 4.](https://cdn.elifesciences.org/articles/85142/elife-85142-video4.mp4.jpg)
+
+**Video 4.:** Representative movie of D. discoideum Δsey1 producing P4C-GFP (pWS034) and mCherry-Plin (pHK102), fed overnight with 200 µM sodium palmitate, stained with LipidTOX Deep Red and infected (MOI 5) with mCerulean-producing L. pneumophila ΔlegG1 (pNP99). Infected cells were recorded for 60 s each at the times indicated.
 
 To assess the subcellular localization of the L. pneumophila effector LegG1, we used D. discoideum Ax3 or Δsey1 producing GFP-LegG1 and P4C-mCherry, infected the amoeba with the L. pneumophila wild-type strain JR32 producing mCerulean, and further stained LDs with LipidTOX Deep Red (Figure 4—figure supplement 1). Ectopically produced GFP-LegG1 showed a punctate localization in the D. discoideum cytoplasm and also localized to LCVs in D. discoideum Δsey1 as well as in Ax3, as previously published for M45-tagged LegG1 in strain Ax3 (Rothmeier et al., 2013). GFP-LegG1 also appeared to accumulate around LipidTOX Deep Red-positive LDs, in agreement with the notion that LegG1 accumulates in the vicinity of LDs.
 
 The effector LegG1 promotes RanA activation, microtubule stabilization and LCV motility along microtubules (Rothmeier et al., 2013; Swart et al., 2020c). To test whether LegG1 affects microtubules in D. discoideum, we infected D. discoideum Ax3 or Δsey1 producing GFP-tubulin A and P4C-mCherry with DsRed-producing L. pneumophila JR32, ΔicmT, ΔlegG1 or ΔlegG1/pLegG1, and LDs in the infected amoeba were further stained with LipidTOX Deep Red (Figure 4D). Microtubule stability was impaired in ΔlegG1-infected D. discoideum Ax3, as published previously (Rothmeier et al., 2013), as well as in D. discoideum Δsey1. Accordingly, LegG1 promotes microtubule stability independently of Sey1. Microtubule stabilization was restored upon complementing the ΔlegG1 mutant strain with plasmid-borne LegG1. In summary, these results indicate that LegG1 promotes LCV-LD interactions through the stabilization of microtubules. Moreover, the results indicate that the bacterial effector LegG1 (targeting RanA GTPase) and the eukaryotic large GTPase Sey1 (affecting the ER and LDs) function in different pathways to promote LCV-LD interactions.
 
-## Sey1 and GTP promote LCV-LD interactions in vitro
+### Sey1 and GTP promote LCV-LD interactions in vitro
 
 Since Sey1 is a large fusion GTPase, we sought to test the nucleotide requirement of the LCV-LD interactions. To this end, we purified LCVs from D. discoideum Ax3 producing P4C-GFP infected with mCerulean-producing L. pneumophila JR32, mixed the pathogen vacuoles with purified LDs from palmitate-fed strain Ax3 producing mCherry-Plin and added 5 mM of different nucleotides (Figure 5A). Using this in vitro reconstitution approach, the addition of GTP resulted in a ca. 2.5-fold higher number of LDs per LCV as compared to the addition of GDP, Gpp(NH)p or GTPγS (Figure 5B).
 
@@ -98,7 +150,7 @@ Since Sey1 is a large fusion GTPase, we sought to test the nucleotide requiremen
 
 In an analogous approach, we tested whether Sey1 present in the purified LCV or LD fraction promotes the interaction between the two compartments. We mixed LCVs purified from D. discoideum Ax3 or Δsey1 producing P4C-GFP infected with mCerulean-producing L. pneumophila JR32 with purified LDs from palmitate-fed strain Ax3 or Δsey1 producing mCherry-Plin in presence of 5 mM GTP or GDP (Figure 5C). The mean number of LDs per LCV was highest for both compartments isolated from D. discoideum Ax3, followed by LDs purified from strain Ax3 and LCVs from Δsey1 mutant amoeba (Figure 5D). Contrarily, the LCV-LD interactions were impaired for Δsey1-derived LDs, suggesting that Sey1 regulates LD traits implicated in the interactions between the two compartments. The addition of GDP to the reconstitution assays yielded only background levels of LD/LCV ratios. In summary, in vitro reconstitution of the LCV-LD interactions using purified LCVs and LDs from either the D. discoideum Ax3 parental strain or Δsey1 mutant amoeba revealed that the large fusion GTPase Sey1 present in the LD fraction promotes the process in a GTP-dependent manner.
 
-## LDs shed perilipin upon LCV membrane crossing independently of Sey1 and GTP
+### LDs shed perilipin upon LCV membrane crossing independently of Sey1 and GTP
 
 During our analysis of LCV-LD interactions, we observed that intra-LCV LDs appeared to have lost their perilipin decoration. To analyze in more detail and quantify this observation, we used palmitate-fed D. discoideum Ax3 or Δsey1 producing P4C-GFP and mCherry-Plin. Upon staining the LDs with LipidTOX Deep Red and infection with mCerulean-producing L. pneumophila JR32, we quantified the portion of intra-LCV LDs without perilipin coat (Figure 6A). While ca. 90% of the LDs adhering to LCVs from the cytoplasmic side were decorated with perilipin, less than 10% of the LDs in the LCV lumen were decorated with perilipin, regardless of whether the amoeba produced Sey1 or not (Figure 6B). Accordingly, most LDs had shed the perilipin coat on their way from the host cell cytoplasm to the lumen of the pathogen vacuole, and this process did not involve the large fusion GTPase Sey1.
 
@@ -108,13 +160,25 @@ During our analysis of LCV-LD interactions, we observed that intra-LCV LDs appea
 
 To further analyze the shedding process, we mixed LCVs isolated from D. discoideum Ax3 producing P4C-GFP with LDs purified from palmitate-fed strain Ax3 producing mCherry-Plin in presence of 5 mM GTP or GDP (Figure 6C). Again, ca. 90% of the LDs adhering externally to LCVs were decorated with perilipin, and less than 10% of the LDs in the LCV lumen were decorated with perilipin, regardless of whether GTP or GDP was added (Figure 6D). In summary, these results indicate that upon LCV membrane crossing, LDs shed their perilipin coat in a process that does not involve Sey1 or GTP.
 
-## Sey1 and L. pneumophila FadL promote intracellular replication and 13C16-palmitate catabolism
+### Sey1 and L. pneumophila FadL promote intracellular replication and 13C16-palmitate catabolism
 
 L. pneumophila catabolizes palmitate upon growth in broth (Häuslein et al., 2017), but it has not been analyzed whether and how the bacteria might use fatty acids during intracellular growth. Based on the observation that LDs fuse with and cross the LCV membrane concomitantly shedding their perilipin coat, LDs might deliver fatty acids to intra-vacuolar L. pneumophila. Moreover, fatty acids might be taken up by L. pneumophila through the putative outer membrane fatty acid transporter FadL. The L. pneumophila Philadelphia-1 genome comprises one gene that encodes a FadL homolog, lpg1810. The amino acid sequence of Lpg1810 is 24% identical to the sequence of E. coli FadL, and the highly conserved NPA (asparagine-proline-alanine) motif is also present (amino acids 73–75) (Figure 7—figure supplement 1). The lpg1810 gene and its genomic location are conserved among L. pneumophila and L. longbeachae strains, and the gene does not seem to be part of an operon. Genes encoding homologs of the acyl-CoA synthetase FadD, and the β-oxidation enzymes FadA, FadB, and FadE are present in these Legionella genomes, but no regulatory protein FadR homolog was identified.
 
 To assess the role of fadL for the growth of L. pneumophila, we constructed a ΔfadL deletion mutant strain by double homologous recombination. The ΔfadL mutant strain grew like the parental strain JR32 in AYE (ACES yeast extract) broth and MDM (minimal defined medium) (Figure 7—figure supplement 2), and up to 200 µM palmitate did not affect the growth of L. pneumophila JR32 or ΔfadL in AYE broth (Figure 7—figure supplement 2).
 
 While the lack of fadL did not affect growth of L. pneumophila in medium, the ΔfadL mutant strain was impaired for intracellular growth in D. discoideum, and the growth defect was complemented by inserting the fadL gene back into the L. pneumophila genome (Figure 7A). In agreement with a role of fadL for intracellular growth of L. pneumophila, a transcriptional PfadL-gfp reporter construct was expressed in D. discoideum throughout infection (Figure 7—figure supplement 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig7-v2.jpg)
+
+**Figure 7.:** (A) D. discoideum Ax3 amoeba were infected (MOI 1) with L. pneumophila JR32, ΔicmT, ΔfadL or ΔfadL::fadL (chromosomal integration of fadL in ΔfadL), and intracellular bacterial replication was assessed by colony forming units (CFU) for 6 days. Data represent means ± SD of three independent experiments in technical triplicates (***p<0.001). (B) D. discoideum Ax3 or ∆sey1 were left untreated (empty symbols) or fed overnight with 200 µM sodium palmitate (filled symbols) and infected (MOI 1) with GFP-producing L. pneumophila JR32 or ΔfadL (pNT28) for 6 days. Intracellular bacterial replication was assessed by quantification of relative fluorescence units (RFU). Data represent means ± SD of three independent experiments in technical hextuplicates (**p<0.01; ***p<0.001). (C) D. discoideum Ax3 or Δsey1 producing calnexin-GFP (CnxA-GFP, pAW016) were infected (MOI 50, 1 hr) with mCerulean-producing L. pneumophila JR32 or ΔfadL (pNP99) and washed to remove extracellular bacteria. At 5 hr p.i., 200 µM [U-13C16]palmitate was added to the infected amoeba for 10 hr. The infected cells were lysed and centrifuged to separate bacteria from cell debris. 13C-excess (mol%) in key metabolites of the L. pneumophila fraction (‘fraction 2’) was analyzed by GC/tandem MS. Data show means ± SD of technical triplicates (*p<0.05; ***p<0.001) and are representative for two independent experiments.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** FadL homologues of E. coli (E. co.), L. pneumophila (L. pn.), V. cholerae (V. ch.), and P. aeruginosa (P. ae.) were aligned using the ClustalW algorithm available in the Clustal Omega web browser. The symbols underneath the alignment indicate the degree of conservation: identical residues (*), highly similar residues (:), similar residues (.). The red box denotes the strictly conserved NPA motif in the “hatch” domain (amino acids 73–75 in L. pneumophila FadL, Lpg1810).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Growth of L. pneumophila JR32 or ΔfadL at 37 °C (A) in AYE medium (black) or MDM (violet), or (B) in AYE medium supplemented with the palmitate concentrations indicated. The OD600 was monitored for 48 hr in time intervals of 30 min using a microplate reader. Data represent means ± SD of three independent experiments. (C) Confocal microscopy of D. discoideum infected (MOI 5) for the time indicated with L. pneumophila JR32 harboring PfadL-gfp (pPS003). The cells were fixed in 4% PFA, permeabilized with ice-cold methanol, and stained with 1 µg/ml DAPI. Images shown are representative of two independent experiments. Scale bars: 5 μm. (D) Quantification of GFP-positive L. pneumophila JR32 (pPS003) growing in D. discoideum. At the time p.i. indicated, host cells were lysed with 0.1% Triton X-100, fixed in 4% PFA, stained with 1 µg/ml DAPI and analyzed by flow cytometry and the software FlowJo. Plotted are means and individual data points of two independent experiments.
 
 Next, we tested the effects of overnight palmitate feeding of D. discoideum Ax3 or Δsey1 on intracellular growth of L. pneumophila JR32 or ΔfadL. Feeding with palmitate augmented the growth of L. pneumophila JR32 in D. discoideum Ax3 but did not significantly affect the growth of the ΔfadL strain in either D. discoideum Ax3 or Δsey1 (Figure 7B). These results revealed that the host large fusion GTPase Sey1 as well as the putative L. pneumophila fatty acid transporter FadL are required for intracellular growth promotion by palmitate and presumably the catabolism of this carbon and energy source.
 
@@ -126,7 +190,7 @@ In this study, we assessed the role of LDs, Sey1 and FadL for intracellular grow
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/85142/elife-85142-fig8-v2.jpg)
 
-**Figure 8.:** L. pneumophila through lipid droplets.The large fusion GTPase Sey1 and GTP as well as the L. pneumophila RCC1 repeat effector LegG1 promote the recruitment of host LDs to LCVs. LegG1 activates the small GTPase RanA, leading to accumulation of RanBP1 and microtubule stabilization. Upon intimate contact of LDs with LCVs, perilipin is shed, and LDs cross the membrane to reach the LCV lumen, where LD constituents (e.g. triacylglycerols) are likely hydrolyzed, and free fatty acids are taken up by L. pneumophila. Palmitate is transported by FadL inside the bacteria and metabolized to acetyl-CoA, which is further aerobically catabolized in the tricarboxylic acid cycle to CO2 and/or anabolized to the storage compound polyhydroxybutyrate (PHB). Amino acids are transported by the host transporter SLC1A5 and the L. pneumophila transporters PhtA/PhtJ. Additional trans-membrane transporters for lipids (long-chain fatty acids, phospholipids), sugars (glucose, inositol), alcohols (glycerol), polyamines, and amino acids are likely present in the plasma membrane, LCV membrane and L. pneumophila membrane. LD, lipid droplet; LCV, Legionella-containing vacuole; PHB, polyhydroxybutyrate; Plin, perilipin; RanBP1, Ran-binding protein 1.
+**Figure 8.:** The large fusion GTPase Sey1 and GTP as well as the L. pneumophila RCC1 repeat effector LegG1 promote the recruitment of host LDs to LCVs. LegG1 activates the small GTPase RanA, leading to accumulation of RanBP1 and microtubule stabilization. Upon intimate contact of LDs with LCVs, perilipin is shed, and LDs cross the membrane to reach the LCV lumen, where LD constituents (e.g. triacylglycerols) are likely hydrolyzed, and free fatty acids are taken up by L. pneumophila. Palmitate is transported by FadL inside the bacteria and metabolized to acetyl-CoA, which is further aerobically catabolized in the tricarboxylic acid cycle to CO2 and/or anabolized to the storage compound polyhydroxybutyrate (PHB). Amino acids are transported by the host transporter SLC1A5 and the L. pneumophila transporters PhtA/PhtJ. Additional trans-membrane transporters for lipids (long-chain fatty acids, phospholipids), sugars (glucose, inositol), alcohols (glycerol), polyamines, and amino acids are likely present in the plasma membrane, LCV membrane and L. pneumophila membrane. LD, lipid droplet; LCV, Legionella-containing vacuole; PHB, polyhydroxybutyrate; Plin, perilipin; RanBP1, Ran-binding protein 1.
 
 The LCV-LD interactions are controlled by the L. pneumophila Icm/Dot T4SS (Figure 3), and the Icm/Dot substrate LegG1 (Figure 4). LegG1 belongs to a family of RCC1 repeat domain-containing L. pneumophila effectors, which activate the small GTPase RanA at different sites in the cell (LCV, plasma membrane) and consequently stabilize non-centrosomal microtubules (Rothmeier et al., 2013; Swart et al., 2020a; Swart et al., 2020c). Intriguingly, RanA as well as the Ran-binding protein RanBP1 was also identified on LDs (Supplementary file 1, Figure 4—figure supplement 1). Since RanBP1 only binds to activated, GTP-bound RanA, the small GTPase is likely activated on LDs. Accordingly, LegG1 might not only activate RanA on LCVs (Rothmeier et al., 2013; Swart et al., 2020a; Swart et al., 2020c) but also on LDs, leading to a further stabilization of microtubules, along which the LCV-LD interactions occur. In agreement with this notion, GFP-LegG1 shows a punctate localization in D. discoideum and appears to accumulate in the vicinity of LDs (Figure 4—figure supplement 2).
 
@@ -146,7 +210,101 @@ The LD protein perilipin was shed upon uptake of LDs into LCVs (Figure 6). Peril
 
 ## Materials and methods
 
-## Bacteria, cells, and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Legionella pneumophila Philadelphia-1)</td>
+      <td>lpg1810/fadL</td>
+      <td>GenBank</td>
+      <td>AE017354.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>ER01 (ΔlegG1)</td>
+      <td>Rothmeier et al., 2013</td>
+      <td></td>
+      <td>JR32 legG1::KanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>GS3011 (ΔicmT)</td>
+      <td>Segal and Shuman, 1998</td>
+      <td></td>
+      <td>JR32 icmT3011::KanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>JR32</td>
+      <td>Sadosky et al., 1993</td>
+      <td></td>
+      <td>Derivative of wild-type Legionella pneumophila strain Philadelphia-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>PS01 (ΔfadL)</td>
+      <td>This study</td>
+      <td></td>
+      <td>JR32 fadL::KanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TOP10</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Dictyostelium discoideum)</td>
+      <td>Ax3</td>
+      <td>Loovers et al., 2007</td>
+      <td></td>
+      <td>Parental strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Dictyostelium discoideum)</td>
+      <td>Δsey1</td>
+      <td>Hüsler et al., 2021</td>
+      <td></td>
+      <td>Ax3, insertion in gene DDB_G0279823, BlsR</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SidC (rabbit polyclonal)</td>
+      <td>Weber et al., 2006</td>
+      <td></td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG MACS micro-beads (goat polyclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-048-602</td>
+      <td>20 µl magnetic bead slurry per 0.5 ml concentrated cell homogenate</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LipidTOX Deep Red</td>
+      <td>Invitrogen, Thermo Fisher Scientific</td>
+      <td>Cat# H34477</td>
+      <td>1:200 – 1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacteria, cells, and reagents
 
 Bacterial strains and D. discoideum strains used are listed in Supplementary file 2. L. pneumophila strains were grown for 3 days on charcoal yeast extract (CYE) agar plates, buffered with N-(2-acetamido)–2-aminoethane sulfonic acid (ACES) at 37 °C. Liquid cultures in ACES yeast extract (AYE) medium were inoculated at an OD600 of 0.1 and grown at 37 °C for 21 hr to an early stationary phase (2×109 bacteria/ml). Chloramphenicol (Cam; 5 μg/ml) was added when required.
 
@@ -158,7 +316,7 @@ D. discoideum strains were grown at 23 °C in HL-5 medium (ForMedium). Cells wer
 
 LDs were stained with LipidTOX Deep Red (Invitrogen, Thermo Fisher Scientific), a neutral dye that has a high affinity for neutral LDs.
 
-## Molecular cloning
+### Molecular cloning
 
 The plasmids used and generated in this study are listed in Supplementary file 2. Cloning was performed according to standard protocols and plasmids were isolated using the NucleoSpin Plasmid kit (Macherey-Nagel). DNA fragments were amplified using Phusion High Fidelity DNA polymerase (NEB) and the oligonucleotides listed in Supplementary file 3. FastDigest restriction enzymes (Thermo-Fisher) were used for plasmid digestion and Gibson assembly was performed using the NEBuilder HiFi DNA assembly kit (NEB). All constructs were verified by DNA sequencing.
 
@@ -166,25 +324,25 @@ To construct plasmid pLS187, the gene region of ranBP1 (PranBP1) was amplified f
 
 To construct the GFP reporter plasmid pPS003, the promoter region of fadL (PfadL) was amplified from genomic DNA of L. pneumophila using the primers oPS013 and oPS015. The PCR product was purified using the NucleoSpin Gel and PCR Clean-up kit (Macherey-Nagel) and cloned into the plasmid pCM009 (Schell et al., 2016), which was previously digested with SacI and XbaI to remove PflaA. Thus, PflaA-gfp was replaced by PfadL-gfp in the final construct.
 
-## Construction of the L. pneumophila ΔfadL mutant
+### Construction of the L. pneumophila ΔfadL mutant
 
 The ΔfadL mutant was generated by double homologous recombination as described (Tiaden et al., 2007), replacing the fadL gene by a kanamycin (Kan) resistance cassette. The primers oPS001 and oPS002 were used to amplify from L. pneumophila genomic DNA the upstream flanking region of fadL, oPS005 and oPS006 to amplify the downstream flanking region of fadL (939 bp each). The Kan resistance cassette was amplified using the primers oPS003 and oPS004, and the plasmid pUC4K (Amersham) as a template. The three amplified fragments were cloned into BamHI-digested pUC19 in a 3-way ligation and amplified in one piece using the primers oPS010 and oPS011. To yield the allelic exchange vector pPS002, the amplified sequence was cloned into the BamHI-digested suicide vector pLAW344 (Wiater et al., 1994), which allows counter-selection with the sacB gene. L. pneumophila JR32 was transformed with pPS002 by electroporation and grown on CYE plates supplemented with 5 µg/ml Cam. Individual clones were picked, grown in AYE medium overnight and plated on CYE plates supplemented with 20 µg/ml Kan and 20 mg/ml sucrose, or 5 µg/ml Cam. After incubation at 37 °C for 2 days, clones growing on the CYE/Kan/sucrose plate were picked and purified by dilution streaking. This selection process was repeated until growth on CYE/Cam plates was no longer observed. Double-cross-over events and thus correct insertion of the Kan resistance cassette in the genome of the deletion mutant were confirmed by PCR and sequencing.
 
 For complementation of the intracellular replication phenotype of ΔfadL, the fadL gene was re-introduced into the genome of the ΔfadL mutant strain by co-integration of the suicide plasmid pPS013. This plasmid was constructed by amplification of fadL together with its 3’ and 5’ flanking regions from L. pneumophila genomic DNA using the primers oPS011 and oPS045 and cloning into BamHI-digested pPS002. Transformants were plated on CYE plates supplemented with 5 µg/ml Cam to select for uptake and integration of pPS013.
 
-## Visualization and quantification of fadL expression
+### Visualization and quantification of fadL expression
 
 To assess fadL expression in intracellular L. pneumophila, D. discoideum were infected with L. pneumophila JR32 harboring pPS003. Amoeba were counted in a Neubauer improved counting chamber, 0.1 mm depth (Marienfeld-Superior) and 1×106 D. discoideum per well were seeded one day before infection into 6-well plates in 2 ml HL-5. L. pneumophila overnight cultures were prepared as described above and grown on a rotating wheel at 37 °C for 21–22 hr to early stationary phase (OD600 ca. 5.0, ~2 × 109 bacteria/ml). The day of infection, L. pneumophila cultures were checked for motility and filamentation, and OD600 was measured to calculate the bacterial concentration. D. discoideum cells were infected (MOI 5), centrifuged (10 min, 450 g, RT), and incubated at 25 °C. After 1.5–2 hr, D. discoideum cells were washed four times with HL-5, and incubated further at 25 °C. For the 30 min p.i. time point, amoeba were washed after 30 min and immediately processed further. Infected amoeba were collected into 2 ml Eppendorf tubes 30 min, 6 hr, 24 hr, 32 hr, or 48 hr p.i., and centrifuged (5 min, 2000 g, RT) to remove the medium. For microscopy, the cells were fixed in 4% PFA (1 hr, RT), washed with DPBS, and permeabilized with ice-cold methanol for 10 min. Subsequently, cells were stained with 1 µg/ml DAPI (1 hr, RT), washed twice with DPBS, resuspended in 30 µl DPBS, and embedded in 0.5% agarose in an 18-well ibidi dish.
 
 For flow cytometry, cells were lysed in lysis buffer (150 mM NaCl, 0.1% Triton X-100) for 15 min at RT and centrifuged (5 min, 2000 g, RT). Supernatant was removed and isolated intracellular bacteria were fixed in 4% PFA (1 hr, RT). The samples were stained with 1 µg/ml DAPI (1 hr, RT), washed twice with DPBS, and resuspended in 500 µl DPBS.
 
-## Intracellular L. pneumophila replication
+### Intracellular L. pneumophila replication
 
 Intracellular replication of L. pneumophila JR32, ΔicmT and ΔfadL in D. discoideum amoeba was analyzed by colony-forming units (CFU) as well as by increase in relative fluorescence units (RFU). To determine CFU, D. discoideum Ax3 or Δsey1 amoeba were seeded at a density of 1×105 cells/ml in cell culture-treated 96-wells plates (VWR) and cultivated at 23 °C in HL-5 medium. Afterwards, the amoeba were infected (MOI 1) with early stationary phase L. pneumophila JR32, ΔicmT, ΔfadL, or ΔfadL::fadL (chromosomal integration of fadL in ΔfadL) diluted in MB medium (Solomon and Isberg, 2000), centrifuged (450 g, 10  min, RT) and incubated at 25 °C for the time indicated (96-wells plate was kept moist by addition of ddH2O in surrounding wells). The cells were lysed with 0.8% saponin (Sigma-Aldrich) for 10 min at RT, and dilutions were plated on CYE/Cam agar plates and incubated at 37 °C for 3 days. CFU were assessed every 2 days using an automated colony counter (CounterMat Flash 4000, IUL Instruments, CounterMat software), and the number of CFU (per ml) was calculated.
 
 To determine increase in fluorescence derived from intracellular replication of GFP-producing L. pneumophila, D. discoideum Ax3 or Δsey1 were seeded at a density of 1×105 cells/ml in cell-culture-treated 96-wells plates (VWR) and cultivated overnight at 23 °C in HL-5 medium supplemented with 200 µM sodium palmitate. A range of different concentrations of sodium palmitate (100–800 µM) were previously tested, and 200 µM sodium palmitate appeared to be the most effective in increasing intracellular replication of L. pneumophila (Figure 1A). The cells were infected (MOI 1) with early stationary phase GFP-producing L. pneumophila JR32 or ΔfadL diluted in MB medium, centrifuged (450 g, 10  min, RT) and incubated for 1 hr at 25 °C. Afterwards, the infected amoeba were incubated at 25 °C for the time indicated (96-wells plate was kept moist by addition of ddH2O in surrounding wells). Increase in GFP fluorescence was assessed every 2 days using a microtiter plate reader (Synergy H1, Biotek).
 
-## In vitro reconstitution assays
+### In vitro reconstitution assays
 
 LCVs from D. discoideum Ax3 and Δsey1 mutant amoeba were purified as previously described (Urwyler et al., 2010). Briefly, D. discoideum Ax3 or Δsey1 producing P4C-GFP (pWS034) were seeded in three T75 flasks per sample one day prior to experiment to reach 80% confluency. The amoeba were infected (MOI 50, 1 hr) with L. pneumophila JR32 producing mCerulean (pNP99) grown to stationary phase (21 hr liquid culture). Subsequently, the cells were washed with SorC buffer (2 mM Na2HPO4, 15 mM KH2PO4, 50 µM CaCl2×2 H2O, pH 6.0) and scraped in homogenization buffer (20 mM HEPES, 250 mM sucrose, 0.5 mM EGTA, pH 7.2) containing a protease inhibitor cocktail tablet (Roche) (Derré and Isberg, 2004). Cells were homogenized using a ball homogenizer (Isobiotec) with an exclusion size of 8 µm and incubated with an anti-SidC antibody followed by a secondary goat anti-rabbit antibody coupled to magnetic beads. The LCVs were separated using magnetic columns and further purified by density gradient centrifugation as described (Hoffmann et al., 2013).
 
@@ -192,7 +350,7 @@ LDs from D. discoideum Ax3 and Δsey1 mutant amoeba were purified using an updat
 
 Isolated LDs and LCVs were combined in vitro to reconstitute and biochemically analyze LCV-LD interactions. Isolated LCVs (300 µl from gradient) were diluted with 1 ml homogenization buffer with protease inhibitors, added on top of sterile poly-L-lysine (Sigma) coated coverslips in a 24-well plate and centrifuged at 600 g for 10 min at 4 °C. Supernatant was aspirated, and isolated LDs (100 µl from gradient), together with 100 µl STKM with protease inhibitors, 5 mM MgCl2 and 5 mM GTP/GDP/Gpp(NH)p/GTPγS (Sigma) were appropriately mixed and added on top of the LCV-coated coverslips. The reconstitution plate was then centrifuged (600 g, 10 min, 4 °C) and incubated for 1 hr at 30 °C. Following incubation and supernatant aspiration, the samples were fixed with 2% PFA for 1 hr at RT, washed twice with SorC, stained with LipidTOX Deep Red (1:200 in SorC; Invitrogen, Thermo Fisher Scientific) for 30 min at RT in the dark, and finally mounted on microscopy slides.
 
-## Confocal microscopy of bacteria, infected cells, and LCV-LD interactions in vitro
+### Confocal microscopy of bacteria, infected cells, and LCV-LD interactions in vitro
 
 For infection assays for confocal microscopy, D. discoideum strains producing the desired fluorescent probes were harvested from approximately 80% confluent cultures, seeded at 1×105 cells/ml in 6-well plates (Corning) or 8-well µ-slides (for live-cell experiments) (ibidi) and cultivated overnight at 23 °C in HL-5 medium supplemented with 200 µM sodium palmitate. Infections (MOI 5) were performed with early stationary phase cultures of L. pneumophila JR32, ΔicmT or ΔlegG1 mutant strains harboring pNP99 (mCerulean), diluted in HL-5, and synchronized by centrifugation (450 g, 10 min, RT) (Rothmeier et al., 2013). Subsequently, infected cells were washed three times with HL-5 and incubated at 25 °C for the time indicated. Finally, infected amoeba were recovered from the six-well plates, fixed with 4% PFA for 30 min at RT, stained with LipidTOX Deep Red (1:1000 in SorC; Thermo-Fisher) for 30 min in the dark, transferred to eight-well µ-slides and embedded under a layer of PBS/0.5% agarose before imaging. For live-cell experiments, amoeba were stained prior to infection with LipidTOX Deep Red (1:200 in LoFlo medium) for 30 min in the dark and were directly imaged in LoFlo (ForMedium) in the eight-well µ-slides after washing.
 
@@ -200,7 +358,7 @@ Confocal microscopy of bacteria grown in liquid culture, fixed or live infected 
 
 For image processing, all images and movies were deconvolved with Huygens professional version 19.10 (Scientific Volume Imaging, The Netherlands, http://svi.nl) using the CMLE algorithm with 40 iterations and 0.05 quality threshold. Signal to noise ratios were estimated from the photons counted for a given image. Single images, Z-stacks and movies were finalized and exported with Imaris 9.5.0 software (Bitplane, Switzerland) and analyzed using ImageJ software (https://imagej.nih.gov/ij/). An LCV-LD ‘contact’ was defined as the visual association of the signal on the LCV-limiting membrane (P4C-GFP, AmtA-GFP) with the LD mCherry-Plin signal, and only Plin/LipidTOX Deep Red-positive LDs were considered for LCV-LD contacts.
 
-## Electron microscopy
+### Electron microscopy
 
 Infection assays for electron microscopy were performed with D. discoideum Ax3 grown directly on grids as previously described (Medeiros et al., 2018). Briefly, the amoeba (5×105 per well) were seeded onto EM gold finder grids (Au NH2 R2/2, Quantifoil) and incubated for 1 hr, to allow the cells to attach to the grids. Cells were infected at an MOI of 100 and were vitrified at different time points (30 min and 3 hr p.i.).
 
@@ -210,13 +368,13 @@ Cryo-focused ion beam (cryoFIB) milling was used to prepare samples of plunge-fr
 
 Frozen grids were examined by cryoEM and cryoET (Weiss et al., 2017). Data were collected on a Titan Krios TEM (Thermo-Fisher) equipped with a Quantum LS imaging filter and K2 Summit (Gatan). The microscope was operated at 300 kV, and the imaging filter was set to a slit width of 20 eV. The pixel size at the specimen level ranged from 3.45 to 5.42 Å. Tilt series of the lamellae were recorded from –60° to +60° with 2° increments and –8 µm defocus. The total dose of a tilt series was 75 e-/Å2 (intracellular L. pneumophila). Tilt series and 2D projection images were acquired automatically using SerialEM (Mastronarde, 2005). Three-dimensional reconstructions and segmentations were generated using the IMOD program suite (Mastronarde, 2005).
 
-## Flow cytometry
+### Flow cytometry
 
 Intracellular bacteria recovered from infected amoeba or bacterial strains grown in liquid culture were analyzed with an LSRFortessa II flow cytometer (BD Biosciences). Gating was performed as follows: Bacterial cells were identified by forward scatter (FSC) versus side scatter (SSC) gating. The threshold for FSC and SSC was set to 200, and 10,000 events were acquired per sample. The bacteria were further examined for their DAPI (450 nm) and GFP (488 nm) fluorescence. DAPI-stained JR32 and JR32 harboring pNT28 for constitutive GFP production were used as references for gating of the GFP-positive subpopulation in the samples. Thus, the percentage of GFP-positive bacteria was calculated. Data processing was performed using the FlowJo software.
 
 To assess cell viability after sodium palmitate treatment, the Zombie Aqua fixable viability kit (BioLegend) was used. D. discoideum cells were grown and treated with sodium palmitate overnight (final concentration 100, 200, 400, and 800 µM). Cells treated for 1 hr with 70% sterile-filtered ethanol (EtOH) served as positive control for cell death. The cells were then harvested in ice-cold SorC and stained for 30 min in the dark with 50 µl Zombie Aqua dye diluted 1:500 in SorC. Cells were washed once with HL-5, centrifuged, washed once with SorC, centrifuged, and fixed with 4% PFA for 30 min at RT. After centrifugation, the cells were resuspended in 500 µl SorC. Subsequently, cells were subjected to flow cytometry analysis (BD FACS Canto II). Gates were set according to FSC/SSC properties, and 10,000 events were collected for each sample.
 
-## Comparative proteomics of purified LDs
+### Comparative proteomics of purified LDs
 
 StrataClean beads for protein precipitation were incubated in 37% HCl for 6 hr at 100 °C, centrifuged (3500 g, 5 min, RT) and washed twice to remove residual HCl. LDs were harvested from palmitate-fed mCherry-Plin-producing D. discoideum Ax3 or Δsey1 mutant amoeba, purified by sucrose gradient centrifugation (Figure 4—figure supplement 1). To extract LD-bound proteins, LDs purified by sucrose density gradient centrifugation were lysed by freeze/thawing and by sonication (50% power, 3 s pulse for 2 min, 4 °C). Extracted LDs protein sample solutions were then incubated with StrataClean beads in an over-head shaker for 2 hr at 4 °C. Following incubation, the beads were centrifuged (10,000 g, 45 min, 4 °C), and the resulting pellet was washed once in distilled water (16,229 g, 10 min, 4 °C). After supernatant removal, the bead pellet was dried in a vacuum centrifuge for 30 min and stored at 4 °C.
 
@@ -228,7 +386,7 @@ Results were filtered for proteins quantified in at least two out of three biolo
 
 We then functionally mapped these proteins manually according to dictyBase classification, resulting in 135 functionally assigned and 57 unassigned proteins, and generated Voronoi treemaps (Paver v2.1, Decodon) to visualize functional clusters and abundance differences between LDs from D. discoideum Ax3 and Δsey1. Voronoi diagrams were chosen as the output, because this visualization allows a functional clustering of proteins and at the same time is more intuitive by correlating protein abundancies to the sizes of the mosaic tiles in the plot. Individual iBAQ values of proteins on D. discoideum Ax3 LDs were represented by the area of the mosaic tiles (large tiles: more abundant, small tiles: less abundant). Comparison of protein abundance on Ax3 LDs with abundance of proteins on Δsey1 LDs is represented by the color gradient of the mosaic tiles (orange: more abundant on Ax3 LDs, grey: equally abundant on Ax3 and Δsey1 LDs, blue: more abundant on Δsey1 LDs).
 
-## Isotopologue profiling
+### Isotopologue profiling
 
 To label L. pneumophila intracellularly growing in D. discoideum with 13C-substrates, we used previously published protocols with minor modifications (Heuner and Eisenreich, 2013; Heuner et al., 2019). In brief, D. discoideum Ax3 or Δsey1 mutant producing calnexin-GFP (CnxA-GFP) were cultivated in eight T75 cell culture flasks per bacterial strain. After the cells reached confluency (~2×107 cells per flask), the amoeba were infected with L. pneumophila JR32 or ΔfadL (MOI 50), by adding bacteria grown in AYE to an OD600 of 5 at appropriate dilutions. The flasks were then centrifuged to synchronize infection (500 g, 10 min) and incubated for 1 hr at 25 °C. To remove extracellular bacteria, cells were washed once with 10 ml SorC buffer (RT), overlaid newly with 10 ml SorC buffer and further incubated at 25 °C. At 5 hr p.i., 200 µM [U-13C16]palmitate was added to the flasks, and the cells were further incubated for 10 hr.
 
@@ -238,6 +396,6 @@ For isotopologue profiling of amino acids and polyhydroxybutyrate (PHB), bacteri
 
 GC/MS-analysis was performed with a QP2010 Plus gas chromatograph/mass spectrometer (Shimadzu) equipped with a fused silica capillary column (Equity TM-5; 30 m×0.25 mm, 0.25 µm film thickness; SUPELCO) and a quadrupole detector working with electron impact ionization at 70 eV. A volume of 0.1–6 µl of the sample was injected in 1:5 split mode at an interface temperature of 260 °C and a helium inlet pressure of 70 kPa. With a sampling rate of 0.5 s, selected ion monitoring was used. Data was collected using LabSolution software (Shimadzu). All samples were measured three times (technical replicates). 13C-excess values and isotopologue compositions were calculated as described before (Eylert et al., 2008) including: (i) determination of the spectrum of unlabeled derivatized metabolites, (ii) determination of mass isotopologue distributions of labeled metabolites and (iii) correction of 13C-incorporation concerning the heavy isotopologue contributions due to the natural abundances in the derivatized metabolites. For analysis of amino acids, the column was kept at 150 °C for 3 min and then developed with a temperature gradient of 7 °C min–1 to a final temperature of 280 °C that was held for 3 min. The amino acids alanine (6.7 min), aspartate (15.4 min), glutamate (16.8 min) were detected, and isotopologue calculations were performed with m/z [M-57]+ or m/z [M-85]+. For the detection of 3-HB derived from PHB, the column was heated at 70 °C for 3 min and then developed with a first temperature gradient of 10 °C min–1 to a final temperature of 150 °C. This was followed by a second temperature gradient of 50 °C min–1 to a final temperature of 280 °C, which was held for 3 min. The TMS-derivative of 3-HB, was detected at a retention time of 9.1 min, and isotopologue calculations were performed with m/z [M-15]+.
 
-## Statistical analysis
+### Statistical analysis
 
 If not stated otherwise, data analysis and statistics were performed in GraphPad Prism (Version 5.01, GraphPad Software Inc) using two-way ANOVA with Bonferroni post-test. Probability values of less than 0.05, 0.01, and 0.001 were used to show statistically significant differences and are represented with *, **, or ***. The value of ‘n’ represents the number of analyzed cells, LCVs, LDs or video frames per condition. For comparative proteomics, LFQ values were used for statistical testing of differentially abundant proteins. Empirical Bayes moderated t-tests were applied, as implemented in the R/Bioconductor limma package.

@@ -11,17 +11,17 @@
 
 ### Affiliations
 
-1. https://ror.org/018906e22 Department of Child and Adolescent Psychiatry, Erasmus MC University Medical Center Rotterdam-Sophia Children’s Hospital Rotterdam Netherlands
-2. https://ror.org/018906e22 The Generation R Study Group, Erasmus MC University Medical Center Rotterdam Rotterdam Netherlands
+1. Department of Child and Adolescent Psychiatry, Erasmus MC University Medical Center Rotterdam-Sophia Children’s Hospital Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))
+2. The Generation R Study Group, Erasmus MC University Medical Center Rotterdam Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))
 3. Department of Social and Behavioral Sciences, Harvard TH Chan School of Public Health Boston United States
-4. https://ror.org/018906e22 Department of Clinical Genetics, Erasmus MC Rotterdam Netherlands
-5. https://ror.org/018906e22 Department of Epidemiology, Erasmus MC Rotterdam Netherlands
+4. Department of Clinical Genetics, Erasmus MC Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))
+5. Department of Epidemiology, Erasmus MC Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))
 
 † Corresponding author
 
 ## Abstract
 
-Associations between attention-deficit/hyperactivity disorder (ADHD) and brain morphology have been reported, although with several inconsistencies. These may partly stem from confounding bias, which could distort associations and limit generalizability. We examined how associations between brain morphology and ADHD symptoms change with adjustments for potential confounders typically overlooked in the literature (aim 1), and for the intelligence quotient (IQ) and head motion, which are generally corrected for but play ambiguous roles (aim 2). Participants were 10-year-old children from the Adolescent Brain Cognitive Development ( N = 7722) and Generation R ( N = 2531) Studies. Cortical area, volume, and thickness were measured with MRI and ADHD symptoms with the Child Behavior Checklist. Surface-based cross-sectional analyses were run. ADHD symptoms related to widespread cortical regions when solely adjusting for demographic factors. Additional adjustments for socioeconomic and maternal behavioral confounders (aim 1) generally attenuated associations, as cluster sizes halved and effect sizes substantially reduced. Cluster sizes further changed when including IQ and head motion (aim 2), however, we argue that adjustments might have introduced bias. Careful confounder selection and control can help identify more robust and specific regions of associations for ADHD symptoms, across two cohorts. We provided guidance to minimizing confounding bias in psychiatric neuroimaging. Authors are supported by an NWO-VICI grant (NWO-ZonMW: 016.VICI.170.200 to HT) for HT, LDA, SL, and the Sophia Foundation S18-20, and Erasmus University and Erasmus MC Fellowship for RLM.
+Background:Associations between attention-deficit/hyperactivity disorder (ADHD) and brain morphology have been reported, although with several inconsistencies. These may partly stem from confounding bias, which could distort associations and limit generalizability. We examined how associations between brain morphology and ADHD symptoms change with adjustments for potential confounders typically overlooked in the literature (aim 1), and for the intelligence quotient (IQ) and head motion, which are generally corrected for but play ambiguous roles (aim 2).Methods:Participants were 10-year-old children from the Adolescent Brain Cognitive Development (N = 7722) and Generation R (N = 2531) Studies. Cortical area, volume, and thickness were measured with MRI and ADHD symptoms with the Child Behavior Checklist. Surface-based cross-sectional analyses were run.Results:ADHD symptoms related to widespread cortical regions when solely adjusting for demographic factors. Additional adjustments for socioeconomic and maternal behavioral confounders (aim 1) generally attenuated associations, as cluster sizes halved and effect sizes substantially reduced. Cluster sizes further changed when including IQ and head motion (aim 2), however, we argue that adjustments might have introduced bias.Conclusions:Careful confounder selection and control can help identify more robust and specific regions of associations for ADHD symptoms, across two cohorts. We provided guidance to minimizing confounding bias in psychiatric neuroimaging.Funding:Authors are supported by an NWO-VICI grant (NWO-ZonMW: 016.VICI.170.200 to HT) for HT, LDA, SL, and the Sophia Foundation S18-20, and Erasmus University and Erasmus MC Fellowship for RLM.
 
 ## Introduction
 
@@ -37,47 +37,123 @@ In this study, we examined the association between brain structure and ADHD symp
 
 ## Results
 
-## Associations between ADHD symptoms and brain morphology are widespread
+### Associations between ADHD symptoms and brain morphology are widespread
 
 We analyzed data from 10-year-old children from the ABCD (N = 7722, multisite) and Generation R (N = 2531, single-site) Studies (Supplementary file 1b). ADHD symptoms were measured with the Child Behavioral Checklist (CBCL). T1-weighted images were obtained with 3T scanners (Casey et al., 2018; Kooijman et al., 2016). We ran vertex-wise linear regression models for ADHD with cortical surface area, volume, and thickness. Results for surface area, which constituted the main findings here, are presented in-text, while findings for volume and thickness in the figure supplements. We adjusted for demographic and study characteristics which have been generally considered by previous literature (Supplementary file 1a): age, sex, ethnicity, and study site (ABCD only). We refer to this model as model 1, as further adjustments for confounders are outlined in subsequent steps.
 
 We found that higher ADHD symptoms were associated with less bilateral surface area in both cohorts. As shown in Figure 1, associations were widespread, as the clusters of association covered 1165.7 cm2 of the cerebral cortex in the ABCD Study, and 446.1 cm2 in the Generation R Study. Across both cohorts, we consistently identified clusters for surface area in the lateral occipital, postcentral, rostral middle and superior frontal, and superior parietal cortices. For cortical thickness, we found two small frontal clusters in the ABCD Study (16.1 cm2) and no clusters in the Generation R Study, which suggests that cortical thickness does not relate or does not relate strongly to ADHD, in line with prior literature (Hoogman et al., 2019; Figure 1—figure supplement 1).
 
-## Confounder selection: socioeconomic and maternal behavioral factors
+![Figure 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig1-v2.jpg)
+
+**Figure 1.:** Note. Rows represent the results for the ABCD or Generation R Studies, and the columns represent the left and right hemispheres. Regions in red represent significant clusters from model 1 (adjusted for sex, age, race/ethnicity, and site [ABCD only]).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Note. Columns represent the left and right hemispheres. Regions in red represent significant clusters from model 1 (sex, age, race/ethnicity, and site [ABCD only]).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Note. Columns represent the left and right hemispheres. Regions in red represent significant clusters from model 1 (sex, age, race/ethnicity, and site [ABCD only]).
+
+### Confounder selection: socioeconomic and maternal behavioral factors
 
 Next, we considered factors that have been previously linked to ADHD and brain structure in the literature, and are thus potential confounders. To illustrate this background knowledge and the assumptions about relations between variables, we used Directed Acyclic Graphs (DAGs), a type of causal diagram (Hernan and Robins, 2020). These guide the identification (and dismissal) of covariates that may act as confounders. Of note, while assumptions may not hold, this theoretical approach is preferred to methods selecting confounders based on model statistics (Lee, 2014). The DAGs are depicted in Figure 2 and Figure 2—figure supplements 1 and 2, and the rationales for variable inclusion are explained below and in the Methods.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig2-v2.jpg)
+
+**Figure 2.:** Note. DAGs illustrating potential confounders in the association between brain structure and ADHD symptoms for three sequential models. Model 1 included demographic and study characteristics: sex, age, ethnicity, and study site (Adolescent Brain Cognitive Development [ABCD] only) (in blue). Model 2 additionally included socioeconomic status factors: family income, maternal education, and maternal age at childbirth (in red). Model 3 additionally incorporated postnatal maternal psychopathology and maternal substance use during pregnancy (in green).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Note. A = exposure; C = confounder; Y = outcome; U = unmeasured confounder. (1) confounding scenario (unadjusted). (2) Confounding scenario (adjusted). (3) Residual confounding scenario.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Note. DAG illustrating potential confounders in the association between brain structure and ADHD symptoms for three sequential models. Model 1 included demographic and study characteristics: sex, age, ethnicity, and study site (Adolescent Brain Cognitive Development [ABCD] only) (in blue). Model 2 additionally included socioeconomic status factors: family income, maternal education, and maternal age at childbirth (in red). Model 3 additionally incorporated postnatal maternal psychopathology and maternal substance use during pregnancy (in green). Compared to the simplified model shown in-text, we additionally present potential relations between the confounders (in gray) to display all our assumptions.
 
 Based on the literature, lower SES is associated with a higher risk for ADHD (Russell et al., 2016) and with variation in cortical brain structure (Noble et al., 2015). Thus, confounding by socioeconomic factors in the relation between ADHD and brain morphology is likely. We therefore additionally adjusted for a second set of confounders (model 2) related to SES: household income, maternal education, and maternal age at childbirth.
 
 Moreover, several factors concerning maternal behavior, pre- and postnatally, have been associated with both ADHD and brain morphology. For instance, prenatal exposure to substances is known to increase the risk of developing ADHD symptoms and has been associated with variation in cerebral volume and surface area (Eilertsen et al., 2017; Lees et al., 2020). Postnatal maternal psychopathology has been linked to higher child ADHD symptoms (Clavarino et al., 2010) and smaller brain volume in children (Zou et al., 2019). Thus, in model 3 we additionally adjusted for prenatal exposure to substance use (tobacco and cannabis), and postnatal maternal psychopathology.
 
-## Adjusting for additional confounders led to reductions in the clusters of association
+### Adjusting for additional confounders led to reductions in the clusters of association
 
 Adjustments for SES (model 2) led to reductions in the spatial extent of the clusters for surface area and volume in both cohorts (Figure 3). For surface area, cluster sizes for ADHD symptoms reduced from 1165.7 cm2 in model 1 to 952.8 cm2 in model 2 (=−18%) in the ABCD Study, and from 446.1 to 229.6 cm2 (=−49%) in the Generation R Study. Similar reductions were observed for volume and thickness (Figure 3—figure supplement 1). After adjusting for the confounders added in model 3, across both cohorts, we consistently identified clusters for surface area in the cuneus, precuneus, fusiform, inferior parietal, isthmus of the cingulate, pericalcarine, pre- and postcentral, rostral middle and superior frontal, superior temporal and supramarginal cortices.
 
-## Similar results were observed for ADHD diagnosis
+![Figure 3.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig3-v2.jpg)
+
+**Figure 3.:** Note. Rows represent the results for the ABCD or Generation R Studies, and the columns represent the left and right hemispheres. The colors denote the different models. Regions in red represent significant clusters from model 1 (sex, age, race/ethnicity, and site [ABCD only]), orange from model 2 (model 1 + family income, maternal education, and maternal age at childbirth), and yellow from model 3 (model 2 + maternal smoking, substance use during pregnancy, psychopathology).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Note. Columns represent the left and right hemispheres. The colors denote the different models. Regions in red represent significant clusters from model 1 (sex, age, race/ethnicity, and site [ABCD only]), orange from model 2 (model 1 + family income, maternal education, and maternal age at childbirth), and yellow from model 3 (model 2 + maternal smoking, substance use during pregnancy, psychopathology).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Note. Columns represent the left and right hemispheres. The colors denote the different models. Regions in red represent significant clusters from model 1 (sex, age, race/ethnicity, and site [ABCD only]), orange from model 2 (model 1 + family income, parental education, and maternal age at childbirth), and yellow from model 3 (model 2 + maternal smoking, substance use during pregnancy, psychopathology).
+
+### Similar results were observed for ADHD diagnosis
 
 To explore whether the results observed for associations between brain morphology and ADHD symptoms applied to children with an ADHD diagnosis, we repeated the primary analysis using the ADHD diagnostic data from the Kiddie Schedule for Affective Disorders and Schizophrenia (KSADS) in the ABCD Study. In line with our primary results, ADHD diagnosis was associated with less bilateral surface area and volume. Compared to clusters for ADHD symptoms, those associated with ADHD diagnosis were smaller, but overlapping (Figure 1—figure supplement 2). We observed similar patterns of reduction in the spatial extent of the clusters after adjusting for each set of confounders (Figure 3—figure supplement 2). For surface area, cluster sizes for ADHD symptoms covered 234.4 cm2 in model 1 and reduced to 199.5 cm2 in model 2 (=−15%), and 55.5 cm2 in model 3 (=−72%, compared to model 2).
 
-## Beta coefficients generally decreased after confounder adjustments, but may also increase
+### Beta coefficients generally decreased after confounder adjustments, but may also increase
 
 Surface-based studies generally focus on the spatial extent of cortical clusters associated with the phenotype, but, in this study, we also explored how confounding adjustments affected the regression coefficients for ADHD symptoms (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig4-v2.jpg)
+
+**Figure 4.:** Note. The colors denote the different models, and the circles denote the average of all the betas within that region. The regions are based on the Desikan–Killiany atlas. Results for the ABCD and Generation R Studies are, respectively, shown on the top and bottom.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Note. The rows represent the results for the Adolescent Brain Cognitive Development (ABCD) and Generation R Studies, and the columns represent the left and right hemispheres. The colors represent the change in the regression coefficients for attention-deficit/hyperactivity disorder (ADHD) symptoms. Warm colors denote an increase in effect whereas cold colors denote a decrease.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Note. Panels A and C represent the change of the regional average beta for surface area from model 1 to 2. Panels B and D represent the change of the regional average beta for surface area from model 2 to 3. Each circle represents a brain region according to the Desikan–Killiany atlas.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Note. The colors denote the different models, and the circles denote the average of all the betas within that region. The regions are based on the Desikan–Killiany atlas.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Note. Panels A and C represent the change of the regional average beta for volume from model 1 to 2. Panels B and D represent the change of the regional average beta for volume from model 2 to 3. Each circle represents a brain region according to the Desikan–Killiany atlas.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Note. The top and bottom rows display the results for surface area (A-C) and volume (D-F), respectively. Each column represents one of the adjustment models, that is, model 1 (A,D), model 2 (B,E) andmodel 3 (C,F).
 
 At a vertex-wise level, adjusting for socioeconomic and maternal factors (model 3) led to reductions in the beta coefficients, across the brain, for both cohorts (Figure 4—figure supplement 1). Of note, some beta coefficients also showed increases. As confounding bias may lead to under- or overestimation, it is not surprising to observe both decreases and increases in the average beta coefficients after adjustments.
 
 At an anatomical region level, where estimates of vertices within a given Desikan–Killiany region were averaged, beta coefficients for surface area tended to decrease from model 1 to 2 by approximately 15% (Figure 4, Figure 4—figure supplement 2). Further adjustments from model 2 to 3 led to decreases in the average beta coefficients of certain regions and increases in others. Similar patterns were found for volume (Figure 4—figure supplements 3 and 4). The average beta coefficients per region correlated moderately to strongly between the ABCD and Generation R Studies for surface area (Spearman rM1 = 0.84, rM2 = 0.83, rM3 = 0.83) and volume (Spearman rM1 = 0.57, rM2 = 0.57, rM3 = 0.70) (Figure 4—figure supplement 5).
 
-## IQ may be a confounder, mediator, or collider in neuroanatomical studies of ADHD
+### IQ may be a confounder, mediator, or collider in neuroanatomical studies of ADHD
 
 We considered one additional scenario which included IQ, a factor that is often adjusted for in previous studies (Supplementary file 1a). However, based on prior literature, it holds an ambiguous role in structural anatomy–ADHD relations. Previous studies found that children with ADHD scored lower on IQ than children without ADHD (Bridgett and Walker, 2006). Differential brain structure with levels of IQ has also been shown (Mcdaniel, 2005). However, the directions of causation between these variables remain unclear (Gallo and Posner, 2016). IQ may therefore be a confounder, collider, and/or mediator in the relation between brain structure and ADHD, as depicted in the DAGs in Figure 5 and Figure 5—figure supplement 1.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig5-v2.jpg)
+
+**Figure 5.:** Note. (A) DAG for IQ as a confounder. In this case, adjustments are needed as the backdoor path from brain structure to ADHD symptoms through IQ is open. By adjusting (box around IQ), the path gets closed. (B) DAG for IQ as a mediator. Adjustments are not needed to estimate the total effect of brain structure on ADHD symptoms. (C) DAG for IQ as a collider. The backdoor path through IQ is already closed. Adjustments would open the path and lead to collider bias.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Note. A = exposure; C = confounder; M = mediator; V = collider; Y = outcome. (1) IQ as a confounder in brain structure–attention problems associations. (2) IQ as a mediator. (3) IQ as a collider.
+
 First, it could be argued that IQ is partly innate and precedes brain development and ADHD, making it a confounder (Figure 5A). Second, IQ may lie in the pathway between brain structure and ADHD and therefore act as a mediator (Figure 5B). It is conceivable that cognitive differences, as a consequence of subtle neurodevelopmental differences (Lee et al., 2019), could underlie ADHD. Adjusting for a mediator would lead to bias when estimating the total association between brain structure and ADHD (VanderWeele, 2016). Third, brain structure may impact intelligence scores (Lee et al., 2019), and ADHD symptoms may affect IQ test performance (Jepsen et al., 2009; Figure 5C). A variable that is independently caused by the outcome and the determinant is also known as a collider, and adjusting for it leads to (collider) bias. Here, we explored the impact of adjusting for IQ when examining the relation between brain morphology and ADHD (model 4).
 
-## Adjustments for IQ led to further cluster reductions
+### Adjustments for IQ led to further cluster reductions
 
 After additionally adjusting for IQ, the spatial extent of the clusters associated with ADHD symptoms reduced further in both cohorts (Figure 6). For surface area, compared to model 3, clusters reduced from 760.2 to 605.1 cm2 (=−20%) for the ABCD Study, and from 208.6 to 93.1 cm2 for the Generation R Study (=−55%). Clusters of association for surface area in model 4 were located in the fusiform, inferior parietal, insula, lateral occipital, middle temporal, pericalcarine, pre- and postcentral, precuneus, rostral middle, and superior frontal, superior parietal and temporal, and supramarginal cortices. Findings for volume and thickness are shown in Figure 6—figure supplement 1.
 
-## Head motion does not induce confounding bias, but information bias
+![Figure 6.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig6-v2.jpg)
+
+**Figure 6.:** Note. Rows represent the results for the ABCD or Generation R Studies, and the columns represent the left and right hemispheres. The colors denote the different models, with red vertices being significant only in model 3, orange ones in both model 3 and after adjustment for IQ, and yellow ones only after adjusting for IQ.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Note. Rows represent the results for the ABCD or Generation R Studies, and the columns represent the left and right hemispheres. The colors denote the different models, with red vertices being significant only in model 3, orange ones in both model 3 and after adjustment for IQ, and yellow ones only after adjusting for IQ.
+
+### Head motion does not induce confounding bias, but information bias
 
 A final scenario was also included, to reflect the commonly used adjustments for head motion during scanning (Supplementary file 1a). Motion can be a large source of bias in neuroimaging studies which is important to address. While it does not meet the criteria for confounding as it is not a common cause of ADHD problems and brain morphology (Hernan and Robins, 2020), head motion can induce measurement error of brain morphology (Van de Walle et al., 1997; Figure 7). This is also referred to as information bias and can distort estimates from their true value.
 
@@ -87,15 +163,23 @@ A final scenario was also included, to reflect the commonly used adjustments for
 
 The amount of measurement error in brain morphology may differ across children with versus without ADHD. In fact, children with impulsivity and inattention have been shown to move more during MRI scanning (Thomson et al., 2021; Kong et al., 2014), determining different levels of error in the brain morphology assessments (Figure 7, path from ADHD symptoms to motion to error in MRI measurement). In this scenario, adjusting for motion might lead to two situations. On one hand, since motion is a consequence of the outcome (ADHD), adjustments would lead to bias (Westreich, 2012). On the other hand, not adjusting for motion would also lead to bias because part of the observed relation between ADHD symptoms and brain structure would be due to the higher head motion (and thus the underestimation of the cortical values) of children with ADHD. In this study, we explored the effect of adjusting for motion during scanning in the relation between brain morphology and ADHD (model 5).
 
-## Adjustments for head motion led to increases in clusters
+### Adjustments for head motion led to increases in clusters
 
 After additional adjustments for head motion, the spatial extent of the clusters generally increased. For surface area, compared to model 3, clusters increased from 760.2 to 936.4 cm2 (=+23.2%) for the ABCD Study and from 208.6 to 239.7 cm2 (=+14.9%) for the Generation R Study (Figure 8). Clusters of associations consistently found across cohorts were highly similar to the ones identified in model 3. Results for cortical volume and thickness are shown in Figure 8—figure supplement 1.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig8-v2.jpg)
+
+**Figure 8.:** Note. Rows represent the results for the ABCD or Generation R Studies, and the columns represent the left and right hemispheres. The colors denote the different models, with red vertices being significant only in model 3, orange ones in both model 3 and after adjustment for motion, and yellow ones only after adjusting for motion.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/78002/elife-78002-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Note. Rows represent the results for the ABCD or Generation R Studies, and the columns represent the left and right hemispheres. The colors denote the different models, with red vertices being significant only in model 3, orange ones in both model 3 and after adjustment for motion, and yellow ones only after adjusting for motion.
 
 ## Discussion
 
 By leveraging two large population-based studies and adopting a literature- and DAG-informed approach to address confounding, we showed that (1) associations between brain structure and ADHD symptoms, which were initially widespread, reduced when adjusting for socioeconomic and maternal behavioral confounders, and that (2) careful considerations are needed when including IQ and/or head motion due to their complex relation with ADHD and brain morphology.
 
-## Adjustments for confounders highlighted key regions of association, observed across two large cohorts
+### Adjustments for confounders highlighted key regions of association, observed across two large cohorts
 
 Widespread associations between surface area and ADHD symptoms were initially identified, with higher symptoms relating to smaller brain structures, in line with previous research (Hoogman et al., 2019; Gehricke et al., 2017). After adjustments for potential confounders typically overlooked by prior literature (socioeconomic and maternal behavioral factors), approximately half of the associations remained, and considerable effect size changes were observed in both the ABCD and Generation R Studies and for all cortical measures. We observed similar patterns of cluster reductions for ADHD diagnosis in the ABCD Study.
 
@@ -105,7 +189,7 @@ Of note, some inconsistencies between the ABCD and Generation R Studies, both in
 
 Here, we discerned associated areas likely subject to confounding bias from areas robust to socioeconomic and maternal behavioral factors, and replicable across two large cohorts. Comparisons with prior findings should be made with caution due to differences in study design, samples (clinical vs. population-based), and analytical methods. Importantly, we highlighted the opportunity for future studies to include covariates that go beyond age and sex, can help refine associations, and can be readily collected. Future studies may want to consider other confounding factors, depending on their research question, design, and assumed causal relations.
 
-## Adjustments for IQ are often unnecessary when examining the relation between brain structure and ADHD
+### Adjustments for IQ are often unnecessary when examining the relation between brain structure and ADHD
 
 Avoiding bias from adjusting for variables that are not confounders is as important as identifying sources of confounding. Adjusting for mediators or colliders of the ADHD–brain structure relation would induce bias. Here, when adjusting for IQ, which plays an unclear role in brain structure–ADHD associations, cluster sizes reduced considerably in both the ABCD and Generation R Studies. This could indicate that IQ is a confounder, in which case adjustments would be necessary, or that IQ is a mediator or collider, in which case adjustments must be avoided.
 
@@ -113,7 +197,7 @@ First, based on previous literature and this study, the association between ADHD
 
 Given these scenarios, we recommend moving away from routinely adjusting for IQ in ADHD neuroimaging studies, and we highlight the need to carefully consider the causal model for a specific research question to determine whether IQ may confound associations.
 
-## There is no easy fix for dealing with head motion in brain morphology–ADHD associations
+### There is no easy fix for dealing with head motion in brain morphology–ADHD associations
 
 Adjustments for neuroimaging covariates, such as head motion, are often run to reduce confounding bias. However, head motion, rather than inducing confounding bias, creates measurement error (information bias). When adjusting for head motion during scanning, we observed increases in the spatial extent of the clusters. This might indicate a reduction or an increase in bias. First, bias might have been reduced by adjusting for the fact that children with ADHD will have more error in their cortical measures. Second, bias might have also been increased because we conditioned for head motion, which is a consequence of ADHD.
 
@@ -121,7 +205,7 @@ Overall, the role of head motion in the relation between brain structure and ADH
 
 Similar considerations should be applied to other neuroimaging parameters which often are indicators of information bias rather than confounders in brain structure–ADHD relations (e.g., time of the day, scanner). For instance, time of the day has been shown to influence morphometric values (Nakamura et al., 2015; Trefler et al., 2016), leading to information bias. If we expect for ADHD symptoms to influence the time of the day in which children with ADHD versus without come to the scanner (differential information bias), the same considerations for head motion would apply. If instead, children with ADHD and without come to the MRI at similar times of the day (non-differential information bias), then adjustments for time of the day would be appropriate and reduce the measurement error.
 
-## Generalization to psychiatric neuroimaging studies
+### Generalization to psychiatric neuroimaging studies
 
 Our considerations on confounding likely generalize to the psychiatric neuroimaging field, as several confounders considered here (e.g., SES) also relate to brain function and other psychiatric disorders (Biazoli et al., 2020; Kivimäki et al., 2020; Apter et al., 2017). Similarly, other psychiatric disorders are also characterized by complex relations with IQ (Der et al., 2009). Moreover, mental health problems featuring state anxiety, like internalizing and externalizing symptoms, have also been related to increased head motion during scanning (Eijlers et al., 2021).
 
@@ -131,7 +215,7 @@ Confounding control is paramount to studies examining determinants of a phenotyp
 
 **Figure 9.:** Note. In this workflow, we suggest different actions that can be taken throughout the research process to minimize confounding bias in psychiatric neuroimaging studies.
 
-## Limitations of the present study and suggestions for future research
+### Limitations of the present study and suggestions for future research
 
 Despite leveraging two large samples with similar characteristics and assessments, this study presents several limitations. First, there is always potential for residual confounding through unmeasured confounders and misclassification of measured confounders. For example, given that genetic factors influence both ADHD and brain morphology and that there is a genetic correlation between ADHD risk and intracranial volume (Jansen et al., 2015; Klein et al., 2019; Klein et al., 2017), certain genetic risk variants may be unmeasured confounders. However, we aimed to illustrate plausible confounding bias scenarios for ADHD and brain structure, and not to provide an exhaustive list of potential confounders, which may vary depending on the study population and research question. Future studies should also consider bias analyses to assess the impact that residual confounding may have on the study results (Lash et al., 2021). Bias analyses can help understand the minimum association strength an unmeasured confounder needs to have with the determinant and outcome to fully explain away the findings (VanderWeele and Ding, 2017). Developments may be needed, however, for their adaptation to the neuroimaging field.
 
@@ -143,7 +227,7 @@ In conclusion, leveraging an empirical example from two large studies on neuroan
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We analyzed data from two independent population-based cohorts: the ABCD Study and the Generation R Study. The ABCD Study is conducted across 21 study sites in the US and recruited since 2015 children aged 9–10 at baseline (Garavan et al., 2018). The Generation R Study is based in Rotterdam, the Netherlands, with data collection spanning from fetal life until early adulthood, and started in 2002 (Kooijman et al., 2016). Details of the sampling rationale, recruitment, methods, and procedures have been described elsewhere (Kooijman et al., 2016; Garavan et al., 2018). Research protocols for the ABCD Study were approved by the institutional review board of the University of California, San Diego (#160091), and the institutional review boards of the 21 data collection sites, while the design of the Generation R Study was approved by the Medical Ethics Committee of the Erasmus MC (METC-2012-165). For both studies, written informed consent and assent from the primary caregiver or child were obtained.
 
@@ -153,37 +237,37 @@ In this cross-sectional study, we leveraged data from the baseline assessment of
 
 **Figure 10.:** Note. (A) In the ABCD Study, of the 11,875 participants enrolled in the study, 7722 met our inclusion and exclusion criteria. (B) In the Generation R Study, of the 8548 participants invited to the age 9–10 assessment, 2531 met our inclusion and exclusion criteria.
 
-## Measures
+### Measures
 
-## ADHD symptoms
+#### ADHD symptoms
 
 Children’s ADHD symptoms, reported by the primary caregiver, were measured with the CBCL (school-age version) (Achenbach, 2001), an inventory widely used for parent reports of children’s emotional and behavioral problems. The attention problem syndrome scale (20 items) measures inattention, hyperactivity, and impulsivity and has been previously shown to have clinical utility and to discriminate between ADHD cases and controls (Eiraldi et al., 2000). Attention problems were analyzed on a discrete scale (range 0–19). For the ABCD Study, we repeated the analysis using present ADHD diagnosis from a parent-reported and computerized version of the KSADS-5. This is a dimensional and categorical assessment used to diagnose current and past psychiatric disorders according to the Diagnostic and Statistical Manual of Mental Disorders (Fifth Edition) (Kaufman et al., 1997; Kobak, 2020).
 
-## Image acquisition
+#### Image acquisition
 
 T1-weighted data were obtained on multiple 3T scanners in the ABCD Study (Siemens Prisma, General Electric (GE) 750 and Philips) and one scanner in the Generation R Study (GE 750). Standard adult-sized coils were used for the ABCD Study and an eight-channel receive-only head coil for the Generation R Study. To acquire T1-weighted structural images, the ABCD Study used an inversion prepared RF-spoiled gradient echo scan with prospective motion correction while the Generation R Study used an inversion recovery fast spoiled gradient recalled sequence (GE option = BRAVO, TR = 8.77 ms, TE = 3.4 ms, TI = 600 ms, flip angle = 10°, matrix size = 220 × 220, field of view = 220 × 220 mm, slice thickness = 1 mm, number of slices = 230, ARC acceleration factor = 2). More details can be found elsewhere (Casey et al., 2018; Hagler et al., 2019; White et al., 2018). Of note, in the ABCD Study, a technical mistake occurred at one collection site, causing the hemisphere data to be flipped. This was fixed before processing.
 
-## Image processing
+#### Image processing
 
 FreeSurfer (version 6.0.0) was used for both cohorts for image processing, which was run in-house to maximize comparability across cohorts. Processing involved (1) removal of non-brain tissue, (2) correction of voxel intensities for B1 field inhomogeneities, (3) tissue segmentation, and (4) cortical surface-based reconstruction. Cortical surface maps were smoothed with a full width of a half-maximum Gaussian kernel of 10 mm. Within the ABCD Study, quality assessment was based on manual and automated quality control procedures and recommended inclusion criteria for structural data from the ABCD team (Hagler et al., 2019). Within the Generation R Study, quality assurance was manually performed by visually inspecting all images by trained raters, as previously described in the literature (Muetzel et al., 2019). Poor quality reconstructions were excluded.
 
-## Covariate assessment
+#### Covariate assessment
 
-## The ABCD Study
+##### The ABCD Study
 
 All data were collected at baseline (child age 9–10 years). Age and sex were recorded at intake. Child race/ethnicity was reported by the primary caregiver and was categorized as White, Black, Hispanic, Asian, Other by the ABCD team. Household combined net income (<$50,000, ≥$50,000 and <$100,000, ≥$100,000) and highest parental education (<high school, high school diploma/GED, some college, bachelor degree, postgraduate degree) were self-reported by the primary caregiver in the Parent Demographics Survey. Maternal age at childbirth was measured in the Developmental History Questionnaire. Tobacco and cannabis use during pregnancy were retrospectively reported by the mother (yes, no, I do not know) in the Developmental History Questionnaire. Caregiver psychopathology was obtained from the Total Problems Adult Self Report Syndrome Scale. The Wechsler Intelligence Scale for Children-6 Matrix Reasoning total scaled score was used as a proxy for IQ. We used the Euler number obtained from FreeSurfer as a proxy for head motion during the acquisition. The Euler number quantifies the topological complexity of the reconstructed cortical surface, with holes in the reconstructed surface leading to lower Euler numbers.
 
-## The Generation R Study
+##### The Generation R Study
 
 Age and sex were measured based on medical records obtained at birth. Child ethnicity (western and non-western) was assessed based on the parents’ birth country, in line with the Statistics Netherlands bureau. Maternal age at childbirth was prospectively measured. Family income and highest maternal education were obtained through prospective self-reports by the mother and/or father at child age 5 years. Maternal education was coded into low (no/primary education), intermediate (secondary school, vocational training), and high (Bachelor’s degree/University). Household net monthly income was classified as low (<2000 euros), middle (2000–3200 euros), and high (>3200 euros). Maternal postnatal psychopathology, measured at child age 6 months, was prospectively reported by the mother based on the Brief Symptom Inventory questionnaire global severity index. Mothers prospectively reported smoking (never used, used) and cannabis use during pregnancy (no use vs. use during pregnancy). Non-verbal child IQ was measured at child age 5 years, based on the Snijders-Oomen Niet-Verbale Intelligentie Test (Tellegen and Laros, 1998), a validated Dutch non-verbal intelligence test. The Euler number was used as a proxy for head motion during scanning.
 
-## Covariate selection
+### Covariate selection
 
 Similar covariates were grouped into confounding sets to minimize the number of tested models while including relevant confounders. Factors included in model 1 related to demographic and study characteristics (age, sex, ethnicity, and study site [for ABCD only]). Age and sex were selected as these have been previously adjusted for in previous neuroimaging studies of ADHD (Supplementary file 1a). Ethnicity was used as a proxy for differential health risk exposure among people of different ethnic groups. The study site was incorporated to account for location and scanner differences in the ABCD Study.
 
 Further potential confounders were selected based on previous literature and with the aid of DAGs, as described in the Results. In model 2, variables indicating socioeconomic factors were included (parental education, household income, maternal age at childbirth). Household income and parental education are generally considered to measure childhood SES in health research (American Psychological Association, 2021). Maternal age at childbirth can additionally inform on the SES of the child by capturing part of the variance unexplained by income and education (e.g., younger mothers facing higher occupational challenges, highly educated mothers delaying childbirth Heck et al., 1997). In model 3, maternal factors from the prenatal and postnatal period were grouped (tobacco and cannabis use during pregnancy and maternal psychopathology) to measure early life exposures which may impact a child’s brain and psychiatric development.
 
-## Statistical analyses
+### Statistical analyses
 
 The R statistical software (version 4.1.0) was used for all analyses. Missing data on covariates were imputed with chained equations using the mice R package (Buuren and Groothuis-Oudshoorn, 2011). Linear vertex-wise analyses were performed with the QDECR R package (Lamballais and Muetzel, 2021), with surface area/volume/thickness and ADHD symptoms as variables of interest. Correction for multiple testing was applied by using cluster-wise corrections based on Monte Carlo simulations with a cluster forming threshold of 0.001, which yields false-positive rates similar to full permutation testing (Greve and Fischl, 2018). A Bonferroni correction was applied to adjust for analyzing both hemispheres separately (i.e., p < 0.025 cluster-wise).
 
@@ -191,6 +275,6 @@ Our analyses for aim 1 involved three vertex-wise linear regression models, whic
 
 Two additional models, building upon model 3, were run to address aim 2, to illustrate the consequences of adjusting for factors with a complex and unclear relation with brain structure and ADHD symptoms: IQ and head motion (analyses ran separately). Of note, given that IQ and ADHD were weakly correlated (rABCD = −0.11, rGENR = −0.14), multicollinearity was not expected.
 
-## Code availability
+### Code availability
 
 Code used to conduct this project is publicly available at https://github.com/LorenzaDA/ADHD_brainmorphology_confounding (Copy archived at swh:1:rev:95c01381fc7fad9bedb3b5918fb80b02b1dcbdfa) (Dall’Aglio, 2022) under CC by 4.0.

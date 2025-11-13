@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/003vg9w96 University of Bordeaux, INRAE, Bordeaux INP, NutriNeuro, UMR 1286, F-33077 Bordeaux France
-2. https://ror.org/057qpr032 University of Bordeaux, CNRS, INCIA, UMR 5287, 33077 Bordeaux France
+1. University of Bordeaux, INRAE, Bordeaux INP, NutriNeuro, UMR 1286, F-33077 Bordeaux France ([ROR:003vg9w96](https://ror.org/003vg9w96))
+2. University of Bordeaux, CNRS, INCIA, UMR 5287, 33077 Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
 
 † Corresponding author
 
@@ -33,17 +33,154 @@ We recently showed that object-based memory is impaired in HFD-exposed animals a
 
 ## Results
 
-## Targeting vHPC->NAc or vHPC->mPFC pathways
+### Targeting vHPC->NAc or vHPC->mPFC pathways
 
 It is well known that the vHPC sends dense projections to both the NAc and the mPFC. We first replicated these data in our conditions using Ai14(RCL-tdT)-D mice injected with an AAV-CaMKII-Cre in the vHPC (Figure 1—figure supplement 1A–C). As shown in Figure 1, numerous fibres expressing tdTomato were detected in the NAc (Figure 1A) and to a lesser extent in the mPFC (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80388/elife-80388-fig1-v1.jpg)
+
+**Figure 1.:** Representative images illustrating expression of TdTomato in fibres in the NAc (A) and the mPFC (B) after AAV-CaMKII-Cre injection in the vHPC of Ai14(RCL-tdT)-D mice. Schematics adapted from Figures 21 and 23 (A) and Figures 14 and 16 (B) from Paxinos and Franklin, 2004, indicating the levels of fibres labelling. (C, D) Schema of intersectional chemogenetic approach. An AAV-hSyn1-dlox-hM4D(Gi)-mCherry vector was injected into the vHPC, while a retrograde CAV2-Cre vector was injected in the NAc (C) or the mPFC (D). (E, F) Expression of mCherry is depicted for each condition after amplification using immunohistochemistry. Schematics adapted from Figures 51, 55, 59 and 61 from Paxinos and Franklin, 2004, indicating the largest (light red) or the smallest (dark red) viral infection. Representative images illustrating mCherry expression after CAV2-Cre injection in (E) the NAc or (F) the mPFC. Scale bar is set to 100 µm, 500 µm, or 1 mm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80388/elife-80388-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Parasagittal (A) and frontal (B) schema illustrating AAV-CaMKII-Cre injection in the vHPC of Ai14(RCL-tdT)-D mice and representative image illustrating expression of TdTomato in vHPC neurons (C). Representative example of mCherry labelling in the vHPC after injections of AAV-hSyn1-dloxhM4D(Gi)-mCherry in the vHPC and retrograde CAV2-Cre vector in the nucleus accumbens (NAc, D) or the medial prefrontal cortex (mPFC, E).
+
 Given these anatomical relationships, we used an intersectional strategy in order to selectively target either the vHPC->NAc or the vHPC->mPFC pathway. To express an inhibitory DREADD (Armbruster et al., 2007) only in NAc-projecting vHPC or in mPFC-projecting vHPC cells, an adeno-associated virus (AAV) carrying a floxed hM4DGi receptor (Gi) expression cassette with the reporter mCherry was injected in the vHPC, while a retrograde CAV-2 vector (Junyent and Kremer, 2015, Alcaraz et al., 2018) carrying the Cre recombinase was injected in the NAc (Figure 1C) or in the mPFC (Figure 1D). As a result, only vHPC cells projecting to the NAc or to the mPFC were infected by both vectors and therefore expressed Gi. We indeed detected mCherry labelling in the vHPC, particularly in the ventral CA1 and subiculum, following injection in both the NAc and the mPFC (Figure 1E,F, Figure 1—figure supplement 1D,E).
 
-## Silencing vHPC->NAc or vHPC->mPFC pathways in HFD animals: effect on brain activation
+### Silencing vHPC->NAc or vHPC->mPFC pathways in HFD animals: effect on brain activation
 
 We next assessed the functional outcomes of silencing either vHPC->NAc or vHPC->mPFC pathways in animals exposed to HFD. Mice of comparable body weight were randomly exposed to either CD (n = 41) or HFD (n = 59). After 8 weeks of diet exposure, they all received dual virus injections with either DREADD Gi or Control mCherry viruses in vHPC and CAV-Cre in either NAc or mPFC (CD Gi vHPC–NAc n = 8, CD Gi vHPC–mPFC n = 9 and CD Control vHPC–NAc/mPFC n = 14; HFD Gi vHPC–NAc n = 22, HFD Gi vHPC–mPFC n = 22, and HFD Control vHPC-NAc/mPFC n = 15). Four weeks after surgery (e.g. after 12 weeks of diet exposure), we found that diet exposure was efficient to induce obesity syndrome since there was a significant diet effect on both body weight and fat mass [F(1,82) = 9.8, p = 0.0025 and F(1,82) = 30.0, p < 0.0001, respectively; other comparisons: F’s < 2, p > 0.1; see Table 1].
 
+**Table 1.**
+ Body weight and fat mass measurements.Table 1—source data 1.Body weight and fat mass measurements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter/group</th>
+      <th>CD mCherry vHPC–NAc (n = 7)</th>
+      <th>CD mCherry vHPC–mPFC (n = 7)</th>
+      <th>CDGi vHPC–NAc(n = 8)</th>
+      <th>CDGi vHPC– mPFC(n = 9)</th>
+      <th>HFD mCherry vHPC–NAc(n = 8)</th>
+      <th>HFD mCherry vHPC–mPFC(n = 7)</th>
+      <th>HFDGi vHPC–NAc(n = 22)</th>
+      <th>HFDGi vHPC– mPFC(n = 22)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body weight (g)</td>
+      <td>29.3 ± 0.6</td>
+      <td>30.1 ± 0.9</td>
+      <td>30.5 ± 0.6</td>
+      <td>30.3 ± 0.7</td>
+      <td>30.4 ± 0.9</td>
+      <td>32.6 ± 0.8</td>
+      <td>31.7 ± 0.6</td>
+      <td>33.3 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>% of fat content</td>
+      <td>7.7 ± 1.2</td>
+      <td>7.1 ± 1.6</td>
+      <td>9.8 ± 1.5</td>
+      <td>8.7 ± 1.8</td>
+      <td>16.8 ± 3.5</td>
+      <td>20.0 ± 4.9</td>
+      <td>20.6 ± 2.1</td>
+      <td>23.3 ± 2.4</td>
+    </tr>
+  </tbody>
+</table>
+
 We then evaluated the effect of object-based training on c-Fos expression. Mice were exposed to a novel context containing two identical novel objects (Figure 2A). CD and HFD groups similarly explored the novel objects excluding any behavioural influences on c-Fos expression between groups (Table 2). We first quantified c-Fos-positive cells in CA1–subiculum (Figure 2B). As shown in Figure 2C, exposure to HFD resulted in an increased c-Fos expression in Control mice as demonstrated by a significant effect of diet [F(1,23) = 6.4, p = 0.019]. Importantly, this increase was also evident when the double stained cells, c-Fos+ and mCherry+, are considered [F(1,21) = 4.5, p = 0.001; Figure 2D,E], indicating that HFD exposure increases the amount of activated CA1 cells projecting to either the NAc or the mPFC. Most notably, the pattern of results was different in CA1 when the DREADD groups are considered. Indeed, as shown on Figure 2C,D silencing either vHPC->NAc or vHPC–mPFC pathway resulted in an attenuation of c-Fos+ cells. Separate analyses of vHPC–NAc and vHPC–mPFC groups demonstrated, in addition to a main effect of diet [F(1,25) = 4.0, p = 0.056 and F(1,26) = 5.3, p = 0.029, respectively], a main effect of DREADD [F(1,25) = 3.7, p = 0.06 and F(1,26) = 11.0, p = 0.027; interaction: F < 2.5, p > 0.1; Figure 2C]. Comparable results were obtained when focusing on the double stained cells in both vHPC–NAc and vHPC–mPFC groups since there was a significant effect of diet [F(1,23) = 9.0, p = 0.0063 and F(1,25) = 12.6, p = 0.0016, respectively] and of DREADD [F(1,23) = 8.0, p = 0.0093 and F(1,25) = 10.3, p = 0.0036; interaction: F(1,23) = 3.6, p = 0.07 and F(1,25) = 1.4, p = 0.26; Figure 2D].
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80388/elife-80388-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schema of exposure to a novel arena containing two identical and novel objects. (B) Representative images of c-Fos-positive (Fos+) cells in the ventral CA1/subiculum for each group. (C) Quantification of c-Fos+ cells in the ventral CA1/subiculum of the different groups. Data are shown as the number of c-Fos+ cells per mm2. The area corresponding to ventral CA1/subiculum area is delineated. Scale bar is set at 500 nm. (D) Representative example of mCherry and c-Fos labelling in the ventral CA1/subiculum. (E) Percentage of mCherry+ and c-Fos+ cells over total number of mCherry+ in the different groups. Scale bar is set to 250 nm and data are shown as a percentage of cells. Each point represents a single animal value. Diet effect: *p < 0.05, **p < 0.01; DREADD effect: ##p < 0.01 (two-way analysis of variance [ANOVA]).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80388/elife-80388-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Quantification of c-Fos-positive cells in the ventral CA3 (A), the NAc (B) and the mPFC (C) of the different groups. Data are shown as the number of c-Fos-positive cells per mm². Diet effect: *p < 0.05, **p < 0.01, ***p < 0.001; DREADD effect: ##p < 0.01.
+
+**Table 2.**
+ Object training before cellular imaging.Table 2—source data 1.Object training before cellular imaging.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter/group</th>
+      <th>CD mCherry vHPC–NAcCNO(n = 6)</th>
+      <th>CD mCherry vHPC– mPFCCNO(n = 6)</th>
+      <th>CDGi vHPC–NAcCNO (n = 8)</th>
+      <th>CDGi vHPC–mPFCCNO (n = 9)</th>
+      <th>HFDGi vHPC–NAc/mPFCsaline(n = 7)</th>
+      <th>HFD mCherry vHPC–NAc/mPFCCNO(n = 8)</th>
+      <th>HFDGi vHPC– NAcCNO (n = 7)</th>
+      <th>HFDGi vHPC–mPFCCNO (n = 7)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Time (s) object 1</td>
+      <td>23.5 ± 2.9</td>
+      <td>20.9 ± 1.2</td>
+      <td>18.4 ± 2.0</td>
+      <td>20.2 ± 1.7</td>
+      <td>22.9 ± 2.3</td>
+      <td>23.1 ± 1.2</td>
+      <td>20.8 ± 2.4</td>
+      <td>23.1 ± 2.4</td>
+    </tr>
+    <tr>
+      <td>Time (s) object 2</td>
+      <td>22.3 ± 1.8</td>
+      <td>21.9 ± 1.2</td>
+      <td>19.7 ± 2.3</td>
+      <td>22.1 ± 2.1</td>
+      <td>20.5 ± 1.0</td>
+      <td>22.2 ± 1.9</td>
+      <td>20.0 ± 2.3</td>
+      <td>22.1 ± 1.3</td>
+    </tr>
+    <tr>
+      <td>Total time (s) 1 + 2</td>
+      <td>45.8 ± 3.0</td>
+      <td>42.8 ± 1.6</td>
+      <td>38.1 ± 2.5</td>
+      <td>42.3 ± 2.6</td>
+      <td>43.4 ± 3.1</td>
+      <td>45.4 ± 3.0</td>
+      <td>40.8 ± 4.1</td>
+      <td>45.3 ± 3.3</td>
+    </tr>
+    <tr>
+      <td>mCherry+ cells (total)</td>
+      <td>1061</td>
+      <td>817</td>
+      <td>1328</td>
+      <td>1153</td>
+      <td>1222</td>
+      <td>1452</td>
+      <td>1088</td>
+      <td>839</td>
+    </tr>
+    <tr>
+      <td>mCherry+ cells/mouse</td>
+      <td>177 ± 53</td>
+      <td>136 ± 32</td>
+      <td>166 ± 29</td>
+      <td>128 ± 26</td>
+      <td>153 ± 17</td>
+      <td>182 ± 37</td>
+      <td>155 ± 19</td>
+      <td>120 ± 30</td>
+    </tr>
+  </tbody>
+</table>
 
 Notably, our results also showed some anatomical selectivity. Indeed, when looking at CA3 region, the results showed that HFD induced an increase of c-Fos+ cells which was not attenuated by silencing either vHPC->NAc or vHPC–mPFC pathway as demonstrated by an effect of diet for either vHPC->NAc or vHPC->mPFC groups [F(1,24) = 15.5, p = 0.0006 and F(1,25) = 10.9, p = 0.0029, respectively] but no effect of DREADD or interaction [F’s < 2.1, p > 0.16; Figure 2—figure supplement 1A].
 
@@ -51,11 +188,96 @@ In addition, the impact of diet and DREADD was not restricted to the ventral par
 
 Altogether, these results show that (1) HFD enhanced c-Fos expression in the ventral CA1–subiculum and more specifically in NAc- and mPFC-projecting vHPC neurons after object-based training and (2) silencing either vHPC->NAc or vHPC->mPFC pathway normalized HFD-induced over-activation, therefore validating our intersectional approach.
 
-## Silencing of vHPC–NAc, but not vHPC–mPFC, pathway rescued HFD-induced long-term ORM deficits
+### Silencing of vHPC–NAc, but not vHPC–mPFC, pathway rescued HFD-induced long-term ORM deficits
 
 We previously demonstrated that HFD exposure induced long-term deficits in ORM (Naneix et al., 2021) and that these deficits could be restored by chemogenetic silencing of the vHPC during training. We therefore wondered here whether such rescue of function could be mediated by selective silencing of either the vHPC->NAc or vHPC->mPFC pathways.
 
 As shown in Figure 3A, CD Control animals spent more time exploring the new object than the familiar one, which indicates that our training procedure leads to robust long-term ORM (24 hr). Consistent with our previous study, we found that HFD exposure induced a strong memory deficit given that HFD animals spent the same amount of time exploring new and familiar objects. Such a pattern of results is supported by statistical analysis given that a two-way analysis of variance (ANOVA) with diet and pathway as factor leads to a significant effect of diet (F(1,22) = 10.9, p = 0.0032) but no effect of pathway or interaction (F’s < 0.1, p > 0.9; see Table 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80388/elife-80388-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schema of object recognition memory (ORM) task (top) and ORM performance expressed as percentage of exploration time of novel (empty bars) or familiar (striped bars) object over both objects (bottom). (B) Schema of object location memory (OLM) task (top) and OLM performance expressed as percentage of exploration time of novel (empty bars) or familiar (striped bars) location over both objects (bottom). Each point represents a single animal value. Diet effect: **p < 0.01 (two-way analysis of variance [ANOVA], diet × pathway). Difference between groups: *p < 0.05, **p < 0.01 (two-way ANOVA, diet × DREADD for each pathway, significant interaction followed by post hoc test). Different from 50%: #p < 0.05 (one-sample t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80388/elife-80388-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Schema of elevated plus-maze task (A). Results are presented as percentage of open arm time (calculated as open arm time over total time spent in both open and closed arms × 100; B) and percentage of open arm entries (calculated as open arm entries with respect to the total number of entries in both open and closed arms × 100; C).
+
+**Table 3.**
+ Object recognition memory task.Table 3—source data 1.Object recognition memory task.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter/group</th>
+      <th>CD mCherry vHPC–NAc(n = 7)</th>
+      <th>CD mCherry vHPC–mPFC(n = 7)</th>
+      <th>CDGi vHPC–NAc (n = 8)</th>
+      <th>CDGi vHPC–mPFC(n = 8)</th>
+      <th>HFD mCherry vHPC–NAc(n = 6)</th>
+      <th>HFD mCherry vHPC–mPFC(n = 6)</th>
+      <th>HFDGi vHPC–NAc(n = 12)</th>
+      <th>HFDGi vHPC–mPFC(n = 11)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ORM% exploration</td>
+      <td>51.2 ± 2.9</td>
+      <td>50.9 ± 2.2</td>
+      <td>48.6 ± 4.4</td>
+      <td>50.3 ± 2.1</td>
+      <td>53.9 ± 2.0</td>
+      <td>45.9 ± 4.8</td>
+      <td>49.0 ± 2.7</td>
+      <td>50.9 ± 2.2</td>
+    </tr>
+    <tr>
+      <td>Time (s) object to be changed</td>
+      <td>10.2 ± 0.6</td>
+      <td>10.2 ± 0.4</td>
+      <td>9.7 ± 0.9</td>
+      <td>10.1 ±0.4</td>
+      <td>10.8 ± 0.4</td>
+      <td>9.2 ± 1.0</td>
+      <td>9.8 ± 0.5</td>
+      <td>10.2 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>Time (s) object not to be changed</td>
+      <td>9.8 ± 0.6</td>
+      <td>9.8 ± 0.4</td>
+      <td>10.3 ± 0.9</td>
+      <td>9.9 ± 0.4</td>
+      <td>9.2 ± 0.4</td>
+      <td>10.8 ± 1.0</td>
+      <td>10.2 ± 0.5</td>
+      <td>9.8 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>Time (s) to reach criterium (training)</td>
+      <td>400.1 ± 40.8</td>
+      <td>345.7 ± 42.7</td>
+      <td>285.6 ± 25.5</td>
+      <td>292.6 ± 31.9</td>
+      <td>395.7 ± 65.8</td>
+      <td>362 ± 79.8</td>
+      <td>298.5 ± 32.4</td>
+      <td>301.4 ± 34.7</td>
+    </tr>
+    <tr>
+      <td>Time (s) to reach criterium (test)</td>
+      <td>401.0 ± 44.6</td>
+      <td>292.0 ± 42.8</td>
+      <td>305.0 ± 26.1</td>
+      <td>296.6 ± 55.6</td>
+      <td>374.7 ± 79.6</td>
+      <td>343.7 ± 62.7</td>
+      <td>229.1 ± 20.6</td>
+      <td>285.7 ± 26.1</td>
+    </tr>
+  </tbody>
+</table>
 
 We then analysed each pathway separately using two-way ANOVAs with diet and DREADD as factors. Such an analysis performed on vHPC–NAc groups leads to a lack of both diet and DREADD effects [F’s < 1, p > 0.3; Figure 3A, left] but, importantly however, there was a significant diet × DREADD interaction [F(1,29) = 10.2, p = 0.01]. Post hoc analyses reveal a higher preference for the novel object in HFD-Gi than in the HFD Control (p = 0.027). Looking at the performance of each group, CD Control group explored preferentially the novel object [one sample t-test against 50%; t(6) = 2.67, p = 0.037]. In contrast, there was no difference in the exploration of the two objects in HFD Control group [t(5) = 0.73, p = 0.49] but a significant difference in HFD-Gi group [t(11) = 6.65, p < 0.0001] which indicates that inactivation of the vHPC–NAc pathway during training restored HFD-induced ORM deficits.
 
@@ -63,11 +285,88 @@ Similar analysis performed on the vHPC->mPFC pathway yielded to a different patt
 
 Taken together, these results demonstrate an important functional dissociation since chemogenetic silencing of vHPC->NAc pathway but not of vHPC->mPFC pathway was shown to rescue the ORM impairment due to periadolescent HFD diet exposure.
 
-## Silencing of vHPC–mPFC, but not vHPC–NAc, pathway rescued HFD-induced OLM deficits
+### Silencing of vHPC–mPFC, but not vHPC–NAc, pathway rescued HFD-induced OLM deficits
 
 We next evaluated the effect of specifically silencing the vHPC pathways on another object-based memory task, the OLM, known to be impaired by periadolescent HFD (Glushchak et al., 2021; Khazen et al., 2019; Valladolid-Acebes et al., 2013).
 
 As shown in Figure 3B, CD Control animals spent more time exploring the displaced object than the one left in the same location, which indicates that our training procedure leads to robust memory of the object location. Consistent with published reports, our results show that that HFD exposure induced a strong OLM deficit given that HFD animals spent the same amount of time exploring the two objects. Such conclusions are supported by statistical analysis on control (no DREADD) animals which show a significant effect of diet [F(1,22) = 11.5, p = 0.0026] but no effect of pathway or diet × pathway interaction [F’s < 1.3, p > 0.26; Figure 3B; Table 4].
+
+**Table 4.**
+ Object location memory task.Table 4—source data 1.Object location memory task.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter/group</th>
+      <th>CD mCherry vHPC–NAc(n = 7)</th>
+      <th>CD mCherry vHPC–mPFC(n = 7)</th>
+      <th>CDGi vHPC–NAc (n = 8)</th>
+      <th>CDGi vHPC–mPFC (n = 8)</th>
+      <th>HFD mCherry vHPC–NAc(n = 6)</th>
+      <th>HFD mCherry vHPC–mPFC(n = 6)</th>
+      <th>HFDGi vHPC–NAc (n = 12 )</th>
+      <th>HFDGi vHPC–mPFC (n = 11)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OLM% exploration</td>
+      <td>45.1 ± 1.1</td>
+      <td>48.1 ± 2.1</td>
+      <td>47.0 ± 1.6</td>
+      <td>50.6 ± 2.6</td>
+      <td>49.1 ± 1.0</td>
+      <td>47.05 ± 2.2</td>
+      <td>50.6 ± 1.5</td>
+      <td>47.7 ± 1.9</td>
+    </tr>
+    <tr>
+      <td>Time (s) object to be displaced</td>
+      <td>9.0 ± 0.2</td>
+      <td>9.6 ± 0.4</td>
+      <td>9.4 ± 0.3</td>
+      <td>10.1 ± 0.5</td>
+      <td>9.9 ± 0.1</td>
+      <td>9.5 ± 0.5</td>
+      <td>10.1 ± 0.3</td>
+      <td>9.5 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>Time (s) object not to be displaced</td>
+      <td>11.0 ± 0.2</td>
+      <td>10.4 ± 0.4</td>
+      <td>10.6 ± 0.3</td>
+      <td>9.9 ± 0.5</td>
+      <td>10.1 ± 0.1</td>
+      <td>10.5 ± 0.5</td>
+      <td>9.9 ± 0.3</td>
+      <td>10.5 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>Time (s) to reach criterium (training)</td>
+      <td>390.6 ± 59.9</td>
+      <td>279.3 ± 43.0</td>
+      <td>349.6 ± 40.1</td>
+      <td>316.0 ± 57.4</td>
+      <td>351.7 ± 28.0</td>
+      <td>327.8 ± 42.6</td>
+      <td>340.8 ± 37.3</td>
+      <td>358.4 ± 24.7</td>
+    </tr>
+    <tr>
+      <td>Time (s) to reach criterium (test)</td>
+      <td>407.9 ± 55.2</td>
+      <td>327.3 ± 30.6</td>
+      <td>343.8 ± 44.7</td>
+      <td>341.1 ± 45.7</td>
+      <td>292.7 ± 52.3</td>
+      <td>330.0 ± 44.9</td>
+      <td>337.9 ± 27.8</td>
+      <td>339.6 ± 36.9</td>
+    </tr>
+  </tbody>
+</table>
 
 Silencing of vHPC->NAc or vHPC->mPFC pathway has a differential impact on the deficits in OLM resulting from HFD exposure, given that silencing of vHPC->NAc has no impact whereas silencing of vHPC->mPFC was efficient in restoring near to normal memory performance. Such conclusions are supported by statistical analysis. Indeed, there was a significant diet × DREADD interaction when vHPC–mPFC pathway was manipulated [F(1,28) = 4.3, p = 0.047; diet effect: F(1,28) = 1.9, p = 0.17; DREADD effect: F(1,28) = 13.6, p = 0.001; Figure 3B, right] but not when vHPC–NAc pathway was silenced [F(1,29) = 0.9, p = 0.34; diet effect: F(1,29) = 7.6, p = 0.01; DREADD effect: F(1,29) = 3.0, p = 0.09; Figure 3B, left]. Post hoc analyses indicated a significantly higher preference for the displaced object in HFD Gi vHPC–mPFC group than in HFD Control vHPC–mPFC group (p = 0.0017).
 
@@ -75,7 +374,7 @@ Looking at the performance of each group, CD-fed Control mice explored preferent
 
 Taken as a whole, these results demonstrate that silencing of the vHPC->mPFC, but not the vHPC->NAc, pathway restored HFD-induced OLM deficits.
 
-## HFD and projecting vHPC cells manipulation did not affect anxiety-like behaviour
+### HFD and projecting vHPC cells manipulation did not affect anxiety-like behaviour
 
 Adult HFD intake (Fulton et al., 2022) or manipulation of specific vHPC pathways (Padilla-Coreano et al., 2016; Parfitt et al., 2017) has been reported to affect anxiety-like behaviour. We therefore evaluated, whether anxiety was affected in our conditions using the Elevated-Plus Maze test (Figure 3—figure supplement 1A).
 
@@ -95,7 +394,7 @@ Previous findings indicate that periadolescent exposure to HFD drastically affec
 
 Recent studies indicate that a very small proportion (5–10%) of vHPC neurons project to two or three areas (Ciocchi et al., 2015; Gergues et al., 2020; Parfitt et al., 2017). However, the double dissociation in our effects of pathway-specific silencing on ORM and OLM precludes that collaterals of mPFC- and NAc-projecting vHPC neurons may be involved in our effects. Also, this dissociation observed in the present study excludes any influences of sensory, motor, motivational or attentional processes, which would have similarly affected both memory tasks. Finally, our diet or pathway manipulation did not affect anxiety-like behaviour, ruling out that our effects on memory were due to differences in anxiety levels among the groups. This is in line with previous studies performed after juvenile or periadolescent HFD exposure (André et al., 2014; Boitard et al., 2015; Hayes et al., 2023; Khazen et al., 2019; Tsan et al., 2022) but in contrast with others showing that adult HFD exposure triggered anxiety-like behaviour (Décarie-Spain et al., 2018; Fulton et al., 2022). This suggests a developmental HFD impact on anxiety which deserves more investigation.
 
-## Conclusions
+### Conclusions
 
 The current study provides evidence that periadolescent HFD induces deficits in different types of memory through an over-activation of specific vHPC efferent pathways and dampening this activation alleviates these memory deficits. These findings extend our knowledge about the cerebral impact of obesogenic diet focusing on brain network and connectivity and emphasize the distinct role of specific vHPC efferent pathways in different types of object-based memory. Future studies are required to examine the effects of manipulation of vHPC pathways, including those to anterior olfactory nucleus (Aqrabawi and Kim, 2018), in other types of memory impairments promoted by HFD, such as social and olfactory memory (Reichelt et al., 2019; Yaseen et al., 2019). Moreover, further investigation is also necessary to decipher what is the origin of this HPC over-activation in obesogenic diet-fed rodents.
 
@@ -103,50 +402,50 @@ According to the important role played by HPC hyperactivity in memory decline as
 
 ## Materials and methods
 
-## Animals, diet, and housing
+### Animals, diet, and housing
 
 Male C57BL/6J mice aged of 3 weeks old (Janvier Labs, France) were divided randomly into groups of 8 per cage (45 × 25 × 20 cm, containing a paper house, nesting material and a small wooden stick) and had ad libitum access to a control diet (CD; n = 43; 2.9 kcal/g; 8% lipids, 19% proteins, 73% carbohydrates mostly from starch; A04, SAFE) or a HFD (n = 64; 4.7 kcal/g; 45% lipids mostly saturated fat from lard, 20% proteins, 35% carbohydrates mainly from sucrose; D12451, Research Diet). We focused on males given that female rodents do not consistently exhibit memory deficits after post-weaning obesogenic diet intake (see Abbott et al., 2016; Hwang et al., 2010), which is probably related to ovarian hormones that appear to protect females from obesity and metabolic impairments (Palmer and Clegg, 2015). All animals were housed in a temperature-controlled room (22 ± 1°C) maintained under a 12-hr light/dark cycle (lights on at 8:00 am, lights off at 8:00 pm) and had free access to food and water during 12 weeks (before the beginning of behaviour) as well as during all behavioural procedures before euthanasia (13–14 weeks of diet exposure in total). Animals were weighed at arrival, before and after surgery, before each behavioural test as well as before euthanasia. All animal care and experimental procedures were in accordance with the INRAE Quality Reference System and with both French (Directive 87/148, Ministère de l’Agriculture et de la Pêche) and European legislations (Directive 86/609/EEC). They followed ethical protocols approved by the Region Aquitaine Veterinary Services (Direction Départementale de la Protection des Animaux, approval ID: B33-063-920) and by the animal ethic committee of Bordeaux CEEA50. Every effort was made to minimize suffering and reduce the number of animals used. Both surgeries and behavioural experiments were performed at adulthood. The day before euthanasia, fat mass (in grams) was measured by nuclear magnetic resonance (minispec LF90 II, Bruker, Wissembourg, 67166) (Naneix et al., 2021) and divided by body weight (in grams) to express the percentage of fat content for each mouse. Three homozygous Ai14 Cre reporter adult mice [B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J or simply Ai14(RCL-tdT)-D; Jackson laboratory] under CD were also used to characterize vHPC-to-NAc and vHPC-to-mPFC pathways allowing the Cre-dependent expression of the red fluorophore td-Tomato specifically in vHPC projecting neurons and their efferents (see below).
 
-## Viral vectors and drugs
+### Viral vectors and drugs
 
 An AAV carrying the Cre recombinase was injected in vHPC for the experiment performed in the Ai14(RCL-tdT)-D mice (AAV1-CaMKII-Cre). For the chemogenetic manipulation of specific pathways, an anterograde AAV carrying Cre-dependent inhibitory DREADD (AAV8-hSyn1-dlox-hM4DGi-mCherry or Gi) or control virus (AAV8-hSyn1-dlox-mCherry) was injected in vHPC in combination with a retrograde canine virus (CAV2) carrying the Cre recombinase (CAV2-Cre) injected in either the mPFC or the NAc. This led to 8 groups [2 diets x 2 viruses injected in vHPC × 2 target areas (NAc or PFC) injected with retrograde virus]: CD Control vHPC–NAc, CD Control vHPC–mPFC, CD Gi vHPC–NAc, CD Gi vHPC–mPFC; HFD Control vHPC–NAc, HFD Control vHPC–mPFC, HFD Gi vHPC–NAc, and HFD Gi vHPC–mPFC.
 
 The exogenous DREADD ligand CNO was dissolved in 0.9% saline for a final concentration of 2 mg/kg. Saline solution was used for vehicle injections. Both CNO and vehicle were freshly prepared every day and delivered by intraperitoneal injection (10 ml/kg) 45 min before the training phases of the object memory tests (Recognition and Location) and before the beginning of the elevated plus-maze (EPM) experiment.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 After 7–8 weeks under CD or HFD, mice were anaesthetized under isoflurane (5% induction; 1–2% maintenance), injected with the analgesic buprenorphine (Buprecar, 0.05 mg/kg s.c.) and the non-steroidal anti-inflammatory drug carproxifen (Carprox, 5 mg/kg s.c.) and were placed on a stereotaxic apparatus (David Kopf Instruments). The scalp was shaved, cleaned, and locally anaesthetized with a local subcutaneous injection of lidocaine (Lurocaine, 0.1 ml). Viral vectors were infused using a 10-μl Hamilton syringe (Hamilton) and an ultra-micro pump (UMP3, World Precision Instruments, USA). For the experiment performed in the Ai14(RCL-tdT)-D mice, two injections per vHPC (AP −3.2 mm, ML ±3.2 mm from Bregma, DV −3 and −4 mm from the skull surface, according to Paxinos and Franklin, 2004) of 1 μl each were performed with the vector AAV1-CaMKII-Cre. For the dual virus experiments, 1 μl of the AAV (AAV-dlox-hM4Di or AAV control) was injected over 6 min (150 nl/min) in the vHPC at 1 site in each hemisphere, coordinates were AP −3.2 mm, ML ±3.2 mm from Bregma, DV −4 mm from the skull surface. Then 250 nl in mPFC (AP +1.9 mm, ML ±0.3 mm, DV −3 mm from skull) or 400 nl in NAc shell (AP +1.2 mm, ML ±0.6 mm, DV −4.8 mm from skull) of CAV2 virus were injected at a rate of 100 nl/min over 2 min 30 s and 4 min, respectively. In all cases, the pipette was left in place for a 5-min diffusion period, before being slowly removed. The incision was closed with sutures and the animal was kept on a heating pad until recovery. Mice were single housed for 4 days and their body weight and behaviour were closely monitored. Then, they were housed in groups of 4 mice per cage and 4 weeks later (allowing optimal virus expression) behavioural tests started.
 
-## Behavioural procedures
+### Behavioural procedures
 
 The eight groups were submitted to different object-based memory tasks known to be impaired by periadolescent HFD, namely long-term ORM (Biyong et al., 2021; Naneix et al., 2021) and short-term OLM (Glushchak et al., 2021; Khazen et al., 2019; Valladolid-Acebes et al., 2013). Anxiety-like behaviours were also evaluated in an EPM. The order of tests was performed in a random way. Animals were handled twice a day for 3 days before the beginning of the first behavioural test. All behavioural tests were performed during light-phase and under white light (15 lux). Between each trial, arena (and objects where appropriate) were cleaned with 10% of alcohol. All behaviour analysis was scored online, apart from the EPM that was automatically analysed by SMART system (Bioseb, Vitrolles, France).
 
-## Object recognition memory
+#### Object recognition memory
 
 During training, two identical new objects were presented in a novel open field arena (40 × 40 × 40 cm, wood) and each mouse was left freely to explore them. Long-term memory was assessed 24 hr later, by randomly replacing one of the objects by a novel one. In both phases, object exploration, defined as nose and whiskers pointed towards the object in a distance of less than 1–1.5 cm away, was manually quantified by a trained experimenter blind to experimental groups. In both phases, the session duration was 10 min max but the mouse was removed from the apparatus after 20 s of total exploration for both objects which reduces inter-individual variability (Leger et al., 2013), otherwise mice were excluded from analysis. Data were presented as the percentage of exploration of novel (or familiar) object calculated as time exploring novel (or familiar) object over total exploration time of both objects × 100.
 
-## Object location memory
+#### Object location memory
 
 Two identical new objects (different from ORM) were presented during training in a new room with a new open field arena (40 × 40 × 40 cm, plastic) and each mouse was left freely to explore them. Short-term memory was assessed 11 hr later, by randomly placing one of the objects in a novel location. In both phases, an inclusion criterion of 20 s of total exploration was set at a 10-min exploration maximum, otherwise mice were excluded from analysis. Data were presented as the percentage of exploration of novel (or familiar) location calculated as time exploring novel (or familiar) location on total exploration time of both objects × 100.
 
-## Elevated plus-maze
+#### Elevated plus-maze
 
 Mice were allowed to freely explore the plus‐shaped acrylic maze sized 30 × 8 × 15 cm (closed arms) and 30 × 8 cm (open arms) connected by a central part (8 × 8 cm) for 10 min. The maze is elevated 120 cm above the floor. A mouse was considered to enter one zone only when it placed all four limbs in any particular part of the maze. Time spent in the open versus the closed arms was recorded and results are depicted as a percentage of open arm time [calculated as time in open arms over total time spent in both open and closed arms (with exclusion of time spent in the central area) × 100]. In addition, a percentage of open arm entries was also calculated with respect to the total number of entries in both open and closed arms. An increased percentage for the open arms (time and/or entries) indicates low anxiety.
 
-## Tissue collection and immunohistochemistry
+### Tissue collection and immunohistochemistry
 
 All mice were sacrificed after behavioural testing. For experiments evaluating c-Fos activation, four to eight mice in each of the eight groups were injected with CNO 45 min before being placed in new open field arena (40 × 40 × 40 cm) with two identical new objects (corresponding to ORM and OLM training) during 8 min and were sacrificed 90 min after [3 mice presenting very low number of mCherry labelled cells (<30) in vHPC were excluded; see Table 2]. Moreover, additional HFD Gi mice (3 vHPC–NAc and 4 vHPC–mPFC) were injected with saline (instead of CNO) to control for CNO effect (Table 2). As similar levels of Fos+ cells were found between these HFD Gi-saline and HFD mCherry-CNO groups, indicating an absence of CNO effect by itself on c-Fos expression, they were merged (vHPC–NAc n = 7 + vHPC–mPFC n = 8) and appears as HFD Control groups on Figure 2 and Figure 2—figure supplement 1.
 
 Animals were deeply anaesthetized with a mix of pentobarbital and lidocaine (Exagon, 300 mg/kg and Lurocaine, 30 mg/kg) before being transcardiacally perfused with phosphate-buffered saline (PBS) solution followed by 4% paraformaldehyde (Sigma-Aldrich). Brains were collected, post-fixed in 4% paraformaldehyde at 4°C for 2 days, then switched to PBS solution and stored at 4°C until slicing. 40 μm coronal sections were cut via vibratome (Leica) and stored in cryoprotective solution (glycerol and ethylene glycol Sigma-Aldrich in PBS) at −20°C.
 
-## DREADD expression
+### DREADD expression
 
 On the first day, slices were washed with PBS and incubated with 0.33% H2O2 solution in PBS for 30 min. Then, they were incubated with blocking solution [0.2% Triton, 3% foetal bovine serum (FBS), in PBS] for 90 min followed by an incubation with a rabbit anti-DsRed antibody (1:2000, in blocking solution) overnight at 4°C. Next, slices were incubated with a biotinylated goat anti-rabbit antibody (1:1000 in PBS with 1% FBS) for 90 min at room temperature, followed by an 1-hr incubation in avidin–biotin–peroxidase solution (Vectastain). Slices were then washed with PBS and Tris buffer solution (TBS, pH = 7.4) followed by diaminobenzidine (DAB) incubation for 15–30 min (1 tablet of DAB and 1 tablet H2O2; 5 ml of distilled H2O in 20 ml of TBS). After stopping the reaction, slices were stored at 4°C. Slices were then mounted on gelatin-coated slides, covered by medium (Southern Biotech) and cover-slipped. Each section was photographed (Nikon-ACT-1 software).
 
-## Pathway activation
+### Pathway activation
 
 A double immunofluorescence was performed. Slices were washed with PBS solution, incubated with blocking solution for 90 min then with a combination of two primary antibodies: rabbit anti-Fos (1:2000) and chicken anti-mCherry (1:5000), all in blocking solution of 3% FBS, 0.2% Triton in PBS (72 hr, at 4°C). Then, slices were incubated with a combination of two secondary antibodies, goat anti-chicken (1:1000, A488) and goat anti-rabbit (1:1000, A594). Slices were stored at 4°C until mounting on non-gelatin-coated slides followed by cover of DAPI fluoromount (Southern Biotech) and cover-slipped. All slices were photographed with Nanozoomer slide scanner Hamamatsu NANOZOOMER 2.0HT (Bordeaux Imaging Center, Univeristy of Bordeaux, France). QuPath program QuPath v.0.3.0 (Bankhead et al., 2017) was used for quantification of c-Fos-positive cells in hippocampus (CA1 and CA3), NAc shell, and mPFC.
 
-## Statistics
+### Statistics
 
 Two mice died after surgery (one CD and one HFD) and five mice were excluded after histological control (one CD and four HFD with unilateral labelling). Data were analyzed with Prism Software (GraphPad) and are expressed as mean ± mSEM. Comparison between groups was realized using three-way ANOVA for weight and fat mass (diet × pathway × DREADD) and two-way ANOVA for c-Fos and behaviours (either diet × pathway in Control mice or diet × DREADD for each pathway manipulation) followed when the interaction was significant by Tukey’s post hoc analysis. Moreover, for each group, ORM and OLM performances were compared against 50% exploration ratio (chance level) using one-sample t-test. Significance was set at p ≤ 0.05.

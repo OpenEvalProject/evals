@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04ywg3445 New England Biolabs Inc Ipswich United States
+1. New England Biolabs Inc Ipswich United States ([ROR:04ywg3445](https://ror.org/04ywg3445))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ An embedding is an alternative vector representation of the input data which, pr
 
 ## Results
 
-## Using ESM-2 3B to generate small positional embeddings
+### Using ESM-2 3B to generate small positional embeddings
 
 ESM-2 was already pretrained on the masked language modeling task (Devlin et al., 2019; Lin et al., 2023) of predicting amino acid distributions at masked positions of input sequences, therefore no additional fine-tuning was necessary to induce it to produce probabilities compatible with profile HMM tools (Figure 1A). Positional amino acid frequencies predicted by ESM-2 3B resembled those found in MSAs built from sequence searches; Figure 2 shows an example comparison of logos of HMM profiles (Wheeler et al., 2014) derived from the 4HBT Pfam profile and the YBGC_HELPY___14–90 sequence from the seed alignment. The example is cherry picked in terms of the profile length, to be short enough to look nice as a figure, but it is not cherry picked for agreement between the profiles; it was the first short one we looked at.
 
@@ -44,7 +44,7 @@ ESM-2 was already pretrained on the masked language modeling task (Devlin et al.
 
 To produce Foldseek-compatible 3Di sequences, we trained a two-layer 1D convolutional neural network (CNN) to convert positional embeddings from the last transformer layer of ESM-2 3B into 3Di sequences, we then unfroze the last transformer layer and fine-tuned it together with the CNN. The fine-tuned model, which we call ESM-2 3B 3Di (Figure 1B), converted amino acids to 3Di with an accuracy of 64% compared to a test set of 3Di sequences derived from AlphaFold2-predicted structures. Training and test sets were derived from a random split of the Foldseek AlphaFold2 UniProt50 dataset (Jumper et al., 2021; van Kempen et al., 2024; Varadi et al., 2022), a reduced-redundancy subset of the UniProt AlphaFold2 structures (see Methods for details).
 
-## Comparison of newly developed embedding methods
+### Comparison of newly developed embedding methods
 
 To evaluate the capacity of small embeddings to improve search sensitivity, we generated predicted profiles and 3Di sequences from clustered Pfam 32 splits (Bileschi et al., 2022) and converted them into formats compatible with various search tools (Figure 1C). Pfam (Mistry et al., 2021) is a set of manually curated MSAs of families of homologous protein domains. Some families presumed to have a common evolutionary origin are further grouped into clans. In the clustered splits, each family is divided into train and test groups such that each sequence in the test group has less than 25% identity to the most similar protein in the train group (Bileschi et al., 2022). The sensitivity of a search algorithm is evaluated by the ability to match sequences from the test groups to their corresponding train group at the family or clan level.
 
@@ -58,7 +58,7 @@ Foldseek searches where both the queries and database consisted of 3Di sequences
 
 While faster than MSA construction or full structure prediction, pLM embedding still has non-trivial computational overhead. This limits the possibility of using methods based on pLM embeddings to perform sensitive homology searches against large metagenomic databases such as the 2.4 billion sequence Mgnify database (Richardson et al., 2023). It would be desirable to have search methods where the database can remain as amino acid sequences or other cheaply calculated representations and the queries can be processed with more expensive methods. To this end, we tested hmmsearch using ESM-2 3B generated profiles as queries against amino acid databases (Figure 3A and B, lines 3 and 4). This is similar to a two-iteration PSI-BLAST (Altschul et al., 1997) or JackHMMER (Johnson et al., 2010) search where the first search and MSA-building step is replaced by a pLM embedding step. Curiously, hmmsearch using profiles built directly from the pLM probabilities (line 3) had the lowest accuracy of any algorithm. Nevertheless, profiles processed with hmmbuild from HMMER3, applying HMMER3 Dirichlet priors on top of the pLM probabilities (line 4), had better family prediction accuracy than phmmer at all but the highest identity bin, and accuracy on par with hmmscan at 18% identity and lower.
 
-## Benchmarking of ESM-2 3B 3Di against emerging and established search methods
+### Benchmarking of ESM-2 3B 3Di against emerging and established search methods
 
 ESM-2 3B 3Di coupled to Foldseek search performed the best out of all the new methods we proposed on the clustered Pfam benchmark. To examine the performance of ESM-2 3B 3Di-based search against other emerging methods, we used the SCOPe40 benchmark (Figure 4; Chandonia et al., 2019; van Kempen et al., 2024), which has previously been used to evaluate Foldseek-based search methods (Heinzinger et al., 2023; van Kempen et al., 2024). The SCOPe40 benchmark is convenient because the dataset is much smaller than the clustered Pfam dataset, 11,211 vs 1,339,083 sequences. The small size of the dataset allowed us to compare compute-intensive methods, such as predicting AlphaFold2 structures for the entire dataset and then running Foldseek. In the SCOPe40 benchmark, the criteria for true positives (TPs) vary depending on the level of classification: for family, TPs are matches within the same family; for superfamily, TPs are matches sharing the same superfamily but not the same family; and for fold, TPs are matches sharing the same fold but are not the same superfamily. Any hits from different folds (but not from different families or superfamilies) are considered false positives (FPs). Calculating the metric in this way has the effect that ‘Family’ is a metric of homolog detection at the closest evolutionary distance (Figure 4A), ‘Superfamily’ is a metric of detection of more distant homologs (Figure 4B), and ‘Fold’ is a metric of very distant homolog detection or detection of evolutionarily unrelated proteins with similar folded structures (Figure 4C). All 11,211 proteins were used as queries for timing, but for sensitivity calculations, only the 3566 proteins with at least one other family member, at least one other superfamily member, and at least one other fold member were considered.
 
@@ -84,15 +84,15 @@ Finally, asymmetric architectures where embedding a database sequence is cheaper
 
 ## Methods
 
-## Alignments
+### Alignments
 
 Unless otherwise noted, MSAs were made using MAFFT (v7.505) (Katoh and Standley, 2013) with options --anysymbol --maxiterate 1000 --globalpair. Protein alignments used the BLOSUM62 substitution matrix (Henikoff and Henikoff, 1992). 3Di alignments used the 3Di substitution matrix from Foldseek (van Kempen et al., 2024; Steinegger Lab, 2022; https://github.com/steineggerlab/foldseek/blob/master/data/mat3di.out).
 
-## Patching HMMER3 with background frequencies and Dirichlet priors for 3Di
+### Patching HMMER3 with background frequencies and Dirichlet priors for 3Di
 
 We created a fork of the HMMER3 program (Eddy, 2011), replacing amino acid background frequencies and Dirichlet priors with values calculated from the 3Di alphabet instead of the amino acid alphabet (GitHub, copy archived at Johnson, 2024b; https://github.com/seanrjohnson/hmmer3di/commit/347ee45cd1fb5fc5984b2a3e3e188afbde4b8d2f). To generate a set of 3Di MSAs, we converted the AlphaFold UniProt Foldseek database (Jumper et al., 2021; van Kempen et al., 2024; Varadi et al., 2022) to a 3Di fasta file. We then looked up every sequence name from the Pfam 35 seed file in the UniProt 3Di fasta file and, for cases where the corresponding sequence was identifiable, extracted the sub-sequence corresponding to the Pfam 35 seed. 3Di seeds from each profile were aligned using MAFFT. MSA columns with more than 10 rows were used to calculate background frequencies and Dirichlet priors using the HMMER3 program esl-mixdchlet fit with options -s 17 9 20. Amino acid background frequencies and Dirichlet priors in the HMMER3 source code were then replaced with the newly calculated 3Di background frequencies and Dirichlet priors. We call the patched HMMER3 as HMMER3Di.
 
-## Fine-tuning ESM-2 3B to convert amino acid sequences into 3Di sequences
+### Fine-tuning ESM-2 3B to convert amino acid sequences into 3Di sequences
 
 A 1D CNN was added on top of ESM-2 3B. The CNN takes as input position-wise embeddings from the last transformer layer of ESM-2 3B. The CNN consists of two layers, the first layer has 2560 input channels (the size of the embeddings from ESM-2 3B), and 300 output channels, kernel size 5, stride 1, padding 3. The second layer has 300 input channels and 21 output channels (one for each 3Di symbol plus a padding symbol), kernel size 5, stride 1, padding 1. The model was trained with a weighted cross-entropy loss function using weights of 0.1 * the diagonal from 3Di substitution matrix. The neural network was implemented in PyTorch (Paszke et al., 2019).
 
@@ -104,15 +104,15 @@ The last transformer layer of ESM-2 was then unfrozen and training restarted fro
 
 The trained weights are available on Zenodo. The training code is available on GitHub (copy archived at Johnson, 2024a). The model training code should be useful for fine-tuning ESM-2 to convert amino acid sequences to various other kinds of sequences, such as secondary structure codes.
 
-## Pfam 32 clustered splits
+### Pfam 32 clustered splits
 
 Pfam 32 clustered splits (Bileschi et al., 2022) were downloaded from: https://console.cloud.google.com/storage/browser/brain-genomics-public/research/proteins/pfam/clustered_split. Data for mapping of individual Pfam 32 families to clans were downloaded from: https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/. The sequences from the train, dev, and test splits were sorted into unaligned fasta files according to their split and family (aa seq).
 
-## Predicting 3Di sequences
+### Predicting 3Di sequences
 
 Each training and test sequence was converted into a predicted 3Di sequence (predicted 3Di) using the ESM-2 3B 3Di model described above. MAFFT alignments were made of both the amino acid and predicted 3Di training and test sequences for each family. HMMER3 profiles were built from the alignments using either unaltered HMMER3 (predicted 3Di hmmer profile), or HMMER3Di (predicted 3Di hmmer3Di profile).
 
-## Predicting profiles to generate HH-suite hhm files and HMMER3 hmm files from single sequences
+### Predicting profiles to generate HH-suite hhm files and HMMER3 hmm files from single sequences
 
 Positional amino acid probabilities were calculated for unaligned train and test sequence using pretrained ESM-2 3B in the following algorithm.
 
@@ -122,7 +122,7 @@ The hyperparameter of seven passes over the input sequence was chosen semi-empir
 
 The positional probabilities were written directly as an HH-suite compatible.hhm file (predicted hhsuite profile). A 40 sequence fasta MSA file was written where each sequence was randomly sampled from the probability distribution. Hmmbuild was run with default settings on the sampled MSA (predicted hmmer profile, with Dirichlet priors applied) and with the -pn;on; setting, which disables adjustments to the probability distribution based on Dirichlet priors (predicted hmmer profile, without Dirichlet priors applied).
 
-## Building HH-suite hhm and HMMER3 hmm profiles from train amino acid MSAs
+### Building HH-suite hhm and HMMER3 hmm profiles from train amino acid MSAs
 
 The amino acid MSA for each training family were converted into an HH-suite database (aa hhsuite profile) with the following bash script:
 
@@ -136,18 +136,18 @@ cstranslate -f -x 0.3 c 4 -I a3m -i db_a3m -o db_cs219
 
 HMMER3 profiles were built by calling hmmbuild with default settings on the training family amino acid MSAs (aa hmmer profile).
 
-## Building HH-suite databases from predicted profiles
+### Building HH-suite databases from predicted profiles
 
 HH-suite databases were built from predicted profiles.hhm files and the corresponding sampled 40 sequence MSA fasta files using the following bash script:
 
 ffindex_build -s db_hhm.ffdata db_hhm.ffindex esm2_3B_profiles
 ffindex_build -s db_a3m.ffdata db_a3m.ffindex esm2_3B_sampled_msascstranslate -f -x 0.3 c 4 -I a3m -i db_a3m -o db_cs219
 
-## Building Foldseek databases from predicted 3Di sequences
+### Building Foldseek databases from predicted 3Di sequences
 
 Amino acid and predicted 3Di fasta files were converted into Foldseek-compatible databases using a new script, fasta2foldseek.py, available from the esmologs python package (see below).
 
-## Hmmscan, phmmer, and hmmsearch HMMER3 searches
+### Hmmscan, phmmer, and hmmsearch HMMER3 searches
 
 In an attempt to mimic the Top pick HMM strategy reported by Bileschi et al., 2022, we ran all HMMER3 searches in up to two iterations. The first iteration was run with default settings. For test sequences where no hits were detected among the training sequences or profiles, depending on the program, a second iteration was run with the addition of parameters intended to maximize sensitivity at the expense of search speed:
 
@@ -155,17 +155,17 @@ In an attempt to mimic the Top pick HMM strategy reported by Bileschi et al., 20
 
 It should be noted that while our phmmer results are directly comparable to the phmmer results reported by Bileschi et al., our hmmscan results are not directly comparable to the reported ‘Top Pick HMM’ results because we re-aligned the training sequences for each family instead of using the Pfam seed alignments. Still our results were very similar. We observed a 17.6% error rate (3744 test sequences with mispredicted family assignments) by hmmscan, compared to the reported 18.1% error rate (3844 mispredictions).
 
-## 3Di_hmmscan HMMER3Di searches
+### 3Di_hmmscan HMMER3Di searches
 
 3Di_hmmscan searches were performed using the same two-iteration method described above for searches using standard HMMER3 programs.
 
-## Hhblits HH-suite searches
+### Hhblits HH-suite searches
 
 Hhbilts was run with the options:
 
 -tags -n 1 v 0
 
-## Foldseek searches
+### Foldseek searches
 
 After converting both query and target amino acid and predicted 3Di fasta files into Foldseek-compatible databases (see above), Foldseek searches were run with the following commands:
 
@@ -174,7 +174,7 @@ foldseek convertalis test_db train_db foldseek_results hits.tsv --format-output 
 
 For 3Di-only searches, the option --alignment-type 0 was added to the search call.
 
-## SCOPe40 benchmark
+### SCOPe40 benchmark
 
 The SCOPe40 benchmark was conducted as previously described (Heinzinger et al., 2023; van Kempen et al., 2024). For timings, GPU operations were run on an Nvidia A100 GPU with 40 Gb of VRAM. CPU operations were run on 16 cores on an Intel Xeon Gold 6258 R.
 
@@ -188,7 +188,7 @@ Foldseek was always run with the command:
 
 Foldseek search queryDB targetDB aln3 tmpFolder -s 9.5 -e 10 --max-seqs 2000 --threads 16
 
-## pLM-BLAST for SCOPe40
+### pLM-BLAST for SCOPe40
 
 For pLM-BLAST (Kaminski et al., 2023), the version from October 30, 2023 was used (Dunin-Horkawicz et al., 2023) . We had to make a few trivial changes to the code to make it not crash when running the following operations.
 

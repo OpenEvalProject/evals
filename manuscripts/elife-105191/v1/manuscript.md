@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Laboratory Medicine and Pathology, University of Washington Medical Center Seattle United States
+1. Department of Laboratory Medicine and Pathology, University of Washington Medical Center Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 

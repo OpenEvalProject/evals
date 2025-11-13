@@ -18,19 +18,19 @@
 
 ### Affiliations
 
-1. https://ror.org/03bea9k73 Centre for Chromosome Biology, School of Natural Sciences, National University of Ireland Galway Galway Ireland
-2. https://ror.org/03bea9k73 Centre for Microscopy and Imaging, Discipline of Anatomy, National University of Ireland, Galway Galway Ireland
-3. https://ror.org/03bea9k73 National Centre for Biomedical Engineering Science, National University of Ireland, Galway Galway Ireland
-4. https://ror.org/03bea9k73 Carbohydrate Signalling Group, Microbiology, School of Natural Sciences, National University of Ireland Galway Galway Ireland
-5. https://ror.org/02y3ad647 Whitney Laboratory for Marine Bioscience, University of Florida St. Augustine, Florida United States
-6. https://ror.org/02y3ad647 Department of Biology, University of Florida Gainesville, Florida United States
-7. https://ror.org/01cwqze88 Computational and Statistical Genomics Branch, Division of Intramural Research, National Human Genome Research Institute, National Institutes of Health Bethesda, Maryland United States
+1. Centre for Chromosome Biology, School of Natural Sciences, National University of Ireland Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))
+2. Centre for Microscopy and Imaging, Discipline of Anatomy, National University of Ireland, Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))
+3. National Centre for Biomedical Engineering Science, National University of Ireland, Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))
+4. Carbohydrate Signalling Group, Microbiology, School of Natural Sciences, National University of Ireland Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))
+5. Whitney Laboratory for Marine Bioscience, University of Florida St. Augustine, Florida United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+6. Department of Biology, University of Florida Gainesville, Florida United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+7. Computational and Statistical Genomics Branch, Division of Intramural Research, National Human Genome Research Institute, National Institutes of Health Bethesda, Maryland United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
 ## Abstract
 
-Neurogenesis is the generation of neurons from stem cells, a process that is regulated by SoxB transcription factors (TFs) in many animals. Although the roles of these TFs are well understood in bilaterians, how their neural function evolved is unclear. Here, we use Hydractinia symbiolongicarpus , a member of the early-branching phylum Cnidaria, to provide insight into this question. Using a combination of mRNA in situ hybridization, transgenesis, gene knockdown, transcriptomics, and in vivo imaging, we provide a comprehensive molecular and cellular analysis of neurogenesis during embryogenesis, homeostasis, and regeneration in this animal. We show that SoxB genes act sequentially at least in some cases. Stem cells expressing Piwi1 and Soxb1 , which have broad developmental potential, become neural progenitors that express Soxb2 before differentiating into mature neural cells. Knockdown of SoxB genes resulted in complex defects in embryonic neurogenesis. Hydractinia neural cells differentiate while migrating from the aboral to the oral end of the animal, but it is unclear whether migration per se or exposure to different microenvironments is the main driver of their fate determination. Our data constitute a rich resource for studies aiming at addressing this question, which is at the heart of understanding the origin and development of animal nervous systems.
+Neurogenesis is the generation of neurons from stem cells, a process that is regulated by SoxB transcription factors (TFs) in many animals. Although the roles of these TFs are well understood in bilaterians, how their neural function evolved is unclear. Here, we use Hydractinia symbiolongicarpus, a member of the early-branching phylum Cnidaria, to provide insight into this question. Using a combination of mRNA in situ hybridization, transgenesis, gene knockdown, transcriptomics, and in vivo imaging, we provide a comprehensive molecular and cellular analysis of neurogenesis during embryogenesis, homeostasis, and regeneration in this animal. We show that SoxB genes act sequentially at least in some cases. Stem cells expressing Piwi1 and Soxb1, which have broad developmental potential, become neural progenitors that express Soxb2 before differentiating into mature neural cells. Knockdown of SoxB genes resulted in complex defects in embryonic neurogenesis. Hydractinia neural cells differentiate while migrating from the aboral to the oral end of the animal, but it is unclear whether migration per se or exposure to different microenvironments is the main driver of their fate determination. Our data constitute a rich resource for studies aiming at addressing this question, which is at the heart of understanding the origin and development of animal nervous systems.
 
 ## Introduction
 
@@ -42,27 +42,71 @@ Here, we have studied the function of all three Hydractinia SoxB genes in embryo
 
 ## Results
 
-## Expression pattern of SoxB genes in Hydractinia
+### Expression pattern of SoxB genes in Hydractinia
 
 We studied the expression pattern of all three SoxB genes in Hydractinia using both traditional, tyramide amplification-based mRNA fluorescence in situ hybridization (FISH) and signal amplification by exchange reaction (SABER) single-molecule FISH (Kishi et al., 2019). In sexual polyps, Soxb1 was expressed in cells morphologically resembling i-cells and germ cells in males and females (Figure 1A–D). In feeding polyps, Soxb1 was expressed in cells that resembled i-cells both with respect to their morphology and their anatomical location, being primarily distributed in the lower body column of the polyp and largely absent from the oral end of the animal (Bradshaw et al., 2015; Figure 1E–G). To confirm the identity of Soxb1-expressing cells, we used double FISH with Piwi1, a known marker for Hydractinia i-cells and germ cells (DuBuc et al., 2020; Gahan et al., 2016). We found that all Soxb1+ cells also expressed Piwi1 and vice versa (Figure 1). Therefore, we conclude that Soxb1 is expressed in i-cells, that is, in stem cells that give rise to somatic cells (including neurons and nematocytes) and to germ cells. Soxb2 expression partially overlapped with Soxb1 in the mid-region of the polyp body column, being largely absent from the lower (aboral) area of the polyp that primarily included only Piwi1+/Soxb1+ cells (Figure 2A–C). Soxb3 was expressed in the middle and upper (i.e., oral) parts of the polyp and partly overlapped with Soxb2 in the mid-region (Figure 2D–F). These findings are consistent with a previous study that investigated Soxb2/Soxb3 expression (Flici et al., 2017). It is also in line with the known pattern of distribution of Hydractinia cells, with i-cells being restricted to the lower body column, and neural cells mainly concentrated in the oral pole.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-v3.jpg)
+
+**Figure 1.:** (A–D) Analysis of sexual polyps’ mid (A) and lower (B) body column, and early (C) and late (D) oocytes. (E–G) Analysis of feeding polyps’ head (E), mid-(F), and lower (G) body column. (A–D) were tyramide-based fluorescence in situ hybridization (FISH); (E–G) were single-molecule FISH. Scale bars = 40 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Simplified cladogram showing the position of various cnidarian clades relative to bilaterians. (B) The life cycle of Hydractinia. (B) Schematic representation of Hydractinia’s body wall and the cell types composing it.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) During embryogenesis and in the larval stage, i-cells are exclusively present in the endoderm; they migrate to the epidermis during metamorphosis. (B) Schematic representation.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) GLWamide+ neurons. (B) RFamide+ neurons. (C) Nematocyst capsules, representing mature nematocytes, visualized by lectin staining. (D) Acetylated tubulin immunostaining. (E) Ncol3+ nematoblasts. (F) Piwi1+ i-cells. (G) S-phase cells. (H) Schematic representation showing 24 hr embryos, 2-day pre-panula, and 3-day planula larva that is metamorphosis competent. Scale bars = 40μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) GLWamide+ neurons. (B) RFamide+ neurons. (C) Ncol1+ and Ncol3+ nematoblasts in feeding polyps. (D) Ncol1+ and Ncol3+ nematoblasts in sexual polyps. (E) Acetylated tubulin immunostaining in sexual polyps. (F) Schematic representation. Scale bars = 40μm.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig2-v3.jpg)
 
-**Figure 2.:** Soxb1 and Soxb2, and Soxb2 and Soxb3 in feeding polyps.(A–C) Single-molecule fluorescence in situ hybridization (FISH) with probes against Soxb1 and Soxb2 showing upper-mid (A), lower-mid (B), and lower (C) body column. (D–F) Single-molecule FISH with probes against Soxb2 and Soxb3 showing the head region (D), upper-mid (E), and lower-mid (F) body column. Arrowheads point to double-positive cells. Scale bars = 40 μm.
+**Figure 2.:** (A–C) Single-molecule fluorescence in situ hybridization (FISH) with probes against Soxb1 and Soxb2 showing upper-mid (A), lower-mid (B), and lower (C) body column. (D–F) Single-molecule FISH with probes against Soxb2 and Soxb3 showing the head region (D), upper-mid (E), and lower-mid (F) body column. Arrowheads point to double-positive cells. Scale bars = 40 μm.
 
 While mRNA FISH experiments, described above, informed us about cells that expressed SoxB genes in space and time at cellular resolution, they did not provide direct information on the fate of these cells. To obtain these data, we generated transgenic reporter animals that expressed tdTomato or GFP, driven by the endogenous Soxb1 or Soxb2 genomic control elements, respectively (Figure 3A–I). Attempts to generate a Soxb3 reporter were unsuccessful. Instead, we used an Rfamide reporter animal that expresses GFP in RFamide+ neurons (Figure 3J–L). The rationale of this approach was that the long half-life of fluorescent proteins would enable tracking cells even after their fate is changed and the reporter gene shut down. Fluorescence of the Soxb1::tdTomato reporter was dim in vivo but the signal was enhanced in fixed animals through the use of anti-RFP antibodies (Figure 3A–E). In contrast, the signal produced by the Soxb2 and Rfamide reporters, both expressing GFP, was sufficiently bright to be viewed in vivo using fluorescence stereomicroscopy (Figure 3F–L).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig3-v3.jpg)
 
-**Figure 3.:** Soxb1, Soxb2, and Rfamide transgenic reporter animals.(A–E) Soxb1::tdTomato reporter animal. Animals were fixed and stained with an anti-dsRed antibody. (A) Whole feeding polyp. (B) Lower polyp body column. (B’) Higher magnification of tdTomato+ i-cells. (C) Head region including base of tentacles. (C’) Close-up showing tdTomato+ neurites. (D) Male sexual polyp. (E) Female sexual polyp. (E’) Higher magnification of tdTomato+ oocytes. (F–I) Live imaging of a Soxb2::GFP reporter animal. (F) planula larva. (G) Oral pole of a polyp viewed from above. (G’, G’’) Higher magnification of GFP+ cells with neural morphology. (H) GFP+ interconnected neurons in stolon. (I) Mid-body column region of polyp showing GFP+ cells. (I’) GFP+ nematoblasts (based on the presence of a nematocyst capsule). (I’’) GFP+ neurons. (J–L) Live imaging of Rfamide::GFP+ reporter feeding polyps. (J) Upper polyp region including head and tentacles. (K) Oral pole of feeding polyp viewed from above. (L) Higher magnification of the head region, showing GFP+ neural network. Asterisks point to oral ends. Scale bars = 40 μm.
+**Figure 3.:** (A–E) Soxb1::tdTomato reporter animal. Animals were fixed and stained with an anti-dsRed antibody. (A) Whole feeding polyp. (B) Lower polyp body column. (B’) Higher magnification of tdTomato+ i-cells. (C) Head region including base of tentacles. (C’) Close-up showing tdTomato+ neurites. (D) Male sexual polyp. (E) Female sexual polyp. (E’) Higher magnification of tdTomato+ oocytes. (F–I) Live imaging of a Soxb2::GFP reporter animal. (F) planula larva. (G) Oral pole of a polyp viewed from above. (G’, G’’) Higher magnification of GFP+ cells with neural morphology. (H) GFP+ interconnected neurons in stolon. (I) Mid-body column region of polyp showing GFP+ cells. (I’) GFP+ nematoblasts (based on the presence of a nematocyst capsule). (I’’) GFP+ neurons. (J–L) Live imaging of Rfamide::GFP+ reporter feeding polyps. (J) Upper polyp region including head and tentacles. (K) Oral pole of feeding polyp viewed from above. (L) Higher magnification of the head region, showing GFP+ neural network. Asterisks point to oral ends. Scale bars = 40 μm.
 
 Contrary to the mRNA FISH data (Figure 1), the Soxb1 promoter-driven tdTomato was not only observed in stem/progenitor cells but was present in neural cells as well, based on the distinct morphology of these cells (Figure 3A–C). In sexual polyps, tdTomato was also observed in maturing germ cells (Figure 3D and E). This shows that Soxb1+ cells differentiated into neural cells and gametes as expected. The Soxb2 promoter-driven GFP was visible in neurons and nematocytes but not in i-cells (Figures 2 and 3F–I), suggesting that Soxb2+ cells were more committed than i-cells (i.e., Soxb1+ cells). The spatial distribution of Soxb1+ and Soxb2+ cells was distinct from that of their respective progeny, consistent with migrating neural progenitors that differentiate during and following their migration away from the lower body column area where i-cells and their early progeny reside. The Rfamide reporter was only visible in sensory and ganglionic neurons (Figure 3J–L), consistent with the expression pattern of this gene in neurons but not in neural progenitors (Gahan et al., 2017; Kanska and Frank, 2013).
 
 FISH expression patterns (Figure 2) showed partial overlap between Soxb1 and Soxb2, as well as between Soxb2 and Soxb3, the latter confirming previous reported observations (Flici et al., 2017). Furthermore, analysis of transgenic reporter animals indicated that Soxb1+ and Soxb2+ cells give rise to neural cells (Figures 2 and 3). To confirm within-lineage transitions between Soxb1 and Soxb2 expression, we generated double Soxb1::tdTomato/Soxb2::GFP reporter animals by crossing a Soxb1::tdTomato female with a Soxb2::GFP male. The Soxb1-driven tdTomato fluorescence that was too dim to be viewed live by stereomicroscopy was readily visible in vivo using a more sensitive spinning disk confocal microscope. Double transgenic animals were mounted in low-melt agarose and subjected to prolonged in vivo spinning disk confocal imaging. We observed tdTomato-positive (i.e., Soxb1+), GFP-low or negative (i.e., Soxb2-) cells transforming to double positive cells (Figure 4; Figure 4—figure supplement 1). Collectively, our mRNA expression data and the ones obtained previously (Flici et al., 2017) together with the results of our live imaging of transgenic reporter animals are consistent with sequential expression of SoxB genes in the neural lineage.
 
-## Cellular and molecular characterization of Hydractinia neural cells
+![Figure 4.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig4-v3.jpg)
+
+**Figure 4.:** (A) Immunofluorescence of Soxb1::tdTomato and Soxb2::GFP double positive cells that resemble differentiating neurons by morphology. (B) In vivo time lapse imaging of a Soxb1::tdTomato+ cells (shown in red) with increasing levels of Soxb2::GFP (shown in green) over a time frame of 8 hr (T0=3 hr post decapitation (hpd); T1=4 hpd;...; T5=8 hpd). Green Soxb2::GFP cells that appear in the image probably migrated into the confocal plane during imaging. Scale bars = 40 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Two cases of gradual upregulation of the Soxb2 reporter in Soxb1-expressing cells over an 8 hr time frame.
+
+### Cellular and molecular characterization of Hydractinia neural cells
 
 We used a recently developed flow cytometry/FACS protocol (DuBuc et al., 2020) to analyse and physically sort cells from dissociated transgenic reporter animals. The long half-life of the fluorescent reporter proteins resulted in the isolation of not only cells that expressed the reporter genes but also their progeny. To minimize the contribution of progeny to the sorted cellular fraction, we used a FACS gating strategy to select live, nucleated single cells and sorted populations that had low side scatter (SSC) characteristics and high levels of GFP (Figure 5A–C and Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-v3.jpg)
+
+**Figure 5.:** (A) Gating strategy of i-cells, nematocytes, mixed progenitors, and GFP- cells from a Piwi1 reporter animal. (B) Gating of putative neural progenitors from a Soxb2 reporter animal. (C) Gating two distinct populations of Rfamide::GFP+ neurons. (D–F) Imaging flow cytometric analysis of cells from the transgenic reporter animals. (G–L) Cell cycle analysis of distinct, sorted cell populations. (G) i-Cells are mostly in S/G2/M. (H) i-Cell progeny are distributed along the cell cycle. (I) Nematocytes are mostly in G1. (J) SoxB+ (putative neural progenitors) are mostly in S/G2/M. (K) Low and (L) high Rfamide+ neurons. (M) Differential gene expression analysis of sorted cell populations. Genes expressed by Rfamide-high and Rfamide-low neurons are listed.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Characterization of feeding polyps, (D–F) male and (G–I) female sexual polyps. The nature of the reporter transgene is indicated above each density plot. (J) Imaging flow cytometric analysis of dissociated male sexual polyps of Piwi1::GFP reporter line, displaying the different stages of spermiogenesis including mature sperm cells. Scale bars = 10 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Density plot of cells stained with Hoechst 33342 cell permeant dye versus side scatter (SSC-A). The gated population represents Hoechst positive live, nucleated cells. Doublets are subsequently discriminated by Hoechst area verus Hoescht height (contour plot) and forward scatter area (FSC-A) versus side scatter width (SSC-W) density plot. (B) Histogram showing a typical cell cycle profile of Hoechst labelled cells disassociated from a wild type Hydractinia animal. Cell cycle profile of cell subpopulations identified in the male sexual polyps of Piwi1::GFP reporter line (C) and (D) cell cycle profile of post-meiotic sperm characterized by a haploid genome. (E) Cell cycle profile of epithelial cells isolated by fluorescence-activated cell sorting (FACS) from an epithelial reporter animal.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) UMAP dimensional reduction projection of 7071 Hydractinia symbiolongicarpus cells. (B) Heatmap showing the top 10 markers for each cell cluster across all clusters and within nematoblast (cluster 7) subclusters following Seurat analysis. (C) Heatmap showing the percentage overlap between single-cell RNA cluster markers and differentially upregulated genes in fluorescence-activated cell sorting (FACS)-sorted cells from transgenic reporter animals. The heatmap shows that the overlap between Soxb2+ sorted cells and clusters 13 and 14 is highest, that is, consistent with Soxb2 being most highly expressed in these clusters. (D) Dotplot depicting both the percentage proportion and average log-normalized expression of Soxb1, Soxb2, and Soxb3 genes in all cells across the main clusters as shown in (A). We find that both soxB1 and soxB2 are expressed in a subset of i-cells; presumably in transition to become soxB2-positive progenitor cells (clusters 13 and 14 in A), while soxB3 is only expressed in few cells in cluster 18 (see A and D). It also appears that subpopulations of neural cells in H. symbiolongicarpus transition from a soxB2/RFamide low state (cluster 14) that express a G-protein coupled receptor for glutamate (see E) to a soxB2/RFamide high state (cluster 13), of which some eventually become soxB2-negative while still expressing high levels of RFamide (cluster 11); presumably as terminally differentiated axonal neurons as determined by the markers Kaptin and Contactin2, which are important in synapse and axon formation, maintenance and function (see E). This is consistent with our model and bolsters the role of soxB2 as a marker for a neural progenitor cells. (E) UMAP dimensional reduction projections of relevant marker gene expression in representative cluster as annotated in panel (A). (F) Subclustering of nematoblasts (cluster 7 in panel A): UMAP dimensional reduction projection of 259 cells of H. symbiolongicarpus nematoblasts accompanied by projections showing the expression of nematogenesis marker genes (Dickkopf3, Notch and a proline-rich protein homologous to the nematoblast-specific protein nb039a-sv15 of Hydra vulgaris) across several subclusters.
 
 A previously established Piwi1::GFP reporter animal (Bradshaw et al., 2015) was used to selectively isolate i-cells by FACS rather than the Soxb1::tdTomato reporter animal. tdTomato fluorescent protein is optimally excited by a 561 nm yellow/green laser; the configuration of the BD FACS Aria cell sorter in the NUI Galway flow cytometry core facility does not include a 561 nm laser. The usage of Piwi1::GFP to isolate i-cells was possible given that the two genes have been shown to be co-expressed in i-cells (Figure 1). Piwi1+ (i.e., Soxb1+ i-cells) are known to represent a rare population, representing approximately 1.4% of the live single-cell population of the Soxb2::GFP transgenic animal (DuBuc et al., 2020). We found that Soxb2+ cells (i.e., putative neural progenitors) were an equally rare population (Figure 5A–B). Rfamide+ neurons were distributed among two distinct populations that differed in levels of GFP expression, accounting for 1.6% and 1.8% of the live single cells, respectively (Figure 5C). Imaging flow cytometry of the Piwi1::GFP reporter animal (i.e., cells that also express Soxb1) revealed that the brightest cells were small with a high nuclear to cytoplasmic ratio, consistent with stem cell morphology (Figure 5D). The two Rfamide+ cell populations did not differ morphologically based on imaging flow cytometry except in their GFP expression (Figure 5E and F); their exact nature is yet unclear. Flow cytometric cell cycle analysis (Figure 5G–L) revealed that the Piwi1+ cells were almost exclusively in S/G2/M phase (Figure 5G), similar to what has been observed in i-cells from the freshwater polyp Hydra (Buzgariu et al., 2014). However, i-cell progeny, defined by low GFP fluorescence and constituting a highly heterogeneous population, were found in all stages of the cell cycle (Figure 5H). Soxb2+ cells that include putative neural progenitors (Flici et al., 2017) had a cell cycle profile similar to i-cells, mostly found during the S/G2/M phases of the cell cycle (Figure 5J). Rfamidehigh and Rfamidelow neurons that are thought to be terminally differentiated were mostly in G0/G1, similar to what was observed in nematocytes (Figure 5I and K–L). The robustness of the flow cytometric analysis was demonstrated by studying other cellular fractions including epithelial cells from an epithelial reporter (Künzel et al., 2010), male germ cells (from the Piwi1 reporter), and cells from an Ef1a knock-in animal where GFP is expressed ubiquitously (Sanders et al., 2018; Figure 5—figure supplement 1 and Figure 5—figure supplement 2).
 
@@ -70,15 +114,39 @@ We used FACS to physically isolate the following cell fractions: Soxb2high, Rfam
 
 To provide further insight into the composition of the neural cells population, we used a droplet microfluidic single-cell handling system (InDrop) (Klein et al., 2015) to generate a single-cell transcriptome dataset based on 7071 cells from Hydractinia wild type feeding polyps. This allowed us to identify 22 cell clusters (Figure 5—figure supplement 3A) and their associated upregulated marker genes (Figure 5—figure supplement 3B); this may be an underestimation of the cellular complexity of Hydractinia as compared to that of other cnidarians (Sebé-Pedrós et al., 2018; Siebert et al., 2019). However, we were able to identify putative i-cells, nematoblasts, gland cells, neurons, and a group of mixed progenitors. Upregulated marker gene expressions generally recapitulated the expression profiles of the physically sorted cells from the transgenic reporter animals, with up to 15% of markers corresponding to DEG transcript of the sorted cell types (Figure 5—figure supplement 3C; Supplementary file 3). Specifically analyzing the expression of Soxb1-3 (Figure 5—figure supplement 3D), we find that both Soxb1 and Soxb2 are expressed in a subset of i-cells; these cells are presumably in transition to becoming Soxb2-only positive progenitor cells (clusters 13 and 14 in Figure 5—figure supplement 3A). Finally, Soxb3 is only expressed in few cells in cluster 18 (Figure 5—figure supplement 3A, D). It also appears that subpopulations of neural cells transition from a Soxb2 RFamide low state (cluster 14) that express a G-protein coupled receptor for glutamate (Figure 5—figure supplement 3E) to a Soxb2 RFamide high state (cluster 13), of which some eventually become Soxb2-negative while still expressing high levels of RFamide (cluster 11). These are presumably terminally differentiated neurons as determined by the marker genes Kaptin and Contactin2 (Figure 5—figure supplement 3E). This is consistent with the downregulation of Soxb2 resulting in near absence of RFamide+ neurons and bolsters the role of Soxb2 as a marker for neural progenitor cells. Combined, the bulk- and-single-cell analyses provide a valuable resource for further analyses of cnidarian cells, allowing for the extended analysis of nematoblasts as a way to characterize both known and novel marker genes (Figure 5—figure supplement 3F).
 
-## Hydractinia head regeneration involves de novo neurogenesis
+### Hydractinia head regeneration involves de novo neurogenesis
 
 Hydractinia can regenerate a decapitated head that includes a fully functional nervous system within 2–3 days (Bradshaw et al., 2015). This predictable generation of many new neurons provides an opportunity to study neurogenesis in regeneration. To identify the cellular source of regenerative neurogenesis, we first characterized the dynamics of nervous system regeneration over 48 hr using Rfamide::GFP reporter transgenic animals (Figure 6). Animals were decapitated and allowed to regenerate their heads. Subsets of these animals were then fixed at 12, 24, 36, and 48 hr post decapitation (hpd). Prior to fixation, they were incubated for 30 min in EdU. Fixed samples were stained for EdU, GFP (reporting Rfamide), and Piwi2 (an i-cell marker; for anti-Piwi2 antibody validation; see Figure 6—figure supplement 1). We also analysed intact animals that showed a well-developed head nervous system but had neither S-phase cells nor i-cells in their heads (Figure 6A), as expected (Bradshaw et al., 2015). At 12 hpd, there were many cycling cells in the stump area, few neurons (likely remnants of the amputated tissue), and few migrating Piwi2low cells that are probably i-cell progeny (Figure 6B). At 24 hpd, a clear proliferative blastema had been established at the oral most pole, with i-cells (Piwi2high) and their progeny being numerous in the area. However, only a few RFamide+ neurons were visible (Figure 6C). At 36 hpd, new neurons were visible in the regenerating head and proliferative i-cells and progeny were still present (Figure 6D). Finally, at 48 hpd, a nearly complete head nervous system had been established and the regenerating head contained lower numbers of i-cells and progeny (Figure 6E). Hence, Piwi2low cells, which are presumably i-cell progeny, were the first to migrate to the injury area, followed later on by Piwi2high cells, which are probably stem cells. This is similar to what has been observed in planarian head regeneration, where neoblast progeny arrive in the injury area before neoblasts (Abnave et al., 2017). Of note, none of the existing neurons incorporated EdU during regeneration, consistent with neurons being terminally differentiated. To study nervous system regeneration in vivo, we used the Rfamide::GFP transgenic reporter animals to track individual neurons over the course of regeneration. The animals were decapitated, mounted in low-melt agarose, and imaged every hour for either the first 24 hr, or from 24 to 72 hpd. In all cases, the neurons remained stationary and did not proliferate during the observation period while a new head nervous system regenerated (Figure 6—figure supplement 2). Hence, similar to Hydra (Miljkovic-Licina et al., 2007), head nervous system regeneration in Hydractinia involves de novo neurogenesis rather than proliferation or migration of existing neurons.
 
-## SoxB genes are required for embryonic neurogenesis
+![Figure 6.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig6-v3.jpg)
+
+**Figure 6.:** (A) Intact head, characterized by few S-phase cells, extensive RFamide+ neuronal network, and no Piwi1high i-cells or their putative Piwi1low progeny. (B) 12 hr post decapitation (hpd) showing many proliferative cells, only few remnant RFamide + neurons, and few immigrating i-cells and progeny. (C) 24 hpd. High numbers of EdU incorporating cells, few RFamide+ neurons, and increasing i-cells and putative progeny are seen at the oral regenerating end. (D) 36 hpd. High number of S-phase cells, increased number of RFamide+ neurons, and further increase in i-cell numbers are seen. (E) 48 hpd. Decreasing numbers of S-phase cells, increasing numbers of RFamide+ neurons, and decreasing numbers of i-cells are observed. Scale bars = 40μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Zygotes were injected with an shRNA targeting Piwi2 (shPiwi2) or a control shRNA targeting the GFP sequence (shGFP). At 48 hr post fertilization, animals were fixed and stained with the anti-Piwi2 antibody. Fewer Piwi2+ i-cells are detectable in shPiwi2 than in the control. Scale bars = 40μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** No cell proliferation or migration of individual neurons (circled) was observed, indicating no role during this process. Images are single optical slices. Scale bars = 40 μm.
+
+### SoxB genes are required for embryonic neurogenesis
 
 It has been shown previously that Soxb2 and Soxb3 are essential for neurogenesis in adult Hydractinia (Flici et al., 2017). However, the role of Soxb1 has not been studied, nor has the role of these TFs in other life stages. Hence, we set out to study the role of all three SoxB genes in embryogenesis. For this, we used short hairpin RNA (shRNA)-mediated knockdown by microinjection into zygotes as previously described (DuBuc et al., 2020). The specificity of the treatment was assessed qualitatively by FISH in at least three replicates per shRNA (Figure 7—figure supplement 1A). The animals were fixed at 72 hpf; at this stage of development, Hydractinia normally reaches the metamorphosis-competent planula larva stage.
 
 Soxb1 knockdown affected many aspects of larval development. First, the animals were on average smaller and underdeveloped (Figure 7—figure supplement 1B). Second, these animals had fewer Piwi1+ i-cells and numbers of neurons and nematoblasts was lower than normal. RFamide neuron numbers were low or absent altogether (Figure 7). Third, these larvae had defects in ciliation (Figure 7, Figure 7—figure supplement 2) and, as a result, their movement was restricted (larvae swim by coordinated cilia beat). Finally, the larvae had lost their ability to metamorphose upon CsCl treatment (Figure 7), with the latter probably being the result of a loss of neurons expressing GLWamide, the internal regulator of metamorphosis in Hydractinia (Gajewski et al., 1996; Müller and Leitz, 2002; Schmich et al., 1998). However, the number of S-phase cells was upregulated compared with the control and proliferative cells were also detectable in the epidermis; normally, S-phase cells are restricted to the gastrodermis in larvae (Figure 7). The above defects could be explained by Soxb1 playing a role in maintaining stemness in i-cells, similar to the role of Sox2 in mammalian pluripotency (Boyer et al., 2005; Takahashi and Yamanaka, 2006). Loss of Soxb1 may have resulted i-cells exiting the stem cell program, as observed by Piwi1 staining (Figure 7). This would be expected to directly affect all i-cell derivatives that include neurons and nematocytes, as well as other cell types. The increased number of S-phase cells could reflect a compensatory response to loss of i-cells or be a response of i-cells to loss of stemness.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig7-v3.jpg)
+
+**Figure 7.:** (A) Short hairpin RNA (shRNA)-mediated knockdown of Soxb1, Soxb2, and Soxb3. (B) Higher magnification of Piwi1+ and S-phase cells showing reduced i-cell numbers following Soxb1 downregulation. Note proliferative cells in epidermis, not seen in untreated and following Soxb2 or Soxb3 downregulation. (C) Quantification of phenotypes. Scale bars = 40μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Validation of shSoxB1, shSoxB2, and shSoxB3 knockdowns by single-molecule fluorescence in situ hybridization (SABER FISH) on 3DPF larvae. Larvae injected with shSoxB1 showed lower expression levels of SoxB1 compared to the control animals. Larvae injected with shSoxB2 showed lower expression levels of SoxB2 compared to the control animals and SoxB1 levels remained unaffected. Larvae injected with shSoxB3 showed lower expression levels of SoxB3 compared to the control animals and SoxB2 levels remained unaffected. Images are single optical slices. Scale bars = 40 μm. (B) Morphology of control, shGFP-injected, shSoxB1-injected, shSoxB2-injected, and SoxB3-injected larvae. Scale bar = 498 μm. (C) Forced expression of SoxB1::GFP in a neuronal context was lethal. Remnants of GFP could be seen in the vacuoles of phagocytic cells. (1) Polyp head and body. (2) Part of stolonal tissue. GFP was identified by direct fluorescence; Ncol1 by IF. Images are z-stack maximum projections. Scale bars = 40 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (B) shSoxb1-injected animal. (C) Male sexual polyp. (D) Female sexual polyp.
 
 Downregulation of Soxb2 had no visible effect on i-cells or on GLWamide+ neurons (Figure 7) but RFamide+ neurons were nearly absent. Nematoblast numbers had increased and no significant difference was observed on cycling cells. These phenotypes are markedly distinct from what is seen after downregulation of Soxb2 in adult neurogenesis, where the numbers of neurons, nematocytes, and cycling cells are noticeably reduced (Flici et al., 2017). This could be explained by preferential differentiation of neural progenitors to GLWamide+ neurons over RFamide+ neurons if progenitors are limiting, given the essential role of the latter in metamorphosis. Alternatively, the SoxB2 protein might be maternally loaded or dispensable for embryonic GLWamide+ neurons. The increase in nematoblast numbers following Soxb2 downregulation could indicate a nematogenesis-inhibiting role for this gene. Surprisingly, downregulation of Soxb3 had no major effect on the animals, in contrast to the role of this gene in adult neurogenesis (Flici et al., 2017). The above data suggest an essential and complex role of Soxb2 for embryonic neurogenesis, but also highlight major differences between embryonic and adult neurogenesis.
 
@@ -98,27 +166,142 @@ The poor conservation of SoxB gene sequences across animals make direct function
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Hydractinia culture
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Piwi1 (rabbit polyclonal)</td>
+      <td>https://doi.org/10.1126/science.aay6782</td>
+      <td>N/A</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Piwi2 (Guinea pig polyclonal)</td>
+      <td>In-house</td>
+      <td>N/A</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Ca# T7451</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFamide (mouse polyclonal)</td>
+      <td>https://doi.org/10.1007/s004270050181</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLWamide (rabbit polyclonal)</td>
+      <td>https://doi.org/10.1007/s004270050181</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ncol1(rabbit polyclonal)</td>
+      <td>https://doi.org/10.1371/journal.pone.0022725.g001</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ncol3 (guinea pig polyclonal)</td>
+      <td>https://doi.org/10.1371/journal.pone.0022725.g001</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Ca# 8334</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP (rat polyclonal)</td>
+      <td>Chromotek</td>
+      <td>Ca# 5F8</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>
+      <td>293-10 wild type animals</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>
+      <td>SoxB1::tdTomato line</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>
+      <td>SoxB2::GFP line</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>
+      <td>RFamide::GFP line</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>
+      <td>RFamide::SoxB1::GFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Hydractinia culture
 
 Stable clones were grown on glass microscope slides and cultured at 20–22°C in artificial seawater (ASW) under a 14:10 light:dark cycle regime. They were fed four times a week with freshly hatched Artemia nauplii and once a week with oysters (pureed when fresh and then stored frozen in aliquots).
 
 Spawning took place approximately one and a half hours after light induction by the release of gametes (sperm and oocytes) in a water column. Once collected, the embryos were stored in 4°C for up to 4 hr to halt their development and provide a wider time frame for injections.
 
-## Stable transgenic reporter animals
+#### Stable transgenic reporter animals
 
 Zygotes were injected with plasmid DNA at 3–4 μg/μl concentration. Plasmid was supplemented with 100 mM KCl which helped to reduce mosaic integration. Once the embryo reached the planula larval stage, metamorphosis was induced by a 3–4 hr incubation with 1:5 580 mM CsCl:ASW. Once metamorphosing larvae fully retracted, they were placed on glass slides to settle and form a new colony. Animals were then bred to produce stable, non-mosaic transgenic offspring. To generate double transgenics, stable second-generation SoxB1::tdTomato and SoxB2::GFP animals were crossed.
 
-## Method details
+### Method details
 
-## Generation of transgenic animals
+#### Generation of transgenic animals
 
 Cloning vectors were generated by inserting 5’ upstream regulatory sequence (URS) and 3’ downstream regulatory sequence of the desired gene (SoxB1, SoxB2, or RFamide) upstream and downstream of the coding sequence of the fluorescence protein (GFP or tdTomato), respectively. Cloning and ligation of the fragments was achieved by restriction enzyme-based approach. Chemically competent XL1 Blue Escherichia coli bacteria were transfected with the vector and once the plasmid was validated by sequencing, embryos were injected.
 
 For the ectopic expression of SoxB1, the RFamide construct was used and the coding sequence of SoxB1 was inserted between URS and fluorescence protein.
 
-## Cellular staining
+#### Cellular staining
 
 Standard immunofluorescence staining was done as previously described in (Flici et al., 2017): the tissue was fixed in 4% PFA in PBS for 60 min at room temperature (RT) or overnight (ON) at 4°C followed by three washes of 10 min each with PBS with 0.3% Triton X-100 (PBSTx). For storage, the tissue was dehydrated by incubation in increasing concentrations of ethanol diluted in PBSTx and stored in –20°C (25%, 50%, 75%, and 100%; 5 min each wash). Tissue was then slowly rehydrated by washing in decreasing concentrations of ethanol followed by three washes of 10 min each with PBSTx. The tissue was then blocked for 1 hr in 3% BSA in PBSTx and primary antibodies were added ON at 4°C. The following day, tissue was washed three times 10 min each with PBSTx and blocked again for 15 min with 5% serum in BSA/PBSTx (goat serum unless indicated otherwise). Secondary antibodies were added based on the host of the primary antibodies in 5% serum in BSA/PBSTx for 1 hr in RT and then the tissue was washed three times 10 min each with PBSTx. Nuclear staining was then carried out with Hoechst 33258 (use: 1 in 2000; stock: 20 mg/ml; Sigma-Aldrich; B2883) for 15 min at RT followed by three washes 10 min each with PBSTx. Tissue was then mounted in Fluoroshield (Sigma-Aldrich; F6182) on glass microscopic slides (Fisher Scientific; 11562203).
 
@@ -126,9 +309,9 @@ For the nematocyte capsule staining by FITC-coupled DSA lectin, all the steps de
 
 EdU staining was done as previously described in (Bradshaw et al., 2015): all the solutions were prepared according to the manufacturer’s instructions. Prior fixation, the polyps were incubated in EdU solution for 30 min or more depending on the experiment (stock concentration 10 mM; 1 μl EdU/1 ml ASW), washed three times in ASW and incubated in MgCl2 before fixation. Polyps are then fixed in 4% PFA in PBS for 1 hr at RT and washed once with 3% BSA in PBSTx for 30 min. Next, two washes with PBSTx were carried out (first wash: 1 hr; second wash: 30 min), followed by two washes with 3% BSA in PBSTx for 5 min each. The tissue was then incubated in Click-iT cocktail for 30 min (~100 μl per 100 polyps; protect from light) followed by three washes of 3% BSA in PBSTx for 20 min each. Following, samples were stained with various antibodies as described above.
 
-## In situ hybridization
+#### In situ hybridization
 
-## For conventional FISH
+##### For conventional FISH
 
 FISH was done as previously described in (DuBuc et al., 2020): animals were first fixed for 90 s in ice-cold 0.2% glutaraldehyde (stock: 25%, Sigma-Aldrich; G5882) with 4% PFA (stock: 16%, Alfa Aesar; 43368) in filtered ASW and then in 4% PFA in PBS-0.1% Tween (PTW) for 1 hr at 4°C followed by three quick washes with PTW. Post-fixation washes were done in increasing concentrations of methanol in PTW and then the samples were either stored for future use or continued with the procedure. Next, the tissue was permeabilized by washes in increasing concentrations of methanol in acetone and rehydrated with washes in decreasing concentrations of methanol in PTW.
 
@@ -148,7 +331,7 @@ In the case of a double FISH, after the ON incubation with the developing buffer
 
 The developing, post-developing washes, nuclear staining, and mounting were done the same way as described above but instead of Rhodamine, Fluorescein was used. After the post-developing washes but before TDE washes and mounting, the tissue could be quickly washed with increasing concentrations of methanol in PBS and then with decreasing concentrations of the same solutions to remove background staining.
 
-## For SABER FISH
+##### For SABER FISH
 
 Tissue was fixed and dehydrated the same way like in the conventional FISH as described above. Samples were then incubated in 1% H2O2 diluted in 100% MeOH (ice cold) for 45 min in RT, followed by two quick washes with ice-cold 100% MeOH. Then, tissues were permeabilized by quick washing in decreasing and then increasing concentrations of methanol diluted in, followed by rehydration with quick washes in decreasing concentrations of methanol in PTW.
 
@@ -164,15 +347,15 @@ The steps followed were performed at 37°C. 2× SSCTw was replaced with PTW (two
 
 After that, Hyb2/fluor solution was replaced with pre-warmed Whyb2 for a 10 min incubation at 37°C followed by two washes of 5 min each with PTW. Nuclear staining was then performed in RT by diluting Hoechst in PTW (1:2000) and incubating the samples for 45–60 min at RT. Samples were then quickly washed twice with PTW and mounted in 97% TDE. Samples were imaged within 4 days. Three to six animals were imaged per condition.
 
-## shRNA interference
+### shRNA interference
 
 For shRNA interference experiments, primers were designed to clone unique sites of the three SoxB genes. Stock primers (100 mM) containing a T7 site were directly used and incubated at 98°C for 2 min and then left in RT for 10 min to anneal; 2 μl of each primer were used and mixed with nuclease-free water to a final reaction volume of 20 μl. Following, T7 transcription was carried out by using the total reaction volume from the previous step (20 μl) as a DNA template along with 3.5 μl of each NTP (ATP, GTP, UTP, CTP; 100 mM stock concentration), 4 μl of 10× reaction buffer and 3 μl of T7 RNA polymerase mix (HiScribe T7 High Yield RNA Synthesis kit, NEB; E2040). The mixture was then incubated ON at 37°C. The next day, the products were DNase treated for 1 hr at 37°C with 40 μl of DNase solution (5 μl DNaseI in 35 μl RDD buffer; Qiagen RNAse-free DNase set; 79254) and RNA was isolated by using Quick-RNA MiniPrep kit (Zymo Research; R1054) following the manufacturer’s instructions. The eluted RNA was quantified using NanoDrop and the quality was checked by running a formaldehyde denature gel. Embryos were injected at a concentration of 250 ng/μl for all three SoxB genes.
 
-## In vivo imaging and analysis
+### In vivo imaging and analysis
 
 Decapitated polyps from transgenic colonies were transferred to 35 mm imaging dishes with a glass bottom (Ibidi; D 263) and 0.5% low-melt agarose in filtered ASW was placed dropwise on individual polyps in order to secure them as close to the bottom of the dish as possible. Once the polyps had stabilized, low-melt agarose was poured into the dish to cover the whole bottom. On polymerization the dish was transferred to an Andor spinning disc confocal microscope which was used to generate time lapse movies. Images were captured over the duration of the time course as z-stacks at 10 μm apart, using a 10× objective lens. Prior to collecting the Z stack, exposure time and EM gain were set and recorded to the channel of illumination. This was maintained for all experiments. Each specimen was imaged using λ488 nm and λ564 nm lasers. Phase contrast images were also collected as an indication of animal location and viability pre, during, and post imaging. Animals were subjected to a 72 hr imaging with 1 hr imaging intervals. Every hour, a z-stack spanning the whole depth of each animal was obtained in GFP, RFP, and DIC channels. Data were then analysed using ImageJ/Fiji software (ImageJ 1.52i), and two to three focal planes covering the whole cell of interest were selected. In total, 16 animals were imaged.
 
-## Flow cytometry, FACS, and imaging flow cytometry
+### Flow cytometry, FACS, and imaging flow cytometry
 
 Tissue dissociation and flow cytometric analysis was done as previously described in DuBuc et al., 2020 using only feeding polyps. Cell suspensions were labelled with 37.5 μg/ml Hoechst 33342 (Sigma Cat#14533) for 20 min at 18°C. Flow cytometric analysis was performed using a BD FACSCanto II flow cytometer (BD Biosciences, San Jose, CA) which was calibrated according to the manufacturer’s recommendations. Data were analysed using Diva v8.0.1 (BD Biosciences) or FlowJo v10 (TreeStar Inc, Olten, Switzerland). Typical gating strategies involved gating on live, nucleated cells (Hoechst 33342 positively stained population) measured using the 405 nm excitation laser line and 450/50 nm photomultiplier tube (PMT) fluorescence detector, followed by doublet exclusion based on forward scatter height versus forward scatter area. For cell cycle analysis an additional doublet exclusion gate was included based on plotting Hoechst 33342 height versus Hoechst area. Expression of the GFP reporter in transgenic animals was measured using the 488 nm excitation laser line in the 530/30 nm PMT fluorescence detector. Cells prepared from wild type animals were used as a gating control and to set the voltages in the cell cycle analysis. An example of a typical gating strategy used in cell cycle analysis as well as representative cell cycle profiles from wild type and transgenic animals’ cell cycle profile of distinct cell populations is illustrated in Figure 5—figure supplements 1 and 2.
 
@@ -180,33 +363,33 @@ For imaging flow cytometry cell suspensions were prepared, as previously describ
 
 For FACS, 100 polyps from each reporter line were dissociated as described above Piwi1::GFP, SoxB2::GFP, and RFamide::GFP (n=3) and re-suspended in 1 ml of filtered ASW containing 0.5% Pronase and 0.1% BSA. FACS was performed on a BD FACSAriaII high-speed cell sorter using a 100 µm nozzle at 20 psi with filtered ASW as sheath. ASW was used as sheath fluid to eliminate osmotic stress to the cells during sorting. GFP-expressing and non-GFP-expressing cell populations were gated on live, nucleated single cells. Cells prepared from matched wild type animals were used as controls. Cell populations were sorted directly into Trizol (Life Technologies, Cat#15596026) for subsequent RNA extraction using the Direct-zol RNA MiniPrep kit. The purity of the sorted populations was checked by sorting directly into ASW followed by flow cytometric analysis on a BD FACSAriaII cell sorter.
 
-## InDrop single-cell transcriptomics
+### InDrop single-cell transcriptomics
 
 Tissue dissociation was done as described above. Cells were then transferred to 18.5% mannitol in H2O to replace sea-H2O, which otherwise interferes with critical downstream enzymatic reactions including droplet RT. After filtering of the cell suspension through 100 μm filters, cells were quickly subjected to in-house InDrop microfluidics to generate a single-cell transcriptome dataset as described in Klein et al., 2015. Following sequencing of the InDrop library, raw reads were processed using python scripts provided in Klein et al., 2015. The resulting genes-versus-cells UMI-filtered count matrix was then processed, analysed, and visualized in R using Seurat 3.0 following standard procedures (Stuart et al., 2019). Cluster markers were annotated using BLAST against uniprot KB. Bioinformatics worklflows and results are provided (Supplementary file 2). Raw sequencing reads are available under SRA accession number PRJNA777228.
 
-## Antibody generation
+### Antibody generation
 
 For Piwi2 antibody production, primers containing a 5’ HIS-tag were designed to amplify a region of Piwi2. Fragments were cloned and expressed in pET3s expression vector using restriction sites (Nde1 and BamH1 – encoded in primer sequences) and expressed in Rosetta DE3 pLysS bacteria. Protein extract was then analysed and injected into two guinea pigs by Eurogentec. Antisera were analysed by western blots and antibody specificity was validated as shown in Figure 6—figure supplement 1.
 
-## Cell type-specific transcriptomes
+### Cell type-specific transcriptomes
 
-## Quantification and statistical analysis
+#### Quantification and statistical analysis
 
-## Transcriptome analysis
+##### Transcriptome analysis
 
-## Quantitation of shRNAi mutant animals
+###### Quantitation of shRNAi mutant animals
 
 All cell counting analysis was performed using 3D Object Counter function in ImageJ/Fiji software. Counts were made relative to the total tissue area in the X/Y dimension. A z-stack covering the whole depth of each sample was obtained. Counting was performed on cells positive for the respective cell type marker based on antibody staining and numbers were compared between shControl and shSoxb1/2/3 animals. Three to seven animals were counted per condition. Uninjected animals and animals treated with shGFP were used as controls. Uninjected animals were only used for quantification purposes. Statistical analysis was performed in GraphPad Prism using unpaired t-test. Differences were considered not significant when p >0.05.
 
 The shRNA knockdown was assessed qualitatively. At least three animals per shRNA treatment were assessed by SABER FISH.
 
-## Software and algorithms
+### Software and algorithms
 
-## Cell type-specific transcriptomes
+#### Cell type-specific transcriptomes
 
 After RNA isolation, samples were shipped to the NIH Intramural Sequencing Center (NISC) for further processing and sequencing. RNA was amplified with the Ovation RNA-Seq System V2 kit, and sequencing libraries were made with Illumina TruSeq Stranded mRNA Library Prep Kit. Libraries were sequenced on two lanes of Illumina NovaSeq 6000 (2 × 151 bp), generating between 27 and 69 million reads per sample (average 44 million reads).
 
-## Transcriptome analysis
+#### Transcriptome analysis
 
 Read quality control was performed using FastQC v0.11.6. Overrepresented sequences and low-quality bases were trimmed using Trimmomatic v0.36 (Bolger et al., 2014). After trimming, unpaired reads and reads shorter than 36 bp were discarded.
 

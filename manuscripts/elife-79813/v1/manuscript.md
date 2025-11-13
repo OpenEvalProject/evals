@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Divisions of Human Biology and Clinical Research, Fred Hutchinson Cancer Research Center Seattle United States
-2. https://ror.org/01an3r305 Department of Microbiology and Molecular Genetics, University of Pittsburgh School of Medicine Pittsburgh United States
+1. Divisions of Human Biology and Clinical Research, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Department of Microbiology and Molecular Genetics, University of Pittsburgh School of Medicine Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
 
 † Corresponding author
 

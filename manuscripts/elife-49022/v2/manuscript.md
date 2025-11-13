@@ -34,41 +34,57 @@ In this study, we used a macaque model of AIDS virus infection, employing the ba
 
 ## Results
 
-## Measuring the frequency of SIV reactivation from latency
+### Measuring the frequency of SIV reactivation from latency
 
 We previously developed a barcoded SIVmac239 virus, designated SIVmac239M, containing ≈10,000 clonotypes, present at approximately equal proportions (Fennessey et al., 2017). Infection of macaques with a suitable inoculum of this virus creates an essentially isogenic and phenotypically equivalent population of viruses containing diverse barcodes in both the circulating plasma virus and the SIV DNA of infected cells. cART leads to prolonged suppression of virus in this model, and treatment interruption is followed by rapid viral rebound. We previously reported studies of a cohort of rhesus macaques, infected intravenously with 2.2 × 105 IU of SIVmac239M, and treated with cART initiated on day four post-infection for 300–478 days followed by treatment interruption (Fennessey et al., 2017) (Figure 1a, n = 6). In the present study, we extended this work to investigate macaques in which cART was initiated on day 10 (n = 4) or day 27 (n = 5) post-infection (hereafter referred to as ‘day 10 treated’ and ‘day 27 treated’ respectively). Animals were treated for between 310 and 476 days, followed by treatment interruption. The plasma viral loads for the nine animals treated beginning on days 10 and 27 are shown (Figure 1c,e). Following treatment interruption, we measured the growth rate of total plasma viral RNA and calculated the proportional contribution of individual SIVmac239M barcode clonotypes (obtained using high throughput sequencing of rebound virus) to the total rebound viremia (Figure 1b,d,f). We then used a mathematical modelling approach to estimate the average frequency of reactivation from latency in individual animals (Pinkevych et al., 2015; Fennessey et al., 2017)(Figure 1g–i).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig1-v2.jpg)
 
-**Figure 1.:** The viral load in individual animals infected with SIVmac239M and (a) treated on day four and interrupted on days 300 (n = 2), 370 (n = 2), or 478 (n = 2) and reproduced from Fennessey et al. (2017), or (c) treated day 10 and interrupted on day 320 (n = 4), or (e) treated on day 27, and interrupted on days 349 (n = 1), 396 (n = 2), or 503 (n = 2). Vertical dashed line is the time of treatment. (b,d,f) Frequency of barcode clonotypes identified by high throughput sequencing of plasma virus in individual monkeys during rebound. (g) Schematic of the method for estimation of the frequency of reactivation from latency, detailed in Fennessey et al. (2017). Red dots – measurements of total viral load. Thick red line is the trajectory of growth of total viral load. Coloured thin lines are the theoretical trajectories of growth of individual clonotypes based on the proportion of individual barcode sequences in the rebound plasma (bar graph at the right-hand side). Time between reactivations Δt is proportional to difference between logarithms of the frequency of barcodes. (h) The frequency of reactivation for the three cohorts initiating treatment on different days post-infection (bars indicate mean and SD) and (i) treated for different lengths of time.Figure 1—source data 1.
+**Figure 1.:** The viral load in individual animals infected with SIVmac239M and (a) treated on day four and interrupted on days 300 (n = 2), 370 (n = 2), or 478 (n = 2) and reproduced from Fennessey et al. (2017), or (c) treated day 10 and interrupted on day 320 (n = 4), or (e) treated on day 27, and interrupted on days 349 (n = 1), 396 (n = 2), or 503 (n = 2). Vertical dashed line is the time of treatment. (b,d,f) Frequency of barcode clonotypes identified by high throughput sequencing of plasma virus in individual monkeys during rebound. (g) Schematic of the method for estimation of the frequency of reactivation from latency, detailed in Fennessey et al. (2017). Red dots – measurements of total viral load. Thick red line is the trajectory of growth of total viral load. Coloured thin lines are the theoretical trajectories of growth of individual clonotypes based on the proportion of individual barcode sequences in the rebound plasma (bar graph at the right-hand side). Time between reactivations Δt is proportional to difference between logarithms of the frequency of barcodes. (h) The frequency of reactivation for the three cohorts initiating treatment on different days post-infection (bars indicate mean and SD) and (i) treated for different lengths of time.
 
 For the four macaques treated starting on day 10 post-infection, the estimated frequency of reactivation from latency varied between 1.63 and 2.94 reactivations per day (mean = 2.29, SD = 0.47,n = 4). For animals treated beginning on day 27, the frequency varied between 0.75 and 3.10 reactivations per day (mean 1.33, SD = 0.90, n = 5) and was not significantly different from day 10 animals p=0.19 (Mann Whitney). The frequency of reactivation of animals treated on or after peak infection (pooled day 10 and day 27 groups) was significantly higher (Mann Whitney’s p=0.0028) than the frequency of reactivation previously measured for animals treated at day four post-infection, which were between 0.40 and 0.87 per day (mean = 0.61, SD = 0.17, n = 6) (Figure 1h). Longer duration of treatment also appeared to be associated with declining frequency of reactivation (half-life 216 days), although this was not significant (p=0.064, linear mixed effects (LME) model) (Figure 1i).
 
-## SIV DNA in PBMC and frequency of reactivation
+### SIV DNA in PBMC and frequency of reactivation
 
 In order to understand the association between peripheral blood virologic measurements and the estimated frequency of SIV reactivation after ATI, we first measured cell-associated (CA) viral gag DNA levels during cART treatment in macaques starting at 4, 10, or 27 dpi (Figure 2a). These data showed an early phase of rapid decline, followed by a slower decay with prolonged treatment. We then focused on the SIV gag DNA level in PBMC at the time of treatment interruption as a predictor of the frequency of reactivation. The levels of SIV gag DNA at interruption varied over a wide range between cohorts, ranging from <3.2 copies/106 PBMC among macaques treated beginning on day four post-infection, to as many as 1000 DNA copies/106 PBMC among animals treated beginning on day 10 (Figure 2b).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig2-v2.jpg)
 
-**Figure 2.:** (a) The levels of SIV CA-DNA in individual animals (thin lines) were measured in peripheral blood. Median is shown as thick line. (b) The relationship between frequency of reactivation from latency and SIV DNA levels at cART interruption, for individual animals treated at different times after infection. Linear regression line fitted to log-log transformed data, dashed line is the regression with the fixed slope = 1. (c) The frequency of reactivation per DNA copy for animals treated on different days post-infection, and (d) the relationship between duration of treatment and reactivation per DNA copy. Some animals treated at day four had undetectable DNA levels at interruption. In this case, we can only estimate an upper/lower bound and the circle is only shaded at the side of lower DNA values.Figure 2—source data 1.
+**Figure 2.:** (a) The levels of SIV CA-DNA in individual animals (thin lines) were measured in peripheral blood. Median is shown as thick line. (b) The relationship between frequency of reactivation from latency and SIV DNA levels at cART interruption, for individual animals treated at different times after infection. Linear regression line fitted to log-log transformed data, dashed line is the regression with the fixed slope = 1. (c) The frequency of reactivation per DNA copy for animals treated on different days post-infection, and (d) the relationship between duration of treatment and reactivation per DNA copy. Some animals treated at day four had undetectable DNA levels at interruption. In this case, we can only estimate an upper/lower bound and the circle is only shaded at the side of lower DNA values.
 
 When we correlated the level of log SIV DNA at treatment interruption with the log frequency of reactivation, we found a significant linear correlation (linear regression slope = 0.20, R2 = 0.56, p=0.0019)(Figure 2b). Although individual SIV genomes may vary greatly in their probability of reactivation (for example due to replication competence, integration site, or cell phenotype, activation state, and epigenetic or transcriptional blockades), if SIV DNA measured in the animals treated on different days had on average a similar probability of contributing to SIV reactivation from latency, then a doubling of DNA would equate to a doubling of reactivation (and we should expect a 1:1 correlation in this log:log plot). Instead, the slope was only 0.20. Although the day 4 and day 27 treated animals were treated for a similar length of time (Figure 1b), the day 27 treated animals had at least 116 fold higher SIV DNA level at interruption, but only an approximately 2-fold difference in the frequency of reactivation with a mean of 0.61 (SD 0.17, n = 6) versus 1.33 (SD 0.90,n = 5) reactivations per day for day 4 and day 27 treated animals respectively. To compare the ‘per cell’ frequency of reactivation between the groups, we estimated reactivations per DNA copy (Figure 2c,d). This analysis showed that treatment later in infection was associated with a declining frequency of reactivation per DNA copy measured at treatment interruption (Figure 2c). In addition, within the d4 treated and d27 treated animals, increased duration of treatment also showed a trend towards reduced per cell frequency of reactivation (Figure 2d). Thus, although SIV CA-DNA quantity in PBMC increases greatly from day 4 to day 27 post-infection, the frequency of reactivation per DNA copy declines in this time, apparently dependent on other factors.
 
-## Contribution of cellular and viral activation
+### Contribution of cellular and viral activation
 
 Differences in the per-cell probability of activating and producing progeny virus may explain the unexpected relationship between post-ATI reactivation frequency and SIV DNA copies in PBMC. Unspliced viral RNA transcription on cART has previously been used as a potential measure of the level of active transcription of infected cells (Elliott et al., 2014; Petravic et al., 2017), and some previous studies in HIV have suggested that levels of CA-RNA is a better predictor of time-to-recrudescence than CA-DNA (Li et al., 2015). Therefore, we also explored the relationship between the levels of unspliced SIV gag RNA throughout the course of treatment, including immediately prior to ATI, and the subsequent frequency of reactivation. A steep decline in CA-SIV-RNA is observed soon after treatment, which then slows at around day 100. This likely reflects the early, rapid loss of highly productive cells (with high RNA per DNA) due to viral cytopathic effects or immune clearance and subsequent survival of cells with a more restricted viral expression phenotype (low RNA per DNA) (Figure 3a).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig3-v2.jpg)
 
-**Figure 3.:** + T cell activation, and frequency of reactivation.(a) The levels of CA-SIV RNA were measured over time in peripheral blood (thick line is the median). (b) The relationship between frequency of reactivation from latency and SIV RNA levels at interruption for individual animals treated at different times after infection. (c) The frequency of reactivation per RNA copy for animals treated on different days post-infection, according to the duration of treatment. (d) Immune activation was assessed based on expression of Ki67 in CD4+ T cells in whole blood just prior to interruption. There was a trend to higher Ki67 expression in animals treated on day 10 and 27, and (e) reactivation per SIV DNA copy was negatively correlated with expression of Ki67 (Spearman r −0.56, p=0.034). Some animals treated at day four had undetectable RNA levels at interruption. In this case, we can only estimate an upper/lower bound and the circle is only shaded at the side of possible lower DNA values. Ki67 analysis was performed on fresh cells for animals in the day 4 and day 27 groups, and frozen cells for animals in the days 10 group.Figure 3—source data 1.
+**Figure 3.:** (a) The levels of CA-SIV RNA were measured over time in peripheral blood (thick line is the median). (b) The relationship between frequency of reactivation from latency and SIV RNA levels at interruption for individual animals treated at different times after infection. (c) The frequency of reactivation per RNA copy for animals treated on different days post-infection, according to the duration of treatment. (d) Immune activation was assessed based on expression of Ki67 in CD4+ T cells in whole blood just prior to interruption. There was a trend to higher Ki67 expression in animals treated on day 10 and 27, and (e) reactivation per SIV DNA copy was negatively correlated with expression of Ki67 (Spearman r −0.56, p=0.034). Some animals treated at day four had undetectable RNA levels at interruption. In this case, we can only estimate an upper/lower bound and the circle is only shaded at the side of possible lower DNA values. Ki67 analysis was performed on fresh cells for animals in the day 4 and day 27 groups, and frozen cells for animals in the days 10 group.
 
 Comparing reactivation rates with CA-RNA levels immediately prior to ATI, we find that CA-RNA is not a significant predictor of post-ATI reactivation frequency (Pearson r of log-log transformed data is 0.37, p=0.18, n = 15) (Figure 3b). Moreover, comparing between groups we again found that this was not a 1:1 relationship where a doubling of RNA would predict a doubling of reactivation. That is, the day 4-treated and d27-treated animals differed by 84 fold in their levels of SIV-CA RNA, despite only a two-fold difference in reactivation rate (Figure 3b). We also investigated the frequency of reactivation per RNA copy, and again found major differences between the groups (Figure 3c). As with the viral CA-DNA, CA-RNA is not proportionate to the frequency of post-ATI reactivation in vivo.
 
 One possibility to explain these data is that SIV CA-RNA is a poor measure of cellular activation leading to virus production and that other measures of immune activation may better predict the per cell SIV reactivation frequency. We therefore investigated other indicators of immune activation, studying CD4+ and CD8+ T cell expression of the activation markers CD38, HLA-DR, and Ki67 (these are generally correlated, so we limit our discussion to Ki67 expression in CD4+ T cells). Comparing animals treated beginning at day 4, 10 and day 27, we found that the animals treated beginning at day 10 had higher immune activation just prior to treatment interruption than those treated on day 4 and 27 (day 4 - mean (+ /- SD) Ki67 = 1.12%, (+ /- 0.38%), n = 6; day 10 – mean = 4.54%, (+ /- 1.87%), n = 4; day 27 – mean = 1.72%, (+ /- 0.39%), n = 5; however, only day 4 and day 10 groups were significantly different, Dunn's multiple comparisons test’s p=0.005) (Figure 3d). Overall, cellular activation in PBMC did not seem a major driver of reactivation frequency, since reactivation per SIV DNA copy was negatively correlated with the level of Ki67 expression (Spearman r −0.56, p=0.034).
 
-## T cell responses to SIV peptides do not predict frequency of SIV reactivation
+### T cell responses to SIV peptides do not predict frequency of SIV reactivation
 
 Our approach to estimating the average frequency of SIV reactivation from latency requires measuring the proportional contribution of different SIVmac239M clonotypes to the pool of total rebound plasma viremia after cART discontinuation. Thus, it estimates the frequency of successful reactivation events, and if some reactivating cells were targeted by immune responses, this would lead to an underestimation of the frequency of reactivation. Thus, it is possible that the observed differences in per cell reactivation frequency may be explained by increased immune control of a proportion of attempted reactivation events. To explore this hypothesis, we measured T cell responses (Figure 4a) using intracellular cytokine staining. We analysed IFN-γ, TNF-α, IL-2, CD107a and MIP1β responses to pooled peptides from SIV Env, Gag, Pol and accessory (ACC) proteins (see Materials and methods).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig4-v2.jpg)
+
+**Figure 4.:** (a) The kinetics of the CD107a+ response in CD8+ T cells to pooled SIV peptides was measured in vitro using ICS (the sum of the responses to peptides from SIV ENV, GAG, POL and accessory (ACC) proteins is shown at the times indicated). (b) Animals treated beginning on day 10 and 27 have higher CD8+ T cell responses to pooled peptides (%CD107a+ cells shown) (Dunn's multiple comparisons test’s p=0.022, for day 4 (n = 6) vs. day 10 (n = 4); p=0.053, for day 4 (n = 6) vs day 27 (n = 5)). (c) Relationship between peak viral load after treatment interruption and the level of CD107a response to pooled peptides (Spearman r = −0.62, p=0.015, n = 15). For other responses and peptides see Figure 4—figure supplement 1. (d) The dependence of reactivation rate per SIV DNA at time of interruption on the level CD107a response to pooled peptides, for other responses and peptides see Figure 4—figure supplement 2, for reactivation rate vs. immune response see Figure 4—figure supplement 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Relationship between peak viral load after treatment interruption and the level of immune response to different peptides. Spearman r and p-value as a measure of correlation between response to pooled peptides and peak viral load presented in the corner of each panel.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Relationship between reactivation rate per SIV DNA at time of interruption and the level of immune response to different peptides. Spearman r and p-value as a measure of correlation between response to pooled peptides and reactivation rate per SIV DNA presented in the corner of each panel.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Relationship between reactivation rate at time of interruption and the level of immune response to different peptides. Spearman r and p-value as a measure of correlation between response to pooled peptides and reactivation rate presented in the corner of each panel. Higher immune response leads to higher reactivation rate since both are consequences of higher exposure to infection.
 
 The proportion of CD8+ T cells expressing CD107a in response to pooled SIV peptides (measured at the time of treatment interruption) was negatively correlated with the peak viral load observed during treatment interruption (Spearman r = −0.62, p=0.015, n = 15). This suggests that CD8+ T cells are able to mediate some level of immune control of SIV viral growth during rebound (Figure 4c). We discuss here only the CD107a responses, while other responses are summarised in Figure 4—figure supplement 1, 2 and 3.
 
@@ -76,19 +92,115 @@ Across the pooled animals from the day 4, day 10 and day 27-treatment initiation
 
 However, if immune control directly reduced the frequency of reactivation, then we might also expect to see a similar trend within the groups, so that the animals with the highest immune response in each group would also have the lowest reactivation rate. Instead, we see that the animal in the day four group with the highest immune response also had the highest frequency of reactivation per DNA copy. Similarly, the trend within the day 27 treated animals is towards higher immune responses being associated with higher per-latent-cell reactivation. There is also one animal in each of the day 10 and d27 groups with immune responses as low as the d4 treated animals, but 60 and 100-fold lower reactivation per DNA copy. Although the small number of animals limits these comparisons, overall this suggests that mechanism of CD8+ T cell immunity blocking or controlling a proportion of reactivation events is unlikely to explain the observed differences in per cell reactivation frequency.
 
-## SIV DNA is largely replication competent
+### SIV DNA is largely replication competent
 
 One potential explanation for our observed relationship between SIV DNA and reactivation frequency is that the proportion of SIV that is replication competent changes rapidly during early infection as a consequence of accumulation of deletions and or hypermutations. For example, if SIV DNA were 100% replication competent at day 4, and 1% replication competent at day 27, this could explain a 100-fold change in reactivation rates. To investigate this, we sequenced near full length SIV DNA from PBMCs taken just prior to ATI from animals treated on day 10 (n = 4) and day 27 (n = 5)(we note that this data has also been included as part of another study; Long et al., 2019) (Figure 5). We found that 50/60 sequences from the day 10 treated and 86/101 sequences from day 27 treated animals were intact and presumptively replication competent (mean of 84% intact, range of 75–100% in individual animals). Since the majority of sequences were intact, this suggests that differences in reactivation frequency cannot be explained by differences in replication competence.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/49022/elife-49022-fig5-v2.jpg)
 
-**Figure 5.:** Full length SIV DNA was sequenced from PBMC of macaques just prior to treatment interruption. The number of intact versus defective sequences observed in each animal is indicated. The proportion of intact sequences was similar for animals treated on day 10 (top row) versus day 27 (bottom row). Overall 84% of SIV genomes were found to be intact.Figure 5—source data 1.
+**Figure 5.:** Full length SIV DNA was sequenced from PBMC of macaques just prior to treatment interruption. The number of intact versus defective sequences observed in each animal is indicated. The proportion of intact sequences was similar for animals treated on day 10 (top row) versus day 27 (bottom row). Overall 84% of SIV genomes were found to be intact.
 
-## A combination of SIV DNA copies and treatment duration is the best correlate/predictor of reactivation frequency
+### A combination of SIV DNA copies and treatment duration is the best correlate/predictor of reactivation frequency
 
 Thus far, we have investigated a variety of individual factors that might explain post-ATI reactivation frequency. In order to determine whether a combination of these factors could better predict reactivation frequency, we performed a multiple regression analysis that included all potential variables (listed in Table 1). We found that none of the peripheral immune or cytokine variables contributed significantly to the regression model, indicating that these variables cannot accurately predict reactivation frequency. The best model to predict reactivation frequency included both treatment duration and DNA levels at interruption (adjusted R2 = 0.73).
 
-## Modeling early establishment and rapid filling of the SIV reservoir in early treatment
+**Table 1.**
+ Variables used in the multiple linear regression model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable number</th>
+      <th>Variable name</th>
+      <th>Allowed sign of coeffiecient</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Treatment Duration</td>
+      <td>-ve</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Log10(DNA at treatment)</td>
+      <td>+ve</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Log10(DNA at interruption)</td>
+      <td>+ve</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Log10(RNA at treatment)</td>
+      <td>+ve</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Log10(RNA at interruption)</td>
+      <td>+ve</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Log10(Viral Load at treatment)</td>
+      <td>-ve or +ve</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Log10(Area Under curve of Viral load at treatment)</td>
+      <td>-ve or +ve</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Log10(Maximum Viral Load)</td>
+      <td>-ve or +ve</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>CD107a</td>
+      <td>-ve</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>TNFα</td>
+      <td>-ve</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>IFNγ</td>
+      <td>-ve</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>IL2</td>
+      <td>-ve</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>MIP1β</td>
+      <td>-ve</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Ki67</td>
+      <td>+ve</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>HLA-DR</td>
+      <td>+ve</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>CD38</td>
+      <td>+ve</td>
+    </tr>
+  </tbody>
+</table>
+
+### Modeling early establishment and rapid filling of the SIV reservoir in early treatment
 
 Previous studies have demonstrated that latency is established very early after SIV infection (Whitney et al., 2014; Whitney et al., 2018; Okoye et al., 2018), consistent with our observations that seeding of the rebound competent viral reservoir is already established in macaques infected with a high-dose of virus and starting cART by day four post inoculation. However, our study suggests that the frequency of reactivation from latency does not increase much beyond early infection, even though large increases in SIV CA-DNA and CA-RNA are observed accumulating in PBMC. This raises the question of how the level of reactivation can saturate so early, while delayed treatment clearly allows much higher levels of infection and persistent SIV DNA? It seems likely that the majority of SIV reactivation events observed derive from a relatively small portion of the total proviral population, which can be established extremely early in infection. This ‘reactivation initiating’ population increases only slightly with ongoing viral replication, while infected cell frequency and CA-DNA levels accumulate, but does not proportionally contribute to post-ATI reactivation frequency. One additional possible explanation is that there may be limited and saturable cellular or anatomic compartments that are preferred for harbouring reactivatable viruses and include cells infected early after infection which persist during treatment. To investigate this, we adapted a standard model of HIV infection to investigate the effects of a ‘susceptible subset’ of cells on latency and reactivation. The model included a subclass of cells that was both more susceptible to infection (and thus infected earlier after inoculation), and more prone to later reactivation from latency (see Materials and methods). A subset of 0.4% of cells, that is 100-fold more susceptible to infection, and 500-fold more prone to reactivation (or a variety of combinations of these factors) could recapitulate the observed dynamics of DNA accumulation and post-ATI reactivation from the data (Figure 6).
 
@@ -116,74 +228,140 @@ It is important to understand the mechanisms of latency formation, maintenance a
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Nine purpose-bred Indian-origin male rhesus macaques (Macaca mulatta) were housed at the National Institutes of Health (NIH) and cared for in accordance with the Association for the Assessment and Accreditation of Laboratory Animal Care (AAALAC) standards in an AAALAC-accredited facility and all procedures were performed according to protocols approved by the Institutional Animal Care and Use Committee of the National Cancer Institute (Assurance #A4149-01). Animal care was provided in accordance with the procedures outlined in U.S. NIH Guide for Care and Use of Laboratory Animals. Reference numbers associated with the ethical approval are AVP047 and AVP058.
 
 At the start of the study, all animals were free of cercopithecine herpesvirus 1, simian immunodeficiency virus (SIV), simian type-D retrovirus, and simian T-lymphotropic virus type 1.
 
-## Infection and treatment
+### Infection and treatment
 
 In total, 15 animals were intravenously infected with of transfection produced SIVmac239M as previously described (Fennessey et al., 2017). 9 of 15 animals were infected with 2.2 × 105 IU (1 mL) and treated with cART at 4 and 27dpi, while the remaining four animals were infected with 1 × 104 IU (1 mL) and treated with cART at 10dpi. cART regimen for d27 and d4 animals consisted of a co-formulated preparation containing the reverse transcriptase inhibitors tenofovir (TFV: (R)−9-(2-phosphonylmethoxypropyl) adenine (PMPA), 20 mg/kg) and emtricitabine (FTC; 50 mg/kg) administered by once-daily subcutaneous injection, plus raltegravir (RAL; 150–200 mg) given orally twice daily. Day four animal were additionally treated with the protease inhibitor indinavir (IDV; 120 mg BID) and ritonavir (RTV; 100 mg BID) for the first 9 months (Fennessey et al., 2017). Day 10 animals received a co-formulated preparation of emtricitabine (FTC, 40 mg/kg), tenofovir disoproxil fumarate (TDF, 5.1 mg/kg), and dolutegravir (DTG, 2.5 mg/kg) administered by once-daily subcutaneous injection.
 
-## Barcode sequencing and enumeration
+### Barcode sequencing and enumeration
 
 Sequence analysis was used to enumerate the number of detectable barcodes measured during primary infection prior to cART and during rebound after cART interruption. Viral nucleic acid was sequenced using next generation sequencing as previously described (Fennessey et al., 2017).
 
-## Plasma viral load determination
+### Plasma viral load determination
 
 Plasma viral load determinations for SIV RNA were performed over the duration of the study using quantitative real-time PCR as described previously (Li et al., 2016). The limit of detection of this assay is 15 vRNA copies/mL.
 
-## Quantitative evaluation of cell-associated DNA and RNA
+### Quantitative evaluation of cell-associated DNA and RNA
 
 Quantitative assessment of cell-associated viral DNA and RNA in PBMC pellets was determined by the hybrid real-time/digital RT-PCR and PCR assays essentially as described previously (Hansen et al., 2011) but specifically modified to accommodate cell pellets. 100 μL of TriReagent (Molecular Research Center, Inc) was added to cell pellets in standard 1.7 mL microcentrifuge tubes and the tubes sonicated in a Branson cup horn sonicator (Emerson Electric, St. Louis) for 15 s at 60% amplitude to disrupt the pellet. Additional TriReagent was added to a final volume of 1 mL and the remainder of the protocol was carried out as described previously (Hansen et al., 2011). Limit of detection is evaluated on a sample by sample basis, dependent on the number of diploid genome equivalents of extracted DNA assayed.
 
-## Flow cytometry
+### Flow cytometry
 
 Antibodies and reagents were obtained from BD Biosciences, unless indicated otherwise, and data analysis was performed using FCS Express (De Novo Software). Antibody panel validation and population gating were performed using fluorescence-minus-one and corresponding biological controls. Compensation was performed using goat-anti-mouse Ig (Spherotech), anti-Rat Ig and amine-reactive (Invitrogen) compensation bead, single-color controls, under identical sample treatment conditions. For activation immunophenotyping, 100 μl EDTA-anti-coagulated whole blood or 1 × 106 quick-thawed cryopreserved PBMC were incubated with the following antibody panel: CD4 Pacific Blue (OKT4, BioLegend), CD8 BV510 (SK1), CD14 BV605 (M5E2, BioLegend), CD69 BV650 (FN50), CD163 BV711 (GHI/61), CCR5 PerCP-Cy5.5 (3A9), CD38 PE (OKT10; NIH Nonhuman Primate Reagent Resource), CD28 ECD (CD28.2, Beckman Coulter), CD95 PE-Cy5 (DX2), HLA-DR Alexa Fluor 700 (L243, BioLegend) and CD3 APC-Cy7 (SP34-2). Samples were lysed with 1X BD FACS Lyse buffer, washed and then fixed and permeabilized with BD Cytofix/Cytoperm reagents, according to manufacturer instructions. Samples were incubated with an intracellular staining panel containing Ki67 BV786 (B56), MNDA FITC (3C1, Beckman Coulter), CD68 PE-Cy7 (Y1/82A, BioLegend) and CD66 APC (TET2, Miltenyi Biotech), washed and approximately 200,000 CD3+ T-cells were acquired for each sample using a BD LSR-II flow cytometer. For intracellular cytokine staining, 1 × 106 quick-thawed, DNase I-treated (30 U/ml, Roche) cryopreserved PBMC were stimulated for 8 hr in 96-well polypropylene round-bottom plates (Costar) with pools of 2 μg/ml overlapping 15mer SIVmac239 accessory (combination of nef, rev, tat, vif, vpr and vpx), gag, pol and env peptides (NIH AIDS Reagent Program), in the presence of CD107a BV785 antibody (H4A3, BioLegend). Phorbol 12-myristate 13-acetate with Ionomycin (Sigma) and DMSO in media were used as positive and negative controls, respectively, and 5 μg/ml brefeldin A (Sigma) mixed with 0.14 μl/well BD GolgiStop was added after 1 hr of stimulation to block protein transport. Samples were cultured in a DigiTherm Unibator (Tritech Research) at 37°C, 5% CO2 and immediately after the 8 hr incubation, rapidly cooled and maintained at 4°C until the following morning. Samples were surface stained with an antibody panel containing Yellow Fluorescent Reactive Dye (Invitrogen), CD4 Pacific Blue, CD28 ECD, CD95 PE-Cy5 and CD8α PE-Cy7, fixed and permeabilized with BD Cytofix/Cytoperm reagents and then incubated with an intracellular staining panel containing CD3 APC-Cy7, IFNγ FITC (B27), MIP-1β PE (D21-1351), TNF-α BV711 (MAb11, BioLegend) and IL-2 APC (MQ1-17H12). Cells were washed and approximately 200,000 live CD3+ T-cells were acquired for each sample using an HTS-equipped BD LSR-II cytometer.
 
-## Single genome amplification and sequencing of full-length SIV genome
+### Single genome amplification and sequencing of full-length SIV genome
 
 Genomic DNA was purified from PBMC from SIV-infected rhesus macaques using QIAamp DNA Mini Kit (Qiagen). SGA sequencing was performed by diluting template DNA such that the majority of wells contain no template and the wells with template most likely contain only a single copy (Keele et al., 2008). Nested PCR was performed using the following primers: SIVnFL.F1 5’-GAT TGG CGC CYG AAC AGG GAC TTG-3’; SIVnFL.R1 5’-CCC AAA GCA GAA AGG GTC CTA ACG-3’ for the first round PCR and SIVnFL.F2 5’-GTG AAG GCA GTA AGG GCG GCA GG-3’; SIVnFL.R2 5’-CCA GGC GGC GRC TAG GAG AGA TGG-3’ for the second round. The PCR reaction consisted of 1x SuperFi buffer (Invitrogen), 0.2 mM each of dNTPs, 1x SuperFi GC enhancer (Invitrogen), 0.02 U/uL Platinum SuperFi DNA Polymerase (Invitrogen), 0.5 uM forward primer, 0.5 uM reverse primer, and template DNA. Thermal cycling conditions were as follows: 95°C for 2 min; 35x (95°C for 10 s, 68°C (round 1) or 72°C (round 2) for 10 s, 68°C (round 1) or 72°C (round 2) for 5 min; and a final extension of 5 min followed by 4°C hold. The higher annealing and extension temperatures (72°C) in round two were used to avoid mispriming. SGA PCR products were directly sequenced using BigDye Terminator Sanger Sequencing (Life Technologies) with the primers previously described (Lopker et al., 2016).
 
-## Estimating the reactivation rate
+### Estimating the reactivation rate
 
-In order to estimate the reactivation rate, we used a method that incorporates the ratio of the number of copies of different barcoded clonotypes, and the growth rate of virus (Fennessey et al., 2017). We assumed that all barcodes have approximately the same growth rate and, thus, the reactivation rate (RR) can be estimated using(1)RR=g(n−1)∑i=1n−1(ln Si+1−lnSi),where g is the estimate of the growth rate of the single barcode, Sii = 1,..,n is the number of sequences for each barcode. The schematic explanation of this method is presented in the Figure 1d.
+In order to estimate the reactivation rate, we used a method that incorporates the ratio of the number of copies of different barcoded clonotypes, and the growth rate of virus (Fennessey et al., 2017). We assumed that all barcodes have approximately the same growth rate and, thus, the reactivation rate (RR) can be estimated using
 
-The ratio of number of copies of each clonotype was estimated from Illumina sequencing of plasma virus, and growth rate was estimated as the maximal growth rate between any two viral load measurements in each animal. We assumed the exponential growth of virus between two neighbouring measurement as shown below(2)V(ti+1)=V(ti)egi(ti+1−ti),\ i=1,...,m−1,where m is the number of measurements of viral load, V(ti) is the viral load at time ti. Thus the estimate of the growth rate on the interval can be found using formula (Deeks et al., 2016)(3)gi= ln V(ti+1)−lnV(ti)ti+1−ti, i=1,..,m−1,and the maximal viral load in subject is:(4)g=maxi=1,..,m−1gi
+$$
+RR=\frac{g(n−1)}{\sumi=1n−1(ln S_{i+1}−lnS_{i})},
+$$
+
+where g is the estimate of the growth rate of the single barcode, Sii = 1,..,n is the number of sequences for each barcode. The schematic explanation of this method is presented in the Figure 1d.
+
+The ratio of number of copies of each clonotype was estimated from Illumina sequencing of plasma virus, and growth rate was estimated as the maximal growth rate between any two viral load measurements in each animal. We assumed the exponential growth of virus between two neighbouring measurement as shown below
+
+$$
+V(t_{i+1})=V(t_{i})e^{g_{i}(t_{i+1}−t_{i})},\ i=1,...,m−1,
+$$
+
+where m is the number of measurements of viral load, V(ti) is the viral load at time ti. Thus the estimate of the growth rate on the interval can be found using formula (Deeks et al., 2016)
+
+$$
+g_{i}= \frac{ln V(t_{i+1})−lnV(t_{i})}{t_{i+1}−t_{i}}, i=1,..,m−1,
+$$
+
+and the maximal viral load in subject is:
+
+$$
+g=maxi=1,..,m−1g_{i}
+$$
 
 Note that the maximal two-point growth gives slightly higher growth rates than fitting of multiple timepoints, but allowed for consistency across all groups, to avoid issues related to different sampling times.
 
-## Estimating the area under the curve of viral load
+### Estimating the area under the curve of viral load
 
 In order to estimate the area under the curve we approximated the trajectory of viral load by a piecewise function (Fennessey et al., 2017) where growth rates on the interval can be found using formula (3). Having this simple approximation, we can find the integral of this function between any timepoints. This was implemented in Wolfram Mathematica 11.2, Wolfram Research Inc, Champaign, IL, USA.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical tests were performed in GraphPad Prism 7.04, GraphPad Software, La Jolla, CA, USA.
 
-## Estimating the decay of SIV DNA, CA RNA and reactivation rate
+### Estimating the decay of SIV DNA, CA RNA and reactivation rate
 
-In order to estimate the decay rate of CA RNA and SIV DNA in chronic infection, we estimated decay rates after approximately 6 months of treatment. We also measured the frequency of reactivation (using the Materials and method described above) in monkeys treated for different times. We fitted the following linear mixed effect model (Eriksson et al., 2013) to ln-transformed data.(5)y=Ai+aij+(Bi+bij)xij+εij,where Ai and Bi are fixed effect intercept and slopes where index i corresponds to different types of data such as SIV CA-RNA or CA-DNA. Index j in random effect parameters aij and bij corresponds to different monkeys in case of CA RNA and SIV DNA or in case of reactivation rate to groups of monkeys treated on day 4 or day 27. This model was implemented in R (v. 3.3.1, The R Foundation for Statistical computing) using standard function nmle for fitting and performing statistical tests.
+In order to estimate the decay rate of CA RNA and SIV DNA in chronic infection, we estimated decay rates after approximately 6 months of treatment. We also measured the frequency of reactivation (using the Materials and method described above) in monkeys treated for different times. We fitted the following linear mixed effect model (Eriksson et al., 2013) to ln-transformed data.
 
-## Multiple regression methods
+$$
+y=A_{i}+a_{ij}+(B_{i}+b_{ij})x_{ij}+\epsilon_{ij},
+$$
+
+where Ai and Bi are fixed effect intercept and slopes where index i corresponds to different types of data such as SIV CA-RNA or CA-DNA. Index j in random effect parameters aij and bij corresponds to different monkeys in case of CA RNA and SIV DNA or in case of reactivation rate to groups of monkeys treated on day 4 or day 27. This model was implemented in R (v. 3.3.1, The R Foundation for Statistical computing) using standard function nmle for fitting and performing statistical tests.
+
+### Multiple regression methods
 
 Multiple linear regression was performed using both forwards stepwise regression. Criteria for inclusion in the model was that the variable had a significance value (p-value) of greater than 0.05, and that the regression coefficient was in a biologically meaningful direction (Table 1).
 
-## Modelling infection and ‘filling’ of a susceptible reservoir
+### Modelling infection and ‘filling’ of a susceptible reservoir
 
 The model considers two populations of cells. One group is comprised of normal cells, and the other contains highly susceptible cells that are also highly prone to post-treatment reactivation. When target cells become infected, some fraction of them, f, become productively infected cells. Then (1-f ) of them become latently infected cells. Highly susceptible cells are infected with a k fold higher infectivity rate than normal cells. We assume that reactivation rate is the sum of reactivation from both the normal cells and the highly reactivatable cells, but the highly reactivatable cells contribute a times as much to the reactivation rate.
 
-The equations are:dTNdt=−βVTNdTSdt=−kβVTSdldt=fβV(TN+kTS)−δIIdLNdt=(1−f)βVTN−δLLNdLSdt=(1−f)kβVTS−δLLSdVdt=pI−cV
+The equations are:
 
-Where TN and TS are normal and susceptible target cells respectively, I are infected cells, LN and LS are normal and susceptible latent cells respectively and V is free virus. The parameters of the model are given by: β, the infection rate of normal targets, k the increase in infection rate for susceptible targets, f, the fraction of target cells that become productively infected (not latent), δI, the death rate of productively infected cells, δL, the death rate of latent cells, p, the rate of production of virus and c, the death rate of virus.
+$$
+\frac{dT_{N}}{dt}=−\betaVT_{N}
+$$
 
-The reactivation rate is determined as:RR∝LN+aLS
+
+
+$$
+\frac{dT_{S}}{dt}=−k\betaVT_{S}
+$$
+
+
+
+$$
+\frac{dl}{dt}=f\betaV(T_{N}+kT_{S})−\delta_{I}I
+$$
+
+
+
+$$
+\frac{dL_{N}}{dt}=(1−f)\betaVT_{N}−\delta_{L}L_{N}
+$$
+
+
+
+$$
+\frac{dL_{S}}{dt}=(1−f)k\betaVT_{S}−\delta_{L}L_{S}
+$$
+
+
+
+$$
+\frac{dV}{dt}=pI−cV
+$$
+
+Where TN and TS are normal and susceptible target cells respectively, I are infected cells, LN and LS are normal and susceptible latent cells respectively and V is free virus. The parameters of the model are given by: $\beta$, the infection rate of normal targets, k the increase in infection rate for susceptible targets, f, the fraction of target cells that become productively infected (not latent), $\delta_{I}$, the death rate of productively infected cells, $\delta_{L}$, the death rate of latent cells, p, the rate of production of virus and c, the death rate of virus.
+
+The reactivation rate is determined as:
+
+$$
+RR∝L_{N}+aL_{S}
+$$
 
 Parameters of the model.
 
 TS(0)=0.004TN(0) (i.e. Number of highly susceptible cells is initially 0.4% of the number of normal cells),
 
-V0 = 40, f = 0.2 (i.e. 80% of cells become infected and 20% become latent), β = 1.4x10-7, k = 100, a = 500.
+V0 = 40, f = 0.2 (i.e. 80% of cells become infected and 20% become latent), $\beta$ = 1.4x10-7, k = 100, a = 500.
 
-TN(0) = 1000 cells, δI = 1/day, δL=1200/day, c = 20/day, p = 5x105/day.
+TN(0) = 1000 cells, $\delta_{I}$ = 1/day, $\delta_{L}=\frac{1}{200}$/day, c = 20/day, p = 5x105/day.

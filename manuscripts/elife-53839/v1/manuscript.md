@@ -45,7 +45,213 @@ The multivariate nature of systems biology has rendered it particularly applicab
 
 **Figure 1.:** Technologies used in cancer systems immunology operate either on bulk tissue samples or single-cell suspensions. Conventional MS, NGS, and imaging platforms do not require tissue dissociation (although histology provides single-cell resolution). Droplet-based microfluidics and mass cytometry, in contrast, require cell suspensions, but generate high-dimensional data for individual cells.
 
-## Bulk sequencing technologies
+**Table 1.**
+ Genomic and transcriptomic profiling technologies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measurement</th>
+      <th>DNA</th>
+      <th>DNA</th>
+      <th>DRNA/RNA</th>
+      <th>RNA</th>
+      <th>RNA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Technology</td>
+      <td>WGS</td>
+      <td>WES</td>
+      <td>Amplicon (e.g. TCR, BCR, specific loci)</td>
+      <td>RNA-seq</td>
+      <td>Microarray</td>
+    </tr>
+    <tr>
+      <td>Strengths</td>
+      <td>• Captures coding and non-coding regions • may be more accurate in some exons as well • better coverage in low-complexity regions • no PCR step required</td>
+      <td>• Reduced cost of sequencing since restricted to 2% of genome</td>
+      <td>• Lower cost • greater sequencing depth</td>
+      <td>• Not limited to known genes with probes • can identify splice variants • can include ncRNA • can identify sequence variations (e.g. mutations)</td>
+      <td>• Can theoretically detect very low abundance transcripts at no additional cost</td>
+    </tr>
+    <tr>
+      <td>Weaknesses</td>
+      <td>• High cost</td>
+      <td>• Does not capture non-coding regions • may fail to capture some coding regions depending on probe hybridization • GC bias can be introduced due to PCR • hybridization bias can occur in regions with heterozygous SNVs</td>
+      <td>• Limited to specific regions (not genome-wide)</td>
+      <td>• Sequencing depth can limit the ability to detect low-abundance transcripts</td>
+      <td>• Probe bias • inability to compare relative abundance across genes • limited to known transcripts (for which there are probes)</td>
+    </tr>
+    <tr>
+      <td>Single-cell Version?</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y (see Table 3)</td>
+      <td>Y* (very uncommon, Esumi et al., 2008)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Epigenetic profiling technologies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measurement</th>
+      <th>Technology</th>
+      <th>Strengths</th>
+      <th>Weaknesses</th>
+      <th>Single-cell version?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Methylation</td>
+      <td>WGBS</td>
+      <td>• No a priori sequence selection</td>
+      <td>• High cost and may require higher coverage • cannot distinguish type of modification at cytosines</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Methylation</td>
+      <td>RRBS</td>
+      <td>• Lower cost</td>
+      <td>• Limited mainly to CpG islands • cannot distinguish type of modification at cytosines</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Protein Localization</td>
+      <td>ChIP-seq</td>
+      <td>• Genome-wide profiling of histone modifications and DNA-protein interactions (Histone H3 acetylation/methylation, TF binding site identification, SE identification)</td>
+      <td>• Survey only one type of interaction (protein) at once • lots of sources of noise/bias • requires good antibodies • requires input DNA and isotype controls • requires large input of cells</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Protein Localization</td>
+      <td>CUT&amp;RUN</td>
+      <td>• Fewer input cells required than ChIP • less noise • fewer sequencing reads required • no cross-linking required</td>
+      <td>• Requires good antibody • potential for overdigesting DNA</td>
+      <td>Y (CUT&amp;Tag, uliCUT&amp;RUN)</td>
+    </tr>
+    <tr>
+      <td>Chromatin Accessibility</td>
+      <td>DNAse-seq</td>
+      <td>• Identify a range of cis and trans regulatory elements including TF binding sites</td>
+      <td>• High input cells requirement • more time-consuming that ATAC • sequence bias</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Chromatin Accessibility</td>
+      <td>ATAC-seq</td>
+      <td>• Identify a range of cis and trans regulatory elements including TF binding sites • minimal input cells required • increased sensitivity over DNAse-seq • simple protocol</td>
+      <td>• Footprint profiles can be less well-defined than DNAse-seq • potential mitochondrial DNA contamination</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Chromatin Accessibility</td>
+      <td>MNAse-seq</td>
+      <td>• Nucleosome occupancy and positioning • can be used to predict higher-order structure (e.g. 3D)</td>
+      <td>• Requires crosslinking • highly dependent on enzyme concentration • some sequence bias</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Chromatin Accessibility</td>
+      <td>FAIRE-seq</td>
+      <td>• No sequence bias • simple protocol • no enzymes required</td>
+      <td>• Requires crosslinking • lower resolution (crosslinking binds chromatin but also TFs) • large input cell requirement</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>3D Conformation</td>
+      <td>3C (Chromosome Conformation Capture)</td>
+      <td>• Identify single chromosomal interaction (one vs. one)</td>
+      <td>• limited resolution (by 6bp cutters) • laborious • PCR biases • high library complexity • single viewpoint</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>3D Conformation</td>
+      <td>4C (Circular 3C)</td>
+      <td>• Improved resolution over 3C • can identify very long range interactions • can identify all contacts for a locus (one vs. all)</td>
+      <td>• Biases from circularization • PCR biases • high input cell requirements • single viewpoint</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>3D Conformation</td>
+      <td>5C (3C Carbon Copy)</td>
+      <td>• Can identify many contacts for multiple loci (many vs. many)</td>
+      <td>• Bias introduced by probe ligation efficiencies • not all fragments can bind probes • all vs. all prohibitively expensive</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>3D Conformation</td>
+      <td>NG Capture-C</td>
+      <td>• Analyze hundreds of viewpoints • can identify PCR duplicates (low bias) • highest sensitivity and resolution • fewer input cells required</td>
+      <td>• Occasional non-specific interactions</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>3D Conformation</td>
+      <td>Hi-C</td>
+      <td>• Maps contacts across whole genome (all vs. all) • kilobase resolution</td>
+      <td>• Fewer contacts per fragment than 4C or Capture-C • higher resolution versions require extremely high sequencing depths</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>3D Conformation and Protein Localization</td>
+      <td>ChIA-PET</td>
+      <td>• Combines 3D interactions with protein interactions</td>
+      <td>• Interactions defined by few reads • high input requirements • bias toward interactions with targeted protein</td>
+      <td>Y* (ChIA-Drop: single molecule, Zheng et al., 2019)</td>
+    </tr>
+    <tr>
+      <td>3D Conformation and Protein Localization</td>
+      <td>Hi-ChIP (and PLAC-seq)</td>
+      <td>• Lower input required • higher yield than ChIA-PET • higher signal to noise over Hi-C</td>
+      <td>• Bias toward interactions with targeted protein</td>
+      <td>N</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ scRNA-seq Technologies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Strengths and weaknesses of the ever-evolving compendium of scRNA-seq technologies and analysis packages have been evaluated reviewed extensively in Ziegenhain et al., 2017; Chen et al., 2019a; Haque et al., 2017. Here, we provide a basic overview of the strengths of the general approaches.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Technology</td>
+      <td>Plate-based (e.g. Smart-seq2, MARS-seq)</td>
+      <td>Microfluidic capture (e.g. C1, Seq-well, CEL-seq2/C1)</td>
+      <td>Droplet (e.g. 10X, Drop-Seq)</td>
+    </tr>
+    <tr>
+      <td>Strengths</td>
+      <td>• Highest sensitivity (number of genes detected) • fewer multiplets • full-length transcripts possible</td>
+      <td>• High sensitivity (number of genes detected) • fewer multiplets • no sorting required</td>
+      <td>• Inexpensive (per cell) • profile high numbers of cells • can identify less frequent cell types • no sorting required • Can use UMIs</td>
+    </tr>
+    <tr>
+      <td>Weaknesses</td>
+      <td>• Requires sorting • low throughput • high cost per cell • not strand specific</td>
+      <td>• 3' Only • limited cell numbers • (typically) not strand-specific</td>
+      <td>• 3' Only • fewer genes/UMIs • more dropout</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bulk sequencing technologies
 
 The promise of the Human Genome Project and whole genome sequencing (WGS) has inspired the development of –omics technologies capable of characterizing the entirety of a particular attribute within a sample. Such approaches include, but are not limited to, genomics, transcriptomics, epigenomics, proteomics, metabolomics, lipidomics (Yang and Han, 2016), and glycomics (Bennun et al., 2016; Cummings and Pierce, 2014; Bertozzi and Sasisekharan, 2009), and their current manifestations typically utilize variations of next-generation sequencing (NGS) or mass spectrometry (MS). The bulk implementations of these technologies (i.e. those that require multiple cells as inputs – frequently, thousands to millions) were the precursors of many of the single-cell versions that have recently gained popularity. While these technologies on their own do not provide single-cell resolution, they frequently provide a degree of sensitivity that cannot yet be achieved at the single-cell level (e.g. most glycomics). Furthermore, the cost of these approaches is typically considerably lower than their single-cell counterparts. Complex mixtures of cells can be purified by fluorescence activated cell sorting (FACS), magnetic purification, or microfluidic systems prior to subjecting them to these technologies, and recent computational approaches provide the means of deconvolving mixed populations when purification is not feasible or gene expression data from such mixed populations have already been collected (Racle et al., 2017; Newman et al., 2015; Newman et al., 2019; Ahn et al., 2013; Yoshihara et al., 2013; Gong and Szustakowski, 2013; Li et al., 2016b; Becht et al., 2016; Shen-Orr et al., 2010; Zhong et al., 2013; Aran et al., 2017; Quon et al., 2013; Shen-Orr and Gaujoux, 2013; Vallania et al., 2018; Du et al., 2019).
 
@@ -57,7 +263,7 @@ In addition to approaches that evaluate acetylation, methylation, and protein bi
 
 While regions of open chromatin reveal evidence of transcriptional regulation, higher order chromatin structures also play critical roles in controlling gene expression. Long-range distal elements, such as enhancers, affect gene expression even at distances greater than 1 Mb in linear genome space (Lettice et al., 2003; Bulger and Groudine, 2011; Dekker, 2008). To assess how three-dimensional conformations affect regulation, a variety of technologies have been developed that are capable of querying chromosomal interactions at the genome scale (Davies et al., 2017). These include derivatives of chromosome conformation capture (3C) (Dekker et al., 2002) such as circular chromosome conformation capture (4C) (Zhao et al., 2006; Simonis et al., 2006), chromosome conformation capture carbon copy (5C) (Dostie et al., 2006), NG Capture-C (Hughes et al., 2014; Davies et al., 2016), Hi-C (Lieberman-Aiden et al., 2009), and methods that combine 3C with ChIP such as chromatin interaction analysis by paired-end tag sequencing (ChIA-PET) (Fullwood et al., 2009) and HiChIP (Mumbach et al., 2016; Mumbach et al., 2017). These 3C methodologies are variants of protocols wherein DNA is crosslinked, digested by restriction endonucleases, ligated together, and amplified by PCR to identify regions in close proximity. In particular, Hi-C has enabled mapping of all interactions within the genome at kilobase resolution (Rao et al., 2014). These techniques have informed a variety of studies in both tumor biology and immunology. Earlier studies using fluorescence in situ hybridization (FISH) and 3C originally suggested that interchromosomal interactions between promoters and enhancers on distinct chromosomes can drive immune cell development (Hewitt et al., 2008; Ling et al., 2006), but subsequent high-resolution genome-wide studies using Hi-C failed to confirm the existence of such interactions (Johanson et al., 2018). Recently, as part of the Cancer Genome Atlas (TCGA) studies, enhancer activity has been mapped across nearly 9000 cancer patients combining RNA-seq and Hi-C data to characterize enhancer-gene interactions, and this effort identified a key enhancer of the immunomodulatory protein programmed death ligand 1 (PD-L1) (Chen et al., 2018). Integrating these multiple types of epigenetic signatures with transcriptional datasets should enable the generation of systems level models for transcriptional regulation in both malignant and immune populations during tumor progression. For example, how do genome-wide changes in chromosomal confirmations within immune or malignant cells alter their states of differentiation, and how do heterotypic cellular interactions drive these changes?
 
-## Single-cell sequencing technologies
+### Single-cell sequencing technologies
 
 While light and electron microscopy endowed scientists with the ability to survey biology at the resolution of single cells, perhaps the most influential single-cell technological advance in immunology was the invention of flow cytometry and fluorescence activated cell sorting (FACS) (Fulwyler, 1965; Hulett et al., 1969). These technologies enable scientists to identify and enumerate phenotypically and functionally distinct immune cells, and query the activation states of individual cells in a suspension based on excitation of fluorescent probes (e.g. fluorescently labeled antibodies, fluorescent protein-based genetic reporters, fluorescent DNA intercalating dyes, etc.). In addition to representing a fundamental tool for investigating and identifying the cellular components of the immune system, flow cytometry has been useful clinically. For example, prior to the discovery of the Human Immunodeficiency Virus, it served as the primary means for identifying individuals at risk for AIDS and monitoring their course and response to therapy, based on the relative frequency of circulating CD4 T cells (Lifson and Engleman, 1989). Today, in addition to its use in monitoring the frequencies of various immune cell types in patients with cancers and recipients of organ transplants who are receiving immunosuppressive drugs, flow cytometry is used to characterize malignant cells in blood for clinical diagnosis. By multiplexing these probes, scientists can simultaneously measure tens of markers on individual cells at rates of thousands of cells per second, and recent advances (discussed later) have increased this multiplexing to above 40 markers (Bendall et al., 2012). Due to its ability to survey the states of mixed populations at a single-cell resolution, flow cytometry has facilitated the majority of major discoveries in the field of immunology.
 
@@ -67,7 +273,7 @@ The vast majority of bulk NGS approaches have been adapted to these single-cell 
 
 The immune system is comprised of a myriad of cell types with distinct functions working in concert to elicit responses against a pathogenic insult. The multitude and diversity of these cell types render bulk sequencing approaches challenging in that the aggregation of reads from the pool of different cell types often masks differences exhibited by particular subsets. Furthermore, changes in the frequencies of cell types are difficult to distinguish from changes in gene expression within those cells. For example, an increase in IFNG within a tumor may reflect increased IFN-γ production by T cells already within tumors or an increase in T cell infiltration into the tumor. Recent computational approaches have helped deconvolve immune subsets from bulk RNA-seq data (discussed below), but single-cell sequencing presents an opportunity to accurately quantitate genome-wide changes at the resolution immunologists have become accustomed to from flow cytometry. Applied to tumor immunology, these studies have revealed heterogeneity in both the malignant and hematopoietic compartments, identified novel subsets, aided in reclassification of existing subsets, revealed activation, exhaustion, and suppression states of multiple immune types within tumors, shed light on responses to immunotherapy, and much more.
 
-## Single-cell proteomics
+### Single-cell proteomics
 
 Long before the advent of NGS, immunologists and cancer biologists have been performing low- to moderate-dimensional single cell protein analyses using a variety of platforms such as ELISPOTs, flow cytometry, and various forms of microscopy. More recently, scientists have developed new technologies to achieve higher dimensionality with theoretical ranges reaching the entire proteome. A recent study used confocal immunofluorescence (IF) to image and characterize the subcellular localization of over 12,000 human proteins at the single-cell level and presented the results in an interactive database known as the Cell Atlas (Thul et al., 2017). Using an approach based off of Edman Sequencing and total internal refraction microscopy (TIRF), scientists have demonstrated the ability to identify proteins at zeptomolar concentrations in parallel in a manner that should enable single-cell proteomics (Swaminathan et al., 2018). As single-cell genomic approaches cannot always replace protein level analyses (Latonen et al., 2018), such approaches could greatly enhance our understanding of individual cells.
 
@@ -75,7 +281,7 @@ To assess heterogeneity in leukocyte populations, bioengineers have developed te
 
 One of the most widely adopted technologies used by systems immunologists is mass cytometry (CyTOF) (Bendall et al., 2012). This approach replaces fluorescent tags on antibodies with transition element metal isotopes, to enable measurement of single cells labeled with such antibodies using time-of-flight mass spectrometry (Bandura et al., 2009; Bendall et al., 2011). This technology enables researchers to measure the expression of more than 40 proteins simultaneously on single cells, by eliminating limitations derived from spectral overlap of fluorescent probes. This added dimensionality facilitates a more comprehensive characterization of cellular states or population frequencies, particularly among hematopoietic cells, and has been used to evaluate a wide range of complex processes ranging from hematopoiesis and maturation (Bendall et al., 2014; Good et al., 2019), to antigen-specific responses and vaccine responses (Newell et al., 2013; Newell and Davis, 2014; Swadling et al., 2014), to immune responses to cancer (Hartmann et al., 2019; Good et al., 2018; Lavin et al., 2017; Irish and Doxie, 2014; Chevrier et al., 2017; Simoni et al., 2018; Mistry et al., 2019; Spitzer et al., 2017). By combining immunolabeling with mass tags, mass cytometry has enabled Systems Immunologists to acquire high-dimensional single-cell data for parameters that cannot be measured by single-cell sequencing approaches.
 
-## High-dimensional imaging modalities
+### High-dimensional imaging modalities
 
 With the exception of the peripheral blood, regulation of the immune response relies upon tissue architecture to facilitate homotypic and heterotypic interactions between cells. Secondary lymphoid organs (SLOs, e.g. spleen and lymph nodes) are notable examples wherein local chemokine gradients and tissue architecture enable lymphocytes and APCs to efficiently interact in a manner that orchestrates adaptive immunity (Cyster, 1999; Drayton et al., 2006). Similarly, immune cell locations and interactions within and surrounding tumors are typically not random, and many tumors contain organized lymphoid structures known as tertiary lymphoid structures that are believed to impact clinical outcome (Jones et al., 2016; Joshi et al., 2015; Goc et al., 2013). While the aforementioned single-cell technologies provide the requisite resolution for evaluating cell-cell interactions, they rely upon tissue dissociation and the generation of cell suspensions, which prohibit the evaluation of interactions within the native tissue architecture. Furthermore, the tissue dissociation process itself may affect the states of the cells results of the analyses (van den Brink et al., 2017). Microscopy approaches including light microscopy, fluorescence microscopy, scanning electron microscopy (SEM), transmission electron microscopy (TEM), and variations on these technologies have all enabled clinicians and researchers to investigate tumor-immune interactions in their natural environments, but have been limited in the number of simultaneous parameters that can be measured. As with conventional flow cytometry, spectral overlap limits the number of probes that can be used with fluorescence microscopy. Nonetheless, researchers have used deconvolution approaches with fluorescence confocal imaging to increase the degree multiplexing (Gerner et al., 2012).
 
@@ -85,7 +291,7 @@ While mass spectrometry-based approaches enable multiplexing and simultaneous qu
 
 In addition to immunohistochemistry (IHC) approaches, single molecule RNA fluorescence in situ hybridization (FISH) approaches have been adapted to enable multiplexed imaging of tens to thousands of RNA probes in cells and tissues (Chen et al., 2015a; Lubeck and Cai, 2012; Lubeck et al., 2014; Coskun and Cai, 2016; Levesque and Raj, 2013). In particular, multiplexed error-robust FISH (MERFISH) uses combinatorial barcodes spaced with a Hamming distance of four to enable a high degree of multiplexing while maintaining minimal chances of calling errors (Chen et al., 2015a). Using rolling circle amplification, other groups have developed in situ sequencing approaches capable of evaluating spatial transcript patterns in tissues (Ke et al., 2013; Lee et al., 2014). All these highly multiplexed imaging modalities are designed to enable cancer systems immunologists to investigate how tissue architecture and cell interactions shape immune responses to tumors, and these methods will likely facilitate the development of novel imaging biomarkers for clinical applications in oncology.
 
-## Additional systems-level technologies
+### Additional systems-level technologies
 
 While sequencing, cytometry, and imaging technologies are currently the predominant tools employed by systems biologists, a number of other highly multiplexed tools have enhanced systems-level studies of tumor-immune interactions. Alterations in metabolic pathways is a key feature of many cancers (Ward and Thompson, 2012; Warburg et al., 1927). Similarly, immune function is highly impacted by the local metabolic state, and many studies have uncovered important metabolism-mediated tumor-immune interactions that affect tumor progression (Renner et al., 2017). The Human Metabolome Database provides a comprehensive collection of human metabolism data enabling systems-level analyses (Wishart et al., 2007). While most metabolic profiling is performed by conventional forms of MS or nuclear magnetic resonance (NMR) (Holmes et al., 2008; Nicholson et al., 2002), recent advances in imaging mass spectrometry have enabled researchers to profile these pathways directly in tissues (Caprioli, 2016; Kompauer et al., 2017; Sun et al., 2019). Metabolomics has been adopted by systems biologists, who have coined the term ‘Metabonomics’ to refer to the combined outputs of the various metabolomic influences in a multicellular system (Nicholson et al., 2002; Nicholson et al., 2008). Similarly, the field of Glycomics has been transformed by advances in MS and NMR as well as technologies such as glycan microarrays (Song et al., 2011). These technologies have enabled systems-level studies into tumor-immune interactions, and in particular the ability of the immune system to recognize tumor-specific carbohydrate antigens (Satomaa et al., 2009; Liau et al., 2017).
 
@@ -121,7 +327,7 @@ Single-cell cytometry and imaging technologies also produce large high-parameter
 
 Studies investigating the immune status of tumors have revealed that the prognosis of patients often strongly correlates with the degree of T cell infiltration into the local tumor microenvironment (TME) (Galon et al., 2006; Binnewies et al., 2018; Gajewski et al., 2013). Immune infiltrates have also served as effective prognostic biomarkers of response to immune checkpoint blockade (ICB) (Herbst et al., 2014; Tumeh et al., 2014). Tumor immunologists frequently refer to tumors as ‘hot’ or ‘cold’ (or ‘deserts’, in extreme cases) to describe the degree of infiltration of immune cells beyond the tumor margin, but these crude epithets fail to capture the breadth of nuance, and presumably prognostic value, that can be extracted using systems biology approaches to interrogate the TME. Furthermore, the TME does not exist in isolation, but rather is the product of constant communication with the entire organism (Egeblad et al., 2010) rendering its analysis particularly amenable to systems approaches. While most systems analyses have focused on immune responses within the primary tumor or peripheral blood, some recent studies have extended their analyses to the TME of metastatic sites such as LNs (Puram et al., 2017; Tirosh et al., 2016; Kim et al., 2020). Further studies are needed to comprehensively interrogate systemic immune responses to metastases, as lymph node metastases can render the systemic immune response permissive to tumor progression (Reticker-Flynn et al., 2020), and the invocation of systemic immunity is required for the efficacy of immunotherapy (Spitzer et al., 2017).
 
-## Macrophages
+### Macrophages
 
 In the mid-nineteenth century, Rudolf Virchow first recognized that tumors frequently contain leukocytes. He posited that chronic inflammation lies at the origins of tumors (Virchow, 1863; Virchow, 1858), leading Dvorak, 1986, to describe tumors as ‘wounds that do not heal’, a century later. Many of the initial investigations into the TME focused on the role of myeloid cells in promoting tumorigenesis and metastasis (Joyce and Pollard, 2009; Qian and Pollard, 2010; Coussens and Werb, 2002; Engblom et al., 2016). In particular, researchers have focused on macrophages as key instigators of both tumor-promoting inflammation as well as immunosuppression. While macrophages represent essential components of innate immunity due to their capacity to scavenge for microbial pathogens, drive new blood vessel formation, and process and present antigens to lymphocytes, they have long been associated with a range of pathologies including atherosclerosis, cirrhosis, neurodegeneration, and malignancy (Murray and Wynn, 2011). Nearly all solid tumors exhibit evidence of macrophage involvement regardless of the presence of other infiltrating immune types. While tumor-associated macrophages (TAMs) have been reviewed extensively elsewhere (Lewis and Pollard, 2006), we focus here on recent systems biology approaches employed to elucidate their roles in the TME.
 
@@ -135,7 +341,7 @@ Recently, a number of studies that have employed systems approaches have reveale
 
 **Figure 3.:** Many systems approaches have been applied to analyzing the TME to reveal the cellular makeup and relationships between immune cells at the single-cell level. Studies have revealed heterogeneity among myeloid and lymphocyte populations, trafficking of cDC subsets to the draining LNs, and epigenetic exhaustion profiles of T cells infiltrating tumors following ICB.
 
-## Dendritic Cells
+### Dendritic Cells
 
 Compared to macrophages, dendritic cells (DCs) represent a relative minority of the myeloid cells present within most tumors. Nonetheless, DCs are critical orchestrators of immune responses due to their exquisite capacity to present antigens and license, stimulate, or suppress T cells (Banchereau and Steinman, 1998). They can present antigens in the TME to T cells in situ or in lymph nodes (LNs) by accruing tumor debris that has drained there through the lymphatics or by themselves trafficking from the TME into LNs. Their essential role in choreographing the adaptive immune response across an organism makes them an ideal subject for integrated multi-level systems biology investigations.
 
@@ -145,7 +351,7 @@ It is likely that all of the DC subsets play important roles in tumor progressio
 
 Systems-level analyses have helped extend our understanding of cDC functions in tumors. One study, in which mass cytometry was used to evaluate the TME during early- and late-stage tumor development, showed that Flt3L injections vastly increases the numbers of CD103+ DCs in the TME (Salmon et al., 2016). Furthermore, these DCs transport antigen to the draining LNs where they augment PD-L1 ICB to elicit anti-tumor T cell responses. Using mass cytometry to profile the evolution of the immune repertoire at an organism-wide level in response to immunotherapy, we found that in the initiation of anti-tumor immune responses, CD103+ DCs in the tumor microenvironment exhibit a strong increase in proliferation (Spitzer et al., 2017). Furthermore, the cDC frequencies decrease in the local TME during the therapy initiation phase while increasing in the draining LNs during the rejection phase, suggesting that they may become activated at the tumors and subsequently traffic to LNs to facilitate the generation of anti-tumor T cell responses. Using scRNA-seq, one study found that migration of cDC2s from tumors to the draining LNs is required for priming of CD4+ Tconv and eliciting a potent antitumor response, but Tregs inhibit their efficacy likely by preventing their migration to the LNs (Figure 3; Binnewies et al., 2019). A recent study combined 10X Chromium with SMART-seq scRNA-seq platforms to investigate the cellular diversity of hepatocellular carcinoma (HCC) and found that the droplet and plate-based approaches identify distinct populations (Zhang et al., 2019). Additionally, they identified a LAMP3+ subset of DCs that appeared to migrate from the tumor to draining LNs from their RNA velocity analysis, but these DCs share transcriptional features with both cDC subsets as well as pDCs. This population appears to be inducible from multiple lineages upon stimulation with various DC adjuvants, although it remains unclear whether this subset represents an activation state or a different state of differentiation. These agnostic systems approaches have been particularly useful in understanding these types of complex interactions where DCs are interacting with many different cell types in multiple organs in manners that change considerably over the timecourse of the immune response.
 
-## T cells
+### T cells
 
 While investigations into adaptive immune responses to tumors have long been a major focus of tumor immunologists, the recent successes of immune checkpoint blockade (ICB) and engineered chimeric antigen receptor T cells (CAR-T cells) have stimulated a renewed interest in understanding T cell interactions with tumors. Consequently, many novel systems approaches have been applied to T cells. Due to their ability to recognize tumor-specific antigens and kill tumor cells in an antigen-specific manner, T cells represent one of the most critical components of anti-tumor immune responses. Nonetheless, T cells frequently fail to eliminate tumors likely due to immune evasion (DuPage et al., 2012; Matsushita et al., 2012; Pereira et al., 2017; Sade-Feldman et al., 2017) or suppression (Joshi et al., 2015; Willimsky and Blankenstein, 2005; Pauken and Wherry, 2015) mechanisms of the tumors. Furthermore, while a variety of cells and conditions can promote broad immunosuppression of a host, T cells can become subject to tolerance or exhaustion in a manner that impairs tumor-specific immunity without affecting the ability of the immune system to defend against unrelated pathogens (Schietinger and Greenberg, 2014). It is this latter feature that renders tumors such pernicious adversaries in efforts at both detecting and combatting malignancies.
 
@@ -157,7 +363,7 @@ Studies interrogating the stability of T cell dysfunction and exhaustion in the 
 
 In addition to exhaustion, systems analyses of the TME have revealed a variety of other T cell features. By combining scRNA-seq with TCR sequencing, one group of investigators identified specific subsets of CD8+ T cells and Tregs that are enriched in hepatocellular carcinoma compared to other tissues and identified a gene, LAYN, that inhibits IFN-γ production (Zheng et al., 2017). The same investigators used this approach to characterize fate decisions in tumors, revealing a variety of relationships between various T cell subsets in the TME (Zhang et al., 2018; Guo et al., 2018). Studies interrogating the tumor specificity of tumor-infiltrating T cells by TCR sequencing (Scheper et al., 2019) and mass cytometry (Simoni et al., 2018) have revealed that many T cells within the TME do not actually recognize tumor antigens. In breast cancer, researchers used scRNA-seq to reveal that T cells with transcriptional profiles analogous to resident memory T cells (TRM) can be found within tumors and correlate with improved prognosis (Savas et al., 2018). Using scRNA-seq, ATAC-seq, and TCR-seq to query ICB responsiveness in melanoma patients revealed a variety of T cell-related factors that correspond to ICB efficacy including TCF7 expression on tumors and CD39 blockade (Sade-Feldman et al., 2018). An additional study also suggests that T cells exist along a continuum of differentiation states evidenced by scRNA-seq analyses and that tumor-involved Tregs may exhibit more heterogeneity than previously appreciated (Azizi et al., 2018). In agreement with scRNA-seq reports, a mass cytometry approach found that the lung cancer TME is enriched for T cells that are dysfunctional or regulatory (Lavin et al., 2017).
 
-## B cells
+### B cells
 
 While far fewer studies have interrogated the roles of B cells in tumor progression and antitumor immunity than T cells, tumor-infiltrating B cells can be found in most solid malignancies and are readily amenable to the same types of systems analyses. The primary function of B cells is to orchestrate the humoral immune response through the production of antibodies, but there exist a number of different subsets of B cells that have additional functions (Allman and Pillai, 2008). Some B cells can elicit immunosuppressive activity, including in the context of malignancy, through a variety of mechanisms including expression of PD-L1 and production of IL-10, IL-35, and TGF-β leading some to refer to this subset as regulatory B cells (Bregs) in analogy to Tregs (Schioppa et al., 2011; Yanaba et al., 2008; Rosser and Mauri, 2015; DiLillo et al., 2010; Khan et al., 2015; Olkhanud et al., 2011; Huang et al., 2017). Production of cytokines from B cell subsets such as Bregs, B10 cells, or B1 cells can induce a myriad of effects, including repolarization of macrophage populations, induction of Tregs, or activation of survival signals within tumor cells themselves (Wong et al., 2010; Mielle et al., 2018; Ammirante et al., 2010). Furthermore, B cells can promote lymphangiogenesis (Angeli et al., 2006), which, in turn, can enable trafficking of DCs or tumor cells themselves from primary tumors to draining LNs (Roberts et al., 2016; Binnewies et al., 2019; Stacker et al., 2014; Tammela and Alitalo, 2010). Consequently, B cells have frequently been associated with promoting tumorigenesis and metastasis (de Visser et al., 2005; Shah et al., 2005; Qin et al., 1998; Affara et al., 2014; Brodt and Gordon, 1982). These immunosuppressive mechanisms typically occur in a manner that does not require antigen recognition by the BCR (Shah et al., 2005). Yet other studies have suggested that the production of antibodies themselves may promote tumor progression and metastasis by activation of Fc Receptors (FcRs) on myeloid cells, induction of tumor-intrinsic signaling through activation of surface receptors, promotion of pro-inflammatory granulocyte responses, promotion of angiogenesis, and suppression of cellular immunity (Qin et al., 1998; Pucci et al., 2016; Gu et al., 2019; Andreu et al., 2010; Barbera-Guillem et al., 1999; Nyhus et al., 2001; Tan and Coussens, 2007).
 
@@ -167,7 +373,7 @@ Given the importance of B cells in both tumor progression and antitumor response
 
 To understand the role of TLS B cells during immunotherapy, one group combined bulk RNA-seq of melanoma and renal cell carcinoma (RCC) responders and non-responders with deconvolution algorithms to identify a strong enrichment in B cell signatures in responders. They further analyzed the BCRs of these patients from the bulk RNA-seq and found increases in both clonal diversity and expansion of individual clones in responders, suggesting antigen-specific humoral responses. Finally, using mass cytometry, they demonstrated an enrichment for memory B cells, plasma cells, and GC B cells specifically within the tumors of responders, suggesting a role for B cell activation and humoral responses in patients benefiting from ICB (Helmink et al., 2020). Other researchers combined novel GEMMs with BCR sequencing and scRNA-seq to identify a role for Tfh-induced B cells in promoting ICB responses (Hollern et al., 2019). While not as common as existing T cell analyses, these types of multimodal systems approaches to understanding the involvement of B cells in malignancy and associated therapeutic responses will be critical for uncovering the role that these lymphocytes play in tumor progression and treatment.
 
-## NK cells, non-canonical APCs, and other myeloid cells
+### NK cells, non-canonical APCs, and other myeloid cells
 
 Although T cells, B cells, TAMS, and DCs have been the subject of the majority of systems analyses of the TME, other lymphocytes, myeloid cells, and non-hematopoietic APCs play important roles in tumor progression. Similarly, the importance of NK cells and other innate lymphoid cells (ILCs) (Cerwenka and Lanier, 2001; Wu and Lanier, 2003; Marcus et al., 2014; Malmberg et al., 2017; Hsu et al., 2018; Bruchard and Ghiringhelli, 2019) and PMNs (Szczerba et al., 2019; Fridlender et al., 2009; Nozawa et al., 2006; Piccard et al., 2012; Eruslanov et al., 2014; Singhal et al., 2016) in tumor progression have been well documented but are only beginning to be explored at a systems level (Zilionis et al., 2019; Horowitz et al., 2013). In addition to DCs, macrophages, and B cells, there exist a number of non-professional APCs capable of inducing tolerance (Turley et al., 2010). Many of these cells, such as lymphatic endothelial cells and fibroblastic reticular cells, exist in or near SLOs and can induce tolerance or immunosuppression, including in the context of tumors (Cohen et al., 2010; Nichols et al., 2007; Lund et al., 2012; Lund et al., 2016; Swartz, 2014; Fletcher et al., 2010; Fletcher et al., 2015; Lee et al., 2007). The functional relevance of these cells in the induction of tumor-specific immune tolerance is in its nascent days of exploration, and systems approaches will certainly aid in advancing our understanding of their role in tumor progression.
 
@@ -175,7 +381,7 @@ For over a decade there has been interest in a group of cells frequently associa
 
 Systems biology approaches provide a more comprehensive agnostic approach toward evaluating the myeloid repertoire, as has been discussed above. One study purports to identify a specific marker, LOX-1, of PMN-MDSCs by bulk RNA-seq, though this marker is only upregulated in human PMN-MDSCs (Condamine et al., 2016). Separation of the PMN-MDSC population from PMNs, however, was performed by density centrifugation, which results in mixed populations, highlighting the inadequacy of bulk analysis approaches for populations without unique markers. While LOX-1+ cells exhibit an increased capacity to suppress T cell responses, it is unclear whether this is a feature of all LOX-1+ cells or a subset and whether the marker represents a distinct lineage rather than an activation or maturation state of PMNs. Furthermore, genetic ablation of the gene (Olr1) in mice had no impact on the suppressive function of the cells in vitro nor growth of tumors in wild-type mice reconstituted with Olr1-/- bone marrow following lethal irradiation. In contrast to bulk approaches, single-cell analyses such as scRNA-seq are particularly useful for identifying distinguishing features of individual cells, evaluating heterogeneity of populations, and reconstructing lineage relationships between populations. Indeed, when unbiased clustering of systems level single-cell data has been performed under a myriad of conditions, none of the studies report the existence of distinct MDSC clusters (Spitzer et al., 2017; Puram et al., 2017; Azizi et al., 2018; Tirosh et al., 2016; Binnewies et al., 2019; Sade-Feldman et al., 2018). In one recent exception, researchers labeled a myeloid cluster ‘MDSC-like macrophages’ due to their expression of S100A family genes, but the suppressive capacity of these cells was not evaluated. Furthermore, these cells fell along a continuum with other macrophages on diffusion maps and did not distinctly segregate from other myeloid populations in the UMAP projections. Current transcriptional, epigenetic, and proteomic analyses do not support the notion that MDSCs represent a singular or dual lineage(s) or distinct differentiation states. Most likely, they represent a heterogeneous plastic phenotypic state of neutrophils, monocytes, macrophages, and their precursors, some of which exhibit immune suppressive capacity. Thus, it is best to use caution when employing a nomenclature that ascribes function based solely upon unrelated marker expression.
 
-## T cell receptor repertoires and neoantigens: understanding and harnessing tumor-immune specificity
+### T cell receptor repertoires and neoantigens: understanding and harnessing tumor-immune specificity
 
 While the generation of effective naturally occurring or therapeutically induced immune responses typically requires the involvement of many immune cell types, T cells are frequently the most critical element of these responses. Patient prognosis often correlates with the degree of T cell infiltration into tumors (Galon et al., 2006; Zhang et al., 2003), and adoptive transfer of ex vivo stimulated autologous tumor infiltrating lymphocytes remains one of the most effective tumor immunotherapies (Rosenberg et al., 2008; Rosenberg et al., 1988). Similarly, CAR-T therapy involves engineering T cells to directly recognize tumors, and ICB works by stimulating or reinvigorating tumor-reactive T cells. A critical factor explaining the efficacy of T cell responses to tumors is the ability of the TCR to distinguish malignant from healthy tissue by its overexpression of normal antigens, re-expression of embryonic antigens, or expression of neoantigens (mutated proteins expressed only by the malignant cells). Neoantigens are frequently genomic in origin, resulting from point mutations, indels, or translocations, but can also arise from post-translational modifications such as phosphorylation or glycosylation (Bräunlein and Krackhardt, 1702; Cobbold et al., 2013; Zarling et al., 2006). Some cancers may escape T cell surveillance by reducing or eliminating expression of these neoantigens in a process known as ‘immunoediting’ (DuPage et al., 2012; Matsushita et al., 2012; Schreiber et al., 2011), while others escape by downregulating MHC-I presentation (Pereira et al., 2017; Sade-Feldman et al., 2017; Gettinger et al., 2017; Zaretsky et al., 2016; Sahin et al., 2017). Furthermore, efficacy of ICB is correlated with neoantigen burden for a variety of cancers (Yarchoan et al., 2017; Snyder et al., 2014; Carbone et al., 2017; Rizvi et al., 2015a; Galsky et al., 2017; McGranahan et al., 2016), and tumor mutational burden (TMB) may be a better predictor of ICB response than PD-L1-positive staining in some instances (Hellmann et al., 2018). Furthermore, the degree to which neoantigens are shared across tumor clones also correlates with ICB efficacy (McGranahan et al., 2016). Consequently, bioinformaticians and systems biologists have developed an array of tools and approaches for predicting and quantifying neoantigens as well as mapping T cell clonality and neoantigen recognition (Liu and Mardis, 2017).
 
@@ -189,11 +395,11 @@ In addition to identifying epitopes, understanding the clonal evolution of the T
 
 Nonetheless, while these TEx clones that are tumor-specific can be found within blood of treated patients and recruitment of T cells from SLOs is important for treatment efficacy, some of these effects may be transient, and it remains unclear which T cell populations are the most critical for effective immunotherapy. It is possible that Tmem and cells from both TEx states within the TME and extratumoral tissues play important roles during immunotherapy. It is important to note that autologous transplant of ex vivo expanded tumor-infiltrating lymphocytes (TIL therapy) has proven effective, and even curative, in a number of malignancies including melanoma, breast cancer, and multiple GI cancers (Rosenberg et al., 1988; Rosenberg and Restifo, 2015; Dudley et al., 2002; Restifo et al., 2012; Tran et al., 2014; Tran et al., 2016; Zacharakis et al., 2018). Moreover, in the case of melanoma, some patients who have failed ICB still benefit from TIL therapy (Sarnaik et al., 2020; Rohaan et al., 2018). These successes highlight the fact that there exist tumor-specific T cells within tumors that can be expanded and used to eliminate tumors. Thus, it is unclear whether these T cells reflect exhausted or dysfunctional T cells whose state is reversible in the context of ex vivo expansion with or without engineering or whether there exist a minority subset of tumor-specific T cells that are not in any state of exhaustion and can be expanded and act as TEff and Tmem once reinfused. In either case, it is quite reasonable to expect that ICB and TIL therapy have highly distinct effects on the nature of the T cells eliciting the anti-tumor immunity. A systems-level characterization of TIL approaches might help shed light on the states of the expanded T cells, whether they were derived from progenitor TEx or other T cell subsets, and to what extent the ex vivo processing is capable of reprogramming them.
 
-## The microbiome and its effects on tumor immunity
+### The microbiome and its effects on tumor immunity
 
 Microbiota consist of the microorganisms that inhabit a host and include bacteria, fungi, viruses, and archaea. Sites such as the skin, respiratory tract, gastrointestinal tract, and vagina are colonized by these organisms, which play critical roles in health and disease. Systems approaches and –omics, in particular, have been utilized extensively to analyze the microbiota, resulting in the adoption of the term ‘microbiome’ to represent the collection of these organisms in a host. The microbiome affects everything from obesity, to resistance to colonization by pathogenic bacteria, to cancer (Ridaura et al., 2013; Petersen et al., 2019; Jacobson et al., 2018; Iida et al., 2013; Buffie et al., 2015; van Nood et al., 2013; Viaud et al., 2013; Sivan et al., 2015; Vetizou et al., 2015; Gopalakrishnan et al., 2018; Routy et al., 2018; Tanoue et al., 2019; Matson et al., 2018; Garrett, 2015; Reticker-Flynn and Engleman, 2019). While the microbiome mediates some of these effects directly (e.g. production of short-chain fatty acids), many are the indirect result of effects upon the immune system (Tanoue et al., 2019; Honda and Littman, 2016; Mazmanian et al., 2005; Atarashi et al., 2017; Atarashi et al., 2013; Ivanov et al., 2009; Gaboriau-Routhiau et al., 2009). In an effort to identify specific microbial components that are capable of influencing the adaptive immune response, researchers have colonized germ-free mice with feces from healthy human donors. Through 16S rRNA sequencing of the caecal contents of mice exhibiting enrichment of particular T cell subsets in their colons following fecal transplant or in comparison to mice under different housing conditions, they were able to define commensal consortia capable of inducing expansion of Tregs (Atarashi et al., 2013), TH1 (Atarashi et al., 2017), TH17 (Ivanov et al., 2009; Gaboriau-Routhiau et al., 2009), or IFN-γ+ CD8+ T cells (Tanoue et al., 2019). The last of these resulted in expansion of the T cells not only within the intestines, but also throughout the host in a manner that was protective against Listeria monocytogenes and augmented the efficacy of ICB. Similarly, among tumor-bearing mice, a comparison of germ-free to specific pathogen-free mice or mice from different vendors demonstrated differences in tumor growth depending on the microbiota. Moreover, specific commensals affected responses to ICB, with Bifidobacterium aiding anti-PD-1 (Sivan et al., 2015) and Bacteroidales fragilis aiding anti-CTLA-4 (Vetizou et al., 2015). To investigate whether the microbiome influences responses to ICB in humans, researchers characterized the diversity and composition of the microbiomes of patients receiving these therapies. These results showed that increased diversity and enrichment for Ruminococcaceae family bacteria correlate with improved response to anti-PD-1 and increases in CD8+ T cell activity (Gopalakrishnan et al., 2018) and that Bifidobacterium longum, Collinsella aerofaciens, and Enterococcus faecium may also augment responses by expanding tumor-specific CD8+ T cells without affecting Treg numbers (Matson et al., 2018). Similarly, fecal transplant into mice from human ICB responders resulted in increased efficacy of PD-1 blockade compared to that from non-responders, possibly due to the effects on recruitment of a CD4+ T cell subset (Routy et al., 2018). The ability to identify defined microbiota capable of improving responses to tumor immunotherapy is extremely exciting and would have been highly challenging without the –omics-level profiling technologies. It remains unclear, however, precisely how changes in the intestinal microbiota elicit systemic changes in adaptive immunity that extend beyond the gastrointestinal tract and against antigens that are not being presented there. Systems approaches will be critical to reveal the mechanisms by which this antigen-specific systemic immunity is established in response to alterations in the microbiota. Ultimately, these investigations are likely to lead to new ways of improving patient responses to ICB and possibly to altogether novel immunotherapies.
 
-## Systems approaches to designing, monitoring, and evaluating clinical responses to tumor immunotherapy
+### Systems approaches to designing, monitoring, and evaluating clinical responses to tumor immunotherapy
 
 Cancer immunotherapy, and ICB in particular, represents one of the most significant advances in oncology in decades and has the ability to elicit durable responses and cures in some patients with advanced stage malignancies (Rosenberg and Restifo, 2015; Brahmer et al., 2012; Hamid et al., 2013; Hodi et al., 2010; Nghiem et al., 2016; Pardoll, 2012; Robert et al., 2015; Sharma and Allison, 2015; Rizvi et al., 2015b; Grupp et al., 2013; Brentjens et al., 2013; Porter et al., 2011; June et al., 2018). Nonetheless, while subsets of patients with melanoma, RCC, Hodgkin’s lymphoma, NSCLC, urothelial cancer, and MSI high GI cancers have experienced durable responses and even complete tumor regression (Zappasodi et al., 2018), the majority of patients who receive the therapy do not exhibit such responses. Thus, there is an urgent need to distinguish in advance of treatment which patients will respond to which therapies as well as learn why certain patients exhibit durable responses while others either fail to respond at all or relapse after varying periods of response. The tools and approaches used by systems biologists to investigate tumor immune biology have enabled a variety of new approaches for designing and evaluating clinical responses. In many ways, most clinical practice could be construed as systems biology. Clinicians integrate cellular and molecular blood biomarkers (e.g. blood chemistry, complete blood counts, hematocrit, serum immunoglobulin levels, etc.), imaging, and biophysical measurements (e.g. temperature, blood pressure, etc.) in a longitudinal manner to gain an understanding of disease progression. Thus, the practice of medicine epitomizes the multiscale integrated analyses that lie at the core of systems biology. Indeed, pharmaceutical companies have used systems biology approaches in drug discovery and clinical trial design (Butcher et al., 2004). This holistic integration of multi-level datasets and the quantitation tools that accompany them render medicine amenable to the recent advances in cancer systems immunology and their application to evaluating tumor immunotherapy (Figure 4).
 
@@ -205,7 +411,7 @@ Many of the systems approaches discussed in this review are now being applied to
 
 In addition to monitoring therapy in patients, systems approaches can reveal underlying biology about responses to treatment. A recent study revealing the clonal replacement of exhausted T cells following ICB is one such example demonstrating the power of integrative systems analyses to improve our understanding of the mechanisms of ICB (Figure 4; Yost et al., 2019). We believe that it is important to gain a holistic understanding of how immunity is orchestrated across an organism in order to understand the basis of immune responses in cancer. By combining our visualization method known as Statistical Scaffold with mass cytometry, we were able to generate an organism-wide map of differences in immune responses that distinguish effective from ineffective immunotherapy (Spitzer et al., 2017). This approach allowed us to compare immune repertoires in distinct tissues to each other and across treatment conditions, facilitating a systems-level understanding of immune responses across an organism. In addition to identifying differences in key immune populations such as a subset activated memory CD4+ T cells, we found that the key differentiator of effective immune responses is its orchestration from extratumoral sites such as LNs rather than a simple reinvigoration of existing TILs. Information gleaned from these types of systems-level analyses should facilitate the design of approaches that augment our current arsenal of immunotherapies (Figure 4).
 
-## Expanding the future potential of cancer systems immunology
+### Expanding the future potential of cancer systems immunology
 
 Technological and computational advances in the life sciences and the profound clinical successes of tumor immunotherapy have ushered the fields of systems biology and tumor immunology to the forefront of biomedical research. Understandably, the application of systems biology to tumor immunology is intuitive and has generated considerable excitement. Once lauded as representing the future of optimal cancer treatment and potential cures, personalized medicine fell out of fashion with the failure of targeted therapies to realize their promise (Nature Biotechnology, 2012). While –omics technologies bolstered the original enthusiasm for the field, they were ultimately applied in a reductionist fashion. Personalized medicine in cancer used to be construed as identifying oncogenic mutations and designing and treating with targeted small molecule or biological inhibitors of these mutations. These approaches demonstrated the innate shortcoming of reductionist analyses; that is, they fail to account for the inherent complexity of the tumor and its context within the patient. Escape mechanisms can involve a myriad of molecules and cell types requiring systems-level analyses to understand the emergent behavior of the tumor and its interactions with other cell types. In contrast to targeted therapies, immunotherapy exhibits the capacity, in many instances, to evolve with the tumor. Furthermore, it is capable of addressing the multifaceted components of the tumor that confer its malignant potential. The inherent systems-level nature of antitumor immunity thus requires a complementary set of approaches to interrogate the responsible immune cells and molecules, and to inform the design and implementation of new and existing therapies. Indeed, personalized medicine is experiencing a resurgence due to the potential of immunotherapies such as CAR-T cells and neoantigen vaccines to enable tumor targeting with a greater precision than previously possible. With an increased understanding of the dynamics underlying the coevolution of tumors and their immune responses during additional immunotherapies, such as ICB, systems biology will enhance our capacity to design and deliver personalized care to patients with advanced malignancies.
 

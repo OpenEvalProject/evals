@@ -24,20 +24,20 @@
 
 ### Affiliations
 
-1. https://ror.org/02bfwt286 Centre to Impact AMR, Monash University Clayton Australia
-2. https://ror.org/02bfwt286 Infection Program, Biomedicine Discovery Institute and Department of Microbiology, Monash University Clayton Australia
-3. https://ror.org/02bfwt286 School of Biological Sciences, Monash University Clayton Australia
-4. https://ror.org/00rd5t069 The First Affiliated Hospital of Wenzhou Medical University Wenzhou China
-5. https://ror.org/02bfwt286 Infection Program, Biomedicine Discovery Institute and Department of Biochemistry & Molecular Biology, Monash University Clayton, Victoria Australia
-6. https://ror.org/00rd5t069 Wenzhou Medical University Wenzhou China
-7. https://ror.org/02zhqgq86 School of Public Health, LKS Faculty of Medicine, The University of Hong Kong Hong Kong Special Administrative Region China
-8. https://ror.org/01ej9dk98 Department of Microbiology and Immunology, The Peter Doherty Institute, The University of Melbourne Melbourne Australia
+1. Centre to Impact AMR, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+2. Infection Program, Biomedicine Discovery Institute and Department of Microbiology, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+3. School of Biological Sciences, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+4. The First Affiliated Hospital of Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
+5. Infection Program, Biomedicine Discovery Institute and Department of Biochemistry & Molecular Biology, Monash University Clayton, Victoria Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+6. Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
+7. School of Public Health, LKS Faculty of Medicine, The University of Hong Kong Hong Kong Special Administrative Region China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
+8. Department of Microbiology and Immunology, The Peter Doherty Institute, The University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
 
 † Corresponding author
 
 ## Abstract
 
-Antibiotic resistance is driven by selection, but the degree to which a bacterial strain’s evolutionary history shapes the mechanism and strength of resistance remains an open question. Here, we reconstruct the genetic and evolutionary mechanisms of carbapenem resistance in a clinical isolate of Klebsiella quasipneumoniae . A combination of short- and long-read sequencing, machine learning, and genetic and enzymatic analyses established that this carbapenem-resistant strain carries no carbapenemase-encoding genes. Genetic reconstruction of the resistance phenotype confirmed that two distinct genetic loci are necessary in order for the strain to acquire carbapenem resistance. Experimental evolution of the carbapenem-resistant strains in growth conditions without the antibiotic revealed that both loci confer a significant cost and are readily lost by de novo mutations resulting in the rapid evolution of a carbapenem-sensitive phenotype. To explain how carbapenem resistance evolves via multiple, low-fitness single-locus intermediates, we hypothesised that one of these loci had previously conferred adaptation to another antibiotic. Fitness assays in a range of drug concentrations show how selection in the antibiotic ceftazidime can select for one gene ( bla DHA-1 ) potentiating the evolution of carbapenem resistance by a single mutation in a second gene ( ompK36 ). These results show how a patient’s treatment history might shape the evolution of antibiotic resistance and could explain the genetic basis of carbapenem-resistance found in many enteric-pathogens.
+Antibiotic resistance is driven by selection, but the degree to which a bacterial strain’s evolutionary history shapes the mechanism and strength of resistance remains an open question. Here, we reconstruct the genetic and evolutionary mechanisms of carbapenem resistance in a clinical isolate of Klebsiella quasipneumoniae. A combination of short- and long-read sequencing, machine learning, and genetic and enzymatic analyses established that this carbapenem-resistant strain carries no carbapenemase-encoding genes. Genetic reconstruction of the resistance phenotype confirmed that two distinct genetic loci are necessary in order for the strain to acquire carbapenem resistance. Experimental evolution of the carbapenem-resistant strains in growth conditions without the antibiotic revealed that both loci confer a significant cost and are readily lost by de novo mutations resulting in the rapid evolution of a carbapenem-sensitive phenotype. To explain how carbapenem resistance evolves via multiple, low-fitness single-locus intermediates, we hypothesised that one of these loci had previously conferred adaptation to another antibiotic. Fitness assays in a range of drug concentrations show how selection in the antibiotic ceftazidime can select for one gene (blaDHA-1) potentiating the evolution of carbapenem resistance by a single mutation in a second gene (ompK36). These results show how a patient’s treatment history might shape the evolution of antibiotic resistance and could explain the genetic basis of carbapenem-resistance found in many enteric-pathogens.
 
 ## Introduction
 
@@ -49,23 +49,307 @@ It has recently become apparent that numerous CRE infections do not depend on th
 
 A patient died as a result of septicaemia caused by a Klebsiella isolate, FK688, where the infection did not respond to treatment with carbapenems (Bi et al., 2017). In this study, we present the complete genome sequence of Klebsiella FK688, using a compilation of short- and long-read sequence data (Figure 1A). We identify, and experimentally confirm the genetic basis of the non-carbapenemase CRE phenotype in FK688: carriage of a mega-plasmid (pNAR1) and an inactivating mutation in the chromosomal gene ompK36. We show that non-carbapenemase CRE strains are unfit and readily evolve to be drug-sensitive in the absence of carbapenem antibiotics. The evolution of these low-fitness CRE strains may be contingent on their recent exposure to antibiotics that select for other β-lactamases which may explain the evolution of non-carbepenemase CRE.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig1-v1.jpg)
+
+**Figure 1.:** (A) Carbapenem-resistant Klebsiella spp. were isolated from a patient, and the genome was sequenced and assembled. The genetic cause of resistance was confirmed by re-engineering the carbapenem resistance, partly based on structure guided restoration of a partially truncated membrane protein. The evolutionary drivers of resistance and sensitivity were determined using experimental evolution and extensive phenotypic and genotypic measures of evolutionary change. (B) Maximum likelihood phylogenetic tree of 377 publicly available Klebsiella genomes shows K. pneumoniae and K. quasipneumoniae as distinct species. The inner ring colours refer to the country of isolation according to the key, and further data is described in Figure 1—figure supplement 2 and Figure 1—source data 1. (C) Eight candidate carbapenemases were identified in the FK688 genome sequence and overexpressed in an E. coli model of resistance. Only two enzymes (DHA1 and OKP-B-21) conferred resistance to the cephem antibiotics tested, and none of the enzymes conferred resistance to the carbapenem antibiotics (Figure 1—source data 6 and Figure 1—figure supplement 3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The position of genes encoding antibiotic resistance determinants (oqxAB, blaOKP-B-21, kdeA, and fosA5) and major outer membrane porin proteins (ompK35, ompK36, ompK37, and ompK38) are indicated. The blue lines in the two outer concentric circles represent the location of predicted coding sequences in the forward (outermost) and reverse DNA strands. The middle circle (black) indicates the % Guanine-Cytosine (GC) content, and the inner circle indicates the positive (green) and negative (purple) GC skew ([G−C]/[G+C]). The map was generated with DNAPlotter (Carver et al., 2009).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Maximum likelihood phylogenetic tree of 377 publicly available Klebsiella genomes shows K. pneumoniae and K. quasipneumoniae as distinct species. The inner ring indicates the country of strain isolation, as specified in the colour key (NA, not applicable, indicates the genomes with location not deposited in the NCBI). The middle and outer ring colours indicate the distribution of the sequence type classifications with the ST number and colour key, respectively (ST, sequence type; SLV, single-locus variant; 2LV, two-locus variant). The position of strain FK688 is shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The Conserved Domain Architecture Retrieval Tool (CDART; Geer et al., 2002) was used to create the graphical display of domain architectures for the protein sequences identified from DeepBL analysis of the FK688 genome sequence data (Figure 1—source data 5). DHA-1, OPK-B-21, and several other of the open-reading frames show protein architecture of the Class C β-lactamase (green). TRN, ABH, and OPHC have a domain architecture similar to Serine-tRNA deacylase (blue), Alpha/Beta fold hydrolase (yellow), and Metallo-hydrolase-like_MBL-fold superfamily (orange), respectively. Numbers map the amino acid residues for each protein. (B) Growth rate analysis of E. coli BW25113 strains expressing the indicated open-reading frames cloned into plasmid pJP-CmR (Figure 1—source data 2). In each case, the comparison is made between untransformed BW25113 (“no vector”, green triangles), and BW25113 transformed with the parental plasmid (“pJP-CmR”, red squares) or the plasmid carrying the indicated open-reading frame (blue dots). Strains were cultured in Lysogeny Broth (LB) for 24 hr at 37°C, and cell density (OD600) was measured every hour. Error bars represent the SD of biological triplicates.
+
 ## Results
 
-## Klebsiella FK688 does not encode a carbapenemase
+### Klebsiella FK688 does not encode a carbapenemase
 
 First, to determine the genetic basis of carbapenem resistance in FK688 (Table 1), we used a long- and short-read sequencing approach to generate a complete assembly of the FK688 genome (Figure 1A, Figure 1—figure supplement 1). The genome assembly revealed a circular chromosome (5,211,811 bp) and a novel circular megaplasmid (pNAR; 1,257,585 bp). This plasmid carried many antibiotic resistance genes corresponding to the known resistance profile (Bi et al., 2017), as well as genes encoding efflux pumps and other transporters (Figure 1—source data 3, Figure 1-source data 4). Phylogenetic analysis placed FK688 within K. quasipneumoniae subsp. similipneumoniae (Figure 1B, Figure 1—figure supplement 2, Figure 1—source data 1). Readily identifiable determinants of AMR on the FK688 chromosome are a blaOKP-B-21 gene encoding a β-lactamase that confers resistance to penicillins and cephalosporins such as cefazolin, as well as determinants for quinolone (oqxA, oqxB; Brisse et al., 2014; Mathers et al., 2019; Rodrigues et al., 2019) and fosfomycin (fosA5) resistance (Figure 1—figure supplement 1).
 
+**Table 1.**
+ Antimicrobial susceptibility profiling of K. quasipneumoniae FK688.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antimicrobial</th>
+      <th>Antimicrobial</th>
+      <th colspan="3">MIC (µg/mL)*</th>
+    </tr>
+    <tr>
+      <th>Class</th>
+      <th>Drug</th>
+      <th>FK688</th>
+      <th>E. coli (ATCC 25922)</th>
+      <th>Breakpoints†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Penicillins</td>
+      <td>Ampicillin</td>
+      <td>&gt;2048</td>
+      <td>8</td>
+      <td>≥32</td>
+    </tr>
+    <tr>
+      <td>Cephems</td>
+      <td>Cefazolin</td>
+      <td>&gt;2048</td>
+      <td>2</td>
+      <td>≥8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cefotaxime</td>
+      <td>1024</td>
+      <td>0.125</td>
+      <td>≥4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ceftazidime</td>
+      <td>&gt;2048</td>
+      <td>0.5</td>
+      <td>≥16</td>
+    </tr>
+    <tr>
+      <td>Carbapenems</td>
+      <td>Ertapenem</td>
+      <td>64</td>
+      <td>0.016</td>
+      <td>≥2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Imipenem</td>
+      <td>8</td>
+      <td>0.25</td>
+      <td>≥4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Meropenem</td>
+      <td>4</td>
+      <td>0.03</td>
+      <td>≥4</td>
+    </tr>
+    <tr>
+      <td>Lipopeptides</td>
+      <td>Polymyxin B</td>
+      <td>4</td>
+      <td>2</td>
+      <td>≥4</td>
+    </tr>
+    <tr>
+      <td>Aminoglycosides</td>
+      <td>Gentamicin</td>
+      <td>1</td>
+      <td>2</td>
+      <td>≥16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tobramycin</td>
+      <td>1</td>
+      <td>2</td>
+      <td>≥16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kanamycin</td>
+      <td>2</td>
+      <td>4</td>
+      <td>≥64</td>
+    </tr>
+    <tr>
+      <td>Tetracyclines</td>
+      <td>Tetracycline</td>
+      <td>128</td>
+      <td>1</td>
+      <td>≥16</td>
+    </tr>
+    <tr>
+      <td>Fluoroquinolones</td>
+      <td>Ciprofloxacin</td>
+      <td>1</td>
+      <td>0.016</td>
+      <td>≥1</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Drug-sensitive, italics; drug-resistant, bold-text.†Resistant clinical breakpoint for Enterobacterales given by CLSI, 2022._
+
 Our genome sequence analysis did not reveal a gene encoding KPC-2, the carbapenemase found in many K. quasipneumoniae isolates (Mathers et al., 2019). To identify any cryptic carbapenemases that may have escaped annotation, we made use of the machine learning predictor DeepBL (Wang et al., 2021). DeepBL identifies genes encoding β-lactamases of all types, including carbapenemases, and generated eight high-confidence predictions. The two highest predictions represent known β-lactamases blaOKP-B-21 and blaDHA-1. The next closest predictions were for proteins annotated as “serine hydrolase” (SHK), “MBL fold-metallo hydrolase” (OPHC), and “D-alanyl-D-alanine endopeptidase” (DAE) with conserved domain architecture retrieval tool predictions, suggesting that our search was sufficiently broad to identify plausible candidates (Figure 1C and Figure 1—source data 5). To test for carbapenemase activity, we expressed each of the eight genes in Escherichia coli and measured growth (Figure 1—figure supplement 3, Figure 1—source data 2). Minimum inhibitory concentration (MIC) assays of E. coli expressing the DeepBL candidates showed that only OKP-B-21 and DHA-1 have β-lactamase activity that includes significant resistance to ceftazidime, a third-generation cephalosporin (Figure 1C, Figure 1—source data 6). However, neither OKP-B-21 nor DHA-1 - nor any of the other proteins tested - provided resistance to carbapenems. Taken together with the genome sequence analysis, these data support that the observed carbapenem-resistant phenotype for FK688 is not caused by a carbapenemase.
 
-## The major porins permit carbapenem sensitivity in K. quasipneumoniae
+### The major porins permit carbapenem sensitivity in K. quasipneumoniae
 
 Porins are β-barrel proteins that transport nutrients across the outer membrane of Gram-negative bacteria but can also admit antibiotics into the bacterial cell (Martínez-Martínez et al., 1996; Nicolas-Chanoine et al., 2018; Rocker et al., 2020). K. pneumoniae has four genes encoding the major porins OmpK35, OmpK36, OmpK37, and OmpK38 (Rocker et al., 2020), and the position and synteny of each gene in FK688 are conserved across K. quasipneumoniae (Figure 2—figure supplement 1, Figure 2—figure supplement 2). Inspection of the predicted protein sequences encoded by the four genes in FK688 revealed a 1.3 kb transposase gene (IS4 family) insertion within the 5’ end of the ompK35 gene (Figure 2—figure supplement 1) and a 48 bp in-frame deletion in ompK36 in FK688 (Figure 2—figure supplement 1).
 
 The structure of OmpK36 (PDB 5O79) is known (Acosta-Gutiérrez et al., 2018), and the identified deletion of 16 amino acids at the 3’ end of the ompK36 gene in FK688 encompasses large portions of the β14 and β15 strands of the β-barrel structure (Figure 2A and Figure 2B), explaining why the protein is not assembled into the outer membrane of FK688. To confirm that this mutation was contributing to carbapenem resistance, we used the ompK36 gene from K. quasipneumoniae subsp. similipneumoniae ATCC 700603 (Elliott et al., 2016) to carry out structure-informed repair of the OmpK36 gene in K. quasipneumoniae FK688 (Figure 2C). The resultant strain (ompK36+ pNAR1) was subjected to immunoblotting with antisera, confirming the restoration of OmpK36 expression in the ompK36+ pNAR1 strain (Figure 2D, Figure 2—source data 1 and Figure 2—source data 2). Finally, measurements of carbapenem MIC determined that the repaired gene encoding the porin OmpK36 restored carbapenem sensitivity (Table 2).
 
-## DHA-1 and ΔompK36 are required for carbapenem resistance and impose non-additive fitness costs in growth media without antibiotics
+![Figure 2.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig2-v1.jpg)
+
+**Figure 2.:** (A) PSIPRED (Buchan and Jones, 2019) secondary structure prediction of the OmpK36, using the protein sequence encoded in the K. quasipneumoniae subsp. similipneumoniae genome. The location of the 16 amino acid deleted region in FK688 OmpK36 is highlighted in red on the β14-β15 strands of the corresponding structural model. (B) Tertiary structure of the β-barrel OmpK36 monomer (PDB ID 5O79 Acosta-Gutiérrez et al., 2018). Coloured red are the β14-β15 strands, the same region designated with red colour in panel (A). (C) Schematic depicting the engineering to restore a functional version of ompK36 in FK688 by the insertion of 48 nucleotides in ompK36, as shown in red. FRT (flippase recognition target) sites permitted excision of the KmR (kanamycin resistance) cassette using Flp recombinase. Following KmR excision, a single FRT site and scar region remain in between the ompK36 and apbE genes. The amino acid identity between the OmpK36 from ATCC 700603 and FK688 is 95% (Figure 2—figure supplement 2), and the ATCC 700603 sequence (Elliott et al., 2016) was used to repair the ompK36 locus of FK688, as described in the Materials and methods section. (D) Total membrane extracts were prepared from the indicated strains, the proteins in the samples analysed by sodium dodecyl sulfate-polyacrylamide gel (SDS-PAGE) and immunoblotting using an antibody probe that recognises OmpK36 (Rocker et al., 2020). The outer-membrane protein BamD was used as a sample loading control for the analysis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Gene synteny comparison alignments of ompK35, ompK36, ompK37, and ompK38 (green arrows) and neighbouring open reading frames (ORFs) with either predicted (purple arrows) or unknown (grey arrows) functions in FK688 and K. pneumoniae subsp. pneumoniae ATCC 43816 reference strain. Comparisons were created with BLASTn and the Easyfig application (Sullivan et al., 2011) using the default parameters (min. length = 0, max. e value = 0.001, and min. identity value = 0). The red line was drawn to indicate the position of a 48 bp intragenic region within ompK36 present in ATCC 43816 and absent in FK688, which was not detected at the level of resolution used in BLASTn comparative analysis. The nucleotide sequence percentage identity between strains is represented by the gradient indicator (bottom left).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) BLAST searches of sequence data held at NCBI did not identify any other Klebsiella strains carrying a tnpA insertion in the 5’ end of ompK35. However, such an insertion is seen in E. coli 1290/03 which has a tnpA inserted 45 bp upstream of the start codon of the ompK35 homolog (ompF). A non-identical but similar tnpA insertion is seen 42 bp upstream of the start codon of the ompK36 gene of K. pneumoniae WJ19, and 45 bp upstream of the start codon of the ompK36 homolog (ompC) in E. coli strains 1290/03, 917/05, and 1566/03. Alternate means disrupting the functionality of the porin encoding genes were also observed with SNPs that generate premature stop codons indicated by red lines. GenBank accession numbers of the sequences are as follows: E. coli 1290/03, GQ465829; K. pneumoniae WJ19, Q4557043; E. coli 917/05, GQ167039; E. coli 1566/03, GQ167038. Sequence comparisons were created with ViPTree (Nishimura et al., 2017). (B) OmpK36 amino acid sequences from FK688, other K. quasipneumoniae subsp. similipneumoniae (Kqs) strains and a K. pneumoniae strain (Kpn) extracted from the NCBI database. The conceptual translation of the OmpK36 encoded by the Kpn KP549/04 strain (Wu et al., 2011) had the same 16-amino acid deletion as FK688 (blue box). Residues showing 100% identity among sequences are highlighted in red. Similarity among sequences is indicated by black bold font highlighted in yellow. Accession numbers for the proteins shown are as follows: UNMC_7493: OVT66776.1; G1129: OVX13856.1; KP-24175: KYZ7217.4; CAB1577: OVX38519.1; KPPSTH03: OYM42369.1; KPCTRSRTH03: TNJ78288.1; ATCC 700603: AWO62949.1; MGH44: ESM62951.1; SWT10: TWV32269.1; KP549/04: ADG56566.1; SB610: VGP86012.1; G747: AZJ27052.1. Sequence alignments were performed with Clustal Omega (Madeira et al., 2019) and rendered with ESPript 3.0 (Buchan and Jones, 2019).
+
+**Table 2.**
+ Antimicrobial susceptibility profiling of FK688-derived strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Antimicrobial Class</th>
+      <th rowspan="3">AntimicrobialDrug</th>
+      <th colspan="5">MIC (µg/mL)*</th>
+    </tr>
+    <tr>
+      <th colspan="3">ΔompK36</th>
+      <th colspan="2">ompK36+</th>
+    </tr>
+    <tr>
+      <th>pNAR1</th>
+      <th>pNAR1ΔblaDHA-1</th>
+      <th>pNAR1−</th>
+      <th>pNAR1</th>
+      <th>pNAR1ΔblaDHA-1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Penicillins</td>
+      <td>Ampicillin</td>
+      <td>&gt;2048</td>
+      <td>256</td>
+      <td>128</td>
+      <td>&gt;2048</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>Cephems</td>
+      <td>Cefazolin</td>
+      <td>&gt;2048</td>
+      <td>32</td>
+      <td>32</td>
+      <td>&gt;2048</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cefotaxime</td>
+      <td>1024</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>32</td>
+      <td>0.125</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ceftazidime</td>
+      <td>&gt;2048</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>512</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Carbapenems</td>
+      <td>Ertapenem</td>
+      <td>64</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Imipenem</td>
+      <td>8</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Meropenem</td>
+      <td>4</td>
+      <td>0.06</td>
+      <td>0.125</td>
+      <td>0.125</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Lipopeptides</td>
+      <td>Polymyxin B</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Aminoglycosides</td>
+      <td>Kanamycin</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Tetracyclines</td>
+      <td>Tetracycline</td>
+      <td>128</td>
+      <td>256</td>
+      <td>2</td>
+      <td>128</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>Fluoroquinolones</td>
+      <td>Ciprofloxacin</td>
+      <td>1</td>
+      <td>0.06</td>
+      <td>0.06</td>
+      <td>1</td>
+      <td>0.125</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Drug-sensitive, italics; drug-resistant, bold-text._
+
+### DHA-1 and ΔompK36 are required for carbapenem resistance and impose non-additive fitness costs in growth media without antibiotics
 
 To determine the evolutionary stability of the pNAR1 plasmid, we passaged 10 replicate mutation accumulation lines of K. quasipneumoniae FK688 in growth media without β-lactam antibiotic selection (Figure 3A). After 11 passages, two replicates had completely lost resistance to the β-lactam antibiotic ceftazidime. The first lineage lost a 17 kb region of pNAR1 that included the blaDHA-1 and qnrB4 antibiotic resistance genes flanked by the gene mobility elements tnpA-sul1 (pNAR1ΔblaDHA-1) while the second lineage lost the entire pNAR1 plasmid (pNAR1‾; Figure 3B, Figure 3C). We assayed both the pNAR1‾ and pNAR1ΔblaDHA-1 strains for growth (Figure 3—figure supplement 2, Figure 3—source data 1) and antibiotic sensitivity (Table 2) and confirmed that loss of pNAR1, and specifically the tnpA-sul1 region of pNAR1, caused a loss of resistance to ceftazidime and carbapenem.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of the in vitro evolution experiment. After passage #3 (P3), a ceftazidime-susceptible (CAZS) mutant evolved, lacking a 17 kb region of pNAR1 that included blaDHA-1 (referred to as ΔompK36 pNAR1ΔblaDHA-1). After 11 passages (P11) a CAZS colony missing the entire plasmid (referred to as ΔompK36 pNAR1¯) evolved. In total, 20 passages were performed, and another five CAZS colonies were identified, each missing the 17 kb region of pNAR1 that includes blaDHA-1. (B) The position of genes encoding antibiotic resistance determinants (red), and efflux pumps annotated as being for mercury resistance (green), copper resistance (orange), and silver resistance (pink) are indicated. In addition to blaDHA-1, pNAR1 carries genes encoding AmpR (ID00077) a transcriptional regulator known to regulate expression of blaDHA-1 (Realegeno et al., 2021). Also, other drug resistance genes including those responsible for resistance to tetracycline (tetA[B]), rifamycin (arr-3), trimethoprim (dfrA27), streptomycin (aadA16), macrolides (qacΔE1), sulfonamides (sul1), and quinolones and fluoroquinolones (qnrB4; Figure 3—figure supplement 1, Figure 1—source data 3). The location of predicted coding sequences in the forward (outer most) and reverse DNA strands is designated by purple boxes in the outer concentric circles. The middle circle (black) graphs the % GC content, and the inner circle indicates the positive (green) and negative (purple) GC skew ([G−C]/[G+C]). The map was generated with DNAPlotter (Carver et al., 2009). The black arc designates a 41 kb segment of DNA expanded in panel C. (C) Linear map of the 41 kb segment of pNAR1 showing the genetic arrangement of antimicrobial resistance genes (red), mobile genetic elements (blue), annotated coding sequences (purple), and hypothetical genes of unknown function (grey). Assigned IS families are shown underneath each transposase gene (tnpA). The loci within the two brackets represent the 17 kb DNA segment (tnpA-sul1) deleted from pNAR1ΔblaDHA-1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The coloured lines in the outer concentric circles represent the location of predicted coding sequences in the forward and reverse DNA strands. Annotated CoDing Sequences (CDS) are shown in dark blue and labelled with gene names. Hypothetical genes of unknown function are in grey. Mobile genetic elements are in light blue. The position of genes encoding antibiotic resistance determinants (red), mercury (mer) resistance (green), copper (pco) resistance (orange), and silver (sil) resistance (pink) is indicated. The genes encoding a Fe (3+) dicitrate ABC transporter system are in dark brown. The Type 1 hsdRMS restriction-modification and H-N-H endonuclease (hnh) systems (yellow) and phage shock protein (Psp) system (light brown) are indicated. The middle circle (black) indicates the % GC content, and the inner circle indicates the positive (green) and negative (purple) GC skew ([G−C]/[G+C]). The map was generated with DNAPlotter (Carver et al., 2009).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Bacteria was cultured in cation-adjusted Mueller-Hinton Broth (CAMHB), and the OD600 was measured every hour for 24 hr. Error bars represent SD (n=3). The genotypes of the strains are indicated in the legend. Note that the parental FK688 strain is ΔompK36 pNAR1. Where indicated, the other isogenic strains express a functional OmpK36 porin (i.e. ompK36+), carry the complete pNAR1 plasmid or pNAR1 with a 17 kb (tnpA-sul1) deletion (pNAR1ΔblaDHA-1), or have been cured of the plasmid (pNAR1¯).
 
 Whole genome sequencing established that the pNAR1‾ and pNAR1ΔblaDHA-1 strains had not sustained any other mutations, which confirmed the genotypes of strains ΔompK36 and ompK36+ with and without the plasmid-encoded blaDHA-1gene. We therefore engineered repaired versions ompK36+ for each strain and tested each mutant for growth and carbapenem resistance (Table 2). The results demonstrate that the acquisition of carbapenem-resistance in FK688 required the combination of (i) the absence of porins and (ii) the β-lactamase DHA-1 (Figure 1—source data 6).
 
@@ -73,11 +357,23 @@ While the expression of DHA-1 and the absence of a functional porin provides a s
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig4-v1.jpg)
 
-**Figure 4.:** (A) Schematic of the competitive fitness assay experiment (Materials and methods). FACS: fluorescence-activated cell sorting. (B) The relative fitness of the engineered mutant strains relative to the carbapenem resistant FK688 strain, measured in Lysogeny Broth (LB) growth media without antibiotics. Mutant strains either have the OmpK36 outer membrane transporter restored (ompK36), the DHA-1 β-lactamase deleted (pNAR1¯ or pNAR1Δ+blaDHA-1), or both (orange circles). The y-axis shows the selection coefficient (S) per generation compared to the carbapenem resistant ancestor FK688 which has its fitness set at 0. The legend indicates the genotypes for each strain (note FK688 is genotype ΔompK36 pNAR1). Error bars represent mean ± SD (n=4). (C) Relative fitness of FK688 mutant strains compared to parental FK688, measured in LB media supplemented increasing concentrations of the carbapenem antibiotic imipenem. The legend shows the genotype for each Klebsiella strain. Error bars represent mean ± SD (n=4).Figure 4—source data 1.Figure 4B and C.
+**Figure 4.:** (A) Schematic of the competitive fitness assay experiment (Materials and methods). FACS: fluorescence-activated cell sorting. (B) The relative fitness of the engineered mutant strains relative to the carbapenem resistant FK688 strain, measured in Lysogeny Broth (LB) growth media without antibiotics. Mutant strains either have the OmpK36 outer membrane transporter restored (ompK36+), the DHA-1 β-lactamase deleted (pNAR1¯ or pNAR1ΔblaDHA-1), or both (orange circles). The y-axis shows the selection coefficient (S) per generation compared to the carbapenem resistant ancestor FK688 which has its fitness set at 0. The legend indicates the genotypes for each strain (note FK688 is genotype ΔompK36 pNAR1). Error bars represent mean ± SD (n=4). (C) Relative fitness of FK688 mutant strains compared to parental FK688, measured in LB media supplemented increasing concentrations of the carbapenem antibiotic imipenem. The legend shows the genotype for each Klebsiella strain. Error bars represent mean ± SD (n=4).
 
-## High fitness and carbapenemase sensitivity rapidly evolve in experimental populations of FK688
+### High fitness and carbapenemase sensitivity rapidly evolve in experimental populations of FK688
 
 Mutations that inactivate major porins restrict the permeability of the outer membrane. To address the fitness cost of major porin loss over time, we passaged 20 ΔompK36 pNAR1 (lineage A) and 20 ompK36+ pNAR1 (lineage B) replicate populations across 200 generations of evolution in media without antibiotics (Figure 5A). The ancestral FK688 strains (ΔompK36 pNAR1 and ompK36+ pNAR1) have an opaque colony morphology. This is consistent with a phenotype of capsular polysaccharide production: non-fimbriated Klebsiella strains are mucoid due to capsule secretion and look opaque, while translucent colonies are fimbriated and non-mucoid (Matatov et al., 1999; Schembri et al., 2005; Wilksch et al., 2011).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of the evolution experiment of Lineage A (FK688:ΔompK36 pNAR1) and Lineage B (FK688:ompK36+pNAR1). 20 replicate populations (A1, A2, A3,…A20 and B1, B2, B3,…B20) for each lineage were serially passaged (1000-fold dilutions at each passage) for 200 generations. Of the evolved strains, population A2 and population B3 were characterised as described in the text. While population A2 showed a mixture of both opaque (o) and translucent (t) colony morphotypes, the asterisk (*) denotes that only a single colony of opaque (o) morphotype was observed in population B3. (B) Colony morphotypes seen in the evolved populations. Colonies were grown on 0.5✕ Lysogeny Broth (LB) agar for an overnight incubation at 37°C and photographed with stereo microscope using transmitted light to capture translucency. (C) The relative fitness assessments for the populations of FK688 ΔompK36 pNAR1(pink) and populations of ompK36+pNAR1 (blue) genotypes (left). The error bars represent mean ± SD (n=4). Relative fitness assays were also performed for 20 evolved populations after 200 generations of evolution in LB growth media without antibiotics (right). The line represents individual replicates with means connected. (D) Relative numbers of opaque colonies in the 20 replicate populations of FK688 ΔompK36 pNAR1 (lineage A) and ompK36+pNAR1 (lineage B) strains after 200 generations. Each dot represents an individually evolved population. The inset photographs (above the graph) are an example of frequency of opaque and translucent colonies on an agar plate in one of the 20 replicate populations. (E) Capsular polysaccharide was extracted from cell cultures for glucuronic acid measurement (Materials and methods; Campos et al., 2004). The error bars represent mean ± SD (n=3). For reference, ancestral and evolved strains were compared with the hypermucoid (i.e. heavily capsulated) clinical isolate B5055 and an isogenic mutant B5055nm Δwza-wzc (non-mucoid) strain. (F) Total cell extracts from the indicated strains were analysed by sodium dodecyl sulfate-polyacrylamide gel (SDS-PAGE) and Coomassie staining. The migration positions of OmpK36, PhoE, and OmpA are indicated. The identities of these protein species were confirmed by mass spectrometry of the corresponding region of the gel.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Sequence comparison of FK688 ompK36+ revealed a tnpA gene from the IS4 family (blue arrow) inserted upstream of fimE in B3(o). Sequence comparisons were performed with ViPTree (Nishimura et al., 2017).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Schematic of the FK688 and its evolved strains A2(o) and A2(t) fim gene cluster with 100% gene similarity between the strains. Sequence comparisons were performed with ViPTree (Nishimura et al., 2017).
 
 The ΔompK36 pNAR1 (lineage A) populations evolved similar competitive fitness to the ompK36+ pNAR1 (lineage B) evolved populations, recovering the fitness cost of the ΔompK36 mutation (Figure 5C, Figure 5—source data 1). To understand the molecular basis of these phenotypes, whole genome sequence data was analysed for four evolved strains: A2(o), A2(t), B3(o), and B3(t). Each, independently, sustained a deletion in pNAR1 that removed blaDHA-1. This explains the increased carbapenem sensitivity of the ΔompK36 pNAR1 and ompK36+ pNAR1 lineages as they had now lost one of the genes contributing to provide the phenotype. After 200 generations of evolution, samples were plated on agar and were found to display a mixture of opaque and translucent colony morphotypes from each strain (Figure 5B and Figure 5D). This feature has been seen before in Klebsiella spp. and depends on the expression of type 1 fimbriae (Matatov et al., 1999; Klemm, 1986; Struve et al., 2008).
 
@@ -85,7 +381,161 @@ The replicate population FK688 ΔompK36 pNAR1(A2) population evolved to become a
 
 MIC analysis of the lineage A evolved strains showed that the ΔompK36 pNAR1 populations had evolved increased sensitivity to imipenem, 64-fold for the A2(o) and A2(t) strains, bringing them to the same MIC value as the B3(t) strain (Table 3). Protein analysis of A2(o) and A2(t) by sodium dodecyl sulfate-polyacrylamide gel (SDS-PAGE; Figure 5F, Figure 5—source data 5) and mass spectrometry showed no changes that were consistent in both populations to explain the increased sensitivity to imipenem. Our reconstruction experiments (Table 2) suggest that the primary determinant of this reversion of the AMR phenotype is the observed loss of the blaDHA-1 gene from the megaplasmid pNAR1.
 
-## Non-carbapenemase carbapenem resistance evolves via ceftazidime resistance
+**Table 3.**
+ Antimicrobial susceptibility profiling FK688 ΔompK36 and ompK36+ strains and their respective evolved strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="6">MIC (µg/mL)*</th>
+    </tr>
+    <tr>
+      <th>Antimicrobial</th>
+      <th>Antimicrobial</th>
+      <th colspan="3">ΔompK36</th>
+      <th colspan="3">ompK36+</th>
+    </tr>
+    <tr>
+      <th>Class</th>
+      <th>Drug</th>
+      <th>pNAR1</th>
+      <th>pNAR1 ΔblaDHA-1 A2(o)</th>
+      <th>pNAR1 ΔblaDHA-1A2(t)</th>
+      <th>pNAR1</th>
+      <th>pNAR1 ΔblaDHA-1B3(o)</th>
+      <th>pNAR1 ΔblaDHA-1 B3(t)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cephems</td>
+      <td>Cefazolin</td>
+      <td>&gt;2048</td>
+      <td>32</td>
+      <td>1</td>
+      <td>&gt;2048</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cefotaxime</td>
+      <td>1024</td>
+      <td>0.5</td>
+      <td>0.25</td>
+      <td>32</td>
+      <td>0.125</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ceftazidime</td>
+      <td>&gt;2048</td>
+      <td>0.5</td>
+      <td>0.25</td>
+      <td>512</td>
+      <td>0.25</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Carbapenems</td>
+      <td>Ertapenem</td>
+      <td>64</td>
+      <td>0.5</td>
+      <td>0.031</td>
+      <td>0.5</td>
+      <td>0.016</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Imipenem</td>
+      <td>8</td>
+      <td>0.125</td>
+      <td>0.125</td>
+      <td>1</td>
+      <td>0.25</td>
+      <td>0.125</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Meropenem</td>
+      <td>4</td>
+      <td>0.125</td>
+      <td>0.016</td>
+      <td>0.12</td>
+      <td>0.016</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>Tetracyclines</td>
+      <td>Tetracycline</td>
+      <td>128</td>
+      <td>128</td>
+      <td>128</td>
+      <td>128</td>
+      <td>128</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>Fluoroquinolones</td>
+      <td>Ciprofloxacin</td>
+      <td>1</td>
+      <td>0.125</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>0.031</td>
+      <td>0.063</td>
+    </tr>
+    <tr>
+      <td>Aminoglycosides</td>
+      <td>Kanamycin</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tobramycin</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gentamicin</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Lipopeptides</td>
+      <td>Polymyxin B</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Drug-sensitive, italics; drug-resistant, bold-text._
+
+### Non-carbapenemase carbapenem resistance evolves via ceftazidime resistance
 
 The results so far confirm that two genetic variants are required for the evolution of non-carbapenemase resistance to imipenem. The evolution of this trait is puzzling because both the ΔompK36 strain and the blaDHA-1 positive strain each have a low fitness in growth media without antibiotic, as well as in growth media with imipenem. One explanation for the evolution of carbapenem resistance in a strain of Klebsiella with an intact major porin is the simultaneous acquisition of multiple genetic variations after the population was exposed to imipenem. However, given that the two genes are not linked, the simultaneous acquisition of a new gene (blaDHA-1) and a spontaneous genetic variant (inactivating mutation in one or more major porins such as ompK36) is highly unlikely.
 
@@ -95,7 +545,7 @@ The fitness of each combination of the blaDHA-1 and ompK36 alleles was tested in
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83107/elife-83107-fig6-v1.jpg)
 
-**Figure 6.:** (A) The fitness of FK688 mutants measured in Lysogeny Broth (LB) media supplemented with ceftazidime across a concentration range from 0.125 to 2 µg/mL. Only strains with an intact pNAR1 plasmid, including the blaDHA-1 gene, are able to survive high concentrations of ceftazidime. The legend has the genotypes for the Klebsiella strains. Error bars represent mean with ± SD (n=4). (B) Schematic of the imipenem resistance landscape. Each genotype is depicted as being resistant (red) or susceptible (blue) to imipenem. The x and y planes depict the antimicrobial resistance (AMR) genotypes, and the z plane represents growth measured at each concentration of imipenem. Circles represent the genotype of each strain, and lines show strain connected by a single mutation. The evolution of imipenem resistance requires two genes - the blaDHA-1 gene, and a loss of function mutation in ompK36: these two alleles are both found in FK688, indicated at “D”. Since both single-step mutants “B” and “C” are imipenem susceptible and do not have a fitness advantage in growth media without drugs (Figure 4B), we propose that the population had recently been exposed to conditions that selected for the pNAR1 plasmid. Then after exposure of the population to imipenem, the ΔompK36 mutant was strongly selected. This suggests that the most likely evolutionary path to imipenem resistance was A → B → D.Figure 6—source data 1.Figure 6A.Figure 6—source data 2.Figure 6B.
+**Figure 6.:** (A) The fitness of FK688 mutants measured in Lysogeny Broth (LB) media supplemented with ceftazidime across a concentration range from 0.125 to 2 µg/mL. Only strains with an intact pNAR1 plasmid, including the blaDHA-1 gene, are able to survive high concentrations of ceftazidime. The legend has the genotypes for the Klebsiella strains. Error bars represent mean with ± SD (n=4). (B) Schematic of the imipenem resistance landscape. Each genotype is depicted as being resistant (red) or susceptible (blue) to imipenem. The x and y planes depict the antimicrobial resistance (AMR) genotypes, and the z plane represents growth measured at each concentration of imipenem. Circles represent the genotype of each strain, and lines show strain connected by a single mutation. The evolution of imipenem resistance requires two genes - the blaDHA-1 gene, and a loss of function mutation in ompK36: these two alleles are both found in FK688, indicated at “D”. Since both single-step mutants “B” and “C” are imipenem susceptible and do not have a fitness advantage in growth media without drugs (Figure 4B), we propose that the population had recently been exposed to conditions that selected for the pNAR1 plasmid. Then after exposure of the population to imipenem, the ΔompK36 mutant was strongly selected. This suggests that the most likely evolutionary path to imipenem resistance was A → B → D.
 
 These results support the hypothesis that imipenem resistance evolved in FK688 via multiple evolutionary steps. First, the population experienced an antibiotic-containing environment that selected for the blaDHA-1 gene. This could have been any antibiotic that selected for the pNAR1 plasmid, such as ceftazidime or another β-lactam antibiotic. After a short period of selection on this first treatment, most of the population would carry the blaDHA-1 gene, increasing the chance that an ompK36 inactivating mutation would occur in a cell that also carried the blaDHA-1 gene. We tested the evolutionary potential for each genotype to evolve imipenem resistance by setting up cultures of the FK688 strains with either one, or none, of the two drug resistance alleles and plating 109 cells of each genotype on a range of concentrations of imipenem (Figure 6B, Figure 6—source data 2). We evaluated the evolutionary path to antibiotic resistance by considering the starting point of evolution as the genotype that does not have the blaDHA-1 gene or the loss of function mutation in ompK36, indicated at “A”. This genotype is the most logical starting point because it has the highest fitness in growth conditions without antibiotic (Figure 4B). We found that strains that carried only the ΔompK36 allele, or neither allele, were unable to evolve imipenem resistance (Figure 6B; “A” and “C”). However, a K. quasipneumoniae strain with the pNAR1 plasmid (carrying the blaDHA-1 gene) would be readily able to evolve resistance (Figure 6B; “B”). Thus, in a scenario representing previous treatment of a patient with ceftazidime, given the low fitness benefit conferred by the loss of function mutation in ompK36 in growth media supplemented with imipenem, the path A → B → D is most likely.
 
@@ -105,13 +555,13 @@ This study presented the first physical genetic map of a K. quasipneumoniae subs
 
 Genomics-based surveillance has shown that KPC-2 carbapenemases are widespread in Klebsiella spp. including K. quasipneumoniae (Mathers et al., 2019; Octavia et al., 2019). β-lactamases encoded by chromosomal genes are common amongst these species of Klebsiella: blaSHV is found in K. pneumoniae, blaOKP-A in K. quasipneumoniae subsp. quasipneumoniae and blaOKP-B in K. quasipneumoniae subsp. similipneumoniae (Rodrigues et al., 2019; Long et al., 2017; Fevre et al., 2005). Consistent with this, FK688 carries a chromosomally located blaOKP-B. In addition, FK688 also carries the β-lactamase blaDHA-1 on the megaplasmid pNAR1.
 
-## Epistatic impacts of porins, pumps, and enzymes on carbapenem-resistance
+### Epistatic impacts of porins, pumps, and enzymes on carbapenem-resistance
 
 There have been no reports on drug efflux pumps in K. quasipneumoniae, but in some strains of K. pneumoniae, drug-resistance phenotypes have been suggested to include epistatic contributions from genes encoding efflux pumps (Nicolas-Chanoine et al., 2018). FK688 encodes numerous ABC-type efflux systems with annotations for these efflux pumps suggestive of metal ion ligands (copper, silver, and mercury), but the ligand specificity of efflux pumps can be broader or different to that denoted by annotation (Mata et al., 2000; Flach et al., 2017). In FK688, the efflux pumps did not contribute to carbapenem resistance. Are there any further epistatic effects relevant to imipenem sensitivity? A potential one would be that other porins had been upregulated, and the A2(t) translucent strain was observed to have increased expression of outer membrane proteins OmpA and PhoE (Figure 5E). However, (i) OmpA does not form a sizeable channel in the outer membrane (Ortiz-Suarez et al., 2016), and (ii) while the porin PhoE does form a channel (Rocker et al., 2020), it is not conducive to permitting imipenem entry into Klebsiella (Rocker et al., 2020). A single SNP that was fixed in the A2 population was in the cadBA operon that generates cadaverine (Figure 5—source data 3). CadC is a positive activator of the cadBA operon (DelaVega and Delcour, 1995), and this activation of cadBA is known to close porins in general and block β-lactam influx (Dela Vega and Delcour, 1996; Iyer and Delcour, 1997; Samartzidou et al., 2003), with point mutations in the CadC protein sufficient to inhibit the cadBA operon (Schlundt et al., 2017).
 
 Instead, we found that the CRE phenotype in FK688 depends on epistasis between blaDHA-1 and ompK36. Both the carriage of blaDHA-1 and the defect in ompK36 have measurable fitness cost to the strain. After multiple rounds of plating in the absence of drug-selection, we observed the loss of a segment (tnpA-sul1) of pNAR1 that carries blaDHA-1, that is, selection against the β-lactamase. This same outcome was also observed in a controlled evolution experiment over 200 generations. These observations are explained by the measured fitness cost in pNAR1ΔblaDHA-1 which was less than the fitness cost imparted by the full plasmid. Thus, in the absence of β-lactam, the CRE phenotype is reversed to carbapenem-sensitivity. It is not clear from current literature how widespread the non-carbapenemase CRE phenotype is, but several points are worthy of note: (i) the presence of plasmids encoding DHA-1 is geographically wide-spread (Hennequin et al., 2012), (ii) the presence of ompK35 and/or ompK36 mutations is prevalent in the various species of Klebsiella (Rocker et al., 2020), and (iii) a recent case study showed a single hospital had collected 87 isolates of CRE Klebsiella with 55% of them being a non-carbapenemase CRE phenotype (Tamma et al., 2017a).
 
-## Diagnosis and treatment of non-carbapenemase CRE
+### Diagnosis and treatment of non-carbapenemase CRE
 
 To obtain the best outcome from the limited treatment options effective against CRE, a personalised approach to antibiotic dosing has been urged (Doi, 2019; Doi and Paterson, 2015; Reyes and Nicolau, 2020). This in turn requires rapid and accurate diagnosis. All of the currently available tests for CRE aim to identify specific carbapenemases: the Carba NP test detects OXA-48 type carbapenemases, the modified Hodge test identifies metallo-β-lactamases (Kuchibiro et al., 2018), and the newer more sophisticated gene-specific tests also have limitations (Tamma et al., 2017b; Powell et al., 2017; Revez et al., 2017; Hong et al., 2019; Meunier et al., 2018). The finding that in some environments perhaps half of all CRE cases could be caused by strains that do not encode a carbapenemase (Tamma et al., 2017a), and our finding that DHA-1 expression can - through epistasis with porin mutations - deliver a CRE phenotype adds a further degree of difficulty to diagnosis of CRE.
 
@@ -121,15 +571,359 @@ Finally, this study shows how the evolutionary history of a pathogenic strain ca
 
 ## Materials and methods
 
-## Chemicals and reagents
+### Chemicals and reagents
 
 Ampicillin and tetracycline were purchased from Astral Scientific. All other antibiotics were purchased from Sigma-Aldrich in highest possible grade. A stock solution of Anhydrotetracycline (Cayman Chemical Company) in 50% ethanol was prepared to induce β-lactamase production when required.
 
-## Bacterial strains, oligonucleotides, and cultures conditions
+### Bacterial strains, oligonucleotides, and cultures conditions
 
 Plasmids, bacterial strains, and oligonucleotides used in this study are described in Table 4, Table 5, and Table 6, respectively. Bacterial cultures were routinely grown in Lysogeny Broth (LB) or cation-adjusted Mueller-Hinton Broth (CAMHB) media at 37°C with shaking at 200 rpm, unless otherwise stated. When required, antibiotics used for the selection of antibiotic resistance markers were supplemented in growth media at the following concentrations: ampicillin 100 μg/mL; kanamycin 30 μg/mL; chloramphenicol 34 μg/mL; ceftazidime: 0.125 μg/mL, 0.25 μg/mL, 0.5 μg/mL, 1 μg/mL, or 2 μg/mL; imipenem: 0.03 μg/mL, 0.06 μg/mL, 0.125 μg/mL, 0.25 μg/mL, or 0.5 μg/mL.
 
-## Genome sequencing and evaluation
+**Table 4.**
+ List of plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Relevant characteristics*</th>
+      <th>Source/reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pKD4</td>
+      <td>Contains kanamycin resistance cassette (kan) flanked by FRT sites (FRT-kan-FRT); oriR6K, AmpR, KmR</td>
+      <td>Datsenko and Wanner, 2000</td>
+    </tr>
+    <tr>
+      <td>pJET1.2/blunt</td>
+      <td>Blunt-end cloning vector for insertion of DNA fragments with single deoxyadenosine overhangs; AmpR</td>
+      <td>Thermo Scientific</td>
+    </tr>
+    <tr>
+      <td>pDonor(OmpK36)</td>
+      <td>pJET1.2/blunt carrying FRT-kan-FRT and K. quasipneumoniae FK688 ompK36 regions (donor plasmid for lambda Red recombination-mediated repair of ompK36 gene in FK688); AmpR, KmR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pACBSR</td>
+      <td>Arabinose-inducible promoter; I-SceI endonuclease; lambda Red recombination genes, CmR</td>
+      <td>Herring et al., 2003</td>
+    </tr>
+    <tr>
+      <td>pFLP-BSR</td>
+      <td>pACBSR carrying fragment length polymorphism (FLP) recombinase to excise the kanamycin cassette, temp-sensitive replication; CmR</td>
+      <td>Rocker et al., 2020</td>
+    </tr>
+    <tr>
+      <td>pJP-CmR</td>
+      <td>Derivative of pJP168 for anhydrotetracycline inducible protein expression. CmR</td>
+      <td>Rocker et al., 2020</td>
+    </tr>
+    <tr>
+      <td>pJP-blaDHA-1</td>
+      <td>pJP-Cm containing blaDHA-1 from FK688</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pJP-blaOKP-B-21</td>
+      <td>pJP-Cm containing blaOKP-B-21 from FK688</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pJP-blaSHK</td>
+      <td>pJP-Cm containing CKCOFDID_01495 from FK688</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pJP-blaOPHC</td>
+      <td>pJP-Cm containing CKCOFDID_02113 from FK688</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pJP-blaDAE</td>
+      <td>pJP-Cm containing pbpG from FK688</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pJP-blaTRN</td>
+      <td>pJP-Cm containing CKCOFDID_04153 from FK688</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pJP-blaABH</td>
+      <td>pJP-Cm containing dhmA from FK688</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pJP-blaDAC</td>
+      <td>pJP-Cm containing dacB from FK688</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Amp, ampicillin; Km, kanamycin; Cm, chloramphenicol._
+
+**Table 5.**
+ List of strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Relevant characteristics*</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K. quasipneumoniae</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FK688 ΔompK36 pNAR1</td>
+      <td>Wildtype, clinical isolate from a bloodstream infection case from the First Affiliated Hospital of Wenzhou Medical University, China. Expresses β-lactamase blaOKP-B-21. Deficient in ompK35 and ompK36 porin expression. Harbours a 258 kb plasmid pNAR1 (AmpR, TetR, RifR, TrpR, StpR, EryR, SdzR, CipR).</td>
+      <td>Bi et al., 2017</td>
+    </tr>
+    <tr>
+      <td>ΔompK36 pNAR1ΔblaDHA-1</td>
+      <td>FK688 with a 17 kb deletion from tnpA-sul1 in pNAR1.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔompK36 pNAR1–</td>
+      <td>FK688 cured of pNAR1.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ompK36+ pNAR1</td>
+      <td>FK688 with a genetically repaired and functional ompK36 gene. Carries pNAR1.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ompK36+ pNAR1ΔblaDHA-1</td>
+      <td>FK688 with a genetically repaired and functional ompK36 gene. It has a 17 kb deletion from tnpA-sul1 in pNAR1.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>FK688-GFP+</td>
+      <td>FK688 with a constitutively expressed green fluorescent protein (GPF). GFP gene inserted downstream of the glmS gene via pGRG-eGFP.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>A2(o)ΔompK36 pNAR1ΔblaDHA-1</td>
+      <td>Evolved strain from Kq1. It has a 17 kb deletion from tnpA-sul1 in pNAR1. Forms opaque colonies.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>A2(t)ΔompK36 pNAR1ΔblaDHA-1</td>
+      <td>Evolved strain from Kq1. It has a 17 kb deletion from tnpA-sul1 in pNAR1. Forms translucent colonies.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>B3(o) ompK36+ pNAR1ΔblaDHA-1</td>
+      <td>Evolved strain from Kq4. It has a 17 kb deletion from tnpA-sul1 in pNAR1. Forms opaque colonies.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>B3(t) ompK36+ pNAR1ΔblaDHA-1</td>
+      <td>Evolved strain from Kq4. It has a 17 kb deletion from tnpA-sul1 in pNAR1. Forms translucent colonies.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>K. pneumoniae</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B5055</td>
+      <td>Hypermucoviscous phenotype. Wildtype, clinical isolate, serotype K2;O1</td>
+      <td>Statens Serum Institut, Denmark</td>
+    </tr>
+    <tr>
+      <td>B5055 nm</td>
+      <td>B5055 deletion mutant ∆wza-wzc::km (non-mucoid); KmR</td>
+      <td>Prof. Richard Strugnell University of Melbourne</td>
+    </tr>
+    <tr>
+      <td>E. coli</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DH5α</td>
+      <td>F– endA1 hsdR17(rK–, mK+) supE44 λ– thi-1 recA1 gyrA96 relA1 deoR Δ(lacZYA-argF) U169 Φ80dlacZ∆M15; NalRE. coli DH5α was used for cloning purposes</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>ATCC 25922</td>
+      <td>CLSI control strain for antimicrobial susceptibility testing</td>
+      <td>ATCC</td>
+    </tr>
+    <tr>
+      <td>BW25113 (WT)</td>
+      <td>rrnB3 ΔlacZ4787(::rrnB-3) hsdR514 Δ(araD-araB)567 Δ(rhaD-rhaB)568, rph-1</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Amp, ampicillin; Tet, tetracycline; Rif, rifamycin; Trp, trimethoprim; Stp, streptomycin; Ery, erythromycin; Sdz, sulfadiazine; Cip, ciprofloxacin; Nal, nalidixic acid._
+
+**Table 6.**
+ List of oligonucleotide primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence (5–3’)*</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Construction of FK688 OmpK36+ strains</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K36_insert-R</td>
+      <td>gcgcgacctactacttcaacaaaaacatgtccacctatgttgactacaaaatcaacctgctg</td>
+      <td rowspan="6">Construction of pDonor(OmpK36) plasmid</td>
+    </tr>
+    <tr>
+      <td>K36_insert-F</td>
+      <td>gttgaagtagtaggtcgcgcccacgtcaacatatttcaggatgtcctggtcgcc</td>
+    </tr>
+    <tr>
+      <td>K36_Km-F</td>
+      <td>ctaaggaggatattcatatggtcgcaagctgcataacaaa</td>
+    </tr>
+    <tr>
+      <td>K36_Km-R</td>
+      <td>gaagcagctccagcctacacattagaactggtaaaccaggcccag</td>
+    </tr>
+    <tr>
+      <td>K36_ISceI-R</td>
+      <td>tagggataacagggtaatgcccgacggtgatatccatc</td>
+    </tr>
+    <tr>
+      <td>K36_ISceI-F</td>
+      <td>tagggataacagggtaatgcttcggtacctctgtaacttatga</td>
+    </tr>
+    <tr>
+      <td>pKD4-F</td>
+      <td>tgtgtaggctggagctgcttc</td>
+      <td rowspan="2">Kanamycin cassette from pKD4</td>
+    </tr>
+    <tr>
+      <td>pKD4-R</td>
+      <td>catatgaatatcctccttag</td>
+    </tr>
+    <tr>
+      <td colspan="3">Cloning of putative β-lactamases genes for anhydrotetracycline-inducible expression</td>
+    </tr>
+    <tr>
+      <td>blaDHA-1_For_NR</td>
+      <td>gtccCCATGGtgaaaaaatcgttatctgcaac</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaDHA-1_Rev_NR</td>
+      <td>cgtcAAGCTTattccagtgcactcaaa</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaOKP_F_NR</td>
+      <td>tagcGAATTCatgcgttatgttcgcctgtgcc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaOKP_R_NR</td>
+      <td>gcatAAGCTTctagcgctgccagtg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaSHK1_F_NR</td>
+      <td>gttcCCATGGtgataagaaaaccactggcc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaSHK1_R_NR</td>
+      <td>atgcAAGCTTaacgcagctcgcg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaOPHC2_F_NR</td>
+      <td>ctagGAATTCatgacaccagctcccttttataccctgac</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaOPHC2_R_NR</td>
+      <td>acggAAGCTTtcgctgtgatcggtgtt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaDAE1_F_NR</td>
+      <td>tgcaGAATTCatgatgccgaaatttcgagtctctttgc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaDAE1_R_NR</td>
+      <td>gatcAAGCTTttaatcgttctgcgcg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaABH1_F_NR</td>
+      <td>acgtCCATGGTGaacagattatccctgatcc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaABH1_R_NR</td>
+      <td>gatcAAGCTTacaaccgatcggcg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaDAC1_F_NR</td>
+      <td>aaggCCATGGtgcgatttcccagatttatc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaDAC1_R_NR</td>
+      <td>aagcAAGCTTtagttgttctggtacaaatcc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaTRN1_F_NR</td>
+      <td>cgtaCCATGGtgactgaacgggtttattacac</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>blaTRN1_R_NR</td>
+      <td>aatcAAGCTTacgtcagggaatagctgatc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pJPMCS_For</td>
+      <td>cctaatttttgttgacactctatcattg</td>
+      <td rowspan="2">pJP-CmR-gene insert sequencing primers</td>
+    </tr>
+    <tr>
+      <td>pJPMCS_Rev</td>
+      <td>gccaggcaaattctgttttatcagaccg</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Restriction endonuclease recognition sites are capitalised._
+
+### Genome sequencing and evaluation
 
 gDNA of the Klebsiella isolates was prepared from solid media scrapings of pure culture using the GenElute Bacterial Genomic DNA Kit (Sigma-Aldrich) and the Gram-negative bacteria protocol. High molecular weight DNA was then isolated using a 0.6× ratio of sample (200 µLl) to AMPure XP-beads (120 µL; A63882, Beckman Coulter). gDNA was sequenced in parallel on the Oxford Nanopore GridION and Illumina Nextseq 500. High molecular weight DNA was prepared as a Nanopore sequencing library, according to the manufacturer’s protocols using a ligation sequencing kit (SQK-LSK109, Oxford Nanopore), with minor modifications. All mixing steps for the DNA sample were done by gently flicking the microfuge tube instead of pipetting, and the optional shearing step was omitted.
 
@@ -141,17 +935,17 @@ Illumina sequences were prepared on a NextSeq 500 platform, with 150 bp paired-e
 
 Assembly involved long-read-only assembly of long reads, followed by short-read correction. In brief, Nanopore reads were downsampled using Filtlong (Wick and Menzel, 2018, v0.2.0) to retain the highest quality reads (10% of all, equivalent to an estimated 88-fold coverage). These reads were assembled using Canu (Koren S et al., 2018, v1.8), with an expected genome size of 5,000,000 bp. The assembled contigs output by Canu were circularised where appropriate and validated through a read mapping approach in Geneious Prime (2019.2.1) before short-read correction. The corrected assembly was oriented to dnaA and annotated using Prokka (Seemann, 2020). The sample had varied coverage across assembled molecules, ranging in Illumina coverage between 156-fold for the chromosome and 188-fold for the plasmid.
 
-## Plasmid annotation
+### Plasmid annotation
 
 Prokka v1.14.0 was employed to predict pNAR1 genes. The translated gene sequences were used to search against NCBI nr and CARD resistance databases (Comprehensive Antibiotic Resistance Database) with the blastp algorithm and Resistance Gene Identiﬁer software (Alcock et al., 2020), respectively (e value≤10–5). The predicted genes received an annotation file containing credible resistance genes (cut-off as “Perfect” or “Strict”) and putative resistance genes (cut-off as “Loose”).
 
-## Membrane protein analysis
+### Membrane protein analysis
 
-## Membrane purification and isolation
+#### Membrane purification and isolation
 
 Overnight cultures of strains were diluted 1:100 in 200 mL CAMHB and grown until OD600 = ~0.5. Cells were harvested by centrifugation (10,000 × g, 10 min, 4°C) and resuspended in 10 mM Tris-HCl, pH 7.5. The centrifugation was repeated, and cells resuspended in Tris-Sucrose buffer (10 mM Tris-HCl, pH 7.5, 0.75 M sucrose). Peptidoglycan was degraded at a final concentration of 50 µg/mL lysozyme, and host serine proteases were inhibited at a final concentration of 2 mM phenylmethylsulfonyl fluoride. The outer membrane was destabilised for lysis in two volumes of 1.65 mM EDTA, pH 7.5. Cells were incubated on ice for 10 min and then lysed using an AVESTIN Emulsiflex-C3 (4 passes at ~15,000 psi). Cell lysates were centrifuged (15,000 × g, 20 min, 4°C) to remove cell debris. The supernatant was collected, and total membranes were pelleted by ultracentrifugation (132,000 × g, 45 min, 4°C) using a 70.1 Ti rotor. Membrane pellets were resuspended and pooled from duplicate samples in ~8 mL TES buffer (2.2 mM Tris-HCl, pH 7.5, 1.1 mM EDTA, and 0.25 M sucrose) and ultracentrifuged as before. Membrane pellets were resuspended in 200 µL of 25% sucrose in 5 mM EDTA, pH 7.5, and stored at −80°C.
 
-## Protein expression and analysis
+#### Protein expression and analysis
 
 Total (outer and inner) membranes from K. quasipneumoniae were purified following the method of Dunstan et al., 2017 with minor modifications. Membrane proteins were quantified with a NanoDrop 1000 Spectrophotometer (Thermo Scientific) and standardised to equivalent concentrations. Samples (~2 µg) were loaded onto a sSDS-PAGE containing 11% (wt/vol) 37.5:1 acrylamide-bisacrylamide, 0.375 M Tris (pH 8.8), 0.1% (wt/vol) SDS, and 0.5 mM EDTA in the separating gel and 4% (wt/vol) 37.5:1 acrylamaide-bisacrylamide, 0.25 M Tris (pH 6.8), 0.1% (wt/vol) SDS, and 0.5 mM EDTA in the stacking gel.
 
@@ -159,25 +953,29 @@ Proteins (~2 µg) were transferred to a 0.2 µm nitrocellulose membrane (Bio-Rad
 
 OmpK36 was detected by western blot using polyclonal antibodies raised in rabbits against the E. coli homolog OmpC, which is cross-reactive to OmpK35 and OmpK36 in Klebsiella. For use as a loading control, the outer-membrane protein BamD was detected using a ⍺-BamD antibody raised in rabbits against the E. coli BamD homolog. Goat Anti-Rabbit IgG antibody, HRP-conjugate (Sigma-Aldrich) was used as the secondary antibody. All antibodies were used at a 1:20,000 dilution in TBST containing 2% skim milk. Proteins were detected by chemiluminescence.
 
-## MIC determination
+### MIC determination
 
 Antimicrobial susceptibility testing was performed by broth microdilution method using CAMHB according to the guidelines the Clinical and Laboratory Standards Institute (CLSI) M07-10th Ed. Document CLSI, 2015. The resistance of antimicrobial agents was interpreted according to the criteria of CLSI, 2022. The assays were performed in biological triplicate with at least two technical replicates. E. coli ATCC 25922 was used as a quality-control strain.
 
-## Mutant construction
+### Mutant construction
 
 A K. quasipneumoniae FK688 strain containing a repaired ompK36 gene (ompK36+) was constructed using the “gene gorging” technique (Herring et al., 2003; Cherepanov and Wackernagel, 1995; Lee et al., 2009; Datsenko and Wanner, 2000). A donor plasmid was made that contained the repaired ompK36 gene upstream of a kanamycin-resistant cassette and ~500 bp of FK688 genomic region downstream of the ompK36 gene and flaked by I-SceI- endonuclease recognition sites. The PCR products were gel purified, cloned into pJET1.2/blunt, and confirmed by sequencing. The primers used are listed in Table 6. The donor plasmid and pACBSR carrying L-arabinose-inducible I-SceI endonuclease and λ-Red recombinase genes were transformed into FK688 by electroporation. Co-transformants were inoculated into LB containing chloramphenicol and 0.2% (w/v) L-arabinose and incubated overnight at 30°C with shaking. Engineered strains were isolated on LB-agar containing kanamycin and cured of the donor and pACBSR plasmids (by their sensitivity to chloramphenicol), and mutants were confirmed by PCR. The self-curing plasmid pFLP-BSR was then used to excise the kanamycin cassette (Cherepanov and Wackernagel, 1995).
 
-## Validation testing of candidate β-lactamases
+### Validation testing of candidate β-lactamases
 
 The coding sequences of β-lactamase and DeepBL candidate genes were amplified from FK688 gDNA using Fusion High-Fidelity DNA polymerase (New England BioLabs) with the oligonucleotide primers listed in Table 6. The PCR products and the anhydrotetracycline (ATc)-inducible expression vector pJP-CmR were digested with restriction enzymes using either NcoI and HindIII, or EcoRI and HindIII (New England BioLabs) and ligated to create the plasmids listed in Table 5. Plasmids were verified by sequencing, transformed into E. coli BW25113 or K. quasipneumoniae FK688, and selected with chloramphenicol. Target gene expression was induced with 35 ng/mL ATc. The parental plasmid pJP-CmR was used as the control in all experiments.
 
-## Plasmid maintenance assessment
+### Plasmid maintenance assessment
 
 A mutation accumulation experiment was performed to evaluate pNAR1 stability in the FK688 ΔompK36 pNAR1 strain. The strain was cultured on LB agar (no antibiotics) from a glycerol stock, corresponding to passage #1 (P1). From this plate, 10 colonies were replica cultured on LB agar containing 10 µg/mL ceftazidime (LB-CAZ) and LB agar without antibiotics (LB-only). Five colonies from P1 were individually subcultured on five LB agar plates without antibiotics (P2). One colony from each P2 plate was similarly passaged to P20, with replica plating of 10 colonies on LB-CAZ and LB-only after each passage. Therefore, 50 colonies were screened after each passage. Colonies that grew on LB-only but not on LB-CAZ (CAZS) were assessed for pNAR1 maintenance by PCR.
 
-## Fitness assays evaluation
+### Fitness assays evaluation
 
-Competitive fitness assays of strains relative to a GFP-expressing reference K. quasipneumoniae FK688-GFP+ strain were performed as described in Barber et al., 2021 with some modifications. Single colonies of ancestral, evolved, and reference strains were grown overnight at 37°C in 3 mL LB media (with and without antibiotic selection) with shaking in separate 15 mL falcon tubes. At saturation, the strain of interest and reference strain were mixed (100 μL:100 μL), diluted in PBS, and measured by fluorescence-activated cell sorting to determine the unadjusted proportions of the two strains. Based off these unadjusted values, volumes of experimental and reference strains were then modified to create a 1:1 cell density ratio, which is the initial starting frequency. The mixture of strains was then diluted 1:1000 (3 μL in 3 mL of LB) before propagating into fresh LB media each day (10 generations per day). 500 μL of sample was taken each day, diluted in 1×PBS (PBS [pH 7.4]: 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, and 2 mM KH2PO4), and measured by flow cytometry (LSR Fortessa X20a) for the proportion of experimental to reference strains. A maximum total count of 50,000 events was used. The selection coefficient (S) per generation for each experimental strain relative to the reference strain was calculated by taking the natural logarithm of the ratio of experimental to reference strains at the initial and the final time point and dividing by the number of generations passed (McDonald, 2019) as described by the following regression model formula: S=ln⁡(EtRt)−ln⁡(E0R0)T
+Competitive fitness assays of strains relative to a GFP-expressing reference K. quasipneumoniae FK688-GFP+ strain were performed as described in Barber et al., 2021 with some modifications. Single colonies of ancestral, evolved, and reference strains were grown overnight at 37°C in 3 mL LB media (with and without antibiotic selection) with shaking in separate 15 mL falcon tubes. At saturation, the strain of interest and reference strain were mixed (100 μL:100 μL), diluted in PBS, and measured by fluorescence-activated cell sorting to determine the unadjusted proportions of the two strains. Based off these unadjusted values, volumes of experimental and reference strains were then modified to create a 1:1 cell density ratio, which is the initial starting frequency. The mixture of strains was then diluted 1:1000 (3 μL in 3 mL of LB) before propagating into fresh LB media each day (10 generations per day). 500 μL of sample was taken each day, diluted in 1×PBS (PBS [pH 7.4]: 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, and 2 mM KH2PO4), and measured by flow cytometry (LSR Fortessa X20a) for the proportion of experimental to reference strains. A maximum total count of 50,000 events was used. The selection coefficient (S) per generation for each experimental strain relative to the reference strain was calculated by taking the natural logarithm of the ratio of experimental to reference strains at the initial and the final time point and dividing by the number of generations passed (McDonald, 2019) as described by the following regression model formula:
+
+$$
+ S=\frac{ln⁡(\frac{E_{t}}{R_{t}})−ln⁡(\frac{E_{0}}{R_{0}})}{T}
+$$
 
 Where T=time (generations); E=frequency of evolved strain; R=frequency of the reference (GFP-labelled) strain; Et, Rt = frequencies at time “t”; E0, R0=initial frequencies.
 
@@ -185,18 +983,18 @@ In other words, when S=0, the strains are equally fit; when S is positive, the e
 
 The relative fitness of the GFP-expressing FK688 strain is on average 0.040 for all experiments compared it to the ancestral FK688: ΔompK36 pNAR1strain with no GFP expression. The final selection coefficient of all graphs is calculated after normalising the relative fitness of the FK688-GFP+ against the ancestor FK688.
 
-## Evolution experiments
+### Evolution experiments
 
 To set up the evolution experiment, single clones of the drug-resistant, non-functional porin (ΔompK36 pNAR1) strain and its homologous, membrane engineered (ompK36+pNAR1) strain were used to seed 20 replicates each in 3 mL LB media and serially passaged in antibiotic-free media for 24 hr at 37°C with shaking in separate 15 mL falcon tubes. Every 24 hr, the populations were diluted 1:1000 (3 μL in 3 mL of LB), equating to roughly 10 generations per day. The strain populations were evolved for approximately 200 generations. The relative growth rate of all lineages and the parental strains was measured every 50 generations using fitness assays, and colony morphological features were assessed throughout the experiment. After 200 generations, four single clones of evolved strains with different morphological characteristics were selected for whole genome sequencing. After every 20 and 50 generations, 500 μL of evolved strains were mixed with 500 μL of 50% glycerol and stored at –80°C.
 
-## Growth curves
+### Growth curves
 
 Overnight bacterial cultures were subcultured 1:100 in CAMHB and grown until mid-log phase (OD600 of 0.6–0.8). Cells were then diluted in CAMHB to an OD600 of 0.05. Three biological replicates (each in technical replicates) were grown in a 96-well plate using the Tecan Spark 10 M. The plate was enclosed in a hydration chamber for 24 hr at 37°C with orbital shaking (200 rpm) amplitude 3 mm, and cell density (OD600) measurements were recorded every 60 min.
 
-## Capsule polysaccharide analysis
+### Capsule polysaccharide analysis
 
 Capsular polysaccharides of Klebsiella strains were extracted by the phenol-extraction method (Campos et al., 2004) and quantified using colorimetric assays for glucuronic acid as previously described (Blumenkrantz and Asboe-Hansen, 1973). Capsule extraction: overnight bacterial cultures were subcultured 1:50 in LB media and grown until the mid-log phase (OD600~0.4–0.6). Cells were collected by centrifugation (5000 × g, 15 min, 5°C), and the pellet was resuspended in 1 mL of dH2O. After centrifugation (14,000 × g, 10 min), the pellet was resuspended in 500 μl dH2O, and viable counts were determined. Samples were incubated at 68°C for 2 min, and 500 μL phenol (Sigma #P4557) was added and mixed by inversion. Following incubation at 68°C for 30 min, the mixture was cooled on ice for 2 min. 500 μL chloroform (Sigma-Aldrich #472476) was added, and the mixture was inverted. Samples were centrifuged (10,000 × g, 5 min), and approximately 400 μL of cell-free supernatant was mixed with 1 ml absolute ethanol, incubated at –20°C for 20 min, and washed with 70% ethanol. The carbohydrate-containing precipitate was resuspended in 500 μL dH2O. Samples were stored at 4°C. 200 μL of capsular material was mixed with 1.2 mL of 12.5 mM sodium tetraborate (Borax; NaBH4) in concentrated H2SO4. The mixtures were vigorously vortexed, boiled for 5 min, and then cooled on ice for 10 min before the addition of 20 μL of 0.15% 3-hydroxydiphenol in 0.5% NaOH. Absorbance was measured at 520 nm. A duplicate sample from each strain was prepared as described above but treated with 0.5% sodium hydroxide alone and used to measure the background absorbance at 520 nm. The glucuronic acid concentration in background-subtracted values for each sample was determined from a standard curve of D-Glucuronic acid.
 
-## Phylogeny
+### Phylogeny
 
 377 complete Klebsiella genomes from the NCBI database were used to make a global phylogeny (downloaded May 2020). Roary (3.11.2; Page et al., 2015) was used to align the genomes and extract the core genomes. The core genomes were used to generate a phylogenetical tree using RAxML v8.2.12 (Stamatakis, 2014) with a general time reversible nucleotide substitution model with rate heterogeneity modelled with a gamma distribution (GTR +GAMMA). Branch supports were estimated using 1000 bootstrap replicates. Kleborate v0.3.0 (Wyres et al., 2016) was used to identify MLST types. Perfect sequence matches of 7 MLST loci are indicated as ST and single- or double-locus variant of the exact ST is represented as STxx-1LV or STxx-2LV, respectively. Visualisation of the tree was generated with R using the package ggtree.

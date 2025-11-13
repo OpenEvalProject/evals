@@ -43,9 +43,21 @@ TCR repertoire sequencing allows for longitudinally tracking individual clones o
 
 ## Results
 
-## Secondary T-cell response to the YFV17D vaccine is weaker but faster than the primary response
+### Secondary T-cell response to the YFV17D vaccine is weaker but faster than the primary response
 
-We sequenced TCR alpha and TCR beta repertoires of bulk peripheral blood mononuclear cells (PBMCs) and different T-cell subsets at multiple timepoints before and after primary and booster vaccination against yellow fever of donor M1 (Figure 1A). Clonotypes responding to the primary YF immunization were identified using the edgeR software as previously described (Pogorelyy et al., 2018). Briefly, the biological replicates of bulk PBMCs were used to estimate the noise in the TCR mRNA counts. Clonotypes were assumed YF-responding if they increased in concentration more than 32-fold (p<0.01, see Materials and methods) between any two timepoints before the peak of the primary response (days 0, 5, 10 and 15).
+We sequenced TCR alpha and TCR beta repertoires of bulk peripheral blood mononuclear cells (PBMCs) and different T-cell subsets at multiple timepoints before and after primary and booster vaccination against yellow fever of donor M1 (Figure 1A). Clonotypes responding to the primary YF immunization were identified using the edgeR software as previously described (Pogorelyy et al., 2018). Briefly, the biological replicates of bulk PBMCs were used to estimate the noise in the TCR mRNA counts. Clonotypes were assumed YF-responding if they increased in concentration more than 32-fold ($p<0.01$, see Materials and methods) between any two timepoints before the peak of the primary response (days 0, 5, 10 and 15).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experiment design. Blood was taken at multiple timepoints before and after primary and secondary immunization against yellow fever virus. Two biological replicates of PBMCs and different cell subpopulations (indicated below each day of blood draw) were isolated at all timepoints. cDNA TCR alpha and TCR beta libraries were sequenced on Illumina platform. (B) The number of significantly expanded TCR alpha and TCR beta clonotypes for both donors in comparison to day 0. For donor P30 the number of significantly expanded clones is lower, than observed in primary vaccinations (see Figure 1—figure supplement 2). (C) The fraction of YF-responding cells as a proportion of all T-cells, measured by cumulative frequency of YF-responding TCR alpha and beta clonotypes of donor M1 after first (light blue and dark blue) and second immunization (dashed light blue and dark blue), and donor P30 (orange and yellow), which had a second immunization 30 years after the first. (D) The fraction of CD4+ and CD8+ YF-responding cells, as a proportion of all T-cells of donor M1 during the primary and secondary response to YFV17D. No novel major expansions were observed after secondary immunization, see Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The fraction of YF-responding cells as a proportion of all T-cells, measured by cumulative frequency of YF-responding TCR beta clonotypes of donor M1 identified by edgeR using timepoints after first vaccination (dashed purple), or after the second vaccination (dashed green). Solid blue line shows the sum of purple and green curves (clonotypes identified as expanded after first or after second immunization).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Number of significantly expanded TCR beta clonotypes between day 0 and 15 identified by the edgeR software. The donor revaccinated 30 years after the primary immunization has significantly fewer expanded clonotypes than any primary vaccinee.
 
 Overall we found 1580 TCR beta and 1566 TCR alpha clonotypes significantly expanded after the primary immunization, respectively occupying 6.7% and 7.8% of the sampled TCR repertoire of bulk PBMCs in cumulative frequency at the peak of the response (Figure 1B,C). As expected, both the numbers of responding clones and their cumulative frequencies were very similar for expanded clonotypes identified in bulk TCR alpha and beta repertoires. For simplicity in the following sections we focus on TCR beta repertoires, unless stated otherwise. In accordance with previous studies (Miller et al., 2008; Blom et al., 2013; Akondy et al., 2009; Kongsgaard et al., 2017; Pogorelyy et al., 2018), we show that during the primary response T-cells expanded intensely (with cumulative increase of about 950-fold) within 2–3 weeks after YF immunization. They subsequently contracted, but still exceeded baseline frequency 18 months afterwards.
 
@@ -53,15 +65,35 @@ We then tracked these YF-responding clonotypes identified during primary immuniz
 
 Using sequenced CD4+ and CD8+ T-cell subsets, we attributed a CD4 or CD8 phenotype to each responding clone (see Materials and methods) and thus could track these two subsets separately. After booster immunization in donor M1, YF-responding CD4+ cells peaked earlier (day 5 vs day 10) and expanded much more (≈8 times vs. ≈1.5 times) than CD8+ T-cells (Figure 1D, green and pink curves). During primary immunization, the difference in response dynamics between CD4+ and CD8+ subsets was less prominent, as they both peaked on day 15. However, by day 21 CD4+ responding clones contracted much more (to 43.6% of peak frequency) than CD8+ clonotypes (87% of peak frequency). These observations confirm previous reports that the CD4 response precedes the CD8 response (Blom et al., 2013).
 
-## Secondary response to booster vaccination after 18 months and after 30 years have similar features
+### Secondary response to booster vaccination after 18 months and after 30 years have similar features
 
 To see how long-lived T-cell memory response to YF can be, we recruited an additional donor (P30), who received the first YF-vaccine 30 years earlier and has not been in YF endemic areas for at least 28 years. From this donor, we collected bulk PBMCs and several T-cell subsets before and after booster immunization. Both the numbers of responding clonotypes (204 for TCR beta and 201 for TCR alpha) and the maximum frequency at the peak of the response (0.69%) were much lower than for any primary vaccinee both from this and other studies (Figure 1—figure supplement 2). Most of these clonotypes were low frequency or undetected before the second immunization, although a few were sampled in the memory repertoire prior to vaccination.
 
 The response to the booster vaccination was characterized by a large expansion between days 0 and 5, and a peak on day 10, for both CD4+ and CD8+ T-cells. Overall the dynamics and the magnitude of this response was very similar to the response to the booster vaccination after 18 months we observed in donor M1 (Figure 1C), suggesting that protection against the virus was maintained even after 30 years.
 
-## Diversity of clonal time traces in primary and secondary responses
+### Diversity of clonal time traces in primary and secondary responses
 
-Our approach allows us to estimate the contribution of individual clones to the total response. We already showed that the overall response strength to secondary immunization was an order of magnitude lower compared to the primary response. However, several clones showed remarkable expansion rates and peak frequencies, comparable to the ones observed in primary immunization. Such clones were observed in both donors upon secondary immunization after 18 months and 30 years (Figure 2A and B, Figure 2—figure supplement 1). We traced each single clone during primary and secondary response in donor M1. The concentration of clonotypes prior to the booster immunization correlated well (Pearson r = 0.46 p<0.0001) with their concentration on day 45 after primary immunization (Figure 2—figure supplement 2) suggesting a uniform contraction rate for all clones resulting in a half-life of 158 ± 12.7 days for the YF-specific T-cell subpopulation. Previously, Akondy et al. using deuterium labeling of cells specific to the immunodominant epitope NS4B214-222 (as determined by a A02-NS4B214-222-multimer binding assay) showed a very similar half-life of 123 days (Akondy et al., 2017).
+Our approach allows us to estimate the contribution of individual clones to the total response. We already showed that the overall response strength to secondary immunization was an order of magnitude lower compared to the primary response. However, several clones showed remarkable expansion rates and peak frequencies, comparable to the ones observed in primary immunization. Such clones were observed in both donors upon secondary immunization after 18 months and 30 years (Figure 2A and B, Figure 2—figure supplement 1). We traced each single clone during primary and secondary response in donor M1. The concentration of clonotypes prior to the booster immunization correlated well (Pearson r = 0.46 $p<0.0001$) with their concentration on day 45 after primary immunization (Figure 2—figure supplement 2) suggesting a uniform contraction rate for all clones resulting in a half-life of 158 ± 12.7 days for the YF-specific T-cell subpopulation. Previously, Akondy et al. using deuterium labeling of cells specific to the immunodominant epitope NS4B214-222 (as determined by a A02-NS4B214-222-multimer binding assay) showed a very similar half-life of 123 days (Akondy et al., 2017).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Frequency of each YF-responding clonotype in bulk TCR repertoire as a function of time. Individual clones show remarkable expansion after the primary response (A, left panel) and secondary response both 18 months (A, right panel) and 30 years (B) after the primary vaccination. The ten most abundant (by peak frequency) CD4+ and CD8+ YF-responding clonotypes are shown for each vaccination. Clonal traces for all YF-responding clonotypes are shown in Figure 2—figure supplement 1. Color indicates the time of the response peak for each clonotype: blue for a peak at day 5, pink at day 10, green at day 15 and purple at day 21. Despite overall heterogeneity in clonal traces, more clones peak at early timepoints during the secondary response. Heterogeneity in clonal traces allows for expanded clones identification and computational alpha-beta TCR pairing (Figure 2—figure supplement 4).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Individual clonal trajectories of all YF-responding clonotypes. Frequency of each YF-responding clonotype in bulk TCR repertoire as a function of time. Individual clones show remarkable expansion after the primary response (A, left panel) and secondary response both 18 months (A, right panel) and 30 years (B) after the primary vaccination. Color indicates the time of the response peak for each clonotype: blue for a peak at day 5, pink at day 10, green at day 15 and purple at day 21.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Decay of YF-responding clonotypes between primary and secondary immunization. Frequencies of YF-responding clones on day 45 of the primary immunization of donor M1 versus their frequencies 18 months later, before the second immunization). Diagonal line shows identity.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Frequencies of CD8+ (A) and CD4+ (B) clonotypes having responded to the primary YFV17D immunization in bulk before (x-axis) versus at the peak of the response to booster immunization (y-axis). Diagonal line shows identity.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) YF-responding clones identified using hierarchical clustering of clonal time traces with and without biological replicates. The plot shows two first principal components (x and y-axis) of the matrix, where rows are clonotypes and columns are normalized frequencies of these clonotypes on timepoints before and after primary immunization of donor M1. The frequency of each clonotype was normalized by its peak concentration. Pink color shows expanded clonotypes identified with edgeR. Two clusters (circles and crosses) were identified using hierarchical clustering. Similar results were obtained for both TCR alpha (left column) and TCR beta (right column) sequencing, with (top row) and without (bottom row) biological replicates for every timepoint. (B) Dynamics of YF-responding clonotypes after primary vaccination data from Pogorelyy et al. (2018). The cumulative frequency of YF-responding clonotypes defined as significantly expanded by edgeR is shown in blue. The green line indicates the cumulative frequency of responding clonotypes identified by hierarchical clustering of individual clonal trajectories. For the clustering procedure, only frequencies of biological replicate 1 of the bulk repertoire were used. (C) Examples of time traces for two YF-responding (purple and green) and one non-responding (blue) clonotypes in the TCR alpha repertoire (left), and their associated chain in TCR beta repertoire (right). The similarity of the alpha and beta traces of the same clone allows for computational alpha-beta pairing prediction. .
 
 It was previously reported that only 5–6% of YF-responding clones are preserved as immune memory, with the preferential recruitment of large clones (DeWitt et al., 2015). By contrast, in our sample we could re-identify 96% of CD4+ and 88% of CD8+ clones that responded to the primary immunization in at least one sample after the booster immunization. This suggests that practically all the diversity of the responding repertoire is maintained in memory. The larger fraction of re-identified YF-responding clones in comparison to previous work may be explained by the sampling depth. Sequencing more T-cells will lead to the re-identification of even more YF-responding clonotypes.
 
@@ -69,7 +101,7 @@ We then wanted to characterize how these persistent clonotypes responded to the 
 
 The specific features of clonal trajectories shared by YF-responding clones make it possible to distinguish them from non-expanding clones, using unsupervised clustering (see Figure 2—figure supplement 4AB and Materials and methods). This method shows good concordance with edgeR and works also without biological replicates. In addition, we demonstrated that the heterogeneity of clonal trajectories could be leveraged to computationally pair alpha and beta chains from from bulk alpha and beta sequencing data, by exploiting the similarity of trajectories of alpha and beta clonotypes belonging to the same clone (see Figure 2—figure supplement 4C and Materials and methods).
 
-## TCR sequencing shows the transition of clonotypes between memory subpopulations
+### TCR sequencing shows the transition of clonotypes between memory subpopulations
 
 Several studies have reported subsets of long-lived memory YF-specific T-cells, whose concentration remained stable for years (Fuertes Marraco et al., 2015; Akondy et al., 2017). It was shown that these long-lived memory cells are the progenies of effector cells, which divide vigorously during the peak of the response to the vaccine (Akondy et al., 2017). TCR sequences can be used as ‘barcodes’ to measure transitions between different memory subsets after YF immunization, defined by their surface markers revealed by flow cytometry.
 
@@ -77,27 +109,75 @@ We isolated with FACS (see Figure 3—figure supplement 1 for the gating strateg
 
 On day 0, the concentration of almost all YF-responding clonotypes was too low to be detected in any of these subpopulations. However, we were able to calculate the distribution of YF-responding clonotypes between these phenotypes after immunization. In agreement with previous studies the memory status of T-cell clones was tightly correlated with their CD4/CD8 status (Sathaliyawala et al., 2013; Thome et al., 2014). The vast majority of CD4+ T-cells were distributed between EM and CM, with <1% in EMRA, while CD8+ T-cell clones were predominantly found in EM and EMRA with ∼2% in CM. This difference also held for YF-responding clones (Figure 3A). While for most CD8+ clonotypes in the total repertoire EM/EMRA phenotypes were stable between day 15 and day 45 (Figure 3B, and Figure 3—figure supplement 2A,C), the distribution of CD8+ YF-responding clones between memory subsets was significantly shifted towards the EMRA phenotype (Figure 3C). This shift results from two processes: the rapid decay of EM cells (Figure 3—figure supplement 2B) and the phenotype switch from EM to EMRA (Figure 3—figure supplement 2D). Almost all YF-responding CD8+ clones detected 18 months after the first immunization corresponded to the EMRA phenotype (among 71 clones found in more than three copies in bulk repertoire at day 0 before second vaccination, 41 were found only in the EMRA subset, four only in EM, and six in both). For CD4+ T-cells, we did not observe any trend in phenotype switching between days 15 and 45 after the vaccination. We hypothesize that switching from EM to CM phenotype was masked due to homing of CM cells to lymphoid organs, defined by the expression of the CCR7 chemokine receptor.
 
-## The response to a single immunodominant epitope can contribute to up to 60% of the total response
+![Figure 3.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig3-v2.jpg)
+
+**Figure 3.:** (A) Each color bar shows the estimated distribution of T-cell clones between memory subpopulations for a set of CD4+ (left panel) and CD8+ (right panel) clonotypes for donors M1 (top) and P30 (bottom) on day 15 and day 45. Each panel shows the 10 most abundant YF-responding clones in each donor on day 45, which are present in at least one memory subpopulation on both day 15 and day 45. (B) Estimated concentration of CD8+ clones with a given phenotype at different timepoints in the bulk PBMC repertoire, for non-YF-responding clonotypes and (C) YF-responding CD8+ clonotypes (Mann Whitney U-test, EM: p-value = 2.1 · 10-12, EMRA: p-value = 1.2 · 10-6). Only clones with 30 or more Unique Molecular Identifiers (see Materials and methods) in bulk repertoires on day 45 were used for the analysis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Central memory (CM) cells were defined as CD3+CCR7+CD45RA-. Effector memory (EM) cells were CD3+CCR7-CD45RA-. Terminally differentiated effector memory (EMRA) cells were CD3+CCR7-CD45RA+. Stem-cell like memory (Tscm) cells were CD3+CCR7+CD45RA+CD95+.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** EM-EMRA transition and decay of CD8+ clones between day 15 and day 45. We plot concentrations of EM (A, B) and EMRA (C, D) of CD8+ cells of each clone with ≥ 30 UMI on day 45 in the bulk repertoire for non-YF-responding (A, C) and YF-responding (B, D) CD8+ clones on day 15 (x-axis) versus day 45 (y-axis). Diagonal line shows identity.
+
+### The response to a single immunodominant epitope can contribute to up to 60% of the total response
 
 It was previously shown that in HLA-A02 donors the NS4B214-222 LLWNGPMAV immunodominant epitope elicits the strongest CD8+ T-cell response (Akondy et al., 2009; Wieten et al., 2016; Kongsgaard et al., 2017; Blom et al., 2013). Using an A02-pMHC-dextramer, we isolated NS4B-specific CD8+ T-cells from both donors (Figure 4—figure supplement 1A,B) and applied TCR sequencing to get their unpaired TCR alpha and TCR beta repertoires. We obtained ≈2100 alpha and ≈2000 beta functional receptor chains, one of the largest datasets for TCRs with a single specificity. YF-responding clonotypes identified by edgeR as expanded between timepoints are not restricted to any particular YF epitope and represent the repertoire targeted towards many different peptides presented by different HLA alleles. This allows us to quantify the relative contribution of NS4B-specific T-cells to the total anti-YF response. At the peak of the response, approximately 24% of all YF-responding CD8+ T-cells were specific to NS4B in the donor vaccinated 30 years ago (P30), and up to 60% in the first time vaccinee (M1) (Figure 4A). However, NS4B-specific clonotypes could not be distinguished from other YF-responding clonotypes from their time traces alone, as they both responded with similar dynamics (Figure 4—figure supplement 2).
 
-## Sequence analysis and structural modeling of NS4B-specific TCRs reveals two motifs with distinct peptide binding modes
+![Figure 4.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig4-v2.jpg)
 
-We next asked whether there are distinct features in the sequence of NS4B-specific TCRs, which might explain the immunodominance of this epitope. Figure 4B and C show sequence similarity networks for TCR alpha and TCR beta chains of NS4B-specific clonotypes. The TCR alpha repertoire shows biased V-usage and complementarity determining region 3 (CDR3) lengths (Figure 4D). TRAV12-2, TRAV12-1, TRAV27, and TRAV17 gene usage were significantly enriched in the NS4B-specific TCRs (exact Fisher test, Benjamini Hochberg adjusted p<0.001), with more than 45 percent of the clonotypes expressing TRAV12-2, in comparison to just 4.5% of TRAV12-2 in the total CD8+ TCR repertoire. Beta chains formed several distinct clusters of highly similar sequences, with significant but less marked V-usage biases towards TRBV9, TRBV15, and TRBV6-1/2, as well as some bias in the length distribution (Figure 4E). Almost 37% of NS4B-specific clonotypes used TRBJ2-7.
+**Figure 4.:** (A) Fraction of all T-cells corresponding to CD8+ YF-responding TCRβ clonotypes (solid lines) and CD8+NS4B-specific clonotypes (dashed lines) as a function of time post-vaccination (x-axis). Sequence similarity networks for TCR alpha (B) and beta (C) of NS4B-positive cells. Each vertex is a TCR amino acid sequence, connected with an edge if they differ by fewer than two mismatches. The size of the vertex indicates its degree. Vertices of zero degree are not shown. Color and text boxes indicate V-segments that are significantly enriched (exact Fisher test, Benjamini Hochberg adjusted $p<0.001$) in usage in epitope-specific cells compared to the bulk repertoire. NS4B-specific TCR alpha (D) and TCR beta (E) chains (red histograms) have biases in CDR3 length in comparison to bulk TCR repertoire of CD8+ cells (overlayed blue histograms). (F) Network of single-cell paired TCR alpha (blue) and TCR beta (red) of NS4B-specific TCRs. Vertices of the same color are connected if there are less than two mismatches in TCR chain amino acid sequence. An edge between vertices of different color represents the pairing of alpha and beta. The biggest alpha cluster (blue in the center) corresponds to the TRAV12-2 cluster on B, and it pairs with many dissimilar beta chains. The biggest beta cluster (top left in red) corresponds to the TRBV9 cluster of C. (G) Pairing of V-segments of TCR alpha (left) to V-segments of TCR beta (right) in scTCRseq of NS4B-specific T-cells. The height of each box is proportional to the number of unique clones with this V-segment. The width of ribbons is proportional to the frequency of TRAV-TRBV combination. NS4B-specific TCRs have two main binding modes, defined by TRAV12 segment family paired to almost any TRBV (blue) and by TRAV27 segment paired preferentially with TRBV9 (pink).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Isolation of NS4B-specific T-cells of donor M1 (A) and donor P30 (B) on different timepoints after YF vaccination. (C) Number of NS4B-dextramer-positive cells before (left) and after (right) enrichment on the magnetic beads. FACS was performed on donor M1 before the second immunization.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Dynamics of immunodominant response and other responses. Total frequency of YF-responding NS4B-dextramer positive (solid line) and other YF-responding CD8 clonotypes (dashed line) is plotted on different timepoints after immunization. All clonotypes are called YF-responding using edgeR. .
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) TRAV-TRBV pairing in NS4B-dextramer-positive TCRs. Each dot shows TRAV-TRBV combination. The observed number of clonotypes using this combination in TCR is plotted against the number expected under random pairing from TRAV and TRBV frequencies. TRBV9 is expected to form more pairs with TRAV12-2 but pairs with TRAV27 instead, suggesting the existence of selective pressure on the choice of both chains. (B) Results of TCRdist hierarchical clustering of paired scTCR repertoire of NS4B-specific cells. The two largest branches indicated with arrows correspond to TRAV12-2 and TRAV27-TRBV9 motifs. (C)Pairings of J-segments and V-segments of TCR alpha (left) to V-segments and J-segments of TCR beta (right) in scTCRseq of NS4B-specific T-cells. The height of each box is proportional to the number of unique clones with a given gene segment. The width of the ribbons is proportional to the frequency of segment combinations. NS4B-specific TCRs have two main binding modes, defined by the TRAV12 segment family paired to almost any TRBV (blue) and by the TRAV27 segment paired preferentially with TRBV9 (pink). Other combinations are shown in green. .
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Average number of contacts to the LLWNGPMAV peptide in complementary determining regions of TCR alpha (top) and TCR beta (bottom) chains. TCRs with TRAV12 segment (green and pink) have significantly more contacts ( Mann Whitney U-test p-value=0.00015) in CDR1α than TCRs with TRAV27 (purple). On the other hand TCRs with TRAV27 have more contacts in CDR3α than TRAV12-2 TCRs ( Mann Whitney U-test p-value=0.009). No significant difference in the number of contacts was observed for these binding modes in CDRs of the TCR beta chain. (B) Frequency of amino acids in CDR3s of clones with TRAV12-2 and TRAV27 V-segments in dextramer-sorted NS4B-specific clonotypes and bulk CD8 clonotypes prior to the vaccination. For TRAV12-2 motif frequency distribution for TRAV12-2 is close to observed in bulk, suggesting absence of strong selection for certain amino acids in certain positions. .
+
+### Sequence analysis and structural modeling of NS4B-specific TCRs reveals two motifs with distinct peptide binding modes
+
+We next asked whether there are distinct features in the sequence of NS4B-specific TCRs, which might explain the immunodominance of this epitope. Figure 4B and C show sequence similarity networks for TCR alpha and TCR beta chains of NS4B-specific clonotypes. The TCR alpha repertoire shows biased V-usage and complementarity determining region 3 (CDR3) lengths (Figure 4D). TRAV12-2, TRAV12-1, TRAV27, and TRAV17 gene usage were significantly enriched in the NS4B-specific TCRs (exact Fisher test, Benjamini Hochberg adjusted $p<0.001$), with more than 45 percent of the clonotypes expressing TRAV12-2, in comparison to just 4.5% of TRAV12-2 in the total CD8+ TCR repertoire. Beta chains formed several distinct clusters of highly similar sequences, with significant but less marked V-usage biases towards TRBV9, TRBV15, and TRBV6-1/2, as well as some bias in the length distribution (Figure 4E). Almost 37% of NS4B-specific clonotypes used TRBJ2-7.
 
 We next asked how these clusters of highly similar sequences in the alpha and beta NS4B-specific repertoires corresponded to each other. Prior to booster immunization, we isolated NS4B-specific T-cells from donor M1 (Figure 4—figure supplement 1C) and performed single-cell RNA sequencing (scRNAseq) and single-cell paired TCR sequencing (scTCRseq). We collected data from 3500 cells corresponding to 164 clonotypes (see Materials and methods). Figure 4F shows a joint similarity network for TCR alpha and TCR beta chains, with both intra-chain sequence similarity and inter-chain pairings. Alpha-beta pairing seemed to be mostly random, with some exceptions: for instance, specific TCRs using the most dominant TRAV12-2 alpha motif were paired with many different beta chains with a broad usage of V-segments (Figure 4G and Figure 4—figure supplement 3A), but with a restricted CDR3β length of 13–14 amino acids. TCRs using TRAV27 and TRBV9 segments were also preferentially paired with one another (Figure 4—figure supplement 3C). Clustering of paired sequences using the TCRdist measure (Figure 4—figure supplement 3B) resulted in two large clusters corresponding to these two major motifs with conserved V-usage.
 
 The preferential usage of the TRAV12 family was reported before for TCRs responsive to the NS4B epitope (Bovay et al., 2018; Zhang et al., 2018). It was speculated (Bovay et al., 2018), that the CDR1α of this V-segment forms contacts with the peptide. To test this hypothesis, we modeled the 3D structures of clonotypes from scTCRseq using the Repertoire Builder server (Schritt et al., 2019) and then docked the resulting model structures using RosettaDock (Lyskov and Gray, 2008) to the HLA-A02 pMHC complex structure, recently solved using X-ray crystallography (Bovay et al., 2018), see Materials and methods for details. Models of TCR-pMHC complexes showed that the TRAV12-2 TCRs formed more contacts with the peptide using CDR1α loops, and fewer contacts with CDR3α loops, in comparison to TRAV27 TCRs (Figure 4—figure supplement 4A). Interestingly, CDR3α sequences of TRAV12-2 TCRs were very similar to the ones observed in the repertoire of the same donor prior to the immunization, suggesting absence of epitope-driven selection of the CDR3α of these TCRs (Figure 4—figure supplement 4B). Based on these results, we hypothesize that TCRs using TRAV12 and TRAV27 motifs represent two independent and distinct solutions to the binding of the NS4B epitope.
 
-## scRNAseq of NS4B-specific T-cells reveals two distinct cytotoxic phenotypes
+### scRNAseq of NS4B-specific T-cells reveals two distinct cytotoxic phenotypes
 
 Next we used the scRNAseq gene expression data to investigate the phenotype of specific T-cells in finer detail. While almost all NS4B-specific clonotypes 18 months after vaccination belonged to the conventional EMRA subset, scRNAseq revealed huge heterogeneity of gene expression inside this population. Unsupervised clustering by Seurat 3.0 software (Stuart et al., 2019; Butler et al., 2018) (see Materials and methods) revealed three sub-phenotypes of NS4B-specific cells (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig5-v2.jpg)
+
+**Figure 5.:** (A) 2D t-SNE visualization of unsupervised clustering (Seurat analysis) of RNAseq data based on 2000 most variable genes shows three distinct clusters of NS4B-specific cells. (B) The heatmap of top 15 significantly enriched genes of single cells in clusters 1 and 2 defined by the MAST algorithm. The panel above the heatmap identifies the cluster identity of the cells. (C) Gaussian kernel density estimate for the relative fraction of cells belonging to cluster one for each clonotype. Blue distribution shows the theoretical prediction under the null hypothesis: clonotype labels were shuffled between cells (1000 permutations). The observed distribution is flatter than the theoretical one, indicating the presence of clonotypes with either a minority or a majority of cells belonging to cluster 1 ($χ^{2}$ -test with MC-estimated p-value=0.0005).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Expression of 15 genes most characteristic of cluster one in cells corresponding to clusters 1 (pink), 2 (green) and 3 (blue). Cluster three has the intermediate phenotype. (B) Expression of 15 genes most characteristic of cluster two in cells corresponding to clusters 1 (pink), 2 (green) and 3 (blue). Cluster three has the intermediate phenotype.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Genes differentially expressed between clonotypes. Gene expression in each cell was averaged over the clonotypes before differential gene expression analysis. Unsupervised clustering shows two clusters with very similar gene expression to clusters 1 and 2 observed on scRNAseq of individual cells (Figure 5B). (B) Frequency of clonotypes corresponding to cluster 1 and 2, after primary immunization (left), and 18 months later before the booster vaccination (right). Clonotypes associated to cluster one are significantly more abundant on both these timepoints (Mann Whitney U-test A: p-value=0.0003; B: p-value=0.02447 ). .
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/53704/elife-53704-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Proportion of cells (left) and clonotypes (right) in single-cell TCR sequencing data carrying different numbers of TCR alpha and TCR beta chains. (B) Most variable genes in the dataset before (left) and after (right) the filtration of TCR related genes. TCR related genes were the source of unwanted variation in single-cell gene expression analysis and were removed from the data. (C) Visualization of quality control metrics in the single-cell gene expression experiment. The relationship between the number of RNAs inside the cell (x-axis) and the percentage of mitochondrial genes (y-axis) is shown on the left. The relationship between the number of RNAs inside the cell (x-axis) and the number of genes (y-axis) is shown on the right. Cells that had more than 8% of mitochondrial genes or more than 2700 total number of genes were discarded from further analysis. .
 
 Overall we found 166 genes that were differentially expressed according to the MAST algorithm (Finak et al., 2015) between these clusters (Figure 5B). Cells from cluster one showed high expression of cytotoxicity related genes GZMB, GNLY, GZMH, NKG7, PRF1, CX3CR1, SPON2, KLRD1, Hobit and T-bet transcription factors (Figure 5—figure supplement 1A). The combination of these genes also suggests that this cytotoxicity is mediated by the perforin pathway. The second cluster of cells is enriched in genes such as CCR7, TCF7, SELL, JUNB, LEF1, and especially IL7R which are essential for long-term survival and maintenance of memory T-cells (Figure 5—figure supplement 1B; Jeannet et al., 2010; Zhou et al., 2010; Kaech et al., 2003; Jung et al., 2016; Schluns et al., 2000). However, these cells also express unique markers related to cytotoxicity: GZMK, LTB as well as KLRG1, KLRB1, T-bet, and GZMH, albeit at lower levels than cells in cluster 1.
 
 Very similar clusters of genes were found in single-cell RNAseq analysis of CD4-cytotoxic lymphocytes EMRA cells (Patil et al., 2018). The expression pattern of granzymes and killer-like receptors in our clusters suggests that cells in cluster two may be the precursors of cells in cluster 1. The expression of GZMK (enriched in cluster 2) was shown to be prevalent in early memory stages (Harari et al., 2009; Bratke et al., 2005), while high levels of GZMB, GZMH, KLRB1, KLRG1, and ADGRG1 (enriched in cluster 1) are associated with more terminally differentiated memory cells with higher cytotoxic potential (Truong et al., 2019; Takata and Takiguchi, 2006). Interestingly, cluster two has higher expression of genes encoding ribosomal proteins, which were recently reported to be a feature of memory precursor cells (Araki et al., 2017). The transition of cells between the two clusters is also supported by the existence of cluster 3, which shows intermediate gene expression of cluster 1 and 2 markers, and thus may represent cells gradually changing phenotype.
 
-For each cell from the scRNAseq experiment, we obtained matched scTCRseq results. We wondered whether the TCR clonotype influenced cell gene expression profile. Interestingly, the distribution of clonotypes between clusters was not random (χ2 -test with MC-estimated p-value=0.0005): some clonotypes showed a clear preference for one of the phenotypes (Figure 5C). To match single-cell gene expression data with measurements of clonotype concentrations obtained with TCRseq, we averaged mRNA counts over the all cells of the same clonotype, and repeated the differential gene expression analysis (see Materials and methods). We obtained two clusters of clonotypes with the same enriched genes (Figure 5—figure supplement 2A) as observed for clusters of single cells (Figure 5B), confirming the association of phenotype and clonotype. Clonotypes from both clusters expanded following the second immunization, indicating that both phenotypes are capable of response. Clonotypes associated to cluster one had larger frequencies both on day 45 after the first vaccination (Figure 5—figure supplement 2B, left), and 18 months later before the booster shot (Figure 5—figure supplement 2B, right), than clonotypes associated to cluster 2. This result suggests that even for T-cells recognizing the same epitope, particular clones are linked to particular memory phenotype.
+For each cell from the scRNAseq experiment, we obtained matched scTCRseq results. We wondered whether the TCR clonotype influenced cell gene expression profile. Interestingly, the distribution of clonotypes between clusters was not random ($χ^{2}$ -test with MC-estimated p-value=0.0005): some clonotypes showed a clear preference for one of the phenotypes (Figure 5C). To match single-cell gene expression data with measurements of clonotype concentrations obtained with TCRseq, we averaged mRNA counts over the all cells of the same clonotype, and repeated the differential gene expression analysis (see Materials and methods). We obtained two clusters of clonotypes with the same enriched genes (Figure 5—figure supplement 2A) as observed for clusters of single cells (Figure 5B), confirming the association of phenotype and clonotype. Clonotypes from both clusters expanded following the second immunization, indicating that both phenotypes are capable of response. Clonotypes associated to cluster one had larger frequencies both on day 45 after the first vaccination (Figure 5—figure supplement 2B, left), and 18 months later before the booster shot (Figure 5—figure supplement 2B, right), than clonotypes associated to cluster 2. This result suggests that even for T-cells recognizing the same epitope, particular clones are linked to particular memory phenotype.
 
 ## Discussion
 
@@ -123,61 +203,236 @@ To summarize, we show that vaccination with YFV17D leads to the recruitment of a
 
 ## Materials and methods
 
-## Donors and blood samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3-FITC (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>CAT# 11-0038-42</td>
+      <td>FACS (5 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD45RA-eFluor450 (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>CAT# 48-0458-42</td>
+      <td>FACS (5 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CCR7-AlexaFluor647 (Rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>CAT# 560921</td>
+      <td>FACS (5 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD95-PE (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>CAT# 12-0959-42</td>
+      <td>FACS (5 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD3-eFluor450 (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>CAT# 48-0038-42</td>
+      <td>FACS (5 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HLA-A*0201 (LLWNGPMAV) dextramer</td>
+      <td>Immudex</td>
+      <td>CAT# WB3584</td>
+      <td>FACS (10 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Chromium Single Cell A Chip Kit</td>
+      <td>10x Genomics</td>
+      <td>CAT# 1000009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Chromium Next GEM 5’ Library and Gel Bead Kit</td>
+      <td>10x Genomics</td>
+      <td>CAT# 1000014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Chromium V(D)J Enrichment Kit, Human T Cell</td>
+      <td>10x Genomics</td>
+      <td>CAT# 1000005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Chromium Single Cell 5’ Library Construction Kit</td>
+      <td>10x Genomics</td>
+      <td>CAT# 1000020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Chromium i7 Multiplex Kit</td>
+      <td>10x Genomics</td>
+      <td>CAT# 120262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Dynabeads CD4 Positive Isolation Kit</td>
+      <td>Invitrogen</td>
+      <td>CAT# 11331D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Dynabeads CD8 Positive Isolation Kit</td>
+      <td>Invitrogen</td>
+      <td>CAT# 11333D</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Donors and blood samples
 
 Blood samples were collected from two healthy donors (M1 male age 26, and P30 male age 39) on multiple timepoints before and after immunization with YFV17D vaccine. All donors gave written informed consent to participate in the study under the declaration of Helsinki. The blood was collected with informed consent in a certified diagnostics laboratory. The study was approved by the institutional review board (IRB) of Pirogov Russian National Research Medical University. HLA haplotypes of donors (Table 1) were determined by in-house RNA-based amplification and sequencing method.
 
-## Isolation of T-cell subpopulations
+**Table 1.**
+ HLA-typing results for donors M1 and P30.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Locus</th>
+      <th>M1</th>
+      <th>P30</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>02:01:01/24:02:01</td>
+      <td>02:01:01/31:01:02</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>15:01:01/39:01:01</td>
+      <td>35:01:01/48:01:01</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>03:04:01/12:03:01</td>
+      <td>04:01:01/08:01:01</td>
+    </tr>
+    <tr>
+      <td>DQB1</td>
+      <td>02:01:01/03:02:01</td>
+      <td>03:01:01/03:01:01</td>
+    </tr>
+    <tr>
+      <td>DRB1</td>
+      <td>03:01:01/04:01:01</td>
+      <td>11:01:01/12:01:01</td>
+    </tr>
+    <tr>
+      <td>DRB3</td>
+      <td>02:02:01</td>
+      <td>01:01:02/02:02:01</td>
+    </tr>
+    <tr>
+      <td>DRB4</td>
+      <td>01:03:01</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation of T-cell subpopulations
 
 We isolated PBMCs from the blood using standard Ficoll-Paque protocol. CD4 and CD8 fractions were isolated with CD4/CD8 Positive Selection Dynabeads Kits according to the manufacturer’s protocol. For isolation of memory subsets, we stained PBMCs with the mix of antibodies: anti-CD3-FITC (UCHT1, eBioscience), anti-CD45RA-eFluor450 (HI100, eBioscience), anti-CCR7-AlexaFluor647 (3D12, BD Pharmingen), anti-CD95-PE (DX2, eBioscience). Four subsets of cells were sorted into RLT buffer (Qiagen) on BD FACS Aria III: EM (CD3+CD45RA-CCR7-), EMRA (CD3+CD45RA+CCR7-), CM (CD3+CD45RA-CCR7+), Tscm (CD3+CD45RA+CCR7+CD95+). HLA-A02 dextramer loaded with the NS4B241-222 peptide (LLWNGPMAV) from YFV17D (Immudex) was used for epitope-specific T-cells isolation. Cells were stained with NS4B-dextramer-PE, anti-CD3-eFluor450 (UCHT1, eBioscience), and anti-CD8-FITC (SK1, eBioscience) according to the manufacturer’s protocol. RNA was isolated using standard TriZol protocol (for bulk PBMCs, CD4 and CD8, NS4B-specific and negative fractions) or RNAeasy Micro Kit (Qiagen) (for memory subsets). The amount of RNA was measured on Qubit 2.0 (Invitrogen). Information about all antibodies and commercial kits could be found in Key Resources Table.
 
-## Sample preparation for the single-cell gene expression and immune profiling
+### Sample preparation for the single-cell gene expression and immune profiling
 
 For 10x Genomics single-cell gene expression and immune profiling, we used PBMCs isolated from 60 ml of blood of donor M1 before the second immunization. PBMCs were stained with NS4B-dextramer-PE (Immudex) according to the manufacturer’s protocol. Additionally, cells were stained with anti-CD3-eFluor450 (eBioscience), and anti-CD8-FITC (eBioscience). Previous to FACS sorting procedure, we used propidium-iodide to mark dead cells. As the NS4B-specific cell frequency was very low (Figure 4—figure supplement 1C), we used anti-PE Ultra-pure MicroBeads (Miltenyi) for the enrichment. In brief, every milliard of PBMCs was incubated with 10 µl of magnetic beads for 15 min on ice. After a washing step with PBS 5% FCS, the cell suspension was applied on MS MACS Column (Miltenyi). Columns were washed three times with PBS 5% FCS and stained with propidium-iodide just before the FACS (FACS Aria II). This procedure resulted in a dramatic increase of NS4B-specific cell frequency in the sample (Figure 4—figure supplement 1C) and accordingly lead to reduced FACS procedure time. For single-cell immune profiling of bulk T-cell clonotypes from PBMCs, we stained the cells with anti-CD3-eFluor450 (Invitrogen) and propidium-iodide, thus selecting CD3 positive cells. Approximately 10,000 CD3+ cells were used for 10x Genomics VDJ T-cell receptor enrichment protocol.
 
-## High throughput T-cell repertoire sequencing
+### High throughput T-cell repertoire sequencing
 
 Libraries of TCR alpha and TCR beta chains were prepared as previously described (Pogorelyy et al., 2017). In brief, isolated RNA was used for cDNA synthesis with 5’RACE template switch technology to introduce universal primer binding site and Unique Molecular Identifiers (UMI) at the 5’ end of RNA molecules. Primers complementary to both TCR alpha and TCR beta constant segments were used for cDNA synthesis initiation. cDNA was amplified in two subsequent PCR steps. During the second PCR step, sample barcodes and sequence adapters were introduced to the libraries. Libraries for the fractions with low amount of cells (Figure 1—source data 1) were prepared using SMART-Seq v4 Ultra Low Input RNA kit (TakaraBio). Libraries were sequenced on Illumina platform HiSeq 2500 with 2×100 bp sequencing length or NovaSeq 2×150 bp sequencing length. Parallel single-cell alpha/beta TCR and 5’ gene expression sequencing was performed using 10x Genomics Kits (Chromium Single Cell A Chip Kit, Chromium Next GEM Single Cell 5’ Library and Gel Bead Kit, Chromium Single Cell V(D)J Enrichment Kit, Human T Cell, Chromium Single Cell 5’ Library Construction Kit, Chromium i7 Multiplex Kit) according to the manufacturer’s protocol. Libraries were sequenced on Illumina platform HiSeq 3000 with 2×150 bp sequencing length.
 
-## Repertoire data analysis
+### Repertoire data analysis
 
-## Raw data preprocessing
+#### Raw data preprocessing
 
 Raw repertoire sequencing data were preprocessed as described in Pogorelyy et al. (2017). Briefly, sequencing reads were demultiplexed and clustered by UMI with MIGEC software (Shugay et al., 2014). The alignment of genomic templates to the resulting consensus sequences was performed with MiXCR (Bolotin et al., 2015). Raw sequencing data obtained from RNAseq experiments were analyzed directly with MiXCR using default RNAseq analysis pipeline.
 
-## Identification of changed clonotypes by edgeR
+#### Identification of changed clonotypes by edgeR
 
-To identify TCR alpha and TCR beta clonotypes that significantly expand after YF vaccination, we used the edgeR package (Robinson et al., 2010) as previously described (Pogorelyy et al., 2018). In brief, for each timepoint, we used two biological replicates of bulk PBMC. TMM-normalization and trended dispersion estimates were performed according to edgeR manual. We used an exact test based on the quantile-adjusted conditional likelihood (qCML) to identify clonotypes significantly expanded between pairs of timepoints. A clonotype with FDR adjusted p-value <0.01 (exact qCML-based test) was considered YF-responding if its log2-fold change estimate log2FC > 5 between any pairs of timepoints from 0 to the peak of the primary response (day 15). The usage of log2FC >5 threshold in addition to p-value threshold is important to filter statistically significant but small clonal expansions, which were previously shown to occur in healthy donors in the absense of vaccination on the timescale of one week, see Pogorelyy et al. (2018). The list of YF-responding clonotypes identified in alpha and beta TCR repertoires of donors M1 and P30 are in Figure 1—source data 3. CD4/CD8 in silico phenotyping was performed as suggested before (Pogorelyy et al., 2018): for each clone from bulk PBMC repertoire we assign CD4 phenotype if it is more abundant in the sequenced CD4 repertoire and vice versa. Over 98% of clonotypes were found exclusively in CD4 or CD8 compartment. However, a small group of clonotypes (1.4% for TCR alpha and 0.14% for TCR beta for day 15 timepoint of donor M1) was present in both compartments in comparable frequencies. These clonotypes have significantly higher TCR generative probabilities than others (p<0.001, Mann Whitney U-test) and thus are likely to arise from convergent recombination of the same TCR chain in both compartments.
+To identify TCR alpha and TCR beta clonotypes that significantly expand after YF vaccination, we used the edgeR package (Robinson et al., 2010) as previously described (Pogorelyy et al., 2018). In brief, for each timepoint, we used two biological replicates of bulk PBMC. TMM-normalization and trended dispersion estimates were performed according to edgeR manual. We used an exact test based on the quantile-adjusted conditional likelihood (qCML) to identify clonotypes significantly expanded between pairs of timepoints. A clonotype with FDR adjusted p-value <0.01 (exact qCML-based test) was considered YF-responding if its log2-fold change estimate log2FC > 5 between any pairs of timepoints from 0 to the peak of the primary response (day 15). The usage of log2FC >5 threshold in addition to p-value threshold is important to filter statistically significant but small clonal expansions, which were previously shown to occur in healthy donors in the absense of vaccination on the timescale of one week, see Pogorelyy et al. (2018). The list of YF-responding clonotypes identified in alpha and beta TCR repertoires of donors M1 and P30 are in Figure 1—source data 3. CD4/CD8 in silico phenotyping was performed as suggested before (Pogorelyy et al., 2018): for each clone from bulk PBMC repertoire we assign CD4 phenotype if it is more abundant in the sequenced CD4 repertoire and vice versa. Over 98% of clonotypes were found exclusively in CD4 or CD8 compartment. However, a small group of clonotypes (1.4% for TCR alpha and 0.14% for TCR beta for day 15 timepoint of donor M1) was present in both compartments in comparable frequencies. These clonotypes have significantly higher TCR generative probabilities than others ($p<0.001$, Mann Whitney U-test) and thus are likely to arise from convergent recombination of the same TCR chain in both compartments.
 
 To quantify the magnitude of the response on each timepoint we inferred the fraction of YF-responding cells as the proportion of all αβT-cells. To estimate this quantity from TCR repertoire data, for each susbset of interest (CD4+, CD8+, or NS4B-specific YF-responding clonotypes) we calculate the cumulative frequency of these clonotypes in TCR repertoire of bulk PBMCs in each timepoint.
 
-## Identification of YF-responding clonotypes by Principal Component Analysis (PCA)
+#### Identification of YF-responding clonotypes by Principal Component Analysis (PCA)
 
 We chose clonotypes that appeared in the top 1000 most abundant clonotypes at any timepoint after primary immunization. For these clonotypes, we made matrices of frequencies on all timepoints after primary immunization. Before applying PCA to these matrices, each value was normalized by dividing on maximum frequency for this clonotype. For cluster identification, we used hierarchical clustering with average linkage on euclidean distances between clonotypes. The number of clusters was set to 2. This analysis was performed for both alpha and beta chains of donor M1. For the twin donors (Pogorelyy et al., 2018), only replicate F1 was used for expanded clones identification.
 
-## Memory transition analysis
+#### Memory transition analysis
 
 For this analysis, we used clonotypes that had at least 30 UMIs at day 45 after primary vaccination. The clonotype frequency in memory subset is multiplied by the number of cells obtained by FACS on this timepoint for this subset. Then adjusted frequencies are normalized across all subsets to get a partition of each TCR clonotypes across subsets. Obtained partitions were multiplied by the frequency of a clonotype in bulk at this timepoint to get the concentration of clonotypes with a particular memory phenotype in the bulk repertoire.
 
-## Computational decontamination of NS4B-specific repertoire
+#### Computational decontamination of NS4B-specific repertoire
 
 Since FACS sorting is not precise, TCR repertoires of the population of interest often contains abundant clonotypes from the bulk population. To obtain a list of NS4B-specific TCRs we took clonotypes that were enriched (at least 10 times) in the A02-NS4B-dextramer positive fraction compared to A02-NS4B-dextramer negative fraction. We also discarded TCR clonotypes that were more abundant in CD4 than CD8 subpopulation on day 0 (as only CD8 cells should bind to A02 which is a MHC I allele). Although ∼30% of resulting unique NS4B-specific clonotypes overlapped with the list of significantly expanded clonotypes identified with edgeR, they corresponded to ∼90% of NS4B-specific T-cells. See Figure 4—source data 1 for resulting list of NS4B-specific alpha and beta clonotypes for both donors.
 
-## Computational pairing of TCR alpha and TCR beta from bulk repertoires
+### Computational pairing of TCR alpha and TCR beta from bulk repertoires
 
-For pair of clonal time traces we used a Euclidian distance between transformed frequencies:D⁢(Cα,Cβ)=∑i(t⁢(Cα,i)-t⁢(Cβ,i))2,where Cα,i and Cβ,i are the concentrations of an α and a β chain on the i-th timepoint. The transformation t of clone concentration C was chosen to address the overdispersion of frequencies at large concentrations (see Pogorelyy et al., 2018):t⁢(Ci)=log10⁡(a+b⁢Ci+b⁢Ci),where a=4.26×10-6 and b=3.09×10-3. To address possible systematic bias in expression between α and β chains in a clonotype, we introduce a log-fold shift λ in a trajectory with a quadratic penalty (µ=0.1):Ds⁢(Cα,Cβ)=minλ⁡(D⁢(Cα,10λ⁢Cβ)+μ⁢λ2).
+For pair of clonal time traces we used a Euclidian distance between transformed frequencies:
 
-We calculated Ds distances between each pair of α and β clonotypes out of the 1000 most abundant ones in the bulk repertoires on day 15 post-vaccination. For each α clonotype, we picked the five closest β clonotypes as candidate pairings. As a benchmark, we used two single-cell TCR sequencing (scTCRseq) experiments using the 10x Genomics platform and obtained paired repertoires for samples of bulk T-cells (CD3+) and YF epitope-specific T-cells (CD8+NS4B-dextramer+). Note that these two samples are very different in their clonal time traces: NS4B-specific clones show very active response dynamics, expanding and contracting in the course of primary and booster immunization, while the CD3+ T-cell sample corresponds to the most abundant clones in the repertoire, which are largely stable between timepoints. A αβTCR clonotype from 10x Genomics experiment was considered correctly paired from bulk TCRseq data using the algorithm if the correct TCR beta was present among the five most probable TCR beta sequences predicted for the TCR alpha of this clonotype. Out of the 62 NS4B-specific clonotypes sampled in the 10x Genomics experiment, we were able to computationally identify 41 correct pairs from the bulk TCRseq data. Out of 26 CD3+ T-cell clonotypes, 20 were paired correctly.
+$$
+D⁢(C_{\alpha},C_{\beta})=\sqrt{\sumi(t⁢(C_{\alpha,i})-t⁢(C_{\beta,i}))^{2}},
+$$
 
-## Paired single-cell TCR sequencing
+where $C_{\alpha,i}$ and $C_{\beta,i}$ are the concentrations of an $\alpha$ and a $\beta$ chain on the $i$-th timepoint. The transformation $t$ of clone concentration $C$ was chosen to address the overdispersion of frequencies at large concentrations (see Pogorelyy et al., 2018):
+
+$$
+t⁢(C_{i})=log_{10}⁡(\sqrt{a+b⁢C_{i}}+\sqrt{b⁢C_{i}}),
+$$
+
+where $a=4.26\times10^{-6}$ and $b=3.09\times10^{-3}$. To address possible systematic bias in expression between α and β chains in a clonotype, we introduce a log-fold shift $\lambda$ in a trajectory with a quadratic penalty (µ=0.1):
+
+$$
+D_{s}⁢(C_{\alpha},C_{\beta})=min\lambda⁡(D⁢(C_{\alpha},10^{\lambda}⁢C_{\beta})+\mu⁢\lambda^{2}).
+$$
+
+We calculated $D_{s}$ distances between each pair of α and β clonotypes out of the 1000 most abundant ones in the bulk repertoires on day 15 post-vaccination. For each α clonotype, we picked the five closest β clonotypes as candidate pairings. As a benchmark, we used two single-cell TCR sequencing (scTCRseq) experiments using the 10x Genomics platform and obtained paired repertoires for samples of bulk T-cells (CD3+) and YF epitope-specific T-cells (CD8+NS4B-dextramer+). Note that these two samples are very different in their clonal time traces: NS4B-specific clones show very active response dynamics, expanding and contracting in the course of primary and booster immunization, while the CD3+ T-cell sample corresponds to the most abundant clones in the repertoire, which are largely stable between timepoints. A αβTCR clonotype from 10x Genomics experiment was considered correctly paired from bulk TCRseq data using the algorithm if the correct TCR beta was present among the five most probable TCR beta sequences predicted for the TCR alpha of this clonotype. Out of the 62 NS4B-specific clonotypes sampled in the 10x Genomics experiment, we were able to computationally identify 41 correct pairs from the bulk TCRseq data. Out of 26 CD3+ T-cell clonotypes, 20 were paired correctly.
+
+### Paired single-cell TCR sequencing
 
 To investigate TCR chains pairing in YF-specific clonotypes, we performed single-cell immune profiling with 10x Genomics protocol. The analysis of the data with Cell Ranger 2.2.0 (10x Genomics) with default parameters resulted in 3244 cells corresponding to 986 clones. Many of these clones had multiple TRA/TRB chains and are likely to represent multimers of cells (Figure 5—figure supplement 3A). For further analysis, we chose only high-confident clones that had one TRA and one TRB chain and were present more than twice in the data. This procedure resulted in the list of ≈ 2000 cells corresponding to 164 TCR alpha/beta clones (Figure 4—source data 2).
 
-## TCR-pMHC complex modeling
+### TCR-pMHC complex modeling
 
 Models for each paired alpha-beta TCRs from 10x Genomics data were constructed using the RepBuilder server (https://sysimm.org/rep_builder/) (Schritt et al., 2019), and then docked to HLA-A02-LLWNGPMAV complex using rosettaDock2 (https://www.rosettacommons.org/software) routine (Lyskov and Gray, 2008). 152 TCRs passed the modeling step. For each TCR we obtained 1000 decoys in docking simulations. The thirty best decoys (by interface score) were used to calculate a contact map with the bio3d R package (Grant et al., 2006). It was previously shown (Pierce and Weng, 2013), that some docking decoys exhibit binding modes which are not found in natural TCRs. In the analysis, we only used decoys in which the root mean squared deviation between the centers of mass of the alpha and beta chains in the decoys, and the centers of mass of these chains in at least one published HLA-A02-TCR complex from ATLAS database (Borrman et al., 2017), were less than 4 Å. The number of contacts to the peptide was averaged over decoys that passed the threshold. Only clonotypes with ≥5 of resulting filtered decoys were used for the analysis (see Figure 4—figure supplement 4A).
 
-## Single cell gene expression analysis
+### Single cell gene expression analysis
 
 For single-cell gene expression analysis, we pre-processed the data with Cell Ranger 2.2.0 (10x Genomics). We used GRCh38-1.2.0 reference genome for the gene alignment. The resulting gene count matrix was analyzed with Seurat 3.0 package (Stuart et al., 2019; Butler et al., 2018). Cells that had fewer than 200 features detected were filtered out. We also filtered out features that were present in fewer than 3 cells and genes of TCR receptors (e.g., TRAV, TRAJ, TRBV, TRBJ), as they are the source of unwanted variation in the data (Figure 5—figure supplement 3B). Then a standard data pre-processing was performed to remove low-quality cells and cells multiplets. We filtered out cells that had more than 2700 features or more than 8% of mitochondrial genes (Figure 5—figure supplement 3C). Feature expression measurements for each cell were normalized using default log-normalization in the Seurat package. Following the manual’s suggestion, the 2000 most variable features were selected for further analysis. Prior to dimensionality reduction, data were scaled so that the mean expression was 0 and the variance equals to 1. The first 10 dimensions of PCA were used for cluster identification with the resolution parameter set to 0.4. To identify differentially expressed genes between clusters we used the MAST algorithm (Finak et al., 2015) implemented in the Seurat package. We only tested genes that were present in more than 25% of cells in any group and that had at least a 0.25 log fold difference between the two groups of cells. The resulting list of differentially expressed genes is reported in Figure 5—source data 1.
 

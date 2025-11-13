@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0165r2y73 Max Planck Institute for Heart and Lung Research Bad Nauheim Germany
-2. https://ror.org/033eqas34 Institute for Lung Health (ILH), Justus Liebig University Giessen Germany
-3. https://ror.org/033eqas34 Rudolf Buchheim Institute of Pharmacology, Justus Liebig University Giessen Germany
+1. Max Planck Institute for Heart and Lung Research Bad Nauheim Germany ([ROR:0165r2y73](https://ror.org/0165r2y73))
+2. Institute for Lung Health (ILH), Justus Liebig University Giessen Germany ([ROR:033eqas34](https://ror.org/033eqas34))
+3. Rudolf Buchheim Institute of Pharmacology, Justus Liebig University Giessen Germany ([ROR:033eqas34](https://ror.org/033eqas34))
 4. Institute of Molecular Oncology Marburg Germany
-5. https://ror.org/03dx11k66 Member of the German Center for Lung Research (DZL) Giessen Germany
-6. https://ror.org/045f0ws19 Universities of Giessen and Marburg Lung Center (UGMLC) Giessen Germany
-7. https://ror.org/04ckbty56 Member of the Cardio-Pulmonary Institute (CPI) Frankfurt Germany
-8. https://ror.org/04cvxnb49 Frankfurt Cancer Institute (FCI), Goethe University Frankfurt Frankfurt Germany
+5. Member of the German Center for Lung Research (DZL) Giessen Germany ([ROR:03dx11k66](https://ror.org/03dx11k66))
+6. Universities of Giessen and Marburg Lung Center (UGMLC) Giessen Germany ([ROR:045f0ws19](https://ror.org/045f0ws19))
+7. Member of the Cardio-Pulmonary Institute (CPI) Frankfurt Germany ([ROR:04ckbty56](https://ror.org/04ckbty56))
+8. Frankfurt Cancer Institute (FCI), Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
 
 † Corresponding author
 
@@ -143,7 +143,7 @@ In conclusion, the combined application of NGS and proteomics methods will allow
 
 ## Clinical relevance
 
-## Biomarkers
+### Biomarkers
 
 Most lung cancer patients are diagnosed at the advanced stage with metastasized tumor. Therefore, application of predictive biomarkers to identify and categorize the lung tumor as early as possible cannot only improve the diagnosis but also increase the efficiency of targeted therapies. Recent advancements made in genomic analyses and onco-immunology revealed two classes of predictive biomarkers in NSCLC; first, the presence of druggable driver oncogenes such as EGFR mutations and anaplastic lymphoma kinase (ALK) rearrangements and second, TME-based biomarkers including immune checkpoint molecules (Villalobos and Wistuba, 2017; Kerr et al., 2021). However, although the usage of these biomarkers has improved diagnosis and patient survival, the majority of NSCLC patients does not respond or develops resistance to targeted therapies.
 
@@ -153,7 +153,7 @@ In addition, driver mutation status can also be considered a promising biomarker
 
 More recently, HLA-I LOH has been shown to be a negative predictor of overall survival in non-squamous NSCLC patients treated with ICIs. Interestingly, combining TMB and HLA-I LOH improved the prediction of survival, which suggests a better subcategorization of patients that will benefit from immunotherapies (Montesion et al., 2021). Recent advances in imaging techniques such as multiplex immunofluorescence staining was instrumental in demonstrating the high potential of TME immune phenotype as a prognostic factor. Our group have shown that lower density of anti-tumor M1-like macrophages and higher proximity of cancer cells to pro-tumor M2-like macrophages are associated with poor survival in NSCLC (Zheng et al., 2020b). We also demonstrated that accumulation of Th9 and Th17 cells in lung tumors are correlated with poor survival in lung cancer patients (Salazar et al., 2020). The combination of multiplex immunofluorescence staining and genomic analysis thus may prove a robust predictive tool for the subcategorization of patients.
 
-## Combination therapy
+### Combination therapy
 
 Although the development of lung cancer therapy from cytotoxic chemotherapies to genetic- and immune checkpoint-based strategies has shifted lung cancer therapy toward precision medicine, the study of the crosstalk between genomic landscape and TME immune phenotype offers new possibilities for more advanced personalized treatments. For example, LKB1 mutation plays a key role in primary resistance to the PD-1 axis blockade in KRAS-mutant lung adenocarcinoma (Skoulidis et al., 2018). Interestingly, it has been shown that loss of LKB1 increases the sensitivity to energetic stress triggered by metformin and phenformin (Shackelford et al., 2013). Moreover, the enhanced dependence on the CPS1-associated pyrimidine pool in KRAS/LKB1 mutated cells suggested a higher sensitivity of this cell type to DNA replication stress, which can lead to DNA damage and cell death (Kim et al., 2017). Therefore, targeting the metabolic vulnerabilities of LKB1 mutated cancer cells may reverse the resistance of PD-1 blockade therapy in lung adenocarcinoma patients with KRAS/LKB1 mutation. Regarding EGFR mutation, The ADAURA study, a randomized, double-blind clinical phase 3 trial, showed that adjuvant therapy with osimertinib, a third-generation EGFR-tyrosine kinase inhibitors (TKI), significantly improved the disease-free survival among patients with stage IB to IIIA EGFR mutation–positive NSCLC (Wu et al., 2020). Although, osimertinib can induce PD-L1 protein degradation and reduce PD-L1 mRNA expression in vitro, to date, the existing clinical data regarding PD-L1 association with osimertinib in EGFR-mutant NSCLC patients is contradictory. For example, Brown et al. demonstrated that efficacy of osimertinib in the first-line treatment of EGFR-mutated metastatic NSCLC was unaffected by PD-L1 expression (Brown et al., 2020). In contrast, Hsu et al. reported the strong PD-L1 expression in advanced EGFR-mutant NSCLC tumors to be associated with a significantly poorer prognosis in patients that received osimertinib as their first-line EGFR-TKI treatment (Hsu et al., 2022). This highlights the need for further studies to increase our knowledge about the effect of osimertinib on EGFR-mutated TME before and after therapy, which will ultimately improve the subcategorization of EGFR-mutant NSCLC patients.
 

@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01y9bpm73 JF Blumenbach Institute of Zoology and Anthropology, University of Göttingen Göttingen Germany
-2. https://ror.org/05smgpd89 Department of Soil Sciences and Land Resources, Institut Pertanian Bogor Bogor Indonesia
+1. JF Blumenbach Institute of Zoology and Anthropology, University of Göttingen Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
+2. Department of Soil Sciences and Land Resources, Institut Pertanian Bogor Bogor Indonesia ([ROR:05smgpd89](https://ror.org/05smgpd89))
 3. Centre of Biodiversity and Sustainable Land Use Göttingen Germany
-4. https://ror.org/0577sef82 Russian Academy of Sciences, A.N. Severtsov Institute of Ecology and Evolution Moscow Russian Federation
+4. Russian Academy of Sciences, A.N. Severtsov Institute of Ecology and Evolution Moscow Russian Federation ([ROR:0577sef82](https://ror.org/0577sef82))
 
 † Corresponding author
 
 ## Abstract
 
-Agricultural expansion is among the main threats to biodiversity and functions of tropical ecosystems. It has been shown that conversion of rainforest into plantations erodes biodiversity, but further consequences for food-web structure and energetics of belowground communities remains little explored. We used a unique combination of stable isotope analysis and food-web energetics to analyze in a comprehensive way consequences of the conversion of rainforest into oil palm and rubber plantations on the structure of and channeling of energy through soil animal food webs in Sumatra, Indonesia. Across the animal groups studied, most of the taxa had lower litter-calibrated Δ 13 C values in plantations than in rainforests, suggesting that they switched to freshly-fixed plant carbon ('fast' energy channeling) in plantations from the detrital C pathway ('slow' energy channeling) in rainforests. These shifts led to changes in isotopic divergence, dispersion, evenness, and uniqueness. However, earthworms as major detritivores stayed unchanged in their trophic niche and monopolized the detrital pathway in plantations, resulting in similar energetic metrics across land-use systems. Functional diversity metrics of soil food webs were associated with reduced amount of litter, tree density, and species richness in plantations, providing guidelines on how to improve the complexity of the structure of and channeling of energy through soil food webs. Our results highlight the strong restructuring of soil food webs with the conversion of rainforest into plantations threatening soil functioning and ecosystem stability in the long term.
+Agricultural expansion is among the main threats to biodiversity and functions of tropical ecosystems. It has been shown that conversion of rainforest into plantations erodes biodiversity, but further consequences for food-web structure and energetics of belowground communities remains little explored. We used a unique combination of stable isotope analysis and food-web energetics to analyze in a comprehensive way consequences of the conversion of rainforest into oil palm and rubber plantations on the structure of and channeling of energy through soil animal food webs in Sumatra, Indonesia. Across the animal groups studied, most of the taxa had lower litter-calibrated Δ13C values in plantations than in rainforests, suggesting that they switched to freshly-fixed plant carbon ('fast' energy channeling) in plantations from the detrital C pathway ('slow' energy channeling) in rainforests. These shifts led to changes in isotopic divergence, dispersion, evenness, and uniqueness. However, earthworms as major detritivores stayed unchanged in their trophic niche and monopolized the detrital pathway in plantations, resulting in similar energetic metrics across land-use systems. Functional diversity metrics of soil food webs were associated with reduced amount of litter, tree density, and species richness in plantations, providing guidelines on how to improve the complexity of the structure of and channeling of energy through soil food webs. Our results highlight the strong restructuring of soil food webs with the conversion of rainforest into plantations threatening soil functioning and ecosystem stability in the long term.
 
 ## Introduction
 
@@ -37,51 +37,201 @@ Here, for the first time we use stable isotope analysis to comprehensively inves
 
 ## Results
 
-## Isotopic shifts in individual animal taxa
+### Isotopic shifts in individual animal taxa
 
 If averaged across rainforest sites, the mean Δ13C values of taxonomic groups covered a range of 3.0‰, from 3.4‰ (Coleoptera and Oribatida) to 6.4‰ (Orthoptera and Pauropoda). The respective Δ15N values covered a range of 14.2‰, from –5‰ (Pauropoda) to 9.2‰ (Diplura; Figure 1a). The Δ13C values of all groups varied across the four land-use systems, but Chilopoda, Diplura, and Annelida were typically most enriched in 13C and Coleoptera were consistently among the most depleted in 13C among all groups. Diplura, Pseudoscorpiones, Chilopoda, and Isopoda had the highest Δ15N values among all groups across the four land-use systems. The group with lowest Δ15N values was Pauropoda in rainforest and jungle rubber, and Protura in rubber and oil palm plantations. Overall, micropredators, that is, Diplura and Pseudoscorpiones, had 2–3‰ higher Δ15N values than macropredators, that is, Chilopoda, Formicidae, and Araneae (Figure 1). The share of Annelida (earthworms) in community metabolism was 15.4% in rainforest, but represented more than 75% in jungle rubber, rubber, and oil palm plantations (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig1-v2.jpg)
+
+**Figure 1.:** Error bars represent standard errors across sampling plots (n = 1–8 per land-use system). Size of the points is scaled to the total share of the taxonomic group in the community metabolism in the corresponding land-use system (metabolism was log10-transformed to show trends in rarer groups).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig1-figsupp1-v2.jpg)
+
 The Δ13C values were significantly higher in rainforest than in the other land-use systems in Coleoptera, Diplopoda, Hemiptera, Orthoptera, Pauropoda, Protura, Pseudoscorpiones, and Thysanoptera (Figure 2, Figure 2—figure supplement 1). Chilopoda, Diplura, Formicidae, Isopoda, Mesostigmata, and Symphyla were significantly more enriched in 13C in rainforest than in oil palm, but not significantly different from those in jungle rubber and rubber plantations. In general, most groups in rainforest were higher in Δ13C by 1–3‰ than in the other land-use systems, but this shift was only significant for two out of six macrodecomposer groups. Annelida, which accounted for much of the community metabolism in each of the land-use systems, had similar Δ13C values across land-use systems.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig2-v2.jpg)
+
+**Figure 2.:** Numbers show means, asterisks indicate significant differences between the mean value in the corresponding land-use system and in rainforest (Student’s t-test *p < 0.05, **p < 0.01). Color represents the direction (red – increase, blue – decrease) and magnitude (darker color indicate stronger change) of the difference between rainforest and other land-use systems.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Means sharing the same letter within each pane are not significantly different (Tukey’s HSD test following ANOVA, p > 0.05).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Means sharing the same letter within each pane are not significantly different (Tukey’s HSD test following ANOVA, p > 0.05).
 
 The Δ15N values were by 1.5–2.5‰ lower in rainforest than in the other land-use systems in Oribatida and Blattodea (except for similar Δ15N values in oil palm and rainforest for Blattodea). By contrast, Δ15N values of Hemiptera, Orthoptera, Isoptera, and Pseudoscorpiones were lower in oil palm than in rainforest, whereas in jungle rubber this was only true for Orthoptera (Figure 2, Figure 2—figure supplement 2).
 
-## One-dimensional isotopic metrics
+### One-dimensional isotopic metrics
 
 One-dimensional isotopic metrics described the overall range and average Δ13C and Δ15N values of each community. The maxima of Δ13C values were by 1–2‰ higher in forest than in jungle rubber and oil palm plantations, but minima and the overall range did not differ significantly (Figure 3). The unweighted average Δ13C values of communities were by 1–2‰ higher in rainforest than in the other land-use systems and were also higher in rubber than in oil palm plantations. However, the energetic average positions did not differ significantly due to similar Δ13C values of Annelida (dominant invertebrate group) across land-use systems (Figure 2e, Figure 1—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig3-v2.jpg)
 
-**Figure 3.:** 13C (upper panel) and Δ15N values (lower panel) of communities in rainforest (F, green), jungle rubber (J, blue), rubber (R, red), and oil palm plantations (O, yellow).Each point represents one community (n = 8 per land-use system). For the calculation of the weighted average values, species were weighted according to their contribution to the total community metabolism per plot. Means sharing the same letter within each pane are not significantly different (Tukey’s HSD test following ANOVA, p > 0.05).Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** Each point represents one community (n = 8 per land-use system). For the calculation of the weighted average values, species were weighted according to their contribution to the total community metabolism per plot. Means sharing the same letter within each pane are not significantly different (Tukey’s HSD test following ANOVA, p > 0.05).
 
 Extreme values of Δ15N were most pronounced in jungle rubber, both maximum and minimum, resulting in the largest range in Δ15N values (16.5‰) among the four land-use systems. In the other land-use systems, maxima, minima, and ranges of Δ15N values were similar. The unweighted average Δ15N values of communities were lowest in oil palm, being significantly lower than in rubber (Figure 3i). By contrast, the energetic average Δ15N values did not differ significantly.
 
-## Multidimensional isotopic metrics
+### Multidimensional isotopic metrics
 
 Among the unweighted metrics (i.e., community metrics), isotopic dispersion was significantly higher in oil palm than in each of the other land-use systems; isotopic divergence and uniqueness were significantly higher in oil palm than in jungle rubber; isotopic evenness was significantly lower in jungle rubber than in each of the other land-use systems; only isotopic richness showed no significant differences between land-use systems, but in trend the two monoculture systems had lower values than in rainforest and jungle rubber. For detailed information on the plot-level metrics values, see Appendix (Figure 4—figure supplements 1 and 2).
 
 By contrast, the weighted multidimensional metrics (i.e., energetic metrics) did not differ among land-use systems for isotopic dispersion, isotopic evenness, isotopic richness, and isotopic uniqueness (Figure 4). Only isotopic divergence was significantly lower in rainforest than in the other land-use systems, showing an opposite trend to isotopic dispersion. For detailed information on plot level metrics values see Appendix (Figure 4—figure supplements 3–6).
 
-## Environmental effects on functional diversity of soil food webs
+![Figure 4.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-v2.jpg)
+
+**Figure 4.:** Community (upper panel) and energetic metrics (lower panel) are shown. Each point represents one community (n = 8 per land-use system). Means sharing the same letter within each pane are not significantly different (Tukey’s HSD test following ANOVA, p < 0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp5-v2.jpg)
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp6-v2.jpg)
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp7-v2.jpg)
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp8-v2.jpg)
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp9-v2.jpg)
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp10-v2.jpg)
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp11-v2.jpg)
+
+![Figure 4—figure supplement 12.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp12-v2.jpg)
+
+![Figure 4—figure supplement 13.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp13-v2.jpg)
+
+![Figure 4—figure supplement 14.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp14-v2.jpg)
+
+![Figure 4—figure supplement 15.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp15-v2.jpg)
+
+![Figure 4—figure supplement 16.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp16-v2.jpg)
+
+![Figure 4—figure supplement 17.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp17-v2.jpg)
+
+![Figure 4—figure supplement 18.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp18-v2.jpg)
+
+![Figure 4—figure supplement 19](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp19-v2.jpg)
+
+![Figure 4—figure supplement 20.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp20-v2.jpg)
+
+![Figure 4—figure supplement 21.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp21-v2.jpg)
+
+![Figure 4—figure supplement 22.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp22-v2.jpg)
+
+![Figure 4—figure supplement 23.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp23-v2.jpg)
+
+![Figure 4—figure supplement 24.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp24-v2.jpg)
+
+![Figure 4—figure supplement 25.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp25-v2.jpg)
+
+![Figure 4—figure supplement 26.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp26-v2.jpg)
+
+![Figure 4—figure supplement 27.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp27-v2.jpg)
+
+![Figure 4—figure supplement 28.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp28-v2.jpg)
+
+![Figure 4—figure supplement 29.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp29-v2.jpg)
+
+![Figure 4—figure supplement 30.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp30-v2.jpg)
+
+![Figure 4—figure supplement 31.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp31-v2.jpg)
+
+![Figure 4—figure supplement 32.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp32-v2.jpg)
+
+![Figure 4—figure supplement 33.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp33-v2.jpg)
+
+![Figure 4—figure supplement 34.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp34-v2.jpg)
+
+![Figure 4—figure supplement 35.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp35-v2.jpg)
+
+![Figure 4—figure supplement 36.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp36-v2.jpg)
+
+![Figure 4—figure supplement 37.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp37-v2.jpg)
+
+![Figure 4—figure supplement 38.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp38-v2.jpg)
+
+![Figure 4—figure supplement 39.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp39-v2.jpg)
+
+![Figure 4—figure supplement 40.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp40-v2.jpg)
+
+![Figure 4—figure supplement 41.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp41-v2.jpg)
+
+![Figure 4—figure supplement 42.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp42-v2.jpg)
+
+![Figure 4—figure supplement 43.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp43-v2.jpg)
+
+![Figure 4—figure supplement 44.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp44-v2.jpg)
+
+![Figure 4—figure supplement 45.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp45-v2.jpg)
+
+![Figure 4—figure supplement 46.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp46-v2.jpg)
+
+![Figure 4—figure supplement 47.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp47-v2.jpg)
+
+![Figure 4—figure supplement 48.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp48-v2.jpg)
+
+![Figure 4—figure supplement 49.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp49-v2.jpg)
+
+![Figure 4—figure supplement 50.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp50-v2.jpg)
+
+![Figure 4—figure supplement 51.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp51-v2.jpg)
+
+![Figure 4—figure supplement 52.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp52-v2.jpg)
+
+![Figure 4—figure supplement 53.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp53-v2.jpg)
+
+![Figure 4—figure supplement 54.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp54-v2.jpg)
+
+![Figure 4—figure supplement 55.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp55-v2.jpg)
+
+![Figure 4—figure supplement 56.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp56-v2.jpg)
+
+![Figure 4—figure supplement 57.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp57-v2.jpg)
+
+![Figure 4—figure supplement 58.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp58-v2.jpg)
+
+![Figure 4—figure supplement 59.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp59-v2.jpg)
+
+![Figure 4—figure supplement 60.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp60-v2.jpg)
+
+![Figure 4—figure supplement 61.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp61-v2.jpg)
+
+![Figure 4—figure supplement 62.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp62-v2.jpg)
+
+![Figure 4—figure supplement 63.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp63-v2.jpg)
+
+![Figure 4—figure supplement 64.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig4-figsupp64-v2.jpg)
+
+### Environmental effects on functional diversity of soil food webs
 
 As indicated by multivariate analysis, community metrics differed strongly between the four land-use systems (anosim R = 0.404, p < 0.001), whereas differences for the energetic metrics were less pronounced (anosim R = 0.138, p = 0.014). Among all tested environmental factors, soil pH, tree species richness, litter amount, and understory density had the strongest correlations with both community metrics (p = 0.003, p = 0.037, p < 0.001, p < 0.001, respectively) and energetic metrics (p = 0.004, p = 0.002, p = 0.003, p = 0.002, respectively). These variables were subsequently selected for the structural equation model (SEM) analysis (see Materials and methods). SEM indicated that the changes in the community metrics (PC1unweighted) were induced directly by tree properties and litter amount (tree density: p < 0.05, effect size = 0.72; tree species richness: p < 0.001, effect size = –0.83; litter amount: p < 0.001, effect size = 0.71), while changes in the energetic metrics (PC1weighted) were indirectly driven by soil pH via increased metabolism of earthworms (p < 0.05, effect size = –0.36; Figure 5; Figure 6).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig5-v2.jpg)
 
-**Figure 5.:** Community and energetic food-web metrics were related to environmental factors using multivariate analysis of variance (MANOVA); the thickness of connection lines shows statistical significance, dashed line for p > 0.05. Pairwise Spearman’s correlations among environmental factors are shown with a tile chart (blue – negative, red – positive). The vegetation parameters included tree species richness (TreeRich), tree density (TreeDen), understory species richness (UnderRich), understory density (UnderDen), and average understory height (UnderHeight). Parameters of litter and soil include soil pH, litter amount, soil carbon concentration (Csoil), carbon-to-nitrogen ratio of litter (CtoNlitter), soil microbial biomass C (Soil Cmic), and soil humidity (Water soil) (Krashevska et al., 2015; Rembold et al., 2017a).Figure 5—source data 1.
+**Figure 5.:** Community and energetic food-web metrics were related to environmental factors using multivariate analysis of variance (MANOVA); the thickness of connection lines shows statistical significance, dashed line for p > 0.05. Pairwise Spearman’s correlations among environmental factors are shown with a tile chart (blue – negative, red – positive). The vegetation parameters included tree species richness (TreeRich), tree density (TreeDen), understory species richness (UnderRich), understory density (UnderDen), and average understory height (UnderHeight). Parameters of litter and soil include soil pH, litter amount, soil carbon concentration (Csoil), carbon-to-nitrogen ratio of litter (CtoNlitter), soil microbial biomass C (Soil Cmic), and soil humidity (Water soil) (Krashevska et al., 2015; Rembold et al., 2017a).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75428/elife-75428-fig6-v2.jpg)
 
-**Figure 6.:** Numbers adjacent to arrows are standardized path coefficients that show effect sizes and directions (blue – positive, red – negative) of the relationship, arrow width is proportional to the strength of path coefficients. Gray arrows represent paths that were not significant; *p < 0.05, **p < 0.01, and ***p < 0.001. Numbers above every response variable in the model denotes the proportion of variance explained. For abbreviations, see Figure 5.Figure 6—source data 1.
+**Figure 6.:** Numbers adjacent to arrows are standardized path coefficients that show effect sizes and directions (blue – positive, red – negative) of the relationship, arrow width is proportional to the strength of path coefficients. Gray arrows represent paths that were not significant; *p < 0.05, **p < 0.01, and ***p < 0.001. Numbers above every response variable in the model denotes the proportion of variance explained. For abbreviations, see Figure 5.
 
 ## Discussion
 
 We used stable isotope data of 23 high-rank animal taxa to comprehensively assess changes in functional diversity of soil food webs under tropical land-use change. We found shifts in basal resource use for most taxonomic groups in plantations compared to rainforest, and responses of food-web diversity metrics to land-use change were more pronounced for community than for energetic metrics. In agreement to our first hypothesis, 13C values of animal taxa and communities were more enriched in rainforest than in plantations, but this shift vanished if the average Δ13C values were weighted by metabolism. Soil animals in jungle rubber had the largest range of Δ15N values among all land-use systems, which suggests the longest food chain in this system. Refuting our second hypothesis, when considering all taxonomic groups being equally important (‘community perspective’), soil food webs in oil palm had a significantly higher community dispersion than in the other land-use systems, and in trend also had a higher community divergence and uniqueness (i.e., a lower redundancy). By contrast, most energetic isotopic metrics (‘energetic perspective’) varied less between the four land-use systems. Conform to our third hypothesis, community isotopic metrics were more sensitive to changes in land use than energetic isotopic metrics, suggesting soil food webs are more sensitive to land-use change from a community than from an energetic perspective. Further, community metrics of soil food webs were influenced directly by land use (tree properties and litter amount), whereas energetic metrics were influenced indirectly via pH-induced changes in earthworm abundance.
 
-## The structure of tropical soil food webs
+### The structure of tropical soil food webs
 
 Our study is among the first comprehensive assessment of tropical soil food webs based on stable isotope analysis. Collembola, Symphyla, and Isopoda showed a much higher 15N enrichment than, for example, Oribatida, but all three groups occupy similar trophic positions in temperate forests and predominantly function as decomposers (Potapov et al., 2019c). This difference may be caused by low litter quality in tropical forests forcing decomposers to switch to more microbial or even animal diet (Illig et al., 2005). Protura in temperate forests are enriched in 15N and feed on ectomycorrhizal fungi (Bluhm et al., 2019), whereas in the studied tropical forests, Protura had the lowest Δ15N values among all groups, suggesting that they feed on saprotrophic rather than mycorrhizal fungi. The low Δ15N and high Δ13C values of Pauropoda, reported for the first time for this group, indicate that they function as decomposers by feeding on saprotrophic microorganisms (Tiunov et al., 2015), confirming earlier suggestions (Starling, 1944). Low Δ15N values in Protura, Diplopoda, Isoptera, Psocoptera, and Blattodea may be associated with feeding on algae (Potapov et al., 2018), shown to be important food for mesofauna in tropical soil food webs (Susanti et al., 2019; Semenina et al., 2020). Unexpectedly, micropredators (e.g., Diplura and Pseudoscorpiones) had higher trophic positions (Δ15N values) than macropredators (e.g., Araneae and Formicidae) across all land-use systems, and Diplura had the highest Δ15N values among all taxa studied. Diplura were represented mostly by predatory Japygidae, which may hunt springtails, mites, and other small invertebrates (Sendra et al., 2021). The higher trophic position of small-sized predators suggests that they form part of a different energy channel than macropredators. In fact, the micro-food web in soil has been shown to be based mainly on microbial resources channeled to higher trophic levels by microarthropod predators, whereas the macro-food web is based more on litter and detritus consumed by macrofauna taxa with the energy channeled to higher trophic levels by macroarthropod predators (Potapov et al., 2021a). This implies more trophic transactions in the micro-food web (Pollierer et al., 2009; Steffan et al., 2015) explaining the higher trophic position of micro- than macroarthropod predators. Among other groups with a wide food spectrum, Diptera had higher isotopic values (both Δ15N and Δ13C) than Coleoptera, indicating that flies are more closely linked to detrital and microbial food chains in tropical soil food webs than beetles. Isopoda had strikingly high Δ15N values for macrodecomposers, possibly due to intense coprophagy (Potapov et al., 2022). Overall, despite general similarities, we also found consistent differences between tropical and temperate soil food webs. Further studies comparing differences in soil food-web structure and associated soil functions across temperate and tropical ecosystems are needed to prove the generality of these differences and their consequences for biodiversity – ecosystem functioning relationships.
 
-## Shifts in trophic positions of soil invertebrates and energy channels in soil food webs
+### Shifts in trophic positions of soil invertebrates and energy channels in soil food webs
 
 In agreement with our first hypothesis, Δ13C values of most of the studied soil animal taxa were higher in rainforest than in plantations. The 13C concentration in dead plant material is increasing during decomposition compared to fresh leaf litter (Ågren et al., 1996; Boström et al., 2007; Potapov et al., 2019c), and high Δ13C values in soil fauna in forest likely indicate feeding on saprotrophic fungi and bacteria that assimilate predominantly labile 13C-enriched plant compounds (Pollierer et al., 2009; Potapov et al., 2013; Hyodo, 2015). Vascular and non-vascular plants have generally lower Δ13C values than saprotrophic microorganisms and animals (Hyodo et al., 2010; Potapov et al., 2019c), therefore, the high Δ13C values in soil invertebrates in rainforest point to a more pronounced detritus-based ‘brown’ food web relying heavily on saprotrophic fungi and bacteria based on litter material. Among the plantations, the unweighted average Δ13C values were lowest in oil palm suggesting a shift toward a more plant-based ‘green’ food web relying more heavily on the consumption of living plant tissue (Fujii et al., 2021), which has been previously shown for Chilopoda, Oribatida, Collembola, and Pseudoscorpiones at the same study sites (Klarner et al., 2017; Krause et al., 2019; Liebke et al., 2021; Susanti et al., 2021). Results of the study of Susanti et al., 2019, using fatty acids as trophic biomarkers at our study sites further support the conclusion of a more pronounced plant- and reduced detritus-based energy channel in soil food webs of plantations compared to rainforest. Compared to rainforest the herb layer is much more developed in plantations due to more open canopy and coverage by weeds (Rembold et al., 2017a), presumably providing high-quality resources for plant and litter feeding soil animals. By contrast, litter in rainforest is high in lignin and therefore of low food quality (Krashevska et al., 2018), increasing the use of saprotrophic microorganisms rather than litter by detritivores (Illig et al., 2005).
 
@@ -93,7 +243,7 @@ Unlike Δ13C, changes in Δ15N with changes in land use were less consistent acr
 
 The range of Δ15N values in soil communities reflects the length of food chains (Cabana and Rasmussen, 1994; Scheu and Falca, 2000), and was the largest in jungle rubber. This was caused by the very low Δ15N values of Pauropoda (–5.1‰) and Orthoptera (–2.1‰) and high Δ15N values of Diplura (10.0‰). Jungle rubber is a system that is highly heterogeneous in management practices and plant richness (Gouyon et al., 1993; Rembold et al., 2017b), with species richness in some arthropod predators even exceeding that in rainforest at our study sites (Junggebauer et al., 2021). Anthropogenic disturbances in jungle rubber are moderate compared to monoculture plantation systems (Barnes et al., 2014) and food chains have been found to be longest at intermediate levels of disturbance (Menge and Sutherland, 1987; Polis and Winemiller, 2018; Post, 2002b), which may explain the largest range of Δ15N values in jungle rubber. As a note of caution, however, the δ15N values of primary producers (vascular plants, algae, and lichens) may vary among our study systems, which may have affected the Δ15N values of consumers, but unlikely our overall conclusions.
 
-## Changes in functional diversity of soil food webs from community and energetic perspectives
+### Changes in functional diversity of soil food webs from community and energetic perspectives
 
 Refuting our second hypothesis, neither isotopic diversity nor isotopic redundancy were higher in rainforest than in plantations. However, isotopic richness was slightly higher in the two more natural systems (i.e., rainforest and jungle rubber) than in rubber and oil palm plantations. Oil palm showed significantly higher community dispersion values than the other land-use systems and in trend had the highest community divergence (unweighted values) reflecting the proportion of groups with the most extreme trophic (isotopic) niches within the community (Cucherousset and Villéger, 2015; Mason et al., 2005; Villéger et al., 2008). At least in part this likely was due to feeding on non-vascular plants, such as algae and lichens, characterized by very different stable isotope values than C3 plants, that is, the dominant vegetation at our study sites (Potapov et al., 2019c). As discussed above, the more open canopy in plantations favors algae and lichens (Drescher et al., 2016; Schulz et al., 2019), together with the monopolization of detrital channel by earthworms (representing another ‘extreme’ isotopic niche), the use of non-vascular plants explains the high dispersion and divergence of energy channeling in oil palm plantations.
 
@@ -107,17 +257,17 @@ In conclusion, our study is among the first comprehensive assessment of tropical
 
 ## Materials and methods
 
-## Sampling sites
+### Sampling sites
 
 The study was conducted in the framework of the collaborative research project CRC990/EFForTS investigating ecological and socio‐economic changes associated with the transformation of lowland rainforest into agricultural systems (Drescher et al., 2016). Four land-use systems, rainforest, jungle rubber, rubber plantations, and oil palm plantations were investigated in two regions, that is, Harapan and Bukit Duabelas (Drescher et al., 2016). Jungle rubber sites were established by planting rubber trees (Hevea brasiliensis) into selectively logged rainforest and contain rainforest tree species. Jungle rubber sites represent low intensive land-use systems, lacking fertilizer input as well as herbicide application; the age of rubber trees varied between 15 and 40 years (Kotowska et al., 2015). Rubber and oil palm (Elaeis guineensis) monocultures represent high land-use intensity plantation systems managed by the addition of fertilizers as well as herbicides (Drescher et al., 2016). Each land-use system was replicated four times in each landscape, resulting in a total of 32 sites; for more details, see Drescher et al., 2016.
 
-## Sampling, extraction, and classification of soil fauna
+### Sampling, extraction, and classification of soil fauna
 
 Soil animals were sampled at each of 32 study sites during October and November 2013. Soil samples measuring 16 cm × 16 cm and including the litter layer and 0–5 cm of the mineral soil were taken in three 5 m × 5 m subplots within each of 50 m × 50 m plots established at each study site, resulting in a total of 96 samples. The samples were transported to the laboratory and animals were extracted by heat (Kempson et al., 1963) until the substrate was completely dry (6–8 days). Until further analysis, species were stored in 70% ethanol. For calibration of the animal stable isotope values, we used mixed litter samples that were taken from each site and analyzed in a previous study (Klarner et al., 2017).
 
 Animals were classified into 23 high-rank taxonomic groups (Oribatida, Collembola, Symphyla, Protura, Annelida, Blattodea, Diplopoda, Isopoda, Isoptera, Psocoptera, Psocoptera, Lepidoptera, Orthoptera, Thysanoptera, Diptera, Coleoptera, Pseudoscorpiones, Mesostigmata, Diplura, Formicidae, Chilopoda, Araneae, Pauropoda). For stable isotope analysis, we adopted a group-level analysis representing the stable isotope niche at the level of taxonomic groups. Although this approach may miss the variability in stable isotope niches of species within high-rank taxonomic groups, it has the advantage that it integrates across species allowing generalizations on the trophic structure and energy flux of whole communities. The approach has been recently advocated for analyzing the channeling of energy through food webs using lipid profiling (Kühn et al., 2018), but has not been adopted yet in stable isotope analysis although it has been shown that at least in soil high-rank animal taxa typically represent the trophic niches of species in most taxa (Potapov et al., 2019b). To ensure that our samples reliably represent the trophic niche of the studied taxa, we included (if ever possible) 15 individuals per taxon per study site. Doing that we considered the turnover of species among sites and focused on dominant species representing the majority of biomass, which we considered most important for our approach. We further classified taxonomic groups into five major functional groups according to their trophic guild and body size class (Potapov et al., 2019b; Potapov et al., 2021a): herbivores including, for example, Hemiptera and Orthoptera, microdecomposers including, for example, Oribatida and Collembola, macrodecomposers including, for example, Annelida and Diplopoda, micropredators including, for example, Diplura and Mesotigmata, macropredators including, for example, Araneae and Chilopoda, and groups with mixed feeding habits including, for example, Diptera and Coleoptera.
 
-## Stable isotope analysis
+### Stable isotope analysis
 
 To cover the entire community, for each sampling site we analyzed all taxa for which we were able to collect enough biomass for stable isotope analysis and which were represented by more than two individuals. We analyzed a minimum of 3 and a maximum of 15 individuals for each taxonomic group for each site as a single mixed sample to cover the species- and individual-level isotopic variation. We mixed individuals from different subplots whenever possible to cover spatial variation in stable isotope values. Animals from the litter and soil layer were analyzed separately, but were merged for data analysis since stable isotope values did not differ significantly between layers. Animal samples were dried at 60°C for 24 hr before stable isotope analysis, weighed and wrapped into tin capsules; sample weight varied between 0.01 and 1.00 mg. For small-sized animal groups we used bulk individuals, for large-sized animal groups we used body parts dominated by muscle tissue (e.g., legs) from different individuals and pooled them (Tsurikov et al., 2015). In total, 626 samples of 23 taxonomic groups were analyzed across 32 sites. For Collembola, Oribatida, and Chilopoda, we additionally used stable isotope data collected at species level (Klarner et al., 2017; Krause et al., 2019; Susanti et al., 2021) to calculate a single average value for each group at each site, which were collected at the same sampling campaign. The number of analyzed taxonomic groups varied between 6 and 17 per site (i.e., per one soil food web) and was on average 12.3.
 
@@ -125,7 +275,7 @@ Animal samples were analyzed using a coupled system of an elemental analyzer (NA
 
 Environmental parameters of the study sites were used as given in Potapov et al., 2020, Krashevska et al., 2015, and Rembold et al., 2017a, which included tree species richness, tree density, understory species richness, understory density, and average understory height, soil pH, litter amount, soil carbon concentration, carbon-to-nitrogen ratio of litter, soil microbial biomass C, and soil humidity.
 
-## Statistical analysis
+### Statistical analysis
 
 The stable isotope compositions of animals were calibrated to that of the local leaf litter. Calibrated δ13C and δ15N values were calculated as the difference between the plot-specific litter δ13C and δ15N values and the δ13C and δ15N values of each group, and given as Δ13C and Δ15N values, respectively. Statistical analyses were done in R v 4.0 (R Development Core Team, 2020) with R studio interface (RStudio Team, 2020).
 

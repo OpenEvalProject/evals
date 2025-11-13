@@ -17,10 +17,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01z7r7q48 Translational Research Program in Pediatric Orthopaedics, Division of Orthopaedic Surgery, Children’s Hospital of Philadelphia Philadelphia United States
-2. https://ror.org/04wjghj95 Department of Orthopaedics, The First Hospital of China Medical University Shenyang China
-3. https://ror.org/00b30xv10 Department of Orthopaedic Surgery, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-4. https://ror.org/00jmfr291 Department of Orthopaedic Surgery, Michigan Medicine, University of Michigan Ann Arbor United States
+1. Translational Research Program in Pediatric Orthopaedics, Division of Orthopaedic Surgery, Children’s Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+2. Department of Orthopaedics, The First Hospital of China Medical University Shenyang China ([ROR:04wjghj95](https://ror.org/04wjghj95))
+3. Department of Orthopaedic Surgery, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. Department of Orthopaedic Surgery, Michigan Medicine, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -38,11 +38,19 @@ One such field of related biomedical research is heterotopic ossification (HO). 
 
 ## Results
 
-## Amounts and distribution of Activin A increase during fracture repair
+### Amounts and distribution of Activin A increase during fracture repair
 
 To evaluate the participation of Activin A in fracture repair, we first asked whether its presence and distribution were altered during healing, using a standard endochondral tibia fracture model with 2-month-old WT mice. Immunofluorescent staining of intact control tibiae (Figure 1A, Intact) showed that Activin A was detectable in only a few cells within the cambium layer of periosteum (Figure 1Aa) and in some bone marrow cells (Figure 1Ab). Marrow cells normally expressing the Activin A-encoding gene Inhba included mesenchymal progenitors and inflammatory cells such as granulocytes, based on our previous scRNA-seq analysis (Figure 1—figure supplement 1; Zhong et al., 2020). Five days after fracture, the number and distribution of Activin A-positive cells had dramatically increased (Figure 1A, Fracture), and positive cells now included numerous fibroblastic-shaped cells within periosteum (Figure 1Ac) and round-shaped early chondrocytes within the developing soft callus (Figure 1Ad) co-staining with Sox9 (Figure 1B). Immunostaining of surgically retrieval bone specimens from patients showed that Activin A was scanty in connective tissues of intact iliac periosteum (Figure 1C, Intact) but abundant at fracture site of long bones (Figure 1C, Fracture). Real-Time Quantitative Reverse Transcription PCR Further analysis of these patient specimens showed a nearly threefold increase in INHBA mRNA at the fracture site (Figure 1D). Clearly, Activin A-producing cells become abundant during fracture repair.
 
-## Fracture callus development involves dynamic cell population shifts
+![Figure 1.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig1-v2.jpg)
+
+**Figure 1.:** (A) Whole mount immunofluorescence images of endogenous Activin A distribution in intact and day 5 fractured mouse tibia. The boxed areas in the left panel are shown as enlarged images at the right. M: muscle, CB: cortical bone; BM: bone marrow. Scale bar, 50 μm. (B) Immunohistochemistry (IHC) of fracture sections indicates that many Sox9+ chondrocytes within fracture callus produce Activin A. CH: chondrocytes; WB: woven bone. Scale bar, 50 μm. (C) IHC of human specimens (right panels) shows that Activin A is scanty in intact bone tissue but becomes much more prominent at the fracture site. Left panel: H&E staining. Scale bar, 200 μm. (D) Quantative RT-PCR analysis of INHBA mRNA in intact and fractured human periosteal tissue samples. n = 9–12 specimens/group. Data are expressed as means ± standard deviation (SD) and analyzed by unpaired two-tailed t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Violin plot of Inhba expression in bone marrow cells from 1-month-old mice based on our previous published single-cell RNA-sequencing (scRNA-seq) data. EMP: early mesenchymal progenitors; LMP: late mesenchymal progenitors; LCP: lineage committed progenitors; OB: osteoblasts; Ocy: osteocytes; MALP: marrow adipose lineage precursor cells; CH: chondrocytes; EC: endothelial cells; HSPC: haemopoietic stem and progenitor cells; NK: natural killer cells; RBC: red blood cells.
+
+### Fracture callus development involves dynamic cell population shifts
 
 Before testing the possible roles of Activin A in fracture healing directly, we carried out a comprehensive and unbiased analysis of cell populations present during fracture repair using scRNA-seq. Here, we selected Col2a1-Cre;Gt(Rosa)26 tdTomato (Col2/Td) reporter mice because as our previous study indicated, Td+ cells in these mice are major contributors to fracture callus (Wang et al., 2019). To establish the effectiveness of this transgenic approach to capture the overall cell populations involved in fracture repair, tibiae from 2-month-old Col2/Td mice were harvested at 5, 10, 15, and 30 days after fracture and processed for spatiotemporal delineation of Td+ cells (Figure 2—figure supplement 1). In intact tibiae, the cortical bone surface was covered by a thin layer of periosteum mainly consisting of Td+ cells (Figure 2—figure supplement 1Aa, Ba). At day 5 post fracture, Td+ cells had greatly expanded in number to form the thickened periosteum (Figure 2—figure supplement 1Ab, Bb). By day 10 when cartilage reached its peak soft callus development as shown by Safranin O staining (Figure 2—figure supplement 1Bc), all chondrocytes as well as neighboring fibrotic cells were Td+ (Figure 2—figure supplement 1Ac). By day 15 when most cartilage was undergoing endochondral ossification, Td+ cells now constituted the majority of osteoblasts and osteocytes in the callus (Figure 2—figure supplement 1Ad, Bd). In the remodeling bone present by day 30, the new periosteum at the edge of callus mostly consisted of Td+ cells (Figure 2—figure supplement 1Ae, Be). Colony-forming unit fibroblast (CFU-F) assays of periosteal cells isolated from intact bones revealed that Td+ cells, but not Td− cells, were able to form cell colonies (Figure 2—figure supplement 1C, D). Together, the data affirm the fact that the Col2/Td approach captures the overall mesenchymal cell populations taking part in fracture healing.
 
@@ -50,49 +58,107 @@ Having established the effectiveness of the approach, we proceeded to isolate pe
 
 The presence of synovial fibroblasts and tenocytes in our datasets, exclusively existing in days 0 and 5 samples, might be due to insufficient agarose coverage of the two ends of tibia during the cell enzymatic digestion step of intact and fractured bones. Day 10 samples did not have these two clusters because only callus was dissected out for scRNA-seq analysis (Supplementary file 1a). Given the focus of our study on mesenchymal lineage cells in callus, we digitally removed those clusters as well as other non-mesenchymal cells. As a result, the recalculated data identified six distinct mesenchymal cell clusters (Figure 2A, B; Supplementary file 1b). Based on lineage-specific traits, clusters 3, 4, 5, and 6 represented early osteoblasts (EOB), osteoblasts (OB), chondrocytes (CH), and hypertrophic chondrocytes (HCH), respectively (Figure 2C). Cells in cluster 1 were characterized by several typical stem cell markers such as Cd34, Ly6a (Sca1), and Thy1 (Cd90), suggesting that they represented mesenchymal progenitor cells (MPCs). Cells constituting the expansive cluster 2 expressed the above stem cell markers at a very low level and expressed lineage-specific gene markers such as those of OBs and CHs at a low level as well. When the merged datasets (Figure 2A) were separated by time point, it became clear that cluster 2 cells markedly increased in number early from days 0 to 5, whereas chondrocytes (cluster 5), hypertrophic chondrocytes (cluster 6), and osteoblasts (clusters 3 and 4) expanded by day 10 (Figure 2B and Figure 2—figure supplement 3). Interestingly, computational cell cycle analysis revealed that cluster 2 contained highly proliferative cells, particularly at day 5 (Figure 2D, E). Several proliferation marker genes, such as Ccnd3, Cdk4, Cdc20, Cdca3, Mcm4, and Cepna, were highly expressed in cluster 2 at the day 5 time point (Figure 2—figure supplement 4). Thus, we termed – and refer to – cluster 2 cells as proliferative progenitor cells (PPCs).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig2-v2.jpg)
+
+**Figure 2.:** (A) The uniform manifold approximation and projection (UMAP) plot of 13,040 Td+ mesenchymal lineage cells isolated from tibial periosteum of 2-month-old Col2/Td mice. Datasets from cells isolated from intact periosteum (day 0) and fracture site on days 5 and 10 post-surgery were merged and combined into a single plot. (B) UMAP plots of those cells shown at individual time point. (C) Violin plots of cluster-specific makers of mesenchymal lineage cells. MPC: mesenchymal progenitor cell; PPC: proliferative progenitor cell; CH: chondrocyte; HCH: hypertrophic chondrocyte; EOB: early osteoblast; OB: osteoblast. (D) Cell cycle phase of periosteal mesenchymal lineage cells at days 0, 5, and 10. (E) The percentage of proliferative cells (S/G2/M phase) in each cell cluster at days 0, 5, and 10 was computationally quantified. (F) Slingshot trajectory plots of periosteum mesenchymal lineage cells at days 0, 5, and 10.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fluorescence images of intact (day 0) and fractured tibiae from 2-month-old Col2/Td mice. Fractured samples were collected at days 5, 10, 15, and 30 post injury. Boxed areas in the top panel are shown at a higher magnification in the lower panel. Scale bar, 1 mm. (B) Safranin-O staining of intact and fractured tibiae at each time point. Boxed areas in the top panel are shown at a higher magnification in the lower panel. Scale bar, 1 mm. (C) Colony-forming unit fibroblast (CFU-F) assay of unsorted (total) and sorted periosteal cells. Periosteal cells isolated from intact Col2/Td tibiae were sorted into Td+ and Td− cells. 1 × 106 total cells, 3 × 104 Td+ cells, and 1 × 106 Td− cells were seeded per flask to determine CFU-F number after 7 days of culture. n = 4 mice/group. Data are expressed as means ± SD. (D) Only Td+ cells form CFU-F colonies. Scale bar, 200 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Flow assay of enzymatically released periosteal cells from 2-month-old Col2/Td mouse tibiae with or without fracture. Periosteal cells from intact tibiae (day 0) and injured tibiae at days 5 and 10 post fracture were collected to measure the percentage of Td+ cells. n = 5–6 mice/time point. (B) Violin plots show the number of genes and unique molecular identifiers (UMIs) per cell in days 0, 5, and 10 scRNA-seq datasets. Red box indicates cells within the selection criteria of quality controls. (C) The uniform manifold approximation and projection (UMAP) plot of 25,429 periosteal cells in the merged scRNA-seq dataset. Cell numbers in each cell type cluster are listed in parenthesis. (D) Violin plots of cluster-specific makers of hematopoietic cells (macrophages and granulocytes), osteoclasts, red blood cells, Schwann cells, muscle cells, endothelial cells (ECs), smooth muscle cells (SMCs), tenocytes, and synovial fibroblasts. (E) The expression pattern of Tomato in the UMAP plot. (F) Hierarchy clustering and heatmap of all cell clusters. Color bar on the top indicates scaled gene expression level.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Cell numbers of total enzymatically dissociated periosteal cells from intact (day 0) and injured (days 5 and 10 post fracture) 2-month-old tibiae were. n = 3 mice/time point. Data are expressed as means ± SD and analyzed by one-way ANOVA with Tukey post-hoc test. (B) Based on this information, the number of cells in each cell cluster at different time points was estimated. MPC: mesenchymal progenitor cells; PPC: proliferative progenitor cells; CH: chondrocytes; HCH: hypertrophic chondrocytes; EOB: early osteoblasts; OB: osteoblasts.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig2-figsupp4-v2.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Previously reported periosteal mesenchymal progenitor markers. (B) Expression pattern of Cd34 shown in UMAP plot.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** MPC: mesenchymal progenitor cells; PPC: proliferative progenitor cells; CH: chondrocytes; HCH: hypertrophic chondrocytes; EOB: early osteoblasts; OB: osteoblasts.
+
 Examination of previously reported markers of periosteal mesenchymal progenitors in our dataset revealed that they were either ubiquitously or specifically expressed amongst the cell populations (Figure 2—figure supplement 5A). Ly6a and Thy1 (Matthews et al., 2021) were largely restricted to MPCs, and Acta2 (Grcevic et al., 2012) demarcated the PPC population. Genes such as Itgb1 (Cd29) (Duchamp de Lageneste et al., 2018) were expressed at high level in all clusters, whereas Gli1 and Lepr (Shi et al., 2017; Shu et al., 2021) were expressed at very low levels. Itgav (Cd51), Eng (Cd105), Ctsk, Postn, Prxx1, Pdgfra, and Pdgfrb (Duchamp de Lageneste et al., 2018; Böhm et al., 2019; Chan et al., 2015; Debnath et al., 2018; Esposito et al., 2020; Julien et al., 2022; Marecic et al., 2015) were prominent in progenitors (MPCs and PPCs) but low in mature cells. Cd200 (Chan et al., 2015; Marecic et al., 2015) was expressed at low levels in MPCs but its expression was higher in more mature cells. Col2a1 (Wang et al., 2019) and Sox9 (He et al., 2017) were prominent in chondrocytes compared to other populations, consistent with their being well-established cartilage markers. We did not detect the expression of a previously proposed mesenchymal cell marker Mx1 (Ortinau et al., 2019) in our datasets.
 
 RNA velocity delineates cellular differentiation paths and transient phenotypic states from scRNA-seq data (Bergen et al., 2020). Applying this approach to our merged datasets above (Figure 2A), we found that directionality of cell differentiation and diversification started from cluster 1 (MPCs), advanced and transitioned through cluster 2 (PPCs) and ended in cluster 4 (OBs) and cluster 6 (HCH) (Figure 2—figure supplement 6). Likewise, at every time point, pseudotemporal cell trajectory analysis placed MPC cells (cluster 1) at one end of the developmental trajectory, PPC cells (cluster 2) in a central position, and OBs (cluster 4) and CHs (clusters 5 and 6) at the other two ends (Figure 2F).
 
 Together, the data strongly indicate that MPCs serve as stem/progenitors and give rise to PPCs which in turn diverge into chondrocytes and osteoblasts, contributing to soft and hard callus formation.
 
-## PPCs strongly express Inhba and gain myofibroblast-like features after fracture
+### PPCs strongly express Inhba and gain myofibroblast-like features after fracture
 
 Given the apparent developmental centrality of the PPC population, we sought to characterize it further by defining their differentially expressed genes (DEGs) compared to those in the other cell clusters, using GO term analyses (Figure 3A). In the merged dataset, the most up-regulated genes in PPCs indicated their myofibroblast-like phenotype. Those genes were closely related to processes and pathways known to be regulated by myofibroblasts such as wound healing, focal adhesion, extracellular matrix organization, and contractile actin filament (Hsia et al., 2016), and included known myofibroblast marker genes such as Acta2, Tagln, Tagln2, Myl9, Actg1, Tpm2, and Fbn2 (Figure 3B and Figure 3—figure supplement 1A; Hsia et al., 2016; López-Antona et al., 2022). The expression of these genes was highly up-regulated at day 5 and then reduced at day 10 (Figure 3B), suggesting that fracture transiently promotes PPCs into a myofibroblast-like phenotype. Conversely, the least expressed genes were those related to bone mineralization and chondrocyte differentiation, confirming that the PPCs did not possess a terminally differentiated phenotype (Figure 3A, B). Particularly relevant to the present study was the finding that compared to MPCs, PPCs highly expressed Inhba after fracture (Figure 3C and Figure 3—figure supplement 1B). Note that chondrocytes also highly expressed Inhba, consistent with the immunostaining results shown in Figure 1. However, their number was much lower than PPCs in early callus (Figure 2—figure supplement 3B), suggesting that PPCs are likely to be the main source of Activin A in early fracture healing. Activin A binds to type II receptors (ActRIIA or ActRIIB) to recruit and phosphorylate type I receptors (ALK4 or ALK7) for initiating its intracellular signaling (Pangas and Woodruff, 2000). uniform manifold approximation and projection (UMAP) plots suggested that genes encoding these receptors (Acvr2a, Acvr2b, Acvr1b, and Acvr1c, respectively) were expressed in all mesenchymal progenitor populations and Acvr2a expression was enriched in MPCs (Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig3-v2.jpg)
+
+**Figure 3.:** (A) GO term analysis of genes up- or down-regulated in the PPCs (cluster 2) compared to other periosteal mesenchymal cell clusters. (B) Violin plots of myofibroblastic cell marker gene expression. (C) Violin plots of Inhba gene expression. (D) Flow analysis of EdU+ cells in mesenchymal progenitor cells (MPCs; Lin−Cd34+) and PPCs (Lin−Cd34−) from the periosteum of intact and fractured (day 5) mouse bones. n = 4 mice/group. (E) qRT-PCR analyses of stem cell markers (top), myofibroblast markers, and Inhba (bottom) in MPCs and PPCs at day 5 post fracture. n = 4 mice/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test. (F) Whole mount immunofluorescence images of αSMA and Activin A distribution in mouse callus at day 5 post fracture. Boxed areas in the left panel are shown enlarged on the right. Arrows point to representative Td+ cells that are co-stained with both αSMA and Activin A antibodies. CB: cortical bone. Scale bar, 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Myofibroblast-like marker genes were examined for expression in cell clusters during the fracture healing process on day 0 (prior to fracture) and days 5 and 10 after fracture. (B) Inhba gene expression patterns are shown for comparison. (C) Expression pattern of Activin A receptors in mesenchymal lineage cells.
+
 To validate the above findings, we focused on the interval between days 0 and 5 when the PPCs increased the most in number (Figure 2B). Based on scRNA-seq data (Figure 2—figure supplement 5B), we sorted Cd45−Cd31−Ter119−Cd34+ (Lin−/Cd34+) cells and Cd45−Cd31−Ter119−Cd34− (Lin−/Cd34−) cells to represent MPCs and PPCs, respectively. Note that Lin−Cd34− cells also include more mature cells, such as osteoblasts and chondrocytes, but their number is much lower than PPCs at day 5 (Figure 2—figure supplement 3B). EdU incorporation indicated that MPCs were less proliferative than PPCs at both days 0 and 5, though bone fracture did enhance proliferation in both populations (Figure 3D). In addition, quantitative RT-PCR (qRT-PCR) analysis of cells sorted from day 5 callus verified that Cd34+ cells highly expressed MPC markers including Cd34, Ly6a, Cd248, and Clec3b, whereas Cd34− cells more strongly expressed myofibroblast markers (Acta2 and Tagln) as well as Inhba (Figure 3E). Lastly, immunohistochemistry (IHC) on day 5 fractures from Col2/Td mice revealed that many Td+ cells were positive for both αSMA and Activin A (Figure 3F). Those double positive cells included not only progenitors (Figure 3Fa) but also early chondrocytes (Figure 3Fb). Together, the data above provide further evidence for the occurrence of MPCs and PPCs within the evolving fracture callus and validate the myofibroblast-like phenotype of PPCs characterized also by Inhba expression after fracture.
 
-## Activin A stimulates proliferation and differentiation in periosteal progenitors
+### Activin A stimulates proliferation and differentiation in periosteal progenitors
 
 The spatiotemporal links between PPC expansion and Inhba expression during fracture repair progression above indicated that Activin A may directly promote progenitor cell proliferation and differentiation. To test this possibility, we cultured tibial periosteal mesenchymal progenitors and treated them with recombinant Activin A (100 ng/ml) or with a neutralizing monoclonal antibody against mouse Activin A (nActA.AB; 100 μg/ml) that we used in a previous study (Mundy et al., 2021). Cell number analysis on day 3 indicated that Activin A treatment did stimulate cell proliferation, whereas treatment with nActA.AB inhibited it (Figure 4A). Remarkably, Activin A treatment up-regulated the levels of expression of myofibroblastic cell markers including αSMA/Acta2 (Figure 4B, C) and Tagln (Figure 4C) as did treatment with recombinant TGF-β1 which is known for its ability to promote myofibroblast development (Wynn, 2008). Next, we tested whether Activin A was able to directly stimulate chondrogenic and osteogenic cell differentiation that as predicted by trajectory analysis (Figure 2F). Periosteal cell cultures reared in basal chondrogenic or osteogenic media were treated with Activin A as above. The treatment did stimulate chondrogenesis versus control cultures as revealed by strong alcian blue staining and higher expression of such cartilage markers as Col2a1, Acan, and Sox9 (Figure 4D, E). Activin A treatment did not appreciably enhance osteogenic differentiation (Figure 4F, G). However, nActA.AB treatment did inhibit both osteogenesis and chondrogenesis (Figure 4D–G). Thus, endogenous and exogenous Activin A acts to promote chondrogenic and osteogenic differentiation in periosteal progenitors.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig4-v2.jpg)
 
-**Figure 4.:** (A) Proliferation assay of periosteal mesenchymal progenitors treated with recombinant Activin A (Act) or neutralizing monoclonal antibody (nActA.AB) versus control antibody (NC). * p<0.05, *** p<0.001 Act vs NC. ### p<0.001 nActA.AB vs NC. (B) Immunofluorescence images of αSMA in periosteal mesenchymal progenitors treated with Activin A (100 ng/ml) or TGF-β1 (10 ng/ml) for 3 days. (C) qRT-PCR analysis of myofibroblast-like marker expression. (D) Alcian blue staining of periosteal mesenchymal progenitors in micromass cultures undergoing chondrogenic differentiation in the presence of Activin A (100 ng/ml) or nActA.AB (100 μg/ml) for 2 weeks. (E) qRT-PCR analyses of chondrogenic markers. (F) Alizarin red staining of periosteal mesenchymal progenitors undergoing osteogenic differentiation in the presence of Activin A or nActA.AB for 2 weeks. (G) qRT-PCR analyses of osteogenic markers. Data are expressed as means ± SD and analyzed by one-way ANOVA with Tukey post-hoc test.Figure 4—source data 1.Figure 4A.Figure 4—source data 2.Figure 4C.Figure 4—source data 3.Figure 4E.Figure 4—source data 4.Figure 4G.
+**Figure 4.:** (A) Proliferation assay of periosteal mesenchymal progenitors treated with recombinant Activin A (Act) or neutralizing monoclonal antibody (nActA.AB) versus control antibody (NC). * p<0.05, *** p<0.001 Act vs NC. ### p<0.001 nActA.AB vs NC. (B) Immunofluorescence images of αSMA in periosteal mesenchymal progenitors treated with Activin A (100 ng/ml) or TGF-β1 (10 ng/ml) for 3 days. (C) qRT-PCR analysis of myofibroblast-like marker expression. (D) Alcian blue staining of periosteal mesenchymal progenitors in micromass cultures undergoing chondrogenic differentiation in the presence of Activin A (100 ng/ml) or nActA.AB (100 μg/ml) for 2 weeks. (E) qRT-PCR analyses of chondrogenic markers. (F) Alizarin red staining of periosteal mesenchymal progenitors undergoing osteogenic differentiation in the presence of Activin A or nActA.AB for 2 weeks. (G) qRT-PCR analyses of osteogenic markers. Data are expressed as means ± SD and analyzed by one-way ANOVA with Tukey post-hoc test.
 
-## Systemic administration of Activin A neutralizing antibody delays fracture repair
+### Systemic administration of Activin A neutralizing antibody delays fracture repair
 
 Given the apparent ability of Activin A to stimulate periosteal progenitor cell proliferation and differentiation, it became reasonable to predict that the protein would have a positive and important role in fracture repair. To test this thesis, we subjected 2-month-old WT mice to the same closed tibia fracture injury as above that heals via endochondral ossification. The animals were randomly divided into two groups. The first group received biweekly subcutaneous injections of nActA.AB [immunoglobulin G2b (IgG2b) isotype at 10 mg/kg per injection] as in our previous study. The second group served as control and received injections of pre-immune IgG2b isotype antibody obtained from the same manufacturer and given at identical dose, route, and frequency. Based on the spatiotemporal patterns of fracture healing in this model (Figure 2—figure supplement 1), tibias from each group were harvested at 5, 7, 10, and 14 days after surgery to capture and analyze the cartilage and bone formation phases and at 6 weeks to measure the ultimate effectiveness of bone healing by mechanical tests. Histochemical analysis clearly showed that nActA.AB administration significantly reduced overall callus size and cartilage and bone areas at all time points post fracture (5, 7, 10, and 14 days) compared to isotype antibody controls (Figure 5A, B). The changes in callus volume and bone volume were verified by micro-computed tomography (μCT) analysis (Figure 5—figure supplement 1). By 6 weeks in the control group, the tibial fractures were all bridged, indicating a successful recovery but those in the nActA.AB treatment group were lagging, leading to a decrease in fracture healing score (Figure 5C, p = 0.006). Furthermore, three-point bending analysis revealed 44.4%, 35.0%, and 29.0% reductions in energy to failure, stiffness, and peak load, respectively, in fractured tibias from nActA.AB- versus isotype-treated mice (Figure 5D), all statistically significant.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative Safranin O/Fast green staining images of fracture calluses at days 5, 7, 10, and 14 post fracture. Mice received subcutaneous injections of control IgG2b isotype or neutralizing monoclonal antibody against Activin A (nActA.AB, 10 mg/kg) twice a week after fracture. Scale bar, 1 mm. (B) Callus area, cartilage area, and bone area were quantified at indicated time points. n = 4–7 mice/time point. (C) Measurement of fracture healing scores at 6 weeks post fracture. n = 10 mice/group. (D) Mechanical testing was performed on bones at 6 weeks post fracture. n = 10 mice/group. (E) Immunofluorescence images of pSMAD2 and αSMA in fracture calluses of control (isotype) and nActA.AB-treated mice at day 7 post fracture. White arrows point to pSMAD2+αSMA+ cells and yellow arrows point to pSMAD2+αSMA− cells. Scale bar, 500 μm (low mag), 50 μm (high mag). (F) Percentages of pSMAD2+ and αSMA+ cells in fracture calluses and pSMAD2+ cells within the αSMA+/− populations were quantified. n = 3 mice/group. (G) qRT-PCR analyses of Acta2 and Inhba expression in day 7 callus from 2-month-old mice treated with nActA.AB versus isotype control. n = 4 mice/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative micro-computed tomography (μCT) images of fracture calluses on days 7, 10, 14, and 42 post fracture. Mice received injections of control IgG2b isotype antibody or neutralizing monoclonal antibody against Activin A (nActA.AB, 10 mg/kg) twice a week after fracture. Scale bar, 1 mm. (B) Callus volume, bone volume and bone volume fraction were measured. n = 4–10 mice/time point/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative 3D micro-computed tomography (μCT) images of trabecular bone of contralateral uninjured femur at 6 weeks post fracture. Mice received injections of control IgG2b isotype antibody or neutralizing monoclonal antibody against Activin A (nActA.AB, 10 mg/kg) twice a week after fracture. Scale bar, 100 μm. (B) μCT measurement of femoral trabecular bone structural parameters: bone volume fraction (BV/TV), trabecular number (Tb.N), trabecular thickness (Tb.Th), and trabecular separation (Tb.Sp). n = 8 mice/group. (C) Representative 3D μCT images of cortical bone of contralateral uninjured femur at 6 weeks post fracture. Scale bar, 100 μm. (D) μCT measurement of femoral cortical bone structural parameters: periosteal perimeter (Ps.Pm), endosteal perimeter (Ec.Pm), cortical bone thickness (Ct.Th), and cortical bone area (Ct.Ar). n = 8 mice/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test.
 
 To gain insights into whether systemic nActA.AB administration affected PPCs, we performed qRT-PCR and immunostaining analyses on early fracture samples from wild-type mice as above. At day 7 post fracture, nActA.AB administration reduced the number of cells positive for phosphorylated SMAD2 (pSMAD2) through which Activin A normally signals intracellularly (Pangas and Woodruff, 2000), suggesting the effectiveness of neutralizing antibody treatment (Figure 5E, F). Interestingly, the number of PPCs positive for αSMA and the percentage of pSMAD2+ cells within PPC population were significantly decreased, while the percentage of pSMAD2+ cells within non-PPCs remained the same. These data were further con firmed by reduced gene expression of Acta2 and Inhba in fracture callus after nActA.AB administration (Figure 5G). Taken together, our results clearly suggest that the PPCs were the primary responsive cell type to Activin A in early fracture and that systemic interference of Activin A action by nActA.AB treatment impaired fracture healing.
 
 We also examined contralateral, uninjured tibiae in all mice above and asked whether Activin A normally regulates bone homeostasis. µCT scanning showed that trabecular and cortical bone structure was essentially identical in nActA.AB- and control isotype-treated mice (Figure 5—figure supplement 2), indicating that Activin A does not have major homeostatic roles, at least within the time frame of our studies.
 
-## Local supplementation of recombinant Activin A accelerates fracture healing
+### Local supplementation of recombinant Activin A accelerates fracture healing
 
 To extend the above studies, we carried out complementary studies asking whether exogenous Activin A would enhance fracture healing and could thus represent a potential therapeutic. As above, we used a closed tibial fracture model with 2- and 20-month-old mice since older mice are more clinically relevant when testing a potential therapy. Immediately after fracture, a 50-μl aliquot of Matrigel containing recombinant Activin A was microinjected at the operated site; controls received Matrigel alone. Mice were then harvested at 5, 14, and 28 days from fracture to monitor the healing process. Notably, exogenous Activin A implantation had clearly increased callus size and cartilage and bone areas at each time point and in both age groups, based on histochemistry (Figure 6A, B) and μCT imaging (Figure 6—figure supplement 1). IHC revealed that Activin A implantation had elicited a major increase in the number of mesenchymal cells positive for pSMAD2 and αSMA and the percentage of pSMAD2+ cells within αSMA+ population (but not within αSMA− population) in fracture calluses of young mice at day 5 post fracture (Figure 6C, D). Importantly, overall healing scores were significantly increased in both young and old mice at 6 weeks post fracture (Figure 6E). Mechanical testing revealed that energy to failure, stiffness, and peak load were all significantly increased by Activin A implantation in 20-month-old mice (Figure 6F). In line with previous reports (Liu et al., 2022), young mice had stronger bone than old mice with increased stiffness and peak load. We also noted a trend of increase in energy to failure in young mice as well after Activin A treatment but was not statistically significant. Taken together, the data indicate a quick expansion of mesenchymal progenitors and a promotion of healing following Activin A supplementation.
 
-## Activin A promotes intramembranous bone defect repair
+![Figure 6.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative Safranin O/Fast green staining histochemical images of fracture calluses at days 5, 14, and 28 post fracture. Two-month-old (2M) or 20-month-old (20M) mice were implanted with a 50-μl Matrigel aliquot containing vehicle (Veh) or Activin A (ACT) (1 μg) at the fracture site immediately after surgery. Scale bar, 1 mm. (B) Callus area, cartilage area, and bone area were quantified at indicated time points. n = 4 mice/group. (C) Immunofluorescence images of pSMAD2 and αSMA in fracture calluses of control and ACT-implanted mice at day 5 post fracture. White arrows point to pSMAD2+αSMA+ cells and yellow arrows point to pSMAD2+αSMA− cells. Scale bar, 500 μm (low mag), 50 μm (high mag). (D) Percentage of pSMAD2+, αSMA+ cells in fracture calluses and pSMAD2+ cells within αSMA+/− populations were quantified. n = 3 mice/group. (E) Fracture healing scores were quantiﬁed in bones of 2- and 20-month-old mice at 6 weeks post fracture. n = 10 mice/group. (F) Mechanical testing was performed on bones of 2- and 20-month-old mice at 6 weeks post fracture. n = 10 mice/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative micro-computed tomography (μCT) images of fracture calluses on days 14, 28, and 42 post fracture. Mice at 2 or 20 months of age were implanted with 50 μl Matrigel containing vehicle or Activin A (1 μg) at the fracture site at the time of surgery. Scale bar, 1 mm. (B) Callus volume, bone volume, and bone volume fraction were measured. n = 4–10 mice/time point/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test.
+
+### Activin A promotes intramembranous bone defect repair
 
 To strengthen our observations, we carried out an additional set of loss- and gain-of-function experiments using a unicortical non-critical size (0.8 mm) drill-hole bone repair model that heals mainly through intramembranous ossification (Minear et al., 2010). In this model, woven bone formation is usually observed by day 7 post-surgery, and bone bridging and re-corticalization occur by day 21 (Liu et al., 2019). Accordingly, drill-hole surgery was carried out on femoral mid-shaft of 2-month-old mice. For loss-of-function tests, mice were given biweekly subcutaneous injections of nActA.AB or isotype control as above. For gain-of-function tests, a 50-μl aliquot of Matrigel containing up to 1 μg of recombinant Activin A was microinjected inside the medullary canal at the drill site; Matrigel alone was microinjected in companion controls. In all controls, bone formation became evident in the medullary region of interest by day 7 post-surgery and extensive bone formation in the drilled region had occurred by day 21 (Figure 7A). Nearly all day 21 samples displayed complete defect bridging and based on μCT-based sagittal and cross-sectional reconstitution, volume fraction of reconstituted bone (BV/TV) was over 60% (Figure 7B). Systemic nActA.AB administration caused an appreciable reduction in bone deposition in both drilled and medullary regions by day 7 and a significant drop by day 21 compared to isotype controls (Figure 7A, B). Conversely, local supplementation of recombinant Activin A significantly increased BV/TV in medullary and drilled regions at both days 7 and 21 compared to vehicle controls (Figure 7C, D). Our data indicate that Activin A also promotes bone regeneration via intramembranous ossification.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig7-v2.jpg)
 
-**Figure 7.:** (A) Representative sagittal (top) and transverse (bottom) cross-sections of micro-computed tomography (μCT) images of Activin A blocking antibody (nActA.AB)-treated drill-hole defects. Mice received injections of control IgG2b isotype or neutralizing monoclonal antibody against Activin A (nActA.AB, 10 mg/kg) twice a week after drill-hole injury. Arrows point to the defect region. Scale bar, 1 mm. (B) Bone volume fraction of intramedullary and cortical defect regions at days 7 and 21 post-injury. n = 4–6 mice/group. (C) Representative sagittal (top) and transverse (bottom) cross-sections of μCT images of recombinant Activin A (Act)-treated drill-hole defects. Two-month-old mice were implanted with a 50-μl Matrigel aliquot containing vehicle (Veh) or Activin A (Act) (1 μg) at the drill-hole site immediately after surgery. Arrows point to the defect region. Scale bar, 1 mm. (D) Bone volume fraction of intramedullary and cortical defect regions at days 7 and 21 post-injury. n = 4–6 mice/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test.Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7D.
+**Figure 7.:** (A) Representative sagittal (top) and transverse (bottom) cross-sections of micro-computed tomography (μCT) images of Activin A blocking antibody (nActA.AB)-treated drill-hole defects. Mice received injections of control IgG2b isotype or neutralizing monoclonal antibody against Activin A (nActA.AB, 10 mg/kg) twice a week after drill-hole injury. Arrows point to the defect region. Scale bar, 1 mm. (B) Bone volume fraction of intramedullary and cortical defect regions at days 7 and 21 post-injury. n = 4–6 mice/group. (C) Representative sagittal (top) and transverse (bottom) cross-sections of μCT images of recombinant Activin A (Act)-treated drill-hole defects. Two-month-old mice were implanted with a 50-μl Matrigel aliquot containing vehicle (Veh) or Activin A (Act) (1 μg) at the drill-hole site immediately after surgery. Arrows point to the defect region. Scale bar, 1 mm. (D) Bone volume fraction of intramedullary and cortical defect regions at days 7 and 21 post-injury. n = 4–6 mice/group. Data are expressed as means ± SD and analyzed by unpaired two-tailed t-test.
 
 ## Discussion
 
 Our data identify a novel population of PPCs that rapidly expands within the developing callus after fracture, is characterized by high Activin A/Inhba expression, and displays a myofibroblast-like character. Based on scRNA-seq-based trajectory analysis, the PPCs lie at the center of a developmental path that bifurcates and elicits the emergence of chondrocytes and osteoblasts within the callus over time (see schematic in Figure 8). Activin A expression and function in these and other cells appear to be critical for effective bone healing given that repair in both our endochondral and intramembranous mouse models was significantly delayed by systemic administration of Activin A neutralizing antibody. This key notion is reinforced by our findings that the same healing processes were boosted by local supplementation of recombinant Activin A. Indeed, the exogenous protein robustly enhanced pSMAD2 signaling levels within the fracture callus and promoted the acquisition of a myofibroblast-like phenotype by the progenitor cells and their subsequent chondrogenic and osteogenic differentiation in vitro. Overall, our data and insights are very much in line with a previous study in rats in which local implantation of recombinant Activin A stimulated fracture repair (Sakai et al., 1999). They also agree quite well with siRNA studies showing that endogenous Activin A is required for chondrogenic and osteogenic differentiation of human marrow mesenchymal stem cells (Djouad et al., 2010). However, we should mention fracture studies employing soluble neutralizing type IIA or IIB receptors that elicited different outcomes, possibly due to the ability of soluble receptors to interfere with not only Activin A but other superfamily members also (Pearsall et al., 2008; Puolakkainen et al., 2017). In sum, our study provides clear evidence that Activin A is an overall regulator and stimulator of the fracture repair process. The protein appears to act by promoting myofibroblastic, chondrogenic and osteogenic differentiation and ultimately bone healing, with the PPC population placed at the center of a developmental cascade aiding the progression of the overall process. Our data also establish Activin A as a potential therapeutic tool to enhance fracture repair.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig8-v2.jpg)
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/89822/elife-89822-fig8-figsupp1-v2.jpg)
 
 Periosteal mesenchymal stem and progenitor cells are well known to be essential for fracture repair, but the sequential steps needed to turn them into reparative cells and mechanisms underlying this multifaceted phenotypic progression have remained unclear (Einhorn and Gerstenfeld, 2015; Loi et al., 2016). The distinct PPC population identified here occupies an intermediate developmental step along the repair cascade and possesses a myofibroblast-like character after injury (Hinz, 2016). Prior to fracture injury, the periosteum contains few PPCs, but fracture triggers a concerted response in which MPCs are rapidly activated to become PPCs, differentiating into chondrocytes and osteoblasts with time. Based on cell prevalence, the PPCs appear to represent the bulk of cells within the thickening periosteum a few days after fracture. Notably also, the PPCs express not only Inhba but also Acta2 that encodes αSMA, a well-established marker of periosteal mesenchymal progenitors engaged in fracture callus development (Grcevic et al., 2012). Using Acta2-CreER mice, the Kalajzic group recently demonstrated that αSMA+ cells constitute about 4% of Cd45−Ter119−Cd31− cells in homeostatic mouse periosteum and that DTA-mediated ablation of the cells severely reduces callus size after fracture (Matthews et al., 2021). In the tissue injury and regeneration field, αSMA is often used as a marker of myofibroblasts, a cell population first discovered in skin wound healing studies and then identified as a key player in many tissue repair processes (Hinz, 2016; Pakshir et al., 2020). A recent scRNA-seq study isolated fibroblast cell populations from 13 injured and diseased mouse tissues including bone, and identified an Lrrc15+ cell cluster that displays a αSMA+ myofibroblastic cell character and emerges only after injury (Buechler et al., 2021). Interestingly, Lrrc15 is also a marker for PPCs in our study. In addition, abundant αSMA+ stromal cells were recently reported to occur around the injury site after metal implant surgery in mouse tibiae (Vesprey et al., 2021). In sum, acute injury resulting from bone fracture, metal implantation, or other insults appears to elicit a common and forceful repair response that is coupled to the emergence of progenitors with a myofibroblast-like phenotype. Ongoing studies are directed toward deciphering more precisely what roles PPCs perform in bone repair and what mechanisms ensure the controlled regression of the cells and the apparent loss of myofibroblastic-like features at later stages of facture healing.
 
@@ -104,19 +170,176 @@ Activin A’s capacity to play such diverse biological roles could endow the pro
 
 ## Methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Col2a1-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 003554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26LSL-tdTomato</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal neutralizing antibody against Activin A</td>
+      <td>Biolegend</td>
+      <td>Cat #: 693604</td>
+      <td>10 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-mouse pSMAD2</td>
+      <td>Cell Signaling</td>
+      <td>Cat #: 3108S</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-mouse αSMA</td>
+      <td>Sigma</td>
+      <td>Cat #: A5228</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse Activin A</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat #: AF338</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 donkey polyclonal anti-goat</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-21447</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 donkey polyclonal anti-rabbit</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-21206</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 donkey polyclonal anti-mouse</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-21202</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 donkey polyclonal anti-mouse</td>
+      <td>Invitrogen</td>
+      <td>Cat #: A-31570</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse Ter119 FITC</td>
+      <td>Biolegend</td>
+      <td>Cat #: A-116205</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD31 FITC</td>
+      <td>Biolegend</td>
+      <td>Cat #: A-102509</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD45 FITC</td>
+      <td>Biolegend</td>
+      <td>Cat #: A-147709</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD34 BV421</td>
+      <td>BD Biosciences</td>
+      <td>Cat #: A-562608</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Click-iT Plus EdU Alexa Fluor 647 Flow Cytometry Assay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #: A-C10424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Activin A</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat #: 338-AC-010</td>
+      <td>10 µg</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Cellranger</td>
+      <td>https://support.10xgenomics.com</td>
+      <td>Version 6.0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 Specific pathogen-free 2- and 20-month-old C57BL/6 female mice were purchased from the Jackson Laboratory (000664) for treatment studies. Col2a1-Cre Rosa26LSL-tdTomato (Col2/Td) mice were generated by breeding Rosa26LSL-tdTomato (Jackson Laboratory, 007909) mice with Col2a1-Cre (Jackson Laboratory, 003554) (Ovchinnikov et al., 2000) mice. Since we did not detect any gender difference in fracture healing using these mice, a mixture of male and female 2-month-old mice were used for periosteal cell isolation, scRNA-seq, and histological analyses. For mice receiving a fracture, closed transverse fractures were made on right tibiae via a blunt guillotine with a pre-inserted intramedullary pin for stabilization as previously described (Wang et al., 2019). For mice receiving a drill hole, a 0.8-mm diameter unicortical drill-hole defect was made using a drill bit first followed by a 21-G needle in the diaphysis part of right femur (Li and Helms, 2021). For systemic antibody treatment, mouse monoclonal neutralizing antibody against Activin A (nActA.AB, Biolegend, 693604) or pre-immune control IgG2b isotype (Biolegend, 400377) were subcutaneously injected twice per week (10 mg/kg) after fracture. This antibody was utilized in our previous study on HO in which we showed that it is specific for Activin A and does not interfere with Activin B (Mundy et al., 2021). For recombinant Activin A implantation treatment, the protein (R&D Systems, 338-AC-010, 1 µg) was mixed with growth factor-reduced, phenol red-free Matrigel (Corning, 356231) per 50 μl total aliquot volume. Tibial anterior side was minimally exposed immediately after fracture and the Matrigel mix was applied at the fracture site using an insulin syringe. The skin was then closed with sutures.
 
-## Human fracture samples and intact iliac periosteum samples
+### Human fracture samples and intact iliac periosteum samples
 
 Fracture tissue sections were prepared from the de-identiﬁed surgical discard specimens obtained from the open reduction and internal ﬁxation surgeries of patients at days 3–10 post long bone fractures (n = 12). Human intact iliac periosteum samples were prepared from the de-identiﬁed surgical discard specimens obtained from patients undergoing autologous bone grafting surgery (n = 9).
 
-## Periosteum Td+ cell isolation and cell sorting
+### Periosteum Td+ cell isolation and cell sorting
 
 Periosteum cells were harvested as described previously (Wang et al., 2019). At day 0 before fracture and day 5 after fracture, tibiae were dissected free of surrounding tissues and both epiphyseal ends were sealed with 3% agarose gel. The remaining bone fragments were digested in 2 mg/ml collagenase A and 2.5 mg/ml trypsin. Cells from the first 3 min of digestion were discarded and cells from a subsequent 30 min of digestion were collected as periosteal cells. For samples harvested on day 10 after fracture, the tibiae were dissected free of surrounding tissues, and fracture calluses were cut off using a surgical blade and cut into small pieces. The fragments were digested in 2 mg/ml collagenase A and 2.5 mg/ml trypsin for 1 hr and collected as whole callus cells. For sorting, cells were resuspended into fluorescence-activated cell sorting (FACS) buffer containing 25 mM 4-(2-Hydroxyethyl)-1-piperazine ethanesulfonic acid (HEPES; Thermo Fisher Scientific) and 2% fetal bovine serum (FBS) in phosphate-buffered saline (PBS) and sorted for Td+ cells using Influx B or Aria B (BD Biosciences).
 
-## scRNA-seq of periosteal mesenchymal cells
+### scRNA-seq of periosteal mesenchymal cells
 
 We constructed three batches of single-cell libraries for sequencing using sorted periosteum Td+ cells from day 0 before fracture (n = 5 mice, 3 males and 2 females), day 5 after fracture (n = 6 mice, 4 males and 2 females), and day 10 after fracture (n = 6 mice, 3 males and 3 females). Approximately 20,000 cells were loaded each time into Chromium controller (V3 chemistry version, 10X Genomics Inc), barcoded and purified as described by the manufacturer, and sequenced using a 2 × 150 pair-end configuration on an Illumina Novaseq platform at a sequencing depth of ~400 million reads. Cell ranger (Version 6.0.1, https://support.10xgenomics.com/single-cell-geneexpression/software/pipelines/latest/what-is-cell-ranger) was used to demultiplex reads, followed by extraction of cell barcode and UMIs. The cDNA insert was aligned to a modified reference mouse genome (mm10).
 
@@ -126,15 +349,15 @@ To computationally delineate the developmental progression of periosteal mesench
 
 RNA velocity analysis was performed as described (La Manno et al., 2018). Briefly, Velocyto was used to generate count tables for spliced and unspliced transcripts that were then processed through the aforementioned Seurat pipeline to produce UMAP projection and clustering information. All above was then input into Scvelo for visualizing directed RNA dynamic information using dynamical model (Bergen et al., 2020).
 
-## μCT analysis
+### μCT analysis
 
 Tibiae harvested post fracture were scanned at the fracture sites by VivaCT 40 (Scanco Medical AG) at a 7.4-µm isotropic voxel size to acquire a total of 1000 µCT slices centering around the fracture site. A semi-automated contouring method was used to determine the callus perimeter and to analyze the callus outside the preexisting cortical bone. All images were first smoothed by a Gaussian filter (sigma = 1.2, support = 2.0) and then applied by a threshold corresponding to 30% of the maximum available range of image gray scale values to distinguish mineralized tissue from unmineralized and poorly mineralized tissue. Callus region surrounding cortical bone was contoured for trabecular bone analysis. Based on µCT images, 6 weeks fracture samples were assigned fracture healing scores according to an 8-point radiographic scoring system (An and Friedman, 1999). This is a sum of scores from three categories: periosteal reaction (0–3), bone union (0–3), and remodeling (0–2). Scoring was determined empirically by two independent experts who were blinded to treatment allocation. To analyze bone healing after drill-hole injury, the cortical defect area and the intramedullary area were contoured separately for trabecular bone analysis.
 
-## Mechanical testing
+### Mechanical testing
 
 Tibiae at 6 weeks post fracture were harvested for mechanical testing using an Instron 5542 (Instron, Norwood, MA, USA) as described previously (Wang et al., 2019). Tibiae were positioned so that the loading point was at the fracture site. A load speed of 1.8  mm/min was applied midway between two supports placed 10  mm apart. Peak load, stiffness, and energy to failure were calculated from the force-to-failure curve.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Fractured mouse tibiae were fixed in 4% Paraformaldehyde (PFA), decalcified in 10% Ethylenediaminetetraacetic acid (EDTA) for 3 weeks, and processed for paraffin embedding. A series of 6-μm-thick longitudinal sections were cut across the entire fracture callus from one side of cortical bone to the other side of cortical bone. For each bone, a central section with the largest callus area as well as two sections at 192 μm (~1/4 bone width) before and after the central section were stained with Safranin-O/Fast green and quantified for cartilage area, bone area, and fibrosis area by ImageJ. Additional sections neighboring the central section were used for IHC. After antigen retrieval, slides were incubated with rabbit anti-pSMAD2 (S465/467) (Cell Signaling, 3108S) and mouse anti-αSMA (Sigma, A5228) primary antibodies at 4°C overnight, followed by incubation with Alexa Fluor 488 donkey anti-rabbit (Invitrogen, A-21206) and Alexa Fluor 555 donkey anti-mouse (Invitrogen, A-31570) secondary antibodies for 1 hr at RT. Sections were scanned by a Nikon Eclipse 90i fluorescence microscope. To quantify positive cells, 4 square regions (0.25 mm2 each) evenly distributed in the thickened periosteum were selected at similar locations in each sample. Within these regions, pSMAD2+ or αSMA+ cells were counted and normalized against total 4',6-diamidino-2-phenylindole (DAPI)+ cells.
 
@@ -142,22 +365,22 @@ To obtain whole mount sections for immunofluorescent imaging, freshly dissected 
 
 After collection, human samples were ﬁxed in 4% PFA overnight, followed by parafﬁn embedding and staining with H&E. For IHC of Activin A, slides were incubated with anti-human Activin A antibody (R&D, AF338) at 4°C overnight, followed by binding with biotinylated secondary antibody and DAB color development.
 
-## Flow cytometry analysis of EdU+ cells
+### Flow cytometry analysis of EdU+ cells
 
 Mice received 1.6 mg/kg EdU at 3 hr before sacrifice. Digested periosteal cells were stained with rat anti-Ter119 FITC (Biolegend, 116205), rat anti-CD31 FITC (Biolegend, 102509), rat anti-CD45 FITC (Biolegend, 147709), and rat anti-CD34 BV421 (BD Biosciences, 562608). EdU detection was carried out according to the manufacturer’s instructions (Click-iT Plus EdU Alexa Fluor 647 Flow Cytometry Assay Kit, Thermo Fisher Scientific, C10424). Flow cytometry was performed by either LSR A or BD LSR Fortessa flow cytometer and analyzed by FlowJo v10.5.3 for MAC.
 
-## Cell culture
+### Cell culture
 
 Enzymatically released mouse periosteal cells were seeded in the growth medium (αMEM supplemented with 15% FBS plus 55 μM β-mercaptoethanol, 2 mM glutamine, 100 IU/ml penicillin, and 100 µg/ml streptomycin) for periosteal mesenchymal progenitor culture. For CFU-F assay, unsorted cells, sorted Td+ cells, and sorted Td− cells were seeded at 1 × 106, 3 × 104, and 1 × 106 cells per T25 flask, respectively. Seven days later, flasks were stained with 3% crystal violet to quantify CFU-F numbers. For cell proliferation assay, 1000 cells were seeded into a 96-well plate in the growth medium containing Activin A (100 ng/ml) or nActA.AB (100 μg/ml). Cell numbers at days 0, 1, 2, and 3 were quantified using CyQUANT Proliferation Assay Kit (Invitrogen, C35011). For myofibroblast differentiation assay, 0.2 × 106 cells were seeded into a 6-well plate with serum-free medium containing Activin A (100 ng/ml) or TGF-β1 (10 ng/ml) for 72 hr. Cells were then stained with mouse anti-αSMA primary antibody for 1 hr followed by Alexa Fluor 488 donkey anti-mouse secondary antibody for 1 hr. For osteogenic differentiation assay, confluent cells were switched to osteogenic medium (αMEM with 10% FBS, 10 nM dexamethasone, 10 mM β-glycerophosphate, 50 μg/ml ascorbic acid, 100 IU/ml penicillin, and 100 µg/ml streptomycin) containing Activin A (100 ng/ml) or nActA.AB (100 μg/ml) for 2 weeks followed by alizarin staining. For chondrogenic differentiation, micromass cultures were initiated by spotting 20 μl of cell suspension (0.5 × 106 cells/spot) onto the surface of a 24-well plate. After 2 hr incubation at 37℃ in a humidified CO2 incubator to allow for cell attachment, the cultures were switched to basic chondrogenic medium (high glucose Dulbecco’s modified Eagle medium, 100 µg/ml sodium pyruvate, 1% insulin, human transferrin, and selenous acid (ITS)+ Premix, 50 µg/ml ascorbate-2-phosphate, 40 μg/ml L-proline, 0.1 mM dexamethasone, 100 IU/ml penicillin, and 100 µg/ml streptomycin) containing Activin A (100 ng/ml) or nActA.AB (100 μg/ml) for 2 weeks followed by alcian blue staining.
 
-## Quantitative RT-PCR analysis
+### Quantitative RT-PCR analysis
 
 Fracture callus was dissected out from human or mouse tissues and snap frozen in liquid nitrogen and minced into powder. RNA was extracted by adding TRIzol Reagent to the powder and further purified by RNeasy Micro Kit (QIAGEN, 74004). Sorted or cultured cells were collected in TRIzol Reagent for RNA purification (Sigma, T9424). A High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific, 4368814) was used to reverse transcribe mRNA into cDNA. Following this, real-time PCR was performed using a Power SYBR Green PCR Master Mix Kit (Thermo Fisher Scientific, Inc, 4367659). The primer sequences for genes used in this study are listed in Supplementary file 1c. The gene expression level was normalized against the internal housekeeping gene Actb.
 
-## Statistical methodologies
+### Statistical methodologies
 
 Data are expressed as means ± standard deviation and analyzed by t-tests or one-way analysis of variance with Tukey post-test for multiple comparisons using Prism software (GraphPad Software, San Diego, CA). For cell culture experiments, observations were repeated independently at least three times with a similar conclusion, and only data from a representative experiment are presented. Values of p < 0.05 were considered significant.
 
-## Study approval
+### Study approval
 
 The experimental animal protocols were approved by the Institutional Animal Care and Use Committees of the University of Pennsylvania (IACUC# 804112) and the Children’s Hospital of Philadelphia (IACUC# 20-000958). The experiments were performed in the animal facilities of both institutions, which implement strict regimens for animal care and use. In accordance with the standards for animal housing, mice were group housed at 23–25°C with a 12-hr light/dark cycle and allowed free access to water and standard laboratory pellets.

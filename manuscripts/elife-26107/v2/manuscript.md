@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.26107.001 Blood-sucking insects experience thermal stress at each feeding event on endothermic vertebrates. We used thermography to examine how kissing-bugs Rhodnius prolixus actively protect themselves from overheating. During feeding, these bugs sequester and dissipate the excess heat in their heads while maintaining an abdominal temperature close to ambient. We employed a functional-morphological approach, combining histology, µCT and X-ray-synchrotron imaging to shed light on the way these insects manage the flow of heat across their bodies. The close alignment of the circulatory and ingestion systems, as well as other morphological characteristics, support the existence of a countercurrent heat exchanger in the head of R. prolixus , which decreases the temperature of the ingested blood before it reaches the abdomen. This kind of system has never been described before in the head of an insect. For the first time, we show that countercurrent heat exchange is associated to thermoregulation during blood-feeding.
+Blood-sucking insects experience thermal stress at each feeding event on endothermic vertebrates. We used thermography to examine how kissing-bugs Rhodnius prolixus actively protect themselves from overheating. During feeding, these bugs sequester and dissipate the excess heat in their heads while maintaining an abdominal temperature close to ambient. We employed a functional-morphological approach, combining histology, µCT and X-ray-synchrotron imaging to shed light on the way these insects manage the flow of heat across their bodies. The close alignment of the circulatory and ingestion systems, as well as other morphological characteristics, support the existence of a countercurrent heat exchanger in the head of R. prolixus, which decreases the temperature of the ingested blood before it reaches the abdomen. This kind of system has never been described before in the head of an insect. For the first time, we show that countercurrent heat exchange is associated to thermoregulation during blood-feeding.
 
 ## Introduction
 
@@ -36,19 +36,98 @@ In the present work, we studied how the major Chagas disease vector Rhodnius pro
 
 ## Results
 
-## Real-time infrared thermography during feeding
+### Real-time infrared thermography during feeding
 
 To understand how R. prolixus manages the heat flow associated with the ingestion of a blood-meal, we first performed a real-time thermographic analysis of the dynamics of body warming during the entire feeding process (Figure 1A; SI Video 1). Before the blood intake, Tb = Ta for all body parts of the insect. But once the insect started to feed, the different parts of its body did not exhibit the same temperature (i.e. heterothermy) (Figure 2A–B). Indeed, while the temperature of the proboscis (Tp) was high and close to the temperature of the blood, that of the abdomen (Tabd) was close to the ambient temperature, whereas the temperature of the head (Th) and that of the thorax (Tth) remained intermediate. Thus, a marked thermal gradient was established along the insect body: Tp >Th > Tth>Tabd. Interestingly, Tp and Th oscillated during feeding, certainly in concordance with the variations in the activity of the ingestion pumps, while Tth and Tab did not, remaining stable during the entire blood intake. These results show that R. prolixus is able to minimise the amount of heat reaching the abdomen during feeding (Figure 2A–B).
 
+![Video 1.](https://cdn.elifesciences.org/articles/26107/elife-26107-video1.mp4.jpg)
+
+**Video 1.:** The blood was maintained at 37°C and the room temperature was 22°C. We recorded a frame every 10 s.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/26107/elife-26107-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental device used for Rhodnius prolixus blood-feeding and thermography. (a) artificial feeder, (b) blood container, (c) thermostat, (d) bug, (e) opened falcon tube, (f) thermographic camera, (g) computer. (B) Blood-meal and ambient temperatures combinations used during the experiments. Dark grey is related to the tested combinations; light grey corresponds to the combinations that were not tested.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26107/elife-26107-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** An individual was place inside a falcon tube cut to let free the space between the bug and the camera; blood at the chosen temperature was offered through a latex membrane and the data from the camera sent to a computer.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/26107/elife-26107-fig2-v2.jpg)
+
+**Figure 2.:** (A) Thermogram (dorsal view) of Rhodnius prolixus during feeding on sheep blood (Tblood = 40°C) in an artificial feeder (on top). Horizontal dotted lines separate the different parts of the body, that is proboscis, head, thorax and abdomen. The vertical dotted line represents a transect along which the temperature of the surface of the insect’s body was measured. (B) Temperatures recorded along the transect designated in A. (Tblood = 40°C). (C) Impact of the difference between blood (Tblood) and environmental (Ta) temperatures on the body temperature of Rhodnius prolixus. (D) Average temperature of the proboscis, head, thorax and abdomen during blood-feeding in insects with severed dorsal vessels. (E) Relative levels of expression of HSP70 of sham-operated and dorsal vessel-severed bugs, measures 2 hr after fed on blood at 39°C. Asterisks: t-test, p<0.01, n = 5.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26107/elife-26107-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Vertical bars represent standard error of the mean values (S.E.M). Results for the statistical comparisons (two-way ANOVA) are presented in the Table 1.
+
 We then characterised regional heterothermy in R. prolixus by establishing different combinations of both ambient and blood temperature, to see how the temperature of the different parts of the body would be affected during blood-feeding (Figure 1B). At Ta = 16°C, we observed a clear thermal gradient along the insect bodies either when fed on blood at 32°C or 37°C (two-way ANOVA, p-values<0.01 for all comparisons, see Table 1, Figure 2C, SI Figure 2—figure supplement 1, SI Table 1). At Tblood = 37°C, the proboscis was 14°C warmer than the abdomen. A temperature gradient between the proboscis and the abdomen was also found in insects fed with blood at 32°C, 37°C and 42°C for all the different other Ta conditions. Moreover, as Ta increased, Tb increased, but we noted that the temperature of the proboscis was more influenced by Tblood, while the abdomen tended to be more stable and did not vary as much, even if the temperature of ingested blood was higher (Figure 2C, Figure 2—figure supplement 1, Figure 2—source data 1). Our results showed that the different body regions warmed up differentially as a function of both the environment and blood temperatures (two-way ANOVA, p-values<0.01 for all comparisons, Table 1) and that the temperature of the proboscis was close to Tblood, whereas the abdomen (Tabd) remained close to the temperature of the environment (Ta). In between the temperature gradient was not linear, but it exhibited a clear decrease at the posterior region of the head (Figure 2B), revealing that this region is particularly involved in heat transfer.
+
+**Table 1.**
+ Two-way ANOVA table for the analysis of the impact of the temperature of the blood (Tblood) and the environmental temperature on the different body part of Rhodnius prolixus during feeding.(See also Figure 2C and Supplementary file 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Source of variation</th>
+      <th>DF</th>
+      <th>Sum of squares</th>
+      <th>Mean square</th>
+      <th>F-value</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1- Body part</td>
+      <td>3</td>
+      <td>813.546</td>
+      <td>271.182</td>
+      <td>302.798</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>2- Tblood</td>
+      <td>3</td>
+      <td>672.914</td>
+      <td>224.305</td>
+      <td>250.455</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>1 × 2</td>
+      <td>9</td>
+      <td>91.142</td>
+      <td>10.127</td>
+      <td>11.308</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>92</td>
+      <td>82.394</td>
+      <td>0.896</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>107</td>
+      <td>1860.120</td>
+      <td>17.384</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 In order to examine the role of haemolymph circulation in heterothermy, we analysed the body temperature during blood-feeding of insects with severed dorsal vessels. As a result of the interruption of haemolymph circulation, heterothermy was greatly reduced. The thermal gradient observed was largely reduced in this group of insects (Tp (37.5 ± 0.25°C), Th (36.5 ± 0.33°C), Tth (35.92 ± 0.37°C) and Tabd [35.38 ± 0.32°C]) in comparison to intact insects (Figure 2D). The mean temperature of the proboscis did not statistically differ from control bugs (Student t-test, n = 5, n.s), but the comparison of other regions, that is head tip, between eyes, thorax and centre of the abdomen, revealed significant differences (p-values<0.001 in all cases).
 
-## HSP expression and thermal stress
+### HSP expression and thermal stress
 
 To evaluate to what extent haemolymph circulation could be involved in reducing thermal stress during feeding, we compared the expression of HSP70 and HSP90 in insects with either intact or severed dorsal vessel. Whereas HSP90 did not evince a significant differential expression, HSP70 expression was significantly higher in insects with a severed dorsal vessel, a condition that impeded countercurrent (Figure 2E, Figure 2—source data 2, Student t-test p<0.01 two-tailed).
 
-## Morphology and structural organisation of the head
+### Morphology and structural organisation of the head
 
 Because heat seemed to keep confined in the head during blood-feeding, we then performed an analysis of functional morphology, in order to disentangle the underlying mechanism allowing R. prolixus to avoid abdominal warming during feeding. The head of R. prolixus, like other triatomine bugs, has a tubular shape, which shrinks a little anteriorly at the basis of the antennae and on its posterior part, just before the thorax. The brain is confined to the posterior region of the head, whereas the anterior region lodges the large cibarial pump musculature. Besides, there are large areas of haemocoel, both dorsally and ventrally to the nervous system, where haemolymph circulates (Figure 3).
 
@@ -56,33 +135,35 @@ Because heat seemed to keep confined in the head during blood-feeding, we then p
 
 **Figure 3.:** (A) Diagram of the head of Rhodnius prolixus showing the position of the brain. (B–J): Photomicrographs of frontal sections of the head at different levels indicated in the diagram A. Dotted red lines show the position of the haemolymphatic sinus (B–E) and the aorta (F–J). Note the close association between the aorta and the alimentary canal (B–J) and the dorsal haemolymphatic sinus with the dorsal head surface (B–E) where heat transfer takes place. ac, alimentary canal; ao, aorta; hs, haemolymphatic sinus; ns, nervous system; t, trachea. Dotted red lines show where heat transfer takes place. Scales bars: A, 300 μm; B-J, 100 μm.
 
-## Circulatory system: aorta and haemolymphatic sinus
+#### Circulatory system: aorta and haemolymphatic sinus
 
 Behind the brain, the aorta (about 170 × 70 µm in section) becomes closely associated with the dorsal wall of the oesophagus (Figure 3B–E, Figure 4C–H). The aorta goes through the brain in the same configuration, almost surrounding the alimentary canal. On the anterior part of the head, forward from the optic lobes, the aorta reduces its diameter to about 50–75 µm, drops slightly and it turns into an haemolymphatic sinus (Figure 3B–E). This large sinus is delimited laterally by the muscles of the cibarial pump, ventrally by a thin membrane and dorsally by the head integument (Figure 3B–E, Figure 4A–B). Consequently, the haemolymph that comes from the abdomen, after crossing the brain, is projected in quite a large space separated from the outside only by the head wall.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/26107/elife-26107-fig4-v2.jpg)
 
-**Figure 4.:** Figure 2 showing in details the interaction between the aorta and the alimentary canal (C–H) and the haemolymphatic sinus with the dorsal tegument of the head (A).The arrow in (A) shows the ventral membrane delimiting the basal part of the haemolymphatic sinus. (B) Detail of the ventral membrane of the haemolymphatic sinus (arrow). ac, alimentary canal; ao, aorta; hs, haemolymphatic sinus; ns, nervous system; t, trachea. Scales bars: 100 μm.
+**Figure 4.:** The arrow in (A) shows the ventral membrane delimiting the basal part of the haemolymphatic sinus. (B) Detail of the ventral membrane of the haemolymphatic sinus (arrow). ac, alimentary canal; ao, aorta; hs, haemolymphatic sinus; ns, nervous system; t, trachea. Scales bars: 100 μm.
 
-## Alimentary canal and associated structures
+#### Alimentary canal and associated structures
 
 In the head, the alimentary canal is associated with two muscular structures, the cibarial and pharyngeal pumps on the anterior region, and the oesophagus posteriorly (Figures 5,6). On the anterior region of the head, the cavity of the cibarial pump is a flattened U-shaped structure of about 150 µm large, running medially (Figure 3A–B). The muscles of the cibarial pump are voluminous, occupying much of the anterior part of the head (Figure 3C–E). They are obliquely attached to the dorsal wall of the cibarium. Then, the alimentary canal bends down and runs until the level of the brain (Figure 3F) where it bends up to go through the brain (Figure 3H). The oesophagus consists of a cylindrical tube of about 50 µm diameter that extends to the thorax (Figure 3I). The circulatory system and the alimentary canal are in close contact almost throughout the length of the head (Figures 3, 4C–H). Moreover, transverse sections highlight that in some areas, the aorta surrounds lateral parts of the oesophagus (Figure 4F–G) making their contact even more intimate. Only thin layers of cells composing the walls of the aorta and the oesophagus separate the two cavities.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/26107/elife-26107-fig5-v2.jpg)
 
-**Figure 5.:** Rhodnius prolixus larvae head in sagittal view (top), horizontal view (middle) and traversal view (bottom) showing the organization of the different structures in the insect head.
-
 ![Figure 6.](https://cdn.elifesciences.org/articles/26107/elife-26107-fig6-v2.jpg)
 
 **Figure 6.:** (A) X-ray imaging of a fifth instar Rhodnius prolixus larvae in sagittal view during blood-feeding. (B) and (C). Pictures showing the activity of the ingestion pumps during blood-feeding. (D) Activity of the cibarial and pharyngeal pumps during blood intake showing that they work in antiphase.
 
-## Haemolymph circulation
+#### Haemolymph circulation
 
 As in other insects, the dorsal vessel is open at its anterior part and the circulation of haemolymph is postero-anterior. The abdominal part of the dorsal vessel is attached to the dorsal diaphragm, which delimits the visceral and the pericardial sinuses. The dorsal vessel bends down anteriorly just before entering the thorax. Haemolymph enters the dilating heart (diastole) via the ostia. In R. prolixus, in contrast to most insect species, all the ostia (four pairs) and alary muscles are grouped in a small section of the vessel, at the terminal segments of the abdomen (Chiang et al., 1990), that is where the haemolymph remains the coolest during the feeding process (Figure 2A–B). The haemolymph is pumped by the heart and flows throughout the aorta, until it reaches the head. At this level, the haemolymph warms up by conduction due to the close contact between the aorta and the oesophagus containing the ingested blood, which circulates in the opposite direction (anterior-posterior) (Figures 4, 5).
 
-## Muscular activity of the cibarial and pharyngeal pumps
+### Muscular activity of the cibarial and pharyngeal pumps
 
 To better understand the flow of the ingested blood inside the alimentary channel, we analysed the muscular activity of the cibarial and pharyngeal pumps using synchrotron-based X-ray imaging and computed tomography (SI Video 2 and Video 3). An in vivo analysis during feeding unravelled several relevant information. First, the cibarial pump works as a piston, producing a pulsed wave of blood towards the gut. Second, the small pharyngeal pump, barely considered in the literature about kissing bugs, also shows a pulsed activity, at the same frequency, but in an opposite phase to the pharyngeal pump (Figures 5 and 6).
+
+![Video 2.](https://cdn.elifesciences.org/articles/26107/elife-26107-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/26107/elife-26107-video3.mp4.jpg)
 
 ## Discussion
 
@@ -106,25 +187,29 @@ It is worth mentioning also that, as mosquitoes, bugs eliminate drops of urine d
 
 The aorta is open on its dorsal part in the cephalic portion and goes through the cibarial pump muscles. The warmed haemolymph is thus poured around these muscles that are also warmed by both contractions and direct contact with the alimentary canal which contains the circulating warm blood. The wide sinus, in which the insect haemolymph circulates in contact with the insect integument, probably facilitates heat loss by convection and radiation. Finally, two tracheas extend along the head, next to both the pharyngeal pump (Figure 3C–D) and the alimentary canal (Figure 4C–D, SI Video 4 and SI Video 3) (Ramírez-Pérez, 1969). These tracheas may also help decrease the temperature of the head by circulating air and by internal evaporative cooling. Internal evaporative cooling is a common strategy in species, such as plant juice feeders (Prange, 1996), which can obtain water easily. In the tsetse fly Glossina morsitans, a decrease of 2°C of the Tb occurs when the Ta exceeds the thermal upper limit of tolerance thanks to evaporation via the spiracles (Edney and Barrass, 1962). The process of evaporative cooling via the ventilatory system is also documented in grasshoppers and beetles with a decrease of the Tb up to 8°C (Prange, 1990). In R. prolixus during feeding, there is an increase in the rate of exchange of CO2, O2, and water vapour: this is thought to be linked with spiracle opening (Leis et al., 2016). If the hypothesis of heat loss via the trachea is true in R. prolixus, it could resemble to respiratory countercurrent mechanisms found in the nose of mammals, birds, and reptiles. In these animals, the heat exchanger cools the blood flowing to the brain to reduce overheating (Tattersall et al., 2006). This hypothesis is of course quite speculative, but deserves to be further explored.
 
+![Video 4.](https://cdn.elifesciences.org/articles/26107/elife-26107-video4.mp4.jpg)
+
+**Video 4.:** Note that the tracheal system extends beyond the prothorax (see Ramírez-Pérez, 1969 for a complete overview of the tracheal network all along the insect’s body).
+
 The present work has shed some light on different mechanisms, adaptations and strategies helping R. prolixus to avoid the thermal stress associated with blood-feeding on endothermic animals. The 3-D reconstruction of the head based on histological sections and imaging techniques support the hypothesis for a countercurrent occurring in the head of this species helping the insect to regulate its own temperature during blood-feeding.
 
 Until now, the only thermoregulatory mechanism associated with blood-feeding known in insects, was evaporative cooling performed by Anopheles mosquitoes (Lahondère and Lazzari, 2012). Our work in R. prolixus not only unravelled a new species possessing thermoregulatory abilities, suggesting that it may be also present in other haematophagous insects, but also revealed a new original mechanism, based on morphological and physiological specific adaptations. It is possible that countercurrent heat exchangers could be more frequent and diversified than commonly thought.
 
 ## Materials and methods
 
-## Insects
+### Insects
 
 Experimental bugs came from laboratory colonies of Rhodnius prolixus Stål (1859) (Heteroptera: Reduviidae: Triatominae), reared at the Insect Biology Research Institute (IRBI, Tours, France), the Universidade Federal de Minas Gerais (Brazil) and at the Department of Physiology, University of Saskatchewan (Canada). Insects were maintained under a 12:12 hr light/dark regime at 25 ± 1°C and 60–70% relative humidity. Insects are fed weekly on heparinised sheep blood via an artificial feeder (Núñez and Lazzari, 1990). Fifth-instar larvae were isolated after ecdysis and kept starved for 8–12 days until being used for thermographic experiments, X-ray imaging and computed tomography. Unfed adults were used for histological preparations because of their bigger size.
 
-## Thermographic recordings and data analysis
+### Thermographic recordings and data analysis
 
 Infrared thermography is a non-invasive technique that accurately measures the temperature at the surface of the insect body during the entire process of blood-feeding.
 
-## Thermographic camera
+#### Thermographic camera
 
 Temperature recordings were made with a thermographic camera (PYROVIEW 380L compact, DIAS infrared GmbH, Germany; spectral band: 8–14 mm, uncooled detector 2D, 384 × 288 pixels) equipped with a macro lens (pixel size 80 µm; A = 60 mm; 30° x 23°). Thermal data were acquired and recorded with the RTV Analyser RT software (IMPAC Systems GmbH, Germany). The emissivity was fixed at 0.98, as determined by Stabentheiner and Schmaranzer, 1987) for insect cuticle.
 
-## Thermographic recordings
+#### Thermographic recordings
 
 We first evaluated the impact of the blood meal temperature (Tblood) on body temperature (Tb) of fifth-instar larvae taking a blood meal at either 32°C, 37°C or 42°C (±1°C) in a room at 22 ± 1°C (Figure 1A). Then, based on these results, we performed a set of feeding experiments using different combinations of ambient temperature (Ta) and blood temperature (Tblood): [(Ta = 16°C) * (Tblood = 32°C or 37°C)]; [(Ta = 21°C) * (Tblood = 32°C, 37°C or 42°C)]; (Ta = 26°C) * (Tblood = 37°C or 42°C)]; (Ta = 31°C) * (Tblood = 37°C or 42°C)] (±1°C for all the temperatures) (Figure 1B). A total of 27 bugs were used to test the nine temperature combinations (three per combination; see below for data analysis). As control, thermographic recordings of resting insects were performed at 25°C.
 
@@ -132,39 +217,39 @@ Both ambient temperature and blood temperature were measured with a thermocouple
 
 Finally, to understand the implication of haemolymph circulation in the insect’s body warming during blood-feeding, the dorsal vessel of five insects were cut at the level of the fifth abdominal tergite. A similar number of bugs were sham operated, that is the body wall was cut, but the dorsal vessel remained intact. Briefly, a small window was opened to expose the dorsal vessel. A small section of the vessel was removed, by doing two cuts separated by about 1 mm. Then, the cuticle was replaced, in order to close the window and bugs let recovering for 48 hr, before feeding them for thermographic measurements.
 
-## Thermal data analysis and statistics
+#### Thermal data analysis and statistics
 
 Thermographic images were captured during the whole feeding process (Figure 1—figure supplement 1), excluding the probing times when the insect started the blood meal intake, pumping irregularly, and after the feeding process was almost finished (i.e. about 3 min before the end of the blood-meal, depending on the blood temperature). For the first experiments, the temperatures of the centre of the proboscis (Tp), head (Th), thorax (Tth), and abdomen (Tab) of each individual were measured frame by frame from the recordings (RTV analyser software). We also measured the temperature gradient all along the insect body to evaluate patterns of heat diffusion.
 
 For the second series of experiments (different combinations of ambient and blood temperatures), we randomly selected ten frames for each insect and measured the temperature of each body part as in the previous experiment. In this case, we compared the body temperatures of the experimental groups with a two-way ANOVA (factors: body part temperatures and Tblood) whenever the data were normally distributed and had homogeneous variances. Tukey tests were conducted post hoc to identify significant pair-wise comparisons. For the experiment in which the dorsal vessel was severed, temperatures of different body parts were measured during the feeding. Temperatures were then averaged within body parts for each of the five insects and the standard deviations were calculated. All graphs and statistics were done using SigmaPlot V.12 (Systat Software Inc, San José, California, USA) and R (Development Core Team, http://www.R-project.org).
 
-## Histology and microscopy
+### Histology and microscopy
 
 Light microscopy was performed on insect heads following the procedure described by Reisenman and collaborators (Reisenman et al., 2002). Briefly, freshly decapitated heads were fixed for 3 hr in a mixture of 2.5% glutaraldehyde and 2.0% paraformaldehyde in phosphate buffer (pH 7.3) with glucose and CaCl2 added. After gradual dehydrated in 100% ethanol, they were embedded via propylene oxide in Durcupan ACM (Electron Microscopy Sciences no. 14040). We used glass knives mounted on a motorised microtome to serially section blocks at 2–5 µm. Sections were stained on a hot plate with Toluidine Blue-Basic Fuchsin and mounted on a slide with DPX (Electron Microscopy Sciences no. 13510). Photomicrographs were adjusted for brightness and contrast by using Adobe Photoshop CS2. A total of 10 individuals were prepared, sectioned, stained and analysed.
 
-## Synchrotron-based X-ray imaging and computed tomography
+### Synchrotron-based X-ray imaging and computed tomography
 
-## Synchrotron-based fast X-ray imaging
+#### Synchrotron-based fast X-ray imaging
 
 Synchrotron x-ray imaging was used to observe the internal structure of R. prolixus. Experiments were performed on the BioMedical Imaging and Therapy - bending magnet (BMIT-BM) beamline 05B1-1 at Canadian Light Source (CLS) (Wysokinski et al., 2007). The experiments were done 25.5 m from the source.
 
 Starved fifth-instar R. prolixus were presented with warm, defibrinated rabbit blood (Cederlane, Ontario, Canada) labelled with organic iodide (Optiray 240, Tyco Healthcare, New Jersey) making the blood opaque to X-rays. Blood was placed in an artificial feeder and covered with a thin latex membrane that allowed the insects to pierce and feed. Insects were placed in a plastic holder that allowed them to move freely. One end of the holder was open and in direct contact with the latex membrane of the artificial feeder. The artificial feeder and the animal holder were placed on a motorised stage so we could remotely control the insect’s position in the X-ray beam. The images were captured using a high-resolution X-ray beam monitor (AA-40 Hamamatsu Photonics) optically coupled to a charge-coupled device (CCD) detector (C9300-124 Hamamatsu Photonics). The effective pixel size of the beam monitor- CCD camera combination is 4.3 × 4.3 μm. The X-rays were converted to visible light by a 10 μm-thick powder scintillator P43 (Gd2O2S:Tb). The monochromatic X-ray flux at BMIT-BM line is not high enough to collect data with a speed of at least 6–10 fps (frames per second). For that reason, we opted for using filtered white beam. The preliminary experiments showed that insects were feeling the presence of the X-ray beam when the dose rate was too high. They stopped feeding within 10 to 30 s after the beginning of the X-ray exposure and were moving to the sides of the holder trying to get out of the X-ray beam. The animals exposed to the highest dose rates that the X-ray detector could generate, died after a few minutes of continuous exposure to the beam. In order to avoid the effects described above we changed the average energy and the flux of the X-ray arriving at the sample location by proper selection of the metal filters inserted in the beam (0.055 mm Cu and 5 mm Al). As a result of that, the dose rate became much smaller and the animals did not react to the presence of the X-ray beam. The filtration of the beam limited the speed at which the data could be collected to about 6.5 fps. For the period of time when insects initiated feeding, the X-rays were blocked by fast (20 ms actuation time) mechanical shutter. After an insect had fed for 1 to 3 min (i.e. when it has finished probing and began feeding), the shutter was opened and the animal was imaged (Sena et al., 2014). A total of 16 individuals were used, some of them were analysed more than once.
 
-## Synchrotron-based X-ray phase contrast computed tomography
+#### Synchrotron-based X-ray phase contrast computed tomography
 
 X-ray phase contrast computed tomography (CT) scan was performed using monochromatic 14.0 keV (λ = 0.089 nm) X-rays, selected using the beamline Bragg double-crystal monochromator (Si2,2,0). For the CT scan the distance between sample and detector was 100 cm in order to boost the phase contrast in the images and to gain some edge enhancements in the collected images. A total of 1800 images were collected over 180 degrees’ rotation, keeping the angular increment constant (0.1 deg). At each angular position two images with exposure time in the range of 200–400 ms were recorded and added together to improve the signal to noise ratio in the collected data. Transversal and sagittal sections were done with ImageJ (NIH, USA).
 
 Fourteen starved fifth instar R. prolixus were injected with 8 to 10 µl of fixative solution though the joint connecting the abdomen to the coxa of the third or secondleg. Fixative stock solution was made by mixing 80 ml ethanol 100%, 8 ml acetic acid glacial and 2 ml of 4% formaldehyde. Insects were incubated at room temperature for 24 hr, immersed in 2% agar in PBS, and placed in a plastic cylindrical holder filled with 2% agar. Next the insect (in the holder) were placed on a motorised stage and imaged.
 
-## Data analysis
+#### Data analysis
 
 Since improvement of the absorption x-ray contrast was achieved by labelling the rabbit blood with organic iodide (iodine has much higher x-ray absorption than the animal tissue), the intensity of the X-ray reaching the detector was inversely related to the amount of rabbit blood present in the alimentary canal. Thus, the alimentary canal full of rabbit blood appears relatively dark. These changes in contrast of the images were used to study the anatomy of the alimentary canal and the function of the pharyngeal and cibarial pumps driving the blood meal.
 
-## Three-dimensional reconstruction of the head
+### Three-dimensional reconstruction of the head
 
 The 3-D reconstruction of the head structure and morphology was performed by compiling both transversal and sagittal serial histological sections and using 3ds Max software (Autodesk).
 
-## RNA extraction, cDNA synthesis and qPCR
+### RNA extraction, cDNA synthesis and qPCR
 
 Insects that had their dorsal vessel severed or sham operated (body wall opened and closed again) were fed on blood using an artificial feeder (blood temperature 39°C, environment 28°C). Even though sham bugs fed a bit faster than bugs with their dorsal vessel severed, all bugs reached about five times their initial weight. After 2 hr, insects were dissected to collect their midguts for individual RNA extraction using the Nucleospin RNA II Kit (Macherey-Nagel). RNA was treated with DNase according to the manufacturer’s instructions and eluted in 20 µL of ultra-pure RNase-free water. Then, purified RNA was quantified by measuring 260 nm wavelength absorbance and 0.5 µg was used for cDNA synthesis with 0.5 µg of random hexamers (Promega) using the M-MLV reverse transcriptase system (Promega) in a final volume of 25 µL. The cDNA was used in qPCR assays, using the StepOne Plus real time quantitative PCR system (Applied Biosystems) to evaluate HSP70 and HSP90 expression. Each reaction was run in duplicate and contained 20 ng of cDNA, specific primers for HSP70 (forward: 5’-gaaatcgtactggttggtgga-3’, reverse: 5’-cgccataggctacagcttca-3’) or HSP90 (forward: 5’-ggacccatcaagactggaga−3’, reverse: 5’- agcaatggttcccagattgt - 3’) at a final concentration of 300 nM each and 5 µL of 2x Power SYBR Green PCR Master Mix (Applied Biosystems) in a final volume of 10 µL. Amplification conditions were 95°C for 10 min, 40 cycles of 95°C for 15 s and 60°C for 1 min. A reverse transcription negative control (without reverse transcriptase) and a non-template negative control were included to confirm the absence of genomic DNA and to check for primer-dimer or contamination in the reactions, respectively. To ensure that only a single product was amplified, the melting curve was analysed. The relative amount of gene product in each sample was determined with 2-ΔΔCt method (Livak and Schmittgen, 2001) using α-tubulin (forward: 5’-tttcctcgatcactgcttcc-3’, reverse: 5’-cggaaataactggggcataa- 3’) as a reference gene (Paim et al., 2012).
 

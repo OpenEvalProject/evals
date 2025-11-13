@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/049v75w11 Intramural Research Program, National Institute on Aging, National Institutes of Health Baltimore United States
-2. https://ror.org/05nsbhw27 Research Institute, Children's Hospital of Eastern Ontario Ottawa Canada
-3. https://ror.org/01pxwe438 Research Institute of the McGill University Health Centre, McGill University Montreal Canada
-4. https://ror.org/02y3ad647 Department of Physical Therapy, University of Florida Gainesville United States
-5. https://ror.org/02y3ad647 Department of Physiology and Functional Genomics, University of Florida Gainesville United States
+1. Intramural Research Program, National Institute on Aging, National Institutes of Health Baltimore United States ([ROR:049v75w11](https://ror.org/049v75w11))
+2. Research Institute, Children's Hospital of Eastern Ontario Ottawa Canada ([ROR:05nsbhw27](https://ror.org/05nsbhw27))
+3. Research Institute of the McGill University Health Centre, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+4. Department of Physical Therapy, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+5. Department of Physiology and Functional Genomics, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
 
 † Corresponding author
 
 ## Abstract
 
-Master athletes (MAs) prove that preserving a high level of physical function up to very late in life is possible, but the mechanisms responsible for their high function remain unclear. We performed muscle biopsies in 15 octogenarian world-class track and field MAs and 14 non-athlete age/sex-matched controls (NA) to provide insights into mechanisms for preserving function in advanced age. Muscle samples were assessed for respiratory compromised fibers, mitochondrial DNA (mtDNA) copy number, and proteomics by liquid-chromatography mass spectrometry. MA exhibited markedly better performance on clinical function tests and greater cross-sectional area of the vastus lateralis muscle. Proteomics analysis revealed marked differences, where most of the ~800 differentially represented proteins in MA versus NA pertained to mitochondria structure/function such as electron transport capacity (ETC), cristae formation, mitochondrial biogenesis, and mtDNA-encoded proteins. In contrast, proteins from the spliceosome complex and nuclear pore were downregulated in MA. Consistent with proteomics data, MA had fewer respiratory compromised fibers, higher mtDNA copy number, and an increased protein ratio of the cristae-bound ETC subunits relative to the outer mitochondrial membrane protein voltage-dependent anion channel. There was a substantial overlap of proteins overrepresented in MA versus NA with proteins that decline with aging and that are higher in physically active than sedentary individuals. However, we also found 176 proteins related to mitochondria that are uniquely differentially expressed in MA. We conclude that high function in advanced age is associated with preserving mitochondrial structure/function proteins, with underrepresentation of proteins involved in the spliceosome and nuclear pore complex. Whereas many of these differences in MA appear related to their physical activity habits, others may reflect unique biological (e.g., gene, environment) mechanisms that preserve muscle integrity and function with aging. Funding for this study was provided by operating grants from the Canadian Institutes of Health Research (MOP 84408 to TT and MOP 125986 to RTH). This work was supported in part by the Intramural Research Program of the National Institute on Aging, NIH, Baltimore, MD, USA.
+Background:Master athletes (MAs) prove that preserving a high level of physical function up to very late in life is possible, but the mechanisms responsible for their high function remain unclear.Methods:We performed muscle biopsies in 15 octogenarian world-class track and field MAs and 14 non-athlete age/sex-matched controls (NA) to provide insights into mechanisms for preserving function in advanced age. Muscle samples were assessed for respiratory compromised fibers, mitochondrial DNA (mtDNA) copy number, and proteomics by liquid-chromatography mass spectrometry.Results:MA exhibited markedly better performance on clinical function tests and greater cross-sectional area of the vastus lateralis muscle. Proteomics analysis revealed marked differences, where most of the ~800 differentially represented proteins in MA versus NA pertained to mitochondria structure/function such as electron transport capacity (ETC), cristae formation, mitochondrial biogenesis, and mtDNA-encoded proteins. In contrast, proteins from the spliceosome complex and nuclear pore were downregulated in MA. Consistent with proteomics data, MA had fewer respiratory compromised fibers, higher mtDNA copy number, and an increased protein ratio of the cristae-bound ETC subunits relative to the outer mitochondrial membrane protein voltage-dependent anion channel. There was a substantial overlap of proteins overrepresented in MA versus NA with proteins that decline with aging and that are higher in physically active than sedentary individuals. However, we also found 176 proteins related to mitochondria that are uniquely differentially expressed in MA.Conclusions:We conclude that high function in advanced age is associated with preserving mitochondrial structure/function proteins, with underrepresentation of proteins involved in the spliceosome and nuclear pore complex. Whereas many of these differences in MA appear related to their physical activity habits, others may reflect unique biological (e.g., gene, environment) mechanisms that preserve muscle integrity and function with aging.Funding:Funding for this study was provided by operating grants from the Canadian Institutes of Health Research (MOP 84408 to TT and MOP 125986 to RTH). This work was supported in part by the Intramural Research Program of the National Institute on Aging, NIH, Baltimore, MD, USA.
 
 ## Introduction
 
@@ -39,47 +39,47 @@ In this study, we used data and biological specimens collected in 15 track and f
 
 Note that additional details of the methods may be found in Appendix 1.
 
-## Ethical approval
+### Ethical approval
 
 All procedures carried out with human subjects were done with prior approval from the Institutional Review Board of the Faculty of Medicine at McGill University (A08-M66-12B) and according to the Declaration of Helsinki. All subjects provided written informed consent.
 
-## Human subject characteristics
+### Human subject characteristics
 
 Age- and sex-matched octogenarian world-class track and field athletes (n = 15; eight females) and non-athlete participants (n = 14, six females) were recruited for this study. No explicit power analysis was performed a priori due to the rare nature of the octogenarian world-class athletes, but the premise was to select populations of widely different physical function in advanced age so that insights concerning the role of potential differences in muscle biology in the differences in physical function might be obtained.
 
-## Sample collection
+### Sample collection
 
 A variety of clinical function tests, thigh CSA by MRI, and a vastus lateralis muscle biopsy were performed in 15 octogenarian world-class track and field athletes and 14 non-athlete age- and sex-matched non-athlete controls. A portion of muscle from a subset of 12 MAs (MA mean age 81.19 ± 5.1 years) and 12 non-athlete controls (NA mean age 80.94 ± 4.5 years) was used from these subjects for liquid-chromatography mass spectrometry (LC-MS) to generate quantitative tandem mass tag (TMT) proteomics data. In addition, we measured mtDNA copy number, the abundance of representative subunits of OXPHOS complexes by Western blot, and muscle histological assessment for fiber type and respiratory compromised fibers (see below).
 
-## Muscle fiber-type labeling and imaging in muscle cross-sections
+### Muscle fiber-type labeling and imaging in muscle cross-sections
 
 10-µm-thick sections that were serial to those used in histochemical labeling for respiratory compromised fibers were used in immunolabeling experiments to demonstrate fiber type by probing for the major myosin heavy chain (MHC) isoforms in human skeletal muscle. Sections were first hydrated with 1× phosphate buffered saline (PBS) and blocked with 10% normal goat serum for 30 min in 1× PBS. Sections were subsequently incubated with the following primary antibodies for 1 hr at room temperature: polyclonal rabbit anti-laminin IgG (L9393, 1:700; Sigma-Aldrich), monoclonal mouse anti-MHCI IgG2b (BA-F8, 1:25), monoclonal mouse anti-MHCIIa IgG1 (Sc71, 1:200), and monoclonal mouse anti-MHCIIx IgM (6H1, 1:25). MHC primary antibodies were obtained from the Developmental Studies Hybridoma Bank (University of Iowa, USA). Tissue sections then underwent three washes in 1× PBS, and subsequent incubation with the following secondary antibodies for 1 hr at room temperature: Alex Fluor 488 goat anti-rabbit IgG (A11008, 1:500), Alexa Fluor 350 goat anti-mouse IgG2b (A21140, 1:500), Alex Fluor 594 goat anti-mouse IgG (A21125), and Alexa Fluor 488 goat anti-mouse IgM (A21042, 1:500).
 
 Following immunolabeling experiments, slides were imaged with a Zeiss Axio Imager M2 fluorescence microscope (Carl Zeiss, Germany) and analyzed with ImageJ (National Institutes of Health, USA) by an observer blinded to the identity of the samples. An average of 366 ± 131 fibers were analyzed per sample.
 
-## Sample preparation and protein extraction for MS
+### Sample preparation and protein extraction for MS
 
 Roughly, 5–8 mg of vastus lateralis muscle tissue per subject was pulverized in liquid nitrogen and mixed with the modified SDT lysis buffer (100 mM Tris, 140 mM NaCl, 4% SDS, 1% Triton X-114, pH 7.6; Sigma) (Wiśniewski et al., 2009). Tissues were sonicated, protein concentration was determined, and the sample quality was confirmed using NuPAGE. 300 µg of muscle tissue lysate was used for tryptic digestion. Samples were basic reverse-phase fractionated and analyzed in nano LCMS/MS (Q-Exactive HF) using previously published method (Ubaida-Mohien et al., 2019b). The method details are given in Appendix 1.
 
-## Proteomics informatics
+### Proteomics informatics
 
 The raw MS data acquired from 24 samples (MA = 12, NA = 12) was converted to .mgf files (using MSConvert, ProteoWizard 3.0.6002) for each sample fraction and was searched with Mascot 2.4.1 and X!Tandem CYCLONE (2010.12.01.1) using the SwissProt Human sequences from UniProt (version year 2017, 20,200 sequences, appended with 115 contaminants) database. The search engine was set with the following search parameters: TMT 10-plex lysine and n-terminus as fixed modifications and variable modifications of carbamidomethyl cysteine, deamidation of asparagine and glutamate, carbamylation of lysine and n-terminus, and oxidized methionine. A peptide mass tolerance of 20 ppm and 0.08 Da, respectively, and two missed cleavages were allowed for precursor and fragment ions in agreement with the instrument’s known mass accuracy. Mascot and X!Tandem search engine results were analyzed in Scaffold Q+ 4.4.6 (Proteome Software, Inc). The TMT channels’ isotopic purity was corrected according to the TMT kit. Peptide and protein probability was calculated with PeptideProphet and ProteinProphet probability model (further details are given in Appendix 1).
 
 The log2 transformed reporter ion abundance was normalized by median subtraction from all reporter ion intensity spectra belonging to a protein across all channels. Relative protein abundance was estimated by the median of all peptides for a protein combined. Protein sample loading effects from sample preparations were corrected by median polishing, that is, subtracting the channel median from the relative abundance estimate across all channels to have a median zero as described elsewhere (Herbrich et al., 2013; Kammers et al., 2015). Quantified proteins were annotated, and corresponding gene names were assigned to each protein for simplicity and data representation. Annotation of the proteins was performed by manual curation and combining information from UniProt, GO, and Reactome database. Further bioinformatics analysis was performed using R programming language (3.4.3) and the free libraries available on Bioconductor. The validation of the age effects and physical activity was performed by comparing the MA dataset with the GESTALT dataset. The details of the GESTALT dataset are available on PRIDE repository PXD011967, and GESTALT subject characteristics are provided in Figure 5—source data 1.
 
-## Histochemical labeling for respiratory compromised muscle fibers
+### Histochemical labeling for respiratory compromised muscle fibers
 
 COX/SDH histochemistry (Old and Johnson, 1989; Taylor et al., 2003) was performed to assess the relative activity of OXPHOS complexes IV (COX) and II (SDH), and thus identify muscle fibers with low (CoxInt) or deficient (COXNeg) COX activity relative to SDH activity. The COX incubation medium was prepared by adding 100 μM cytochrome c to 4 mM of 3,3-diaminobenzidine tetrahydrochloride (DAB) with 20 μg of catalase. Further method details are included in Appendix 1. Counts of COX-positive (COXPos), COXInt, and COXNeg myofibers were performed for the whole-muscle cross-section. COX-negative fibers are indicative of cells with high levels of mtDNA mutations and will thus not demonstrate the brown reaction product (oxidized DAB) during the first incubation but will stain blue following the second incubation for SDH activity. This is because the nuclear DNA entirely encodes SDH, so any mtDNA mutations will not affect its activity. In contrast, mtDNA mutations could affect complex IV activity and prevent DAB oxidation if a mutation affects a region of mtDNA containing the COX subunit genes. Similarly, COXInt fibers exhibit low COX activity relative to SDH and appear bluish-gray, and are thought to represent muscle fibers/segments that are in the process of transition to COXNeg status (Murphy et al., 2012).
 
-## Mitochondrial DNA copy number
+### Mitochondrial DNA copy number
 
 Groups of 25 fibers (5 × 5 fibers) in an unstained 20-μm-thick muscle cross-section from each subject were randomly selected (random number generator and numbered grid), laser captured, and their DNA extracted using the lysis method and stored at –20°C. The products were then separated and the bands visualized using a G-Box chem imaging system (Figure 3—figure supplement 6—source data 1A). The mtDNA fragment was extracted and the total mtDNA copy number in muscle fibers was determined using a standard curve (Greaves et al., 2010; Figure 3—figure supplement 6—source data 1B). The method details are in Appendix 1.
 
-## Western blotting for mitochondrial proteins
+### Western blotting for mitochondrial proteins
 
 Western blotting for representative mitochondrial proteins was performed as described previously (Spendiff et al., 2016). Briefly, 10–20 mg of muscle was homogenized in a Retch mixer mill (MM400) with 10× (w/v) of extraction buffer (50 mM Tris base, 150 mM NaCl, 1% Triton X-100, 0.5% sodium deoxycholate, 0.1% sodium dodecyl sulfate), and 10 µl/ml of Protease Inhibitor Cocktail. Following 2 hr of gentle agitation at 4°C, samples were centrifuged at 12,000 × g for 20 min at 4°C, and the supernatant removed for protein assessment by Bradford assay. Samples were diluted in 4× Laemmli buffer to yield a final protein concentration of 2 µg/ml and then boiled for 5 min at 95°C. Immunoblotting was done using 20 µg of protein, loaded onto a 12% acrylamide gel, electrophoresed by SDS-PAGE and then transferred to polyvinylidene fluoride membranes (Life Sciences), blocked for 1 hr at room temperature in 5% (w/v) semi-skinned milk, and probed overnight at 4°C with the following primary antibodies (diluted in 5% BSA): mouse monoclonal anti-VDAC (1:1000; Abcam ab14734) and mouse monoclonal Total OXPHOS Cocktail (1:2000, Abcam ab110413). To address the poorer sensitivity to the CIV subunit in this cocktail after boiling human samples, we also probed using mouse monoclonal CIV (1:1000, Life Technologies A21348). Ponceau staining was performed to normalize protein loading. Following washing, membranes were incubated with HRP-conjugated secondary antibodies (diluted in 5% milk, Abcam) for 1 hr at room temperature. Protein bands were detected using SuperSignal West Pico Chemiluminescent Substrate (Thermo Scientific, USA) and imaged with a G-Box Chem Imaging System. Analysis of protein bands was performed using GeneTools software (Syngenem, UK).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical comparisons of physical function tests, vastus lateralis CSA, mtDNA copy number, and protein abundance by Western blot (VDAC) were performed using a two-tailed Student’s t-test, with the p-value for significance set at <0.05. Statistical comparison of fiber type proportion (type × group), fiber size by type (type-specific size × group), Western blot (OXPHOS complex subunit abundance × group), and the abundance of respiratory chain compromised fibers (COX status × group) was performed by two-way ANOVA, with a Sidak multiple-comparison post-hoc test.
 
@@ -87,25 +87,158 @@ For LC-MS analyses, protein significance was determined with p-values derived fr
 
 ## Results
 
-## Superior clinical function in master athletes (MA) versus non-athlete controls (NA)
+### Superior clinical function in master athletes (MA) versus non-athlete controls (NA)
 
 The general characteristics of the 15 MA and 14 NA participants are summarized in Table 1.
 
+**Table 1.**
+ Characteristics of non-athletes (NA) and master athletes (MA).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>NA (n = 14)</th>
+      <th>MA (n = 15)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>80.9 ± 4.5</td>
+      <td>80.1 ± 4.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>7</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>8</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Body mass (kg)</td>
+      <td>72.1 ± 11.4</td>
+      <td>62.2 ± 10.7</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Body fat (%)</td>
+      <td>36.0 ± 6.6</td>
+      <td>21.9 ± 5.0</td>
+      <td>&lt;0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are mean ± SD._
+
 The athletes could generally be subdivided into two groups based upon their preferred competition events. Sprint/power athletes comprised individuals who competed in multisport jumping, throwing, and sprinting events, and individuals who competed in sprint running. Endurance athletes competed in track running and road running distances from 400 m to a full marathon (26.2 miles). An overview of the training and competition history of the MA group is given in Table 2. With respect to their training habits, it should be noted that each subject commented that the training load (particularly intensity) varied not only within a competition season but also within a 5-year age bracket (e.g., 75–79 years, 80–84 years). Training typically increased in the months approaching a birthday that would move them up to the next age category to take advantage of being the ‘youngest’ in their new age bracket at international competitions. In addition, regardless of the preferred competition events, all athletes noted a very mixed training regimen consisting of varying amounts of running, cycling, walking, stretching, yoga, and strength training. The rationale for selecting athletes from a broad array of athletics disciplines was that we were not interested in the effects of a specific type of exercise training per se (e.g., endurance or strength training), but rather in identifying individuals with exceptional physical capabilities regardless of their training. Consistent with this rationale, MA participants had superior function during the assessment of VO2max, peak cycle work rate, time to walk 4 m fast, chair stands, timed-up and go, and balance time versus NA (Figure 1a–f), confirming that they represent high-functioning octogenarians.
 
-## Greater preservation of muscle mass in octogenarian MA
+**Table 2.**
+ Training and competition history of octogenarian master athletes (MA).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n</th>
+      <th>Age (years)</th>
+      <th>Training per week (hr)</th>
+      <th>Years competing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sprint, power</td>
+      <td>8 (4F)</td>
+      <td>79.9 ± 6.1</td>
+      <td>16 ± 3</td>
+      <td>16.6 ± 6.2</td>
+    </tr>
+    <tr>
+      <td>Endurance</td>
+      <td>7 (4F)</td>
+      <td>80.3 ± 3.4</td>
+      <td>14 ± 3</td>
+      <td>26.6 ± 9.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are mean ± SD._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig1-v2.jpg)
+
+**Figure 1.:** (a–f) Clinical function tests in NA and MA. (g) Thigh cross-sectional image of an 80-year-old male NA (h) and an 83-year-old male MA. (i) Vastus lateralis muscle cross-sectional area (CSA) was greater in MA than NA. (j) Maximal isokinetic strength during knee extension was greater in MA than NA. Graphs show means and standard deviations. Groups were compared by a two-tailed Student’s t-test, with <0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Fiber type quantification. Fiber type proportion is quantified using immunofluorescence labeling in non-athlete (NA) and master athlete (MA) subjects. (b) Myosin isoform quantification from the proteomics results from the same subjects. (c) Fiber size by type and (d) type I to type II myosin protein expression ratio.
+
+### Greater preservation of muscle mass in octogenarian MA
 
 All MA and NA participants underwent an MRI scan of the mid-thigh region at the same level as the muscle biopsy. Thigh cross-sectional images (Figure 1g and h) and MRI cross-sectional images of participants were analyzed (Figure 1i). The area of the vastus lateralis muscle (biopsied muscle) was determined for both legs. The estimated CSA of the vastus lateralis (average of both legs) was 30% higher in MA than NA (Figure 1j). Maximal isokinetic strength during knee extension was significantly greater in MA than NA. To consider the myosin genes that encode muscle mass maintenance and skeletal muscle contraction, we performed a fiber type proportion and fiber size type analysis (type I, type IIa, type IIx, and hybrid) by immunolabeling for the major MHC isoforms in MA and NA. This analysis shows no difference in fiber type proportion and a 28% higher mean fiber CSA in MA versus NA (Figure 1—figure supplement 1a). The lack of fiber type proportion differences between groups is corroborated by our proteomics data, which also shows no significant differences in the expression of MYH7 (type 1), MYH2 (type IIa), MYH1 (type 2x), and negligible expression of MYH4 (type IIb) as expected (Figure 1—figure supplement 1b). Indeed, after accounting for the false discovery rate (FDR), there were no significant differences in MHCs between groups. Furthermore, there were no significant differences in fiber size by type or in the type I to type II MHC protein expression ratio between MA and NA (Figure 1—figure supplement 1c and d, respectively).
 
-## Quantitative proteomics reveals temporal proteome differences between MA and NA
+### Quantitative proteomics reveals temporal proteome differences between MA and NA
 
 To understand how skeletal muscle protein composition differs between MA and NA octogenarians, we performed a discovery proteomic analysis of muscle biopsies using LC-MS. We used a 10-plex TMT labeling approach that allows quantification and direct comparison between samples. Analyzing 28 participants, we were able to quantify 6176 proteins (Figure 2a, Figure 2—figure supplement 1). Of these, 4178 proteins (68%) were quantifiable across three TMT batches (present in all donors) and 1998 proteins (18%) were quantifiable in only one TMT batch (present in at least 10 donors). The quantitative protein expression between the TMT batches (Figure 2b) was mostly similar. The list of all proteins quantified from the MA and NA skeletal muscle is reported in Supplementary file 1. The partial least square (PLS) dimensionality reduction method used to stratify proteome distribution between MA and NA from 24 donors (Figure 2c) reveals a clear separation between the groups along the PC1 (11.6%) and PC2 (16.7%) axes and PC3 (11.1%) axes.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig2-v2.jpg)
+
+**Figure 2.:** (a) Number of proteins quantified among three tandem mass tag (TMT) batches. (b) Quantitative protein expression between three TMT batches. (c) Partial least square (PLS) plot of MA and NA donors. Red circles are MA donors, and cyan circles are NA donors. (d) Proteins differentially expressed between MA and NA. Each circle is a protein, red circles are proteins increased in abundance in MA, and blue circles are proteins decreased in abundance in MA. (e) Cellular location of the differentially expressed proteins in MA and the number of proteins encoded for each component are shown (X-axis).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Boxplot of all donors from three TMT batches. X-axis shows all the donors including repeats, and y-axis shows the median normalized log2 protein intensity. Each batch is color coded.
+
 Of all the 6176 proteins quantified, 880 were differentially represented between MA and NA (Student’s t-test, p<0.05, fold change [FC] > 1.02 for overrepresented proteins and <0.9 for underrepresented proteins), and of these, 544 proteins were overrepresented and 336 proteins were underrepresented in MA compared to NA (Figure 2d, Supplementary file 2). UniProt cellular localization coverage for these divergently represented proteins is shown in Figure 2e. Of note, 42% of the total 880 significantly altered proteins in octogenarians were mitochondrial proteome, and most of the differentially represented proteins relate to mitochondrial structure or OXPHOS. This ample coverage of the mitochondrial proteome enables us to explore the modulating role of mitochondria in high-functioning octogenarians' muscle metabolism.
 
-## Mitochondrial protein enrichment in octogenarian MA
+### Mitochondrial protein enrichment in octogenarian MA
 
 The 369 mitochondrial proteins overrepresented in MA include 117 mitochondrion inner membrane proteins, 21 outer membrane proteins, 18 matrix proteins, 10 inter-membrane space proteins, and 5 outer membrane proteins. The abundance of all mitochondrion proteins is higher in MA, except eight proteins (Figure 3a). Enrichment analysis with the whole human genome as a statistical background revealed oxidoreductase activity, electron transport activity, and cofactor binding as the top significantly enriched pathways in MA after FDR correction and Fisher’s exact test cutoff at p<0.01 (Figure 3b). Specifically, 110 proteins associated with TCA and respiratory electron transport, 71 proteins from OXPHOS and 43 protein constituents of complex I, 3 in complex II (SDHA, SDHB, SDHC), 8 in complex III, 13 in complex IV, and 10 in complex V were significantly more abundant in MA (Figure 3c).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig3-v2.jpg)
+
+**Figure 3.:** (a) Dysregulation of significant mitochondrial proteins shown as red circles. (b) Functional classification of mitochondrial proteins with protein-protein interaction enrichment p-value<1.0e-16. (c) Heatmap showing upregulated respiratory chain complex proteins in MA. 71 complex proteins on y-axis. X-axis shows donors. (d) Enrichment of mitochondrial sirtuins SIRT5 and SIRT3 in muscle of MA versus non-athletes (NA). (e) Respiratory chain compromised fibers in skeletal muscle. COX/SDH image showing the identification of COXPos (brown cells), COXInt (empty stars), and COXNeg muscle fibers (solid star). COXNeg fibers have lost complex IV activity relative to SDH and appear blue, COXInt retain small amounts of COX activity relative to SDH and appear gray, and COXPos fibers have normal COX activity relative to SDH and appear brown. Scale = 200 μm. (f) Quantification revealed a significantly higher abundance of healthy COXPos fibers (*p=0.0291) and fewer respiratory chain compromised (COXInt) myofibers (*p=0.0448) in MA compared to NA. (g) Upregulation of mitochondrial DNA (mtDNA) in MA. MA and NA donors are shown on X-axis; quantified mtDNA proteins are shown on Y-axis. (h) Increased mtDNA copy number in MAs. Absolute mtDNA copy number was determined using a standard curve constructed from known amounts of mtDNA. MA had significantly more copies of mtDNA than NA (*p=0.0177; t-test). Graph shows the means and standard deviation. (i) Protein groups that maintain the functional integrity of mitochondria were higher in MA. (j) Upregulated MA proteins in MICOS complex system and the fold change of the proteins. Cellular location of the proteins is color coded.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Higher abundance of cytochrome c in MA. (b) Abundance of mitochondrial proteins. (i) There was no significant difference in VDAC assessed by Western blot between MA (n = 15) and NA (n = 13, insufficient tissue form one subject). Removal of the MA outlier made no difference to significance values (Wilcoxon rank-sum). (ii) Citrate synthase protein content by proteomics was higher in MA. (c) (i) There was a significant main effect (p=0.046) indicating higher OXPHOS complexes relative to VDAC in MA (gray squares). Western blot values are expressed relative to NA average (empty circles). Graphs show means and standard deviations. (ii) Consistent with these Western blot analyses, Log2 fold change (FC) expression of 64 significant OXPHOS complex proteins versus 21 VDAC proteins was higher in MA than NA. (d) Ribosomal proteins. Mitochondrial ribosomes are overrepresented in MA, and cytoplasmic ribosomes are underrepresented in MA. (i) 12 28S ribosomal proteins were averaged and (ii) 24 39S ribosomes are averaged and shown, respectively. (iii) 40S ribosomal protein RPS2 is significantly lower in MA versus NA, and similarly (ii) the abundance of RPLP0 60S protein was higher in MA. (e) Size distribution of respiratory chain compromised fibers: range of observations in (i) NA and (ii) MA, along with the frequency distributions in (iii) NA and (iv) MA. There was no significant difference in the average fiber size between COXPOS, COXInt, or COXNeg cells in either NA or MA subjects, and there was no significant increase in the frequency of COXNeg cells in the smallest size bin. Circles are NA and squares are MA, brown symbols are COXPos fibers,.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Mitochondrial protein quantification was performed by immunoblotting of the mitochondrial proteins VDAC (a) and the components of the oxidative phosphorylation (OXPHOS) system (b). The samples were loaded alternatively, that is, one master athletes (MA) and one non-athletes (NA). Gels held 12 samples plus a pre stained protein standard (161-0375 Bio-Rad). Quantification was performed on images taken with all three gels present. The gels were probed for tubulin (c), stripped, then probed for VDAC, stripped again, and then probed for the OXPHOS subunits. C = samples of protein from subjects not included in this study.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Relative protein abundance of metaxin. (b) TOM complex and TIM complex. The average expression of all the proteins quantified for TOM complex (TOM22 and TOMM40) and nine TIM complex proteins is given on the bottom figure panel.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Expression of significant proteins from autophagy and proteasome pathways is shown for master athletes (MA) vs. non-athletes (NA). Each bar is a protein with the corresponding gene name showing decrease in abundance to increase in abundance (left to right). X-axis is the protein, and Y-axis is the log2 fold change (FC) of the MA proteins. Different categories of the autophagy, proteostasis proteins are color coded.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) Expression of significant nuclear pore proteins for all donors. The first 12 columns are master athlete (MA) donors followed by non-athletes (NA), The abundance of protein expression is lower in MA versus NA. (b) Underrepresented MA proteins in the nuclear pore structure. Structure of nuclear pore complex (NPC) and the proteins underrepresented showing significant protein coverage for all classes of NPC. Bold blue gene names are significantly underrepresented proteins (p<0.05), blue gene names are quantified but not significant (p>0.05), and gray gene names are not detected in the dataset.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** A 1011 bp fragment (a) containing the MTND1 region was amplified and then run (both visible lanes) with a 25K ladder (Diamed). Following separation on a 1% gel, the band was extracted using a QIAquick Gel Extraction Kit (QIAGEN) and the product quantified using a spectrophotometer. (b) The mtDNA fragment was then serially diluted down to generate a standard curve, which was then run on an MTND1 TaqMan qPCR assay multiple times to generate a consistent line and equation. All subject samples were run at the same time along with the curve in order that their mtDNA copy number could be determined.
 
 The cytoplasmic and nuclear SIRTs were not quantified in our dataset; however, we explored SIRT3 and SIRT5 mitochondrial sirtuins, which are master regulators of mitochondrial biology, including ATP production, metabolism, apoptosis, and intracellular signaling. Both SIRT3 and SIRT5 proteins were 1.2-fold more abundant in MA than NA (p<0.01) (Figure 3d). Of note, the overrepresentations of SIRT3 in MA were consistent with higher deacetylation of long-chain acyl-CoA dehydrogenase (LCAD) in MA (FC 1.14 and p=0.007), which suggest elevation of lipid catabolism and fatty acid oxidation pathways. The deacetylase activity of SIRT3 improves mitochondrial function by the deacetylation of mitochondrial complex I protein NADH ubiquinone oxidoreductase subunit A9 (NDUFA9) (Ahn et al., 2008) and succinate dehydrogenase from complex II (SDH) (Cimen et al., 2010). SIRT3 also deacetylates the mitochondrial permeability transition-regulating protein, cyclophilin D, to reduce likelihood of opening of the mitochondrial permeability transition pore (Hafner et al., 2010). Finally, SIRT3 deacetylates lysine residues on SOD2 to promote its antioxidant activity and thereby reduce the level of reactive oxygen species (ROS) released outside mitochondria. While we would expect this deacetylation to increase SOD2 activity independent of changes in SOD2 content, in our study SOD2 protein (FC = 1.17, p=0.037) was also more highly expressed in MA. Comparatively less is known about SIRT5 than SIRT3, but it has been reported that SIRT5 physically interacts with cytochrome c (CYCS) and CYCS abundance was 1.3-fold higher in MA (Figure 3—figure supplement 1a).
 
@@ -113,7 +246,7 @@ While our proteomics analyses identified a globally higher abundance of OXPHOS p
 
 In contrast to the general higher abundance of mitochondrial proteins noted above, eight mitochondrial proteins had a lower abundance in MA, which were NADH-cytochrome b5 reductase 3 (CYB5R3), phosphatidate cytidylyltransferase 2 (CDS2), long-chain-fatty-acid--CoA ligase 3 (ACSL3), dimethylarginine dimethylaminohydrolase 1 (DDAH1), WD repeat-containing protein 26 (WDR26), serine/threonine-protein phosphatase PGAM5 (PGAM5), SHC-transforming protein 1 (SHC1), and StAR-related lipid transfer protein 7 (STARD7).
 
-## mtDNA protein enrichment and maintenance of cristae architecture in octogenarian MA
+### mtDNA protein enrichment and maintenance of cristae architecture in octogenarian MA
 
 Previous studies suggest that respiratory chain defects in skeletal muscle may result from high levels of mtDNA mutations (Bua et al., 2006; Murphy et al., 2012) and/or mtDNA depletion (Müller-Höcker et al., 1993; Mueller et al., 2012). To address this issue in our subjects, we specifically explored mitochondrial proteins in our proteomics dataset encoded in mtDNA. Of the known 13 mtDNA proteins, 8 were quantified in our data, and all of them were significantly more abundant in MA than in NA (p<0.05) (Figure 3g). The proteomics data were consistent with findings that absolute mtDNA copy number evaluated using a quantitative method was higher in MA than in NA (Figure 3h) and indicated parallel greater abundance of mtDNA copies and mtDNA-encoded proteins in MA. Further, the observation of a lower abundance of respiratory compromised fibers (defined as low or absent complex IV staining in COX-SDH double-stained muscle cross-sections) (Figure 3e and f) in MA versus NA is consistent with a lower burden of mtDNA mutation in highly functioning MA octogenarians compared to NA.
 
@@ -123,15 +256,15 @@ Mitochondrial morphology is regulated by proteins that modulate fission (e.g., D
 
 A complex array of dynamic protein interactions (Sam50, Metaxin, and the inner membrane-localized MICOS) at cristae junctions that form the mitochondrial intermembrane space bridging (MIB) complex was reported recently (Huynen et al., 2016). The outer mitochondrial membrane protein Metaxin2 (MTX2), which was significantly more abundant in MA (Figure 3—figure supplement 3a), interacts with MICOS complex and MTX3, which are the part of MIB complex (Huynen et al., 2016). Metaxins, together with Sam50, are also important for the stability of respiratory complexes (Ott et al., 2012). A general translocase mediates the import of nuclear-encoded mitochondrial preproteins in the outer membrane, the TOM complex, and by two distinct translocases in the mitochondrial inner membrane, the TIM23 complex, and the TIM22 complex. The average expression of 2 TOM complex proteins (TOMM22 and TOMM40) and 10 TIM complex proteins (TIM10, TIM13, TIM14, TIM16, TIM21, TIM22, TIM23, TIM29, TIM44, and TIM50) was found to be more abundant in MA (Figure 3—figure supplement 3b).
 
-## Autophagy and proteostasis pathway proteins in octogenarian MA
+### Autophagy and proteostasis pathway proteins in octogenarian MA
 
 Skeletal muscle mass is influenced by the proteolytic process of protein turnover and degradation. The major regulatory process of the proteolytic system is chaperone-mediated autophagy by lysosomes and the ubiquitin proteasome pathway. There were 267 proteins from these pathways quantified and 47 proteins were significantly associated with MA (p<0.05, 17 underrepresented in MA). The proteins were categorized as autophagy, autophagy-lysosome, chaperones, proteasome, and other proteostasis cluster proteins (Figure 3—figure supplement 4). Proteasome proteins PSMB1, PSMA2, small heat shock protein HSPB8, DNAJ proteins like DNAJB4 and DNAJC3, were lower in MA. Activation/inhibition of autophagy – such as V-type proton ATPase 116 kDa subunit isoform 1 (ATP6V0A1), heat shock 70 proteins like HSPA2 and HSPA1A proteins – were also lower in MA. A lower ATP6V0A1 was reported previously in highly active aging healthy donors (Ubaida-Mohien et al., 2019a). In contrast, many mitochondrion-localized proteostasis proteins like HSCB, MRPL18, TIMM9, HSPE1, and HSPA9 were higher in abundance in MA. PRKAG2, 5′-AMP-activated protein kinase subunit gamma-2, a component of AMP kinase main energy-sensor protein kinase that responds to changes in the cellular AMP:ATP ratio and regulates the balance between ATP production and consumption, was one of the highly expressed proteins (log2FC 1.3) in MA octogenarians, suggesting a tightly monitored balance between energy production and utilization (Mounier et al., 2015).
 
-## Impact of nuclear pore membrane proteins and transport proteins in octogenarian MA
+### Impact of nuclear pore membrane proteins and transport proteins in octogenarian MA
 
 Nuclear pore complexes (NPCs) facilitate and regulate the transport of different macromolecules across the nuclear envelope, allowing bilateral exchanges between the nuclear and cytoplasmic environment (Strambio-De-Castillia et al., 2010; Wente and Rout, 2010). 25 nuclear pore proteins were quantified, all less expressed in MA than in NA, and for 12 of them, the difference was statistically significant (p<0.05) (Figure 3—figure supplement 5a). Nucleopore cytoplasmic filaments like NUP358, NUP98, and NUP88, and adaptor NUPs like NUP98/96 were less abundant in MA. Tpr, the central architectural element of nuclear pore formation, Nup93, which is critical for nuclear permeability, was also less abundant in MA (Figure 3—figure supplement 5b). The lower abundance of proteins of the nuclear pore in MA was unexpected and should be further explored in future studies.
 
-## Spliceosome pathway proteins are underrepresented in octogenarian MA
+### Spliceosome pathway proteins are underrepresented in octogenarian MA
 
 Alternative splicing produces protein variants by combining information from different exon sequences in the same genes. Aging is associated with the emergence of different splicing variants of the same genes (Harries et al., 2011; Holly et al., 2013; Bhadra et al., 2020). However, it remains unknown whether these changes in the human proteome are part of the aging process or represent resilience strategies to cope with the damage accumulation and functional decline associated with aging (Deschênes and Chabot, 2017). Previous studies have shown that alternative splicing is particularly abundant in skeletal muscle, and we have shown that proteins that regulate alternative splicing are significantly overrepresented in skeletal muscle tissue from older compared to younger healthy individuals (Ubaida-Mohien et al., 2019b). Interestingly, after accounting for age and other covariates, being physically active in daily life was associated with a lower representation of spliceosome proteins in skeletal muscle (Ubaida-Mohien et al., 2019a). Also, one of the strongest signals in the current analysis was a lower representation of proteins related to mRNA metabolic process, mRNA splicing, and mRNA processing in MA. In particular, we were able to quantify 132 spliceosome proteins, and of these 22 proteins were less abundant in MA (p<0.05) (Figure 4a). The functional characteristics of the spliceosomal proteins are shown in Figure 4b. Of note, TRA2A, an RNA-binding splicing factor protein that modulates splicing events and translation, was among the significantly affected proteins (p=0.0004) in this category and also had the greatest fold-difference from NA (Figure 4c). Functional analysis of TRA2A suggests a highly interconnected functional interaction network with two major pathway proteins: mRNA splicing major pathway (red) and mRNA splicing minor pathway (blue) proteins (Figure 4d). Despite not having a direct interaction within this network, the DCPS protein has a role in the first intron splicing of pre-mRNAs (Figure 4d). Taken together, the lower representation of spliceosome proteins that regulate alternative mRNA splicing in MA is consistent with the effects of physical activity in our previous study and is consistent with our previous hypothesis that alternative splicing is part of a resilience response in the face of lower mitochondria function (Ferrucci et al., 2022). Such a resilience response is not required in MA because of high mitochondrial function maintenance despite old age (Ubaida-Mohien et al., 2019a). This hypothesis is also consistent with previous data showing that after adjusting for age and physical activity better skeletal muscle oxidative capacity assessed by 31P-MR spectroscopy is associated with overrepresentation of splicing machinery and pre-RNA processing proteins (Adelnia et al., 2020).
 
@@ -139,13 +272,13 @@ Alternative splicing produces protein variants by combining information from dif
 
 **Figure 4.:** (a) Underrepresentation of spliceosome pathway proteins. Significant spliceosome proteins (22) underrepresented in MA are marked as red circles, and all other proteins are marked as gray circle. X-axis shows log2 fold expression of the proteins in MA versus non-athletes (NA). (b) The functional characteristics of the spliceosome proteins are shown. Each GO annotation cluster is color coded. (c) Downregulation of TRA2 protein in MA donors. Y-axis shows the log2 relative protein abundance. (d) Interaction partners of TRA2 protein; with RNA splicing regulation proteins, mRNA major splicing pathway, and mRNA minor splicing pathway proteins.
 
-## Modulation of mitochondrion and splicing machinery with aging, physical activity, and exercise
+### Modulation of mitochondrion and splicing machinery with aging, physical activity, and exercise
 
 To further explore the hypothesis that alternative splicing is part of a compensatory adaptation to impaired mitochondrial function, we combined the results of this study with the skeletal muscle proteomic data in 58 healthy participants collected in the GESTALT study (Figure 5—source data 1; Ubaida-Mohien et al., 2019a; Ubaida-Mohien et al., 2019b). Notably, we searched for proteins that were underrepresented with age (GESTALT, Age-) and overrepresented with both higher physical activity (GESTALT, PA+) and in master athletes (MA+) compared to age-matched controls (Figure 5). Enrichment analysis of proteins at the intersection showed 50 proteins enriched at all three shared interceptions, including proteins representing mitochondrial biogenesis, TCA cycle and respiratory electron transport, MICOS complex, and cristae formation (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74335/elife-74335-fig5-v2.jpg)
 
-**Figure 5.:** Proteins that decline with aging but are antagonized in physically active subjects (GESTALT, n = 58) and MA group. Enriched pathways from 50 proteins that increase with PA and MA and decrease with Age are shown (top), and pathways from 12 proteins are are in common between PA and Age (left) and enriched pathways from 22 proteins that are in common between MA and Age (right). Top enriched pathways are color coded (significance threshold false discovery rate [FDR] < 0.05). Proteins without interaction partners are omitted from visualization.Figure 5—source data 1.The participants are classified into five different age groups. Gender: the number of donors is represented in numeric, M is male, F is female. Age in years as mean and standard deviation (SD±) for each age group. Race: number of donors is shown in left and race is shown in italics, C is Caucasian, AA is African American, and A is Asian. Body mass index (BMI) expressed as mean and SD (±) for each group. p-Value is calculated by one-way ANOVA with Kruskal–Wallis test. *p-Value calculated from linear regression model, gender adjusted. ± knee extension isokinetic strength (KEIS) (300/s; Nm). †Physical activity is calculated from the sum of weight circuit, vigorous exercise, brisk walking and casual walking, and summed as high-intensity physical activity per week. This is further categorized into 0 (not active), 1 (moderately active), 2 (active), and 3 (highly active) and expressed as mean of categorical variables (0, 1, 2, 3) ± SD.
+**Figure 5.:** Proteins that decline with aging but are antagonized in physically active subjects (GESTALT, n = 58) and MA group. Enriched pathways from 50 proteins that increase with PA and MA and decrease with Age are shown (top), and pathways from 12 proteins are are in common between PA and Age (left) and enriched pathways from 22 proteins that are in common between MA and Age (right). Top enriched pathways are color coded (significance threshold false discovery rate [FDR] < 0.05). Proteins without interaction partners are omitted from visualization.
 
 Although there was considerable overlap between proteins overrepresented with higher physical activity in the GESTALT study and proteins overrepresented in MA, a large group of proteins related to mitochondrial protein import and mitochondrion organization were specific to the MA group (not associated with physical activity per se). This suggests that although many of the proteins that are more abundant in MA versus NA can be attributed to MAs’ physical activity habits, this does not account for all of the differences observed. Specifically, out of 301 unique MA+ proteins, a subset of proteins – mitochondrial translation (36 proteins), mitochondrial inner membrane (75 proteins), and mitochondrial matrix proteins (65 proteins) – appear unrelated to physical activity and may reflect unique biology in our MA group (Figure 6).
 
@@ -167,7 +300,7 @@ In general, we found that many proteins overrepresented in MA were similar to th
 
 A striking result of this study is that 80 proteins involved with mRNA splicing, metabolism of RNA, capped intron containing pre-RNA, and transcription coregulator activity that were shown previously to significantly increase with aging (Rodríguez et al., 2016; Ubaida-Mohien et al., 2019b) were globally underrepresented in MA. These data are consistent with previous suggestions that the production of alternative splicing variants of structural and regulatory proteins is an integral part of the preprogrammed resilience strategies aimed to counteract drifts toward loss of function and damage accumulation (Ferrucci et al., 2022), such as those that follow the decline of energy availability secondary to mitochondrial impairment (Bhadra et al., 2020).
 
-## Mitochondria and aging skeletal muscle
+### Mitochondria and aging skeletal muscle
 
 Mitochondria have long been implicated in aging biology in general, including skeletal muscle aging. Mitochondrial derangement may contribute to functional decline with aging though various mechanisms, including but not limited to reduced energy availability for contraction and other essential cellular activities, increased production of ROS, inflammatory signaling, and release of Ca2+ and activation of caspase 3 consequent to an event known as mitochondrial permeability transition (Hepple, 2016). In addition, fragments of mitochondrial membrane or mtDNA may trigger the NLRP3 inflammasome and contribute to local and systemic inflammaging (Pereira et al., 2019). Hence, preserving skeletal muscle mitochondrial function is a central mechanism for maintaining skeletal muscle health with aging.
 
@@ -179,7 +312,7 @@ The differential representation of proteins that fine-tune mitochondrial dynamic
 
 In summary, our data suggest that overrepresentation of mitochondrial quality control proteins and mitochondrial dynamics proteins in octogenarian MA muscle likely translates to better maintenance and remodeling of mitochondrial cristae, with higher energy availability that positively affects cellular adaptation to stress, and better maintenance of muscle metabolism.
 
-## RNA splicing, nuclear pore complex, and aging
+### RNA splicing, nuclear pore complex, and aging
 
 An upregulation of alternative splicing is commonly seen with aging in a variety of tissues that include skeletal muscle in both animal models (Rodríguez et al., 2016) and aging humans (Ubaida-Mohien et al., 2019b). Interestingly, after accounting for physical activity and age, we previously found that higher mitochondrial oxidative capacity as measured by 31P-spectroscopy was associated with upregulation of spliceosome proteins (Adelnia et al., 2020), which we have interpreted to suggest that upregulation of alternative splicing may represent a resilience response to confer benefits to mitochondrial function and thus limit the negative effects of aging (Ferrucci et al., 2022). On this basis, we hypothesized that highly functioning octogenarians would require less of upregulation of this resilience mechanism. Consistent with this idea, 80 proteins involved with mRNA splicing, metabolism of RNA, capped intron containing pre-RNA, and transcription coregulator activity that were shown previously to increase with aging (Rodríguez et al., 2016; Ubaida-Mohien et al., 2019b) were globally underrepresented in MA compared to controls. On this basis, we suggest that the lower representation of spliceosome proteins that regulate alternative mRNA splicing in MA may indicate that such compensatory upregulation of alternative splicing is not required in these individuals because their mitochondrial biology is better protected by other means (e.g., physical activity). Future analysis of RNA expression to examine expression of splice variants in MA versus NA would be important to further evaluate this premise.
 
@@ -187,7 +320,7 @@ An unexpected finding was that NPC proteins were less represented in MA than con
 
 Proteostasis maintenance pathways are important for skeletal muscle as components of myofibers are often damaged and must be replaced regularly. Proteins involved in proteostasis appear to have no single trend of change in MA octogenarians, with some chaperones and autophagy proteins underrepresented and some overrepresented in MA. It is possible that the long-term physical activity adaptation of the skeletal muscle in MA reduces the need for replacement of muscle proteins, for example, the higher fidelity of their mitochondria coupled with the higher expression of antioxidant proteins such as SOD2 may limit post-translational damage to proteins, thereby reducing the rate at which they need to be replaced.
 
-## Evidence for factors other than exercise in MA proteome
+### Evidence for factors other than exercise in MA proteome
 
 To a large extent, the results of this study are consistent with the well-established benefits of exercise on mitochondrial and skeletal muscle health (Hood et al., 2019). However, the individuals we studied were world-class athletes in their 80s and it is unlikely that their high function can be accomplished by the majority of older people, even assuming that they adhere to a strict exercise regimen. We expect that a fortuitous combination of genetics and environmental factors beyond exercise per se make them winners. Consistent with the idea that factors beyond those linked to physical activity contribute to such an extreme phenotype, we observed several mitochondrial-related proteins that were uniquely upregulated in MA versus normal aging, and several proteins involving RNA processing and the inflammasome that were uniquely downregulated in MA versus normal aging. As these proteins are not among those previously identified as exercise-responsive (Ubaida-Mohien et al., 2019a), we refer to these as the MA-specific proteome (see Figures 6 and 7). Although our MA cohort is too small to permit assessment of genetic/hereditary factors in these protein differences, our results identify important candidate protein pathways to explore for antiaging effects and suggest additional studies with larger numbers of subjects (and including other types of athletes) would be worthwhile.
 

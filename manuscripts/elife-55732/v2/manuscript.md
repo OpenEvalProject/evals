@@ -38,13 +38,29 @@ We hypothesize that there is receptor-mediated communication between the host im
 
 ## Results
 
-## C1q induces specific activation of intracellular signaling pathways on hNSC
+### C1q induces specific activation of intracellular signaling pathways on hNSC
 
 We investigated the effects of C1q on intracellular signaling in hNSC by testing three physiological C1q concentrations that are produced by PMN [28 ng/mL ≅ 0.1 nM] (Hooshmand et al., 2017), Mφ [400 ng/mL ≅ 1.0 nM] (Hooshmand et al., 2017), or present in plasma. Reported levels of circulating C1q range between 40 and 120 µg/mL (Dillon et al., 2009; Delamarche et al., 1988; Yonemasu et al., 1978); in this study, we used [80 µg/mL ≅ 200 nM]. hNSC were treated with purified human C1q for 15, 30, and 60 min, and activation of intracellular signaling pathways assessed using a quantitative phosphoarray analysis that can simultaneously detect 18 phosphorylated proteins that are part of well-described intracellular signaling pathways (Figure 1A and Figure 1—figure supplement 1; a 1.5-fold increase was defined as the minimum threshold for positive response). Phosphoarray analysis demonstrated rapid activation of specific and selective signaling pathways after C1q treatment, with MAPK/ERK signaling showing the most robust effect at all tested C1q concentrations. C1q at 200 nM also significantly and selectively activated PI3K signaling, identified by p-Akt and P70 S6 kinase, as well as P53. Phosphoarray results were confirmed using western blot for intracellular activation of p-Akt and p-ERK after 60 min of C1q exposure (Figure 1B). These data demonstrate rapid C1q-mediated activation of specific intracellular signaling pathways, consistent with a receptor-mediated mechanism.
 
-## Unbiased screening strategy for cell surface C1q-binding partners on hNSC identifies five novel candidates
+![Figure 1.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phosphoarray analysis quantification of hNSC exposed to C1q [0.1 nM], [1.0 nM], or [200 nM] concentrations for 15, 30, or 60 min. Data show mean ± SEM (N = 3 biological replicates per condition) for quantified optical intensity, normalized to control (dashed line = 1). In addition to statistical analysis, using one-sample t-test (*p≤0.05, **p≤0.01, ***p≤0.001), a minimum threshold of 1.5-fold activation (dashed line) was set for statistical significance. (B) ERK and Akt activation was verified using western blot in lysates from hNSC exposed to C1q [0.1 nM], [1.0 nM], or [200 nM] concentrations for 60 min. p-ERK and p-Akt band intensities were normalized to β-actin. Data show mean ± SEM (N = 3 biological replicates per condition) for quantified optical intensity normalized to control (dashed line). Statistical analysis using one-sample t-test (NS, not significant; *p≤0.05, **p≤0.01, ***p≤0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images and numerical scheme of phosphoarray analysis of hNSC exposed to control media or C1q [0.1 nM; 1.0 nM; 200 nM] for 30 min. Array positions indicated for p-ERK (blue), p-Akt thr308 (orange), and ser473 (red). (B) Orientation and positions of the intracellular signaling proteins (in duplicate) assayed by phosphoarray: number 3 (blue, p-ERK); number 6 (orange, p-Akt thr308); and number 7 (red, p-Akt ser473). (C) Complete list of targets, intracellular proteins, and modifications tested by phosphoarray. Phosphoarray by PathScan Intracellular signaling array kit as described under Methods (Catalog #7744, Cell Signaling Technology).
+
+### Unbiased screening strategy for cell surface C1q-binding partners on hNSC identifies five novel candidates
 
 Based on the observation of C1q-induced intracellular signaling pathway activation, we followed an unbiased screening strategy to identify cell surface proteins on hNSC that interact with C1q. In a first approach, we used a far-western blot strategy to qualitatively establish the ability of C1q to interact with hNSC cell surface proteins (Figure 2A). We first verified whether C1q could bind a multitude of intracellular proteins in total protein lysates in this assay, consistent with the conventional role of C1q as a recognition molecule of the classical complement pathway. Next, we tested C1q binding, specifically, in the cell surface fraction. In contrast to the total protein fraction, we identified few bands, suggesting that C1q interacts specifically with a small number of cell surface binding partners on hNSC.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig2-v2.jpg)
+
+**Figure 2.:** (A) C1q binds specifically to cell surface proteins in hNSC. Far-western blot reveals C1q binding interactions in hNSC protein fractions derived from either total (multiple bands) or cell surface (few bands) isolates. Exclusion of C1q (no C1q control) reveals no anti-C1q staining. (B) Silver stain (left) and anti-C1q western blot (right) analysis in C1q pull-downs with hNSC total protein lysates. Conditions: (I) column + C1q (bait) and no total protein lysate (prey), verifying C1q attachment to the column; (II) column + total protein lysate (prey) and no C1q (bait), confirming the absence of nonspecific protein binding to the column; (III) column + C1q (bait) + total protein lysate (prey), identifying multiple bands associated with C1q. (C) Experimental scheme for identification of C1q binding partners on hNSC cell surface using a cell surface crosslinking strategy followed by pull-down and mass spectrometry analysis. (D) Cell surface-C1q crosslinking using the strategy from (C) identifies five novel membrane-bound signaling candidates. RT-PCR analysis in hNSC and positive control samples (+CTRL, human universal RNA) demonstrates the positive expression of each target signaling candidate by hNSC. (E) Human embryonic cortex single-cell RNA-seq dataset analysis verifies C1q candidate receptor expression on NSC. Heatmap clustered on the gene expression of glia cell type identity gene markers and C1q candidate receptors gene reveals a subset of glia cells that express the candidate receptor genes. Glia cells were processed and categorized into NSC (radial glia), astrocyte precursor cells (APC)/astrocytes, oligoprogenitors (OPCs), and oligodendrocytes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot of purified unmodified C1q (C1q) and biotinylated C1q (C1q-Biot) using anti-C1q antibody. (B) Gel electrophoresis of C1q and C1q-Biot demonstrates that avidin-biotin-peroxidase complex (ABC) (Vector Laboratories) followed by enhanced chemiluminescence (ECL) reaction with horseradish peroxidase (HRP) substrate recognizes only biotinylated C1q. (C-E) C1q and C1q-Biot show similar interaction patterns in far-western blot. (C) Far-westernblot reveals similar binding patterns of naive (C1q, left panel) or biotinylated C1q (C1q-Biot, middle panel) with proteins from hNSC total protein lysates. Control membranes were incubated without C1q (No C1q, right panel). Bound C1q was identified by immunodetection. (D-E) Competitive binding of biotinylated-C1q and naive-C1q demonstrates interaction specificity. (D) Far-westernblot was performed with hNSC total protein lysates and C1q-Biot. Membranes were then differentially washed with either TBS-T (control) or TBS-T + unmodified C1q, to compete with C1q-Biot for protein interactions. Bound C1q-Biot was identified by ABC-ECL reaction. Control membranes were incubated without C1q (right panel). (E) Relative optical density analysis reveals that washes with unmodified-C1q decreased C1q-Biot binding indicating the specificity of the interaction. Data show mean ± SEM of bound C1q relative optic intensity normalized to control (TBS-T washes; dashed line). Statistical analysis using one-sample t-test for comparison with control (*p=0.0398).
 
 We sought to identify cell surface C1q binding partners using mass spectrometry nanoLC-MS/MS analysis of samples generated by two parallel strategies: 1) pull-down of whole cell hNSC protein isolates with biotinylated C1q immobilized on a streptavidin column; 2) pull-down of hNSC membrane protein fraction isolates generated after incubation and cross-linking of live hNSC with C1q. For the first approach, after validating that biotinylated and non-biotinylated C1q shared similar binding patterns (Figure 2—figure supplement 1A–C) and binding specificity (Figure 2—figure supplement 1D,E), total protein extract was incubated with immobilized C1q followed by a stringent wash protocol to minimize detection of nonspecific interactions. Bound proteins were eluted and analyzed using SDS-PAGE followed by silver staining (Figure 2B), and by nanoLC-MS/MS, which identified over 400 protein families. However, consistent with the far-western blot data and known interactions between C1q and intracellular constituents, few of these were known cell surface proteins.
 
@@ -60,15 +76,43 @@ GPR62 and BAI1 are classical G-protein coupled receptors (GPCRs). Brain angiogen
 
 We hypothesized that selected C1q signaling/receptor candidates may have specific in vitro and in vivo functions; for example, mediation of C1q induced migration vs. direction of hNSC fate or proliferation. If different C1q signaling/receptor candidates mediate different functions, these functions could potentially be linked to the activation of specific intracellular signaling pathways in hNSC. We evaluated the functional significance of specific intracellular signaling pathways in C1q-induced chemotaxis and C1q-modulation of proliferation on hNSC using intracellular signaling pathway inhibitors focusing on: 1) pERK/MAPK inhibition because C1q induces p-ERK signaling at all tested concentrations (PD98059); 2) G-protein coupled receptor inhibition because two candidates are GPCRs (pertussis toxin, PTX); and 3) p38 MAPK inhibition as a negative control because we did not detect p38 signaling induction (SB20358). We focused on migration and proliferation to minimize the potential for toxicity due to long-term inhibitor treatment, and because we have previously established the effects of C1q administration on these hNSC responses (Hooshmand et al., 2017; Figure 4—figure supplement 1). We first verified that a 48 hr exposure to the tested inhibitors did not result in toxicity as assessed by total cell number (data not shown; one-way ANOVA p=0.6226). C1q activation of p-ERK was effectively blocked by PD98059 in western blot (Figure 4A,B), and C1q-induced migration in transwell assays was selectively inhibited only by p-ERK inhibition (Figure 4C). In contrast, the effect of C1q on hNSC proliferation in BrdU incorporation assays was both p-ERK and GPCR dependent but not affected by p38 inhibition (Figure 4D,E). These data indicate that different signaling pathways mediate distinct effects on hNSC, consistent with the hypothesis that different receptors mediate different cellular functions.
 
-## CD44 mediates C1q induced p-ERK intracellular signaling activation and migration in NSC in vitro
+![Figure 4.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig4-v2.jpg)
+
+**Figure 4.:** (A,B) Western blot analysis in cells treated with the MEK/ERK pathway inhibitor PD89059 verifies effective p-ERK inhibition in cells exposed to C1q [200 nM] for 60 min. Optical densities were normalized to untreated controls (dashed line). Statistical analysis using one-sample t-test (*p≤0.05, **p≤0.01) for comparison with control and Student’s t-test for comparison between conditions as indicated (***p≤0.001). N = 3 biological replicates. (C) C1q [200 nM] induces hNSC chemotaxis in transwell migration assays (shown also in Figure 4—figure supplement 1D), which is blocked by PD89059 inhibition of p-ERK. No effect was observed with either a GPCR inhibitor (Pertussis toxin; PTX) or p38 MAPK inhibitor (SB203580). (D,E) C1q [200 nM] decreases hNSC proliferation in vitro as analyzed by BrdU incorporation (shown also in Figure 4—figure supplement 1E–F), which is blocked by either PD89059 or PTX treatment. No effect was observed with the p38 inhibitor SB203580. (D) Representative pictures of BrdU+ cells in control hNSC or hNSC treated with C1q [200 nM] and pathway inhibitors as indicated. (E) Brdu+ nuclei quantification (%). Data shows mean ± SEM normalized to untreated controls (dashed line). Statistical analysis using one-sample t-test (NS, not significant; *p≤0.05, **p≤0.01, ***p≤0.001) for comparison with untreated controls, and using one-way ANOVA (#) p<0.05 followed by Tukey’s post-hoc t-tests as indicated (NS, not significant; #p≤0.05) for comparison between conditions, N = 4 biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A-C) Exposure to C1q in the absence of a gradient increases hNSC motility independent of concentration. Manual tracking of 20 randomly selected cells per biological replicate in live-cell imaging assay reveals that C1q increases hNSC motility as measured by track length, independent of C1q concentration. Representative image of 20 manual tracks from cells in (A) control and (B) C1q [200 nM] condition. (C) Data normalized to untreated control (dashed line). Statistical analysis using one-sample t-test (*p≤0.05, **p≤0.01; N = 3 biological replicates) for comparison with control. ANOVA analysis for comparison between groups, p=0.8682. (D) Exposure to C1q in transwell assay for analysis of chemotaxis reveals that C1q induces hNSC migration in a concentration-dependent manner, with maximal effects at 0.1 nM and 200 nM. Data normalized to untreated control (dashed line). Statistical analysis using one-sample t-test for comparison with control (*p≤0.05, **p≤0.01; n = 4 biological replicates with technical triplicates). ANOVA analysis for comparison between groups, p=0.0005. (E-F) EdU incorporation analysis reveals that C1q modulates hNSC proliferation. Representative image of Edu+ nuclei (green, white arrows) in hNSC exposed to C1q [0.1 nM], [1.0 nM], or [200 nM] for 2DIV. Scale bars 30 µm. (F) Edu+ nuclei quantification. Data shows untreated control (dashed line; mean ± SEM). Statistical analysis using one-sample t-test for comparison with control (NS = not significant p>0.05, ***p≤0.001, ****p≤0.0001; 10 random images/experiment (N), N = 4 biological replicates, averaging 140 ± 60 cells/image. ANOVA analysis for comparison between groups, p≤0.0001.
+
+### CD44 mediates C1q induced p-ERK intracellular signaling activation and migration in NSC in vitro
 
 We focused on CD44 as an initial target through which to test the physiological role of C1q interaction with the identified hNSC receptor/signaling candidates. Given that CD44 has identified roles in p-ERK signaling (Herishanu et al., 2011; Kashyap et al., 2018) and glial progenitor migration (Piao et al., 2013), we hypothesized that CD44 may mediate C1q-induced p-ERK activation and chemotaxis in hNSC. To test this hypothesis, we generated wildtype (WT) and knockout (KO) CD44 hNSC using CRISPR Cas9 gene editing (Figure 5—figure supplements 1–2), using an hNSC line generated at UCI (UCI161) for these studies. Stable selection of CD44 WT and CD44 KO hNSC populations was verified at two passages (2 weeks), four passages (4 weeks), and seven passages (7 weeks) after genetic modification using flow cytometry, (Figure 5—figure supplement 1D–G), western blot (Figure 5A), and cell surface immunocytochemistry (Figure 5B), respectively. Stable CRISPR-Cas9 modification and homozygous generation of CD44 WT/KO cell lines were validated by genotyping via Sanger sequencing (Figure 5—figure supplement 2). After CRISPR cas9 gene editing normal cellular karyotype was confirmed (Figure 5—figure supplement 3A–B). CD44 KO did not alter CD133+ stem cell proportion (Figure 5—figure supplement 3C,D) or baseline hNSC proliferation in comparison with WT cells (Figure 5—figure supplement 3E,F). Maintenance of WT and KO hNSC in differentiation media (DM) for 14 d in vitro (DIV) revealed no differences in GFAP+/βIII tubulin- astroglial lineage cells or in GFAP-/βIII tubulin+ neuronal lineage cells (Figure 5—figure supplement 3K–S). However, CD44 KO cells exhibited a small but significant increase in nuclear Olig2+ oligodendroglial lineage cells (KO 30% vs. WT 21%, p<0.0001; Figure 5—figure supplement 3H–J). These data demonstrate that CD44 KO cells retained normal baseline characteristics for hNSC, including multipotency.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig5-v2.jpg)
+
+**Figure 5.:** (A,B) CD44 expression profile in WT but not in CD44 KO hNSC was verified by (A) western blot and (B) Immunocytochemistry (scale bar 30 µm). (C,D) p-ERK western blot analysis of protein lysates from WT and CD44 KO hNSC shows that C1q-induced ERK activation is completely blocked in CD44 KO hNSC at C1q [0.1 nM] and [1 nM], and dramatically attenuated at C1q [200 nM]. p-ERK band optical intensities were normalized to β-actin within condition. Data show mean ± SEM (N = 3 biological replicates per condition) normalized to untreated controls for comparison between conditions (dashed line). Statistical analysis using one-sample t-test (NS, not significant; *p≤0.05) for comparison with control and Student’s t-test for comparison between WT and CD44 KO hNSC as indicated (*p≤0.05, **p≤0.01). (E) Transwell chemotaxis assay reveals that C1q-induced hNSC chemotaxis is completely blocked in CD44 KO hNSC at C1q [0.1 nM] and dramatically attenuated at C1q [200 nM]. Data show mean ± SEM (N = 3 biological replicates per condition) normalized to untreated controls (dashed line). Statistical analysis using one-sample t-test (NS, not significant; *p≤0.05) for comparison with control and Student’s t-test for comparison between WT and CD44 KO hNSC as indicated (*p≤0.05, **p≤0.01).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The human CD44 loci (gene ID: 960) was targeted using the CRISPR/Cas9 system to create genetic knockout via non-homologous end joining (NHEJ). (A) CD44 Guide RNA sequences. For maximum disruption of CD44’s ORF, two guide RNAs (gRNAs) were simultaneously introduced into hNSC with chimeric guide RNA + hspCas9 co-expression vector. (B) hspCas9 co-expression vector. (C) Snap Gene Graphics for gRNA alignment. Both gRNAs (purple) were designed to target the second exon of CD44 to generate a 47 bp deletion within exon two resulting in a frame-shift that introduces a pre-mature stop codon within a targeted exon. (D) WT and CD44 KO FACS sorting after CRISPR. Two weeks after plasmid introduction, unsorted CRISPR-modified hNSC were separated based on CD44 expression using fluorescence activated cell sorting (FACS); CD44-negative knockout cells (29.7% of the total population) were isolated based on the gating of our unstained control; CD44-positive wild-type cells (39.3% of the total population) were isolated based on the gating of our positive control, unmodified CD44-PE-stained cells. FACS-isolated CD44 WT and CD44 KO hNSC retain expression identity after multiple passages. (E) Flow citometry analysis of CD44 WT and KO hNSC. After more than a month in culture, and having undergone four passages, we re-analyzed the expression of CD44 in WT and KO cells. FACS-isolated CD44 WT hNSC retained CD44 expression; 96.3% CD44-PE positive and 1.87% CD44-PE negative. FACS-isolated KO hNSC retained a CD44-negative expression phenotype; 99.7% CD44-PE negative and 0.24% CD44-PE positive. (F) Fluorescent images of CD44 WT immediately after flow cytometry. (G) Fluorescent images of CD44 KO immediately after flow cytometry. After CD44 -PE staining, hNSC were counterstained with Hoechst to label cell nuclei and then mounted on a slide using a Cytospin 4 centrifuge (Thermo Scientific). Scale bars 30 µm. Images were taken in an inverted fluorescent microscope at 20×.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Human CD44 locus: Location of guide RNAs (gRNA) and genotyping primers. CD44-WT or CD44-KO hNSC generated by NHEJ with CRISPR/Cas9 system. Two primer sets (forward primer in green), (reverse primer in red) were used to amplify and/or sequence the region surrounding the targeted site. Graphics were produced using SnapGene software. The targeted site was then amplified using a high-fidelity polymerase and highly specific primer set (CD44_2 F/CD44_2R); this primer set was optimized to produce a single amplicon of 422 bp. This amplicon was then purified and submitted for Sanger sequencing to Retrogen Inc; each amplicon was sequenced with four different primers. The raw chromatograph data from the Sanger sequencing was then aligned with the targeted site using SnapGene software. (B) Alignment of CD44 WT sequencing results. FACS isolated CD44-positive hNSC showed no genetic changes within the targeted exon (no double peaks at any positions). (C) Alignment of CD44 KO sequencing results. FACS isolated CD44-negative hNSC contained a 47 bp deletion within exon 2 resulting in a frame-shift that introduced a premature stop codon within targeted exon; the same deletion was consistently detected in all traces. (D) Table containing all of the sequences used in producing the data of this figure.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A,B) CD44 WT and KO hNSC are karyotypically normal at p7. CD44 WT/KO hNSC were submitted to Cell Line Genetics, for G-banding karyotyping. (A) FACS-isolated CD44 wildtype (WT) G-banding karyotyping. (B) FACS-isolated CD44 knockout (KO) G-banding karyotyping. (C,D) CD44 WT and CD44 KO hNSC express similar levels of CD133+ cells. (C) CD44 WT and (D) CD44 KO hNSC were assessed for expression of the ‘stemness’ marker CD133. Relative to the unstained control, at passage 7, CD44 WT and CD44 KO hNSC express similar levels of CD133 as measured by flow cytometry; 96.1% and 93.5%, respectively. (E-G) CD44 WT and CD44 KO hNSC exhibit similar proliferation levels. Representative image of EdU (green) + nuclei and Hoechst counterstain (blue) of (E) CD44 WT and (F) CD44 KO hNSC. White arrows indicate examples of EdU+ nuclei, scale bars 30 µm. (G) EdU incorporation quantification at 2 d in vitro (DIV). Data shown as proportion of EdU+ cells for CD44 WT (blue column) and KO (red column), Mean + SEM. Student’s t-test, NS = not significant p=0.1126, N = 4 biological replicates. (H-S) Genetic deletion of CD44 in human NSC did not alter multipotency of hNSC but increased oligodendroglial differentiation in vitro. After 14DIV under differentiation conditions, cells were immunostained for an oligodendroglial marker (Olig2+, green). A second set of cells was double immunostained for astroglial (GFAP+, red) and neuronal (β tubulin III+, green) markers. Representative image of Olig2 immunostaining in (H) WT and (I) CD44 KO hNSC. White arrows indicate examples of Olig2+ nuclei, scale bars 30 µm. (J) Olig2+ nuclei quantification (%). Representative image of GFAP immunostaining in (K) CD44 WT and (L) CD44 KO hNSC. Pink arrows indicate examples of cytoplasmic GFAP+/β tubulin III- astroglial cells, scale bars 30 µm. (M) GFAP+/β-tubulinIII- astroglial cell quantification (%). Representative image of β-tubulinIII immunostaining in (N) CD44 WT and (O) CD44 KO hNSC. Green arrows point to examples of cytoplasmic GFAP-/β tubulinIII+ neuronal cells, scale bars 30 µm. (P) GFAP-/β tubulin III+ neuronal cell quantification (%). Representative image of GFAP and β tubulinIII double immunostaining in (Q) CD44 WT and (R) CD44 KO hNSC. White arrows point to examples of GFAP+/β tubulinIII+ undecided double positive cells, scale bars 30 µm. (S) GFAP+/β tubulin III+ double + undecided cell quantification (%). Data represent average percentage ± SEM of quantified positive cells, obtained from 10 random pictures/experiment, from N = 4 biological replicates (averaging 140 ± 60 cells/picture). Statistical analysis was performed using Student’s t-test between WT and CD44 KO hNSC; NS: not significant p≥0.2455, ****p≤0.0001.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Mouse NSC (mNSC) from CD44 WT and KO mice were derived from single embryo cortices at E11.5–12. DNA of parent mice and each littermate embryo was extracted from tail snips and direct PCR performed for genotyping. (A) Primers used for genotyping CD44 WT, KO, and heterozygous embryos. (B) Genotyping results of WT and CD44KO parents and first-generation heterozygous CD44 +/– colonies. (C) Genotyping results of WT and CD44 KO embryos that were used to generate CD44 WT and KO mNSC lines. (D) CD44 expression in CD44 WT and CD44 KO mNSC by immunostaining verifies positive staining only in WT cells. (E) mNSC express all C1q novel candidate receptors. mRNA RT-PCR analysis in mNSC reveals the positive expression of all C1q novel signaling candidates. (F) mNSC migrate toward PMN-CM and C1q similar to hNSC in vitro. Transwell chemotaxis assay shows that PMN-CM and C1q [200 nM] but not Mφ-CM induce mNSC chemotaxis. Data normalized to untreated control (dashed line; N = 3 biological replicates per condition with technical triplicates). Statistical analysis using one-sample t-test (NS, not significant; *p≤0.05, ***p≤0.001) for comparison with control. ANOVA analysis for comparison between groups, p=0.0018. (G) CD44 WT but not KO mNSC migrate toward C1q [200 nM] similar to hNSC in vitro. Transwell chemotaxis assay shows that C1q [200 nM] induces mNSC chemotaxis only in CD44 WT cells, while KO cells are repulsed by C1q. Both effects are blocked by temperature inactivation of C1q. Data normalized to untreated control levels (dashed line; N = 3 biological replicates per condition with technical triplicates). Statistical analysis using one-sample t-test (NS, not significant; *p≤0.05, ***p≤0.001) for comparison with control, ANOVA analysis for comparison between groups, ****p≤0.0001, and Student’s t-test for comparison between WT and CD44 KO mNSC as indicated (***p≤0.001).
 
 We investigated the functional effect of CD44 KO on hNSC intracellular signaling in response to C1q. CD44 KO cells did not exhibit p-ERK activation in response to C1q [0.1 nM] or C1q [1 nM] in comparison with WT cells, and exhibited a significant attenuation in response to C1q [200 nM] (Figure 5C,D). Based on the effect of p-ERK inhibition on hNSC migration (Figure 4F), we subsequently tested whether CD44 mediates C1q-induced hNSC migration in transwell assays. Baseline migration in control media was not significantly different between WT and CD44 WT and KO hNSC (Student’s t-test, p=0.1785). As shown earlier (Hooshmand et al., 2017) and in Figure 4—figure supplement 1D, CD44 WT hNSC exhibited concentration-dependent migration in response to C1q [0.1 nM] and [200 nM] (Figure 5E). By contrast, CD44 KO hNSC did not migrate in response to C1q [0.1 nM], and migration was dramatically attenuated in response to C1q [200 nM] (Figure 5E, N = 4), demonstrating that CD44 is involved in C1q-induced signaling and chemotaxis in hNSC. The lack of complete migration blockade in response to C1q [200 nM] could be related to concentration-dependent activation of ERK/MAPK pathway signaling via C1q interaction with other receptor candidates.
 
 To validate that these results were not due to off-target effects of CRISPR-Cas9, we employed a parallel genetic approach, generating mouse NSC (mNSC) from either CD44 WT or CD44 KO littermate mouse embryos (Figure 5—figure supplement 4A–D). We confirmed that mNSC exhibit the expression of CD44 and the other C1q signaling/receptor candidates (Figure 5—figure supplement 4E), as well as a comparable response to complement components and the inflammatory injury microenvironment (Hooshmand et al., 2017), including induction of mNSC chemotaxis (Figure 5—figure supplement 4F). These data demonstrate the conservation of this mechanism across species. The loss of CD44 protein expression in KO vs. WT mNSC was confirmed using immunocytochemistry (Figure 5—figure supplement 4D), and transwell assays were used to verify C1q induced migration as for hNSC. Baseline migration in control media was identical between CD44 WT and KO mNSC (Student’s t-test, p=0.6150). However, while WT mNSC exhibited increased migration in response to C1q (Figure 5—figure supplement 4F,G) similar to WT hNSC (Figure 4—figure supplement 1D, Figure 4E), this response was completely blocked in CD44 KO mNSC (Figure 5—figure supplement 4G). Indeed, CD44 KO mNSC exhibited a repulsive effect in response to C1q. Temperature inactivation of human C1q abolished all responses (Figure 5—figure supplement 4G), confirming both specificity and a requirement for functional 3D conformation of the C1q protein. In summary, these in vitro findings demonstrate that CD44 is involved in C1q-mediated signaling pathway activation and chemotaxis in mammalian NSC.
 
-## C1q modulation of hNSC proliferation and differentiation is CD44 independent
+### C1q modulation of hNSC proliferation and differentiation is CD44 independent
 
 We have previously shown that C1q alters hNSC proliferation and differentiation (Hooshmand et al., 2017). We therefore tested whether C1q acts through CD44 to mediate these effects in addition to cell migration. We assessed cell proliferation via EdU incorporation after 2DIV in DM in the presence or absence of C1q. No difference was observed between CD44 WT and KO hNSC baseline proliferation (Figure 5—figure supplement 3E–F, noted above), or proliferation response to C1q at any tested C1q concentration (ANOVA and Tukey post-hoc t-tests as indicated in Figure 6A–C; Tukey p=0.999). These data demonstrate that the effects of C1q on hNSC proliferation are CD44 independent.
 
@@ -88,9 +132,29 @@ To test if CD44 mediates hNSC recruitment toward the SCI epicenter after acute t
 
 No differences in fibronectin+ lesion volume (Figure 7—figure supplement 2A,B), or in the number of surviving engrafted donor human cells (Figure 7—figure supplement 2C,D; hNSC STEM121+ cells in brown) were observed in mice receiving CD44 WT vs. KO hNSC. However, consistent with our hypotheses, mice transplanted with CD44 KO hNSC exhibited a significant reduction in total STEM121+ donor cells adjacent to the SCI epicenter (Figure 7A–C). Similarly, mice transplanted with CD44 KO hNSC exhibited a significant reduction in hNSC derived STEM123+ astrocyte clustering (h-astrocytes, Figure 7D–H) adjacent to the SCI epicenter and STEM123+ h-astrocytes in the spared parenchyma within 1 mm rostral-caudal to the SCI epicenter (Figure 7I). These data suggest that CD44 KO decreased the migration of transplanted hNSC toward the SCI epicenter, which was associated with decreased astroglial fate, and that this effect did not result from alterations in lesion volume or total donor cell engraftment and survival. Further, analysis of locomotor recovery on the horizontal ladder beam task, a sensitive task for animals exhibiting frequent stepping, showed that mice receiving CD44 KO hNSC made significantly fewer errors vs. mice receiving vehicle controls (Figure 7J), while no improvements were observed after transplantation of WT hNSC. Taken together, these data demonstrate that CD44 modulates hNSC migration and distribution in the in vivo acute microenvironment after SCI, affecting both lineage selection and the potential to yield locomotor recovery. While identification of C1q as a novel CD44 ligand suggests a novel mechanism by which hNSC CD44 expression may regulate the behavior of these cells in vivo, this experiment cannot rule out the potential contribution of other CD44 ligands in the SCI microenvironment.
 
-## Epicenter C1q neutralization is comparable to CD44 KO in modulating hNSC behavior and capacity for repair after acute transplantation
+![Figure 7.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig7-v2.jpg)
+
+**Figure 7.:** All histological data obtained 16 weeks post-transplant (WPT). (A,B) Representative images of transverse spinal cord sections corresponding to the injury epicenter area immunostained for the human-specific cell marker STEM121 (brown; scale bars, 250 µm) and hematoxylin nuclear counterstain (purple) on spinal cords from mice transplanted with WT (blue) or CD44 KO (red) hNSC. (C) Stereological analysis of STEM121+ human cell clustering using Cavalieri sampling demonstrates a decrease in CD44 KO vs. WT human cells adjacent to the SCI epicenter. Data show mean ± SEM (N = 5–6 mice randomly selected for histology/group). Statistical analysis using Student’s t-test as indicated (**p≤0.01). (D,E) Representative image of transverse spinal cord section corresponding to the injury epicenter area immunostained for the human astrocyte specific marker STEM123 (brown; scale bars, 250 µm) and hematoxylin nuclear counterstain (purple) in spinal cords from mice transplanted with (D) WT or (E) CD44 KO hNSC. (F) Stereological analysis of STEM123+ h-astrocyte clustering using Cavalieri sampling demonstrates a decrease in CD44 KO vs. WT h-astrocytes adjacent to the SCI epicenter. Data show mean ± SEM (N = 5–6 mice randomly selected for histology/group). Statistical analysis using Student’s t-test as indicated (*p≤0.05). (G,H) Representative three-dimensional reconstructions generated by stereological quantification of the lesion Fibronectin+ area (orange volume), STEM123+ clusters (purple volume), and individual STEM123+ cells (light purple dots) from mice transplanted with CD44 WT or KO hNSC. (I) Stereological analysis of STEM123+ h-Astrocyte number in the spared tissue adjacent to the SCI epicenter demonstrates a decrease in CD44 KO vs. WT localized in these regions. Data show mean ± SEM (N = 5–6 mice randomly selected for histology/group). Statistical analysis using Student’s t-test as indicated (*p≤0.05). (J) CD44 KO in hNSC rescues the capacity of acutely transplanted hNSC to promote locomotor recovery. Mice transplanted acutely with CD44 KO but not WT hNSC made significantly fewer errors on the horizontal ladder beam locomotor task in comparison with vehicle-treated mice 16 WPT. Data shown as number of errors normalized to vehicle-treated mice (dashed line; N = 8–10 mice/group). Statistical analysis using one-sample t-test (NS, not significant, ***p≤0.0005) for comparison with control vehicle-treated mice and via one-way ANOVA (#) p<0.05 followed by Tukey’s post-hoc t-test as indicated (NS, not significant; #p≤0.05) for comparison between conditions.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic illustrating the spinal cord sections utilized to determine C1q protein levels following 50 KDa spinal cord contusion injury or laminectomy control. (B) C1q Western blot on 3 mm rostral, epicenter, and caudal sections after laminectomy or SCI at 3 hr, 24 hr, and 9 d post-SCI reveals significantly increased C1q protein levels in the epicenter and at acute (3 hr and 24 hr) time points. (C) C1q band intensities were normalized to β-actin. Data show mean ± SEM (N = 4 mice/time point) for quantified C1q optical intensities. Statistical analysis of C1q levels was significant using one-way ANOVA at ****p≤0.0001, followed by Tukey’s post-hoc t-test as indicated (NS, not significant; *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001). (D,E) mRNA expression analysis reveals a parallel increase in local C1q mRNA synthesis at the injury epicenter that is not accompanied by C1s mRNA. (D) C1q and (E) C1s gene expression changes after spinal cord injury were obtained by data analysis of our published microarray data following contusive injury of the adult rat spinal cord. Differential gene expression was examined spatially, using tissue samples from the epicenter of the injury as well as 1 cm rostral and 1 cm caudal to the epicenter, and temporally, at 3 hr, 24 hr, 7 d, and 35 d post-injury, as described in Aimone et al., 2004.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Histological analysis at 16 WPT. (A) Representative image of a transverse spinal cord section immunostained for fibronectin-at the SCI epicenter (FN+, blue; scale bar = 150 μm) and STEM123+ human astrocytes (brown). Sections were counterstained for nuclei using hematoxylin (purple). (B) Quantification of host lesion volume by unbiased stereology using the Cavalieri probe in SCI mice that received WT (blue squares) or KO (red circles) hNSC. Comparisons between groups were analyzed using Student’s t-test (NS, p=0.589). (C) Immunohistochemistry for the human-specific cytoplasmic marker STEM121 (brown; scale bar = 25 μm) Sections were counterstained for nuclei using hematoxylin (purple); arrowheads indicate STEM121+ cells with hematoxylin + nuclei as quantified. (D) Quantification of the total number of hNSC by unbiased stereology using the optical fractionator probe in mice that received CD44 WT (blue squares) vs. CD44 KO (red circles) hNSC. Comparisons between groups were conducted using Student’s t-test (NS, p=0.338). Dashed line indicates the transplantation dose of 75,000 cells.
+
+### Epicenter C1q neutralization is comparable to CD44 KO in modulating hNSC behavior and capacity for repair after acute transplantation
 
 CD44 has multiple ligands, including hyaluronic acid and components of the extracellular matrix (laminin, collagen , osteopontin; Ponta et al., 2003; Weber et al., 1996) many of which are altered in the injured spinal cord (Struve et al., 2005; Hashimoto et al., 2003; Bernstein et al., 1985). If C1q interaction is necessary for the role of CD44 in hNSC migration and capacity for repair, then we reasoned that C1q depletion at the SCI epicenter would be sufficient to reproduce the effect of genetic CD44 KO on transplanted hNSC. We employed a previously published approach and reagents (Hooshmand et al., 2017), transplanting WT hNSC into the rostral and caudal spared parenchyma immediately after T9 moderate contusion SCI, as described earlier. Acute hNSC transplantation was followed immediately by a single epicenter injection of either vehicle (hNSC + vehicle) or C1q neutralizing antibody (hNSC + C1qNAb). We have previously shown that there are no differences between NAb treatment, IgG control, and vehicle treatment with regard to hNSC cell engraftment and lesion volume (one-way ANOVA, p=0.493) (Hooshmand et al., 2017). Histological quantification was performed by blinded unbiased stereological analysis as described earlier, and the effect of C1qNAb administration on lesion volume as well as hNSC engraftment and h-astrocyte localization analyzed at 12 WPT. As for CD44 WT vs. KO hNSC transplantation, no differences in fibronectin+ lesion volume (Figure 8—figure supplement 1A,B) or total donor STEM 121+ cell hNSC engraftment (Figure 7—figure supplement 1C,D) were observed in C1qNAb treated vs. vehicle-treated control mice. Similarly, consistent with the effect of CD44 KO, the number of hNSC that had committed to an astroglial fate adjacent to the SCI epicenter was significantly decreased in C1qNAb treated vs. vehicle-treated control mice at 12WPT (Figure 8A–C). Further, C1q NAb treatment also rescued the capacity of donor hNSC to promote recovery of locomotor function. While no differences in ladder beam errors were observed at 12 WPT (one-way ANOVA, p=0.4743; data not shown), the more sensitive CatWalk kinematic gait analysis showed significant improvement in mice receiving hNSC + C1qNAb for hindlimb duty cycle, hindpaw stand time, and support three paws, indicating increased weight- bearing vs. vehicle in a one-sample t-test (Figure 8D–F). Taken together, these data suggest that C1q blockade results in modulation of hNSC behavior and the potential of hNSC for repair in a manner that is consistent with CD44 KO in these cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig8-v2.jpg)
+
+**Figure 8.:** All histological data are from animals sacrificed at 12 weeks post-transplant (WPT). (A,B) Representative images of transverse spinal cord sections corresponding to the injury epicenter area immunostained for the h-Astrocyte STEM123 marker (brown, hematoxylin nuclear counterstain in purple; scale bars, 250 µm). (A) In the absence of C1qNAb, a dense plexus of h-Astrocytes is present near the injury epicenter. (B) A single epicenter injection of C1qNAb in acute SCI microenvironment dramatically decreases the proportion of h-astrocyte at the SCI epicenter. (C) Stereological analysis of STEM123+ h-Astrocytes in the spared tissue adjacent to the SCI epicenter, as well as in 1 mm regions rostral and caudal at 12WPT. Data show mean ± SEM (N = 6 mice per group). Statistical analysis using Student’s t-test for comparison between vehicle + hNSC treated mice and C1qNAb + hNSC treated mice as indicated (*p<0.0261). (D-F) Catwalk kinematic gait analysis at 12 WPT shows that mice receiving C1qNAb + hNSC, but not vehicle + hNSC improves locomotor function in Catwalk kinematic testing vs. mice receiving only vehicle + vehicle. (G) Hindpaw duty cycle (% mean). (H) Catwalk Hindpaw stand mean (s). (I) Support three paws (%), indicating increased weight bearing. Data show mean ± SEM normalized to vehicle+vehicle-treated mice (as explained in Supplementary file 1 only a subset of animals reached sufficient stepping parameters in this experiment to perform on CatWalk N = 3–5 mice per group as shown by individual points in graphs). Statistical analysis using Student’s t-test for comparison between vehicle + hNSC treated mice and C1qNAb + hNSC treated mice as indicated.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/55732/elife-55732-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Histological analysis at 12 WPT. (A) Representative image of transverse spinal cord section immunostained for fibronectin at the SCI epicenter (brown; scale bar = 150 μm). (B) Quantification of host lesion volume by unbiased stereology using the Cavalieri probe in SCI mice that received vehicle + vehicle (green triangles), vehicle + hNSC (blue squares), or C1qNAb + hNSC (red circles). Mean ± SEM (N = 5–7). Comparisons between groups were conducted using one-way ANOVA (NS, p=0.6073). (C) Immunohistochemistry for the human-specific cytoplasmic marker STEM121 (brown; scale bar = 25 μm). Sections were counterstained for nuclei using methyl green; arrowheads indicate SC121+ cells with methyl green+ nuclei as quantified. (D) Quantification of the total number of hNSC by unbiased stereology using the optical fractionator probe in mice that received vehicle + hNSC (blue squares) vs. C1qNAb (red circles). Comparisons between groups were conducted using Student’s t-test (NS, p=0.4276).
 
 Collectively, these data identify a novel ligand-receptor relationship for C1q and CD44, a novel role for CD44 in donor hNSC behavior, and a link between C1q-CD44 regulated donor hNSC distribution, fate and recovery of function after transplantation. Importantly, these findings suggest the potential for the optimization of cell therapies by manipulating hNSC responses to the host inflammatory microenvironment for CNS injuries and/or diseases.
 
@@ -108,11 +172,315 @@ In sum, this study identifies both novel functions for C1q as a single molecule 
 
 ## Materials and methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Rag1 mice</td>
+      <td>JAXmice</td>
+      <td>002216 - B6.129S7-Rag1 &lt; tm1Mom&gt;/J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>NODSCID mice</td>
+      <td>JAXmice</td>
+      <td>001303 - NOD.Cg-Prkdc&lt;scid &gt; /J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Multipotent human CNS-derived stem cells</td>
+      <td>Uchida et al., 2000</td>
+      <td>Stem cells inc 2491.2</td>
+      <td>Human Neural stem cells</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Human Neural stem cells</td>
+      <td>This paper and Piltti et al., in preparation</td>
+      <td>UCI161.1</td>
+      <td>Human Neural stem cells (UCI) correspondence to aja@uci.edu</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Chimeric gRNA +hspCAS9 co-expression Vector</td>
+      <td>https://www.appliedstemcell.com/</td>
+      <td>Custom made</td>
+      <td>Guide RNA sequences in Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STEM121 (mouse monoclonal)</td>
+      <td>TAKARA</td>
+      <td>Cat# Y40410 RRID:AB_2801314</td>
+      <td>IF(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STEM123 (mouse monoclonal)</td>
+      <td>TAKARA</td>
+      <td>Cat# Y40420 Antibody ID:AB_2833249</td>
+      <td>IF(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fibronectin (rabbit)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# F3648 RRID:AB_476976</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C1q (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab71940 RRID:AB_10711046</td>
+      <td>WB (1:200) Far-WB (1:50) PLA (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pERK (rabbit)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 4370 RRID:AB_10693765</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pAkt (rabbit)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 9916 RRID:AB_10693765</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab51037 RRID:AB_868936</td>
+      <td>WB (1:1000) ICC (1:500) PLA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44 (rabbit)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab189524</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-MET (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab51067 RRID:AB_880695</td>
+      <td>PLA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BAI-1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab135907</td>
+      <td>PLA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GPR62 (rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: PA5-33745 RRID:AB_2551116</td>
+      <td>PLA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ADCY5 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab66037 RRID:AB_1140781</td>
+      <td>PLA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Olig2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab136253 RRID:AB_2810961</td>
+      <td>ICC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tubulin βIII (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: MMS-435P RRID:AB_2313773</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFAP (rabbit polyclonal)</td>
+      <td>Dako</td>
+      <td>Cat#: Z 0334 RRID:AB_10013382</td>
+      <td>ICC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti CD44 -PE</td>
+      <td>Miltenyi</td>
+      <td>Cat#:130-110-293 RRID:AB_2658165</td>
+      <td>FACS (1:11)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti CD133-FITC</td>
+      <td>Miltenyi</td>
+      <td>Cat#:130-113-673 RRID:AB_2726215</td>
+      <td>FACS (1:11)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C1qNAb (Goat-anti human)</td>
+      <td>Quidel</td>
+      <td>Cat#:A031</td>
+      <td>C1q neutralization in vivo [100 µg/mL] 2 µL injection</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers different mRNAs</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Purified human C1q</td>
+      <td>My Biosource</td>
+      <td>Cat. #: MBS143105</td>
+      <td>[0.1nM = 28 ng/mL] [1nM = 400 ng/mL] [200nM = 80µg/mL]</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD98059 (pERK MAPK inhibitor)</td>
+      <td>GIBCO Life Technologies</td>
+      <td>Cat. #: PHZ1164</td>
+      <td>10 µM dissolved in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB203580 (p38 MAPK inhibitor)</td>
+      <td>GIBCO Life Technologies</td>
+      <td>Cat. #: PHZ1253</td>
+      <td>10 µM dissolved in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pertussis Toxin (GPCR inhibitor)</td>
+      <td>GIBCO Life Technologies</td>
+      <td>Cat. #: PHZ1174</td>
+      <td>10 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: D26650</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PathScan Intracellular signaling array kit</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #7744</td>
+      <td>Phosphoarray Cell signalling</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce Pull-Down biotinylated protein-protein interaction kit;</td>
+      <td>Thermo</td>
+      <td>Cat. #21115</td>
+      <td>Protein pulldown</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 74104</td>
+      <td>RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNA-free DNase I (Ambion)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. # AM2224</td>
+      <td>DNA elimination</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>High Capacity cDNA Reverse Transcription Kit</td>
+      <td>ABI Life Technologies</td>
+      <td>Cat. # 4368814</td>
+      <td>Retrotranscription</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Duolink in situ Red starter kit Mouse/Rabbit</td>
+      <td>Sigma</td>
+      <td>Cat. # DUO92101</td>
+      <td>Proximity Ligation Assay (PLA)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QCM Chemotaxis Cell Migration Assay, 96-well</td>
+      <td>Millipore/ Chemicon</td>
+      <td>Cat. # ECM510</td>
+      <td>Cell migration</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene</td>
+      <td>SnapGene</td>
+      <td>RRID:SCR_015052</td>
+      <td>Sequencing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StereoInvestigator</td>
+      <td>Microbrightfield</td>
+      <td></td>
+      <td>Stereology analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td>WB data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism8</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Statistics and graphs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>Invitrogen Thermo</td>
+      <td>H3569</td>
+      <td>1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 All procedures involving animals were conducted in accordance with the Institutional Animal Care and Use Committee (IACUC) guidelines at University of California, Irvine (UCI). All animals used in SCI studies were females of 12–16 weeks of age and were on immunodeficient background, Rag1 (Figure 7, Figure 7—figure supplements 1 and 2) or NOD-scid (Figure 8, Figure 8—figure supplement 1) mice. Animal care, behavior, and analysis were performed by investigators blinded to groups, and random group allotment was used. Restricted randomization was applied to maintain equal group numbers. Pre-hoc exclusion criteria for stereological or behavioral assessments included: animals with abnormal scores (2 SD outside the cohort mean), unilateral bruising or abnormal force/displacement curves after contusion injury, or documentation of poor transplantation injection. Additionally, animals that exhibited a progressive decline in activity/function (N = 2) were excluded from the study, euthanized and autopsied. No evidence of infection or tumor formation was identified. Animal groups numbers were estimated in base of historical post-hoc power analysis of transplanted hNSC with stereological analyses (Hooshmand et al., 2009). Final group numbers used in histological or behavioral analysis are listed in Supplementary file 1.
 
-## NSC lines and culture
+### NSC lines and culture
 
 All procedures using human cells were conducted in accordance with the Human Stem Cell Research Oversight (hSCRO) committee at UCI, and mNSC generation was approved by IACUC at UCI.
 
@@ -122,78 +490,78 @@ Mouse NSC (mNSC) were derived from single embryos cortices at E11.5–12. Cells 
 
 For differentiation, cells were plated on poly-L-ornithine (PLO) (Sigma- 5 μg/mL) and recombinant mouse laminin (Invitrogen-10 μg/mL) coated 8-well glass chamber slides in X-vivo or Stemline differentiation medium (DM): supplemented with GDNF (10 ng/mL), BDNF (PeproTech) (10 ng/mL), bFGF (0.1 ng/mL), Ciprofloxacin (Cellgro) (10 μg/mL), Heparin (2 µg/mL), NAC (63 µg/mL), N2 (1:100) and B27 (1:20) for 14 d in vitro (hNSC), or 3–7 d (mNSC) as described previously (Piltti et al., 2018).
 
-## C1q signaling
+### C1q signaling
 
 To assess C1q induction of intracellular signaling, hNSC were grown on 9.5 cm2 multi-well plates at 90% confluence in GM. At 1 d post-plating cells were switched to DM with or without (control) purified C1q at [0.1 nM], [1.0 nM], or [200 nM] concentrations for 15, 30, and 60 min as specified in figure legends. The cells were then collected and homogenized in cell lysis buffer (Cell Signaling Technology) and protein concentration was determined in precleared extracts using the micro BCA assay (Pierce). Phosphoarray analysis was performed with PathScan Intracellular signaling array kit, fluorescence readout (Catalog #7744, Cell Signaling technology) following manufacturers protocol, detecting simultaneously 18 phosphorylated molecules. Briefly, 150 µL of [200 µg/mL] protein lysates were added to the nitrocellulose-coated glass slides and incubated overnight at 4°C with gentle rocking motion, followed by exposure to the detection antibody cocktail for 1 hr room temperature (RT). Next, DyLight 680-linked streptavidin secondary antibody was added for 30 min at RT. The slides where analyzed in a LICOR CLx slide scanner and the fluorescence intensity measured for single spots. Samples were normalized to internal positive control spots and then to control conditions (DM without C1q). All experiments were performed using biological triplicates with technical duplicates.
 
 To verify C1q induction of p-ERK and p-Akt signaling, cells were incubated with C1q for 60 min, total proteins were collected and homogenized with RIPA buffer (Sigma) containing protease (cOmplete ULTRA- Roche) and phosphatase (PhosSTOP-Roche) inhibitors. Equal amount of proteins (10 ug) were resolved in SDS-PAGE precast 4–12% gradient gels (NuPAGE Bis-Tris Gel; Life Technologies), transferred onto Nitrocellulose Pre-Cut Blotting Membranes NuPAGE (Life Technologies) in a semi-dry chamber (Trans-Blot SD Semi-Dry Cell, Bio-Rad), and immunoblotted. Antibodies against p-Akt, p-ERK, and β-actin were used for immunodetection. Bound antibodies were visualized using HRP-coupled secondary antibodies, followed by detection of labeled proteins using SuperSignal West Dura ECL kit (Pierce) and ChemiDoc imaging system (Bio-Rad). Optical band intensities were obtained using ImageJ software (National Institutes of Health; https://imagej.nih.gov/nih-image/). Band intensities were normalized to those of β-actin and subsequent normalization to untreated control conditions standardized at one and compared to control using one-sample t-test. All antibodies, sources, and dilutions are provided in Supplementary file 2. To assess p-ERK signaling pathway blockade, cells were grown as before and treated with p-ERK/MAPK pathway inhibitor (PD98059 −10 µM, GIBCO, catalog # PHZ1164) and with or without (control) C1q[200 nM] for 60 min. Samples were processed as explained above. All experiments were performed using biological triplicates.
 
-## Far western blot analysis
+### Far western blot analysis
 
 To qualitatively determine the ability of C1q to interact with proteins from hNSC, a far-western blot was performed. In this assay, hNSC proteins from the total or cell surface fraction (below) were resolved in SDS-PAGE precast 4–12% gradient gels and transferred onto nitrocellulose pre-cut membranes in a semiwet chamber as described above. Immobilized proteins were incubated with or without C1q 25 µg/mL for 2 hr RT. Bound C1q was identified by imumunodetection, with anti-C1q antibody (monoclonal mouse anti C1q, 1:50, Abcam ab71940) 1 hr at room temperature, followed by anti mouse HRP-conjugated secondary antibody (ECL sheep anti-mouse IgG, HRP-linked whole antibody, 1:5,000, NA931V, GE Healthcare Life Sciences). Bound antibodies were visualized as described above.
 
 Total protein was extracted with RIPPA buffer as described above. Cell surface proteins were purified using cell surface protein biotinylation assay. hNSC grown in monolayer were incubated with EZ-LinkSulfo-NHS-SS-Biotin (Thermo) following manufacturer’s instructions. Briefly, cells were washed with PBS (supplemented with 0.1 mM Ca+2 and 1 mM Mg+2) 3 times for 5 min at 4°C and then incubated with biotin 1 mg/mL in PBS (0.1 mM Ca+2 and 1 mM Mg+2) for 30 min at 4°C. Biotin was then quenched with glycine 100 mM in PBS (0.1 mM Ca+2 and 1 mM Mg+2) for 30 min at 4°C. Cells then where washed with PBS and lysed with 200 µL/well Tris-HCl 50 mM, pH 7.5; NaCl 100 mM, Triton-100 0.5% v/v lysis buffer, with protease and phosphatase inhibitors cocktail (ROCHE), as described above for total protein extractions.
 
-## C1q-protein interaction pull-down
+### C1q-protein interaction pull-down
 
 To identify C1q binding proteins from hNSC total fraction, 100 µg of C1q was reversibly biotinylated with Ez-link Sulfo-NHS-SS-Biotinylation kit (Thermo) following the manufacturer’s instructions. Briefly, to form C1q-biotin stock, 1 mg C1q (My Biosource) was resuspended in 2 mL Milli-Q H2O and buffer exchanged to PBS using a Zeba spin desalting column 7K MWCO (Thermo) following manufacturer’s instruction. Briefly, 200 µL of C1q stock (500 µg/mL = 0.25 nmol C1q) was incubated with a 20-fold molar excess of biotin reagent. 0.25 × 20 = 5 nmol of Sulfo-NHS-SS-Biotin for 2 hr 4°C in agitation. The un-bound biotin was eliminated by buffer exchange to PBS using a Zeba spin desalting column 7K MWCO (200 µL final volume). About 5 µL aliquot was used to determine C1q protein concentration by BCA analysis. A total of 60–80% of the original amount of C1q was recovered after the biotinylation process. An aliquot of the biotinylated C1q was analyzed by western blot to identify biotinylated C1q (Figure 2—figure supplement 1A,B); 50 µg of biotinylated C1q was utilized for pull-down experiments (Pierce Pull-Down biotinylated protein-protein interaction kit; Thermo). Briefly, 50 µg of biotinylated C1q (bait protein) was immobilized to a streptavidin agarose bead column for 30 min at 4°C with gentle agitation. The excess bait protein was removed by centrifugation, and then the not bound (available) streptavidin sites were blocked with free biotin (non-reactive). C1q-hNSC protein interactions were captured by incubation of immobilized C1q with 50 µg of hNSC total protein extract (prey proteins), for 2 hr at 4°C. Non-specific protein-interactions were removed by multiple washing steps. To finally elute and recover the attached proteins, the C1q attached to streptavidin columns was incubated with 1 mM DTT for 10 min, to break the SS bond of C1q to biotin (Sulfo-NHS-SS-Biotin) and recover all bound proteins. An aliquot of the elution was analyzed by SDS PAGE/silver staining and western blot to identify the bound proteins and recovered C1q (Figure 2B). Three experimental conditions were included in the pull-down experiments: Condition I: control, bait protein only, to verify C1q binding to the streptavidin column. Condition II: control, no bait protein, to identify unspecific interaction to the streptavidin column. Condition III: experiment, bait (C1q) and prey proteins (hNSC total protein lysate) to identify C1q hNSC-protein interaction. Bound proteins were eluted, trypsinized, and peptides identified using Mass Spectrometry (nanoLC-MS/MS) using a LTQ Orbitrap Velos Pro spectrometer [in the UCI Center for Virus Research Protein Mass Spectrometry Facility]. Proteins identified with high confidence in condition III, but not in conditions I and II, were considered to be associated with C1q specifically. Other controls were performed to validate this experimental procedure. Correct biotinylation of C1q was assessed by western blot analysis and ABC reaction (that identified only biotinylated C1q, Figure 2—figure supplement 1A,B). Binding ability of biotinylated-C1q versus naïve-C1q was assessed by far-western blot (Figure 2—figure supplement 1C–E).
 
-## C1q cross-linking in live cells and pull-down
+### C1q cross-linking in live cells and pull-down
 
 To assess C1q cell surface interactions in a biologically relevant setting where the 3D structure of ligand and receptor/s is maintained, we designed a different protein-protein interaction approach. In this strategy, cell surface interactions were assessed in live cells. Briefly, cells were grown in monolayer at 90% confluency, washed with (PBS 0.1 mM Ca+2 1 mM Mg+2) two times and incubated with 10 nM C1q in (PBS 0.1 mM Ca+2 1 mM Mg+2) at 4°C for 1 hr with gentle agitation. Bound C1q was cross-linked with a 20-fold molar excess of a cell impermeable cross-linker (Sulfo EGS Thermo) with an spacer arm of 16.1 A° to cross-link only closely interacting proteins following manufacturer’s instructions. Sulfo EGS was added at a final concentration of 2 mM with bound C1q for 2 hr at 4°C. The cross-linker was quenched with quenching solution to a final concentration of 20 mM for 15 min at 4°C. Cells were then washed twice with (PBS 0.1 mM Ca+2 1 mM Mg+2 glicine 10 mM) and with PBS followed by cell lysis. Cells were lysed in Tris-HCl 50 mM, pH 7.5; NaCl 100 mM, Triton-100 0.5% v/v lysis buffer, with protease and phosphatase inhibitors cocktail (ROCHE) as described above. Pre-cleared extracts were then pulled down with immobilized anti C1q antibody ([JL-1] catalog # ab71940 Abcam). For the pull-down assay, C1q antibody was previously biotinylated with Ez-link Sulfo-NHS-SS-Biotinylation kit (Thermo) following the manufacturer’s instructions and inmobilized as the bait protein in the Pierce Pull-Down biotinylated protein: protein interaction kit (Thermo) as described previously for C1q. To summarize, membrane proteins cross-linked with C1q were extracted and then pulled down with anti-C1q antibody. Conducted bound proteins were eluted and analyzed by mass spectrometry (nanoLC-MS/MS) at the UCI Center for Virus Research Protein Mass Spectrometry Facility, as described above.
 
-## RNA extraction, and RT-PCR, PCR
+### RNA extraction, and RT-PCR, PCR
 
 Total RNA was isolated from cell culture samples using RNeasy Mini Kit (Qiagen), followed by elimination of genomic DNA using DNA-free DNase I (Ambion). For RT-PCR cDNA synthesis was performed using High Capacity cDNA Reverse Transcription Kit (ABI Life Technologies) according to the manufacturers protocol. For each PCR reaction 200 ng of cDNA was amplified using GoTaq green Master mix (Promega), in thermal cycler conditions of 2 min 95°C, followed by 35 repeated cycles of 30 min at 95°C 30 min at 58°C and 1 min at 72°C and a final elongation step of 10 min at 72°C. Primers used for C1q novel candidate receptor gene expression are listed in Supplementary file 4.
 
-## Human embryonic cortex single-cell RNA-seq dataset analysis
+### Human embryonic cortex single-cell RNA-seq dataset analysis
 
 Human embryonic cortex (weeks 22–23) single-cell RNA-seq dataset (GSE103723) was downloaded from GEO and processed according to the original publication (Fan et al., 2018) using Seurat (Stuart et al., 2019). Briefly, UMAP clustering was performed and all cells were classified into three major groups, namely, neurons, glial cells and non-neural based on global gene expression. Subsequently, glia cells were further processed and categorized into major glia types (e.g. Radial glia (NSC), Astrocyte Precursor Cells (APC)-Astrocytes, Oligoprogenitors (OPCs), and Oligodendrocytes) employing customized glia cell specific marker genes enrichment analysis implemented in hypeR (Federico and Monti, 2019). Glia cell type specific gene expression of the five candidate receptors were visualized by R package Pheatmap v1.012.
 
-## Proximity ligation assay (PLA) for C1q interaction with signaling candidates
+### Proximity ligation assay (PLA) for C1q interaction with signaling candidates
 
 To verify C1q-candidate receptor protein interaction, hNSC were dissociated into single cells and plated on eight-well glass chamber slides in GM, 1 d post plating cells were incubated with purified C1q at 10 nM, 100 nM, or 200 nM concentration for 30 min as specified in figure legends. Cells were then fixed with 4% PFA for 15 min RT and cell membranes were stained with wheat germ agglutinin (WGA-Alexa conjugate 488- Invitrogen) (1:200 dilution) for 30 min followed by PLA analysis using the Duolink in situ Red starter kit Mouse/Rabbit (DUO92101, Sigma) according to the manufacturer’s protocol. Briefly, cells were blocked for 30 min at 37°C with blocking solution. Primary antibodies were incubated for 2 hr at room temperature (antibody concentrations and sources in Supplementary file 2), washed, then incubated with species-specific secondary antibody-complementary PLA probes (1:5) for 60 min at 37°C in humidified chambers. PLA probes were then ligated for 30 min at 37°C, and amplified at 37°C for 100 min. The slides were cover-sliped with Duolink in situ mounting media with DAPI (Sigma). For analysis, 13 random pictures per condition were captured using an ApoTome microscope system (Zeiss) as a total of 21 z-stacks of optical slices in 0.275 μm intervals using 40× objective. The number of red positive punctae was assessed using the ‘analyze particles’ function in the Image J analysis software, and reported relative to the total number of cells per picture frame. This quantification gives a rough number of average fluorescent particles per cell. All PLA data are shown as the average fluorescent punctae per picture relative to total number of cells per image (13 random images). All experiments were done with biological duplicates and technical duplicates.
 
-## C1q induction of hNSC motility and chemotaxis
+### C1q induction of hNSC motility and chemotaxis
 
 C1q induction of cell motility was evaluated in a live-cellimaging setting, mNSC were plated into custom-made PDMS microwells at density of 100 cells/microwell and imaged using VivaView FL Incubator Microscope (Olympus America, Inc) at +37°C and 5% CO2 with 20× objective in 20 min intervals for 7 d as previously described (Piltti et al., 2018). Time-lapse images of cells grown in DM, in the presence or absence (control) of C1q at [0.1 nM], [1.0 nM], and [200 nM] concentrations were compiled into movies and for each experiment 20 randomly selected individual cells (total of 60 cells per group) were manually tracked frame-by-frame using Imaris software 7.5.2 (Bitplane) as previously described (Piltti et al., 2018). Kinetics analysis was done using Imaris software to track cell motility over time. All data were normalized to control conditions. All experiments were conducted in biological triplicates.
 
 C1q induction of hNSC chemotaxis was evaluated in transwell assays, hNSC and mNSC were grown as monolayer and dissociated as single cells. Source and concentration of C1q, and inhibitors used are indicated in Supplementary file 3. To perform the chemotaxis assay, single cells were resuspended in DM to a concentration of 300,000 cells/mL and then 100 µL of this single-cell resuspension was added to each migration assay chamber, before placing chambers into feeder trays (Millipore) containing 150 µL of media for each condition; the chambers were then incubated at 37°C for 3.5 hr. Subsequently, the chambers were transferred onto new 96-well trays containing 150 µL of prewarmed cell detachment buffer and incubated for 30 min at 37°C. At the end of this incubation, 50 µL 1:75 dilution of CyQuant GR Dye:Lysis buffer was added to the cell detachment buffer and incubated for 15 min at room temperature. Finally, 150 µL CyQuant GR Dye:Lysis/detachment solution was transferred to a new 96-well plate, and migration was quantified using a 480/520 nm filter set on a fluorescent plate reader. To obtain fluorescence standardization, cells of known doses, as well as blanks containing only cell detachment buffer, lysis buffer, or CyQuant Dye, were used. All experiments were conducted in biological triplicate or quadruplicate with technical triplicates.
 
-## Cell fate and proliferation analysis
+### Cell fate and proliferation analysis
 
 To assess the effect of purified C1q on hNSC proliferation and differentiation hNSC were dissociated and plated as single cells on eight-well glass chamberslides. At 1 d post-plating, GM was changed to DM with or without (control) purified C1q at [0.1 nM], [1.0 nM], or [200 nM] concentrations with or without Brdu/EdU [10 mM] (proliferation). Cells were maintained in DM for 2 d in vitro (DIV) for proliferation and 14DIV for differentiation. hNSC were then fixed with 4% paraformaldehyde (PFA), permeabilized, and blocked in PBS solution supplemented with 0.1% Triton X-100 (Sigma-Aldrich), 5% goat or donkey serum (Jackson ImmunoResearch), and 1% BSA (Sigma-Aldrich). Primary and secondary antibodies including bromodeoxyuridine (Brdu), glial fibrillary acidic protein (GFAP), Olig2, and βIII-tubulin, sources, and the dilutions at which they were used are listed in Supplementary file 2. Hoechst 33342 (1:1000 dilution; Invitrogen) was used as a nuclear counterstain. Fluorescent images of immunostained slides were captured using random sampling with either an inverted Olympus IX71 fluorescent microscope or a ZEISS Axio Imager two light microscope with an Apotome2 image processor with 20× objective. Cell quantification was performed using Imaris software. All image capture and cell quantification was performed by investigators blinded to the study groups. All experiments in which hNSC were used were conducted in biological triplicate or quadruplicate with technical duplicates.
 
-## CRISPR Cas9 hNSC CD44 genetic deletion
+### CRISPR Cas9 hNSC CD44 genetic deletion
 
 Our previous experimental data on hNSC behavior in vitro and in vivo after transplantation have utilized tissue-derived multipotent cells (Cummings et al., 2005; Salazar et al., 2010; Sontag et al., 2014; Hooshmand et al., 2017; Nguyen et al., 2017; Cummings et al., 2006; Hooshmand et al., 2009; Piltti et al., 2013), and not neuralized induced pluripotent or embryonic stem cells as a starting point. These cells are heterogenous at the time of gene editing, and isogenic clone selection carries a greatly heightened risk of inadvertent deletion of cell subpopulations or types. Accordingly, we developed a different strategy to derive CD44 WT and KO hNSC, using fluorescence activated cell sorting (FACS) to select WT and KO cell populations after CRISPR.
 
 CD44 WT and KO hNSC were generated by gene editing with CRISPR Cas9 technology. Cas9 plasmid and guide RNAs were custom generated and validated in human HEK293 cells by applied stem cells https://www.appliedstemcell.com/. Briefly, two guide RNAs (gRNA) per gene were individually cloned into a bicistronic vector for co-expression with the Cas9 protein. Following vector delivery into HEK293 cells, the abilities of these gRNAS to guide Cas9 to target sites and promote double strand breaks were evaluated via Sanger sequencing (guide RNA sequences in Figure 5—figure supplement 1A). Briefly, hNSC were nucleofected at 80% efficiency (Lonza nucleofector buffer L) and co-transfected with two Cas9-GFP plasmids containing the gRNAs CD44g1 and CD44g5 to generate a 47 bp deletion of CD44 gene in exon 2. Unmodified hNSC exhibit 99.1% of CD44+ cells and 1.87% CD44- cells. Two weeks after CRISPR Cas nine modification, 39% of the cells remained positive for CD44 (WT) and 30% exhibited a negative expression (KO). CD44 WT and KO hNSC were then separated and enriched by fluorescence activated cell sorting (FACS). The gating parameters were highly stringent to avoid any heterozygous cell populations in our sorted cell pools (cells exhibiting low expression of CD44). CD44 expression was validated in WT and KO CRISPR Cas9-generated hNSC by flow cytometry (described below), total protein extraction and western blot, and Immunocytochemistry as described above, 2 weeks and 1–2 months after sorting respectively, corroborating stable CD44 WT and KO expression. Antibodies, catalog numbers and dilutions used in Supplementary file 2. Two different CD44 KO lines were generated with the same method. No substantial differences between the two different cells lines generated regarding their CD133+ content, multipotency, proliferative capacity, differentiation profiles or responses to inflammatory components, like PMN-CM induced migration. Follow up experiments in vitro were done only for the transplanted cell line with biological triplicates or quadruplicates. Additionally, CD44 WT and KO cell lines were sequenced and genotype validating effective CRISPR Cas9 modification and homozygous generation of CD44 KO cell lines and maintenance of the WT genotype in the non-modified cells (Figure 5—figure supplement 2). Furthermore, CD133+ marker expression was unchanged in unmodified (WT) versus modified (KO) hNSC (Figure 5—figure supplement 3C,D), suggesting that CRISPR Cas9 modification did not substantially alter hNSC ‘stemness’. No karyotype abnormalities (analyzed by cell line genetics https://www.clgenetics.com/) were observed in the WT and KO lines (Figure 5—figure supplement 3A,B).
 
-## CD44 and CD133 flow cytometry
+### CD44 and CD133 flow cytometry
 
 Cells grown in monolayer were dissociated as single cells and resuspended in PBS supplemented with 10% HSA (Octapharma); cells were then blocked with FcR blocking reagent (Miltenyi Biotec) and incubated with Pre-conjugated anti-CD44-PE (1:11, 130-110-293, Miltenyi Biotec) and anti-CD133/1 antibody (1:11, 130-113-673-FITC, Miltenyi Biotec) for 30 min at 4°C. After washes in PBS supplemented with 10% HSA the cells were analyzed using a BD LSR II Flow Cytometer (BD Biosciences). Cell viability was detected by propidium iodide (PI, 1:1000- Invitrogen) in unstained cells. In all conditions cell viability was typically more than 96%. Gating for all flow cytometry analyses were set using unstained controls, single labeled cells, and PI+ cells.
 
-## Spinal cord contusion injuries for hNSC acute transplantations
+### Spinal cord contusion injuries for hNSC acute transplantations
 
 Immunodeficient mice were anesthetized using 2.5% isofluorane and received a laminectomy at the thoracic vertebrae 9 (T9) using a surgical microscope. All animals received 50 kilodyne (kD; one dyne = 10 µN) contusion injury using the Infinite Horizon Impactor (Precision Systems and Instrumentation), as previously described (Hooshmand et al., 2009). For hNSC transplantation immunodeficient mice were used to enable long-term hNSC engraftment. NOD-scid, and Rag1 mice exhibit deficits in adaptive immunity, however, they demonstrate innate immune responses and histopathological characteristics comparable to other mouse strains following SCI (Luchetti et al., 2010). Number of animals per group/strain and exclusions are detailed in Supplementary file 1. hNSC were dissociated into a single-cell suspension and concentrated to a final density of 75,000 cells/µL in X-vivo media-(vehicle) on the day of SCI, and transplants were conducted, as described previously (Hooshmand et al., 2009; Hooshmand et al., 2017). Briefly, siliconized beveled glass pipettes (bevel: inner diameter = 70 µm, outer diameter = 100–110 µm; Sutter Instruments) were loaded with freshly triturated hNSC or vehicle, and injections were made into the intact parenchyma (two sites bilaterally above and below the injury epicenter) at T9 using a NanoInjector system and micropositioner (WPI Instruments) immediately after SCI contusion. Each site received 250 nL of cells or vehicle as described (Cummings et al., 2005). Previous studies in our laboratory have demonstrated that this volume does not exacerbate damage to the spinal cord.
 
-## C1q neutralization in vivo
+### C1q neutralization in vivo
 
 Immediately after injury, about 2 µL of C1q neutralizing antibody (C1qNab) goat anti-C1q [100 µg/mL], control goat anti-IgG antibody [100 µg/mL] (Supplementary file 3), or vehicle (media in which antibodies were prepared) were delivered via epicenter injections using a Hamilton Flexifil Syringe over 2 min, followed by a 1 min delay prior to withdrawal of syringe. The effect of C1qNAb at the concentration delivered in vivo was first tested in vitro, and no toxic or proliferative effects associated with exposure of hNSC to the C1qNAb was observed. Animals were randomly assigned to receive either C1qNAb with hNSC or vehicle with hNSC. The number of animals per group and exclusions are detailed in Supplementary file 1.
 
-## Histology and stereological quantification
+### Histology and stereological quantification
 
 At 6WPI, 12WPI or 16WPI (Supplementary file 1 for different animal cohorts) mice were terminally anesthetized, transcardially perfused with PBS, followed by 4% PFA. Spinal cord regions corresponding to dorsal roots at T2–T6, T6–T12, and T12-L2 were post-fixed and cryoprotected overnight in 4% PFA plus 20% sucrose and, flash frozen at −55°C in isopentane, and stored at −80°C until tissue processing (Hooshmand et al., 2009; Hooshmand et al., 2017). T6–T12 spinal sections were embedded in Neg50 Frozen Section Medium (Thermo) and 30 µm thick transverse-coronal sections where sectioned in a Cryostat with a CryoJane tape transfer system (Leica), as previously described (Anderson et al., 1996; Sontag et al., 2014). Frozen sections were collected on slides and stored at −20°C until processed for immunohistochemistry. All sectioning and immunohistochemistry procedures were conducted, as previously described (Anderson et al., 1996; Sontag et al., 2014). and dilutions used in immunohistochemistry are listed in Supplementary file 2. Unbiased histological quantification was conducted using stereology by investigators blinded to experimental groups. A random set of animals (n = 6/group) were selected for cell counts. The optical fractionator probe (Joelving et al., 2006) was used for estimation of the number of hNSC (STEM121+) and human astrocytes (STEM123+) in StereoInvestigator (Microbrightfield). Grid size measurements were determined based on preliminary experimentation to establish a low coefficient of error (CE ≤0.08). Cell migration was reported as the total estimated number of cells per 1 mm section, in a distribution graph was the injury epicenter is defined as the area of the cord with the largest Fibronectin positive area. A Cavalieri probe (grid size, 20 × 20 µm2, MicroBrightField) was used to estimate total volumes of, spinal cord, fibronectin+ lesion volume, STEM121+, and STEM123+ cell clustering in 1 of 12 intervals from coronal spinal cord sections 360 µm apart, at 10× magnification.
 
-## Detection of C1q at the SCI epicenter
+### Detection of C1q at the SCI epicenter
 
 A 4-month-old Rag1 female mice received either a laminectomy (control; n = 4) or a moderate contusion injury (50 kD; n = 12) at the thoracic level T9, as described below. Mice were PBS perfused 3 hr (n = 4), 24 hr (n = 4) or 9 d (n = 4) following SCI or laminectomy and the spinal cord freshly dissected and divided into 3 mm segments centered at T9, and two sequential 3 mm segments extending rostral and caudal from T9. Total protein extraction was performed with T-PER buffer (SIGMA) supplemented with protease (cOmplete ULTRA- Roche) and phosphatase (PhosSTOP-Roche) inhibitors. Protein concentration was determined in precleared extracts as described above. 10 µg of protein of the central (T9 or laminectomy) and the farthest rostral and caudal sections were resolved in SDS-PAGE precast 4–12% gradient gels, transferred onto nitrocellulose membranes and immunoblotted as described above. Antibodies against C1q and β-actin are listed in Supplementary file 2. Bound antibodies were visualized and analyzed as described above.
 
-## Behavioral tasks and assessments of locomotor recovery
+### Behavioral tasks and assessments of locomotor recovery
 
 All behavioral data were collected and analyzed by blinded observers. Gross locomotor recovery in mice (n = 10/group; Supplementary file 1) was assessed using the Basso Mouse Scale (BMS; Basso et al., 2006) during the following time points: pre-injury and 2 d/7 d/2 weeks/4 weeks/6 weeks/8 weeks/12 weeks/16 weeks post-injury. Additionally, more sensitive behavioral parameters were utilized, including horizontal ladder beam and CatWalk gait analysis to assess kinematic parameters (Koopmans et al., 2005). Horizontal ladder beam and CatWalk tasks were performed pre-injury and every 4 weeks after injury until animals were sacrificed 16 weeks post-injury.
 
-## Statistics
+### Statistics
 
 For in vitro assays, experiments were performed with biological replicates and technical replicates, as stated in each method section or figure legend. Biological replicates are defined as experiments performed independently from different cell samples (e.g., different cell culture, passage). Technical replicates are defined as experiments performed in duplicates or triplicates with the same cell samples (e.g., same culture sample). We used N3-4 biological replicates consistent with accepted standard for in vitro studies. Statistics were performed using Prism, version 8.0 (Graphpad Software Inc, San Diego, CA, http://www.graphpad.com). All data are presented as mean ± standard error of the mean (SEM). When indicated experimental values were normalized to untreated control conditions and standardize to 1 or 100%. Data were analyzed using one-sample t-test to compare with control and Student’s t-test to compare between experimental conditions. When comparing across multiple groups, one-way ANOVA was conducted first, followed by Tukey’s multiple t-test comparisons. In all statistical analyses, significance was defined as p≤0.05.

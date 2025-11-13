@@ -14,15 +14,15 @@
 ### Affiliations
 
 1. Atlanta Veterans Affairs Medical Center Decatur United States
-2. https://ror.org/03czfpz43 Department of Orthopaedics, Emory University School of Medicine Atlanta United States
-3. https://ror.org/04p2sbk06 Department of Biotechnology, Panjab University Chandigarh India
-4. https://ror.org/03czfpz43 Emory University, Division of Endocrinology Atlanta United States
+2. Department of Orthopaedics, Emory University School of Medicine Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+3. Department of Biotechnology, Panjab University Chandigarh India ([ROR:04p2sbk06](https://ror.org/04p2sbk06))
+4. Emory University, Division of Endocrinology Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
 
 † Corresponding author
 
 ## Abstract
 
-The clinical healing environment after a posterior spinal arthrodesis surgery is one of the most clinically challenging bone-healing environments across all orthopedic interventions due to the absence of a contained space and the need to form de novo bone. Our group has previously reported that sclerostin in expressed locally at high levels throughout a developing spinal fusion. However, the role of sclerostin in controlling bone fusion remains to be established. We computationally identified two FDA-approved drugs, as well as a single novel small-molecule drug, for their ability to disrupt the interaction between sclerostin and its receptor, LRP5/6. The drugs were tested in several in vitro biochemical assays using murine MC3T3 and MSCs, assessing their ability to (1) enhance canonical Wnt signaling, (2) promote the accumulation of the active (non-phosphorylated) form of β-catenin, and (3) enhance the intensity and signaling duration of BMP signaling. These drugs were then tested subcutaneously in rats as standalone osteoinductive agents on plain collagen sponges. Finally, the top drug candidates (called VA1 and C07) were tested in a rabbit posterolateral spine fusion model for their ability to achieve a successful fusion at 6 wk. We show that by controlling GSK3b phosphorylation our three small-molecule inhibitors (SMIs) simultaneously enhance canonical Wnt signaling and potentiate canonical BMP signaling intensity and duration. We also demonstrate that the SMIs produce dose-dependent ectopic mineralization in vivo in rats as well as significantly increase posterolateral spine fusion rates in rabbits in vivo, both as standalone osteogenic drugs and in combination with autologous iliac crest bone graft. Few if any osteogenic small molecules possess the osteoinductive potency of BMP itself – that is, the ability to form de novo ectopic bone as a standalone agent. Herein, we describe two such SMIs that have this unique ability and were shown to induce de novo bone in a stringent in vivo environment. These SMIs may have the potential to be used in novel, cost-effective bone graft substitutes for either achieving spinal fusion or in the healing of critical-sized fracture defects. This work was supported by a Veteran Affairs Career Development Award (IK2-BX003845).
+Background:The clinical healing environment after a posterior spinal arthrodesis surgery is one of the most clinically challenging bone-healing environments across all orthopedic interventions due to the absence of a contained space and the need to form de novo bone. Our group has previously reported that sclerostin in expressed locally at high levels throughout a developing spinal fusion. However, the role of sclerostin in controlling bone fusion remains to be established.Methods:We computationally identified two FDA-approved drugs, as well as a single novel small-molecule drug, for their ability to disrupt the interaction between sclerostin and its receptor, LRP5/6. The drugs were tested in several in vitro biochemical assays using murine MC3T3 and MSCs, assessing their ability to (1) enhance canonical Wnt signaling, (2) promote the accumulation of the active (non-phosphorylated) form of β-catenin, and (3) enhance the intensity and signaling duration of BMP signaling. These drugs were then tested subcutaneously in rats as standalone osteoinductive agents on plain collagen sponges. Finally, the top drug candidates (called VA1 and C07) were tested in a rabbit posterolateral spine fusion model for their ability to achieve a successful fusion at 6 wk.Results:We show that by controlling GSK3b phosphorylation our three small-molecule inhibitors (SMIs) simultaneously enhance canonical Wnt signaling and potentiate canonical BMP signaling intensity and duration. We also demonstrate that the SMIs produce dose-dependent ectopic mineralization in vivo in rats as well as significantly increase posterolateral spine fusion rates in rabbits in vivo, both as standalone osteogenic drugs and in combination with autologous iliac crest bone graft.Conclusions:Few if any osteogenic small molecules possess the osteoinductive potency of BMP itself – that is, the ability to form de novo ectopic bone as a standalone agent. Herein, we describe two such SMIs that have this unique ability and were shown to induce de novo bone in a stringent in vivo environment. These SMIs may have the potential to be used in novel, cost-effective bone graft substitutes for either achieving spinal fusion or in the healing of critical-sized fracture defects.Funding:This work was supported by a Veteran Affairs Career Development Award (IK2-BX003845).
 
 ## Introduction
 
@@ -36,131 +36,179 @@ Building upon the proven success of systemic anti-sclerostin mAbs to enhance bon
 
 ## Methods
 
-## In silico drug design
+### In silico drug design
 
 Sclerostin, belonging to the DAN protein family, has a cysteine knot that divides its intervening sequences into three loops, with the first and the third loops protruding to either side of the central knot. The loop 2 region, specifically, is the known binding site for functional anti-sclerostin antibodies (Figure 1A and B; Veverka et al., 2009). Mutational analyses have shown that mutations in the Leu-90 to Asn-103 residues of the loop 2 region resulted in the inability for sclerostin to bind to LRP5/6 (Boschert et al., 2016). Similarly, a mutation of single amino acids in the loop 2 region (Asp-92 or Ile-94) is known to affect the binding of sclerostin to LRP6 (Boschert et al., 2013). Other studies, however, have shown that a murine sclerostin mutant with Cys-84 and Cys-142 exchange (resulting in the removal of the third disulfide bond of the cystine knot) has reduced binding affinity to LRP5/6 (Boschert et al., 2013), suggesting that elements outside the flexible loop 2 region are also important for proper sclerostin function. Therefore, both of these regions on sclerostin were thought to provide strong candidates to target for the development of anti-sclerostin SMIs. Virtual screening results for AutoDock Vina were visualized using PyMOL (The PyMOL Molecular Graphics System, version 2.0, Schrödinger, LLC) and for FRED using Omega. Receptor-structure-focused docking was performed using the available PDB (protein data bank) nuclear magnetic resonance spectroscopy structure of sclerostin (ID 2K8P) (Veverka et al., 2009) to analyze binding modes and their estimated affinities. Out of the 36 conformers of this structure, conformer 1 was chosen as it was the best representative conformer in the ensemble (as mentioned in the remarks of the PDB structure of sclerostin). For this task, we used the chemical library ‘Diversity Set IV’ from the National Cancer Institute (NCI), which contains 1596 compounds. Corina software was used to generate 3D coordinates of the ligands in the library (3D Structure Generator CORINA Classic, Molecular Networks GmbH; Schwab, 2010). The translational, rotational, and vibrational entropies of protein–drug complexes were estimated using additional modules within Discovery Studio (Dassault Systèmes BIOVIA, Discovery Studio Modeling Environment, Release 2017, San Diego), including CHARMm, GLIDE, and GOLD.
 
-## Cell culture
+![Figure 1.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig1-v3.jpg)
+
+**Figure 1.:** Structural representation of sclerostin (PDB ID 2K8P) is shown (A). Three loops of sclerostin are color coded (red for loop 1, gray for loop 2, and cyan for loop 3). Also, the residues from loop 2 that are targeted for inhibitor selection are highlighted, including Leu 90, Pro 91, Asn 93, Ala 93, and Ile 94, which is shown in relation to the structure of the β-propeller domain of LRP6 (PDB ID 3SOV) (B). Candidate compounds were next selected in silico against the loop 2 region (91st to 95th amino acid position) and the cystine knot region (Cys 85 and Cys 143) of sclerostin; their poses are shown (C). Panel (D) shows the selection of the most effective compounds in vitro, with compounds F1, VA1, and C07 being the most potent sclerostin SMIs tested. All three were able to effectively enhance Wnt3a–induced reporter activity at suboptimal dose of Wnt3a. Treatment of transfected cells with compounds alone (without Wnt3a protein) did not show any significant induction of reporter activity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Wnt pathway potentiation by small-molecule inhibitors (SMIs) was determined in C2C12 cells. Based on these results, 10 ng/ml of Wnt3a was used to screen SMIs for Wnt activity in vitro. Luciferase activity was determined in triplicate (n = 3). Error bars represent standard error of mean (SEM) values. * denotes statistical significance (p<0.05) when compared to controls (BMP alone).
+
+### Cell culture
 
 The murine pre-osteoblast MC3T3-E1 cell line (Sudo et al., 1983) and mouse C2C12 cells, as well as Dulbecco’s modified Eagle’s medium (DMEM), were purchased from ATCC (Manassas, VA). The bone marrow stromal cells (BMSCs) were originally isolated from murine bone marrow by centrifugation (Camalier et al., 2013). All cells were used within eight passages. The non-heat-inactivated fetal bovine serum (FBS) was purchased from HyClone Laboratories, Inc (Logan, UT). Pre-osteoblasts (BMSC and MC3T3-E1) were cultured in α-modified Eagle’s medium (α-MEM; Thermo Scientific) supplemented with 50 U/ml penicillin, 50 mg/ml streptomycin, 2 mM L-glutamine (Thermo Scientific), and 10% FBS (Atlanta Biologicals, Lawrenceville, GA). The C2C12 cells at passages 4–7 were subcultured in T-75 cm2 flasks in DMEM supplemented with 10% FBS at 37°C in 5% CO2 with humidification. When the flasks reached 60–70% confluence, the cells were trypsinized and seeded in triplicate at 200,000 cells/well in a 6-well plate for quantitative real-time RT-PCR and alkaline phosphatase (ALP) assays or at 50,000 cells/well in a 12-well plate for the dual-luciferase reporter assay.
 
-## Dual-luciferase reporter assay
+### Dual-luciferase reporter assay
 
-## Wnt reporter activity
+#### Wnt reporter activity
 
 A Wnt-specific TCF/LEF-driven reporter plasmid was used (QIAGEN, Valencia, CA). The C2C12 cells were trypsinized and seeded in triplicate wells at 50,000 cells/well in 12-well plates on day 1. On day 2, the cells were co-transfected with the reporter construct and the renilla-luciferase control vector using SuperFect (QIAGEN) for 24 hr. A total of 1 µg of plasmids was used for co-transfection in each well, and the concentration of renilla-luciferase vector was 1/15 of the reporter plasmid. On day 3, medium was replaced with DMEM containing 2% FBS and the cells were treated with 10 ng/ml of Wnt3a and ±10 µM of the sclerostin-interacting compound. On day 4, the luciferase activities were measured in 20 μl of cell-lysate using the dual-luciferase assay system (Promega, Madison, WI) with a luminometer (LumiCount; Packard Bioscience, Meriden, CT) following the manufacturer’s instructions. The luciferase activity was expressed as relative units of luciferase (RUL; a ratio of firefly luciferase to renilla luciferase activity).
 
-## BMP reporter activity
+#### BMP reporter activity
 
 The BMP-specific Smad1-driven 9 × GCCG (a consensus binding sequence for Smad1) reporter plasmid was kindly provided by Dr. Miyazono (The Institute of Japanese Foundation for Cancer Research, Tokyo). The C2C12 cells were trypsinized and seeded in triplicate wells at 50,000 cells/well in 12-well plates on day 1. On day 2, the cells were co-transfected with the 9 × GCCG-reporter construct and the renilla-luciferase control vector using SuperFect (QIAGEN) for 24 hr. A total of 1 μg of plasmids was used for co-transfection in each well and the concentration of renilla-luciferase vector was 1/15 of the 9 × GCCG-reporter plasmid. On day 3, medium was replaced with DMEM containing 2% FBS and the cells were treated with various concentrations of compound. On day 4, the cells were treated with BMP-2. On day 5, the luciferase activities were measured as described above.
 
-## RNA extraction and reverse transcription
+### RNA extraction and reverse transcription
 
 The MC3T3 cells were plated at a density of 200,000 cells/well in 6-well plates and grown overnight in DMEM containing 10% FBS. On day 2, the culture medium was replaced with DMEM containing 2% FBS and the cells were treated with various concentrations of selected compound (diluted from 10 mg/ml stock solutions prepared in DMSO) for 24 hr. In control cultures, a DMSO solvent concentration of 0.01% (v/v) was applied. On day 3, medium was replaced with fresh DMEM containing 2% FBS and the cells were treated with recombinant human (rh)BMP-2 for 24 hr. Total RNA was harvested using the RNeasy Mini Kit according to the manufacturer’s instructions (QIAGEN). The harvested RNA was digested with RNase-free DNase I (QIAGEN) to remove DNA contamination. The concentration of the isolated RNA was determined by measuring the absorbance at 260 nm wavelength with a spectrophotometer (Epoch, Biotek). The ratio of A260/A280 was between 1.9 and 2.0. Reverse transcription was carried out to synthesize cDNA in a 50 μl volume with 2 μg of total RNA, using the Invitrogen SuperScript IV VILO (Cat# 11756050) for 10 min at 25°C, 10 min at 50°C, and 5 min at 85°C.
 
-## Quantitative real-time RT-PCR
+### Quantitative real-time RT-PCR
 
 Expression of murine β-catenin, AXIN2, BMP-2, ID1, RANKL, and OPG was analyzed in duplicates (primers given in Supplementary file 1). Gene transcription levels were determined with the comparative delta Ct method using 18S as a reference. Quantitative real-time RT-PCR was performed also to determine the mRNA expression level of early marker genes of BMP pathway. All primers were preverified and procured from Bio-Rad. Real-time PCR was performed with the following three-step protocol: step 1, 50°C for 2 min; step 2, 95°C for 10 min; step 3, 40 cycles of 95°C for 15 s and 62°C for 1 min using the 7500 real-time PCR System (Applied Biosystems, Foster City, CA). To confirm the amplification specificity, the PCR products were subjected to a dissociation curve analysis.
 
-## SDS-PAGE and western blotting
+### SDS-PAGE and western blotting
 
 We investigated the intensity and duration of the Smad1 signal by evaluating the levels of C-terminal phosphorylation (pSmad1Cter) at different time points using murine MSCs as well as MC3T3-E1 cells, which are known to respond particularly well to BMP in serum-free medium. To start, recombinant human (rh)BMP-2 (50 ng/ml) was added for 15 min only. Next, pSmad1Cter was assessed via western blot at time 0 followed by 1, 2, and 3 hr thereafter. This was repeated with the SMI candidates (0–20 µM). SB415286 (40 µM), a known inhibitor of GSK3b, was also be used as a positive control. Similarly, we determined the levels of both phosphorylated-β-catenin and unphosphorylated-β-catenin using Wnt1-conditioned media, both in the presence and absence of recombinant murine sclerostin (rmSCL, 80 ng/ml), with and without the sclerostin SMIs (0, 2.5, 5, 7.5, 10, 15, and 20 µM) using murine MSCs as well as MC3T3-E1 cells as model systems.
 
 Cells were lysed to obtain total protein using Mammalian Protein Extraction Reagent (Pierce Biotechnology, Rockford, IL) or lysed to obtain nuclear protein using NE-PER Nuclear and Cytoplasmic Extraction Reagents (Pierce Biotechnology) according to the manufacturer’s protocol. Each sample (10 μg of protein) was mixed with NuPage loading buffer (Invitrogen, Carlsbad, CA) for a total volume of 20 μl and boiled for 5 min. The proteins were separated by electrophoresis under denaturing conditions on NuPage Bis-Tris Pre-Cast gels (Invitrogen) for 60 min at 200 V and transferred onto nitrocellulose membranes (Invitrogen) for 60 min at 30 V. After the transfer, the membranes were incubated in 25 ml of blocking buffer (5% non-fat dry milk in Tris buffered saline [TBS]) for 1 hr at room temperature. After blocking, membranes were washed three times for 5 min each in 15 ml of TBS with 0.1% Tween-20 (TBST). Washed membranes were incubated with different primary antibodies in TBST overnight at 4°C. Anti-actin antibody was purchased from Santa Cruz Biotechnology (Santa Cruz, CA); other antibodies were purchased from Cell Signaling Technology (Beverly, MA). After incubation with primary antibody, membranes were washed three times for 5 min each with 15 ml of TBST. Washed membranes were incubated with HRP-conjugated anti-rabbit or anti-mouse secondary antibodies as indicated (1:2000, Cell Signaling Technology, Beverly, MA) in 10 ml of blocking buffer with gentle agitation for 1 hr at room temperature. After incubation with secondary antibodies, membranes were washed three times for 5 min each with 15 ml of TBST. Washed membranes were incubated with 5 ml of SuperSignal West Pico Western blot substrate (Pierce Biotechnology) with gentle agitation for 4 min at room temperature. Membranes were drained of excess developing solution, wrapped in plastic wrap, and exposed to X-ray films.
 
-## ALP assay
+### ALP assay
 
 The C2C12 cells were plated at 200,000 cells/well in 6-well plates and grown overnight in DMEM containing 10% FBS. On day 2, the culture medium was replaced with DMEM containing 2% FBS and the cells were treated with 0.5 uM or indicated concentration of compound for 24 hr in 2 ml culture medium. On day 3, the cells were treated with a final concentration of 50 ng/ml of BMP-2 with or without compound in DMEM medium containing 2% FBS for 72 hr. The cells were washed with phosphate-buffered saline (PBS) and lysed by the addition of lysis buffer (10 mM Tris-HCl pH 8.0, 1 mM MgCl2, and 0.5% Triton X-100). The cell lysates were centrifuged for 5 min at 13,000 × g. The supernatant was removed, and the aliquots were assayed for ALP activity and protein amount. The ALP activity was measured in triplicate using an ALP assay kit (Sigma-Aldrich, St. Louis, MO) in microtiter plates. The protein amount was determined with Bio-Rad protein assay reagent (Bio-Rad, Hercules, CA) using bovine serum albumin (BSA) as a standard. The ALP activity (nmoles of p-nitrophenol per ml) was normalized to the protein amount (nmoles of p-nitrophenol per μg).
 
-## Mineralization assay
+### Mineralization assay
 
 To quantify the calcium deposition (mineralization) of osteogenic samples, murine MSCs and MC3T3 cells were harvested on day 14. After washing the samples twice with PBS and disrupting the monolayer with a cell scraper, calcium ions were dissolved from the extracellular matrix by shaking in 500 μl/well 0.5 N HCl at 4°C for 4 hr. Calcium content was determined in technical triplicates with the QuantiChrom calcium assay kit (BioAssay Systems, Hayward, CA) according to the manufacturer’s protocol. Protein content was measured in technical triplicates using Roti-Quant (Carl Roth, Karlsruhe, Germany) according to the manufacturer’s instructions. Calcium concentrations were normalized to the protein content.
 
-## Bone resorption assay
+### Bone resorption assay
 
 RAW 264.7 cells were plated at a low density in the presence of DMEM with 10% FBS. After 24 hr, the media was changed to α-MEM containing macrophage colony-stimulating factor (M-CSF; 10 ng/ml) and 66 ng/ml receptor activator of nuclear factor kappa-B ligand (RANKL, Lonza Biosciences). OC activity was measured by releasing the europium conjugated human type I collagen-coated on the bottom of the OsteoLyse Assay Kit (Lonza Biosciences) at each time point. Various treatments were performed as indicated in figure legends. Then, 200 μl of a fluorophore releasing reagent (Lonza Biosciences) was placed in each well of a 96-well black, clear-bottom assay plate (Corning Inc, Corning, NY). Also, 10 μl of cell culture supernatant was transferred to each well of the assay plate containing the fluorophore releasing reagent. The fluorescence of each well of the assay plate was measured with an excitation wavelength of 340 nm and an emission wavelength of 615 nm over a 400 μs period after an initial delay of 400 μs.
 
-## Histological analysis of rat explants
+### Histological analysis of rat explants
 
 After euthanasia, the subcutaneous implants were fixed with 10% formalin. Following fixation, the implants were washed and placed into a processor that dehydrated the samples in 70% alcohol, followed by 95%, 100%, and xylene. The samples were then embedded in paraffin and cut into slices of 5 microns using a microtome (Accu-Cut SRM 200 Rotary Microtomoe, Sakura Finetek USA, CA). Slides were stained with hematoxylin and eosin (H&E) and Goldner’s trichrome (Sigma-Aldrich). Images were obtained with Lionheart LX (Biotek Instruments Inc, Winooski, VT) at 4× and captured using Gen 5 software.
 
-## Rat subcutaneous ectopic model
+### Rat subcutaneous ectopic model
 
 Male 5- to 6-week-old Sprague–Dawley rats (Harlan Laboratories, Indianapolis, IN) were anesthetized with 1–2% isoflurane mixed with oxygen at a flow rate of 0.5–1 l/min and maintained during surgery with this same dose. Surgery was performed with the animal positioned supine on a circulating-water heating pad. Four 1-cm transverse incisions were made about 3 cm apart on the chest of each rat, and subcutaneous pockets were created by blunt dissection with scissors. The implants were inserted into the pockets and closure was accomplished with closely spaced interrupted absorbable polyglactin-910 sutures (Vicryl; Ethicon, Johnson & Johnson, Somerville, NJ). Each SMI was tested for its ability to produce de novo ectopic mineralization as a standalone factor at the following concentrations: 0, 10, 25, 50, and 100 mM. These were compared to the results obtained with two doses of rhBMP-2 that are known to produce consistent ectopic mineralization in this model (5 and 10 µg). Either SMI or BMP was loaded alone onto a plane collagen disc (8 mm diameter × 3 mm thickness). In each individual rat, four implants with different doses were implanted through separate skin incisions on the chest into subcutaneous pockets that did not communicate.
 
 The rats were housed in autoclaved cages (two per cage) and were fed food and water ad libitum without restrictions on activity. All rats fed well after surgery. There were no postoperative complications associated with the surgical procedure. The rats were euthanized 4 wk postoperatively by CO2 inhalation. The implants were harvested and evaluated by high-resolution digital radiography, micro-computed tomography (µCT), and non-decalcified histological analysis.
 
-## Rabbit spine fusions
+### Rabbit spine fusions
 
 Thirty-six skeletally mature female New Zealand White rabbits (Oryctolagus cuniculus) weighing 3.1–3.7 kg were obtained from Covance (Princeton, NJ). All rabbits underwent single-level, bilateral, posterolateral intertransverse process fusions at L5–L6, exactly as described by Boden et al., 1976. In short, a dorsal midline skin incision was made in the lumbar region extending from L4–S1 using bony landmarks, followed by two paramedian fascial incisions. The intermuscular plane between the multifidus and longissimus muscles was developed to expose the transverse processes of L5 and L6 as well as the intertransverse membrane. In the rabbits in which ICBG was to be harvested, an additional fascial incision was made overlying each iliac crest to harvest ~1.5–2.0 ml corticocancellous autologous bone graft. The exposed TPs were then decorticated with an electric burr. The SMIs (either 300 or 500 mM) were then loaded onto a plain collagen sponge. These sponges ±ICBG were then placed between the decorticated TPs in the paraspinal bed. Fascial incisions were approximated using 3–0 absorbable suture and the skin was closed with staples. Ceftiofur sodium (Naxcel), 5 mg/kg, was injected subcutaneously as a preoperative antibiotic and an epidural block with morphine (0.01 µg/kg) was used in rabbits who had ICBG harvested. In all rabbits, a transdermal fentanyl patch (25 µg/hr) was for postoperative pain control. All rabbits were allowed to eat and perform activities ad lib. Animals were monitored closely and treated for pain in compliance with institutional guidelines. In compliance with current Animal Welfare Assurance standards, IV pentobarbital was used to euthanize rabbits 6 wk following arthrodesis.
 
-## Radiography
+### Radiography
 
 X-ray scanning (In-Vivo Xtreme, Bruker Corp., Billerica, MA) was performed on the subcutaneous implants after formalin fixation. The scans were executed with an exposure time of 1.2 s and a voltage of 45 kV. The area of bone formation was determined based on the percent volume that an explant was mineralized on X-ray images (0 = no bone; 1 = <25% of the implant is mineralized; 2 = 25–49% of the implant is mineralized; 3 = 50–74% of the implant is mineralized; 4 = 75–99% of the implant is mineralized; 5 = 100% or greater of the original implant size is mineralized).
 
-## Computed tomography
+### Computed tomography
 
 To further assess bone (rabbit spine fusions) or ectopic mineralization (rat SQ) formation, uCT scans (Micro-CT40, Scanco Medical, Bruttisellen, Switzerland) were performed. Samples were scanned with a 30 um voxel size at a voltage of 45 kVp and a current of 177 uA. Scanned images were reconstructed in the sagittal and coronal plane, and the formation of newly calcified tissue was evaluated quantitatively for volume and density.
 
-## Histological sections of rabbit spine fusions
+### Histological sections of rabbit spine fusions
 
 After tissue fixation, the fusion masses were decalcified and paraffin embedded. The serial sagittal sections were then deparaffinized, dehydrated in xylene, and serially incubated in an alcohol gradient (100%, 95%, 75%, 50% ethanol), followed by rehydration in distilled water. The samples were then stained with H&E. After staining, the sections were dehydrated by being serially incubated in an alcohol gradient of increasing concentration (50%, 75%, 95%, 100% ethanol), followed by incubation in xylene for 5 min. A drop of mounting medium was then added to each section, followed by placement of a coverslip. Sections were then imaged and merged at 5× magnification using a Leica DM6 B upright microscope to get representative images of the whole fusion masses (Leica Microsystems, Wetzlar, Germany).
 
-## Statistics and calculations
+### Statistics and calculations
 
 All in vitro results are presented as the mean of three determinations (n), with error bars representing the standard error of the mean (SEM). Experimental results that are visually represented are from consistent experiments where one representative experimental result is shown. Statistical significance (p<0.05) was calculated using a one-way ANOVA with Bonferroni post hoc test (equal variances assumed) or Dunnett’s T3 post hoc test (equal variances not assumed) using Statistical Products for Social Sciences Version 16.0 (SPSS 16.0) for Windows (SPSS, Chicago, IL) to compare various treatments in multigroup analysis. Statistical probability of p<0.05 was considered significant.
 
 The sample size needed for statistical significance for the rat and rabbit experiments was determined by a priori power analyses. For the rat experiments, all doses of each SMI were performed in eight different animals to ensure sufficient power to detect a 20% difference in the amount of ectopic mineralization produced (p<0.05). For the rabbit spinal fusions, based on extensive experience with the model and considering an ~15% perioperative mortality rate, three rabbits per group, with two sides of the spine being assessed per animal (six total fusions per group), were used to achieve a statistical power to detect a 25% difference in fusion success (p<0.05).
 
-## Study approval
+### Study approval
 
 All rat and rabbit surgeries and procedures were first approved (#VOOS-14 - 2016-020211) by the Atlanta VA Medical Center Institutional Animal Care and Use Committee (IACUC).
 
 ## Results
 
-## Computational design and screening of anti-sclerostin small molecules
+### Computational design and screening of anti-sclerostin small molecules
 
 Receptor-based virtual screening of chemical libraries against a given target for the purpose of predicting the conformation and binding affinity of small molecules is becoming a popular practice in modern drug discovery (Mahasenan and Li, 2012). For our study, AutoDock Vina (Trott and Olson, 2010) and FRED (McGann, 2011) were used to find the effective inhibitors from a library of compounds against the loop 2 region of sclerostin, from amino acids at the 91st to 95th position, as well as the cystine knot region (i.e. Cys-85 and Cys-143) (Trott and Olson, 2010; McGann et al., 2003). Each compound was docked against both target regions of interest on sclerostin. The predicted binding energy from the dockings provided a ranking of compounds based on their binding affinities. We found that some ligands showed very high binding affinity to the Ile-95 residue of sclerostin (Figure 1). There were also other ligands that had high binding affinity for Cys-85 and Cys-143. The ligands with the highest binding affinity obtained from the docking programs were further analyzed for their toxicity using Toxtree v.2.6.0 (Patlewicz et al., 2008). Most of the high-affinity ligands obtained from FRED belonged to class II (an intermediate order of oral toxicity), indicating that they might be useful as clinical inhibitors of sclerostin. Candidate compounds were then selected in silico against the loop 2 region and the cystine knot region of sclerostin. We estimated the translational, rotational, and vibrational entropies of protein–drug complexes. Binding energy values were found to be low for several of the Ludi high-scoring molecules (Figure 1C).
 
 The analysis of ligands showed that some of the SMI candidates bound strongly to multiple active sites (i.e. Cys-85 and Ile-95) on sclerostin. As such, these ligands were considered strong candidates because of the strong predicted hydrogen bonding with both active sites, as well as their bond distances of less than 2 Angstroms. Upon further evaluation of these unique candidates, we noted similarity in their structures as well, with most of them containing a heterocyclic ring with complex substituents.
 
-## In vitro screening of lead sclerostin SMI candidates
+### In vitro screening of lead sclerostin SMI candidates
 
 From the in silico studies, we selected the 100 most promising compounds (defined as having a Ludi score >300 and class I or II toxicity) for in vitro screening in a biochemical assay that we have previously characterized and validated for this purpose (Figure 1—figure supplement 1; Okada et al., 2009). Specifically, each sclerostin SMI candidate was tested for its ability to enhance canonical Wnt signaling in vitro using a Wnt-specific TCF/LEF-driven Cignal reporter system (QIAGEN) that has been optimized for Wnt3a response. This reporter system uses a mouse myoblast cell line (C2C12), which have been stimulated toward the osteoblastic phenotype (Okada et al., 2009). This cell-based screening assay identified multiple sclerostin SMI candidates with the ability to enhance Wnt/β-catenin signaling (Figure 1D), as predicted in silico. For the FDA-approved compounds, we next performed a comprehensive literature review (data not shown) of the top six candidates from the in vitro screening, paying particular attention to what is currently known in the literature about each drug’s mechanism of action, toxicity, dosing, side effects, and any specific effects on bone biology. Three candidate compounds were chosen for analysis, one novel drug (hereafter called C07) and two FDA-approved drugs (valproic acid and fluticasone, hereafter called VA1 and F, respectively) that have the potential to be repurposed as anti-sclerostin SMIs (Table 1).
 
-## Sclerostin SMIs block binding of sclerostin to LRP5
+**Table 1.**
+ Based off cell-based screening assays, these two FDA-approved compounds were determined to be good candidates to be repurposed as a sclerostin small-molecule inhibitor (SMI) for bone regeneration.MOA, mechanism of action.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug name</th>
+      <th>MOA</th>
+      <th>Current use</th>
+      <th>Dosing</th>
+      <th>Metabolism</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fluticasone (F)</td>
+      <td>Glucocorticoid receptor agonist</td>
+      <td>Topical anti-inflammatory</td>
+      <td>100–2000 µg/day</td>
+      <td>Hepatic</td>
+    </tr>
+    <tr>
+      <td>Valproic acid (VA1)</td>
+      <td>Unknown</td>
+      <td>Anti-epileptic drug, migraines</td>
+      <td>15–60 mg/kg/day</td>
+      <td>Hepatic</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sclerostin SMIs block binding of sclerostin to LRP5
 
 To confirm that our top three sclerostin SMI candidates inhibit sclerostin’s interaction with its receptor as predicted in silico, we performed an in vitro binding assay with purified recombinant sclerostin and LRP5 proteins. Sclerostin and LRP5 protein were labeled with biotin and 125Iodine, respectively. Constant amounts of 125Iodine-labeled LRP5 and biotin-labeled sclerostin were then incubated with or without varying concentrations of unlabeled-sclerostin with/without various concentrations of sclerostin SMIs. As expected, unlabeled sclerostin was found to compete off ~90% of the labeled sclerostin (Figure 2A). It was found that the interaction between sclerostin and LRP5 is saturable, competable, and concentration-dependent in our binding assay. All three sclerostin SMIs competed with sclerostin to prevent labeled sclerostin from binding to LRP5, confirming that our lead compounds significantly disrupt sclerostin binding to LRP5. The SMI C07 was the most effective, preventing ~40% of sclerostin from binding to LRP5.
 
-## Sclerostin SMIs enhance canonical Wnt signaling
+![Figure 2.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig2-v3.jpg)
+
+**Figure 2.:** An in vitro binding assay with purified recombinant LRP5 and sclerostin proteins was used to assess for SMI–LRP interaction (A). The sclerostin SMIs were able to complete with sclerostin to prevent up to 40% of the labeled sclerostin from binding to LRP5, confirming that our lead compounds significantly disrupt sclerostin binding to LRP5. Moreover, the sclerostin SMIs were able to potentiate the intensity of Wnt signaling in vitro in a luciferase reporter assay system (B). A TCF/LEF-responsive reporter was transfected into murine MC3T3-E1 and MSC cells. In the presence of a suboptimal dose of 10 ng/ml of Wnt3a, all three SMIs dose-dependently enhanced Wnt/β-catenin signaling. Finally, sclerostin SMIs inhibit the accumulation of the phosphorylated (inactive) form of β-catenin in both murine MC3T3-E1 and MSC cells (C). Cells were treated with or without 10 µM concentration of sclerostin inhibitors for 2 d. Western blotting with antibodies specific for the phosphorylated and unphosphorylated forms of β-catenin was performed. All sclerostin SMIs inhibited the accumulation of phosphorylated (inactive) β-catenin in murine MC3T3-E1s and MSCs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** To ensure that sclerostin was in fact being expressed in these cells, we performed western blots using anti-sclerostin monoclonal antibodies (mAbs) both with and without BMP-2 treatment. All cells were treated with BMP-2 (200 ng/ml) for 2 d. Antibody dilution is 1:2000.
+
+### Sclerostin SMIs enhance canonical Wnt signaling
 
 All three leading sclerostin SMI candidates were then tested for their ability to induce canonical Wnt signaling in vitro using a gene reporter assay system. To do this, a TCF/LEF-responsive reporter was transfected into both murine BMSCs and pre-osteoblast (MC3T3-E1) cells. In the presence of a suboptimal dose of 10 ng/ml of Wnt3a, all three SMIs were assessed for their ability to enhance Wnt/β-catenin signaling. By blocking endogenous sclerostin in these cells, F, VA1, and C07 were able to significantly increase canonical Wnt signaling intensity in a dose-dependent manner (Figure 2B). The efficacy of the individual SMIs were as follows: C07>VA1>F1. In addition, the presence of endogenous sclerostin protein was confirmed in both cell types via western blot to ensure that this observed effect was not due to an unexpected, off-target effect of the SMIs (Figure 2—figure supplement 1).
 
-## Sclerostin SMIs increase the active form of intracellular β-catenin
+### Sclerostin SMIs increase the active form of intracellular β-catenin
 
 Active canonical Wnt signaling results in intracellular accumulation of the active, non-phosphorylated form of β-catenin (Baron and Rawadi, 2007). As such, the ability of the SMIs to rescue the sclerostin inhibition of this process was also assessed. For this experiment, the cells were treated with or without sclerostin SMIs (10 μM) for 2 d. The cell lysates were subjected to western blotting with specific antibodies for phosphorylated and unphosphorylated forms of β-catenin. Figure 2C demonstrates that all three sclerostin SMIs can enhance canonical Wnt signaling by inhibiting the accumulation of the phosphorylated (inactive) form of β-catenin in both MC3T3-E1 and BMSC cells, supporting the notion that the increased activity observed in the Wnt gene reporter assay with sclerostin SMI treatment (Figure 2B) is likely due to direct enhancement of canonical Wnt signaling and β-catenin activity, rather than some unexpected off-target effect. In addition, this data suggests that the three sclerostin SMIs can effectively rescue osteoblasts from the inhibitory effects of endogenous and exogenous sclerostin in vitro.
 
-## Sclerostin SMIs potentiate canonical BMP signaling
+### Sclerostin SMIs potentiate canonical BMP signaling
 
 Each of the three sclerostin SMIs were next tested for their ability to potentiate the intensity of BMP signaling in vitro using an established BMP-responsive murine calvarial osteoblast reporter cell line (Kerafast Inc; Yadav et al., 2012). Since a suboptimal dose of BMP-2 is not established in this cell line, four doses of BMP-2 (0, 50, 100, and 200 ng/ml) were chosen to determine their potentiating effect on VA1, F1, and C07 (all at 10 μM concentration). Because the promoter was derived from early response genes for BMP, cells were first pretreated with compounds for 24 hr prior to treatment with BMP ±SMIs for 3 hr. As shown in Figure 3A, all three sclerostin SMI candidates exhibited a significant potentiating effect on BMP-induced luciferase activity at all doses of BMP-2 tested (50, 100, and 200 ng/ml). This enhancement demonstrated a dose-dependent manner. The efficacy of individual SMIs were as follows: C07>VA1>F1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig3-v3.jpg)
 
-**Figure 3.:** Using an established BMP-responsive murine calvarial osteoblast reporter cell line, enhancement of BMP-2-induced luciferase reporter activity by sclerostin small-molecule inhibitors (SMIs) was observed (A). Three doses (50, 100, and 200 ng/ml) of BMP-2 were chosen to determine potentiating effect of the SMIs at 10 µM concentration. Cells were pretreated with compounds for 24 hr followed by another treatment by BMP ± SMIs for 3 hr. Measurements were determined in triplicate (n = 3). In addition to potentiating BMP signal intensity, sclerostin SMIs were also able to increase accumulation of phosphorylated (active) Smads1/5 (B). Cells were treated with or without 10 uM concentration of sclerostin SMIs for 2 d. The cell lysates were then subjected to western blotting with specific antibodies for phosphorylated and unphosphorylated forms of Smads1/5. The GSK3b inhibitor SB415286 was a positive control.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.
+**Figure 3.:** Using an established BMP-responsive murine calvarial osteoblast reporter cell line, enhancement of BMP-2-induced luciferase reporter activity by sclerostin small-molecule inhibitors (SMIs) was observed (A). Three doses (50, 100, and 200 ng/ml) of BMP-2 were chosen to determine potentiating effect of the SMIs at 10 µM concentration. Cells were pretreated with compounds for 24 hr followed by another treatment by BMP ± SMIs for 3 hr. Measurements were determined in triplicate (n = 3). In addition to potentiating BMP signal intensity, sclerostin SMIs were also able to increase accumulation of phosphorylated (active) Smads1/5 (B). Cells were treated with or without 10 uM concentration of sclerostin SMIs for 2 d. The cell lysates were then subjected to western blotting with specific antibodies for phosphorylated and unphosphorylated forms of Smads1/5. The GSK3b inhibitor SB415286 was a positive control.
 
-## Sclerostin SMIs increase BMP signaling duration
+### Sclerostin SMIs increase BMP signaling duration
 
 We next further explored other potential mechanisms for canonical Wnt/BMP crosstalk. While we already demonstrated an increased intensity in BMP response elements in the presence of our sclerostin SMIs (Figure 3A), we set out to assess whether the sclerostin SMIs also resulted in an increase in the duration of BMP signaling. We hypothesized that this increase in signaling duration may occur because the termination of intracellular BMP response to a given stimulus is typically determined by the activity of GSK3b, which itself is determined by phosphorylations that mark it for degradation in the proteasome. To test our hypothesis, we performed a BMP-2 pulse-chase experiment in which we assessed the levels of C-terminal phosphorylation of Smad1/5 (pSmad1/5Cter) at different time points in murine BMSCs and MC3T3-E1 cells in the presence or absence of sclerostin SMIs. The GSK3b inhibitor SB415286 (MacAulay et al., 2003) was used as a positive control. As shown in Figure 3B, all three sclerostin SMIs significantly increased the duration of pSmad1/5Cter compared to untreated controls, with C07 resulting in the greatest increase in BMP signaling duration. These results suggest that after phosphorylation by the BMP receptor, the duration of the pSmad1/5Cter signal is controlled by canonical Wnt-mediated phosphorylation GSK3b. Taken together, out data suggests that the intensity of the Smad1/5/8 response is determined mostly by BMPs, but also canonical Wnt activation, while the duration of the Smad1/5/8 response is at least partially controlled by Wnt/β-catenin signaling via GSK3b phosphorylation.
 
-## Gene expression with sclerostin SMI treatment
+### Gene expression with sclerostin SMI treatment
 
 Next, the effect of the three sclerostin SMI candidates on the expression levels of specific genes that are important to canonical Wnt and BMP signaling were tested using RT-qPCR. These results are summarized in Figure 4. Both Axin2 (Jho et al., 2002) and Id1 (Lewis and Prywes, 2013) were chosen as markers because they are well known to be direct and specific target genes for the Wnt/β-catenin and BMP pathways, respectively (ID1 is relatively specific to BMPs and no other members of the TGF-β superfamily; Korchynskyi and ten Dijke, 2002). All three SMI candidates were able to significantly (p<0.05) increase the expression of Axin2 (60×, 100×, 140× over baseline for F1, VA1, and C07, respectively) and Id1 (16.5×, 17×, 17.5× over baseline for F1, VA1, and C07, respectively). All three SMIs were also able to significantly increase the expression of β-catenin over controls (p<0.05) as well (Figure 4, *). No change was seen in the expression of GSK3b (data not shown). In addition, all three SMI candidates were able to significantly increase the expression of endogenous BMP-2, while treatment with exogenous BMP-2 itself showed a small but insignificant increase (p>0.05). Moreover, when cells were treated with each of the sclerostin SMIs in addition to exogenous BMP-2, the expression of ID1, β-catenin, and Axin2 were all significantly greater compared to BMP-2 treatment alone (p<0.05) (Figure 4, **).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig4-v3.jpg)
 
-**Figure 4.:** The expression level of several genes was assessed by RT-qPCR after MC3T3 cells were treated with 10 µM of F1, VA1, or C07 in the presence of a suboptimal dose of BMP-2 (35 ng/ml). All data were determined in triplicate (n = 3). NT, no treatment (control). * indicates statistical significance (p<0.05) compared to NT, while ** indicates significance (p<0.05) from BMP-2 treatment alone.Figure 4—source data 1.
+**Figure 4.:** The expression level of several genes was assessed by RT-qPCR after MC3T3 cells were treated with 10 µM of F1, VA1, or C07 in the presence of a suboptimal dose of BMP-2 (35 ng/ml). All data were determined in triplicate (n = 3). NT, no treatment (control). * indicates statistical significance (p<0.05) compared to NT, while ** indicates significance (p<0.05) from BMP-2 treatment alone.
 
-## Sclerostin SMIs enhance mineralization in vitro
+### Sclerostin SMIs enhance mineralization in vitro
 
 Next, functional osteogenic activity was assessed in murine BMSCs and MC3T3-E1 cells upon treatment with the three sclerostin SMIs. Each SMI was tested for its ability to reverse the inhibitory effects of sclerostin on the osteogenic potential of these cells in an in vitro mineralization assay. When grown in osteogenic medium containing ascorbic acid (AA) and beta-glycerophosphate (BGP), these cells do not spontaneously differentiate and produce mineralization without a stimulus such as BMP-2. As shown in Figure 5, recombinant murine sclerostin (80 ng/ml) was able to completely reverse the osteoinductive effects of rhBMP-2 (20 ng/ml). This inhibitory effect was itself subsequently reversed by the addition of the three sclerostin SMI candidates at 10 μM. Thus, concurrent exposure to the sclerostin SMIs effectively reversed the inhibitory effects of sclerostin to facilitate bone nodule formation in vitro in a dose-dependent and time-accelerated manner. This data confirms that these SMIs not only promote intracellular canonical Wnt and BMP signaling, but that those changes result in increased osteogenic activity.
 
@@ -168,17 +216,17 @@ Next, functional osteogenic activity was assessed in murine BMSCs and MC3T3-E1 c
 
 **Figure 5.:** Sclerostin SMIs reverse the inhibitory effects of sclerostin on the osteogenic potential of murine pre-osteoblasts (MC3T3-E1 cells, A) and bone marrow stromal cells (BMSCs) (B) in a mineralization assay in vitro. Recombinant murine sclerostin (80 ng/ml) completely reversed the osteoinductive effects of rhBMP-2 (20 ng/ml). This inhibitory effect was subsequently reversed by the addition of the three sclerostin SMI candidates at 10 μM. Next, a time-course experiment was run (C), which shows that the SMIs accelerate mineralization over time. The dose–response on mineralization was also assessed, showing a ceiling effect around 10 µM (D).
 
-## Sclerostin SMIs inhibit osteoclastic activity in vitro
+### Sclerostin SMIs inhibit osteoclastic activity in vitro
 
 We next investigated the effect of the sclerostin SMIs on gene expression within the RANKL-OPG axis since it has been previously found to be an example of crosstalk between the canonical Wnt and BMP pathways (Kamiya et al., 2008). As expected, the expression of RANKL in MC3T3-E1 cells increased more than 5-fold with BMP-2 treatment, while OPG only increased 1.8-fold (Figure 6A), leading to a >50% reduction in the OPG:RANKL ratio. This pro-osteoclastic stimulus, however, was then almost completely reversed by the addition of C07, but not F1 or VA1 (p<0.05), as evidenced by no change in RANKL expression compared to baseline but a significant increase in OPG expression (Figure 6A). These results were then confirmed at the protein level using OPG and RANKL western blot (Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig6-v3.jpg)
 
-**Figure 6.:** The expression level of OPG and RANKL was assessed by RT-qPCR after MC3T3 cells were treated with 10 µM of F1, VA1, or C07 in the presence of a suboptimal dose of BMP-2 (35 ng/ml) (A). All data were determined in triplicate (n = 3). NT, no treatment (control). * indicates statistical significance (p<0.05) compared to NT, while ** indicates significance (p<0.05) from BMP-2 treatment alone. These changes in OPG and RANKL levels were also confirmed at the protein level using western blot, particularly in the presence of a suboptimal dose of BMP-2 (100 ng/ml) (B). Finally, all sclerostin SMIs were tested for their ability to inhibit osteoclast activity in RAW cells in a bone resorption assay. All three SMIs were found to significantly (p<0.05) inhibit sclerostin-induced osteoclast activity, with C07 approaching the response to Wnt3a+RANKL (C).Figure 6—source data 1.Figure 6—source data 2.Figure 6—source data 3.Figure 6—source data 4.
+**Figure 6.:** The expression level of OPG and RANKL was assessed by RT-qPCR after MC3T3 cells were treated with 10 µM of F1, VA1, or C07 in the presence of a suboptimal dose of BMP-2 (35 ng/ml) (A). All data were determined in triplicate (n = 3). NT, no treatment (control). * indicates statistical significance (p<0.05) compared to NT, while ** indicates significance (p<0.05) from BMP-2 treatment alone. These changes in OPG and RANKL levels were also confirmed at the protein level using western blot, particularly in the presence of a suboptimal dose of BMP-2 (100 ng/ml) (B). Finally, all sclerostin SMIs were tested for their ability to inhibit osteoclast activity in RAW cells in a bone resorption assay. All three SMIs were found to significantly (p<0.05) inhibit sclerostin-induced osteoclast activity, with C07 approaching the response to Wnt3a+RANKL (C).
 
 Due to the ability of C07 to significantly increase the ratio of OPG:RANKL, we also investigated whether the sclerostin SMIs would be able to reduce the osteoclastic function of RAW 264.7 cells when induced by RANKL. RAW 264.7 cells were seeded onto an OsteoLyse (Lonza) plate at 10,000 cells/well and differentiated with soluble RANK ligand in the presence of various concentrations of ±Wnt3a; ±sclerostin; ±SMIs. At day 10 of culture, 10 μl samples of supernatant were removed and counted. As shown in Figure 6C, Wnt3a inhibits RANKL-induced osteoclast activity. The effect of Wnt3a could be reversed by treatment of cells with sclerostin. However, in the presence of our sclerostin SMIs, we observed the inhibition of osteoclast activity. The greatest functional effect was seen with C07. These exciting results suggest that the sclerostin SMIs can positively affect the functional activity of both osteoblasts and osteoclasts. Moreover, this data suggests that the sclerostin SMIs have a direct inhibitory effect on osteoclasts that is separate and in addition to its secondary effect on RANKL/OPG expression in MSCs or pre-osteoblasts.
 
-## Standalone sclerostin SMIs produce de novo ectopic mineralization in vivo
+### Standalone sclerostin SMIs produce de novo ectopic mineralization in vivo
 
 Continuing to test for functional osteogenic activity, we next tested the two best-performing SMIs from the in vitro experiments (VA1 and C07) in a challenging in vivo rat subcutaneous ectopic mineralization model. Other than the osteoinductive BMPs, few if any proteins or small molecules are capable of inducing de novo ectopic mineralization in this model (Akiyama et al., 2014; Minamide et al., 2003; Zanella et al., 2006). Both SMIs were loaded individually as standalone agents onto a plain collagen sponge (DSM, Parsippany, NJ) at 0, 10, 25, 50, and 100 mM and then surgically implanted subcutaneously on the chest of 6-week-old male Sprague–Dawley rats for 4 wk. A positive control of 10 μg of recombinant BMP-2 was also tested. Plain radiographs and μCT data of the explants after 4 wk are shown in Figure 7A and B. Local subcutaneous delivery of both VA1 and C07 resulted in significant de novo ectopic mineralization as standalone agents, with both drugs showing a clear dose–response in this model. A 200 mM dose of both VA1 and C07 was also tested, which resulted in no discernible increase in mineralization over 100 mM (data not shown). As such, a 50 mM dose of VA1 (700 μg) and C07 (1.3 mg) was found to have a comparable osteogenic effect to 10 μg of BMP-2 in this model. The radiographic data of the explants was also confirmed by histology. Both H&E and Goldner’s trichrome staining confirmed the presence of ectopic mineralization with VA1 and C07 treatment (Figure 7C). Also, neither C07 nor VA1 produced an adipogenic response, which was quite robust in the rhBMP-2 controls (Figure 7C).
 
@@ -188,7 +236,7 @@ Continuing to test for functional osteogenic activity, we next tested the two be
 
 Of note, this data is the first formal demonstration that locally delivered small-molecule drugs with the ability to inhibit the function of endogenous sclerostin can produce de novo ectopic mineralization in a non-bone environment as standalone osteoinductive agents in vivo.
 
-## Sclerostin SMIs enhance spinal fusion rates in vivo
+### Sclerostin SMIs enhance spinal fusion rates in vivo
 
 Next, both C07 and VA1 were assessed for their ability to enhance spinal fusion rates in vivo using a validated rabbit model of posterolateral lumbar fusions (Boden et al., 1976). Both SMIs were tested as standalone osteoinductive drugs, as well as in combination with autologous ICBG, using two separate doses (300 and 500 mM). All rabbits were euthanized 6 wk following arthrodesis surgery and the spine fusion masses were assessed by both plain radiography and µCT. Successful fusion, defined as continuous bridging bone between the TPs, was assessed by two experienced spine surgeons (SBD and SMP). Both surgeons had to agree for a fusion to be considered successful.
 
@@ -200,9 +248,68 @@ When C07 was used at a dose of 500 mM in combination with ICBG, the posterolater
 
 Finally, because of the especially encouraging results of C07 to achieve posterolateral spine fusions as a standalone osteogenic drug, we next tested C07 at doses of 500 and 750 mM without ICBG (n = 6). As before, one dose was used on either side of the spine so that each rabbit acted as its own internal control. Then, 6 wk following arthrodesis surgery, it was found that the high dose of C07 (750 mM) produced a successful posterolateral spinal fusion in 80% of the rabbits (Figure 8C). Histological sections of these spinal fusion beds demonstrate membranous bone formation at the periphery of the fusion masses (emanating from each TP) as well as endochondral bone formation toward the center of the fusion masses (Figure 9), which is the expected pattern on bone formation in this model (Schimandle and Boden, 1994). Interestingly, no significant differences in bone quality are seen between those animals that received C07 alone (Figure 9A) and those that received C07 and autologous ICBG (Figure 9B).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig9-v3.jpg)
+
+**Figure 9.:** Mid-coronal histological sections (5× magnification) from rabbit spinal fusion beds 6 wk following posterolateral spine arthrodesis were H&E-stained and confirm successful spinal fusion, showing bridging bone from TP to TP. Sections from a rabbit that received C07 without (A) and with (B) autologous IBCG are shown. Panel (C) shows a ×10 magnification of the boxed area in panel (B) and shows the area of endochondral ossification in the middle of the developing fusion mass.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/63402/elife-63402-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** Representative posterior–anterior plain radiographs (XRs) are shown for C07 with (A) and without (B) autogenous iliac crest bone graft (ICBG). The posterolateral inter-TP fusion masses are shown on the left side of each spine.
+
 Taken together, these data demonstrate a clear dose–response for C07 in this model. All spine fusion results for both SMIs are summarized in Table 2 and representative X-rays are also shown in Figure 9—figure supplement 1.
 
-## No evidence of hepatic toxicity in vivo
+**Table 2.**
+ Sclerostin small-molecule inhibitors (SMIs) increase posterolateral spinal fusion rates.Table 2—source data 1.Source data for Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fusion rate (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ICBG</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>VA1 + ICBG</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>C07 + ICBG</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>VA1</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>C07</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>VA1</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>C07</td>
+      <td>80</td>
+    </tr>
+  </tbody>
+</table>
+
+### No evidence of hepatic toxicity in vivo
 
 It is important to note that across the range of concentrations tested, none of the three sclerostin SMIs were found to be toxic to any of the cell types used in the in vitro experiments. The three SMIs were found to have no effect on murine MC3T3s, MSCs, or calvarial osteoblast cell number, morphology, or total protein yields while in culture for up to 20 d (data not shown). In addition, neither VA1 nor F1 caused changes in hepatic function labs 4 wk after SQ implantation in the rats at any of the doses tested, including a total dose per animal of 1000 mM in rats (Supplementary file 2). In addition, a total dose of C07 in rabbits of 2000 mM also showed no significant change in hepatic function 6 wk after implantation (Supplementary file 2).
 

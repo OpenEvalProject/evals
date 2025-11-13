@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.32499.001 The intrinsic efficacy of orthosteric ligands acting at G-protein-coupled receptors (GPCRs) reflects their ability to stabilize active receptor states (R*) and is a major determinant of their physiological effects. Here, we present a direct way to quantify the efficacy of ligands by measuring the binding of a R*-specific biosensor to purified receptor employing interferometry. As an example, we use the mu-opioid receptor (µ-OR), a prototypic class A GPCR, and its active state sensor, nanobody-39 (Nb39). We demonstrate that ligands vary in their ability to recruit Nb39 to µ-OR and describe methadone, loperamide, and PZM21 as ligands that support unique R* conformation(s) of µ-OR. We further show that positive allosteric modulators of µ-OR promote formation of R* in addition to enhancing promotion by orthosteric agonists. Finally, we demonstrate that the technique can be utilized with heterotrimeric G protein. The method is cell-free, signal transduction-independent and is generally applicable to GPCRs.
+The intrinsic efficacy of orthosteric ligands acting at G-protein-coupled receptors (GPCRs) reflects their ability to stabilize active receptor states (R*) and is a major determinant of their physiological effects. Here, we present a direct way to quantify the efficacy of ligands by measuring the binding of a R*-specific biosensor to purified receptor employing interferometry. As an example, we use the mu-opioid receptor (µ-OR), a prototypic class A GPCR, and its active state sensor, nanobody-39 (Nb39). We demonstrate that ligands vary in their ability to recruit Nb39 to µ-OR and describe methadone, loperamide, and PZM21 as ligands that support unique R* conformation(s) of µ-OR. We further show that positive allosteric modulators of µ-OR promote formation of R* in addition to enhancing promotion by orthosteric agonists. Finally, we demonstrate that the technique can be utilized with heterotrimeric G protein. The method is cell-free, signal transduction-independent and is generally applicable to GPCRs.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ In this report, we demonstrate that the rate of Nb39 binding to purified µ-OR s
 
 ## Results
 
-## Measure of orthosteric agonist efficacy using an interferometry-based technique
+### Measure of orthosteric agonist efficacy using an interferometry-based technique
 
 Nb39 enhances the affinity of orthosteric agonists, such as BU72, to bind µ-OR (Huang et al., 2015) by stabilizing active (R*) states of µ-OR. Since agonists shift the equilibrium of receptor to R* in proportion to their efficacy to activate downstream signaling, we predicted that agonists should enhance the binding of Nb39 in an efficacy-dependent manner. To test this hypothesis, we implemented an interferometry-based technique to study the association and dissociation kinetics of Nb39 binding to µ-OR in rHDL. The formation of µ-OR containing rHDL was performed using a low µ-OR to rHDL ratio and an ApoAI construct that heavily favors incorporation of µ-OR monomers into rHDL particles (Kuszak et al., 2009). The µ-OR-containing rHDL particles were immobilized on an interferometry probe, and the probe was then exposed to saturating concentrations of ligands and a sub-saturating concentration of Nb39 (1 µM) (Figure 1). As shown in Figure 2, there was no detectable binding of Nb39 to µ-OR in the absence of ligand, indicating a lack of spontaneous formation of active µ-OR, even with Nb39 present. This supports published research indicating low levels of constitutive activity of µ-OR (Divin et al., 2009; Connor and Traynor, 2010).
 
@@ -49,13 +49,184 @@ Nb39 enhances the affinity of orthosteric agonists, such as BU72, to bind µ-OR 
 
 Conversely, pre-incubation of µ-OR with a wide range of agonists of varying structure, both peptides and small molecules, caused binding of Nb39, although to varying degrees (Table 1). In particular, the presence of a saturating concentration (30 µM) of the high-efficacy agonist BU72 (Neilan et al., 2004; Huang et al., 2015) drove robust and rapid binding of Nb39 (Figure 2, Table 1). In the presence of the high-efficacy peptide agonist DAMGO, Nb39 bound to µ-OR with a similar rate constant, but DAMGO lead to less overall binding of Nb39 compared to BU72. In contrast, pre-incubation with the partial agonist morphine caused slower Nb39 association and less overall binding of Nb39 relative to BU72 and DAMGO (Figure 2, Table 1), and the rate constant for Nb39 binding in the presence of the low-efficacy nalbuphine was slower still. Neither of the orthosteric antagonists (naloxone or diprenorphine) promoted a µ-OR:Nb39 interaction (Table 1).
 
+**Table 1.**
+ Association and dissociation kinetics of Nb39 to µ-OR-rHDL in the presence of various agonists.kobs and koff were determined for each independent experiment (number of individual experiments indicated in ‘n’ column) and averaged. One-phase association and single-phase exponential decay models were used. Half-time values (t1/2) numbers were calculated from the respective k values (t1/2 = 0.693/k). A one-way ANOVA was performed followed by a Tukey post-hoc test. Methadone was found to be statistically different compared to all other orthosteric ligands other than loperamide and PZM21. Both loperamide and PZM21 were also found to be statistically different from several other ligands, though not as many as methadone.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ligand</th>
+      <th>kobs ± SEM (min−1)</th>
+      <th>t1/2ass (sec)</th>
+      <th>koff (min−1)</th>
+      <th>t1/2dis (sec)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BU72</td>
+      <td>0.20 ± 0.01</td>
+      <td>3.5</td>
+      <td>0.031 ± 0.001</td>
+      <td>22</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>DAMGO</td>
+      <td>0.179 ± 0.008</td>
+      <td>3.9</td>
+      <td>0.030 ± 0.001</td>
+      <td>23</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Leu-Enk</td>
+      <td>0.098 ± 0.02</td>
+      <td>7.1</td>
+      <td>0.031 ± 0.001</td>
+      <td>23</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>L-Methadone</td>
+      <td>0.19 ± 0.02</td>
+      <td>3.6</td>
+      <td>0.052 ± 0.003</td>
+      <td>13</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Morphine</td>
+      <td>0.08 ± 0.01</td>
+      <td>8.5</td>
+      <td>0.033 ± 0.003</td>
+      <td>21</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Nalbuphine</td>
+      <td>0.023 ± 0.008</td>
+      <td>30</td>
+      <td>0.036 ± 0.004</td>
+      <td>19</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>PZM21</td>
+      <td>0.064 ± 0.004</td>
+      <td>11</td>
+      <td>0.043 ± 0.002</td>
+      <td>16</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Endomorphin 2</td>
+      <td>0.101 ± 0.002</td>
+      <td>6.9</td>
+      <td>0.036 ± 0.002</td>
+      <td>19</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Loperamide</td>
+      <td>0.208 ± 0.009</td>
+      <td>3.2</td>
+      <td>0.044 ± 0.003</td>
+      <td>16</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Oxycodone</td>
+      <td>0.044 ± 0.001</td>
+      <td>16</td>
+      <td>0.028 ± 0.001</td>
+      <td>25</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Etorphine</td>
+      <td>0.180 ± 0.007</td>
+      <td>3.9</td>
+      <td>0.026 ± 0.001</td>
+      <td>27</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Fentanyl</td>
+      <td>0.075 ± 0.005</td>
+      <td>9.2</td>
+      <td>0.035 ± 0.002</td>
+      <td>20</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Met-Enk</td>
+      <td>0.131 ± 0.004</td>
+      <td>5.3</td>
+      <td>0.027 ± 0.001</td>
+      <td>26</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Hydrocodone</td>
+      <td>0.042 ± 0.004</td>
+      <td>17</td>
+      <td>0.029 ± 0.001</td>
+      <td>24</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Buprenorphine</td>
+      <td>0.058 ± 0.009</td>
+      <td>12</td>
+      <td>0.025 ± 0.001</td>
+      <td>27</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Naloxone</td>
+      <td>n/a</td>
+      <td>----</td>
+      <td>n/a</td>
+      <td>----</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Diprenorphine</td>
+      <td>n/a</td>
+      <td>----</td>
+      <td>n/a</td>
+      <td>----</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BMS-986122</td>
+      <td>0.012 ± 0.001</td>
+      <td>56</td>
+      <td>0.027 ± 0.003</td>
+      <td>25</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>BMS-986187</td>
+      <td>0.025 ± 0.006</td>
+      <td>28</td>
+      <td>0.037 ± 0.005</td>
+      <td>19</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+
 The above data indicate that the binding of Nb39 is related to agonist efficacy, with higher efficacy ligands producing an increased Nb39 binding signal and a more rapid association of Nb39. However, the magnitude of the interference shift is problematic to use as the readout for efficacy since this depends on the initial amount of stable receptor loaded onto the probe which is difficult to control because of problems of equalizing receptor loads onto the probe, use of different receptor preparations, plus the fact that is not known how much receptor is actually functional. Consequently, we focused on the association rate constants (Kobs and t1/2). First, we made sure that agonist binding kinetics was not a confounding factor in measuring Nb39 binding. Opioid ligands have very fast binding kinetics (Huang et al., 2015) and to confirm equilibrium was reached we used maximal agonist concentrations and for two distinct ligands, DAMGO and PMZ21 showed these gave the same results with 10 or 30 min incubation (PZM21 kobs (10 min)=0.060 ± 0.008 min−1 and kobs (30 min)=0.064 ± 0.004 min−1; DAMGO kobs (10 min)=0.15 ± 0.006 min−1 and kobs (30 min)=0.16 ± 0.008 min−1). Then, to confirm that the rate constant of Nb39 association to agonist-bound receptor accurately reflects the intrinsic efficacy of a given agonist, we compared Nb39 association with four accepted methods of agonist efficacy measurement: (i) maximal ability to activate heterotrimeric G protein (Strange, 2008), (ii) intrinsic efficacy as defined by Ehlert’s equation (Ehlert, 1985), (iii) reduction in agonist affinity in the presence of Na+ ions and GTP (Lee et al., 1999; Zhen et al., 2015) and (iv) tau (τ) as calculated using the Black-Leff operational model (Black and Leff, 1983). These complimentary methods of agonist efficacy determination generally agree with one another, but use different measurements of receptor activity to calculate efficacy.
 
 The Nb39 association half-time (t1/2) (Table 1) correlated with the ability of each orthosteric ligand, when used at a saturating concentration (10 μM), to stimulate G protein activation as measured by GTPγ35S binding (taken from [Livingston and Traynor, 2014]), giving r2 = 0.75, p<0.0001 (Figure 3a). Next, we compared the Nb39 association data with the intrinsic efficacy (e) of the various orthosteric ligands, calculated using the Ehlert equation (Ehlert, 1985) with potency and maximal response obtained from GTPγ35S-binding assays and affinity values obtained using radioligand competition binding (Livingston and Traynor, 2014). There was a statistically significant correlation between the t1/2 of Nb39 binding and intrinsic efficacy (r2 = 0.44, p=0.02; Figure 3b). For instance, etorphine and BU72 are high-efficacy ligands with equivalent e values (4.7) and pre-incubating µ-OR with either ligand results in a similar Nb39 association half-time (t1/2 = 3.5 sec for BU72, 3.9 sec for etorphine). In this case, the correlation was weaker than the comparison between Nb39 association and GTPγ35S maximum stimulation, and we excluded data collected with nalbuphine, as a potency value could not be determined due to its weak activation of G protein in our system.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32499/elife-32499-fig3-v2.jpg)
 
-**Figure 3.:** The t1/2 of association of Nb39 in the presence of saturating agonist was measured and is plotted against (a) maximal stimulation of GTPγ35S binding by agonist, (b) the calculated Ehlert efficacy (Ehlert, 1985) values for each agonist to activate G protein, (c) the shift in affinity of the agonist as measured by radioligand competition binding in the absence or presence of Na+/Guanine nucleotide, and (d) the τ value using data from GTPγ35S assays (Livingston and Traynor, 2014) or (e) β-arrestin recruitment assays; McPherson et al., 2010), analyzed with the Black-Leff operational model (Black and Leff, 1983). Data used to compile correlation graphs is listed in the source data table. The ligands are: (1) BU72, (2) DAMGO, (3) Leu-Enk, (4) L-methadone, (5) Morphine, (6) Nalbuphine, (7) Endomorphin 2, (8) Loperamide, (9) Oxycodone, (10) Etorphine, (11) Fentanyl, (12) Met-Enk, (13) Hydrocodone, (14) Buprenorphine, (15) Morphine + BMS-986122, (16) Morphine + BMS-986187. Correlation analysis was performed using GraphPad Prism 6.02.10.7554/eLife.32499.006Figure 3—source data 1.Ligand number refers to the list in legend to Figure 3; the t1/2 for association of NB39 is from Table 1; Maximum stimulation of [35S]GTPγS binding by each ligand is taken from Livingston and Traynor (2014); Ehlert’s efficacy value (e, Ehlert, 1985) determined for each ligand using [35S]GTPγS assay data and ligand affinities, taken from Livingston and Traynor (2014); Shift in ligand affinity in the presence of 100 mM NaCl and 10 μM GTPγS, from Livingston and Traynor (2014); Efficacy (τ) values for stimulation of [35S]GTPγS binding (Livingston and Traynor, 2014) calculated according to Black and Leff (1983); Efficacy (τ) values for arrestin recruitment taken from McPherson et al. (2010).
+**Figure 3.:** The t1/2 of association of Nb39 in the presence of saturating agonist was measured and is plotted against (a) maximal stimulation of GTPγ35S binding by agonist, (b) the calculated Ehlert efficacy (Ehlert, 1985) values for each agonist to activate G protein, (c) the shift in affinity of the agonist as measured by radioligand competition binding in the absence or presence of Na+/Guanine nucleotide, and (d) the τ value using data from GTPγ35S assays (Livingston and Traynor, 2014) or (e) β-arrestin recruitment assays; McPherson et al., 2010), analyzed with the Black-Leff operational model (Black and Leff, 1983). Data used to compile correlation graphs is listed in the source data table. The ligands are: (1) BU72, (2) DAMGO, (3) Leu-Enk, (4) L-methadone, (5) Morphine, (6) Nalbuphine, (7) Endomorphin 2, (8) Loperamide, (9) Oxycodone, (10) Etorphine, (11) Fentanyl, (12) Met-Enk, (13) Hydrocodone, (14) Buprenorphine, (15) Morphine + BMS-986122, (16) Morphine + BMS-986187. Correlation analysis was performed using GraphPad Prism 6.02.
 
 Determination of efficacy can vary based on signaling output chosen, especially in the case of bias where ligands may preferentially activate certain pathways over others. To avoid the use of a signaling measure, that is G-protein activation or β-arrestin recruitment, we examined the shift in agonist affinity in response to the presence of Na+ ions and GTP, using GTPγS. It is known that addition of Na+ ions and guanine nucleotide decreases the affinity of agonists to bind µ-OR and that the degree of shift is larger for higher efficacy ligands (Lee et al., 1999). Using our previously published data (Livingston and Traynor, 2014), we plotted the shift in affinity of the orthosteric ligands by the addition of NaCl/GTPγS (100 mM and 10 µM, respectively) versus the calculated t1/2 of Nb39 association to ligand-bound µ-OR, from Table 1. This correlation was significant (Figure 3c, r2 = 0.73, p=0.002), although BU72 and etorphine had to be excluded from the analysis due to their paradoxical lack of a Na+/GTPγS shift (Lee et al., 1999). Finally, using the Black-Leff operational model (Black and Leff, 1983), the intrinsic efficacy (τ) was calculated using our published data from the [35S] GTPγS assay (Livingston and Traynor, 2014). This variable can only be reliably calculated and separated from functional affinity (KA) for partial agonists (Figure 3d). Using this limited dataset (Figure 3—source data 1), we observed a significant correlation (r2 = 0.83) between τ and the t1/2 of Nb39 association.
 
@@ -69,7 +240,7 @@ To ensure that Kobs provides a viable surrogate for Nb39 interaction with μ-OR,
 
 **Figure 4.:** The association of six different concentrations of Nb39 was measured in the presence of saturating ligand concentrations. Utilizing global regression analysis, the Kd of Nb39 (nM) for ligand bound receptor was calculated as follows: BU72 (144 ± 4), DAMGO (194 ± 9), Morphine (944 ± 13), Methadone (580 ± 3). The Kon values (min−1, M−1 × 10−5) were BU72 (2.35 ± 0.45), DAMGO (17.8 ± 0.5), Morphine (0.43 ± 0.05), and Methadone (1.21 ± 0.07) and the Koff values (min−1) BU72 (0.034 ± 0.0003), DAMGO (0.034 ± 0.003), morphine (0.04 ± 0.003), methadone (0.07 ± 0.0002).
 
-## Allosteric modulation of µ-OR in rHDL by small-molecule PAMs
+### Allosteric modulation of µ-OR in rHDL by small-molecule PAMs
 
 Previously, we have suggested that the μ-PAM, BMS-986122, enhances the affinity and efficacy of orthosteric ligands by stabilizing active state(s) of µ-OR. To test this hypothesis using the binding of Nb39 to µ-OR, we first needed to validate that BMS-986122 had detectible allosteric activity at monomeric µ-OR in rHDL particles, as all previous data on the compound were generated using cell membrane preparations. The affinity of L-methadone for monomeric µ-OR determined from competition binding experiments using the opioid antagonist 3H-diprenorphine (DPN) in the presence or absence of 10 µM BMS-986122 was enhanced three-fold in the presence of 10 µM BMS-986122 (Figure 5). This shift is much smaller than seen in membranes prepared from C6 rat glioma cells stably expressing MOPr (Burford et al., 2013). In order to determine if this diminished BMS-986122 activity in the µ-OR-rHDL system was a property of BMS-986122 or a property of purified µ-OR, we investigated BMS-986187, another PAM that is structurally distinct from BMS-986122 (Figure 5). Although initially discovered as a PAM of the closely related delta opioid receptor (δ-OR), this compound is a weak PAM at the µ-OR (Burford et al., 2015). In contrast to BMS-986122, BMS-986187 produced a 12-fold enhancement of L-methadone affinity for µ-OR in the rHDL system (from a Ki = 2696 (1970–3691) nM to 212 (142-317) nM), and shifted the affinity of DAMGO by 6-fold (from a Ki of 1240 (632–2438) nM to 212 (142-317) nM), although it failed to alter the affinity of morphine, (Ki = 630 nM in the absence and 500 nM in the presence of BMS-986197 (Figure 5). This probe dependence matches that seen with BMS-986122 in cell membranes, and can be most simply explained by a two-state model of GPCR function (Monod et al., 1965; Livingston and Traynor, 2014) in which the µ-PAMs stabilize R* states of µ-OR. We performed competition assays with L-methadone in the presence of increasing concentrations of BMS-986187 and applied the allosteric ternary complex model (GraphPad Prism) to calculate a cooperativity factor (α) of 58 and a KB of 4.5 µM, representing the affinity of BMS-986187 for the unoccupied µ-OR in rHDL. This is similar to data obtained for BMS-986187 at the μ-OR in cloned membranes (KB of 5.5 µM, log αβ of 1.16; Livingston et al., 2018) determined from a [35S]GTPγS functional assay using a derivation of the allosteric ternary complex model (Leach et al., 2010). From these values, we determined the affinity of BMS-986187 for the methadone-bound µ-OR in rHDL (KB/α) to be 77 nM. This represents an increase of 58-fold in the affinity of the modulator in the presence of methadone, indicating a strong preference for the active R* state of the receptor.
 
@@ -86,6 +257,124 @@ We hypothesized that both PAMs stabilize active R* states of µ-OR but that BMS-
 In addition to the ability of the PAMs to stabilize R* conformations of µ-OR alone, we were interested in investigating the cooperative effects of the allosteric ligands on the ability of orthosteric agonists to promote Nb39 binding. Since both allosteric ligands have the ability to increase the efficacy of various orthosteric ligands in cell-based signaling assays (Livingston and Traynor, 2014; Burford et al., 2015), we expected that this increase in efficacy would manifest as an increase in the observed association rate constant of Nb39, and that BMS-986187 would have a larger effect than BMS-986122. Shown in Figure 6b is the ability of the two µ-PAMs to enhance morphine-driven recruitment of Nb39. As predicted, both allosteric ligands enhanced the rate constant of Nb39 association. Using the association rates in the presence of modulator and data from cell-based GTPγ35S-binding assays of morphine in the presence of the modulators, the τ values were plotted in Figure 3e. These agreed with the correlation, indicating the increase in association was accompanied by an increase in intrinsic efficacy.
 
 We repeated the same experiment with the orthosteric ligands L-methadone and DAMGO, but used a lower concentration of Nb39 (100 nM) to enhance sensitivity as these orthosteric ligands are of higher efficacy. Both PAMs enhanced the rate constant of DAMGO-driven Nb39 binding (Table 2) and slowed the dissociation of Nb39 from µ-OR, with BMS-986187 having a larger effect. Unexpectedly, the association of Nb39 to L-methadone-bound µ-OR was slowed in the presence of either BMS-986122 or BMS-986187. Additionally, the dissociation of Nb39 was unchanged by BMS-986122 but slowed significantly by BMS-986187 (Table 2).
+
+**Table 2.**
+ Alteration in Nb39 kinetics in the presence of µ-PAMs
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Morphine (1 µM Nb39)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>kobs (min−1)</th>
+      <th>t1/2Assoc (sec)</th>
+      <th>koff (min−1)</th>
+      <th>t1/2Diss(sec)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vehicle</td>
+      <td>0.08 ± 0.01</td>
+      <td>8.5</td>
+      <td>0.033 ± 0.001</td>
+      <td>21</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BMS-986122</td>
+      <td>0.11 ± 0.001</td>
+      <td>6.4</td>
+      <td>0.032 ± 0.0002</td>
+      <td>22</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BMS-986187</td>
+      <td>0.13 ± 0.01 ***</td>
+      <td>5.3</td>
+      <td>0.024 ± 0.0004</td>
+      <td>29</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="6">L-Methadone (100 nM Nb39)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>kobs (min−1)</td>
+      <td>t1/2Assoc (sec)</td>
+      <td>koff (min−1)</td>
+      <td>t1/2Diss(sec)</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td>Vehicle</td>
+      <td>0.087 ± 0.009</td>
+      <td>8.0</td>
+      <td>0.050 ± 0.004 †</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>BMS-986122</td>
+      <td>0.077 ± 0.007</td>
+      <td>9.0</td>
+      <td>0.047 ± 0.004 ++</td>
+      <td>15</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>BMS-986187</td>
+      <td>0.055 ± 0.004 *</td>
+      <td>13</td>
+      <td>0.033 ± 0.002 **</td>
+      <td>21</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td colspan="6">DAMGO (100 nM Nb39)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>kobs (min−1)</td>
+      <td>t1/2Assoc (sec)</td>
+      <td>koff (min−1)</td>
+      <td>t1/2Diss(sec)</td>
+      <td colspan="2">n</td>
+    </tr>
+    <tr>
+      <td>Vehicle</td>
+      <td>0.051 ± 0.003</td>
+      <td>14</td>
+      <td>0.035 ± 0.003 ‡</td>
+      <td>20</td>
+      <td colspan="2">7</td>
+    </tr>
+    <tr>
+      <td>BMS-986122</td>
+      <td>0.050 ± 0.01</td>
+      <td>13</td>
+      <td>0.029 ± 0.003</td>
+      <td>24</td>
+      <td colspan="2">7</td>
+    </tr>
+    <tr>
+      <td>BMS-986187</td>
+      <td>0.050 ± 0.004</td>
+      <td>14</td>
+      <td>0.022 ± 0.001*</td>
+      <td>31</td>
+      <td colspan="2">7</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are means from independent experiments (number of individual experiments indicated in ‘n’ column). Analyses were performed by two-way ANOVA with a Tukey post-hoc test.*Indicates significance compared to vehicle condition for each orthosteric ligand (*p<0.05, **p<0.01, ***p<0.001). ++Indicates p<0.01 as compared to L-methadone/BMS-986187 combination.†Indicates p<0.01 as compared to morphine/vehicle combination.‡Indicates p<0.01 as compared to DAMGO/vehicle combination._
 
 Finally, we sought to determine if we could use purified heterotrimeric G protein binding to μ-OR in place of the Nb39 biosensor. In order to allow for measures of association and dissociation, soluble heterotrimeric G protein composed of a complex of myristoylated Gαi1, β1, and the γ2 C68S mutant lacking prenylation was utilized (see Materials and methods). For this experiment, we studied BU72 and morphine as two ligands with differing efficacy. Each ligand was able to promote binding of 100 nM heterotrimeric G protein to μ-OR, though to different extents and there was low binding in the absence of ligand (Figure 7a). Utilizing a global fit of the data, the Kd for G protein varied between ligands (see legend to Figure 7). In contrast to Nb39 which dissociated very rapidly, the dissociation t1/2 of G protein was much slower in the presence of BU72 (231 min) or morphine (182 min). To test the hypothesis that this slow dissociation was due to formation of highly stable nucleotide-free receptor:G protein complexes (Rasmussen et al., 2011b), dissociation was measured in the presence of 1 µM GDP. The presence of the nucleotide rapidly enhanced G protein dissociation (Figure 7b).
 
@@ -117,34 +406,240 @@ In summary, we have described a novel method for the quantitative evaluation of 
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mu-opioid receptor</td>
+      <td>Manglik et al. (2012)</td>
+      <td>OPRM1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Gbetagamma</td>
+      <td>Iñiguez-Lluhi et al., 1992</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Myristoylated Gαi1</td>
+      <td>Greentree and Linder, 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Apolipoprotein-AI</td>
+      <td>Kuszak et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>[D-Ala2, N-Me-Phe4, Gly5-ol]-Enkephalin acetate salt (DAMGO)</td>
+      <td>Sigma</td>
+      <td>E7384</td>
+      <td>CAS#100929-53-1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Leu-Enkephalin</td>
+      <td>Sigma</td>
+      <td>L9133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Met-Enkephalin</td>
+      <td>Sigma</td>
+      <td>M6638</td>
+      <td>CAS#82362-17-2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Endomorphin 2</td>
+      <td>Sigma</td>
+      <td>SCP0133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Nanobody 39 (Nb39)</td>
+      <td>Huang et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3H-diprenorphine</td>
+      <td>Perkin Elmer</td>
+      <td>NET1121250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Morphine sulfate</td>
+      <td>National Institute on Drug Abuse, NIH. Drug Supply Catalog</td>
+      <td>9300–001</td>
+      <td>CAS # 6211-15-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-Methadone</td>
+      <td>National Institute on Drug Abuse, NIH. Drug Supply Catalog</td>
+      <td>9250–005</td>
+      <td>CAS# 125-58-6</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buprenorphine</td>
+      <td>National Institute on Drug Abuse, NIH. Drug Supply Catalog</td>
+      <td>9064–110</td>
+      <td>CAS# 53152-21-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BU72</td>
+      <td>Huang et al. (2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diprenorphine</td>
+      <td>Other</td>
+      <td></td>
+      <td>CAS# 14357-78-9: Opioid Research Center, U Michigan</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etorphine</td>
+      <td>Other</td>
+      <td></td>
+      <td>CAS# 14521-96-1: Opioid Research Center, U Michigan</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fentanyl</td>
+      <td>National Institute on Drug Abuse, NIH. Drug Supply Catalog</td>
+      <td>9801–001</td>
+      <td>CAS# 1443-54-5</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrocodone</td>
+      <td>Other</td>
+      <td></td>
+      <td>CAS# 125-29-1:Opioid Research Center, U Michigan</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Loperamide</td>
+      <td>Other</td>
+      <td></td>
+      <td>CAS # 34552-83-5: Opioid Research Center, U Michigan</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nalbuphine</td>
+      <td>Other</td>
+      <td></td>
+      <td>CAS# 23277-43-2: Opioid Research Center, U Michigan</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Naloxone</td>
+      <td>Sigma</td>
+      <td>PHR1802</td>
+      <td>CAS# 51481-60-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oxycodone</td>
+      <td>Other</td>
+      <td></td>
+      <td>CAS# 76-42-6: Opioid Research Center, U Michigan</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PZM21</td>
+      <td>Manglik et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BMS-986187</td>
+      <td>Bristol Myers Squib;</td>
+      <td>Burford et al. (2015)</td>
+      <td>CAS# 684238-37-7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BMS-986122</td>
+      <td>Bristol Myers Squib;</td>
+      <td>Burford et al. (2013)</td>
+      <td>CAS# 313669-88-4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6.0</td>
+      <td>GraphPad, La Jolla, CA</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Octet Data Analysis 7.0 software</td>
+      <td>Pall Forte Bio</td>
+      <td>https://shop.fortebio.com/site-license-octet-data-analysis-software-version-7.x.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 [3H]-Diprenorphine (DPN) was from PerkinElmer Life Sciences. BMS-986122 and BMS-986187 (structures in Figure 5) were synthesized or obtained as previously described (Burford et al., 2013; 2015). Fentanyl, morphine, methadone and buprenorphine were from the NIDA Drug supply; other opiates were from the Opioid Basic Research Center at the University of Michigan. All other chemicals, unless otherwise specified, were purchased from Sigma (St. Louis, MO).
 
-## Purification of µ-OR
+### Purification of µ-OR
 
 Full-length Mus musculus µ-OR bearing an amino-terminal FLAG epitope tag and a carboxy-terminal 6xHis tag was expressed in Sf9 insect cells (Invitrogen) using the Best Bacbaculovirus system (Expression Systems). A tobacco etch virus (TEV) protease recognition sequence was inserted after residue 51 and a rhinovirus 3C protease recognition sequence was inserted before residue 359 for cleavage during purification. Insect cells were infected with baculovirus encoding µ-OR 48–60 hr at 27°C. Receptor was solubilized and purified in a final buffer comprised of 25 mM HEPES pH 7.4, 100 mM NaCl, 0.01% MNG (Anatrace), and 0.001% cholesterol hemisuccinate (CHS), as previously described (Manglik et al., 2012).
 
-## Purification of Nb39
+### Purification of Nb39
 
 Nb39 was purified as described (Huang et al., 2015). Briefly, Nb39 bearing a carboxy-terminal His tag was expressed in the periplasm of Escherichia coli strain WK6 grown in Terrific Broth medium containing 0.1% glucose, 2 mM MgCl2, and 50 mg/ml ampicillin and induced with 0.5 mM isopropyl-b-D-thiogalactoside (IPTG). Cells were harvested after overnight growth at 25°C and incubated in a buffer containing 200 mM Tris, pH 8.0, 0.5 mM EDTA, 500 mM sucrose for one h on ice. Bacteria were osmotically lysed by rapid dilution in water. The periplasmic fraction was isolated by centrifugation of cell debris and was supplemented with NaCl (300 mM final) and imidazole (10 mM final). Nb39 was isolated from the periplasmic fraction by nickel affinity chromatography, and subsequently purified by size-exclusion chromatography in a buffer comprised of 20 mM HEPES pH7.5 and 100 mM NaCl. Peak fractions were pooled and concentrated to approximately 1 mM.
 
-## Apolipoprotein purification and biotinylation
+### Apolipoprotein purification and biotinylation
 
 Apolipoprotein-AI (Apo-AI) was purified as described previously (Kuszak et al., 2009). Apo-A1 was biotinylated using NHS-PEG4-biotin (Pierce Biotechnology) at a 1:1 molar ratio. Following a 30 min biotinylation reaction at room temperature, the sample was dialyzed to remove free biotin.
 
-## Purification and formation of G-protein heterotrimeric complex
+### Purification and formation of G-protein heterotrimeric complex
 
 Myristoylated Gαi1containing a hexahistidine tag inserted at residue 121 (Kozasa and Gilman, 1995) was expressed in Escherichia coli and purified as described (Greentree and Linder, 2004). To prepare Gβγ subunit lacking the geranyl-geranyl modification, Trichoplusiani cells (High Five; Invitrogen) were infected with baculovirus encoding for Gβ1 and His6-Gγ2C68S (Iñiguez-Lluhi et al., 1992) at an MOI of 1 for each virus. Cells were harvested ~48 hr post-infection and lysed by nitrogen cavitation in a buffer containing 50 mM HEPES (pH 8.0), 65 mM NaCl, 5 mMβ-mercaptoethanol (β-ME), and protease inhibitors (35 µg/ml phenylmethylsulfonyl fluoride, 32 µg/ml each N-tosyl-L-phenylalanine chloromethyl ketone and N-tosyl-L-lysine chloromethyl ketone, 3.2 µg/ml each leupeptin and soybean trypsin inhibitor). The lysate was centrifuged for 10 min at 1000 g and the resulting supernatant was centrifuged for 40 min at 100,000 g. The clarified lysate was supplemented with NaCl to a final concentration of 300 mM and applied to a packed column of cobalt-NTA resin (TALON;Clontech) pre-equilibrated with wash buffer containing 20 mM HEPES (pH 8.0), 300 mM NaCl, 5 mM β-ME, and protease inhibitors. The column was washed with 10 column volumes of wash buffer then eluted with a buffer composed of 20 mM HEPES (pH 8.0), 50 mM NaCl, 150 mM imidazole, 5 mM β-ME, and protease inhibitors. Fractions were analyzed by SDS-PAGE, and those containing Gβγ were pooled and diluted to a final volume of 50 ml using 20 mM HEPES (pH 8.0), 5 mM β-ME. The diluted fractions were loaded onto a MonoQ HR 10/10 (GE Life Sciences) pre-equilibrated with 20 mM HEPES (pH 8.0) and eluted using a linear gradient of NaCl in the same buffer. Fractions containing Gβγ were pooled, concentrated using an Amicon Ultra centrifugal filter, and applied to a Superdex S200 XK 16/70 (GE Life Sciences). Size exclusion chromatography was performed using a buffer composed of 20 mM HEPES, 100 mM NaCl, 1 mM EDTA, and 100 µM Tris(2-carboxyethyl)phosphine (TCEP). Peak fractions were pooled and concentrated to ~5 mg/ml as determined by Bradford assay. Concentrated protein was flash-frozen in liquid nitrogen and stored at −80°C until use. Complexes of myr-Gαi1 and Gβγ were prepared by mixing the subunits at a 1.2:1 molar ratio in a buffer containing 20 mM HEPES (pH 8.0), 100 mM NaCl, 1 mM EDTA, 1.1 mM MgCl2, 10 µM GDP, and 100 µM TCEP. Following a 30 min incubation at 4°C, complexes were isolated by size exclusion chromatography using a Superdex S200 HR 10/30 (GE Life Sciences). Peak fractions were pooled, concentrated using an Amicon Ultra centrifugal filter, and flash frozen in liquid nitrogen for storage at −80°C.
 
-## µ-OR-rHDL Reconstitution
+### µ-OR-rHDL Reconstitution
 
 Purified µ-OR was reconstituted into high-density lipoprotein (HDL) particles using biotinylated Apo-AI and the lipids 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoglycerol (POPG) (both from Avanti Polar Lipids) in a 3:2 molar ratio as previously described (Whorton et al., 2007). For OctetRed® experiments, rHDL particles containing receptor were separated from empty rHDL by anti-FLAG affinity chromotography and elution fractions positive for 3H-diprenorphine binding were pooled.
 
-## Nb39 kinetic assays
+### Nb39 kinetic assays
 
 Nb39 binding to µ-OR in the presence or orthosteric and/or allosteric ligands was measured using the Octet RED biolayer interferometry system (Pall ForteBio). In this assay, µ-OR-containing biotinylated rHDL particles are immobilized on a streptavidin-coated fiber optic probe that is incubated into buffers containing ligands in the presence or absence of Nb39. Different reconstituted receptor preparations were tested with each ligand to ensure the kinetics did not vary based on the preparation. Dissociation of bound Nb39 was initiated by placing the probe in buffer containing ligands but no Nb39. Specifically, biosensors (Pall ForteBio) were loaded with biotinylated µ-OR-rHDL particles for 15 min at room temperature and the biosensors were transferred to the Octet RED instrument. Sensors were placed into assay buffer (20 mM HEPES, pH 7.7, 100 mM NaCl, 1 mM EDTA, 0.05% (w/v) BSA) with vehicle or various orthosteric/allosteric ligands for 10 min to reach equilibrium, unless stated otherwise. To measure Nb39 association, the probe was transferred to assay buffer with Nb39 (at indicated concentrations) for 5 min, followed by a 10 min dissociation step in assay buffer (preliminary studies showed that dissociation of Nb39 was quite rapid). All ligands (orthosteric and allosteric), once introduced to the probe, remained in each subsequent buffer during association and dissociation. All experiments were carried out at 25°C with the assay plate shaking at 2000 r.p.m. Non-specific binding was measured using a vehicle control with no ligands and this was subtracted to account for baseline drift. Raw data were processed to remove baseline using Octet Data Analysis 7.0 software (Pall Forte Bio) and exported to GraphPad Prism 6.0 for curve fitting of association and dissociation using a global linear regression analysis of the families of curves. The number of independent experiments is listed in the figure legends or tables. No statistical methods were used to predetermine sample size.
 
-## Radioligand binding assays
+### Radioligand binding assays
 
 For competition binding experiments in µ-OR- rHDL, a mixture of µ-OR-rHDL and 3H-diprenorphine (3H-DPN) was incubated with varying concentrations of agonist in a binding buffer comprised of 25 mM HEPES pH 7.4, 100 mM NaCl, and 0.1% BSA in the presence or absence of 3 µM Nb39. For assays performed using cell membranes, conditions listed were kept the same except for exclusion of BSA and inclusion of 10 µg protein per well. Binding reactions were incubated for 2 h at 25°C. Free radioligand was separated from bound radioligand by rapid filtration onto a Whatman GF/C filter pretreated with 0.1% polyethylenimine using a 24-well harvester (Brandel). Nonspecific binding was measured in the presence of 10 µM naloxone, an opioid antagonist. Radioligand activity was measured by liquid scintillation counting using a Wallac 1450 MicroBeta counter (Perkin Elmer). A minimum of three independent experiments, each in duplicate, were performed and the values were pooled to generate the mean curves displayed in the figures. Competition binding data were fit to a one-site model using GraphPad Prism 6.0. Data are presented as means with 95% confidence limits in parentheses. No statistical methods were used to predetermine sample size.

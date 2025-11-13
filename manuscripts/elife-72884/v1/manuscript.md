@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Cold temperature is prevalent across the biosphere and slows the rates of chemical reactions. Increased catalysis has been predicted to be a dominant adaptive trait of enzymes to reduced temperature, and this expectation has informed physical models for enzyme catalysis and influenced bioprospecting strategies. To systematically test rate enhancement as an adaptive trait to cold, we paired kinetic constants of 2223 enzyme reactions with their organism’s optimal growth temperature ( T Growth ) and analyzed trends of rate constants as a function of T Growth . These data do not support a general increase in rate enhancement in cold adaptation. In the model enzyme ketosteroid isomerase (KSI), there is prior evidence for temperature adaptation from a change in an active site residue that results in a tradeoff between activity and stability. Nevertheless, we found that little of the rate constant variation for 20 KSI variants was accounted for by T Growth . In contrast, and consistent with prior expectations, we observed a correlation between stability and T Growth across 433 proteins. These results suggest that temperature exerts a weaker selection pressure on enzyme rate constants than stability and that evolutionary forces other than temperature are responsible for the majority of enzymatic rate constant variation.
+Cold temperature is prevalent across the biosphere and slows the rates of chemical reactions. Increased catalysis has been predicted to be a dominant adaptive trait of enzymes to reduced temperature, and this expectation has informed physical models for enzyme catalysis and influenced bioprospecting strategies. To systematically test rate enhancement as an adaptive trait to cold, we paired kinetic constants of 2223 enzyme reactions with their organism’s optimal growth temperature (TGrowth) and analyzed trends of rate constants as a function of TGrowth. These data do not support a general increase in rate enhancement in cold adaptation. In the model enzyme ketosteroid isomerase (KSI), there is prior evidence for temperature adaptation from a change in an active site residue that results in a tradeoff between activity and stability. Nevertheless, we found that little of the rate constant variation for 20 KSI variants was accounted for by TGrowth. In contrast, and consistent with prior expectations, we observed a correlation between stability and TGrowth across 433 proteins. These results suggest that temperature exerts a weaker selection pressure on enzyme rate constants than stability and that evolutionary forces other than temperature are responsible for the majority of enzymatic rate constant variation.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ Temperature is a ubiquitous environmental property and physical factor that affe
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig1-v1.jpg)
 
-**Figure 1.:** (A) According to the rate compensation model of cold adaptation, a cold-adapted variant (blue circle) has larger rate enhancement than a warm-adapted variant (red circle). The dashed line represents the uncatalyzed reaction, the solid line represents the catalyzed reaction, and the arrows represent the rate enhancement at the respective organism TGrowth. (B) When variants are assayed at a common temperature, rate compensation predicts a faster reaction for the enzyme from the cold-adapted organism, corresponding to a rate ratio (kcold/kwarm) of greater than one and a negative slope of rate vs. TGrowth (mrate). (C, D) Rate comparisons of warm-adapted and cold-adapted enzyme variants made at identical temperatures from cold adaptation literature spanning indicated reactions with substrate specified in parentheses (Collins and Gerday, 2017; Feller and Gerday, 1997; Siddiqui and Cavicchioli, 2006; Smalås et al., 2000). The black vertical lines represent no rate enhancement change with temperature (i.e., rate ratio = 1).Figure 1—source data 1.
+**Figure 1.:** (A) According to the rate compensation model of cold adaptation, a cold-adapted variant (blue circle) has larger rate enhancement than a warm-adapted variant (red circle). The dashed line represents the uncatalyzed reaction, the solid line represents the catalyzed reaction, and the arrows represent the rate enhancement at the respective organism TGrowth. (B) When variants are assayed at a common temperature, rate compensation predicts a faster reaction for the enzyme from the cold-adapted organism, corresponding to a rate ratio (kcold/kwarm) of greater than one and a negative slope of rate vs. TGrowth (mrate). (C, D) Rate comparisons of warm-adapted and cold-adapted enzyme variants made at identical temperatures from cold adaptation literature spanning indicated reactions with substrate specified in parentheses (Collins and Gerday, 2017; Feller and Gerday, 1997; Siddiqui and Cavicchioli, 2006; Smalås et al., 2000). The black vertical lines represent no rate enhancement change with temperature (i.e., rate ratio = 1).
 
 The observed effects on enzymatic rate constants (Figure 1C and D) have also led to proposals of general physical models for cold adaptation linked to flexibility, as outlined in Feller and Gerday, 2003; Fields et al., 2015; Åqvist et al., 2017; Arcus et al., 2016; Nguyen et al., 2017; Saavedra et al., 2018. Further, features identified in comparative structural analyses of cold- and warm-adapted enzymes, such as fewer surface hydrogen bonds and salt bridges (Cai et al., 2018), have been suggested to increase flexibility and thereby increase catalysis (Mandelman et al., 2019; Park et al., 2018a; Park et al., 2018b). Correspondingly, the study of cold adaptation may have the potential to provide generalizable insights into physical properties of enzymes that make them better catalysts, a longstanding challenge in the field (Blow, 2000; Hammes et al., 2011; Kraut et al., 2003; Ringe and Petsko, 2008). From a practical perspective, the prediction of enhanced catalysis by cold-adapted enzymes has motivated low-temperature bioprospecting for biocatalysts to use in industrial processes (Bhatia et al., 2021; Bruno et al., 2019; Kuddus, 2018; Santiago et al., 2016).
 
@@ -33,9 +33,25 @@ Given the theoretical and practical implications of the proposed relationship be
 
 ## Results
 
-## Systematically testing the rate compensation model
+### Systematically testing the rate compensation model
 
 To investigate temperature adaptation of enzyme rate enhancement, we paired rate constant data from the BRENDA database (Chang et al., 2021) to organism growth temperatures. We simplified organism temperatures that may span changing conditions (Doblin and van Sebille, 2016) by matching the species name associated with the enzyme variant with the organism optimal growth temperature (TGrowth) (Engqvist, 2018). Of 76,083 kcat values in BRENDA, we found that 49,314 were for wild-type enzymes. Of these data, 16,543 values matched to microorganisms with known TGrowth values. We selected reactions in the database with variants from more than one organism, spanning 7086 kcat values for 2223 reactions across 815 organisms with at least two variants per reaction (Figure 2A). These reactions spanned a temperature range of 1–83°C (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-v1.jpg)
+
+**Figure 2.:** (A) Enzyme variants per reaction of wild-type enzyme kcat values (n = 11,480 reactions) matched to TGrowth. (B) Reactions with more than one enzyme variant (n = 2223 reactions). (C) Rate ratio distribution of the rate at the coldest TGrowth (kcold) divided by the rate of the variant from the warmest TGrowth (kwarm) (median = 1.1-fold, 95% CI [1.00, 1.22], n = 2223 reactions). Vertical line at rate ratio = 1. For clarity, only data with rate ratios between 10–3 and 103 are shown (>95% of the reactions). (D) Rate ratio (kcold/kwarm) data (solid line, n = 2223 from panel C) compared to fold change control distribution (same TGrowth; dashed line, median = 1.0-fold, 95% CI [0.89, 1.13], n = 615 reactions; p = 0.21, Mann–Whitney U test, two-sided). The black vertical line represents no rate enhancement change with temperature (i.e., rate ratio = 1). (E, F) The significance and magnitude of the linear fit of reaction rate as a function of TGrowth for negative slopes (E, n = 487) and positive slopes (F, n = 464) in log space. Enzyme Commission (E.C.) number and (substrate) indicated for reactions significantly associated with temperature (Bonferroni correction; p-value < 5.3 × 10–5, n = 951). Dotted horizontal lines at p = −log10(5.3 × 10–5). 5.3.1.1: triose-phosphate isomerase; G3P: glyceraldehyde 3-phosphate; 3.1.1.74: cutinase; 4-NPB: 4-nitrophenyl butyrate.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distribution of kcat rate ratio values including only measurements made at 25°C and (B) 37°C. (C) Distribution of rate ratios with TGrowth range >∆20°C and (D) TGrowth range >60°C. Reported p-values from two-sided Mann–Whitney U test comparing filtered data (solid line) and the control data (dotted line, see Materials and methods).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Variants per reaction of wild-type enzyme kcat values (n = 5598 reactions) matched to TGrowth. (B) Number of reactions spanning the specified TGrowth range (n = 953 reactions with >1 variant). (C) kcat/KM rate ratio (kcold/kwarm) distribution (median = 0.93-fold, 95% CI [0.78, 1.12], n = 953 reactions). Gray vertical line at rate ratio = 1. (D) kcat/KM rate ratio (kcold/kwarm) data (black line, n = 953 reactions) with kcat/KM rate ratio control (gray line, median = 1.00-fold, 95% CI [0.82, 1.21], n = 307 reactions) determined in the same way as the kcat rate ratio control in the main text (see Materials and methods) (p = 0.80, Mann–Whitney U test, two-sided). For clarity, only data with rate ratios between 10–3 and 103 are shown, representing >90% rate ratio data in (C) and >83% of rate ratio control values in (D). Black vertical line represents no rate change with temperature (i.e., rate ratio = 1).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Reactions with the rate constants of constituent variants in order of mrate p-value (for all reactions shown, p < 5.2 × 10–3). mrate is the slope of log10(kcat) vs. TGrowth. Note different scales for the axes. 5.3.1.1: triose-phosphate isomerase; 3.1.174: cutinase; 2.4.1.25: 4-alpha-glucanotransferase; 1.1.1.86: ketol-acid reductoisomerase; 3.5.1.19: nicotinamidase; 6.3.2.2: glutamate-cysteine ligase; 1.3.1.9: enoyl-[acyl-carrier-protein] reductase (NADH); 1.1.1.1: alcohol dehydrogenase; 2.3.1.57: diamine N-acetyltransferase.
 
 For each enzyme reaction, we first calculated the rate ratio (kcold/kwarm) between the rate constant of the variant from the lowest growth temperature organism and the rate constant of the variant from the highest growth temperature organism. We observed rate ratios greater than one (1142 reactions) as predicted by rate compensation, but nearly the same number of rate ratios of less than one (1082 reactions) (Figure 2C, compare with Figure 1D), providing no support for widespread or predominant rate compensation.
 
@@ -47,9 +63,25 @@ As it is not possible to prove the absence of a relationship (Altman and Bland, 
 
 In summary, the data provide no indication of increased rate enhancements as a consequence of decreasing TGrowth. These results suggest that rate compensation is not a universal or prevalent consequence of temperature adaptation. The prior conclusion of widespread temperature adaptation may have arisen from the use of a small set of enzymes (n = 28; Figure 1C and D) or from inadvertent confirmation bias (Nickerson, 1998).
 
-## Testing the rate compensation model for the enzyme KSI
+### Testing the rate compensation model for the enzyme KSI
 
 To probe rate compensation in greater depth, we turned to the enzyme KSI for which recent data has demonstrated rate compensation (Pinney et al., 2021). Specifically, the change of a single active site residue at position 103 from serine (S103, prevalently found in warm-adapted KSI variants) to protonated aspartic acid (D103, prevalently found in mesophilic KSI variants) provided improved activity from a stronger hydrogen bond while also sacrificing stability by introducing an unfavorable protonation coupled to folding. We therefore used KSI to more deeply investigate the potential for rate compensation by assaying 20 variants that vary in sequence and TGrowth (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-v1.jpg)
+
+**Figure 3.:** (A) Unrooted maximum likelihood phylogenetic tree of KSI variants. Closed circles represent bootstrap values of >70%; open circles represent bootstrap values of 40–70%. (B) The mechanism of isomerization of the steroid 5 (10)-estrene-3,17-dione by KSI. 5 (10)-EST was used to allow direct measurement of the rate-limiting chemical step kcat (Pollack et al., 1986). (C) Activity of KSI variants (kcat) at a common assay temperature of 25°C. Error bars represent standard deviation of at least two different experimental replicates varying [E] at least 5-fold. KSI variants with D103 are represented in blue, S103 in red, and E103 in gray (Pseudomonas putida numbering throughout). (D) Activity (log10(kcat)) of KSI variants at a common assay temperature (25°C) vs. organism growth temperature (TGrowth) (n = 20, mrate = –0.006, R2 = 0.01, p = 0.02).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The primary sequence variation of each KSI variant ranges from 20% to 75% amino acid identity.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Far ultraviolet CD spectra at 5°C (blue) and 25°C (red) are indistinguishable. Measurements for each variant were made at an enzyme concentration of 20 µM.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Rate of KSI variants (kcat/KM) at a common assay temperature (TAssay) of 25°C. KSI variants with D103 are represented in blue, S103 in red, and E103 in gray (Pseudomonas putida numbering). (B) Rates (kcat/KM) of KSI variants at 25°C assay temperature (TAssay) vs. organism growth temperature (TGrowth) (n = 20, mrate = 0.01, R2 = 0.01, p = 4 × 10–7). (C) Rates (kcat/KM) of KSI variants at 15°C assay temperature (TAssay) vs. organism growth temperature (TGrowth) (n = 20, mrate = 0.003, R2 = 0.001, p = 3 × 10–7). (D) Rates (kcat) of KSI variants at 15°C assay temperature (TAssay) vs. organism growth temperature (TGrowth) (n = 20, mrate = –0.01, R2 = 0.02, p = –0.11). Error bars represent standard deviation of at least two different experimental measurements varying [E] at least 5-fold (25°C) or 2-fold (15°C).
 
 KSI catalyzes the double bond isomerization of steroid substrates (Figure 3B) and is predicted to be part of a pathway that enables degradation of steroids for energy and carbon metabolism in bacteria (Horinouchi et al., 2010). KSI variants were identified by sequence relatedness to known KSIs. The 20 selected KSI variants ranged between 20% and 75% sequence identity to each other (Figure 3—figure supplement 1) and were selected from bacteria originating from environments spanning glaciers, ocean floor, soil, and wastewater with reported TGrowth values from 15°C to 46°C (Figure 3—source data 1). Each purified KSI demonstrated similar circular dichroism (CD) spectra at 5°C and 25°C, suggesting that variants were not unfolding at the 25°C assay temperature (Figure 3—figure supplement 2). All putative KSI variants exhibited isomerase activity on the steroid substrate 5 (10)-estrene-3,17-dione (5 (10)-EST) (Figure 3C).
 
@@ -57,13 +89,13 @@ We observed that the KSIs with the prevalent cold-adapted residue (D103 and the 
 
 For KSI, the value of kcat decreased as a function of TGrowth, but the shallow slope (mrate = –0.006, p = 0.02) (Figure 3D) and the small coefficient of determination (R2 = 0.01) of this relationship indicate that TGrowth accounts for little of the observed 80-fold rate variation. Similar activity trends were observed at an assay temperature of 15°C (Figure 3—figure supplement 3).
 
-## Testing stability compensation using literature data
+### Testing stability compensation using literature data
 
 The absence of evidence for rate compensation led us to reinvestigate the widely accepted relationship between stability and growth temperature. Prior work has shown that the mean temperature optimum of enzymes correlates well with organism TGrowth (r = 0.75, Engqvist, 2018), but enzyme temperature optima reflect a combination of rate and stability effects. To isolate stability, we surveyed the relationship between stability and TGrowth using the ProThermDB, a collection of experimental data of protein and mutant stability (Nikam et al., 2021). Across 433 wild-type variants present in this database, we observed a significant relationship between Tm and TGrowth (Figure 4A, R2 = 0.43, p = 2 × 10–54). For the 43 protein families with more than one reported variant, 39 had a higher melting temperature than their cold-adapted counterpart (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig4-v1.jpg)
 
-**Figure 4.:** (A) Wild-type Tm stability data from ProThermDB as a function of organism TGrowth. Dashed black line represents a linear fit (n = 433, R = 0.43). (2B) Fold change (Tm cold/Tm warm) of wild-type protein variants (n = 43, median = 0.81, 95% [0.70, 0.85]). The black vertical line represents no change (i.e., fold change = 1).Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Wild-type Tm stability data from ProThermDB as a function of organism TGrowth. Dashed black line represents a linear fit (n = 433, R2 = 0.43). (B) Fold change (Tm cold/Tm warm) of wild-type protein variants (n = 43, median = 0.81, 95% [0.70, 0.85]). The black vertical line represents no change (i.e., fold change = 1).
 
 ## Discussion
 
@@ -81,24 +113,55 @@ To understand why enzyme properties such as rate and stability measured with pur
 
 ## Materials and methods
 
-## Literature enzyme rate analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0016</td>
+      <td>Electrocompetent cells for protein expression</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5 (10)-estrene-3,17-dione</td>
+      <td>Steraloids</td>
+      <td>E4500-000</td>
+      <td>Ketosteroid isomerase reaction substrate</td>
+    </tr>
+  </tbody>
+</table>
+
+### Literature enzyme rate analysis
 
 To capture enzyme rates reported throughout the literature, the BRENDA database was accessed using SOAP July 2021 (Chang et al., 2021) (www.brenda-enzymes.org) and the kcat and kcat/KM database entries retrieved by Enzyme Commission (E.C.) number were parsed for measurement value, substrate, rate, assay temperature, and variant (wild-type or mutant) status (Source Code 1). Microbial optimum growth temperature (Engqvist, 2018) values from median organism optimal growth temperatures for microbes in culture (TGrowth) were matched by organism name to rate entries. (Natural temperatures in the wild may differ. The definition of TGrowth used herein is the same as that used in the studies leading to the rate compensation model.) Rate data were filtered for kcat and kcat/KM values of wild-type enzymes. Reactions are defined by E.C. number–substrate pair. The median value was taken in the case of multiple measurements of the same enzyme variant with the same substrate.
 
 The rate ratio kcold/kwarm per reaction was determined by dividing rate constant of the enzyme from the organism with the minimum TGrowth by the rate constant of the enzyme from organism with the maximum TGrowth. We use the term ‘cold-adapted variant’ to refer to an enzyme from an organism annotated with lower TGrowth values. If a maximum or minimum TGrowth was shared between enzyme variants, then the median rate of the two variants was used in the rate ratio calculation. To account for enzyme rate variation arising independently of temperature, a control distribution from reactions with variants of the same TGrowth was derived. The fold change of the maximum value over the minimum value kmax/kmin and its reciprocal kmin/kmax was calculated for each reaction from the same TGrowth with at least two variants. To compare the rate ratio distribution of the data to the rate ratio control, the nonparametric two-sided Mann–Whitney U test was used with a significance threshold of p < 0.05. As no temperature-dependent trends emerged when data were restricted to measurements made at 25°C or 37°C or when the TGrowth range was limited to >∆20°C and >∆60°C, we used all data in the main analysis. We determined confidence intervals of the median parameters of the rate ratio distributions by bootstrap analysis (boot package in R, 10,000 replications) (Canty and Ripley, 2021; Davison and Hinkley, 1997). The mrate values (slopes) per reaction were calculated by performing a linear regression relating the log10(rate) vs. organism TGrowth. Significance threshold, corrected for multiple tests, was p < 5.33 × 10−5 (Bonferroni correction; p < 0.05/951).
 
-## KSI variant identification, cloning, expression, and purification
+### KSI variant identification, cloning, expression, and purification
 
 Putative KSI variants were identified by sequence relatedness to known KSI variants. Selection of variants was guided by associating putative KSI sequences with TGrowth by species (Engqvist, 2018). Seventeen variants were synthesized (GenScript or Twist Biosciences) and cloned (Gibson Assembly Protocol, New England Biolabs or Twist Biosciences) into pET-21(+) vectors. KSI variants were aligned using default parameters of Clustal Omega (Madeira et al., 2019) and the maximum likelihood tree was constructed using IQ-TREE with default parameters (Hoang et al., 2018; Nguyen et al., 2015). The constructs were expressed in Escherichia coli BL21(DE3) cells and purified as previously described (Kraut et al., 2010).
 
-## KSI kinetic measurements
+### KSI kinetic measurements
 
 The KSI substrate 5 (10)-estrene-3,17-dione (5 (10)EST) was purchased from Steraloids (Newport, RI). Reactions of purified KSIs with 5 (10)EST were monitored continuously at 248 nm using a Perkin Elmer Lambda 25 UV/Vis spectrometer with an attached VWR digital temperature controlled circulating water bath (Pinney et al., 2021). Temperatures within the cuvettes were measured post-reaction using a platinum electrode thermistor (Omega Engineering) and the temperature of the circulating water bath was modified to maintain a constant internal cuvette temperature between reactions. Reactions were conducted in 40 mM potassium phosphate buffer, pH 7.2, 1 mM disodium EDTA, with 2% DMSO as a co-solvent to maintain substrate solubility. The kinetic parameters kcat and KM were determined by fitting the observed initial velocity of each reaction as a function of 5 (10)EST concentration (9–600 µM; six to seven different substrate concentrations per experiment) to the Michaelis–Menten equation. Reported values of kcat and KM are the average of three to nine independent experiments with at least two different enzyme concentrations varied by at least 5-fold. Reported errors are the standard deviations of these values.
 
-## KSI CD
+### KSI CD
 
 CD spectra were collected for each KSI variant in 40 mM potassium phosphate buffer, pH 7.2, 1 mM EDTA, at enzyme concentration 20 µM at 5°C and 25°C. Measurements were made on a J-815 Jasco Spectrophotometer between 190 and 250 nm at 1 nm bandwidth and 50 nm/min scanning speed in a 0.1 cm cuvette (Hellma Analytics).
 
-## Literature stability analysis
+### Literature stability analysis
 
 Wild-type mutation type stability data were downloaded from ProThermDB (Nikam et al., 2021) with the following fields: protein information (entry, source, mutation, E.C. number), experimental conditions (pH, T, measure, method), thermodynamic parameters (Tm, state, reversibility), and literature (PubMed ID, key words, reference, author). Wild-type protein data were matched by species name to microbial optimal growth temperatures TGrowth (Engqvist, 2018).

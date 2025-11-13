@@ -32,7 +32,7 @@
 
 ## Abstract
 
-Predator-prey interactions influence prey traits through both consumptive and non-consumptive effects, and variation in these traits can shape vector-borne disease dynamics. Meta-analysis methods were employed to generate predation effect sizes by different categories of predators and mosquito prey. This analysis showed that multiple families of aquatic predators are effective in consumptively reducing mosquito survival, and that the survival of Aedes , Anopheles , and Culex mosquitoes is negatively impacted by consumptive effects of predators. Mosquito larval size was found to play a more important role in explaining the heterogeneity of consumptive effects from predators than mosquito genus. Mosquito survival and body size were reduced by non-consumptive effects of predators, but development time was not significantly impacted. In addition, Culex vectors demonstrated predator avoidance behavior during oviposition. The results of this meta-analysis suggest that predators limit disease transmission by reducing both vector survival and vector size, and that associations between drought and human West Nile virus cases could be driven by the vector behavior of predator avoidance during oviposition. These findings are likely to be useful to infectious disease modelers who rely on vector traits as predictors of transmission.
+Predator-prey interactions influence prey traits through both consumptive and non-consumptive effects, and variation in these traits can shape vector-borne disease dynamics. Meta-analysis methods were employed to generate predation effect sizes by different categories of predators and mosquito prey. This analysis showed that multiple families of aquatic predators are effective in consumptively reducing mosquito survival, and that the survival of Aedes, Anopheles, and Culex mosquitoes is negatively impacted by consumptive effects of predators. Mosquito larval size was found to play a more important role in explaining the heterogeneity of consumptive effects from predators than mosquito genus. Mosquito survival and body size were reduced by non-consumptive effects of predators, but development time was not significantly impacted. In addition, Culex vectors demonstrated predator avoidance behavior during oviposition. The results of this meta-analysis suggest that predators limit disease transmission by reducing both vector survival and vector size, and that associations between drought and human West Nile virus cases could be driven by the vector behavior of predator avoidance during oviposition. These findings are likely to be useful to infectious disease modelers who rely on vector traits as predictors of transmission.
 
 ## Introduction
 
@@ -46,21 +46,188 @@ This investigation assesses the consumptive and non-consumptive effects of preda
 
 ## Materials and methods
 
-## Literature screening
+### Literature screening
 
 A systematic search was conducted for studies on predation of mosquitoes that were published between 1970 and July 1, 2019 using both PubMed and Web of Science search engines, according to the PRISMA protocol (Moher et al., 2009). Mosquito vectors of the Anopheles and Aedes genera were specifically highlighted in our search terms because these genera contain the vector species that transmit malaria, yellow fever, and dengue – the three most deadly mosquito-borne diseases worldwide (Hill et al., 2005). Searches included 18 combinations of three vector predation terms (mosquito predat*, Anopheles predat*, Aedes predat*) and six trait terms (survival, mortality, development, fecundity, dispers*, host preference). Abstracts from the 1136 studies were each screened by two different co-authors, using the ‘metagear’ package in R (Lajeunesse, 2016, R Development Core Team, 2020). If either screener thought the study had information relevant to predation of mosquitoes, or both screeners thought the abstract was ambiguous, the study was read in full. This resulted in 306 studies that were fully reviewed to determine if any predation data could be extracted (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71503/elife-71503-fig1-v1.jpg)
 
-## Study exclusion criteria
+### Study exclusion criteria
 
 Data were extracted from studies that collected data on non-consumptive and/or consumptive effects of predators on mosquitoes. Studies were required to have a mean, error measurement, and at least two replicates for both control and predator treatments. The control treatment was required to have all the same conditions as the predator treatment, such as prey density and type of water, without the predators. Studies that were not published in English and studies that did not differentiate between predators of multiple families were excluded. Studies were also excluded if oviposition by free-flying female mosquitoes could have interfered with observing the consumptive effects of predators on vector survival. The final database comprised data extracted from 60 studies (Supplementary file 1). The data included observations from laboratory experiments, as well as semi-field experiments, in which mesocosms of different treatments were observed in outdoor settings.
 
-## Data extraction
+### Data extraction
 
 Variables related to the publication, the vector, the predator, and the effect size (Table 1) were extracted from each study. Data from tables and text were recorded as they were published, and data from figures were extracted using WebPlotDigitizer (Rohatgi, 2020). Error measurements that were not originally presented as standard deviations were converted to standard deviations prior to the effect size calculation.
 
-## Data exclusions
+**Table 1.**
+ Variables extracted from included studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Publication data:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Title</td>
+      <td>Full study title</td>
+    </tr>
+    <tr>
+      <td>Journal</td>
+      <td>Name of journal that published the study</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>Year of publication</td>
+    </tr>
+    <tr>
+      <td>Study environment</td>
+      <td>Environment where the experiment took place: lab or semi-field</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vector data:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Order, Family, Genus, Species</td>
+      <td>Taxonomic identification</td>
+    </tr>
+    <tr>
+      <td>Trait</td>
+      <td>Outcome that was measured (e.g. survival, development, etc.)</td>
+    </tr>
+    <tr>
+      <td>Stage</td>
+      <td>Life stage: egg, larva, pupa, or adult</td>
+    </tr>
+    <tr>
+      <td>Larval instar</td>
+      <td>Early (1st and 2nd instars), late (3rd and 4th instars), both, or NA (eggs, pupae, or adults)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>Male or female</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Predator data:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phylum, Class, Order, Family, Genus, Species</td>
+      <td>Taxonomic identification</td>
+    </tr>
+    <tr>
+      <td>Starved</td>
+      <td>Whether the predator was starved: yes or no</td>
+    </tr>
+    <tr>
+      <td>Time starved</td>
+      <td>Amount of time that the predator was starved (in minutes)</td>
+    </tr>
+    <tr>
+      <td>Predation effect</td>
+      <td>Consumptive or non-consumptive</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Effect size data:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Units</td>
+      <td>Units of extracted data</td>
+    </tr>
+    <tr>
+      <td>Control mean</td>
+      <td>Average of the outcome measured among the controls</td>
+    </tr>
+    <tr>
+      <td>Control standard deviation</td>
+      <td>Standard deviation of the outcome measured in the controls</td>
+    </tr>
+    <tr>
+      <td>Control number of replicates</td>
+      <td>Number of control replicates</td>
+    </tr>
+    <tr>
+      <td>Predation mean</td>
+      <td>Average of the outcome measured in the predator treatment</td>
+    </tr>
+    <tr>
+      <td>Predation standard deviation</td>
+      <td>Standard deviation of the outcome measured in the predator treatment</td>
+    </tr>
+    <tr>
+      <td>Predation number of replicates</td>
+      <td>Number of predation replicates</td>
+    </tr>
+    <tr>
+      <td>Experiment ID</td>
+      <td>Alphabetic assignment to mark observations sharing a control group or representing the same prey individuals as originating from the same experiment</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Additional data:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experiment time (days)</td>
+      <td>Duration of the experiment in days</td>
+    </tr>
+    <tr>
+      <td>Data source</td>
+      <td>Graph or text</td>
+    </tr>
+    <tr>
+      <td>Number of predators</td>
+      <td>Number of predators with access to prey, or ‘cue’ if there are no predators with direct access to prey</td>
+    </tr>
+    <tr>
+      <td>Number of prey (vectors)</td>
+      <td>Number of mosquito prey that are exposed to predation</td>
+    </tr>
+    <tr>
+      <td>Arena volume (mL)</td>
+      <td>Volume of the arena where prey encounter predators</td>
+    </tr>
+    <tr>
+      <td>Time exposed to predator(s)</td>
+      <td>Amount of time (in days) when the predator has direct access to the mosquito prey</td>
+    </tr>
+    <tr>
+      <td>Temperature (°C)</td>
+      <td>Temperature during the predation interaction</td>
+    </tr>
+    <tr>
+      <td>Type of predator cue</td>
+      <td>Predator cues, or cues from both predator(s) and dying conspecifics; NA for observations with a consumptive predation effect</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data exclusions
 
 A PRISMA plot of literature inclusion and exclusion is provided in Figure 1. Observations where insecticide was used were excluded because insecticides are known to interfere with consumptive and non-consumptive effects of predators (Delnat et al., 2019; Janssens and Stoks, 2012). In addition, observations from experiments with mosquito prey of two or more species were excluded because it was not possible to account for effects from apparent competition or prey-switching. Observations of vector fecundity, vector competence, behavioral traits other than oviposition, as well as observations where the vector trait was marked as ‘other’ were not analyzed because each of these traits were only recorded from three or fewer studies.
 
@@ -68,7 +235,7 @@ Due to protandry, the earlier emergence of males to maximize their reproductive 
 
 For consumptive observations where life stage-specific survival was reported after more than 10 days of predator exposure, only data on survival marked by adult emergence were included for analysis. Effects observed among immature vector stages after such a long period of predator exposure were not analyzed because they could have resulted from a combination of non-consumptive effects on development, and consumptive effects on survival. Development time observations that were reported as the inverse of development time (units of days–1) were excluded because although their means could be converted to units of days, their standard deviations could not be converted to match units of days. In cases where multiple body sections of the same mosquitoes were measured to produce multiple size observations, only the wing measurement was included in the analysis to prevent pseudo-replication. Observations in which both the control and the predator treatments had standard deviations of zero were excluded because the meta-analysis methods did not support non-positive sampling variances.
 
-## Exclusions and data substitutions for predator treatment means of zero
+### Exclusions and data substitutions for predator treatment means of zero
 
 One study that was included in our database reported egg survival data as the hatch rate of field collected Culex pervigilans rafts (Zuharah et al., 2013). However, mosquitoes have been shown to lay eggs independent of mating (O’Meara, 1979), and hatch rates of zero have previously been observed in rafts laid by Culex females that were held separately from males (Su and Mulla, 1997). Thus, hatch rates of zero were excluded from further analysis because these values may represent unfertilized egg rafts, rather than a strong impact of predators on survival. Twenty of the 187 consumptive survival observations had a predation mean of zero, and each of these zeros resulted from experiments that began with a specified number of live larvae. Consumptive survival zeros were each replaced with 0.5% of the starting number of mosquito prey to avoid undefined effect sizes. In addition, there was one zero out of the 36 oviposition predation means; this value had units of ‘number of egg rafts laid’ and was replaced with 0.5 rafts. Similar methods for replacing zero values in the treatment mean with small non-zero values have previously been employed (Thapa et al., 2018).
 
@@ -78,31 +245,178 @@ The final analysis dataset included seven subsets: consumptive effects on surviv
 
 **Figure 2.:** Image sources: phylopic.org (CC BY 3.0 or public domain): Actinopterygii (creator: Milton Tan), Arachnida (creators: Sidney Frederic Harmer & Arthur Everett Shipley, vectorized by Maxime Dahirel), Branchiopoda (creator: Africa Gomez), and Insecta (creator: Marie Russell). BioRender.com: Amphibia, Hexanauplia, and Malacostraca class silhouettes; mosquito larval instars, pupa, and blood-feeding adult. Trishna Desai: mosquito egg raft.
 
-## Data analysis
+### Data analysis
 
-## Measuring effect sizes and heterogeneity
+#### Measuring effect sizes and heterogeneity
 
 All analyses were conducted in R version 4.0.2 (R Development Core Team, 2020). For each subset of trait data (Figure 1), the ratio of means (ROM) measure of effect size was calculated using the ‘escalc’ function from the ‘metafor’ package; this effect measure is equal to a log-transformed fraction, where predation mean is the numerator and control mean is the denominator (Viechtbauer, 2010). Random effects models, using the ‘rma.uni’ function, were run with the ROM effect sizes as response variables; each model had a normal error distribution and a restricted maximum likelihood (REML) estimator for τ2, the variance of the distribution of true effect sizes (Viechtbauer, 2010). Although these random effects models could not account for multiple random effects or moderators, they provided overall estimates of the ROM effect sizes and estimates of the I2 statistics. Each I2 statistic represented the percentage of total variation across studies due to heterogeneity (Higgins et al., 2003). If the I2 statistic was equal to or greater than 75%, the heterogeneity was considered to be high (Higgins et al., 2003), and high heterogeneity has previously motivated further testing of moderators (Vincze et al., 2017).
 
-## Assessing publication bias
+#### Assessing publication bias
 
 Publication bias was assessed by visually inspecting funnel plots and conducting Egger’s regression test (‘regtest’ function) with standard error as the predictor (Sterne and Egger, 2001; Viechtbauer, 2010). If the Egger’s regression test showed significant evidence of publication bias based on funnel plot asymmetry, the ‘trim and fill’ method (‘trimfill’ function) was used to estimate how the predation effect size might change after imputing values from missing studies (Duval and Tweedie, 2000a, Duval and Tweedie, 2000b; Viechtbauer, 2010). The trim and fill method has previously been recommended for testing the robustness of conclusions related to topics in ecology and evolution (Jennions and Møller, 2002). Of the two trim and fill estimators, R0 and L0, that were originally recommended (Duval and Tweedie, 2000a, Duval and Tweedie, 2000b), the L0 estimator was used in this study because it is more appropriate for smaller datasets (Shi and Lin, 2019).
 
-## Testing moderators
+#### Testing moderators
 
 Data subsets that had high heterogeneity, observations from at least 10 studies, and no evidence of publication bias according to Egger’s regression results were analyzed further using multilevel mixed effects models with the ‘rma.mv’ function (Viechtbauer, 2010; Higgins et al., 2020). All multilevel mixed effects models had normal error distributions, REML estimators for τ2, and accounted for two random factors: effect size ID, and experiment ID nested within study ID. Moderators, such as predator family, vector genus, larval instar (directly correlated to prey size), and temperature, were tested within each data subset to determine if they affected the observed heterogeneity in ROM effect sizes. For categorical moderators, the intercept of the multilevel mixed effects model was removed, allowing an analysis of variance (ANOVA) referred to as the ‘test of moderators’ to indicate if any of the categories had an effect size different than zero. For data subsets with observations from 10 to 29 studies, only one moderator was tested at a time to account for sample size constraints. For subsets with observations from a higher number of studies (30 or more), up to two moderators were tested at once, and interaction between moderators was also tested. The small sample corrected Akaike Information Criterion (AICc) was used to compare multilevel mixed effects models and to select the model of best fit within each data subset; differences in AICc greater than two were considered meaningful (Burnham and Anderson, 2004).
 
 ## Results
 
-## Random effects models
+### Random effects models
 
 Each data subset (Figure 1) had an I2 statistic of greater than 75%, indicating high heterogeneity (Higgins et al., 2003). Random effects model results showed that predators consumptively decreased mosquito survival with an effect size of –1.23 (95% CI −1.43,–1.03), p-value < 0.0001, and non-consumptively reduced survival with a smaller effect size of –0.11 (95% CI −0.17,–0.04), p-value = 0.0016. In addition, predators non-consumptively reduced oviposition behavior with an effect size of –0.87 (95% CI −1.31,–0.42), p-value = 0.0001, and mosquito body size was non-consumptively reduced by predators in both males and females; the female effect size was –0.13 (95% CI −0.19,–0.06), p-value = 0.0002, and the male effect size was –0.03 (95% CI −0.06,–0.01), p-value = 0.0184. There was not a significant non-consumptive effect of predators on either male or female development time; the female effect size was –0.01 (95% CI –0.09, 0.07), p-value = 0.7901, and the male effect size was –0.04 (95% CI –0.12, 0.04), p-value = 0.3273.
 
 The Egger’s regression test results showed that the non-consumptive survival subset, both development time subsets (male and female), and the female size subset exhibited funnel plot asymmetry indicative of publication bias. The ‘trim and fill’ procedure identified missing studies in the non-consumptive survival subset and the female size subset, but the procedure did not identify any missing studies in either of the development time subsets. Three studies were estimated to be missing from the non-consumptive survival data, and accounting for imputed values from missing studies resulted in a shift in the predation effect size from –0.11 (95% CI −0.17,–0.04), p-value = 0.0016, to -0.13 (95% CI −0.20,–0.07), p-value < 0.0001. Two studies were estimated to be missing from the female size data, and accounting for imputed values from these missing studies shifted the predation effect size from –0.13 (95% CI −0.19,–0.06), p-value = 0.0002, to -0.10 (95% CI −0.17,–0.03), p-value = 0.0083. Shifts in effect size estimates due to the trim and fill procedure were minor and did not cause any of the observed effects of predators to change direction or become insignificant.
 
-## Multilevel mixed effects models
+### Multilevel mixed effects models
 
 The consumptive survival and oviposition data subsets met the criteria of high heterogeneity, observations from at least 10 studies, and no evidence of publication bias. Therefore, these data subsets were tested for moderators using multilevel mixed effects models. Predator families that decreased mosquito survival included Cyprinidae: –3.44 (95% CI −5.79,–1.09), p-value = 0.0042; Poeciliidae: –1.42 (95% CI −2.67,–0.16), p-value = 0.0270; Ambystomatidae: –5.18 (95% CI −7.94,–2.42), p-value = 0.0002; Aeshnidae: –2.93 (95% CI −4.80,–1.07), p-value = 0.0020; and Notonectidae: –2.14 (95% CI −3.07,–1.21), p-value < 0.0001 (Figure 3a). Vector genera that experienced significant decreases in survival due to consumptive effects of predators included Aedes: –1.23 (95% CI −1.81,–0.65), p-value < 0.0001; Anopheles: –1.34 (95% CI −2.01,–0.66), p-value = 0.0001; and Culex: –1.41 (95% CI −1.96,–0.86), p-value < 0.0001 (Figure 3b). Among all 187 consumptive survival observations from 34 studies, the best model fit, according to AICc value, was achieved when an interaction between predator family and vector genus was included in the model (Table 2). However, among the 163 larval stage consumptive survival observations from 30 studies, adding an interactive term between larval instar (an indicator of prey size) and predator family had a greater improvement on model fit than adding an interactive term between vector genus and predator family (Figure 3c, Table 3). Temperature did not affect the heterogeneity of consumptive survival data, either as a linear moderator: –0.01 (95% CI –0.10, 0.07), p-value = 0.7559, or a quadratic moderator: 0.00 (95% CI 0.00, 0.00), p-value = 0.8184. The best oviposition model fit, according to AICc value, was achieved when vector genus was added as a moderator (Table 4). The mean oviposition effect size was not significantly different than zero for Aedes: 0.32 (95% CI –2.14, 2.79), p-value = 0.7970, or Culiseta: –0.61 (95% CI –1.83, 0.62), p-value = 0.3329, but for Culex mosquitoes, oviposition was significantly decreased by predator presence: –1.69 (95% CI −2.82,–0.56), p-value = 0.0033 (Figure 4).
+
+**Table 2.**
+ Candidate multilevel mixed effects models of consumptive effects from predators on mosquito survival, fitted to dataset of effect sizes (n = 187 from 34 studies), and ranked by corrected Akaike’s information criterion (AICc).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Moderator(s)</th>
+      <th>Test of moderators(degrees of freedom, p-value)</th>
+      <th>AICc</th>
+      <th>ΔAICc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Predator family x vector genus</td>
+      <td>28, &lt; 0.0001</td>
+      <td>500.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Predator family</td>
+      <td>19, &lt; 0.0001</td>
+      <td>507.0</td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <td>Predator family + vector genus</td>
+      <td>23, &lt; 0.0001</td>
+      <td>508.1</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>Vector genus</td>
+      <td>5, &lt; 0.0001</td>
+      <td>573.0</td>
+      <td>72.5</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>----</td>
+      <td>576.5</td>
+      <td>76.0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Candidate multilevel mixed effects models of consumptive effects from predators, fitted to dataset of effect sizes where larval instar is not missing (n = 163 from 30 studies), and ranked by corrected Akaike’s information criterion (AICc).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Moderator(s)</th>
+      <th>Test of moderators(degrees of freedom, p-value)</th>
+      <th>AICc</th>
+      <th>ΔAICc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Predator family x larval instar</td>
+      <td>25, &lt; 0.0001</td>
+      <td>429.2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Predator family + larval instar</td>
+      <td>19, &lt; 0.0001</td>
+      <td>443.5</td>
+      <td>14.3</td>
+    </tr>
+    <tr>
+      <td>Predator family x vector genus</td>
+      <td>25, &lt; 0.0001</td>
+      <td>455.0</td>
+      <td>25.8</td>
+    </tr>
+    <tr>
+      <td>Predator family</td>
+      <td>17, &lt; 0.0001</td>
+      <td>456.8</td>
+      <td>27.6</td>
+    </tr>
+    <tr>
+      <td>Predator family + vector genus</td>
+      <td>21, &lt; 0.0001</td>
+      <td>458.4</td>
+      <td>29.2</td>
+    </tr>
+    <tr>
+      <td>Larval instar</td>
+      <td>3, &lt; 0.0001</td>
+      <td>503.1</td>
+      <td>73.9</td>
+    </tr>
+    <tr>
+      <td>Vector genus</td>
+      <td>5, &lt; 0.0001</td>
+      <td>504.7</td>
+      <td>75.5</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>----</td>
+      <td>508.5</td>
+      <td>79.3</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Candidate multilevel mixed effects models of non-consumptive effects of predators on mosquito oviposition behavior, fitted to dataset of effect sizes (n = 36 from 12 studies), and ranked by corrected Akaike’s information criterion (AICc).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Moderator(s)</th>
+      <th>Test of moderators(degrees of freedom, p-value)</th>
+      <th>AICc</th>
+      <th>ΔAICc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vector genus</td>
+      <td>3, 0.0149</td>
+      <td>122.1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>----</td>
+      <td>125.2</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Predator family</td>
+      <td>12, 0.8855</td>
+      <td>167.9</td>
+      <td>45.8</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71503/elife-71503-fig3-v1.jpg)
 
@@ -114,23 +428,23 @@ The consumptive survival and oviposition data subsets met the criteria of high h
 
 In this study, laboratory and semi-field empirical data were obtained through a systematic literature review and used to conduct a meta-analysis that assessed consumptive and non-consumptive effects of predators on mosquito prey. Some results agree with previously observed trends, such as greater consumptive effects from larger predators (Kumar et al., 2008, Peters, 1983) and no oviposition response to predator cues among container-breeding Aedes mosquitoes (Vonesh and Blaustein, 2010). However, this meta-analysis revealed additional trends. Mosquito larval instar had an important role in moderating consumptive effects of predators, likely because of its direct correlation to prey size. Furthermore, a small, but significant, decrease in mosquito survival due to non-consumptive effects of predators was observed, suggesting that mosquitoes can be ‘scared to death’ by predators (Preisser et al., 2005). Both male and female body sizes were also reduced among mosquitoes that had been exposed to predators, and predator avoidance during oviposition was observed among female Culex mosquitoes. Effects of predators on different vector traits, particularly survival, body size, and oviposition behavior, have the potential to influence infectious disease dynamics.
 
-## Consumptive effects of predators on survival
+### Consumptive effects of predators on survival
 
 Several larger predators reduced mosquito survival, including freshwater fish (Cyprinidae and Poeciliidae), salamander larvae (Ambystomatidae), dragonfly larvae (Aeshnidae), and backswimmers (Notonectidae) (Figure 3a). This finding is consistent with a previous analysis which showed a positive linear relationship between predator body mass and ingestion rate across taxa (Peters, 1983). In addition, more effect size heterogeneity in the consumptive survival data was explained by an interaction between predator family and larval instar than was explained by an interaction between predator family and vector genus (Table 3). This result suggests that the relative sizes of predator and prey groups could play a more important role in determining consumptive mosquito survival than variations in predator responses to different behaviors of prey genera, which are likely to be shaped by the degree of shared evolutionary history between trophic levels (Buchanan et al., 2017). Larval instar is an indicator of mosquito size, and previous modeling work has provided evidence of prey size selection by predators to maximize energetic gain (Mittelbach, 1981). While smaller cyclopoid copepods are more effective against early instar mosquito larvae (Dieng et al., 2002), larger predators including tadpoles, giant water bugs, dragonfly larvae, fish, and backswimmers are more effective against late instar larvae (Kweka et al., 2011).
 
-## Non-consumptive effects of predators on survival
+### Non-consumptive effects of predators on survival
 
 Exposure to predation cues significantly lowered mosquito survival, and this non-consumptive effect has also been observed in dragonfly larvae prey (Leucorrhinia intacta) that were exposed to caged predators (McCauley et al., 2011). The reduction in mosquito survival from non-consumptive effects of predators was significantly smaller than the reduction that was observed from consumptive effects. This is partially due to the practical constraints of most experimental designs, which cause consumptive and non-consumptive effects of predators on survival to be grouped together and reported as consumptive effects. The greater impact of combined consumptive and non-consumptive effects, in comparison to only non-consumptive effects, has previously been observed in pea aphids (Acyrthosiphon pisum) (Nelson et al., 2004).
 
-## Non-consumptive effects of predators on body size
+### Non-consumptive effects of predators on body size
 
 While predators did not significantly impact mosquito development time through non-consumptive effects in either sex, mosquito body size was decreased by the non-consumptive effects of predators in both sexes. Smaller body size is associated with lower reproductive success in mosquitoes because smaller females lay fewer eggs (Blackmore and Lord, 2000; Lyimo and Takken, 1993; Oliver and Howard, 2011; Styer et al., 2007; Tsunoda et al., 2010), and smaller males produce less sperm (Hatala et al., 2018; Ponlawat and Harrington, 2007). These effects suggest that predation could non-consumptively reduce mosquito population growth. The smaller size of mosquitoes exposed to predators could also limit disease transmission. Vector lifespan contributes disproportionately to disease transmission because older vectors are more likely to have been exposed to pathogens, more likely to already be infectious after having survived the extrinsic incubation period, and more likely to survive long enough to bite subsequent hosts (Cator et al., 2020). It is well-established that smaller mosquito body size is associated with shorter mosquito lifespan (Araújo et al., 2012; Hawley, 1985, Reisen et al., 1984; Reiskind and Lounibos, 2009; Xue et al., 2010). Therefore, non-consumptive effects of predators may limit the transmission of mosquito-borne diseases.
 
-## Non-consumptive effects of predators on oviposition behavior
+### Non-consumptive effects of predators on oviposition behavior
 
 Predator presence also non-consumptively reduced oviposition behavior in adult female mosquitoes. Meta-regression results showed that Culex females significantly avoid oviposition sites that contain predators or predator cues, but Aedes and Culiseta females do not avoid these sites, despite a slight non-significant trend toward predator avoidance in Culiseta (Figure 4). Both Culex and Culiseta mosquitoes have an ‘all-or-none’ oviposition strategy (Johnson and Fonseca, 2014), in which they lay hundreds of rapidly hatching eggs in rafts on the water’s surface (Day, 2016). Such an oviposition strategy is conducive to evolving predator avoidance behaviors, and a previous meta-analysis showed significant predator avoidance in both Culex and Culiseta during oviposition (Vonesh and Blaustein, 2010). Conversely, it is likely that an oviposition response to predation is not particularly advantageous for Aedes because the delayed hatching of their eggs (Day, 2016) can prevent the level of predation risk at the time of oviposition from matching the level of predation risk present in the eventual larval environment (Vonesh and Blaustein, 2010). The predator avoidance response in Aedes species that lay their eggs above the water’s edge in containers has previously been described as ‘non-existent’ (Vonesh and Blaustein, 2010). Both Aedes species included in this study’s oviposition data subset, Ae. albopictus and Ae. aegypti, meet the criterion of ovipositing above water in containers (Juliano, 2009). Predator avoidance during oviposition has previously been found to increase the mosquito population size at equilibrium (Spencer et al., 2002). However, this study’s results and those of a previous meta-analysis (Vonesh and Blaustein, 2010) suggest that models of oviposition site selection, such as those using parameters from Notonectidae predators and Culiseta prey (Kershenbaum et al., 2012), are not generalizable to Aedes vectors.
 
-## Implications for West Nile Virus disease dynamics
+### Implications for West Nile Virus disease dynamics
 
 Predator avoidance during oviposition by Culex mosquitoes (Figure 4) may be of particular importance to West Nile virus (WNV) disease dynamics. Previous work has shown that Cx. pipiens, Cx. restuans, and Cx. tarsalis all avoid predator habitats (Vonesh and Blaustein, 2010), and that Cx. pipiens is the primary bridge vector of WNV responsible for spill-over transmission from avian reservoir hosts to humans (Fonseca et al., 2004; Hamer et al., 2008a, Kramer et al., 2008; Andreadis, 2012). Cx. pipiens mosquitoes can live in permanent aquatic environments, such as ground pools (Amini et al., 2020; Barr, 1967; Dida et al., 2018; Sulesco et al., 2015), ponds (Lühken et al., 2015), stream edges (Amini et al., 2020), and lake edges (Vinogradova, 2000) that are more common in rural areas, but Cx. pipiens are also found in urban and suburban residential areas, where they typically breed in artificial containers (Sulesco et al., 2015), including tires (Lühken et al., 2015; Nikookar et al., 2017; Verna, 2015), rainwater tanks (Townroe and Callaghan, 2014), and catch basins (Gardner et al., 2012). Small artificial containers, such as discarded tires, are generally unlikely to harbor larger predators, including freshwater fish (Cyprinidae and Poeciliidae), salamander larvae (Ambystomatidae), dragonfly larvae (Aeshnidae), and backswimmers (Notonectidae), because temporary aquatic environments cannot support the relatively long development times of these organisms. The mean dispersal distance of adult Culex mosquitoes is greater than one kilometer (Ciota et al., 2012; Hamer et al., 2014), and female Cx. pipiens have exhibited longer dispersal distances after developing in the presence of a fish predator (Alcalay et al., 2018). Therefore, predator avoidance during oviposition may cause Cx. pipiens populations to disperse from permanent aquatic environments in more rural areas to artificial container environments in urbanized areas, where the risk of human WNV infection is higher (Brown et al., 2008).
 
@@ -142,17 +456,17 @@ Another theory for the association between drought and human WNV cases is based 
 
 While hatch-year birds are more vulnerable to mosquito biting, and thus contribute to the amplification of WNV (Hamer et al., 2008b), it is illogical to expect an increased abundance of hatch-year birds during drought conditions. However, some have argued that in cases where drought decreases the abundance of juvenile birds, the ratio of mosquitoes to birds increases, and this could lead to higher WNV prevalence in the mosquito population (Paull et al., 2017). Although reductions in both hatching success (George et al., 1992) and survival of recently fledged birds (Yackel Adams et al., 2006) have been observed during drought conditions, the impact of drought on avian abundance varies widely by species (Verner and Purcell, 1999). In particular, synanthropic species, such as those likely to harbor WNV, are less negatively affected by drought (Albright et al., 2009). Additionally, the droughts that impact avian abundance often occur over much longer periods of time than the seasonal droughts that predict WNV transmission to humans. For example, avian abundance has been modeled based on precipitation metrics spanning 32 weeks, and house wren (Troglodytes aedon) abundance has been predicted by precipitation averages spanning four years (Verner and Purcell, 1999). Finally, birds with higher levels of stress hormones are more likely to be fed on by mosquitoes, and certain factors associated with residential areas, such as road noise, light pollution, and pesticide exposure, can cause avian stress (Gervasi et al., 2016). Therefore, elevated avian stress hormones in these habitats may contribute to WNV prevalence in the mosquito population, independent of drought conditions.
 
-## Implications for mosquito-borne disease modeling
+### Implications for mosquito-borne disease modeling
 
 Although the aquatic phase of the mosquito life cycle is often overlooked in mathematical models of mosquito-borne pathogen transmission (Reiner et al., 2013), vector survival at immature stages plays an important role in determining mosquito population abundance, which is an essential factor for predicting disease transmission (Beck-Johnson et al., 2013). The results of this study show that mosquito survival decreases among the Aedes, Anopheles, and Culex genera due to consumptive effects of predators (Figure 3b), and that there is also a reduction in mosquito survival due to non-consumptive effects. Other studies have demonstrated that aquatic predators dramatically impact mosquito survival and abundance. For example, a biocontrol intervention relying on the application of copepod predators eliminated Aedes albopictus from three communes in Nam Dinh, Vietnam, where dengue transmission was previously detected, and reduced vector abundance by 86–98% in three other communes (Kay et al., 2002). Conversely, the annual abundance of Culex and Anopheles mosquitoes was observed to increase 15-fold in semi-permanent wetlands in the year following a drought, likely because the drought eliminated aquatic predators from wetlands that dried completely, and mosquitoes were able to re-colonize newly formed aquatic habitats more quickly than their most effective predators (Chase and Knight, 2003).
 
 While relationships between temperature and different vector traits, such as fecundity and lifespan, have been incorporated into models of temperature effects on mosquito population density (El Moustaid and Johnson, 2019), models of predator effects on vector borne disease transmission have focused primarily on the impacts of predation on vector survival. Previous models have shown that predators of vector species can decrease or eliminate pathogen infection in host populations as vector fecundity increases (Moore et al., 2010). The findings of this meta-analysis suggest that predators also decrease vector fecundity through non-consumptive effects on vector body size. In addition, the entomological inoculation rate (EIR) is likely to be reduced by effects of predators on mosquito fecundity and lifespan, as well as effects of predators on mosquito survival. The EIR has been defined as the product of three variables: (m) the number of mosquitoes per host, (a) the daily rate of mosquito biting, and (s) the proportion of mosquitoes that are infectious (Beck-Johnson et al., 2013). Based on this study’s findings, predators are likely to decrease the number of mosquitoes per host by reducing mosquito survival through both consumptive and non-consumptive effects, and by reducing mosquito fecundity through non-consumptive effects on body size. In addition, predators are likely to decrease the proportion of mosquitoes that are infectious by shortening the vector lifespan through non-consumptive effects on body size. The relationship between mosquito body size and biting rate is unclear, with some studies showing higher biting rates among larger mosquitoes (Araújo et al., 2012; Gunathilaka et al., 2019), and others reporting higher biting rates among smaller mosquitoes (Farjana and Tuno, 2013; Leisnham et al., 2008). The links between factors that influence the EIR and observed effects of predators on mosquito prey demonstrate the necessity of including both consumptive and non-consumptive effects of predators in models of mosquito-borne disease.
 
-## Conclusion
+### Conclusion
 
 This meta-analysis on mosquito predation demonstrates that predators not only play an important role in directly reducing mosquito populations, but also have non-consumptive effects on surviving mosquitoes that may ultimately reduce further population growth and decrease disease transmission. While families of larger sized predators were effective in reducing mosquito survival, other factors, such as impacts on native species, as well as the economic cost of mass-rearing and field applications (Kumar and Hwang, 2006; Pyke, 2008), should be carefully considered before selecting a predator as a suitable biocontrol agent. Predictive disease models are likely to be more reliable when the non-consumptive effects of predation are incorporated. Although exposure of mosquito larvae to predators is commonplace in outdoor field settings, it remains rare in most laboratory-based assessments of vector traits. Therefore, mosquitoes observed in nature are likely to have smaller body sizes than those observed under optimal laboratory conditions. It is important for disease modelers to recognize these impacts of predation on vector traits as they can reduce mosquito population growth and limit disease transmission due to shorter vector lifespans. Within the WNV disease system, consideration of the oviposition behavioral response to predation cues by Culex vectors can improve current understanding of the association between drought and human cases. This study provides general estimates of the effects of predators on selected mosquito traits for use in predictive disease models.
 
-## Future directions
+### Future directions
 
 Modeling efforts that aim to optimize the application of biocontrol predators should also consider incorporating predator effects on vector survival, fecundity, and lifespan. These additions to predictive models of various biocontrol interventions are likely to help public health officials choose the most cost-effective strategies for limiting disease transmission. In the 60-study database that was compiled, only one study was designed to directly measure the effect of larval-stage predation on vector competence (Roux et al., 2015). Therefore, future efforts to assess the impact of predators on mosquito-borne disease transmission should prioritize experimental studies in which infected mosquito larvae are observed throughout an initial period of aquatic exposure to predators, followed by a period of blood-feeding in the adult stage.
 

@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/03prydq77 University of Vienna, Faculty of Psychology, Department of Developmental and Educational Psychology Vienna Austria
-2. https://ror.org/03prydq77 Vienna Doctoral School Cognition, Behavior and Neuroscience, University of Vienna Vienna Austria
-3. https://ror.org/05591te55 Ludwig-Maximilians-Universität München Munich Germany
-4. https://ror.org/006jb1a24 School of Human and Behavioural Sciences, College of Human Sciences, Prifysgol Bangor University Gwynedd United Kingdom
-5. https://ror.org/03bnmw459 Department of Developmental Psychology, University of Potsdam Potsdam Germany
-6. https://ror.org/04g2vpn86 Department of Psychology, Royal Holloway University of London London United Kingdom
+1. University of Vienna, Faculty of Psychology, Department of Developmental and Educational Psychology Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+2. Vienna Doctoral School Cognition, Behavior and Neuroscience, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+3. Ludwig-Maximilians-Universität München Munich Germany ([ROR:05591te55](https://ror.org/05591te55))
+4. School of Human and Behavioural Sciences, College of Human Sciences, Prifysgol Bangor University Gwynedd United Kingdom ([ROR:006jb1a24](https://ror.org/006jb1a24))
+5. Department of Developmental Psychology, University of Potsdam Potsdam Germany ([ROR:03bnmw459](https://ror.org/03bnmw459))
+6. Department of Psychology, Royal Holloway University of London London United Kingdom ([ROR:04g2vpn86](https://ror.org/04g2vpn86))
 
 † Corresponding author
 
 ## Abstract
 
-Several recent theoretical accounts have posited that interoception, the perception of internal bodily signals, plays a vital role in early human development. Yet, empirical evidence of cardiac interoceptive sensitivity in infants to date has been mixed. Furthermore, existing evidence does not go beyond the perception of cardiac signals and focuses only on the age of 5–7 mo, limiting the generalizability of the results. Here, we used a modified version of the cardiac interoceptive sensitivity paradigm introduced by Maister et al., 2017 in 3-, 9-, and 18-mo-old infants using cross-sectional and longitudinal approaches. Going beyond, we introduce a novel experimental paradigm, namely the iBREATH, to investigate respiratory interoceptive sensitivity in infants. Overall, for cardiac interoceptive sensitivity ( total n =135) we find rather stable evidence across ages with infants on average preferring stimuli presented synchronously to their heartbeat. For respiratory interoceptive sensitivity ( total n =120) our results show a similar pattern in the first year of life, but not at 18 mo. We did not observe a strong relationship between cardiac and respiratory interoceptive sensitivity at 3 and 9 mo but found some evidence for a relationship at 18 mo. We validated our results using specification curve- and mega-analytic approaches. By examining early cardiac and respiratory interoceptive processing, we provide evidence that infants are sensitive to their interoceptive signals.
+Several recent theoretical accounts have posited that interoception, the perception of internal bodily signals, plays a vital role in early human development. Yet, empirical evidence of cardiac interoceptive sensitivity in infants to date has been mixed. Furthermore, existing evidence does not go beyond the perception of cardiac signals and focuses only on the age of 5–7 mo, limiting the generalizability of the results. Here, we used a modified version of the cardiac interoceptive sensitivity paradigm introduced by Maister et al., 2017 in 3-, 9-, and 18-mo-old infants using cross-sectional and longitudinal approaches. Going beyond, we introduce a novel experimental paradigm, namely the iBREATH, to investigate respiratory interoceptive sensitivity in infants. Overall, for cardiac interoceptive sensitivity (total n=135) we find rather stable evidence across ages with infants on average preferring stimuli presented synchronously to their heartbeat. For respiratory interoceptive sensitivity (total n=120) our results show a similar pattern in the first year of life, but not at 18 mo. We did not observe a strong relationship between cardiac and respiratory interoceptive sensitivity at 3 and 9 mo but found some evidence for a relationship at 18 mo. We validated our results using specification curve- and mega-analytic approaches. By examining early cardiac and respiratory interoceptive processing, we provide evidence that infants are sensitive to their interoceptive signals.
 
 ## Introduction
 
@@ -49,25 +49,25 @@ To measure cardiac interoceptive sensitivity, we used a modified version of the 
 
 ## Results
 
-## Confirmatory analyses: 9-mo-old infants
+### Confirmatory analyses: 9-mo-old infants
 
 First, we investigated whether 9-mo-old infants displayed sensitivity to their cardiac and respiratory signals. Following our preregistered analysis plan (https://aspredicted.org/QP9_6FP) we computed paired t-tests to compare mean looking times between synchronous and asynchronous conditions for the iBEATs and the iBREATH. We found that for both tasks 9-mo-old infants displayed a preference for stimuli presented synchronously with their own heartbeat (Figure 1A, N=52, Msynch = 7020.62 ms SDsynch = 3790.00 ms, Masynch = 5496.7 ms, SDasynch = 2469.34 ms, t=–2.96, p=0.005, Cohens d=0.48) and respiration (Figure 1B, N=56, Msynch = 6336.21 ms, SDsynch = 3017.37 ms, Masynch = 5483.77 ms, SDasynch = 2244.84 ms, t=–2.80, p=0.007, Cohens d=0.32). These results on the one hand replicate the approach by Maister et al., 2017 in an older age group showing that infants are sensitive to their cardiac signals. Going beyond, using a novel paradigm, we further provide the first evidence that infants are also sensitive to their respiratory signals. Notably, mean preferences were switched compared to our expectations and the results of Maister et al., 2017 who reported a mean preference for stimuli presented asynchronously to the infants’ heartbeats.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91579/elife-91579-fig1-v1.jpg)
 
-**Figure 1.:** A) iBEATs and (B) iBREATH in 9-mo infants.Looking times for the (A) iBEATs (paired t-test, N = 52, t=–2.96, p=0.005) and (B) iBREATH (paired t-test, N = 56, t=–2.80, p=0.007) tasks. In both tasks, 9-mo-old infants looked significantly longer at stimuli presented synchronously to their own physiological signals. Black dots refer to the group mean. Black bars refer to the standard error of the mean. Gray lines and colorful dots refer to individual mean-looking times per condition and infant. In (A) blue represents the synchronous condition and orange is the asynchronous, while in (B) green represents the synchronous condition, and purple is the asynchronous.
+**Figure 1.:** Looking times for the (A) iBEATs (paired t-test, N = 52, t=–2.96, p=0.005) and (B) iBREATH (paired t-test, N = 56, t=–2.80, p=0.007) tasks. In both tasks, 9-mo-old infants looked significantly longer at stimuli presented synchronously to their own physiological signals. Black dots refer to the group mean. Black bars refer to the standard error of the mean. Gray lines and colorful dots refer to individual mean-looking times per condition and infant. In (A) blue represents the synchronous condition and orange is the asynchronous, while in (B) green represents the synchronous condition, and purple is the asynchronous.
 
-## Interoceptive sensitivity at 18 mo
+### Interoceptive sensitivity at 18 mo
 
 Next, we followed up with the same infants at 18 mo. Unfortunately, as the study was conducted during the Covid-19 pandemic, we had a large number of dropouts for the longitudinal follow-up. We conducted paired t-tests comparing looking times to synchronous and asynchronous stimuli at 18 mo following our approach of the 9-mo-old sample for iBEATs (N=28, Msynch = 6924.16 ms SDsynch = 3833.01 ms, Masynch = 6427.68 ms, SDasynch = 3801.02 ms, t(27) = –0.75, p=.461, d=0.13) and iBREATH (N=30, Msynch = 3612.95 ms SDsynch = 1879.02 ms, Masynch = 4098.71 ms, SDasynch = 2074.11 ms, t(29) = 1.09, p=.283, d=–0.25) which did not indicate a significant mean preference. However, a non-significant result does not provide evidence for the absence of an effect (Lakens et al., 2018). Therefore, we conducted two equivalence tests using the effect size reported by Maister et al., 2017, d=0.4) as equivalence bounds. Equivalence tests facilitate the interpretation of non-significant results by investigating whether a given confidence interval is too wide to discriminate between expected effect (=the equivalence bounds) and null effect, or whether one can rule out an effect at least as strong as we expected. The results of the equivalence tests indicate that we do not find conclusive evidence in favor of or against a mean preference effect in our 18-mo-old sample for both the iBEATs (t(27) = 0.71, p=0.242) or the iBREATH ((t(29) = 1.10, p=0.141), potentially due to the small sample size.
 
 When inspecting results from our analysis approach (e.g. Figure 1), as well as previous results (Maister et al., 2017; Weijs et al., 2023) it becomes evident that there are large individual differences in preferences (e.g. some infants prefer synchronous, some asynchronous trials). Thus, sample size might be an important factor in detecting a mean preference effect. To gain additional insights into the interplay of sample size and variability due to the large individual differences we conducted simulations which are reported in Appendix 2. Overall, results from the simulation indicate that sample sizes of around 30 infants might be too small to reliably detect a mean preference effect in the version of the iBEATs task used here.
 
-## Interoceptive sensitivity at 3 mo
+### Interoceptive sensitivity at 3 mo
 
 Initially, the present project was planned as a longitudinal approach spanning 3-, 9-, and 18 mo. However, difficulties in recruiting very young infants due to the Covid-19 pandemic precluded us from starting the longitudinal assessment with 3-mo-old infants. Still, we decided to test the iBEATs and iBREATH tasks in an additional 3-mo-old sample once recruitment was possible again (pre-registration: https://aspredicted.org/44L_QKH). Data for this sample was collected after analysis of the 9- and 18-mo-old data. Using our preregistered analysis approach, we found evidence for a group mean preference for synchronous stimuli in the iBEATs (paired Bayesian t-test; BF = 2.02, mean difference: 793.95 ms, 95% CI [108.63, 1388.69], N=53, Msynch = 6131.13 ms SDsynch = 5129.93 ms, Masynch = 5337.17 ms, SDasynch = 5044.83 ms) but not in the iBREATH task (paired Bayesian t-test; BF = 0.23, mean difference: 502.21 ms, 95% CI [–701.49, 1600.86], N=40, Msynch = 7881.72 ms SDsynch = 7641.50 ms, Masynch = 7379.50ms, SDasynch = 7220.50 ms) at 3 mo of age. Due to the absence of evidence for the iBREATH task we conducted a test for practical equivalence similar to our approach for the 18-mo-old’s data (Harms and Lakens, 2018). We used the effect size of the iBREATH task at 9 mo to investigate whether we can rule out an effect at least as strong as that. Results indicated that we cannot distinguish between absence or presence of an effect at least as strong as it was present in the 9-mo-old’s iBREATH sample (95% HDIs = [–711.41, 1606.80], region of practical equivalence: 77.08%). Reasons for the non-significant result might include the smaller sample size for the iBREATH at 3 mo (N=40) compared to the iBEATs (N=53), combined with a reduced signal-to-noise ratio for eye-tracking tasks in 3-mo-olds compared to older infants, in general. In sum, we replicate the results of our 9-mo-old sample for the cardiac domain in 3-mo-old infants, while finding inconclusive evidence regarding the respiratory domain.
 
-## Interoceptive sensitivity in the first two years of life – a MEGA analytic approach
+### Interoceptive sensitivity in the first two years of life – a MEGA analytic approach
 
 So far, we have presented results on cardiac and respiratory interoceptive sensitivity spanning three age groups in the first two years of life. We find some evidence that infants prefer stimuli presented synchronously with their respective physiological signals. However, we also find some inconclusive evidence, such that we cannot distinguish between a null-finding and a significant effect. This might be potentially due to a small number of observations in some of our samples, as indicated by equivalence tests and data simulation. So far, we have investigated all age groups separately, building up on our preregistration, and the assumption that results might be different for age groups. An alternative approach that might help in adjusting for sample size issues is to pool together all age groups using an explorative MEGA-analytic approach (Koile and Cristia, 2021). Such an approach might give us the statistical power needed to make claims about absence or presence of a cohesive effect in the first two years of age, i.e., whether the mean effect across age groups supports the conclusion of a shared effect.
 
@@ -75,7 +75,89 @@ We computed two mixed models with looking time as outcome, condition and age-gro
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91579/elife-91579-fig2-v1.jpg)
 
-**Figure 2.:** A) iBEATs and (B) iBREATH.Results from the MEGA analysis for (A) iBEATs (combined sample N = 135) and (B) iBREATH (combined sample N = 120). Plot of difference scores computed as mean synchronous looking times minus mean asynchronous looking times per individual for each age group, as well as the combined sample. Red dots refer to mean effects for the respective analysis as described above, red bars refer to 95% confidence/credible intervals. Dashed line indicates a difference of 0. For 3, 9, and 18 mo age groups our preregistered analysis is plotted. For the combined sample we computed a linear mixed model using lme4 for visualization purposes as results from a mixed model with a beta error distribution cannot easily be transformed back to the original scale.
+**Figure 2.:** Results from the MEGA analysis for (A) iBEATs (combined sample N = 135) and (B) iBREATH (combined sample N = 120). Plot of difference scores computed as mean synchronous looking times minus mean asynchronous looking times per individual for each age group, as well as the combined sample. Red dots refer to mean effects for the respective analysis as described above, red bars refer to 95% confidence/credible intervals. Dashed line indicates a difference of 0. For 3, 9, and 18 mo age groups our preregistered analysis is plotted. For the combined sample we computed a linear mixed model using lme4 for visualization purposes as results from a mixed model with a beta error distribution cannot easily be transformed back to the original scale.
+
+**Table 1.**
+ Interactions between condition and age for the iBEATs MEGA-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>z-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condition * age (3- vs 9 mo)</td>
+      <td>0.00</td>
+      <td>0.11</td>
+      <td>0.02</td>
+      <td>0.982</td>
+    </tr>
+    <tr>
+      <td>Condition * age (3- vs 18 mo)</td>
+      <td>0.14</td>
+      <td>0.13</td>
+      <td>1.08</td>
+      <td>0.283</td>
+    </tr>
+    <tr>
+      <td>Condition * age (9- vs 18 mo)</td>
+      <td>0.14</td>
+      <td>0.12</td>
+      <td>1.12</td>
+      <td>0.264</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results for the mixed model using a beta error distribution. Here only the interaction between condition and age are reported for all combinations. Detailed results can be found in Appendix 3._
+
+**Table 2.**
+ Interactions between condition and age for the iBREATH MEGA-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>z-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condition * age (3- vs 9 mo)</td>
+      <td>0.02</td>
+      <td>0.12</td>
+      <td>0.17</td>
+      <td>0.864</td>
+    </tr>
+    <tr>
+      <td>Condition * age (3- vs 18 mo)</td>
+      <td>0.23</td>
+      <td>0.16</td>
+      <td>1.50</td>
+      <td>0.134</td>
+    </tr>
+    <tr>
+      <td>Condition * age (9- vs 18 mo)</td>
+      <td>0.21</td>
+      <td>0.15</td>
+      <td>1.43</td>
+      <td>0.154</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results for the mixed model using a beta error distribution. Here only the interaction between condition and age are reported for all combinations. Detailed results can be found in Appendix 3._
 
 First, we compared each model with a null model missing the condition term. For the iBEATs we find that the full model is statistically significant from the null model, suggesting a better fit (p=0.012). For the iBREATH we do not find a statistically significant better fit for the full compared to the null model (p=0.091). Still, the Bayesian information criterion (BIC), which can be interpreted similar to a Bayes Factor (Burnham and Anderson, 2004), related to this comparison is 15.1 smaller for the full (BICfull = –1574.5), compared to the null model (BICnull = –1559.4), giving some evidence for a better fit for the full model.
 
@@ -83,11 +165,73 @@ Next, we inspected the model output. For both models, we did not find a signific
 
 To sum up, regarding cardiac interoceptive sensitivity, results from the MEGA analysis support the notion that, across all age groups tested here, infants on average prefer stimuli presented synchronously with their own heartbeat. Regarding respiratory interoceptive sensitivity, we only found evidence in our 9-mo-old sample, but not in the 3- and 18- mo-olds, or the MEGA analysis. However, this latter result might be driven by the 18-mo-old iBREATH sample .
 
-## The relationship between cardiac and respiratory interoceptive sensitivity
+### The relationship between cardiac and respiratory interoceptive sensitivity
 
 Next, we investigated the relationship between cardiac and respiratory interoceptive sensitivity. First, we computed absolute proportional scores as individual difference scores for the iBEATs and the iBREATH following previous approaches and our preregistration. These scores range from 0 to 1, and a higher score indicates a stronger preference for either synchronous or asynchronous stimuli in the iBEATs or iBREATH, respectively. However, a difference score does not indicate the direction of the preference (synchronous or asynchronous). The reasoning behind the use of absolute proportional scores is that, in principle, both a preference for synchronous and for asynchronous stimuli indicates that the participant identified a (bodily) signal from noise. Importantly, all studies using iBEATs like paradigms in infants so far have used absolute proportional scores to investigate individual differences (Maister et al., 2017; Weijs et al., 2023). Furthermore, visual inspection of the individual preferences in both paradigms (gray lines, Figure 1) reveals that, although the group mean difference displays a preference for the synchronous stimuli, in fact, looking preferences for both synchronous and asynchronous stimuli can be observed on an individual level.
 
 We used a mega-analytic approach, pooling together data from all age groups, to investigate the relationship between both tasks. We fitted a mixed model using a beta-error distribution with the iBREATH scores as outcome, the iBEATs, age, and their interaction as factors, and participant as a random factor (Table 3, for detailed results see Appendix 3). We did not find a strong relationship between cardiac and respiratory interoceptive sensitivity across all ages (Figure 3, N=84), mirroring previous results in adults and children (Garfinkel et al., 2016; Nicholson et al., 2019). However, we found a significant interaction between the iBEATs scores and age, specifically comparing the 3- and 18-mo-old groups (β=3.13, SE = 1.41, p=0.027). This interaction indicates that the relationship between iBEATs and iBREATH scores changes between 3 and 18 mo of age.
+
+**Table 3.**
+ Effects of iBEATs on iBREATH for all age groups, as well as for interactions between iBEATs and age.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>z-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>iBEATs (3 mo)</td>
+      <td>–1.83</td>
+      <td>0.97</td>
+      <td>–1.89</td>
+      <td>0.059</td>
+    </tr>
+    <tr>
+      <td>iBEATs (9 mo)</td>
+      <td>–1.16</td>
+      <td>0.90</td>
+      <td>–1.30</td>
+      <td>0.192</td>
+    </tr>
+    <tr>
+      <td>iBEATs (18 mo)</td>
+      <td>1.30</td>
+      <td>1.02</td>
+      <td>1.27</td>
+      <td>0.204</td>
+    </tr>
+    <tr>
+      <td>iBEATs * age (3- vs 9 mo)</td>
+      <td>–0.15</td>
+      <td>0.34</td>
+      <td>–0.42</td>
+      <td>0.674</td>
+    </tr>
+    <tr>
+      <td>iBEATs * age (3- vs 18 mo)</td>
+      <td>3.13</td>
+      <td>1.41</td>
+      <td>2.22</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>iBEATs * age (9- vs 18 mo)</td>
+      <td>2.45</td>
+      <td>1.36</td>
+      <td>1.81</td>
+      <td>0.070</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results for the beta regression of iBEATs scores on iBREATH scores. Detailed results can be found in Appendix 3._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/91579/elife-91579-fig3-v1.jpg)
 
@@ -95,7 +239,7 @@ We used a mega-analytic approach, pooling together data from all age groups, to 
 
 To follow up the interaction, we conducted a pairwise comparison which indicated that for the effect of iBEATs scores on the iBREATH scores there was a significant difference between 9- and 18 mo of age (β=–0.60, SE = 0.24, p=0.043), while there were no significant differences between 3- and 18 mo (β=–0.60, SE = 0.25, p=0.055) or the 3- and 9-mo-olds (β=0.00, SE = 0.23, p=0.999). Still, coefficients indicate a similar strength and direction of the comparison between 9 and 18 mo as well as 3 and 18 mo.
 
-## Developmental changes in interoceptive sensitivity
+### Developmental changes in interoceptive sensitivity
 
 Next, we aimed at further investigating whether there are developmental changes in interoceptive sensitivity in the first two years of life. Initially, following our preregistration (https://aspredicted.org/GMB_XCW), we conducted a longitudinal analysis using the infants that participated both at 9 and 18 mo of age. Unfortunately, as described earlier, due to the study being conducted during the Covid-19 pandemic, only a subsample of infants could be re-invited to the lab in the targeted age range and contributed data suitable for longitudinal analyses. Comparing the absolute individual difference scores between both age groups revealed no evidence for a strong change in cardiac (paired Bayesian t-test; BF = 0.26, N=20) or respiratory (paired Bayesian t-test; BF = 0.33, N=19) interoceptive sensitivity, indicating that absolute individual difference scores in both domains do not change substantially from 9 to 18 mo of age. Notably, a region of practical equivalence follow-up analysis indicates that we cannot rule out an effect at least as strong as a change of.1 for the absolute proportional scores (iBEATs: ROPE [–0.10, 0.10], 97.53% inside ROPE, iBREATH: ROPE [–0.10, 0.10], 97.76% inside ROPE, 95% HDI [–0.11, 0.05]). Furthermore, in an exploratory analysis, we computed Spearman correlations between timepoints. We did not find evidence for the iBEATs (r(18) = 0.236, p=0.315) and the iBREATH (r(17) = .195, p=0.423) that individual difference scores correlate strongly between timepoints.
 
@@ -105,7 +249,89 @@ To increase the number of observations, and statistical power, we conducted an e
 
 **Figure 4.:** Absolute proportional scores for (A) iBEATs and (B) iBREATH plotted for each age group. Red dots refer to group means, and colorful dots to individual means, ** refers to a significant result (p<0.01).
 
-## Specification curve analysis
+**Table 4.**
+ Change in absolute proportional scores across age groups for the iBREATH.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>z-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>–1.61</td>
+      <td>0.15</td>
+      <td>10.55</td>
+      <td>&lt;0001</td>
+    </tr>
+    <tr>
+      <td>9 mo</td>
+      <td>–0.04</td>
+      <td>0.19</td>
+      <td>–0.18</td>
+      <td>0.853</td>
+    </tr>
+    <tr>
+      <td>18 mo</td>
+      <td>0.61</td>
+      <td>0.21</td>
+      <td>2.86</td>
+      <td>0.004</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results for the mixed model using a beta error distribution. Results are in comparison to the synchronous condition, and 3 mo age group._
+
+**Table 5.**
+ Change in absolute proportional scores across age groups for the iBEATs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>z-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>–1.11</td>
+      <td>0.14</td>
+      <td>–7.91</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>9 mo</td>
+      <td>–0.04</td>
+      <td>0.19</td>
+      <td>–0.22</td>
+      <td>0.826</td>
+    </tr>
+    <tr>
+      <td>18 mo</td>
+      <td>–0.09</td>
+      <td>0.23</td>
+      <td>–0.41</td>
+      <td>0.684</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results for the mixed model using a beta error distribution. Results are in comparison to the synchronous condition, and 3 mo age group._
+
+### Specification curve analysis
 
 Notably, apart from the 18-mo-old iBREATH sample, we found that (numerical) mean group preferences indicated a preference to stimuli presented synchronously with the respective bodily signal. Thus, mean group preferences were switched compared to our initial expectation and the original study by Maister et al., 2017 who found a mean group preference for stimuli presented asynchronously to the infant’s heartbeat. In addition, other studies have failed to find evidence for cardiac interoceptive sensitivity in infants (Weijs et al., 2023). Furthermore, a wide range of analytical choices have been reported in approaches on cardiac interoception in infants (Maister et al., 2017; Weijs et al., 2023) and nonhuman primates Charbonneau et al., 2022 to date.
 
@@ -115,7 +341,7 @@ We ran a specification curve analysis following the approach outlined by Simonso
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/91579/elife-91579-fig5-v1.jpg)
 
-**Figure 5.:** A) iBEATs and (B) iBREATH task.Specification curve analysis plotting standardized beta regression coefficients (y-axis) and number of analysis (x-axis) for (A) iBEATs and (B) iBREATH. Number of analysis (x-axis) are ordered increasing from lowest to highest standardized beta regression coefficient. Blue color indicates a significant effect (p<0.05) for a mean synchronous preference, red color indicates a significant effect (p<0.05) for a mean asynchronous preference, and gray indicates a non-significant outcome.
+**Figure 5.:** Specification curve analysis plotting standardized beta regression coefficients (y-axis) and number of analysis (x-axis) for (A) iBEATs and (B) iBREATH. Number of analysis (x-axis) are ordered increasing from lowest to highest standardized beta regression coefficient. Blue color indicates a significant effect (p<0.05) for a mean synchronous preference, red color indicates a significant effect (p<0.05) for a mean asynchronous preference, and gray indicates a non-significant outcome.
 
 Our results indicated that for the iBEATs almost half (44.73%) of all analytical paths led to a significant result (p<0.05), while for the iBREATH 17.51% of all analytical paths came to such a conclusion. Almost all specifications indicated a mean group preference for synchronous trials (43.16%, Figure 5, blue color). Interestingly, however, there were also a handful of specifications for the iBEATs (N=16, 1.6%) that would have resulted in a mean group preference for asynchronous trials (Figure 2A, red color). In sum, these results can be seen as a validation of our preregistered analytical approach described above, as they highlighted that a mean group preference for synchronous trials is not dependent on the combination or interaction of specific analytical choices. Still, given that 1.6% of analysis paths would have come to a different conclusion might indicate that the influence of analytical choices is not completely negatable.
 
@@ -137,6 +363,59 @@ Nevertheless, the switch in mean preference reported here regarding cardiac inte
 
 To validate the impact of analytical choices on mean group preferences we used a specification curve analysis. In the following, we will discuss impactful decisions and make recommendations for future approaches (see Table 6). Regarding analytical choices that had an impact on the results, we found that applying the same physiological data rejection criteria to synchronous and asynchronous trials led to more significant results (Table 6, first entry). The logic behind not removing asynchronous trials with physiological artifacts in the tasks described here is that in these trials the signal is not generated by real-time feedback of the physiological signal. Thus, it is not directly relevant for stimulus presentation. However, our results indicate that applying differing criteria for both trial categories might obscure effects.
 
+**Table 6.**
+ Number of significant results for specifications for iBEATs and iBREATH.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specification</th>
+      <th>iBEATs</th>
+      <th>iBREATH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Outlier rejection</td>
+      <td>128, only async330, both</td>
+      <td>111 only async158 both</td>
+    </tr>
+    <tr>
+      <td>SD outlier rejection</td>
+      <td>107, no rejection107, 2SD120, 2.5SD124, 3SD</td>
+      <td>59 no rejection70 2SD104 2.5SD36 3SD</td>
+    </tr>
+    <tr>
+      <td>Artifact trial rejection</td>
+      <td>224, 85% criterion162, small artifacts included72, strict rejection</td>
+      <td>207, large artifacts included62, small artifacts included0, strict rejection</td>
+    </tr>
+    <tr>
+      <td>Data transformation</td>
+      <td>240, log transformed218, not transformed</td>
+      <td>162 log transformed102 not transformed</td>
+    </tr>
+    <tr>
+      <td>Trial removal</td>
+      <td>308, 0LTs included150, 0LTs excluded</td>
+      <td>183, 0LTs included86, 0LTs excluded</td>
+    </tr>
+    <tr>
+      <td>Min. number of trials per id to be included</td>
+      <td>115, min. 2 trials115, min. 4 trials113, min. 8 trials115, no criterion</td>
+      <td>86, min. 2 trials74, min. 4 trials24, min. 8 trials85, no criterion</td>
+    </tr>
+    <tr>
+      <td>Statistical analysis</td>
+      <td>220, linear mixed model238, paired t-test</td>
+      <td>89, linear mixed model180, paired t-test</td>
+    </tr>
+  </tbody>
+</table>
+
+_Number of significant specifications for iBEATs and iBREATH separate for each category. Overall, there were 1024 specifications for iBEATs and 1536 for iBREATH. Detailed information on the specifications can be found in Appendix 4. Category 3 (artifact trial rejection) for the iBREATH was simplified to make comparison to the iBEATs more intuitive._
+
 Moreover, we found that for both tasks, in terms of physiological artifact rejection, including more data points led to more significant results (Table 6, third entry). This might be explained by the inclusion of more data, and thus, greater statistical power. For instance, in the iBEATs task, strict artifact rejection means that a trial is removed once a single R-peak is not (or falsely) detected. However, in such trials, it might still be possible to recognize that the stimulus presentation is synchronous or asynchronous to one’s heartbeat and it thus still holds information relevant for the task. For future studies, we would recommend a more fine-tuned approach for removing trials based on physiological artifacts. Furthermore, we would advise employing the same criteria to all conditions used.
 
 Regarding specifications that did not have a strong impact, we found that outlier criteria using standard deviations had a negliable impact on the results (Table 6, second entry). Such criteria are usually applied to remove extreme values in the data. In the paradigms described here, looking times were bound by trial length (e.g. in the iBEATs max. 20 s). Thus, rejecting trials based on standard deviation might not be useful in analyses of preferential looking paradigms that use maximum trial length. One reason might be that extremely large outliers in looking times are impeded already by the experimental design. We also did not find that an inclusion criteria regarding a minimal number of valid trials an infant had to contribute to be included in the analysis changed the number of significant results much. Such criteria are typically used to increase the reliability of results, as individual trial outliers weight stronger when an infant only completes few trials. For instance, in our preregistered analysis, infants had to complete a minimum of eight trials for the iBEATs or four trials for the iBREATH to be included in the analysis (Table 6, sixth entry). However, there were few infants who completed less than these minimum number of trials. For future approaches, we would advise against using exclusion criteria based on standard deviations or number of trials. Moreover, the statistical test used (paired t-test vs linear mixed model, Table 6, seventh entry) had a rather small impact on the results. However, given the large number of analyses conducted, this might be related to not being able to precisely formulate the model to fit the complexity of the data for each specification.
@@ -145,11 +424,11 @@ Overall, the recommendations outlined above can be discussed within the scope of
 
 Overall, we found more significant results for a group mean preference for the iBEATs (44.73%) compared to the iBREATH (17.51%) at 9 mo of age. Given that our exploratory analysis indicated an increase of iBREATH difference scores from 9 to 18 mo, respiratory interoceptive sensitivity might develop in this age range. However, it is also possible that the coupling of physiological signals with visual stimuli in infancy might produce stronger mean preferences for cardiac-, compared to respiratory signals. In sum, the results of the specification curve analysis validated our preregistered analysis, as almost all analysis paths resulted in a numerical mean preference for synchronous stimuli.
 
-## Ideas and speculation – development of respiratory interoceptive sensitivity
+### Ideas and speculation – development of respiratory interoceptive sensitivity
 
 While we found consistent evidence for cardiac interoceptive sensitivity, whereby infants on average prefer stimuli presented synchronously with their heartbeat, the evidence regarding respiratory interoceptive sensitivity was more nuanced. In particular, the 18-mo-olds sample for the iBREATH displayed three interesting characteristics: it was the only sample showing a (numerical) preference for the asynchronous condition, absolute proportional scores increased compared to 3, and 9 mo, and there was a positive relationship with cardiac interoceptive sensitivity scores at 18 mo (but not at 3 or 9 mo). To interpret these results, one might speculate that a maturation of respiratory interoceptive sensitivity towards 18 mo of age takes place. A hypothesis to be tested in future research is that developmental improvement in respiratory perception might be related to increases in other domains that show links to interoception. For instance, self-perception matures towards the second birthday and has been conceptually related to interoception (Fotopoulou and Tsakiris, 2017; Musculus et al., 2021). Furthermore, gross motor development may be considered in future research, which drastically matures in the first two years of life (WHO Multicentre Growth Reference Study Group, 2006) and has been shown to be related to respiratory function in children with cerebral palsy (Kwon and Lee, 2014). However, the result and interpretation warrant further follow-up given the small sample size of the 18-moolds and exploratory nature of the respective analysis.
 
-## Limitations
+### Limitations
 
 The data presented in this paper holds several limitations. First, due to an error in our experimental scripts, we unintentionally used a fixed-order design, instead of a semi-randomized/randomized design, in which almost all infants saw the same fixed order of stimuli (see Appendix 1 for additional analyses). Following, condition (always starting with a synchronous trial), and image assigned to condition was fixed. Furthermore, for a given trial the location of a stimulus (left/right) was fixed, although across all trials all condition/stimulus pairings were appearing on the left and right side of the screen equally often. Such a fixed-order design holds several important limitations as visual preferences might be influenced by the experimental design, i.e., the first trial always being synchronous might have influenced a mean group preference. Furthermore, we cannot rule out that mean group preferences were influenced by the stimuli used (as in most cases the same stimuli were used for synchronous/asynchronous trials) or by the location of the image in a given trial (left/right). Still, as the stimuli used were selected to be similar to each other, we would not expect that they would evoke a priori preferences. To further illustrate the impact of the fixed-order design we have conducted several additional analyses, which can be found in Appendix 1, which do not indicate that there was an impact of the fixed-order design. Specifically, we find no evidence for systematic differences between infants tested with the fixed design and infants tested with a randomized design.
 
@@ -161,7 +440,7 @@ Furthermore, drop-out numbers must be discussed. For the 9-mo-old sample, ninety
 
 To overcome some of these limitations, we have computed exploratory analysis using all data available, not just those infants that contributed data at both timepoints. However, such an approach can only provide correlational evidence. Regarding the specification curve analysis, it is possible that there are specifications that might be relevant, which were not considered here. Furthermore, in the specification curve analysis, we did not inspect assumptions underlying the statistical tests in-depth.
 
-## Conclusion
+### Conclusion
 
 To sum up, we present evidence that infants are sensitive to their own cardiac signals in the first two years of life using an adapted version of the paradigm introduced by Maister et al., 2017. Moreover, we present the first evidence that infants are sensitive to their respiratory signals using the iBREATH paradigm. By using a preregistered approach, a comparably large sample size and age range spanning the first two years of life, and by extending the interoceptive modality assessed to respiration, we provided important empirical evidence for theoretical accounts highlighting the relevance of interoceptive sensitivity in infancy. Regarding longitudinal development, we found no evidence for a change of interoceptive sensitivity in our confirmatory longitudinal analysis. However, exploratory analysis using a between groups approach revealed evidence for an age-related increase in respiratory, but not cardiac, interoceptive sensitivity scores towards 18-mo-of age. We did not find that cardiac and respiratory interoceptive sensitivity are strongly related, mirroring results in adults and children. However, we find exploratory evidence for a relationship at 18 mo.
 
@@ -169,17 +448,17 @@ We used a specification curve analysis to validate our results and showed that a
 
 ## Materials and methods
 
-## Sample
+### Sample
 
 The data reported here was collected as part of a larger project involving a range of other measures. To stay coherent, we refer to each age group throughout the manuscript with regard to the lower end of the age range in which we included infants (e.g. we tested infants between 9 and 10 mo, but refer to them as the 9-mo-old group). For the 9-mo-old sample in total, 90 infant-mother dyads were tested in the laboratory. Initially, we intended to invite mother-infant dyads when the infant was 9–10 mo of age. However, as this study was conducted during the Covid-19 pandemic, we extended the age range to 10 mo and 15 d to be able to include a sufficient number of infants (Mage = 301.63 d, SDage = 10.57). We followed up the same sample again when the infants were 18–20 mo of age (N=54, Mage = 576.65 d, SDage = 14.49). Data collection took place during the Covid-19 pandemic, from September 2020 to September 2021. The total sample size was based on a power analysis for an unrelated analysis. However, building up on the results reported by Maister et al., 2017; paired t-test; t=3.267, n=29, Cohen’s d=0.4, the study would have been adequately powered to detect an effect approx. 30% (Cohen’s d=0.3) smaller than reported by Maister et al., 2017. The 3-mo-old sample was tested after completion of the 9- and 18-month-old samples. Initially, we had planned to start data collection with the 3-mo-old sample. However, due to the Covid-19 pandemic, this was not possible. We invited 80 infant-mother dyads to the lab when the infant was 3–4 mo old (Mage = 113.53 d, SDage = 7.82).
 
 Participants were recruited from an existing database of volunteer families and parents. We strived to include an equal number of boys and girls. All infants were born full term with normal birth weight and had no known developmental delays or neurological impairments. Experiments were approved by the ethics committee of the University of Vienna (reference no. 00504).
 
-## Experimental procedures
+### Experimental procedures
 
 Upon arrival in the laboratory, primary caregivers were asked to fill out an informed consent form. After a warm-up period, the infants performed several tasks in randomized order. In the current manuscript, we only report results from the iBEATs and the iBREATH tasks, as results from the other tasks will be presented in separate reports. The order of the tasks was counterbalanced across participants. As both the iBEATs and the iBREATH followed a similar structure and required similar equipment, the tasks were performed back-to-back in an alternating order. Between the iBEATs and the iBREATH, we additionally acquired 3 min of resting state data to analyze cardio-respiratory coupling while infants watched a neutral video. The procedure was the same for infants from all age groups. Notably, the infants participating at 3 mo only did the iBEATs and iBREATH in alternating order.
 
-## iBEATs
+### iBEATs
 
 To measure cardiac interoceptive sensitivity, we used the iBEATs paradigm (Maister et al., 2017). Three electrodes were attached to the infant’s chest in a three-lead setup. We used an ADInstruments Powerlab and BioAmp equipment to monitor and to record cardiac activity (https://www.adinstruments.com/). To identify R-peaks, we used the built-in hardware-based function, namely ‘fast response output’, which sends a pulse to a presentation-computer via a custom-made Arduino set-up, once a predefined threshold is reached. The threshold was set individually for each infant.
 
@@ -189,7 +468,7 @@ There was a maximum of 80 trials in the task. The first trial was always synchro
 
 Initially, we had intended to counterbalance the stimuli across experimental conditions and infants. However, when conducting additional analysis during the review process we noticed an error in our randomization scripts (for a detailed description and additional analyses regarding its impact see Appendix 1) which led to the iBEATs following a fixed-order experimental design for most participants across all age groups. Thus, for all infants apart from a small subsample of 9-mo-olds randomization was fixed, so that the same stimulus was synchronous or asynchronous, with a fixed order of locations (synchronous and asynchronous stimuli appeared both left and right stimuli appeared left and right) and a fixed trial order. However, the randomization was not completely alternating, so that in some cases two synchronous or asynchronous trials could follow each other. The stimulus presentation was performed using a custom-made script in MATLAB (Matlab 2018b).
 
-## iBREATH
+### iBREATH
 
 To measure respiratory interoceptive sensitivity, we developed and used the iBREATH paradigm, which followed a similar logic to the iBEATs task. A respiratory belt connected to an ADInstruments Powerlab was attached to the infant’s torso (https://www.adinstruments.com/). Once a stable signal was obtained, infants were seated in an infant chair roughly 60 cm away from an eye tracker sampling at 500 Hz (Eyelink 1000 plus). The caregiver was asked to sit right behind the infant. The signal of the respiration belt was sent to a presentation computer using a custom-made Arduino set-up.
 
@@ -201,21 +480,21 @@ The iBREATH paradigm consisted of a maximum of 80 trials. The first trial always
 
 Initially, we had intended to counterbalance the stimuli visual across experimental conditions and infants. However, when conducting additional analyses during the review process we noticed an error in our randomization scripts (for a detailed description and additional analyses regarding its impact see Appendix 1) which led to the iBREATH following a fixed-order experimental design for most participants across all age groups. Thus, for all infants apart from a small subsample of 9-mo-olds randomization was fixed, so that the same stimulus was synchronous or asynchronous, with a fixed order of locations (stimuli appeared left and right) and a fixed trial order.
 
-## Confirmatory analysis
+### Confirmatory analysis
 
 This study was preregistered on aspredicted.org. The preregistration for the 9-mo-old sample can be accessed here: https://aspredicted.org/QP9_6FP. The preregistration for the longitudinal analysis can be assessed here: https://aspredicted.org/GMB_XCW. The preregistration for the 3-mo-old sample can be accessed here: https://aspredicted.org/44L_QKH. Data, analysis, and experimental scripts are available here: https://doi.org/10.17605/OSF.IO/JY5FE.
 
-## Pre-processing
+### Pre-processing
 
 In a first step, we visually inspected each trial of the iBEATs and the iBREATH tasks to exclude trials in which stimulus presentation was impacted by technical problems or physiological artifacts. We excluded trials for technical problems if transmission of the physiological signal was interrupted during a trial (e.g. an electrode was removed, a cable got unplugged, etc.) or stimulus presentation was interrupted (e.g. there was a problem in connecting to the stimulus presentation computer).
 
 Next, we excluded trials with physiological artifacts. In the iBEATs, we excluded a trial if not all R-peaks were picked up by the fast-response-output. In the iBREATH, we excluded a trial if movement or other technical artifacts were visible in the respiratory signal during a trial. Furthermore, in the iBEATs, infants were included if they completed a minimum of eight trials. In the iBREATH, we adapted this criterion as respiration is a slower signal than the heartbeat and maximum trial durations were longer. As this might result in fewer total number of trials in the iBREATH task as compared to the iBEATs task, we adjusted the cut-off number for the iBREATH task and included data of infants who completed a minimum of four trials in the analysis. For the longitudinal analysis, we used a less strict criterion to increase our potential sample size as outlined in our preregistration. Thus, infants were included when they completed at least 4 trials in either task.
 
-## Pre-processing of looking times-data
+### Pre-processing of looking times-data
 
 We defined an area of interests (AOIs) based on the maximum coordinates of the animated character on the screen. We took the maximum movement range of the animated character and computed looking times in each trial as the summed duration of all eye-tracking samples falling in that AOI. Because we aimed to replicate the study by Maister et al., 2017, we followed the same analysis approach as they did in the original paper. Accordingly, we excluded trials with looking times two standard deviations away from the condition’s (i.e. synchronous or asynchronous trials) group mean. To compare cardiac and respiratory interoceptive sensitivity, we computed individual discrimination scores defined as the absolute proportion of looking time difference between synchronous and asynchronous conditions, again following the procedure by Maister et al., 2017. For both tasks, we excluded trials with looking times of 0, as it is not clear whether infants did not look at the screen in these trials, or whether there were technical issues in these trials.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analysis reported here were computed in R Development Core Team, 2022 using the packages ‘pwr’ (Champely, 2020), ‘TOSTER’ (Lakens et al., 2018), ‘ggstatsplot’ (Patil, 2021), ‘BayesFactor’ (Morey and Rouder, 2022), ‘specr’ (Masur and Scharkow, 2019), ‘lme4’ (Bates et al., 2015), ‘afex’ (Singmann et al., 2022), ‘psych’ (Revelle, 2022), ‘broom.mixed’ (Bolker and Robinson, 2022), ‘bayestestR’ (Makowski et al., 2019), ‘DHARMa’ (Hartig, 2022), ‘glmmTMB’ (Brooks et al., 2017), and ‘faux’ (DeBruine, 2023). To compute the Stouffer’s z indices for the specification curve analysis we used the function provided in Simonsohn et al., 2020.
 
@@ -223,11 +502,71 @@ Out of the 90 mother-infant dyads invited to participate in the study, for the 9
 
 As outlined in our preregistration, we lowered the threshold for outlier rejection in the longitudinal analysis to increase the sample size. Thus, for all analysis infants who completed at least four trials per task were included. For the 9-mo-old data, this would have slightly changed the iBEATs analysis plan. However, this criterion did not lead to the inclusion of additional infants in the final sample. For the 18-mo-olds’ iBEATs data, no infants were excluded due to not reaching at least four trials, four infants were excluded due to quality of the ECG signal, and two infants were excluded due to the +/-2 SD outlier rejection criterion, resulting in a final sample of 28. For the 18-mo-olds’ iBREATH data, one infant was excluded due to not reaching at least four trials, three infants were excluded due to noisy physiological data, and three infants were excluded due to the +/-2 SD outlier rejection criterion, leaving a final sample of 30 infants. Means and SDs for number of trials completed for infants included in the analysis can be found in Table 7.
 
+**Table 7.**
+ Descriptive information for number of trials completed and included.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Paradigm, Age group</th>
+      <th>Mcompleted</th>
+      <th>SDcompleted</th>
+      <th>Mincluded</th>
+      <th>SDincluded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>iBEATs, 3 mo</td>
+      <td>13.97</td>
+      <td>7.08</td>
+      <td>9.82</td>
+      <td>7.44</td>
+    </tr>
+    <tr>
+      <td>iBEATs, 9 mo</td>
+      <td>18.16</td>
+      <td>6.35</td>
+      <td>9.52</td>
+      <td>6.63</td>
+    </tr>
+    <tr>
+      <td>iBEATs, 18 mo</td>
+      <td>15.62</td>
+      <td>6.31</td>
+      <td>10.90</td>
+      <td>7.54</td>
+    </tr>
+    <tr>
+      <td>iBREATH, 3 mo</td>
+      <td>13.00</td>
+      <td>5.84</td>
+      <td>9.16</td>
+      <td>6.52</td>
+    </tr>
+    <tr>
+      <td>iBREATH, 9 mo</td>
+      <td>13.25</td>
+      <td>4.85</td>
+      <td>10.10</td>
+      <td>5.21</td>
+    </tr>
+    <tr>
+      <td>iBREATH, 18 mo</td>
+      <td>12.52</td>
+      <td>7.63</td>
+      <td>6.88</td>
+      <td>5.56</td>
+    </tr>
+  </tbody>
+</table>
+
 Out of the 80 mother-infant dyads invited to participate in the 3-mo-old study, 77 infants contributed any data for the iBEATs task and 71 to the iBREATH task. Furthermore, following our preregistered analysis, one infant was excluded for the iBEATs task due to noisy ECG data, and 23 due to problems with the eye-tracking giving a sample of 53 infants. In comparison, for the iBREATH task, two infants were excluded due to not reaching at least four trials, 10 due to noisy respiratory belt data, and 19 due to problems with the eye-tracking resulting in a final included sample of 40 infants.
 
 All statistics in our confirmatory analysis using null hypothesis testing were evaluated against a two-tailed significance level of p<0.05. In case of non-significant results, if possible we aimed at following up the respective analysis with an equivalence or region of practical equivalence test (Lakens et al., 2018). To compare synchronous and asynchronous trials at 9 and 18 mo, both for the iBEATs and the iBREATH tasks, we computed two separate paired t-tests (Maister et al., 2017; see Appendix 5 for more information on asynchronous trials). At 3 mo we used a Bayesian paired t-test as the data collection was done after having collected the 9- and 18-mo-old samples. Our intention in the analysis of the 3-mo-old sample was to focus on strength of evidence in favor of/against an effect instead of a binary classification. We preregistered to correlate iBEATs and iBREATH scores at 9 mo. However, in the manuscript, we only report the details of the MEGA-analysis (see next paragraph). To investigate the longitudinal development of cardiac and respiratory interoceptive sensitivity, we computed a Bayesian paired t-test comparing absolute proportional scores between 9 and 18 mo.
 
-## MEGA-analysis
+### MEGA-analysis
 
 We computed three MEGA-analyses pooling together data from all three age groups – to investigate a mean preference effect, the relation between the iBEATs and the iBREATH, as well as the development over age groups. First, to investigate whether there is a mean preference in the iBEATs and the iBREATH tasks, we computed mixed models using the R-package ‘glmmTMB’ utilizing a beta-error distribution and logit-link function. We used looking time as outcome, condition, age, and their interaction as fixed effect, and participant as a random effect. We transformed age into a factor with 3-levels (3, 9, 18 mo), whereby 3 mo was set as reference level. After fitting the model, we visually inspected assumptions using the check_model function of the R-package ‘performance’. In addition, we checked for overdispersion using the ‘DHARMa’ package (iBEATs: dispersion = 1.07, p=0.168; iBREATH: dispersion = 1.12, p=0.120). Furthermore, we checked a reduced model lacking the interaction term for issues of collinearity (iBEATs, VIF = 1.00; iBREATH: VIF = 1.00). We then conducted full-null model comparisons by fitting a null-model that excluded the condition factor.
 

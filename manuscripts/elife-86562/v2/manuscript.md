@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01wspgy28 Population Sciences in the Pacific Program (Cancer Epidemiology), University of Hawaii Cancer Center, University of Hawaii at Manoa Honolulu United States
-2. https://ror.org/043mz5j54 Department of Epidemiology and Biostatistics, University of California, San Francisco San Francisco United States
-3. https://ror.org/03taz7m60 Center for Genetic Epidemiology, University of Southern California Los Angeles United States
+1. Population Sciences in the Pacific Program (Cancer Epidemiology), University of Hawaii Cancer Center, University of Hawaii at Manoa Honolulu United States ([ROR:01wspgy28](https://ror.org/01wspgy28))
+2. Department of Epidemiology and Biostatistics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Center for Genetic Epidemiology, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
 
 † Corresponding author
 
 ## Abstract
 
-The Coronavirus Disease of 2019 (COVID-19) has impacted the health and day-to-day life of individuals, especially the elderly and people with certain pre-existing medical conditions, including cancer. The purpose of this study was to investigate how COVID-19 impacted access to cancer screenings and treatment, by studying the participants in the Multiethnic Cohort (MEC) study. The MEC has been following over 215,000 residents of Hawai‘i and Los Angeles for the development of cancer and other chronic diseases since 1993–1996. It includes men and women of five racial and ethnic groups: African American, Japanese American, Latino, Native Hawaiian, and White. In 2020, surviving participants were sent an invitation to complete an online survey on the impact of COVID-19 on their daily life activities, including adherence to cancer screening and treatment. Approximately 7,000 MEC participants responded. A cross-sectional analysis was performed to investigate the relationships between the postponement of regular health care visits and cancer screening procedures or treatment with race and ethnicity, age, education, and comorbidity. Women with more education, women with lung disease, COPD, or asthma, and women and men diagnosed with cancer in the past 5 years were more likely to postpone any cancer screening test/procedure due to the COVID-19 pandemic. Groups less likely to postpone cancer screening included older women compared to younger women and Japanese American men and women compared to White men and women. This study revealed specific associations of race/ethnicity, age, education level, and comorbidities with the cancer-related screening and healthcare of MEC participants during the COVID-19 pandemic. Increased monitoring of patients in high-risk groups for cancer and other diseases is of the utmost importance as the chance of undiagnosed cases or poor prognosis is increased as a result of delayed screening and treatment. This research was partially supported by the Omidyar 'Ohana Foundation and grant U01 CA164973 from the National Cancer Institute.
+Background:The Coronavirus Disease of 2019 (COVID-19) has impacted the health and day-to-day life of individuals, especially the elderly and people with certain pre-existing medical conditions, including cancer. The purpose of this study was to investigate how COVID-19 impacted access to cancer screenings and treatment, by studying the participants in the Multiethnic Cohort (MEC) study.Methods:The MEC has been following over 215,000 residents of Hawai‘i and Los Angeles for the development of cancer and other chronic diseases since 1993–1996. It includes men and women of five racial and ethnic groups: African American, Japanese American, Latino, Native Hawaiian, and White. In 2020, surviving participants were sent an invitation to complete an online survey on the impact of COVID-19 on their daily life activities, including adherence to cancer screening and treatment. Approximately 7,000 MEC participants responded. A cross-sectional analysis was performed to investigate the relationships between the postponement of regular health care visits and cancer screening procedures or treatment with race and ethnicity, age, education, and comorbidity.Results:Women with more education, women with lung disease, COPD, or asthma, and women and men diagnosed with cancer in the past 5 years were more likely to postpone any cancer screening test/procedure due to the COVID-19 pandemic. Groups less likely to postpone cancer screening included older women compared to younger women and Japanese American men and women compared to White men and women.Conclusions:This study revealed specific associations of race/ethnicity, age, education level, and comorbidities with the cancer-related screening and healthcare of MEC participants during the COVID-19 pandemic. Increased monitoring of patients in high-risk groups for cancer and other diseases is of the utmost importance as the chance of undiagnosed cases or poor prognosis is increased as a result of delayed screening and treatment.Funding:This research was partially supported by the Omidyar 'Ohana Foundation and grant U01 CA164973 from the National Cancer Institute.
 
 ## Introduction
 
@@ -37,23 +37,212 @@ In summary, COVID-19 has impacted medical care delivery, access to cancer screen
 
 ## Methods
 
-## Study population
+### Study population
 
 The Multiethnic Cohort (MEC) was established in 1993–1996 at the University of Hawai‘i Cancer Center (UHCC) and the University of Southern California (USC) with the goals of elucidating lifestyle and genetic risk factors responsible for explaining the ethnic/racial disparities that exist for cancer and other chronic diseases (Kolonel et al., 2000). The cohort has followed over 215,000 residents of Hawai‘i and Los Angeles, aged 45–75 years old at recruitment, and includes men and women of five main ethnic and racial origins: African American, Japanese American, Latino, Native Hawaiian, and White. Participants entered the cohort by returning a 26-page mailed questionnaire. They also were sent follow-up questionnaires every five years. Disease ascertainment was primarily conducted by linking the cohort to SEER cancer registries, death certificate registries, CA hospital discharge diagnoses, and Medicare. Approximately 100,000 MEC members (median age: 82) were still alive as of 2019. Demographics (i.e. race/ethnicity, maximum years of education attained, birthplace), pre-existing and incident disease outcomes, and lifestyle risk factors were available from the MEC database.
 
-## Study design
+### Study design
 
 In May 2020, MEC participants were invited to participate in an online survey (implemented in Qualtrics) on the impact of COVID-19 on their everyday life and health-related behaviors. Emails were sent to over 39,000 and a letter to ~100,000 MEC participants. The initial and a second invitation were sent to all living MEC participants, while a third invitation was sent to those who were 75 or younger. A paper survey was provided if requested. Participants registered online by providing their Email Address, First name, Middle name, Last name, Sex, Birth year, and Zip Code. The entered data linked each participant back to the MEC database. A Spanish registration page was available for registration in Spanish. Each participant was sent a unique identifier and login to answer the survey online after providing informed consent. Participants who answered the baseline survey were invited to fill out a weekly, then, monthly shorter follow-up online survey (Figure 1). Paper follow-up surveys were not available. The surveys started in May 2020 and ended in April 2021. The last baseline survey (the last opportunity to enter the study) was collected on September 25, 2020. The survey was approved by the University of Hawaii (CHS 9575) and University of Southern California (HS-17–00714) Institutional Review Boards.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86562/elife-86562-fig1-v2.jpg)
 
-## Statistical analysis
+### Statistical analysis
 
 All baseline surveys with at least 50% completion were used for this analysis. Descriptive statistics were utilized to summarize patient demographics, including means ± standard deviations (SD) for continuous variables and frequencies and percentages for categorical variables. A cross-sectional analysis was performed to investigate the relationships between the outcomes of postponement of regular health care visits and cancer screening tests/procedures/treatment with race and ethnicity, age, education, and comorbidity. Chi-square tests and binary logistic regression models of the outcomes of postponement and screening were used to calculate odds ratios (and 95% confidence intervals) and/or p-values (≤0.05 was taken as statistically significant) in each sex to describe these relationships using the Statistical Analysis System (SAS), version 9.4. Whites were taken as the reference group when comparing associations across racial and ethnic groups. For comorbidities, the reference was reporting no comorbidity.
 
 ## Results
 
 Table 1 presents the number of COVID-19 survey participants by various characteristics. A total of 6,974 MEC members answered the baseline survey, 6,068 via the online survey, and 906 via the paper survey. Fewer men (43.5%) than women (56.5%) responded. 76.6% of COVID survey participants were from Hawai‘i and 23.6% were from Los Angeles. The survey response rate was 7.2% for men and 6.3% for women. The racial/ethnic group with the highest response rates was White (13.2%) for men; 12% for women, followed by Japanese American (8.9; 7.4), Native Hawaiian (7.3; 7.5), Other (2.7; 4.5), African American (2.7; 2.8), and Latino (2.2; 2.0). In Supplementary file 1, the distribution of the MEC cohort survivors in 2019 is compared with the distribution of the COVID survey participants in 2020 by race and education. For both males and females, the COVID survey respondents included a larger representation of Whites and Japanese Americans and a smaller representation of Latinos, African Americans, and Others compared to the entire 2019 surviving cohort. The proportion of the sample that was Native Hawaiians was similar to the MEC survivors. For education, a greater percentage of COVID-19 survey respondents had at least some college education compared to the entire 2019 surviving cohort. This pattern of higher attained education was observed for each racial/ethnic group.
+
+**Table 1.**
+ Demographics of baseline COVID survey participants from Hawai‘i and Los Angeles (May-September 2020, N=6974).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>MaleN (%) or Mean ±SD</th>
+      <th>FemaleN (%) or Mean ±SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3034 (43.5)</td>
+      <td>3940 (56.5)</td>
+    </tr>
+    <tr>
+      <td>Race/Ethnicity</td>
+      <td>White</td>
+      <td>1371 (45.2)</td>
+      <td>1683 (42.7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Japanese American</td>
+      <td>1059 (34.9)</td>
+      <td>1195 (30.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latino</td>
+      <td>241 (7.9)</td>
+      <td>291 (7.4)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Native Hawaiian</td>
+      <td>194 (6.4)</td>
+      <td>320 (8.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>African American</td>
+      <td>107 (3.5)</td>
+      <td>257 (6.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Other*</td>
+      <td>62 (2.0)</td>
+      <td>194 (4.9)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>66–72.8</td>
+      <td>715 (23.57)</td>
+      <td>946 (24.01)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>72.8–74.6</td>
+      <td>787 (25.94)</td>
+      <td>1008 (25.58)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>74.6–77.9</td>
+      <td>796 (26.24)</td>
+      <td>979 (24.85)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>77.9–102</td>
+      <td>736 (24.26)</td>
+      <td>1007 (25.56)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Age (years)</td>
+      <td>76±4.9</td>
+      <td>76±5.3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Years of Education †,‡</td>
+      <td>15.86±2.1</td>
+      <td>15.48±2.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pack Years†,‡ (MEC baseline 1993–1996)</td>
+      <td>8.57±12.4</td>
+      <td>5.16±9.9</td>
+    </tr>
+    <tr>
+      <td colspan="2">Alcohol Intake†,‡ (g/day) (MEC baseline 1993–1996)</td>
+      <td>12.65±20.7</td>
+      <td>5.15±11.8</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of Days an Alcoholic Beverage was Consumed in the Past 2 Weeks†,‡</td>
+      <td>4.61±5.6</td>
+      <td>2.83±4.7</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of Days with 5 or More Drinks Consumed on the Same Occasion in the Past 2 Weeks†,‡</td>
+      <td>0.37±1.8</td>
+      <td>0.07±0.8</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dietary Patterns Healthy Eating Index-2010 score†,‡(MEC Baseline 1993–1996)</td>
+      <td>64.95±10.8</td>
+      <td>68.66±10.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Made Lifestyle and Healthcare Changes Due to COVID-19 Since March 2020‡</td>
+      <td>2361 (78.8)</td>
+      <td>3272 (84.4)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Drinking Behavior Change Due to COVID-19‡</td>
+      <td>Do Not Drink</td>
+      <td>1185 (39.6)</td>
+      <td>2051 (53.5)</td>
+    </tr>
+    <tr>
+      <td>Drink More</td>
+      <td>125 (4.2)</td>
+      <td>163 (4.3)</td>
+    </tr>
+    <tr>
+      <td>Drink Less</td>
+      <td>189 (6.3)</td>
+      <td>199 (5.2)</td>
+    </tr>
+    <tr>
+      <td>Same</td>
+      <td>1492 (49.9)</td>
+      <td>1421 (37.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BMI (kg/m2)†,‡</td>
+      <td>26.8±4.6</td>
+      <td>25.9±5.8</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Smoking Status‡</td>
+      <td>Never</td>
+      <td>1320 (44.0)</td>
+      <td>2275 (58.7)</td>
+    </tr>
+    <tr>
+      <td>Not currently, but in the past</td>
+      <td>1568 (52.3)</td>
+      <td>1505 (38.8)</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>110 (3.7)</td>
+      <td>99 (2.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Have Healthcare Coverage‡</td>
+      <td>Yes</td>
+      <td>2,972 (99.2)</td>
+      <td>3,837 (99.2)</td>
+    </tr>
+    <tr>
+      <td>I don’t know / not sure</td>
+      <td>3 (0.1)</td>
+      <td>2 (0.1)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>21 (0.7)</td>
+      <td>28 (0.7)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Has Primary Care Provider/Physician ‡</td>
+      <td>2908 (97.0)</td>
+      <td>3767 (97.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Comprised of a majority of Chinese Americans (38.1%) and Filipino (36.6%).†Mean ± SD; other numbers are counts (and percentages).‡For education attained, there are missing responses from 16 men and 27 women. For the other questions asked in the MEC baseline and COVID survey, the missing responses range from 35-51 for men and 57–106 for women._
 
 Among participants in the baseline COVID-19 survey, the most common race/ethnicity reported was White (45.2% of men; 42.7% of women), followed by Japanese American (34.9%; 30.3%), Latino (7.9%; 7.4%), Native Hawaiian (6.4%; 8.1%), African American (3.5%; 6.5%), and Other (2.0%; 4.9%). The ethnicity category of Other comprised a majority of Chinese Americans (38.1%) and Filipino (36.6%). The mean age and education were similar in both sexes; however, men were more often smokers and alcohol drinkers and had a higher BMI than women. Women had a greater mean Healthy Eating Index-2010 score than men as reported in the MEC baseline questionnaire (1993–1996).
 
@@ -65,7 +254,360 @@ Overall, 54.2% of men and 61.2% of women participants reported that they had to 
 
 Similarly, 5.7% of men and 11.0% of women reported having to postpone a cancer screening or procedure due to COVID-19 (Table 3). The screening procedure the most frequently missed was mammography (n=264), followed by skin examination (n=207) and colorectal cancer screening (n=114). In the past five years, 917 survey participants had been diagnosed with cancer (Supplementary file 2). Of note, 103 men (3.4%) and 135 women (3.4%) reported that they were currently receiving any of the following cancer treatments: chemotherapy (31 men; 30 women); immunotherapy: (22 and 19) and radiation therapy (16 and 8). Among cancer patients still receiving treatment, 11.5% of men and 6.9% of women had to cancel at least one treatment session due to COVID-19 (Table 3).
 
+**Table 2.**
+ Distribution for postponing regular health care visits due to COVID-19 pandemic by sex (N=6974).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MaleN (%)</th>
+      <th>FemaleN (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Postponed regular health care visits</td>
+      <td>1625 (54.2)</td>
+      <td>2369 (61.3)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>38</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primary care physician</td>
+      <td>858</td>
+      <td>1188</td>
+    </tr>
+    <tr>
+      <td>Oncologist</td>
+      <td>54</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>Cardiologist</td>
+      <td>207</td>
+      <td>147</td>
+    </tr>
+    <tr>
+      <td>Endocrinologist</td>
+      <td>44</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td>Dentist</td>
+      <td>954</td>
+      <td>1453</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>768</td>
+      <td>1416</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Distribution for postponing cancer screening test/procedure/treatment due to COVID-19 pandemic by sex (N=6974).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MaleN (%)</th>
+      <th>FemaleN (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Postponed any cancer screening test/procedure</td>
+      <td>169 (5.7)</td>
+      <td>422 (11.0)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>48</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Breast cancer screening (e.g. mammography, breast MRI)</td>
+      <td>-</td>
+      <td>264</td>
+    </tr>
+    <tr>
+      <td>Colorectal cancer screening (e.g. FOBT test, FIT test, colonoscopy, sigmoidoscopy)</td>
+      <td>42</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>Skin cancer screening (e.g. skin exam)</td>
+      <td>83</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>Prostate cancer screening (digital rectal examination, PSA)</td>
+      <td>25</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cervical cancer screening (e.g. PAP smear, pelvic exam)*</td>
+      <td>-</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Imaging (e.g. CAT scan, DEXA, MRI)*</td>
+      <td>12</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>24</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Currently on chemotherapy, immunotherapy, or radiation therapy for cancer</td>
+      <td>103 (3.4)</td>
+      <td>135 (3.4)</td>
+    </tr>
+    <tr>
+      <td>Chemotherapy</td>
+      <td>31</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Immunotherapy</td>
+      <td>22</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Radiation Therapy</td>
+      <td>16</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Postponed any cancer therapy session(s)</td>
+      <td>7 (11.5)</td>
+      <td>4 (6.9)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>2973</td>
+      <td>3882</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Categories created by sorting text responses in the ‘Other Specify’ answer choice._
+
 Compared to White men, Native Hawaiian men were 41% (95% CI: 0.42, 0.84; p=0.003) and Other men were 56% (95% CI: 0.25, 0.78, p=0.004) less likely, and African American men were 154% (95% CI: 1.30, 4.99; p=0.007) more likely, to make any changes to their lifestyle or daily activities, such as covering a cough or sneeze, more frequent hand washing, and social distancing, since the COVID-19 pandemic (Table 4). Compared to White women, Native Hawaiian women were 56% (95% CI: 0.33, 0.60; p<.0001) and Other women were 38% (95% CI: 0.41, 0.92; p=0.02) less likely, to make any changes to their lifestyle or daily activities since the COVID-19 pandemic.
+
+**Table 4.**
+ Odds Ratio* for change in lifestyle or daily activities since onset of COVID-19 pandemic by demographics and comorbidities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Male (N=3000)</th>
+      <th colspan="3">Female (N=3890)</th>
+    </tr>
+    <tr>
+      <th>Yes (n)</th>
+      <th>Odds Ratio(95% CI)</th>
+      <th>p-Value</th>
+      <th>Yes (n)</th>
+      <th>Odds Ratio(95% CI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ethnicity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White (N=3,031)</td>
+      <td>1083</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+      <td>1,448</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Japanese American (N=2,228)</td>
+      <td>833</td>
+      <td>1.02 (0.83,1.26)</td>
+      <td>0.83</td>
+      <td>994</td>
+      <td>0.86 (0.69,1.07)</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Latino (N=520)</td>
+      <td>177</td>
+      <td>0.99 (0.70,1.40)</td>
+      <td>0.96</td>
+      <td>233</td>
+      <td>0.94 (0.65,1.35)</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Native Hawaiian (N=509)</td>
+      <td>135</td>
+      <td>0.59 (0.42,0.84)</td>
+      <td>0.003</td>
+      <td>235</td>
+      <td>0.44 (0.33,0.60)</td>
+      <td>&lt;.0001</td>
+    </tr>
+    <tr>
+      <td>African American (N=354)</td>
+      <td>96</td>
+      <td>2.54 (1.30,4.99)</td>
+      <td>0.01</td>
+      <td>211</td>
+      <td>0.96 (0.64,1.43)</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Other (N=248)</td>
+      <td>37</td>
+      <td>0.44 (0.25,0.78)</td>
+      <td>0.01</td>
+      <td>151</td>
+      <td>0.62 (0.41,0.92)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Age (Years) (N=6,890)</td>
+      <td>2361</td>
+      <td>0.98 (0.96,1.00)</td>
+      <td>0.02</td>
+      <td>3272</td>
+      <td>0.97 (0.96,0.99)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Maximum Education Obtained (Years) (N=6,847)</td>
+      <td>2347</td>
+      <td>1.12 (1.07,1.17)</td>
+      <td>&lt;0.0001</td>
+      <td>3248</td>
+      <td>1.10 (1.06,1.15)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Comorbidities</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None (N=2,307)†</td>
+      <td>694</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+      <td>1140</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heart Disease (N=1,035)</td>
+      <td>519</td>
+      <td>1.41 (1.11,1.80)</td>
+      <td>0.01</td>
+      <td>356</td>
+      <td>1.19 (0.86,1.63)</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Hypertension (N=3,271)</td>
+      <td>1169</td>
+      <td>1.34 (1.11,1.62)</td>
+      <td>0.002</td>
+      <td>1545</td>
+      <td>1.21 (1.00,1.47)</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Diabetes (N=1,106)</td>
+      <td>424</td>
+      <td>0.87 (0.68,1.10)</td>
+      <td>0.25</td>
+      <td>462</td>
+      <td>0.90 (0.69,1.16)</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>Lung Disease, COPD, or Asthma (N=819)</td>
+      <td>249</td>
+      <td>1.41 (1.01,1.96)</td>
+      <td>0.04</td>
+      <td>466</td>
+      <td>1.65 (1.22,2.23)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Kidney Disease (N=340)</td>
+      <td>138</td>
+      <td>1.37 (0.87,2.13)</td>
+      <td>0.17</td>
+      <td>150</td>
+      <td>1.11 (0.70,1.76)</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>Diagnosed w/ Cancer in past 5 yrs. (N=921)</td>
+      <td>383</td>
+      <td>1.09 (0.84,1.40)</td>
+      <td>0.51</td>
+      <td>383</td>
+      <td>1.21 (0.89,1.64)</td>
+      <td>0.22</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Adjusted for the other variables in the table. Male (Reference) vs. Female: OR = 1.62 (95% CI: 1.42,1.84; p<0.0001).†Number of respondents who did not answer affirmatively for any listed co-morbidities._
 
 Each additional year of age was associated with less likelihood to make any changes to their lifestyle or daily activities by 2% per year of age for men (OR = 0.98, 95% CI: 0.96, 1.00; p=0.02) and by 3% per year of age for women (OR = 0.97, 95% CI: 0.96, 0.99; p=0.0005) (Table 4). Compared to men, women were 62% (95% CI: 1.42, 1.84; p<0.0001) more likely to make any changes to their lifestyle or daily activities. Each additional year of education was associated with more likelihood to make changes to their lifestyle or daily activities, by 12% per year of education in men (OR = 1.12, 95% CI: 1.07, 1.17; p<0.0001), and by 10% per year in women (OR = 1.10, 95% CI: 1.06, 1.15; p<0.0001).
 
@@ -73,11 +615,369 @@ Compared to men with no comorbidity, men with heart disease were 41% (95% CI: 1.
 
 Similarly, compared to White men, Latino men were 26% (95% CI: 0.55, 0.99; p=0.04) and Native Hawaiian men 36% (95% CI: 0.47, 0.88; p=0.005) less likely to postpone regular health care visits due to the COVID-19 pandemic (Table 5). Compared to White women, Native Hawaiian women were 40% (95% CI: 0.47, 0.78; p=0.0001) less likely to postpone regular healthcare visits due to the COVID-19 pandemic.
 
+**Table 5.**
+ Odds ratio* for postponing regular health care visits due to COVID-19 pandemic by demographics and comorbidities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Male (N=2998)</th>
+      <th colspan="3">Female (N=3881)</th>
+    </tr>
+    <tr>
+      <th>Yes (n)</th>
+      <th>Odds Ratio(95% CI)</th>
+      <th>p-Value</th>
+      <th>Yes (n)</th>
+      <th>Odds Ratio(95% CI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ethnicity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White (N=3,026)</td>
+      <td>770</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+      <td>1,042</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Japanese American (N=2,224)</td>
+      <td>560</td>
+      <td>0.88 (0.74,1.04)</td>
+      <td>0.13</td>
+      <td>715</td>
+      <td>0.93 (0.80,1.09)</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Latino (N=519)</td>
+      <td>114</td>
+      <td>0.74 (0.55,0.99)</td>
+      <td>0.04</td>
+      <td>187</td>
+      <td>1.32 (0.99,1.76)</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Native Hawaiian (N=508)</td>
+      <td>88</td>
+      <td>0.64 (0.47,0.88)</td>
+      <td>0.005</td>
+      <td>163</td>
+      <td>0.60 (0.47,0.78)</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>African American (N=354)</td>
+      <td>61</td>
+      <td>1.01 (0.67,1.52)</td>
+      <td>0.98</td>
+      <td>155</td>
+      <td>1.01 (0.75,1.34)</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Other (N=248)</td>
+      <td>32</td>
+      <td>0.87 (0.51,1.49)</td>
+      <td>0.62</td>
+      <td>107</td>
+      <td>0.77 (0.56,1.05)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Age (Years) (N=6,879)</td>
+      <td>1,625</td>
+      <td>1.00 (0.99,1.02)</td>
+      <td>0.85</td>
+      <td>2,369</td>
+      <td>0.98 (0.97,0.99)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Maximum Education Obtained (Years) (N=6,836)</td>
+      <td>1,617</td>
+      <td>1.04 (1.00,1.08)</td>
+      <td>0.04</td>
+      <td>2,354</td>
+      <td>1.03 (1.00,1.06)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Comorbidities</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None (N=2,301)†</td>
+      <td>445</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+      <td>800</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heart Disease (N=1,032)</td>
+      <td>382</td>
+      <td>1.37 (1.13,1.65)</td>
+      <td>0.001</td>
+      <td>266</td>
+      <td>1.18 (0.94,1.49)</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Hypertension (N=3,266)</td>
+      <td>819</td>
+      <td>1.16 (1.00,1.35)</td>
+      <td>0.06</td>
+      <td>1,141</td>
+      <td>1.16 (1.00,1.33)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Diabetes (N=1,106)</td>
+      <td>314</td>
+      <td>1.15 (0.94,1.40)</td>
+      <td>0.18</td>
+      <td>346</td>
+      <td>1.00 (0.82,1.22)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Lung Disease, COPD, or Asthma (N=821)</td>
+      <td>179</td>
+      <td>1.25 (0.98,1.61)</td>
+      <td>0.08</td>
+      <td>335</td>
+      <td>1.12 (0.92,1.36)</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Kidney Disease (N=339)</td>
+      <td>100</td>
+      <td>1.16 (0.83,1.62)</td>
+      <td>0.40</td>
+      <td>123</td>
+      <td>1.49 (1.05,2.11)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Diagnosed w/ Cancer in past 5 yrs. (N=920)</td>
+      <td>268</td>
+      <td>1.04 (0.85,1.27)</td>
+      <td>0.73</td>
+      <td>305</td>
+      <td>1.51 (1.21,1.88)</td>
+      <td>0.0003</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Adjusted for the other variables in the table. Male (Reference) vs. Female: OR = 1.43 (95% CI: 1.29,1.58; p<0.0001).†Number of respondents who did not answer affirmatively for any listed co-morbidities._
+
 Each additional year of age in women was associated with a lower likelihood to postpone regular healthcare visits by 2% per year (OR = 0.98, 95% CI: 0.97, 0.99; p=0.0006) (Table 5). Each additional year of education in men was associated with a higher likelihood to postpone regular health care visits, by 45% per year (OR = 1.04, 95% CI: 1.00, 1.08; p=0.04). Compared to men, women were 43% (95% CI: 1.29, 1.58; p<0.0001) more likely to postpone regular health care visits.
 
 Compared to men with no comorbidity, men with heart disease were 37% (95% CI: 1.13, 1.65; p=0.0011) more likely to postpone regular health care visits (Table 5). Compared to women with no comorbidity, women with hypertension were 16% (95% CI: 1.00, 1.33; p=0.04), those with kidney disease 49% (95% CI: 1.05, 2.11; p=0.03), and those diagnosed with cancer in the past 5 years 51% (95% CI: 1.21, 1.88; p=0.0003), more likely to postpone regular health care visits.
 
 Compared to White men, Japanese American men were 72% (95% CI: 0.18, 0.45; p<0.0001) less likely to postpone any cancer screening test/procedure due to the COVID-19 pandemic (Table 6). Compared to White women, Japanese American women were 40% (95% CI: 0.46, 0.78; p=0.0002) less likely to postpone any cancer screening test/procedure due to the COVID-19 pandemic.
+
+**Table 6.**
+ Odds ratio* for postponing cancer screening test/procedure due to COVID-19 pandemic by demographics and comorbidities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Male (N=2988)</th>
+      <th colspan="3">Female (N=3866)</th>
+    </tr>
+    <tr>
+      <th>Yes (n)</th>
+      <th>Odds Ratio(95% CI)</th>
+      <th>p-Value</th>
+      <th>Yes (n)</th>
+      <th>Odds Ratio(95% CI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ethnicity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White (N=3,018)</td>
+      <td>123</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+      <td>227</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Japanese American (N=2220)</td>
+      <td>23</td>
+      <td>0.28 (0.18,0.45)</td>
+      <td>&lt;0.0001</td>
+      <td>90</td>
+      <td>0.60 (0.46,0.78)</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>Native Hawaiian (N=508)</td>
+      <td>7</td>
+      <td>0.48 (0.21,1.05)</td>
+      <td>0.07</td>
+      <td>32</td>
+      <td>0.73 (0.48,1.11)</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>African American (N=353)</td>
+      <td>7</td>
+      <td>0.90 (0.40,2.03)</td>
+      <td>0.81</td>
+      <td>27</td>
+      <td>1.01 (0.65,1.57)</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Latino (N=509)</td>
+      <td>8</td>
+      <td>0.48 (0.23,1.03)</td>
+      <td>0.06</td>
+      <td>25</td>
+      <td>0.90 (0.57,1.44)</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1</td>
+      <td>0.24 (0.03,1.80)</td>
+      <td>0.17</td>
+      <td>21</td>
+      <td>0.86 (0.53,1.41)</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>Age (Years) (N=6854)</td>
+      <td>169</td>
+      <td>0.96 (0.93,1.00)</td>
+      <td>0.06</td>
+      <td>422</td>
+      <td>0.96 (0.94,0.98)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Maximum Education Obtained (Years) (N=6,811)</td>
+      <td>166</td>
+      <td>1.03 (0.95,1.12)</td>
+      <td>0.50</td>
+      <td>421</td>
+      <td>1.10 (1.05,1.16)</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>Comorbidities</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None (N=2295)†</td>
+      <td>47</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+      <td>121</td>
+      <td>1.00 (Ref)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heart Disease (N=1028)</td>
+      <td>29</td>
+      <td>0.82 (0.53,1.27)</td>
+      <td>0.37</td>
+      <td>52</td>
+      <td>1.21 (0.87,1.69)</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Hypertension (N=3255)</td>
+      <td>75</td>
+      <td>1.07 (0.76,1.50)</td>
+      <td>0.70</td>
+      <td>195</td>
+      <td>1.07 (0.86,1.34)</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>Diabetes (N=1099)</td>
+      <td>22</td>
+      <td>0.88 (0.54,1.44)</td>
+      <td>0.61</td>
+      <td>53</td>
+      <td>0.83 (0.59,1.16)</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Lung Disease, COPD, or Asthma (N=815)</td>
+      <td>17</td>
+      <td>0.84 (0.48,1.47)</td>
+      <td>0.54</td>
+      <td>79</td>
+      <td>1.50 (1.14,1.98)</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Kidney Disease (N=337)</td>
+      <td>7</td>
+      <td>0.89 (0.40,2.00)</td>
+      <td>0.78</td>
+      <td>18</td>
+      <td>0.94 (0.55,1.58)</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Diagnosed w/ Cancer in past 5 yrs. (N=918)</td>
+      <td>71</td>
+      <td>3.54 (2.52,4.95)</td>
+      <td>&lt;0.0001</td>
+      <td>112</td>
+      <td>3.22 (2.50,4.14)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Adjusted for the other variables in the table. Male (Reference) vs. Female: OR = 2.37 (95% CI: 1.95,2.88; p<0.0001).†Number of respondents who did not answer affirmatively for any listed co-morbidities._
 
 Women were 4% less likely for each additional year of age (95% CI: 0.94, 0.98; p=0.001) to postpone any cancer screening test/procedure (Table 6). Women were 10% more likely for each additional year of education (95% CI: 1.05, 1.16; p=0.0004) to postpone any cancer screening test/procedure. Compared to men, women were 137% (95% CI: 1.95, 2.88; p<0.0001) more likely to postpone any cancer screening test/procedure.
 
@@ -95,13 +995,13 @@ Lastly, women with more education, women (compared to men), women and men diagno
 
 Native Hawaiian men and women and those of Other race/ethnicity (compared to White men or women), and older men and women were less likely to make changes to their lifestyle or daily activities during the COVID-19 pandemic. Latino and Native Hawaiian men, Native Hawaiian women, and older women were less likely to postpone regular healthcare visits during the COVID-19 pandemic. Lastly, Japanese American men and women and older women were less likely to postpone any cancer screening test/procedure during the COVID-19 pandemic.
 
-## Effect on healthcare visits
+### Effect on healthcare visits
 
 From May 2020 to September 2020, 54.2% of male and 61.3% of female MEC survey respondents reported postponing regular health care visits. These numbers are consistent with a report published by The Commonwealth Fund in May 2020 (Mehrotra et al., 2020). In the U.S., early in the pandemic from February 2020, the number of visits to ambulatory care practice declined by nearly 60% (Mehrotra et al., 2020). Declines in visits varied by geographic area and clinical specialty. By April 2020, a rebound of in-person visits had occurred and appears largest in the South Central (East and West) census division (Texas, Oklahoma, Arkansas, Louisiana, Mississippi, Alabama, Tennessee, and Kentucky) but the number of visits was still roughly one-third lower than before the pandemic. As in-person visits declined, telehealth visits increased rapidly before plateauing. By mid-May 2020, a rebound in visits had occurred across all specialties. But the relative decline in visits remained largest among surgical and procedural specialties and pediatrics. The greater effect on surgical and procedural specialties was observed in the MEC survey responses, as visits with eye specialists, dermatologists, cardiologists, and dentists, were more often reported to be postponed. In the Commonwealth Fund study, the relative decline was smaller in other specialties, such as adult primary care. The MEC study findings differ as visits for this specialty were the most frequently postponed in our data. In addition, researchers from Harvard Medical School examined the trends in outpatient care delivery and telemedicine in a cohort of 16,740,365 enrollees captured from the OptumLabs Data Warehouse. The weekly rate of telemedicine visits increased during the pandemic period starting from January 1, 2020, and peaking in the week of April 15, 2020, before declining by the week of June 10, 2020. By the last 4 weeks of the study period, May 20 through June 16, Hawai‘i had a –73.2% change and California had a –31.0% change from baseline in weekly total visits per 1000 members. For visits delivered via telemedicine, Hawai‘i had a 24.5% increase from baseline and California had a 29.5% increase (Patel et al., 2021). Although the COVID-19 pandemic led to widespread disruptions in medical care, it is possible that patients who avoided hospital visits had a positive outcome of lower risk of catching COVID-19. There may have been some benefit to the strategy of keeping patients out of the hospitals and physician offices. In the baseline MEC COVID Survey, only 49 men and 68 women, overall, reported an episode of COVID-19.
 
 The likelihood of postponing healthcare visits being related to the presence of comorbidities was also investigated. In the MEC Survey, men with heart disease (by 37%), women with hypertension (by 16%), kidney disease (by 49%), and those diagnosed with cancer in the past 5 years (by 51%) were more likely to postpone regular health care visits due to the COVID-19 pandemic. These findings were consistent with a study that examined factors associated with postponed health checkups during the COVID-19 pandemic in Germany (Hajek et al., 2021b). Researchers found the probability of postponed health checkups was positively associated with the presence of chronic disease (OR: 1.68, 95% CI: 1.15, 2.47), higher concern for a COVID-19 infection (OR: 1.44, 95% CI: 1.16, 1.78), and higher presumed severity of COVID-19 (OR: 1.17, 95% CI: 1.01, 1.35).
 
-## Effect on cancer screening
+### Effect on cancer screening
 
 Not many MEC survey respondents reported postponing a cancer screening test or procedure due to COVID-19. Only 5.7% of men and 11.0% of women did so. These numbers were lower than expected but could be explained by the older age of our sample. The recommended cut-off age for breast and colorectal cancer screening is 75 years old. Half of the respondents were aged 75 and older. However, when focusing on participants 75 years and younger, the numbers were similar to the overall sample size: 6.1% vs 5.7% of men overall and 12.3% vs 11.0% of women overall. The screening procedure the most frequently missed was mammography, followed by skin examination and colorectal cancer screening. Postponement of these cancer screening procedures is consistent with data from a published study looking at a sample of health claims clearinghouse records from 18 states containing 184 million claims from 30 million patients in 2019 and 94 million claims from 20 million patients for the first 6 months in 2020 (Martin et al., 2022). Mammograms and Pap smears were down nearly 80% in April 2020 compared to 2019. However, numbers for both services recovered throughout the summer and fall, with Pap smears and mammograms rebounding above 2019 levels in August 2020 and November 2020, respectively. Colonoscopies were down almost 90% in mid-April 2020, compared to 2019, and in December 2020 were still down about 15% compared to the previous year, representing a substantial but incomplete rebound in care delivered. The overall number of colonoscopies performed in 2020 declined by almost 25% from 2019.
 
@@ -111,10 +1011,10 @@ Effective cancer screenings can lead to an early diagnosis of cancer and improve
 
 The backlog of postponed or delayed cancer screenings will have a long-term clinical impact and potentially increase the cancer burden. A study from Canada examined the impact of episodic screening interruptions for breast and colorectal cancer (Yong et al., 2021). Using a simulation model, researchers projected a surge of cancer cases when screening resumes. For breast cancer screening, the simulation model suggests that a three-month interruption of breast cancer screening due to COVID-19 would result in 644,000 fewer screens being performed in Canada in 2020. A three-month interruption starting in 2020 could increase cases diagnosed at advanced stages (310 more) and breast cancer deaths (110 more) in Canada from 2020 to 2029. A six-month interruption starting in 2020 could lead to 670 extra advanced breast cancers and 250 additional breast cancer deaths in Canada from 2020 to 2029. For colorectal cancers, without service interruption, the simulation model estimated that 68,000 colonoscopies would have been performed in the six months since March 2020 in Canada. A six-month suspension of primary screening could increase cancer incidence by 2200 cases with 960 more cancer deaths over the lifetime. Longer interruptions, and reduced volumes of patients when screening resumes, would further increase excess cancer deaths. Since cancer diagnoses and deaths in the MEC are identified through linkages to cancer registries in HI and California, we will be able to examine whether a greater proportion of cancers were diagnosed at a late stage in the aftermath of the pandemic and investigate any differences among ethnic/racial groups. Similarly, through the linkage of the cohort to Medicare, we will be able to identify MEC members who developed COVID-19 and investigate long-term complications and survival across age and race.
 
-## Limitations
+### Limitations
 
 There are several limitations to our study. Although our study population is diverse, some subgroups of race/ethnicity (African Americans and Latinos) were under-represented compared to other subgroups. Additionally, the study sample is not fully representative of the entire MEC cohort, as the participants were more educated with higher percentages with at least some college education across all races/ethnicities. The survey respondents included a larger representation of Whites and Japanese Americans and a smaller representation of Latinos and African Americans compared to the MEC survivors in 2019. The effect of COVID-19 on cervical cancer screening was not investigated due to the older age of our participants. The data was self-reported so there is a chance of misclassification due to recall error. Lastly, the response rates were low across all races/ethnicities, and only 0.9% of male and 1.7% of female survey participants are living in a retirement or care home so these populations were most certainly underrepresented.
 
-## Conclusion
+### Conclusion
 
 The MEC COVID-19 survey demonstrated the possibility of using a mature cohort study of well-characterized individuals to characterize the effect of a public health emergency. The study revealed associations of factors like sex, race/ethnicity, age, education level, and comorbidities with cancer-related screening and healthcare among MEC participants during the COVID-19 pandemic in Hawai‘i and Los Angeles. The MEC COVID-19 survey results were consistent with other studies regarding the postponement of healthcare visits, surgical procedures, and cancer screenings during the pandemic. In the wake of the pandemic, increased monitoring of patients in high-risk groups for cancer and other diseases is of the utmost importance as the chance of undiagnosed cases and poor prognosis due to delayed screening and/or treatment increases.

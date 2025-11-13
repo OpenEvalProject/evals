@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04cdn2797 Center for Advanced Research on Platelet Signaling and Thrombosis Biology, Department of Biochemistry, Institute of Medical Sciences, Banaras Hindu University Varanasi India
+1. Center for Advanced Research on Platelet Signaling and Thrombosis Biology, Department of Biochemistry, Institute of Medical Sciences, Banaras Hindu University Varanasi India ([ROR:04cdn2797](https://ror.org/04cdn2797))
 
 † Corresponding author
 
 ## Abstract
 
-Notch signaling dictates cell fate decisions in mammalian cells including megakaryocytes. Existence of functional Notch signaling in enucleate platelets remains elusive. Transcripts/peptides of Notch1 and Delta-like ligand (DLL)–4 were detected in platelets isolated from human blood by RT-qPCR, Western analysis and flow cytometry. Platelet aggregation, granule secretion and platelet-leukocyte interaction were analyzed by lumi-aggregometry and flow cytometry. Platelet-derived extracellular vesicles were documented with Nanoparticle Tracking Analyzer. Platelet thrombus on immobilized collagen was quantified using microfluidics platform. Intracellular calcium was monitored by fluorescence spectrophotometry. Whole blood coagulation was studied by thromboelastography. Ferric chloride-induced mouse mesenteric arteriolar thrombosis was imaged by intravital microscopy. We demonstrate expression of Notch1, its ligand DLL-4 and their respective transcripts in human platelets. Synthesis and surface translocation of Notch1 and DLL-4 were upregulated by thrombin. DLL-4, in turn, instigated neighbouring platelets to switch to ‘activated’ phenotype through cleavage of Notch receptor and release of its intracellular domain (NICD), which was averted by inhibition of γ-secretase and phosphatidylinositol-3-kinase (PI3K). Inhibition of Notch signaling, too, restrained agonist-induced platelet activation, and significantly impaired arterial thrombosis in mice. Strikingly, prevention of DLL-4-Notch1 interaction by a blocking antibody abolished platelet aggregation and extracellular vesicle shedding induced by thrombin. Our study presents compelling evidence in support of non-canonical juxtacrine Notch signaling within platelet aggregates that synergizes with physiological agonists to generate occlusive intramural thrombi. Thus, Notch pathway can be a potential anti-platelet/anti-thrombotic therapeutic target. Research was supported by grants received by DD from JC Bose Fellowship (JCB/2017/000029), ICMR (71/4/2018-BMS/CAR), DBT (BT/PR-20645/BRB/10/1541/2016) and SERB (EMR/2015/000583). SNC, ME and VS are recipients of ICMR-Scientist-C, CSIR-SRF and UGC-SRF support, respectively. Funders had no role in design, analysis and reporting of study.
+Background:Notch signaling dictates cell fate decisions in mammalian cells including megakaryocytes. Existence of functional Notch signaling in enucleate platelets remains elusive.Methods:Transcripts/peptides of Notch1 and Delta-like ligand (DLL)–4 were detected in platelets isolated from human blood by RT-qPCR, Western analysis and flow cytometry. Platelet aggregation, granule secretion and platelet-leukocyte interaction were analyzed by lumi-aggregometry and flow cytometry. Platelet-derived extracellular vesicles were documented with Nanoparticle Tracking Analyzer. Platelet thrombus on immobilized collagen was quantified using microfluidics platform. Intracellular calcium was monitored by fluorescence spectrophotometry. Whole blood coagulation was studied by thromboelastography. Ferric chloride-induced mouse mesenteric arteriolar thrombosis was imaged by intravital microscopy.Results:We demonstrate expression of Notch1, its ligand DLL-4 and their respective transcripts in human platelets. Synthesis and surface translocation of Notch1 and DLL-4 were upregulated by thrombin. DLL-4, in turn, instigated neighbouring platelets to switch to ‘activated’ phenotype through cleavage of Notch receptor and release of its intracellular domain (NICD), which was averted by inhibition of γ-secretase and phosphatidylinositol-3-kinase (PI3K). Inhibition of Notch signaling, too, restrained agonist-induced platelet activation, and significantly impaired arterial thrombosis in mice. Strikingly, prevention of DLL-4-Notch1 interaction by a blocking antibody abolished platelet aggregation and extracellular vesicle shedding induced by thrombin.Conclusions:Our study presents compelling evidence in support of non-canonical juxtacrine Notch signaling within platelet aggregates that synergizes with physiological agonists to generate occlusive intramural thrombi. Thus, Notch pathway can be a potential anti-platelet/anti-thrombotic therapeutic target.Funding:Research was supported by grants received by DD from JC Bose Fellowship (JCB/2017/000029), ICMR (71/4/2018-BMS/CAR), DBT (BT/PR-20645/BRB/10/1541/2016) and SERB (EMR/2015/000583). SNC, ME and VS are recipients of ICMR-Scientist-C, CSIR-SRF and UGC-SRF support, respectively. Funders had no role in design, analysis and reporting of study.
 
 ## Introduction
 
@@ -27,99 +27,597 @@ Platelets are circulating blood cells having central role in hemostasis and path
 
 ## Materials and methods
 
-## Methods
+**Key resources table**
 
-## Study design
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Notch1</td>
+      <td>Cell Signaling Technology</td>
+      <td>4380</td>
+      <td>WB 1:1000FC 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DLL4</td>
+      <td>Novus Biologicals</td>
+      <td>NB600 892</td>
+      <td>WB 1:1000FC 1:500Aggregation 2–20 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti- cleaved Notch1</td>
+      <td>Cell Signaling Technology</td>
+      <td>4147</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-phospho(Ser473)-AKT</td>
+      <td>Cell Signaling Technology</td>
+      <td>4051</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-AKT</td>
+      <td>Cell Signaling Technology</td>
+      <td>9272</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho( Tyr467)-PI3K</td>
+      <td>Elabscience</td>
+      <td>E-AB-20966</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-PI3K</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-1637</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-p-Tyr</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-7020</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-actin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2066</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Mouse anti-human CD62P</td>
+      <td>BD Biosciences</td>
+      <td>550561</td>
+      <td>5 µl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-Mouse anti-human PAC-1</td>
+      <td>BD Biosciences</td>
+      <td>340507</td>
+      <td>5 µl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-Mouse anti-human CD14</td>
+      <td>BD Biosciences</td>
+      <td>555397</td>
+      <td>10 µl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Mouse anti-human CD41a</td>
+      <td>BD Biosciences</td>
+      <td>559777</td>
+      <td>10 µl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 488-Rat anti-mouse GPIbβ</td>
+      <td>Emfret Analytics</td>
+      <td>X488</td>
+      <td>0.1 µg/g body weight</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG from rabbit serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>I5006</td>
+      <td>10–20 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-Goat anti-rabbit IgG</td>
+      <td>Invitrogen</td>
+      <td>A11008</td>
+      <td>1:100 (Notch1)1:200 (DLL-4)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Goat anti-rabbit IgG</td>
+      <td>Bangalore Genei</td>
+      <td>114038001 A</td>
+      <td>See Methods- Western analysis</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Goat anti-mouse IgG</td>
+      <td>Bangalore Genei</td>
+      <td>114068001 A</td>
+      <td>See Methods- Western analysis</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DLL-1</td>
+      <td>Sino Biological</td>
+      <td>11635-H08H</td>
+      <td>15 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DLL-4</td>
+      <td>Sino Biological</td>
+      <td>10171-H02H</td>
+      <td>7.5–15 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Thrombin receptor-activating peptide (TRAP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>S1820</td>
+      <td>2–2.5 µM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine serum albumin (BSA)</td>
+      <td>VWR Life Science</td>
+      <td>0332–500 G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Thrombin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6884</td>
+      <td>0.1–1 U/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagen</td>
+      <td>Chrono-log</td>
+      <td>385</td>
+      <td>2–2.5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound/Inhibitor</td>
+      <td>N-(N-(3, 5-difluorophenacetyl)-L-alanyl)-S-phenyl-glycine t-butyl ester (DAPT)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D5942</td>
+      <td>10–40 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound/Inhibitor</td>
+      <td>Dibenzazepine (DBZ)</td>
+      <td>Selleckchem</td>
+      <td>YO-01027</td>
+      <td>10–30 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound/Inhibitor</td>
+      <td>LY-294002</td>
+      <td>Sigma-Aldrich</td>
+      <td>L9908</td>
+      <td>80 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound/Inhibitor</td>
+      <td>Ro-31–8425</td>
+      <td>Calbiochem</td>
+      <td>557514</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound/Inhibitor</td>
+      <td>Puromycin</td>
+      <td>Calbiochem</td>
+      <td>540222</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound/Inhibitor</td>
+      <td>Prostaglandin E1</td>
+      <td>Sigma-Aldrich</td>
+      <td>P5515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/reagent</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D5879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/reagent</td>
+      <td>Diethylpyrocarbonate (DEPC)</td>
+      <td>Amresco</td>
+      <td>E174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/reagent</td>
+      <td>Ethylene glycol tetraacetic acid (EGTA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>E-4378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/reagent</td>
+      <td>Ethylenediaminetetraacetic acid (EDTA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>E9884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/reagent</td>
+      <td>MnCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>M3634</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/reagent</td>
+      <td>Xylazine</td>
+      <td>Sigma-Aldrich</td>
+      <td>X1251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/reagent</td>
+      <td>Kaolin</td>
+      <td>Haemonetics</td>
+      <td>6300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or Kit</td>
+      <td>Cell Titer-Glo Luminescent Cell Viability Assay Kit</td>
+      <td>Promega</td>
+      <td>G7570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or Kit</td>
+      <td>Chrono-lume luciferin luciferase reagent</td>
+      <td>Chrono-log</td>
+      <td>395</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or Kit</td>
+      <td>High-capacity reverse transcription kit</td>
+      <td>Applied Biosystems</td>
+      <td>4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Calcein AM</td>
+      <td>Invitrogen</td>
+      <td>C3100MP</td>
+      <td>Cell-permeable dye (2 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fura-2 AM</td>
+      <td>Calbiochem</td>
+      <td>344905</td>
+      <td>Cell-permeable dye (2 µM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYBR Green SuperMix</td>
+      <td>Bio-Rad</td>
+      <td>170–8882</td>
+      <td>Dye; see Methods- Quantitative Real-Time PCR</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRIzol</td>
+      <td>Invitrogen</td>
+      <td>15596026</td>
+      <td>See Methods- RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fibrinogen (Alexa Fluor 488-conjugated)</td>
+      <td>Invitrogen</td>
+      <td>F13191</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Polyvinylidene fluoride (PVDF) membrane</td>
+      <td>Millipore</td>
+      <td>IPVH00010</td>
+      <td>See Methods- Western analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon western chemiluminescent HRP substrate</td>
+      <td>Millipore</td>
+      <td>WBKLS0100</td>
+      <td>See Methods- Western analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD FACS Lysing Solution</td>
+      <td>BD Biosciences</td>
+      <td>349202</td>
+      <td>See Methods- Study of platelet-leukocyte interaction</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Restore Western blot stripping buffer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>21059</td>
+      <td>See Methods- Western analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Skimmed milk powder</td>
+      <td>Millipore</td>
+      <td>70166</td>
+      <td>See Methods- Western analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Methods
+
+#### Study design
 
 No calculations were performed to predetermine sample size. Each experiment was performed independently at least three times or sample size was chosen based on effect size observed during pilot experiments. No inclusion and exclusion criteria were set for experimental units or data points. No outliers were excluded from the analysis. The results reported for all in vitro and ex vivo experiments represent biological replicates (paired observations made on whole blood and/or platelet populations isolated from different healthy volunteers). The results were successfully reproduced with each biological replicate. The results of all in vivo experiments represent independent observations in individual mice. All attempts at reproducing results were successful. All in vitro and ex vivo experiments involved paired observations. No randomization was performed for in vivo experiments. Mice allocated to either control or treatment groups were matched for age, sex and body weight. Other confounding factors were not controlled. Investigators were not blinded to group allocation during data collection and/or analysis.
 
-## Platelet preparation
+#### Platelet preparation
 
 Platelets were isolated from freshly drawn human blood by differential centrifugation. Briefly, peripheral venous blood collected in acid citrate dextrose (ACD) vial was centrifuged at 100×g for 20 min to obtain platelet-rich plasma (PRP). PRP was then centrifuged at 800×g for 7 min to sediment platelets after adding 1 µM PGE1 and 2 mM EDTA. Pellet was washed with buffer A (20 mM HEPES, 134 mM NaCl, 2.9 mM KCl, 1 mM MgCl2, 0.34 mM NaH2PO4, 12 mM NaHCO3; pH 6.2) supplemented with 5 mM glucose, 0.35 g/dl BSA and 1 µM PGE1. Finally, platelets were resuspended in buffer B (20 mM HEPES, 134 mM NaCl, 2.9 mM KCl, 1 mM MgCl2, 0.34 mM NaH2PO4, 12 mM NaHCO3; pH 7.4) supplemented with 5 mM glucose. The final cell count was adjusted to 2–4×108 cells/ml using automated cell counter (Multisizer 4, Beckman Coulter). Leukocyte contamination in platelet preparation was found to be less than 0.015%. All steps were carried out under sterile conditions and precautions were taken to maintain the cells in resting condition. Blood samples were drawn from healthy adult human participants after obtaining written informed consent, strictly as per recommendations and as approved by the Institutional Ethical Committee of the Institute of Medical Sciences, Banaras Hindu University (Approval No. Dean/2015–16/EC/76). The study methodologies conformed to the standards set by the Declaration of Helsinki.
 
-## Platelet aggregation
+#### Platelet aggregation
 
 Washed human platelets were stirred (12,00 rpm) at 37 °C in a whole blood/optical lumi-aggregometer (Chrono-log model 700–2) for 1 min, followed by addition of agonist (thrombin, TRAP, or collagen) either in presence or absence of reagents. Aggregation was recorded as percent light transmitted through the sample as a function of time, while blank represented 100% light transmission. Platelet aggregation in whole blood, induced by either TRAP or collagen was recorded as change in electrical resistance (impedance) as a function of time.
 
-## Western analysis
+#### Western analysis
 
 Proteins from platelet lysate were separated on 10% SDS-PAGE and electrophoretically transferred onto PVDF membranes by employing either a TE77 PWR semi dry blotter (GE Healthcare) at 0.8 mA/cm2 for 1 hr 45 min or Trans-Blot Turbo Transfer System (Bio-Rad) at 20 V/1.3 A for 30 min (for Notch1 and cleaved Notch1/NICD) or 20 min (for DLL-4, pY99, p-PI3K and pAKT). Membranes were blocked with either 5% skimmed milk or 5% bovine serum albumin in 10 mM Tris HCl, 150 mM NaCl, pH 8.0 containing 0.05% Tween 20 (TBST) for 1 hr at room temperature (RT) to block residual protein binding sites. Membranes were incubated overnight at 4 °C with specific primary antibodies, followed by 3 washings with TBST for 5 min each. Blots were incubated with HRP-conjugated secondary antibodies (goat-anti-rabbit, 1:2500 for anti-Notch1, anti-DLL-4, anti-cleaved Notch1, 1:1000, for p-PI3K, 1:1500 for anti-AKT and 1:40000 for anti-actin; and goat anti-mouse, 1:50000, for anti-pY99, 1:1500, for PI3K, 1:1000 for anti-pAKT) for 1 hr and 30 min at RT, followed by similar washing steps. Antibody binding was detected using enhanced chemiluminescence detection kit (Millipore). Membranes stained for p-PI3K and pAKT were subsequently stripped by incubating in stripping buffer at RT for 30 min, washed, blocked and reprobed employing either anti-PI3K or anti-AKT antibody. Images were acquired on multispectral imaging system (UVP BioSpectrum 800 Imaging System) and quantified using VisionWorks LS software (UVP).
 
-## Analysis of Notch1 and DLL-4 expression on platelet surface
+#### Analysis of Notch1 and DLL-4 expression on platelet surface
 
 Washed human platelets were stimulated with thrombin (1 U/ml) at 37 °C for 5 min under non-stirring condition. Cells were incubated with either anti-Notch1 antibody (1:100) for 1 hr at RT or anti-DLL-4 antibody (1:500) for 30 min at RT, followed by staining with Alexa Fluor 488-labelled anti-rabbit IgG (1:100, for Notch1; and 1:200, for DLL-4), for 30 min at RT in dark. Cells were washed, resuspended in sheath fluid and were analyzed on a flow cytometer (FACSCalibur, BD Biosciences). Forward and side scatter voltages were set at E00 and 350, respectively, with a threshold of 52 V. An amorphous gate was drawn to encompass platelets separate from noise and multi-platelet particles. All fluorescence data were collected using 4-quadrant logarithmic amplification for 10000 events in platelet gate from each sample and analyzed using CellQuest Pro Software.
 
-## Secretion from platelet α-granules and dense bodies
+#### Secretion from platelet α-granules and dense bodies
 
 Secretion from platelet α-granules in response to a stimulus was quantified by surface expression of P-selectin (CD62P). Washed human platelets pre-treated with either DAPT (10 µM) or vehicle for 10 min at RT followed by treatment with either DLL-4 (15 µg/ml) or DLL-1 (15 µg/ml) for 10 min at RT or thrombin (0.1 and 1 U/ml) for 5 min at 37 °C. In other experiments cell were pre-incubated with DLL-4 (7.5 µg/ml) followed by stimulation with thrombin (0.1 U/ml) for 5 min at 37 °C. Cells were stained with PE-labelled anti-CD62P antibody (5 % v/v) for 30 min at RT in dark. Samples were suspended in sheath fluid and subjected to flow cytometry. Secretion of adenine nucleotides from platelet dense granules was measured employing Chrono-lume reagent ( 0.2 μM luciferase/luciferin). Luminescence generated was monitored in a lumi-aggregometer contemporaneous with platelet aggregation (see above). Alternatively, dense granule releasate was quantitated using Cell Titer-Glo Luminescent Cell Viability Assay Kit where cells were sedimented at 800×g for 10 min and supernatant was incubated with equal volume of Cell Titer-Glo reagent for 10 min at RT. Luminescence was recorded in a multimodal microplate reader (BioTeK model Synergy H1).
 
-## Study of platelet integrin activation and fibrinogen binding
+#### Study of platelet integrin activation and fibrinogen binding
 
 Platelet stimulation induces conformational switch in integrins αIIbβ3 that allows high-affinity binding of fibrinogen leading to cell-cell aggregate formation. Washed human platelets were pre-treated with either DAPT (10 µM), LY-294002 (80 µM) or Ro-31-8425 (20 µM) or vehicle for 10 min at RT followed by exposure to DLL-4 (15 µg/ml) or DLL-1 (15 µg/ml) for 10 min at RT or thrombin (0.1, 0.5 and 1 U/ml) for 5 min at 37 °C. In other experiments cells were pre-incubated with DLL-4 (7.5 µg/ml) followed by stimulation with thrombin (0.1 U/ml) for 5 min at 37 °C. Cells were stained with either FITC-labelled PAC-1 antibody that specifically recognizes active conformation of αIIbβ3 (5 % v/v) or Alexa Fluor 488-labelled fibrinogen (10 µg/ml) for 30 min at RT in dark. Samples were finally suspended in sheath fluid, and analyzed by flow cytometry.
 
-## Isolation and analysis of platelet-derived extracellular vesicles (PEVs)
+#### Isolation and analysis of platelet-derived extracellular vesicles (PEVs)
 
 PEVs were isolated and characterized as described previously (Chaurasia et al., 2019; Kushwaha et al., 2018). Platelets were pre-incubated either with DAPT (10 µM) or DBZ (10 µM) for 10 min, followed by treatment with DLL-4 (15 µg/ml) for 10 min at RT. Cells were sedimented at 800×g for 10 min, and then at 1200×g for 2 min at 22 °C ͦ to obtain PEVs cleared of platelets, which were analyzed with Nanoparticle Tracking Analyzer (NTA) where a beam from solid-state laser source (635 nm) was allowed to pass through the sample. Light scattered by rapidly moving particles in suspension in Brownian motion at RT was observed under 20 X microscope. This revealed hydrodynamic diameters of particles, calculated using Stokes Einstein equation, within range of 10 nm to 1 µm and concentration between 107 and 109 /ml. The average distance moved by each EV in x and y directions were captured with CCD camera (30 frames/s) attached to the microscope. Both capture and analysis were performed using NanoSight LM10 (Malvern) and NTA 2.3 analytical software, which provide an estimate of particle size and counts in sample.
 
-## Measurement of intracellular free calcium
+#### Measurement of intracellular free calcium
 
 Intracellular calcium was measured as described (Chaurasia et al., 2019). Briefly, platelet-rich plasma (PRP) was isolated from fresh human blood and incubated with Fura-2 AM (2 µM) at 37 °C for 45 min in dark. Fura-2 labelled platelets were isolated, washed and finally resuspended in buffer B. Fluorescence for each sample was recorded in 400 µl aliquots of platelet suspensions at 37 °C under non-stirring condition by Hitachi fluorescence spectrophotometer (model F-2500). Excitation wavelengths were 340 and 380 nm and emission wavelength was set at 510 nm. Changes in intracellular free calcium concentration, [Ca2+]i, was monitored from fluorescence ratio (340/380) using Intracellular Cation Measurement Program in FL Solutions software. Fmax was determined by lysing the cells with 40 µM digitonin in presence of saturating CaCl2. Fmin was determined by the addition of 2 mM EGTA. Intracellular free calcium was calibrated according to the derivation of Grynkiewicz et al., 1985.
 
-## Study of platelet-leukocyte interaction
+#### Study of platelet-leukocyte interaction
 
 Fresh human blood (20 µl) was added to a cocktail containing 10 µl each from APC-anti-CD41a (platelet-specific) and FITC-anti-CD14 (leukocyte-specific) antibodies and mixed gently. Samples were treated with either DAPT (40 µM) or vehicle for 10 min, followed by incubation with either TRAP (2 µM) or DLL-4 (15 µg/ml) for 15 min at RT. RBCs were lysed with 800 µl FACS lysis solution (1 X, BD Biosciences) for 10 min at RT. Platelet-leukocyte interaction was analyzed on a flow cytometer. Side scatter voltage was set at 350 with a threshold of 52 V and amorphous gates were drawn to encompass neutrophils and monocytes separate from noise. A dot plot of side scatter (SSC) versus log FITC-CD14 fluorescence was created in the CellQuest Pro software. Amorphous gates were drawn for monocyte (high fluorescence and low SSC) and neutrophil (low fluorescence and high SSC) populations. All fluorescence data were collected using 4-quadrant logarithmic amplification for 1000 events in either neutrophil or monocyte gate from each sample and analyzed using CellQuest Pro Software.
 
-## Thromboelastography (TEG)
+#### Thromboelastography (TEG)
 
 Coagulation parameters in whole blood were studied by employing Thromboelastograph 5000 Hemostasis Analyzer System (Haemonetics) and TEG analytical software. Whole blood (1 ml) was incubated either with DAPT (20 µM) or vehicle for 10 min at RT, followed by transfer to citrated kaolin tubes with proper mixing. CaCl2 (20 µl) was added to 340 µl sample to initiate coagulation cascade. Mixture was placed in disposable TEG cups and data were collected as per to manufacturer instructions until maximum amplitude was reached or 60 min had elapsed.
 
-## Intravital imaging of thrombus formation in murine mesenteric arterioles
+#### Intravital imaging of thrombus formation in murine mesenteric arterioles
 
 Ferric chloride-induced mesenteric arteriolar thrombosis in mice was imaged by intravital microscopy as previously described (Kulkarni et al., 2019; Chaurasia et al., 2019) with minor modifications. The animal study was ethically approved by the Central Animal Ethical Committee of Institute of Medical Sciences, Banaras Hindu University (Approval No. Dean/2017/CAEC/83). All efforts were made to minimize the number of animals used, and their suffering. Mice (species: Mus musculus; strain: Swiss albino; sex: male and female; age: 4-5 weeks old; weight: 8-10 g each) were anaesthetized with intraperitoneal injection of ketamine/xylazine cocktail (100 mg/kg ketamine and 10 mg/kg xylazine). Anti-GPIbβ antibody (DyLight 488-labelled, 0.1 µg/g body weight) diluted in 50 µl sterile PBS was injected into retro-orbital plexus of mice in order to fluorescently label circulating platelets. Mesentery was exposed through a mid-line incision in abdomen and kept moist by superfusion with warm (37 °C) sterile PBS. An epifluorescence inverted video microscope (Nikon model Eclipse Ti-E) equipped with monochrome CCD cooled camera was employed to image isolated mesenteric arterioles of diameter 100-150 µm. The arteriole was injured by topically placing a Whatman filter paper saturated with ferric chloride (10%) solution for 3 min and thrombosis in the injured vessel was monitored in real time for 40 min or until occlusion. Movies were subsequently analyzed with Nikon image analysis software (NIS Elements) to determine (a) the time required for formation of first thrombus (>20 µm in diameter), (b) time required for occlusion of the vessel i.e. time required after injury till stoppage of blood flow for 30 s, and (c) thrombus growth rate i.e. growth of a thrombus (>30 µm diameter) followed over a period of 3 min. Fold increase was calculated by dividing diameter of thrombus at given time (n) by the diameter of the same thrombus at time (0). Time 0 was defined as the time point at which thrombus diameter first reached the size 30 µm approximately.
 
-## Study of platelet thrombus formation on immobilized collagen matrix under arterial shear
+#### Study of platelet thrombus formation on immobilized collagen matrix under arterial shear
 
 Platelet adhesion and thrombus growth on immobilized collagen matrix was quantified by using BioFlux (Fluxion Biosciences) microfluidics system as described previously (Sonkar et al., 2019). Wells of high-shear plates were coated with 50 µl collagen (from 100 µg/ml stock) at 10 dynes/cm2 for 30 s and were left for 1 hr at RT. Wells were blocked with 1% bovine serum albumin at 10 dynes/cm2 for 15 min at RT. Platelets stained with Calcein AM (2 µg/ml) were perfused over collagen at physiological arterial shear rate (1500 sec–1) for 5 min. Adhesion of platelets and thrombus formation in a fixed field over time was recorded. Representative images from 5 to 10 different fields were captured and total area occupied by thrombi at 5 min in 5 representative fields was analyzed using ImageJ software (National Institutes of Health).
 
-## Quantitative real-time PCR
+#### Quantitative real-time PCR
 
-## RNA extraction
+##### RNA extraction
 
 Platelets were isolated from human blood as described above. Precaution was taken to prevent leukocyte contamination. Cells were counted with Beckman Coulter Counter Multisizer 4. Total RNA extraction, reverse transcription and qRT-PCR were carried out as described (Kumari et al., 2015). Total RNA was extracted from platelets using TRIzol reagent according to the protocol of the manufacturer and suspended in DEPC-treated water.
 
-## Reverse transcription
+##### Reverse transcription
 
 Platelet RNA (1 µg) was transcribed to cDNA using a high-capacity cDNA reverse transcription kit (Applied Biosystems) according to the instructions of the manufacturer. Samples were amplified in a PTC-150 thermal cycler (MJ Research) by using the following program: 25 °C for 10 min, 37 °C for 2 hr, and 85 °C for 5 min.
 
-## Quantitative real-Time PCR
+##### Quantitative real-Time PCR
 
 Primers were designed using the latest version of Primer3 input software. The primers (forward and reverse) for target genes were obtained from Eurofins Genomics and presented in Table 1. Glyceraldehyde 3-phosphate dehydrogenase (GAPDH) and ACTB were used as the reference genes. We performed real-time PCR employing SYBR Green SuperMix in a CFX-96 real-time PCR system (Bio-Rad). Thermal cycling conditions were as follows: 95 °C for 3 min, followed by 40 cycles consisting of 10 s of denaturation at 95 °C, 10 s of annealing (at temperatures mentioned in the Table 1), and extension at 72 °C. A melt peak analysis of amplicons was carried out to rule out nonspecific amplifications.
 
-## Statistical methods
+**Table 1.**
+ Details of primers employed in amplification reactions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genes</th>
+      <th>Forward Primers (5’ to 3’)</th>
+      <th>Reverse Primers (5’ to 3’)</th>
+      <th>Amplicon Size (bp)</th>
+      <th>Annealing Temp (°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GAPDH</td>
+      <td>GAAGGTGAAGGTCGGAGTC</td>
+      <td>GAAGATGGTGATGGGATTTC</td>
+      <td>226</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>ACTB</td>
+      <td>AAATCTGGCACCACACCTTC</td>
+      <td>AGCACAGCCTGGATAGCAAC</td>
+      <td>160</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>NOTCH1</td>
+      <td>TCAGCGGGATCCACTGTGAG</td>
+      <td>ACACAGGCAGGTGAACGAGTTG</td>
+      <td>104</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>NOTCH2</td>
+      <td>TGCCAAGCTCAGTGGTGTTGTA</td>
+      <td>TGCTAGGCTTTGTGGGATTCAG</td>
+      <td>132</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>NOTCH3</td>
+      <td>GGTTCCCAGTGAGCACCCTTAC</td>
+      <td>GTGGATTCGGACCAGTCTGAGAG</td>
+      <td>100</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>NOTCH4</td>
+      <td>CGGCCTCGGACTCAGTCA</td>
+      <td>CAACTCCATCCTCATCAACTTCTG</td>
+      <td>112</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>DLL1</td>
+      <td>TGTGTGACGAACACTACTACGGAG</td>
+      <td>GTGAAGTGGCCGAAGGCA</td>
+      <td>76</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>DLL3</td>
+      <td>GAGACACCCAGGTCCTTTGA</td>
+      <td>CAGTGGCAGATGTAGGCAGA</td>
+      <td>61</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>DLL4</td>
+      <td>CCAGGAAAGTTTCCCCACAGT</td>
+      <td>CCGACACTCTGGCTTTTCACT</td>
+      <td>82</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>JAG1</td>
+      <td>GCTGGCAAGGCCTGTACTG</td>
+      <td>ACTGCCAGGGCTCATTACAGA</td>
+      <td>78</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>JAG2</td>
+      <td>CACCGAGGTCAAGGTGGAGA</td>
+      <td>ACGCTGAAGGCACCACACA</td>
+      <td>84</td>
+      <td>65</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical methods
 
 Standard statistical methods were employed in the study. Two tailed Student’s t test (paired or unpaired) (for two groups) or RM one-way analysis of variance (ANOVA) (for more than two groups) with either Dunnett’s or Sidak’s multiple comparisons test was used for evaluation. Tests were considered significant at p<0.05. All the analysis was carried out employing GraphPad Prism version 8.4. Linear regression analysis was performed for in vivo studies, and the slopes from best-fit were used to arrive at rates in time-lapse experiments. Kalpan-Meier analysis and Log-Rank test were performed to determine significance of difference in time to occlusion of vessel between different groups. Data are presented as mean ± SEM of at least three individual experiments.
 
 ## Results
 
-## Notch1 and DLL-4 are abundantly expressed in human platelets
+### Notch1 and DLL-4 are abundantly expressed in human platelets
 
 Although enucleate, platelets inherit a limited transcriptome from precursor megakaryocytes (Freedman, 2011; McRedmond et al., 2004). Notch1 is a transmembrane protein present on cell surfaces and is part of a highly conserved Notch signaling pathway (van Tetering et al., 2011). We searched for the expression of transcripts of Notch isoforms and its ligands in platelets by RT-qPCR. The Cq values for housekeeping genes (GAPDH and ACTB) were determined as 21 and 23, respectively, whereas that for NOTCH1 was 27 (Figure 1—figure supplement 1, A and B), which was reflective of abundant expression of NOTCH1 mRNA in human platelets. Contrasting this, NOTCH isoforms 2, 3 and 4 had Cq values greater than 33 (Figure 1—figure supplement 1, A and B). Keeping with above, there was notable existence of Notch1 peptide in human platelets, whose level significantly increased upon stimulation with thrombin (1 U/ml), a potent physiological agonist (Figure 1, A and B). Pre-treatment of platelets with puromycin (10 mM) singnificantly deterred synthesis of this pepetide (Figure 1, A and B). We also observed considerable expression of Notch1 on platelet surface membrane, whose level enhanced significantly (by 65.71%) upon thrombin-stimulation (Figure 1, C and D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunoblot demonstrating expression of Notch1 in platelets pre-treated with or without puromycin (Puro, 10 mM), followed by stimulation with thrombin (Thr, 1 U/ml, for 5 min at 37 °C). (B) Corresponding densitometric analysis of Notch1 normalised with β-actin (n=5). (C) Flow cytometric analysis of platelets treated with (unshaded) or without (shaded) thrombin (1 U/ml) for 5 min at 37 °C, followed by staining with anti-Notch1 antibody and Alexa Fluor 488-labelled secondary antibody. (D) Corresponding mean fluorescence intensity (MFI) of Notch1 expression on platelets as indicated (n=3). (E) Immunoblot showing synthesis of DLL-4 in thrombin-stimulated platelets. (F) Corresponding densitometric analysis of DLL-4 normalised with β-actin (n=9). (G) Histogram showing expression of DLL-4 on surface of human platelets pre-treated with (unshaded) or without (shaded) thrombin (1 U/ml) for 5 min at 37 °C, followed by incubation with anti-DLL-4 antibody and Alexa Fluor 488-labelled secondary antibody. (H) Corresponding mean fluorescence intensity of DLL-4 expression on platelets as indicated (n=4). Data are presented as mean ± SEM of at least three different experiments. Analyzed by either Student’s paired t-test (D and H) or RM one-way ANOVA with Dunnett’s multiple comparisons test (B and F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Amplification chart (A) and dot plot (B) representing Cq of mRNAs in platelets as indicated. (C) Melt peak analysis to rule out formation of by-products during amplification reactions. Figures are representative of seven individual experiments (n=7). Data are presented as mean ± SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A and B) Amplification chart and dot plot, respectively, representing Cq of mRNAs in platelets as indicated. (C) Melt peak analysis indicative of lack of formation of by-products during amplification reactions. Figures are representative of seven individual experiments (n=7). Data are presented as mean ± SEM.
+
 The Cq of DLL4, JAG1, and JAG2 were found to be 26, 31 and 30, respectively while those for DLL isoforms-1 and -3 were higher than or equal to 33 (Figure 1—figure supplement 2A and B), reflective of DLL4 being the most abundantly expressed Notch ligand transcript in human platelets. Melt peak analyses were supportive of lack of formation of by-products (Figure 1—figure supplement 1C and Figure 1—figure supplement 2C). Consistent with above, platelets were found to express DLL-4 peptide whose level increased significantly when cells were challenged with thrombin (1 U/ml) (Figure 1E and F). Rise in DLL-4 could be averted upon pre-incubation of platelets with puromycin (10 mM) (Figure 1E and F). Thrombin, too, significantly augmented surface translocation of DLL-4 by 64.31% (Figure 1G and H), thus raising possibility of DLL-4-Ntoch1 interaction on adjacent platelet membranes. As enucleate platelets are known to have limited capacity for protein synthesis, the present observations add Notch1 and DLL-4 to the growing list of platelets translatome.
 
-## DLL-4 amplifies expression of Notch intracellular domain (NICD) in human platelets
+### DLL-4 amplifies expression of Notch intracellular domain (NICD) in human platelets
 
 Interaction of Notch1 with cognate ligands leads to sequential cleavage of the transmembrane receptor and generation of NICD (Iso et al., 2003). As Notch1 is expressed in human platelets, we asked whether exposure to DLL-4 would evoke release of NICD in these cells. Remarkably, exposure of platelets with DLL-4 (15 µg/ml) for 10 min led to significant rise (by 5.1-fold) in level of NICD (Figure 2A and B). As NICD generation is mediated through activity of γ-secretase, we next investigated the contribution of this protease in DLL-4-induced NICD release in platelets. Pre-treatment of platelets with either DAPT (10 μM) or DBZ (10 µM), specific inhibitors of γ-secretase, for 10 min led to significant drop in DLL-4-induced NICD release (by 25.33% and 23.77%, respectively) (Figure 2A and B), strongly suggestive of functional DLL-4-Notch1-NICD signaling axis in human platelets.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig2-v2.jpg)
 
-**Figure 2.:** (A) Immunoblot showing expression of NICD in DLL-4 (15 µg/ml for 10 min)-treated platelets in absence or presence of either DAPT (10 µM) or DBZ (10 µM) or vehicle. (B) Corresponding densitometric analysis of NICD normalised with β-actin (n=6). (C, D and E) Immunoblot of NICD expression in either stored or A23187 (1 µM)-treated platelets under conditions as indicated. Data are represented as mean ± SEM of at least three individual experiments and analyzed by RM one-way ANOVA with Dunnett’s multiple comparisons test.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.Figure 2—source data 3.Figure 2.
+**Figure 2.:** (A) Immunoblot showing expression of NICD in DLL-4 (15 µg/ml for 10 min)-treated platelets in absence or presence of either DAPT (10 µM) or DBZ (10 µM) or vehicle. (B) Corresponding densitometric analysis of NICD normalised with β-actin (n=6). (C, D and E) Immunoblot of NICD expression in either stored or A23187 (1 µM)-treated platelets under conditions as indicated. Data are represented as mean ± SEM of at least three individual experiments and analyzed by RM one-way ANOVA with Dunnett’s multiple comparisons test.
 
 Interestingly, level of NICD was reduced by 2.4, 43.4, 70.3, and 84.9%, respectively, when platelets were stored for 1, 3, 5, and 8 hr at 37 °C in presence of 1 mM calcium (Figure 2C). However, NICD level was not considerably affected upon storage of cells at 22 °C. As calpain, the Ca2+-dependent thiol protease, is known to be activated in platelets stored at 37 °C, and not at 22 °C (Wadhawan et al., 2004), we pre-incubated cells at 37 °C with either calpeptin (80 µM) or ALLN (50 µM), specific inhibitors of calpain, or divalent ion chelator EGTA (1 mM). Significant recovery of NICD intensity under above conditions (Figure 2D) was consistent with NICD being a calpain substrate. In keeping with this observation, incubation of platelets with calcium ionophore A23187 (1 µM) for 10 min at 37 °C in presence of 1 mM calcium brought about significant reduction (by 29.77%) in the level of NICD, which was restored upon pre-treatment with either of the calpain inhibitors (Figure 2E).
 
-## DLL-4 but not DLL-1 induces integrin αIIbβ3 activation, exocytosis of granule contents, rise in intracellular calcium, extracellular vesicle shedding, platelet-leukocyte aggregate formation and increase in tyrosine phosphoproteome in human platelets
+### DLL-4 but not DLL-1 induces integrin αIIbβ3 activation, exocytosis of granule contents, rise in intracellular calcium, extracellular vesicle shedding, platelet-leukocyte aggregate formation and increase in tyrosine phosphoproteome in human platelets
 
 Hallmark of activated platelets is the conformational switch of its surface integrins αIIbβ3 that allows high-affinity binding of fibrinogen, associated with release of granule contents, rise in intracellular free calcium and shedding of extracellular vesicles. To study the effect of Notch ligands we pre-incubated platelets with DLL-4 (15 µg/ml for 10 min at RT) that prompted enhanced binding of PAC-1-FITC (that recognizes the open conformation of αIIbβ3) (Figure 3, A and B) and fibrinogen-Alexa Fluor 488 (Figure 3—figure supplement 1) by 3.07- and 3.13- folds, respectively. DLL-1 was notably ineffective in eliciting such response. Furthermore, platelets exposed to DLL-4 were found to have significant surface expression of P-selectin as a measure of α-granule secretion while no change was observed with DLL-1 (Figure 3, C and D). In keeping with above, DLL-4 also induced release of ATP from platelet dense granules (Figure 3E). Although DLL-4, on its own, did not incite platelet aggregation at the doses employed, it could significantly potentiate thrombin-mediated platelet aggregation (Figure 4, A and B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig3-v2.jpg)
+
+**Figure 3.:** (A and C) Histograms showing binding of PAC-1 (A) and anti-P-selectin antibody (C) to platelets pre-incubated with either DAPT (10 µM) or vehicle for 10 min at RT followed by treatment with either DLL-4 (15 µg/ml) or DLL-1 (15 µg/ml) for 10 min, or with thrombin (Thr, 1 U/ml) for 5 min at 37 °C as indicated. (B and D) Ccorresponding mean fluorescence intensities of PAC-1 (n=12) and anti-P-selectin antibody (n=9) binding to platelets, respectively. (E) Bar diagram representing ATP secretion from platelet dense granules pre-incubated with either DAPT (10 µM) or vehicle for 10 min at RT followed by treatment with DLL-4 for 10 min (n=4). (F) Fura-2-loaded platelets were pre-treated for 5 min either with calcium (1 mM) or EGTA (1 mM) followed by incubation with DLL-4 (15 µg/ml) for 15 min and intracellular Ca2+ was measured. (G) Corresponding bar diagram representing mean concentration of intracellular Ca2+ over 300 sec of measurement (n=5). (H) Platelets were pre-treated with either DAPT (10 µM) or DBZ (10 µM) or vehicle for 10 min at RT followed by treatment with DLL-4 (15 µg/ml) for 10 min at RT. PEVs were isolated and analyzed with Nanoparticle Tracking Analyzer (n=8). (I) Immunoblot showing profile of tyrosine phosphorylated proteins in platelets pre-treated with either DAPT (10 µM) or DBZ (10 µM) or vehicle for 10 min at RT followed by treatment with either DLL-4 (15 µg/ml) for 10 min at RT or DLL-1 (15 µg/ml) for 10 min at RT or with thrombin (1 U/ml) for 5 min at 37 °C as indicated (n=4). Arrows indicate position of peptides whose intensity increased in presence of DLL-4. (J and L) Immunoblots showing expression of p-PI3K and pAKT in DLL-4 (15 µg/ml for 10 min)-treated platelets in absence or presence of either DAPT (10 µM) or vehicle. (K and M) Corresponding densitometric analyses normalised with PI3K (n=3) and AKT (n=7), respectively. Data are presented as mean ± SEM of at least three different experiments. Results were analyzed by RM one-way ANOVA with either Dunnett’s multiple comparisons test (E, H, K and M) or Sidak’s multiple comparisons test (B, D and G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Histogram showing binding of Alexa Fluor 488-labelled fibrinogen (10 µg/ml) to platelets pre-incubated with either DAPT (10 µM) or vehicle for 10 min at RT followed by treatment with either DLL-4 (15 µg/ml) or DLL-1 (15 µg/ml) for 10 min, or with thrombin (1 U/ml) for 5 min at 37 °C as indicated. (B) Corresponding mean fluorescence intensity of fibrinogen binding to platelets presented as mean ± SEM. Data are representative of nine (n=9) different experiments-and analysed by RM one-way ANOVA with Sidak’s multiple comparisons test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A and B) Flow cytometric analysis of platelet-neutrophil aggregates (A) and platelet-monocyte aggregates (B) in whole blood stained with anti-CD41a-APC (specific for platelets) and anti-CD14-FITC (specific for neutrophils/monocytes) followed by treatment with DLL-4 (15 µg/ml) in presence or absence of DAPT (40 µM), as indicated. C (n=8) and D (n=8), corresponding bar diagrams quantifying mean percent platelet-neutrophil and platelet-monocyte aggregates, respectively. Data are representative of eight different experiments and presented as mean ± SEM. Analysed by RM one-way ANOVA with Dunnett’s multiple comparisons test.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Histogram shows PAC-1-FITC binding to platelets pre-incubated with either LY-294002 (80 µM) or Ro-31–8425 (20 µM) or vehicle for 10 min at RT followed by exposure to DLL-4 (15 µg/ml) for 10 min at RT. (B) Corresponding mean fluorescence intensity of four (n=4) different experiments representing PAC-1 binding. Data are presented as as mean ± SEM and analysed by RM one-way ANOVA with Sidak’s multiple comparisons test.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig4-v2.jpg)
+
+**Figure 4.:** (A) Aggregation of washed human platelets induced by thrombin (Thr, 0.1 U/ml) either in presence of vehicle (tracing 1) or DLL-4 (15 µg/ml, tracing 2). Tracing 3 represents cells pre-incubated with DAPT (20 µM) for 10 min at RT followed by addition of DLL-4 and thrombin. (B) Corresponding bar chart representing mean platelet aggregation (n=5). (C and E) Histograms representing PAC-1 binding (C) and surface expression of P-selectin (E) in platelets pre-treated with DLL-4 (7.5 µg/ml) for 10 min followed by stimulation with thrombin (0.1 U/ml) as indicated. Tracings 4 of C and E represent cells pre-incubated with DAPT (10 µM) for 10 min at RT followed by addition of DLL-4 and thrombin. (D and F) corresponding mean fluorescence intensity of PAC-1 binding (n=9) and surface expression of P-selectin (n=10), respectively. (G) Aggregation of washed human platelets induced by thrombin (0.1 U/ml) following pre-treatment with either rabbit-IgG (20 µg/ml) for 5 min (tracing 2), or anti-DLL-4 antibody (20 µg/ml) for 5 min (tracing 3) or vehicle (tracing 1). (H) Corresponding bar chart representing mean platelet aggregation (n=4). (I) Platelets were pre-treated with either anti-DLL-4 antibody (20 µg/ml) or rabbit IgG (20 µg/ml) or vehicle for 5 min at RT followed by aggregation induced by thrombin (0.1 U/ml) for 5 min at 37°C. EVs were isolated from aggregated platelets and analyzed with Nanoparticle Tracking Analyzer (n=3). Data are representative of at least three different experiments and presented as mean ± SEM. Analyzed by RM one-way ANOVA with either Dunnett’s multiple comparisons test (B, H, and I) or Sidak’s multiple comparisons test (D and F).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Thrombin (0.1 U/ml)-induced aggregation of washed human platelets pre-incubated for 5 min with either rabbit-IgG (10 µg/ml) (tracing 1), or anti-DLL-4 antibody (2, 5, and 10 µg/ml) (tracings 2, 3, and 4, respectively). (B) Corresponding bar chart representing mean platelet aggregation (n=3). Data are presented as mean ± SEM.
 
 As Notch signaling is mediated through activity of γ-secretase leading to cleavage of Notch receptor, we next investigated the role of this protease in DLL-4-induced platelet activation. Platelets were pre-treated with DAPT (10 μM), a specific γ-secretase inhibitor, for 10 min at RT followed by exposure to DLL-4. Interestingly, we observed significant drop in DLL-4-induced activation of integrin αIIbβ3 (Figure 3, A and B; Figure 3—figure supplement 1), P-selectin exposure (Figure 3, C and D) and release of ATP from platelet dense granules (Figure 3E) when platelets were pre-incubated with DAPT.
 
@@ -133,21 +631,55 @@ Platelet activation is associated with phosphorylation of multiple cytosolic pro
 
 Roles of phosphatidylinositol (PI) 3-kinase and protein kinase C (PKC) in platelet activation have been widely reported (Hirsch et al., 2001; Polanowska-Grabowska and Gear, 1999; Atkinson et al., 2001; Watson and Hambleton, 1989). In order to implicate these kinases in DLL-4-mediated integrin αIIbβ3 activation, platelets were pre-treated with either LY-294002 (80 µM) or Ro-31–8425 (20 µM), inhibitors of PI3K and PKC, respectively, or vehicle for 10 min at RT, followed by incubation with DLL-4 (15 µg/ml) for 10 min. Strikingly, both the inhibitors triggered significant drop in DLL-4-induced PAC1 binding to platelets (Figure 3—figure supplement 3), which underscored the roles of PI3K and PKC in DLL-4-induced conformational changes in integrins αIIbβ3. Consistent with activation of PI3K, phosphorylation of its p85 regulatory subunit was significantly augmented (by 3.85-fold) in presence of DLL-4 (15 µg/ml, 10 min), which, too, provoked significant upregulation (by 2.35-fold) in phosphorylation of AKT, the enzyme downstream of PI3K (Figure 3, J-M). The phosphorylations of PI3K as well as AKT were significantly attenuated by 30.05% and 36.67%, respectively, upon pre-treatment with DAPT (10 µM for 10 min) (Figure 3, J-M). These findings are strongly suggestive of non-canonical signaling evoked by DLL-4 in human platelets in γ-secretase-dependent manner leading to platelet activation.
 
-## DLL-4 operates in a juxtacrine manner to potentiate thrombin-mediated platelet activation
+### DLL-4 operates in a juxtacrine manner to potentiate thrombin-mediated platelet activation
 
 As thrombin triggers synthesis and expression of DLL-4 on platelet surface, which, in turn, induces platelet activation signaling, we asked next whether DLL-4 synergizes with thrombin in transforming platelets to ‘pro-active / pro-thrombotic’ phenotype. Interestingly, there was significant upregulation in platelet aggregation, PAC-1 binding and P-selectin externalization when cells were challenged with thrombin (0.1 U/ml) in presence of DLL-4 compared to samples exposed to thrombin alone (Figure 4, A-F). These parameters were considerably attenuated (by 50%, 30.34%, and 23.05%, respectively) upon prior exposure to DAPT (Figure 4, A-F). As Notch signaling is propagated through direct cell-cell contact in juxtracrine manner, it is tempting to speculate that cellular proximity achieved within densely packed thrombus milieu would permit interactions between DLL-4 and Notch1 on surfaces of adjacent platelets that would synergize with physiological agonists in realizing thrombus consolidation.
 
 In order to implicate juxtracrine Notch signaling in amplification of platelet activity, we forestalled possible interaction between DLL-4 and Notch1 on adjacent cell surfaces by employing a rabbit polyclonal anti-DLL-4 antibody (20 µg/ml for 5 min) that would block DLL-4. In control samples a non-specific rabbit IgG (20 µg/ml) substituted the antibody against DLL-4. Remarkably, presence of anti-DLL-4 antibody significantly impaired (by 81.95 %) platelet aggregation induced by thrombin (0.1 U/ml) compared with rabbit IgG-treated counterparts (Figure 4, G and H). The extent of drop in aggregation directly correlated with concentration of the blocking antibody in the range from 2 to 20 µg/ml (Figure 4—figure supplement 1). Furthermore, shedding of extracellular vesicles from aggregated platelets was also inhibited significantly (by 56.31%) when cells were pre-incubated with anti-DLL-4 antibody compared to rabbit IgG-treated control samples (Figure 4I). Above observations were strongly suggestive of juxtracrine Notch signaling operating within the confinement of tightly packed platelet aggregates / thrombi that potentiates platelet stimulation by thrombin.
 
-## Inhibition of γ-secretase attenuates agonist-induced platelet responses
+### Inhibition of γ-secretase attenuates agonist-induced platelet responses
 
 Thrombin and collagen are potent physiological agonists that elicit strong wave of platelet activation through their cognate receptors. Aggregation of washed human platelets induced by diverse agonists (thrombin, 0.25 U/ml; TRAP, 2.5 µM; or collagen, 2.5 µg/ml) were profoundly impaired (by 29.21, 20, and 71.8%, respectively) by DAPT (20 µM) (Figure 5, A-F), which, too, retarded TRAP, also known as PAR1-activating peptide (PAR1-AP) and collagen-mediated aggregation (by 46.88 and 28.97%, respectively) in whole blood analyzed from electronic impedance (Figure 5, G-J). Thrombin-induced ATP release from platelet dense granules was also attenuated when cells were pre-incubated with DAPT (Figure 5K). DBZ, another inhibitor of γ-secretase, also impaired thrombin-induced platelet aggregation (Figure 5—figure supplement 1). Interestingly, we also observed significant abrogation of thrombin-induced binding of PAC-1 (Figure 5—figure supplement 2, A-D) and fibrinogen (Figure 5—figure supplement 2, E and H) to platelet surface integrins, as well as decline in surface externalization of P-selectin (Figure 5—figure supplement 3, A-D) and shedding of extracellular vesicles (Figure 5—figure supplement 4), when cells were pre-incubated with DAPT (10 µM for 10 min at RT), which was suggestive of critical role of Notch signaling in amplification of agonist-stimulated platelet responses.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig5-v2.jpg)
+
+**Figure 5.:** (A, C and E) Aggregation of washed human platelets induced by thrombin (Thr, 0.25 U/ml), TRAP (2.5 µM), or collagen (Coll, 2.5 µg/ml) in absence (tracing 1) or presence (tracing 2) of DAPT (20 µM) recorded as percent light transmitted. Tracings 3 and 4 in panel A represent secretion of ATP from thrombin-stimulated platelets either in absence or presence of DAPT, respectively. (G and I) Platelet aggregation in whole blood induced by either TRAP (2 µM) or collagen (2 µg/ml) in absence (tracing 1) or presence (tracing 2) of DAPT (40 µM) recorded as change in electrical resistance (impedance). B (n=7), D (n=5), F (n=3), H (n=3), and J (n=3), corresponding bar chart representing mean platelet aggregation. K, bar diagram representing mean ATP secretion from platelet dense granules (n=4). (L and N) Flow cytometric analysis of platelet-neutrophil aggregates (L) and platelet-monocyte aggregates (N) in whole blood stained with anti-CD41a-APC (specific for platelets) and anti-CD14-FITC (specific for neutrophils/monocytes) followed by treatment with TRAP (2 µM) in presence or absence of DAPT (40 µM), as indicated. Amorphous gates were drawn for monocyte (high fluorescence and low SSC) and neutrophil (low fluorescence and high SSC) populations. M (n=8) and O (n=9), bar diagrams showing percentage of platelet-neutrophil and platelet-monocyte aggregate formation, respectively. Data are representative of at least three different experiments and presented as mean ± SEM. Analyzed by either Student’s paired t-test (B, D, F, H, J, and K) or RM one-way ANOVA with Dunnett’s multiple comparisons test (M and O).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Aggregation of washed human platelets induced by thrombin (Thr, 0.25 U/ml), in absence (tracing 1) or presence (tracing 2) of DBZ (30 µM) recorded as percent light transmitted. (B) Corresponding bar chart representing mean platelet aggregation (n=8). Data are presented as mean ± SEM and analysed by Student’s paired t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A, C, E and G) Histograms representing binding of PAC-1 (A and C) and fibrinogen (E and G) to platelets pre-treated with DAPT (10 µM) for 10 min, followed by treatment with thrombin (0.1, 0.5, or 1 U/ml) for 5 min as indicated. B (n=7), D (n=8), F (n=9), and H (n=5), bar diagrams representing corresponding mean fluorescence intensities for binding of PAC-1 (B and D) and fibrinogen (F and H), respectively. Data are representative of at least five different experiments and presented as mean ± SEM. Analysed by RM one-way ANOVA with Dunnett’s multiple comparisons test.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A and C) Histograms representing surface expression of P-selectin in platelets pre-treated with DAPT (10 µM) for 10 min followed by treatment with thrombin (0.1 or 1 U/ml) for 5 min at 37 °C ͦ as indicated. B (n=9) and D (n=6), bar diagram representing corresponding mean fluorescence intensity of surface expression of P-selectin. Data are representative of at least six different experiments and presented as mean ± SEM. Analysed by RM one-way ANOVA with Dunnett’s multiple comparisons test.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Platelets were pre-treated with either DAPT (10 µM) or vehicle for 10 min at RT followed by treatment with thrombin (Thr, 1 U/ml) for 5 min at 37 °C. ͦ PEVs were isolated and analysed with Nanoparticle Tracking Analyzer (n=3). Data are presented as mean ± SEM and analysed by RM one-way ANOVA with Dunnett’s multiple comparisons test.
+
 Platelet interaction with circulating leukocytes is a sensitive index of state of platelet activity (Cerletti et al., 2012; Ortiz-Muñoz et al., 2014). In order to implicate Notch signaling in this, platelet-neutrophil and platelet-monocyte aggregates were induced to form in whole blood with addition of TRAP (2 µM, 15 min). Strikingly, percent of cells undergoing aggregation were found to be significantly restrained upon pre-treatment with DAPT (40 µM, 10 min) (Figure 5, L-O), which further underlines a role of Notch signaling in platelet-leukocyte interaction and thrombogenesis.
 
-## Inhibition of γ-secretase impairs arterial thrombosis in mice and platelet thrombus generation ex vivo
+### Inhibition of γ-secretase impairs arterial thrombosis in mice and platelet thrombus generation ex vivo
 
 Platelets play key role in the pathogenesis of arterial thrombosis. In order to implicate Notch signaling in generation of occlusive intramural thrombi in vivo, we studied the effect of pharmacological inhibitor of γ-secretase in a murine model of mesenteric arteriolar thrombosis. Platelets were fluorescently labelled and mice were intraperitoneally administered with either DAPT (50 mg/kg) or vehicle (control). Intramural thrombus was induced by topical application of ferric chloride in exteriorized mesenteric arterioles. Intravital imaging of thrombus was carried out by epifluorescence video microscope equipped with high-speed camera. We observed the time required for first thrombus formation, thrombus growth rate and time to occlusion as indicators to the initiation, propagation and stabilization of thrombus, respectively. Remarkably, mice administered with DAPT (Video 1) exhibited significantly delayed thrombus formation compared to vehicle-treated (Video 2) animals (mean times to form first thrombus: control, 4.25±1.52 min; DAPT, 7.38±2.94 min ) (Figure 6A and B). DAPT also impaired thrombus growth rate compared to vehicle-treated control counterparts (Figure 6C) (Videos 1 and 2). However, we did not observe significant difference in mean time to stable occlusion (Figure 6D). Kaplan-Meier analysis and log-rank test also showed no significant difference in occlusion times between control and DAPT-treated mice (Figure 6—figure supplement 1). Above observations attribute a critical role to platelet-specific γ-secretase in initiation and propagation of arterial thrombosis in vivo.
+
+![Video 1.](https://cdn.elifesciences.org/articles/79590/elife-79590-video1.mp4.jpg)
+
+**Video 1.:** Platelets were fluorescently labelled with DyLight 488 anti-GPIbβ antibody (0.1 µg/g body weight).
+
+![Video 2.](https://cdn.elifesciences.org/articles/79590/elife-79590-video2.mp4.jpg)
+
+**Video 2.:** Platelets were fluorescently labelled with DyLight 488 anti-GPIbβ antibody (0.1 µg/g body weight).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative time-lapse images showing mesenteric arteriolar thrombosis in mice, pre-administered with either vehicle (control) or DAPT (50 mg/kg) captured 5, 10, 15 or 20 min after ferric chloride-induced injury of the mesenteric arterioles. (B-D) Bar diagrams showing time to first thrombus formation (B), thrombus growth rate (C) and time to occlusion (D) (n=8). (E) Representative image of platelet accumulation after 5 min of perfusion of human platelets pre-treated with either DAPT (20 µM) or vehicle. (F) Corresponding bar diagram representing average surface area covered by platelet thrombi after 5 min of perfusion on collagen matrix (n=4). (G) Thromboelastogram of kaolin-stimulated citrated whole blood pre-incubated with (green tracing) or without DAPT (black tracing). (H and I) Bar diagram representing reaction time (R) and maximum amplitude (MA) of the clot, respectively (n=5). Data are representative of at least four individual experiments and presented as mean ± SEM. Analyzed by either unpaired (B and C) or paired (F, H, and I) Student’s t-test (unpaired for in vivo and paired for in vitro and ex vivo).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79590/elife-79590-fig6-figsupp1-v2.jpg)
 
 Further, in order explore the role of Notch signaling in generation of thrombus ex vivo, we studied platelet dynamic adhesion and thrombus formation on immobilized collagen under physiological arterial shear (1500 s–1) employing BioFlux microfluidics platform. Washed human platelets were pre-treated with either DAPT (20 µM) or vehicle (control) for 10 min at RT, and allowed to perfuse over the collagen-coated surface for 5 min. Interestingly, we observed significant reduction (by 44.1 %) in the total surface area covered by platelet thrombi in the presence of DAPT compared to vehicle-treated control counterparts (Figure 6, E and F). This observation also validated a vital role of γ-secretase in thrombosis in ex vivo.
 

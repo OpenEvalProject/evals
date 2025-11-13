@@ -45,7 +45,7 @@
 
 ## Abstract
 
-10.7554/eLife.12245.001 Autophagy is required for the homeostasis of cellular material and is proposed to be involved in many aspects of health. Defects in the autophagy pathway have been observed in neurodegenerative disorders; however, no genetically-inherited pathogenic mutations in any of the core autophagy-related ( ATG ) genes have been reported in human patients to date. We identified a homozygous missense mutation, changing a conserved amino acid, in ATG5 in two siblings with congenital ataxia, mental retardation, and developmental delay. The subjects' cells display a decrease in autophagy flux and defects in conjugation of ATG12 to ATG5. The homologous mutation in yeast demonstrates a 30-50% reduction of induced autophagy. Flies in which Atg5 is substituted with the mutant human ATG5 exhibit severe movement disorder, in contrast to flies expressing the wild-type human protein. Our results demonstrate the critical role of autophagy in preventing neurological diseases and maintaining neuronal health. DOI: http://dx.doi.org/10.7554/eLife.12245.001
+Autophagy is required for the homeostasis of cellular material and is proposed to be involved in many aspects of health. Defects in the autophagy pathway have been observed in neurodegenerative disorders; however, no genetically-inherited pathogenic mutations in any of the core autophagy-related (ATG) genes have been reported in human patients to date. We identified a homozygous missense mutation, changing a conserved amino acid, in ATG5 in two siblings with congenital ataxia, mental retardation, and developmental delay. The subjects' cells display a decrease in autophagy flux and defects in conjugation of ATG12 to ATG5. The homologous mutation in yeast demonstrates a 30-50% reduction of induced autophagy. Flies in which Atg5 is substituted with the mutant human ATG5 exhibit severe movement disorder, in contrast to flies expressing the wild-type human protein. Our results demonstrate the critical role of autophagy in preventing neurological diseases and maintaining neuronal health.
 
 ## Introduction
 
@@ -57,55 +57,166 @@ Whole exome sequencing has been successfully utilized to identify known and nove
 
 ## Results
 
-## E122D mutation in ATG5 is associated with familial ataxia
+### E122D mutation in ATG5 is associated with familial ataxia
 
-Two Turkish siblings presented with ataxia and developmental delay in childhood, as previously described (
+Two Turkish siblings presented with ataxia and developmental delay in childhood, as previously described (Yapici and Eraksoy, 2005). We performed linkage analysis on both affected siblings, their unaffected siblings, and their unaffected mother, using a model of remote parental consanguinity and identified a single broad (>14 Mbp) peak with LOD score 3.16 on chromosome 6q21, between 102 and 116 Mb (Figure 1). Whole exome sequencing identified a homozygous missense mutation, hg19 chr6:106,727,648 T>A, corresponding to E122D in ATG5 (Figure 2A) as the only damaging mutation within the genetically identified chromosomal linkage interval. The mutation was Sanger verified and found absent from variant databases and from Turkish controls.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12245/elife-12245-fig1-v2.jpg)
 
-**Figure 1.:** ATG5.Remote consanguinity was detected between parents of two previously described siblings having ataxia (Yapici and Eraksoy, 2005), illustrated here as third cousins. SNP and linkage results for chromosome 6 (B) are illustrated below the pedigree (A). The shared homozygous region lies between rs4334996 and rs1204817, encompassing ATG5 at 106.6 Mb. Father (501)’s alleles were inferred, 0 denotes unknown alleles. Affected siblings, 601 and 602, are denoted by black squares and unaffected family members by open symbols. The proximal boundary is defined by a recombination event between rs1547384 and rs4334996 in affected individual 602, while the distal boundary is defined as an ancestral recombination event (lack of homozygosity, dark green) between rs1204817 and rs648248. Orange arrows indicate the position of ATG5.DOI: http://dx.doi.org/10.7554/eLife.12245.003
+**Figure 1.:** Remote consanguinity was detected between parents of two previously described siblings having ataxia (Yapici and Eraksoy, 2005), illustrated here as third cousins. SNP and linkage results for chromosome 6 (B) are illustrated below the pedigree (A). The shared homozygous region lies between rs4334996 and rs1204817, encompassing ATG5 at 106.6 Mb. Father (501)’s alleles were inferred, 0 denotes unknown alleles. Affected siblings, 601 and 602, are denoted by black squares and unaffected family members by open symbols. The proximal boundary is defined by a recombination event between rs1547384 and rs4334996 in affected individual 602, while the distal boundary is defined as an ancestral recombination event (lack of homozygosity, dark green) between rs1204817 and rs648248. Orange arrows indicate the position of ATG5.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12245/elife-12245-fig2-v2.jpg)
 
-**Figure 2.:** (A) Amino acid sequence alignment between ATG5 orthologs from human (HsaATG5), mouse (MmuAtg5), Drosophila melanogaster (DmeAtg5) and Saccharomyces cerevisiae (SceAtg5) was constructed at GenomeNet (Kyoto University Bioinformatics Center) through CLUSTALW and rendered in Genedoc v.2.7 using default settings. E122 in human ATG5 and E141 in yeast Atg5, which are homologous residues, are indicated by red arrows. (B) Location of E122 residue is highlighted in yellow on the crystal structure of a human ATG12 (residues 53–140)–ATG5 -ATG16L1 (residues 11–43) complex (PDB ID: 4NAW). ATG5 is shown in cyan, ATG16L1 in magenta, and ATG12 in green (Otomo et al., 2013). (C) Location of the E141 residue in yeast Atg5, which corresponds to the E122 in human ATG5, is indicated in yellow on the crystal structure of a yeast Atg12 (100–186)–Atg5 -Atg16 (1–46) complex, colored as for the human counterparts as in panel B (PDB ID: 3W1S) (Noda et al., 2013). (D) Superimposition of crystal structure of ATG5E122D-ATG16L1 with ATG5WT-ATG16L1 (PDB: 4TQ0) (Kim et al., 2015a). Close-up view of ATG5 structure around WT (E) and E122D (F) mutation.DOI: http://dx.doi.org/10.7554/eLife.12245.004
+**Figure 2.:** (A) Amino acid sequence alignment between ATG5 orthologs from human (HsaATG5), mouse (MmuAtg5), Drosophila melanogaster (DmeAtg5) and Saccharomyces cerevisiae (SceAtg5) was constructed at GenomeNet (Kyoto University Bioinformatics Center) through CLUSTALW and rendered in Genedoc v.2.7 using default settings. E122 in human ATG5 and E141 in yeast Atg5, which are homologous residues, are indicated by red arrows. (B) Location of E122 residue is highlighted in yellow on the crystal structure of a human ATG12 (residues 53–140)–ATG5 -ATG16L1 (residues 11–43) complex (PDB ID: 4NAW). ATG5 is shown in cyan, ATG16L1 in magenta, and ATG12 in green (Otomo et al., 2013). (C) Location of the E141 residue in yeast Atg5, which corresponds to the E122 in human ATG5, is indicated in yellow on the crystal structure of a yeast Atg12 (100–186)–Atg5 -Atg16 (1–46) complex, colored as for the human counterparts as in panel B (PDB ID: 3W1S) (Noda et al., 2013). (D) Superimposition of crystal structure of ATG5E122D-ATG16L1 with ATG5WT-ATG16L1 (PDB: 4TQ0) (Kim et al., 2015a). Close-up view of ATG5 structure around WT (E) and E122D (F) mutation.
 
-## Cells from ATG5E122D/E122D patients exhibit reduced ATG12–ATG5 expression
+### Cells from ATG5E122D/E122D patients exhibit reduced ATG12–ATG5 expression
 
-ATG5 plays a role in elongation of the phagophore and its subsequent maturation into the complete autophagosome. ATG12 is a ubiquitin-like protein that covalently binds ATG5 (
+ATG5 plays a role in elongation of the phagophore and its subsequent maturation into the complete autophagosome. ATG12 is a ubiquitin-like protein that covalently binds ATG5 (Mizushima et al., 1998a), and this conjugate noncovalently binds ATG16L1. Crystal structure of the resulting ATG12–ATG5-ATG16L1 complex indicated that E122 is located in the vicinity of the ATG12–ATG5 interaction surface (Figure 2B); hence, we predicted that the mutation in ATG5 could affect the conjugation of ATG12. Comparison of protein isolated from control lymphoblastoid cell lines (LCL) and of affected subjects revealed a severe reduction of the ATG12–ATG5 conjugate in the mutant cells under basal conditions (Figure 3A), suggesting that the E122D mutation may have impaired autophagy by inhibiting conjugation between ATG12 and ATG5.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12245/elife-12245-fig3-v2.jpg)
 
-**Figure 3.:** ATG5mutation exhibit autophagy defects.E122D/E122D (A) Decreased expression of ATG12–ATG5 conjugates in cells from ataxia patients with ATG5 mutation. ATG5 immunoblotting (IB) of ATG12–ATG5 conjugates of LCLs from individuals whose E122D/E122DATG5 genotype corresponds to wild type (A to I) or E122D (J and K). (B) Decreased autophagic flux in ATG5LCL cells. A subset of LCLs from (E122D/E122D A) were treated with 0.1 μM bafilomycin A1 (Baf) for the indicated hours and analyzed by IB. LC3-II is an autophagosome marker, and LC3-I is a precursor for LC3-II. Baf inhibits lysosomal degradation of LC3-II. Actin is shown as a loading control. (C) Decreased autophagic flux and increased expression of SQSTM1, an autophagy substrate, in ATG5LCL cells. A subset of LCLs from (E122D/E122D A) were treated with 250 nM Torin 1 or 0.1 μM Baf, for 2 hr and analyzed by IB. Torin 1 is an autophagic flux activator.DOI: http://dx.doi.org/10.7554/eLife.12245.005
+**Figure 3.:** (A) Decreased expression of ATG12–ATG5 conjugates in cells from ataxia patients with ATG5E122D/E122D mutation. ATG5 immunoblotting (IB) of ATG12–ATG5 conjugates of LCLs from individuals whose ATG5 genotype corresponds to wild type (A to I) or E122D (J and K). (B) Decreased autophagic flux in ATG5E122D/E122D LCL cells. A subset of LCLs from (A) were treated with 0.1 μM bafilomycin A1 (Baf) for the indicated hours and analyzed by IB. LC3-II is an autophagosome marker, and LC3-I is a precursor for LC3-II. Baf inhibits lysosomal degradation of LC3-II. Actin is shown as a loading control. (C) Decreased autophagic flux and increased expression of SQSTM1, an autophagy substrate, in ATG5E122D/E122D LCL cells. A subset of LCLs from (A) were treated with 250 nM Torin 1 or 0.1 μM Baf, for 2 hr and analyzed by IB. Torin 1 is an autophagic flux activator.
 
-## Cells from ATG5E122D/E122D patients exhibit autophagic flux attenuation
+### Cells from ATG5E122D/E122D patients exhibit autophagic flux attenuation
 
 The ATG12–ATG5-ATG16L1 complex functions in part as an E3 ligase to facilitate the conjugation of LC3 to phosphatidylethanolamine, generating LC3-II (Fujita et al., 2008; Hanada et al., 2007). Compared to control cells, LCLs from patients with the E122D mutation exposed to bafilomycin A1 showed a substantial reduction in LC3-II accumulation under basal conditions (Figure 3B), suggesting a possible decrease in E3 activity and subsequent attenuation of basal autophagic flux. The patient LCLs were also unable to upregulate their autophagic flux in response to Torin 1 (Figure 3C), which is a strong inducer of autophagy (Thoreen et al., 2009). ATG5E122D LCLs also showed elevated levels of SQSTM1/p62, an autophagy receptor and substrate, further indicating disruption of basal autophagy (Figure 3C).
 
-## E122D mutation of ATG5 impairs ATG12–ATG5 conjugation
+### E122D mutation of ATG5 impairs ATG12–ATG5 conjugation
 
-To examine the effect of the ATG5
+To examine the effect of the ATG5E122D mutation on formation of the ATG12–ATG5-ATG16L1 complex, we expressed the recombinant human proteins in insect Hi5 cells and analyzed the complexes by affinity isolation. We could detect the ATG12–ATG5 complex when both wild-type proteins were co-expressed, but we could only detect a minimal amount of the ATG12–ATG5E122D complex (Figure 4A). Although overexpression of human ATG5WT in HEK293 cells or Drosophila tissues resulted in efficient covalent conjugation with overexpressed human ATG12 (Figure 4B and C) or endogenous Drosophila Atg12 (Figure 4D), mutant ATG5E122D was dramatically impaired in this process (Figure 4B, C and D). Interestingly, expression levels of ATG5WT and ATG5E122D monomers were comparable to each other, indicating that the mutation affects the conjugation process, rather than the stability of proteins. This was consistent with the structural location of ATG5 E122 adjacent to the surface that interacts with ATG12 (Figure 2B). To confirm that the mutation does not overtly alter the structure of ATG5 or binding to ATG16L1, we analyzed formation of the noncovalent ATG5-ATG16L1 complex using constructs containing a TEV protease site. Both wild-type and mutant ATG5 protein were efficiently co-precipitated with ATG16L1 (Figure 4E). Indeed, the co-crystal structure of a human ATG5E122D-ATG16L1 complex (Figure 2 and Table 1) superimposes well with the previously determined structure of the WT proteins (Figure 2D), with the major obvious difference being replacement of the side-chain (Figure 2E and F). Thus, it appears that the E122D mutation interferes with the ATG12–ATG5 conjugation process, but not with ATG5 folding or binding of ATG16L1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12245/elife-12245-fig4-v2.jpg)
 
-**Figure 4.:** (A) Coomassie Blue-stained SDS-PAGE gel following glutathione affinity purification from lysates of Hi5 cells infected with baculoviruses expressing GST-ATG12 and either WT or E122D mutant ATG5. (B and C) HEK293 cells expressing the indicated proteins were analyzed by IB. (D) Drosophila whole bodies expressing the indicated transgenes under the control of Tub-Gal4 were analyzed by IB. (E) Lysates from Hi5 cells expressing the indicated proteins were subjected to His/Ni-NTA purification and subsequent TEV protease treatment. Proteins were analyzed by Coomassie Blue staining.DOI: http://dx.doi.org/10.7554/eLife.12245.006
+**Figure 4.:** (A) Coomassie Blue-stained SDS-PAGE gel following glutathione affinity purification from lysates of Hi5 cells infected with baculoviruses expressing GST-ATG12 and either WT or E122D mutant ATG5. (B and C) HEK293 cells expressing the indicated proteins were analyzed by IB. (D) Drosophila whole bodies expressing the indicated transgenes under the control of Tub-Gal4 were analyzed by IB. (E) Lysates from Hi5 cells expressing the indicated proteins were subjected to His/Ni-NTA purification and subsequent TEV protease treatment. Proteins were analyzed by Coomassie Blue staining.
 
-## ATG5 mutation in yeast results in decreased autophagy
+**Table 1.**
+ Crystallography data collection and refinement statistics.
 
-ATG5 is a highly conserved protein, and sequence alignment demonstrated that E122 corresponds to yeast E141 (
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Data collection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beam line</td>
+      <td>APS 24-ID-C</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Unit cell parameters</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>217.1, 84.5, 151.9</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 133.8, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å) (highest shell)</td>
+      <td>50–3.0 (3.12-3.0)</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9792</td>
+    </tr>
+    <tr>
+      <td>Number of measured reflections</td>
+      <td>179,310</td>
+    </tr>
+    <tr>
+      <td>Number of unique refections</td>
+      <td>39,496</td>
+    </tr>
+    <tr>
+      <td>Overall Rsym</td>
+      <td>0.057 (0.645)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.9 (99.3)</td>
+    </tr>
+    <tr>
+      <td>Overall I/σI</td>
+      <td>14.3 (2.3)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–3.0</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.198/0.244</td>
+    </tr>
+    <tr>
+      <td>rmsd bond lengths (Å)</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>rmsd bond angles (°)</td>
+      <td>0.994</td>
+    </tr>
+    <tr>
+      <td>Number of protein atoms</td>
+      <td>9403</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran statistics</td>
+    </tr>
+    <tr>
+      <td>Preferred (%)</td>
+      <td>97.69</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.22</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.09</td>
+    </tr>
+  </tbody>
+</table>
+
+### ATG5 mutation in yeast results in decreased autophagy
+
+ATG5 is a highly conserved protein, and sequence alignment demonstrated that E122 corresponds to yeast E141 (Figure 2A and C). We extended our analysis of the effect of the mutation on autophagy activity, by taking advantage of the yeast system. To test whether autophagy was affected by the Atg5 mutation in yeast, we initially relied on the GFP-Atg8 processing assay (Shintani and Klionsky, 2004). During autophagy a population of Atg8 is continuously transported to the vacuole inside of autophagosomes. Tagging the N terminus of Atg8 with GFP makes it possible to monitor autophagy flux because Atg8 is rapidly degraded inside the vacuole whereas GFP is relatively resistant to vacuolar hydrolases; the generation of free GFP is an indication of autophagic activity. We observed a consistent decrease in autophagy activity with the Atg5E141D mutant relative to Atg5WT following autophagy induction by starvation (Figure 5A). Atg8, or GFP-Atg8, does not measure autophagic cargo per se (Klionsky, 2016), and the amount of GFP-Atg8 processing only corresponds to the inner surface of the autophagosome. To corroborate the effects observed through the GFP-Atg8 processing assay we examined autophagy using the quantitative Pho8∆60 assay (Noda and Klionsky, 2008). Pho8∆60 is an altered form of a phosphatase that is only delivered to the vacuole via autophagy; subsequent proteolytic processing generates an active form of the hydrolase. After 4 and 6 hr of starvation, yeast cells expressing the plasmid-based Atg5E141D mutant showed a significant decrease in autophagy levels compared to cells expressing Atg5WT (Figure 5B), and similar results were obtained when the WT and mutant ATG5 genes were integrated back into the chromosomal ATG5 locus (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12245/elife-12245-fig5-v2.jpg)
 
-**Figure 5.:** (A-D) Yeast cells were grown in SMD to mid-log phase and nitrogen starved for the indicated times. (A) WLY176 atg5∆ yeast cells expressed GFP-Atg8 through its endogenous promoter and plasmid-based Atg5WT-PA, Atg5E141D-PA or an empty vector. Protein extracts were analyzed for GFP-Atg8 processing by western blot. The ratio of free GFP to Dpm1 (loading control) is presented below the blots, and quantification is presented on the right (Student’s t test, n=4; *p < 0.05); the value for Atg5WT at 6 hr was set to 1.0 and other values were normalized. (B) WLY176 atg5∆ yeast cells expressed either plasmid-based Atg5WT-PA, Atg5E141D-PA or an empty vector. Protein extracts were used to measure autophagy through the Pho8Δ60 assay (Student’s t test, n=6; *p < 0.05). (C) WLY176 cells with genomic integrated Atg5WT or Atg5E141D were used to generate protein extracts and autophagy was monitored through the Pho8Δ60 assay (Student’s t test, n=3; *p < 0.05). (D) WLY176 atg5∆ yeast cells expressing plasmid-based Atg5WT-PA, Atg5E141D-PA or an empty vector were used to generate protein extracts. The ratio of Atg8–PE to total Atg8 is presented below the blots based on western blot using antiserum to Atg8. Dpm1 was used as a loading control. (E) MKO ATG3 (YCY137) cells were co-transformed with pATG8∆R-ATG7-ATG10(414), and either pATG5WT-HA-ATG12(416), pATG5E141D-HA-ATG12(416), pATG5WT-HA-ATG12-ATG16(416), or pATG5E141D-HA-ATG12-ATG16(416). Overnight cultures were diluted to OD=0.02 in SMD -Ura -Trp. The cells were incubated at 30°C for 18 hr to mid-log phase before they were shifted to SD-N for nitrogen starvation. Samples at the corresponding time points were collected, TCA precipitated and subsequently analyzed by western blot. S.E., short exposure; L.E., long exposure.DOI: http://dx.doi.org/10.7554/eLife.12245.008
+**Figure 5.:** (A-D) Yeast cells were grown in SMD to mid-log phase and nitrogen starved for the indicated times. (A) WLY176 atg5∆ yeast cells expressed GFP-Atg8 through its endogenous promoter and plasmid-based Atg5WT-PA, Atg5E141D-PA or an empty vector. Protein extracts were analyzed for GFP-Atg8 processing by western blot. The ratio of free GFP to Dpm1 (loading control) is presented below the blots, and quantification is presented on the right (Student’s t test, n=4; *p < 0.05); the value for Atg5WT at 6 hr was set to 1.0 and other values were normalized. (B) WLY176 atg5∆ yeast cells expressed either plasmid-based Atg5WT-PA, Atg5E141D-PA or an empty vector. Protein extracts were used to measure autophagy through the Pho8Δ60 assay (Student’s t test, n=6; *p < 0.05). (C) WLY176 cells with genomic integrated Atg5WT or Atg5E141D were used to generate protein extracts and autophagy was monitored through the Pho8Δ60 assay (Student’s t test, n=3; *p < 0.05). (D) WLY176 atg5∆ yeast cells expressing plasmid-based Atg5WT-PA, Atg5E141D-PA or an empty vector were used to generate protein extracts. The ratio of Atg8–PE to total Atg8 is presented below the blots based on western blot using antiserum to Atg8. Dpm1 was used as a loading control. (E) MKO ATG3 (YCY137) cells were co-transformed with pATG8∆R-ATG7-ATG10(414), and either pATG5WT-HA-ATG12(416), pATG5E141D-HA-ATG12(416), pATG5WT-HA-ATG12-ATG16(416), or pATG5E141D-HA-ATG12-ATG16(416). Overnight cultures were diluted to OD=0.02 in SMD -Ura -Trp. The cells were incubated at 30°C for 18 hr to mid-log phase before they were shifted to SD-N for nitrogen starvation. Samples at the corresponding time points were collected, TCA precipitated and subsequently analyzed by western blot. S.E., short exposure; L.E., long exposure.
 
 To determine the reason for reduced autophagic activity we tested the effects of the Atg5E141D mutant on Atg8 lipidation. As shown by the ratio of Atg8–PE:total Atg8, cells expressing Atg5E141D displayed a decrease in Atg8–PE conjugation at 30 and 60 min of starvation compared to cells expressing Atg5WT (Figure 5D). We extended this analysis using the in vivo reconstitution of Atg8–PE conjugation as described previously (Cao et al., 2008). In brief, we examined Atg8 lipidation in a multiple-knockout (MKO) strain in which 23 ATG genes are deleted, when expressing only the E1, E2 and E3-like conjugation enzymes of the autophagy machinery. Atg8∆R that lacks the C-terminal arginine was used in the assay to bypass the initial activation step initiated by Atg4; due to the absence of Atg4, there is no cleavage of Atg8–PE from the membrane, resulting in stabilization of this form of the protein. We found that the Atg5E141D mutant was significantly defective in Atg8–PE conjugation compared to the cells with Atg5WT when Atg16 was not present (Figure 5E). Atg16 is not required mechanistically for Atg8 conjugation, but its presence increases the efficiency of this process and may dictate the site of conjugation (Cao et al., 2008; Hanada et al., 2007). Thus, the presence of Atg16 may partially mask the Atg8 lipidation defects of the Atg5E141D mutant, and this may explain why the E122D/E141D mutation induces a hypomorphic rather than a complete null phenotype.
 
-## ATG5E122D fails to complement the ataxic phenotype of Atg5-null flies
+### ATG5E122D fails to complement the ataxic phenotype of Atg5-null flies
 
-To further characterize the effect of the E122D mutation on the development of ataxia, we generated
+To further characterize the effect of the E122D mutation on the development of ataxia, we generated Drosophila melanogaster knockouts for Atg5 (Figure 6A), and reconstituted the Atg5-null mutant flies with transgenes expressing wild-type (WT) or E122D human ATG5 (Figure 6B-D). Unlike mouse models, Atg5-null flies are viable, although they exhibit severe mobility defects after adult eclosion as demonstrated by a negative geotaxis assay (Figure 6E and I, and Video 1), similar to Atg7 null mutant flies (Juhasz et al., 2007). These mobility defects were substantially restored by expression of ATG5WT (Figure 6F and I, and Video 2), suggesting that the molecular function of ATG5 is conserved between human and Drosophila. However, Atg5-null mutant flies expressing ATG5E122D were still defective in mobility although slightly better than Atg5-null controls (Figure 6G–I, and Videos 3 and 4), demonstrating again that ATG5 activity is compromised but not eliminated by the E122D mutation. ATG5E122D was also inferior to ATG5WT in suppressing Ref(2)P (fly p62/SQSTM1) accumulation (Figure 6J and K) and cell death (Figure 6L and M) in the brain of Atg5-null mutant flies.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12245/elife-12245-fig6-v2.jpg)
 
-**Figure 6.:** Atg5-null flies is suppressed by human ATG5WT but not by ATG5E122D.(A) Genomic organization of the Atg5 locus and the Atg5-null mutant (Atg5)5cc5. Atg5 mutants have a CRISPR-Cas9-mediated deletion in approximately 1.5 kb residues that eliminate more than 85% of Atg5-coding sequences including the translation start site. Open boxes, untranslated exons; closed boxes, protein-coding exons. Scale bar, relative length of 1 kb genomic span. (5cc5B) Schematic representation of how ATG5 transgenic flies were made. Plasmid which can express wild-type or E122D-mutated human ATG5 was inserted into an identical genomic location (the attP site) through phiC31-mediated recombination (Bateman et al., 2006; Bischof et al., 2007; Venken et al., 2006). The scheme was adapted from a previous publication (Kim and Lee, 2015). (C) Genetic scheme of how ATG5 transgenes were placed into the Atg5-null mutant flies. Atg5, UAS-ATG5 and Tub-Gal4 loci are on the X-chromosome, second chromosome and third chromosome, respectively. (D) Whole flies of indicated genotypes were analyzed by IB. (E to H) Photographs of the vials containing 2-week-old adult male flies of indicated genotypes taken at 3 sec after negative geotaxis induction: (E) Atg5-null flies exhibit severely impaired mobility. (F) Ataxic phenotype of Atg5-null flies is complemented by human ATG5WT expression. (G and H) Human ATG5E122D is less capable than human ATG5WT in suppressing the fly ataxia phenotype. (I) Quantification of the climbing speeds of 2-week-old adult male flies (n≥20) of the indicated genotype. Climbing speed is presented as mean ± standard deviation (n=5). P values were calculated using the Student’s t test (***p<0.001). (J) Drosophila heads from two-weeks-old flies of the indicated genotypes were analyzed by IB. (K) Ref(2)P [p62] is an autophagy substrate. Relative protein expression was measured by densitometry and presented in a bar graph (mean ± standard error; n=4). (L) Terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) of Drosophila brain (middle layer of the medial compartment). (M) TUNEL-positive cells per field were quantified and presented in a bar graph (mean ± standard error; n≥5). K and M: P values were calculated using the Student’s t test (*p<0.05, **p<0.01, ***p<0.001).DOI: http://dx.doi.org/10.7554/eLife.12245.009
+**Figure 6.:** (A) Genomic organization of the Atg5 locus and the Atg5-null mutant (Atg55cc5). Atg55cc5 mutants have a CRISPR-Cas9-mediated deletion in approximately 1.5 kb residues that eliminate more than 85% of Atg5-coding sequences including the translation start site. Open boxes, untranslated exons; closed boxes, protein-coding exons. Scale bar, relative length of 1 kb genomic span. (B) Schematic representation of how ATG5 transgenic flies were made. Plasmid which can express wild-type or E122D-mutated human ATG5 was inserted into an identical genomic location (the attP site) through phiC31-mediated recombination (Bateman et al., 2006; Bischof et al., 2007; Venken et al., 2006). The scheme was adapted from a previous publication (Kim and Lee, 2015). (C) Genetic scheme of how ATG5 transgenes were placed into the Atg5-null mutant flies. Atg5, UAS-ATG5 and Tub-Gal4 loci are on the X-chromosome, second chromosome and third chromosome, respectively. (D) Whole flies of indicated genotypes were analyzed by IB. (E to H) Photographs of the vials containing 2-week-old adult male flies of indicated genotypes taken at 3 sec after negative geotaxis induction: (E) Atg5-null flies exhibit severely impaired mobility. (F) Ataxic phenotype of Atg5-null flies is complemented by human ATG5WT expression. (G and H) Human ATG5E122D is less capable than human ATG5WT in suppressing the fly ataxia phenotype. (I) Quantification of the climbing speeds of 2-week-old adult male flies (n≥20) of the indicated genotype. Climbing speed is presented as mean ± standard deviation (n=5). P values were calculated using the Student’s t test (***p<0.001). (J) Drosophila heads from two-weeks-old flies of the indicated genotypes were analyzed by IB. (K) Ref(2)P [p62] is an autophagy substrate. Relative protein expression was measured by densitometry and presented in a bar graph (mean ± standard error; n=4). (L) Terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) of Drosophila brain (middle layer of the medial compartment). (M) TUNEL-positive cells per field were quantified and presented in a bar graph (mean ± standard error; n≥5). K and M: P values were calculated using the Student’s t test (*p<0.05, **p<0.01, ***p<0.001).
+
+![Video 1.](https://cdn.elifesciences.org/articles/12245/elife-12245-media1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/12245/elife-12245-media2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/12245/elife-12245-media3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/12245/elife-12245-media4.mp4.jpg)
 
 ## Discussion
 
@@ -121,11 +232,11 @@ This study’s finding of the pathogenic human E122D mutation in ATG5, a gene en
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Study protocols including written informed consents have been approved by the University of Michigan Institutional Review Board and the Boğaziçi University Institutional Review Board for Research with Human Participants. Two Turkish brothers, ages 5 and 7 in 2004, presented with ataxia and developmental delay, as previously described (Yapici and Eraksoy, 2005). Parents were initially reported to be unrelated, but recently suggested they might be remotely related. Both patients were delayed in walking, had truncal ataxia and dysmetria, nystagmus, and lower IQ (68 and 70). MRI revealed cerebellar hypoplasia. Follow-up examinations showed no progression of symptoms.
 
-## Genetic analysis
+### Genetic analysis
 
 DNA was isolated from peripheral whole blood using the Qiagen (Germantown, MD) Gentra Puregene isolation kit. Linkage analysis was performed using the genotype data generated with Illumina HumanOmniExpress-24 chip for the mother and the four sibs. The Allegro module (Gudbjartsson et al., 2000) of easyLINKAGE software was used, assuming autosomal recessive inheritance and parents as third cousins. No deletion or duplications common to just the two affected brothers were detected using cnvPartition plug-in in Illumina Genome Studio v.1.02 software.
 
@@ -133,30 +244,30 @@ Exome sequencing was performed independently twice on one subject. Capture for w
 
 PCR followed by Sanger sequencing was performed to validate the variant identified through exome sequencing and test for segregation within the family. The variant of interest was further examined in two separate collections of a total of 500 Turkish samples, and found absent.
 
-## Lymphoblast cell culture
+### Lymphoblast cell culture
 
 Lymphoblastoid cell lines (LCL) of both subjects were generated from heparinized whole blood samples and cultured as described (Doyle, 1990). As they are made in house and cultured briefly, mycoplasma contamination risk is minimized.
 
-## Protein co-expression and affinity purification from insect cells
+### Protein co-expression and affinity purification from insect cells
 
 We used a baculovirus/insect cell expression system to examine formation of the human ATG12–ATG5 conjugate in a heterologous system described previously (Qiu et al., 2013). Hi5 insect cells (Invitrogen, Carlsbad, CA) were infected with baculoviruses expressing human ATG7, ATG10, a GST-tagged version of ATG12 (residues 53–140, corresponding to the ubiquitin-like domain) and a His-tagged version of either ATG5WT or ATG5E122D. Three days post infection, lysates were subjected to glutathione affinity chromatography, and the GST-ATG12–His-ATG5 conjugate was detected by SDS-PAGE followed by Coomassie Blue staining. To confirm that the baculoviruses produce protein, Hi5 cells were coinfected with baculoviruses expressing the His-tagged WT and mutant versions of ATG5 and the N-terminal domain of ATG16L1 (residues 1–69, as an MBP fusion). At three days post infection, lysates were subjected to nickel affinity purification. The ATG5-ATG16L1 complex formation was detected by SDS-PAGE and Coomassie Blue staining.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 The complex containing ATG5E122D and the N-terminal domain of ATG16L1 (residues 1–69) was expressed in Hi5 insect cells, and purified by nickel affinity, ion exchange, and size exclusion chromatography into a final buffer of 20 mM Tris, pH 8.5, 50 mM NaCl, 10 mM DTT. The complex was concentrated to 18.5 mg/ml, aliquoted, flash-frozen and stored at -80°C until further use. Crystals were grown by the hanging drop vapor diffusion method by mixing purified protein 1:1 with reservoir solutions of 37.5 mM MES, pH 5.2–5.8, 0.2 M sodium tartrate, and 11–13% polyethylene glycol 3350. Final crystals were obtained by micro-seeding with reservoir solution of 40 mM MES, pH 5.5, 0.2 M sodium tartrate, 8.5% PEG3350, 10 mM DTT. Crystals were cryoprotected in reservoir solution supplemented with 25% xylitol, and flash frozen in liquid nitrogen prior to data collection. Diffraction data were processed with XDS. The structure was determined by molecular replacement using Phaser (McCoy et al., 2007) with the structure of the WT ATG5-ATG16L1 (1–69) (PDB: 4TQ0) complex as a search model (Kim et al., 2015a). Model construction and rebuilding were performed using Coot (Emsley et al., 2010). The structure was refined using Phenix (Adams et al., 2010). Diffraction data and refinement statistics are provided in Table 1.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells or tissues were lysed in cell lysis buffer (20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 2.5 mM sodium pyrophosphate, 1 mM beta-glycerophosphate, 1 mM Na3VO4, 1% Triton X-100) or RIPA buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1% sodium deoxycholate, 1% NP-40, 0.1% SDS) containing protease inhibitor cocktail (Roche). After being clarified with centrifugation, lysates were boiled in SDS sample buffer, separated by SDS-PAGE, transferred to polyvinylidene difluoride membranes and probed with the indicated antibodies. ATG5 (12994), LC3 (3868) and SQSTM1/p62 (5114) antibodies were purchased from Cell Signaling Technology. Hemagglutinin (HA, 3F10) antibody was from Roche. Actin (JLA20) and tubulin (T5168) antibodies were from Developmental Studies Hybridoma Bank and Sigma, respectively. Ref(2)P antibody was previously described (Pircs et al., 2012).
 
-## HEK293 cell culture
+### HEK293 cell culture
 
 Wild-type human ATG5-coding sequence was from Addgene #24922 (deposited by Dr. Toren Finkel) (Lee et al., 2008). The E122D mutation was introduced into ATG5 by PCR-based site-directed mutagenesis. ATG5WT and ATG5E122D were cloned into the plasmid pLU-CMV-Flag. The HA-ATG12-expressing plasmid was from Addgene #22950 (deposited by Dr. Noboru Mizushima) (Mizushima et al., 1998b). HEK293 cells (the 293 A substrain from Invitrogen, tested negative for mycoplasma by PCR) were cultured in Dulbecco’s modified Eagle’s medium (DMEM, Invitrogen) containing 10% fetal bovine serum (FBS) and penicillin/streptomycin at 37°C in 5% CO2. For transient expression of proteins, HEK293 cells were transfected with purified plasmid constructs and polyethylenimine (PEI, Sigma) as previously described (Horbinski et al., 2001). Cells were harvested 24 hr after transfection for immunoblot analyses.
 
-## Yeast model
+### Yeast model
 
 Saccharomyces cerevisiae strain WLY176 was used to generate an ATG5 knockout strain (atg5∆) as previously described (Gueldener et al., 2002). The MKO strain YCY137 (SEY6210 atg1∆, 2∆, 4∆, 5∆, 6∆, 7∆, 8∆, 9∆, 10∆, 11∆, 12∆, 13∆, 14∆, 16∆, 17∆, 18∆, 19∆, 20∆, 21∆, 23∆, 24∆, 27∆, 29∆) (Cao et al., 2008), was used for in vivo reconstitution of Atg8 conjugation. Site-directed mutagenesis was performed to generate ATG5 amplicons with the E141D mutation as previously described (Liu and Naismith, 2008). A pRS406 empty plasmid was digested with Spel and SalI, and then ligated with a DNA fragment encoding either wild-type or mutant Atg5-PA. atg5∆ was transformed with an empty pRS406 vector, or plasmids encoding Atg5-PA WT or Atg5-PA E141D. Wild-type WLY176 colonies were transformed with empty pRS406 vector as a control. Colonies were grown on SMD-URA medium and starved in nitrogen-deficient medium. Pho8Δ60 and western blot analyses were performed as described previously (Noda and Klionsky, 2008; Shintani and Klionsky, 2004). Quantification was performed using ImageJ software. The pATG8∆R-ATG7-ATG10(414), pATG5(WT)-HA-ATG12(416) and pATG5(WT)-HA-ATG12-ATG16(416) plasmids were described previously (Cao et al., 2008). The pATG5(E141D)-HA-ATG12(416) and pATG5(E141D)-HA-ATG12-ATG16(416) plasmids were made by site-directed mutagenesis based on the wild-type constructs.
 
-## Drosophila genetics
+### Drosophila genetics
 
 Atg5-null Drosophila flies (Atg55cc5) were generated by CRISPR-Cas9-mediated genome editing, using a double gRNA approach, both targeting the same gene, as described (Kondo and Ueda, 2013). The Atg55cc5 mutant was recovered by screening viable candidate lines for accumulation of the specific autophagy cargo Ref(2)P using western blots, followed by PCR and sequencing. Atg55cc5 mutants have a deletion in X:7,322,242–7,323,717 residues (Drosophila melanogaster R6.06), which deletes five out of six exons of the Atg5 gene, eliminating more than 85% of protein-coding sequences including the translation start site (Figure 6A). The PhiC31 integrase-mediated site-specific transformation method was used to express human ATG5WT and ATG5E122D from an identical genomic locus (Bateman et al., 2006; Bischof et al., 2007; Venken et al., 2006). In brief, flag-tagged ATG5WT and ATG5E122D were cloned into a pUAST-attB vector (Bischof et al., 2007) and fully sequenced. pUAST-attB-ATG5WT and pUAST-attB-ATG5E122D were microinjected into y1 M{vas-int.Dm}ZH-2A w*; M{3xP3-RFP.attP}ZH-51D flies and stable transformants were isolated by the presence of the mini-white+ marker (Figure 6B). The UAS-ATG5WT or UAS-ATG5E122D transgenes were crossed with a double balancer strain (Bl/CyO; TM2/TM6B) and then with +/CyO; Tub-Gal4/TM2 to be constructed as stable Tub>ATG5 lines (UAS-ATG5/UAS-ATG5; Tub-Gal4/TM6B). The Tub>ATG5 male flies were crossed with Atg55cc5/FM7 female flies to generate Atg5-null flies expressing human ATG5 transgenes. Climbing assays and TUNEL staining were performed as previously described (Kim et al., 2015b).

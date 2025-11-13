@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.47346.001 The Drosophila Fog pathway represents one of the best-understood signaling cascades controlling epithelial morphogenesis. During gastrulation, Fog induces apical cell constrictions that drive the invagination of mesoderm and posterior gut primordia. The cellular mechanisms underlying primordia internalization vary greatly among insects and recent work has suggested that Fog signaling is specific to the fast mode of gastrulation found in some flies. On the contrary, here we show in the beetle Tribolium , whose development is broadly representative for insects, that Fog has multiple morphogenetic functions. It modulates mesoderm internalization and controls a massive posterior infolding involved in gut and extraembryonic development. In addition, Fog signaling affects blastoderm cellularization, primordial germ cell positioning, and cuboidal-to-squamous cell shape transitions in the extraembryonic serosa. Comparative analyses with two other distantly related insect species reveals that Fog’s role during cellularization is widely conserved and therefore might represent the ancestral function of the pathway.
+The Drosophila Fog pathway represents one of the best-understood signaling cascades controlling epithelial morphogenesis. During gastrulation, Fog induces apical cell constrictions that drive the invagination of mesoderm and posterior gut primordia. The cellular mechanisms underlying primordia internalization vary greatly among insects and recent work has suggested that Fog signaling is specific to the fast mode of gastrulation found in some flies. On the contrary, here we show in the beetle Tribolium, whose development is broadly representative for insects, that Fog has multiple morphogenetic functions. It modulates mesoderm internalization and controls a massive posterior infolding involved in gut and extraembryonic development. In addition, Fog signaling affects blastoderm cellularization, primordial germ cell positioning, and cuboidal-to-squamous cell shape transitions in the extraembryonic serosa. Comparative analyses with two other distantly related insect species reveals that Fog’s role during cellularization is widely conserved and therefore might represent the ancestral function of the pathway.
 
 ## Introduction
 
@@ -49,7 +49,7 @@ Our analysis of Fog signaling in Tribolium reveals that, in contrast to Chironom
 
 ## Results
 
-## Tc-cta, Tc-mist and Tc-fog are expressed in morphogenetically active tissues
+### Tc-cta, Tc-mist and Tc-fog are expressed in morphogenetically active tissues
 
 As a first step towards characterizing the Fog signaling pathway in Tribolium, we identified and cloned the pathway components (Figure 1—figure supplement 1) and characterized their expression during development. The Tribolium genome contains one ortholog each for fog, mist and cta (hereafter referred to as Tc-fog, Tc-mist and Tc-cta). Fog is a fast evolving protein with very low overall sequence conservation within insects and no detectable homologs in currently available non-insect genomes (Figure 1—figure supplement 2) (Urbansky et al., 2016). In contrast, previous research has shown mist and cta to be well conserved among insects (de Mendoza et al., 2016; Kozasa et al., 2011; Manning et al., 2013; Parks and Wieschaus, 1991; Urbansky et al., 2016).
 
@@ -57,13 +57,81 @@ In Drosophila, fog, mist and cta are all maternally expressed (Costa et al., 199
 
 After blastoderm formation, Tc-cta and Tc-mist transcripts were uniformly distributed, while Tc-fog transcripts were enriched at the anterior pole (Figure 1—figure supplement 3A,I,Q). During later blastoderm stages, Tc-cta formed a shallow gradient with higher levels towards the posterior pole (Figure 1E), while Tc-mist and Tc-fog were strongly expressed in an oblique anterior-dorsal domain (the future serosa; Figure 1A,I,M). At the same time, weak Tc-mist expression became visible at the posterior pole, and weak Tc-fog expression was also visible in a patch of cells at the ventral side of the embryo (Figure 1I,M; Figure 1—figure supplement 4B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig1-v2.jpg)
+
+**Figure 1.:** (A–D) Schematics showing embryo condensation as described in the text. Serosa is shown in purple, germ rudiment tissue is shown in gray, arrows display tissue movements. aaf: anterior amniotic fold, paf: posterior amniotic fold, pp: primitive pit, sw: serosal window. (E–P’) Whole mount ISH and DNA staining for Tc-cta (E–H), Tc-mist (I–L) and Tc-fog (M–P). (E’–P’) nuclear (DAPI) staining of respective embryos. Anterior is left, ventral is down (where possible to discern).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** In Drosophila the secreted protein Fog activates the two G protein coupled receptors (GPCRs) Mist (Mesoderm-invagination signal transducer, also known as Mthl1 (Methuselah-like1)) (Manning et al., 2013) and Smog (Jha et al., 2018; Kerridge et al., 2016). The active receptors act through a heterotrimeric G protein composed of Gα12/13, Gβ13F, and Gγ1 (Kerridge et al., 2016) by converting the Gα12/13 subunit, known as Concertina (Cta) from its GDP bound inactive to its GTP bound active form. The complex then dissociates into free Gα12/13 and a Gβ13F/Gγ1 dimer, which regulate their respective intracellular effectors. In particular, active Gα12/13 recruits RhoGEF2 to the apical plasma membrane where it acts as a guanine nucleotide exchanges factor for Rho1. Rho1-GTP then activates Rok (Rho kinase). Rok phosphorylates the regulatory light chain of non-muscle myosin II promoting apical myosin contractility. RhoGEF2 can also be recruited to the apical membrane through the transmembrane protein T48 which interacts with RhoGEF2 via its PDZ-binding domain (Kölsch et al., 2007).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic representation of Fog proteins from Drosophila melanogaster (Dm-Fog), Gryllus bimaculatus (Gb-Fog), Oncopeltus fasciatus (Of-Fog) and Tribolium castaneum (Tc-Fog). The proteins contain an N-terminal signal peptide (yellow) followed by a conserved Fog domain (blue) and a highly variable C-terminal domain. (B) Sequences of the N-terminal regions including the signal peptide (SP, yellow) and the Fog domain (FOG, blue). Amino acids marked in yellow indicate the predicted cleavage side of the SP (identified via SignalP 4.1 (http://www.cbs.dtu.dk/services/SignalP/)). (C) Sequence conservation within the Fog domain as indicated as percentage of identical amino acids.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–X) Whole mount ISH for Tc-cta (A–H), Tc-mist (I–P) and Tc-fog (Q–X). (A’–X’) DAPI staining of respective embryos. Anterior is left, all panels show optical sagittal sections, except G, H, L, O, P, T and W, which show ventral surface views.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Double whole mount ISH for Tc-twi (red) and Tc-fog (blue). Anterior is left, all panels show optical sagittal sections.
+
 The complex morphogenetic events that transform the Tribolium blastoderm into the germband (schematic in Figure 1A–D, wildtype in Videos 1 and 2) have been described in detail elsewhere (Handel et al., 2000; Benton et al., 2013), but we will briefly present them here for the benefit of the reader. After cellularization is complete, cells that will form the embryo proper and the extraembryonic amnion (together termed the germ rudiment) undergo mitosis and condense towards the posterior-ventral region of the embryo (Figure 1B,C). At the same time, a patch of cells at the posterior pole undergoes apical constrictions to form a cup-shaped indentation (termed the primitive pit, pp in Figure 1B) that then deepens into a fold (termed the posterior amniotic fold, paf in Figure 1C, Video 3). Cells constrict in a pulsatile manner (Video 4 showing close up of cells), as previously described for the Drosophila ventral furrow (Martin et al., 2009). Subsequently, the dorsal ‘lip’ of the posterior amniotic fold moves ventrally, progresses over the posterior pole while undergoing involution, and then moves anteriorly over the ventral face of the embryo. Differences in the relative timing of posterior folding, cell division and tissue condensation between embryos lead to high variability in the overall appearance and progression of the posterior fold (Video 5 showing four embryos from posterior). As this process occurs, the edges of the posterior amniotic fold spread anteriorly until they meet with the anterior amniotic fold (which forms independently, aaf in Figure 1D). During the above condensation and tissue folding, the presumptive serosa cells undergo a cuboidal-to-squamous transition and spread over the entire egg surface without any cell division (Video 6 showing wildtype serosa flattening). The boundary between serosa and germ rudiment is demarcated by a supracellular actin cable (sca) that may be involved in serosal window closure (sw in Figure 2D and wild type in Video 2) (Benton et al., 2013). Throughout this period, mesoderm internalization occurs along the ventral part of the germ rudiment via both cell ingression and furrow formation mediated by apical constriction (Handel et al., 2005).
+
+![Video 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-video1.mp4.jpg)
+
+**Video 1.:** Maximum intensity projections of one egg hemisphere are shown with anterior to the left and ventral to the bottom.
+
+![Video 2.](https://cdn.elifesciences.org/articles/47346/elife-47346-video2.mp4.jpg)
+
+**Video 2.:** Maximum intensity projections of one egg hemisphere are shown with anterior to the left and ventral to the bottom.
+
+![Video 3.](https://cdn.elifesciences.org/articles/47346/elife-47346-video3.mp4.jpg)
+
+**Video 3.:** Apical constrictions are visible at the center of the forming fold. Embryo was mounted with the posterior pole towards the objective and the resulting movie was digitally rotated. Maximum intensity projection of posterior view is shown as well as a transverse section along the dorsal/ventral midline. Ventral is to the bottom.
+
+![Video 4.](https://cdn.elifesciences.org/articles/47346/elife-47346-video4.mp4.jpg)
+
+**Video 4.:** Cells constrict over time and this occurs in a pulsatile manner, and cell intercalation is also visible. Ventral is to the bottom.
+
+![Video 5.](https://cdn.elifesciences.org/articles/47346/elife-47346-video5.mp4.jpg)
+
+**Video 5.:** Embryos were mounted with their posterior poles towards the objective. Maximum intensity projection of posterior view is shown. Ventral is to the bottom.
+
+![Video 6.](https://cdn.elifesciences.org/articles/47346/elife-47346-video6.mp4.jpg)
+
+**Video 6.:** The cuboidal-to-squamous transition of the serosa cells during germband formation can be seen. Maximum intensity projection of the epithelium as well as transverse and sagittal sections along midpoints of the frame are shown. Anterior is to the left, ventral to the bottom.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig2-v2.jpg)
+
+**Figure 2.:** (A–H) Stills from live fluorescent imaging of LifeAct-eGFP transgenic embryos, ranging from late blastoderm to germband extension stages. (A–D) wildtype control. (E–H) Tc-cta KD. The asterisk marks a cluster of cells that becomes visible at the posterior pole. (J, K) Tc-pnr is expressed in a broad dorsal domain. (J’, K’) nuclear (DAPI) staining of respective embryos. (L, M) Tc-gsb expression marks forming and differentiating segments in elongating germ band embryos. (L’, M’) nuclear (DAPI) staining of respective embryos. (J, L) Wildtype. (K, M) Tc-cta KD. aaf: anterior amniotic fold, am/de: amnion dorsal ectoderm, paf: posterior amniotic fold, pp: primitive pit, sca: supracellular actin cable, sw: serosal window. Anterior is left, ventral is down.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Nuclear (DAPI in A, C and D; nGFP transgene in B) staining of embryos of similar age. (A) Wildtype embryo at early elongating germ band stage. (B–D) Tc-cta, Tc-fog or Tc-mist KD embryos. aaf: anterior amniotic fold. Anterior is left, ventral is down.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A– C) Tc-iro expression (ISH). (A’– C’) DAPI staining of respective embryos. In wildtype embryos, Tc-iro is expressed at the serosa/germ rudiment border and in a dorsal germ rudiment domain. (C) Upon Tc-cta KD, the dorsal germ rudiment domain remains on the dorsal side of the egg. (D, E) Tc-zen1 expression marks the rim of the serosal window (sw). (D’, E’) DAPI staining of respective embryos. (D) Wildtype embryo forms a serosal window while (E) Tc-cta KD embryo lacks a circumferential serosal window. Anterior is to the left for all embryos. (A) is dorsolateral, (B) is ventrolateral, (C) is lateral, (D, E) are ventral views. aaf: anterior amniotic fold, paf: posterior amniotic fold.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–D) Stills from fluorescent live imaging of a Tc-cta KD embryo carrying a LifeAct-eGFP transgene. aaf: anterior amniotic fold, blue asterisk: lateral rupture, yellow asterisk: ventral rupture. Anterior is left, ventral is down.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) 98% of offspring of beetles injected with H2O show normal development (N = 124). 76% (N = 183) of offspring of beetles injected with Tc-fog dsRNA showed phenotypic defects. (B) The 139 embryos with phenotypic defects were sub-scored for the defects described in Figure 2, Figure 3, Figure 4 and Figure 2—figure supplement 3. Depending on the position and stage of the embryo not all defect types could be evaluated for each embryo. Therefore, the total number of scorable embryos changes for each phenotypic type. paf: posterior amniotic fold, aaf: anterior amniotic fold, PGCs, primordial germ cells.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A, B) Optical cross sections (DIC) of fixed embryos after germband retraction. The elongation of the hindgut has started. (A’, B’) Enlarged views of the areas enframed in A, B. Red arrows indicate the polarity of the hindgut (asterisk). (C, D) Fuchsin staining of embryos after dorsal closure. Abdominal segments are numbered. (C) The hindgut (asterisk) forms a curved structure inside the posterior abdomen. (D) The hindgut has not been internalized and develops outside the embryo. This phenotype was observed in 84% of the KD embryos (N = 19). (E, F) Darkfield micrographs of larval cuticle. Legs are numbered. (F) Segments are highly distorted, but formation of structured appendages indicates normal segment polarity. The hindgut is external (white asterisk). An external hindgut was observed in 56% (N = 34) of cuticle preparation of KD embryos.
 
 Throughout embryo condensation, Tc-cta expression persisted in the posterior region of the germ rudiment/germ band (Figure 1F–H, Figure 1—figure supplement 3F–H). Tc-mist expression faded first from the dorsal serosal cells, then from the entire serosa, while expression in the primitive pit region/posterior end of the germ band strengthened (Figure 1J–L, Figure 1—figure supplement 3N–P). Tc-fog expression remained in the serosa throughout condensation and became upregulated in a posterior-ventral stripe of cells fated to become mesoderm (Figure 1N–P, Figure 1—figure supplement 3T–X; Figure 1—figure supplement 4C–E). Towards the end of embryo condensation, Tc-fog also became expressed in the ectoderm on either side of the mesoderm domain (Figure 1—figure supplement 3W).
 
 Our expression analysis shows that Tribolium Fog signaling components are activated in a spatiotemporal pattern suggestive of a role in epithelial morphogenesis.
 
-## The Fog pathway is required for the posterior amniotic fold in Tribolium
+### The Fog pathway is required for the posterior amniotic fold in Tribolium
 
 To test whether the Fog signaling pathway is involved in early Tribolium embryogenesis, we disrupted Tc-cta, Tc-mist or Tc-fog function via parental RNAi (pRNAi) knockdown (KD) and analyzed both live and fixed embryos.
 
@@ -72,6 +140,10 @@ KD of each of the genes resulted in the same overall phenotype (Figure 2—figur
 ![Figure 3.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig3-v2.jpg)
 
 **Figure 3.:** Schematics showing wildtype development and the effects on embryo formation of RNAi disruption of Tc-fog, Tc-mist or Tc-cta. Anterior is left, ventral is down.
+
+![Video 7.](https://cdn.elifesciences.org/articles/47346/elife-47346-video7.mp4.jpg)
+
+**Video 7.:** Maximum intensity projection of one egg hemisphere is shown with anterior to the left and ventral to the bottom.
 
 To investigate whether patterning of the dorsal half of the germ rudiment was disrupted in KD embryos, we analyzed the expression of two known marker genes. Despite the abnormal position of the relevant tissue, both Tc-pnr and Tc-iro, which are expressed in broad dorsal domains, appeared to be expressed normally in KD embryos (Figure 2J,K and Figure 2—figure supplement 2A–C). This finding is supported by the fact that a supracellular-actin cable formed between the serosa and germ rudiment tissues, as occurs in wildtype embryos at the same stage (sca in Figure 2D,H) (Benton et al., 2013).
 
@@ -83,7 +155,7 @@ During germband retraction, KD embryos become highly distorted. However, segment
 
 Taken together, Fog signaling is required for one of the most prominent morphogenetic movements during Tribolium gastrulation: the formation of the posterior amniotic fold that is essential both for extraembryonic membrane and gut development. In the absence of Fog the Tribolium embryo assumes a topology that is more like that of Drosophila: the dorsal ectoderm and extraembryonic tissues remain in a dorsal position (Figure 3).
 
-## Fog signaling controls the positioning of the primordial germ cells
+### Fog signaling controls the positioning of the primordial germ cells
 
 Drosophila primordial germ cells (PGCs) are specified at the posterior pole of the early embryo and form as ‘pole cells’ above the surface of the blastoderm (Cinalli and Lehmann, 2013). In Tribolium, the PGCs are also specified at the posterior of the blastoderm, but they are integrated in the blastoderm cell layer and internalize beneath the blastoderm epithelium at around the same time as primitive pit formation (Schröder, 2006). In our live imaging analysis of KD embryos, we frequently observed a posterior ball of tissue (Figure 2G,H, white asterisk) and asked whether this tissue consisted of incorrectly localized PGCs.
 
@@ -95,19 +167,47 @@ To follow the development of Tribolium PGCs, we examined the expression of the g
 
 In Tc-fog pRNAi embryos, Tc-tapas was also expressed in a distinct cluster of putative PGCs at the posterior, but in most embryos (85% of KD embryos that displayed phenotypic defects [N = 99], Figure 2—figure supplement 4), the cell cluster was located at the apical side of the embryonic epithelium (Figure 4C,F). This cell cluster became visible in this location during embryo condensation, precisely when PGCs move beneath the epithelium in wildtype embryos (white asterisk in Figure 2G,H). Thus, in the absence of Fog signaling and primitive pit formation, the putative germ cells become mislocalized to the apical side of the embryonic epithelium (Figure 3).
 
-## Fog signaling is involved in, but not required for, mesoderm internalization
+### Fog signaling is involved in, but not required for, mesoderm internalization
 
 We next asked whether Fog signaling plays a role in mesoderm internalization in Tribolium. As described earlier, Drosophila Fog signaling is required for the formation of a deep ventral furrow, but mesodermal cells still internalize in Fog signaling mutant embryos (Seher et al., 2007; Sweeton et al., 1991; Zusman and Wieschaus, 1985).
 
 In Tribolium, mesoderm internalization occurs at the ventral side of the embryo like in Drosophila, but the mode of internalization is less uniform (Handel et al., 2005). Shortly after primitive pit formation, mesodermal cells flatten and constrict apically (Handel et al., 2005), causing the formation of a ventral furrow that is shallow at the anterior (Figure 5A1 and A2) and deeper at the posterior (Figure 5A3, Figure 5—figure supplements 1 and 2A for outlines of apically constricting cells). After serosal window closure, the mesoderm is fully internalized and the left and right ectodermal plates fuse along the ventral midline (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) Ventral views of whole mount embryos (anterior left) stained for the segmental marker Tc-gsb (yellow), nuclei (DAPI; blue). Embryos are also stained for Tc-twi expression but this is only visible in A (dark blue ventral domain). (A–B) Wildtype at horseshoe or early germband extension stage with two or four trunk Tc-gsb stripes, respectively. (C) Tc-fog KD at a stage corresponding to (B) with four trunk Tc-gsb stripes (the forth stripe is visible in lateral views). (A1–C3) transverse cryosections of the embryos shown in (A–C) with Tc-twi expression (blue) and Tc-gsb expression (red). The position of each section is indicated by a white dashed line in (A–C). (D–F’’) Transverse cryosections at posterior positions of embryos corresponding in age to those in (A–C) showing F-actin (phalloidin; magenta) and nuclei (sytox; green). (G, H) Sagittal cryosections of embryos during germband elongation (anterior left) showing Tc-twi expression (dark blue). (G’, H’) nuclear (DAPI) staining of respective embryos. Only a portion of the germband comprising four segments is shown. For corresponding sections showing the entire embryo see Figure 5—figure supplement 4. The different appearance of the mesoderm upon Tc-fog KD compared to wildtype is likely due to the delayed maturation of the mesoderm and the overall aberrant morphogenetic movements of KD embryos. For all embryos the serosa was removed during preparation. The cell sheet covering the ventral side of control embryos is the amnion (am) or amnion/dorsal ectoderm (am/de). Staging was done at 25°C.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Twi protein expression within the ventral furrow of a gastrulating Tribolium embryo. Cross section through anterior (A) and posterior (B) region of the same embryo. The sections are modified from Handel et al. (2005).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Transverse cryosections at posterior positions of wildtype (A) and Tc-fog KD (B) embryos of similar age stained for F-actin. (A’, B’) Magnified insert with mesoderm cells outlined in magenta. (A’’, B’’) Cell outlines of mesoderm (magenta) and ectoderm (green). (A) High number of apically constricting cells in wildtype. The mesoderm has been largely internalized. (B) Few apically constricting cells upon Tc-fog KD. The mesoderm has not been fully internalized.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A, B) Transverse section of staged embryos stained for F-actin (Phalloidin; red) and nuclei (Sytox; green). (A) Wildtype. The amnion/dorsal ectoderm covers the ventral side of the embryo. The mesoderm is internalized. The serosa was lost in the course of the fixation and staining procedure. (B) Tc-fog KD by pRNAi. The amnion/dorsal ectoderm remains at the dorsal side. Mesoderm internalization is delayed. (C, D) Schematic representation of transverse sections of wildtype (C) and Tc-fog KD (D) embryos. Purple: serosa; Yellow: yolk, Gray: Amnion plus embryonic ectoderm; Red: Mesoderm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A, B) Sagittal cryosections of embryos at the early elongating germ band stage showing Tc-twi expression (ISH, dark blue). (A’, B’) DAPI staining of respective embryos. (A) Wildtpype. Tc-twi is expressed in each segment in regular cell clusters. The amnion covers the embryo at the ventral side. The serosa has been removed. (B) Tc-fog KD by pRNAi. Tc-twi is also expressed in segmental, albeit less regular cell clusters. The embryo is not covered ventrally since the amnion remains at the dorsal side.
+
 Due to the dynamic nature of mesoderm internalization, it was important for us to compare carefully stage matched control and KD embryos. To do this, we carried out timed embryo collections and, in addition, examined the number of segments specified in these embryos (via analysis of Tc-gsb expression, Davis et al., 2001). At 19–21 hr after egg lay (AEL) (at 25°C), control embryos had four trunk Tc-gsb stripes and had completely internalized their mesoderm (Figure 5B and E). Tc-fog KD embryos of the same age also had four trunk Tc-gsb stripes, and while some mesodermal cells exhibited apical constrictions, gastrulation was not complete (Figure 5C and F; Figure 5—figure supplements 2 and 3B,D). In anterior positions, gastrulation in KD embryos looked similar to 16–18 hr old control embryos (Figure 5A1, C1), while in middle and posterior regions, KD embryos showed a shallower furrow than that of control embryos at corresponding anterior-posterior (AP) positions (Figure 5D,F).
 
 Despite the delay of mesoderm morphogenesis and the reduction in furrow depth in posterior positions, Tc-fog KD embryos eventually internalized the mesoderm. As in control embryos undergoing germ band extension, KD embryos possessed segmental clusters of Tc-twi expressing cells localized on the basal side of the ectoderm (Figure 5G,H; Figure 5—figure supplement 4). This situation is similar to Drosophila, where loss of fog affects coordination and speed of ventral furrow formation, but does not prevent mesoderm internalization.
 
-## Regulation of Tc-fog and Tc-mist expression
+### Regulation of Tc-fog and Tc-mist expression
 
 We next investigated how Fog signaling is regulated in Tribolium. Like in Drosophila, ventral tissue specification in Tribolium depends on Toll signaling; Tc-Toll KD leads to a complete loss of mesoderm and ventral ectoderm fates (Moussian and Roth, 2005; Nunes da Fonseca et al., 2008; Roth et al., 1989). Therefore, we reasoned that the ventral stripe of Tc-fog expression is likely also dependent on Toll signaling. Indeed, pRNAi for Tc-Toll resulted in the loss of ventral Tc-fog expression (Figure 6B). Tc-mist expression, on the other hand, remained in the primitive pit region (Figure 6I). The serosa expression of each gene was also affected by Tc-Toll KD; Tc-fog became expressed in an expanded, DV symmetric domain, while Tc-mist showed weak uniform expression (Figure 6B,I). These changes reflect the expansion and dorsalization of the serosa upon Tc-Toll KD (Nunes da Fonseca et al., 2008).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig6-v2.jpg)
+
+**Figure 6.:** Whole mount ISH for Tc-fog (A–E) and Tc-mist (H–L) expression in wildtype embryos (A, H) and embryos in which DV and AP genes have been knocked down (B-E, I-L; specific KD shown in panels). All embryos are at primitive pit stage except A and C, which are at the early posterior amniotic fold stage. The asterisk in (D) indicates the appearance of weak Tc-fog expression within a posterior-dorsal domain.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Arrowheads indicate activation, the bar-headed line indicates inhibition. Dashed lines indicate that the regulation is indirect.
 
 To further dissect the ventral regulation of Tc-fog and Tc-mist, we analyzed the patterning genes downstream of Toll signaling. In both Drosophila and Tribolium, the transcription factors twi and snail (sna) are co-expressed in a ventral stripe (Leptin and Grunewald, 1990; Sommer and Tautz, 1994; Stappert et al., 2016). In Drosophila, both genes are required together to activate mesodermal fog expression (Costa et al., 1994), while sna alone is largely sufficient to activate mesodermal mist expression (Manning et al., 2013). In Tribolium we found that Tc-mist expression was unchanged following Tc-twi pRNAi (as expected based on their non-overlapping domains of expression) (Figure 6J), but Tc-fog was also unaffected (Figure 6C). Mesodermal Tc-sna expression is completely dependent on Tc-twi (von Levetzow, 2008), and, therefore, Tc-fog expression is not regulated by either Tc-twi or Tc-sna. Instead, ventral Tc-fog expression must depend on other zygotic factors in Tribolium.
 
@@ -117,7 +217,7 @@ Tc-tsl is a component of the terminal patterning system that specifies the anter
 
 Taken together, our results show that ventral expression of Tc-fog requires a combination of DV patterning (Tc-Toll) and AP patterning (Tc-cad) inputs, while the posterior expression of Tc-mist is controlled by the terminal patterning system (Tc-tsl) (Figure 6—figure supplement 1).
 
-## The role of local Tc-fog expression for posterior folding
+### The role of local Tc-fog expression for posterior folding
 
 In Drosophila, the timing and location of fog expression is tightly linked with its function (Bailles et al., 2019; Costa et al., 1994; Lim et al., 2017). In contrast, Tc-fog is highly expressed in the serosa and posterior mesoderm, while its expression is conspicuously absent (or not detectable) from the posterior of the embryo where it is most prominently required, for the initiation of primitive pit and posterior amniotic fold formation. To approach this problem, we analyzed how each Tc-fog expression domain contributes to primitive pit and posterior amniotic fold formation. Specifically, we removed each Tc-fog domain individually or simultaneously and monitored the impact on the morphogenetic movements of the respective embryos.
 
@@ -125,11 +225,27 @@ To start, we deleted the serosal domain of Tc-fog (without affecting the ventral
 
 To test this assumption, we knocked down Tc-Toll to delete the ventral Tc-fog expression domain while maintaining high levels of Tc-fog expression in the serosa. Such embryos nonetheless still form a primitive pit-like indentation, and then a deep rotationally symmetric invagination at the posterior pole (Figure 7A,B). The distinctive appearance of the posterior folded tissue in Tc-Toll KD embryos could represent a secondary morphological consequence of germ rudiment condensation in a rotationally symmetric embryo. To test whether these tissue folds are truly Fog-dependent, we simultaneously knocked down Tc-Toll and Tc-fog. In nearly all double-KD embryos (87%, N = 81), posterior folding was indeed abolished (Figure 7C, Video 8). Thus, Toll KD embryos possess morphogenetic movements corresponding to the primitive pit and posterior amniotic fold of control embryos although they lack detectable Tc-fog expression in the germ rudiment.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig7-v2.jpg)
+
+**Figure 7.:** Nuclear (DAPI) staining of wildtype (A) and KD (B, C, D; specific KD shown in panels) embryos at the early posterior amniotic fold stage. Anterior is left, ventral is down (where possible to discern).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Whole mount ISH for Tc-fog. Optical sagittal sections. (A, B) anterior Tc-fog expression is lost upon KD of Tc-zen1. Anterior is left, ventral is down.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Whole mount ISH for Tc-fog. Optical sagittal sections. (A–C) Tc-fog expression is lost (or greatly reduced) upon Tc-Toll and Tc-zen1 double KD by pRNAi. (A’–C’) nuclear (DAPI) staining of respective embryos. Anterior is left, ventral is down (where possible to discern).
+
+![Video 8.](https://cdn.elifesciences.org/articles/47346/elife-47346-video8.mp4.jpg)
+
+**Video 8.:** Maximum intensity projection of one egg hemisphere is shown with anterior to the left.
+
 As Tc-Fog is an extracellular ligand, it is possible in the Tc-Toll KD embryos that Tc-Fog protein diffuses from the serosal domain to the posterior of the embryo to activate Tc-Mist and initiate the posterior morphogenetic events. To test this hypothesis, we knocked down both Tc-Toll and Tc-zen1 to remove both domains of Tc-fog expression simultaneously. In such embryos, no Tc-fog expression was visible by RNA ISH (Figure 7—figure supplement 2). Nevertheless, these embryos formed a symmetric posterior invagination as in Tc-Toll single KD embryos (Figure 7D). Therefore, diffusion of Tc-Fog from the serosa domain to the posterior also does not account for posterior folding.
 
 Two possibilities exist to explain this set of results. First, the primitive pit region of Tc-Toll KD embryos may harbor some Tc-fog transcript that, despite its low amounts, is sufficient to trigger the large-scale invagination of a symmetric posterior amniotic fold. Alternatively, there may be sufficient Tc-Fog protein remaining from the maternal expression of Tc-fog (Dönitz et al., 2018) to activate the Fog signaling pathway at the posterior of the embryo. However, both scenarios suggest that small amounts of Tc-Fog are sufficient to trigger large-scale folding specifically at the posterior pole.
 
-## A novel role for Fog signaling in serosal spreading
+### A novel role for Fog signaling in serosal spreading
 
 Our finding that Tribolium Fog signaling is involved in mesoderm internalization and posterior amniotic fold formation fits with the classic function of this pathway in apical cell constriction. However, Tc-fog and Tc-mist are also expressed in the serosa, and what function (if any) these genes may have here is unknown. As described earlier, serosal cells become squamous as they spread to encapsulate the germband and yolk, but they also undergo intercalation as occurs during the analogous process of epiboly in zebrafish (Benton, 2014; Köppen et al., 2006). As Fog signaling has been implicated in cell intercalation in the Drosophila germband (Kerridge et al., 2016), we asked whether Tribolium Fog signaling may have the same function in the serosa. We first describe the wildtype pattern of intercalation before testing for a role of Fog signaling in this process.
 
@@ -139,35 +255,83 @@ We observed extensive cell intercalation during serosal spreading (Figure 8, Vid
 
 **Figure 8.:** Stills from confocal live imaging of wildtype embryos with cell membranes marked via transient expression of GAP43-YFP. The tracked cells are colored as rows parallel to the serosa/germ rudiment boundary (pink closest to the boundary). The arrow indicates the region where cells intercalate to increase the number of cells at the serosa/germ rudiment boundary during stages 1–3. The arrowhead indicates one example region where cells intercalate to leave the serosa/germ rudiment boundary during stages 1–3. The bracket indicates cells located away from the serosa/germ rudiment boundary that undergo intercalation during stages 1–5. The dark gray cells in the lower left panel went out of the frame of view and could not be tracked for the full movie. In the right panels, new cells were tracked from when they became visible halfway through embryo formation (middle panel). Cell outlines were manually drawn using projection views of individual timepoints and individual z-sections. All panels show maximum intensity projections of one egg hemisphere. Anterior is left, ventral is down.
 
+![Video 9.](https://cdn.elifesciences.org/articles/47346/elife-47346-video9.mp4.jpg)
+
+**Video 9.:** Serosa cells at/near the serosa/germ rudiment boundary were tracked and colored as rows (pink cells closest to the boundary). Only cells that were visible from the beginning of the timelapse are shown. Maximum intensity projection of one egg hemisphere is shown with anterior to the left and ventral to the bottom.
+
+![Video 10.](https://cdn.elifesciences.org/articles/47346/elife-47346-video10.mp4.jpg)
+
+**Video 10.:** Serosa cells at/near the serosa/germ rudiment boundary were tracked and colored as rows (pink cells closest to the boundary). Only cells that were visible from the beginning of the timelapse are shown. Maximum intensity projection of one egg hemisphere is shown with anterior to the left and ventral to the bottom.
+
+![Video 11.](https://cdn.elifesciences.org/articles/47346/elife-47346-video11.mp4.jpg)
+
+**Video 11.:** Serosa cells at/near the serosa/germ rudiment boundary were tracked and colored as rows (pink cells closest to the boundary). Roughly half the cells (at the anterior) are tracked from the beginning of the timelapse, while the rest are tracked from halfway through embryo formation (at 135 min) when they became visible. Maximum intensity projection of one egg hemisphere is shown with anterior to the left and ventral to the bottom.
+
+![Video 12.](https://cdn.elifesciences.org/articles/47346/elife-47346-video12.mp4.jpg)
+
+**Video 12.:** A group of cells intercalating via rosette formation are tracked. The field of view was manually stabilized to follow this group of cells. Anterior is to the left.
+
 To test whether Fog signaling is involved in serosal cell intercalation, we used embryonic RNAi (eRNAi) to partially knock down Tc-fog to a level where phenotypic effects were visible but posterior amniotic fold formation and serosal expansion still occurred. We found that microinjection of Tc-fog dsRNA at 1 µg/µL caused roughly one-third of KD embryos (10 out of 29 embryos) to form a posterior amniotic fold and undergo serosal spreading. Embryos were co-injected with mRNA encoding the membrane marker GAP43-YFP to allow detailed live imaging and cell tracking (Benton et al., 2013). Cell intercalation was quantified by tracking roughly 70–100 cells at or near the serosa/germ rudiment boundary throughout serosa expansion and counting the number of intercalation events between tracked cells in four stage- and orientation-matched embryos (Video 13). Control embryos (injected with GAP43-YFP mRNA alone) showed 2.14 intercalation events per cell (171 cells tracked in two embryos) while Tc-fog partial KD embryos showed 2.56 intercalation events per cell (163 cells tracked in two embryos). This analysis shows that rather than decreasing intercalation in the serosa, reduction of Fog signaling led to a measurable increase in the relative amount of intercalation during serosal spreading.
 
+![Video 13.](https://cdn.elifesciences.org/articles/47346/elife-47346-video13.mp4.jpg)
+
+**Video 13.:** Serosa cells at/near the serosa/germ rudiment boundary were tracked. The top panels show cells coloured as rows (pink cells closest to the boundary). The bottom panels show cells colored randomly and intercalation events between tracked cells are shown with white triangles. Maximum intensity projection of one egg hemisphere is shown with anterior to the left and ventral to the bottom.
+
 A second possible role for Fog signaling in the serosa is an involvement in the cuboidal-to-squamous cell shape change that occurs during serosal spreading (Benton et al., 2013; Handel et al., 2000). To test this possibility, we quantified the extent of serosal cell spreading in Tc-fog partial KD embryos (like those described above). In such embryos, serosal cells still became squamous but differences in the extent of flattening existed at anterior and posterior positions (Video 14). The highly attenuated nature of these cells prevented quantification of cell height/volume, so we measured apical cell area after the completion of cell spreading. In control embryos (injected with GAP43-YFP mRNA alone), serosal cell area was variable, but this variability was evenly distributed along the AP axis (σ = 145.96 µm2; n = 535 cells across eight embryos; Figure 9A,C). In Tc-fog partial KD embryos, the variability in final serosal cell area was significantly increased compared with control embryos (p<0.001 Fisher’s F test, σ = 215.9 µm2; n = 578 cells across seven embryos; Figure 9B,D). In addition, the serosal cells that covered the posterior half of the egg had larger surface areas than those in comparable positions in control embryos, while serosal cells in anterior regions showed the opposite pattern (Figure 9B,D). Based on our findings, we conclude that Tribolium Fog signaling has a novel role in serosal cells to coordinate the cuboidal-to-squamous cell shape transition that results in a uniformly thin layer of serosal cells surrounding the entire yolk and embryo.
+
+![Video 14.](https://cdn.elifesciences.org/articles/47346/elife-47346-video14.mp4.jpg)
+
+**Video 14.:** Maximum intensity projection of one egg hemisphere with anterior to the left and ventral to the bottom is shown in the center. A transverse section near the anterior pole is to the left, a transverse section near the posterior pole is to the right, a sagittal section along the middle of the egg is shown to the bottom.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig9-v2.jpg)
 
 **Figure 9.:** (A, B) Stills from confocal live imaging of wildtype (A) and Tc-fog eRNAi (B) embryos with cell membranes marked via transient expression of GAP43-YFP. Embryos are undergoing germband elongation. (A’, B’) Single optical section of the serosa from the dashed box region in (A, B) showing cells whose areas were measured. Quantification was performed on single optical section to avoid artefacts caused by curvature of the egg. (C, D) scatter plots showing serosa cell areas (wildtype (gray): 535 cells across eight embryos, Tc-fog eRNAi (red): 578 cells across seven embryos) together with AP position of cell centroids. Measurements were performed manually. (A, B) are average intensity projections of one egg hemisphere. Anterior is left, ventral is down.
 
-## T48 enhances Fog signaling in Tribolium
+### T48 enhances Fog signaling in Tribolium
 
 In Drosophila, fog and T48 both function during ventral furrow formation (Kölsch et al., 2007). We identified a single homolog of T48 in Tribolium (hereafter referred to as Tc-T48), and while we could not detect localized Tc-T48 expression by ISH, RNA-sequencing data suggested it is weakly expressed in embryos (Dönitz et al., 2018). Therefore, we tested whether Tc-T48 has an embryo-wide enhancement function on Fog signaling in Tribolium.
 
 To test for such a Tc-T48 function, we microinjected embryos with Tc-fog dsRNA at 1 µg/µL (to partially KD Tc-fog) together with Tc-T48 dsRNA. As described above, roughly a third of embryos microinjected with Tc-fog double-stranded RNA (dsRNA) (at 1 µg/µL) alone still formed a posterior amniotic fold and underwent serosa spreading (Video 15). When embryos were injected with both Tc-fog dsRNA and Tc-T48 dsRNA (either by co-injection or sequential injections; n = 20 and 10, respectively) all embryos failed to form a posterior amniotic fold (Video 15). However, the double KD embryos did not show a more severe mesoderm internalization phenotype than the Tc-fog single KD embryos. Microinjection of Tc-T48 dsRNA alone had no detectable effect on development (n = 10).
 
+![Video 15.](https://cdn.elifesciences.org/articles/47346/elife-47346-video15.mp4.jpg)
+
+**Video 15.:** RNAi embryos transiently expressing GAP43-YFP. Average intensity projections of one egg hemisphere are shown with anterior to the left and ventral to the bottom.
+
 The statistically significant difference (p<0.001, Chi-Square test) in the phenotype caused by Tc-fog eRNAi alone versus Tc-fog and TcT48 double RNAi, shows that Tc-T48 has a morphogenetic function in Tribolium. Given the apparent lack of localized Tc-T48 expression, we suggest that low levels of uniform expression play an embryo-wide role in enhancing Fog signaling.
 
-## Fog signaling is required for Tribolium blastoderm formation
+### Fog signaling is required for Tribolium blastoderm formation
 
 In the course of analyzing the role of Fog signaling by embryonic RNAi, we injected different concentrations of dsRNA to vary the KD strength. While we recovered the phenotypes observed by parental RNAi with embryonic injections of 1 µg/µL dsRNA, injection of 3 µg/µL dsRNA yielded a phenotype that we had not obtained from pRNAi.
 
 In the majority of KD embryos, major blastoderm-wide defects occurred during or prior to embryo condensation: 70% in Tc-cta KD, 70% in Tc-mist KD, 40% in Tc-fog KD versus 10% in control (n = 20 for each condition). Defects were highly variable in each KD and ranged from gaps in the blastoderm that became greatly enlarged during condensation to complete disintegration of the blastoderm prior to or during condensation (Figure 10B–D; Videos 16 and 17). In addition to the visible morphological defects, there was also a statistically significant delay in the development of Tc-cta and Tc-mist KD embryos (as measured using division 13 as a temporal landmark; Figure 10—figure supplement 1). This delay was not observed in Tc-fog KD embryos, which also had the lowest proportion of embryos with other blastoderm defects.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig10-v2.jpg)
+
+**Figure 10.:** (A–D) Stills from confocal live imaging of wildtype (A), and Tc-fog, Tc-mist, Tc-cta eRNAi (B–D) Tribolium embryos with cell membranes marked via transient expression of GAP43-YFP. Embryos are at late blastoderm stage. White asterisk in (A) indicated hole within the blastoderm which later closes. (E–H) O. fasciatus blastoderm stage wildtype (E), and Of-fog, Of-mist, Of-cta pRNAi (F–G) embryos with nuclei stained (Sytox) to reveal their distribution. (I–L) Stills from fluorescent live imaging of control (I), and Gb-mist, Gb-cta pRNAi (J–L) G. bimaculatus embryos with nuclei labeled via a histone2B-eGFP transgene. The phenotype of Gb-mist pRNAi is stronger in (J) than in (K). The latter embryo recovered during later development. (A–D) are average intensity projections of one egg hemisphere, (I–L) are maximum focus projections of one egg hemisphere. Anterior is left for all embryos. (I, J, L) are ventral views, (K) is a ventrolateral view with ventral down.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Violin plot showing effect of Tc-fog, Tc-cta or Tc-mist KD on timing of early development. All data points are shown in a quasi-random offset. ***p<0.001 (unpaired t-test) comparing control and KD.
+
+![Video 16.](https://cdn.elifesciences.org/articles/47346/elife-47346-video16.mp4.jpg)
+
+**Video 16.:** Average intensity projections of one egg hemisphere are shown with anterior to the left and ventral to the bottom (where possible to discern).
+
+![Video 17.](https://cdn.elifesciences.org/articles/47346/elife-47346-video17.mp4.jpg)
+
+**Video 17.:** Further examples of blastoderm formation defects to demonstrate the variability in the phenotypes. Average intensity projections of one egg hemisphere are shown with anterior to the left and ventral to the bottom (where possible to discern).
+
 These phenotypes are unlikely to be artifacts caused by embryo handling or microinjection as they were seen at different proportions upon KD of each of the genes and were never seen at such high rates in control injections. As such, components of the Fog signaling pathway must also function during the formation of the blastoderm cell layer in Tribolium.
 
-## The blastoderm function of Fog signaling is widely conserved
+### The blastoderm function of Fog signaling is widely conserved
 
 After finding that Fog signaling has key morphogenetic functions during embryonic development in Tribolium, we asked whether such functions are widely conserved in insects. To answer this question, we functionally analyzed Fog signaling pathway components in two distantly related (Misof et al., 2014) hemimetabolous insects: the milkweed bug Oncopeltus fasciatus and the cricket Gryllus bimaculatus.
 
 We identified single orthologs for cta, mist and fog in both species (hereafter called Of-fog, Of-mist, Of-cta, and Gb-fog, Gb-mist, Gb-cta, Figure 1—figure supplement 2). KD of each of these genes via pRNAi was performed in Oncopeltus and in Gryllus (except for Gb-fog, the KD of which resulted in adult lethality) and led to highly penetrant early phenotypes in both species. While control embryos (from parental injections of GFP dsRNA [Oncopeltus] or buffer [Gryllus]) formed a uniform blastoderm layer (n = 29 for Oncopeltus, n = 15 for Gryllus), each KD resulted in blastoderms that were interrupted by large holes along the entire AP axis (Oncopeltus: Figure 10F–H, 65% in Of-fog KD [n = 29], 64% in Of-mist KD [n = 25], 88% in Of-cta KD [n = 26]; Gryllus: Figure 10J–L and Video 18, 100% in Gb-mist, and Gb-cta KD [n = 19 each]).
+
+![Video 18.](https://cdn.elifesciences.org/articles/47346/elife-47346-video18.mp4.jpg)
+
+**Video 18.:** Maximum focus projections of one egg hemisphere are shown as ventral views with anterior to left.
 
 While these early blastoderm defects prevented us from studying Fog function during later development in Oncopeltus and Gryllus, these phenotypes show that Fog signaling components have a deeply conserved requirement during blastoderm formation in insects.
 
@@ -177,9 +341,9 @@ In this article we have shown that Fog signaling plays major morphogenetic roles
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/47346/elife-47346-fig11-v2.jpg)
 
-**Figure 11.:** Tribolium.Summary schematic showing the different roles of fog signaling during early Tribolium embryogenesis.
+**Figure 11.:** Summary schematic showing the different roles of fog signaling during early Tribolium embryogenesis.
 
-## Fog signaling has local morphogenetic functions during gastrulation
+### Fog signaling has local morphogenetic functions during gastrulation
 
 Fog signaling was discovered for its functions during early morphogenesis in Drosophila (Zusman and Wieschaus, 1985; Sweeton et al., 1991), but doubts were raised about whether this pathway functions during early embryogenesis in other insects (Goltsev et al., 2007; Sweeton et al., 1991; Urbansky et al., 2016; Zusman and Wieschaus, 1985). Here, we have shown that Fog signaling also functions during early development in a beetle, and that disruption of this pathway causes severe embryo-wide defects.
 
@@ -189,7 +353,7 @@ Although the role of the posterior amniotic fold for gut development in Triboliu
 
 The mechanisms of Fog signaling at the posterior pole in Tribolium pose an interesting riddle. While Tc-mist is expressed in the region where posterior folding is initiated, this region lacks detectable Tc-fog expression (Figure 1; Figure 6A,H and Figure 6—figure supplement 1). The area closest to the primitive pit that harbors Tc-fog expression is the ventrally abutting mesoderm (Figure 1—figure supplement 4). However, even if mesodermal Tc-fog expression is removed, like in Tc-Toll KD embryos, posterior folding still takes place, suggesting that expression levels undetectable by our methods are sufficient to induce folding (Figure 7). This is in apparent contradiction to the extent of posterior folding, which results in a large-scale tissue re-arrangement. It is therefore possible that posterior folding in Tribolium involves some form of mechanical feedback amplification through which the folding event is less sensitive to the initial amount of Fog signaling, as was recently shown for Drosophila (Bailles et al., 2019).
 
-Posterior folding in Drosophila is also driven by a cycle of cell deformations that require integrin-mediated cell adhesion to the inner eggshell (vitelline membrane) (Bailles et al., 2019). Such integrin-mediated anchoring was first described in Tribolium, where anterior anchoring exists during germband formation (Münster et al., 2019). The same integrin that is required for the anterior attachment point (aPS2, Tc-inflated) in Tribolium is also expressed at the posterior pole (Münster et al., 2019) suggesting a further similarity between Drosophila and Tribolium posterior folding events. However, any attachment at the posterior pole in Tribolium must be transient, as our live imaging did not reveal a static posterior attachment point as we previously observed at the anterior using the same approach (Benton et al., 2013).
+Posterior folding in Drosophila is also driven by a cycle of cell deformations that require integrin-mediated cell adhesion to the inner eggshell (vitelline membrane) (Bailles et al., 2019). Such integrin-mediated anchoring was first described in Tribolium, where anterior anchoring exists during germband formation (Münster et al., 2019). The same integrin that is required for the anterior attachment point ($a$PS2, Tc-inflated) in Tribolium is also expressed at the posterior pole (Münster et al., 2019) suggesting a further similarity between Drosophila and Tribolium posterior folding events. However, any attachment at the posterior pole in Tribolium must be transient, as our live imaging did not reveal a static posterior attachment point as we previously observed at the anterior using the same approach (Benton et al., 2013).
 
 The second major role of Fog signaling in Drosophila is during mesoderm infolding, and this function also appears to be conserved in Tribolium. Disruption of Fog signaling has very similar consequences for mesoderm internalization in Tribolium and Drosophila. In both cases, the mechanism and timing of mesoderm internalization is affected by loss of signaling, but the mesoderm is still able to internalize (Seher et al., 2007; Zusman and Wieschaus, 1985). The same is also true for the dipteran Chironomus, where disruption of Fog signaling has a measurable impact on mesoderm internalization but the pathway is not strictly required for the process (Urbansky et al., 2016).
 
@@ -199,7 +363,7 @@ An interesting difference between Drosophila and Tribolium consists of the funct
 
 Taken together posterior folding and mesoderm internalization show different requirements for Fog signaling in Tribolium, as is also true in Drosophila (Figure 11). Posterior folding is absolutely dependent on Fog, although apparently low levels of signaling are sufficient to induce massive folding. On the other hand mesoderm internalization is not strictly dependent on Fog, which rather acts quantitatively to modulate the depth of the invagination furrow along the anterior-posterior axis.
 
-## The role of Fog signaling in primordial germ cell positioning
+### The role of Fog signaling in primordial germ cell positioning
 
 One function for Tribolium Fog signaling that does not exist in Drosophila is the role in PGC positioning. We found that disruption of Fog signaling leads to Tribolium PGCs moving to the apical surface of the embryonic epithelium rather than being internalized basally (Figures 3, 4 and 11). This new aberrant localization is comparable to the positioning of Drosophila PGCs (the pole cells) at the apical surface of the blastoderm (Cinalli and Lehmann, 2013).
 
@@ -207,7 +371,7 @@ We propose two possible scenarios for Fog’s role in PGC internalization in Tri
 
 Despite the lack of overt conservation of this PGC function, research in Drosophila does reveal a possibility as to how Fog signaling could be affecting Tribolium PGC development. In Drosophila, the GPCR Trapped in endoderm 1 (Tre1) is necessary in PGCs for their migration through the midgut epithelium (LeBlanc and Lehmann, 2017). Tre1 is activated by guidance cues and promotes germ cell migration by polarizing Rho1. In Tribolium, Fog signaling could potentially also act to polarize Rho1 via RhoGEF2 recruitment within PGCs and thereby effect their migration to the basal side of the epithelium.
 
-## Fog signaling has tissue-wide functions in the blastoderm and serosa
+### Fog signaling has tissue-wide functions in the blastoderm and serosa
 
 The functions for Tribolium Fog signaling discussed above fit with the traditional role for this pathway in apical constriction. In contrast, the involvement of Fog signaling in serosal spreading and blastoderm formation are two processes that do not involve apical constriction (Figure 11).
 
@@ -227,33 +391,33 @@ While the mechanism remains unknown, the requirement for Fog signaling during bl
 
 ## Materials and methods
 
-## Strains
+### Strains
 
 Tribolium castaneum strains: San Bernandino wildtype (Brown et al., 2009), nuclear GFP (nGFP) (Sarrazin et al., 2012), LifeAct-GFP (van Drongelen et al., 2018) were cultured as described (Brown et al., 2009). Oncopeltus fasciatus was cultured as described (Ewen-Campen et al., 2011). Gryllus bimaculatus wildtype strain (Donoughe and Extavour, 2016) and pXLBGact Histone2B:eGFP (Nakamura et al., 2010) was kept as described (Donoughe and Extavour, 2016).
 
-## cDNA cloning
+### cDNA cloning
 
 The primers used for in-situ hybridization and dsRNA synthesis were designed by using the new T. castaneum genome assembly (Dönitz et al., 2018). Primer design, RNA extraction and cDNA synthesis were carried out using standard protocols. For Gryllus bimaculatus, a new assembled transcriptome was used to design primers for Gb-cta and Gb-mist. The Advantage GC 2 PCR Kit (Takara) was used for gene cloning. All relevant genes, their corresponding Tc-identifiers and the primers used in this work are listed in the supplement (Supplementary file 1).
 
-## dsRNA synthesis, parental and embryonic
+### dsRNA synthesis, parental and embryonic
 
 RNAi dsRNA preparation, pupae and adult injections followed Posnien et al. (2009). Embryonic RNAi was performed as described (Benton et al., 2013). For Gryllus bimaculatus, a 1184 bp fragment of Gb-cta and a 967 bp fragment of Gb-mist was used to knock down gene function. For both genes, the knockdown was performed in two independent experiments injecting 7 µg and 10 µg of dsRNA per animal, respectively. The dsRNA solution was injected into the proximal joint of the coxa of the second and third leg. For each experiment, four adult females of the pXLBGact Histone2B:eGFP line were injected and embryos of the second egg lay (collected about one week after injection) were analyzed via live imaging.
 
-## In-situ hybridisation, immunohistochemistry
+### In-situ hybridisation, immunohistochemistry
 
 Single and double ISH were performed essentially as described (Schinko et al., 2009). For staining of cell membranes, Alexa Fluor 555/568 Phalloidin (Molecular Probes, life technologies) was used. Nuclear counterstaining was performed using DAPI (Invitrogen) or Sytox Green (Thermo Fisher) as previously described (Nunes da Fonseca et al., 2008).
 
-## Cryosections
+### Cryosections
 
 Embryos were embedded in a melted agarose/sucrose solution (2% agarose, 15% sucrose in PBS). After the agarose cooled down, blocks of agarose containing the embryos were cut and incubated in a solution of 15% sucrose in PBS overnight. The blocks were fixed to the specimen block using Tissue-Tek O.C.T. (Sakura). After shock freezing in −80°C isopentan, the blocks were transferred to a Cyrostat (Leica CM 1850) and sliced at −20°C (30μm-thick sections). The sections were mounted on Superfrost Ultra Plus microscope slides (Thermo Scientific) and dried over night at RT. Phalloidin and Sytox staining directly on the sections was performed following the standard protocols using a humidity chamber.
 
-## Live imaging
+### Live imaging
 
 Confocal time-lapse imaging of Tribolium embryos injected with GAP43-YFP mRNA was performed as previously described (Benton et al., 2013; Benton, 2018) at 25–32°C at time intervals from 2 to 10 min between timepoints using 20x, 40x, or 63x objectives. For live imaging of the posterior poles, eggs were propped up vertically (resting against another egg for stability) on a glass-bottomed Petri dish (MatTek) with their posterior against the glass. Live imaging transgenic nuclear GFP (nGFP) (Sarrazin et al., 2012) or LifeAct-GFP (van Drongelen et al., 2018) embryos was done at room temperature using the Zeiss AxioImager.Z2 in combination with an Apotome.2 and movable stage (Zen2 Blue).
 
 For imaging Gryllus bimaculatus embryos we used a Zeiss AxioZoom.V16, equipped with a movable stage. Gryllus embryos were placed on 1.5% agarose and were covered with Voltalef H10S oil (Sigma). Imaging was performed at 25–27°C.
 
-## Data analysis and software
+### Data analysis and software
 
 Image analysis was performed in FIJI (Schindelin et al., 2012). Serosa cell areas were measured manually and cells at the periphery of the section were not included. Cell tracking and quantification of cell intercalation was performed manually on 4D hyperstacks and various projections (maximum/average intensity, sum slices) using mTrackJ (Meijering et al., 2012). Confocal data were rotated using TransformJ with quintic B-spline interpolation (Meijering et al., 2001). Additional plugins include Bioformats Importer (Linkert et al., 2010), Image Stabiliser (Li, 2008), StackReg (Thevenaz et al., 1998), and Bleach Correction (Miura et al., 2014).
 

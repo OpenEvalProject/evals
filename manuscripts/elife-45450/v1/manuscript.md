@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.45450.001 Humans usually assess things not according to their absolute value, but relative to reference points – a main tenant of Prospect Theory. For example, people rate a new salary relative to previous salaries and salaries of their peers, rather than absolute income. We demonstrate a similar effect in an insect: ants expecting to find low-quality food showed higher acceptance of medium-quality food than ants expecting medium quality, and vice versa for high expectations. Further experiments demonstrate that these contrast effects arise from cognitive rather than mere sensory or pre-cognitive perceptual causes. Social information gained inside the nest can also serve as a reference point: the quality of food received from other ants affected the perceived value of food found later. Value judgement is a key element in decision making, and thus relative value perception strongly influences which option is chosen and ultimately how all animals make decisions.
+Humans usually assess things not according to their absolute value, but relative to reference points – a main tenant of Prospect Theory. For example, people rate a new salary relative to previous salaries and salaries of their peers, rather than absolute income. We demonstrate a similar effect in an insect: ants expecting to find low-quality food showed higher acceptance of medium-quality food than ants expecting medium quality, and vice versa for high expectations. Further experiments demonstrate that these contrast effects arise from cognitive rather than mere sensory or pre-cognitive perceptual causes. Social information gained inside the nest can also serve as a reference point: the quality of food received from other ants affected the perceived value of food found later. Value judgement is a key element in decision making, and thus relative value perception strongly influences which option is chosen and ultimately how all animals make decisions.
 
 ## Introduction
 
@@ -41,13 +41,13 @@ In this study, we investigate positive and negative contrast effects using the s
 
 ## Materials and methods
 
-## Study animals
+### Study animals
 
 Eight stock colonies of the black garden ant Lasius niger were collected on the University of Regensburg campus. The colonies were kept in 30 × 30 × 10 cm foraging boxes with a layer of plaster covering the bottom. Each box contained a circular plaster nest box (14 cm diameter, 2 cm height). The colonies were queenless with around 1000–2000 workers and small amounts of brood. Queenless colonies still forage and lay pheromone trails and are frequently used in foraging experiments (Devigne and Detrain, 2002; Dussutour et al., 2004). The colonies were fed with ad libitum 0.5M sucrose solution and received Drosophila fruit flies once a week. Water was available ad libitum.
 
 One sub-colony of 500 individuals was formed from each stock colony, and these eight fixed-size sub-colonies were used for our experiments. Sub-colonies were maintained identically to the stock colonies, but did not receive any Drosophila fruit flies to prevent brood production, and were starved 4 days prior to the experiments in order to achieve a uniform and high motivation for foraging (Mailleux et al., 2006; Josens and Roces, 2000). During starvation, water was available ad libitum. Any ants which died or were removed from the sub-colonies were replaced with ants from the original stock colonies.
 
-## General setup, ant selection, and monitoring
+### General setup, ant selection, and monitoring
 
 The general setup used for all of our three experiments was identical and consisted of a 20 × 1 cm long paper-covered runway which was connected to the sub-colony’s nest box via a 40 cm long drawbridge (Figure 1A). A 5 mm diameter drop of sucrose solution (Sigma-Aldrich) was placed on an acetate feeder at the end of the runway (60 cm from the nest). The molarity of the sucrose droplet depended on the experiment, treatment and on the ants’ number of visit to the food source.
 
@@ -59,57 +59,101 @@ To begin an experiment, 2–4 ants were allowed onto the runway, and the first a
 
 Food acceptance scores as a measure of perceived value were noted for each ant and visit as follows: Full acceptance (1) was scored when the ant remained in contact with the drop from the moment of contact and did not interrupt drinking within 3 s of initial contact (see Video 1). Partial acceptance (0.5) was scored if feeding was interrupted within 3 s after the first contact with the food source, but the ant still filled its crop within 10 min (as can be seen by the distention of the abdominal tergites). Ants which interrupt feeding within the first seconds after contacting the food usually show successive feeding interruptions and generally show a rather ‘impatient’ behaviour compared to ants which show a food acceptance score of 1 (see Video 2). Lastly, rejection (0) was scored if the ant refused to feed at the sucrose solution and either returned to the nest immediately or failed to fill its crop within 10 min.
 
+![Video 1.](https://cdn.elifesciences.org/articles/45450/elife-45450-video1.mp4.jpg)
+
+**Video 1.:** It shows no food interruptions within the first seconds of feeding.
+
+![Video 2.](https://cdn.elifesciences.org/articles/45450/elife-45450-video2.mp4.jpg)
+
+**Video 2.:** It interrupts feeding within the first seconds of feeding and repeatedly interrupts feeding, but still feeds at the food source (an ant displaying food acceptance score 0 would refuse to feed at the sucrose solution and either return to the nest immediately or fail to fill its crop within 10 min).
+
 When the ant had filled its crop or decided not to feed at the sucrose droplet, it was allowed to return to the nest. Inside the nest, the ant unloaded its crop to its nestmates and was then allowed back onto the runway for another visit. The drawbridge was now used to selectively allow only the marked ant onto the runway.
 
 In addition to measuring food acceptance, we also measured pheromone deposition. Individual pheromone deposition behaviour correlates with the (perceived) quality of a food source (Beckers et al., 1993; Hangartner, 1970; Czaczkes et al., 2015). Individual ants can adapt the strength of a pheromone trail by either depositing pheromone or not, or varying the intensity of a pheromone trail through number of pheromone depositions (Beckers et al., 1993; Hangartner, 1970). Pheromone deposition behaviour in L. niger is highly stereotypic. To deposit pheromone, an ant briefly interrupts running to bend its gaster and press the tip of the gaster onto the substrate (Beckers et al., 1992). This allows the strength of a pheromone trail to be quantified by counting the number of pheromone depositions over the 20 cm runway leading to the feeder. Pheromone depositions were measured each time the ant moved from the food source back to the nest (inward trip), and each time the ant moved from the nest towards the food source (outward trip). Because L. niger foragers almost never lay pheromone when they are not aware of a food source (Beckers et al., 1992), we did not measure pheromone depositions for the very first outward trip (visit 1). The presence of trail pheromone on a path depresses further pheromone deposition (Czaczkes et al., 2013). Thus, each time an ant had passed the 20 cm runway, the paper overlay covering the runway was replaced by a fresh one every time the ant left the runway to feed at the feeder or returned to the nest.
 
 All experimental runs were recorded with a Panasonic DMC-FZ1000 camera to allow for later video analysis. Each tested ant was observed until all experimental runs were finished and then discarded from the colony before switching to the next ant. If an ant did not return before finishing all experimental runs, we waited for 15 min, then discarded it from the colony and moved to the next ant.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were carried out in R v. 3.4.1 (R Development Core Team, 2016) using Generalized Linear Mixed Models (GLMMs) in the LME4 package (Bates et al., 2014) to analyse pheromone depositions data and Cumulative Link Mixed Models (CLMMs) in the ordinal package (Christensen, 2015) to analyse food acceptance scores. CLMMs were used to analyse the acceptance data since we used an ordered factor with three levels (1 = full acceptance, 0.5 = partial acceptance, 0 = rejection).
 
 As multiple ants were tested per colony, colony identity was added as a random effect to each model. GLMMs were tested for fit, dispersion and zero inflation using the DHARMa package (Hartig, 2017). The model predictors and interactions were defined a priori, following Forstmeier and Schielzeth (2011). All p-values presented were corrected for multiple testing using the Benjamini–Hochberg method (Benjamini and Hochberg, 1995). A total of 1070 ants were tested, with 829 in experiment 1, 73 in experiment 2 and 168 in experiment 3 (Supplementary file 1). Sample sizes were set ahead of time by deciding how much time we will invest in data collection (1 day per treatment per colony).
 
-## Food acceptance data
+### Food acceptance data
 
 Depending on the experiment, we either used treatment (experiment 1 and 3 = Reference Molarity; experiment 2 = expected molarity triggered by a scented runway and the odours presented on the runway) or an interaction between treatment and visit number, and the odours presented on the runway (training visits of experiment 2) or trophallaxis time (experiment 3) as fixed factors. The interaction between expected molarity and visit number in the training runs of experiment 2 was added, because experience with a food source is likely to affect the behaviour at a food source. The odours presented on the runway were added as fixed factors to test for odour preferences regardless of sucrose molarity. The interaction between trophallaxis time and reference molarity in experiment 3 was added because trophallaxis time may affect food acceptance through crop load and information gained through trophallaxis (for the effects of trophallaxis time on food acceptance see Figure 5—figure supplement 1, and Table S4 in Figure 5—source data 1). Because individual ants were tested multiple times in experiments 1 and 2, we included AntID nested in colony as a random factor for statistical analyses of the training visits.
 
-We used the following general model formula (this formula varied depending on experiment as described above):FoodAcceptance∼treatment+(randomfactor:colony)
+We used the following general model formula (this formula varied depending on experiment as described above):
 
-## Pheromone deposition data
+$$
+FoodAcceptance∼treatment+(randomfactor:colony)
+$$
+
+### Pheromone deposition data
 
 As the pheromone deposition data is count data, they were analysed using a GLMM with a Poisson distribution.
 
 Depending on the experiment, we either used treatment (experiment 1 = Reference Molarity; experiment 2 = expected molarity triggered by a scented runway and the odours presented on the runway) or an interaction between treatment and visit number (training visits of experiment 2) as fixed factors. The interaction between expected molarity and visit number in the training runs of experiment 2 was added, because experience with a food source is likely to affect the behaviour at a food source. The odours presented on the runway were added as fixed factors to test for odour preferences regardless of sucrose molarity. Because individual ants were tested multiple times in experiment 2, we included AntID nested in colony as a random factor for statistical analyses of the training visits.
 
-For statistical analysis of experiment 1, we also added a variable indicating if ants deposited more or less pheromone compared to the average to correct for individual strength of pheromone depositions and overdispersion. The variable was calculated as follows:Differencetoaverage=((NumberPheromoneDepositions1stvisit−meannumberPheromoneDepositions1stvisit)+(NumberPheromoneDepositions2ndvisit−meannumberPheromoneDepositions2ndvisit))/2
+For statistical analysis of experiment 1, we also added a variable indicating if ants deposited more or less pheromone compared to the average to correct for individual strength of pheromone depositions and overdispersion. The variable was calculated as follows:
+
+$$
+Differencetoaverage=((NumberPheromoneDepositions1^{st}visit−meannumberPheromoneDepositions1^{st}visit)+(NumberPheromoneDepositions2^{nd}visit−meannumberPheromoneDepositions2^{nd}visit))/2
+$$
 
 We used the following model formulae in the model:
 
-Experiment 1:NumberPheromoneDepositions∼treatment+Differencetoaverage+(Differencetoaverage)2+(randomeffects:colony/AntID)
+Experiment 1:
 
-Experiment 2:NumberPheromoneDepositions∼scentassociatedtomolarity+(randomeffects:colony)
+$$
+NumberPheromoneDepositions∼treatment+Differencetoaverage+(Differencetoaverage)^{2}+(randomeffects:colony/AntID)
+$$
 
-## Other analyses
+Experiment 2:
+
+$$
+NumberPheromoneDepositions∼scentassociatedtomolarity+(randomeffects:colony)
+$$
+
+### Other analyses
 
 The number of drinking interruptions was quantified via video analysis in experiment 2 (see below). This was analysed statistically in a manner identical to number of pheromone depositions.
 
-Trophallaxis time in seconds in experiment three were used in full seconds and treated as count data. We performed a GLMM with Poisson distribution and Reference Molarity as a fixed effect, while colony identity was added as a random factor:TrophallaxisTimeseconds∼ReferenceMolarity+(randomeffects:colony)
+Trophallaxis time in seconds in experiment three were used in full seconds and treated as count data. We performed a GLMM with Poisson distribution and Reference Molarity as a fixed effect, while colony identity was added as a random factor:
+
+$$
+TrophallaxisTimeseconds∼ReferenceMolarity+(randomeffects:colony)
+$$
 
 ## Experiment 1 – Defining a relative value perception curve
 
 The aim of this experiment was to test whether Lasius niger ants value a given absolute sucrose solution concentration relative to a reference point or based on its absolute value. We used a range of twelve molarities as reference points in order to describe a value curve. To exclude effects of the researcher’s expectations on the data, the data for this experiment were collected blind to treatment (Holman et al., 2015).
 
-## Experiment 1 - Methods
+### Experiment 1 - Methods
 
 Ants made two initial training visits to a feeder at the end of a runway in order to set their reference point (Figure 1A). The quality of the sucrose solution was varied between ants, with each ant receiving the same quality twice successively. Twelve different molarities were used: 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.5 or 2M (also referred to as pre-shift solution or reference point). Lasius niger workers learn the quality of a feeder within two visits (Wendt and Czaczkes, 2017). On the third visit (test visit), the food source was replaced by a 0.5M sucrose solution droplet for all ants (also referred to as post-shift solution). Thus, ants trained to qualities < 0.5M experienced a positive successive contrast, ants trained to > 0.5M experienced a negative successive contrast, and the ants trained to 0.5M constituted the control (no contrast). 97% of ants successfully finished the training procedure and participated in the test visit (third visit).
 
-## Experiment 1 - Results
+### Experiment 1 - Results
 
 Ants seemed to value sucrose solution droplets relative to their reference point (Figure 2—figure supplement 1). In the training visits, acceptance scores increased significantly with increasing molarity of the reference quality (CLMM: estimate = 1.97, z = 9.65, p<0.001, Figure 2). However, in the test (contrast) visit, acceptance scores decreased significantly with increasing molarity of the reference quality (CLMM: estimate = −2.59, z = −13.57, p<0.001, Figure 2). Ants which were trained to the lowest molarity (0.1M: p<0.001) showed significantly higher acceptance of 0.5M sucrose than control ants, while ants trained to high molarities (1.5M: p<0.001, 2M: p<0.001) showed lower acceptance of 0.5M than the control group (see Table S1 in Figure 2—source data 1 for all pairwise comparisons).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig2-v1.jpg)
+
+**Figure 2.:** Shown are the mean food acceptance (points) and the 95% confidence intervals (coloured ribbons) for each reference molarity and visit. Data was normalised to show the mean food acceptance of the control group (received 0.5M on each visit) at 0 for all three visits. For a non-normalised graph of the data see Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Shown are the mean food acceptance (points) and the 95% confidence intervals (coloured ribbons) for each reference molarity and visit. Coloured dashed lines mark the mean food acceptance for ants which received 0.5M (control).
+
 A similar pattern was found for pheromone deposition behaviour on the way back to the nest (Figure 3). In the training visits, number of pheromone depositions increased significantly with increasing molarity of the reference solution (GLMM: estimate = 0.86, z = 13.87, p<0.001). By contrast, on the test visit pheromone depositions decreased significantly with increasing molarity of the reference solution (GLMM: estimate = −0.82, z = −9.75, p<0.001, Figure 3). Ants which deposited more pheromone during the training visits generally deposited more pheromone on the test visit compared to ants which deposited less pheromone during the training visits (GLMM: estimate = 0.16, z = 15.99, p<0.001). Ants which were trained to a low molarity (0.2M: p<0.01) deposited significantly more pheromone in the test visit than control ants, while ants trained to high molarities (1M: p<0.001, 1.5M: p<0.001, 2M: p<0.001) deposited less pheromone than the control group (see Table S2 in Figure 3—source data 1 for pairwise comparisons).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig3-v1.jpg)
+
+**Figure 3.:** Shown are the median number of pheromone depositions (points) and the 95% confidence intervals (coloured ribbons) measured on a 20 cm track right behind the food source for each reference molarity and visit. Data was normalised to show the median number of pheromone depositions of the control group (received 0.5M on each visit) at 0 for all three visits. For a non-normalised graph of the data see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Shown is the median number of pheromone depositions (points) and the 25/75% quartiles (coloured ribbons) measured on a 20-cm track right behind the food source for each reference molarity and visit. Coloured dashed lines mark the median pheromone depositions for ants which received 0.5M (control).
 
 These results are consistent with relative value perception stemming from the psychological effects of successive contrasts. We could further define a relative value perception curve similar to that described in Prospect Theory, as well as showing positive contrast effects for both food acceptance and number of pheromone depositions.
 
@@ -119,25 +163,25 @@ However, there is another possible explanation for these results: non-random sel
 
 Alternative hypotheses could also explain the results from experiment one and lead to the same behavioural patterns observed. Five possible ‘lower-level’ mechanisms must be excluded: sensory satiation, ingested sucrose changing haemolymph-sugar levels, psychophysical sensory contrast effects, the fact that ants may expect pre-shift solutions to return in later visits, and non-random selection of individuals with different food acceptance thresholds in different treatments.
 
-## Sensory satiation
+### Sensory satiation
 
 This may occur in ants which were trained to higher molarity food due to the blocking of more sweetness receptors compared to low molarity sucrose. The more sweetness receptors are blocked by a sweet reference solution, the fewer receptors will fire when confronted with a post-shift reward, thus making solutions taste less sweet for ants trained to high-molarity solutions, and sweeter for ants which were trained to low molarities (Bitterman, 1976).
 
-## Haemolymph-sugar levels
+### Haemolymph-sugar levels
 
 Ants may not only have stored sucrose solutions in their crop while foraging, but may also have ingested small amounts of it, leading to an increase of haemolymph-sugar levels. Higher blood-sugar levels negatively affect sweetness perception in humans (Mayer-Gross and Walker, 1946; Melanson et al., 1999), and a similar effect could cause a post-shift solution to taste less sweet to animals trained on high sucrose concentrations.
 
-## Psychophysical sensory contrasts
+### Psychophysical sensory contrasts
 
 The contrast effects shown in experiment one could also derive from simple psychophysical mechanisms (Fechner, 1860; Zwislocki, 2009), and thus arise from sensory perceptual mechanisms rather than higher level cognitive processing of value. Sensory judgements are usually made relative to reference points and through constant comparisons with former stimuli (Vlaev et al., 2011; Helson, 1964). Thus, identical stimuli may be perceived differently depending on the context they are presented within. The position of the reference point in the range of stimuli may thus bias how the stimulus, and thus the value, of a post-shift reward is perceived (Zwislocki, 2009). For example, the sweetness of a sucrose solution may be perceived as much stronger when the reference point to which it is compared is low. Psychophysical sensory contrasts are physiological or low-level cognitive phenomena, found in all animal taxa studied, and even potentially in bacteria (Akre and Johnsen, 2014; Kojadinovic et al., 2013; Mesibov et al., 1973).
 
-## Future expectations
+### Future expectations
 
 Animals may rationally expect the pre-shift reward to be available in the future again and therefore rationally show lower acceptance towards the post-shift reward, because they are waiting for the pre-shift reward to reoccur.
 
 All these alternative factors would lead to the same behavioural patterns found in experiment one without relative value perception necessarily being present. Experiment two was designed to rule out these alternative explanations.
 
-## Experiment 2 - Methods
+### Experiment 2 - Methods
 
 To rule out the alternative non-psychological explanations for the contrast effects we described above, we needed to change the expectations of the ants while exposing all ants to identical training regimes. This would provide a reference point for testing relative value perception while keeping sensory saturation, haemolymph-sugar levels, psychophysical effects, future expectations, and ant subsets the same until the testing phase.
 
@@ -149,9 +193,15 @@ On the 9th (test) visit, the odour of the runway and the visual cue signified ei
 
 Additionally to the other measures, on the 9th (test) visit of this experiment we counted the number of food interruptions made by an ant from the moment of first hitting the food source until it had finished feeding at the sucrose droplet. The number of food interruptions are likely to reflect and support the behaviour encoded in food acceptance scores and was thus investigated to give stronger support for the results of this experiment.
 
-## Experiment 2 - Results
+### Experiment 2 - Results
 
 During training, ants behaved as expected, showing higher acceptance and pheromone deposition for 1.5M compared to 0.25M on all but the very first visit to 0.25M (Food acceptance: CLMM: estimate = −7.34, z = −8.9, p<0.001; pheromone depositions outward journey: GLMM: estimate = 0.23, z = 2.89, p<0.01; pheromone depositions inward journey: GLMM: estimate = −2.49, z = −19.46, p<0.001, Figure 4A,C & E). Furthermore, food acceptance and pheromone depositions both on the outward and inward journeys decreased with increasing experience with the 0.25M feeder and increased with increasing experience with the 1.5M feeder (Food acceptance: CLMM: estimate = −2.84, z = −3.63, p<0.001; pheromone depositions outward journey: GLMM: estimate = −0.94, z = −10.00, p<0.001; pheromone depositions inward journey: GLMM: estimate = −0.53, z = −4.41, p<0.001).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig4-v1.jpg)
+
+**Figure 4.:** The left panels (A, C, E) show behaviour over the eight training trials, in which ants received 0.25M coupled with one scent and 1.5M coupled with another scent on alternating visits. The right panels (B, D, F) show behaviour on the test visit, in which ants always received unscented 0.5M sucrose solution, but the runway leading towards the food source was impregnated with one of the learned scents, causing ants to expect either a high or low reward. 40 ants were induced to expect a high reward, and 32 to expect a low reward. A and B show the mean food acceptance (points) and the 95% confidence intervals (error bars) for each visit; C – F show the median number of pheromone depositions on a 20 cm track leading to the food source and the 75%/25% quantiles for each visit.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig4-figsupp1-v1.jpg)
 
 On the outward journey of the 9th (test) visit, ants walking towards the feeder while exposed to 1.5M sucrose-associated cues deposited more pheromone (median = 15, Figure 4D) compared to ants exposed to 0.25M-associated cues (median = 2, GLMM: estimate = −1.31, z = −12.94, p<0.001). Moreover, in the learning probe, 87% of ants chose the 1.5M associated arm. This demonstrates that ants formed a robust expectation of food molarity based on the cues learned during training.
 
@@ -165,13 +215,19 @@ Non-random selection of individuals with different acceptance thresholds can als
 
 Ants receive information about available food sources, such as food odour and palatability, through food exchanges (trophallaxis) inside the nest (Provecho and Josens, 2009; Josens et al., 2016). An ant beginning a food scouting bout may not have direct information about the quality of the food sources available in the environment, but nonetheless must make a value judgement on their first visit to a food source. The aim of this experiment was to ascertain whether information about sucrose concentrations gained through trophallaxis in the nest affected the perceived value of food sources found outside the nest.
 
-## Experiment 3 - Methods
+### Experiment 3 - Methods
 
 An ant was allowed to feed at an unscented sucrose solution droplet of either 0.16, 0.5 or 1.5M (also referred to as pre-shift solution or reference point) and return to the nest to unload its crop via trophallaxis. When trophallaxis began, we noted the time spent in trophallaxis with the first trophallactic partner. When trophallaxis stopped, the receiving trophallactic partner (receiver) was gently moved from the nest and placed onto the start of a runway offering unscented 0.5M sucrose solution at the end (also referred to as post-shift solution). As the receiver fed, we noted its food acceptance.
 
-## Experiment 3 - Results
+### Experiment 3 - Results
 
 Acceptance scores of receivers towards 0.5M decreased with increasing molarity of the sucrose solution received through food exchanges inside the nest (CLMM: estimate = −0.57, z = −3.07, p<0.01). The interaction of reference molarity and trophallaxis time significantly predicted acceptance (CLMM: estimate = −0.48, z = −2.33, p=0.02, Figure 5) and longer trophallaxis times led to lower food acceptance in ants as well (CLMM: estimate = −0.70, z = −3.62, p<0.001). Ants which received 0.16M inside the nest showed significantly higher acceptance of 0.5M sucrose than ants which received 1.5M (p<0.01, see Table S3 in Figure 5—source data 1 for pairwise comparisons). The time spent in trophallaxis with the receiver increased significantly with increasing molarity (GLMM: estimate = 0.13, z = 4.79, p<0.001, see Figure 5—source data 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig5-v1.jpg)
+
+**Figure 5.:** Shown are the mean food acceptance (points) and the 95% confidence intervals (error bars) for each reference molarity.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45450/elife-45450-fig5-figsupp1-v1.jpg)
 
 Ants valued a standard quality food source relative to the molarity which they received from a returning forager inside the nest. This suggests that information about the quality of a food source received through trophallactic interactions inside the nest can be used by naive foragers when evaluating new food sources outside the nest. Thus, the nest serves as an information hub in which information about available food sources can be gathered, processed, and disseminated.
 

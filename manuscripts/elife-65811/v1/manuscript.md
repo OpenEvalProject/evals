@@ -29,11 +29,19 @@ To help address these questions, we developed a serum-free, rapid, and scalable 
 
 ## Results and discussion
 
-## Mouse fetal alveolar epithelial progenitors are maintained in 3D serum-free cultures
+### Mouse fetal alveolar epithelial progenitors are maintained in 3D serum-free cultures
 
 To generate alveolar organoids by self-organization of endogenous progenitors, we manually dissociated E14.5 mouse lungs and collected distal epithelial fragments. At E14.5, lung pseudoglandular development is almost complete in mouse and NKX2.1+ alveolar progenitors become specified (Frank et al., 2019), while the distal SOX9+ epithelial domain begins to expand compared with the proximal airway (Alanis et al., 2014).
 
 We embedded the epithelial tips into diluted Matrigel/Collagen I domes and established cultures in defined medium supplemented with growth factors (Figure 1A). Three main soluble growth factors have been implicated in distal lung growth and differentiation: FGF7, FGF10, and BMP4 (Bone Morphogenetic Protein 4) (Bellusci et al., 1997; Weaver et al., 1999; Weaver et al., 2000; Chao et al., 2016; Li et al., 2018; Danopoulos et al., 2019). We tested combinations of these factors and observed that treatment with FGF7 and FGF10 led to epithelial growth and lumenization over three days without inducing hyperproliferation of residual mesenchymal cells (Figure 1—figure supplement 1A, B). We further found that cryopreserved epithelial tips could be expanded in culture and formed organoids in FGF-supplemented medium (52% efficiency compared with 75% using freshly dissociated tissue, Figure 1B), thereby allowing for more experimental flexibility.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65811/elife-65811-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the organoid establishment procedure. (B) Organoid forming efficiency from fresh (black bar) and cryopreserved (gray bar) epithelial tips. (C) Representative organoids over time (brightfield imaging). Isolated tips lumenize by day 2 and subsequently form digit-like branches. (D) Distal epithelial progenitor marker SOX9 expression becomes progressively restricted by day 6 of culture, correlating with a reduced number of proliferating KI67+ cells. (E) Distal epithelial progenitor markers are upregulated by day 2 and downregulated by day 6. Expression values are normalized to transcript levels in isolated E13.5 distal epithelial tips. Each box depicts one biological replicate, showing the mean value among two technical replicates; 27 tip cultures were used for each time point. Scale bars: 100 µm (A, C), 50 µm (D). (B) Mean values are displayed; error bars represent S.D.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65811/elife-65811-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Combined FGF treatment supports epithelial cell expansion. Organoid morphology in absence (no add.) or presence of growth factor additives (brightfield imaging). (B) Alveolar organoids mainly contain epithelial cells and fibroblasts. Transcript expression of epithelial (Epcam), mesenchymal (Pdgfra), and endothelial (Pecam1) markers in day 9 organoids (white columns). Displayed values represent mRNA levels relative to expression in E18.5 distal lung tissue (black columns). (C) SOX9 expression is localized to the distal region of organoids, while SOX2 is expressed in the organoid core. (D) Distal regions in day 6 organoids do not display expression of proximal airway differentiation markers. KRT5 (basal cells) and FOXJ1 (ciliated cells) can be variably expressed in the central (proximal) region of organoids. Scale bars: 50 µm. (B) Mean values are displayed; error bars represent S.D.
 
 To promote progenitor differentiation in longer-term cultures, we developed a six-day culturing protocol with a one-time change of medium on day 3, when the concentration of supplemented growth factors was halved (Figure 1A). This reduction slowed down organoid expansion and promoted an increase in the number and density of epithelial branches. Morphologically, on day 1, the epithelial tips reorganized to form a closed system (cyst) and began a process of lumen expansion. On day 2, a single large lumen was observed, along with newly formed epithelial branches. By day 6, many epithelial branches had extended into the surrounding matrix (Figure 1C). Although at this stage mesenchymal cells can be observed, organoid morphogenesis did not appear to depend on their prevalence. A role for interstitial cells in local matrix remodeling and/or epithelial cell proliferation or migration, however, cannot be excluded.
 
@@ -41,41 +49,450 @@ To determine the location and dynamics of progenitor cells in the organoid cultu
 
 Next, we assessed progenitor marker mRNA levels in organoids by comparing multiple culture stages with distal epithelial tips collected at E13.5, one embryonic day prior to sample collection for organoid culture. The distal epithelial markers Id2, Bmp4 and Etv5 displayed higher expression levels on day 0, possibly reflecting the enrichment in distal characteristics or the endogenous activation of a distal developmental program between E13 and E14 (Frank et al., 2019). A marker of the proximal epithelium, Sox2, showed variable expression on day 0, suggesting that a variable number of proximal epithelial cells was isolated in the different experiments. Sox2 was downregulated by day 2, suggesting that FGF10-supplemented media selectively support distal epithelial progenitors, as described previously (Bellusci et al., 1997; Danopoulos et al., 2019). Although SOX2 expression could be identified in the organoid core throughout the six-day culture period, suggesting that proximal airway cells can be maintained in culture (Figure 1—figure supplement 1C, D), this region did not appear to expand compared to the distal SOX9 expression domain (Figure 1—figure supplement 1C), which may explain the progressive reduction in Sox2 mRNA levels. Conversely, other markers of distal lung progenitors, such as Id2, Bmp4, and to a lesser extent Sox9, displayed upregulation by day 2, which may indicate expansion or conversion into distal progenitor cell identity. By day 6, all analyzed distal progenitor markers, as well as Sox2, were downregulated compared with E13.5 epithelial tips, suggesting that the distal progenitor cell identity is progressively lost during culture (Figure 1D and E). Since on day 6 epithelial branches appear to be patterned in the proximo-distal axis, are morphologically elongated, and have lost most proliferative capacity, similar to distal lung epithelium at late gestation (Frank et al., 2019), we hypothesized that distal epithelial progenitors undergo differentiation in culture.
 
-## Collagen I promotes AT1 cell differentiation in culture
+### Collagen I promotes AT1 cell differentiation in culture
 
 To assess epithelial differentiation, we performed whole-mount organoid immunostaining for SFTPC and RAGE, marking AT2 and AT1 cells, respectively. Low staining intensity was observed on days 0 and 1, indicating that within the first days of culture, the organoids are mainly composed of undifferentiated progenitors. On day 2, SFTPC/RAGE were co-expressed in a majority of the cells, similar to what is observed with alveolar bipotent progenitors (Desai et al., 2014; Treutlein et al., 2014). By day 6, two cell populations emerged: SFTPC-/RAGE+ cells in the stalk region of the elongated branches, and SFTPC+/RAGE- cells in the tip region or at new sites of branching. The tip domain also comprised cells co-expressing SFTPC and RAGE, suggesting the maintenance of a bipotent progenitor (BP) population (Treutlein et al., 2014; Figure 2A). Quantification of the differentiated and progenitor cells on day 6 revealed approximately equal numbers of AT1 and BP cells in epithelial branches while AT2 cells were less prevalent (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65811/elife-65811-fig2-v1.jpg)
 
-**Figure 2.:** (A) Whole-mount immunostaining for the alveolar cell markers SFTPC and RAGE at consecutive culture days. By day 2, SFTPC and RAGE are expressed by most cells. Day 6 epithelial branches comprise both bipotent progenitor (BP) cells (SFTPC+/RAGE+) and differentiated alveolar cells (AT1, SFTPC-/RAGE+ and AT2, SFTPC+/RAGE-) in an organotypic pattern. (B) Collagen I promotes AT1 cell differentiation, compared with Matrigel alone. Cell identities were scored on day 6. (C) Markers of differentiated AT1 and AT2 cells are transcriptionally upregulated by day 6 of culture, at levels comparable with E18.5 distal lung tissue. Expression values are normalized to culture day 0. Each box depicts one biological replicate, showing the mean value among two technical replicates; 27 tip cultures were used for each time point. (D) AT1 and AT2 cells in organoids are morphologically distinct and display apico-basal polarity. AT1 cells are elongated and often populate stalk regions. Upper row: AT1 cells display basolateral localization of the AT1 cell marker RAGE and apical localization of PODXL. Lower row: epithelial branches in organoids display adhesions typical of intact epithelia, such as tight junctions (ZO-1). The AT2 cell marker LAMP3 is localized to the apical secretory compartment of surfactant-producing cells. Scale bars: 20 µm. (B) Mean values are displayed; error bars represent S.D.Figure 2—source data 1.
+**Figure 2.:** (A) Whole-mount immunostaining for the alveolar cell markers SFTPC and RAGE at consecutive culture days. By day 2, SFTPC and RAGE are expressed by most cells. Day 6 epithelial branches comprise both bipotent progenitor (BP) cells (SFTPC+/RAGE+) and differentiated alveolar cells (AT1, SFTPC-/RAGE+ and AT2, SFTPC+/RAGE-) in an organotypic pattern. (B) Collagen I promotes AT1 cell differentiation, compared with Matrigel alone. Cell identities were scored on day 6. (C) Markers of differentiated AT1 and AT2 cells are transcriptionally upregulated by day 6 of culture, at levels comparable with E18.5 distal lung tissue. Expression values are normalized to culture day 0. Each box depicts one biological replicate, showing the mean value among two technical replicates; 27 tip cultures were used for each time point. (D) AT1 and AT2 cells in organoids are morphologically distinct and display apico-basal polarity. AT1 cells are elongated and often populate stalk regions. Upper row: AT1 cells display basolateral localization of the AT1 cell marker RAGE and apical localization of PODXL. Lower row: epithelial branches in organoids display adhesions typical of intact epithelia, such as tight junctions (ZO-1). The AT2 cell marker LAMP3 is localized to the apical secretory compartment of surfactant-producing cells. Scale bars: 20 µm. (B) Mean values are displayed; error bars represent S.D.
 
 In the absence of Collagen I, the organoids displayed a reduced number of AT1 cells in favor of BP cells, indicating that a collagenous matrix (at 1:1 or 1:3 Matrigel/Collagen I ratio) promotes the differentiation of AT1 cells in vitro (Figure 2B), consistent with the reported role of the ECM in alveolar epithelial differentiation (Kim et al., 2018). We next asked to what extent the organoids represent mature distal lung tissue, and compared differentiation marker expression with distal lung tissue at E18.5, a time when differentiated alveolar epithelial cells can be unequivocally identified. The expression level of differentiated cell markers, including Sftpc, Ager, Aqp5, and Hopx, progressively increased until day 6, at which point they reached levels comparable with those observed in E18.5 distal lung tissue (Figure 2C). These data indicate that distal progenitors differentiate within six days of organoid culture, offering a simple model of early alveolar formation.
 
 We further asked whether the AT1 and AT2 cells identified in the organoid cultures displayed morphological hallmarks of a differentiated respiratory epithelium. By immunostaining, we found that SFTPC-/RAGE+ cells displayed exclusive basolateral localization of RAGE (Figure 2A and D) and apical localization of Podocalyxin (PODXL) (Figure 2D), similar to observations in intact lung tissue at E19 (Yang et al., 2016). SFTPC-/RAGE+ cells were also marked by uniform plasma membrane expression of Podoplanin/T1alpha (PDPN) (Figure 2D). Immunostaining for Zonula Occludens-1 (ZO-1), a marker of tight junctions, labeled intercellular adhesions at the luminal/apical surface (Figure 2D) as previously reported (Yang et al., 2016), suggesting that the epithelial branches form an intact cellular monolayer and display barrier function. In addition, we found that Lysosome-Associated Membrane glycoProtein 3 (LAMP3), a lysosomal marker localized to lamellar bodies in differentiated AT2 cells (Chang et al., 2013; Desai et al., 2014), was localized in apical secretory organelles in SFTPC+ cells, indicating that these cells can differentiate into AT2 cells (Figure 2D). Altogether, these data show that cultured alveolar progenitors differentiate morphologically and molecularly into AT1 and AT2 cells, suggesting that fetal mouse alveolar organoids maintain the distal airway architecture found at late gestation stages (Frank et al., 2019).
 
-## Casein Kinase modulates epithelial differentiation in lung organoids
+### Casein Kinase modulates epithelial differentiation in lung organoids
 
 We used fetal alveolar organoids to dissect the mechanisms by which WNT signaling controls the differentiation of AT1 and AT2 cells. To this end, we performed a chemical screen of WNT modulators from days 6 to 8 in the absence of supplemented growth factors (Figure 3A) and determined the relative alveolar cell composition by immunostaining for SFTPC and RAGE (Figure 3B). In control conditions, the proportion of SFTPC+/RAGE+ progenitors decreased from 54% (day 6, Figure 2B) to 40% (day 8, Figure 3C), with a concomitant increase in differentiated cell numbers (more pronounced for AT1 cells), suggesting that progenitors are actively differentiating in culture at the stages chosen for screening.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65811/elife-65811-fig3-v1.jpg)
 
-**Figure 3.:** (A) Screening workflow schematic. Organoids at day 6 were treated for 48 h with WNT-modulating compounds. (10 µM). Phenotypes were scored by cell counting after immunostaining for SFTPC and RAGE and F-actin co-staining (Phalloidin). (B) Phenotypic classes observed in the chemical screen comprise an increased proportion of SFTPC+/RAGE+ cells (BP, middle panel) and increased proportion of SFTPC-/RAGE+ cells (AT1, right panel). (C) Casein Kinase inhibitors IC261, CX-4945, and DMAT (arrows) led to a higher proportion of AT1 cells at the expense of progenitors, while a majority of the compounds tested did not alter the proportion of differentiated alveolar cells in culture. Four biological replicates were analyzed, 12 tip cultures per compound. Scale bars: 50 µm. (C) Mean values are displayed; error bars represent S.D.Figure 3—source data 1.
+**Figure 3.:** (A) Screening workflow schematic. Organoids at day 6 were treated for 48 h with WNT-modulating compounds. (10 µM). Phenotypes were scored by cell counting after immunostaining for SFTPC and RAGE and F-actin co-staining (Phalloidin). (B) Phenotypic classes observed in the chemical screen comprise an increased proportion of SFTPC+/RAGE+ cells (BP, middle panel) and increased proportion of SFTPC-/RAGE+ cells (AT1, right panel). (C) Casein Kinase inhibitors IC261, CX-4945, and DMAT (arrows) led to a higher proportion of AT1 cells at the expense of progenitors, while a majority of the compounds tested did not alter the proportion of differentiated alveolar cells in culture. Four biological replicates were analyzed, 12 tip cultures per compound. Scale bars: 50 µm. (C) Mean values are displayed; error bars represent S.D.
 
 Unexpectedly, the majority of tested compounds (gray highlight) did not lead to significant changes in the proportion of AT1, AT2, or progenitor cells compared with DMSO controls (Figure 3C). Belonging to this group are first-in-class WNT pathway inhibitors such as IWR-1, IWP-2, and XAV-939 (Chen et al., 2009; Huang et al., 2009). Active WNT signaling is a feature of alveolar progenitors in homeostasis and regeneration, and blocking the WNT pathway by Ctnnb1 knockout in AT2 cells was shown to induce AT1 differentiation at postnatal stages (Frank et al., 2016; Nabhan et al., 2018). In addition, an expansion of the AT1 cell population was observed in vitro after treatment of hiPSC-derived AT2 cells with XAV-939 (Kanagaki et al., 2021). Differentiation of cultured adult human alveolar progenitors (TM4SF1+) also showed WNT responsiveness, with the AT1 fate induced after XAV-939 treatment. In contrast with these data, the results of our chemical screen suggest that WNT inhibition via Axin stabilization is not sufficient to alter fate selection or cell differentiation of mouse fetal distal lung progenitors in our organoid cultures. This discrepancy with previous findings could be explained in part by differences in the phenotypic outcome of pharmacological versus genetic inhibition of WNT signaling, or by distinct regulation of the WNT pathway between pre- and postnatal stages. Limitations in our screening approach and the cellular composition of the organoid cultures could have influenced the results, as follows. First, a single concentration of 10 µM was used for all tested compounds, possibly leading to false negatives. Second, the heterogeneous cell composition of the organoids, in particular a variable number of mesenchymal cells, may have contributed to some of the variability in the data. Indeed, mesenchymal cells are fundamental players throughout lung development and engage in signaling crosstalk with epithelial cells, notably through FGF and WNT signaling (McCulley et al., 2015; Volckaert and De Langhe, 2015). Because of this variability in the relative cell composition of the organoids, four biological replicates were used for the screening experiments. Six compounds led to an increase in SFTPC+/RAGE+ BP cells (yellow highlight), including several Glycogen Synthase Kinase 3 (GSK3) inhibitors such as CHIR-99021, and a natural flavonoid, Wogonin. In line with published data (Ostrin et al., 2018; de Carvalho et al., 2019), we found that sustained WNT activity was associated with progenitor maintenance. Finally, three compounds induced a greater percentage of AT1 cells (SFTPC-/RAGE+) at the expense of bipotent progenitors (Figure 3C). Mechanistically, these compounds inhibit Casein Kinase (CK) 1 (IC261) and CK2 (CX-4945, DMAT), central regulators of WNT signaling and cell cycle progression (St-Denis and Litchfield, 2009; Cruciat, 2014; Venerando et al., 2014).
 
-## Casein Kinase inhibition leads to downregulation of AT2 marker gene expression and WNT-dependent transcription
+### Casein Kinase inhibition leads to downregulation of AT2 marker gene expression and WNT-dependent transcription
 
 Casein Kinase (CK) acts in stem cell maintenance by phosphorylating transcriptional regulators, WNT signaling components, and cell cycle factors (St-Denis and Litchfield, 2009; Cruciat, 2014). We found that CK inhibition by IC261, CX-4945, and DMAT led to the downregulation of markers of the AT2 fate, including Sftpc and Abca3, compared with control organoids (Figure 4A), suggesting that upon CK inhibition, progenitor cells lose AT2 fate potential and convert to AT1 cells. Similarly, WNT signaling activation was reduced in organoids treated with the same CK inhibitors for 6 h as assessed by measuring mRNA levels of Axin2 (Figure 4B), a β-catenin-dependent WNT target gene. Pharmacological CK inhibition could also significantly reduce the transcriptional response to WNT/β-catenin signaling in HEK293T cells, as shown by SuperTOPFlash luciferase reporter assays (Figure 4C). Collectively, these data indicate that progenitor cells convert to AT1 cells by combined loss of β-catenin-dependent WNT activity and AT2 marker expression, and suggest that Casein Kinases antagonize cell differentiation by modulating WNT signaling transduction and transcriptional regulation. However, since Casein Kinases mediate a plethora of housekeeping cellular functions, determining which specific CK targets are involved in alveolar differentiation requires further investigation. Recently, CK2 has emerged as a prominent target of SARS-CoV-2 infection in the lung, and its overactivation was associated with increased viral transmission by cytoskeletal remodeling and formation of cell protrusions mediating virus budding (Bouhaddou et al., 2020). Combined with our data, these recent findings suggest that SARS-CoV-2 infection could affect lung cell fate establishment and regeneration of the alveolar compartment directly by targeting CK2 activity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65811/elife-65811-fig4-v1.jpg)
 
-**Figure 4.:** (A) IC261, CX-4945, and DMAT treatments (48 h) lead to downregulation of AT2 cell markers. TTP22 and Emodin (also CK2 inhibitors) do not lead to the same phenotype, possibly due to differences in potency/target affinity. Expression levels relative to DMSO control. Three biological replicates (consisting of 2 technical replicates each) were analyzed per compound. (B) Casein Kinase inhibition by IC261, CX-4945, and DMAT (6 h) leads to reduced Axin2 relative expression. Treatment with TTP22 or Emodin does not significantly affect Axin2 levels. More than three biological replicates were analyzed. (C) CK inhibition reduced WNT/β-catenin-dependent transcription in HEK293T epithelial cells (SuperTOPFlash-based luciferase assay). (B) Mean values are displayed; error bars represent S.D.; p-values from one-way ANOVA, Tukey’s multiple comparisons test. (C) Mean values displayed; error bars represent S.D.; p-values from one-way ANOVA, Tukey’s multiple comparisons test; displayed p-values refer to comparisons with WNT3A-treated condition.Figure 4—source data 1.Axin2 expression values, CK inhibitors vs. DMSO control and related statistics. Raw luciferase data. Normalized luciferase values and related statistics.
+**Figure 4.:** (A) IC261, CX-4945, and DMAT treatments (48 h) lead to downregulation of AT2 cell markers. TTP22 and Emodin (also CK2 inhibitors) do not lead to the same phenotype, possibly due to differences in potency/target affinity. Expression levels relative to DMSO control. Three biological replicates (consisting of 2 technical replicates each) were analyzed per compound. (B) Casein Kinase inhibition by IC261, CX-4945, and DMAT (6 h) leads to reduced Axin2 relative expression. Treatment with TTP22 or Emodin does not significantly affect Axin2 levels. More than three biological replicates were analyzed. (C) CK inhibition reduced WNT/β-catenin-dependent transcription in HEK293T epithelial cells (SuperTOPFlash-based luciferase assay). (B) Mean values are displayed; error bars represent S.D.; p-values from one-way ANOVA, Tukey’s multiple comparisons test. (C) Mean values displayed; error bars represent S.D.; p-values from one-way ANOVA, Tukey’s multiple comparisons test; displayed p-values refer to comparisons with WNT3A-treated condition.
 
 In summary, our fetal mouse lung alveolar organoids constitute an ideal system to assess cell differentiation at the single-cell level and will allow the investigation of this process by live imaging and chemical screening. This new model should also facilitate the identification of modulators of alveolar cell differentiation, and help discover treatments to promote lung development and maturation in premature newborns.
 
 ## Materials and methods
 
-## Media preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J mice</td>
+      <td>https://www.jax.org/strain/000664</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>ATCC:CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rat-tail Collagen I</td>
+      <td>Corning</td>
+      <td>Corning:354236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Growth factor reduced Matrigel</td>
+      <td>Corning</td>
+      <td>Corning:356231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM/F12</td>
+      <td>Sigma</td>
+      <td>Sigma:D6434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>L-Glutamine</td>
+      <td>Sigma</td>
+      <td>Sigma:G7513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Penicillin/Streptomycin</td>
+      <td>Sigma</td>
+      <td>Sigma:P4333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNAse I</td>
+      <td>Roche</td>
+      <td>Roche:10104159001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10% BSA</td>
+      <td>Sigma</td>
+      <td>Sigma:A1595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MEM Non-Essential Amino Acids solution</td>
+      <td>Gibco</td>
+      <td>Thermo Fisher Scientific:11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Insulin-Transferrin-Selenium-Ethanolamine (ITS-X)</td>
+      <td>Gibco</td>
+      <td>Thermo Fisher Scientific:51500056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Primocin</td>
+      <td>Invivogen</td>
+      <td>Invivogen:ant-pm-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10x DMEM</td>
+      <td>Sigma</td>
+      <td>Sigma:D2429</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1 N NaOH</td>
+      <td>Sigma</td>
+      <td>Sigma:S2770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human recombinant FGF10</td>
+      <td>R&amp;D Systems</td>
+      <td>R&amp;D Systems:345-FG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human recombinant FGF7</td>
+      <td>Peprotech</td>
+      <td>Peprotech:100–19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CryoStor CS10</td>
+      <td>Stem Cell Technologies</td>
+      <td>Stem Cell Technologies:07959</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal donkey serum</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch:017-000-121; RRID:AB_2337258</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX9 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore:AB5535; RRID:AB_2239761</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KI67 (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific:14-5698-82; RRID:AB_10854564</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX2 (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>R&amp;D Systems:AF2018; RRID:AB_355110</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KRT5 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab53121; RRID:AB_869889</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FOXJ1 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific:14-9965-82; RRID:AB_1548835</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ProSP-C (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore:AB3786; RRID:AB_91588</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RAGE (rat monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>R&amp;D Systems:MAB1179; RRID:AB_2289349</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDPN (sheep polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>R&amp;D Systems:AF3670; RRID:AB_2162070</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDPN (syrian hamster monoclonal)</td>
+      <td>DSHB</td>
+      <td>DSHB:8.1.1; RRID:AB_531893</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PODXL (goat polyclonal)</td>
+      <td>R&amp;D System</td>
+      <td>R&amp;D Systems:AF1556; RRID:AB_354858</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZO1/TJP1 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific:33–9100; RRID:AB_2533147</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDH1 (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>R&amp;D Systems:AF748; RRID:AB_355568</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LAMP3 (rat monoclonal)</td>
+      <td>Dendritics</td>
+      <td>IMGENEX:DDX0192; RRID:AB_1148779</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>Phalloidin, Alexa Fluor 488 conjugate</td>
+      <td>InvitrogenThermo Fisher Scientific:A12379</td>
+      <td>Thermo Fisher Scientific:A12379</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>Sigma:D9542</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-, 568-, 647- or Cy3-conjugated secondaries</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-, 568-, 647- or Cy3-conjugated secondaries</td>
+      <td>Jackson ImmunoResearch</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM + Glutamax</td>
+      <td>Gibco</td>
+      <td>Thermo Fisher Scientific:31966021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS superior</td>
+      <td>Sigma</td>
+      <td>Sigma:S0615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific:L3000001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>M50 Super 8x TOPFlash (plasmid)</td>
+      <td>Addgene</td>
+      <td>Addgene:12456; http://n2t.net/addgene:12456; RRID:Addgene_12456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>M51 Super 8x FOPFlash (TOPFlash mutant) (plasmid)</td>
+      <td>Addgene</td>
+      <td>Addgene:12457; http://n2t.net/addgene:12457; RRID:Addgene_12457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pRL-TK (plasmid)</td>
+      <td>Promega</td>
+      <td>Promega:E2241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human WNT3A</td>
+      <td>Proteintech</td>
+      <td>Proteintech:HZ-1296</td>
+      <td>(500 ng/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma</td>
+      <td>Sigma:D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emodin</td>
+      <td>Tocris</td>
+      <td>Tocris:3811</td>
+      <td>(10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTP22</td>
+      <td>Tocris</td>
+      <td>Tocris:4432</td>
+      <td>(10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IC261</td>
+      <td>Sigma</td>
+      <td>Sigma:I0658</td>
+      <td>(10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CX-4945</td>
+      <td>Enzo Life Sciences</td>
+      <td>Enzo Life Sciences:ENZ-CHM151</td>
+      <td>(10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMAT</td>
+      <td>Sigma</td>
+      <td>Sigma:SML2044</td>
+      <td>(10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IWR-1</td>
+      <td>Sigma</td>
+      <td>Sigma:I0161</td>
+      <td>(10 µM)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase Reporter Assay System</td>
+      <td>Promega</td>
+      <td>Promega:E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin RNA kit</td>
+      <td>Macherey-Nagel</td>
+      <td>Macherey-Nagel:740955.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III Reverse Transcriptase system</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific:18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DyNAmo ColorFlash SYBR green qPCR kit</td>
+      <td>Thermo Scientific</td>
+      <td>Thermo Fisher Scientific:F416XL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR</td>
+      <td>This paper</td>
+      <td>Supplementary file 1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ 1.53 c</td>
+      <td>Schindelin et al., 2012; doi:10.1038/nmeth.2019</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Media preparation
 
 Frozen aliquots of rat-tail Collagen I (500 µl, Corning 354236) and growth factor reduced (GFR) Matrigel (550 µl, Corning 356231) were thawed on ice during lung epithelial tip isolation. One aliquot of Collagen I and Matrigel were sufficient for two dissociations (two 48-well plates).
 
@@ -85,7 +502,7 @@ Complete Medium (CM) composition: DMEM/F12, 1 mM L-Glutamine, 0.25% BSA (Sigma A
 
 Media were prepared fresh just before tissue isolation.
 
-## Lung epithelial tip isolation
+### Lung epithelial tip isolation
 
 E14.5 C57BL/6J mouse embryos (staged according to Theiler, 1989) were harvested and washed in ice-cold PBS. Embryos were quickly decapitated and lungs extracted and washed in fresh ice-cold PBS. Lobes were isolated by cutting them away from the proximal bronchi using microscissors (Fine Science Tools 15003–08).
 
@@ -93,13 +510,13 @@ Using a P1000 pipette and tips coated with fresh 2% BSA (Sigma A1595), lobes fro
 
 Fragments including one to threeepithelial tips were collected using a coated-tip P20 pipette and transferred in fresh DM on ice, to dilute out dissociated mesenchymal cells. Epithelial tips were re-collected, counted and transferred into a 1.5 ml tube on ice (about 100–120 per isolation). Tips were allowed to sink to the bottom of the tube on ice for 1–2 min and then washed twice in 100 µl DM and twice in 100 µl CM.
 
-## Organoid embedding
+### Organoid embedding
 
 During epithelial tips washes, thawed Collagen I (500 µl) was neutralized by adding 57 µl 10x DMEM (Sigma D2429) and approximately 16–17 µl 1 M NaOH (Sigma S2770). Once mixed to homogeneity, neutralized collagen was allowed to polymerize on ice for 10 min. Next, neutralized collagen was mixed to an isovolume of GFR Matrigel and kept on ice.
 
 Washed epithelial tips were resuspended in 500 µl ice-cold CM, to which 500 µl of Matrigel/Collagen solution was added. Epithelial tips were carefully and thoroughly resuspended on ice and plated using cooled P20 tips onto a 48-well tissue culture plate (20 µl/well) over a 39°C heat block. Domes were allowed to solidify over the heat block for 30 min and plates were moved to a standard tissue culture incubator at 37°C for 45 min-1 h before CM with growth factors (CM+) was added as follows.
 
-## Organoid culture
+### Organoid culture
 
 A total of 50 ml CM was warmed up to 37°C and human recombinant FGF proteins were added (50 ng/ml FGF10, R&D 345-FG and 25 ng/ml FGF7, Peprotech 100–19). 300 µl CM with growth factors (CM+) was added to each culture well.
 
@@ -111,34 +528,34 @@ For long-term maintenance of organoid cultures, organoid medium was changed ever
 
 Organoids with overgrown mesenchymal cells (attached to the plastic) were excluded from further analysis.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA was isolated from pooled organoids (9–15 domes) or tissue using the NucleoSpin RNA kit (Macherey-Nagel 740955.50). cDNA was synthesized from total RNA using the Superscript III Reverse Transcriptase system (Thermo Scientific 18080093). qPCR was performed using the DyNAmo ColorFlash SYBR green qPCR kit (Thermo Scientific F416XL) on a CFX Connect Real-Time System (Bio-Rad). qPCR reactions were performed in technical duplicates; data from at least three biological replicates were collected. Gene expression values were normalized to the mouse Actb gene. Heatmaps were generated using R/Bioconductor and ggplot2 packages. Mean values among technical replicates were color-coded and each biological replicate was represented.
 
-## Organoid whole-mount immunostaining
+### Organoid whole-mount immunostaining
 
 Matrix domes were quickly washed in PBS and fixed in 4% PFA for 15 min at room temperature (RT). Domes were detached by the well bottom with a flat microspatula and transferred to tubes or staining baskets. After several PBS washes, domes were permeabilized for 1 h at RT in sterile-filtered permeabilization solution: 0.5% Triton-X100, 0.5% Tween20, 3% Donkey Serum (Jackson ImmunoResearch 017-000-121), 1% BSA. Samples were incubated with primary antibodies in permeabilization solution diluted 1:1 in PBS for two days at 4°C, with mild agitation. Domes were then washed in PBST (PBS + 0.05% Tween20) for 6 h at RT or overnight at 4°C with mild agitation. Next, domes were incubated with secondary antibodies, Alexa488-Phalloidin (Invitrogen A12379, both at 1:500) and DAPI (1 µg/ml) in diluted permeabilization solution (1:1 in PBS) for 3 h at RT, followed by 3–4 h wash in PBST. Domes were mounted in mounting medium (Dako S3023) on glass slides using a thin vacuum grease ring as coverslip spacer. After overnight incubation at 4°C, imaging was performed on a Leica SP8 or Zeiss LSM 800 Observer confocal microscope, ×25 and ×40 magnification.
 
-## Antibodies
+### Antibodies
 
 The following primary antibodies were used: rabbit anti-SOX9 (Millipore AB5535), rabbit anti-ProSP-C (Millipore AB3786), rat anti-RAGE (R&D MAB1179), goat anti-PDPN (R&D AF3670), syrian hamster anti-PDPN (DSHB 8.1.1-SN), goat anti-PODXL (R&D AF1556), mouse anti ZO-1/TJP1 (Invitrogen 33–9100), goat anti-CDH1 (R&D AF748), rat anti-LAMP3 (Dendritics DDX0192), rat anti-KI67 (Invitrogen 14-5698-82), goat anti-SOX2 (R&D AF2018), mouse anti-FOXJ1 (Invitrogen 14-9965-82), rabbit anti-KRT5 (Abcam ab53121). All primary antibodies were used at 1:250 dilution, except anti-ProSP-C (1:500). All secondary antibodies (Invitrogen, Jackson ImmunoResearch) were used at 1:500 dilution.
 
-## Cryostorage
+### Cryostorage
 
 Freshly isolated E14.5 epithelial tips were mixed with 500 µl of CryoStor CS10 (Stem Cell Technologies 07959) and stored at –80°C for up to 6 months.
 
-## Chemical screen
+### Chemical screen
 
 Organoids were plated into 48-well plates and incubated from day 6 for 48 h in the presence of compounds. Chemicals were dissolved in CM devoid of additional growth factors at a final concentration of 10 µM (from a DMSO stock). Screened compounds belong to the Stem Cell Signaling Compound Library (MCE HY-L017). Treatment with 0.1% DMSO (Sigma D2650) was used as internal control in each organoid plate. On day 8, organoids were washed and fixed in 4% PFA and three or four technical replicates were pooled for immunostaining. Confocal scans were followed by cell counting as detailed below. Four biological replicates (12 tip cultures in total) were analyzed per compound.
 
-## Cell counts
+### Cell counts
 
 For each confocal stack, three optical sections were selected corresponding to 25, 50, and 75% of the confocal Z stack range. For each of these planes, SFTPC+/RAGE+, SFTPC-/RAGE+, and SFTPC+/RAGE- cells were manually counted using the Cell Counter plugin in Fiji/ImageJ (Schindelin et al., 2012) and quantified as a percentage of DAPI+ cells. Percentages were averaged among the three planes, and mean alveolar cell percentages of at least nine organoids among three technical replicates derived from at least three biological replicates (different pregnant dams) were then plotted and error was calculated as standard deviation. Day 6 tip cultures contained on average 54% SFTPC+/RAGE+ cells, 43.9% SFTPC-/RAGE+ cells, 2.1% SFTPC+/RAGE- cells (Figure 2—source data 1). Tip cultures treated from day 6 to day 8 with 0.1% DMSO contained on average 40.5% SFTPC+/RAGE+ cells, 54.1% SFTPC-/RAGE+ cells, 5.4% SFTPC+/RAGE- cells (Figure 3—source data 1).
 
-## Cell lines
+### Cell lines
 
 Human Embryonic Kidney cells (HEK293T, ATCC CRL-3216) were certified by STR profiling by ATCC and tested negative for mycoplasma contamination. Cells were maintained in DMEM (Gibco 31966021), 10% FBS (Sigma S0615), 1% Penicillin/Streptomycin and passaged using TrypLE Express (Gibco 12604021).
 
-## Luciferase assay
+### Luciferase assay
 
 SuperTOPFlash reporter assays were performed as in Veeman et al., 2003. In brief, 15,000 HEK293T cells/well were seeded into gelatin-coated 96-well plates and allowed to grow overnight. Cells were transfected with a combination of 100 ng SuperTOPFlash or 100 ng SuperFOPFlash and 10 ng pRL-TK (Promega E2241) plasmids. M50 Super 8x TOPFlash and M51 Super 8x FOPFlash (TOPFlash mutant) were gifts from Randall Moon (Addgene plasmid # 12456; http://n2t.net/addgene:12456; RRID:Addgene_12456 and Addgene plasmid # 12457; http://n2t.net/addgene:12457; RRID:Addgene_12457). Transfections were carried out using Lipofectamine 3000 Reagent (Invitrogen L3000001) according to manufacturer’s instructions. Transfected cells were serum-starved for 6 h and treated with 500 ng/ml human recombinant WNT3A (Proteintech HZ-1296) and 10 µM chemical compounds or 0.1% DMSO for 12 h. Cells were washed with PBS on ice to remove phenol red and lysed. Firefly and Renilla luciferase assays were carried out using Dual-Luciferase Reporter Assay System (Promega E1910) in technical triplicates. Raw Firefly luminescence values were normalized to corresponding Renilla values. Technical triplicates were averaged, normalized over FOPFlash values and normalized over DMSO-treated control (no WNT3A stimulation). Experiments were carried out in biological triplicates.

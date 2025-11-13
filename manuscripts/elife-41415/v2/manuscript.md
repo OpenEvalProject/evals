@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.41415.001 Processing bodies (PBs) are cytoplasmic mRNP granules that assemble via liquid–liquid phase separation and are implicated in the decay or storage of mRNAs. How PB assembly is regulated in cells remains unclear. Previously, we identified the ATPase activity of the DEAD-box protein Dhh1 as a key regulator of PB dynamics and demonstrated that Not1, an activator of the Dhh1 ATPase and member of the CCR4-NOT deadenylase complex inhibits PB assembly in vivo (Mugler et al., 2016). Here, we show that the PB component Pat1 antagonizes Not1 and promotes PB assembly via its direct interaction with Dhh1. Intriguingly, in vivo PB dynamics can be recapitulated in vitro , since Pat1 enhances the phase separation of Dhh1 and RNA into liquid droplets, whereas Not1 reverses Pat1-Dhh1-RNA condensation. Overall, our results uncover a function of Pat1 in promoting the multimerization of Dhh1 on mRNA, thereby aiding the assembly of large multivalent mRNP granules that are PBs.
+Processing bodies (PBs) are cytoplasmic mRNP granules that assemble via liquid–liquid phase separation and are implicated in the decay or storage of mRNAs. How PB assembly is regulated in cells remains unclear. Previously, we identified the ATPase activity of the DEAD-box protein Dhh1 as a key regulator of PB dynamics and demonstrated that Not1, an activator of the Dhh1 ATPase and member of the CCR4-NOT deadenylase complex inhibits PB assembly in vivo (Mugler et al., 2016). Here, we show that the PB component Pat1 antagonizes Not1 and promotes PB assembly via its direct interaction with Dhh1. Intriguingly, in vivo PB dynamics can be recapitulated in vitro, since Pat1 enhances the phase separation of Dhh1 and RNA into liquid droplets, whereas Not1 reverses Pat1-Dhh1-RNA condensation. Overall, our results uncover a function of Pat1 in promoting the multimerization of Dhh1 on mRNA, thereby aiding the assembly of large multivalent mRNP granules that are PBs.
 
 ## Introduction
 
@@ -41,11 +41,19 @@ Here, we demonstrate that Pat1 promotes PB formation via Dhh1, and we show that 
 
 ## Results
 
-## Constitutive PB formation upon Pat1 overexpression is Dhh1 dependent
+### Constitutive PB formation upon Pat1 overexpression is Dhh1 dependent
 
 The PB components Pat1 and Dhh1 were each previously shown to be required for PB formation in yeast (Pilkington and Parker, 2008; Ramachandran et al., 2011; Mugler et al., 2016; Rao and Parker, 2017). To understand the relationship between Pat1 and Dhh1 in the regulation of PB assembly, we took advantage of the observation that overexpression of Pat1 leads to constitutive PB formation (Coller and Parker, 2005). This allowed us to characterize their respective regulatory contributions without external influences such as nutrient starvation signals. As expected, Pat1 overexpression from its endogenous locus using the galactose promoter in the presence of Dhh1 led to the formation of constitutive PBs, as visualized by co-localization of Dhh1-GFP and Dcp2-mCherry foci (Figure 1A). No foci were formed when Pat1 was not overexpressed or when we overexpressed the human influenza hemagglutinin (HA) tag alone (Figure 1—figure supplement 1A). Notably, when Pat1 was overexpressed in cells that lack Dhh1, a drastic reduction in the number of PBs was observed, as visualized by the bona fide PB marker Edc3-GFP and its co-localization with Dcp2-mCherry (Figure 1A,B). This demonstrates that formation of constitutive PBs upon Pat1 overexpression requires Dhh1.
 
-## Pat1 and Dhh1 interaction is essential for PB assembly
+![Figure 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overexpression (OE) of Pat1 leads to constitutive PB formation but only in the presence of Dhh1. Cells co-expressing the indicated PB components were grown in synthetic complete (SC) raffinose media to exponential growth phase after which Pat1 was overexpressed via addition of galactose. Cells in both raffinose and galactose were observed by fluorescence microscopy. In all Pat1 OE strains the endogenous promoter of Pat1 was replaced by the galactose 1–10 promoter (p-GAL-PAT1). Scale bar: 5 µm. (B) Quantification of images in A depicting number of PBs/cell. N = 3 biological replicates with >800 cells/replicate. Error bars: SEM. (C) Pat1-NC (AA 5–79 + 456–587) is functional in vivo. Cartoon of the Pat1-NC construct (see text for details). (D) PAT1-NC induces PB formation upon stress in vivo. Cells co-expressing the indicated the PB components in PAT1 full length or PAT1-NC background were grown in synthetic complete (SCD) media to exponential growth phase then shifted to glucose-rich or glucose-starvation conditions for 30 min and observed by fluorescence microscopy. PBs induced in the PAT1-NC background were dissolved by addition of 2% glucose demonstrating reversibility. Scale bar: 5 µm. (E) Quantification of images shown in A depicting number of PBs/cell. Bars: SEM. N = 3 biological replicates with >800 cells/replicate. (F) PAT1-NC (AA 5–79 + 456–587) OE leads to constitutive PB induction. p(GAL)-PAT1 or p(GAL)-PAT1-NC cells expressing Dhh1-GFP were grown in SC raffinose media to exponential growth phase after which Pat1 OE was induced with galactose. Scale bar: 5 µm. (G) Graph depicts Dhh1 PBs/cell, SEM. N = 3 biological replicates with >800 cells/replicate. [Diatrack 3.05 and cell segmentation using in house Matlab code was used for the quantification of PB and cell numbers respectively for all the experiments shown in the manuscript].
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Controls for the Pat1 OE, relating to Figure 1. Upper panel: PAT1 (endogenous promoter) cells expressing Dhh1-GFP were grown in (SC) raffinose media to exponential growth phase after which galactose was added and cells were imaged by fluorescence microscopy. Lower Panel: p(GAL)-HA pat1Δ (Hemagglutinin tag) OE does not lead to constitutive PB formation. Scale bar: 5 µm. (B) PAT1-NC rescues the pat1Δ growth phenotype. PAT1, pat1Δ and PAT1-NC cells were grown overnight in SCD media to saturation and the next day the different strains were inoculated to OD 0.1 in SCD. Absorbance based growth measurements were recorded for 24 hrs. The growth curve depicts O.D. 600 nm versus time. (C) PAT1-NC rescues the thermosensitive growth phenotype of pat1Δ. Cells expressing PAT1-NC, PAT1 and cells lacking PAT1 were grown to saturation in SCD media overnight and the next day spotted on YPD plates at the indicated temperatures. Growth was monitored after 2–3 days of incubation. The phenotype was confirmed with three biological replicates. (D) PAT1-NC fully rescues the growth phenotype in pat1Δ edc3Δ scd6Δ cells at 37°C. Cells expressing PAT1 edc3Δ scd6Δ, pat1Δ edc3Δ scd6Δ and PAT1-NC edc3Δ scd6Δ were grown to saturation in SCD media overnight and the next day spotted on YPD plates at the indicated temperatures. Growth was monitored after 2–3 days of incubation. The phenotype was confirmed with three biological replicates. (E) Pat1-NC localizes to PBs upon stress in vivo. Cells co-expressing Pat1-NC-GFP and Dcp2-mCherry as an additional PB marker were grown in SCD media to exponential growth phase then shifted to glucose-rich or glucose-starvation conditions for 30 min and observed by fluorescence microscopy. After visualization 2% final concentration of glucose was added for one hour to demonstrate reversibility and dissolution of Pat1-NC PBs. Scale bar: 5 µm.
+
+### Pat1 and Dhh1 interaction is essential for PB assembly
 
 Pat1 is an 88 kDa protein that consists of an N-terminal un-structured domain (Pat1-N) followed by a proline-rich stretch plus middle domain and a C-terminal globular fold (Pat1-C). The N-terminal domain of Pat1 directly binds Dhh1’s RecA2 core via a conserved DETF motif (Sharif et al., 2013; Ozgur and Stoecklin, 2013). Furthermore, Pat1’s C-terminus harbors two serine residues that are phosphorylated by the cAMP-dependent protein kinase A (PKA) negatively regulating the interaction with Dhh1 and PB formation (Ramachandran et al., 2011).
 
@@ -57,25 +65,73 @@ Furthermore, cells expressing the PAT1-NC construct when starved of glucose indu
 
 We next examined whether Pat1-NC can interact with Dhh1 in vitro, and as expected, Pat1-NC displayed strong binding to full-length Dhh1 in a GST pull down assay (Figure 2A). However, this interaction was completely abolished for a Pat1-NC variant in which the N-terminal DETF motif was mutated to four alanines [Pat14A-Dhh1, see Supplementary file 2 table S2B for a list of all mutants used in this study] (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig2-v2.jpg)
+
+**Figure 2.:** (A) Recombinant Pat1-NC4A-Dhh1 is defective for Dhh1 binding. GST pull-down with GST-Pat1-NC and mutants thereof as matrix-bound bait and Dhh1 as prey. After 1 hr of binding at 4°C, the samples were washed five times with a buffer containing 300 mM NaCl and visualized by Coomassie staining after separation on a 12% acrylamide gel. (B) Expression of pat1 4A-Dhh1 (Dhh1 binding mutant) leads to a drastic reduction in PB formation. Cells co-expressing the indicated PB components in the PAT1 or pat14A-Dhh1 background were grown in SCD media to exponential growth phase, then shifted to glucose-rich or glucose-starvation conditions for 30 min and observed by fluorescence microscopy. Scale bar: 5 µm. (C) Quantification of images in B depicting number of PBs/cell, (Dhh1-GFP PBs co-localizing with Dcp2-mCherry) are shown, three biological replicates, bars: SEM. (D) Pat14A-Dhh1-GFP mutant is defective for PB localization. Cells expressing either Pat1-GFP or the Pat14A-Dhh1-GFP mutant were grown in SCD media to exponential growth phase then shifted to glucose-rich or glucose-starvation conditions for 30 min and observed by fluorescence microscopy. Scale bar: 5 µm. (E) Quantification of images shown in D depicting number of PBs/cell. N = 3 biological replicates with >500 cells/replicate. Error bars: SEM. (F) pat14A-Dhh1 mutant is defective in PB formation upon hippuristanol treatment. Cells expressing either PAT1 or the pat14A-Dhh1 were grown in SCD media to exponential growth phase after which they were treated with 10 µM hippuristanol for 2 hrs. The kinetics of PB formation was monitored using Dhh1-GFP and its co-localization with Dcp2-mCherry. Quantification of PBs/cell is depicted. Stills from the live imaging time course are shown. N = 2 biological replicates, two technical replicates each with >300 cells/replicate, SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) pat14A-Dhh1 mutant has a slight growth defect. PAT1, pat1Δ and pat14A-Dhh1 cells were grown overnight in SCD media to saturation and the next day the different strains were inoculated to OD 0.1 and growth curves were recorded for 24 hr. The growth curve depicts O.D. 600 nm versus time. (B) pat1Δ abolishes PB formation. Cells expressing Dhh1-GFP in pat1Δ or PAT1 strains were grown in SCD media to exponential growth phase then shifted to glucose-rich or glucose-starvation conditions for 30 min and observed by fluorescence microscopy. The graph depicts the number of PBs/cell. N = 2 biological replicates, 300 cells per replicate, SD. (C) Pat14A-Dhh1 and Pat1EE are expressed to similar levels as wild-type Pat1. Pat1-GFP, Pat14A-Dhh1–GFP and Pat1EE-GFP expressing cells were grown in SCD media to exponential growth phase and protein levels were measured using Western blot with an anti-GFP antibody. Hexokinase was used as a loading control. The graph depicts the expression levels of different Pat1 mutants normalized to the loading control. N = 2 biological replicates. SD shown. (D) Dhh1 expression in different Pat1 mutants is comparable to Dhh1 expression in wild-type Pat1. Pat1-GFP, Pat14A-Dhh1–GFP and Pat1EE-GFP expressing cells were grown in SCD media to exponential growth phase and Dhh1 protein levels were measured using Western blot with an anti-Dhh1 antibody. A non-specific band detected by the antibody was used as an internal control. The graph depicts the expression levels of Dhh1 in Pat1 mutants normalized to the internal control. N = 2 biological replicates. SD shown.
+
 We next investigated the effect of the pat14A-Dhh1 mutant in the context of the full-length protein on PB formation in vivo. While cells expressing pat14A-Dhh1 showed a mild growth defect compared to the wild type PAT1, they grew significantly better than pat1Δ cells, indicating that this protein is at least partially functional (Figure 2—figure supplement 1A). To examine whether the interaction between Pat1 and Dhh1 is required for PB formation, we monitored PB assembly upon stress in the absence of glucose in wild-type (PAT1) or the pat14A-Dhh1 background. As expected, the number of PBs was drastically reduced in the complete absence of Pat1, as visualized by Dhh1-GFP (Figure 2—figure supplement 1B). Importantly, pat14A-Dhh1 expressing cells also demonstrated a drastic reduction in PB number compared to cells expressing PAT1 (Figure 2B,C) and the Pat14A-Dhh1-GFP protein itself showed a significant defect in localizing to PBs (Figure 2D,E).
 
 To assure that the Pat14A-Dhh1 mutant is stably expressed, we checked its protein levels using Western blotting and observed that the mutant expresses to similar levels as wild-type Pat1 (Figure 2—figure supplement 1C). Moreover, in the Pat14A-Dhh1 mutant cells, the expression levels of Dhh1 were comparable to the Dhh1 levels in cells harboring a wild-type copy of Pat1 (Figure 2—figure supplement 1D). This demonstrates that the defect in PB formation in cells expressing the Pat14A-Dhh1 binding mutant is specifically due to impaired Pat1 function.
 
 We were unable to overexpress the Pat14A-Dhh1 mutant in yeast. In order to investigate PB formation independently of carbon starvation stress, we therefore treated cells with the drug hippuristanol, which inhibits the eukaryotic translation initiation factor eIF4A (Bordeleau, M.E., et al., 2006). In consequence, hippuristanol prevents translation initiation and robustly induces PB formation within minutes in cells expressing wild-type PAT1 (Chan et al., 2018) [Figure 2F, Video 1]. Cells expressing pat14A-Dhh1 however, did not show PB formation until 2 hrs after hippuristanol addition (Figure 2F and Video 2).
 
+![Video 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-video1.mp4.jpg)
+
+**Video 1.:** The video depicts PB formation (Dhh1-GFP and Dcp2-mCherry co-localization) in cells expressing wild-type PAT1 upon hippuristanol treatment. (2 hr video, 5 min intervals; video played at seven fps). Each frame is a single plane.
+
+![Video 2.](https://cdn.elifesciences.org/articles/41415/elife-41415-video2.mp4.jpg)
+
+**Video 2.:** The video depicts failure to form PBs (Dhh1-GFP and Dcp2-mCherry co-localization) in cells expressing pat14A-Dhh1 upon hippuristanol treatment. (2 hr video, 5 min intervals; video played at seven fps). Each frame is a single plane.
+
 It cannot be excluded that the Pat14A-Dhh1 mutant might interfere with the binding of Pat1 to some other factor with a role in PB formation in addition to Dhh1. We therefore also employed a complementary approach wherein we examined mutants on Dhh1 that impair interaction with Pat1. Two such Dhh1 mutants have been described: Dhh1 Mut3A (Dhh1S292DN294D) and Dhh1 Mut3B (Dhh1R295D) that partially or completely abolish binding to Pat1, respectively (Sharif et al., 2013). Cells expressing either wild-type Dhh1, Dhh1S292DN294D, Dhh1R295D or lacking Dhh1 altogether were starved of glucose and PB assembly was assessed. Whereas the Dhh1 variants expressed as well as wild-type Dhh1 (Figure 3—figure supplement 1), we observed a drastic reduction in the number of PBs in both Dhh1S292DN294D, Dhh1 R295D cells (Figure 3A,B), and as published before also in dhh1Δ cells (Figure 3A,B, Mugler et al., 2016). The Dhh1R295D had a more severe PB formation defect compared to the Dhh1S292DN294D aligning with the in vitro binding abilities of these Dhh1 mutants to Pat1 (Sharif et al., 2013).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig3-v2.jpg)
+
+**Figure 3.:** (A) Expression of two distinct Pat1 binding mutants, Dhh1R295D and Dhh1S292DN294D, leads to a drastic reduction in PB formation. Cells co-expressing the indicated PB components in either Dhh1, Dhh1R295D or Dhh1S292DN294D cells were grown in SCD media to exponential growth phase, then shifted to glucose-rich or glucose-starvation conditions for 30 min and observed by fluorescence microscopy. Scale bar: 5 µm. (B) Quantification of images in A depicting number of Dhh1 positive and Dcp2 positive PBs/cell; N = 4 biological replicates with >300 cells/replicate, SEM. (C) Dhh1R295D and Dhh1S292DN294D mutants are defective in PB formation upon hippuristanol treatment. Cells expressing either Dhh1, Dhh1R295D, Dhh1S292DN294D or dhh1Δ, were grown in SCD media to exponential growth phase after which they were treated with 10 µM hippuristanol for 3 hrs. The kinetics of PB formation was monitored using Dhh1-GFP and its co-localization with Dcp2-mCherry. (D) Quantification of PBs/cell. Stills from the live imaging time course are shown. N = 3 biological replicates with >300 cells/replicate, SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Dhh1-GFP, Dhh1R295D–GFP and Dhh11S292DN294D-GFP expressing cells were grown in SCD media to exponential growth phase and protein levels were measured using Western blot with an anti-GFP antibody. Hexokinase was used as a loading control. The graph depicts the expression levels of different Dhh1 mutants normalized to the loading control. N = 2 biological replicates. SD shown.
 
 To test PB formation independently of carbon starvation stress in these Pat1-binding mutants of Dhh1, we used the drug hippuristanol as before. Dhh1 wild-type cells when treated with hippuristanol formed PBs within minutes as judged by the co-localization of Dhh1-GFP and Dcp2-mCherry foci (Figure 3C,D and Video 3). However, both the Dhh1S292DN294Dand Dhh1R295D mutants did not form robust PBs until 3 hrs of hippuristanol treatment exhibiting a phenotype similar to dhh1Δ cells (Figure 3C,D and Videos 4, 5 and 6). Taken together, our data reveal that the Pat1-Dhh1 interaction is pivotal for robust PB assembly.
 
-## Pat1 phosphorylation status influences RNA binding
+![Video 3.](https://cdn.elifesciences.org/articles/41415/elife-41415-video3.mp4.jpg)
+
+**Video 3.:** The video depicts PB formation (Dhh1-GFP and Dcp2-mCherry co-localization) in cells expressing wild-type Dhh1 upon hippuristanol treatment. (3 hr video, 5 min intervals; video played at seven fps). Each frame is a single plane.
+
+![Video 4.](https://cdn.elifesciences.org/articles/41415/elife-41415-video4.mp4.jpg)
+
+**Video 4.:** The video depicts PB formation (Dhh1S292DN294D -GFP and Dcp2-mCherry co-localization) in cells expressing the Dhh1S292DN294D mutant upon hippuristanol treatment. (3 hr video, 5 min intervals; video played at seven fps). Each frame is a single plane.
+
+![Video 5.](https://cdn.elifesciences.org/articles/41415/elife-41415-video5.mp4.jpg)
+
+**Video 5.:** The video depicts PB formation (Dhh1R295D-GFP and Dcp2-mCherry co-localization) in cells expressing the Dhh1R295D mutant upon hippuristanol treatment. (3 hr video, 5 min intervals; video played at seven fps). Each frame is a single plane.
+
+![Video 6.](https://cdn.elifesciences.org/articles/41415/elife-41415-video6.mp4.jpg)
+
+**Video 6.:** The video depicts PB formation (Dcp2-mCherry co-localization) in cells lacking dhh1 upon hippuristanol treatment. (3 hr video, 5 min intervals; video played at seven fps). Each frame is a single plane.
+
+### Pat1 phosphorylation status influences RNA binding
 
 Pat1 is a target of the cAMP-dependent protein kinase A (PKA) and phosphorylation of two serines (amino acids 456/457) in the C-terminus of Pat1 under glucose-rich conditions was previously shown to negatively regulate PB formation (Ramachandran et al., 2011). In agreement with the published literature, cells expressing the pat1EE mutant showed a defect in PB formation (Figure 4—figure supplement 1A,B and Ramachandran et al., 2011). To better understand how Pat1 phosphorylation controls PB assembly, we sought to characterize the influence of the phosphorylation status of Pat1 on PB formation in the absence of stress. Overexpression of PAT1WT/SS (WT = wild type) and pat1AA (non-phosphorylatable) led to constitutive PB formation as visualized by Dhh1-GFP and Dcp2-mCherry positive foci. However, upon overexpression of pat1EE (phospho-mimetic), foci number was reduced (Figure 4A,B). The Pat1EE-GFP mutant was expressed as well as wild-type Pat1-GFP and had no effect on Dhh1 expression (Figure 2—figure supplement 1C and D) emphasizing that the phospho-mimetic mutant specifically impairs Pat1 function.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cells co-expressing the indicated PB components were grown in SC raffinose media to exponential growth phase after which OE of different Pat1 alleles was induced by galactose addition. Cells were imaged using fluorescence microscopy. (B) Quantification of images shown in A depicting number of PBs/cell. Scale bar: 5 µm, SEM. N = 3 biological replicates with >800 cells/replicate. (C) Pat1-C-terminal domain does not bind Dhh1. V5 pull-down with V5-Pat1-C and V5-Pat1-CEE as matrix-bound bait and Dhh1-mCherry as prey. After 1 hr of binding at 4°C, the samples were washed four times with a buffer containing NaCl as indicated and visualized by Coomassie staining after separation on a 12% acrylamide gel. (D) Pat1-CEE weakens the interaction with RNA compared to Pat1-C. Recombinant Pat1-C (WT) and Pat1-CEE were incubated with a Cy5-labeld 29nt RNA oligo in the presence of 300 mM NaCl and separated on a NativePage gradient gel. The fluorescence of the oligo was detected by LI-COR imaging. Reactions were performed in triplicate and the intensity of the upper shifted RNA oligo band was quantified. Equal input of the Pat1-C proteins was verified by acrylamide PAGE and Coomassie staining. Error bars: SD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cells expressing the indicated GFP-PB markers (in the PAT1WT/SS, pat1AA and pat1EE backgrounds) were grown in SCD media to exponential growth phase then shifted to glucose-rich (left panel) or glucose-starvation conditions (right panel) for 30 min and observed by fluorescence microscopy. Scale bar: 5 µm. (B) Quantification of images shown in A depicting PBs/cell. Bars: SEM, N = 3 biological replicates with >800 cells/replicate.
 
 Pull-down experiments from cell extracts previously suggested that PKA-dependent phosphorylation of Pat1 diminishes its interaction with Dhh1 (Ramachandran et al., 2011). To test whether this effect is direct, we performed pull-down assays with the recombinant Pat1-NC protein and the Pat1-NCEE variant. However, in this assay there was no significant difference in Dhh1 binding between Pat1-NC and Pat1-NCEE (Figure 2A). Since the strong DETF binding site in Pat1-N might mask any weaker interaction in Pat1-C, we also tested for direct binding of Pat1-C to Dhh1 but were unable to detect any interaction (Figure 4C), indicating that the DETF-motif in Pat1-N provides the major interaction surface for Dhh1.
 
 Pat1-C was previously shown to bind RNA (Pilkington and Parker, 2008; Chowdhury et al., 2014). We therefore tested whether RNA binding is regulated by PKA-dependent phoshphorylation by performing RNA oligo gel shift assays using recombinant proteins. Whereas wild-type Pat1-C robustly binds the RNA oligo and shifts it to higher molecular weight in a native PAGE gel, Pat1EE displayed a significantly reduced RNA shift (quantified in Figure 4D). Taken together, our in vivo and in vitro results on the phospho-mimetic Pat1EE mutant suggest that in addition to Pat1-Dhh1 binding, also the interaction between Pat1 and RNA is important for PB formation.
 
-## Pat1 and Not1 act antagonistically in vivo
+### Pat1 and Not1 act antagonistically in vivo
 
 Our lab previously showed that Not1 promotes PB disassembly by activating the ATPase activity of Dhh1, and cells expressing a Not1 mutant that cannot bind to Dhh1 (not19X-Dhh1) form constitutive PBs in non-stressed cells. Yet these PBs are less intense and fewer in number than those formed upon glucose starvation (Mugler et al., 2016), indicating that additional mechanisms prevent PB formation in glucose-replete conditions.
 
@@ -83,11 +139,11 @@ Since in glucose-rich media PB assembly is also inhibited by the PKA-dependent p
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig5-v2.jpg)
 
-**Figure 5.:** not1 (Dhh1 binding mutant) combined with 9X-Dhh1pat1(non-phosphorylatable Pat1) enhances constitutive PB formation in the absence of stress.AA (A) Cells expressing either not1 or 9X-Dhh1pat1 or the combination of both mutants were grown in SCD media to exponential growth phase and PBs visualized by fluorescence microscopy using Dcp2-mCherry as a AAbona fide PB marker. Scale bar: 5 µm. (B) The graph depicts the number of Dcp2 positive PBs/cell. N = 3 biological replicates with >500 cells visualized in each replicate, bars: SEM.
+**Figure 5.:** (A) Cells expressing either not19X-Dhh1 or pat1AA or the combination of both mutants were grown in SCD media to exponential growth phase and PBs visualized by fluorescence microscopy using Dcp2-mCherry as a bona fide PB marker. Scale bar: 5 µm. (B) The graph depicts the number of Dcp2 positive PBs/cell. N = 3 biological replicates with >500 cells visualized in each replicate, bars: SEM.
 
 Overall, this suggests that there are at least three determinants that act cooperatively to enhance the formation of PBs: (a) direct interactions between Pat1-Dhh1 and Pat1-RNA; (b) lack of Not1 binding to Dhh1 and in consequence low Dhh1 ATPase activity (Mugler et al., 2016); and (c) the availability of PB client mRNAs that are not engaged in translation. Furthermore, our results suggest that Pat1 and Not1 act antagonistically on PB dynamics. Whereas Pat1 binding to Dhh1 enhances the assembly of PBs, the interaction of Not1 with Dhh1 promotes PB disassembly, likely through activation of the ATPase activity of Dhh1.
 
-## Pat1 promotes PB assembly by enhancing the phase separation of Dhh1 and RNA
+### Pat1 promotes PB assembly by enhancing the phase separation of Dhh1 and RNA
 
 At least two mechanisms of how Pat1 promotes PB formation via Dhh1 could be envisioned: first, Pat1 could slow the ATPase cycle of Dhh1, for example by preventing Not1 binding and/or inhibiting ATP hydrolysis, second, Pat1 could directly promote oligomerization and condensation of Dhh1 on RNA.
 
@@ -95,9 +151,33 @@ To test the first hypothesis, we used an in vitro ATPase assay using purified pr
 
 We had previously shown that PB dynamics are regulated by the ATPase activity of Dhh1 (Carroll et al., 2011; Mugler et al., 2016). To test Pat1’s effect on the Dhh1 ATPase cycle in vivo, we therefore also examined the turnover of PBs that form upon Pat1 overexpression. The drug cycloheximide (CHX) traps mRNAs on polysomes and thereby stops the supply of new RNA clients to PBs. Since active Dhh1 constantly releases mRNA molecules from PBs, a lack of mRNA influx eventually leads to their disassembly and in consequence the catalytic dead mutant of Dhh1 that is locked in the ATP- state (Dhh1DQAD) inhibits PB disassembly and was shown to have negligible turnover rates (Mugler et al., 2016; Kroschwald et al., 2015). We observed that PBs formed upon Pat1 overexpression were more dynamic than PBs formed in the presence of Dhh1DQAD and their disassembly kinetics was comparable to PBs formed upon stress in a wild-type DHH1 background (Figure 6—figure supplement 1B,C and Videos 7, 8 and 9). Thus, overall, our in vitro and in vivo findings are not consistent with the conclusion that Pat1 blocks the ATPase activation of Dhh1.
 
+![Video 7.](https://cdn.elifesciences.org/articles/41415/elife-41415-video7.mp4.jpg)
+
+**Video 7.:** Dcp2-mCherry expressing cells in the DHH1 background were grown in (SC) raffinose media to exponential growth phase, after which galactose was added to 2% final concentration for 2 hr and then starved for 30 mins to allow PBs to form. The cells were then treated with 50 µg/mL cycloheximide for 90 min and disappearance of foci was monitored using fluorescence microscopy. (5 min intervals; video played at seven fps). Each frame is a single plane.
+
+![Video 8.](https://cdn.elifesciences.org/articles/41415/elife-41415-video8.mp4.jpg)
+
+**Video 8.:** Cells expressing Dcp2-mCherry in the p(GAL)-PAT1 OE strain were grown in (SC) raffinose to exponential growth phase, after which galactose was added to 2% final concentration for 2 hr to allow PBs to form. Thereafter, the cells were treated with 50 µg/mL cycloheximide (CHX) for 90 min and disappearance of foci was monitored using fluorescence microscopy. (5 min intervals; video played at seven fps). Each frame is a single plane.
+
+![Video 9.](https://cdn.elifesciences.org/articles/41415/elife-41415-video9.mp4.jpg)
+
+**Video 9.:** Dcp2-mCherry expressing cells in the dhh1DQAD mutant background were grown in (SC) raffinose to exponential growth phase, after which galactose was added to 2% final concentration for 2 hr. The cells were then carbon starved for 30 min to allow PBs to form after which, 50 µg/mL cycloheximide was added and disappearance of foci was monitored for 90 mins using fluorescence microscopy. (5 min intervals; video played at seven fps). Each frame is a single plane.
+
 The second hypothesis is that Pat1 promotes higher-order mRNP assembly by directly or indirectly promoting Dhh1 oligomerization, thereby acting as a scaffold and providing additional protein–protein or protein-RNA interactions (Coller and Parker, 2005; Rao and Parker, 2017). We have previously shown that recombinant Dhh1 can undergo LLPS in the presence of RNA and ATP, and that these Dhh1 droplets can recapitulate aspects of in vivo PB dynamics. (Mugler et al., 2016). We therefore utilized this in vitro system to test Pat1’s impact on the phase separation behavior of Dhh1.
 
 Dhh1 droplets were assembled from purified components as described previously (Mugler et al., 2016). Interestingly, while no LLPS of Pat1-NC alone was detected (Figure 6—figure supplement 2A), addition of increasing concentrations of wild-type Pat1-NC strongly enhanced the LLPS of Dhh1 in the presence of ATP and RNA as judged by an increase in the area * intensity of Dhh1 droplets (Figure 6A). Furthermore, Pat1-NC itself enriched in Dhh1 droplets, suggesting that Pat1 and Dhh1 co-oligomerize with RNA to form a composite phase-separated compartment (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig6-v2.jpg)
+
+**Figure 6.:** (A) 4 µM Dhh1-mCherry was mixed with 3.2 mM ATP and 0.2 mg/ml polyU as RNA-analog in a 150 mM KCl buffer. Pat1-NC-GFP and mutants thereof were added in increasing concentrations, as indicated. mCherry and GFP intensities are scaled identically in all images displayed. Representative images, scale bar 25 µm. Quantification of the droplet intensity multiplied by area (mCherry and GFP channels separately normalized to Dhh1 alone and Pat1 4 µM, respectively) of three technical replicates of the reactions displayed in Figure 5A, mean and standard deviation. (B) Not1 prevents droplet formation also in the presence of Pat1. Proteins were mixed as indicated, and droplet formation induced by addition of low salt buffer, ATP and polyU. Scale bar 25 mM, quantification (intensity multiplied by area) of two biological replicates (one to three technical replicates each), mean and standard deviation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Pat1 does not inhibit the Not1MIF4G-stimulatd ATPase activity of Dhh1. ATPase reactions were performed under saturating concentrations of polyU using a Not1MIF4G concentration that stimulates Dhh1 to 0.75 Vmax. Pat1 was added to either 2- and 6-fold excess over Not1. Three biological replicates (each of three technical replicates); mean and standard deviation of kcat values. The values are corrected for blank (that is Pat1 alone or Not1 alone). P values are obtained from a two-tailed t-test. (B) Pat1 OE PBs are more dynamic than the Dhh1DQAD PBs. Cells expressing Dcp2-mCherry in the p(GAL)-PAT1 OE strain were grown in (SC) raffinose to exponential growth phase after which galactose was added to 2% final concentration for 2 hr to induce PBs. Then the cells were treated with 50 µg/ml cycloheximide (CHX) and disappearance of Dcp2-mCherry PBs per cell was monitored for 90 min by fluorescence microscopy. In order to study PB dynamics in the DHH1 and dhh1 DQAD background cells were grown as described before except PBs were induced by carbon starvation and their disassembly monitored by CHX. Each time point shows a representative image. (C) The graph shows the foci number per cell measurements for Dcp2-mCherry normalized to one to account for differences in PB formation under different PB induction conditions. Scale bar: 5 µm. N = 2 biological replicates with >200 cells counted per experiments. Error bars: SD.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Pat1 by itself does not phase separate in vitro. Reactions are performed in the presence of ATP and polyU at indicated protein concentrations. N = three technical replicates. (B) Enhancement of Dhh1’s phase separation by Pat1 is RNA-dependent. Reactions are performed in the presence of ATP but absence of polyU at indicated protein concentrations. N = three technical replicates (C) Pat1-N terminus does not enhance the phase separation of Dhh1. Reactions are performed in the presence of ATP and polyU at indicated protein concentrations. Quantification (intensity multiplied by area of droplets) of three technical replicates, mean and standard deviation.
 
 In order to test if the enhancement in phase separation of Dhh1 via Pat1 is RNA-dependent, we perfomed this experiment also in the absence of RNA. Interestingly, we did not observe any Dhh1 droplets upon addition of increasing concentrations of Pat1-NC when RNA was omitted from the reaction (Figure 6—figure supplement 2B) suggesting that under these in vitro conditions RNA plays a critical role in the Pat1-promoted enhancement of Dhh1 oligomerization and higher-order phase separation. Consistent with this, the Pat1-N- terminus alone which cannot bind to RNA also does not enhance the phase separation of Dhh1 even in the presence of RNA and ATP (Figure 6—figure supplement 2C).
 
@@ -109,9 +189,21 @@ We previously demonstrated that the MIF4G domain of Not1 prevents formation of D
 
 Taken together our results suggest that Pat1 enhances the multivalency of protein–protein and protein-RNA interactions in a Dhh1-Pat1 mRNP and in consequence promotes the formation of higher-order, liquid-like mRNP droplets akin to in vivo PBs.
 
-## In vitro phase separated droplets mimic the stoichiometry of PB components in vivo
+### In vitro phase separated droplets mimic the stoichiometry of PB components in vivo
 
 To examine how well our in vitro droplets resemble in vivo PBs we investigated the stoichiometric ratio of Dhh1:Pat1 in these granules. In order to determine the stoichiometry in vivo, we measured the number of PBs and the fluorescence intensity of GFP-tagged Dhh1 and Pat1 in these foci. Briefly, we glucose starved both Pat1-GFP and Dhh1-GFP expressing cells to induce PBs (Figure 7—figure supplement 1A) and used the single particle tracking software Diatrack to count the number and intensity of PBs in an unbiased and automated manner in each strain (Vallotton et al., 2017). Surprisingly, despite the fact that the cellular concentration of Pat1 is ten-times lower than Dhh1 (Figure 7—figure supplement 1B), the ratio of the two PB components was approximately 2:1 ± 0.18 (Dhh1:Pat1) after 0.5–4 hr of starvation (Figure 7A). Extended starvation resulted in enhanced Dhh1 recruitment to PBs until reaching a Dhh1:Pat1 ratio of 2.5:1 ± 0.23, suggesting that PB composition matures over time (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig7-v2.jpg)
+
+**Figure 7.:** (A) Pat1-GFP and Dhh1-GFP expressing cells were grown in SCD media to exponential growth phase and then shifted to SC (minus glucose) for the indicated time points. PB formation was visualized by fluorescence microscopy. Graph depicts the ratio of Dhh1: Pat1 in PBs in vivo. N = 3 biological replicates, SEM. (B) Calibration curves to determine the protein concentration of Dhh1-mCherry and Pat1-NC-GFP within the droplets: the fluorescence intensity of homogeneous solutions of the respective proteins was measured at different protein concentrations (blue circles). The unknown protein concentration was determined by linear fitting of this calibration curve (violet circle). Confocal fluorescence microscopy images of phase-separated droplets of Dhh1-mCherry in the absence and presence of Pat1-GFP are shown. Scale bar: 20 µM. (C) Tug-of-war model between Pat1 and Not1 to regulate PB dynamics. Model depicting three inputs that cooperatively regulate PB formation. The solid black arrows on the left show interaction between the Pat1 N-terminus with the RecA2 core of Dhh1, Pat1 C-terminus with RNA, Dhh1 interaction with RNA and potential Dhh1-Dhh1 interactions via low-complexity unstructured tails. The dotted grey arrows on the right demonstrate multivalent interactions in a PB driven by the LLPS of Dhh1 and RNA (a process enhanced by Pat1). Colors: green: inputs that promote PB assembly, red factors that negatively regulate PB formation. Violet: Dhh1, light green: Pat1-NC, blue: RNA.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Images of the Pat1-GFP and Dhh1-GFP stoichiometry. Cells expressing Pat1-GFP and Dhh1-GFP were grown in SCD media to exponential growth phase then shifted to glucose-starvation conditions for different time points as indicated and PBs were imaged by fluorescence microscopy. Images are representative for each times. Scale: 5 µM. (B) Dhh1-GFP and Pat1-GFP expressing cells (used for imaging in A) were grown in SCD media to exponential growth phase and protein levels were measured using Western blot with an anti-GFP antibody. Hexokinase was used as a loading control. The graph depicts the expression levels of Dhh1 and Pat1 normalized to the loading control. (C) Size distributions of in vitro assembled Dhh1 and Pat1 LLPS droplets (relating to Figure 6B). In presence of Pat1, the droplet size increases and the size distribution shifts to larger radii. Moreover, the number of droplets decreases, thereby indicating that the droplets have higher propensity to fuse in presence of Pat1. Scale bar: 20 µm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/41415/elife-41415-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Cells expressing Dhh1-GFP [p-PAT1 +p(GAL)-PAT1 background] were grown in SC raffinose media to exponential growth phase after which Pat1 OE was induced with galactose. Localization of Dhh1-GFP to the nucleus was confirmed by co-localization with DAPI staining after 2 hr of PAT1 or pat1AA OE. White arrows depict the co-localization of Dhh1-GFP and DAPI. Scale bar: 5 µm. N = 2 biological replicates. (B) HDEL Td tomato was used as a marker of the nuclear rim, scale bar: 5 µm. (C) PBs formed in pat14A-Dhh1 and pat1EE expressing cells are less intense than PBs formed in PAT1 wild-type cells. Graph showing the average intensity of PBs (obtained from Figures 2B and 3).
 
 In order to determine the stoichiometry of Pat1 and Dhh1 droplets in vitro, we imaged Dhh1-mCherry and Pat1-GFP droplets with a confocal microscope (Figure 7—figure supplement 1C). The protein concentration of both Dhh1 and Pat1 in the droplet was calculated from a standard curve determined from values measured for different concentrations of the respective soluble fluorophores (Figure 7B). Remarkably, we found a stoichiometric ratio of 2.7:1 ± 0.13 of Dhh1 to Pat1 in the in vitro phase-separated droplets, closely resembling the Dhh1:Pat1 ratio of mature PBs in vivo (Figure 7B).
 
@@ -119,7 +211,7 @@ Thus, while other mRNA decay factors also contribute to PB formation in vivo, ou
 
 ## Discussion
 
-## Tug-of-war model between Pat1 and Not1 to regulate PB dynamics
+### Tug-of-war model between Pat1 and Not1 to regulate PB dynamics
 
 The ability of proteins and RNA to undergo LLPS has emerged as an essential fundamental biological process allowing cells to organize and concentrate their cellular components without the use of membranes. Yet, how these membraneless organelles assemble, are kept dynamic and are regulated remains enigmatic. One such cellular phase-separated compartment is the PB and our results presented here together with our prior work (Mugler et al., 2016) identify and characterize both positive and negative regulators of PB assembly and provides novel insight into the regulation of membraneless organelle formation.
 
@@ -127,7 +219,7 @@ Overall, our work uncovers a function of Pat1 as an enhancer of PB formation tha
 
 In this model, a tug-of-war between Pat1 and Not1 regulates PB assembly and disassembly: whereas a tight Pat1-Dhh1 interaction in the presence of RNA clients, promotes PB formation, Not1, induces PB turnover via stimulating the ATPase activity of the DEAD box ATPase Dhh1 (Figure 7C). Remarkably, our in vivo findings are corroborated in vitro wherein, Pat1 enhances the LLPS of Dhh1 and RNA, a step critical for the assembly of large mRNP granules, and by contrast, Not1 reverses the LLPS of Pat1-Dhh1-RNA droplets (Figures 6 and 7C). Furthermore, the observed stoichiometry of Dhh1 and Pat1 in PBs is recapitulated in our in vitro phase separation assay (Figure 7A,B).
 
-## The interaction between Pat1 and Dhh1 is critical for PB assembly
+### The interaction between Pat1 and Dhh1 is critical for PB assembly
 
 Inducing PB formation by Pat1 overexpression or hippuristanol treatment allowed us to dissect distinct mechanisms that govern PB assembly and characterize the crucial role of the Pat1-Dhh1 interaction in this process. The benefit of these modes of PB formation are that they bypass the characteristic stresses associated with PB formation, such as nutrient starvation, that might have more widespread and confounding effects on translation, mRNA degradation, or on the regulation of other PB components.
 
@@ -135,7 +227,7 @@ Our experiments reveal that Pat1 functions in PB formation through Dhh1 since PB
 
 Our results seem to be at odds with a previous publication, which suggests that Pat1 acts independently of Dhh1 to promote PB formation (Coller and Parker, 2005). However, in this study Pat1 was overexpressed from a plasmid, in the presence of the endogenous copy. When recapitulating these conditions, we observed that PB components mislocalize to the nucleus [observed by DAPI and a nuclear rim marker, see Figure 7—figure supplement 2A,B] and it is possible that in the absence of additional organelle markers, this nuclear accumulation was misinterpreted as PB formation.
 
-## Pat1 enhances the LLPS of Dhh1, thereby promoting PB formation
+### Pat1 enhances the LLPS of Dhh1, thereby promoting PB formation
 
 How does Pat1 enhance PB formation? One hypothesis is that Pat1 directly counteracts the Not1-stimulated ATPase activation of Dhh1, but we do not favor such a model since i) Pat1 does not inhibit Dhh1's ATPase activity at physiological protein ratios in vitro (Figure 6—figure supplement 1A), ii) Not1MIF4G dissolves Pat1-Dhh1 condensates, while droplets formed from catalytic-dead Dhh1DQAD are Not1-resistant (Figure 6 and Mugler et al., 2016), and iii) in vivo, PBs formed upon Pat1 overexpression are much more dynamic than those formed from Dhh1DQAD (Figure 7—figure supplement 1B).
 
@@ -143,7 +235,7 @@ Instead, our data are consistent with a model in which Pat1 promotes PB assembly
 
 Our recent findings also show that the un-structured poly-Q rich C-terminal tail of Dhh1 is required for PB formation in vivo and Dhh1 LLPS in vitro (Hondele et al., submitted). Thus, Pat1 might potentially enhance Dhh1 multimerization via the low complexity tails of Dhh1. Structural studies will now be needed to clarify how Pat1 facilitates oligomerization and PB formation of the Dhh1-Pat1- RNA complex.
 
-## The emerging importance of LLPS in diverse aspects of cell biology and the power of in vitro reconstitution systems
+### The emerging importance of LLPS in diverse aspects of cell biology and the power of in vitro reconstitution systems
 
 As non-membrane bound organelles, it is of interest to understand how cells assemble large RNP granules and regulate their dynamics. PBs are prominent membraneless cellular compartments, which have been shown to be not only involved in numerous aspects of mRNA turnover, but also crucial for survival under various cellular stresses. With an in vitro phase separation tool in hand that faithfully reconstitutes certain aspects of PB formation, we are now in a position to dissect how PBs form and characterize their biophysical behavior. This will aid us not only in elucidating key components of PB formation, but also help us elucidate the function of PBs in regulating mRNA turnover.
 
@@ -153,60 +245,175 @@ The physical basis of LLPS has attracted a great deal of attention recently, at 
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Yeast: Saccharomyces cerevisiae)</td>
+      <td>W303</td>
+      <td>SGD:https://www.yeastgenome.org/strain/S000203491</td>
+      <td>KWY XYZ</td>
+      <td>MATa/MATα {leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15} [phi+]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E.Coli DH5α</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>18258012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E.Coli BL21 star (DE3)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C601003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent ()</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Please see Supplementary file 1, 2—S2A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse-anti-GFP</td>
+      <td>Roche</td>
+      <td>Cat# 11814460001, RRID: AB_390913</td>
+      <td>Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit-anti-Hxk1</td>
+      <td>US Biological</td>
+      <td>Cat# H2035-01, RRID: AB_2629457, Salem, MA</td>
+      <td>Western blot: 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRdye 680RD goat-anti-rabbit</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926–68071, RRID: AB_10956166</td>
+      <td>Western blot: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRdye 800 donkey-anti-mouse</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926–32212, RRID: AB_621847</td>
+      <td>Western blot: 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit-anti-Dhh1</td>
+      <td>in house</td>
+      <td>#100</td>
+      <td>Western blot: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Please see Supplementary file 2—table S2B</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>hippuristanol</td>
+      <td>kind gift from Junichi Tanaka, University of the Ryukyus</td>
+      <td>hippuristanol</td>
+      <td>10 µM in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cyclohexi</td>
+      <td>Sigma-Aldrich, CH</td>
+      <td>CAS Number 66-81-9</td>
+      <td>50 ug/ml in DMSO</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Diatrack</td>
+      <td>http://www.diatrack.org/</td>
+      <td>Diatrack</td>
+      <td>used for counting PB number and intensity</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>fiji/imagej</td>
+      <td>NIH</td>
+      <td>https://fiji.sc/</td>
+      <td>adjusting brightness, contrast and making final figures</td>
+    </tr>
+  </tbody>
+</table>
+
 The details regarding all the yeast strains used in this study are in Supplementary file 1. Supplementary file 2—table S2A contains all the plasmids used in this study. Table Supplementary S2B contains the mutants used in this study and Supplementary file 2—table S2C describes the entire DNA oligos used for this manuscript.
 
-## Construction of yeast strains and plasmids
+### Construction of yeast strains and plasmids
 
 S. cerevisiae strains used in this study are derivatives of W303 and are described in Supplementary file 1. ORF deletion strains and C-terminal epitope tagging of ORFs was done by PCR-based homologous recombination, as previously described (Longtine et al., 1998). Plasmids for this study are described in Supplementary file 2—table S2A. Mutations in Pat1 were generated by introducing the mutation in the primer used to amplify the respective Pat1 regions and stitched together with the selection marker from the plasmid (Supplementary file 2—table S2B). Mutations in Dhh1 and Not1 were generated as in Mugler et al. (2016). Primer sequences for strain construction are listed in table S2C.
 
-## Overexpression of Pat1 wild-type and mutants
+### Overexpression of Pat1 wild-type and mutants
 
 The samples were grown overnight in synthetic media containing 2% raffinose, diluted to OD600 = 0.05 or 0.1 the following day, and grown to mid-log phase (OD600 = 0.3–0.4). The culture was split into two and to one-half galactose was added to 2% final concentration and the corresponding protein induced for 2–3 hr. The cells in both raffinose and galactose were imaged using a wide-field fluorescence microscope.
 
-## PB induction and disassembly kinetics
+### PB induction and disassembly kinetics
 
 PBs were induced via glucose starvation stress. Samples were grown overnight in synthetic media containing 2% glucose, diluted to OD600 = 0.05 or 0.1 the following day, and grown to mid-log phase (OD600 = 0.3–0.8). Cells were harvested by centrifugation and washed in ¼ volume of fresh synthetic media ± 2% glucose, then harvested again and re-suspended in 1 vol of fresh synthetic media ± 2% glucose and grown 30 min at 30°C. Cells were then transferred onto Concanavalin A-treated MatTek dishes (MatTek Corp., Ashland, MA) and visualized at room temperature. For cycloheximide experiments, final concentration of 50 ug/mL (Sigma-Aldrich, CH) were used to examine PB disassembly kinetics. For PB induction and to determine the kinetics of PB assembly we used hippuristanol (a generous gift of Junichi Tanaka, University of the Ryukyus) at a final concentration of 10 µM.
 
-## Wide-field fluorescence microscopy
+### Wide-field fluorescence microscopy
 
 Cells were transferred onto Concanavalin A-treated MatTek dishes (MatTek Corp., Ashland, MA) and visualized at room temperature Microscopy was performed using an inverted epi-fluorescence microscope (Nikon Ti) equipped with a Spectra X LED light source and a Hamamatsu Flash 4.0 sCMOS camera using a 100x Plan-Apo objective NA 1.4 and the NIS Elements software. Representative images were processed using ImageJ software. Brightness and contrast were adjusted to the same values for images belonging to the same experiment and were chosen to cover the whole range of signal intensities. Image processing for PB analysis was performed using Diatrack 3.05 particle tracking software (Vallotton and Olivier, 2013) as described below.
 
-## Automated image analysis for PB quantification
+### Automated image analysis for PB quantification
 
 In order to quantify PB formation in live cells, we used an automated image analysis in a manner similar to Mugler et al. (2016). First, PBs were counted using Diatrack 3.05 particle tracking software using local intensity maxima detection, followed by particle selection by intensity thresholding and particle selection by contrast thresholding with a value of 5% (Vallotton et al., 2017). To speed up the analysis, we renamed all our images in a form that can be recognized as a time-lapse sequence by Diatrack, and placed them all in a single directory, such that they all will be analyzed using exactly the same image analysis parameters. Renaming and copying was done by a custom script (Source Code 1), which also performed cell segmentation using a method adapted from (Hadjidemetriou et al., 2008). Briefly, the method first detects all edges using a Laplacian edge detection step, and then traces normals to those edges in a systematic manner. These normals tend to meet at the cell centre where the high density of normals is detected, serving as seeds to reconstruct genuine cells. Our script thus counts cells and reports their number for each image - information which is output to an excel table. The results from Diatrack PB counting are imported from a text file into that table, and the number of PB is divided by the number of cells for each image.
 
-## Protein purification
+### Protein purification
 
 Dhh1 and Not1 were purified as described previously (Mugler et al., 2016). V5-Pat1-C, GST-Pat1-N and GST-Pat1-NC constructs as described in Supplementary file 2—table S2A were cloned into pETM-CN vectors. These expression vectors were transformed into chemically competent E. coli BL21 DE3 under the selection of ampicillin and chloramphenicol. Pre-cultures were grown in LB at 37°C over-night, and diluted 1:100 into rich medium the next morning. Cells were grown at 37°C to an OD600 of 0.6 and induced with 200 mM IPTG (final concentration). Cells were then grown overnight at 18°C, harvested and resuspended in 30 mL lysis buffer (500 mM (Pat1-C, Pat1-N) or 300 mM NaCl (Pat1-NC), 25 mM Tris-HCl pH 7.5, 10 mM imidazole, protease inhibitors, 10% glycerol) per cell pellet from 2 L of culture. After cell lysis by EmulsiFlex (Avestin Inc, Ottawa, CA), the 6xHis tagged proteins were affinity extracted with Ni2+ sepharose in small columns, dialyzed into storage buffer (MH200G (Pat1-C, Pat1-N): 200 mM NaCl, 25 mM Tris pH 7.5 (RT), 10% glycerol, 2 mM DTT), MH300G (Pat1-NC): same with 300 mM NaCl) with simultaneous protease cleavage of the His-tag and GST-tag (unless required for pull-down assays) and further purified by size exclusion with a Superdex 200 column on an AEKTA purifier (both GE Life Sciences, Marlborough, MA) in storage buffer. Protein expression levels, His eluates and gel filtration fractions were analyzed by SDS-PAGE. Clean Superdex elution fractions were pooled, concentrated using Millipore Amicon Centrifugation units and snap frozen as ~20 µl aliquots in siliconized tubes in liquid nitrogen.
 
-## ATPase assays
+### ATPase assays
 
 ATPase assays were performed according as described (Montpetit et al., 2011) with the following modifications: final concentration 2 µM Dhh1-mCherry was mixed with 0.5 µM Not1 and Pat1-mCherry (1 and 3 µM) as indicated and protein volumes equalized with storage buffer (MH200G). 2 µL 10x ATPase buffer (300 mM HEPES-KOH pH 7.5, 1 M NaCl, 20 mM MgCl2), 4 µL 10 mg/ml polyU (unless indicated otherwise), RNase inhibitors, 13.3 µL 60% glycerol, 2.7 µL 10 mg/mL BSA, were added to a final volume of 36 µL. Reactions were set up in triplicate in a 96-well NUNC plate. The assay was initiated by the addition of 40 µL of a master mix containing 1x ATPase buffer, 2.5 mM ATP (from a 100 mM stock in 0.5 M HEPES-KOH pH 7.5), 1 mM DTT, 6 mM phosphoenolpyruvate, 1.2 mM NADH (from a 12 mM stock in 25 mM HEPES-KOH pH 7.5) and 125–250 units/mL PK/LDH. NADH absorption was monitored with a CLARIOstar plate reader (BMG Labtech, Ortenberg, Germany) at 340 nm in 30 s intervals for 400 cycles.
 
-## In vitro liquid droplet reconstitution assay
+### In vitro liquid droplet reconstitution assay
 
 Reactions were pipetted in 384-well microscopy plates (Brooks 384 well ClearBottom Matriplate, low glass). Proteins were diluted to 50 µM (Dhh1) or 100 µM (Not1, Pat1) stocks with storage buffer and mixed as droplets at the side of the well; volumes were equalized to 5 µl with storage buffer. Next, a master mix of 12.5 µl 150 mM KCl buffer (150 mM KCl, 30 mM HEPES-KOH pH 7.4, 2 mM MgCl2), 2 µl ATP reconstitution mix (40 mM ATP, 40 mM MgCl2, 200 mM creatine phosphate, 70 U/mL creatine kinase), 2.5 µl 2 mg/ml polyU (in H2O) as an RNA analog, 1 µl 1M HEPES-KOH pH 6.4 buffer and 2 ml 10 mg/ml BSA were added and mixed by pipetting, the droplets still at the side of the well, since this later on produced more equal droplet distribution. First imaging was performed after 20 min incubation at room temperature; just prior to imaging, droplets were spun down at 100 g for 1 min. For subsequent analysis, plates were stored in the fridge. Pictures displayed were recorded after 1 hr incubation.
 
-## Stoichiometry analysis of Dhh1 and Pat1 in PBs in vivo
+### Stoichiometry analysis of Dhh1 and Pat1 in PBs in vivo
 
 In order to estimate the relative amount of Dhh1 to that of Pat1 in PBs in vivo, we labelled both proteins with eYGFP in two separate strains, and imaged them in exactly the same conditions after inducing carbon (glucose) starvation stress for indicated times (Figure 6A). Using exactly the same endogenous probe for both proteins allowed us to deduce ratios of abundances directly from ratios of intensities (no spectral corrections are necessary). We then measured the intensity of the 10 brightest PBs as a function of time and in both cases took the median intensity value as representative of the more visible PBs (at least 10 PBs were present in every image for both strains and at each time point). Finally, we divided the median value obtained for Dhh1 by that for Pat1 and plotted that ratio as a function of time post-stress.
 
-## Stoichiometry of Dhh1 and Pat1 in phase-separated in vitro droplets
+### Stoichiometry of Dhh1 and Pat1 in phase-separated in vitro droplets
 
 For the analysis of the in vitro phase transition of Dhh1 in the presence of Pat1, 2 µM mCherry-tagged Dhh1 and 4 µM GFP-tagged Pat1-NC were added to 0.1 mg/ml polyU and 5 mM ATP in 150 mM KCl, 30 mM HEPES-KOH, pH 7.4 and 2 mM MgCl2. After 1 hr incubation, the phase-separated droplets were imaged in both the mCherry and the GFP channel by confocal fluorescence microscopy (Leica TCS SP8) with a 63x NA 1.4 oil objective (Leica). The protein concentration was evaluated from the fluorescence intensity via a standard curve obtained by measuring a series of samples at different known concentrations for each fluorophore. The size distributions were obtained by analyzing the images obtained by fluorescence microscopy with an in-house code written in Matlab.
 
-## GST pull-down assays
+### GST pull-down assays
 
 25 µl of 100 µM recombinant purified GST Pat1-NC was bound to 30 µl GST-slurry (Sigma), and one aliquot of GST-beads was included without added Pat1-NC as negative control. Reactions were incubated for 30mins rotating at 4°C and washed 4-times with wash buffer (300 mM NaCl, 10 mM Tris pH 7.5, 0.05 % NP40). 4 µl 250 µM Dhh1 was added in 500 µl wash buffer and incubated rotating at 4°C for 1 hr. Reactions were washed 5-times, proteins eluted by boiling with 4x SDS loading buffer and separated on a 12% acrylamide gel and stained with Coomassie. For V5-pulldown assays, the bait (15 µl 100 µM Pat1-C construct) was bound to 15 ml V5-slurry (Sigma), the bait 3 µl 200 µM Dhh1-mCherry, and incubation/wash buffers as above with salt concentration as indicated in the blot. Final washes were only performed three times.
 
-## Native PAGE
+### Native PAGE
 
 Proteins were diluted to 20 µM. 0, 2 or 4 µl of protein solution was filled to 4 µl with storage buffer (200 mM NaCl, 25 mM Tris pH 7.5, 10% glycerol, 2 mM DTT). Proteins were mixed with a master mix containing per reaction 2 µl 10x ATPase buffer (300 mM HEPES-KOH pH 7.5, 1 M NaCl, 20 mM MgCl2), 0.3 µl Cy5-labeled in vitro transcribed RNA oligo (29nt, 1.1 µg/µl), 2 µl 2.5M NaCl, 13.7 µl H2O and 3 µl 60% glycerol. Reactions were incubated on ice for 20 min and separated on a precast Bis-Tris Native gradient Gel (Invitrogen) in 1x running buffer (50 mM Bis-Tris 50 mM Tricine pH 6.8) at 100V 4°C for about 2.5 hr.
 
-## Growth curve and spotting assays
+### Growth curve and spotting assays
 
 Overnight yeast cultures were grown in permissive conditions in SCD media. Growth curves were acquired using CLARIOstar automated plate reader (BMG Labtech, Ortenberg, Germany) at 30°C in 24-well plastic dishes (Thermo Fisher) from overnight pre-cultures diluted 1:125 in the specified synthetic liquid media. For spotting assays on plates the indicated strains were grown overnight at 25°C to saturation. Next day equal number of ODs for each strain was spotted (with a 1:10 series dilution) on YPD plates and incubated at 25°C, 30°C and 37°C for 2–3 overnights.
 
-## Western blotting
+### Western blotting
 
 For Western blot analysis, roughly 5 OD600 units of log growing cells were harvested and treated with 0.1M NaOH for 15 mins at room temperature. The samples were vortexed in between and finally centrifuged to remove the NaOH. SDS sample buffer was added and homogenates were boiled. Proteins were resolved by 4–12% Bolt Bis-Tris SDS PAGE (Thermo Fischer, Waltham, MA), then transferred to nitrocellulose membrane (GE Life Sciences, Marlborough, MA). Membranes were blocked in PBS with 5% non-fat milk, followed by incubation with primary antibody overnight. Membranes were washed four times with PBS with 0.1% Tween-20 (PBS-T) and incubated with secondary antibody for 45 min. Membranes were imaged and protein bands quantified using an infrared imaging system (Odyssey; LI-COR Biosciences, Lincoln, NE). The following primary antibodies were used for detection of tagged proteins at the indicated dilutions: rabbit-anti-Dhh1 (1:5000) as described in (Fischer and Weis, 2002), (Weis Lab ETH Zurich Cat# Weis_001, RRID:AB_2629458), mouse-anti-GFP (1:1000) (Roche Cat# 11814460001, RRID:AB_390913), and rabbit-anti-Hxk1 (1:3000) (US Biological Cat# H2035-01, RRID:AB_2629457, Salem, MA). IRdye 680RD goat-anti-rabbit (LI-COR Biosciences Cat# 926–68071, RRID:AB_10956166) and IRdye 800 donkey-anti-mouse (LI-COR Biosciences Cat# 926–32212, RRID:AB_621847) were used as secondary antibodies.

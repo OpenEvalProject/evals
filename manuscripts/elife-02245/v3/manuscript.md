@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.02245.001 Mineral malnutrition stemming from undiversified plant-based diets is a top global challenge. In C 3 plants (e.g., rice, wheat), elevated concentrations of atmospheric carbon dioxide (eCO 2 ) reduce protein and nitrogen concentrations, and can increase the total non-structural carbohydrates (TNC; mainly starch, sugars). However, contradictory findings have obscured the effect of eCO 2 on the ionome—the mineral and trace-element composition—of plants. Consequently, CO 2 -induced shifts in plant quality have been ignored in the estimation of the impact of global change on humans. This study shows that eCO 2 reduces the overall mineral concentrations (−8%, 95% confidence interval: −9.1 to −6.9, p<0.00001) and increases TNC:minerals > carbon:minerals in C 3 plants. The meta-analysis of 7761 observations, including 2264 observations at state of the art FACE centers, covers 130 species/cultivars. The attained statistical power reveals that the shift is systemic and global. Its potential to exacerbate the prevalence of ‘hidden hunger’ and obesity is discussed. DOI: http://dx.doi.org/10.7554/eLife.02245.001
+Mineral malnutrition stemming from undiversified plant-based diets is a top global challenge. In C3 plants (e.g., rice, wheat), elevated concentrations of atmospheric carbon dioxide (eCO2) reduce protein and nitrogen concentrations, and can increase the total non-structural carbohydrates (TNC; mainly starch, sugars). However, contradictory findings have obscured the effect of eCO2 on the ionome—the mineral and trace-element composition—of plants. Consequently, CO2-induced shifts in plant quality have been ignored in the estimation of the impact of global change on humans. This study shows that eCO2 reduces the overall mineral concentrations (−8%, 95% confidence interval: −9.1 to −6.9, p<0.00001) and increases TNC:minerals > carbon:minerals in C3 plants. The meta-analysis of 7761 observations, including 2264 observations at state of the art FACE centers, covers 130 species/cultivars. The attained statistical power reveals that the shift is systemic and global. Its potential to exacerbate the prevalence of ‘hidden hunger’ and obesity is discussed.
 
 ## Introduction
 
@@ -20,7 +20,7 @@ Mankind's ultimate source of carbohydrates is atmospheric carbon dioxide (CO2) c
 
 Elevated CO2 effects on plant quantity (productivity and total biomass) have been extensively studied and show higher agricultural yields for crops, including wheat, rice, barley, and potato. But eCO2 effects on plant quality, and possible cascading effects on human nutrition, have been largely ignored in the estimation of the impact of eCO2 on humans. Notably, IPCC (2007, 2013) and AAAC Climate Science Panel (2014) include direct CO2 effects (e.g., ocean acidification) in their climate change assessments but do not mention any CO2 effects on crop or wild plant quality. However, it is unwarranted to assume that plants will balance the increased carbohydrate synthesis with other adjustments to their physiology to maintain the nutritional quality for their consumers in a state of unperturbed homeostasis. The stoichiometry—the relative ratios of chemical elements—in plants is plastic and, to a considerable degree, reflects their environment (Sterner and Elser, 2002). However, detecting CO2-induced shifts in plant quality is challenging for several reasons. First, plant quality involves multiple nutritional currencies, for example macronutrients (carbohydrates, protein, and fat) and micronutrients (minerals, vitamins and phytonutrients). Assessing relative changes within and among multiple currencies requires significantly more effort and funding than measuring only plant quantity (e.g., yield). Second, plant quality, including the plant ionome—all the minerals and trace-elements found in a plant (Lahner et al., 2003; Salt et al., 2008)—is inherently variable; and measurement imprecisions further amplify the variability. For example, Stefan et al. (1997) report the accuracy test for 39 facilities that analyzed samples of the same plant tissues: the inter-laboratory variance was 6.5% for N, but twice as large for phosphorus (P) and calcium (Ca), and reached 130% for sodium (Na). Therefore, CO2-induced changes in the plant ionome (the signal) can be easily lost amid highly variable data (the noise), especially when such data are limited and sample sizes are small. However, it is important to bear in mind that a low signal-to-noise ratio does not imply that the signal is practically insignificant, especially if it is global and sustained—a point revisited in the ‘Discussion’.
 
-## Elusive CO2 effect on the plant ionome: contradictory findings
+### Elusive CO2 effect on the plant ionome: contradictory findings
 
 The first empirical evidence of lower mineral content in plants exposed to eCO2 appeared at least over a quarter century ago (e.g., Porter and Grodzinski, 1984; Peet et al., 1986; O’Neill et al., 1987). Physiological mechanisms responsible for the overall decline of plant mineral content—with expected changes being non-uniform across minerals—have been proposed: the increased carbohydrate production combined with other eCO2 effects such as reduced transpiration (Loladze, 2002; McGrath and Lobell, 2013). However, most of the experimental evidence showing CO2-induced mineral declines came from artificial facilities, mainly closed chambers and glasshouses, and many results were statistically non-significant. This led some research groups to challenge altogether the notion of lower mineral content in plants exposed to eCO2 in field conditions. Such conditions are most accurately represented in Free-Air Carbon dioxide Enrichment (FACE) centers, which have been established in at least 11 countries.
 
@@ -30,11 +30,11 @@ The contradictory results coming from these studies on rice seem perplexing, esp
 
 The obscure nature of the effect of eCO2 on minerals becomes particularly apparent in the largest to date meta-analysis on the issue by Duval et al. (2011), who fragmented data from 56 eCO2 studies into 67 cases. In 47 of the cases, the effect of eCO2 on minerals was statistically non-significant, that is the 95% Confidence Interval (CI) for the effect size overlapped with 0. The remaining 20 cases were statistically significant but showed no pattern: for example, Fe increased in grasses but decreased in trees, Zn increased in roots but decreased in stems, while in grains only sulfur (S) decreased. Duval et al. (2011) concluded: “A major finding of this synthesis is the lack of effect of CO2 on crop grains nutrient concentration”. This would imply laying to rest the hypothesis that eCO2 consistently alters the plant ionome and would render mitigation efforts to combat declining crop mineral concentrations in the rising CO2 world unnecessary. However, a closer examination of the results of Duval et al. (2011) reveals that every statistically significant increase in mineral concentrations was obtained by bootstrapping a sample of size 2, 4 or 5—a recipe for generating invalid 95% CIs. Ioannidis (2005) showed that false research findings, stemming from small sample sizes and associated low statistical power, are a persistent problem in biomedical sciences.
 
-## ‘Power failure’ and the plant ionome
+### ‘Power failure’ and the plant ionome
 
 Calling the problem as ‘power failure’, Button et al. (2013) emphasized that the probability of a research finding to reflect a true effect drops drastically if the statistical power is reduced from 0.80 (considered as appropriate) to low levels, for example <0.30. Since the power of a statistical test drops non-linearly with the effect size, a sample size that is sufficient for detecting a 15% effect, for example a decline in N content, can be inadequate for detecting a 5% effect, for example a decline in a mineral content. Considering that the standard deviation of mineral concentrations in a plant tissue can reach 25% (Duquesnay et al., 2000; Lahner et al., 2003), the 5% effect size standardized as Cohen's d is d = 5/25 = 0.2. A t test applied for d = 0.2 to a sample size of 3–5—a typical size used in eCO2 studies—yields the power of 0.06–0.10 (Faul et al., 2007). (Unfortunately, MetaWin (Rosenberg et al., 2000), a statistical package routinely used in meta-analytic and other CO2 studies in ecology, provides neither a priori nor post-hoc power estimates.) Such a small power not only raises the probability of obtaining a false negative to 90–94% but also increases the likelihood that a statistically significant result does not reflect a true effect (Button et al., 2013).
 
-## Answering questions with adequate power
+### Answering questions with adequate power
 
 As of this writing, researchers on four continents have generated data sufficient for answering with an adequate statistical power, the following questions:Does eCO2 shift the plant ionome? If yes, what are the direction and magnitude of shifts for individual chemical elements? How does the effect of eCO2 on N compares to its effect on minerals?Do FACE studies differ principally from non-FACE studies in their effect on the plant ionome?Do the plant ionomes in temperate and subtropical/tropical regions differ in their response to eCO2?Do the ionomes of photosynthetic tissues and edible parts differ in their response to eCO2? How does eCO2 affect the ionomes of various plant groups (woody/herbaceous, wild/crops, C3/C4) and grains of the world's top C3 cereals—wheat, rice, and barley?
 
@@ -42,67 +42,67 @@ As of this writing, researchers on four continents have generated data sufficien
 
 For brevity, hereafter ‘minerals’ refer to all elements except C, hydrogen (H), oxygen (O), and N. All results are for C3 plants except when noted otherwise.
 
-## Power analysis
+### Power analysis
 
-Plotting the effect sizes (with 95% CIs) for the 25 minerals against their respective statistical power reveals a clear pattern (
+Plotting the effect sizes (with 95% CIs) for the 25 minerals against their respective statistical power reveals a clear pattern (Figure 1). In the very low power (<0.20) region, the noise completely hides the CO2-induced shift of the plant ionome. In the low power region (<0.40), the shift still remains obscure. As the statistical power increases, so does the likelihood that a statistically significant result reflects true effect and, consequently, the direction and the magnitude of the CO2 effect on minerals become increasingly visible in the higher power regions of the plot.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig1-v3.jpg)
 
-**Figure 1.:** 2 on the plant ionome.The effect of elevated atmospheric CO2 concentrations (eCO2) on the mean concentration of minerals in plants plotted (with the respective 95% confidence intervals [CI]) against the power of statistical analysis. The figure reflects data on 25 minerals in edible and foliar tissues of 125 C3 plant species and cultivars. The true CO2 effect is hidden in the very low and the low power regions. As the statistical power increases, the true effect becomes progressively clearer: the systemic shift of the plant ionome.DOI: http://dx.doi.org/10.7554/eLife.02245.00310.7554/eLife.02245.015Figure 1—source data 1.Figures 1–8.DOI: http://dx.doi.org/10.7554/eLife.02245.015
+**Figure 1.:** The effect of elevated atmospheric CO2 concentrations (eCO2) on the mean concentration of minerals in plants plotted (with the respective 95% confidence intervals [CI]) against the power of statistical analysis. The figure reflects data on 25 minerals in edible and foliar tissues of 125 C3 plant species and cultivars. The true CO2 effect is hidden in the very low and the low power regions. As the statistical power increases, the true effect becomes progressively clearer: the systemic shift of the plant ionome.
 
 To increase the likelihood of reporting true effects, only results with the statistical power >0.40 are reported in this section. However, Figure 1–source data 1 lists all the results together with their p-values irrespective of the statistical power (e.g., results for chromium (Cr) or the bean ionome are not shown here due to low power, but are listed in Figure 1–source data 1).
 
-## CO2 effect on individual elements
+### CO2 effect on individual elements
 
-Across all the data, eCO
+Across all the data, eCO2 reduced concentrations of P, potassium (K), Ca, S, magnesium (Mg), Fe, Zn, and copper (Cu) by 6.5–10% (p<0.0001) as shown on Figure 2. Across all the 25 minerals, the mean change was (−8%, −9.1 to −6.9, p<0.00001). Only manganese (Mn) showed no significant change. It is not clear whether the oxygen-evolving complex (OEC) demands for Mn separate this mineral from the pattern of declines exhibited by other minerals. Among all the measured elements, only C increased (6%, 2.6 to 10.4, p<0.01). The sharp difference between the responses of C and minerals to eCO2 is expected if a higher carbohydrate content drives the change in the plant ionome: for most plant tissues, the dilution by carbohydrates lowers the content of minerals while having little effect on C (Loladze, 2002). (This also suggests that the increase in C concentrations found here could be a result of a higher content of lipids or lignin—the two sizable plant compounds that are very C-rich [∼60–75% C].)
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig2-v3.jpg)
 
-**Figure 2.:** 2 on individual chemical elements in plants.Change (%) in the mean concentration of chemical elements in plants grown in eCO2 relative to those grown at ambient levels. Unless noted otherwise, all results in this and subsequent figures are for C3 plants. Average ambient and elevated CO2 levels across all the studies are 368 ppm and 689 ppm respectively. The results reflect the plant data (foliar and edible tissues, FACE and non-FACE studies) from four continents. Error bars represent the standard error of the mean (calculated using the number of mean observations for each element). The number of mean and total (with all the replicates) observations for each element is as follows: C(35/169), N(140/696), P(152/836), K(128/605), Ca(139/739), S(67/373), Mg(123/650), Fe(125/639), Zn(123/702), Cu(124/612), and Mn(101/493). An element is shown individually if the statistical power for a 5% effect size for the element is >0.40. The ‘ionome’ bar reflects all the data on 25 minerals (all the elements in the dataset except of C and N). All the data are available at Dryad depository and at GitHub. Copies of all the original sources for the data are available upon request.DOI: http://dx.doi.org/10.7554/eLife.02245.004
+**Figure 2.:** Change (%) in the mean concentration of chemical elements in plants grown in eCO2 relative to those grown at ambient levels. Unless noted otherwise, all results in this and subsequent figures are for C3 plants. Average ambient and elevated CO2 levels across all the studies are 368 ppm and 689 ppm respectively. The results reflect the plant data (foliar and edible tissues, FACE and non-FACE studies) from four continents. Error bars represent the standard error of the mean (calculated using the number of mean observations for each element). The number of mean and total (with all the replicates) observations for each element is as follows: C(35/169), N(140/696), P(152/836), K(128/605), Ca(139/739), S(67/373), Mg(123/650), Fe(125/639), Zn(123/702), Cu(124/612), and Mn(101/493). An element is shown individually if the statistical power for a 5% effect size for the element is >0.40. The ‘ionome’ bar reflects all the data on 25 minerals (all the elements in the dataset except of C and N). All the data are available at Dryad depository and at GitHub. Copies of all the original sources for the data are available upon request.
 
-The patterns of change within edible and foliar tissues are similar: N, P, Ca, Mg, Zn, and Cu declined significantly in both tissues (
+The patterns of change within edible and foliar tissues are similar: N, P, Ca, Mg, Zn, and Cu declined significantly in both tissues (Figures 3, 4). Aside from Mn, only K showed no significant decline in the edible tissues (on Figure 1, it is visible as one of the only two black 95% CI in the ‘High Power’ region). In the foliar tissues, Mg declined the most (−12.3%, −16 to −8.7), which is congruent with the hypothesis of McGrath and Lobell (2013) that Mg should exhibit a larger decline in photosynthetic tissues because ‘chlorophyll requires a large fraction of total plant Mg, and chlorophyll concentration is reduced by growth in elevated CO2’. However, the 95% CIs for Mg and for most other minerals overlap. A richer dataset would shed more light on the issue of Mg in photosynthetic tissues.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig3-v3.jpg)
 
-**Figure 3.:** 2 on foliar tissues.Change (%) in the mean concentration of chemical elements in foliar tissues grown in eCO2 relative to those grown at ambient levels. Average ambient and eCO2 levels across all the foliar studies are 364 ppm and 699 ppm respectively. Error bars represent 95% CI. For each element, the number of independent mean observations, m, is shown with the respective statistical power. For each plant group, m equals the sum of mean observations over all the minerals (not including C and N) for that group. Elements and plant groups for which the statistical power is >0.40 (for a 5% effect size) are shown.DOI: http://dx.doi.org/10.7554/eLife.02245.005
+**Figure 3.:** Change (%) in the mean concentration of chemical elements in foliar tissues grown in eCO2 relative to those grown at ambient levels. Average ambient and eCO2 levels across all the foliar studies are 364 ppm and 699 ppm respectively. Error bars represent 95% CI. For each element, the number of independent mean observations, m, is shown with the respective statistical power. For each plant group, m equals the sum of mean observations over all the minerals (not including C and N) for that group. Elements and plant groups for which the statistical power is >0.40 (for a 5% effect size) are shown.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig4-v3.jpg)
 
-**Figure 4.:** 2 on edible tissues.Change (%) in the mean concentration of chemical elements in edible parts of crops grown in eCO2 relative to those grown at ambient levels. Average ambient and elevated CO2 levels across all the crop edible studies are 373 ppm and 674 ppm respectively. Other details are in the legends for Figures 2 and 3.DOI: http://dx.doi.org/10.7554/eLife.02245.006
+**Figure 4.:** Change (%) in the mean concentration of chemical elements in edible parts of crops grown in eCO2 relative to those grown at ambient levels. Average ambient and elevated CO2 levels across all the crop edible studies are 373 ppm and 674 ppm respectively. Other details are in the legends for Figures 2 and 3.
 
-As expected, among all elements N declined the most (−15%, −17.8 to −13.1, p<0.00001) (
+As expected, among all elements N declined the most (−15%, −17.8 to −13.1, p<0.00001) (Figure 2), matching very closely previous findings (Figures 3–6): the 17–19% decline in leaves found by Cotrufo et al. (1998) and the 14% decline in seeds found by Jablonski et al. (2002). Since the contents of N and protein correlate strongly in plant tissues, the lower N in edible tissues (Figure 4) corroborates the protein declines in crops found by Taub et al. (2008).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig5-v3.jpg)
 
-**Figure 5.:** 2 in artificial enclosures.Change (%) in the mean concentration of chemical elements of plants grown in chambers, greenhouses, and other artificial enclosures under eCO2 relative to those grown at ambient levels. Average ambient and eCO2 levels across all the non-FACE studies are 365 ppm and 732 ppm respectively. Other details are in the legends for Figures 2 and 3.DOI: http://dx.doi.org/10.7554/eLife.02245.007
+**Figure 5.:** Change (%) in the mean concentration of chemical elements of plants grown in chambers, greenhouses, and other artificial enclosures under eCO2 relative to those grown at ambient levels. Average ambient and eCO2 levels across all the non-FACE studies are 365 ppm and 732 ppm respectively. Other details are in the legends for Figures 2 and 3.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig6-v3.jpg)
 
-**Figure 6.:** 2 at FACE centers.Change (%) in the mean concentration of chemical elements of plants grown in Free-Air Carbon dioxide Enrichments (FACE) centers relative to those grown at ambient levels. Average ambient and eCO2 levels across all the FACE studies are 376 ppm and 560 ppm respectively. Other details are in the legends for Figures 2 and 3.DOI: http://dx.doi.org/10.7554/eLife.02245.008
+**Figure 6.:** Change (%) in the mean concentration of chemical elements of plants grown in Free-Air Carbon dioxide Enrichments (FACE) centers relative to those grown at ambient levels. Average ambient and eCO2 levels across all the FACE studies are 376 ppm and 560 ppm respectively. Other details are in the legends for Figures 2 and 3.
 
-## FACE vs non-FACE studies
+### FACE vs non-FACE studies
 
 With respect to the types of experiments, the CO2 effect on the plant ionome is surprisingly robust: in both the FACE and the non-FACE studies eCO2 significantly reduced N, P, K, Ca, S, Mg, and Zn (Figures 5, 6). The high cost of CO2 required for running free-air experiments led to a much lower average level of eCO2 in the FACE studies (560 ppm) cf. 732 ppm in the non-FACE studies. It is plausible that the lower levels of CO2 in the FACE studies contributed to a smaller overall mineral decline (−6.1%, −7.8 to −4.4) cf. (−8.7%, −10.1 to −7.4) for the non-FACE studies. In both the FACE and the non-FACE studies, the overall mineral concentrations declined significantly in herbaceous plants and crops, foliar and edible tissues, including wheat and rice (Figures 5, 6).
 
-## Geographical analysis
+### Geographical analysis
 
-The CO
+The CO2 effect on the plant ionome appears to be pervasive throughout latitudes (Figures 7, 8). With the exception of three small centers (in Bangladesh, Japan, and the UK), the mean mineral concentrations declined in every FACE and open top chamber (OTC) center on four continents. The mineral decline in the tropics and subtropics (−7.2%, −10.4 to −4.0, p<0.0001) is comparable to the decline in the temperate region (−6.4%, −7.9 to −5.0, p<0.00001). A finer regional fragmentation currently is not possible due to lack of data for Africa, South America, Russia, and Canada. For many existing centers the data are limited and yield a low statistical power.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig7-v3.jpg)
 
-**Figure 7.:** 2 at various locations and latitudes.Locations of the FACE and Open Top Chamber (OTC) centers, which report concentrations of minerals in foliar or edible tissues, are shown as white dots inside colored circles. The area of a circle is proportional to the total number of observations (counting replicates) generated by the center. If the mean change is negative (decline in mineral content), the respective circle is blue; otherwise, it is red. The figure reflects data on 21 minerals in 57 plant species and cultivars. The shaded region (between 35 N and S latitudes) represents tropics and subtropics.DOI: http://dx.doi.org/10.7554/eLife.02245.009
+**Figure 7.:** Locations of the FACE and Open Top Chamber (OTC) centers, which report concentrations of minerals in foliar or edible tissues, are shown as white dots inside colored circles. The area of a circle is proportional to the total number of observations (counting replicates) generated by the center. If the mean change is negative (decline in mineral content), the respective circle is blue; otherwise, it is red. The figure reflects data on 21 minerals in 57 plant species and cultivars. The shaded region (between 35 N and S latitudes) represents tropics and subtropics.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig8-v3.jpg)
 
-**Figure 8.:** 2 effect.Change (%) in the mean concentration of minerals in plants grown in eCO2 relative to those grown at ambient levels. All the results in the figure reflect the combined data for the foliar and the edible tissues. The number of total mean observations (m) for all the measured minerals across all the studies for each crop/plant group, experiment type, country, or region is shown with the respective statistical power. Country specific and regional results reflect all the FACE and Open Top Chamber (OTC) studies carried in any given country/region. The number of total observations (with replicates) for all the minerals (not counting C and N) for each country is as follows: Australia (926), China (193), Finland (144), Germany (908), and USA (1156). Other details are in the legends for Figures 2 and 3.DOI: http://dx.doi.org/10.7554/eLife.02245.010
+**Figure 8.:** Change (%) in the mean concentration of minerals in plants grown in eCO2 relative to those grown at ambient levels. All the results in the figure reflect the combined data for the foliar and the edible tissues. The number of total mean observations (m) for all the measured minerals across all the studies for each crop/plant group, experiment type, country, or region is shown with the respective statistical power. Country specific and regional results reflect all the FACE and Open Top Chamber (OTC) studies carried in any given country/region. The number of total observations (with replicates) for all the minerals (not counting C and N) for each country is as follows: Australia (926), China (193), Finland (144), Germany (908), and USA (1156). Other details are in the legends for Figures 2 and 3.
 
-Germany leads the world in the FACE and OTC data generation with the largest number of
+Germany leads the world in the FACE and OTC data generation with the largest number of mean observations of mineral concentrations (285), followed by the USA (218) (Figure 8). Though Australia generated only 30 mean observations, it stands out in the exceptional precision of some of its studies: the wheat experiments of Fernando et al. (2014) employed an unprecedented for FACE studies 48 replicates (for this reason, the study is easily identifiable on Figure 9).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/02245/elife-02245-fig9-v3.jpg)
 
-**Figure 9.:** A funnel plot of the effect size (the natural log of the response ratio) plotted against the number of replicates/sample sizes (n) for each study and each mineral in the dataset for C3 plants. The plot provides a simple visual evaluation of the distribution of effect sizes. The blue line represents the mean effect size of eCO2 on mineral concentrations: the decline of 8.39% (yielding the decline of 8.04% when back transferred from the log-form). The symmetrical funnel shape of the plot around the mean effect size indicates the publication bias in the dataset is insignificant (Egger et al., 1997).DOI: http://dx.doi.org/10.7554/eLife.02245.011
+**Figure 9.:** A funnel plot of the effect size (the natural log of the response ratio) plotted against the number of replicates/sample sizes (n) for each study and each mineral in the dataset for C3 plants. The plot provides a simple visual evaluation of the distribution of effect sizes. The blue line represents the mean effect size of eCO2 on mineral concentrations: the decline of 8.39% (yielding the decline of 8.04% when back transferred from the log-form). The symmetrical funnel shape of the plot around the mean effect size indicates the publication bias in the dataset is insignificant (Egger et al., 1997).
 
-## CO2 effect on various plant groups and tissues
+### CO2 effect on various plant groups and tissues
 
 Since eCO2 does not stimulate carbohydrate production in C4 plants to a degree that it does in C3 plants, one would expect a milder CO2 effect on minerals for C4 plants. Indeed, no statistically significant effect was found on the ionome of C4 plants (Figure 8). Note, however, that the very limited data on this plant group are insufficient for deducing the absence of the effect; rather, it is likely that the effect size <5% for C4 plants.
 
@@ -112,35 +112,186 @@ The CO2 effect on the C3 plant ionome shows its systemic character through the a
 
 The analysis of all the data shows that eCO2 shifts the plant ionome toward lower mineral content; the mean change across all the 25 measured minerals is (−8%, −9.1 to −6.9) (Figure 2). This shift, however, is hidden from low-powered statistical tests (Figure 1). Attaining adequate meta-analytic power reveals that the shift is:Empirically robust—evident in both artificial (chambers, greenhouses) and field (FACE) conditions (Figures 5 and 6).Geographically pervasive—found in temperate and subtropical/tropical regions (Figures 7 and 8).Systemic—affecting herbaceous and woody plants, crops, and wild plants, photosynthetic and edible tissues, including wheat, rice, and barley grains (Figures 3, 4 and 8).
 
-## Elevated CO2 alters plant C:N:P:S stoichiometry
+### Elevated CO2 alters plant C:N:P:S stoichiometry
 
 Not only does eCO2 reduce the plant mineral content, but it also alters plant stoichiometry. Specifically, the effect of eCO2 on N is nearly twice as large as its mean effect on minerals. The differential effect of eCO2 on N (15%), and P (9%) and S (9%) translates into a ∼7% reduction in the plant N:P and N:S. In contrast to the lower N and mineral content, eCO2 increased C content by 6% (Figures 2, 3 and 5). It follows then that eCO2 increases C:P and C:S by 16%, and C:N by 25% confirming the previous findings of 19–27% higher C:N in plants grown in eCO2 (Poorter et al., 1997; Stiling and Cornelissen, 2007; Robinson et al., 2012).
 
-## Data scarcity
+### Data scarcity
 
 The current dataset (available at Dryad depository) suffices to show the overall shift in the plant ionome. However, it would require much richer datasets to quantify differences among the shifts of various minerals and to assess shifts in the ionomes of individual species. Unfortunately, funding hurdles for analyzing fresh and archived samples harvested at FACE centers have significantly delayed progress in this area. Only two CO2 studies report selenium (Se) content (Högy et al., 2009, 2013), and none report data on tin (Sn), lithium (Li), and most other trace-elements. For many of the world's popular crops, pertinent data are non-existent or very limited, including (in the descending order of calories provided to the world's population, FAO, 2013): maize (the top C4 crop), soybeans (including oil), cassava, millet, beans, sweet potatoes, bananas, nuts, apples, yams, plantains, peas, grapes, rye, and oats.
 
 The current data scarcity, however, should not detract our attention from what is likely to be the overarching physiological driver behind the shift in the plant ionome—the CO2-induced increase in carbohydrate production and the resulting dilution by carbohydrates. Let us take a closer look at this nutritionally important issue.
 
-## TNC:protein and TNC:minerals respond strongly to elevated CO2
+### TNC:protein and TNC:minerals respond strongly to elevated CO2
 
 Carbohydrates in plants can be divided into two types: total structural carbohydrates (TSC; e.g., cellulose or fiber) that human body cannot digest, and total non-structural carbohydrates (TNC), most of which—including starch and several sugars (fructose, glucose, sucrose, and maltose)—is readily digestible and absorbed in the human gut. Hence, for humans, TNC carries the most of caloric and metabolic load of carbohydrates. Out of the two types of carbohydrates, eCO2 affects stronger the latter, boosting TNC concentration by 10–45% (Stiling and Cornelissen, 2007; Robinson et al., 2012). Furthermore, eCO2 tends to lower protein in plant tissues (Taub et al., 2008). Hence, we can reason that eCO2 should exacerbate the inverse relationship found between TNC and protein (Poorter and Villar, 1997). Considering that TNC and protein are two out of the three primary macronutrients (with fats/lipids being the third), it becomes imperative to quantify changes in TNC:protein, when estimating the impact of altered plant quality on human nutrition in the rising CO2 world.
 
-Regrettably, TNC:protein is rarely reported by CO2 studies; instead C:N is used as a yardstick for accessing changes in the plant quality. However, C:N poorly correlates with TNC:protein because protein is more C-rich than carbohydrates (C content in protein is 52–55% cf. 40–45% in carbohydrates). Thus, a higher carbohydrate:protein results in a lower C content. This means that CO2-induced changes in nutritionally and metabolically important ratios—TNC:protein and TNC:minerals—can substantially exceed the respective changes in C:N. We can calculate changes in TNC:protein using reported changes in TNC and protein (see ‘Formula for calculating percentage changes in TNC:protein and TNC:minerals’ in ‘Materials and methods’). Table 1 compares CO2-induced changes in C:N with respective changes in TNC:protein. It shows that eCO2 can elevate TNC:protein up to fivefold higher than it does C:N.10.7554/eLife.02245.012Table 1.Comparing the effects of CO2 on two plant quality indicators.DOI: http://dx.doi.org/10.7554/eLife.02245.012Study/speciesC:N (%)TNC:protein (%)ReferenceArabidopsis thaliana25125Teng et al. (2006)Bromus erectus626Roumet et al. (1999)*Dactylis glomerata1753Roumet et al. (1999)*wheat grain (low N)−1047Porteaus et al. (2009)wheat grain (high N)−187Porteaus et al. (2009)wheat grain96Högy et al. (2009)27 C3 species2890Poorter et al. (1997)meta-analysis2554Robinson et al. (2012)meta-analysis2739Stiling and Cornelissen (2007)CO2-induced changes (%) in C:N (a quality indicator often used in CO2 studies) and in TNC:protein (a rarely used but nutritionally important indicator) for wheat grains and for foliar tissues of various plants. The results shows that in the same plant tissue, eCO2 can increase TNC:protein up to several-fold > C:N. Significant CO2-induced shifts in the ratio of major macronutrients are probable. Hence, it is important for CO2 studies to start accessing and reporting changes in TNC:protein.*in lieu of protein, N content is used.
+Regrettably, TNC:protein is rarely reported by CO2 studies; instead C:N is used as a yardstick for accessing changes in the plant quality. However, C:N poorly correlates with TNC:protein because protein is more C-rich than carbohydrates (C content in protein is 52–55% cf. 40–45% in carbohydrates). Thus, a higher carbohydrate:protein results in a lower C content. This means that CO2-induced changes in nutritionally and metabolically important ratios—TNC:protein and TNC:minerals—can substantially exceed the respective changes in C:N. We can calculate changes in TNC:protein using reported changes in TNC and protein (see ‘Formula for calculating percentage changes in TNC:protein and TNC:minerals’ in ‘Materials and methods’). Table 1 compares CO2-induced changes in C:N with respective changes in TNC:protein. It shows that eCO2 can elevate TNC:protein up to fivefold higher than it does C:N.
+
+**Table 1.**
+ Comparing the effects of CO2 on two plant quality indicators.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study/species</th>
+      <th>C:N (%)</th>
+      <th>TNC:protein (%)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arabidopsis thaliana</td>
+      <td>25</td>
+      <td>125</td>
+      <td>Teng et al. (2006)</td>
+    </tr>
+    <tr>
+      <td>Bromus erectus</td>
+      <td>6</td>
+      <td>26</td>
+      <td>Roumet et al. (1999)*</td>
+    </tr>
+    <tr>
+      <td>Dactylis glomerata</td>
+      <td>17</td>
+      <td>53</td>
+      <td>Roumet et al. (1999)*</td>
+    </tr>
+    <tr>
+      <td>wheat grain (low N)</td>
+      <td>−10</td>
+      <td>47</td>
+      <td>Porteaus et al. (2009)</td>
+    </tr>
+    <tr>
+      <td>wheat grain (high N)</td>
+      <td>−18</td>
+      <td>7</td>
+      <td>Porteaus et al. (2009)</td>
+    </tr>
+    <tr>
+      <td>wheat grain</td>
+      <td>9</td>
+      <td>6</td>
+      <td>Högy et al. (2009)</td>
+    </tr>
+    <tr>
+      <td>27 C3 species</td>
+      <td>28</td>
+      <td>90</td>
+      <td>Poorter et al. (1997)</td>
+    </tr>
+    <tr>
+      <td>meta-analysis</td>
+      <td>25</td>
+      <td>54</td>
+      <td>Robinson et al. (2012)</td>
+    </tr>
+    <tr>
+      <td>meta-analysis</td>
+      <td>27</td>
+      <td>39</td>
+      <td>Stiling and Cornelissen (2007)</td>
+    </tr>
+  </tbody>
+</table>
+
+_CO2-induced changes (%) in C:N (a quality indicator often used in CO2 studies) and in TNC:protein (a rarely used but nutritionally important indicator) for wheat grains and for foliar tissues of various plants. The results shows that in the same plant tissue, eCO2 can increase TNC:protein up to several-fold > C:N. Significant CO2-induced shifts in the ratio of major macronutrients are probable. Hence, it is important for CO2 studies to start accessing and reporting changes in TNC:protein.*in lieu of protein, N content is used._
 
 How shifts in TNC:protein affect human nutrition is still unknown. New evidence, however, challenges “the notion that a calorie is a calorie from a metabolic perspective” by showing that changes in dietary carbohydrate:protein:fat ratios affect metabolism and weight gain in humans (Ebbeling et al., 2012). The new evidence supports an emerging view that while obesity is quantified as an imbalance between energy inputs and expenditures (Hall et al., 2011), it could also be a form of malnutrition (Wells, 2013), where increased carbohydrate:protein (Simpson and Raubenheimer, 2005) and excessive carbohydrate consumption (Taubes, 2013) could be possible culprits.
 
-## Absolute CO2 effect on TNC. Spoonful of sugars for everyone?
+### Absolute CO2 effect on TNC. Spoonful of sugars for everyone?
 
 The baseline TNC content in plant tissues varies widely. In grains and tubers, it is very high, 50–85% of dry mass (DM). Therefore, in these tissues a percentage increase in TNC is arithmetically limited (e.g., a 60% increase is impossible). However, even a modest percentage increase in TNC-rich tissues can be nutritionally meaningful in absolute terms. For example, the FACE study of Porteaus et al. (2009) reports a 7–8% increase in starch concentrations in wheat grains, which translates to ∼4 g of additional starch per 100 g DM. In contrast to grains and tubers, the baseline TNC level in photosynthetic tissues is small (usually <25%), which makes large TNC increases possible. For example, Teng et al. (2006) reports that eCO2 increased TNC by 76% in leaves of Arabidopsis thaliana. What is interesting here is that in absolute terms (per 100 g DM) the ∼5 g TNC increase in Arabidopsis thaliana is comparable to the ∼4 g TNC increase in wheat grains.
 
-More generally, CO2 studies show that—irrespective of the baseline TNC content—eCO2 tends to boost TNC by a few grams (1–8 g) per 100 g DM of plant tissue (Poorter et al., 1997; Keutgen and Chen, 2001; Katny et al., 2005; Erbs et al., 2010; Azam et al., 2013). Note that such an infusion of carbohydrates into plant tissues, all else being equal, dilutes the content of other nutrients by ∼1–7.4%. Let us compare the dilution with its pragmatic and easily graspable analog—adding a spoonful of sugar-and-starch mixture. Table 2 shows that the CO2 effect on TNC:protein and TNC:minerals is stoichiometrically similar to the effect of adding a spoonful of carbohydrates to every 100 g DM of plant tissue.10.7554/eLife.02245.013Table 2.Comparing the effect of CO2 to the effect of adding ‘a spoonful of sugars.’DOI: http://dx.doi.org/10.7554/eLife.02245.013Plant quality indicatorEffect of adding 5g of TNC (%)Effect of elevated CO2 (%)Grains and tubers:TNC2.61 to 15TNC:protein76 to 47TNC:minerals76 to 28protein−4.8−14 to −9minerals−4.8−10 to −5Foliar tissues:TNC2715 to 75TNC:protein3326 to 125TNC:minerals3324 to 98protein−4.8−19 to −14minerals−4.8−12 to −5Changes (%) in various plant quality indicators caused by: (1) Adding a teaspoon of TNC (∼5g of starch-and-sugars mixture) per 100g of dry mass (DM) of plant tissue, an:d (2) growing plants in twice-ambient CO2 atmosphere. Changes due to the addition of TNC are calculated assuming:the baseline TNC content of 65% for grains and tubers, and 15% for foliar tissues. The C content is assumed to be ∼42% for plant tissues and TNC.
+More generally, CO2 studies show that—irrespective of the baseline TNC content—eCO2 tends to boost TNC by a few grams (1–8 g) per 100 g DM of plant tissue (Poorter et al., 1997; Keutgen and Chen, 2001; Katny et al., 2005; Erbs et al., 2010; Azam et al., 2013). Note that such an infusion of carbohydrates into plant tissues, all else being equal, dilutes the content of other nutrients by ∼1–7.4%. Let us compare the dilution with its pragmatic and easily graspable analog—adding a spoonful of sugar-and-starch mixture. Table 2 shows that the CO2 effect on TNC:protein and TNC:minerals is stoichiometrically similar to the effect of adding a spoonful of carbohydrates to every 100 g DM of plant tissue.
+
+**Table 2.**
+ Comparing the effect of CO2 to the effect of adding ‘a spoonful of sugars.’
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plant quality indicator</th>
+      <th>Effect of adding 5g of TNC (%)</th>
+      <th>Effect of elevated CO2 (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grains and tubers:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TNC</td>
+      <td>2.6</td>
+      <td>1 to 15</td>
+    </tr>
+    <tr>
+      <td>TNC:protein</td>
+      <td>7</td>
+      <td>6 to 47</td>
+    </tr>
+    <tr>
+      <td>TNC:minerals</td>
+      <td>7</td>
+      <td>6 to 28</td>
+    </tr>
+    <tr>
+      <td>protein</td>
+      <td>−4.8</td>
+      <td>−14 to −9</td>
+    </tr>
+    <tr>
+      <td>minerals</td>
+      <td>−4.8</td>
+      <td>−10 to −5</td>
+    </tr>
+    <tr>
+      <td>Foliar tissues:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TNC</td>
+      <td>27</td>
+      <td>15 to 75</td>
+    </tr>
+    <tr>
+      <td>TNC:protein</td>
+      <td>33</td>
+      <td>26 to 125</td>
+    </tr>
+    <tr>
+      <td>TNC:minerals</td>
+      <td>33</td>
+      <td>24 to 98</td>
+    </tr>
+    <tr>
+      <td>protein</td>
+      <td>−4.8</td>
+      <td>−19 to −14</td>
+    </tr>
+    <tr>
+      <td>minerals</td>
+      <td>−4.8</td>
+      <td>−12 to −5</td>
+    </tr>
+  </tbody>
+</table>
+
+_Changes (%) in various plant quality indicators caused by: (1) Adding a teaspoon of TNC (∼5g of starch-and-sugars mixture) per 100g of dry mass (DM) of plant tissue, an:d (2) growing plants in twice-ambient CO2 atmosphere. Changes due to the addition of TNC are calculated assuming:the baseline TNC content of 65% for grains and tubers, and 15% for foliar tissues. The C content is assumed to be ∼42% for plant tissues and TNC._
 
 Clearly, adding a spoonful of sugar sporadically to one's diet is not a cause for concern. However, the inescapable pervasiveness of globally rising atmospheric CO2 concentrations raises new questions: What are health consequences, if any, of diluting every 100 g DM of raw plant products with a spoonful of starch-and-sugar mixture? What are the consequences if the dilution is not sporadic but unavoidable and lifelong? These questions are better left for nutritionists, but it is worth noting that WHO (2014) conditionally recommends that intake of free sugars not exceed 5% of total energy, which is equivalent to 5–8 teaspoons of sugar for a typical 2000–3000 kcal/day diet.
 
 Below, I shift focus on a direct consequence of the CO2-induced increase in carbohydrate production—the mineral decline in plant tissues, and explore its potential effect on human nutrition.
 
-## Plant minerals and ‘hidden hunger’
+### Plant minerals and ‘hidden hunger’
 
 ‘Hidden hunger’—stems from poorly diversified plant-based diets meeting caloric but not nutritional needs. It is currently the world's most widespread nutritional disorder (Kennedy et al., 2003; Welch and Graham, 2005). It lowers the GDP of the most afflicted countries by 2–5% and is partly responsible for their Third World status (WHO, 2002; Stein, 2009). A paradoxical aspect of ‘hidden hunger’ is that the minuscule amount of minerals, which a human body requires, could be provided easily and inexpensively—at least in theory—to all people in need by fortifying foods with minerals. However, in practice, such required mineral levels do not reach large parts of the world's community. The case of iodine is illustrative: although iodized table salt nearly wiped out iodine deficiency in the industrialized world, a billion people still have no regular access to it, making iodine deficiency the leading cause of preventable brain damage, cretinism, and lower IQ in children (Welch and Graham, 1999; WHO, 2002). Hence, the reality of logistic, economic, and cultural hurdles for fortification leaves the natural and bioavailable mineral content in food, and in plants in particular, to be the major, and sometimes the only, consistent mineral supply for a large part of mankind (White and Broadley, 2009; Bouis and Welch, 2010). This supply, unfortunately, is suboptimal for human nutrition with some of the consequences outlined below.
 
@@ -148,7 +299,7 @@ Every third person in the world is at risk of inadequate Zn intake with its defi
 
 How can the CO2-induced depletion of minerals in crops affect humans? I emphasize that the impact of CO2-induced shifts in the quality of crops on human health is far from settled. The purpose of what follows is not to make definitive claims but to stimulate research into this important but unresolved issue.
 
-## Stoichiometric thought experiment
+### Stoichiometric thought experiment
 
 A randomized controlled trial for a human diet based exclusively (directly or indirectly) on plants grown in eCO2 is unlikely and ethically questionable; and even if feasible, the trial might take years to generate results. In lieu of relevant data, we can employ a thought experiment. While such ‘experiments’ are usually reserved for physical sciences, any living system, notwithstanding its complexity, adheres to simple but irrefutable elemental mass balance, which can help us to elucidate plausible scenarios.
 
@@ -162,13 +313,13 @@ For a calorie deficient person, eating 5% more (to be exact 5.26%, because 1.052
 
 The above ‘experiment’ suggests that a systemic and sustained 5% mineral depletion in plants can be nutritionally significant. While the rise in the atmospheric CO2 concentration is expected to be nearly uniform around the globe, its impact on crop quality might unequally affect the human population: from no detrimental effects for the well-nourished to potential weight gain for the calorie-sufficient but mineral-undernourished.
 
-## Has rising CO2 already altered the plant ionome?
+### Has rising CO2 already altered the plant ionome?
 
 The rise in CO2 levels over the last 18–30 years has already been implicated in the two effects that can influence the plant ionome: higher C assimilation and plant growth (Donohue et al., 2013), and lower transpiration (Keenan et al., 2013). Considering that over the last 250 years, the atmospheric CO2 concentration has increased by 120 ppm—an increase that is not far from the mean 184 ppm enrichment in the FACE studies—it is plausible that plant quality has changed. Indeed, declines in mineral concentrations have been found in wild plants and in crop fruits, vegetables, and grains over 22–250 years (Penuelas and Matamala, 1993; Duquesnay et al., 2000; Davis et al., 2004; Ekholm et al., 2007; Fan et al., 2008; Jonard et al., 2009). While the mineral declines in crops can be an unintended consequence of the Green Revolution that produced high-yield cultivars with altered mineral content (Davis et al., 2004; Fan et al., 2008), the reason for the mineral declines in wild plants cannot be attributed to it.
 
 Can eCO2 directly affect human health? Hersoug et al. (2012) proposed that rising CO2 promotes weight gains and obesity in the human population directly (via breathing) by reducing the pH of blood and, consequently, increasing appetite and energy intake. Weight gain has been observed in wild mammals, lab animals, and humans over the last several decades (Klimentidis et al., 2011). However, it is not clear what role, if any, the rising CO2 could have played either directly (breathing) or indirectly (altered plant quality). And disentangling the rising CO2 effect from other plausible factors currently does not seem feasible due to scarce data. This brings us to the broader issue of detecting—amid high local noise—signals that are small in their magnitude but global in their scope.
 
-## Hidden shifts of global change
+### Hidden shifts of global change
 
 While some scientific areas (e.g., genomics, bioinformatics) have experienced a data deluge, many areas of global change, including the issue of shifting plant quality, have been hindered by chronic data scarcity. Fortunately, researchers worldwide have been steadily generating data on the effects of eCO2 on the chemical composition of plants. It is their collective efforts that have made it possible to reveal the CO2-induced shift in the plant ionome.
 
@@ -178,15 +329,1292 @@ New data on the effects of eCO2 on plant quality (e.g., minerals, TNC: protein, 
 
 ## Materials and methods
 
-## Search for data
+### Search for data
 
 I searched Google Scholar, Google, PubMed, the ISI Web of Science, AGRICOLA, and Scopus to find relevant articles with sensible combinations of two or more of the following search-words: elevated, rising, CO2, carbon dioxide, ppm, FACE, effects, content, concentration, %, mg, dry matter, micronutrients, plant(s), crop(s), tree(s), C3, C4, foliar, leaves, grains, seeds, tubers, fruits, minerals, chemical elements, and names/symbols of various chemical elements (e.g., zinc/Zn). I found additional studies from references in the articles identified in the initial searches.
 
-## Study suitability and data selection criteria
+### Study suitability and data selection criteria
 
 Among all plant tissues for which mineral concentrations are reported in the literature, the most abundant data are on foliar tissues (leaves, needles, shoots), and—for herbaceous plants—on above ground parts. Hence, focusing on the foliar tissues and above ground parts allows one to maximize the number of independent observations of the effect of eCO2 on each mineral. Although the data on edible parts of crops are scarcer, a dataset on crop edible tissues was compiled due to their direct relevance for human nutrition.
 
-The following objective and uniform criteria were applied for deciding which studies to include into the dataset: (1) a study grew plants at two or more CO2 levels, (2) a study directly measured the content of one or more minerals in foliar or edible plant tissues at low (ambient) and high (elevated) CO2 levels, and (3) a study reported either absolute concentrations at each treatment or relative change/lack thereof in the concentrations for each mineral between treatments. Studies that indirectly deduced mineral concentrations, reported data on N but not on any mineral, exposed only a part (e.g., a branch) of the plant, used super-elevated or uncontrolled CO2 levels were not included. Table 3 lists all the studies together with their respective species/cultivars and CO2 enrichment levels (the dataset with all the details is deposited at Dryad and GitHub). When a study reported the low CO2 level as ‘ambient’ with no specific numerical values, then I used the Keeling curve to approximate the ambient CO2 level for the year the study was carried out.10.7554/eLife.02245.014Table 3.Studies covered in the meta-analysis of CO2 effects on the plant ionome.DOI: http://dx.doi.org/10.7554/eLife.02245.014SpeciesCommon nameCrop+CO2CountryReferenceAcer pseudoplatanusmaple treeNo260Overdieck, 1993Acer rubrumred maple treeNo200USAFinzi et al., 2001Agrostis capillarisgrassNo340UKBaxter et al., 1994Agrostis capillarisgrassNo250Newbery et al., 1995Alnus glutinosaalder treeNo350UKTemperton et al., 2003Alphitonia petrieirainforest treeNo440Kanowski, 2001Ambrosia dumosashrubNo180USAHousman et al., 2012Arabidopsis thalianathale cressNo450Niu et al., 2013Arabidopsis thalianathale cressNo330Teng et al., 2006Betula pendula 'Roth'birch treeNo349FinlandOksanen et al., 2005Bouteloua curtipendulagrassNo230Polley et al., 2011Bromus tectorumcheatgrassNo150Blank et al., 2006Bromus tectorumcheatgrassNo150Blank et al., 2011Calluna vulgarisheather shrubNo200Woodin et al., 1992Cercis canadensisred bud treeNo200USAFinzi et al., 2001Chrysanthemum morifoliumchrysanthNo325Kuehny et al., 1991Cornus floridadogwood treeNo200USAFinzi et al., 2001Fagus sylvaticabeech treeNo260Overdieck, 1993Fagus sylvaticabeech treeNo300Rodenkirchen et al., 2009Festuca pratensismeadow fescueNo320Overdieck, 1993Festuca viviparagrassNo340UKBaxter et al., 1994Flindersia brayleyanarainforest treeNo440Kanowski, 2001Galactia elliottiiElliott's milkpeaNo325USAHungate et al., 2004Larix kaempferilarch treeNo335JapanShinano et al., 2007Lepidium latifoliumpeppergrassNo339Blank and Derner, 2004Liquidambar styracifluasweetgum treeNo200USAFinzi et al., 2001Liquidambar styracifluasweetgum treeNo167USAJohnson et al., 2004Liquidambar styracifluasweetgum treeNo156–200USANatali et al., 2009Liriodendron tulipiferatulip treeNo325O’Neill et al., 1987Lolium perennegrassNo320Overdieck, 1993Lolium perennegrassNo290GermanySchenk et al., 1997Lupinus albuswhite lupinNo550Campbell and Sage, 2002Lycium pallidumshrubNo180USAHousman et al., 2012Nephrolepis exaltatafernNo650Nowak et al., 2002Pelargonium x hortorum 'Maverick White'geraniumNo330Mishra et al., 2011Picea abies 'Karst.'spruce treeNo350Pfirrmann et al., 1996Picea abies 'Karst.'spruce treeNo300Rodenkirchen et al., 2009Picea abies 'Karst.'spruce treeNo300Weigt et al., 2011Picea rubensspruce treeNo350Shipley et al., 1992Pinus ponderosapine treeNo346USAWalker et al., 2000Pinus ponderosa 'Laws.'pine treeNo350USAJohnson et al., 1997Pinus sylvestrispine treeNo331Luomala et al., 2005Pinus sylvestrispine treeNo225FinlandUtriainen et al., 2000Pinus taedaloblolly pine treeNo200USAFinzi et al., 2001Pinus taedapine treeNo200USANatali et al., 2009Poa alpinagrassNo340UKBaxter et al., 1994Poa alpinagrassNo340UKBaxter et al., 1997Pteridium aquilinumfernNo320Zheng et al., 2008Pteridium revolutumfernNo320Zheng et al., 2008Pteris vittatafernNo320Zheng et al., 2008Quercus chapmaniioak treeNo350USANatali et al., 2009Quercus geminataoak treeNo350USAJohnson et al., 2003Quercus geminataoak treeNo350USANatali et al., 2009Quercus myrtifoliaoak treeNo350USAJohnson et al., 2003Quercus myrtifoliaoak treeNo350USANatali et al., 2009Quercus subercork oak treeNo350Niinemets et al., 1999Schizachyrium scopariumgrassNo230Polley et al., 2011Sorghastrum nutansgrassNo230Polley et al., 2011Sporobolus kentrophyllusgrassNo330Wilsey et al., 1994Trifolium alexandrinum 'Pusa Jayant'berseem cloverNo250IndiaPal et al., 2004Trifolium pratensered cloverNo320Overdieck, 1993Trifolium repenswhite cloverNo320Overdieck, 1993Trifolium repenswhite cloverNo290GermanySchenk et al., 1997Trifolium repenswhite cloverNo615Tian et al., 2014Trifolium repens 'Regal'white cloverNo330Heagle et al., 1993Vallisneria spinulosamacrophyteNo610Yan et al., 2006Apium graveolensceleryYes670Tremblay et al., 1988Brassica juncea 'Czern'mustardYes500IndiaSingh et al., 2013Brassica napus 'Qinyou 8'rapeseedYes615Tian et al., 2014Brassica napus 'Rongyou 10'rapeseedYes615Tian et al., 2014Brassica napus 'Zhongyouza 12'rapeseedYes615Tian et al., 2014Brassica napus 'Campino'oilseed rapeYes106GermanyHögy et al., 2010Brassica rapa 'Grabe'turnipYes600Azam et al., 2013Citrus aurantiumorange treeYes300USAPenuelas et al., 1997Citrus madurensiscitrus treeYes600Keutgen and Chen, 2001Cucumis sativuscucumberYes650Peet et al., 1986Daucus carota 'T-1-111'carrotYes600Azam et al., 2013Fragaria x ananassastrawberryYes600Keutgen et al., 1997Glycine max 'Merr.'soybeanYes360USAPrior et al., 2008Glycine max 'Merr.'soybeanYes200Rodriguez et al., 2011Gossypium hirsutum 'Deltapine 77'cottonYes180USAHuluka et al., 1994Hordeum vulgarebarleyYes175GermanyErbs et al., 2010Hordeum vulgare 'Alexis'barleyYes334GermanyManderscheid et al., 1995Hordeum vulgare 'Arena'barleyYes334GermanyManderscheid et al., 1995Hordeum vulgare 'Europa'barleyYes400Haase et al., 2008Hordeum vulgare 'Iranis'barleyYes350Pérez-López et al., 2014Hordeum vulgare 'Theresa'barleyYes170GermanyWroblewitz et al., 2013Lactuca sativa 'BRM'lettuceYes308Baslam et al., 2012Lactuca sativa 'Mantilla'lettuceYes350Chagvardieff et al., 1994Lactuca sativa 'MV'lettuceYes308Baslam et al., 2012Lactuca sativa 'Waldmann's Green'lettuceYes600McKeehen et al., 1996Lycopersicon esculentum 'Astra'tomatoYes600Khan et al., 2013Lycopersicon esculentum 'Eureka'tomatoYes600Khan et al., 2013Lycopersicon esculentum 'Mill.'tomatoYes360Li et al., 2007Lycopersicon esculentum 'Zheza 809'tomatoYes450Jin et al., 2009Mangifera indica 'Kensington'mango treeYes350Schaffer and Whiley, 1997Mangifera indica 'Tommy Atkins'mango treeYes350Schaffer and Whiley, 1997Medicago sativaalfalfaYes615Tian et al., 2014Medicago sativa 'Victor'alfalfaYes100UKAl-Rawahy et al., 2013Oryza sativariceYes200ChinaPang et al., 2005Oryza sativa 'Akitakomachi'riceYes205–260JapanLieffering et al., 2004Oryza sativa 'Akitakomachi'riceYes250JapanYamakawa et al., 2004Oryza sativa 'BRRIdhan 39'riceYes210BangladeshRazzaque et al., 2009Oryza sativa 'Gui Nnong Zhan'riceYes500Li et al., 2010Oryza sativa 'IR 72'riceYes296PhilippinesZiska et al., 1997Oryza sativa 'Japonica'riceYes200ChinaJia et al., 2007Oryza sativa 'Jarrah'riceYes350Seneweera and Conroy, 1997Oryza sativa 'Khaskani'riceYes210BangladeshRazzaque et al., 2009Oryza sativa 'Rong You 398'riceYes500Li et al., 2010Oryza sativa 'Shakkorkhora'riceYes210BangladeshRazzaque et al., 2009Oryza sativa 'Shan You 428'riceYes500Li et al., 2010Oryza sativa 'Tian You 390'riceYes500Li et al., 2010Oryza sativa 'Wu Xiang jing'riceYes200ChinaGuo et al., 2011Oryza sativa 'Wuxiangjing 14'riceYes200ChinaMa et al., 2007Oryza sativa 'Wuxiangjing 14'riceYes200ChinaYang et al., 2007Oryza sativa 'Yin Jing Ruan Zhan'riceYes500Li et al., 2010Oryza sativa 'Yue Za 889'riceYes500Li et al., 2010Phaseolus vulgaris 'Contender'beanYes340Mjwara et al., 1996Phaseolus vulgaris 'Seafarer'beanYes870Porter and Grodzinski, 1984Raphanus sativus 'Mino'radishYes600Azam et al., 2013Raphanus sativus 'Cherry Belle'radishYes380Barnes and Pfirrmann, 1992Raphanus sativus 'Giant White Globe'radishYes600McKeehen et al., 1996Rumex patientia x R. Tianschanicus 'Rumex K-1'buckwheatYes615Tian et al., 2014Secale cereale 'Wintergrazer-70'ryeYes615Tian et al., 2014Solanum lycopersicum '76R MYC+'tomatoYes590Cavagnaro et al., 2007Solanum lycopersicum 'rmc'tomatoYes590Cavagnaro et al., 2007Solanum tuberosumpotatoYes500Cao and Tibbitts, 1997Solanum tuberosum 'Bintje'potatoYes170GermanyHögy and Fangmeier, 2009Solanum tuberosum 'Bintje'potatoYes278-281SwedenPiikki et al., 2007Solanum tuberosum 'Bintje'potatoYes305-320EuropeFangmeier et al., 2002Solanum tuberosum 'Dark Red Norland'potatoYes345USAHeagle et al., 2003Solanum tuberosum 'Superior'potatoYes345USAHeagle et al., 2003Sorghum bicolorsorghumYes360USAPrior et al., 2008Spinacia oleraceaspinachYes250IndiaJain et al., 2007Trigonella foenum-graecumfenugreekYes250IndiaJain et al., 2007Triticum aestivumwheatYes175GermanyErbs et al., 2010Triticum aestivum 'Ningmai 9'wheatYes200ChinaMa et al., 2007Triticum aestivum 'Triso'wheatYes150GermanyHögy et al., 2009Triticum aestivum 'Triso'wheatYes150GermanyHögy et al., 2013Triticum aestivum 'Alcazar'wheatYes350de la Puente et al., 2000Triticum aestivum 'Batis'wheatYes170GermanyWroblewitz et al., 2013Triticum aestivum 'Dragon'wheatYes305-320SwedenPleijel and Danielsson, 2009Triticum aestivum 'HD-2285'wheatYes250IndiaPal et al., 2003Triticum aestivum 'Janz'wheatYes166AustraliaFernando et al., 2014Triticum aestivum 'Jinnong 4'wheatYes615Tian et al., 2014Triticum aestivum 'Minaret'wheatYes278GermanyFangmeier et al., 1997Triticum aestivum 'Minaret'wheatYes300EuropeFangmeier et al., 1999Triticum aestivum 'Rinconada'wheatYes350de la Puente et al., 2000Triticum aestivum 'Star'wheatYes334GermanyManderscheid et al., 1995Triticum aestivum 'Turbo'wheatYes334GermanyManderscheid et al., 1995Triticum aestivum 'Turbo'wheatYes350Wu et al., 2004Triticum aestivum 'Veery 10'wheatYes410Carlisle et al., 2012Triticum aestivum 'Yangmai'wheatYes200ChinaGuo et al., 2011Triticum aestivum 'Yitpi'wheatYes166AustraliaFernando et al., 2012aTriticum aestivum 'Yitpi'wheatYes166AustraliaFernando et al., 2012bTriticum aestivum 'Yitpi'wheatYes166AustraliaFernando et al., 2012cTriticum aestivum 'Yitpi'wheatYes166AustraliaFernando et al., 2014The table provides species name, common name, the type of experimental set up, the level of CO2 enrichment, and indicates whether the species is a crop. Countries are listed only for FACE and OTC type experiments with ‘Europe’ accounting for combined data from Belgium, Denmark, Finland, Germany, Sweden, and the UK.
+The following objective and uniform criteria were applied for deciding which studies to include into the dataset: (1) a study grew plants at two or more CO2 levels, (2) a study directly measured the content of one or more minerals in foliar or edible plant tissues at low (ambient) and high (elevated) CO2 levels, and (3) a study reported either absolute concentrations at each treatment or relative change/lack thereof in the concentrations for each mineral between treatments. Studies that indirectly deduced mineral concentrations, reported data on N but not on any mineral, exposed only a part (e.g., a branch) of the plant, used super-elevated or uncontrolled CO2 levels were not included. Table 3 lists all the studies together with their respective species/cultivars and CO2 enrichment levels (the dataset with all the details is deposited at Dryad and GitHub). When a study reported the low CO2 level as ‘ambient’ with no specific numerical values, then I used the Keeling curve to approximate the ambient CO2 level for the year the study was carried out.
+
+**Table 3.**
+ Studies covered in the meta-analysis of CO2 effects on the plant ionome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Common name</th>
+      <th>Crop</th>
+      <th>+CO2</th>
+      <th>Country</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acer pseudoplatanus</td>
+      <td>maple tree</td>
+      <td>No</td>
+      <td>260</td>
+      <td></td>
+      <td>Overdieck, 1993</td>
+    </tr>
+    <tr>
+      <td>Acer rubrum</td>
+      <td>red maple tree</td>
+      <td>No</td>
+      <td>200</td>
+      <td>USA</td>
+      <td>Finzi et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Agrostis capillaris</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>340</td>
+      <td>UK</td>
+      <td>Baxter et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Agrostis capillaris</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>250</td>
+      <td></td>
+      <td>Newbery et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Alnus glutinosa</td>
+      <td>alder tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td>UK</td>
+      <td>Temperton et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Alphitonia petriei</td>
+      <td>rainforest tree</td>
+      <td>No</td>
+      <td>440</td>
+      <td></td>
+      <td>Kanowski, 2001</td>
+    </tr>
+    <tr>
+      <td>Ambrosia dumosa</td>
+      <td>shrub</td>
+      <td>No</td>
+      <td>180</td>
+      <td>USA</td>
+      <td>Housman et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Arabidopsis thaliana</td>
+      <td>thale cress</td>
+      <td>No</td>
+      <td>450</td>
+      <td></td>
+      <td>Niu et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Arabidopsis thaliana</td>
+      <td>thale cress</td>
+      <td>No</td>
+      <td>330</td>
+      <td></td>
+      <td>Teng et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Betula pendula 'Roth'</td>
+      <td>birch tree</td>
+      <td>No</td>
+      <td>349</td>
+      <td>Finland</td>
+      <td>Oksanen et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Bouteloua curtipendula</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>230</td>
+      <td></td>
+      <td>Polley et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Bromus tectorum</td>
+      <td>cheatgrass</td>
+      <td>No</td>
+      <td>150</td>
+      <td></td>
+      <td>Blank et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Bromus tectorum</td>
+      <td>cheatgrass</td>
+      <td>No</td>
+      <td>150</td>
+      <td></td>
+      <td>Blank et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Calluna vulgaris</td>
+      <td>heather shrub</td>
+      <td>No</td>
+      <td>200</td>
+      <td></td>
+      <td>Woodin et al., 1992</td>
+    </tr>
+    <tr>
+      <td>Cercis canadensis</td>
+      <td>red bud tree</td>
+      <td>No</td>
+      <td>200</td>
+      <td>USA</td>
+      <td>Finzi et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Chrysanthemum morifolium</td>
+      <td>chrysanth</td>
+      <td>No</td>
+      <td>325</td>
+      <td></td>
+      <td>Kuehny et al., 1991</td>
+    </tr>
+    <tr>
+      <td>Cornus florida</td>
+      <td>dogwood tree</td>
+      <td>No</td>
+      <td>200</td>
+      <td>USA</td>
+      <td>Finzi et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Fagus sylvatica</td>
+      <td>beech tree</td>
+      <td>No</td>
+      <td>260</td>
+      <td></td>
+      <td>Overdieck, 1993</td>
+    </tr>
+    <tr>
+      <td>Fagus sylvatica</td>
+      <td>beech tree</td>
+      <td>No</td>
+      <td>300</td>
+      <td></td>
+      <td>Rodenkirchen et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Festuca pratensis</td>
+      <td>meadow fescue</td>
+      <td>No</td>
+      <td>320</td>
+      <td></td>
+      <td>Overdieck, 1993</td>
+    </tr>
+    <tr>
+      <td>Festuca vivipara</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>340</td>
+      <td>UK</td>
+      <td>Baxter et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Flindersia brayleyana</td>
+      <td>rainforest tree</td>
+      <td>No</td>
+      <td>440</td>
+      <td></td>
+      <td>Kanowski, 2001</td>
+    </tr>
+    <tr>
+      <td>Galactia elliottii</td>
+      <td>Elliott's milkpea</td>
+      <td>No</td>
+      <td>325</td>
+      <td>USA</td>
+      <td>Hungate et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Larix kaempferi</td>
+      <td>larch tree</td>
+      <td>No</td>
+      <td>335</td>
+      <td>Japan</td>
+      <td>Shinano et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Lepidium latifolium</td>
+      <td>peppergrass</td>
+      <td>No</td>
+      <td>339</td>
+      <td></td>
+      <td>Blank and Derner, 2004</td>
+    </tr>
+    <tr>
+      <td>Liquidambar styraciflua</td>
+      <td>sweetgum tree</td>
+      <td>No</td>
+      <td>200</td>
+      <td>USA</td>
+      <td>Finzi et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Liquidambar styraciflua</td>
+      <td>sweetgum tree</td>
+      <td>No</td>
+      <td>167</td>
+      <td>USA</td>
+      <td>Johnson et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Liquidambar styraciflua</td>
+      <td>sweetgum tree</td>
+      <td>No</td>
+      <td>156–200</td>
+      <td>USA</td>
+      <td>Natali et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Liriodendron tulipifera</td>
+      <td>tulip tree</td>
+      <td>No</td>
+      <td>325</td>
+      <td></td>
+      <td>O’Neill et al., 1987</td>
+    </tr>
+    <tr>
+      <td>Lolium perenne</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>320</td>
+      <td></td>
+      <td>Overdieck, 1993</td>
+    </tr>
+    <tr>
+      <td>Lolium perenne</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>290</td>
+      <td>Germany</td>
+      <td>Schenk et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Lupinus albus</td>
+      <td>white lupin</td>
+      <td>No</td>
+      <td>550</td>
+      <td></td>
+      <td>Campbell and Sage, 2002</td>
+    </tr>
+    <tr>
+      <td>Lycium pallidum</td>
+      <td>shrub</td>
+      <td>No</td>
+      <td>180</td>
+      <td>USA</td>
+      <td>Housman et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Nephrolepis exaltata</td>
+      <td>fern</td>
+      <td>No</td>
+      <td>650</td>
+      <td></td>
+      <td>Nowak et al., 2002</td>
+    </tr>
+    <tr>
+      <td>Pelargonium x hortorum 'Maverick White'</td>
+      <td>geranium</td>
+      <td>No</td>
+      <td>330</td>
+      <td></td>
+      <td>Mishra et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Picea abies 'Karst.'</td>
+      <td>spruce tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td></td>
+      <td>Pfirrmann et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Picea abies 'Karst.'</td>
+      <td>spruce tree</td>
+      <td>No</td>
+      <td>300</td>
+      <td></td>
+      <td>Rodenkirchen et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Picea abies 'Karst.'</td>
+      <td>spruce tree</td>
+      <td>No</td>
+      <td>300</td>
+      <td></td>
+      <td>Weigt et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Picea rubens</td>
+      <td>spruce tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td></td>
+      <td>Shipley et al., 1992</td>
+    </tr>
+    <tr>
+      <td>Pinus ponderosa</td>
+      <td>pine tree</td>
+      <td>No</td>
+      <td>346</td>
+      <td>USA</td>
+      <td>Walker et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Pinus ponderosa 'Laws.'</td>
+      <td>pine tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td>USA</td>
+      <td>Johnson et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Pinus sylvestris</td>
+      <td>pine tree</td>
+      <td>No</td>
+      <td>331</td>
+      <td></td>
+      <td>Luomala et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Pinus sylvestris</td>
+      <td>pine tree</td>
+      <td>No</td>
+      <td>225</td>
+      <td>Finland</td>
+      <td>Utriainen et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Pinus taeda</td>
+      <td>loblolly pine tree</td>
+      <td>No</td>
+      <td>200</td>
+      <td>USA</td>
+      <td>Finzi et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Pinus taeda</td>
+      <td>pine tree</td>
+      <td>No</td>
+      <td>200</td>
+      <td>USA</td>
+      <td>Natali et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Poa alpina</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>340</td>
+      <td>UK</td>
+      <td>Baxter et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Poa alpina</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>340</td>
+      <td>UK</td>
+      <td>Baxter et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Pteridium aquilinum</td>
+      <td>fern</td>
+      <td>No</td>
+      <td>320</td>
+      <td></td>
+      <td>Zheng et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Pteridium revolutum</td>
+      <td>fern</td>
+      <td>No</td>
+      <td>320</td>
+      <td></td>
+      <td>Zheng et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Pteris vittata</td>
+      <td>fern</td>
+      <td>No</td>
+      <td>320</td>
+      <td></td>
+      <td>Zheng et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Quercus chapmanii</td>
+      <td>oak tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td>USA</td>
+      <td>Natali et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Quercus geminata</td>
+      <td>oak tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td>USA</td>
+      <td>Johnson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Quercus geminata</td>
+      <td>oak tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td>USA</td>
+      <td>Natali et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Quercus myrtifolia</td>
+      <td>oak tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td>USA</td>
+      <td>Johnson et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Quercus myrtifolia</td>
+      <td>oak tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td>USA</td>
+      <td>Natali et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Quercus suber</td>
+      <td>cork oak tree</td>
+      <td>No</td>
+      <td>350</td>
+      <td></td>
+      <td>Niinemets et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Schizachyrium scoparium</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>230</td>
+      <td></td>
+      <td>Polley et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Sorghastrum nutans</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>230</td>
+      <td></td>
+      <td>Polley et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Sporobolus kentrophyllus</td>
+      <td>grass</td>
+      <td>No</td>
+      <td>330</td>
+      <td></td>
+      <td>Wilsey et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Trifolium alexandrinum 'Pusa Jayant'</td>
+      <td>berseem clover</td>
+      <td>No</td>
+      <td>250</td>
+      <td>India</td>
+      <td>Pal et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Trifolium pratense</td>
+      <td>red clover</td>
+      <td>No</td>
+      <td>320</td>
+      <td></td>
+      <td>Overdieck, 1993</td>
+    </tr>
+    <tr>
+      <td>Trifolium repens</td>
+      <td>white clover</td>
+      <td>No</td>
+      <td>320</td>
+      <td></td>
+      <td>Overdieck, 1993</td>
+    </tr>
+    <tr>
+      <td>Trifolium repens</td>
+      <td>white clover</td>
+      <td>No</td>
+      <td>290</td>
+      <td>Germany</td>
+      <td>Schenk et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Trifolium repens</td>
+      <td>white clover</td>
+      <td>No</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Trifolium repens 'Regal'</td>
+      <td>white clover</td>
+      <td>No</td>
+      <td>330</td>
+      <td></td>
+      <td>Heagle et al., 1993</td>
+    </tr>
+    <tr>
+      <td>Vallisneria spinulosa</td>
+      <td>macrophyte</td>
+      <td>No</td>
+      <td>610</td>
+      <td></td>
+      <td>Yan et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Apium graveolens</td>
+      <td>celery</td>
+      <td>Yes</td>
+      <td>670</td>
+      <td></td>
+      <td>Tremblay et al., 1988</td>
+    </tr>
+    <tr>
+      <td>Brassica juncea 'Czern'</td>
+      <td>mustard</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td>India</td>
+      <td>Singh et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Brassica napus 'Qinyou 8'</td>
+      <td>rapeseed</td>
+      <td>Yes</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Brassica napus 'Rongyou 10'</td>
+      <td>rapeseed</td>
+      <td>Yes</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Brassica napus 'Zhongyouza 12'</td>
+      <td>rapeseed</td>
+      <td>Yes</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Brassica napus 'Campino'</td>
+      <td>oilseed rape</td>
+      <td>Yes</td>
+      <td>106</td>
+      <td>Germany</td>
+      <td>Högy et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Brassica rapa 'Grabe'</td>
+      <td>turnip</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>Azam et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Citrus aurantium</td>
+      <td>orange tree</td>
+      <td>Yes</td>
+      <td>300</td>
+      <td>USA</td>
+      <td>Penuelas et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Citrus madurensis</td>
+      <td>citrus tree</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>Keutgen and Chen, 2001</td>
+    </tr>
+    <tr>
+      <td>Cucumis sativus</td>
+      <td>cucumber</td>
+      <td>Yes</td>
+      <td>650</td>
+      <td></td>
+      <td>Peet et al., 1986</td>
+    </tr>
+    <tr>
+      <td>Daucus carota 'T-1-111'</td>
+      <td>carrot</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>Azam et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Fragaria x ananassa</td>
+      <td>strawberry</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>Keutgen et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Glycine max 'Merr.'</td>
+      <td>soybean</td>
+      <td>Yes</td>
+      <td>360</td>
+      <td>USA</td>
+      <td>Prior et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Glycine max 'Merr.'</td>
+      <td>soybean</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td></td>
+      <td>Rodriguez et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Gossypium hirsutum 'Deltapine 77'</td>
+      <td>cotton</td>
+      <td>Yes</td>
+      <td>180</td>
+      <td>USA</td>
+      <td>Huluka et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Hordeum vulgare</td>
+      <td>barley</td>
+      <td>Yes</td>
+      <td>175</td>
+      <td>Germany</td>
+      <td>Erbs et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Hordeum vulgare 'Alexis'</td>
+      <td>barley</td>
+      <td>Yes</td>
+      <td>334</td>
+      <td>Germany</td>
+      <td>Manderscheid et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Hordeum vulgare 'Arena'</td>
+      <td>barley</td>
+      <td>Yes</td>
+      <td>334</td>
+      <td>Germany</td>
+      <td>Manderscheid et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Hordeum vulgare 'Europa'</td>
+      <td>barley</td>
+      <td>Yes</td>
+      <td>400</td>
+      <td></td>
+      <td>Haase et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Hordeum vulgare 'Iranis'</td>
+      <td>barley</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>Pérez-López et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Hordeum vulgare 'Theresa'</td>
+      <td>barley</td>
+      <td>Yes</td>
+      <td>170</td>
+      <td>Germany</td>
+      <td>Wroblewitz et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Lactuca sativa 'BRM'</td>
+      <td>lettuce</td>
+      <td>Yes</td>
+      <td>308</td>
+      <td></td>
+      <td>Baslam et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Lactuca sativa 'Mantilla'</td>
+      <td>lettuce</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>Chagvardieff et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Lactuca sativa 'MV'</td>
+      <td>lettuce</td>
+      <td>Yes</td>
+      <td>308</td>
+      <td></td>
+      <td>Baslam et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Lactuca sativa 'Waldmann's Green'</td>
+      <td>lettuce</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>McKeehen et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Lycopersicon esculentum 'Astra'</td>
+      <td>tomato</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>Khan et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Lycopersicon esculentum 'Eureka'</td>
+      <td>tomato</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>Khan et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Lycopersicon esculentum 'Mill.'</td>
+      <td>tomato</td>
+      <td>Yes</td>
+      <td>360</td>
+      <td></td>
+      <td>Li et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Lycopersicon esculentum 'Zheza 809'</td>
+      <td>tomato</td>
+      <td>Yes</td>
+      <td>450</td>
+      <td></td>
+      <td>Jin et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Mangifera indica 'Kensington'</td>
+      <td>mango tree</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>Schaffer and Whiley, 1997</td>
+    </tr>
+    <tr>
+      <td>Mangifera indica 'Tommy Atkins'</td>
+      <td>mango tree</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>Schaffer and Whiley, 1997</td>
+    </tr>
+    <tr>
+      <td>Medicago sativa</td>
+      <td>alfalfa</td>
+      <td>Yes</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Medicago sativa 'Victor'</td>
+      <td>alfalfa</td>
+      <td>Yes</td>
+      <td>100</td>
+      <td>UK</td>
+      <td>Al-Rawahy et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td>China</td>
+      <td>Pang et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Akitakomachi'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>205–260</td>
+      <td>Japan</td>
+      <td>Lieffering et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Akitakomachi'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>250</td>
+      <td>Japan</td>
+      <td>Yamakawa et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'BRRIdhan 39'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>210</td>
+      <td>Bangladesh</td>
+      <td>Razzaque et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Gui Nnong Zhan'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td></td>
+      <td>Li et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'IR 72'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>296</td>
+      <td>Philippines</td>
+      <td>Ziska et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Japonica'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td>China</td>
+      <td>Jia et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Jarrah'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>Seneweera and Conroy, 1997</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Khaskani'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>210</td>
+      <td>Bangladesh</td>
+      <td>Razzaque et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Rong You 398'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td></td>
+      <td>Li et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Shakkorkhora'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>210</td>
+      <td>Bangladesh</td>
+      <td>Razzaque et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Shan You 428'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td></td>
+      <td>Li et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Tian You 390'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td></td>
+      <td>Li et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Wu Xiang jing'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td>China</td>
+      <td>Guo et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Wuxiangjing 14'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td>China</td>
+      <td>Ma et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Wuxiangjing 14'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td>China</td>
+      <td>Yang et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Yin Jing Ruan Zhan'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td></td>
+      <td>Li et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Oryza sativa 'Yue Za 889'</td>
+      <td>rice</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td></td>
+      <td>Li et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Phaseolus vulgaris 'Contender'</td>
+      <td>bean</td>
+      <td>Yes</td>
+      <td>340</td>
+      <td></td>
+      <td>Mjwara et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Phaseolus vulgaris 'Seafarer'</td>
+      <td>bean</td>
+      <td>Yes</td>
+      <td>870</td>
+      <td></td>
+      <td>Porter and Grodzinski, 1984</td>
+    </tr>
+    <tr>
+      <td>Raphanus sativus 'Mino'</td>
+      <td>radish</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>Azam et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Raphanus sativus 'Cherry Belle'</td>
+      <td>radish</td>
+      <td>Yes</td>
+      <td>380</td>
+      <td></td>
+      <td>Barnes and Pfirrmann, 1992</td>
+    </tr>
+    <tr>
+      <td>Raphanus sativus 'Giant White Globe'</td>
+      <td>radish</td>
+      <td>Yes</td>
+      <td>600</td>
+      <td></td>
+      <td>McKeehen et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Rumex patientia x R. Tianschanicus 'Rumex K-1'</td>
+      <td>buckwheat</td>
+      <td>Yes</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Secale cereale 'Wintergrazer-70'</td>
+      <td>rye</td>
+      <td>Yes</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Solanum lycopersicum '76R MYC+'</td>
+      <td>tomato</td>
+      <td>Yes</td>
+      <td>590</td>
+      <td></td>
+      <td>Cavagnaro et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Solanum lycopersicum 'rmc'</td>
+      <td>tomato</td>
+      <td>Yes</td>
+      <td>590</td>
+      <td></td>
+      <td>Cavagnaro et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Solanum tuberosum</td>
+      <td>potato</td>
+      <td>Yes</td>
+      <td>500</td>
+      <td></td>
+      <td>Cao and Tibbitts, 1997</td>
+    </tr>
+    <tr>
+      <td>Solanum tuberosum 'Bintje'</td>
+      <td>potato</td>
+      <td>Yes</td>
+      <td>170</td>
+      <td>Germany</td>
+      <td>Högy and Fangmeier, 2009</td>
+    </tr>
+    <tr>
+      <td>Solanum tuberosum 'Bintje'</td>
+      <td>potato</td>
+      <td>Yes</td>
+      <td>278-281</td>
+      <td>Sweden</td>
+      <td>Piikki et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Solanum tuberosum 'Bintje'</td>
+      <td>potato</td>
+      <td>Yes</td>
+      <td>305-320</td>
+      <td>Europe</td>
+      <td>Fangmeier et al., 2002</td>
+    </tr>
+    <tr>
+      <td>Solanum tuberosum 'Dark Red Norland'</td>
+      <td>potato</td>
+      <td>Yes</td>
+      <td>345</td>
+      <td>USA</td>
+      <td>Heagle et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Solanum tuberosum 'Superior'</td>
+      <td>potato</td>
+      <td>Yes</td>
+      <td>345</td>
+      <td>USA</td>
+      <td>Heagle et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Sorghum bicolor</td>
+      <td>sorghum</td>
+      <td>Yes</td>
+      <td>360</td>
+      <td>USA</td>
+      <td>Prior et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Spinacia oleracea</td>
+      <td>spinach</td>
+      <td>Yes</td>
+      <td>250</td>
+      <td>India</td>
+      <td>Jain et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Trigonella foenum-graecum</td>
+      <td>fenugreek</td>
+      <td>Yes</td>
+      <td>250</td>
+      <td>India</td>
+      <td>Jain et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>175</td>
+      <td>Germany</td>
+      <td>Erbs et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Ningmai 9'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td>China</td>
+      <td>Ma et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Triso'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>150</td>
+      <td>Germany</td>
+      <td>Högy et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Triso'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>150</td>
+      <td>Germany</td>
+      <td>Högy et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Alcazar'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>de la Puente et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Batis'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>170</td>
+      <td>Germany</td>
+      <td>Wroblewitz et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Dragon'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>305-320</td>
+      <td>Sweden</td>
+      <td>Pleijel and Danielsson, 2009</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'HD-2285'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>250</td>
+      <td>India</td>
+      <td>Pal et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Janz'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>166</td>
+      <td>Australia</td>
+      <td>Fernando et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Jinnong 4'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>615</td>
+      <td></td>
+      <td>Tian et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Minaret'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>278</td>
+      <td>Germany</td>
+      <td>Fangmeier et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Minaret'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>300</td>
+      <td>Europe</td>
+      <td>Fangmeier et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Rinconada'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>de la Puente et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Star'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>334</td>
+      <td>Germany</td>
+      <td>Manderscheid et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Turbo'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>334</td>
+      <td>Germany</td>
+      <td>Manderscheid et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Turbo'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>350</td>
+      <td></td>
+      <td>Wu et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Veery 10'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>410</td>
+      <td></td>
+      <td>Carlisle et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Yangmai'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>200</td>
+      <td>China</td>
+      <td>Guo et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Yitpi'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>166</td>
+      <td>Australia</td>
+      <td>Fernando et al., 2012a</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Yitpi'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>166</td>
+      <td>Australia</td>
+      <td>Fernando et al., 2012b</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Yitpi'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>166</td>
+      <td>Australia</td>
+      <td>Fernando et al., 2012c</td>
+    </tr>
+    <tr>
+      <td>Triticum aestivum 'Yitpi'</td>
+      <td>wheat</td>
+      <td>Yes</td>
+      <td>166</td>
+      <td>Australia</td>
+      <td>Fernando et al., 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+_The table provides species name, common name, the type of experimental set up, the level of CO2 enrichment, and indicates whether the species is a crop. Countries are listed only for FACE and OTC type experiments with ‘Europe’ accounting for combined data from Belgium, Denmark, Finland, Germany, Sweden, and the UK._
 
 The following data-inclusion rules were applied to the studies with multiple co-dependent datasets for the foliar dataset: (1) the lowest and the highest CO2 levels for studies with multiple CO2 levels, (2) the control and single-factor CO2 for studies with environmental co-factors (e.g., observations from combined eCO2 and ozone experiments were excluded), (3) the highest nutrient regime when the control could not be identified in a study with multiple nutrient co-factors, (4) the last point, that is the longest exposure to ambient/eCO2 for studies with time series, (5) the most mature needles/leaves for studies reporting foliar tissues of various ages. If, in rare instances, a publication reported three or more separate datasets for the same species or cultivar, the data were averaged prior to the inclusion into the foliar dataset. For the edible tissue dataset, the study inclusion rules were the same as for the foliar dataset with the following exception: due to relative scarcity of data for edible tissues, the data with co-factors were included in the dataset (e.g., observations from combined eCO2 and ozone experiments were included). The ‘Additional info’ column in the dataset specifies exactly what datasets were extracted from each study with multiple datasets.
 
@@ -194,17 +1622,17 @@ The above publication-inclusion and data-inclusion rules allow treating each stu
 
 The foliar dataset covers 4733 observations of 25 chemical elements in 110 species and cultivars. The edible tissues dataset covers 3028 observations of 23 elements in 41 species and cultivars. The FACE studies cover 2264 observations of 24 elements in 25 species and cultivars. The two datasets reflect data on 125 C3 and 5 C4 species/cultivars.
 
-## Effect size measure
+### Effect size measure
 
 While the amount of statistical details provided in each study varies considerably, the following data were extractable from each study: (1) the relative change (or lack thereof) in the mean concentration between the low and the high CO2 treatments: (E-A)/A, where A and E are the mean concentrations of an element at the low and the high CO2 treatments respectively, (2) the sample size or the number of replicates (n).
 
 Since a decrease in the concentration of a mineral is limited to 100%, but an increase in its concentration is theoretically unlimited, a standard technique was applied to reduce biases towards increases. Specifically, the natural log of the response ratio, that is ln(E/A), was used as the effect size metric (e.g., Hedges et al., 1999; Jablonski et al., 2002; Taub et al., 2008). The response ratio, r = E/A, was calculated from the relative change as follows: r = 1+(E-A)/A. After performing statistical analyses, I converted all the results back from the log form to report them as ordinary percent changes.
 
-## Making results replicable
+### Making results replicable
 
 Published meta-analytic and biostatistical results need to be replicable and reproducible, and the process of replication needs to be made as easy as possible and clearly traceable to the original sources (Peng, 2009). In this regard, I have made the following efforts to ease the replication (from the original sources) of each and every result presented here:While copyright restrictions do not permit posting the original published data sources online, I will share, upon request, all the data sources in PDF form, where all the pertinent data are clearly marked for easy identification, thus removing any potential ambiguity about what data were extracted from each study.The entire dataset for the foliar and the edible tissues is available at Dryad digital depository, www.datadryad.org, under 10.5061/dryad.6356f. The dataset is available as an Excel file (formatted for easy viewing) and as a ‘CSV’ file; the latter is made-ready (tidy) for analysis with open-source (R Core Team, 2014) and commercial statistical packages (e.g., SPSS).An executable R code to generate individual results is available with the dataset at the above-mentioned depository and at GitHub: https://github.com/loladze/co2. Assistance for replicating any result and figure presented in this study will be provided to any interested party.
 
-## Statistical analysis
+### Statistical analysis
 
 I performed all the analyses using R (R Core Team, 2014), SPSS v. 21 (IBM, Armonk, NY, USA) and G*Power 3 (Faul et al., 2007). Meta-analytic studies often weight effect sizes by the reciprocal of their variance, which tends to give a greater weight to studies with greater precision. However, many eCO2 studies do not report measures of variation in the data (standard error, standard deviation, or variance). In lieu of the measures of variance, studies can be weighted by the number of replicates (n) or, alternatively, each study can be assigned equal weight, that is, unweighted method (Jablonski et al., 2002). I used both methods (weighted and unweighted) to calculate the means of effect sizes with 95% CIs and compared the results of both methods. Nearly in all instances, the difference between the weighted and the unweighted means was small and lesser than the standard error of the unweighted mean. For example, across all the FACE studies, the overall mineral change was −6.1% (−7.8 to −4.4) when unweighted cf. the −6.5% (−8.0 to −5.1) when weighted. For the reason of close similarity between weighted and unweighted approaches, I used the simpler out of the two methods, that is the unweighted one, when reporting the results.
 
@@ -212,22 +1640,46 @@ Since the distribution of effect sizes is not necessarily normal, I applied both
 
 The results from the parametric and non-parametric tests were very close. For example, for Zn in edible tissues (sample size = 65), t test yields (−11.4%, −14.0 to −8.7) and 0.91 power cf. (−11.4%, −13.9 to −8.7) and 0.92 power for the bootstrapping procedure. A close similarity between the results of t test and non-parametric test is expected when sample size (m, the number of independent observations for each mineral) is >30, which often was the case in this study. For reporting purposes, I used the 95% CI and the power generated by the non-parametric method, that is, the bootstrapping procedure.
 
-## Testing for publication bias
+### Testing for publication bias
 
 To test for publication bias or ‘the file drawer effect’ in the dataset, I plotted effect sizes against corresponding sample sizes/replicates, n, to provide a simple visual evaluation of the distribution of effect sizes (Figure 9). The resulting cloud of points is funnel-shaped, narrowing toward larger sample sizes, and overall is symmetrical along the mean effect size. This indicates the absence of any significant publication bias (Egger et al., 1997).
 
-## Fragmenting the dataset into categories
+### Fragmenting the dataset into categories
 
 Meta-analytic CO2 studies often partition their datasets into various categories (e.g., plant group, plant tissue, fertilization, or water regime) to estimate effect sizes for each category. Such data fragmentation, however, is warranted only if the statistical power of the resulting test for each category is adequate. Otherwise, low power can lead to non-significant outcomes and Type II errors. As tempting as it can be to partition the current dataset into many categories and cases (e.g., Zn in fruits, Fe in tuber, Cu in annuals, multiple CO2 levels), only by fragmenting the data into sufficiently large categories an adequate statistical power can be retained. Such categories include: foliar tissues, edible tissues, woody plants (trees and shrubs), herbaceous plants, FACE studies, non-FACE studies, crops, wild plants (all non-crops, including ornamental plants), C3 plants, C4 plants, rice, wheat, barley, and potato. Furthermore, I fragmented the data for C3 plants, the foliar and the edible tissues, the non-FACE and the FACE studies into individual chemical elements and into individual common plant names (e.g., all rice cultivars grouped under ‘rice’). For the regional analysis, I used only OTC and FACE studies because they reflect local environment much more accurately than studies using complete-enclosures (e.g., closed chamber, glasshouse). If an OTC or FACE study did not report precise geographic coordinates, then the latitude and longitude of a nearby research facility or city was used (all coordinates in the dataset are in decimal units). Figures 1–7 include results with the statistical power >0.40 for each element, country, region, plant tissue or category. Generally, power >0.80 is considered acceptable (Cohen, 1988). Unfortunately, such a level was achievable only for elements for which the data are most abundant and for the ionomes of some plant groups and species. Note that the power was calculated for a 5% effect size, while the true effect size is likely to be larger (∼8%); therefore, the true power is likely to be higher than the calculated power for most results. All the results, irrespective of the statistical power, can be found in Figure 1–source data 1. Furthermore, Figure 1 shows the mean effect sizes (with their 95% CI) plotted against their respective statistical powers for all the minerals and all the plant groups/tissues.
 
-## Formula for calculating percentage changes in TNC:protein and TNC:minerals
+### Formula for calculating percentage changes in TNC:protein and TNC:minerals
 
-If the concentration of substance X in a plant increases by x% and concomitantly the concentration of substance Y decreases by y% in the plant, then the X-to-Y ratio of the plant (X:Y) increases by:(1)x+y100−y·100%
+If the concentration of substance X in a plant increases by $x%$ and concomitantly the concentration of substance Y decreases by $y%$ in the plant, then the X-to-Y ratio of the plant (X:Y) increases by:
 
-## Proof
+$$
+\frac{x+y}{100−y}·100%
+$$
 
-Let us denote the initial concentrations of substances X and Y in a plant as xA and yA, respectively. Suppose the X and Y contents in the plant changed by x% and −y%, respectively. Then the new X content in the plant, xE, isxE=xA·(100+x)%,and the new Y content in the plant,yE, isyE=yA·(100−y)%.
+#### Proof
 
-The original X:Y=xA/yA, while the new X:Y=xE/yE. Since the percentage change in the X:Y equals to:new−originaloriginal·100%=(neworiginal−1)·100%,substituting xA/yA and xE/yE for the original and the new, respectively, yields: xE/yExA/yA−1=xE·yExA·yA−1=(xA(100+x)%)·yAxA(yA(100−y)%)−1=100+x100−y−1=x+y100−y.
+Let us denote the initial concentrations of substances X and Y in a plant as xA and yA, respectively. Suppose the X and Y contents in the plant changed by x% and −y%, respectively. Then the new X content in the plant, xE, is
+
+$$
+x_{E}=x_{A}·(100+x)%,
+$$
+
+and the new Y content in the plant,yE, is
+
+$$
+y_{E}=y_{A}·(100−y)%.
+$$
+
+The original $X:Y=x_{A}/y_{A}$, while the new $X:Y=x_{E}/y_{E}$. Since the percentage change in the X:Y equals to:
+
+$$
+\frac{new−original}{original}·100%=(\frac{new}{original}−1)·100%,
+$$
+
+substituting $x_{A}/y_{A}$ and $x_{E}/y_{E}$ for the original and the new, respectively, yields: 
+
+$$
+\frac{x_{E}/y_{E}}{x_{A}/y_{A}}−1=\frac{x_{E}·y_{E}}{x_{A}·y_{A}}−1=\frac{(x_{A}(100+x)%)·y_{A}}{x_{A}(y_{A}(100−y)%)}−1=\frac{100+x}{100−y}−1=\frac{x+y}{100−y}.
+$$
 
 An advantage of Equation 1 is that it holds true irrespective of whether the decrease in Y is driven by some reason applicable only to Y or by the increase in X, that is the dilution by X.

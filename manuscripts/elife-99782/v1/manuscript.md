@@ -7,12 +7,12 @@
 
 ### Affiliations
 
-1. https://ror.org/056pdzs28 Department of Integrative Structural and Computational Biology, Scripps Research and The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology Jupiter United States
-2. https://ror.org/00zat6v61 School of Basic Medical Sciences, Guangzhou Laboratory, Guangzhou Medical University Guangzhou China
-3. https://ror.org/02vm5rt34 Department of Biochemistry, Vanderbilt University Nashville United States
-4. https://ror.org/02vm5rt34 Center for Structural Biology, Vanderbilt University Nashville United States
-5. https://ror.org/02vm5rt34 Vanderbilt Institute of Chemical Biology, Vanderbilt University Nashville United States
-6. https://ror.org/02vm5rt34 Center for Applied AI in Protein Dynamics, Vanderbilt University Nashville United States
+1. Department of Integrative Structural and Computational Biology, Scripps Research and The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology Jupiter United States ([ROR:056pdzs28](https://ror.org/056pdzs28))
+2. School of Basic Medical Sciences, Guangzhou Laboratory, Guangzhou Medical University Guangzhou China ([ROR:00zat6v61](https://ror.org/00zat6v61))
+3. Department of Biochemistry, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+4. Center for Structural Biology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+5. Vanderbilt Institute of Chemical Biology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+6. Center for Applied AI in Protein Dynamics, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ What remains unclear is the structural basis of covalent inhibitor and synthetic
 
 ## Results
 
-## Covalent inhibitor and synthetic ligand cobinding influences PPARγ LBD function
+### Covalent inhibitor and synthetic ligand cobinding influences PPARγ LBD function
 
 We assembled a set of four non-covalent synthetic PPARγ ligands (BVT-13, MRL24, nTZDpa, and SR1664) previously shown to bind the PPARγ LBD via two molar equivalents or bind in the presence of a covalent ligand, GW9662 or T0070907 (Hughes et al., 2016; Figure 2A). In that previous study, we showed that an analog of MRL24, called MRL20, can activate PPARγ-mediated transcription and increase the expression of PPARγ target genes in differentiated mouse 3T3-L1 preadipocytes when cells were correlated with GW9662 or T0070907 covalent inhibitors. Using a time-resolved fluorescence resonance energy transfer (TR-FRET) biochemical ligand displacement assay, we verified the ligands bind PPARγ LBD with Ki values (Figure 2B) consistent with published data (Ostberg et al., 2004; Acton et al., 2005; Ge et al., 2002; Yu et al., 2005). These ligands are generally classified as partial agonists that activate PPARγ transcription with limited or weak efficacy, or non-agonists/antagonists that are transcriptionally neutral.
 
@@ -46,25 +46,405 @@ We assembled a set of four non-covalent synthetic PPARγ ligands (BVT-13, MRL24,
 
 We profiled the non-covalent synthetic ligands using TR-FRET coregulator peptide interaction assays (Figure 3A) to determine how the compounds affect interaction between the PPARγ LBD and peptides derived from NCoR1 corepressor and TRAP220/MED1 coactivator proteins, two coregulator proteins that influence PPARγ transcription in cells (Nolte et al., 1998; Bruning et al., 2007). Consistent with their partial agonist and/or antagonist profiles, the compounds did not significantly increase interaction with the TRAP220 coactivator peptide. Only two compounds, nTZDpa and SR1664, caused notable changes in the coactivator TR-FRET assay. Of these, nTZDpa showed a biphasic transition that may be due to the binding of more than one nTZDpa molecule, which is also suggested by 2D [1H,15N]-TROSY-HSQC NMR data where chemical shift perturbations (CSPs) are observed going from 1 to 2 equivalents of added ligand.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig3-v1.jpg)
+
+**Figure 3.:** (A) TR-FRET coregulator interaction assays performed using PPARγ LBD protein with or without preincubation of GW9662 or T0070907 to determine how the non-covalent synthetic ligands influence recruitment of peptides derived from NCoR1 corepressor protein and TRAP220/MED1 coactivator protein fit to a sigmoidal dose response equation or biphasic dose response equation for select cases where a biphasic response is observed (n=3; mean ± s.d.). (B) IC50 and EC50 values extracted from the TR-FRET coregulator interaction data. For curves showing a biphasic response, the higher affinity value is displayed; no value is displayed in cases where the dose response is flat. Error bars when present represent the fitted errors; some fits did not converge to a well-fitted error. See Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPARγ LBD in the absence or presence of nTZDpa added at the indicated molar equivalents.
+
 We next performed TR-FRET coregulator interaction assays using PPARγ LBD protein that was first pretreated with a covalent ligand, GW9662 or T0070907, followed by titration of the non-covalent synthetic ligands. When bound to GW9662 or T0070907, corepressor peptide binding affinity to the LBD is progressively strengthened upon binding to GW9662 and T0070907 while coactivator peptide affinity is weakened according to their neutral and repressive pharmacological activities, respectively (Orsi et al., 2023). As a result of this change in coregulator affinity, the baseline TR-FRET signal progressively increases in the corepressor assay and decreases in the coactivator assay. Titration of the synthetic ligands shows notable changes in the NCoR1 corepressor TR-FRET assay, where the ligands decrease NCoR1 peptide interaction with IC50 profiles (Figure 3B) with a similar rank-order to ligand Ki values (MRL24 <nTZDpa < SR1664<BVT.13). Relatively minor changes are observed for the ligands in the TRAP220/MED1 coactivator TR-FRET assay except for MRL24, which shows a concentration-dependent increase in coactivator peptide recruitment. Taken together, these data indicate the functional effect of synthetic ligands binding to PPARγ LBD in the presence of a covalent inhibitor is decreased corepressor peptide interaction. Notably, the synthetic ligand IC50 values are weakened (right shifted) more by the inverse agonist T0070907 compared to the neutral antagonist GW9662, suggesting that pharmacological repressive ligand efficacy may be involved in the ligand cobinding inhibitory mechanism.
 
-## NMR studies indicate covalent inhibitors allosterically weaken cobinding of non-covalent synthetic ligands by stabilizing a repressive conformation
+### NMR studies indicate covalent inhibitors allosterically weaken cobinding of non-covalent synthetic ligands by stabilizing a repressive conformation
 
 Two mechanisms may contribute to the covalent inhibitor mechanism of weakening synthetic ligand cobinding. The covalent ligands could structurally overlap or clash with synthetic ligand orthosteric binding modes, leading to alternate site binding with a reduced binding affinity. In this case, the relatively simple phenyl group (GW9662) to pyridyl group (T0070907) change would somehow lead to a more robust clash between the covalent inhibitor and synthetic ligand. Alternatively, the TR-FRET data suggested a different mechanism that involves the repressive efficacy of the covalent ligand. The pharmacological shift from a neutral covalent antagonist (GW9662) to repressive covalent inverse agonist (T0070907) may allosterically shift the dynamic LBD ensemble towards a transcriptionally repressive conformation, where helix 12 adopts a solvent occluded conformation within the orthosteric pocket that structurally clashes with orthosteric binding of a synthetic ligand. In this case, synthetic ligand binding to T0070907-bound PPARγ LBD would significantly influence the NMR-detected repressive LBD conformation where helix 12 is within the orthosteric pocket more than the active LBD conformation where helix 12 is solvent exposed and not occluding the orthosteric pocket.
 
 To structurally assess the non-covalent cobinding mechanism, we performed protein NMR footprinting by comparing 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPARγ LBD preincubated with a covalent ligand (GW9662 or T0070907) in the absence or presence of a synthetic ligand. Non-covalent ligand cobinding to GW9662-bound LBD shows NMR CSPs for select peaks (Figure 4A). In contrast, NMR CSPs are more pronounced for non-covalent ligand binding to T0070907-bound LBD (Figure 4B). Focusing on Gly399, a residue near the AF-2 surface that displays two T0070907-bound NMR peaks in slow exchange corresponding to the active or repressive LBD state but only one GW9662-bound active state peak (Hughes et al., 2012; Irwin et al., 2022; Orsi et al., 2023), cobinding of the non-covalent synthetic ligand causes the two NMR peaks in slow exchange to converge to one NMR peak. The NMR peaks corresponding to the repressive T0070907-bound conformation disappear, while the remaining peaks have NMR chemical shift values similar to the T0070907-bound active state but shifted along the active-repressive continuum (i.e. diagonal between the active and repressive T0070907-bound NMR peaks) that correlates with function (Orsi et al., 2023).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig4-v1.jpg)
+
+**Figure 4.:** Overlays of 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPARγ LBD preincubated with covalent inhibitor, (A) GW9662 or (B) T0070907, in the absence or presence of the indicated non-covalent synthetic ligands added at 2 molar equivalents. (C) Overlays of 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPARγ LBD in the presence of non-covalent synthetic ligands (singly bound state) compared to the cobound states with a covalent inhibitor.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPARγ LBD in the presence of the indicated ligands added at 2 molar equivalents.
+
 Among the synthetic ligands we tested, MRL24 cobinding shows an increase in TRAP220 coactivator peptide recruitment to T0070907-bound PPARγ LBD and the largest shift NMR-detected shift of the LBD conformational ensemble towards an active state. In contrast, nTZDpa cobinding shows an antagonist-like profile in the TR-FRET data, decreasing both NCoR1 corepressor and to a lesser degree TRAP220 coactivator interaction, and shifts the NMR-detected shift of the LBD conformational ensemble towards an intermediate state between the active and repressive T0070907-observed populations.
 
 Taken together, these NMR-detected observations support the mechanism whereby the repressive conformation helix 12 within the orthosteric pocket of T0070907-bound LBD is displaced to a solvent-exposed active conformation. Furthermore, comparison of 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled PPARγ LBD bound to the synthetic ligands alone, or cobound with GW9662 or T0070907, show similar spectral profiles with more subtle CSPs (Figure 4C) compared to the larger NMR CSPs observed when comparing 15N-labeled PPARγ LBD bound to each synthetic ligand alone or T0070907-bound LBD relative to GW9662-bound LBD (Figure 4—figure supplement 1; Hughes et al., 2012). This suggests the active conformation of the PPARγ LBD when bound to a synthetic ligand alone vs. cobound to a covalent ligand are similar, which is supported by the TR-FRET data (Figure 3) showing that synthetic ligand cobinding to T0070907-bound PPARγ LBD decreases corepressor peptide interaction.
 
-## Crystal structures reveal disparate alternate site ligand binding poses
+### Crystal structures reveal disparate alternate site ligand binding poses
 
 To visualize the ligand cobinding poses, we first crystalized complexes of PPARγ LBD covalently bound to GW9662 or T0070907, which produced solvent exposed active (chain A) and inactive (chain B) helix 12 conformations similar to apo-PPARγ LBD (Bae et al., 2016), then we added synthetic ligands to the crystals using soaking methods. We obtained seven crystal structures in total where each synthetic ligand was cobound to either GW9662 or T0070907, except for SR1664 for which we only obtained a structure cobound to T0070907 (Table 1, Figure 5—figure supplement 1). In most structures, electron density was observed for non-covalent and covalent ligands in both chains. However, in the nTZDpa structures, the covalent ligand was not observed in chain A; and nTZDpa was observed in chains A and B when cobound to GW9662, but only chain B when cobound to T0070907. The structures show high structural similarity to the transcriptionally active LBD conformation with rmsd values ranging from 0.77 to 1.03 Å (Table 2).
+
+**Table 1.**
+ X-ray crystallography data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PPARγ LBD bound to GW9662 and BVT.13</th>
+      <th>PPARγ LBD bound to GW9662 and MRL24</th>
+      <th>PPARγ LBD bound to GW9662 and nTZDpa</th>
+      <th>PPARγ LBD bound to T0070907 and BVT.13</th>
+      <th>PPARγ LBD bound to T0070907 and MRL24</th>
+      <th>PPARγ LBD bound to T0070907 and nTZDpa</th>
+      <th>PPARγ LBD bound to T0070907 and SR1664</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C 1 2 1</td>
+      <td>C 1 2 1</td>
+      <td>C 1 2 1</td>
+      <td>C 1 2 1</td>
+      <td>C 1 2 1</td>
+      <td>C 1 2 1</td>
+      <td>C 1 2 1</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>92.19, 61.99, 118.84</td>
+      <td>91.84, 62.22, 119.24</td>
+      <td>92.75, 62.22, 119.08</td>
+      <td>92.64, 61.78, 119.13</td>
+      <td>92.42, 61.63, 119.55</td>
+      <td>93.02, 62.16, 119.46</td>
+      <td>93.88, 62.68, 121.04</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 102.38, 90</td>
+      <td>90, 102.28, 90</td>
+      <td>90, 102.19, 90</td>
+      <td>90, 102.38, 90</td>
+      <td>90, 102.19, 90</td>
+      <td>90, 102.14, 90</td>
+      <td>90, 102.46, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>51.06–2.54(2.63–2.54)</td>
+      <td>49.06–2.48(2.57–2.48)</td>
+      <td>49.16–3.15(3.26–3.15)</td>
+      <td>51.02–2.49(2.58–2.49)</td>
+      <td>58.43–2.56(2.65–2.56)</td>
+      <td>58.39–2.73(2.83–2.73)</td>
+      <td>59.09–3.2(3.31–3.2)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.088 (1.159)</td>
+      <td>0.132 (1.791)</td>
+      <td>0.043 (0.212)</td>
+      <td>0.076 (1.083)</td>
+      <td>0.087 (1.367)</td>
+      <td>0.108 (1.621)</td>
+      <td>0.046 (0.263)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>12.06 (1.38)</td>
+      <td>8.54 (1.04)</td>
+      <td>15.02 (3.63)</td>
+      <td>14.71 (1.76)</td>
+      <td>12.80 (1.42)</td>
+      <td>10.28 (1.21)</td>
+      <td>10.70 (2.94)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.14 (96.97)</td>
+      <td>98.41 (96.93)</td>
+      <td>99.59 (100.00)</td>
+      <td>99.14 (99.22)</td>
+      <td>99.47 (98.55)</td>
+      <td>98.79 (98.27)</td>
+      <td>99.87 (100.00)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.6 (6.4)</td>
+      <td>6.5 (6.5)</td>
+      <td>2.0 (2.0)</td>
+      <td>6.6 (6.6)</td>
+      <td>6.6 (6.4)</td>
+      <td>6.6 (6.7)</td>
+      <td>2.0 (2.0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.54</td>
+      <td>2.48</td>
+      <td>3.15</td>
+      <td>2.49</td>
+      <td>2.56</td>
+      <td>2.73</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>No. unique reflections</td>
+      <td>21761</td>
+      <td>23546</td>
+      <td>11672</td>
+      <td>23269</td>
+      <td>21415</td>
+      <td>17965</td>
+      <td>11555</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree</td>
+      <td>25.2/31.6</td>
+      <td>24.2/29.8</td>
+      <td>21.6/29.8</td>
+      <td>23.6/29.5</td>
+      <td>23.7/27.8</td>
+      <td>25.0/30.4</td>
+      <td>20.6/28.3</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>4149</td>
+      <td>4065</td>
+      <td>3921</td>
+      <td>4123</td>
+      <td>4066</td>
+      <td>4096</td>
+      <td>4015</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>90</td>
+      <td>112</td>
+      <td>74</td>
+      <td>90</td>
+      <td>112</td>
+      <td>46</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>35</td>
+      <td>82</td>
+      <td>2</td>
+      <td>43</td>
+      <td>21</td>
+      <td>18</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>65.80</td>
+      <td>53.94</td>
+      <td>58.48</td>
+      <td>64.00</td>
+      <td>64.71</td>
+      <td>67.70</td>
+      <td>79.58</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>74.57</td>
+      <td>41.56</td>
+      <td>77.08</td>
+      <td>74.58</td>
+      <td>49.66</td>
+      <td>83.90</td>
+      <td>108.68</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>55.23</td>
+      <td>46.34</td>
+      <td>46.73</td>
+      <td>51.89</td>
+      <td>50.58</td>
+      <td>55.19</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+      <td>0.011</td>
+      <td>0.013</td>
+      <td>0.010</td>
+      <td>0.010</td>
+      <td>0.012</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.33</td>
+      <td>1.45</td>
+      <td>1.43</td>
+      <td>1.21</td>
+      <td>1.38</td>
+      <td>1.35</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>92.90</td>
+      <td>96.77</td>
+      <td>94.33</td>
+      <td>96.63</td>
+      <td>96.57</td>
+      <td>95.01</td>
+      <td>92.61</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0.20</td>
+      <td>0.20</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.20</td>
+      <td>0.20</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>PDB accession code</td>
+      <td>8ZFN</td>
+      <td>8ZFP</td>
+      <td>8ZFO</td>
+      <td>8ZFQ</td>
+      <td>8ZFS</td>
+      <td>8ZFR</td>
+      <td>8ZFT</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest-resolution shell._
+
+**Table 2.**
+ Structural rmsd comparison of ligand cobound structures to the transcriptionally active PPARγ LBD conformation (PDB 6ONJ).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PDB ID</th>
+      <th>rmsd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8ZFP</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>8ZFO</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>8ZFQ</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>8ZFS</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>8ZFR</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>8ZFT</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>8ZFN</td>
+      <td>1.03</td>
+    </tr>
+  </tbody>
+</table>
 
 We compared our cobound crystal structures to published structures of PPARγ LBD bound to non-covalent ligands—BVT.13 (Chrisman et al., 2018), MRL24 (Chrisman et al., 2018), nTZDpa Chrisman et al., 2018, and SR1664 alone (Lee et al., 2002) or cobound to NCOA1 coactivator peptide Agirre et al., 2023 —and alone to covalent ligands—GW9662 Johnson et al., 2000 and T0070907 (Irwin et al., 2022). Overall, the LBD conformations when bound to a single ligand or cobound two ligands are highly similar, with only relatively minor conformational changes in certain residue side chains. Although this is largely influenced by the crystallized forms used for soaking, these findings are also consistent with the aforedescribed 2D NMR data, which indicates a similar LBD conformation for these different liganded states.
 
 Focusing on the non-covalent synthetic ligand cobinding poses (Figure 5A), most of the structures surprisingly showed that the ligand adopts a cobound conformation similar to orthosteric binding pose observed in crystals structures of PPARγ LBD bound to the synthetic ligand alone (Figure 5B). Slight reorientations of portions of the synthetic ligand occur to accommodate the cobinding mode, as there are clashes between the synthetic orthosteric and covalent orthosteric ligand binding modes (Figure 5C). Of note, below we use ‘orthosteric binding pose’ to refer to the crystallized ligand conformation when PPARγ LBD is bound to a single ligand.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig5-v1.jpg)
+
+**Figure 5.:** (A) Ligand cobinding modes in crystal structures of PPARγ LBD. (B) Comparison of the non-covalent synthetic ligand orthosteric binding mode (singly bound) and ligand cobinding mode with a covalent inhibitor (transparent sticks). Differences between these binding modes are indicated with a black arrow. (C) Structural clashes observed between the covalent inhibitor orthosteric binding mode (transparent sticks) and the non-covalent synthetic ligand binding mode. PDB codes for crystal structures used in the overlays are listed in the Materials and methods section.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99782/elife-99782-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** All densities are shown from chain B of the cobound structures for (A) GW9662 and BVT.13, (B) T0070907 and BVT.13, (C) GW9662 and MRL24, (D) T0070907 and MRL24, (E) GW9662 and nTZDpa, (F) T0070907 and nTZDpa, and (G) T0070907 and SR1664.
 
 The BVT.13 cobinding pose is similar to its orthosteric binding pose located near the β-sheet. However, the 2,4-dichloro group clashes with the orthosteric GW9662 and T0070907 binding poses, specifically the phenyl and pyridyl groups respectively, resulting in a slight reorientation of the 2,4-dichloro group to accommodate the cobound state. The MRL24 cobinding pose is also similar to its orthosteric ligand binding pose, which was surprising given its larger scaffold size significantly clashes with the orthosteric covalent ligand binding pose. The nTZDpa cobinding pose is also similar to its orthosteric binding pose near the β-sheet. However, the 1-chloro group clashes with the orthosteric covalent ligand binding pose, resulting in a minor reorientation in the cobinding pose. Finally, the SR1664 cobinding pose reveals an alternate site binding mode similar to the crystallized binding pose in the presence of NCOA1 peptide, with a slight reorientation of the benzoic acid group that avoids a clash with the orthosteric T0070907 binding pose. Notably, these alternate site binding modes are distinct from the orthosteric SR1664 binding mode obtained without coregulator peptide, which shows a large steric clash with the orthosteric covalent ligand binding pose.
 
@@ -90,26 +470,190 @@ Our findings may have profound implications as these GW9662 and T0070907 have be
 
 ## Materials and methods
 
-## Materials and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PPARG (Homo sapiens)</td>
+      <td>PPARG</td>
+      <td>UniPro</td>
+      <td>P37231</td>
+      <td>Protein sequence</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0016</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>T0070907</td>
+      <td>Cayman Chemical</td>
+      <td>10026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GW9662</td>
+      <td>Cayman Chemical</td>
+      <td>70785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>MRL-24</td>
+      <td>MecChem Express</td>
+      <td>HY-122235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>nTZDpa</td>
+      <td>Tocris Bioscience</td>
+      <td>2150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SR1664</td>
+      <td>Cayman Chemical</td>
+      <td>11086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BVT-13</td>
+      <td>Sigma Aldrich</td>
+      <td>B4438</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PPARγ LBD</td>
+      <td>Hughes et al., 2012</td>
+      <td>Bacterial expression plasmid</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LanthaScreen Elite Tb-anti-His antibody</td>
+      <td>Thermo Fisher</td>
+      <td>#PV5895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TRAP220/MED1</td>
+      <td>LifeTein</td>
+      <td>synthesized</td>
+      <td>residues 638–656 (NTKNHPMLMNLLKDNPAQD) synthesized with or without a N-terminal FITC label with a six-carbon linker (Ahx) and an amidated C-terminus for stability</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NCoR1</td>
+      <td>LifeTein</td>
+      <td>synthesized</td>
+      <td>residues 2256–2,278 (DPASNLGLEDIIRKALMGSFDDK) synthesized with or without a N-terminal FITC label with a six-carbon linker (Ahx) and an amidated C-terminus for stability</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>NMRFx</td>
+      <td>Norris et al., 2016</td>
+      <td>Version 11.4 .x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Topspin</td>
+      <td>Bruker</td>
+      <td>Version 3 .x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism</td>
+      <td>GraShPad</td>
+      <td>Version 10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CCP4</td>
+      <td>Agirre et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Phaser</td>
+      <td>McCoy et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Phenix</td>
+      <td>Adams et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>COOT</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>PyMOL</td>
+      <td>Schrödinger</td>
+      <td>Version 3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>jFATCAT</td>
+      <td>RCSB</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials and reagents
 
 All compounds used in this study—GW9662, T0070907, BVT-13, nTZDpa, MRL24, and SR1664—were obtained from commercial sources including Cayman Chemicals, Tocris Bioscience, and Sigma-Aldrich with purity >95%. Peptides of LXXLL-containing motifs from TRAP220/MED1 (residues 638–656; NTKNHPMLMNLLKDNPAQD) and NCoR1 (2256–2278; DPASNLGLEDIIRKALMGSFDDK) with or without a N-terminal FITC label with a six-carbon linker (Ahx) and an amidated C-terminus for stability were synthesized by LifeTein.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Human PPARγ LBD (residues 203–477, isoform 1 numbering) was expressed in Escherichia coli BL21(DE3) cells using autoinduction ZY media or M9 minimal media supplemented with NMR isotopes (15NH4Cl) as a Tobacco Etch Virus (TEV)-cleavable N-terminal His-tagged fusion protein using a pET46 Ek/LIC vector (Novagen) and purified using Ni-NTA affinity chromatography and gel filtration chromatography. The purified proteins were concentrated to 10 mg/mL in a buffer consisting of 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, 5 mM tris(2-carboxyethyl)phosphine (TCEP), and 0.5 mM ethylenediaminetetraacetic acid (EDTA). Purified protein was verified by SDS-PAGE as >95% pure. For studies using a covalent orthosteric antagonist, PPARγ LBD protein was incubated with at least a~1.05 x excess of GW9662 or T0070907 at 4 °C for 24 hr to ensure covalent modification to residue C285, then buffer exchanged the sample to remove excess covalent antagonist and DMSO. Complete attachment of the covalent antagonist occurs within 30–60 min, as detected using an LTQ XL linear Ion trap mass spectrometer with an electrospray ionization source (Thermo Fisher Scientific).
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 For T0070907- and GW9662-bound PPARγ LBD complexes, protein was incubated at a 1:3 protein/ligand molar ratio in PBS overnight. Proteins were buffer exchanged to remove DMSO and concentrated to 10 mg/mL. All crystals were obtained after 3–8 days at 22 °C by sitting-drop vapor diffusion against 50 μL of well solution using 96-well format crystallization plates. The crystallization drops contained 1 μL of protein complex sample mixed with apo crystal seeds prepared by PTFE seed bead (Hampton research) and 1 μL of reservoir solution containing 0.1 M MOPS (pH 7.6) and 0.8 M sodium citrate for T0070907 or GW9662-PPARγ LBD complexes; 0.1 M MES (pH 6.5), 0.2 M ammonium sulfate. The non-covalent ligands (BVT.13, MRL24, nTZDpa, SR1664) were soaked into T0070907 or GW9662-PPARγ LBD complex crystals by adding 1.5 μL of compound at a concentration of 2 mM suspended in reservoir solution containing 5% DMSO for 5 days. Data were processed, integrated, and scaled with the programs Mosflm and Scala in CCP4 (Adams et al., 2010). The structure was solved by molecular replacement using the program Phaser (Emsley and Cowtan, 2004) implemented in the PHENIX package Johnson, 2018 and used previously published PPARγ LBD structure (PDB code: 1PRG/6ONI; Hughes et al., 2012; Bae et al., 2016) as the search model. The structure was refined using PHENIX with several cycles of interactive model rebuilding in COOT (Williamson, 2013).
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 2D [1H,15N]-TROSY HSQC NMR data of 200 µM 15N-labeled PPARγ LBD, pre-incubated with a 2 x molar excess of covalent ligand overnight at 4 °C, were acquired at 298 K on a Bruker 700 MHz NMR instrument equipped with a QCI cryoprobe in NMR buffer (50 mM potassium phosphate, 20 mM potassium chloride, 1 mM TCEP, pH 7.4, 10% D2O). Data were processed and analyzed using Topspin 3.0 (Bruker Biospin) and NMRViewJ (OneMoon Scientific, Inc; Johnson, 2018), respectively. NMR chemical shift assignments previously transferred from rosiglitazone-bound PPARγ LBD (Shang et al., 2019) to T0070907- and GW9662-bound states (Hughes et al., 2012; Irwin et al., 2022) were used in this study for well-resolved residues with conversed NMR peak positions to the previous ligand-bound forms using the minimum chemical shift perturbation procedure (Williamson, 2013).
 
-## Time-resolved fluorescence resonance energy transfer (TR-FRET) assay
+### Time-resolved fluorescence resonance energy transfer (TR-FRET) assay
 
 The time-resolved fluorescence resonance energy transfer (TR-FRET) assays were performed in black 384-well plates (Greiner) with 23 µL final well volume containing 4 nM His6-PPARγ LBD with or without covalently modification by GW9662 or T0070907, 1 nM LanthaScreen Elite Tb-anti-His Antibody (Thermo Fisher), and 400 TRAP220 or NCoR peptide in TR-FRET buffer (20 mM KPO4 pH 7.4, 50 mM KCl, 5 mM TCEP, 0.005% Tween 20). Compound stocks were prepared via serial dilution in DMSO, added to wells in triplicate, and plates were read using BioTek Synergy Neo multimode plate reader after incubating at 25 °C for 1 hr. The Tb donor was excited at 340 nm, its emission was measured at 495 nm, and the acceptor FITC emission was measured at 520 nm. Data were plotted using GraphPad Prism as TR-FRET ratio 520 nm/495 nm vs. ligand concentration and fit to sigmoidal dose-response equation — or biphasic or bell shaped dose response equations when appropriate, determined by comparison of fits to both equations and F test where the simpler model is selected if the p value is less than 0.05.
 
-## Structural comparisons to published crystal structures
+### Structural comparisons to published crystal structures
 
 Structural overlays were compared to crystals structures of PPARγ LBD bound to GW9662 (PDB 3B0R), T0070907 (PDB 6C1I; Irwin et al., 2022), GW9662 and NCoR1 peptide (PDB 8FHE; Orsi et al., 2023), T0070907 and NCoR1 peptide (6ONI) Hughes et al., 2012, BVT.13 (PDB 2Q6S) Chrisman et al., 2018, MRL24 (PDB 2Q5P; Chrisman et al., 2018), nTZDpa (PDB 2Q5S; Chrisman et al., 2018), SR1664 and NCOA1 peptide (PDB 5DWL) Agirre et al., 2023, and SR1664 (PDB 4R2U; Lee et al., 2002). Pairwise structural alignment and rmsd calculations of the cobound structures to the transcriptionally active (PDB 6ONJ) PPARγ LBD conformation was performed via the RCSB webserver (https://www.rcsb.org/alignment/) using the jFATCAT rigid structural alignment algorithm.

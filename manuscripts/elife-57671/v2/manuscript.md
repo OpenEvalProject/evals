@@ -28,7 +28,7 @@
 
 ## Abstract
 
-In Arabidopsis thaliana, winter is registered during vernalization through the temperature-dependent repression and epigenetic silencing of floral repressor FLOWERING LOCUS C (FLC) . Natural Arabidopsis accessions show considerable variation in vernalization. However, which aspect of the FLC repression mechanism is most important for adaptation to different environments is unclear. By analysing FLC dynamics in natural variants and mutants throughout winter in three field sites, we find that autumnal FLC expression, rather than epigenetic silencing, is the major variable conferred by the distinct Arabidopsis FLC haplotypes. This variation influences flowering responses of Arabidopsis accessions resulting in an interplay between promotion and delay of flowering in different climates to balance survival and, through a post-vernalization effect, reproductive output. These data reveal how expression variation through non-coding cis variation at FLC has enabled Arabidopsis accessions to adapt to different climatic conditions and year-on-year fluctuations.
+In Arabidopsis thaliana, winter is registered during vernalization through the temperature-dependent repression and epigenetic silencing of floral repressor FLOWERING LOCUS C (FLC). Natural Arabidopsis accessions show considerable variation in vernalization. However, which aspect of the FLC repression mechanism is most important for adaptation to different environments is unclear. By analysing FLC dynamics in natural variants and mutants throughout winter in three field sites, we find that autumnal FLC expression, rather than epigenetic silencing, is the major variable conferred by the distinct Arabidopsis FLChaplotypes. This variation influences flowering responses of Arabidopsis accessions resulting in an interplay between promotion and delay of flowering in different climates to balance survival and, through a post-vernalization effect, reproductive output. These data reveal how expression variation through non-coding cis variation at FLC has enabled Arabidopsis accessions to adapt to different climatic conditions and year-on-year fluctuations.
 
 ## Introduction
 
@@ -40,19 +40,47 @@ FLC expression and memory is influenced by natural non-coding cis polymorphism a
 
 Recent work has shown the importance of analysing flowering in natural field conditions (Figure 1A), ‘in natura’ (Kudoh, 2016). Such studies have highlighted how the influence of genes of major effect, including FLC, changes depending on the field environment (Wilczek et al., 2009; Fournier-Level et al., 2011; Duncan et al., 2015; Ågren et al., 2017; Taylor et al., 2019). In particular, the investigation of RNA levels in natura has identified genetic mechanisms in the field that were previously unknown from laboratory observations (Antoniou-Kourounioti et al., 2018; Song et al., 2018; Nagano et al., 2019). For example, field work in Sweden and the UK with the vernalization reference genotype Col FRISF2 and mutants in VIN3 (vin3-4) has shown that initial VIN3-independent FLC downregulation requires cold temperatures, whereas VIN3-mediated epigenetic silencing requires the absence of daily temperatures above 15°C (Hepworth et al., 2018). Autumn conditions greatly influence when epigenetic silencing initiates, sometimes leading to temporal separation of the two phases, which in laboratory constant-condition experiments and some natural environments occur concurrently (Hepworth et al., 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig1-v2.jpg)
+
+**Figure 1.:** (A) Map showing locations of field sites (dots) and the origins of five of the accessions (flowers) used in this study. These accessions, with the addition of Col-0, represent the five major and one intermediate (Löv-1) FLC haplotypes identified by Li et al., 2014. The lab genotype Col FRI was also used in this study as a vernalization-requiring reference. (B–D) Temperature profiles experienced by plants at the three field sites, North Sweden – Ramsta (B), South Sweden – Ullstorp (C) and Norwich, UK (D) (Source data 1, as from Hepworth et al., 2018 and Antoniou-Kourounioti et al., 2018). Flowers above temperature profile indicate the median time of bolting of each of the natural accessions and of Col FRI (legend at bottom left corner). Black dots below temperature profile indicate the timepoints when plant material was collected for expression analysis. Black arrows below temperature profiles indicate time of transfer to greenhouse with long-day, warm conditions to assess degree of vernalization based on bolting time.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Time to bolting for accessions in a heated, lit greenhouse without vernalization (NV) or after weeks of vernalization at constant 5°C (nW). (B) Number of rosette branches for plants shown in A. Median (central line), mean (cross), interquartile range (box), range (whiskers) and outliers (circles, values more than 1.5 times the interquartile range outside of the interquartile range). Plants that did not flower within 120 days of transfer not shown, see Source data 7. (C) Means per genotype and vernalization length treatment of rosette branch data presented in A and B, plotted against days to bolting. Error bars show s.e.m.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Time to bolting for selected accessions and NILs in a heated, lit greenhouse without vernalization (NV) or after weeks of vernalization at constant 5°C (nW). (B) Number of rosette branches for plants shown in C. Median (central line), mean (cross), interquartile range (box), range (whiskers) and outliers (circles, values more than 1.5 times the interquartile range outside of the interquartile range). Plants that did not flower within 120 days of transfer not shown, see Source data 7. (C, D) Means per genotype and vernalization length treatment of rosette branch data presented in A and B, plotted against days to bolting for; (C) accessions only and (D) NILs only. Error bars show s.e.m.
+
 Here, we exploit field studies in three climatically distinct locations, over two years, to define the roles of FLC cis polymorphism and known genetic regulators of FLC in VIN3-dependent and -independent phases of the vernalization response under natural conditions (Figure 2A). We hypothesised that accessions bearing different FLC haplotypes would show different flowering time responses to winter environments, and that this would be due, at least in part, to variation in the downregulation and silencing of FLC itself, arising from the cis polymorphism at FLC. Moreover, we expected variation in the FLC epigenetic silencing mechanism would play a particularly important role, as this mechanism has previously been shown to vary in natural accessions (Coustham et al., 2012; Wollenberg and Amasino, 2012; Duncan et al., 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental data for Col FRI in Norwich 2014–5, showing the temperature profile (top), FLC (middle) and VIN3 (bottom) expression. Different shades indicate the separation of the VIN3-dependent (grey) and -independent (black) phases of FLC silencing (Hepworth et al., 2018) and equivalent times in VIN3 and temperature profiles (as in Figure 1D). Expression data were normalised to the control sample for 2014–5 (see Materials and methods). N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2). Error bars show standard error of the mean (s.e.m). The initial measurement in the field (Starting levels), the rate of downregulation before induction of VIN3 expression (VIN3-independent, estimated from the slope of the fitted line) and the rate of downregulation after VIN3 induction (VIN3-dependent) are the three features that were analysed and compared for each genotype and treatment in the next panels, based on the data of Figure 2—figure supplement 1. A new feature is also shown, the FLC-post-vern, that is measured based on the flowering time from plants transferred to glasshouses with inductive conditions and how that relates to the FLC levels at the time of the transfer. (B–J) FLC downregulation analysed as level at first time point (Starting levels), and rate of downregulation (Shutdown – combining early and later timepoints for FLC data – see Materials and methods) for North (B–E) and South Sweden (F–G), or rate of downregulation before (VIN3-independent, dark bars) and after (VIN3-dependent, translucent bars) VIN3 induction for Norwich (H–J). Features of genotypes that are significantly different to the reference line Col FRI are indicated by * (for Starting levels, ANOVA with Dunnett’s post-hoc test, for Shutdown rates, Satterthwaite’s t-tests on REML Linear mixed model). p-values for all comparisons are given in Supplementary file 1. Rates of downregulation are given in units of ‘a.u. per day’, where the arbitrary units (a.u.) correspond to the normalised concentration of FLC mRNA, measured by qPCR. VIN3 induction started at ~58 days in Norwich (Figure 2—figure supplements 2–3). Expression data were normalised to the control sample for 2014–5 (see Materials and methods). N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2). Error bars show s.e.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Expression normalised to control sample for 2014–5 (see Materials and methods). (A–D) Norwich, (E–H) South Sweden, (I–L) North Sweden first planting, (M–P) North Sweden second planting. N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2). Error bars show s.e.m.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** VIN3 expression normalised to control sample for 2014–5 (see Materials and methods). N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2). Error bars show standard error of the mean (s.e.m).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Norwich, (B) North Sweden first planting, (C) South Sweden, (D) North Sweden second planting. N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2). Error bars show s.e.m.
 
 Our results demonstrate how in the field the major FLC haplotypes, differing only through non-coding variation, have different starting FLC levels and rates of response to autumn cold, but show more similar epigenetic silencing rates in winter. This results in effective repression of FLC by midwinter and post-winter flowering in most years, across haplotypes and climates. Our experiments also reveal effects of the FLC haplotypes on prevention of precocious flowering in warm years, and on reproductive success after winter via effects on branching and silique number. By studying gene expression across years and climates, we have been able to dissect how non-coding cis variation at FLC modulates flowering time and fitness in response to different natural fluctuating environments.
 
 ## Results
 
-## Field experiments
+### Field experiments
 
 Li et al., 2014 identified 20 FLC haplotypes across a worldwide panel of Arabidopsis accessions defined predominantly through non-coding SNPs. These haplotypes conferred different flowering time responses to vernalization at constant 5°C, with the accessions carrying them clustered broadly into ‘Rapid Vernalizing’ (RV) and ‘Slow Vernalizing’ (SV) types. To investigate their function in field conditions, we selected accessions to represent each of the five most populous haplotypes, representing more than 60% of tested accessions, as well as a further accession, Löv-1, for which there is evidence of local adaptation to the climate in the region of our North Sweden field site (Duncan et al., 2015; Qüesta et al., 2020). To compare these haplotypes in a common genetic background, we exploited extant and developed new near-isogenic lines (NILs) in which the FLC haplotype from each accession had been repeatedly backcrossed to Col FRISF2 (‘Col FRI’; Duncan et al., 2015; Li et al., 2015). We confirmed that these selected accessions and NILs show variation in their rate of response to time in constant cold in the laboratory and also found that they varied in branch response to vernalization, an effect mediated by FLC (Figure 1—figure supplements 1–2, Huang et al., 2013; Lazaro et al., 2018).
 
 These genotypes were tested across two years and three field sites, with the exception of three NIL lines, which were generated during the experiments (Figures 1A and 2B–J). The three field sites in Norwich, UK, in Ullstorp, Sweden (‘South Sweden’) and in Ramsta, Sweden (‘North Sweden’) were chosen to represent climates with different winters. Norwich has a temperate oceanic climate and a mild winter, Ullstorp has a warm-summer continental climate with a winter in which temperatures are often below freezing, and Ramsta is subarctic, usually with snow cover during winter (hence the 0°C flatline in temperatures in Figure 1B; Beck et al., 2018). The Swedish sites are also close to the source sites of several of the tested accessions; Vår2-6 and Ull2-5 in Skåne, near or at Ullstorp; Löv-1 near Ramsta (Figure 1A). In the second year of experimentation, we also included the vin3-1 mutant in the Col FRI background. The experiments ran from August/September 2014 until spring 2015 and again from August/September 2016 to the spring of 2017, with sowing times adjusted to each site (earlier in the colder climates). In the first year, two plantings were performed in North Sweden, two weeks apart. The temperatures that the plants experienced are shown in Figure 1B–D. We measured the levels of spliced and unspliced FLC, and mRNA levels of VIN3, to follow the progress of vernalization in the field. The transition to flowering (bolting) was assessed both in the field and by transfers to warm inductive conditions.
 
-## Natural variation in different phases of FLC silencing in the field
+### Natural variation in different phases of FLC silencing in the field
 
 Across all the genotypes we tested and all seven field experiments, as expected, FLC expression reduced over weeks in response to autumn and winter temperatures, and VIN3 was upregulated. Previously, we had noted that in 2014–5 in Norwich, substantial VIN3 upregulation did not occur until ~58 days after sowing, although temperature conditions were suitable for VIN3-independent FLC downregulation for most of this time (Hepworth et al., 2018). In the following field season, this pattern occurred again, with VIN3 upregulation delayed until 48 days after sowing (Antoniou-Kourounioti et al., 2018). For the Col FRI reference, we had found that we could fit two separate exponential decay curves to FLC; the first for the initial, slow, VIN3-independent phase and the second for the faster, VIN3-dependent phase of the downregulation (Figure 2A; Hepworth et al., 2018). Thus three features of the FLC profile contribute to the level of FLC at any time: firstly the ‘Starting level’ of FLC before vernalization, secondly the rate of downregulation in the initial VIN3-independent phase, and thirdly the rate of VIN3-dependent downregulation (Figure 2A). This pattern was consistent across the accessions and NILs, allowing us to investigate the effect of natural variation on different aspects of FLC regulation. The time of upregulation of VIN3, and thus the time of switching from the VIN3-independent to the VIN3-dependent shutdown, also affects FLC levels, but this was very similar between genotypes at the same site.
 
@@ -62,27 +90,55 @@ In Sweden 2014–5, at both sites the VIN3-independent and -dependent phases occ
 
 In the first year of field experiments we observed that a high proportion of the FLC shutdown occurred early in autumn, and furthermore, a lot of the variation in total FLC between lines was during that early phase. To maximise this period, and to extend the time that the plants spent in warmer autumn conditions, so mimicing potential climate change effects, we sowed the second field experiment earlier. For the 2016–7 experiment, we sowed plants in North Sweden and Norwich two weeks earlier and South Sweden three weeks earlier than for the 2014–5 season (Figures 1A and 3, Figure 3—figure supplements 1–2). The differences in daylight length due to this earlier sowing must be considered in direct comparisons between years, but the timing of both sowing dates was within the natural germination range. In North Sweden, this early sowing was followed by an usually warm autumn: September temperatures at the nearest weather station, Lungö, averaged 11.04°C between 1990–2016, whereas they were 12.60°C in 2016, the fourth highest year during that period (Swedish Meteorological and Hydrological Institute, 2020, www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer). This produced a delay in VIN3 induction similar to that seen in both years in Norwich (Figure 1A; Antoniou-Kourounioti et al., 2018). However, the first stage of shutdown was still more rapid in North Sweden than in Norwich, despite higher average temperatures in North Sweden (Figure 1A), so that both VIN3-independent and VIN3-dependent phases had similar rates, resulting in the appearance of a single decline. As in the previous experiment in Sweden, these rates of downregulation were generally similar between different genotypes, with higher FLC levels in SV accessions and the Var NIL due to higher starting levels (Figure 3, Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) FLC downregulation in Col FRI, Var2-6 and the Var NIL, as measured for Norwich and North Sweden in the winters of 2014–5 and 2016–7. (E–J) FLC downregulation as Starting level and VIN3-independent and dependent rates. Features of genotypes that are significantly different to the reference line Col FRI are indicated by * (for Starting levels, ANOVA with Dunnett’s post-hoc test, for Shutdown rates, Satterthwaite’s t-tests on REML Linear mixed model). p-values for all comparisons are given in Supplementary file 1. VIN3 induction started at: Norwich 2016, ~48 days, North Sweden 2016,~46 days, see (Figure 3—figure supplement 1) Expression data were normalised to the corresponding control sample (2016–7, see Materials and methods). N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 3). Rates of downregulation are given in units of ‘a.u. per day’, where the arbitrary units (a.u.) correspond to the normalised concentration of FLC mRNA. Error bars of bar plots show s.e., of line graphs show s.e.m.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Expression normalised to control sample for 2016–7 (see Materials and methods). (A–E) Norwich FLC mRNA, (F–J) Norwich VIN3 mRNA, (K–O) North Sweden FLC mRNA, (P–T) North Sweden VIN3 mRNA. N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 3). Error bars show s.e.m.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Hourly temperature readings from plant level in South Sweden 2016. (B) FLC mRNA levels in the Col FRI and vin3-1 FRI accessions over autumn, with vin3-1 showing less repression, especially later in the season. (C) Unspliced FLC levels. (D) VIN3 mRNA levels, with vin3-1 FRI showing no induction. Expression normalised to control sample for 2016–7 (see Materials and methods). N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 3). Error bars show s.e.m.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** VIN3 and CCA1 expression measured over 48 hr in the field glasshouse in Norwich in 2016 in Col FRI and the Var2-6 accession. CCA1 shows a circadian pattern throughout autumn in Col FRI, as does VIN3 when it is upregulated later in the year. In Var2-6, CCA1 expression is low, as is VIN3 expression later in the year. (A) Expression in Col FRI in October. (B) Expression in Col FRI in November. (C) Expression in Var2-6 in October. (D) Expression in Var2-6 in November. N = 3, Source data 3. Error bars show s.e.m.
+
 In Norwich, the patterns seemed to be largely repeated, though our statistical power was lower in the 2016–7 experiment due to fewer timepoints. Bro1-6, Löv-1, Var 2–6 and their NILs appeared to have higher starting FLC levels, though of these only Bro1-6 was significant in our analysis. Ull2-5, Var2-6, Edi-0 and Löv NIL2 showed slower VIN3-independent downregulation and Ull2-5 and Var2-6 also again showed slower VIN3-dependent downregulation (Figure 3). Other than a slower VIN3-independent rate in Norwich in Edi-0, the RV haplotypes behaved similarly to each other in 2016–7.
 
 The slower rate of the epigenetic silencing phase in Var2-6 was consistent across years in Norwich (Figures 2 and 3). Unlike the other accessions, this change in the VIN3-dependent phase in Var2-6 was consistently mirrored in lower levels of VIN3 (Figure 2—figure supplement 2, Figure 3—figure supplement 1). The circadian clock is an important regulator of VIN3 (Antoniou-Kourounioti et al., 2018; Hepworth et al., 2018), so we tested whether trans-variation within the clock contributes to the difference in VIN3 upregulation in Var2-6. When sampled over 48 hr in the Norwich field experiment (Figure 3—figure supplement 3), VIN3 expression in Var2-6 is much lower compared to our previous results from Col FRI (Figure 3—figure supplement 3B,D; Antoniou-Kourounioti et al., 2018), as is the expression of circadian clock component CIRCADIAN CLOCK ASSOCIATED1, the protein of which binds to the VIN3 promoter (CCA1; Figure 3—figure supplement 3; Nagel et al., 2015). Therefore, variation in the circadian clock may underlie some of the difference in FLC regulation in Var2-6.
 
-## Chromatin modifiers control FLC regulation in the field
+### Chromatin modifiers control FLC regulation in the field
 
 To understand the contribution of other trans factors to temperature registration at the different phases of FLC shutdown in the field, we exploited our contained site in Norwich to investigate mutants in genes known to affect FLC levels before cold or in response to cold (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig4-v2.jpg)
+
+**Figure 4.:** (A–F) FLC downregulation analysed as level at first time point (Starting levels, A, D), rate of downregulation before induction of VIN3 expression (VIN3-independent, dark bars, B, E) and rate of downregulation after VIN3 induction (VIN3-dependent, translucent bars, C, F). Features of genotypes that are significantly different to the reference line Col FRI are indicated by * (for Starting levels, ANOVA with Dunnett’s post-hoc test, for Shutdown rates, Satterthwaite’s t-tests on REML Linear mixed model). p-values for all comparisons are given in Supplementary file 1. Rates of downregulation are given in units of ‘a.u. per day’, where the arbitrary units (a.u.) correspond to the normalised concentration of FLC mRNA. VIN3 induction started at: Norwich 2014, ~58 days, see (Figure 4—figure supplement 1); Norwich 2016, ~48 days, see (Figure 4—figure supplement 2). All mutants are in the Col FRI background unless otherwise stated. Expression data were normalised to the corresponding control sample (for 2014–5 or 2016–7, see Materials and methods). N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2 and 3). Error bars show s.e.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Expression normalised to control sample for 2014–5 (see Materials and methods). (A–D) FLC mRNA, (E–H) unspliced FLC transcript, (I–L) VIN3 mRNA. N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2). Error bars show s.e.m.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Expression normalised to control sample for 2016–7 (see Materials and methods). (A–D) FLC mRNA, (E–H) unspliced FLC transcript, (I–L) VIN3 mRNA. N = 6 except where samples were lost to death or degradation (see Materials and methods and Source data 2). Error bars show s.e.m.
 
 As previously reported (Hepworth et al., 2018), vin3 mutants (vin3-4, vin3-1) did not show the increase in downregulation rate that marks the later epigenetic phase of silencing (Figure 4C,F). This effect was also seen for other mutants defective in epigenetic memory; vrn1-4; vrn2-1 (defective in the Su(z)12 homologue component of PRC2); vrn5-8 (defective in the VIN3-related protein VRN5); and lhp1-3, in accordance with this phase being required for epigenetic silencing. Loss of the H3K36 methyltransferase sdg8 generated the same effect, correlated with its delayed upregulation of VIN3 (Kim et al., 2010; Jean Finnegan et al., 2011).
 
 In the initial, VIN3-independent silencing phase, both Col fri (Col-0) and sdg8 FRI were hyper-responsive, consistent with a role for SDG8 with FRI in the establishment of the high FLC expression state (Hyun et al., 2017; Li et al., 2018). Mutants in the autonomous pathway, fca-9, fld-4 and fve-3, which upregulate FLC expression in the absence of FRI, had no significant effect on VIN3-independent silencing, but behaved mostly like Col FRI, although fve-3 reduced the rate of downregulation non-significantly in both years. The mutant with the most reduced VIN3-independent response was the B3-binding transcription factor VAL1, required for PRC2 action at FLC (Figure 4E; Qüesta et al., 2016; Yuan et al., 2016), followed closely by the vrn mutants, vrn1-4 and vrn5-8, and a non-significant but consistent trend for vrn2-1. Conversely, the lhp1-3 and vin3 mutants do not show clear impairment in the early phase of downregulation. Overall, it seems that chromatin modifiers are required for both phases of downregulation in the field.
 
-## Autumnal expression of FLC is the major variable in vernalization response
+### Autumnal expression of FLC is the major variable in vernalization response
 
 To identify which of the three features of FLC regulation is the major variable that defines the different haplotypes in different climates, we estimated the coefficient of variation for the rates of shutdown and starting levels for all the natural accessions, NILs, and vin3-1 where available (from Figure 2, 3, Figure 2—figure supplement 1, Figure 3—figure supplement 1, Supplementary file 2). In Sweden, the starting levels are significantly more variable than the shutdown rates (p-value=2.8⋅10-8 for the first year, Figure 5A), but in Norwich, the VIN3-independent shutdown rate is more variable than the starting levels and VIN3-dependent rate (p-value=2.1⋅10-5 for 2014, p-value=5.0⋅10-4 for 2016, Figure 5B). Combining Norwich and Sweden data, the early shutdown rate is again most variable (p-value=1.9⋅10-10 for 2014, p-value=2.0⋅10-5 for 2016, Figure 5C). On the other hand, there was no significant difference in the variability of the starting levels (Figure 5D) between the different field sites and years, and similarly for the shutdown rates (Figure 5E-G). What we describe as the starting level was measured after some days in the field, so it is not equivalent to a non-vernalized control. Some FLC shutdown, most likely VIN3-independent, will have occurred at that time. Therefore, it seems that the combination of these two determinants (starting levels and rate of VIN3-independent shutdown), which together we call ‘autumnal expression’, provides most of the variation in FLC levels between these accessions and NILs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig5-v2.jpg)
 
-**Figure 5.:** FLC levels across sites and years.(A) The coefficient of variation for the rates of shutdown and for the starting levels in all Sweden experiments in the first year. (B) Similarly in Norwich 2014 (top) and 2016 (bottom) but separately for the VIN3-independent (V-indep) and VIN3-dependent (V-dep) shutdown rates. (C) Comparison of the variability of the starting levels and the shutdown rates, separating V-dep and V-indep where appropriate, combining data from all sites in 2014 (top) and 2016 (bottom). ‘Shutdown’ refers to the combined V-dep/V-indep shutdown rate that was fitted in Sweden 2014, and so is not present in the 2016 results. (D) The coefficients of variation of the starting levels for each site/year. (E) The coefficients of variation of the single shutdown rates for the different plantings and sites in Sweden in 2014. (F–G) Similarly, for Sweden 2016 and Norwich in both years, separating the V-indep rates (F) and V-dep (G). Data from Source data 2 and 3.
+**Figure 5.:** (A) The coefficient of variation for the rates of shutdown and for the starting levels in all Sweden experiments in the first year. (B) Similarly in Norwich 2014 (top) and 2016 (bottom) but separately for the VIN3-independent (V-indep) and VIN3-dependent (V-dep) shutdown rates. (C) Comparison of the variability of the starting levels and the shutdown rates, separating V-dep and V-indep where appropriate, combining data from all sites in 2014 (top) and 2016 (bottom). ‘Shutdown’ refers to the combined V-dep/V-indep shutdown rate that was fitted in Sweden 2014, and so is not present in the 2016 results. (D) The coefficients of variation of the starting levels for each site/year. (E) The coefficients of variation of the single shutdown rates for the different plantings and sites in Sweden in 2014. (F–G) Similarly, for Sweden 2016 and Norwich in both years, separating the V-indep rates (F) and V-dep (G). Data from Source data 2 and 3.
 
-## Vernalization is saturated before midwinter in the field
+### Vernalization is saturated before midwinter in the field
 
 Having characterised how the haplotypes vary in their FLC dynamic response to field conditions, we investigated whether this variation had an effect on the floral transition in the field.
 
@@ -90,21 +146,216 @@ In the 2014–5 season, all accessions and NILs bolted relatively synchronously 
 
 The observed flowering times suggested that the vernalization requirement is normally saturated during the winter in the field. To test this hypothesis, in 2016–7 we transferred plants from field conditions to heated, long-day conditions at different stages, and scored the length of time until floral buds were visible at the shoot apex (bolting). There was wide variation and substantial delay to bolting within the genotypes for plants transferred to the warm greenhouses early in autumn, at all sites, indicating that vernalization requirement had not been saturated at this point (Figure 6A,C,E). Indeed, in both Swedish sites many plants did not flower within the experimental time (136 days after transfer for South, and 104 days for the North) when transferred 25 days after sowing. Some genotypes (particularly Löv-1) required more than 46 days in the field before most individuals were competent to flower in warm, long-day conditions (Figure 6—figure supplement 3). There was also clear variation between genotypes in their time to flowering in the earlier transfers. However, as winter progressed, time to bolt after transfer reduced quantitatively and became more uniform for plants within and between each genotype (Figure 6B,D,F), although vernalization saturated at different rates in different genotypes (Figure 6—figure supplements 3–4). All accessions and NILs bolted broadly synchronously and rapidly after removal on 21st December in Norwich, in North Sweden NILs and accessions were almost synchronous by 24th November, in line with previous findings (Duncan et al., 2015), and in South Sweden FRI-containing lines were broadly synchronous by the last transfer on 17th December (Figure 6, Figure 6—figure supplements 3–4). Therefore, in current climates almost all Arabidopsis plants have probably saturated their requirement for vernalization before midwinter, ensuring that flowering time is not delayed the following spring.
 
-## Relationship of FLC expression and timing of flowering
+![Figure 6.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-v2.jpg)
+
+**Figure 6.:** (A–F) Bolting time for accessions and NILs after transfer to floral-induction conditions from ‘natural’ winter 2016–7, in (A) Norwich 21/10/16 (B) Norwich 21/12/16 (C) South Sweden 01/10/2016 (D) South Sweden 17/12/16 (E) North Sweden 06/09/2016 (F) North Sweden 24/11/2016. Plants that did not flower by 14/02/17 (C, D) or 23/12/16 (E, F) are shown as DNF and dead plants are indicated. Plots show the histogram of numbers of plants as the width of violin plots. A line connects the measurements to indicate the range. Flowering time of genotypes that are significantly different to the reference line Col FRI are indicated by * (ANOVA with Dunnett’s post-hoc test). p-values for all comparisons are given in Supplementary file 3. (G–H) North Sweden 2016 transfers for accessions and NILs, (G) mean time to bolting after transfer to floral-inductive conditions plotted against mean FLC expression per genotype at transfer, Norwich 2016–7, linear regression R2 = 0.68, p<0.001. (H) Mean time to bolting after transfer to floral-inductive conditions plotted against mean FLC expression per genotype at transfer, North Sweden 2016–7. Genotypes that did not bolt within 205 days not shown, linear regression R2 = 0.85, p<0.001. N = 12 plants except where plants died or (E, H) did not bolt within 205 days (Source data 5). Error bars for G and H show s.e.m.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Time to bolting for each genotype in the ‘field’ glasshouse in Norwich 2014–5 experiment. (B) Number of rosette branches for plants shown in A. (C) Number of rosette and cauline branches for plants shown in A. Plots A-C show the histogram of numbers of plants as the width of violin plots. A line connects the measurements to indicate the range. N = 36, except where plants did not germinate, Source data 4. Features of genotypes that are significantly different to the reference line Col FRI are indicated by * (ANOVA with Dunnett’s post-hoc). p-values for all comparisons are given in Supplementary file 3.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A, D, F) Time to bolting for each genotype, showing the histogram of numbers of plants as the width of violin plots. A line connects the measurements to indicate the range. Flowering time of genotypes that are significantly different to the reference line Col FRI are indicated by * (ANOVA with Dunnett’s post-hoc). p-values for all comparisons are given in Supplementary file 3. (B, E, G) Percentage of germinated plants of each genotype surviving to date of bolting, plotted against the mean date of bolting for that genotype. (B) South Sweden, Generalised Linear Models (GLMs) for binomial distribution, survival vs. date of bolting, p=0.0416. (C) South Sweden, percentage survival vs. mean FLC mRNA per genotype (normalised to control sample for 2014–5) on 30th March, GLM for binomial distribution, ns. (E, G) GLM for binomial distribution, ns. N = 36, except where plants died before flowering, Source data 4. Error bars on scatter plots show s.e.m.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Bolting time from sequential transfers to long-day warm conditions from the field, for each genotype and transfer. Plots show the histogram of numbers of plants as the width of violin plots. A line connects the measurements to indicate the range. Flowering time of genotypes that are significantly different to the reference line Col FRI are indicated by * (ANOVA with Dunnett’s post-hoc). p-values for all comparisons are given in Supplementary file 3. (A–D) North Sweden, transfer dates: 06/09/2016, 04/10/2016, 01/11/2016, 24/11/2016, experiment ended on 23/12/16. (E–H) South Sweden, transfer dates: 01/10/2016, 22/10/2016, 19/11/2016, 17/12/2016, experiment ended on 14/02/17. N = 12, except where plants died before flowering, Source data 5.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Bolting from sequential transfers to long-day warm conditions from the field, for each genotype and transfer. The experiment was run until all plants died. Plots show the histogram of numbers of plants as the width of violin plots. A line connects the measurements to indicate the range. Flowering time of genotypes that are significantly different to the reference line Col FRI are indicated by * (ANOVA with Dunnett’s post-hoc). p-values for all comparisons are given in Supplementary file 3. Transfers dates are (A) 21/10/2016, (B) 03/11/2016, (C) 17/11/2016, (D) 30/11/2016, (E) 21/12/2016, (F) 26/01/2017. N = 12, except where plants died before flowering, Source data 5.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A–F) Mean time to bolting of plants moved to a greenhouse lit for 16 hr, and maintained at 22°C/18°C light/dark, plotted against the mean FLC mRNA expression from plants sampled in the Norwich field condition greenhouse on the day of transfer, with linear regression lines plotted for each genotype (the slope ‘m’ being the ‘post-vern’ value, with the y-intercept being the effect on days to bolt if the plants had no detectable FLC, see Table 1). For all accessions and NILs over 3–6 transfers at different times during the winter, R2 = 0.68 for linear regression, p<0.001. N = 6 for expression data, N = 12 for bolting data, except where plants died, Source data 3 and 5. Error bars show s.e.m.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Mean time to bolting of plants moved to a greenhouse lit for 16 hr, and maintained at 22°C, plotted against the mean FLC mRNA expression from plants sampled in the North Sweden field on or adjacent to the day of transfer, with linear regression lines plotted for each genotype (the slope ‘m’ being the ‘post-vern’ value, with the y-intercept being the effect on days to bolt if the plants had no detectable FLC, see Table 1). (A–F) For all accessions and NILs over 3–6 transfers at different times during the winter, R2 = 0.68 for linear regression, p<0.001. For D, there is no regression for Löv-1 as no Löv-1 plants from the first two transfers flowered within the 120 days of the experiment. N = 12 for bolting data, except where plants died, Source data 3 and 5. Error bars show s.e.m.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** Total seed mass for Col FRI, NILs and the vin3-4 FRI mutant after transfer to floral-induction conditions from ‘natural’ winter in Norwich 2016–7 on 21/10/16 and 17/11/16 (flowering time in Figure 6—figure supplement 4A, C). Plots show the histogram of numbers of plants as the width of violin plots. The time to bolt per plant negatively correlated with seed mass produced, p<0.001, Kenward-Roger’s t-test on REML Linear mixed model with date of transfer as a random factor. N = 12 for transfer 21/10/2016, N = 8–12, mode = 12 for transfer 17/11/2015 due to losses, see Source data 5.
+
+#### Relationship of FLC expression and timing of flowering
 
 We tested whether the observed effects on flowering time were linked to the varying levels of FLC in transferred plants. Across genotypes, in Norwich and North Sweden 2016–7, the time to the floral transition after transfer from the field correlated closely with FLC expression at the time of transfer, as expected (Norwich, R2 = 0.68, p<0.001, North Sweden, R2 = 0.85, p<0.001, linear regression Figure 6G,H). Accessions, NILs and mutants with high starting levels and slower downregulation rates generally bolted later and took longer to saturate their vernalization requirement, indicating that the variation in FLC dynamics in autumn has a phenotypic effect.
 
 However, each accession differed in the relationship between FLC levels at transfer and subsequent bolting time (Figure 6—figure supplements 5–6). For example, for Löv-1 and the Löv NIL1, the time to bolt for a given level of FLC at transfer is longer than for Col FRI, but for Edi-0, it is shorter (Figure 6—figure supplements 5–6). This analysis allowed us to extract a further feature of FLC regulation (Figure 2A). We named this feature the FLC-post-vern value (m in Table 1, days-to-bolting-per-FLC-unit), representing the slope of the regression between FLC spliced RNA levels at the time of transfer (x-axis) to the subsequent floral transition time for these transferred plants (y-axis, as for Figure 6G and H). This means that, for a given level of FLC at the time of transfer, a genotype with a higher m ‘post-vern’ value flowers later than one with a lower m value.
 
+**Table 1.**
+ Linear regression relationship between bolting time and FLC mRNA expression, as shown in Figure 6—figure supplements 5–6, where days to bolting = m[FLC mRNA] + c, and m is the ‘FLC-post-vern’ value and $c$ is the y-intercept fitted constant relating to non-FLC-mediated bolting delay (dependent on the transfer dates and conditions of each experiment).NA – estimate only based on two data points, so no standard error is calculable. n.d. – no data. No value given for Col-0 as initial FLC value is too low for useful estimation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Norwich m (days-to-bolting-per-FLC-unit)</th>
+      <th>Norwich Std. error</th>
+      <th>Norwich p-value</th>
+      <th>North Sweden M</th>
+      <th>North Sweden Std. error</th>
+      <th>North Sweden p-value</th>
+      <th>Average m ‘post-vern’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Col FRI</td>
+      <td>36.5</td>
+      <td>5.5</td>
+      <td>0.007</td>
+      <td>39.0</td>
+      <td>17.6</td>
+      <td>0.269</td>
+      <td>37.8</td>
+    </tr>
+    <tr>
+      <td>vin3-1 FRI</td>
+      <td>51.0</td>
+      <td>3.9</td>
+      <td>0.049</td>
+      <td>67.3</td>
+      <td>27.6</td>
+      <td>0.247</td>
+      <td>59.1</td>
+    </tr>
+    <tr>
+      <td>Bro NIL</td>
+      <td>36.1</td>
+      <td>0.3</td>
+      <td>0.006</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>36.1</td>
+    </tr>
+    <tr>
+      <td>Edi NIL</td>
+      <td>33.5</td>
+      <td>2.7</td>
+      <td>0.051</td>
+      <td>39.8</td>
+      <td>1.1</td>
+      <td>0.017</td>
+      <td>36.7</td>
+    </tr>
+    <tr>
+      <td>Löv NIL1</td>
+      <td>40.7</td>
+      <td>5.0</td>
+      <td>0.079</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>40.7</td>
+    </tr>
+    <tr>
+      <td>Löv NIL2</td>
+      <td>27.4</td>
+      <td>0.8</td>
+      <td>0.019</td>
+      <td>23.8</td>
+      <td>0.5</td>
+      <td>0.014</td>
+      <td>25.6</td>
+    </tr>
+    <tr>
+      <td>Ull NIL</td>
+      <td>24.8</td>
+      <td>1.0</td>
+      <td>0.025</td>
+      <td>42.1</td>
+      <td>9.3</td>
+      <td>0.138</td>
+      <td>33.4</td>
+    </tr>
+    <tr>
+      <td>Var NIL</td>
+      <td>25.7</td>
+      <td>0.9</td>
+      <td>0.022</td>
+      <td>22.3</td>
+      <td>1.6</td>
+      <td>0.046</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <td>Bro1-6</td>
+      <td>27.0</td>
+      <td>0.3</td>
+      <td>0.007</td>
+      <td>37.3</td>
+      <td>2.1</td>
+      <td>0.036</td>
+      <td>32.1</td>
+    </tr>
+    <tr>
+      <td>Edi-0</td>
+      <td>16.4</td>
+      <td>3.2</td>
+      <td>0.124</td>
+      <td>48.3</td>
+      <td>9.2</td>
+      <td>0.119</td>
+      <td>32.4</td>
+    </tr>
+    <tr>
+      <td>Löv-1</td>
+      <td>113</td>
+      <td>19</td>
+      <td>0.110</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>113</td>
+    </tr>
+    <tr>
+      <td>Ull2-5</td>
+      <td>31.4</td>
+      <td>1.2</td>
+      <td>0.024</td>
+      <td>16.9</td>
+      <td>8.5</td>
+      <td>0.297</td>
+      <td>24.2</td>
+    </tr>
+    <tr>
+      <td>Var2-6</td>
+      <td>63.1</td>
+      <td>6.9</td>
+      <td>0.070</td>
+      <td>35.0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>49.0</td>
+    </tr>
+  </tbody>
+</table>
+
 We calculated this value individually for each genotype from both the Norwich and the North Sweden transfers (Figure 6—figure supplements 5–6), using the equation given in the legend for Table 1. There was substantial variation between the different glasshouses in the estimates for the accessions (Table 1), suggesting that there is a large genotype-by-environment effect on this parameter due to non-FLC effects. Moreover, for Col-0 and Löv-1, estimations of m were unreliable (p>0.1) due to flowering occurring rapidly even without vernalization (as FLC values are too low to cause measurable differences in flowering: Col-0) or not at all (as in North Sweden FLC values were too high to allow flowering and its timing to be measured within this experiment: Löv-1). Practically, therefore, although any genotype with functional FLC should have a theoretical post-vern value, it can only be measured for high-FLC genotypes under conditions in which they will nevertheless flower.
 
 The m post-vern value also varied between the NILs and the common Col FRI parent within each site, suggesting that this relationship is also influenced by cis variation at FLC. Within the lines in the common Col FRI background, the estimates correlated more closely across the two glasshouse environments, with the exception of the Ull NIL. Therefore, within the Col FRI background, we can quantify the effect of FLC levels on bolting time in warm, long-photoperiod environments, and find that the FLC haplotypes have different effects after vernalization, as well as different responses to vernalization. This effect may be linked to reactivation of FLC expression in the warm, as the vin3-1 and Löv-1 NIL1, both of which have reactivation phenotypes (Sung and Amasino, 2004; Duncan et al., 2015; Qüesta et al., 2020), have high ‘post-vern’ values.
 
-## High autumnal FLC reduces precocious flowering in a warm autumn
+### High autumnal FLC reduces precocious flowering in a warm autumn
 
 At all sites in the 2014–5 season, and in South Sweden in 2016–7, across all accessions and NILs, flowering in the field occurred after midwinter (Figure 6—figure supplements 1–2, Figure 7—figure supplement 1), by which time FLC levels were below the level at which they influenced flowering time in the transfers (Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 6). Therefore, although we observed natural variation in FLC levels in autumn (Figure 5), at most sites in most years the conditions were such that this did not result in flowering time variation. However, in the warm North Sweden autumn 2016–7 many of the plants with the Col background (NILs, Col FRI, and vin3-1 FRI) transitioned to flowering early, by the 18th November, before winter and snowfall (Figure 7A). This precocious bolting was rare in the SV accessions and was much reduced even in the RV accession Edi-0. Over all the genotypes, the percentage of plants transitioning to flowering before winter negatively correlated with genotype FLC expression on 5th October, one day after the first recorded bolting for plants in the field (p<0.001, Generalised Linear Models (GLMs) for binomial data, Figure 7B). This was before substantial upregulation of VIN3, indicating that this variation in FLC must derive from the combination of the starting levels and VIN3-independent shutdown. Within the Col FRISF2 background the Var and Löv FLC haplotypes, the NILs with the highest FLC levels during autumn (Figure 3—figure supplement 1), substantially reduced precocious bolting (p=0.005, binomial proportions test, Figure 7A). Thus, variation in FLC starting expression and shutdown (collectively called autumnal expression) results in variation in the alignment of flowering with the seasons.
 
-## Variation in FLC expression correlates with fitness in the field
+![Figure 7.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig7-v2.jpg)
+
+**Figure 7.:** (A) Percentage of plants bolting before winter in the North Sweden 2016 experiment by genotype. Plants in the field were less likely to flower precociously before winter (18th November 2016) if they are accessions from more northerly latitudes or, to a lesser degree, if they are FLC introgression lines containing FLC haplotypes from SV accessions. (B) The percentage of plants transitioning to flowering before winter per genotype negatively correlated with FLC expression (normalised to control) on 5th October (R2 = 0.59, p=0.0058). (C) Total number of siliques produced per genotype, showing contribution from plants that bolted before winter and plants that bolted after. Within the Col FRI genetic background there was no overall penalty in average silique number for surviving plants bolting before vs. after winter (92 and 77 per plant respectively, not significant in Mann-Whitney U test). (D) Mean silique production in plants surviving to set seed positively correlated to their mean rosette branch production for Col FRI genetic background genotypes (NILs and vin3-4; R2 = 0.56, p-value=0.002). (E) Rosette branch production of Col FRI genotypes surviving to set seed is strongly negatively correlated with the FLC post-vern value for that genotype as from Table 1 (R2 = 0.86, p-value<0.002). (F) Total number of siliques produced by Col FRI background genotypes plotted against FLC post-vern, linear regression for post-vern effect alone, R2 = 0.35, p-value=0.1. N = 36 plants sown (A–C), n for surviving plants (D–F) varies per genotype, see Source data 6.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Time to bolting for each genotype in (A) Norwich, (B) South Sweden and (C) North Sweden in 2016–7. Plots show the histogram of numbers of plants as the width of violin plots. A line connects the measurements to indicate the range. N = 24 for Norwich, N = 32 for South Sweden, N = 36 for North Sweden, Source data 6. For Norwich 2016–7, nearby building works resulted in increased light pollution at night, possibly causing earlier flowering.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/57671/elife-57671-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Survival, branching and silique set in North Sweden are all correlated to aspects of FLC regulation. (A) Survival over winter of plants that bolted before winter in different genotypes vs. survival of plants that did not bolt before winter. (B) Survival to seed set plotted against FLC levels (normalised to control sample for 2016–7) in the field in North Sweden 2016 (p<0.003, Generalised Linear Models (GLMs) for binomial data). (C) Percentage mortality before setting seed was high for all genotypes. (D) Mean number of siliques for plants surviving to set seed that bolted before or after winter. (E) Survival in the field does not correlate with FLC post-vern for the Col FRI background (GLM with binomial distribution, p-value>0.1). (F) Date of bolting in the field does not correlate with FLC post-vern for the Col FRI background (linear regression, p-value>0.1). (G) Silique production by surviving Col FRI background plants correlates with number of rosette branches, though more weakly at the individual level than at the genotype average level (linear regression, R2 = 0.23, p-value=0.004). (H) Rosette branching of surviving Col FRI background plants does not correlate with FLC mRNA as measured on 5th October in the field (linear regression, p-value>0.1). (I) Total number of siliques produced by Col FRI background genotypes plotted against percentage survival of that genotype to point of seed set, linear regression for survival effect alone, R2 = 0.64, p-value=0.019. N = 36 plants sown (A, B, C, E, I) subsequent data based on survivors to seed set (D, G, H) and plants that survive to bolting (F), see Source data 6. Error bars are s.e.m.
+
+### Variation in FLC expression correlates with fitness in the field
 
 Across all genotypes, plants that bolted precociously were not observed to set seed before winter. In this year (2016) and at this site (N.Sweden), mortality was high, compared to other years and sites, and plants that bolted precociously were less likely to survive the winter (42% of bolting plants survived, whereas 67% of non-bolting plants survived to spring, p<0.001, binomial proportions test, Figure 7—figure supplement 2A). Therefore, high FLC levels in October correlated with higher survival to seed set in the field (p<0.003, GLM for binomial data, Figure 7—figure supplement 2B).
 
@@ -134,17 +385,17 @@ In summary, our detailed analysis of the different phases of FLC silencing throu
 
 ## Materials and methods
 
-## Plant materials
+### Plant materials
 
 Sources of previously described mutant lines and transgenics are presented in Supplementary file 4. Requests for materials should be addressed to Caroline Dean.
 
-## NILs
+#### NILs
 
 All near-isogenic lines were produced by six rounds of backcrossing to the Col FRI parent, selecting for the introgressed FLC in each generation, before one round of selfing and selection of homozygous families.
 
-## Experimental conditions
+### Experimental conditions
 
-## Field experiments
+#### Field experiments
 
 Field experiments have been described previously (Antoniou-Kourounioti et al., 2018 (2016-7 winter); Hepworth et al., 2018 (2014-5 winter)). Briefly, seeds were stratified at 4°C for three days. For gene expression measurements, for all field sites and sowing dates and timepoints within them, six replicate tray-cells were sown using a block-randomised design within 5.7 cm 28 cell trays (Pöppelman, Lohne, Germany), and where each replicate included material from at least three plants. For flowering time, plants were thinned to a single plant per cell in 3.9 cm 66 cell trays (Pöppelman). Trays were watered when necessary.
 
@@ -160,11 +411,11 @@ For all expression analysis except the 48 hr sampling (Figure 3—figure supplem
 
 Temperature was recorded at plant level at each site with TinyTag Plus two dataloggers (Gemini Data Loggers (UK) Ltd, Chichester, UK). Bolting was scored when flower buds were visible at the shoot apical meristem. For the North Sweden 2016–7 field experiment, plants were scored for survival and flowering in the field from planting to December 2016, and then from March to May 2017. Plants were harvested and scored for branching and silique production after the end of flowering, in July 2017.
 
-## Branching analysis
+#### Branching analysis
 
 ; Seeds were sown on soil, stratified after sowing for three days at ~4–5°C, and transferred to a Norwich long-day glasshouse set to 18°C/15°C, 16/8 hr light/dark conditions for 7 days before being returned to vernalization conditions (a 4°C growth chamber under short day, low light conditions; 8/16 hr light/dark) for 12, 8, 4, and 0 weeks. Sowing was staggered so that after vernalization all plants were transferred to glasshouse conditions simultaneously. Plants were scored for their flowering time, total branch number, cauline branch number and rosette branch number. In all cases, plants were randomised into blocks and at least three replicate plants for each accession/cultivar per treatment were scored for their flowering and branching phenotypes. Primary rosette and cauline branch number were scored at senescence.
 
-## RNA extraction and QPCR
+### RNA extraction and QPCR
 
 RNA extraction and QPCR for field experiments were performed as described in Hepworth et al., 2018 and Antoniou-Kourounioti et al., 2018. Field data were unified across sites and timepoints within the yearly datasets and normalised to a synthetic control sample, as described in Hepworth et al., 2018, to give the ‘normalised concentration’ reported in the results. QPCR results were analysed using LinReg (Ruijter et al., 2009), and normalised to the geometric means of At5g25760 (‘PP2A’) and At1g13320 (‘UBC’) control genes (Czechowski et al., 2005; Yang et al., 2014).
 
@@ -172,7 +423,7 @@ QPCR samples that showed high Cp values (UBC Cp >28 for LinReg analysis) of the
 
 Primers used are described in Supplementary file 5.
 
-## Statistics
+### Statistics
 
 The rates of FLC shutdown were estimated using linear regression, as shown in Figure 2A. For Norwich 2014–5 and for all sites in 2016–7, a separate rate was calculated for timepoints before the point of induction of VIN3 (Norwich 2014: ~58 days, Norwich 2016: ~48 days, South Sweden 2016: ~35 days, North Sweden: ~46 days) and for those after. For North and South Sweden 2014–5, when the VIN3 induction was not delayed, all timepoints were combined, excluding measurements after 155 days. These timepoints were during or after the snow, when temperatures started to increase and reactivation was observed in some genotypes.
 

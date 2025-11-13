@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Phycobilisome (PBS) is the main light-harvesting antenna in cyanobacteria and red algae. How PBS transfers the light energy to photosystem II (PSII) remains to be elucidated. Here we report the in situ structure of the PBS–PSII supercomplex from Porphyridium purpureum UTEX 2757 using cryo-electron tomography and subtomogram averaging. Our work reveals the organized network of hemiellipsoidal PBS with PSII on the thylakoid membrane in the native cellular environment. In the PBS–PSII supercomplex, each PBS interacts with six PSII monomers, of which four directly bind to the PBS, and two bind indirectly. Additional three ‘connector’ proteins also contribute to the connections between PBS and PSIIs. Two PsbO subunits from adjacent PSII dimers bind with each other, which may promote stabilization of the PBS–PSII supercomplex. By analyzing the interaction interface between PBS and PSII, we reveal that α LCM and ApcD connect with CP43 of PSII monomer and that α LCM also interacts with CP47' of the neighboring PSII monomer, suggesting the multiple light energy delivery pathways. The in situ structures illustrate the coupling pattern of PBS and PSII and the arrangement of the PBS–PSII supercomplex on the thylakoid, providing the near-native 3D structural information of the various energy transfer from PBS to PSII.
+Phycobilisome (PBS) is the main light-harvesting antenna in cyanobacteria and red algae. How PBS transfers the light energy to photosystem II (PSII) remains to be elucidated. Here we report the in situ structure of the PBS–PSII supercomplex from Porphyridium purpureum UTEX 2757 using cryo-electron tomography and subtomogram averaging. Our work reveals the organized network of hemiellipsoidal PBS with PSII on the thylakoid membrane in the native cellular environment. In the PBS–PSII supercomplex, each PBS interacts with six PSII monomers, of which four directly bind to the PBS, and two bind indirectly. Additional three ‘connector’ proteins also contribute to the connections between PBS and PSIIs. Two PsbO subunits from adjacent PSII dimers bind with each other, which may promote stabilization of the PBS–PSII supercomplex. By analyzing the interaction interface between PBS and PSII, we reveal that αLCM and ApcD connect with CP43 of PSII monomer and that αLCM also interacts with CP47' of the neighboring PSII monomer, suggesting the multiple light energy delivery pathways. The in situ structures illustrate the coupling pattern of PBS and PSII and the arrangement of the PBS–PSII supercomplex on the thylakoid, providing the near-native 3D structural information of the various energy transfer from PBS to PSII.
 
 ## Introduction
 
@@ -33,17 +33,61 @@ In situ cryo-ET in combination with cryo-focused ion beam (cryo-FIB) milling is 
 
 ## Results
 
-## Visualization of PBS and PSII on the thylakoid membrane
+### Visualization of PBS and PSII on the thylakoid membrane
 
 The red alga, P. purpureum, was cultured under low-light conditions to mimic its natural habitat (Cunningham et al., 1989) and to increase the population of regularly distributed PBS–PSII supercomplexes (Liu et al., 2008). Cells were harvested in the exponential phase of growth and were immediately vitrified on cryo-EM grids to minimize environmental affection (Kaňa et al., 2014). Cryo-FIB milling was then used to prepare thin lamellae with ~150 nm thickness for cryo-ET data collection. We first imaged the whole cells. The tomogram slice shows that most PBS–PSII supercomplexes are packed in an orderly fashion on the thylakoid membranes (Figure 1—figure supplement 1A). Subsequently, 51 cryo-ET tilt series were collected at higher magnification at the ordered distribution regions for three-dimensional (3D) reconstruction and further sub-tomogram averaging.
 
 Consistent with the conventional transmission electron microscope ultrastructures of other red algae (Gantt and Conti, 1965; Gantt et al., 1968; Tsekos et al., 1996; Wanner and Kost, 1980), PBSs are sandwiched between parallel thylakoid membranes. In the cross-section view, adjacent PBSs were attached to the upper and lower thylakoid membrane in opposite directions (Figure 1A,B,D). In the two orthogonal views, opposite PBSs are stacked into linear rows respectively (Figure 1C,E, Figure 1—figure supplement 1B,C, Video 1, Video 2, Video 3). These PBS rows are arranged in parallel, forming a large two-dimensional pattern covering the thylakoid membrane. In the cross-section view, densities are evident at the bottom of PBSs, which are embedded within the thylakoid membrane. Protrusions are visible on the luminal side (Figure 1A). The features of these densities are consistent with the location and morphology of PSIIs (Ago et al., 2016; Chang et al., 2015; Lange et al., 1990). From this, we can infer that these represent PSIIs. Due to the small size of the extrinsic domain of PSI, we could not distinguish convincing PSI densities in our tomograms.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative tomogram slice in cross-section view. The box represents magnified details of PBS, a PSII dimer, the thylakoid membrane, and the lumen. (B) Spatial mapping of the PBS–PSII supercomplex (purple) and 3D segmentation of the thylakoid membrane (blue). (C–E) The magnified three presents perpendicular views of the organization of PBS–PSII in the thylakoid membrane boxed in (B). Thylakoid membrane, light blue; PBS, gray; Lateral hexamer, green; A1–A2 pair, purple; B1–B2 pair, cyan; C1–C2 pair, yellow; connector 1, coral; connector 2, khaki; connector 3, red.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative cross-section view of the whole cell. The PBS–PSII supercomplexes are neatly packed in most regions, while some PBS–PSII supercomplexes are randomly distributed. (B) Representative tomogram XYZ plane in cross-section view shows the longitudinal view of PBS–PSII supercomplex arrays. (C) Representative tomogram XYZ plane in cross-section view shows the grazing view of PBS–PSII supercomplex arrays. The red dashed boxes in (B) and (C) indicate the double PBS–PSII particles used for sub-tomogram averaging. The yellow cross indicates the center of XYZ plane. The scale bars indicate 500 nm in (A), 50 nm in (B) and (C).
+
+![Video 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-video1.mp4.jpg)
+
+**Video 1.:** Related to Figure 1. Scale bar, 100 nm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-video2.mp4.jpg)
+
+**Video 2.:** Related to Figure 1—figure supplement 1B. The color boxes indicate the two types of the tight perforations. Scale bar, 100 nm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/69635/elife-69635-video3.mp4.jpg)
+
+**Video 3.:** Related to Figure 1—figure supplement 1C. Scale bar, 100 nm.
+
 To verify the PSII densities, we performed sub-tomogram averaging of two adjacent PBS particles on the same linear array (indicated in the red boxes of Figure 1—figure supplement 1B,C) and generated a structure at a resolution of 15.6 Å (Figure 2A, Figure 2—figure supplement 1A,B). The recently determined 2.82 Å single-particle PBS (PDB code 6 KGX) (Ma et al., 2020) was well-fitted into our sub-tomogram map (Supplementary file 1), except for the individual extra PE β subunit between the Rod e and Rod d' (Figure 2—figure supplement 2A,B). The map’s slice view shows a similar PSII dimer array structure resembling that of the red algae Porphyridium cruentum (Lange et al., 1990; Figure 2—figure supplement 3A,B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-v1.jpg)
+
+**Figure 2.:** (A) The density map of double PBS–PSII structures at a resolution of 15.6 Å, presented in two perpendicular views. The center-to-center distance of two adjacent PBSs is approximately 345 Å. Two random circles indicated by black or red dashed lines mark the six PSII monomers binding with each of the two PBSs. PBS1 is associated with PSII monomer A1, A2. B1, B2, C1, and C'2. PBS2 connects with A'1, A'2, B'1, B'2, C'2, and C’’1. The surface threshold is 0.09. (B) The density map of the PBS–PSII supercomplex at a resolution of 14.3 Å fitted with the single-particle model of PBS (EMDB code EMD-9976, PDB code 6 KGX) and X-ray structure of PSII (PDB code 4YUU), presented in two perpendicular views. The lateral hexamer was fitted with the single-particle model of the Rod a distal PE hexamer. The surface threshold is 0.059. (C) The magnified image shows that the two PsbO subunits bind with each other at the interface of the adjacent PSII dimers (Inset). A map of PSII dimers A and B, segmented from (B) with the same surface threshold level. The arrow indicates the binding site.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The ‘gold-standard’ Fourier shell correlation (FSC) curves calculated between two halves of datasets for the double PBS–PSII supercomplex (15.6 Å), the PBS–PSII supercomplex (14.3 Å), and the PBS–PSII supercomplex after post-processing (13.2 Å). Resolution was estimated at FSC = 0.143 (Indicated with the dashed). (B) Local resolution map of the double PBS–PSII supercomplex map estimated by ResMap using the color scheme shown in the right panel. (C) Local resolution map of the PBS–PSII supercomplex map. (D) Local resolution map of the PBS–PSII supercomplex after post-processing.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Conformational change of β-subunit interspersed between Rod e and Rod d'. β-subunitSPA in green is the model built with the map of single particle analysis, and β-subunitCryoET in red is the fitting model of the sub-tomogram averaging map. The surface threshold of the sub-tomogram map is 0.065. (C) The magnified bottom view of PSII dimers A and B in the PBS–PSII supercomplex (Surface threshold, 0.059) shows that the two adjacent PsbO subunits (colored in blue) bind with each other. (D) The fitting result of PsbO and PsbO’ shown in the perpendicular view of (C). (E) The electrostatic analysis of the two connecting PsbO subunits. Electrostatic surface potential was calculated with PyMol/APBS and contoured at ±5 kT/e.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Overall structure of the double PBS–PSII supercomplex (surface threshold, 0.09). (B) Slice view shows the row of PSII dimers indicated in (A). (C) The overall structure of the PBS–PSII supercomplex (surface threshold, 0.065). The asterisks represent PSII dimer C densities. (D) Slice view shows the luminal protrusions of PSII dimer row indicated in (C), which indicates that PSII dimer C of the PBS–PSII supercomplex connects with PSII dimers A and B in the same way that of the double PBS–PSII supercomplex. (E) Overall structure of the PBS–PSII supercomplex (surface threshold, 0.21) shows the lateral hexamers connect with the bottom PC hexamer of Rod a and the second PE hexamer of Rod e. (F) Top slice view of the PBS–PSII supercomplex shows the lateral hexamers (indicated with arrows) are round discs with stronger densities in the center. (G) Side slice view of (F). (H) The other perpendicular slice view of (F) shows the Ha hexamers indicated with arrowheads have a ring-like structure consisting of (αβ)3 trimers and a central cavity filled with the N-terminal Pfam00427 domain of linker proteins, which resemble the lateral hexamers in (F). Scale bars, 20 nm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Sequence homogeneity alignment of each subunit of PSII between P. purpureum (Pp) and C. caldarium (Cc) indicates that most of the subunits are highly conserved. (B) Maximum likelihood (ML) phylogenetic analysis of cyanobacteria, red algae, diatom, green algae, and higher plants based on CP47 (PsbB) protein of PSII. The PSII structures of all the analyzed organisms have been resolved (PDB ID: 6KAD, 5XNM, 5MDX, 1VYK, 6AE9, 4YUU, 5OJ3, 5ZZN, 6JLL, etc.). CP47 of Gloeobacter violaceus is introduced as the outgroup. The software is Mega v5.05 and amino acid substitution model is Jones–Taylor–Thornton model. Bootstrap 1000 is used to compute the consensus tree, and computed distance 0.05 is labeled on the bottom left corner. Red algae Pp and Cc, marked with red rectangle, are more closely related than other phyla, such as cyanobacteria, diatom, green algae, and higher plants. (C) Sequence alignment of the N-terminal CP43 subunit of PSIIs of Pp and Cc.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) The bottom view of the PBS–PSII supercomplex fitting model shows that the face plane of the PSII dimers A and B rotates approximately 14° along the PBS core plane. The centers of the two PSII dimers shift approximately 3 nm along the plane of PBS core. (B) The side view of the PSII dimers A and B fitting model shows the center-to-center distance between the PSII dimers A and B is approximately 12.4 nm.
 
 To find the most likely PSII atomic resolution structure to fit the subtomogram map, we analyzed all of the reported X-ray models in a phylogenetic analysis (Figure 2—figure supplement 4B). PSII from the red algae C. caldarium (PDB code 4YUU) (Ago et al., 2016) is, evolutionarily, most similar to P. purpureum, and almost all the subunits show high homogeneity (ranging from 35% to 100%) with that of P. purpureum (Figure 2—figure supplement 4A,C). We then docked the X-ray model of PSII from C. caldarium into the sub-tomogram map, which shows a high cross-correlation coefficient (all above 80%) between the model and sub-tomogram map (Supplementary file 1). Thus, we further confirmed these densities as PSIIs.
 
-## The overall structure of the PBS–PSII supercomplex
+### The overall structure of the PBS–PSII supercomplex
 
 Our sub-tomogram map also reveals a different stoichiometry of PBS and PSII from previous reports (Arteni et al., 2008; Cunningham et al., 1989; Ohki et al., 1987; Takahashi et al., 2009). In the sub-tomogram map, two PBSs (labeled as PBS1 and PBS2) interact with a linear array of PSII dimers (labeled as A, B, C, A', B', C', C", Figure 2A (left panel), Figure 2—figure supplement 3B). Considering the map contains two PBSs, we named the structure double PBS–PSII supercomplex. After mapping this sub-tomogram map back into the tomogram, we observed long linear arrays of the PBS–PSII supercomplexes on the thylakoid membrane (Figure 1B–E). In this array, the PBS/PSII ratio is 1:6, that is, one PBS with six associated monomeric PSIIs periodically repeated along with the linear array. In the double PBS–PSII map, each PBS is directly anchored to a pair of PSIIs dimers, i.e., PBS1 on the A–B pair and PBS2 on the A’–B’ pair (Figure 2A, right panel). The C' dimer connects the A–B pair to the A’–B’ pair, while the two PSIIs in the C' dimer respectively interact with the lateral disc-like densities on both sides of PBS, which have features of PBS hexamer (discussed later), and thus indirectly attach to PBS1 and PBS2 (Figure 2A). The slice view shown in Figure 2—figure supplement 3B indicates that the PSII dimers are arranged repeatedly in parallel. Thus, C and C’’ should also be the PSII dimer, although their densities are weak. The structure shows PBS1 is associated with PSII monomer A1, A2, B1, B2, C1, and C’2, and PBS2 connect with A’1, A’2, B’1, B’2, C’1, C’’2. Therefore, each PBS is associated with six monomeric PSIIs.
 
@@ -53,15 +97,39 @@ The improved PBS–PSII structure enables us to confirm that PSII dimers A and B
 
 To analyze the lateral densities on both sides of PBS connecting PBS to PSII dimer C, we further improved the resolution of the PBS–PSII supercomplex to 13.2 Å after post-processing from the 14.3 Å resolution map (Figure 2—figure supplement 1D). The slice view of the PBS–PSII map shows that the densities are round discs with solid densities in the center (Figure 2—figure supplement 3E–G). These features are reminiscent of the structure of the extra hexamer found in the single-particle cryo-EM structure of P. purpureum PBS. Moreover, the lateral densities are of the same size and shape as the extra hexamer. As all eight extra hexamers in P. purpureum PBS are PE hexamers, we hypothesize that the lateral density could be contributed by a PE hexamer, which is referred to as the lateral hexamer (Figure 2B). Further analysis indicated that the lateral hexamer connects with the bottom hexamer of Rod a and the second hexamer of Rod e, which are the PC and PE hexamers, respectively (Figure 2—figure supplement 3E).
 
-## Interaction pattern between PBS and PSII
+### Interaction pattern between PBS and PSII
 
 In the PBS–PSII map, extensive interfaces between PBS core and PSII are observed. To better analyze the potential interactions, we docked the atomic models of PBS and PSII into the map and extracted the densities of PBS core cylinders A, A' and PSII dimers A, B (Figure 3A,B; Figure 3—figure supplement 1). ApcD and αLCM are two well-documented terminal emitter subunits of PBS (Zhao et al., 1992; Zlenko et al., 2019). We observed the interfaces between αLCM, ApcD, and PSII dimers A, B from the surface clip views (Figure 3, Video 4).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) A segmentation map of two basal cylinders of the PBS core (labeled as a and a', respectively) and PSII dimers A and B (each monomer is labeled as A1, A2, B1, and B2, respectively). Each basal cylinder consists of three APC trimers, a1, a2, and a3. This map was segmented from the PBS–PSII supercomplex at a surface threshold level of 0.065. (C–F) Surface clip views of the segmented PBS–PSII supercomplex show the details of the interaction between the αLCM, ApcD, and CP43, CP47. The clip planes were indicated in (A). The surface threshold was 0.065. CP43A1, CP43 of PSII dimer A1; CP47B1, CP47 of PSII dimer B1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** To analyze the connections between PBS and PSII, we extracted the part two densities from the PBS–PSII supercomplex, include PBS core cylinders a, a', PSII dimers A and B. The extraction was acquired by subtracting Part 1 from the PBS–PSII supercomplex.
+
+![Video 4.](https://cdn.elifesciences.org/articles/69635/elife-69635-video4.mp4.jpg)
+
+**Video 4.:** Related to Figure 3.
+
 As was shown in the proximal and middle clip views, there is a wide interface between αLCM and CP43 of PSII dimer A1 (CP43A1), as well as a relatively small interface between αLCM and CP47 of PSII dimer B1 (CP47B1) (Figure 3C–E). These observations suggested the interactions between αLCM with CP43 and CP47, consistent with the energy transfer from PBS to CP43 and CP47 detected in red algae and cyanobacteria (Ueno et al., 2017). The different sizes of the interface may provide a structural view that energy transfer from PBS to CP43 is the main pathway in red alga (Ueno et al., 2017). The other terminal emitter subunit ApcD was also involved in energy transfer from PBS to PSII (Ashby and Mullineaux, 1999; Calzadilla et al., 2019; Ley and Butler, 1977b). The middle and distal clip views showed an interaction interface between ApcD and CP43A1 (Figure 3E,F), which may mediate the energy transfer from ApcD to PSII.
 
-## Supplementary interactions intermediated by three connector proteins
+### Supplementary interactions intermediated by three connector proteins
 
 After docking the atomic models of PBS, PSII dimer, and two lateral hexamers into the density map of PBS–PSII supercomplex, we still observed three extra densities that are not occupied by any model. Two of them are associated with the PBS and PSII (Figure 4—figure supplement 1A), and the third one is associated with the lateral hexamer and PSII (Figure 4—figure supplement 1B). Since we could not identify the proteins corresponding to these densities, we temporarily deemed them ‘connectors’ (connectors 1–3; Figure 4, Figure 4—figure supplement 2A–E). Nevertheless, their positions in the map suggest that these proteins likely participate in the formation of the PBS–PSII supercomplex (Figure 4) as well as the assembling of the PBS–PSII array on the thylakoid membrane (Figure 1C–E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig4-v1.jpg)
+
+**Figure 4.:** (A) Overall structure of the PBS–PSII supercomplex (surface threshold of 0.065), highlighting the PBS core, Rod a of PBS, connector 1, and connector 2 between PBS and PSII. (B, C) The magnified clip views of connector 1 show that connector 1 interacts with the β2 subunit of the a3 trimer layer and the CP47, D1, and D2 subunits of PSII monomer B2 (labeled with CP47B2, D1B2, and D2B2, respectively). (D, E) The magnified clip views of connector 2 show that connector 2 mediates the connections between the bottom hexamer of Rod a and D1, D2, and CP47 of PSII monomer B1 (labeled with D1B1, D2B1, and CP47B1, respectively). (F) The overall structure of double PBS–PSII supercomplex (surface threshold = 0.09) highlights the linkage of connector 3 between PBS’s lateral hexamer and PSII’s bridging dimer C shown in Figure 2A. (G, H) The density of connector 3 and its putative connections with PBS’s lateral hexamer and PSII from two perpendicular views. According to the slice view of the PBS–PSII supercomplex, some densities of connector 3 are inserted into the central cavity of the lateral hexamer (Figure 4—figure supplement 2E); this cavity density is not colored here.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) To analyze the density map, we carefully docked the cryo-EM model of PBS, X-ray model of PSII dimer, and two lateral hexamers into the PBS–PSII supercomplex map. Two extra solid densities cannot be assigned (Indicated with black arrows). Both the two densities are associated with the PBS core and with PSII. The surface threshold of the sub-tomogram map is 0.065 (B) In the double PBS–PSII supercomplex, another extra density cannot be assigned (Indicated with a red arrow). The density is associated with the lateral hexamer and PSII. The surface threshold of the sub-tomogram map is 0.09.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69635/elife-69635-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** To measure the geometry of the three connectors’ density map, we segmented the densities of connectors 1 and 2 from the PBS–PSII supercomplex with post-processing and that of connector 3 from the double PBS–PSII supercomplex. The PBS–PSII supercomplex (surface threshold of 0.181) was filtered with Gaussian at a width of 3.8. The outcomes are then indicated with three mutually perpendicular views. (A) Segmented map of the PBS–PSII supercomplex. (B) Geometry of connector 1. (C) Geometry of connector 2. (D) Segmented density map of connector 3 from the double PBS–PSII supercomplex (surface threshold = 0.124). (E) Geometric character of connector 3. The small part of connector 3 inserts into the lateral hexamer, and the big part extends outside and connects with PSII.
 
 We segmented out the three connectors from the PBS–PSII supercomplex map and find that they are all rod-like structures, but different in size (Figure 4—figure supplement 2). The surface clip views of connector 1 show that connector 1 contacts the β2 subunit of the PBS core layer a3 and the CP47 of PSII monomer B2 (CP47B2), as well as D1B2 and D2B2 (Figure 4B,C). Connector 2 is smaller than connector 1 (Figure 4D,E, Figure 4—figure supplement 2A–C). One side of connector 2 interacts with the basal hexamer of Rod a, and the other side with D1B1, D2B1, and CP47B1 in the neighboring PSII monomer B1 (Figure 4D,E). Thus, both connector 1 and connector 2 connect with PBS and PSII, suggesting that they may consolidate the anchor of PBS on PSII dimer.
 
@@ -69,7 +137,7 @@ Different from connectors 1 and 2, connector 3 mediates a connection between the
 
 ## Discussion
 
-## Organization of PBS and PSIIs
+### Organization of PBS and PSIIs
 
 PBS is classified into different structural types, including hemidiscoidal (Chang et al., 2015), hemiellipsoidal (Arteni et al., 2008), block type (Zhang et al., 2017), bundle type (Guglielmi et al., 1981) and rod type (Chen et al., 2009). These results in diverse organizational structures between PBS and PSII. Hemidiscoidal PBSs of the Synechocystis strain PCC 6803 and the Anabana sp. strain PCC 7120 are associated with one PSII dimer (Chang et al., 2015; Rast et al., 2019). The rod-like AmPBS is composed of four hexamers and is adjacent to one PSII dimer (Chen et al., 2009; Niedzwiedzki et al., 2019). The hemiellipsoidal PBS connects with monomeric PSII at a ratio from 1:1 to 1:4 (Arteni et al., 2008; Cunningham et al., 1989; Lange et al., 1990; Ohki et al., 1987; Takahashi et al., 2009). Using in situ cryo-ET, our work reports the native PBS–PSII supercomplex structure of red algae. The structure reveals a different ratio (1:6) of hemiellipsoidal PBS and PSII on the native thylakoid membrane (Figure 5A,B). Each PBS directly interacts with two PSII dimers and indirectly interacts with two PSII monomers from two peripheral bridging PSII dimers, forming the interconnected array of the PBS–PSII supercomplex with the support of three unassigned connectors. With 14° rotation and 30 Å shift of PSII dimer pair relative to PBS core, the terminal emitters, ApcD and αLCM, in the two symmetric a2a3 and a2'a3' hexamers of the core, connect with CP43 of PSII monomers A1 and B2, and CP47 in PSII monomers B1 and A2 (Figure 5). A similar geometry of the PBS–PSII supercomplex was reported in cyanobacteria and red algae possessing hemidiscoidal PBS, suggesting that hemidiscoidal PBSs use the same strategy for energy transfer from PBS to PSII (Arteni et al., 2009; Arteni et al., 2008). This structure also enables the extra lateral hexamers in P. purpureum to associate with PSII monomers C1 and C'2 through connector 3 (Figure 5A,B).
 
@@ -79,7 +147,7 @@ PBS is classified into different structural types, including hemidiscoidal (Chan
 
 In this work, we focused on the PBS–PSII structures in the ordered distribution regions, where both PBS and PSII are neatly arranged according to a strict stoichiometry of 1:6. Previous research conducting fraction freezing analysis (Lange et al., 1990) has found that the PBS–PSII complexes on random distribution regions could have lower stoichiometry (between 1:1 and 1:4), which are represented as an PSII monomer, dimer, trimer, or double dimer. These observations show the possible diversity of PBS–PSII organization on the thylakoids.
 
-## The connection between PBS and PSIIs
+### The connection between PBS and PSIIs
 
 Extensive studies have shown that αLCM and ApcD are the terminal emitters of the energy coupling between PBS and PSII (Zhao et al., 1992; Zlenko et al., 2019). In our structures, we detailed the connections of αLCM and ApcD with PSII, which contribute to the energy flows from PBS to PSII (Figure 3). ApcF was also reported to be involved in the energy transfer in cyanobacteria (Calzadilla et al., 2019; Chang et al., 2015). However, we could not find a solid connection between ApcF and PSII. Thus, it is very likely that ApcF only plays an auxiliary role for direct energy transfer to reaction centers in red algae.
 
@@ -89,7 +157,7 @@ We found a class of PSII dimer C (PSII dimer C, C', and C" in Figure 2A) that do
 
 The energy transfer from PBS to PSII could follow multiple pathways (Figure 5). The two terminal emitters, αLCM and ApcD, funnel light energy to PSII by distinct structural connections. The chromophore of αLCM mediates energy transfer via interaction with CP43 and CP47. In contrast, the chromophore of ApcD is mediated by interactions with CP43. Since connector 2 connects with both the basal PC hexamer of Rod a and CP47 of PSII, we speculate that alternative routes of energy transfer bypassing the PBS core to PSII could exist: connector 2 and connector 3 could mediate the energy flow from the basal hexamer of Rod a to PSII and from lateral hexamer to PSII, respectively. Ueno et al. have reported light energy flows from CP43 to CP47 by energy transfer between the neighboring PSII monomers (Ueno et al., 2017). Our in situ structure reveals that αLCM transfers energy to CP43 as well as the neighboring CP47, may suggesting that αLCM provides the modulation activity of energy flow between CP43 and the neighboring CP47. However, it is currently unclear whether the connector proteins play a specific role in the energy transfer between PBS and PSII, and this topic requires further study.
 
-## The perforations and stairs of the thylakoids
+### The perforations and stairs of the thylakoids
 
 In several tomograms, we observed the thylakoid membrane branching and fusion regions (Figure 6, Video 5). Within the limited thickness of the tomogram, we observed a small area of thylakoid membranes present branching and fusion events (Figure 6A). The two parallel thylakoid membranes are split into two branches. One branch approaches and fuses with another branch from the neighboring thylakoid membrane (Figure 6A,B). The 3D segmentation model shows that the branching and fusing membranes built ‘stairs’ between two neighboring thylakoid membranes (Figure 6C,D). On the top of the ‘stairs’ is the large perforation on the thylakoids (Figure 6E). These structures are very similar to the thylakoid membrane architecture in the cyanobacteria Prochlorococcus (Ting et al., 2007), Synechococcus sp. PCC 7942 and Microcoleus sp. reported by Nevo et al., 2007. They also observed perforations as well as branching and fusion of the membranes, which resulted in a highly connected network to allow water-soluble and lipid-soluble molecules to diffuse through the entire membrane network (Nevo et al., 2007). Thus, it is reasonable to deduce that the perforations and stairs of the thylakoid membrane in the red alga might play the same role, although it needs to be further investigated.
 
@@ -97,26 +165,103 @@ In several tomograms, we observed the thylakoid membrane branching and fusion re
 
 **Figure 6.:** (A) Typical tomogram slice. The white box indicates the tomogram region shown in Figure 1A; red box represents the membrane branching and fusing area. Scale bar, 100 nm. (B) Sequential slices back and forth through the representative tomogram in the red box area of (A), showing the membrane branches off one membrane and fuse with the neighboring membrane. The black arrow shows the fusion membrane; Red arrow shows the branching event. Scale bars, 50 nm. (C) 3D segmentation model of the red box area of (A) in the absence of the PBS–PSII supercomplexes to show the 3D morphology of the thylakoid. The two-line arrow indicates the membrane stairs. The numbers label different layers of membrane. (D) The clip view of the 3D segmentation model. The clip position is showed in the right panel of (C). The arrows show the membrane stairs. (E) The membrane top view shows the perforation on the top of the membrane stair. Figure accompanied by Video 5.
 
+![Video 5.](https://cdn.elifesciences.org/articles/69635/elife-69635-video5.mp4.jpg)
+
+**Video 5.:** Related to Figure 6A–E. Scale bar, 20 nm.
+
 ## Materials and methods
 
-## Cell culture and cryo-EM sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Porphyridium purpureum)</td>
+      <td>Porphyridium purpureum UTEX 2757</td>
+      <td>https://utex.org/products/utex-lb-2757</td>
+      <td>UTEX Culture Collection of Algae 2,757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Porphyridium purpureum)</td>
+      <td>uniprot</td>
+      <td>https://www.uniprot.org/uniprot/</td>
+      <td>UP000324585</td>
+      <td>Proteome</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>https://bio3d.colorado.edu/SerialEM/</td>
+      <td>Version 3.1.8</td>
+      <td>Data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td>Version 10.15</td>
+      <td>Visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion/</td>
+      <td>Version 2.1</td>
+      <td>Subtomogram averaging</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>https://bio3d.colorado.edu/imod/index.html</td>
+      <td>Version 4.9</td>
+      <td>Tomogram reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TOMO3D</td>
+      <td>https://sites.google.com/site/3dem/imageprocessing/tomo3d</td>
+      <td>Version 2.0</td>
+      <td>Tomogram reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>I3</td>
+      <td>https://www.electrontomography.org/</td>
+      <td>Version 0.9.3</td>
+      <td>Subtomogram averaging</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and cryo-EM sample preparation
 
 Porphyridium purpureum (from UTEX Culture Collection of Algae, UTEX 2757) cell was cultured in Bold 1NV:Erdshreiber (1:1) half-seawater medium, bubbled with sterilizing filtered air at 22°C, under a light–dark periodic ratio of 16 hr:8 hr, with a white light flux of about 37 μmol photons•m−2•s−1. Then red algal cells were harvested at about 1.5–3.0 months by centrifuge at 6000 g at room temperature for 10 min under dark, and the pellet was washed and re-suspended with fresh half-seawater culture medium under dark.
 
 We used holy-carbon copper grids (Quantifoil R1.2/1.3, 200 mesh) for the cryo-EM sample preparation. Cryo-EM grids were prepared with Leica EM GP (Leica Company) at 20°C and 100% humidity. To minimize the environmental affection (Kaňa et al., 2014), we first prepared the plunge freezing equipment. Then red algal cells are harvested and immediately vitrified in the Leica EM GP chamber without light. A drop of 4 μL culture medium was added to the glow-discharged grids. After being blotted, the grids were plunged into liquid ethane and stored in liquid nitrogen. We prepared four to six grids for each session. Each grid took less than 1 min. Moreover, we covered a layer of foil paper on the cell volume to protect them from the light.
 
-## Cryo-FIB lamella preparation
+### Cryo-FIB lamella preparation
 
 With the modified workflow, as Schaffer et al., 2017 reported, cryo-EM grid was first transferred to Helios NanoLab G3 (FEI) system. A layer of Au was sputtered to the surface of cryo-EM sample to increase the conductivity. A layer of protective organometallic platinum was then deposited on the top of the sample with the GIS system. The working distance was 10 mm, and the GIS temperature was set to 46°C. Ga2+ ion beam was used to milling the cells at a 5° stage tilt. The beam current for rough milling was 0.79 nA and gradually decreased to 40 pA. The lamella was finally polished to about 150 nm in thickness with the beam current of 24 pA.
 
-## Cryo-ET data collection
+### Cryo-ET data collection
 
 The cryo-ET data were collected with Titan Kiros Microscopy (Thermo Fischer Scientific) operated at a voltage of 300 kV and equipped with a Cs corrector, GIF quantum energy filter, and K2 Summit direct electron detector (Gatan Inc). All tilt series were recorded from 60° to –60° with SerialEM software (Mastronarde, 2005). The recording state was at a nominal magnification of 33,000× in counting mode with a pixel size of 3.421 Å•pixel–1. Each stack was exposed for 2.4 s with an exposure time of 0.3 s per frame and recorded as a movie of 8 frames, resulting in the total dose rate of approximately 1.927 electrons per Å2 for each stack. The tomographic tilt series were recorded from −50° to +66° with an increment of 2° using the unidirectional strategy. On average, 6 frames were collected for each image resulting in a total dose between 100 e−/Å2 and 110 e−/Å2 per tilt series. GIF was set to a slit width of 20 eV. The defocus ranged from –2.8 μm to –5.5 μm. MotionCor2 program was used to correct the beam-induced motion (Zheng et al., 2017).
 
-## Cryo-ET reconstruction and sub-tomograms averaging
+### Cryo-ET reconstruction and sub-tomograms averaging
 
 Fifty-one tilt series were aligned with the patch-tracking method in IMOD software (Kremer et al., 1996). The tomograms were reconstructed with TOMO3D scripts (Agulleiro and Fernandez, 2015). The tomograms reconstructed with simultaneous iterative reconstruction technique were used to manually particle-picking. To get high-resolution structures, we performed sub-tomogram averaging. Five thousand and thirty-seven sub-tomograms were firstly picked and aligned with i3 software to generate an initial model (Winkler et al., 2009). Tomograms reconstructed with weighted-back projection were used for further sub-tomogram averaging analysis. Then 75,310 manually picked sub-tomograms were extracted with RELION software (Bharat et al., 2015). CTF correction was estimated with CTFFIND4 (Rohou and Grigorieff, 2015) implemented in RELION. Dose damage compensation was performed with the script provided in the RELION tutorial. The first round of auto-refinement was performed with the binning four sub-tomograms. For the reconstruction of the double PBS–PSII supercomplex, the coordinates of first-round auto-refinement were shifted and carried on another round of 3D classification with global search. The good classes were selected and performed auto-refinement with the binning two sub-tomograms. After refinement, a resolution map at 15.6 Å was achieved. To improve the resolution, we reconstructed the PBS–PSII supercomplex with the refined coordinates and Euler angles obtained in the first round of rough refinement. These sub-tomograms were performed 3D classification without alignment. The good classes were chosen to do another round of auto-refinement with local search at 1.8 degrees. Finally, the sub-tomograms of the PBS–PSII supercomplex without binning were refined to 14.3 Å and postprocessed to 13.2 Å. During the auto-refinement, the datasets were automatically divided into two halves by RELION. The resolution was estimated using the gold-standard Fourier shell correlation with 0.143 criteria by ResMap (Scheres and Chen, 2012).
 
-## Atomic model fitting and analysis
+### Atomic model fitting and analysis
 
 To analyze the double PBS–PSII and PBS–PSII sub-tomogram averaging maps, the atomic model of PBS built with single particle analysis and crystal model of PSII (PDB code 4YUU) were docked into the sub-tomogram averaging maps with ‘fit in map’ command in UCSF Chimera (Pettersen et al., 2004). The cross-correlation coefficient results are listed in Supplementary file 1. The geometry of the PBS–PSII supercomplex was measured with the ‘distance’ and ‘angles’ command in UCSF Chimera. To analyze the arrangement of the PBS–PSII supercomplex in the thylakoid membrane, the double PBS–PSII and PBS–PSII sub-tomogram averaging maps were re-mapped back into the tomograms with the refined orientations and positions taking use of home-made scripts. The segmentation of the thylakoid membrane was performed with TomoSegMemTV (Martinez-Sanchez et al., 2014), Amira software (FEI Visualization Sciences Group), and UCSF ChimeraX (Pettersen et al., 2021). Segmentation of the subunits of the double PBS–PSII and PBS–PSII supercomplex was conducted in UCSF Chimera with the ‘Segmentation panel’. The densities of the subunits were then extracted by subtracting other parts with the subtract function. Surface rendering was further colored with the color zone panel.

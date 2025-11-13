@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02yrq0923 Developmental Biology Program, Sloan Kettering Institute New York United States
-2. https://ror.org/013meh722 Gurdon Institute, Cambridge University Cambridge United Kingdom
-3. https://ror.org/013meh722 Department of Physiology, Development and Neuroscience, Cambridge University Cambridge United Kingdom
-4. https://ror.org/02yrq0923 Center for Epigenetics Research, Memorial Sloan Kettering Cancer Center New York United States
-5. https://ror.org/02r109517 Biochemistry, Cell and Molecular Biology Program and Neuroscience Program, Weill Cornell Graduate School of Medical Sciences New York United States
+1. Developmental Biology Program, Sloan Kettering Institute New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))
+2. Gurdon Institute, Cambridge University Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Department of Physiology, Development and Neuroscience, Cambridge University Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. Center for Epigenetics Research, Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))
+5. Biochemistry, Cell and Molecular Biology Program and Neuroscience Program, Weill Cornell Graduate School of Medical Sciences New York United States ([ROR:02r109517](https://ror.org/02r109517))
 
 † Corresponding author
 
@@ -41,55 +41,108 @@ Here, we first delineate the sequential changes in the microenvironment upon inj
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All the mouse experiments were performed according to protocols approved by the Institutional Animal Care and Use Committee of Memorial Sloan Kettering Cancer Center (MSKCC) (protocol no. 07-01-001). Animals were housed on a 12 hr light/dark cycle and given access to food and water ad libitum.
 
 Two mouse lines were used in this study: Nes-Cfp (JAX #034387) (Encinas et al., 2006) and mCAT (JAX #016197) (Schriner et al., 2005). For both transgenic mouse lines, we analyzed mice that had a single transgene insertion on one chromosome. Animals were maintained on an outbred Swiss Webster background. Both sexes were used for analyses except for the genomics experiments (scRNA-seq and ATAC-seq) where males were used.
 
-## EdU administration
+### EdU administration
 
 5-Ethynyl-2’-deoxyuridine (EdU) stock was dissolved in sterile phosphate-buffered saline (PBS) at 10 mg/mL, and a dose of 5 μg/g was intraperitoneally injected into animals 1 hr prior to euthanasia.
 
-## PLX5622 administration
+### PLX5622 administration
 
 PLX5622 powder was provided by Plexxikon under a Materials Transfer Agreement. PLX5622 powder was first diluted in DMSO at 20 mM and then diluted 1× in PBS just before intraperitoneal injection into newborn pups. Injections were given every day from P1 to P8 at a dose of 10 µg/g of body weight. Control pups were injected with PBS-DMSO vehicle control.
 
-## Irradiation
+### Irradiation
 
 P1 mice were anesthetized by hypothermia and given a single dose of ~5 Gy γ-irradiation in an X-RAD 225Cx (Precision X-ray) Microirradiator in the MSKCC Small-Animal Imaging Core Facility. A 5 mm diameter collimator was used to target the hindbrain from the left side of the animal.
 
-## Tissue preparation and histology
+### Tissue preparation and histology
 
 For immunocytochemistry, animals younger than P8 were sacrificed and then brains were dissected, fixed in 4% paraformaldehyde for 24 hr at 4°C, cryoprotected in 30% sucrose in PBS until they sank and then frozen in Cryo-OCT (Tissue-Tek). Older animals were anesthetized and then perfused with cold PBS followed by 4% paraformaldehyde prior to brain dissection. Frozen brains were cryosectioned sagittally at 14 μm and slides stored at –20°C. Midline cerebellar sections were used for quantification in all downstream analyses.
 
 For immunofluorescence staining, slides were allowed to warm to room temperature (RT) and washed three times in PBS. Then, tissues were blocked for 1 hr with blocking buffer (5% bovine serum albumin [BSA] [wt/vol] in 1× PBS with 0.1% Triton X-100) at RT. Primary antibodies diluted in the blocking buffer were placed on slides for overnight incubation at 4°C. Slides were then washed in PBS with 0.1% Triton X-100 and incubated with fluorophore-conjugated secondary antibodies diluted in the blocking buffer for 1hour (hr) at room temperature (RT). Following washes in PBS with 0.1% Triton X-100 after the secondary antibody incubation, nuclei were counterstained with Hoechst (1:3000), and the slides were mounted using mounting media (Electron Microscopy Sciences). Primary antibodies used are described in Table 1, and secondary antibodies were Alexa Fluor-conjugated secondary antibodies (1:1000).
 
+**Table 1.**
+ List of antibodies and related information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Species</th>
+      <th>Concentration</th>
+      <th>References</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Catalase</td>
+      <td>Rabbit</td>
+      <td>1–100</td>
+      <td>01-05-030000</td>
+      <td>Athens Research and Technology</td>
+    </tr>
+    <tr>
+      <td>GFAP</td>
+      <td>Chicken</td>
+      <td>1–500</td>
+      <td>ab4674</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>Rat</td>
+      <td>1–1000</td>
+      <td>440484</td>
+      <td>Nacalai Tesque</td>
+    </tr>
+    <tr>
+      <td>IBA1</td>
+      <td>Rabbit</td>
+      <td>1–500</td>
+      <td>019-19741</td>
+      <td>Wako Chemicals</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>Goat</td>
+      <td>1–500</td>
+      <td>AF2018</td>
+      <td>R&amp;D Systems</td>
+    </tr>
+  </tbody>
+</table>
+
 5-ethynyl-2’-deoxyuridine (EdU) was detected using a Click-it EdU (Invitrogen, C10340) assay with Sulfo-Cyanine5 azide (Lumiprobe Corporation, A3330). For TUNEL staining, after primary antibody incubation and washes, sections were permeabilized in PBS with 0.5% Triton X-100 for 10 minutes (min) and then preincubated in TdT buffer (30 mM Tris HCl, 140 mm sodium cacodylate, and 1 mM CoCl2) for 15 min at RT. Slides were then incubated for 1 hr at 37°C in TUNEL reaction solution containing Terminal Transferase and Digoxigenin-11-dUTP (Roche). After the TUNEL reaction and washes, slides were incubated with a secondary antibody solution which included a sheep anti-dixogenin-rhodamine (Roche) for the visualization of TUNEL reaction.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Images were collected with a DM6000 Leica microscope, a NanoZoomer Digital Pathology microscope (Hamamatsu Photonics), or an LSM880 confocal microscope (Zeiss). Images were processed using NDP.view2 software, ImageJ software (NIH, Bethesda, MA, USA), and Photoshop (Adobe).
 
-## Cell dissociation for FACS and flow cytometry
+### Cell dissociation for FACS and flow cytometry
 
 Cerebella were dissected into ice-cold 1x Hank’s Buffered Salt Solution (Gibco) and dissociated using Accutase (Innovative Cell Technologies) at 37°C for 10–15 min. After dissociation, Accutase was diluted with 3× excess volume of neural stem cell media (Neurobasal medium, supplemented with N2, B27 [without vitamin A]), and nonessential amino acids (Life Technologies, Gibco) and cells were filtered using a 40 μm mesh cell strainer. After 5 min of centrifugation in a chilled centrifuge at 500×g, the pellet was resuspended in neural stem cell media and strained using strainer cap tubes (Falcon) for downstream experimentation. All centrifugation was performed at 4°C and cells were kept on ice when possible.
 
-## Flow cytometry analysis for ROS and mitochondria mass
+### Flow cytometry analysis for ROS and mitochondria mass
 
 For MitoSOX and MitoTracker analyses, cells were incubated for 30 min at 4°C with 5 μM of MitoSOX and 100 μM of MitoTracker (Thermo Fisher Scientific) to assess mitochondrial superoxide production and mitochondrial mass, respectively. Data were collected using an LSR Fortessa flow cytometer (BD) and analyzed using FlowJo software. The gating for the MitoSOX or MitoTracker high populations (top 90% intensity) was performed as previously described (Clutton et al., 2019).
 
-## Multiplexed scRNA-seq
+### Multiplexed scRNA-seq
 
-## Sample preparation
+#### Sample preparation
 
 2–4 Nes-Cfp cerebella/replicates from male control non-irradiated pups or pups that were irradiated at P1 were collected at P1 (control only), P2, P3, and P5 and dissociated as described above. All conditions were performed in 2 replicates for nonIR and IR conditions, except for P5. Following dissociation, CFP+ cells were immediately sorted on a BD FACS Aria sorter (BD Biosciences) using a 100 μm nozzle. 50,000 Nes-CFP+ cells from each sample were processed for scRNA-seq. Cells were sorted into neural stem cell media.
 
-## Multiplexing, droplet preparation, sequencing, and data processing
+#### Multiplexing, droplet preparation, sequencing, and data processing
 
 The scRNA-seq of fluorescence-activated cell sorting (FACS)-sorted Nes-CFP+ cell suspensions was performed on a Chromium instrument (10x Genomics) following the user guide manual for 3′ v3.1. In brief, 50,000 FACS-sorted cells from each condition were multiplexed using CellPlex reagents (10x Genomics) as described by the manufacturer’s protocol. P3 nonIR replicate #2 did not yield sufficient cells after multiplexing. The viability of cells was above 95%, as confirmed with 0.2% (wt/vol) Trypan Blue staining, and barcoded cells were pooled into a single sample in PBS containing 1% BSA to a final concentration of 700–1300 cells/μL. 2–3000 cells were targeted for each sample. Samples were multiplexed together on one lane of a 10x Chromium following the 10x Genomics 3’ CellPlex Multiplexing protocol, and a total of ~30,000 cells were targeted for droplet formation. Cells were captured in droplets. After the reverse transcription and cell barcoding in droplets, emulsions were broken, and cDNA was purified using Dynabeads MyOne SILANE followed by PCR amplification per the manufacturer’s instruction. Final libraries were sequenced on an Illumina NovaSeq S4 platform (R1 – 28 cycles, i7 – 8 cycles, R2 – 90 cycles) by the MSKCC Core Facility.
 
-## Data analysis
+#### Data analysis
 
 scRNA-seq FASTQ files were demultiplexed using sharp (Chun, 2022) and initially mapped to the mouse mm10 reference genome using Cell Ranger v6.0.1 (Zheng et al., 2017). The Cell Ranger BAM files for individual samples were then converted back to FASTQ files using bamtofastq (Cell Ranger v7.0.1), with --reads-per-fastq=1000000000. Reads were then mapped to the GRCm39 mouse reference with GENCODE annotations (vM30) using STARsolo v2.7.10a (--soloFeatures Gene Velocyto, --soloType CB_UMI_Simple, --soloCBwhitelist 3M-february-2018.txt, --soloUMIlen 12, --soloCellFilter EmptyDrops_CR, --soloMultiMappers EM) (Kaminow et al., 2021; Frankish et al., 2021).
 
@@ -99,17 +152,17 @@ The differential gene expression analyses were performed individually on Hopx+ g
 
 The gene ontology (GO) term analyses were performed on differentially expressed genes from the DESeq2 results filtered with a log2fold-change threshold of ±0.5 and an adjusted p-value threshold of 0.05 for each comparison. The probability weight function was computed using nullp with default parameters and the mm8 mouse genome. The background genes used to compute the GO term enrichment include all genes with gene symbol annotations within mm8. The category enrichment testing was performed using goseq with default parameters from the goseq package (v1.48.0).
 
-## Bulk ATAC-seq
+### Bulk ATAC-seq
 
-## Sample preparation
+#### Sample preparation
 
 FACS-sorted Nes-CFP+ cells (30,000–50,000 per replicate) were isolated from control or irradiated (at P1) P2 cerebella. 2–3 cerebella were pooled for each sample. Cells were immediately processed for nuclei preparation and transposition using the OMNI-ATAC protocol (Corces et al., 2017). Sequencing was performed at the MSKCC Genomics Core Facility using the Illumina NovaSeq S4 platform.
 
-## Data processing and analysis
+#### Data processing and analysis
 
 Raw sequencing reads were 3’ trimmed and filtered for quality and adapter content using version 0.4.5 of Trim Galore (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore), with a quality setting of 15, and running version 1.15 of cutadapt and version 0.11.5 of FastQC. Version 2.3.4.1 of bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) was used to align reads to mouse assembly mm10 and alignments were deduplicated using MarkDuplicates in version 2.16.0 of Picard Tools. Enriched regions were discovered using MACS2 (Liu, 2023) with a p-value setting of 0.001, filtered for blacklisted regions (http://mitra.stanford.edu/kundaje/akundaje/release/blacklists/mm10-mouse/mm10.blacklist.bed.gz), and a peak atlas was created using ±250 bp around peak summits. The BEDTools suite (http://bedtools.readthedocs.io) was used to create normalized bigwig files. Version 1.6.1 of featureCounts (http://subread.sourceforge.net) was used to build a raw counts matrix, and DESeq2 was used to calculate differential enrichment for all pairwise contrasts. Peak-gene associations were created by assigning all intragenic peaks to that gene, while intergenic peaks were assigned using linear genomic distance to transcription start site. Network analysis was performed using the assigned genes to differential peaks by running enrichplot::cnetplot in R with default parameters. Composite and tornado plots were created using deepTools v3.3.0 by running computeMatrix and plotHeatmap on normalized bigwigs with average signal sampled in 25 bp windows and flanking region defined by the surrounding 2 kb. Motif signatures were obtained using Homer v4.5 (http://homer.ucsd.edu) on differentially enriched peak regions.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 For detecting TUNEL, IBA1, GFAP, CFP, and SOX2, images were captured using a DM600 Leica fluorescent microscope and subsequently quantified on ImageJ Software (NIH). Measurements were conducted on lobules 3, 4, and 5 of midsagittal sections unless indicated in Figure legends. Positive cells were counted and densities were calculated based on BgL length, EGL area, WM area, or on the whole cerebellum without the EGL (outside EGL) as indicated in the figures. For the cerebellar section area, images were acquired using a NanoZoomer 2.0 HT slide scanner (Hamamatsu). Midsagittal sections were selected and exported for manual analysis using ImageJ software. For EGL thickness, images of lobules 3, 4, and 5 from midsagittal sections were obtained using a DM600 Leica fluorescent microscope and analyzed on ImageJ. EGL thickness was calculated as the EGL area divided by the EGL perimeter.
 
@@ -117,9 +170,21 @@ Prism (GraphPad) was used for all statistical analyses. Statistical tests perfor
 
 ## Results
 
-## scRNA-seq of NEPs during adaptive reprogramming reveals increased cellular stress, ROS signaling, and DNA damage
+### scRNA-seq of NEPs during adaptive reprogramming reveals increased cellular stress, ROS signaling, and DNA damage
 
 To investigate the molecular changes that NEP subpopulations undergo upon injury to the EGL, in particular an increase in the signaling pathways associated with injury-induced cellular stress and ROS, we performed multiplexed scRNA-seq of CFP+ cells isolated by FACS of cerebella from Nes-Cfp transgenic neonates that express CFP from a Nestin gene promoter and enhancer either irradiated at P1 (IR; P2, P3, P5) or non-irradiated (nonIR; P1, P2, P3, P5) (Figure 1A, Figure 1—figure supplement 1A and B). Following the filtering out of poor quality cells and integration of replicates and the two conditions, the clustering of 11,878 cells (6978 nonIR and 4900 IR) was performed (Hao et al., 2021). The analysis revealed the expected three distinct groups of cells: gliogenic-NEPs and astrocytes (Hopx+ clusters 2, 3, 6, 10), neurogenic-NEPs (Ascl1+ clusters 5, 8, 11), and GCP (Atoh1+ clusters 1, 4, 7, 12, 14) that were present at each stage and in both conditions (Figure 1B–E, Figure 1—figure supplement 1C–F, Figure 1—source data 1). These groups of cells were further subdivided into molecularly distinct clusters based on marker genes and their cell cycle profiles or developmental stages (Figure 1D, Figure 1—source data 1). In addition, oligodendrocyte progenitors (cluster 15), microglia (clusters 17, 21), ependymal cells (clusters 13, 18, 19), and meninges (cluster 16) were detected (Figure 1B and D, Figure 1—source data 1). Cluster 20 represented low-quality cells and was omitted from downstream analyses. As expected, the GCP clusters were enriched in the cells from irradiated mice and at P5 (Figure 1—figure supplement 1C). Detection of Nes mRNA confirmed that the transgene reflects endogenous Nes expression in progenitors of many lineages, and also that the perdurance of CFP protein in immediate progeny of Nes-expressing cells allowed the isolation of these cells by FACS (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic summarizing the experimental plan. (B–C) UMAPs of 11,878 cells (6978 nonIR and 4900 IR) showing cluster annotations (B), treatment (black: nonIR, red: IR), and the age of the samples (red: P1, green: P2, blue: P3, purple: P5) (C). (D) Dot plot showing the expression levels of key marker genes used for cluster annotation (gliogenic-Nestin-expressing progenitors [NEPs]: Hopx, Gdf10, Slc1a3, neurogenic-NEPs: Ascl1, Ptf1a, immature neurons: Pax2, granule cell precursors [GCPs]: Atoh1, postmitotic neurons: Tubb3, microglia: Cx3cr1, oligodendrocyte progenitors: Olig2, oligodendrocytes: Gpr17, ependymal cells: Foxj1). (E) Feature plots showing Nes, Hopx (gliogenic-NEPs), Ascl1 (neurogenic-NEPs), Atoh1 (GCPs), and mKi67 (proliferation) expression highlighting the three main populations of interest. Clusters containing Hopx-NEPs (clusters 2, 3, 6, 10), Ascl1-NEPs (clusters 5, 8, 11), or GCPs (clusters 1, 4, 7, 12, 14) were subsetted from the original dataset and were divided according to age (P2 or P3+P5) for the downstream differential expression analyses. (F) Volcano plot showing differentially expressed genes in the P2 gliogenic-NEPs (red: adjusted p-value≤0.05, log2fold-change>|1|). (G) Violin plots showing some of the top differentially expressed genes in P2 gliogenic-NEPs and how their expression changes over time with respect to their expression in control cells. (H) Some of the significant gene ontology (GO) terms associated with differentially expressed genes in P2 gliogenic-NEPs that were either upregulated in nonIR (top panel) or IR (bottom panel) cells (adjusted p-value≤0.05, Figure 1—source data 2). (I) Heatmap showing differentially open chromatin regions in P2 nonIR and IR NEPs, identified by bulk assay for transposase-accessible chromatin with sequencing (ATAC-seq) (1168 differentially open regions, adjusted p-value<0.05, Figure 1—source data 3). (J) Tracks highlighting the injury-induced open chromatin regions around Cdkn1a and Phlda3, the top differentially expressed genes identified in (F). (K) Linkages between genes and GO terms identified by the ATAC-seq data revealed an active transcriptional network involved in regulating cell death and apoptosis. Genes colored in red (Ppara, Egln3, Foxo3, Jun, and Nos1ap) have been implicated as upregulated with increased ROS levels or involved in ROS signaling.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Violin plots showing the number of features, RNA, and percent mitochondrial RNA count across the biological replicates of the scRNA-seq dataset after filtering the bad quality cells (cells were filtered out where number of detected genes was ≤1500, the number of detected transcripts was ≥40,000, and mitochondrial gene percentage ≥5%). Number of cells from each replicate and condition used for downstream analyses after filtering. UMAPs showing the distribution of cells across different clusters based on the samples. (D–E) Number and proportion of cells from different ages and conditions in each cluster. (F) Proportion of total nonIR (including P1) and IR cells in each cluster. Dotted line represents the expected ratio between the nonIR and IR cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–E) Volcano plot showing differentially expressed genes in the P3+5 gliogenic-NEPs (A), P2 and P3+5 neurogenic-NEPs (B, C), and P2 or P3+5 GCPs (D, E) (red: adjusted p-value≤0.05, log2fold-change=1, Figure 1—source data 1). (F–J) Some of the significant gene ontology (GO) terms associated with differentially expressed genes in the P3+5 gliogenic-NEPs (F), P2 or P3 5 neurogenic-NEPs (G, H), and P2 or P3+5 GCPs (I, J) that were either upregulated in nonIR (top panel) or IR (bottom panel) (p-value≤0.05).
 
 Our further analyses focused on changes in the signaling pathways associated with injury-induced cellular stress and ROS. We previously showed that a subset of the Hopx+ gliogenic-NEPs that are present in the BgL are the ones that undergo adaptive reprogramming following GCP death (Wojcinski et al., 2017, Bayin et al., 2021). We therefore assessed the immediate and later effects of GCP death on Hopx+ gliogenic-NEPs by performing differential expression analyses between nonIR and IR gliogenic-NEPs (Hopx+, clusters 2, 3, 6, 10) at P2, or at P3 and P5 (P3+5). 24 hr after injury at P1, 132 genes in gliogenic-NEP clusters were significantly upregulated in IR compared to 34 genes that were upregulated in nonIR P2 cells (adjusted p-value≤0.05, Figure 1F, Figure 1—source data 2). The significantly increased genes included Cdkn1a, Phlda3, Ass1, and Bax, all of which have been implicated as increased in response to DNA damage and in ROS signaling, as well as in anti-apoptotic functions (Figure 1G; Masgras et al., 2012; Bensellam et al., 2019; Qiu et al., 2014; Jiang et al., 2008). Indeed, many of the significant GO terms associated with the genes upregulated in gliogenic-NEPs with injury were related to response to irradiation, DNA damage, the p53 pathway, and ROS metabolic processes, whereas many of the significant GO terms associated with the genes upregulated in the nonIR cells at P2 were related to metabolic processes (p-value≤0.05, Figure 1H, Figure 1—source data 3). Interestingly, the transcriptional changes observed at P2 were less pronounced at later time points, where although some of the top differentially expressed genes at P2 were still significantly upregulated at P3+5 stages combined (e.g. Cdkn1a, Phlda3, Ass1, Bax), the increase in expression levels of these genes upon injury and/or the number of cells expressing them gradually declined after P2 in IR gliogenic-NEPs when compared to their nonIR counterparts (Figure 1G). Genes upregulated in IR P3+5 gliogenic-NEPs were associated with similar GO terms to those at P2, such as response to irradiation and the p53 pathway; however, ‘ROS metabolic processes’ was no longer a significantly enriched GO term (p-value≤0.05, Figure 1—figure supplement 2A and F, Figure 1—source data 2 and Figure 1—source data 3).
 
@@ -127,37 +192,69 @@ To further assess the injury-induced transcriptional signatures, we performed th
 
 In contrast to the gliogenic- and neurogenic-NEP subtypes, P2 IR GCPs showed upregulation of genes enriched in GO terms such as neural differentiation and axonogenesis, as well as ROS signaling, and nonIR P2 GCPs showed increased expression of genes involved in cell cycle and mitosis (Figure 1—figure supplement 2D and I). This result could reflect the death of highly proliferative GCPs after irradiation and sparing of only postmitotic GCs upon irradiation at P1. P3+5 IR GCPs showed increased expression of genes associated with BgL-NEPs (Id1 and Gdf10, adjusted p-value≤0.05) and genes associated with GO terms such as cell cycle and cell fate commitment, whereas P3+5 nonIR GCPs showed enrichment for GO terms related to cell migration and neurogenesis (adjusted p-value≤0.05, Figure 1—figure supplement 2D, E, I, and J, Figure 1—source data 2 and Figure 1—source data 3). This result could reflect the delayed neurogenesis of GCPs following injury. Interestingly, we did not observe significant enrichment for GO terms associated with cellular stress response in the GCPs that survived the irradiation compared to controls, despite significant enrichment for ROS signaling-related GO terms (Figure 1—source data 3). Collectively, these results indicate that injury induces significant and overlapping transcriptional changes in NEPs and GCPs. The gliogenic- and neurogenic-NEP subtypes transiently upregulate stress response genes upon GCP death, and an overall increase in ROS signaling is observed in the injured cerebella.
 
-## Injury induces changes in NEP chromatin landscape at P2
+### Injury induces changes in NEP chromatin landscape at P2
 
 We next tested whether GCP death at birth induces changes to the chromatin landscape of NEPs that reflect the altered gene expression observed with scRNA-seq, by performing bulk ATAC-seq on FACS-isolated CFP+ cells from P2 control and injured Nes-Cfp pup cerebella (Figure 1A). P2 was chosen as it is the stage when GCPs contribute the least to the total Nes-CFP+ FACS population and to identify the immediate effects of the injury on NEP chromatin. Analysis of differentially open chromatin showed that injury induces major changes to the chromatin landscape of the NEPs (1168 differentially open regions, adjusted p-value<0.05, Figure 1I, Figure 1—source data 4). Of interest, Cdkn1a and Phlda3, two genes stimulated by ROS and injury (Bensellam et al., 2019; Masgras et al., 2012) and that were upregulated in gliogenic-NEPs after irradiation (Figure 1F-G, Figure 1—figure supplement 2B), exhibited new accessible regions around their gene bodies compared to the nonIR P2 Nes-CFP+ cells (Figure 1J). However, not all genes in the accessible areas were differentially expressed in the scRNA-seq data. While some of this could be due to the detection limits of scRNA-seq, further analysis is required to assess the mechanisms of how the differentially accessible chromatin affects transcription. Known motif analysis in the regions with increased accessibility upon injury showed enrichment for binding motifs of the JUN/AP1 transcriptional complex (p-value = 10–14, % of target sequences with motif = 15%, Figure 1—source data 5), which is known to act in response to cellular stress and be activated by ROS. In addition, the DNA binding site for FOXO3, a transcription factor that regulates ROS levels, had increased chromatin accessibility (p-value = 0.001, % of target sequences with motif = 22.41%) (Figure 1—source data 5; Filosto et al., 2003; Auten and Davis, 2009; Hagenbuchner et al., 2012). Finally, linkages between the genes in differentially open regions identified by ATAC-seq and the associated GO terms revealed an active transcriptional network involved in regulating cell death and apoptosis (Figure 1K). Furthermore, some of the genes involved in this response, such as Ppara, Egln3, Foxo3, Jun, and Nos1ap, have been implicated as upregulated with increased ROS levels or involved in ROS signaling (Devchand et al., 2004; Kaelin, 2005; Hagenbuchner et al., 2012; Filosto et al., 2003). In summary, our ATAC-seq data analysis along with the scRNA-seq provides strong evidence that irradiation causes increased ROS signaling in the BgL-NEPs upon GCP death by inducing transcriptional and epigenetic changes within 1 day after injury (P2). In addition, genes related to cell survival and death, cellular stress, and DNA damage are upregulated in NEPs shortly upon injury, possibly as a means to overcome the cellular effects of injury and induce adaptive reprogramming of NEPs to replenish the lost cells.
 
-## Transient increase in cerebellar ROS during apoptosis of GCPs
+### Transient increase in cerebellar ROS during apoptosis of GCPs
 
 To validate that the transient increase in expression of genes associated with cellular stress and ROS signaling is due to an increase in ROS upon cerebellar injury, we quantified ROS levels in whole cerebellum samples using a mitochondrial superoxide indicator (MitoSOX) via flow cytometry. A significant increase in ROS (cells present in the top 90% MitoSOX+ intensity) was observed specifically at P2 (p=0.0005, n≥10) and not at P3 or P5 in IR pups compared to nonIR (Figure 2A and B, Figure 2—figure supplement 1A and B). Furthermore, quantification of mitochondrial mass with MitoTracker revealed a reduction only at P2 (p=0.0005, n≥10) in IR pups (Figure 2C, Figure 2—figure supplement 1C–E). Additionally, quantification of TUNEL staining in midline sagittal sections of the cerebella showed a large increase in cell death in the EGL of injured cerebella at P2 (p=0.0040, n=4), but not at P3 compared to the controls (Figure 2D and E; see also Figure 3K and L). Outside the EGL, there was a small increase in cell death after injury that was only significant at P3 (p=0.0379, n≥3) (Figure 2F and G). Thus, a transient increase in ROS in the cerebellum 1 day after irradiation at P1 correlates with the timing of the major death of GCPs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig2-v1.jpg)
+
+**Figure 2.:** (A) Examples of flow cytometry analysis of mitochondrial reactive oxygen species (ROS) at P2 from nonIR and IR cerebella using MitoSOX dye. Gating determined the top 90% MitoSOX signal (MitoSOX high cells). (B, C) Quantification of MitoSOX high (B) and MitoTracker high (C) expression in nonIR and IR cerebella at P2. (D, E) Quantification of TUNEL+ cell density in the EGL at P2 (D) and P3 (E) in lobules 3–5 of nonIR and IR mice. (F, G) Quantification of TUNEL+ cell density outside the EGL at P2 (F) and P3 (G) in lobules 3–5 of nonIR and IR mice. EGL, external granular layer; SSC, side scatter; P, postnatal day; nonIR, non-irradiated; IR, irradiated. All statistical significance was determined using an unpaired t-test, and data are represented as mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Quantification of high MitoSOX expression in nonIR and IR cerebella at P3 (A) and P5 (B). (C) Examples of flow cytometry analysis of mitochondria at P2 from nonIR and IR cerebella using MitoTracker dye. Gating determined the top 90% MitoTracker signal (MitoTracker high cells). (D, E) Quantification of MitoTracker high expression in nonIR and IR cerebella at P3 (D) and P5 (E). (F) Quantification of IBA1+ cell density in the WM at P5 in lobules 3–5 of nonIR and IR mice. (G) Quantification of IBA1+ cell density in the EGL at P5 in lobules 3–5 of nonIR and IR mice. EGL, external granular layer; WM, white matter; P, postnatal day; nonIR, non-irradiated; IR, irradiated. All statistical significance was determined using an unpaired t-test, and data are represented as mean ± SEM.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig3-v1.jpg)
 
 **Figure 3.:** (A–H) Immunohistochemical (IHC) staining of medial sagittal cerebellar sections for GFAP (green) in lobule 4/5 of nonIR and IR cerebellum at the stages indicated. Nuclei were counterstained with Hoechst. (B’) and (F’) show high-power images of white dashed line boxes in (B) and (F), respectively. (I, J) Quantification of IBA1+ cell density in the WM at P2 (I) and P3 (J) in lobules 3–5 of nonIR and IR mice. (K, L) IHC staining of medial sagittal cerebellar sections for IBA1 and TUNEL in lobule 3 of nonIR and IR cerebellum at P2. Nuclei were counterstained with Hoechst. WM and EGL are delineated by white dotted lines and dashed lines, respectively. High-power image in (L) of the area indicated by the white dashed line represents an IBA1+ cell present in the EGL. White arrowheads indicate additional IBA1+ cells in the EGL. (M, N) Quantification of IBA1+ cell density in the EGL at P2 (M) and P3 (N) in lobules 3–5 of nonIR and IR mice. EGL, external granular layer; WM, white matter; P, postnatal day; nonIR, non-irradiated; IR, irradiated. Scale bar: A and E: 100 µm, B, C, D, E, F, G, and H: 250 µm, B’ and F’: 50 µm, I and J: 50 µm. All statistical significance was determined using an unpaired t-test, and data are represented as mean ± SEM.
 
-## Altered glial microenvironment following death of GCPs
+### Altered glial microenvironment following death of GCPs
 
 Given the potential importance of glial cells to regenerative cellular responses after injury, we next asked whether the glial microenvironment of the cerebellum changes during early postnatal development in response to irradiation at P1. We first analyzed the astrocyte marker GFAP, since it is generally upregulated soon after brain injury (Burda and Sofroniew, 2014). Most astrocytes, including the specialized Bg, express GFAP in the adult cerebellum, but the cells are generated by gliogenic-NEPs during the first 2 weeks after birth in mice. We therefore determined the normal location and timing of initiation of GFAP expression in these cells during postnatal cerebellum development. GFAP was first detected in rare astrocytes at P2 located in the WM below the lobules, with strong expression in all WM astrocytes at P5 and later stages (P8 and P12) (Figure 3A–D, observed in n=4 mice/stage). In contrast, GFAP expression in astrocytes in the developing IGL and in the glial processes of Bg that project through the molecular layer (ML) and EGL was not detectable until P5 and was much stronger at P8 and P12 (Figure 3A–D). Interestingly, after injury at birth, GFAP expression was prematurely upregulated in the WM astrocytes below the lobules at P2 and in the remaining astrocytes at P5, including in the fibers of Bg that extend through the ML and EGL, compared to nonIR cerebella (Figure 3A–H, observed in n=4 mice/stage). GFAP expression was similar in all glia in both conditions at P8 and P12. These results reveal that astrocytes and Bg react to EGL injury caused by irradiation at P1 by initiating GFAP expression earlier than normal in the deep WM, and then around the IGL and in Bg.
 
 The macrophages of the brain, microglia, are generated in the early embryo but their main increase in cell number occurs during neonatal development in mice (Hammond et al., 2018). We found that nearly all microglia were located in the WM of the cerebellum, and that the density of IBA1+ microglia in the WM increased between P2 (235.1±18.3 cells/mm2) and P3 (344.3±53.1 cells/mm2) and then was maintained at P5 (350.4±40.2 cells/mm2) (Figure 3I–K, Figure 2—figure supplement 1F). Since the area of the cerebellum is increasing between P2 and P5, active microglia production and/or infiltration must continue to occur between P2 and P5. As expected, after irradiation, the density of microglia in the injured EGL was significantly increased (~3-fold) at P2 but not at P3 or P5 compared to controls (p=0.0331, n=4) (Figure 3L–N, Figure 2—figure supplement 1G). No difference in the microglial density in the WM was detected between conditions at both time points (Figure 3I–L; Figure 2—figure supplement 1F). Thus, as expected, microglia density was increased in the EGL 1 day after injury when the maximum GCP cell death occurs.
 
-## Decreasing ROS impairs cerebellar repair
+### Decreasing ROS impairs cerebellar repair
 
 Given the transient increase in ROS signaling in gliogenic-NEPs during peak GCP death and recruitment of microglia to the EGL, and the later astroglial response, we tested whether an increase in ROS is necessary for adaptive reprogramming and cerebellar repair following EGL injury at P1. To reduce the level of ROS, we utilized an mCAT transgenic mouse line that contains an insertion of sequences that expresse the human mCAT in most cells from a CMV promoter (Schriner et al., 2005). The transgene is expected to reduce mitochondrial ROS levels in all cells by catalyzing the breakdown of hydrogen peroxide into water and oxygen, hence protecting the cells from oxidative damage. We confirmed that mCAT protein is expressed throughout the cerebellum using immunohistochemical (IHC) staining of cerebellar sections (Figure 4A and B). MitoSOX flow cytometry revealed a significant decrease in ROS in the cerebella of mCAT mice 1 day after irradiation (P2) (p=0.0163, n≥8) and not at P3 or P5 compared to control IR mice and no baseline decrease in ROS at any stage in nonIR mice (Figure 4C, Figure 4—figure supplement 1A and B). Mitochondrial mass, as measured by MitoTracker flow cytometry, was reduced at P2 in mCAT IR compared to nonIR mCAT pups, with no significant difference observed between mCAT and control IR mice (Figure 4D, Figure 4—figure supplement 1D). The level of cell death in the EGL and density of IBA1+ microglia in the EGL and elsewhere in the cerebellum were similar between mCAT and littermate control IR mice at P2 and P3 (Figure 4E and F, Figure 4—figure supplement 1G and J). There was a slight increase in cell death outside the EGL at P2 in IR mCAT compared to nonIR mCAT mice but not compared to IR controls (Figure 4—figure supplement 1F and E). Thus, the mCAT transgene counteracts the transient increase in cerebellar ROS following EGL injury but does have a major effect on GCP death or the infiltration of microglia to the injured EGL (Figure 4—figure supplement 1F–J).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Immunohistochemical (IHC) staining of medial sagittal cerebellar sections for human catalase in control (A) and mitochondrial catalase (mCAT) mice (B) at P7. Nuclei were counterstained with Hoechst (blue). Similar staining was seen in four mCAT mice. (C) Quantification of MitoSOX high expression at P2 in control and mCAT cerebella, with and without irradiation at P1 (two-way ANOVA, F(1,34)=6.768, p=0.0136). (D) Quantification of MitoTracker high expression at P2 in control and mCAT cerebella, with and without irradiation at P1 (two-way ANOVA, F(1,31)=25.06, p<0.0001). (E) Quantification of TUNEL+ cell density in the EGL at P2 in control and mCAT cerebella, with and without irradiation at P1 (two-way ANOVA, F(1,14)=87.56, p<0.0001). (F) Quantification of IBA1+ cell density in the EGL at P2 in control and mCAT cerebella, with and without irradiation at P1 (two-way ANOVA, F(1,14)=15.58, p=0.0015). (G–J) Hematoxylin and eosin staining on midsagittal sections of P30 control and mCAT cerebellum with or without irradiation. (K) Quantification of P30 cerebellar midsagittal section area in controls and mCAT nonIR and IR mice (two-way ANOVA, F(1,20)=11.82, p=0.0026). (L) Graph showing the average area of midsagittal cerebellar sections at P3, P5, P8, P12, and P30 in control and mCAT non-irradiated and irradiated mice. Detailed statistics are shown in Figure 4—figure supplement 1. EGL, external granular layer; P, postnatal day; nonIR, non-irradiated; IR, irradiated. Scale bar: A and B: 100 µm, F–I: 1 mm. Significant Tukey’s post hoc multiple comparison tests are shown in the figures, and data are represented as mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Quantification of high MitoSOX expression at P3 (A) and P5 (B) in control and mitochondrial catalase (mCAT) cerebella, with and without irradiation at P1. (C, D) Quantification of MitoTracker high expression at P3 (C) and P5 (D) in control and mCAT cerebella, with and without irradiation at P1. (E–G) Quantification of TUNEL+ cell density outside EGL at P2 (two-way ANOVA, F(1,10)=14.20, p=0.0037) (E), at P3 (G), and in the EGL at P3 (F) in lobules 3–5 of nonIR and IR mice. (H–J) Quantification of IBA1+ cell density in WM at P2 (H), at P3 (J), and in the EGL at P3 (I) in lobules 3–5 of nonIR and IR mice. (K–N) Quantification of cerebellar midsagittal section area in controls and mCAT nonIR and IR mice at P3 (K), P5 (two-way ANOVA, F(1,15)=28.52, p<0.001) (L), P8 (two-way ANOVA, F(1,12)=21.21, p=0.0006) (M), and P12 (two-way ANOVA, F(1,14)=9.682, p=0.0077) (N). EGL, external granular layer; WM, white matter; P, postnatal day; nonIR, non-irradiated; IR, irradiated. Significant Tukey’s post hoc multiple comparison tests are shown in the figures, and data are represented as mean ± SEM.
+
 We next determined the regenerative efficiency of mCAT mice by analyzing the area of sections of cerebella from nonIR and IR P30 mCAT mice compared to littermate controls. Strikingly, the cross-sectional area of the medial cerebellum (vermis) of IR mCAT adult mice was significantly reduced compared to IR controls (p=0.0040, n≥6) (Figure 4G–K). Analysis of cerebellar area across ages (P3, 5, 8, and 12) revealed that the vermis sectional area of the IR mCAT cerebella was only significantly reduced at P30 compared to IR controls; however, at P12, it was reduced in mCAT IR cerebella compared to mCAT nonIR mice, whereas it was not significantly different between control IR and control nonIR mice (Figure 4L, Figure 4—figure supplement 1K–N). These results indicate that cerebellar growth begins to be reduced at P12 in mCAT mice following injury. Thus, a reduction in ROS at the time of cell death in the EGL leads to a diminution of cerebellar recovery.
 
-## Reduced regeneration in mCAT mice is associated with reduced adaptive reprogramming at P5
+### Reduced regeneration in mCAT mice is associated with reduced adaptive reprogramming at P5
 
 Given that a decrease in ROS following EGL injury reduces regeneration of the neonatal cerebellum, we determined whether specific stages of the adaptive reprogramming process are altered in mCAT mice compared to controls. First, we analyzed the replenishment of the EGL by BgL-NEPs in vermis lobules 3–5, since our previous work showed that these lobules have a prominent defect. Interestingly, we found that although the thickness of the EGL in IR mice of both genotypes was similarly reduced compared to nonIR mice at P5 (p=0.0041 control and p=0.0005 mCAT; n≥4) by P8, the control EGL was a similar thickness to the control nonIR, whereas the thickness of the mCAT IR EGL was significantly reduced compared to mCAT nonIR mice (p=0.035, n=4) (Figure 5A and B). A key regenerative process that contributes to the expansion of the EGL following injury is the migration of BgL-NEPs to the EGL. Strikingly, the density of CFP+ cells in the EGL (mainly BgL-derived NEPs) was significantly decreased in mCAT IR mice compared to control IR mice at P5 (p=0.0002, n=4) but not P3 (Figure 5C–G, Figure 5—figure supplement 1A). Furthermore, the density of NEPs (CFP+ or SOX2+ cells) in the BgL was significantly decreased at P5 in mCAT IR cerebella compared to controls (p=0.0010, n≥5) but not at other stages (Figure 5H, Figure 5—figure supplement 1B–D). These results indicate that BgL-NEPs have a blunted response to EGL injury and therefore do not fully expand and contribute to the replenishment of GCPs in the EGL after irradiation.
 
-## Microglia likely contribute to one aspect of adaptive reprogramming
+![Figure 5.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Quantification of EGL thickness at P5 (two-way ANOVA, F(1,21)=36.64, p<0.0001) (A) and P8 (two-way ANOVA, F(1,12)=11.34, p=0.0056) (B) in lobules 3–5 of Nes-Cfp control and Nes-Cfp; mitochondrial catalase (mCAT) mutant mice with and without irradiation at P1. (C–F) Immunohistochemical (IHC) staining of medial sagittal cerebellar sections showing expression of CFP (green) in lobule 4/5 of Nes-Cfp control and Nes-Cfp; mCAT mutant mice at P5. Nuclei were counterstained with Hoechst (blue). (D’) and (F’) show high-power images of the yellow boxed area in the single channel CFP. EGL is delineated by the dashed white lines. (G, H) Quantification of CFP+ cell density in the EGL (two-way ANOVA, F(1,19)=5.192, p=0.0359) (G) and BgL (two-way ANOVA, F(1,17)=6.191, p=0.0223) (H) at P5 in Nes-Cfp control or Nes-Cfp; mCAT mutant non-irradiated and irradiated mice. EGL, external granular layer; BgL, Bergmann glia layer; P, postnatal day; nonIR, non-irradiated; IR, irradiated. Scale bar: D–F: 100 µm. Significant Tukey’s post hoc multiple comparison tests are shown in the figures, and data are represented as mean ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of CFP+ cell density in the EGL at P3 in Nes-Cfp control or Nes-Cfp; mitochondrial catalase (mCAT) mutant nonIR and IR mice (two-way ANOVA, F(1,14)=33.77, p<0.0001). (B) Quantification of CFP+ cell normalized on BgL length at P5 in Nes-Cfp control or Nes-Cfp; mCAT mutant nonIR and IR mice. (C, D) Quantification of SOX2+ NEP cell density on BgL length at P8 (C) and P12 (two-way ANOVA, F(1,12)=12.50, p=0.0033) (D) in control or mCAT mutant nonIR and IR mice. EGL, external granular layer; BgL, Bergmann glia layer; P, postnatal day; nonIR, non-irradiated; IR, irradiated. Significant Tukey’s post hoc multiple comparison tests are shown in the figures, and data are represented as mean ± SEM.
+
+### Microglia likely contribute to one aspect of adaptive reprogramming
 
 Given that several steps in adaptive reprogramming were decreased specifically at P5 in mCAT IR cerebella, we asked whether microglia/macrophages could be involved in any of the processes. We first determined the density of IBA1+ cells in the EGL and WM of vermis lobules 3–5 at P5 in nonIR and IR mice of both genotypes. As expected, the density of microglia in the EGL was very low in the nonIR control and mCAT cerebella (Figure 6A–E). Interestingly, whereas control IR mice had a similar number of IBA1+ cells in the WM as nonIR mice of both genotypes at P5, the mCAT IR mice had a lower density of microglia/macrophages in the WM compared to control IR mice at P5 (p=0.0012, n≥3) (Figure 6A–D and F), but no significant changes were observed at P8 (Figure 6—figure supplement 1A). This result raised the question of whether macrophages/microglia play a role in adaptive reprogramming.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Immunohistochemical (IHC) staining of medial sagittal cerebellar sections for IBA1 (red) in control and mitochondrial catalase (mCAT) mice at P5. Nuclei were counterstained with Hoechst (blue). (E, F) Quantification of IBA1+ cell density in the external granular layer (E) and white matter (two-way ANOVA, F(1,13)=24.74, p=0.0003) (F) at P5 on midsagittal sections of lobules 3–5 in the cerebellum of control and mCAT animals, with or without irradiation. (G–J) IHC staining of medial sagittal cerebellar sections at P5 for CFP (green) in lobule 4/5 of Nes-Cfp mice treated with PLX5622 or control DMSO with or without irradiation. Nuclei were counterstained with Hoechst (blue). (H’) and (J’) show a high-power image of the area indicated by yellow boxes. EGL is delineated by the white dashed lines. (K) Quantification of IBA1+ cell density in the white matter at P5 on midsagittal sections in lobules 3–5 of Nes-Cfp mice treated with PLX5622 or control DMSO, with or without irradiation (two-way ANOVA, F(1,12)=42.40, p<0.001). (L) Quantification of EGL thickness at P5 in lobules 3–5 of Nes-Cfp mice treated with PLX5622 or control DMSO with or without irradiation (two-way ANOVA, F(1,12)=109.5, p<0.001). (M) Quantification of CFP+ cells density in the EGL at P5 on midsagittal sections in lobules 3–5 of Nes-Cfp mice treated with PLX5622 or control DMSO with or without irradiation (two-way ANOVA, F(1,12)=10.62, p=0.0068). (N) Measurement of cerebellar midsagittal section area at P30 in controls or mice treated with PLX, with or without irradiation at P1 (two-way ANOVA, F(1,12)=13.29, p=0.0034). EGL, external granular layer; WM, white matter; P, postnatal day; nonIR, non-irradiated; IR, irradiated. Scale bar: A–D and G–J: 250 µm. Significant Tukey’s post hoc multiple comparison tests are shown in the figures, and data are represented as mean ± SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102515/elife-102515-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantification of IBA1+ cell density in the WM at P8 in control or mitochondrial catalase (mCAT) mutant nonIR and IR mice. (B–E) Immunostaining of medial sagittal cerebellar sections at P5 showing expression of IBA1 (red) in mice treated with PLX5622 or control DMSO, with or without irradiation. (F) Quantification of SOX2+ NEP cell density in the BgL at P5 in control or PLX-treated nonIR and IR mice. BgL, Bergmann glia layer; WM, white matter; P, postnatal day; nonIR, non-irradiated; IR, irradiated. Scale bar: 500 µm. Data are represented as mean ± SEM.
 
 We, therefore, tested whether reducing the density of IBA1+ microglia/macrophages after birth would alter adaptive reprogramming at P5 or cerebellar regeneration at later stages. Since macrophages and cerebellar microglia are dependent on colony stimulating factor 1 (CSF1) for their survival, we administered PLX5622, a small molecule inhibitor of CSF receptor 1 (CSFR1), to pups every day from P0 to P5 (PLX treatment) (Kana et al., 2019; Tan et al., 2021). As expected, IBA1+ cells were significantly decreased in the cerebellum of PLX-treated mice at P5 compared to their controls, both nonIR and IR (p=0.0015 and p=0.0059, n=3 and n=5, respectively) (Figure 6G, Figure 6—figure supplement 1B-E). The thickness of the EGL was not significantly altered at P5 in PLX-treated IR mice compared to IR controls (Figure 6H). Interestingly, similar to mCAT mice, the density of Nes-CFP+ cells in the EGL was significantly decreased in PLX-treated IR mice compared to IR controls at P5 (p=0.0008, n=5) (Figure 6I–M). In contrast, the density of SOX2+ cells in the BgL, corresponding to the gliogenic BgL-NEPs, was unchanged in the PLX-treated and control mice, whether irradiated or not, suggesting that the decrease in expansion of BgL-NEPs caused by ROS is not mediated by microglia (Figure 6—figure supplement 1F). When mice were treated with PLX from P0 to P8 and allowed to age to P30, we found the cerebellar vermis section area was not decreased in PLX-treated IR mice compared to IR controls (Figure 6N). Thus, reducing the density of IBA1+ microglia/macrophages in neonatal mice reduces the recruitment of Nes-CFP+ cells to the EGL at P5 but does not have a long-term significant impact on regeneration of the cerebellum.
 

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.02792.001 During eukaryotic evolution, genome size has increased disproportionately to nuclear volume, necessitating greater degrees of chromatin compaction in higher eukaryotes, which have evolved several mechanisms for genome compaction. However, it is unknown whether histones themselves have evolved to regulate chromatin compaction. Analysis of histone sequences from 160 eukaryotes revealed that the H2A N-terminus has systematically acquired arginines as genomes expanded. Insertion of arginines into their evolutionarily conserved position in H2A of a small-genome organism increased linear compaction by as much as 40%, while their absence markedly diminished compaction in cells with large genomes. This effect was recapitulated in vitro with nucleosomal arrays using unmodified histones, indicating that the H2A N-terminus directly modulates the chromatin fiber likely through intra- and inter-nucleosomal arginine–DNA contacts to enable tighter nucleosomal packing. Our findings reveal a novel evolutionary mechanism for regulation of chromatin compaction and may explain the frequent mutations of the H2A N-terminus in cancer. DOI: http://dx.doi.org/10.7554/eLife.02792.001
+During eukaryotic evolution, genome size has increased disproportionately to nuclear volume, necessitating greater degrees of chromatin compaction in higher eukaryotes, which have evolved several mechanisms for genome compaction. However, it is unknown whether histones themselves have evolved to regulate chromatin compaction. Analysis of histone sequences from 160 eukaryotes revealed that the H2A N-terminus has systematically acquired arginines as genomes expanded. Insertion of arginines into their evolutionarily conserved position in H2A of a small-genome organism increased linear compaction by as much as 40%, while their absence markedly diminished compaction in cells with large genomes. This effect was recapitulated in vitro with nucleosomal arrays using unmodified histones, indicating that the H2A N-terminus directly modulates the chromatin fiber likely through intra- and inter-nucleosomal arginine–DNA contacts to enable tighter nucleosomal packing. Our findings reveal a novel evolutionary mechanism for regulation of chromatin compaction and may explain the frequent mutations of the H2A N-terminus in cancer.
 
 ## Introduction
 
@@ -34,97 +34,309 @@ In this study, we provide evidence from analysis of 160 fully-sequenced eukaryot
 
 ## Results
 
-## H2A acquires specifically positioned arginines as genome size increases
+### H2A acquires specifically positioned arginines as genome size increases
 
-To determine whether specific residues in the four core histones have co-evolved with increasing genome size, we performed residue composition analysis of canonical histone protein sequences from 160 fully sequenced eukaryotes with genome sizes ranging from 8 to 5600 Mbp encompassing protozoa, fungi, plants, and animals. The canonical histone proteins for each organism were defined based on at least 90% overlap and 35% identity with the histone fold domain of the corresponding human sequence (‘Materials and methods’). Each organism was categorized as having a small (<100 Mbp), medium (100–1000 Mbp), or large (>1000 Mbp) genome (
+To determine whether specific residues in the four core histones have co-evolved with increasing genome size, we performed residue composition analysis of canonical histone protein sequences from 160 fully sequenced eukaryotes with genome sizes ranging from 8 to 5600 Mbp encompassing protozoa, fungi, plants, and animals. The canonical histone proteins for each organism were defined based on at least 90% overlap and 35% identity with the histone fold domain of the corresponding human sequence (‘Materials and methods’). Each organism was categorized as having a small (<100 Mbp), medium (100–1000 Mbp), or large (>1000 Mbp) genome (Figure 1—figure supplement 1A). Of the canonical histones, the H2A NTD showed the most statistically significant variability in amino acid residues, where the number of arginines increased with increasing genome size (Figure 1A), while the number of serines (S) and threonines (T) decreased (Figure 1B). Other amino acid residues in the H2A NTD, including lysines (K), did not correlate with genome size (Figure 1—figure supplement 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig1-v2.jpg)
 
-**Figure 1.:** Violin plots of the number of (A) arginines or (B) serines/threonines in the H2A NTD for species with small, medium, and large genomes. Plot widths correspond to species frequency within each group. (C) H2A NTD sequences for S. cerevisiae and H. sapiens. (D) Heat map of H2A NTD residue composition at the indicated positions ordered by genome size. Example species are shown with kingdom and genome size information. (E) Protein sequence motifs surrounding the four H2A NTD arginine residues. (F) Positioning of evolutionarily variable residues relative to the H2A N-terminus (left) or histone fold (right). See also Figure 1—figure supplements 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.02792.00310.7554/eLife.02792.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.02792.004
+**Figure 1.:** Violin plots of the number of (A) arginines or (B) serines/threonines in the H2A NTD for species with small, medium, and large genomes. Plot widths correspond to species frequency within each group. (C) H2A NTD sequences for S. cerevisiae and H. sapiens. (D) Heat map of H2A NTD residue composition at the indicated positions ordered by genome size. Example species are shown with kingdom and genome size information. (E) Protein sequence motifs surrounding the four H2A NTD arginine residues. (F) Positioning of evolutionarily variable residues relative to the H2A N-terminus (left) or histone fold (right). See also Figure 1—figure supplements 1 and 2.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) The bar graph indicates the number and proportion of organisms in our data set that belong to the indicated phylogenetic kingdoms for each genome size category. (B) Violin plots of the number of lysines in the H2A NTD grouped by genome size as in Figure 1. (C) Boxplot of genome sizes of the organisms which have an H2A without (left) or with (right) the indicated residue. p-values (Mann–Whitney U test) of the difference in means between the absence or presence of the indicated residue are indicated.DOI: http://dx.doi.org/10.7554/eLife.02792.005
+**Figure 1—figure supplement 1.:** (A) The bar graph indicates the number and proportion of organisms in our data set that belong to the indicated phylogenetic kingdoms for each genome size category. (B) Violin plots of the number of lysines in the H2A NTD grouped by genome size as in Figure 1. (C) Boxplot of genome sizes of the organisms which have an H2A without (left) or with (right) the indicated residue. p-values (Mann–Whitney U test) of the difference in means between the absence or presence of the indicated residue are indicated.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Structure of a di-nucleosome obtained from the crystal lattice of a mono-nucleosome structure is shown from (A) the side or (B) close up highlighting potential intra- and inter-nucleosomal interactions between arginines and DNA backbones. Green is H2A, yellow is H2B, cyan is H3, and salmon is H4. The red and blue spheres are R3 and R11, respectively, both of which are in chain C (Davey et al., 2002).DOI: http://dx.doi.org/10.7554/eLife.02792.006
+**Figure 1—figure supplement 2.:** Structure of a di-nucleosome obtained from the crystal lattice of a mono-nucleosome structure is shown from (A) the side or (B) close up highlighting potential intra- and inter-nucleosomal interactions between arginines and DNA backbones. Green is H2A, yellow is H2B, cyan is H3, and salmon is H4. The red and blue spheres are R3 and R11, respectively, both of which are in chain C (Davey et al., 2002).
 
 The acquisition of arginines and loss of serines/threonines in the H2A NTD with increasing genome size occur at specific positions and in sequential order. For instance, the human H2A NTD contains arginine residues at positions 3 and 11 that are absent in yeast and at position 20 which is correspondingly a lysine in yeast (Figure 1C). In contrast, the human sequence lacks S10 and S15 that are observed in the yeast H2A NTD (Figure 1C). Alignment of all H2A NTD sequences also revealed similar trends across all eukaryotes studied here. The heat map in Figure 1D shows the occurrence of arginines and serines/threonines in the H2A NTD as a function of genome size (see Figure 1—source data 1 for raw data and Figure 1—figure supplement 1C for statistical analysis). At position 3, an arginine (R3) is predominantly present in medium and large species but is lacking in small species. At position 11, a lysine (K11) is observed in species with medium genomes that evolves to an arginine (R11) mainly in organisms with large genomes. R17 is present in most organisms examined, suggesting a very conserved function for this residue (Zheng et al., 2010). At position 20, small genomes contain predominantly a lysine residue, which converts to arginine in medium and large genomes. In contrast, serines/threonines at positions 10 and 15 are found primarily in organisms with small genomes and much less so in organisms with medium and large genomes (Figure 1D). Additionally, each of the four H2A NTD arginines is surrounded by a conserved motif (Figure 1E). The residues surrounding R3 and R17 are mainly glycine and serine, respectively. At position 11, the motif varies based on genome size. Species with medium-sized genomes contain VKG and those with large genomes contain ARA. The same is true of position 20, where AKA is present in organisms with small genomes and (S/T)RA in larger genome species (Figure 1E).
 
 Interestingly, except for R3, the positions of all the other evolutionarily varying residues in the H2A NTD are strongly conserved relative to the histone fold domain and not the N-terminus (Figure 1F). When counting conventionally from the N-terminus, amino acids R11, R17, and R20—which are numbered based on the human sequence—were not observed consistently at the same positions in other organisms. However, these residues are respectively 12, 6, and 3 amino acids away from the histone fold in most species (note the vertical axes in Figure 1F). S10 and S15—which are numbered based on the yeast sequence—also show more uniform positioning when counted from the histone fold. Altogether, as genome size increases, arginines appear in conserved positions within the H2A NTD relative to the histone fold, and serines and threonines are lost.
 
-## Arginines 3 and 11 in the H2A NTD increase chromatin compaction
+### Arginines 3 and 11 in the H2A NTD increase chromatin compaction
 
-To determine whether arginines and serines/threonines of the H2A NTD affect chromatin compaction in vivo, we took advantage of a strain of Saccharomyces cerevisiae, that has both chromosomal copies of H2A deleted and carries a single copy of H2A on a plasmid (TSY107), to construct mutant strains containing single or multiple insertions of arginines into their conserved motifs, deletions of serines, or combinations thereof (see Table 1 for specific amino acid changes and Supplementary file 1A for a description of the mutant strains). Two mutants, R3(ΔGS10)R11 and R11ΔS15, were also designed such that the spacing between R3 and R11 or R11 and the histone fold, respectively, is the same as in the H2A NTD of organisms with large genomes (Figure 1C,F). As a control for positive charge, mutant strains with lysines inserted in the same positions as arginines were also generated.10.7554/eLife.02792.007Table 1.List of H2A mutations, sequence changes and their effects on chromatin compaction and nuclear volumeDOI: http://dx.doi.org/10.7554/eLife.02792.007FISHNuclear volumeH2A mutantH2A NTD Protein sequence% Changep-value% Changep-valueYeast WTSG–GKG–GKAGSA–AKASQSRSAKAG–1.0E+00–1.0E+00 R3SGRGKG–GKAGSA–AKASQSRSAKAG−189.5E−04−54.1E−01 R11SG–GKG–GKAGSARAKASQSRSAKAG−158.6E−04−205.9E−05 R3R11SGRGKG–GKAGSARAKASQSRSAKAG−228.2E−06−163.0E−03 R3(ΔGS10)R11SGRGKG–GKA··ARAKASQSRSAKAG−302.1E−06+63.7E−01 R11ΔS15SG–GKG–GKAGSARAKA·QSRSAKAG−413.9E−08−9*4.7E−04 K3SGKGKG–GKAGSA–AKASQSRSAKAG+98.6E−01+139.4E−03 K11SG–GKG–GKAGSAKAKASQSRSAKAG+163.1E−01+32.6E−01 K3K11SGKGKG–GKAGSAKAKASQSRSAKAG+68.3E−01+315.4E−08 K11ΔS15SG–GKG–GKAGSAKAKA·QSRSAKAG−79.2E−02+26.6E−01 ΔGS10SG–GKG–GKA··A–AKASQSRSAKAG−63.2E−02+103.0E−02 ΔS15SG–GKG–GKAGSA–AKA·QSRSAKAG+39.4E−02+99.7E−03 R6SG–GKGRGKAGSA–AKASQSRSAKAG−55.6E−02+101.0E−03 K20RSG–GKG–GKAGSA–AKASQSRSARAG−33.0E−01+71.5E−02 R17KSG–GKG–GKAGSA–AKASQSKSAKAG−17.9E−0102.7E−01Human—HA Tag WTSGRGKQGGKTRAKAKSRSSRAG–1.0E+00–1.0E+00 ΔR3SG·GKQGGKTRAKAKSRSSRAG+398.3E−03+421.3E−08 R11KSGRGKQGGKTKAKAKSRSSRAG+202.3E−02+141.2E−03 R11ASGRGKQGGKTAAKAKSRSSRAG+431.0E−05+215.7E−07 ΔR3R11ASG·GKQGGKTAAKAKSRSSRAG+353.5E−03+185.9E−04Human—FLAG Tag WTSGRGKQGGKARAKAKSRSSRAG–1.0E+00–1.0E+00 Δ1–12············KAKSRSSRAG+474.9E−03+182.8E−04The -marks indicate spacing for sequence alignment purposes. The inserted residues are bold typed and underlined. Deletions are indicated by ·.Percent (%) change refers to the difference in median values relative to WT unless otherwise indicated; the statistically significant differences are bold typed. p-values were calculated using the t-test (yeast) and Mann–Whitney U test (human).*percent change was calculated relative to isogenic WT control (ΔS15).
+To determine whether arginines and serines/threonines of the H2A NTD affect chromatin compaction in vivo, we took advantage of a strain of Saccharomyces cerevisiae, that has both chromosomal copies of H2A deleted and carries a single copy of H2A on a plasmid (TSY107), to construct mutant strains containing single or multiple insertions of arginines into their conserved motifs, deletions of serines, or combinations thereof (see Table 1 for specific amino acid changes and Supplementary file 1A for a description of the mutant strains). Two mutants, R3(ΔGS10)R11 and R11ΔS15, were also designed such that the spacing between R3 and R11 or R11 and the histone fold, respectively, is the same as in the H2A NTD of organisms with large genomes (Figure 1C,F). As a control for positive charge, mutant strains with lysines inserted in the same positions as arginines were also generated.
 
-To test the effects of H2A NTD changes on chromatin compaction, the physical distance between two probes on chromosome XVI spaced 275 kb apart was assessed in each of the H2A mutants using fluorescent in situ hybridization (FISH) (
+**Table 1.**
+ List of H2A mutations, sequence changes and their effects on chromatin compaction and nuclear volume
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">FISH</th>
+      <th colspan="2">Nuclear volume</th>
+    </tr>
+    <tr>
+      <th>H2A mutant</th>
+      <th>H2A NTD Protein sequence</th>
+      <th>% Change</th>
+      <th>p-value</th>
+      <th>% Change</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Yeast</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>SG–GKG–GKAGSA–AKASQSRSAKAG</td>
+      <td>–</td>
+      <td>1.0E+00</td>
+      <td>–</td>
+      <td>1.0E+00</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>SGRGKG–GKAGSA–AKASQSRSAKAG</td>
+      <td>−18</td>
+      <td>9.5E−04</td>
+      <td>−5</td>
+      <td>4.1E−01</td>
+    </tr>
+    <tr>
+      <td>R11</td>
+      <td>SG–GKG–GKAGSARAKASQSRSAKAG</td>
+      <td>−15</td>
+      <td>8.6E−04</td>
+      <td>−20</td>
+      <td>5.9E−05</td>
+    </tr>
+    <tr>
+      <td>R3R11</td>
+      <td>SGRGKG–GKAGSARAKASQSRSAKAG</td>
+      <td>−22</td>
+      <td>8.2E−06</td>
+      <td>−16</td>
+      <td>3.0E−03</td>
+    </tr>
+    <tr>
+      <td>R3(ΔGS10)R11</td>
+      <td>SGRGKG–GKA··ARAKASQSRSAKAG</td>
+      <td>−30</td>
+      <td>2.1E−06</td>
+      <td>+6</td>
+      <td>3.7E−01</td>
+    </tr>
+    <tr>
+      <td>R11ΔS15</td>
+      <td>SG–GKG–GKAGSARAKA·QSRSAKAG</td>
+      <td>−41</td>
+      <td>3.9E−08</td>
+      <td>−9*</td>
+      <td>4.7E−04</td>
+    </tr>
+    <tr>
+      <td>K3</td>
+      <td>SGKGKG–GKAGSA–AKASQSRSAKAG</td>
+      <td>+9</td>
+      <td>8.6E−01</td>
+      <td>+13</td>
+      <td>9.4E−03</td>
+    </tr>
+    <tr>
+      <td>K11</td>
+      <td>SG–GKG–GKAGSAKAKASQSRSAKAG</td>
+      <td>+16</td>
+      <td>3.1E−01</td>
+      <td>+3</td>
+      <td>2.6E−01</td>
+    </tr>
+    <tr>
+      <td>K3K11</td>
+      <td>SGKGKG–GKAGSAKAKASQSRSAKAG</td>
+      <td>+6</td>
+      <td>8.3E−01</td>
+      <td>+31</td>
+      <td>5.4E−08</td>
+    </tr>
+    <tr>
+      <td>K11ΔS15</td>
+      <td>SG–GKG–GKAGSAKAKA·QSRSAKAG</td>
+      <td>−7</td>
+      <td>9.2E−02</td>
+      <td>+2</td>
+      <td>6.6E−01</td>
+    </tr>
+    <tr>
+      <td>ΔGS10</td>
+      <td>SG–GKG–GKA··A–AKASQSRSAKAG</td>
+      <td>−6</td>
+      <td>3.2E−02</td>
+      <td>+10</td>
+      <td>3.0E−02</td>
+    </tr>
+    <tr>
+      <td>ΔS15</td>
+      <td>SG–GKG–GKAGSA–AKA·QSRSAKAG</td>
+      <td>+3</td>
+      <td>9.4E−02</td>
+      <td>+9</td>
+      <td>9.7E−03</td>
+    </tr>
+    <tr>
+      <td>R6</td>
+      <td>SG–GKGRGKAGSA–AKASQSRSAKAG</td>
+      <td>−5</td>
+      <td>5.6E−02</td>
+      <td>+10</td>
+      <td>1.0E−03</td>
+    </tr>
+    <tr>
+      <td>K20R</td>
+      <td>SG–GKG–GKAGSA–AKASQSRSARAG</td>
+      <td>−3</td>
+      <td>3.0E−01</td>
+      <td>+7</td>
+      <td>1.5E−02</td>
+    </tr>
+    <tr>
+      <td>R17K</td>
+      <td>SG–GKG–GKAGSA–AKASQSKSAKAG</td>
+      <td>−1</td>
+      <td>7.9E−01</td>
+      <td>0</td>
+      <td>2.7E−01</td>
+    </tr>
+    <tr>
+      <td colspan="6">Human—HA Tag</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>SGRGKQGGKTRAKAKSRSSRAG</td>
+      <td>–</td>
+      <td>1.0E+00</td>
+      <td>–</td>
+      <td>1.0E+00</td>
+    </tr>
+    <tr>
+      <td>ΔR3</td>
+      <td>SG·GKQGGKTRAKAKSRSSRAG</td>
+      <td>+39</td>
+      <td>8.3E−03</td>
+      <td>+42</td>
+      <td>1.3E−08</td>
+    </tr>
+    <tr>
+      <td>R11K</td>
+      <td>SGRGKQGGKTKAKAKSRSSRAG</td>
+      <td>+20</td>
+      <td>2.3E−02</td>
+      <td>+14</td>
+      <td>1.2E−03</td>
+    </tr>
+    <tr>
+      <td>R11A</td>
+      <td>SGRGKQGGKTAAKAKSRSSRAG</td>
+      <td>+43</td>
+      <td>1.0E−05</td>
+      <td>+21</td>
+      <td>5.7E−07</td>
+    </tr>
+    <tr>
+      <td>ΔR3R11A</td>
+      <td>SG·GKQGGKTAAKAKSRSSRAG</td>
+      <td>+35</td>
+      <td>3.5E−03</td>
+      <td>+18</td>
+      <td>5.9E−04</td>
+    </tr>
+    <tr>
+      <td colspan="6">Human—FLAG Tag</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>SGRGKQGGKARAKAKSRSSRAG</td>
+      <td>–</td>
+      <td>1.0E+00</td>
+      <td>–</td>
+      <td>1.0E+00</td>
+    </tr>
+    <tr>
+      <td>Δ1–12</td>
+      <td>············KAKSRSSRAG</td>
+      <td>+47</td>
+      <td>4.9E−03</td>
+      <td>+18</td>
+      <td>2.8E−04</td>
+    </tr>
+  </tbody>
+</table>
+
+_The -marks indicate spacing for sequence alignment purposes. The inserted residues are bold typed and underlined. Deletions are indicated by ·.Percent (%) change refers to the difference in median values relative to WT unless otherwise indicated; the statistically significant differences are bold typed. p-values were calculated using the t-test (yeast) and Mann–Whitney U test (human).*percent change was calculated relative to isogenic WT control (ΔS15)._
+
+To test the effects of H2A NTD changes on chromatin compaction, the physical distance between two probes on chromosome XVI spaced 275 kb apart was assessed in each of the H2A mutants using fluorescent in situ hybridization (FISH) (Figure 2A; Guacci et al., 1997; Bystricky et al., 2004). The probes were differentially labeled and visualized by confocal microscopy. The distance between the probes was measured in a single plane in which both probes were present within each nucleus (Bystricky et al., 2004). When compared to the isogenic wild type (WT), addition of a single arginine at position 3 (R3) or 11 (R11) to the H2A NTD was sufficient to significantly decrease the average interprobe distance by 18% and 15%, respectively (Figure 2B,C; Table 1). The average interprobe distance was further decreased by 22% when both arginines were present (R3R11) and even more so (30%) in R3(ΔGS10)R11. Deleting G9S10 (ΔGS10) alone caused slightly increased compaction with low statistical significance (Table 1). The largest decrease in interprobe distance (41%) was observed in the R11ΔS15 mutant, which places R11 12 amino acids from the histone fold, the same position as in organisms with large genomes. Removal of S15 (ΔS15) alone had no effect. The effect of arginines was not simply due to increasing the positive charge of the H2A NTD, as insertions of lysines at positions 3 and 11 did not significantly affect the interprobe distances (Figure 2C and Supplementary file 2). Although lysines are found at these positions in certain species (Figure 1D), the lack of potential compaction by lysines may be due to the absence of other evolutionary changes in yeast histones (see Figure 1E). Additionally, R17K or K20R mutations did not affect compaction, nor did a randomly inserted arginine at position 6 (R6) (Figure 2C and Supplementary file 2), suggesting that not every arginine in the H2A NTD contributes to chromatin compaction.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic position of probes on chromosome XVI that were used for FISH. The letters correspond to the probe sets. (B) FISH images and (C) boxplot of the distributions of interprobe distances for probe set A in the indicated strains. (D) The mean interprobe distances for the indicated yeast strains for probe sets A, B, C, and D are plotted as a function of genomic distance. Solid lines are best fit equations. (E) Boxplot of the distributions of interprobe distances for probe set A in the indicated strains. Dashed lines mark the median value for the WT strain. The boxplot whiskers contain 90% of the data. All scale bars are 1 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; **p<0.001; ***p<0.0001 (For exact values, see Supplementary file 2). (F) Agarose gel electrophoresis of MNase-digested chromatin in the indicated strains including the densitometric profiles comparing the WT to each of the mutant H2A strains for a given amount of enzyme. See also Figure 2—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.02792.008
+**Figure 2.:** (A) Schematic position of probes on chromosome XVI that were used for FISH. The letters correspond to the probe sets. (B) FISH images and (C) boxplot of the distributions of interprobe distances for probe set A in the indicated strains. (D) The mean interprobe distances for the indicated yeast strains for probe sets A, B, C, and D are plotted as a function of genomic distance. Solid lines are best fit equations. (E) Boxplot of the distributions of interprobe distances for probe set A in the indicated strains. Dashed lines mark the median value for the WT strain. The boxplot whiskers contain 90% of the data. All scale bars are 1 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; **p<0.001; ***p<0.0001 (For exact values, see Supplementary file 2). (F) Agarose gel electrophoresis of MNase-digested chromatin in the indicated strains including the densitometric profiles comparing the WT to each of the mutant H2A strains for a given amount of enzyme. See also Figure 2—figure supplement 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A–C). Boxplot of the distributions of interprobe distances in the indicated H2A mutant strains for probe sets B, C, and D as shown in Figure 3A. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01;  ***p<0.0001 (Supplementary file 2). Cell cycle analysis of yeast strains in the TSY107 (D) or FY406 (E) background. 1C and 2C refer to G1 and G2 DNA content, respectively. Note that the WT strains (TSY107, FY406) carry one copy of the H2A gene on a plasmid with the two chromosomal copies deleted (Schuster et al., 1986; Hirschhorn et al., 1995). Dosage alterations of the H2A protein cause G2/M arrest (Sopko et al., 2006) which is evident in our WT strains. Nonetheless, all the mutants display highly similar cell cycle profiles. (F) Agarose gel electrophoresis of MNase-digested chromatin in the indicated strains. The amount of enzyme used to digest chromatin is indicated. Also shown are the densitometric profiles of the agarose gel that compares WT to each of the indicated mutant H2A strains for a given amount of enzyme.DOI: http://dx.doi.org/10.7554/eLife.02792.009
+**Figure 2—figure supplement 1.:** (A–C). Boxplot of the distributions of interprobe distances in the indicated H2A mutant strains for probe sets B, C, and D as shown in Figure 3A. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01;  ***p<0.0001 (Supplementary file 2). Cell cycle analysis of yeast strains in the TSY107 (D) or FY406 (E) background. 1C and 2C refer to G1 and G2 DNA content, respectively. Note that the WT strains (TSY107, FY406) carry one copy of the H2A gene on a plasmid with the two chromosomal copies deleted (Schuster et al., 1986; Hirschhorn et al., 1995). Dosage alterations of the H2A protein cause G2/M arrest (Sopko et al., 2006) which is evident in our WT strains. Nonetheless, all the mutants display highly similar cell cycle profiles. (F) Agarose gel electrophoresis of MNase-digested chromatin in the indicated strains. The amount of enzyme used to digest chromatin is indicated. Also shown are the densitometric profiles of the agarose gel that compares WT to each of the indicated mutant H2A strains for a given amount of enzyme.
 
 We further confirmed the effects of R11 on chromatin compaction using three additional probe sets (Figure 2A). The level of compaction seen in our WT strain is similar to what has been previously reported in yeast using a different strain background (Bystricky et al., 2004). The interprobe distances for all probe sets were significantly decreased in R11 compared to WT and even more so in R11ΔS15 but not ΔS15 alone (Figure 2—figure supplement 1A–C and Supplementary file 2). Plotting the physical vs genomic distances for all probe sets revealed uniform compaction across large genomic distances (Figure 2D). The effect of R11 on chromatin compaction was not strain-specific as H2A R11 and R11ΔS15, but not ΔS15, caused chromatin compaction in a different strain background (Figure 2E; Supplementary file 2). We therefore conclude that H2A arginines at positions 3 and 11, especially when R11 is placed at the evolutionarily-conserved position relative to the histone fold, increase the degree of chromatin compaction.
 
 Chromatin is differentially compacted at different cell cycle stages (Guacci et al., 1997). Cell cycle profile analysis showed little difference between the strain harboring WT H2A and any of the mutant strains (Figure 2—figure supplement 1D–E), indicating that the observed differences in chromatin compaction are not due to altered cell cycle profiles. Chromatin compaction may also be influenced by nucleosomal spacing; indeed the linker DNA length is larger in human cells than in yeast (Grigoryev, 2012). We find that there are essentially no differences in nucleosomal density in H2A arginine mutants using Micrococcal nuclease (MNase) digestion (Figure 2F, Figure 2—figure supplement 1F), indicating that the average nucleosomal spacing is not affected by these mutations. But the more compact mutants displayed decreased accessibility to MNase as indicated by the delayed appearance of the nucleosomal digestion pattern (Figure 2F, Figure 2—figure supplement 1F).
 
-## H2A arginines and serines affect nuclear volume in yeast
+### H2A arginines and serines affect nuclear volume in yeast
 
-Since chromatin structure may influence the volume of the nucleus (
+Since chromatin structure may influence the volume of the nucleus (Cavalier-Smith, 2005), we asked whether nuclear volume was affected by H2A-mediated chromatin compaction. We tagged a nuclear pore protein, Nup49, in its chromosomal locus with GFP to visualize the nuclear membrane and used confocal microscopy to capture three-dimensional images of the nucleus to quantify volumes of ≥150 cells per H2A mutant (Figure 3A,B; Table 1; Supplementary file 3, see ‘Materials and methods’ for volume calculations). As compared to WT cells, H2A mutants containing R11 or R3R11, both of which contain more compact chromatin, displayed significantly decreased nuclear volumes. The average nuclear volume in the R3 mutant was also less than WT but did not reach statistical significance. Interestingly, H2A mutants from which serines 10 and 15 were removed displayed larger nuclear volumes. Simultaneous insertions of arginines into these strains (R3(ΔGS10)R11 and R11ΔS15) decreased their nuclear volume (R11ΔS15 p<0.001 compared to ΔS15), restoring them to levels similar to WT. The control strains with either lysines or R6 had nuclear volumes similar to or larger than WT. Neither arginines nor serines had any effect on total cell size as measured by concanavalin A staining (Figure 3—figure supplement 1A,B; Supplementary file 3). In the FY406 strain background, ΔS15 did not cause an increase in nuclear volume; and thus both R11 and R11ΔS15 strains exhibited smaller nuclear volumes than isogenic WT (Figure 3C; Supplementary file 3). These data suggest that modulation of chromatin compaction through the H2A NTD, especially in the presence of R11, affects the nuclear volume but this effect may be indirect (see human data below).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig3-v2.jpg)
 
-**Figure 3.:** (A) Images of the nuclear envelope, as visualized by Nup49p-GFP, and boxplot of the distributions of nuclear volumes in the indicated strains in the TSY107 background (B) or the FY406 background (C). Dashed lines mark the median value for the WT strain. The boxplot whiskers contain 90% of the data. All scale bars are 1 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; **p<0.001; ***p<0.0001 (Supplementary file 3). Red dagger (†) indicates that mean nuclear volume of R11ΔS15 is significantly smaller than its isogenic WT strain (ΔS15; p<0.001). See also Figure 3—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.02792.010
+**Figure 3.:** (A) Images of the nuclear envelope, as visualized by Nup49p-GFP, and boxplot of the distributions of nuclear volumes in the indicated strains in the TSY107 background (B) or the FY406 background (C). Dashed lines mark the median value for the WT strain. The boxplot whiskers contain 90% of the data. All scale bars are 1 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; **p<0.001; ***p<0.0001 (Supplementary file 3). Red dagger (†) indicates that mean nuclear volume of R11ΔS15 is significantly smaller than its isogenic WT strain (ΔS15; p<0.001). See also Figure 3—figure supplement 1.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Images of the cell wall, as visualized by concanavalin A staining, and (B) boxplot of the distributions of cellular volumes in the indicated yeast strains. The scale bar is 5 µm.DOI: http://dx.doi.org/10.7554/eLife.02792.011
+**Figure 3—figure supplement 1.:** (A) Images of the cell wall, as visualized by concanavalin A staining, and (B) boxplot of the distributions of cellular volumes in the indicated yeast strains. The scale bar is 5 µm.
 
-## Loss of H2A arginines causes de-compaction of chromatin in human cells
+### Loss of H2A arginines causes de-compaction of chromatin in human cells
 
-Since the H2A NTD in large genomes contains both R3 and R11, we expected that their removal would cause de-compaction of chromatin. To test this prediction, we ectopically expressed WT or mutant H2A in several human cell lines and measured the distances between probes 0.49 Mbp apart on chromosome 1 by FISH, as well as the largest nuclear cross-sectional areas (‘Materials and methods’). The H2A gene was HA-tagged and mutated to remove R3 (ΔR3), to replace R11 with alanine (R11A) or lysine (R11K), or to combine two mutations (ΔR3R11A). The H2A constructs were overexpressed using the strong CMV promoter in the normal human IMR90 fibroblasts, the breast cancer cell line MDA-MB-453, or the HEK293 cells. Cells overexpressing ΔR3, R11A, or ΔR3R11A H2A mutants had increased interprobe distances, indicating de-compaction of chromatin. Expression of H2A R11K had modest effects on chromatin de-compaction with marginal statistical significance (
+Since the H2A NTD in large genomes contains both R3 and R11, we expected that their removal would cause de-compaction of chromatin. To test this prediction, we ectopically expressed WT or mutant H2A in several human cell lines and measured the distances between probes 0.49 Mbp apart on chromosome 1 by FISH, as well as the largest nuclear cross-sectional areas (‘Materials and methods’). The H2A gene was HA-tagged and mutated to remove R3 (ΔR3), to replace R11 with alanine (R11A) or lysine (R11K), or to combine two mutations (ΔR3R11A). The H2A constructs were overexpressed using the strong CMV promoter in the normal human IMR90 fibroblasts, the breast cancer cell line MDA-MB-453, or the HEK293 cells. Cells overexpressing ΔR3, R11A, or ΔR3R11A H2A mutants had increased interprobe distances, indicating de-compaction of chromatin. Expression of H2A R11K had modest effects on chromatin de-compaction with marginal statistical significance (Figure 4A,B, Figure 4—figure supplement 1A,B; Supplementary file 4). Cells expressing any of the H2A mutants displayed larger nuclear areas, suggesting that nuclear size is increased (Figure 4C,D, Figure 4—figure supplement 1C–F; Supplementary file 5). Equal degrees of overexpression were confirmed by immunofluorescence analysis with an anti-HA antibody and detection of HA-H2A by western blotting (Figure 4D, Figure 4—figure supplement 1G). Ectopic expression of a C-terminally FLAG-tagged H2A mutant missing residues 1–12 (Δ1–12) also caused significant de-compaction of chromatin and increased nuclear area despite being expressed at a lower level than WT (Figure 4E,F). These data demonstrate that, consistent with our predictions, the H2A NTD, especially arginines 3 and 11, function to compact chromatin in human cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig4-v2.jpg)
 
-**Figure 4.:** (A) FISH images of probes on chromosome 1 in normal primary IMR90 fibroblasts with HA-tagged WT or mutant H2A overexpressed as indicated. (B) Boxplot of the distributions of inter-probe distances. Note that R11K was only marginally significant at p=0.023. (C) Immunofluorescence images of IMR90 cells overexpressing HA-tagged WT or mutant H2A as indicated. (D) Top: boxplot of the distributions of largest nuclear cross-sectional areas in the indicated H2A overexpressing cells. Bottom: boxplot of the distributions of α-HA fluorescence intensities. (E) Left: FISH images, as in (A), of IMR90 cells expressing a C-terminal FLAG-tagged WT or tailless (Δ1–12) H2A. Right: boxplot of the distributions of inter-probe distances. (F) Top: immunofluorescence images of IMR90 cells overexpressing FLAG-tagged WT or tailless H2A. Bottom: boxplot of nuclear areas and fluorescence intensities, as indicated. Dashed lines mark the median value for the WT strain. All scale bars are 10 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; **p<0.001; ***p<0.0001 (Supplementary files 4 and 5). See also Figure 4—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.02792.012
+**Figure 4.:** (A) FISH images of probes on chromosome 1 in normal primary IMR90 fibroblasts with HA-tagged WT or mutant H2A overexpressed as indicated. (B) Boxplot of the distributions of inter-probe distances. Note that R11K was only marginally significant at p=0.023. (C) Immunofluorescence images of IMR90 cells overexpressing HA-tagged WT or mutant H2A as indicated. (D) Top: boxplot of the distributions of largest nuclear cross-sectional areas in the indicated H2A overexpressing cells. Bottom: boxplot of the distributions of α-HA fluorescence intensities. (E) Left: FISH images, as in (A), of IMR90 cells expressing a C-terminal FLAG-tagged WT or tailless (Δ1–12) H2A. Right: boxplot of the distributions of inter-probe distances. (F) Top: immunofluorescence images of IMR90 cells overexpressing FLAG-tagged WT or tailless H2A. Bottom: boxplot of nuclear areas and fluorescence intensities, as indicated. Dashed lines mark the median value for the WT strain. All scale bars are 10 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; **p<0.001; ***p<0.0001 (Supplementary files 4 and 5). See also Figure 4—figure supplement 1.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) FISH images of probes on chromosome 1 in MDA-MB-453 cells with either WT or mutant HA-tagged H2A overexpressed. (B) Boxplot of the distributions of interprobe distances. Immunofluorescence images of (C) MDA-MB-453 or (E) HEK293 cells overexpressing WT or mutant HA-tagged H2A. Boxplot of the distributions of the largest nuclear cross-sectional areas in (D) MDA-MB-453 or (F) HEK293 for the indicated H2A over-expressing cells. (G) Western blot of lysates from HEK293 cells overexpressing the indicated WT or mutant HA-tagged H2A. All scale bars are 10 µm. Dashed lines mark the median value for the WT strain. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; ***p<0.0001.DOI: http://dx.doi.org/10.7554/eLife.02792.013
+**Figure 4—figure supplement 1.:** (A) FISH images of probes on chromosome 1 in MDA-MB-453 cells with either WT or mutant HA-tagged H2A overexpressed. (B) Boxplot of the distributions of interprobe distances. Immunofluorescence images of (C) MDA-MB-453 or (E) HEK293 cells overexpressing WT or mutant HA-tagged H2A. Boxplot of the distributions of the largest nuclear cross-sectional areas in (D) MDA-MB-453 or (F) HEK293 for the indicated H2A over-expressing cells. (G) Western blot of lysates from HEK293 cells overexpressing the indicated WT or mutant HA-tagged H2A. All scale bars are 10 µm. Dashed lines mark the median value for the WT strain. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; ***p<0.0001.
 
-## H2A R11 regulates compaction of nucleosomal arrays in vitro
+### H2A R11 regulates compaction of nucleosomal arrays in vitro
 
-Because R11 compacts chromatin in vivo, we investigated whether this effect is directly on the chromatin fiber. We used step-wise salt dialysis to assemble nucleosomal arrays with a DNA template containing 12 copies of the 177 bp ‘601’ nucleosome positioning sequence (601-177-12) and recombinant
+Because R11 compacts chromatin in vivo, we investigated whether this effect is directly on the chromatin fiber. We used step-wise salt dialysis to assemble nucleosomal arrays with a DNA template containing 12 copies of the 177 bp ‘601’ nucleosome positioning sequence (601-177-12) and recombinant Xenopus laevis histone octamers that contain either WT H2A or one with R11 deleted (ΔR11). We assembled nucleosomal arrays at different octamer-to-template ratios (0.9, 1, and 1.1 octamer to 1 template) and monitored the quality of the arrays by MgCl2 precipitation and restriction digest analysis using ScaI. We found that a 1:1 octamer-to-template ratio gave the best results as the ScaI digest demonstrated well-assembled arrays compared to the 5% free DNA loaded as a comparison (Figure 5A). We used analytical ultracentrifugation to determine the sedimentation velocity combined with van Holde–Weischet analysis (Weischet et al., 1978) to ascertain the distribution of sedimentation coefficients (S) for each nucleosomal array in the absence or presence of 0.8 mM MgCl2, a concentration of the divalent cation that promotes intra-molecular folding of nucleosomal arrays (Schwarz and Hansen, 1994). In the absence of Mg2+, arrays containing WT H2A sedimented with a coefficient of 33.1, which is a value that has been previously shown for similar arrays (Dorigo et al., 2003; Shogren-Knaak et al., 2006; Zhou et al., 2007). In contrast, arrays missing R11 adopted a more extended conformation with a smaller sedimentation coefficient of 31.0 (Figure 5B). Addition of Mg2+ increased compaction of both arrays and shifted the sedimentation coefficients to 39.3 and 37.4 for WT and ΔR11 H2A, respectively (Figure 5B). A second independent chromatin assembly and ultracentrifuge analysis confirmed these results (Figure 5—figure supplement 1). Thus, in the absence of R11 in the H2A NTD, nucleosomal arrays adopt a less compact conformation even in the presence of divalent cations, showing that R11 directly increases chromatin compaction.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig5-v2.jpg)
 
-**Figure 5.:** (A) Polyacrylamide gel electrophoresis (PAGE) of ScaI-digested 601-177-12 DNA template assembled with octamers containing recombinant WT or ΔR11 H2A. As a control, 5% of the 601-177-12 DNA without octamers was also digested. (B) The distribution of sedimentation coefficients determined by van Holde-Weischet analysis plotted against the percent boundary fraction in the absence or presence of 0.8 mM MgCl2 as indicated. S20°C,W is the sedimentation coefficient corrected to water at 20°C. See also Figure 5—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.02792.014
+**Figure 5.:** (A) Polyacrylamide gel electrophoresis (PAGE) of ScaI-digested 601-177-12 DNA template assembled with octamers containing recombinant WT or ΔR11 H2A. As a control, 5% of the 601-177-12 DNA without octamers was also digested. (B) The distribution of sedimentation coefficients determined by van Holde-Weischet analysis plotted against the percent boundary fraction in the absence or presence of 0.8 mM MgCl2 as indicated. S20°C,W is the sedimentation coefficient corrected to water at 20°C. See also Figure 5—figure supplement 1.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** The distribution of sedimentation coefficients determined by van Holde-Weischet analysis plotted against the percent boundary fraction in the absence or presence of 0.6 mM MgCl2 as indicated. S20°C,W is the sedimentation coefficient corrected to water at 20°C.DOI: http://dx.doi.org/10.7554/eLife.02792.015
+**Figure 5—figure supplement 1.:** The distribution of sedimentation coefficients determined by van Holde-Weischet analysis plotted against the percent boundary fraction in the absence or presence of 0.6 mM MgCl2 as indicated. S20°C,W is the sedimentation coefficient corrected to water at 20°C.
 
-## Compaction of chromatin by H2A NTD arginines does not alter global gene expression in yeast
+### Compaction of chromatin by H2A NTD arginines does not alter global gene expression in yeast
 
-To determine whether chromatin compaction through H2A arginines interferes with transcription regulation, we examined gene expression patterns in the H2A yeast mutants. Remarkably, there was a high level of correlation (≥0.99) between all strains examined (
+To determine whether chromatin compaction through H2A arginines interferes with transcription regulation, we examined gene expression patterns in the H2A yeast mutants. Remarkably, there was a high level of correlation (≥0.99) between all strains examined (Figure 6A), and no specific gene ontology was found among the genes that were differentially expressed by twofold or more. The expression levels of the histone genes were similar, indicating that altered levels of histone genes expression do not account for the changes in chromatin compaction. These data indicate that compaction of chromatin by H2A does not significantly alter global gene expression in exponentially growing cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig6-v2.jpg)
 
-**Figure 6.:** (A) Pearson correlations between the global gene expressions of the indicated strains grown in YPD. Correlations are calculated from an average of at least two experiments. (B) Growth curves of the indicated H2A yeast strains over 10 hr in YPD. (C) Spot tests with 10-fold serial dilutions for the indicated strains in the presence of different drugs. (D) The proportion of yeast cells in a co-culture of WT and the indicated mutant H2A carrying Pgk1 gene fusion to GFP (green) or RFP (red) as indicated by color.DOI: http://dx.doi.org/10.7554/eLife.02792.016
+**Figure 6.:** (A) Pearson correlations between the global gene expressions of the indicated strains grown in YPD. Correlations are calculated from an average of at least two experiments. (B) Growth curves of the indicated H2A yeast strains over 10 hr in YPD. (C) Spot tests with 10-fold serial dilutions for the indicated strains in the presence of different drugs. (D) The proportion of yeast cells in a co-culture of WT and the indicated mutant H2A carrying Pgk1 gene fusion to GFP (green) or RFP (red) as indicated by color.
 
 All strains also showed similar growth rates in rich media (Figure 6B) and no significant differences in sensitivity to hydroxyurea, methyl methanesulfonate (MMS), bleomycin, 4-nitroquinoline 1-oxide (4NQO), cycloheximide, and rapamycin, indicating no major defects with DNA replication or repair, protein synthesis, or the TOR signaling pathways (Figure 6C). But in competition growth assays in which equal amounts of WT and H2A mutant cells harboring the PGK1 gene fused to either GFP or RFP were co-cultured, the H2A mutants regardless of any effect on chromatin compaction, were outcompeted (Figure 6D). This suggests that changes in the H2A NTD sequence can affect the overall fitness of the cell.
 
-## H2A NTD arginines and their surrounding residues are mutated in cancer and affect chromatin compaction
+### H2A NTD arginines and their surrounding residues are mutated in cancer and affect chromatin compaction
 
-Deregulated chromatin compaction is often a pathological hallmark of cancer cells (
+Deregulated chromatin compaction is often a pathological hallmark of cancer cells (Edens et al., 2012), although the underlying mechanisms are not well-understood. A survey of the COSMIC database (Forbes et al., 2011), as of the time of writing, revealed 41 documented missense mutations within the H2A NTD with 29 (71%) affecting a residue within one of the four arginine motifs (Figure 7A). R11, which had the strongest effect of any single arginine residue on chromatin compaction, is the most commonly mutated residue in the H2A NTD. We tested the effects of three of these mutations, R11C, H, and P and found that ectopic expression of each in normal human fibroblasts decreases chromatin compaction significantly with R11P having the strongest effect (Figure 7B,C). These cancer mutations have little effect on increasing nuclear area, however (Figure 7D,E), in contrast to R11A (Figure 4D). It is unclear to what extent the H2A mutants have to be expressed in cancer cells relative to the 17 canonical H2A genes in the human genome to affect chromatin compaction. But our data suggest that over-expression of an H2A mutant has the potential to disrupt chromatin compaction in cancer.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/02792/elife-02792-fig7-v2.jpg)
 
-**Figure 7.:** (A) Schematic of the H2A NTD showing only the mutations within the arginine motifs found in various cancers as indicated by the colored shapes (Forbes et al., 2011). The letter within each shape represents the mutated amino acid. (B) FISH images of probes on chromosome 1 in normal primary IMR90 fibroblasts with HA-tagged WT or mutant H2A overexpressed as indicated. (C) Boxplot of the distributions of inter-probe distances. (D) Immunofluorescence images of IMR90 cells overexpressing HA-tagged WT or mutant H2A as indicated. Anti-HA primary and Alexa Fluor 647-conjugated secondary antibodies were used to determine expression in FISH images and for measurement of nuclear areas. (E) Top: boxplot of the distributions of largest nuclear cross-sectional areas in the indicated H2A overexpressing cells. Bottom: boxplot of the distributions of α-HA fluorescence intensities. Dashed lines mark the median value for the WT strain. All scale bars are 10 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; ***p<0.0001 (Supplementary files 4 and 5).DOI: http://dx.doi.org/10.7554/eLife.02792.017
+**Figure 7.:** (A) Schematic of the H2A NTD showing only the mutations within the arginine motifs found in various cancers as indicated by the colored shapes (Forbes et al., 2011). The letter within each shape represents the mutated amino acid. (B) FISH images of probes on chromosome 1 in normal primary IMR90 fibroblasts with HA-tagged WT or mutant H2A overexpressed as indicated. (C) Boxplot of the distributions of inter-probe distances. (D) Immunofluorescence images of IMR90 cells overexpressing HA-tagged WT or mutant H2A as indicated. Anti-HA primary and Alexa Fluor 647-conjugated secondary antibodies were used to determine expression in FISH images and for measurement of nuclear areas. (E) Top: boxplot of the distributions of largest nuclear cross-sectional areas in the indicated H2A overexpressing cells. Bottom: boxplot of the distributions of α-HA fluorescence intensities. Dashed lines mark the median value for the WT strain. All scale bars are 10 µm. Boxes are colored if the mean of the indicated strain is significantly different from WT. Red stars denote level of significance: *p<0.01; ***p<0.0001 (Supplementary files 4 and 5).
 
 ## Discussion
 
@@ -142,78 +354,78 @@ Since alterations in chromatin structure often cause changes in transcription (P
 
 ## Materials and methods
 
-## Strains and media
+### Strains and media
 
 The yeast strains used in this study are listed in Supplementary file 1A. Yeast cells were grown in YPD at 30°C unless otherwise noted. C-terminal tagging of yeast proteins was performed as described previously (Longtine et al., 1998). Mammalian cell lines were maintained at 37°C and 5% CO2 and cultured with 10% fetal bovine serum and DMEM (Life Technologies, Grand Island, NY).
 
-## Histone sequence database construction and analysis
+### Histone sequence database construction and analysis
 
 Sequences were initially extracted from the Entrez database using a keyword search for ‘histone’, and removing non-histone sequences by using keyword searches such as ‘histone-like’, ‘ubiquitin’, and ‘acetyl’, yielding 54,646 results. Blast 2.0 (Camacho et al., 2009) was used to align the sequences against the highly conserved histone fold region of the four core histones from Homo sapiens. Thresholds for true hits were set at >35% identity match and >90% overlap match with the histone fold globular domain region. All duplicate sequences were removed, and further sequence comparisons were made for histone H3 and H2A sequences to filter variants within them. The canonical sequence data sets comprised 672 sequences for histone H3, 357 sequences for histone H4, 518 sequences for histone H2B, and 435 sequences for histone H2A. To further select one canonical sequence for a species among isotypes and variants when annotation was missing, the sequences were compared to the canonical H. sapiens and S. cerevisiae sequence, and the sequence with the highest similarity was selected. Using only completely sequenced species, the final histone sequence data set included canonical sequences for 160 species from plants, fungi, protozoa, and animals, with genome sizes ranging from 8 to 5600 Mbp.
 
 Sequences for the four core histones were subsequently split into the N-terminal tail, globular domain, and C-terminal tail (in the case of H2A and H2B) sub-sequences. For discovery of patterns of residue changes according to genome size, each of the sub-sequences was further sub-grouped into small (<100 Mbp), medium (100–1000 Mbp), and large (>1000 Mbp) genome sizes. The frequency of the amino acid residues in each sequence in the sub-groups was determined, and a p-value for the comparison between sub groups was obtained using a Mann–Whitney U Test. Multiple sequence alignment profiles were created using the Muscle sequence comparison tool from Embl-EBI (Edgar, 2004a, 2004b). Weblogo3 (Schneider and Stephens, 1990; Crooks et al., 2004) was used for motif discovery. Heat maps for residue positions were constructed using Cluster 3.0 (de Hoon et al., 2004) and Java Treeview (Saldanha, 2004).
 
-## Yeast H2A mutagenesis
+### Yeast H2A mutagenesis
 
 Site directed mutagenesis was performed using the QuickChange Lightning kit (Agilent Technologies, Santa Clara, CA) on the pFL142 plasmid. Supplementary file 1B contains all the plasmids that were used and constructed in this study. The sequences of primers are listed in Supplementary file 1C. The correct mutation was verified by sequencing.
 
-## Measurement of yeast nuclear volume
+### Measurement of yeast nuclear volume
 
 Yeast strains were generated that contained a C-terminally tagged Nup49p-GFP fusion. Cells were grown in a rich medium to 0.6–0.8 × 107 cells/ml, fixed in a growth medium with 4% paraformaldehyde for 15 min at room temperature, washed twice in PBS, and mounted on a poly-L-lysine-coated slide with mounting medium (Vector Laboratories, Burlingame, CA). Z-stacks were obtained as described in the microscopy imaging section, and GFP excitation was achieved at 488 nm. Resulting z-stack images were de-convolved using a constrained iterative algorithm from SlideBook 5.0 software and nuclear volumes were measured by masking the inside of each nucleus, which were delineated by the GFP signal. The resulting mask was used to calculate volumes through the SlideBook software. Statistical analysis was performed using the Student's t test.
 
-## Measurement of yeast cellular volume
+### Measurement of yeast cellular volume
 
 Yeast strains were grown in rich medium to 0.6–0.8 × 107 cells/ml, fixed in growth medium with 4% paraformaldehyde for 15 min at room temperature, washed twice in PBS, and stained with a 1:50 dilution of concanavalin A conjugated with tetramethylrhodamine (Life Technologies) for 15 min at room temperature. Cells were washed twice in PBS, once in water, and mounted on a poly-L-lysine-coated slide with mounting medium. Z-stacks were obtained as described in the microscopy imaging section with mRFP excitation. Cell volume was measured by masking the inside of the RFP signal as described in the measurement of yeast nuclear volume.
 
-## FISH probes
+### FISH probes
 
 For yeast FISH analysis, DNA templates for probes 1, 3, and 4 came from cosmids 71042, 70912, and 70982 (American Type Culture Collection, Manassas, VA) as described elsewhere (Guacci et al., 1994). DNA templates for Probe 2 were obtained by PCR amplification of a 10-kb region starting at coordinate 364647 of chromosome 16 using three primer pairs (Probe2_P1, Probe2_P2, Probe2_P3, Supplementary file 1C). All DNA templates were digested to smaller fragments using Sau3a (New England BioLabs, Ipswich, MA). Fragments were directly labeled using BioPrime labeling kit (Life Technologies) with either ChromaTide Alexa Fluor 488-5-dUTP or ChromaTide Alexa Fluor 568-5-dUTP (Life Technologies).
 
 For human cell FISH analysis, DNA templates for probes came from BACS RP11-252L24 and RP11-195J4 spaced 0.488 Mb apart on chromosome 1. Each BAC was digested into smaller fragments using Sau3a and fragments were directly labeled using BioPrime labeling kit with either ChromaTide Alexa Fluor 488-5-dUTP or ChromaTide Alexa Fluor 568-5-dUTP, as described above.
 
-## Fluorescent in situ hybridization analysis in yeast
+### Fluorescent in situ hybridization analysis in yeast
 
 Yeast strains were grown in rich medium to 0.6–0.8 × 107 cells/ml and fixed in a growth medium with 4% paraformaldehyde for 15 min at room temperature. Cells were then washed twice in the growth medium and re-suspended in 2 ml of EDTA-KOH (0.1 M, pH 8.0) and 10 mM DTT and incubated for 10 min with shaking at 30°C. Cells were spun down and re-suspended in 2 ml of YPD + 1.2 M sorbitol with 50 µg/ml of Zymolyase 100-T (Sunrise Science Products, San Diego, CA) and 400 U/ml of lyticase (Sigma-Aldrich, St. Louis, MO) and incubated at 30°C for 16 min with shaking. Spheroplasts were then washed twice in YPD + 1.2 M sorbitol and transferred to a poly-L-lysine-coated slide. After settling for 5 min, excess liquid was aspirated away and the slides were allowed to air dry for 5 additional min. The slides were washed in methanol for 10 min and then acetone for 30 s before air drying. Cells were then dehydrated in a series of cold ethanol washes (70%, 80%, 90%, 100%, 1 min each) and allowed to air dry. Denaturing solution (70% deionized formamide, 2 × SSC) was added to the slide, and cells were denatured at 75°C for 7–10 min. The slides were immediately put through another cold ethanol dehydration series and allowed to air dry. Hybridization solution (50% deionized formamide, 2 × SSC, 10% dextran sulfate, 100 ng/µl salmon sperm DNA) containing fresh probes was added to the slide, and the probes were hybridized for 40–48 hr at 37°C. The slides were then washed in two 5 min washes in 0.05 × SSC at 48°C and washed twice in BT Buffer (0.15 M NaHCO3 pH 7.5, 0.1% Tween) for 5 min at room temperature. Mounting medium containing DAPI (Vector Laboratories) was added to the slides, and a coverslip was sealed with nail polish.
 
 Inter-probe distances were measured in single projections as described elsewhere (Bystricky et al., 2004) by finding the pixel distance between weighted centers of the green signal and red signal and converted to nm by the appropriate factor.
 
-## Microscopy imaging
+### Microscopy imaging
 
 A 3i Marianas SDC confocal microscope equipped with a Zeiss AxioObserver Z1 with a 100 × /1.45 NA objective and Yokogawa CSU-22 confocal head was used. Images were captured by a Hamamatsu EMCCD C9100-13 camera controlled by Slidebook 5.0/5.5 (Intelligent Imaging Innovations, Denver, CO). DAPI, GFP, mRFP, and Far-red images were acquired by excitation at 360 nm, 488 nm, 561 nm, and 640 nm from a high-speed AOTF laser launch line. A step size of 0.3 (yeast) or 0.5 (human) µm was used for z-stack acquisition.
 
-## Micrococcal nuclease digestion
+### Micrococcal nuclease digestion
 
 Micrococcal nuclease (MNase) digestions were performed on exponentially growing yeast cells as described previously, except that the enzyme was obtained from Sigma-Aldrich (Sigma-Aldrich) (Rando, 2010).
 
-## RNA expression analysis
+### RNA expression analysis
 
 RNA was extracted from exponentially growing yeast as described previously (Schmitt et al., 1990). PolyA-RNA was prepared, labeled, and hybridized to Affymetrix Gene ChIP Yeast Genome 2.0 array by the UCLA clinical microarray core facility and data normalized according to manufacturer's indications. The data are accessible at Gene Expression Omnibus with accession number GSE50440.
 
-## DNA template and histone preparation for in vitro studies
+### DNA template and histone preparation for in vitro studies
 
 A plasmid containing 12 tandem 177 bp repeats of the high affinity 601 sequence was obtained from Craig L Peterson's laboratory (Shogren-Knaak et al., 2006). DNA arrays were prepared as described previously (Luger et al., 1999). After excision with EcoRV, the arrays were gel purified. QuikChange Lightning Site-Directed Mutagenesis (Agilent Technologies) was used to create H2A ΔR11 using primers as listed in Supplementary file 1C. Recombinant X. laevis histones were expressed in bacteria and purified as described previously (Luger et al., 1999). Equimolar amounts of all histones were co-folded to form octamers. Intact octamers were purified from aggregates and free H2A-H2B dimers using Pharmacia Superdex 200 gel filtration column (GE Healthcare Bio-Sciences, Pittsburgh, PA).
 
-## Nucleosome array assembly
+### Nucleosome array assembly
 
 Recombinant histone octamers and the 601-177-12 DNA template (Lowary and Widom, 1998) were combined in stoichiometric amounts where 1.0 equivalent of histone octamers and 1.0 equivalents of DNA template were mixed in 2.0 M NaCl. Nucleosome arrays were assembled by step-wise salt dialysis in decreasing NaCl concentration: 1.6 M, 1.2 M, 1.0 M, 0.6 M, 0.4 M, 0.1 M, and 0.025 M (in 10 mM Tris pH 8.0, 0.25 mM EDTA), followed by exchanges with 2.5 mM NaCl and 10 mM Tris pH 8.0 without EDTA. Each dialysis step was performed at 4°C for 4 hr to overnight. Partially assembled chromatin was eliminated by precipitation in 4.0 mM MgCl2 (Dorigo et al., 2003). The extent of array saturation was assessed by ScaI digestion (200 ng total DNA/chromatin, 3 units ScaI, 50 mM NaCl, 50 mM Tris pH 7.4, 0.5 mM MgCl2), performed for 16 hr at room temperature followed by 1 hr at 37°C, and subsequent analysis using a 5% native polyacrylamide gel (Luger et al., 1999).
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Nucleosome arrays were allowed to equilibrate at room temperature in buffer (2.5 mM NaCl, 10 mM Tris–HCl pH 8.0) containing either 0.1 mM EDTA or 0.6 and 0.8 mM MgCl2. Samples were centrifuged at 20,000 RPM on a Beckman Optima XL-I analytical ultracentrifuge using an An60 Ti rotor after a 1 hr equilibration at 20°C under vacuum. Time-dependent sedimentation was monitored at 260 nm. Boundaries were analyzed by the method of van Holde and Weischet (Weischet et al., 1978; Hansen and Turgeon, 1999).
 
-## Combined immunofluorescence and fluorescent in situ hybridization in human cells
+### Combined immunofluorescence and fluorescent in situ hybridization in human cells
 
 N-terminally HA-tagged WT H2A of X. laevis was cloned by PCR into mammalian expression vector pCMV-HA (Clontech Laboratories, Mountain View, CA) between EcoRI and NotI sites. C-terminally Myc-FLAG-tagged human H2A, in a mammalian expression vector, was obtained from OriGene (RC200688, Origene Technologies, Rockville, MD). Site directed mutagenesis was performed using the QuickChange Lightning kit (Agilent Technologies) on these expression plasmids. Human cells (HEK293, IMR90 and MDA-MB-453) were grown on glass coverslips in 24-well plates in DMEM containing 10% fetal bovine serum and transfected with the indicated H2A expression plasmids using BioT transfection reagent (Bioland Scientific, Paramount, CA) or Lipofectamine LTX with Plus reagent (Life Technologies). Cells were grown for 48 hr post-transfection. For immunofluorescence only, transfected cells were fixed with ice-cold methanol for 15 min at −20°C followed by washing with PBS-T. For combined immunofluorescence and FISH, transfected cells were fixed with 4% paraformaldehyde in PBS for 10 min at room temperature followed by washing with PBS. Cells were then permeabilized in 0.5% Triton X-100 in PBS for 10 min at room temperature followed by washing with PBS. Cells were blocked in 5% BSA and incubated with anti-HA antibody (ab9110; 1:250 dilution, Abcam, Cambridge, MA) or anti-FLAG antibody (F1804; 1:1000 dilution, Sigma-Aldrich). Cells were washed and incubated with secondary antibody (A11008; 1:500 Alexa Fluor 488 goat anti-rabbit, A21245; 1:250 Alexa Fluor 647 goat anti-rabbit, A11001; 1:500 Alexa Fluor 488 goat anti-mouse, or A21235; 1:100 Alexa Fluor 647 goat anti-mouse, Life Technologies). For immunofluorescence, cells were washed and then incubated with Hoechst stain (0.001 mg/ml in PBS). After final washes, cover slips were mounted and imaged. Fluorescence was visualized as above except with the use of 63X magnification.
 
 For FISH, cells were washed, following secondary antibody incubation, in CSK buffer (100 mM NaCl, 300 mM sucrose, 3 mM MgCl2, 10 mM PIPES pH 6.8) and permeabilized in CSKT buffer (CSK+0.5% Triton X-100) before being fixed for 10 min in 4% paraformaldehyde in PBS at room temperature. Cells were immediately put through a cold ethanol dehydration series (5 min each at 85%, 95%, and 100%) and allowed to air dry. Cells were rehydrated in 2 × SSC for 5 min and then RNase-treated for 30 min at 37°C in a humid chamber. Cells were washed with 2 × SSC and denatured at 80°C for 15–20 min with 70% deionized formamide and 2 × SSC. They were immediately cooled with cold 2 × SSC and put through another cold ethanol dehydration series. Probes were added to cells and allowed to hybridize for 48 hr. After hybridization, cells were washed with 50% formamide in 2 × SSC, 2 × SSC, and 1 × SSC containing DAPI. Slides were mounted, imaged, and analyzed as described above. Nuclear staining, in H2A-expressing cells, was used to measure lengths of the long and short orthogonal nuclear axes. Estimated nuclear cross-sectional area was calculated using the following formula: Area = (D1/2) * (D2/2)*π, where D1 and D2 are long and short axis lengths, respectively.
 
-## Competition assays
+### Competition assays
 
 Two sets of yeast strains were generated in which Pgk1p was C-terminally fused with either GFP or RFP (Supplementary file 1A). GFP-labeled WT H2A strains were co-cultured with RFP-labeled mutant H2A strains at a 1:1 ratio and at an optical density of ∼0.4. Corresponding co-cultures with switched fluorescent labels were also made. Cultures were incubated at 30°C for 72 hr and were diluted every 6–12 hr to maintain cells in exponential growth phase. Samples were collected every 12 hr for analysis by flow cytometry. Collected cells were fixed in 70% ethanol, washed, and re-suspended in 50 mM sodium citrate, pH 7.0, and mildly sonicated to disrupt aggregates. GFP- and RFP- labeled cells were counted using a Becton Dickinson FACScan cytometer, and the proportion of each in the population was calculated.
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 Cell cycle analysis of exponentially growing cells was performed essentially as described previously (Zou et al., 1997), except that cells were stained with 1 μM SYTOX Green (Life Technologies).
 
-## Spot tests
+### Spot tests
 
 Approximately 1.0 × 107 exponentially growing yeast cells were collected and re-suspended in 100 μl of H2O and 10-fold serially diluted. Subsequently, 5 μl was spotted on agar plates containing media and drugs as indicated in the figures and incubated at 30°C for 2–6 days.

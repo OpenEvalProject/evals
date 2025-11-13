@@ -43,13 +43,33 @@ Here we present compelling quantitative evidence that tyrosine hydroxylase (TH),
 
 ## Results
 
-## TH+ LOC efferent bouton endings appear in patches at seemingly random locations along the cochlear frequency axis
+### TH+ LOC efferent bouton endings appear in patches at seemingly random locations along the cochlear frequency axis
 
 To investigate the extent of dopaminergic efferent inputs to the cochlea, dopaminergic LOC fibers were labeled in whole-mount preparations of C57BL/6J mouse cochleas by immunostaining against tyrosine hydroxylase (TH), an enzyme essential for the synthesis of dopamine. As described in previous publications, three types of TH+ neurons were found in the cochlea: sympathetic fibers (Hozawa et al., 1989; Spoendlin and Tachtensteiger, 1967; Terayama et al., 1966), apical type II afferent neurons (Vyas et al., 2017) and a subset of LOC efferent fibers in the inner spiral bundle (ISB) below the IHCs (Darrow et al., 2006b; Figures 2 and 3). Curiously, consistent with previous descriptions in CBA/CaJ mice (Darrow et al., 2006b), TH+ LOC efferent bouton terminals were not homogeneously distributed in the ISB along the cochlear spiral, but appeared in distinct patches (Figure 2A,B), here called ‘terminal regions’. Besides TH+ fibers with bouton terminals, TH+ fiber bundles with no obvious terminal varicosities, except for occasional en passant swellings, were present throughout the cochlear spiral. These fiber bundles were best identified in-between the terminal regions, here called ‘spiral regions’ (Figure 2C). This pattern of alternating terminal and spiral regions is established during postnatal development, between postnatal weeks 1 and 3 (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig2-v2.jpg)
+
+**Figure 2.:** (A) TH immunostaining in a one-month-old cochlear whole mount preparation (left: apical half; right: basal half). Bundles of TH+ LOC efferent fibers (LOC fibers) run underneath the IHCs along the whole cochlear spiral, either with only a few swellings in ‘spiral regions’, or in patches with many bouton endings in ‘terminal regions’, as marked by yellow circles. TH also labels type II auditory nerve fibers (Type II ANFs) and sympathetic fibers (SFs). (B and C) Representative higher magnification images of a ‘terminal region’ and of a ‘spiral region’ in a 3-week-old cochlea. IHCs and dopaminergic LOC fibers are immunolabeled with Myosin VIIa and TH antibodies respectively. (D) Line plots along cochlear coil for six 1–3 months old cochleas indicating TH+ efferent terminal regions (upper line) and spiral regions (lower line). Line plot for the representative cochlea shown in (A) is colored green. The average line plot for the six cochleas is shown in red at the bottom. The upper x-axis represents the linear distance along the cochlear spiral (with 0% at the apex and 100% at the base). The lower x-axis relates cochlear spiral location to ANF characteristic frequency. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The mature TH+ LOC fiber innervation pattern was established between postnatal weeks 1–3. In one-week-old cochleas, TH+ fibers were found in the ISB throughout the whole cochlear spiral, but no terminal regions were observed (A and B) (n = 3 cochleas, two mice). At two weeks, around the onset of hearing (Song et al., 2006), terminal regions could be observed occasionally, mostly in the base (C) (n = 3 cochleas, two mice). At three weeks, the innervation pattern included terminal and spiral regions, similar to 1–3 month-old young adult cochleas (n = 3 cochleas, three mice, data not shown). (A) An apical cochlear segment from a one-week-old C57BL/6J wildtype mouse immunolabled against TH, demonstrating TH+ LOC fiber bundles at the ISB region. TH immunostaining also labeled type II fibers (arrows) and sympathetic fibers (SF). (B) A higher magnification image of an apical region from the same mouse as in (A), demonstrating the TH+ LOC fibers running underneath the IHCs. One IHC is outlined with dotted lines. (C) A basal cochlear segment from a two-week-old C57BL/6J wildtype mouse immunolabeled with TH. A TH+ terminal region is identified with a bracket.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig3-v2.jpg)
+
+**Figure 3.:** (A) A segment of the cochlea epithelium from a ChatiresCre; Ai3 mouse that labels cholinergic LOC efferents. Reporter protein EYFP is detected by an antibody against GFP. Cholinergic LOC fibers are found along the inner spiral bundle (ISB), under and around the IHCs. Cholinergic medial olivocochlear (MOCs) efferent fibers are found in the ISB and in the outer hair cell region. Co-labeling with TH immunostaining shows two patches of TH+ terminals (brackets) that overlap with a subset of the cholinergic terminals. TH also labels sympathetic fibers (SF). (B) Co-immunolabeling of TH and VAChT in the ISB of a wildtype mouse cochlea. A subset of VAChT-positive terminals are co-labeled with TH. (C) Two TH+ fibers with the characteristic morphology of LOC intrinsic neurons are shown in the cochlea of a 7-week-old old Th2a-CreER; Ai9 mouse with tamoxifen injection between 3–6 weeks of age (see Materials and methods). (D) Reconstruction of three sparsely labeled TH+ LOC neurons that show intrinsic neuron characteristics (axons in black; terminals in red). Two of the reconstructed fibers are shown in (C). The third one is from a different cochlea. See also Figure 3—figure supplements 1 and 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ChAT immunolabeling confirms the cholinergic identity of LOC neurons genetically labeled in ChatiresCre; Ai3 mice (A–C) (n = 4 LSOs, three mice). Immunolabeling against TH (yellow arrowhead) labeled a small number of cholinergic LOC intrinsic neurons, as confirmed by co-labeling with ChAT antibody or ChatiresCre; Ai3 mice (D) (n = 41 LSOs, 23 mice). The previously described TH+, ChAT- shell neurons (Darrow et al., 2006b) are also observed (red arrow) (D) (n = 41 LSOs, 23 mice). (A–C) A brainstem slice from a P30 ChatiresCre; Ai3 mouse is immunolabeled against ChAT, demonstrating that LOC neurons labeled by the mouse line (a GFP antibody recognizes the reporter protein EYFP) are positive for ChAT. Note a small fraction of ChAT-immunopositive LOC neurons (magenta) were not labeled in ChatiresCre; Ai3 mouse (green) (arrow indicates one example), possibly due to different thresholds of reporter line and immunolabeling. (D) The same brainstem slice as in (A–C) is immunolabeled with TH, demonstrating the presence of a TH+/ChAT+ LOC intrinsic neuron (arrowhead) and a few of the previously described TH+/ChAT- LOC shell neurons (arrow) (Darrow et al., 2006a).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Consistent with the previously reported TH+, ChAT- LOC shell neurons (Darrow et al., 2006b), LOC fibers with a typical shell-neuron morphology can be observed in sparsely labeled Th2A-CreER; Ai9 mouse cochleas (A) (n = 4, three mice). In addition, TH immunolabeling revealed another type of TH+ fiber, which travels around the IHC region in a meandering fashion (B) (n = 6 fibers, five mice). This type of fibers is not co-labeled by ChatiresCre; Ai3 mice (B) (n = 5 fibers, four mice). (A) Reconstruction of two LOC fibers labeled in a 7-week-old Th2A-CreER; Ai9 cochlea, both with a shell neuron-like morphology. The entry points into the organ of Corti for these two fibers are indicated with red arrowheads. One IHC is illustrated in navy blue for size comparison. (B) A cochlear segment of a P30 ChatiresCre; Ai3 mouse is immunolabeled with TH, demonstrating the peculiar meandering fiber path. This fiber is TH+ ChAT-; it does not overlap with the cholinergic fibers labeled by the mouse line.
+
 The tonotopic frequency map along the mouse cochlear spiral ranges from ~3 kHz in the apex to ~75 kHz in the base (Müller et al., 2005). To investigate whether the distribution of TH+ terminal regions follows any systematic pattern, TH+ terminal and spiral regions were mapped along the cochlear coil in 1–3 month-old mice (n = 6 cochleas, six mice) and compared using ‘line plots’ (Figure 2D). In these line plots, upper lines represent terminal regions and lower lines spiral regions. The apical cochlear tip was set at 0%, and the basal tip at 100% of cochlear length. Below the linear axis representing the cochlear length, as reference, a logarithmic map of ANF characteristic frequency is plotted, based on Müller et al. (2005). As reflected in the average line plot of all six cochleas (Figure 2D, bottom), terminal regions covered the base of the cochlea (80–100% of cochlear length) with a higher probability than the 0–80% of cochlear length. Otherwise, terminal patches seemed to appear randomly, with no systematic pattern regarding location or length of individual patches.
 
-## TH+ terminal regions are formed by a subset of cholinergic LOC intrinsic neurons that also express TH
+### TH+ terminal regions are formed by a subset of cholinergic LOC intrinsic neurons that also express TH
 
 Cholinergic and dopaminergic LOC fibers with bouton endings have different cochlear innervation patterns: dopaminergic bouton terminals appear in patches, whereas cholinergic bouton endings cover the entire cochlear spiral (Maison et al., 2003), suggesting that dopaminergic and cholinergic fibers either constitute two separate systems, or that dopaminergic fibers with bouton terminals represent a subset of cholinergic fibers. The appearance of individual TH+ terminal regions is reminiscent of the cochlear innervation by individual cholinergic LOC intrinsic neurons (Warr and Boche, 2003; Figure 1B). Therefore, experiments were performed to test if cholinergic and dopaminergic LOC fibers overlap. TH immunostaining was performed on cochlear tissue with genetically labeled cholinergic LOC efferents. Choline acetyltransferase (ChAT) is one of the enzymes necessary for the synthesis of acetylcholine. In the knock-in ChatiresCre mouse crossed to the Cre-dependent reporter line Ai3, the fluorescent marker EYFP is expressed in cholinergic neurons, including the cholinergic LOC intrinsic neurons, as confirmed by co-immunolabeling with an antibody against ChAT in the LSO (Figure 3—figure supplement 1A–C). TH immunostaining in ChatiresCre; Ai3 cochleas showed the typical dopaminergic LOC innervation pattern, with distinct terminal regions. In this preparation, TH+ terminals clearly constitute a subset of the cholinergic terminals (n = 6 cochleas, five mice) (Figure 3A; two brackets point to TH+ terminal regions amongst cholinergic terminals). Co-immunostaining of TH with the vesicular acetylcholine transporter (VAChT) (n = 6 cochleas, six mice) (Figure 3B) further confirmed the cholinergic identity of TH+ bouton terminals.
 
@@ -59,17 +79,33 @@ Besides TH+/ChAT+ LOC intrinsic neurons, TH+/ChAT- LOC shell neurons were also o
 
 Together, these data suggest that TH+ bouton endings in terminal regions are formed by TH-expressing cholinergic LOC intrinsic neurons.
 
-## Sound exposure increases the percentage of cochlear spiral covered with TH+ terminal regions
+### Sound exposure increases the percentage of cochlear spiral covered with TH+ terminal regions
 
 Results described so far (Figures 2 and 3) were based on cochleas harvested from mice that were raised in an institutional vivarium with a highly variable and generally noisy sound environment (Lauer et al., 2009; Figure 4—figure supplement 1A). Previous studies in guinea pig have shown that sound conditioning induces an increase in TH+ fibers in the IHC region of the cochlea (Niu and Canlon, 2002). The highly variable TH+ LOC efferent innervation patterns across the genetically homogenous WT mice therefore could result from differences in the acoustic experience of individual animals. Thus, we hypothesized that the distribution of TH+ terminal patches in individual cochleas is dynamically regulated by sound.
 
 To test this hypothesis, mice were raised in a ‘low noise’ vivarium with lower ambient sound levels (Figure 4—figure supplement 1A; Lauer et al., 2009), and their cochleas were immunostained for TH at the age of 8 weeks. Line plots show the coverage of TH+ terminal and spiral regions in an example cochlea (Figure 4A, control) and for the average of 22 cochleas (11 mice) (Figure 4B, control). In contrast to mice raised in the institutional vivarium (Figure 2D), cochleas from mice raised in the ‘low noise’ vivarium showed only a few or no terminal regions in the apical half (no terminal patches < 30 kHz for n = 19/22 cochleas). Most of the identified terminal regions were concentrated in the most basal, high frequency region of the cochlea.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig4-v2.jpg)
+
+**Figure 4.:** (A) Line plots indicate TH+ terminal regions (upper lines) versus TH+ spiral regions in a representative control mouse raised in a ‘low noise’ vivarium (gray) and in a mouse that was exposed to a 12 kHz-centered one-octave noise band at 110 dB SPL for 2 hr (red). Immunolabeling for TH was performed 7–10 days after sound exposure. Left (L) and right (R) cochleas are shown. The upper x-axis (shown in B) represents the linear distance along the cochlear spiral (with 0% at the apex and 100% at the base). The lower x-axis relates cochlear spiral location to ANF characteristic frequency. (B) A plot showing the averaged probability for a cochlear region to be covered by TH+ terminals at the cochlear frequencies plotted on the x-axis for control (gray, n = 22 cochleas, 11 mice) and sound exposed mice (red, n = 20 cochleas, 11 mice). Blue region marks the frequency range of the noise band. For the 7.5–75.5% of the cochlear length from the apex (~6–40 kHz), sound exposed mice are significantly more likely to have TH+ bouton endings compared to control. For the 90–100% of the cochlear length from the apex (~60–75 kHz), sound exposed mice are significantly less likely to have TH+ bouton endings compared to control. Repeated measures binary logistic regression using generalized estimating equations (GEE); ***p<0.001, **p<0.01. Data for individual cochleas are provided in Figure 4—source data 1. (C) Sound exposed mice (n = 21 cochleas, 11 mice) showed on average 31% more cochlear coverage by TH+ terminal regions compared to their littermate control mice (n = 22 cochleas, 11 mice). Linear mixed model with sound exposure as the fixed effect and repeated measures from two ears of the same mouse; ***p<0.0005. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** To compare the sound level between the institutional vivarium and a ‘low noise’ satellite vivarium, 5 min recordings were performed using a sound level meter and an ultrasound microphone (A-B). To assess the effects of two different sound exposure protocols on hearing, ABR thresholds were measured before and after sound exposure. For both protocols, a 12 kHz-centered one-octave noise band was applied. In contrast to the 2 hr 110 dB SPL protocol, which caused an irreversible ABR threshold shift (C-E), the 5 × 12 hr 90 dB SPL protocol showed a partially reversible ABR threshold shift (F-J). (A) Sound level recorded using a sound level meter in the two vivariums. Data are plotted as mean ± SD. (B) Frequency analysis of ultrasound microphone recordings in the two vivariums, FFT size: 2048, Window: Hamming. Data are plotted as mean ± SD. (C–E) ABR thresholds for mice exposed to the 2 hr 110 dB SPL protocol (red) and for their control littermates (navy), at pre-exposure, 1 week post-exposure and 3 weeks post-exposure time points. Note that sound exposure caused an irreversible ABR threshold elevation. Double arrows indicate that the actual threshold is higher than the highest sound intensity presented. Data are plotted as mean ± SEM. (F–H) ABR thresholds for mice exposed to the 5 × 12 hr 90 dB SPL protocol (magenta) and for their control littermates (blue), at pre-exposure, 1 week post-exposure and 3 weeks post-exposure time points. Data are plotted as mean ± SEM. (I–J) ABR threshold shifts at 1 week post-exposure and 3 weeks post-exposure for mice exposed to 5 × 12 hr 90 dB SPL protocol (magenta) and for their control littermates (blue). Data are plotted as mean ± SEM. Two-tailed independent t-tests between control and exposed group on original data or on rank-transformed data for each tone, ***p<0.001, **p<0.01, *p<0.05, n.s. not significant.
+
 To test if sound exposure increases the coverage of TH+ LOC terminal regions along the cochlear coil, mice raised in the ‘low noise’ vivarium were exposed to a 12 kHz-centered one-octave noise band at 110 dB SPL for 2 hr at the age of 7 weeks (see Materials and methods). The effects of this sound exposure protocol on hearing were evaluated with auditory brainstem responses (ABRs) measured on a separate set of animals. This sound exposure paradigm resulted in irreversible ABR threshold shifts to levels > 85 dB SPL on average for the tested frequency range (clicks and 8–32 kHz tones) (Figure 4—figure supplement 1B). 7–10 days after noise exposure, cochleas were immunostained for TH (n = 20 cochleas, 11 mice). The delay of at least one week after noise exposure for immunostaining was chosen to allow adequate time after noise exposure for the synthesis, transport, and accumulation of TH proteins in the axonal terminals of LOC neurons, to a level that can be detected by immunostaining in the cochlear epithelium. Compared to control, after sound exposure, the apical half of the cochlear coil at and above the frequency range of the noise band showed a significantly increased likelihood to be covered by TH+ terminal regions (Figure 4A,B, exposed). Interestingly, there was a paradoxical significant decrease in the number of terminal patches in the basal part of the cochlea, at frequencies > 60 kHz (Figure 4B, Figure 4—source data 1). Nevertheless, the total percentage of cochlear spiral covered by TH+ terminal regions increased significantly, about 5-fold, in sound exposed mice compared to control littermates (median ± IQR, control: 0.1 ± 0.06, exposed: 0.47 ± 0.27) (Figure 4C).
 
-## Sound exposure increases the number of TH+ cholinergic intrinsic neurons in the LSO
+### Sound exposure increases the number of TH+ cholinergic intrinsic neurons in the LSO
 
 Though multiple potential mechanisms could account for increased cochlear coverage of TH+ terminal regions after sound exposure, the most straightforward explanation is an increase in the fraction of cholinergic LOC intrinsic neurons that express TH. To test this hypothesis, parallel to analyzing the effects of sound exposure in the periphery (Figure 4), the number of TH+ LOC neurons in the LSO was quantified in brainstem sections from the same set of mice. Compared to control littermates, the number of TH+ LOC intrinsic neurons in sound exposed mice increased significantly, about 5-fold (median ± IQR per LSO, control: 11 ± 7, exposed: 47 ± 35) (Figure 5A,B and D). This 5-fold change is remarkably comparable to the increase in the percentage of cochlear spiral covered by TH+ terminal regions, suggesting that the LOC neurons that became TH+ due to sound exposure, covered additional length along the ISB in the cochlea.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig5-v2.jpg)
+
+**Figure 5.:** (A and B) Representative images of TH immunolabeled 50 μm brain slices of the LSO region from a control (A) and a sound exposed mouse (B, 2 hr exposure). Sound exposure occurred at 7 weeks of age, and immunolabeling at 8 weeks. Each number identifies a TH+ LOC intrinsic neuron. (C) A representative brain slice of the LSO region from a sound exposed mouse (2 hr exposure) expressing tdTomato (Ai9) driven by ChatiresCre to label cholinergic LOC intrinsic neurons (red). Co-labeling with TH immunostaining (green) demonstrates that TH expression is found in existing cholinergic LOC intrinsic neurons. (D) Box plots demonstrating the number of TH+ LOC intrinsic neurons identified within LSO from either side of the brain, in control versus sound exposed mice for three sets of experiments. For both, 2 hr 110 dB SPL exposure (red) (control: n = 22 LSOs, 11 mice, exposed: n = 22 LSOs, 11 mice) and 5 × 12 hr 90 dB SPL exposure (orange) (control: n = 14 LSOs, 8 mice, exposed: n = 16 LSOs, 8 mice), the exposed groups have significantly larger numbers of TH+ LOC neurons than control groups, when examined one week from the beginning of the exposure (2 hr 110 dB SPL exposure, control: 11 ± 7, exposed: 47 ± 35) (5 × 12 hr exposure, control: 15 ± 11, exposed: 31 ± 46). In contrast, when examined three weeks from the beginning of the 5 × 12 hr 90 dB SPL exposure (yellow) (control: n = 12 LSOs, 6 mice, exposed: n = 12 LSOs, 6 mice), the number of TH+ LOC neurons is not significantly different between exposed and control groups (5 × 12 hr exposure w/long wait, control: 15 ± 11, exposed: 19 ± 9). Linear mixed model with sound exposure as the fixed effect and a random intercept for each mouse to account for the correlation among two measurements from the same mouse, ***p<0.0005; *p<0.05; n.s. not significant p>0.05. Presented data indicate median ±IQR per LSO. (E). Modified schematic drawing demonstrating the hypothesis that after sound exposure, a subset of cholinergic LOC intrinsic neurons will become dopaminergic and cholinergic. (F). An apical cochlear segment of a Th2A-CreER; Ai3 mouse raised in the institutional vivarium. Tamoxifen was administrated between 1–3 weeks. The mouse was sacrificed at the age of 1 month. Comparing mouse line labeling (top, a GFP antibody recognizes the EYFP reporter protein) and TH immunostaining (middle) suggests that some of the LOC efferent terminals that expressed Th at the time of tamoxifen injection did not express Th anymore at 1 month. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** To test whether the sound-induced TH expression in cholinergic LOC efferent fibers could affect the cholinergic phenotype of these neurons, sound-exposed cochleas were immunolabeled for TH and ChAT. At 1 week post-exposure, TH+ LOC efferent terminals were still positive for ChAT (n = 1 cochlea) (A–D). To demonstrate the dynamic expression of TH in a variable acoustic environment, Th2A-CreER; Ai3 mice raised in the institutional vivarium were administrated with tamoxifen at various time points. TH-expression in LOC neurons around the time of tamoxifen administration was compared with the TH immunolabeling at the time of tissue harvest. While the TH expression in LOC neurons that innervate the apical region of the cochlea is more dynamic (shown in Results, E), in the basal cochlea, TH expression is more stable, as shown here (E–G) (n = 5 cochleas, 5 mice). (A–D). A segment of the ISB region from an 8-week-old ChatiresCre; Ai9 mouse that have been exposed to the 2 hr 110 dB SPL protocol. TH immunostaining revealed that TH+ LOC efferent terminals are both co-labeled for ChAT by the mouse line (left) and by ChAT immunolabeling (right). This result suggests that sound exposure induces TH expression in existing cholinergic LOC efferent terminals, and that these terminals remain cholinergic during TH expression. (E–G) A basal cochlear segment of a 6-week-old Th2A-CreER; Ai3 mouse raised in the institutional vivarium. Tamoxifen was administrated at 3 weeks. The mouse was sacrificed at 6 weeks. Comparing TH immunolabeling and mouse line labeling (a GFP antibody recognizes the EYFP reporter protein) suggests that a large subset of LOC efferent terminals that expressed Th at 3 weeks continue to express Th at 6 weeks in the base.
 
 Secondly, to verify that after sound exposure TH was in fact upregulated in cholinergic LOC intrinsic neurons, a subset of sound exposure experiments was performed on mice with genetically labeled cholinergic neurons (ChatiresCre; Ai9 mice). Sound exposure did not impact the number of cholinergic LOC intrinsic neurons. The median number of genetically labeled ChAT+ LOC neurons was not significantly different after sound exposure (422, n = 6 cochleas, 3 mice) compared to control littermates (433, n = 8 cochleas, 4 mice) (Mann-Whitney U test, p=0.491). After sound exposure, immunolabeled TH+ neurons represented a subset (16 ± 4%) of the cholinergic LOC neurons. Again, similar to the whole dataset (Figure 5A,B,D), the percentage of TH+ cholinergic LOC neurons in sound exposed mice was ~5 times higher compared to control (16 ± 4% versus 3 ± 1%) (Welch t-test, p<0.0005) (n = 6 LSOs, 3 mice; Figure 5C). In comparison, after sound exposure, no obvious change was observed in the number of TH+/ChAT- LOC shell neurons (not quantified).
 
@@ -77,7 +113,7 @@ To test if TH expression affects the cholinergic identity of LOC terminals, afte
 
 In summary, sound exposure induces the expression of TH in previously TH- cholinergic LOC intrinsic neurons. The schematic of cochlear innervation by subtypes of LOC fibers has been modified to reflect these results (Figure 5E).
 
-## The number of TH+ LOC intrinsic neurons in the LSO is dynamically regulated by sound
+### The number of TH+ LOC intrinsic neurons in the LSO is dynamically regulated by sound
 
 To test whether TH expression in cholinergic LOC intrinsic neurons can be dynamically regulated by sound, a less damaging, and partially reversible sound exposure protocol was applied. 7-week-old mice were exposed to a 12 kHz-centered one-octave noise band at 90 dB SPL for 12 hr each day for 5 consecutive days. One week after starting sound exposure, ABRs showed significant threshold shifts to ~53 dB SPL for clicks and 55–90 dB SPL for 12–32 kHz tones (no significant change at 8 kHz) (Figure 4—figure supplement 1C). Three weeks after starting sound exposure, the ABR threshold shift had reversed completely for clicks and 12–16 kHz tones, and partially for 24 and 32 kHz tones (Figure 4—figure supplement 1C).
 
@@ -85,19 +121,27 @@ At one week after the sound exposure protocol had been initiated, the number of 
 
 To demonstrate dynamic expression of TH within individual LOC intrinsic neurons over time, mouse genetic tools were used in combination with the variable acoustic environment in the institutional vivarium. Tamoxifen administration induces reporter protein (EYFP) expression in TH+ LOC neurons in Th2A-CreER; Ai3 mice, providing permanent labeling of LOC neurons that express TH around the time of tamoxifen administration. On the other hand, TH immunostaining, performed 1–3 weeks after tamoxifen injection will label TH-expressing LOC neurons at the time of tissue harvesting. Because of the highly variable acoustic environment in the institutional vivarium, it is expected that different sets of LOC intrinsic neurons express TH at different times. Indeed, we observed some LOC bouton terminals that were labeled for TH genetically, but not by immunostaining (n = 4 cochleas, 3 mice) (Figure 5F), suggesting that these terminals expressed TH around the time of tamoxifen injection, but no longer at the time of tissue harvesting. However, genetic labeling and TH immunolabeling often overlapped at the base, even when the times of tamoxifen injection and tissue harvesting were several weeks apart (Figure 5—figure supplement 1C), suggesting that the TH+ LOC intrinsic neurons that innervate the basal region of the cochlea have a more stable TH expression. These results suggest that the dynamic expression of TH can be found in a ‘common’ acoustic environment for laboratory mice.
 
-## Dopamine modulates auditory nerve fiber activity at the IHC afferent synapse by two distinct mechanisms
+### Dopamine modulates auditory nerve fiber activity at the IHC afferent synapse by two distinct mechanisms
 
 Previously, the effects of DA on ANF activity have been investigated with in vivo extracellular ANF recordings from guinea pig by perfusion of artificial perilymph containing DA into the inner ear (Oestreicher et al., 1997; Ruel et al., 2001). These studies suggest that DA reduces spontaneous and sound-evoked ANF activity. To investigate how DA modulates ANF activity at the cellular level, patch clamp recordings were performed at the bouton endings of ANFs directly underneath the IHCs in acutely excised rat apical cochlear coils (Glowatzki and Fuchs, 2002; Grant et al., 2010). Such recordings monitor synaptic activity at individual glutamatergic hair cell ribbon synapses, representing all the peripheral input an ANF receives. For better success rates of these technically challenging recordings, rats were used instead of mice. Recordings were performed at an age range (15–31 postnatal days), when properties of subgroups of ANFs with low to high spontaneous rates have mostly developed (Taberner and Liberman, 2005; Wu et al., 2016).
 
-## Dopamine reduces the firing rate in ANF endings
+#### Dopamine reduces the firing rate in ANF endings
 
 In a first step, to monitor spike rates, extracellular loose patch recordings were performed from afferent bouton endings (Wu et al., 2016). Spike rates were analyzed before, during DA application (1 mM; 3–5 min), and after wash. A separate set of control experiments was performed, where the control solution was applied instead of DA. Qualitatively similar to in vivo studies, spikes rates in ANFs were significantly reduced by 39% on average in DA (n = 22, Figure 6A, C and D), whereas no significant change occurred when switching to control solution (n = 23, Figure 6B and D).
 
-## Dopamine reduces the EPSC amplitude, and thereby most likely reduces the percentage of EPSPs that activate an AP
+![Figure 6.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig6-v2.jpg)
+
+**Figure 6.:** (A) A representative loose-patch extracellular recording demonstrates that DA (dopamine, 1 mM) reduced the firing rate of the ANF. (B) Profile plots for individual recordings of control experiments (n = 23). Box plots are shown to the right of individual data. Switching from extracellular solution to Control solution, which contains 0.1% sodium ascorbate, the antioxidant used in DA solution, did not cause any significant change in firing rate. Friedman test, n.s. not significant. (C) Profile plots for individual recordings with DA application (n = 22). Box plots are shown to the right of individual data. DA significantly reduced the firing rate. Friedman test followed by Dunn's multiple comparisons test, **p<0.01. Note that one fiber with a high spontaneous rate (~90 spikes/s) was omitted from the individual profile plots for better visualization of other fibers, but is included for statistical analysis. (D) Box plots of the percentage of change in firing rate during the application of Control solution (B) or DA (C). Two-tailed independent t-test, **p<0.01. (E) A representative current clamp recording demonstrates that DA (1 mM) reduces the rate of synaptic events and decreases the percentage of EPSPs (arrowhead) that activate APs (arrow). (F) A representative voltage clamp recording demonstrates that DA (2 mM) application reduced the rate and amplitude of EPSCs. (G–H) Profile plots showing changes in the (G) EPSC amplitude and (H) EPSC area during DA application for 6 voltage clamp recordings. Mean ± SD (red squares) is shown to the right of individual data (open black circles). In order to utilize all available data points, two-tailed paired t-tests were performed separately between ‘before’ and ‘DA’ group (n = 6) and between ‘DA’ and ‘after’ group (n = 5), *p<0.05, **p<0.01. (I) Profile plot of synaptic rate for individual fibers before (before), during (DA) and after (after) dopamine application for 6 current clamp recordings (filled circles; both APs and EPSPs were counted) and 7 voltage clamp recordings (open circles). Box plots are shown to the right of individual data. One extreme outlier was excluded from this analysis. One-way repeated-measure ANOVA on rank transformed data, followed by post hoc pairwise comparison with a Bonferroni adjustment, **p<0.01. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52419/elife-52419-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Profile plots for changes in spike rate (A), percentage of APs in all events (APs + EPSPs) (B), membrane potential (C), and AP threshold (D), before (before), during (DA, 1 mM) and after DA application (after) for 3 current clamp ANF recordings. Two fibers (black) showed a reversible reduction in spike rate and AP/(AP+EPSP) ratio during DA application, without any change in membrane potential or AP threshold. The third fiber showed a different behavior (gray). Statistical test was not performed due to the small sample size. (E–G) Violin plots and box plots depicting the change in the distributions of (E) EPSC amplitude, (F) EPSC area and (G) EPSC half-width during DA application for the example trace shown in Figure 6F. (H) Profile plots showing no significant change in the EPSC half-width during DA application for 6 voltage clamp recordings. Mean ± SD (red squares) is shown to the right of individual data (open black circles). In order to utilize all available data points, two-tailed paired t-tests were performed separately between ‘before’ and ‘DA’ group (n = 6) and between ‘DA’ and ‘after’ group (n = 5), n.s. not significant.
+
+#### Dopamine reduces the EPSC amplitude, and thereby most likely reduces the percentage of EPSPs that activate an AP
 
 In only three of many attempted current clamp recordings, could EPSPs and APs be distinguished based on their size and waveform and where event numbers were large enough for analysis (Figure 6E; AP: arrow; EPSP: arrowhead). Although too small a dataset for providing solid proof, current clamp results for three ANFs are reported here, as they are instructive for suggesting a possible mechanism. At the IHC afferent synapse, it can be assumed that individual APs are activated by individual supra-threshold EPSPs (Rutherford et al., 2012). In the three current clamp recordings, in DA, the rate of APs decreased (ANF #1: by 97%; ANF #2: by 70%; ANF #3: by 59%; Figure 6—figure supplement 1A). Interestingly, in two of these recordings, the percentage of APs relative to the number of all events (EPSPs + APs) decreased in DA (ANF #1: from 84% to 50% in DA; ANF #2: from 53% to 13% in DA) (Figure 6E; Figure 6—figure supplement 1B); in other words, in DA, EPSPs were less effective in activating APs. In these two recordings, ANF membrane potentials and AP thresholds remained unchanged during DA application (Figure 6—figure supplement 1C,D). The reduced efficiency for activating APs in DA could be due to a reduction in EPSP amplitude/charge. To test this hypothesis, the effect of DA on EPSC waveform was investigated in voltage clamp recordings. EPSCs showed a wide range of amplitudes ranging up to 80-fold in individual recordings, due to a specialized release mechanism that has been reported earlier at IHC ribbon synapses (Chapochnikov et al., 2014; Glowatzki and Fuchs, 2002; Grant et al., 2010; Li et al., 2009; Figure 6F). Analysis of the exemplary recording in Figure 6F is reported in Figure 6—figure supplement 1E–G. Figure 6G,H, and Figure 6—figure supplement 1H summarize results for all voltage clamp recordings (n = 6). In DA, EPSC amplitude and EPSC area (charge) were significantly and reversibly reduced, by ~19 ± 14% and by 19 ± 9% (mean ± SD), respectively (Figure 6G–H), whereas EPSC half-width remained unchanged (Figure 6—figure supplement 1G–H). These data suggest that it is the reduced EPSP amplitude/charge that results in less effective activation of APs in DA. The combined reduction of EPSC amplitude and area, as well as the stable half-width in DA, makes it unlikely that the underlying mechanism for reducing the EPSC amplitude is based solely on presynaptic desynchronization of release events within individual EPSCs (Chapochnikov et al., 2014; Grant et al., 2010). Further experiments are needed to separate if the effect of DA on EPSC amplitude/area occurs presynaptically, in the IHC, and/or postsynaptically, in the ANF ending.
 
-## Dopamine reduces the rate of release at the IHC afferent synapse
+#### Dopamine reduces the rate of release at the IHC afferent synapse
 
 Besides reducing EPSC size, DA additionally decreased the rate of release at the IHC afferent synapse. To demonstrate this effect, data from current clamp and voltage clamp experiments were pooled. For current clamp recordings, APs and EPSPs, were both included as representing release events. DA application (1–2 mM) irreversibly reduced the rate of events by about half (median ±IQR, control: 11.5 ± 13.3 spikes/s, DA: 6.4 ± 10.0 spikes/s, wash: 6.9 ± 14.4 spikes/s; n = 13) (Figure 6E,F,I). This effect of DA on release rate was irreversible, whereas the effects on EPSC amplitude and area were reversible, suggesting that DA operates via two different mechanisms that both contribute to reducing the ANF firing rate.
 
@@ -105,7 +149,7 @@ In summary, the electrophysiological data show that DA reduces ANF firing via tw
 
 ## Discussion
 
-## Sound exposure dynamically regulates TH expression in LOC intrinsic neurons
+### Sound exposure dynamically regulates TH expression in LOC intrinsic neurons
 
 This study provides several lines of evidence that sound exposure regulates TH expression in LOC intrinsic neurons in a level-dependent and dynamic manner. Mice raised in a ‘low noise’ vivarium showed significantly less TH+ LOC terminals in the cochlea compared to mice raised in the noisier institutional facility (Figure 4). Damaging sound exposure increased the number of TH+ LOC neurons about 5-fold, and a less damaging sound exposure protocol caused a smaller increase (~2 fold) in TH+ LOC neurons (Figure 5D). In addition, 3 weeks after the less damaging sound exposure, the ABR thresholds of the exposed mice partially returned to control levels, along with the number of TH+ LOC neurons. In Th2a-CreER; Ai3 mice, a comparison of reporter protein expression and antibody labeling showed that individual neurons expressed different levels of TH at different points in time (Figure 5E).
 
@@ -113,13 +157,13 @@ Consistent with these results, previous studies have shown that dopamine metabol
 
 For both, mice raised in the institutional and in the ‘low noise’ vivarium, TH+ terminal regions covered more prominently the base where high frequency sounds are represented (Figure 2D, Figure 4B, control). This is most likely due to a larger number of TH+ LOC intrinsic neurons projecting to the base, rather than due to an increase in the length of the terminal bouton patches formed by individual LOC intrinsic neurons that innervate the base of the cochlea. Reconstructions of single LOC intrinsic neuron axons do not show any systematic variation in the length of the terminal arbor along the cochlear spiral (Warr et al., 1997; Warr and Boche, 2003). Similarly, dopaminergic LOC neurons in the guinea pig cochlea preferentially innervate the high frequency region (Mulders and Robertson, 2004). However, sound level measurements both in the ‘low noise’ and in the institutional vivarium did not report high sound levels in the high frequency range (Figure 4—figure supplement 1A). One possibility is that TH expression in LOC neurons in the high frequency range is activated by mouse ultrasonic vocalizations (Lahvis et al., 2011). Another possibility is that LOC neurons are denser in the medial, high-frequency processing LSO limb (Kaiser et al., 2011; Radtke-Schuller et al., 2015), which could result in a higher probability of TH+ LOC efferent terminals to appear in the base. Notably, after damaging noise exposure, a paradoxical decrease of innervation by TH+ terminal in the basal cochlear coil was observed (Figure 4B). This could be due to noise-induced damage to ANF terminals and subsequent loss of efferent innervation.
 
-## Mechanisms underlying dopaminergic modulation of ANF activity
+### Mechanisms underlying dopaminergic modulation of ANF activity
 
 In the excised rat cochlea in vitro, dopamine reduces the firing rate of ANFs on average by ~40%. These data are qualitatively similar to previous results reporting reduced ANF firing when dopamine was perfused into the guinea pig inner ear in vivo (Oestreicher et al., 1997; Ruel et al., 2001). The study here describes two mechanisms by which dopamine reduces ANF firing rate: (1) by a reduction in the synaptic event rate and (2) by a reduction in EPSC amplitude and area. (1) The reduction in event rate suggests a presynaptic mechanism; hair cell release is affected by dopamine. Such a presynaptic downregulation of afferent activity provides an unexpected but highly effective potential strategy for avoiding glutamate-induced excitotoxic effects on afferent endings in response to sound exposure (Kujawa and Liberman, 2009; Le Prell et al., 2003; Nouvian et al., 2015). IHC release could be affected if DA were to act in a paracrine fashion by diffusing and binding to hypothetical dopamine receptors on the IHCs. Direct protein-protein interaction between dopamine D1A receptor and components of the vesicular exocytosis machinery, including otoferlin, have been demonstrated (Selvakumar et al., 2017), suggesting that dopamine receptors could potentially directly influence the release process. However, dopamine receptor expression has not been found in mouse or rat IHCs (Inoue et al., 2006; Maison et al., 2012), though they have been described in fish hair cells (Drescher et al., 2010; Perelmuter et al., 2019; Toro et al., 2015). An alternative mechanism of affecting IHC release rate could be through a dopamine receptor-dependent release of retrograde messengers from ANFs. (2) The reduction in EPSC amplitude and area by dopamine highly likely reduces the EPSP amplitude/area and thereby a lower percentage of EPSPs may activate APs. The effect on EPSC amplitude/area could originate pre- and/or postsynaptically, for example by reducing the quantal size or influencing glutamate receptor function.
 
 Additionally, dopamine could affect the excitability of ANFs by modulating multiple ion channels in afferent dendrites. For example, studies on guinea pigs and rats suggested that DA could affect ANF firing by decreasing sodium currents (Oestreicher et al., 1997; Valdés-Baizabal et al., 2015). Finally, besides dopamine receptors on the ANFs, the LOC efferent terminals may contain D2 receptors (Inoue et al., 2006; Maison et al., 2012). Dopamine acting on D2 auto-receptors at the LOC efferent terminals may alter the release of dopamine and other LOC efferent neurotransmitters, further complicating the effects of dopamine. Future studies are needed to dissect the different mechanisms responsible for reducing ANF firing rates by dopamine released from LOC efferent fibers.
 
-## Orchestra of ACh and DA effects on ANFs
+### Orchestra of ACh and DA effects on ANFs
 
 In CBA/CaJ mice, dopaminergic LOC neurons were mainly identified as non-cholinergic shell neurons, located just outside of the boundaries of the LSO, suggesting that dopaminergic and cholinergic LOC neurons exist as separate groups (Darrow et al., 2006b). The study here also reports non-cholinergic dopaminergic shell neurons in C57BL/6J mice. Surprisingly, TH expression is additionally found in a small percentage of cholinergic intrinsic neurons in the LSO. Cholinergic bouton endings of LOC fibers are found all along the cochlea, however, in ‘patches’ these endings co-express TH. Even more TH+ cholinergic patches can be found after sound exposure. The co-expression of TH and ChAT suggests that potentially both ACh and DA are being released from the same neurons. These results drastically change our thinking about how LOC intrinsic neurons may modulate spike rates of individual ANFs.
 
@@ -127,7 +171,7 @@ In vivo experiments in the guinea pig showed that cochlear perfusion of ACh incr
 
 The dynamic changes occurring in the neurochemical profile of the LOC efferent system based on the sound environment could explain the puzzling contradictory results of several classic LOC lesion studies. The immediate effect of such lesions could either result in an enhancement (Darrow et al., 2007) or in depression (Le Prell et al., 2005) of ensemble ANF activity, which is probably due to differences in the output profile of LOC efferents at the time of the experiments. Chronic LOC lesioning reduced the basal positive tone provided by LOC efferents resulting in an overall decreased ANF spontaneous activity (Liberman, 1990). Finally, when 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) was used to disrupt dopaminergic LOC innervation in guinea pig, spontaneous ANF activity was also reduced (Le Prell et al., 2014). This result could be explained by MPTP also targeting dopaminergic/cholinergic LOC neurons, and thereby reducing the cholinergic excitatory input onto ANFs.
 
-## Activity-dependent plasticity in multi-transmitter neurons
+### Activity-dependent plasticity in multi-transmitter neurons
 
 The existence of multi-transmitter neurons has been increasingly recognized in the central nervous system, including the combinations of GABA/ACh, GABA/Glutamate, GABA/DA, DA/Glutamate (Granger et al., 2017; Hnasko and Edwards, 2012; Tritsch et al., 2016). The use of multiple neurotransmitters expands the range of synaptic coding that individual neurons can provide. LOC fibers in the auditory pathway now add DA/ACh to this increasing repertoire of transmitter combinations. Here, sensory stimulation modulates dopamine release from otherwise cholinergic efferent fibers. This process adds an additional layer of complexity to the behavior of these multi-transmitter LOC neurons, as the co-existence of the transmitter systems are stimulus and time-dependent.
 
@@ -135,39 +179,308 @@ Neurotransmitter switching has been reported in several brain areas of the adult
 
 ## Materials and methods
 
-## Mice and rats
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>C57BL/6J WT</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664 RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Rattus norvegicus domestica)</td>
+      <td>Sprague Dawley rat</td>
+      <td>Charles River</td>
+      <td>RGD Cat# 734476 RRID:RGD_734476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>ChATiresCre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 028861 RRID:IMSR_JAX:028861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Th2A-CreER</td>
+      <td>PMID: 28041852</td>
+      <td>MGI: 98735</td>
+      <td>Dr. David Ginty (Harvard Medical School)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai3 (B6.Cg-Gt(ROSA)26Sortm3(CAG-EYFP)Hze/J)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007903 RRID:IMSR_JAX:007903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai9 (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007909 RRID:IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-TH</td>
+      <td>Millipore</td>
+      <td>Cat# 657012–15 UG, RRID:AB_566341</td>
+      <td>1:500 – 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-GFP</td>
+      <td>Sicgen</td>
+      <td>Cat# AB0020-200; RRID:AB_2333099</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-ChAT</td>
+      <td>Millipore</td>
+      <td>Cat# AB144P RRID:AB_2079751</td>
+      <td>1:20 – 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal guinea pig anti-VAChT</td>
+      <td>Millipore</td>
+      <td>Cat# AB1588, RRID:AB_11214110</td>
+      <td>1:500 – 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-mCherry</td>
+      <td>Sicgen</td>
+      <td>Cat# AB0040-200; RRID:AB_2333092</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-Myosin VIIa</td>
+      <td>DSHB</td>
+      <td>Cat# MYO7A 138–1, RRID:AB_2282417</td>
+      <td>1:200 - 1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine Hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H8502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium L-Ascorbate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A7631</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Tocris</td>
+      <td>Cat# 1078/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin Citrate</td>
+      <td>Tocris</td>
+      <td>Cat# 1069/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Corn Oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C8267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN Blue/Black</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ plugin: Measure_line</td>
+      <td>Mass Eye and Ear</td>
+      <td></td>
+      <td>https://research.meei.harvard.edu/Otopathology/3dmodels/other_tools.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014198</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>Open Source</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>Open Source</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS Statistics 25</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>Systat Software Inc</td>
+      <td>RRID:SCR_003210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 9.1</td>
+      <td>OriginLab</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MiniAnalysis</td>
+      <td>Synaptosoft</td>
+      <td>RRID:SCR_014441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STATA</td>
+      <td>StataCorp</td>
+      <td>RRID:SCR_012763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 9.2 - Clampex</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 9.2 -Clampfit</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BatSound Touch Lite</td>
+      <td>Pettersson Elektronik</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Audition CC 2018</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_015796</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and rats
 
 All the experiments were performed on mice except for electrophysiological recordings that were performed on rats. Mice (WT strain C57BL/6J, Jackson Laboratory) and Rats (Sprague Dawley, Charles River Laboratories) of either sex were used in the experiments indiscriminately. For initial experiments (Figures 2 and 3), mice were raised in the institutional vivarium. For sound exposure experiments (Figures 4 and 5), mice were raised in a ‘low-noise’ satellite vivarium. Rats were raised in the institutional vivarium (Figure 6).
 
-## Transgenic mouse models
+### Transgenic mouse models
 
 Generation and genotyping of Cre driver lines ChatiresCre (Rossi et al., 2011), Th2A-CreER (Abraira et al., 2017) and Cre-dependent reporter mouse lines (Ai3 and Ai9, Allen Brain Institute) (Madisen et al., 2010) have been previously described. The tamoxifen injection procedure for the inducible Cre-loxP system when using the Th2A-CreER mouse line is described below. All transgenic mouse lines were either obtained on pure C57BL/6J background or bred in-house for at least nine generations with C57BL/6J WT mice before breeding for sound exposure experiments.
 
-## Cochlear whole-mount immunofluorescence
+### Cochlear whole-mount immunofluorescence
 
 Cochleas of one-week to three-month-old mice were harvested, perfused through the round and oval windows with 4% paraformaldehyde (Electron Microscopy Sciences), rinsed in phosphate buffered saline (PBS) and fixed for ~1 hr at room temperature (RT). Cochleas were carefully microdissected in PBS. Due to the presence of bones in cochleas from older mice, some partially dissected cochleas were decalcified in 0.2 M ethylenediaminetetracetic acid (EDTA) in PBS for 1–2 days before further processing. To achieve better penetration of primary antibodies, a fast freeze/thaw step in 30% sucrose was included occasionally. Whole-mount cochlear preparations were first incubated at RT in a blocking and permeabilizing buffer (PBS with 10% normal donkey serum, 0.5% Triton X-100) for 1–2 hr. Preparations were then incubated in primary antibody diluted in PBS containing 5% normal donkey serum, 0.25% Triton X-100% and 0.01% NaN3 for ~42 hr at RT. Samples were rinsed three times with PBS before incubation with the appropriate secondary antibody diluted 1:1000–2000 in PBS containing 5% normal donkey serum, 0.25% Triton X-100 at RT for 2 hr. Preparations were again rinsed three times in PBS before mounting on glass slides in FluorSave mounting medium (Calbiochem). All incubations and rinses were performed on a rocking table at RT. See Key Resources Table for a list of primary antibodies used in this study.
 
-## Mapping of terminal region locations along the cochlear coil
+### Mapping of terminal region locations along the cochlear coil
 
 The locations of ‘terminal regions’ with TH+ bouton endings were mapped along the cochlear coil using the Measure_line ImageJ plugin (Massachusetts Eye and Ear Infirmary) by reconstructing the whole cochlear spiral from dissected pieces of cochlear coils. The logarithmic axis representing ANF characteristic frequency (f) was constructed using the formula d (%)=100 – (156.5 + 82.5 × log(f)), based on Müller et al. (2005). For cochleas shown in Figure 2, the terminal regions were identified by examining the reconstructed whole cochlea image made from tiles of confocal images taken with a 40x objective. For sound exposure experiments, terminal regions were identified by examining panorama confocal images of individual cochlear pieces taken with a 10x objective lens. In initial trials, the terminal regions were identified by using a higher magnification objective lens while viewing at the microscope and marking the location on the images taken with the 10x objective lens. Both methods gave comparable results.
 
-## Brainstem sectioning and immunostaining
+### Brainstem sectioning and immunostaining
 
 Mice were given an overdose of 50 mg/ml sodium pentobarbital and perfused transcardially with PBS followed by 4% paraformaldehyde. The brain tissue was then removed from the skull bones and post-fixed in 4% paraformaldehyde overnight at 4°C. The caudal portion of the brain tissue was trimmed off to allow it to sit flat on its coronal plane and placed in a well coated with petroleum jelly. 5 ml of gel albumin mixed with 0.4 ml of 5% glutaraldehyde and 1 ml of 37% paraformaldehyde was placed into the well containing the brain tissue and allowed to harden for 30 s. The brain was mounted on the vibrating microtome (Vibratome 1000 Plus) with superglue and sectioned in the coronal plane into 50 µm slices. The brain slices were first incubated at RT in a blocking and permeabilizing buffer (PBS with 10% normal donkey serum, 0.5% Triton X-100) for 1–2 hr. The brain slices were then incubated with primary antibodies diluted in PBS containing 5% normal donkey serum, 0.25% Triton X-100 for two days in a cold-room at 4°C on a shaker. After washing with PBS, the brain slices were incubated with secondary antibodies diluted in PBS containing 5% normal donkey serum, 0.25% Triton X-100 for 1–2 hr at RT on a shaker. The brain slices were then washed again with PBS, before mounting on glass slides in Fluoromount-G mounting medium (SouthernBiotech).
 
-## Quantifying the number of TH+ LSO intrinsic neurons
+### Quantifying the number of TH+ LSO intrinsic neurons
 
 TH+ LOC intrinsic neurons were quantified by visual inspection of confocal stacks of each brainstem slice. As a test, we circled all the TH+ LOC intrinsic neurons found on two adjacent brainstem slices. Overlaying the images from two consecutive brainstem slices showed non-overlapping neurons, suggesting that it is unlikely to count one TH+ LOC intrinsic neuron twice on consecutive brainstem slices. Therefore, a simple summation of the numbers found on each brainstem slice is appropriate for quantifying the total number of TH+ LOC intrinsic neurons.
 
-## Image acquisition
+### Image acquisition
 
 Fluorescence images were acquired using a LSM 700 confocal microscope (Zeiss) with a Fluar 10x/0.50 M27 objective, a LCI Plan-Neofluar 25x/0.8 Imm Korr DIC M27 objective and a Fluar 40x/1.30 Oil M27 objective using the ZEN black 2011 software. The pinhole was set at one airy unit. The size of optical sections was determined by stepping at half the distance of the theoretical z-axis resolution (the Nyquist sampling frequency). Images were acquired in a 1024 × 1024 raster. Images are presented as maximum intensity projections through a subset of the collected optical stacks. Some images were processed in ImageJ or Fiji without deconvolution, filtering, or gamma correction.
 
-## Tamoxifen injections
+### Tamoxifen injections
 
 Tamoxifen freebase (Sigma-Aldrich) was prepared in corn oil (Sigma-Aldrich) at 10 mg/ml and sonicated at RT for 0.5–1 hr until no precipitations were visible. This solution was stored at 4°C for 5–7 days protected from light. Tamoxifen solution was administrated intraperitoneally (i.p.) or through gavage for a total amount of 0.2–2 mg for each injection. To achieve sparse labeling of TH-expressing neurons, a single dose of 0.2–0.5 mg tamoxifen was administrated.
 
-## Sound exposure
+### Sound exposure
 
 Octave-band noise was generated with digital-to-analog converters and gated with electronic switches (Tucker-Davis Technologies). Stimulus levels were controlled by programmable attenuators (Tucker-Davis Technologies) and an audio amplifier (Crown Audio). Stimulus waveforms were transduced by two overhead high-frequency speakers (Pyramid). The overhead location of the speaker minimized the effects of head orientation on sound energy propagating to the tympanic membrane. Speakers were calibrated with the same microphone and software used for the auditory brainstem response measurements (see below). Additional checks on the sound levels were performed using a sound level meter fitted with a ½” free field microphone (Larson-Davis) just prior to each sound exposure.
 
@@ -177,21 +490,21 @@ Mice were exposed to a 1-octave band noise centered at 12 kHz. The 2 hr 110 dB S
 
 For sound exposure and control experiments, both wild-type and transgenic mice were bred on a pure C57BL/6J background and were raised in a low-noise satellite vivarium. The sound exposure started at 7–8 weeks of age. Mice were sacrificed 7–10 days after the beginning of the sound exposure. Cochlear and brainstem samples were harvested for immunostaining experiments. Mice used in the sound exposure or control experiments were not used in any previous procedures or sound exposures.
 
-## Vivarium sound level measurements
+### Vivarium sound level measurements
 
 Sound levels in the ‘low noise’ vivarium and the large-capacity institutional vivarium were recorded using a data-logging sound level meter with 1/3 octave band measurement capabilities and ½” free field microphone (Larson-Davis). Ultrasound range was measured in each room using a M500-384 USB Ultrasound Microphone (Pettersson Elektronik) linked to a laptop running the BatSound Touch Lite software. 5 min recordings were made simultaneously with the sound level meter and the ultrasound microphone. Such recordings were made on 4–5 days at slightly different locations inside each vivarium, where the mice were housed. All the recordings were made during daytime. Frequency analysis of the recorded sound was performed using Adobe Audition CC2018 (Adobe).
 
-## Auditory brainstem response measurements
+### Auditory brainstem response measurements
 
 Recording procedures were similar to those previously described (Lauer and May, 2011; Lina and Lauer, 2013; McGuire et al., 2015). Mice were anesthetized with 100 mg/kg ketamine and 20 mg/kg xylazine through intraperitoneal injection and placed on an electronically controlled heating pad inside a small sound-attenuating chamber 30 cm away from a Fostex speaker in front of the animal. Auditory brainstem responses (ABRs) were differentially recorded from the scalp using subcutaneous platinum needle electrodes (G.R.A.S.) placed over the left bulla and at the vertex of the skull, with a ground electrode inserted into the leg muscle. Responses were amplified 300,000 times (ISO-80, World Precision Instruments) and bandpass filtered from 300 to 3,000 Hz (Krohn-Hite). Auditory stimuli were generated at a 200 kHz sampling rate, attenuated to control presentation levels (Tucker-Davis Technologies, PA5), and amplified (Parasound) before being passed to a calibrated free-field speaker (Fostex). Stimulus protocols were implemented on programmable real-time processors (Tucker-Davis Technologies, RX6) using a custom MATLAB program (Ngan and May, 2001). Responses were averaged over 300 stimulus presentations. Stimuli were clicks and 5 ms tone pips at 8, 12 16, 24, 32 kHz with a rise/fall time of 0.5 ms played at a rate of 20 or 30 repetitions/s. Stimuli were calibrated with a ¼″ Bruel and Kjaer microphone placed at the location normally occupied by the mouse's head during testing using a custom MATLAB (Mathworks) based program.
 
 Thresholds and suprathreshold responses were measured by presenting a descending series of stimulus levels beginning with −10 dB of the maximum possible output of the speaker and continuing in 5- or 10 dB steps until no response could be discerned from the noise. Threshold was defined as the sound level at which the peak-to-peak ABR amplitude (any wave) was two standard deviations above the average level of a 5 ms window of baseline noise collected at the end of a 30 ms recording epoch. Responses to clicks were measured first to ensure an optimal signal-to-noise ratio and the presence of at least four distinct peaks. Responses to tones were measured in a pseudorandom order.
 
-## Electrophysiology
+### Electrophysiology
 
 Recordings were performed on acutely excised cochlear preparations from Sprague Dawley rats (Charles River Laboratories) at room temperature (22–25°C). Recording pipettes were fabricated from 1 mm borosilicate glass (WPI). Pipettes were pulled with a multistep horizontal puller (Sutter), coated with Sylgard (Dow Corning) and fire polished. Drug application was mediated by whole-bath perfusion or a gravity-driven flow pipette (100-µm-diameter opening) placed near the row of IHCs and connected with a VC-6 channel valve controller (Warner Instrument).
 
-## ANF recordings
+### ANF recordings
 
 Postnatal day (P) 15–31 SD rats were used for ANF recordings. Loose-patch extracellular and whole-cell patch clamp recordings in current and voltage clamp on the dendritic endings of ANFs were performed as described before (Grant et al., 2010; Wu et al., 2016). Pipette resistances were 9–15 MΩ for ANF recordings. ANF recordings were acquired using pCLAMP 9.2 or pCLAMP 10.2 software (Molecular Devices) in conjunction with a Multiclamp 700A or Multiclamp 700B amplifier (Molecular Devices). The signal was low pass filtered at 10 kHz and digitized at 50 kHz with a Digidata 1322A (Molecular Devices).
 
@@ -199,11 +512,11 @@ Extracellular solutions for ANF recordings contained (in mM): 5.8 KCl, 144 NaCl,
 
 For ANF current clamp recordings, bridge balance and pipette capacitance neutralization were performed. For ANF voltage clamp recordings, holding potentials were between −99 and −84 mV. All recordings that had a leak current <350 pA, except for one recording that had a leak current up to 450 pA. Both current and voltage clamp recordings were corrected posterior for measured liquid junction potentials: 4 mV for potassium-based solution and by 9 mV for methanesulfonate-based solution. Series resistance Rs was not compensated for in voltage clamp recordings.
 
-## Drugs
+### Drugs
 
 DA solutions were prepared daily from dopamine hydrochloride powder (Sigma) and protected from light during the experiments. 1 mM DA was used in ANF loose-patch extracellular and current-clamp recordings, 1–2 mM DA was used in ANF voltage-clamp recordings. 0.01–0.1% (w/v) sodium ascorbate was supplemented in the DA solution as an antioxidative agent, except for two ANF recordings. For control experiments, DA but not sodium ascorbate was omitted in the Control solution. In a subset of voltage-clamp recordings, 1–2 µM TTX (Tocris) was present to block APs.
 
-## Timeline of drug application and analysis of firing and release rates
+### Timeline of drug application and analysis of firing and release rates
 
 30–60 s are typically needed for a drug to wash into the tissue, and this was the minimal wait time before analyzing dopamine effects. For cochlear afferent recordings, the rate of EPSC/EPSP and AP fluctuates in a power-law fashion throughout the recording, even in control condition, as described in Wu et al. (2016). Therefore, it is essential, to record for long enough in control, in DA, and after washout, to be able to separate random fluctuations from drug effects. This is why at least 30 s of recording were analyzed before, in and after DA.
 
@@ -211,7 +524,7 @@ To study the effects of DA, segments of recordings were selected for analysis. F
 
 For whole-cell recordings of ANFs, 30 s to 2 min of recording before DA application was selected for ‘before’, 1 or 2 min of recording after at least 30 s of DA application was selected for ‘DA’, 30 s to 2 min of recording after at least 1.5 min of wash-out was selected for ‘after’. The total application time of DA varied between 1.5–6 min.
 
-## Synaptic event detection and graphing
+### Synaptic event detection and graphing
 
 Events in extracellular loose-patch and whole-cell current clamp recordings were detected using a routine in MiniAnalysis and subsequently accepted by eye. In current clamp, each peak detected was identified as an event for quantification of synaptic frequency. AP and EPSP were identified by their amplitude distribution. AP threshold was detected by several methods. The first method found the point of maximum slope of the first derivative of the rising phase of the AP using a customized MATLAB routine (Wu and Chan, 2019). For most of the APs in the ANF dendrite recordings, this method could successfully identify the AP threshold. In case this method failed to locate the AP threshold, a second method that found the maximum curvature point on the rising phase of the AP was used. If the second method still could not identify the AP threshold, the AP analysis routine in the MiniAnalysis (Synaptosoft) was used.
 
@@ -219,6 +532,6 @@ Events in ANF voltage clamp recordings were detected by threshold search event d
 
 Data were plotted using Excel 2016 (Microsoft), Origin 9.1 (OriginLab), RStudio, MATLAB (MathWorks), and Illustrator (Adobe). For representative traces, the data points were reduced by decimation to a 5 or 10 kHz sampling rate.
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed with SPSS Statistics 25 (IBM), STATA (StataCorp) or R studio (R Core Team). Graphical representation of the quantification is defined in Figure Legend, with the definition of n and information about the statistical tests, unless otherwise states in the Result. Error bars can be either standard deviation (SD) or standard error of the mean (SEM), as specified in Figure Legend. Statistical significance is defined as: n.s. (not significant) p>0.05, *p<0.05, **p<0.01, ***p<0.001. For the quantification of the TH+ terminals and TH+ LOC neurons, the researchers that performed the majority of the analysis were blinded to the experimental condition during data quantification.

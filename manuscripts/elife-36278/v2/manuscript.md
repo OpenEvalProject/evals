@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.36278.001 The phylogenetic placement of the morphologically simple placozoans is crucial to understanding the evolution of complex animal traits. Here, we examine the influence of adding new genomes from placozoans to a large dataset designed to study the deepest splits in the animal phylogeny. Using site-heterogeneous substitution models, we show that it is possible to obtain strong support, in both amino acid and reduced-alphabet matrices, for either a sister-group relationship between Cnidaria and Placozoa, or for Cnidaria and Bilateria as seen in most published work to date, depending on the orthologues selected to construct the matrix. We demonstrate that a majority of genes show evidence of compositional heterogeneity, and that support for the Cnidaria + Bilateria clade can be assigned to this source of systematic error. In interpreting these results, we caution against a peremptory reading of placozoans as secondarily reduced forms of little relevance to broader discussions of early animal evolution.
+The phylogenetic placement of the morphologically simple placozoans is crucial to understanding the evolution of complex animal traits. Here, we examine the influence of adding new genomes from placozoans to a large dataset designed to study the deepest splits in the animal phylogeny. Using site-heterogeneous substitution models, we show that it is possible to obtain strong support, in both amino acid and reduced-alphabet matrices, for either a sister-group relationship between Cnidaria and Placozoa, or for Cnidaria and Bilateria as seen in most published work to date, depending on the orthologues selected to construct the matrix. We demonstrate that a majority of genes show evidence of compositional heterogeneity, and that support for the Cnidaria + Bilateria clade can be assigned to this source of systematic error. In interpreting these results, we caution against a peremptory reading of placozoans as secondarily reduced forms of little relevance to broader discussions of early animal evolution.
 
 ## Introduction
 
@@ -37,9 +37,95 @@ As metazoan phylogenetics has pressed onward into the genomic era, perhaps the l
 
 Driven by this controversy, new genomic and transcriptomic data from sponges, ctenophores, and metazoan outgroups have accrued, while new sequences and analyses focusing on the position of Placozoa have been slow to emerge. Here, we provide a novel test of the phylogenetic position of placozoans, adding draft genomes from three putative species that span the root of this clade’s known diversity (Eitel et al., 2013) (Table 1), and critically assessing the role of systematic error in placing of these enigmatic organisms (Laumer, 2018).
 
+**Table 1.**
+ Summary statistics describing the contiguity and completeness of the draft host metagenome bins from the three clade A placozoan isolates utilized in this paper, presented in comparison to the reference H1 strain.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>H11</th>
+      <th>H4</th>
+      <th>H6</th>
+      <th>H1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>assembly span (Mbp)</td>
+      <td>56.63</td>
+      <td>83.39</td>
+      <td>76.7</td>
+      <td>98.06</td>
+    </tr>
+    <tr>
+      <td>scaffold number</td>
+      <td>5813</td>
+      <td>5337</td>
+      <td>8310</td>
+      <td>1415</td>
+    </tr>
+    <tr>
+      <td>scaffold N50 (kbp)</td>
+      <td>12.738</td>
+      <td>25.97</td>
+      <td>12.84</td>
+      <td>5790</td>
+    </tr>
+    <tr>
+      <td>GC%</td>
+      <td>30.76</td>
+      <td>30.84</td>
+      <td>29.9</td>
+      <td>29.37</td>
+    </tr>
+    <tr>
+      <td>BUSCO2 Eukaryota complete (of 303)</td>
+      <td>220</td>
+      <td>276</td>
+      <td>239</td>
+      <td>294</td>
+    </tr>
+    <tr>
+      <td>BUSCO2 Eukaryota complete + partial (of 303)</td>
+      <td>246</td>
+      <td>282</td>
+      <td>265</td>
+      <td>298</td>
+    </tr>
+    <tr>
+      <td>Average # of hits per BUSCO</td>
+      <td>1.00</td>
+      <td>1.04</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>% of BUSCOs with more than one match</td>
+      <td>0.45</td>
+      <td>3.99</td>
+      <td>0.42</td>
+      <td>0.34</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results and discussion
 
 Orthology assignment on sets of predicted proteomes derived from 59 genome and transcriptome assemblies yielded 4294 gene trees with at least 20 sequences each, sampling all five major metazoan clades and outgroups, from which we obtained 1388 well-aligned orthologues. Within this set, individual maximum-likelihood (ML) gene trees were constructed, and a set of 430 most-informative orthologues were selected on the basis of tree-likeness scores (Misof et al., 2013). This yielded an amino-acid matrix of 73,547 residues with 37.55% gaps or missing data, with an average of 371.92 and 332.75 orthologues represented for Cnidaria and Placozoa, respectively (with a maximum of 383 orthologues present for the newly sequenced placozoan H4 clade representative; Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig1-v2.jpg)
+
+**Figure 1.:** All nodes received full posterior probability. Numerical annotations of given nodes represent Extended Quadripartition Internode Certainty (EQP-IC) scores, describing among-gene-tree agreement for both the monophyly of the five major metazoan clades and the given relationships between them in this reference tree. A bar chart on the right depicts the proportion of the total orthologue set each terminal taxon is represented by in the concatenated matrix. ‘Placozoa H1’ in this and all other figures refers to the GRELL isolate sequenced in Srivastava et al., 2008, which has there and elsewhere been referred to as Trichoplax adhaerens, despite the absence of type material linking this name to any modern isolate. Line drawings of clade representatives are taken from the BIODIDAC database (http://biodidac.bio.uottawa.ca/).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.
 
 Our Bayesian analyses of this matrix place Cnidaria and Placozoa as sister groups with full posterior probability under the general site-heterogeneous CAT + GTR + Г4 model (Figure 1). Under ML inference with the C60 +LG + FO + R4 profile mixture model (Wang et al., 2018) (Figure 1—figure supplement 1), we again recover Cnidaria + Placozoa, albeit with more marginal resampling support. Both Bayesian and ML analyses show little internal branch diversity within Placozoa. Accordingly, deleting all newly-added placozoan genomes from our analysis has no effect on topology and only a marginal effect on support in ML analysis (Figure 1—figure supplement 2). Quartet-based concordance analyses (Zhou, 2017) show no evidence of strong phylogenetic conflicts among ML gene trees in this 430-gene set (Figure 1), although internode certainty metrics are close to 0 for many key clades including Cnidaria + Placozoa, indicating that support for some ancient relationships may be masked by gene-tree estimation errors, emerging only in combined analysis (Gatesy and Baker, 2005).
 
@@ -55,7 +141,60 @@ Many research groups, using good taxon sampling and genome-scale datasets, and e
 
 **Figure 3.:** amino acid space or (B) the Dayhoff-6 reduced alphabet space. Nodal support values comprise posterior probabilities; nodes with full support not annotated. Taxon colourings as in previous Figures. (C) Plot of z-scores (summed absolute distance between taxon-specific and global empirical frequencies) from representative posterior predictive tests of amino acid compositional bias, from both the BUSCO 303-orthologue matrix (red) and the initial 430-orthologue matrix (blue). Placozoan taxon abbreviations are shown in blue font.
 
+**Table 2.**
+ Mean (and standard deviation of) z-scores from posterior predictive tests of per-site amino acid diversity and among-lineage compositional homogeneity, called for amino-acid alignments using the PhyloBayes-MPI v1.8 readpb_mpi –div and –comp options, respectively, with burn-ins selected as per the posterior consensus summaries shown elsewhere.Except for the diversity statistic in the test-passing matrix, all tests reject (at p=0.05) the adequacy of the inferred CAT + GTR + Г4 model to describe the data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Diversity</th>
+      <th>Composition (mean)</th>
+      <th>Composition (maximum)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>430 matrix</td>
+      <td>1.94 (0.09)</td>
+      <td>181.35 (7.50)</td>
+      <td>105.04 (3.13)</td>
+    </tr>
+    <tr>
+      <td>BUSCO 303-gene matrix</td>
+      <td>11.27 (0.73)</td>
+      <td>334.98 (4.56)</td>
+      <td>107.56 (6.17)</td>
+    </tr>
+    <tr>
+      <td>comp-failed matrix</td>
+      <td>2.51 (0.19)</td>
+      <td>270.16 (12.03)</td>
+      <td>173.87 (9.15)</td>
+    </tr>
+    <tr>
+      <td>comp-passed matrix</td>
+      <td>0.81 (0.18)</td>
+      <td>107.67 (10.10)</td>
+      <td>63.19 (6.95)</td>
+    </tr>
+  </tbody>
+</table>
+
 As a final measure to describe the influence of compositional heterogeneity in this dataset, we applied a null-simulation test for compositional bias to each alignment in our set of 1388 orthologues. This test, which compares the real data to a null distribution of amino-acid frequencies simulated along assumed gene trees with a substitution model using a single composition vector, is less prone to Type II errors than the more conventional X (Grell and Benwitz, 1971) test (Foster, 2004). Remarkably, at a conservative significance threshold of α = 0.10, the majority (764 genes or ~55%) of this gene set is identified as compositionally biased by this test, highlighting the importance of using appropriate statistical tests to control this source of systematic error, rather than applying arbitrary heuristic cutoffs (Kück and Struck, 2014). Building informative matrices from gene sets on either side of this significance threshold, and again applying both CAT + GTR mixture models and ML profile mixtures, we see strong support for Cnidaria + Placozoa in the test-passing supermatrix, and conversely, strong support for Cnidaria + Bilateria in the test-failing supermatrix (Figure 4, Figure 4—figure supplement 1, Figure 4—figure supplement 2). Interestingly, in trees built through CAT + GTR + Г4 analysis of the test-failing supermatrix (Figure 4A,C), in both amino-acid and Dayhoff-6 alphabets, we also observe full support for Porifera as sister to all other animals. In contrast, analysis of this amino acid matrix under a profile mixture model recovers support for Ctenophora in this position (Figure 4—figure supplement 1), indicating that, at least for this alignment, compositional heterogeneity need not be invoked to explain why outcomes differ among analyses, as some have argued (Feuda et al., 2017): both CAT + GTR and the C60 +LG + FO + R4 profile mixture model assume a single composition vector over time, but the CAT + GTR model is better able to accommodate site-heterogeneous substitution patterns (Lartillot et al., 2013; Quang et al., 2008). In the context of this experiment, Dayhoff-6 recoding appears impactful only for the test-passing supermatrix (Figure 4B,D), where it obviates support for Ctenophora-sister (Figure 4B, Figure 4—figure supplement 2) in favour of (albeit, with marginal support) Porifera-sister (Figure 4D), and also diminishes support for Placozoa + Cnidaria (in contrast to the 430-gene matrix; Figure 2), perhaps reflecting the inherent information loss of using a reduced amino-acid alphabet for this relatively shorter matrix.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig4-v2.jpg)
+
+**Figure 4.:** Panels correspond to (A) the amino acid matrix made within the failing set; (B) the amino acid matrix derived from the passing set; (C) the Dayhoff-6 recoded matrix from the failing set; (D) the Dayhoff-6 recoded matrix from the passing set. Only nodes with posterior probability less than 1.00 are annotated numerically.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.
 
 A possible hidden variable related to the phylogenetic discordance we describe, the precise significance of which remains unclear, is mean trimmed alignment length: both the test-passing and the original 430-gene matrix are composed of considerably shorter alignments than the test-failing and the 303-gene BUSCO matrix (see Materials and methods). Indeed, alignment length has been previously shown to be predictive of a number of other metrics of phylogenetic relevance (Shen et al., 2016); the generality and directionality of such relationships in empirical datasets at varying scales of divergence is clearly worthy of further investigation.
 
@@ -63,7 +202,7 @@ The previously cryptic phylogenetic link between cnidarians and placozoans seen 
 
 ## Materials and methods
 
-## Sampling, sequencing, and assembling reference genomes from previously unsampled placozoans
+### Sampling, sequencing, and assembling reference genomes from previously unsampled placozoans
 
 Haplotype H4 and H6 placozoans were collected from water tables at the Kewalo Marine Laboratory, University of Hawaii-Manoa, Honolulu, Hawaii in October 2016. Haplotype H11 placozoans were collected from the Mediterranean ‘Anthias’ show tank in the Palma de Mallorca Aquarium, Mallorca, Spain in June 2016. All placozoans were sampled by placing glass slides suspended freely or mounted in cut-open plastic slide holders into the tanks for 10 days (Pearse and Voigt, 2007). Placozoans were identified under a dissection microscope and single individuals were transferred to 500 µl of RNAlater, stored as per manufacturer’s recommendations.
 
@@ -75,15 +214,15 @@ For assembly, adapters and low-quality reads were removed with bbduk (https://so
 
 Reads from each library were mapped back to the assembled scaffolds using bbmap (https://sourceforge.net/projects/bbmap/) with the option fast = t. Scaffolds were binned based on the mapped read data using MetaBAT (Kang et al., 2015) with default settings and the ensemble binning option activated (switch –B 20). The Trichoplax host bins were evaluated using metawatt (Strous et al., 2012) based on coding density and sequence similarity to the Trichoplax H1 reference assembly (NZ_ABGP00000000.1). The bin quality metrics were computed with BUSCO2 (Simão et al., 2015) (Table 1) and QUAST (Gurevich et al., 2013). Both the stringent metagenomics binning procedure (a procedure also expedient in other holobiont organisms (Celis et al., 2018)) and the very low proportion of multiple orthologue hits in the BUSCO2 assessment (Table 1) attest to the lack of evidence for residual non-placozoan contamination within the scaffolds used for gene prediction.
 
-## Predicting proteomes from transcriptome and genome assemblies
+### Predicting proteomes from transcriptome and genome assemblies
 
 Predicted proteomes from species with published draft genome assemblies were downloaded from the NCBI Genome portal or Ensembl Metazoa in June 2017. For Clade A placozoans, host metagenomic bins were used directly for gene annotation. For the H6 and H11 representatives, annotation was entirely ab initio, performed with GeneMark-ES (Ter-Hovhannisyan et al., 2008); for the H4 representative, total RNA-seq libraries obtained from three separate isolates (BioProject PRJNA505163) were mapped to genomic contigs with STAR v2.5.3a (Dobin et al., 2013) under default settings; merged bam files were then used to annotate genomic contigs and derive predicted peptides with BRAKER v1.9 (Hoff et al., 2016) under default settings. Choanoflagellate proteome predictions (Simion et al., 2017) were provided as unpublished data from Dan Richter. Peptides from a Calvadosia (previously Leucosolenia) complicata transcriptome assembly were downloaded from compagen.org. Peptide predictions from Nemertoderma westbladi and Xenoturbella bocki as used in Cannon et al 2016 (Cannon et al., 2016) were provided directly by the authors. The transcriptome assembly (raw reads unpublished) from Euplectella aspergillum was provided by the Satoh group, downloaded from (http://marinegenomics.oist.jp/kairou/viewer/info?project_id=62). Predicted peptides were derived from Trinity RNA-seq assemblies (multiple versions released 2012–2016) as described by Laumer et al (Laumer et al., 2015). for the following sources/SRA accessions:: Porifera: Petrosia ficiformis: SRR504688, Cliona varians: SRR1391011, Crella elegans: SRR648558, Corticium candelabrum: SRR504694-SRR499820-SRR499817, Spongilla lacustris: SRR1168575, Clathrina coriacea: SRR3417192, Sycon coactum: SRR504689-SRR504690, Sycon ciliatum: ERR466762, Ircinia fasciculata, Chondrilla caribensis (originally misidentified as Chondrilla nucula) and Pseudospongosorites suberitoides from (https://dataverse.harvard.edu/dataverse/spotranscriptomes); Cnidaria: Abylopsis tetragona: SRR871525, Stomolophus meleagris: SRR1168418, Craspedacusta sowerbyi: SRR923472, Gorgonia ventalina: SRR935083; Ctenophora: Vallicula multiformis: SRR786489, Pleurobrachia bachei: SRR777663, Beroe abyssicola: SRR777787; Bilateria: Limnognathia maerski: SRR2131287. All other peptide predictions were derived through transcriptome assembly as paired-end, unstranded libraries with Trinity v2.4.0 (Haas et al., 2013), running with the –trimmomatic flag enabled (and all other parameters as default), with peptide extraction from assembled transcripts using TransDecoder v4.0.1 with default settings. For these species, no ad hoc isoform selection was performed: any redundant isoforms were removed during tree pruning in the orthologue determination pipeline (see below).
 
-## Orthologue identification and alignment
+### Orthologue identification and alignment
 
 Predicted proteomes were grouped into top-level orthogroups with OrthoFinder v1.0.6 (Emms and Kelly, 2015), run as a 200-threaded job, directed to stop after orthogroup assignment, and print grouped, unaligned sequences as FASTA files with the ‘-os’ flag. A custom python script (‘renamer.py’) was used to rename all headers in each orthogroup FASTA file in the convention [taxon abbreviation] + ‘@’ + [sequence number as assigned by OrthoFinder SequenceIDs.txt file], and to select only those orthogroups with membership comprising at least one of all five major metazoan clades plus outgroups, of which exactly 4300 of an initial 46,895 were retained. Scripts in the Phylogenomic Dataset Construction pipeline (Yang and Smith, 2014) were used for successive data grooming stages as follows: Gene trees for top-level orthogroups were derived by calling the fasta_to_tree.py script as a job array, without bootstrap replicates; six very large orthogroups did not finish this process. In the same directory, the trim_tips.py, mask_tips_by_taxonID_transcripts.py, and cut_long_internal_branches.py scripts were called in succession, with ‘./. tre 10 10’, ‘././y’, and ‘./. mm 1 20. /’ passed as arguments, respectively. The 4267 subtrees generated through this process were concatenated into a single Newick file and 1419 orthologues were extracted with UPhO (Ballesteros and Hormiga, 2016). Orthologue alignment was performed using the MAFFT v7.271 ‘E-INS-i’ algorithm, and probabilistic masking scores were assigned with ZORRO (Wu et al., 2012), removing all sites in each alignment with scores below five as described previously (Laumer et al., 2015). 31 orthologues with retained lengths less than 50 amino acids were discarded, leaving 1388 well-aligned orthologues.
 
-## Matrix assembly
+### Matrix assembly
 
 A full concatenation of all retained 1388 orthogroups was performed with the ‘geneStitcher.py’ script distributed with UPhO available at https://github.com/ballesterus/PhyloUtensils. However, such a matrix would be too large for tractably inferring a phylogeny under well-fitting mixture models such as CAT + GTR; therefore we used MARE v0.1.2 (Misof et al., 2013) to extract an informative subset of genes using tree-likeness scores, running with ‘-t 100’ to retain all taxa and using ‘-d 1’ as a tuning parameter on alignment length. This yielded our 430-orthologue, 73,547 site matrix, with a mean partition length of 202.24 (s.d. 116.96) residues.
 
@@ -91,7 +230,7 @@ As a check on the above procedure, which is agnostic to the identity of the gene
 
 Within the gene bins nominated by the test of compositional heterogeneity (see below), matrices were constructed again by concatenating and reducing matrices with MARE, using ‘-t 100’ to retain all taxa and setting ‘-d 0.5’ to yield a matrix of an optimal size for inferring a phylogeny under the CAT + GTR model. This procedure gave a 349-gene matrix of 80,153 amino acids (mean partition lengths 228.67 ± s.d. 136.19, 41.64% gaps) within the test-failing gene set, and a 348-gene matrix of 55,426 amino acids (mean partition lengths 158.27 ± s.d. 79.06, 38.92% gaps), within the test-passing set (Figure 4).
 
-## Phylogenetic inference
+### Phylogenetic inference
 
 Individual ML gene trees were constructed on all 1388 orthologues in IQ-tree v1.6beta, with ‘-m MFP -b 100’ passed as parameters to perform automatic model selection and 100 standard nonparametric bootstraps on each gene tree.
 
@@ -101,12 +240,12 @@ For inference on the BUSCO 303 gene set, we ran 4 chains of the CAT + GTR + 
 
 For inference on the 348 and 349 gene matrices produced within gene bins defined by the null-simulation test of compositional bias (see below), we ran six chains each for the amino acid and recoded versions of each matrix, under CAT + GTR + Г4 with constant sites removed. In the amino-acid matrix, chains ran from 2709 to 3457 and 1423 – 1475 generations for the test-failing and test-passing matrices, respectively. In the recoded matrix, chains ran from 3893 to 4480 and 4350 – 4812 generations for the test-failing and test-passing matrices, respectively. In selecting chains to input for posterior consensus summary tree presentation (Figure 4A–D), we chose pairs of chains and burn-ins that yielded the lowest possible maxdiff values (all <0.1 with the first 500 generations discarded as burn-in, except for the amino-acid coded test-failing matrix, whose most similar pair of chains gave a maxdiff of 0.202 with 1000 generations discarded as burn-in). We emphasize that the topologies and supports displayed in Figure 4A–D are similar when all chains (and conservative burn-in values) are used to generate consensus trees. For ML trees using profile mixture models for the test-failing (Figure 4—figure supplement 1) and test-passing (Figure 4—figure supplement 2) gene matrices, we used IQ-tree 1.6rc, calling in the same manner (with C60 +LG + FO + R4) as used on our 430-gene matrix (see above).
 
-## Tests of compositional heterogeneity
+### Tests of compositional heterogeneity
 
 For posterior predictive tests of compositional heterogeneity and residue diversity using MCMC samples under CAT + GTR (Table 2), we used PhyloBayes MPI v1.8 to test two chains from the initial 430-gene matrix, three chains from the 303-gene BUSCO matrix, and six chains each from the 348 (test-failing) and 349 (test-passing) gene matrices, removing 2000 generations from the first matrix and 1000 from the others as burn-in. Results from tests on representative chains were selected for plotting in Figure 3C and summary in Table 2; however, results from all chains tested are deposited in the Data Dryad accession.
 
 For the per-gene null simulation tests of compositional bias (Foster, 2004), we used the p4 package (https://github.com/pgfoster/p4-phylogenetics), inputting the ML trees inferred by IQ-tree for each of the 1388 alignments, and assuming an LG+Γ4 substitution model with a single empirical frequency vector for each gene; this test was implemented with a simple wrapper script (‘p4_compo_test_multiproc.py’) leveraging the python multiprocessing module. We opted not to model-test each gene individually in p4, both because the range of models implemented in p4 are more limited than those tested for in IQ-tree, and because, as a practical matter, LG (usually with variant of the FreeRates model of rate heterogeneity) was chosen as the best-fitting model in the IQ-tree model tests for a large majority of genes, suggesting that LG+Γ4 would be a reasonable approximation for the purposes of this test. We selected an α-threshold of 0.10 for dividing genes into test-passing and -failing bins as a conservative measure; however, we emphasize that even at a less conservative α = 0.05, 47% of genes would still be detected as falling outside the null expectation.
 
-## Source data availability
+### Source data availability
 
 SRA accession codes, where used, and all alternative sources for sequence data (e.g. individually hosted websites, personal communications), are listed above in the Materials and methods section. A DataDryad accession is available at https://doi.org/10.5061/dryad.6cm1166, which makes available all helper scripts, orthogroups, multiple sequence alignments, phylogenetic program output, and raw host proteomes inputted to OrthoFinder. Metagenomic bins containing placozoan host contigs and gene annotations from H4, H6 and H11 isolates are also provided in this accession. PhyloBayes. chain files, due to their large size, are separately accessioned at in Zenodo at https://doi.org/10.5281/zenodo.1197272.

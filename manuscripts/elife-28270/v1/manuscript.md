@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.28270.001 KCC2 is a neuron-specific K + -Cl – cotransporter essential for establishing the Cl - gradient required for hyperpolarizing inhibition in the central nervous system (CNS). KCC2 is highly localized to excitatory synapses where it regulates spine morphogenesis and AMPA receptor confinement. Aberrant KCC2 function contributes to human neurological disorders including epilepsy and neuropathic pain. Using functional proteomics, we identified the KCC2-interactome in the mouse brain to determine KCC2-protein interactions that regulate KCC2 function. Our analysis revealed that KCC2 interacts with diverse proteins, and its most predominant interactors play important roles in postsynaptic receptor recycling. The most abundant KCC2 interactor is a neuronal endocytic regulatory protein termed PACSIN1 (SYNDAPIN1). We verified the PACSIN1-KCC2 interaction biochemically and demonstrated that shRNA knockdown of PACSIN1 in hippocampal neurons increases KCC2 expression and hyperpolarizes the reversal potential for Cl - . Overall, our global native-KCC2 interactome and subsequent characterization revealed PACSIN1 as a novel and potent negative regulator of KCC2.
+KCC2 is a neuron-specific K+-Cl– cotransporter essential for establishing the Cl- gradient required for hyperpolarizing inhibition in the central nervous system (CNS). KCC2 is highly localized to excitatory synapses where it regulates spine morphogenesis and AMPA receptor confinement. Aberrant KCC2 function contributes to human neurological disorders including epilepsy and neuropathic pain. Using functional proteomics, we identified the KCC2-interactome in the mouse brain to determine KCC2-protein interactions that regulate KCC2 function. Our analysis revealed that KCC2 interacts with diverse proteins, and its most predominant interactors play important roles in postsynaptic receptor recycling. The most abundant KCC2 interactor is a neuronal endocytic regulatory protein termed PACSIN1 (SYNDAPIN1). We verified the PACSIN1-KCC2 interaction biochemically and demonstrated that shRNA knockdown of PACSIN1 in hippocampal neurons increases KCC2 expression and hyperpolarizes the reversal potential for Cl-. Overall, our global native-KCC2 interactome and subsequent characterization revealed PACSIN1 as a novel and potent negative regulator of KCC2.
 
 ## Introduction
 
@@ -46,31 +46,1766 @@ In the present study, we performed unbiased affinity purifications (AP) of nativ
 
 ## Results
 
-## Determining affinity purification (AP) conditions to extract native-KCC2
+### Determining affinity purification (AP) conditions to extract native-KCC2
 
 In order to determine the composition of native KCC2 MPCs using AP-MS, we first determined the detergent-based conditions that preserve native KCC2 following membrane extraction. In a non-denaturing Blue-Native PAGE (BN-PAGE), native-KCC2 migrated between 400 kDa – 1000 kDa in the presence of the native detergents C12E9 (nonaethylene glycol monododecyl ether), CHAPS (3-[(3-Cholamidopropyl) dimethylammonio]−1-propanesulfonate hydrate) 1, and DDM (n-dodecyl β-d-maltoside). However, all other detergent compositions previously used for KCC2 solubilization resulted in KCC2 migration at lower molecular weights (Figure 1a). This indicates that native detergent extractions are efficient at preserving higher order KCC2 MPCs. Upon further analysis using standard SDS-PAGE, we observed that the total KCC2 extracted was greater in C12E9 and CHAPS-based detergent extractions in comparison with all other detergents (Figure 1a, Figure 1—figure supplements 1 and 2), hence we restricted our further analysis to C12E9 and CHAPS-based membrane preparations.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig1-v1.jpg)
+
+**Figure 1.:** (a) BN-PAGE and SDS-PAGE separation of solubilized membrane fractions prepared from ~P50 mouse brain, using the detergents listed in the associated table. Protein separations were western-blotted and probed with antibodies indicated on the left. O, oligomer; M, monomer. Blots are representative of two independent biological replicates. (b) Comparison of the top 35 proteins identified with high confidence in C-terminal KCC2 antibody immunoprecipitations from CHAPS-based or C12E9-based membrane extractions. IgG-AP immunoprecipitations were performed as a control. Heat maps represent log scale spectral counts of individual proteins per condition, expressed relative to global spectral counts. Unique peptides corresponding to KCC2 (indicated in red font) were most abundant in both conditions, confirming the specificity of the C-terminal antibody. Previously identified KCC2 interacting partners are identified by asterisks. Proteins in green represent those that commonly co-precipitated with KCC2 regardless of the detergent extraction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** SDS, sodium dodecyl sulfate; DOC, deoxycholate; NP40, Igepal-CA630; C12E9, nonaethylene glycol monododecyl ether; DDM, n-dodecyl-β-D-maltoside; PFO, perfluoro-octanoic acid; IAA, Iodoacetmide; BN, blue-native; SB, sample buffer for gel loading. RED/ORANGE lines and boxes indicate harsh KCC2 extraction conditions; YELLOW lines and boxes indicate intermediary KCC2 extraction conditions; BLUE lines and boxes indicate mild, native-KCC2 extraction conditions. The orange and yellow extraction/gel running strategies were employed for studying the stability of KCC2 oligomers (by subjecting them to harsh-to-mildly denaturing conditions). The blue extraction/gel running conditions were employed to study the composition of native-KCC2-oligomers.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Obtained with high-salt Tris-HCl buffer containing the following detergents (lane1: 1%Triton, 1%DOC; lane 2: 0.1%SDS, 0.5%DOC, 1%NP40 (RIPA); lane 3: 1%NP40 and lane 4: 1.5% C12E9). Samples were denatured in SDS-sample buffer containing 100 mM DTT or 25 mM DTT, @ 37⁰C for 30 min. Yellow-boxes indicate that C12E9-based native detergent enriches for more putative-KCC2 oligomers than the previously published KCC2 detergent extractions (lanes 1–3); and that the putative KCC2 oligomers are DTT-sensitive.
+
 To determine which of these two detergents was optimal for our subsequent full-scale proteomic analysis, we performed AP-MS to compare the efficacy of C12E9 versus CHAPS-solubilized membrane fractions. Immunopurification was performed on membrane fractions prepared from adult (P50) wild-type (WT) mouse brain, using a well-validated commercially available C-terminal KCC2 antibody (Williams et al., 1999; Gulyás et al., 2001; Woo et al., 2002; Mahadevan et al., 2014) and a control IgG antibody. In both detergent conditions, we recovered maximum peptides corresponding to KCC2 from the KCC2 pull downs (KCC2-AP), in comparison to the control IgG pull downs (IgG-AP), confirming the specificity of the C-terminal KCC2 antibody (Figure 1b and Figure 1—source data 1). However, upon further examination, two key pieces of evidence indicated that C12E9 -based conditions are optimal for proteomic analysis of native KCC2. First, we observed peptides corresponding to both KCC2 isoforms-a and -b; in C12E9-based samples, but we could only detect peptides corresponding to KCC2 isoform-a in KCC2-APs from CHAPS-based samples. Second, we observed a higher enrichment of peptides corresponding to previously identified KCC2 interactors belonging to the family of Na+/K+ ATPases (ATP1A1-3), and the family of creatine kinases (CKB, CKMT1), and cofilin1 (CFL1) in the KCC2-AP from C12E9-based samples. Based on these results, we concluded that C12E9-based solubilization conditions yield more KCC2-specific binding partners and fewer IgG-specific binding partners compared to CHAPS, and thus provide a higher stringency for KCC2 AP-MS. Thus, we performed all subsequent proteomic analysis of native KCC2 on samples solubilized with C12E9.
 
-## Multi-epitope (ME) proteomic analysis of KCC2 complexes in the developing and mature brain
+### Multi-epitope (ME) proteomic analysis of KCC2 complexes in the developing and mature brain
 
 To focus our proteomic analysis on KCC2b, which is the abundant isoform primarily responsible for the shift from excitatory to inhibitory GABA during early postnatal development (Uvarov et al., 2007; Kaila et al., 2014), we used a multi-epitope approach that allowed us to distinguish the KCC2 isoforms (Figure 2a). The C-terminal antibody recognizes both isoforms (Uvarov et al., 2007; 2009), so we chose to use another antibody that is specifically raised against the unique N-terminal tail of the KCC2b isoform. Lastly, we used a phosphospecific antibody for serine 940 (pS940), as phosphorylation of this residue increases KCC2 surface expression and/or transporter function (Lee et al., 2007; Lee et al., 2011). We validated these three KCC2 antibodies (C-terminal, N-terminal, and pS940) for KCC2-immunoenrichment (Figure 2—figure supplement 1) (Mahadevan et al., 2014). Moreover, by taking a multi-epitope approach, we significantly increased the likelihood of detecting KCC2 interactions that may be missed during single-epitope AP approaches. We performed 34 rounds of AP-MS including both developing (P5) and mature/adult (P50) WT mouse brain lysates (Figure 2—source data 1). We could not use KCC2-knockout brains since these animals die at birth, so as an alternative we used a mock IP for each sample condition in the absence of the KCC2 antibody using parallel preimmunization immunoglobulin (IgG/IgY) as negative controls. We obtained 440 potential KCC2 protein interactors with 99% confidence and a 1% false discovery rate. We identified KCC2 peptides spanning the entire sequence of KCC2 with ~44% sequence coverage, primarily at the C- and N-terminal tails (Figure 2b); and in both the developing and mature brain, KCC2 peptides were the most abundant peptides identified in the KCC2-IPs (Figure 2c). While the KCC2 C-terminal antibody recovered peptides from both isoforms of KCC2, the N-terminal KCC2b-specific antibody did not recover any KCC2a isoform-specific peptides, indicating the specificity of the antibodies used, and the success of KCC2-immunoenrichment in our AP-assays.
 
-## The KCC2 interactome
+![Figure 2.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig2-v1.jpg)
+
+**Figure 2.:** (a) Schematic of the locations of anti-KCC2 antibodies. (b) The primary KCC2 amino acid sequence. Red indicates the protein coverage of KCC2 identified by MS analysis; yellow indicates unique coverage for KCC2a and KCC2b isoforms. MS/MS- spectra of peptides unique for KCC2a and KCC2b. Right: the MS/MS ion fragmentation of the corresponding amino acid sequence is indicated above the spectra. (c) Spectral and peptide count plots of proteins in AP with all three anti-KCC2 antibodies in developing brain membrane fractions (P5, left) and adult brain membrane fractions (P50, right). Peptide and spectral counts are normalized (anti-KCC2/IgG) and plotted on a log scale. Red circles - highly enriched KCC2 bait. Blue circles - highly enriched PACSIN1 target peptides. Dark-grey circles - top proteins enriched with KCC2-AP in comparison to IgG control-AP. Light-grey circles - proteins enriched in IgG control-AP in comparison to KCC2-AP and known spurious interactors.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Native KCC2 complexes from C12E9-solubilized whole-brain membrane fractions immunoprecipitated with pre-immune sera or anti-N-terminal KCC2b antibody (a) or anti-pSer940 KCC2 antibody (b) and immunoblotted with the antibodies indicated at right (C-terminal KCC2 antibody). Representative example of five biological replicates. IP, immunoprecipitate; I, input fraction (1% of IP); U. unbound fraction (1%of IP); O. oligomer; M. monomer.
+
+### The KCC2 interactome
 
 To build the KCC2 interactome, all potential KCC2 protein interactors were filtered according to their spectral count enrichment in the KCC2-APs, and normalized to IgG IPs. In the first pass filter grouping, we included proteins with at least two unique peptides and peptide-spectrum matches and a 3-fold increase in KCC2 spectral counts in the KCC2-AP in comparison to IgG-AP (Figure 3—source data 1). This yielded ~75 putative-KCC2 partners. In the second pass filter grouping, we identified additional putative-KCC2 partners by including those with only one unique peptide, or less than three-fold KCC2-AP enrichment, if they met one of the following criteria: (a) the protein was a previously validated KCC2 physical/functional interactor; (b) the protein family already appeared in the first-pass filter; (c) the protein appeared as a single-peptide interactor across multiple experiments (e.g. multiple antibodies, or in lysates from both age timepoints, or in both replicates). Including these additional proteins from the second pass filtering yielded 186 putative-KCC2 partners. We next eliminated the 36 proteins that have been previously identified as commonly occurring spurious interactors in LC/MS experiments as indicated in the CRAPome database (Figure 3—source data 2) (Mellacheruvu et al., 2013). By applying these filtering criteria and processes, we established a total list of 150 putative KCC2 partners in our present LC-MS assay (Figure 3—source data 3). More than half of these KCC2 interactors were exclusively enriched in KCC2-APs from the mature brain (85 proteins,~57% overlap), while approximately one-third (41 proteins,~27% overlap) were identified across both the developing and mature brain (Figure 3—figure supplement 1). Only relatively small percentages were exclusively enriched in the developing brain (24 proteins,~16% overlap).
 
 Next, we segregated the 150 putative KCC2 partners into high-confidence (platinum, gold), moderate-confidence (silver), or lower confidence (bronze) putative KCC2-interactors (Figure 3, Table 1 and Figure 3—source data 4). This segregation was based on the largest probability of a bait-prey pair across all replicate purifications, as indicated by the MaxP score (Choi et al., 2012), and the presence of a particular protein across replicates, and spectral enrichment of a particular protein across all experiments. Platinum KCC2-partners are those proteins enriched in a minimum of two out of three replicates, show 5 + fold spectral enrichment, and a MaxP SAINT score ≥0.89. Gold KCC2-partners were those proteins enriched in only one replicate with normalized spectral count enrichments ≥ 5 and a MaxP SAINT score ≥0.89. Silver KCC2-partners were those with normalized spectral count enrichments between 3 and 5, and a MaxP score between 0.7 and 0.89. Bronze KCC2-parterns were all remaining proteins that were not designated as Platimum, Gold or Silver. Lastly, we added 31 proteins that have been previously established as KCC2-physical/functional partners but were not identified in our present LC-MS assay (Figure 3—source data 4). The proteins identified in the present screen (150) and the proteins previously established as key KCC2 physical/functional partners (31), together constitutes the 181 members of the proposed KCC2 interactome. All 181 proteins were included in subsequent network analyses.
 
-## Members of KCC2 interactome are highly represented at excitatory synapses
+![Figure 3.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig3-v1.jpg)
+
+**Figure 3.:** Summary of the top 70 proteins identified with high confidence across KCC2-ME AP in the developing and mature brain. PLATINUM interactors: proteins enriched in a minimum of 2/3 replicates, and show 5 + fold spectral enrichment. GOLD interactors: proteins with 5 + fold spectral enrichment in one replicate. SILVER interactors: 3–5 fold spectral enrichment; BRONZE interactors: 1.5–3 fold spectral enrichment. Enrichment is in KCC2-AP in comparison with IgG-AP. Heat map represents log scale spectral enrichment of individual proteins per antibody condition, relative to respective control conditions. See Table 1 for a list of the transmembrane and soluble KCC2 interactors. .
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Venn diagram comparison of the intersection of data obtained using N-term and C-term antibodies in developing and mature brain. (b) Proteins that appear exclusively with P5 or P50 KCC2-immunoprecipitates. (c) Similar to (a) but for data obtained using all three antibodies. (d) Proteins that appear exclusively to the individual KCC2 antibody.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig3-figsupp2-v1.jpg)
+
+**Table 1.**
+ KCC2 protein partners identified by ME-APs
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein name</th>
+      <th>UniProt ID</th>
+      <th>Spectral ratio</th>
+      <th>MaxP</th>
+      <th>ES</th>
+      <th>IS</th>
+      <th>P5</th>
+      <th>P50</th>
+      <th>pS940</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KCC2b</td>
+      <td>Q91V14-2</td>
+      <td>349.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>KCC2a</td>
+      <td>Q91V14-1</td>
+      <td>203.8</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>PACSIN1</td>
+      <td>Q61644</td>
+      <td>136.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>SLC44A1</td>
+      <td>Q6X893</td>
+      <td>54.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP2B4</td>
+      <td>Q6Q477</td>
+      <td>44.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KIF21B</td>
+      <td>Q9QXL1</td>
+      <td>41.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VCP</td>
+      <td>Q01853</td>
+      <td>24.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GLS</td>
+      <td>D3Z7P3</td>
+      <td>23.5</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RAB11FIP5</td>
+      <td>Q8R361</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>SRCIN1</td>
+      <td>Q9QWI6</td>
+      <td>17.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>RNF8</td>
+      <td>Q8VC56</td>
+      <td>16.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JAGN1</td>
+      <td>Q5XKN4</td>
+      <td>12.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PPFIA3</td>
+      <td>P60469</td>
+      <td>11.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>SLC2A1</td>
+      <td>P17809</td>
+      <td>11.0</td>
+      <td>0.96</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YWHAE</td>
+      <td>P62259</td>
+      <td>10.0</td>
+      <td>0.99</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ACTN4</td>
+      <td>P57780</td>
+      <td>9.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRMP1</td>
+      <td>P97427</td>
+      <td>8.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>PITPNM2</td>
+      <td>Q6ZPQ6</td>
+      <td>8.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ACO2</td>
+      <td>Q99KI0</td>
+      <td>7.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>COX4I1</td>
+      <td>P19783</td>
+      <td>6.0</td>
+      <td>0.96</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SLC4A10</td>
+      <td>Q5DTL9</td>
+      <td>6.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>USP24</td>
+      <td>B1AY13</td>
+      <td>6.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YWHAG</td>
+      <td>P61982</td>
+      <td>6.0</td>
+      <td>0.96</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>C1QB</td>
+      <td>P14106</td>
+      <td>5.0</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>CCT6A</td>
+      <td>P80317</td>
+      <td>5.0</td>
+      <td>0.99</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CPSF6</td>
+      <td>Q6NVF9</td>
+      <td>5.0</td>
+      <td>0.99</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DDX5</td>
+      <td>Q61656</td>
+      <td>5.0</td>
+      <td>0.99</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DYNC1LI1</td>
+      <td>Q8R1Q8</td>
+      <td>5.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SEC23A</td>
+      <td>Q01405</td>
+      <td>5.0</td>
+      <td>0.99</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SLC8A2</td>
+      <td>Q8K596</td>
+      <td>5.0</td>
+      <td>0.99</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRIM3</td>
+      <td>Q9R1R2</td>
+      <td>5.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CANX</td>
+      <td>P35564</td>
+      <td>4.5</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP5H</td>
+      <td>Q9DCX2</td>
+      <td>4.0</td>
+      <td>0.81</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP6V1E1</td>
+      <td>P50518</td>
+      <td>4.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DDX17</td>
+      <td>Q501J6</td>
+      <td>4.0</td>
+      <td>0.96</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNAJA3</td>
+      <td>Q99M87</td>
+      <td>4.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>DPYSL3</td>
+      <td>Q62188</td>
+      <td>4.0</td>
+      <td>0.96</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EWSR1</td>
+      <td>Q61545</td>
+      <td>4.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>MAG</td>
+      <td>P20917</td>
+      <td>4.0</td>
+      <td>0.96</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MDH2</td>
+      <td>P08249</td>
+      <td>4.0</td>
+      <td>0.96</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RTCB</td>
+      <td>Q99LF4</td>
+      <td>4.0</td>
+      <td>0.98</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SNRPA</td>
+      <td>Q62189</td>
+      <td>4.0</td>
+      <td>0.96</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STOML2</td>
+      <td>Q99JB2</td>
+      <td>4.0</td>
+      <td>0.96</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STRN3</td>
+      <td>Q9ERG2</td>
+      <td>4.0</td>
+      <td>0.96</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YWHAQ</td>
+      <td>P68254</td>
+      <td>4.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>INA</td>
+      <td>P46660</td>
+      <td>3.6</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP6V1F</td>
+      <td>Q9D1K2</td>
+      <td>3.5</td>
+      <td>0.95</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DCTN2</td>
+      <td>Q99KJ8</td>
+      <td>3.5</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CD47</td>
+      <td>Q61735</td>
+      <td>3.2</td>
+      <td>0.9</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACOX3</td>
+      <td>Q9EPL9</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AP2B1</td>
+      <td>Q9DBG3</td>
+      <td>3.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APBA1</td>
+      <td>B2RUJ5</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP2A2</td>
+      <td>O55143</td>
+      <td>3.0</td>
+      <td>0.81</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>CMPK1</td>
+      <td>Q9DBP5</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRTC1</td>
+      <td>Q68ED7</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CTNNA2</td>
+      <td>Q61301</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLII</td>
+      <td>Q9JJ28</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>FXYD7</td>
+      <td>P59648</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GPM6A</td>
+      <td>P35802</td>
+      <td>3.0</td>
+      <td>0.93</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>GRID2</td>
+      <td>Q61625</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NARS</td>
+      <td>Q8BP47</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NDUFA2</td>
+      <td>Q9CQ75</td>
+      <td>3.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NUDT21</td>
+      <td>Q9CQF3</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PPP1CA</td>
+      <td>P62137</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PPP2CA</td>
+      <td>P63330</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PRRT2</td>
+      <td>E9PUL5</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>SFPQ</td>
+      <td>Q8VIJ6</td>
+      <td>3.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SIRT2</td>
+      <td>Q8VDQ8</td>
+      <td>3.0</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>SLC1A2</td>
+      <td>P43006</td>
+      <td>3.0</td>
+      <td>0.69</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>TCP1</td>
+      <td>P11983</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRIO</td>
+      <td>Q0KL02</td>
+      <td>3.0</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PTN</td>
+      <td>P63089</td>
+      <td>2.7</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RAB2A</td>
+      <td>P53994</td>
+      <td>2.7</td>
+      <td>0.84</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NDUFS5</td>
+      <td>Q99LY9</td>
+      <td>2.5</td>
+      <td>0.82</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CCT2</td>
+      <td>P80314</td>
+      <td>2.5</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNM1</td>
+      <td>P39053</td>
+      <td>2.5</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SLC25A11</td>
+      <td>Q9CR62</td>
+      <td>2.5</td>
+      <td>0.93</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DDX1</td>
+      <td>Q91VR5</td>
+      <td>2.4</td>
+      <td>0.89</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NEDD4L</td>
+      <td>Q8CFI0</td>
+      <td>2.4</td>
+      <td>0.91</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYNGR3</td>
+      <td>Q8R191</td>
+      <td>2.4</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>DLD*</td>
+      <td>O08749</td>
+      <td>2.3</td>
+      <td>0.44</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>SNAP25</td>
+      <td>P60879</td>
+      <td>2.3</td>
+      <td>0.65</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>DDX3X</td>
+      <td>Q62167</td>
+      <td>2.3</td>
+      <td>0.79</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>CAMK2G</td>
+      <td>Q923T9</td>
+      <td>2.3</td>
+      <td>1</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FASN</td>
+      <td>P19096</td>
+      <td>2.3</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PKM</td>
+      <td>P52480</td>
+      <td>2.2</td>
+      <td>0.85</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NDUFA9</td>
+      <td>Q9DC69</td>
+      <td>2.1</td>
+      <td>0.96</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BASP1</td>
+      <td>Q91XV3</td>
+      <td>2.1</td>
+      <td>0.72</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>CKB</td>
+      <td>Q04447</td>
+      <td>2.0</td>
+      <td>0.64</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>COX6C</td>
+      <td>Q9CPQ1</td>
+      <td>2.0</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSNK2A1</td>
+      <td>Q60737</td>
+      <td>2.0</td>
+      <td>0.84</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DHX9*</td>
+      <td>O70133</td>
+      <td>2.0</td>
+      <td>0.44</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DPYSL2</td>
+      <td>O08553</td>
+      <td>2.0</td>
+      <td>0.97</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>EDC4</td>
+      <td>Q3UJB9</td>
+      <td>2.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FUS</td>
+      <td>P56959</td>
+      <td>2.0</td>
+      <td>0.94</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>KCNAB2</td>
+      <td>P62482</td>
+      <td>2.0</td>
+      <td>0.92</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NDUFA8</td>
+      <td>Q9DCJ5</td>
+      <td>2.0</td>
+      <td>0.96</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NDUFS8</td>
+      <td>Q8K3J1</td>
+      <td>2.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PDIA6</td>
+      <td>Q922R8</td>
+      <td>2.0</td>
+      <td>0.89</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SFXN3*</td>
+      <td>Q91V61</td>
+      <td>2.0</td>
+      <td>0.44</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SLC25A22</td>
+      <td>Q9D6M3</td>
+      <td>2.0</td>
+      <td>0.89</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STMN2</td>
+      <td>P55821</td>
+      <td>2.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TNR</td>
+      <td>Q8BYI9</td>
+      <td>2.0</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TUBB4B</td>
+      <td>P68372</td>
+      <td>1.9</td>
+      <td>0.55</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ATP5C1</td>
+      <td>Q91VR2</td>
+      <td>1.9</td>
+      <td>0.6</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PPIA</td>
+      <td>P17742</td>
+      <td>1.8</td>
+      <td>0.74</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CKMT1</td>
+      <td>P30275</td>
+      <td>1.8</td>
+      <td>0.86</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>COX5A</td>
+      <td>P12787</td>
+      <td>1.8</td>
+      <td>0.54</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C1QC*</td>
+      <td>Q02105</td>
+      <td>1.8</td>
+      <td>0.43</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>NDUFS1</td>
+      <td>Q91VD9</td>
+      <td>1.8</td>
+      <td>0.88</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WWP1</td>
+      <td>Q8BZZ3</td>
+      <td>1.8</td>
+      <td>0.88</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP5B</td>
+      <td>P56480</td>
+      <td>1.7</td>
+      <td>0.38</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>CCT5</td>
+      <td>P80316</td>
+      <td>1.7</td>
+      <td>0.81</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DCLK1</td>
+      <td>Q9JLM8</td>
+      <td>1.7</td>
+      <td>0.96</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SLC25A3</td>
+      <td>Q8VEM8</td>
+      <td>1.7</td>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPTBN1</td>
+      <td>Q62261</td>
+      <td>1.7</td>
+      <td>0.7</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TUBB3</td>
+      <td>Q9ERD7</td>
+      <td>1.6</td>
+      <td>0.73</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>CAMK2D</td>
+      <td>Q6PHZ2</td>
+      <td>1.6</td>
+      <td>0.82</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP6V0A1</td>
+      <td>Q9Z1G4</td>
+      <td>1.5</td>
+      <td>0.92</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CFL1*</td>
+      <td>P18760</td>
+      <td>1.5</td>
+      <td>0.44</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP1A2*</td>
+      <td>Q6PIE5</td>
+      <td>1.5</td>
+      <td>0.04</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ADGRL2</td>
+      <td>Q8JZZ7</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BSN</td>
+      <td>O88737</td>
+      <td>1.5</td>
+      <td>0.72</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DBT</td>
+      <td>P53395</td>
+      <td>1.5</td>
+      <td>0.86</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GTF2I</td>
+      <td>Q9ESZ8</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HELB</td>
+      <td>Q6NVF4</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HK1</td>
+      <td>P17710</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HMCN2</td>
+      <td>A2AJ76</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LGI3</td>
+      <td>Q8K406</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PC</td>
+      <td>Q05920</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RAB3IP</td>
+      <td>Q68EF0</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UQCR11</td>
+      <td>Q9CPX8</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP1A1</td>
+      <td>Q8VDN2</td>
+      <td>1.5</td>
+      <td>0.67</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ATP5O</td>
+      <td>Q9DB20</td>
+      <td>1.5</td>
+      <td>0.71</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NDUFA4</td>
+      <td>Q62425</td>
+      <td>1.4</td>
+      <td>0.51</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ATP6V0D1</td>
+      <td>P51863</td>
+      <td>1.4</td>
+      <td>0.53</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACAT1*</td>
+      <td>Q8QZT1</td>
+      <td>1.4</td>
+      <td>0.43</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATP2B2*</td>
+      <td>Q9R0K7</td>
+      <td>1.4</td>
+      <td>0.47</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TUBB4A</td>
+      <td>Q9D6F9</td>
+      <td>1.4</td>
+      <td>0.64</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>GNB1</td>
+      <td>P62874</td>
+      <td>1.4</td>
+      <td>0.58</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>C1QA</td>
+      <td>P98086</td>
+      <td>1.4</td>
+      <td>0.36</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NDUFA10</td>
+      <td>Q99LC3</td>
+      <td>1.4</td>
+      <td>0.65</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RAP2B*</td>
+      <td>P61226</td>
+      <td>1.3</td>
+      <td>0.42</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYT1</td>
+      <td>P46096</td>
+      <td>1.3</td>
+      <td>0.65</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>SLC1A3</td>
+      <td>P56564</td>
+      <td>1.3</td>
+      <td>0.9</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CAPRIN1</td>
+      <td>Q60865</td>
+      <td>1.3</td>
+      <td>0.56</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YWHAZ*</td>
+      <td>P63101</td>
+      <td>1.3</td>
+      <td>0.44</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ATP1A3*</td>
+      <td>Q6PIC6</td>
+      <td>1.3</td>
+      <td>0</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>STX1B*</td>
+      <td>P61264</td>
+      <td>1.3</td>
+      <td>0.45</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>NEFM</td>
+      <td>P08553</td>
+      <td>1.2</td>
+      <td>0.78</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DLST</td>
+      <td>Q9D2G2</td>
+      <td>1.2</td>
+      <td>0.72</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Orange-Transmembrane.Grey-Soluble.Green-Secreted/Extracellular.ES – excitatory synapse.IS – inhibitory synapse._
+
+### Members of KCC2 interactome are highly represented at excitatory synapses
 
 To interpret the potential functional role of KCC2-protein interactors, we first segregated them based on their abundance at excitatory and inhibitory synapses. To perform this analysis, we mapped the KCC2 interactome to the excitatory synapse-enriched postsynaptic density (PSD), Nlgn1, Lrrtm1, and Lrrtm2 proteomes (Collins et al., 2006; Loh et al., 2016), or the inhibitory synapse-enriched iPSD, GABAAR, GABABR, NLGN2, Slitrk3, and GlyR proteomes (Heller et al., 2012; Del Pino et al., 2014; Kang et al., 2014; Loh et al., 2016; Nakamura et al., 2016; Schwenk et al., 2016; Uezu et al., 2016) (Figure 4—source data 1). Interactome mapping revealed that ~43% of proteins in the KCC2 interactome (77/181) were exclusively enriched at excitatory synapses, while only ~2% of proteins (4/181) were exclusively enriched at inhibitory synapses (Figure 4a,b). However, ~15% proteins (30/181) were mapped to both excitatory and inhibitory synapses, whereas ~39% proteins (70/181) did not map to either synapses.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig4-v1.jpg)
+
+**Figure 4.:** The KCC2 interactome mapped to (a) the excitatory synapse-enriched proteomes or, (b) the inhibitory synapse-enriched proteomes. The thickness of the black radial lines in the foreground denotes the number of spectral enrichment (KCC2/IgG) in the log scale. Grey radial lines in the background denotes the previously identified physical/co-expression networks across all interactome members. IPA revealing the members of the KCC2 interactome that are involved in (c) ion homeostasis, (d) dendritic cytoskeleton rearrangement and (e) recycling/endocytosis/trafficking. The following source data and figure supplements are available for Figure 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The KCC2 interactome was mapped to the excitatory synapse-enriched proteomes, and the inhibitory synapse-enriched proteomes. Circle/triangle/square-shaped nodes represent the KCC2 partners identified in this present study; diamond-shaped nodes represent the KCC2 partners not identified, but previously established as physical/functional partners of KCC2. Red/blue/pink-filled nodes represent synaptic-KCC2 partners; uncolored nodes represent the putative-, non-synaptic KCC2 partners. The thickness of the radial lines represents the spectral enrichment (KCC2/IgG). See Figure 4—source data 1 for the complete list of all proteins used for mapping.
+
 To further examine the KCC2 interactome based on cellular functions, we performed an Ingenuity Pathway Analysis (IPA) to segregate the KCC2-interactors into highly enriched Gene Ontology (GO) classes. Performing this IPA analysis revealed that KCC2 partners segregate into multiple cellular and molecular functional nodes, which we then combined into three broad categories that collectively had high p values: ion homeostasis, dendritic cytoskeleton rearrangement, and receptor trafficking (Figure 4c–e; Figure 4—source data 2). KCC2 has been previously associated with both ion homeostasis and dendritic spine morphology, and consistent with this previous work we identified previously characterized KCC2 functional or physical interactors, including subunits of the sodium/potassium (Na+/K+) ATPase, including the previously characterized KCC2 interactor ATP1A2 (Ikeda et al., 2004), and Cofilin1, which was recently demonstrated to be important for KCC2-mediated plasticity at excitatory synapses (Chevy et al., 2015; Llano et al., 2015). The third category, receptor trafficking, has a denser network (clustering coefficient of 0.63 and an average of ~4.4 neighbors) in comparison to the other networks, suggesting a tight link between KCC2 and proteins in this node. Notably, this analysis revealed multiple novel putative-KCC2 partners, including PACSIN1, SNAP25, RAB11FIP5, CSNK2A1, DNM1 and AP2B1. All these novel putative interactors have established functions in membrane recycling and/or trafficking of glutamate receptor subunits (Carroll et al., 1999; Lee et al., 2002; Vandenberghe et al., 2005; Pérez-Otaño et al., 2006; Selak et al., 2009; Sanz-Clemente et al., 2010; Anggono et al., 2013; Bacaj et al., 2015). In order to determine the spatiotemporal expression profiles of the KCC2 interactome, we first performed transcriptomic analysis and hierarchical clustering of high-resolution human brain RNAseq data (Kang et al., 2011; Willsey et al., 2013) (obtained from http://brain-map.org). We observed that SLC12A5 mRNA is expressed with several members of the receptor trafficking node in the hippocampus (Figure 5a), amygdala, thalamus, cerebellum and cortex (Figure 5—figure supplement 1; Figure 5—source data 1). The RNAseq data does not distinguish between isoforms KCC2a and KCC2b, which equally represented in the neonatal brain, while KCC2b is the predominant isoform in the adult brain.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig5-v1.jpg)
+
+**Figure 5.:** (a) Spatiotemporal expression patterns of SLC12A5 and members of receptor trafficking node of the KCC2 interactome in the human brain; RNAseq data were analyzed in hippocampus. Pcw, postconceptual weeks. (b) Native KCC2 complexes from C12E9-solubilized whole-brain membrane fractions immunoprecipitated with IgY or anti-N-term KCC2 (left) and IgG or anti-PACSIN1 (right), and immunoblotted with antibodies as indicated. (c) Western blot analysis of developmental expression patterns of KCC2 and PACSIN1. (d) Antibody-shift assay followed by 2D-BN-PAGE separation using whole-brain membrane fractions, incubated with antibodies indicated on left; gel separations were immunoblotted with anti-KCC2 or PACSIN1 antibodies. (e) Coimmunoprecipitation performed in COS7 cells transfected with myc-tagged KCC2b and GFP-tagged PACSIN1/2/3 constructs, immunoprecipitated with anti-N-term KCC2b, and immunoblotted with the antibodies indicated at right. (f) Immunoblot of immunoprecipitates from transfected COS7 cell lysates. * indicate the lanes where PACSIN1 lacks the variable region between ~aa325-383. # of independent biological replicates are indicated in parenthesis: Figure 5e (4), Figure 5f (3), Figures 5b,c,d (2).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The RNAseq data were analyzed for the above members across five brain regions including Amygdala, Striatum, Thalamus, Cerebellum, and the ganglionic eminences at eight different developmental periods.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** MS/MS- spectra of a peptide unique for PACSIN1, highlighted in yellow. The MS/MS ion fragmentation of the corresponding amino acid sequence is indicated above the spectra (right).
 
 In order to independently validate the utility of the KCC2 interactome, we proceeded to biochemical and functional analysis. We focused this validation analysis on proteins in the receptor trafficking category for two reasons: (i) the most abundant putative-KCC2 partner, PACSIN1 (PKC and CSNK2A1 substrate in neurons; also called as Syndapin1) is present in the receptor trafficking node; and (ii) the tightest KCC2-subnetwork exists in receptor trafficking node, indicating a dense interconnectivity between these proteins.
 
-## PACSIN1 is a novel native-KCC2 binding partner
+### PACSIN1 is a novel native-KCC2 binding partner
 
 To biochemically and functionally validate our KCC2 interactome, we chose to focus on the putative KCC2-PACSIN1 interaction. The rationale for this selection was based on the following: (1) PACSIN one is the most abundant KCC2 interactor in our LC-MS assay (next only to KCC2), with a high normalized spectral count ratio and a high MaxP score, and with extensive amino acid sequence coverage (Figure 5—figure supplement 2); (2) PASCIN1 is a substrate for PKC, and PKC is a key regulator of KCC2 (Lee et al., 2007); (3) PASCIN1 is a substrate for CSNK2A1, and our LC-MS assay revealed CSNK2A1 also as a putative KCC2-interactor; (4) PACSIN1 is abundant at both excitatory and inhibitory synapses (Pérez-Otaño et al., 2006; Del Pino et al., 2014); and (5) PACSIN1 was identified as an abundant KCC2 interactor using two antibodies (N-terminal and pS940) in multiple replicates.
 
@@ -78,13 +1813,21 @@ To independently verify whether KCC2 associated with PACSIN1, we performed a co-
 
 The PACSIN family of proteins contains three members that share ~90% amino acid identity (Modregger et al., 2000). PACSIN1 is neuron-specific and is broadly expressed across multiple brain regions; PACSIN2 is ubiquitous and is abundant in cerebellar Purkinje neurons (Anggono et al., 2013; Cembrowski et al., 2016), and PACSIN3 is restricted to muscle and heart (Modregger et al., 2000). To determine which members of the PACSIN family binds to KCC2, we transfected PACSIN constructs (Anggono et al., 2013), with myc-KCC2b in COS-7 cells and performed co-immunoprecipitation. We observed that KCC2 robustly associates with PACSIN1, weakly interacts with PACSIN2, and does not interact with PACSIN3 (Figure 5e). Mouse PASCIN1 contains a membrane-binding F-BAR domain (aa 1–325), a SH3 domain (aa 385–441) that binds to phosphorylated targets, and a VAR (variable) region (aa 326–384) (Kessels and Qualmann, 2004; 2015). To determine the PACSIN1 region that is required for KCC2 binding we repeated our co-immunoprecipitation assays in COS- 7 cells, but this time we used previously characterized PACSIN1 deletion constructs (Anggono et al., 2013)(Figure 5f). We discovered that removing either the SH3 (lane 3) or the F-BAR region (lane 6) did not disrupt the KCC2:PACSIN1 interaction, indicating that they are not necessary for KCC2 binding. In an analogous result, neither the SH3 domain alone (lane 7) nor F-BAR domain alone (lane 2) could interact with KCC2. However, KCC2 robustly co-precipitated with PACSIN1 when the VAR region alone was co-expressed with KCC2 (lane 5), indicating that the VAR region is sufficient to mediate the KCC2 interaction.
 
-## PACSIN1 is a negative regulator of KCC2 expression and function in hippocampal neurons
+### PACSIN1 is a negative regulator of KCC2 expression and function in hippocampal neurons
 
 KCC2 dysregulation has emerged as a key mechanism underlying several brain disorders including seizures (Fiumelli et al., 2013; Stödberg et al., 2015; Saitsu et al., 2016), neuropathic pain (Coull et al., 2003), schizophrenia (Tao et al., 2012), and autism spectrum disorders (ASD) (Cellot and Cherubini, 2014; Tang et al., 2016a). However, there are currently no existing KCC2 enhancers approved for clinical use, and thus there is a critical need to identify novel targets for the development of KCC2 enhancers. To determine whether PACSIN1 may be a potential target for regulating KCC2 function, we assayed for KCC2 function following PACSIN1 knockdown. We chose to assay for the canonical KCC2 function of Cl- extrusion, as the loss of Cl- homeostasis and thus synaptic inhibition, is causal for several neurological disorders (Coull et al., 2003; Huberfeld et al., 2007; Tao et al., 2012; Cellot and Cherubini, 2014; Toda et al., 2014; Kahle et al., 2014; Puskarjov et al., 2014; Stödberg et al., 2015; Banerjee et al., 2016; Saitsu et al., 2016; Tang et al., 2016b).
 
 We assayed KCC2-mediated Cl- extrusion by performing patch clamp recordings of the reversal potential for GABA (EGABA), which is principally determined by [Cl−]i (Kaila, 1994). Whole-cell patch clamp recordings were obtained from cultured hippocampal neurons that endogenously express KCC2. EGABA was determined from current–voltage (IV) curves that were created by eliciting inhibitory postsynaptic currents (IPSCs), by puffing GABA (20 µM) at the soma while progressively step-depolarizing the postsynaptic holding potential (through current injection via the whole-cell patch pipette). A linear regression of the IPSC amplitude was used to calculate the voltage dependence of IPSCs; the intercept of this line with the abscissa was taken as EGABA (mV), and the slope of this line as GABA conductance (pS). KCC2 function is best determined when the transporter is driven to extrude Cl-, which we achieved by loading the intracellular compartment with Cl- via the whole-cell patch pipette (Doyon et al., 2016).
 
 To determine whether PACSIN1 regulates KCC2-mediated Cl- transport, we virally transduced neurons with plasmids containing a previously validated PACSIN1 shRNA to knockdown PACSIN1 (Anggono et al., 2013), or a scrambled shRNA, which served as the control recordings. Neurons were transduced at 5–7 days in vitro (DIV) and all the recordings were performed at 11–14 DIV. Neurons were selected for recording based on the presence of reporter fluorescence (~60% of neurons were transduced). When neurons expressed the PASCIN1 silencing shRNA, EGABA was significantly hyperpolarized compared to control neurons expressing the scrambled shRNA (Figure 6a,b; control shRNA: −28.62 ± 3.07 mV, n = 9; PACSIN1 shRNA: −37.86 ± 1.73 mV, n = 11; t(18)=2.744, p=0.013). We found no significant change in the GABAAR conductance (Figure 6a,c; control shRNA: 6.93 ± 1.32 pS, n = 9; PACSIN1 shRNA: 12.96 ± 2.71 pS, n = 11; t(18)=1.86, p=0.079), which indicates that the effect is on Cl- transport and not GABA conductance. In addition, we found no significant change in the resting membrane potential (RMP), (Figure 6d; control shRNA: −63.41 ± 1.48 mV, n = 11; PACSIN1 shRNA: −62.77 ± 2.21 mV, n = 9; t(18)=0.246, p=0.808), which indicates the change in the driving force for Cl- was due to a change in EGABA and not RMP. Together, these data indicate that knocking down PACSIN1 increases KCC2-mediated Cl- transporter, which results in hyperpolarized EGABA.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig6-v1.jpg)
+
+**Figure 6.:** (a) Example IV curves measuring EGABA using Cl--loading through whole-cell configuration from cultured hippocampal neurons. Neurons were transduced with either control shRNA (n = 9; left) or PACSIN1 shRNA (n = 11; right). Summary of (b) EGABA, (c) synaptic conductance, and (d) RMP from all experiments similar to the examples in a. (e) Summary of EGABA recordings obtained by gramicidin-perforated patch clamp recordings. (f) Example confocal microscopic immunofluorescent images from cultured hippocampal neurons transduced with control shRNA (n = 32) or PACSIN1 shRNA (n = 32) and stained with anti-KCC2 (red; scale bar, 10 μm); green immunostain reports transfection. Below: summary of fluorescence intensities. (g) Similar to f, except neurons were transduced with either control eGFP (n = 23) or PACSIN1-eGFP (n = 16). n values for all experiments on cultured neurons were obtained from a minimum of three independent sets of cultures. Statistical significance was determined using student’s t-tests (two-tailed); *p<0.05, ***p<0.001. For all summary plots, the error bars denote mean ± sem. The following figure supplements is available for Figure 6.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28270/elife-28270-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Left, using ImageJ, four bisecting lines were drawn across the center of the cell. Right, the peak values of each line (2 values/line) were used to calculate peak fluorescent intensity of KCC2 at the membrane.
 
 The electrophysiology experiments performed above using Cl- loading through the patch pipette are important to test KCC2 function under an ionic load (Doyon et al., 2016). To determine the impact of PACSIN1 on KCC2 function under resting conditions, we repeated the electrophysiology recordings performed above to determine EGABA, but this time, we used the gramicidin-perforated patch clamp technique to maintain the neuronal Cl- gradient (Kyrozis and Reichling, 1995). Similar to our recordings above, we found a significant hyperpolarizing shift in EGABA in neurons expressing PACSIN1 shRNA versus control cells expressing scrambled shRNA (Figure 6e; control shRNA: −46.93 ± 2.78 mV, n = 7; PACSIN1 shRNA: −−72.70 ± 4.70 mV, n = 6; t(11)=4.9115, p=0.0005). Taken together, our whole-cell and gramicidin-perforated patch clamp recordings reveal that knocking down KCC2 in cultured hippocampal neurons leads to a hyperpolarization of EGABA that strengthens inhibition, which results from an increase in KCC2-mediated Cl- extrusion.
 
@@ -112,39 +1855,39 @@ In conclusion, the KCC2 interactome as presented here, serves as a molecular fra
 
 ## Materials and methods
 
-## Animals and approvals
+### Animals and approvals
 
 All experiments were performed in accordance with guidelines and approvals from the University of Toronto Animal Care Committee and the Canadian Council on Animal Care (University of Toronto Protocol #20012022). Animals of both sexes from wild-type mice, C57/Bl6 strain (Charles River Laboratories) were used throughout. Animals were housed in the Faculty of Arts and Science Biosciences Facility (BSF) in a 12 hr light: 12 hr d cycle, with 2–5 animals/cage.
 
-## Detergents
+### Detergents
 
 All biochemical preparations and centrifugations were performed at 4°C as previously described (Ivakine et al., 2013; Mahadevan et al., 2014, 2015). Systematic analysis of detergent solubility, and migration of native-KCC2 from crude membrane fractions were performed according to the workflow described in Figure 1—figure supplement 1. The following eight detergents (or detergent combinations) were used to solubilize whole brain membranes: C12E9 (1.5%; nonaethylene glycol monododecyl ether, Sigma-Aldrich, St. Louis, MO, #P9641), CHAPS (1.5%; 3-[(3-Cholamidopropyl) dimethylammonio]−1-propanesulfonate hydrate, Sigma-Aldrich #C3023), DDM, (1.5%; DDM, n-dodecyl β-d-maltoside, Sigma-Aldrich #D4641), DOC (1%; sodium deoxycholate, Sigma-Aldrich #D6750), NP40 (1%; nonyl phenoxypolyethoxylethanol, Thermo Fisher Scientific # 28324), Triton-X-100 (1%; 4-(1,1,3,3-Tetramethylbutyl)phenyl-polyethylene glycol, t-Octylphenoxypolyethoxyethanol, Polyethylene glycol tert-octylphenyl ether, Sigma-Aldrich #X-100), Triton-X-100 (1%) +DOC (1%), SDS (0.1%; Sodium dodecyl sulphate, (Sigma-Aldrich #71725) +DOC (1%)+NP40 0.5%).
 
-## Purification of KCC2 and in vivo co-immunoprecipitation
+### Purification of KCC2 and in vivo co-immunoprecipitation
 
 Mice (~P5, P50) were sacrificed, and brains were removed and homogenized on ice in PBS using a glass-Teflon homogenizer, followed by brief low-speed centrifugation. Soft-pellets were re-suspended in ice-cold lysis buffer [Tris·HCl, 50 mM, pH 7.4; EDTA, 1 mM; protease and phosphatase inhibitor mixture (Roche)], homogenized, and centrifuged for 30 min at 25,000 × g. Membrane pellets were re-suspended in solubilization buffer (4Xw/v) [Tris·HCl, 50 mM, pH 7.4; NaCl, 150 mM; EDTA, 0.05 mM; selected detergent(s), and protease and phosphatase inhibitor mixture(Roche)], solubilized for 3 hr on a rotating platform at 4°C, and centrifuged for 1 hr at 25,000 × g. For KCC2 and control co-immunoprecipitations, 20–100 μl GammaBind IgG beads were incubated on a rotating platform with the following antibodies (5–100 μg antibody) for 4 hr at 4°C in cold 1X PBS:
 
 Following antibody binding, 20 mM DMP (dimethyl pimelimidate, ThermoFisher 21667) in cold 1X PBS was used to crosslink antibodies with the beads, according to manufacturer’s instructions. The crosslinking reaction was stopped by adding 50 mM Tris·HCl to quench excess DMP, and the antibody-conjugated beads were thoroughly washed with the IP buffer. 1–10 mg of pre-cleared mouse brain membrane fractions were incubated with KCC2 or control antibody-conjugated beads on a rotating platform for 4 hr at 4°C. After co-immunoprecipitation, the appropriate unbound fraction was saved for comparison with an equal amount of protein to calculate the IP-efficiency (Figure 2—figure supplement 1). The beads were washed twice with IP buffer containing detergent, and twice with IP-buffer excluding the detergent. The last wash was performed in 50 mM ammonium bicarbonate. Co-immunoprecipitation experiments for validating KCC2 and PACSIN1 was performed similar to the above procedure, in the absence of DMP-crosslinking. In a subset of validation experiments, anti-PACSIN1 antibody (Synaptic Systems #196002, RRID AB_2161839), was used for reverse co-IP. The break-down of LC/MS replicates are as follows:
 
-## Mass spectrometry
+### Mass spectrometry
 
 Mass spectrometry for the creation of the KCC2 interactome (Figures 2 and 3) was performed at the SPARC Biocentre at SickKids Research Institute (Toronto, Ontario). Mass spectrometry for the determination of optimal detergents for native KCC2 extraction (Figure 1) was performed in the lab of Dr. Tony Pawson at the Lunenfeld-Tanenbaum Research Institute (LTRI), Mount Sinai Hospital (Toronto, ON) and in the CBTC (University of Toronto). Details on the individual experiments performed in each facility is located in Figure 2—source data 1.
 
 For all MS experiments, proteins were eluted from beads by treatment with double the bead volume of 0.5 M ammonium hydroxide (pH 11.0), and bead removal by centrifugation; this procedure was repeated 2x. The combined supernatants were dried under vacuum, reduced with DTT, and the free cysteines were alkylated with iodoacetamide. The protein concentration was measured, and trypsin was added at a ratio of 1:50; digestion occurred overnight at 37°C. The peptides were purified by C18 reverse phase chromatography on a ZipTip (Millipore, Bellerica, MA). Specifics of the MS in the three facilities are below:
 
-## SPARC
+#### SPARC
 
 Orbitrap analyzer (Q-Exactive, ThermoFisher, San Jose, CA) outfitted with a nanospray source and EASY-nLC nano-LC system (ThermoFisher, San Jose, CA). Lyophilized peptide mixtures were dissolved in 0.1% formic acid and loaded onto a 75 μm x 50 cm PepMax RSLC EASY-Spray column filled with 2 μM C18 beads (ThermoFisher San, Jose CA) at a pressure of 800 Bar. Peptides were eluted over 60 min at a rate of 250 nl/min using a 0% to 35% acetonitrile gradient in 0.1% formic acid. Peptides were introduced by nanoelectrospray into the Q-Exactive mass spectrometer (Thermo-Fisher). The instrument method consisted of one MS full scan (400–1500 m/z) in the Orbitrap mass analyzer with an automatic gain control target of 1e6, maximum ion injection time of 120 ms and a resolution of 70,000 followed by 10 data dependent MS/MS scans with a resolution of 17,500, an AGC target of 1e6, maximum ion time of 120 ms, and one microscan. The intensity threshold to trigger a MS/MS scan was set to 1.7e4. Fragmentation occurred in the HCD trap with normalized collision energy set to 27. The dynamic exclusion was applied using a setting of 10 s.
 
-## CBTC
+#### CBTC
 
 The peptides were analyzed on a linear ion trap-Orbitrap hybrid analyzer (LTQ-Orbitrap, ThermoFisher, San Jose, CA) outfitted with a nanospray source and EASY-nLC split-free nano-LC system (ThermoFisher, San Jose, CA). Lyophilized peptide mixtures were dissolved in 0.1% formic acid and loaded onto a 75 μm x 50 cm PepMax RSLC EASY-Spray column filled with 2 μM C18 beads (ThermoFisher San, Jose CA) at a pressure of 800 BAR. Peptides were eluted over 60 min at a rate of 250 nl/min using a 0% to 35% acetonitrile gradient in 0.1% formic acid. Peptides were introduced by nano electrospray into an LTQ-Orbitrap hybrid mass spectrometer (Thermo-Fisher). The instrument method consisted of one MS full scan (400–1500 m/z) in the Orbitrap mass analyzer, an automatic gain control target of 500,000 with a maximum ion injection of 200 ms, one microscan, and a resolution of 120,000. Ten data-dependent MS/MS scans were performed in the linear ion trap using the ten most intense ions at 35% normalized collision energy. The MS and MS/MS scans were obtained in parallel fashion. In MS/MS mode, automatic gain control targets were 10,000 with a maximum ion injection time of 100 ms. A minimum ion intensity of 1000 was required to trigger an MS/MS spectrum. The dynamic exclusion was applied using a maximum exclusion list of 500 with one repeat count with a repeat duration of 15 s and exclusion duration of 45 s.
 
-## LTRI
+#### LTRI
 
 Nano-LCMS using a home-packed 0.75 μm x 10cm C18 emitter tip (Reprosil-Pur 120 C18-AQ, 3 μm). A Nano LC-Ultra HPLC system (Eksigent) was coupled to an LTQ Orbitrap Elite (ThermoFisher) and samples were analyzed in data-dependent acquisition mode. A 60000 resolution MS scan was followed by 10 CID MS/MS ion trap scans on multiply charged precursor ions with a dynamic exclusion of 20 s. The LC gradient was delivered at 200 nl/minute and consisted of a ramp of 2–35% acetonitrile (0.1% formic acid) over 90 min, 35–80% acetonitrile (0.1% formic acid) over 5 min, 80% acetonitrile (0.1% formic acid) for 5 min, and then 2% acetonitrile for 20 min.
 
-## Analysis of mass spectra and protein identification
+### Analysis of mass spectra and protein identification
 
 All MS/MS samples were analyzed using Sequest (Thermo Fisher Scientific, San Jose, CA, USA; version 1.4.0.288) and X! Tandem (The GPM, thegpm.org; version CYCLONE (2010.12.01.1)). Sequest was set up to search Uniprot-mus +musculus_reviewed_Oct172015.fasta (unknown version, 25231 entries) assuming the digestion enzyme trypsin. X! Tandem was set up to search the Uniprot-mus +musculus_reviewed_Oct172015 database (25248 entries) also assuming trypsin. Sequest and X! Tandem were searched with a fragment ion mass tolerance of 0.020 Da and a parent ion tolerance of 10.0 PPM. Carbamidomethyl of cysteine was specified in Sequest and X! Tandem as a fixed modification. Deamidated of asparagine and glutamine and oxidation of methionine were specified in Sequest as variable modifications. Glu->pyro Glu of the n-terminus, ammonia-loss of the n-terminus, gln->pyro Glu of the n-terminus, deamidated of asparagine and glutamine and oxidation of methionine were specified in X! Tandem as variable modifications.
 
@@ -158,35 +1901,35 @@ Peptides and proteins were inferred from the spectrum identification results usi
 
 The mass spectrometry data along with the identification results have been deposited to the ProteomeXchange Consortium (Vizcaíno et al., 2014) via the PRIDE partner repository (Martens et al., 2005) at https://www.ebi.ac.uk/pride/archive/ with the dataset identifier PXD006046.
 
-## Dataset filtering
+### Dataset filtering
 
 Protein candidates from replicate LC/MS screens were subject to the following criteria to build the KCC2 interactome. First pass filter grouping: at least two unique peptides and fold change of total spectra above 1.5. Second pass filter grouping: for proteins with only one unique peptide, consider whether (a) the protein isoform is an already validated KCC2 interactor in literature; (b) the protein isoform already appears in the first pass filter; (c) the protein isoform appears as a single-peptide interactor across experiments (using the same epitope KCC2 IPs/different epitope KCC2 IPs/different developmental time KCC2 IPs). If a particular protein isoform matches any of the above criteria, it gets shifted to the first pass filter grouping. Finally, the proteins that appear in the KCC2 interactome that are previously identified spurious interactors as identified in the CRAPome database (Mellacheruvu et al., 2013) were further eliminated. For the existing proteins, a MaxP-SAINT score (Choi et al., 2012) was assigned and proteins were grouped as Platinum, Gold, Silver or Bronze interactors prior to subsequent PPI (protein-protein interaction) network analysis. See Figure 3—figure supplement 3 for a detailed description of the path towards constructing the KCC2 interactome.
 
-## Integrated PPI network analysis and data representation
+### Integrated PPI network analysis and data representation
 
 Protein interactions were integrated with curated, high-throughput and predicted interactions from I2D ver. 2.3 database (Brown and Jurisica, 2007), FpClass high-confidence predictions (Kotlyar et al., 2015) and from the BioGRID database (Stark et al., 2006). Networks were visualized using Cytoscape ver. 3.3.0 (Shannon et al., 2003; Cline et al., 2007). Components of the KCC2 interactome were mapped to the excitatory synapse-enriched PSD, Nlgn1, Lrrtm1 and Lrrtm2 proteomes (Collins et al., 2006; Loh et al., 2016), or the inhibitory synapse-enriched GABAAR, GABABR, Nlgn2, Slitrk3 and GlyR proteomes (Heller et al., 2012; Del Pino et al., 2014; Kang et al., 2014; Loh et al., 2016; Nakamura et al., 2016; Schwenk et al., 2016; Uezu et al., 2016). In the PPI networks, the thickness of the black radial lines in the foreground denotes the number of spectral enrichment (KCC2/IgG) in the log scale ranging from 2.13 for the highly enriched interactor to 0.08 for the least enriched interactor. For representing the previously established KCC2 physical/functional interactors not identified in this study, an arbitrary value of 0.05 was used for indicating the thickness of black radial lines (See Figure 4—source data 1). Grey radial lines in the PPI network background denotes the previously identified physical/co-expression networks across all interactome members as identified from BioGRID and FpClass databases. Venn diagrams were made using Venny, online tool (http://bioinfogp.cnb.csic.es/tools/venny/); heat maps were made using Morpheus online tool provided by the Broad Institute (https://software.broadinstitute.org/morpheus/).
 
-## In vitro co-immunoprecipitation
+### In vitro co-immunoprecipitation
 
 HEK-293 and COS7 cells obtained from the ATCC were authenticated using Short Tandem Repeat (STR) profiling and checked for mycoplasma contamination. For co-immunoprecipitation experiments, cells were transfected with KCC2b-MYC, eGFP control, eGFP-PACSIN1/2/3, or eGFP-PACSIN1-deletion constructs (0.25 μg/construct) using Lipofectamine (Invitrogen) at 70% confluency. Thirty-six hours after transfection, cells were washed with ice-cold 1 × PBS and lysed in modified RIPA buffer [50 mM Tris·HCl, pH 7.4, 150 mM NaCl, 1 mM EDTA, 1% Nonidet P-40, 0.1% SDS, 0.5% DOC, and protease inhibitors (Roche)]. Lysed cells were incubated on ice for 30 min and were centrifuged at 15,000 × g for 15 min at 4°C. Cell lysates or solubilized membrane fractions (∼0.2–0.5 mg protein) were incubated with N-terminal KCC2b or anti-myc (CST #9B11, RRID AB_331783) antibodies on a rotating platform (4 hr, 4°C). Lysates were subsequently incubated with 20 μl GammaBind IgG beads (GE Healthcare) on a rotating platform (1 hr at 4°C). After incubation, beads were washed twice with modified RIPA buffer, and twice with modified RIPA buffer minus detergents. Bound proteins were eluted with SDS sample buffer and subjected to SDS/PAGE along with 10% of input fraction and immunoblotted. Figure 5e is representative of four independent biological replicates; Figure 5f is representative of three independent biological replicates.
 
-## BN-PAGE analysis and antibody-shift assay
+### BN-PAGE analysis and antibody-shift assay
 
 Native-membrane fractions were prepared similarly as described (Swamy et al., 2006; Schwenk et al., 2012; Mahadevan et al., 2014; 2015). Antibody-shift assay and 2D BN-PAGE analysis of native-KCC2 complexes were performed as described previously (Mahadevan et al., 2014; 2015). Briefly, 50 μg - 100 μg of C12E9 solubilized complexes were pre-incubated for 1 hr with 10 μg of anti-N-terminal KCC2b antibody or chicken IgY whole molecule, prior to the addition of Coomassie blue G250. 1D-BN-PAGE was performed as described above using home-made 4% and 5% bis-tris gels as described (Swamy et al., 2006). After the completion of the gel run, excised BN- PAGE lanes were equilibrated in Laemmli buffer containing SDS and DTT for 15 min at room temperature to denature the native proteins. After a brief rinse in SDS- PAGE running buffer, the excised BN-PAGE lanes were placed on a 6% or 8% SDS- PAGE gel for separation in the second dimension. After standard electro-blotting of SDS- PAGE-resolved samples on nitrocellulose membrane, the blot was cut into two molecular weight ranges; the top blots were subjected to western blotting analysis with Rb anti- KCC2, and the bottom blots with Rb anti-PACSIN1. Antibody-shift experiments (Figure 5d) using hippocampal membranes are representative from two independent biological replicates.
 
-## PACSIN overexpression and shRNA constructs
+### PACSIN overexpression and shRNA constructs
 
 All PACSIN constructs used for overexpression and shRNA constructs have been previously validated for specificity (Anggono et al., 2013; Widagdo et al., 2016). The PACSIN1 shRNA-targeting sequence (sh#1, 5′-GCGCCAGCTCATCGAGAAA-3′) or control shRNA sequence was inserted into the pSuper vector system (Oligoengine) as described previously (Anggono et al., 2013). The efficiency and specificity of the PACSIN1 and control shRNA constructs were tested in HEK 293 T cells overexpressing GFP-PACSIN1, and they were subsequently cloned into pAAV-U6 for lentiviral production (serotype AAV2/9).
 
-## Cultured hippocampal neurons and electrophysiology
+### Cultured hippocampal neurons and electrophysiology
 
 Low-density cultures of dissociated mouse hippocampal neurons were prepared as previously described (Acton et al., 2012; Mahadevan et al., 2014). Electrophysiological recordings were performed using pipettes made from glass capillaries (World Precision Instruments, Sarasota, FL), as previously described (Acton et al., 2012; Mahadevan et al., 2014). Neuronal transduction with viral vectors was performed at DIV 5–7 and the recordings were performed at DIV 11–14. For Cl− loading experiments in whole-cell configuration, pipettes (5–7 MΩ) were filled with an internal solution containing the following (in mM): 110 K+-gluconate, 30 KCl, 10 HEPES, 0.2 EGTA, 4 ATP, 0.3 GTP, and 13 phosphocreatine (pH 7.4 with KOH, 300 mOsm). For gramicidin-perforated recordings, pipettes were filled with an internal solution containing the following (in mM): 130 K+-gluconate, 10 KCl, 10 HEPES, 0.2 EGTA, 4 ATP, 0.3 GTP, 13 phosphocreatine, and 50 μg/ml gramicidin (pH 7.4 with KOH, 300 mOsm). Cultured neurons were continuously perfused (at ~1 mL/min) with standard extracellular solution containing: 150 NaCl, 3 KCl, 3 CaCl2:2H2O, 2 MgCl2:6H2O, 10 HEPES, and 5 glucose (pH 7.4 with NaOH, 300 mOsm). Cultured neurons were selected for electrophysiology based on the following criteria: (1) a healthy oval or pyramidal-shaped cell body; (2) multiple clearly identifiable processes; (3) a cell body and proximal dendrites that were relatively isolated; and (4) reporter fluorescence (if applicable). Recordings started when the series resistance dropped below 50 MΩ. Recordings were amplified with an Axon Instruments Multiclamp 700B and digitized using an Axon Instruments Digidata 1322a (Molecular Devices; Sunnyvale, CA). To determine the reversal potential for GABA (EGABA), neurons were held at −60 mV under whole-cell voltage clamp and the membrane potential was stepped in +10 mV increments from −80 to −40 mV (this holding potential was set through current injection via the whole-cell patch pipette). During each membrane potential step, a 20 μM GABA puff was applied onto the soma using a picospritzer (Parker, Hollis, NH, USA). The IPSC amplitude represents the maximum current measured during the recordings performed for the EGABA measurement. Using Clampfit (version 9.2; Molecular Devices; Sunnyvale, CA, USA), two cursors were placed on the recording trace (one just before the current, and the other at the peak of the current), and the peak amplitude was exported to Prism (version 5.01) and graphed against the holding potential. A linear regression of the IPSP amplitude versus membrane/holding potential was achieved using Prism and the intercept of this line with the abscissa was taken as EGABA, and the slope of this line was taken as the synaptic conductance. For resting membrane potential, a whole-cell patch clamp was achieved, the amplifier was set to I = 0, and the corresponding potential was measured under current clamp mode. Electrophysiological values have not been corrected for the liquid junction potential of ~7 mV.
 
-## Fixed immunostaining and confocal microscopy
+### Fixed immunostaining and confocal microscopy
 
 DIV 12–14 cultured hippocampal neurons with were first rinsed with 1X PBS, and fixed in 4% paraformaldehyde for 10 min on ice followed by washing thrice with 1X PBS. Neurons were then permeabilized with 1X PBS containing 10% goat serum and 0.5% Triton X-100 for 30 min, followed by a 45 min incubation with rabbit anti-KCC2 (Millipore 07–432) antibodies at 37˚C to detect endogenous proteins. Finally, neurons were washed thrice with 1X PBS and incubated with Alexa-fluor 555-conjugated goat anti-rabbit antibody for 45 min at 37˚C. Neurons were imaged on a Leica TCS SP8 confocal system with a Leica DMI 6000 inverted microscope (Quorum Technologies). Cultured neurons were selected for immunostaining based on the following criteria: (1) with a healthy oval or pyramidal-shaped cell body; (2) multiple clearly identifiable processes; (3) a cell body and proximal dendrites that were relatively isolated; (4) reporter fluorescence (if applicable). Images were acquired using 3D Image Analysis software (Perkin Elmer). Images were obtained using a 63 × 1.4 NA oil immersion objective. Imaging experiments were performed and analyzed in a blinded manner. Using ImageJ, four bisecting lines were drawn across the center of the cell (Figure 6—figure supplement 1). The peak values of each line (2 values/line) were used to calculate peak fluorescent intensity of KCC2 at the membrane. Fluorescence intensity is plotted in arbitrary units (a.u.).
 
-## Statistics
+### Statistics
 
 For electrophysiology and immunostaining data (Figure 6), ‘n’ values report the number of neurons, and were obtained from a minimum of three independent sets of cultured neurons (produced from different litters). Example recordings in Figure 6a are representative of n = 9 (shRNA control) and n = 11 (PACSIN1 shRNA). Example recordings in Figure 6e are representative of n = 32 (shRNA control) and n = 32 (PACSIN1 shRNA). Example recordings in Figure 6f are representative of n = 23 (eGFP) and n = 16 (PACSIN1-eGFP). Data in Figure 6b,c,e and f are mean ± SEM. Statistical significance was determined using either SigmaStat or GraphPad Prism (version 5.01) software. Statistical significance in Figure 6b,c,d,e and f was determined using Student’s t-tests (two-tailed); all data sets passed the normal distribution assumptions test. Statistical significance is noted as follows: *p<0.05, **p<0.01, ***p<0.001. Exact p and t values are reported in the Results text.
 

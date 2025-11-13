@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02v51f717 Laboratory of Neurochemical Biology, PKU-IDG/McGovern Institute for Brain Research, Peking-Tsinghua Center for Life Sciences, School of Life Sciences, Department of Chemical Biology, College of Chemistry and Chemical Engineering, Department of Molecular and Cellular Pharmacology, School of Pharmaceutical Sciences, Peking University Beijing China
-2. https://ror.org/029819q61 Chinese Institute for Brain Research (CIBR) Beijing China
-3. https://ror.org/013xs5b60 Chinese Institutes of Medical Research, Capital Medical University Beijing China
+1. Laboratory of Neurochemical Biology, PKU-IDG/McGovern Institute for Brain Research, Peking-Tsinghua Center for Life Sciences, School of Life Sciences, Department of Chemical Biology, College of Chemistry and Chemical Engineering, Department of Molecular and Cellular Pharmacology, School of Pharmaceutical Sciences, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+2. Chinese Institute for Brain Research (CIBR) Beijing China ([ROR:029819q61](https://ror.org/029819q61))
+3. Chinese Institutes of Medical Research, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))
 4. Changping Laboratory, Yard 28, Science Park Road, Changping District Beijing China
-5. https://ror.org/00sdcjz77 Institute of Molecular Physiology, Shenzhen Bay Laboratory Shenzhen China
-6. https://ror.org/042pgcv68 Research Unit of Medical Neurobiology, Chinese Academy of Medical Sciences Beijing China
+5. Institute of Molecular Physiology, Shenzhen Bay Laboratory Shenzhen China ([ROR:00sdcjz77](https://ror.org/00sdcjz77))
+6. Research Unit of Medical Neurobiology, Chinese Academy of Medical Sciences Beijing China ([ROR:042pgcv68](https://ror.org/042pgcv68))
 
 † Corresponding author
 
@@ -50,7 +50,7 @@ Here we first biochemically purified SVs from the mouse brain and discovered the
 
 ## Results
 
-## Detection of Cr in SVs from the mouse brain
+### Detection of Cr in SVs from the mouse brain
 
 To search for new neurotransmitters, we tried several approaches. For example, we used Ca2+ imaging to detect neuroactive substances in the cerebrospinal fluid (CSF), but it was difficult to rule out existing neurotransmitters and select responses from potentially new neurotransmitters. We also transfected cDNAs for all human SLCs into dissociated cultures of primary neurons from the mouse brain and found that more than 50 out of all SLCs could be localized in SVs. However, when we used CRISPR-Cas9 to tag some of the candidate SLCs in mice, some of them were found to be expressed outside the CNS, indicating that, while ectopic expression of these candidate SLCs could be localized on SVs, the endogenous counterparts were not localized on SVs.
 
@@ -60,6 +60,18 @@ Immunoblot analysis with 20 markers of subcellular organelles of neurons and 1 m
 
 To detect and quantify small molecules as candidate transmitters present in the purified SVs, capillary electrophoresis-mass spectrometry (CE-MS) was optimized and utilized (Figure 1A, Figure 1—figure supplement 1A; Martineau et al., 2013; Tie et al., 2012). We found that the levels of classical neurotransmitters such as Glu, GABA, ACh, and 5-HT were significantly higher in SVs pulled down by the anti-Syp antibody than those in lysates pulled down by the control IgG (Figure 1A–E). Consistent with previous reports (Burger et al., 1991; Martineau et al., 2013), significant enrichment of neurotransmitters was observed only from SVs immunoisolated at near 0°C, but not at the room temperature (RT) (Figure 1A–E). By contrast, another small molecule, alanine (Figure 1G), was not elevated in SVs compared to the control.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative raw traces from capillary electrophoresis-mass spectrometry (CE-MS) of indicated molecules from samples immunoisolated by the control immunoglobulin G (IgG) (blue) at 0–2°C, the monoclonal anti-synaptophysin (anti-Syp) antibody at 0–2°C (red), and the anti-Syp antibody at room temperature (RT, green). Q1/Q3 for identifying targets are indicated. (B–G) Quantification of the amounts of indicated molecules. The amount of a molecule was divided by the amount of the anti-Syp antibody bound to magnetic beads. Note glutamate (Glu) (B), gamma-aminobutyric acid (GABA)(C), acetylcholine (ACh) (D), 5-hydroxytryptamine (5-HT) (E), Cr (F), but not alanine (G) was higher in SVs pulled down by the anti-Syp antibody at 0–2°C than those pulled down by the IgG control or those pulled down at the RT. n = 10 (B–E, G) or 14 (F) samples per group, *** p<0.001, ns, not significant. One-way ANOVA with Tukey’s correction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A diagram for SV purification and SV content analysis. Brain homogenates were centrifugated at 35,000 × g for 25 min and supernatants containing SVs were collected as the starting material. Following immunopurification by the anti-Syn antibody, SVs were broken by water to release their contents. Metabolites were analyzed by capillary electrophoresis-mass spectrometry (CE-MS). (B) Electronic microscopy (EM) of SVs captured by the anti-Syn antibody. Arrows point to SVs, the size each being 40.4 ± 0.26 nm, with size distribution shown on the right. (C) Analysis of SV purity by immunoblotting. Markers for SVs (Syp, syt, H+-ATPase, syb2, SV2A, VGLU1, VGLU2 and VGAT) were effectively pulled down by beads coated with the anti-Syn antibody but not by those coated with immunoglobulin G (IgG). Non-SV markers present in supernatants, including those for the lysosome (LAMP1, cathepasinB, LC3B), the Golgi apparatus (GM130, Golgi 97), the early endosome (EEA1), the cytoplasma (GAPDH), synaptic membrane (SNAP23) and postsynaptic components (PSD95, GluN1), the mitochondria (VDAC), the cytoplasmic membrane (CACNA1A), axonal membrane (GluT4), and glia membrane (MBP), could not be pulled down by either the anti-Syp antibody or IgG.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Creatine (Cr), (B) glutamate (Glu) ,(C) gamma-aminobutyric acid (GABA), (D) acetylcholine (ACh), (E) 5-hydroxytryptamine (5-HT), and (F) alanine. *p<0.5, **p<0.05, ***p<0.01, one-way ANOVA with Tukey’s correction (n = 4 per group). Data were normalized to average amount of molecules pulled down by the anti-Syp antibody. NIG, nigericin.
+
 The amount of Glu was 171.1 ± 5.4 pmol/μg anti-Syp antibody (n = 10, Figure 1B), approximately 10 times that of GABA (n = 10,17.81 ± 1.47 pmol/μg anti-Syp antibody, Figure 1C). The amount of ACh was 1.29 ± 0.10 pmol/μg anti-Syp antibody (n = 10, Figure 1D), approximately 0.072 that of GABA. The amount of 5-HT was 0.096 ± 0.017 pmol/μg anti-Syp antibody (n = 10, Figure 1E). Thus, our purification and detection methods were highly reliable and sensitive enough to detect established neurotransmitters.
 
 Under the same conditions, we also detected Cr in SVs (n = 14, Figure 1A, F). Amount of Cr in the SVs was found to be 3.43 ± 0.40 pmol/μg anti-Syp antibody (Figure 1F), which was approximately 2% of Glu, 19% of GABA, 266% of ACh, and 3573% of 5-HT. It is unlikely that these could be attributable to different levels for different neurotransmitters in each SV, but more likely attributable to the relative abundance of SVs containing different neurotransmitters. Also, 85–90% neurons in the mouse brain were glutamatergic while 10–15% were GABAergic (Meyer et al., 2011; Olbrich and Braak, 1985; Tremblay et al., 2016), which can explain our detection of Glu as approximately 10 times that of GABA (Figure 1B, C). Similarly, cholinergic neurons (5.67 × 105) (Li et al., 2018) represented 0.81% of total number of neurons (approximately 70 million) in the mouse brain (Herculano-Houzel et al., 2006), serotonergic neurons (approximately 26,000) for 0.037% of total neurons (Herculano-Houzel et al., 2006; Ishimura et al., 1988). Assuming that the content of each neurotransmitter in a single SV is similar, extrapolation from the above data would suggest that approximately 1.3–2.15% of neurons in the mouse brain are creatinergic.
@@ -68,15 +80,35 @@ To distinguish whether small molecules co-purified with SVs were in the SVs (Bur
 
 Classical neurotransmitters are stored in SVs with an acidic environment inside (pH of 5.6–6.4) (Egashira et al., 2016; Mani and Ryan, 2009; Egashira et al., 2015). To further verify the storage of Cr in SVs and examine the role of H+ electrochemical gradient, we applied pharmacological inhibitors during purification (Chantranupong et al., 2020; Qian et al., 2021). The proton ionophore FCCP (carbonyl cyanide-4-(tri-fluoromethoxy) phenylhydrazone) was used to dissipate H+ electrochemical gradient (Qian et al., 2021; Schenck et al., 2009). FCCP significantly reduced the amount of Cr as well as classical neurotransmitters in SVs (Figure 1—figure supplement 2A–E). The extent of FCCP-induced reduction was correlated with the value of pKa or PI (isoelectric point) for different molecule: 5-HT (with pKa predicted to 10 and 9.31, Figure 1—figure supplement 2E) > Cr (PI of ~7.94, Figure 1—figure supplement 2A) > GABA (PI of 7.33, Figure 1—figure supplement 2C) > Glu (PI of 3.22, Figure 1—figure supplement 2B). Nigericin, a K+/H+ exchanger which dissipates ΔpH (Qian et al., 2021; Schenck et al., 2009), also reduced the amount of Cr and classical neurotransmitters in SVs (Figure 1—figure supplement 2A–E). Furthermore, in the presence of FCCP or nigericin, SV Cr was reduced to a level comparable to that pulled down by control IgG (Figure 1—figure supplement 2A), demonstrating the storage of Cr in SVs was dependent on H+ gradient. As a control, the non-neurotransmitter molecule alanine in SVs was not changed by the inhibitors (Figure 1—figure supplement 2F).
 
-## Reduction of SV Cr in mouse mutants lacking Slc6a8
+### Reduction of SV Cr in mouse mutants lacking Slc6a8
 
 SLC6A8, located on the X chromosome, encodes a transporter for Cr and its loss-of-function (LOF) mutations caused behavioral deficits in humans (Salomons et al., 2001; Margherita Mancardi et al., 2007) and mice (Skelton et al., 2011; Kurosawa et al., 2012; Baroncelli et al., 2016; Udobi et al., 2018; Molinaro et al., 2019; Abdulla et al., 2020). To investigate whether SLC6A8 affects Cr in SVs, we generated Slc6a8 knockout (KO) mice. Exon 1 of the Slc6a8 gene was partially replaced with CreERT2-WPRE-polyA by CRISPR/Cas9 (Figure 2A). Examination by reverse polymerase chain reaction (RT-PCR) (Figure 2—figure supplement 1A, B) and quantitative real-time reverse PCR (qPCR, Figure 2—figure supplement 1C, D) showed that Slc6a8 mRNA was not detected in either male or female mutants, and significantly reduced in female heterozygous (Slc6a8+/-). Consistent with previous reports, the body weights of Slc6a8 KO mice were reduced (Figure 2—figure supplement 2B, D; Skelton et al., 2011; Duran-Trio et al., 2021; Stockebrand et al., 2018). Brain weight was not significantly different between Slc6a8 KO mice and WT mice (Figure 2—figure supplement 2A, C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig2-v1.jpg)
+
+**Figure 2.:** (A) A schematic illustration of the strategy for generating Slc6a8 knockouts using CRISPR/Cas9. An iCreERT2-WPRE-pA cassette (~3.5 kb) was inserted immediately downstream of ATG in the Slc6a8 gene, substituting bp 4 to bp 51 in exon 1 (E1). (B) Representative raw traces of Cr immunoisolated by control immunoglobulin G (IgG) from WT mice (blue), the anti-synaptophysin (anti-Syp) antibody from WT mice (red), IgG from Slc6a8 KO mice (blue), and the anti-Syp antibody from Slc6a8 KO mice (red). (C–H) Quantification of indicated molecules. Note the selective reduction of Cr in SVs from Slc6a8 KO mice. n = 14 samples per group. ***p<0.001, ns, not significant. One-way ANOVA with Tukey’s correction.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Reverse polymerase chain reaction (RT-PCR) analysis of full-length coding sequences showing absence of Slc6a8 mRNA expression in brains from hemizygous (Slc6a8-/Y) male knockout mice. GAPDH serves as the control. (B) Detection of Slc6a8 mRNA expression in female mice, showing reduced expression in heterozygous (Slc6a8+/-) and loss of Slc6a8 expression in homozygous (Slc6a8-/-) knockout mice. (C, D) Quantitative RT-PCR analysis. The average values of Slc6a8 mRNA/Gapdh in WT mice (Slc6a8+/Y males in C and Slc6a8+/+ females in D) were set to 1. **p<0.01 in (C), Student’s t-test. *** in (D), p<0.001, one-way ANOVA with Tukey’s correction (n = 4 mice per group, with three repeats for each mice).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Brain weights of male mice. (B) Body weights of male mice. (C) Brain weight of female mice. (D) Body weights of female mice. **p<0.01 in (B), Student’s t-test. *p<0.05, **p<0.01, *** in (E), p<0.001, one-way ANOVA with Tukey’s correction (n = 5 mice per group, 7 weeks old).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A–E) Molecules pull-down from WT mice by immunoglobulin G (WT-IgG), anti-synaptophysin antibody (WT-Syp), and those from knockout mice (Slc6a8 KO-IgG, Slc6a8 KO-Syp). (A) Glutamate (Glu). (B) Gamma-aminobutyric acid (GABA). (C) Acetylcholine (ACh). (D) 5-Hydroxytryptamine (5-HT). (E) Alanine. Vertical: signal amplitude; abscissa: retention time.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Immunoblotting analysis of SV markers synaptophysin (Syp), syt, H-ATPase, and postsynaptic components (PSD95). (B–D) Peak areas of capillary electrophoresis-mass spectrometry (CE-MS) signals for neurotransmitters: glutamate (Glu), gamma-aminobutyric acid (GABA), and acetylcholine (ACh). These neurotransmitters are enriched in SVs and not affected by Slc6a8 genotypes. (E) Alanine was not enriched in SVs of either WT or Slc6a8 KO mice. (F) Representative raw example traces of creatine (Cr). (G) Cr in SVs was lower in Slc6a8 KO mice than that in WT mice. **p<0.01, ***p<0.001, one-way ANOVA with Tukey’s correction (n = 8 samples per group).
 
 When we examined the contents of SVs isolated by the anti-Syp antibody vs the control IgG, significant reduction was only observed for Cr, but not classical neurotransmitters (Figure 2B–H, Figure 2—figure supplement 3A–E). While Cr pulled down by IgG was not significantly different between Slc6a8-/Y and Slc6a8+/Y mice, SV Cr purified by the anti-Syp antibody from Slc6a8-/Y was reduced to approximately 1/3 that of the WT (Slc6a8+/Y) littermates (n = 14, Figure 2B and C). Compared to the IgG control, Cr in SVs was enriched in WT mice, but not in Slc6a8-/Y mice (Figure 2B and C). In both Slc6a8-/Y and Slc6a8+/Y mice, classical neurotransmitters in SVs were all enriched as compared to IgG controls (Figure 2D–G, Figure 2—figure supplement 3A–D). The amounts of Glu (Figure 2D, Figure 2—figure supplement 3A), GABA (Figure 2E, Figure 2—figure supplement 3B), ACh (Figure 2F, Figure 2—figure supplement 3C), and 5-HT (Figure 2G, Figure 2—figure supplement 3D) in SVs were not different between Slc6a8-/Y and Slc6a8+/Y mice. Molecules not enriched in SVs from WT mice, such as alanine, were also unaffected by Slc6a8 KO (Figure 2H, Figure 2—figure supplement 3E).
 
 It is unlikely that the specific reduction of Cr in SVs from Slc6a8 KO mice was due to technical artifacts. First, the possibility of less SVs obtained from Slc6a8 KO mice was precluded by immunoblot analysis, as assessed by SV markers Syp, Syt, and H+-ATPase (Figure 2—figure supplement 4A). Second, data collected by high-resolution MS (Q Exactive HF-X, Thermo Scientific, Waltham, MA) also revealed selective decrease of SV Cr (m/z = 132.0576) from Slc6a8 KO mice (n = 8, Figure 2—figure supplement 4B–G), as quantified by the peak area. Peak areas for Glu (n = 8, Figure 2—figure supplement 4B, m/z = 148.0604), GABA (n = 8, Figure 2—figure supplement 4C, m/z = 104.0712), ACh (n = 8, Figure 2—figure supplement 4D, m/z = 146.1178), and alanine (n = 8, Ala, Figure 2—figure supplement 4E, m/z = 90.055) were not significantly different between SVs immmunoisolated with the anti-Syp antibody and control IgG from WT and Slc6a8 KO mice. However, peak areas (Figure 2—figure supplement 4G) and amplitude of Cr (n = 8, Figure 2—figure supplement 4F) signal were significantly increased in SVs from WT mice (anti-Syp antibody vs IgG), but not that from Slc6a8 KO mice.
 
-## Reduction of SV Cr in mouse mutants lacking Agat
+### Reduction of SV Cr in mouse mutants lacking Agat
 
 AGAT is the enzyme catalyzing the first step in Cr synthesis (Braissant et al., 2001; Guthmiller et al., 1994) and its absence also led to Cr deficiency in the human brain and mental retardation (Bianchi et al., 2000; Item et al., 2001).
 
@@ -86,19 +118,35 @@ Immunoblot analysis showed SVs purified from the brains were not significantly d
 
 We analyzed small molecules present in SVs from Agat+/+, Agat+/-, and Agat-/- mice. Cr was significantly enriched in SVs from all three genotypes compared to the IgG control (+/-). However, the level of Cr from Agat-/- mice was significantly lower than those from Agat+/+ and Agat+/- (n = 10, Figure 3A and B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative raw traces of Cr, pulled down by immunoglobulin G (IgG) or anti-synaptophysin (anti-Syp) from Agat+/+, Agat +/-, and Agat-/- mice. (B–G) Quantification of indicated molecules. Cr was significantly decreased in Agat-/- mice compared to Cr in Agat+/+ or Agat +/- mice (B). Gamma-aminobutyric acid (GABA) was significantly decreased in SVs from Agat-/- mice compared to Agat+/+ mice (D) but the difference was smaller than that of Cr. Glutamate (Glu) (C), acetylcholine (ACh) (E), 5-hydroxytryptamine (5-HT) (F), and alanine was not different among Agat+/+, Agat +/-, and Agat-/-mice. n = 10 samples per group. ***p<0.001, ns, not significant. One-way ANOVA with Tukey’s correction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Reverse polymerase chain reaction (RT-PCR) analysis of the entire coding region showing the absence of Agat mRNA in Agat-/- mice and decreased expression in Agat+/-. (B) Quantitative RT-PCR analysis. ***p<0.001, one-way ANOVA with Tukey’s correction (n = 4 mice per group, with three repeats for each mice).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Brain weights of male mice. (B) Body weights of male mice. *p<0.05, ***p<0.001, one-way ANOVA with Tukey’s correction, ns, not significant (n = 5 mice per group, 7 wk).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative western analysis of SV markers H+-ATPase, Syt, and synaptophysin (Syp) from input, samples pulled down by immunoglobulin G (IgG) (IgG-P) and anti-Syp antibody (Syp-P). (B–D) Quantification of protein band densities for Syp (B), Syt (C), and H+-ATPase (D) (+/- = 20 per group).
+
 Glu (Figure 3C), ACh (Figure 3E), and 5-HT (Figure 3F) were all enriched in SVs (compared to IgG controls) and not significantly different among Agat+/+, Agat+/-, and Agat-/- mice. GABA in SVs from Agat-/- mice was also decreased from Agat+/+ mice by 30%, to an extent less than that of Cr (78.4%). Alanine was not different among three genotypes of mice (n = 6, Figure 3G). Thus, Cr and GABA, but not other neurotransmitters, in SVs were reduced in Agat KO mice.
 
-## Pattern of SLC6A8 expression indicated by knockin mice
+### Pattern of SLC6A8 expression indicated by knockin mice
 
 We generated Slc6a8HA knockin mice by CRISPR/Cas9. Three repeats of the hemagglutinin (HA) tag (Kolodziej and Young, 1991), the T2A sequence (Ryan et al., 1991; Ahier and Jarriault, 2014; Daniels et al., 2014), and CreERT2 (Sauer and Henderson, 1989; Gu et al., 1993; Feil et al., 1997; Indra et al., 1999) were inserted in-frame at the C terminus of the SLC6A8 protein (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig4-v1.jpg)
 
-**Figure 4.:** (A) A diagram illustrating the generation of Slc6a8 KI mice. 3*HA, T2A, and CreERT2 were inserted in-frame, before the stop codon, to the C terminus of SLC6A8 protein. (HAB–K) Low-magnification photomicrographs of coronal sections immunohistochemically labeled with the anti-HA antibody in Slc6a8 mice. (HAI, M) immunostaining with the anti-HA antibody in control WT mice. Pir, piriform cortex; M, motor cortex; LS, lateral septum; Hp, hippocampus; Hb, habenular nucleus; Vp, ventral posterior nucleus of thalamus; Auauditory cortex; Amyg, amygdala; Ip, interpeduncular nucleus; Pn, pontine nucleus; Cb, cerebellum; Pr, prepositus; SC, superior colliculus; MVe, medial vestibular nucleus. Scale bar: 500 μm.
+**Figure 4.:** (A) A diagram illustrating the generation of Slc6a8HA KI mice. 3*HA, T2A, and CreERT2 were inserted in-frame, before the stop codon, to the C terminus of SLC6A8 protein. (B–K) Low-magnification photomicrographs of coronal sections immunohistochemically labeled with the anti-HA antibody in Slc6a8HA mice. (I, M) immunostaining with the anti-HA antibody in control WT mice. Pir, piriform cortex; M, motor cortex; LS, lateral septum; Hp, hippocampus; Hb, habenular nucleus; Vp, ventral posterior nucleus of thalamus; Auauditory cortex; Amyg, amygdala; Ip, interpeduncular nucleus; Pn, pontine nucleus; Cb, cerebellum; Pr, prepositus; SC, superior colliculus; MVe, medial vestibular nucleus. Scale bar: 500 μm.
 
 To examine the expression pattern of SLC6A8, we performed immunocytochemistry with an antibody against the HA epitope in Slc6a8HA and WT mice. Slc6a8HA mice showed positive signals in the olfactory bulb (Figure 4B), the piriform cortex (Figure 4C–F), the somatosensory cortex (Figure 4F and G), the ventral posterior thalamus (Figure 4H), the interpeduncular nucleus (Figure 4I), and the pontine nuclei (Figure 4J). In addition, moderate levels of immunoreactivity were observed in the motor cortex (Figure 4D–H), the medial habenular nucleus (Figure 4H), the hippocampus (Figure 4H), and the cerebellum (Figure 4K). These results were consistent with previous reports (Mak et al., 2009; Lowe et al., 2015). WT mice were negative for anti-HA antibody staining (Figure 4L and M).
 
-## Ca2+-dependent release of Cr upon stimulation
+### Ca2+-dependent release of Cr upon stimulation
 
 Classical neurotransmitters are released from the SVs into the synaptic cleft in a Ca2+-dependent manner after stimulation. For example, high extracellular potassium (K+) stimulated Ca2+-dependent release of Glu, GABA, and other neurotransmitters in brain slices (Hamberger et al., 1979b; Hamberger et al., 1979a; McBride et al., 1983; Nadler et al., 1977; Keith et al., 1993).
 
@@ -106,7 +154,7 @@ Thus, 300-μm-thick coronal slices of the mouse brain within 1–2 mm posterior 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig5-v1.jpg)
 
-**Figure 5.:** Slc6a8 knockout mice.(A) Neuronal depolarization induced by 70 mM K+ and time points for collecting the release sample. ‘Control’ samples were collected 1.5 min to 0.5 min before K+ stimulation, ‘70 mM K+’ artificial cerebrospinal fluid (ACSF) samples were collected during 70 mM K+ stimulation, and ‘wash’ samples were collected 10 min after washout with ACSF. Efflux of glutamate (Glu) (B), gamma-aminobutyric acid (GABA) (C), or Cr (D) from WT or Slc6a8 KO male mice (n = 7 samples per group). Note that a small amount of Cr released in Slc6a8 KO mice did not return to the baseline after 10 min of washing. (E–G) Ca2+-dependent release of Glu, GABA, and Cr in WT and Slc6a8 KO mice (n = 5 samples per group). ***p<0.001, ns, not significant. One-way ANOVA with Tukey’s correction. #p<0.05, ##p<0.01, paired t-test.Figure 5—source data 1.Figure 5B–G.
+**Figure 5.:** (A) Neuronal depolarization induced by 70 mM K+ and time points for collecting the release sample. ‘Control’ samples were collected 1.5 min to 0.5 min before K+ stimulation, ‘70 mM K+’ artificial cerebrospinal fluid (ACSF) samples were collected during 70 mM K+ stimulation, and ‘wash’ samples were collected 10 min after washout with ACSF. Efflux of glutamate (Glu) (B), gamma-aminobutyric acid (GABA) (C), or Cr (D) from WT or Slc6a8 KO male mice (n = 7 samples per group). Note that a small amount of Cr released in Slc6a8 KO mice did not return to the baseline after 10 min of washing. (E–G) Ca2+-dependent release of Glu, GABA, and Cr in WT and Slc6a8 KO mice (n = 5 samples per group). ***p<0.001, ns, not significant. One-way ANOVA with Tukey’s correction. #p<0.05, ##p<0.01, paired t-test.
 
 In the presence of Ca2+, depolarization with elevated extracellular K+ led to robust release of Glu and GABA in slices from WT (Slc6a8+/Y) mice (n = 7 per group, Figure 5B and C). After 10 min wash, levels of Glu and GABA returned to the baseline (Figure 5B and C). In the presence of Ca2+, depolarization with elevated K+ led to robust release of Cr. Extracellular Cr returned to the baseline after 10 min wash (Figure 5D). For quantification, the stimulated releases of metabolites were calculated by subtracting the basal levels from the total releases in response to K+ stimulation. In the presence of Ca2+, K+ stimulation induced the efflux of Glu, GABA, and Cr at 0.46, 0.33, and 0.086 nmol/min, respectively (n = 7 per group) (Figure 5B–D). From the detection limits of ACh and 5-HT in our system, we inferred that the efflux rate for ACh was lower than 0.001 nmol/min and that for 5-HT lower than 0.003 nmol/min. The efflux rate for Cr in brain slices is lower than those of Glu and GABA, but higher than those for ACh and 5-HT.
 
@@ -114,7 +162,7 @@ Ca2+ dependence of transmitter release was examined by comparing responses to AC
 
 Cr was also released both in a Ca2+-dependent and a Ca2+-independent manner (Figure 5G). More Cr was released in response to K+ stimulation in the presence of 2.5 mM Ca2+ than that in the absence of Ca2+. These results demonstrate Ca2+-dependent release of Cr upon stimulation.
 
-## Reduced Cr release in Slc6a8 and Agat mutant mice
+### Reduced Cr release in Slc6a8 and Agat mutant mice
 
 We examined whether Slc6a8 KO affected K+-induced release of Cr. While Glu and GABA were released in slices from Slc6a8 KO (Slc6a8+/Y) mice at levels not significantly different from those of WT mice (Figure 5B and C), release of Cr in response to K+ stimulation was significantly reduced in Slc6a8-/Y mice compared to Slc6a8+/Y mice (Figure 5D). The basal level of Cr in Slc6a8 KO mice was lower than that of WT mice. In addition, K+ stimulation-induced release of Cr persisted to some extent even after 10 min of washout (Figure 5D), possibly due to the inability of presynaptic terminals in Slc6a8 KO mice to reuptake Cr in the synaptic cleft (Figure 8).
 
@@ -124,11 +172,27 @@ Knockout of Agat (Figure 6A) selectively reduced K+ evoked release of Cr, but no
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig6-v1.jpg)
 
-**Figure 6.:** (A) A schematic diagram illustrating the strategy of Agat knockout first. With the Agat gene (also known as Gatm) shown in the upper part, and the gene targeting strategy in the lower part. The homologous arm is approximately 10 kb. A targeting cassette, containing Frt-flanked lacZ and neomycin, was inserted downstream of exon 2. At the same time, exon 3 of Agat was flanked by two loxP sites. K+-induced release of glutamate (Glu) (C) and gamma-aminobutyric acid (GABA) (D) were not significantly different among Agat, +/+Agat, and +/-Agat mice, whereas that of Cr (-/-B) was significantly lower in AGAT-/- mice than those in Agat and +/+Agat-.+/-Figure 6—source data 1.Figure 6B–D.
+**Figure 6.:** (A) A schematic diagram illustrating the strategy of Agat knockout first. With the Agat gene (also known as Gatm) shown in the upper part, and the gene targeting strategy in the lower part. The homologous arm is approximately 10 kb. A targeting cassette, containing Frt-flanked lacZ and neomycin, was inserted downstream of exon 2. At the same time, exon 3 of Agat was flanked by two loxP sites. K+-induced release of glutamate (Glu) (C) and gamma-aminobutyric acid (GABA) (D) were not significantly different among Agat+/+, Agat+/-, and Agat-/- mice, whereas that of Cr (B) was significantly lower in AGAT-/- mice than those in Agat+/+ and Agat+/--.
 
-## Cr inhibition of neocortical neurons
+### Cr inhibition of neocortical neurons
 
 Our own data (Figure 4H) and previous reports (Mak et al., 2009; Lowe et al., 2015) have shown SLC6A8 in the neocortex, with dense SLA6A8-HA immunoreactive fibers in layer 4 (Figure 7—figure supplement 1A; Eliseeva and Durinian, 1975; Yamawaki et al., 2021). Layer 5 neurons in the somatosensory cortex have been reported to express SLC6A8 previously (Mak et al., 2009; Lowe et al., 2015). To investigate electrophysiological effects of Cr, we performed whole-cell patch-clamp recordings from the pyramidal neurons in layer 4/5 of the somatosensory cortex (Figure 7A and B, Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig7-v1.jpg)
+
+**Figure 7.:** (A) A photograph showing recording at layer 4 in the somatosensory cortex. Scale bar: 10 μm. (B) Patch-clamp recording of a pyramidal neuron. Scale bar: 10 μm. (C) Ratios of Cr-responsive and -unresponsive neurons in the region. (D) Representative raw electrophysiological traces showing inhibition of evoked firing by Cr, with the lower panel showing the stimulus protocol. (E) Evoked spike numbers in response to different current injections from (D). (F) Relationship between evoked spike numbers and different current injections to neurons that were inhibited by Cr (n = 16). (G) The same for Cr-unresponsive neurons (n = 35). (H) Rheobase for Cr-responsive neurons. (I) Evoked spike number when these neurons were injected with current of rheobase + 50 pA. (J) input resistance. *p<0.05; **p<0.01; ***p<0.001, paired t-test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) High levels of SLC6A8-HA signal observed in the somatosensory cortex, especially in layer 4. (B) Recording sites. Red denotes the responsive neurons and blue the unresponsive neurons.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** There was no significant difference between the two groups of neurons in membrane capacitance (Cm) (A) and membrane resistance (Rm) (B), resting membrane potential (RMP) (C), spike threshold (D), spike amplitude (E), half width of spike (F), and amplitude of afterhyperpolarization (AHP) (G). While no electrical parameters detected were changed by Cr in non-responsive neurons (n = 35), RMP (C) was slightly inhibited by Cr and AHP (G) was slightly elevated (n = 16) in Cr-responsive neurons (*p<0.05, paired t-test).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Representative raw traces. (B) I-V curve of this same neuron. No effect of 100 μM Cr on rheobase current and evoked spike number at a current of 50 pA above rheobase current was observed. (C, D) Rheobase and spike number were not changed during Cr application.
 
 Medium-sized pyramidal neurons (Figure 7B) with a membrane capacitance (Cm) of 114.96 ± 3.92 pF (n = 51, Figure 7—figure supplement 2A) were recorded. These neurons exhibited regular firing patterns (Scala et al., 2019; Stumpf et al., 2018) in response to depolarization current injection (Figure 7D, Figure 7—figure supplement 3A) with moderate maximal evoked spiking frequencies of 10–30 spikes per 500 ms (Figure 7E–G), increasing of inter-spike intervals during depolarizing steps (Figure 7D, Figure 7—figure supplement 3A), high action potential amplitude (81.64 ± 1.06 mV, Figure 7—figure supplement 2E), and large spike half-width (1.12 ± 0.031 ms, Figure 7—figure supplement 2F).
 
@@ -136,7 +200,7 @@ Cr was bath-applied only after the evoked firing pattern reached a steady state.
 
 The remaining 35 neurons were not responsive to Cr (Figure 7C and G, Figure 7—figure supplement 3). Cr did not change electrical parameters tested, including evoked firing rates (Figure 7G, Figure 7—figure supplement 3A, B and D), rheobase (Figure 7—figure supplement 2C), resting membrane potential (Figure 7—figure supplement 2C), spike threshold amplitude (Figure 7—figure supplement 2E), and half width (Figure 7—figure supplement 2F). In addition, electrical properties of responsive neurons and unresponsive neurons were not significantly different. With the limited number of neurons recorded, the ratio of responsive neurons appeared higher in layer 4 or border of layer 4/5, than the deeper layer in layer 5 (Figure 7—figure supplement 1).
 
-## SLC6A8-dependent uptake of Cr into the synaptosomes
+### SLC6A8-dependent uptake of Cr into the synaptosomes
 
 Along with enzymatic degradation, reuptake by transporters serves as an important way to remove neurotransmitters released into the synaptic cleft. As synaptosomes contain the apparatus for neurotransmission, they are often used for studying uptake of neurotransmitters (Gulyássy et al., 2020).
 
@@ -144,13 +208,13 @@ To investigate whether Cr uptake into synaptosomes required SLC6A8, we first exa
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/89317/elife-89317-fig8-v1.jpg)
 
-**Figure 8.:** (A) Markers for subcellular organelles detected in synaptosomes prepared from WT mice or mice with Slc6a8 gene fused in frame to the HA epitope. SLC6A8-HA was enriched in synaptosomes (Sy or 4-Sy) or crude synaptosomes (P2) (see ‘Materials and methods’), as were other markers for the subcellular organelles in synaptosomes but not the marker for myelin (MBP). (B) Representative electron micrographs and histograms of size distribution in synaptosomes isolated from WT (Slc6a8) and +/YSlc6a8 KO (Slc6a8) mice by Ficoll density-gradient centrifugation. Sy, synaptosome; Mt, mitochondria; PSD, postsynaptic density. Bar, 20 nm. (-/YC) Cr uptake into synaptosomes (n = 5 per group). The two left columns were results from WT mice and the two right columns from Slc6a8 knockout mice. The control baseline was [14C]-Cr uptake at 0°C at 10 min. Cr uptake into synaptosomes at 37°C measured at 10 min was observed in WT synaptosomes. Uptake into Slc6a8 knockout synaptosomes was significantly reduced compared to the WT synaptosomes. ***p<0.001, one-way ANOVA with Tukey’s correction. (D) uptake of [13C]-Cr into immunoisolated SVs in the presence or absence of ATP (n = 11 samples per group). *p<0.05, paired t-test.Figure 8—source data 1.Figure 8A.Figure 8—source data 2.Figure 8A.Figure 8—source data 3.Figure 8A.
+**Figure 8.:** (A) Markers for subcellular organelles detected in synaptosomes prepared from WT mice or mice with Slc6a8 gene fused in frame to the HA epitope. SLC6A8-HA was enriched in synaptosomes (Sy or 4-Sy) or crude synaptosomes (P2) (see ‘Materials and methods’), as were other markers for the subcellular organelles in synaptosomes but not the marker for myelin (MBP). (B) Representative electron micrographs and histograms of size distribution in synaptosomes isolated from WT (Slc6a8+/Y) and Slc6a8 KO (Slc6a8-/Y) mice by Ficoll density-gradient centrifugation. Sy, synaptosome; Mt, mitochondria; PSD, postsynaptic density. Bar, 20 nm. (C) Cr uptake into synaptosomes (n = 5 per group). The two left columns were results from WT mice and the two right columns from Slc6a8 knockout mice. The control baseline was [14C]-Cr uptake at 0°C at 10 min. Cr uptake into synaptosomes at 37°C measured at 10 min was observed in WT synaptosomes. Uptake into Slc6a8 knockout synaptosomes was significantly reduced compared to the WT synaptosomes. ***p<0.001, one-way ANOVA with Tukey’s correction. (D) uptake of [13C]-Cr into immunoisolated SVs in the presence or absence of ATP (n = 11 samples per group). *p<0.05, paired t-test.
 
 We have also used EM to confirm the quality of our synaptosome preparations. As reported previously (Gulyássy et al., 2020; Schrimpf et al., 2005), synaptosomes were composed of membrane bounded structures (Sy in Figure 8B) filled with synaptic vesicles (SV in Figure 8B), sometimes with a segment of postsynaptic membrane along with the postsynaptic density (PSD in Figure 8B) and mitochondria (Mt in Figure 8B). The sizes of synaptosomes from WT mice and Slc6a8 knockout mice were similar, with areas of 0.245 ± 0.01 μm2 (n = 302 particles) and 0.247 ± 0.01 μm2 (n = 317 particles), respectively (Figure 8B).
 
 We then examined whether SLC6A8 participated in Cr uptake into the synaptosomes. A mixture of 18 μM [14C]-Cr (with a total radioactivity of 0.4 μCi) and 5 μM Cr was used, and uptake at 0°C measured at 10 min was the baseline (Fykse and Fonnum, 1988). Cr uptake into synaptosomes from WT mice was stimulated approximately sevenfold at 37°C (Uptake, Figure 8C) compared to 0°C (Ctrl, Figure 8C). Cr uptake into synaptosomes from Slc6a8 knockout mice was less than three times compared to its control, and was decreased to approximately 1/3 of that of WT mice (Figure 8C). Thus, SLC6A8 is necessary for uptake of Cr into the synaptosomes.
 
-## Cr uptake into SVs
+### Cr uptake into SVs
 
 Classical neurotransmitters were taken up in SVs in an ATP-dependent manner (Burger et al., 1991; Cidon and Sihra, 1989; Schenck et al., 2009; Fykse and Fonnum, 1988; Bellocchio et al., 2000). We examined whether Cr could be transported into SVs.
 
@@ -174,7 +238,7 @@ Cr uptake from the extracellular space into the cells was reported twice previou
 
 In summary, in addition to confirming and extending previous results which have stood alone for more than a decade without replication or follow-up, we have obtained entirely new results suggesting the candidacy of Cr as a neurotransmitter. We discuss below the criteria for a neurotransmitter, Cr as a neurotransmitter, and the implications of Cr as a neurotransmitter.
 
-## Criteria of a neurotransmitter
+### Criteria of a neurotransmitter
 
 The criteria for establishing a non-peptide small molecule as a neurotransmitter have varied from time to time and from author to author.
 
@@ -186,7 +250,7 @@ Some authors note difficulties in establishing a CNS neurotransmitter. For examp
 
 Solomon Snyder, a leading scientist of classic neurotransmitters, neuropeptides and their receptors, wrote that “designating a molecule as a transmitter depends on the criteria employed, the most common of which are that the substance is synthesized in neurons, released by their terminals, mimics the effects of physiologic neurotransmission and possess a mechanism for inactivation. However, with each new candidate the rules have been modified and broadened” (Barañano et al., 2001).
 
-## Evidence supporting Cr as a neurotransmitter
+### Evidence supporting Cr as a neurotransmitter
 
 Sixteen small molecules have been listed as neurotransmitters in the classic textbook (Kandel et al., 2013; Kandel et al., 2021). Among them, adenosine, arachidonic acid, nitric oxide, and carbon monoxide do not meet all four criteria at present. Cr appears to be better than these in meeting the criteria for a central neurotransmitter.
 
@@ -200,7 +264,7 @@ Here, we report that Cr, at a concentration comparable to classical neurotransmi
 
 In a recent report, knockout of the Slc6a8 gene increased excitation of cortical neurons (Ghirardini et al., 2023). Electrophysiological characterization of pyramidal neurons in the prefrontal cortex (PFC) found increased evoked firing frequency. Because we have shown that Cr inhibit a fraction of pyramidal neurons in the neocortex (Figure 8), this article provides in vivo evidence consistent with the possibility of Cr as an inhibitory neurotransmitter.
 
-## Differences between Cr and classic neurotransmitters
+### Differences between Cr and classic neurotransmitters
 
 At this point, we do not have a molecularly defined receptor for Cr, only inferring its presence from the electrophysiological responses to Cr. We speculate that Cr may act on G-protein-coupled receptors (GPCRs), rather than the fast-acting ligand-gated ion channels, such as AMPA or NMDA receptors for Glu and GABAA receptor for GABA. There have been previous reports of Cr effects on neurons, including Cr as a partial agonist for GABAA receptors (De Deyn and Macdonald, 1990; De Deyn et al., 2001; Neu et al., 2002; Koga et al., 2005). These effects require very high concentrations of Cr (in the 10 mM range). There was also a report of the opposite effect: that Cr (at a concentration above 500 μM) increased neuronal excitability through NMDA receptors after incubation for 60 min, with a time course significantly slower than those of classic neurotransmitters (Royes et al., 2008).
 
@@ -208,7 +272,7 @@ Ca2+-independent component of Cr release induced by extracellular K+ was more pr
 
 With much longer history of research, ACh and 5-HT now have more evidence in other aspects than Cr as a central transmitter, especially because there are many agonists and antagonists for ACh and 5-HT to prove an additional criterion that is required in some (Cooper et al., 2002; Squire et al., 2012), but not the majority of, textbooks for a neurotransmitter. The pharmacology criterion will take some time and effort because so far no effort has been made to find agonists or antagonists for Cr.
 
-## Implications of SLC6A8 and Cr
+### Implications of SLC6A8 and Cr
 
 It is notable that SLC6A8 belongs to the NTT family, with multiple members already shown to transport neurotransmitters (Pacholczyk et al., 1991; Blakely et al., 1991; Guastella et al., 1992; Clark et al., 1992; Borden et al., 1992; Lopez-Corcuera et al., 1992; Giros et al., 1991; Kilty et al., 1991; Shimada et al., 1991; Hoffman et al., 1991; Smith et al., 1992; Liu et al., 1992).
 
@@ -220,7 +284,7 @@ Cr is known to have effects other than an energy source, and Cr supplement has b
 
 Our work will stimulate further research to distinguish which of the previously suspected effects of Cr is not attributed to its role as an energy storage, but can be attributed to its role as a neurotransmitter.
 
-## Search for new neurotransmitters
+### Search for new neurotransmitters
 
 Our work may stimulate the search for more neurotransmitters. Our discovery indicates that the hunt for neurotransmitters stopped decades ago because of technical difficulties not due to the absence of more neurotransmitters. The fact that most of the known small-molecule neurotransmitters have been found because of their peripheral effects also argues that what is missing is the concerted efforts to uncover central neurotransmitters with no peripheral effects. New neurotransmitters may be discovered from candidates which have been long suspected and from previously unsuspected molecules or even previously unknown molecules.
 
@@ -228,17 +292,17 @@ Innovative approaches should be taken to uncover molecules with no previous susp
 
 ## Materials and methods
 
-## Generation of knockout and knockin mice
+### Generation of knockout and knockin mice
 
 Slc6a8 knockout and knockin mice were generated using CRISPR-Cas9-mediated genome engineering techniques by Beijing Biocytogen (Beijing, China). Agat ‘knockout-first’ (Skarnes et al., 2011) mice were purchased from CAM-SU GRC (Suzhou, China). All mutations were validated by Southern blot analysis, tail junction PCR, and DNA sequencing. Transgenic mice will be provided upon request.
 
-## RT-PCR and qPCR
+### RT-PCR and qPCR
 
 Total RNA of whole brains from mice of different genotypes was extracted using the Buffer RZ (Tiangen, no. RK14, Beijing, China) and reverse transcribed into complementary DNA (cDNA) using the RevertAid First-Strand cDNA synthesis kit (Thermo Scientific, K1622). qPCR was performed using the Taq Pro Universal SYBR qPCR Master Mix (Vazyme, Q712-02) on Bio-Rad CFX-96 Touch Real-time PCR System (Bio-Rad, USA). Glyceraldehyde-3-phosphate dehydrogenase (Gapdh) was used as an internal control. ΔCt (difference in cycle threshold) was calculated for each sample (ΔCt = Ct Target gene − Ct GAPDH) for further evaluation of relative mRNA expression levels in different genotypes. The sequence specificities of the primers were examined. Three pairs of primers targeting different genes were used: Slc6a8 forward, 5′-GTCTGGTGACGAGAAGAAGGG-3′, Slc6a8 reverse, 5′-CCACGCACGACATGATGAAGT-3′; Agat forward, 5′-cacagtggaggtgaaggccaatacatat-3′, Agat reverse, 5′-ccgcctcacggtcactcct-3′; Gapdh forward, 5′- AGGTCGGTGTGAACGGATTTG-3′, Gapdh reverse, 5′-TGTAGACCATGTAGTTGAGGTCA-3′.
 
 Primers for reverse PCR were designed to obtain complete coding sequences based on information obtained from the National Center for Biotechnology Information (NCBI): Slc6a8 forward, 5′-atggcgaaaaagagcgctgaaaacg-3′; Slc6a8 reverse, 5′-ttacatgacactctccaccacgacgacc-3′; Agat forward, 5′- atgctacgggtgcggtgtct-3′; Agat reverse, 5′-tcagtcaaagtaggactgaagggtgcct-3′. PCR products were electrophoresed on 1% agarose gels, stained with GelRed, visualized under UV illumination, and photographed.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Samples were loaded onto 10% polyacrylamide gels with the PAGE system (#1610183, Bio-Rad Laboratories, USA) and run in the SDS running buffer (25 mM Tris, 192 mM glycine, 0.1% SDS, pH 8.8) for 25 min at 80 V followed by 25–45 min at 200 V. Afterward, proteins were transferred to immobilon NC transfer membranes (HATF00010, Millipore) at 400 mA for 2 hr in transfer buffer (25 mM Tris, 192 mM glycine, 20% methanol). Membranes were blocked in 5% fat-free milk powder in TBST (25 mM Tris, 150 mM NaCl, 0.2% Tween-20 [P1397, Sigma, St. Louis, MO], pH 7.4 adjusted with HCl) and incubated overnight with the indicated primary antibodies dissolved in TBST containing 2% BSA.
 
@@ -246,11 +310,11 @@ Primary antibodies are listed below: rabbit anti-synaptophysin (dilution 1:5000,
 
 Membranes were washed in three washing steps in TBST (each for 5 min) and incubated with peroxidase-conjugated secondary antibodies for 2–3 hr at 4°C. The second antibodies used were anti-rabbit (dilution 1:5000, A6154, Sigma), anti-mouse (dilution 1:5000, 715-035-150, Jackson ImmunoResearch, West Grove, Philadelphia, USA) or rabbit anti-goat IgG secondary antibodies (dilution 1:1000, cat. no. ab6741, Abcam). After repeated washing, signals were visualized using a ChemiDoc XRS + System (Bio-Rad Laboratories).
 
-## Isolation of synaptic vesicles
+### Isolation of synaptic vesicles
 
 Our purification procedures for SVs were based on previously established immunoisolation methods (Burger et al., 1989; Martineau et al., 2013). Protein G magnetic beads (cat. no. 88848, Thermo Fisher Scientific, Waltham, MA) were washed three times with IP buffer (100 mM potassium tartrate, 4 mM HEPES-KOH, 2 mM MgCl2, pH 7.4) supplemented with a complete protease inhibitor cocktail (Roche, Basel, Switzerland). Then, 5 μg monoclonal anti-Syp antibody directed against a cytoplasmic epitope (cat. no. 101011, SySy) or control mouse IgG (10400C, Thermo Fisher Scientific) was used to incubate with 20–30 μl beads for 30 min at RT in 2% BSA dissolved in IP buffer. Under this condition, 4–4.5 μg of antibody was coupled, as determined by western blot and Coomassie Blue staining. Immunoisolation of SVs was carried out at 0–2°C to prevent vesicular content leakage (with RT as a control). Briefly, the whole mouse brain was homogenized in 3 ml of IP buffer with a glass/Teflon homogenizer (20 strokes at 2000 rpm, WHEATON, USA, and WIGGENS WB2000-M, Germany) immediately after decapitation. Homogenates were centrifuged for 25 min at 35,000 × g, and the supernatant was adjusted to approximately 3 mg/ml protein (NanoDrop 2000C, Thermo Fisher Scientific). To capture the SVs for content detection, about 200 μl of supernatants (per 5 μg anti-Syp/IgG) was incubated with pre-coupled beads for 2.25 hr under slow rotation at 2°C. Beads were washed six times for further western blot analysis and vesicular content detection. For pharmacological blockade of H+-gradient across SV membrane, the mix of supernatants and pre-coupled beads was diluted into 1.2 ml before the addition of inhibitors.
 
-## Determination of vesicular contents
+### Determination of vesicular contents
 
 To extract SV contents, immunoisolates were treated with 50 μl ultra-pure water. Then, 100 μl methanol together with 100 μl acetonitrile was added to precipitate proteins in samples. After centrifugation for 20 min at 16,8000 × g, supernatants were collected and centrifuged for 20 min at 2000 × g to remove beads and proteins. Samples were pre-frozen with liquid nitrogen and vacuum dried at –45°C overnight. Dried samples were kept frozen and resuspended with 50 μl of 0.2 μM 13C-creatine (internal control) immediately before detection.
 
@@ -260,21 +324,21 @@ CE/MS separations were carried out by capillaries (OptiMS silica surface cartrid
 
 Standard solutions of 0.2 μM 13C-Cr (internal control) and analytes were used to plot standard curves. Linear standard curves (R2 > 0.98, for most cases, R2 > 0.99), calculated from peak area ratios corresponding to analytes and internal standards, were obtained for all molecules tested. The concentration ranges used for standards of Glu, GABA, ACh, 5-HT, Cr, and alanine were 0.03–10 μM, 0.003–1 μM, 0.0003–0.1 μM, 0.003–1 μM, 0.03–1 μM, and 0.03–1 μM, respectively. Standard curves were made at least twice for a given capillary. Analytes of SV contents were calculated using the standard curves and normalized to the amount of anti-Syp antibody conjugated to the beads.
 
-## Electron microscopy
+### Electron microscopy
 
 All EM grids were glow discharged for 30 s using a plasma cleaner (Harrick PDC-32G-2, plasma cleaners, Ithaca, NY). To free SVs from beads, 25 μl 0.1 M glycine-HCl (PH = 2) was incubated for 1 min and quickly neutralized with 25 μl 0.1 M Tris (pH = 10). Beads were quickly removed and 2–4 μl aliquots of SVs were applied to the carbon-coated copper grids (Zhong Jing Ke Yi, Beijing, China). After 1 min, the grid was dried with a filter paper (Whatman No. 1), and placed in the water, and then immediately stained using 2% uranyl acetate for 30 s. At last uranyl acetate was removed and the grid was air dried. The grids were examined on a JEM-F200 electron microscope (JEOL, Tokyo, Japan) operated at 200 kV. Images were recorded using a 4k × 4k COMS One view camera (Gatan, Abingdon, UK). Fixation of synaptosomal pellets was performed by immersion with pre-warmed 2.5% glutaraldehyde in 0.1 M phosphate buffer (pH 7.4) at RT for 2 hr. After washing four times with 0.1 M phosphate buffer (pH 7.4) every 15 min, samples were post-fixed with 1% osmium tetroxide (w/v) at 4°C for 1 hr and then washed three times. Following en bloc staining with 2% uranyl acetate (w/v) at 4°C overnight, samples were dehydrated and embedded in fresh resin, polymerized at 65°C for 24 hr. Ultrathin (70 nm) sections were obtained using Leica UC7 ultramicrotome (Leica Microsystems, Wetzlar, Germany) and recorded on 80 kV in a JEOL Jem-1400 transmission electron-microscope (JEOL) using a CMOS camera (XAROSA, EMSIS, Munster, Germany).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Adult mice were anesthetized by i.p. injection with 2% 2,2,2-tribromoethanol (T48402, Sigma) in saline at a dose of 400 mg/kg and perfused trancardially with 0.9% saline, followed by 4% PFA in PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, pH = 7.4).
 
 Brains were cryoprotected with 30% sucrose in 30% sucrose 0.1 M PB (81 mM Na2HPO4, 19 mM NaH2PO4) and sectioned in the coronal plane (40 μm thick) using a Cryostat (Leica 3050S). For anti-HA immunostaining, we used a rabbit monoclonal anti-HA antibody (1:500 in 0.3% Triton in PBS; 48 hr incubation at 4°C; #3724, Cell Signaling Technology), followed by a goat anti-rabbit Alexa Fluor 546 secondary antibody (1:1000; overnight at 4°C; # A-11035, Invitrogen, Waltham, MA). Sections were mounted in a medium containing 50% glycerol, cover-slipped, and sealed with nail polish. Images were acquired using virtual slide microscope (Olympus VS120-S6-W, Tokyo, Japan) and a laser-scanning confocal microscope (Zeiss 710, Cambridge, UK) and brain structures inferred with an established mouse brain atlas (Paxinos and Franklin., 2013).
 
-## Preparations of brain slices
+### Preparations of brain slices
 
 Male C57 mice (of 30–38 days old) were anesthetized with pentobarbital (250 mg/kg) and decapitated. Brains were quickly removed and placed into ice-cold, low-calcium, high-magnesium artificial cerebrospinal fluid (ACSF) with sodium replaced by choline. The medium consisted of 120 mM choline chloride, 2.5 mM KCl, 7 mM MgSO4, 0.5 mM CaCl2, 1.25 mM NaH2PO4, 5 mM sodium ascorbate, 3 mM sodium pyruvate, 26 mM NaHCO3, and 25 mM D-(+)-glucose, and was pre-equilibrated with 95% O2–5% CO2. Coronal brain slices (300 μm thick) were cut with a vibratome (Leica VT1200S). Slices were incubated for 1 hr at 34°C with oxygenated ACSF containing 124 mM NaCl, 2.5 mM KCl, 2 mM MgSO4, 2.5 mM CaCl2, 1.25 mM NaH2PO4, 26 mM NaHCO3, and 10 mM D-(+)-glucose.
 
-## Evoked release from brain slices
+### Evoked release from brain slices
 
 Coronal brain slices (each 300 μm thick, typically with a wet weight of 17–20 mg) were transferred into a specially designed superfusion chamber with a volume of approximately 200 μl, containing freshly 95% O2/5% CO2 oxygenated ACSF. Slices were equilibrated for 10 min in ACSF at a superfusion rate of 0.9–1.25 ml/min. The ‘control’ sample was collected for 1 min just before high K+ stimulation (K-ACSF, 70 mM KCl replacing equal amount of NaCl). We waited for 30 s to allow K+ stimulus to immerse the slices (dead volume for solution transition of 200 μl and chamber volume of 200 μl), then the sample ‘70 mM K’ in response to K-ACSF was collected for another 1 min. Following 10 min of washout period, we collected the third sample of ‘wash’ for 1 min.
 
@@ -282,13 +346,13 @@ To detect Ca2+-dependent release, slices were pre-incubated for 10 min with norm
 
 Samples were subjected to CE-MS in a method similar to SV content detection, except for the following: (1) standards were dissolved in ACSF or other buffers used in release experiment; (2) concentration ranges used for standards of Glu was from 0.003 to 1 μM; and (3) to protect the MS from salt pollution, data were collected from 10 to 20 min during CE separation.
 
-## Patch-clamp recordings
+### Patch-clamp recordings
 
 Slices were transferred to a recording chamber on an upright fluorescent microscope equipped with differential interference contrast optics (DIC; Olympus BX51WI). Slices were submerged and superfused with ACSF at about 2.8 ml/min at 24–26°C. Whole-cell patch recordings were routinely achieved from layer 4/5 medium-sized pyramidal neurons from the somatosensory cortex. Patch pipettes (3–5 MΩ) contained 140 mM K-gluconate, 10 mM HEPES, 0.5 mM EGTA, 5 mM KCl, 3 mM Na2-ATP, 0.5 mM Na3GTP, and 4 mM MgCl2 (with pH adjusted to 7.3 and osmolarity of 290 mOsm/kg). Current-clamp recordings were carried out with a computer-controlled amplifier (Multiclamp 700B, Molecular Devices) and traces were digitized at 10 kHz (DigiData 1550B, Molecular Devices). Data were collected and analyzed using Clampfitor Clampex 10 software (Molecular Devices).
 
 Cells were characterized by their membrane responses and firing patterns during hyperpolarizing and depolarizing current steps (–100 to +500 pA, increment: 50 pA or 25 pA, 500 ms). Regular spiking pyramidal neurons were identified by moderate maximal spiking frequencies (20–60 Hz, i.e., 10–30 spikes per 500 ms, Figure 7E–G), increasing of inter-spike intervals during depolarizing step (Figure 7B, Figure 7—figure supplement 3A), high action amplitude (Figure 7—figure supplement 2E), and large half width (Figure 7—figure supplement 2F; Scala et al., 2019; Stumpf et al., 2018). After the mean firing frequency evoked by current injections reached the steady state for at least 5 min (typically 20–30 min following the formation of whole-cell configuration), 100 μM Cr was bath-applied for 6 min. Typically, Cr was applied for a second time following washout to reconfirm the effects.
 
-## Synaptosome preparation
+### Synaptosome preparation
 
 Synaptosomes were isolated by Ficoll/sucrose density-gradient centrifugation (Gulyássy et al., 2020; Schrimpf et al., 2005; Peral et al., 2010; Booth and Clark, 1978). Whole brains from adult male mice were homogenized with 15 strokes at 900 rpm in buffer A (320 mM sucrose, 1 mM EDTA, 1 mM EGTA, 10 mM Tris–HCl, pH 7.4, with a complete protease inhibitor cocktail; Roche). The homogenate (H fraction) was centrifuged at 1000 × g for 10 min to precipitate the membrane fragments and nuclei (P1 fraction). Supernatant was centrifuged again at 1000 × g for 10 min, and the resulting supernatant (S1) was centrifuged at 12,000 × g for 20 min. Supernatant was the S2 fraction, and the pellet was resuspended with buffer A and centrifuged at 12,000 × g for 20 min. The resulting pellet was crude synaptosomes (P2 fraction), containing synaptosomes with mitochondria and microsomes.
 
@@ -296,10 +360,10 @@ Crude synaptosomes (P2 fraction) was resuspended with 150–200 μl buffer B (32
 
 For western analysis, fractions H, S1, P1, S2, P2, and Sy were adjusted to 0.5 mg/ml by bicinchoninic acid assay (BCA) method with reference to NanoDrop 2000 Spectrophotometers. 3.35 μg protein was loaded for each lane. Fractions 1–6 were loaded with the same volume (10 μl composed of 6.7 μl sample and 3.3 μl loading buffer) for each lane.
 
-## Creatine uptake into synaptosomes
+### Creatine uptake into synaptosomes
 
 To remove Ficoll, we diluted the synaptosomal band (480 μl) with 4.3 ml of a pH 7.4 buffer C containing (in mM) 240 mannitol, 10 glucose, 4.8 potassium gluconate, 2.2 calcium gluconate, 1.2 MgSO4, 1.2 KH2PO4, and 25 HEPES-Tris. The sample was then centrifuged at 12,000 × g, and the pellet was resuspended with buffer C. Uptake experiments were either performed at 37°C or at 0°C (control). For each sample, 25–43 μg of synaptosomes (with a volume of 40–50 μl) were added to 360 μl buffer containing (in mmol/l) 100 NaCl, 40 mannitol, 10 glucose, 4.8 potassium gluconate, 2.2 calcium gluconate, 1.2 MgSO4, 1.2 KH2PO4, 25 HEPES, and 25 Tris (pH adjusted to 7.4). A mixture of 18 μM [14C]-creatine (0.4 μCi) and 5 μM creatine was quickly added. After 10 min, uptake was terminated by the addition of 1 ml of NaCl-free ice-cold buffer C. Samples were immediately filtered, under vacuum, through a Whatman GF/C glass filter (1825-025) pre-wetted with buffer C. Filters were further washed with 10 ml of ice-cold buffer C, dissolved in scintillation fluid, and the radioactivity determined by liquid scintillation spectrometry.
 
-## Creatine uptake into SVs
+### Creatine uptake into SVs
 
 The uptake of 13C-creatine was assayed according to a conventional procedure (Hell et al., 1988) with slight modifications: the immunoisolated SVs by 10 μg Syp antibody (101011, SySy) were resuspended with the uptake buffer (150 mM meglumine-tartrate, 4 mM KCl, 4 mM MgSO4, 10 mM HEPES-KOH [pH 7.4], and cOmplete EDTA-free protease inhibitor cocktail) containing 4 mM Mg-ATP or additional 4 mM MgSO4, followed by preincubation for 30 min at 25℃. The uptake reaction was started by addition of 1 mM 13C-creatine dissolved in the uptake buffer with a final volume of 125 μl (pH at 6.8). After 10 min at 25℃, 1 ml of ice-cold uptake buffer was added to the incubation to stop the reaction, followed by five more times washing. The SV contents were extracted using the protocol described in the determination of vesicular contents part. Then, 100 nM Cr was used as the internal control. CE-MS and LC-MS were used to verify and quantify the creatine contents of samples. A Vanquish UHPLC system coupled to a Q Exactive HF-X mass spectrometer (both instrument from Thermo Fisher Scientific) was used for LC-MS analysis along with SeQuant ZIC-HILIC column (150 mm × 2.1 mm, 3.5 μm, Merck Millipore, 150442) in the positive mode and SeQuant ZIC-pHILIC column (150 mm × 2.1 mm, 5 μm, Merck Millipore, 150460) in the negative mode. For ZIC-HILIC column, the mobile phase A was 0.1% formic acid in water and the mobile phase B was 0.1% formic acid in acetonitrile. The linear gradient was as follows: 0 min, 80% B; 6 min, 50% B; 13 min, 50% B; 14 min, 20% B; 18 min, 20% B; 18.5 min, 80% B; and 30 min, 80% B. The flow rate used was 300 μl/min and the column temperature was maintained at 30°C. For ZIC-pHILIC column, the mobile phase A is 20 mM ammonium carbonate in water, adjusted to pH 9.0 with 0.1% ammonium hydroxide solution (25%), and the mobile phase B is 100% acetonitrile. The linear gradient was as follows: 0 min, 80% B; 2 min, 80% B; 19 min, 20% B; 20 min, 80% B; and 30 min, 80% B. The flow rate used was 150 μl/min, and the column temperature was 25°C. Samples were maintained at 4°C in Vanquish autosampler. Then, 3 µl of extracted metabolites were injected for each run. IP samples were subjected to ZIC-HILIC column in positive mode for major metabolites detection, and then subject to ZIC-pHILIC column in negative mode for orthogonal detection.

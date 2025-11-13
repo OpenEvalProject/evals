@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Calcium (Ca 2+ )-evoked release of neurotransmitters from synaptic vesicles requires mechanisms both to prevent un-initiated fusion of vesicles (clamping) and to trigger fusion following Ca 2+ -influx. The principal components involved in these processes are the vesicular fusion machinery (SNARE proteins) and the regulatory proteins, Synaptotagmin-1 and Complexin. Here, we use a reconstituted single-vesicle fusion assay under physiologically-relevant conditions to delineate a novel mechanism by which Synaptotagmin-1 and Complexin act synergistically to establish Ca 2+ -regulated fusion. We find that under each vesicle, Synaptotagmin-1 oligomers bind and clamp a limited number of ‘central’ SNARE complexes via the primary interface and introduce a kinetic delay in vesicle fusion mediated by the excess of free SNAREpins. This in turn enables Complexin to arrest the remaining free ‘peripheral’ SNAREpins to produce a stably clamped vesicle. Activation of the central SNAREpins associated with Synaptotagmin-1 by Ca 2+ is sufficient to trigger rapid (<100 msec) and synchronous fusion of the docked vesicles.
+Calcium (Ca2+)-evoked release of neurotransmitters from synaptic vesicles requires mechanisms both to prevent un-initiated fusion of vesicles (clamping) and to trigger fusion following Ca2+-influx. The principal components involved in these processes are the vesicular fusion machinery (SNARE proteins) and the regulatory proteins, Synaptotagmin-1 and Complexin. Here, we use a reconstituted single-vesicle fusion assay under physiologically-relevant conditions to delineate a novel mechanism by which Synaptotagmin-1 and Complexin act synergistically to establish Ca2+-regulated fusion. We find that under each vesicle, Synaptotagmin-1 oligomers bind and clamp a limited number of ‘central’ SNARE complexes via the primary interface and introduce a kinetic delay in vesicle fusion mediated by the excess of free SNAREpins. This in turn enables Complexin to arrest the remaining free ‘peripheral’ SNAREpins to produce a stably clamped vesicle. Activation of the central SNAREpins associated with Synaptotagmin-1 by Ca2+ is sufficient to trigger rapid (<100 msec) and synchronous fusion of the docked vesicles.
 
 ## Introduction
 
@@ -35,39 +35,553 @@ Using the in vitro fusion system, we recently reported that under artificially l
 
 ## Results
 
-## Synaptotagmin and complexin co-operate to clamp vesicle fusion
+### Synaptotagmin and complexin co-operate to clamp vesicle fusion
 
 With the goal of approximating the physiological context, we chose a reconstitution condition for small unilamellar vesicles (SUV) resulting in an average of 74 copies and 25 copies of outward-facing VAMP2 and Syt1, respectively (Figure 1—figure supplement 1). We employed pre-formed t-SNAREs (1:1 complex of Syntaxin1 and SNAP-25) in the planar bilayers (containing 15% PS and 3% PIP2) to both simplify the experimental approach and to bypass the requirement of SNARE-assembling chaperones, Munc18 and Munc13 (Baker and Hughson, 2016; Rizo, 2018). In most of the experiments, we used fluorescently-labelled lipid (2% ATTO647-PE) included in the SUVs to track the docking, diffusion and fusion of individual SUVs (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig1-v1.jpg)
+
+**Figure 1.:** The effect of Syt1 and Cpx on SNARE-driven fusion was assessed using a single-vesicle docking and fusion analysis with a pore-spanning bilayer setup (Ramakrishnan et al., 2019; Ramakrishnan et al., 2018). (A) Representative fluorescence (ATTO647N-PE) traces showing the behavior of small unilamellar vesicles (SUV) containing VAMP2 (vSUV) or Syt1 and VAMP2 (Syt1-vSUV) on t-SNARE containing bilayer in the presence or the absence of Cpx. (B) The time between docking and fusion was measured for each docked vesicle and the results for the whole population are presented as a survival curve. vSUVs (black curve) are diffusively mobile upon docking (Figure 1—figure supplement 2) and fuse spontaneous with a half-time of ~1 s. Addition of soluble Cpx (2 µM) does not change this behavior (green curve). Inclusion of Syt1 in the v-SUV (red curve) does not block fusion but increases the time from docking-to-fusion (~5 s half-life), in effect delaying the kinetics of fusion. When included together Syt1 and Cpx (blue curves) fully arrest fusion to produce stably docked SUVs that attach and remain in place during the entire period of observation. (C) Syt1 and Cpx, both individually and collectively increase the number of docked vesicles. In all cases, a mutant form of VAMP2 (VAMP24X) which eliminated fusion was used to unambiguously estimate the number of docked vesicles after the 10 min interaction phase. The average values and standard deviations from three to four independent experiments are shown for each condition. In sum, 500–1000 vesicles were analyzed for each condition.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gel image of the VAMP2 ±Syt1 vesicles. Based on the densitometry analysis, we estimated each vesicle contain 74 ± 4 and 26 ± 6 copies of outward-facing VAMP2 and Syt1 respectively under ‘normal’ physiologically-relevant condition and 13 ± 2 and 26 ± 6 copies of VAMP2 and Syt1 under low-copy conditions. (B) In all fusion experiments, co-purified t-SNAREs containing 1:1 complex of Syntaxin1a and SNAP25 was reconstituted into the free-standing bilayer and full-length Complexin 1 (2 µM final concentration) was added in solution.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Representative time-lapse fluorescence (ATTO67N-PE) images of a docked SUVs showing that all VAMP2-containg SUVs (vSUVs) are diffusively mobile upon docking and fuse spontaneous within 1 s. This behavior is un-altered upon addition of 2 µM Cpx (vSUV + Cpx). Inclusion of Syt1 in the v-SUVs (Syt1-vSUV) introduces a significant docking-to-fusion delay, but most vesicles proceed to fuse spontaneously. In contrast, Cpx, when added along with Syt1 (Syt1-vSUV + Cpx), produces a stable clamp and the vesicles are docked in-place and largely immobile and do not fuse during the observation period. Images corresponding to a single 5 µm suspended bilayer is shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The vesicle fluorescence (ATTO647N-PE) were continuously imaged for the first 60 s post-docking with 150 ms frame rate (A), beyond which the vesicles were imaged only every 10 min for up to 1 hr (B) to minimize photo-bleaching. Average and standard deviation from three independent experiments are shown. (C) Representative fluorescence (ATTO647N-PE) image (bottom row) showing that Syt1/Cpx clamped vesicles remain Ca2+-sensitive even 1 hr post-docking. At each time point, we also recorded the NBD-fluorescence (top row) to verify the stability of the bilayer. Images corresponding to a single 5 µm suspended bilayer is shown. *Note: 1 hr is the maximum time-point we have tested so far considering the stability of the suspended bilayer.
+
 We initially focused on the kinetics of constitutive fusion to assess the ability of Syt1 and Cpx to ‘clamp’ SNARE-driven fusion in the absence of Ca2+. We monitored large ensembles of vesicles to determine the percent remaining unfused as a function of time elapsed after docking and quantified as ‘survival percentages’ (Figure 1B). Docked immobile vesicles that remained un-fused during the initial 10 min observation period were defined as ‘clamped’ (Ramakrishnan et al., 2019). Vesicles containing VAMP2 only (vSUV) that docked to the t-SNARE containing bilayer surface were mobile and a majority (>95%) spontaneously fused typically with a t1/2 ~ 1 sec post-docking (Figure 1B, Figure 1—figure supplement 2, Table 1, Table 2, Video 1).
+
+**Table 1.**
+ Survival probabilities at specific points in time post-docking (Kaplan Meier estimators) for the VAMP2-containing vesicles (vSUV) in the presence of Cpx, Syt1 or both. The corresponding survival curves are shown in Figure 1B
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time (s) (post-docking)</th>
+      <th>vSUV</th>
+      <th>vSUV + Cpx</th>
+      <th>Syt1-vSUV</th>
+      <th>Syt1-vSUV + Cpx</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.588</td>
+      <td>0.7978</td>
+      <td>0.4945</td>
+      <td>0.9915</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <td>1.029</td>
+      <td>0.4134</td>
+      <td>0.2277</td>
+      <td>0.9519</td>
+      <td>0.9989</td>
+    </tr>
+    <tr>
+      <td>2.058</td>
+      <td>0.0941</td>
+      <td>0.0544</td>
+      <td>0.8045</td>
+      <td>0.9963</td>
+    </tr>
+    <tr>
+      <td>3.087</td>
+      <td>0.0583</td>
+      <td>0.0319</td>
+      <td>0.6361</td>
+      <td>0.9936</td>
+    </tr>
+    <tr>
+      <td>4.116</td>
+      <td>0.0491</td>
+      <td>0.0267</td>
+      <td>0.5110</td>
+      <td>0.9917</td>
+    </tr>
+    <tr>
+      <td>5.145</td>
+      <td>0.0439</td>
+      <td>0.0243</td>
+      <td>0.3984</td>
+      <td>0.9888</td>
+    </tr>
+    <tr>
+      <td>7.497</td>
+      <td>0.0421</td>
+      <td>0.0215</td>
+      <td>0.2482</td>
+      <td>0.9821</td>
+    </tr>
+    <tr>
+      <td>9.996</td>
+      <td>0.0388</td>
+      <td>0.0211</td>
+      <td>0.1853</td>
+      <td>0.9814</td>
+    </tr>
+    <tr>
+      <td>15.141</td>
+      <td>0.0381</td>
+      <td>0.0209</td>
+      <td>0.1547</td>
+      <td>0.9794</td>
+    </tr>
+    <tr>
+      <td>20.139</td>
+      <td>0.0379</td>
+      <td>0.0201</td>
+      <td>0.1505</td>
+      <td>0.9682</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ The survival curves in Figure 1B were compared pair-wise using the log-rank test to determine the statistical significance (p-values) of the observed effects of Syt1 and Cpx on v-SUV fusion
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>vSUV</th>
+      <th>vSUV + cpx</th>
+      <th>Syt1-vSUV</th>
+      <th>Syt1-vSUV + cpx</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vSUV</td>
+      <td>n/a</td>
+      <td>p=0.731</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>vSUV + Cpx</td>
+      <td>p=0.731</td>
+      <td>n/a</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Syt1-vSUV</td>
+      <td>p&lt;0.001</td>
+      <td>p&lt;0.001</td>
+      <td>n/a</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Syt1-vSUV + Cpx</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.001</td>
+      <td>n/a</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/54506/elife-54506-video1.mp4.jpg)
+
+**Video 1.:** The movie was acquired using a Leica confocal scanning microscope at a speed of 7 frames/sec and the ATTO647N-PE fluorescence was used to track the fate of the vesicle. For clarity, a single hole corresponding to 5 µm suspended bilayer marked by the white circle is shown.
 
 Inclusion of wild-type Syt1 in the vesicles (Syt1-vSUVs) enhanced the vesicle docking rate, with ~8 fold increase in total number of docked vesicles (Figure 1C). The majority (~80%) of docked Syt1-vSUVs remained mobile on the bilayer surface and fused on an average ~5–6 s after docking (Figure 1B, Figure 1—figure supplement 2, Table 1, Table 2, Video 2). The remaining small fraction (~20%) were immobile and stably clamped. This is in stark contrast to our earlier finding under low-copy VAMP2 conditions wherein the bulk of the Syt1-vSUVs (>90%) were stably clamped (Ramakrishnan et al., 2019). The pronounced docking-to-fusion delay introduced by Syt1 (t1/2 ~5 sec for Syt1-vSUV compared to ~1 s for vSUV) suggests that under physiologically-relevant (‘normal’ VAMP copy number) conditions, Syt1 alone can meaningfully delay but not stably clamp fusion.
 
+![Video 2.](https://cdn.elifesciences.org/articles/54506/elife-54506-video2.mp4.jpg)
+
+**Video 2.:** The movie was acquired using a Leica confocal scanning microscope at a speed of 7 frames/sec and the ATTO647N-PE fluorescence was used to track the vesicle. For clarity, a single hole corresponding to 5 µm suspended bilayer marked by the white circle is shown.
+
 This unstable Syt1 clamp was stabilized by addition of Cpx (Figure 1B, Figure 1—figure supplement 2, Video 3). In the presence of 2 µM of soluble Cpx, all Syt1-vSUVs were immobile following docking (Figure 1B), and they rarely fused over the initial observation period (Figure 1B, Figure 1—figure supplement 2, Table 1, Table 2, Video 3). In fact, these vesicles remained stably docked up to 1 hr without fusing (Figure 1—figure supplement 3). Furthermore, Syt1 and Cpx together significantly increased (~18 fold) the total number of docked vesicles (Figure 1C). Thus, we find that Syt1 and Cpx act synergistically to increase the rate of vesicle docking and serve to effectively block fusion of the docked vesicles under resting conditions.
+
+![Video 3.](https://cdn.elifesciences.org/articles/54506/elife-54506-video3.mp4.jpg)
+
+**Video 3.:** The ATTO647N-DOPE introduced in the SUV was used to track the vesicle and the movie was acquired using a Leica confocal scanning microscope at a speed of 7 frames/sec. For clarity, a single hole corresponding to 5 µm suspended bilayer marked by the white circle is shown.
 
 Addition of soluble Cpx (2 µM) alone produced a ~10 fold increase in the number of docked vesicles (Figure 1C) but did not change the behavior of the docked vSUVs (Figure 1B, Figure 1—figure supplement 2, Table 1, Table 2, Video 4). In the presence of Cpx alone, virtually all docked vSUVs fused spontaneously typically within 1–2 s (Figure 1A,B). This meant that Syt1 somehow synergizes with Cpx to form the overall fusion clamp.
 
-## Synaptotagmin and complexin establish fast, Ca2+-triggered vesicle fusion
+![Video 4.](https://cdn.elifesciences.org/articles/54506/elife-54506-video4.mp4.jpg)
+
+**Video 4.:** The movie was acquiredusing a Leica confocal scanning microscope at a speed of 7 frames/sec and the ATTO647N-PE fluorescence was used to track the vesicle. For clarity, a single hole corresponding to 5 µm suspended bilayer marked by the white circle is shown.
+
+### Synaptotagmin and complexin establish fast, Ca2+-triggered vesicle fusion
 
 We then investigated the effect of Ca2+ on the stably Syt1/Cpx-clamped vesicles (Figure 2). We estimated the time of arrival of Ca2+ at/near the docked vesicles using a lipid-conjugated Ca2+ indicator (Calcium green C24) attached to the planar bilayer (Figure 2—figure supplement 1). Influx of free Ca2+ (1 mM) triggered simultaneous fusion of >90% of the docked vesicles (Figure 2B, Video 5). These vesicles fused rapidly and synchronously, with a characteristic time-constant (τ) of ~110 msec following the arrival of Ca2+ locally (Figure 2C). This estimate is constrained by the temporal resolution limit (150 msec per frame) of our imaging experiment. Indeed, most of Ca2+-triggered fusion occurs within a single frame (Figure 2C). We thus suspect that the true Ca2+-driven fusion rate is <100 msec. Notably, the Syt1/Cpx clamped vesicles remained Ca2+-sensitive even 1 hr post-docking (Figure 1—figure supplement 3). Our data indicate that Syt1 and Cpx acting together synchronize vesicle fusion to Ca2+ influx and greatly accelerate the underlying SNARE-mediated fusion process (which typically occurs at a rate of ~1 s). We also tested and confirmed these findings with a content-release assay using sulforhodamine B-loaded SUVs (Figure 2—figure supplement 2) under similar experimental conditions. Overall, we find that Syt1 and Cpx act co-operatively to clamp the SNARE assembly process to generate and maintain a pool of docked vesicles that can be triggered to fuse rapidly and synchronously upon Ca2+ influx.
 
-## Synaptotagmin and complexin clamp different sets of SNARE complexes
+![Figure 2.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative fluorescence images (top) and quantitation of change in fluorescence signal (bottom) before and after addition of 1 mM Ca2+ shows that vesicles clamped by Syt1/Cpx are sensitive to Ca2+. Fusion was attested by a burst and sudden decrease in fluorescence (ATTO647N-PE) intensity as the lipids diffuse away. To visualize this, fluorescence was simultaneously monitored in a circular region of interest (ROI) encompassing the docked vesicle (vesicle ROI, green and blue circles) and in a surrounding annular ROI (outer ROI, yellow circle). Corresponding to actual fusion events, we observed a sudden decrease of fluorescence intensity in the vesicle ROI with a concomitant increase of fluorescence in the annular outer ROI. Note that the two docked vesicles fuse synchronously in response to Ca2+-influx. (B) End-point analysis at 1 min post Ca2+-addition shows that >90% of all clamped vesicles fuse following Ca2+ addition. (C) Kinetic analysis shows that the Syt1/Cpx clamped vesicles fuse rapidly following Ca2+-addition with a characteristic time constant of 0.11 s. This represents the temporal resolution limit of our recordings and the true Ca2+-triggered fusion rate is likely well below 0.1 s. Thus, Syt1 and Cpx synchronize vesicle fusion to Ca2+-influx and accelerate the underlying fusion process. The average values and standard deviations from three independent experiments (with ~1000 vesicles in total) is shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** A representative fluorescence trace acquired at a speed of ~36 msec per frame using confocal microscopy equipped with resonant scanner focused at or near the bilayer membrane is shown. The rise in fluorescence intensity upon Ca2+ binding was observed ~3 frames (~100 ms) after the addition of Ca2+ at the top of chamber. This was used to benchmark and to accurately estimate the Ca2+-triggered fusion rate.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Sulforhodamine B is largely self-quenched when encapsulated inside a SUV. Fusion of vesicle results in dilution of the probe, which is accompanied by increasing fluorescence. Representative fluorescence trace showing that in the presence of 2 µM Cpx, the Syt1-vSUV (loaded with Sulphorhodamine B) dock and remain in place, until triggered to fuse by Ca2+ (1 mM) addition. This is in line with the lipid mixing data (Figure 2) showing that Syt1 and Cpx act together to establish Ca2+-regulated exocytosis.
+
+![Video 5.](https://cdn.elifesciences.org/articles/54506/elife-54506-video5.mp4.jpg)
+
+**Video 5.:** The ATTO647N-DOPE introduced in the SUV was used to track the fate of the vesicle and the movie was acquired using a Leica confocal scanning microscope at a speed of 7 frames/sec. For clarity, a single hole corresponding to 5 µm suspended bilayer marked by the white circle is shown.
+
+### Synaptotagmin and complexin clamp different sets of SNARE complexes
 
 We next examined if Syt1 and Cpx act on the same SNARE complexes sequentially or if they function separately to produce molecularly-distinct clamped SNAREpins under the same docked vesicles. To this end, we employed an accessibility-dependent competition assay (Figure 3). We washed Cpx out from stably clamped Syt1/Cpx vesicles (by dilution) in the absence or the presence of excess inhibitory soluble cytoplasmic domain of the t-SNARE complex (CDT). Cpx binds to half-zippered (clamped) SNAREpins with a Kd ~0.5 µM (Krishnakumar et al., 2011; Kümmel et al., 2011) and is therefore expected to freely dissociate when the bulk concentration of CPX is reduced well below that level. CDT will bind and sequester/inactivate any free VAMP2 on the vesicles and is also expected to effectively compete out bilayer-anchored t-SNAREs. This is because CDT can form fully-zippered SNARE complexes (stabilized by ~70 kBT) as compared to the half-zippered SNAREpins (~35 kBT) formed by bilayer-anchored t-SNAREs (Li et al., 2016). We reasoned that if Syt1 and Cpx act on the same SNARE complex, then CDT treatment (with Cpx wash-out) would irreversibly block all vesicle fusion. However, if Syt1 and Cpx clamp different SNARE complexes, then some SNAREpins might be sequestered/protected from CDT by Syt1, thereby keeping the vesicles clamped yet sensitive to Ca2+ influx.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig3-v1.jpg)
+
+**Figure 3.:** (A) In situ removal of Cpx from the Syt1/Cpx clamped state by extensive (40X) buffer wash triggers spontaneous fusion of the docked vesicles. This further confirms that both Syt1 and Cpx are required to produce a stable clamped state. (B) Inclusion of soluble cytoplasmic domain of t-SNAREs (CDT) blocked the spontaneous fusion events triggered by elimination of Cpx from the Syt1/Cpx clamped vesicles. The CDT-treated vesicles remain sensitive to Ca2+ influx and most of the vesicles fuse rapidly and synchronously following the addition of 1 mM Ca2+. This indicates that a sub-set of SNAREpins are protected against CDT even in the absence of Cpx, implying that Syt1 and Cpx likely engage and clamp different set of SNAREpins. It further shows that the Syt1-associated SNAREpins are sufficient to catalyze rapid Ca2+-triggered vesicle fusion. Data (average ± standard deviation) obtained from four to five independent experiments with at least 200 vesicles in total are shown. Note: Only single SNAREpins clamped by either Syt1 or Cpx is shown for illustrative purposes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** This was assessed using fluorescently (Alexa488) labeled Cpx and fluorescence recorded prior to the addition of Cpx (left panel), upon addition of Cpx (middle) and after dilution by 40X buffer wash (right panel) are shown. Images corresponding to multiple 5 µm suspended bilayer is shown. Note: The vesicle and bilayer fluorescence are not shown for clarity.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative fluorescence (ATTO647N) image showing that clamped Syt1/Cpx vesicles (left panel) fuse spontaneously upon wash out of Cpx by dilution. Upon fusion, the ATTO647N dye on the vesicles mixes with suspended bilayer resulting in increase of the background ATTO647N fluorescence (right panel). (B) In the presence of excess inhibitory soluble cytoplasmic domain of the t-SNARE complex (CDT), the vesicles remain docked even after the removal of previously-bound Cpx by the buffer wash (middle panel). Subsequent addition of Ca2+ (1 mM) triggered rapid and synchronous fusion of these docked vesicles. Images corresponding to multiple 5 µm suspended bilayer is shown.
+
 We used fluorescently-labeled Cpx to test and confirm the near-complete washout of Cpx from the clamped Syt1/Cpx vesicles following the extensive (40X) buffer wash (Figure 3—figure supplement 1). Without CDT, the docked vesicles proceeded to fuse spontaneously following the buffer wash (Figure 3A, Figure 3—figure supplement 2). This further confirmed that both Syt1 and Cpx are needed to produce a stably clamped state. In the presence of CDT, most of the vesicles remained docked even after the removal of previously-bound Cpx by the buffer wash (Figure 3B, Figure 3—figure supplement 2). Subsequent addition of Ca2+ (1 mM) triggered rapid and synchronous fusion of the docked vesicles (Figure 3B, Figure 3—figure supplement 2), with fusion kinetics similar to the control experiments (Figure 2C). This implied that there are at least two types of clamped SNAREpins under a docked vesicle – those clamped by Syt1 (which are shielded from CDT) and others arrested by Cpx (which become accessible to CDT following the buffer wash-out). It further indicated that even though both Syt1 and Cpx are required to produce a stably ‘clamped’ vesicle, the activation of the Syt1-associated SNAREpins is sufficient to elicit rapid, Ca2+-synchronized vesicular fusion.
 
-## Molecular mechanism of synaptotagmin clamp and Ca2+ activation of fusion
+### Molecular mechanism of synaptotagmin clamp and Ca2+ activation of fusion
 
 Considering these findings, we sought to establish the molecular determinants of the Syt1 clamp and its reversal by Ca2+. To focus on the Syt1 component of the clamp, we tested the effect of specific Syt1 mutations using low copy VAMP2 conditions, i.e. SUVs containing ~13 copies of VAMP2 and ~25 copies of Syt1 (wild type or mutants) in the absence of Cpx. Consistent with our earlier report (Ramakrishnan et al., 2019), wild-type Syt1 (Syt1WT) alone was sufficient to produce stably-clamped vesicles under these conditions (Figure 4A, Table 3, Table 4). Selective disruption of Syt1-SNARE ‘primary’ binding using the previously described (Zhou et al., 2015; Zhou et al., 2017) mutations in Syt1 C2B domain (R281A/E295A/Y338W/R398A/R399A; Syt1Q) and t-SNARE SNAP25 (K40A/D51A/E52A/E55A/D166A; SNAREQ) abolished the Syt1 clamp (Figure 4A, Table 3, Table 4,), with >99% of the docked Syt1Q vesicles fusing constitutively in the 10 min observation period (Note: From this point onwards, the ‘primary’ site mutation is simply referred as Syt1Q). On the other hand, Syt1 mutations (L387Q/L394Q; Syt1LLQQ) that disrupt the hydrophobic interaction that is an integral part of the SNARE-Cpx-Syt1 ‘tripartite’ interface (Zhou et al., 2017) had no effect on the Syt1 clamp (Figure 4A, Table 3, Table 4). Destabilization of the Syt1 C2B oligomers with a point-mutation (F349A)(Bello et al., 2018) also abrogated the Syt1 clamp, wherein ~ 85% of docked Syt1F349A vesicles proceeded to fuse spontaneously (Figure 4A, Table 3, Table 4). However, disrupting Ca2+ binding to the C2B domain (D309A, D363A, D365A; Syt1DA) (Shao et al., 1996) had no effect on Syt1 clamping function, with all vesicles remaining un-fused (Figure 4A, Table 3, Table 4). This meant that Syt1 ability to oligomerize and bind SNAREpins via the primary binding site is key to its clamping function.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig4-v1.jpg)
 
-**Figure 4.:** 2+.To focus on the Syt1 component of the fusion clamp, all fusion analysis was carried out using vesicles containing low copy VAMP2 (~13 copies) with normal number (~25 copies) of Syt1 molecules (wild-type or targeted mutations) in the absence of Cpx. (A) Survival analysis shows that disrupting the Syt1-SNARE primary interface (Syt1Q, green curve) or destabilizing Syt1 oligomerization (Syt1F349A, purple curve) abrogates the Syt1 clamp, whilst the Syt1-Cpx-SNARE tripartite interface (Syt1LLQQ, yellow curve) and the Ca2+-binding motif on the Syt1 C2B domain (Syt1DA, red curve) are not involved in establishing the fusion clamp. (B) Addition of Ca2+ triggered rapid fusion of the majority (>90%) of Syt1LLQQ and the remainder (~15%) of the docked Syt1F349A vesicles, very similar to the behavior of the Syt1WT vesicles. Predictably, blocking Ca2+-binding to C2B domain rendered the vesicle Ca2+-insensitive, with the majority of Syt1DA remaining un-fused. We did not have sufficient number of docked Syt1Q vesicles to do a quantitative analysis, but qualitatively, the few that remained docked failed to fuse following Ca2+-addition. This implies that both C2B binding to Ca2+ and SNAREs are required for the Ca2+-activation, but the ability to form oligomers or Syt1-Cpx-SNARE tripartite interface are not crucial for the Ca2+-triggered reversal of the Syt1 clamp. The average values and standard deviations from four independent experiments are shown for each condition. In total,~250 vesicles were analyzed for each condition.
+**Figure 4.:** To focus on the Syt1 component of the fusion clamp, all fusion analysis was carried out using vesicles containing low copy VAMP2 (~13 copies) with normal number (~25 copies) of Syt1 molecules (wild-type or targeted mutations) in the absence of Cpx. (A) Survival analysis shows that disrupting the Syt1-SNARE primary interface (Syt1Q, green curve) or destabilizing Syt1 oligomerization (Syt1F349A, purple curve) abrogates the Syt1 clamp, whilst the Syt1-Cpx-SNARE tripartite interface (Syt1LLQQ, yellow curve) and the Ca2+-binding motif on the Syt1 C2B domain (Syt1DA, red curve) are not involved in establishing the fusion clamp. (B) Addition of Ca2+ triggered rapid fusion of the majority (>90%) of Syt1LLQQ and the remainder (~15%) of the docked Syt1F349A vesicles, very similar to the behavior of the Syt1WT vesicles. Predictably, blocking Ca2+-binding to C2B domain rendered the vesicle Ca2+-insensitive, with the majority of Syt1DA remaining un-fused. We did not have sufficient number of docked Syt1Q vesicles to do a quantitative analysis, but qualitatively, the few that remained docked failed to fuse following Ca2+-addition. This implies that both C2B binding to Ca2+ and SNAREs are required for the Ca2+-activation, but the ability to form oligomers or Syt1-Cpx-SNARE tripartite interface are not crucial for the Ca2+-triggered reversal of the Syt1 clamp. The average values and standard deviations from four independent experiments are shown for each condition. In total,~250 vesicles were analyzed for each condition.
+
+**Table 3.**
+ Survival probabilities at specific points in time post-docking (Kaplan Meier estimators) for the different Syt1 mutants under low-copy VAMP2 conditions in the absence of Cpx. The corresponding survival curves are shown in Figure 4A
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time (s) (post-docking)</th>
+      <th>vSUV</th>
+      <th>Syt1WT</th>
+      <th>Syt1F349A</th>
+      <th>Syt13DA</th>
+      <th>Syt1Q</th>
+      <th>Syt1LLQQ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.588</td>
+      <td>0.7925</td>
+      <td>0.9965</td>
+      <td>0.9597</td>
+      <td>0.9936</td>
+      <td>0.9612</td>
+      <td>0.9975</td>
+    </tr>
+    <tr>
+      <td>1.029</td>
+      <td>0.4679</td>
+      <td>0.9799</td>
+      <td>0.8951</td>
+      <td>0.9931</td>
+      <td>0.8353</td>
+      <td>0.9963</td>
+    </tr>
+    <tr>
+      <td>2.058</td>
+      <td>0.1697</td>
+      <td>0.9546</td>
+      <td>0.5992</td>
+      <td>0.9857</td>
+      <td>0.5403</td>
+      <td>0.9854</td>
+    </tr>
+    <tr>
+      <td>3.087</td>
+      <td>0.0899</td>
+      <td>0.9546</td>
+      <td>0.3822</td>
+      <td>0.9794</td>
+      <td>0.3193</td>
+      <td>0.9525</td>
+    </tr>
+    <tr>
+      <td>4.116</td>
+      <td>0.0662</td>
+      <td>0.9341</td>
+      <td>0.2745</td>
+      <td>0.9762</td>
+      <td>0.2163</td>
+      <td>0.9416</td>
+    </tr>
+    <tr>
+      <td>5.145</td>
+      <td>0.0606</td>
+      <td>0.9341</td>
+      <td>0.2209</td>
+      <td>0.9722</td>
+      <td>0.1732</td>
+      <td>0.9416</td>
+    </tr>
+    <tr>
+      <td>7.497</td>
+      <td>0.0549</td>
+      <td>0.9255</td>
+      <td>0.1663</td>
+      <td>0.9597</td>
+      <td>0.1253</td>
+      <td>0.9160</td>
+    </tr>
+    <tr>
+      <td>9.996</td>
+      <td>0.0459</td>
+      <td>0.9189</td>
+      <td>0.1514</td>
+      <td>0.9475</td>
+      <td>0.1152</td>
+      <td>0.9124</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ The survival curves in Figure 4A were compared pair-wise using the log-rank test to determine the statistical significance (p-values) of the effects of the Syt1 mutants under low-copy VAMP2 conditions in the absence of Cpx.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>vSUV</th>
+      <th>Syt1WT</th>
+      <th>Syt1F349A</th>
+      <th>Syt13DA</th>
+      <th>Syt1Q</th>
+      <th>Syt1LLQQ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vSUV</td>
+      <td>n/a</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.004</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.009</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Syt1WT</td>
+      <td>p&lt;0.0001</td>
+      <td>n/a</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.912</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.885</td>
+    </tr>
+    <tr>
+      <td>Syt1F349A</td>
+      <td>p&lt;0.004</td>
+      <td>p&lt;0.0001</td>
+      <td>n/a</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.113</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Syt13DA</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.912</td>
+      <td>p&lt;0.0001</td>
+      <td>n/a</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.915</td>
+    </tr>
+    <tr>
+      <td>Syt1Q</td>
+      <td>p&lt;0.009</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.113</td>
+      <td>p&lt;0.0001</td>
+      <td>n/a</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Syt1LLQQ</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.885</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.915</td>
+      <td>p&lt;0.0001</td>
+      <td>n/a</td>
+    </tr>
+  </tbody>
+</table>
 
 Addition of Ca2+ (1 mM) triggered rapid and synchronous fusion of all of the docked Syt1WT and Syt1LLQQ vesicles and the remaining minority fraction (~15%) of the ‘clamped’ Syt1F349A containing vesicles (Figure 4B). In fact, the docked Syt1F349A vesicles were indistinguishable in their behavior from Syt1WT vesicles, suggesting the Syt1 oligomerization is not critical for the Ca2+-activation mechanism. In contrast, docked vesicles containing the Ca2+-binding mutant (Syt1DA) never fused even after Ca2+-addition (Figure 4B). Similarly, Ca2+-influx failed to trigger the fusion of the residual (~1%) Syt1Q vesicles. However, the relatively small number of docked Syt1Q prior to Ca2+-influx precludes any meaningful quantitative analysis. Nonetheless, our data suggest that Ca2+-binding to the Syt1 C2B domain and its simultaneous interaction with the t-SNARE protein via the primary binding site is required for Ca2+-triggered reversal of the fusion clamp.
 
 We also tested the effect of the Syt1 mutants using vesicles containing physiological VAMP2 and Syt1 copy numbers in the presence of 2 µM Cpx (Figure 5A, Table 5, Table 6). For all mutations tested, we observed immobile, stably docked vesicles (Figure 5A, Table 5, Table 6). Surprisingly, the Cpx-dependent clamp was observed even under conditions wherein the Syt1 clamp was absent (i.e. Syt1Q and Syt1F349A). Survival analysis revealed that both Syt1Q and Syt1F349A mutants introduce a meaningful delay in the overall fusion process albeit less than that observed with a stable Syt1 clamp (Figure 5—figure supplement 1). This implies that the kinetic delay introduced by Syt1, independent of its ability to clamp, is sufficient to enable Cpx to function as a fusion clamp, perhaps by providing time for Cpx to bind and block all SNAREpins.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig5-v1.jpg)
+
+**Figure 5.:** The effect of targeted Syt1 mutations was assessed under physiologically-relevant SUV conditions (~74 copies of VAMP2 and ~25 copies of Syt1 wild type or mutant) in the presence of 2 μM Cpx. (A) Survival analysis shows neither the disruption of the Syt1-SNARE primary interface (Syt1Q, green curve) and the Syt1-Cpx-SNARE tripartite interface (Syt1LLQQ, yellow curve) nor destabilizing Syt1 oligomerization (Syt1F349A, purple curve) has any effect on the fusion clamp in the presence of Cpx, with stably docked vesicles observed under all conditions. (B) End-point analysis indicates that the Syt1Q and Syt1F349A vesicles are insensitive to Ca2+ and do not fuse upon addition of 1 mM Ca2+. In contrast, rapid and synchronous Ca2+-triggered fusion was observed with the majority of the docked Syt1WT and Syt1LLQQ vesicles. Notably, the LLQQ mutation does have a small but significant effect on Ca2+-triggered release. This implies that the Syt1-Cpx-SNARE tripartite interface is not necessary for clamp, but might be involved in the Ca2+-activation process. Overall, the data suggest that the Syt1 clamped SNAREpins are required for Ca2+-triggered exocytosis and in the absence of Syt1 clamp, Cpx irreversibly blocks vesicle fusion. The average values and standard deviations from three independent experiments are shown for each condition. In total,~200 vesicles were analyzed for each condition.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Survival analysis under physiologically-relevant SUVs (~74 copies of VAMP2 and ~25 copies of Syt1 wild type or mutant) in the absence of Cpx shows that Syt1 mutations that abrogate the fusion clamp i.e. primary interface (Syt1Q, green curve) or oligomerization (Syt1F349A, red curve) still introduce a meaningful (~2–3 s) delay in the fusion kinetics although less than observed with Syt1WT (blue curve). This delay might be sufficient for Cpx to bind and irreversibly block all SNARE driven fusion (Figure 5A). The average values and standard deviations from three independent experiments, from a total of ~150 vesicles each condition, is shown.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/54506/elife-54506-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) In situ removal of Cpx from the clamped Syt1Q vesicles by extensive (40X) buffer wash triggers spontaneous fusion of the docked vesicles (B) Inclusion of soluble cytoplasmic domain of t-SNAREs (CDT) blocked the spontaneous fusion events triggered by elimination of Cpx from the clamped Syt1Q vesicles. These CDT-treated vesicles are insensitive to Ca2+ and fail to fuse following the addition of 1 mM Ca2+. This shows in the Syt1Q vesicles, with no Syt1 clamp, all SNAREpins are arrested by Cpx alone and the SNARE-driven fusion is irreversibly blocked by CDT following the Cpx washout. Average and standard deviation from three independent experiments with at least 100 vesicles in total is shown.
+
+**Table 5.**
+ Survival probabilities at specific points in time post-docking (Kaplan Meier estimators) for the different Syt1 mutants under normal VAMP2 conditions in the presence of 2 μM Cpx. The corresponding survival curves are shown in Figure 5A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time (s) (post-docking)</th>
+      <th>vSUV</th>
+      <th>Syt1WT</th>
+      <th>Syt1F349A</th>
+      <th>Syt1Q</th>
+      <th>Syt1LLQQ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.588</td>
+      <td>0.6714</td>
+      <td>0.9959</td>
+      <td>0.9936</td>
+      <td>0.9913</td>
+      <td>0.9878</td>
+    </tr>
+    <tr>
+      <td>1.029</td>
+      <td>0.2981</td>
+      <td>0.9936</td>
+      <td>0.9910</td>
+      <td>0.9821</td>
+      <td>0.9810</td>
+    </tr>
+    <tr>
+      <td>2.058</td>
+      <td>0.0617</td>
+      <td>0.9927</td>
+      <td>0.9857</td>
+      <td>0.9734</td>
+      <td>0.9688</td>
+    </tr>
+    <tr>
+      <td>3.087</td>
+      <td>0.0391</td>
+      <td>0.9905</td>
+      <td>0.9794</td>
+      <td>0.9646</td>
+      <td>0.9566</td>
+    </tr>
+    <tr>
+      <td>4.116</td>
+      <td>0.0267</td>
+      <td>0.9852</td>
+      <td>0.9762</td>
+      <td>0.9573</td>
+      <td>0.9471</td>
+    </tr>
+    <tr>
+      <td>5.145</td>
+      <td>0.0243</td>
+      <td>0.9841</td>
+      <td>0.9722</td>
+      <td>0.9445</td>
+      <td>0.9444</td>
+    </tr>
+    <tr>
+      <td>7.497</td>
+      <td>0.0215</td>
+      <td>0.9833</td>
+      <td>0.9597</td>
+      <td>0.9379</td>
+      <td>0.8943</td>
+    </tr>
+    <tr>
+      <td>9.996</td>
+      <td>0.0195</td>
+      <td>0.9824</td>
+      <td>0.9475</td>
+      <td>0.9301</td>
+      <td>0.8808</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ The survival curves shown in Figure 5A were compared pair-wise using the log-rank test to determine the statistical significance (p-values) of the effects of the Syt1 mutants under normal VAMP2 conditions in the presence of 2 μM Cpx.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>vSUV</th>
+      <th>Syt1WT</th>
+      <th>Syt1F349A</th>
+      <th>Syt1Q</th>
+      <th>Syt1LLQQ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>v-SUV</td>
+      <td>n/a</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Syt1WT</td>
+      <td>p&lt;0.0001</td>
+      <td>n/a</td>
+      <td>p=0.971</td>
+      <td>p=0.912</td>
+      <td>p=0.151</td>
+    </tr>
+    <tr>
+      <td>Syt1F349A</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.971</td>
+      <td>n/a</td>
+      <td>p=0.865</td>
+      <td>p=0.906</td>
+    </tr>
+    <tr>
+      <td>Syt1Q</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.912</td>
+      <td>p=0.865</td>
+      <td>n/a</td>
+      <td>p=0.426</td>
+    </tr>
+    <tr>
+      <td>Syt1LLQQ</td>
+      <td>p&lt;0.0001</td>
+      <td>p=0.151</td>
+      <td>p=0.906</td>
+      <td>p=0.426</td>
+      <td>n/a</td>
+    </tr>
+  </tbody>
+</table>
 
 However, the clamped Syt1Q and Syt1F349A vesicles were insensitive to Ca2+ and did not fuse following Ca2+ (1 mM) addition as opposed to the rapid and synchronous fusion observed with the majority of the Syt1WT and Syt1LLQQ vesicles (Figure 5B). Notably, a significant partial fraction (~25%) of the Syt1LLQQ vesicles remained un-fused even following Ca2+ addition (Figure 5B). This suggests that while the Syt1-Cpx-SNARE tripartite interface is not essential for establishing the fusion clamp, it is likely important in the Ca2+-triggering of fusion.
 
@@ -103,19 +617,19 @@ As such, further studies with high temporal resolution involving detailed mutati
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 The following cDNA constructs, which have been previously described (Krishnakumar et al., 2013; Krishnakumar et al., 2011; Weber et al., 1998; Mahal et al., 2002), were used in this study: full-length VAMP2 (VAMP2-His6, residues 1–116); full-length VAMP24X (VAMP2-His6, residues 1–116 with L70D, A74R, A81D, L84D mutations), full-length t-SNARE complex (mouse His6-SNAP25B, residues 1–206 and rat Syntaxin1A, residues 1–288); soluble cytoplasmic domain of the t-SNAREs (CDT, mouse His6-SNAP25B, residues 1–206 and rat Syntaxin1A, residues 1–265); Synaptotagmin (rat Synaptotagmin1-His6, residues 57–421); and Complexin (human His6-Complexin 1, residues 1–134). All mutants including Syt1F349A (F349A); Syt1Q (R281A/E295A/Y338W/R398A/R399A); Syt1LLQQ (L387Q/L394Q); Syt1DA (D309A, D363A, D365A) and SNAREQ (SNAP25 K40A/D51A/E52A/E55A/D166A) were generated in the above described Syt1 and t-SNARE background respectively using the QuickChange mutagenesis kit (Agilent Technologies, Santa Clara, CA). Lipids, 1,2-dioleoyl -snglycero-3-phosphocholine (DOPC), 1,2-dioleoyl-sn-glycero-3- (phospho-L-serine) (DOPS), 1,2-dipalmitoyl-sn-glycero-3-phosphoethanolamine-N-(7-nitro-2–1,3-benzoxadiazol-4-yl) (NBD-DOPE), phosphatidylinositol 4, 5-bisphosphate (PIP2) were purchased from Avanti Polar Lipids (Alabaster, AL). ATTO647N-DOPE was purchased from ATTO-TEC, GmbH (Siegen, Germany) and lipophilic carbocyanine DiD (1,1'-Dioctadecyl-3,3,3',3'-Tetramethylindodicarbocyanine Perchlorate) was purchased from Thermofisher Scientific (Waltham, MA). Calcium Green conjugated to a lipophilic 24-carbon alkyl chain (Calcium Green C24) was custom synthesized by Marker Gene Technologies (Eugene, OR).
 
-## Protein expression and purification
+### Protein expression and purification
 
 All proteins (v- and t-SNAREs, Cpx, Syt1 wild type and mutants) were expressed and purified as described previously (Mahal et al., 2002; Krishnakumar et al., 2013; Krishnakumar et al., 2011; Weber et al., 1998). In brief, proteins were expressed in E. coli strain Rosetta2(DE3) (Novagen, Madison, WI) using 0.5 mM IPTG for 4 hr. Cells were pelleted and lysed using a cell disruptor (Avestin, Ottawa, Canada) in HEPES buffer (25 mM HEPES, 400 mM KCl, 4% Triton X-100, 10% glycerol, pH 7.4) containing 0.2 mM Tris(2-carboxyethyl) phosphinehydrochloride (TCEP), and 1 mM phenylmethylsulfonyl fluoride (PMSF). Samples were clarified using a 45Ti rotor (Beckman Coulter, Atlanta, GA) at 40 K RPM for 30 min and subsequently incubated with Ni-NTA resin (Thermofisher Scientific, Waltham, MA) overnight at 4°C. The resin was washed with HEPES buffer (for Cpx) or HEPES buffer supplemented with 1% octylglucoside (Syt1 and SNAREs). Protein was eluted using 350 mM Imidazole and the concentration was determined using a Bradford Assay (BioRad, Hercules, CA) with BSA as a standard. Syt1 was further treated with Benzonase (Millipore Sigma, Burlington, MA) at room temperature for 1 hr, followed by ion exchange (Mono S, AKTA purifier, GE) to remove DNA/RNA contamination. The purity was verified using SDS-PAGE analysis and all proteins were flash frozen and stored at −80°C with 10% glycerol without significant loss of function.
 
-## Liposome preparation
+### Liposome preparation
 
 t-SNAREs and VAMP2 (±Syt1) containing SUV were prepared using rapid detergent (1% Octylglucoside) dilution and dialysis method as described previously (Weber et al., 1998; Ji et al., 2010). VAMP2 (±Syt1) containing SUVs were subjected to additional purification on the discontinuous Nycodenz gradient. The lipid composition was 80 (mole)% DOPC, 15% DOPS, 3% PIP2% and 2% NBD-PE for t-SNARE SUV and 88% DOPC, 10% PS and 2% ATTO647-PE for VAMP2 (±Syt1) SUVs. To mimic physiological copy numbers of protein, we used an input of protein: lipid ratio as 1: 400 for t-SNARE, 1:100 for VAMP2 for physiological density, 1: 500 for VAMP2 at low copy number, and 1: 250 for Syt1. This was based on well-established parameters namely that the reconstitution efficiency for SNAREs and Syt1 is roughly 40–50% (densitometry analysis of the proteoliposomes) and only approximately 50–60% of the proteins are externally oriented (chymotrypsin protection analysis) (Ji et al., 2010; Ramakrishnan et al., 2019; Weber et al., 1998). Based on the densitometry analysis of Coomassie-stained SDS gels, we estimated vesicles at physiological density, contained 74 ± 4 and 26 ± 6 copies of outward-facing VAMP2 and Syt1 respectively (Figure 1—figure supplement 1) and vesicles at low copy number of VAMP2 contained 13 ± 2 and 26 ± 6 copies of outward-facing VAMP2 and Syt1 respectively.
 
-## Single vesicle fusion assay
+### Single vesicle fusion assay
 
 All the single-vesicle fusion measurements were carried out with suspended lipid bilayers as previously described (Ramakrishnan et al., 2019; Ramakrishnan et al., 2018). Briefly, t-SNARE-containing giant unilamellar vesicles as prepared using the osmotic shock protocol (Motta et al., 2015) were busted on freshly plasma-cleaned Si/SiO2 chips containing 5 µm diameter holes in presence of HEPES buffer (25 mM HEPES, 140 mM KCl, 1 mM DTT) supplemented with 5 mM MgCl2. The bilayers were extensively washed with HEPES buffer containing 1 mM MgCl2 and the fluidity of the t-SNARE containing bilayers was verified using fluorescence recovery after photo-bleaching using the NBD fluorescence. In some experiments, we labeled the t-SNAREs with Alexa-488 and confirmed protein mobility as described previously (Ramakrishnan et al., 2018).
 
@@ -123,10 +637,10 @@ Vesicles (100 nM lipids) were added from the top using a pipette and allowed to 
 
 All experiments were carried out at 37°C using an inverted laser scanning confocal microscope (Leica-SP5) equipped with a multi-wavelength argon laser including 488, diode lasers (532 and 641 nm), and a long-working distance 40X water immersion objective (NA 1.1). The emission light was spectrally separated and collected by photomultiplier tubes. To cover large areas of the planar bilayer and simultaneously record large ensembles of vesicles, the movies were acquired at a speed of 150 ms per frame. Accurate quantification and fate of each vesicles were analyzed using our custom written MATLAB script described previously (Ramakrishnan et al., 2018). The files can be downloaded from MATLAB Central at the following website: https://www.mathworks.com/matlabcentral/fileexchange/66521-fusion-analyzer-fas. Note: We excluded vesicles bound to the edge of the holes as they may not be representative of vesicles bound to the free-floating membrane. We thus used only the centrally-docked vesicles for analysis. We did not observe any change in ATTO-647-PE fluorescence for the vesicles that remain docked and un-fused during the observation period or post Ca2+-addition. Thus, we can rule out hemi-fusion diaphragm formation as a possible explanation for the observed ‘clamped’ or ‘un-fused’ state.
 
-## Single-vesicle docking analysis
+### Single-vesicle docking analysis
 
 To get an accurate count of the docked vesicles, we used VAMP2 protein with mutations in the C-terminal half (L70D, A74R, A81D and L84D; VAMP24X) that eliminates fusion without impeding the docking process (Krishnakumar et al., 2013). For the docking analysis, VAMP24X containing SUVs (vSUV4X) were introduced into the chamber and allowed to interact with the t-SNARE bilayer. After a 10 min incubation, the bilayer was thoroughly washed with running buffer (3x minimum) and the number of docked vesicles were counted. For an unbiased particle count, we employed a custom-written algorithm to count particles from top-left to bottom-right that ensures every spot is counted only once.
 
-## Calcium dynamics
+### Calcium dynamics
 
 To quantify the kinetics of Ca2+-triggered vesicle fusion, we used a Ca2+-sensor dye, Calcium Green conjugated to a lipophilic 24-carbon alkyl chain (Calcium Green C24) introduced in the suspended bilayer to directly monitor the arrival of Ca2+. Calcium green is a high-affinity Ca2+-sensor (Kd of ~75 nM) and exhibits a large fluorescent increase (at 532 nm) upon binding Ca2+. To accurately estimate the arrival of Ca2+ to/near the vesicles docked on the bilayer, we used confocal microscopy equipped with resonant scanner focused at or near the bilayer membrane and acquired movies at a speed of up to 36 msec per frame. We typically observed the fluorescence signal increase at the bilayer surface between about three frames (~100 msec) after Ca2+ addition (Figure 2—figure supplement 1). We therefore used 100 msec as the benchmark to accurately estimate the time-constants for the Ca2+-triggered fusion reaction.

@@ -26,17 +26,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03dbr7087 Centre for Global Health Research, Unity Health Toronto and University of Toronto Toronto Canada
-2. https://ror.org/01s5axj25 Lunenfeld-Tanenbaum Research Institute, Sinai Health Toronto Canada
-3. https://ror.org/012x5xb44 Unity Health Toronto Toronto Canada
-4. https://ror.org/026pg9j08 Toronto General Hospital, University Hospital Network Toronto Canada
+1. Centre for Global Health Research, Unity Health Toronto and University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+2. Lunenfeld-Tanenbaum Research Institute, Sinai Health Toronto Canada ([ROR:01s5axj25](https://ror.org/01s5axj25))
+3. Unity Health Toronto Toronto Canada ([ROR:012x5xb44](https://ror.org/012x5xb44))
+4. Toronto General Hospital, University Hospital Network Toronto Canada ([ROR:026pg9j08](https://ror.org/026pg9j08))
 5. Angus Reid Institute Vancouver Canada
 
 † Corresponding author
 
 ## Abstract
 
-Few national-level studies have evaluated the impact of ‘hybrid’ immunity (vaccination coupled with recovery from infection) from the Omicron variants of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). From May 2020 to December 2022, we conducted serial assessments (each of ~4000–9000 adults) examining SARS-CoV-2 antibodies within a mostly representative Canadian cohort drawn from a national online polling platform. Adults, most of whom were vaccinated, reported viral test-confirmed infections and mailed self-collected dried blood spots (DBSs) to a central lab. Samples underwent highly sensitive and specific antibody assays to spike and nucleocapsid protein antigens, the latter triggered only by infection. We estimated cumulative SARS-CoV-2 incidence prior to the Omicron period and during the BA.1/1.1 and BA.2/5 waves. We assessed changes in antibody levels and in age-specific active immunity levels. Spike levels were higher in infected than in uninfected adults, regardless of vaccination doses. Among adults vaccinated at least thrice and infected more than 6 months earlier, spike levels fell notably and continuously for the 9-month post-vaccination. In contrast, among adults infected within 6 months, spike levels declined gradually. Declines were similar by sex, age group, and ethnicity. Recent vaccination attenuated declines in spike levels from older infections. In a convenience sample, spike antibody and cellular responses were correlated. Near the end of 2022, about 35% of adults above age 60 had their last vaccine dose more than 6 months ago, and about 25% remained uninfected. The cumulative incidence of SARS-CoV-2 infection rose from 13% (95% confidence interval 11–14%) before omicron to 78% (76–80%) by December 2022, equating to 25 million infected adults cumulatively. However, the coronavirus disease 2019 (COVID-19) weekly death rate during the BA.2/5 waves was less than half of that during the BA.1/1.1 wave, implying a protective role for hybrid immunity. Strategies to maintain population-level hybrid immunity require up-to-date vaccination coverage, including among those recovering from infection. Population-based, self-collected DBSs are a practicable biological surveillance platform. Funding was provided by the COVID-19 Immunity Task Force, Canadian Institutes of Health Research, Pfizer Global Medical Grants, and St. Michael’s Hospital Foundation. PJ and ACG are funded by the Canada Research Chairs Program.
+Background:Few national-level studies have evaluated the impact of ‘hybrid’ immunity (vaccination coupled with recovery from infection) from the Omicron variants of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).Methods:From May 2020 to December 2022, we conducted serial assessments (each of ~4000–9000 adults) examining SARS-CoV-2 antibodies within a mostly representative Canadian cohort drawn from a national online polling platform. Adults, most of whom were vaccinated, reported viral test-confirmed infections and mailed self-collected dried blood spots (DBSs) to a central lab. Samples underwent highly sensitive and specific antibody assays to spike and nucleocapsid protein antigens, the latter triggered only by infection. We estimated cumulative SARS-CoV-2 incidence prior to the Omicron period and during the BA.1/1.1 and BA.2/5 waves. We assessed changes in antibody levels and in age-specific active immunity levels.Results:Spike levels were higher in infected than in uninfected adults, regardless of vaccination doses. Among adults vaccinated at least thrice and infected more than 6 months earlier, spike levels fell notably and continuously for the 9-month post-vaccination. In contrast, among adults infected within 6 months, spike levels declined gradually. Declines were similar by sex, age group, and ethnicity. Recent vaccination attenuated declines in spike levels from older infections. In a convenience sample, spike antibody and cellular responses were correlated. Near the end of 2022, about 35% of adults above age 60 had their last vaccine dose more than 6 months ago, and about 25% remained uninfected. The cumulative incidence of SARS-CoV-2 infection rose from 13% (95% confidence interval 11–14%) before omicron to 78% (76–80%) by December 2022, equating to 25 million infected adults cumulatively. However, the coronavirus disease 2019 (COVID-19) weekly death rate during the BA.2/5 waves was less than half of that during the BA.1/1.1 wave, implying a protective role for hybrid immunity.Conclusions:Strategies to maintain population-level hybrid immunity require up-to-date vaccination coverage, including among those recovering from infection. Population-based, self-collected DBSs are a practicable biological surveillance platform.Funding:Funding was provided by the COVID-19 Immunity Task Force, Canadian Institutes of Health Research, Pfizer Global Medical Grants, and St. Michael’s Hospital Foundation. PJ and ACG are funded by the Canada Research Chairs Program.
 
 ## Introduction
 
@@ -80,11 +80,52 @@ Among adults vaccinated at least thrice and infected more than 6 months prior to
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89961/elife-89961-fig3-v2.jpg)
 
-**Figure 3.:** A), sex- (B), and ethnicity-specific (C) trends to 9 months in levels of antibodies to the spike protein among adults vaccinated with three to four doses, stratified by infection more than 6 months ago or less than 6 months ago.See footnote to Figure 2 for testing details. We created smoothed curves and 95% confidence intervals using locally weighted scatterplot smoothing with span parameter of 0.8 (Fox and Weisberg, 2018).
+**Figure 3.:** See footnote to Figure 2 for testing details. We created smoothed curves and 95% confidence intervals using locally weighted scatterplot smoothing with span parameter of 0.8 (Fox and Weisberg, 2018).
 
 Among a convenience sample of 39 adults, all 32 vaccinated adults had positive spike T-cell responses. The T-cell titers and spike antibody levels correlated (Appendix 2—figure 5).
 
 Applying the Ab-C results, after standardizing for vaccination status, region, age, and sex to the national profile of Canadian adult population, yielded estimates of cumulative incidence of SARS-CoV-2 infection rising from about 13% before Omicron to 78% by December 2022. This equates to about 25 million infected adults cumulatively. Canada had about 50,000 COVID deaths from March 2020 to December 2022, corresponding to about 6% higher mortality at all ages versus background death rates (World Health Organization, 2022). Over 90% of Canadian COVID deaths occurred above age 60 years (Public Health Agency of Canada, 2023). Despite the rising cumulative incidence, the COVID-19 weekly death rate per million population during the Omicron BA.2/5 waves (7.7) was less than half of the weekly death rate during the Omicron BA.1/1.1 wave (16.6). This suggests that hybrid immunity played a role in reducing severe disease and deaths (Table 1), at least prior to the eventual waning of the immunity (Chemaitelly et al., 2022; Chemaitelly et al., 2021).
+
+**Table 1.**
+ Cumulative incidence, numbers of infected adults, cumulative deaths, and period COVID-19 mortality rate in Canada during various SARS-CoV-2 viral waves.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time period</th>
+      <th>Cumulative incidence*% (95% CI)</th>
+      <th>No of adult (age 18 or older) infections in millions</th>
+      <th>Cumulative no of deaths†</th>
+      <th>COVID-19 mortality rate per million per week during the relevant period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-Omicron2020–2021</td>
+      <td>12.7 (11.2–14.1)</td>
+      <td>3.9 (3.5–4.4)</td>
+      <td>30,149</td>
+      <td>8.6</td>
+    </tr>
+    <tr>
+      <td>Omicron BA.1/1.1January–March 2022</td>
+      <td>35.7 (34.0–37.4)</td>
+      <td>11.3 (10.7–11.8)</td>
+      <td>37,750</td>
+      <td>16.6</td>
+    </tr>
+    <tr>
+      <td>Omicron BA.2/5April–December 2022</td>
+      <td>77.7 (75.7–79.6)</td>
+      <td>24.6 (23.9–25.2)</td>
+      <td>49,674</td>
+      <td>7.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Post-stratified for geographic region, age, sex, and vaccination status to derive the mean estimate (supplementary methods).†We used data by end of December 2021, March 2022, and December 2022 from Public Health Agency of Canada’s COVID-19 epidemiology update (https://health-infobase.canada.ca/covid-19/) for total number of deaths (Public Health Agency of Canada, 2023). Applying the proportion of long-term care deaths from Long-term Care COVID-19 Tracker (https://ltc-covid19-tracker.ca) to the last period, 19,789 of total cumulative deaths occurred in long-term care. Of all long-term care deaths, about 80% occurred during the pre-Omicron period, mostly during the first viral wave of March–June 2020 (Figure 1). Over 90% of all COVID deaths occurred at ages 60 or older._
 
 There were marked increases in infection among younger (18–59 years) and older (60+ years) mostly vaccinated adults, rising from about 11% in each age group by August 2021 to about 86% and 75%, respectively, by December 2022 (Figure 4). However, fully 35% of adults above age 60, who are most at risk of hospitalization or death, had their last vaccine dose more than 6 months ago, and about 25% remained uninfected.
 

@@ -30,13 +30,220 @@ The sequential choice model (SCM) makes a prediction in direct opposition to the
 
 Thus, the DCM and SCM models make opposite testable predictions about the differences between choice and sampling latencies (i.e., longer or shorter) (Table 1). Interestingly, however, both models make one general common prediction regarding the relationship between sampling latencies and preference, though for different reasons. Both models predict that individuals that respond faster for one option relative to its alternative during sampling trials should also choose the former more frequently than the later during choice trials. In other terms, there should be a positive correlation between individual sampling latencies and individual preferences during choice. According to the SCM, the nature of this relationship should also be predictive since response latencies play a causal role in the establishment of preference in this model (Shapiro et al., 2008; Vasconcelos et al., 2010). In the DCM, sampling latencies rather represent another measure of the options' relative values.
 
+**Table 1.**
+ Unique predictions of the different decision-making models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th>Predictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Deliberative choice model (DCM)</td>
+      <td>Sampling latencies &lt; choice latencies</td>
+    </tr>
+    <tr>
+      <td>Sequential choice model (SCM)</td>
+      <td>Sampling latencies &gt; choice latencies</td>
+    </tr>
+  </tbody>
+</table>
+
 The goal of the present study is to test these predictions by conducting a systematic retrospective analysis of all cocaine versus saccharin choice experiments that have been conducted in rats in our laboratory over the past 12 years. This allowed us to probe the decision-making mechanisms underlying choice between drug and nondrug rewards as a function of prior training (limited or extended).
 
 ## Results
 
-## Lengthening of choice latencies after limited training
+### Lengthening of choice latencies after limited training
 
 We first assessed distributions of response latencies and preference in experiments without prior instrumental training before choice testing (Figure 1A and B; Table 2, W/O training set). Choice sessions consisted of four sampling trials followed by eight choice trials and separated with 10 min inter-trial intervals. During sampling, each response option was presented twice, alternatively and sequentially. During choice trials, both response options were presented simultaneously (Figure 1A). We assumed that without prior instrumental training, behavior would more likely involve deliberative processes. Indeed, rats’ behavior was initially less efficient in the W/O training set with a lower percentage of completed trials (higher number of omission) and longer choice latencies than rats having received prior instrumental training (Figure 1C and D; first session, % completed trials: Z = 3.63, p<0.001; choice latency: Z = −4.57, p<0.0001). However, after stabilization of preference with repeated choice testing, the average performance became similar between groups (Figure 1C and D; last session; % completed trials: Z = 0.87, p>0.1; choice latency: Z = −0.51, p>0.1). In all analyses, sampling and choice latencies for each response option were analyzed for each individual rat over the last three stable choice sessions (Figure 1B; gray area). In total, there were six sampling latencies per option and per rat and 24 choice latencies, with a variable number of responses for cocaine and saccharin, depending on the rat’s preference.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64993/elife-64993-fig1-v1.jpg)
+
+**Figure 1.:** (A) Diagram of the choice procedure comprising four sampling trials followed by eight choice trials, and separated by 10 min inter-trial intervals. (B) Experimental timeline in data sets without (W/O) and with (W/) prior operant training before choice testing. (C and D) Mean (± SEM) percentage of completed trials (C) and mean (± SEM) choice latency (D) across choice sessions in the W/O Training (white circles) and W/Training (black circles) sets. In the W/training set, only the last five choice sessions comprising data for all 150 rats are represented.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64993/elife-64993-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) In a deliberative decision-making model, individuals assign values to the different options and compare these values at the time of choice to select to most profitable option (top panel). Alternatively, the SCM assumes that individuals make no comparison between options to make a choice (bottom panel). Instead, decision-making mechanisms are adapted to sequential encounters, in which individuals decide to accept or reject single opportunities. (B) The SCM proposes that individuals assign independently to each option a subjective value based on the option’s profitability relative to background opportunities. This value is expressed as a probability to accept each option instead of pursuing the search (i.e. the response latency). During a choice between two options A and B, the tendency to respond for both options is compared to a threshold. The response reaching the threshold first wins the race and is selected, while the alternative response is aborted (top panel). This results in a cross-censorship between distributions of response latencies (bottom panel); only the fastest response is selected and produces a latency observation. (C) When options are presented sequentially during sampling trials, there is no cross-censorship and the distributions of latencies are entirely expressed. (D) However, when options are presented simultaneously during choice trials, the cross-censorship described in (B) leads to a shortening of latencies during choice compared to sampling trials; the preferred option A is more often selected because response latencies for this option are overall shorter (top panel) but because of the overlap in distributions of latencies, the least preferred option B can occasionally be selected (bottom panel). Choices of option A are less censored by longer responses for option B (blue gradient, top panel); thus, the expected shift toward shorter latencies is weaker for the preferred option. In contrast, choices of the least preferred option B are largely censored by responses for option A (pink gradient, bottom panel). Thus, the expected shortening of choice latencies is stronger for the least preferred option.
+
+**Table 2.**
+ Summary and conditions of experiments included in the analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>N°Exp</th>
+      <th>Exp set</th>
+      <th>N</th>
+      <th>Prior training</th>
+      <th>Training session limit</th>
+      <th>Nb training sessions</th>
+      <th>Other conditions</th>
+      <th>Nb choice sessions (FR2)</th>
+      <th>Selected choice sessions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>W/O training</td>
+      <td>9</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>***</td>
+      <td>5</td>
+      <td>s13-s15</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>W/O training</td>
+      <td>11</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>***</td>
+      <td>5</td>
+      <td>s13-s15</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>W/O training</td>
+      <td>11</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>***</td>
+      <td>5</td>
+      <td>s13-s15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>31</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>W/training</td>
+      <td>18</td>
+      <td>FR1</td>
+      <td>30 rewards/3 hr</td>
+      <td>26</td>
+      <td>***</td>
+      <td>8</td>
+      <td>s32-s34</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>W/training</td>
+      <td>19</td>
+      <td>FR1</td>
+      <td>30 rewards/3 hr</td>
+      <td>26</td>
+      <td>***</td>
+      <td>8</td>
+      <td>s32-s34</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>W/training</td>
+      <td>11</td>
+      <td>FR1</td>
+      <td>30 rewards/3 hr</td>
+      <td>18</td>
+      <td>1 month home-cage saccharin access</td>
+      <td>10</td>
+      <td>s26-s28</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>W/training</td>
+      <td>22</td>
+      <td>FR1/FR2</td>
+      <td>30 rewards/3 hr</td>
+      <td>26</td>
+      <td>cannula intra-OFC</td>
+      <td>10</td>
+      <td>s34-s36</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>W/training</td>
+      <td>21</td>
+      <td>FR1</td>
+      <td>30 rewards/3 hr</td>
+      <td>23</td>
+      <td>cannula intra-OFC</td>
+      <td>9</td>
+      <td>s30-s32</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>W/training</td>
+      <td>12</td>
+      <td>FR1/FR2</td>
+      <td>30 rewards/3 hr</td>
+      <td>21</td>
+      <td>***</td>
+      <td>9</td>
+      <td>s28-s30</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>W/training</td>
+      <td>23</td>
+      <td>FR1/FR2</td>
+      <td>30 rewards/3 hr</td>
+      <td>32</td>
+      <td>***</td>
+      <td>5</td>
+      <td>s35-s37</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>W/training</td>
+      <td>9</td>
+      <td>FR1</td>
+      <td>30 rewards/3 hr</td>
+      <td>19</td>
+      <td>***</td>
+      <td>5</td>
+      <td>s22-s24</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>W/training</td>
+      <td>15</td>
+      <td>FR1/FR2</td>
+      <td>20 rewards/2 hr</td>
+      <td>21</td>
+      <td>***</td>
+      <td>5</td>
+      <td>s24-s26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>150</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Both decision-making models predict that the relative latency of each response option when encountered sequentially (i.e., sampling phase) should predict which one will be selected when encountered simultaneously (i.e., choice phase). That is, the fastest the response for an option during sampling, the more likely this option will be selected during choice. We first tested this prediction by correlating preference with two estimates of the relative response latency for cocaine versus saccharin during sampling trials; the latency ratio (LR) and the proportion of winning latencies (WL). The LR was computed by dividing the mean saccharin sampling latency by the sum of saccharin and cocaine mean latencies. The WL was computed by estimating the probability that each of the six cocaine sampling latencies was shorter (i.e., a win) than each of the six saccharin sampling latencies when compared two by two. LR and WL scores close to one indicate faster cocaine sampling latencies. We found that both LR and WL were positively correlated with the percentage of cocaine choice (Figure 2A and B; LR: R = 0.62, p<0.001; WL: R = 0.42, p<0.05). These results suggest that the faster the animals respond for cocaine relative to saccharin during sampling trial, the more they would prefer cocaine.
 
@@ -46,7 +253,7 @@ Both decision-making models predict that the relative latency of each response o
 
 To determine which decision-making model best predicts choice behavior after limited training, we analyzed the distribution of sampling and choice latencies during saccharin trials in saccharin-preferring (SP) rats. Among the 31 rats included in the analysis, 29 expressed a preference for saccharin (Figure 2C). In this subgroup, the distribution of choice latencies was shifted to the right compared to the distribution of sampling latencies (Figure 2D). Accordingly, choice latencies were significantly longer than sampling latencies (Figure 2E; N = 29, Wilcoxon test: p<0.0001; effect size: −0.99). These results are consistent with the involvement of a deliberative decision-making mechanism.
 
-## Shortening of choice latencies after extended training
+### Shortening of choice latencies after extended training
 
 We next assessed preference and response latencies during sampling and choice in experiments including prior instrumental training before choice testing (Figure 1A and B; Table 2, W/training set). Importantly, rats received similar cocaine and saccharin self-administration training on alternate daily sessions before choice testing (Figure 1B). We first tested the general common prediction that sampling latencies should correlate with preference and found that, similar to the W/O training set, both LR and WL were positively correlated with the percentage of cocaine choice (Figure 3A and B; LR: R = 0.67, p<0.0001; WL: R = 0.64, p<0.0001), indicating that fast responses for cocaine during sampling trials are associated with higher preference for this option during choice.
 
@@ -59,6 +266,18 @@ As expected from prior studies (Cantin et al., 2010; Lenoir et al., 2007), the m
 The DCM and SCM make opposite predictions when comparing sampling and choice latencies (Table 1). To test these predictions, we compared the individual distributions of sampling and choice latencies for each reward, separately. To avoid any selection bias resulting from saccharin preference in the majority of rats, choice and sampling latencies distributions were compared within-subjects in different preference groups, separately. Specifically, sampling and choice latencies were only compared for the option that was preferred (saccharin for SP rats, cocaine for CP rats) or chosen (saccharin or cocaine in IND rats) during choice trials.
 
 In SP rats, the distribution of sampling and choice latencies on saccharin trials did not significantly differ, although there was a trend toward longer choice latencies (Figure 4A; N = 109; Wilcoxon test: p=0.077; effect size: −0.19). However, in CP rats, we observed a leftward shift in the distribution of latencies during cocaine choice trials compared to cocaine sampling trials (Figure 4B). Accordingly, cocaine choice latencies were significantly shorter than cocaine sampling latencies (Figure 4B; N = 19, Wilcoxon test: p<0.01; effect size: 0.75). IND rats selected both cocaine and saccharin during choice trials allowing for similar ranges in the number of cocaine and saccharin choice latencies (i.e. between 8 and 16 latencies per reward). When comparing saccharin trials, we observed no difference between sampling and choice latencies, similar to saccharin trials in SP rats (Figure 4C; N = 23; Wilcoxon test: p>0.9; effect size: −0.0072). However, during cocaine trials, the distribution of choice latencies was shifted to the left compared to the distribution of sampling latencies. Likewise, choice latencies were significantly shorter than sampling latencies (Figure 4D; N = 23; Wilcoxon test: p<0.0001; effect size: 0.96). These results partially validate the SCM prediction, since choice latencies were shorter than sampling latencies for the cocaine option but not for the saccharin option. Importantly, although rare, omissions were more frequent during sampling than choice trials, which could have biased the results reported here. However, similar results were found when omission trials were excluded (saccharin trials in SP rats: p=0.06; Cocaine trials in CP rats: p<0.01; saccharin trials in IND rats: p>0.9; cocaine trials in IND rats: p<0.0001).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64993/elife-64993-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Distributions of sampling and choice latencies during saccharin trials in SP rats (A), cocaine trials in CP rats (B), and saccharin (C) or cocaine (D) trials in IND rats. Insets: Box plots of sampling and choice latencies. Boxes extend from the lower to the upper quartile values with a horizontal line at the median. The whiskers extend from the box at 1.5 times the interquartile range. Gray lines represent mean sampling and choice latencies of individual rats. *p<0.01, **p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64993/elife-64993-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Box plots of sampling and choice latencies during the last three sessions preceding the first devaluation test using sensory-specific satiety (A) and the second devaluation test using conditioned taste aversion (B). Boxes extend from the lower to the upper quartile values with a horizontal line at the median. The whiskers extend from the box at 1.5 times the interquartile range. Gray lines represent mean sampling and choice latencies of individual rats. Red triangles represent the population mean.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64993/elife-64993-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A and B) Box plots of sampling and choice latencies during privation sessions, before (A) and at the end (B) of devaluation training. Boxes extend from the lower to the upper quartile values with a horizontal line at the median. The whiskers extend from the box at 1.5 times the interquartile range. Gray lines represent mean sampling and choice latencies of individual rats. **p<0.01.
 
 Although the SCM prediction was only partially validated, the results above suggest that after more extended training, choice behavior does not anymore involve a deliberation over options value, a finding in agreement with prior studies showing that preference for the nondrug reward is under habitual control (Vandaele et al., 2020; Vandaele et al., 2019a). We next asked whether analysis of choice and sampling latencies in these experiments would confirm the lack of deliberation suggested by rats’ preference insensitivity to devaluation of the nondrug reward. In the first experiment, rats were trained to choose between saccharin and cocaine, and saccharin was devaluated by sensory-specific satiety (test 1) or induction of a conditioned taste aversion (test 2). Lever pressing on both levers was not affected by either devaluation methods during the tests conducted in extinction, indicating that responding for saccharin was habitual. Analysis of saccharin latencies in SP and IND rats during the last three choice sessions immediately preceding devaluation tests indicates no significant difference between mean saccharin sampling and choice latencies (Figure 4—figure supplement 1; N = 17, Test 1 Wilcoxon test: p>0.2; effect size: −0.32; Test 2 Wilcoxon test: p>0.2; effect size: −0.29). Although this result does not support the SCM, it confirms that under habitual control, the lack of deliberation can be inferred from comparably short choice and sampling latencies.
 
@@ -86,41 +305,41 @@ To conclude, this systematic analysis has begun to probe the decision-making pro
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 The data analyzed in this study have been obtained from previous experiments conducted in our laboratory over the past 12 years. All experimental subjects were male adult Wistar rats (Charles River, L’Arbresle, France). Rats were housed in groups of two or three and maintained in a temperature-controlled vivarium (23° C) with a 12 hr reverse light–dark cycle. Testing occurred during the dark phase of the cycle and water and food were available ad libitum in all experiments. All experiments were carried out in accordance with institutional and international standards of care and use of laboratory animals [UK Animals (Scientific Procedures) Act, 1986; and associated guidelines; the European Communities Council Directive (2010/63/UE, 22 September 2010) and the French Directives concerning the use of laboratory animals (décret 2013–118, 1 February 2013)]. All experiments have been approved by the Committee of the Veterinary Services Gironde, agreement number B33-063-5.
 
-## Initial operant training
+### Initial operant training
 
 In the first set of experiments, a total of 31 rats were directly tested in the choice schedule without prior operant training (Table 2; W/O training set).
 
 In the second set of experiments, a total of 150 rats were first trained several weeks (3-5) under a fixed-ratio (FR) schedule of saccharin and cocaine self-administration on alternate daily sessions, 6 days a week, before choice testing (Table 2; W/training set). FR training allowed rats to learn the value of each reward and to associate its delivery with a different response option before choice testing. During FR training, rats had access to a single response option per session with the lever continuously available. On saccharin sessions, lever pressing on the saccharin lever was rewarded by a 20 s access to water sweetened with 0.2% of sodium saccharin delivered in the adjacent drinking cup. During the first 3 s of each 20 s access to sweet water, the drinking cup was filled automatically with sweet water; during the next 17 s, additional volumes of sweet water were obtained on demand by voluntary licking. On cocaine sessions, lever pressing on the alternative lever was rewarded by one intravenous dose of cocaine (0.25 mg delivered over 4 s). For both cocaine and saccharin sessions, reward delivery initiated a concomitant 20 s time-out period signaled by the illumination of the cue-light above the available lever. During the time-out period, responding had no scheduled consequences. Sessions ended after rats had earned a maximum of 20–30 saccharin or cocaine rewards or 2–3 hr had elapsed (Table 2).
 
-## Discrete-trials choice protocol
+### Discrete-trials choice protocol
 
 Each daily choice session consisted of 12 trials, spaced by 10 min inter-trials intervals, and divided into two successive phases, sampling and choice. The sampling phase was composed of four sampling trials in which each lever and thus each response option was presented alternatively and sequentially. If rats responded twice within 5 min on the available lever, they were rewarded by the corresponding reward. Reward delivery was signaled by the immediate retraction of the lever and illumination of a cue-light above it. If rats failed to complete the response requirement within 5 min, the lever was retracted until the next trial 10 min later. The choice phase consisted of eight choice trials during which the two response options were presented simultaneously. Specifically, each choice trial began with the simultaneous presentation of both levers S and C and rats could select one of the two levers by responding twice consecutively on it to obtain the corresponding reward. Reward delivery was signaled by the simultaneous retraction of both levers and illumination of the cue-light above the selected lever. If rats failed to respond on either lever within 5 min, both levers were retracted and no cue-light and reward was delivered. Importantly, 10 min inter-trial intervals were set to minimize the direct pharmacological effects of cocaine on subsequent trials and prevent rats from choosing under the influence of the drug (Lenoir et al., 2007; Vandaele et al., 2016; Freese et al., 2018). A schematic diagram of the forced choice trials procedure can be found in Ahmed, 2012; Lenoir et al., 2013b.
 
 In the W/O training set, rats were first trained in the discrete-trials choice schedule with a FR1 for 10 sessions before testing with the final FR2 schedule for five sessions.
 
-## Systematic analysis
+### Systematic analysis
 
-## Selection of experiments and data analysis
+#### Selection of experiments and data analysis
 
 Only choice experiments that were conducted under similar conditions (e.g., initial FR training, conditions of reward delivery, inter-trial intervals, etc.) and that resulted in a stable preference within 5–10 choice sessions (i.e., no increasing or decreasing trend and significant correlation between preference scores over the last three sessions) were included in the present analysis (Table 2). The last three sessions of the first experimental phase of choice testing were selected for the analysis to ensure stable preference with low within-subject variability (Figure 1B).
 
 Sampling and choice latencies for each response option were analyzed for each individual rat over the last three stable choice sessions. In total, there were six sampling latencies per option and per rat and 24 choice latencies, with a variable number of responses for cocaine and saccharin, depending on the rat’s preference. For convenience, performance during choice was expressed in percent of cocaine choices. Response latencies corresponded to the time to complete the FR2 requirement from trial onset (signaled by the lever insertion). When a rat failed to respond within 5 min after trial onset (omission), it was assigned a maximal response latency of 300 s. However, omissions occur rarely.
 
-## Test of the general common prediction
+#### Test of the general common prediction
 
 To estimate the relative speed at which the cocaine and saccharin options are selected during sampling trials, we computed for each individual rat the latency ratio (LR) and the proportion of winning latencies (WL). The LR was computed by dividing the mean saccharin sampling latency by the sum of saccharin and cocaine mean latencies. Thus, LR values close to zero indicate faster saccharin sampling latencies while LR values close to one indicate faster cocaine sampling latencies. The WL was computed by estimating the probability that each of the six cocaine sampling latencies was shorter (i.e., a win) than each of the six saccharin sampling latencies when compared two by two. The WL values ranged from 0 (all cocaine latencies are longer than the longest saccharin latency or cocaine never wins the race) to 100% (all cocaine latencies are shorter than the shortest saccharin latency or cocaine always wins the race). Correlation analyses were conducted between these two measures of relative latencies and the percentage of cocaine choices.
 
 To determine whether and to what extent, cocaine and saccharin sampling latencies could predict rat’s preference profile, a LDA model (LinearDiscriminantAnalysis from sklearn library in Python) was trained on the mean cocaine and saccharin sampling latencies to classify the preference of individual rats as SP, IND, or CP. Rats were considered as SP, IND, or CP if their preference was below 33.3%, between 33.3% and 66.6% or above 66.6%, respectively. LDA models were trained on 90% of the data set and used to classify rats’ preference in the remaining 10% (stratified 10-fold cross-validation with 20 iterations; RepeatedStratifiedKFold from sklearn library in Python). To account for the unbalanced number of SP, IND, and CP rats, we performed the analysis on the same number of rats in each preference group by randomly sampling subjects in the SP and IND groups based on the number of CP rats (N = 19). This analysis was performed on 50 random selections of SP and IND rats and the performance across all 50 repetitions was averaged to determine the model accuracy. The same analysis was conducted with the preference group identities shuffled to determine the model accuracy expected from chance. To assess whether decoding accuracy significantly departed from chance, a permutation test was conducted.
 
-## Comparison of choice and sampling latencies
+#### Comparison of choice and sampling latencies
 
 To test predictions of the different decision-making models, we compared the distributions of sampling and choice latencies for each response option. Note that the number of choice latencies (i.e. max. 24) was larger than the number of sampling latencies (six per option) and that among choice trials, the number of saccharin responses was disproportionally higher than cocaine responses because of preference for saccharin in the majority of rats. To avoid any selection bias related to differences in preference, choice and sampling responses for saccharin were compared in SP (<33.3% cocaine choice) and IND rats (33.3–66.6% cocaine choice) whereas choice and sampling responses for cocaine were compared in CP (>66.6% cocaine choice) and IND rats. Note that the IND group comprises comparable numbers of cocaine and saccharin choice latencies allowing for analysis of both reward responses in this subgroup of rats.
 
-## Independent confirmatory analysis
+#### Independent confirmatory analysis
 
 To confirm whether the engagement of deliberative process could be inferred from an analysis of response latencies, choice and sampling latencies were compared in two independent experiments testing preference sensitivity to devaluation of the nondrug reward (Vandaele et al., 2020; Vandaele et al., 2019a). In the first experiment, 20 male Sprague Dawley rats were given a choice between cocaine and saccharin, as described above. We have previously shown that responding for saccharin was not affected by devaluation of saccharin with sensory-specific satiety (test 1) or conditioned taste aversion (test 2) (Vandaele et al., 2020). Saccharin sampling and choice latencies across the last three sessions immediately preceding devaluation tests were analyzed. CP rats (>66.6% cocaine choice) were excluded from this analysis.
 
@@ -128,6 +347,6 @@ In the second experiment, 28 male Wistar rats were water-restricted and allowed 
 
 A detailed description of the methods for these two experiments is available in Vandaele et al., 2020; Vandaele et al., 2019a.
 
-## Statistical analysis
+### Statistical analysis
 
 Linear regressions were tested with the Spearman's rank correlation test. Mean sampling and choice latencies were compared within subject using the non-parametric Wilcoxon test. The effect sizes were estimated with the rank-biserial correlation. Following the LDA, a permutation test was conducted to determine whether the decoding accuracy significantly departed from chance. All statistical analyses were conducted on Python.

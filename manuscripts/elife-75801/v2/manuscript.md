@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Psychology, University of California, Berkeley Berkeley United States
-2. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States
-3. https://ror.org/00hx57361 Department of Psychology, Princeton University Princeton United States
-4. https://ror.org/026nmvv73 Max Planck Institute for Biological Cybernetics Tübingen Germany
-5. https://ror.org/03v76x132 Department of Psychology, Yale University New Haven United States
+1. Department of Psychology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Department of Psychology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+4. Max Planck Institute for Biological Cybernetics Tübingen Germany ([ROR:026nmvv73](https://ror.org/026nmvv73))
+5. Department of Psychology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
@@ -46,13 +46,13 @@ A common perturbation technique to elicit sensorimotor adaptation is to introduc
 
 Rather than rotate the position of the feedback cursor with respect to the actual hand position, we opted to use a visual ‘clamp’ where the cursor followed an invariant path with respect to the target (Morehead et al., 2017; Shmuelof et al., 2012). In contrast to traditional movement-contingent feedback, the clamp method eliminates confounding effects that can come about from strategic processes (McDougle et al., 2016; Kim et al., 2020), and the size of the error can be controlled on every trial. The participant was fully informed of this manipulation and was instructed to ignore the task-irrelevant cursor and always reach straight to the target. Despite these instructions, participants’ reach angles gradually shift in the direction opposite the error clamp, showing the key signatures of implicit sensorimotor adaptation (Morehead et al., 2017; Kim et al., 2018; Tsay et al., 2020a; Tsay et al., 2021; Avraham et al., 2021; Poh et al., 2021; Vandevoorde and Orban de Xivry, 2019; Yin and Wei, 2020).
 
-## Sensorimotor adaptation is modulated by arbitrary sensory cues
+### Sensorimotor adaptation is modulated by arbitrary sensory cues
 
 In a standard differential conditioning design, one CS is paired with the US (CS+) and another CS is presented without the US (CS−). Thus, only the CS+ should become associated with the US and result in a CR. To implement this in Experiment 1, we used two arbitrary cues for the CSs – a tone or a light cue (Figures 1A, 2A). For the CS+ condition, the feedback cursor followed a clamped path that was rotated from the target by 15°. Rather than eliminate the US on CS− trials, we used a 0° clamp in which the feedback cursor always moved directly to the target. Thus, there was always a US on each trial, with the 15° US creating an error signal (paired with the CS+) and the 0° US signaling the absence of error (paired with the CS-).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75801/elife-75801-fig2-v2.jpg)
 
-**Figure 2.:** (A) Experimental protocol. During acquisition (white background), a 15° clamp (clockwise [CW]/counterclockwise [CCW], counterbalanced across participants) was associated with CS+ (e.g. a tone) and a 0° clamp with CS− (e.g. a light; counterbalancing the associations with the tone and light across participants). During the probe phase (gray background), the CS+ and CS− were presented without feedback. Throughout the entire experiment, CS+ and CS− trials were randomly interleaved. (B) Mean heading angle (N=16) as a function of trial number. Clamped feedback was presented on all trials during the acquisition phase (white background) and absent on all trials in the probe phase (gray background). Shaded region represents SEM. (C and D) Experimental results for trial-by-trial change (Δ) in heading angle (mean ± SEM) during the acquisition (C) and probe (D) phases. Left panels present the results of a two-way repeated-measures ANOVA for an adaptation effect (main effect of trial n−1, dark vs light blue) and a Pavlovian effect (main effect of the presented CS on the current trial n, filled vs empty bars). The black outlined bar and violin plot (right panel) present the Pavlovian effect, i.e., the subtraction of heading angle changes between CS+ and CS− trials (mean and 95% CI). (E and F) Rescorla-Wagner model simulation results during the acquisition (E), and probe (F) phases are consistent with the experimental results. Dots and thin lines represent individual participants. CS, conditioned stimulus.Figure 2—source data 1.Figure 2B.Figure 2—source data 2.Figure 2C.Figure 2—source data 3.Figure 2D.
+**Figure 2.:** (A) Experimental protocol. During acquisition (white background), a 15° clamp (clockwise [CW]/counterclockwise [CCW], counterbalanced across participants) was associated with CS+ (e.g. a tone) and a 0° clamp with CS− (e.g. a light; counterbalancing the associations with the tone and light across participants). During the probe phase (gray background), the CS+ and CS− were presented without feedback. Throughout the entire experiment, CS+ and CS− trials were randomly interleaved. (B) Mean heading angle (N=16) as a function of trial number. Clamped feedback was presented on all trials during the acquisition phase (white background) and absent on all trials in the probe phase (gray background). Shaded region represents SEM. (C and D) Experimental results for trial-by-trial change (Δ) in heading angle (mean ± SEM) during the acquisition (C) and probe (D) phases. Left panels present the results of a two-way repeated-measures ANOVA for an adaptation effect (main effect of trial n−1, dark vs light blue) and a Pavlovian effect (main effect of the presented CS on the current trial n, filled vs empty bars). The black outlined bar and violin plot (right panel) present the Pavlovian effect, i.e., the subtraction of heading angle changes between CS+ and CS− trials (mean and 95% CI). (E and F) Rescorla-Wagner model simulation results during the acquisition (E), and probe (F) phases are consistent with the experimental results. Dots and thin lines represent individual participants. CS, conditioned stimulus.
 
 During a 600-trial acquisition phase, CS+ and CS− trials were randomly interleaved. Participants exhibited a marked change in movement direction during this phase, reaching an asymptote of ~15° (Figure 2B). The observed rapid adaptation is consistent with previous adaptation studies, particularly those in which the target appears at a single fixed location (Bond and Taylor, 2015; Day et al., 2016; McDougle et al., 2015; McDougle et al., 2017; Poh et al., 2021).
 
@@ -72,9 +72,13 @@ The Pavlovian effect did not appear to be driven by explicit awareness of the CS
 
 In summary, the observed effects of context on implicit sensorimotor adaptation in both the acquisition and probe phases in Experiment 1 are consistent with differential conditioning effects. Feedforward implicit sensorimotor adaptation – here operationalized as a type of CR – was differentially modulated by arbitrary sensory CSs, with a greater response to the CS+, the cue that was paired with a visuomotor error.
 
-## The Rescorla-Wagner model for context-dependent sensorimotor adaptation
+### The Rescorla-Wagner model for context-dependent sensorimotor adaptation
 
-One influential model that has been used to describe contextual effects in associative learning tasks is the Rescorla-Wagner model (Rescorla and Wagner, 1972). This model formalizes changes in CRs via the modulation of learned associations. Here, the associative strengths, V, of the conditioning stimuli are updated according to the learning rule (Equation 1):(1)V[n]=V[n−1]+α⋅β⋅SPE[n−1]; SPE[n−1]=λ−V[n−1]
+One influential model that has been used to describe contextual effects in associative learning tasks is the Rescorla-Wagner model (Rescorla and Wagner, 1972). This model formalizes changes in CRs via the modulation of learned associations. Here, the associative strengths, V, of the conditioning stimuli are updated according to the learning rule (Equation 1):
+
+$$
+V^{[n]}=V^{[n−1]}+\alpha⋅\beta⋅SPE^{[n−1]}; SPE^{[n−1]}=\lambda−V^{[n−1]}
+$$
 
 where V represents the associative strengths between the US and the CS. It is updated based on the sensory prediction error (SPE) presented on trial n−1. The SPE is defined as the difference between the maximum conditioning (asymptotic) level for the US (λ) and the associative strength on the given trial. β is the learning rate parameter of the US, and α represents the salience of the CS. We note that the Rescorla-Wagner model is one of many computational frameworks for associative learning (Courville et al., 2006; Gershman, 2015) and does not provide a mechanistic account for the error-correction process itself (e.g. the fact that the motor system ‘knows’ to update movements in the direction opposite of the error). For simplicity, we assume that the sign of the change in movement direction is coded in specialized neural mechanisms for reducing motor error (Hadjiosif et al., 2021; Herzfeld et al., 2018; Wolpert et al., 1998).
 
@@ -84,7 +88,11 @@ To examine whether the Rescorla-Wagner model can capture differential conditioni
 
 **Figure 3.:** Simulations of the current trial Pavlovian effect, the difference between the change in heading angle on CS+ and CS− trials, for different parameter values as predicted by the Rescorla-Wagner model (left side). The results for the acquisition phase are shown on top and probe phase on bottom. Contours represent the mean ± SEM of the Pavlovian effect from Experiment 1. All parameter values for the state-space model fail to predict a differential response on the current trial for CS+ and CS− trials (right side). CS, conditioned stimulus.
 
-Sensorimotor adaptation is typically described by a ‘state-space’ model in which the motor state (x) is updated according to the following learning rule (Equation 2):(2)x[n]=A∙xn-1+B∙SPEn-1
+Sensorimotor adaptation is typically described by a ‘state-space’ model in which the motor state (x) is updated according to the following learning rule (Equation 2):
+
+$$
+x^{[n]}=A∙x^{n-1}+B∙SPE^{n-1}
+$$
 
 where SPE is the sensory prediction error – the difference between the predicted and the actual sensory feedback – experienced on trial n−1, A is the retention factor, and B is the learning rate. The state-space model is broadly similar to the Rescorla-Wagner (e.g. both models share the Markov property, produce exponential-family learning curves, etc.). However, the basic state-space model is unable to account for context effects. Unlike the Rescorla-Wagner model, it does not include parameters that allow the updating of separate states that are associated with distinct contexts. It predicts the change in behavior based on the outcome of the previous trial (i.e. the adaptation effect); it cannot account for variation in heading angle due to the CS on the current trial (i.e. the Pavlovian effect; Figure 3, right side).
 
@@ -98,9 +106,9 @@ An additional analysis provided further support for an associative learning acco
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75801/elife-75801-fig5-v2.jpg)
 
-**Figure 5.:** (A) Time course of the mean weights (least squares regression β) of the adaptation (trial n−1, gray) and Pavlovian (trial n, blue) effects in Experiment 1 as predicted by the Rescorla-Wagner model (solid lines) and the state-space model (dotted lines). (B) Time course of the mean weights of the adaptation and Pavlovian effects as derived from fits of the experimental results. Shaded regions represent SEM.Figure 5—source data 1.Figure 5B.
+**Figure 5.:** (A) Time course of the mean weights (least squares regression β) of the adaptation (trial n−1, gray) and Pavlovian (trial n, blue) effects in Experiment 1 as predicted by the Rescorla-Wagner model (solid lines) and the state-space model (dotted lines). (B) Time course of the mean weights of the adaptation and Pavlovian effects as derived from fits of the experimental results. Shaded regions represent SEM.
 
-## Pavlovian effects in sensorimotor adaptation are sensitive to the CS-US interval
+### Pavlovian effects in sensorimotor adaptation are sensitive to the CS-US interval
 
 The Pavlovian effects observed in Experiment 1 provide evidence that sensorimotor adaptation can be shaped by arbitrary contextual cues. These results stand in contrast to previous work showing that arbitrary cues are ineffective for separating competing motor memories (e.g. differential responses to clockwise [CW] and counterclockwise [CCW] rotations). This null result has been taken to reflect the irrelevance of such cues to the motor state (Gandolfo et al., 1996; Karniel and Mussa-Ivaldi, 2002; Howard et al., 2012; Howard et al., 2013).
 
@@ -110,7 +118,7 @@ In Experiment 2, we tested the hypothesis that extending the temporal interval b
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75801/elife-75801-fig6-v2.jpg)
 
-**Figure 6.:** (A) Illustration of trial events and their timing. By using a separate stimulus for the CS (tone or light) and the imperative (target changed from gray to blue), a delay of ~1000 was imposed between the CS and US. The yellow background highlights the design difference from Experiment 1 (and Experiment 3 below). (B) Mean heading angle (N=64) as a function of trial number. Shaded region represents SEM. (C and D) Trial-by-trial change in heading angle (mean ± SEM) during the acquisition (C) and probe (D) phases. Left panels present the results of a two-way repeated-measures ANOVA for an adaptation effect (main effect of trial n−1, dark vs light colors) and a Pavlovian effect (main effect of the presented CS on the current trial n, filled vs empty bars). The black outlined bars and violin plots (right panel) present the Pavlovian effect, i.e., the subtraction of heading angle changes between CS+ and CS− trials (mean and 95% CI). Dots and thin lines represent individual participants.Figure 6—source data 1.Figure 6B.Figure 6—source data 2.Figure 6C.Figure 6—source data 3.Figure 6D.
+**Figure 6.:** (A) Illustration of trial events and their timing. By using a separate stimulus for the CS (tone or light) and the imperative (target changed from gray to blue), a delay of ~1000 was imposed between the CS and US. The yellow background highlights the design difference from Experiment 1 (and Experiment 3 below). (B) Mean heading angle (N=64) as a function of trial number. Shaded region represents SEM. (C and D) Trial-by-trial change in heading angle (mean ± SEM) during the acquisition (C) and probe (D) phases. Left panels present the results of a two-way repeated-measures ANOVA for an adaptation effect (main effect of trial n−1, dark vs light colors) and a Pavlovian effect (main effect of the presented CS on the current trial n, filled vs empty bars). The black outlined bars and violin plots (right panel) present the Pavlovian effect, i.e., the subtraction of heading angle changes between CS+ and CS− trials (mean and 95% CI). Dots and thin lines represent individual participants.
 
 During the acquisition phase of Experiment 2, participants exhibited a marked change in movement direction, opposite to the direction of the clamped feedback (adaptation effect: F[1, 63]=47.3, p<0.001, BF10=7.58×106, ηp2=0.43, mean difference, 95% CI; 1.80°, [1.29° 2.31°]), reaching a mean asymptote of ~25° (Figure 6B). The asymptotic values in this experiment were higher than those seen in Experiment 1, possibly due to differences in the experimental setup (see Discussion). Despite this increase in overall adaptation, a Pavlovian differential conditioning effect was not detected (F[1, 63]=0.54, p=0.465, BF10=0.16, ηp2=0.01, mean difference: 0.17°, 95% CI: [–0.29° 0.63°]), and there was no trial n−1 × n interaction (F[1, 63]=0.60, p=0.442, BF10=0.17, and ηp2=0.01; Figure 6C). During the probe phase, the trial n−1 effect disappeared with the removal of the visual feedback (F[1, 63]=1.01, p=0.319, BF10=0.21, ηp2=0.02, mean difference: –0.22°, 95% CI: [–0.65° 0.21°]). Importantly, and consistent with the results from the acquisition phase, we again found no reliable Pavlovian effect (F[1, 63]=1.36, p=0.248, BF10=0.25, ηp2=0.02, mean difference: 0.28°, 95% CI: [–0.19° 0.75°]) and no trial n−1 × n interaction (F[1, 63]=0.42, p=0.517, BF10=0.16, and ηp2=0.01; Figure 6D). These results suggest that extending the CS-US interval by approximately 1000 ms rendered arbitrary sensory contextual cues ineffective in separating distinct motor memories.
 
@@ -118,23 +126,27 @@ One possible concern with our method of increasing the CS-US interval is that, b
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/75801/elife-75801-fig7-v2.jpg)
 
-**Figure 7.:** (A) Illustration of trial events and their timing. The green background highlights the design difference from Experiment 2, namely the simultaneous presentation of the CS and the movement imperative. (B) Mean heading angle (N=64) as a function of trial number. Shaded region represents SEM. (C and D) Trial-by-trial change in heading angle (mean ± SEM) during the acquisition (C) and probe (D) phases. Left panels present the results of a two-way repeated-measures ANOVA for an adaptation effect (main effect of trial n−1, dark vs light colors) and a Pavlovian effect (main effect of the presented CS on the current trial n, filled vs empty bars). The black outlined bars and violin plots (right panel) present the Pavlovian effect, i.e., the subtraction of heading angle changes between CS+ and CS− trials (mean and 95% CI). Shaded regions and error bars represent SEM. Dots and thin lines represent individual participants.Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7C.Figure 7—source data 3.Figure 7D.
+**Figure 7.:** (A) Illustration of trial events and their timing. The green background highlights the design difference from Experiment 2, namely the simultaneous presentation of the CS and the movement imperative. (B) Mean heading angle (N=64) as a function of trial number. Shaded region represents SEM. (C and D) Trial-by-trial change in heading angle (mean ± SEM) during the acquisition (C) and probe (D) phases. Left panels present the results of a two-way repeated-measures ANOVA for an adaptation effect (main effect of trial n−1, dark vs light colors) and a Pavlovian effect (main effect of the presented CS on the current trial n, filled vs empty bars). The black outlined bars and violin plots (right panel) present the Pavlovian effect, i.e., the subtraction of heading angle changes between CS+ and CS− trials (mean and 95% CI). Shaded regions and error bars represent SEM. Dots and thin lines represent individual participants.
 
 The time course of adaptation in Experiment 3 was similar to that observed in Experiment 2, with a mean asymptote around ~25° (Figure 7B). During the acquisition phase, trial-by-trial changes in heading angle showed the standard adaptation (trial n−1) effect (F[1, 63]=101.6, p<0.001, BF10=2.77×1012, ηp2=0.62, mean difference, 95% CI; 1.46°, [1.17° 1.74°]). However, unlike Experiment 2, we now observed a significant Pavlovian effect (F[1, 63]=6.05, p=0.017, BF10=2.35, ηp2=0.09, mean difference, 95% CI; 0.34°, [0.07° 0.61°]; Figure 7C). Consistent with the Rescorla-Wanger predictions (see Figure 2E), there was no significant interaction between trial n−1 and trial n effects (F[1, 63]=1.30, p=0.258, BF10=0.24, and ηp2=0.26). The Pavlovian effect was also significant in the probe phase (F[1, 63]=25.6, p<0.001, BF10=6.88×103, ηp2=0.29, mean difference, 95% CI; 0.77°, [0.47° 1.07°]) with neither trial n−1 (F[1, 63]=2.37, p=0.129, BF10=0.41, ηp2=0.04, mean difference, 95% CI; –0.28°, [–0.63° 0.08°]) nor interaction effects (F[1, 63]=0.86, p=0.358, BF10=0.19, and ηp2=0.01; (Figure 7D)).
 
 Taken together, the results of Experiments 2 and 3 support our conjecture that the efficacy of arbitrary stimuli in serving as contextual cues for sensorimotor conditioning is subject to strong temporal constraints, a key feature of cerebellar-dependent learning. Even when the tone and light no longer required attention, they proved effective for differential conditioning when the interval between these CSs and the US was short (around 300 ms) but not when the interval was extended (around 1000 ms).
 
-## Additivity principle in response to compound stimuli is observed in sensorimotor adaptation
+### Additivity principle in response to compound stimuli is observed in sensorimotor adaptation
 
 The results of Experiments 1–3 demonstrate that implicit sensorimotor adaptation displays two prominent features of associative learning – the associability of sensorimotor feedback with arbitrary sensory cues, and the key role of CS-US timing in the formation of those associations. In Experiment 4, we tested another core feature of associative learning, the principle of additivity (Mackintosh, 1976; Pavlov, 1927; Rescorla and Wagner, 1972). This principle is based on the idea that there is an associative capacity for a given US – the V term in the Rescorla-Wagner equation. That is, multiple CSs can become associated with a given US, but the combined associative strength is bounded by V. As a result of this capacity constraint, CSs effectively compete with one another, with the associative strength split among multiple cues.
 
-The classic method to examine additivity is compound conditioning, where two or more stimuli are presented simultaneously to form a ‘compound’ CS (Equation 3). When paired with a US, this compound CS will come to elicit CRs. Importantly, the associative strength of the compound CS (Vcomp) is the sum of the associative strengths of the elemental CSs (Vi), where nS in Equation 3 represents the number of elements forming the compound. Consequently, each element of the compound, when presented alone, elicits a proportionally weaker CR, with the degree of attenuation being a function of the associative strength of that CS.(3)Vi[n]=Vi[n−1]+α⋅β⋅(λ−Vcomp[n−1]);  Vcomp[n−1] = ∑i=1nSVi[n−1]
+The classic method to examine additivity is compound conditioning, where two or more stimuli are presented simultaneously to form a ‘compound’ CS (Equation 3). When paired with a US, this compound CS will come to elicit CRs. Importantly, the associative strength of the compound CS (Vcomp) is the sum of the associative strengths of the elemental CSs (Vi), where nS in Equation 3 represents the number of elements forming the compound. Consequently, each element of the compound, when presented alone, elicits a proportionally weaker CR, with the degree of attenuation being a function of the associative strength of that CS.
+
+$$
+V_{i}^{[n]}=V_{i}^{[n−1]}+\alpha⋅\beta⋅(\lambda−V_{comp}^{[n−1]});  V_{comp}^{[n−1]} = \sumi=1nSV_{i}^{[n−1]}
+$$
 
 The additivity principle has received ample support in behavioral and neural studies of associative learning (Giurfa, 2007; Kehoe et al., 1994; Kehoe and Schreurs, 1986; Rescorla and Wagner, 1972; Weiss, 1972) but has not, to our knowledge, been tested in sensorimotor adaptation. In Experiment 4, we used a compound conditioning design, pairing a 15° error clamp stimulus with a compound CS (simultaneous presentation of the tone and light; Figure 8A) on all trials of the acquisition phase. As in Experiments 1–3, we again observed robust adaptation in the acquisition phase, manifesting as a change in heading angle in the direction opposite the clamp (Figure 8B).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/75801/elife-75801-fig8-v2.jpg)
 
-**Figure 8.:** (A) During acquisition, a tone and light were presented simultaneously (compound conditioned stimulus [CS]), serving as the imperative signal for the reaching movement. They were paired with a 15° clamp on all acquisition trials (white background). During the probe phase (gray background), no feedback was provided, and the CSs were presented either together (compound CS) or alone (single CS; tone or light). (B) Mean heading angle (N=22) as a function of trial number. Shaded region represents SEM. (C) Experimental results for the Δ heading angle (median ± SEM) during the probe phase, showing a positive relative change for the compound CS on the current trial n (filled bar) and a negative relative change for each of its elements (empty bars). Friedman test: χ2[2]=9.82, p=0.007. (D) Predictions from the Rescorla-Wagner model for trial-by-trial Δ heading angle during the probe phase. The two elements were assumed to have equal weight in the simulation. (E) Scatter plot showing the between-participant trade-off in terms of the associative strength of the two CSs (the dotted black line represents the unity line). (F) The Δ heading angle (mean ± SEM) after pooling the two single-CS conditions, and the results of a two-way repeated-measures ANOVA for the effects of the previous CS type (compound vs singleton, dark and light pink, respectively) and current CS (filled and empty bars). Thin lines represent individual participants.Figure 8—source data 1.Figure 8B.Figure 8—source data 2.Figure 8C and E.Figure 8—source data 3.Figure 8F.
+**Figure 8.:** (A) During acquisition, a tone and light were presented simultaneously (compound conditioned stimulus [CS]), serving as the imperative signal for the reaching movement. They were paired with a 15° clamp on all acquisition trials (white background). During the probe phase (gray background), no feedback was provided, and the CSs were presented either together (compound CS) or alone (single CS; tone or light). (B) Mean heading angle (N=22) as a function of trial number. Shaded region represents SEM. (C) Experimental results for the Δ heading angle (median ± SEM) during the probe phase, showing a positive relative change for the compound CS on the current trial n (filled bar) and a negative relative change for each of its elements (empty bars). Friedman test: χ2[2]=9.82, p=0.007. (D) Predictions from the Rescorla-Wagner model for trial-by-trial Δ heading angle during the probe phase. The two elements were assumed to have equal weight in the simulation. (E) Scatter plot showing the between-participant trade-off in terms of the associative strength of the two CSs (the dotted black line represents the unity line). (F) The Δ heading angle (mean ± SEM) after pooling the two single-CS conditions, and the results of a two-way repeated-measures ANOVA for the effects of the previous CS type (compound vs singleton, dark and light pink, respectively) and current CS (filled and empty bars). Thin lines represent individual participants.
 
 The critical test in this experiment comes from the probe phase. Here, the visual feedback was eliminated, and the presented imperative was either the original compound CS or just the tone or light alone. We observed a significant Pavlovian effect of CS type on these no-feedback trials (Friedman test: χ2[2]=9.82, p=0.007, and W=0.223), with larger changes in heading angles on compound CS trials (median: 0.39°, interquartile range: [–0.05° 0.49°]) relative to the tone-alone (–0.15°, [–0.47° 0.18°], p=0.020) or light-alone (–0.22°, [–0.52° 0.34°]p=0.020) trials, conforming to the first prediction of the additivity principle (Figure 8C and D).
 
@@ -176,11 +188,11 @@ Although our results highlight principles that address context-dependent sensori
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 166 healthy volunteers (aged 18–35 years; 98 females, 6 identified as ‘other’) participated in either Experiment 1 (N=16), Experiment 2 (N=64), Experiment 3 (N=64), or Experiment 4 (N=22). In Experiments 1 and 4, all participants were right handed, as self-reported and verified with the Edinburgh Handedness Inventory. The participants in Experiments 2 and 3 did not complete a handedness inventory, but 108 of them self-reported being right handed, 17 left-handed, and 3 ambidextrous. The sample size for each experiment was set to ensure good statistical power (details provided in the protocol for each experiment). The protocol was approved by the Institutional Review Board at the University of California, Berkeley.
 
-## Experimental setup and task
+### Experimental setup and task
 
 In Experiments 1 and 4, the participant sat at a custom-made table that housed a horizontally mounted LCD screen (53.2 cm by 30 cm, ASUS), positioned 27 cm above a digitizing tablet (49.3 cm by 32.7 cm, Intuos 4XL; Wacom, Vancouver, WA, USA). The participant held in their right hand a hockey paddle that contained an embedded digitizing stylus. The monitor occluded direct vision of the hand, and the room lights were extinguished to minimize peripheral vision of the arm. Reaching movements were performed by sliding the paddle across the tablet. The sampling rate of the tablet was 200 Hz.
 
@@ -198,11 +210,11 @@ For the US, we used task-irrelevant clamped feedback (Morehead et al., 2017). Wi
 
 For the lab-based experiments (Experiments 1 and 4), the experimental software was custom written in MATLAB (The MathWorks, Natick, MA, USA), using the Psychtoolbox package (Brainard, 1997). The web-based experiments (Experiments 2 and 3) were developed for a webpage using JavaScript, HTML, and CSS. Data from the web-based experiments are temporarily stored via the Google Firebase database and downloaded for off-line analyses.
 
-## Experimental protocol
+### Experimental protocol
 
 All experiments included an acquisition phase and a probe phase. During the acquisition phase, clamped feedback was presented on each trial, serving as the US. During the probe phase, the clamped feedback was not presented. In both phases, the participants were instructed to reach straight to the target as soon as the imperative appeared. Note that we opted to not include baseline reaching blocks prior to the start of the acquisition phases to avoid introducing any incidental associations between the baseline feedback and the target, movement plan, and any other contextual variables. For the lab-based Experiments 1 and 4, a break of approximately 1 min was provided in the middle of the experiment.
 
-## Experiments 1–3: differential conditioning
+### Experiments 1–3: differential conditioning
 
 Experiment 1 (N=16) was designed to test differential conditioning in the context of a sensorimotor adaptation task. The target number of participants was determined based on the effect size (d=0.67) observed for the Pavlovian effect in a pilot study, with a significance level of α=0.05 and power of 0.8. Experiments 2 and 3 were designed to test temporal constraints on differential conditioning. Participants (N=64 per experiment, 128 total) were recruited using the crowdsourcing website Prolific (www.prolific.co). The minimum sample size for each experiment was determined based on the sample size of Experiment 1 (N=16), where robust Pavlovian effects were observed. However, we have found that data collected with our web-based platform are more variable (Tsay et al., 2021). As such, we opted to use a larger sample size, setting our target as 64 participants for each experiment.
 
@@ -210,13 +222,13 @@ The session consisted of 800 trials: 600 acquisition trials followed by 200 prob
 
 For both the acquisition and probe phases, the CS+ and CS− trials were interleaved in a pseudo-random order that was unique to each participant. To ensure that the participant would not be able to predict the CS type, the generated trial sequence for each participant was assessed to verify that there was no significant lag-1 autocorrelation in the time series. At the end of the experimental session, we assessed whether participants were aware of the contingency between each CS and its associated feedback, asking, ‘did you identify any pattern in the experiment?’ in a free-response survey.
 
-## Experiment 4: compound conditioning
+### Experiment 4: compound conditioning
 
 The adaptation task was modified in Experiment 4 (N=22) to provide a test of compound conditioning. The sample size was determined based on the effect size (d=0.56) observed for the Pavlovian effect in Experiment 1, with a significance level of α=0.05 and power of 0.8.
 
 The procedure was similar to that used in Experiments 1–3 with the following changes: first, the session consisted of 600 acquisition trials and 300 probe trials (Figure 8A); second, a compound CS, consisting of both the tone and light, served as the imperative throughout the acquisition phase, and was always paired with 15° clamped feedback; third, the probe phase (no visual feedback) consisted of 100 trials for each of the compound CS, tone alone CS, and light alone CS.
 
-## Data analysis
+### Data analysis
 
 The recorded position of the hand was analyzed using custom-written MATLAB scripts. Our main analyses focused on the reach direction (heading angle) and the trial-by-trial changes in heading angle (Δ heading angle). Heading angle was defined by two imaginary lines, one from the start position to the target and the other from the start position to the hand position at maximum movement velocity.
 
@@ -238,11 +250,27 @@ The additivity principle of the Rescorla-Wagner model states that the elements o
 
 We report effect size using Cohen’s d for all t tests, partial eta-squared (ηp2) for the ANOVA and the Kendall’s W for the Friedman test. We followed the assumption of normality when the sample size was larger than N=30 based on the central limit theorem or when the Lilliefors test indicated normality (Lilliefors, 1967). When these conditions were met, we used parametric statistical tests. In all other cases, we used non-parametric statistics (see Experiment 4). Family-wise errors in pairwise comparisons were corrected using the Bonferroni correction. We also report Bayes factor BF10, the ratio of the likelihood of the alternative hypothesis (H1) over the null hypothesis (H0) (Kass and Raftery, 1995).
 
-## Model simulations
+### Model simulations
 
 Trial-by-trial reach angles were simulated using the Rescorla-Wagner model as a representative model for associative learning. In this model, the motor state is updated based on the associative strength (V) between the US (error signal) and all the CSs present on a given trial (Equations 1 and 3). The extent of learning is determined by the maximum conditioning level (λ), and the rate of behavioral change is determined by the learning rate of the US (β) and the salience of each presented CS (ɑ). Note that in simulating the Rescorla-Wagner model for visuomotor adaptation, we included the movement plan as a CS (CS_plan) on all trials in addition to the trial-specific CS (CS_tone or CS_light). The following pseudocode describes how the heading angle, represented by the total associative strength V_total between all CSs and the US, is updated in a simulation of differential conditioning. For simplicity, we consider CS_tone = CS+ and CS_light = CS−. US = 1 on CS+ trial and US = 0 on CS− trials and on no feedback trials (all the trials in the probe phase).
 
+<table>
+  <tbody>
+    <tr>
+      <td>On trial n=1, before experiencing the US, all associative strengths are initialized to 0.FOR each other trial n in the experiment V_plann ← V_plann−1 + α_plan × β × (λ×US n−1 – V_totaln−1) IF trial n−1 is CS_tone    V_totaln−1 ← V_plann−1+V_tonen−1    V_tonen ← V_tonen−1 + α_tone × β × (λ×USn−1− V_totaln−1)    V_lightn ← V_lightn−1 ELSE IF trial n−1 is CS_light    V_totaln−1 ← V_plann−1+V_lightn−1    V_lightn ← V_lightn−1 + α_light × β × (λ×USn−1− V_totaln−1)    V_tonen ← V_tonen−1 END IFEND FOR</td>
+    </tr>
+  </tbody>
+</table>
+
 In compound conditioning, all the trials in the acquisition phase are presented with an error (US = 1) and with both CS_tone and CS_light (and CS_plan). Therefore, both V_tone and V_light (and V_plan) are updated on all trials:
+
+<table>
+  <tbody>
+    <tr>
+      <td>FOR each trial n&gt;1 in the acquisition phase  V_totaln−1 ← V_plann−1+V_tonen−1+V_lightn−1  V_plann ← V_plann−1 + α_plan × β × (λ×USn−1 – V_totaln−1)  V_tonen ← V_tonen−1 + α_tone × β × (λ×USn−1− V_totaln−1)  V_lightn ← V_lightn−1 + α_light × β × (λ×USn−1− V_totaln−1)END FOR</td>
+    </tr>
+  </tbody>
+</table>
 
 During the probe phase in compound conditioning, the associative strengths are updated based on the CS presented on each trial, either as a compound, which is simulated the same as the above pseudocode for compound conditioning, or alone, and then the algorithm uses the same implementation as in differential conditioning. We set US=0 in all the trials of the probe phase.
 
@@ -254,6 +282,6 @@ While the two models share similar features and parameters (e.g. learning rate o
 
 To simulate the dynamics of the adaptation and Pavlovian effects in differential conditioning (Figure 5A) and to compare it to the dynamics observed in the actual data (Figure 5B), we simulated the trial-by-trial change in heading angle during acquisition (600 trials) according to the Rescorla-Wagner model (Equations 1; 3) and the state-space model (Equation 2.) based on the schedules of CS+ and CS− trials that were presented to the participants (16 simulated time courses). For the Rescorla-Wagner model, we used the same parameters values that generated the simulation results presented in Figure 2E and F. For the state-space model, we set the A parameter to 0.9 and B to 0.12. We then did the same trial-by-trial regression analysis described above for the actual heading angle data (see Data analysis) with the exception that the dependent variable was now the simulated change in heading angle.
 
-## Model fitting and comparison
+### Model fitting and comparison
 
 We conducted a post-hoc model comparison analysis (Figure 4). In this analysis, we fit the Rescorla-Wagner model (Equations 1; 3) and the standard state-space model (Equation 2) to participants’ heading angle time course data of Experiment 1. The two models were fit by minimizing the sum of squared residuals between the measured and modeled movement data, using the MATLAB function fmincon. To avoid local minima, 200 randomized sets of initial parameter values were used during fitting, and the best fit of each model was selected for model comparison. Models were compared using both the sum of squared residuals and the AIC approximated on the residuals (Akaike, 1974). All free parameters were bound at (0, 1), except for λ, which was bounded at (–30, 60). We did not perform model fitting for Experiment 4 since all trials were identical in the acquisition phase. As such, the salience parameters in the Rescorla-Wagner model for the goal, tone, and light are unidentifiable, and both models make indistinguishable behavioral predictions during acquisition.

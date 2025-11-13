@@ -47,15 +47,529 @@ Fifty three farms were monitored from June 2015 to January 2017. Monthly questio
 
 We fit mixed-effects general additive models (MGAM) with three different dependent variables: a ‘harvest model’ of the probability of harvesting (i.e. selling or slaughtering) chicken broiler flocks at a particular production stage (data points are flock-months), an ‘AI vaccination model’ of the probability of performing AI vaccination on chicken broiler flocks which had never received AI vaccination (data points are flock-months), and a ‘disinfection model’ of the probability of disinfecting farm facilities (data points are farm-months). Disease outbreaks were included in each model as independent categorical variables. Disease outbreaks refer to the occurrence of poultry mortality attributable to an infectious disease in the corresponding farm at different time intervals before the corresponding month. Specifically, outbreaks were defined by the death of at least two birds of the same species with similar clinical symptoms in the corresponding farm in the same month, one month prior, and two months prior. For the harvest model, only outbreaks in chickens were considered. For the AI vaccination model, outbreaks in chickens and outbreaks in any other species were included as two separate covariates. For the disinfection model, outbreaks in any of the species present in the farm were considered. In chickens, outbreaks with ‘sudden deaths’ (i.e. the death of chickens less than one day after the onset of clinical symptoms) are considered as being indicative of HPAI infection (Mariner et al., 2014). Therefore, we created two sub-categorical variables for outbreaks in chickens, with sudden deaths (OS, ‘outbreaks sudden’) and with no sudden deaths (ONS, ‘outbreaks not sudden’). The three dependent variables are likely influenced by several other farm-, flock-, and time-related factors, justifying the inclusion of control covariates which are reported in Table 1 and described in detail in the ‘Materials and methods’.
 
+**Table 1.**
+ Summary statistics of variables.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Continuous variable</th>
+      <th>Min</th>
+      <th>1st quartile</th>
+      <th>Median</th>
+      <th>3rd quartile</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Broiler chicken flocks (n = 391)</td>
+    </tr>
+    <tr>
+      <td>Number of flocks of broiler chickens per farm</td>
+      <td>2</td>
+      <td>22</td>
+      <td>36</td>
+      <td>44</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Number of observation months per broiler flock</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td colspan="6">Broiler chicken flock-months (n = 1656)</td>
+    </tr>
+    <tr>
+      <td>Flock size (n) (number of birds)</td>
+      <td>2</td>
+      <td>10</td>
+      <td>16</td>
+      <td>35</td>
+      <td>580</td>
+    </tr>
+    <tr>
+      <td>Anticipated age at maturity (t*) (weeks)</td>
+      <td>9.5</td>
+      <td>13.1</td>
+      <td>17.4</td>
+      <td>19.6</td>
+      <td>43.6</td>
+    </tr>
+    <tr>
+      <td>Age at the time of observation (t) (weeks)</td>
+      <td>1.6</td>
+      <td>6.3</td>
+      <td>12.3</td>
+      <td>19</td>
+      <td>53.6</td>
+    </tr>
+    <tr>
+      <td>Difference t- t* (δt) (week)</td>
+      <td>−37.2</td>
+      <td>−11.1</td>
+      <td>−5.2</td>
+      <td>1</td>
+      <td>36.1</td>
+    </tr>
+    <tr>
+      <td>Calendar time (T)</td>
+      <td>3</td>
+      <td>7</td>
+      <td>11</td>
+      <td>16</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Proportion harvested (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.3</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Number of chicken flocks introduced in the same month onto the same farm</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Number of chicken flocks introduced in the month prior onto the same farm</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Number of broiler chickens present on the same farm in other flocks (bird)</td>
+      <td>0</td>
+      <td>10</td>
+      <td>25</td>
+      <td>61</td>
+      <td>900</td>
+    </tr>
+    <tr>
+      <td>Number of broiler ducks present on the same farm (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25</td>
+      <td>3630</td>
+    </tr>
+    <tr>
+      <td>Number of broiler Muscovy ducks present on the same farm (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Number of layer chickens present on the same farm (bird)</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6</td>
+      <td>13</td>
+      <td>350</td>
+    </tr>
+    <tr>
+      <td>Number of layer ducks present on the same farm (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Number of layer Muscovy ducks present on the same farm (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td colspan="6">Farm-months (n = 876)</td>
+    </tr>
+    <tr>
+      <td>Number of broiler chickens (bird)</td>
+      <td>0</td>
+      <td>8</td>
+      <td>28</td>
+      <td>64</td>
+      <td>912</td>
+    </tr>
+    <tr>
+      <td>Number of broiler ducks (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>31</td>
+      <td>3630</td>
+    </tr>
+    <tr>
+      <td>Number of broiler Muscovy ducks (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Number of layer chickens farm (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>10</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>Number of layer ducks (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>Number of layer Muscovy ducks (bird)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Proportion flocks farmed with disinfection (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Qualitative variable</td>
+      <td colspan="5">Proportion of observations</td>
+    </tr>
+    <tr>
+      <td colspan="6">Broiler chicken flock-months (n = 1656)</td>
+    </tr>
+    <tr>
+      <td>Occurrence of outbreak with no sudden death in chickens on the same farm in the current month</td>
+      <td colspan="5">18.8%</td>
+    </tr>
+    <tr>
+      <td>Occurrence of outbreak with sudden death in chickens on the same farm in the current month</td>
+      <td colspan="5">1.6%</td>
+    </tr>
+    <tr>
+      <td>Occurrence of outbreak in other species on the same farm in the current month</td>
+      <td colspan="5">7.2%</td>
+    </tr>
+    <tr>
+      <td>Confinement indoors or in enclosure</td>
+      <td colspan="5">32.8%</td>
+    </tr>
+    <tr>
+      <td>Previously vaccinated for AI</td>
+      <td colspan="5">20.2%</td>
+    </tr>
+    <tr>
+      <td>Previously vaccinated for Newcastle Disease</td>
+      <td colspan="5">7.1%</td>
+    </tr>
+    <tr>
+      <td colspan="6">Farm-months (n = 876)</td>
+    </tr>
+    <tr>
+      <td>Occurrence of outbreak in any species</td>
+      <td colspan="5">23.4%</td>
+    </tr>
+  </tbody>
+</table>
+
 A total of 1656 broiler chicken flock-months were available for analysis. They belonged to 391 chicken flocks present on 48 farms. In 18.8% of flock-months non-sudden outbreaks (ONS) were observed in chickens on the same farm, 1.6% of flock-months saw sudden outbreaks (OS) in chickens on the same farm, and 7.2% of flock-months saw disease outbreaks in poultry of other species on the same farm (Table 1). The percentages are very similar for outbreaks occurring one month prior and two months prior since they are averaged over similar sets of months, with differences mostly related to outbreak frequency in the two first months and two last months of the study period. Additional descriptive statistics on control covariates are described in Table 1. Out of 1656 broiler chicken flock months, 1503 flock-months were selected for the harvest analysis after excluding data points with new-born chicks and flock-months in which all the chickens had died (see Materials and methods). No harvest occurred in 995 flock-months, complete harvest occurred in 258 flock-months, and partial harvest occurred in 250 flock-months. The probability of harvest during a month, with partial harvests weighted appropriately, was 23.9%. Excluding flock-months of already vaccinated chickens (and some with missing data), 1318 flock-months were selected for the AI vaccination analysis (see Materials and methods). AI vaccination was performed in 7.5% (99/1318) of flock-months. The 99 vaccinated flocks were from 29 different farms (out of 48 farms keeping broiler chickens). For the disinfection model, 858 farm-months belonging to 52 farms were included (see Materials and methods). During 552 farm-months the farm was fully disinfected, during 259 farm-months the farm was not disinfected at all, and during 47 farm-months disinfection was performed for some (but not all) of the flocks present in the farm. The probability of disinfection during a month, with partial disinfections weighted appropriately, was 67.4%. The best fit statistical models and their parameter values are summarized in Table 2. Fitted spline functions cannot be elegantly summarized by their coefficients and are displayed graphically in Figures 2 and 3.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59212/elife-59212-fig2-v2.jpg)
+
+**Figure 2.:** Three different outbreak timings are considered: same month (left), one month prior (middle), and two months prior (right). Two different classes of flock size are considered: small,<17 chickens (top) and large,≥17 chickens (bottom). Points are the observed proportions (estimated from at least two flock-months) and lines are the predictions of the fitted Harvest model, along with 90% confidence bands. Model predictions with outbreaks are only displayed when fitted outbreak effects have some statistical significance (p<0.10) (see Table 2). Blue histograms correspond to the number of observed flock-months in the different classes of δt (scaled to their maximum, 139 in the top graphs and 157 in the bottom graphs).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59212/elife-59212-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Three different outbreak timings are considered: same month (left), one month prior (middle), and two months prior (right). Two different classes of flock size are considered: small (top) and large (bottom). Points are the observed proportions (estimated from at least two flock-months) and lines are the predictions of the fitted Harvest model, along with 90% confidence bands. Model predictions with outbreaks are only displayed when fitted outbreak effects have some statistical significance (p<0.10) (see Supplementary file 2). Blue histograms correspond to the number of observed flock-months in the different classes of δt (scaled to their maximum, 139 in the top graphs and 157 in the bottom graphs).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59212/elife-59212-fig3-v2.jpg)
 
-**Figure 3.:** For the AI vaccination model (green) these covariates are flock size (n) (A), age (t) (B) and calendar time (T) (C). For the disinfection model (orange), the covariate is calendar time (T) (D). Points are the observed proportions and lines are the predictions along with the 90% confidence band. In graphs C and D the proportions are displayed on the logit scale. Blue histograms correspond to the number of observed flock-months in the different classes of log ( (n)A) and t (B) (scaled to their maximum, 402 in A and 345 in B).
+**Figure 3.:** For the AI vaccination model (green) these covariates are flock size (n) (A), age (t) (B) and calendar time (T) (C). For the disinfection model (orange), the covariate is calendar time (T) (D). Points are the observed proportions and lines are the predictions along with the 90% confidence band. In graphs C and D the proportions are displayed on the logit scale. Blue histograms correspond to the number of observed flock-months in the different classes of log (n) (A) and t (B) (scaled to their maximum, 402 in A and 345 in B).
+
+**Table 2.**
+ Fitted parameters of the broiler chicken flock harvest and AI vaccination and farm disinfection models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Variable</th>
+      <th></th>
+      <th></th>
+      <th>Odds-ratio (with 95% CI)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="13">Harvest</td>
+      <td rowspan="8">Flock size ≤ 16 chickens</td>
+      <td rowspan="3">ONS chickens*</td>
+      <td>Same month</td>
+      <td>2.06 (1.23; 3.45)</td>
+      <td>&lt;10-2</td>
+    </tr>
+    <tr>
+      <td>−1 month</td>
+      <td>2.06 (1.17; 3.62)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>−2 months</td>
+      <td>0.41 (0.19; 0.92)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="3">OS chickens**</td>
+      <td>Same month</td>
+      <td>9.34 (2.13; 40.94)</td>
+      <td>&lt;10-2</td>
+    </tr>
+    <tr>
+      <td>−1 month</td>
+      <td>0.18 (0.01; 4.95)</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>−2 months</td>
+      <td>0.88 (0.15; 5.04)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of broiler chickens in the farm (square root)</td>
+      <td>1.05 (1; 1.11)</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td colspan="2">combined effect of the difference between current age and age at maturity (δt) and the age at maturity (t*) (spline transformation)</td>
+      <td>Figure 2</td>
+      <td>&lt;10-3</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Flock size &gt; 16 chickens</td>
+      <td rowspan="3">OS chickens**</td>
+      <td>Same month</td>
+      <td>1.02 (0.23; 4.46)</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>−1 month</td>
+      <td>3.89 (0.82; 18.46)</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>−2 months</td>
+      <td>3.1 (0.51; 18.77)</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of broiler chickens in the farm (square root)</td>
+      <td>1.05 (1; 1.11)</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td colspan="2">combined effect of the difference between current age and age at maturity (δt) and the age at maturity (t*) (spline transformation)</td>
+      <td>Figure 2</td>
+      <td>&lt;10-3</td>
+    </tr>
+    <tr>
+      <td rowspan="15" colspan="2">AI vaccination</td>
+      <td rowspan="3">Outbreak chickens</td>
+      <td>Same month</td>
+      <td>0.75 (0.29–1.92)</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>−1 month</td>
+      <td>0.78 (0.29–2.11)</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>−2 months</td>
+      <td>0.27 (0.08–0.89)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Outbreak others</td>
+      <td>Same month</td>
+      <td>4.62 (1.08–19.72)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>−1 month</td>
+      <td>0.51 (0.09–2.89)</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>−2 months</td>
+      <td>0.42 (0.06–2.91)</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of broiler chickens in the farm (square root)</td>
+      <td>0.92 (0.82–1.03)</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of broiler Muscovy ducks in the farm (square root)</td>
+      <td>0.74 (0.57–0.96)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of layer ducks in the farm (square root)</td>
+      <td>2.95 (1.15–7.57)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of layer Muscovy ducks in the farm (square root)</td>
+      <td>1.9 (1.07–3.36)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td colspan="2">Confinement</td>
+      <td>24.6 (6.32–95.6)</td>
+      <td>&lt;10-3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Proportion harvested</td>
+      <td>0.01 (0–0.37)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td colspan="2">Spline transform of the logarithm of the flock size (n)</td>
+      <td>Figure 3A</td>
+      <td>&lt;10-3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Spline transform of the logarithm of the flock age (t)</td>
+      <td>Figure 3B</td>
+      <td>&lt;10-3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Spline transform of the calendar time (T)</td>
+      <td>Figure 3C</td>
+      <td>&lt;10-3</td>
+    </tr>
+    <tr>
+      <td rowspan="4" colspan="2">Disinfection</td>
+      <td colspan="2">Number of broiler Muscovy ducks in the farm (square root)</td>
+      <td>1.07 (1.01–1.13)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of layer ducks in the farm (square root)</td>
+      <td>1.25 (1.02–1.53)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of layer chickens in the farm (square root)</td>
+      <td>1.3 (1.12–1.51)</td>
+      <td>&lt;10-3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Spline transform of the calendar time (T)</td>
+      <td>Figure 3D</td>
+      <td>&lt;10-3</td>
+    </tr>
+  </tbody>
+</table>
+
+_* ONS: Outbreak with no sudden deaths.** OS: Outbreak with sudden deaths._
 
 The harvest model showed support for associations between flock- and farm-level covariates, particularly the difference between flock age and age at maturity and the probability of harvesting broiler chickens. The model explained 34.2% of the observed deviance. There was no statistical support for a temporal auto-correlation of the probability of harvest of broiler chicken flocks on a given farm (Table 2). As the interaction term between flock size (n) and outbreak occurrence was significant (p<0.01) but difficult to interpret (displayed in Supplementary file 1), we separated the flocks into large and small. A threshold value of 16 birds per flock gave the lowest Akaike Information Criterion (AIC) (when using a categorical variable indicating small flock or large flock), and flocks of 16 birds or fewer (52% of all flocks) were designated as small while flocks of 17 or more (48% of all flocks) were designated as large. As expected, the probability of harvest was found to be strongly dependent on the difference (δt) between the flock age and the anticipated age at maturity, with older flocks being more likely to be sold. The probability of harvest was close to zero when δt < −15 weeks, i.e. flocks that are more than 15 weeks away from maturity. The probability of harvest increased steeply from δt = −10 to δt = 0. For δt > 0 (flocks past their age at maturity), the probability of harvest was consistently high but lower than 100% and did not depend on age. Larger flocks had a steeper increase in harvest probability as a function of δt; once past the age at maturity (δt > 0), the estimated probability of harvest for large flocks was higher (interquartile range: 41–61%) than for small flocks (interquartile range: 30–41%) (Figure 2).
 
 Disease outbreaks substantially affected the likelihood of harvest of broiler chickens. The probability of harvest of small flocks was significantly higher on farms that had experienced a non-sudden outbreak (ONS) in chickens in the same month (odds ratio (OR) = 2.06; 95% confidence interval (CI): 1.23–3.45) or the previous month (OR = 2.06; 95% CI: 1.17–3.62) and was lower on farms that had experienced an ONS in chickens two months prior (OR = 0.41; 95% CI: 0.19–0.92). The probability of harvest of small flocks was much higher on farms that had experienced a sudden outbreak (OS) in the same month (OR = 9.34: 95% CI: 2.13–40.94). We used the fitted model to predict the mean harvest proportion in the study population with and without outbreak. Estimated mean harvest proportions of small flocks were 17% (no outbreak), 28% (ONS), and 56% (OS) when considering outbreaks occurring in the same month; this corresponded to harvest increases of 56% and 214% for ONS and OS outbreaks, respectively. Estimated mean harvest proportion was 18% (no outbreak) and 28% (ONS) when considering outbreaks one month prior; this corresponded to a 56% increase in harvest in case of ONS one month prior. Mean harvest proportions were 20% (no outbreak) and 11% (ONS) when considering outbreaks two months prior, indicating a 47% decrease in harvest in case of ONS two months prior. For large flocks, ONS in chickens (in any month current or previous) did not have any effect on the harvest of broiler chickens (the removal of ONS variables decreased the model AIC). The occurrence of OS in chickens one month prior may be positively associated with early harvest with an estimated 76% increase in harvest proportion (OR = 3.89; 95% CI: 0.82–18.46; p=0.09). However, we do not have sufficient statistical power to support this association. In the last six months of data collection, farmers were asked to indicate the destination of harvested birds. Based on these partial observations, flocks harvested during or one month after outbreaks in chickens (OS or ONS) were more likely to be sold to traders and less likely to be slaughtered at home (Table 3). The likelihood of harvest was also positively correlated with the number of other broiler chickens present on the farm (Supplementary file 1, p < 0.01). It was not found to be affected by the concomitant introduction of other flocks, vaccination status, or calendar time (T). The farm random effect was significant for large flocks (σ = 0.74; 95% CI: 0.47–1.17) and not significant for small flocks.
+
+**Table 3.**
+ The destination of harvested broiler chicken flocks with or without occurrence of outbreaks of disease-induced mortality in chickens of the same farm in the same month or one month prior (%).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Destination</th>
+      <th>No outbreak</th>
+      <th>Outbreak with no sudden death (ONS)</th>
+      <th>Outbreak with sudden death (OS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sale to traders</td>
+      <td>28%</td>
+      <td>45%</td>
+      <td>45%</td>
+    </tr>
+    <tr>
+      <td>Sale at market</td>
+      <td>5%</td>
+      <td>16%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Sale to other farmers</td>
+      <td>2%</td>
+      <td>3%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Sale unspecified</td>
+      <td>12%</td>
+      <td>4%</td>
+      <td>11%</td>
+    </tr>
+    <tr>
+      <td>Slaughter at home</td>
+      <td>36%</td>
+      <td>20%</td>
+      <td>11%</td>
+    </tr>
+    <tr>
+      <td>Gift</td>
+      <td>5%</td>
+      <td>8%</td>
+      <td>11%</td>
+    </tr>
+    <tr>
+      <td>Feed farmed pythons</td>
+      <td>5%</td>
+      <td>1%</td>
+      <td>22%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>7%</td>
+      <td>3%</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
 
 The number of outbreaks with sudden deaths is relatively small (11 small flock-months and 14 large flock-months occurred on farms experiencing an OS in the same month) and OS are potentially subject to misclassification, depending on how regularly farmers check on their chickens. Therefore, in order to ensure the robustness of our result, we conducted a separate analysis with merged OS and ONS categories. The results are displayed in Supplementary file 2 and Figure 2—figure supplement 1. The probability of harvest of small flocks was significantly higher on farms that had experienced an outbreak in chickens in the same month (Odds ratio (OR) = 2.34; 95% CI: 1.43–3.81) or the previous month (OR = 1.96; 95% CI: 1.14–3.37) and was lower in farms that had experienced an outbreak in chickens two months prior (OR = 0.45; 95% CI: 0.22–0.92). For large flocks, there was no statistical support for outbreaks in chickens having an effect on the harvest of broiler chickens.
 
@@ -85,19 +599,19 @@ The last 23 years of emerging pathogen outbreaks and zoonotic transmissions fail
 
 ## Materials and methods
 
-## Data collection
+### Data collection
 
 An observational longitudinal study was conducted in Ca Mau province in southern Vietnam (Delabouglise et al., 2019; Thanh et al., 2017) with the collaboration of the Ca Mau sub-Department of Livestock Production and Animal Health (CM-LPAH). Fifty poultry farms from two rural communes were initially enrolled and three additional farms were subsequently added to the sample in order to replace three farmers who stopped their poultry farming activity. The two communes were chosen by CM-LPAH based on (1) their high levels of poultry ownership, (2) their history of HPAI outbreaks, and (3) likelihood of participation in the study (Thanh et al., 2017). Study duration was 20 months, from June 2015 to January 2017. Monthly Vietnamese-language questionnaires were used to collect information on (1) number of birds of each species and production type, (2) expected age of removal from the farm, (3) number of birds introduced, removed, and deceased in the last month, (4) clinical symptoms associated with death, (5) vaccines administered, (6) type of poultry housing used, and (7) disinfection activity. Each farm’s poultry were classified into ‘flocks’, defined as groups of birds of the same age, species, and production type (Delabouglise et al., 2019). Because individual poultry cannot be given participant ID numbers in a long-term follow-up study like this, a custom python script was developed to transform cross-sectional monthly data into a longitudinal data set on poultry flocks (Nguyen-Van-Yen, 2017).
 
 Recruitment was designed to have a mix of small (20–100 birds) and large (>100 birds) farms and a mix of farms that were ‘primarily chicken’ and ‘primarily duck’. As multiple poultry species were present on most farms, the chicken and duck farm descriptors were interpreted subjectively. The enrollment aim was to include 80% small farms among chicken farms and 50% small farms among ducks farms; there was approximately equal representation of chicken and ducks farms, but many could have been appropriately classified as having both chickens and ducks. As the residents in the two communes were already familiar with CM-LPAH through routine outreach and inspections, all invitees agreed to study participation. The farm sizes and poultry compositions were representative of small-scale poultry ownership in the Mekong delta regions, but other potential selection biases in the recruitment process could not be ascertained. No sample size calculation was performed for the behavioral analysis presented here, as we had no baseline estimates of sale patterns or disease prevention activities. The duration and size of the study was planned to be able to observe about 1000 poultry flocks (all species and production types included).
 
-## Selection of observations
+### Selection of observations
 
 For the ‘harvest model’ and ‘AI vaccination model’, we focused our analysis on broiler chicken flocks, since chicken was the predominant species in the study population, the overwhelming majority of chicken flocks were broilers, and their age-specific harvest was easier to predict than the harvest of layer-breeder hens. Additionally, only six layer-breeder chicken flocks were vaccinated against AI during the study period. Observations made in the two first months of the study were discarded since, during these two months, it was unknown whether farms had previously experienced outbreaks.
 
 In the ‘disinfection’ model, observations were farm-months. A total of 876 farm-months were available for inclusion in the model. We removed farm-month with missing data on disinfection performed by farmers (18 farm-months) so 858 farm-months were used to fit the disinfection model. In the ‘harvest’ and ‘AI vaccination’ models, observations were chicken broiler flock-months. We selected all chicken flock-months more than 10 days old at the time of data collection and classified by farmers as ‘broilers’. A total of 1656 flock-months were available for inclusion in the model. In the “harvest model we removed flock-months which were less than 20 days old at the time of data collection. This 20 day threshold was chosen because some newborn flocks below this age were partly sold, not for meat consumption but for management on other farms. Also, we removed flock-months where no chickens were available for harvest because they had all died in the course of the month (25 flock-months). In total, 153 flock-months were removed and 1503 flock-months were used to fit the harvest model. In the ‘AI vaccination’ model, we removed flock-months of flocks which had already been vaccinated against avian influenza in a previous month, since vaccination is usually performed only once (among the 338 vaccinated flocks, only eight were vaccinated a second time). We also removed flock-months whose housing conditions were not reported (four flock-months). In total, 338 flock-months were removed and 1318 flock-months were used to fit the AI vaccination model.
 
-## Selection of covariates
+### Selection of covariates
 
 A disease outbreak was defined as the death of at least two birds of the same species – on the same farm, in the same month, with similar clinical symptoms – as this may indicate the presence of an infectious pathogen on the farm. Our definition of outbreaks with sudden deaths encompassed all instances of outbreaks where chicken deaths were noticed without observation of any symptoms beforehand. Since farmers, or their family, check on their poultry at least once per day, it was assumed that these ‘sudden deaths’ corresponded to a time period of less than one day between onset of symptoms and death. For both the harvest and AI vaccination models, we assumed the effect of outbreaks on the dependent variable may be affected by the size of the considered flock (n). Consequently, we included this interaction term in the analysis.
 
@@ -107,7 +621,7 @@ For the AI primo-vaccination model, control variables included as smoothing spli
 
 For the disinfection model, control variables included as smoothing splines were (1) the calendar time T - disinfection activities may be intensified at particular times of the year. Control variables included as standard linear terms were the size of populations of (1) broiler chickens, (2) layer-breeder chickens, (3) broiler ducks, (4) layer-breeder ducks, (5) broiler Muscovy ducks and (6) layer-breeder Muscovy ducks - the farmers’ attitude towards prevention may be influenced by the size of the poultry population at risk of disease.
 
-## Multivariable modelling
+### Multivariable modelling
 
 We assumed that the events of interest, namely harvest, AI vaccination, and disinfection were drawn from a binomial distribution and used a logistic function to link their probability to a function of the independent covariates. Flocks were either fully vaccinated for AI or not at all, so the AI vaccination variable for flock-months took only the value 0 or one and was, therefore, treated as binary. Partial flock harvest (the harvest of only a fraction of the chickens in a given flock) and partial farm disinfection (the disinfection of facilities for only a fraction of the poultry flocks present in the farm) occurred in a minority of observations. Therefore, the number of chickens harvested per flock-month and the number of poultry flocks disinfected per farm-month were treated as binomial random variables with a number of trials equal to the flock size (for harvest) and the number of flocks per farm (for disinfection). To ensure that the model was not conditioned on the size of flocks and number of flocks per farm, prior weights equal to the inverse of the flock size and the number of flocks in the farm (i.e. the number of trials) were used in the binomial harvest model and disinfection model, respectively. The extent of over- or under-dispersion in the data was investigated by fitting a quasi-binomial model in parallel (Papke and Wooldridge, 1996). The resulting dispersion parameters were 0.76 (harvest model) and 0.77 (disinfection model), indicating moderate underdispersion, and that the estimates of our analyses are conservative.
 
@@ -115,11 +629,23 @@ Some of the included effects are non-linear in nature, and we needed to account 
 
 The complete models linking the logit Yij of probability of realization of an event and the set of explanatory variables, for a flock-month i (harvest, vaccination for AI) or a farm-month i (disinfection) in a farm j, are described by the following set of equations:
 
-Harvest model (flock-month level):(1)Yij=α+∑m=02βONS−mXijONS−m+∑m=02βOS−mXijOS−m+fδt(δtij,tij∗,log(nij))+fT(Tij)+∑k=16βkXijk+ϕj+εij
+Harvest model (flock-month level):
 
-AI vaccination model (flock-month level):(2)Yij=α+∑m=02βONS−mXijONS−m+∑m=02βOS−mXijOS−m+∑m=02βOD−mXijOD−m+ft(log(tij))+fn(log(nij))+fT(Tij)+∑k=18βkXijk+ϕj+εij
+$$
+Y_{ij}=\alpha+\summ=02\beta^{ONS−m}X_{ij}^{ONS−m}+\summ=02\beta^{OS−m}X_{ij}^{OS−m}+f_{\deltat}(\deltat_{ij},t_{ij}^{∗},log(n_{ij}))+f_{T}(T_{ij})+\sumk=16\beta^{k}X_{ij}^{k}+ϕ_{j}+\epsilon_{ij}
+$$
 
-Disinfection model (farm-month level):(3)Yij=α+∑m=02βO−mXijO−m+fT(Tij)+∑k=16βkXijk+ϕj+εij
+AI vaccination model (flock-month level):
+
+$$
+Y_{ij}=\alpha+\summ=02\beta^{ONS−m}X_{ij}^{ONS−m}+\summ=02\beta^{OS−m}X_{ij}^{OS−m}+\summ=02\beta^{OD−m}X_{ij}^{OD−m}+f_{t}(log(t_{ij}))+f_{n}(log(n_{ij}))+f_{T}(T_{ij})+\sumk=18\beta^{k}X_{ij}^{k}+ϕ_{j}+\epsilon_{ij}
+$$
+
+Disinfection model (farm-month level):
+
+$$
+Y_{ij}=\alpha+\summ=02\beta^{O−m}X_{ij}^{O−m}+f_{T}(T_{ij})+\sumk=16\beta^{k}X_{ij}^{k}+ϕ_{j}+\epsilon_{ij}
+$$
 
 The model parameters are α the model intercept; β the parametric coefficients; f a thin-plate spline function; Xk the general notation for variables with linear effects; XO-m, XOS-m, XONS-m and XOD-m, categorical variables denoting presence or absence of an outbreak in the same farm m months prior in any species (O), in chickens with sudden deaths (OS), in chickens with no sudden deaths (ONS), and in different species (OD) respectively; n the flock size; t the current age of the flock; t* the age at maturity of the flock anticipated by the farmer; δt the difference between current age and age at maturity; T the calendar time; φ the farm random effect; ε the residual error term. Some variables with a highly skewed distribution (Table 1) were transformed. Current age (t) and flock size (n) being strictly positive, they were log-transformed. Farm populations of broiler and layer-breeders of different species being null or positive, they were square-root transformed. Covariates included in the multivariate spline function for body weight (δt, t*, log(n)) were centered and standardized. Interaction terms between outbreak categorical variables and flock size log(nij) were added in the Harvest and AI vaccination models.
 
@@ -129,6 +655,6 @@ Arguably, one farmer is likely to maintain the same farm management from one mon
 
 All analyses and graphical representations were performed with R version 3.6.1 (R Development Core Team, 2014).
 
-## Ethical statement
+### Ethical statement
 
 The collaboration between the investigators (authors) and the Ca Mau sub-Department of Livestock Production and Animal Health (CM-LPAH) was approved by the Hospital for Tropical Diseases in Ho Chi Minh City, Vietnam. The CM-LPAH, which at the province-level is the equivalent of an ethical committee for studies on livestock farming, specifically approved this study.

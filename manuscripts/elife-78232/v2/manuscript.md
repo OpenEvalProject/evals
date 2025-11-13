@@ -10,17 +10,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Centre for Medical Image Computing (CMIC), Department of Medical Physics and Biomedical Engineering, University College London London United Kingdom
+1. Centre for Medical Image Computing (CMIC), Department of Medical Physics and Biomedical Engineering, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 2. Medical and Population Genomics Lab, Human Genetics Department, Research Branch, Sidra Medicine Doha Qatar
-3. https://ror.org/03taz7m60 Stevens Neuroimaging and Informatics Institute, Keck School of Medicine, University of Southern California Los Angeles United States
-4. https://ror.org/02jx3x895 Dementia Research Centre (DRC), Queen Square Institute of Neurology, University College London London United Kingdom
+3. Stevens Neuroimaging and Informatics Institute, Keck School of Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+4. Dementia Research Centre (DRC), Queen Square Institute of Neurology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 5. Department of Genetic Medicine, Weill Cornell Medicine-Qatar Doha Qatar
 
 † Corresponding author
 
 ## Abstract
 
-Nomograms are important clinical tools applied widely in both developing and aging populations. They are generally constructed as normative models identifying cases as outliers to a distribution of healthy controls. Currently used normative models do not account for genetic heterogeneity. Hippocampal volume (HV) is a key endophenotype for many brain disorders. Here, we examine the impact of genetic adjustment on HV nomograms and the translational ability to detect dementia patients. Using imaging data from 35,686 healthy subjects aged 44–82 from the UK Biobank (UKB), we built HV nomograms using Gaussian process regression (GPR), which – compared to a previous method – extended the application age by 20 years, including dementia critical age ranges. Using HV polygenic scores (HV-PGS), we built genetically adjusted nomograms from participants stratified into the top and bottom 30% of HV-PGS. This shifted the nomograms in the expected directions by ~100 mm 3 (2.3% of the average HV), which equates to 3 years of normal aging for a person aged ~65. Clinical impact of genetically adjusted nomograms was investigated by comparing 818 subjects from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database diagnosed as either cognitively normal (CN), having mild cognitive impairment (MCI) or Alzheimer’s disease (AD) patients. While no significant change in the survival analysis was found for MCI-to-AD conversion, an average of 68% relative decrease was found in intra-diagnostic-group variance, highlighting the importance of genetic adjustment in untangling phenotypic heterogeneity.
+Nomograms are important clinical tools applied widely in both developing and aging populations. They are generally constructed as normative models identifying cases as outliers to a distribution of healthy controls. Currently used normative models do not account for genetic heterogeneity. Hippocampal volume (HV) is a key endophenotype for many brain disorders. Here, we examine the impact of genetic adjustment on HV nomograms and the translational ability to detect dementia patients. Using imaging data from 35,686 healthy subjects aged 44–82 from the UK Biobank (UKB), we built HV nomograms using Gaussian process regression (GPR), which – compared to a previous method – extended the application age by 20 years, including dementia critical age ranges. Using HV polygenic scores (HV-PGS), we built genetically adjusted nomograms from participants stratified into the top and bottom 30% of HV-PGS. This shifted the nomograms in the expected directions by ~100 mm3 (2.3% of the average HV), which equates to 3 years of normal aging for a person aged ~65. Clinical impact of genetically adjusted nomograms was investigated by comparing 818 subjects from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database diagnosed as either cognitively normal (CN), having mild cognitive impairment (MCI) or Alzheimer’s disease (AD) patients. While no significant change in the survival analysis was found for MCI-to-AD conversion, an average of 68% relative decrease was found in intra-diagnostic-group variance, highlighting the importance of genetic adjustment in untangling phenotypic heterogeneity.
 
 ## Introduction
 
@@ -40,27 +40,266 @@ The normal variation of HV is of great clinical interest as the early and often 
 
 In the UKB sample, 453 subjects were excluded for various conditions, 3497 for genetic ancestry, and 28 subjects were outliers: leaving a total of 35,686 subjects. In the Alzheimer’s Disease Neuroimaging Initiative (ADNI) application dataset, 26 subjects were excluded for genetic ancestry, and 314 based on HV quality scores: leaving 818 subjects.
 
-## SWA vs. GPR for nomogram estimation
+### SWA vs. GPR for nomogram estimation
 
 Nomograms of healthy subjects generated using the sliding window approach (SWA) and GPR method displayed similar trends (Figure 2; Figure 2—figure supplement 2). However, GPR nomograms spanned the entire training dataset age range (45–82 years) compared to the SWA (52–72 years). This is primarily because the SWA is a non-model-based approach that requires smoothing to avoid edge effects, and a Gaussian smoothing window of width 20 was used (Nobis et al., 2019). This extension allowed 86% of all diagnostic groups from the ADNI to be evaluated vs. 56% in the SWA nomograms (Figure 2; Figure 2—figure supplement 2). Furthermore, our GPR nomograms confirmed previously reported trends: Overall, the average 50th percentile in male nomograms (4162 ± 222) was higher than the female nomograms (3883 ± 170), and within each sex, right HV was larger than left HV (Figure 2; Figure 2—figure supplement 2). We also observed that along the 50th percentile, male HV declined faster (−20.3mm3/year) than female HV (−14.6mm3/year). Additionally, in GPR nomograms, HV peaks in women at age 53.5 years with a less pronounced peak in males at 50 years (Figure 2; Figure 2—figure supplement 2). Training the GPR model with 16,000 samples took ~1 hr on a consumer grade machine (2.3 GHz 8-Core Intel Core i9).
 
-## PGS for HV
+![Figure 2.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig2-v2.jpg)
+
+**Figure 2.:** Nomograms produced from healthy UK Biobank (UKB) subjects using the sliding window approach (SWA) (red lines) and Gaussian process regression (GPR) method (grey lines) show similar trends. Both left hemisphere nomograms (A, C) are lower than their right counterparts (B, D). Male nomograms are higher than female nomograms (A vs. C) and (B vs. D). Female hippocampal volume (HV) shows a peak at 53.5 years of age, while male HV shows a less prominent peak at 50 years of age. SWA and GPR show good agreement, while GPR enables a 10-year nomogram extension in either direction. The benefits of this extension can be seen with scatter plots of Alzheimer’s Disease Neuroimaging Initiative (ADNI) subjects of all diagnoses overlayed (E, F). The extended age range of the GPR nomograms (45–82 years) enables the evaluation of an additional 43% of male data (E) and 34% of female data (F) (turquoise circles). A similar figure with only the cognitively normal ADNI subjects can be found in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** A GPR model trained with mean bilateral hippocampal volume (HV) of male subjects in the age range 45–82 (grey circles) and then generated nomograms for the age range 30–100. Within training data range nomogram follows data reasonably well. Outside data rage, nomogram flairs out from expected range after 2–6 years. Fairing is faster in the lower ages because, outside the data range, the GPR model reverts to a normal distribution with zero mean. For all sub-figures, the black lines – from top to bottom – represent the 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5% quantiles, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Nomograms produced from healthy subjects in the UK Biobank (UKB) using the Gaussian process regression (GPR) method. Overlayed are scatter plots cognitively normal subjects from the ADNI dataset. Male subjects averaged (56.9%±24.6 SD) and female subjects averaged (54.9±26.5 SD). For both sub-figures, the black lines – from top to bottom – represent the 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5% quantiles respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Model training progression is shown for both SWM (top row) and GPR (middle row) models at representative training sizes. Performance (bottom figure) is summarized using the mean distance between generated nomograms and the GPR nomograms built with the full training set (~15k) (shaded areas in the top two rows). By repeatedly sampling data from across age (10 times at each training sample size), we plot the average performance and 95% CI of each method. Both methods are data efficient, SWM can achieve 20 mm3 mean difference (0.4% of mean hippocampal volume [HV]) performance using ~3000 samples (20% of training set), and GPR can achieve the same performance using only 1000 samples (~7% of training set).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Illustrated is male bilateral hippocampal volume (HV). When stratifying by polygenic risk score (PRS), there is a trade-off between training set size and final model performance. In these figures, performance is measured by average distance between the percentile curves. At 10%, (leftmost column), the top/bottom strata contain ~1500 samples each and the mean distance is 65 mm3, and at 50% (the rightmost column) they contain ~7500 and the mean distance is 21.5 mm3. For all sub-figures, the black lines – from top to bottom – represent the 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5% quantiles, respectively.
+
+### PGS for HV
 
 The calculated PGS, based on an earlier GWAS for average bilateral HV (Hibar et al., 2017), as expected, showed a strong correlation with HV in the UKB data. Overall, the PGSs showed a significant positive correlation with HV across all p-value thresholds and training sample subsets (p<2.7E-24; Table 1). PGSs explained more variance in males vs. females. Furthermore, PGSs did not show detectable differences in left vs. right HV; and explained the most variance in mean bilateral HV (Table 1, Figure 3—source data 1). In all tested settings, the explained variance (R2) by the PGS across p-value threshold was similar: with one peak at the 1E-7 threshold (capturing few but very significant SNPs), a higher peak at the 0.75 threshold (capturing many SNPs with mostly small effect sizes) (Figure 3). For the ADNI dataset, this distribution increased with the threshold. When investigating mean HV across percentile of PGS at the 0.75 threshold (highest R2), the top and bottom 20% of scores accounted for 41% of the variance in HV (Figure 3) with similar values observed across thresholds in both datasets (Figure 3—figure supplements 1 and 2).
 
-## Genetics stratified nomograms
+![Figure 3.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig3-v2.jpg)
+
+**Figure 3.:** Polygenic risk score in models of mean hippocampal volume (HV) across both sexes. (A) R2 of linear models across increasing p-value thresholds. All models are of bilateral HV and account for age, sex, and top 10 genetic principal components. The minimum R2 on the y-scale is the R2 of the models without any PGS. (B) Distribution of mean HV across percentiles of PGS. Excluding the top and bottom 20% of percentiles reduces the variance by 49% (darker grey areas). Fitting a cubic polynomial to the means produces the grey line.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The left set of graphs show the R2 of the regression models of polygenic risk score (PRS) across HV for the scores built across SNP p-value thresholds. While the difference is small, we consistently see a dip in the R2 for the middle set of thresholds. The set of figures to the right show the spread of HV across PRS percentile. We display the percentiles for the 0.75 threshold as it showed the best correlation with HV overall.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The left set of graphs show the R2 of the regression models of polygenic risk score (PRS) across HV for the scores built across SNP p-value thresholds. In contrast to the graphs seen in the UK Biobank (UKB) samples, the R2 values for the most part increase with p-value threshold. The set of graphs on the right show the spread of HV across PGS percentiles, each at the score that had the highest R2 value from the corresponding left graph.
+
+**Table 1.**
+ Association between polygenic scores (PGSs) and hippocampal volume (HV).Linear models were built for HV (left; right; bilateral) using PGS across cohorts (male; female; both) at three representative p-value thresholds (1E-7; 0.01; 1). p-Values of the slope were significant across all categories, with the lowest being associated with the threshold value of 1 in all but a single case (both/right). Variance explained (R2) increased from left to right to bilateral volumes and increased from female to male to both.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gender</th>
+      <th rowspan="2">PGS threshold</th>
+      <th colspan="3">LEFT</th>
+      <th colspan="3">RIGHT</th>
+      <th colspan="3">BILATERAL</th>
+    </tr>
+    <tr>
+      <th>Slope(×10–2)</th>
+      <th>p-Value</th>
+      <th>R2</th>
+      <th>Slope(×10–2)</th>
+      <th>p-Value</th>
+      <th>R2</th>
+      <th>Slope(×10–2)</th>
+      <th>p-Value</th>
+      <th>R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">FEMALE</td>
+      <td>1E-7</td>
+      <td>10</td>
+      <td>1.8E-46</td>
+      <td>13%</td>
+      <td>9.4</td>
+      <td>2.4E-45</td>
+      <td>14%</td>
+      <td>11</td>
+      <td>1.4E-51</td>
+      <td>15%</td>
+    </tr>
+    <tr>
+      <td>0.01</td>
+      <td>8.2</td>
+      <td>2.7E-26</td>
+      <td>13%</td>
+      <td>7.6</td>
+      <td>1.0E-27</td>
+      <td>13%</td>
+      <td>8.7</td>
+      <td>3.2E-30</td>
+      <td>14%</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>11</td>
+      <td>9.4E-54</td>
+      <td>13%</td>
+      <td>9.62</td>
+      <td>1.5E-48</td>
+      <td>14%</td>
+      <td>11</td>
+      <td>1.6E-57</td>
+      <td>15%</td>
+    </tr>
+    <tr>
+      <td rowspan="3">MALE</td>
+      <td>1E-7</td>
+      <td>8.2</td>
+      <td>1.4E-35</td>
+      <td>18%</td>
+      <td>7.5</td>
+      <td>2.6E-35</td>
+      <td>18%</td>
+      <td>9.2</td>
+      <td>4.1E-40</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>0.01</td>
+      <td>7.8</td>
+      <td>3.8E-29</td>
+      <td>18%</td>
+      <td>6.8</td>
+      <td>3.8E-27</td>
+      <td>18%</td>
+      <td>8.6</td>
+      <td>7.8E-32</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>9.4</td>
+      <td>3.2E-48</td>
+      <td>18%</td>
+      <td>8.0</td>
+      <td>4.7E-43</td>
+      <td>18%</td>
+      <td>10</td>
+      <td>9.1E-52</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td rowspan="3">BOTH</td>
+      <td>1E-7</td>
+      <td>8.4</td>
+      <td>8.1E-90</td>
+      <td>25%</td>
+      <td>7.9</td>
+      <td>6.4E-93</td>
+      <td>26%</td>
+      <td>9.3</td>
+      <td>3.1E-103</td>
+      <td>28%</td>
+    </tr>
+    <tr>
+      <td>0.01</td>
+      <td>7.4</td>
+      <td>9.3E-54</td>
+      <td>24%</td>
+      <td>6.7</td>
+      <td>3.3E-53</td>
+      <td>26%</td>
+      <td>8</td>
+      <td>2.3E-60</td>
+      <td>28%</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>9.6</td>
+      <td>2.1E-99</td>
+      <td>25%</td>
+      <td>8.3</td>
+      <td>1.8E-89</td>
+      <td>26%</td>
+      <td>10</td>
+      <td>7.5E-107</td>
+      <td>28%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Slope = beta coefficient for PGS in the linear mode; p-value for the slope; R2=variance explained by the linear model._
+
+### Genetics stratified nomograms
 
 We will focus on the p-value threshold of 0.75 as it achieved best or close to best performance overall (Figure 3—source data 1). Genetics had a clear effect on the nomograms: the high PGS nomograms were shifted upwards while the low-PGS nomograms were shifted downwards; an effect which could be observed at both the model and data level (Figure 4; Figure 4—figure supplement 3), both by around 1.2% of the average HV (50 mm3). Thus, the difference between high and low PGS nomograms was ~2.3% of the average HV (100 mm3). An ANOVA test of the percentiles produced with the adjusted vs. unadjusted nomograms revealed that the groups were significantly different to each other (F>19; p<8.04E-6; Table 2). The HV peak previously observed at 50 years in males was less pronounced in the high PGS nomogram and more so in the low PGS nomogram (Figure 4, Figure 4—figure supplement 1). Adjusting nomograms using ICV and AD PGSs, instead of HV PGS, did not result in nomograms that were meaningfully different from the non-adjusted nomograms (Figure 4—figure supplement 2).
 
-## External evaluation on ADNI data
+![Figure 4.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig4-v2.jpg)
+
+**Figure 4.:** Results of genetic adjustment in bilateral male hippocampal volume (HV). (A, D) Nomograms of bilateral HV generated from all male UK Biobank (UKB) samples overlayed with male Alzheimer’s Disease Neuroimaging Initiative (ADNI) samples. Cognitively normal (CN) samples (red squares) centre around the 50th percentile, Alzheimer’s disease (AD) samples (turquoise triangles) lie mostly below the 2.5th percentile, and mild cognitive impairment (MCI) samples (grey circles) span both regions. (B, E) Nomograms generated using only high polygenic score (PGS) samples (top 30%) was shifted upwards (red lines) compared to the original (black lines) by an average of 50 mm3 (1.2% of mean HV). Plotting the high PGS ADNI samples (top 50%) slightly improves intra-group variance. (C, F) Similar results are seen in low PGS samples. Note, the black lines in panels (B, C) are the same as the nomogram in panel (A) and similarly the red lines in panel (B, C) are same as the nomogram in panels (E, F).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** For all sub-figures, the black lines – from top to bottom – represent the 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5% quantiles respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Left column: PGS based on hippocampal volume (HV) genome-wide association study (GWAS). Middle column: PGS based on intracranial volume (ICV) GWAS. Right column: PGS based on Alzheimer’s disease (AD) GWAS. For all sub-figures, the black lines – from top to bottom – represent the 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5% quantiles, respectively.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Histograms of bilateral hippocampal volume (HV) across the different subsets of the datasets. Samples are grouped in bins of 5 years. N is the number of samples in each set and p is the p-value from a Shapiro-Wilks test of normality. Typically, this test would indicate a non-Gaussian distribution with a p-value lower than 0.05 (0.001 corrected for 48 multiple tests in this case).
+
+**Table 2.**
+ Results of ANOVA tests of UK Biobank (UKB) hippocampal volume (HV) percentiles produced with genetically adjusted and unadjusted nomograms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SEX</th>
+      <th>STRATA</th>
+      <th>DF</th>
+      <th>SUM SQ</th>
+      <th>F-VALUE</th>
+      <th>p-VALUE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">MEN</td>
+      <td>HIGH</td>
+      <td>1</td>
+      <td>18,786</td>
+      <td>22.84</td>
+      <td>1.8E-06</td>
+    </tr>
+    <tr>
+      <td>LOW</td>
+      <td>1</td>
+      <td>16,407</td>
+      <td>19.96</td>
+      <td>8.04E-06</td>
+    </tr>
+    <tr>
+      <td rowspan="2">WOMEN</td>
+      <td>HIGH</td>
+      <td>1</td>
+      <td>27,068</td>
+      <td>32.92</td>
+      <td>9.97E-09</td>
+    </tr>
+    <tr>
+      <td>LOW</td>
+      <td>1</td>
+      <td>30,103</td>
+      <td>36.94</td>
+      <td>1.28E-09</td>
+    </tr>
+  </tbody>
+</table>
+
+### External evaluation on ADNI data
 
 In the ADNI dataset we investigated whether the shift in genetically adjusted nomograms could be leveraged for improved diagnosis. Using the non-adjusted nomogram, cognitively normal (CN) participants (n=225) had a median bilateral HV percentile of 61% (±25% SD), mild cognitive impairment (MCI) participants (n=391) had 25% (±26% SD), and AD participants (n=121) had 1% (±9% SD) (Figure 5). Visual inspection revealed that while CN participants were spread across the quantiles, AD participants lay mostly below the 2.5% quantile, and MCI participants spanned the range of both CN and AD participants (Figure 4). Bisecting the samples by PGS showed that high PGS CN samples had median percentiles of 65% (±27% SD) and low PGS had 54% (±26% SD). When comparing the same samples against the genetically adjusted nomograms instead, high PGS CN samples had 60% (±26% SD) and low PGS had 59% (±26% SD). Thus, reducing the gap between high and low PGS CN participants by 9% (from 10% to 1%, a 90% relative reduction). Similar analysis showed a reduction in MCI participants by 10% (60% relative reduction), and 0.5% (56% relative reduction) in AD participants. The above effects persisted across most strata (i.e., sex and hemisphere) (Figure 5; Figure 5—source data 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78232/elife-78232-fig5-v2.jpg)
 
-**Figure 5.:** Plotting the percentile distribution of the different diagnostic groups across adjusted and non-adjusted nomograms reveals that genetic adjustment increases group cohesiveness. (A) The percentile distributions of the different diagnostic groups against the non-adjusted nomograms. (B) In cognitively normal (CN) samples for example, when plotting against the non-adjusted nomogram (left adjoined boxplots), the median percentile of the top 30% of samples (darker turquoise) was 65%, while the median for the lower 30% of samples (lighter turquoise) was 54%. When using the genetically adjusted nomogram instead (right adjoined boxplots), those median percentiles become 60% and 59% respectively, a 90% relative reduction. Similar results can be seen with mild cognitive impairment (MCI) (C) and Alzheimer’s disease (AD) (D) samples, with 60% and 56% relative reduction, respectively.Figure 5—source data 1.
+**Figure 5.:** Plotting the percentile distribution of the different diagnostic groups across adjusted and non-adjusted nomograms reveals that genetic adjustment increases group cohesiveness. (A) The percentile distributions of the different diagnostic groups against the non-adjusted nomograms. (B) In cognitively normal (CN) samples for example, when plotting against the non-adjusted nomogram (left adjoined boxplots), the median percentile of the top 30% of samples (darker turquoise) was 65%, while the median for the lower 30% of samples (lighter turquoise) was 54%. When using the genetically adjusted nomogram instead (right adjoined boxplots), those median percentiles become 60% and 59% respectively, a 90% relative reduction. Similar results can be seen with mild cognitive impairment (MCI) (C) and Alzheimer’s disease (AD) (D) samples, with 60% and 56% relative reduction, respectively.
 
-## Longitudinal evaluation
+### Longitudinal evaluation
 
 We also investigated whether genetically adjusted nomograms provided additional accuracy in distinguishing stable (n=299) from MCI-to-AD progressing subjects (n=83). With the non-adjusted nomogram, progressing MCI participants had a mean HV percentile of 11% and stable participants had 29% (Figure 6). Using the genetically adjusted nomograms, they had 10% and 28%, respectively. Cox proportional hazards models of percentiles obtained using both nomograms revealed little difference between the two in terms of clinical conversion: both models resulted in a hazard ratio of 0.97 for percentile in nomogram (beta of –0.03 at p-value<4.87E-08); confirming that participants within lower HV percentiles where more likely to convert earlier.
 
@@ -84,36 +323,44 @@ In conclusion, our study demonstrated that PGS for HV was significantly positive
 
 ## Materials and methods
 
-## Datasets
+### Datasets
 
 Data from a total of 39,664 subjects (18,718 female) aged 44–82 were obtained from the UKB (application number 65299) with available genotyping and imaging data. Imaging and genetic protocols are described in Bycroft et al., 2018, and Miller et al., 2016, respectively. Briefly, for this analysis we used HV estimated with FreeSurfer (Fischl, 2012) at the initial imaging visit. The dataset preparation followed the process described by Nobis et al., 2019. To ensure nomograms represent the spectrum of healthy aging, subjects were excluded based on history of neurological or psychiatric disorders, head trauma, substance abuse, or cardiovascular disorders. Furthermore, to control for population-level genetic heterogeneity, only subjects with ‘British’ ethnic backgrounds were considered. The dataset was then stratified by self-reported sex. HV outliers were excluded using mean absolute deviation with a threshold of 5.0. Subjects’ intracranial volume (ICV) was derived by using the volumetric scaling from T1 head image to standard space. Finally, ICV and scan date were linearly regressed out of the HVs.
 
 For an application dataset, we used the ADNI database (http://adni.loni.usc.edu/) (Petersen et al., 2010). The ADNI was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W Weiner, MD. The primary goal of ADNI has been to test whether serial MRI, positron emission tomography, other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of MCI and early AD. A total of 1001 ADNI subjects (445 male) aged 55–95 were included in this analysis. Imaging and genetic protocols are described by Saykin et al., 2010, and by Jack et al., 2008, respectively. Briefly, we obtained HVs estimated with FreeSurfer v5.1. Subjects were excluded based on HV quality scores and based on genetic ancestry (i.e., restricted to self-reported white non-Hispanic ancestry). As with UKB, estimated volumes were stratified by sex, and ICV and scan date were regressed out of HV estimates. Finally, we used NeuroCombat (Fortin et al., 2018) to adjust across ADNI sites and harmonize the volumes with the UKB dataset. To do this we modelled 58 batches (UKB data as one batch and 57 ADNI sites as separate batches) and added ICV, sex, and diagnosis (assigning all UKB as healthy and using the diagnosis columns in ADNI) to retain biological variation. Demographics were obtained from the ADNIMERGE table (date accessed: 19 June 2020). Furthermore, we used genotyping data of ADNI subjects pre-processed as previously described by Scelsi et al., 2018.
 
-## Sliding window approach
+### Sliding window approach
 
 As a baseline, we generated nomograms using the SWA described by Nobis et al., 2019. Briefly, we sorted UKB samples by age, and formed 100 quantile bins, each containing 10% of the samples. This means that neighbouring bins had a 90% overlap. For example, if we had 5000 samples, each bin contained 500 samples and consecutive bins were shifted by 50 samples. Thus, bin number 4 would start at index 151. Then, within each bin, the 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5% quantiles were calculated. The quantiles were then smoothed with a Gaussian kernel of width 20. The smoothing was needed because towards the ends of the data, the sliding windows approach becomes sensitive to noise.
 
-## Gaussian process regression
+### Gaussian process regression
 
-Our proposed approach uses GPR to build nomograms. Briefly, a GP is a probability distribution over possible functions that fit a set of points (Rasmussen and Williams, 2006; Wang, 2021). In our application it is a distribution of possible ‘HV trajectories across age’. The GPR models were trained with the laGP (Gramacy, 2016) R library, which implements a local approximation method that allows large datasets to be trained on consumer grade machines. We applied the commonly used squared exponential covariance kernel function:Kx1,x2=σ2e-x1-x222L2,
+Our proposed approach uses GPR to build nomograms. Briefly, a GP is a probability distribution over possible functions that fit a set of points (Rasmussen and Williams, 2006; Wang, 2021). In our application it is a distribution of possible ‘HV trajectories across age’. The GPR models were trained with the laGP (Gramacy, 2016) R library, which implements a local approximation method that allows large datasets to be trained on consumer grade machines. We applied the commonly used squared exponential covariance kernel function:
 
-where x1 and x2 are any two age values from the training set. The kernel function is hyper-parameterized by a vertical scale (σ) and a length scale (L), which, following initialization, are fitted using maximum likelihood estimation. The vertical scale is initialized to the mean HV of all samples, and the length scale is initialized to mean age difference between all samples. We trained models of left, right, and mean HV for each sex. Thanks to their probabilistic formulation, GP models naturally provide a standard deviation from which quantiles can be easily computed. After training, we generated models for ages 45–82 by increments of 0.25 years, and quantile curves at 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5%. The UKB dataset was used to train the models and the ADNI dataset was used to test them. For all GPR models, we only tested the ADNI samples that lay within the age range of each model respectively.
+$$
+Kx_{1},x_{2}=\sigma^{2}e^{\frac{-x_{1}-x_{2}^{2}}{2L^{2}}},
+$$
 
-## PGS for HV
+where $x_{1}$ and $x_{2}$ are any two age values from the training set. The kernel function is hyper-parameterized by a vertical scale ($\sigma$) and a length scale ($L$), which, following initialization, are fitted using maximum likelihood estimation. The vertical scale is initialized to the mean HV of all samples, and the length scale is initialized to mean age difference between all samples. We trained models of left, right, and mean HV for each sex. Thanks to their probabilistic formulation, GP models naturally provide a standard deviation from which quantiles can be easily computed. After training, we generated models for ages 45–82 by increments of 0.25 years, and quantile curves at 2.5%, 5%, 10%, 25%, 50%, 75%, 90%, 95%, and 97.5%. The UKB dataset was used to train the models and the ADNI dataset was used to test them. For all GPR models, we only tested the ADNI samples that lay within the age range of each model respectively.
 
-A PGS is a sum of the impact of a selection of genetic variants on a trait, weighted by the allele count. That is:PGS=∑∀i∈SNPsESi*Ci,
+### PGS for HV
 
-where (ESi) is the effect size (e.g., beta or log(odds) ratio from GWAS summary statistics), and (Ci) is the allele count of SNP i in the subject (either 0, 1, or 2). Thus, computing PGSs requires SNP-level genetic data. Using a previously reported GWAS of mean bilateral HV using 26,814 (European) subjects from the ENIGMA study (Hibar et al., 2017), we built a PGS for HV with PRSice v2 (Choi and O’Reilly, 2019). For both UKB and ADNI, we filter for minor allele frequency of 0.05, genotype missingness of 0.1, and clumping at 250 kb; after which we were left with 70,251 potential SNPS to include for UKB and 114,812 for ADNI. The most widely applied strategy for SNP selection is p-value thresholding. We generated PGSs at 14 p-value thresholds (1E-8, 1E-7, 1E-6, 1E-5, 1E-4, 1E-3, 0.01, 0.05, 0.1, 0.2, 0.4, 0.5, 0.75, 1). These thresholds produced a range of PGSs comprising as little as six SNPs (p-value cut-off at 1E-8) to all available SNPs (p-value cut-off at 1.0). Model fit is then checked by regressing HV against these PGSs while accounting for age, age2, sex, ICV, and 10 genetic principal components.
+A PGS is a sum of the impact of a selection of genetic variants on a trait, weighted by the allele count. That is:
 
-## Genetically adjusted nomograms
+$$
+PGS=\sum_{∀i\inSNPs}ES_{i}*C_{i},
+$$
+
+where ($ES_{i}$) is the effect size (e.g., beta or log(odds) ratio from GWAS summary statistics), and ($C_{i}$) is the allele count of SNP $i$ in the subject (either 0, 1, or 2). Thus, computing PGSs requires SNP-level genetic data. Using a previously reported GWAS of mean bilateral HV using 26,814 (European) subjects from the ENIGMA study (Hibar et al., 2017), we built a PGS for HV with PRSice v2 (Choi and O’Reilly, 2019). For both UKB and ADNI, we filter for minor allele frequency of 0.05, genotype missingness of 0.1, and clumping at 250 kb; after which we were left with 70,251 potential SNPS to include for UKB and 114,812 for ADNI. The most widely applied strategy for SNP selection is p-value thresholding. We generated PGSs at 14 p-value thresholds (1E-8, 1E-7, 1E-6, 1E-5, 1E-4, 1E-3, 0.01, 0.05, 0.1, 0.2, 0.4, 0.5, 0.75, 1). These thresholds produced a range of PGSs comprising as little as six SNPs (p-value cut-off at 1E-8) to all available SNPs (p-value cut-off at 1.0). Model fit is then checked by regressing HV against these PGSs while accounting for age, age2, sex, ICV, and 10 genetic principal components.
+
+### Genetically adjusted nomograms
 
 Given the high heritability of HV we investigated whether nomograms can be genetically adjusted. Specifically, we used the top and bottom 30% samples by PGS (at p-value<0.75 threshold) separately to build genetically adjusted nomograms. We found that using a 30% cut-off provided a balance of training size and performance (Figure 2—figure supplement 4). Thus, PGS provided us with a way to place new samples in their ‘appropriate’ nomogram. For instance, within the ADNI dataset we generated PGSs and split the top and bottom (i.e., high and low expected HV, respectively) to test against genetically adjusted UKB nomograms. To evaluate the impact of genetic adjustment, we perform a series of ANOVA tests across adjusted nomograms. For example, we performed an ANOVA test of the HV percentiles of the top 30% UKB samples in the unadjusted than the adjusted nomograms. We did the same for bottom 30% and for men and women. To assess the specificity of the HV-based PGS, we performed this genetic adjustment using PGSs of ICV and AD based on previously reported GWASs (Adams et al., 2016; Lambert et al., 2013).
 
-## Longitudinal analysis
+### Longitudinal analysis
 
 As nomograms are often used to track progression, we examined the impact of the genetically adjusted nomograms on prospective longitudinal data. To this end, we analysed patients from the ADNI cohort that were initially diagnosed as MCI and either converted to AD (progressor) or remained MCI (stable) within 5 years of follow-up. We tested whether the PGS-adjusted nomograms improved the separation between stable and progressor patients using Cox proportional hazards models while accounting for sex and age.
 
-## Code and data availability
+### Code and data availability
 
 The scripts and code used in this study have been made publicly available and can be found at: https://github.com/Mo-Janahi/NOMOGRAMS; Janahi, 2021. All underlying data, and derived quantities, are available by application from the UKB at http://www.ukbiobank.ac.uk, and by application from ADNI at http://adni.loni.usc.edu/data-samples/access-data/. Summary statistics from all GWAS described in this paper are available from the NHGRI-EBI GWAS catalog, study numbers: GCST003834, GCST002245, and GCST003961. URL: https://www.ebi.ac.uk/gwas/studies/.

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Image-based cell classification has become a common tool to identify phenotypic changes in cell populations. However, this methodology is limited to organisms possessing well-characterized species-specific reagents ( e.g. , antibodies) that allow cell identification, clustering, and convolutional neural network (CNN) training. In the absence of such reagents, the power of image-based classification has remained mostly off-limits to many research organisms. We have developed an image-based classification methodology we named Image3C (Image-Cytometry Cell Classification) that does not require species-specific reagents nor pre-existing knowledge about the sample. Image3C combines image-based flow cytometry with an unbiased, high-throughput cell clustering pipeline and CNN integration. Image3C exploits intrinsic cellular features and non-species-specific dyes to perform de novo cell composition analysis and detect changes between different conditions. Therefore, Image3C expands the use of image-based analyses of cell population composition to research organisms in which detailed cellular phenotypes are unknown or for which species-specific reagents are not available.
+Image-based cell classification has become a common tool to identify phenotypic changes in cell populations. However, this methodology is limited to organisms possessing well-characterized species-specific reagents (e.g., antibodies) that allow cell identification, clustering, and convolutional neural network (CNN) training. In the absence of such reagents, the power of image-based classification has remained mostly off-limits to many research organisms. We have developed an image-based classification methodology we named Image3C (Image-Cytometry Cell Classification) that does not require species-specific reagents nor pre-existing knowledge about the sample. Image3C combines image-based flow cytometry with an unbiased, high-throughput cell clustering pipeline and CNN integration. Image3C exploits intrinsic cellular features and non-species-specific dyes to perform de novo cell composition analysis and detect changes between different conditions. Therefore, Image3C expands the use of image-based analyses of cell population composition to research organisms in which detailed cellular phenotypes are unknown or for which species-specific reagents are not available.
 
 ## Introduction
 
@@ -28,11 +28,88 @@ Single-cell analysis has proven crucial to our understanding of fundamental biol
 
 Automated classification of cells using convolutional neural networks (CNNs, machine learning [ML] method specialized in image recognition and classification) has become a promising approach for accurate high-throughput cell analysis that is free from observer bias (Blasi et al., 2016; Eulenberg et al., 2017; Kobayashi et al., 2017; Lei et al., 2018; Nassar et al., 2019; Suzuki et al., 2019). To date, CNN-based automated clustering and classification techniques require pre-existing knowledge about the organism or cell type of interest (e.g., cell-specific morphological traits within an image set) or the availability of cell-specific reagents (e.g., antibodies), or genomic sequence (e.g., single-cell sequencing) (Table 1 shows an overview of the existing methods) (Baron et al., 2019; Blasi et al., 2016; Cheng et al., 2021; Eulenberg et al., 2017; Hennig et al., 2017; Kobayashi et al., 2017; Lei et al., 2018; Nassar et al., 2019). This means that to make effective use of artificial intelligence (AI) approaches for single-cell analysis, one must have information available to train the algorithm or for ML models, which often arises in the form of information gleaned from the use of reagents like antibodies. Research areas that rely on inter-species comparisons or studies on emerging research organisms would benefit from single-cell-based analyses that do not require pre-existing knowledge of cell types (i.e., which is required for training a CNN for example) and/or availability of antibodies or molecular databases. For example, within the interdisciplinary field of eco-immunology, a growing number of researchers are investigating immune system adaptation to different environments by studying immune cell compositions in diverse animals (Maizels and Nussey, 2013). Given the influences of immune cell composition on the immune system response of an organism (Kaczorowski et al., 2017), applying modern single-cell analysis in eco-immunological research would substantially increase our knowledge about the plasticity and conservation of immune responses in a variety of different animals and conditions (Peuß et al., 2020).
 
+**Table 1.**
+ Extensive overview on label-free cell clustering tools including a comparison of their main features.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool name</th>
+      <th>Was tested on multiple cell types?</th>
+      <th>Requires a priori knowledge of the sample and/or species-specific reagents for the clustering?</th>
+      <th>Uses commercially available hardware?</th>
+      <th>Uses free or open source softwares?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Image3C (present work)</td>
+      <td>YES (Zebrafish whole kidney marrow; Apple snail hemolymph)</td>
+      <td>NO Does not require previous knowledge or species-specific reagents to cluster cell images and train the neural network. If available, they can be used/integrated.</td>
+      <td>YES (ImageStream)</td>
+      <td>YES (IDEAS; Vortex; R; Python) NO (FCS Express Plus)</td>
+    </tr>
+    <tr>
+      <td>CellProfiler *</td>
+      <td>YES (Fixed Jurkat cells; Live Jurkat cells; Fission yeast; Human white blood cells)</td>
+      <td>YES Requires annotated datasets to train the machine learning algorithms, either by staining the samples with known markers, or by manually clustering the cells.</td>
+      <td>YES (ImageStream; Microscope)</td>
+      <td>YES (IDEAS; CellProfiler) NO (MATLAB)</td>
+    </tr>
+    <tr>
+      <td>CellProfiler Analyst †</td>
+      <td>NO (Jurkat cells)</td>
+      <td>YES Requires the use of fluorescent markers to annotate the cells and use them as the ground truth to train the machine learning algorithms.</td>
+      <td>YES (ImageStream)</td>
+      <td>YES (IDEAS; CellProfiler/ Phyton)</td>
+    </tr>
+    <tr>
+      <td>Label-free reflectance microscopy ‡</td>
+      <td>NO (Fixed HeLa cells)</td>
+      <td>YES Requires immunofluorescence images with known markers to use as ground truth and for training multiple deep learning models.</td>
+      <td>NO (Custom-built multimodal light-emitting diode (LED) array reflectance microscope)</td>
+      <td>YES (Deep neural networks)</td>
+    </tr>
+    <tr>
+      <td>Optofluidic time-stretch microscopy §</td>
+      <td>NO (Human breast adenocarcinoma cell line, MCF-7)</td>
+      <td>YES Does not provide cell clustering and single-cell resolution analysis. The changes are analyzed overall in the sample without assigning it to a cell type.</td>
+      <td>NO (Optofluidic time-stretch microscope and microfluidic devices)</td>
+      <td>NO (MATLAB)</td>
+    </tr>
+    <tr>
+      <td>Raman scattering ¶</td>
+      <td>YES (Microalgal cells; Circulating tumor cells in human blood)</td>
+      <td>YES Requires homogenous cell cultures. After different treatments, these samples are used to create databases for training deep learning models.</td>
+      <td>NO (High-speed multicolor stimulated Raman scattering (SRS) microscope and microfluidic platform)</td>
+      <td>YES (Deep learning, neural network structure, VGG-16)</td>
+    </tr>
+    <tr>
+      <td>Fluorescence lifetime imaging **</td>
+      <td>NO (Human white blood cells)</td>
+      <td>YES Depends on other techniques to identify cell types to compare their autofluorescence signals and fluorescence decay for further analysis.</td>
+      <td>YES (Fluorescence microscopy; FLIM; Flowcytometer)</td>
+      <td>YES (Python)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Blasi et al., 2016; Nassar et al., 2019.† Hennig et al., 2017.‡ Cheng et al., 2021.§ Kobayashi et al., 2017.¶ Suzuki et al., 2019.** Yakimov et al., 2019._
+
 To make sophisticated cellular composition analysis available to any research organism without the need for either pre-existing knowledge about the cell populations or species-specific reagents, we developed Image-Cytometry Cell Classification (Image3C). This method analyzes, visualizes, and quantifies, in a high-throughput and unbiased way, the composition of cell populations by using cell morphological traits and non-species-specific fluorescent probes (e.g., nuclear staining or dyes for metabolic states that function well in a variety of organisms) (Figure 1, Table 1). By taking advantage of cell morphology and/or fluorescent dyes related to function or metabolic state, Image3C can analyze single cell suspensions derived from any experimental design, de novo cluster cells present in the sample of interest and compare their abundance between each other or among different assays. Once the de novo clustering based on cell-intrinsic features is obtained, Image3C employs a CNN that uses these clusters as training sets, avoiding in this way user bias or manual classification (Figure 1, Table 1). This produces a CNN-based cell classifier ‘machine’ used to quantify subsequently acquired image-based flow cytometry data and compare cellular composition of samples across multiple experiments in a high-throughput manner without the need for repeating time-consuming steps for de novo clustering. The combination of the clustered cell images, the outputs of their functional assays, and the published literature about closely related organisms might allow the identification and description of cell types of interest. In comparison to existing label-free cell clustering methods, Image3C does not require initial antibody staining (Cheng et al., 2021; Hennig et al., 2017; Lippeveld et al., 2020; Nassar et al., 2019), pre-existing knowledge of specific cell morphology (Suzuki et al., 2019; Yakimov et al., 2019), and is not limited to a specific cellular phenotype (Blasi et al., 2016) for a priori identification of certain cell types (Table 1). This makes Image3C extremely versatile and applicable to virtually any research organism and tissue from which dissociated single cells can be obtained. Parallelly to this de novo clustering approach, Image3C can take advantage of species-specific reagents and prior knowledge to be combined with transcriptomic dataset and provide a new and complimentary layer of information based on cell morphology and function. In sum, Image3C combines modern high-throughput data acquisition by image-based flow cytometry, advanced and unbiased clustering analysis, statistics to compare cellular compositions across different samples, and a CNN classifier component to easily determine changes in cell composition across multiple experiments.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig1-v2.jpg)
+
+**Figure 1.:** (A) A single cell suspension is prepared for image-based flow cytometric analyses. The cells can be labeled with any reagent working for the species of interest. The signal can highlight specific cell components (e.g., nuclei), metabolic cell states, or specific cell functions. The samples are run on the ImageStreamX Mark II, and 10,000 nucleated and focused events are saved for each sample as individual raw images. (B) IDEAS software is used to open the raw images, compensate for correcting fluorescent spillover, subtract background, and quantify values for intrinsic morphological and fluorescent features. R (or R studio) is used to calculate the correlation between features to allow to trim the features that are redundant with others. Samples that are outliers among replicates are also removed prior to the final normalization of the fluorescence intensities. (C) Images are clustered based on morphological and fluorescent feature values and visualized as a force-directed layout (FDL) graph where each dot represents one event. (D) R integration in FCS Express Plus software allows the visualization of cell images by clusters or specifically selected with a gate. This step allows to evaluate the morphological homogeneity of the clusters, determine if the number of clusters is appropriate, and explore the phenotype/function of the cells based on visualization of individual channels. (E) Spearman’s correlation plot of feature values by clusters is one of the options available in Image3C for plotting integrated data. This heatmap shows feature similarities and differences between cells belonging to different clusters. (F) If new experiments are run and new data needs to be analyzed, two approaches can be taken. (1) If the goal is comparing samples belonging to the same experiment (e.g., treatment vs. control), the steps described so far from (A) to (E) can be reapplied to the new dataset including a statistical analysis to compare cluster relative abundance. This approach will produce a new set of clusters that will need to be reannotated. Compare sets of clusters coming from multiple experiments and multiple rounds of analysis can be challenging without pre-existing knowledge of cell types, clearly different morphologies or biomarkers that would allow to establish a unique correlation between clusters coming from different FDL graphs. (2) If the goal is integrating experiments and comparing cell type abundance between them, the use of steps (F) and (G) is suggested. A CNN classifier is trained using the images obtained from homeostasis, naïve or wild-type (WT) cells, and already organized in clusters in an unbiased way through the first part of our method. This will generate a trained classifier with CNN classes based on FDL clusters. (G) This classifier is then used for deconvoluting data from new experimental sets and assigning each event to a CNN class with a given probability. This provides high-throughput and unbiased way to compare different experiment sets without the requirement for pre-existing knowledge about the tissue cell types, cell biomarkers, or the need to cross-annotate clusters increasing the probability to introduce errors. The entire pipeline chart and step-by-step technical information, such as software used, time required for processing, and exported file format, are reported in the interactive map Figure 1—figure supplement 1 that automatically directs to the specific sections of the GitHub.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Through this interactive map, it is possible to click on the different portions of the pipeline and be automatically directed to the corresponding section of the GitHub repository (https://github.com/stowersinstitute/LIBPB-1390-Image3C), where a detailed step-by-step description of the processing, sample scripts, workflow files, and example datasets are provided. The software used are color-coded throughout the pipeline, and approximation of the time needed to run the individual steps is provided in light gray. The central column and the left side represent the de novo clustering portion of the pipeline, while the right side (green arrows) represents the use of the convolutional neural network (CNN), being trained with the clusters defined in an unbiased way from the de novo clustering and able to process new samples.
 
 ## Results and discussion
 
-## Image3C
+### Image3C
 
 Image3C is an imaging tool developed to study tissue composition at single-cell resolution in research organisms for which antibodies and pre-existing knowledge about cell types are not readily available (Figure 1, Table 1). Image3C allows for high-throughput and unbiased analysis in scenarios where manual counting and observer-based cell identification are currently the only options. Image3C includes all the components required for compensating captured images, quantifying multiple features for each event, clustering the events, visualizing and exploring the data, and training and using the CNN for analyzing subsequent samples and integrating multiple experiments (Figure 1, Figure 1—figure supplement 1).
 
@@ -44,41 +121,97 @@ Exported feature quantifications are used for clustering the events. Dimensional
 
 Once this pipeline is run on a first set of samples (e.g., homeostatic state) and the cell clusters are defined for the tissue of interest, the images and the relative clustering IDs can be used to train a CNN classifier in an unbiased way (Figure 1F), including the ability to score frequency of ‘new’ cell types that do not match any of the clusters identified at homeostasis. Therefore, future experiments in the same tissue used for training the CNN classifier can be analyzed directly through the CNN (Figure 1G). This significantly reduces the number of steps and time required to process data collected subsequently. An even greater advantage is represented by the fact that, in the absence of CNN, every time new experimental sets are run it would be necessary to go again through the de novo clustering part of the pipeline (Figure 1B–E) and the new set of clusters would need to be cross-annotated to be compared with cell population composition observed in previous experiments. Manually matching clusters between different experimental sets might be a source of errors, mainly if the user is not familiar with the cell types present in the sample and if specific biomarkers or pre-existing knowledge about cell types and morphology are not available. The CNN splits all the cell images in the classes defined during the training step and allows to compare the abundance of cells with same morphology among different samples without the need to cross-annotate clusters (Figure 1F, G). The CNN inclusion in Image3C and the reproducibility of image acquisition through image-based flow cytometry allows use of the clusters defined from one experiment (e.g., homeostatic state) to set up a classifier in an unbiased way for later use as a reference in analyzing the effects of experimental manipulations on these cell populations. We conclude from these results that Image3C can perform de novo high-throughput characterizations of population composition and define specific cell type changes between homeostatic and experimentally perturbed samples across multiple experiments.
 
-## Image3C recapitulates cell composition of zebrafish whole kidney marrow (WKM) tissue
+### Image3C recapitulates cell composition of zebrafish whole kidney marrow (WKM) tissue
 
 To test whether Image3C could identify homogeneous and biologically meaningful cell populations, we used the research organism Danio rerio. We obtained cells from adult female zebrafish WKM (location of the hematopoietic tissue) in homeostasis condition, stained them, and ran on the ImageStreamX Mark II. We analyzed intrinsic morphological and fluorescent features, such as cell and nuclear size, shape, and darkfield signal (side scatter [SSC]). Feature values were extracted from each cell image and processed through our pipeline (see Supplementary file 1 for feature description). Clustering by the final set of normalized and non-redundant morphological and fluorescent features produced distinct cell populations (Figure 2A–C, Figure 2—figure supplements 1–3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig2-v2.jpg)
+
+**Figure 2.:** (A) WKM tissue obtained from zebrafish is prepared for image-based flow cytometric analyses and run on the ImageStreamX Mark II (n = 8). Standard gating of focused and nucleated events and manual outgating of most erythrocytes was performed using IDEAS software. The selected images were processed through the pipeline described in Figure 1 and clustered based only on intrinsic morphological and fluorescent feature values. Force-directed layout (FDL) graph visualizes 16 clusters, and each color represents a unique cell cluster. (B) Representative cell images belonging to each cluster are shown to evaluate the homogeneity of the cluster and determine morphology of the cells for cluster annotation. Representative cells for all the identified clusters are shown in Supplementary file 4. Merge represents the overlay of brightfield (BF) and Draq5 (nuclear staining) signal. (C) Spearman’s correlation plot shows the average feature values of the images in each cluster to highlight morphological similarities and differences between events belonging to different clusters, such as cell size or cytoplasm granularity (Supplementary file 1). (D) Box plot of relative abundance of events within each cluster follows the same color code used in (A).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** An example of feature correlation and feature trimming step is shown. The correlation between feature is calculated (A) and the redundant features are removed in order to leave only one representative feature for each group of features with high correlation (B).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Sample correlation and outlier sample removal step performed on samples of adult zebrafish WKM. The correlation between samples is calculated, and samples with clear outlier profile are removed from the subsequent analysis.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** An example of DNA normalization step is shown. The fluorescent peaks of DNA staining for all the samples of one experiment are shown before (A) and after (B) normalization that aims to align the 2N and 4N peaks across samples.
 
 Image3C can distinguish between the major classes of cells present in zebrafish WKM (Figure 2; Supplementary files 3 and 4) that were described using standard sorting flow cytometry and morphological staining approaches (Traver et al., 2003). It is noteworthy that Image3C can clearly identify dead cells and debris (Figure 2A, B) allowing to optimize experimental protocols in order to minimize cell death and run the subsequent analysis only on the intact, live cells. Image3C can identify cells with outstanding morphological features, such as neutrophils from other myelomonocytes (Figure 2B, C). Based on zebrafish neutrophil characteristics such as high granularity, high complexity, and low circularity of the nuclei (Lugo-Villarino et al., 2010), this type of granulocytes can be easily distinguished. Other types of myelomonocytes, such as monocytes and eosinophils, are here merged in the same cluster since in zebrafish they share many morphological characteristics (Lugo-Villarino et al., 2010). Similarly, using only intrinsic morphological features for the clustering, different lymphocytes (B and T-cells) and hematopoietic stem cells cannot be separated from each other, but they can be clearly distinguished from the myelomonocytes (Figure 2A, B). Within the lymphocytes/progenitors fraction, we find two clusters (Dr1 and Dr7) that mainly differ in cell diameter (Figure 2C). Whether this morphological difference has a biological implication needs to be studied in future experiments.
 
 Image3C also enables the quantification of cell populations (clusters or CNN classes)-relative abundance, an important tool for comparing population composition across different treatment groups under different environmental conditions (Peuß et al., 2020). Here, we compared our results with previously published data to validate our method. Although a direct comparison with results from classical approaches (Traver et al., 2003) is not possible since we gated out (removed analytically) mature erythrocytes before clustering (Materials and methods), the myelomonocyte to lymphocyte ratio (M/L ratio = 1.59) is similar to the one obtained with classic histological approaches (mean M/L ratio = 1.35) (Figure 2D; Traver et al., 2003).
 
-## Image3C identifies professional phagocytes in zebrafish WKM tissue
+### Image3C identifies professional phagocytes in zebrafish WKM tissue
 
 Next, we sought to determine whether Image3C could be used to characterize and quantify biological processes by identifying a tissue of interest and then comparing cellular composition dynamics, functions, and physiological responses of specific cell types across a range of experimental conditions. Our goal was to detect statistically significant changes in cluster relative abundance between control and treated samples to gain a more detailed understanding of cell population dynamics and individual cell function.
 
 As proof of concept, we performed a standard phagocytosis assay using WKM tissue from female adult zebrafish. The single cell suspension was incubated with CellTrace Violet labeled Staphylococcus aureus (CTV-S. aureus) and with dihydrorhodamine-123 (DHR), a ROS indicator that becomes fluorescent if oxidized to report oxidative bursting following phagocytosis. As controls, we inhibited phagocytosis through cytoskeletal impairment with cytochalasin B (CCB) incubation or through incubation with bacteria at lowered temperature by placing culture plates on ice. Events collected on the ImageStreamX Mark II were analyzed with Image3C and clustered in 26 distinct clusters using quantifications of morphological and fluorescent features (see Supplementary file 2 for feature description), including nuclear staining, phagocytized S. aureus, and DHR positivity (Figure 3A, Figure 3—figure supplement 1). Professional phagocytes are defined by their ability to take up S. aureus (CTV staining lies within the cell boundary) and induce a ROS response (bright DHR signal) (Rabinovitch, 1995). In zebrafish, professional phagocytes are mainly granulocytes and monocytic cells and can be discriminated from each other based on morphological differences, such as cell size, granularity, and nuclear shape (Wittamer et al., 2011). To compare samples incubated with CTV-S. aureus and the samples where phagocytosis is inhibited (CTV-S. aureus + CCB and CTV-S. aureus + Ice), we used the statistical analysis included in Image3C based on a negative binomial regression model (Figure 3B, C, Figure 3—figure supplement 2; Supplementary files 5 and 6). Statistical analyses reported clusters with differences in relative abundance between phagocytosis and phagocytosis-inhibited samples. Visualizing these clustered event images (Supplementary file 7) while considering the values and intensities of their morphological and fluorescent features (Supplementary file 3) allowed identification of 4 clusters of professional phagocytes: granulocytes within clusters Dr4_P, Dr12_P, and Dr13_P and monocytic cells in cluster Dr21_P (Figure 3A, B). The morphology of cells in cluster Dr12_P is characteristic of phagocytic neutrophils (Figure 2B, Figure 3A) that become adhesive and produce extracellular traps upon recognition of bacterial antigens (Palić et al., 2007). Overall, the relative abundance of professional phagocytes is 5–10% (Figure 3C), which is in line with previous studies that estimated the number of professional phagocytes in WKM tissue of adult zebrafish using classical morphological approaches (Wittamer et al., 2011). It is also noteworthy that in line with other studies (Page et al., 2013) we did not observe a cluster of lymphocytes (e.g., B-cells) that actively phagocytize CTV-S. aureus bacteria (Figure 2; Supplementary file 7). Compared to the classical morphological approaches, Image3C allows to analyze thousands of events in a high-throughput and unbiased fashion, allowing the study of rare cell morphologies and increasing results confidence and reproducibility. These results show that Image3C can successfully analyze biological processes since we were able to recapitulate the presence, cell type, and frequency of professional phagocytes in adult zebrafish WKM organ.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig3-v2.jpg)
+
+**Figure 3.:** (A) A phagocytosis assay was performed on a cell suspension obtained from zebrafish WKM tissue and the samples were subsequently run on the ImageStreamX Mark II (n = 6). Force-directed layout (FDL) graph shows 26 clusters, and each color represents a unique cell cluster. Representative cell images belonging to the 4 clusters containing professional phagocytes are shown. Representative cells for all the identified clusters are shown in Supplementary file 7. Merge represents the overlay of dihydrorhodamine-123 (DHR) (reactive oxygen species indicator), CellTrace Violet (CTV) (S. aureus labeling), and Draq5 (nuclear staining) channels. Supplementary file 2 reports the features used for this clustering. (B) Volcano plot illustrates comparison of cluster relative abundance between phagocytosis samples (CTV-S. aureus) and inhibited phagocytosis samples (CTV-S. aureus + CCB). The log fold change (logFC) is plotted in relation to the false discovery rate (FDR)-corrected p-value (-log10) of each individual cluster calculated with negative binomial regression model (n = 6) (Supplementary file 5). Dot color follows the same color code used in (A). (C) Box plot of relative abundances of events within the 4 clusters containing professional phagocytes in the 3 samples: phagocytosis samples (CTV-S. aureus), CCB-inhibited phagocytosis samples (CTV-S. aureus + CCB), and ice-inhibited phagocytosis samples (CTV-S. aureus + Ice) (Figure 3—figure supplement 2). Statistically significant differences are calculated using the negative binomial regression model between the phagocytosis and the inhibited phagocytosis samples (Supplementary files 5 and 6). ** indicates p≤0.01 and n.s. indicates not significantly different after FDR (n = 6).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Sample correlation and outlier sample removal step performed on samples of adult zebrafish WKM after phagocytosis assay. The correlation between samples is calculated, and samples with clear outlier profile are removed from the subsequent analysis.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Volcano plot illustrates comparison between phagocytosis samples (CellTrace Violet labeled Staphylococcus aureus [CTV-S. aureus]) and ice-inhibited phagocytosis samples (CTV-S. aureus + Ice). The log fold change (logFC) is plotted in relation to the false discovery rate (FDR)-corrected p-value (-log10) of each individual cluster calculated with negative binomial regression model (n = 6) (Supplementary file 6). Dot color follows the same color code used in Figure 3A.
+
 A new aspect that Image3C highlighted is that CCB selectively affects cell viability based on cell identity, introducing artifacts and cell damage, actions not specific to inhibition of phagocytosis (Figure 3B). All mature erythrocyte-containing clusters had a significantly higher cell count in the CTV-S. aureus samples compared to the CTV-S. aureus + CCB ones (Figure 3B; Supplementary files 3 and 5). Cluster analysis revealed that erythrocytes were almost absent in samples incubated with CCB (Supplementary file 3), while there was a significant increase in the relative abundance of clusters containing dead and apoptotic cells (Figure 3B; Supplementary file 5). Both outcomes are likely due to reduced cell viability of erythrocytes upon CCB incubation. Moreover, we excluded the possibility of higher cell death in the professional phagocytes upon CCB incubation since pseudo-phagocytes (phagocytes with DHR response but no internalized CTV-S. aureus) were significantly more abundant in the CTV-S. aureus + CCB sample (Figure 3B; Supplementary file 5). These results are remarkable since Image3C allowed us to observe a specific effect of CCB on erythrocytes' viability in zebrafish that, as far as we know, was not described before.
 
 Image3C analysis also uncovered another important biological observation. When we inhibited phagocytosis by incubating the single cell suspension on ice (CTV-S. aureus + Ice) and compared the specificity of inhibition with the CTV-S. aureus + CCB sample (Figure 3C; Supplementary file 6), we discovered that the inhibition of phagocytosis through low temperature only affects adhesive neutrophils (cluster Dr12_P) (Figure 3C). This is suspected to occur as ice inhibits adhesion, while CCB effectively blocks phagocytosis in all professional phagocytes in zebrafish WKM tissue by acting on the cytoskeleton. The use of Image3C allowed us to specifically identify cell types that are sensible to low temperature and those that are not, confirming the existence of different phagocytosis mechanisms and providing additional knowledge about pros and cons of different protocols that can be applied to inhibit phagocytosis based on specific goals and needs.
 
-## Image3C recapitulates cell composition of freshwater snail hemolymph
+### Image3C recapitulates cell composition of freshwater snail hemolymph
 
 Since we aimed to provide a tool that is widely applicable, we tested Image3C versatility on the apple snail Pomacea canaliculata, an emerging organism for which molecular and cell biological tools have yet to be fully developed. As such, we repeated the same experiments done in zebrafish on the hemolymph of P. canaliculata. For morphological examination of the cellular composition of the hemolymph collected from female adults in homeostasis conditions, we stained the single cell suspensions with Draq5 (DNA dye) and ran on the ImageStreamX Mark II. We used Image3C to analyze the images of the events and identified 9 cell clusters (Figure 4A, Figure 4—figure supplement 1). Two of these clusters comprised cell doublets, debris, and dead cells (clusters Pc5 and Pc8) and the other clusters, based on inspection of cell images, were grouped into two main categories (Figure 4A; Supplementary file 8). The first category includes small blast-like cells (cluster Pc4) and intermediate cells (clusters Pc2 and Pc3) with high nuclear-cytoplasmic (N/C) ratio. These cells morphologically resemble the Group I hemocytes previously described using a classical morphological approach (Accorsi et al., 2013). The second category comprised larger cells with lower N/C ratio and abundant membrane protrusions (clusters Pc1, Pc6, Pc7, and Pc9). Likely, these cells correspond to the previously described Group II hemocytes that include both granular and agranular cells (Accorsi et al., 2013).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig4-v2.jpg)
+
+**Figure 4.:** (A) Hemocytes obtained from the apple snail P. canaliculata are prepared for image-based flow cytometric analyses and run on the ImageStreamX Mark II (n = 5). Standard gating of focused and nucleated events was performed using IDEAS software. The selected images were processed through the pipeline described in Figure 1 and clustered based only on intrinsic morphological and fluorescent feature values. Force-directed layout (FDL) graph is used to visualize the 9 identified clusters, and each color represents a unique cell cluster. Representative cell images belonging to each cluster are shown to evaluate the homogeneity of the cluster and determine morphology of the cells for cluster annotation. Additional representative cells for all the identified clusters are shown in Supplementary file 8. Merge represents the overlay of brightfield (BF) and Draq5 (nuclear staining) signal. (B) Spearman’s correlation plot shows the average feature values of the images in each cluster to highlight morphological similarities and differences between events belonging to different clusters, such as cell size or cytoplasm granularity (Supplementary file 1). Cluster Pc6 is the one among large hemocytes with higher values in features describing cytoplasm granularity (i.e., area granularity #2, intensity granularity #18, and signal granularity #11). (C) Box plot of relative abundance of events within each cluster following the same color code used in (A). Clusters Pc5 and Pc8, constituted by duplets and dead cells, are those with the lowest number of events, validating the protocol used to prepare these samples.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Sample correlation and outlier sample removal step performed on samples of P. canaliculata hemocytes. The correlation between samples is calculated, and samples with clear outlier profile are removed from the subsequent analysis.
 
 To identify which of these clusters were enriched for granular cells, we looked at the heatmap with feature values for each individual cluster (Figure 4B; see Supplementary file 1 for feature description). Cluster Pc6 had the highest values for the features related to cytoplasm texture and granularity (i.e., area granularity, intensity granularity, and signal granularity) amongst all clusters other than cell doublets (Figure 4B; Supplementary files 3 and 8). Based on these data, we identified cluster Pc6 as the one containing the granular hemocytes. The clusters obtained by Image3C were not only homogeneous and biologically meaningful but were also consistent with published P. canaliculata hemocyte classification obtained by classical morphological methods (Accorsi et al., 2013). Such remarkable consistency was observed both in terms of identified cell morphologies and their relative abundance in the population of circulating hemocytes (Figure 4C; Supplementary file 8). For example, the relative abundance of the previously reported small blast-like cells is 14.0%, a value almost identical to the abundance of the corresponding cluster Pc4 (13.8%).
 
 Similarly, the category of larger hemocytes or Group II hemocytes represents 80.4% of the circulating cells as measured by traditional morphological methods, while clusters Pc1, Pc6, Pc7, and Pc9 combined represent 72.4% of the events analyzed with Image3C (Figure 4C; Supplementary file 3). A subset of these cells are the granular cells (cluster Pc6), which correspond to 7.7% of all hemocytes by classical histological methods and 8.9% by Image3C. The intermediate cells (clusters Pc2 and Pc3) are the least represented in both approaches, with a relative abundance of 5.6% and 10.6% for the manually and Image3C analyzed events, respectively (Figure 4C; Supplementary file 3). This difference is likely best explained by the remarkable difference in both the number of cells and the number of features that can be considered for analysis by Image3C. Only a few hundred hemocytes were visually analyzed using traditional histological methods based only on cell diameter and N/C ratio (Accorsi et al., 2013). In contrast, the automated pipeline used by Image3C facilitated the analysis of 10,000 nucleated events for each sample and considered 25 morphological features for each cell. The significantly higher number of morphological features simultaneously considered by Image3C also explains the higher number of clusters and improved resolution to distinguish cell types compared to the traditional methods. Hence, Image3C not only can properly analyze cells obtained from an emerging research organism generating biologically meaningful and informative clusters but also represents an unprecedented increase in the accuracy of cell type identification over traditional histological methods, while also allowing high-throughput capability.
 
-## Image3C identifies phagocytosis-competent cells in the hemolymph of a freshwater snail
+### Image3C identifies phagocytosis-competent cells in the hemolymph of a freshwater snail
 
 As with zebrafish, we also performed a phagocytosis experiment on hemocytes from P. canaliculata. Our goal was to test if it is possible with an emerging research organism to successfully discover cell phenotypes and functions and obtain information about specific biological processes of interest by using Image3C to compare cell populations among treated and control samples.
 
 Here, we setup the phagocytosis assay incubating the cells with CTV-S. aureus and DHR at room temperature. The phagocytosis was inhibited, as control, either adding EDTA (CTV-S. aureus + EDTA) or using low temperature by incubating samples on ice (CTV-S. aureus + Ice). Events collected on the ImageStreamX Mark II were analyzed with Image3C and clustered in 20 distinct clusters using quantifications of morphological and fluorescent features (see Supplementary file 2 for feature description), including nuclear staining, phagocytized S. aureus, and DHR positivity (Figure 5A, Figure 5—figure supplement 1). We compared the phagocytosis-permissive samples (CTV-S. aureus) with samples where phagocytosis was inhibited by EDTA incubation or low temperature using the statistical analysis included in Image3C based on a negative binomial regression model (Figure 5B, C, Figure 5—figure supplement 2; Supplementary files 9 and 10). The clusters with relative abundance significantly higher in the phagocytosis samples (Figure 5B; Supplementary files 3 and 11) and with high intensities of both DHR and bacteria signals (Figure 5—figure supplements 3 and 4) are the two clusters that we identify as enriched with professional phagocyte (cluster Pc5_P and Pc17_P) (Figure 5B, Figure 4—figure supplement 1, Figure 5—figure supplement 4; Supplementary file 11). The two clusters show a different DHR signal intensity (ROS response) from one another upon bacteria exposure (cluster Pc5_P with high DHR signal, cluster Pc17_P with low DHR signal) (Figure 5—figure supplement 3; Supplementary files 3 and 11). Both Pc5_P and Pc17_P relative abundance is significantly higher in the phagocytosis samples compared to the EDTA-treated sample (Figure 5C; Supplementary file 9), showing that EDTA effectively inhibits phagocytosis for both types of professional phagocytes. In the sample where the phagocytosis was inhibited by low temperature, however, only cluster Pc17_P had a significantly lower relative abundance compared to the phagocytosis sample (Figure 5C, Figure 3—figure supplement 2; Supplementary file 10). We can conclude that similar to CCB inhibition in the zebrafish phagocytosis experiment, EDTA is a more effective and generalized (not cell type-specific) inhibitor of phagocytosis than low temperature. These results show that also in an emerging research organism Image3C allowed discovery of new aspects of this biological process and highlighted differences among professional phagocytes that would have been difficult to detect with other methods.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig5-v2.jpg)
+
+**Figure 5.:** (A) A phagocytosis assay was performed on a cell suspension obtained from apple snail P. canaliculata hemolymph, and the samples were subsequently run on the ImageStreamX Mark II (n = 5). Force-directed layout (FDL) graph shows 20 clusters, and each color represents a unique cell cluster. Representative cell images belonging to the two clusters containing professional phagocytes are shown. Representative cells for all the identified clusters are shown in Supplementary file 11. Merge represents the overlay of dihydrorhodamine-123 (DHR) (reactive oxygen speciesindicator), CellTrace Violet (CTV) (S. aureus labeling), and Draq5 (nuclear staining) channels. Supplementary file 2 reports the features used for this clustering. (B) Volcano plot illustrates comparison of cluster relative abundance between phagocytosis samples (CTV-S. aureus) and inhibited phagocytosis samples (CTV-S. aureus + EDTA). The log fold change (logFC) is plotted in relation to the false discovery rate (FDR)-corrected p-value (-log10) of each individual cluster calculated with negative binomial regression model (n = 4) (Supplementary file 9). Dot color follows the same color code used in (A). (C) Box plot of relative abundances of events within the two clusters containing professional phagocytes in the 3 samples: phagocytosis samples (CTV-S. aureus), EDTA-inhibited phagocytosis samples (CTV-S. aureus + EDTA), and ice-inhibited phagocytosis samples (CTV-S. aureus + Ice) (Figure 5—figure supplement 2). Statistically significant differences are calculated using the negative binomial regression model between the phagocytosis and the inhibited phagocytosis samples (Supplementary files 9 and 10). ** indicates p≤0.01 and n.s. indicates not significantly different after FDR (n = 4).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Sample correlation and outlier sample removal step performed on samples of P. canaliculata hemocytes after phagocytosis assay. The correlation between samples is calculated, and samples with clear outlier profile are removed from the subsequent analysis.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Volcano plot illustrates comparison between phagocytosis samples (CellTrace Violet labeled Staphylococcus aureus [﻿CTV-S. aureus]) and inhibited phagocytosis samples (CTV-S. aureus + Ice). The log fold change (logFC) is plotted in relation to the false discovery rate (FDR)-corrected p-value (-log10) of each individual cluster calculated with negative binomial regression model (n = 4) (Supplementary file 10). Dot color follows the same color code used in Figure 5A.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Spearman’s correlation plot shows the average feature values of the images in each cluster to highlight morphological similarities and differences between events belonging to different clusters, such as cell size or cytoplasm granularity (Supplementary file 2). The clusters with higher dihydrorhodamine-123 (DHR) signal and high bacteria are the one identified as containing professional phagocytes (Pc5_P and Pc17_P). This is also confirmed by the statistical analysis performed between the phagocytosis samples (CellTrace Violet labeled Staphylococcus aureus [CTV-S. aureus]) and inhibited phagocytosis samples (CTV-S. aureus + EDTA) (Figure 5B; Supplementary file 9).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/65372/elife-65372-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Representative cell images side-by-side of professional phagocytes and non-phagocytic hemocytes from apple snail samples after phagocytosis assay. The signal of the bacteria labeled with CellTrace Violet is showed in yellow, and the value for the signal intensity has been reported on the top of each individual image. These images were obtained using the gallery function of the Amnis IDEAS software and manually gating either events double positive for dihydrorhodamine-123 (DHR) and bacteria or events double negative.
+
 The data analysis with Image3C clearly highlighted that CCB and EDTA, two classical phagocytic inhibitors commonly used in controls for phagocytosis experiments in vertebrates and invertebrates, respectively, result in a drastic change of cell morphology and cell viability. This consequence is not easily detectable by other methods and is therefore often overlooked. In the present work, these changes significantly modified the overall cell cluster number and distribution and indicate that the effects of CCB and EDTA on cell morphology should be taken into consideration in any study of morphological features of cells with phagocytosis properties because artifacts might be significant.
 
-## CNN allows unbiased comparison between experiments
+### CNN allows unbiased comparison between experiments
 
 When determining differences between control and experimental treatments, Image3C necessarily combines images and data from all samples and then clusters the cells. This must be taken into consideration for experimental planning. Experiments meant to analyze cell composition and morphological diversity in one biological domain (e.g., homeostasis condition) (Figure 2, Figure 4) should be carried out separately from those in other domains that are likely to introduce changes in the cell population composition or cell morphologies representing a confounding factor for the de novo clustering in homeostasis condition. Image3C clustering works best when used, at the same time, only on samples belonging to a single experimental domain, such as homeostasis or the phagocytosis assay. An issue that emerges when analyzing different experimental sets independently is the increase of time requirement for analytical steps, the likelihood of introducing errors, and the need to repeatedly annotate the clusters in the FDL graph obtained from each experimental set. This last element is required for comparing cell type behaviors among multiple experiments and provide a global understanding of their functions and response to treatments (i.e., cluster #1 from one analytical run cannot be expected to match cell morphologies with cluster #1 from another run since there is a stochastic element to the process).
 
@@ -98,35 +231,129 @@ To test the adaptability of the trained CNN to new datasets, we collected hemocy
 
 While the biological significance of this observation is not going to be further investigated in this paper, the discovery highlights the power of Image3C analysis compared to traditional methods for determining and quantifying the composition of cell populations. These experiments demonstrate that Image3C, in combination with the presented convolutional classifier, can analyze large experimental datasets and identify significances with small effect sizes. Importantly, Image3C analysis is independent of observer biases and does not require prior knowledge about expected tissue composition or the expected effect of treatment on cell morphology.
 
-## Conclusion
+### Conclusion
 
 We have developed a powerful new method to analyze at single-cell resolution the composition of any cell population obtained from research organisms for which species-specific reagents (such as fluorescently tagged antibodies), biomarkers, single-cell atlases, or a high-quality genome for a scRNA-seq approach are not available. We demonstrated that Image3C can identify different cell populations based on morphology and/or function through de novo clustering and highlight important changes in cell type abundance and cell population composition caused by experimental or natural perturbation (sex, treatment, experimental protocol). Image3C does not require, at any point, prior knowledge about the tissue composition or cell type-specific markers, although, if available, they can be included and used. Furthermore, in combination with the CNN classifier trained on these clusters, we demonstrate that Image3C is capable of bias-free and high-throughput analysis of large experimental datasets making it possible to compare a specific cell type behavior or population composition across multiple experiments. Image3C is extremely versatile and can be applied to any tissue or cell population of interest and is adaptable to a variety of experimental designs. Although Image3C was developed in response to the need of analyzing cell composition of tissues in emerging research organisms, the Image3C tool could be potentially used also to add to transcriptomic dataset an additional and complementary layer of information based on cell morphology. Given the recent advancement in image-based flow cytometry that enables image capturing together with cell sorting (Nitta et al., 2018), a scRNA-seq approach in combination with the Image3C pipeline would enable simultaneous analysis of both the morphological/phenotypic and genetic properties of a cell population at single-cell resolution.
 
 ## Materials and methods
 
-## Collection of zebrafish WKM
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Staphylococcus aureus)</td>
+      <td>Wood strain without protein A</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>S2859</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Danio rerio)</td>
+      <td>Whole kidney marrow</td>
+      <td>Stowers Institute for Medical Research</td>
+      <td>Wild type, adult females</td>
+      <td>Freshly isolated from Danio rerio</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Pomacea canaliculata)</td>
+      <td>Hemolymph</td>
+      <td>Stowers Institute for MedicalResearch</td>
+      <td>Wild type,adult females and males</td>
+      <td>Freshly isolated fromPomacea canaliculata</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydrorhodamine-123 (DHR)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D23806</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IDEAS</td>
+      <td>Amnis Millipore Sigma</td>
+      <td>Version 6.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R code</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/stowersinstitute/LIBPB-1390-Image3C (Box, 2021)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VorteX clustering environment</td>
+      <td>https://github.com/nolanlab/vortex/releases</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FSC Express</td>
+      <td>De Novo Software</td>
+      <td>Image or Plus configurations - Version 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python script</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/stowersinstitute/LIBPB-1390-Image3C</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Draq5</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>62251</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellTrace Violet (CTV)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C34571</td>
+      <td>5 µM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Collection of zebrafish WKM
 
 Twelve-month-old, wild type, female, adult zebrafish were euthanized with cold 500 mg/L MS-222 solution for 5 min. WKM was dissected as previously described (Traver et al., 2003) and transferred to 40 µm cell strainer with 1 mL of L-15 media containing 10% water, 10 mM HEPES, and 20 U/mL Heparin (L-90). Cells were gently forced through the cell strainer with the plunger of a 3 mL disposable syringe. The strainer was washed once with 1 mL of L-90 and the resulting single cell suspension was centrifuged at 500 rcf at 4 °C for 5 min. The supernatant was discarded, and the cells were resuspended in 1 mL of L-90 containing 5% fetal calf serum (FCS), 4 mM L-glutamine, and 10,000 U of both penicillin and streptomycin (L-90 media). The cells were counted in a 1:20 dilution on the EC-800 flow cytometer (Sony) using scatter properties.
 
-## Collection of apple snail hemocytes
+### Collection of apple snail hemocytes
 
 Specimens of the apple snail P. canaliculata (Mollusca, Gastropoda, Ampullariidae) were maintained and bred in captivity, in a water recirculation system filled with artificial freshwater (2.7 mM CaCl2, 0.8 mM MgSO4, 1.8 mM NaHCO3, 1:5000 Remineralize Balanced Minerals in Liquid Form [Brightwell Aquatics]). The snails were fed twice a week and kept in a 10:14 light:dark cycle. Wild-type adult snails, 7–9 months old and with a shell size of 45–60 mm, were starved for 5 days before the hemolymph collection (Accorsi et al., 2013). If not differently specified, female snails were used for the experiments. The withdrawal was performed by applying a pressure on the operculum and dropping the hemolymph directly into an ice-cold tube. The hemolymph collected from different animals was not pooled together. The hemolymph was immediately diluted 1:4 in Bge medium + 10% fetal bovine serum (FBS) and then centrifuged at 500 rcf for 5 min. The pellet of cells was resuspended in 100 µL of Bge medium + 10% FBS. The Bge medium (also known as Biomphalaria glabrata embryonic cell line medium) is constituted by 22% (v/v) Schneider’s Drosophila Medium, 4.5 g/L lactalbumin hydrolysate, 1.3 g/L galactose, 0.02 g/L gentamycin in MilliQ water, pH 7.0.
 
-## Experiment 1: morphology assay in homeostasis conditions
+### Experiment 1: morphology assay in homeostasis conditions
 
 WKM cells from zebrafish were isolated as described before and plated at 4 × 105 cells/well in a 96-well plate in 200 µL of L-90 media and incubated for 3 h at room temperature. Cells were stained with 5 µM Draq5 (Thermo Fisher Scientific) for 10 min and subsequently run on the ImageStreamX Mark II (Amnis Millipore Sigma), where 10,000 nucleated and focused events were recorded for each sample (n = 8). Erythrocytes were outgated to enrich for immune-relevant cells and prevent overclustering in the subsequent analysis. The latter is due to the fact that fish erythrocytes are nucleated and their biconcave shape results in different morphological feature values only depending on their orientation during image acquisition.
 
 The P. canaliculata hemocytes were stained with 5 µM Draq5 for 10 min, moved to ice, and subsequently run on the ImageStreamX Mark II, where 10,000 nucleated and focused events were imaged for each sample (n = 5).
 
-## Experiment 2: phagocytosis assay
+### Experiment 2: phagocytosis assay
 
 Staphylococcus aureus (Thermo Fisher Scientific) were resuspended in PBS at the final concentration of 100 mg/mL and incubated with 5 µM CTV (Thermo Fisher Scientific) for 20 min. Labeled bacteria were centrifuged and resuspended in PBS for three times to remove unbound dye and then stored at −20 °C as single-use aliquots. Cells, obtained from fish WKM or snail hemolymph and in a single cell suspension, were plated in a 96-well plate at a concentration of 4 × 105 cells/well in 200 µL of medium and incubated with 2 × 107 CTV-coupled S. aureus/well for 3 h at room temperature. As control, the phagocytosis was inhibited incubating the cells + CTV-S. aureus mix either on ice (for both species) or with 0.08 mg/mL CCB for zebrafish cells or with 30 mM EDTA and 10 mM HEPES for apple snail cells (Cueto et al., 2015; Li et al., 2006). After 2 h and 30 min, we added 5 µM DHR (Thermo Fisher Scientific) to the cell suspension to stain cells positive for ROS production. To control for this treatment with DHR, we incubated one aliquot of cells with 10 ng/mL phorbol 12-myristate 13-acetate (PMA) to induce ROS production. At 2 h and 50 min since the beginning of incubation with CTV-S. aureus, all the samples were stained with 5 µM Draq5 for 10 min. After 3 h incubation with bacteria, cells were moved and stored on ice and subsequently run on the ImageStreamX Mark II, where 10,000 nucleated and focused events were imaged for each sample (at least n = 4 snail and n = 6 fish) at a speed of 1,000 images/s.
 
-## Data collection on ImageStreamX Mark II
+### Data collection on ImageStreamX Mark II
 
 Following cell preparation, data were acquired from each sample on the ImageStreamX Mark II at 60× magnification, slow/sensitive flow speed (1,000 images/s), using 633, 488, and 405 nm laser excitation. BF was acquired on channels 1 and 9, DHR (488 nm excitation) on channel 2, CTV-S. aureus (405 nm excitation) on channel 7, Draq5 (633 nm excitation) on channel 11, and SSC was acquired on channel 6. Single-color controls were also acquired for each fluorescent channel to allow for fluorescence spillover correction.
 
-## Data analysis and de novo cluster identification
+### Data analysis and de novo cluster identification
 
 An interactive map representing the pipeline, the software used, the format of the exported files, and an approximation of time required for running the individual steps is provided in Figure 1—figure supplement 1. Raw images from the ImageStreamX Mark II system (RIF files, a type of modified 16-bit TIFF file) were compensated (spillover and other corrections applied), background was subtracted, and features were calculated using IDEAS 6.2 software (Amnis Millipore, free for download once an Amnis user account is created). The resulting compensated image files (CIF files) were used to quantify features for all cells and samples. Supplementary files 1 and 2 report the list of features used for each organism and for each experiment and their description. These per-object feature matrices (DAF files) were then exported from IDEAS into FCS files. Exported FCS files were processed in R (R Development Core Team, 2014). In order to trim redundant features that contribute noise but little new information, Spearman’s correlation values for each pair of features were calculated using all events of a representative sample and one of the features of the pair was trimmed when correlation between the two was ≥0.85 (Figure 2—figure supplement 1; Caicedo et al., 2017). The Spearman’s correlation of the mean values of remaining features per each sample was then used to identify outliers among sample replicates. Samples with correlation of mean feature values below 0.85 with the set were discarded (Figure 2—figure supplement 2, Figure 3—figure supplement 1, Figure 4—figure supplement 1, Figure 5—figure supplement 1), although in general the replicates were consistent. Also, while morphological features did not require any transformation or normalization, fluorescence intensity features were transformed using the estimateLogicle() and transform() functions from the R flowCore package (Ellis et al., 2018; Hahne et al., 2009) to improve homoscedasticity (homogeneity of variance) of distributions. DNA intensity features were also normalized to align all 2N and 4N peak positions and remove intensity drift between samples (Figure 2—figure supplement 3) using the gaussNorm() function from flowStats package (Hahne et al., 2018). The processed data was exported from R (R Development Core Team, 2014) using writeflowSet() function in flowCore package (Ellis et al., 2018; Hahne et al., 2009) as CSV or FCS files, depending on downstream needs for the file output.
 
@@ -138,7 +365,7 @@ DAF files were opened in FCS Express Plus software, and the ‘R add parameters�
 
 The full complement of R packages used includes flowCore (Ellis et al., 2018; Hahne et al., 2009), flowStats (Hahne et al., 2018), igraph (Csardi and Nepusz, 2006), ggcyto (Jiang, 2015), ggridges (Wilke, 2018), ggplot2 (Wickham, 2016), stringr (Wickham, 2010), hmisc (Harrell and Dupont, 2019), and caret (Kuhn, 2008). Figure 1—figure supplement 1 can be used as an interactive map of Image3C pipeline, where, upon clicking on the different portions of the pipeline, the users will be automatically directed to the corresponding sections of our GitHub repository. The GitHub repository at https://github.com/stowersinstitute/LIBPB-1390-Image3C reports a detailed description of all these processing steps and includes sample scripts, workflow files, and example datasets and tutorials.
 
-## Setup and use of a CNN classifier
+### Setup and use of a CNN classifier
 
 Once the clusters were defined with the previously described de novo clustering analysis, we used a CNN (LeCun et al., 1989) based on the architecture of DenseNet (Huang et al., 2017) for image classification. Out of all the events captured with the ImageStreamX Mark II system, we selected only single nucleated objects applying gates on area vs. aspect ratio plot and Draq5 intensity plot to achieve this selection, respectively. For these objects, we exported 16-bit TIFF images (one channel per fluorescence/BF image ‘color’) using IDEAS 6.2 software.
 
@@ -150,6 +377,6 @@ The finally trained classifier was tested on the remaining 10% of images that we
 
 The interactive map of Image3C pipeline (Figure 1—figure supplement 1) includes also the training and the use of the CNN. The GitHub repository at https://github.com/stowersinstitute/LIBPB-1390-Image3C reports a detailed description of all these processing steps, includes sample scripts, workflow files, and example datasets and tutorials and can be easily accessed by clicking on the right side of the Image3C interactive map (Figure 1—figure supplement 1).
 
-## Statistical analysis
+### Statistical analysis
 
 Negative binomial regression was performed on tables of cell counts per cluster and per sample and plots were generated using R (R Development Core Team, 2014) with the edgeR package (Robinson et al., 2010), which was developed for RNA-seq analysis, but includes generally applicable and user-friendly wrappers for regression, modeling analysis, and plotting of results. For the comparison of cellular hemolymph composition between females and males of P. canaliculata, a one-way ANOVA with subsequent FDR (Benjamini–Hochberg, correction for multiple testing) was used.

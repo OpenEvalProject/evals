@@ -26,7 +26,13 @@ A long-standing challenge in motor neuroscience is to understand the relationshi
 
 ## Introduction
 
-Elite tennis players are particularly skilled at striking a balance between the speed and the accuracy of their serves. If they only focus on placing the ball in a strategic location, they may inadvertently advantage their opponent by not paying close enough attention to the speed of their serve. On the other hand, serving the ball with as much speed as possible is not desirable as the ball may fail to clear the net or land in a location that is advantageous to their opponent. This relationship, commonly known as the ‘speed-accuracy tradeoff,’ is observed not only for purely motor, but also perceptual and cognitive tasks (e.g., Heitz, 2014; Wickelgren, 1977). In laboratory settings, the speed-accuracy tradeoff, quantified by Fitts’ law (Fitts, 1954), is an empirical finding that movements that require greater accuracy tend to be slower than those that do not. Fitts’ law relates the width of the target (W), the movement distance (A), and the movement duration (MD):MD=a+blog2(2A/W),where a and b are subject-specific scalar parameters. The log2(2A/W) term is known as the ‘index of difficulty’.
+Elite tennis players are particularly skilled at striking a balance between the speed and the accuracy of their serves. If they only focus on placing the ball in a strategic location, they may inadvertently advantage their opponent by not paying close enough attention to the speed of their serve. On the other hand, serving the ball with as much speed as possible is not desirable as the ball may fail to clear the net or land in a location that is advantageous to their opponent. This relationship, commonly known as the ‘speed-accuracy tradeoff,’ is observed not only for purely motor, but also perceptual and cognitive tasks (e.g., Heitz, 2014; Wickelgren, 1977). In laboratory settings, the speed-accuracy tradeoff, quantified by Fitts’ law (Fitts, 1954), is an empirical finding that movements that require greater accuracy tend to be slower than those that do not. Fitts’ law relates the width of the target (W), the movement distance (A), and the movement duration (MD):
+
+$$
+MD=a+blog_{2}(2A/W),
+$$
+
+where a and b are subject-specific scalar parameters. The $log_{2}(2A/W)$ term is known as the ‘index of difficulty’.
 
 A widely held theory, initially proposed by Harris and Wolpert, posits that signal-dependent noise (i.e., ‘motor noise’ present at the neuromuscular junction) that scales with the size of the control signal is a sufficient theory to explain Fitts’ law (Harris and Wolpert, 1998; Lunardini et al., 2015; McCrea and Eng, 2005; Peternel et al., 2017). The theory proposes that if motor noise increases with the size of the control signal, then moving rapidly, which requires large control signals, increases the variability in the final movement position. Conversely, reaching to a smaller target, with low variability in the final position, requires smaller control signals that consequently produce slower movements. Thus, this theory provides an explanation for the speed-accuracy tradeoff. In the present work, we show that the speed-accuracy tradeoff, as described by Fitts’ law, emerges even without the presence of motor noise.
 
@@ -42,7 +48,7 @@ A realistic musculoskeletal model allows us to study human movement variability 
 
 ## Results
 
-## Model validation
+### Model validation
 
 We first evaluate whether the computational model reproduces important kinematic features reported in motor control studies. In Figure 1A and B, we compare the hand positions in a center-out fast reaching task from our model and the data reported in Beer et al., 2000. The simulations are synthesized with trajectory optimization (see the section Trajectory optimization), specifying only the final target position and the MD, which we set to 350 ms. Note that our simulations reproduce the observation that arm reach trajectories (in humans and non-human primates) are gently curved, particularly near the targets. In Figure 1C and D, we compare the velocity profile of our simulation with the data presented in Soechting, 1984. The maximum unnormalized speed in Figure 1D is 1.10 m/s, which falls in the range of maximal speeds reported in Soechting, 1984 (i.e., from 0.65 m/s to 1.35 m/s). We also compare the effect of the target size on the synthesized and experimental data in Figure 2A and B. Soechting reported that a smaller target causes the movement to have an earlier peak velocity and a velocity that decays more rapidly. We reproduce both of these features in our simulations. However, the experimental speed profiles of the large and small targets are more nearly parallel than the simulated ones. The areas of the small and large targets are 2.55 cm2 and 3.54 cm2. The velocity profiles of our computational model are determined from an average of 15 runs.
 
@@ -50,19 +56,120 @@ We first evaluate whether the computational model reproduces important kinematic
 
 **Figure 1.:** (A and B) Hand paths adapted from Beer et al., 2000 (A) compared to hand paths produced by our computational model (B) during a center-out fast reaching task with targets placed 150 mm away from the center position. (C and D) Mean velocity profile in a reaching task adapted from Soechting, 1984 (C) compared to the velocity profile produced by our computational model (D). We reproduce the bell-shaped velocity profile, including the smaller velocity peak at the end of the movement.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig2-v2.jpg)
+
+**Figure 2.:** (A) Effect of the target size in reaching movements. The dashed curve is the average velocity profile for the larger target, while the solid curve is for the smallest target (adapted from Soechting, 1984). (B) Average velocity profile of 15 runs from our simulations to a small and large target. All the curves are normalized to their peak velocity. (C) Normalized velocity profiles (with normalized time) for fast, medium, and slow movements. Our results are consistent with the observation (e.g., Nagasaki, 1989) that slower movements tend to have an earlier peak velocity than faster movements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Normalized velocity profiles (with normalized time) for fast (0.15 s movement duration [MD]), medium (0.25 s MD), and slow movements (0.45 s MD). Our model reproduces the speed-dependent asymmetry in the velocity profile. The relative peak velocities are 0.6133, 0.41, and 0.19 for the fast, medium, and slow movements, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Normalized velocity profiles (with normalized time) for fast, medium, and slow movements (15 s, 20 s, and 25 s movement durations, respectively). The torque-driven model does not reproduce the observation that faster movements tend to have a later peak velocity than slower movements, while this was reproduced with our realistic muscle-based model (see Figure 2C).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A and B) Subjects are asked to move to a desired final pose (B) from a given initial pose (A). This figure is an example of a shoulder 0−90° abduction movement.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) We compare the reaches to a target (the sphere) of a representative subject (top; model without muscles) with the reaches synthesized by our computational model (bottom; model with muscles). (B) Joint kinematics. We plot the sagittal joint angles in the reaching movement. We compare the elbow and shoulder flexion angles over time from our model and the means from experiments. The shaded region is one standard deviation from the mean.
+
 Several studies have shown that the velocity profile is symmetric for intermediate speeds and becomes asymmetric with changes in speed (e.g., Nagasaki, 1989; Ostry et al., 1987). The ratio of the time to the peak velocity to the entire movement time tends to be smaller with slower movements. To study this, we optimize for 20 fast (0.18 s MD), medium (0.22 s MD), and slow (0.26 s MD) reaches to the same target. In Figure 2C, we compare the normalized velocity profiles (with normalized time) between the best solutions (i.e., the trial with the lowest cost in Equation 1 in Materials and methods) for the movements at different speeds. Our model reproduces the speed-dependent asymmetry in the velocity profile. The relative peak velocities in Figure 2C are 0.66, 0.51, and 0.4 for the fast, medium, and slow movements, respectively. It has also been reported that the velocity profiles of slower movements tend to exhibit multiple local minima (e.g., Soechting, 1984; van der Wel et al., 2009); we replicate these findings in our simulations (see Figure 2—figure supplement 1 for the velocity profile asymmetry for MDs of 0.15 s, 0.25 s, and 0.45 s). We perform the same experiment with a torque-driven model for MDs of 0.2 s, 0.25 s, and 0.3 s. In Figure 2—figure supplement 2, we show that this simplified model does not reproduce the reported asymmetries in the velocity profiles.
 
 In addition to the features reported in motor control studies, we collected three-dimensional reaching data (see the section Joint kinematics data). We compare the movements performed by a typical subject (Figure 2—figure supplement 3) and our computational model in Figure 2—figure supplement 4A and in Video 1. Qualitatively, we observe that the movements resemble each other, with some discrepancies such as excessive or insufficient elbow flexion. In Figure 2—figure supplement 4B, we compare the sagittal plane joint angles predicted by the model with our experimental data when subjects are asked to reach a shoulder flexion 180° pose with the elbow extended. The root mean square errors are 16.8° and 7° for the elbow and shoulder flexion angles.
 
-## Speed-accuracy tradeoff and Fitts’ law
+![Video 1.](https://cdn.elifesciences.org/articles/57021/elife-57021-video1.mp4.jpg)
+
+### Speed-accuracy tradeoff and Fitts’ law
 
 Next, we solve trajectory optimization problems to targets of different sizes to study the speed-accuracy tradeoff. We keep the distance fixed to A = 0.15 m and vary the target width from 0.16 m to 0.0141 m, which corresponds to an index of difficulty from 0.9 to 4.41. After determining the MD for different widths, we perform a least-squares fit to determine parameters a and b in Fitts’ law, obtaining values of 0.0234 and 0.0550, respectively. These values are within the range of values a ∈ [0.0047, 0.5239] and b ∈ [0.0393,0.1987] determined from the experimental data in Goldberg et al., 2014, where subjects reach with a mouse to targets of various distances and widths on a computer screen.
 
 In Figure 3C, we show that there is good agreement between the model’s predicted MD (averaged over 10 runs) and Fitts’ law (R2 = 0.974). Note that the MD becomes more variable when the target size decreases as the optimization becomes more likely to fall in local minima. This feature is also present in the experimental data (Figure 3A and B), although it is not predicted by previous models (Harris and Wolpert, 1998). Although the data in Goldberg et al., 2014 involves different experimental conditions than those of the simulated data of our center-out reach task, we expect some correlation when the index of difficulty is matched. This was verified as the correlation coefficient between our model’s mean predicted MD (as it varies with the index of difficulty) and the mean of the experimental data (Goldberg et al., 2014; Figure 3A) is 0.959 (p<0.001). The correlation coefficient between the standard deviations of our model and the experimental data is 0.70 (p=0.0167). We perform the same experiment with a torque-driven model (Figure 3—figure supplement 1). There is again good agreement between the model’s predicted mean MD (averaged over 10 runs) and Fitts’ law (R2 = 0.88). However, the correlations between the predicted means and standard deviations and the experimental data in Goldberg et al., 2014 (Figure 3A) are weak (R2 = 0.17 and R2 = 0.39, respectively) and not statistically significant.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig3-v2.jpg)
+
+**Figure 3.:** (A) Movement duration (MD) depending on the index of difficulty from the dataset in Goldberg et al., 2014. The mean and standard deviation are computed from 334 trials and 46 subjects (statistics computed across subjects). The experiment consists in subjects reaching with a mouse to targets of various distances and widths on a computer screen. (B) MD depending on the index of difficulty for a representative subject from Goldberg et al., 2014 with statistics computed from seven trials to each target. (C) Predicted MD to a target in a center-out reaching task when varying the target size. The x-axis is the index of difficulty of the reaching movement, which varies from 0.9 (width: 0.16 m) to 4.41 (width: 0.014 m). The vertical bars are one standard deviation from the mean. We see that the model’s mean predictions are in close agreement with Fitts’ law (R2 = 0.974).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Predicted movement duration (MD) to a target in a reaching task when varying the target size with our torque-driven model. The x-axis is the index of difficulty of the reaching movement, which varies from 0.9 (width: 0.16 m) to 3.9 (width: 0.02 m). The vertical bars are one standard deviation from the mean. We see that the model’s mean predictions are in close agreement with Fitts’ law (R2 = 0.88). Qualitatively, we see that unlike our muscle-based model (see Figure 3C), the results with the torque-driven model do not clearly predict the increase in MD variance with more severe task constraints. Both the predicted means and standard deviations are not statistically correlated with the experimental data in Figure 3A.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** We use a much less effective trajectory optimizer than in Figure 3C to predict the movement duration to a target in a center-out reaching task when varying the target size. The x-axis is the index of difficulty of the reaching movement. We see that the model’s mean predictions are still in very close agreement with Fitts’ law (R2 = 0.969).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Predicted movement duration to a target in a reaching task when varying the target size without the muscle activation term in Equation 1. The x-axis is the index of difficulty of the reaching movement. We use covariance matrix adaptation evolution strategy with 20 iterations and 20 samples to generate the trajectories. We see that the model’s mean predictions are still in close agreement with Fitts’ law (R2 = 0.955), which indicates that the muscle activations term alone is not sufficient to explain the speed-accuracy tradeoff. The standard deviations are not statistically correlated with the experimental data in Figure 3A. The vertical bars are one standard deviation from the mean.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Predicted movement duration to a target in a reaching task when using a simplified biomechanical model with muscles having a constant active force-length relationship (instead of a bell-shaped curve as described in Millard et al., 2013). The x-axis is the index of difficulty of the reaching movement. We see that the model’s mean predictions are in agreement with Fitts’ law (R2 = 0.94). The standard deviations are not statistically correlated with the experimental data in Figure 3A. The vertical bars are one standard deviation from the mean.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Predicted movement duration to a target in a reaching task when varying the target size when we use a model with 14 important muscles missing (deltoid anterior, deltoid posterior, infraspinatus, teres minor, etc.). The x-axis is the index of difficulty of the reaching movement. We use c﻿ovariance matrix adaptation evolution strategy with 20 iterations and 20 samples to generate the trajectories. We see that the model’s mean predictions are in close agreement with Fitts’ law (R2 = 0.93). The standard deviations are not statistically correlated with the experimental data in Figure 3A. The vertical bars are one standard deviation from the mean.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/57021/elife-57021-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Ten simulated hand paths when reaching for a large and small target 15 cm in distance. In this example, the average movement durations are 0.15 s and 0.22 s, respectively. The simulated muscle activity and kinematics are provided in supplementary material.
+
 We next evaluate the sensitivity of the results with respect to the trajectory optimizer. We repeat the experiments with a less effective trajectory optimizer by limiting the number of samples and iterations to 20 and 40 (see the section Trajectory optimization), respectively. This translates to using about 12 times fewer samples during the optimization, so the computation time is about 12 times shorter. In Figure 3—figure supplement 2, we see that model’s predicted MD means are still in close agreement with Fitts’ law (R2 = 0.969). The correlation coefficients between the predicted means and standard deviations with experimental data (Figure 3A) are significant: 0.82 (p=0.007) and 0.83 (p=0.006). Our model does not include reaction time; therefore, as expected, it predicts faster movements than those that are observed experimentally. However, the relative MDs (i.e., how the duration varies with the index of difficulty) in our model and the experimental data are still in close agreement. For example, the mean relative MD difference between an index of difficulty of 1.5 and 3.5 is about 1 s in both our model (Figure 3—figure supplement 2) and the experimental data (Figure 3A). Our cost function (Equation 1) includes a term to minimize the sum of muscle activations squared, which impacts the speed of reaching movements (but unlike signal-dependent noise, it does not predict different speeds based on target size). We performed an additional experiment (Figure 3—figure supplement 3) to show that Fitts’ law emerges even without this term in the cost function. We also tested the sensitivity of our results to the biomechanical model: we performed the experiments with a model with muscles having unrealistic active force–length relationships (i.e., where the force is constant with respect to the muscle length; Figure 3—figure supplement 4) and a model missing important muscles (e.g., deltoid anterior, deltoid posterior, infraspinatus, and teres minor; Figure 3—figure supplement 5). We found that these models produced MDs that are consistent with Fitts’ law, but the predictions were not correlated with the experimental data in Goldberg et al., 2014 (Table 1).
 
-## Motor cortical activity
+**Table 1.**
+ Impact of the biomechanical model.We summarize how our results vary based on the biomechanical model. We tested six different models: a torque-driven model, a musculoskeletal model missing 14 important muscles (e.g., deltoid anterior, deltoid posterior, infraspinatus, teres minor, etc.), a musculoskeletal model with unrealistic muscle force–length relationships, a musculoskeletal model with an unrealistic cost function, a realistic musculoskeletal model with an effective optimizer, and a realistic musculoskeletal with a less effective optimizer. The results for the model ‘without planning variability’ are taken from the literature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fitts’ law</th>
+      <th>Behavior results correlated with experimental data (MD means and standard deviations)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Torque or musculoskeletal model with signal-dependent noise and without planning variability</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Torque model</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Musculoskeletal model with missing muscles</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Musculoskeletal model with unrealistic force–length relationships</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Musculoskeletal model with an unrealistic cost function (i.e., no muscle activations term)</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Musculoskeletal model with an effective optimizer</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Musculoskeletal model with a less effective optimizer</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+### Motor cortical activity
 
 Given the prior results regarding the potentially important role of preparatory neural activity during motor control (e.g., Afshar et al., 2011; Churchland et al., 2012; Ames et al., 2014; Shenoy et al., 2013; Vyas et al., 2020a), we examine the variability in the preparatory neural state during reaching movements to a small (0.75 cm) and a large (2 cm) target. We measure neural activity from premotor and primary motor cortex of a Rhesus monkey (192 simultaneously recorded channels; 96 from each brain region; see the section Neural recordings) as he makes reaching arm movements (Figure 4A and B). Behaviorally, we find that reaches to smaller targets are slower than those to larger targets, as predicted by Fitts’ law (Figure 4C). The MDs to smaller targets are more variable than to larger targets (i.e., a standard deviation of 0.257 s compared to 0.234 s; p=0.0262).
 
@@ -106,27 +213,49 @@ It is important to note a few important caveats and considerations regarding our
 
 ## Materials and methods
 
-## Modeling and simulation
+### Modeling and simulation
 
 Our computational model uses the upper extremity biomechanical model introduced by Saul et al., 2015 and available at https://simtk.org/projects/upexdyn. The model consists of 47 Hill-type muscle-tendon actuators (Zajac, 1989) with parameters and paths derived from experimental and anatomical studies. The skeletal model has five degrees-of-freedom representing the shoulder (elevation plane, elevation angle, and shoulder rotation), the elbow (flexion/extension), and the forearm (pronation/supination). We have locked the wrist and finger joints. The simulation was performed with OpenSim (Delp and Anderson, 2007) and the Simbody physics engine (Sherman et al., 2011) with a semi-explicit Euler integrator (accuracy 1e−2).
 
-## Trajectory optimization
+### Trajectory optimization
 
-Numerical methods for solving trajectory optimization problems is an ongoing research topic (e.g., Al Borno and Lasa, 2012, Posa and Tedrake, 2013, Todorov and Li, 2005). Our work adapts the method of Al Borno et al. 2013 to optimize the movement of musculoskeletal systems. We optimize for a time-indexed cubic B-spline that provides the muscle excitations to produce movement. The optimization is performed with CMA-ES (Hansen, 2006). The free variables are the spline knots muscle excitations values at every 0.1 s interval in the movement. We use 500 iterations and a population size of 20 in CMA-ES, which takes about 3 hr of computation time (after parallelization) with two Intel Xeon CPU E5-4640 processors. We initialize the optimization with all the knots set to 0.1. Given excitations, we use a forward simulation to obtain a trajectory, which is evaluated with respect to the following cost function:(1)F=w1‖hN−hNd‖2+w2δ(∑i=1N‖ai‖2,ζ)+w3∑i=1Nl(qi)+w4δ(‖q˙N‖2,ζ)+w5ρ(qN)where hN and hNd denote the actual and desired position of the center of the hand at the last time step N of the trajectory, ai denotes the vector of muscle activations at time step i, l(qi) is a penalty on joint limit violations given pose qi, q˙N denotes the joint velocities at the last time step, ρ(qN) is a term to encourage pronation of the forearm at the last time step, and ∥ · ∥ denotes the two-norm. We now give the details of the terms l(qi) and ρ(qN). For a joint value ri with limits y and u (denoting the lower and upper bounds for the coordinate), l(ri) denotes a quadratic penalty on joint limit violations:l(ri)={0ify<ri<u(ri−y)2ifri<y(ri−u)2ifri>u
+Numerical methods for solving trajectory optimization problems is an ongoing research topic (e.g., Al Borno and Lasa, 2012, Posa and Tedrake, 2013, Todorov and Li, 2005). Our work adapts the method of Al Borno et al. 2013 to optimize the movement of musculoskeletal systems. We optimize for a time-indexed cubic B-spline that provides the muscle excitations to produce movement. The optimization is performed with CMA-ES (Hansen, 2006). The free variables are the spline knots muscle excitations values at every 0.1 s interval in the movement. We use 500 iterations and a population size of 20 in CMA-ES, which takes about 3 hr of computation time (after parallelization) with two Intel Xeon CPU E5-4640 processors. We initialize the optimization with all the knots set to 0.1. Given excitations, we use a forward simulation to obtain a trajectory, which is evaluated with respect to the following cost function:
 
-The l(qi) term is the sum of the penalties for each joint. The term ρ(qN) is defined as:ρ(qN)=(rforearm−ϕ)2where rforearm denotes the coordinate of the forearm and ϕ is the forearm value denoting pronation. When reaching, the position of the forearm is chosen based on the target object (e.g., a cup or a light bulb). Since we do not model object grasping, we chose to consistently reach with the forearm in pronation at the last time step. It is challenging to tune the weights in the cost function as objectives tend to ‘fight’ each other. For this reason, we introduce the δ(⋅,⋅) function:δ(x,ζ)={xif‖hN−hNd‖2<ζCotherwisewhere we set the scalars ζ to 0.025 and C to 106 (i.e., C ≫ x). This ensures that the optimization prioritizes finding a trajectory with the hand reaching close enough to the target (i.e., within ζ m) before considering other objectives, namely minimizing the sum of activations squared and achieving a final zero velocity. We tuned the weights w1, w2, w3, w4, and w5 to 5, 1e−3, 1e−5, 0.15, and 0.5. The cost function encourages the hand to be as close as possible to a desired target with a small velocity and the forearm in pronation, while minimizing muscle activations and joint limit violations throughout the movement. When the objective is to reach a target anywhere within a radius κ, then we simply set w1 to zero when ∥hN−hNd ∥ < κ.
+$$
+F=w_{1}‖h_{N}−h_{N}^{d}‖^{2}+w_{2}\delta(\sumi=1N‖a_{i}‖^{2},ζ)+w_{3}\sumi=1Nl(q_{i})+w_{4}\delta(‖q˙_{N}‖^{2},ζ)+w_{5}ρ(q_{N})
+$$
 
-The movement duration T is chosen based on experimental data or through optimization to study the speed-accuracy tradeoff. For the latter, we encourage the movement to reach the target as soon as possible by including the objective ϕ(hi) in the cost function (Equation 1). We set ϕ(hi) to 0 if the target is reached at time step i; otherwise, we set it to 1 (i.e., a penalty at each time step where the hand position is outside the target). We perform the trajectory optimization with a fixed temporal horizon and the MD is determined when the hand position is within the target. We performed experiments to verify that prescribing the muscle excitations at every 0.05 s interval (instead of 0.1 s interval) does not have a significant impact on the computed MDs. Haith et al., 2012 argue that a hyperbolic cost of time objective term better accounts for the durations of saccades, but this remains a topic of investigation for other body movements. After setting the duration of the movement T for the integration, the number of time steps N in the trajectory is chosen to achieve the desired accuracy in Simbody. For the experiments with our torque-driven model, we optimize for the torques, which we limit to ±50 nm, instead of muscle excitations.
+where $h_{N}$ and $h_{N}^{d}$ denote the actual and desired position of the center of the hand at the last time step $N$ of the trajectory, $a_{i}$ denotes the vector of muscle activations at time step $i$, $l(q_{i})$ is a penalty on joint limit violations given pose $q_{i}$, $q˙_{N}$ denotes the joint velocities at the last time step, $ρ(q_{N})$ is a term to encourage pronation of the forearm at the last time step, and ∥ · ∥ denotes the two-norm. We now give the details of the terms $l(q_{i})$ and $ρ(q_{N})$. For a joint value $r_{i}$ with limits $y$ and $u$ (denoting the lower and upper bounds for the coordinate), $l(r_{i})$ denotes a quadratic penalty on joint limit violations:
 
-## Joint kinematics data
+$$
+l(r_{i})={0ify<r_{i}<u(r_{i}−y)^{2}ifr_{i}<y(r_{i}−u)^{2}ifr_{i}>u
+$$
 
-To validate our computational model, we collected three-dimensional upper extremity movement data. Right-handed subjects (n = 4, age = 27 ± 3, mean ± std, two males, two females) gave written informed consent approved by the Stanford University Institutional Review Board. The subjects are asked to reach for desired final end poses (e.g., with shoulder abduction 90°, shoulder flexion 90° and 180°, etc.) from different initial positions. In Figure 2—figure supplement 3, we show an example of an initial (A) and final position (B). Subjects are instructed to reach the target pose at a comfortable speed, without moving their trunk or feet. Upper extremity kinematics are measured with inertial motion capture (Roetenberg et al., 2009). MD and the final hand position (computed from forward kinematics) are then used for motion synthesis with trajectory optimization, using the final hand position for the target position hNd.
+The $l(q_{i})$ term is the sum of the penalties for each joint. The term $ρ(q_{N})$ is defined as:
 
-## Fast reaching task
+$$
+ρ(q_{N})=(r_{forearm}−ϕ)^{2}
+$$
+
+where $r_{forearm}$ denotes the coordinate of the forearm and $ϕ$ is the forearm value denoting pronation. When reaching, the position of the forearm is chosen based on the target object (e.g., a cup or a light bulb). Since we do not model object grasping, we chose to consistently reach with the forearm in pronation at the last time step. It is challenging to tune the weights in the cost function as objectives tend to ‘fight’ each other. For this reason, we introduce the $\delta(⋅,⋅)$ function:
+
+$$
+\delta(x,ζ)={xif‖h_{N}−h_{N}^{d}‖^{2}<ζCotherwise
+$$
+
+where we set the scalars $ζ$ to 0.025 and $C$ to 106 (i.e., $C$ ≫ $x$). This ensures that the optimization prioritizes finding a trajectory with the hand reaching close enough to the target (i.e., within $\sqrt{ζ}$ m) before considering other objectives, namely minimizing the sum of activations squared and achieving a final zero velocity. We tuned the weights w1, w2, w3, w4, and w5 to 5, 1e−3, 1e−5, 0.15, and 0.5. The cost function encourages the hand to be as close as possible to a desired target with a small velocity and the forearm in pronation, while minimizing muscle activations and joint limit violations throughout the movement. When the objective is to reach a target anywhere within a radius κ, then we simply set w1 to zero when ∥$h_{N}−h_{N}^{d}$ ∥ < κ.
+
+The movement duration T is chosen based on experimental data or through optimization to study the speed-accuracy tradeoff. For the latter, we encourage the movement to reach the target as soon as possible by including the objective $ϕ(h_{i})$ in the cost function (Equation 1). We set $ϕ(h_{i})$ to 0 if the target is reached at time step i; otherwise, we set it to 1 (i.e., a penalty at each time step where the hand position is outside the target). We perform the trajectory optimization with a fixed temporal horizon and the MD is determined when the hand position is within the target. We performed experiments to verify that prescribing the muscle excitations at every 0.05 s interval (instead of 0.1 s interval) does not have a significant impact on the computed MDs. Haith et al., 2012 argue that a hyperbolic cost of time objective term better accounts for the durations of saccades, but this remains a topic of investigation for other body movements. After setting the duration of the movement T for the integration, the number of time steps N in the trajectory is chosen to achieve the desired accuracy in Simbody. For the experiments with our torque-driven model, we optimize for the torques, which we limit to ±50 nm, instead of muscle excitations.
+
+### Joint kinematics data
+
+To validate our computational model, we collected three-dimensional upper extremity movement data. Right-handed subjects (n = 4, age = 27 ± 3, mean ± std, two males, two females) gave written informed consent approved by the Stanford University Institutional Review Board. The subjects are asked to reach for desired final end poses (e.g., with shoulder abduction 90°, shoulder flexion 90° and 180°, etc.) from different initial positions. In Figure 2—figure supplement 3, we show an example of an initial (A) and final position (B). Subjects are instructed to reach the target pose at a comfortable speed, without moving their trunk or feet. Upper extremity kinematics are measured with inertial motion capture (Roetenberg et al., 2009). MD and the final hand position (computed from forward kinematics) are then used for motion synthesis with trajectory optimization, using the final hand position for the target position $h_{N}^{d}$.
+
+### Fast reaching task
 
 We collected experimental data from five right-handed subjects (n = 5, age = 28 ± 4.9, mean ± std, four males, one female) that gave informed consent approved by the Stanford University Institutional Review Board. The subjects performed reaches to a target, always starting from the same initial pose with the hand on the table. Subjects were instructed to reach the target as fast as possible. The duration of the reach is measured from an accelerometer attached on their hand (Xsens MTw Awinda with a 1000 Hz sampling frequency). Subjects performed 10 reaches to a large square target (8 cm width) and to a small one (2 cm width). The movement amplitude was set to 15 cm. The data is presented in Supplementary file 1.
 
-## Neural recordings
+### Neural recordings
 
 Recordings were made from the dorsal aspect of the premotor cortex (PMd) and the primary motor cortex (M1) of one male adult monkey (Macaca mulatta) who was 15 years old and weighed 16 kg at the time of these experiments. The monkey performed an instructed-delay cursor task (see Vyas et al., 2018 for the task design and standard parameters). The monkey had two chronic 96-electrode arrays (1 mm electrodes, 1.0 mm long, spaced 400 µm apart, Blackrock Microsystems Inc, Salt Lake City, UT), one implanted in PMd and one implanted in gyral M1. The arrays were implanted 7 years prior to these experiments. Voltage signals were band-pass filtered from each electrode channel (250 Hz to 7.5 KHz). The signals were processed to detect multi-unit ‘threshold crossing’ spikes. Spikes were detected any time the voltage crossed below a threshold of −4.5 times the root-mean-square voltage.
 

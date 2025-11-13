@@ -19,11 +19,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00apdsa62 Institute of Experimental Oncology and Biomedical Technologies, Privolzhsky Research Medical University Nizhny Novgorod Russian Federation
-2. https://ror.org/01bb1zm18 Institute of Biology and Biomedicine, Lobachevsky State University of Nizhny Novgorod Nizhny Novgorod Russian Federation
-3. https://ror.org/008bb6z37 Nizhny Novgorod Regional Oncologic Hospital Nizhny Novgorod Russian Federation
+1. Institute of Experimental Oncology and Biomedical Technologies, Privolzhsky Research Medical University Nizhny Novgorod Russian Federation ([ROR:00apdsa62](https://ror.org/00apdsa62))
+2. Institute of Biology and Biomedicine, Lobachevsky State University of Nizhny Novgorod Nizhny Novgorod Russian Federation ([ROR:01bb1zm18](https://ror.org/01bb1zm18))
+3. Nizhny Novgorod Regional Oncologic Hospital Nizhny Novgorod Russian Federation ([ROR:008bb6z37](https://ror.org/008bb6z37))
 4. Laboratory of Clinical Biophotonics, Sechenov First Moscow State Medical University Moscow Russian Federation
-5. https://ror.org/010pmpe69 Faculty of Physics, Lomonosov Moscow State University Moscow Russian Federation
+5. Faculty of Physics, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
 6. Becker&Hickl GmbH Berlin Germany
 
 † Corresponding author
@@ -48,17 +48,311 @@ In this paper, we present the results of assessment of cell-level metabolic hete
 
 ## Results
 
-## Metabolic heterogeneity assessment in colorectal cancer cell lines
+### Metabolic heterogeneity assessment in colorectal cancer cell lines
 
 First, using FLIM of NAD(P)H, cellular metabolism was assessed in monolayer cultures of different colorectal cancer cell lines (Figure 1A). Typical values of NAD(P)H fluorescence lifetimes were registered for all cell lines – short τ1~0.39 ns and long τ2~2.03–2.59 ns (Table 1). Due to specifics of cellular metabolism, the relative contributions of the free (a1) and bound (a2) forms of NAD(P)H and, consequently, the mean lifetimes τm varied between the cell lines. The a1 value decreased and τm increased in the following order: CT26 (~86%, 0.57 ns)>HCT116 (~84%, 0.71 ns)>HT29 (~80%, 0.80 ns)>CaCo2 (~73%, 0.95 ns) (Figure 1B, Table 1). A high NAD(P)H-a1 (low τm) is an indicator of glycolytic shift, which is typical for cells with intense proliferation in a monolayer culture, like CT26 and HCT116. CaCo2 cells with the lowest a1 value had more OXPHOS-shifted metabolism, which can be associated with the expression of morphological and functional characteristics of mature enterocytes of normal small intestine by this cell line (Lea, 2015). All cell lines statistically differed from each other (for p-val, see Supplementary file 1), and intercellular variations of the a1 parameter were minor (<3%).
 
+**Table 1.**
+ NAD(P)H fluorescence decay parameters of colorectal cancer cells in monolayer cultures in vitro and in mouse tumors in vivo.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell line</th>
+      <th>τm, ns</th>
+      <th>τ1, ns</th>
+      <th>τ2, ns</th>
+      <th>a1, %</th>
+      <th>BI-τm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Cell lines in vitro</td>
+    </tr>
+    <tr>
+      <td>HT29</td>
+      <td>0.80±0.05</td>
+      <td>0.39±0.03</td>
+      <td>2.47±0.17</td>
+      <td>80.11±1.34</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <td>HCT116</td>
+      <td>0.71±0.05</td>
+      <td>0.40±0.02</td>
+      <td>2.39±0.20</td>
+      <td>84.13±1.58</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>CaCo2</td>
+      <td>0.95±0.10</td>
+      <td>0.38±0.05</td>
+      <td>2.53±0.24</td>
+      <td>73.48±2.26</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <td>CT26</td>
+      <td>0.57±0.06</td>
+      <td>0.35±0.03</td>
+      <td>2.03±0.22</td>
+      <td>86.48±1.28</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <td colspan="6">Tumors in vivo</td>
+    </tr>
+    <tr>
+      <td>HT29</td>
+      <td>0.84 [0.81;0.90]</td>
+      <td>0.46 [0.42;0.48]</td>
+      <td>2.66 [2.54;2.76]</td>
+      <td>81.54 [79.93;83.13]</td>
+      <td>0.85±0.35</td>
+    </tr>
+    <tr>
+      <td>HCT116</td>
+      <td>0.88 [0.85;0.92]</td>
+      <td>0.47 [0.45;0.48]</td>
+      <td>2.66 [2.56;2.77]</td>
+      <td>80.61 [79.32;81.96]</td>
+      <td>0.91±0.28</td>
+    </tr>
+    <tr>
+      <td>CaCo2</td>
+      <td>1.02 [0.86;1.19]</td>
+      <td>0.42 [0.38;0.50]</td>
+      <td>2.91 [2.61;3.32]</td>
+      <td>76.89 [74.06;78.52]</td>
+      <td>1.51±0.71</td>
+    </tr>
+    <tr>
+      <td>CT26</td>
+      <td>0.72 [0.67;0.78]</td>
+      <td>0.39 [0.37;0.41]</td>
+      <td>2.34 [2.21;2.50]</td>
+      <td>82.12 [80.96;84.70]</td>
+      <td>1.20±0.36</td>
+    </tr>
+  </tbody>
+</table>
+
+_τm – mean lifetime, τ1 – short lifetime component, τ2 – long lifetime component, a1 – relative contribution of the short lifetime component, BI-τm – bimodality index of the mean lifetime._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative FLIM images of colorectal cancer cell lines. Scale bar = 50 μm. For FLIM: ex. 750 nm, reg. 450–490 nm. (B) The relative contribution of free NAD(P)H (a1, %) in cell cultures. Box shows the median and the quartiles Q1 and Q3, whiskers show minimum and maximum. Dots indicate individual cells (n=280 for HT29 cells, n=185 for HCT116 cells, n=146 for CaCo2 cells, n=138 for CT26 cells). p-values are shown in Supplementary file 1. (C) The distribution of the NAD(P)H-a1 for the cell lines. The bimodality index (BI-a1) is shown on each diagram.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The distribution of the NAD(P)H-τm for the cell lines. The bimodality index (BI-τm) is shown on each diagram.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Representative fluorescence intensity images of flavins (FAD, ex. 900 nm, em. 500–550 nm) and NAD(P)H (ex. 750 nm, em. 450–490 nm). Scale bar = 50 μm.
+
 To quantify the metabolic heterogeneity, the BI was calculated for distributions of both a1 (Figure 1C, Table 2) and τm values (Figure 1—figure supplement 1, Table 1). For all cell lines the BI of the a1 distribution did not exceed 1.1 (the threshold of bimodality, Wang et al., 2009), justifying the uniformity of cell metabolism in a culture, which is consistent with the general view on standard cell lines as homogenous populations (Auman and McLeod, 2010; Idrisova et al., 2022). The BI-τm was, however, rather high (>1.0) in all cell lines except HCT116 (0.90). In the further experiments on tumors the BI-a1 was used as more relevant.
+
+**Table 2.**
+ The bimodality index BI-a1 and dispersion D-a1 of NAD(P)H in cultured cells, mouse tumors and patients’ tumor samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="13">Cell lines in vitro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="3">HT29</td>
+      <td colspan="3">HCT116</td>
+      <td colspan="3">CaCo2</td>
+      <td colspan="3">CT26</td>
+    </tr>
+    <tr>
+      <td>BI-a1</td>
+      <td colspan="3">0.16</td>
+      <td colspan="3">0.92</td>
+      <td colspan="3">0.49</td>
+      <td colspan="3">0.63</td>
+    </tr>
+    <tr>
+      <td>D-a1</td>
+      <td colspan="3">1.83</td>
+      <td colspan="3">2.01</td>
+      <td colspan="3">3.41</td>
+      <td colspan="3">1.67</td>
+    </tr>
+    <tr>
+      <td colspan="13">Tumors in vivo</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3">HT29</td>
+      <td colspan="3">HCT116</td>
+      <td colspan="3">CaCo2</td>
+      <td colspan="3">CT26</td>
+    </tr>
+    <tr>
+      <td>BI-a1</td>
+      <td colspan="3">1.2±0.32</td>
+      <td colspan="3">0.93±0.23</td>
+      <td colspan="3">0.86±0.15</td>
+      <td colspan="3">1.06±0.54</td>
+    </tr>
+    <tr>
+      <td>D-a1</td>
+      <td colspan="3">3.20</td>
+      <td colspan="3">2.60</td>
+      <td colspan="3">4.00</td>
+      <td colspan="3">2.81</td>
+    </tr>
+    <tr>
+      <td colspan="13">Patients’ tumors ex vivo</td>
+    </tr>
+    <tr>
+      <td>Sample</td>
+      <td>1</td>
+      <td>2</td>
+      <td colspan="2">3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td colspan="2">8</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>BI-a1</td>
+      <td>1.25</td>
+      <td>0.81</td>
+      <td colspan="2">1.01</td>
+      <td>1.16</td>
+      <td>1.01</td>
+      <td>1.00</td>
+      <td>0.86</td>
+      <td colspan="2">0.70</td>
+      <td>1.28</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>D-a1</td>
+      <td>7.77</td>
+      <td>4.18</td>
+      <td colspan="2">8.68</td>
+      <td>11.99</td>
+      <td>6.93</td>
+      <td>7.83</td>
+      <td>9.33</td>
+      <td colspan="2">8.25</td>
+      <td>11.51</td>
+      <td>6.96</td>
+    </tr>
+    <tr>
+      <td>Sample</td>
+      <td>11</td>
+      <td>12</td>
+      <td colspan="2">13</td>
+      <td>14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td colspan="2">18</td>
+      <td>19</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>BI-a1</td>
+      <td>0.59</td>
+      <td>1.45</td>
+      <td colspan="2">1.34</td>
+      <td>1.05</td>
+      <td>0.89</td>
+      <td>0.24</td>
+      <td>1.29</td>
+      <td colspan="2">1.32</td>
+      <td>0.80</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>D-a1</td>
+      <td>4.5</td>
+      <td>2.37</td>
+      <td colspan="2">4.94</td>
+      <td>2.19</td>
+      <td>4.16</td>
+      <td>3.34</td>
+      <td>6.10</td>
+      <td colspan="2">5.41</td>
+      <td>2.23</td>
+      <td>5.19</td>
+    </tr>
+    <tr>
+      <td>Sample</td>
+      <td>21</td>
+      <td>22</td>
+      <td colspan="2">23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td>27</td>
+      <td colspan="2">28</td>
+      <td>29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BI-a1</td>
+      <td>1.28</td>
+      <td>0.98</td>
+      <td colspan="2">1.53</td>
+      <td>1.31</td>
+      <td>0.88</td>
+      <td>1.58</td>
+      <td>1.65</td>
+      <td colspan="2">0.5</td>
+      <td>1.29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D-a1</td>
+      <td>5.27</td>
+      <td>3.29</td>
+      <td colspan="2">6.54</td>
+      <td>5.77</td>
+      <td>4.87</td>
+      <td>5.83</td>
+      <td>4.14</td>
+      <td colspan="2">5.67</td>
+      <td>6.36</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Additionally, the dispersion of NAD(P)H-a1 (D-a1) was evaluated for each cell line to describe the extent of distribution of the data around the median (Table 2). The D-a1 value varied from 1.67% in CT26 cell culture to 3.41% in CaCo2.
 
-## Metabolic heterogeneity in mouse tumor models in vivo
+### Metabolic heterogeneity in mouse tumor models in vivo
 
 Next, FLIM of NAD(P)H was performed in vivo on mouse tumor models, obtained from the colorectal cell lines shown above (Figure 2A). All the tumors were verified by histopathological analysis (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig2-v1.jpg)
+
+**Figure 2.:** (A) FLIM images of NAD(P)H of tumor cells in mouse models in vivo. Scale bar = 50 μm. For FLIM: ex. 750 nm, reg. 450–490 nm. (B) Representative histological slices of tumors, hematoxylin/eosin (HE) staining, initial magnification 20×. Scale bar = 50 μm. (C) The relative contribution of free NAD(P)H (a1, %) in three representative tumors (numbered 1–3) obtained from different cell lines. Box shows the median and the quartiles Q1 and Q3, whiskers show minimum and maximum. Dots indicate individual cells (n=280 for HT29, n=340 for HCT116, n=160 for CaCo2, n=350 for CT26). p-values are shown in Supplementary file 1. (D) Representative distributions of the NAD(P)H-a1 for each type of tumor. The bimodality index (BI-a1) is shown on the diagrams.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunofluorescence images of HT29, HCT116, CaCo2 and CT26 mouse tumors. Scale bar = 100 μm. (B) The ratio of EpCAM-positive to vimentin-positive areas in tumor sections.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative fluorescence intensity images of flavins (FAD, ex. 900 nm, em. 500–550 nm) and NAD(P)H (ex. 750 nm, em. 450–490 nm). Scale bar = 50 μm.
 
 Among the tumors, CT26 had the highest (~82%), and CaCo2 had, on average, the lowest (~76%, p-val=0.0028) contribution of free NAD(P)H a1, similar to the cultured cells (Figure 2C, Table 1).
 
@@ -66,9 +360,146 @@ Most of the individual tumors showed larger (≥3%) inter-cellular variations of
 
 The BI-a1 values in mouse tumors were generally higher than in monolayer cultures (Figure 2D, Table 2). In 5 of 19 tumors the BI-a1 was ≥1.1, indicating the bimodal distribution of the a1 parameter, that is the presence of two subpopulations of cells with different metabolism. Ten tumors had the BI-a1 in the range of 0.7–1.0, which suggests that, while the distribution of the estimated parameter was unimodal, it was either wide or asymmetric, thus, also indicating some degree of heterogeneity. In 4 of 19 tumors the BI-a1 was small (0.43–0.69), suggesting uniformity of cells’ metabolism. Given the genetic identity of cells in standard cell lines, we can assume that the nonuniform microenvironment in the tumors was a major source of their variable metabolism.
 
-## Metabolic heterogeneity in colorectal cancer samples from patients
+### Metabolic heterogeneity in colorectal cancer samples from patients
 
 NAD(P)H FLIM images were collected from 29 postoperative samples of patients’ colorectal adenocarcinomas, among which were the tumors of the I–IV stages, poorly and highly differentiated (Table 3, Supplementary file 2). The representative FLIM and histological images are presented in Figure 3A and B correspondingly. Patients’ tumors showed fluorescence lifetimes of τ1~0.45 ns and τ2~1.80–3.20 ns (Supplementary file 2), which were comparable with the values in human tumor xenografts (Table 1). The parameter NAD(P)H-a1 was in the range of ~62–80% and NAD(P)H-τm was in the range of 0.80–1.20 ns, indicating that patients’ tumors generally had larger variability of metabolic statuses than cancer cells in vitro and in xenografts in vivo.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative FLIM images of patient tumors. Scale bar = 50 μm. For FLIM: ex. 750 nm, reg. 450–490 nm. (B) Histopathology of tumors, hematoxylin/eosin (HE) staining, initial magnification 20×. Scale bar = 50 μm. (C) The relative contribution of free NAD(P)H (a1, %) in patients’ tumors (numbered 1–29). Box shows the median and the quartiles Q1 and Q3, whiskers show minimum and maximum. Dots are the measurements from the individual cells. (D) Representative distributions of the NAD(P)H-a1 for patients’ tumors. The bimodality index (BI-a1) is shown on the diagrams.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunofluorescence images of patients’ tumors (numbered from 6 to 21). Scale bar = 100 μm. (B) The ratio of EpCAM-positive to vimentin-positive areas in tumor sections. (C) The bimodality index (BI-a1) and dispersion (D-a1) plotted against the EpCAM/vimentin ratio in patient tumor samples. Pearson correlation r is shown on the plots.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative immunohistochemical images of GLUT3 expression. Scale bar = 50 μm (magnification x200) and 20 μm (magnification x630). (B) Representative immunohistochemical images of LDHA expression. Scale bar = 50 μm (magnification x200) and 20 μm (magnification x630). (С) Semi-quantitative evaluation of the expression level by staining intensity.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative fluorescence intensity images of flavins (FAD, ex. 900 nm, em. 500–550 nm) and NAD(P)H (ex. 750 nm, em. 450–490 nm). Scale bar = 50 μm. (B) The number of photons per pixel recorded by FLIM for flavins in ex vivo patient samples. Mean ± SD, n=7 patients.
+
+**Table 3.**
+ Information about patients and their colorectal tumors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>Number</th>
+      <th>Percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Gender</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>16</td>
+      <td>55.17</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>13</td>
+      <td>44.83</td>
+    </tr>
+    <tr>
+      <td colspan="3">Age</td>
+    </tr>
+    <tr>
+      <td>Mean ±SD</td>
+      <td>65.28±11.92 y.o.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>67 y.o.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="3">Tumor staging</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>3</td>
+      <td>10.34</td>
+    </tr>
+    <tr>
+      <td>IIA</td>
+      <td>6</td>
+      <td>20.69</td>
+    </tr>
+    <tr>
+      <td>IIB</td>
+      <td>3</td>
+      <td>10.34</td>
+    </tr>
+    <tr>
+      <td>IIIB</td>
+      <td>11</td>
+      <td>37.93</td>
+    </tr>
+    <tr>
+      <td>IIIC</td>
+      <td>1</td>
+      <td>3.45</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>5</td>
+      <td>17.25</td>
+    </tr>
+    <tr>
+      <td colspan="3">Tumor site</td>
+    </tr>
+    <tr>
+      <td>Cecum colon</td>
+      <td>2</td>
+      <td>6.90</td>
+    </tr>
+    <tr>
+      <td>Transverse colon</td>
+      <td>10</td>
+      <td>34.48</td>
+    </tr>
+    <tr>
+      <td>Hepatic flexure</td>
+      <td>3</td>
+      <td>10.34</td>
+    </tr>
+    <tr>
+      <td>Sigmoid colon</td>
+      <td>8</td>
+      <td>27.59</td>
+    </tr>
+    <tr>
+      <td>Rectum</td>
+      <td>6</td>
+      <td>20.69</td>
+    </tr>
+    <tr>
+      <td colspan="3">Grade</td>
+    </tr>
+    <tr>
+      <td>Low (G1)</td>
+      <td>4</td>
+      <td>13.79</td>
+    </tr>
+    <tr>
+      <td>Moderate (G2)</td>
+      <td>19</td>
+      <td>65.52</td>
+    </tr>
+    <tr>
+      <td>High (G3)</td>
+      <td>6</td>
+      <td>20.69</td>
+    </tr>
+  </tbody>
+</table>
 
 A high degree of inter- and intratumor variability of cellular metabolism was detected in patients’ tumors (Figure 3). Less than half of the tumors (13 of 29) showed deviation of NAD(P)H-a1 from the median <10% across the cells, and for the rest (16 of 29) the variations were 10–25%. The dispersion D-a1 varied significantly among the samples, from 2.19% to 11.99%.
 
@@ -78,9 +509,17 @@ Notably, the bimodality index showed no correlation with dispersion. That is, am
 
 Therefore, using NAD(P)H FLIM we have observed and quantified metabolic heterogeneity of patients’ colorectal tumors. Unlike tumor xenografts obtained from the cell lines that are thought to be genetically stable and identical, patients’ tumors are genetically diverse, which could also contribute to their metabolic heterogeneity, in addition to microenvironmental factors.
 
-## Interrelation between metabolic heterogeneity and clinicopathological characteristics of tumors
+### Interrelation between metabolic heterogeneity and clinicopathological characteristics of tumors
 
 The relationships between the metrics of cellular heterogeneity – the bimodality index BI and dispersion D of NAD(P)H fluorescence decay parameters – with the clinical parameters of the tumor, such as the stage according to the TNM system, and the grade (G), were analyzed (Figure 4). Due to the small sample size, all tumors were divided into two groups by each parameter: T1 +T2 and T3 +T4; N0M0 and all the others with metastases; G1 +G2 and G3.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig4-v1.jpg)
+
+**Figure 4.:** (A) Plots of SHAP analysis for the built decision tree models to determine the importance of dispersion (D) and bimodality index (BI) of the fluorescence decay parameters of NAD(P)H. The higher the value of the variable, the more red the dot is. (B) Box-plots of D-a1 with highest significance, * p-val <0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94438/elife-94438-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** No significant differences were found between the groups.
 
 SHAP analysis was used to estimate the importance of each variable (D-τ2, D-a1, D-τm, BI-τ2, BI-a1, BI-τm) coming from the biexponential decay curves for individual predictions. Fluctuations of τ1 (fluorescence lifetime of free NAD(P)H) were not included in the analysis because they do not have a rational biological interpretation.
 
@@ -128,13 +567,13 @@ Fluorescence of flavins can also serve as a biomarker of cellular metabolism ind
 
 Owing to the high (sub)cellular resolution (~200–500 nm), FLIM-microscopy provides unique information about metabolic heterogeneity, unavailable with any other methods, like 18F-FDG PET/CT, spatial transcriptomics or immunohistochemistry. Therefore, FLIM-microscopy of endogenous cofactors is not only a powerful research technique, which is capable of improving our understanding of cellular metabolic diversity, but also the tool with a great potential for clinical translation to predict disease outcome.
 
-## Conclusions
+### Conclusions
 
 It is now evident that metabolic processes in cancer are highly variable, which make the tumor metabolism extremely heterogeneous. Metabolic heterogeneity of tumors complicates treatment efforts and is thought to be a negative prognostic factor. Due to the lack of methods for direct observation and quantification of metabolic heterogeneity at cellular level, it has been poorly characterized so far. Our assessments of cell-level heterogeneity from FLIM-microscopy of NAD(P)H clearly show that heterogeneous metabolic landscape of a patient’ tumor is hardly reproducible in in vitro and in vivo models, which underlie the importance of such investigations on clinical material. Although the present research included a limited number of patients (n=29), the obtained results showing the associations between metabolic heterogeneity and clinical features of tumors allow us to consider it as a potential prognostic marker. We plan to continue this study to collect more tumor samples and estimate the correlations between their metabolic heterogeneity and follow-up clinical outcomes.
 
 ## Materials and methods
 
-## Cell cultures
+### Cell cultures
 
 The human colorectal carcinoma cell lines HТ29, HCT116, CaCo2 and murine colon carcinoma cell line CT26 were used in the study. Cell lines were obtained from the Cell Culture Collection of Ivanovsky Institute of Virology, Gamaleya National Research Center of Epidemiology and Microbiology (Moscow, Russia), and their identity has been authenticated using STR profiling. Cells were grown in Dulbecco’s modified Eagle’s medium (DMEM; Gibco, Carlsbad, CA, USA) supplemented with 10% fetal bovine serum (FBS; Gibco, Carlsbad, CA, USA), 2 mM glutamine (Gibco, Carlsbad, CA, USA), 10 mg/mL penicillin (Gibco, Carlsbad, CA, USA), 10 mg/mL streptomycin (Gibco, Carlsbad, CA, USA). The cells were incubated at 37 °C, 5% CO2, and 80% relative humidity and passaged three times a week. The passaging of cells was carried out at a confluence of 70–80% with trypsin-EDTA (Thermo Fisher Scientific, Waltham, MA, USA). Prior to use, the cell lines were tested for mycoplasma using PCR analysis and found to be uncontaminated.
 
@@ -142,7 +581,7 @@ For ﬂuorescence microscopic studies the cells were seeded in 35 mm glass-botto
 
 Cell culture experiments included two independent replicates for each cell line, the data from which were then combined.
 
-## Tumor models
+### Tumor models
 
 In vivo experiments were performed on female nude and Balb/C mice weighing ∼20–22 g purchased from a certified SPF vivarium of the Lobachevsky State University (Nizhny Novgorod, Russia). The animal study was conducted according to the guidelines of the Declaration of Helsinki and approved by the Local Ethical Committee of the Privolzhsky Research Medical University (approval № 09 from 30.06.2023). All surgery was performed under anesthesia, and every effort was made to minimize suffering. To generate tumors, the suspensions of cancer cells were injected subcutaneously into the tight in the following amount: 1.5×106 of НТ29 cells in 100 µL PBS, 1.0×106 of НCT116 cells in 100 µL PBS, 5.5×106 of CaCo2 cells in 100 µL PBS. CT26 cells (2.0×105 cells in 20 µL PBS) were inoculated intracutaneously in the ear. The tumor volume was measured using a caliper, and calculated using the formula v=a × b×1/2b, where a is the length and b is the width of the tumor. In vivo studies were done on 21st day of growth for HT29 tumors (244.8±36.6 mm3), on the day 23 for HCT116 (533.9±42.0 mm3), on the day 68 for CaCo2 (397.8±65.2 mm3), and on the day 14 for CT26 (60.9±5.6 mm3). The groups of mice with HT29 and HCT116 tumors included three animals, CaCo2 - four animals, and CT26 - nine animals.
 
@@ -150,7 +589,7 @@ Mice were anesthetized by an intramuscular injection of Zoletil (40 mg/kg, Virba
 
 After in vivo study, the mice were euthanized by cervical dislocation and tumors were surgically removed for histological analyses.
 
-## Patient samples
+### Patient samples
 
 Twenty-nine surgical samples of patients’ colorectal tumors were obtained in the Nizhny Novgorod Regional Oncological Center (Nizhny Novgorod, Russia) during the tumor resection. The study with the use of patients’ material was approved the Local Ethical Committee of the Privolzhsky Research Medical University (approval № 09 from 30.06.2023). All the patients gave informed written consent and consent to publish prior to the enrollment in the study.
 
@@ -158,13 +597,13 @@ All the patients had a histological verification of colorectal adenocarcinoma, t
 
 Immediately after surgical excision, tumor samples, 0.5–1 cm3 in size, were wrapped in gauze soaked in a solution of 10% BSA (bovine serum albumin), placed in sterile Petri dish on ice, transferred to the laboratory within 30 min and examined on the laser scanning microscope immediately. This storage protocol allows to preserve autofluorescence lifetime parameters unchanged for at least 3 h (Lukina et al., 2019).
 
-## FLIM-microscopy
+### FLIM-microscopy
 
 FLIM of NAD(P)H was performed using the laser scanning microscope LSM 880 (Carl Zeiss, Germany) equipped with a TCSPC-based FLIM module (Becker & Hickl GmbH, Germany). The Ti:Sa femtosecond laser MaiTai HP (Spectra-Physics Inc, USA, repetition rate 80 MHz, pulse duration 120 fs) was used for two-photon excitation of NAD(P)H at a wavelength of 750 nm. Fluorescence signal was registered in the range 450–490 nm. The laser power applied to the samples was ∼6 mW. FLIM images were obtained using the water-immersion objective C-Apochromat W Korr 40×/1.3 (Carl Zeiss, Germany). Image collection time was 60 s. In total, 5–10 images were obtained from each sample.
 
-FLIM images were processed in the SPCImage 8.5 software (Becker & Hickl GmbH, Germany). NAD(P)H fluorescence was analyzed in the cytoplasm of individual cells, in total 50–200 cells in each sample. Fluorescence decay curves were fitted by a bi-exponential model with a goodness of fit χ2 0.8–1.2. The following fluorescence decay parameters were analyzed: short component corresponding to the free form of NAD(P)H (τ1), long component corresponding to the protein-bound NAD(P)H (τ2), their relative contributions (а1 и а2, correspondingly, a1+a2=100%), and the mean fluorescence lifetime (τm=a1×τ1+a2×τ2a1+a2).
+FLIM images were processed in the SPCImage 8.5 software (Becker & Hickl GmbH, Germany). NAD(P)H fluorescence was analyzed in the cytoplasm of individual cells, in total 50–200 cells in each sample. Fluorescence decay curves were fitted by a bi-exponential model with a goodness of fit χ2 0.8–1.2. The following fluorescence decay parameters were analyzed: short component corresponding to the free form of NAD(P)H (τ1), long component corresponding to the protein-bound NAD(P)H (τ2), their relative contributions (а1 и а2, correspondingly, a1+a2=100%), and the mean fluorescence lifetime ($\tau_{m}=\frac{a_{1}\times\tau_{1}+a_{2}\times\tau_{2}}{a_{1}+a_{2}}$).
 
-## Histopathology and immunohistochemistry (IHC)
+### Histopathology and immunohistochemistry (IHC)
 
 Formalin-fixed tumor samples were embedded in paraffin according to standard procedure and cut parallel to the optical plane. The sequential sections 7 μm thick were stained with hematoxylin and eosin, sections 4 µm thick were used for immunohistochemical staining.
 
@@ -172,11 +611,15 @@ Tissue sections were stained with primary antibodies to epithelial cell adhesion
 
 Immunohistochemical staining for LDHA and GLUT3 was performed using immunostainer «Bond-Max» (Leica Biosistems, UK) with BOND 5.1 software, according to the standard protocols recommended by the manufacturer. Staining protocol included preliminary dewaxing of the sections and unmasking in a high pH buffer based on ethylenediaminetetraacetic acid for 20 min at 98–99°C. Next, slides were incubated with primary polyclonal antibodies to Glucose Transporter 3 GLUT3 (E-AB-31557, Elabscience, China) or to Lactate dehydrogenase A LDHA (E-AB-19947, Elabscience, China) for 15 min. For the antibodies detection «Bond polymer refine detection system» (Leica Biosystems, UK) was used. The images were obtained using 3DHISTECH PANNORAMIC Midi (Carl Zeiss, Germany) at magnifications ×5, ×10, ×20, ×40, 63 x, resolution 0.087 µm/pixel. Due to the expression of GLUT3 and LDHA in all cell types and, especially, in cancer cells, the 100% of cells within the samples had positive staining. The staining intensity was visually evaluated as negative (-) low (+), moderate (++), or high (+++).
 
-## Bimodality index and dispersion calculation
+### Bimodality index and dispersion calculation
 
 A continuous measure known as the «bimodality index» is utilized to gauge the degree of conformity of a set of univariate data to a two-component mixture model. The score is larger if the two components are balanced in size or if the separation between the two modes is larger. The BI ≥1.1 is considered as a cutoff to reliably define a bimodal distribution in the data (Wang et al., 2009; Shirshin et al., 2022).
 
-BI was calculated according to the equation:BI=δ×p(1−p),δ=|μ1−μ2|σ1σ2,p=n1n1+n2,
+BI was calculated according to the equation:
+
+$$
+BI=\delta\times\sqrt{p(1−p)},\delta=\frac{|\mu_{1}−\mu_{2}|}{\sqrt{\sigma_{1}\sigma_{2}}},p=\frac{n_{1}}{n_{1}+n_{2}},
+$$
 
 where μ – the mean of each Gaussian, σ – the standard deviation of each Gaussian and n – the number of measurements of each Gaussian.
 
@@ -194,6 +637,6 @@ SHAP analysis is a technique used to explain the output of any machine learning 
 
 The T parameter from TNM was modified in a way that classes 1+2 became group 0, and 3+4 became group 1. The modification of the parameter G resulted in two classes: classes 1+2 became group 0 and class 3 became group 1. Parameters N and M were modified as NM, in which the class was distinguished: no metastases – 0, metastases – 1. Since the clinical parameters, in a modified form, are binary, a point-biserial correlation coefficient was chosen to assess the correlation.
 
-## Statistical analysis
+### Statistical analysis
 
 The obtained data were checked for the normal distribution using the Kolmogorov–Smirnov’s criterion. The data with a normal distribution were presented as mean ± standard deviation (SD). The data with an abnormal distribution were presented as a median and 25% and 75% quartiles (Q1 and Q3). The ANOVA test for comparison data with a normal distribution and the Kruskal-Wallis’s test for comparison data with an abnormal distribution were used, with p-val <0.05 being considered statistically significant. Statistical data processing was performed in IBM SPSS Statistics 26.0, R-studio, Python.

@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/002h8g185 Centre for Sustainable and Circular Technologies, Department of Chemistry, University of Bath Bath United Kingdom
-2. https://ror.org/0220mzb33 King's College London, Randall Centre for Cell and Molecular Biophysics, New Hunt's House, Guy's Campus London United Kingdom
-3. https://ror.org/035dkdb55 The Alan Turing Institute, British Library London United Kingdom
+1. Centre for Sustainable and Circular Technologies, Department of Chemistry, University of Bath Bath United Kingdom ([ROR:002h8g185](https://ror.org/002h8g185))
+2. King's College London, Randall Centre for Cell and Molecular Biophysics, New Hunt's House, Guy's Campus London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+3. The Alan Turing Institute, British Library London United Kingdom ([ROR:035dkdb55](https://ror.org/035dkdb55))
 
 † Corresponding author
 
@@ -44,15 +44,15 @@ We package our model into three freely available user interfaces, presenting an 
 
 ## Results
 
-## Compartment and promoter-switching models of DUX4 expression
+### Compartment and promoter-switching models of DUX4 expression
 
 Here, we consider two models of DUX4 expression in FSHD myocytes, a deterministic model of FSHD cell states we call the compartment model, and a stochastic model of gene expression we call the promoter switching model.
 
-We first describe the compartment model. FSHD single myocytes can express DUX4 and, therefore, DUX4 target genes (Rickard et al., 2015; Kowaljow et al., 2007; Heher et al., 2022). We have previously demonstrated, via a library of DUX4 expression constructs, that DUX4 target gene activation is also necessary for DUX4-induced cell death (Knopp et al., 2016). We thus propose that an FSHD single myocyte at a given time t, occupies one of the following five states/compartments, defined by its transcriptomic distribution:
+We first describe the compartment model. FSHD single myocytes can express DUX4 and, therefore, DUX4 target genes (Rickard et al., 2015; Kowaljow et al., 2007; Heher et al., 2022). We have previously demonstrated, via a library of DUX4 expression constructs, that DUX4 target gene activation is also necessary for DUX4-induced cell death (Knopp et al., 2016). We thus propose that an FSHD single myocyte at a given time $t$, occupies one of the following five states/compartments, defined by its transcriptomic distribution:
 
 We propose a model in which the single FSHD myocyte can transition through these five states according to five parameters:
 
-We allow cells to transition from DUX4 mRNA negative states St and Rt to DUX4 mRNA positive states Et and It, respectively at the rate of transcription of DUX4, VD , with transition in the reverse direction occurring at the degradation rate of DUX4 mRNA, d0. Transition from state Et to state It requires DUX4 mRNA to be translated to active protein and DUX4 target mRNA to be expressed and thus occurs at the rate TDVT. Lastly, DUX4 target gene +ve states It and Rt transition to the dead cell state Dt at rate  Dr. Our compartment model can be represented schematically (Figure 1A) or equivalently as a system of ordinary differential equations (ODEs) (Figure 1B).
+We allow cells to transition from DUX4 mRNA negative states $St$ and $Rt$ to DUX4 mRNA positive states $Et$ and $It$, respectively at the rate of transcription of DUX4, $V_{D}$ , with transition in the reverse direction occurring at the degradation rate of DUX4 mRNA, $d_{0}$. Transition from state $Et$ to state $It$ requires DUX4 mRNA to be translated to active protein and DUX4 target mRNA to be expressed and thus occurs at the rate $T_{D}V_{T}$. Lastly, DUX4 target gene +ve states $It$ and $Rt$ transition to the dead cell state $Dt$ at rate $ D_{r}$. Our compartment model can be represented schematically (Figure 1A) or equivalently as a system of ordinary differential equations (ODEs) (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88345/elife-88345-fig1-v2.jpg)
 
@@ -62,101 +62,113 @@ There are important assumptions in our compartment model:
 
 In what follows, we derive experimental estimates for the 5 parameters underlying the compartment model.
 
-A further preliminary is the promoter-switching model. This model is precisely the two-stage telegraph process, which has a long history of study in stochastic gene expression (Shahrezaei and Swain, 2008; Vu et al., 2016; Kim and Marioni, 2013). Under this model, we assume that the promoter of a gene n can occupy one of two states: active and inactive, and that transition from active (a) to inactive (i) state occurs at a rate kin , with the reverse transition occurring at a rate kan. We further assume that an active promoter can transcribe a single mRNA at a rate v0n , which degrades at a rate δn . The model is represented schematically in Figure 1C. This model of gene expression has been shown to follow a Poisson-Beta distribution (Vu et al., 2016; Kim and Marioni, 2013), where the promoter state is determined by a Beta-distributed variable p~Betakan/δn,kin/δn , and the mRNA copy number distribution conditional on the promoter state follows a Poisson distribution m|p~Poissonpv0n/δn. Under this interpretation maximum likelihood estimates (MLEs) for the normalized underlying parameters kan/δn, kin/δn and v0n/δn can be approximated from single-cell transcriptomic data (Vu et al., 2016; Kim and Marioni, 2013).
+A further preliminary is the promoter-switching model. This model is precisely the two-stage telegraph process, which has a long history of study in stochastic gene expression (Shahrezaei and Swain, 2008; Vu et al., 2016; Kim and Marioni, 2013). Under this model, we assume that the promoter of a gene $n$ can occupy one of two states: active and inactive, and that transition from active (a) to inactive (i) state occurs at a rate $k_{i}^{n}$ , with the reverse transition occurring at a rate $k_{a}^{n}.$ We further assume that an active promoter can transcribe a single mRNA at a rate $v_{0}^{n}$ , which degrades at a rate $\delta^{n}$ . The model is represented schematically in Figure 1C. This model of gene expression has been shown to follow a Poisson-Beta distribution (Vu et al., 2016; Kim and Marioni, 2013), where the promoter state is determined by a Beta-distributed variable $p~Betak_{a}^{n}/\delta^{n},k_{i}^{n}/\delta^{n}$ , and the mRNA copy number distribution conditional on the promoter state follows a Poisson distribution $m|p~Poissonpv_{0}^{n}/\delta^{n}$. Under this interpretation maximum likelihood estimates (MLEs) for the normalized underlying parameters $k_{a}^{n}/\delta^{n}, k_{i}^{n}/\delta^{n}$ and $v_{0}^{n}/\delta^{n}$ can be approximated from single-cell transcriptomic data (Vu et al., 2016; Kim and Marioni, 2013).
 
-We assume that the proportion of time the promoter is in the active state, multiplied by the transcription rate of the active promoter in our promoter-switching model kanv0nkan+kin, is a reasonable proxy for the average rate of transcription of a gene in our compartmental model. We employ this assumption to estimate the average transcription rates VD and VT for the compartment model.
+We assume that the proportion of time the promoter is in the active state, multiplied by the transcription rate of the active promoter in our promoter-switching model $\frac{k_{a}^{n}v_{0}^{n}}{k_{a}^{n}+k_{i}^{n}},$ is a reasonable proxy for the average rate of transcription of a gene in our compartmental model. We employ this assumption to estimate the average transcription rates $V_{D}$ and $V_{T}$ for the compartment model.
 
-## Estimating the kinetics of DUX4 mRNA
+### Estimating the kinetics of DUX4 mRNA
 
-Our compartment model contains two parameters governing the kinetics of DUX4 mRNA: the degradation rate d0 and the average transcription rate VD .
+Our compartment model contains two parameters governing the kinetics of DUX4 mRNA: the degradation rate $d_{0}$ and the average transcription rate $V_{D}$ .
 
-To estimate the degradation rate  d0 we employed human immortalized LHCN-M2 myoblasts expressing DUX4 under the control of a doxycycline-inducible promoter (iDUX4 myoblasts) (Choi et al., 2016). DUX4 expression was induced to a level and duration we have found sufficient to drive robust DUX4 mRNA expression, but only weak activation of DUX4 target genes and no widespread apoptosis (Ganassi et al., 2022). After induction, myoblasts were washed and supplemented with fresh medium without doxycycline. Samples were harvested for RNA extraction in triplicate immediately after washing and then at 1, 2, 3, 4, 5, 6, 8, and 10 hr post-wash. RT-qPCR was performed employing a standard curve to quantify the DUX4 mRNA copy number over our time course, to monitor DUX4 mRNA degradation in the absence of induction (Figure 2A).
+To estimate the degradation rate $ d_{0}$ we employed human immortalized LHCN-M2 myoblasts expressing DUX4 under the control of a doxycycline-inducible promoter (iDUX4 myoblasts) (Choi et al., 2016). DUX4 expression was induced to a level and duration we have found sufficient to drive robust DUX4 mRNA expression, but only weak activation of DUX4 target genes and no widespread apoptosis (Ganassi et al., 2022). After induction, myoblasts were washed and supplemented with fresh medium without doxycycline. Samples were harvested for RNA extraction in triplicate immediately after washing and then at 1, 2, 3, 4, 5, 6, 8, and 10 hr post-wash. RT-qPCR was performed employing a standard curve to quantify the DUX4 mRNA copy number over our time course, to monitor DUX4 mRNA degradation in the absence of induction (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88345/elife-88345-fig2-v2.jpg)
 
-**Figure 2.:** and average transcription rate d0.(VD)(A) Schematic of the experiment performed to estimate the DUX4 mRNA degradation rate . iDUX4 myoblasts were induced to express DUX4 with 250 ng/ml of doxycycline for 7 hr before doxycycline was washed away. DUX4 mRNA was quantified at multiple time points post-wash using RT-qPCR. (d0B) Bar chart displays the RT-qPCR of ln(DUX4 copy number) at post-wash times 0, 1, 2, 3, 4, 5, 6, 8, and 10 hr. Bar represents the average of triplicates and the standard error of the mean is displayed. A line of best fit of ln(DUX4 copy number) against time is displayed alongside the corresponding linear regression p-value (bold) and the slope of the line corresponds to  (red). (d0C) Schematic of the estimation of average DUX4 transcription rate  from scRNAseq data of 5133 Facioscapulohumeral muscular dystrophy (FSHD) myocytes. The maximum likelihood estimates (MLEs) for the underlying parameters of DUX4 transcription under the promoter-switching model are estimated via gradient descent and combined to estimate the average DUX4 transcription rate (red text).VD
+**Figure 2.:** Estimation of DUX4 mRNA degradation rate $d_{0}$ and average transcription rate $(V_{D})$.(A) Schematic of the experiment performed to estimate the DUX4 mRNA degradation rate $d_{0}$. iDUX4 myoblasts were induced to express DUX4 with 250 ng/ml of doxycycline for 7 hr before doxycycline was washed away. DUX4 mRNA was quantified at multiple time points post-wash using RT-qPCR. (B) Bar chart displays the RT-qPCR of ln(DUX4 copy number) at post-wash times 0, 1, 2, 3, 4, 5, 6, 8, and 10 hr. Bar represents the average of triplicates and the standard error of the mean is displayed. A line of best fit of ln(DUX4 copy number) against time is displayed alongside the corresponding linear regression p-value (bold) and the slope of the line corresponds to $d_{0}$ (red). (C) Schematic of the estimation of average DUX4 transcription rate $V_{D}$ from scRNAseq data of 5133 Facioscapulohumeral muscular dystrophy (FSHD) myocytes. The maximum likelihood estimates (MLEs) for the underlying parameters of DUX4 transcription under the promoter-switching model are estimated via gradient descent and combined to estimate the average DUX4 transcription rate (red text).
 
-As anticipated DUX4 mRNA levels decayed exponentially over time in the absence of doxycycline (linear regression of ln(DUX4 mRNA) vs time, p=4.1 × 10–4, Figure 2B), allowing us to calculate the degradation rate of DUX4 mRNA, d0=0.246/hr. This estimate suggests that the half-life of DUX4 mRNA is approximately 2.8 hr, not atypical for a transcription factor, and on the faster end of the mRNA degradation distribution (Yang et al., 2003).
+As anticipated DUX4 mRNA levels decayed exponentially over time in the absence of doxycycline (linear regression of ln(DUX4 mRNA) vs time, p=4.1 × 10–4, Figure 2B), allowing us to calculate the degradation rate of DUX4 mRNA, $d_{0}=0.246/hr$. This estimate suggests that the half-life of DUX4 mRNA is approximately 2.8 hr, not atypical for a transcription factor, and on the faster end of the mRNA degradation distribution (Yang et al., 2003).
 
-To estimate the mean transcription rate of DUX4, VD , we applied the promoter-switching model presented above. We considered the scRNAseq dataset of FSHD single myocytes produced by van den Heuvel et al., 2019. This dataset comprises 7047 single myocytes, which were differentiated for 3 days in the presence of EGTA to inhibit fusion. 5133/7047 (73%) single myocytes were derived from four FSHD patients (two FSHD1 and two FSHD2). Patient demographics, genotypes, and DUX4 +/-ve cell counts are displayed in Supplementary file 1. DUX4 mRNA expression was detected in 27/5133 (0.53%) single FSHD myocytes but not in control myocytes (van den Heuvel et al., 2019; Banerji and Zammit, 2019). Considering the 5133 FSHD myocytes together we implemented a gradient descent algorithm to approximate the MLEs of the normalized parameters kaDUX4/δDUX4, kiDUX4/δDUX4 and v0DUX4/δDUX4 from the Poisson-Beta interpretation of the promoter-switching model of DUX4 expression (Figure 2C).
+To estimate the mean transcription rate of DUX4, $V_{D}$ , we applied the promoter-switching model presented above. We considered the scRNAseq dataset of FSHD single myocytes produced by van den Heuvel et al., 2019. This dataset comprises 7047 single myocytes, which were differentiated for 3 days in the presence of EGTA to inhibit fusion. 5133/7047 (73%) single myocytes were derived from four FSHD patients (two FSHD1 and two FSHD2). Patient demographics, genotypes, and DUX4 +/-ve cell counts are displayed in Supplementary file 1. DUX4 mRNA expression was detected in 27/5133 (0.53%) single FSHD myocytes but not in control myocytes (van den Heuvel et al., 2019; Banerji and Zammit, 2019). Considering the 5133 FSHD myocytes together we implemented a gradient descent algorithm to approximate the MLEs of the normalized parameters $k_{a}^{DUX4}/\delta^{DUX4}, k_{i}^{DUX4}/\delta^{DUX4}$ and $v_{0}^{DUX4}/\delta^{DUX4}$ from the Poisson-Beta interpretation of the promoter-switching model of DUX4 expression (Figure 2C).
 
-We note that δDUX4=d0, which we have already estimated, this enabled us to renormalize these parameters and compute the average DUX4 transcription rate, VD:=kaDUX4v0DUX4kaDUX4+kiDUX4=0.00211/hr.
+We note that $\delta^{DUX4}=d_{0}$, which we have already estimated, this enabled us to renormalize these parameters and compute the average DUX4 transcription rate, $V_{D}:=\frac{k_{a}^{DUX4}v_{0}^{DUX4}}{k_{a}^{DUX4}+k_{i}^{DUX4}}=0.00211/hr$.
 
-As the total number of DUX4 positive cells is low, we pooled data from the four FSHD patients to allow robust estimation of the average DUX4 transcription rate for this patient cohort. We note, however, that distinct FSHD genotypes likely underlie different DUX4 transcription rates. The majority of DUX4 +ve cells (23/27) were found in two FSHD patients for this scRNAseq data. For patient FSHD1.1 19/2226 (0.85%) cells were DUX4 +ve and for patient FSHD2.1 5/1283 (0.39%) cells were DUX4 +ve (Supplementary file 1). To investigate variability in VD , we derived individual estimates for these two ‘higher’ DUX4 expressing patients, for FSHD1.1 VD=0.00373/hr, while for FSHD2.1 VD=0.000960/hr. The pooled estimate of VD is thus comparable in order of magnitude with that of individual patients. To fully utilize the available data and prevent limiting our model to only ‘higher’ DUX4 expressing patients, we employ the pooled estimate of VD=0.00211/hr for the remainder of our calculations.
+As the total number of DUX4 positive cells is low, we pooled data from the four FSHD patients to allow robust estimation of the average DUX4 transcription rate for this patient cohort. We note, however, that distinct FSHD genotypes likely underlie different DUX4 transcription rates. The majority of DUX4 +ve cells (23/27) were found in two FSHD patients for this scRNAseq data. For patient FSHD1.1 19/2226 (0.85%) cells were DUX4 +ve and for patient FSHD2.1 5/1283 (0.39%) cells were DUX4 +ve (Supplementary file 1). To investigate variability in $V_{D}$ , we derived individual estimates for these two ‘higher’ DUX4 expressing patients, for FSHD1.1 $V_{D}=0.00373/hr$, while for FSHD2.1 $V_{D}=0.000960/hr$. The pooled estimate of $V_{D}$ is thus comparable in order of magnitude with that of individual patients. To fully utilize the available data and prevent limiting our model to only ‘higher’ DUX4 expressing patients, we employ the pooled estimate of $V_{D}=0.00211/hr$ for the remainder of our calculations.
 
-## Estimating kinetics of DUX4 target activation
+### Estimating kinetics of DUX4 target activation
 
-We next estimated the average transcription rate of the DUX4 target genes in the presence of DUX4 mRNA, VT. We focused on eight DUX4 target genes: ZSCAN4, TRIM43, RFPL1, RFPL2, RFPL4B, PRAMEF1, PRAMEF2, and PRAMEF12 that have been identified as direct DUX4 targets via ChIP-seq (Young et al., 2013). We have shown that these eight genes are the only features consistently up-regulated in human myoblasts expressing DUX4, across four independent studies (Banerji and Zammit, 2021; Rickard et al., 2015; Choi et al., 2016; Young et al., 2013; Geng et al., 2012).
+We next estimated the average transcription rate of the DUX4 target genes in the presence of DUX4 mRNA, $V_{T}.$ We focused on eight DUX4 target genes: ZSCAN4, TRIM43, RFPL1, RFPL2, RFPL4B, PRAMEF1, PRAMEF2, and PRAMEF12 that have been identified as direct DUX4 targets via ChIP-seq (Young et al., 2013). We have shown that these eight genes are the only features consistently up-regulated in human myoblasts expressing DUX4, across four independent studies (Banerji and Zammit, 2021; Rickard et al., 2015; Choi et al., 2016; Young et al., 2013; Geng et al., 2012).
 
 Examining mRNA levels of these eight DUX4 target genes in scRNAseq (van den Heuvel et al., 2019) and snRNAseq (Jiang et al., 2020) studies of FSHD and control differentiated myoblasts, expression was restricted to FSHD cells/nuclei and never observed in controls. This pattern of expression mirrors that of DUX4 mRNA and suggests that these targets are highly specific and are unlikely to be activated in the absence of DUX4.
 
-To confirm our hypothesis, we applied the promoter-switching model. We returned to the scRNAseq data of 5133 FSHD myocytes generated by van den Heuvel et al., 2019 and divided the data into the 27 DUX4 +ve cells and 5106 DUX4 -ve cells. For each of our eight DUX4 target genes, we implemented our gradient descent algorithm to compute the MLEs of the normalized parameters kan/δn, kin/δn, and v0n/δn, underlying a promoter-switching model for the given gene across the 27 DUX4 +ve FSHD myocytes and the 5106 DUX4 -ve FSHD myocytes separately (Figure 3A).
+To confirm our hypothesis, we applied the promoter-switching model. We returned to the scRNAseq data of 5133 FSHD myocytes generated by van den Heuvel et al., 2019 and divided the data into the 27 DUX4 +ve cells and 5106 DUX4 -ve cells. For each of our eight DUX4 target genes, we implemented our gradient descent algorithm to compute the MLEs of the normalized parameters $k_{a}^{n}/\delta^{n}, k_{i}^{n}/\delta^{n}$, and $v_{0}^{n}/\delta^{n}$, underlying a promoter-switching model for the given gene across the 27 DUX4 +ve FSHD myocytes and the 5106 DUX4 -ve FSHD myocytes separately (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88345/elife-88345-fig3-v2.jpg)
 
-**Figure 3.:** .VT(A) Schematic of estimation of promoter-switching model parameters for eight DUX4 target genes, across 5106 DUX4 -ve Facioscapulohumeral muscular dystrophy (FSHD) single myocytes and 27 DUX4 +ve FSHD single myocytes from van den Heuvel et al., 2019. Violin plots display (B) the proportion of time in active promoter state (C) normalized active promoter transcription rate and (D) the mean mRNA copy number, for the eight DUX4 target genes in the 5106 DUX4 -ve and 27 DUX4 +ve FSHD myocytes separately, p-values correspond to two-tailed paired Wilcoxon tests. (E) Violin plot displays the variance of mRNA copy number for the eight DUX4 target genes calculated from the 27 DUX4 +ve FSHD myocytes (red) and calculated assuming DUX4 up-regulates targets only via the increase in (blue) the normalized transcription rate  or (green) the ratio of active to inactive promoter transition rates v0nδn. Paired two-tailed Wilcoxon kankinp-values are displayed comparing adjacent distributions. (F) Schematic displaying how the change in parameters underlying the promoter-switching models for the eight DUX4 target genes in the presence of DUX4 leads to stable target gene activation. (G) Schematic of the estimation of the average DUX4 target gene transcription rate , from scRNAseq data of 27 DUX4 +ve FSHD myocytes.VTFigure 3—source data 1.Figure 3 provides the parameters of the promoter switching model for each of the 8 DUX4 targets, derived from 5106 DUX4 -ve FSHD single cells and 27 DUX4 +vs FSHD single cells seperately.
+**Figure 3.:** Estimation of promoter-switching model parameters for DUX4 target genes and estimation of $V_{T}$.(A) Schematic of estimation of promoter-switching model parameters for eight DUX4 target genes, across 5106 DUX4 -ve Facioscapulohumeral muscular dystrophy (FSHD) single myocytes and 27 DUX4 +ve FSHD single myocytes from van den Heuvel et al., 2019. Violin plots display (B) the proportion of time in active promoter state (C) normalized active promoter transcription rate and (D) the mean mRNA copy number, for the eight DUX4 target genes in the 5106 DUX4 -ve and 27 DUX4 +ve FSHD myocytes separately, p-values correspond to two-tailed paired Wilcoxon tests. (E) Violin plot displays the variance of mRNA copy number for the eight DUX4 target genes calculated from the 27 DUX4 +ve FSHD myocytes (red) and calculated assuming DUX4 up-regulates targets only via the increase in (blue) the normalized transcription rate $\frac{v_{0}^{n}}{\delta^{n}}$ or (green) the ratio of active to inactive promoter transition rates $\frac{k_{a}^{n}}{k_{i}^{n}}$. Paired two-tailed Wilcoxon p-values are displayed comparing adjacent distributions. (F) Schematic displaying how the change in parameters underlying the promoter-switching models for the eight DUX4 target genes in the presence of DUX4 leads to stable target gene activation. (G) Schematic of the estimation of the average DUX4 target gene transcription rate $V_{T}$, from scRNAseq data of 27 DUX4 +ve FSHD myocytes.
 
-In the presence of DUX4 mRNA, the proportion of time the promoters of the eight DUX4 target genes remained in the active state, kankan+kin, significantly increased (paired Wilcoxon p=7.8 × 10–3, Figure 3B), as expected. Curiously, however, the normalized rate of transcription of the DUX4 target genes from the active promoter, v0n/δn, significantly decreased in the presence of DUX4 (paired Wilcoxon p=0.039, Figure 3C).
+In the presence of DUX4 mRNA, the proportion of time the promoters of the eight DUX4 target genes remained in the active state, $\frac{k_{a}^{n}}{k_{a}^{n}+k_{i}^{n}}$, significantly increased (paired Wilcoxon p=7.8 × 10–3, Figure 3B), as expected. Curiously, however, the normalized rate of transcription of the DUX4 target genes from the active promoter, $v_{0}^{n}/\delta^{n}$, significantly decreased in the presence of DUX4 (paired Wilcoxon p=0.039, Figure 3C).
 
-To investigate further, we considered the moments of the distribution of mRNA copy number, m, under the promoter-switching model. It can be shown that the mean mRNA copy number satisfies (Vu et al., 2016):Em=kanv0n/δnkan+kin.
+To investigate further, we considered the moments of the distribution of mRNA copy number, $m$, under the promoter-switching model. It can be shown that the mean mRNA copy number satisfies (Vu et al., 2016):
 
-The changes in parameters we calculate for the DUX4 target genes confirmed that in the presence of DUX4 mRNA, the mean expression of all 8 DUX4 targets increases (paired Wilcoxon p=0.039, Figure 3D), i.e., the drop in v0n/δn is over-compensated for by the rise in kankan+kin. However, it is curious that v0n/δn should drop at all.
+$$
+Em=\frac{k_{a}^{n}v_{0}^{n}/\delta^{n}}{k_{a}^{n}+k_{i}^{n}}.
+$$
 
-It can be shown that the variance of mRNA copy number m, satisfies (Vu et al., 2016):Varm=Em1+kinv0n/(δn)^2(1+kan/δn+kin/δn)(kan/δn+kin/δn).
+The changes in parameters we calculate for the DUX4 target genes confirmed that in the presence of DUX4 mRNA, the mean expression of all 8 DUX4 targets increases (paired Wilcoxon p=0.039, Figure 3D), i.e., the drop in $v_{0}^{n}/\delta^{n}$ is over-compensated for by the rise in $\frac{k_{a}^{n}}{k_{a}^{n}+k_{i}^{n}}$. However, it is curious that $v_{0}^{n}/\delta^{n}$ should drop at all.
 
-This expression ensures that as the mean mRNA copy number rises, so too must the variance, however, the level to which the variance rises is controlled by a term that is monotonic increasing in v0n/δn and depends on the promoter state parameters in a more complex way.
+It can be shown that the variance of mRNA copy number $m$, satisfies (Vu et al., 2016):
 
-We postulated the pattern of DUX4 target gene parameter changes we observe in the presence of DUX4, have the effect of raising mean target mRNA expression, while suppressing target mRNA variance, i.e., a controlled activation of target genes. To investigate this, we considered two hypothetical scenarios in which the mean expression of target mRNAs, Em in the absence of DUX4, is increased to the same level we observe in the presence of DUX4. In the first scenario, we considered only increasing v0n / δn to achieve the rise in Em , in the second we considered only increasing the ratio of active to inactive promotor kankin. Both hypothetical scenarios resulted in a significantly higher variance of target mRNA than observed in our data, with the pure rise in v0n/δn driving the most dramatic increase in target mRNA variance (Figure 3E).
+$$
+Varm=Em1+\frac{k_{i}^{n}v_{0}^{n}/(\delta^{n})^2}{(1+k_{a}^{n}/\delta^{n}+k_{i}^{n}/\delta^{n})(k_{a}^{n}/\delta^{n}+k_{i}^{n}/\delta^{n})}.
+$$
 
-Taken together these results suggest that under our promoter-switching model, increasing the expression of a gene comes at the cost of increasing the variance of its expression, and that the greatest contributor to this variance comes from the normalized active promoter transcription rate v0n / δn . The parameter changes we observe in DUX4 target genes, suggest a management of this trade-off by DUX4, which increases the mean expression of target mRNA through a large increase in the proportion of time the promoter is active, kankan+kin, while offsetting the resulting rise in variance through a modest decrease in normalized active promotor transcription v0n/δn (Figure 3F).
+This expression ensures that as the mean mRNA copy number rises, so too must the variance, however, the level to which the variance rises is controlled by a term that is monotonic increasing in $v_{0}^{n}/\delta^{n}$ and depends on the promoter state parameters in a more complex way.
 
-We formulate the mean transcription rate of at least 1 of the 8 DUX4 targets from our compartment model, VT, as the sum of the mean transcription rates of all eight target genes in the presence of DUX4 mRNA, i.e.,:VT≔ ∑j=18kajv0jkaj+kij
+We postulated the pattern of DUX4 target gene parameter changes we observe in the presence of DUX4, have the effect of raising mean target mRNA expression, while suppressing target mRNA variance, i.e., a controlled activation of target genes. To investigate this, we considered two hypothetical scenarios in which the mean expression of target mRNAs, $Em$ in the absence of DUX4, is increased to the same level we observe in the presence of DUX4. In the first scenario, we considered only increasing $v_{0}^{n}$ / $\delta^{n}$ to achieve the rise in $Em$ , in the second we considered only increasing the ratio of active to inactive promotor $\frac{k_{a}^{n}}{k_{i}^{n}}$. Both hypothetical scenarios resulted in a significantly higher variance of target mRNA than observed in our data, with the pure rise in $v_{0}^{n}/\delta^{n}$ driving the most dramatic increase in target mRNA variance (Figure 3E).
 
-where j indexes the eight DUX4 target genes, and the promoter-switching model parameters are estimated from the 27 DUX4 expressing FSHD single myocytes. Our promoter-switching model scRNAseq-derived MLEs are normalized parameters kan/δn, kin/δn and v0n/δn. We must, therefore, estimate δn for each target gene to compute VT . As there is a range of target genes, we approximate δn for each by the median mRNA degradation rate observed in an analysis of 5245 genes (Yang et al., 2003), and set δn=0.0693 resulting in VT=6.41/hr (Figure 3G).
+Taken together these results suggest that under our promoter-switching model, increasing the expression of a gene comes at the cost of increasing the variance of its expression, and that the greatest contributor to this variance comes from the normalized active promoter transcription rate $v_{0}^{n}$ / $\delta^{n}$ . The parameter changes we observe in DUX4 target genes, suggest a management of this trade-off by DUX4, which increases the mean expression of target mRNA through a large increase in the proportion of time the promoter is active, $\frac{k_{a}^{n}}{k_{a}^{n}+k_{i}^{n}}$, while offsetting the resulting rise in variance through a modest decrease in normalized active promotor transcription $v_{0}^{n}/\delta^{n}$ (Figure 3F).
 
-As with our calculation of VD data was pooled across four FSHD patients to calculate VT . We do not anticipate patient genotype to impact the average DUX4 target transcription rate, independently of its impact on the DUX4 transcription rate. However, to confirm our findings on the impact of DUX4 on target gene promoter dynamics, in a patient-specific setting, we attempted calculation of the parameters underlying the promoter switching model for the eight DUX4 target genes in DUX4 +ve and DUX4-ve cells, for patients FSHD1.1 and FSHD2.1 separately. Due to the limited number of cells for each patient, personalised estimates for all eight target genes could not be obtained. However, where patient-specific estimates have obtained the direction of parameter differences in target genes, between DUX4 +ve and DUX4 -ve cells were in line with those of pooled estimates across four FSHD patients (Supplementary file 2).
+We formulate the mean transcription rate of at least 1 of the 8 DUX4 targets from our compartment model, $V_{T}$, as the sum of the mean transcription rates of all eight target genes in the presence of DUX4 mRNA, i.e.,:
 
-The remaining two parameters of our compartment model were calculated from published data. For the translation rate of DUX4 mRNA to active protein TD , we considered our analysis of iDUX4 myoblasts (Ganassi et al., 2022). We induced DUX4 expression with 250 ng/ml doxycycline and performed RT-qPCR to assess the expression of DUX4, and 3/8 of our DUX4 target genes ZSCAN4, TRIM43, and PRAMEF1, at 7 hr, 16 hr, and 24 hr of induction. DUX4 mRNA levels peaked at 7 hr, while the expression of DUX4 target genes peaked between 16 and 24 hr (Ganassi et al., 2022). This suggests a delay between DUX4 mRNA production and the presence of active DUX4 protein of between 9 and 17 hr, on average 13 hr. We thus estimate TD=113/hr.
+$$
+V_{T}≔ \sumj=18\frac{k_{a}^{j}v_{0}^{j}}{k_{a}^{j}+k_{i}^{j}}
+$$
 
-For the death rate of DUX4 target positive cells, Dr , we consider the data of Rickard et al., 2015, in which differentiating FSHD myoblasts containing a DUX4-activated GFP reporter were imaged every 15 min for 120 hr. Following activation of the DUX4 reporter, cells died ~20.2 hr later (Rickard et al., 2015). We thus estimate Dr=120.2/hr.
+where $j$ indexes the eight DUX4 target genes, and the promoter-switching model parameters are estimated from the 27 DUX4 expressing FSHD single myocytes. Our promoter-switching model scRNAseq-derived MLEs are normalized parameters $k_{a}^{n}/\delta^{n}, k_{i}^{n}/\delta^{n}$ and $v_{0}^{n}/\delta^{n}$. We must, therefore, estimate $\delta^{n}$ for each target gene to compute $V_{T}$ . As there is a range of target genes, we approximate $\delta^{n}$ for each by the median mRNA degradation rate observed in an analysis of 5245 genes (Yang et al., 2003), and set $\delta^{n}=0.0693$ resulting in $V_{T}=6.41/hr$ (Figure 3G).
 
-## Compartment model simulation
+As with our calculation of $V_{D}$ data was pooled across four FSHD patients to calculate $V_{T}$ . We do not anticipate patient genotype to impact the average DUX4 target transcription rate, independently of its impact on the DUX4 transcription rate. However, to confirm our findings on the impact of DUX4 on target gene promoter dynamics, in a patient-specific setting, we attempted calculation of the parameters underlying the promoter switching model for the eight DUX4 target genes in DUX4 +ve and DUX4-ve cells, for patients FSHD1.1 and FSHD2.1 separately. Due to the limited number of cells for each patient, personalised estimates for all eight target genes could not be obtained. However, where patient-specific estimates have obtained the direction of parameter differences in target genes, between DUX4 +ve and DUX4 -ve cells were in line with those of pooled estimates across four FSHD patients (Supplementary file 2).
+
+The remaining two parameters of our compartment model were calculated from published data. For the translation rate of DUX4 mRNA to active protein $T_{D}$ , we considered our analysis of iDUX4 myoblasts (Ganassi et al., 2022). We induced DUX4 expression with 250 ng/ml doxycycline and performed RT-qPCR to assess the expression of DUX4, and 3/8 of our DUX4 target genes ZSCAN4, TRIM43, and PRAMEF1, at 7 hr, 16 hr, and 24 hr of induction. DUX4 mRNA levels peaked at 7 hr, while the expression of DUX4 target genes peaked between 16 and 24 hr (Ganassi et al., 2022). This suggests a delay between DUX4 mRNA production and the presence of active DUX4 protein of between 9 and 17 hr, on average 13 hr. We thus estimate $T_{D}=\frac{1}{13}/hr$.
+
+For the death rate of DUX4 target positive cells, $D_{r}$ , we consider the data of Rickard et al., 2015, in which differentiating FSHD myoblasts containing a DUX4-activated GFP reporter were imaged every 15 min for 120 hr. Following activation of the DUX4 reporter, cells died ~20.2 hr later (Rickard et al., 2015). We thus estimate $D_{r}=\frac{1}{20.2}/hr$.
+
+### Compartment model simulation
 
 Having defined experimental estimates for parameters underlying the compartment model, we simulated the model forward in time to observe how an initial distribution of cells progresses through the five compartments.
 
-To provide a ground truth we considered the scRNAseq data of van den Heuvel et al., 2019. Defining a DUX4 target gene +ve cell as expressing at least one of our eight DUX4 target genes, we assign the 5133 FSHD myocytes to 1 of the 4 live cell states of our compartment model: S(3 days)=4956 (96.6%),E(3 days)=14(0.273%), I3 days=13 (0.253%), R3 days=150 (2.92%).
+To provide a ground truth we considered the scRNAseq data of van den Heuvel et al., 2019. Defining a DUX4 target gene +ve cell as expressing at least one of our eight DUX4 target genes, we assign the 5133 FSHD myocytes to 1 of the 4 live cell states of our compartment model: $S(3 days)=4956 (96.6%),E(3 days)=14(0.273%),$ $I3 days=13 (0.253%)$, $R3 days=150 (2.92%)$.
 
-If we assume that at the start of differentiation, all FSHD myocytes occupy state S0 being DUX4 negative and DUX4 target gene negative, simulating our model we estimated that 7% of starting cells will have died over 3 days. To replicate the starting conditions of the scRNAseq data we thus set S0=5133(1+0.07)=5488, E0=I0=R0=D0=0. Simulating our model over 3 days from this starting condition, we obtained cell state proportions statistically indistinguishable from the experimental scRNAseq data: S(3 days)=4953 (96.5%),E(3 days)=14(0.253%), I3 days=25 (0.487%), R3 days=116 (2.26%) (Chi-Squared p=0.99, Figure 4A).
+If we assume that at the start of differentiation, all FSHD myocytes occupy state $S0 being$ DUX4 negative and DUX4 target gene negative, simulating our model we estimated that 7% of starting cells will have died over 3 days. To replicate the starting conditions of the scRNAseq data we thus set $S0=5133(1+0.07)=5488$, $E0=I0=R0=D0=0$. Simulating our model over 3 days from this starting condition, we obtained cell state proportions statistically indistinguishable from the experimental scRNAseq data: $S(3 days)=4953 (96.5%),E(3 days)=14(0.253%),$ $I3 days=25 (0.487%)$, $R3 days=116 (2.26%)$ (Chi-Squared p=0.99, Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88345/elife-88345-fig4-v2.jpg)
 
 **Figure 4.:** (A) Bar chart displays the number of cells in each live cell compartment (blue) in our model following simulation over 3 days using experimentally estimated parameters and (red) in 5133 single FSHD myocytes. A Chi-squared goodness of fit p-value tests the alternate hypothesis that the two distributions are different. (B) Line plot displaying how the number of cells in each of the five compartments of the model changes over 100 days from a starting state of 5133 (1+0.07) cells. The percentage of cells dead after 10 days is displayed alongside the maximum percentage of live cells which are DUX4 +ve (E+I)max and DUX4 target gene +ve (R+I)max.
 
-We next simulated our model forward over 100 days to observe how the proportion of cells in each state changed (Figure 4B). As expected, the number of cells in the DUX4 naive, susceptible state S(t) gradually decreased, while the number of dead cells due to DUX4 D(t) gradually rose, so that after 10 days 26.3% of cells had died as a consequence of DUX4 expression. Remarkably despite cell death in our model only being attributable to DUX4 expression, the dynamics predict that this is achieved while keeping the number of DUX4 mRNA and DUX4 target mRNA positive cells extremely low. DUX4 positive cells never rose to more than 0.8% of the live cell population and DUX4 target positive cells never more than 2.9%.
+We next simulated our model forward over 100 days to observe how the proportion of cells in each state changed (Figure 4B). As expected, the number of cells in the DUX4 naive, susceptible state $S(t)$ gradually decreased, while the number of dead cells due to DUX4 $D(t)$ gradually rose, so that after 10 days 26.3% of cells had died as a consequence of DUX4 expression. Remarkably despite cell death in our model only being attributable to DUX4 expression, the dynamics predict that this is achieved while keeping the number of DUX4 mRNA and DUX4 target mRNA positive cells extremely low. DUX4 positive cells never rose to more than 0.8% of the live cell population and DUX4 target positive cells never more than 2.9%.
 
 Our compartment model with experimentally derived parameters thus provides an excellent fit to real-world data and gives a mechanism for how extremely low levels of DUX4 and target gene expression can drive significant cell death in FSHD myocytes.
 
-## Modeling DUX4 expression in FSHD myotubes allows syncytial diffusion
+### Modeling DUX4 expression in FSHD myotubes allows syncytial diffusion
 
-Having considered scRNAseq data of unfused FSHD myocytes differentiated for 3 days, in which DUX4 expressed in a given nucleus cannot interact with other nuclei, we next considered syncytial diffusion of DUX4. Jiang et al., 2020 published a single myonuclear RNAseq (snRNAseq) of FSHD2 myoblasts differentiated over 3 days to form multinucleated myotubes. The data describes 139 FSHD2 myonuclei and 76 control myonuclei. As with the scRNAseq data van den Heuvel et al., 2019, none of the control myonuclei express DUX4 nor any of the 8 DUX4 target genes. For FSHD myonuclei, 3/139 (2.2%) express DUX4. The number of myonuclei in each of the live ‘cell’ compartments of our model is: S(3 days)=58 (41.7%),E(3 days)=0(0%), I3 days=3 (2.2%), R3 days=78 (56.1%).
+Having considered scRNAseq data of unfused FSHD myocytes differentiated for 3 days, in which DUX4 expressed in a given nucleus cannot interact with other nuclei, we next considered syncytial diffusion of DUX4. Jiang et al., 2020 published a single myonuclear RNAseq (snRNAseq) of FSHD2 myoblasts differentiated over 3 days to form multinucleated myotubes. The data describes 139 FSHD2 myonuclei and 76 control myonuclei. As with the scRNAseq data van den Heuvel et al., 2019, none of the control myonuclei express DUX4 nor any of the 8 DUX4 target genes. For FSHD myonuclei, 3/139 (2.2%) express DUX4. The number of myonuclei in each of the live ‘cell’ compartments of our model is: $S(3 days)=58 (41.7%),E(3 days)=0(0%)$, $I3 days=3 (2.2%)$, $R3 days=78 (56.1%).$
 
 Comparing the proportions of myonuclei (cells) assigned to the four live states of our compartment model in the unfused FSHD scRNAseq and syncytial FSHD snRNAseq datasets, we found significant differences in the distributions (Chi-Squared p<2.2 × 10–16, Figure 5A). The unfused FSHD myocytes demonstrated a higher proportion of DUX4 -ve, DUX4 target gene -ve susceptible (S) cells, while the syncytial FSHD myonuclei demonstrated a greater proportion of DUX4 -ve, DUX4 target gene +ve resigned (R) cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88345/elife-88345-fig5-v2.jpg)
 
-**Figure 5.:** (A) Bar chart displays the proportion of cells in each live compartment of our model in (pink) 5133 unfused FSHD single myocytes from van den Heuvel et al., 2019 and (dark red) 139 fused FSHD single myonuclei of Jiang et al., 2020. A Chi-squared goodness of fit p-value tests the alternate hypothesis that the two distributions are different. (B) Schematic of the syncytial compartment model, allowing DUX4 protein permissive states I and R, to ‘infect’ non-permissive states S and E. (C) Ordinary differential equations describing the syncytial compartment model. (D) Schematic of the genetic algorithm employed to estimate the DUX4 diffusion rate Δ and the starting population size  for the syncytial compartment model from 139 fused FSHD single myonuclei. (n,E) Bar chart displays the number of cells in each live cell compartment (blue) in our syncytial compartment model following simulation over 2 days using experimentally estimated parameters and (red) in 139 fused single FSHD myonuclei. A Chi-squared goodness of fit p-value tests the alternate hypothesis that the two distributions are different. (F) Line plot displaying how the number of cells in each of the five compartments of the syncytial compartment model changes over 100 days from a starting state of  cells. The percentage of cells dead after 10 days is displayed alongside the maximum percentage of live cells which are DUX4 +ve (E+I)nmax and DUX4 target gene +ve (R+I)max.
+**Figure 5.:** (A) Bar chart displays the proportion of cells in each live compartment of our model in (pink) 5133 unfused FSHD single myocytes from van den Heuvel et al., 2019 and (dark red) 139 fused FSHD single myonuclei of Jiang et al., 2020. A Chi-squared goodness of fit p-value tests the alternate hypothesis that the two distributions are different. (B) Schematic of the syncytial compartment model, allowing DUX4 protein permissive states I and R, to ‘infect’ non-permissive states S and E. (C) Ordinary differential equations describing the syncytial compartment model. (D) Schematic of the genetic algorithm employed to estimate the DUX4 diffusion rate Δ and the starting population size $n,$ for the syncytial compartment model from 139 fused FSHD single myonuclei. (E) Bar chart displays the number of cells in each live cell compartment (blue) in our syncytial compartment model following simulation over 2 days using experimentally estimated parameters and (red) in 139 fused single FSHD myonuclei. A Chi-squared goodness of fit p-value tests the alternate hypothesis that the two distributions are different. (F) Line plot displaying how the number of cells in each of the five compartments of the syncytial compartment model changes over 100 days from a starting state of $n$ cells. The percentage of cells dead after 10 days is displayed alongside the maximum percentage of live cells which are DUX4 +ve (E+I)max and DUX4 target gene +ve (R+I)max.
 
-We investigated whether allowing diffusion of DUX4 protein between myonuclei in our model could explain this difference in proportions. Two states in our compartment model express DUX4 target genes and thus have evidence for DUX4 protein: It and Rt , while states St, and Et do not. We updated our model to the syncytial compartment model, where we allow the DUX4 protein compatible states to ‘infect’ the DUX4 protein incompatible states at a rate Δ (Figure 5B and C).
+We investigated whether allowing diffusion of DUX4 protein between myonuclei in our model could explain this difference in proportions. Two states in our compartment model express DUX4 target genes and thus have evidence for DUX4 protein: $It$ and $Rt$ , while states $St$, and $Et$ do not. We updated our model to the syncytial compartment model, where we allow the DUX4 protein compatible states to ‘infect’ the DUX4 protein incompatible states at a rate Δ (Figure 5B and C).
 
 The term ‘infect’ is only an analogy and our model is not based on a direct mapping of e.g., viral infection to our setting. In our case, the ‘infectious agent’ DUX4 causes harm but does not replicate. DUX4 protein is a transcription factor and thus activates the expression of target genes. In our model, DUX4 can be seen as an ‘infectious agent’, and expression of DUX4 target genes can be seen as the ‘infection’, which leads to cell death. DUX4 can either stay in the ‘infected’ cell until it dies or diffuse to another cell to spread the ‘infection’.
 
-We next employed a genetic algorithm to fit our syncytial compartment model to the snRNAseq data (Jiang et al., 2020). As differentiating FSHD myoblasts take approximately 24 hr to initiate fusion (Banerji et al., 2019), and DUX4 expressing cells show defects in fusion (Knopp et al., 2016), we assumed that day 3 of differentiation represents day 2 of syncytial myonuclei and simulated our model over 48 hr, from a starting state of S0=n, E0=I0=R0=0. We optimized two parameters via our genetic algorithm: the DUX4 syncytial diffusion rate Δ, and the number of starting myonuclei in the susceptible state n (Figure 5D).
+We next employed a genetic algorithm to fit our syncytial compartment model to the snRNAseq data (Jiang et al., 2020). As differentiating FSHD myoblasts take approximately 24 hr to initiate fusion (Banerji et al., 2019), and DUX4 expressing cells show defects in fusion (Knopp et al., 2016), we assumed that day 3 of differentiation represents day 2 of syncytial myonuclei and simulated our model over 48 hr, from a starting state of $S0=n, E0=I0=R0=0$. We optimized two parameters via our genetic algorithm: the DUX4 syncytial diffusion rate Δ, and the number of starting myonuclei in the susceptible state $n$ (Figure 5D).
 
-The algorithm converged on a solution of n=217 susceptible myonuclei and Δ = 7.46 × 10–4 / hr. Simulating the syncytial compartment model over 2 days employing these parameters resulted in a statistically indistinguishable approximation to the snRNAseq data (Jiang et al., 2020): S(3 days)=62 (44.6%),E(3 days)=0(0%),  I3 days=1 (0.720%), R3 days=76 (54.7%), (Chi-Squared p=0.99, Figure 5E). Thus differences in proportions of cell states in fused versus unfused myocytes can be explained by the addition of a diffusion term for DUX4 protein, within the limits of the assumptions of our model.
+The algorithm converged on a solution of $n=217$ susceptible myonuclei and Δ = 7.46 × 10–4 / hr. Simulating the syncytial compartment model over 2 days employing these parameters resulted in a statistically indistinguishable approximation to the snRNAseq data (Jiang et al., 2020): $S(3 days)=62 (44.6%),E(3 days)=0(0%),$  $I3 days=1 (0.720%)$, $R3 days=76 (54.7%)$, (Chi-Squared p=0.99, Figure 5E). Thus differences in proportions of cell states in fused versus unfused myocytes can be explained by the addition of a diffusion term for DUX4 protein, within the limits of the assumptions of our model.
 
 Simulating the syncytial compartment model over 100 days, we found a much faster death rate than the unfused myocyte model, with 97% of myonuclei dead by day 10. DUX4 mRNA-expressing cells remain low in proportion, never exceeding 0.8% of total live nuclei, however, DUX4 target gene mRNA expressing cells can now comprise a significant proportion of living nuclei, up to 70% at 73 hr, though on average comprise only 5.6% of living nuclei (Figure 5F).
 
-## A cellular automaton model of FSHD myotubes
+### A cellular automaton model of FSHD myotubes
 
 A limitation of our syncytial compartment model is the assumption that any DUX4 protein-positive myonucleus can ‘infect’ any DUX4 protein-negative myonucleus. In practice, DUX4 can likely only spread between adjacent myonuclei in a short-range interaction (Rickard et al., 2015; Tassin et al., 2013). To overcome this limitation, we re-cast our compartment model as a cellular automaton.
 
@@ -164,21 +176,21 @@ In this grid-based model, squares on the grid represent myonuclei, by introducin
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88345/elife-88345-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic demonstrating how with suitable boundary conditions a grid can be topologically equivalent to a cylinder, and thus encapsulate dynamics on the surface of a myofiber. (B) Schematic of the cellular automaton model of DUX4 expression in a syncytium with grid squares representing single myonuclei updating in 1 hr time-steps via a two-stage process. (C) Schematic of the genetic algorithm employed to estimate the DUX4 diffusion rate Δ, myotube length , and myotube circumference l for the cellular automaton model from 139 fused FSHD single myonuclei. (cD) Heatmap displays the clustering solution of the 100 optimal parameter regimes  and Δ produced by fitting 100 genetic algorithms to 139 fused FSHD myonuclei. The highlighted cluster represents a parameter regime in which myotubes are long and thin, the average parameter values of this cluster are displayed in red. (l,cE) Bar chart displays the average proportion of cells in each live cell compartment (blue) in our cellular automaton model following simulation over 2 days using experimentally estimated parameters, alongside standard error of the mean, and (red) in 139 fused single FSHD myonuclei. A Chi-squared goodness of fit p-value tests the alternate hypothesis that the two distributions are different.
+**Figure 6.:** (A) Schematic demonstrating how with suitable boundary conditions a grid can be topologically equivalent to a cylinder, and thus encapsulate dynamics on the surface of a myofiber. (B) Schematic of the cellular automaton model of DUX4 expression in a syncytium with grid squares representing single myonuclei updating in 1 hr time-steps via a two-stage process. (C) Schematic of the genetic algorithm employed to estimate the DUX4 diffusion rate Δ, myotube length $l$, and myotube circumference $c$ for the cellular automaton model from 139 fused FSHD single myonuclei. (D) Heatmap displays the clustering solution of the 100 optimal parameter regimes $l,c$ and Δ produced by fitting 100 genetic algorithms to 139 fused FSHD myonuclei. The highlighted cluster represents a parameter regime in which myotubes are long and thin, the average parameter values of this cluster are displayed in red. (E) Bar chart displays the average proportion of cells in each live cell compartment (blue) in our cellular automaton model following simulation over 2 days using experimentally estimated parameters, alongside standard error of the mean, and (red) in 139 fused single FSHD myonuclei. A Chi-squared goodness of fit p-value tests the alternate hypothesis that the two distributions are different.
 
-We evolved our cellular automaton forwards in time in two steps. First, the non-syncytial compartment model was applied to each myonucleus to update the internal state of each nucleus stochastically according to the experimentally derived transition rates and the time period that has elapsed. In the second step, myonuclei in DUX4 protein-compatible states It and Rt can ‘infect’ any of the eight neighbouring myonuclei in the grid which are in states St or Et at a stochastic rate Δ (Figure 6B). Our cellular automaton model, thus retains all features of the compartment model, but facilitates a more realistic topology for a muscle fiber and prevents DUX4 protein from engaging in long-range non-physiological interactions.
+We evolved our cellular automaton forwards in time in two steps. First, the non-syncytial compartment model was applied to each myonucleus to update the internal state of each nucleus stochastically according to the experimentally derived transition rates and the time period that has elapsed. In the second step, myonuclei in DUX4 protein-compatible states $It$ and $Rt$ can ‘infect’ any of the eight neighbouring myonuclei in the grid which are in states $St$ or $Et$ at a stochastic rate Δ (Figure 6B). Our cellular automaton model, thus retains all features of the compartment model, but facilitates a more realistic topology for a muscle fiber and prevents DUX4 protein from engaging in long-range non-physiological interactions.
 
-We next employed a genetic algorithm to fit the cellular automaton to the syncytial snRNAseq data (Jiang et al., 2020). We again assumed that day 3 of differentiation corresponds to day 2 of syncytial myotubes and simulate our model over 48 hr, in time steps of 1 hr, from a starting state of S0=n, E0=I0=R0=0. However, we now optimized three parameters: the DUX4 local diffusion rate Δ, the myotube nuclear length l and the myotube nuclear circumference c, where n=lc.
+We next employed a genetic algorithm to fit the cellular automaton to the syncytial snRNAseq data (Jiang et al., 2020). We again assumed that day 3 of differentiation corresponds to day 2 of syncytial myotubes and simulate our model over 48 hr, in time steps of 1 hr, from a starting state of $S0=n, E0=I0=R0=0$. However, we now optimized three parameters: the DUX4 local diffusion rate Δ, the myotube nuclear length $l$ and the myotube nuclear circumference $c$, where $n=lc$.
 
-As the cellular automaton model is stochastic due to the discrete time steps employed, one cannot expect the same set of parameters to yield the same distribution of cell states after 48 hr of simulation. Thus the solution of a genetic algorithm may represent a parameter regime optimal for replicating the snRNAseq data, or may represent an unlikely realization of a parameter regime sub-optimal for replicating the data. To overcome this limitation we implemented 100 genetic algorithms to obtain a ‘family’ of parameter values Δ and c, which underlie potentially optimal solutions (Figure 6C).
+As the cellular automaton model is stochastic due to the discrete time steps employed, one cannot expect the same set of parameters to yield the same distribution of cell states after 48 hr of simulation. Thus the solution of a genetic algorithm may represent a parameter regime optimal for replicating the snRNAseq data, or may represent an unlikely realization of a parameter regime sub-optimal for replicating the data. To overcome this limitation we implemented 100 genetic algorithms to obtain a ‘family’ of parameter values Δ and $c$, which underlie potentially optimal solutions (Figure 6C).
 
-We performed a clustering analysis of the 100 optimal solutions, employing the parameter values Δ, l and c as a feature space. This revealed that a cluster of 14 solutions has significantly greater myotube length than circumference (Wilcoxon p=5.0 × 10–8). This implies that for these 14 solutions, the genetic algorithm has converged to the general structure of a muscle fiber cylinder (long and thin). We focused on the mean parameter values of this cluster as the most physiologically realistic solution: Δ=0.0402/hr , l=44 myonuclei, and  c = 9 myonuclei (Figure 6D).
+We performed a clustering analysis of the 100 optimal solutions, employing the parameter values Δ, l and $c$ as a feature space. This revealed that a cluster of 14 solutions has significantly greater myotube length than circumference (Wilcoxon p=5.0 × 10–8). This implies that for these 14 solutions, the genetic algorithm has converged to the general structure of a muscle fiber cylinder (long and thin). We focused on the mean parameter values of this cluster as the most physiologically realistic solution: Δ=0.0402/hr $, l=44$ myonuclei, and  $c$ = 9 myonuclei (Figure 6D).
 
 Simulating the cellular automaton model 100 times with this parameter range over 48 hr resulted on average in a statistically indistinguishable approximation of the snRNAseq syncytial FSHD myonuclei state distribution (Chi-squared p=0.98, Figure 6E).
 
 Thus after restricting DUX4 protein from spreading to only neighboring nuclei, we were still able to explain the difference between unfused and fused cell state distributions purely with a diffusion term for DUX4 protein.
 
-## A toolbox for assessing the impact of therapies on DUX4-mediated myotoxicity
+### A toolbox for assessing the impact of therapies on DUX4-mediated myotoxicity
 
 Anti-DUX4 therapy for FSHD can target any aspect of DUX4 expression. To understand the impact of a given therapeutic strategy one requires two key pieces of information:
 
@@ -186,11 +198,11 @@ Here, we have derived experimental estimates for the parameters underlying DUX4 
 
 To facilitate other investigators using our models to guide anti-DUX4 therapy development, we have packaged them into graphical user interfaces to provide three user-friendly tools.
 
-The first tool allows investigators to visualize the compartment model and syncytial version, for a range of parameter choices. Sliders allow the investigator to perturb the six parameters of our models: VD , d0, VT, TD, Dr, and Δ, and outputs the temporal evolution of the models over as many hours as required, from any starting number of susceptible cells/nuclei, as well as histograms comparing the perturbed model to the experimental data of van den Heuvel et al., 2019 and Jiang et al., 2020.
+The first tool allows investigators to visualize the compartment model and syncytial version, for a range of parameter choices. Sliders allow the investigator to perturb the six parameters of our models: $V_{D}$ , $d_{0}, V_{T}, T_{D}, D_{r}$, and Δ, and outputs the temporal evolution of the models over as many hours as required, from any starting number of susceptible cells/nuclei, as well as histograms comparing the perturbed model to the experimental data of van den Heuvel et al., 2019 and Jiang et al., 2020.
 
-The second tool implements the cellular automaton model of DUX4 in a syncytium. As with the first tool users can employ sliders to perturb the 6 parameters of the model VD , d0, VT, TD, Dr, and Δ, as well as the dimensions of the myofiber grid l and c, and the number of hours over which the automaton should be simulated. The automaton can then be started and the nuclear state updates will be dynamically played on a grid, while a histogram dynamically updates the proportions of nuclei in each state.
+The second tool implements the cellular automaton model of DUX4 in a syncytium. As with the first tool users can employ sliders to perturb the 6 parameters of the model $V_{D}$ , $d_{0}, V_{T}, T_{D}, D_{r}$, and Δ, as well as the dimensions of the myofiber grid $l$ and $c$, and the number of hours over which the automaton should be simulated. The automaton can then be started and the nuclear state updates will be dynamically played on a grid, while a histogram dynamically updates the proportions of nuclei in each state.
 
-The final tool allows investigators to compare dead cell proportions over time for a chosen parameter regime ((VD) , d0, VT, TD, Dr, and ∆, l and c), with cell death under our experimentally derived parameters. Users can again select their parameter regime and dynamically view changes in dead cell proportions under the single cell compartment model, to simulate realizations of the cellular automaton model and perform comparisons of cell death via Cox proportional hazard models.
+The final tool allows investigators to compare dead cell proportions over time for a chosen parameter regime ($(V_{D})$ , $d_{0}, V_{T}, T_{D}, D_{r}$, and $\Delta, l$ and $c$), with cell death under our experimentally derived parameters. Users can again select their parameter regime and dynamically view changes in dead cell proportions under the single cell compartment model, to simulate realizations of the cellular automaton model and perform comparisons of cell death via Cox proportional hazard models.
 
 The tools are hosted at the following web addresses:
 
@@ -206,7 +218,7 @@ As with all models, ours are subject to assumptions, such as combining the multi
 
 We also limited our model to differentiated muscle culture, when DUX4 expression is more robust. DUX4 mRNA is typically detected in a small proportion (0.5–3.8%) of FSHD myoblasts in vitro (Jiang et al., 2020; van den Heuvel et al., 2019; Banerji and Zammit, 2019), and protein expression is similarly rare (0.1%) (Snider et al., 2010). The situation is qualitatively different in FSHD muscle biopsies, where DUX4 mRNA detection is highly variable and DUX4 protein detection is extremely rare. DUX4 target gene expression is detected in inflamed FSHD muscle biopsies but less robustly in non-inflamed muscle, implying that a systemic component may also activate DUX4 expression in vivo (Banerji and Zammit, 2021; Banerji, 2020; Banerji et al., 2020b). Despite the added complexity of DUX4 expression in the muscle biopsy setting, all anti-DUX4 therapies currently under consideration were first investigated in myogenic cells in vitro. Thus, it is encouraging that we can simulate DUX4 and target gene expression single-cell distributions which are indistinguishable from those observed in FSHD patient muscle cell culture. Through theoretical investigation, we can also explore processes such as DUX4 protein syncytial diffusion and DUX4 target gene activation, which may be less accessible to experimentation.
 
-FSHD is a rare disease and public datasets describing scRNAseq and snRNAseq of patient-derived primary myocytes are currently limited to those used in this study. Consequently, we have pooled data describing 4 individual patients of different FSHD genotypes to estimate two of the parameters of our model: VT and VD . DUX4 expression levels depend on D4Z4 repeat length and methylation status, and can differ between cell lines isolated from different FSHD patients (Jones et al., 2012; Homma et al., 2012), as well as between genetically identical cell lines isolated from the same mosaic FSHD patient (Krom et al., 2012). We computed patient-specific estimates of VD for 2/4 patients with sufficient data and found these comparable to the pooled estimate. By pooling patients, we obtained parameter estimates that may not be true for an individual but represented the ‘average’ parameter values across these four FSHD patients. Our in silico model of DUX4 expression is proposed as a pre- in vitro screening tool to guide anti-DUX4 therapy for the general population. However, as more data on FSHD is generated our models will evolve. In particular, as higher volumes of scRNAseq data describing FSHD patients with different genotypes become available, the model can be updated to facilitate genotype-stratified and even personalized anti-DUX4 therapy design. Moreover, new data describing scRNAseq of proliferating FSHD primary myoblasts, alongside quantification of how DUX4 and DUX4 target gene expression impacts myoblast proliferation rates, would allow natural extension of our model to understand DUX4 expression during FSHD myoblast proliferation.
+FSHD is a rare disease and public datasets describing scRNAseq and snRNAseq of patient-derived primary myocytes are currently limited to those used in this study. Consequently, we have pooled data describing 4 individual patients of different FSHD genotypes to estimate two of the parameters of our model: $V_{T}$ and $V_{D}$ . DUX4 expression levels depend on D4Z4 repeat length and methylation status, and can differ between cell lines isolated from different FSHD patients (Jones et al., 2012; Homma et al., 2012), as well as between genetically identical cell lines isolated from the same mosaic FSHD patient (Krom et al., 2012). We computed patient-specific estimates of $V_{D}$ for 2/4 patients with sufficient data and found these comparable to the pooled estimate. By pooling patients, we obtained parameter estimates that may not be true for an individual but represented the ‘average’ parameter values across these four FSHD patients. Our in silico model of DUX4 expression is proposed as a pre- in vitro screening tool to guide anti-DUX4 therapy for the general population. However, as more data on FSHD is generated our models will evolve. In particular, as higher volumes of scRNAseq data describing FSHD patients with different genotypes become available, the model can be updated to facilitate genotype-stratified and even personalized anti-DUX4 therapy design. Moreover, new data describing scRNAseq of proliferating FSHD primary myoblasts, alongside quantification of how DUX4 and DUX4 target gene expression impacts myoblast proliferation rates, would allow natural extension of our model to understand DUX4 expression during FSHD myoblast proliferation.
 
 DUX4 is myotoxic (Kowaljow et al., 2007), but how its rare expression drives and sustains significant pathology is unclear. DUX4 has been proposed to undergo a rare burst-like expression dynamic (Bosnakovski et al., 2017; Tassin et al., 2013), though no attempt has previously been made to understand DUX4 expression as a stochastic process. Here, we model DUX4 and its target gene expression directly as stochastic processes via our promoter-switching model and estimate the underlying parameters. Our cell-biology informed model predicts that in single FSHD myocytes/myotubes, DUX4 can drive significant cell death, eventually depleting the entire population, while being expressed in only 0.8% of live cells. This level matches well with the proportion of DUX4-positive cells seen in published studies (Banerji and Zammit, 2021; van den Heuvel et al., 2019; Snider et al., 2010) and confirms that a burst-like mechanism of DUX4 expression can drive significant pathology while making DUX4 difficult to detect.
 
@@ -220,25 +232,95 @@ We thus present our model of DUX4 expression as a theoretical setting to underst
 
 ## Methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>LHCN-M2-iDUX4</td>
+      <td>10.1038/s41598-018-35150-8</td>
+      <td></td>
+      <td>Immortalized doxycycline-inducible DUX4 expressing human myoblast cell line</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DUX4 Fwd</td>
+      <td>10.1038/s41598-018-35150-8</td>
+      <td>qPCR pimer</td>
+      <td>ACCTCTCCTAGAAACGGAGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DUX4 Rev</td>
+      <td>10.1038/s41598-018-35150-8</td>
+      <td>qPCR primer</td>
+      <td>CAGCAGAGCCCGGTATTCTTC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quantitect reverse transcription kit</td>
+      <td>Qiagen, 205311</td>
+      <td>RT-kit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Takyon SYBR Green qPCR Mastermix</td>
+      <td>UF-NSMT-B101</td>
+      <td>qPCR Mastermix</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 DUX4 inducible immortalized human myoblasts LHCN-M2 were cultured in Promocell growth media (C-23060) supplemented with 15% FBS and 1:1000 Gentamycin (Sigma), in a humidified incubator at 5% CO2. Cells were found negative for mycoplasma contamination (MycoAlert PLUS Mycoplasma, Lonza).
 
-## RT-qPCR
+### RT-qPCR
 
 iDUX4 myoblasts were induced to express DUX4 with 250 ng/ml doxycycline for 7 hr in six-well plates, before washing with PBS and the addition of fresh medium without doxycycline. Total mRNA was isolated using the RNeasy Kit (Qiagen, 74–104) according to the manufacturer’s instructions in triplicate immediately after washing and then at 1, 2, 3, 4, 5, 6, 8, and 10 hr post-wash. After reverse transcription with the Quantitect reverse transcription kit (Qiagen, 205311), SYBR green qPCR was performed (Takyon, UF-NSMT-B101) using a Viia7machine (ThermoFisher). DUX4 primers were: Fwd ACCTCTCCTAGAAACGGAGGC, Rev CAGCAGAGCCCGGTATTCTTC.
 
-## Standard curve to compute  d0
+### Standard curve to compute  d0
 
-The length of the DUX4 construct used in our standard curve was 8938 bp and the number of copies per ng was calculated via the following formula:copy number/ng := NA8938660×10-9=1.02×109
+The length of the DUX4 construct used in our standard curve was 8938 bp and the number of copies per ng was calculated via the following formula:
 
-Where NA=6.022×1023 mol–1 is Avogadro’s number and 660 g/mol is the molecular weight of a single DNA base pair. Linear regression of the standard curve confirmed that DUX4 threshold cycles (Cts) are a linear function of log10(copy number) (R2=0.994), with a slope of 30.4 and intercept of –2.70. These values were employed to convert DUX4 Cts from our iDUX4 assay to DUX4 copy number via the following formula:copy number= 10Ct-30.4-2.70
+$$
+copy number/ng := \frac{N_{A}}{8938660\times10^{-9}}=1.02\times10^{9}
+$$
 
-In our iDUX4 assay, we sample RNA immediately after washing off doxycycline and at multiple time points post-wash. We assume that no DUX4 can be transcribed post-wash and model the DUX4 copy number as an exponential decay:DUX4 copy number=Ae- d0t;ln⁡DUX4 copy number=ln⁡A-  d0t
+Where $N_{A}=6.022\times10^{23}$ mol–1 is Avogadro’s number and 660 g/mol is the molecular weight of a single DNA base pair. Linear regression of the standard curve confirmed that DUX4 threshold cycles (Cts) are a linear function of $log_{10}(copy number)$ (R2=0.994), with a slope of 30.4 and intercept of –2.70. These values were employed to convert DUX4 Cts from our iDUX4 assay to DUX4 copy number via the following formula:
 
-Linear regression of ln⁡DUX4 copy number against time post wash (t) yielded a slope of 0.246, giving our estimate of  d0 , the degradation rate of DUX4.
+$$
+copy number= 10^{\frac{Ct-30.4}{-2.70}}
+$$
 
-## scRNAseq and snRNAseq data
+In our iDUX4 assay, we sample RNA immediately after washing off doxycycline and at multiple time points post-wash. We assume that no DUX4 can be transcribed post-wash and model the DUX4 copy number as an exponential decay:
+
+$$
+DUX4 copy number=Ae^{- d_{0}t};
+$$
+
+
+
+$$
+ln⁡DUX4 copy number=ln⁡A-  d_{0}t
+$$
+
+Linear regression of $ln⁡DUX4 copy number$ against time post wash (t) yielded a slope of 0.246, giving our estimate of $ d_{0}$ , the degradation rate of DUX4.
+
+### scRNAseq and snRNAseq data
 
 Normalized read counts for scRNAseq of 7047 FSHD and controls single myocytes produced by van den Heuvel et al., 2019 were downloaded from the GEO data base accession GSE122873. This dataset contains 5133 single myocytes derived from four FSHD patients (two FSHD1 and two FSHD2) and 1914 single myocytes from two control individuals. Myocytes were differentiated for 3 days in the presence of EGTA to prevent fusion.
 
@@ -248,86 +330,184 @@ All myocytes and myonuclei nuclei were assigned to 1 of 4 live cell compartments
 
 All control myocytes/myonuclei were in the S compartment. The distribution of the four live cell compartments in the 5133 FSHD single myocytes and the 139 days three FSHD single myonuclei were compared via a Chi-squared test, and significance was assessed at the 5% level.
 
-## Estimation of MLEs of promoter-switching model parameters from scRNAseq data
+### Estimation of MLEs of promoter-switching model parameters from scRNAseq data
 
-To calculate the transcription rate for DUX4 and DUX4 targets we adopt the approach employed by Larsson et al. and Trung et al. where a maximum likelihood estimation (MLE) methodology is used to infer the parameters for the two-state model of stochastic gene expression (Vu et al., 2016; Larsson et al., 2019). This is implemented in the poisbeta python package available at https://github.com/aksarkar/poisbeta. The procedure takes the Poisson-Beta distribution discussed in the results:p~Betakan/δn,kin/δnm|p~Poissonpv0n/δn
+To calculate the transcription rate for DUX4 and DUX4 targets we adopt the approach employed by Larsson et al. and Trung et al. where a maximum likelihood estimation (MLE) methodology is used to infer the parameters for the two-state model of stochastic gene expression (Vu et al., 2016; Larsson et al., 2019). This is implemented in the poisbeta python package available at https://github.com/aksarkar/poisbeta. The procedure takes the Poisson-Beta distribution discussed in the results:
 
-and minimizes the negative log-likelihood for each geneargmin(θ in Θ)∑i=1N−lnP(mi|θ),
+$$
+p~Betak_{a}^{n}/\delta^{n},k_{i}^{n}/\delta^{n}
+$$
 
-where p is a Beta-distributed variable describing the promotor state, N is the number of cells, mi is the number of mRNA transcripts for cell i=1,…,N, and θ = [v0n/δn,kan/δn, kin/δn], is the parameter space. From here on we will not include the normalizing δn term for brevity.
 
-As a first estimate of θ, we use the method of moments derived by Peccoud and Ycart for the two-state promotor model (Peccoud and Ycart, 1995)v0n=-r1r2+2r1r3-r2r3r1-2r2+r3,kan=2r2-r1r1-r3r3-r2r1r2-2r1r3+r2r3r1-2r2+r3,kin=2r1r3-r2r1r2-2r1r3+r2r3,
 
-wherer1=e1,r2=e2e1,r3=e3e2,
+$$
+m|p~Poissonpv_{0}^{n}/\delta^{n}
+$$
 
-ande1=1N∑i=1Nmi,e2=1N∑i=1Nmi(mi-1),e3=1N∑i=1Nmi(mi-1)(mi-2).
+and minimizes the negative log-likelihood for each gene
 
-θ is then optimized via the Nelder-Mead method using the Gauss-Jacobi quadrature to evaluate the likelihood functionl=1Beta(kan,kin)∫01Poisson(mi;v0npi)pikan-1(1-pi)kin-1 dpil=12kan+kin-1Beta(kan,kin)∫-11Poissonmi;v0n1+ti2(1+ti)kan-1(1-pi)kin-1 dtil≈12kan+kin-1Beta(kan,kin)∑k=1KwkPoisson(mi;v0nyk)
+$$
+arg_{min(\theta in Θ)}\sumi=1N−lnP(m_{i}|\theta),
+$$
 
-where pi=(ti+1)/2 to substitute the beta-distributed parameter, K is the number of points integrated over, wk is the weight of the Jacobi polynomial of degree k, and yk is the root. The optimizer, quadrature method, beta distribution, and Poisson distribution are implemented in the scipy package available from https://scipy.org/install/.
+where $p$ is a Beta-distributed variable describing the promotor state, $N$ is the number of cells, $m_{i}$ is the number of mRNA transcripts for cell $i=1,…,N$, and $\theta$ = $[v_{0}^{n}/\delta^{n},k_{a}^{n}/\delta^{n}, k_{i}^{n}/\delta^{n}]$, is the parameter space. From here on we will not include the normalizing $\delta^{n}$ term for brevity.
 
-## Statistical comparison of promoter-switching model parameters
+As a first estimate of $\theta$, we use the method of moments derived by Peccoud and Ycart for the two-state promotor model (Peccoud and Ycart, 1995)
 
-The three normalized parameters of the promoter-switching model v0n/δn,kan/δn, kin/δn , were computed as above for each of the 8 DUX4 target genes ZSCAN4, TRIM43, RFPL1, RFPL2, RFPL4B, PRAMEF1, PRAMEF2, and PRAMEF12, in the 27/5133 FSHD single myocytes with detectable DUX4 mRNA and separately in the 5106 FSHD single myocytes without detectable DUX4, in the dataset of van den Heuvel et al., 2019.
+$$
+v_{0}^{n}=\frac{-r_{1}r_{2}+2r_{1}r_{3}-r_{2}r_{3}}{r_{1}-2r_{2}+r_{3}},
+$$
 
-The normalized active promoter transcription rate v0n/δn , the proportion of time spent with a promoter active kankan+kin and the mean mRNA expression level E[m] for the eight DUX4 target genes were compared between DUX4 positive and DUX4 negative myocytes via paired two-tailed Wilcoxon tests, significance was assessed at the 5% level.
 
-## Hypothetical scenarios for raising Em under the promoter-switching model
 
-We considered two hypothetical scenarios for raising Em under the promotor-switching model to observe the impact on Varm . In the first v0nδn is increased while keeping other parameters constant. In the second kankin is increased keeping other parameters constant. Simple algebraic manipulation allows analytical solutions for the raised parameters and thus Varm .
+$$
+k_{a}^{n}=\frac{2r_{2}-r_{1}r_{1}-r_{3}r_{3}-r_{2}}{r_{1}r_{2}-2r_{1}r_{3}+r_{2}r_{3}r_{1}-2r_{2}+r_{3}},
+$$
 
-In the case of v0n/δn , we assume that v0nδn→xv0nδn for some x>1, the rise in E[m] in this case is simply:Emxv0nδn-Emv0nδn= kanv0nδnkan+kin(x-1)
 
-We can thus choose x, to achieve the rise in Em seen under DUX4 expression d(μ) as:x=1+dμkan+kinkanv0nδn
 
-Which can be substituted into the formula for Varm to compute Varmxv0nδn, giving the expected variance of the mRNA copy distribution if Em is increased by d(μ), solely by increasing v0nδn→xv0nδn for some x>1.
+$$
+k_{i}^{n}=\frac{2r_{1}r_{3}-r_{2}}{r_{1}r_{2}-2r_{1}r_{3}+r_{2}r_{3}},
+$$
 
-In the case of kankin , we assume that kankin→x kankin , we further assume that the rise in active transition rate is mirrored by a drop in the inactivation rate, i.e., the two parameters are not mutually exclusive, thus: kan→ykan and kin→1ykin , where y2=x. The rise in E[m] in this case is:Emx kankin-Emkankin=v0nkanδnxxkan+kin-1kan+kin
+where
 
-We can thus choose x, to achieve the rise in Em seen under DUX4 expression d(μ) as:x=kinEmkankin+dμkinEmkankin+dμkan
+$$
+r_{1}=e_{1},
+$$
 
-Which can be substituted into the formula for Varm to compute Varmxkankin.
 
-For each of the 8 DUX4 target genes we considered the parameters of the promoter switching model v0n/δn,kan/δn, kin/δn , computed over the 5106 DUX4 -ve FSHD single myocytes from the dataset of van den Heuvel et al., as the starting parameters to input into the above formulae for x. Comparing the mean expression of each target in the 27 DUX4 +ve myocytes and the 5106 DUX4 -ve myocytes we computed d(μ). For each target we thus computed Varmxv0nδn and Varmxkankin, the target mRNA copy number variances under our two hypothetical scenarios. These variances were compared with the true mRNA copy number variance in the 27 DUX4 +ve myocytes, as well as with each other via two-tailed paired Wilcoxon tests, significance was assessed at the 5% level.
 
-## Compartment model simulation
+$$
+r_{2}=\frac{e_{2}}{e_{1}},
+$$
 
-After the estimation of the five parameters VD , d0, VT, TD, and Dr , the ODEs underlying the compartment model (Figure 1B) were simulated from an initial state of all cells in state S(0), over a period of 100 days in timesteps of 1 hr using the deSolve package in R (Soetaert et al., 2010). For comparison with the 5133 single FSHD myocytes differentiated for 3 days described by van den Heuvel et al., 2019, an initial population sized 5133 was simulated for 3 days, after which 6.901% of starting cells were in the dead cell state. In order to replicate the live cell population of 5133 after 3 days we thus employed a starting population of 5133 (1+0.06901) cells in state S(0). After simulation for 3 days the proportion of cells in each live cell state S3 days, E3 days, I(3 days), and R3 days was compared between the model simulation and the true scRNAseq data, via a Chi-squared test.
 
-For the syncytial compartment model, simulation was performed as above with VD , d0, VT, TD, and Dr unchanged. The additional parameter Δ was estimated via the genetic algorithm (below) alongside the starting population n of cells in state S. After simulation for 2 days (as there is assumed no syncytium for the first 24 hr of fusion) the proportion of cells in each live cell state was compared between the model simulation and the true snRNAseq data of Jiang et al., 2020 via a Chi-Squared test. Significance was assessed at the 5% level.
 
-## Cellular automaton model
+$$
+r_{3}=\frac{e_{3}}{e_{2}},
+$$
 
-The cellular automaton model was evolved on an l ×c rectangular grid describing the length and circumference of the myotube. Individual cells on the grid correspond to single myonuclei in a syncytium. Each cell was evolved stochastically over a discrete time-step of 1 hr. In each time-step 2 independent actions were performed.
+and
 
-First, the state of each cell was evolved according to the non-syncytial compartment model. Transition from connected states was modeled as an exponential process with a rate parameter equal to the transition rate (e.g. transition from S to E occurred according to exp⁡(VD)). An event occurring or not under this exponential distribution within 1 hr was simulated during each time step. If the event occurred a transition in cell state occurred, otherwise the cell state remained the same. In the situation where a cell state could transition in two possible directions (e.g. state E can transition to S at a rate d0 and to I at a rate TDVT) competing exponential clocks were set up. Using the property that min⁡exp⁡A,exp⁡B~exp⁡(A+B), we simulated a transition occurring in either direction within 1 hr. If a transition occurred, we simulated the exponential clocks describing transition in either direction independently, and transitioned the cell state according to whichever experienced an event faster. If no transition occurred the cell state remained the same.
+$$
+e_{1}=\frac{1}{N}\sumi=1Nm_{i},
+$$
 
-Once every cell was evolved according to the non-syncytial compartment model we updated the model according to the diffusion of DUX4. Cells in states I or R at the start of the time-step can interact with cells in states S or E if they are among their eight immediate neighbors (Figure 6B). Each interaction was again modeled as an exponential distribution with rate Δ, which was simulated for an event occurring within 1 hr. If the event occurred then the state of the neighboring cell was updated S→I or E→R, otherwise the state of the neighboring cell remained the same.
 
-We implement a boundary condition so that cells at position 1 on the circumference dimension are able to interact with cells in position c, to allow our grid topological equivalence to a cylinder (Figure 6A).
 
-The cellular automaton model was evolved from a starting distribution of all cells in state S over 48 hr time-steps, employing the parameters VD , d0, VT, TD and Dr estimated from the non-syncytial compartment model and ∆, l and c estimated from the genetic algorithm and clustering analysis (see below). Due to the stochastic nature of the exponential clocks involved, 100 simulations were performed to obtain an average behavior of cell type proportions under our model. The proportion of cells in each of the live cell states obtained from the average behavior of our model was compared to the true snRNAseq data of Jiang et al., 2020 via a Chi-Squared test. Significance was assessed at the 5% level.
+$$
+e_{2}=\frac{1}{N}\sumi=1Nm_{i}(m_{i}-1),
+$$
 
-## Genetic algorithms
 
-We employed genetic algorithms twice, firstly in the syncytial compartment model to fit the number of myonuclei n in the starting state S and the diffusion parameter Δ. Second in the cellular automaton model to again fit Δ, and the length l and circumference c of the automaton grid, and thus again the number of cells n=l×c in the starting state S.
 
-Both algorithms employed the same fitness function aimed at minimizing the difference in the proportion of cells in the live states between the simulated model after 2 days and the snRNAseq of Jiang et al., 2020:-⁡Ssim2daysnlive59139+Esim2daysnliveε139+Isim2daysnlive3139+Rsim2daysnlive78139
+$$
+e_{3}=\frac{1}{N}\sumi=1Nm_{i}(m_{i}-1)(m_{i}-2).
+$$
 
-Where nlive≔n-Dsim2days and ε≪1 is chosen to prevent singularity while rewarding models which obtain values of Esim2daysnlive close to 0. This fitness function was chosen as it outperformed conventional functions based on Minkowski and Euclidean distances. A value of ε=0.1, proved sufficient to generate models with live cell state proportions indistinguishable from the snRNAseq data via the Chi-squared test.
+$\theta$ is then optimized via the Nelder-Mead method using the Gauss-Jacobi quadrature to evaluate the likelihood function
+
+$$
+l=\frac{1}{Beta(k_{a}^{n},k_{i}^{n})}\int_{0}^{1}Poisson(m_{i};v_{0}^{n}p_{i})p_{i}^{k_{a}^{n}-1}(1-p_{i})^{k_{i}^{n}-1} dp_{i}
+$$
+
+
+
+$$
+l=\frac{1}{2^{k_{a}^{n}+k_{i}^{n}-1}Beta(k_{a}^{n},k_{i}^{n})}\int_{-1}^{1}Poissonm_{i};v_{0}^{n}\frac{1+t_{i}}{2}(1+t_{i})^{k_{a}^{n}-1}(1-p_{i})^{k_{i}^{n}-1} dt_{i}
+$$
+
+
+
+$$
+l≈\frac{1}{2^{k_{a}^{n}+k_{i}^{n}-1}Beta(k_{a}^{n},k_{i}^{n})}\sumk=1Kw_{k}Poisson(m_{i};v_{0}^{n}y_{k})
+$$
+
+where $p_{i}=(t_{i}+1)/2$ to substitute the beta-distributed parameter, $K$ is the number of points integrated over, $w_{k}$ is the weight of the Jacobi polynomial of degree $k$, and $y_{k}$ is the root. The optimizer, quadrature method, beta distribution, and Poisson distribution are implemented in the scipy package available from https://scipy.org/install/.
+
+### Statistical comparison of promoter-switching model parameters
+
+The three normalized parameters of the promoter-switching model $v_{0}^{n}/\delta^{n},k_{a}^{n}/\delta^{n}, k_{i}^{n}/\delta^{n}$ , were computed as above for each of the 8 DUX4 target genes ZSCAN4, TRIM43, RFPL1, RFPL2, RFPL4B, PRAMEF1, PRAMEF2, and PRAMEF12, in the 27/5133 FSHD single myocytes with detectable DUX4 mRNA and separately in the 5106 FSHD single myocytes without detectable DUX4, in the dataset of van den Heuvel et al., 2019.
+
+The normalized active promoter transcription rate $v_{0}^{n}/\delta^{n}$ , the proportion of time spent with a promoter active $\frac{k_{a}^{n}}{k_{a}^{n}+k_{i}^{n}}$ and the mean mRNA expression level $E[m]$ for the eight DUX4 target genes were compared between DUX4 positive and DUX4 negative myocytes via paired two-tailed Wilcoxon tests, significance was assessed at the 5% level.
+
+### Hypothetical scenarios for raising Em under the promoter-switching model
+
+We considered two hypothetical scenarios for raising $Em$ under the promotor-switching model to observe the impact on $Varm$ . In the first $\frac{v_{0}^{n}}{\delta^{n}}$ is increased while keeping other parameters constant. In the second $\frac{k_{a}^{n}}{k_{i}^{n}}$ is increased keeping other parameters constant. Simple algebraic manipulation allows analytical solutions for the raised parameters and thus $Varm$ .
+
+In the case of $v_{0}^{n}/\delta^{n}$ , we assume that $\frac{v_{0}^{n}}{\delta^{n}}→x\frac{v_{0}^{n}}{\delta^{n}}$ for some $x>1$, the rise in $E[m]$ in this case is simply:
+
+$$
+Emx\frac{v_{0}^{n}}{\delta^{n}}-Em\frac{v_{0}^{n}}{\delta^{n}}= \frac{\frac{k_{a}^{n}v_{0}^{n}}{\delta^{n}}}{k_{a}^{n}+k_{i}^{n}}(x-1)
+$$
+
+We can thus choose $x$, to achieve the rise in $Em$ seen under DUX4 expression $d(\mu$) as:
+
+$$
+x=1+d\mu\frac{k_{a}^{n}+k_{i}^{n}}{\frac{k_{a}^{n}v_{0}^{n}}{\delta^{n}}}
+$$
+
+Which can be substituted into the formula for $Varm$ to compute $Varmx\frac{v_{0}^{n}}{\delta^{n}},$ giving the expected variance of the mRNA copy distribution if $Em$ is increased by $d(\mu$), solely by increasing $\frac{v_{0}^{n}}{\delta^{n}}→x\frac{v_{0}^{n}}{\delta^{n}}$ for some $x>1$.
+
+In the case of $\frac{k_{a}^{n}}{k_{i}^{n}}$ , we assume that $\frac{k_{a}^{n}}{k_{i}^{n}}→x \frac{k_{a}^{n}}{k_{i}^{n}}$ , we further assume that the rise in active transition rate is mirrored by a drop in the inactivation rate, i.e., the two parameters are not mutually exclusive, thus: $k_{a}^{n}→yk_{a}^{n}$ and $k_{i}^{n}→\frac{1}{y}k_{i}^{n}$ , where $y^{2}=x$. The rise in $E[m]$ in this case is:
+
+$$
+Emx \frac{k_{a}^{n}}{k_{i}^{n}}-Em\frac{k_{a}^{n}}{k_{i}^{n}}=\frac{v_{0}^{n}k_{a}^{n}}{\delta^{n}}\frac{x}{xk_{a}^{n}+k_{i}^{n}}-\frac{1}{k_{a}^{n}+k_{i}^{n}}
+$$
+
+We can thus choose $x$, to achieve the rise in $Em$ seen under DUX4 expression $d(\mu$) as:
+
+$$
+x=\frac{k_{i}^{n}Em\frac{k_{a}^{n}}{k_{i}^{n}}+d\mu}{k_{i}^{n}Em\frac{k_{a}^{n}}{k_{i}^{n}}+d\muk_{a}^{n}}
+$$
+
+Which can be substituted into the formula for $Varm$ to compute $Varmx\frac{k_{a}^{n}}{k_{i}^{n}}.$
+
+For each of the 8 DUX4 target genes we considered the parameters of the promoter switching model $v_{0}^{n}/\delta^{n},k_{a}^{n}/\delta^{n}, k_{i}^{n}/\delta^{n}$ , computed over the 5106 DUX4 -ve FSHD single myocytes from the dataset of van den Heuvel et al., as the starting parameters to input into the above formulae for $x$. Comparing the mean expression of each target in the 27 DUX4 +ve myocytes and the 5106 DUX4 -ve myocytes we computed $d(\mu$). For each target we thus computed $Varmx\frac{v_{0}^{n}}{\delta^{n}}$ and $Varmx\frac{k_{a}^{n}}{k_{i}^{n}},$ the target mRNA copy number variances under our two hypothetical scenarios. These variances were compared with the true mRNA copy number variance in the 27 DUX4 +ve myocytes, as well as with each other via two-tailed paired Wilcoxon tests, significance was assessed at the 5% level.
+
+### Compartment model simulation
+
+After the estimation of the five parameters $V_{D}$ , $d_{0}, V_{T}, T_{D}$, and $D_{r}$ , the ODEs underlying the compartment model (Figure 1B) were simulated from an initial state of all cells in state $S(0)$, over a period of 100 days in timesteps of 1 hr using the deSolve package in R (Soetaert et al., 2010). For comparison with the 5133 single FSHD myocytes differentiated for 3 days described by van den Heuvel et al., 2019, an initial population sized 5133 was simulated for 3 days, after which 6.901% of starting cells were in the dead cell state. In order to replicate the live cell population of 5133 after 3 days we thus employed a starting population of 5133 (1+0.06901) cells in state $S(0)$. After simulation for 3 days the proportion of cells in each live cell state $S3 days, E3 days, I(3 days)$, and $R3 days$ was compared between the model simulation and the true scRNAseq data, via a Chi-squared test.
+
+For the syncytial compartment model, simulation was performed as above with $V_{D}$ , $d_{0}, V_{T}, T_{D}$, and $D_{r}$ unchanged. The additional parameter Δ was estimated via the genetic algorithm (below) alongside the starting population $n$ of cells in state $S$. After simulation for 2 days (as there is assumed no syncytium for the first 24 hr of fusion) the proportion of cells in each live cell state was compared between the model simulation and the true snRNAseq data of Jiang et al., 2020 via a Chi-Squared test. Significance was assessed at the 5% level.
+
+### Cellular automaton model
+
+The cellular automaton model was evolved on an $l \timesc$ rectangular grid describing the length and circumference of the myotube. Individual cells on the grid correspond to single myonuclei in a syncytium. Each cell was evolved stochastically over a discrete time-step of 1 hr. In each time-step 2 independent actions were performed.
+
+First, the state of each cell was evolved according to the non-syncytial compartment model. Transition from connected states was modeled as an exponential process with a rate parameter equal to the transition rate (e.g. transition from $S$ to $E$ occurred according to $exp⁡(V_{D})$). An event occurring or not under this exponential distribution within 1 hr was simulated during each time step. If the event occurred a transition in cell state occurred, otherwise the cell state remained the same. In the situation where a cell state could transition in two possible directions (e.g. state $E$ can transition to $S$ at a rate $d_{0}$ and to $I$ at a rate $T_{D}V_{T}$) competing exponential clocks were set up. Using the property that $min⁡exp⁡A,exp⁡B~exp⁡(A+B)$, we simulated a transition occurring in either direction within 1 hr. If a transition occurred, we simulated the exponential clocks describing transition in either direction independently, and transitioned the cell state according to whichever experienced an event faster. If no transition occurred the cell state remained the same.
+
+Once every cell was evolved according to the non-syncytial compartment model we updated the model according to the diffusion of DUX4. Cells in states $I$ or $R$ at the start of the time-step can interact with cells in states $S$ or $E$ if they are among their eight immediate neighbors (Figure 6B). Each interaction was again modeled as an exponential distribution with rate Δ, which was simulated for an event occurring within 1 hr. If the event occurred then the state of the neighboring cell was updated $S→I$ or $E→R$, otherwise the state of the neighboring cell remained the same.
+
+We implement a boundary condition so that cells at position 1 on the circumference dimension are able to interact with cells in position $c$, to allow our grid topological equivalence to a cylinder (Figure 6A).
+
+The cellular automaton model was evolved from a starting distribution of all cells in state $S$ over 48 hr time-steps, employing the parameters $V_{D}$ , $d_{0}, V_{T}, T_{D}$ and $D_{r}$ estimated from the non-syncytial compartment model and $\Delta, l$ and $c$ estimated from the genetic algorithm and clustering analysis (see below). Due to the stochastic nature of the exponential clocks involved, 100 simulations were performed to obtain an average behavior of cell type proportions under our model. The proportion of cells in each of the live cell states obtained from the average behavior of our model was compared to the true snRNAseq data of Jiang et al., 2020 via a Chi-Squared test. Significance was assessed at the 5% level.
+
+### Genetic algorithms
+
+We employed genetic algorithms twice, firstly in the syncytial compartment model to fit the number of myonuclei $n$ in the starting state $S$ and the diffusion parameter Δ. Second in the cellular automaton model to again fit Δ, and the length $l$ and circumference $c$ of the automaton grid, and thus again the number of cells $n=l\timesc$ in the starting state $S$.
+
+Both algorithms employed the same fitness function aimed at minimizing the difference in the proportion of cells in the live states between the simulated model after 2 days and the snRNAseq of Jiang et al., 2020:
+
+$$
+-⁡\frac{\frac{S^{sim}2days}{n^{live}}}{\frac{59}{139}}+\frac{\frac{E^{sim}2days}{n^{live}}}{\frac{\epsilon}{139}}+\frac{\frac{I^{sim}2days}{n^{live}}}{\frac{3}{139}}+\frac{\frac{R^{sim}2days}{n^{live}}}{\frac{78}{139}}
+$$
+
+Where $n^{live}≔n-D^{sim}2days$ and $\epsilon≪1$ is chosen to prevent singularity while rewarding models which obtain values of $\frac{E^{sim}2days}{n^{live}}$ close to 0. This fitness function was chosen as it outperformed conventional functions based on Minkowski and Euclidean distances. A value of $\epsilon=0.1$, proved sufficient to generate models with live cell state proportions indistinguishable from the snRNAseq data via the Chi-squared test.
 
 Genetic algorithms were implemented using the GA package in R (Scrucca, 2013) using default parameters: starting population of 50 models, elitism of 0.05, mutation probability 0.1, crossover probability 0.8, and an optimal model was selected if maximum fitness was stable for 10 generations.
 
 The cellular automaton model evolves stochastically and thus an optimal fitness function for a population could represent an optimal parameter regime, or an unlikely simulation of a sub-optimal parameter regime. We thus ran 100 genetic algorithms on the cellular automaton to generate 100 optimal parameter regimes and examined their structure via clustering analysis (below).
 
-## Clustering analysis
+### Clustering analysis
 
-Clustering analysis was performed on the 3 × 100 feature space of parameter regimes ∆, l and c found optimal in the 100 genetic algorithms performed on the cellular automaton model. The ConsensusClusterPlus package in R (Wilkerson and Hayes, 2010) implemented K-medoids clustering using a Euclidean distance metric, and consensus-CDF cluster stability plots ascertained the optimal number of clusters in the parameter feature space as 5.
+Clustering analysis was performed on the 3 × 100 feature space of parameter regimes $\Delta, l$ and $c$ found optimal in the 100 genetic algorithms performed on the cellular automaton model. The ConsensusClusterPlus package in R (Wilkerson and Hayes, 2010) implemented K-medoids clustering using a Euclidean distance metric, and consensus-CDF cluster stability plots ascertained the optimal number of clusters in the parameter feature space as 5.
 
-Two-tailed paired Wilcoxon tests comparing the distribution of l and c values in each cluster, demonstrated that only one parameter cluster output significantly long and thin myotubes, in line with the microanatomy of muscle (Figure 6D). The average values of ∆, l, and c from this cluster were thus considered the optimal parameter regime for the cellular automaton model.
+Two-tailed paired Wilcoxon tests comparing the distribution of $l$ and $c$ values in each cluster, demonstrated that only one parameter cluster output significantly long and thin myotubes, in line with the microanatomy of muscle (Figure 6D). The average values of $\Delta, l$, and $c$ from this cluster were thus considered the optimal parameter regime for the cellular automaton model.
 
-## Shiny tools
+### Shiny tools
 
-Three GUI tools were written using the shiny package in R (Chang et al., 2014). The first tool outputs the compartment models for user parameter inputs and is implemented using the deSolve package (Soetaert et al., 2010). The second tool outputs a dynamic realization of the stochastic cellular automaton model for user parameter inputs, the automaton is displayed using the lattice package in R (Sarkar & Deepayan, 2008). The third tool displays the proportion of dead cells under the compartment model comparing our experimentally derived parameter regime to a user-selected parameter regime. In addition, the third tool simulates two realizations of the cellular automaton model, one using our experimentally derived parameter regime and another using the user-selected regime (l and c are kept the same for both simulations to allow comparable starting populations). Survival analysis using Cox-proportional hazard models is implemented via the survival package in R (Therneau and Grambsch, 2018), to compare cell death rates in the two realizations, with p-values displayed on a corresponding Kaplan-Meier plot.
+Three GUI tools were written using the shiny package in R (Chang et al., 2014). The first tool outputs the compartment models for user parameter inputs and is implemented using the deSolve package (Soetaert et al., 2010). The second tool outputs a dynamic realization of the stochastic cellular automaton model for user parameter inputs, the automaton is displayed using the lattice package in R (Sarkar & Deepayan, 2008). The third tool displays the proportion of dead cells under the compartment model comparing our experimentally derived parameter regime to a user-selected parameter regime. In addition, the third tool simulates two realizations of the cellular automaton model, one using our experimentally derived parameter regime and another using the user-selected regime ($l$ and $c$ are kept the same for both simulations to allow comparable starting populations). Survival analysis using Cox-proportional hazard models is implemented via the survival package in R (Therneau and Grambsch, 2018), to compare cell death rates in the two realizations, with p-values displayed on a corresponding Kaplan-Meier plot.
 
 The three tools can be accessed at:

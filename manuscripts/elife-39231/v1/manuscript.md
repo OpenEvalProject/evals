@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.39231.001 Fatty acyl reductases (FARs) are involved in the biosynthesis of fatty alcohols that serve a range of biological roles. Insects typically harbor numerous FAR gene family members. While some FARs are involved in pheromone biosynthesis, the biological significance of the large number of FARs in insect genomes remains unclear. Using bumble bee (Bombini) FAR expression analysis and functional characterization, hymenopteran FAR gene tree reconstruction, and inspection of transposable elements (TEs) in the genomic environment of FARs, we uncovered a massive expansion of the FAR gene family in Hymenoptera, presumably facilitated by TEs. The expansion occurred in the common ancestor of bumble bees and stingless bees (Meliponini). We found that bumble bee FARs from the expanded FAR-A ortholog group contribute to the species-specific pheromone composition. Our results indicate that expansion and functional diversification of the FAR gene family played a key role in the evolution of pheromone communication in Hymenoptera.
+Fatty acyl reductases (FARs) are involved in the biosynthesis of fatty alcohols that serve a range of biological roles. Insects typically harbor numerous FAR gene family members. While some FARs are involved in pheromone biosynthesis, the biological significance of the large number of FARs in insect genomes remains unclear.Using bumble bee (Bombini) FAR expression analysis and functional characterization, hymenopteran FAR gene tree reconstruction, and inspection of transposable elements (TEs) in the genomic environment of FARs, we uncovered a massive expansion of the FAR gene family in Hymenoptera, presumably facilitated by TEs. The expansion occurred in the common ancestor of bumble bees and stingless bees (Meliponini). We found that bumble bee FARs from the expanded FAR-A ortholog group contribute to the species-specific pheromone composition. Our results indicate that expansion and functional diversification of the FAR gene family played a key role in the evolution of pheromone communication in Hymenoptera.
 
 ## Introduction
 
@@ -44,13 +44,37 @@ Here, we aimed to determine how the members of the large FAR gene family in the 
 
 ## Results
 
-## Identification of FARs in bumble bee transcriptomes
+### Identification of FARs in bumble bee transcriptomes
 
 We sequenced, assembled and annotated male LG and FB transcriptomes of the bumble bee species B. lapidarius. The LG is the MMP-producing organ and is markedly enlarged in males, while the FB was used as a reference tissue not directly involved in MMP biosynthesis (Žáček et al., 2015). Searches for FAR-coding transcripts in the LG and FB transcriptomes of B. lapidarius and the previously sequenced FB and LG transcriptomes of B. lucorum and B. terrestris (Buček et al., 2013; Prchalová et al., 2016) yielded 12, 26 and 16 expressed FAR homologs in B. lapidarius, B. terrestris and B. lucorum, respectively (Figure 1—figure supplement 1).
 
-## FAR gene family evolution in hymenoptera
+### FAR gene family evolution in hymenoptera
 
 To gain insight into the evolution of FAR gene family in Hymenoptera, we reconstructed a FAR gene tree using predicted FARs from species representing ants, Vespid wasps, parasitoid wasps and several bee lineages (Figure 1). We assigned the names FAR-A to FAR-K to 11 FAR ortholog groups that were retrieved as branches with high bootstrap support in the FAR gene tree. These ortholog groups typically encompass one or more FARs from each of the hymenopteran species used in the tree inference, with the exception of apparent species-specific FAR duplications or losses (Figure 1). Notably, we identified a massive expansion of the FAR-A ortholog group in the bumble bee and stingless bee (subfamily Meliponini) sister lineages (Figure 1, Figure 2). The number of FAR homologs is inflated by a large number of predicted FAR genes and FAR transcripts with incomplete protein coding sequences lacking catalytically critical regions, such as the putative active site, NAD(P)+ binding site or substrate binding site (Figure 1, Figure 1—source data 1). The FAR gene tree also indicates expansion of the FAR-A ortholog group in the ant Camponotus floridanus and the mining bee Andrena vaga. However, this expansion is not present in two other ant species (Acromyrmex echinatior and Harpegnathos saltator) and two other mining bee species (Andrenidae: Camptopoeum sacrum and Panurgus dentipes) (Figure 1, Figure 2). Several additional expansions of FAR families can be inferred from the FAR gene tree, including extensive FAR-B gene expansion in ants (Formicoidea), along with many more lineage-specific FAR gene duplications and minor expansions.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig1-v1.jpg)
+
+**Figure 1.:** Tree tips are colored according to taxonomy: red, bumble bee FARs (B. terrestris, B. lucorum, B. lapidarius, B. impatiens, B. rupestris); green, stingless bee FARs (Tetragonula carbonaria, Melipona quadrifasciata); blue, FARs from other Apidae species (i.e. A. mellifera, Euglossa dilemma, Ceratina calcarata, and Epeolus variegatus); and black, FARs from other hymenopteran species. The FAR-A ortholog group is highlighted yellow; other ortholog groups in shades of grey. Functionally characterized bumble bee FARs from this study are indicated by filled triangles and numbered. 1: BlapFAR-A1, 2: BlucFAR-A1, 3: BterFAR-A1, 4: BlapFAR-A4, 5: BlucFAR-A2, 6: BterFAR-A2, 7: BlapFAR-A5, 8: BterFAR-J, and 9: BlapFAR-J. The functionally characterized A. mellifera FAR is indicated by an empty triangle. Internal nodes highlighted with black boxes indicate bootstrap support >80%. Violet squares at the tree tips indicate FARs for which CDD search yielded all three FAR conserved features—active site, NAD(P)+ binding site and putative substrate binding site (see Figure 1—source data 1 for complete CDD search results).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The expression values shown are log2-transformed normalized counts of reads (RPKM values) mapping to the FAR coding regions. FARs functionally characterized in this study are highlighted in orange.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Tree tips are colored according to taxonomy: red, bumble bee FARs (B. terrestris, B. lucorum, B. lapidarius, B. impatiens, B. rupestris); green, stingless bee FARs (Tetragonula carbonaria, Melipona quadrifasciata); blue, FARs from other Apidae species (i.e. A. mellifera, Euglossa dilemma, Ceratina calcarata, and Epeolus variegatus); black, FARs from other hymenopteran species; purple, non-hymenopteran species. The FAR-A ortholog group is highlighted in yellow; other ortholog groups are in shades of grey. The functionally characterized Drosophila melanogaster Waterproof FAR and Bombyx mori pheromone-biosynthetic FAR (Bmor-pgFAR) are indicated by filled triangles. Internal nodes highlighted with black boxes indicate bootstrap support >80%.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The horizontal axis shows genomic coordinates of genes within the scaffold. FAR genes are labeled.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The colors indicate % identity (red: highest, white: medium, blue: lowest).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Identical amino acid residues are highlighted in dark blue, similar residues in light blue. The conserved domains FAR-N_SDR_e (accession number cd05236) and Sterile/FAR_C (accession numbers pfam03015 and cd09071) from Conserved Domain Database are underlined. The residues forming putative active site are marked with an asterisk. The alignment was generatedusing Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/) tool using similarity groups: G, AVLI, FYW, CM, ST, KRH, DENQ.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig2-v1.jpg)
 
@@ -58,7 +82,7 @@ To gain insight into the evolution of FAR gene family in Hymenoptera, we reconst
 
 We also reconstructed a FAR gene tree encompassing FARs from three representatives of non-hymenopteran insect orders—the beetle Tribolium castaneum, the moth Bombyx mori and the fly Drosophila melanogaster (Figure 1—figure supplement 2). The only functionally characterized FAR from D. melanogaster—Waterproof (NP_651652.2), which is involved in the biosynthesis of a protective wax layer (Jaspers et al., 2014)—was placed in the FAR-J ortholog group (Figure 1—figure supplement 2). The FAR-G ortholog group includes a FAR gene from Apis mellifera with unclear biological function (Teerawanichpan et al., 2010b) and a sex pheromone-biosynthetic FAR from B. mori (Moto et al., 2003) (Figure 1—figure supplement 2). In the gene tree, the majority of FAR ortholog groups contain predicted FARs from both hymenopteran and non-hymenopteran insect species, although the bootstrap support is <80% for some FAR groups. The presence of these FAR ortholog groups in representatives of Hymenoptera, Coleoptera, Lepidoptera and Diptera indicates that these groups are ancestral to holometabolous insects. FAR-D is the only FAR group that does not include any non-hymenopteran FARs from our dataset (Figure 1—figure supplement 2) and thus presumably represents Hymenoptera-specific FAR gene family expansions. FAR-Ds, however, do not contain the complete set of three catalytically critical regions (i.e. the putative active site, NAD(P)+ binding site and substrate binding site) and their enzymatic role is therefore unclear.
 
-## Genomic organization and TE content
+### Genomic organization and TE content
 
 To uncover the details of genetic organization of FAR-A genes, we attempted to analyze the shared synteny of FAR genes in the genomes of B. terrestris and A. mellifera (Stolle et al., 2011). We aligned the A. melifera and B. terrestris genomes, but we were not able to identify any positional A. mellifera homologs of B. terrestris FAR-A genes (data not shown). While the majority of FAR genes belonging to the non-FAR-A gene ortholog group localize to the B. terrestris genome assembled to linkage groups, most of the B. terrestris FAR-A genes localize to unlinked short scaffolds (Supplementary file 1). Some of the FAR-A genes in the B. terrestris genome are arranged in clusters (Figure 1—figure supplement 3). Unfortunately, the genome assembly of B. impatiens is not mapped to chromosomes to allow similar analysis.
 
@@ -66,21 +90,41 @@ A genome assembly consisting of short scaffolds is often indicative of a repetit
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig3-v1.jpg)
 
-**Figure 3.:** B. terrestris (A, B) and B. impatiens (C, D) genes.(A and C) Distributions of overall TE densities around FAR genes (N, non-FAR-A genes, in green; A, FAR-A genes, in red) with respect to the genome-wide distribution of TE densities around RefSeq genes (in grey) are shown for the B. terrestris (A) and B. impatiens (C) genomes. (B and D) Densities of individual TE classes and families for FAR-A (in red) and non-FAR-A (in green) genes are depicted for B. terrestris (B) and B. impatiens (D). The average TE densities for the whole gene group are compared to the genome-wide average. Asterisks indicate statistical significance obtained by permutation test.10.7554/eLife.39231.012Figure 3—source data 1.
+**Figure 3.:** (A and C) Distributions of overall TE densities around FAR genes (N, non-FAR-A genes, in green; A, FAR-A genes, in red) with respect to the genome-wide distribution of TE densities around RefSeq genes (in grey) are shown for the B. terrestris (A) and B. impatiens (C) genomes. (B and D) Densities of individual TE classes and families for FAR-A (in red) and non-FAR-A (in green) genes are depicted for B. terrestris (B) and B. impatiens (D). The average TE densities for the whole gene group are compared to the genome-wide average. Asterisks indicate statistical significance obtained by permutation test.
 
-## Tissue specificity of FAR expression
+### Tissue specificity of FAR expression
 
 We selected 10 promising MMP-biosynthetic FAR candidates that were (1) among the 100 most abundant transcripts in the LG and were substantially more abundant in LG than in FB based on RNA-Seq-derived normalized expression values (Figure 1—figure supplement 1 and ref. (Buček et al., 2016)) and (2) included all the predicted catalytically critical regions of FARs—the putative active site, NAD(P)+ binding site and substrate binding site in the protein coding sequence (Figure 1—source data 1).
 
 By employing reverse transcription-quantitative PCR (RT-qPCR) on an expanded set of bumble bee tissues, we confirmed that the FAR candidates follow a general trend of overexpression in male LG compared to FB, flight muscle and gut (all from male bumble bees) and virgin queen LG (Figure 4, Figure 4—figure supplement 1, p < 0.05). Notably, B. lapidarius FAR-A1 (BlapFAR-A1) and B. terrestris FAR-J (BterFAR-J) transcripts are also abundant in virgin queen LG, where they are expressed at levels comparable to those in male LG (Figure 4—figure supplement 1).
 
-## Analysis of fatty alcohols and fatty acyls in bumble bee male LG and FB
+![Figure 4.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig4-v1.jpg)
+
+**Figure 4.:** The FAR transcripts were assayed using quantitative PCR on cDNA from tissues of 3-day-old B. lapidarius, B. lucorum and B. terrestris males and queens (N = 3; queen LG: one biological replicate represents tissues from two queens).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The FAR transcripts were assayed using RT-qPCR on cDNA from tissues of 3-day-old B. lapidarius, B. lucorum and B. terrestris males and queens (N = 3; queen LG: one biological replicate represents tissues from two queens). Significant differences (p < 0.05, one-way ANOVA followed by post-hoc Tukey’s HSD test) are marked with different letters; the statistical testing was performed on Cp difference values.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The transcripts were determined in cDNA from tissues of 3-day-old B. lapidarius males and queens (N = 3; queen LG: one biological replicate represents tissues from two queens). Significant differences (p < 0.05, two-tailed t-test) are indicated with an asterisk.
+
+### Analysis of fatty alcohols and fatty acyls in bumble bee male LG and FB
 
 We performed a detailed analysis of transesterifiable fatty acyls (free FAs and fatty acyls bound in esters) and fatty alcohols in LGs and FBs of 3-day-old B. lapidarius, B. terrestris and B. lucorum males to identify the products and predict the potential FAR substrates in the male LG. In the LGs, we detected 4, 14 and 19 individual fatty alcohol compounds in B. lapidarius, B. lucorum and B. terrestris, respectively (Figure 5). A limited number of fatty alcohols (mainly 16:OH, Z9,Z12-18:OH and Z9,Z12,Z15-18:OH) also were detected in FBs of B. lucorum and B. terrestris, but at substantially lower abundance than in LGs (Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig5-v1.jpg)
+
+**Figure 5.:** The fatty alcohols and fatty acyls (determined as methyl esters) were extracted from LGs of 3-day-old males of B. lucorum, B. terrestris and B. lapidarius (N = 3) and quantified by GC. The area (size) of fatty alcohol and fatty acyl circle represents the mean quantity per a single male LG (Figure 5—source data 1). The FARs which could be involved in the fatty alcohol biosynthesis based on their specificity are appended to the left side of the corresponding fatty alcohol circle.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The fatty alcohol ratios represent the apparent specificity of all putative FARs which are active in LGs and FBs of 3-day-old B. lucorum, B. terrestris and B. lapidarius (N = 3). Ratios >99%, suggesting high conversion rates of fatty acyl to fatty alcohol, are marked with an asterisk. In the case of 22:1 alcohols in FB of B. terrestris, the assignment of individual isomers was not possible due to their low amount, so they are counted as a sum of isomers. See Equation 1 for a description of fatty alcohol ratio calculation.
+
 To assess the apparent in vivo specificity of all FARs expressed in LGs and FBs, we calculated the fatty alcohol ratios (see Equation 1 in Materials and methods), that is the ratios of the quantity of particular fatty alcohol to the quantity of its hypothetical fatty acyl precursors (Figure 5—figure supplement 1). These ratios are greater than 50% for most of the fatty alcohols in LGs and even approach 100% for some of the monounsaturated >C20 fatty alcohols, suggesting high overall conversion rates of acyl substrates to alcohols.
 
-## Cloning and functional characterization
+### Cloning and functional characterization
 
 The full-length coding regions of the FAR candidates were isolated from male LG cDNA libraries using gene-specific PCR primers (Supplementary file 2). In general, the FAR candidates share high to very high protein sequence similarity within each ortholog group (Figure 1—figure supplement 4, Figure 1—figure supplement 5). FARs from three bumble bee species belonging to the FAR-J ortholog group are nearly identical, sharing 97.2–99.7% protein sequence identity; BlucFAR-A1 and BterFAR-A1 share 99.4% protein sequence identity with each other and 60.9–61.1% with BlapFAR-A1. BlucFAR-A2 and BterFAR-A2 share 94.8% protein sequence identity (Figure 1—figure supplement 4). BlucFAR-J was not cloned because of its very high similarity to BterFAR-J (99.7% sequence identity, two amino acid differences). We cloned two versions of BlapFAR-A1: one that was custom-synthesized based on the predicted full-length coding sequence assembled from RNA-Seq data and one called BlapFAR-A1-short that we consistently PCR-amplified from B. lapidarius male LG cDNA. BlapFAR-A1-short has an in-frame internal 66 bp deletion in the coding region that does not disrupt the predicted active site, putative NAD(P)+ binding site or putative substrate binding site (Figure 6—figure supplement 1C). Using RT-qPCR with specific primers for each variant, we confirmed that both BlapFAR-A1 and BlapFAR-A1-short are expressed in the B. lapidarius male LG and virgin queen LG (Figure 4—figure supplement 2).
 
@@ -91,6 +135,42 @@ His-tagged FARs were detected in all yeast strains transformed with plasmids bea
 Characterization of FAR enzymatic activities involved identification of numerous individual FA derivatives, denoted using the length of the carbon chain (e.g. 20: for 20-carbon chain), the number of double bonds (either as the position/configuration of the double bond(s), if known, for example Z9, or by ‘:X’, for example :1 and :2 for monounsaturated and diunsaturated FAs, respectively) and the C1 moiety (COOH for acid, OH for alcohol, Me for methyl ester, CoA for CoA-thioester).
 
 Functional characterization of FARs from B. terrestris and B. lucorum in yeast indicated that saturated C16 to C26 fatty alcohols are produced by both BterFAR-A1 and BlucFAR-A1 and BterFAR-J enzymes (Figure 6A, Figure 6—figure supplement 3); Bter/BlucFAR-A1 prefers C22 substrates, whereas BterFAR-J has an optimal substrate preference slightly shifted to C24. Unlike any of the other characterized FARs, BterFAR-A1 and BlucFAR-A1 are also capable of reducing supplemented monounsaturated Z15-20: acyl to the corresponding alcohol (Figure 6B, Figure 6—figure supplement 6C). Both BterFAR-A2 and BlucFAR-A2 reduce only 16: and 18: acyls (Figure 6A, Figure 6—figure supplement 7).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-v1.jpg)
+
+**Figure 6.:** The fatty alcohol ratios represent the apparent specificity of individual MMP-biosynthetic FAR candidates when expressed in yeast hosts (N = 3). The fatty alcohol production was quantified by GC analysis of yeast total lipid extracts with the recombinant FARs either acting on yeast native lipids (A) or acting on non-native substrates after supplementation of yeasts with either Z9,Z12-18:, Z9,Z12,Z15-18: or Z15-20: acyl-CoA precursors (B). The data in (B) panel of BlucFAR-A1 and BlucFAR-A2 are taken from yeasts expressing the proteins from yeast codon-optimized nucleotide sequences. Note the different y-axis scale for BterFAR-A2 and BlucFAR-A2. Significant differences (p < 0.01, one-way ANOVA followed by post-hoc Tukey’s HSD test) are marked with different letters. See Equation 1 for a description of fatty alcohol ratio calculation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Protein expression pattern determined in yeast cell lysate using western blot followed by detection with anti-6×His-tag antibody. Lanes: S, protein standard (VI, AppliChem); 1, yeast carrying plasmid with the sequence of BlapFAR-A1-short. (B) Chromatogram traces of lipid extracts from the yeast strains expressing BlapFAR-A1-short and BlapFAR-A1. (C) Protein sequence alignment of BlapFAR-A1-short and BlapFAR-A1. The 22-residue sequence lacking in BlapFAR-A1-short is indicated by a black dashed line above the sequence. The conserved domains FAR-N_SDR_e (accession number cd05236) and FAR_C (accession number cd09071) from Conserved Domain Database are underlined. The amino acid residues forming putative active site are marked with an asterisk.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The chromatogram traces show fatty alcohol and fatty acyl methyl ester profiles from lipid extracts of yeast expressing bumble bee FARs which are specific for long chain fatty acyls (C14–C18), that is BlapFAR-A1, BlucFAR-A2, BterFAR-A2, BlapFAR-A4, BlapFAR-A5.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** The chromatogram traces show fatty alcohol and fatty acyl methyl ester profiles from lipid extracts of yeast expressing bumble bee FARs which are specific for very long chain fatty acyls (C20–C26), that is BlucFAR-A1, BterFAR-A1, BlapFAR-J, BterFAR-J.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Protein expression patterns determined in yeast cell lysates using western blot followed by detection with anti-6 ×His tag antibody. (B) Detail of the FAR-J full-length protein region with increased photograph contrast. Lanes: S, protein standard (VI, AppliChem); NC, negative control (yeast carrying empty vector); 1–11, yeast strains carrying plasmids with BlucFAR-A1 (1), BterFAR-A1 (2), BlapFAR-A1 (3), BlucFAR-A2 (4), BterFAR-A2 (5), BterFAR-J (6), BlapFAR-J (7), BlapFAR-A4 (8), BlapFAR-A5 (9), BlucFAR-A1-opt (10) and BlucFAR-A2-opt (11).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** Plasmids carrying wild-type and yeast codon-optimized (‘-opt’) nucleotide sequences for two FARs from B. lucorum, BluFAR-A1 and BluFAR-A2, were transformed into yeast host and expressed (N = 3). Fatty alcohol production was analyzed by GC of yeast total lipid extracts. The fatty alcohol ratios represent the apparent specificity of expressed FARs. Significant differences (p < 0.05, two-tailed t-test) are marked with an asterisk. See Equation 1 for a description of fatty alcohol ratio calculation.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** Following GC×GC-MS chromatogram traces show the production of fatty alcohols by BlapFAR-A1, BlapFAR-A4, BlucFAR-A1 and BterFAR-A1 determined in extracts from yeast strains supplemented with Z9,Z12-18: (A), Z9,Z12,Z15-18: (B) and Z15-20: (C) acyl precursors, that is the acyls which are non-native to the yeast. NC, negative control (yeast carrying empty vector); 1a, Z9,Z12,Z15-18:OH; 1 m, Z9,Z12,Z15-18:Me; 2a, Z9,Z12-18:OH; 2 m, Z9,Z12-18:Me; 3a, Z9-18:OH; 3 m, Z9-18:Me; 4a, 18:OH; 5a, Z15-20:OH; 5 m, Z15-20:Me; 6a, 20:OH; 6 m, 20:Me. The m/z values selected for display: (A) 55 + 67, (B) 55 + 79, (C) 55 + 74, standards 55 + 67 + 74 + 79.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp7-v1.jpg)
+
+**Figure 6—figure supplement 7.:** The graphs show relative weight percentages of individual fatty alcohols in the total fatty alcohol mixtures produced by FAR-expressing yeast cells.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/39231/elife-39231-fig6-figsupp8-v1.jpg)
+
+**Figure 6—figure supplement 8.:** (A) Quantities of individual fatty alcohols produced in yeast relative to the lyophilized cell biomass. Note the differences in respective y-axis scales. (B) Quantities of total fatty alcohols produced by FAR-expressing strains relative to the culture volume.
 
 Characterization of B. lapidarius FARs showed that BlapFAR-A1, in contrast to BterFAR-A1 and BlucFAR-A1, produces Z9-16:OH and Z9-18:OH (Figure 6A, Figure 6—figure supplement 2). BlapFAR-A4 produces 16:OH and Z9-16:OH, together with lower quantities of 14:OH and Z9-18:OH (Figure 6A, Figure 6—figure supplement 8A). BlapFAR-A5 produces 16:OH as a major product and lower amounts of 14:OH, Z9-16:OH, 18:OH and Z9-18:OH (Figure 6A, Figure 6—figure supplement 8A). In addition, both BlapFAR-A1 and BlapFAR-A4 are capable of reducing supplemented polyunsaturated fatty acyls (Z9,Z12-18: and Z9,Z12,Z15-18:) to their respective alcohols (Figure 6B, Figure 6—figure supplement 6AB). Similarly to BterFAR-J, BlapFAR-J also reduces saturated C16 to C26 acyls (Figure 6A, Figure 6—figure supplement 3).
 
@@ -124,29 +204,438 @@ We noted several discrepancies between the FAR specificity in the yeast expressi
 
 In sum, the functional characterization of bumble bee FARs indicates that the combined action of FARs from the expanded FAR-A ortholog group has the capability to biosynthesize the majority of bumble bee MMP fatty alcohols. The substrate specificity of FARs apparently contributes to the species-specific MMP composition, but other biosynthetic steps, namely the process of fatty acyl and fatty acyl-CoA accumulation, likely also contribute to the final fatty alcohol composition of bumble bee MMPs.
 
-## Conclusion
+### Conclusion
 
 In the present work, we substantially broadened our limited knowledge of the function of FARs in Hymenoptera, one of the largest insect orders. The experimentally determined reductase specificity of FARs that are abundantly expressed in bumble bee male LGs is consistent with their role in MMP biosynthesis. The majority of these MMP-biosynthetic FARs belong to the FAR-A ortholog group. Reconstruction of the FAR gene family evolution indicates the onset of FAR-A gene expansion in the common ancestor of bumble bee and stingless bee lineages after their divergence from honey bee lineage. We therefore propose that the strategy of bumble bees and stingless bees to employ fatty alcohols as marking pheromones was shaped by FAR gene family expansion. Our analysis of TE distribution in the B. terrestris genome indicates that TEs enriched in the vicinity of FAR-A genes might have substantially contributed to the dramatic expansion of the FAR-A gene group. In the future, the increasing availability of annotated Hymenopteran genome assemblies should enable us to more precisely delineate the taxonomic extent and evolutionary timing of the massive FAR gene family expansion and assess in detail the role of TEs in the process.
 
 ## Materials and methods
 
-## Insects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Acromyrmex echinatior)</td>
+      <td>Acromyrmex echinatior genome</td>
+      <td>https://www.ncbi .nlm.nih.gov/bioproject</td>
+      <td>PRJNA271903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Andrena vaga)</td>
+      <td>Andrena vaga transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Apis mellifera)</td>
+      <td>Apis mellifera genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA13343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bombus impatiens)</td>
+      <td>Bombus impatiens genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA70395</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bombus rupestris)</td>
+      <td>Bombus rupestris transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bombus  terrestris)</td>
+      <td>Bombus terrestris genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA68545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bombus  terrestris)</td>
+      <td>B. terrestris LG and FB transcriptomes</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJEB9937</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Camponotus floridanus)</td>
+      <td>Camponotus  floridanus genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA50201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Camptopoeum sacrum)</td>
+      <td>Camptopoeum  sacrum transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Ceratina calcarata)</td>
+      <td>Ceratina  calcarata genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA340002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Colletes cunicularius)</td>
+      <td>Colletes cunicularius transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Dufourea  novaeangliae)</td>
+      <td>Dufourea novaeangliae genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA311229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Epeolus  variegatus)</td>
+      <td>Epeolus variegatus transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Euglossa  dilemma)</td>
+      <td>Euglossa dilemma transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Harpegnathos saltator)</td>
+      <td>Harpegnathos saltator genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA273397</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Megachile  rotundata)</td>
+      <td>Megachile rotundata genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA87021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Melipona  quadrifasciata)</td>
+      <td>Melipona  quadrifasciata genome</td>
+      <td>https://www.uniprot.org/proteomes/</td>
+      <td>UP000053105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Melitta haemorrhoidalis)</td>
+      <td>Melitta  haemorrhoidalis transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Nasonia  vitripenis)</td>
+      <td>Nasonia  vitripenis genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA20073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Panurgus dentipes)</td>
+      <td>Panurgus dentipes transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Polistes  canadensis)</td>
+      <td>Polistes canadensis genome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA301748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Tetragonula  carbonaria)</td>
+      <td>Tetragonula carbonaria transcriptome</td>
+      <td>https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA252285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>B. lucorum and B. lapidarius transcriptomes</td>
+      <td>This paper, https://www.ncbi.nlm.nih.gov/bioproject</td>
+      <td>PRJNA436452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bombus lapidarius)</td>
+      <td>Cloned CDS of FAR-A1, FAR-A1-short, FAR-A4, FAR-A5, FAR-J</td>
+      <td>This paper, https://www.ncbi.nlm.nih.gov/genbank/</td>
+      <td>MG450698; MG450699; MG450702; MG450703; MG450701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bombus  lucorum)</td>
+      <td>Cloned CDS of FAR-A1, FAR-A1-opt, FAR-A2, FAR-A2-opt</td>
+      <td>This paper,https://www.ncbi.nlm.nih.gov/genbank/</td>
+      <td>MG930980; MG450697; MG930982; MG450704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bombus terrestris)</td>
+      <td>Cloned CDS of FAR-A1, FAR-A2, FAR-J</td>
+      <td>This paper, https://www.ncbi.nlm.nih.gov/genbank/</td>
+      <td>MG930981; MG930983; MG450700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces  cerevisiae)</td>
+      <td>BY4741</td>
+      <td>Brachmann et al., 1998 (DOI: 10.1002/(SICI)1097-0061 (19980130)14:2 &lt; 115::AID-YEA204 &gt; 3.0.CO;2–2)</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces  cerevisiae, BY4741)</td>
+      <td>FAR expressing yeast strains</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bombus  lapidarius)</td>
+      <td>Labial gland (LG) from males and females; faty body (FB); flight muscle; gut</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dissected by standard techniques from individuals reared in laboratory colonies</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bombus  lucorum)</td>
+      <td>Labial gland (LG) from males and females; faty body (FB); flight muscle; gut</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dissected by standard techniques from individuals reared in laboratory colonies</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bombus  terrestris)</td>
+      <td>Labial gland (LG) from males and females; faty body (FB); flight muscle; gut</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dissected by standard techniques from individuals reared in laboratory colonies</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-6×His tag antibody-HRP conjugate, mouse monoclonal</td>
+      <td>Merck</td>
+      <td>A7058; RRID:AB_258326</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Escherichia coli DH5α</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Escherichia coli One Shot TOP10</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C4040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pYEXTHS-BN (plasmid)</td>
+      <td>Holz et al., 2002 (DOI: 10.1016/S1046-5928 (02)00029–3)</td>
+      <td></td>
+      <td>pUC and 2μ origin; LEU2, URA3 and AmpR selectable markers; PCUP1 inducible promoter; N-terminal 6 × His tag and C-terminal Strep II tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pYEXTHS-BN plasmids carrying FAR CDSs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Cloning primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper; Horňáková et al., 2010 (DOI: 10.1016/j.ab.2009.09.019)</td>
+      <td></td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning kit</td>
+      <td>Clontech (Takara)</td>
+      <td>639649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 SYBR Green I Master</td>
+      <td>Roche</td>
+      <td>04707516001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>S.c. EasyComp Transformation Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>K505001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART cDNA Library Construction Kit</td>
+      <td>Clontech (Takara)</td>
+      <td>634901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Femto Maximum Sensitivity Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TOPO TA Cloning kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>450640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Batch conserved domain search</td>
+      <td>DOI: 10.1093/nar/gku1221</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLAST</td>
+      <td>DOI: 10.1016/S0022 -2836 (05)80360–2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2 v2.2.6</td>
+      <td>DOI: 10.1038/nmeth.1923</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLC Genomics Workbench software v. 7.0.1</td>
+      <td>http://www.clcbio.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggtree</td>
+      <td>DOI: 10.1111/2041-210X.12628</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ht-seq v0.9.1</td>
+      <td>DOI: 10.1093/ bioinformatics/btu638</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQTREE v1.5.5</td>
+      <td>DOI: 10.1093/ molbev/msu300</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>mafft v7.305</td>
+      <td>DOI: 10.1093/nar/gkf436</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAUVE 2.4.0</td>
+      <td>DOI: 10.1101/gr.2289704</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Primer BLAST</td>
+      <td>DOI: 10.1186/1471-2105-13-134</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R programming language</td>
+      <td>R Core Team. R: A language and environment for statistical computing. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Insects
 
 Specimens of Bombus lucorum and Bombus lapidarius were obtained from laboratory colonies established from naturally overwintering bumble bee queens. The Bombus terrestris specimens originated from laboratory colonies obtained from a bumble bee rearing facility in Troubsko, Czech Republic.
 
 LG and FB samples used for transcriptome sequencing were prepared from 3-day-old B. lapidarius males by pooling tissues from three specimens from the same colony. The cephalic part of the LG and a section of the abdominal peripheral FB were dissected, transferred immediately to TRIzol (Invitrogen), then flash-frozen at −80°C and stored at this temperature prior to RNA isolation.
 
-## RNA isolation and cDNA library construction
+### RNA isolation and cDNA library construction
 
 For cloning of FARs and RT-qPCR analysis of tissue-specific gene expression, RNA was isolated from individual bumble bee tissues by guanidinium thiocyanate-phenol-chloroform extraction followed by RQ1 DNase (Promega) treatment and RNA purification using the RNeasy Mini Kit (Qiagen). The tissue sample for RNA isolation from virgin queen LGs consisted of pooled glands from two specimens. A nanodrop ND-1000 spectrophotometer (Thermo Fisher) was employed to determine the isolated RNA concentration. The obtained RNA was kept at −80°C until further use.
 
 The cDNA libraries of LGs from 3-day-old bumble bee males were constructed from 0.50 μg total RNA using the SMART cDNA Library Construction Kit (Clontech) with either Superscript III (Invitrogen) or M-MuLV (New England Biolabs) reverse transcriptase.
 
-## Transcriptome sequencing, assembly and annotation
+### Transcriptome sequencing, assembly and annotation
 
 The male LG and FB transcriptomes of B. lapidarius were sequenced and assembled as previously described for the transcriptomes of male LGs and FBs of B. lucorum and B. terrestris (Buček et al., 2013; Prchalová et al., 2016). Briefly, total RNA was isolated from the LGs and FBs of three 3-day-old B. lapidarius males and pooled into a one FB and one LG sample. Total RNA (5 µg) from each of the samples was used as starting material. Random primed cDNA libraries were prepared using poly(A)+ enriched mRNA and standard Illumina TrueSeq protocols (Illumina). The resulting cDNA was fragmented to an average of 150 bp. RNA-Seq was carried out by Fasteris (Fasteris) and was performed using an Illumina HiSeq 2500 Sequencing System. Quality control, including filtering high-quality reads based on the fastq score and trimming the read lengths, was carried out using CLC Genomics Workbench software v. 7.0.1 (http://www.clcbio.com). The complete transcriptome libraries were assembled de novo using CLC Genomics Workbench software. FAR expression values were calculated by mapping Illumina reads against the predicted coding regions of FAR sequences using bowtie2 v2.2.6 (Langmead and Salzberg, 2012) and counting the mapped raw reads using ht-seq v0.9.1 (Anders et al., 2015). The raw read counts were normalized for the FAR coding region length and the total number of reads in the sequenced library, yielding reads per kilobase of transcript per million mapped reads (RPKM) values (Mortazavi et al., 2008). A constant value of 1 was added to each RPKM value and subsequently log2-transformed and visualized as heatmaps using the ggplot2 package in R (Core Team R, 2016). Complete short read (Illumina HiSeq2500) data for FB and LG libraries from B. lapidarius and previously sequenced B. lucorum (Buček et al., 2013) were deposited in the Sequence Read Archive (https://www.ncbi.nlm.nih.gov/sra) with BioSample accession numbers SAMN08625119, SAMN08625120, SAMN08625121, and SAMN08625122 under BioProject ID PRJNA436452.
 
-## FAR sequence prediction
+### FAR sequence prediction
 
 The FARs of B. lucorum and B. lapidarius were predicted based on Blast2GO transcriptome annotation and their high protein sequence similarity to previously characterized FARs from the European honey bee Apis mellifera (Teerawanichpan et al., 2010b) and the silk moth Bombyx mori (Moto et al., 2003).
 
@@ -156,17 +645,17 @@ FARs from non-annotated transcriptomes (Bombus rupestris (Peters et al., 2017), 
 
 The active site, conserved Rossmann fold NAD(P)+ binding domain (NABD) (Rossmann et al., 1974) and a putative substrate binding site in FAR coding sequences were predicted using Batch conserved domain search (Marchler-Bauer et al., 2015). The matrix of protein identities was calculated using Clustal Omega with default parameters (https://www.ebi.ac.uk/Tools/msa/clustalo/ accessed February 2018).
 
-## FAR gene tree reconstruction
+### FAR gene tree reconstruction
 
 The protein sequences of predicted hymenopteran FARs were aligned using mafft v7.305. The unrooted gene tree was inferred in IQTREE v1.5.5 with 1000 ultrafast bootstrap approximation replicates (Minh et al., 2013), and with a model of amino acid substitution determined by ModelFinder (Kalyaanamoorthy et al., 2017) implemented in IQTREE. The tree was visualized and annotated using the ggtree package (Yu et al., 2016) in R programming language.
 
-## Genome alignment and TE-enrichment analysis
+### Genome alignment and TE-enrichment analysis
 
 The genomes of A. mellifera and B. terrestris were aligned using MAUVE 2.4.0 (Darling et al., 2004). The genomic position of predicted B. terrestris FAR genes was visually inspected using the NCBI Graphical sequence viewer (accessed January 2018 at Nucleotide Entrez Database).
 
 TE-enrichment analysis in the vicinity of FAR genes in the B. terrestris and B. impatiens genomes was carried out to explore the impact of TEs in extensive expansion of FAR-A genes. TE annotation using the NCBI RepeatMasker provided insufficient detail. Thus, TE annotations for B. terrestris and B. impatiens were obtained from the Human Genome Sequencing Center FTP (ftp://ftp.hgsc.bcm.edu/; accessed October 2018). We used the approach described by Sadd et al. to identify different types of TEs (Sadd et al., 2015). For B. terrestris, genome version 2.1 was used, and for B. impatiens version 1.0 was used. TE density around FAR genes was calculated 10 kb upstream and downstream of each FAR gene, separately for FAR-A genes and non-FAR-A genes. Statistical significance was assessed by permutation test. We compared FAR-A/non-FAR-A gene set average TE density to the null distribution of the average TE densities around B. terrestris and B. impatiens genes built from 10,000 randomly sampled gene sets with size corresponding to that of the FAR-A/non-FAR-A gene set from the publicly available RefSeq gene set downloaded for the respective genome versions from the NCBI FTP. TE densities were analyzed for a pooled set of all TEs and separately for each TE class and major TE family (Class I: LINE, LTR, LARD, DIRS; Class II: DNA, TIR, MITE, TRIM, Maveric, Helitron) using custom shell scripts and bedtools (Supplementary file 3), a suite of Unix genomic tools (Quinlan and Hall, 2010). R programming language was used for statistical analysis.
 
-## Quantitative analysis of FAR expression
+### Quantitative analysis of FAR expression
 
 First-strand cDNA was synthesized from 0.30 μg total RNA using oligo(dT)12-18 primers and Superscript III reverse transcriptase. The resulting cDNA samples were diluted 5-fold with water prior to RT-qPCR. The primers used for the assay (Supplementary file 2) were designed with Primer-BLAST (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) (Ye et al., 2012) and tested for amplification efficiency and specificity by employing amplicon melting curve analysis on dilution series of pooled cDNAs from each species.
 
@@ -174,19 +663,19 @@ The reaction mixtures were prepared in a total volume of 20 μL consisting of 2 
 
 The acquired data were processed with LightCycler 480 Software 1.5 (Roche) and further analyzed with MS Excel (Microsoft Corporation). FAR transcript abundances were normalized to the reference genes phospholipase A2 (PLA2) and elongation factor 1α (eEF1α) as described (Hornáková et al., 2010).
 
-## FAR gene isolation and cloning
+### FAR gene isolation and cloning
 
 The predicted coding regions of FARs from B. lucorum, B. lapidarius and B. terrestris were amplified by PCR from LG cDNA libraries using gene-specific primers (Supplementary file 2) and Phusion HF DNA polymerase (New England Biolabs). Parts of the full-length coding sequence of BlapFAR-A5 were obtained by RACE procedure using SMART cDNA Library Construction Kit. The PCR-amplified sequences containing the 5' and 3' ends of BlapFAR-A5 were inserted into pCRII-TOPO vector using TOPO TA Cloning kit (Invitrogen) and sequenced by Sanger method. The resulting sequences overlapped with contig sequences retrieved from the B. lapidarius transcriptome. The full-length BlapFAR-A5-coding region was subsequently isolated using gene-specific PCR primers. The sequence of BlapFAR-A1 and yeast codon-optimized sequences of BlucFAR-A1-opt and BlucFAR-A2-opt were obtained by custom gene synthesis (GenScript); see Supplementary file 2 for synthetic sequences. The individual FAR coding regions were then inserted into linearized pYEXTHS-BN vector (Holz et al., 2002) using the following restriction sites: Bter/BlucFAR-A1 and BlapFAR-J at SphI-NotI sites; Bter/BlucFAR2, BlapFAR-A1, BlapFAR-A1-short and BlapFAR-A5 at BamHI-NotI sites; and BlucFAR-A1-opt/FAR-A2-opt and BlapFAR-A4 at BamHI-EcoRI sites. In the case of BterFAR-J, the Taq DNA polymerase (New England Biolabs)-amplified sequence was first inserted into pCRII-TOPO vector and then subcloned into pYEXTHS-BN via BamHI-EcoRI sites using the In-Fusion HD Cloning kit (Clontech).
 
 The resulting vectors containing FAR sequences N-terminally fused with 6×His tag were subsequently transformed into E. coli DH5α cells (Invitrogen). The plasmids were isolated from bacteria with Zyppy Plasmid Miniprep kit (Zymo Research) and Sanger sequenced prior to transformation into yeast. The protein-coding sequences of all studied FARs were deposited to GenBank (see Key Resources Table for accession numbers).
 
-## Functional assay of FARs in yeast
+### Functional assay of FARs in yeast
 
 Expression vectors carrying FAR-coding sequences were transformed into Saccharomyces cerevisiae strain BY4741 (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0) (Brachmann et al., 1998) using S.c. EasyComp Transformation Kit (Invitrogen). To test FAR specificity, yeasts were cultured for 3 days in 20 mL synthetic complete medium lacking uracil (SC−U) supplemented with 0.5 mM Cu2+ (inducer of heterologous gene expression), 0.2% peptone and 0.1% yeast extract. The yeast cultures were then washed with water and the cell pellets lyophilized before proceeding with lipid extraction. FAR specificities were determined with the FARs acting on natural substrates present in yeast cells and with individual fatty acyls added to the cultivation media, with the respective fatty alcohols present in the LGs of studied bumble bees. For this purpose, yeast cultures were supplemented with the following fatty acyls: 0.1 mM Z9,Z12-18:COOH (linoleic acid, Sigma-Aldrich), Z9,Z12,Z15-18:COOH (α-linolenic acid, Sigma-Aldrich) or Z15-20:Me solubilized with 0.05% tergitol. We chose Z15-20: as a representative monounsaturated >C20 fatty acyl substrate because Z15-20:OH is the most abundant monounsaturated fatty alcohol in B. terrestris LG (Figure 5).
 
 The level of heterologous expression of bumble bee FARs was assayed by western blot analysis of the whole-cell extracts (obtained via sonication) using anti-6×His tag antibody-HRP conjugate (Sigma-Aldrich) and SuperSignal West Femto Maximum Sensitivity Substrate kit (Thermo Fisher Scientific).
 
-## Lipid extraction and transesterification
+### Lipid extraction and transesterification
 
 Lipids were extracted from bumble bee tissue samples under vigorous shaking using a 1:1 mixture of CH2Cl2/MeOH, followed by addition of an equal amount of hexane and sonication. The extracts were kept at −20°C prior to GC analysis.
 
@@ -194,23 +683,29 @@ Base-catalyzed transesterification was performed as described previously (Matous
 
 For quantification purposes, either 1-bromodecane (10:Br) or 1-bromoeicosane (20:Br) were added to the extracts as internal standards.
 
-## Gas chromatography and fatty alcohol ratio determination
+### Gas chromatography and fatty alcohol ratio determination
 
 Standards of Z9,Z12,Z15-18:OH and Z15-20:OH were prepared from their corresponding acids/FAMEs by reduction with LiAlH4. The Z9-18:Me standard was prepared by reacting oleoyl chloride with methanol. Other FAME and fatty alcohol standards were obtained from Nu-Chek Prep and Sigma-Aldrich. The FA-derived compounds in extracts were identified based on the comparison of their retention times with the standards and comparison of measured MS spectra with those from spectral libraries. Double bond positions were assigned after derivatization with dimethyl disulfide (Carlson et al., 1989).
 
-The fatty alcohol ratio is calculated according to Equation 1,(1)Fattyalcoholratio=n(FattyalcoholX)n(FattyalcoholX)+n(FattyacylX)100%where n is the amount in moles and X is the fatty chain structure of certain length, degree of unsaturation and double bond position/configuration. The fatty acyl term in Equation 1 stands for all transesterifiable fatty acyls present in the sample, for example free FAs, fatty acyl-CoAs, and triacylglycerols, containing the same fatty chain structure. The fatty alcohol ratio thus represents the hypothetical degree of conversion of total fatty acyls (as if they were available as FAR substrates, that is fatty acyl-CoAs) to the respective fatty alcohol and reflects the apparent FAR specificity in the investigated bumble bee tissue or yeast cell.
+The fatty alcohol ratio is calculated according to Equation 1,
 
-## GC-FID
+$$
+Fattyalcoholratio=\frac{n(FattyalcoholX)}{n(FattyalcoholX)+n(FattyacylX)}100%
+$$
+
+where n is the amount in moles and X is the fatty chain structure of certain length, degree of unsaturation and double bond position/configuration. The fatty acyl term in Equation 1 stands for all transesterifiable fatty acyls present in the sample, for example free FAs, fatty acyl-CoAs, and triacylglycerols, containing the same fatty chain structure. The fatty alcohol ratio thus represents the hypothetical degree of conversion of total fatty acyls (as if they were available as FAR substrates, that is fatty acyl-CoAs) to the respective fatty alcohol and reflects the apparent FAR specificity in the investigated bumble bee tissue or yeast cell.
+
+#### GC-FID
 
 GC with flame-ionization detector (FID) was used for quantitative assessment of the FA-derived compounds. The separations were performed on a Zebron ZB-5ms column (30 m × 250 μm I. D. × 0.25 μm film thickness, Phenomenex) using a 6890 gas chromatograph (Agilent Technologies) with following parameters: helium carrier gas, 250°C injector temperature, and 1 mL.min−1 column flow. The following oven temperature program was used: 100°C (held for 1 min), ramp to 285°C at a rate of 4 °C.min−1 and a second ramp to 320°C at a rate of 20 °C.min−1 with a final hold for 5 min at 320°C. The analytes were detected in FID at 300°C using a makeup flow of 25 mL.min−1 (nitrogen), hydrogen flow of 40 mL.min−1, air flow of 400 mL.min−1 and acquisition rate of 5 Hz. The collected data were processed in Clarity (DataApex).
 
-## Comprehensive gas chromatography-mass spectrometry (GC×GC-MS)
+#### Comprehensive gas chromatography-mass spectrometry (GC×GC-MS)
 
 The technique was used for initial identification of analytes by comparing their retention characteristics and mass spectra with those of synthetic standards and for quantification of the FA-derived compounds. The following conditions were employed using a 6890N gas chromatograph (Agilent Technologies) coupled to a Pegasus IV D time-of-flight (TOF) mass selective detector (LECO Corp.): helium carrier gas, 250°C injector temperature, 1 mL.min−1column flow, modulation time of 4 s (hot pulse time 0.8 s, cool time 1.2 s), modulator temperature offset of +20°C (relative to secondary oven) and secondary oven temperature offset of +10°C (relative to primary oven). Zebron ZB-5ms (30 m × 250 μm I. D. × 0.25 μm film thickness, Phenomenex) was used as a non-polar primary column and BPX-50 (1.5 m × 100 μm I. D. × 0.10 μm film thickness, SGE) was used as a more polar secondary column. The primary oven temperature program was as follows: 100°C (1 min), then a single ramp to 320°C at a rate of 4 °C.min−1 with a final hold for 5 min at 320°C.
 
 The mass selective detector was operated in electron ionization mode (electron voltage −70 V) with a transfer line temperature of 260°C, ion source temperature of 220°C, 100 Hz acquisition rate, mass scan range of 30–600 u and 1800 V detector voltage. ChromaTOF software (LECO Corp.) was used to collect and analyze the data.
 
-## Synthesis of methyl Z15-eicosenoate
+### Synthesis of methyl Z15-eicosenoate
 
 The Z15-20:CoA precursor, methyl Z15-eicosenoate (Z15-20:Me, 4), was synthesized by a new and efficient four-step procedure, starting from inexpensive and easily available cyclopentadecanone. The C1–C15 part of the molecule was obtained by Baeyer-Villiger oxidation of cyclopentadecanone, followed by subsequent methanolysis of the resulting lactone 1 and Swern oxidation of the terminal alcohol group of 2; the C16–C20 fragment was then connected to the aldehyde 3 by Wittig olefination.
 
@@ -218,30 +713,30 @@ All reactions were conducted in flame- or oven-dried glassware under an atmosphe
 
 IR spectra were taken on an ALPHA spectrometer (Bruker) as neat samples using an ATR device. 1H and 13C NMR spectra were recorded in CDCl3 on an AV III 400 HD spectrometer (Bruker) equipped with a cryo-probe or an AV III 400 spectrometer (Bruker) equipped with an inverse broad-band probe at 400 MHz for 1H and 100 MHz for 13C. 1H NMR chemical shifts were provided in ppm using TMS as external standard; 13C NMR chemical shifts were referenced against the residual solvent peak. The connectivity was determined by 1H-1H COSY experiments. GC-MS (EI) measurements were performed on an Agilent 5975B MSD coupled to a 6890N gas chromatograph (Agilent Technologies). High-resolution MS (HRMS) spectra were measured on a Q-Tof micro spectrometer (resolution 100000 (ESI), Waters) or GCT Premier orthogonal acceleration TOF mass spectrometer (EI and CI, Waters).
 
-## 1-Oxacyclohexadecan-2-one (1)
+#### 1-Oxacyclohexadecan-2-one (1)
 
 Cyclopentadecanone (500 mg, 2.23 mmol) was dissolved in dry CH2Cl2 (6 mL) and meta-chloroperbenzoic acid (mCPBA) (687 mg, 2.79 mmol, 70%) was added at 0°C. The reaction mixture was stirred at room temperature (r.t.), occasionally concentrated under a flow of nitrogen, and the solid residue was re-dissolved in dry CH2Cl2. After stirring for four days, the conversion was still not complete; additional mCPBA (164 mg, 667 μmol, 70%) was added at 0°C and stirring was continued at r.t. for 48 hr. The mixture was diluted with CH2Cl2 (20 mL), and the organic layer was washed with saturated NaHCO3 solution (5 × 5 mL) and brine (5 mL). The organic layer was dried over Na2SO4, filtered and evaporated. The crude product was purified by column chromatography (50 mL silica gel, PE/CH2Cl2 1:1) providing product 1 (426 mg, 80%) as a colorless waxy solid.
 
 1: Melting point (m.p.) <30°C. Rf (PE/Et2O 95:5) = 0.5. IR (film): ν = 2925, 2855, 1733, 1459, 1385, 1349, 1234, 1165, 1108, 1070, 1013, 963, 801, 720 cm−1. HRMS (+EI TOF) m/z: (C15H28O2) calc.: 240.2089, found: 240.2090. 1H NMR (400 MHz, CDCl3) δ = 4.13 (t, J = 5.7 Hz, 2H, H16), 2.33 (t, J = 7.0 Hz, 2H, H3), 1.72–1.56 (m, 4H, H4, H15), 1.48–1.37 (m, 2H, H14), 1.36–1.23 (m, 18H, H5–H13). 13C NMR (100 MHz, CDCl3) δ = 174.2, 64.1, 34.6, 28.5, 27.9, 27.28, 27.26, 27.1, 26.8, 26.5, 26.2, 26.1, 26.0, 25.3, 25.1.
 
-## Methyl 15-hydroxypentadecanoate (2)
+#### Methyl 15-hydroxypentadecanoate (2)
 
 MeOK (74 μL, 208 μmol, 2.81M in MeOH) was added dropwise at 0°C to a mixture of lactone 1 (50 mg, 208 μmol), dry THF (0.5 mL) and MeOH (1 mL). The mixture was stirred at r.t. for 48 hr, by which point the reaction was complete as indicated by TLC. The solution was quenched with a few drops of water and diluted with Et2O (5 mL). After stirring for 30 min, the layers were separated and the aqueous layer was extracted with Et2O (3 × 3 mL). The combined organic layers were washed with brine and water, dried over Na2SO4, filtered and evaporated to obtain nearly pure product. Purification by column chromatography (5 mL silica gel, PE/EtOAc 9:1) provided product 2 (55 mg, 97%) as a colorless solid.
 
 2: m.p. 47–48°C. Rf (PE/Et2O 95:5) = 0.2. IR (film): ν = 3285, 2917, 2849, 1740, 1473, 1463, 1435, 1412, 1382, 1313, 1286, 1264, 1240, 1217, 1196, 1175, 1117, 1071, 1061, 1049, 1025, 1013, 992, 973, 926, 884, 731, 720, 701 cm−1. HRMS (+ESI) m/z: (C16H32O3Na) calc.: 295.2244, found: 295.2245. 1H NMR (400 MHz, CDCl3) δ = 3.64 (s, 3H, OCH3), 3.61 (t, J = 6.7 Hz, 2H, H15), 2.28 (t, J = 7.5 Hz, 2H, H2), 1.72 (s, 1H, OH), 1.59 (quint, J = 7.1 Hz, 2H, H3), 1.54 (quint, J = 7.1 Hz, 2H, H14), 1.37–1.14 (m, 20H, H4–H13). 13C NMR (101 MHz, CDCl3) δ = 174.5, 63.1, 51.6, 34.2, 32.9, 29.71 (3C), 29.68 (2C), 29.5 (2C), 29.4, 29.3, 25.9, 25.1.
 
-## Methyl 15-oxopentadecanoate (3)
+#### Methyl 15-oxopentadecanoate (3)
 
 Dry DMSO (110 μL, 1.54 mmol) was added at −78°C dropwise to a mixture of oxalyl chloride (90 μL, 1.03 mmol) and CH2Cl2 (2 mL) in a 25 mL flask, and the reaction mixture was stirred for 15 min. The hydroxy ester 2 (140 mg, 0.51 mmol) in dry CH2Cl2 (2 mL) was added dropwise via a cannula; the white, turbid reaction mixture was stirred for 40 min, and dry triethylamine (432 μL, 3.08 mmol) was added dropwise. The mixture was stirred at –78°C for 1 hr and warmed to 0°C over 30 min at which point the reaction was complete according to TLC. The reaction mixture was diluted with CH2Cl2 (10 mL), quenched with saturated NH4Cl solution (5 mL) and water (5 mL), and warmed to r.t. The layers were separated and the aqueous layer was extracted with CH2Cl2 (3 × 10 mL). The combined organic layers were washed with brine, dried over MgSO4, filtered and evaporated. The crude product was purified by flash chromatography (10 mL silica gel, PE/EtOAc 95:5) giving aldehyde 3 (109 mg, 78%) as a colorless waxy solid.
 
 3: m.p. <37°C. Rf (PE/EtOAc 9:1) = 0.4. IR (film): ν = 2923, 2852, 2752, 1738, 1465, 1436, 1362, 1315, 1243, 1197, 1172, 1120, 1017, 985, 958, 883, 811, 719 cm−1. HRMS (+CI TOF) m/z: (C16H31O3) calc.: 271.2273, found: 271.2277. 1H NMR (400 MHz, CDCl3) δ = 9.76 (t, J = 1.9 Hz, 1H, H15), 3.66 (s, 3H, OCH3), 2.41 (td, J = 7.4, 1.9 Hz, 2H, H14), 2.29 (t, J = 7.5 Hz, 2H, H2), 1.67–1.56 (m, 4H, H3,H13), 1.35–1.20 (m, 18H, H4-H12). 13C NMR (100 MHz, CDCl3) δ = 203.1, 174.5, 51.6, 44.1, 34.3, 29.72, 29.70 (2C), 29.58, 29.56, 29.5, 29.4, 29.31, 29.29, 25.1, 22.2.
 
-## Methyl Z15-eicosenoate (4, Z15-20:Me)
+#### Methyl Z15-eicosenoate (4, Z15-20:Me)
 
 NaHMDS (614 μL, 0.614 mmol, 1.0 M in THF) was added dropwise at −55°C over 10 min to a suspension of high vacuum-dried (pentyl)triphenylphosphonium bromide (282 mg, 0.68 mmol) (Prasad et al., 2014) in dry THF (3 mL) in a flame dried round-bottomed Schlenk flask. The bright orange reaction mixture was stirred while warming to −40°C for 50 min, and a solution of aldehyde 3 (92 mg, 0.34 mmol) in dry THF (1.5 mL) was added dropwise via cannula at −45°C. Stirring was continued for 1 hr, and the reaction mixture was warmed to r.t. over 90 min. The reaction mixture was diluted with PE (25 mL); filtered through a short silica gel plug, which was washed with PE; and evaporated. The crude product was purified by flash chromatography (silica gel, gradient PE/EtOAc 100:0 to 95:5) to give methyl ester 4 (88 mg, 79%) as a colorless oil.
 
 4: Rf (PE/Et2O 95:5) = 0.6. IR (film): ν = 3005, 2922, 2853, 1743, 1699, 1684, 1653, 1541, 1521, 1507, 1489, 1436, 1362, 1196, 1169, 1106, 1017, 880, 722 cm−1. GC-MS (EI) tR [60°C (4 min) → 10 °C/min to 320°C (10 min)] 21 min; m/z (%): 324 (4) [M+], 292 (26), 250 (10), 208 (9), 152 (7), 123 (12), 111 (22), 97 (48), 87 (40), 83 (52), 74 (56), 69 (70), 59 (14), 55 (100), 41 (43), 28 (26). HRMS (+EI TOF) m/z: (C21H40O2) calc.: 324.3028, found: 324.3026. 1H NMR (401 MHz, CDCl3) δ = 5.39–5.30 (m, 2H, H15,H16), 3.66 (s, 3H, OCH3), 2.30 (t, J = 7.5 Hz, 2H, H2), 2.07–1.96 (m, 4H, H14,H17), 1.61 (quint, J = 7.5 Hz, 2H, H3), 1.37–1.14 (m, 24H, H4-H13,H18,H19), 0.89 (t, J = 7.2 Hz, 3H, H20). 13C NMR (100 MHz, CDCl3) δ = 174.5, 130.1, 130.0, 51.6, 34.3, 32.1, 29.9, 29.81, 29.79, 29.74, 29.70, 29.68, 29.6, 29.5, 29.4, 29.3, 27.4, 27.1, 25.1, 22.5, 14.2.
 
-## Statistical analysis
+### Statistical analysis
 
 All lipid quantifications in yeast and in bumble bee LGs and FBs, and RT-qPCR transcript quantifications in bumble bee tissues were performed using three biological replicates (in addition, technical duplicates were used for RT-qPCR); the number of biological replicates is indicated as N in figures and tables. The results are reported as mean value ±S.D. Significant differences were determined by one-way analysis of variance (ANOVA) followed by post-hoc Tukey’s honestly significant difference (HSD) test or by a two-tailed t-test as indicated in figures and in Results section.

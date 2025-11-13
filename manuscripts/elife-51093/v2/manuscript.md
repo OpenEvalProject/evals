@@ -38,7 +38,7 @@
 
 ## Abstract
 
-Early Huntington’s disease (HD) include over-activation of dopamine D 1 receptors (D 1 R), producing an imbalance in dopaminergic neurotransmission and cell death. To reduce D 1 R over-activation, we present a strategy based on targeting complexes of D 1 R and histamine H 3 receptors (H 3 R). Using an HD mouse striatal cell model and HD mouse organotypic brain slices we found that D 1 R-induced cell death signaling and neuronal degeneration, are mitigated by an H 3 R antagonist. We demonstrate that the D 1 R-H 3 R heteromer is expressed in HD mice at early but not late stages of HD, correlating with HD progression. In accordance, we found this target expressed in human control subjects and low-grade HD patients. Finally, treatment of HD mice with an H 3 R antagonist prevented cognitive and motor learning deficits and the loss of heteromer expression. Taken together, our results indicate that D 1 R - H 3 R heteromers play a pivotal role in dopamine signaling and represent novel targets for treating HD.
+Early Huntington’s disease (HD) include over-activation of dopamine D1 receptors (D1R), producing an imbalance in dopaminergic neurotransmission and cell death. To reduce D1R over-activation, we present a strategy based on targeting complexes of D1R and histamine H3 receptors (H3R). Using an HD mouse striatal cell model and HD mouse organotypic brain slices we found that D1R-induced cell death signaling and neuronal degeneration, are mitigated by an H3R antagonist. We demonstrate that the D1R-H3R heteromer is expressed in HD mice at early but not late stages of HD, correlating with HD progression. In accordance, we found this target expressed in human control subjects and low-grade HD patients. Finally, treatment of HD mice with an H3R antagonist prevented cognitive and motor learning deficits and the loss of heteromer expression. Taken together, our results indicate that D1R - H3R heteromers play a pivotal role in dopamine signaling and represent novel targets for treating HD.
 
 ## Introduction
 
@@ -50,13 +50,37 @@ Histamine is an important neuromodulator with four known G protein-coupled recep
 
 ## Results
 
-## Functional D1R-H3R heteromers are expressed in wild type STHdhQ7 and HD STHdhQ111 striatal cell models
+### Functional D1R-H3R heteromers are expressed in wild type STHdhQ7 and HD STHdhQ111 striatal cell models
 
 To test whether D1R-H3R heteromers could indeed be targets for controlling D1R signaling in HD, we first analyzed the expression of both receptors in immortalized striatal cells expressing endogenous levels of full-length wild-type STHdhQ7 or mutant STHdhQ111 huntingtin (Ginés et al., 2010). Ligand binding determined that both STHdhQ7 and STHdhQ111 cells endogenously express similar levels of D1R and H3R (Supplementary file 1). By proximity ligation assays (PLA), D1R-H3R heteromers were detected as red spots surrounding the blue stained nuclei in both cell types (Figure 1A, left panels of both cell types) and in cells treated with control lentivirus vector (Figure 1—figure supplement 1A) but not in cells depleted of H3R (Figure 1A, right panels of both cell types) by shRNA, as shown by RT-PCR and functionality (Figure 1—figure supplement 1B,C), or in negative controls (Figure 1—figure supplement 1D). To ensure that D1R-H3R heteromers were functional in STHdh cells, cell signaling experiments were performed. Using both STHdhQ7 and STHdhQ111 cells and concentrations of ligands previously shown to be optimal for receptor activation of the ERK1/2 pathway (Ferrada et al., 2009; Moreno et al., 2014; Moreno et al., 2011), we observed that the D1R agonist SKF 81297 was able to increase ERK1/2 phosphorylation whereas it was prevented by D1R antagonist SCH 23390, and by the H3R antagonist thioperamide (Figure 1—figure supplement 2A,B) via cross-antagonism. In addition, we tested a previously described alternative signaling pathway activated downstream of D1R, Ca2+ mobilization (Chen et al., 2007; Jose et al., 1995). When cells were treated with the D1R agonist SKF 81297 a robust and rapid increase in cytosolic Ca2+ was detected in both STHdhQ7 and STHdhQ111 cells (Figure 1B,C). Importantly, this calcium release could be dampened with the H3R antagonist thioperamide (cross-antagonism) (Figure 1B,C). The above signaling data strongly support the presence of functional D1R-H3R heteromers in STHdh cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig1-v2.jpg)
+
+**Figure 1.:** PLA were performed in STHdhQ7 and STHdhQ111 cells (A, D, F, H and J) or in cells infected with shH3R to silence H3R, observed as green stained cells due to the GFP expression included in the plasmid (A). D1R-H3R heteromers were visualized in STHdh cells as red spots around blue colored DAPI stained nucleus, but not in STHdh cells infected with shH3R vector (A). Calcium increases were measured in STHdhQ7 (B, E and I) or STHdhQ111 (C, G and K). Cells were treated (20 min) or not with the H3R antagonist thioperamide (10 μM) before the addition of vehicle or SKF 81297 (1 μM). In (D, E, F, G, H, I, J and K), STHdHQ7 (D, E, H and I) or STHdHQ111 (F, G, J and K) cells were also pre-treated for 60 min with 4 μM TM5 (D, E, F and G) or TM7 (H, I, J and K) peptides. Heteromers were visualized as red spots around DAPI (blue) stained nucleus in cells pre-treated with TM7 peptide. Scale: 20 μm. For each calcium curve values are expressed as a percentage increase with respect to untreated cells and are a mean ± SEM of 3 to 5 independent experiments. In (L and M), cell viability was determined in STHdhQ7 (L) or STHdhQ111 cells (M) pre-treated for 60 min with vehicle (white columns), with 4 μM TAT-TM7 (pale grey columns) or TAT-TM5 (grey columns) or infected with shH3R to silence H3R (dark grey columns) prior overstimulation with 30 μM SKF 81297. Values represent mean ± SEM (n = 24 to 30) of cell viability recovery expressed as in-fold respect to SKF 81297 treated cells. Student’s t test showed a significant (***p<0.001) effect over SKF 81297 treated cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** In (A), Proximity Ligation Assays (PLA) were performed in STHdhQ7 and STHdhQ111 cells not H3R depleted but infected with GIPZ Non-silencing Lentiviral shRNA Control plasmid. D1R-H3R heteromers were visualized as red spots around blue colored DAPI stained nucleus (left panels), in infected cells stained in green due to the GFP expression included in the plasmid (middle panel). Merge images are given in the right panels. In (B), controls showing that H3R mRNA is not present in cells depleted of H3R by shRNA. STHdhQ7 and STHdhQ111 cells were not infected or infected with lentiviral silencing plasmid GIPZ Human histamine H3 receptor shRNA (shH3R). Values represent fold change respect to non-silencing vector. In (C) controls showing the lack of H3R stimulated signaling in cells depleted of H3R by shRNA. STHdhQ7 or STHdhQ111 cells were not stimulated (basal) or stimulated with the H3R agonist imetit (100 nM) and ERK 1/2 phosphorylation was determined. Values represent mean ± SEM (n = 3) of percentage of phosphorylation relative to basal levels found in untreated cells. Student’s t test showed significant differences over basal conditions (*p<0.05, ***p<0.001). In (D), PLA were performed in the absence of the D1R primary antibody using STHdhQ7 or STHdhQ111 cells not infected (left panels) or infected (right panels) with GIPZ Non-silencing Lentiviral shRNA Control plasmid. Scale bar: 20 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** STHdhQ7 (A) or STHdhQ111 (B) cells were treated for 20 min with vehicle, D1R antagonist SCH 23390 (1 μM) or the H3R antagonist thioperamide (1 μM) before the addition of SKF 81297 (100 nM) for an additional incubation period of 10 min and ERK 1/2 phosphorylation was determined. Values represent mean ± SEM (n = 3 to 4) of percentage of phosphorylation relative to basal levels found in untreated cells (control). One-way ANOVA followed by Bonferroni post hoc tests showed a significant effect over basal (***p<0.001) or over SKF 81297 treatment (##p<0.01). In (C, D), cell viability was determined in STHdhQ7 (black curves) or STHdhQ111 cells (red curves) pre-treated for 60 min with vehicle (C), or with the H3R antagonist thioperamide 10 μM (B) prior overstimulation with SKF 81297 (increasing concentrations in A) or 30 μM in B). Values represent mean ± SEM (n = 24 to 30) of percentage of viable cells respect to vehicle-treated cells (C) or the cell viability recovery expressed as in-fold respect to SKF 81297 treated cells (D). In (E and F) the effect of D1R antagonist, H3R antagonist and silencing vector transfection in striatal cells viability is shown. STHdhQ7 and STHdhQ111 cells were not infected (E) or infected (F) with GIPZ Non-silencing Lentiviral shRNA Control plasmid. Cells were pretreated for 60 min with vehicle, 10 μM SCH 23390 or 10 μM thioperamide prior over-stimulation with SKF 81297 (30 μM). Values represent mean ± SEM (n = 7 to 22) of percentage of viable cells respect to vehicle-treated cells (E) or the cell viability recovery expressed as in-fold respect to SKF 81297 treated cells (F). Student’s t test showed a significant (***p<0.001) effect over not treated cells (E) or SKF 81297 treated cells (F).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** STHdhQ7 (A and C) and STHdhQ111 (B and D) cells were time-dependent stimulated with 1 μM or 30 μM SKF 81297 and intracellular calcium release (A and B) or p-p38 phosphorylation (C and D) was determined. In (A and B), curves are mean ± SEM of 3 to 6 independent experiments. In (C and D) values represent mean ± SEM of two independent experiments performed per triplicate of percentage of phosphorylation respect to vehicle-treated cells with example gels shown of STHdhQ7 and STHdhQ111 treated with 30 μM SKF 81297 below. Student’s t test showed a significant (*p<0.05, **p<0.01, ***p<0.001) effect over not treated cells.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** In (A and B), STHdhQ7 (A) or STHdhQ111 (B) cells were pre-treated for 20 min with vehicle or with the H3R antagonist thioperamide (10 μM) and were not stimulated or overstimulated with SKF 81297 (30 μM) prior intracellular calcium release determination. For each curve values are expressed as a percentage of increase with respect to untreated not overstimulated cells and are mean ± SEM of 3 to 9 independent experiments. In (C), STHdhQ7 or STHdhQ111 cells were treated for 20 min with medium (control), with SB 203580 (10 μM) or with the H3R antagonist thioperamide (10 μM). Cells were overstimulated with SKF 81297 (30 μM) and p38 phosphorylation was determined. Values represent mean ± SEM (n = 3) and are expressed as percentage over control. One-way ANOVA followed by Bonferroni post hoc tests showed a significant effect over control (**p<0.01, ***p<0.001) or over SKF 81297 treatment (#p<0.05, ##p<0.01, ###p<0.001). In (D), cell viability was determined in STHdhQ7 (black curves) or STHdhQ111 cells (red curves) pre-treated for 60 min with the p38 inhibitor SB 203580 prior overstimulation with SKF 81297 (30 μM). Values represent mean ± SEM (n = 24 to 30) of the cell viability recovery expressed as in-fold respect to SKF 81297 treated cells (D).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Proximity Ligation Assays (PLA) were performed in STHdhQ7 or STHdhQ111 cells pre-treated for 60 min with vehicle or with the H3R antagonist thioperamide (10 µM) before addition of medium (in the case of the vehicle control) or SKF 81297 (30 μM, 45 min). D1R-H3R heteromers were visualized as red spots around blue colored DAPI stained nucleus in control and H3R ligands-treated cells, but not in SKF 81297 only treated cells. Scale bar: 20 μm.
+
 To further demonstrate that an H3R antagonist is dampening D1R activation involving D1R-H3R heteromers, we evaluated the effect of interfering peptides, which are synthetic peptides with the amino acid sequence of domains of the receptors involved in the heteromeric interface. This approach has been used by us and others to disrupt other heteromer complexes (Bonaventura et al., 2015; Guitart et al., 2014; Hasbi et al., 2014; Lee et al., 2014; Viñals et al., 2015). In a previous study we showed the efficacy of this approach in demonstrating heteromerization of D1R with D3R, using a peptide with the sequence of D1R transmembrane domain 5 (TM5) but not TM7 (Guitart et al., 2014). We therefore investigated whether synthetic peptides with the sequence of TM5, and TM7 (as a negative control) of D1R, fused to HIV-TAT, were also able to disrupt receptor D1R-H3R heteromers measured by PLA. In agreement with our hypothesis, there was a near complete loss in PLA fluorescence signal when STHdhQ7 and STHdhQ111 cells were incubated with TAT-TM five peptide (Figure 1D,F), but not for the negative control in which the TAT-TM seven peptide was used (Figure 1H,J). We next evaluated whether TM5 or TM7 would interfere with the observed cross-antagonism in calcium mobilization assays. Clearly, pretreatment of both STHdhQ7 and STHdhQ111 cells with the TAT-TM5 (Figure 1E,G) but not TAT-TM7 (Figure 1I,K) peptide disrupts the ability of the H3R antagonist thioperamide to dampen D1R calcium signaling. These results support that TM5 forms part of the interface of the D1R-H3R heteromer and demonstrate that the H3R antagonist effect is driven through direct interaction between D1R and H3R.
 
-## H3R ligands prevent the D1R-induced cell death in STHdhQ7 and STHdQ111 cells
+### H3R ligands prevent the D1R-induced cell death in STHdhQ7 and STHdQ111 cells
 
 It has been previously reported that upon activation of D1R, STHdh cell viability is reduced (Paoletti et al., 2008). To explore whether H3R ligands could impair D1R activation through D1R-H3R heteromers in a pathologically relevant readout, we used D1R-induced cell death as an output of D1R activation in STHdh cells. As expected, STHdh cell viability decreased when treated with the D1R agonist SKF 81297 in a concentration-dependent manner (Figure 1—figure supplement 2C). Significant cell death did not occur until 30 μM SKF 81297 was used (Figure 1—figure supplement 2C), an effect prevented by the D1R antagonist SCH 23390 (Figure 1—figure supplement 2E). Pre-treatment with the H3R antagonist thioperamide, which did not modify cell viability when administered alone (Figure 1—figure supplement 2E), increased the number of surviving cells in the presence of the D1R agonist SKF 81297 in both cell types (Figure 1L,M and Figure 1—figure supplement 2D). Importantly, the effect of the H3R antagonist thioperamide was specific since no protection from D1R agonist-induced cell death was observed in cells depleted of H3R with shRNA lentiviral infection (Figure 1L,M), but was observed in cells transfected with the control lentivirus (Figure 1—figure supplement 2F). In addition, we also demonstrated that recovery of viability induced by the H3R antagonist thioperamide was mediated by D1R-H3R heteromers since pre-incubation with D1R TM5 peptide, but not D1R TM7 impaired the H3R antagonist protection from D1R agonist-induced cell death (Figure 1L,M).
 
@@ -64,37 +88,97 @@ To better understand the mechanisms involved in D1R-H3R heteromer action, we det
 
 It has been reported that ligands can influence receptor oligomerization. To understand how the ligands used here might impact D1R-H3R heteromers we performed PLA after treating with either vehicle, SKF 81297 or SKF 81297 and thioperamide. We found that SKF 81297-induced a loss of PLA staining in both STHdh cells (Figure 1—figure supplement 5), while pre-treatment with the H3R antagonist thioperamide preserved the number of punctate PLA spots (Figure 1—figure supplement 5).
 
-## Functional D1R-H3R heteromers are expressed in wild-type HdhQ7/Q7 and in HdhQ7/Q111 mutant knock-in mice at early but not late HD stages
+### Functional D1R-H3R heteromers are expressed in wild-type HdhQ7/Q7 and in HdhQ7/Q111 mutant knock-in mice at early but not late HD stages
 
 To test whether D1R-H3R heteromers can indeed be targets for treating HD, we investigated their expression and function in the striatum, cerebral cortex and hippocampus of a widely accepted preclinical model of HD, the heterozygous HdhQ7/Q111 mutant knock-in mice, and their wild-type HdhQ7/Q7 littermates (Giralt et al., 2012; Puigdellívol et al., 2015). By PLA we confirmed that both HdhQ7/Q7 and HdhQ7/Q111 mice display D1R-H3R heteromers at 2 months (mo) (Figure 2—figure supplement 1) and four mo (Figure 2A,B) of age in all brain regions tested. No signal was observed in negative controls in which one of the PLA primary antibodies were missing (Figure 2—figure supplement 2). Heteromer expression was similar in all brain areas and no differences were observed between genotypes at 4 mo of age (Figure 2B). Surprisingly, an almost complete loss of D1R-H3R heteromers was found in 6 mo and eight mo-old HdhQ7/Q111 mice but not in HdhQ7/Q7 mice (Figure 3—figure supplement 1 and Figure 3A,B), indicating that at more advanced disease stages the D1R-H3R heteromer is lost. Although at 8 mo of age we detected a partial decrease in striatal D1R expression in HdhQ7/Q111 compared with HdhQ7/Q7 mice using ligand binding experiments (Supplementary file 2), the loss of heteromer expression is not due to a complete loss of receptor expression since by radioligand binding (Supplementary file 2) and mRNA expression analysis (Supplementary file 3) both receptors continue to be expressed.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig2-v2.jpg)
+
+**Figure 2.:** Striatal, cortical or hippocampal slices from 4-month-old HdhQ7/Q7 and HdhQ7/Q111 mice were used. In (A), by Proximity Ligation Assays (PLA) D1R-H3R heteromers were visualized in all slices as green spots around blue colored DAPI stained nucleus. Scale bar: 20 μm. In (B), the number of cells containing one or more green spots is expressed as the percentage of the total number of cells (blue nucleus). r values (number of green spots/cell containing spots) are shown above each bar. Data (% of positive cells or r) are the mean ± SEM of counts in 600–800 cells from 4 to 8 different fields from three different animals. Student’s t test showed no significant differences in heteromers expression in HdhQ7/Q7 and HdhQ7/Q111 mice. In (C), striatal, cortical or hippocampal organotypic slice cultures from 4-month-old HdhQ7/Q7 and HdhQ7/Q111 mice were treated for 60 min with vehicle, the D1R antagonist SCH 23390 (10 μM) or H3R antagonist thioperamide (10 μM) before the addition of SKF 81297 (50 μM). After 48 h cell death was determined. Values represent mean ± SEM (n = 3 to 19) of percentage of cell death. One-way ANOVA followed by Bonferroni post hoc tests showed a significant effect over non-treated organotypic cultures (***p<0.001) or of the H3R antagonist plus SKF 81297 treatment over the SKF 81297 (###p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Proximity Ligation Assays (PLA) were performed using striatal, cortical or hippocampal slices from 2-month-old HdhQ7/Q7 and HdhQ7/Q111 mice. D1R-H3R heteromers were visualized in all slices as green spots around blue colored DAPI stained nucleus. Scale bar: 20 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Proximity Ligation Assays (PLA) were performed in the absence of the primary antibody against D1R, using striatal, cortical or hippocampal slices from 4-month-old HdhQ7/Q7 and HdhQ7/Q111 mice. In all slices, a lack of green spots around blue colored DAPI stained nucleus was observed. Scale bar: 20 μm.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig3-v2.jpg)
+
+**Figure 3.:** Striatal, cortical or hippocampal slices from 8-month-old HdhQ7/Q7 and HdhQ7/Q111 mice were used. In (A), by Proximity Ligation Assays (PLA) D1R-H3R heteromers were visualized in HdhQ7/Q7 mice but not in HdhQ7/Q111 mice as green spots around blue colored DAPI stained nucleus. Scale bar: 20 μm. In (B), the number of cells containing one or more green spots is expressed as the percentage of the total number of cells (blue nucleus). r values (number of green spots/cell containing spots) are shown above each bar. Data (% of positive cells or r) are the mean ± SEM of counts in 600–800 cells from 5 to 7 different fields from three different animals. Student’s t test showed a significant (***p<0.05) decrease of heteromers expression in HdhQ7/Q111 mice compared to the respective HdhQ7/Q7 mice. In (C) striatal, cortical or hippocampal organotypic slice cultures from 8-month-old HdhQ7/Q7 and HdhQ7/Q111 mice were treated for 60 min with medium, the D1R antagonist SCH 23390 (10 μM) or the H3R antagonist thioperamide (10 μM) before the addition of SKF 81297 (50 μM) and cell death was determined. Values represent mean ± SEM (n = 3 to 6) of percentage of cell death. One-way ANOVA followed by Bonferroni post hoc tests showed a significant effect over non-treated organotypic cultures (*p<0.05) or of the H3R antagonist plus SKF 81297 treatment over the SKF 81297 (#p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** In (A), Proximity Ligation Assays (PLA) were performed in striatal, cortical and hippocampal slices from 6-month-old HdhQ7/Q7 and HdhQ7/Q111 mice treated with saline. D1R-H3R heteromers were visualized as green spots around blue colored DAPI stained nucleus in HdhQ7/Q7 mice but not in HdhQ7/Q111 mice chronically treated with saline. Scale bar: 20 μm. In (B), the number of cells containing one or more green spots is expressed as the percentage of the total number of cells (blue nucleus). r values (number of green spots/cell containing spots) are shown above each bar. Data (% of positive cells or r) are the mean ± SEM of counts in 600–800 cells from 4 to 8 different fields from three different animals. Student’s t test showed significant differences in D1R-H3R heteromer expression (***p<0.001) compared to the respective HdhQ7/Q7 mice.
+
 To test the role of D1R-H3R heteromers, organotypic mouse striatal, cortical and hippocampal cultures were obtained. Cell death was induced by the D1R agonist SKF 81297 (50 µM), and analysis of DAPI and propidium iodide staining was performed. As expected, D1R agonist SKF 81297 treatment increased the percentage of cell death in all three regions compared to vehicle-treated organotypic cultures without significant differences between genotypes at 4 mo of age (Figure 2C). Importantly, slices pre-treated with the H3R antagonist thioperamide, that does not modify cell death when administered alone, protected cells from D1R elicited cell death in an equivalent manner to the D1R antagonist SCH 23390 (Figure 2C), indicating that functional D1R-H3R heteromers are expressed in different brain areas of HdhQ7/Q7 and HdhQ7/Q111 mice at early disease stages. The dramatic change in heteromer expression in eight mo-old HdhQ7/Q111 mice was mirrored by the lack of protection of the H3R antagonist thioperamide against SKF 81297-induced cell death in organotypic cultures (Figure 3C), corroborating that the presence of D1R-H3R heteromers is needed for the H3R antagonist to prevent D1R-mediated cell death.
 
-## Treatment with thioperamide prevents cognitive and motor learning deficits at early disease stages
+### Treatment with thioperamide prevents cognitive and motor learning deficits at early disease stages
 
 To test whether the H3R antagonist thioperamide can exert beneficial effects in the initial stages of the disease we evaluated the effect of chronic thioperamide treatment on motor learning and memory deficits in mutant HdhQ7/Q111 mice. Since cognitive decline is observed in these HD mice from 6 mo of age (Brito et al., 2014; Giralt et al., 2012; Puigdellívol et al., 2015) and the D1R-H3R heteromers are expressed and functional until the age of 5 mo (Figure 4—figure supplement 1A,B), we chose 5mo-old animals to start the thioperamide treatment (Figure 4—figure supplement 2). Corticostriatal function in saline and thioperamide-treated HdhQ7/Q7 and HdhQ7/Q111 mice was analyzed by using the accelerating rotarod task that evaluates the acquisition of new motor skills (Puigdellívol et al., 2015). Saline-treated mutant HdhQ7/Q111 mice were unable to maintain their balance on the rotarod as wild-type HdhQ7/Q7 mice revealing impaired acquisition of new motor skills (Figure 4A). Chronic treatment with thioperamide completely rescued motor learning deficits in mutant HdhQ7/Q111 mice as evidenced by a similar latency to fall in the accelerating rotarod as wild-type HdhQ7/Q7 mice. Next, recognition long-term memory (LTM) was analyzed by using the novel object recognition test (NORT) (Figure 4B). After two days of habituation in the open field arena (Figure 4—figure supplement 3), no significant differences were found between genotypes and/or treatments, demonstrating no alterations in motivation, anxiety or spontaneous locomotor activity. After habituation, animals were subjected to a training session in the open field arena in the presence of two similar objects (A and A’). Both saline and thioperamide-treated wild-type HdhQ7/Q7 and mutant HdhQ7/Q111 mice similarly explored both objects indicating neither object nor place preferences (Figure 4B). After 24 hr, LTM was evaluated by changing one of the old objects (A’) for a novel one (B). Whereas saline-treated HdhQ7/Q111 mice did not show any preference for the novel object with respect to the familiar one, indicating recognition LTM deficits, thioperamide treatment completely prevented this LTM deficit in mutant HdhQ7/Q111 mice (Figure 4B). Next, spatial LTM was analyzed using the T-maze spontaneous alternation task (T-SAT) (Figure 4C). During the training, similar exploration time (Figure 4C, left panel) and similar number of arm entries (Figure 4—figure supplement 4, left panel) were found in all genotypes and treatments. After 5 hr, a testing session showed that saline-treated HdhQ7/Q111 mice had no preferences between the novel arm and the old arm, indicating spatial LTM deficits (Figure 4C, right panel). Interestingly, mutant HdhQ7/Q111 mice treated with thioperamide spent more time in the novel versus the old arm, revealing preserved LTM (Figure 4C, right panel). Overall, these data demonstrate the effectiveness of thioperamide treatment in restoring motor learning and preventing spatial and recognition LTM deficits in mutant HdhQ7/Q111 mice.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig4-v2.jpg)
+
+**Figure 4.:** In (A), curves illustrating the latency to fall in the accelerating rotarod of 6-month-old HdhQ7/Q7 and HdhQ7/Q111 mice treated with saline or thioperamide from 5 months of age are shown. In (B), the exploration time for saline or thioperamide-treated HdhQ7/Q7 and HdhQ7/Q111 mice during the training and the testing (24 hr delay, LTM) sessions in a novel-object recognition task showing that long-term recognition memory deficits are rescued in the thioperamide-treated HdhQ7/Q111 mice. One-way ANOVA with Bonferroni post hoc showed significant differences (***p<0.001) compared to the old object recognition. In (C), bar diagram illustrating the exploration time for saline- or thioperamide-treated HdhQ7/Q7 and HdhQ7/Q111 mice during the training and the 5 hr later testing in the T-SAT showing thioperamide reverses spatial long-term memory (LTM) deficits. In (A) to C), 11 saline-treated HdhQ7/Q7 mice, 10 thioperamide-treated HdhQ7/Q7 mice, seven saline-treated HdhQ7/Q111 mice and nine thioperamide-treated HdhQ7/Q111 mice were evaluated at 6 months of age. In (D) PLA were performed in striatal, cortical and hippocampal slices from 6-month-old HdhQ7/Q7 and HdhQ7/Q111 mice treated with thioperamide. D1R-H3R heteromers were visualized in all samples as green spots around blue colored DAPI stained nucleus. Scale bar: 20 μm. In (E) the right panel, the number of cells containing one or more green spots is expressed as the percentage of the total number of cells (blue nucleus). r values (number of green spots/cell containing spots) are shown above each bar. Data (% of positive cells or r) are the mean ± SEM of counts in 600–800 cells from 4 to 8 different fields from three different animals. Student’s t test showed no significant differences in heteromer expression in thioperamide-treated HdhQ7/Q111 mice compared to the respective HdhQ7/Q7 mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Striatal (A) and cortical (B) organotypic slice cultures from 5-month-old HdhQ7/Q7 and HdhQ7/Q111 mice were pre-treated for 60 min with vehicle, H3R antagonist thioperamide (10 μM), VUF5681 (10 μM) or D1R antagonist SCH 23390 (10 μM) before the addition of SKF 81297 (50 μM) and after 48 h cell death was determined. Values represent mean ± SEM (n = 5 to 8) of percentage of cell death. One-way ANOVA followed by Bonferroni post hoc tests showed a significant effect over vehicle treatment (***p<0.001) or over SKF 81297 treated slices (###p<0.001).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Three intraperitoneal injections per week of saline (NaCl 0.9% saline) or thioperamide (10 mg/Kg) were performed from 5-month-old to 8-month-old mice when the animals were sacrificed and perfused. Behavioral assessment started at 6 months of age with the evaluation of the ARTP, T-SAT, Open field and NORT. One cohort of animals was sacrificed and perfused 30 min after the last injection to evaluate PLA at 6 months of age. A second cohort of animals was sacrifice and perfused 30 min after the last injection to evaluate PLA at 8 months of age.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Motivation and anxiety differences between genotypes and treatments were analyzed by measuring the percentage of distance (A and E), the percentage of entries (B and F) and the percentage of time (C and G) between the periphery and the center in the open field arena at the first (A, B and C) or second (E, F and G) day of habituation in the open field arena. The spontaneous locomotor activity differences between genotypes and treatments were analyzed by measuring the total distance rove for each animal at first (D) or second (H) day of habituation in the open field arena. After two days of habituation in the open field arena, all mice behave equal. Data represents mean ± SEM. Statistical analysis was performed using one-way ANOVA with Bonferroni post hoc comparisons; *p<0.05, ***p<0.001 compared to the periphery.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** 6-month-old HdhQ7/Q7 and HdhQ7/Q111 mice following the injection protocol in Figure 4—figure supplement 2 showed no differences in spontaneous locomotor activity or anxiogenic components in training sessions of the T-maze. 11 saline-treated HdhQ7/Q7 mice, 10 thioperamide-treated HdhQ7/Q7 mice, seven saline-treated HdhQ7/Q111 mice and nine thioperamide-treated HdhQ7/Q111 mice were evaluated. Data represents mean ± SEM.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** In (A), Proximity Ligation Assays (PLA), were performed in striatal, cortical and hippocampal slices. D1R-H3R heteromers were visualized as green spots around blue colored DAPI stained nucleus in 8-month-old HdhQ7/Q7 and HdhQ7/Q111 mice chronically treated with thioperamide. Scale bar: 20 μm. In (B), the number of cells containing one or more green spots is expressed as the percentage of the total number of cells (blue nucleus). r values (number of green spots/cell containing spots) are shown above each bar. Data (% of positive cells or r) are the mean ± SEM of counts in 600–800 cells from 4 to 8 different fields from three different animals. Student’s t test showed no significant differences in D1R-H3R heteromer expression in thioperamide-treated HdhQ7/Q111 mice compared to the respective HdhQ7/Q7 mice.
+
 We next tested if the reversion of the HD phenotype in mutant HdhQ7/Q111 mice induced by thioperamide treatment correlated with the preservation of D1R-H3R heteromer expression. By PLA we observed that in saline-treated 6-mo-old HdhQ7/Q111 mice the heteromer expression was significantly diminished with respect to the age-matched HdhQ7/Q7 mice (Figure 3—figure supplement 1A,B). Notably, treatment with thioperamide significantly prevented the loss of D1R-H3R heteromers in all brain regions analyzed in HdhQ7/Q111 mice at both 6 (Figure 4D,E) and 8 mo of age (Figure 4—figure supplement 5A,B).
 
-## Treatment with thioperamide ameliorates spinophilin-immunoreactive puncta alterations in the motor cortex and hippocampus of 6-month-old mutant HdhQ7/Q111 mice
+### Treatment with thioperamide ameliorates spinophilin-immunoreactive puncta alterations in the motor cortex and hippocampus of 6-month-old mutant HdhQ7/Q111 mice
 
 Alterations in dendritic spine dynamics, density and morphology are critically involved in the synaptic deficits present in HD (Brito et al., 2014; Ferrante et al., 1991; Guidetti et al., 2001; Lynch et al., 2007; Milnerwood et al., 2006; Puigdellívol et al., 2015; Simmons et al., 2009; Sotrel et al., 1993; Spires et al., 2004). We recently described a significant decrease in dendritic spine density in the hippocampus (Brito et al., 2014) and the motor cortex of mutant HdhQ7/Q111 mice (Puigdellívol et al., 2015) without significant alterations in the striatum. To analyze whether the improvement of motor learning and memory deficits observed in thioperamide-treated mutant HdhQ7/Q111 mice was associated with a recovery in the density of dendritic spines, spinophilin immunostaining was performed in CA1 hippocampal and motor cortical coronal slices obtained from 6-mo-old wild-type HdhQ7/Q7 and mutant HdhQ7/Q111 mice (Figure 5A,B and Figure 5—figure supplement 1A). This methodology was used by us and others to identify structural alterations in dendritic spines (Hao et al., 2003; Puigdellívol et al., 2015; Tang et al., 2004). Confocal microscopy analyses revealed a significant reduction in the density of spinophilin-immunoreactive puncta in the stratum radiatum (apical dendrites of CA1 pyramidal neurons) and stratum oriens (basal dendrites of CA1 pyramidal neurons) of saline-treated 6-mo-old mutant HdhQ7/Q111 mice compared to saline-treated wild-type HdhQ7/Q7 mice (Figure 5A and Figure 5—figure supplement 1A). Interestingly, thioperamide treatment prevented the decline in the number of spinophilin-immunoreactive puncta in mutant HdhQ7/Q111 mice (Figure 5A and Figure 5—figure supplement 1A). Similar data was obtained when the layers of the motor cerebral cortex (M1) were analyzed. A significant reduction in the density of spinophilin-immunoreactive puncta in layer I and layer II-III, but not layer V, of the motor cortex of 6-mo-old saline-treated HdhQ7/Q111 mice was found compared to saline-treated HdhQ7/Q7 mice (Figure 5B and Figure 5—figure supplement 1A). Interestingly, thioperamide-treated HdhQ7/Q111 mice exhibited a complete recovery in the density of spinophilin-immunoreactive puncta (Figure 5B and Figure 5—figure supplement 1A). No significant differences were found between groups when the mean size of spinophilin puncta was analyzed (Figure 5—figure supplement 1A). Altogether, these data demonstrate that the loss of spinophilin immunoreactive-puncta in mutant HdhQ7/Q111 mice can be ameliorated by thioperamide treatment.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig5-v2.jpg)
+
+**Figure 5.:** In (A) spinophilin-immunoreactive puncta were counted in the stratum oriens and stratum radiatum of CA1 hippocampus and in (B) layers I, II/III and V of motor cortex area 1 (M1) of saline and thioperamide-treated HdhQ7/Q7 and HdhQ7/Q111 mice. Quantitative analysis is shown as mean ± SEM (n = 9 images from three animals/group). Statistical analysis was performed using Student’s two-tailed t test. *p<0.05, ***p<0.001 compared to saline-treated HdhQ7/Q7 mice. #p<0.05, ##p<0.01, ###p<0.001 compared to saline-treated HdhQ7/Q111 mice. In (C), Quantification of the protein levels of insoluble mHtt oligomeric forms and soluble mHtt forms of total striatal, hippocampal and cortical extracts from 6-month-old saline and thioperamide-treated HdhQ7/Q111 mice analysed by immunoblot. All histograms represent the mean ± SEM (n = 6–8 per group). Student’s t test showed no significant differences between groups.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** In (A), representative images showing spinophilin-immunoreactive puncta in the stratum oriens of CA1 hippocampus and in layer I of motor cortex area 1 (M1) of saline and thioperamide-treated HdhQ7/Q7 and HdhQ7/Q111 mice at 6 months of age. Quantitative analysis of the mean size of spinophilin-immunoreactive puncta in the stratum radiatum and stratum oriens of CA1 hippocampus and in layers I, II-III and V of motor cortex area 1 (M1) are shown as mean ± SEM (n = 9 images from three animals/group). Statistical analysis was performed using Student’s two-tailed t test. No significant differences were found. Scale bar: 5 μm. In (B), Representative western blots of total striatal, hippocampal and cortical extracts from 6-month-old saline and thioperamide-treated HdhQ7/Q111 mice. The blots were probed with 1C2 antibody for mutant huntingtin (mHtt). In samples from both saline and thioperamide-treated HdhQ7/Q111 mice insoluble oligomeric forms of mHtt were detected in the stacking gel and soluble forms were detected in the running gel.
+
 We also evaluated mutant huntingtin (mhtt) aggregates in the striatum, cerebral cortex and hippocampus of mutant HdhQ7/Q111 mice after saline or thioperamide treatment, as another pathological hallmark of HD (Arrasate and Finkbeiner, 2012; Giralt et al., 2012; Hoffner et al., 2007). 1C2 immunostaining revealed in lysates from either vehicle or treated mutant HdhQ7/Q111 mice a substantial accumulation of mhtt oligomeric forms detected as a diffuse smear in the stacking gel (Figure 5—figure supplement 1B). Thioperamide treatment failed to prevent the accumulation of these oligomeric forms (Figure 5C and Figure 5—figure supplement 1B). No significant differences between groups were found when soluble monomeric mhtt levels were analyzed (Figure 5C and Figure 5—figure supplement 1B).
 
-## Thioperamide treatment does not rescue memory and motor learning deficits in mutant HdhQ7/Q111 mice when D1R-H3R heteromers are lost
+### Thioperamide treatment does not rescue memory and motor learning deficits in mutant HdhQ7/Q111 mice when D1R-H3R heteromers are lost
 
 If the behavioral improvements observed after thioperamide treatment are mediated by the D1R-H3R heteromer and not just by the blockade of the single H3R, then a treatment paradigm in the absence of the heteromer should have no effect. To test this hypothesis, we used wild-type HdhQ7/Q7 and mutant HdhQ7/Q111 mice at the age of 7 months, when we found the heteromer to be lost. Animals were chronically treated with saline or thioperamide for 1 month and motor learning was evaluated using the accelerating rotarod task. As expected, saline-HdhQ7/Q111 mice exhibited poor performance in this task showing shorter latency to fall compared to wild-type HdhQ7/Q7 mice (Figure 6A). Notably, thioperamide treatment had no effect on motor learning performance as both saline- and thioperamide-treated mutant HdhQ7/Q111 mice were indistinguishable demonstrated by similar latency to fall in the accelerating rotarod task (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig6-v2.jpg)
 
-**Figure 6.:** Q7/Q111 mice when the D1R-H3R heteromer is not expressed.In (A), curves illustrating the latency to fall in the accelerating rotarod of 8-month-old HdhQ7/Q7 and HdhQ7/Q111 mice treated with saline or thioperamide from 7 months of age are shown. Two-way ANOVA with repeated measures showed significant differences (**p<0.01) of saline-treated HdhQ7/Q111 mice compared to saline-treated HdhQ7/Q7 mice or (##p<0.01) thioperamide-treated HdhQ7/Q111 mice compared to saline-treated HdhQ7/Q7 mice. 11 saline-treated HdhQ7/Q7 mice, 11 thioperamide-treated HdhQ7/Q7 mice, eight saline-treated HdhQ7/Q111 mice and nine thioperamide-treated HdhQ7/Q111 mice were evaluated at 8 months of age. In (B), bar diagram illustrating the exploration time for saline or thioperamide-treated HdhQ7/Q7 and HdhQ7/Q111 mice during the training and the testing (24 hr delay, LTM) sessions in a novel-object recognition task showing that long-term recognition memory deficits are not rescued in the thioperamide-treated HdhQ7/Q111 mice. One-way ANOVA with Bonferroni post hoc comparisons showed significant differences (***p<0.001) compared to the old object recognition. 11 saline-treated HdhQ7/Q7 mice, 12 thioperamide-treated HdhQ7/Q7 mice, 10 saline-treated HdhQ7/Q111 mice and 11 thioperamide-treated HdhQ7/Q111 mice were evaluated at 8 months of age.
+**Figure 6.:** In (A), curves illustrating the latency to fall in the accelerating rotarod of 8-month-old HdhQ7/Q7 and HdhQ7/Q111 mice treated with saline or thioperamide from 7 months of age are shown. Two-way ANOVA with repeated measures showed significant differences (**p<0.01) of saline-treated HdhQ7/Q111 mice compared to saline-treated HdhQ7/Q7 mice or (##p<0.01) thioperamide-treated HdhQ7/Q111 mice compared to saline-treated HdhQ7/Q7 mice. 11 saline-treated HdhQ7/Q7 mice, 11 thioperamide-treated HdhQ7/Q7 mice, eight saline-treated HdhQ7/Q111 mice and nine thioperamide-treated HdhQ7/Q111 mice were evaluated at 8 months of age. In (B), bar diagram illustrating the exploration time for saline or thioperamide-treated HdhQ7/Q7 and HdhQ7/Q111 mice during the training and the testing (24 hr delay, LTM) sessions in a novel-object recognition task showing that long-term recognition memory deficits are not rescued in the thioperamide-treated HdhQ7/Q111 mice. One-way ANOVA with Bonferroni post hoc comparisons showed significant differences (***p<0.001) compared to the old object recognition. 11 saline-treated HdhQ7/Q7 mice, 12 thioperamide-treated HdhQ7/Q7 mice, 10 saline-treated HdhQ7/Q111 mice and 11 thioperamide-treated HdhQ7/Q111 mice were evaluated at 8 months of age.
 
 We next asked whether thioperamide treatment could improve cognitive function by rescuing memory deficits in these same animals. Saline-treated 8-mo-old HdhQ7/Q111 mice exhibited long-term memory deficits when recognition memory was analyzed using the novel object recognition test (NORT) (Figure 6B). Similar to motor learning results, chronic treatment with thioperamide did not rescue HdhQ7/Q111 mice from memory deficits (Figure 6B). Overall, these results demonstrate that the effect of thioperamide in learning and memory in HdhQ7/Q111 mice requires the proper expression and function of D1R-H3R heteromers.
 
-## D1R-H3R heteromer expression changes occur in other rodent HD models and in HD patients
+### D1R-H3R heteromer expression changes occur in other rodent HD models and in HD patients
 
 The fact that thioperamide treatment 1) prevents cognitive and motor learning deficits, 2) ameliorates striatal neuropathology, 3) ameliorates morphological alterations and 4) prevents the loss of D1R-H3R heteromers at 6 mo and 8 mo of age in a mouse model of HD is suggestive that thioperamide, or a future pharmacologically improved H3R antagonist specifically targeting D1R-H3R heteromers, can be used to treat HD symptoms. To test this, we investigated D1R-H3R heteromer expression in other transgenic HD mouse models and in human caudate-putamen slices using PLA. The loss of heteromer expression compared with wild-type littermates was also observed in other mouse models of HD, the R6/1 and R6/2 mice transgenic for the human huntingtin exon 1 (Figure 7—figure supplement 1A,B, respectively). Importantly, D1R-H3R heteromers were detected as green spots surrounding the blue stained nuclei in human caudate-putamen slices from control individuals and low-grade (grade 0, 1 and 2) HD patients (Figure 7A,B). In contrast, green spots were almost absent in samples from high-grade (grade 3 or grade 4) HD patients (Figure 7A,B). These results show that D1R-H3R heteromer formation changes during disease progression and, importantly, that humans express D1R-H3R heteromers at early disease stages.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig7-v2.jpg)
+
+**Figure 7.:** In (A), by Proximity Ligation Assays (PLA), D1R-H3R heteromers were visualized as green spots around blue colored DAPI stained nucleus in human striatal slices from age matched control subjects and 0–2 grade HD patients but not in 3–4 grade HD patients. Scale bar: 20 μm. In (B), the number of cells containing one or more green spots is expressed as the percentage of the total number of cells (blue nucleus). r values (number of green spots/cell containing spots) are shown above each bar. Data are mean ± SEM of counts in 600–800 cells from 10 different fields from subject described in Materials and Methods. Student’s t test showed a significant (***p<0.001) decrease of heteromers expression in 3–4 grade HD patients compared to control subjects.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/51093/elife-51093-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Proximity Ligation Assays (PLA) were performed using striatal or cortical slices from age matched wild type littermates (WT) and 4-month-old R6/1 (A) or 8-week-old R6/2 mice (B). D1R-H3R heteromers were visualized only in wild-type mouse slices as green spots around blue colored DAPI stained nucleus. Scale bar: 20 μm.
 
 ## Discussion
 
@@ -112,57 +196,340 @@ What disease-driven neuronal changes are prevented by H3R antagonism through the
 
 ## Materials and methods
 
-## Human brain slices
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293 (Human embryonic kidney293 cells)</td>
+      <td>American Type Culture Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>STHdhQ7; STHdhQ111(mouse striatal neuronal progenitor cells)</td>
+      <td>Dr M Macdonald (Center for Genomic Medicine, Boston, USA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>HdhQ7/Q111; HdhQ7/Q7</td>
+      <td>Dr M Macdonald (Center for Genomic Medicine, Boston, USA)</td>
+      <td>HdhQ111 MGI:1861935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>R6/1; R6/2</td>
+      <td>The Jackson Laboratory (Bar Harbor, ME, USA)</td>
+      <td>R6/1: MGI:2389466 For R6/2: MGI:2386951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. sapiens)</td>
+      <td>Post-mortem human brain sections containing caudate-putamen</td>
+      <td>Tissue Bank at Hospital Universitario Fundación Alcorcón (Madrid, Spain) Netherlands Brain Bank (Amsterdam, The Netherlands)</td>
+      <td></td>
+      <td>For details and characteristics of human samples see: “Moreno E., et al., Neuropsychopharmacology. 2018 PMID:28102227’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-D1R (guinea pig)</td>
+      <td>Frontier Institute</td>
+      <td>Cat. # D-1R-GP-Af500 RRID:AB_2571595</td>
+      <td>Dilution: 1/200; 1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3R (rabbit polyclonal)</td>
+      <td>Alpha diagnostic</td>
+      <td>Cat. # H3R31-A RRID:AB_1617140</td>
+      <td>Dilution: 1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat Alexa Fluor 488 anti-guinea pig antibody</td>
+      <td>Jackson Immunoresearch Laboratories</td>
+      <td>Cat. #106-545-003 RRID:AB_2337438</td>
+      <td>Dilution: 1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-p38 MAPK (Thr180/Tyr182) (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #9211S RRID:AB_331641</td>
+      <td>Dilution: 1/1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-tubulin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# SAB4200715 RRID:AB_2827403</td>
+      <td>Dilution: 1/10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680 goat anti-rabbit antibody</td>
+      <td>Li-cor</td>
+      <td>Cat. #926–68071 RRID:AB_10956166</td>
+      <td>Dilution: 1/10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800 goat anti-mouse antibody</td>
+      <td>Li-cor</td>
+      <td>Cat. # 926–32210 RRID:AB_621842</td>
+      <td>Dilution: 1/10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-spinophilin (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 06–852 RRID:AB_310266</td>
+      <td>Dilution: 1/250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 anti-rabbit secondary antibodies</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat# 111-165-003 RRID:AB_2338000</td>
+      <td>Dilution: 1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-1C2 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB1574 RRID:AB_94263</td>
+      <td>Dilution: 1/1,000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Clone V3LHS_638095</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Clone V3LHS_638091</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene#12260</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene#12259</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RHS4346</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>H3R-shRNA and control-shRNA</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TAT-TM peptides</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink II in situ PLA detection reagent red Kit</td>
+      <td>Sigma</td>
+      <td>Cat. #DUO92008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink II PLA probe anti-guinea pig minus</td>
+      <td>Sigma</td>
+      <td>Cat. #DUO92010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink II PLA probe anti-rabbit plus</td>
+      <td>Sigma</td>
+      <td>Cat. #DUO92002 RRID:AB_2810940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amplified Luminiscent Proximity Homogeneous Assay kit</td>
+      <td>AlphaScreen SureFire p‐ERK 1/2 (Thr202/Tyr204) Assay Kits PerkinElmer</td>
+      <td>Cat. # TGRESB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>[3H] SCH 23390</td>
+      <td>PerkinElmer</td>
+      <td>Cat. # NET930</td>
+      <td>0.02 nM to 10 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>[3H] R-α-methyl histamine</td>
+      <td>Perkinelmer</td>
+      <td>Cat. # NET1027</td>
+      <td>0.1 nM to 20 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SB 203580</td>
+      <td>Tocris</td>
+      <td>Cat. # 1402</td>
+      <td>1 μM; 10 μM (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SKF 81297</td>
+      <td>Tocris</td>
+      <td>Cat. # 1447</td>
+      <td>100 nM; 1 μM; 30 μM; 50 μM (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SCH 23390</td>
+      <td>Tocris</td>
+      <td>Cat. # 0925</td>
+      <td>one to 50 μM(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Thioperamide maleate salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #T123</td>
+      <td>10 μM (cells) 10 mg/kg (mice)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Grafit</td>
+      <td>Erithacus (http://www.erithacus.com/grafit/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (https://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SMART junior</td>
+      <td>Panlab (http://www.panlab.com/panlabWeb/Software/php/displaySoft.php?nameSoft=SMART JUNIOR)</td>
+      <td>RRID:SCR_012154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://www.graphpad.com/)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human brain slices
 
 Paraffin-embedded post-mortem 4 μm-thick brain sections containing caudate-putamen were obtained and provided by the Tissue Bank at Hospital Universitario Fundación Alcorcón (Madrid, Spain) and the Netherlands Brain Bank (Amsterdam, The Netherlands) according to the standardized procedures of both institutions. The samples analyzed were from patients with HD (1 grade 0; 1 grade 1; 2 grade 2; 3 grade 3 and 3 grade four patients) and from age matched controls with no neurological disease (three subjects). All protocols were approved by the institutional ethic committees.
 
-## Cell cultures
+### Cell cultures
 
 Mouse striatal wild-type STHdhQ7 and mutant STHdhQ111 cell lines were provided by Dr M. Macdonald (Center for Genomic Medicine, Boston, USA) and confirmed by PCR. These conditionally immortalized wild-type STHdhQ7 and mutant STHdhQ111 striatal neuronal progenitor cell lines expressing endogenous levels of normal and mutant huntingtin with 7 and 111 glutamines, respectively, have been described previously (Trettel et al., 2000). These cells do not exhibit amino-terminal inclusions allowing the study of changes involved in early HD pathogenesis (Trettel et al., 2000). Striatal cells were grown at 33°C in DMEM (Sigma-Aldrich), supplemented with 10% fetal bovine serum (FBS), 1% streptomycinpenicillin, 2 mM L-glutamine, 1 mM sodium pyruvate, and 400 g/ml G418 (Geneticin; Invitrogen).
 
 HEK293 cells were purchased from ATCC and kept below passage 20. Cells were grown in Dulbecco’s modified Eagle’s medium (DMEM) (Gibco, Paisley, Scotland, UK) supplemented with 2 mM L-glutamine, 100 μg/ml sodium pyruvate, 100 U/ml penicillin/streptomycin, essential medium non-essential amino acids solution (1/100) and 5% (v/v) heat inactivated fetal bovine serum (Invitrogen, Paisley, Scotland, UK) and were maintained at 37°C in an atmosphere with 5% CO2. Cells were transiently transfected with the corresponding fusion protein cDNA using Lipofectamine 3000 (Invitrogen, Paisley, Scotland, UK). Both cell lines were routinely test for mycoplasma contamination monthly by PCR.
 
-## Animal models of HD
+### Animal models of HD
 
 Knock-in mice, with targeted insertion of 109 CAG repeats that extends the glutamine segment in murine huntingtin to 111 residues, and the corresponding littermates having seven glutamine residues were maintained on a C57BL/6 genetic background (Lloret et al., 2006). HdhQ7/Q111 heterozygous males and females were intercrossed to generate age-matched HdhQ7/Q111 heterozygous and HdhQ7/Q7 wild-type littermates. Only males were used for all experiments. Hemizigous male mice transgenic for exon 1 of the human huntingtin gene with a greatly expanded CAG repeat (~115 CAG repeats in R6/1 mice and ~160 CAG repeats in R6/2 mice) (Mangiarini et al., 1996) and wild-type littermates were used when indicated in proximity ligation assays. Animals were housed under a 12 hr light/dark cycle with food and water ad libitum.
 
-## Mouse brain slices preparation
+### Mouse brain slices preparation
 
 For PLA experiments, 2-, 4-, 6- and 8-month-old HdhQ7/Q7 and HdhQ7/Q111 mice were deeply anesthetized and immediately perfused transcardially with saline (PBS) followed by 4% paraformaldehyde (PFA)/phosphate buffer. Brains were removed and post-fixed overnight in the same solution, cryoprotected by immersion in 10, 20, 30% gradient sucrose (24 hr for each sucrose gradient) at 4°C and then frozen in dry ice-cooled methylbutane. Serial coronal cryostat sections (30 µm) through the whole brain were collected in PBS-0.025% azide as free-floating sections and stored at 4°C until PLA experiments were performed. For cell death determination, HdhQ7/Q111 and HdhQ7/Q7 mice were killed by cervical dislocation at the age of 4, 5 and 8 months. Mouse brains were rapidly removed and placed in ice-cold oxygenated (O2/CO2: 95%/5%) Krebs-HCO3- buffer (124 mM NaCl, 4 mM KCl, 1.25 mM NaH2PO4, 1.5 mM MgSO4, 1.5 mM CaCl2, 10 mM glucose and 26 mM NaHCO3, pH 7.4). Cerebral hemisferes were split and sliced coronally using a McIlwain chopper (Ted Pella, Inc, California) in sterile conditions. Striatum, cortex and hippocampal slices (300 µm thick) were kept at 4°C in Krebs-HCO3- buffer during the dissection and transferred into a Millicell Insert (Millipore).
 
-## Cell death determination in striatal cells and in mouse organotypic slice cultures
+### Cell death determination in striatal cells and in mouse organotypic slice cultures
 
 Striatal STHdhQ7 or STHdhQ111 cells were grown to reach 50% of confluence on 12-well plates containing 3 cm2-glass coverslips. Medium was then replaced by a new supplemented medium containing 0.5% FBS. Vehicle, SCH 23390, thioperamide or SB 203580 were added at the indicated concentrations to cells and incubated for 1 hr before the addition of D1R. When TAT-TM peptides were applied to cell cultures, these were added 4 hr before the addition of D1R agonist. After agonist addition, an additional incubation period of 24 hr was performed. Then cells were washed twice in cold-PBS and fixed with 4% paraformaldehyde for 1 hr at 4°C. Sample nuclei were stained with Hoechst 1:1000. Stained cells were then washed with PBS and mounted under glass coverslips with Mowiol. A minimum of 10 fields were taken from each coverslip using a fluorescence microscope and the plugin Image-based Tool for Counting Nuclei for ImageJ was used for the quantification of the total nuclei. In mouse organotypic cultures, brain slices (300 μm thickness, see above) were cultured for 24 hr into a Millicell Insert in Neurobasal medium supplemented with 20% horse serum, 0.5% B27, 2 mM L-glutamine, 100 µg/ml sodium pyruvate, non-essential amino acids solution (1/100) and 100 units/ml penicillin/streptomycin (all supplements were from Invitrogen, Paisley, Scotland, UK) before replacing with fresh medium. Vehicle, SCH 23390, thioperamide were added at the indicated concentrations to organotypic cultures and incubated for 1 hr before the addition of D1R agonist. TAT-TM peptides were applied to cell cultures 4 hr before the addition of D1R agonist. After agonist addition, an additional incubation period of 48 hr was performed. Then, 10 μM propidium iodide (PI) was added to organotypic cultures and maintained at 37°C for 1 hr. Organotypic cultures were washed twice in cold-PBS and fixed with 4% paraformaldehyde for 1 hr at 4°C. Total nuclei were stained with Hoechst 1:1000. The Hoechst stained and PI positive nuclei in organotypic cultures were counted to evaluate cell death in the brain slices. Quantification was performed using Leica SP2 confocal microscope (20x; UV, 561 lasers) and the quantification performed with the program Image-based Tool for Counting Nuclei for ImageJ. Cell death is expressed as the percentage of PI positive cells in the total Hoechst-stained nuclei.
 
-## Lentivirus production and cell transduction
+### Lentivirus production and cell transduction
 
 Silencing lentiviral vectors were produced by co-transfecting HEK293 producing cellsT with lentiviral silencing plasmids GIPZ Human histamine H3 receptor shRNA (Clone V3LHS_638095 or Clone V3LHS_638091, Thermo Scientific) with packing plasmid psPAX2 and envelope coding plasmid pMD2.G (Addgene#12260 and #12259, respectively) using the calcium phosphate method. For production of control non silencing lentiviral particles the H3R silencing plasmid were substituted with GIPZ Non-silencing Lentiviral shRNA Control (RHS4346, Thermoscientific). Infectious lentiviral particles were harvested at 48 hr post-transfection, centrifuged 10 min at 900 g to get rid of cell debris, and then filtered through 0.45 μm cellulose acetate filters. The titer of recombinant lentivirus was determined by serial dilution on HEK293T cells. For lentivirus transduction, striatal cells were subcultured to 50% confluence, cells were transduced with H3R-shRNA-expressing lentivirus obtained with plasmid (Clone V3LHS_638095) or control-shRNA-expressing lentivirus (LV control) at a multiplicity of infection (MOI) of 10 in the presence of polybrene 5 µg/ml. Virus-containing supernatant was removed after 3 hr. Puromycin was added to the culturing media at the final concentration of 1 µg/ml 2 days after infection. 5 days after puromycin selection cells were transduced with the second H3R-shRNA-expressing lentivirus obtained with plasmid Clone V3LHS_638091 to improve the level of silencing achieved. LV control infected cells were re-infected with control-shRNA-expressing lentivirus. The second infection was carried out as the first one. Cells were tested 72 hr after the second transduction was performed.
 
-## RNA and real-time PCR
+### RNA and real-time PCR
 
 RNA was extracted using TRIzol Reagent (Molecular Research Center). 10 μg of total RNA were treated with RQ1 RNAse free DNAse (Promega) according to manufacturer instruction. DNAse treated DNA was quantified again and cDNA was synthesized using 2 μg total RNA with a High Capacity cDNA Reverse Transcription Kit; (Applied Biosystems). The mRNAs of actin, H3R and D1R were amplified by real-time (RT)-PCR using 1 μL cDNA and power SYBER green PCR Master Mix (Applied Biosystems) on a 7500 Real Time PCR system (Applied Biosystems). Primer sequences are as follows: MsACT For: ATGAGCTGCCTGACGGCCAGGTCAT, MsACT Rev: TGGTACCACCAGACAGCAC TGTGTT, H3R For: GCAACGCGCTGGTCATGCTC, H3R Rev: CCCCGGCCAAAGGTCCAACG, D1R FOR: ACCTCTGTGTGATCAGCGTG, AND D1R REV: GCGTATGTCCTGCTCAACCT. Thermal cycling conditions for amplification were set at 50°C for 2 min and 95°C for 10 min, respectively. PCR denaturing was set at 95°C for 15 s and annealing/extending at 60°C for 60 s for 40 cycles. mRNA levels normalized for actin are expressed as fold change relative to control cells. The results were quantified with the comparative Ct method (known as the 2−δδCt method).
 
-## In Situ Proximity Ligation Assays (PLA)
+### In Situ Proximity Ligation Assays (PLA)
 
 Cells or mouse or human brain slices were mounted on glass slides and treated or not with the indicated concentrations of receptor ligands or TAT-TM peptides for the indicated time. Then, cells or slices were thawed at 4°C, washed in 50 mM Tris-HCl, 0.9% NaCl pH 7.8 buffer (TBS), permeabilized with TBS containing 0.01% Triton X-100 for 10 min and successively washed with TBS. Heteromers were detected using the Duolink II in situ PLA detection Kit (OLink; Bioscience, Uppsala, Sweden) following the instructions of the supplier. A mixture of equal amounts of the primary antibodies: guinea pig anti-D1R antibody (1/200 Frontier Institute, Ishikari, Hokkaido, Japan) and rabbit anti-H3R antibody (1:200, Alpha diagnostic, San Antonio, Texas, USA) were used to detect D1R-H3R heteromers together with PLA probes detecting guinea pig or rabbit antibodies, Duolink II PLA probe anti-guinea pig minus and Duolink II PLA probe anti-rabbit plus. Then samples were processed for ligation and amplification with a Detection Reagent Red and were mounted using a DAPI-containing mounting medium. Samples were observed in a Leica SP2 confocal microscope (Leica Microsystems, Mannheim, Germany) equipped with an apochromatic 63X oil-immersion objective (N.A. 1.4), and a 405 nm and a 561 nm laser lines. For each field of view a stack of two channels (one per staining) and 9 to 15 Z stacks with a step size of 1 μm were acquired. For PLA with brain slices, after image processing, the red channel was depicted in green color to facilitate detection on the blue stained nucleus and maintaining the color intensity constant for all images. A quantification of cells containing one or more spots versus total cells (blue nucleus) and, in cells containing spots, the ratio r (number of red spots/cell containing spots) were determined, using the Fiji package (http://pacific. mpi-cbg.de/), considering a total of 600–800 cells from 4 to 10 different fields within each brain region from three different mice per group or from three human control subjects, 3 human grade 3 or grade 4 HD patients, 2 grade 0 or grade 1 HD patients or 1 grade 2 HD patient. Nuclei and spots were counted on the maximum projections of each image stack. After getting the projection, each channel was processed individually. The nuclei were segmented by filtering with a median filter, subtracting the background, enhancing the contrast with the Contrast Limited Adaptive Histogram Equalization (CLAHE) plug-in and finally applying a threshold to obtain the binary image and the regions of interest (ROI) around each nucleus. Red spots images were also filtered and thresholded to obtain the binary images. Red spots were counted in each of the ROIs obtained in the nuclei images.
 
-## Membrane preparation and radioligand binding
+### Membrane preparation and radioligand binding
 
 Striatal cells or mouse striatal, cortical or hippocampal tissue were homogenized in 50 mM Tris-HCl buffer, pH 7.4, containing a protease inhibitor mixture (1/1000, Sigma). The cellular debris was removed by centrifugation at 13,000 g for 5 min at 4°C, and membranes were obtained by centrifugation at 105,000 g for 1 hr at 4°C. Membranes were washed three more times at the same conditions before use. Ligand binding was performed with membrane suspension (0.2 mg of protein/ml) in 50 mM Tris–HCl buffer, pH 7.4 containing 10 mM MgCl2, at 25°C. To obtain saturation curves, membranes were incubated with increasing free concentrations of [3H] SCH 23390 (0.02 nM to 10 nM, PerkinElmer, Boston, MO, USA) or [3H] R-α-methyl histamine (0.1 nM to 20 nM, PerkinElmer, Boston, MO, USA) providing enough time to achieve stable equilibrium for the lower ligand concentrations. Nonspecific binding was determined in the presence of 30 µM non-labeled ligand. Free and membrane bound ligand were separated by rapid filtration of 500 µl aliquots in a cell harvester (Brandel, Gaithersburg, MD, USA) through Whatman GF/C filters embedded in 0.3% polyethylenimine that were subsequently washed for 5 s with 5 ml of ice-cold Tris–HCl buffer. The filters were incubated overnight with 10 ml of Ecoscint H scintillation cocktail (National Diagnostics, Atlanta, GA, USA) at room temperature and radioactivity counts were determined using a Tri-Carb 1600 scintillation counter (PerkinElmer, Boston, MO, USA) with an efficiency of 62%. Protein was quantified by the bicinchoninic acid method (Pierce Chemical Co., Rockford, IL, USA) using bovine serum albumin dilutions as standard. Monophasic saturation curves were analyzed by non-linear regression, using the commercial Grafit software (Erithacus Software), by fitting the binding data to the equation previously deduced (equation (3) in Gracia et al., 2013.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cells (60% confluence) were treated with vehicle or 30 µM SKF 81297 and after 45 min cells were kept at 4°C to block endocytosis/exocytosis, washed twice in cold-PBS, fixed in 4% paraformaldehyde for 15 min and washed with PBS containing 20 mM glycine (buffer A) to quench the aldehyde groups. After permeabilization with buffer A containing 0.05% Triton X-100 for 5 min, cells were washed with buffer A containing 1% bovine serum albumin (blocking solution) for 1 hr and labeled with the primary guinea pig anti-D1R antibody (1/100, Frontier Institute, Ishikari, Hokkaido, Japan, ON at 4°C), washed with blocking solution, and stained with the secondary goat Alexa Fluor 488 anti-guinea pig antibody (1:100, Jackson Immunoresearch Laboratories, West Grove, PA, USA, 2 hr at RT). Samples were washed twice with blocking solution, once with buffer A and finally with PBS. Nuclei were stained with 1:1000 Hoechst. Cells were mounted with Mowiol and observed in a Leica SP2 confocal microscope.
 
-## Signaling in striatal cells
+### Signaling in striatal cells
 
 To determine ERK1/2 phosphorylation, cells (35,000/well) were cultured with a non-supplemented medium overnight before pre-treated at 25°C for 20 min with the antagonists and stimulated for an additional 7 min with the indicated agonists. Phosphorylation was determined by alpha-screen bead-based technology using the Amplified Luminescence Proximity Homogeneous Assay kit (PerkinElmer, Waltham, MA, USA) and the Enspire Multimode Plate Reader (PerkinElmer) following the instructions of the supplier. To determine calcium release, striatal cells were transfected with 4 μg of GCaMP6 calcium sensor (Chen et al., 2013b) using lipofectamine 3000. After 48 hr, cells were incubated (0.2 mg of protein/ml in 96-well black, clear bottom microtiter plates) with Mg+2-free Locke’s buffer pH 7.4 (154 mM NaCl, 5.6 mM KCl, 3.6 mM NaHCO3, 2.3 mM CaCl2, 5.6 mM glucose and 5 mM HEPES) supplemented with 10 μM glycine. When TAT-TM peptides treatment was performed they were added 1 hr before the addition of receptor ligands at the indicated concentration. Fluorescence emission intensity of GCaMP6s was recorded at 515 nm upon excitation at 488 nm on an EnSpire Multimode Plate Reader (PerkinElmer, Boston, MO, USA) for 330 s every 5 s and 100 flashes per well. The fluorescence gain was defined as a delta function of ΔF/F(t) = (F(t) – F0)/F0, where F0 is the average fluorescence intensity in the first six measures from the start of recording and F(t) is the fluorescence intensity at a given time and was expressed in %. To determine p38 phosphorylation, striatal cells (80% confluence) were cultured with a non-supplemented medium 4 hr before the addition of the indicated ligand concentration for the indicated time and were lysed with 50 mM Tris-HCl pH 7.4, 50 mM NaF, 150 mM NaCl, 45 mM β-glycerophosphate, 1% Triton X-100, 20 µM phenyl-arsine oxide, 0.4 mM NaVO4 and protease inhibitor cocktail. Lysates (20 µg protein) were processed for western blot a mixture of a rabbit anti-phospho-p38 MAPK (Thr180/Tyr182) antibody (1:1000, Cell Signaling) and a mouse anti-β-tubulin antibody (1:10,000, Sigma). Bands were visualized by the addition of a mixture of IRDye 680 anti-rabbit antibody (1:10,000, LI-COR Biosciences) and IRDye 800 anti-mouse antibody (1:10,000, LI-COR Biosciences) for 2 hr at room temperature and scanned by the Odyssey infrared scanner (LI-COR Biosciences). Band densities were quantified using the Odyssey scanner software. The level of phosphorylated p38 MAPK was normalized for differences in loading using the β-tubulin band intensities.
 
-## Mice thioperamide treatment
+### Mice thioperamide treatment
 
 Thioperamide maleate salt (Sigma-Aldrich, St. Louis, USA) was prepared fresh daily being dissolved in sterile 0,9% saline (NaCl) in order to deliver a final dose of 10 mg/kg in a final volume of 0.01 ml/g of body weight, as previously described (Charlier et al., 2013). The vehicle treatment consisted of an equal volume of saline solution. All injections were given via the intra-peritoneal route (i.p). Three i.p injections per week were administered to wild-type HdhQ7/Q7 and mutant knock-in HdhQ7/Q111 mice from 5 months of age until 6 months of age (when one cohort of animals was perfused to analyze PLA after behavioral assessment) or until 8 months of age (when a second cohort of animals were perfused to analyze PLA at this more advanced disease stage). A total of 11 saline-HdhQ7/Q7 mice, 10 thioperamide-HdhQ7/Q7 mice, seven saline-HdhQ7/Q111 mice and nine thioperamide-HdhQ7/Q111 mice were treated. For these experiments, a total of 11 saline-HdhQ7/Q7 mice, 10 thioperamide-HdhQ7/Q7 mice, seven saline-HdhQ7/Q111 mice and nine thioperamide-HdhQ7/Q111 mice were treated. Similarly, three i.p injections per week were administered to wild-type HdhQ7/Q7 and mutant knock-in HdhQ7/Q111 mice from 7 months of age until 8 months of age to perform the behavioral studies when the D1R-H3R heteromers were lost. For these experiments, a total of 11 saline-HdhQ7/Q7 mice, 12 thioperamide-HdhQ7/Q7 mice, 10 saline-HdhQ7/Q111 mice and 11 thioperamide-HdhQ7/Q111 mice were treated. All treatments were performed in the afternoon to avoid the stress caused by the treatments during the behavioral assessment. Thus, during behavioral analysis treatments were performed after the evaluation of motor learning or cognitive tasks.
 
-## Behavior assays
+### Behavior assays
 
 Accelerating rotarod was performed as previously described (Puigdellívol et al., 2015). Animals were placed on a motorized rod (30 mm diameter). The rotation speed gradually increased from 4 to 40 rpm over the course of 5 min. The time latency was recorded when the animal was unable to keep up on the rotarod with the increasing speed and fell. Rotarod training/testing was performed as four trials per day during three consecutive days. A resting period of one hour was left between trials. The rotarod apparatus was rigorously cleaned with ethanol between animal trials in order to avoid odors.
 
@@ -170,14 +537,14 @@ For T-maze spontaneous alternation task (T-SAT), the T-maze apparatus used was a
 
 Novel object recognition test (NORT) consisted in a white circular arena with 40 cm diameter and 40 cm high. Mice were first habituated to the open field arena in the absence of objects (2 days, 15 min/day). During these two days of habitation, several parameters were measured to ensure the proper habituation of all mice in the new ambient. As a measure of anxiety or motivation behaviors, the distance that each mice rove in the periphery or in the center of the open field arena was measured as the rove distance in the periphery or in the center x 100/the total distance. The same analysis was performed by counting the number of entries in the periphery and in the center as well as the time that each mouse spent exploring the periphery or the center. The total distance that each mice rove during these two days of habituation was also recorded as a measure to evaluate spontaneous locomotor activity. On the third day, two similar objects were presented to each mouse during 10 min (A, A’ condition) after which the mice were returned to their home cage. Twenty-four hours later (LTM), the same animals were re-tested for 5 min in the arena with a familiar and a new object (A, B condition). The object preference was measured as the time exploring each object ×100/time exploring both objects. The arena was rigorously cleaned with ethanol between animal trials in order to avoid odors. Animals were tracked and recorded with SMART junior software (Panlab, Spain).
 
-## Immunohistochemistry, confocal microscopy and immunofluorescence-positive puncta counting
+### Immunohistochemistry, confocal microscopy and immunofluorescence-positive puncta counting
 
 Saline and thioperamide-treated heterozygous mutant HdhQ7/Q111 and WT HdhQ7/Q7 mice at 6 months of age (n = 3 per group) were deeply anesthetized and immediately perfused transcardially with saline followed by 4% paraformaldehyde (PFA)/phosphate buffer. Brains were removed and postfixed overnight in the same solution, cryoprotected by immersion in 30% sucrose and then frozen in dry ice-cooled methylbutane. Serial coronal cryostat sections (30 μm) through the whole brain were collected in PBS as free-floating sections. Sections were rinsed three times in PBS and permeabilized and blocked in PBS containing 0.3% Triton X-100% and 3% normal goat serum (Pierce Biotechnology, Rockford, IL) for 15 min at room temperature. The sections were then washed in PBS and incubated overnight at 4°C with Spinophilin (1:250, Millipore) antibody that were detected with Cy3 anti-rabbit secondary antibodies (1:200, Jackson ImmunoResearch, West Grove, PA). As negative controls, some sections were processed as described in the absence of primary antibody and no signal was detected. Confocal microscopy analysis and immunofluorescence-positive puncta counting spinophilin-positive spine-like structures was examined as previously described (Puigdellívol et al., 2015). Briefly, the images were acquired with Zeiss LSM510 META confocal microscope with HeNe lasers. Images were taken using a × 63 numerical aperture objective with ×4 digital zoom and standard (one Airy disc) pinhole. Three coronal sections (30 μm thick) per animal (n = 3 per group) spaced 0.24 mm apart containing the motor area M1 or CA1 hippocampus were used. For each slice, we obtained three fields/cortical layer (I, II/III and V) of the M1 area and three fields/CA1 hippocampus (stratum oriens and stratum radiatum). The number and area of spinophilin-positive puncta were measured using NIH ImageJ version 1.33 by Wayne Rasband (National Institutes of Health, Bethesda, MD). To analyze spinophilin immunolabeling, brightness and contrast of fluorescence images were adjusted so that only punctate fluorescence, but no weak diffuse background labeling was visible. In the article, we use the term ‘puncta’ and ‘cluster’ interchangeable to refer to discrete points of protein at the fluorescence microscope. Positive puncta/cluster within a specific field was recognized by identifying the presence of overlapping 10–100 pixels.
 
-## Western blot analysis
+### Western blot analysis
 
 Saline and thioperamide-treated heterozygous mutant HdhQ7/Q111 and WT HdhQ7/Q7, mice were killed by cervical dislocation at 6 months of age, after behavioral assessment. Brains were quickly removed, dissected, frozen in dry ice and stored at −80°C until use. Protein extraction (n = 5–9 per group, only males) and western blot analysis were performed as previously described (Puigdellívol et al., 2015). The primary antibody 1C2 (1:1,000, Millipore) was used. Loading control was performed by reproving the membranes with an antibody to α-actin (1:20,000, MP Biochemicals). ImageJ software was used to quantify the different immunoreactive bands relative to the intensity of the α- actin band in the same membranes within a linear range of detection for the enhanced chemiluminescent kit reagent. Data are expressed as the mean ± SEM of band density.
 
-## Statistical analysis
+### Statistical analysis
 
 All the results were analyzed using GraphPad Prism software version 6.0. Data were presented as mean ± standard error of the means (SEM). Statistical analysis was performed using the unpaired two-sided Student's t test (95% confidence), one-way ANOVA or two-way ANOVA with the Bonferroni's post hoc test. Values of p<0.05 were considered statistically significant.
